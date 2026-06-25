@@ -1,7 +1,7 @@
 # Chapter 8: Registers and Counters
 
-> **Prereq:** Chapters 6–7 (Sequential Circuits, State Machines) — registers and counters are specialised sequential structures.
-> **Next:** Chapter 9 (Memory) — registers provide the smallest, fastest storage in the memory hierarchy.
+> **Prereq:** Chapters 6?7 (Sequential Circuits, State Machines) ? registers and counters are specialised sequential structures.
+> **Next:** Chapter 9 (Memory) ? registers provide the smallest, fastest storage in the memory hierarchy.
 
 ## Learning Objectives
 
@@ -126,25 +126,25 @@ console.log(bs.shift(0b0110, 1, 'right', 4).toString(2).padStart(4, '0')); // 00
 
 ```mermaid
 graph TD
-    D0[D₀] --> M0[4:1 MUX]
-    D1[D₁] --> M0
-    D2[D₂] --> M0
-    D3[D₃] --> M0
+    D0[D0] --> M0[4:1 MUX]
+    D1[D1] --> M0
+    D2[D2] --> M0
+    D3[D3] --> M0
     S[Shift Amount] --> M0
-    M0 --> Y0[Y₀]
+    M0 --> Y0[Y0]
     D0 --> M1[4:1 MUX]
     D1 --> M1
     D2 --> M1
     D3 --> M1
     S --> M1
-    M1 --> Y1[Y₁]
+    M1 --> Y1[Y1]
 ```
 
 ## 8.2 Advanced Counter Designs
 
 ### 8.2.1 Modulo-N Counter
 
-A modulo-N counter counts from 0 to N-1 and then wraps. When N ≠ 2ᵏ, the counter must detect the terminal count and reset.
+A modulo-N counter counts from 0 to N-1 and then wraps. When N ? 2?, the counter must detect the terminal count and reset.
 
 ```typescript
 class ModNCounter {
@@ -173,7 +173,7 @@ for (let i = 0; i < 15; i++) {
 
 ### 8.2.2 BCD Counter (Decade Counter)
 
-A BCD counter counts 0–9 and wraps. It requires 4 flip-flops but only 10 of 16 states are used.
+A BCD counter counts 0?9 and wraps. It requires 4 flip-flops but only 10 of 16 states are used.
 
 ```typescript
 class BCDCounter {
@@ -192,7 +192,7 @@ class BCDCounter {
     }
 
     tick(clk: number): void {
-        // T inputs for BCD counting 0→1→2→...→9→0
+        // T inputs for BCD counting 0?1?2?...?9?0
         const Q = this.value;
         const T0 = 1;  // always toggle
         const T1 = Q & 1;  // toggle when Q0=1
@@ -276,7 +276,7 @@ class ProgrammableCounter {
 
 // Divide-by-7 frequency divider
 const prog = new ProgrammableCounter();
-prog.load(6); // counts 6,5,4,3,2,1,0 — 7 cycles
+prog.load(6); // counts 6,5,4,3,2,1,0 ? 7 cycles
 let output = 0;
 for (let cycle = 0; cycle < 20; cycle++) {
     const tc = prog.tick();
@@ -294,10 +294,10 @@ An LFSR generates a maximal-length pseudo-random sequence using a shift register
 
 ```mermaid
 graph LR
-    XOR[⊕] --> FF0[DFF₀]
-    FF0 --> FF1[DFF₁]
-    FF1 --> FF2[DFF₂]
-    FF2 --> FF3[DFF₃]
+    XOR[?] --> FF0[DFF0]
+    FF0 --> FF1[DFF1]
+    FF1 --> FF2[DFF2]
+    FF2 --> FF3[DFF3]
     FF3 --> XOR
     FF3 --> OUT[Output]
     FF1 --> XOR
@@ -339,7 +339,7 @@ class LFSR {
     }
 }
 
-// 4-bit LFSR with polynomial x⁴ + x³ + 1 (taps at positions 3 and 2)
+// 4-bit LFSR with polynomial x4 + x? + 1 (taps at positions 3 and 2)
 const lfsr4 = new LFSR(4, [3, 2], 0b0001);
 console.log(`4-bit LFSR state sequence:`);
 for (let i = 0; i < 18; i++) {
@@ -347,7 +347,7 @@ for (let i = 0; i < 18; i++) {
     lfsr4.tick();
 }
 
-// 8-bit LFSR with polynomial x⁸ + x⁶ + x⁵ + x⁴ + 1
+// 8-bit LFSR with polynomial x8 + x6 + x5 + x4 + 1
 const lfsr8 = new LFSR(8, [7, 5, 4, 3], 0b00000001);
 console.log(`8-bit LFSR cycle length: ${lfsr8.sequenceLength()}`); // 255 (maximal)
 ```
@@ -356,13 +356,13 @@ console.log(`8-bit LFSR cycle length: ${lfsr8.sequenceLength()}`); // 255 (maxim
 
 | Width | Polynomial | Taps (0-indexed) | Cycle Length |
 |-------|-----------|------------------|-------------|
-| 3     | x³ + x² + 1 | [2, 1] | 7 |
-| 4     | x⁴ + x³ + 1 | [3, 2] | 15 |
-| 5     | x⁵ + x³ + 1 | [4, 2] | 31 |
-| 6     | x⁶ + x⁵ + 1 | [5, 4] | 63 |
-| 7     | x⁷ + x⁶ + 1 | [6, 5] | 127 |
-| 8     | x⁸ + x⁶ + x⁵ + x⁴ + 1 | [7, 5, 4, 3] | 255 |
-| 16    | x¹⁶ + x¹⁴ + x¹³ + x¹¹ + 1 | [15, 13, 12, 10] | 65535 |
+| 3     | x? + x? + 1 | [2, 1] | 7 |
+| 4     | x4 + x? + 1 | [3, 2] | 15 |
+| 5     | x5 + x? + 1 | [4, 2] | 31 |
+| 6     | x6 + x5 + 1 | [5, 4] | 63 |
+| 7     | x7 + x6 + 1 | [6, 5] | 127 |
+| 8     | x8 + x6 + x5 + x4 + 1 | [7, 5, 4, 3] | 255 |
+| 16    | x?6 + x?4 + x?? + x?? + 1 | [15, 13, 12, 10] | 65535 |
 
 ### 8.3.2 LFSR Applications
 
@@ -415,10 +415,10 @@ A Johnson counter (twisted ring counter) complements the serial output and feeds
 
 ```mermaid
 graph TD
-    INV[NOT] --> FF0[DFF₀]
-    FF0 --> FF1[DFF₁]
-    FF1 --> FF2[DFF₂]
-    FF2 --> FF3[DFF₃]
+    INV[NOT] --> FF0[DFF0]
+    FF0 --> FF1[DFF1]
+    FF1 --> FF2[DFF2]
+    FF2 --> FF3[DFF3]
     FF3 --> INV
     CLK --> FF0
     CLK --> FF1
@@ -460,14 +460,14 @@ Each Johnson counter state requires a 2-input AND gate to decode (vs. N-input fo
 
 | State | 4-bit Johnson | Decode Equation |
 |-------|--------------|-----------------|
-| 0     | 0000         | ¬Q₃·¬Q₀         |
-| 1     | 0001         | ¬Q₃·Q₀          |
-| 2     | 0011         | ¬Q₂·Q₁          |
-| 3     | 0111         | ¬Q₁·Q₂          |
-| 4     | 1111         | Q₃·Q₀           |
-| 5     | 1110         | Q₃·¬Q₀          |
-| 6     | 1100         | Q₂·¬Q₁          |
-| 7     | 1000         | Q₁·¬Q₂          |
+| 0     | 0000         | ?Q3??Q0         |
+| 1     | 0001         | ?Q3?Q0          |
+| 2     | 0011         | ?Q2?Q1          |
+| 3     | 0111         | ?Q1?Q2          |
+| 4     | 1111         | Q3?Q0           |
+| 5     | 1110         | Q3??Q0          |
+| 6     | 1100         | Q2??Q1          |
+| 7     | 1000         | Q1??Q2          |
 
 ## 8.5 Frequency Dividers
 
@@ -494,7 +494,7 @@ class FDivider {
     }
 }
 
-const divider = new FDivider(50_000_000); // 50 MHz → 1 Hz
+const divider = new FDivider(50_000_000); // 50 MHz ? 1 Hz
 let outputPulse = 0;
 for (let cycle = 0; cycle < 100_000_000; cycle++) {
     const pulse = divider.tick();
@@ -530,18 +530,18 @@ class DutyCycleDivider {
 | Counter Type | Max Freq | Flip-Flops | Logic Complexity | Power | Glitch-Free |
 |-------------|----------|-------------|------------------|-------|-------------|
 | Ripple      | Low      | N           | Minimal          | Low   | No          |
-| Synchronous | High     | N           | O(N²) AND gates  | High  | Yes         |
+| Synchronous | High     | N           | O(N?) AND gates  | High  | Yes         |
 | LFSR        | High     | N           | O(N) XOR gates   | Low   | Yes         |
 | Johnson     | High     | N           | Minimal          | Low   | Yes         |
 | Ring        | High     | N           | None             | Low   | Yes         |
 
 ## Practical Takeaways
 
-1. **Use LFSRs for PRNGs** — they produce maximal-length pseudo-random sequences with minimal hardware
-2. **Binary counters are area-efficient** — for datapath applications where the count value matters
-3. **Gray code counters reduce power** — single-bit transitions minimise switching activity in clock domain crossings
-4. **Johnson counters simplify decoding** — 2-input AND gates replace N-input gates for state decoding
-5. **Programmable counters provide flexibility** — software-configurable division ratios without changing hardware
+1. **Use LFSRs for PRNGs** ? they produce maximal-length pseudo-random sequences with minimal hardware
+2. **Binary counters are area-efficient** ? for datapath applications where the count value matters
+3. **Gray code counters reduce power** ? single-bit transitions minimise switching activity in clock domain crossings
+4. **Johnson counters simplify decoding** ? 2-input AND gates replace N-input gates for state decoding
+5. **Programmable counters provide flexibility** ? software-configurable division ratios without changing hardware
 
 ## TypeScript Implementations
 
@@ -736,17 +736,109 @@ const barrel = new BarrelShifter();
 console.log(`Barrel shift 0xF0 << 3: ${barrel.shiftLeft(0xF0, 3).toString(16)}`);
 ```
 
+
+// registers counters
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'registers counters', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// registers counters - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'registers counters' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-Registers and counters are the workhorses of sequential digital systems. This chapter covered advanced register architectures (universal shift registers, barrel shifters), a range of counter designs (BCD, Gray, programmable, Johnson, LFSR), and their applications in frequency division, sequence generation, and timing control. The LFSR in particular is a versatile building block for PRNGs, CRCs, and BIST. The next chapter moves to larger-scale storage — semiconductor memory architectures.
+Registers and counters are the workhorses of sequential digital systems. This chapter covered advanced register architectures (universal shift registers, barrel shifters), a range of counter designs (BCD, Gray, programmable, Johnson, LFSR), and their applications in frequency division, sequence generation, and timing control. The LFSR in particular is a versatile building block for PRNGs, CRCs, and BIST. The next chapter moves to larger-scale storage ? semiconductor memory architectures.
 
 ## Chapter Quiz
 
 **Q1.** An N-bit Johnson counter produces how many unique states?
 a) N
 b) 2N
-c) 2ᴺ
-d) N²
+c) 2?
+d) N?
 
 **Q2.** What is the cycle length of a maximal-length 5-bit LFSR?
 a) 5
@@ -780,7 +872,7 @@ Q1: b | Q2: b | Q3: b | Q4: a | Q5: c
 
 1. **Universal register:** Implement a 4-bit universal shift register with hold, shift-left, shift-right, and parallel-load modes. Verify through simulation.
 
-2. **LFSR sequence analysis:** For a 5-bit LFSR with polynomial x⁵ + x² + 1, generate the full state sequence and verify it is maximal length (31 states, excluding 0).
+2. **LFSR sequence analysis:** For a 5-bit LFSR with polynomial x5 + x? + 1, generate the full state sequence and verify it is maximal length (31 states, excluding 0).
 
 3. **Modulo-60 counter:** Design a cascaded counter (mod-10 + mod-6) that counts from 0 to 59. Implement the two-counter cascade in TypeScript.
 

@@ -19,7 +19,7 @@
 |--------|---------|
 | **Scope** | Microservices patterns, REST, gRPC, API design, service mesh |
 | **Key Concepts** | Service decomposition, inter-service communication, API gateways |
-| **API Protocols** | REST, gRPC, GraphQL — strengths and trade-offs |
+| **API Protocols** | REST, gRPC, GraphQL ? strengths and trade-offs |
 | **Service Mesh** | Sidecar proxies, mTLS, traffic management |
 | **Decomposition** | Domain-driven design, bounded contexts, database per service |
 | **Real-World** | Netflix, Amazon, Uber microservice architectures |
@@ -33,19 +33,19 @@ flowchart LR
 ```
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![Microservices Patterns Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/08-microservices-apis.png)
 
 ### Monolith vs Microservices
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 A **monolith** is a single deployable unit containing all application logic. A **microservice architecture** decomposes the application into independently deployable services, each owning a specific business capability.
 
 | Aspect | Monolith | Microservices |
@@ -93,7 +93,7 @@ E-commerce bounded contexts:
 
 ### API Gateway Pattern
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -703,6 +703,134 @@ class ServiceRegistry {
 }
 ```
 
+
+### Implementation: Microservices and API Design
+
+```typescript
+interface ServiceDefinition { name: string; version: string; endpoints: EndpointDef[]; dependencies: string[]; }
+interface EndpointDef { path: string; method: "GET" | "POST" | "PUT" | "DELETE"; requestType: string; responseType: string; authRequired: boolean; rateLimit: number; }
+class ServiceRegistry {
+  private services = new Map<string, Map<string, { host: string; port: number; healthy: boolean; lastHeartbeat: number }>>();
+  register(svc: string, version: string, host: string, port: number): void {
+    if (!this.services.has(svc)) this.services.set(svc, new Map());
+    if (!this.services.get(svc)!.has(version)) this.services.get(svc)!.set(version, []);
+    this.services.get(svc)!.get(version)!.push({ host, port, healthy: true, lastHeartbeat: Date.now() }); }
+  discover(svc: string, version = "latest"): { host: string; port: number } {
+    const versions = this.services.get(svc); if (!versions) throw new Error(`Service ${svc} not found`);
+    const instances = [...versions.values()].flat().filter(i => i.healthy);
+    if (instances.length === 0) throw new Error(`No healthy instances of ${svc}`);
+    return instances[Math.floor(Math.random() * instances.length)]; }
+  heartbeat(svc: string, host: string, port: number): boolean {
+    for (const instances of this.services.get(svc)?.values() || []) { const inst = instances.find(i => i.host === host && i.port === port); if (inst) { inst.healthy = true; inst.lastHeartbeat = Date.now(); return true; } } return false; }
+}
+class APIGateway { private routes = new Map<string, { target: string; rateLimit: number; requests: number[] }>();
+  addRoute(path: string, target: string, rateLimit = 100): void { this.routes.set(path, { target, rateLimit, requests: [] }); }
+  route(path: string): { target: string; allowed: boolean } {
+    const route = this.routes.get(path); if (!route) return { target: "", allowed: false };
+    const now = Date.now(); route.requests = route.requests.filter(t => now - t < 60000); route.requests.push(now);
+    return { target: route.target, allowed: route.requests.length <= route.rateLimit }; }
+}
+class CircuitBreaker { state: "closed" | "open" | "half-open" = "closed"; private failures = 0; private lastFail = 0;
+  constructor(private threshold: number, private timeout: number) {}
+  call<T>(fn: () => T, fallback: () => T): T {
+    if (this.state === "open" && Date.now() - this.lastFail > this.timeout) this.state = "half-open";
+    if (this.state === "open") return fallback();
+    try { const r = fn(); this.failures = 0; this.state = "closed"; return r; }
+    catch (e) { this.failures++; this.lastFail = Date.now(); if (this.failures >= this.threshold) this.state = "open"; return fallback(); } }
+}
+```
+
+// microservices apis
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'microservices apis', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// microservices apis - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'microservices apis' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Microservices decompose applications into independently deployable services aligned to business capabilities; the modular monolith is a pragmatic starting point

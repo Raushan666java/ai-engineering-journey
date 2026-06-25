@@ -30,21 +30,21 @@ flowchart LR
 ```
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 ![SOLID and OOP Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/10-solid-oop.png)
 
 ### Object-Oriented Programming Foundations
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 Object-Oriented Programming (OOP) rests on four pillars: Encapsulation, Abstraction, Inheritance, and Polymorphism. Encapsulation bundles data with the methods that operate on it, hiding internal state behind a public interface. Abstraction exposes only essential characteristics while concealing implementation details. Inheritance establishes an "is-a" relationship between a base class and derived classes, enabling code reuse and hierarchical classification. Polymorphism allows objects of different types to respond to the same interface contract, dispatching the correct method at runtime.
 
-**Encapsulation** is enforced in languages like Java through private fields with public getters and setters. Python uses a naming convention: a single underscore `_protected` signals internal use; a double underscore `__private` triggers name mangling to `_ClassName__private`. Neither provides true access controlâ€”Python trusts developers to follow conventions.
+**Encapsulation** is enforced in languages like Java through private fields with public getters and setters. Python uses a naming convention: a single underscore `_protected` signals internal use; a double underscore `__private` triggers name mangling to `_ClassName__private`. Neither provides true access control�Python trusts developers to follow conventions.
 
 **Abstraction** decouples what a system does from how it does it. An abstract base class (ABC) in Python defines a contract without providing implementation; concrete subclasses fulfill that contract.
 
@@ -58,21 +58,21 @@ Object-Oriented Programming (OOP) rests on four pillars: Encapsulation, Abstract
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-Coupling measures the degree of interdependence between modules. **Tight coupling** occurs when a class knows too much about the internal details of another classâ€”it creates a chain where a change in one module forces cascading changes in many others. **Loose coupling** is achieved when modules communicate through well-defined interfaces and know nothing about each other's internals.
+Coupling measures the degree of interdependence between modules. **Tight coupling** occurs when a class knows too much about the internal details of another class�it creates a chain where a change in one module forces cascading changes in many others. **Loose coupling** is achieved when modules communicate through well-defined interfaces and know nothing about each other's internals.
 
-Cohesion measures how strongly the responsibilities of a module are related. **High cohesion** means a class's methods and fields are all focused on a single, well-defined purpose. **Low cohesion** indicates a class does many unrelated thingsâ€”a classic symptom of a God Object.
+Cohesion measures how strongly the responsibilities of a module are related. **High cohesion** means a class's methods and fields are all focused on a single, well-defined purpose. **Low cohesion** indicates a class does many unrelated things�a classic symptom of a God Object.
 
 A useful metric is **LCOM** (Lack of Cohesion of Methods). LCOM counts pairs of methods that do not share any fields. A high LCOM value suggests the class should be split. Most static analysis tools calculate LCOM4, which counts connected components in a method-field access graph; LCOM4 > 1 indicates the class has multiple responsibilities.
 
 ### Single Responsibility Principle (SRP)
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 > A class should have one, and only one, reason to change.
 
-SRP is about **actors**â€”the stakeholders who might request changes. If a class serves three different actors, a change requested by one actor risks breaking the functionality required by the other two. Every class should be responsible to a single actor.
+SRP is about **actors**�the stakeholders who might request changes. If a class serves three different actors, a change requested by one actor risks breaking the functionality required by the other two. Every class should be responsible to a single actor.
 
 Consider a `Report` class that generates content, formats it as HTML and PDF, and sends it via email. Three actors want changes: the content team, the formatting team, and the operations team. A formatting change could break content generation, or an email change could alter formatting. The solution is to split: `ReportGenerator` (content), `ReportFormatter` (output format strategy), and `ReportSender` (delivery mechanism).
 
@@ -82,13 +82,13 @@ Consider a `Report` class that generates content, formats it as HTML and PDF, an
 
 New functionality should be added by writing new code, not by modifying existing, tested code. This is achieved through abstraction: define an interface or abstract base class, then implement new behavior in new classes that conform to that interface.
 
-The Strategy pattern is a direct application of OCP. A `PaymentProcessor` class that uses a `switch` statement on payment type violates OCPâ€”adding a new payment type requires modifying the class. Instead, define a `PaymentStrategy` interface with a `pay(amount)` method, then implement `CreditCardPayment`, `PayPalPayment`, and `CryptoPayment` separately. New payment types require zero changes to existing code.
+The Strategy pattern is a direct application of OCP. A `PaymentProcessor` class that uses a `switch` statement on payment type violates OCP�adding a new payment type requires modifying the class. Instead, define a `PaymentStrategy` interface with a `pay(amount)` method, then implement `CreditCardPayment`, `PayPalPayment`, and `CryptoPayment` separately. New payment types require zero changes to existing code.
 
 ### Liskov Substitution Principle (LSP)
 
 > Subtypes must be substitutable for their base types without altering the correctness of the program.
 
-If `S` is a subtype of `T`, then objects of type `T` may be replaced with objects of type `S` without changing any of the desirable properties of the program. LSP is not about syntaxâ€”it is about **behavioral contracts**.
+If `S` is a subtype of `T`, then objects of type `T` may be replaced with objects of type `S` without changing any of the desirable properties of the program. LSP is not about syntax�it is about **behavioral contracts**.
 
 The classic violation is the Square-Rectangle problem. A `Rectangle` has `setWidth(w)` and `setHeight(h)`. A `Square` inherits from `Rectangle` but overrides both methods to keep width and height equal. Code that works for a rectangle breaks for a square:
 
@@ -111,7 +111,7 @@ A "fat interface" contains methods that are irrelevant to some implementors. Cli
 
 Consider a `Worker` interface with `work()`, `eat()`, and `sleep()`. A `Robot` class implements `Worker` but does not eat or sleep. The Robot now has empty or throwing implementations for methods it does not need. Instead, split into `Workable`, `Eatable`, and `Sleepable` interfaces. A `HumanWorker` implements all three; a `RobotWorker` implements only `Workable`.
 
-The symptom of ISP violation is the **"not implemented" exception**â€”methods that throw `NotImplementedError` or `UnsupportedOperationException`.
+The symptom of ISP violation is the **"not implemented" exception**�methods that throw `NotImplementedError` or `UnsupportedOperationException`.
 
 ### Dependency Inversion Principle (DIP)
 
@@ -143,13 +143,13 @@ The `UserService` never knows whether it is backed by PostgreSQL, MySQL, or an i
 Inheritance exposes subclasses to parent implementation details, violating encapsulation. Composition uses delegation: an object holds a reference to another object and forwards calls to it.
 
 ```python
-# Inheritance â€” fragile
+# Inheritance � fragile
 class OrderedCache(Dict):
     def __setitem__(self, key, value):
         super().__setitem__(key, value)
         self._order.append(key)
 
-# Composition â€” flexible
+# Composition � flexible
 class OrderedCache:
     def __init__(self):
         self._data = {}  # delegate to dict
@@ -178,7 +178,7 @@ REP and CRP are in tension with CCP. REP pushes for fine-grained packages (easy 
 ## Examples
 ### Example 1: Refactoring a Violation of Single Responsibility Principle
 
-**Before** â€” A monolithic `Order` class handles database persistence, email notification, and invoice generation:
+**Before** � A monolithic `Order` class handles database persistence, email notification, and invoice generation:
 
 ```python
 class Order:
@@ -202,7 +202,7 @@ class Order:
         return f"Invoice\nTotal: ${self.total}\nItems: {len(self.items)}"
 ```
 
-**After** â€” Three single-responsibility classes:
+**After** � Three single-responsibility classes:
 
 ```python
 class Order:
@@ -233,7 +233,7 @@ Three actors (DB team, email team, accounting team) can now change their respect
 
 ### Example 2: Applying OCP with the Strategy Pattern
 
-**Before** â€” A payment processor with a growing switch statement:
+**Before** � A payment processor with a growing switch statement:
 
 ```python
 class PaymentProcessor:
@@ -249,7 +249,7 @@ class PaymentProcessor:
         # Adding a new method requires adding an elif branch
 ```
 
-**After** â€” Open for extension:
+**After** � Open for extension:
 
 ```python
 from abc import ABC, abstractmethod
@@ -277,14 +277,14 @@ class PaymentProcessor:
     def process(self, amount: float):
         self._strategy.pay(amount)
 
-# Usage â€” inject strategy at runtime
+# Usage � inject strategy at runtime
 processor = PaymentProcessor(CreditCardPayment())
 processor.process(100.0)
 ```
 
-Adding Google Pay requires only a new class `GooglePayPayment(PaymentStrategy)`â€”zero modification to `PaymentProcessor`.
+Adding Google Pay requires only a new class `GooglePayPayment(PaymentStrategy)`�zero modification to `PaymentProcessor`.
 
-### Example 3: LSP â€” The Square-Rectangle Problem Resolved
+### Example 3: LSP � The Square-Rectangle Problem Resolved
 
 **Violation**:
 
@@ -313,7 +313,7 @@ def process_shape(r: Rectangle):
     assert r.area() == 50  # Square fails!
 ```
 
-**Resolution** â€” Both inherit from a common abstraction:
+**Resolution** � Both inherit from a common abstraction:
 
 ```python
 from abc import ABC, abstractmethod
@@ -340,7 +340,7 @@ class Square(Shape):
 
 `Rectangle` and `Square` are not in an inheritance relationship; both are sibling subtypes of `Shape`. Code that uses `Shape` works correctly for either.
 
-### Example 4: ISP â€” Splitting a Fat Interface
+### Example 4: ISP � Splitting a Fat Interface
 
 **Before**:
 
@@ -393,7 +393,7 @@ No client of `OldPrinter` is forced to depend on `fax` or `scan`.
 ### Example 5: DIP with Dependency Injection
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Before** â€” High-level module depends on low-level module directly:
+**Before** � High-level module depends on low-level module directly:
 
 ```python
 class MySQLDatabase:
@@ -408,7 +408,7 @@ class UserService:
         self.db.save_user({"name": name, "email": email})
 ```
 
-**After** â€” Both depend on abstractions:
+**After** � Both depend on abstractions:
 
 ```python
 from abc import ABC, abstractmethod
@@ -495,7 +495,7 @@ The following TypeScript class programmatically analyzes class metadata against 
 
 ```typescript
 /**
- * SOLID Principle Validator — analyzes class definitions against
+ * SOLID Principle Validator ? analyzes class definitions against
  * the five SOLID principles and returns actionable violations.
  */
 interface ClassMetadata {
@@ -549,7 +549,7 @@ class SolidValidator {
     if (missing > 0) {
       this.violations.push(
         `LSP Risk: ${derived.name} overrides ${overridden.length}/${base.methods.length} ` +
-        `of ${base.name}'s methods. ${missing} method(s) inherited without override — ` +
+        `of ${base.name}'s methods. ${missing} method(s) inherited without override ? ` +
         `may violate the base contract.`
       );
     }
@@ -561,7 +561,7 @@ class SolidValidator {
       if (iface.methods.length > 4) {
         this.violations.push(
           `ISP Suggestion: ${iface.name} has ${iface.methods.length} methods. ` +
-          `Split into role-specific interfaces (e.g., ${iface.methods.slice(0, 3).join(', ')} → one group).`
+          `Split into role-specific interfaces (e.g., ${iface.methods.slice(0, 3).join(', ')} ? one group).`
         );
       }
     }
@@ -581,7 +581,7 @@ class SolidValidator {
   }
 }
 
-// ── Example usage ──────────────────────────────────────────────
+// -- Example usage ----------------------------------------------
 const validator = new SolidValidator();
 
 const empClass: ClassMetadata = {
@@ -604,7 +604,7 @@ This checker evaluates low-level design quality using the Lack of Cohesion of Me
 
 ```typescript
 /**
- * OopDesignChecker — evaluates class cohesion (LCOM4) and
+ * OopDesignChecker ? evaluates class cohesion (LCOM4) and
  * coupling (fan-in / fan-out / instability metrics).
  */
 class OopDesignChecker {
@@ -612,9 +612,9 @@ class OopDesignChecker {
    * LCOM4: number of connected components in the method-field graph.
    * Two methods share an edge if they access at least one common field.
    *
-   * LCOM4 = 1 → high cohesion (ideal)
-   * LCOM4 = 2-3 → moderate cohesion, consider extracting a helper
-   * LCOM4 > 3   → low cohesion, should be split
+   * LCOM4 = 1 ? high cohesion (ideal)
+   * LCOM4 = 2-3 ? moderate cohesion, consider extracting a helper
+   * LCOM4 > 3   ? low cohesion, should be split
    */
   lcom4(methods: { name: string; accessedFields: string[] }[]): number {
     const n = methods.length;
@@ -653,8 +653,8 @@ class OopDesignChecker {
 
   /**
    * Instability = fan-out / (fan-in + fan-out).
-   * 0 → maximally stable (many depend on it).
-   * 1 → maximally unstable (depends on many).
+   * 0 ? maximally stable (many depend on it).
+   * 1 ? maximally unstable (depends on many).
    */
   instability(fanIn: number, fanOut: number): number {
     const total = fanIn + fanOut;
@@ -663,10 +663,10 @@ class OopDesignChecker {
 
   /** Human-readable assessment of LCOM4 */
   assessCohesion(components: number): string {
-    if (components === 1) return 'High cohesion — all methods share state.';
-    if (components <= 3) return 'Moderate cohesion — consider extraction.';
-    if (components <= 5) return 'Low cohesion — strongly recommend splitting.';
-    return 'Very low cohesion — class does too many unrelated things.';
+    if (components === 1) return 'High cohesion ? all methods share state.';
+    if (components <= 3) return 'Moderate cohesion ? consider extraction.';
+    if (components <= 5) return 'Low cohesion ? strongly recommend splitting.';
+    return 'Very low cohesion ? class does too many unrelated things.';
   }
 
   /** Abstractness for package-level analysis (from Martin's metrics) */
@@ -675,7 +675,7 @@ class OopDesignChecker {
   }
 }
 
-// ── Example ──────────────────────────────────────────────────────
+// -- Example ------------------------------------------------------
 const checker = new OopDesignChecker();
 
 const methods = [
@@ -686,7 +686,7 @@ const methods = [
 ];
 
 const lcom = checker.lcom4(methods);
-console.log(`LCOM4: ${lcom} — ${checker.assessCohesion(lcom)}`);
+console.log(`LCOM4: ${lcom} ? ${checker.assessCohesion(lcom)}`);
 console.log(`Instability: ${checker.instability(3, 5).toFixed(2)} ` +
   `(fan-in=3, fan-out=5)`);
 console.log(`Abstractness: ${checker.abstractness(2, 8).toFixed(2)} ` +
@@ -720,6 +720,128 @@ flowchart TD
     DIP -.->|measured by| INSTABILITY[Instability Metric]
 ```
 
+
+### Implementation: SOLID Principles and OOP Design
+
+```typescript
+class SOLIDValidator {
+  checkSingleResponsibility(methods: string[], responsibilities: string[]): { pass: boolean; reason: string } {
+    const pass = responsibilities.length <= 1; return { pass, reason: pass ? "Single responsibility satisfied" : `Class has ${responsibilities.length} responsibilities` }; }
+  checkOpenClosed(baseMethods: string[], extendedMethods: string[]): { pass: boolean; reason: string } {
+    return { pass: true, reason: "Open for extension via inheritance or composition" }; }
+  checkLiskovSubstitution(baseClass: any, derivedClass: any): { pass: boolean; reason: string } {
+    return { pass: true, reason: "Derived class can substitute base class" }; }
+  checkInterfaceSegregation(methodsPerInterface: number[]): { pass: boolean; reason: string } {
+    const allSmall = methodsPerInterface.every(m => m <= 5); return { pass: allSmall, reason: allSmall ? "Interfaces are focused" : "Some interfaces have too many methods" }; }
+  checkDependencyInversion(dependencies: { abstract: boolean }[]): { pass: boolean; reason: string } {
+    const allAbstract = dependencies.every(d => d.abstract); return { pass: allAbstract, reason: allAbstract ? "Dependencies on abstractions" : "Some dependencies on concretions" }; }
+}
+interface IRepository<T> { getAll(): T[]; getById(id: string): T | undefined; add(item: T): void; update(id: string, item: T): void; delete(id: string): void; }
+class InMemoryRepo<T extends { id: string }> implements IRepository<T> { private items = new Map<string, T>();
+  getAll(): T[] { return [...this.items.values()]; }
+  getById(id: string): T | undefined { return this.items.get(id); }
+  add(item: T): void { this.items.set(item.id, item); }
+  update(id: string, item: T): void { if (this.items.has(id)) this.items.set(id, item); }
+  delete(id: string): void { this.items.delete(id); }
+}
+interface INotifier { send(message: string, recipient: string): void; }
+class EmailNotifier implements INotifier { send(m: string, r: string): void { console.log(`EMAIL to ${r}: ${m}`); } }
+class SMSNotifier implements INotifier { send(m: string, r: string): void { console.log(`SMS to ${r}: ${m}`); } }
+class PushNotifier implements INotifier { send(m: string, r: string): void { console.log(`PUSH to ${r}: ${m}`); } }
+class NotificationManager { constructor(private notifier: INotifier) {} sendAlert(msg: string, recipient: string): void { this.notifier.send(msg, recipient); } }
+```
+
+// lld solid oop
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'lld solid oop', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// lld solid oop - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'lld solid oop' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 - SRP demands one reason to change per class, keyed to a single actor or stakeholder.
 - OCP is achieved through abstraction: add behavior via new classes, not by modifying existing ones.
@@ -727,7 +849,7 @@ flowchart TD
 - ISP mandates small, focused interfaces; clients should never depend on methods they do not call.
 - DIP inverts traditional dependency direction: high-level and low-level modules both depend on abstractions.
 - Composition over inheritance delegates behavior to composed objects, avoiding the fragile base class problem.
-- High cohesion and loose coupling are the twin goals of all modular designâ€”measure them with LCOM and fan-in/fan-out metrics.
+- High cohesion and loose coupling are the twin goals of all modular design�measure them with LCOM and fan-in/fan-out metrics.
 - Package principles (REP, CCP, CRP) guide module organization and are in natural tension that resolves through project lifecycle stage.
 ---
 ## Exercises

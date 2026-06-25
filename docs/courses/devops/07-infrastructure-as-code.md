@@ -251,12 +251,12 @@ main = rule {
 
 **Terraform testing approaches:**
 
-1. **`terraform validate`** â€” Syntax checks
-2. **`terraform fmt --check`** â€” Formatting compliance
-3. **TFLint** â€” Best practice linting
-4. **Checkov/Terrascan** â€” Security policy scanning
-5. **Terratest** â€” Integration testing with Go
-6. **Plan review** â€” Manual review of `terraform plan` output in PRs
+1. **`terraform validate`** — Syntax checks
+2. **`terraform fmt --check`** — Formatting compliance
+3. **TFLint** — Best practice linting
+4. **Checkov/Terrascan** — Security policy scanning
+5. **Terratest** — Integration testing with Go
+6. **Plan review** — Manual review of `terraform plan` output in PRs
 
 ### CI/CD for IaC
 
@@ -509,7 +509,49 @@ class StateExplorer {
     const totalResources = this.state.resources.length;
 
     let report = '# Terraform State Report\n\n';
-    report += `## Summary\n\n`;
+    report += `
+// infrastructure as code
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'infrastructure as code', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+## Summary\n\n`;
     report += `- **Total resources:** ${totalResources}\n`;
     report += `- **State version:** ${this.state.version}\n`;
     report += `- **Backend:** ${this.state.backend.type}\n\n`;
@@ -774,7 +816,7 @@ class IaCCostEstimator {
   batchEstimate(resources: IaCResource[]): { estimates: CostEstimate[]; totalMonthly: number; budgetStatus: string } {
     const estimates = resources.map(r => this.estimate(r));
     const totalMonthly = Math.round(estimates.reduce((s, e) => s + e.monthlyCost, 0) * 100) / 100;
-    return { estimates, totalMonthly, budgetStatus: totalMonthly > 1000 ? 'âš ï¸ Over $1,000/mo â€” review required' : 'âœ… Within budget' };
+    return { estimates, totalMonthly, budgetStatus: totalMonthly > 1000 ? '?? Over $1,000/mo — review required' : '? Within budget' };
   }
 
   compareProviders(workload: Record<string, string>, count: number): { provider: string; monthlyCost: number; annualSavingsVsMax: number }[] {

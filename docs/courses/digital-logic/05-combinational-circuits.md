@@ -1,7 +1,7 @@
 # Chapter 5: Combinational Circuits
 
-> **Prereq:** Chapter 4 (Karnaugh Maps) — minimised expressions are the building blocks for efficient combinational circuits.
-> **Next:** Chapter 6 (Sequential Circuits) — combinational logic feeds the next-state logic of sequential systems.
+> **Prereq:** Chapter 4 (Karnaugh Maps) ? minimised expressions are the building blocks for efficient combinational circuits.
+> **Next:** Chapter 6 (Sequential Circuits) ? combinational logic feeds the next-state logic of sequential systems.
 
 ## Learning Objectives
 
@@ -18,32 +18,32 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## 5.1 Introduction to Combinational Circuits
 
-A **combinational circuit** is a digital circuit whose output depends **only on the present combination of inputs** — it has no memory, no feedback path, and no clock. Every combinational circuit can be described by a set of Boolean functions, a truth table, or a netlist of gates.
+A **combinational circuit** is a digital circuit whose output depends **only on the present combination of inputs** ? it has no memory, no feedback path, and no clock. Every combinational circuit can be described by a set of Boolean functions, a truth table, or a netlist of gates.
 
 ### 5.1.1 Formal Definition
 
 A combinational circuit with `n` binary inputs and `m` binary outputs realises `m` switching functions:
 
 ```
-yⱼ = fⱼ(x₁, x₂, ..., xₙ)   for j = 1, 2, ..., m
+y? = f?(x1, x2, ..., x?)   for j = 1, 2, ..., m
 ```
 
 The **delay** through the circuit is the time from an input change until all outputs settle to their final values. This delay limits the maximum clock frequency in sequential systems that use combinational logic in their datapath.
 
 ```mermaid
 graph LR
-    A[Inputs x₁…xₙ] --> B[Combinational<br>Logic]
-    B --> C[Outputs y₁…yₘ]
+    A[Inputs x1?x?] --> B[Combinational<br>Logic]
+    B --> C[Outputs y1?y?]
     style B fill:#e6f3ff,stroke:#4a90d9,stroke-width:2px
 ```
 
 ### 5.1.2 Design Procedure
 
-1. **Specification** — state what the circuit does
-2. **Truth table** — enumerate all 2ⁿ input combinations and the required outputs
-3. **Boolean equations** — derive minimised SOP or POS expressions (use K-maps or QMC)
-4. **Logic diagram** — map equations to gates
-5. **Verification** — simulate or test the circuit
+1. **Specification** ? state what the circuit does
+2. **Truth table** ? enumerate all 2n input combinations and the required outputs
+3. **Boolean equations** ? derive minimised SOP or POS expressions (use K-maps or QMC)
+4. **Logic diagram** ? map equations to gates
+5. **Verification** ? simulate or test the circuit
 
 ## 5.2 Binary Adders
 
@@ -61,13 +61,13 @@ The half adder adds two 1-bit binary digits and produces a sum and a carry.
 | 1 | 1 | 0       | 1         |
 
 ```
-S = A ⊕ B
-C = A · B
+S = A ? B
+C = A ? B
 ```
 
 ```mermaid
 graph LR
-    A[A] --> XOR[⊕]
+    A[A] --> XOR[?]
     B[B] --> XOR
     A --> AND[&]
     B --> AND
@@ -79,7 +79,7 @@ graph LR
 
 ### 5.2.2 Full Adder
 
-The full adder adds three 1-bit inputs: A, B, and Carry-In (Cᵢₙ).
+The full adder adds three 1-bit inputs: A, B, and Carry-In (C??).
 
 ```typescript
 function fullAdder(A: number, B: number, Cin: number): { sum: number; Cout: number } {
@@ -101,16 +101,16 @@ for (let i = 0; i < 8; i++) {
 **Minimised SOP equations** (from K-map):
 
 ```
-Sum    = A ⊕ B ⊕ Cᵢₙ
-Cₒᵤₜ  = A·B + A·Cᵢₙ + B·Cᵢₙ
+Sum    = A ? B ? C??
+C???  = A?B + A?C?? + B?C??
 ```
 
 ```mermaid
 graph TD
-    A[A] --> XOR1[⊕]
+    A[A] --> XOR1[?]
     B[B] --> XOR1
-    XOR1 --> XOR2[⊕]
-    Cin[Cᵢₙ] --> XOR2
+    XOR1 --> XOR2[?]
+    Cin[C??] --> XOR2
     XOR2 --> Sum[Sum]
     A --> AND1[&]
     B --> AND1
@@ -118,10 +118,10 @@ graph TD
     Cin --> AND2
     B --> AND3[&]
     Cin --> AND3
-    AND1 --> OR[≥1]
+    AND1 --> OR[=1]
     AND2 --> OR
     AND3 --> OR
-    OR --> Cout[Cₒᵤₜ]
+    OR --> Cout[C???]
     style XOR1 fill:#f9f,stroke:#333,stroke-width:1px
     style XOR2 fill:#f9f,stroke:#333,stroke-width:1px
     style OR fill:#ff9,stroke:#333,stroke-width:1px
@@ -134,23 +134,23 @@ An N-bit ripple-carry adder cascades N full adders, with the carry-out of stage 
 ```mermaid
 graph LR
     subgraph Stage 0
-        FA0[FA] --> C1[C₁]
+        FA0[FA] --> C1[C1]
     end
     subgraph Stage 1
-        FA1[FA] --> C2[C₂]
+        FA1[FA] --> C2[C2]
     end
     subgraph "..."
-        FAi[FA] --> Ck[Cₖ₋₁]
+        FAi[FA] --> Ck[C??1]
     end
     subgraph Stage N-1
-        FAf[FA] --> Cout[Cₒᵤₜ]
+        FAf[FA] --> Cout[C???]
     end
-    A0[A₀] --> FA0
-    B0[B₀] --> FA0
-    A1[A₁] --> FA1
-    B1[B₁] --> FA1
-    An[A₍ₙ₋₁₎] --> FAf
-    Bn[B₍ₙ₋₁₎] --> FAf
+    A0[A0] --> FA0
+    B0[B0] --> FA0
+    A1[A1] --> FA1
+    B1[B1] --> FA1
+    An[A???1?] --> FAf
+    Bn[B???1?] --> FAf
     C1 --> FA1
     Ck --> FAf
 ```
@@ -188,23 +188,23 @@ console.log(`${a} + ${b} = ${r.sum} (carry: ${r.Cout})`); // 11
 **Critical path delay:**
 
 ```
-tᵣₐ = (N - 1) · tₒᵤₜ + tₛᵤₘ
+t?? = (N - 1) ? t??? + t???
 ```
 
-Where `tₒᵤₜ` is the carry propagation delay of one FA and `tₛᵤₘ` is the final sum delay. For N=64 bits, this delay becomes prohibitive (≈3–5 ns per stage → 200–300 ns total).
+Where `t???` is the carry propagation delay of one FA and `t???` is the final sum delay. For N=64 bits, this delay becomes prohibitive (?3?5 ns per stage ? 200?300 ns total).
 
 ### 5.2.4 Carry-Lookahead Adder (CLA)
 
 The CLA eliminates the ripple delay by computing all carries in parallel using **generate** (G) and **propagate** (P) signals.
 
 ```
-Gᵢ = Aᵢ · Bᵢ          // generate: this stage creates a carry
-Pᵢ = Aᵢ ⊕ Bᵢ         // propagate: this stage passes a carry through
+G? = A? ? B?          // generate: this stage creates a carry
+P? = A? ? B?         // propagate: this stage passes a carry through
 
-C₀ = Cᵢₙ
-C₁ = G₀ + P₀ · C₀
-C₂ = G₁ + P₁ · G₀ + P₁ · P₀ · C₀
-C₃ = G₂ + P₂ · G₁ + P₂ · P₁ · G₀ + P₂ · P₁ · P₀ · C₀
+C0 = C??
+C1 = G0 + P0 ? C0
+C2 = G1 + P1 ? G0 + P1 ? P0 ? C0
+C3 = G2 + P2 ? G1 + P2 ? P1 ? G0 + P2 ? P1 ? P0 ? C0
 ```
 
 Each carry is a 2-level AND-OR expression, regardless of N. Practical CLA adders use 4-bit blocks (lookahead width of 4) to limit fan-in.
@@ -241,7 +241,7 @@ const r2 = cla4(0b0110, 0b0101, 0);
 console.log(`CLA: 6 + 5 = ${r2.sum}, Cout=${r2.Cout}`);
 ```
 
-**CLA delay:** `tCLA = tₚ,₉ + tₓ,ₙ + tₒᵤₜ` ≈ 4–5 gate levels regardless of word width (with block fan-in constraints).
+**CLA delay:** `tCLA = t?,9 + t?,? + t???` ? 4?5 gate levels regardless of word width (with block fan-in constraints).
 
 ### 5.2.5 Carry-Select Adder
 
@@ -250,34 +250,34 @@ The carry-select adder (CSA) computes sums for both possible carry-in values (0 
 ```mermaid
 graph TD
     subgraph "Low N/2 bits"
-        RCA0[RCA Cᵢₙ=0] --> S0[Sum₀]
-        RCA1[RCA Cᵢₙ=1] --> S1[Sum₁]
+        RCA0[RCA C??=0] --> S0[Sum0]
+        RCA1[RCA C??=1] --> S1[Sum1]
         RCAR[RCA real] --> SL[Low Sum]
         RCAR --> CM[Mux]
     end
     subgraph "High N/2 bits"
-        RCAH0[RCA Cᵢₙ=0] --> S0H[Sum₀]
-        RCAH1[RCA Cᵢₙ=1] --> S1H[Sum₁]
+        RCAH0[RCA C??=0] --> S0H[Sum0]
+        RCAH1[RCA C??=1] --> S1H[Sum1]
         CM --> SH[High Sum]
     end
-    CM --> Cout[Cₒᵤₜ]
+    CM --> Cout[C???]
 ```
 
-**Delay:** `tCSA = tRCA₁₂ + tMux` — roughly half the delay of a full ripple-carry adder.
+**Delay:** `tCSA = tRCA12 + tMux` ? roughly half the delay of a full ripple-carry adder.
 
 ## 5.3 Binary Subtractors
 
 Subtraction is performed by adding the 2's complement of the subtrahend:
 
 ```
-A - B = A + (¬B + 1)
+A - B = A + (?B + 1)
 ```
 
 A **full subtractor** has three inputs (A, B, Borrow-In) and two outputs (Difference, Borrow-Out):
 
 ```
-Diff = A ⊕ B ⊕ Bᵢₙ
-Bₒᵤₜ = ¬A·B + ¬A·Bᵢₙ + B·Bᵢₙ
+Diff = A ? B ? B??
+B??? = ?A?B + ?A?B?? + B?B??
 ```
 
 An **adder-subtractor** unit uses a control line (SUB) to select between addition and subtraction:
@@ -304,15 +304,15 @@ console.log(`6 - 5 = ${addSub(6, 5, true, 4)}`);   // 1
 
 ## 5.4 Multiplexers
 
-A **multiplexer (MUX)** selects one of 2ⁿ data inputs and routes it to the output based on `n` select lines.
+A **multiplexer (MUX)** selects one of 2n data inputs and routes it to the output based on `n` select lines.
 
 ### 5.4.1 2:1 Multiplexer
 
 ```
-S = 0 → Y = A
-S = 1 → Y = B
+S = 0 ? Y = A
+S = 1 ? Y = B
 
-Y = (¬S · A) + (S · B)
+Y = (?S ? A) + (S ? B)
 ```
 
 ```typescript
@@ -324,7 +324,7 @@ function mux2(A: number, B: number, S: number): number {
 ### 5.4.2 4:1 Multiplexer
 
 ```
-Y = (¬S₁·¬S₀·D₀) + (¬S₁·S₀·D₁) + (S₁·¬S₀·D₂) + (S₁·S₀·D₃)
+Y = (?S1??S0?D0) + (?S1?S0?D1) + (S1??S0?D2) + (S1?S0?D3)
 ```
 
 ```typescript
@@ -337,19 +337,19 @@ function mux4(D: number[], S: number): number {
 
 ```mermaid
 graph TD
-    D0[D₀] --> AND0[&]
-    D1[D₁] --> AND1[&]
-    D2[D₂] --> AND2[&]
-    D3[D₃] --> AND3[&]
-    S0[¬S₁] --> AND0
-    S0A[¬S₀] --> AND0
-    S0B[¬S₁] --> AND1
-    S1C[S₀] --> AND1
-    S1D[S₁] --> AND2
-    S0E[¬S₀] --> AND2
-    S1F[S₁] --> AND3
-    S1G[S₀] --> AND3
-    AND0 --> OR[≥1]
+    D0[D0] --> AND0[&]
+    D1[D1] --> AND1[&]
+    D2[D2] --> AND2[&]
+    D3[D3] --> AND3[&]
+    S0[?S1] --> AND0
+    S0A[?S0] --> AND0
+    S0B[?S1] --> AND1
+    S1C[S0] --> AND1
+    S1D[S1] --> AND2
+    S0E[?S0] --> AND2
+    S1F[S1] --> AND3
+    S1G[S0] --> AND3
+    AND0 --> OR[=1]
     AND1 --> OR
     AND2 --> OR
     AND3 --> OR
@@ -358,10 +358,10 @@ graph TD
 
 ### 5.4.3 Using Multiplexers for Logic Implementation
 
-Any Boolean function can be implemented using a multiplexer by tying data inputs to VCC or GND based on the truth table. An n-variable function requires a 2ⁿ:1 MUX.
+Any Boolean function can be implemented using a multiplexer by tying data inputs to VCC or GND based on the truth table. An n-variable function requires a 2n:1 MUX.
 
 ```typescript
-// Implement F(A,B,C) = Σm(1,3,5,6) using an 8:1 MUX
+// Implement F(A,B,C) = Sm(1,3,5,6) using an 8:1 MUX
 function implWithMux(A: number, B: number, C: number): number {
     const truthTable = [0, 1, 0, 1, 0, 1, 1, 0]; // D0..D7
     const select = (A << 2) | (B << 1) | C;
@@ -371,7 +371,7 @@ function implWithMux(A: number, B: number, C: number): number {
 
 ## 5.5 Demultiplexers
 
-A **demultiplexer (DEMUX)** routes one data input to one of 2ⁿ outputs based on `n` select lines.
+A **demultiplexer (DEMUX)** routes one data input to one of 2n outputs based on `n` select lines.
 
 ```typescript
 function demux1x4(D: number, S: number): number[] {
@@ -386,7 +386,7 @@ console.log(demux1x4(1, 0b10)); // [0, 0, 1, 0]
 
 ## 5.6 Encoders
 
-An **encoder** converts 2ⁿ input lines into an n-bit binary code.
+An **encoder** converts 2n input lines into an n-bit binary code.
 
 ### 5.6.1 4:2 Priority Encoder
 
@@ -405,7 +405,7 @@ function priorityEncoder4(I: number[]): { code: number; valid: boolean } {
 
 ## 5.7 Decoders
 
-A **decoder** converts an n-bit binary code into 2ⁿ mutually exclusive output lines.
+A **decoder** converts an n-bit binary code into 2n mutually exclusive output lines.
 
 ### 5.7.1 3:8 Decoder
 
@@ -423,10 +423,10 @@ console.log(decoder3to8(5)); // [0,0,0,0,0,1,0,0]
 
 ### 5.7.2 Decoder-Based Logic Implementation
 
-Any n-variable function can be implemented with an n:2ⁿ decoder and an OR gate — a direct realisation of the canonical sum-of-minterms form.
+Any n-variable function can be implemented with an n:2n decoder and an OR gate ? a direct realisation of the canonical sum-of-minterms form.
 
 ```typescript
-// Implement F = Σm(1,3,5,6) using a 3:8 decoder
+// Implement F = Sm(1,3,5,6) using a 3:8 decoder
 function decoderLogic(A: number, B: number, C: number): number {
     const minterms = decoder3to8((A << 2) | (B << 1) | C);
     // OR together minterms 1, 3, 5, 6
@@ -441,9 +441,9 @@ A comparator determines the relationship between two binary numbers: A > B, A = 
 ### 5.8.1 1-Bit Comparator
 
 ```
-E = (A ⊕ B)'        // A equals B
-L = ¬A · B          // A less than B
-G = A · ¬B          // A greater than B
+E = (A ? B)'        // A equals B
+L = ?A ? B          // A less than B
+G = A ? ?B          // A greater than B
 ```
 
 ### 5.8.2 Iterative N-Bit Comparator
@@ -473,7 +473,7 @@ console.log(compare(0b1010, 0b0110, 4)); // { greater: 1, equal: 0, less: 0 }
 
 ## 5.9 Arithmetic Logic Unit
 
-The ALU is the computational core of a processor — a single combinational circuit that performs multiple arithmetic and logic operations selected by control lines.
+The ALU is the computational core of a processor ? a single combinational circuit that performs multiple arithmetic and logic operations selected by control lines.
 
 ```mermaid
 graph TD
@@ -553,7 +553,7 @@ console.log(r4); // value=15 (1111), zero=false, negative=true
 
 ### 5.10.1 BCD to 7-Segment Decoder
 
-Converts a 4-bit BCD digit to the 7-segment display pattern (a–g).
+Converts a 4-bit BCD digit to the 7-segment display pattern (a?g).
 
 ```typescript
 function bcdTo7Seg(bcd: number): string {
@@ -599,7 +599,7 @@ function grayToBin(gray: number, bits: number): number {
 for (let i = 0; i < 8; i++) {
     const g = binToGray(i);
     const b = grayToBin(g, 3);
-    console.log(`${i} → ${g} → ${b}`);
+    console.log(`${i} ? ${g} ? ${b}`);
 }
 ```
 
@@ -647,13 +647,13 @@ graph LR
     INV --> AND2[&]
     B[B] --> AND1
     B --> AND2
-    AND1 --> OR[≥1]
+    AND1 --> OR[=1]
     AND2 --> OR
     OR --> Y[Y]
     style Y fill:#faa,stroke:#f00,stroke-width:2px
 ```
 
-The circuit `Y = A·B + ¬A·B` has a static-1 hazard when B=1 and A transitions. The fix is to add the consensus term `B` (redundant logic).
+The circuit `Y = A?B + ?A?B` has a static-1 hazard when B=1 and A transitions. The fix is to add the consensus term `B` (redundant logic).
 
 ### 5.12.2 Dynamic Hazards
 
@@ -664,12 +664,12 @@ A **dynamic hazard** causes the output to oscillate multiple times before settli
 Hazards are detected by examining the K-map: if adjacent minterms are covered by different product terms, a hazard exists. The fix is to add the redundant prime implicant that bridges the gap.
 
 ```typescript
-// Hazard-prone circuit: F = A·B + ¬A·C
+// Hazard-prone circuit: F = A?B + ?A?C
 function hazardF(A: number, B: number, C: number): number {
     return (A & B) | (~A & C);
 }
 
-// Hazard-free circuit: F = A·B + ¬A·C + B·C (consensus term added)
+// Hazard-free circuit: F = A?B + ?A?C + B?C (consensus term added)
 function hazardFreeF(A: number, B: number, C: number): number {
     return (A & B) | (~A & C) | (B & C);
 }
@@ -680,7 +680,7 @@ for (let a = 0; a <= 1; a++) {
         for (let c = 0; c <= 1; c++) {
             const f1 = hazardF(a, b, c);
             const f2 = hazardFreeF(a, b, c);
-            console.log(`A=${a} B=${b} C=${c} → F=${f1} F_hf=${f2}`);
+            console.log(`A=${a} B=${b} C=${c} ? F=${f1} F_hf=${f2}`);
         }
     }
 }
@@ -694,7 +694,7 @@ Each gate output can drive a limited number of inputs (fan-out). Exceeding the f
 
 | Gate Family | Typical Fan-Out |
 |-------------|-----------------|
-| TTL (74LS)  | 10–20           |
+| TTL (74LS)  | 10?20           |
 | CMOS (74HC) | 50+             |
 | Advanced CMOS | 20+          |
 
@@ -705,7 +705,7 @@ Each gate output can drive a limited number of inputs (fan-out). Exceeding the f
 | Ripple-Carry | 4 tp      | 16 tp         | 64 tp        |
 | Carry-Lookahead | 4 tp   | 8 tp          | 12 tp        |
 | Carry-Select | 3 tp       | 6 tp          | 8 tp         |
-| Brent-Kung | —           | 6 tp          | 8 tp         |
+| Brent-Kung | ?           | 6 tp          | 8 tp         |
 
 ### 5.13.3 Power Optimisation
 
@@ -715,11 +715,11 @@ Each gate output can drive a limited number of inputs (fan-out). Exceeding the f
 
 ## Practical Takeaways
 
-1. **Ripple-carry adders are simple but slow** — use CLA or CSA for high-performance datapaths
-2. **Multiplexers implement any Boolean function** — a 2ⁿ:1 MUX + inverter is universal for n-variable functions
-3. **Priority encoders prevent metastability** — always handle the case where no input is active
-4. **Hazards matter in asynchronous paths** — add redundant consensus terms to eliminate static hazards
-5. **Design for testability** — include scan chains and observability points in complex combinational blocks
+1. **Ripple-carry adders are simple but slow** ? use CLA or CSA for high-performance datapaths
+2. **Multiplexers implement any Boolean function** ? a 2n:1 MUX + inverter is universal for n-variable functions
+3. **Priority encoders prevent metastability** ? always handle the case where no input is active
+4. **Hazards matter in asynchronous paths** ? add redundant consensus terms to eliminate static hazards
+5. **Design for testability** ? include scan chains and observability points in complex combinational blocks
 
 ## TypeScript Implementations
 
@@ -834,17 +834,109 @@ console.log('ALU4 ADD(7, 6):', ALU4.operate(7, 6, 4));
 console.log('RippleCarry8(200, 55):', rippleCarry8(200, 55));
 ```
 
+
+// combinational circuits
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'combinational circuits', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// combinational circuits - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'combinational circuits' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-Combinational circuits form the computational fabric of digital systems. This chapter covered the full design spectrum: from simple half-adders through carry-lookahead adders, multiplexers, decoders, encoders, comparators, and a complete ALU. Each circuit type was presented with minimised Boolean equations, gate-level implementations, TypeScript simulations, and practical trade-off analysis. The next chapter extends these concepts by adding state — introducing sequential circuits that combine combinational logic with memory elements.
+Combinational circuits form the computational fabric of digital systems. This chapter covered the full design spectrum: from simple half-adders through carry-lookahead adders, multiplexers, decoders, encoders, comparators, and a complete ALU. Each circuit type was presented with minimised Boolean equations, gate-level implementations, TypeScript simulations, and practical trade-off analysis. The next chapter extends these concepts by adding state ? introducing sequential circuits that combine combinational logic with memory elements.
 
 ## Chapter Quiz
 
 **Q1.** What is the critical path delay of a 32-bit ripple-carry adder?
-a) t_FA + 31 · t_carry
-b) 32 · t_FA
+a) t_FA + 31 ? t_carry
+b) 32 ? t_FA
 c) t_carry + t_sum
-d) log₂(32) · t_FA
+d) log2(32) ? t_FA
 
 **Q2.** The carry-lookahead adder computes carries in parallel using which two signals?
 a) Generate and Propagate
@@ -884,7 +976,7 @@ Q1: a | Q2: a | Q3: b | Q4: c | Q5: c
 
 4. **ALU extension:** Add shift-left, shift-right, and NOR operations to the 4-bit ALU. Show the control encoding and verify with a test harness.
 
-5. **Hazard analysis:** For the function F = A·C + B·¬C, identify all static hazards and write TypeScript code to verify the hazard-free version.
+5. **Hazard analysis:** For the function F = A?C + B??C, identify all static hazards and write TypeScript code to verify the hazard-free version.
 
 6. **Comparator tree:** Design an 8-bit comparator using a tree of 4-bit comparator blocks. Implement in TypeScript and compare the delay with an iterative design.
 

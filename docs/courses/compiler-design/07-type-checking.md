@@ -1,6 +1,6 @@
 # Chapter 7: Type Checking
 
-← Previous: [Chapter 6: Intermediate Code Generation](06-intermediate-code.md) | **Next:** [Chapter 8: Runtime Environment](08-runtime-env.md)
+? Previous: [Chapter 6: Intermediate Code Generation](06-intermediate-code.md) | **Next:** [Chapter 8: Runtime Environment](08-runtime-env.md)
 
 ## Learning Objectives
 
@@ -51,7 +51,7 @@ A **type system** is a tractable syntactic method for proving the absence of cer
 
 The primary purpose of a type system is to detect **type errors**: operations applied to arguments of inappropriate types. A type checker is **sound** if it accepts only programs that will not encounter type errors at runtime. It is **complete** if it accepts all such programs. For realistic languages, soundness is achievable but completeness is not, due to the undecidability of halting-equivalent program properties.
 
-> **One-Sentence Takeaway:** Type systems are always a trade-off between soundness (catching all real errors) and completeness (not rejecting valid programs) — and completeness is provably impossible for Turing-complete languages.
+> **One-Sentence Takeaway:** Type systems are always a trade-off between soundness (catching all real errors) and completeness (not rejecting valid programs) ? and completeness is provably impossible for Turing-complete languages.
 
 ### Type Expressions
 
@@ -61,10 +61,10 @@ Types are represented as **type expressions**, constructed from basic types and 
 |----------|----------|-------------|
 | Basic types | `int`, `float`, `char`, `bool`, `void`, `string` | Primitive domains |
 | Array types | `array(T, I)` | Indexed collection of T elements |
-| Function types | `(S₁ × ... × Sₙ) → T` | Mapping from argument types to return type |
-| Record types | `{ name₁: T₁, name₂: T₂, ... }` | Named field structure |
+| Function types | `(S1 ? ... ? S?) ? T` | Mapping from argument types to return type |
+| Record types | `{ name1: T1, name2: T2, ... }` | Named field structure |
 | Pointer types | `pointer(T)` | Address of T |
-| Type variables | `α`, `β`, `γ` | Placeholders in polymorphism |
+| Type variables | `a`, `?`, `?` | Placeholders in polymorphism |
 | Generic types | `List<T>`, `Map<K,V>` | Parameterized type constructors |
 
 ### Type Equivalence
@@ -93,7 +93,7 @@ Most languages use a hybrid: name equivalence for user-defined types and structu
 
 ### Synthesized Type Checking
 
-Synthesized type checking computes the type of a construct from its subconstructs in a bottom-up fashion. For `E₁ + E₂`, the checker determines types of `E₁` and `E₂`, looks up operator `+` in the symbol table, and computes the result type.
+Synthesized type checking computes the type of a construct from its subconstructs in a bottom-up fashion. For `E1 + E2`, the checker determines types of `E1` and `E2`, looks up operator `+` in the symbol table, and computes the result type.
 
 ```typescript
 // Type representations
@@ -201,11 +201,11 @@ Type inference determines types without explicit source annotations. The **Hindl
 
 **Example**: `fun f(x) = x + 1`
 
-- Assign `α` to `x`.
-- The `+` operator has type `β × β → β`.
-- Generate constraints: `α = β`, `int = β`.
-- Solve: `β = int`, `α = int`.
-- Result: `f : int → int`.
+- Assign `a` to `x`.
+- The `+` operator has type `? ? ? ? ?`.
+- Generate constraints: `a = ?`, `int = ?`.
+- Solve: `? = int`, `a = int`.
+- Result: `f : int ? int`.
 
 ### Complete TypeScript Type Checker
 
@@ -361,7 +361,7 @@ class TypeChecker {
             case "fun": {
                 const paramName = String(node.value);
                 // Create a function type with a fresh type variable for the parameter
-                const paramVar: Type = { kind: "var", name: `α${++varCounter}` };
+                const paramVar: Type = { kind: "var", name: `a${++varCounter}` };
                 this.env.set(paramName, paramVar);
                 const bodyType = this.check(node.children[0]);
                 const funcType: Type = {
@@ -470,7 +470,7 @@ const expr1 = BinOp("+", IntLit(3), IntLit(5));
 const t1 = checker.check(expr1);
 console.log(`3 + 5 : ${checker.typeToString(t1)}`);
 
-// Mixed types (int + float → float)
+// Mixed types (int + float ? float)
 const expr2 = BinOp("+", IntLit(3), FloatLit(2.5));
 const t2 = checker.check(expr2);
 console.log(`3 + 2.5 : ${checker.typeToString(t2)}`);
@@ -480,7 +480,7 @@ try {
     const expr3 = BinOp("+", IntLit(3), BoolLit(true));
     checker.check(expr3);
 } catch (e: any) {
-    console.log(`3 + true → Error: ${e.message}`);
+    console.log(`3 + true ? Error: ${e.message}`);
 }
 
 // If-then-else
@@ -511,7 +511,7 @@ interface Constraint {
 
 // Generate fresh type variable
 function freshVar(): Type {
-    const letters = "αβγδεζηθικλμνξοπρστυφχψω";
+    const letters = "a??de??????????p?st?f???";
     const idx = varCounter % letters.length;
     const suffix = Math.floor(varCounter / letters.length);
     const name = suffix === 0
@@ -803,7 +803,7 @@ function resolveOverloadedFunction(
     if (matching.length === 0) {
         throw new Error(`No matching overload for ${name}`);
     }
-    // Ambiguous — would need further disambiguation
+    // Ambiguous ? would need further disambiguation
     console.warn(`Warning: ambiguous overload for ${name}, ${matching.length} candidates`);
     return matching[0];
 }
@@ -811,7 +811,7 @@ function resolveOverloadedFunction(
 
 ### Polymorphism
 
-**Parametric polymorphism** allows a function to operate uniformly on values of any type, with type variables standing for actual types. The ML function `fun length x = ...` has type `α list → int`.
+**Parametric polymorphism** allows a function to operate uniformly on values of any type, with type variables standing for actual types. The ML function `fun length x = ...` has type `a list ? int`.
 
 **Subtype polymorphism** allows a function expecting type `T` to accept any subtype of `T`, as in object-oriented inheritance. The **Liskov substitution principle** governs subtype relationships: if `S` is a subtype of `T`, objects of type `T` may be replaced by objects of type `S` without altering program correctness.
 
@@ -821,11 +821,11 @@ The **variance** of a type constructor determines how subtyping propagates:
 
 | Variance | Definition | Example |
 |----------|-----------|---------|
-| **Covariant** | `S ≤ T` ⇒ `C<S> ≤ C<T>` | Read-only collections (TypeScript `ReadonlyArray`) |
-| **Contravariant** | `S ≤ T` ⇒ `C<T> ≤ C<S>` | Function arguments |
-| **Invariant** | `S ≤ T` does NOT imply `C<S> ≤ C<T>` | Mutable arrays (Java `ArrayStoreException`) |
+| **Covariant** | `S = T` ? `C<S> = C<T>` | Read-only collections (TypeScript `ReadonlyArray`) |
+| **Contravariant** | `S = T` ? `C<T> = C<S>` | Function arguments |
+| **Invariant** | `S = T` does NOT imply `C<S> = C<T>` | Mutable arrays (Java `ArrayStoreException`) |
 
-Function types are **contravariant in arguments** and **covariant in results**: if `S ≤ T`, then `(T → U) ≤ (S → U)` for arguments, and `(U → S) ≤ (U → T)` for results.
+Function types are **contravariant in arguments** and **covariant in results**: if `S = T`, then `(T ? U) = (S ? U)` for arguments, and `(U ? S) = (U ? T)` for results.
 
 ```typescript
 // Variance demonstration in TypeScript
@@ -856,19 +856,19 @@ function unify(t1, t2):
     t1 = applySubst(subst, t1)
     t2 = applySubst(subst, t2)
 
-    if t1 is type variable α:
-        if α == t2: return
-        if occurs(α, t2): error
-        bind(α, t2)
-    elif t2 is type variable β:
-        bind(β, t1)
-    elif both have same constructor (→, array, etc.):
+    if t1 is type variable a:
+        if a == t2: return
+        if occurs(a, t2): error
+        bind(a, t2)
+    elif t2 is type variable ?:
+        bind(?, t1)
+    elif both have same constructor (?, array, etc.):
         unify children pairwise
     else:
         type error
 ```
 
-The **occurs check** prevents infinite recursion: if unifying `α` with `α → int`, binding `α = α → int` would create an infinite type `(((α → int) → int) → int...)`.
+The **occurs check** prevents infinite recursion: if unifying `a` with `a ? int`, binding `a = a ? int` would create an infinite type `(((a ? int) ? int) ? int...)`.
 
 ### Concept Comparison
 
@@ -888,7 +888,7 @@ The **occurs check** prevents infinite recursion: if unifying `α` with `α → 
 |-----------|-------|--------|------------|
 | Synthesized Type Check | Typed AST | Type annotations | O(n) |
 | Constraint Generation | Untyped AST | Equality constraints | O(n) |
-| Unification | Constraints | Substitution | O(n·α(n)) |
+| Unification | Constraints | Substitution | O(n?a(n)) |
 | Overload Resolution | Expression + context | Single meaning | NP-hard (general case) |
 
 ### Cross-Application Matrix
@@ -909,6 +909,98 @@ The **occurs check** prevents infinite recursion: if unifying `α` with `α → 
 4. **Variance annotations matter**: Use `in` (contravariant) and `out` (covariant) annotations in generic types (Kotlin, TypeScript) to preserve subtype relationships safely.
 5. **Unification with occurs check is essential**: Without the occurs check, the inference algorithm can loop infinitely or produce unsound substitutions.
 
+
+// type checking
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'type checking', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// type checking - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'type checking' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Type checking verifies that operations receive expected operand types. Type expressions describe the complete type of a language construct. Name and structural equivalence provide alternative equality criteria. Type inference automates type discovery through equation generation and unification. Overloading and polymorphism increase expressive power while requiring more sophisticated checking. Unification is the computational engine underlying Hindley-Milner inference, and the occurs check prevents infinite types. The TypeScript `TypeChecker` and Hindley-Milner inference engine demonstrate both synthesized checking and constraint-based inference with working demos.
@@ -928,8 +1020,8 @@ Type checking verifies that operations receive expected operand types. Type expr
    - D) To resolve overloaded functions
 
 3. Function types are contravariant in their argument types. Which statement is correct?
-   - A) If S ≤ T, then (S → U) ≤ (T → U)
-   - B) If S ≤ T, then (T → U) ≤ (S → U)
+   - A) If S = T, then (S ? U) = (T ? U)
+   - B) If S = T, then (T ? U) = (S ? U)
    - C) Variance does not apply to function types
    - D) Function arguments are covariant
 
@@ -963,11 +1055,11 @@ Type checking verifies that operations receive expected operand types. Type expr
 
 ### Application Problems
 
-1. Determine structural equivalence for each pair: `array(integer)` vs `array(integer)`; `(int × int) → int` vs `(int × int) → int`; `array(pointer(int))` vs `array(pointer(float))`.
+1. Determine structural equivalence for each pair: `array(integer)` vs `array(integer)`; `(int ? int) ? int` vs `(int ? int) ? int`; `array(pointer(int))` vs `array(pointer(float))`.
 2. Perform inference on `fun g(x, y) = if x > 0 then y else 0`. Show constraint generation and unification.
-3. Write the type expression for a C function taking a pointer to a function `(int → char)` and returning a pointer to `float`.
+3. Write the type expression for a C function taking a pointer to a function `(int ? char)` and returning a pointer to `float`.
 4. Resolve overloading in `"Count: " + 42` in Java. Which `+` applies and what is the result type?
-5. Given type hierarchy `Float ≤ Number ≤ Object`, `Integer ≤ Number`, determine validity of: `Number n = new Integer(5)`; `Integer i = new Float(3.14)`; `Object o = new Number(10)`.
+5. Given type hierarchy `Float = Number = Object`, `Integer = Number`, determine validity of: `Number n = new Integer(5)`; `Integer i = new Float(3.14)`; `Object o = new Number(10)`.
 6. Explain why mutable arrays in Java must be invariant. Show an example that would produce an `ArrayStoreException` if they were covariant.
 
 ### Challenge Problem

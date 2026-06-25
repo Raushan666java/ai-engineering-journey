@@ -1,7 +1,7 @@
 # Chapter 12: Hardware Description Languages
 
-> **Prereq:** Chapters 1–11 (digital logic fundamentals) — HDLs describe the circuits designed in previous chapters.
-> **Next:** Chapter 13 (DAC and ADC) — mixed-signal interfaces between digital HDL designs and the analog world.
+> **Prereq:** Chapters 1?11 (digital logic fundamentals) ? HDLs describe the circuits designed in previous chapters.
+> **Next:** Chapter 13 (DAC and ADC) ? mixed-signal interfaces between digital HDL designs and the analog world.
 
 ## Learning Objectives
 
@@ -77,7 +77,7 @@ wire       clock, reset;
 reg  [31:0] program_counter;
 reg         flag_zero;
 
-// Logic (SystemVerilog — preferred for most uses)
+// Logic (SystemVerilog ? preferred for most uses)
 logic [15:0] address;
 logic        valid;
 
@@ -125,7 +125,7 @@ endmodule
 **Key rule:** Every signal assigned in `always_comb` must be assigned in every path, otherwise latches are inferred.
 
 ```verilog
-// BAD: missing default → infers latch
+// BAD: missing default ? infers latch
 always_comb begin
     case (sel)
         2'b00: y = a;
@@ -231,14 +231,14 @@ endmodule
 ### 12.4.3 Blocking vs Non-Blocking Assignments
 
 ```verilog
-// Blocking (=) — procedural, evaluates in order
+// Blocking (=) ? procedural, evaluates in order
 // Use for combinational always_comb blocks
 always_comb begin
     a = b + c;
     d = a + e;  // uses updated 'a'
 end
 
-// Non-blocking (<=) — scheduled, evaluates RHS before update
+// Non-blocking (<=) ? scheduled, evaluates RHS before update
 // Use for sequential always_ff blocks
 always_ff @(posedge clk) begin
     a <= b + c;  // RHS uses old 'a'
@@ -302,10 +302,10 @@ class HDLSequenceDetector {
 
     private nextState(s: number, x: number): number {
         const transitions: number[][] = [
-            [0, 1], // S0: x=0→S0, x=1→S1
-            [2, 1], // S1: x=0→S2, x=1→S1
-            [0, 3], // S2: x=0→S0, x=1→S3
-            [2, 1]  // S3: x=0→S2, x=1→S1
+            [0, 1], // S0: x=0?S0, x=1?S1
+            [2, 1], // S1: x=0?S2, x=1?S1
+            [0, 3], // S2: x=0?S0, x=1?S3
+            [2, 1]  // S3: x=0?S2, x=1?S1
         ];
         return transitions[s][x];
     }
@@ -411,7 +411,7 @@ end
 ### 12.7.3 Coding for Synthesis
 
 ```verilog
-// Poor: division by variable → large, slow
+// Poor: division by variable ? large, slow
 logic [7:0] quotient;
 assign quotient = a / b;
 
@@ -610,11 +610,11 @@ class CoverageCollector {
 
 ## Practical Takeaways
 
-1. **Use `always_comb` for combinational logic** — covers all sensitivity list entries automatically, no missed signals
-2. **Never mix blocking and non-blocking in the same block** — use blocking for combinational, non-blocking for sequential
-3. **Always cover all cases** — incomplete `case` or `if/else` statements infer latches
-4. **Parameterise designs** — use `parameter` and `localparam` for reusable, configurable modules
-5. **Write testbenches first** — verification-driven design catches bugs at the earliest (cheapest) stage
+1. **Use `always_comb` for combinational logic** ? covers all sensitivity list entries automatically, no missed signals
+2. **Never mix blocking and non-blocking in the same block** ? use blocking for combinational, non-blocking for sequential
+3. **Always cover all cases** ? incomplete `case` or `if/else` statements infer latches
+4. **Parameterise designs** ? use `parameter` and `localparam` for reusable, configurable modules
+5. **Write testbenches first** ? verification-driven design catches bugs at the earliest (cheapest) stage
 
 ## TypeScript Implementations
 
@@ -786,9 +786,101 @@ cov.cover('alu_op', 0); cov.cover('alu_op', 1); cov.addBin('alu_op', 2);
 console.log(cov.report());
 ```
 
+
+// hdl
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'hdl', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// hdl - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'hdl' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-Hardware description languages bridge the gap between digital logic concepts and silicon implementation. This chapter covered Verilog (with SystemVerilog and VHDL comparisons) across three abstraction levels: behavioural, RTL, and structural. Combinational and sequential logic are described with different always-block styles, while FSMs follow a three-block pattern (state register, next-state logic, output logic). Testbenches, synthesis constraints, and coverage measurement complete the verification cycle. The next chapter transitions from the purely digital domain to mixed-signal interfaces — digital-to-analog and analog-to-digital converters.
+Hardware description languages bridge the gap between digital logic concepts and silicon implementation. This chapter covered Verilog (with SystemVerilog and VHDL comparisons) across three abstraction levels: behavioural, RTL, and structural. Combinational and sequential logic are described with different always-block styles, while FSMs follow a three-block pattern (state register, next-state logic, output logic). Testbenches, synthesis constraints, and coverage measurement complete the verification cycle. The next chapter transitions from the purely digital domain to mixed-signal interfaces ? digital-to-analog and analog-to-digital converters.
 
 ## Chapter Quiz
 
@@ -832,7 +924,7 @@ Q1: b | Q2: b | Q3: b | Q4: b | Q5: b
 
 2. **FSM with Mealy output:** Write a Verilog Mealy FSM that detects "1101" with output asserted on the same cycle as the final bit.
 
-3. **Pipelined multiplier:** Design a 3-stage pipelined 8×8 multiplier in Verilog. Show the pipeline register contents for one multiplication.
+3. **Pipelined multiplier:** Design a 3-stage pipelined 8?8 multiplier in Verilog. Show the pipeline register contents for one multiplication.
 
 4. **Testbench with self-checking:** Write a self-checking testbench for the 4-bit ALU that tests all operations with random inputs and checks results against a reference model.
 

@@ -19,7 +19,7 @@
 |-------|-------------|-------------------|
 | Simple Linear Regression | Models relationship between one predictor and response | Use for bivariate analysis with a linear trend |
 | Cost Function (MSE) | Quantifies prediction error by squaring residuals | Lower MSE means better fit; minimize via optimization |
-| Gradient Descent | Iteratively adjusts weights to minimize cost | Tune learning rate carefully — too high diverges, too low stalls |
+| Gradient Descent | Iteratively adjusts weights to minimize cost | Tune learning rate carefully ? too high diverges, too low stalls |
 | Normal Equation | Closed-form solution via matrix algebra | Use for small datasets (<10k features); avoid for large |
 | Polynomial Regression | Adds non-linear feature transformations | Capture curved relationships while staying in the linear model family |
 | Ridge (L2) Regularization | Penalizes squared magnitude of weights | Use when many features with small-to-medium effects |
@@ -122,9 +122,9 @@ $$\frac{\partial}{\partial w_j} J(\mathbf{w}) = \frac{1}{n} \sum_{i=1}^{n} (\hat
 ```mermaid
 flowchart TD
     subgraph "Gradient Descent Trajectory"
-        A[Initialize w randomly] --> B[Compute predictions ŷ = Xw]
-        B --> C[Compute gradient ∇J]
-        C --> D[Update w := w - α∇J]
+        A[Initialize w randomly] --> B[Compute predictions y = Xw]
+        B --> C[Compute gradient ?J]
+        C --> D[Update w := w - a?J]
         D --> E{Converged?}
         E -->|No| B
         E -->|Yes| F[Optimal w*]
@@ -153,7 +153,7 @@ Linear regression can model non-linear relationships by augmenting the feature m
 
 $$y = w_0 + w_1 x + w_2 x^2 + w_3 x^3 + \dots + w_d x^d$$
 
-The model is still linear in the parameters $w$ — it is polynomial in the features. This means the normal equation and gradient descent work identically; we just add columns to $\mathbf{X}$.
+The model is still linear in the parameters $w$ ? it is polynomial in the features. This means the normal equation and gradient descent work identically; we just add columns to $\mathbf{X}$.
 
 **Degree selection tradeoff**:
 - Low degree ($d=1,2$): High bias, may underfit
@@ -188,7 +188,7 @@ The L2 penalty shrinks all coefficients toward zero but never exactly to zero. T
 
 $$\mathbf{w} = (\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1} \mathbf{X}^T \mathbf{y}$$
 
-Adding $\lambda\mathbf{I}$ ensures the matrix is always invertible — even when $\mathbf{X}^T\mathbf{X}$ is singular.
+Adding $\lambda\mathbf{I}$ ensures the matrix is always invertible ? even when $\mathbf{X}^T\mathbf{X}$ is singular.
 
 **Lasso Regression (L1)**:
 $$J(\mathbf{w}) = \frac{1}{2n} \sum_{i=1}^{n} (\hat{y}^{(i)} - y^{(i)})^2 + \lambda \sum_{j=1}^{d} |w_j|$$
@@ -452,18 +452,18 @@ console.log('After scaling:', X_scaled.map(r => r.map(v => v.toFixed(4))));
 
 > **One-Sentence Takeaway:** Linear regression with multiple features captures how each predictor independently affects the target, enabling richer and more accurate models.
 
-> **Pro Tip:** Always check for multicollinearity among features — when predictors are highly correlated, coefficient estimates become unstable and hard to interpret.
+> **Pro Tip:** Always check for multicollinearity among features ? when predictors are highly correlated, coefficient estimates become unstable and hard to interpret.
 
 ---
 
 ## Practical Takeaways
 
-1. **Normal equation for small data, gradient descent for large** — the O($d^3$) matrix inversion in the normal equation limits it to $d < 10{,}000$
-2. **Scale features before gradient descent** — standardization is the safest default for most problems
-3. **Regularization is essential when $d \gg n$** — Ridge ensures invertibility; Lasso performs feature selection
-4. **Polynomial terms capture curvature** — but use cross-validation to select the degree and avoid overfitting
-5. **R-squared alone is misleading** — always check residuals, adjusted R-squared, and validation performance
-6. **ElasticNet when features are correlated** — Lasso arbitrarily picks one from a correlated group; ElasticNet selects groups together
+1. **Normal equation for small data, gradient descent for large** ? the O($d^3$) matrix inversion in the normal equation limits it to $d < 10{,}000$
+2. **Scale features before gradient descent** ? standardization is the safest default for most problems
+3. **Regularization is essential when $d \gg n$** ? Ridge ensures invertibility; Lasso performs feature selection
+4. **Polynomial terms capture curvature** ? but use cross-validation to select the degree and avoid overfitting
+5. **R-squared alone is misleading** ? always check residuals, adjusted R-squared, and validation performance
+6. **ElasticNet when features are correlated** ? Lasso arbitrarily picks one from a correlated group; ElasticNet selects groups together
 
 ## Concept Comparison Table
 
@@ -687,8 +687,8 @@ const X = [[1, 2], [2, 3], [3, 5], [4, 4], [5, 6], [6, 7], [7, 8], [8, 9]];
 const y = [5, 8, 11, 12, 16, 19, 22, 25];
 const mlr = new MultipleLinearRegression();
 mlr.fit(X, y);
-console.log("MLR R²:", mlr.rSquared(X, y).toFixed(4));
-console.log("MLR Adj R²:", mlr.adjustedRSquared(X, y).toFixed(4));
+console.log("MLR R?:", mlr.rSquared(X, y).toFixed(4));
+console.log("MLR Adj R?:", mlr.adjustedRSquared(X, y).toFixed(4));
 
 const ridge = new RidgeRegression(0.5);
 ridge.fit(X, y);
@@ -700,6 +700,98 @@ console.log("Lasso predict [9,10]:", lasso.predict([9, 10]).toFixed(2));
 console.log("Poly features of [2,3] deg 2:", PolynomialFeatureMapper.map([2, 3], 2));
 ```
 
+
+// linear regression
+// ml-supervised-unsupervised implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'linear regression', data: { topic: 'ml-supervised-unsupervised' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// linear regression - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'ml-algorithms demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'machine-learning', chapter: 'linear regression' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('ml-algorithms'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Linear regression models the relationship between a dependent variable and one or more independent variables, solvable via the normal equation (closed-form) or gradient descent (iterative).
@@ -709,7 +801,7 @@ console.log("Poly features of [2,3] deg 2:", PolynomialFeatureMapper.map([2, 3],
 - Regularization (Ridge, Lasso, ElasticNet) controls overfitting by penalizing large weights.
 - R-squared, adjusted R-squared, RMSE, and MAE provide complementary views of model quality.
 
-> **One-Sentence Takeaway:** Linear regression is the foundation of predictive modeling — its core ideas of cost functions, gradient-based optimization, regularization, and feature engineering generalize to nearly every ML algorithm.
+> **One-Sentence Takeaway:** Linear regression is the foundation of predictive modeling ? its core ideas of cost functions, gradient-based optimization, regularization, and feature engineering generalize to nearly every ML algorithm.
 
 ---
 
@@ -737,8 +829,8 @@ flowchart LR
     A[Features X] --> C
     B[Labels y] --> C
     C[Gradient Descent] --> D[Weights w]
-    D --> E[Predict ŷ = Xw]
-    E --> F[MSE = ½(y − ŷ)²]
+    D --> E[Predict y = Xw]
+    E --> F[MSE = ?(y - y)?]
     F --> G{Converged?}
     G -->|No| C
     G -->|Yes| H[Model w*]

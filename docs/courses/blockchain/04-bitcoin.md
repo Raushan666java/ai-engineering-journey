@@ -18,7 +18,7 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| UTXO Model | No balances â€” only unspent transaction outputs | Your "balance" is the sum of UTXOs you can unlock |
+| UTXO Model | No balances — only unspent transaction outputs | Your "balance" is the sum of UTXOs you can unlock |
 | Transaction Structure | Inputs (reference UTXOs) + Outputs (new UTXOs) | Every transaction consumes and creates UTXOs |
 | Bitcoin Script | Stack-based, non-Turing complete language | Intentionally limited to prevent DoS attacks |
 | Mining | Hash power secures the network + new coin issuance | Halving every 4 years enforces 21M supply cap |
@@ -74,7 +74,7 @@ flowchart LR
 - Every transaction consumes one or more existing UTXOs as **Inputs**. These UTXOs are marked as spent and removed from the UTXO set.
 - Every transaction creates one or more new UTXOs as **Outputs**. These are added to the UTXO set.
 - Your "balance" is simply the sum of all UTXOs associated with your addresses.
-- The **UTXO set** is the canonical state of the Bitcoin ledger â€” every full node maintains it.
+- The **UTXO set** is the canonical state of the Bitcoin ledger — every full node maintains it.
 
 ### UTXO Lifecycle
 
@@ -288,11 +288,11 @@ const totalSupply = 210000 * (50 + 25 + 12.5 + 6.25 + 3.125 + 1.5625 + ...);
 ```mermaid
 flowchart LR
     subgraph Timeline["Halving Timeline"]
-        H1["2012<br/>50 â†’ 25 BTC"]
-        H2["2016<br/>25 â†’ 12.5 BTC"]
-        H3["2020<br/>12.5 â†’ 6.25 BTC"]
-        H4["2024<br/>6.25 â†’ 3.125 BTC"]
-        H5["2028<br/>3.125 â†’ 1.5625 BTC"]
+        H1["2012<br/>50 ? 25 BTC"]
+        H2["2016<br/>25 ? 12.5 BTC"]
+        H3["2020<br/>12.5 ? 6.25 BTC"]
+        H4["2024<br/>6.25 ? 3.125 BTC"]
+        H5["2028<br/>3.125 ? 1.5625 BTC"]
         H6["2140<br/>Mining ends<br/>~21M BTC mined"]
     end
     
@@ -433,7 +433,7 @@ Stack Execution Trace:
    Stack: [Signature, PublicKey]
 
 6. OP_CHECKSIG: verify Signature against PublicKey
-   Stack: [true]     â† or [false] if invalid
+   Stack: [true]     ? or [false] if invalid
 ```
 
 ### Example 3: Transaction Fee Calculation
@@ -488,7 +488,7 @@ interface CoinbaseScript {
 
 > **Pro Tip:** Bitcoin transaction fees increase with transaction size (in bytes), not transaction value. To save on fees, consolidate many small UTXOs into one larger UTXO during low-fee periods.
 
-> **Warning:** If you lose your private keys, your Bitcoin is gone forever. There is no "forgot password" or customer support â€” Bitcoin's security model means you are solely responsible for key custody. Use hierarchical deterministic (HD) wallets with BIP39 seed phrases backed up offline.
+> **Warning:** If you lose your private keys, your Bitcoin is gone forever. There is no "forgot password" or customer support — Bitcoin's security model means you are solely responsible for key custody. Use hierarchical deterministic (HD) wallets with BIP39 seed phrases backed up offline.
 
 ---
 
@@ -514,7 +514,7 @@ interface CoinbaseScript {
 | **Mining** | Hash rate, Difficulty, Block reward, Halving | Reward halves every 210K blocks |
 | **Supply** | 21M total, ~19.5M mined (2026) | Last Bitcoin mined ~2140 |
 | **Transaction** | Version, Inputs, Outputs, Locktime | Locktime enables time-locked transactions |
-| **Fee Estimation** | Fee = size Ã— fee_rate | Input size ~148B, output ~34B |
+| **Fee Estimation** | Fee = size × fee_rate | Input size ~148B, output ~34B |
 | **Difficulty** | Target threshold for PoW | Adjusts every 2016 blocks |
 | **Mempool** | ~300 MB default limit | Transactions with fees below ~1 sat/vB may be evicted |
 
@@ -544,14 +544,14 @@ interface CoinbaseScript {
 </details>
 
 2. What prevents Bitcoin Script from being used for infinite loops?
-   - A) It has no looping constructs â€” it's intentionally non-Turing complete
+   - A) It has no looping constructs — it's intentionally non-Turing complete
    - B) It has a maximum gas limit
    - C) It times out after 10 minutes
    - D) It requires user confirmation for each operation
 
 <details>
 <summary>Answer</summary>
-**A) It has no looping constructs â€” it's intentionally non-Turing complete.** Satoshi deliberately omitted loops and jumps to prevent denial-of-service attacks where scripts could run indefinitely.
+**A) It has no looping constructs — it's intentionally non-Turing complete.** Satoshi deliberately omitted loops and jumps to prevent denial-of-service attacks where scripts could run indefinitely.
 </details>
 
 3. Why does Bitcoin's block reward halve approximately every 4 years?
@@ -805,6 +805,48 @@ console.log(`BTC reward @ block 420000: ${MiningReward.rewardAtBlock(420000)} BT
 console.log(`Total supply after 32 halvings: ${MiningReward.totalSupply(32).toFixed(2)} BTC`);
 ```
 
+
+// bitcoin
+// distributed-ledger-crypto implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'bitcoin', data: { topic: 'distributed-ledger-crypto' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Bitcoin is a P2P electronic cash system based on the UTXO model.
@@ -822,8 +864,8 @@ console.log(`Total supply after 32 halvings: ${MiningReward.totalSupply(32).toFi
 1. Consolidate small UTXOs during low-fee periods to save on future transaction costs.
 2. Use a wallet that supports RBF to avoid stuck transactions during network congestion.
 3. Wait for 6+ confirmations (Bitcoin) before considering a transaction final for high-value transfers.
-4. Transaction fees depend on byte size, not value â€” optimize by minimizing input count.
-5. Back up your seed phrase offline â€” hardware wallets are the gold standard for key management.
+4. Transaction fees depend on byte size, not value — optimize by minimizing input count.
+5. Back up your seed phrase offline — hardware wallets are the gold standard for key management.
 
 ---
 

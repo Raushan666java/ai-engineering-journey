@@ -38,7 +38,7 @@ flowchart LR
 | **Storage Engines** | B-Tree (read-optimized) vs LSM-Tree (write-optimized) |
 | **Replication** | Single-leader, multi-leader, leaderless (Dynamo-style) |
 | **Consistency** | ACID vs BASE, isolation levels, CAP theorem |
-| **Conflict Resolution** | LWW, Version Vectors, CRDTs — G-Counter, OR-Set |
+| **Conflict Resolution** | LWW, Version Vectors, CRDTs ? G-Counter, OR-Set |
 | **Real-World** | Google Spanner, Amazon DynamoDB, Facebook TAO |
 
 ---
@@ -62,19 +62,19 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![Database Types Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/04-database-foundations.png)
 
 ### B-Tree Internals
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 The B-Tree is the most widely used data structure for database indexes. It is the default storage engine for MySQL (InnoDB), PostgreSQL, Oracle, and SQL Server.
 
 #### Structure
@@ -111,25 +111,25 @@ B-Tree nodes are stored in **pages** (typically 4 KB, 8 KB, or 16 KB). A page is
 - **Cell data:** Actual key + value pairs (or key + child page pointer for internal nodes)
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Page Header (24 bytes)          â”‚
-â”‚   - page_type, free_start       â”‚
-â”‚   - num_cells, checksum, LSN    â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Cell pointer array (grows up)   â”‚
-â”‚ [0]: offset=1568, key=42       â”‚
-â”‚ [1]: offset=1824, key=78       â”‚
-â”‚ [2]: offset=2048, key=105      â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚                                 â”‚
-â”‚   Unused space                  â”‚
-â”‚                                 â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Cell data (grows down)          â”‚
-â”‚ Key=42, Value/ptr=<data>        â”‚
-â”‚ Key=78, Value/ptr=<data>        â”‚
-â”‚ Key=105, Value/ptr=<data>       â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
++---------------------------------+
+� Page Header (24 bytes)          �
+�   - page_type, free_start       �
+�   - num_cells, checksum, LSN    �
++---------------------------------�
+� Cell pointer array (grows up)   �
+� [0]: offset=1568, key=42       �
+� [1]: offset=1824, key=78       �
+� [2]: offset=2048, key=105      �
++---------------------------------�
+�                                 �
+�   Unused space                  �
+�                                 �
++---------------------------------�
+� Cell data (grows down)          �
+� Key=42, Value/ptr=<data>        �
+� Key=78, Value/ptr=<data>        �
+� Key=105, Value/ptr=<data>       �
++---------------------------------+
 ```
 
 #### B-Tree Operations
@@ -196,24 +196,24 @@ The Log-Structured Merge-Tree (LSM-Tree), introduced by Patrick O'Neil in 1996, 
 
 ```
 MemTable (RAM, skiplist)
-    â”‚
-    â”‚ flushed when full (e.g., 64 MB)
-    â–¼
+    �
+    � flushed when full (e.g., 64 MB)
+    ?
 SSTable 0  (L0, newest)
 SSTable 1  (L0)
 SSTable 2  (L0)
-    â”‚
-    â”‚ compacted in background
-    â–¼
+    �
+    � compacted in background
+    ?
 SSTable 3  (L1, merged, larger)
 SSTable 4  (L1)
-    â”‚
-    â”‚ compacted
-    â–¼
+    �
+    � compacted
+    ?
 SSTable 5  (L2, even larger)
 ```
 
-**Bloom Filters:** A probabilistic data structure that answers "is key K definitely not in this SSTable?" with no false negatives and configurable false positive rate. Before reading from an SSTable, check the bloom filter â€” if it says "not present," skip the file entirely. This avoids expensive disk reads for keys that do not exist in cold SSTables.
+**Bloom Filters:** A probabilistic data structure that answers "is key K definitely not in this SSTable?" with no false negatives and configurable false positive rate. Before reading from an SSTable, check the bloom filter � if it says "not present," skip the file entirely. This avoids expensive disk reads for keys that do not exist in cold SSTables.
 
 $$P(false\ positive) = (1 - e^{-kn/m})^k$$
 
@@ -226,25 +226,25 @@ Compaction is the background process of merging overlapping SSTables to reclaim 
 **Size-Tiered Compaction (STC):** Used by Cassandra. When N SSTables of similar size exist in a level, they are merged into one larger SSTable in the next level.
 
 ```
-L0: [64MB] [64MB] [64MB] [64MB]   â† 4 sstables, trigger compaction
-L1: [256MB]                        â† merged result
-L1: [256MB] [256MB] [256MB] [256MB] â† trigger again
+L0: [64MB] [64MB] [64MB] [64MB]   ? 4 sstables, trigger compaction
+L1: [256MB]                        ? merged result
+L1: [256MB] [256MB] [256MB] [256MB] ? trigger again
 L2: [1GB]
 ```
 
 **Pros:** Simple, good write throughput (no read-before-write during compaction).
 **Cons:** Space amplification (data exists in multiple levels simultaneously). Read amplification (must check many SSTables).
 
-**Leveled Compaction:** Used by LevelDB, RocksDB. Each level has a fixed size multiplier (typically 10x). L0 is the exception â€” can have multiple overlapping SSTables flushed from MemTable. L1 and below are non-overlapping: each key range appears in exactly one SSTable per level.
+**Leveled Compaction:** Used by LevelDB, RocksDB. Each level has a fixed size multiplier (typically 10x). L0 is the exception � can have multiple overlapping SSTables flushed from MemTable. L1 and below are non-overlapping: each key range appears in exactly one SSTable per level.
 
 ```
-L0: [A-E] [C-G] [F-J]            â† overlapping ranges (from multiple flushes)
-L1: [A-D] [E-H] [I-L] [M-P]      â† non-overlapping
-L2: [A-F] [G-L] [M-R] [S-X] ...  â† non-overlapping, 10x larger
+L0: [A-E] [C-G] [F-J]            ? overlapping ranges (from multiple flushes)
+L1: [A-D] [E-H] [I-L] [M-P]      ? non-overlapping
+L2: [A-F] [G-L] [M-R] [S-X] ...  ? non-overlapping, 10x larger
 ```
 
 **Pros:** Lower space amplification (no duplication across levels). Better read performance (fewer SSTables to check, binary search on level+file).
-**Cons:** Higher write amplification (compaction reads a key from L1 and writes it to L2, even if the key is unchanged â€” "write amplification" overhead).
+**Cons:** Higher write amplification (compaction reads a key from L1 and writes it to L2, even if the key is unchanged � "write amplification" overhead).
 
 **Time-Windowed Compaction:** Used for time-series data (Cassandra DTCS, now deprecated in favor of Unified Compaction). SSTables are grouped by time windows (e.g., daily). Only SSTables within the same time window are compacted together.
 
@@ -263,7 +263,7 @@ L2: [A-F] [G-L] [M-R] [S-X] ...  â† non-overlapping, 10x larger
 
 ### B-Tree vs LSM-Tree
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -289,16 +289,16 @@ L2: [A-F] [G-L] [M-R] [S-X] ...  â† non-overlapping, 10x larger
 The most common replication pattern. One node (the leader/primary/master) accepts writes. Other nodes (followers/replicas/slaves) apply the same data changes from the leader's replication log.
 
 ```
-         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-         â”‚  Leader  â”‚   â† all writes here
-         â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜
-              â”‚
-     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”
-     â”‚        â”‚        â”‚
-     â–¼        â–¼        â–¼
-  â”Œâ”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”
-  â”‚ F1  â”‚ â”‚ F2  â”‚ â”‚ F3  â”‚   â† read-only replicas
-  â””â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”˜
+         +---------+
+         �  Leader  �   ? all writes here
+         +----------+
+              �
+     +--------+--------+
+     �        �        �
+     ?        ?        ?
+  +-----+ +-----+ +-----+
+  � F1  � � F2  � � F3  �   ? read-only replicas
+  +-----+ +-----+ +-----+
 ```
 
 #### Setup
@@ -339,25 +339,25 @@ If the leader fails, one follower must be promoted to leader:
 Multiple nodes accept writes and replicate them to all other nodes. Each leader is also a follower for writes from other leaders.
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Leader      â”‚â—„â”€â”€â”€â”€â”¬â”€â”€â”€â”€â–ºâ”‚  Leader      â”‚
-â”‚  (us-east-1) â”‚     â”‚     â”‚  (eu-west-1) â”‚
-â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜     â”‚     â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-       â”‚             â”‚            â”‚
-       â–¼             â”‚            â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”‚     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Follower     â”‚    â”‚     â”‚  Follower     â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                    â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”‚     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Leader      â”‚â—„â”€â”€â”€â”´â”€â”€â”€â”€â–ºâ”‚  Leader      â”‚
-â”‚  (ap-southeast)â”‚        â”‚  (sa-east-1) â”‚
-â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜          â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-       â”‚                        â”‚
-       â–¼                        â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Follower     â”‚         â”‚  Follower     â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜          â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
++--------------+           +--------------+
+�  Leader      �?---------?�  Leader      �
+�  (us-east-1) �     �     �  (eu-west-1) �
++--------------+     �     +--------------+
+       �             �            �
+       ?             �            ?
++--------------+     �     +--------------+
+�  Follower     �    �     �  Follower     �
++--------------+    �     +--------------+
+                    �
++--------------+    �     +--------------+
+�  Leader      �?--------?�  Leader      �
+�  (ap-southeast)�        �  (sa-east-1) �
++--------------+          +--------------+
+       �                        �
+       ?                        ?
++--------------+          +--------------+
+�  Follower     �         �  Follower     �
++--------------+          +--------------+
 ```
 
 **Use cases:**
@@ -380,7 +380,7 @@ Leader B (Tokyo):   UPDATE product SET price = 20 WHERE id = 42
 $$\text{value} = \max_{timestamp}(value_1, value_2)$$
 
 **Pros:** Simple. No additional infrastructure needed.
-**Cons:** Clock skew is unavoidable (distributed clocks drift). Data loss â€” the losing write is silently discarded. Used by Cassandra's default conflict resolution (though Cassandra checks for equal timestamps and compares UUIDs as tiebreaker).
+**Cons:** Clock skew is unavoidable (distributed clocks drift). Data loss � the losing write is silently discarded. Used by Cassandra's default conflict resolution (though Cassandra checks for equal timestamps and compares UUIDs as tiebreaker).
 
 **Version Vectors:** Each node maintains a vector of version counters, one per replica:
 
@@ -393,7 +393,7 @@ A conflict exists if neither vector dominates the other (i.e., vector A is not g
 
 **Dotted Version Vectors:** An optimization adding a per-event dot to reduce storage. Used in Riak. Each write gets a unique event ID, and the vector tracks the "seen" set of event IDs per replica.
 
-**CRDTs (Conflict-free Replicated Data Types):** Mathematical data types designed for automatic conflict resolution â€” conflicts are impossible by construction.
+**CRDTs (Conflict-free Replicated Data Types):** Mathematical data types designed for automatic conflict resolution � conflicts are impossible by construction.
 
 ---
 
@@ -404,26 +404,26 @@ Dynamo-style replication (from Amazon's DynamoDB paper, 2007). There is no leade
 ```
      Client A                Client B
         |                       |
-        â–¼                       â–¼
-  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-  â”‚ Node 1  â”‚  â”‚ Node 2  â”‚  â”‚ Node 3  â”‚
-  â”‚  (N=3)  â”‚  â”‚  (N=3)  â”‚  â”‚  (N=3)  â”‚
-  â”‚ W=2 ok  â”‚  â”‚ W=2 ok  â”‚  â”‚ write   â”‚
-  â”‚ R=2 ok  â”‚  â”‚ R=2 ok  â”‚  â”‚ failed  â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+        ?                       ?
+  +---------+  +---------+  +---------+
+  � Node 1  �  � Node 2  �  � Node 3  �
+  �  (N=3)  �  �  (N=3)  �  �  (N=3)  �
+  � W=2 ok  �  � W=2 ok  �  � write   �
+  � R=2 ok  �  � R=2 ok  �  � failed  �
+  +---------+  +---------+  +---------+
 ```
 
 Key parameters:
 
 - **N:** Replication factor (number of replicas that store each piece of data).
-- **W:** Write quorum â€” the minimum number of replicas that must acknowledge a write for it to be considered successful.
-- **R:** Read quorum â€” the minimum number of replicas that must respond to a read for it to be considered successful.
+- **W:** Write quorum � the minimum number of replicas that must acknowledge a write for it to be considered successful.
+- **R:** Read quorum � the minimum number of replicas that must respond to a read for it to be considered successful.
 
 $$W + R > N \implies \text{strong consistency}$$
 
 Because at least one node in the read quorum must overlap with the write quorum.
 
-Example: N=3, W=2, R=2 â†’ strong consistency. N=3, W=1, R=1 â†’ eventual consistency.
+Example: N=3, W=2, R=2 ? strong consistency. N=3, W=1, R=1 ? eventual consistency.
 
 #### Read Repair
 
@@ -516,14 +516,14 @@ version_vector = {"A": 3, "B": 2, "C": 0}
 # If A writes concurrently with B:
 v1 = {"A": 4, "B": 0, "C": 0}
 v2 = {"A": 0, "B": 3, "C": 0}
-# Neither dominates â†’ CONFLICT. Resolution required.
+# Neither dominates ? CONFLICT. Resolution required.
 ```
 
-**Dominance check:** v1 â‰¥ v2 if every counter in v1 is â‰¥ corresponding counter in v2. If neither dominates, the values are concurrent â€” conflict.
+**Dominance check:** v1 = v2 if every counter in v1 is = corresponding counter in v2. If neither dominates, the values are concurrent � conflict.
 
 #### CRDTs
 
-CRDTs are data types where concurrent operations commute. No conflict resolution is needed â€” the state always converges.
+CRDTs are data types where concurrent operations commute. No conflict resolution is needed � the state always converges.
 
 **G-Counter (Grow-only Counter):**
 
@@ -543,7 +543,7 @@ Query:  sum of all entries
 ```python
 class ORSet:
     def __init__(self):
-        self.elements = {}  # element â†’ set of tags
+        self.elements = {}  # element ? set of tags
 
     def add(self, element):
         tag = uuid4()
@@ -626,7 +626,7 @@ Key architecture:
 - **Zones:** Each zone contains one leader and multiple replicas. Zones map to data centers.
 - **Paxos groups:** Each shard is replicated via Paxos across zones. Leader of each shard processes writes.
 - **TrueTime:** Exposes a time interval `[earliest, latest]` for the current time. Spanner waits out the uncertainty interval (commit wait) to ensure linearizability.
-- **F1 RDBMS:** On top of Spanner for Google Ads (formerly AdWords) â€” a global SQL system.
+- **F1 RDBMS:** On top of Spanner for Google Ads (formerly AdWords) � a global SQL system.
 
 **Amazon DynamoDB.** Fully managed NoSQL key-value and document database based on the Dynamo paper. Uses leaderless replication with configurable N, W, R.
 
@@ -636,7 +636,7 @@ Key features:
 - **Global tables:** Multi-leader replication across regions with last-writer-wins conflict resolution.
 - **Transactions:** Limited ACID transactions (within a single partition or across partitions with TransactWriteItems/TransactGetItems).
 
-**Facebook TAO.** Not a database in the traditional sense â€” a distributed cache layer that serves Facebook's social graph. As discussed in Chapter 3, TAO sits between application servers and MySQL, providing a graph-optimized API with strong read-after-write consistency across global regions.
+**Facebook TAO.** Not a database in the traditional sense � a distributed cache layer that serves Facebook's social graph. As discussed in Chapter 3, TAO sits between application servers and MySQL, providing a graph-optimized API with strong read-after-write consistency across global regions.
 
 ---
 
@@ -652,12 +652,12 @@ Key features:
 - Delete: Bulk delete of data older than 90 days.
 
 **B-Tree analysis:**
-- Insert is random page write â€” each new data point writes to a different position in the B-Tree. This causes many small random I/Os. Write amplification is high (page splits).
+- Insert is random page write � each new data point writes to a different position in the B-Tree. This causes many small random I/Os. Write amplification is high (page splits).
 - Range scan on sorted timestamp is efficient (sequential page traversal).
 - Delete by range requires many page modifications (each leaf page must be modified).
 
 **LSM-Tree analysis:**
-- Insert is sequential (append to MemTable â†’ flush to SSTable). This matches the append-mostly workload perfectly.
+- Insert is sequential (append to MemTable ? flush to SSTable). This matches the append-mostly workload perfectly.
 - Range scan requires merging multiple SSTables (because time ranges overlap across files). The more SSTables, the slower the scan.
 - Delete is a "tombstone" write (cheap). Compaction reclaims space later.
 
@@ -672,13 +672,13 @@ Key features:
 - W = 3 (write to 3, acknowledge)
 - R = 3 (read from 3, consolidate)
 
-**Check:** W + R = 6 > N = 5 â†’ strong consistency.
+**Check:** W + R = 6 > N = 5 ? strong consistency.
 
 **Failure tolerance:**
 - If 2 nodes are down: write succeeds (W=3 needs 3/5, 3 remain up). Read succeeds (R=3 needs 3/5). Data is available.
 - If 3 nodes are down: write fails (W=3 needs 3/5, only 2 remain). Read fails. Service degrades.
 
-**Optimization for read-heavy workload:** Reduce R to 2, keep W at 3. W + R = 5 = N â†’ no longer strong consistency, but reads are faster (need only 2 responses). Trade: a very small window of stale reads is acceptable for session data.
+**Optimization for read-heavy workload:** Reduce R to 2, keep W at 3. W + R = 5 = N ? no longer strong consistency, but reads are faster (need only 2 responses). Trade: a very small window of stale reads is acceptable for session data.
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -790,12 +790,134 @@ Key features:
 
 ---
 
+
+### Implementation: Database Design and Indexing
+
+```typescript
+interface Index { type: "btree" | "hash" | "gin"; columns: string[]; unique: boolean; cardinality: number; }
+class QueryPlanner { private indexes: Index[] = [];
+  addIndex(idx: Index): void { this.indexes.push(idx); }
+  plan(query: Record<string, any>, totalRows: number): { indexUsed: string; estimatedRows: number; accessType: string } {
+    let bestIdx: Index | null = null; let bestSelectivity = 0;
+    for (const idx of this.indexes) { const matched = idx.columns.filter(c => c in query).length / idx.columns.length; if (matched > bestSelectivity) { bestSelectivity = matched; bestIdx = idx; } }
+    if (!bestIdx || bestSelectivity === 0) return { indexUsed: "none", estimatedRows: totalRows, accessType: "seq_scan" };
+    const estimated = Math.round(totalRows / (bestIdx.cardinality || 1));
+    return { indexUsed: `${bestIdx.type}(${bestIdx.columns.join(",")})`, estimatedRows: estimated, accessType: estimated < totalRows * 0.5 ? "index_scan" : "seq_scan" }; }
+}
+class BTree { private order: number; root: any = { keys: [], children: [] }; constructor(order: number) { this.order = order; }
+  insert(key: number): void { if (this.root.keys.length === 2 * this.order - 1) { const nr = { keys: [], children: [this.root] }; this.splitChild(nr, 0); this.root = nr; } this.insertNonFull(this.root, key); }
+  private splitChild(parent: any, i: number): void { const child = parent.children[i]; const mid = this.order - 1; const sibling = { keys: child.keys.splice(mid + 1), children: child.children.splice(mid + 1) }; parent.keys.splice(i, 0, child.keys[mid]); parent.children.splice(i + 1, 0, sibling); }
+  private insertNonFull(node: any, key: number): void { let i = node.keys.length - 1; if (!node.children.length) { while (i >= 0 && key < node.keys[i]) i--; node.keys.splice(i + 1, 0, key); } else { while (i >= 0 && key < node.keys[i]) i--; i++; this.insertNonFull(node.children[i], key); } }
+  search(key: number): boolean { let n = this.root; while (n) { let i = 0; while (i < n.keys.length && key > n.keys[i]) i++; if (i < n.keys.length && key === n.keys[i]) return true; if (!n.children.length) return false; n = n.children[i]; } return false; }
+}
+class DatabaseIndexer { private indexes: Map<string, Index> = new Map();
+  createIndex(name: string, type: Index["type"], columns: string[], unique = false): void { this.indexes.set(name, { type, columns, unique, cardinality: Math.floor(Math.random() * 10000) + 1000 }); }
+  recommendIndexes(queries: Record<string, any>[]): string[] { const colCount = new Map<string, number>(); for (const q of queries) { for (const col of Object.keys(q)) colCount.set(col, (colCount.get(col) || 0) + 1); } return [...colCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5).map(([col]) => `idx_${col}`); }
+}
+class TransactionLog { private entries: { id: string; operations: string[]; timestamp: number; committed: boolean; }[] = []; begin(): string { const id = `txn-${Date.now()}`; this.entries.push({ id, operations: [], timestamp: Date.now(), committed: false }); return id; }
+  logOp(txnId: string, op: string): void { const t = this.entries.find(e => e.id === txnId); if (t) t.operations.push(op); }
+  commit(txnId: string): boolean { const t = this.entries.find(e => e.id === txnId); if (!t || t.operations.length === 0) return false; t.committed = true; return true; }
+  rollback(txnId: string): boolean { const idx = this.entries.findIndex(e => e.id === txnId); if (idx < 0) return false; this.entries.splice(idx, 1); return true; }
+}
+```
+
+// database foundations
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'database foundations', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// database foundations - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'database foundations' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - B-Trees use a high branching factor (~1000+) to minimize disk seeks, achieving O(log_base_factor(n)) depth. Page splits and merges keep the tree balanced automatically.
 - LSM-Trees buffer writes in an in-memory MemTable, flush to immutable SSTables on disk, and run background compaction to merge and reclaim space. They dramatically outperform B-Trees on write-heavy workloads.
 - The B-Tree vs LSM-Tree trade-off reduces to read speed vs write speed. B-Trees win on point lookups and range scans; LSM-Trees win on sequential write throughput.
-- Single-leader replication is the simplest topology. Failover requires detecting leader failure, electing a new leader, and reconfiguring the system â€” with split-brain as the primary risk.
+- Single-leader replication is the simplest topology. Failover requires detecting leader failure, electing a new leader, and reconfiguring the system � with split-brain as the primary risk.
 - Multi-leader replication is essential for multi-datacenter and offline-first applications, but requires conflict resolution (LWW, Version Vectors, CRDTs).
 - Leaderless replication (Dynamo-style) uses quorums (N, W, R) and eventual consistency. Hinted handoff and read repair handle failures and staleness.
 - Replication lag causes three anomalies: read-your-writes, monotonic reads, and consistent prefix reads. Each has known solutions.

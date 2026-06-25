@@ -14,13 +14,13 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-|Monorepo Setup|npm workspaces manage shared packages alongside frontend and backend apps|Use Turborepo for task orchestration — it caches build outputs and runs tasks in parallel|
+|Monorepo Setup|npm workspaces manage shared packages alongside frontend and backend apps|Use Turborepo for task orchestration � it caches build outputs and runs tasks in parallel|
 |Shared Types|A packages/shared directory holds types consumed by both frontend and backend|Define all API contracts (request/response shapes) in the shared package to prevent drift|
 |Express API|Full REST API with Prisma, JWT auth, Zod validation, and error handling|Structure routes by resource (auth, projects, tasks) with middleware for cross-cutting concerns|
 |Next.js Frontend|App Router with auth context, API hooks, and component-based UI|Separate data fetching hooks from presentation components for testability|
 |Auth Integration|JWT tokens managed via localStorage with automatic refresh on 401|Implement the AuthProvider at the app root, useApi hook for all authenticated requests|
-|Testing|Integration tests for API, E2E tests for user flows|Test the complete user journey (register → login → create task) as a single E2E test|
-|Docker & CI|Docker Compose for local dev, GitHub Actions for CI/CD|Use service containers in CI for PostgreSQL — no need for separate infrastructure|
+|Testing|Integration tests for API, E2E tests for user flows|Test the complete user journey (register ? login ? create task) as a single E2E test|
+|Docker & CI|Docker Compose for local dev, GitHub Actions for CI/CD|Use service containers in CI for PostgreSQL � no need for separate infrastructure|
 
 ## Chapter Roadmap
 
@@ -82,14 +82,14 @@ The monorepo structure:
 
 ```
 taskflow/
-â”œâ”€â”€ apps/
-â”‚   â”œâ”€â”€ web/          # Next.js frontend
-â”‚   â””â”€â”€ api/          # Express backend
-â”œâ”€â”€ packages/
-â”‚   â””â”€â”€ shared/       # Shared TypeScript types
-â”œâ”€â”€ docker-compose.yml
-â”œâ”€â”€ package.json
-â””â”€â”€ tsconfig.json
+├── apps/
+│   ├── web/          # Next.js frontend
+│   └── api/          # Express backend
+├── packages/
+│   └── shared/       # Shared TypeScript types
+├── docker-compose.yml
+├── package.json
+└── tsconfig.json
 ```
 
 ## 18.2 Setting Up the Monorepo
@@ -1383,13 +1383,13 @@ export function cache(durationSeconds: number) {
 
 
 > [!TIP]
-> Use `concurrently` in the root package.json to start both frontend and backend with a single `npm run dev` command — it significantly improves developer experience.
+> Use `concurrently` in the root package.json to start both frontend and backend with a single `npm run dev` command � it significantly improves developer experience.
 
 > [!WARNING]
-> The GitHub Actions service container for PostgreSQL uses a test password. Never use the CI test database credentials in production — always rotate secrets between environments.
+> The GitHub Actions service container for PostgreSQL uses a test password. Never use the CI test database credentials in production � always rotate secrets between environments.
 
 > [!REMEMBER]
-> This full-stack project ties together every chapter in the course. If something feels unclear, revisit the specific chapter — REST APIs (ch9), Auth (ch10), Databases (ch11), Deployment (ch12), Security (ch13), TypeScript (ch14), Next.js (ch15), Testing (ch16), and Performance (ch17).
+> This full-stack project ties together every chapter in the course. If something feels unclear, revisit the specific chapter � REST APIs (ch9), Auth (ch10), Databases (ch11), Deployment (ch12), Security (ch13), TypeScript (ch14), Next.js (ch15), Testing (ch16), and Performance (ch17).
 
 
 
@@ -1410,8 +1410,8 @@ export function cache(durationSeconds: number) {
 |Project Structure|`apps/web`, `apps/api`, `packages/shared`, root `package.json` with workspaces|
 |Stack|Next.js 15 + React 19 + TypeScript + Express + Prisma + PostgreSQL + Redis|
 |Key Dependencies|`lucide-react` (icons), `tailwindcss` (styling), `bcryptjs` (hashing), `jsonwebtoken` (JWT), `zod` (validation), `helmet` (security), `cors` (CORS)|
-|Auth Flow|Register/Login → JWT (15min) + Refresh Token (7d) → 401 triggers refresh → auto-retry|
-|CI Pipeline|quality (type-check + lint + build) → test (with postgres service) → deploy (Railway)|
+|Auth Flow|Register/Login ? JWT (15min) + Refresh Token (7d) ? 401 triggers refresh ? auto-retry|
+|CI Pipeline|quality (type-check + lint + build) ? test (with postgres service) ? deploy (Railway)|
 
 ## Cross-Application Matrix
 
@@ -1603,6 +1603,48 @@ console.log("Route tree:\n", APIRouteTreeBuilder.generateRouterCode(tree));
 console.log("Error boundary:\n", ErrorBoundaryGenerator.react().slice(0, 200) + "...");
 ```
 
+
+// fullstack project
+// fullstack-frontend-backend implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'fullstack project', data: { topic: 'fullstack-frontend-backend' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 Building a full-stack application requires integrating all the concepts from previous chapters into a cohesive system. In this chapter, we constructed TaskFlow, a complete task management application:

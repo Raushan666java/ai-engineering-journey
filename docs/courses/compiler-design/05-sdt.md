@@ -1,6 +1,6 @@
 # Chapter 5: Syntax-Directed Translation
 
-**← Previous:** [Chapter 4: Bottom-Up Parsing](04-parsing-bottomup.md) | **Next:** [Chapter 6: Intermediate Code Generation](06-intermediate-code.md)
+**? Previous:** [Chapter 4: Bottom-Up Parsing](04-parsing-bottomup.md) | **Next:** [Chapter 6: Intermediate Code Generation](06-intermediate-code.md)
 
 ## Learning Objectives
 
@@ -41,19 +41,19 @@ flowchart LR
 
 ### Syntax-Directed Definitions
 
-A **syntax-directed definition** (SDD) is a context-free grammar augmented with semantic rules associated with each production. For a production `A → X₁X₂...Xₙ`, each grammar symbol may have an associated set of **attributes**. A semantic rule computes the value of an attribute in terms of other attributes in the same production. Attributes capture the meaning of the program fragment represented by the grammar symbol.
+A **syntax-directed definition** (SDD) is a context-free grammar augmented with semantic rules associated with each production. For a production `A ? X1X2...X?`, each grammar symbol may have an associated set of **attributes**. A semantic rule computes the value of an attribute in terms of other attributes in the same production. Attributes capture the meaning of the program fragment represented by the grammar symbol.
 
 **Example**: An SDD for a desk calculator:
 
 | Production | Semantic Rule |
 |------------|---------------|
-| `L → E n` | `L.val = E.val` |
-| `E → E₁ + T` | `E.val = E₁.val + T.val` |
-| `E → T` | `E.val = T.val` |
-| `T → T₁ * F` | `T.val = T₁.val * F.val` |
-| `T → F` | `T.val = F.val` |
-| `F → ( E )` | `F.val = E.val` |
-| `F → digit` | `F.val = digit.lexval` |
+| `L ? E n` | `L.val = E.val` |
+| `E ? E1 + T` | `E.val = E1.val + T.val` |
+| `E ? T` | `E.val = T.val` |
+| `T ? T1 * F` | `T.val = T1.val * F.val` |
+| `T ? F` | `T.val = F.val` |
+| `F ? ( E )` | `F.val = E.val` |
+| `F ? digit` | `F.val = digit.lexval` |
 
 ### Attribute Classification
 
@@ -61,8 +61,8 @@ Attributes are classified as **synthesized** or **inherited**:
 
 | Attribute Type | Definition | Direction | Evaluation |
 |---------------|-----------|-----------|------------|
-| **Synthesized** | Computed from children's attributes | Child → Parent | Postorder traversal |
-| **Inherited** | Computed from parent, siblings, or self | Parent/Sibling → Child | Preorder/inorder traversal |
+| **Synthesized** | Computed from children's attributes | Child ? Parent | Postorder traversal |
+| **Inherited** | Computed from parent, siblings, or self | Parent/Sibling ? Child | Preorder/inorder traversal |
 
 A synthesized attribute for a nonterminal `A` is computed from attributes of its children in the parse tree. Synthesized attributes pass information upward, from leaves toward the root.
 
@@ -76,12 +76,12 @@ A **dependency graph** represents attribute dependencies as a directed graph whe
 graph TD
     subgraph "Parse tree for 3*5+4"
         E_val["E.val"]
-        E1_val["E₁.val"]
+        E1_val["E1.val"]
         T_val["T.val"]
-        T1_val["T₁.val"]
-        F1_val["F₁.val"]
-        F2_val["F₂.val"]
-        F3_val["F₃.val"]
+        T1_val["T1.val"]
+        F1_val["F1.val"]
+        F2_val["F2.val"]
+        F3_val["F3.val"]
         plus["+"]
         times["*"]
         E_val --> plus
@@ -108,11 +108,11 @@ S-attributed grammars correspond to the class of context-free grammars that can 
 
 ### L-Attributed Definitions
 
-An **L-attributed definition** permits both synthesized and inherited attributes, subject to the restriction that each inherited attribute of `Xⱼ` (the j-th symbol on the right-hand side) depends only on:
+An **L-attributed definition** permits both synthesized and inherited attributes, subject to the restriction that each inherited attribute of `X?` (the j-th symbol on the right-hand side) depends only on:
 
 1. Inherited attributes of `A` (the left-hand side)
-2. Attributes of `X₁` through `Xⱼ₋₁` (symbols to the left of `Xⱼ`)
-3. Attributes of `Xⱼ` itself (synthesized or inherited — but inherited must follow rule 1)
+2. Attributes of `X1` through `X??1` (symbols to the left of `X?`)
+3. Attributes of `X?` itself (synthesized or inherited ? but inherited must follow rule 1)
 
 This **left-to-right restriction** ensures evaluation can proceed during a depth-first, left-to-right traversal of the parse tree, which matches the traversal performed by top-down (predictive) parsers.
 
@@ -123,7 +123,7 @@ This **left-to-right restriction** ensures evaluation can proceed during a depth
 A **syntax-directed translation scheme** (SDT) embeds semantic actions at arbitrary positions within the right-hand side of a production. Actions are delimited by curly braces:
 
 ```
-E → E₁ + T   { E.val = E₁.val + T.val }
+E ? E1 + T   { E.val = E1.val + T.val }
 ```
 
 For LR parsing, actions must appear at the right end (**postfix SDT**) because reductions occur only after the full right-hand side has been parsed. For LL parsing, actions may appear between grammar symbols; the action executes when the parser has recognized all symbols to its left.
@@ -467,7 +467,7 @@ const exprAST: ASTNode = {
 };
 
 const postfix = SDTEvaluator.toPostfix(exprAST);
-console.log(`a + b * c → postfix: ${postfix}`);
+console.log(`a + b * c ? postfix: ${postfix}`);
 
 // === Demo: Three-Address Code ===
 const tacCode = SDTEvaluator.toTAC(exprAST, { count: 0 }, { count: 0 });
@@ -513,7 +513,7 @@ expr: expr '+' term   { $$ = $1 + $3; }
     ;
 ```
 
-The parser's value stack manages these attributes. During reduction of `expr → expr + term`, `$1` is the value of the first `expr` (previously computed and pushed), `$3` is the value of `term`, and `$$` becomes the new `expr`'s value.
+The parser's value stack manages these attributes. During reduction of `expr ? expr + term`, `$1` is the value of the first `expr` (previously computed and pushed), `$3` is the value of `term`, and `$$` becomes the new `expr`'s value.
 
 ### Implementing L-Attributed Definitions
 
@@ -539,7 +539,7 @@ class TypeCheckingParser {
         return true;
     }
 
-    // program → decl* expr
+    // program ? decl* expr
     private program(): void {
         while (this.peek() === "int" || this.peek() === "float") {
             this.declaration();
@@ -548,7 +548,7 @@ class TypeCheckingParser {
         console.log(`Expression type: ${type}`);
     }
 
-    // declaration → type ID ;
+    // declaration ? type ID ;
     private declaration(): string {
         const type = this.type();        // synthesized: type name
         const name = this.peek();
@@ -558,14 +558,14 @@ class TypeCheckingParser {
         return type;
     }
 
-    // type → int | float
+    // type ? int | float
     private type(): string {
         if (this.peek() === "int") { this.consume(); return "int"; }
         if (this.peek() === "float") { this.consume(); return "float"; }
         throw new Error("Expected type");
     }
 
-    // expression → term { (+|-) term }
+    // expression ? term { (+|-) term }
     private expression(inherited?: string): string {
         let leftType = this.term();
         while (this.peek() === "+" || this.peek() === "-") {
@@ -577,7 +577,7 @@ class TypeCheckingParser {
         return leftType;  // synthesized type
     }
 
-    // term → factor { (*|/) factor }
+    // term ? factor { (*|/) factor }
     private term(): string {
         let leftType = this.factor();
         while (this.peek() === "*" || this.peek() === "/") {
@@ -588,7 +588,7 @@ class TypeCheckingParser {
         return leftType;
     }
 
-    // factor → ID | NUMBER | ( expression )
+    // factor ? ID | NUMBER | ( expression )
     private factor(): string {
         if (this.peek() === "(") {
             this.consume();
@@ -630,9 +630,101 @@ The **desk calculator** is the canonical S-attributed example; the **type checke
 4. **SDTs for LL parsing embed actions inline**: Place actions where the needed information is available. Use marker nonterminals if an action must execute before a particular symbol.
 5. **Yacc/Bison's `$$`/$i is S-attributed by nature**: For inherited attributes in bottom-up parsers, use embedded actions with intermediate markers or pass values through the parser stack.
 
+
+// sdt
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'sdt', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// sdt - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'sdt' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-Syntax-directed definitions decorate context-free grammars with semantic rules. S-attributed definitions use only synthesized attributes and are evaluated during bottom-up parsing. L-attributed definitions add inherited attributes subject to left-to-right restrictions and are evaluated during top-down parsing. Dependency graphs determine evaluation order — any topological sort is valid. SDDs and SDTs enable the compiler to perform type checking, code generation, and other semantic processing in a single pass integrated with parsing. The TypeScript `SDTEvaluator` demonstrates both evaluation strategies with working code.
+Syntax-directed definitions decorate context-free grammars with semantic rules. S-attributed definitions use only synthesized attributes and are evaluated during bottom-up parsing. L-attributed definitions add inherited attributes subject to left-to-right restrictions and are evaluated during top-down parsing. Dependency graphs determine evaluation order ? any topological sort is valid. SDDs and SDTs enable the compiler to perform type checking, code generation, and other semantic processing in a single pass integrated with parsing. The TypeScript `SDTEvaluator` demonstrates both evaluation strategies with working code.
 
 ## Chapter Quiz
 
@@ -654,9 +746,9 @@ Syntax-directed definitions decorate context-free grammars with semantic rules. 
    - C) The second rule in the grammar
    - D) The second token of lookahead
 
-4. An L-attributed definition restricts inherited attributes of Xⱼ to depend on:
-   - A) Only attributes of Xⱼ₊₁ and beyond
-   - B) Inherited attributes of A and attributes of X₁...Xⱼ₋₁
+4. An L-attributed definition restricts inherited attributes of X? to depend on:
+   - A) Only attributes of X??1 and beyond
+   - B) Inherited attributes of A and attributes of X1...X??1
    - C) Any attribute anywhere in the grammar
    - D) Only attributes of A
 
@@ -685,9 +777,9 @@ Syntax-directed definitions decorate context-free grammars with semantic rules. 
 
 1. Extend the desk-calculator SDD to include subtraction and unary minus. Show the new productions and semantic rules.
 2. Construct the dependency graph for `3 * 5 + 4` using the desk-calculator SDD. List a topological sort.
-3. Design an SDD that translates infix expressions to postfix notation. The rule for `E → E₁ + T` should emit the `+` operator after both operands.
-4. For `S → while (C) S₁`, write the SDT to generate three-address code for the loop. Show the code for a specific condition and body. Identify inherited and synthesized attributes.
-5. Determine whether the following SDD is L-attributed: `A → B C` with rule `B.inh = f(A.inh, C.syn)`. Justify your answer.
+3. Design an SDD that translates infix expressions to postfix notation. The rule for `E ? E1 + T` should emit the `+` operator after both operands.
+4. For `S ? while (C) S1`, write the SDT to generate three-address code for the loop. Show the code for a specific condition and body. Identify inherited and synthesized attributes.
+5. Determine whether the following SDD is L-attributed: `A ? B C` with rule `B.inh = f(A.inh, C.syn)`. Justify your answer.
 6. Using the TypeScript `SDTEvaluator`, implement a new node kind `"mod"` for modulus and add its evaluation, type checking, postfix, and TAC methods.
 
 ### Challenge Problem

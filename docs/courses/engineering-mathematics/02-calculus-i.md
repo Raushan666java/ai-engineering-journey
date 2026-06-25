@@ -6,7 +6,7 @@
 
 After completing this chapter, you will be able to:
 
-- Evaluate limits of functions using algebraic manipulation and L'Hôpital's rule
+- Evaluate limits of functions using algebraic manipulation and L'H?pital's rule
 - Compute derivatives using the limit definition and differentiation rules
 - Apply differentiation to optimization, related rates, and curve sketching
 - Evaluate definite and indefinite integrals using substitution, integration by parts, and partial fractions
@@ -46,8 +46,8 @@ flowchart LR
 **Formal ($\epsilon$-$\delta$) Definition:** $\lim_{x \to a} f(x) = L$ if for every $\epsilon > 0$, there exists $\delta > 0$ such that $0 < |x - a| < \delta$ implies $|f(x) - L| < \epsilon$.
 
 **One-Sided Limits:**
-- Right-hand: $\lim_{x \to a^+} f(x)$ — approach from values greater than $a$
-- Left-hand: $\lim_{x \to a^-} f(x)$ — approach from values less than $a$
+- Right-hand: $\lim_{x \to a^+} f(x)$ ? approach from values greater than $a$
+- Left-hand: $\lim_{x \to a^-} f(x)$ ? approach from values less than $a$
 - The two-sided limit exists iff both one-sided limits exist and are equal.
 
 **Limit Laws:** If $\lim_{x \to a} f(x) = L$ and $\lim_{x \to a} g(x) = M$, then:
@@ -73,7 +73,7 @@ flowchart LR
 
 **Intermediate Value Theorem (IVT):** If $f$ is continuous on $[a, b]$ and $y$ is between $f(a)$ and $f(b)$, then there exists $c \in (a, b)$ such that $f(c) = y$.
 
-**L'Hôpital's Rule:** If $\lim_{x \to a} f(x)$ and $\lim_{x \to a} g(x)$ are both $0$ or both $\pm\infty$, then:
+**L'H?pital's Rule:** If $\lim_{x \to a} f(x)$ and $\lim_{x \to a} g(x)$ are both $0$ or both $\pm\infty$, then:
 
 $$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
 
@@ -117,7 +117,7 @@ $$f'(x) = \frac{df}{dx} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 
 **Implicit Differentiation:** For equations not solved for $y$ (e.g., $x^2 + y^2 = 1$), differentiate both sides with respect to $x$ and solve for $dy/dx$.
 
-**Logarithmic Differentiation:** Take $\ln$ of both sides before differentiating — useful for $f(x)^{g(x)}$ forms.
+**Logarithmic Differentiation:** Take $\ln$ of both sides before differentiating ? useful for $f(x)^{g(x)}$ forms.
 
 **Mean Value Theorem (MVT):** If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $c \in (a, b)$ such that:
 
@@ -237,17 +237,17 @@ $$A = \int_a^b [f(x) - g(x)]\,dx$$
 
 where $f(x) \geq g(x)$ on $[a,b]$.
 
-**Volume of Revolution — Disk Method:**
+**Volume of Revolution ? Disk Method:**
 
 $$V = \pi \int_a^b [R(x)]^2 \,dx$$
 
 where $R(x)$ is the radius of the cross-sectional disk at position $x$.
 
-**Volume of Revolution — Washer Method:**
+**Volume of Revolution ? Washer Method:**
 
 $$V = \pi \int_a^b ([R_{\text{outer}}(x)]^2 - [R_{\text{inner}}(x)]^2)\,dx$$
 
-**Volume of Revolution — Shell Method:**
+**Volume of Revolution ? Shell Method:**
 
 $$V = 2\pi \int_a^b x[f(x) - g(x)]\,dx$$
 
@@ -282,7 +282,7 @@ $$\int_a^b f(x)\,dx = \lim_{t \to c^-} \int_a^t f(x)\,dx + \lim_{t \to c^+} \int
 
 **Sequence:** A function $a_n$ defined on positive integers. $\lim_{n \to \infty} a_n = L$ means terms approach $L$ as $n \to \infty$.
 
-**Series:** $\sum_{n=1}^\infty a_n$ — sum of sequence terms. The $n$th partial sum is $S_n = \sum_{k=1}^n a_k$.
+**Series:** $\sum_{n=1}^\infty a_n$ ? sum of sequence terms. The $n$th partial sum is $S_n = \sum_{k=1}^n a_k$.
 
 **Convergence:** $\sum_{n=1}^\infty a_n$ converges if $\lim_{n \to \infty} S_n$ exists and is finite.
 
@@ -290,7 +290,7 @@ $$\int_a^b f(x)\,dx = \lim_{t \to c^-} \int_a^t f(x)\,dx + \lim_{t \to c^+} \int
 
 **p-Series:** $\sum_{n=1}^\infty \frac{1}{n^p}$ converges iff $p > 1$.
 
-**Harmonic Series:** $\sum_{n=1}^\infty \frac{1}{n}$ diverges (slowly — grows like $\ln n$).
+**Harmonic Series:** $\sum_{n=1}^\infty \frac{1}{n}$ diverges (slowly ? grows like $\ln n$).
 
 **$n$th Term Test for Divergence:** If $\lim_{n \to \infty} a_n \neq 0$, then $\sum a_n$ diverges.
 
@@ -371,17 +371,17 @@ where $\binom{p}{n} = \frac{p(p-1)\cdots(p-n+1)}{n!}$.
 
 ## Examples
 
-### Example 1: Limits and L'Hôpital's Rule
+### Example 1: Limits and L'H?pital's Rule
 
 Evaluate $\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$.
 
 **Solution:** As $x \to 0$, numerator $\to e^0 - 1 - 0 = 0$ and denominator $\to 0$, so we have a $0/0$ indeterminate form.
 
-Apply L'Hôpital's Rule:
+Apply L'H?pital's Rule:
 
 $$\lim_{x \to 0} \frac{e^x - 1 - x}{x^2} = \lim_{x \to 0} \frac{e^x - 1}{2x}$$
 
-Still $0/0$. Apply L'Hôpital again:
+Still $0/0$. Apply L'H?pital again:
 
 $$\lim_{x \to 0} \frac{e^x}{2} = \frac{1}{2}$$
 
@@ -473,7 +473,7 @@ $$f^{(4)}(x) = \cos x \implies f^{(4)}(0) = 1$$
 
 $$\cos x = \frac{1}{0!} + \frac{0}{1!}x + \frac{-1}{2!}x^2 + \frac{0}{3!}x^3 + \frac{1}{4!}x^4 + \cdots = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots$$
 
-### Example 9: Application — Gradient Descent in ML
+### Example 9: Application ? Gradient Descent in ML
 
 The gradient descent update rule is $x_{t+1} = x_t - \eta \nabla f(x_t)$, where $\eta$ is the learning rate. For $f(x) = x^2$, the minimum is at $x = 0$.
 
@@ -551,7 +551,7 @@ function richardsonExtrapolation(
   return D2 + (D2 - D1) / 3;
 }
 
-// Test: f(x) = x³, f'(x) = 3x²
+// Test: f(x) = x?, f'(x) = 3x?
 const cube = (x: number) => x * x * x;
 const x = 2;
 console.log(`f'(2) exact: ${12}`);
@@ -591,11 +591,11 @@ function adaptiveSimpson(
        + adaptiveSimpson(f, c, b, tol / 2, maxDepth - 1);
 }
 
-// Integrate e^(-x²) from 0 to 2
+// Integrate e^(-x?) from 0 to 2
 const integrand = (x: number) => Math.exp(-x * x);
 const resultAI = adaptiveSimpson(integrand, 0, 2);
-console.log(`∫₀² e^(-x²) dx ≈ ${resultAI.toFixed(8)}`);
-// Expected: ≈ 0.88208139 (error function)
+console.log(`?0? e^(-x?) dx ? ${resultAI.toFixed(8)}`);
+// Expected: ? 0.88208139 (error function)
 ```
 
 ### Series Summation with Machine Epsilon Precision
@@ -625,7 +625,7 @@ const factorialTerm = (n: number) => {
 };
 
 const { sum, terms } = sumSeries(factorialTerm);
-console.log(`e ≈ ${sum.toFixed(12)} (${terms} terms)`);
+console.log(`e ? ${sum.toFixed(12)} (${terms} terms)`);
 ```
 
 ## Real-World Application: Gradient Descent for Machine Learning
@@ -648,7 +648,7 @@ SGD is noisier but scales to massive datasets because each step costs $O(1)$ ins
 **Convergence Analysis:** For convex $L$ with $L$-Lipschitz gradient, gradient descent with $\eta \leq 2/L$ satisfies:
 $$L(\theta_t) - L(\theta^*) \leq \frac{\|\theta_0 - \theta^*\|^2}{2\eta t}$$
 
-This $O(1/t)$ convergence rate is the same asymptotic behavior as a series that converges like $\sum 1/n^2$ — fast enough for practical use but slower than Newton's method ($O(e^{-ct})$).
+This $O(1/t)$ convergence rate is the same asymptotic behavior as a series that converges like $\sum 1/n^2$ ? fast enough for practical use but slower than Newton's method ($O(e^{-ct})$).
 
 ### TypeScript Implementation: Numerical Differentiation & Root Finding
 
@@ -674,10 +674,10 @@ function riemannSum(f: (x: number) => number, a: number, b: number, n: number = 
 // Tests
 const cube = (x: number) => x * x * x;
 const sinFn = (x: number) => Math.sin(x);
-console.log(`f(x)=x³, f'(2) central: ${centralDiff(cube, 2).toFixed(6)} (expected: 12.0)`);
+console.log(`f(x)=x?, f'(2) central: ${centralDiff(cube, 2).toFixed(6)} (expected: 12.0)`);
 console.log(`f(x)=sin(x), f''(1): ${secondCentralDiff(sinFn, 1).toFixed(6)} (expected: ${(-Math.sin(1)).toFixed(6)})`);
-console.log(`∫₀¹ x² dx = ${riemannSum(x => x * x, 0, 1, 10000).toFixed(6)} (expected: 0.333333)`);
-console.log(`∫₀^π sin(x) dx = ${riemannSum(sinFn, 0, Math.PI, 10000).toFixed(6)} (expected: 2.0)`);
+console.log(`?0? x? dx = ${riemannSum(x => x * x, 0, 1, 10000).toFixed(6)} (expected: 0.333333)`);
+console.log(`?0^p sin(x) dx = ${riemannSum(sinFn, 0, Math.PI, 10000).toFixed(6)} (expected: 2.0)`);
 
 // Newton's method root finder
 function newtonMethod(
@@ -693,13 +693,13 @@ function newtonMethod(
   return { root: x, iterations: maxIter, error: Math.abs(f(x)) };
 }
 
-// Find √2: solve x² - 2 = 0
+// Find v2: solve x? - 2 = 0
 const { root: sqrt2, iterations: nIters } = newtonMethod(x => x * x - 2, x => 2 * x, 1.5);
-console.log(`√2 ≈ ${sqrt2.toFixed(10)} (error: ${(sqrt2 - Math.SQRT2).toExponential(2)}, ${nIters} iters)`);
+console.log(`v2 ? ${sqrt2.toFixed(10)} (error: ${(sqrt2 - Math.SQRT2).toExponential(2)}, ${nIters} iters)`);
 
-// Find π: solve sin(x) = 0 near x = 3
+// Find p: solve sin(x) = 0 near x = 3
 const { root: piEst } = newtonMethod(sinFn, Math.cos, 3);
-console.log(`π ≈ ${piEst.toFixed(10)} (error: ${(piEst - Math.PI).toExponential(2)})`);
+console.log(`p ? ${piEst.toFixed(10)} (error: ${(piEst - Math.PI).toExponential(2)})`);
 
 // Secant method (no derivative needed)
 function secantMethod(f: (x: number) => number, x0: number, x1: number, tol: number = 1e-14, maxIter: number = 100): { root: number; iterations: number } {
@@ -713,11 +713,11 @@ function secantMethod(f: (x: number) => number, x0: number, x1: number, tol: num
   return { root: b, iterations: maxIter };
 }
 const { root: rootPi } = secantMethod(sinFn, 3, 3.2);
-console.log(`Secant π ≈ ${rootPi.toFixed(10)} (error: ${(rootPi - Math.PI).toExponential(2)})`);
+console.log(`Secant p ? ${rootPi.toFixed(10)} (error: ${(rootPi - Math.PI).toExponential(2)})`);
 ```
 
 ```
-// --- L'Hôpital's Rule Checker ---
+// --- L'H?pital's Rule Checker ---
 function lHopital(f: (x: number) => number, g: (x: number) => number, a: number): { indeterminate: boolean; limit?: number } {
   const f_a = f(a), g_a = g(a);
   const is0_0 = Math.abs(f_a) < 1e-10 && Math.abs(g_a) < 1e-10;
@@ -730,7 +730,7 @@ function lHopital(f: (x: number) => number, g: (x: number) => number, a: number)
   return { indeterminate: true, limit: fp / gp };
 }
 const lhs = lHopital(x => Math.sin(x), x => x, 0);
-console.log('L\'Hôpital sin(x)/x at 0:', lhs.limit?.toFixed(6), '(expected: 1)');
+console.log('L\'H?pital sin(x)/x at 0:', lhs.limit?.toFixed(6), '(expected: 1)');
 
 // --- Taylor Series with Remainder ---
 function taylorSeries(f: (x: number) => number, a: number, order: number, x: number): { value: number; remainder: number } {
@@ -761,7 +761,7 @@ function newtonsMethod(f: (x: number) => number, fp: (x: number) => number, gues
   return { root: x, iterations: maxIter };
 }
 const sqrt2 = newtonsMethod(x => x * x - 2, x => 2 * x, 1.5);
-console.log('\nNewton √2:', sqrt2.root.toFixed(10), '(error:', (sqrt2.root - Math.SQRT2).toExponential(2), ')');
+console.log('\nNewton v2:', sqrt2.root.toFixed(10), '(error:', (sqrt2.root - Math.SQRT2).toExponential(2), ')');
 
 // --- Riemann Sum with Multiple Rules ---
 function riemannSum(f: (x: number) => number, a: number, b: number, n: number, rule: 'left' | 'right' | 'midpoint' | 'trapezoid'): number {
@@ -773,7 +773,7 @@ function riemannSum(f: (x: number) => number, a: number, b: number, n: number, r
   }
   return rule === 'trapezoid' ? sum * dx / 2 : sum * dx;
 }
-console.log('\n∫₀¹ x² dx (midpoint, n=100):', riemannSum(x => x * x, 0, 1, 100, 'midpoint').toFixed(6), '(expected: 0.333333)');
+console.log('\n?0? x? dx (midpoint, n=100):', riemannSum(x => x * x, 0, 1, 100, 'midpoint').toFixed(6), '(expected: 0.333333)');
 
 // --- Curve Sketching Data ---
 function criticalPoints(f: (x: number) => number, a: number, b: number, step: number): { x: number; f: number; fprime: number; fdouble: number }[] {
@@ -787,10 +787,102 @@ function criticalPoints(f: (x: number) => number, a: number, b: number, step: nu
   return points;
 }
 const crit = criticalPoints(x => x * x * x - 3 * x, -2, 2, 0.5);
-console.log('\nCurve sketch f(x)=x³-3x:');
+console.log('\nCurve sketch f(x)=x?-3x:');
 crit.slice(0, 5).forEach(p => console.log(`  x=${p.x}: f=${p.f}, f'=${p.fprime}, f''=${p.fdouble}`));
 ```
 
+
+// calculus i
+// linear-algebra-calculus implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'calculus i', data: { topic: 'linear-algebra-calculus' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// calculus i - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'engineering-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'engineering-mathematics', chapter: 'calculus i' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('engineering-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Limits describe function behavior near points; continuity ensures no gaps

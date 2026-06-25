@@ -1,6 +1,6 @@
 # Chapter 3: Apache Spark Basics
 
-> **Previous:** [Chapter 2: Hadoop — HDFS, MapReduce & YARN](./02-hadoop.md) | **Next:** [Chapter 4: Spark MLlib](./04-spark-mllib.md)
+> **Previous:** [Chapter 2: Hadoop ? HDFS, MapReduce & YARN](./02-hadoop.md) | **Next:** [Chapter 4: Spark MLlib](./04-spark-mllib.md)
 
 ## Learning Objectives
 
@@ -58,9 +58,9 @@ spark = SparkSession.builder \
     .config("spark.driver.memory", "4g") \
     .getOrCreate()
 
-# Each executor = 4 cores × 8 GB memory
-# Total cluster resources: 4 executors × 4 cores = 16 cores
-#                           4 executors × 8 GB = 32 GB memory
+# Each executor = 4 cores ? 8 GB memory
+# Total cluster resources: 4 executors ? 4 cores = 16 cores
+#                           4 executors ? 8 GB = 32 GB memory
 print(f"Total cores: {spark.sparkContext.defaultParallelism}")
 spark.stop()
 ```
@@ -96,7 +96,7 @@ print(f"Partitions: {rdd_8.getNumPartitions()}")
 ### 3.2.2 RDD Transformations (Lazy)
 
 ```python
-# Transformations are lazy — nothing happens until an action is called
+# Transformations are lazy ? nothing happens until an action is called
 rdd = sc.parallelize(range(1, 1001))
 
 # map: apply function to each element
@@ -147,7 +147,7 @@ rdd.foreach(lambda x: x * x)  # No return value
 rdd.filter(lambda x: x % 2 == 0).saveAsTextFile("output/evens")
 ```
 
-> **One-Sentence Takeaway:** RDDs are lazy-evaluated immutable collections — transformations build a DAG and actions trigger execution, enabling fault-tolerant distributed computation.
+> **One-Sentence Takeaway:** RDDs are lazy-evaluated immutable collections ? transformations build a DAG and actions trigger execution, enabling fault-tolerant distributed computation.
 
 ## 3.3 DataFrames
 
@@ -251,9 +251,9 @@ df.withColumn("level", age_category_pandas(df.age)).show()
 
 Pandas UDFs are 10-100x faster than row-based UDFs because they operate on batches (Arrow serialization) instead of individual rows.
 
-> **Pro Tip:** Always prefer Pandas UDFs over regular UDFs. The Arrow-based batch processing makes them 10-100x faster. For simple transformations, try to express the logic using built-in Spark SQL functions first — they're optimized by Catalyst.
+> **Pro Tip:** Always prefer Pandas UDFs over regular UDFs. The Arrow-based batch processing makes them 10-100x faster. For simple transformations, try to express the logic using built-in Spark SQL functions first ? they're optimized by Catalyst.
 
-> **One-Sentence Takeaway:** DataFrames provide a schema-aware, optimizer-driven API — use them over RDDs for 95% of Spark workloads.
+> **One-Sentence Takeaway:** DataFrames provide a schema-aware, optimizer-driven API ? use them over RDDs for 95% of Spark workloads.
 
 ## 3.4 Spark SQL
 
@@ -307,7 +307,7 @@ SELECT name FROM employees WHERE age > 25 AND dept = 'Engineering'
 --   + Filter (age > 25 AND dept = 'Engineering') - Applied during scan
 ```
 
-> **One-Sentence Takeaway:** Catalyst optimizes Spark SQL through predicate pushdown, projection pruning, constant folding, and join reordering — always use `.explain("extended")` to verify your query plan.
+> **One-Sentence Takeaway:** Catalyst optimizes Spark SQL through predicate pushdown, projection pruning, constant folding, and join reordering ? always use `.explain("extended")` to verify your query plan.
 
 ## 3.6 Tungsten Execution Engine
 
@@ -332,16 +332,16 @@ spark.conf.set("spark.memory.offHeap.size", "4g")
 df1 = spark.createDataFrame([(1, "Alice"), (2, "Bob")], ["id", "name"])
 df2 = spark.createDataFrame([(1, "Engineering"), (2, "Sales")], ["id", "dept"])
 
-# Broadcast join (for small tables — avoids shuffle)
+# Broadcast join (for small tables ? avoids shuffle)
 from pyspark.sql.functions import broadcast
 joined = df1.join(broadcast(df2), "id")
 joined.explain()
-# Result: BroadcastHashJoin — no shuffle, df2 sent to all executors
+# Result: BroadcastHashJoin ? no shuffle, df2 sent to all executors
 
-# Sort-merge join (for large tables — default)
+# Sort-merge join (for large tables ? default)
 joined_large = large_df1.join(large_df2, "id")
 joined_large.explain()
-# Result: SortMergeJoin — both sides sorted by key, then merged
+# Result: SortMergeJoin ? both sides sorted by key, then merged
 
 # Shuffle hash join (for partitioned data)
 spark.conf.set("spark.sql.adaptive.enabled", "true")
@@ -356,9 +356,9 @@ spark.conf.set("spark.sql.adaptive.enabled", "true")
 | SortMergeJoin | Both sides large, equi-join | Both sides |
 | ShuffledHashJoin | One side much smaller than the other | Both sides |
 
-> **Pro Tip:** Use `broadcast()` hint for dimension tables under 10 MB. This eliminates the shuffle entirely. For large fact-to-fact joins, Adaptive Query Execution (AQE) automatically selects the best join strategy — enable it with `spark.sql.adaptive.enabled=true`.
+> **Pro Tip:** Use `broadcast()` hint for dimension tables under 10 MB. This eliminates the shuffle entirely. For large fact-to-fact joins, Adaptive Query Execution (AQE) automatically selects the best join strategy ? enable it with `spark.sql.adaptive.enabled=true`.
 
-> **One-Sentence Takeaway:** Spark join strategy selection is critical — broadcast joins avoid shuffles for small tables, while sort-merge joins handle large equi-joins with AQE automatically choosing the optimal strategy.
+> **One-Sentence Takeaway:** Spark join strategy selection is critical ? broadcast joins avoid shuffles for small tables, while sort-merge joins handle large equi-joins with AQE automatically choosing the optimal strategy.
 
 ## 3.8 Spark Configuration & Tuning
 
@@ -394,10 +394,10 @@ spark.conf.set("spark.sql.shuffle.partitions", ideal_partitions)
 # Repartition and coalesce
 df = spark.read.parquet("data/*.parquet")
 
-# Coalesce (no shuffle) — reduce partitions
+# Coalesce (no shuffle) ? reduce partitions
 df_coalesced = df.coalesce(10)
 
-# Repartition (with shuffle) — increase or redistribute
+# Repartition (with shuffle) ? increase or redistribute
 df_repartitioned = df.repartition(100, "dept")
 ```
 
@@ -465,7 +465,7 @@ df.write.mode("overwrite").parquet("s3a://my-bucket/output/")
 
 | Category | Key Concepts | Notes |
 |----------|-------------|-------|
-| **RDD Operations** | map, filter, flatMap, reduceByKey (transformations); collect, take, count (actions) | Lazy evaluation — nothing runs until an action |
+| **RDD Operations** | map, filter, flatMap, reduceByKey (transformations); collect, take, count (actions) | Lazy evaluation ? nothing runs until an action |
 | **DataFrame API** | select, filter, withColumn, groupBy, agg, join, orderBy | Use `F.col()` for column references |
 | **Spark Config** | shuffle.partitions, executor.memory, adaptive.enabled | Prefer AQE defaults, tune partition count |
 | **Join Types** | broadcast (hint), sort-merge (default), shuffled-hash | Check with `.explain()` |
@@ -566,7 +566,7 @@ flowchart LR
 
 ## 3.13 TypeScript Spark Simulator
 
-The following TypeScript classes simulate core Spark concepts — DAG building, lazy evaluation, partition-aware execution — to deepen understanding without a cluster.
+The following TypeScript classes simulate core Spark concepts ? DAG building, lazy evaluation, partition-aware execution ? to deepen understanding without a cluster.
 
 ### SparkSession Builder
 
@@ -697,9 +697,9 @@ class RDD<T> {
     return rdd;
   }
 
-  // Action: collect (eager — triggers computation)
+  // Action: collect (eager ? triggers computation)
   collect(): T[] {
-    console.log(`Collect triggered. Lineage: ${this.lineage.join(" → ")}`);
+    console.log(`Collect triggered. Lineage: ${this.lineage.join(" ? ")}`);
     return this.partitions.flat();
   }
 
@@ -744,15 +744,15 @@ const sorted = counts
   .sort((a, b) => b.count - a.count);
 
 console.table(sorted);
-// ┌─────────┬────────┬───────┐
-// │ (index) │  word  │ count │
-// ├─────────┼────────┼───────┤
-// │    0    │ hello  │   2   │
-// │    1    │ spark  │   2   │
-// │    2    │  world │   1   │
-// │    3    │   is   │   1   │
-// │    4    │  fast  │   1   │
-// └─────────┴────────┴───────┘
+// +--------------------------+
+// ? (index) ?  word  ? count ?
+// +---------+--------+-------?
+// ?    0    ? hello  ?   2   ?
+// ?    1    ? spark  ?   2   ?
+// ?    2    ?  world ?   1   ?
+// ?    3    ?   is   ?   1   ?
+// ?    4    ?  fast  ?   1   ?
+// +--------------------------+
 ```
 
 ### DataFrame Operation Simulator
@@ -842,21 +842,21 @@ const df = new DataFrame([
 ]);
 
 df.filter(r => (r.age as number) > 28).select("name", "age").show();
-// ┌─────────┬─────────┬─────┐
-// │ (index) │  name   │ age │
-// ├─────────┼─────────┼─────┤
-// │    0    │ Alice   │ 30  │
-// │    1    │ Charlie │ 35  │
-// └─────────┴─────────┴─────┘
+// +-------------------------+
+// ? (index) ?  name   ? age ?
+// +---------+---------+-----?
+// ?    0    ? Alice   ? 30  ?
+// ?    1    ? Charlie ? 35  ?
+// +-------------------------+
 
 df.groupBy("dept").agg({ age: "avg", name: "count" }).show();
-// ┌─────────────┬──────────┬─────────────┐
-// │   dept      │ avg_age  │ count_name  │
-// ├─────────────┼──────────┼─────────────┤
-// │ Engineering │   32.5   │      2      │
-// │   Sales     │   25.0   │      1      │
-// │  Marketing  │   28.0   │      1      │
-// └─────────────┴──────────┴─────────────┘
+// +--------------------------------------+
+// ?   dept      ? avg_age  ? count_name  ?
+// +-------------+----------+-------------?
+// ? Engineering ?   32.5   ?      2      ?
+// ?   Sales     ?   25.0   ?      1      ?
+// ?  Marketing  ?   28.0   ?      1      ?
+// +--------------------------------------+
 ```
 
 ### Partition Tuning Worked Example
@@ -933,6 +933,98 @@ console.log("Estimated shuffle:", dag.estimateShuffleSizeGB(), "GB");
 ```
 ```
 
+
+// spark basics
+// hadoop-spark-ecosystem implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'spark basics', data: { topic: 'hadoop-spark-ecosystem' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// spark basics - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'big-data-ecosystem demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'big-data', chapter: 'spark basics' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('big-data-ecosystem'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - RDDs are the low-level building block; DataFrames provide a higher-level, optimized API.
@@ -940,7 +1032,7 @@ console.log("Estimated shuffle:", dag.estimateShuffleSizeGB(), "GB");
 - Tungsten engine uses off-heap memory, cache-aware computation, and code generation.
 - Choose join strategies carefully: broadcast for small tables, sort-merge for large equi-joins.
 - Aim for 100-200 MB per partition and cache datasets reused across multiple queries.
-- Spark runs on YARN, Kubernetes, or standalone — config is key for performance.
+- Spark runs on YARN, Kubernetes, or standalone ? config is key for performance.
 
 ## Exercises
 

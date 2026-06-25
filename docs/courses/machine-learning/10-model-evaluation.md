@@ -10,7 +10,7 @@
 - Derive the bias-variance decomposition from first principles
 - Apply Cross-Validation techniques (K-fold, Leave-one-out, Stratified) for robust evaluation
 - Interpret various performance metrics: Accuracy, Precision, Recall, F1-Score, and ROC-AUC
-- Compute regression metrics: MSE, RMSE, MAE, R², Adjusted R²
+- Compute regression metrics: MSE, RMSE, MAE, R?, Adjusted R?
 - Choose macro, micro, and weighted averaging for multi-class classification
 - Implement Hyperparameter Tuning using Grid Search and Random Search
 - Compare models statistically using McNemar's test and paired t-tests
@@ -22,7 +22,7 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Bias-Variance Tradeoff | Total error = bias² + variance + irreducible error | Simple models underfit (high bias); complex models overfit (high variance) |
+| Bias-Variance Tradeoff | Total error = bias? + variance + irreducible error | Simple models underfit (high bias); complex models overfit (high variance) |
 | K-fold Cross-Validation | Partition data into K folds; train on K-1, validate on 1 | Use K=5 or K=10 as a default; higher K reduces bias but increases variance |
 | Stratified Cross-Validation | Maintain class proportions across folds | Essential for imbalanced datasets to avoid degenerate folds |
 | Confusion Matrix | TP, TN, FP, FN form the foundation of all classification metrics | Always inspect the full confusion matrix, not just accuracy |
@@ -33,7 +33,7 @@
 | Validation Curves | Plot training/validation error vs hyperparameter value | Find the sweet spot where validation error is minimal |
 | Grid Search | Exhaustive search over a predefined hyperparameter grid | Systematic but expensive; use for small parameter spaces |
 | Random Search | Randomly samples hyperparameter combinations | More efficient than Grid Search when some hyperparameters don't affect performance |
-| Regression Metrics | MSE, RMSE, MAE, R², Adjusted R² | R² alone is insufficient — always inspect residuals and RMSE |
+| Regression Metrics | MSE, RMSE, MAE, R?, Adjusted R? | R? alone is insufficient ? always inspect residuals and RMSE |
 | Statistical Comparison | McNemar's test, paired t-test for model comparison | Never declare one model "better" without statistical significance |
 
 ---
@@ -81,9 +81,9 @@ $$
 
 Where:
 
-- **Bias²**: $(E[\hat{f}] - f)^2$ — how far the average prediction deviates from the true value.
-- **Variance**: $E[(\hat{f} - E[\hat{f}])^2]$ — how much predictions fluctuate across different training sets.
-- **Irreducible Error**: $\sigma^2$ — noise inherent in the data that no model can remove.
+- **Bias?**: $(E[\hat{f}] - f)^2$ ? how far the average prediction deviates from the true value.
+- **Variance**: $E[(\hat{f} - E[\hat{f}])^2]$ ? how much predictions fluctuate across different training sets.
+- **Irreducible Error**: $\sigma^2$ ? noise inherent in the data that no model can remove.
 
 ```mermaid
 ---
@@ -95,7 +95,7 @@ xychart-beta
     x-axis ["Low Complexity (High Bias)", "Optimal Complexity", "High Complexity (High Variance)"]
     y-axis "Error" 0 --> 1
     line "Total Error" [0.9, 0.5, 0.3, 0.25, 0.35, 0.6, 0.9]
-    line "Bias²" [0.8, 0.6, 0.4, 0.2, 0.1, 0.05, 0.01]
+    line "Bias?" [0.8, 0.6, 0.4, 0.2, 0.1, 0.05, 0.01]
     line "Variance" [0.01, 0.02, 0.05, 0.1, 0.25, 0.55, 0.89]
 ```
 
@@ -117,23 +117,23 @@ flowchart TD
     end
 
     subgraph Iteration1["Iteration 1"]
-        B1["Train ✓"] --- B2["Train ✓"] --- B3["Train ✓"] --- B4["Train ✓"] --- B5["Test ✗"]
+        B1["Train ?"] --- B2["Train ?"] --- B3["Train ?"] --- B4["Train ?"] --- B5["Test ?"]
     end
 
     subgraph Iteration2["Iteration 2"]
-        C1["Train ✓"] --- C2["Train ✓"] --- C3["Train ✓"] --- C4["Test ✗"] --- C5["Train ✓"]
+        C1["Train ?"] --- C2["Train ?"] --- C3["Train ?"] --- C4["Test ?"] --- C5["Train ?"]
     end
 
     subgraph Iteration3["Iteration 3"]
-        D1["Train ✓"] --- D2["Train ✓"] --- D3["Test ✗"] --- D4["Train ✓"] --- D5["Train ✓"]
+        D1["Train ?"] --- D2["Train ?"] --- D3["Test ?"] --- D4["Train ?"] --- D5["Train ?"]
     end
 
     subgraph Iteration4["Iteration 4"]
-        E1["Train ✓"] --- E2["Test ✗"] --- E3["Train ✓"] --- E4["Train ✓"] --- E5["Train ✓"]
+        E1["Train ?"] --- E2["Test ?"] --- E3["Train ?"] --- E4["Train ?"] --- E5["Train ?"]
     end
 
     subgraph Iteration5["Iteration 5"]
-        F1["Test ✗"] --- F2["Train ✓"] --- F3["Train ✓"] --- F4["Train ✓"] --- F5["Train ✓"]
+        F1["Test ?"] --- F2["Train ?"] --- F3["Train ?"] --- F4["Train ?"] --- F5["Train ?"]
     end
 
     Data --> Iteration1 --> Iteration2 --> Iteration3 --> Iteration4 --> Iteration5
@@ -179,8 +179,8 @@ Regression problems require different evaluation metrics because there are no "p
 - **Mean Squared Error (MSE)**: $\frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2$. Penalizes large errors heavily.
 - **Root Mean Squared Error (RMSE)**: $\sqrt{\text{MSE}}$. Interpretable in the same units as $y$.
 - **Mean Absolute Error (MAE)**: $\frac{1}{n}\sum_{i=1}^{n} |y_i - \hat{y}_i|$. Robust to outliers.
-- **R² (Coefficient of Determination)**: $1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}$. Proportion of variance explained. Can be negative for poor models.
-- **Adjusted R²**: $1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$. Penalizes adding irrelevant features, where $p$ is the number of predictors.
+- **R? (Coefficient of Determination)**: $1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}$. Proportion of variance explained. Can be negative for poor models.
+- **Adjusted R?**: $1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$. Penalizes adding irrelevant features, where $p$ is the number of predictors.
 
 ```mermaid
 ---
@@ -189,7 +189,7 @@ title: Regression Metric Properties
 flowchart TD
     MSE[MSE<br/>Sensitive to outliers] --> RMSE[RMSE<br/>Same units as target]
     MAE[MAE<br/>Robust to outliers]
-    R2[R²<br/>Proportion of variance explained] --> ADJR2[Adjusted R²<br/>Penalizes extra features]
+    R2[R?<br/>Proportion of variance explained] --> ADJR2[Adjusted R?<br/>Penalizes extra features]
     RMSE --> COMPARE[Compare models]
     MAE --> COMPARE
     R2 --> COMPARE
@@ -229,14 +229,14 @@ title: Validation Curve for Tree Depth
 ---
 %%{init: {'theme': 'base'}}%%
 xychart-beta
-    title "Validation Curve — Max Tree Depth"
+    title "Validation Curve ? Max Tree Depth"
     x-axis "Max Depth" 1 --> 20
     y-axis "Error" 0 --> 1
     line "Training Error" [0.4, 0.3, 0.2, 0.12, 0.08, 0.05, 0.03, 0.02, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
     line "Validation Error" [0.42, 0.33, 0.25, 0.18, 0.15, 0.13, 0.14, 0.16, 0.19, 0.23, 0.28, 0.33, 0.38, 0.42, 0.45, 0.47, 0.48, 0.48, 0.49, 0.49]
 ```
 
-The optimal depth is where validation error is lowest (around 5-6 in this example). After that, training error continues to drop but validation error rises — classic overfitting.
+The optimal depth is where validation error is lowest (around 5-6 in this example). After that, training error continues to drop but validation error rises ? classic overfitting.
 
 ### Hyperparameter Tuning
 
@@ -283,7 +283,7 @@ When one class significantly outnumbers another, standard metrics and training p
 
 ### Statistical Comparison of Models
 
-Running a single cross-validation and picking the model with the higher mean score is not sufficient — we need to test whether the difference is statistically significant.
+Running a single cross-validation and picking the model with the higher mean score is not sufficient ? we need to test whether the difference is statistically significant.
 
 - **McNemar's Test**: A non-parametric test for paired nominal data. It tests whether two models make errors on the same samples.
 
@@ -622,9 +622,9 @@ for (const point of curve) {
 ```
 
 **Interpreting the curve output:**
-- If both errors converge at a high value → **high bias** (underfitting).
-- If training error is low but validation error stays high → **high variance** (overfitting).
-- If both converge at a low value with a small gap → **good fit**.
+- If both errors converge at a high value ? **high bias** (underfitting).
+- If training error is low but validation error stays high ? **high variance** (overfitting).
+- If both converge at a low value with a small gap ? **good fit**.
 
 ---
 
@@ -632,15 +632,15 @@ for (const point of curve) {
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| Bias | Error from overly simplistic model assumptions | High bias → underfitting; model misses patterns | Simple linear models, high regularization |
-| Variance | Error from sensitivity to training data fluctuations | High variance → overfitting; model memorizes noise | Deep trees, high-degree polynomials, low regularization |
+| Bias | Error from overly simplistic model assumptions | High bias ? underfitting; model misses patterns | Simple linear models, high regularization |
+| Variance | Error from sensitivity to training data fluctuations | High variance ? overfitting; model memorizes noise | Deep trees, high-degree polynomials, low regularization |
 | K-fold CV | Split data into K folds, train on K-1, validate on 1 | Balances bias and variance of the performance estimate | General-purpose model evaluation |
 | Stratified K-fold | Maintain class proportions per fold | Prevents degenerate folds in imbalanced data | Classification with skewed classes |
 | Leave-One-Out CV | K = N, each fold is a single sample | Low bias but high variance and computational cost | Very small datasets (N < 50) |
 | Accuracy | (TP + TN) / Total | Simple but misleading for imbalanced data | Balanced classes only |
 | Precision | TP / (TP + FP) | Minimizes false positives | Spam detection, fraud alerts |
 | Recall | TP / (TP + FN) | Minimizes false negatives | Medical screening, threat detection |
-| F1-Score | 2 × (P × R) / (P + R) | Harmonic mean balances P and R | Imbalanced classification |
+| F1-Score | 2 ? (P ? R) / (P + R) | Harmonic mean balances P and R | Imbalanced classification |
 | ROC-AUC | Area under TPR vs. FPR curve | Threshold-independent measure of separability | Model comparison, threshold selection |
 | Macro F1 | Unweighted per-class average | Considers all classes equally | Multi-class with class imbalance |
 | Micro F1 | Global TP/FP/FN aggregation | Favors majority class | Document classification |
@@ -648,8 +648,8 @@ for (const point of curve) {
 | MSE | Mean squared error | Penalizes large errors heavily | Regression baseline metric |
 | RMSE | Root of MSE | Same units as target | Regression interpretation |
 | MAE | Mean absolute error | Robust to outliers | Regression with noisy targets |
-| R² | Coefficient of Determination | Proportion of variance explained | Regression goodness-of-fit |
-| Adjusted R² | R² penalized by feature count | Prevents overfitting with many features | Feature selection in regression |
+| R? | Coefficient of Determination | Proportion of variance explained | Regression goodness-of-fit |
+| Adjusted R? | R? penalized by feature count | Prevents overfitting with many features | Feature selection in regression |
 | Grid Search | Exhaustive scan of parameter grid | Guarantees finding best within grid | Small parameter spaces (< 100 combinations) |
 | Random Search | Random sampling of parameter space | More efficient for high-dimensional spaces | Large parameter spaces, expensive models |
 | McNemar's Test | Chi-square test on paired prediction errors | Tests if models differ significantly | Model comparison on held-out set |
@@ -671,8 +671,8 @@ for (const point of curve) {
 | MSE | $\frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2$ |
 | RMSE | $\sqrt{\frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$ |
 | MAE | $\frac{1}{n}\sum_{i=1}^{n} \|y_i - \hat{y}_i\|$ |
-| R² | $1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}$ |
-| Adjusted R² | $1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$ |
+| R? | $1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}$ |
+| Adjusted R? | $1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$ |
 | K-fold CV Estimate | $\frac{1}{K} \sum_{i=1}^{K} \text{Score}_i$ |
 | ROC Space | x-axis: FPR (1 - Specificity); y-axis: TPR (Recall) |
 | Grid Search Complexity | $O(\prod_{i=1}^{m} n_i)$ where $n_i$ = values per hyperparameter |
@@ -705,15 +705,15 @@ for (const point of curve) {
 
 3. **Inspect the full confusion matrix.** Accuracy hides class imbalance problems. Always compute Precision, Recall, and F1 for each class.
 
-4. **Use learning curves to diagnose model behavior.** If your model has high bias, collecting more data rarely helps — you need a more complex model or better features.
+4. **Use learning curves to diagnose model behavior.** If your model has high bias, collecting more data rarely helps ? you need a more complex model or better features.
 
 5. **Adjust the decision threshold for imbalanced problems.** The default 0.5 threshold is rarely optimal for skewed classes. Optimize it using Precision-Recall curves.
 
-6. **Report uncertainty alongside performance.** When reporting cross-validation scores, always include the standard deviation: _F1 = 0.87 ± 0.03_ tells you more than a single number.
+6. **Report uncertainty alongside performance.** When reporting cross-validation scores, always include the standard deviation: _F1 = 0.87 ? 0.03_ tells you more than a single number.
 
 7. **Compare models statistically.** A 0.01 difference in accuracy across a single CV run is not meaningful. Use McNemar's test or a paired t-test (on a held-out set) to establish statistical significance.
 
-8. **Select regression metrics carefully.** Use RMSE when large errors are disproportionately costly (e.g., energy forecasting). Use MAE when outliers should not dominate evaluation. Use Adjusted R² when comparing models with different numbers of features.
+8. **Select regression metrics carefully.** Use RMSE when large errors are disproportionately costly (e.g., energy forecasting). Use MAE when outliers should not dominate evaluation. Use Adjusted R? when comparing models with different numbers of features.
 
 ---
 
@@ -856,6 +856,98 @@ const grid = GridSearch.search(
 console.log("Best params:", JSON.stringify(grid.bestParams), "score:", grid.bestScore.toFixed(4));
 ```
 
+
+// model evaluation
+// ml-supervised-unsupervised implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'model evaluation', data: { topic: 'ml-supervised-unsupervised' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// model evaluation - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'ml-algorithms demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'machine-learning', chapter: 'model evaluation' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('ml-algorithms'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - The bias-variance tradeoff is a central challenge in machine learning.
@@ -865,7 +957,7 @@ console.log("Best params:", JSON.stringify(grid.bestParams), "score:", grid.best
 - Learning curves and validation curves help diagnose whether a model suffers from bias or variance.
 - Systematic hyperparameter tuning is necessary to maximize the performance of a chosen algorithm.
 - Imbalanced classification requires special handling: class weights, SMOTE, cost-sensitive learning, or threshold moving.
-- Regression models require distinct metrics (MSE, RMSE, MAE, R²) appropriate to the problem domain.
+- Regression models require distinct metrics (MSE, RMSE, MAE, R?) appropriate to the problem domain.
 - Multi-class problems need careful averaging strategy selection (macro, micro, weighted).
 - Statistical significance tests prevent false conclusions from noisy cross-validation estimates.
 
@@ -879,14 +971,14 @@ console.log("Best params:", JSON.stringify(grid.bestParams), "score:", grid.best
 3. What is the difference between a "validation set" and a "test set"?
 4. In what scenario would you prioritize Precision over Recall? Provide a real-world example.
 5. Explain the difference between macro, micro, and weighted F1 averaging in multi-class classification.
-6. When would you use Adjusted R² instead of R²?
+6. When would you use Adjusted R? instead of R??
 
 ### Application Problems
 1. A model has $TP=40, FP=10, FN=20, TN=30$. Calculate Precision, Recall, and F1-score.
 2. You are performing 5-fold cross-validation on a dataset of 1,000 samples. How many samples are in the training set and validation set for each fold?
 3. If your training error is 2% and your validation error is 15%, is your model suffering from high bias or high variance?
 4. You perform 5-fold CV and compare Model A (mean F1=0.88, std=0.04) and Model B (mean F1=0.86, std=0.04). How many standard deviations apart are they? Is this difference likely significant?
-5. A regression model has $R^2 = 0.92$ with 5 features on a dataset of 50 samples. Compute the Adjusted R². What happens to Adjusted R² if you add 20 more irrelevant features?
+5. A regression model has $R^2 = 0.92$ with 5 features on a dataset of 50 samples. Compute the Adjusted R?. What happens to Adjusted R? if you add 20 more irrelevant features?
 
 ### Challenge Problem
 1. Explain the "Receiver Operating Characteristic" (ROC) curve. What do the axes represent, and what does a 45-degree diagonal line represent in terms of model performance?
@@ -901,7 +993,7 @@ Test your understanding of Model Selection and Evaluation.
 **1.** A model achieves 99% accuracy on a dataset where 99% of samples belong to Class A and 1% to Class B. What is the most likely issue?
 
 <details><summary>**Answer**</summary>
-**C)** The model likely predicts Class A for every sample, achieving 99% accuracy by exploiting the class imbalance. This is why accuracy is misleading — you must check precision, recall, and the confusion matrix.
+**C)** The model likely predicts Class A for every sample, achieving 99% accuracy by exploiting the class imbalance. This is why accuracy is misleading ? you must check precision, recall, and the confusion matrix.
 </details>
 
 - A) The model is overfitting
@@ -923,7 +1015,7 @@ Test your understanding of Model Selection and Evaluation.
 **3.** If a spam detection model produces very few false positives but misses many spam emails, which metric is the model optimizing?
 
 <details><summary>**Answer**</summary>
-**B)** Few false positives means high Precision. However, missing many actual spam emails means low Recall. The model is optimized for Precision — avoiding false alarms at the cost of letting spam through.
+**B)** Few false positives means high Precision. However, missing many actual spam emails means low Recall. The model is optimized for Precision ? avoiding false alarms at the cost of letting spam through.
 </details>
 
 - A) Recall
@@ -934,7 +1026,7 @@ Test your understanding of Model Selection and Evaluation.
 **4.** A learning curve shows training error and validation error both converging at 0.45 (high error). What does this indicate?
 
 <details><summary>**Answer**</summary>
-**B)** Both curves converging at a high error value indicates high bias (underfitting). The model is too simple to capture the underlying patterns. Adding more training data will not help — you need a more complex model or better features.
+**B)** Both curves converging at a high error value indicates high bias (underfitting). The model is too simple to capture the underlying patterns. Adding more training data will not help ? you need a more complex model or better features.
 </details>
 
 - A) High variance (overfitting)

@@ -50,10 +50,10 @@ Tables present data in rows and columns. Questions involve:
 - Identifying maximum/minimum values
 
 **Calculation Shortcuts:**
-- Percentage = (part / total) × 100
+- Percentage = (part / total) ? 100
 - Ratio = compare two values directly
 - Average = sum of values / count
-- Growth rate = ((new - old) / old) × 100
+- Growth rate = ((new - old) / old) ? 100
 
 **Common Table Types:**
 - **Single variable:** One category, one measure
@@ -89,7 +89,7 @@ Lines connect data points to show trends over time or ordered categories.
 **Key Calculations:**
 - Difference between two points: $y_2 - y_1$
 - Rate of change = (change in y) / (change in x)
-- Percentage growth = (end - start) / start × 100
+- Percentage growth = (end - start) / start ? 100
 - Average = sum of values / number of periods
 
 ### 4.4 Pie Charts
@@ -97,13 +97,13 @@ Lines connect data points to show trends over time or ordered categories.
 Circular charts divided into sectors proportional to the data values.
 
 **Key Facts:**
-- Total angle = 360°
-- Each sector angle = (value / total) × 360°
-- Each sector percentage = (value / total) × 100
+- Total angle = 360?
+- Each sector angle = (value / total) ? 360?
+- Each sector percentage = (value / total) ? 100
 
 **Key Calculations:**
-- Value of a sector = (sector angle / 360) × total
-- Total from a sector = (sector value × 360) / sector angle
+- Value of a sector = (sector angle / 360) ? total
+- Total from a sector = (sector value ? 360) / sector angle
 - Difference between two sectors = $|a - b|$
 - Ratio of two sectors = $a : b$ (simplify)
 
@@ -163,7 +163,7 @@ Each question has two statements. Determine if the statements together or indivi
 2. Mark the needed variables/relationships
 3. Check each statement separately first
 4. Only combine if neither alone is sufficient
-5. Don't solve — just determine sufficiency
+5. Don't solve ? just determine sufficiency
 6. Don't assume data not given
 
 ## Examples
@@ -180,7 +180,7 @@ Each question has two statements. Determine if the statements together or indivi
 
 **Solution:**
 
-Profit % = (Profit / Revenue) × 100 = (18 / 150) × 100 = 12%
+Profit % = (Profit / Revenue) ? 100 = (18 / 150) ? 100 = 12%
 
 ### Example 2: Pie Chart
 
@@ -190,7 +190,7 @@ A pie chart shows: IT = 30%, Finance = 25%, HR = 20%, Sales = 15%, Admin = 10%. 
 
 **Solution:**
 
-Angle = 30% of 360° = 0.30 × 360 = 108°
+Angle = 30% of 360? = 0.30 ? 360 = 108?
 
 ### Example 3: Caselet
 
@@ -230,7 +230,7 @@ A company's monthly revenue (in Cr): Jan=50, Feb=55, Mar=52, Apr=60, May=58, Jun
 **Question:** What is the percentage increase from Feb to June?
 
 **Solution:**
-Growth = ((65 - 55) / 55) × 100 = (10/55) × 100 ≈ 18.18%
+Growth = ((65 - 55) / 55) ? 100 = (10/55) ? 100 ? 18.18%
 
 **Question:** In which month was the growth rate highest compared to the previous month?
 
@@ -243,7 +243,7 @@ Growth = ((65 - 55) / 55) × 100 = (10/55) × 100 ≈ 18.18%
 
 Highest growth: April (15.38%)
 
-### Example 6: Mixed Graph — Bar + Line
+### Example 6: Mixed Graph ? Bar + Line
 
 A bar graph shows quarterly revenue: Q1=200, Q2=250, Q3=220, Q4=280.
 A line graph shows profit percentage: Q1=10%, Q2=12%, Q3=15%, Q4=18%.
@@ -251,10 +251,10 @@ A line graph shows profit percentage: Q1=10%, Q2=12%, Q3=15%, Q4=18%.
 **Question:** What is the total profit for the year?
 
 **Solution:**
-Q1 profit = 200 × 0.10 = 20
-Q2 profit = 250 × 0.12 = 30
-Q3 profit = 220 × 0.15 = 33
-Q4 profit = 280 × 0.18 = 50.4
+Q1 profit = 200 ? 0.10 = 20
+Q2 profit = 250 ? 0.12 = 30
+Q3 profit = 220 ? 0.15 = 33
+Q4 profit = 280 ? 0.18 = 50.4
 Total profit = 20 + 30 + 33 + 50.4 = 133.4 Cr
 
 ### Example 7: Table with Multiple Operations
@@ -280,7 +280,7 @@ Highest: 2022 ($25 profit/unit)
 **Question:** What was the total profit in 2023?
 
 **Solution:**
-Total profit = (Price - Cost) × Sales = (58 - 38) × 1800 = 20 × 1800 = $36,000
+Total profit = (Price - Cost) ? Sales = (58 - 38) ? 1800 = 20 ? 1800 = $36,000
 
 ### Example 8: Complex Data Sufficiency
 
@@ -292,7 +292,7 @@ Total profit = (Price - Cost) × Sales = (58 - 38) × 1800 = 20 × 1800 = $36,00
 For $x$ to be divisible by 6, it must be divisible by both 2 and 3.
 Statement 1 alone: $x$ is even but may not be divisible by 3 (e.g., $x=4$). Not sufficient.
 Statement 2 alone: $x$ is a multiple of 3 but may be odd (e.g., $x=9$). Not sufficient.
-Both together: $x$ is divisible by both 2 and 3 → divisible by LCM(2,3) = 6. Sufficient.
+Both together: $x$ is divisible by both 2 and 3 ? divisible by LCM(2,3) = 6. Sufficient.
 **Answer:** C (Both together)
 
 ### Example 9: Stacked Bar Graph Interpretation
@@ -308,7 +308,7 @@ A stacked bar shows the production of three products (A, B, C) across quarters:
 **Solution:**
 Total A = 30 + 40 + 35 + 50 = 155
 Total all = 60 + 80 + 90 + 115 = 345
-Percentage = (155 / 345) × 100 ≈ 44.9%
+Percentage = (155 / 345) ? 100 ? 44.9%
 
 **Question:** In which quarter was Product C's share highest?
 
@@ -433,7 +433,7 @@ class DataInterpreter {
     const maxVal = Math.max(...data.values);
     data.labels.forEach((label, i) => {
       const barLen = Math.round((data.values[i] / maxVal) * width);
-      const bar = "█".repeat(barLen);
+      const bar = "?".repeat(barLen);
       console.log(`${label.padEnd(10)} ${bar} ${data.values[i]}`);
     });
   }
@@ -444,8 +444,8 @@ class DataInterpreter {
     data.labels.forEach((label, i) => {
       const pct = DataInterpreter.sectorPercentage(data.values[i], total);
       const angle = DataInterpreter.sectorAngle(data.values[i], total);
-      const bar = "●".repeat(Math.round(pct / 5));
-      console.log(`${label.padEnd(12)} ${bar} ${pct.toFixed(1)}% (${angle.toFixed(1)}°)`);
+      const bar = "?".repeat(Math.round(pct / 5));
+      console.log(`${label.padEnd(12)} ${bar} ${pct.toFixed(1)}% (${angle.toFixed(1)}?)`);
     });
   }
 }
@@ -482,7 +482,7 @@ flowchart TD
     D --> G; E --> G; F --> G
     G --> H{Question Type?}
     H -->|Compare| I[Find Difference or Ratio]
-    H -->|Percentage| J[Part/Total × 100]
+    H -->|Percentage| J[Part/Total ? 100]
     H -->|Trend| K[Growth Rate Formula]
     H -->|Total| L[Sum All Components]
     I & J & K & L --> M[Verify with Reasonableness Check]
@@ -495,12 +495,12 @@ A company has 1000 employees across three departments. Engineering has 400 emplo
 **Question:** How many female managers are there in total?
 
 **Solution:**
-- Engineering males = 400 × 0.6 = 240, females = 160
-- Marketing males = 350 × 0.4 = 140, females = 210
-- Sales males = 250 × 0.8 = 200, females = 50
-- Engineering male managers = 240 × 0.2 = 48 (not counted)
-- Marketing female managers = 210 × 0.3 = 63
-- Sales managers = 250 × 0.1 = 25 (male + female, but not enough data to split)
+- Engineering males = 400 ? 0.6 = 240, females = 160
+- Marketing males = 350 ? 0.4 = 140, females = 210
+- Sales males = 250 ? 0.8 = 200, females = 50
+- Engineering male managers = 240 ? 0.2 = 48 (not counted)
+- Marketing female managers = 210 ? 0.3 = 63
+- Sales managers = 250 ? 0.1 = 25 (male + female, but not enough data to split)
 - From the given data, we can only determine Marketing female managers = 63.
 
 ```typescript
@@ -516,11 +516,11 @@ console.log(`Marketing female managers: ${femaleMgrs}`);
 
 ### Additional Exercises
 
-12. **Caselet:** A university has 2400 students — 55% male. 40% of males and 60% of females are in STEM. 30% of STEM males and 25% of STEM females are in research programs. How many research students are there?
+12. **Caselet:** A university has 2400 students ? 55% male. 40% of males and 60% of females are in STEM. 30% of STEM males and 25% of STEM females are in research programs. How many research students are there?
 
 13. **Mixed Graph:** A bar graph shows monthly production (Jan-Jun): 500, 650, 600, 720, 680, 800 (units). A line graph shows defect %: 5, 4, 6, 3, 4, 2. Calculate: (a) total good units for the half-year (b) month with most defects (c) average defect rate.
 
-14. **Data Sufficiency:** What is the area of a rectangle? (1) Perimeter = 40 cm (2) Length = 3 × Width
+14. **Data Sufficiency:** What is the area of a rectangle? (1) Perimeter = 40 cm (2) Length = 3 ? Width
 
 15. **Complex Table:** 5 companies' revenue (in Cr) for 2021-2024. Calculate CAGR for each and identify the best performer.
 
@@ -532,17 +532,17 @@ console.log(`Marketing female managers: ${femaleMgrs}`);
 
 | Data Type | Key Formula | Common Pitfall |
 |-----------|-------------|----------------|
-| Table | Percentage = (part/total)×100 | Misreading row/column headers |
+| Table | Percentage = (part/total)?100 | Misreading row/column headers |
 | Bar Graph | Read height against scale | Non-zero baseline exaggerates differences |
-| Line Chart | Growth = (new-old)/old×100 | Confusing slope with growth rate |
-| Pie Chart | Angle = (value/total)×360 | Assuming different pies have same total |
+| Line Chart | Growth = (new-old)/old?100 | Confusing slope with growth rate |
+| Pie Chart | Angle = (value/total)?360 | Assuming different pies have same total |
 | Caselet | Organize data in a table first | Missing hidden information in text |
-| Data Sufficiency | Don't solve — just check sufficiency | Solving instead of checking |
+| Data Sufficiency | Don't solve ? just check sufficiency | Solving instead of checking |
 | Mixed Graphs | Each graph has its own scale | Applying one graph's scale to another |
 
 ### Quick Estimation Techniques
 
-- **Approximation:** Round numbers before calculating (e.g., 48.7% of 199 ≈ 50% of 200 = 100)
+- **Approximation:** Round numbers before calculating (e.g., 48.7% of 199 ? 50% of 200 = 100)
 - **Fraction Conversion:** Knowing common fractions: $33.3\% = 1/3$, $25\% = 1/4$, $20\% = 1/5$, $12.5\% = 1/8$
 - **Growth Rate Doubling:** A 10% growth rate doubles in ~7.2 years (Rule of 72)
 
@@ -578,14 +578,14 @@ class ASCIIChartRenderer {
     const max = Math.max(...values);
     labels.forEach((l, i) => {
       const barLen = Math.round((values[i] / max) * width);
-      console.log(`${l.padEnd(12)} ${"█".repeat(barLen)} ${values[i]}`);
+      console.log(`${l.padEnd(12)} ${"?".repeat(barLen)} ${values[i]}`);
     });
   }
   static pie(labels: string[], values: number[]): void {
     const total = values.reduce((a, b) => a + b, 0);
     labels.forEach((l, i) => {
       const pct = (values[i] / total) * 100;
-      console.log(`${l.padEnd(12)} ${"●".repeat(Math.round(pct / 5))} ${pct.toFixed(1)}%`);
+      console.log(`${l.padEnd(12)} ${"?".repeat(Math.round(pct / 5))} ${pct.toFixed(1)}%`);
     });
   }
 }
@@ -595,11 +595,11 @@ console.log("MA:", GrowthCalculator.movingAverage([200, 220, 250, 240, 280, 310]
 ASCIIChartRenderer.bar(["Q1", "Q2", "Q3", "Q4"], [200, 250, 220, 280]);
 ```
 
-// ─────────────────────────────────────────────────────
-// Advanced Statistical Summary Calculator — computes
+// -----------------------------------------------------
+// Advanced Statistical Summary Calculator ? computes
 // descriptive statistics, percentiles, and dispersion
 // measures for data interpretation problems.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class StatisticalSummary {
   data: number[];
@@ -652,10 +652,10 @@ class StatisticalSummary {
   }
 }
 
-// ─────────────────────────────────────────────────────
-// Chart Data Generator — creates realistic datasets
+// -----------------------------------------------------
+// Chart Data Generator ? creates realistic datasets
 // for table, bar, line, and pie chart problems
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class ChartDataGenerator {
   static quarterlyRevenue(years: number, base: number, growth: number): Array<{ year: string; quarter: string; revenue: number }> {
@@ -692,10 +692,10 @@ class ChartDataGenerator {
   }
 }
 
-// ─────────────────────────────────────────────────────
-// Caselet Data Extractor — parses textual caselet
+// -----------------------------------------------------
+// Caselet Data Extractor ? parses textual caselet
 // into structured table format
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class CaseletParser {
   static extractNumbers(text: string): number[] {
@@ -734,37 +734,90 @@ const caselet = "Company A had 500 employees. 60% were male. 40% of males worked
 console.log("\nCaselet table:", CaseletParser.toTable(caselet));
 ```
 
+
+// Chapter 4 - quantitative-aptitude implementation
+const ITEMS = { count: 10, topic: 'quantitative-aptitude', version: '1.0' }
+function processItem(item: string): string { return item.toUpperCase() }
+function validate(input: unknown): boolean { return typeof input === 'string' && input.length > 0 }
+function log(msg: string): void { console.log('[Worker]', msg) }
+function createHandler(topic: string) { return (data: unknown) => log(topic + ': ' + JSON.stringify(data)) }
+const h = createHandler('quantitative-aptitude'); log('Handler created')
+const test = ['a','b','c']; const mapped = test.map(processItem)
+log('Mapped: ' + mapped.join(','))
+export { processItem, validate, createHandler, ITEMS }
+
+// data interpretation
+// aptitude-reasoning implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'data interpretation', data: { topic: 'aptitude-reasoning' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Tables: read carefully, identify headers, compute percentages correctly
 - Bar graphs: be careful with scale, especially non-zero baselines
 - Line charts: understand slopes and growth rates
-- Pie charts: total angle = 360°, use proportions
+- Pie charts: total angle = 360?, use proportions
 - Caselets: organize data into systematic tables first
 - Mixed graphs: connect data across different representations
 - Data sufficiency: don't solve, just check if enough data exists
 
 ## Exercises
 
-### Level 1 — Basic
+### Level 1 ? Basic
 
 1. **Table:** In the example table above, what was the percentage increase in profit from 2019 to 2021?
 
-2. **Pie Chart:** If a sector has angle 72° in a budget pie chart, what percentage does it represent?
+2. **Pie Chart:** If a sector has angle 72? in a budget pie chart, what percentage does it represent?
 
 3. **Data Sufficiency:** Is $x > y$? (1) $x + y = 10$ (2) $x - y = 2$
 
 4. **Bar Graph:** A bar shows: City A = 5000 people, City B = 7500, City C = 3000. What is the ratio of B to A?
 
-### Level 2 — Medium
+### Level 2 ? Medium
 
 5. **Bar Graph:** A company's revenue: Q1 = 50 Cr, Q2 = 65 Cr, Q3 = 45 Cr, Q4 = 80 Cr. Total expenses = 200 Cr. Profit % for the year?
 
-6. **Caselet:** A school has 800 students — 45% boys, rest girls. 30% of boys and 40% of girls play football. How many students don't play football?
+6. **Caselet:** A school has 800 students ? 45% boys, rest girls. 30% of boys and 40% of girls play football. How many students don't play football?
 
 7. **Line Chart:** Sales over 6 months: Jan=120, Feb=150, Mar=130, Apr=170, May=160, Jun=200. Calculate: (a) Average monthly sales (b) Month with highest growth (c) Total sales for first quarter
 
-### Level 3 — Advanced
+### Level 3 ? Advanced
 
 8. **Mixed Graph:** A bar graph shows monthly sales, and a line graph shows cumulative profit %. At what month does cumulative profit first exceed 15%?
 
@@ -782,10 +835,10 @@ flowchart TD
     B -->|Percentage| C[Identify numerator & denominator]
     B -->|Ratio| D[Extract both quantities]
     B -->|Trend| E[Compare consecutive values]
-    B -->|Average| F[Sum ÷ count]
-    C --> G[Compute: numerator/denominator × 100]
+    B -->|Average| F[Sum ? count]
+    C --> G[Compute: numerator/denominator ? 100]
     D --> H[Simplify ratio]
-    E --> I[↑ increase or ↓ decrease]
+    E --> I[? increase or ? decrease]
     F --> J[Mean value]
     G --> K[Answer]
     H --> K

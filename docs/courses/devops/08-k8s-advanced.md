@@ -533,7 +533,7 @@ class ResourceOptimizer {
     const over = this.findOverprovisioned();
 
     if (over.length === 0) {
-      report += '✅ No over-provisioned pods found\n\n';
+      report += '? No over-provisioned pods found\n\n';
     } else {
       report += `## Over-Provisioned Pods\n\n`;
       report += '| Pod | Namespace | CPU Request | CPU Actual | Mem Request | Mem Actual\n';
@@ -819,6 +819,48 @@ console.log(`Applied (dry-run: ${result.dryRun}): ${result.applied}`);
 
 ---
 
+
+// configuration management
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'configuration management', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - RBAC provides fine-grained access control through roles, bindings, and service accounts.

@@ -1,7 +1,7 @@
 # Chapter 2: Boolean Algebra
 
-> **Prereq:** Chapter 1 (Number Systems) — binary values 0/1 are the domain of Boolean algebra.
-> **Next:** Chapter 3 (Logic Gates) — Boolean algebra directly describes gate behavior.
+> **Prereq:** Chapter 1 (Number Systems) ? binary values 0/1 are the domain of Boolean algebra.
+> **Next:** Chapter 3 (Logic Gates) ? Boolean algebra directly describes gate behavior.
 
 ## Learning Objectives
 
@@ -21,7 +21,7 @@ By the conclusion of this chapter, the student shall be able to:
 |---------|-------------|----------------|
 | Boolean Postulates | OR, AND, NOT axioms | Foundation of all digital logic |
 | Fundamental Theorems | Idempotence, absorption, consensus | Enable algebraic simplification |
-| De Morgan's Theorems | Complement of sum/product | Convert gate types (AND-OR ↔ NAND-NAND) |
+| De Morgan's Theorems | Complement of sum/product | Convert gate types (AND-OR ? NAND-NAND) |
 | Canonical Forms | SOP and POS | Uniquely represent any Boolean function |
 | NAND/NOR Universality | Single gate type for any function | IC manufacturing prefers one gate type |
 | XOR Applications | Parity, comparison, addition | Key building block for arithmetic |
@@ -46,75 +46,75 @@ flowchart LR
 
 ### 2.1 Boolean Postulates
 
-Boolean algebra, introduced by George Boole in 1854 and adapted by Claude Shannon in 1938 for switching circuit analysis, is a mathematical system defined on a set of two elements {0, 1} with operators + (OR) and · (AND), and complement (NOT).
+Boolean algebra, introduced by George Boole in 1854 and adapted by Claude Shannon in 1938 for switching circuit analysis, is a mathematical system defined on a set of two elements {0, 1} with operators + (OR) and ? (AND), and complement (NOT).
 
 The fundamental postulates are as follows:
 
 | Postulate | OR Form | AND Form |
 |-----------|---------|----------|
-| Identity | x + 0 = x | x · 1 = x |
-| Commutativity | x + y = y + x | x · y = y · x |
-| Associativity | (x + y) + z = x + (y + z) | (x · y) · z = x · (y · z) |
-| Distributivity | x · (y + z) = x·y + x·z | x + (y·z) = (x + y)·(x + z) |
-| Complement | x + x' = 1 | x · x' = 0 |
+| Identity | x + 0 = x | x ? 1 = x |
+| Commutativity | x + y = y + x | x ? y = y ? x |
+| Associativity | (x + y) + z = x + (y + z) | (x ? y) ? z = x ? (y ? z) |
+| Distributivity | x ? (y + z) = x?y + x?z | x + (y?z) = (x + y)?(x + z) |
+| Complement | x + x' = 1 | x ? x' = 0 |
 
 ### 2.2 Fundamental Theorems
 
 | Theorem | OR Form | AND Form |
 |---------|---------|----------|
-| Idempotence | x + x = x | x · x = x |
-| Null element | x + 1 = 1 | x · 0 = 0 |
-| Involution | (x')' = x | — |
-| Absorption | x + x·y = x | x·(x + y) = x |
-| Adjacency | x·y + x·y' = x | (x + y)·(x + y') = x |
-| Consensus | x·y + x'·z + y·z = x·y + x'·z | (x+y)·(x'+z)·(y+z) = (x+y)·(x'+z) |
-| De Morgan | (x·y)' = x' + y' | (x + y)' = x'·y' |
+| Idempotence | x + x = x | x ? x = x |
+| Null element | x + 1 = 1 | x ? 0 = 0 |
+| Involution | (x')' = x | ? |
+| Absorption | x + x?y = x | x?(x + y) = x |
+| Adjacency | x?y + x?y' = x | (x + y)?(x + y') = x |
+| Consensus | x?y + x'?z + y?z = x?y + x'?z | (x+y)?(x'+z)?(y+z) = (x+y)?(x'+z) |
+| De Morgan | (x?y)' = x' + y' | (x + y)' = x'?y' |
 
 #### 2.2.1 Proof of Absorption Theorem
 
-Prove: x + x·y = x
+Prove: x + x?y = x
 
 **Proof**:
-x + x·y = x·1 + x·y (Identity)
-= x·(1 + y) (Distributivity)
-= x·1 (Null element: 1 + y = 1)
+x + x?y = x?1 + x?y (Identity)
+= x?(1 + y) (Distributivity)
+= x?1 (Null element: 1 + y = 1)
 = x (Identity)
 
 #### 2.2.2 Proof of Consensus Theorem
 
-Prove: x·y + x'·z + y·z = x·y + x'·z
+Prove: x?y + x'?z + y?z = x?y + x'?z
 
 **Proof**:
-x·y + x'·z + y·z = x·y + x'·z + y·z·(x + x') (Complement)
-= x·y + x'·z + x·y·z + x'·y·z (Distributivity)
-= x·y·(1 + z) + x'·z·(1 + y) (Distributivity)
-= x·y·1 + x'·z·1 (Null element)
-= x·y + x'·z (Identity)
+x?y + x'?z + y?z = x?y + x'?z + y?z?(x + x') (Complement)
+= x?y + x'?z + x?y?z + x'?y?z (Distributivity)
+= x?y?(1 + z) + x'?z?(1 + y) (Distributivity)
+= x?y?1 + x'?z?1 (Null element)
+= x?y + x'?z (Identity)
 
 ### 2.3 De Morgan's Theorems
 
 Augustus De Morgan formulated two transformation rules of singular importance:
 
-**Theorem 1**: (x·y)' = x' + y'
+**Theorem 1**: (x?y)' = x' + y'
 
-**Theorem 2**: (x + y)' = x'·y'
+**Theorem 2**: (x + y)' = x'?y'
 
 These generalise to n variables:
-(x_1·x_2·...·x_n)' = x_1' + x_2' + ... + x_n'
-(x_1 + x_2 + ... + x_n)' = x_1'·x_2'·...·x_n'
+(x_1?x_2?...?x_n)' = x_1' + x_2' + ... + x_n'
+(x_1 + x_2 + ... + x_n)' = x_1'?x_2'?...?x_n'
 
 De Morgan's theorems are essential for converting AND-OR networks to NAND-NAND or NOR-NOR equivalents.
 
 **Proof of Theorem 1 by truth table**:
 
-| x | y | x·y | (x·y)' | x' | y' | x' + y' |
+| x | y | x?y | (x?y)' | x' | y' | x' + y' |
 |---|---|:---:|:------:|:---:|:---:|:-------:|
 | 0 | 0 | 0 | 1 | 1 | 1 | 1 |
 | 0 | 1 | 0 | 1 | 1 | 0 | 1 |
 | 1 | 0 | 0 | 1 | 0 | 1 | 1 |
 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
 
-The columns for (x·y)' and x' + y' match for all four input combinations, proving equivalence.
+The columns for (x?y)' and x' + y' match for all four input combinations, proving equivalence.
 
 ### 2.4 Canonical Forms
 
@@ -139,43 +139,43 @@ A **maxterm** is a sum term in which every variable appears exactly once. For n 
 
 A Boolean function expressed as the OR of minterms for which the function output is 1.
 
-F(x, y, z) = m_1 + m_3 + m_5 + m_7 = Σ(1, 3, 5, 7)
-F = x'y'z + x'yz + xy'z + xyz = z·(x'y' + x'y + xy' + xy) = z·(x'(y'+y) + x(y'+y)) = z·(x' + x) = z
+F(x, y, z) = m_1 + m_3 + m_5 + m_7 = S(1, 3, 5, 7)
+F = x'y'z + x'yz + xy'z + xyz = z?(x'y' + x'y + xy' + xy) = z?(x'(y'+y) + x(y'+y)) = z?(x' + x) = z
 
 #### 2.4.3 Product-of-Sums (POS)
 
 A Boolean function expressed as the AND of maxterms for which the function output is 0.
 
-F(x, y, z) = M_0·M_2·M_4·M_6 = Π(0, 2, 4, 6)
-F = (x+y+z)·(x+y'+z)·(x'+y+z)·(x'+y'+z)
+F(x, y, z) = M_0?M_2?M_4?M_6 = ?(0, 2, 4, 6)
+F = (x+y+z)?(x+y'+z)?(x'+y+z)?(x'+y'+z)
 
 #### 2.4.4 Conversion Between SOP and POS
 
 Any Boolean function can be expressed in both forms. To convert:
-- SOP Σ(m_i) = POS Π(M_j) where j indexes the minterms NOT in the SOP
-- For an n-variable function: if F = Σ(m_i), then F' = Σ(m_j) where j ≠ i
-- F = Π(M_j) where j ≠ i
+- SOP S(m_i) = POS ?(M_j) where j indexes the minterms NOT in the SOP
+- For an n-variable function: if F = S(m_i), then F' = S(m_j) where j ? i
+- F = ?(M_j) where j ? i
 
 ### 2.5 NAND and NOR as Universal Gates
 
 NAND and NOR are termed universal gates because either alone suffices to implement any Boolean expression.
 
 **NAND as universal gate**:
-- NOT: A' = (A·A)'
-- AND: A·B = [(A·B)']'
-- OR: A + B = (A'·B')' = (A·A)'·(B·B)'
+- NOT: A' = (A?A)'
+- AND: A?B = [(A?B)']'
+- OR: A + B = (A'?B')' = (A?A)'?(B?B)'
 
 **NOR as universal gate**:
 - NOT: A' = (A + A)'
 - OR: A + B = [(A + B)']'
-- AND: A·B = (A' + B')' = (A+A)' + (B+B)'
+- AND: A?B = (A' + B')' = (A+A)' + (B+B)'
 
 ```mermaid
 graph TD
     subgraph "NAND as Universal Gate"
-        N1[NOT from NAND] --> N1d["A' = (A·A)''"]
-        N2[AND from NAND] --> N2d["A·B = ((A·B)')'"]
-        N3[OR from NAND] --> N3d["A+B = (A'·B')'"]
+        N1[NOT from NAND] --> N1d["A' = (A?A)''"]
+        N2[AND from NAND] --> N2d["A?B = ((A?B)')'"]
+        N3[OR from NAND] --> N3d["A+B = (A'?B')'"]
     end
     style N1d fill:#c8e6c9
     style N2d fill:#c8e6c9
@@ -184,13 +184,13 @@ graph TD
 
 ### 2.6 XOR Applications
 
-The XOR (exclusive-OR) function produces 1 when inputs differ: A ⊕ B = A'B + AB'.
+The XOR (exclusive-OR) function produces 1 when inputs differ: A ? B = A'B + AB'.
 
 **Applications**:
-1. **Parity generation**: XOR tree produces even/odd parity. An n-bit parity generator uses n−1 XOR gates.
-2. **Magnitude comparison**: A ⊕ B = 0 when A = B. XOR followed by NOR produces equality detection.
-3. **Half adder**: Sum = A ⊕ B, Carry = A·B.
-4. **Controlled inverter**: B ⊕ control. When control=1, output is B' (complement). When control=0, output is B.
+1. **Parity generation**: XOR tree produces even/odd parity. An n-bit parity generator uses n-1 XOR gates.
+2. **Magnitude comparison**: A ? B = 0 when A = B. XOR followed by NOR produces equality detection.
+3. **Half adder**: Sum = A ? B, Carry = A?B.
+4. **Controlled inverter**: B ? control. When control=1, output is B' (complement). When control=0, output is B.
 5. **Pseudo-random number generation**: Linear feedback shift registers (LFSRs) use XOR for feedback taps.
 
 ```typescript
@@ -210,7 +210,7 @@ A set of logic operators is **functionally complete** if any Boolean function ca
 | Gate Set | Complete? | Notes |
 |----------|-----------|-------|
 | {AND, OR, NOT} | Yes | Standard Boolean basis |
-| {AND, NOT} | Yes | NAND = (A·B)' can be built |
+| {AND, NOT} | Yes | NAND = (A?B)' can be built |
 | {OR, NOT} | Yes | NOR = (A+B)' can be built |
 | {NAND} | Yes | Universal gate |
 | {NOR} | Yes | Universal gate |
@@ -220,13 +220,13 @@ A set of logic operators is **functionally complete** if any Boolean function ca
 
 **Proof that {AND, NOT} is complete**:
 - NOT is available
-- A + B = (A'·B')' (De Morgan)
+- A + B = (A'?B')' (De Morgan)
 - Since AND and NOT give us OR, every function is realizable
 
 **Proof that {NAND} is complete**:
-- NOT: A' = (A·A)'
-- AND: A·B = ((A·B)')'
-- OR: A + B = (A'·B')' = ((A·A)'·(B·B)')'
+- NOT: A' = (A?A)'
+- AND: A?B = ((A?B)')'
+- OR: A + B = (A'?B')' = ((A?A)'?(B?B)')'
 
 ### 2.8 Boolean Expression Minimisation
 
@@ -260,69 +260,69 @@ function evaluateSOP(expression: string, variables: string[], values: boolean[])
 
 ### Example 2.1: Algebraic Simplification with Proof Steps
 
-Simplify F = x·y + x·z + y·z using Boolean algebra, showing each step.
+Simplify F = x?y + x?z + y?z using Boolean algebra, showing each step.
 
 **Solution**:
-F = x·y + x·z + y·z
-= x·y + x·z + y·z·(x + x') (Complement: x + x' = 1)
-= x·y + x·z + x·y·z + x'·y·z (Distributivity)
-= x·y·(1 + z) + x·z + x'·y·z (Distributivity)
-= x·y·1 + x·z + x'·y·z (Null element: 1 + z = 1)
-= x·y + x·z + x'·y·z (Identity)
-= x·y + z·(x + x'·y) (Distributivity)
-= x·y + z·(x + y) (Absorption: x + x'y = x + y)
-= x·y + x·z + y·z (Distributivity)
+F = x?y + x?z + y?z
+= x?y + x?z + y?z?(x + x') (Complement: x + x' = 1)
+= x?y + x?z + x?y?z + x'?y?z (Distributivity)
+= x?y?(1 + z) + x?z + x'?y?z (Distributivity)
+= x?y?1 + x?z + x'?y?z (Null element: 1 + z = 1)
+= x?y + x?z + x'?y?z (Identity)
+= x?y + z?(x + x'?y) (Distributivity)
+= x?y + z?(x + y) (Absorption: x + x'y = x + y)
+= x?y + x?z + y?z (Distributivity)
 
-The expression returned to its original form — it is a consensus form and cannot be simplified.
+The expression returned to its original form ? it is a consensus form and cannot be simplified.
 
 ### Example 2.2: Conversion Between Canonical Forms
 
-Given F(A,B,C) = Σ(0, 2, 4, 6), express F in POS form.
+Given F(A,B,C) = S(0, 2, 4, 6), express F in POS form.
 
-**Solution**: F = Σ(0, 2, 4, 6) means F = 1 for minterms 0, 2, 4, 6. F = 0 for minterms 1, 3, 5, 7.
-F' = Σ(1, 3, 5, 7) = A'B'C + A'BC + AB'C + ABC = C·(A'B' + A'B + AB' + AB) = C
+**Solution**: F = S(0, 2, 4, 6) means F = 1 for minterms 0, 2, 4, 6. F = 0 for minterms 1, 3, 5, 7.
+F' = S(1, 3, 5, 7) = A'B'C + A'BC + AB'C + ABC = C?(A'B' + A'B + AB' + AB) = C
 F = (F')' = C'
-In POS: F = Π(1, 3, 5, 7) = M_1·M_3·M_5·M_7 = (A+B+C')·(A+B'+C')·(A'+B+C')·(A'+B'+C')
+In POS: F = ?(1, 3, 5, 7) = M_1?M_3?M_5?M_7 = (A+B+C')?(A+B'+C')?(A'+B+C')?(A'+B'+C')
 
 The minimal expression is simply C'.
 
 ### Example 2.3: De Morgan Application
 
-Apply De Morgan's theorem to find the complement of F = (A + B·C)·(A' + C).
+Apply De Morgan's theorem to find the complement of F = (A + B?C)?(A' + C).
 
 **Solution**:
-F' = [(A + B·C)·(A' + C)]' = (A + B·C)' + (A' + C)'
+F' = [(A + B?C)?(A' + C)]' = (A + B?C)' + (A' + C)'
 
 Apply De Morgan to each term:
-(A + B·C)' = A'·(B·C)' = A'·(B' + C')
-(A' + C)' = A·C'
+(A + B?C)' = A'?(B?C)' = A'?(B' + C')
+(A' + C)' = A?C'
 
-Therefore: F' = A'·(B' + C') + A·C' = A'·B' + A'·C' + A·C' = A'·B' + C'·(A' + A) = A'·B' + C'
+Therefore: F' = A'?(B' + C') + A?C' = A'?B' + A'?C' + A?C' = A'?B' + C'?(A' + A) = A'?B' + C'
 
 ### Example 2.4: NAND-Only Implementation
 
-Implement F = A·B + C·D using only NAND gates.
+Implement F = A?B + C?D using only NAND gates.
 
 **Solution**:
-F = A·B + C·D
-= [(A·B)']' + [(C·D)']' (Double complement)
-= ([(A·B)']'·[(C·D)']')' (De Morgan applied backwards: X+Y = (X'·Y')')
-= [(A·B)'·(C·D)']'
+F = A?B + C?D
+= [(A?B)']' + [(C?D)']' (Double complement)
+= ([(A?B)']'?[(C?D)']')' (De Morgan applied backwards: X+Y = (X'?Y')')
+= [(A?B)'?(C?D)']'
 
-Implementation: Three NAND gates — two for the AND functions, one for the OR function expressed as a NAND.
+Implementation: Three NAND gates ? two for the AND functions, one for the OR function expressed as a NAND.
 
-### Example 2.5: XOR Application — Parity Checker
+### Example 2.5: XOR Application ? Parity Checker
 
 Design a 4-bit even parity checker using XOR gates.
 
-**Solution**: P = A ⊕ B ⊕ C ⊕ D. P = 0 when there is an even number of 1s. Implementation uses three XOR gates in a tree structure: XOR1 = A⊕B, XOR2 = C⊕D, P = XOR1⊕XOR2.
+**Solution**: P = A ? B ? C ? D. P = 0 when there is an even number of 1s. Implementation uses three XOR gates in a tree structure: XOR1 = A?B, XOR2 = C?D, P = XOR1?XOR2.
 
 ```typescript
 function evenParity(bits: boolean[]): boolean {
     return bits.reduce((p, b) => p !== b, false);
 }
-// evenParity([true, false, true, false]) → false (2 ones = even)
-// evenParity([true, false, true, true]) → true (3 ones = odd)
+// evenParity([true, false, true, false]) ? false (2 ones = even)
+// evenParity([true, false, true, true]) ? true (3 ones = odd)
 ```
 
 ### Concept Comparison
@@ -330,18 +330,18 @@ function evenParity(bits: boolean[]): boolean {
 | Minimisation Method | Best For | Strengths | Weaknesses |
 |-------------------|----------|-----------|------------|
 | Algebraic | Any | Insightful, no tool needed | Error-prone, no optimality guarantee |
-| K-Map | ≤4 variables | Visual, fast, optimal | Unwieldy for 5+ variables |
+| K-Map | =4 variables | Visual, fast, optimal | Unwieldy for 5+ variables |
 | Quine-McCluskey | 5-16 variables | Algorithmic | Slow for many inputs |
 
 ### Quick Reference
 
 | Theorem | Expression | Use |
 |---------|-----------|-----|
-| Absorption | x + x·y = x | Eliminates redundant terms |
-| Adjacency | x·y + x·y' = x | Combines adjacent minterms |
-| De Morgan 1 | (x·y)' = x' + y' | AND → NOR conversion |
-| De Morgan 2 | (x+y)' = x'·y' | OR → NAND conversion |
-| Consensus | x·y + x'·z + y·z = x·y + x'·z | Eliminates redundant term |
+| Absorption | x + x?y = x | Eliminates redundant terms |
+| Adjacency | x?y + x?y' = x | Combines adjacent minterms |
+| De Morgan 1 | (x?y)' = x' + y' | AND ? NOR conversion |
+| De Morgan 2 | (x+y)' = x'?y' | OR ? NAND conversion |
+| Consensus | x?y + x'?z + y?z = x?y + x'?z | Eliminates redundant term |
 
 ### Cross-Application Matrix
 
@@ -354,11 +354,11 @@ function evenParity(bits: boolean[]): boolean {
 
 ## Practical Takeaways
 
-1. **Proofs matter** — every algebraic simplification step should be justified by a postulate or theorem.
-2. **De Morgan's theorems are the key to universality** — they convert between AND-OR and NAND-NAND forms.
-3. **Canonical forms guarantee uniqueness** — any function has exactly one canonical SOP and one canonical POS.
-4. **XOR is more useful than it seems** — parity, comparators, adders, and LFSRs all rely on XOR.
-5. **Function completeness tells you what gates you need** — {NAND} alone suffices for any digital circuit.
+1. **Proofs matter** ? every algebraic simplification step should be justified by a postulate or theorem.
+2. **De Morgan's theorems are the key to universality** ? they convert between AND-OR and NAND-NAND forms.
+3. **Canonical forms guarantee uniqueness** ? any function has exactly one canonical SOP and one canonical POS.
+4. **XOR is more useful than it seems** ? parity, comparators, adders, and LFSRs all rely on XOR.
+5. **Function completeness tells you what gates you need** ? {NAND} alone suffices for any digital circuit.
 
 ## TypeScript Examples
 
@@ -412,7 +412,7 @@ TruthTableGenerator.print(F_MAJ, "Majority Circuit");
 
 const F_SOP = TruthTableGenerator.generate(["A", "B", "C"],
   ({ A, B, C }) => (!A && !B && C) || (!A && B && C) || (A && B && !C) ? 1 : 0);
-TruthTableGenerator.print(F_SOP, "F = Σ(1,3,6)");
+TruthTableGenerator.print(F_SOP, "F = S(1,3,6)");
 ```
 
 ### Boolean Expression Engine
@@ -435,9 +435,9 @@ class BooleanEngine {
     for (const ch of expr.replace(/\s+/g, "")) {
       if (/[A-Z]/i.test(ch)) tokens.push({ type: "VAR", name: ch.toUpperCase() });
       else if (ch === "'" || ch === "!") tokens.push({ type: "NOT" });
-      else if (ch === "·" || ch === "*" || ch === "&") tokens.push({ type: "AND" });
+      else if (ch === "?" || ch === "*" || ch === "&") tokens.push({ type: "AND" });
       else if (ch === "+" || ch === "|") tokens.push({ type: "OR" });
-      else if (ch === "⊕" || ch === "^") tokens.push({ type: "XOR" });
+      else if (ch === "?" || ch === "^") tokens.push({ type: "XOR" });
       else if (ch === "(") tokens.push({ type: "LPAREN" });
       else if (ch === ")") tokens.push({ type: "RPAREN" });
       else throw new Error(`Unknown token: ${ch}`);
@@ -482,9 +482,9 @@ class BooleanEngine {
 const be = BooleanEngine;
 console.log("\n=== Boolean Expression Evaluation ===");
 const vars1 = { A: 1, B: 0, C: 1 };
-console.log(`  A·B + C with A=1,B=0,C=1: ${be.evaluate("A*B+C", vars1)}`);
-console.log(`  (A+B)'·C with A=1,B=0,C=1: ${be.evaluate("!(A+B)*C", vars1)}`);
-console.log(`  A⊕B⊕C with A=1,B=0,C=1: ${be.evaluate("A^B^C", vars1)}`);
+console.log(`  A?B + C with A=1,B=0,C=1: ${be.evaluate("A*B+C", vars1)}`);
+console.log(`  (A+B)'?C with A=1,B=0,C=1: ${be.evaluate("!(A+B)*C", vars1)}`);
+console.log(`  A?B?C with A=1,B=0,C=1: ${be.evaluate("A^B^C", vars1)}`);
 
 TruthTableGenerator.print(
   be.generateTruthTable("(A+B)*(A+C)", ["A", "B", "C"]),
@@ -498,29 +498,29 @@ TruthTableGenerator.print(
 class BooleanSimplifier {
   static absorptionLaw(a: number, b: number): Record<string, number> {
     return {
-      "A + A·B": a | (a & b),
+      "A + A?B": a | (a & b),
       "A": a,
-      "A·(A + B)": a & (a | b),
-      "Equal? A + A·B == A": (a | (a & b)) === a ? 1 : 0,
-      "Equal? A·(A+B) == A": (a & (a | b)) === a ? 1 : 0,
+      "A?(A + B)": a & (a | b),
+      "Equal? A + A?B == A": (a | (a & b)) === a ? 1 : 0,
+      "Equal? A?(A+B) == A": (a & (a | b)) === a ? 1 : 0,
     };
   }
 
   static consensusLaw(a: number, b: number, c: number): Record<string, number> {
     return {
-      "A·B + A'·C + B·C": (a & b) | ((a ^ 1) & c) | (b & c),
-      "A·B + A'·C": (a & b) | ((a ^ 1) & c),
+      "A?B + A'?C + B?C": (a & b) | ((a ^ 1) & c) | (b & c),
+      "A?B + A'?C": (a & b) | ((a ^ 1) & c),
       "Equal?": ((a & b) | ((a ^ 1) & c) | (b & c)) === ((a & b) | ((a ^ 1) & c)) ? 1 : 0,
     };
   }
 
   static deMorganVerify(a: number, b: number): Record<string, number> {
     return {
-      "(A·B)'": ((a & b) ^ 1),
+      "(A?B)'": ((a & b) ^ 1),
       "A' + B'": ((a ^ 1) | (b ^ 1)),
       "Equal?": ((a & b) ^ 1) === ((a ^ 1) | (b ^ 1)) ? 1 : 0,
       "(A+B)'": ((a | b) ^ 1),
-      "A'·B'": ((a ^ 1) & (b ^ 1)),
+      "A'?B'": ((a ^ 1) & (b ^ 1)),
       "Equal?": ((a | b) ^ 1) === ((a ^ 1) & (b ^ 1)) ? 1 : 0,
     };
   }
@@ -529,20 +529,20 @@ class BooleanSimplifier {
 console.log("\n=== Absorption Law Verification ===");
 for (const a of [0, 1]) for (const b of [0, 1]) {
   const r = BooleanSimplifier.absorptionLaw(a, b);
-  console.log(`  A=${a}, B=${b}: A+A·B=${r["A + A·B"]}, A·(A+B)=${r["A·(A + B)"]}, Equal? ${r["Equal? A + A·B == A"]}`);
+  console.log(`  A=${a}, B=${b}: A+A?B=${r["A + A?B"]}, A?(A+B)=${r["A?(A + B)"]}, Equal? ${r["Equal? A + A?B == A"]}`);
 }
 
 console.log("\n=== Consensus Theorem Verification ===");
 for (const a of [0, 1]) for (const b of [0, 1]) for (const c of [0, 1]) {
   const r = BooleanSimplifier.consensusLaw(a, b, c);
-  console.log(`  A=${a}, B=${b}, C=${c}: ${r["Equal?"] ? "A·B + A'·C + B·C = A·B + A'·C ✓" : "FAIL"}`);
+  console.log(`  A=${a}, B=${b}, C=${c}: ${r["Equal?"] ? "A?B + A'?C + B?C = A?B + A'?C ?" : "FAIL"}`);
 }
 
 console.log("\n=== De Morgan's Theorem Verification ===");
-console.log("  A B | (A·B)' | A'+B' | Equal | (A+B)' | A'·B' | Equal");
+console.log("  A B | (A?B)' | A'+B' | Equal | (A+B)' | A'?B' | Equal");
 for (const a of [0, 1]) for (const b of [0, 1]) {
   const r = BooleanSimplifier.deMorganVerify(a, b);
-  console.log(`  ${a} ${b} |   ${r["(A·B)'"]}    |  ${r["A' + B'"]}    |  ${r["Equal?"]}    |   ${r["(A+B)'"]}    |  ${r["A'·B'"]}    |  ${r["Equal?"]}`);
+  console.log(`  ${a} ${b} |   ${r["(A?B)'"]}    |  ${r["A' + B'"]}    |  ${r["Equal?"]}    |   ${r["(A+B)'"]}    |  ${r["A'?B'"]}    |  ${r["Equal?"]}`);
 }
 
 console.log("\n=== All Canonical Minterms (3 variables) ===");
@@ -576,14 +576,14 @@ class FunctionChecker {
     const lhs = (v: Record<string, number>) => v.A & (v.B | v.C);
     const rhs = (v: Record<string, number>) => (v.A & v.B) | (v.A & v.C);
     const distributive = this.areEquivalent(vars, lhs, rhs);
-    console.log(`  A·(B+C) == (A·B)+(A·C): ${distributive ? "✓ EQUIVALENT" : "✗ NOT EQUIVALENT"}`);
+    console.log(`  A?(B+C) == (A?B)+(A?C): ${distributive ? "? EQUIVALENT" : "? NOT EQUIVALENT"}`);
   }
 
   static checkXORProperties(): void {
     const vars = ["A", "B"];
     const xorComm = this.areEquivalent(vars,
       v => v.A ^ v.B, v => v.B ^ v.A);
-    console.log(`  A⊕B == B⊕A: ${xorComm ? "✓ COMMUTATIVE" : "✗ NOT"}`);
+    console.log(`  A?B == B?A: ${xorComm ? "? COMMUTATIVE" : "? NOT"}`);
   }
 }
 
@@ -596,7 +596,7 @@ const sopForm = (v: Record<string, number>) =>
 const simplified = (v: Record<string, number>) =>
   ((~v.A) & v.C) | (v.A & v.B & (~v.C));
 const equiv = FunctionChecker.areEquivalent(["A", "B", "C"], sopForm, simplified);
-console.log(`  F = Σ(1,3,6) simplified: ${equiv ? "✓ EQUIVALENT" : "✗ NOT EQUIVALENT"}`);
+console.log(`  F = S(1,3,6) simplified: ${equiv ? "? EQUIVALENT" : "? NOT EQUIVALENT"}`);
 ```
 
 ## Mermaid Diagrams
@@ -623,18 +623,18 @@ flowchart TD
     T --> INV[Involution]
     T --> SH[Shannon Expansion]
 
-    C --> SOP[Sum of Products<br/>Σ minterms]
-    C --> POS[Product of Sums<br/>Π maxterms]
+    C --> SOP[Sum of Products<br/>S minterms]
+    C --> POS[Product of Sums<br/>? maxterms]
 
     M --> ALG[Algebraic]
     M --> KM[Karnaugh Maps]
     M --> QMC[Quine-McCluskey]
 
-    DM -->|(A·B)' = A' + B'| DM1
-    DM -->|(A+B)' = A'·B'| DM2
+    DM -->|(A?B)' = A' + B'| DM1
+    DM -->|(A+B)' = A'?B'| DM2
 ```
 
-### De Morgan's Law — Gate Transformations
+### De Morgan's Law ? Gate Transformations
 
 ```mermaid
 flowchart LR
@@ -663,14 +663,14 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    F[F = A·B + C] -->|Expand missing vars| SOP[Canonical SOP<br/>F = Σ(5,6,7)]
-    F -->|Complement & expand| POS[Canonical POS<br/>F = Π(0,1,2,3,4)]
+    F[F = A?B + C] -->|Expand missing vars| SOP[Canonical SOP<br/>F = S(5,6,7)]
+    F -->|Complement & expand| POS[Canonical POS<br/>F = ?(0,1,2,3,4)]
     SOP -->|Complement & simplify| POS
     POS -->|Complement & expand| SOP
     SOP -->|Read from 1s in truth table| TT[Truth Table]
     POS -->|Read from 0s in truth table| TT
-    TT -->|Minterms → 1s| SOP
-    TT -->|Maxterms → 0s| POS
+    TT -->|Minterms ? 1s| SOP
+    TT -->|Maxterms ? 0s| POS
 ```
 
 ## TypeScript Implementations
@@ -725,17 +725,17 @@ function maxterms(vars: number, expr: (inputs: number[]) => number): number[] {
 function simplifyBoolean(expr: string): string {
     let s = expr
         .replace(/A\+A'?/g, '1').replace(/A'?\+A/g, '1')
-        .replace(/A·A'?/g, '0').replace(/A'?·A/g, '0')
-        .replace(/A\+A/g, 'A').replace(/A·A/g, 'A')
-        .replace(/A\+0/g, 'A').replace(/A·1/g, 'A')
-        .replace(/A·0/g, '0').replace(/A\+1/g, '1')
+        .replace(/A?A'?/g, '0').replace(/A'??A/g, '0')
+        .replace(/A\+A/g, 'A').replace(/A?A/g, 'A')
+        .replace(/A\+0/g, 'A').replace(/A?1/g, 'A')
+        .replace(/A?0/g, '0').replace(/A\+1/g, '1')
         .replace(/A''/g, 'A');
     return s;
 }
 
 // === Dual Function ===
 function dual(expr: string): string {
-    return expr.replace(/\+/g, 'T').replace(/·/g, '+').replace(/T/g, '·');
+    return expr.replace(/\+/g, 'T').replace(/?/g, '+').replace(/T/g, '?');
 }
 
 // === Boolean Difference (Shannon Expansion) ===
@@ -760,30 +760,122 @@ function booleanDiff(expr: (x: number[]) => number, vars: number, idx: number): 
 
 // === Demo ===
 const f = (x: number[]) => (x[0] & x[1]) | (~x[0] & x[2]);
-console.log('Truth table for F = A·B + A\'·C:');
+console.log('Truth table for F = A?B + A\'?C:');
 console.log(truthTable(3, f));
 console.log('Minterms:', minterms(3, f));
 console.log('Maxterms:', maxterms(3, f));
-console.log('Simplify A·B + A·B\':', simplifyBoolean('A·B+A·B\''));
-console.log('Dual of A+B·C:', dual('A+B·C'));
+console.log('Simplify A?B + A?B\':', simplifyBoolean('A?B+A?B\''));
+console.log('Dual of A+B?C:', dual('A+B?C'));
 ```
 
+
+// boolean algebra
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'boolean algebra', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// boolean algebra - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'boolean algebra' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Boolean algebra, with operators AND, OR, and NOT on the set {0, 1}, is the mathematical foundation of digital logic design.
 - De Morgan's theorems enable systematic transformation between AND-OR and OR-AND networks.
 - Sum-of-products and product-of-sums are canonical representations of Boolean functions.
-- NAND and NOR are universal gates — any Boolean function can be implemented using only one type.
+- NAND and NOR are universal gates ? any Boolean function can be implemented using only one type.
 - XOR has important applications in parity, comparison, and arithmetic circuits.
 - Function completeness analysis determines which gate sets are sufficient for universal computation.
 
 ### Chapter Quiz
 
 1. The adjacency theorem states:
-   - A) x + x·y = x
-   - B) x·y + x·y' = x
-   - C) (x·y)' = x' + y'
-   - D) x·x' = 0
+   - A) x + x?y = x
+   - B) x?y + x?y' = x
+   - C) (x?y)' = x' + y'
+   - D) x?x' = 0
 
 2. De Morgan's theorem converts an AND-OR expression to:
    - A) SOP form
@@ -804,10 +896,10 @@ console.log('Dual of A+B·C:', dual('A+B·C'));
    - D) An even number of inputs are 1
 
 5. The consensus theorem eliminates which term?
-   - A) x·y
-   - B) x'·z
-   - C) y·z
-   - D) None — it adds a redundant term
+   - A) x?y
+   - B) x'?z
+   - C) y?z
+   - D) None ? it adds a redundant term
 
 <details>
 <summary>Answers</summary>
@@ -827,22 +919,22 @@ console.log('Dual of A+B·C:', dual('A+B·C'));
 ### Application Problems
 
 1. Simplify using algebraic manipulation (show each step with justification):
-   a) F = A·B + A·B' + A'·B
-   b) G = (X + Y)·(X + Y')·(X' + Y)
-   c) H = P·Q + P·R + Q·R
+   a) F = A?B + A?B' + A'?B
+   b) G = (X + Y)?(X + Y')?(X' + Y)
+   c) H = P?Q + P?R + Q?R
 
 2. Convert between canonical forms:
-   a) F(x,y,z) = Σ(0, 2, 4) to POS
-   b) G(A,B,C) = Π(1, 3, 7) to SOP
+   a) F(x,y,z) = S(0, 2, 4) to POS
+   b) G(A,B,C) = ?(1, 3, 7) to SOP
 
 3. Apply De Morgan's theorem to:
-   a) (A·B + C)'
-   b) [(A + B)·(C + D)]'
-   c) (A' + B·C' + D·E)'
+   a) (A?B + C)'
+   b) [(A + B)?(C + D)]'
+   c) (A' + B?C' + D?E)'
 
 4. Implement using only NAND gates:
-   a) F = A·B' + C·D
-   b) G = (A + B)·(C + D)
+   a) F = A?B' + C?D
+   b) G = (A + B)?(C + D)
 
 5. Design a 3-bit even parity generator using XOR gates. Show the truth table and circuit.
 

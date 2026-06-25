@@ -20,7 +20,7 @@ After completing this chapter, students will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
 | Hypervisors | Type 1 (bare-metal) vs Type 2 (hosted) | Type 1 dominates cloud data centers |
-| Server Virtualization | Partition physical server into multiple VMs | 5-15% → 60-80%+ utilization |
+| Server Virtualization | Partition physical server into multiple VMs | 5-15% ? 60-80%+ utilization |
 | Storage Virtualization | Block, file, and object abstraction | Provision storage independently of hardware |
 | Network Virtualization | SDN, VLANs, VXLANs, NFV | Multi-tenant isolation over shared fabric |
 | Containers vs VMs | OS-level vs hardware-level virtualization | Containers: density; VMs: isolation |
@@ -281,7 +281,7 @@ Linux kernel namespaces provide isolation by giving each container its own view 
 | Mount | Filesystem mount points | Container filesystem isolated from host |
 | UTS | Hostname and domain name | Each container can have its own hostname |
 | IPC | Inter-process communication | Prevents cross-container message queue access |
-| User | User and group IDs | Root in container ≠ root on host |
+| User | User and group IDs | Root in container ? root on host |
 
 Control groups (cgroups) limit and account for resource usage:
 
@@ -424,7 +424,7 @@ const container = inspectContainer("a1b2c3d4e5");
 console.log("Container Namespace Isolation:", JSON.stringify(container, null, 2));
 ```
 
-> **One-Sentence Takeaway:** Virtualization is the abstraction layer that makes cloud computing possible — it decouples software from hardware, enabling resource pooling, live migration, and multi-tenancy that define the cloud.
+> **One-Sentence Takeaway:** Virtualization is the abstraction layer that makes cloud computing possible ? it decouples software from hardware, enabling resource pooling, live migration, and multi-tenancy that define the cloud.
 
 > **Pro Tip:** For production workloads, always use Type 1 hypervisors (ESXi, Hyper-V, KVM). Type 2 hypervisors like VirtualBox are great for development but introduce unacceptable performance overhead for production.
 
@@ -452,7 +452,7 @@ console.log("Container Namespace Isolation:", JSON.stringify(container, null, 2)
 | **Network Virt** | VLAN (4K), VXLAN (16M), SDN | VXLAN enables multi-tenant clouds |
 | **Storage Virt** | Block, File, Object | Each abstraction level has different performance |
 | **VM vs Container** | VM: GB/minutes, Container: MB/seconds | Choose by isolation needs |
-| **Docker** | Daemon → containerd → runc | Layered images enable caching |
+| **Docker** | Daemon ? containerd ? runc | Layered images enable caching |
 | **Linux Isolation** | Namespaces (what you see), cgroups (what you get) | Fundamental to container security |
 
 ## Cross-Application Matrix
@@ -487,7 +487,7 @@ console.log("Container Namespace Isolation:", JSON.stringify(container, null, 2)
 
 <details>
 <summary>Answer</summary>
-**B) VXLANs support millions of segments (vs 4,094 for VLANs) via MAC-in-UDP encapsulation.** The 12-bit VLAN ID limits VLANs to 4,094 networks — insufficient for large multi-tenant clouds. VXLAN uses a 24-bit segment ID, supporting 16 million isolated networks.
+**B) VXLANs support millions of segments (vs 4,094 for VLANs) via MAC-in-UDP encapsulation.** The 12-bit VLAN ID limits VLANs to 4,094 networks ? insufficient for large multi-tenant clouds. VXLAN uses a 24-bit segment ID, supporting 16 million isolated networks.
 </details>
 
 3. When should containers be chosen over virtual machines?
@@ -767,12 +767,104 @@ console.log("GPU passthrough:", hc.filter({ gpuPassthrough: true }).map(h => h.n
 ```
 ```
 
+
+// virtualization
+// iaas-paas-saas-cloud-native implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'virtualization', data: { topic: 'iaas-paas-saas-cloud-native' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// virtualization - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'cloud-services demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'cloud-computing', chapter: 'virtualization' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('cloud-services'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Hypervisors abstract physical hardware into multiple virtual machines with strong isolation.
 - Type 1 (bare-metal) hypervisors dominate data centers; Type 2 (hosted) serve development use cases.
 - Server virtualization improves hardware utilization from 5-15% to 60-80%.
-- Full → para → hardware-assisted virtualization reduced overhead over three generations.
+- Full ? para ? hardware-assisted virtualization reduced overhead over three generations.
 
 Virtualization is the foundational technology of cloud computing. Hypervisors abstract physical hardware into multiple virtual environments, with Type 1 (bare-metal) hypervisors dominating data center deployments and Type 2 (hosted) hypervisors serving development use cases. Server virtualization improves hardware utilization from typical rates of 5-15% to 60-80% or more. The evolution from full virtualization through paravirtualization to hardware-assisted virtualization has progressively reduced virtualization overhead. Storage virtualization provides abstraction at block, file, and object levels. Network virtualization enables multi-tenant isolation through SDN, VLANs, VXLANs, and NFV. Containers offer an alternative to VMs with higher density and faster startup at the cost of weaker isolation, using Linux kernel namespaces for isolation and cgroups for resource limits. Docker's layered architecture (client, daemon, containerd, runc) revolutionized container adoption. Performance considerations include CPU, memory, storage, and network overhead, as well as the noisy neighbor problem.
 

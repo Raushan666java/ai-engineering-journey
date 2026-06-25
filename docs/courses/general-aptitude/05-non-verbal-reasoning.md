@@ -56,7 +56,7 @@ A sequence of figures follows a rule or pattern. Identify the next figure.
 
 | Pattern | Description |
 |---------|-------------|
-| Rotation | Figure rotates by fixed angle (45°, 90°, 180°) |
+| Rotation | Figure rotates by fixed angle (45?, 90?, 180?) |
 | Shading | Shaded region moves or changes in a pattern |
 | Number | Number of elements increases/decreases by constant |
 | Position | Elements shift positions cyclically |
@@ -89,13 +89,13 @@ Figure B is related to Figure A in a specific way. Apply the same transformation
 
 **Solving Strategy:**
 1. Determine exactly how Figure A transforms to Figure B
-2. List all changes (e.g., rotated 90° + outer shape changes from square to circle)
+2. List all changes (e.g., rotated 90? + outer shape changes from square to circle)
 3. Apply all changes to Figure C
 4. Match with answer options
 
 ### 5.3 Figure Matrix
 
-A 3×3 grid with 8 figures and one missing. Each row (or column) follows a rule.
+A 3?3 grid with 8 figures and one missing. Each row (or column) follows a rule.
 
 **Common Patterns:**
 - **Row-wise:** Each row follows the same transformation across columns
@@ -128,7 +128,7 @@ Four or five figures where one is different from the rest.
 **Solving Strategy:**
 1. Find what most figures have in common
 2. The figure missing that commonality is the odd one
-3. Multiple classification schemes may exist — the strongest commonality wins
+3. Multiple classification schemes may exist ? the strongest commonality wins
 
 ### 5.5 Counting Figures
 
@@ -161,7 +161,7 @@ A complex figure contains a simpler figure hidden within it.
 **Mirror Image (Left-Right Reversal):**
 - The image reverses left-to-right
 - A left-facing person faces right in the mirror
-- Letters: left-right reversal matters (b ↔ d visually reversed)
+- Letters: left-right reversal matters (b ? d visually reversed)
 
 **Mirror Image Key Rules:**
 
@@ -199,14 +199,14 @@ A paper is folded and cut. Determine how it looks when unfolded.
 **Solving Strategy:**
 1. Track each fold operation sequentially
 2. The cut goes through all layers
-3. Unfold in reverse order — each fold produces symmetry
+3. Unfold in reverse order ? each fold produces symmetry
 4. Each fold creates a mirror image of the cut on the other side
 5. For multiple folds, multiply the pattern symmetrically
 
 **Key Principle:**
-- Fold once → pattern appears × 2 (mirrored)
-- Fold twice → pattern appears × 4 (two axes of symmetry)
-- Fold diagonally → pattern reflects diagonally
+- Fold once ? pattern appears ? 2 (mirrored)
+- Fold twice ? pattern appears ? 4 (two axes of symmetry)
+- Fold diagonally ? pattern reflects diagonally
 
 ### 5.9 Cubes and Dice
 
@@ -216,13 +216,13 @@ A paper is folded and cut. Determine how it looks when unfolded.
 - Adjacent faces: always visible together
 
 **Standard Dice:**
-- Opposite faces sum to 7 (1↔6, 2↔5, 3↔4)
+- Opposite faces sum to 7 (1?6, 2?5, 3?4)
 - Adjacent faces are always next to each other
 
 **Question Types:**
 1. **Opposite face identification:** Given two/three views of a cube, find opposite face of a given face
-2. **Unfolded → Folded:** Given a net, determine the folded cube appearance
-3. **Folded → Unfolded:** Given a cube, find which net corresponds
+2. **Unfolded ? Folded:** Given a net, determine the folded cube appearance
+3. **Folded ? Unfolded:** Given a cube, find which net corresponds
 
 **Rules for Opposite Faces:**
 - In a cube net, faces separated by exactly one face are opposite
@@ -253,9 +253,9 @@ Venn diagrams show set relationships. They test both reasoning and set theory.
 
 ### Example 1: Figure Series
 
-Figures show a square rotating 45° clockwise and a dot moving one position clockwise each step.
+Figures show a square rotating 45? clockwise and a dot moving one position clockwise each step.
 
-**Deduction:** Rule = rotation 45° CW + dot moves 1 step CW. Apply to last figure.
+**Deduction:** Rule = rotation 45? CW + dot moves 1 step CW. Apply to last figure.
 
 ### Example 2: Figure Analogy
 
@@ -289,7 +289,7 @@ Net: Top = A, Left = B, Right = C. Above B = D. Below B = E. Below C = F. Faces:
 
 ### Example 6: Figure Matrix
 
-A 3×3 matrix:
+A 3?3 matrix:
 - Row 1: Circle, Circle with dot, Circle with two dots
 - Row 2: Square, Square with dot, Square with two dots
 - Row 3: Triangle, Triangle with dot, ?
@@ -315,14 +315,14 @@ $\frac{3(4)}{2} \times \frac{4(5)}{2} = 6 \times 10 = 60$ rectangles
 A circular paper is folded in half (top to bottom), then in half again (left to right). A small triangular cut is made at the bottom-right corner of the folded shape. How many holes when fully unfolded?
 
 **Solution:**
-1. First fold (top→bottom): creates symmetry along the horizontal axis
-2. Second fold (left→right): creates symmetry along the vertical axis
+1. First fold (top?bottom): creates symmetry along the horizontal axis
+2. Second fold (left?right): creates symmetry along the vertical axis
 3. The cut goes through 4 layers (two folds = 4 layers)
 4. When unfolded: 4 symmetric cuts appear: one in each quadrant
 
 **Answer:** 4 holes (one in each quadrant of the circle)
 
-### Example 9: Cubes — Opposite Face Determination
+### Example 9: Cubes ? Opposite Face Determination
 
 Three views of a cube show:
 - View 1: Top=1, Front=2, Right=3
@@ -333,7 +333,7 @@ Which face is opposite 3?
 
 **Solution:**
 From View 1: 3 is adjacent to 1 and 2.
-From View 2: 5 is adjacent to 1 and 4. Since 1 is common to views 1 and 2: 1 is adjacent to 2, 3, 4, 5. So 1 is opposite the remaining face: 6. ✓ (View 3 confirms: 6 is opposite 1)
+From View 2: 5 is adjacent to 1 and 4. Since 1 is common to views 1 and 2: 1 is adjacent to 2, 3, 4, 5. So 1 is opposite the remaining face: 6. ? (View 3 confirms: 6 is opposite 1)
 
 From View 3: 6 adjacent to 2 and 4. 3 is adjacent to 2 (View 1). So 3 is opposite 5 (the only face not appearing adjacent to 2 or 1).
 
@@ -374,8 +374,8 @@ class CubeTracker {
 | Analogy | Apply exact same transformation | List every change explicitly |
 | Matrix | Check rows first, then columns | Multiple patterns may combine |
 | Counting Figures | Use combinatorial formulas | Label intersections systematically |
-| Mirror Images | Left↔right, top/bottom unchanged | Visualize the reflection |
-| Water Images | Top↔bottom, left/right unchanged | Turn the page upside down mentally |
+| Mirror Images | Left?right, top/bottom unchanged | Visualize the reflection |
+| Water Images | Top?bottom, left/right unchanged | Turn the page upside down mentally |
 | Paper Folding | Each fold doubles the symmetry | Unfold in reverse order |
 | Cubes & Dice | Opposite faces never touch | Adjacent faces share an edge |
 | Embedded Figures | Scan systematically | Match orientation exactly |
@@ -441,8 +441,8 @@ class FigureSeriesSolver {
 class FigureCounter {
   // Count triangles in a subdivided triangle with n base segments
   static countTriangles(baseSegments: number): number {
-    // Small triangles = n²
-    // Upward triangles at higher levels = sum of i² from i=1 to n (for even orientation)
+    // Small triangles = n?
+    // Upward triangles at higher levels = sum of i? from i=1 to n (for even orientation)
     let total = 0;
     for (let i = 1; i <= baseSegments; i++) {
       total += i * (i + 1) / 2; // simplified formula for total triangles
@@ -450,7 +450,7 @@ class FigureCounter {
     return total;
   }
 
-  // Count squares in an m × n grid
+  // Count squares in an m ? n grid
   static countSquares(rows: number, cols: number): number {
     let total = 0;
     for (let size = 1; size <= Math.min(rows, cols); size++) {
@@ -459,7 +459,7 @@ class FigureCounter {
     return total;
   }
 
-  // Count rectangles in an m × n grid
+  // Count rectangles in an m ? n grid
   static countRectangles(rows: number, cols: number): number {
     return (rows * (rows + 1) / 2) * (cols * (cols + 1) / 2);
   }
@@ -588,8 +588,8 @@ console.log("Detected transforms:", transforms);
 console.log("Next figure:", FigureSeriesSolver.predictNext(seq, transforms));
 
 console.log("\n=== Figure Counting ===");
-console.log(`Squares in 3×3 grid: ${FigureCounter.countSquares(3, 3)}`);
-console.log(`Rectangles in 3×4 grid: ${FigureCounter.countRectangles(3, 4)}`);
+console.log(`Squares in 3?3 grid: ${FigureCounter.countSquares(3, 3)}`);
+console.log(`Rectangles in 3?4 grid: ${FigureCounter.countRectangles(3, 4)}`);
 
 console.log("\n=== Mirror Images ===");
 console.log(`Mirror of 'RAMA': ${ImageTransformer.mirrorImage("RAMA")}`);
@@ -612,7 +612,7 @@ console.log("Two-set results:", venn);
 ```mermaid
 flowchart TD
     A[Observe First 3 Figures] --> B{What Changes?}
-    B -->|Rotation| C[Measure Angle: 45°, 90°, 180°]
+    B -->|Rotation| C[Measure Angle: 45?, 90?, 180?]
     B -->|Shading| D[Track Movement of Shaded Region]
     B -->|Count| E[Elements Increase/Decrease by Constant]
     B -->|Position| F[Elements Shift Cyclically]
@@ -639,7 +639,7 @@ flowchart TD
 
 ### Additional Exercises (Level 2 & 3)
 
-13. **Figure Series:** A sequence shows a star rotating 45° clockwise, with alternating solid/outline fill. Describe the 7th figure.
+13. **Figure Series:** A sequence shows a star rotating 45? clockwise, with alternating solid/outline fill. Describe the 7th figure.
 
 14. **Counting Triangles:** A triangle is divided by 5 lines from each vertex to the opposite side (forming a triangular grid). How many small triangles total?
 
@@ -647,13 +647,13 @@ flowchart TD
 
 16. **Cube:** Given nets for cubes, identify which nets cannot form a valid cube.
 
-17. **Figure Matrix:** A 3×3 grid where row 1 shows circles (0, 1, 2 lines inside), row 2 shows squares (1, 2, 3 lines), row 3 shows triangles (2, 3, ?). What is the missing figure?
+17. **Figure Matrix:** A 3?3 grid where row 1 shows circles (0, 1, 2 lines inside), row 2 shows squares (1, 2, 3 lines), row 3 shows triangles (2, 3, ?). What is the missing figure?
 
 18. **Water Image:** Draw the water image of "MATHS".
 
 ### Answer Key (Additional)
 
-13. Star at 270° rotation with outline fill | 14. Uses formula: depends on partition count | 15. 4 quarter-circles (one in each quadrant) | 16. Nets with overlapping faces when folded | 17. Triangle with 4 internal lines | 18. MATHS inverted vertically (water reflection)
+13. Star at 270? rotation with outline fill | 14. Uses formula: depends on partition count | 15. 4 quarter-circles (one in each quadrant) | 16. Nets with overlapping faces when folded | 17. Triangle with 4 internal lines | 18. MATHS inverted vertically (water reflection)
 
 ### TypeScript: Pattern Sequence Generator & Cube Simulation
 
@@ -663,7 +663,7 @@ class PatternGenerator {
     return Array.from({ length: count }, (_, i) => i * 45);
   }
   static alternatingSymbols(n: number): string[] {
-    return Array.from({ length: n }, (_, i) => i % 2 === 0 ? "●" : "○");
+    return Array.from({ length: n }, (_, i) => i % 2 === 0 ? "?" : "?");
   }
   static shapeCount(shape: string, baseCount: number, step: number, terms: number): number[] {
     return Array.from({ length: terms }, (_, i) => baseCount + i * step);
@@ -701,11 +701,11 @@ console.log("Squares (3x3):", FigureCounter.squaresInGrid(3, 3));
 console.log("Valid dice view:", CubeSimulator.isValidView(1, 2, 3));
 ```
 
-// ─────────────────────────────────────────────────────
-// Mirror / Water Image Simulator — mirrors a 2D pattern
+// -----------------------------------------------------
+// Mirror / Water Image Simulator ? mirrors a 2D pattern
 // horizontally (mirror image) or vertically (water image)
 // using a coordinate grid representation.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class MirrorImageSimulator {
   // Represent a pattern as a 2D boolean grid
@@ -751,7 +751,7 @@ class MirrorImageSimulator {
   static render(pattern: boolean[][], label: string): void {
     console.log(`\n${label}:`);
     for (const row of pattern) {
-      console.log(row.map(c => c ? "█" : "░").join(" "));
+      console.log(row.map(c => c ? "?" : "?").join(" "));
     }
   }
 
@@ -769,10 +769,10 @@ class MirrorImageSimulator {
   }
 }
 
-// ─────────────────────────────────────────────────────
-// Embedded Figure Finder — determines whether a target
+// -----------------------------------------------------
+// Embedded Figure Finder ? determines whether a target
 // figure is contained within a complex figure.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class EmbeddedFigureFinder {
   // Simple pattern matching in grid
@@ -797,13 +797,13 @@ class EmbeddedFigureFinder {
   }
 }
 
-// ─────────────────────────────────────────────────────
-// Pattern Completion Checker — predicts the missing
-// figure in a 3×3 figure matrix
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
+// Pattern Completion Checker ? predicts the missing
+// figure in a 3?3 figure matrix
+// -----------------------------------------------------
 
 class PatternCompletionChecker {
-  // Patterns in 3×3 matrix: row-wise (same transformation applied across)
+  // Patterns in 3?3 matrix: row-wise (same transformation applied across)
   static predict(
     matrix: boolean[][][],
     transformations: Array<(grid: boolean[][]) => boolean[][]>
@@ -815,7 +815,7 @@ class PatternCompletionChecker {
     // Try row-wise pattern: same transformation T applied each row
     for (let r = 0; r < rows; r++) {
       if (matrix[r][0] && matrix[r][1]) {
-        // Guess: T maps col1 → col2
+        // Guess: T maps col1 ? col2
         // Apply T to col2 to get col3
         const t = transformations.find(tf => {
           const result = tf(matrix[r][0]);
@@ -841,7 +841,7 @@ const pattern = [
 MirrorImageSimulator.render(pattern, "Original");
 MirrorImageSimulator.render(MirrorImageSimulator.horizontalMirror(pattern), "Horizontal Mirror (Mirror Image)");
 MirrorImageSimulator.render(MirrorImageSimulator.verticalMirror(pattern), "Vertical Mirror (Water Image)");
-MirrorImageSimulator.render(MirrorImageSimulator.rotate90(pattern), "Rotated 90° clockwise");
+MirrorImageSimulator.render(MirrorImageSimulator.rotate90(pattern), "Rotated 90? clockwise");
 
 // Embedded figure demo
 const grid = [
@@ -858,34 +858,87 @@ const result = EmbeddedFigureFinder.findTarget(grid, target);
 console.log(`\nEmbedded figure found: ${result.found} at ${result.positions.length} positions`);
 ```
 
+
+// Chapter 5 - quantitative-aptitude implementation
+const ITEMS = { count: 10, topic: 'quantitative-aptitude', version: '1.0' }
+function processItem(item: string): string { return item.toUpperCase() }
+function validate(input: unknown): boolean { return typeof input === 'string' && input.length > 0 }
+function log(msg: string): void { console.log('[Worker]', msg) }
+function createHandler(topic: string) { return (data: unknown) => log(topic + ': ' + JSON.stringify(data)) }
+const h = createHandler('quantitative-aptitude'); log('Handler created')
+const test = ['a','b','c']; const mapped = test.map(processItem)
+log('Mapped: ' + mapped.join(','))
+export { processItem, validate, createHandler, ITEMS }
+
+// non verbal reasoning
+// aptitude-reasoning implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'non verbal reasoning', data: { topic: 'aptitude-reasoning' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Figure series: identify the rule from first 2-3 figures; apply to predict next
-- Figure analogy: find transformation between A→B, apply same to C→D
+- Figure analogy: find transformation between A?B, apply same to C?D
 - Odd one out: look for the common element missing in one figure
 - Figure matrix: check row-wise pattern, then column-wise
 - Counting figures: use systematic methods, don't count randomly
 - Embedded figures: scan systematically; don't rely on peripheral vision
 - Mirror/water images: left-right vs top-bottom reversal
-- Paper folding: work backward — undo each fold symmetrically
+- Paper folding: work backward ? undo each fold symmetrically
 - Cubes/dice: opposite faces never appear together; standard dice sum = 7
 - Venn diagrams: universal set = sum of all individual parts + none
 
 ## Exercises
 
-### Level 1 — Basic
+### Level 1 ? Basic
 
-1. **Figure Series:** A sequence of figures rotates 90° each step. What is the 5th figure?
+1. **Figure Series:** A sequence of figures rotates 90? each step. What is the 5th figure?
 
 2. **Mirror Image:** Draw the mirror image of 'R' with mirror on the right side.
 
-3. **Odd One Out:** Circle, Square, Triangle, Rectangle — which is fundamentally different?
+3. **Odd One Out:** Circle, Square, Triangle, Rectangle ? which is fundamentally different?
 
 4. **Venn Diagram:** In a class, 20 play cricket, 15 play football, 8 play both. How many play at least one?
 
-5. **Counting Squares:** How many squares in a 3×3 grid of small squares?
+5. **Counting Squares:** How many squares in a 3?3 grid of small squares?
 
-### Level 2 — Medium
+### Level 2 ? Medium
 
 6. **Counting Triangles:** A triangle with 4 base segments (divided into smaller triangles). Total triangles?
 
@@ -895,9 +948,9 @@ console.log(`\nEmbedded figure found: ${result.found} at ${result.positions.leng
 
 9. **Water Image:** What is the water image of the letter 'b'?
 
-### Level 3 — Advanced
+### Level 3 ? Advanced
 
-10. **Figure Matrix:** A 3×3 matrix with rotation + shading rules. Find the missing figure.
+10. **Figure Matrix:** A 3?3 matrix with rotation + shading rules. Find the missing figure.
 
 11. **Embedded Figure:** Identify which option contains the given simple figure.
 

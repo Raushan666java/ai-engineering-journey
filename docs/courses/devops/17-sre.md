@@ -66,18 +66,18 @@ SRE operationalizes DevOps principles with engineering rigor. Many organizations
 
 ### 17.2 Service Level Objectives (SLO, SLI, SLA)
 
-**Service Level Indicator (SLI)** â€” A quantitative measure of some aspect of the service:
+**Service Level Indicator (SLI)** — A quantitative measure of some aspect of the service:
 - Request latency (at p95, < 500ms)
 - Availability (fraction of successful requests)
 - Throughput (requests per second)
 - Freshness (data age in a data pipeline)
 - Correctness (fraction of correct responses)
 
-**Service Level Objective (SLO)** â€” A target value or range for an SLI:
+**Service Level Objective (SLO)** — A target value or range for an SLI:
 - "P95 request latency is less than 500ms over a 28-day rolling window"
 - "99.9% of requests are successful over a 30-day window"
 
-**Service Level Agreement (SLA)** â€” A contractual commitment to customers, typically with financial penalties for breach. Internal SLOs should be more stringent than customer SLAs to provide a detection and response buffer.
+**Service Level Agreement (SLA)** — A contractual commitment to customers, typically with financial penalties for breach. Internal SLOs should be more stringent than customer SLAs to provide a detection and response buffer.
 
 **SLO Design Principles:**
 - Define SLOs for user-facing services first (they have the most direct business impact)
@@ -91,10 +91,10 @@ SRE operationalizes DevOps principles with engineering rigor. Many organizations
 An error budget is the acceptable amount of unreliability. For a 99.9% SLO over 28 days:
 
 ```
-Error Budget = (1 - SLO) Ã— Time Window
-             = 0.001 Ã— (28 Ã— 24 Ã— 60 Ã— 60)
-             = 0.001 Ã— 2,419,200 seconds
-             = 2,419 seconds â‰ˆ 40 minutes
+Error Budget = (1 - SLO) × Time Window
+             = 0.001 × (28 × 24 × 60 × 60)
+             = 0.001 × 2,419,200 seconds
+             = 2,419 seconds ˜ 40 minutes
 ```
 
 **Error Budget for Common SLO Targets (30-day window):**
@@ -136,11 +136,11 @@ groups:
 Toil is operational work that is manual, repetitive, automatable, tactical, and devoid of enduring value.
 
 **Toil Characteristics:**
-1. **Manual** â€” Requires human intervention; no automation
-2. **Repetitive** â€” Occurs frequently with the same pattern
-3. **Automatable** â€” Could be automated with appropriate engineering effort
-4. **Tactical** â€” Reactive rather than strategic
-5. **No enduring value** â€” Service does not improve when this work is done
+1. **Manual** — Requires human intervention; no automation
+2. **Repetitive** — Occurs frequently with the same pattern
+3. **Automatable** — Could be automated with appropriate engineering effort
+4. **Tactical** — Reactive rather than strategic
+5. **No enduring value** — Service does not improve when this work is done
 
 **Examples of Toil vs Valuable Work:**
 
@@ -154,7 +154,7 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 | Resolving repeated support tickets | Building self-service tooling |
 | Applying security patches manually | Automating patch management |
 
-**The 50% Rule:** SRE teams should spend no more than 50% of their time on operational work. The remaining time must be invested in engineering projects that reduce future operational load. This is a ceiling, not a target â€” aim for less toil.
+**The 50% Rule:** SRE teams should spend no more than 50% of their time on operational work. The remaining time must be invested in engineering projects that reduce future operational load. This is a ceiling, not a target — aim for less toil.
 
 **Toil Elimination Approach:**
 1. Measure current toil percentage (time tracking, ticket analysis)
@@ -175,11 +175,11 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 | SEV-4 | Cosmetic or informational | 24 hours | Dashboard labeling issue, typo in docs |
 
 **Incident Response Process:**
-1. **Detection** â€” Alert fires or user reports issue
-2. **Triage** â€” Determine severity, declare incident, assemble response team with incident commander
-3. **Mitigation** â€” Stabilize the system (rollback deployment, redirect traffic, scale up resources)
-4. **Resolution** â€” Apply permanent fix to address root cause
-5. **Follow-up** â€” Conduct blameless postmortem, implement preventive measures
+1. **Detection** — Alert fires or user reports issue
+2. **Triage** — Determine severity, declare incident, assemble response team with incident commander
+3. **Mitigation** — Stabilize the system (rollback deployment, redirect traffic, scale up resources)
+4. **Resolution** — Apply permanent fix to address root cause
+5. **Follow-up** — Conduct blameless postmortem, implement preventive measures
 
 **Communication During Incidents:**
 - Incident commander coordinates the response (single decision-maker)
@@ -191,9 +191,9 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 ### 17.6 On-Call Practices
 
 **On-Call Rotation Patterns:**
-- **Follow-the-sun** â€” Primary in each time zone during business hours. Coverage across global teams.
-- **Weekly rotation** â€” Primary handles incidents for one full week. Simple and predictable.
-- **Escalation tiers** â€” Primary â†’ secondary â†’ engineering manager. Ensures incidents don't fall through cracks.
+- **Follow-the-sun** — Primary in each time zone during business hours. Coverage across global teams.
+- **Weekly rotation** — Primary handles incidents for one full week. Simple and predictable.
+- **Escalation tiers** — Primary ? secondary ? engineering manager. Ensures incidents don't fall through cracks.
 
 **On-Call Best Practices:**
 - Limit on-call frequency to one week per rotation minimum (recovery time)
@@ -208,16 +208,16 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 Postmortems are written analyses of incidents. The goal is to understand what happened, why it happened, and how to prevent recurrence.
 
 **Postmortem Structure:**
-1. **Summary** â€” One-paragraph overview of the incident
-2. **Timeline** â€” Chronological sequence of events with timestamps
-3. **Impact** â€” User impact, duration, affected users, financial cost
-4. **Root Cause** â€” Technical and systemic causes
-5. **Trigger** â€” What initiated the incident
-6. **Detection** â€” How was the incident discovered? (alert, user report, monitoring)
-7. **Response** â€” Actions taken during mitigation, including what worked and what didn't
-8. **Contributing Factors** â€” Conditions that enabled the incident to occur or worsen
-9. **Action Items** â€” Concrete, assigned, tracked remediation steps with deadlines
-10. **Lessons Learned** â€” Insights for future improvement
+1. **Summary** — One-paragraph overview of the incident
+2. **Timeline** — Chronological sequence of events with timestamps
+3. **Impact** — User impact, duration, affected users, financial cost
+4. **Root Cause** — Technical and systemic causes
+5. **Trigger** — What initiated the incident
+6. **Detection** — How was the incident discovered? (alert, user report, monitoring)
+7. **Response** — Actions taken during mitigation, including what worked and what didn't
+8. **Contributing Factors** — Conditions that enabled the incident to occur or worsen
+9. **Action Items** — Concrete, assigned, tracked remediation steps with deadlines
+10. **Lessons Learned** — Insights for future improvement
 
 **The Blame-Free Principle:** If a human could make a mistake, the system enabled it. Postmortems find system weaknesses, not human failures. Blaming individuals discourages reporting and prevents learning.
 
@@ -231,10 +231,10 @@ Postmortems are written analyses of incidents. The goal is to understand what ha
 Capacity planning ensures the system has sufficient resources for current and projected demand.
 
 **Approach:**
-1. **Demand Forecasting** â€” Predict future usage based on historical trends, business plans, marketing campaigns, seasonal patterns
-2. **Resource Modeling** â€” Map demand to resource requirements (CPU, memory, storage, bandwidth, database connections)
-3. **Provisioning** â€” Acquire resources before they are needed (allow lead time for hardware procurement)
-4. **Monitoring** â€” Track utilization trends against projections and adjust plans
+1. **Demand Forecasting** — Predict future usage based on historical trends, business plans, marketing campaigns, seasonal patterns
+2. **Resource Modeling** — Map demand to resource requirements (CPU, memory, storage, bandwidth, database connections)
+3. **Provisioning** — Acquire resources before they are needed (allow lead time for hardware procurement)
+4. **Monitoring** — Track utilization trends against projections and adjust plans
 
 **Autoscaling** reduces the need for manual capacity planning for variable workloads. However, proactive planning is still required for:
 - Predictable growth (new users, feature adoption)
@@ -244,7 +244,7 @@ Capacity planning ensures the system has sufficient resources for current and pr
 
 ### 17.9 Reliability Patterns
 
-**Retries** â€” Automatically retry transient failures with exponential backoff and jitter:
+**Retries** — Automatically retry transient failures with exponential backoff and jitter:
 ```typescript
 async function retryWithBackoff<T>(
   fn: () => Promise<T>,
@@ -265,25 +265,25 @@ async function retryWithBackoff<T>(
 }
 ```
 
-**Circuit Breaker** â€” Stop making requests to a failing service to prevent cascade failures:
-- **CLOSED** â€” Normal operation. Requests pass through.
-- **OPEN** â€” Requests fail immediately. No calls to downstream service.
-- **HALF-OPEN** â€” Limited requests allowed through to test recovery.
+**Circuit Breaker** — Stop making requests to a failing service to prevent cascade failures:
+- **CLOSED** — Normal operation. Requests pass through.
+- **OPEN** — Requests fail immediately. No calls to downstream service.
+- **HALF-OPEN** — Limited requests allowed through to test recovery.
 
-**Bulkhead** â€” Isolate components so failure in one does not cascade:
+**Bulkhead** — Isolate components so failure in one does not cascade:
 - Separate thread pools for different service dependencies
 - Separate connection pools per downstream service
 - Separate process boundaries for critical vs non-critical features
 - Based on ship design: compartments isolate flooding
 
-**Timeouts** â€” Prevent operations from hanging indefinitely:
-- **Connect timeout** â€” Time to establish TCP connection (5s typical)
-- **Request timeout** â€” Time for complete request/response (30s typical)
-- **Read timeout** â€” Time between data packets (10s typical)
-- **Write timeout** â€” Time to send request data (10s typical)
+**Timeouts** — Prevent operations from hanging indefinitely:
+- **Connect timeout** — Time to establish TCP connection (5s typical)
+- **Request timeout** — Time for complete request/response (30s typical)
+- **Read timeout** — Time between data packets (10s typical)
+- **Write timeout** — Time to send request data (10s typical)
 - Always configure timeouts for every network call
 
-**Graceful Degradation** â€” When dependencies fail, degrade rather than fail completely:
+**Graceful Degradation** — When dependencies fail, degrade rather than fail completely:
 - Display cached data when database is unavailable
 - Disable non-critical features during overload (feature flags)
 - Return degraded responses with clear status indicators
@@ -341,7 +341,7 @@ class SLOTracker {
 
     for (const slo of slos) {
       const budget = this.calculateErrorBudget(slo);
-      const icons = { healthy: 'âœ…', warning: 'âš ï¸', critical: 'ðŸ”´', exhausted: 'ðŸ›‘' };
+      const icons = { healthy: '?', warning: '??', critical: '??', exhausted: '??' };
       const current = slo.totalEvents > 0
         ? `${((slo.goodEvents / slo.totalEvents) * 100).toFixed(3)}%`
         : 'N/A (no data)';
@@ -387,7 +387,7 @@ class CircuitBreaker {
   async call<T>(fn: () => Promise<T>): Promise<T> {
     if (this.state === 'OPEN') {
       if (Date.now() - this.lastFailureTime > this.recoveryTimeoutMs) {
-        console.log(`[${this.name}] Circuit â†’ HALF_OPEN`);
+        console.log(`[${this.name}] Circuit ? HALF_OPEN`);
         this.state = 'HALF_OPEN';
         this.halfOpenRequests = 0;
       } else {
@@ -414,7 +414,7 @@ class CircuitBreaker {
 
   private onSuccess(): void {
     if (this.state === 'HALF_OPEN') {
-      console.log(`[${this.name}] Circuit â†’ CLOSED (recovered)`);
+      console.log(`[${this.name}] Circuit ? CLOSED (recovered)`);
     }
     this.state = 'CLOSED';
     this.failureCount = 0;
@@ -425,7 +425,7 @@ class CircuitBreaker {
     this.lastFailureTime = Date.now();
 
     if (this.state === 'HALF_OPEN' || this.failureCount >= this.threshold) {
-      console.log(`[${this.name}] Circuit â†’ OPEN (${this.failureCount} failures)`);
+      console.log(`[${this.name}] Circuit ? OPEN (${this.failureCount} failures)`);
       this.state = 'OPEN';
     }
   }
@@ -445,9 +445,9 @@ async function demoCircuitBreaker(): Promise<void> {
   for (let i = 0; i < 12; i++) {
     try {
       const result = await cb.call(() => simulateRequest(i < 4, 50));
-      console.log(`[${i}] âœ… ${result}`);
+      console.log(`[${i}] ? ${result}`);
     } catch (error) {
-      console.log(`[${i}] âŒ ${(error as Error).message}`);
+      console.log(`[${i}] ? ${(error as Error).message}`);
     }
     await new Promise(r => setTimeout(r, 100));
   }
@@ -527,7 +527,7 @@ class OnCallScheduler {
       report += `| ${name} | ${count} |\n`;
     }
     report += `\nMax difference: ${maxShifts - minShifts} shifts\n`;
-    report += maxShifts - minShifts <= 1 ? 'âœ… Schedule is fair\n' : 'âš ï¸ Schedule imbalance detected\n';
+    report += maxShifts - minShifts <= 1 ? '? Schedule is fair\n' : '?? Schedule imbalance detected\n';
 
     return report;
   }
@@ -555,7 +555,7 @@ console.log(scheduler.generateScheduleReport(team, 7));
 | SLO | Target reliability for a service (99.9% availability) |
 | SLI | Actual measurement of reliability (request success rate) |
 | SLA | Contractual commitment with financial penalties |
-| Error Budget | Allowed unreliability = (1 - SLO) Ã— window |
+| Error Budget | Allowed unreliability = (1 - SLO) × window |
 | Toil | Manual, repetitive, automatable operational work |
 | Circuit Breaker | Fail-fast when downstream service degrades |
 | Retry | Exponential backoff with jitter for transient failures |
@@ -570,7 +570,7 @@ console.log(scheduler.generateScheduleReport(team, 7));
 | Error Budget | 40 min/month for 99.9% SLO |
 | Toil | Manual, repetitive, automatable, no enduring value |
 | Incidents | SEV-1 to SEV-4 with response SLAs |
-| Circuit Breaker | CLOSED â†’ OPEN â†’ HALF-OPEN |
+| Circuit Breaker | CLOSED ? OPEN ? HALF-OPEN |
 | On-Call | Weekly rotation, follow-the-sun, escalation tiers |
 | Postmortem | Summary, timeline, root cause, action items |
 
@@ -677,12 +677,54 @@ console.log(`Burn Rate: ${budget.burnRate}/hr, Days Until Exhaustion: ${budget.d
 
 <details><summary>Question 3: Why are postmortems blameless?</summary>**A)** To find who to blame<br>**B)** To focus on systemic causes, not individual mistakes<br>**C)** To avoid documentation<br>**D)** To reduce incident response time<br><br>**Answer: B)** To focus on systemic causes, not individual mistakes</details>
 
-<details><summary>Question 4: What is the error budget for 99.99% SLO over 30 days?</summary>**A)** 43 minutes<br>**B)** 4.3 minutes<br>**C)** 7.2 hours<br>**D)** 86.4 seconds<br><br>**Answer: B)** 4.3 minutes (30 Ã— 24 Ã— 60 Ã— 60 Ã— 0.0001 = 259.2 seconds â‰ˆ 4.3 minutes)</details>
+<details><summary>Question 4: What is the error budget for 99.99% SLO over 30 days?</summary>**A)** 43 minutes<br>**B)** 4.3 minutes<br>**C)** 7.2 hours<br>**D)** 86.4 seconds<br><br>**Answer: B)** 4.3 minutes (30 × 24 × 60 × 60 × 0.0001 = 259.2 seconds ˜ 4.3 minutes)</details>
 
 <details><summary>Question 5: Which on-call pattern distributes responsibility across time zones?</summary>**A)** Weekly rotation<br>**B)** Follow-the-sun<br>**C)** Escalation tiers<br>**D)** Random rotation<br><br>**Answer: B)** Follow-the-sun</details>
 
 ---
 
+
+// sre
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'sre', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 SRE applies software engineering to operations problems with measurable reliability outcomes. SLOs, SLIs, and error budgets quantify reliability and gate release velocity, creating a shared vocabulary between developers and operators. Toil elimination ensures SRE teams invest at least 50% of their time in engineering projects rather than manual operations. Incident management with severity classification, clear roles (incident commander), and blameless postmortems drives continuous improvement through systemic analysis. On-call rotations distribute operational load fairly with follow-the-sun, weekly, or escalation-tier patterns. Capacity planning proactively ensures resources match demand through forecasting and modeling. Reliability patterns (retries with exponential backoff and jitter, circuit breakers with three states, bulkheads with isolated resources, timeouts, and graceful degradation) build resilience into service design and prevent cascading failures.

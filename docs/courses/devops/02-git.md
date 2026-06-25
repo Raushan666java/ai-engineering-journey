@@ -20,7 +20,7 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Git Internals | Objects and references | Understanding SHA hashes demystifies Git |
-| Branching | Lightweight pointers to commits | Branches are cheap â€” create them freely |
+| Branching | Lightweight pointers to commits | Branches are cheap — create them freely |
 | Merging | Fast-forward vs 3-way merges | Choose strategy based on team workflow |
 | Rebasing | Linearizing commit history | Rebase feature branches, merge main branches |
 | GitFlow | Structured release management | Good for versioned releases, bad for continuous delivery |
@@ -53,9 +53,9 @@ Git is fundamentally a content-addressable filesystem with a VCS interface. Ever
 
 **Four object types:**
 
-**Blob:** Stores file content. Named by SHA-1 of the content. Does not store the filename â€” that's in the tree. Two files with identical content share the same blob.
+**Blob:** Stores file content. Named by SHA-1 of the content. Does not store the filename — that's in the tree. Two files with identical content share the same blob.
 
-**Tree:** Stores directory listings â€” filenames, permissions, and references to blobs or subtrees. Analogous to a filesystem directory.
+**Tree:** Stores directory listings — filenames, permissions, and references to blobs or subtrees. Analogous to a filesystem directory.
 
 **Commit:** Snapshot of the entire repository at a point in time. Contains:
 - Pointer to the root tree object
@@ -91,21 +91,21 @@ flowchart TD
 ```
 
 **References (refs):** Pointers to commits stored in `.git/refs/`:
-- `refs/heads/main` â€” Local branch pointer
-- `refs/remotes/origin/main` â€” Remote tracking branch
-- `refs/tags/v1.0` â€” Tag pointer
-- `HEAD` â€” Current branch or commit
+- `refs/heads/main` — Local branch pointer
+- `refs/remotes/origin/main` — Remote tracking branch
+- `refs/tags/v1.0` — Tag pointer
+- `HEAD` — Current branch or commit
 
 **The staging area (index):** Stored in `.git/index`. When you run `git add`, Git creates blob objects and updates the index with the new tree structure. When you run `git commit`, Git creates a commit object pointing to the staged tree.
 
 ### Branching Strategies
 
 **GitFlow (Vincent Driessen, 2010):**
-- `main` â€” Production-ready code
-- `develop` â€” Integration branch for features
-- `feature/*` â€” Branched from `develop`
-- `release/*` â€” Branched from `develop` when preparing release
-- `hotfix/*` â€” Branched from `main` for critical fixes
+- `main` — Production-ready code
+- `develop` — Integration branch for features
+- `feature/*` — Branched from `develop`
+- `release/*` — Branched from `develop` when preparing release
+- `hotfix/*` — Branched from `main` for critical fixes
 
 GitFlow works well for projects with scheduled releases and multiple concurrent versions. It is overly complex for continuous delivery.
 
@@ -153,19 +153,19 @@ Before:  A---B---C (main)
 After:   A---B---C---D'---E' (feature)
 ```
 
-Rebasing rewrites history â€” never rebase shared/published branches.
+Rebasing rewrites history — never rebase shared/published branches.
 
 ### Interactive Rebase
 
 Interactive rebase (`git rebase -i HEAD~N`) enables editing commits before applying. Options per commit:
 
-- `pick` â€” Use as-is
-- `reword` â€” Change commit message
-- `edit` â€” Amend commit content
-- `squash` â€” Combine with previous commit
-- `fixup` â€” Combine but discard message
-- `drop` â€” Remove commit
-- `exec` â€” Run a shell command
+- `pick` — Use as-is
+- `reword` — Change commit message
+- `edit` — Amend commit content
+- `squash` — Combine with previous commit
+- `fixup` — Combine but discard message
+- `drop` — Remove commit
+- `exec` — Run a shell command
 
 ### Cherry-Picking
 
@@ -181,16 +181,16 @@ git cherry-pick -x <commit-hash>  # Adds source reference
 Hooks are scripts that run automatically at specific Git lifecycle events. They live in `.git/hooks/` and must be executable.
 
 **Client-side hooks (run on developer machine):**
-- `pre-commit` â€” Check code style, run linters
-- `prepare-commit-msg` â€” Edit default commit message
-- `commit-msg` â€” Validate commit message format
-- `pre-push` â€” Run tests before pushing
-- `post-merge` â€” Reindex after merge
+- `pre-commit` — Check code style, run linters
+- `prepare-commit-msg` — Edit default commit message
+- `commit-msg` — Validate commit message format
+- `pre-push` — Run tests before pushing
+- `post-merge` — Reindex after merge
 
 **Server-side hooks (run on remote repository):**
-- `pre-receive` â€” Enforce policies on incoming pushes
-- `update` â€” Per-branch policy enforcement
-- `post-receive` â€” Trigger CI/CD, deployments, notifications
+- `pre-receive` — Enforce policies on incoming pushes
+- `update` — Per-branch policy enforcement
+- `post-receive` — Trigger CI/CD, deployments, notifications
 
 **Example pre-commit hook:**
 
@@ -903,6 +903,48 @@ console.log(sim.visualize(newHead[newHead.length - 1]));
 
 ---
 
+
+// git
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'git', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Git's object model consists of blobs (file content), trees (directory listings), commits (snapshots), and tags (named references).

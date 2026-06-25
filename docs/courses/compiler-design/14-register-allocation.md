@@ -1,6 +1,6 @@
 # Chapter 14: Register Allocation
 
-← Previous: [Chapter 13: Loop Optimization](13-loop-optimization.md) | **Next:** [Chapter 15: Advanced Topics](15-advanced.md)
+? Previous: [Chapter 13: Loop Optimization](13-loop-optimization.md) | **Next:** [Chapter 15: Advanced Topics](15-advanced.md)
 
 ## Learning Objectives
 
@@ -44,19 +44,19 @@ flowchart TB
 
 ### The Register Allocation Problem
 
-Register allocation is one of the most critical optimization phases in a compiler. Accessing a value from a register is typically 10–100× faster than accessing it from memory (with L1 cache access ~1 ns vs. DRAM access ~100 ns on modern hardware). The goal is to maximize the number of values held in registers at every program point, minimizing loads from and stores to memory.
+Register allocation is one of the most critical optimization phases in a compiler. Accessing a value from a register is typically 10?100? faster than accessing it from memory (with L1 cache access ~1 ns vs. DRAM access ~100 ns on modern hardware). The goal is to maximize the number of values held in registers at every program point, minimizing loads from and stores to memory.
 
 **Allocation** decides which live ranges reside in registers and which are **spilled** (forced to memory). **Assignment** determines which specific register each allocated live range occupies. These are traditionally solved together via graph coloring.
 
-The problem is NP-complete: given a graph with N nodes and K colors, does a proper K-coloring exist? For K ≥ 3, graph coloring is NP-complete via reduction from 3-SAT. Chaitin et al. (1982) proved that register allocation (as graph coloring) is NP-complete, establishing that practical allocators must use heuristic approximations.
+The problem is NP-complete: given a graph with N nodes and K colors, does a proper K-coloring exist? For K = 3, graph coloring is NP-complete via reduction from 3-SAT. Chaitin et al. (1982) proved that register allocation (as graph coloring) is NP-complete, establishing that practical allocators must use heuristic approximations.
 
 #### Abstraction: Graph Coloring
 
 Given:
-- An **interference graph** G = (V, E) where V is the set of live ranges and (u, v) ∈ E if live ranges u and v overlap.
+- An **interference graph** G = (V, E) where V is the set of live ranges and (u, v) ? E if live ranges u and v overlap.
 - A palette of K **colors** (physical registers).
 
-Find: A mapping color: V → {1, ..., K} such that if (u, v) ∈ E then color(u) ≠ color(v).
+Find: A mapping color: V ? {1, ..., K} such that if (u, v) ? E then color(u) ? color(v).
 
 A K-coloring corresponds to an assignment where each live range gets a register and interfering live ranges get distinct registers. If no K-coloring exists, some live ranges must be spilled.
 
@@ -83,7 +83,7 @@ for each instruction I in the program:
     Let D = destination of I (the live range defined by I)
     Let Live = set of live ranges live after I (from live-variable analysis)
     for each L in Live:
-        if L ≠ D:
+        if L ? D:
             add edge (D, L)
 ```
 
@@ -113,7 +113,7 @@ Construct the interference graph from live-range information. For each node (liv
 
 A typical spill-cost formula:
 ```
-spillCost(lr) = Σ_{each reference ref in lr} 10^depth(ref) × cost(op(ref))
+spillCost(lr) = S_{each reference ref in lr} 10^depth(ref) ? cost(op(ref))
 ```
 
 Where:
@@ -122,16 +122,16 @@ Where:
 
 #### Phase 2: Simplify
 
-Build a coloring stack by repeatedly removing nodes that are **trivially colorable** — nodes with degree < K. A node with degree < K can always be colored because even if all its K−1 or fewer neighbors receive distinct colors, at least one color remains unused.
+Build a coloring stack by repeatedly removing nodes that are **trivially colorable** ? nodes with degree < K. A node with degree < K can always be colored because even if all its K-1 or fewer neighbors receive distinct colors, at least one color remains unused.
 
 ```
 stack = []
-while ∃ node v with degree(v) < K:
+while ? node v with degree(v) < K:
     push v onto stack
     remove v and all its edges from the graph
 ```
 
-When all remaining nodes have degree ≥ K, there is no trivially colorable node. At this point, Chaitin selects a **spill candidate**: a node with the lowest spill-cost-to-degree ratio, marks it for spill, and removes it (continuing the simplify process).
+When all remaining nodes have degree = K, there is no trivially colorable node. At this point, Chaitin selects a **spill candidate**: a node with the lowest spill-cost-to-degree ratio, marks it for spill, and removes it (continuing the simplify process).
 
 #### Phase 3: Select
 
@@ -142,7 +142,7 @@ while stack is not empty:
     v = pop(stack)
     rebuild v's edges in the graph
     colors = {color(n) for each neighbor n of v that is already colored}
-    if there exists c ∈ {1, ..., K} such that c ∉ colors:
+    if there exists c ? {1, ..., K} such that c ? colors:
         color(v) = c
     else:
         mark v as spilled (confirmed)
@@ -153,32 +153,32 @@ while stack is not empty:
 If any node was confirmed spilled:
 1. Insert a store instruction after each definition of the spilled value.
 2. Insert a load instruction (or reload) before each use of the spilled value.
-3. The inserted instructions change live ranges — some values now have shorter live ranges, potentially enabling coloring.
+3. The inserted instructions change live ranges ? some values now have shorter live ranges, potentially enabling coloring.
 4. **Restart** from Phase 1 (Build) with the modified program.
 
 If no spills were confirmed, allocation is complete.
 
 ### The Briggs Improvement
 
-Chaitin's algorithm makes a pessimistic spill decision during Simplify: it spills a node as soon as all remaining nodes have degree ≥ K. The **Briggs improvement** (Briggs et al., 1989) uses **optimistic coloring**: during Simplify, push **all** nodes onto the stack, including those with degree ≥ K. The spill decision is deferred to Select:
+Chaitin's algorithm makes a pessimistic spill decision during Simplify: it spills a node as soon as all remaining nodes have degree = K. The **Briggs improvement** (Briggs et al., 1989) uses **optimistic coloring**: during Simplify, push **all** nodes onto the stack, including those with degree = K. The spill decision is deferred to Select:
 
-- During Simplify: push every node, regardless of degree. (Nodes with degree ≥ K are optimistically assumed to be colorable.)
+- During Simplify: push every node, regardless of degree. (Nodes with degree = K are optimistically assumed to be colorable.)
 - During Select: if a color is available when the node is popped, assign it. If no color is available, confirm the spill.
 
-Optimism succeeds when a high-degree node's neighbors — themselves partially colored — leave a color free. This happens more often than one might expect, because many high-degree nodes are connected to other high-degree nodes that eventually get spilled, freeing colors.
+Optimism succeeds when a high-degree node's neighbors ? themselves partially colored ? leave a color free. This happens more often than one might expect, because many high-degree nodes are connected to other high-degree nodes that eventually get spilled, freeing colors.
 
 ```
 // Chaitin spills earlier
-Simplify: deg(a)=4, deg(b)=4, deg(c)=4, all ≥ K=3
-→ spill a (cost/deg = lowest)
-→ deg(b)=3, deg(c)=3 → still ≥ K → spill b → spill c
+Simplify: deg(a)=4, deg(b)=4, deg(c)=4, all = K=3
+? spill a (cost/deg = lowest)
+? deg(b)=3, deg(c)=3 ? still = K ? spill b ? spill c
 Result: all 3 spilled
 
 // Briggs defers to Select
-Simplify: push a, b, c (all ≥ K=3)
-Select: pop c → neighbors have colors, pick R1
-        pop b → neighbors: c=R1, pick R2
-        pop a → neighbors: c=R1, b=R2, no color → spill a
+Simplify: push a, b, c (all = K=3)
+Select: pop c ? neighbors have colors, pick R1
+        pop b ? neighbors: c=R1, pick R2
+        pop a ? neighbors: c=R1, b=R2, no color ? spill a
 Result: 1 spilled instead of 3
 ```
 
@@ -194,21 +194,21 @@ Merges every copy-related pair unconditionally. Simple and effective for elimina
 
 Merges only when the merge is guaranteed not to cause spilling. Two criteria:
 
-**Briggs criterion**: merge `x` and `y` if the resulting node has fewer than K neighbors with degree ≥ K. Intuitively: the merged node can be simplified if, after removing all low-degree neighbors, at most K−1 actual neighbors remain.
+**Briggs criterion**: merge `x` and `y` if the resulting node has fewer than K neighbors with degree = K. Intuitively: the merged node can be simplified if, after removing all low-degree neighbors, at most K-1 actual neighbors remain.
 
 ```
 function canMerge_Briggs(x, y, K):
     combined = merge(x, y)
-    heavy = count of neighbors of combined with degree ≥ K
+    heavy = count of neighbors of combined with degree = K
     return heavy < K
 ```
 
-**George criterion**: merge `x` and `y` if, for every neighbor `t` of `x` with degree ≥ K, `t` already interferes with `y`. Intuitively: if a high-degree neighbor of `x` already conflicts with `y`, merging doesn't create new conflicts. This criterion is particularly useful for coalescing with pre-colored registers.
+**George criterion**: merge `x` and `y` if, for every neighbor `t` of `x` with degree = K, `t` already interferes with `y`. Intuitively: if a high-degree neighbor of `x` already conflicts with `y`, merging doesn't create new conflicts. This criterion is particularly useful for coalescing with pre-colored registers.
 
 ```
 function canMerge_George(x, y, K):
     for each neighbor t of x:
-        if degree(t) ≥ K and not interferes(t, y):
+        if degree(t) = K and not interferes(t, y):
             return false
     return true
 ```
@@ -223,10 +223,10 @@ The exponential weighting `10^depth` ensures that inner-loop spills are exponent
 
 | Nesting Depth | Weight | Relative Cost |
 |---------------|--------|---------------|
-| 0 (outermost) | 1 | 1× |
-| 1 (inner loop) | 10 | 10× |
-| 2 (innermost) | 100 | 100× |
-| 3 | 1000 | 1000× |
+| 0 (outermost) | 1 | 1? |
+| 1 (inner loop) | 10 | 10? |
+| 2 (innermost) | 100 | 100? |
+| 3 | 1000 | 1000? |
 
 ```
 function spillCost(liveRange, loopDepth):
@@ -241,9 +241,9 @@ function spillCost(liveRange, loopDepth):
 
 **Rematerialization** avoids spilling by recomputing a value rather than loading it from memory. Rematerialization is profitable for:
 
-- **Integer constants**: `x = 42` → reload costs a load; recompute costs a move-immediate.
-- **Address expressions**: `addr = base + offset` → recompute with a cheap addition.
-- **Boolean flags**: `flag = true` → move-immediate instead of load.
+- **Integer constants**: `x = 42` ? reload costs a load; recompute costs a move-immediate.
+- **Address expressions**: `addr = base + offset` ? recompute with a cheap addition.
+- **Boolean flags**: `flag = true` ? move-immediate instead of load.
 
 The allocator computes a **rematerialization cost**. If it is less than the spill cost, the value is never spilled but instead recomputed at each use point.
 
@@ -268,14 +268,14 @@ The greedy allocator processes live ranges in order of spill cost (highest cost 
 
 Oracle HotSpot's C2 compiler uses a variant of the Chaitin-Briggs algorithm with:
 - SSA-based live-range construction.
-- φ-function elimination via live-range splitting.
+- f-function elimination via live-range splitting.
 - On-the-fly rematerialization of boxed values (Java object references that can be reconstructed cheaply).
 
 #### Go Compiler Allocator
 
-Go uses a simpler approach: a **linear-scan allocator** that processes live ranges in their start-order, assigning registers greedily and spilling when none are available. Linear scan is O(N log N) vs. graph coloring's O(N²), and for small-to-medium functions it produces competitive code. Go also applies coalescing during the SSA-elimination phase.
+Go uses a simpler approach: a **linear-scan allocator** that processes live ranges in their start-order, assigning registers greedily and spilling when none are available. Linear scan is O(N log N) vs. graph coloring's O(N?), and for small-to-medium functions it produces competitive code. Go also applies coalescing during the SSA-elimination phase.
 
-### Putting It All Together — TypeScript Implementation
+### Putting It All Together ? TypeScript Implementation
 
 ```typescript
 // ============================================================
@@ -320,8 +320,8 @@ class LiveRangeAnalyzer {
   // Simplified live-range construction from instruction list
   analyze(): LiveRange[] {
     // Step 1: collect all def-use chains
-    const defMap = new Map<VarName, number[]>()  // var → def instruction indices
-    const useMap = new Map<VarName, number[]>()  // var → use instruction indices
+    const defMap = new Map<VarName, number[]>()  // var ? def instruction indices
+    const useMap = new Map<VarName, number[]>()  // var ? use instruction indices
 
     for (const inst of this.instructions) {
       if (inst.dest) {
@@ -338,7 +338,7 @@ class LiveRangeAnalyzer {
     for (const [v, defs] of defMap) {
       const uses = useMap.get(v) || []
       if (uses.length === 0 && defs.length > 0) {
-        // Defined but never used — dead code
+        // Defined but never used ? dead code
         this.liveRanges.set(v, {
           varName: v,
           defPoint: defs[0],
@@ -661,10 +661,10 @@ const result = alloc.run()
 
 console.log('=== Register Allocation Results ===')
 console.log(`K = 4, Iterations: ${result.iterations}`)
-console.log('\nAssignments (virtual → physical):')
+console.log('\nAssignments (virtual ? physical):')
 for (const [v, reg] of result.assignments) {
   if (!result.spills.includes(v)) {
-    console.log(`  ${v} → R${reg}`)
+    console.log(`  ${v} ? R${reg}`)
   }
 }
 if (result.spills.length > 0) {
@@ -678,13 +678,13 @@ if (result.spills.length > 0) {
 === Register Allocation Results ===
 K = 4, Iterations: 1
 
-Assignments (virtual → physical):
-  a → R1
-  b → R2
-  d → R3
-  f → R3
-  g → R4
-  i → R2
+Assignments (virtual ? physical):
+  a ? R1
+  b ? R2
+  d ? R3
+  f ? R3
+  g ? R4
+  i ? R2
 
 Spilled values:
   (none)
@@ -694,7 +694,7 @@ Spilled values:
 
 | Insight | Why It Matters |
 |---------|----------------|
-| Optimistic coloring spills fewer values than conservative | Briggs's deferral of spill decisions saves 30–50% of spills on typical programs |
+| Optimistic coloring spills fewer values than conservative | Briggs's deferral of spill decisions saves 30?50% of spills on typical programs |
 | Conservative coalescing prevents spill cascades | Aggressive coalescing can merge nodes into super-saturated colors; conservative checks prevent this |
 | Weighted spill costs at 10^depth prioritize inner loops | Exponential weighting ensures hot-loop values stay in registers at all costs |
 | Rematerialization beats spilling for cheap values | Constants and address expressions are cheaper to recompute than to load |
@@ -702,9 +702,101 @@ Spilled values:
 | Pre-colored registers (ABI) constrain the allocator | Treat them as fixed nodes; the allocator must work around them |
 | LLVM's greedy allocator with eviction outperforms pure graph coloring | Eviction allows dynamic rebalancing when a high-cost range conflicts with several low-cost ones |
 
+
+// register allocation
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'register allocation', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// register allocation - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'register allocation' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-Register allocation is the NP-complete problem of mapping virtual live ranges to physical registers. The graph-coloring approach — build an interference graph, simplify by removing low-degree nodes, select colors by popping the stack, and spill when coloring fails — provides a practical heuristic. Chaitin's algorithm established the framework; Briggs's optimistic coloring improved it by deferring spill decisions. Conservative coalescing eliminates copy instructions without causing spilling. Weighted spill costs and rematerialization optimize allocation for hot loops and cheap values. Modern production allocators (LLVM's greedy allocator, HotSpot C2) extend these ideas with eviction, live-range splitting, and region-based allocation, achieving register assignments that approach the theoretical optimum for most real-world programs.
+Register allocation is the NP-complete problem of mapping virtual live ranges to physical registers. The graph-coloring approach ? build an interference graph, simplify by removing low-degree nodes, select colors by popping the stack, and spill when coloring fails ? provides a practical heuristic. Chaitin's algorithm established the framework; Briggs's optimistic coloring improved it by deferring spill decisions. Conservative coalescing eliminates copy instructions without causing spilling. Weighted spill costs and rematerialization optimize allocation for hot loops and cheap values. Modern production allocators (LLVM's greedy allocator, HotSpot C2) extend these ideas with eviction, live-range splitting, and region-based allocation, achieving register assignments that approach the theoretical optimum for most real-world programs.
 
 ## Chapter Quiz
 
@@ -715,7 +807,7 @@ Register allocation is the NP-complete problem of mapping virtual live ranges to
    - D) Satisfiability
 
 2. Chaitin's algorithm spills a node during Simplify when:
-   - A) The node has degree ≥ K and all remaining nodes also have degree ≥ K
+   - A) The node has degree = K and all remaining nodes also have degree = K
    - B) The node has no neighbors
    - C) The node is a copy instruction
    - D) The user requests it
@@ -793,7 +885,7 @@ Register allocation is the NP-complete problem of mapping virtual live ranges to
 
 1. **Complete Register Allocator.** Implement a graph-coloring register allocator in TypeScript that: (a) constructs live ranges from a list of three-address instructions; (b) builds the interference graph; (c) applies the Briggs optimistic coloring with conservative coalescing; (d) computes weighted spill costs using 10^depth; (e) inserts spill loads/stores and reruns when spilling occurs.
 
-   Test your allocator on a 15-instruction program with 3 levels of loop nesting and at least 10 distinct live ranges, with K ∈ {3, 4, 6}. For each K, show:
+   Test your allocator on a 15-instruction program with 3 levels of loop nesting and at least 10 distinct live ranges, with K ? {3, 4, 6}. For each K, show:
    - The number of spills (spilled values / total live ranges).
    - The total spill cost.
    - The final register assignments for non-spilled values.

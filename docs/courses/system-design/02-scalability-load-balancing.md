@@ -62,19 +62,19 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![Load Balancing Algorithms Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/02-scalability-load-balancing.png)
 
 ### Vertical Scaling (Scale Up)
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 Vertical scaling adds resources to a single machine: more CPU cores, more RAM, faster SSDs, higher-bandwidth NICs. It is the simplest scaling strategy because it requires zero application changes.
 
 **Advantages:**
@@ -85,7 +85,7 @@ Vertical scaling adds resources to a single machine: more CPU cores, more RAM, f
 
 **Disadvantages:**
 - **Hardware ceiling.** A single x86 server cannot exceed ~64 TB RAM (current max) or ~448 CPU cores. There is no way to vertically scale past the largest machine a vendor sells.
-- **Cost super-linearity.** High-end machines cost exponentially more than commodity servers. A 2x machine rarely costs 2x â€” it costs 3-5x because of premium hardware.
+- **Cost super-linearity.** High-end machines cost exponentially more than commodity servers. A 2x machine rarely costs 2x � it costs 3-5x because of premium hardware.
 - **Single point of failure.** If the machine dies, the system is down. Redundancy requires moving to horizontal scaling anyway.
 - **Planned downtime.** Upgrades require reboots (RAM, CPU replacement). This violates availability SLAs.
 
@@ -99,7 +99,7 @@ Vertical scaling is appropriate for legacy applications, stateful systems that c
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-Horizontal scaling adds more machines to the pool. Each machine handles a fraction of the workload. The system's total capacity is N Ã— (capacity of a single node) minus coordination overhead.
+Horizontal scaling adds more machines to the pool. Each machine handles a fraction of the workload. The system's total capacity is N � (capacity of a single node) minus coordination overhead.
 
 **Advantages:**
 - **Near-linear scalability** if the workload is partitionable. Load balancers + stateless app servers scale almost perfectly to hundreds of thousands of nodes.
@@ -118,7 +118,7 @@ Horizontal scaling adds more machines to the pool. Each machine handles a fracti
 
 ### L4 vs L7 Load Balancing
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -126,7 +126,7 @@ Load balancers operate at different layers of the OSI model:
 
 | Criterion | L4 (Transport) | L7 (Application) |
 |-----------|----------------|------------------|
-| OSI Layer | 4 â€” TCP/UDP | 7 â€” HTTP/HTTPS, gRPC |
+| OSI Layer | 4 � TCP/UDP | 7 � HTTP/HTTPS, gRPC |
 | Routing basis | IP address, port, protocol | URL path, HTTP headers, cookies, request body |
 | Performance | Very high (kernel-level forwarding, minimal overhead) | Moderate (must parse and potentially modify traffic) |
 | TLS termination | No (passes encrypted traffic through) | Yes (terminates TLS, can inspect plaintext) |
@@ -157,11 +157,11 @@ Load balancers operate at different layers of the OSI model:
 
 #### Round Robin
 
-Requests are distributed to servers in sequential order. Server 1 â†’ Server 2 â†’ Server 3 â†’ Server 1.
+Requests are distributed to servers in sequential order. Server 1 ? Server 2 ? Server 3 ? Server 1.
 
 ```
 Servers: [A, B, C]
-Request 1 â†’ A, Request 2 â†’ B, Request 3 â†’ C, Request 4 â†’ A, ...
+Request 1 ? A, Request 2 ? B, Request 3 ? C, Request 4 ? A, ...
 ```
 
 **Pros:** Simple, deterministic, no per-request computation overhead.
@@ -207,7 +207,7 @@ $$server_index = hash(client\_IP) \bmod N$$
 where N is the number of servers.
 
 **Pros:** Ensures the same client (from the same IP) is always sent to the same server. Provides "poor man's sticky sessions" without requiring cookies.
-**Cons:** If a server is added or removed, the hash modulus changes â€” most clients remap to different servers. This is the **remapping problem.** IP addresses behind NAT or proxy (corporate networks, mobile carriers) all hash to the same server, causing uneven distribution.
+**Cons:** If a server is added or removed, the hash modulus changes � most clients remap to different servers. This is the **remapping problem.** IP addresses behind NAT or proxy (corporate networks, mobile carriers) all hash to the same server, causing uneven distribution.
 
 #### Consistent Hashing
 
@@ -315,7 +315,7 @@ response: TTL=300, records=[203.0.113.2, 203.0.113.3, 203.0.113.1]
 
 Clients typically use the first IP address returned, so traffic distributes roughly evenly.
 
-**Problems:** DNS caching by ISPs and clients defeats distribution (a busy resolver caches the result for the full TTL, sending all its traffic to one IP). There is no server load awareness â€” a dead server is still returned until the TTL expires and the DNS record is updated.
+**Problems:** DNS caching by ISPs and clients defeats distribution (a busy resolver caches the result for the full TTL, sending all its traffic to one IP). There is no server load awareness � a dead server is still returned until the TTL expires and the DNS record is updated.
 
 #### Weighted DNS
 
@@ -334,9 +334,9 @@ Server B receives twice the traffic of A or C. Useful for heterogeneous data cen
 The DNS server examines the client's source IP (EDNS0 Client Subnet extension or resolver IP) and returns the IP of the nearest data center:
 
 ```
-Client in London â†’ returns eu-west-1 IP (10.1.1.1)
-Client in Tokyo â†’ returns ap-northeast-1 IP (10.3.1.1)
-Client in New York â†’ returns us-east-1 IP (10.2.1.1)
+Client in London ? returns eu-west-1 IP (10.1.1.1)
+Client in Tokyo ? returns ap-northeast-1 IP (10.3.1.1)
+Client in New York ? returns us-east-1 IP (10.2.1.1)
 ```
 
 **Pros:** Reduces latency by directing users to the closest region. Allows geo-specific content restrictions.
@@ -353,17 +353,17 @@ GSLB distributes traffic across data centers or cloud regions. It is the cross-r
 All data centers serve traffic simultaneously. Traffic is distributed based on geographic proximity, capacity, or health.
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚              Global DNS                â”‚
-â”‚        (Route53 / Cloud DNS)           â”‚
-â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-       â”‚                    â”‚
-       â–¼                    â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  us-east-1   â”‚   â”‚  eu-west-1   â”‚
-â”‚  (active)    â”‚   â”‚  (active)    â”‚
-â”‚  60% traffic â”‚   â”‚  40% traffic â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
++---------------------------------------+
+�              Global DNS                �
+�        (Route53 / Cloud DNS)           �
++----------------------------------------+
+       �                    �
+       ?                    ?
++--------------+   +--------------+
+�  us-east-1   �   �  eu-west-1   �
+�  (active)    �   �  (active)    �
+�  60% traffic �   �  40% traffic �
++--------------+   +--------------+
 ```
 
 **Pros:** Higher total capacity, lower latency for globally distributed users.
@@ -375,18 +375,18 @@ One region serves all traffic; the other region is on standby. On failure, traff
 
 ```
 Normal operation:
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  us-east-1   â”‚   â”‚  eu-west-1   â”‚
-â”‚  (active)    â”‚   â”‚  (passive)   â”‚
-â”‚  100% trafficâ”‚   â”‚   0 traffic  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
++--------------+   +--------------+
+�  us-east-1   �   �  eu-west-1   �
+�  (active)    �   �  (passive)   �
+�  100% traffic�   �   0 traffic  �
++--------------+   +--------------+
 
 After failover:
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  us-east-1   â”‚   â”‚  eu-west-1   â”‚
-â”‚  (down)      â”‚   â”‚  (active)    â”‚
-â”‚   0 traffic  â”‚   â”‚  100% trafficâ”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
++--------------+   +--------------+
+�  us-east-1   �   �  eu-west-1   �
+�  (down)      �   �  (active)    �
+�   0 traffic  �   �  100% traffic�
++--------------+   +--------------+
 ```
 
 **Pros:** Simpler (no cross-region replication for state; passive region can lag), cheaper (half the infrastructure is idle in normal operation).
@@ -421,8 +421,8 @@ The load balancer monitors real traffic to detect failures. If a server returns 
 
 ```
 Failure counter:
-  server A: 3 consecutive 502 errors â†’ mark unhealthy
-  server A: first successful response after unhealthy â†’ mark healthy
+  server A: 3 consecutive 502 errors ? mark unhealthy
+  server A: first successful response after unhealthy ? mark healthy
 ```
 
 **Pros:** Zero overhead (uses existing traffic). Detects application-layer failures.
@@ -434,13 +434,13 @@ The load balancer periodically sends synthetic requests (health probes) to each 
 
 ```
 Every 5 seconds, send GET /health to each server.
-- HTTP 200 + body "ok" â†’ healthy
-- HTTP 5xx or timeout after 2s â†’ unhealthy
-- After 3 consecutive failures â†’ remove from pool
-- After 2 consecutive successes â†’ return to pool
+- HTTP 200 + body "ok" ? healthy
+- HTTP 5xx or timeout after 2s ? unhealthy
+- After 3 consecutive failures ? remove from pool
+- After 2 consecutive successes ? return to pool
 ```
 
-**Pros:** Fast failure detection (independent of traffic volume). Proactive â€” catches failures before users see errors.
+**Pros:** Fast failure detection (independent of traffic volume). Proactive � catches failures before users see errors.
 **Cons:** Extra load on servers (must serve health requests). May over-flag servers under transient load spikes (require generous failure thresholds).
 
 ---
@@ -499,27 +499,27 @@ Sticky sessions (session affinity) means routing a client to the same applicatio
 Store session state in a shared, highly available data store:
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Client 1 â”‚   â”‚ Client 2 â”‚   â”‚ Client 3 â”‚
-â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜
-     â”‚             â”‚             â”‚
-     â–¼             â–¼             â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚           Load Balancer               â”‚
-â”‚         (round-robin or LC)           â”‚
-â””â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-   â”‚          â”‚          â”‚
-   â–¼          â–¼          â–¼
-â”Œâ”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”
-â”‚ S1  â”‚  â”‚ S2  â”‚  â”‚ S3  â”‚  â† all stateless
-â””â”€â”¬â”€â”€â”€â”˜  â””â”€â”¬â”€â”€â”€â”˜  â””â”€â”¬â”€â”€â”€â”˜
-  â”‚        â”‚        â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-           â–¼
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚  Redis    â”‚  â† session store
-    â”‚ (cluster) â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
++---------+   +---------+   +---------+
+� Client 1 �   � Client 2 �   � Client 3 �
++---------+   +---------+   +---------+
+     �             �             �
+     ?             ?             ?
++---------------------------------------+
+�           Load Balancer               �
+�         (round-robin or LC)           �
++---------------------------------------+
+   �          �          �
+   ?          ?          ?
++-----+  +-----+  +-----+
+� S1  �  � S2  �  � S3  �  ? all stateless
++-----+  +-----+  +-----+
+  �        �        �
+  +--------+--------+
+           ?
+    +-----------+
+    �  Redis    �  ? session store
+    � (cluster) �
+    +-----------+
 ```
 
 Any server can serve any request by reading/writing session data to Redis. This makes every request independent and enables true horizontal scaling.
@@ -530,9 +530,9 @@ Any server can serve any request by reading/writing session data to Redis. This 
 
 **AWS Elastic Load Balancer (ELB).** Three tiers: Classic Load Balancer (L4/L7 hybrid, legacy), Application Load Balancer (L7, HTTP/HTTPS, content-based routing, path patterns, host-based routing), Network Load Balancer (L4, ultra-low latency, TCP/UDP/TLS, handles millions of requests/second). ALB supports weighted target groups, stickiness via cookies, native WebSocket support.
 
-**Google Cloud Load Balancer.** Unlike AWS, GCLB is a single global anycast front-end â€” you create one load balancer that serves traffic across all regions. Traffic enters the Google Front End (GFE) at the nearest edge point-of-presence (POP) and is routed over Google's private network (not the public internet) to the backend. This eliminates public internet variability.
+**Google Cloud Load Balancer.** Unlike AWS, GCLB is a single global anycast front-end � you create one load balancer that serves traffic across all regions. Traffic enters the Google Front End (GFE) at the nearest edge point-of-presence (POP) and is routed over Google's private network (not the public internet) to the backend. This eliminates public internet variability.
 
-**Cloudflare Load Balancing.** Monitors origin server health, pools, geo-steering. Cloudflare uses Anycast for its own IP addresses â€” all 200+ data centers announce the same IPs, and traffic naturally goes to the nearest one. Their load balancer sits on top of this Anycast layer.
+**Cloudflare Load Balancing.** Monitors origin server health, pools, geo-steering. Cloudflare uses Anycast for its own IP addresses � all 200+ data centers announce the same IPs, and traffic naturally goes to the nearest one. Their load balancer sits on top of this Anycast layer.
 
 ---
 
@@ -556,10 +556,10 @@ Any server can serve any request by reading/writing session data to Redis. This 
 
 **Problem:** A Memcached cluster with 10 nodes. Adding one node should not invalidate all cached keys.
 
-**Solution â€” Consistent Hash Ring:**
+**Solution � Consistent Hash Ring:**
 - Hash space: 0 to 2^32-1 (circle)
 - Each server placed at 100 virtual node positions (random points on the ring)
-- Each key `cache_key` = `hash("product:12345")` â†’ find nearest clockwise server
+- Each key `cache_key` = `hash("product:12345")` ? find nearest clockwise server
 - Adding a cache node: add 100 virtual node positions. Only keys mapping to those ring intervals remap. Expected remap: ~1/11 of keys (not 10/11 as with naive hash).
 
 ```python
@@ -787,6 +787,131 @@ class AutoScaler {
 }
 ```
 
+
+### Implementation: CAP Theorem and Consistency Models
+
+```typescript
+class CAPTheorem { private nodes: Map<string, { consistent: boolean; available: boolean; partitionTolerant: boolean }> = new Map();
+  addNode(id: string, c: boolean, a: boolean, p: boolean): void { this.nodes.set(id, { consistent: c, available: a, partitionTolerant: p }); }
+  simulate(partition: boolean): Map<string, string> { const r = new Map<string, string>();
+    for (const [id, n] of this.nodes) {
+      if (partition && !n.partitionTolerant) { r.set(id, "DOWN"); continue; }
+      if (partition && n.consistent && n.available) { r.set(id, "CP: sacrifices availability"); continue; }
+      if (partition && !n.consistent && n.available) { r.set(id, "AP: sacrifices consistency"); continue; }
+      r.set(id, "OK"); } return r; }
+}
+class ConsistencyLevel { static readonly STRONG = "strong"; static readonly EVENTUAL = "eventual"; static readonly CAUSAL = "causal"; static readonly READ_YOUR_WRITES = "read-your-writes"; static readonly MONOTONIC = "monotonic";
+  describe(level: string): string { const descriptions: Record<string, string> = { "strong": "All reads see all writes immediately", "eventual": "All replicas converge eventually", "causal": "Causally related operations seen in order", "read-your-writes": "Always see your own writes", "monotonic": "Reads never go back in time" }; return descriptions[level] || "Unknown"; }
+}
+class QuorumSystem { constructor(private totalNodes: number, private writeQuorum: number, private readQuorum: number) {}
+  isAvailable(): boolean { return this.writeQuorum + this.readQuorum > this.totalNodes; }
+  maxFailures(): number { return this.totalNodes - Math.max(this.writeQuorum, this.readQuorum); }
+  estimateConsistency(readLatency: number, writeLatency: number): "strong" | "eventual" {
+    const stalenessThreshold = readLatency / writeLatency;
+    return stalenessThreshold < 0.5 ? "eventual" : "strong"; }
+}
+class VectorClock { private clock: Map<string, number> = new Map();
+  tick(node: string): void { this.clock.set(node, (this.clock.get(node) || 0) + 1); }
+  merge(other: VectorClock): void { for (const [k, v] of other.clock) { this.clock.set(k, Math.max(this.clock.get(k) || 0, v)); } }
+  compare(other: VectorClock): "before" | "after" | "concurrent" {
+    let thisAhead = false; let otherAhead = false;
+    for (const [k, v] of this.clock) { const ov = other.clock.get(k) || 0; if (v > ov) thisAhead = true; if (v < ov) otherAhead = true; }
+    for (const [k, v] of other.clock) { if (!this.clock.has(k)) otherAhead = true; }
+    if (thisAhead && !otherAhead) return "before"; if (!thisAhead && otherAhead) return "after"; return "concurrent"; }
+}
+```
+
+// scalability load balancing
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'scalability load balancing', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// scalability load balancing - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'scalability load balancing' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Vertical scaling adds resources to one machine; horizontal scaling adds more machines. Horizontal is the dominant pattern for internet-scale systems.
@@ -830,7 +955,7 @@ class AutoScaler {
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 You are designing a multi-region gaming platform that hosts real-time multiplayer matches. 50M DAU, each match lasts 10-30 minutes with 10-100 players. Players must be grouped by latency (all players in a match should have <100ms to the server). The platform must handle peak traffic (weekend evenings) at 5x average.
 
-1. Design a three-tier load-balancing architecture: DNS â†’ regional â†’ per-match. Specify the algorithm at each tier and justify each choice.
+1. Design a three-tier load-balancing architecture: DNS ? regional ? per-match. Specify the algorithm at each tier and justify each choice.
 2. The match server is stateful (player positions, game state). How do you handle persistence and failover without sticky sessions? Propose an architecture.
 3. During a regional outage, the active data center in us-east-1 goes down. A player in a match in progress is disconnected. Describe how the passive region takes over and what happens to the in-flight match. What data loss, if any, is acceptable?
 4. Compute auto-scaling parameters: target CPU, cooldown times, scale-up factor (add N or double?), scale-down factor. Base your reasoning on match duration and server boot-up time (assume 90 seconds to warm a game server).

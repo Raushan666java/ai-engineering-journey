@@ -284,7 +284,7 @@ rmse = evaluator.evaluate(test_pred)
 print(f"Best model test RMSE: {rmse:.4f}")
 ```
 
-> **Warning:** Cross-validation with large param grids is expensive. A grid of 3×3 with 5 folds = 45 model training runs. Always start with a coarse grid (2×2) and narrow down, or use `parallelism` to run folds in parallel (but watch for resource contention).
+> **Warning:** Cross-validation with large param grids is expensive. A grid of 3?3 with 5 folds = 45 model training runs. Always start with a coarse grid (2?2) and narrow down, or use `parallelism` to run folds in parallel (but watch for resource contention).
 
 > **One-Sentence Takeaway:** CrossValidator enables distributed hyperparameter tuning across the cluster, but param grid size must be balanced against training time and cluster resources.
 
@@ -307,7 +307,7 @@ spark = SparkSession.builder \
 df = spark.read.parquet("s3://bucket/features/*.parquet")
 print(f"Training data: {df.count():,} rows")
 
-# Distributed training — each executor trains on its partition
+# Distributed training ? each executor trains on its partition
 lr = LinearRegression(maxIter=100, regParam=0.01)
 model = lr.fit(df)  # Runs in parallel across 200 executors
 
@@ -353,7 +353,7 @@ with open("/tmp/model_params.json", "w") as f:
 ### 4.7.3 Converting to ONNX for production
 
 ```python
-# MLlib → ONNX requires intermediate conversion via sklearn
+# MLlib ? ONNX requires intermediate conversion via sklearn
 # Best practice: use MLlib for training, export coefficients
 # to a lightweight serving framework (Flask/FastAPI)
 
@@ -412,7 +412,7 @@ for i, center in enumerate(centers):
 | Pipeline | Chains multiple Transformers and Estimators | Single fit/transform call for complete workflow | End-to-end ML workflow |
 | ParamGrid | Hyperparameter grid for tuning | Defines combinations to search | Cross-validator configuration |
 | Pandas UDF | Vectorized UDF using Arrow serialization | 10-100x faster than row-based UDFs | Batch inference, PyTorch integration |
-| CrossValidator | Distributed k-fold cross-validation | numFolds × param combinations = total fits | Model selection at scale |
+| CrossValidator | Distributed k-fold cross-validation | numFolds ? param combinations = total fits | Model selection at scale |
 
 ## Quick Reference
 
@@ -505,8 +505,8 @@ flowchart LR
         R[CSV / Parquet]
     end
     subgraph Pipeline["ML Pipeline"]
-        A[StringIndexer<br>color → 0,1,2] --> B[OneHotEncoder<br>0 → 100]
-        B --> C[VectorAssembler<br>features → vector]
+        A[StringIndexer<br>color ? 0,1,2] --> B[OneHotEncoder<br>0 ? 100]
+        B --> C[VectorAssembler<br>features ? vector]
         C --> D[StandardScaler<br>mean=0, std=1]
         D --> E[RandomForest<br>numTrees=100]
     end
@@ -515,7 +515,7 @@ flowchart LR
     end
     Raw --> Pipeline
     E --> F
-    F --> G{AUC ≥ 0.85?}
+    F --> G{AUC = 0.85?}
     G -->|Yes| H[Save Model]
     G -->|No| I[Tune Hyperparams]
     I --> D
@@ -523,7 +523,7 @@ flowchart LR
 
 ## 4.11 TypeScript ML Pipeline Simulator
 
-The following TypeScript classes simulate Spark MLlib's pipeline API — Transformers, Estimators, Pipelines, and CrossValidator — to demonstrate the concepts without a cluster.
+The following TypeScript classes simulate Spark MLlib's pipeline API ? Transformers, Estimators, Pipelines, and CrossValidator ? to demonstrate the concepts without a cluster.
 
 ### Transformer & Pipeline Classes
 
@@ -548,7 +548,7 @@ function col(df: DataFrame, name: string): unknown[] {
   return df.map(r => r[name]);
 }
 
-// ─── Transformers ──────────────────────────────────────────
+// --- Transformers ------------------------------------------
 
 class VectorAssembler implements Transformer {
   constructor(private inputCols: string[], private outputCol: string) {}
@@ -599,7 +599,7 @@ class StandardScaler implements Transformer {
   }
 }
 
-// ─── Estimators ────────────────────────────────────────────
+// --- Estimators --------------------------------------------
 
 class LinearRegression implements Estimator {
   private weights: number[] = [];
@@ -689,7 +689,7 @@ class RandomForestClassifier implements Estimator {
   }
 }
 
-// ─── Pipeline ──────────────────────────────────────────────
+// --- Pipeline ----------------------------------------------
 
 class Pipeline implements Estimator {
   constructor(private stages: (Transformer | Estimator)[]) {}
@@ -721,7 +721,7 @@ class Pipeline implements Estimator {
   }
 }
 
-// ─── Evaluators ────────────────────────────────────────────
+// --- Evaluators --------------------------------------------
 
 class RegressionEvaluator implements Evaluator {
   evaluate(df: DataFrame, labelCol: string, predictionCol: string): number {
@@ -754,7 +754,7 @@ class BinaryClassificationEvaluator implements Evaluator {
   }
 }
 
-// ─── Cross-Validator ───────────────────────────────────────
+// --- Cross-Validator ---------------------------------------
 
 class CrossValidator {
   constructor(private config: {
@@ -796,7 +796,7 @@ class CrossValidator {
   }
 }
 
-// ─── Demo: Full ML Pipeline ────────────────────────────────
+// --- Demo: Full ML Pipeline --------------------------------
 
 // Generate synthetic dataset
 const data: DataFrame = Array.from({ length: 1000 }, (_, id) => ({
@@ -940,12 +940,104 @@ console.log("Model formula:", modelCode);
 ```
 ```
 
+
+// spark mllib
+// hadoop-spark-ecosystem implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'spark mllib', data: { topic: 'hadoop-spark-ecosystem' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// spark mllib - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'big-data-ecosystem demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'big-data', chapter: 'spark mllib' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('big-data-ecosystem'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - MLlib provides a DataFrame-based pipeline API for scalable ML.
 - Feature transformers (VectorAssembler, StringIndexer, StandardScaler) handle preprocessing at scale.
 - CrossValidator runs distributed k-fold validation across the cluster.
-- MLlib models train in a distributed fashion — larger clusters mean faster training.
+- MLlib models train in a distributed fashion ? larger clusters mean faster training.
 - For production inference, export model coefficients to lightweight serving frameworks.
 - Pandas UDFs bridge the gap between Spark and Python ML libraries (sklearn, PyTorch).
 
@@ -958,6 +1050,6 @@ console.log("Model formula:", modelCode);
 5. Use Pandas UDFs to train a PyTorch model on each partition of a grouped DataFrame.
 6. Extend the TypeScript `VectorAssembler` to support a `handleInvalid` option that can skip, error, or keep invalid rows.
 7. Implement a `OneHotEncoder` Transformer in TypeScript that converts indexed categories into binary vectors, then test it on `["red","blue","green","red"]`.
-8. Use the `Pipeline` class to build a multi-stage pipeline: StringIndexer → OneHotEncoder → VectorAssembler → StandardScaler, and verify the output schema.
+8. Use the `Pipeline` class to build a multi-stage pipeline: StringIndexer ? OneHotEncoder ? VectorAssembler ? StandardScaler, and verify the output schema.
 9. Write a function that computes the total training cost (in estimated dollar terms) for a CrossValidator run with 5 param combinations, 3 folds, on a 50-executor cluster where each model takes 2 minutes to train.
 10. Implement a `TrainValidationSplit` class (single train/test split instead of k-fold) and compare its results with `CrossValidator` on the same dataset.

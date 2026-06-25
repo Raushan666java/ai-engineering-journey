@@ -19,9 +19,9 @@ After completing this chapter, students will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| VM Models | EC2, Azure VMs, GCE — same concept, different implementations | Choose provider by integrated services, not VM features |
+| VM Models | EC2, Azure VMs, GCE ? same concept, different implementations | Choose provider by integrated services, not VM features |
 | Instance Families | General purpose, Compute, Memory, Storage, GPU | Match instance type to workload profile |
-| Pricing Models | On-Demand, Spot, Reserved, Dedicated | Mix models to optimize cost: baseline → Reserved, spikes → On-Demand, batch → Spot |
+| Pricing Models | On-Demand, Spot, Reserved, Dedicated | Mix models to optimize cost: baseline ? Reserved, spikes ? On-Demand, batch ? Spot |
 | Scaling | Auto Scaling Groups, Scale Sets, MIGs | Horizontal scaling is the cloud-native approach |
 | Storage Types | Ephemeral (instance store) vs Persistent (EBS/PD) | Never store critical data on ephemeral volumes |
 | Load Balancing | L4 (network) vs L7 (application) | Use L7 for HTTP apps, L4 for ultra-low latency |
@@ -43,7 +43,7 @@ flowchart LR
 
 ### 3.1 The Virtual Machine Model in the Cloud
 
-Cloud compute services provide resizable, on-demand virtual machine (VM) instances. These services form the fundamental "Infrastructure as a Service" (IaaS) layer. While the underlying hypervisors vary — AWS uses Nitro (KVM-based), Azure uses Hyper-V, and GCP uses KVM — the abstraction provided to the consumer is a consistent set of virtual CPU (vCPU), memory, storage, and networking resources.
+Cloud compute services provide resizable, on-demand virtual machine (VM) instances. These services form the fundamental "Infrastructure as a Service" (IaaS) layer. While the underlying hypervisors vary ? AWS uses Nitro (KVM-based), Azure uses Hyper-V, and GCP uses KVM ? the abstraction provided to the consumer is a consistent set of virtual CPU (vCPU), memory, storage, and networking resources.
 
 The primary advantage of cloud compute is the shift from physical hardware procurement to software-defined provisioning. This enables "just-in-time" infrastructure where resources are created in seconds and terminated when no longer needed, supporting the cloud's core promise of agility and elasticity.
 
@@ -403,7 +403,7 @@ aws autoscaling put-scaling-policy \
   --target-tracking-configuration "{\"TargetValue\": 50.0, \"PredefinedMetricSpecification\": {\"PredefinedMetricType\": \"ASGAverageCPUUtilization\"}}"
 ```
 
-### Example 3.3: TypeScript AWS SDK — Launch Instances
+### Example 3.3: TypeScript AWS SDK ? Launch Instances
 
 ```typescript
 import { EC2, AutoScaling, ElasticLoadBalancingV2 } from "@aws-sdk/client-ec2";
@@ -482,7 +482,7 @@ async function createLoadBalancer(name: string, subnetIds: string[], vpcId: stri
 export { launchInstances, configureScaling, createLoadBalancer };
 ```
 
-> **One-Sentence Takeaway:** Cloud compute is about matching the right instance family, pricing model, and scaling strategy to your workload — the cheapest instance is the one you don't leave running idle.
+> **One-Sentence Takeaway:** Cloud compute is about matching the right instance family, pricing model, and scaling strategy to your workload ? the cheapest instance is the one you don't leave running idle.
 
 > **Pro Tip:** For cost optimization, always start with Reserved Instances (or Savings Plans) for baseline capacity and use Spot Instances for fault-tolerant batch workloads. This combination can reduce compute costs by 50-70%.
 
@@ -554,7 +554,7 @@ export { launchInstances, configureScaling, createLoadBalancer };
 
 <details>
 <summary>Answer</summary>
-**B) Persistent Block Storage.** Instance store data is lost when the VM stops or terminates. Persistent block storage survives VM lifecycle events and supports snapshots, replication, and independent resizing — essential for databases.
+**B) Persistent Block Storage.** Instance store data is lost when the VM stops or terminates. Persistent block storage survives VM lifecycle events and supports snapshots, replication, and independent resizing ? essential for databases.
 </details>
 
 4. Which auto-scaling strategy is best for an application with predictable peak traffic every weekday at 9 AM?
@@ -727,6 +727,98 @@ console.log("Recommended under $100/month:", iv.recommendMonthly({ minCores: 2, 
 ```
 ```
 
+
+// cloud compute
+// iaas-paas-saas-cloud-native implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'cloud compute', data: { topic: 'iaas-paas-saas-cloud-native' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// cloud compute - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'cloud-services demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'cloud-computing', chapter: 'cloud compute' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('cloud-services'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Cloud compute provides virtualized hardware (IaaS) through VMs.

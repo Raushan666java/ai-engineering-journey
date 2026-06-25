@@ -100,7 +100,7 @@ $$f'(z) = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x} = \frac
 
 **Properties of Analytic Functions:**
 - $u$ and $v$ are **harmonic**: $\nabla^2 u = u_{xx} + u_{yy} = 0$, $\nabla^2 v = 0$
-- $u$ and $v$ are **harmonic conjugates** — they satisfy both CR equations
+- $u$ and $v$ are **harmonic conjugates** ? they satisfy both CR equations
 - Analytic functions are infinitely differentiable
 - If $f'(z) = 0$ everywhere in a domain, then $f$ is constant
 - **Identity Theorem:** If two analytic functions agree on a set with a limit point, they're identical
@@ -206,7 +206,7 @@ The **principal part** is $\sum_{n=-\infty}^{-1} a_n (z - z_0)^n$ (negative powe
 
 **Pole of order $m$:** $f(z) = \frac{g(z)}{(z - z_0)^m}$ where $g$ is analytic and $g(z_0) \neq 0$.
 
-**Essential Singularity:** Picard's Theorem — in any neighborhood of an essential singularity, $f$ takes every complex value (except possibly one) infinitely often.
+**Essential Singularity:** Picard's Theorem ? in any neighborhood of an essential singularity, $f$ takes every complex value (except possibly one) infinitely often.
 
 **Branch Points:** Points where a multi-valued function (like $\sqrt{z}$ or $\log z$) cannot be made single-valued continuously.
 
@@ -234,7 +234,7 @@ $$\text{Res}(f, z_0) = \frac{1}{(m-1)!} \lim_{z \to z_0} \frac{d^{m-1}}{dz^{m-1}
 
 $$\oint_C f(z)\,dz = 2\pi i \sum_{k=1}^n \text{Res}(f, z_k)$$
 
-This is one of the most powerful results in all of mathematics — it reduces contour integrals to the sum of residues at singular points.
+This is one of the most powerful results in all of mathematics ? it reduces contour integrals to the sum of residues at singular points.
 
 ### 5.10 Evaluation of Real Integrals
 
@@ -264,7 +264,7 @@ $$\int_0^{2\pi} F(\cos\theta, \sin\theta)\,d\theta = \oint_{|z|=1} f(z)\,dz = 2\
 
 **Fluid Dynamics:** Complex potential $\Phi(z) = \phi + i\psi$ where $\phi$ is velocity potential and $\psi$ is stream function.
 
-**Electrostatics:** Complex electric field $E(z) = E_x - iE_y$ — analytic functions solve 2D electrostatic problems.
+**Electrostatics:** Complex electric field $E(z) = E_x - iE_y$ ? analytic functions solve 2D electrostatic problems.
 
 **Conformal Mapping:** Analytic functions preserve angles. Used to map complicated domains to simpler ones for solving PDEs. The map $w = f(z)$ where $f$ is analytic is conformal wherever $f'(z) \neq 0$.
 
@@ -437,10 +437,10 @@ function exp(z: Complex): Complex {
   return { re: r * Math.cos(z.im), im: r * Math.sin(z.im) };
 }
 
-// Euler's formula: e^(iπ) = -1
+// Euler's formula: e^(ip) = -1
 const euler = exp({ re: 0, im: Math.PI });
-console.log(`e^(iπ) = ${euler.re.toFixed(6)} + ${euler.im.toFixed(6)}i`);
-// ≈ -1 + 0i
+console.log(`e^(ip) = ${euler.re.toFixed(6)} + ${euler.im.toFixed(6)}i`);
+// ? -1 + 0i
 
 // Roots of unity: z^4 = 1
 function rootsOfUnity(n: number): Complex[] {
@@ -454,9 +454,9 @@ function rootsOfUnity(n: number): Complex[] {
 
 const z4roots = rootsOfUnity(4);
 z4roots.forEach((z, i) =>
-  console.log(`ω${i} = ${z.re.toFixed(4)} + ${z.im.toFixed(4)}i`)
+  console.log(`?${i} = ${z.re.toFixed(4)} + ${z.im.toFixed(4)}i`)
 );
-// ω0 = 1 + 0i, ω1 = 0 + 1i, ω2 = -1 + 0i, ω3 = 0 - 1i
+// ?0 = 1 + 0i, ?1 = 0 + 1i, ?2 = -1 + 0i, ?3 = 0 - 1i
 ```
 
 ### Numerical Contour Integration
@@ -488,7 +488,7 @@ function contourIntegral(
   return { re: sumRe, im: sumIm };
 }
 
-// Integrate f(z) = 1/z around unit circle → should be 2πi
+// Integrate f(z) = 1/z around unit circle ? should be 2pi
 const unitCircle = (t: number): Complex => ({
   re: Math.cos(t), im: Math.sin(t)
 });
@@ -498,8 +498,8 @@ const fInverse = (z: Complex): Complex => {
 };
 
 const resultCI = contourIntegral(fInverse, unitCircle, 0, 2 * Math.PI);
-console.log(`∮ 1/z dz = ${resultCI.re.toFixed(4)} + ${resultCI.im.toFixed(4)}i`);
-// Expected: ≈ 0 + 6.2832i (= 2πi)
+console.log(`? 1/z dz = ${resultCI.re.toFixed(4)} + ${resultCI.im.toFixed(4)}i`);
+// Expected: ? 0 + 6.2832i (= 2pi)
 ```
 
 ## Real-World Application: Signal Processing with Analytic Signals
@@ -513,11 +513,11 @@ where $\hat{x}(t)$ is the Hilbert transform. The analytic signal enables:
 - **Instantaneous phase:** $\phi(t) = \arg(x_a(t))$
 - **Instantaneous frequency:** $\omega(t) = \phi'(t)$
 
-**Connection to Complex Analysis:** The analytic signal $x_a(t)$ is the boundary value of an analytic function in the upper half-plane. This is a direct application of Cauchy's integral formula — the real and imaginary parts are harmonic conjugates.
+**Connection to Complex Analysis:** The analytic signal $x_a(t)$ is the boundary value of an analytic function in the upper half-plane. This is a direct application of Cauchy's integral formula ? the real and imaginary parts are harmonic conjugates.
 
 **FFT-Based Computation:** The Hilbert transform is efficiently computed by taking the FFT, zeroing negative frequencies, doubling positive frequencies (except DC and Nyquist), and inverse transforming. This produces a complex signal where real and imaginary parts satisfy the Cauchy-Riemann equations.
 
-**AM Demodulation:** For an AM signal $x(t) = A(t)\cos(\omega_c t)$, the analytic signal is $x_a(t) = A(t)e^{i\omega_c t}$, and the envelope $A(t) = |x_a(t)|$ is recovered by taking the modulus — a direct result of the polar representation of complex numbers.
+**AM Demodulation:** For an AM signal $x(t) = A(t)\cos(\omega_c t)$, the analytic signal is $x_a(t) = A(t)e^{i\omega_c t}$, and the envelope $A(t) = |x_a(t)|$ is recovered by taking the modulus ? a direct result of the polar representation of complex numbers.
 
 - Complex numbers extend reals with $i^2 = -1$; polar and exponential forms simplify multiplication/division
 - Analytic functions satisfy Cauchy-Riemann equations and are infinitely differentiable
@@ -525,7 +525,7 @@ where $\hat{x}(t)$ is the Hilbert transform. The analytic signal enables:
 - Cauchy's integral formula: value inside circle determined by boundary values
 - Laurent series includes negative powers; principal part classifies singularities
 - Removable singularities, poles, and essential singularities determined by Laurent series
-- Residue theorem: $\oint f = 2\pi i \sum \text{Res}$ — the fundamental computational tool
+- Residue theorem: $\oint f = 2\pi i \sum \text{Res}$ ? the fundamental computational tool
 - Real definite integrals computed via contour integration and residue theorem
 - Conformal mapping uses analytic functions to solve PDEs on complicated domains
 - Control stability determined by pole locations in complex plane
@@ -550,7 +550,7 @@ function laurentCoeff(
   f: (z: Complex, re: number, im: number) => Complex,
   z0: Complex, n: number, M: number
 ): Complex {
-  // aₙ = (1/2πi) ∮ f(z)/(z-z₀)^{n+1} dz — numerical contour integral
+  // a? = (1/2pi) ? f(z)/(z-z0)^{n+1} dz ? numerical contour integral
   const r = 0.3;
   let sum = new Complex(0, 0);
   for (let k = 0; k < M; k++) {
@@ -566,7 +566,7 @@ function laurentCoeff(
 ### TypeScript: Residue Calculator and Contour Integration
 
 ```typescript
-// Residue at simple pole via limit: Res(f,z₀) = lim_{z→z₀} (z-z₀)f(z)
+// Residue at simple pole via limit: Res(f,z0) = lim_{z?z0} (z-z0)f(z)
 function residueSimple(f: (z: Complex, re: number, im: number) => Complex, z0: Complex, eps: number = 1e-6): Complex {
   const zp = new Complex(z0.re + eps, z0.im);
   const zm = new Complex(z0.re - eps, z0.im);
@@ -589,22 +589,22 @@ function contourIntegral(
   return sum;
 }
 
-// Example: f(z) = e^z / (z - 1). Pole at z=1, Res = e¹ ≈ 2.71828
+// Example: f(z) = e^z / (z - 1). Pole at z=1, Res = e? ? 2.71828
 const fEx = (z: Complex, _re: number, _im: number) =>
   new Complex(Math.exp(z.re) * Math.cos(z.im), Math.exp(z.re) * Math.sin(z.im)).div(z.sub(new Complex(1, 0)));
 const res = residueSimple(fEx, new Complex(1, 0));
 console.log(`Res(e^z/(z-1), 1): ${res.re.toFixed(4)} + ${res.im.toFixed(4)}i (expected: 2.7183 + 0i)`);
 
-// Verify residue theorem: ∮ f(z) dz = 2πi · Res = 2πi · e ≈ 17.079i
+// Verify residue theorem: ? f(z) dz = 2pi ? Res = 2pi ? e ? 17.079i
 const ci = contourIntegral(fEx, new Complex(1, 0), 0.5, 5000);
 const expected = new Complex(0, 2 * Math.PI).mul(new Complex(Math.E, 0));
-console.log(`∮ e^z/(z-1) dz: ${ci.re.toFixed(4)} + ${ci.im.toFixed(4)}i (expected: ${expected.re.toFixed(4)} + ${expected.im.toFixed(4)}i)`);
+console.log(`? e^z/(z-1) dz: ${ci.re.toFixed(4)} + ${ci.im.toFixed(4)}i (expected: ${expected.re.toFixed(4)} + ${expected.im.toFixed(4)}i)`);
 
-// Example 2: f(z) = 1/(z²+1) = 1/((z-i)(z+i)). Res at z=i: Res = 1/(2i) = -i/2
+// Example 2: f(z) = 1/(z?+1) = 1/((z-i)(z+i)). Res at z=i: Res = 1/(2i) = -i/2
 const fPole = (z: Complex, _re: number, _im: number) =>
   new Complex(1, 0).div(new Complex(z.re * z.re - z.im * z.im + 1, 2 * z.re * z.im));
 const resI = residueSimple(fPole, new Complex(0, 1));
-console.log(`Res(1/(z²+1), i): ${resI.re.toFixed(4)} + ${resI.im.toFixed(4)}i (expected: 0 - 0.5i)`);
+console.log(`Res(1/(z?+1), i): ${resI.re.toFixed(4)} + ${resI.im.toFixed(4)}i (expected: 0 - 0.5i)`);
 
 // Map complex grid: output magnitude for visualization purposes
 function complexMagnitudeGrid(f: (z: Complex, re: number, im: number) => Complex, size: number): number[][] {
@@ -618,9 +618,9 @@ function complexMagnitudeGrid(f: (z: Complex, re: number, im: number) => Complex
   }
   return grid;
 }
-// Example: |f(z)| for f(z) = z² on [-2,2]×[-2,2]
+// Example: |f(z)| for f(z) = z? on [-2,2]?[-2,2]
 const z2grid = complexMagnitudeGrid((z) => z.mul(z), 5);
-console.log("|z²| grid (5×5 sample):", z2grid.map(r => r.map(v => v.toFixed(1))));
+console.log("|z?| grid (5?5 sample):", z2grid.map(r => r.map(v => v.toFixed(1))));
 ```
 
 ## Exercises
@@ -651,7 +651,7 @@ console.log("|z²| grid (5×5 sample):", z2grid.map(r => r.map(v => v.toFixed(1)
 
 7. **Residue Computation:** Find the residue of $f(z) = \frac{e^z}{(z-1)^3}$ at $z = 1$.
 
-8. **Möbius Transformation:** Find a Möbius transformation mapping the unit disk $|z| < 1$ to the upper half-plane $\text{Im}(w) > 0$. Show that it maps the boundary $|z| = 1$ to $\text{Im}(w) = 0$.
+8. **M?bius Transformation:** Find a M?bius transformation mapping the unit disk $|z| < 1$ to the upper half-plane $\text{Im}(w) > 0$. Show that it maps the boundary $|z| = 1$ to $\text{Im}(w) = 0$.
 
 ### Challenge Problem
 
@@ -723,17 +723,17 @@ function mandelbrotGrid(width: number, height: number, xMin: number, xMax: numbe
   return grid;
 }
 const mGrid = mandelbrotGrid(5, 5, -2, 1, -1.5, 1.5);
-console.log('Mandelbrot set (5×5 sample):');
-mGrid.forEach(r => console.log('  [' + r.map(v => v >= 100 ? '█' : '·').join(' ') + ']'));
+console.log('Mandelbrot set (5?5 sample):');
+mGrid.forEach(r => console.log('  [' + r.map(v => v >= 100 ? '?' : '?').join(' ') + ']'));
 
 // --- Complex Exponentiation ---
 function complexPow(z: Complex, n: number): Complex {
   if (n === 0) return new Complex(1, 0);
-  const r = z.mag(), θ = z.arg();
-  return new Complex(Math.pow(r, n) * Math.cos(n * θ), Math.pow(r, n) * Math.sin(n * θ));
+  const r = z.mag(), ? = z.arg();
+  return new Complex(Math.pow(r, n) * Math.cos(n * ?), Math.pow(r, n) * Math.sin(n * ?));
 }
 const z3 = complexPow(new Complex(1, 1), 3);
-console.log('\n(1+i)³:', z3.re.toFixed(2), '+', z3.im.toFixed(2), 'i (expected: -2 + 2i)');
+console.log('\n(1+i)?:', z3.re.toFixed(2), '+', z3.im.toFixed(2), 'i (expected: -2 + 2i)');
 
 // --- Complex Roots of Unity ---
 function rootsOfUnity(n: number): Complex[] {
@@ -754,28 +754,120 @@ function radiusOfConvergence(seq: number[]): number {
   }
   return lastRatio > 0 ? 1 / lastRatio : Infinity;
 }
-// a_n = 1/n! → R = ∞ (entire function, like e^z)
+// a_n = 1/n! ? R = 8 (entire function, like e^z)
 const factSeq = Array.from({ length: 10 }, (_, n) => 1 / Array.from({ length: n }, (_, i) => i + 1).reduce((a, b) => a * b, 1));
-console.log('\nRadius of convergence (e^z):', radiusOfConvergence(factSeq).toFixed(1), '(expected: ∞)');
+console.log('\nRadius of convergence (e^z):', radiusOfConvergence(factSeq).toFixed(1), '(expected: 8)');
 
-// --- Möbius Transformation Checker ---
+// --- M?bius Transformation Checker ---
 function mobiusTransform(z: Complex, a: number, b: number, c: number, d: number): Complex {
   const num = new Complex(a, 0).mul(z).add(new Complex(b, 0));
   const den = new Complex(c, 0).mul(z).add(new Complex(d, 0));
   return num.div(den);
 }
 const w = mobiusTransform(new Complex(1, 0), 1, 0, 0, 1); // identity: w = z
-console.log('\nMöbius w=z (identity):', `(${w.re}, ${w.im})`);
+console.log('\nM?bius w=z (identity):', `(${w.re}, ${w.im})`);
 
 // --- Laurent Expansion Simulator (1/(z-1) around z=0) ---
 function laurentSample(z: Complex): Complex {
-  // 1/(z-1) = -(1 + z + z² + z³ + ...) for |z| < 1
+  // 1/(z-1) = -(1 + z + z? + z? + ...) for |z| < 1
   return new Complex(0, 0).sub(new Complex(1, 0)).div(new Complex(z.re - 1, z.im));
 }
 const laurentVal = laurentSample(new Complex(0.5, 0));
 console.log('Laurent |z|<1: 1/(0.5-1):', laurentVal.re.toFixed(4));
 ```
 
+
+// complex analysis
+// linear-algebra-calculus implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'complex analysis', data: { topic: 'linear-algebra-calculus' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// complex analysis - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'engineering-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'engineering-mathematics', chapter: 'complex analysis' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('engineering-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Notation Reference
 
 | Symbol | Meaning |

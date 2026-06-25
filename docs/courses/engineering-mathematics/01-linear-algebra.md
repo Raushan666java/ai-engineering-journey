@@ -199,7 +199,7 @@ Geometrically, $v$ is a direction that $A$ only stretches (not rotates).
 
 The roots of this polynomial are the eigenvalues.
 
-**Eigenspace:** The null space of $A - \lambda I$ — all eigenvectors corresponding to $\lambda$ (plus the zero vector).
+**Eigenspace:** The null space of $A - \lambda I$ ? all eigenvectors corresponding to $\lambda$ (plus the zero vector).
 
 **Properties:**
 - $\text{tr}(A) = \sum \lambda_i$ (sum of eigenvalues)
@@ -481,9 +481,9 @@ function svd2x2(A: Matrix): { U: Matrix; S: Matrix; V: Matrix } {
 
 const B: Matrix = [[3, 1], [1, 3]];
 const { U, S, V } = svd2x2(B);
-console.log(`σ₁ = ${S[0][0].toFixed(4)}, σ₂ = ${S[1][1].toFixed(4)}`);
-console.log(`U₁ = [${U[0].map(x => x.toFixed(4)).join(', ')}]`);
-console.log(`V₁ = [${V[0].map(x => x.toFixed(4)).join(', ')}]`);
+console.log(`s1 = ${S[0][0].toFixed(4)}, s2 = ${S[1][1].toFixed(4)}`);
+console.log(`U1 = [${U[0].map(x => x.toFixed(4)).join(', ')}]`);
+console.log(`V1 = [${V[0].map(x => x.toFixed(4)).join(', ')}]`);
 ```
 
 ## Real-World Application: Principal Component Analysis (PCA)
@@ -519,7 +519,7 @@ function rankKApprox(A: Matrix, k: number): Matrix {
 }
 ```
 
-Storage savings: $m \times n$ original → $k(m + n + 1)$ with SVD. For $1000 \times 1000$ at $k = 100$: $1,000,000$ → $100(1000 + 1000 + 1) = 200,100$, a 5x compression.
+Storage savings: $m \times n$ original ? $k(m + n + 1)$ with SVD. For $1000 \times 1000$ at $k = 100$: $1,000,000$ ? $100(1000 + 1000 + 1) = 200,100$, a 5x compression.
 
 ### TypeScript Implementation: QR Decomposition via Gram-Schmidt
 
@@ -587,10 +587,10 @@ function powerIter(A: Mat, maxIter: number = 1000, tol: number = 1e-10): { eigen
 // Demos
 const A: Mat = [[1, 1, 1], [1, 0, 2], [1, 2, 0]];
 const { Q, R } = qrDec(A);
-console.log("QR: Q × R ≈ A?", Q.map((r, i) => r.reduce((s, _, k) => s + (R[i].reduce((ss, rr, kk) => ss + rr * Q[kk][i], 0) - A[i][k]) ** 2, 0)).every(e => e < 1e-10) ? "YES ✓" : "NO ✗");
+console.log("QR: Q ? R ? A?", Q.map((r, i) => r.reduce((s, _, k) => s + (R[i].reduce((ss, rr, kk) => ss + rr * Q[kk][i], 0) - A[i][k]) ** 2, 0)).every(e => e < 1e-10) ? "YES ?" : "NO ?");
 
 const { eigenvalue } = powerIter([[2, 1], [1, 2]]);
-console.log(`Power iteration λ≈${eigenvalue.toFixed(4)} (expected: 3 — max eigenvalue of [[2,1],[1,2]])`);
+console.log(`Power iteration ??${eigenvalue.toFixed(4)} (expected: 3 ? max eigenvalue of [[2,1],[1,2]])`);
 
 const { L, U } = luDec([[4, 3], [6, 3]]);
 console.log(`LU: det = ${L.map((r, i) => r.reduce((p, l, j) => p * (i === j ? U[i][j] : 1), 1)).reduce((a, b) => a * b, 1)} (should be -6)`);
@@ -685,6 +685,98 @@ const colA = [[1, 2, 3], [2, 4, 6], [0, 0, 1]];
 console.log('Column space basis vectors:', columnSpace(colA).length);
 ```
 
+
+// linear algebra
+// linear-algebra-calculus implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'linear algebra', data: { topic: 'linear-algebra-calculus' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// linear algebra - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'engineering-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'engineering-mathematics', chapter: 'linear algebra' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('engineering-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - A matrix is a linear transformation; matrix multiplication composes transformations

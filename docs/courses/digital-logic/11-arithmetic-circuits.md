@@ -1,7 +1,7 @@
 # Chapter 11: Arithmetic Circuits
 
-> **Prereq:** Chapter 5 (Combinational Circuits) — adders and ALUs provide the foundation for multiplication and division.
-> **Next:** Chapter 12 (Hardware Description Languages) — arithmetic circuits are described in HDL for synthesis.
+> **Prereq:** Chapter 5 (Combinational Circuits) ? adders and ALUs provide the foundation for multiplication and division.
+> **Next:** Chapter 12 (Hardware Description Languages) ? arithmetic circuits are described in HDL for synthesis.
 
 ## Learning Objectives
 
@@ -21,13 +21,13 @@ Multiplication of two N-bit numbers produces a 2N-bit result:
 
 ```
        1 0 1 1   (11, multiplicand)
-     × 1 1 0 1   (13, multiplier)
-     ─────────
+     ? 1 1 0 1   (13, multiplier)
+     ---------
        1 0 1 1   (partial product 0)
      0 0 0 0     (partial product 1)
    1 0 1 1       (partial product 2)
 + 1 0 1 1        (partial product 3)
-─────────────
+-------------
  1 0 0 0 1 1 1 1   (143)
 ```
 
@@ -37,19 +37,19 @@ The simplest parallel multiplier generates all partial products in parallel and 
 
 ```mermaid
 graph TD
-    A0[A₀] --> AND00[&]
-    B0[B₀] --> AND00
+    A0[A0] --> AND00[&]
+    B0[B0] --> AND00
     A0 --> AND01[&]
-    B1[B₁] --> AND01
+    B1[B1] --> AND01
     A0 --> AND02[&]
-    B2[B₂] --> AND02
+    B2[B2] --> AND02
     AND00 --> HA0[HA]
     AND01 --> HA0
     AND01 --> FA0[FA]
     AND02 --> FA0
     AND02 --> FA1[FA]
     A0 --> AND03[&]
-    B3[B₃] --> AND03
+    B3[B3] --> AND03
     AND03 --> FA1
 ```
 
@@ -86,8 +86,8 @@ console.log(arrayMultiply(11, 13, 4)); // 143
 console.log(arrayMultiply(6, 7, 4));   // 42
 ```
 
-**Area:** O(N²) AND gates + O(N²) full adders for N-bit multiplication.
-**Delay:** O(N) adder levels — proportional to the word width.
+**Area:** O(N?) AND gates + O(N?) full adders for N-bit multiplication.
+**Delay:** O(N) adder levels ? proportional to the word width.
 
 ### 11.1.2 Booth Multiplication
 
@@ -95,7 +95,7 @@ Booth's algorithm reduces the number of partial products by encoding groups of m
 
 **Radix-2 Booth encoding:** recodes multiplier bits into {-1, 0, +1}:
 
-| yᵢ | yᵢ₋₁ | Operation |
+| y? | y??1 | Operation |
 |----|------|-----------|
 | 0  | 0    | Add 0     |
 | 0  | 1    | Add A     |
@@ -115,9 +115,9 @@ function boothMultiply(A: number, B: number, bits: number): number {
         const Q0 = Q & 1;
         const op = (Q0 << 1) | Q_1;
 
-        if (op === 0b01) { // 0 → 1: add M
+        if (op === 0b01) { // 0 ? 1: add M
             result += (M << i);
-        } else if (op === 0b10) { // 1 → 0: subtract M
+        } else if (op === 0b10) { // 1 ? 0: subtract M
             result -= (M << i);
         }
         // op = 00 or 11: no operation
@@ -135,7 +135,7 @@ console.log(boothMultiply(-3 & 0xF, 7, 4)); // -21 = 235 in unsigned, but signed
 
 **Radix-4 (Modified Booth):** Groups 3 multiplier bits, reducing N partial products to N/2.
 
-| yᵢ₊₁ | yᵢ | yᵢ₋₁ | Operation |
+| y??1 | y? | y??1 | Operation |
 |------|----|------|-----------|
 | 0    | 0  | 0    | 0         |
 | 0    | 0  | 1    | +A        |
@@ -184,14 +184,14 @@ The Wallace tree reduces the partial product summation from O(N) to O(log N) lev
 
 ```mermaid
 graph TD
-    PP0[PP₀] --> CSA1[CSA Stage 1<br>3:2 reduction]
-    PP1[PP₁] --> CSA1
-    PP2[PP₂] --> CSA1
-    PP3[PP₃] --> CSA1
-    PP4[PP₄] --> CSA1
-    PP5[PP₅] --> CSA1
-    PP6[PP₆] --> CSA1
-    PP7[PP₇] --> CSA1
+    PP0[PP0] --> CSA1[CSA Stage 1<br>3:2 reduction]
+    PP1[PP1] --> CSA1
+    PP2[PP2] --> CSA1
+    PP3[PP3] --> CSA1
+    PP4[PP4] --> CSA1
+    PP5[PP5] --> CSA1
+    PP6[PP6] --> CSA1
+    PP7[PP7] --> CSA1
     CSA1 --> CSA2[CSA Stage 2<br>3:2 reduction]
     CSA1 --> CSA2
     CSA2 --> CSA3[CSA Stage 3<br>3:2 reduction]
@@ -215,7 +215,7 @@ class WallaceTreeMultiplier {
             const next: number[] = [];
             for (let i = 0; i < partials.length; i += 3) {
                 if (i + 2 < partials.length) {
-                    // CSA: 3 inputs → sum + carry
+                    // CSA: 3 inputs ? sum + carry
                     const a = partials[i];
                     const b = partials[i + 1];
                     const c = partials[i + 2];
@@ -250,10 +250,10 @@ console.log(wallace.multiply(255, 255, 8)); // 65025
 
 | Type | Area | Delay | Regularity | Best for |
 |------|------|-------|------------|----------|
-| Array | O(N²) | O(N) | High | Small widths (≤8 bit) |
-| Booth (radix-4) | O(N²) | O(N/2) | Medium | Medium widths |
-| Wallace tree | O(N²) | O(log N) | Low | High-performance DSP |
-| Dadda | O(N²) | O(log N) | Low | Slightly less area than Wallace |
+| Array | O(N?) | O(N) | High | Small widths (=8 bit) |
+| Booth (radix-4) | O(N?) | O(N/2) | Medium | Medium widths |
+| Wallace tree | O(N?) | O(log N) | Low | High-performance DSP |
+| Dadda | O(N?) | O(log N) | Low | Slightly less area than Wallace |
 | Sequential | O(N) | O(N) cycles | High | Area-constrained designs |
 
 ## 11.2 Binary Division
@@ -361,7 +361,7 @@ Double precision (64-bit):
   S (1)  |  Exponent (11) |  Mantissa (52)
   63     |  62..52        |  51..0
 
-Value = (-1)^S × 1.M × 2^(E - bias)
+Value = (-1)^S ? 1.M ? 2^(E - bias)
   Single bias: 127
   Double bias: 1023
 ```
@@ -447,7 +447,7 @@ function fpAdd(a: number, b: number): number {
         resultE--;
     }
 
-    // Round (truncation — simplified)
+    // Round (truncation ? simplified)
     const resultM_final = (resultM & 0x7FFFFF);
     const resultBits = (resultS << 31) | ((resultE & 0xFF) << 23) | resultM_final;
     return bitsToFloat(resultBits);
@@ -475,7 +475,7 @@ function fpMultiply(a: number, b: number): number {
     const mA_full = (eA !== 0 ? 0x800000 : 0) | mA;
     const mB_full = (eB !== 0 ? 0x800000 : 0) | mB;
 
-    // Multiply mantissas (24 × 24 → 48 bits)
+    // Multiply mantissas (24 ? 24 ? 48 bits)
     const productM = mA_full * mB_full;
 
     // Add exponents (subtract bias once)
@@ -498,7 +498,7 @@ function fpMultiply(a: number, b: number): number {
 }
 
 const product = fpMultiply(3.14159, 2.0);
-console.log(`3.14159 × 2.0 = ${product}`); // ~6.28318
+console.log(`3.14159 ? 2.0 = ${product}`); // ~6.28318
 ```
 
 ### 11.3.4 Rounding Modes
@@ -516,7 +516,7 @@ enum RoundingMode {
 function round(result: number, guard: number, round: number, sticky: number, mode: RoundingMode, sign: number): number {
     switch (mode) {
         case RoundingMode.RNE:
-            // Round to nearest — if tie, round to even (LSB = 0)
+            // Round to nearest ? if tie, round to even (LSB = 0)
             if (round === 1 && (guard === 1 || sticky === 1)) return result + 1;
             if (guard === 1 && round === 0 && sticky === 0 && (result & 1)) return result + 1;
             return result;
@@ -556,7 +556,7 @@ class FloatingPointPipeline {
     }
 
     tick(): number | null {
-        // Process stage 3 → output
+        // Process stage 3 ? output
         const result = this.stages[3].length > 0 ? this.stages[3].shift() : null;
 
         // Shift pipeline stages
@@ -575,15 +575,15 @@ class FloatingPointPipeline {
 RNS represents numbers as tuples of residues modulo pairwise coprime moduli, enabling parallel addition, subtraction, and multiplication without carry propagation.
 
 ```text
-Moduli: m₁ = 3, m₂ = 5, m₃ = 7 (pairwise coprime)
+Moduli: m1 = 3, m2 = 5, m3 = 7 (pairwise coprime)
 Number x = 11:
-  r₁ = 11 mod 3 = 2
-  r₂ = 11 mod 5 = 1
-  r₃ = 11 mod 7 = 4
+  r1 = 11 mod 3 = 2
+  r2 = 11 mod 5 = 1
+  r3 = 11 mod 7 = 4
   RNS(11) = (2, 1, 4)
 
 Addition: (2,1,4) + (1,3,5) = (0,4,2)  [mod 3,5,7 respectively]
-  → Chinese Remainder Theorem → result
+  ? Chinese Remainder Theorem ? result
 ```
 
 ```typescript
@@ -613,7 +613,7 @@ class RNS {
         for (let i = 0; i < this.moduli.length; i++) {
             const mi = this.moduli[i];
             const Mi = M / mi;
-            // Compute Mi_inv such that Mi * Mi_inv ≡ 1 (mod mi)
+            // Compute Mi_inv such that Mi * Mi_inv = 1 (mod mi)
             const Mi_inv = this.modInverse(Mi % mi, mi);
             result = (result + residues[i] * Mi * Mi_inv) % M;
         }
@@ -635,16 +635,16 @@ const b = rns.encode(13);
 const sumRns = rns.add(a, b);
 console.log(`RNS 11+13 = ${rns.decode(sumRns)}`); // 24
 const prodRns = rns.multiply(a, b);
-console.log(`RNS 11×13 = ${rns.decode(prodRns)}`); // 143
+console.log(`RNS 11?13 = ${rns.decode(prodRns)}`); // 143
 ```
 
 ## Practical Takeaways
 
-1. **Wallace trees are fastest but irregular** — use for high-performance DSP; for most applications, Booth + compressor trees are sufficient
-2. **Division is 5–10× slower than multiplication** — avoid division in inner loops; use multiplication by reciprocal where possible
-3. **IEEE 754 compliance is non-trivial** — subnormals, NaNs, and rounding modes add significant hardware complexity
-4. **RNS enables parallel arithmetic** — ideal for DSP and cryptography where addition/multiplication dominate
-5. **Pipeline FPUs for throughput** — a 4-stage FP adder pipeline achieves one result per cycle at the cost of 4-cycle latency
+1. **Wallace trees are fastest but irregular** ? use for high-performance DSP; for most applications, Booth + compressor trees are sufficient
+2. **Division is 5?10? slower than multiplication** ? avoid division in inner loops; use multiplication by reciprocal where possible
+3. **IEEE 754 compliance is non-trivial** ? subnormals, NaNs, and rounding modes add significant hardware complexity
+4. **RNS enables parallel arithmetic** ? ideal for DSP and cryptography where addition/multiplication dominate
+5. **Pipeline FPUs for throughput** ? a 4-stage FP adder pipeline achieves one result per cycle at the cost of 4-cycle latency
 
 ## TypeScript Implementations
 
@@ -797,9 +797,9 @@ class RNSSystem {
 }
 
 // === Demo ===
-console.log(`Array 12×10 = ${arrayMultiplier(12, 10)}`);
-console.log(`Booth 7×-3 = ${boothMultiplier(7, -3 & 0xFF)}`);
-console.log(`Restoring 100÷7 = ${JSON.stringify(restoringDivide(100, 7))}`);
+console.log(`Array 12?10 = ${arrayMultiplier(12, 10)}`);
+console.log(`Booth 7?-3 = ${boothMultiplier(7, -3 & 0xFF)}`);
+console.log(`Restoring 100?7 = ${JSON.stringify(restoringDivide(100, 7))}`);
 console.log(`Kogge-Stone 0xA5+0x5A = ${koggeStoneAdd(0xA5, 0x5A).sum.toString(16)}`);
 console.log(`FP32 3.14159 bits: ${fp32Bits(3.14159)}`);
 
@@ -813,14 +813,106 @@ const enc2 = rns.encode(13);
 console.log(`RNS 11+13 = ${rns.decode(rns.add(enc, enc2))}`);
 ```
 
+
+// arithmetic circuits
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'arithmetic circuits', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// arithmetic circuits - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'arithmetic circuits' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-Arithmetic circuits form the computational core of digital processors. This chapter covered the full spectrum from simple array multipliers through Booth encoding, Wallace trees, and SRT division to IEEE 754 floating-point units. Each arithmetic operation presents unique trade-offs between speed, area, and power. Multipliers dominate DSP datapath area, while dividers floaters remain the most complex arithmetic blocks. Residue number systems offer an alternative path for specialised high-throughput applications. The next chapter introduces hardware description languages — the tools used to specify and synthesise these circuits.
+Arithmetic circuits form the computational core of digital processors. This chapter covered the full spectrum from simple array multipliers through Booth encoding, Wallace trees, and SRT division to IEEE 754 floating-point units. Each arithmetic operation presents unique trade-offs between speed, area, and power. Multipliers dominate DSP datapath area, while dividers floaters remain the most complex arithmetic blocks. Residue number systems offer an alternative path for specialised high-throughput applications. The next chapter introduces hardware description languages ? the tools used to specify and synthesise these circuits.
 
 ## Chapter Quiz
 
 **Q1.** A Wallace tree multiplier reduces partial product addition from O(N) to:
-a) O(N²)
+a) O(N?)
 b) O(log N)
 c) O(N log N)
 d) O(1)
@@ -861,7 +953,7 @@ Q1: b | Q2: c | Q3: a | Q4: b | Q5: b
 
 3. **SRT radix-2 divider:** Implement a radix-2 SRT divider using the redundant digit set {-1, 0, +1}. Compare the number of iterations with restoring division.
 
-4. **Merged multiply-add:** Design a fused multiply-add (FMA) unit that computes A × B + C with a single rounding step. Show the area and delay advantage over separate multiply + add.
+4. **Merged multiply-add:** Design a fused multiply-add (FMA) unit that computes A ? B + C with a single rounding step. Show the area and delay advantage over separate multiply + add.
 
 5. **RNS filter:** Implement a 4-tap FIR filter using RNS with moduli {7, 11, 13, 17}. Compare the power consumption with a conventional binary FIR filter.
 

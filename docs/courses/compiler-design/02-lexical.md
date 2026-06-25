@@ -1,6 +1,6 @@
 # Chapter 2: Lexical Analysis
 
-**← Previous:** [Chapter 1: Introduction](01-introduction.md) | **Next:** [Chapter 3: Top-Down Parsing](03-parsing-topdown.md)
+**? Previous:** [Chapter 1: Introduction](01-introduction.md) | **Next:** [Chapter 3: Top-Down Parsing](03-parsing-topdown.md)
 
 ## Learning Objectives
 
@@ -45,13 +45,13 @@ flowchart LR
 
 ### Tokens, Lexemes, and Patterns
 
-Lexical analysis is the first phase of compilation. The **lexical analyzer**, or scanner, reads the source program's character stream and groups characters into **lexemes** — sequences of characters that form a logical unit. For each lexeme, the scanner produces a **token**, a pair consisting of a token name and an optional attribute value.
+Lexical analysis is the first phase of compilation. The **lexical analyzer**, or scanner, reads the source program's character stream and groups characters into **lexemes** ? sequences of characters that form a logical unit. For each lexeme, the scanner produces a **token**, a pair consisting of a token name and an optional attribute value.
 
 A **token name** is a symbolic category such as `ID` (identifier), `NUMBER` (numeric literal), `IF` (the keyword `if`), `PLUS` (the plus operator), or `LPAREN` (left parenthesis). The attribute value carries the specific lexeme or other information associated with the token. For example, the token for the lexeme `count` might be `ID` with attribute `pointer to symbol-table entry for "count"`. For a numeric literal, the attribute might be the integer or floating-point value.
 
 A **pattern** is a rule that describes the set of lexemes belonging to a given token. Patterns are typically described using regular expressions. A lexeme is a particular instance of a pattern: the string `42` is a lexeme of the token `NUMBER` whose pattern could be `[0-9]+`. The scanner must recognize multiple token types simultaneously, distinguishing, for example, between the keyword `if` and an identifier `ifx`.
 
-> **One-Sentence Takeaway:** Tokens are the vocabulary of the compiler — all subsequent phases work with this token stream, never with raw characters.
+> **One-Sentence Takeaway:** Tokens are the vocabulary of the compiler ? all subsequent phases work with this token stream, never with raw characters.
 
 ### Input Buffering
 
@@ -75,14 +75,14 @@ Regular expressions provide a formal notation for specifying token patterns. The
 Important regular definitions for a typical programming language:
 
 ```
-digit       → [0-9]
-letter      → [a-zA-Z_]
-identifier  → letter (letter | digit)*
-integer     → digit+
-real        → digit+ (\. digit+)? (E [+-]? digit+)?
-whitespace  → [ \t\n]+
-comment     → "/*" (any)* "*/"
-stringlit   → "\"" (any - "\"")* "\""
+digit       ? [0-9]
+letter      ? [a-zA-Z_]
+identifier  ? letter (letter | digit)*
+integer     ? digit+
+real        ? digit+ (\. digit+)? (E [+-]? digit+)?
+whitespace  ? [ \t\n]+
+comment     ? "/*" (any)* "*/"
+stringlit   ? "\"" (any - "\"")* "\""
 ```
 
 A lexical-analyzer generator converts these regular definitions into a deterministic finite automaton (DFA). The conversion proceeds through three steps: constructing NFAs via Thompson's construction, converting to a DFA via subset construction, and minimizing the DFA.
@@ -94,8 +94,8 @@ Thompson's construction maps each regular expression to an NFA inductively, foll
 **Base cases:**
 
 ```
-ε:      start ──ε──→ accept
-a:      start ──a──→ accept
+e:      start --e--? accept
+a:      start --a--? accept
 ```
 
 **Inductive cases:**
@@ -104,12 +104,12 @@ For alternation `R | S`:
 
 ```mermaid
 graph LR
-    s((start)) --ε--> r((R NFA start))
-    s --ε--> s2((S NFA start))
+    s((start)) --e--> r((R NFA start))
+    s --e--> s2((S NFA start))
     r --...--> ra((R NFA accept))
     s2 --...--> sa((S NFA accept))
-    ra --ε--> a((accept))
-    sa --ε--> a
+    ra --e--> a((accept))
+    sa --e--> a
 ```
 
 For concatenation `R S`:
@@ -117,7 +117,7 @@ For concatenation `R S`:
 ```mermaid
 graph LR
     r((R NFA start)) --...--> ra((R NFA accept))
-    ra --ε--> s((S NFA start))
+    ra --e--> s((S NFA start))
     s --...--> sa((S NFA accept))
 ```
 
@@ -125,36 +125,36 @@ For Kleene closure `R*`:
 
 ```mermaid
 graph LR
-    s((start)) --ε--> r((R NFA start))
-    s --ε--> a((accept))
+    s((start)) --e--> r((R NFA start))
+    s --e--> a((accept))
     r --...--> ra((R NFA accept))
-    ra --ε--> r
-    ra --ε--> a
+    ra --e--> r
+    ra --e--> a
 ```
 
 Formal algorithm for Thompson's construction:
 
 ```
 function Thompson(regex):
-    if regex = ε:
-        return NFA with start → ε → accept
+    if regex = e:
+        return NFA with start ? e ? accept
     if regex = a (a single symbol):
-        return NFA with start → a → accept
+        return NFA with start ? a ? accept
     if regex = R | S:
         build NFA_R = Thompson(R)
         build NFA_S = Thompson(S)
-        create new start state s0 with ε transitions to NFA_R.start and NFA_S.start
-        create new accept state with ε transitions from NFA_R.accept and NFA_S.accept
+        create new start state s0 with e transitions to NFA_R.start and NFA_S.start
+        create new accept state with e transitions from NFA_R.accept and NFA_S.accept
         return combined NFA
     if regex = R S:
         build NFA_R = Thompson(R)
         build NFA_S = Thompson(S)
-        add ε transition from NFA_R.accept to NFA_S.start
+        add e transition from NFA_R.accept to NFA_S.start
         return combined NFA (start = NFA_R.start, accept = NFA_S.accept)
     if regex = R*:
         build NFA_R = Thompson(R)
-        create new start state s0 with ε → NFA_R.start and ε → new accept
-        add ε from NFA_R.accept → NFA_R.start and NFA_R.accept → new accept
+        create new start state s0 with e ? NFA_R.start and e ? new accept
+        add e from NFA_R.accept ? NFA_R.start and NFA_R.accept ? new accept
         return combined NFA
 ```
 
@@ -166,7 +166,7 @@ The subset construction converts an NFA into an equivalent DFA. Each DFA state c
 
 ```
 function SubsetConstruction(NFA):
-    DFA.start = ε-closure({NFA.start})
+    DFA.start = e-closure({NFA.start})
     DFA.states = {DFA.start}
     unmarked = {DFA.start}
     DFA.transitions = {}
@@ -174,7 +174,7 @@ function SubsetConstruction(NFA):
     while unmarked is not empty:
         remove T from unmarked
         for each input symbol a:
-            U = ε-closure(move(T, a))
+            U = e-closure(move(T, a))
             if U is not empty and U not in DFA.states:
                 add U to DFA.states
                 add U to unmarked
@@ -183,12 +183,12 @@ function SubsetConstruction(NFA):
     DFA.accept = {S in DFA.states | S contains any NFA accept state}
     return DFA
 
-function ε-closure(states):
+function e-closure(states):
     result = states
     stack = states
     while stack is not empty:
         pop s from stack
-        for each state t reachable from s via ε:
+        for each state t reachable from s via e:
             if t not in result:
                 add t to result
                 push t onto stack
@@ -233,7 +233,7 @@ function HopcroftMinimize(DFA):
 
 **Example**: Minimize a DFA for `(a|b)*abb`. Start with partition `P = { {0,1,2}, {3} }` (assuming state 3 is the sole accepting state). Refine by checking transitions: if states in a group go to different groups on the same input, split. After refinement, each group contains states indistinguishable by any input string.
 
-The minimized DFA has the fewest possible states while recognizing the same language. For a DFA with N states and an alphabet of size Σ, Hopcroft's algorithm runs in `O(N Σ log N)` time.
+The minimized DFA has the fewest possible states while recognizing the same language. For a DFA with N states and an alphabet of size S, Hopcroft's algorithm runs in `O(N S log N)` time.
 
 ### TypeScript Lexer Engine
 
@@ -270,7 +270,7 @@ class NFA {
         return { id: this.nextId++, transitions: new Map(), epsilon: [], isAccept: false };
     }
 
-    // ε NFA
+    // e NFA
     static epsilon(): NFA {
         const nfa = new NFA();
         nfa.start.epsilon.push(nfa.accept);
@@ -363,7 +363,7 @@ class NFA {
     }
 }
 
-// === Subset Construction (NFA → DFA) ===
+// === Subset Construction (NFA ? DFA) ===
 class DFA {
     states: DFAState[] = [];
     start: DFAState;
@@ -400,7 +400,7 @@ class DFA {
             for (const sym of ns.transitions.keys()) alphabet.add(sym);
         }
 
-        // Build DFA state map: Set<number> → DFAState
+        // Build DFA state map: Set<number> ? DFAState
         const dfaMap = new Map<string, DFAState>();
         const startClosure = epsilonClosure(new Set([nfa.start.id]));
         this.start = this.getOrCreateDFAState(startClosure, dfaMap, nfa);
@@ -587,7 +587,7 @@ console.log(`Minimized DFA has ${minDfa.states.length} states`);
 // Test
 const tests = ["abb", "aabb", "babb", "ababb", "ab", "bbba"];
 for (const t of tests) {
-    console.log(`  "${t}" → ${minDfa.simulate(t) ? "ACCEPT" : "REJECT"}`);
+    console.log(`  "${t}" ? ${minDfa.simulate(t) ? "ACCEPT" : "REJECT"}`);
 }
 ```
 
@@ -595,7 +595,7 @@ for (const t of tests) {
 
 The scanner must decide where one token ends and the next begins. The **maximal munch** rule states: the scanner reads the longest possible string of input characters that matches any token pattern. This ensures that `ifx` is never mistakenly tokenized as the keyword `if` followed by `x`.
 
-However, maximal munch occasionally interacts poorly with lookahead. Consider the `>>` token in C++: without context, `a>b>c` could be parsed as `a > b > c` or `a >> c` (if `>>` is a token). C++11 resolves this lexically: `>>` in template contexts is treated as two `>` tokens. The scanner may need to consult parser state to make correct decisions — this is known as **context-sensitive lexing**.
+However, maximal munch occasionally interacts poorly with lookahead. Consider the `>>` token in C++: without context, `a>b>c` could be parsed as `a > b > c` or `a >> c` (if `>>` is a token). C++11 resolves this lexically: `>>` in template contexts is treated as two `>` tokens. The scanner may need to consult parser state to make correct decisions ? this is known as **context-sensitive lexing**.
 
 **Lookahead** is handled by reading one character beyond the lexeme boundary without consuming it. In a two-buffer scheme, `forward` advances past the lexeme, then retracts to the boundary after the token is identified. Some tokens require indefinite lookahead; for example, C++ raw string literals `R"delimiter(content)delimiter"` require scanning until a matching delimiter is found.
 
@@ -645,15 +645,107 @@ Flex generates a precomputed DFA transition table for maximum speed. The variabl
 
 ## Practical Takeaways
 
-1. **Build the NFA → DFA → minimize pipeline once**: These algorithms are reusable across any language's scanner. Store them in a library.
+1. **Build the NFA ? DFA ? minimize pipeline once**: These algorithms are reusable across any language's scanner. Store them in a library.
 2. **Lex/Flex for production, hand-written for education**: For serious compilers, use a generator. For learning, hand-write a scanner to understand DFA internals.
 3. **Maximal munch is nearly always right**: Exceptions exist (C++ templates) but are rare. Start with maximal munch and add context-sensitive rules only when needed.
 4. **Keywords are not a separate DFA**: Build a single DFA for all tokens, then check the symbol table after acceptance. If the lexeme matches a keyword, change the token type.
 5. **Error recovery is critical for usability**: A scanner that crashes on the first unexpected character is unusable. Always implement at least panic-mode recovery.
 
+
+// lexical
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'lexical', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// lexical - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'lexical' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-Lexical analysis groups source characters into tokens based on patterns described by regular expressions. The conversion pipeline — regex → NFA (Thompson's construction) → DFA (subset construction) → minimal DFA (Hopcroft's algorithm) — produces an efficient recognizer. The scanner is implemented as a table-driven DFA simulation, optionally generated by tools such as Lex and Flex. Input buffering minimizes I/O overhead, while the maximal-munch rule and keyword-resolution logic ensure correct tokenization.
+Lexical analysis groups source characters into tokens based on patterns described by regular expressions. The conversion pipeline ? regex ? NFA (Thompson's construction) ? DFA (subset construction) ? minimal DFA (Hopcroft's algorithm) ? produces an efficient recognizer. The scanner is implemented as a table-driven DFA simulation, optionally generated by tools such as Lex and Flex. Input buffering minimizes I/O overhead, while the maximal-munch rule and keyword-resolution logic ensure correct tokenization.
 
 ## Chapter Quiz
 
@@ -678,12 +770,12 @@ Lexical analysis groups source characters into tokens based on patterns describe
 4. What is the time complexity of Hopcroft's algorithm?
    - A) O(N)
    - B) O(N log N)
-   - C) O(N Σ log N)
-   - D) O(N²)
+   - C) O(N S log N)
+   - D) O(N?)
 
-5. The ε-closure of a set of NFA states S is:
+5. The e-closure of a set of NFA states S is:
    - A) All states reachable from S on any single symbol
-   - B) All states reachable from S via any number of ε-transitions
+   - B) All states reachable from S via any number of e-transitions
    - C) The intersection of all states in S
    - D) The union of all accepting states
 

@@ -69,7 +69,7 @@ Machine learning is a subset of artificial intelligence that provides systems th
 
 **Arthur Samuel** (1959): "The field of study that gives computers the ability to learn without being explicitly programmed."
 
-**Tom Mitchell** (1997) — a more precise, formal definition: "A computer program is said to learn from experience $E$ with respect to some class of tasks $T$ and performance measure $P$, if its performance at tasks in $T$, as measured by $P$, improves with experience $E$."
+**Tom Mitchell** (1997) ? a more precise, formal definition: "A computer program is said to learn from experience $E$ with respect to some class of tasks $T$ and performance measure $P$, if its performance at tasks in $T$, as measured by $P$, improves with experience $E$."
 
 ### Formal Problem Definition
 
@@ -89,10 +89,10 @@ A larger $\mathcal{H}$ means the algorithm can represent more complex patterns, 
 
 **Inductive Bias** is the set of assumptions a learner uses to select one hypothesis over another when multiple hypotheses fit the training data equally well. There are two main types:
 
-1. **Sebe's Bias (Preference Bias)**: The learner prefers simpler hypotheses (e.g., Occam's razor — shorter decision trees, smaller weights)
+1. **Sebe's Bias (Preference Bias)**: The learner prefers simpler hypotheses (e.g., Occam's razor ? shorter decision trees, smaller weights)
 2. **Mitchell's Bias (Language Bias)**: The hypothesis space itself restricts what concepts can be learned (e.g., a linear classifier cannot represent XOR)
 
-Without inductive bias, learning from finite data is impossible — an unbiased learner would treat all hypotheses consistent with the data as equally valid, resulting in no basis for choosing one over another on unseen examples.
+Without inductive bias, learning from finite data is impossible ? an unbiased learner would treat all hypotheses consistent with the data as equally valid, resulting in no basis for choosing one over another on unseen examples.
 
 ```mermaid
 flowchart LR
@@ -144,7 +144,7 @@ A fundamental assumption in machine learning:
 
 > Any hypothesis found to approximate the target function well over a sufficiently large set of training examples will also approximate the target function well over other unobserved examples.
 
-This assumption is what makes generalization possible — but it only holds when:
+This assumption is what makes generalization possible ? but it only holds when:
 
 1. The training data is representative (drawn i.i.d. from the same distribution as the test data)
 2. The hypothesis space is appropriately sized (not too large, not too small)
@@ -159,9 +159,9 @@ The No Free Lunch (NFL) theorem (Wolpert, 1996) states:
 In other words, if an algorithm performs exceptionally well on one class of problems, it must perform correspondingly worse on others. There is no universal best learner.
 
 **Practical implications**:
-- Algorithm performance is problem-dependent — always match the algorithm to the data characteristics
+- Algorithm performance is problem-dependent ? always match the algorithm to the data characteristics
 - Domain knowledge (feature engineering, choice of inductive bias) is what distinguishes successful ML projects
-- Ensemble of diverse algorithms can hedge against NFL — if one fails on a distribution shift, another may succeed
+- Ensemble of diverse algorithms can hedge against NFL ? if one fails on a distribution shift, another may succeed
 - The theorem motivates the need for cross-validation and empirical comparison on your specific dataset
 
 ### The Machine Learning Pipeline
@@ -278,7 +278,7 @@ flowchart TD
 
 > **One-Sentence Takeaway:** Machine learning systems improve through experience by identifying patterns in data, following a structured pipeline from problem definition to deployment.
 
-> **Remember:** The ML pipeline is iterative, not linear — you will often loop back to data preparation after evaluating your first model.
+> **Remember:** The ML pipeline is iterative, not linear ? you will often loop back to data preparation after evaluating your first model.
 
 ---
 
@@ -407,11 +407,11 @@ console.log(evaluateLearning(housingPrice, neuralHypothesis));
 
 ## Practical Takeaways
 
-1. **Problem structure determines algorithm choice** — match the learning paradigm (supervised, unsupervised, RL) to the available signal
-2. **Hypothesis spaces interact with data quantity** — larger hypothesis spaces need more data or stronger inductive bias
-3. **No Free Lunch is real** — test multiple algorithms on your specific data rather than relying on default choices
-4. **Pipeline discipline prevents failures** — skipping data preparation or evaluation leads to models that fail in production
-5. **Monitoring is not optional** — data distributions shift over time; production models require continuous validation
+1. **Problem structure determines algorithm choice** ? match the learning paradigm (supervised, unsupervised, RL) to the available signal
+2. **Hypothesis spaces interact with data quantity** ? larger hypothesis spaces need more data or stronger inductive bias
+3. **No Free Lunch is real** ? test multiple algorithms on your specific data rather than relying on default choices
+4. **Pipeline discipline prevents failures** ? skipping data preparation or evaluation leads to models that fail in production
+5. **Monitoring is not optional** ? data distributions shift over time; production models require continuous validation
 
 ## Concept Comparison Table
 
@@ -470,7 +470,7 @@ console.log(evaluateLearning(housingPrice, neuralHypothesis));
    C) Free lunch refers to the cost of training data
    D) The theorem only applies to unsupervised learning
 
-<details><summary>Answer</summary>**B)** Averaged over all possible problems, no learner outperforms any other — algorithm choice must be problem-specific.
+<details><summary>Answer</summary>**B)** Averaged over all possible problems, no learner outperforms any other ? algorithm choice must be problem-specific.
 </details>
 
 3. A dataset has 200 samples and 200 features. What is the primary concern?
@@ -686,8 +686,8 @@ const sampleData: Dataset<number[], number> = {
 };
 const scaled = standardize(sampleData.features);
 const cvResult = kFoldCrossValidation(KNN, { features: scaled, labels: sampleData.labels }, 5);
-console.log(`Mean F1: ${cvResult.mean.f1Score.toFixed(3)} ± ${cvResult.std.f1Score.toFixed(3)}`);
-console.log(`Mean Accuracy: ${cvResult.mean.accuracy.toFixed(3)} ± ${cvResult.std.accuracy.toFixed(3)}`);
+console.log(`Mean F1: ${cvResult.mean.f1Score.toFixed(3)} ? ${cvResult.std.f1Score.toFixed(3)}`);
+console.log(`Mean Accuracy: ${cvResult.mean.accuracy.toFixed(3)} ? ${cvResult.std.accuracy.toFixed(3)}`);
 ```
 
 ---
@@ -695,7 +695,7 @@ console.log(`Mean Accuracy: ${cvResult.mean.accuracy.toFixed(3)} ± ${cvResult.s
 ## TypeScript Implementation: Linear Regression from Scratch
 
 ```typescript
-// Gradient Descent Linear Regression — demonstrates core ML concepts
+// Gradient Descent Linear Regression ? demonstrates core ML concepts
 type TrainTestSplit<T> = { train: T[]; test: T[] };
 
 function trainTestSplit<T>(data: T[], testRatio: number = 0.2): TrainTestSplit<T> {
@@ -816,9 +816,101 @@ const polyModel = new PolynomialRegression(2, 0.0000001, 5000);
 polyModel.fit(xTrain, yTrain);
 const polyPreds = polyModel.predict(xTest);
 console.log("Polynomial Regression RMSE:", rootMeanSquaredError(yTest, polyPreds).toFixed(2));
-console.log("Polynomial Regression R²:", (1 - yTest.reduce((s, t, i) => s + (t - polyPreds[i]) ** 2, 0) / yTest.reduce((s, t) => s + (t - yTest.reduce((a, b) => a + b, 0) / yTest.length) ** 2, 0)).toFixed(4));
+console.log("Polynomial Regression R?:", (1 - yTest.reduce((s, t, i) => s + (t - polyPreds[i]) ** 2, 0) / yTest.reduce((s, t) => s + (t - yTest.reduce((a, b) => a + b, 0) / yTest.length) ** 2, 0)).toFixed(4));
 ```
 
+
+// introduction
+// ml-supervised-unsupervised implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'introduction', data: { topic: 'ml-supervised-unsupervised' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// introduction - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'ml-algorithms demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'machine-learning', chapter: 'introduction' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('ml-algorithms'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Machine learning enables computers to learn from data instead of following static rules, formalized by Mitchell's definition $(T, E, P)$.
@@ -826,7 +918,7 @@ console.log("Polynomial Regression R²:", (1 - yTest.reduce((s, t, i) => s + (t 
 - Hypothesis space size and inductive bias jointly determine what a learner can represent and how it generalizes.
 - The No Free Lunch theorem reminds us that algorithm choice must be problem-specific.
 - The ML pipeline is an iterative process from problem definition through monitoring, with data preparation as the most time-consuming phase.
-- Generalization — performance on unseen data — is the ultimate goal, achieved through careful evaluation and inductive bias alignment.
+- Generalization ? performance on unseen data ? is the ultimate goal, achieved through careful evaluation and inductive bias alignment.
 
 > **One-Sentence Takeaway:** Understanding the three ML paradigms, hypothesis spaces, inductive bias, and the end-to-end pipeline is the foundation for applying machine learning effectively.
 

@@ -317,11 +317,11 @@ docker push myapp:$VERSION
 
 Effective code review in version control:
 
-1. **Small PRs** — Reviewers process small changes faster and catch more defects
-2. **Automated checks first** — Lint, style, tests run before human review
-3. **Clear description** — What changed and why
-4. **Review checklist** — Consistency, correctness, coverage, security
-5. **No blame** — Review the code, not the author
+1. **Small PRs** � Reviewers process small changes faster and catch more defects
+2. **Automated checks first** � Lint, style, tests run before human review
+3. **Clear description** � What changed and why
+4. **Review checklist** � Consistency, correctness, coverage, security
+5. **No blame** � Review the code, not the author
 
 ---
 
@@ -555,25 +555,25 @@ class ReleaseNotesGenerator {
     let md = `# v${notes.version} (${notes.date})\n\n`;
 
     if (notes.breaking.length > 0) {
-      md += '## ⚠️ Breaking Changes\n\n';
+      md += '## ?? Breaking Changes\n\n';
       notes.breaking.forEach(b => md += `- ${b}\n`);
       md += '\n';
     }
 
     if (notes.features.length > 0) {
-      md += '## 🚀 Features\n\n';
+      md += '## ?? Features\n\n';
       notes.features.forEach(f => md += `- ${f}\n`);
       md += '\n';
     }
 
     if (notes.fixes.length > 0) {
-      md += '## 🐛 Bug Fixes\n\n';
+      md += '## ?? Bug Fixes\n\n';
       notes.fixes.forEach(f => md += `- ${f}\n`);
       md += '\n';
     }
 
     if (notes.other.length > 0) {
-      md += '## 🔧 Maintenance\n\n';
+      md += '## ?? Maintenance\n\n';
       notes.other.forEach(o => md += `- ${o}\n`);
       md += '\n';
     }
@@ -783,7 +783,7 @@ class CommitGraphAnalyzer {
         `- ${a.author}: ${a.commitCount} commits, ~${a.filesTouched} files`
       ).join('\n') +
       `\n\n**Islands (disconnected histories):** ${this.findIslands().length}\n` +
-      (metrics.mergeCommitPercent > 30 ? '⚠️ High merge commit ratio — consider rebase workflow\n' : '');
+      (metrics.mergeCommitPercent > 30 ? '?? High merge commit ratio � consider rebase workflow\n' : '');
   }
 }
 
@@ -942,6 +942,48 @@ console.log('Conflicts:', conflicts.length > 0 ? conflicts.map(c => `${c.package
 
 ---
 
+
+// build tools
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'build tools', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Version control is the foundation of DevOps, tracking every change with full history and accountability.
@@ -949,7 +991,7 @@ console.log('Conflicts:', conflicts.length > 0 ? conflicts.map(c => `${c.package
 - Branching models range from simple (trunk-based) to complex (GitFlow), chosen based on release cadence.
 - Tags create immutable named references, ideally using semantic versioning.
 - CI/CD pipelines integrate with VCS through hooks and triggers for every event type.
-- Monorepos enable atomic changes; multi-repos provide team autonomy — choose based on context.
+- Monorepos enable atomic changes; multi-repos provide team autonomy � choose based on context.
 - Code review via pull requests is essential for quality, with automated checks before human review.
 
 ---

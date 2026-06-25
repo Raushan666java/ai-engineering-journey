@@ -1,7 +1,7 @@
-# Chapter 13 — Advanced Vector Search & RAG
+# Chapter 13 � Advanced Vector Search & RAG
 
 **Duration:** 2 weeks, ~22 hours
-**Goal:** Master advanced retrieval — hybrid search, multi-vector retrieval, re-ranking architectures, and production-scale vector database tuning. Move beyond basic cosine similarity.
+**Goal:** Master advanced retrieval � hybrid search, multi-vector retrieval, re-ranking architectures, and production-scale vector database tuning. Move beyond basic cosine similarity.
 
 ---
 
@@ -166,7 +166,7 @@ def hybrid_search_demo(query: str):
     # Dense embedding
     dense_vec = client.embeddings.create(input=query, model="text-embedding-3-small").data[0].embedding
 
-    # Sparse embedding (using SPLADE or similar — simplified example)
+    # Sparse embedding (using SPLADE or similar � simplified example)
     sparse_vec = {"term1": 0.8, "term2": 0.5}  # Placeholder
 
     # BM25 fits on document collection
@@ -248,7 +248,7 @@ results = retriever.search(query_tokens, query_embs)
 for r in results:
     print(f"Doc {r.doc_id}: score={r.score:.4f}")
     for qt, dt, sim in r.token_matches[:3]:
-        print(f"  '{qt}' ↔ '{dt}': {sim:.3f}")
+        print(f"  '{qt}' ? '{dt}': {sim:.3f}")
 ```
 
 ---
@@ -277,7 +277,7 @@ class HyDERetriever:
         return response.choices[0].message.content
 
     def search(self, query: str, top_k: int = 5) -> list[str]:
-        """Search using HyDE: query → hypothetical doc → embed → search."""
+        """Search using HyDE: query ? hypothetical doc ? embed ? search."""
         hypothetical = self.generate_hypothetical(query)
         hyde_embedding = client.embeddings.create(
             input=hypothetical,
@@ -481,7 +481,7 @@ class HNSWTuner:
                 "default": 200,
                 "higher": "Higher recall at build time, slower index build",
                 "lower": "Faster build, potentially lower quality",
-                "recommendation": "200-400 — diminishing returns above 400"
+                "recommendation": "200-400 � diminishing returns above 400"
             },
             "ef_search (query-time search width)": {
                 "range": "1-2000 (but typically 50-500)",
@@ -493,8 +493,8 @@ class HNSWTuner:
             "tuning_workflow": [
                 "1. Set ef_construction = 200, M = 16 (conservative start)",
                 "2. Build index, measure recall on validation set",
-                "3. If recall < 0.95, increase M (16 → 24 → 32)",
-                "4. If latency > target, decrease ef_search (500 → 200 → 100)",
+                "3. If recall < 0.95, increase M (16 ? 24 ? 32)",
+                "4. If latency > target, decrease ef_search (500 ? 200 ? 100)",
                 "5. If recall still low and M is already 48, increase ef_construction to 400",
                 "6. Final check: measure P95 latency and recall on holdout set"
             ],
@@ -587,7 +587,7 @@ results = searcher.search(q_vec, filters={
 
 for r in results:
     meta = r["metadata"]
-    print(f"{meta.get('title', '?')} — {meta.get('price', '?')} AED — distance: {r['distance']:.4f}")
+    print(f"{meta.get('title', '?')} � {meta.get('price', '?')} AED � distance: {r['distance']:.4f}")
 ```
 
 ---
@@ -626,7 +626,7 @@ class ProductQuantizer:
 
         for m in range(self.M):
             subvectors = vectors[:, m * sub_dim:(m + 1) * sub_dim]
-            # K-means clustering (simplified — use sklearn in production)
+            # K-means clustering (simplified � use sklearn in production)
             centroids = subvectors[:self.K]  # Initialize with first K vectors
             for _ in range(20):  # Simple k-means iterations
                 distances = np.linalg.norm(subvectors[:, None, :] - centroids[None, :, :], axis=2)
@@ -880,7 +880,7 @@ class GraphRAG:
         }
 
     def hybrid_search(self, query: str, top_k: int = 5) -> dict:
-        """Vector search entities → traverse → return enriched results."""
+        """Vector search entities ? traverse ? return enriched results."""
         seed_entities = self.vector_search_entities(query, top_k=3)
         graph_context = self.traverse(seed_entities, max_depth=2)
 
@@ -1119,6 +1119,33 @@ class VectorDBMigrator:
 
 ---
 
+
+interface Task { id: string; description: string; status: "pending"|"running"|"done"|"failed"; dependencies: string[]; result?: string }
+class Orchestrator {
+  private tasks: Map<string,Task> = new Map()
+  private agents: Map<string,(t:Task)=>Promise<string>> = new Map()
+  registerAgent(name: string, fn: (t:Task)=>Promise<string>): void { this.agents.set(name,fn) }
+  addTask(t: Task): void { this.tasks.set(t.id,t) }
+  async runAll(): Promise<void> {
+    let pending = Array.from(this.tasks.values()).filter(t=>t.status==="pending")
+    while(pending.length) {
+      const runnable = pending.filter(t=>t.dependencies.every(d=>this.tasks.get(d)?.status==="done"))
+      await Promise.all(runnable.map(async t => { t.status="running"
+        try { t.result = await this.agents.get("default")!(t); t.status="done" } catch { t.status="failed" }
+      }))
+      pending = Array.from(this.tasks.values()).filter(t=>t.status==="pending")
+    }
+  }
+  getResults(): Task[] { return Array.from(this.tasks.values()) }
+}
+class Decomposer {
+  decompose(goal: string): Task[] {
+    const parts = goal.split(". "); const tasks: Task[] = []
+    parts.forEach((p,i) => tasks.push({id:`task-${i}`,description:p,status:"pending",dependencies:i>0?[`task-${i-1}`]:[],result:undefined}))
+    return tasks
+  }
+}
+export { Orchestrator, Task, Decomposer }
 ## Exercises
 
 1. **Hybrid search**: Implement hybrid search (BM25 + dense vector + RRF) on your RAG pipeline. Measure recall@10 improvement over pure vector search.

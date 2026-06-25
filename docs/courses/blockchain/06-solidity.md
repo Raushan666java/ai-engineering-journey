@@ -142,7 +142,7 @@ interface IERC721 {
 
 **ERC-1155 (Multi-Token Standard):**
 
-Combines ERC-20 and ERC-721 features — one contract manages multiple token types.
+Combines ERC-20 and ERC-721 features � one contract manages multiple token types.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -183,7 +183,7 @@ function withdrawUnsafe(uint256 amount) external {
     require(balances[msg.sender] >= amount, "Insufficient balance");
     (bool success, ) = msg.sender.call{value: amount}("");  // External call FIRST
     require(success, "Transfer failed");
-    balances[msg.sender] -= amount;  // State update AFTER — VULNERABLE!
+    balances[msg.sender] -= amount;  // State update AFTER � VULNERABLE!
 }
 
 // SAFE: Check-Effects-Interactions
@@ -249,7 +249,7 @@ flowchart TB
 ```
 
 ```solidity
-// Minimal proxy pattern (UUPS — Universal Upgradeable Proxy Standard)
+// Minimal proxy pattern (UUPS � Universal Upgradeable Proxy Standard)
 contract UUPSProxy {
     address public implementation;
 
@@ -283,7 +283,7 @@ abstract contract UUPSUpgradeable {
 }
 ```
 
-**Note on storage collisions:** Proxy patterns must respect storage layout — you cannot reorder or remove state variables. The OpenZeppelin upgradeable contracts and UUPS/Transparent proxy patterns handle this.
+**Note on storage collisions:** Proxy patterns must respect storage layout � you cannot reorder or remove state variables. The OpenZeppelin upgradeable contracts and UUPS/Transparent proxy patterns handle this.
 
 ### Gas Optimization Techniques
 
@@ -299,7 +299,7 @@ contract GasOptimized {
     struct PackedData {
         uint128 amount;   // 16 bytes
         uint64 timestamp; // 8 bytes
-        address user;     // 20 bytes → padded to 32
+        address user;     // 20 bytes ? padded to 32
     }
     // Without packing: 3 slots (96 bytes)
     // With packing: 2 slots (44 bytes + padding)
@@ -353,7 +353,7 @@ sequenceDiagram
     Attacker->>Flash: 1. Borrow $100M (no collateral)
     Flash->>Attacker: 2. Send $100M
     
-    Attacker->>AMM: 3. Massive swap → manipulate price
+    Attacker->>AMM: 3. Massive swap ? manipulate price
     AMM->>Oracle: 4. Provide manipulated price
     
     Attacker->>Oracle: 5. Exploit protocol using bad price
@@ -515,11 +515,11 @@ contract GasComparison {
 }
 ```
 
-> **One-Sentence Takeaway:** Every storage write costs 5,000-22,100 gas while memory operations cost ~3 gas — the biggest optimization in Solidity is minimizing what you store on the blockchain.
+> **One-Sentence Takeaway:** Every storage write costs 5,000-22,100 gas while memory operations cost ~3 gas � the biggest optimization in Solidity is minimizing what you store on the blockchain.
 
 > **Pro Tip:** Use `calldata` instead of `memory` for read-only function parameters. It's cheaper than `memory` and avoids unnecessary data copying.
 
-> **Warning:** The `tx.origin` global should never be used for authentication — it returns the original sender of the transaction, which can be a malicious contract. Always use `msg.sender` for access control.
+> **Warning:** The `tx.origin` global should never be used for authentication � it returns the original sender of the transaction, which can be a malicious contract. Always use `msg.sender` for access control.
 
 ---
 
@@ -608,14 +608,14 @@ contract GasComparison {
 </details>
 
 5. What is the proper ordering of operations in the Check-Effects-Interactions pattern?
-   - A) Interaction → Check → Effects
-   - B) Check → Effects → Interaction
-   - C) Effects → Check → Interaction
-   - D) Interaction → Effects → Check
+   - A) Interaction ? Check ? Effects
+   - B) Check ? Effects ? Interaction
+   - C) Effects ? Check ? Interaction
+   - D) Interaction ? Effects ? Check
 
 <details>
 <summary>Answer</summary>
-**B) Check → Effects → Interaction.** First check all conditions (require), then update state (effects), then make external calls (interaction). This order prevents reentrancy attacks because state changes are visible to the attacker before they can re-enter the function.
+**B) Check ? Effects ? Interaction.** First check all conditions (require), then update state (effects), then make external calls (interaction). This order prevents reentrancy attacks because state changes are visible to the attacker before they can re-enter the function.
 </details>
 
 ### TypeScript: Storage Layout Calculator
@@ -871,6 +871,48 @@ const decoded = ABIDecoder.decode('0x000000000000000000000000abc1230000000000000
 console.log(`Decoded: ${decoded[0]}, ${decoded[1]}`);
 ```
 
+
+// solidity
+// distributed-ledger-crypto implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'solidity', data: { topic: 'distributed-ledger-crypto' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Solidity is the most widely used language for EVM-compatible smart contracts.
@@ -884,7 +926,7 @@ console.log(`Decoded: ${decoded[0]}, ${decoded[1]}`);
 
 ## Practical Takeaways
 
-1. Always follow Check-Effects-Interactions — update state before external calls.
+1. Always follow Check-Effects-Interactions � update state before external calls.
 2. Use OpenZeppelin's audited contracts for standards (ERC-20, ERC-721) rather than writing from scratch.
 3. Implement the proxy pattern for production contracts that may need future upgrades.
 4. Use `calldata` for read-only function parameters and pack struct fields to save gas.

@@ -711,10 +711,10 @@ class ContainerProfiler {
 
   private generateRecommendations(m: ContainerMetrics, score: number): string[] {
     const recs: string[] = [];
-    if (m.cpuPercent < 5) recs.push(`Low CPU (${m.cpuPercent}%) â€” consider rightsizing or consolidating`);
-    if (m.memoryMB < 10) recs.push(`Low memory usage â€” container may be over-provisioned`);
-    if (m.cpuPercent > 90) recs.push(`High CPU (${m.cpuPercent}%) â€” consider scaling out`);
-    if (score < 50) recs.push('Poor efficiency â€” review resource requests and limits');
+    if (m.cpuPercent < 5) recs.push(`Low CPU (${m.cpuPercent}%) — consider rightsizing or consolidating`);
+    if (m.memoryMB < 10) recs.push(`Low memory usage — container may be over-provisioned`);
+    if (m.cpuPercent > 90) recs.push(`High CPU (${m.cpuPercent}%) — consider scaling out`);
+    if (score < 50) recs.push('Poor efficiency — review resource requests and limits');
     return recs;
   }
 
@@ -809,7 +809,7 @@ class NetworkAnalyzer {
 
       if (!matchingPolicy) {
         blocked.push(flow);
-        anomalies.push({ flow, reason: `No network policy allows ${flow.source} â†’ ${flow.destination}`, severity: 'high' });
+        anomalies.push({ flow, reason: `No network policy allows ${flow.source} ? ${flow.destination}`, severity: 'high' });
         continue;
       }
 
@@ -842,7 +842,7 @@ class NetworkAnalyzer {
           result.anomalies.map(a =>
             `| ${a.flow.source} | ${a.flow.destination} | ${a.flow.port} | ${a.reason} | ${a.severity} |`
           ).join('\n')
-        : 'âœ… All traffic conforms to network policies');
+        : '? All traffic conforms to network policies');
   }
 }
 
@@ -892,6 +892,48 @@ console.log(analyzer.generateReport(result));
 
 ---
 
+
+// containerization
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'containerization', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Docker's client-server architecture separates the CLI from the daemon, which delegates to containerd and runc for container execution.

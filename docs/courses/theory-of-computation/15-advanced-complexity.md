@@ -22,7 +22,7 @@
 | Circuit Complexity | Size/depth of Boolean circuits | Non-uniform computation model |
 | Interactive Proofs | IP = PSPACE | Verifier convinced by powerful prover |
 | PCP Theorem | NP = PCP(log n, 1) | Probabilistic verification of proofs |
-| Barriers | Relativization, natural proofs | Why P ≠ NP is hard to prove |
+| Barriers | Relativization, natural proofs | Why P ? NP is hard to prove |
 
 
 
@@ -44,25 +44,25 @@ flowchart LR
 
 ### 14.1 The BQP Complexity Class
 
-**BQP** (Bounded-error Quantum Polynomial Time) is the class of problems solvable by a quantum computer in polynomial time with error probability ≤ 1/3.
+**BQP** (Bounded-error Quantum Polynomial Time) is the class of problems solvable by a quantum computer in polynomial time with error probability = 1/3.
 
 **Relationships:**
-- P ⊆ BQP ⊆ PSPACE
+- P ? BQP ? PSPACE
 - BQP contains problems not known to be in P (e.g., factoring, discrete log)
 - BQP is believed to be incomparable with NP (neither contains the other)
-- Shor's algorithm: factoring ∈ BQP (exponential speedup over classical)
-- Grover's algorithm: unstructured search ∈ BQP (quadratic speedup)
+- Shor's algorithm: factoring ? BQP (exponential speedup over classical)
+- Grover's algorithm: unstructured search ? BQP (quadratic speedup)
 
-**Significance:** If BQP ⊈ NP, then quantum computers can efficiently solve problems whose solutions cannot even be verified classically — a profound expansion of tractable computation.
+**Significance:** If BQP ? NP, then quantum computers can efficiently solve problems whose solutions cannot even be verified classically � a profound expansion of tractable computation.
 
 ### 14.3 Log-Space Reductions and Completeness
 
-A **log-space reduction** (A ≤_L B) is a reduction computable in O(log n) space (on a TM with read-only input and write-only output).
+A **log-space reduction** (A =_L B) is a reduction computable in O(log n) space (on a TM with read-only input and write-only output).
 
 **Properties:**
-- ≤_L is transitive.
-- If A ≤_L B and B ∈ L, then A ∈ L.
-- NL-completeness is defined using ≤_L reductions (not ≤_P).
+- =_L is transitive.
+- If A =_L B and B ? L, then A ? L.
+- NL-completeness is defined using =_L reductions (not =_P).
 
 **PATH** is NL-complete under log-space reductions.
 
@@ -71,50 +71,50 @@ A **log-space reduction** (A ≤_L B) is a reduction computable in O(log n) spac
 The polynomial hierarchy extends the concepts of P, NP, and co-NP using **oracle machines** with alternating quantifiers.
 
 **Definition by oracle machines:**
-- Î£â‚€ = Î â‚€ = Î”â‚€ = P
-- Î£â‚ = NP
-- Î â‚ = co-NP
-- For i â‰¥ 1: Î£_{i+1} = NP^{Î£_i} (NP with oracle for Î£_i)
-- Î _{i+1} = co-Î£_{i+1}
-- Î”_{i+1} = P^{Î£_i}
+- Σ₀ = Π₀ = Δ₀ = P
+- Σ₁ = NP
+- Π₁ = co-NP
+- For i ≥ 1: Σ_{i+1} = NP^{Σ_i} (NP with oracle for Σ_i)
+- Π_{i+1} = co-Σ_{i+1}
+- Δ_{i+1} = P^{Σ_i}
 
 **Definition by quantifiers:**
-- Î£áµ¢: problems of the form { x | âˆƒyâ‚ âˆ€yâ‚‚ âˆƒyâ‚ƒ â€¦ Qáµ¢yáµ¢ R(x, yâ‚, â€¦, yáµ¢) }
-  where Qáµ¢ = âˆƒ if i is odd, âˆ€ if i is even.
-- Î áµ¢: same but starting with âˆ€.
-- Each yâ±¼ has length polynomial in |x|.
+- Σᵢ: problems of the form { x | ∃y₁ ∀y₂ ∃y₃ … Qᵢyᵢ R(x, y₁, …, yᵢ) }
+  where Qᵢ = ∃ if i is odd, ∀ if i is even.
+- Πᵢ: same but starting with ∀.
+- Each yⱼ has length polynomial in |x|.
 - R is a polynomial-time computable predicate.
 
 **Properties:**
-- PH = âˆª_{i â‰¥ 0} Î£_i = âˆª_{i â‰¥ 0} Î _i
-- If Î£_i = Î _i for any i, then PH collapses to Î£_i.
+- PH = ∪_{i ≥ 0} Σ_i = ∪_{i ≥ 0} Π_i
+- If Σ_i = Π_i for any i, then PH collapses to Σ_i.
 - If P = NP, then PH collapses to P.
 - If PH collapses, it's considered evidence against the equality.
 
 **Problems in higher levels:**
-- MIN-CIRCUIT (is a given Boolean circuit minimal?) âˆˆ Î£â‚‚.
-- SAT âˆˆ Î£â‚ = NP.
-- UNSAT âˆˆ Î â‚ = co-NP.
+- MIN-CIRCUIT (is a given Boolean circuit minimal?) ∈ Σ₂.
+- SAT ∈ Σ₁ = NP.
+- UNSAT ∈ Π₁ = co-NP.
 
 ### 14.5 co-NP
 
-**co-NP** = { L | LÌ… âˆˆ NP }.
+**co-NP** = { L | L̅ ∈ NP }.
 
 A problem is in co-NP if "no" instances have short proofs (certificates for rejection).
 
-**Example: TAUTOLOGY** = { Ï† | Ï† is true for all assignments } âˆˆ co-NP.
-- A "no" instance has a certificate: a satisfying assignment for Â¬Ï†.
+**Example: TAUTOLOGY** = { φ | φ is true for all assignments } ∈ co-NP.
+- A "no" instance has a certificate: a satisfying assignment for ¬φ.
 - But a "yes" instance (a tautology) has no obvious short proof.
 
 **Relationship:**
-- NP â‰  co-NP is believed but not proven.
-- If NP â‰  co-NP, then P â‰  NP.
+- NP ≠ co-NP is believed but not proven.
+- If NP ≠ co-NP, then P ≠ NP.
 - For the complement of an NP-complete problem, we don't expect short proofs.
 
 ### 14.6 Circuit Complexity
 
 A **Boolean circuit** is a directed acyclic graph (DAG) where:
-- Leaves = input variables (xâ‚, â€¦, xâ‚™).
+- Leaves = input variables (x₁, …, xₙ).
 - Internal nodes = logic gates (AND, OR, NOT).
 - One root = output.
 
@@ -123,18 +123,18 @@ A **Boolean circuit** is a directed acyclic graph (DAG) where:
 - **Depth:** Length of longest path from input to output (analogous to parallel time).
 
 **P/poly:** Languages decidable by polynomial-size Boolean circuits (non-uniform model).
-- P âŠ† P/poly (any polynomial-time TM can be simulated by polynomial-size circuits).
+- P ⊆ P/poly (any polynomial-time TM can be simulated by polynomial-size circuits).
 - There exist undecidable languages in P/poly (since circuits can encode arbitrary finite information).
-- **Karp-Lipton theorem:** If NP âŠ† P/poly, then PH collapses to Î£â‚‚.
+- **Karp-Lipton theorem:** If NP ⊆ P/poly, then PH collapses to Σ₂.
 
 **Circuit lower bounds:**
 Proving that certain functions require large circuits is notoriously difficult.
-- NEXP âŠ‚ P/poly is known (there exist problems requiring exponential-size circuits).
-- But we cannot prove that SAT requires super-polynomial circuits (this would imply P â‰  NP).
+- NEXP ⊂ P/poly is known (there exist problems requiring exponential-size circuits).
+- But we cannot prove that SAT requires super-polynomial circuits (this would imply P ≠ NP).
 - **Natural proofs barrier** (Razborov-Rudich): any circuit lower bound proof that is "natural" would also prove that certain cryptographic primitives don't exist, suggesting that standard proof techniques are insufficient.
 
 **NC (Nick's Class):** Problems solvable by circuits with polynomial size and polylogarithmic depth.
-- NC âŠ† P (NC represents efficient parallel computation).
+- NC ⊆ P (NC represents efficient parallel computation).
 - P-complete problems (like CIRCUIT-VALUE) are those not believed to be in NC.
 
 ### 14.7 Interactive Proofs (IP)
@@ -144,21 +144,21 @@ An **interactive proof system** consists of a prover (P, unbounded computational
 **Class IP:** Languages with interactive proof systems.
 
 **Important results:**
-- **IP = PSPACE** (Shamir's theorem, 1990). This is a landmark result showing that interactive proofs are enormously powerful â€” equivalent to polynomial space.
-- co-NP âŠ† IP (since co-NP âŠ† PSPACE = IP). This means tautologies have interactive proofs.
-- **Graph Non-Isomorphism** âˆˆ IP (actually in AM, a related class).
+- **IP = PSPACE** (Shamir's theorem, 1990). This is a landmark result showing that interactive proofs are enormously powerful — equivalent to polynomial space.
+- co-NP ⊆ IP (since co-NP ⊆ PSPACE = IP). This means tautologies have interactive proofs.
+- **Graph Non-Isomorphism** ∈ IP (actually in AM, a related class).
 
-**Significance:** Interactive proofs show that a computationally bounded verifier can be convinced of the truth of statements far beyond what they could verify deterministically â€” if interaction and randomization are allowed.
+**Significance:** Interactive proofs show that a computationally bounded verifier can be convinced of the truth of statements far beyond what they could verify deterministically — if interaction and randomization are allowed.
 
 ### 14.8 Probabilistic Complexity (BPP)
 
-**BPP** (Bounded-error Probabilistic Polynomial time): Languages decidable by a probabilistic TM with error probability â‰¤ 1/3 on every input.
+**BPP** (Bounded-error Probabilistic Polynomial time): Languages decidable by a probabilistic TM with error probability ≤ 1/3 on every input.
 
 **Important facts:**
-- P âŠ† BPP âŠ† PSPACE.
+- P ⊆ BPP ⊆ PSPACE.
 - It's believed that BPP = P (derandomization).
-- **Adleman's theorem:** BPP âŠ† P/poly (every BPP language has polynomial-size circuits).
-- **Sipser-GÃ¡cs theorem:** BPP âŠ† Î£â‚‚ âˆ© Î â‚‚ (BPP is in the second level of the polynomial hierarchy).
+- **Adleman's theorem:** BPP ⊆ P/poly (every BPP language has polynomial-size circuits).
+- **Sipser-Gács theorem:** BPP ⊆ Σ₂ ∩ Π₂ (BPP is in the second level of the polynomial hierarchy).
 
 ### 14.9 Probabilistically Checkable Proofs (PCP)
 
@@ -177,16 +177,16 @@ NP = PCP(log n, 1)
 
 ```
 EXPSPACE
-    â†‘
+    ↑
    PSPACE  = IP
-    â†‘
+    ↑
    PH (Polynomial Hierarchy)
   /  \
- Î£â‚‚   Î â‚‚
+ Σ₂   Π₂
   \  /
    NP    co-NP
   /  \
-  NPâˆ©co-NP
+  NP∩co-NP
    |
    P
   / \
@@ -204,38 +204,38 @@ Note: Many containments are not known to be strict.
 **AM** (Arthur-Merlin): Languages where Arthur sends random bits first, then Merlin responds.
 
 **Relationships:**
-- NP ⊆ MA ⊆ AM ⊆ Π₂
-- Graph Non-Isomorphism ∈ AM (but not known to be in NP)
-- If co-NP ⊆ AM, then PH collapses
-- MA and AM are considered "interactive proof lite" — limited interaction but more than NP
+- NP ? MA ? AM ? ?2
+- Graph Non-Isomorphism ? AM (but not known to be in NP)
+- If co-NP ? AM, then PH collapses
+- MA and AM are considered "interactive proof lite" � limited interaction but more than NP
 
 **Significance:** These classes model public-coin proof systems where the verifier only sends random bits. Goldwasser-Sipser showed public-coin = private-coin (IP = AM with poly rounds).
 
 ## Examples
 
-### Example 14.1: MIN-CIRCUIT is in Î£â‚‚
+### Example 14.1: MIN-CIRCUIT is in Σ₂
 
-MIN-CIRCUIT = { âŸ¨CâŸ© | C is a Boolean circuit with no smaller equivalent circuit }.
+MIN-CIRCUIT = { ⟨C⟩ | C is a Boolean circuit with no smaller equivalent circuit }.
 
-To check if C âˆˆ MIN-CIRCUIT: For every smaller circuit C' (âˆ€), there exists an input x such that C(x) â‰  C'(x). This is âˆ€âˆƒ = Î â‚‚ formulation.
+To check if C ∈ MIN-CIRCUIT: For every smaller circuit C' (∀), there exists an input x such that C(x) ≠ C'(x). This is ∀∃ = Π₂ formulation.
 
 Or: There exists no smaller equivalent circuit. Actually the logical formulation:
-- C is minimal iff âˆ€C' (|C'| < |C|) â‡’ âˆƒx (C(x) â‰  C'(x)).
-- This is âˆ€C' âˆƒx (|C'| < |C| â‡’ C(x) â‰  C'(x)) â€” a âˆ€âˆƒ pattern = Î â‚‚.
-- Equivalent: the complement (âˆƒC') is in Î£â‚‚.
+- C is minimal iff ∀C' (|C'| < |C|) ⇒ ∃x (C(x) ≠ C'(x)).
+- This is ∀C' ∃x (|C'| < |C| ⇒ C(x) ≠ C'(x)) — a ∀∃ pattern = Π₂.
+- Equivalent: the complement (∃C') is in Σ₂.
 
-### Example 14.2: Graph Non-Isomorphism âˆˆ IP
+### Example 14.2: Graph Non-Isomorphism ∈ IP
 
-Given graphs Gâ‚ and Gâ‚‚, the prover wants to convince the verifier they are not isomorphic.
+Given graphs G₁ and G₂, the prover wants to convince the verifier they are not isomorphic.
 
 **Protocol:**
-1. Verifier: picks random permutation Ï€, computes H = Ï€(G_b) where b âˆˆ {1,2} is random.
+1. Verifier: picks random permutation π, computes H = π(G_b) where b ∈ {1,2} is random.
 2. Verifier sends H to prover.
 3. Prover: responds with b', claiming H came from G_{b'}.
 4. Verifier: accepts if b = b'.
 
-If Gâ‚ â‰… Gâ‚‚: the prover cannot know b (H could come from either graph), so the prover succeeds with probability â‰¤ 1/2.
-If Gâ‚ â‰…Ì¸ Gâ‚‚: the prover can determine b (H came from exactly one graph), so the prover always succeeds.
+If G₁ ≅ G₂: the prover cannot know b (H could come from either graph), so the prover succeeds with probability ≤ 1/2.
+If G₁ ≇ G₂: the prover can determine b (H came from exactly one graph), so the prover always succeeds.
 
 ### Example 14.3: BPP = P Under Derandomization Assumptions
 
@@ -244,24 +244,24 @@ If there exist functions with exponential circuit complexity (true under plausib
 ### Example 14.4: PCP and Hardness of Approximation
 
 For MAX-3SAT (find an assignment satisfying the maximum number of clauses):
-- The PCP theorem implies: for some Îµ > 0, it's NP-hard to distinguish satisfiable 3CNF formulas from those where at most (1âˆ’Îµ) fraction of clauses are satisfiable.
-- This means approximating MAX-3SAT within a factor of (1âˆ’Îµ) is NP-hard.
+- The PCP theorem implies: for some ε > 0, it's NP-hard to distinguish satisfiable 3CNF formulas from those where at most (1−ε) fraction of clauses are satisfiable.
+- This means approximating MAX-3SAT within a factor of (1−ε) is NP-hard.
 
 ### Example 14.5: The Natural Proofs Barrier
 
-Razborov and Rudich showed that any "natural" proof that P â‰  NP (a proof that uses a combinatorial property of Boolean functions that is both constructive and large) would imply that certain cryptographic pseudorandom generators don't exist. Since most experts believe such generators do exist, natural proofs cannot work.
+Razborov and Rudich showed that any "natural" proof that P ≠ NP (a proof that uses a combinatorial property of Boolean functions that is both constructive and large) would imply that certain cryptographic pseudorandom generators don't exist. Since most experts believe such generators do exist, natural proofs cannot work.
 
-This explains why progress on circuit lower bounds has been slow â€” the tools that would traditionally work are blocked by this barrier.
+This explains why progress on circuit lower bounds has been slow — the tools that would traditionally work are blocked by this barrier.
 
 
 
 ## Concept Comparison Table
 | Class | Definition | Example |
 |-------|------------|---------|
-| Σ₁ | NP (∃ quantifier) | SAT |
-| Π₁ | co-NP (∀ quantifier) | TAUTOLOGY |
-| Σ₂ | NP^{NP} (∃∀) | MIN-CIRCUIT |
-| Π₂ | co-NP^{NP} (∀∃) | Complement of MIN-CIRCUIT |
+| S1 | NP (? quantifier) | SAT |
+| ?1 | co-NP (? quantifier) | TAUTOLOGY |
+| S2 | NP^{NP} (??) | MIN-CIRCUIT |
+| ?2 | co-NP^{NP} (??) | Complement of MIN-CIRCUIT |
 
 ## Quick Reference
 | Concept | Definition |
@@ -276,7 +276,7 @@ This explains why progress on circuit lower bounds has been slow â€” the to
 | Domain | Advanced Complexity Concept |
 |--------|---------------------------|
 | Cryptography | Zero-knowledge proofs (IP) |
-| Approximation | PCP → hardness of approximation |
+| Approximation | PCP ? hardness of approximation |
 | Parallel computing | NC = efficient parallel algorithms |
 | Circuit design | Circuit lower bounds |
 | Quantum computing | BQP and relation to classical classes |
@@ -312,7 +312,7 @@ function applyPermutation(g: Graph, perm: number[]): Graph {
 
 function areIsomorphic(g1: Graph, g2: Graph): boolean {
   const n = g1.length;
-  // Check all permutations (n! — only for small n)
+  // Check all permutations (n! � only for small n)
   const allPerms = (arr: number[]): number[][] => {
     if (arr.length <= 1) return [arr];
     const result: number[][] = [];
@@ -462,7 +462,7 @@ console.log(xorCircuit.evaluate([true, true]));   // false
 
 **Q1.** The polynomial hierarchy collapses to P if:
 - A) L = NL
-- B) P = NP ✓
+- B) P = NP ?
 - C) PSPACE = EXPTIME
 - D) NP = co-NP
 
@@ -473,29 +473,29 @@ console.log(xorCircuit.evaluate([true, true]));   // false
 
 **Q2.** Shamir's theorem proved:
 - A) P = NP
-- B) IP = PSPACE ✓
+- B) IP = PSPACE ?
 - C) NP = PCP
 - D) BPP = P
 
 <details>
 <summary>Answer</summary>
-**B)** Interactive proofs characterize PSPACE — a landmark result from 1990.
+**B)** Interactive proofs characterize PSPACE � a landmark result from 1990.
 </details>
 
 **Q3.** The PCP theorem states NP = PCP(log n, ___):
 - A) 0
-- B) 1 ✓
+- B) 1 ?
 - C) n
 - D) log n
 
 <details>
 <summary>Answer</summary>
-**B)** NP = PCP(log n, 1) — proofs verifiable with O(log n) random bits and constant queries.
+**B)** NP = PCP(log n, 1) � proofs verifiable with O(log n) random bits and constant queries.
 </details>
 
 **Q4.** The natural proofs barrier shows:
-- A) P ≠ NP is proven
-- B) Standard proof techniques can't resolve P vs NP ✓
+- A) P ? NP is proven
+- B) Standard proof techniques can't resolve P vs NP ?
 - C) Circuit lower bounds are easy
 - D) Cryptography is impossible
 
@@ -506,13 +506,13 @@ console.log(xorCircuit.evaluate([true, true]));   // false
 
 **Q5.** BPP represents problems solvable with:
 - A) Deterministic algorithms
-- B) Probabilistic algorithms with bounded error ✓
+- B) Probabilistic algorithms with bounded error ?
 - C) Nondeterministic algorithms
 - D) Quantum algorithms
 
 <details>
 <summary>Answer</summary>
-**B)** BPP = probabilistic polynomial time with error ≤ 1/3 on every input.
+**B)** BPP = probabilistic polynomial time with error = 1/3 on every input.
 </details>
 
 ## Practical Takeaways
@@ -538,33 +538,33 @@ type ProblemInstance = {
 
 class PvsNP {
   static ladnerTheorem(): string {
-    return "Ladner's Theorem (1975): If P ≠ NP, then NPI (NP-intermediate) is non-empty — " +
+    return "Ladner's Theorem (1975): If P ? NP, then NPI (NP-intermediate) is non-empty � " +
       "there exist problems in NP that are neither in P nor NP-complete. " +
       "Examples believed to be in NPI: Graph Isomorphism, Factoring.";
   }
 
   static polynomialHierarchy(): Map<string, string> {
     const ph = new Map<string, string>();
-    ph.set("Σ₀P = Π₀P = P", "Base level: deterministic polynomial time");
-    ph.set("Σ₁P = NP", "∃ quantifier: existential problems");
-    ph.set("Π₁P = co-NP", "∀ quantifier: universal problems");
-    ph.set("Σ₂P = NP^NP", "∃∀: problems with existential+universal quantifiers");
-    ph.set("Π₂P = co-NP^NP", "∀∃: complement");
-    ph.set("PH = ∪ₖ ΣₖP", "Polynomial hierarchy (may collapse at some level)");
+    ph.set("S0P = ?0P = P", "Base level: deterministic polynomial time");
+    ph.set("S1P = NP", "? quantifier: existential problems");
+    ph.set("?1P = co-NP", "? quantifier: universal problems");
+    ph.set("S2P = NP^NP", "??: problems with existential+universal quantifiers");
+    ph.set("?2P = co-NP^NP", "??: complement");
+    ph.set("PH = ?? S?P", "Polynomial hierarchy (may collapse at some level)");
     return ph;
   }
 
   static NPCompletenessReductionChain(): string[] {
     return [
       "SAT (Cook-Levin)",
-      "   ↓ polynomial reduction",
+      "   ? polynomial reduction",
       "3-SAT",
-      "   ↓",
-      "INDEPENDENT SET → VERTEX COVER → HAMILTONIAN PATH → TSP",
-      "   ↓                      ↓",
-      "CLIQUE                   SUBSET SUM → BIN PACKING → PARTITION",
-      "   ↓",
-      "SET COVER → HITTING SET → INTEGER PROGRAMMING"
+      "   ?",
+      "INDEPENDENT SET ? VERTEX COVER ? HAMILTONIAN PATH ? TSP",
+      "   ?                      ?",
+      "CLIQUE                   SUBSET SUM ? BIN PACKING ? PARTITION",
+      "   ?",
+      "SET COVER ? HITTING SET ? INTEGER PROGRAMMING"
     ];
   }
 
@@ -595,7 +595,7 @@ class CircuitComplexity {
     return "P/poly = languages decidable by polynomial-size circuits. " +
       "Contains all of P (every P problem has poly-size circuits). " +
       "May contain undecidable problems! (e.g., unary encoding of halting problem) " +
-      "Karp-Lipton theorem: If NP ⊆ P/poly, then PH collapses to Σ₂P.";
+      "Karp-Lipton theorem: If NP ? P/poly, then PH collapses to S2P.";
   }
 }
 
@@ -614,8 +614,8 @@ class InteractiveProof {
       "Verifier V is convinced that P knows w, but learns nothing about w.",
       "",
       "Graph Isomorphism example:",
-      "1. P sends H = π(G₁) (random permutation of G₁).",
-      "2. V randomly asks: show isomorphism G₁ ≅ H or G₂ ≅ H.",
+      "1. P sends H = p(G1) (random permutation of G1).",
+      "2. V randomly asks: show isomorphism G1 ? H or G2 ? H.",
       "3. P reveals appropriate isomorphism (or both if she knows both).",
       "4. Repeat k times: probability of cheating = 2^(-k).",
       "",
@@ -629,7 +629,7 @@ class PCPTheorem {
     return "PCP Theorem (Arora-Safra, 1992): NP = PCP(O(log n), O(1)). " +
       "Every NP problem has a probabilistically checkable proof where " +
       "the verifier reads only O(log n) random bits and O(1) query bits. " +
-      "This revolutionized approximation algorithms — many optimization " +
+      "This revolutionized approximation algorithms � many optimization " +
       "problems have hard thresholds beyond which approximation is NP-hard.";
   }
 }
@@ -646,11 +646,11 @@ console.log(InteractiveProof.IPequalsPSPACE());
 console.log(PCPTheorem.statement());
 ```
 
-// ─────────────────────────────────────────────────────
-// Cook-Levin Reduction Helper — demonstrates the
+// -----------------------------------------------------
+// Cook-Levin Reduction Helper � demonstrates the
 // core idea of the Cook-Levin theorem: encoding a TM
 // computation as a Boolean formula.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class CookLevinHelper {
   // Build a Boolean formula that encodes the acceptance
@@ -664,11 +664,11 @@ class CookLevinHelper {
       for (let i = 0; i < tapeLength; i++) {
         const symbols = inputSymbols;
         // At least one symbol
-        clauses.push(`(${symbols.map(s => varName(t, i, s)).join(" ∨ ")})`);
+        clauses.push(`(${symbols.map(s => varName(t, i, s)).join(" ? ")})`);
         // At most one symbol (pairwise)
         for (let a = 0; a < symbols.length; a++) {
           for (let b = a + 1; b < symbols.length; b++) {
-            clauses.push(`(¬${varName(t, i, symbols[a])} ∨ ¬${varName(t, i, symbols[b])})`);
+            clauses.push(`(�${varName(t, i, symbols[a])} ? �${varName(t, i, symbols[b])})`);
           }
         }
       }
@@ -701,25 +701,25 @@ class CookLevinHelper {
       "  3. Clauses for valid transitions (local)",
       "  4. Clauses for acceptance",
       "",
-      "Formula size: O(p(n)³) where p(n) is the TM's runtime.",
-      "This proves SAT is NP-hard, and since SAT ∈ NP,",
+      "Formula size: O(p(n)�) where p(n) is the TM's runtime.",
+      "This proves SAT is NP-hard, and since SAT ? NP,",
       "SAT is NP-complete."
     ];
   }
 }
 
-// ─────────────────────────────────────────────────────
-// NP-Completeness Checker — given a problem's properties,
+// -----------------------------------------------------
+// NP-Completeness Checker � given a problem's properties,
 // checks if it satisfies the conditions for NP-completeness.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class NPCompletenessChecker {
   static check(name: string, inNP: boolean, hasReductionFromSAT: boolean): string[] {
     const output: string[] = [];
     output.push(`NP-Completeness Check: ${name}`);
     output.push("=".repeat(40));
-    output.push(`  1. Is the problem in NP?         ${inNP ? "✓" : "✗"}`);
-    output.push(`  2. SAT ≤_P this problem?         ${hasReductionFromSAT ? "✓" : "✗"}`);
+    output.push(`  1. Is the problem in NP?         ${inNP ? "?" : "?"}`);
+    output.push(`  2. SAT =_P this problem?         ${hasReductionFromSAT ? "?" : "?"}`);
 
     if (inNP && hasReductionFromSAT) {
       output.push("\n  Verdict: NP-COMPLETE");
@@ -742,19 +742,19 @@ class NPCompletenessChecker {
     return [
       "Classic NP-Complete Problems (Karp's 21):",
       "",
-      "  SAT / 3SAT              — Boolean satisfiability",
-      "  Vertex Cover            — Vertex cover of size k in graph",
-      "  Clique                  — Clique of size k in graph",
-      "  Hamiltonian Path/Cycle  — Path visiting all vertices",
-      "  Traveling Salesman      — Shortest Hamiltonian cycle",
-      "  Subset Sum              — Subset summing to target",
-      "  Knapsack                — Max value under weight limit",
-      "  Graph Coloring          — k-colorability of graph",
-      "  Set Cover               — Smallest subcollection covering universe",
-      "  Independent Set         — Independent set of size k",
-      "  Exact Cover             — Exact cover decision problem",
-      "  Max Cut                 — Maximum cut in graph",
-      "  Integer Programming     — ILP feasibility"
+      "  SAT / 3SAT              � Boolean satisfiability",
+      "  Vertex Cover            � Vertex cover of size k in graph",
+      "  Clique                  � Clique of size k in graph",
+      "  Hamiltonian Path/Cycle  � Path visiting all vertices",
+      "  Traveling Salesman      � Shortest Hamiltonian cycle",
+      "  Subset Sum              � Subset summing to target",
+      "  Knapsack                � Max value under weight limit",
+      "  Graph Coloring          � k-colorability of graph",
+      "  Set Cover               � Smallest subcollection covering universe",
+      "  Independent Set         � Independent set of size k",
+      "  Exact Cover             � Exact cover decision problem",
+      "  Max Cut                 � Maximum cut in graph",
+      "  Integer Programming     � ILP feasibility"
     ];
   }
 }
@@ -772,6 +772,48 @@ console.log("");
 console.log(NPCompletenessChecker.classicList().join("\n"));
 ```
 
+
+// advanced complexity
+// automata-complexity implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'advanced complexity', data: { topic: 'automata-complexity' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Log-space reductions define completeness for L and NL.
@@ -779,7 +821,7 @@ console.log(NPCompletenessChecker.classicList().join("\n"));
 - co-NP contains complement languages of NP; believed to be distinct from NP.
 - Circuit complexity studies the size/depth of Boolean circuits needed for computation.
 - P/poly contains all languages decidable by polynomial-size circuits (may include undecidable problems).
-- Interactive proofs (IP) equal PSPACE — a profound result.
+- Interactive proofs (IP) equal PSPACE � a profound result.
 - The PCP theorem revolutionized approximation algorithms.
 - Major barriers (relativization, natural proofs, algebrization) explain why P vs NP is so difficult.
 
@@ -790,24 +832,24 @@ console.log(NPCompletenessChecker.classicList().join("\n"));
 1. Show that if P = NP, then PH collapses to P.
 2. Explain why TAUTOLOGY is in co-NP.
 3. What does it mean for a problem to be co-NP-complete?
-4. Describe the difference between Î£â‚‚ and Î â‚‚ in the polynomial hierarchy.
-5. Show that NC âŠ† P.
+4. Describe the difference between Σ₂ and Π₂ in the polynomial hierarchy.
+5. Show that NC ⊆ P.
 
 ### Intermediate
 
-6. Prove that Graph Isomorphism is in NP âˆ© co-AM (or at least in NP).
-7. Show that if NP âŠ† P/poly, then PH collapses to Î£â‚‚ (Karp-Lipton theorem sketch).
+6. Prove that Graph Isomorphism is in NP ∩ co-AM (or at least in NP).
+7. Show that if NP ⊆ P/poly, then PH collapses to Σ₂ (Karp-Lipton theorem sketch).
 8. Explain the PCP theorem and its significance for approximation algorithms.
-9. Show that BPP âŠ† P/poly (Adleman's theorem).
-10. Prove that IP âŠ† PSPACE by describing a polynomial-space algorithm for an arbitrary interactive proof system.
+9. Show that BPP ⊆ P/poly (Adleman's theorem).
+10. Prove that IP ⊆ PSPACE by describing a polynomial-space algorithm for an arbitrary interactive proof system.
 
 ### Advanced
 
 11. Prove Shamir's theorem: IP = PSPACE.
 12. Show that the Graph Non-Isomorphism protocol is sound and complete.
 13. Explain the natural proofs barrier and its implications for circuit complexity.
-14. Prove that co-NP âŠ† IP by showing a protocol for UNSAT.
-15. Show that PH âŠ† PSPACE (the polynomial hierarchy is contained in polynomial space).
+14. Prove that co-NP ⊆ IP by showing a protocol for UNSAT.
+15. Show that PH ⊆ PSPACE (the polynomial hierarchy is contained in polynomial space).
 
 ## Further Reading
 

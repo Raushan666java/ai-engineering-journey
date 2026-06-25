@@ -27,7 +27,7 @@ After completing this chapter, you will be able to:
 | Induction | Base case + $P(k) \rightarrow P(k+1)$ | The standard tool for proving statements about all natural numbers |
 | Strong Induction | All smaller cases imply the next | Needed when $P(k)$ alone is insufficient to prove $P(k+1)$ |
 | Structural Induction | Prove property on constructors of a recursive definition | Essential for recursively defined data structures |
-| Counterexample | One element disproves $\forall x\; P(x)$ | The simplest disproof method — find one exception |
+| Counterexample | One element disproves $\forall x\; P(x)$ | The simplest disproof method ? find one exception |
 
 ## Chapter Roadmap
 
@@ -86,7 +86,7 @@ A proof by contradiction assumes the negation of the statement to be proved and 
 
 **Theorem 4.6.** There are infinitely many primes.
 
-*Proof.* Assume, to the contrary, that there are finitely many primes $p_1, p_2, \ldots, p_k$. Consider $N = p_1 p_2 \cdots p_k + 1$. Since $N > 1$, $N$ has a prime divisor $p$. But $p$ cannot be any $p_i$ because $N \equiv 1 \pmod{p_i}$ for each $i$. Hence $p$ is a prime not in our list — contradiction. $\square$
+*Proof.* Assume, to the contrary, that there are finitely many primes $p_1, p_2, \ldots, p_k$. Consider $N = p_1 p_2 \cdots p_k + 1$. Since $N > 1$, $N$ has a prime divisor $p$. But $p$ cannot be any $p_i$ because $N \equiv 1 \pmod{p_i}$ for each $i$. Hence $p$ is a prime not in our list ? contradiction. $\square$
 
 ```typescript
 function isPrime(n: number): boolean {
@@ -127,7 +127,7 @@ To disprove a universally quantified statement $\forall x\; P(x)$, it suffices t
 
 *Counterexample.* For $n = 41$, we get $41^2 + 41 + 41 = 41(41 + 1 + 1) = 41 \cdot 43$, which is composite. $\square$
 
-> **One-Sentence Takeaway:** One carefully chosen counterexample is sufficient to refute any universal claim — you never need to disprove "all" by checking everything.
+> **One-Sentence Takeaway:** One carefully chosen counterexample is sufficient to refute any universal claim ? you never need to disprove "all" by checking everything.
 
 ### 4.5 Mathematical Induction
 
@@ -140,7 +140,7 @@ then $P(n)$ is true for all $n \geq n_0$.
 
 **Theorem 4.7.** For all $n \geq 1$, $\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$.
 
-*Proof.* **(Base)** $n = 1$: LHS $= 1$, RHS $= 1(2)/2 = 1$. ✓
+*Proof.* **(Base)** $n = 1$: LHS $= 1$, RHS $= 1(2)/2 = 1$. ?
 
 **(Inductive step)** Assume $\sum_{i=1}^{k} i = \frac{k(k+1)}{2}$. Then:
 $$\sum_{i=1}^{k+1} i = \left(\sum_{i=1}^{k} i\right) + (k+1) = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \frac{(k+1)(k+2)}{2}$$
@@ -148,7 +148,7 @@ Thus $P(k) \implies P(k+1)$. By induction, true for all $n \geq 1$. $\square$
 
 **Theorem 4.8 (Inequality).** $2^n \geq n+1$ for all $n \geq 1$.
 
-*Proof.* Base $n=1$: $2^1 = 2 \geq 2$. ✓. Assume $2^k \geq k+1$. Then $2^{k+1} = 2 \cdot 2^k \geq 2(k+1) = 2k+2 \geq k+2$ for $k \geq 1$. So $P(k) \implies P(k+1)$. $\square$
+*Proof.* Base $n=1$: $2^1 = 2 \geq 2$. ?. Assume $2^k \geq k+1$. Then $2^{k+1} = 2 \cdot 2^k \geq 2(k+1) = 2k+2 \geq k+2$ for $k \geq 1$. So $P(k) \implies P(k+1)$. $\square$
 
 ```typescript
 // Verifying the sum formula by induction with TypeScript
@@ -186,15 +186,15 @@ Strong induction assumes all smaller instances, not just the immediate predecess
 
 **Theorem 4.9.** Every integer $n \geq 2$ can be expressed as a product of primes.
 
-*Proof.* **(Base)** $n = 2$ is prime. ✓
+*Proof.* **(Base)** $n = 2$ is prime. ?
 
 **(Strong inductive step)** Assume every integer $2, 3, \ldots, k$ is a product of primes. Consider $k+1$. If $k+1$ is prime, we are done. If $k+1$ is composite, then $k+1 = ab$ where $2 \leq a, b \leq k$. By the inductive hypothesis, $a$ and $b$ are products of primes, so their product $k+1$ is also a product of primes. $\square$
 
 **Theorem 4.10 (Fibonacci inequality).** The Fibonacci sequence $F_1 = 1$, $F_2 = 1$, $F_n = F_{n-1} + F_{n-2}$ for $n \geq 3$ satisfies $F_n < 2^n$ for all $n \geq 1$.
 
-*Proof.* Base: $F_1 = 1 < 2^1$, $F_2 = 1 < 2^2$. ✓. Assume $F_i < 2^i$ for all $i \leq k$. Then $F_{k+1} = F_k + F_{k-1} < 2^k + 2^{k-1} < 2^k + 2^k = 2^{k+1}$. $\square$
+*Proof.* Base: $F_1 = 1 < 2^1$, $F_2 = 1 < 2^2$. ?. Assume $F_i < 2^i$ for all $i \leq k$. Then $F_{k+1} = F_k + F_{k-1} < 2^k + 2^{k-1} < 2^k + 2^k = 2^{k+1}$. $\square$
 
-> **One-Sentence Takeaway:** Strong induction lets you assume the statement holds for **all** smaller numbers, not just the immediate predecessor — essential when $P(k+1)$ depends on $P(k-1)$ or earlier.
+> **One-Sentence Takeaway:** Strong induction lets you assume the statement holds for **all** smaller numbers, not just the immediate predecessor ? essential when $P(k+1)$ depends on $P(k-1)$ or earlier.
 
 ### 4.7 Structural Induction
 
@@ -206,11 +206,11 @@ Strong induction assumes all smaller instances, not just the immediate predecess
 
 *Proof.* By structural induction.
 
-**Base:** A single vertex has $v = 1$, $e = 0$, so $1 = 0 + 1$. ✓
+**Base:** A single vertex has $v = 1$, $e = 0$, so $1 = 0 + 1$. ?
 
 **Inductive step:** Let $T$ be built from subtrees $T_1$ and $T_2$. Assume $T_1$ satisfies $v_1 = e_1 + 1$ and $T_2$ satisfies $v_2 = e_2 + 1$. Then $T$ has $v = v_1 + v_2 + 1$ vertices and $e = e_1 + e_2 + 2$ edges (two new edges from root to each subtree). So $v = v_1 + v_2 + 1 = (e_1 + 1) + (e_2 + 1) + 1 = e_1 + e_2 + 3 = (e_1 + e_2 + 2) + 1 = e + 1$. $\square$
 
-> **One-Sentence Takeaway:** Structural induction mirrors the recursive definition of a data type — prove the base constructors and prove that the property is preserved by each recursive constructor.
+> **One-Sentence Takeaway:** Structural induction mirrors the recursive definition of a data type ? prove the base constructors and prove that the property is preserved by each recursive constructor.
 
 ### 4.8 Proof by Cases
 
@@ -232,7 +232,7 @@ In all cases, $n^2$ is $0$ or $1$ mod $3$. $\square$
 
 An **existence proof** demonstrates that $\exists x\; P(x)$ is true. **Constructive** proofs exhibit an explicit $c$ with $P(c)$. **Non-constructive** proofs show existence without producing an example (e.g., by contradiction or pigeonhole principle).
 
-**Constructive example:** Prove there exists a prime number between 10 and 20. Exhibit $11$ — it is prime, and $10 < 11 < 20$.
+**Constructive example:** Prove there exists a prime number between 10 and 20. Exhibit $11$ ? it is prime, and $10 < 11 < 20$.
 
 **Non-constructive example:** Prove that for any 5 points in a unit square, some pair is at most $\sqrt{2}/2$ apart. The pigeonhole principle shows existence but does not say which pair.
 
@@ -241,9 +241,9 @@ An **existence proof** demonstrates that $\exists x\; P(x)$ is true. **Construct
 ```mermaid
 flowchart TD
     A[Statement to prove] --> B{What type?}
-    B -->|Universal| C[∀x Px]
-    B -->|Existential| D[∃x Px]
-    B -->|Conditional| E[P → Q]
+    B -->|Universal| C[?x Px]
+    B -->|Existential| D[?x Px]
+    B -->|Conditional| E[P ? Q]
     C --> F[Can you find a counterexample?]
     F -->|Yes| G[Disprove with counterexample]
     F -->|No| H[Try induction for natural numbers]
@@ -252,21 +252,21 @@ flowchart TD
     I -->|No| K[Non-constructive: contradiction or pigeonhole]
     E --> L{Which approach?}
     L -->|Direct| M[Assume P, derive Q]
-    L -->|Contrapositive| N[Assume ¬Q, derive ¬P]
-    L -->|Contradiction| O[Assume P ∧ ¬Q, derive ⊥]
+    L -->|Contrapositive| N[Assume ?Q, derive ?P]
+    L -->|Contradiction| O[Assume P ? ?Q, derive ?]
     L -->|Cases| P[Split domain, prove each]
     H --> Q{Need all previous cases?}
     Q -->|No| R[Ordinary induction]
     Q -->|Yes| S[Strong induction]
 ```
 
-> **Pro Tip:** Start with direct proof — it is the most straightforward. If direct proof stalls, try the contrapositive. If that also fails, fall back to contradiction.
+> **Pro Tip:** Start with direct proof ? it is the most straightforward. If direct proof stalls, try the contrapositive. If that also fails, fall back to contradiction.
 >
 > **Pro Tip:** For existence proofs, always try a constructive approach first. The explicit witness makes the proof more informative.
 >
 > **Warning:** Induction can only prove statements about well-ordered sets (typically natural numbers). It does not apply to real numbers or arbitrary infinite sets.
 >
-> **Warning:** When using proof by contradiction, be careful that the contradiction you derive actually follows from the assumption — a "contradiction" that is merely unexpected is not a valid proof.
+> **Warning:** When using proof by contradiction, be careful that the contradiction you derive actually follows from the assumption ? a "contradiction" that is merely unexpected is not a valid proof.
 
 ## Proof Technique Comparison Table
 
@@ -347,7 +347,7 @@ flowchart TD
    - C) Circular reasoning
    - D) Hasty generalization
 
-   <details><summary>Answer</summary>**A)** Affirming the consequent assumes $P \rightarrow Q$ and $Q$ implies $P$, but $n^2$ could be even while $n$ is odd ($9^2 = 81$ is odd actually — a better counterexample: $6^2 = 36$ is even but $n = \sqrt{36} = \pm 6$ is even... wait — proper counterexample: $n = \sqrt{2}$ not integer. Actually any even $n$ gives even $n^2$, but the converse $n^2$ even $\implies n$ even is true for integers. However the fallacy is still affirming the consequent — the reasoning pattern is invalid even if the conclusion happens to be true.)</details>
+   <details><summary>Answer</summary>**A)** Affirming the consequent assumes $P \rightarrow Q$ and $Q$ implies $P$, but $n^2$ could be even while $n$ is odd ($9^2 = 81$ is odd actually ? a better counterexample: $6^2 = 36$ is even but $n = \sqrt{36} = \pm 6$ is even... wait ? proper counterexample: $n = \sqrt{2}$ not integer. Actually any even $n$ gives even $n^2$, but the converse $n^2$ even $\implies n$ even is true for integers. However the fallacy is still affirming the consequent ? the reasoning pattern is invalid even if the conclusion happens to be true.)</details>
 
 4. Structural induction is used to prove properties of:
    - A) All subsets of a set
@@ -377,11 +377,11 @@ flowchart TD
 
 **Example 4.5** (Induction). Prove $1 + 2 + 2^2 + \cdots + 2^n = 2^{n+1} - 1$ for all $n \geq 0$.
 
-*Proof.* Base $n = 0$: $2^0 = 1 = 2^{1} - 1$. ✓. Assume $P(k)$: $\sum_{i=0}^{k} 2^i = 2^{k+1} - 1$. Then $\sum_{i=0}^{k+1} 2^i = (2^{k+1} - 1) + 2^{k+1} = 2 \cdot 2^{k+1} - 1 = 2^{k+2} - 1$. Thus $P(k+1)$ holds. $\square$
+*Proof.* Base $n = 0$: $2^0 = 1 = 2^{1} - 1$. ?. Assume $P(k)$: $\sum_{i=0}^{k} 2^i = 2^{k+1} - 1$. Then $\sum_{i=0}^{k+1} 2^i = (2^{k+1} - 1) + 2^{k+1} = 2 \cdot 2^{k+1} - 1 = 2^{k+2} - 1$. Thus $P(k+1)$ holds. $\square$
 
 **Example 4.6** (Strong induction). Every integer $n \geq 12$ can be written as $4a + 5b$ for nonnegative integers $a, b$.
 
-*Proof.* Base cases: $12 = 4(3) + 5(0)$, $13 = 4(2) + 5(1)$, $14 = 4(1) + 5(2)$, $15 = 4(0) + 5(3)$. ✓. Assume $12, \ldots, k$ can be expressed. Consider $k+1$. Since $k+1 = (k-3) + 4$, and $k-3 \geq 12$ (so $k-3$ is in the range covered), we can write $k-3 = 4a + 5b$. Then $k+1 = 4(a+1) + 5b$. $\square$
+*Proof.* Base cases: $12 = 4(3) + 5(0)$, $13 = 4(2) + 5(1)$, $14 = 4(1) + 5(2)$, $15 = 4(0) + 5(3)$. ?. Assume $12, \ldots, k$ can be expressed. Consider $k+1$. Since $k+1 = (k-3) + 4$, and $k-3 \geq 12$ (so $k-3$ is in the range covered), we can write $k-3 = 4a + 5b$. Then $k+1 = 4(a+1) + 5b$. $\square$
 
 **Example 4.7** (Structural induction in TypeScript).
 
@@ -405,11 +405,11 @@ function verifyHeightBound<T>(t: BinTree<T>): boolean {
 }
 ```
 
-**Example 4.8** (Proof by contradiction — no largest integer). Prove there is no largest integer.
+**Example 4.8** (Proof by contradiction ? no largest integer). Prove there is no largest integer.
 
 *Proof.* Assume, to the contrary, that $M$ is the largest integer. Then $M + 1$ is an integer greater than $M$, contradicting the maximality of $M$. Hence no largest integer exists. $\square$
 
-**Example 4.9** (Pigeonhole — nonconstructive existence). In any set of 13 distinct integers, some pair has a difference divisible by 12.
+**Example 4.9** (Pigeonhole ? nonconstructive existence). In any set of 13 distinct integers, some pair has a difference divisible by 12.
 
 *Proof.* Consider the residues of each integer modulo 12. There are 12 possible residues ($0$ through $11$). By the pigeonhole principle, with 13 integers, two must share the same residue. Their difference is divisible by 12. $\square$
 
@@ -445,7 +445,7 @@ function sumFormula(n: number): boolean {
   return sum === actual;
 }
 const induction: InductionProof = { baseCase: 1, hypothesis: 'P(k)', inductiveStep: () => true };
-console.log('Induction holds for n≤100:', verifyInduction(induction, sumFormula, 100)); // true
+console.log('Induction holds for n=100:', verifyInduction(induction, sumFormula, 100)); // true
 
 // --- Direct Proof Step Verifier ---
 type ProofStep = { statement: string; justification: string; dependsOn: number[] };
@@ -461,8 +461,8 @@ function verifyProofChain(steps: ProofStep[]): boolean {
 const proof: ProofStep[] = [
   { statement: 'Let n be even', justification: 'Given', dependsOn: [] },
   { statement: 'n = 2k for some integer k', justification: 'Definition of even', dependsOn: [0] },
-  { statement: 'n² = 4k²', justification: 'Algebra', dependsOn: [1] },
-  { statement: 'n² = 2(2k²) is even', justification: 'Definition of even', dependsOn: [2] },
+  { statement: 'n? = 4k?', justification: 'Algebra', dependsOn: [1] },
+  { statement: 'n? = 2(2k?) is even', justification: 'Definition of even', dependsOn: [2] },
 ];
 console.log('Proof chain valid:', verifyProofChain(proof)); // true
 
@@ -484,7 +484,7 @@ function verifyFibonacciBound(upTo: number): boolean {
   }
   return true;
 }
-console.log('Fibonacci bound holds n≤20:', verifyFibonacciBound(20)); // true
+console.log('Fibonacci bound holds n=20:', verifyFibonacciBound(20)); // true
 ```
 
 ```
@@ -510,23 +510,23 @@ const sumProperty = (n: number) => {
   for (let i = 1; i <= n; i++) s += i;
   return s === sumFormula(n);
 };
-console.log('Induction (sum 1..n = n(n+1)/2) holds n≤20:', proveInduction(0, (k: number) => k + 1, sumProperty, 20, 0, (x: number) => x + 1));
+console.log('Induction (sum 1..n = n(n+1)/2) holds n=20:', proveInduction(0, (k: number) => k + 1, sumProperty, 20, 0, (x: number) => x + 1));
 
 // --- Contradiction Checker ---
 function proofByContradiction(assumptions: (() => boolean)[], conclusion: () => boolean): { valid: boolean; counterexample?: string } {
-  // If assuming ¬conclusion leads to contradiction, conclusion holds
+  // If assuming ?conclusion leads to contradiction, conclusion holds
   const allTrue = assumptions.every(a => a()) && !conclusion();
   if (allTrue) return { valid: false, counterexample: 'No contradiction found' };
   return { valid: true };
 }
-// √2 is irrational: assume rational leads to contradiction
+// v2 is irrational: assume rational leads to contradiction
 const sqrt2Rational = () => {
   for (let p = 1; p <= 100; p++)
     for (let q = 1; q <= 100; q++)
       if (p * p === 2 * q * q) return true;
   return false;
 };
-console.log('\n√2 irrational (no p,q≤100 with p²=2q²):', !sqrt2Rational());
+console.log('\nv2 irrational (no p,q=100 with p?=2q?):', !sqrt2Rational());
 
 // --- Structural Induction on Trees ---
 type Tree<T> = { tag: 'leaf'; val: T } | { tag: 'node'; val: T; left: Tree<T>; right: Tree<T> };
@@ -536,7 +536,7 @@ function treeSize<T>(t: Tree<T>): number {
 function treeDepth<T>(t: Tree<T>): number {
   return t.tag === 'leaf' ? 1 : 1 + Math.max(treeDepth(t.left), treeDepth(t.right));
 }
-// Structural induction: size ≤ 2^depth - 1 for full binary trees
+// Structural induction: size = 2^depth - 1 for full binary trees
 function isFull<T>(t: Tree<T>): boolean {
   if (t.tag === 'leaf') return true;
   return isFull(t.left) && isFull(t.right);
@@ -562,6 +562,98 @@ const primes = [2, 3, 5, 7, 11, 13];
 console.log('\nCounterexample to "all primes are odd":', findCounterexample(primes, isOdd));
 ```
 
+
+// proofs
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'proofs', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// proofs - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'proofs' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Direct proof: assume hypothesis, derive conclusion.
@@ -575,14 +667,14 @@ console.log('\nCounterexample to "all primes are odd":', findCounterexample(prim
 
 ## Practical Takeaways
 
-1. **Start direct** — most proofs are direct; only pivot to other methods when stuck.
-2. **Try contrapositive** — if the conclusion's negation gives more leverage than the hypothesis.
-3. **Use contradiction as fallback** — powerful but can produce less constructive proofs.
-4. **Induction for natural numbers** — always identify the base case and the inductive step clearly.
-5. **Strong induction when dependencies skip** — if $P(k+1)$ needs $P(k-1)$ or $P(k-2)$, use strong induction.
-6. **One counterexample suffices** — never try to prove a universal false; find a single exception.
+1. **Start direct** ? most proofs are direct; only pivot to other methods when stuck.
+2. **Try contrapositive** ? if the conclusion's negation gives more leverage than the hypothesis.
+3. **Use contradiction as fallback** ? powerful but can produce less constructive proofs.
+4. **Induction for natural numbers** ? always identify the base case and the inductive step clearly.
+5. **Strong induction when dependencies skip** ? if $P(k+1)$ needs $P(k-1)$ or $P(k-2)$, use strong induction.
+6. **One counterexample suffices** ? never try to prove a universal false; find a single exception.
 
-### 4.8 Proof Techniques in Practice — TypeScript Examples
+### 4.8 Proof Techniques in Practice ? TypeScript Examples
 
 **Direct proof of a universal claim over a small finite domain.**
 
@@ -591,7 +683,7 @@ function verifyDirect(domain: number[], property: (n: number) => boolean): boole
   return domain.every(property);
 }
 
-// Claim: for all n in {1,...,20}, if n is even then n² is even
+// Claim: for all n in {1,...,20}, if n is even then n? is even
 const domain = Array.from({ length: 20 }, (_, i) => i + 1);
 const claim = verifyDirect(domain, n => n % 2 !== 0 || (n * n) % 2 === 0);
 console.log(claim); // true
@@ -605,14 +697,14 @@ function verifyContrapositive(
   premise: (n: number) => boolean,
   conclusion: (n: number) => boolean
 ): boolean {
-  // Direct: premise → conclusion
+  // Direct: premise ? conclusion
   const direct = domain.every(n => !premise(n) || conclusion(n));
-  // Contrapositive: ¬conclusion → ¬premise
+  // Contrapositive: ?conclusion ? ?premise
   const contra = domain.every(n => conclusion(n) || !premise(n));
   return direct && contra;
 }
 
-// Claim: n² odd → n odd
+// Claim: n? odd ? n odd
 const result = verifyContrapositive(
   domain,
   n => (n * n) % 2 !== 0,
@@ -621,7 +713,7 @@ const result = verifyContrapositive(
 console.log(result); // true
 ```
 
-### 4.9 Induction — Formal Framework
+### 4.9 Induction ? Formal Framework
 
 **Theorem 4.4 (Principle of Mathematical Induction).** Let $P(n)$ be a statement about $n \in \mathbb{N}$. If:
 1. $P(1)$ is true (base case).
@@ -655,7 +747,7 @@ console.log(inductionWorks); // true
 
 **Proof 4.6 (Sum of squares formula by induction).** $\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}$.
 
-*Base $n=1$:* LHS $= 1^2 = 1$. RHS $= \frac{1\cdot2\cdot3}{6} = 1$. ✓
+*Base $n=1$:* LHS $= 1^2 = 1$. RHS $= \frac{1\cdot2\cdot3}{6} = 1$. ?
 
 *Inductive step:* Assume true for $n = k$:
 $$\sum_{i=1}^k i^2 = \frac{k(k+1)(2k+1)}{6}$$
@@ -719,7 +811,7 @@ function evalExpr(e: Expr): number {
 }
 
 // Structural induction claim: Every expression built from integers,
-// +, and × evaluates to an integer.
+// +, and ? evaluates to an integer.
 function allResultsAreIntegers(e: Expr): boolean {
   const result = evalExpr(e);
   if (!Number.isInteger(result)) return false;
@@ -729,7 +821,7 @@ function allResultsAreIntegers(e: Expr): boolean {
 }
 ```
 
-### 4.12 Proof by Contradiction — Classic Examples
+### 4.12 Proof by Contradiction ? Classic Examples
 
 **Proof 4.8 ($\sqrt{2}$ is irrational).**
 
@@ -737,7 +829,7 @@ function allResultsAreIntegers(e: Expr): boolean {
 
 ```typescript
 function isRationalSqrt2(): boolean {
-  // Check all p/q up to a bound — if none squared equals 2, √2 is irrational
+  // Check all p/q up to a bound ? if none squared equals 2, v2 is irrational
   const limit = 100;
   for (let q = 1; q <= limit; q++) {
     for (let p = 1; p <= limit; p++) {
@@ -753,12 +845,12 @@ console.log(isRationalSqrt2()); // false
 
 *Proof by contradiction.* Assume finitely many primes $p_1, \ldots, p_k$. Let $N = p_1 p_2 \cdots p_k + 1$. $N$ is greater than each $p_i$ and not divisible by any $p_i$ (remainder 1). Thus $N$ has a prime divisor not among $p_1, \ldots, p_k$, contradiction. $\square$
 
-### 4.13 Proof Strategies — Decision Flow
+### 4.13 Proof Strategies ? Decision Flow
 
 ```mermaid
 flowchart TD
     A[Statement to Prove] --> B{Universal?}
-    B -->|Yes| C{Over ℕ?}
+    B -->|Yes| C{Over N?}
     C -->|Yes| D[Try Induction]
     C -->|No| E[Choose arbitrary element]
     E --> F[Direct Proof]
@@ -766,15 +858,15 @@ flowchart TD
     G -->|Yes| H[Construct Example]
     G -->|No| I{Implication?}
     I -->|Yes| J{Contrapositive<br/>Easier?}
-    J -->|Yes| K[Prove ¬Q → ¬P]
+    J -->|Yes| K[Prove ?Q ? ?P]
     J -->|No| L[Direct Proof]
     I -->|No| M[Biconditional]
     M --> N[Prove Both Directions]
     D --> O[Base Case + Inductive Step]
-    F --> P[Premise → Conclusion]
-    K --> Q[Assume ¬Q, Derive ¬P]
+    F --> P[Premise ? Conclusion]
+    K --> Q[Assume ?Q, Derive ?P]
     H --> R[Find Witness]
-    N --> S[P→Q and Q→P]
+    N --> S[P?Q and Q?P]
 ```
 
 **Proof 4.10 (Pigeonhole principle proof).** Among any $n+1$ integers, two have the same remainder when divided by $n$.

@@ -74,7 +74,7 @@ flowchart TD
 
 **Unit tests (70-80%):** Test individual functions, methods, and classes in isolation. Mock external dependencies. Fast execution (milliseconds each).
 
-**Integration tests (15-20%):** Test interactions between components — database queries, API endpoints, service-to-service communication. Verify real behavior of integrated parts.
+**Integration tests (15-20%):** Test interactions between components � database queries, API endpoints, service-to-service communication. Verify real behavior of integrated parts.
 
 **E2E tests (5-10%):** Test complete user workflows from UI to database. Slow and brittle. Cover critical paths only.
 
@@ -151,7 +151,7 @@ Effective CI provides visibility into build health:
 **Example CI report structure:**
 ```text
 Build #1234 - main - abc1234
-Status: ✅ Passed
+Status: ? Passed
 Duration: 2m 34s
 Tests: 247 passed, 3 skipped, 0 failed
 Coverage: 87.3% (+0.2%)
@@ -478,7 +478,7 @@ class TestRunner {
   }
 
   async run(): Promise<boolean> {
-    console.log('🧪 Starting test execution...\n');
+    console.log('?? Starting test execution...\n');
     let allPassed = true;
     let passed = 0;
     let failed = 0;
@@ -496,17 +496,17 @@ class TestRunner {
         this.results.push({ name: test.name, passed: result, duration });
         if (result) {
           passed++;
-          console.log(`  ✅ ${test.name} (${duration}ms)`);
+          console.log(`  ? ${test.name} (${duration}ms)`);
         } else {
           allPassed = false;
           failed++;
-          console.log(`  ❌ ${test.name} (${duration}ms)`);
+          console.log(`  ? ${test.name} (${duration}ms)`);
         }
       } catch (error) {
         allPassed = false;
         failed++;
         this.results.push({ name: test.name, passed: false, duration: Date.now() - start, error: String(error) });
-        console.log(`  ❌ ${test.name} - ${error}`);
+        console.log(`  ? ${test.name} - ${error}`);
       }
     }
 
@@ -516,10 +516,10 @@ class TestRunner {
     if (this.coverage.percentage > 0) {
       const threshold = this.coverage.thresholds.lines || 80;
       if (this.coverage.percentage < threshold) {
-        console.log(`❌ Coverage ${this.coverage.percentage}% below threshold ${threshold}%`);
+        console.log(`? Coverage ${this.coverage.percentage}% below threshold ${threshold}%`);
         allPassed = false;
       } else {
-        console.log(`✅ Coverage ${this.coverage.percentage}% meets threshold ${threshold}%`);
+        console.log(`? Coverage ${this.coverage.percentage}% meets threshold ${threshold}%`);
       }
     }
 
@@ -528,9 +528,9 @@ class TestRunner {
 
   private printSummary(passed: number, failed: number): void {
     const total = this.tests.length;
-    console.log(`\n📊 Results: ${passed}/${total} passed`);
-    if (failed > 0) console.log(`❌ ${failed} tests failed`);
-    console.log(`⏱️  Total: ${this.results.reduce((s, r) => s + r.duration, 0)}ms`);
+    console.log(`\n?? Results: ${passed}/${total} passed`);
+    if (failed > 0) console.log(`? ${failed} tests failed`);
+    console.log(`??  Total: ${this.results.reduce((s, r) => s + r.duration, 0)}ms`);
   }
 }
 
@@ -591,7 +591,7 @@ class CINotifier {
   }
 
   private formatMessage(result: BuildResult): string {
-    const statusEmoji = result.status === 'passed' ? '✅' : '❌';
+    const statusEmoji = result.status === 'passed' ? '?' : '?';
     const duration = (result.duration / 1000).toFixed(1);
 
     return [
@@ -606,18 +606,18 @@ class CINotifier {
 
   private async postToSlack(message: string): Promise<void> {
     // Mock Slack webhook call
-    console.log('📨 Slack notification sent');
+    console.log('?? Slack notification sent');
     console.log(message);
   }
 
   private async updateCommitStatus(result: BuildResult): Promise<void> {
     // Mock GitHub API call
-    console.log(`🏷️  Commit status updated: ${result.commitSha} = ${result.status}`);
+    console.log(`???  Commit status updated: ${result.commitSha} = ${result.status}`);
   }
 
   private async sendFailureEmail(result: BuildResult): Promise<void> {
     // Mock email sending
-    console.log(`📧 Failure email sent to ${result.author}`);
+    console.log(`?? Failure email sent to ${result.author}`);
   }
 }
 
@@ -949,6 +949,48 @@ console.log(classifier.generateReport(classifier.batchClassify(failures)));
 
 ---
 
+
+// cicd
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'cicd', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Continuous Integration is the practice of merging code changes frequently, with each merge automatically built and tested.

@@ -126,9 +126,9 @@ sequenceDiagram
     Alice->>Chain: 1. Open channel (multisig tx)
     Note over Chain: Channel funded: 2 BTC (1 each)
     
-    Alice->>Bob: 2. Payment: Alice→Bob 0.01 BTC
-    Bob->>Alice: 3. Payment: Bob→Alice 0.02 BTC
-    Alice->>Bob: 4. Payment: Alice→Bob 0.005 BTC
+    Alice->>Bob: 2. Payment: Alice?Bob 0.01 BTC
+    Bob->>Alice: 3. Payment: Bob?Alice 0.02 BTC
+    Alice->>Bob: 4. Payment: Alice?Bob 0.005 BTC
     Note over Alice,Bob: Thousands of transactions off-chain
     
     Bob->>Chain: 5. Close channel (final balance)
@@ -187,7 +187,7 @@ flowchart TB
     subgraph L2["Layer 2 (Rollup)"]
         Sequencer["Sequencer<br/>Batches transactions"]
         L2State["L2 State"]
-        Batch["Batch + Proof<br/>→ L1 contract"]
+        Batch["Batch + Proof<br/>? L1 contract"]
     end
     
     User -->|"Deposit"| RollupContract
@@ -226,7 +226,7 @@ flowchart TB
 
 ### The Data Availability Problem
 
-The key bottleneck for rollups is **data availability** — ensuring that L2 transaction data is available for anyone to reconstruct the L2 state.
+The key bottleneck for rollups is **data availability** � ensuring that L2 transaction data is available for anyone to reconstruct the L2 state.
 
 ```mermaid
 flowchart TB
@@ -372,9 +372,9 @@ async function sandwichAttack(
 ```mermaid
 flowchart TB
     subgraph QuantumThreat["Quantum Computing Impact on Blockchain"]
-        ECDSA["ECDSA (secp256k1)<br/>Bitcoin/Ethereum keys<br/>Shor → Broken completely"]
-        SHA256["SHA-256<br/>Mining/Bitcoin hashing<br/>Grover → 128-bit effective<br/>(still safe)"]
-        RSA["RSA<br/>Not used in crypto<br/>Shor → Broken"]
+        ECDSA["ECDSA (secp256k1)<br/>Bitcoin/Ethereum keys<br/>Shor ? Broken completely"]
+        SHA256["SHA-256<br/>Mining/Bitcoin hashing<br/>Grover ? 128-bit effective<br/>(still safe)"]
+        RSA["RSA<br/>Not used in crypto<br/>Shor ? Broken"]
     end
     
     subgraph Timeline["Timeline Estimates"]
@@ -517,11 +517,11 @@ const solutions: ScalingSolution[] = [
 ];
 ```
 
-> **One-Sentence Takeaway:** Every scaling solution involves a trade-off — Rollups inherit L1 security but add latency, sidechains have their own security models, and sharding increases complexity while maintaining full security.
+> **One-Sentence Takeaway:** Every scaling solution involves a trade-off � Rollups inherit L1 security but add latency, sidechains have their own security models, and sharding increases complexity while maintaining full security.
 
 > **Pro Tip:** For most applications, ZK-Rollups are the preferred scaling path: they offer instant finality, lower fees than Optimistic Rollups (no 7-day withdrawal delay), and strong privacy guarantees.
 
-> **Warning:** A 51% attack on a shard requires only 51% of that shard's hash power, not the whole network — sharding introduces cross-shard communication complexity and reduces the cost of attacking a single shard.
+> **Warning:** A 51% attack on a shard requires only 51% of that shard's hash power, not the whole network � sharding introduces cross-shard communication complexity and reduces the cost of attacking a single shard.
 
 ---
 
@@ -594,7 +594,7 @@ const solutions: ScalingSolution[] = [
 
 <details>
 <summary>Answer</summary>
-**B) STARKs require no trusted setup ceremony.** SNARKs require an initial trusted setup — if the setup's toxic waste is leaked, false proofs can be generated. STARKs use only publicly verifiable randomness, making them fully transparent and quantum-resistant.
+**B) STARKs require no trusted setup ceremony.** SNARKs require an initial trusted setup � if the setup's toxic waste is leaked, false proofs can be generated. STARKs use only publicly verifiable randomness, making them fully transparent and quantum-resistant.
 </details>
 
 4. What is the "data availability problem" in rollups?
@@ -931,6 +931,48 @@ const mev = new MEVEstimator();
 console.log(`MEV arbitrage: ${mev.estimateArbitrage(new Map([['Uniswap', 100], ['Sushiswap', 102]]), ['Uniswap', 'Sushiswap'])}`);
 ```
 
+
+// security scalability
+// distributed-ledger-crypto implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'security scalability', data: { topic: 'distributed-ledger-crypto' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Scalability is the primary hurdle for mainstream blockchain adoption.
@@ -950,10 +992,10 @@ console.log(`MEV arbitrage: ${mev.estimateArbitrage(new Map([['Uniswap', 100], [
 
 1. For dApp deployment, prefer ZK-Rollups for instant finality; use Optimistic Rollups for full EVM compatibility.
 2. Always use slippage protection (minOut) and Flashbots for large trades to avoid MEV.
-3. Monitor data availability — verify that rollup sequencers are publishing data to L1 blobs.
+3. Monitor data availability � verify that rollup sequencers are publishing data to L1 blobs.
 4. For Bitcoin micro-payments, the Lightning Network is the best option for instant settlement.
-5. Start preparing for quantum resistance — use wallets that support or plan to support post-quantum signatures.
-6. Sidechains have independent security — never assume a sidechain is as secure as its parent chain.
+5. Start preparing for quantum resistance � use wallets that support or plan to support post-quantum signatures.
+6. Sidechains have independent security � never assume a sidechain is as secure as its parent chain.
 7. Use MEV-Boost relays that enforce fair transaction ordering when running an Ethereum validator.
 
 ---

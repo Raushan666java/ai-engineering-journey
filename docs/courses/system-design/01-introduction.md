@@ -55,15 +55,15 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![System Design Fundamentals Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/01-introduction.png)
 
 ### What Is System Design?
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 System design is the discipline of defining the architecture, components, modules, interfaces, and data flow of a large-scale distributed system to satisfy specified functional and non-functional requirements. It sits at the intersection of three distinct but overlapping fields.
 
@@ -161,10 +161,10 @@ Throughput = (1 - p_error) / L_avg  (where L_avg is average latency)
 Little's Law relates these for stable systems:
 
 ```
-L = ÃŽÂ» * W
+L = λ * W
 ```
 
-where L = average number of requests in system, ÃŽÂ» = arrival rate, W = average time per request.
+where L = average number of requests in system, λ = arrival rate, W = average time per request.
 
 #### Security
 
@@ -173,13 +173,13 @@ Security encompasses confidentiality (unauthorized access prevention), integrity
 #
 > **Warning:** Avoid designing for five-nines availability if you only need two-nines. Each "nine" adds ~10x infrastructure cost.
 
-Cost efficiency measures the operational expense per unit of useful work (e.g., cost per request, cost per GB stored, cost per user). This trades against all other NFRs: five-nines availability costs more than two-nines; higher throughput requires more servers; stronger consistency increases coordination overhead. A cost-unbounded design is not a design Ã¢â‚¬â€ it is a wishlist.
+Cost efficiency measures the operational expense per unit of useful work (e.g., cost per request, cost per GB stored, cost per user). This trades against all other NFRs: five-nines availability costs more than two-nines; higher throughput requires more servers; stronger consistency increases coordination overhead. A cost-unbounded design is not a design — it is a wishlist.
 
 ---
 
 ### The Four-Phase Design Process
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -204,13 +204,13 @@ Collect and clarify functional and non-functional requirements. Ask clarifying q
 Rough capacity calculations to constrain the design before committing to architecture. Key formulas:
 
 ```
-QPS = Daily Active Users Ãƒâ€” Actions Per User / 86,400
+QPS = Daily Active Users × Actions Per User / 86,400
 
-Storage = Data per item Ãƒâ€” Items per day Ãƒâ€” Retention days Ãƒâ€” Replication factor
+Storage = Data per item × Items per day × Retention days × Replication factor
 
-Bandwidth = Bits per request Ãƒâ€” QPS
+Bandwidth = Bits per request × QPS
 
-Memory needed = Hot data ratio Ãƒâ€” Total data size
+Memory needed = Hot data ratio × Total data size
 ```
 
 **Prefix conventions:**
@@ -238,26 +238,26 @@ Produce a component diagram showing the major building blocks:
 - **CDN:** Static asset delivery
 
 ```
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-Ã¢â€â€š   Clients   Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
-       Ã¢â€â€š
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-Ã¢â€â€š Load        Ã¢â€â€š
-Ã¢â€â€š Balancer    Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
-       Ã¢â€â€š
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â   Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â   Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-Ã¢â€â€š App Server  Ã¢â€â€šÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€“ÂºÃ¢â€â€š  Cache   Ã¢â€â€š   Ã¢â€â€š  CDN      Ã¢â€â€š
-Ã¢â€â€š (stateless) Ã¢â€â€š   Ã¢â€â€š (Redis)  Ã¢â€â€š   Ã¢â€â€š (CloudFl) Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
-       Ã¢â€â€š
-Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-Ã¢â€â€š  Database   Ã¢â€â€š
-Ã¢â€â€š (Primary)   Ã¢â€â€š
-Ã¢â€â€š             Ã¢â€â€š
-Ã¢â€â€š  Replica(s) Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+┌─────────────┐
+│   Clients   │
+└──────┬──────┘
+       │
+┌──────▼──────┐
+│ Load        │
+│ Balancer    │
+└──────┬──────┘
+       │
+┌──────▼──────┐   ┌──────────┐   ┌───────────┐
+│ App Server  │──►│  Cache   │   │  CDN      │
+│ (stateless) │   │ (Redis)  │   │ (CloudFl) │
+└──────┬──────┘   └──────────┘   └───────────┘
+       │
+┌──────▼──────┐
+│  Database   │
+│ (Primary)   │
+│             │
+│  Replica(s) │
+└─────────────┘
 ```
 
 #### Phase 4: Detailed Deep Dive
@@ -294,10 +294,10 @@ Every design decision is a trade-off. Recognizing and articulating trade-offs is
 **Twitter-Scale QPS.** Assume 500M DAU, each user posts 0.5 tweets/day and reads 200 tweets/day.
 
 ```
-Write QPS = 500M Ãƒâ€” 0.5 / 86,400 Ã¢â€°Ë† 2,894 QPS
-Peak write QPS = 2,894 Ãƒâ€” 3 (peak factor) Ã¢â€°Ë† 8,682 QPS
-Read QPS = 500M Ãƒâ€” 200 / 86,400 Ã¢â€°Ë† 1,157,407 QPS
-Peak read QPS Ã¢â€°Ë† 3.5M QPS
+Write QPS = 500M × 0.5 / 86,400 ≈ 2,894 QPS
+Peak write QPS = 2,894 × 3 (peak factor) ≈ 8,682 QPS
+Read QPS = 500M × 200 / 86,400 ≈ 1,157,407 QPS
+Peak read QPS ≈ 3.5M QPS
 ```
 
 A read:write ratio of ~400:1 justifies heavy caching and read replicas.
@@ -305,10 +305,10 @@ A read:write ratio of ~400:1 justifies heavy caching and read replicas.
 **YouTube Storage.** Assume 500 hours of video uploaded per minute, average bitrate 5 Mbps.
 
 ```
-Storage per hour = 5 Ãƒâ€” 10^6 bps Ãƒâ€” 3,600 s / 8 = 2.25 GB/hour
-Per minute: 500 hours Ãƒâ€” 2.25 GB = 1,125 GB/minute
-Per day: 1,125 GB Ãƒâ€” 60 Ãƒâ€” 24 Ã¢â€°Ë† 1.62 PB/day
-Per year: 1.62 PB Ãƒâ€” 365 Ã¢â€°Ë† 591 PB/year
+Storage per hour = 5 × 10^6 bps × 3,600 s / 8 = 2.25 GB/hour
+Per minute: 500 hours × 2.25 GB = 1,125 GB/minute
+Per day: 1,125 GB × 60 × 24 ≈ 1.62 PB/day
+Per year: 1.62 PB × 365 ≈ 591 PB/year
 ```
 
 With 3x replication: ~1.77 exabytes/year.
@@ -316,12 +316,12 @@ With 3x replication: ~1.77 exabytes/year.
 **URL Shortener Storage** (tinyurl.com style). Assume 100M new URLs/day, average length 500 bytes.
 
 ```
-Daily storage = 100M Ãƒâ€” 500 bytes = 50 GB/day
-Yearly storage = 50 GB Ãƒâ€” 365 Ã¢â€°Ë† 18.25 TB/year
+Daily storage = 100M × 500 bytes = 50 GB/day
+Yearly storage = 50 GB × 365 ≈ 18.25 TB/year
 10-year storage = ~182.5 TB
 ```
 
-This fits on a handful of SSDs. The bottleneck is not storage Ã¢â‚¬â€ it is write QPS and availability.
+This fits on a handful of SSDs. The bottleneck is not storage — it is write QPS and availability.
 
 ---
 
@@ -329,7 +329,7 @@ This fits on a handful of SSDs. The bottleneck is not storage Ã¢â‚¬â€
 
 **Google Search.** The defining challenge is indexing the web (tens of billions of pages) and returning relevant results in under 200ms. Design constraints: extreme read throughput, sub-second latency, global distribution. Architecture: web crawling pipeline (distributed crawlers), inverted index (sharded across thousands of machines), query serving (MapReduce for indexing, distributed serving for queries). NFR priority: performance > reliability > maintainability > cost. Google accepts massive infrastructure cost to deliver sub-100ms search.
 
-**Facebook (Meta).** The defining challenge is the social graph: billions of users, each with complex relationships (friends, pages, groups, events). Design constraints: extremely high read QPS, globally distributed, writes triggered by user action. Architecture: TAO (graph cache layer over MySQL), Presto (interactive analytics), Cassandra (inbox search), Haystack (photo storage). NFR priority: availability > performance > scalability > maintainability. Facebook uses eventual consistency extensively Ã¢â‚¬â€ seeing a slightly stale Like count is acceptable.
+**Facebook (Meta).** The defining challenge is the social graph: billions of users, each with complex relationships (friends, pages, groups, events). Design constraints: extremely high read QPS, globally distributed, writes triggered by user action. Architecture: TAO (graph cache layer over MySQL), Presto (interactive analytics), Cassandra (inbox search), Haystack (photo storage). NFR priority: availability > performance > scalability > maintainability. Facebook uses eventual consistency extensively — seeing a slightly stale Like count is acceptable.
 
 **WhatsApp.** The defining challenge is reliable message delivery with end-to-end encryption for 2B+ users. Design constraints: must work with intermittent connectivity, low latency for delivery, zero message loss. Architecture: Custom Erlang-based server (ejabberd fork), persistence on a per-user basis (not per-message), highly optimized for mobile battery and bandwidth. NFR priority: reliability > availability > performance > efficiency. WhatsApp famously served 900M users with only ~50 engineers.
 
@@ -341,22 +341,22 @@ This fits on a handful of SSDs. The bottleneck is not storage Ã¢â‚¬â€
 
 **Requirements:** Shorten URLs, redirect to original URL, track click analytics, handle 100M URLs/day.
 
-**Phase 1 Ã¢â‚¬â€ Requirements:** 100M new URLs/day, read:write ratio ~100:1 (each URL clicked ~100 times), analytics per-URL, 5-year data retention.
+**Phase 1 — Requirements:** 100M new URLs/day, read:write ratio ~100:1 (each URL clicked ~100 times), analytics per-URL, 5-year data retention.
 
-**Phase 2 Ã¢â‚¬â€ Estimation:**
-- Write QPS: 100M / 86,400 Ã¢â€°Ë† 1,157 QPS (peak ~3,500)
-- Read QPS: 1,157 Ãƒâ€” 100 Ã¢â€°Ë† 115,700 QPS (peak ~350,000)
-- Storage: 100M Ãƒâ€” 500 bytes/day = 50 GB/day Ã¢â€ â€™ ~91 TB in 5 years
+**Phase 2 — Estimation:**
+- Write QPS: 100M / 86,400 ≈ 1,157 QPS (peak ~3,500)
+- Read QPS: 1,157 × 100 ≈ 115,700 QPS (peak ~350,000)
+- Storage: 100M × 500 bytes/day = 50 GB/day → ~91 TB in 5 years
 
-**Phase 3 Ã¢â‚¬â€ HLD:**
+**Phase 3 — HLD:**
 - Stateless API servers (auto-scaled)
 - Redis cache for hot URLs (LRU eviction, TTL 1 hour)
-- Base-62 encoding for short IDs (7 chars = 62^7 Ã¢â€°Ë† 3.5T combinations)
+- Base-62 encoding for short IDs (7 chars = 62^7 ≈ 3.5T combinations)
 - Database: NoSQL (Cassandra or DynamoDB) for write scalability
 
-**Phase 4 Ã¢â‚¬â€ Deep Dive:**
+**Phase 4 — Deep Dive:**
 - Encoding choice: Base-62 (a-z, A-Z, 0-9) vs Base-64 (adds + and /, less user-friendly)
-- Key generation: Snowflake-style ID Ã¢â€ â€™ encode to base-62. Avoids DB lookup for ID allocation
+- Key generation: Snowflake-style ID → encode to base-62. Avoids DB lookup for ID allocation
 - Cache strategy: Cache-aside. On write miss: query DB, populate cache, return redirect
 - Redirection: 301 (permanent) for most clients to reduce load; 307 (temporary) for analytics tracking
 
@@ -365,11 +365,11 @@ This fits on a handful of SSDs. The bottleneck is not storage Ã¢â‚¬â€
 Instagram-scale: 500M DAU, each user uploads ~2 photos/day, average photo 2 MB, each photo viewed ~50 times.
 
 ```
-Write QPS = 500M Ãƒâ€” 2 / 86,400 Ã¢â€°Ë† 11,574 QPS
-Storage/day = 500M Ãƒâ€” 2 photos Ãƒâ€” 2 MB = 2 PB/day
-Storage/year Ã¢â€°Ë† 730 PB
-Read QPS = 11,574 Ãƒâ€” 50 Ã¢â€°Ë† 578,700 QPS
-CDN bandwidth = 578,700 Ãƒâ€” 2 MB = 1,157,400 MB/s Ã¢â€°Ë† 1.15 TB/s
+Write QPS = 500M × 2 / 86,400 ≈ 11,574 QPS
+Storage/day = 500M × 2 photos × 2 MB = 2 PB/day
+Storage/year ≈ 730 PB
+Read QPS = 11,574 × 50 ≈ 578,700 QPS
+CDN bandwidth = 578,700 × 2 MB = 1,157,400 MB/s ≈ 1.15 TB/s
 ```
 
 Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions, cache the most-requested 80% on CDN, serve originals only on explicit demand.
@@ -513,13 +513,13 @@ The following TypeScript class models the fundamental trade-off between Consiste
 
 ```typescript
 /**
- * CAPTheoremSimulator — models the trade-off between Consistency,
+ * CAPTheoremSimulator ? models the trade-off between Consistency,
  * Availability, and Partition Tolerance in distributed systems.
  *
  * Usage:
  *   const cap = new CapTheoremSimulator();
  *   cap.pick('partitionTolerance', 'consistency', true);
- *   // → "CP system (e.g., ZooKeeper, HBase, Google Spanner). Sacrifices
+ *   // ? "CP system (e.g., ZooKeeper, HBase, Google Spanner). Sacrifices
  *   //    availability during partitions to guarantee consistency."
  */
 type CapProperty = 'consistency' | 'availability' | 'partitionTolerance';
@@ -535,7 +535,7 @@ class CapTheoremSimulator {
   private definitions: Record<CapSystem, string> = {
     CP: 'Sacrifices availability during partitions to guarantee consistency.',
     AP: 'Sacrifices consistency during partitions to guarantee availability.',
-    CA: 'No partition tolerance — relies on a reliable network; entire system fails on split.',
+    CA: 'No partition tolerance ? relies on a reliable network; entire system fails on split.',
   };
 
   pick(a: CapProperty, b: CapProperty, partitionHappens: boolean): string {
@@ -544,7 +544,7 @@ class CapTheoremSimulator {
     const hasC = a === 'consistency' || b === 'consistency';
 
     if (!hasP && partitionHappens) {
-      return 'CA system with partition → system becomes unavailable (no partition tolerance).';
+      return 'CA system with partition ? system becomes unavailable (no partition tolerance).';
     }
 
     const system: CapSystem = hasP ? (hasC ? 'CP' : 'AP') : 'CA';
@@ -556,12 +556,12 @@ class CapTheoremSimulator {
 
 ### Latency vs Throughput Bounds (Little's Law)
 
-This calculator applies Little's Law (`L = λ × W`) to reason about the relationship between latency, concurrency, and throughput in distributed systems. It also includes tail-latency assessment and connection-pool sizing.
+This calculator applies Little's Law (`L = ? ? W`) to reason about the relationship between latency, concurrency, and throughput in distributed systems. It also includes tail-latency assessment and connection-pool sizing.
 
 ```typescript
 /**
- * LatencyThroughputCalculator — models the relationship between
- * latency (L), throughput (λ), and concurrency (W) via Little's Law.
+ * LatencyThroughputCalculator ? models the relationship between
+ * latency (L), throughput (?), and concurrency (W) via Little's Law.
  */
 class LatencyThroughputCalculator {
   constructor(
@@ -569,12 +569,12 @@ class LatencyThroughputCalculator {
     public readonly concurrency: number
   ) {}
 
-  /** L = λ × W  →  λ = W / L (converted from ms to seconds) */
+  /** L = ? ? W  ?  ? = W / L (converted from ms to seconds) */
   maxThroughputQps(): number {
     return this.concurrency / (this.latencyMs / 1000);
   }
 
-  /** W = λ × L — required concurrency to hit a target QPS */
+  /** W = ? ? L ? required concurrency to hit a target QPS */
   requiredConcurrency(targetQps: number): number {
     return targetQps * (this.latencyMs / 1000);
   }
@@ -583,15 +583,15 @@ class LatencyThroughputCalculator {
   assessTailLatency(p99: number, p50: number): string {
     const ratio = p99 / p50;
     if (ratio > 10) {
-      return 'Critical tail — investigate GC pauses, queue buildup, or straggler tasks.';
+      return 'Critical tail ? investigate GC pauses, queue buildup, or straggler tasks.';
     }
     if (ratio > 5) {
-      return 'High tail — check hot partitions or consider hedged requests.';
+      return 'High tail ? check hot partitions or consider hedged requests.';
     }
     if (ratio > 3) {
-      return 'Moderate tail — request coalescing or caching may help.';
+      return 'Moderate tail ? request coalescing or caching may help.';
     }
-    return 'Healthy — tail latency is well-contained.';
+    return 'Healthy ? tail latency is well-contained.';
   }
 
   /** Estimate optimal DB connection-pool size with 20 % headroom */
@@ -600,7 +600,7 @@ class LatencyThroughputCalculator {
   }
 }
 
-// ── Example ──────────────────────────────────────────────────────
+// -- Example ------------------------------------------------------
 const calc = new LatencyThroughputCalculator(50, 500);
 console.log(`Max throughput:         ${calc.maxThroughputQps()} qps`);
 console.log(`Required concurrency:   ${calc.requiredConcurrency(10000)}`);
@@ -726,6 +726,144 @@ class LittlesLawSimulator {
 }
 ```
 
+
+### Implementation: Scalability and Load Balancing
+
+```typescript
+interface ServerPool { servers: string[]; algorithm: string; }
+class LoadBalancer {
+  private index = 0;
+  constructor(private pool: ServerPool) {}
+  next(): string {
+    if (this.pool.algorithm === "round-robin") {
+      const s = this.pool.servers[this.index];
+      this.index = (this.index + 1) % this.pool.servers.length;
+      return s;
+    }
+    return this.pool.servers[Math.floor(Math.random() * this.pool.servers.length)];
+  }
+}
+```
+
+### Implementation: Scalability and Load Balancing
+
+```typescript
+interface LoadBalancerConfig { algorithm: "round-robin" | "least-connections" | "weighted"; healthCheckInterval: number; maxRetries: number; weight?: number; }
+class LoadBalancer {
+  private backends: string[] = []; private currentIndex = 0;
+  constructor(private config: LoadBalancerConfig) {}
+  addBackend(url: string): void { this.backends.push(url); }
+  next(): string {
+    if (this.backends.length === 0) throw new Error("No backends available");
+    if (this.config.algorithm === "round-robin") { const b = this.backends[this.currentIndex]; this.currentIndex = (this.currentIndex + 1) % this.backends.length; return b; }
+    if (this.config.algorithm === "least-connections") { return this.backends[0]; }
+    return this.backends[Math.floor(Math.random() * this.backends.length)]; }
+  healthCheck(): string[] { return this.backends.filter(() => Math.random() > 0.1); }
+}
+class AutoScaler {
+  private metrics: number[] = []; private currentInstances: number;
+  constructor(private min: number, private max: number, private scaleUpThreshold: number, private scaleDownThreshold: number, initial: number) { this.currentInstances = initial; }
+  recordMetric(value: number): void { this.metrics.push(value); if (this.metrics.length > 10) this.metrics.shift(); }
+  evaluate(): { action: "scale-up" | "scale-down" | "none"; instances: number } {
+    if (this.metrics.length < 2 || this.currentInstances >= this.max) return { action: "none", instances: this.currentInstances };
+    if (this.metrics.every(m => m > this.scaleUpThreshold) && this.currentInstances < this.max) { this.currentInstances++; return { action: "scale-up", instances: this.currentInstances }; }
+    if (this.metrics.every(m => m < this.scaleDownThreshold) && this.currentInstances > this.min) { this.currentInstances--; return { action: "scale-down", instances: this.currentInstances }; }
+    return { action: "none", instances: this.currentInstances }; }
+}
+class RateLimiter { private counters: Map<string, { count: number; resetTime: number }> = new Map(); constructor(private maxRequests: number, private windowMs: number) {} allow(key: string): boolean { const now = Date.now(); let entry = this.counters.get(key); if (!entry || now > entry.resetTime) { entry = { count: 0, resetTime: now + this.windowMs }; this.counters.set(key, entry); } entry.count++; return entry.count <= this.maxRequests; } }
+```
+
+// introduction
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'introduction', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// introduction - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'introduction' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - System design is distinct from software architecture (system-wide concerns) and algorithm design (computational efficiency at bounded scales).
@@ -735,7 +873,7 @@ class LittlesLawSimulator {
 - Every design decision is a trade-off; the correct choice depends on the system's primary NFRs, not on abstract "best practices."
 - SLA, SLO, and SLI form a three-tier commitment cascade: legal contract, internal target, actual measurement.
 - Real systems like Google Search, Facebook, and WhatsApp optimize for radically different NFR profiles despite serving similar scale.
-- Little's Law (L = ÃŽÂ»W) relates throughput, concurrency, and latency in stable-state systems.
+- Little's Law (L = λW) relates throughput, concurrency, and latency in stable-state systems.
 
 ---
 

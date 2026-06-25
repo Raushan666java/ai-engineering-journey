@@ -153,7 +153,7 @@ class Dinic {
 }
 ```
 
-> **One-Sentence Takeaway:** The max-flow min-cut theorem establishes the duality between maximum flow and minimum cut — the bottleneck of a network.
+> **One-Sentence Takeaway:** The max-flow min-cut theorem establishes the duality between maximum flow and minimum cut ? the bottleneck of a network.
 
 ### 15.2 Matching
 
@@ -161,7 +161,7 @@ A **matching** in a graph is a set of edges with no shared vertices. A **maximum
 
 **Theorem 15.2 (Hall's Marriage Theorem).** In a bipartite graph $(X, Y)$, there exists a matching covering all vertices of $X$ if and only if for every subset $S \subseteq X$, $|N(S)| \geq |S|$.
 
-**Theorem 15.3 (König's theorem).** In bipartite graphs, the size of a maximum matching equals the size of a minimum vertex cover.
+**Theorem 15.3 (K?nig's theorem).** In bipartite graphs, the size of a maximum matching equals the size of a minimum vertex cover.
 
 ```typescript
 function bipartiteMatch(
@@ -254,7 +254,7 @@ function checkParity(bits: number[], parity: number): boolean {
 console.log(hammingDistance("10101", "10011")); // 2
 ```
 
-> **One-Sentence Takeaway:** Error-correcting codes add redundancy to detect and fix transmission errors — Hamming codes correct 1 error per block, Reed-Solomon corrects bursts.
+> **One-Sentence Takeaway:** Error-correcting codes add redundancy to detect and fix transmission errors ? Hamming codes correct 1 error per block, Reed-Solomon corrects bursts.
 
 ### 15.5 Randomized Algorithms
 
@@ -300,7 +300,7 @@ function modPow(base: number, exp: number, mod: number): number {
 
 **Quickselect:** Randomized algorithm to find the $k$th smallest element in $O(n)$ expected time.
 
-> **One-Sentence Takeaway:** Randomized algorithms use randomness to achieve efficiency and simplicity — the Miller-Rabin test determines primality with arbitrarily high confidence.
+> **One-Sentence Takeaway:** Randomized algorithms use randomness to achieve efficiency and simplicity ? the Miller-Rabin test determines primality with arbitrarily high confidence.
 
 ### 15.6 Finite Automata
 
@@ -311,7 +311,7 @@ A **deterministic finite automaton (DFA)** is a 5-tuple $(Q, \Sigma, \delta, q_0
 - $q_0 \in Q$ is the **start state**.
 - $F \subseteq Q$ is the set of **accepting states**.
 
-**Nondeterministic finite automaton (NFA):** $\delta: Q \times (\Sigma \cup \{\epsilon\}) \rightarrow \mathcal{P}(Q)$ — multiple transitions for the same input.
+**Nondeterministic finite automaton (NFA):** $\delta: Q \times (\Sigma \cup \{\epsilon\}) \rightarrow \mathcal{P}(Q)$ ? multiple transitions for the same input.
 
 **Theorem 15.7 (Equivalence).** DFAs and NFAs recognize the same class of languages (regular languages). Every NFA can be converted to an equivalent DFA (exponential blowup in the worst case).
 
@@ -351,7 +351,7 @@ console.log(dfa.accepts("101"));   // true
 console.log(dfa.accepts("100"));   // false
 ```
 
-> **One-Sentence Takeaway:** Finite automata are the simplest model of computation — they recognize regular languages, and DFAs/NFAs are equivalent in power.
+> **One-Sentence Takeaway:** Finite automata are the simplest model of computation ? they recognize regular languages, and DFAs/NFAs are equivalent in power.
 
 ### 15.7 Formal Languages
 
@@ -752,7 +752,7 @@ console.log('\nCaesar shift=3:');
 console.log('  Encrypt "HELLO":', caesarCipher('HELLO', 3, 'encrypt'));
 console.log('  Decrypt "KHOOR":', caesarCipher('KHOOR', 3, 'decrypt'));
 
-// --- Vigenère Cipher ---
+// --- Vigen?re Cipher ---
 function vigenere(text: string, key: string, mode: 'encrypt' | 'decrypt'): string {
   const k = key.toLowerCase();
   return text.replace(/[a-zA-Z]/g, (ch, i) => {
@@ -762,7 +762,7 @@ function vigenere(text: string, key: string, mode: 'encrypt' | 'decrypt'): strin
     return String.fromCharCode(((ch.charCodeAt(0) - base + s) % 26) + base);
   });
 }
-console.log('\nVigenère key="KEY":');
+console.log('\nVigen?re key="KEY":');
 console.log('  Encrypt "ATTACK":', vigenere('ATTACK', 'KEY', 'encrypt'));
 console.log('  Decrypt "KXEXTR":', vigenere('KXEXTR', 'KEY', 'decrypt'));
 
@@ -795,6 +795,98 @@ const cap: number[][] = [
 console.log('\nMax flow (Ford-Fulkerson):', fordFulkerson(cap, 0, 5), '(expected: 23)');
 ```
 
+
+// applications
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'applications', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// applications - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'applications' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Discrete mathematics provides the foundation for virtually all of computer science.
@@ -809,11 +901,11 @@ console.log('\nMax flow (Ford-Fulkerson):', fordFulkerson(cap, 0, 5), '(expected
 
 ## Practical Takeaways
 
-1. **Network flow models many problems** — bipartite matching, min-cut, and even some scheduling problems reduce to max flow.
-2. **Error correction is everywhere** — CDs, QR codes, satellite communication, and 5G all use Reed-Solomon or related codes.
-3. **Randomized algorithms are practical** — Miller-Rabin is the standard for generating large primes in cryptography.
-4. **Formal languages define syntax** — every programming language is defined by a context-free grammar; every regex compiles to a DFA.
-5. **Discrete math runs the internet** — from PageRank (graph theory) to TLS (number theory) to routing (shortest paths).
+1. **Network flow models many problems** ? bipartite matching, min-cut, and even some scheduling problems reduce to max flow.
+2. **Error correction is everywhere** ? CDs, QR codes, satellite communication, and 5G all use Reed-Solomon or related codes.
+3. **Randomized algorithms are practical** ? Miller-Rabin is the standard for generating large primes in cryptography.
+4. **Formal languages define syntax** ? every programming language is defined by a context-free grammar; every regex compiles to a DFA.
+5. **Discrete math runs the internet** ? from PageRank (graph theory) to TLS (number theory) to routing (shortest paths).
 
 ### 15.6 Additional Applications in Practice
 
@@ -872,7 +964,7 @@ const cap: number[][] = [
 console.log(fordFulkerson(cap, 0, 3).maxFlow); // 8
 ```
 
-### 15.7 Error-Correcting Codes — Hamming(7,4)
+### 15.7 Error-Correcting Codes ? Hamming(7,4)
 
 ```typescript
 function hammingEncode(data: number[]): number[] {
@@ -904,10 +996,10 @@ const encoded = hammingEncode(data);
 const received = transmitWithError(encoded, 2); // flip bit 2
 const decoded = hammingDecode(received);
 console.log(decoded.errorPos); // 2
-console.log(decoded.data); // [1, 0, 1, 1] — corrected
+console.log(decoded.data); // [1, 0, 1, 1] ? corrected
 ```
 
-### 15.8 Automata Theory — DFA Implementation
+### 15.8 Automata Theory ? DFA Implementation
 
 ```typescript
 interface DFA {
@@ -962,7 +1054,7 @@ function hasPerfectMatching(
     adj.get(x)!.push(y);
   }
 
-  // Check Hall's condition for all subsets S ⊆ X
+  // Check Hall's condition for all subsets S ? X
   for (let mask = 1; mask < (1 << X.length); mask++) {
     const S = X.filter((_, i) => mask & (1 << i));
     const neighbors = new Set<number>();
@@ -981,7 +1073,7 @@ const E: [number, string][] = [[1,"a"],[1,"b"],[2,"b"],[2,"c"],[3,"c"]];
 console.log(hasPerfectMatching(X, Y, E)); // true
 ```
 
-### 15.10 Knapsack Problem — Dynamic Programming
+### 15.10 Knapsack Problem ? Dynamic Programming
 
 ```typescript
 function knapsack01(
@@ -1019,7 +1111,7 @@ function knapsack01(
 }
 
 console.log(knapsack01([1, 2, 3, 4], [2, 3, 4, 5], 6));
-// { maxValue: 9, selected: [2, 1, 0] } — items 3+2+1 = 6 weight, value 9
+// { maxValue: 9, selected: [2, 1, 0] } ? items 3+2+1 = 6 weight, value 9
 ```
 
 ```mermaid

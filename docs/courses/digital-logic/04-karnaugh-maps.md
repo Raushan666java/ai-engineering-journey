@@ -1,7 +1,7 @@
 # Chapter 4: Karnaugh Maps
 
-> **Prereq:** Chapter 2 (Boolean Algebra) — K-maps provide a graphical alternative to algebraic minimisation.
-> **Next:** Chapter 5 (Combinational Circuits) — minimised expressions map directly to efficient circuits.
+> **Prereq:** Chapter 2 (Boolean Algebra) ? K-maps provide a graphical alternative to algebraic minimisation.
+> **Next:** Chapter 5 (Combinational Circuits) ? minimised expressions map directly to efficient circuits.
 
 ## Learning Objectives
 
@@ -45,13 +45,13 @@ flowchart LR
 
 ### 4.1 K-Map Fundamentals
 
-The Karnaugh map (K-map) is a graphical tool for minimising Boolean functions. It arranges truth table entries in a grid where adjacent cells differ in exactly one variable — leveraging the adjacency theorem (x·y + x·y' = x).
+The Karnaugh map (K-map) is a graphical tool for minimising Boolean functions. It arranges truth table entries in a grid where adjacent cells differ in exactly one variable ? leveraging the adjacency theorem (x?y + x?y' = x).
 
 K-maps are practical for functions with up to 6 variables. Beyond that, algorithmic methods (Quine-McCluskey) are preferred.
 
 #### 4.1.1 Two-Variable K-Map
 
-A 2-variable K-map has 2² = 4 cells. Variables are arranged with one on each axis.
+A 2-variable K-map has 2? = 4 cells. Variables are arranged with one on each axis.
 
 |  | y = 0 | y = 1 |
 |--|-------|-------|
@@ -62,7 +62,7 @@ Adjacent cells: (0,0)-(0,1), (0,0)-(1,0), (0,1)-(1,1), (1,0)-(1,1). Also the map
 
 #### 4.1.2 Three-Variable K-Map
 
-A 3-variable K-map has 2³ = 8 cells arranged as a 2×4 grid.
+A 3-variable K-map has 2? = 8 cells arranged as a 2?4 grid.
 
 |  | yz = 00 | yz = 01 | yz = 11 | yz = 10 |
 |--|---------|---------|---------|---------|
@@ -136,7 +136,7 @@ Proper grouping is essential for achieving minimal expressions:
 6. **Fewest groups**: After selecting largest groups, use the minimum number to cover all 1s.
 7. **Each 1 must be covered at least once**: Additional coverage is acceptable.
 
-**Variables eliminated**: A group of 2^k cells eliminates k variables — the variables that change within the group.
+**Variables eliminated**: A group of 2^k cells eliminates k variables ? the variables that change within the group.
 
 ### 4.3 Prime Implicants
 
@@ -179,7 +179,7 @@ function findEssentialImplicants(chart: PrimeImplicant[]): PrimeImplicant[] {
         }
     }
 
-    // Minterms covered by exactly one implicant → essential
+    // Minterms covered by exactly one implicant ? essential
     const essential = chart.filter(pi =>
         pi.minterms.some(m => (mintermCount.get(m) || 0) === 1)
     );
@@ -215,7 +215,7 @@ The standard procedure for deriving a minimal SOP from a K-map:
 3. Identify all prime implicants by finding the largest possible groups of 1s (using Xs as needed).
 4. Select all essential prime implicants.
 5. Cover the remaining 1s with a minimal set of non-essential prime implicants.
-6. Write each group as a product term — variables that are constant within the group are included (uncomplemented if 1, complemented if 0).
+6. Write each group as a product term ? variables that are constant within the group are included (uncomplemented if 1, complemented if 0).
 7. The minimal SOP is the OR of all selected prime implicants.
 
 ### 4.7 Minimisation Procedure: POS
@@ -233,15 +233,15 @@ Alternatively, derive the minimal SOP for F' and complement using De Morgan's th
 
 The Quine-McCluskey algorithm is a tabular method for Boolean minimisation suitable for functions with many variables where K-maps become unwieldy.
 
-#### Phase 1 — Generation of Prime Implicants
+#### Phase 1 ? Generation of Prime Implicants
 
 1. List all minterms grouped by the number of 1s in the binary representation.
-2. Compare each minterm in group i with each in group i + 1. If they differ in exactly one bit, combine them and mark the differing position with a dash (−).
+2. Compare each minterm in group i with each in group i + 1. If they differ in exactly one bit, combine them and mark the differing position with a dash (-).
 3. Mark combined minterms as used.
 4. Repeat until no further combinations are possible.
 5. The unchecked terms (including combined terms that never matched) are the prime implicants.
 
-#### Phase 2 — Essential Prime Implicant Selection
+#### Phase 2 ? Essential Prime Implicant Selection
 
 1. Construct a prime implicant chart with prime implicants as rows and minterms as columns.
 2. Identify essential prime implicants (those covering a minterm that no other implicant covers).
@@ -308,7 +308,7 @@ function quineMcCluskey(minterms: number[], numVars: number): string[] {
 
 | Method | Best For | Strengths | Weaknesses |
 |--------|----------|-----------|------------|
-| K-Map | ≤4 variables (≤6 with practice) | Visual, intuitive, fast | Unwieldy for many variables |
+| K-Map | =4 variables (=6 with practice) | Visual, intuitive, fast | Unwieldy for many variables |
 | Quine-McCluskey | 5-20 variables | Algorithmic, exact | Slow for many inputs, memory intensive |
 | Espresso | >20 variables | Heuristic, efficient | May not find absolute minimum |
 
@@ -316,7 +316,7 @@ function quineMcCluskey(minterms: number[], numVars: number): string[] {
 
 ### Example 4.1: 3-Variable K-Map Minimisation
 
-Minimise F(x, y, z) = Σ(0, 1, 4, 5).
+Minimise F(x, y, z) = S(0, 1, 4, 5).
 
 **Solution**: The K-map:
 
@@ -325,15 +325,15 @@ Minimise F(x, y, z) = Σ(0, 1, 4, 5).
 | x=0 | 1 | 1 | 0 | 0 |
 | x=1 | 1 | 1 | 0 | 0 |
 
-Group: All four 1s form a group of 4 (x varies, so x is eliminated; y=0 and z varies, so y is eliminated). The constant variable is z=0 (complemented y'). Wait — let me recheck. 
+Group: All four 1s form a group of 4 (x varies, so x is eliminated; y=0 and z varies, so y is eliminated). The constant variable is z=0 (complemented y'). Wait ? let me recheck. 
 
-In rows x=0 and x=1, yz=00 and yz=01 have 1s. So y=0 in both columns, z varies (0→1). Group of 4 eliminates x (changes between rows) and z (changes between columns). The constant is y=0, giving term y'.
+In rows x=0 and x=1, yz=00 and yz=01 have 1s. So y=0 in both columns, z varies (0?1). Group of 4 eliminates x (changes between rows) and z (changes between columns). The constant is y=0, giving term y'.
 
 Minimal expression: F = y'
 
 ### Example 4.2: 4-Variable K-Map with Prime Implicant Chart
 
-Minimise F(A, B, C, D) = Σ(0, 2, 5, 7, 8, 10, 13, 15).
+Minimise F(A, B, C, D) = S(0, 2, 5, 7, 8, 10, 13, 15).
 
 **Solution**: The K-map:
 
@@ -345,16 +345,16 @@ Minimise F(A, B, C, D) = Σ(0, 2, 5, 7, 8, 10, 13, 15).
 | AB=10 | 1 | 0 | 0 | 1 |
 
 Prime implicants:
-- Group of 4 corners: (0, 2, 8, 10) → B'·D' (B and D vary)
-- Group of 4 center: (5, 7, 13, 15) → B·D (B and D vary? No — A and C vary, B=1 and D=1 are constant) Actually: B=1 (rows 01, 11), D=1 (columns 01, 11). So B·D.
+- Group of 4 corners: (0, 2, 8, 10) ? B'?D' (B and D vary)
+- Group of 4 center: (5, 7, 13, 15) ? B?D (B and D vary? No ? A and C vary, B=1 and D=1 are constant) Actually: B=1 (rows 01, 11), D=1 (columns 01, 11). So B?D.
 
-All minterms are covered by these two groups. Both are essential (corners uniquely covered by B'·D', center uniquely by B·D).
+All minterms are covered by these two groups. Both are essential (corners uniquely covered by B'?D', center uniquely by B?D).
 
-Minimal expression: F = B'·D' + B·D
+Minimal expression: F = B'?D' + B?D
 
 ### Example 4.3: Don't-Care Conditions
 
-Minimise F(A, B, C, D) = Σ(0, 2, 4, 6, 8) with don't-cares d(A, B, C, D) = Σ(10, 12, 14).
+Minimise F(A, B, C, D) = S(0, 2, 4, 6, 8) with don't-cares d(A, B, C, D) = S(10, 12, 14).
 
 **Solution**: The K-map:
 
@@ -365,7 +365,7 @@ Minimise F(A, B, C, D) = Σ(0, 2, 4, 6, 8) with don't-cares d(A, B, C, D) = Σ(1
 | AB=11 | X | 0 | 0 | X |
 | AB=10 | 1 | 0 | 0 | X |
 
-Using don't-cares at 10, 12, 14 as 1s: we can form a group of 8 spanning columns CD=00 and CD=10 (C·D' or C'? Let's check: CD=00 and CD=10 both have C=0... actually column CD=00: C=0,D=0; column CD=10: C=1,D=0). D varies — no, D=0 in both. C varies. So D' is constant.
+Using don't-cares at 10, 12, 14 as 1s: we can form a group of 8 spanning columns CD=00 and CD=10 (C?D' or C'? Let's check: CD=00 and CD=10 both have C=0... actually column CD=00: C=0,D=0; column CD=10: C=1,D=0). D varies ? no, D=0 in both. C varies. So D' is constant.
 
 The group of 8: all rows (A varies), columns 00 and 10 (C varies, D=0). Term: D'.
 
@@ -375,7 +375,7 @@ Without don't-cares: F would require a much more complex expression.
 
 ### Example 4.4: Quine-McCluskey Implementation
 
-Minimise F(w, x, y, z) = Σ(0, 1, 2, 8, 9, 10, 15) using Quine-McCluskey.
+Minimise F(w, x, y, z) = S(0, 1, 2, 8, 9, 10, 15) using Quine-McCluskey.
 
 **Solution**: 
 
@@ -386,44 +386,44 @@ Group by number of 1s:
 - Group 4: 1111 (15)
 
 Combine groups 0-1:
-- 0000 + 0001 = 000− (0,1)
-- 0000 + 0010 = 00−0 (0,2)
-- 0000 + 1000 = −000 (0,8)
+- 0000 + 0001 = 000- (0,1)
+- 0000 + 0010 = 00-0 (0,2)
+- 0000 + 1000 = -000 (0,8)
 
 Combine groups 1-2:
-- 0001 + 1001 = −001 (1,9)
-- 0010 + 1010 = −010 (2,10)
-- 1000 + 1001 = 100− (8,9)
-- 1000 + 1010 = 10−0 (8,10)
+- 0001 + 1001 = -001 (1,9)
+- 0010 + 1010 = -010 (2,10)
+- 1000 + 1001 = 100- (8,9)
+- 1000 + 1010 = 10-0 (8,10)
 
 No further combinations possible (group 4 has no adjacent group).
 
-Prime implicants: 000−, 00−0, −000, −001, −010, 100−, 10−0, 1111.
+Prime implicants: 000-, 00-0, -000, -001, -010, 100-, 10-0, 1111.
 
-Essential: 1111 (only covers 15), 000− (covers minterm 1 uniquely), −000 (covers minterm 8 uniquely).
+Essential: 1111 (only covers 15), 000- (covers minterm 1 uniquely), -000 (covers minterm 8 uniquely).
 
-Remaining minterms: 2, 9, 10. Choose 100− (covers 9) and −010 (covers 2, 10).
+Remaining minterms: 2, 9, 10. Choose 100- (covers 9) and -010 (covers 2, 10).
 
 Minimal expression: w'x'y' + x'y'z' + wy'z' + wxyz.
 
 ### Example 4.5: 5-Variable K-Map
 
-Minimise F(v, w, x, y, z) = Σ(0, 2, 4, 6, 16, 18, 20, 22).
+Minimise F(v, w, x, y, z) = S(0, 2, 4, 6, 16, 18, 20, 22).
 
 **Solution**: v=0 plane has 1s at 0, 2, 4, 6 (wxyz=0000, 0010, 0100, 0110). v=1 plane has 1s at 16, 18, 20, 22 (wxyz=0000, 0010, 0100, 0110).
 
-In each plane, the four 1s form a group of 4: x'z' (w varies, y varies... let me recheck). The cells 0000, 0010, 0100, 0110: w varies (0,0,1,1), x=0 constant, y varies (0,1,0,1), z=0 constant. So x'·z'.
+In each plane, the four 1s form a group of 4: x'z' (w varies, y varies... let me recheck). The cells 0000, 0010, 0100, 0110: w varies (0,0,1,1), x=0 constant, y varies (0,1,0,1), z=0 constant. So x'?z'.
 
-Across planes, v varies but the same x'·z' pattern appears in both planes. Group of 8: x'·z' (v eliminated).
+Across planes, v varies but the same x'?z' pattern appears in both planes. Group of 8: x'?z' (v eliminated).
 
-Minimal expression: F = x'·z'
+Minimal expression: F = x'?z'
 
 ### Concept Comparison
 
 | Method | Max Variables | Effort | Optimality | Automation |
 |--------|--------------|--------|------------|------------|
 | Algebraic | Any | High | Not guaranteed | No |
-| K-Map | ~6 | Low (≤4 vars) | Guaranteed | No |
+| K-Map | ~6 | Low (=4 vars) | Guaranteed | No |
 | QMC | ~20 | Moderate | Guaranteed | Yes |
 | Espresso | >20 | Low | Near-optimal | Yes |
 
@@ -431,10 +431,10 @@ Minimal expression: F = x'·z'
 
 | K-Map Size | Dimensions | Group of 2^k eliminates |
 |-----------|-----------|------------------------|
-| 2 variables | 2×1 | 1 variable per 2 cells |
-| 3 variables | 2×4 | 1 var (2), 2 vars (4) |
-| 4 variables | 4×4 | 1 var (2), 2 vars (4), 3 vars (8) |
-| 5 variables | 2×4×4 | Up to 4 variables |
+| 2 variables | 2?1 | 1 variable per 2 cells |
+| 3 variables | 2?4 | 1 var (2), 2 vars (4) |
+| 4 variables | 4?4 | 1 var (2), 2 vars (4), 3 vars (8) |
+| 5 variables | 2?4?4 | Up to 4 variables |
 
 ### Cross-Application Matrix
 
@@ -447,12 +447,12 @@ Minimal expression: F = x'·z'
 
 ## Practical Takeaways
 
-1. **Gray code ordering is essential** — K-maps only work because adjacent cells differ in one variable.
-2. **Largest groups first** — always form the biggest possible groups before considering smaller ones.
-3. **Don't-cares are free improvements** — always consider them for larger groups.
-4. **Essential prime implicants are mandatory** — identify them first before covering remaining minterms.
-5. **Use QMC for 5+ variables** — K-maps become impractical; automate with the tabulation method.
-6. **SOP and POS are duals** — minimising one form is equivalent to minimising the other on the complementary map.
+1. **Gray code ordering is essential** ? K-maps only work because adjacent cells differ in one variable.
+2. **Largest groups first** ? always form the biggest possible groups before considering smaller ones.
+3. **Don't-cares are free improvements** ? always consider them for larger groups.
+4. **Essential prime implicants are mandatory** ? identify them first before covering remaining minterms.
+5. **Use QMC for 5+ variables** ? K-maps become impractical; automate with the tabulation method.
+6. **SOP and POS are duals** ? minimising one form is equivalent to minimising the other on the complementary map.
 
 ## TypeScript Examples
 
@@ -552,16 +552,16 @@ class KarnaughMap {
 }
 
 const km = KarnaughMap;
-// 2-variable: F = Σ(0,2)
-km.printMap(2, [0, 2], "F = Σ(0,2)");
-// 3-variable: F = Σ(1,3,5,7) → F = C
-km.printMap(3, [1, 3, 5, 7], "F = Σ(1,3,5,7)");
-// 4-variable: F = Σ(0,1,3,5,7,9,11,13,15)
-km.printMap(4, [0, 1, 3, 5, 7, 9, 11, 13, 15], "F = Σ(0,1,3,5,7,9,11,13,15)");
+// 2-variable: F = S(0,2)
+km.printMap(2, [0, 2], "F = S(0,2)");
+// 3-variable: F = S(1,3,5,7) ? F = C
+km.printMap(3, [1, 3, 5, 7], "F = S(1,3,5,7)");
+// 4-variable: F = S(0,1,3,5,7,9,11,13,15)
+km.printMap(4, [0, 1, 3, 5, 7, 9, 11, 13, 15], "F = S(0,1,3,5,7,9,11,13,15)");
 // With don't-cares
-km.printMap(4, [1, 3, 5, 7, 9], [11, 13, 15], "F = Σ(1,3,5,7,9) + d(11,13,15)");
+km.printMap(4, [1, 3, 5, 7, 9], [11, 13, 15], "F = S(1,3,5,7,9) + d(11,13,15)");
 
-console.log("\n=== Prime Implicant Groups (F = Σ(0,2,4,6,7,8,10,12,14,15)) ===");
+console.log("\n=== Prime Implicant Groups (F = S(0,2,4,6,7,8,10,12,14,15)) ===");
 const groups = km.findGroups(4, [0, 2, 4, 6, 7, 8, 10, 12, 14, 15]);
 groups.forEach(g => console.log(`  ${g}`));
 ```
@@ -608,25 +608,25 @@ class GrayCode {
 const gc = GrayCode;
 console.log("\n=== Gray Code (3-bit) ===");
 const g3 = gc.generate(3);
-console.log(`  Binary → Gray`);
+console.log(`  Binary ? Gray`);
 g3.forEach((g, i) => {
   const bin = i.toString(2).padStart(3, "0");
-  console.log(`  ${bin}  →  ${g}`);
+  console.log(`  ${bin}  ?  ${g}`);
 });
-console.log(`  Single-bit transitions: ${gc.verifySingleBit(g3) ? "✓ VERIFIED" : "✗ FAILED"}`);
+console.log(`  Single-bit transitions: ${gc.verifySingleBit(g3) ? "? VERIFIED" : "? FAILED"}`);
 
 console.log("\n=== Gray Code (4-bit) ===");
 const g4 = gc.generate(4);
 g4.forEach((g, i) => {
   const bin = i.toString(2).padStart(4, "0");
-  if (i < 8 || i >= 12) console.log(`  ${bin}  →  ${g}`);
+  if (i < 8 || i >= 12) console.log(`  ${bin}  ?  ${g}`);
   else if (i === 8) console.log("  ... (16 entries total)");
 });
-console.log(`  Single-bit transitions: ${gc.verifySingleBit(g4) ? "✓ VERIFIED" : "✗ FAILED"}`);
+console.log(`  Single-bit transitions: ${gc.verifySingleBit(g4) ? "? VERIFIED" : "? FAILED"}`);
 
 console.log("\n=== Recursive Gray Code (verify identical) ===");
 const g3r = gc.recursiveGenerate(3);
-console.log(`  Iterative == Recursive: ${JSON.stringify(g3) === JSON.stringify(g3r) ? "✓ IDENTICAL" : "✗ DIFFERENT"}`);
+console.log(`  Iterative == Recursive: ${JSON.stringify(g3) === JSON.stringify(g3r) ? "? IDENTICAL" : "? DIFFERENT"}`);
 
 console.log("\n=== Gray Code Decimal Sequence (4-bit) ===");
 console.log(`  ${gc.toDecimal(g4).join(", ")}`);
@@ -658,10 +658,10 @@ class MintermMaxtermConverter {
       if (usePrime) {
         terms.push(bin[i] === "1" ? varsList[i] : `${varsList[i]}'`);
       } else {
-        terms.push(bin[i] === "1" ? varsList[i] : `¬${varsList[i]}`);
+        terms.push(bin[i] === "1" ? varsList[i] : `?${varsList[i]}`);
       }
     }
-    return terms.join("·");
+    return terms.join("?");
   }
 
   static maxtermToExpression(vars: number, maxterm: number, usePrime: boolean = true): string {
@@ -672,7 +672,7 @@ class MintermMaxtermConverter {
       if (usePrime) {
         terms.push(bin[i] === "0" ? varsList[i] : `${varsList[i]}'`);
       } else {
-        terms.push(bin[i] === "0" ? varsList[i] : `¬${varsList[i]}`);
+        terms.push(bin[i] === "0" ? varsList[i] : `?${varsList[i]}`);
       }
     }
     return `(${terms.join("+")})`;
@@ -683,10 +683,10 @@ class MintermMaxtermConverter {
     const sopTerms = minterms.map(m => this.mintermToExpression(vars, m));
     const posTerms = maxterms.map(m => this.maxtermToExpression(vars, m));
     console.log(`\n=== Canonical Form Conversion (${vars} vars) ===`);
-    console.log(`  Minterms:  Σ(${minterms.join(", ")})`);
-    console.log(`  Maxterms:  Π(${maxterms.join(", ")})`);
+    console.log(`  Minterms:  S(${minterms.join(", ")})`);
+    console.log(`  Maxterms:  ?(${maxterms.join(", ")})`);
     console.log(`  SOP:       F = ${sopTerms.join(" + ")}`);
-    console.log(`  POS:       F = ${posTerms.join(" · ")}`);
+    console.log(`  POS:       F = ${posTerms.join(" ? ")}`);
   }
 }
 
@@ -765,7 +765,7 @@ const testCases = [
   { vars: 4, minterms: [0, 2, 3, 6, 7, 8, 10, 12, 13] },
 ];
 for (const tc of testCases) {
-  console.log(`\n  F(w,x,y,z) = Σ(${tc.minterms.join(", ")})`);
+  console.log(`\n  F(w,x,y,z) = S(${tc.minterms.join(", ")})`);
   const primes = qmc.findPrimeImplicants(tc.minterms, tc.vars);
   console.log(`  Prime implicants:`);
   primes.forEach(p => console.log(`    ${p}  (covers ${p.replace(/-/g, "X")})`));
@@ -786,12 +786,12 @@ primes.forEach(p => console.log(`    ${p}`));
 ```mermaid
 flowchart TD
     subgraph KM[3-Variable K-Map]
-        C0[AB=00<br/>C=0 → 0] -->|adjacent| C1[AB=01<br/>C=0 → 1]
-        C1 -->|adjacent| C3[AB=11<br/>C=0 → 3]
-        C3 -->|adjacent| C2[AB=10<br/>C=0 → 2]
-        C4[AB=00<br/>C=1 → 4] -->|adjacent| C5[AB=01<br/>C=1 → 5]
-        C5 -->|adjacent| C7[AB=11<br/>C=1 → 7]
-        C7 -->|adjacent| C6[AB=10<br/>C=1 → 6]
+        C0[AB=00<br/>C=0 ? 0] -->|adjacent| C1[AB=01<br/>C=0 ? 1]
+        C1 -->|adjacent| C3[AB=11<br/>C=0 ? 3]
+        C3 -->|adjacent| C2[AB=10<br/>C=0 ? 2]
+        C4[AB=00<br/>C=1 ? 4] -->|adjacent| C5[AB=01<br/>C=1 ? 5]
+        C5 -->|adjacent| C7[AB=11<br/>C=1 ? 7]
+        C7 -->|adjacent| C6[AB=10<br/>C=1 ? 6]
     end
     C0 ---|vertical<br/>adjacent| C4
     C1 ---|vertical| C5
@@ -854,6 +854,98 @@ flowchart LR
     Compare --> Final[Final minimised circuit]
 ```
 
+
+// karnaugh maps
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'karnaugh maps', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// karnaugh maps - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'karnaugh maps' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Karnaugh maps provide a visual method for minimising Boolean functions of up to 6 variables.
@@ -914,23 +1006,23 @@ flowchart LR
 ### Application Problems
 
 1. Use a 3-variable K-map to minimise:
-   a) F(x,y,z) = Σ(0, 1, 3, 4, 5)
-   b) G(x,y,z) = Σ(2, 3, 5, 7)
-   c) H(x,y,z) = Σ(0, 2, 4, 6)
+   a) F(x,y,z) = S(0, 1, 3, 4, 5)
+   b) G(x,y,z) = S(2, 3, 5, 7)
+   c) H(x,y,z) = S(0, 2, 4, 6)
 
 2. Use a 4-variable K-map to minimise:
-   a) F(A,B,C,D) = Σ(0, 1, 3, 5, 7, 9, 11, 13, 15)
-   b) G(A,B,C,D) = Σ(0, 2, 5, 7, 8, 10, 13, 15)
-   c) H(A,B,C,D) = Π(1, 3, 5, 7, 9, 11, 13, 15)
+   a) F(A,B,C,D) = S(0, 1, 3, 5, 7, 9, 11, 13, 15)
+   b) G(A,B,C,D) = S(0, 2, 5, 7, 8, 10, 13, 15)
+   c) H(A,B,C,D) = ?(1, 3, 5, 7, 9, 11, 13, 15)
 
 3. Minimise with don't-cares:
-   F(A,B,C,D) = Σ(1, 3, 5, 7, 9) with d = Σ(11, 13, 15)
+   F(A,B,C,D) = S(1, 3, 5, 7, 9) with d = S(11, 13, 15)
 
 4. Use the prime implicant chart to select the minimal cover for:
-   F(A,B,C,D) = Σ(0, 2, 4, 6, 7, 8, 10, 12, 14, 15)
+   F(A,B,C,D) = S(0, 2, 4, 6, 7, 8, 10, 12, 14, 15)
 
 5. Implement the Quine-McCluskey algorithm in TypeScript to minimise:
-   F(w,x,y,z) = Σ(0, 2, 3, 6, 7, 8, 10, 12, 13)
+   F(w,x,y,z) = S(0, 2, 3, 6, 7, 8, 10, 12, 13)
 
 ### Challenge Problem
 

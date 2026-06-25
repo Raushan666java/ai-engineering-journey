@@ -22,7 +22,7 @@ After completing this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Propositions | A proposition is a statement that is either true or false | Every precise factual claim is a proposition — questions and commands are not |
+| Propositions | A proposition is a statement that is either true or false | Every precise factual claim is a proposition ? questions and commands are not |
 | Logical Connectives | $\neg, \land, \lor, \rightarrow, \leftrightarrow$ combine propositions | Connectives mirror natural language "not," "and," "or," "if-then," "iff" |
 | Truth Tables | Exhaustive enumeration of all truth assignments | Truth tables are the ultimate arbiter of logical equivalence |
 | Logical Equivalence | $A \equiv B$ when they match on every row | De Morgan's and distributive laws simplify complex expressions |
@@ -56,7 +56,7 @@ Examples: "2 + 2 = 4" (true). "5 is an even number" (false). "If it rains, the g
 
 Non-examples: "What time is it?" (question), "Close the door" (command), "This sentence is false" (paradox, not a proposition).
 
-> **One-Sentence Takeaway:** A proposition is the atomic unit of logic — it must have a definite truth value (true or false) with no ambiguity.
+> **One-Sentence Takeaway:** A proposition is the atomic unit of logic ? it must have a definite truth value (true or false) with no ambiguity.
 
 ### 2.2 Logical Connectives
 
@@ -71,7 +71,7 @@ Let $p$ and $q$ be propositions.
 | Conditional | $p \rightarrow q$ | "if $p$ then $q$" | $p$ false or $q$ true |
 | Biconditional | $p \leftrightarrow q$ | "$p$ if and only if $q$" | both same truth value |
 
-> **One-Sentence Takeaway:** Logical connectives define the grammar of propositional logic — mastering their truth conditions is essential for reasoning.
+> **One-Sentence Takeaway:** Logical connectives define the grammar of propositional logic ? mastering their truth conditions is essential for reasoning.
 
 ### 2.3 Truth Tables
 
@@ -86,7 +86,7 @@ A truth table enumerates all possible truth assignments to the variables and sho
 
 Note carefully: $p \rightarrow q$ is false only when $p$ is true and $q$ is false. This is called **material implication**.
 
-> **One-Sentence Takeaway:** A truth table enumerates all $2^n$ possible truth assignments — it is the definitive method for checking equivalence and validity.
+> **One-Sentence Takeaway:** A truth table enumerates all $2^n$ possible truth assignments ? it is the definitive method for checking equivalence and validity.
 
 ### 2.4 Logical Equivalence
 
@@ -132,16 +132,16 @@ function logicalEquivalence(vars: number): boolean[][] {
   return rows;
 }
 
-// Verify that p -> q is equivalent to ¬p ∨ q
+// Verify that p -> q is equivalent to ?p ? q
 function implies(p: boolean, q: boolean): boolean { return !p || q; }
 function negOr(p: boolean, q: boolean): boolean { return !p || q; }
 
 const assignments = logicalEquivalence(2);
 const allMatch = assignments.every(([p, q]) => implies(p, q) === negOr(p, q));
-console.log(`p→q ≡ ¬p∨q: ${allMatch}`); // true
+console.log(`p?q = ?p?q: ${allMatch}`); // true
 ```
 
-> **One-Sentence Takeaway:** Two propositions are logically equivalent when they have identical truth tables — De Morgan's laws are the most important equivalence pair.
+> **One-Sentence Takeaway:** Two propositions are logically equivalent when they have identical truth tables ? De Morgan's laws are the most important equivalence pair.
 
 ### 2.5 Conditional and Related Statements
 
@@ -155,9 +155,9 @@ The conditional is equivalent to its contrapositive. The converse is equivalent 
 
 ```mermaid
 flowchart TD
-    A["p → q (Original)"] --> B["q → p (Converse)"]
-    A --> C["¬p → ¬q (Inverse)"]
-    A --> D["¬q → ¬p (Contrapositive)"]
+    A["p ? q (Original)"] --> B["q ? p (Converse)"]
+    A --> C["?p ? ?q (Inverse)"]
+    A --> D["?q ? ?p (Contrapositive)"]
     D -.->|Equivalent| A
     B -.->|Equivalent| C
 ```
@@ -193,10 +193,10 @@ function toDNF(truthTable: { vars: boolean[], result: boolean }[]): string {
   return truthTable
     .filter(row => row.result)
     .map(row => {
-      const terms = row.vars.map((v, i) => v ? `x${i}` : `¬x${i}`);
-      return `(${terms.join(' ∧ ')})`;
+      const terms = row.vars.map((v, i) => v ? `x${i}` : `?x${i}`);
+      return `(${terms.join(' ? ')})`;
     })
-    .join(' ∨ ');
+    .join(' ? ');
 }
 ```
 
@@ -222,7 +222,7 @@ function isSatisfiable(formula: (assign: Map<string, boolean>) => boolean, vars:
   return false;
 }
 
-// Test: (p ∨ q) ∧ (¬p ∨ ¬q) is satisfiable
+// Test: (p ? q) ? (?p ? ?q) is satisfiable
 const formula = (a: Map<string, boolean>) => 
   (a.get('p')! || a.get('q')!) && (!a.get('p')! || !a.get('q')!);
 console.log(isSatisfiable(formula, ['p', 'q'])); // true
@@ -256,7 +256,7 @@ function modusPonens(p: boolean, impliesPQ: boolean): boolean | null {
   return null;
 }
 
-// Resolution: (p ∨ q) ∧ (¬p ∨ r) → (q ∨ r)
+// Resolution: (p ? q) ? (?p ? r) ? (q ? r)
 function resolution(p: boolean, q: boolean, r: boolean): boolean {
   const premise1 = p || q;
   const premise2 = !p || r;
@@ -269,7 +269,7 @@ function resolution(p: boolean, q: boolean, r: boolean): boolean {
 - **Affirming the converse:** $p \rightarrow q,\; q \;\therefore\; p$ (invalid)
 - **Denying the antecedent:** $p \rightarrow q,\; \neg p \;\therefore\; \neg q$ (invalid)
 
-> **One-Sentence Takeaway:** An argument is valid if the conclusion follows necessarily from the premises — modus ponens and modus tollens are the most fundamental inference rules.
+> **One-Sentence Takeaway:** An argument is valid if the conclusion follows necessarily from the premises ? modus ponens and modus tollens are the most fundamental inference rules.
 
 ### 2.9 Limitations of Propositional Logic
 
@@ -280,7 +280,7 @@ Propositional logic cannot express:
 
 These require **predicate logic** (first-order logic), which adds quantifiers $\forall$ and $\exists$ and predicates $P(x)$. This is covered in Chapter 3.
 
-> **Pro Tip:** When simplifying a compound proposition, work step-by-step naming each equivalence you use — this makes errors easy to spot.
+> **Pro Tip:** When simplifying a compound proposition, work step-by-step naming each equivalence you use ? this makes errors easy to spot.
 >
 > **Pro Tip:** Use De Morgan's laws to push negations inward: $\neg(p \land q) \equiv \neg p \lor \neg q$. This is the single most useful equivalence for simplifying negated expressions.
 >
@@ -413,16 +413,16 @@ These require **predicate logic** (first-order logic), which adds quantifiers $\
 
 **Example 2.7** (Argument validity). Determine if the argument is valid: If it rains, the ground is wet. The ground is wet. Therefore, it rained.
 
-*Solution.* Premises: $p \rightarrow q$, $q$. Conclusion: $p$. This is affirming the converse — invalid. Counterexample: the ground could be wet from sprinklers.
+*Solution.* Premises: $p \rightarrow q$, $q$. Conclusion: $p$. This is affirming the converse ? invalid. Counterexample: the ground could be wet from sprinklers.
 
 **Example 2.8** (Modus tollens in TypeScript).
 
 ```typescript
 function isValidModusTollens(p: boolean, q: boolean, notQ: boolean): boolean {
-  // Premises: p → q, ¬q. Conclusion: ¬p
-  const premise1 = !p || q;    // p → q
-  const premise2 = notQ;       // ¬q
-  const conclusion = !p;       // ¬p
+  // Premises: p ? q, ?q. Conclusion: ?p
+  const premise1 = !p || q;    // p ? q
+  const premise2 = notQ;       // ?q
+  const conclusion = !p;       // ?p
   // If premises are true, conclusion must be true
   return !(premise1 && premise2) || conclusion;
 }
@@ -445,7 +445,7 @@ function satSolve(vars: number, expr: (vals: boolean[]) => boolean): boolean[][]
   }
   return solutions;
 }
-// (p ∨ q) ∧ (¬p ∨ ¬q)
+// (p ? q) ? (?p ? ?q)
 const expr = (v: boolean[]) => (v[0] || v[1]) && (!v[0] || !v[1]);
 console.log('SAT solutions:', satSolve(2, expr));
 // [[false,true],[true,false]]
@@ -463,10 +463,10 @@ function areEquivalent(
   }
   return true;
 }
-// Verify: p → q ≡ ¬p ∨ q
+// Verify: p ? q = ?p ? q
 const impl = (v: boolean[]) => !v[0] || v[1];
 const orForm = (v: boolean[]) => !v[0] || v[1];
-console.log('p→q ≡ ¬p∨q:', areEquivalent(2, impl, orForm)); // true
+console.log('p?q = ?p?q:', areEquivalent(2, impl, orForm)); // true
 
 // --- Truth Table Generator ---
 function truthTable(vars: number, expr: (vals: boolean[]) => boolean): void {
@@ -493,7 +493,7 @@ function isEquivalent(expr1: (v: boolean[]) => boolean, expr2: (v: boolean[]) =>
   }
   return true;
 }
-// De Morgan's: ¬(p ∧ q) ≡ ¬p ∨ ¬q
+// De Morgan's: ?(p ? q) = ?p ? ?q
 const demorgan = isEquivalent(
   v => !(v[0] && v[1]),
   v => !v[0] || !v[1], 2);
@@ -509,7 +509,7 @@ function findSatisfying(expr: (v: boolean[]) => boolean, vars: number): boolean[
   }
   return solutions;
 }
-// (p → q) ∧ (q → r) → (p → r) is a tautology
+// (p ? q) ? (q ? r) ? (p ? r) is a tautology
 const isTautology = (expr: (v: boolean[]) => boolean, vars: number): boolean =>
   findSatisfying(v => !expr(v), vars).length === 0;
 const tautCheck = isTautology(v => !v[0] || !v[1] || v[2] || !(!v[0] || v[1]) || !(!v[1] || v[2]) || (!v[0] || v[2]), 3);
@@ -518,15 +518,15 @@ console.log('Is tautology:', tautCheck);
 // --- CNF/DNF Converter ---
 function toDNF(truthTable: boolean[][]): string {
   return truthTable.filter(row => row[row.length - 1])
-    .map(row => row.slice(0, -1).map((v, i) => (v ? '' : '¬') + String.fromCharCode(112 + i)).join('∧'))
-    .join('∨');
+    .map(row => row.slice(0, -1).map((v, i) => (v ? '' : '?') + String.fromCharCode(112 + i)).join('?'))
+    .join('?');
 }
 function toCNF(truthTable: boolean[][]): string {
   return truthTable.filter(row => !row[row.length - 1])
-    .map(row => row.slice(0, -1).map((v, i) => (v ? '¬' : '') + String.fromCharCode(112 + i)).join('∨'))
-    .join('∧');
+    .map(row => row.slice(0, -1).map((v, i) => (v ? '?' : '') + String.fromCharCode(112 + i)).join('?'))
+    .join('?');
 }
-// XOR truth table: p q | p⊕q
+// XOR truth table: p q | p?q
 const xorTT: boolean[][] = [[true,true,false],[true,false,true],[false,true,true],[false,false,false]];
 console.log('\nXOR DNF:', toDNF(xorTT), 'XOR CNF:', toCNF(xorTT));
 
@@ -539,12 +539,104 @@ function isValidArgument(premises: ((v: boolean[]) => boolean)[], conclusion: (v
   }
   return true;
 }
-// If p→q and p are true, then q must be true
+// If p?q and p are true, then q must be true
 console.log('\nModus ponens valid:', isValidArgument(
   [v => !v[0] || v[1], v => v[0]],
   v => v[1], 2));
 ```
 
+
+// logic
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'logic', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// logic - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'logic' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Propositions are T/F statements. Logical connectives combine them into compound propositions.
@@ -555,7 +647,7 @@ console.log('\nModus ponens valid:', isValidArgument(
 - A tautology is always true; a contradiction is always false.
 - Valid arguments correspond to tautological conditionals.
 - Inference rules (modus ponens, modus tollens, syllogism) formalize reasoning.
-- Propositional logic cannot express quantifiers — that requires predicate logic.
+- Propositional logic cannot express quantifiers ? that requires predicate logic.
 
 ### 2.9 Truth Table Generator
 
@@ -587,7 +679,7 @@ function evaluate(
   };
 }
 
-// p → q ≡ ¬p ∨ q
+// p ? q = ?p ? q
 const result = evaluate(
   row => !row.p || row.q,
   ["p", "q"]
@@ -613,7 +705,7 @@ function areLogicallyEquivalent(
   return table.every(row => expr1(row) === expr2(row));
 }
 
-// Prove: p → q ≡ ¬p ∨ q
+// Prove: p ? q = ?p ? q
 const equiv1 = areLogicallyEquivalent(
   row => !row.p || row.q,
   row => row.p ? row.q : true,
@@ -621,7 +713,7 @@ const equiv1 = areLogicallyEquivalent(
 );
 console.log(equiv1); // true
 
-// Prove: p ⊕ q ≡ (p ∨ q) ∧ ¬(p ∧ q)
+// Prove: p ? q = (p ? q) ? ?(p ? q)
 const equiv2 = areLogicallyEquivalent(
   row => row.p !== row.q,
   row => (row.p || row.q) && !(row.p && row.q),
@@ -630,7 +722,7 @@ const equiv2 = areLogicallyEquivalent(
 console.log(equiv2); // true
 ```
 
-### 2.11 Inference Rules — Systematic Proofs
+### 2.11 Inference Rules ? Systematic Proofs
 
 ```typescript
 type Proposition = { type: string; args: any[] };
@@ -667,7 +759,7 @@ function hypotheticalSyllogism(
 | 7 | $s$ | Modus ponens (3, 5) |
 | 8 | $r \land s$ | Conjunction (6, 7) |
 
-### 2.12 Normal Forms — CNF and DNF
+### 2.12 Normal Forms ? CNF and DNF
 
 **Definition 2.18 (Conjunctive Normal Form).** A conjunction of clauses, where each clause is a disjunction of literals. Example: $(p \lor \neg q) \land (q \lor r)$.
 
@@ -680,11 +772,11 @@ function toDNF(truthTable: { vars: string[]; result: boolean }[]): string {
     if (!row.result) continue;
     const literals: string[] = [];
     for (const v of row.vars) {
-      literals.push(row[row.vars.indexOf(v)] ? v : `¬${v}`);
+      literals.push(row[row.vars.indexOf(v)] ? v : `?${v}`);
     }
-    terms.push(`(${literals.join(" ∧ ")})`);
+    terms.push(`(${literals.join(" ? ")})`);
   }
-  return terms.join(" ∨ ");
+  return terms.join(" ? ");
 }
 
 // Example: XOR truth table
@@ -695,11 +787,11 @@ function dnfOfXor(): string {
     { vars: ["p", "q"], result: true },
     { vars: ["p", "q"], result: false }
   ];
-  return toDNF(table); // (¬p ∧ q) ∨ (p ∧ ¬q)
+  return toDNF(table); // (?p ? q) ? (p ? ?q)
 }
 ```
 
-### 2.13 SAT Solver — Brute Force
+### 2.13 SAT Solver ? Brute Force
 
 ```typescript
 function bruteForceSAT(
@@ -707,7 +799,7 @@ function bruteForceSAT(
   varCount: number
 ): number[] | null {
   // clauses: array of clauses, each clause is array of literals
-  // positive = variable, negative = ¬variable
+  // positive = variable, negative = ?variable
   for (let assignment = 0; assignment < (1 << varCount); assignment++) {
     const vars: boolean[] = [];
     for (let i = 0; i < varCount; i++) {
@@ -721,11 +813,11 @@ function bruteForceSAT(
   return null; // unsatisfiable
 }
 
-// (p ∨ q) ∧ (¬p ∨ q) ∧ (p ∨ ¬q) ∧ (¬p ∨ ¬q)
+// (p ? q) ? (?p ? q) ? (p ? ?q) ? (?p ? ?q)
 const unsat = bruteForceSAT([[1, 2], [-1, 2], [1, -2], [-1, -2]], 2);
 console.log(unsat); // null (contradiction)
 
-// (p ∨ q) ∧ (¬p ∨ r)
+// (p ? q) ? (?p ? r)
 const sat = bruteForceSAT([[1, 2], [-1, 3]], 3);
 console.log(sat); // [1, 0, 1] e.g., p=true, q=false, r=true
 ```
@@ -747,7 +839,7 @@ flowchart TD
     end
 ```
 
-**Example 2.18** (Sheffer stroke — universal gate). The NAND gate ($p \mid q$) alone can express all connectives:
+**Example 2.18** (Sheffer stroke ? universal gate). The NAND gate ($p \mid q$) alone can express all connectives:
 - $\neg p \equiv p \mid p$
 - $p \land q \equiv (p \mid q) \mid (p \mid q)$
 - $p \lor q \equiv (p \mid p) \mid (q \mid q)$

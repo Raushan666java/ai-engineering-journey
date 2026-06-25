@@ -18,10 +18,10 @@ A **set** is an unordered collection of distinct elements, written with curly br
 
 ```text
 A = {0, 1, 2, 3}
-B = {x ∈ ℕ | x is prime}
+B = {x ? N | x is prime}
 ```
 
-Basic set operations include union (∪), intersection (∩), difference (−), and complement (‾). The **power set** of A, written 𝒫(A) or 2^A, is the set of all subsets of A.
+Basic set operations include union (?), intersection (n), difference (-), and complement (?). The **power set** of A, written ??(A) or 2^A, is the set of all subsets of A.
 
 ```typescript
 // Set operations in TypeScript
@@ -31,55 +31,55 @@ const union = new Set([...A, ...B]);          // {0,1,2,3,4,5}
 const intersection = new Set([...A].filter(x => B.has(x))); // {2,3}
 ```
 
-**Cartesian product** A × B = {(a,b) | a ∈ A, b ∈ B} is the set of all ordered pairs. This is the foundation for transition functions in automata.
+**Cartesian product** A � B = {(a,b) | a ? A, b ? B} is the set of all ordered pairs. This is the foundation for transition functions in automata.
 
 ### Relations and Functions
 
-A **relation** R ⊆ A × B is a set of ordered pairs. A **function** f: A → B is a relation where each a ∈ A maps to exactly one b ∈ B.
+A **relation** R ? A � B is a set of ordered pairs. A **function** f: A ? B is a relation where each a ? A maps to exactly one b ? B.
 
 ```text
-f: ℕ → ℕ, f(n) = n²  // total function
-g: ℕ ↛ ℕ, g(n) = 1/n  // partial function (undefined at n=0)
+f: N ? N, f(n) = n�  // total function
+g: N ? N, g(n) = 1/n  // partial function (undefined at n=0)
 ```
 
-A function is **injective** (one-to-one), **surjective** (onto), or **bijective** (both). Bijections establish that two sets have the same **cardinality**. Countably infinite sets (ℕ, ℚ) can be listed; uncountably infinite sets (ℝ, 𝒫(ℕ)) cannot — this distinction drives undecidability.
+A function is **injective** (one-to-one), **surjective** (onto), or **bijective** (both). Bijections establish that two sets have the same **cardinality**. Countably infinite sets (N, Q) can be listed; uncountably infinite sets (R, ??(N)) cannot � this distinction drives undecidability.
 
 ### Graphs and Trees
 
-A **directed graph** G = (V, E) consists of vertices V and edges E ⊆ V × V. A **tree** is a connected acyclic graph. Automata are labeled directed graphs where vertices are states and edges are transitions.
+A **directed graph** G = (V, E) consists of vertices V and edges E ? V � V. A **tree** is a connected acyclic graph. Automata are labeled directed graphs where vertices are states and edges are transitions.
 
 ```mermaid
 graph LR
-    q0((q₀)) -->|a| q1((q₁))
-    q1 -->|b| q2(((q₂)))
+    q0((q0)) -->|a| q1((q1))
+    q1 -->|b| q2(((q2)))
     q2 -->|a| q1
     q0 -->|b| q0
 ```
 
 ### Alphabets, Strings, and Languages
 
-An **alphabet** Σ is a finite non-empty set of symbols. Examples:
+An **alphabet** S is a finite non-empty set of symbols. Examples:
 
 ```text
-Σ₁ = {0, 1}              // binary alphabet
-Σ₂ = {a, b, c, …, z}     // lowercase letters
-Σ₃ = {0, 1, 2, …, 9}     // decimal digits
+S1 = {0, 1}              // binary alphabet
+S2 = {a, b, c, �, z}     // lowercase letters
+S3 = {0, 1, 2, �, 9}     // decimal digits
 ```
 
-A **string** over Σ is a finite sequence of symbols from Σ. The **empty string** is denoted ε (or λ). The **length** of string w is written |w|, with |ε| = 0.
+A **string** over S is a finite sequence of symbols from S. The **empty string** is denoted e (or ?). The **length** of string w is written |w|, with |e| = 0.
 
-The set of all strings over Σ of length k is Σ^k. The set of all strings over Σ is Σ^*. Formally:
+The set of all strings over S of length k is S^k. The set of all strings over S is S^*. Formally:
 
 ```text
-Σ^* = ∪_{k ≥ 0} Σ^k
+S^* = ?_{k = 0} S^k
 ```
 
-A **language** L over Σ is any subset of Σ^*. That is, L ⊆ Σ^*.
+A **language** L over S is any subset of S^*. That is, L ? S^*.
 
 ```text
-L₁ = {ε, 0, 1, 00, 01, 10, 11, …}  = Σ^*    (all binary strings)
-L₂ = {0^n 1^n | n ≥ 0}                    (balanced parentheses)
-L₃ = {w ∈ {a,b}^* | w has equal a's and b's}
+L1 = {e, 0, 1, 00, 01, 10, 11, �}  = S^*    (all binary strings)
+L2 = {0^n 1^n | n = 0}                    (balanced parentheses)
+L3 = {w ? {a,b}^* | w has equal a's and b's}
 ```
 
 ```typescript
@@ -121,44 +121,44 @@ graph BT
 
 | Type | Grammar | Automaton | Production Form | Example Language |
 |------|---------|-----------|-----------------|------------------|
-| 3 | Regular | Finite Automaton | A → aB, A → a | {a^n b^m} |
-| 2 | Context-Free | Pushdown Automaton | A → α | {a^n b^n} |
-| 1 | Context-Sensitive | Linear Bounded Automaton | αAβ → αγβ | {a^n b^n c^n} |
-| 0 | Unrestricted | Turing Machine | α → β | {a^n | n is prime} |
+| 3 | Regular | Finite Automaton | A ? aB, A ? a | {a^n b^m} |
+| 2 | Context-Free | Pushdown Automaton | A ? a | {a^n b^n} |
+| 1 | Context-Sensitive | Linear Bounded Automaton | aA� ? a?� | {a^n b^n c^n} |
+| 0 | Unrestricted | Turing Machine | a ? � | {a^n | n is prime} |
 
 ### Type 3: Regular Grammars
 
-Productions are of the form A → aB or A → a where A, B are non-terminals and a is a terminal. These generate exactly the regular languages recognized by finite automata.
+Productions are of the form A ? aB or A ? a where A, B are non-terminals and a is a terminal. These generate exactly the regular languages recognized by finite automata.
 
 ```text
-S → aS | bS | ε    // all strings over {a, b}
-S → aA | bA, A → a | b    // strings of length 1 or more
+S ? aS | bS | e    // all strings over {a, b}
+S ? aA | bA, A ? a | b    // strings of length 1 or more
 ```
 
 ### Type 2: Context-Free Grammars
 
-Productions are of the form A → γ where γ is any string of terminals and non-terminals. Context-free grammars generate languages recognized by pushdown automata.
+Productions are of the form A ? ? where ? is any string of terminals and non-terminals. Context-free grammars generate languages recognized by pushdown automata.
 
 ```text
-S → aSb | ε    // {a^n b^n | n ≥ 0}
+S ? aSb | e    // {a^n b^n | n = 0}
 ```
 
 ### Type 1: Context-Sensitive Grammars
 
-Productions have the form αAβ → αγβ where γ ≠ ε. A non-terminal A can be replaced only in the context of its surrounding strings α and β. These correspond to linear bounded automata.
+Productions have the form aA� ? a?� where ? ? e. A non-terminal A can be replaced only in the context of its surrounding strings a and �. These correspond to linear bounded automata.
 
 ```text
-S → aSBC | aBC
-CB → BC
-aB → ab
-bB → bb
-bC → bc
-cC → cc    // {a^n b^n c^n | n ≥ 1}
+S ? aSBC | aBC
+CB ? BC
+aB ? ab
+bB ? bb
+bC ? bc
+cC ? cc    // {a^n b^n c^n | n = 1}
 ```
 
 ### Type 0: Unrestricted Grammars
 
-Productions have the form α → β where |α| ≤ |β|. No restrictions. These correspond exactly to Turing machines in generative power.
+Productions have the form a ? � where |a| = |�|. No restrictions. These correspond exactly to Turing machines in generative power.
 
 ## Problems as Languages
 
@@ -174,13 +174,13 @@ An **optimization problem** asks for the best solution among many. These can oft
 
 ```text
 TSP-OPT: Given cities and distances, find the shortest tour.
-TSP-DEC: Given cities, distances, and bound k, is there a tour ≤ k?
+TSP-DEC: Given cities, distances, and bound k, is there a tour = k?
 ```
 
 A **function problem** asks for a specific output value relative to the input.
 
 ```text
-MULT: Given (x, y), compute x × y.
+MULT: Given (x, y), compute x � y.
 ```
 
 ```typescript
@@ -205,9 +205,9 @@ const PRIME_Language: Language = (w) => {
 
 ## Decidability vs. Recognizability
 
-A language L is **decidable** (or recursive) if there exists an algorithm that, for every input w, correctly determines whether w ∈ L in finite time.
+A language L is **decidable** (or recursive) if there exists an algorithm that, for every input w, correctly determines whether w ? L in finite time.
 
-A language L is **recognizable** (or recursively enumerable) if there exists an algorithm that halts and accepts for every w ∈ L, but may run forever for w ∉ L.
+A language L is **recognizable** (or recursively enumerable) if there exists an algorithm that halts and accepts for every w ? L, but may run forever for w ? L.
 
 ```mermaid
 graph TD
@@ -228,7 +228,7 @@ Every decidable language is recognizable, but not vice versa. The halting proble
 ```typescript
 // Simulating a recognizer that may not halt
 function recognizerForHalting(program: string, input: string): string {
-  // This function cannot exist — proven by diagonalization
+  // This function cannot exist � proven by diagonalization
   // Placeholder: the concept of recognizability
   return "A recognizer halts and accepts for yes-instances, " +
          "but may loop on no-instances.";
@@ -239,11 +239,11 @@ function recognizerForHalting(program: string, input: string): string {
 
 The Theory of Computation rests on three pillars:
 
-1. **Automata Theory** — finite and infinite-state machines that model computation. Covers DFA, NFA, PDA, Turing machines, and their language classes.
+1. **Automata Theory** � finite and infinite-state machines that model computation. Covers DFA, NFA, PDA, Turing machines, and their language classes.
 
-2. **Computability Theory** — what can and cannot be computed. Explores the halting problem, reductions, and the limits of algorithmic solvability.
+2. **Computability Theory** � what can and cannot be computed. Explores the halting problem, reductions, and the limits of algorithmic solvability.
 
-3. **Complexity Theory** — how efficiently problems can be solved. Studies time and space bounds, the P vs NP question, and classification of problems by difficulty.
+3. **Complexity Theory** � how efficiently problems can be solved. Studies time and space bounds, the P vs NP question, and classification of problems by difficulty.
 
 ```mermaid
 graph LR
@@ -275,10 +275,10 @@ graph LR
 
 Classify each problem as decision, optimization, or function:
 
-1. "Is graph G connected?" — **Decision** (yes/no answer)
-2. "Find the shortest path from s to t." — **Optimization** (best among many)
-3. "Multiply two matrices." — **Function** (compute output)
-4. "Does program P halt on input x?" — **Decision** (yes/no, also undecidable)
+1. "Is graph G connected?" � **Decision** (yes/no answer)
+2. "Find the shortest path from s to t." � **Optimization** (best among many)
+3. "Multiply two matrices." � **Function** (compute output)
+4. "Does program P halt on input x?" � **Decision** (yes/no, also undecidable)
 
 ### Example 2: Chomsky Hierarchy Placement
 
@@ -295,7 +295,7 @@ Place each language in the Chomsky hierarchy:
 
 1. **Every yes/no problem is a language.** This encoding insight lets us apply automata theory to any computational problem.
 
-2. **The Chomsky hierarchy gives a complexity roadmap.** When designing a parser or recognizer, choose the weakest grammar class that can express your language — regular for tokenization, context-free for syntax, context-sensitive for semantic analysis.
+2. **The Chomsky hierarchy gives a complexity roadmap.** When designing a parser or recognizer, choose the weakest grammar class that can express your language � regular for tokenization, context-free for syntax, context-sensitive for semantic analysis.
 
 3. **Not all problems are solvable.** Recognizing undecidability early saves engineering effort. If your problem can encode the halting problem, it has no general algorithmic solution.
 
@@ -310,7 +310,7 @@ A foundational result that drives undecidability is that the set of all language
 function cantorDiagonalization(): void {
   // Enumerate all possible binary strings (countable)
   function* enumerateBinaryStrings(): Generator<string> {
-    yield "ε";
+    yield "e";
     for (let len = 1; len < 10; len++) {
       for (let i = 0; i < (1 << len); i++) {
         let s = "";
@@ -341,8 +341,8 @@ function cantorDiagonalization(): void {
   };
 
   // diagonalLanguage differs from every language in the list
-  // at the corresponding diagonal position — exactly Cantor's proof.
-  console.log("Diagonal language constructed — not in the original list.");
+  // at the corresponding diagonal position � exactly Cantor's proof.
+  console.log("Diagonal language constructed � not in the original list.");
 }
 ```
 
@@ -350,7 +350,7 @@ This same diagonalization technique is used to prove the halting problem undecid
 
 ## The Importance of Formal Languages
 
-Formal language theory is not merely an abstract mathematical exercise — it has profound practical implications for computing:
+Formal language theory is not merely an abstract mathematical exercise � it has profound practical implications for computing:
 
 1. **Specification:** Formal languages give us precise, unambiguous ways to specify syntax (e.g., programming language grammars, protocol messages).
 
@@ -417,40 +417,40 @@ function classifyLanguage(
 }
 
 console.log(classifyLanguage("aabbcc", new Set(["a", "b", "c"])));
-// LBA — equal counts of all three
+// LBA � equal counts of all three
 ```
 
 ## Historical Context and Key Figures
 
 The Theory of Computation emerged from a remarkable confluence of intellectual breakthroughs in the 1930s:
 
-### Kurt Gödel (1931)
-Gödel's **Incompleteness Theorems** showed that any sufficiently powerful formal system contains statements that can neither be proved nor disproved within the system. This shattered Hilbert's dream of a complete, consistent axiomatization of all mathematics and laid the groundwork for undecidability.
+### Kurt G�del (1931)
+G�del's **Incompleteness Theorems** showed that any sufficiently powerful formal system contains statements that can neither be proved nor disproved within the system. This shattered Hilbert's dream of a complete, consistent axiomatization of all mathematics and laid the groundwork for undecidability.
 
 ### Alonzo Church (1936)
 Church introduced the **lambda calculus** as a formal model of computation and proved that there is no algorithmic procedure to determine whether two lambda expressions are equivalent (the Church-Turing theorem). He also formulated the **Church-Turing thesis**: any function computable by an effective procedure is computable by a Turing machine.
 
-### Alan Turing (1936–1937)
-Turing's seminal paper "On Computable Numbers, with an Application to the Entscheidungsproblem" introduced the **Turing machine** as a model of computation. He proved the **undecidability of the halting problem** using a diagonalization argument. Turing also introduced the concept of a **universal Turing machine** — a single machine that can simulate any other Turing machine, which is the theoretical foundation of the stored-program computer.
+### Alan Turing (1936�1937)
+Turing's seminal paper "On Computable Numbers, with an Application to the Entscheidungsproblem" introduced the **Turing machine** as a model of computation. He proved the **undecidability of the halting problem** using a diagonalization argument. Turing also introduced the concept of a **universal Turing machine** � a single machine that can simulate any other Turing machine, which is the theoretical foundation of the stored-program computer.
 
-### Stephen Kleene (1943–1956)
+### Stephen Kleene (1943�1956)
 Kleene developed **recursive function theory**, formalized **regular expressions** as a notation for regular languages, and proved Kleene's theorem establishing the equivalence of regular expressions and finite automata.
 
 ### Noam Chomsky (1956)
 Chomsky introduced the **Chomsky hierarchy** in his work on formal grammars, connecting linguistics to automata theory. His classification system remains the foundational taxonomy of formal language theory.
 
 ### The Modern Era
-- **1960s–70s:** Cook, Karp, and Levin develop NP-completeness theory.
-- **1970s–80s:** Hartmanis, Stearns, and others develop computational complexity theory.
-- **1990s–2000s:** Interactive proofs (Goldwasser, Micali, Rackoff), PCP theorem, quantum computation.
-- **2010s–present:** Deep learning, LLMs, and the renewed philosophical debate about what constitutes "understanding" in computation — echoing Turing's original questions.
+- **1960s�70s:** Cook, Karp, and Levin develop NP-completeness theory.
+- **1970s�80s:** Hartmanis, Stearns, and others develop computational complexity theory.
+- **1990s�2000s:** Interactive proofs (Goldwasser, Micali, Rackoff), PCP theorem, quantum computation.
+- **2010s�present:** Deep learning, LLMs, and the renewed philosophical debate about what constitutes "understanding" in computation � echoing Turing's original questions.
 
 ### Mermaid: Timeline of Key Contributions
 
 ```mermaid
 timeline
     title Milestones in the Theory of Computation
-    1931 : Gödel's Incompleteness Theorems
+    1931 : G�del's Incompleteness Theorems
     1936 : Church's lambda calculus
          : Turing's machine & undecidability
     1937 : Turing's "On Computable Numbers"
@@ -471,14 +471,14 @@ The theory of computation forces us to confront deep questions:
 
 - **What is computation?** Is it a physical process, a mathematical abstraction, or both?
 - **What is knowledge?** The existence of undecidable problems means there are well-posed yes/no questions that no computer can answer.
-- **Is the human mind a computer?** This question, at the heart of the philosophy of AI, remains unresolved. Gödel's theorems have been used (controversially) to argue that human mathematical intuition transcends formal computation.
+- **Is the human mind a computer?** This question, at the heart of the philosophy of AI, remains unresolved. G�del's theorems have been used (controversially) to argue that human mathematical intuition transcends formal computation.
 
 ```typescript
 // The Entscheidungsproblem in TypeScript form
 // Can we write a program that decides whether
 // an arbitrary program halts on an arbitrary input?
 function haltingDetector(program: string, input: string): boolean {
-  // Hypothetical — this cannot exist
+  // Hypothetical � this cannot exist
   throw new Error("This function is provably unimplementable");
   // See Chapter 11 for the proof
 }
@@ -505,25 +505,25 @@ function classifyChomsky(productions: Production[]): ChomskyType {
   let isContextSensitive = true;
 
   for (const p of productions) {
-    // Type-3 (Regular): A → aB or A → a (RHS patterns)
+    // Type-3 (Regular): A ? aB or A ? a (RHS patterns)
     // A must be single nonterminal, RHS must be terminal or terminal+nonterminal
-    // Skip ε-productions for simplicity
+    // Skip e-productions for simplicity
     const lhsOk = /^[A-Z]$/.test(p.lhs);
     const rhsIsTerminal = /^[a-z]$/.test(p.rhs);
     const rhsIsTerminalNonterminal = /^[a-z][A-Z]$/.test(p.rhs);
     const rhsLeftRegular = /^[A-Z][a-z]$/.test(p.rhs);
-    if (!(lhsOk && (rhsIsTerminal || rhsIsTerminalNonterminal || rhsLeftRegular || p.rhs === "ε"))) {
+    if (!(lhsOk && (rhsIsTerminal || rhsIsTerminalNonterminal || rhsLeftRegular || p.rhs === "e"))) {
       isRegular = false;
     }
 
-    // Type-2 (CFG): A → γ where A is single nonterminal
+    // Type-2 (CFG): A ? ? where A is single nonterminal
     if (!/^[A-Z]$/.test(p.lhs)) {
       isContextFree = false;
     }
 
-    // Type-1 (CSG): αAβ → αγβ with |γ| ≥ 1 (non-decreasing)
-    // or S → ε allowed at start
-    if (p.lhs.length > p.rhs.length && p.rhs !== "ε") {
+    // Type-1 (CSG): aA� ? a?� with |?| = 1 (non-decreasing)
+    // or S ? e allowed at start
+    if (p.lhs.length > p.rhs.length && p.rhs !== "e") {
       isContextSensitive = false;
     }
   }
@@ -560,11 +560,11 @@ class AlphabetValidator {
 // Examples
 const regularGrammar: Production[] = [
   { lhs: "S", rhs: "aA" }, { lhs: "A", rhs: "bS" },
-  { lhs: "S", rhs: "ε" }
+  { lhs: "S", rhs: "e" }
 ];
 
 const cfgGrammar: Production[] = [
-  { lhs: "S", rhs: "aSb" }, { lhs: "S", rhs: "ε" }
+  { lhs: "S", rhs: "aSb" }, { lhs: "S", rhs: "e" }
 ];
 
 const csGrammar: Production[] = [
@@ -590,11 +590,11 @@ console.log(generateStrings(ChomskyType.Type3, 5));     // ["", "a", "aa", "aaa"
 console.log(generateStrings(ChomskyType.Type2, 4));     // ["", "ab", "aabb", "aaabbb"]
 ```
 
-// ──────────────────────────────────────────────
-// Formal Language Type Checker — validates that
+// ----------------------------------------------
+// Formal Language Type Checker � validates that
 // a given grammar belongs to the claimed type
 // in the Chomsky hierarchy.
-// ──────────────────────────────────────────────
+// ----------------------------------------------
 
 type Production = { lhs: string; rhs: string };
 type LanguageType = 0 | 1 | 2 | 3;
@@ -607,8 +607,8 @@ class LanguageTypeChecker {
   }
 
   // Check if grammar satisfies Type-3 (regular) constraints:
-  // All productions must be of form A → aB or A → a (right-linear)
-  // or A → Ba or A → a (left-linear), and mix is forbidden.
+  // All productions must be of form A ? aB or A ? a (right-linear)
+  // or A ? Ba or A ? a (left-linear), and mix is forbidden.
   isRegular(): boolean {
     const rightLinear = this.productions.every(
       p => /^[A-Z]$/.test(p.lhs) &&
@@ -630,14 +630,14 @@ class LanguageTypeChecker {
   }
 
   // Check if grammar satisfies Type-1 (context-sensitive) constraints:
-  // RHS length ≥ LHS length (non-contracting), and LHS may have context.
-  // For simplicity, we check |lhs| ≤ |rhs|.
+  // RHS length = LHS length (non-contracting), and LHS may have context.
+  // For simplicity, we check |lhs| = |rhs|.
   isContextSensitive(): boolean {
     return this.productions.every(p => p.lhs.length <= p.rhs.length);
   }
 
   // Check if grammar satisfies Type-0 (unrestricted):
-  // No constraints — any production form is allowed.
+  // No constraints � any production form is allowed.
   isUnrestricted(): boolean {
     return true;
   }
@@ -663,33 +663,33 @@ class LanguageTypeChecker {
   }
 }
 
-// ──────────────────────────────────────────────
-// Chomsky Hierarchy Visualizer — generates a
+// ----------------------------------------------
+// Chomsky Hierarchy Visualizer � generates a
 // textual representation of the hierarchy.
-// ──────────────────────────────────────────────
+// ----------------------------------------------
 
 class ChomskyHierarchyRenderer {
   static render(): string[] {
     return [
-      "╔══════════════════════════════════════════╗",
-      "║     Chomsky Hierarchy (Classification)  ║",
-      "╠══════════════════════════════════════════╣",
-      "║  Type-0: Unrestricted                    ║",
-      "║    ↳ Recursively enumerable languages    ║",
-      "║    ↳ Recognized by Turing machines       ║",
-      "║         ↓                                ║",
-      "║  Type-1: Context-Sensitive               ║",
-      "║    ↳ Recognized by LBA                   ║",
-      "║    ↳ A context → B context substitutions ║",
-      "║         ↓                                ║",
-      "║  Type-2: Context-Free                    ║",
-      "║    ↳ Recognized by PDA                   ║",
-      "║    ↳ A → α (single nonterminal LHS)      ║",
-      "║         ↓                                ║",
-      "║  Type-3: Regular                         ║",
-      "║    ↳ Recognized by DFA / NFA             ║",
-      "║    ↳ A → aB | a (right-linear)           ║",
-      "╚══════════════════════════════════════════╝"
+      "+------------------------------------------+",
+      "�     Chomsky Hierarchy (Classification)  �",
+      "�------------------------------------------�",
+      "�  Type-0: Unrestricted                    �",
+      "�    ? Recursively enumerable languages    �",
+      "�    ? Recognized by Turing machines       �",
+      "�         ?                                �",
+      "�  Type-1: Context-Sensitive               �",
+      "�    ? Recognized by LBA                   �",
+      "�    ? A context ? B context substitutions �",
+      "�         ?                                �",
+      "�  Type-2: Context-Free                    �",
+      "�    ? Recognized by PDA                   �",
+      "�    ? A ? a (single nonterminal LHS)      �",
+      "�         ?                                �",
+      "�  Type-3: Regular                         �",
+      "�    ? Recognized by DFA / NFA             �",
+      "�    ? A ? aB | a (right-linear)           �",
+      "+------------------------------------------+"
     ];
   }
 }
@@ -714,6 +714,48 @@ console.log("");
 console.log(ChomskyHierarchyRenderer.render().join("\n"));
 ```
 
+
+// introduction
+// automata-complexity implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'introduction', data: { topic: 'automata-complexity' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 The Theory of Computation provides the mathematical foundations for understanding what computers can and cannot do. Key concepts include:
@@ -722,14 +764,14 @@ The Theory of Computation provides the mathematical foundations for understandin
 - **The Chomsky hierarchy** classifies languages by generative complexity
 - **Decision problems** are equivalent to language membership
 - **Decidability** separates solvable from unsolvable problems
-- **Three pillars** — automata, computability, complexity — build on each other
+- **Three pillars** � automata, computability, complexity � build on each other
 
 ## Chapter Quiz
 
 1. Which of the following is NOT a valid alphabet?
    - a) {0, 1}
    - b) {a, b, c}
-   - c) {ε, 0, 1} (ε is a string, not a symbol)
+   - c) {e, 0, 1} (e is a string, not a symbol)
    - d) {0, 1, 2}
 
 2. A context-free grammar corresponds to which automaton?
@@ -738,11 +780,11 @@ The Theory of Computation provides the mathematical foundations for understandin
    - c) Linear bounded automaton
    - d) Turing machine
 
-3. The set of all strings over alphabet Σ is denoted:
-   - a) Σ^+
-   - b) Σ^∗
-   - c) 𝒫(Σ)
-   - d) Σ^∞
+3. The set of all strings over alphabet S is denoted:
+   - a) S^+
+   - b) S^*
+   - c) ??(S)
+   - d) S^8
 
 4. Which of the following is true about decidable languages?
    - a) Every recognizable language is decidable
@@ -762,9 +804,9 @@ The Theory of Computation provides the mathematical foundations for understandin
 
 ### Basic
 
-1. Write a TypeScript function that checks whether a string belongs to the language L = {w ∈ {0,1}* | w starts with 0 and ends with 1}.
+1. Write a TypeScript function that checks whether a string belongs to the language L = {w ? {0,1}* | w starts with 0 and ends with 1}.
 
-2. For each of the following strings over Σ = {a, b}, determine the length: ε, a, abba, aaaaa.
+2. For each of the following strings over S = {a, b}, determine the length: e, a, abba, aaaaa.
 
 3. List all strings in {0,1}^3 (strings of length 3 over binary alphabet).
 
@@ -775,29 +817,29 @@ The Theory of Computation provides the mathematical foundations for understandin
 5. Prove that the set of all binary strings that are palindromes is a language. Write a TypeScript recognizer for it.
 
 6. For each language below, determine its Chomsky type and justify your answer:
-   - L₁ = {ww^R | w ∈ {a,b}*}
-   - L₂ = {a^n b^m | n, m ≥ 0}
-   - L₃ = {a^n b^n c^n d^n | n ≥ 1}
+   - L1 = {ww^R | w ? {a,b}*}
+   - L2 = {a^n b^m | n, m = 0}
+   - L3 = {a^n b^n c^n d^n | n = 1}
 
-7. Show that the set of all languages over Σ is uncountable, while the set of all Turing machines is countable. Conclude there exist unrecognizable languages.
+7. Show that the set of all languages over S is uncountable, while the set of all Turing machines is countable. Conclude there exist unrecognizable languages.
 
 8. Represent the SAT problem as a language encoding. What symbols would your alphabet need?
 
 ### Advanced
 
-9. Prove that if a language L is decidable, then its complement L̅ is also decidable. What happens if L is only recognizable?
+9. Prove that if a language L is decidable, then its complement L� is also decidable. What happens if L is only recognizable?
 
 10. Research the concept of oracle machines. Explain how they enable relative computability and why they are used in the study of the Turing degrees.
 
-11. Write a TypeScript program that enumerates all binary strings of length ≤ 4 and classifies each as belonging to language L = { w | w contains the substring "01" }.
+11. Write a TypeScript program that enumerates all binary strings of length = 4 and classifies each as belonging to language L = { w | w contains the substring "01" }.
 
 12. Show that there are languages that are not recursively enumerable by using a counting argument between the set of all TMs (countable) and the set of all languages (uncountable).
 
 13. Design a finite automaton that recognizes binary strings with an even number of 0s and an odd number of 1s. Explain why this language is regular.
 
-14. Consider the language L = { aⁿbⁿcⁿdⁿeⁿ | n ≥ 1 }. Identify its position in the Chomsky hierarchy and justify why it cannot be generated by a context-free grammar.
+14. Consider the language L = { anbncndnen | n = 1 }. Identify its position in the Chomsky hierarchy and justify why it cannot be generated by a context-free grammar.
 
-15. Write a TypeScript function that takes a string w and a fixed alphabet Σ and determines whether w is a string over Σ. For Σ = {0, 1}, classify "012", "", "101", and "2".
+15. Write a TypeScript function that takes a string w and a fixed alphabet S and determines whether w is a string over S. For S = {0, 1}, classify "012", "", "101", and "2".
 
 16. Research the concept of universality in computation. Explain how the universal Turing machine relates to the concept of a general-purpose computer and why this insight is considered one of Turing's greatest contributions.
 
@@ -853,11 +895,11 @@ const dfa: DFA = {
 
 ## Further Reading
 
-- **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapters 0–1 provide an excellent introduction to mathematical preliminaries and the Chomsky hierarchy.
-- **Hopcroft, John E., Motwani, Rajeev, and Ullman, Jeffrey D.** *Introduction to Automata Theory, Languages, and Computation* (3rd ed.). Chapters 1–2 cover basic concepts and the regular/context-free classification.
+- **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapters 0�1 provide an excellent introduction to mathematical preliminaries and the Chomsky hierarchy.
+- **Hopcroft, John E., Motwani, Rajeev, and Ullman, Jeffrey D.** *Introduction to Automata Theory, Languages, and Computation* (3rd ed.). Chapters 1�2 cover basic concepts and the regular/context-free classification.
 - **Arora, Sanjeev and Barak, Boaz.** *Computational Complexity: A Modern Approach*. Chapter 1 gives a concise overview of the computational worldview and complexity classification.
 - **Lewis, Harry R. and Papadimitriou, Christos H.** *Elements of the Theory of Computation* (2nd ed.). A rigorous treatment of automata, computability, and complexity fundamentals.
-- **Davis, Martin, Sigal, Ron, and Weyuker, Elaine J.** *Computability, Complexity, and Languages* (2nd ed.). A deeper exploration of the mathematical foundations including recursive function theory and the μ-recursive functions.
+- **Davis, Martin, Sigal, Ron, and Weyuker, Elaine J.** *Computability, Complexity, and Languages* (2nd ed.). A deeper exploration of the mathematical foundations including recursive function theory and the �-recursive functions.
 - **Kozen, Dexter C.** *Automata and Computability*. A concise and rigorous undergraduate text covering automata theory, computability, and complexity in a unified framework.
 - **Harel, David.** *Computers Ltd.: What They Really Can't Do*. An accessible and entertaining exploration of the limits of computation for a general audience.
 - **Chomsky, Noam.** *Syntactic Structures*. 1957. The book that introduced the Chomsky hierarchy and revolutionized linguistics with formal grammar theory.

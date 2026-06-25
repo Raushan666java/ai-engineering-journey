@@ -1,7 +1,7 @@
 # Chapter 15: Advanced Topics in Digital Logic
 
-> **Prereq:** All previous chapters — this capstone chapter surveys advanced and emerging topics.
-> **Next:** Your next course — computer architecture, VLSI design, or embedded systems.
+> **Prereq:** All previous chapters ? this capstone chapter surveys advanced and emerging topics.
+> **Next:** Your next course ? computer architecture, VLSI design, or embedded systems.
 
 ## Learning Objectives
 
@@ -41,15 +41,15 @@ graph TD
 
 | Milestone | Description | Duration |
 |-----------|-------------|----------|
-| Specification | Architecture document, ISA, interfaces | 3–6 months |
-| RTL coding | Verilog/SystemVerilog implementation | 6–12 months |
-| Functional verification | Simulation, UVM testbenches, coverage | 6–12 months |
-| Logic synthesis | RTL → gate-level netlist | 2–4 weeks |
-| Physical design | Floorplan, place, route, clock tree | 2–4 months |
-| Physical verification | DRC, LVS, antenna checks | 2–4 weeks |
-| Tapeout | GDSII to mask shop | 1–2 weeks |
-| Fabrication | Wafer processing | 2–4 months |
-| ATE test | Wafer sort, package test | 1–2 months |
+| Specification | Architecture document, ISA, interfaces | 3?6 months |
+| RTL coding | Verilog/SystemVerilog implementation | 6?12 months |
+| Functional verification | Simulation, UVM testbenches, coverage | 6?12 months |
+| Logic synthesis | RTL ? gate-level netlist | 2?4 weeks |
+| Physical design | Floorplan, place, route, clock tree | 2?4 months |
+| Physical verification | DRC, LVS, antenna checks | 2?4 weeks |
+| Tapeout | GDSII to mask shop | 1?2 weeks |
+| Fabrication | Wafer processing | 2?4 months |
+| ATE test | Wafer sort, package test | 1?2 months |
 
 ```typescript
 class ASICProject {
@@ -78,9 +78,9 @@ Power has become the primary design constraint in modern digital systems.
 ```
 P_total = P_dynamic + P_static + P_short_circuit
 
-P_dynamic = α · C_L · V_DD² · f
-P_static = I_leak · V_DD
-P_short_circuit = t_sc · V_DD · I_peak · f
+P_dynamic = a ? C_L ? V_DD? ? f
+P_static = I_leak ? V_DD
+P_short_circuit = t_sc ? V_DD ? I_peak ? f
 ```
 
 ```typescript
@@ -124,7 +124,7 @@ graph TD
         A1[Clock Gating]
         A2[Power Gating]
         A3[Voltage/Frequency Scaling]
-        A4[Parallelism → Lower Voltage]
+        A4[Parallelism ? Lower Voltage]
     end
     subgraph "RTL Level"
         R1[Operand Isolation]
@@ -147,12 +147,12 @@ class PowerSaving {
     }
 
     static DVFS(basePower: number, voltageScale: number, freqScale: number): number {
-        // P ∝ V² · f
+        // P ? V? ? f
         return basePower * voltageScale * voltageScale * freqScale;
     }
 
     static powerGating(leakagePower: number, dutyCycle: number): number {
-        // Sleep mode reduces leakage by ~1000×
+        // Sleep mode reduces leakage by ~1000?
         const sleepPower = leakagePower / 1000;
         return leakagePower * dutyCycle + sleepPower * (1 - dutyCycle);
     }
@@ -199,7 +199,7 @@ Scan chains convert flip-flops into shift-register elements during test mode, en
 ```mermaid
 graph LR
     subgraph "Normal Mode"
-        FF1[FF₁] --> LOGIC[Combinational Logic] --> FF2[FF₂]
+        FF1[FF1] --> LOGIC[Combinational Logic] --> FF2[FF2]
     end
     subgraph "Scan Mode"
         SI[Scan In] --> FF1
@@ -395,19 +395,19 @@ Beyond FPGAs, reconfigurable computing includes coarse-grained reconfigurable ar
 
 ```mermaid
 graph TD
-    subgraph "CGRA Grid (4×4)"
-        PE11[PE₁₁] --> PE12[PE₁₂]
-        PE11 --> PE21[PE₂₁]
-        PE12 --> PE13[PE₁₃]
-        PE12 --> PE22[PE₂₂]
+    subgraph "CGRA Grid (4?4)"
+        PE11[PE11] --> PE12[PE12]
+        PE11 --> PE21[PE21]
+        PE12 --> PE13[PE13]
+        PE12 --> PE22[PE22]
         PE21 --> PE22
-        PE21 --> PE31[PE₃₁]
-        PE22 --> PE23[PE₂₃]
-        PE22 --> PE32[PE₃₂]
+        PE21 --> PE31[PE31]
+        PE22 --> PE23[PE23]
+        PE22 --> PE32[PE32]
         PE31 --> PE32
-        PE31 --> PE41[PE₄₁]
-        PE32 --> PE33[PE₄₃]
-        PE32 --> PE42[PE₄₂]
+        PE31 --> PE41[PE41]
+        PE32 --> PE33[PE43]
+        PE32 --> PE42[PE42]
     end
     MEM[Memory] --> PE11
     MEM --> PE12
@@ -479,11 +479,11 @@ Quantum bits (qubits) exploit superposition and entanglement to perform computat
 
 ```typescript
 // Simplified quantum gate simulation (classical vector)
-type Qubit = [number, number]; // [α, β] where |ψ⟩ = α|0⟩ + β|1⟩
+type Qubit = [number, number]; // [a, ?] where |?? = a|0? + ?|1?
 
 class QuantumGate {
     static hadamard(q: Qubit): Qubit {
-        // H = 1/√2 · [[1, 1], [1, -1]]
+        // H = 1/v2 ? [[1, 1], [1, -1]]
         const sqrt2 = Math.SQRT1_2;
         return [
             sqrt2 * (q[0] + q[1]),
@@ -498,19 +498,19 @@ class QuantumGate {
     }
 
     static measure(q: Qubit): number {
-        // |α|² = probability of |0⟩
+        // |a|? = probability of |0?
         const prob0 = q[0] * q[0];
         return Math.random() < prob0 ? 0 : 1;
     }
 }
 
-// Create a Bell state |Φ⁺⟩ = (|00⟩ + |11⟩)/√2
-const q0: Qubit = [1, 0]; // |0⟩
-const q1: Qubit = [1, 0]; // |0⟩
+// Create a Bell state |F?? = (|00? + |11?)/v2
+const q0: Qubit = [1, 0]; // |0?
+const q1: Qubit = [1, 0]; // |0?
 
 const hQ0 = QuantumGate.hadamard(q0);
 const [bell0, bell1] = QuantumGate.cnot(hQ0, q1);
-console.log(`Bell state: |Φ⁺⟩`);
+console.log(`Bell state: |F??`);
 ```
 
 ### 15.6.2 Neuromorphic Computing
@@ -685,31 +685,123 @@ function mooresLaw(year: number, baseYear: number, baseTransistors: number): num
 }
 
 function dennardScaling(prevNode: number, newNode: number, prevPower: number): number {
-    // Ideal Dennard: P scales with area (V²·f, V ∝ L, f ∝ 1/L)
+    // Ideal Dennard: P scales with area (V??f, V ? L, f ? 1/L)
     const scale = newNode / prevNode;
-    return prevPower * scale * scale; // area scales as L²
+    return prevPower * scale * scale; // area scales as L?
 }
 
 const trCount = mooresLaw(2025, 2000, 42e6); // Pentium 4: 42M transistors
 console.log(`Projected transistor count (2025): ${(trCount / 1e9).toFixed(1)}B`);
 
 const power = dennardScaling(7, 5, 100);
-console.log(`Scaled power (7nm → 5nm ideal): ${power.toFixed(1)}%`);
+console.log(`Scaled power (7nm ? 5nm ideal): ${power.toFixed(1)}%`);
 ```
 
 ## Practical Takeaways
 
-1. **Low power is the defining constraint** — every modern design optimises for energy efficiency first
-2. **DFT adds 5–15% area but saves millions in test cost** — scan chains and BIST are non-negotiable
-3. **Formal verification catches corner cases simulation misses** — use for control logic and safety-critical paths
-4. **Asynchronous design remains niche** — despite advantages, the tool flow gap limits adoption
-5. **Emerging technologies complement, not replace, CMOS** — quantum, photonic, and neuromorphic each target specific workloads
+1. **Low power is the defining constraint** ? every modern design optimises for energy efficiency first
+2. **DFT adds 5?15% area but saves millions in test cost** ? scan chains and BIST are non-negotiable
+3. **Formal verification catches corner cases simulation misses** ? use for control logic and safety-critical paths
+4. **Asynchronous design remains niche** ? despite advantages, the tool flow gap limits adoption
+5. **Emerging technologies complement, not replace, CMOS** ? quantum, photonic, and neuromorphic each target specific workloads
 
+
+// advanced topics
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'advanced topics', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// advanced topics - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'advanced topics' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 This capstone chapter surveyed the advanced topics that shape modern digital logic design. The VLSI design flow encompasses specification through tapeout, with verification and timing closure consuming the majority of the schedule. Low-power techniques span architecture, RTL, and gate levels, driven by the end of Dennard scaling. DFT ensures manufacturing testability, while formal verification provides mathematical correctness guarantees. Asynchronous design, reconfigurable computing, and emerging technologies (quantum, neuromorphic, photonic) represent the future directions of the field. Together with the preceding 14 chapters, this completes a comprehensive foundation in digital logic engineering.
 
-## Final Assessment (Chapters 1–15)
+## Final Assessment (Chapters 1?15)
 
 **Q1.** Which number system uses 4 bits per digit?
 a) Binary
@@ -717,11 +809,11 @@ b) Octal
 c) Hexadecimal
 d) BCD
 
-**Q2.** De Morgan's theorem states that ¬(A·B) equals:
-a) ¬A + ¬B
-b) ¬A · ¬B
+**Q2.** De Morgan's theorem states that ?(A?B) equals:
+a) ?A + ?B
+b) ?A ? ?B
 c) A + B
-d) ¬(A + B)
+d) ?(A + B)
 
 **Q3.** A Karnaugh map with 4 variables has how many cells?
 a) 4
@@ -730,9 +822,9 @@ c) 16
 d) 32
 
 **Q4.** The critical path of a ripple-carry adder is proportional to:
-a) log₂(N)
+a) log2(N)
 b) N
-c) N²
+c) N?
 d) 1
 
 **Q5.** Which flip-flop type toggles when both inputs are 1?
@@ -797,7 +889,7 @@ Q1: d | Q2: a | Q3: c | Q4: b | Q5: c | Q6: b | Q7: b | Q8: b | Q9: b | Q10: b
    model. Show the circuit depth and compare with classical adder complexity.
 
 7. **Neuromorphic pattern classifier:** Build a single-layer spiking neural network that
-   classifies MNIST digits (simplified 4×4 grid). Train using spike-timing-dependent
+   classifies MNIST digits (simplified 4?4 grid). Train using spike-timing-dependent
    plasticity (STDP).
 
 8. **FPGA vs ASIC crossover:** Compute the economic crossover point between FPGA and

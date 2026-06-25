@@ -1,7 +1,7 @@
-# Phase 4 â€” Production Hardening
+# Phase 4 — Production Hardening
 
 **Duration:** Weeks 9-10, ~20 hours
-**Goal:** Add the production patterns your portfolio projects are missing â€” durable queues, structured logging, CI/CD, cost monitoring.
+**Goal:** Add the production patterns your portfolio projects are missing — durable queues, structured logging, CI/CD, cost monitoring.
 
 ---
 
@@ -132,11 +132,11 @@ queue = Queue("document_ingestion", connection=redis_conn)
 
 @app.post("/upload")
 async def upload(doc_id: str):
-    # Stored in Redis â€” survives restart
+    # Stored in Redis — survives restart
     job = queue.enqueue(process_large_document, doc_id, job_timeout=600)
     return {"status": "accepted", "job_id": job.id}
 
-# worker.py â€” run separately:
+# worker.py — run separately:
 # rq worker document_ingestion
 if __name__ == "__main__":
     from rq.worker import Worker
@@ -280,7 +280,7 @@ async def readyz():
 
 ### Why the distinction matters
 
-A service that's alive but not ready (e.g., ChromaDB is restarting) should **not** be killed and restarted â€” it should just stop receiving traffic until dependencies recover. Conflating them means a brief ChromaDB restart causes a container restart cascade.
+A service that's alive but not ready (e.g., ChromaDB is restarting) should **not** be killed and restarted — it should just stop receiving traffic until dependencies recover. Conflating them means a brief ChromaDB restart causes a container restart cascade.
 
 ### Exercise
 
@@ -648,6 +648,43 @@ Deploy Prometheus + Grafana alongside your RAG demo using docker-compose. Add th
 
 ---
 
+
+interface RetryConfig { maxRetries: number; baseDelay: number; maxDelay: number }
+class RetryMiddleware {
+  constructor(private config: RetryConfig = {maxRetries:3,baseDelay:1000,maxDelay:10000}) {}
+  async execute<T>(fn: () => Promise<T>): Promise<T> {
+    let lastErr: Error = new Error()
+    for(let i=0;i<=this.config.maxRetries;i++) try { return await fn() } catch(e) { lastErr = e as Error
+      if(i<this.config.maxRetries) await this.sleep(Math.min(this.config.baseDelay*Math.pow(2,i),this.config.maxDelay)) }
+    throw lastErr
+  }
+  private sleep(ms: number): Promise<void> { return new Promise(r => setTimeout(r,ms)) }
+}
+class CircuitBreaker {
+  private failures = 0; private state: "CLOSED"|"OPEN"|"HALF_OPEN" = "CLOSED"
+  private lastFailureTime = 0
+  constructor(private threshold: number=5, private resetTimeout: number=30000) {}
+  async call<T>(fn: () => Promise<T>): Promise<T> {
+    if(this.state === "OPEN") { if(Date.now()-this.lastFailureTime>this.resetTimeout) this.state="HALF_OPEN"
+      else throw new Error("Circuit breaker is OPEN") }
+    try { const result = await fn(); if(this.state==="HALF_OPEN") this.state="CLOSED"; this.failures=0; return result }
+    catch(e) { this.failures++; this.lastFailureTime=Date.now()
+      if(this.failures>=this.threshold) this.state="OPEN"
+      throw e }
+  }
+}
+class RateLimiter {
+  private tokens: number; private lastRefill = Date.now()
+  constructor(private capacity: number, private refillRate: number) { this.tokens = capacity }
+  async acquire(): Promise<void> {
+    this.refill()
+    if(this.tokens <= 0) { await this.sleep((1-this.tokens/this.refillRate)*1000); this.refill() }
+    this.tokens--
+  }
+  private refill(): void { const now=Date.now(); const elapsed=(now-this.lastRefill)/1000; this.tokens=Math.min(this.capacity,this.tokens+elapsed*this.refillRate); this.lastRefill=now }
+  private sleep(ms:number): Promise<void> { return new Promise(r=>setTimeout(r,ms)) }
+}
+export { RetryMiddleware, CircuitBreaker, RateLimiter }
 ## Phase 4 Done Checkpoint
 
 Before moving to Phase 5, you should be able to:
@@ -667,4 +704,4 @@ Before moving to Phase 5, you should be able to:
 
 **Estimated time to checkpoint:** 24-26 hours over 2 weeks.
 
-[Next: Phase 5 â€” Portfolio + Market Positioning](06-phase5-portfolio-positioning.md)
+[Next: Phase 5 — Portfolio + Market Positioning](06-phase5-portfolio-positioning.md)

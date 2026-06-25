@@ -414,7 +414,7 @@ class Pipeline {
 
   async execute(): Promise<boolean> {
     this.startTime = Date.now();
-    console.log('🏗️  Starting pipeline execution\n');
+    console.log('???  Starting pipeline execution\n');
 
     const order = this.resolveExecutionOrder();
     let allPassed = true;
@@ -427,24 +427,24 @@ class Pipeline {
       for (const result of results) {
         if (!result.passed) {
           allPassed = false;
-          console.log(`❌ Stage failed: ${result.name}`);
+          console.log(`? Stage failed: ${result.name}`);
         }
       }
 
       if (!allPassed) {
-        console.log('\n⛔ Pipeline failed: halting execution');
+        console.log('\n? Pipeline failed: halting execution');
         return false;
       }
     }
 
     const totalTime = ((Date.now() - this.startTime) / 1000).toFixed(2);
-    console.log(`\n✅ Pipeline passed in ${totalTime}s`);
+    console.log(`\n? Pipeline passed in ${totalTime}s`);
     return true;
   }
 
   private async executeStage(name: string): Promise<StageResult & { name: string }> {
     const stage = this.stages.get(name)!;
-    console.log(`  ▶️  ${name}...`);
+    console.log(`  ??  ${name}...`);
 
     const start = Date.now();
     try {
@@ -456,11 +456,11 @@ class Pipeline {
       ]);
       this.results.set(name, result);
       const duration = ((Date.now() - start) / 1000).toFixed(2);
-      console.log(`  ✅ ${name} passed (${duration}s)`);
+      console.log(`  ? ${name} passed (${duration}s)`);
       return { ...result, name };
     } catch (error) {
       const duration = ((Date.now() - start) / 1000).toFixed(2);
-      console.log(`  ❌ ${name} failed (${duration}s): ${error}`);
+      console.log(`  ? ${name} failed (${duration}s): ${error}`);
       return { passed: false, duration: Date.now() - start, output: String(error), name };
     }
   }
@@ -743,7 +743,7 @@ class PipelineCostEstimator {
 
     const recommendations: string[] = [
       totalMinutes > 30 ? 'Consider self-hosted runners for cost savings' : 'Runner costs are within acceptable range',
-      cacheSavings > 0 ? `Cache saves ~$${cacheSavings.toFixed(2)} per build — maintain cache hygiene` : 'Enable caching to reduce costs',
+      cacheSavings > 0 ? `Cache saves ~$${cacheSavings.toFixed(2)} per build � maintain cache hygiene` : 'Enable caching to reduce costs',
       slowestStage ? `Optimize "${slowestStage.name}" stage (${slowestStage.durationMinutes}min) with parallel execution` : '',
     ].filter(Boolean);
 
@@ -821,7 +821,7 @@ class GateOrchestrator {
     const failedGates: string[] = [];
 
     for (const gate of relevantGates) {
-      console.log(`🔒 Gate: ${to} — ${gate.checks.length} check(s)`);
+      console.log(`?? Gate: ${to} � ${gate.checks.length} check(s)`);
 
       for (const check of gate.checks) {
         const result = await Promise.race([
@@ -831,17 +831,17 @@ class GateOrchestrator {
 
         if (result === 'fail') {
           failedGates.push(check.name);
-          console.log(`  ❌ ${check.name}: FAILED`);
+          console.log(`  ? ${check.name}: FAILED`);
           if (gate.rollbackOnFail) {
-            console.log(`  ⚠️  Rollback triggered for ${from} → ${to}`);
+            console.log(`  ??  Rollback triggered for ${from} ? ${to}`);
           }
         } else {
-          console.log(`  ✅ ${check.name}: ${result}`);
+          console.log(`  ? ${check.name}: ${result}`);
         }
       }
 
       if (gate.approvalRequired) {
-        console.log(`  👤 Manual approval required from: ${gate.approvers.join(', ')}`);
+        console.log(`  ?? Manual approval required from: ${gate.approvers.join(', ')}`);
       }
     }
 
@@ -854,7 +854,7 @@ class GateOrchestrator {
 
   generateReport(result: { passed: boolean; failedGates: string[]; duration: number }): string {
     return `## Release Gate Report\n\n` +
-      `**Status:** ${result.passed ? '✅ PASSED' : '❌ FAILED'}\n` +
+      `**Status:** ${result.passed ? '? PASSED' : '? FAILED'}\n` +
       `**Duration:** ${(result.duration / 1000).toFixed(1)}s\n` +
       (result.failedGates.length > 0 ? `**Failed Gates:** ${result.failedGates.join(', ')}\n` : '');
   }
@@ -913,6 +913,48 @@ orchestrator.execute('staging', 'production').then(r => console.log(orchestrator
 
 ---
 
+
+// cicd
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'cicd', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - CI ensures code from multiple developers integrates correctly by building and testing on every commit.
@@ -942,4 +984,4 @@ orchestrator.execute('staging', 'production').then(r => console.log(orchestrator
 4. Create a rollback procedure that redeploys the previous production artifact.
 
 ### Challenge Problem
-1. Design and implement a complete CI/CD system for a microservices architecture with 8 TypeScript services. Requirements: monorepo with path-based change detection, parallel build of affected services only, artifact versioning and storage with retention policy, environment promotion (dev → staging → prod) with approval gates, automated rollback on failed health checks, SBOM generation and dependency scanning at build time, and a pipeline performance dashboard tracking duration, success rate, and cache efficiency across the last 100 runs.
+1. Design and implement a complete CI/CD system for a microservices architecture with 8 TypeScript services. Requirements: monorepo with path-based change detection, parallel build of affected services only, artifact versioning and storage with retention policy, environment promotion (dev ? staging ? prod) with approval gates, automated rollback on failed health checks, SBOM generation and dependency scanning at build time, and a pipeline performance dashboard tracking duration, success rate, and cache efficiency across the last 100 runs.

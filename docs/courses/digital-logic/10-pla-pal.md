@@ -1,7 +1,7 @@
-# Chapter 10: Programmable Logic — PLA and PAL
+# Chapter 10: Programmable Logic ? PLA and PAL
 
-> **Prereq:** Chapter 4 (Karnaugh Maps) and Chapter 5 (Combinational Circuits) — programmable logic implements sum-of-products expressions.
-> **Next:** Chapter 11 (Arithmetic Circuits) — arithmetic building blocks often use PLD structures for control logic.
+> **Prereq:** Chapter 4 (Karnaugh Maps) and Chapter 5 (Combinational Circuits) ? programmable logic implements sum-of-products expressions.
+> **Next:** Chapter 11 (Arithmetic Circuits) ? arithmetic building blocks often use PLD structures for control logic.
 
 ## Learning Objectives
 
@@ -32,7 +32,7 @@ graph LR
         GAL[GAL<br>Reprogrammable PAL]
         CPLD[CPLD<br>Multiple PAL blocks]
     end
-    subgraph "1985–present"
+    subgraph "1985?present"
         FPGA[FPGA<br>LUT-based, SRAM config]
     end
     PROM --> PLA --> PAL
@@ -46,24 +46,24 @@ A PROM (programmable read-only memory) can implement any combinational function.
 
 ```
 An n-input, m-output PROM = AND array (fixed) + OR array (programmable)
-    = n:2ⁿ decoder + m OR gates
+    = n:2n decoder + m OR gates
 ```
 
 ```mermaid
 graph TD
-    A0[A₀] --> DEC[2ⁿ × n<br>Decoder]
-    A1[A₁] --> DEC
-    A2[A₂] --> DEC
+    A0[A0] --> DEC[2n ? n<br>Decoder]
+    A1[A1] --> DEC
+    A2[A2] --> DEC
     DEC --> W0[Word 0]
     DEC --> W1[Word 1]
-    DEC --> Wn[Word 2ⁿ⁻¹]
-    W0 --> OR1[OR₁]
+    DEC --> Wn[Word 2n??]
+    W0 --> OR1[OR1]
     W1 --> OR1
-    W0 --> OR2[OR₂]
+    W0 --> OR2[OR2]
     Wn --> OR1
     Wn --> OR2
-    OR1 --> Y0[Y₀]
-    OR2 --> Y1[Y₁]
+    OR1 --> Y0[Y0]
+    OR2 --> Y1[Y1]
 ```
 
 ```typescript
@@ -86,24 +86,24 @@ class PROM {
         return this.words[address] ?? 0;
     }
 
-    // Implement F(A,B,C) = Σm(1,3,5,6) using PROM
+    // Implement F(A,B,C) = Sm(1,3,5,6) using PROM
     static implementFunction(addr: number): number {
         const truthTable: number[] = [
-            0b00, // 000 → 0
-            0b01, // 001 → 1
-            0b00, // 010 → 0
-            0b01, // 011 → 1
-            0b00, // 100 → 0
-            0b01, // 101 → 1
-            0b10, // 110 → 1 (bit 1)
-            0b00  // 111 → 0
+            0b00, // 000 ? 0
+            0b01, // 001 ? 1
+            0b00, // 010 ? 0
+            0b01, // 011 ? 1
+            0b00, // 100 ? 0
+            0b01, // 101 ? 1
+            0b10, // 110 ? 1 (bit 1)
+            0b00  // 111 ? 0
         ];
         return truthTable[addr] ?? 0;
     }
 }
 ```
 
-**Limitation:** A PROM uses a full decoder — it allocates one word line for every minterm, even for don't-care conditions. A 16-input function needs 2¹⁶ = 65,536 word lines, most unused.
+**Limitation:** A PROM uses a full decoder ? it allocates one word line for every minterm, even for don't-care conditions. A 16-input function needs 2?6 = 65,536 word lines, most unused.
 
 ## 10.3 Programmable Logic Array (PLA)
 
@@ -112,22 +112,22 @@ A PLA has both a **programmable AND array** and a **programmable OR array**, sha
 ```mermaid
 graph TD
     subgraph "AND Array (Programmable)"
-        A0[A₀] --> AND1[&]
-        A0N[¬A₀] --> AND1
-        A1[A₁] --> AND1
-        A1N[¬A₁] --> AND1
+        A0[A0] --> AND1[&]
+        A0N[?A0] --> AND1
+        A1[A1] --> AND1
+        A1N[?A1] --> AND1
         A1 --> AND2[&]
         A1N --> AND2
-        AND1 --> P1[P₁ = A₀·A₁]
-        AND2 --> P2[P₂ = ¬A₁]
+        AND1 --> P1[P1 = A0?A1]
+        AND2 --> P2[P2 = ?A1]
     end
     subgraph "OR Array (Programmable)"
-        P1 --> OR1[≥1]
+        P1 --> OR1[=1]
         P2 --> OR1
-        P1 --> OR2[≥1]
+        P1 --> OR2[=1]
         AND1 --> OR2
-        OR1 --> Y0[Y₀]
-        OR2 --> Y1[Y₁]
+        OR1 --> Y0[Y0]
+        OR2 --> Y1[Y1]
     end
 ```
 
@@ -152,7 +152,7 @@ class PLA {
     }
 
     // Program a product term
-    // inputMask: bit = 1 → true, 0 → complement, X → don't connect
+    // inputMask: bit = 1 ? true, 0 ? complement, X ? don't connect
     //   For each input bit: 2 bits: [true, complement]
     //   true=1, comp=1, neither=don't care
     addTerm(inputMask: number[], outputMask: number[]): void {
@@ -193,16 +193,16 @@ class PLA {
     static fullAdderPLA(): PLA {
         const pla = new PLA(3, 2, 7); // 3 inputs, 2 outputs, 7 product terms
 
-        // Sum = Σm(1,2,4,7)
-        pla.addTerm([1, 0, 0], [1, 0]); // A·¬B·¬C
-        pla.addTerm([0, 1, 0], [1, 0]); // ¬A·B·¬C
-        pla.addTerm([0, 0, 1], [1, 0]); // ¬A·¬B·C
-        pla.addTerm([1, 1, 1], [1, 0]); // A·B·C
+        // Sum = Sm(1,2,4,7)
+        pla.addTerm([1, 0, 0], [1, 0]); // A??B??C
+        pla.addTerm([0, 1, 0], [1, 0]); // ?A?B??C
+        pla.addTerm([0, 0, 1], [1, 0]); // ?A??B?C
+        pla.addTerm([1, 1, 1], [1, 0]); // A?B?C
 
-        // Cout = Σm(3,5,6,7)
-        pla.addTerm([1, 1, -1], [0, 1]); // A·B
-        pla.addTerm([1, -1, 1], [0, 1]); // A·C
-        pla.addTerm([-1, 1, 1], [0, 1]); // B·C
+        // Cout = Sm(3,5,6,7)
+        pla.addTerm([1, 1, -1], [0, 1]); // A?B
+        pla.addTerm([1, -1, 1], [0, 1]); // A?C
+        pla.addTerm([-1, 1, 1], [0, 1]); // B?C
 
         return pla;
     }
@@ -213,7 +213,7 @@ const faPLA = PLA.fullAdderPLA();
 for (let i = 0; i < 8; i++) {
     const inputs = [(i >> 2) & 1, (i >> 1) & 1, i & 1];
     const outputs = faPLA.evaluate(inputs);
-    console.log(`A=${inputs[0]} B=${inputs[1]} Cin=${inputs[2]} → Sum=${outputs[0]} Cout=${outputs[1]}`);
+    console.log(`A=${inputs[0]} B=${inputs[1]} Cin=${inputs[2]} ? Sum=${outputs[0]} Cout=${outputs[1]}`);
 }
 ```
 
@@ -224,7 +224,7 @@ Minimising the number of product terms is critical for PLA area efficiency:
 ```typescript
 function minimisePLA(truthTable: number[][], numInputs: number): number[][] {
     // Combine adjacent minterms using the uniting theorem
-    // A·B·C + A·B·¬C = A·B (C eliminated)
+    // A?B?C + A?B??C = A?B (C eliminated)
     const terms: number[][] = [];
     let current = truthTable.map(row => [...row]);
 
@@ -239,7 +239,7 @@ function minimisePLA(truthTable: number[][], numInputs: number): number[][] {
                 const diff = current[i].map((v, k) => v !== current[j][k] ? k : -1)
                     .filter(k => k >= 0 && k < numInputs);
                 if (diff.length === 1) {
-                    // Adjacent — merge
+                    // Adjacent ? merge
                     const merged = [...current[i]];
                     merged[diff[0]] = -1; // don't care
                     next.push(merged);
@@ -265,18 +265,18 @@ function minimisePLA(truthTable: number[][], numInputs: number): number[][] {
 
 ## 10.4 Programmable Array Logic (PAL)
 
-A PAL has a **programmable AND array** but a **fixed OR array**. Each output has a fixed set of product terms (typically 4–8).
+A PAL has a **programmable AND array** but a **fixed OR array**. Each output has a fixed set of product terms (typically 4?8).
 
 ```mermaid
 graph TD
-    A0[A₀] --> AND1[&]
-    A0N[¬A₀] --> AND1
-    A1[A₁] --> AND1
-    AND1 --> OR1[≥1<br>Fixed 4-input]
+    A0[A0] --> AND1[&]
+    A0N[?A0] --> AND1
+    A1[A1] --> AND1
+    AND1 --> OR1[=1<br>Fixed 4-input]
     A0 --> AND2[&]
-    A1N[¬A₁] --> AND2
+    A1N[?A1] --> AND2
     AND2 --> OR1
-    OR1 --> Y0[Y₀<br>Registered or Combinational]
+    OR1 --> Y0[Y0<br>Registered or Combinational]
 ```
 
 ### 10.4.1 PAL Architecture
@@ -333,13 +333,13 @@ class PAL {
                     const compConnected = this.andArray[o][t][i * 2 + 1];
                     const inputVal = inputs[i];
 
-                    if (trueConnected && compConnected) continue; // both intact → don't care
+                    if (trueConnected && compConnected) continue; // both intact ? don't care
                     if (trueConnected && inputVal !== 1) { termActive = false; break; }
                     if (compConnected && inputVal !== 0) { termActive = false; break; }
                 }
                 if (termActive) {
                     outputs[o] = 1;
-                    break; // Fixed OR — first active term wins
+                    break; // Fixed OR ? first active term wins
                 }
             }
         }
@@ -365,12 +365,12 @@ class PAL {
 Many PALs include a D flip-flop on each output, enabling state machine implementation:
 
 ```text
-            ┌─────────┐
-Inputs ────►│ AND/OR  ├────► D Q ────► Registered Output
-            │  Array  │     ▲   │
-            └─────────┘     │   │
-                            │   └──► Feedback to array
-                            │
+            +---------+
+Inputs ----?? AND/OR  +----? D Q ----? Registered Output
+            ?  Array  ?     ?   ?
+            +---------+     ?   ?
+                            ?   +--? Feedback to array
+                            ?
                           Clock
 ```
 
@@ -426,10 +426,10 @@ graph TD
 
 | Vendor | Family | Macrocells | Key Feature |
 |--------|--------|-----------|-------------|
-| Altera (Intel) | MAX 3000/7000 | 32–512 | EEPROM-based |
-| Xilinx | XC9500 | 36–288 | ISP, 5V/3.3V |
-| Lattice | ispMACH 4000 | 32–512 | Very fast (3.5 ns) |
-| Microchip | ATF150x | 32–128 | Low power |
+| Altera (Intel) | MAX 3000/7000 | 32?512 | EEPROM-based |
+| Xilinx | XC9500 | 36?288 | ISP, 5V/3.3V |
+| Lattice | ispMACH 4000 | 32?512 | Very fast (3.5 ns) |
+| Microchip | ATF150x | 32?128 | Low power |
 
 **CPLD vs FPGA:**
 
@@ -438,16 +438,16 @@ graph TD
 | Logic element | Product-term macrocell | LUT + flip-flop |
 | Configuration | Non-volatile (Flash/EEPROM) | Volatile (SRAM) |
 | Routing | Deterministic (fixed delay) | Variable (routing delays) |
-| Density | Low–Medium (up to ~1000 macrocells) | High (millions of LUTs) |
+| Density | Low?Medium (up to ~1000 macrocells) | High (millions of LUTs) |
 | Best for | Glue logic, simple FSMs | Complex datapaths, DSP, CPUs |
 
-## 10.6 FPGAs — Field Programmable Gate Arrays
+## 10.6 FPGAs ? Field Programmable Gate Arrays
 
 The FPGA dominates modern programmable logic. It uses a **lookup table (LUT)** based architecture.
 
 ### 10.6.1 LUT-Based Logic
 
-An N-input LUT is a small SRAM that stores the truth table of any N-variable function. A 4-LUT (16×1 SRAM) can implement any 4-input function.
+An N-input LUT is a small SRAM that stores the truth table of any N-variable function. A 4-LUT (16?1 SRAM) can implement any 4-input function.
 
 ```typescript
 class LUT4 {
@@ -479,8 +479,8 @@ class LUT4 {
 }
 
 const xorLUT = LUT4.xor();
-console.log(`1 ⊕ 0 = ${xorLUT.evaluate([1, 0, 0, 0])}`); // 1
-console.log(`1 ⊕ 1 = ${xorLUT.evaluate([1, 1, 0, 0])}`); // 0
+console.log(`1 ? 0 = ${xorLUT.evaluate([1, 0, 0, 0])}`); // 1
+console.log(`1 ? 1 = ${xorLUT.evaluate([1, 1, 0, 0])}`); // 0
 ```
 
 ### 10.6.2 FPGA Slice Architecture
@@ -544,15 +544,15 @@ class SwitchBox {
     private connections: Map<string, boolean> = new Map();
 
     connect(from: string, to: string): void {
-        this.connections.set(`${from}→${to}`, true);
+        this.connections.set(`${from}?${to}`, true);
     }
 
     disconnect(from: string, to: string): void {
-        this.connections.delete(`${from}→${to}`);
+        this.connections.delete(`${from}?${to}`);
     }
 
     isConnected(from: string, to: string): boolean {
-        return this.connections.has(`${from}→${to}`);
+        return this.connections.has(`${from}?${to}`);
     }
 }
 ```
@@ -599,16 +599,16 @@ class FPGAStateMachine {
 | PAL | Fuse/EEPROM | Some | Medium | Fast | Low | None |
 | CPLD | EEPROM/Flash | Yes (ISP) | Medium | Fast | Low | None |
 | FPGA (SRAM) | SRAM | Unlimited | Very high | Fast | High | None |
-| FPGA (Flash) | Flash | 10⁴ cycles | High | Medium | Medium | None |
+| FPGA (Flash) | Flash | 104 cycles | High | Medium | Medium | None |
 | ASIC | Custom masks | No | Maximum | Fastest | Lowest | Very high |
 
 ## Practical Takeaways
 
-1. **PALs are best for simple glue logic** — small, fast, predictable delay; ideal for address decoding and bus interfaces
-2. **PLAs share product terms efficiently** — use when outputs share common logic (e.g., ALU control)
-3. **One-hot FSMs fit FPGAs naturally** — abundant flip-flops and wide OR gates make one-hot encoding optimal
-4. **LUTs are universal** — a K-input LUT implements any K-variable function, making FPGAs flexible for any logic
-5. **PLD choice depends on volume** — PALs/CPLDs for low–medium volume, FPGAs for prototyping/medium volume, ASICs for >100K units
+1. **PALs are best for simple glue logic** ? small, fast, predictable delay; ideal for address decoding and bus interfaces
+2. **PLAs share product terms efficiently** ? use when outputs share common logic (e.g., ALU control)
+3. **One-hot FSMs fit FPGAs naturally** ? abundant flip-flops and wide OR gates make one-hot encoding optimal
+4. **LUTs are universal** ? a K-input LUT implements any K-variable function, making FPGAs flexible for any logic
+5. **PLD choice depends on volume** ? PALs/CPLDs for low?medium volume, FPGAs for prototyping/medium volume, ASICs for >100K units
 
 ## TypeScript Implementations
 
@@ -769,16 +769,16 @@ class CostModel {
 
 // === Demo ===
 const qm = new QuineMcCluskey();
-console.log('Q-M minimization of F=Σ(0,1,2,4,5,6)@3:');
+console.log('Q-M minimization of F=S(0,1,2,4,5,6)@3:');
 console.log(qm.minimize([0, 1, 2, 4, 5, 6], 3));
 
 const lut = new LUT(3);
 lut.implementFunction((ins) => (ins[0] & ins[1]) | (~ins[0] & ins[2]) ? 1 : 0);
-console.log(`LUT(3) F=A·B+A'·C evaluate(5=101): ${lut.evaluate(5)}`);
+console.log(`LUT(3) F=A?B+A'?C evaluate(5=101): ${lut.evaluate(5)}`);
 
 const prom = new PROMSim(3, 1);
 prom.implementFunction([{ input: 3, output: 1 }, { input: 5, output: 1 }, { input: 6, output: 1 }, { input: 7, output: 1 }]);
-console.log(`PROM F=Σ(3,5,6,7) read(5): ${prom.read(5)}`);
+console.log(`PROM F=S(3,5,6,7) read(5): ${prom.read(5)}`);
 
 const sb = new SwitchBox(40);
 sb.connect(0, 1); sb.connect(0, 2);
@@ -786,6 +786,98 @@ console.log(`Switch box route prob @80%: ${(sb.routeProbability(0.8) * 100).toFi
 console.log(`ASIC break-even @$50/$5/$250K: ${CostModel.breakEven(50, 250000, 5)} units`);
 ```
 
+
+// pla pal
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'pla pal', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// pla pal - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'pla pal' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Programmable logic devices span a wide range from simple PROM-based logic through PLA, PAL, CPLD, and FPGA architectures. Each offers a different trade-off between flexibility, speed, density, and non-recurring engineering cost. PLAs provide the most flexible two-level logic (programmable AND and OR), PALs offer faster predictable delays (fixed OR), and FPGAs dominate high-density applications with LUT-based logic and abundant flip-flops. Understanding these trade-offs is essential for selecting the right implementation technology for any digital design.
@@ -832,7 +924,7 @@ Q1: b | Q2: c | Q3: c | Q4: b | Q5: b
 
 2. **PAL state machine:** Use a registered PAL with 4 inputs, 4 outputs, and 4 terms/output to implement a 4-state traffic light controller.
 
-3. **PROM vs PLA comparison:** Implement the function F(A,B,C,D) = Σm(0,3,5,6,9,10,12,15) using both a PROM and a PLA. Compare the number of word lines vs. product terms required.
+3. **PROM vs PLA comparison:** Implement the function F(A,B,C,D) = Sm(0,3,5,6,9,10,12,15) using both a PROM and a PLA. Compare the number of word lines vs. product terms required.
 
 4. **CPLD timing analysis:** A CPLD has a tPD (propagation delay) of 7.5 ns. What is the maximum frequency for a state machine with three levels of logic between flip-flops?
 

@@ -10,7 +10,7 @@ By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance
 
-> **One-Sentence Takeaway:** Next.js supports SSR, SSG, ISR, and client-side rendering â€” choose based on data freshness needs.
+> **One-Sentence Takeaway:** Next.js supports SSR, SSG, ISR, and client-side rendering — choose based on data freshness needs.
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -18,7 +18,7 @@ By the end of this chapter, you will be able to:
 |Rendering|SSR, SSG, ISR, and client rendering serve different use cases|Default to SSG/ISR for public content, SSR for personalized pages, client for highly interactive UI|
 |Data Fetching|Server Components fetch directly; client components use SWR/React Query|Fetch in Server Components by default to eliminate client waterfalls|
 |API Routes|Route handlers in `/api/*` replace separate backend servers|Use for lightweight BFF (Backend for Frontend) patterns, not for full API backends|
-|Middleware|Edge functions that intercept requests before they reach routes|Good for auth checks, redirects, i18n â€” but keep logic minimal for low latency|
+|Middleware|Edge functions that intercept requests before they reach routes|Good for auth checks, redirects, i18n — but keep logic minimal for low latency|
 |SEO|Metadata API, sitemaps, and Open Graph tags improve search visibility|Generate metadata dynamically in `generateMetadata` for each page|
 
 ## Chapter Roadmap
@@ -458,7 +458,7 @@ export default nextConfig;
 
 
 > [!TIP]
-> Use `next: { revalidate: 3600 }` in fetch options for ISR â€” it gives you static speed with periodic content freshness without deploying.
+> Use `next: { revalidate: 3600 }` in fetch options for ISR — it gives you static speed with periodic content freshness without deploying.
 
 > [!WARNING]
 > Prefetch all `Link` components by default in App Router. Disable prefetch for non-critical links with `prefetch={false}` to save bandwidth.
@@ -753,6 +753,48 @@ console.log("Middleware /admin:", chain.run("/admin", { headers: {}, cookies: { 
 console.log("Middleware /public:", chain.run("/public", { headers: {}, cookies: {} }));
 ```
 
+
+// nextjs
+// fullstack-frontend-backend implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'nextjs', data: { topic: 'fullstack-frontend-backend' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 Next.js is a React framework providing SSR, SSG, ISR, and client rendering. The App Router uses file-based routing with nested layouts. Server Components fetch data directly without client JavaScript. API routes handle backend logic. Middleware intercepts requests. SEO is managed through metadata export and sitemap generation.
@@ -762,7 +804,7 @@ Next.js is a React framework providing SSR, SSG, ISR, and client rendering. The 
 Server Actions let you mutate server-side data directly from client components.
 
 ```typescript
-// app/actions/todo.ts â€” Server Action
+// app/actions/todo.ts — Server Action
 "use server";
 
 import { revalidatePath } from "next/cache";
@@ -783,7 +825,7 @@ export async function addTodo(formData: FormData) {
 ```
 
 ```typescript
-// app/todos/page.tsx â€” consuming Server Action
+// app/todos/page.tsx — consuming Server Action
 export default function TodoPage() {
   return (
     <form action={addTodo}>
@@ -838,8 +880,8 @@ Build a multi-tenant SaaS application in Next.js with dynamic routing by tenant 
 
 ### Practical Takeaways
 
-1. **Default to Server Components** â€” fetch data in Server Components to eliminate client-side waterfalls and reduce bundle size. Add `"use client"` only for interactivity.
-2. **Use layouts for persistent UI** â€” navbars, sidebars, and footers belong in `layout.tsx` so they do not remount on navigation.
-3. **Choose the right rendering strategy** â€” SSG for static marketing pages, ISR for blog content with periodic updates, SSR for personalized dashboards, client rendering for highly interactive tools.
-4. **Leverage parallel routes for complex layouts** â€” render independent page sections (analytics, tasks, feed) concurrently in the same layout using `@slot` conventions.
-5. **Generate metadata dynamically** â€” use `generateMetadata()` to set per-page title, description, and Open Graph tags from fetched data for optimal SEO.
+1. **Default to Server Components** — fetch data in Server Components to eliminate client-side waterfalls and reduce bundle size. Add `"use client"` only for interactivity.
+2. **Use layouts for persistent UI** — navbars, sidebars, and footers belong in `layout.tsx` so they do not remount on navigation.
+3. **Choose the right rendering strategy** — SSG for static marketing pages, ISR for blog content with periodic updates, SSR for personalized dashboards, client rendering for highly interactive tools.
+4. **Leverage parallel routes for complex layouts** — render independent page sections (analytics, tasks, feed) concurrently in the same layout using `@slot` conventions.
+5. **Generate metadata dynamically** — use `generateMetadata()` to set per-page title, description, and Open Graph tags from fetched data for optimal SEO.

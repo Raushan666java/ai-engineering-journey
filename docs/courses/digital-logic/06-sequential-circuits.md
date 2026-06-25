@@ -1,7 +1,7 @@
 # Chapter 6: Sequential Circuits
 
-> **Prereq:** Chapter 5 (Combinational Circuits) — sequential circuits add memory to combinational logic.
-> **Next:** Chapter 7 (State Machines) — sequential circuits with a systematic state-transition structure.
+> **Prereq:** Chapter 5 (Combinational Circuits) ? sequential circuits add memory to combinational logic.
+> **Next:** Chapter 7 (State Machines) ? sequential circuits with a systematic state-transition structure.
 
 ## Learning Objectives
 
@@ -17,7 +17,7 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## 6.1 Introduction to Sequential Circuits
 
-A **sequential circuit** differs from a combinational circuit in one critical respect: its output depends on **both the present inputs and the past history** of those inputs. This memory is implemented using **bistable elements** — circuits that can store one bit of state indefinitely.
+A **sequential circuit** differs from a combinational circuit in one critical respect: its output depends on **both the present inputs and the past history** of those inputs. This memory is implemented using **bistable elements** ? circuits that can store one bit of state indefinitely.
 
 ```mermaid
 graph LR
@@ -33,10 +33,10 @@ graph LR
 ### 6.1.1 Sequential Circuit Model
 
 A sequential circuit is defined by:
-- **Next-state function:** `S⁺ = f(X, S)`
+- **Next-state function:** `S? = f(X, S)`
 - **Output function:** `Y = g(X, S)` (Mealy) or `Y = g(S)` (Moore)
 
-Where `S` is the current state, `S⁺` is the next state, and `X` are the primary inputs.
+Where `S` is the current state, `S?` is the next state, and `X` are the primary inputs.
 
 ### 6.1.2 Classification
 
@@ -48,25 +48,25 @@ Where `S` is the current state, `S⁺` is the next state, and `X` are the primar
 
 ## 6.2 Latches
 
-A **latch** is a level-sensitive memory element — it follows its inputs while the enable signal is asserted and holds its value when the enable is de-asserted.
+A **latch** is a level-sensitive memory element ? it follows its inputs while the enable signal is asserted and holds its value when the enable is de-asserted.
 
 ### 6.2.1 SR Latch (NOR Implementation)
 
 ```mermaid
 graph TD
-    S[S] --> NOR1[≥1]
-    R[R] --> NOR2[≥1]
+    S[S] --> NOR1[=1]
+    R[R] --> NOR2[=1]
     NOR1 --> Q[Q]
-    NOR2 --> Qn[¬Q]
+    NOR2 --> Qn[?Q]
     Qn --> NOR1
     Q --> NOR2
     style NOR1 fill:#faa,stroke:#333,stroke-width:1px
     style NOR2 fill:#faa,stroke:#333,stroke-width:1px
 ```
 
-| S | R | Q⁺ | ¬Q⁺ | Mode |
+| S | R | Q? | ?Q? | Mode |
 |---|---|----|-----|------|
-| 0 | 0 | Q  | ¬Q  | Hold |
+| 0 | 0 | Q  | ?Q  | Hold |
 | 0 | 1 | 0  | 1   | Reset |
 | 1 | 0 | 1  | 0   | Set |
 | 1 | 1 | 0  | 0   | Invalid |
@@ -89,8 +89,8 @@ function srLatch(S: number, R: number, prev: LatchState): LatchState {
 The D latch (transparent latch) eliminates the SR invalid state by adding an inverter between S and R.
 
 ```
-Q⁺ = D when Enable = 1
-Q⁺ = Q  when Enable = 0
+Q? = D when Enable = 1
+Q? = Q  when Enable = 0
 ```
 
 ```mermaid
@@ -100,10 +100,10 @@ graph TD
     D --> NOT[NOT]
     NOT --> AND2[&]
     EN --> AND2
-    AND1 --> OR1[≥1]
-    AND2 --> OR2[≥1]
+    AND1 --> OR1[=1]
+    AND2 --> OR2[=1]
     OR1 --> Q[Q]
-    OR2 --> Qn[¬Q]
+    OR2 --> Qn[?Q]
     Qn --> OR1
     Q --> OR2
 ```
@@ -116,7 +116,7 @@ function dLatch(D: number, enable: number, prev: number): number {
 
 ## 6.3 Flip-Flops
 
-A **flip-flop** is an edge-triggered memory element — it samples its inputs only on a clock edge (rising or falling) and holds the value between edges.
+A **flip-flop** is an edge-triggered memory element ? it samples its inputs only on a clock edge (rising or falling) and holds the value between edges.
 
 ```mermaid
 timeline
@@ -142,7 +142,7 @@ function detectEdge(clk: number, prevClk: number): EdgeType {
 The D flip-flop is the most widely used storage element in digital design. On each clock edge, it copies the D input to the Q output.
 
 ```
-Q⁺ = D  (on rising edge of clock)
+Q? = D  (on rising edge of clock)
 ```
 
 ```mermaid
@@ -179,7 +179,7 @@ class DFlipFlop implements FlipFlop {
 const dff = new DFlipFlop();
 for (const [clk, D] of [[0,0],[1,0],[0,0],[1,1],[0,1],[1,0],[0,0]]) {
     dff.update(D, clk);
-    console.log(`CLK=${clk} D=${D} → Q=${dff.Q}`);
+    console.log(`CLK=${clk} D=${D} ? Q=${dff.Q}`);
 }
 ```
 
@@ -187,12 +187,12 @@ for (const [clk, D] of [[0,0],[1,0],[0,0],[1,1],[0,1],[1,0],[0,0]]) {
 
 The JK flip-flop is a universal flip-flop that combines the behaviour of all other types.
 
-| J | K | Q⁺     | Mode    |
+| J | K | Q?     | Mode    |
 |---|----|--------|---------|
 | 0 | 0  | Q      | Hold    |
 | 0 | 1  | 0      | Reset   |
 | 1 | 0  | 1      | Set     |
-| 1 | 1  | ¬Q     | Toggle  |
+| 1 | 1  | ?Q     | Toggle  |
 
 ```typescript
 class JKFlipFlop implements FlipFlop {
@@ -214,7 +214,7 @@ class JKFlipFlop implements FlipFlop {
 The T flip-flop toggles its state whenever T=1 on a clock edge.
 
 ```
-Q⁺ = Q ⊕ T
+Q? = Q ? T
 ```
 
 ```typescript
@@ -241,7 +241,7 @@ function dToJK(D: number, Q: number): { J: number; K: number } {
 }
 
 function jkToD(J: number, K: number): number {
-    // D = J·Q̄ + K̄·Q — but for next state, D = Q⁺
+    // D = J?Q? + K??Q ? but for next state, D = Q?
     // We need the excitation function
     if (J === 0 && K === 1) return 0;
     if (J === 1 && K === 0) return 1;
@@ -254,25 +254,25 @@ function jkToD(J: number, K: number): number {
 
 ### 6.4.1 Characteristic Table
 
-Describes the next state `Q⁺` as a function of current state `Q` and inputs.
+Describes the next state `Q?` as a function of current state `Q` and inputs.
 
 | Flip-Flop | Characteristic Equation |
 |-----------|------------------------|
-| D         | Q⁺ = D                 |
-| SR        | Q⁺ = S + ¬R·Q          |
-| JK        | Q⁺ = J·¬Q + ¬K·Q       |
-| T         | Q⁺ = Q ⊕ T             |
+| D         | Q? = D                 |
+| SR        | Q? = S + ?R?Q          |
+| JK        | Q? = J??Q + ?K?Q       |
+| T         | Q? = Q ? T             |
 
 ### 6.4.2 Excitation Table
 
 Describes the required input to produce a desired state transition. Essential for sequential circuit design.
 
-| Transition Q → Q⁺ | D | S | R | J | K | T |
+| Transition Q ? Q? | D | S | R | J | K | T |
 |-------------------|---|---|---|---|---|---|
-| 0 → 0             | 0 | 0 | X | 0 | X | 0 |
-| 0 → 1             | 1 | 1 | 0 | 1 | X | 1 |
-| 1 → 0             | 0 | 0 | 1 | X | 1 | 1 |
-| 1 → 1             | 1 | X | 0 | X | 0 | 0 |
+| 0 ? 0             | 0 | 0 | X | 0 | X | 0 |
+| 0 ? 1             | 1 | 1 | 0 | 1 | X | 1 |
+| 1 ? 0             | 0 | 0 | 1 | X | 1 | 1 |
+| 1 ? 1             | 1 | X | 0 | X | 0 | 0 |
 
 ## 6.5 Registers
 
@@ -347,10 +347,10 @@ A **shift register** moves data one position per clock cycle. It is the fundamen
 
 ```mermaid
 graph LR
-    SI[Serial In] --> FF0[DFF₀]
-    FF0 --> FF1[DFF₁]
-    FF1 --> FF2[DFF₂]
-    FF2 --> FF3[DFF₃]
+    SI[Serial In] --> FF0[DFF0]
+    FF0 --> FF1[DFF1]
+    FF1 --> FF2[DFF2]
+    FF2 --> FF3[DFF3]
     FF3 --> SO[Serial Out]
     CLK --> FF0
     CLK --> FF1
@@ -399,9 +399,9 @@ console.log(`SIPO: ${sr.value.toString(2).padStart(4, '0')}`); // 1101 (LSB firs
 
 ### 6.6.1 Universal Shift Register
 
-A universal shift register supports parallel load, shift left, shift right, and hold — controlled by mode select lines S₁, S₀.
+A universal shift register supports parallel load, shift left, shift right, and hold ? controlled by mode select lines S1, S0.
 
-| S₁ | S₀ | Operation     |
+| S1 | S0 | Operation     |
 |----|----|---------------|
 | 0  | 0  | Hold          |
 | 0  | 1  | Shift right   |
@@ -461,14 +461,14 @@ The simplest counter: T flip-flops with each output driving the clock of the nex
 
 ```mermaid
 graph TD
-    CLK[Clock] --> T0[T FF₀]
-    T0 --> Q0[Q₀]
-    Q0 --> T1[T FF₁]
-    T1 --> Q1[Q₁]
-    Q1 --> T2[T FF₂]
-    T2 --> Q2[Q₂]
-    Q2 --> T3[T FF₃]
-    T3 --> Q3[Q₃]
+    CLK[Clock] --> T0[T FF0]
+    T0 --> Q0[Q0]
+    Q0 --> T1[T FF1]
+    T1 --> Q1[Q1]
+    Q1 --> T2[T FF2]
+    T2 --> Q2[Q2]
+    Q2 --> T3[T FF3]
+    T3 --> Q3[Q3]
 ```
 
 ```typescript
@@ -493,7 +493,7 @@ class RippleCounter {
         // Ripple: each stage toggles when the previous stage's output falls
         for (let i = 0; i < this.width; i++) {
             const prevClk = (i === 0) ? 1 : this.flops[i - 1].Q;
-            // We need to simulate clock edges — simplified here
+            // We need to simulate clock edges ? simplified here
             this.flops[i].update(1, prevClk);
         }
     }
@@ -507,17 +507,17 @@ for (let step = 0; step < 16; step++) {
 }
 ```
 
-**Problem:** Ripple counters are slow — the Nth stage toggles only after N gate delays.
+**Problem:** Ripple counters are slow ? the Nth stage toggles only after N gate delays.
 
 ### 6.7.2 Synchronous Binary Counter
 
 All flip-flops share a common clock. The T input of each stage is the AND of all lower-order bits.
 
 ```
-T₀ = 1           (always toggle)
-T₁ = Q₀
-T₂ = Q₁ · Q₀
-T₃ = Q₂ · Q₁ · Q₀
+T0 = 1           (always toggle)
+T1 = Q0
+T2 = Q1 ? Q0
+T3 = Q2 ? Q1 ? Q0
 ```
 
 ```typescript
@@ -595,7 +595,7 @@ class RingCounter {
 
     init(): void {
         // No clean way to set initial state in this model
-        // In hardware, use a preset/reset to set Q₀=1, others=0
+        // In hardware, use a preset/reset to set Q0=1, others=0
     }
 
     tick(clk: number): void {
@@ -610,8 +610,8 @@ class RingCounter {
 
 ### 6.8.1 Setup and Hold Time
 
-**Setup time (tₛᵤ):** the minimum time data must be stable **before** the clock edge.
-**Hold time (tₕ):** the minimum time data must be stable **after** the clock edge.
+**Setup time (t??):** the minimum time data must be stable **before** the clock edge.
+**Hold time (t?):** the minimum time data must be stable **after** the clock edge.
 
 ```text
           _________         _________
@@ -653,15 +653,15 @@ console.log(checkTiming(9.5, 10, 2, 1)); // false (0.5ns setup violation)
 Clock skew is the difference in arrival time of the clock at different flip-flops. It can causehold violations if the destination flip-flop receives the clock later than the source.
 
 ```
-t_c > tₕ + t_skew  →  hold failure
+t_c > t? + t_skew  ?  hold failure
 ```
 
 ```mermaid
 graph LR
-    CLK_SRC[Clock Source] --> |Long wire| FF1[FF₁]
-    CLK_SRC --> |Short wire| FF2[FF₂]
+    CLK_SRC[Clock Source] --> |Long wire| FF1[FF1]
+    CLK_SRC --> |Short wire| FF2[FF2]
     subgraph "Clock Skew"
-        SK[Δt = t₂ - t₁]
+        SK[?t = t2 - t1]
     end
     FF1 --> FF2
 ```
@@ -671,7 +671,7 @@ graph LR
 The minimum clock period is determined by:
 
 ```
-T_min ≥ t_clk-to-Q + t_logic_max + t_su + t_skew
+T_min = t_clk-to-Q + t_logic_max + t_su + t_skew
 ```
 
 Where:
@@ -707,18 +707,18 @@ graph LR
 ### 6.9.1 Mean Time Between Failures (MTBF)
 
 ```
-MTBF = exp(t_res / τ) / (f_clk · f_data · t_W)
+MTBF = exp(t_res / t) / (f_clk ? f_data ? t_W)
 ```
 
-Where τ is the flip-flop's metastability time constant and t_W is the sampling window.
+Where t is the flip-flop's metastability time constant and t_W is the sampling window.
 
 ```typescript
 function mtbf(tRes: number, tau: number, fClk: number, fData: number, tW: number): number {
     return Math.exp(tRes / tau) / (fClk * fData * tW);
 }
 
-// Typical values: τ = 0.1ns, tW = 0.05ns, fClk=100MHz, fData=10MHz
-console.log(`${mtbf(2e-9, 0.1e-9, 100e6, 10e6, 0.05e-9)} seconds`); // ≈ 5.4e7 s
+// Typical values: t = 0.1ns, tW = 0.05ns, fClk=100MHz, fData=10MHz
+console.log(`${mtbf(2e-9, 0.1e-9, 100e6, 10e6, 0.05e-9)} seconds`); // ? 5.4e7 s
 ```
 
 ### 6.9.2 Synchroniser Chain
@@ -751,19 +751,111 @@ class Synchronizer {
 | t_su      | 20 ns        | 16 ns         | 2.0 ns             |
 | t_h       | 5 ns         | 3 ns          | 0.5 ns             |
 | Max freq  | 25 MHz       | 30 MHz        | 200 MHz            |
-| τ (MTBF)  | 0.3 ns       | 0.15 ns       | 0.05 ns            |
+| t (MTBF)  | 0.3 ns       | 0.15 ns       | 0.05 ns            |
 
 ## Practical Takeaways
 
-1. **Use D flip-flops for most designs** — they are the simplest to work with and map directly to register-transfer-level (RTL) code
-2. **Never gate the clock** — use clock enable signals instead; gated clocks introduce skew and glitches
-3. **Synchronous design avoids race conditions** — edge-triggered flip-flops with a single clock domain eliminate most timing hazards
-4. **Always synchronise asynchronous inputs** — a two-flip-flop synchroniser gives MTBF in the range of years at typical clock frequencies
-5. **Keep timing margins** — account for process, voltage, and temperature (PVT) variation in addition to setup/hold requirements
+1. **Use D flip-flops for most designs** ? they are the simplest to work with and map directly to register-transfer-level (RTL) code
+2. **Never gate the clock** ? use clock enable signals instead; gated clocks introduce skew and glitches
+3. **Synchronous design avoids race conditions** ? edge-triggered flip-flops with a single clock domain eliminate most timing hazards
+4. **Always synchronise asynchronous inputs** ? a two-flip-flop synchroniser gives MTBF in the range of years at typical clock frequencies
+5. **Keep timing margins** ? account for process, voltage, and temperature (PVT) variation in addition to setup/hold requirements
 
+
+// sequential circuits
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'sequential circuits', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// sequential circuits - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'sequential circuits' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-This chapter introduced the core building blocks of sequential circuits. We covered the behaviour of latches and flip-flops (SR, D, JK, T), their characteristic and excitation tables, and the timing constraints that govern their reliable operation. Registers, shift registers, and counters were presented as practical applications, from simple storage to universal shift registers and synchronous counters. The critical concepts of setup/hold time, clock skew, and metastability provide the foundation for reliable sequential system design. The next chapter systematises these elements into finite state machines — the formal framework for controlling sequential behaviour.
+This chapter introduced the core building blocks of sequential circuits. We covered the behaviour of latches and flip-flops (SR, D, JK, T), their characteristic and excitation tables, and the timing constraints that govern their reliable operation. Registers, shift registers, and counters were presented as practical applications, from simple storage to universal shift registers and synchronous counters. The critical concepts of setup/hold time, clock skew, and metastability provide the foundation for reliable sequential system design. The next chapter systematises these elements into finite state machines ? the formal framework for controlling sequential behaviour.
 
 ## Chapter Quiz
 
@@ -792,8 +884,8 @@ c) Adding a Schmitt trigger
 d) Increasing the supply voltage
 
 **Q5.** In a synchronous up-counter, the T input of bit i is:
-a) The AND of Q₀ through Qᵢ₋₁
-b) The OR of Q₀ through Qᵢ₋₁
+a) The AND of Q0 through Q??1
+b) The OR of Q0 through Q??1
 c) The XOR of all lower bits
 d) Always 1
 
@@ -805,13 +897,13 @@ Q1: c | Q2: a | Q3: b | Q4: b | Q5: a
 
 1. **Flip-flop conversion:** Design a JK flip-flop using a D flip-flop and external logic. Implement the excitation logic and verify with TypeScript.
 
-2. **Excitation table practice:** Given a desired state machine with states S₀→S₁→S₂→S₃→S₀, determine the JK input equations for each flip-flop.
+2. **Excitation table practice:** Given a desired state machine with states S0?S1?S2?S3?S0, determine the JK input equations for each flip-flop.
 
 3. **8-bit register with reset:** Extend the EnabledRegister class with an asynchronous reset input that forces all outputs to 0.
 
-4. **LFSR:** Implement a 4-bit linear feedback shift register (LFSR) with polynomial x⁴ + x³ + 1. Generate the full 15-state sequence (non-zero states).
+4. **LFSR:** Implement a 4-bit linear feedback shift register (LFSR) with polynomial x4 + x? + 1. Generate the full 15-state sequence (non-zero states).
 
-5. **Timing analysis:** For a circuit with t_clk-to-Q = 1ns, t_logic = 8ns, t_su = 0.5ns, t_skew = 0.3ns, compute (a) maximum clock frequency and (b) MTBF with f_data = 5 MHz, τ = 0.1ns, t_W = 0.03ns.
+5. **Timing analysis:** For a circuit with t_clk-to-Q = 1ns, t_logic = 8ns, t_su = 0.5ns, t_skew = 0.3ns, compute (a) maximum clock frequency and (b) MTBF with f_data = 5 MHz, t = 0.1ns, t_W = 0.03ns.
 
 6. **Dual-clock FIFO:** Design a synchroniser for passing a 2-bit Gray-coded pointer between clock domains. Explain why Gray encoding is preferred.
 

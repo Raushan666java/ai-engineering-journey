@@ -21,7 +21,7 @@ After completing this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Relation Definition | Subset of $A \times B$ — a set of ordered pairs | Relations generalize functions; every function is a relation |
+| Relation Definition | Subset of $A \times B$ ? a set of ordered pairs | Relations generalize functions; every function is a relation |
 | Relation Properties | Reflexive, symmetric, antisymmetric, transitive | These four properties classify all binary relations |
 | Closures | Add minimum pairs to achieve a desired property | Transitive closure is computed via Warshall's algorithm |
 | Equivalence Relations | Reflexive + symmetric + transitive | Partitions the set into disjoint equivalence classes |
@@ -142,7 +142,7 @@ function isTransitive(M: RelationMatrix): boolean {
 }
 ```
 
-> **One-Sentence Takeaway:** The four core properties — reflexive, symmetric, antisymmetric, transitive — form the vocabulary for classifying any binary relation.
+> **One-Sentence Takeaway:** The four core properties ? reflexive, symmetric, antisymmetric, transitive ? form the vocabulary for classifying any binary relation.
 
 ### 7.4 Combining Relations
 
@@ -203,7 +203,7 @@ console.log(warshall(R));
 
 > **One-Sentence Takeaway:** Closures add the minimum number of ordered pairs needed to make a relation reflexive, symmetric, or transitive without changing its original content.
 >
-> **Pro Tip:** Warshall's algorithm computes transitive closure in $O(n^3)$ using dynamic programming — it is essentially Floyd-Warshall for reachability on unweighted graphs.
+> **Pro Tip:** Warshall's algorithm computes transitive closure in $O(n^3)$ using dynamic programming ? it is essentially Floyd-Warshall for reachability on unweighted graphs.
 
 ### 7.6 Equivalence Relations
 
@@ -236,7 +236,7 @@ function computeEquivalenceClasses(set: number[], relation: RelationMatrix): num
 }
 ```
 
-> **One-Sentence Takeaway:** An equivalence relation groups elements into equivalence classes that partition the set — two equivalence classes are either identical or disjoint.
+> **One-Sentence Takeaway:** An equivalence relation groups elements into equivalence classes that partition the set ? two equivalence classes are either identical or disjoint.
 
 ### 7.7 Partial Orders
 
@@ -352,8 +352,8 @@ Projection $\Pi_{\text{Student}}(R)$: $\{\text{Alice}, \text{Bob}\}$.
 | Equivalence Relations | Normalization, key uniqueness | Connected components | == operator, hash equality | Grouping by resource requirements |
 | Partial Orders | Schema versioning | DAGs, reachability | Inheritance hierarchies, type ordering | Build systems (make), topological sort |
 | Transitive Closure | Functional dependencies closure | Reachability, connectivity | Pointer analysis | Prerequisite chains |
-| Hasse Diagrams | — | Planar graph drawing | Class hierarchy visualization | Gantt chart of task ordering |
-| Topological Sort | Query plan optimization | — | Module dependency ordering | Makefiles, task scheduling |
+| Hasse Diagrams | ? | Planar graph drawing | Class hierarchy visualization | Gantt chart of task ordering |
+| Topological Sort | Query plan optimization | ? | Module dependency ordering | Makefiles, task scheduling |
 
 ## Chapter Quiz
 
@@ -369,7 +369,7 @@ Projection $\Pi_{\text{Student}}(R)$: $\{\text{Alice}, \text{Bob}\}$.
    - B) 3
    - C) 4
    - D) Infinite
-   <details><summary>Answer</summary>**C)** 4 — the residue classes modulo 4 are $[0], [1], [2], [3]$.</details>
+   <details><summary>Answer</summary>**C)** 4 ? the residue classes modulo 4 are $[0], [1], [2], [3]$.</details>
 
 3. In a Hasse diagram, which edges are omitted?
    - A) All edges
@@ -383,7 +383,7 @@ Projection $\Pi_{\text{Student}}(R)$: $\{\text{Alice}, \text{Bob}\}$.
    - B) $O(n^2)$
    - C) $O(n^3)$
    - D) $O(2^n)$
-   <details><summary>Answer</summary>**C)** $O(n^3)$ — three nested loops over $n$ elements make it cubic.</details>
+   <details><summary>Answer</summary>**C)** $O(n^3)$ ? three nested loops over $n$ elements make it cubic.</details>
 
 5. Which of the following is NOT a lattice operation?
    - A) Join (supremum)
@@ -454,9 +454,9 @@ function subset<T>(a: Set<T>, b: Set<T>): boolean {
   return true;
 }
 
-// Reflexive: A ⊆ A always ✓
-// Antisymmetric: A ⊆ B and B ⊆ A → A = B ✓
-// Transitive: A ⊆ B and B ⊆ C → A ⊆ C ✓
+// Reflexive: A ? A always ?
+// Antisymmetric: A ? B and B ? A ? A = B ?
+// Transitive: A ? B and B ? C ? A ? C ?
 ```
 
 ## TypeScript Implementations
@@ -489,7 +489,7 @@ const S = [1, 2, 3];
 const R: Relation = [[1,1],[2,2],[3,3],[1,2],[2,1],[1,3],[3,1]];
 console.log('Reflexive:', isReflexive(R, S));   // true
 console.log('Symmetric:', isSymmetric(R));      // true
-console.log('Transitive:', isTransitive(R));    // false (2,1)+(1,3)→(2,3) missing
+console.log('Transitive:', isTransitive(R));    // false (2,1)+(1,3)?(2,3) missing
 
 // --- Equivalence Relation Checker ---
 function isEquivalence(rel: Relation, set: number[]): boolean {
@@ -587,7 +587,7 @@ const graph: boolean[][] = [
   [false, false, false, false]
 ];
 const tc = transitiveClosure(graph);
-console.log('\nTransitive closure (1→2→3→4):');
+console.log('\nTransitive closure (1?2?3?4):');
 tc.forEach((r, i) => console.log(`  ${i}: ${r.map(v => v ? '1' : '0').join(' ')}`));
 
 // --- Topological Sort with Kahn's Algorithm ---
@@ -609,6 +609,98 @@ const deps: [number, number][] = [[0,2],[1,2],[2,3],[3,4],[2,5]];
 console.log('\nTopological sort order:', topologicalSort(6, deps));
 ```
 
+
+// relations
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'relations', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// relations - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'relations' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Relations are sets of ordered pairs. They can be matrices or digraphs.
@@ -621,12 +713,12 @@ console.log('\nTopological sort order:', topologicalSort(6, deps));
 
 ## Practical Takeaways
 
-1. **Check diagonal for reflexivity** — all ones on the diagonal of the matrix.
-2. **Check symmetry via transpose** — $M_R = M_R^T$ means symmetric.
-3. **Use Warshall for reachability** — transitive closure tells you what's connected.
-4. **Equivalence = partition** — every equivalence relation splits the set into classes.
-5. **Partial order = hierarchy** — Hasse diagrams make hierarchies readable.
-6. **Topological sort for dependencies** — Kahn's algorithm handles scheduling.
+1. **Check diagonal for reflexivity** ? all ones on the diagonal of the matrix.
+2. **Check symmetry via transpose** ? $M_R = M_R^T$ means symmetric.
+3. **Use Warshall for reachability** ? transitive closure tells you what's connected.
+4. **Equivalence = partition** ? every equivalence relation splits the set into classes.
+5. **Partial order = hierarchy** ? Hasse diagrams make hierarchies readable.
+6. **Topological sort for dependencies** ? Kahn's algorithm handles scheduling.
 
 ### 7.9 Relation Property Checker in TypeScript
 
@@ -670,7 +762,7 @@ const R1: [number, number][] = [[1,1], [1,2], [2,1], [2,2], [3,3]];
 console.log(isEquivalenceRelation(R1, [1,2,3])); // false (not transitive: 1R2,2R1 missing 1R1)
 ```
 
-### 7.10 Warshall's Algorithm — Transitive Closure
+### 7.10 Warshall's Algorithm ? Transitive Closure
 
 **Warshall's algorithm** computes the transitive closure of a relation in $O(n^3)$ time.
 
@@ -736,7 +828,7 @@ function composeRelations<T>(
 }
 
 // R = {(1,2), (2,3)}, S = {(2,4), (3,5)}
-// S ∘ R = {(1,4), (1,5)}
+// S ? R = {(1,4), (1,5)}
 console.log(composeRelations([[1,2], [2,3]], [[2,4], [3,5]]));
 // [[1,4], [1,5]]
 ```
@@ -776,7 +868,7 @@ const classes = equivalenceClasses(R3, [1,2,3,4,5]);
 console.log(classes.map(c => [...c])); // [[1,2], [3], [4,5]]
 ```
 
-### 7.13 Hasse Diagrams — Lattices
+### 7.13 Hasse Diagrams ? Lattices
 
 A **lattice** is a poset where every pair of elements has a unique supremum (join) and infimum (meet).
 

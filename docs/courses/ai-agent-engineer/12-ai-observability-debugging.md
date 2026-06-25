@@ -1,7 +1,7 @@
-# Chapter 12 â€” AI Observability & Debugging
+# Chapter 12 — AI Observability & Debugging
 
 **Duration:** 1.5 weeks, ~18 hours
-**Goal:** Build comprehensive observability for your AI systems â€” tracing every agent step, tracking costs, monitoring quality metrics, and debugging production failures.
+**Goal:** Build comprehensive observability for your AI systems — tracing every agent step, tracking costs, monitoring quality metrics, and debugging production failures.
 
 ---
 
@@ -483,9 +483,9 @@ class LatencyProfiler:
         recs = []
         for p in profiles:
             if p["duration_ms"] > 1000:
-                recs.append(f"Hotspot: {p['name']} ({p['duration_ms']}ms) â€” consider caching or async")
+                recs.append(f"Hotspot: {p['name']} ({p['duration_ms']}ms) — consider caching or async")
             elif p["duration_ms"] > 500:
-                recs.append(f"Warning: {p['name']} ({p['duration_ms']}ms) â€” review for optimization")
+                recs.append(f"Warning: {p['name']} ({p['duration_ms']}ms) — review for optimization")
         return recs
 
 # Decorator for profiling FastAPI endpoints
@@ -508,7 +508,7 @@ docs = profile_search(result)
 report = profiler.report()
 print(f"Total: {report['total_time_ms']}ms over {report['total_calls']} calls")
 for rec in report["recommendations"]:
-    print(f"  âš  {rec}")
+    print(f"  ? {rec}")
 ```
 
 ---
@@ -789,7 +789,7 @@ for i in range(100):
     latency = 1200 + np.random.normal(0, 100)
     alert = alerts.check_metric("latency_ms", latency)
     if alert:
-        print(f"ALERT: latency {latency:.0f}ms â€” z={alert['z_score']}")
+        print(f"ALERT: latency {latency:.0f}ms — z={alert['z_score']}")
 ```
 
 ---
@@ -868,7 +868,7 @@ class AgentDebugger:
         if not state_changes:
             findings.append({
                 "location": "graph",
-                "error": "No state change events found â€” graph may not be executing",
+                "error": "No state change events found — graph may not be executing",
                 "severity": "high",
             })
 
@@ -995,13 +995,39 @@ for _ in range(150):
 result = drift.check_drift("response_latency", min_samples=100)
 if result:
     print(f"Drift detected for {result['metric']}: severity={result['severity']}")
-    print(f"  Baseline mean: {result['baseline_mean']}ms â†’ Current: {result['current_mean']}ms")
+    print(f"  Baseline mean: {result['baseline_mean']}ms ? Current: {result['current_mean']}ms")
     print(f"  Mean shift: {result['mean_shift_pct']}%")
     print(f"  Distribution overlap: {result['distribution_overlap']}")
 ```
 
 ---
 
+
+interface QueryPlan { steps: Array<{type:"retrieve"|"decompose"|"synthesize";query:string;deps:string[]}> }
+class MultiHopRAG {
+  constructor(private llm: (p:string)=>Promise<string>, private retriever: (q:string)=>Promise<string[]>) {}
+  async plan(query: string): Promise<QueryPlan> {
+    const prompt = `Break this question into sub-questions: ${query}`; const response = await this.llm(prompt)
+    const subQuestions = response.split("\n").filter(Boolean)
+    return {steps:[{type:"decompose",query, deps:[]},...subQuestions.map(q=>({type:"retrieve" as const, query:q, deps:[]}))]}
+  }
+  async execute(plan: QueryPlan): Promise<string> {
+    let context = ""
+    for(const step of plan.steps) {
+      if(step.type==="retrieve") { const docs = await this.retriever(step.query); context+=`${step.query}:\n${docs.join("\n")}\n` }
+    }
+    return this.llm(`Context:\n${context}\nOriginal question: ${plan.steps[0].query}\nAnswer:`)
+  }
+}
+class FusionRetriever {
+  async fuse(query: string, retrievers: Array<(q:string)=>Promise<string[]>>): Promise<string[]> {
+    const results = await Promise.all(retrievers.map(r=>r(query)))
+    const unique = new Map<string,number>()
+    results.flat().forEach(doc => unique.set(doc,(unique.get(doc)||0)+1))
+    return Array.from(unique.entries()).sort((a,b)=>b[1]-a[1]).map(([doc])=>doc)
+  }
+}
+export { MultiHopRAG, QueryPlan, FusionRetriever }
 ## Exercises
 
 1. **Trace instrumentation:** Add tracing to your LangGraph agent using the custom Tracer class. Run 5 agent requests and export the trace report.

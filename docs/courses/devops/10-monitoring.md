@@ -73,7 +73,7 @@ SRE is a discipline that incorporates aspects of software engineering and applie
 
 ### The Four Golden Signals
 
-1. **Latency:** The time it takes to service a request. Distinguish between successful requests and failed requests—a failing service might return errors very quickly, masking the latency problem.
+1. **Latency:** The time it takes to service a request. Distinguish between successful requests and failed requests�a failing service might return errors very quickly, masking the latency problem.
 2. **Traffic:** A measure of how much demand is being placed on the system (requests per second, active users, throughput).
 3. **Errors:** The rate of requests that fail explicitly (5xx) or implicitly (success with wrong content, slow responses).
 4. **Saturation:** How "full" your service is (CPU usage, memory utilization, queue depth). The most overloaded component determines the system's saturation point.
@@ -83,9 +83,9 @@ SRE is a discipline that incorporates aspects of software engineering and applie
 The error budget is the acceptable amount of unreliability. For a 99.9% SLO over 30 days:
 
 ```
-Error Budget = (1 - SLO) × Time Window
-             = 0.001 × (30 × 24 × 60 × 60)
-             = 2,592 seconds ≈ 43 minutes
+Error Budget = (1 - SLO) � Time Window
+             = 0.001 � (30 � 24 � 60 � 60)
+             = 2,592 seconds � 43 minutes
 ```
 
 **Error Budget Mechanics:**
@@ -118,11 +118,11 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 | SEV-4 | Cosmetic or informational | 24 hours | Dashboard labeling issue |
 
 **Incident Response Flow:**
-1. Detection → Alert fires or user reports issue
-2. Triage → Determine severity, declare incident, assemble response team
-3. Mitigation → Stabilize the system (rollback, redirect, scale up)
-4. Resolution → Apply permanent fix
-5. Follow-up → Blameless postmortem, preventive actions
+1. Detection ? Alert fires or user reports issue
+2. Triage ? Determine severity, declare incident, assemble response team
+3. Mitigation ? Stabilize the system (rollback, redirect, scale up)
+4. Resolution ? Apply permanent fix
+5. Follow-up ? Blameless postmortem, preventive actions
 
 ### Monitoring Stack
 
@@ -338,7 +338,7 @@ console.log(`API budget remaining: ${apiBudget.remainingPercent}% - ${calc.alert
 | SLA | Contractual commitment with consequences |
 | Prometheus | Pull-based time-series monitoring |
 | Grafana | Visualization with multi-source dashboards |
-| Error Budget | Allowed unreliability = (1 - SLO) × window |
+| Error Budget | Allowed unreliability = (1 - SLO) � window |
 | Toil | Manual, repetitive, automatable operational work |
 | Alertmanager | Deduplication, grouping, routing, silencing |
 
@@ -475,10 +475,10 @@ class ErrorBudgetTracker {
       `  Budget consumed: ${state.consumed.toFixed(0)} of ${state.totalBudget.toFixed(0)} errors`,
       `  Remaining: ${state.remaining.toFixed(0)} errors (${state.remainingPercent.toFixed(1)}%)`,
       `  Burn rate: ${state.burnRate.toFixed(2)}x`,
-      `  Status: ${state.isExhausted ? '❌ EXHAUSTED' : state.remainingPercent < 20 ? '⚠ WARNING' : '✅ HEALTHY'}`,
+      `  Status: ${state.isExhausted ? '? EXHAUSTED' : state.remainingPercent < 20 ? '? WARNING' : '? HEALTHY'}`,
     ];
     if (state.projectedExhaustion) lines.push(`  Projected exhaustion: ${state.projectedExhaustion.toISOString()}`);
-    for (const alert of state.burnRateAlerts) lines.push(`  🚨 ${alert}`);
+    for (const alert of state.burnRateAlerts) lines.push(`  ?? ${alert}`);
     return lines.join('\n');
   }
 }
@@ -818,6 +818,48 @@ Each team owns their own dashboards and alerts. The platform team provides globa
 5. Gate deployments when budget is depleted
 6. Review SLOs quarterly and adjust targets based on actual performance
 
+
+// configuration mgmt
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'configuration mgmt', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - SRE applies engineering principles to system operations to ensure high reliability.

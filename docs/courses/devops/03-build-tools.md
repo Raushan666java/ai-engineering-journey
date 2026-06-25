@@ -227,18 +227,18 @@ module.exports = {
 
 ```text
 my-project/
-├── package.json          # Root package with workspaces
-├── packages/
-│   ├── core/
-│   │   ├── package.json  # Depends on shared
-│   │   └── src/
-│   ├── api/
-│   │   ├── package.json  # Depends on core
-│   │   └── src/
-│   └── web/
-│       ├── package.json  # Depends on core
-│       └── src/
-└── package-lock.json     # Single lock file
++-- package.json          # Root package with workspaces
++-- packages/
+�   +-- core/
+�   �   +-- package.json  # Depends on shared
+�   �   +-- src/
+�   +-- api/
+�   �   +-- package.json  # Depends on core
+�   �   +-- src/
+�   +-- web/
+�       +-- package.json  # Depends on core
+�       +-- src/
++-- package-lock.json     # Single lock file
 ```
 
 ### Build Optimization
@@ -327,7 +327,7 @@ class BuildPipeline {
 
   async run(): Promise<void> {
     this.startTime = Date.now();
-    console.log('🚀 Starting build pipeline...\n');
+    console.log('?? Starting build pipeline...\n');
 
     this.ensureOutputDir();
     this.validateEntry();
@@ -342,7 +342,7 @@ class BuildPipeline {
   private ensureOutputDir(): void {
     if (!existsSync(this.config.outDir)) {
       mkdirSync(this.config.outDir, { recursive: true });
-      console.log(`📁 Created output directory: ${this.config.outDir}`);
+      console.log(`?? Created output directory: ${this.config.outDir}`);
     }
   }
 
@@ -350,28 +350,28 @@ class BuildPipeline {
     if (!existsSync(this.config.entry)) {
       throw new Error(`Entry point not found: ${this.config.entry}`);
     }
-    console.log(`✅ Entry point validated: ${this.config.entry}`);
+    console.log(`? Entry point validated: ${this.config.entry}`);
   }
 
   private setEnvironmentVariables(): void {
     Object.entries(this.config.env).forEach(([key, value]) => {
       process.env[key] = value;
     });
-    console.log(`⚙️  Environment variables set (${Object.keys(this.config.env).length})`);
+    console.log(`??  Environment variables set (${Object.keys(this.config.env).length})`);
   }
 
   private runTypeCheck(): void {
-    console.log('🔍 Running TypeScript type check...');
+    console.log('?? Running TypeScript type check...');
     try {
       execSync('npx tsc --noEmit', { stdio: 'inherit' });
-      console.log('✅ TypeScript type check passed');
+      console.log('? TypeScript type check passed');
     } catch {
       throw new Error('TypeScript type check failed');
     }
   }
 
   private bundleWithEsbuild(): void {
-    console.log('📦 Bundling with esbuild...');
+    console.log('?? Bundling with esbuild...');
     const args = [
       this.config.entry,
       `--outdir=${this.config.outDir}`,
@@ -386,14 +386,14 @@ class BuildPipeline {
 
     try {
       execSync(`npx esbuild ${args.join(' ')}`, { stdio: 'inherit' });
-      console.log('✅ Bundle complete');
+      console.log('? Bundle complete');
     } catch {
       throw new Error('Bundle failed');
     }
   }
 
   private copyStaticAssets(): void {
-    console.log('📎 Copying static assets...');
+    console.log('?? Copying static assets...');
     try {
       execSync('cp -r src/public/* dist/ 2>/dev/null; true', { stdio: 'inherit' });
     } catch {
@@ -414,14 +414,14 @@ class BuildPipeline {
       join(this.config.outDir, 'build-info.json'),
       JSON.stringify(buildInfo, null, 2),
     );
-    console.log('📄 Build info generated');
+    console.log('?? Build info generated');
   }
 
   private printSummary(): void {
     const duration = ((Date.now() - this.startTime) / 1000).toFixed(2);
     const outSize = this.getOutputSize();
-    console.log(`\n✅ Build complete in ${duration}s`);
-    console.log(`📦 Output size: ${outSize}`);
+    console.log(`\n? Build complete in ${duration}s`);
+    console.log(`?? Output size: ${outSize}`);
   }
 
   private getOutputSize(): string {
@@ -445,7 +445,7 @@ const pipeline = new BuildPipeline({
 });
 
 pipeline.run().catch(err => {
-  console.error('❌ Build failed:', err.message);
+  console.error('? Build failed:', err.message);
   process.exit(1);
 });
 ```
@@ -519,7 +519,49 @@ class DependencyAuditor {
     const inconsistencies = this.analyzeConsistency();
 
     let report = '# Dependency Audit Report\n\n';
-    report += `## Summary\n\n`;
+    report += `
+// build tools
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'build tools', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+## Summary\n\n`;
     report += `- **Total dependencies:** ${deps.length}\n`;
     report += `- **Production:** ${deps.filter(d => d.type === 'dependency').length}\n`;
     report += `- **Development:** ${deps.filter(d => d.type === 'devDependency').length}\n`;
@@ -529,7 +571,7 @@ class DependencyAuditor {
       report += `## Inconsistencies\n\n`;
       inconsistencies.forEach(i => report += `- ${i}\n`);
     } else {
-      report += '✅ No version inconsistencies found\n';
+      report += '? No version inconsistencies found\n';
     }
 
     return report;
@@ -586,7 +628,7 @@ class MonorepoBuildOrchestrator {
 
   async buildAll(parallel: boolean = true): Promise<void> {
     const order = this.getBuildOrder();
-    console.log(`Build order: ${order.join(' → ')}\n`);
+    console.log(`Build order: ${order.join(' ? ')}\n`);
 
     if (parallel) {
       const batches = this.batchParallel(order);
@@ -645,7 +687,7 @@ class MonorepoBuildOrchestrator {
     console.log(`  Building ${name}...`);
     await new Promise(resolve => setTimeout(resolve, pkg.buildTime));
     pkg.lastBuild = new Date().toISOString();
-    console.log(`  ✅ ${name} built`);
+    console.log(`  ? ${name} built`);
   }
 }
 
@@ -756,7 +798,7 @@ class BuildAnalyzer {
       `| Artifact | Size | Budget | Status |\n` +
       `|----------|------|--------|--------|\n` +
       analysis.records.map(r =>
-        `| ${r.artifact.name} | ${this.formatBytes(r.artifact.sizeBytes)} | ${r.budget ? this.formatBytes(r.budget.maxSizeBytes) : '—'} | ${r.status === 'ok' ? '✅' : r.status === 'warning' ? '⚠️' : '❌'} |`
+        `| ${r.artifact.name} | ${this.formatBytes(r.artifact.sizeBytes)} | ${r.budget ? this.formatBytes(r.budget.maxSizeBytes) : '�'} | ${r.status === 'ok' ? '?' : r.status === 'warning' ? '??' : '?'} |`
       ).join('\n') + '\n\n' +
       `**Total:** ${this.formatBytes(analysis.totalSizeBytes)} / ${this.formatBytes(analysis.totalBudgetBytes)} (${analysis.percentOverBudget.toFixed(1)}%)` +
       (analysis.recommendations.length > 0 ? '\n\n**Recommendations:**\n' + analysis.recommendations.map(r => `- ${r}`).join('\n') : '');
@@ -856,7 +898,7 @@ class CacheOptimizer {
       recommendations: [
         `Cache node_modules with lockfile hash key (saves ~${Math.round(savings)}% install time)`,
         candidates.filter(c => c.estimatedSizeMB > 100).length > 0
-          ? 'Large caches detected — consider splitting into per-package caches'
+          ? 'Large caches detected � consider splitting into per-package caches'
           : 'Cache sizes within reasonable range',
       ],
       tierOrder: ['lockfile', 'node_modules', 'dist'],
@@ -906,7 +948,7 @@ plan.recommendations.forEach(r => console.log(`- ${r}`));
 
 <details><summary>Question 3: What does tree shaking do?</summary>**A)** Organize code into trees<br>**B)** Remove unused exports from the bundle<br>**C)** Shake the build tree for errors<br>**D)** Split code into chunks<br><br>**Answer: B)** Remove unused exports from the bundle</details>
 
-<details><summary>Question 4: In CI pipelines, should you use `npm install` or `npm ci`?</summary>**A)** `npm install` — it's faster<br>**B)** `npm ci` — it respects the lock file and is deterministic<br>**C)** Both work the same way<br>**D)** Neither — use `yarn` instead<br><br>**Answer: B)** `npm ci` — it respects the lock file and is deterministic</details>
+<details><summary>Question 4: In CI pipelines, should you use `npm install` or `npm ci`?</summary>**A)** `npm install` � it's faster<br>**B)** `npm ci` � it respects the lock file and is deterministic<br>**C)** Both work the same way<br>**D)** Neither � use `yarn` instead<br><br>**Answer: B)** `npm ci` � it respects the lock file and is deterministic</details>
 
 <details><summary>Question 5: What does the caret `^` in `"express": "^4.18.0"` mean?</summary>**A)** Compatible with version 4.x<br>**B)** Compatible with only 4.18.x<br>**C)** Compatible with 4.18.0 exactly<br>**D)** Compatible with any version<br><br>**Answer: A)** Compatible with version 4.x</details>
 

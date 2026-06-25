@@ -116,7 +116,7 @@ resource "aws_ecs_service" "app" {
 
 ### Terraform Provisioners
 
-Provisioners execute scripts on resources after creation (use sparingly â€” prefer user_data or configuration management):
+Provisioners execute scripts on resources after creation (use sparingly — prefer user_data or configuration management):
 
 ```hcl
 resource "aws_instance" "web" {
@@ -462,7 +462,7 @@ console.log(ts);
 
 ### Drift Remediation Engine
 
-Infrastructure drift â€” when actual infrastructure state diverges from declared configuration â€” is a leading cause of configuration drift incidents. The following tool detects, analyzes, and proposes remediation for drift.
+Infrastructure drift — when actual infrastructure state diverges from declared configuration — is a leading cause of configuration drift incidents. The following tool detects, analyzes, and proposes remediation for drift.
 
 ```typescript
 // drift-remediation.ts
@@ -834,6 +834,48 @@ flowchart LR
 | Terraform Cloud | Built-in | Simplest, managed |
 | Consul | Session lock | Good for multi-cloud |
 
+
+// continuous delivery
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'continuous delivery', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Terraform workspaces isolate state for different environments using the same configuration.

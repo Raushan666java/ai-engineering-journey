@@ -20,10 +20,10 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
 | Account Model | EOA (users) vs Contract (code) accounts | Key distinction from Bitcoin's UTXO model |
-| EVM | Sandboxed, deterministic runtime | Every node runs every transaction — expensive but trustless |
+| EVM | Sandboxed, deterministic runtime | Every node runs every transaction � expensive but trustless |
 | Smart Contracts | Self-executing immutable code | Deploy once, runs forever as programmed |
 | Gas | Computational cost measured per opcode | Prevents infinite loops, funds network security |
-| State Trie | Patricia Merkle Trie maps address → state | Efficiently proves account existence and balance |
+| State Trie | Patricia Merkle Trie maps address ? state | Efficiently proves account existence and balance |
 | EIP-1559 | Base fee + priority fee (tip) | Deflationary burn mechanism, better fee estimation |
 | EIP-4844 | Proto-Danksharding (blob transactions) | Dramatically reduces L2 fees |
 
@@ -132,7 +132,7 @@ flowchart TB
 
 **EVM execution model:**
 - **Stack-based:** All operations push/pop from a 1024-element stack
-- **Deterministic:** Same code + same input → same output on every node
+- **Deterministic:** Same code + same input ? same output on every node
 - **Isolated:** Contracts cannot access the filesystem, network, or other contracts' internal storage directly
 - **Serialized:** One transaction executes at a time per contract (no concurrency issues)
 
@@ -162,8 +162,8 @@ The EVM has ~140+ opcodes categorized by function:
 | MUL/DIV | 5 | Multiplication/division |
 | BALANCE | 2600 | Gets account balance (warm access) |
 | SLOAD | 2100 (cold), 100 (warm) | Load from storage |
-| SSTORE (zero→nonzero) | 22100 | Write to storage (cold) |
-| SSTORE (nonzero→nonzero) | 5000 | Update storage |
+| SSTORE (zero?nonzero) | 22100 | Write to storage (cold) |
+| SSTORE (nonzero?nonzero) | 5000 | Update storage |
 | CALL | 2600 | Call another contract (warm) |
 | CREATE | 32000 | Deploy new contract |
 | SELFDESTRUCT | 5000 | Destroy contract |
@@ -178,10 +178,10 @@ flowchart TB
         Tx["Transaction"]
         GasLimit["Gas Limit: 100,000"]
         GasPrice["Gas Price: 50 Gwei"]
-        TotalFee["Max Fee: 100,000 × 50 = 5,000,000 Gwei<br/>= 0.005 ETH"]
+        TotalFee["Max Fee: 100,000 � 50 = 5,000,000 Gwei<br/>= 0.005 ETH"]
         Execution["EVM Executes..."
         UsedGas["Gas Used: 45,000"]
-        Refund["Unused Gas Refunded:<br/>55,000 × 50 = 2,750,000 Gwei"]
+        Refund["Unused Gas Refunded:<br/>55,000 � 50 = 2,750,000 Gwei"]
     end
     
     Tx --> GasLimit
@@ -196,7 +196,7 @@ flowchart TB
 - **Gas:** Unit of computational work (each opcode costs fixed gas)
 - **Gas Price:** Amount you pay per unit of gas (in Gwei, 1 Gwei = 10^-9 ETH)
 - **Gas Limit:** Maximum gas you allow the transaction to consume
-- **Total Fee:** Gas Used × Gas Price
+- **Total Fee:** Gas Used � Gas Price
 - **EIP-1559 (London fork):** Base fee (burned) + Priority fee (tip to miner)
 
 ### EIP-1559 Fee Market
@@ -231,12 +231,12 @@ function adjustBaseFee(
     // Target is 50% of gas limit
     const target = blockGasTarget;
     if (blockGasUsed > target) {
-        // Block >50% full → base fee increases by up to 12.5%
+        // Block >50% full ? base fee increases by up to 12.5%
         const excess = blockGasUsed - target;
         const increase = (excess * currentBaseFee) / (BigInt(target) * 8n);
         return currentBaseFee + increase;
     } else {
-        // Block <50% full → base fee decreases
+        // Block <50% full ? base fee decreases
         const deficit = target - blockGasUsed;
         const decrease = (deficit * currentBaseFee) / (BigInt(target) * 8n);
         return currentBaseFee - decrease;
@@ -245,7 +245,7 @@ function adjustBaseFee(
 ```
 
 **Key changes from EIP-1559:**
-- Base fee is burned (removed from circulation) — can make ETH deflationary
+- Base fee is burned (removed from circulation) � can make ETH deflationary
 - Priority fee goes to validator as incentive
 - Better fee estimation (base fee is deterministic)
 - Users no longer need to guess gas prices manually
@@ -281,9 +281,9 @@ const ethFee = fee / 1e9;  // Convert to ETH
 
 ### Turing Completeness and The Halting Problem
 
-Ethereum is **Turing complete** — it can simulate any computable function. This is both a blessing and a curse:
+Ethereum is **Turing complete** � it can simulate any computable function. This is both a blessing and a curse:
 
-- **Benefit:** Can express any logic — complex DeFi protocols, NFTs, DAOs, etc.
+- **Benefit:** Can express any logic � complex DeFi protocols, NFTs, DAOs, etc.
 - **Challenge:** Can't know if a program will finish (the Halting Problem is undecidable)
 
 **Ethereum's solution:** Gas! Instead of proving a program halts, Ethereum charges for every computational step. If a transaction runs out of gas, it reverts but the miner keeps the gas. This ensures:
@@ -312,7 +312,7 @@ timeline
 |---------|------|-------------|
 | Frontier | Jul 2015 | Initial release |
 | Homestead | Mar 2016 | Second major release |
-| The Merge | Sep 2022 | PoW → PoS, 99.9% energy reduction |
+| The Merge | Sep 2022 | PoW ? PoS, 99.9% energy reduction |
 | Shanghai | Apr 2023 | Enabled staking withdrawals (EIP-4895) |
 | Dencun | Mar 2024 | Proto-Danksharding (EIP-4844), blob transactions |
 | Electra | 2025+ | PeerDAS, further scalability |
@@ -324,7 +324,7 @@ timeline
 - Same EVM, same smart contracts, same execution
 
 **Dencun (EIP-4844):**
-- Introduced **blob transactions** — temporary data storage for L2 rollups
+- Introduced **blob transactions** � temporary data storage for L2 rollups
 - Reduced L2 fees by 10-100x
 - No permanent state storage for blobs (pruned after ~18 days)
 - Foundation for future full Danksharding
@@ -364,7 +364,7 @@ contract SimpleStorage {
 
 **Gas breakdown for `set(42)`:**
 - Base cost: 21,000 gas (transaction)
-- SSTORE (zero → non-zero, cold): 22,100 gas
+- SSTORE (zero ? non-zero, cold): 22,100 gas
 - Total: ~43,100 gas
 
 ### Example 2: Out of Gas Error
@@ -431,7 +431,7 @@ function estimateERC20TransferGas(totalHolders?: number): number {
     // SLOAD for allowance if needed: 2100
     // Various checks and overhead: ~5000
     return 21000 + 4200 + 10000 + 1500 + 2100 + 5000;
-    // ≈ 45800 gas for a typical transfer
+    // � 45800 gas for a typical transfer
 }
 ```
 
@@ -478,7 +478,7 @@ function verifyAccountState(
 | EOA | Controlled by private key | Can initiate transactions | User wallets |
 | Contract Account | Controlled by contract code | Has storage and logic | DApps, DeFi protocols |
 | UTXO Model (Bitcoin) | State = set of unspent outputs | No code execution | Simple payments |
-| Account Model (Ethereum) | State = address → balance mapping | Supports arbitrary computation | Smart contracts, DeFi |
+| Account Model (Ethereum) | State = address ? balance mapping | Supports arbitrary computation | Smart contracts, DeFi |
 | Gas | Computation cost unit | Prevents DoS, funds network | All EVM operations |
 | State Trie | Patricia Merkle Trie | Efficient state proofs | Account verification |
 | EIP-1559 | Base fee burning | Deflationary, better UX | Fee market improvement |
@@ -490,9 +490,9 @@ function verifyAccountState(
 |----------|-------------|-------|
 | **Account Types** | EOA (externally owned), Contract | EOA txs are signed; Contract txs are triggered internally |
 | **EVM Ops** | ADD (3 gas), SSTORE (22K/5K), BALANCE (2600) | Gas costs vary by operation complexity |
-| **Denominations** | 1 ETH = 10⁹ Gwei = 10¹⁸ Wei | Gas price typically quoted in Gwei |
-| **Contract Lifecycle** | Deploy → Interact → Selfdestruct | No upgrade by default — use proxy pattern |
-| **State Transition** | σ[t+1] = Υ(σ[t], T) | Deterministic across all nodes |
+| **Denominations** | 1 ETH = 10? Gwei = 10�8 Wei | Gas price typically quoted in Gwei |
+| **Contract Lifecycle** | Deploy ? Interact ? Selfdestruct | No upgrade by default � use proxy pattern |
+| **State Transition** | s[t+1] = ?(s[t], T) | Deterministic across all nodes |
 | **Base Fee** | EIP-1559: Burned, adjusts by up to 12.5%/block | Deflationary when blocks >50% full |
 | **Blobs** | EIP-4844: Temporary data, pruned after 18 days | 10-100x cheaper L2 fees |
 
@@ -539,7 +539,7 @@ function verifyAccountState(
 
 <details>
 <summary>Answer</summary>
-**B) Contract accounts can be programmed to execute multi-step operations atomically.** This enables composable DeFi operations (flash loans, multi-hop swaps) that execute as atomic units — either all steps succeed or none do.
+**B) Contract accounts can be programmed to execute multi-step operations atomically.** This enables composable DeFi operations (flash loans, multi-hop swaps) that execute as atomic units � either all steps succeed or none do.
 </details>
 
 4. What is the base fee in EIP-1559?
@@ -832,6 +832,48 @@ const parsed = logs.parseLog(['0x' + 'ddf252ad1be2c89b69c2b068fc378daa952ba7f163
 console.log(`Parsed event: ${parsed?.event ?? 'unknown'}`);
 ```
 
+
+// ethereum
+// distributed-ledger-crypto implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'ethereum', data: { topic: 'distributed-ledger-crypto' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Ethereum is a "World Computer" that extends blockchain from payments to general computation.
@@ -845,11 +887,11 @@ console.log(`Parsed event: ${parsed?.event ?? 'unknown'}`);
 
 ## Practical Takeaways
 
-1. Use EIP-1559 transactions (`type: 2`) for better fee estimation — set `maxFeePerGas` and `maxPriorityFeePerGas`.
-2. Minimize SSTORE operations in smart contracts — they cost the most gas.
+1. Use EIP-1559 transactions (`type: 2`) for better fee estimation � set `maxFeePerGas` and `maxPriorityFeePerGas`.
+2. Minimize SSTORE operations in smart contracts � they cost the most gas.
 3. Use the `storageRoot` and `codeHash` in block headers to verify account state via light clients.
 4. For production contracts, always include upgrade mechanisms (proxy pattern) and emergency pause functions.
-5. Monitor EIP-4844 blob fees when deploying L2 applications — they are much cheaper than L1 calldata.
+5. Monitor EIP-4844 blob fees when deploying L2 applications � they are much cheaper than L1 calldata.
 
 ---
 

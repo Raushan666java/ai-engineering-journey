@@ -210,7 +210,7 @@ spec:
 
 ### Stateful Workloads in Orchestration
 
-Not all applications are stateless — databases, caches, and message queues require stateful orchestration:
+Not all applications are stateless � databases, caches, and message queues require stateful orchestration:
 
 **StatefulSet (Kubernetes):**
 - Each pod gets a stable, unique network identity (`pod-0`, `pod-1`)
@@ -329,8 +329,8 @@ flowchart LR
 ```
 
 - **terminationGracePeriodSeconds** (default 30s): Time between SIGTERM and SIGKILL
-- **PreStop hook:** Runs before SIGTERM — drain connections, flush buffers
-- **PostStart hook:** Runs after container starts — register with service mesh
+- **PreStop hook:** Runs before SIGTERM � drain connections, flush buffers
+- **PostStart hook:** Runs after container starts � register with service mesh
 
 ```yaml
 lifecycle:
@@ -348,7 +348,7 @@ interface PodLifecycleConfig {
 
 class PodLifecycleSimulator {
   async simulateShutdown(config: PodLifecycleConfig): Promise<void> {
-    console.log('📥 Pod shutdown initiated');
+    console.log('?? Pod shutdown initiated');
 
     if (config.hasPreStopHook) {
       console.log('  Running preStop hook...');
@@ -596,7 +596,7 @@ class OrchestrationSimulator {
     );
 
     if (available.length === 0) {
-      console.log(`⚠️  No node available for pod ${pod.name}, queuing...`);
+      console.log(`??  No node available for pod ${pod.name}, queuing...`);
       this.pendingPods.push(pod);
       pod.status = 'pending';
       return;
@@ -612,7 +612,7 @@ class OrchestrationSimulator {
     target.availableMemory -= pod.memory;
     pod.node = target.name;
     pod.status = 'running';
-    console.log(`📦 Scheduled ${pod.name} on ${target.name}`);
+    console.log(`?? Scheduled ${pod.name} on ${target.name}`);
   }
 
   simulatePodFailure(podName: string): void {
@@ -624,7 +624,7 @@ class OrchestrationSimulator {
         node.availableCpu += pod.cpu;
         node.availableMemory += pod.memory;
         pod.status = 'failed';
-        console.log(`💥 Pod ${podName} failed on ${node.name}`);
+        console.log(`?? Pod ${podName} failed on ${node.name}`);
 
         // Self-healing: reschedule
         pod.status = 'terminated';
@@ -640,7 +640,7 @@ class OrchestrationSimulator {
     if (!node) return;
 
     node.healthy = false;
-    console.log(`💥 Node ${nodeName} failed`);
+    console.log(`?? Node ${nodeName} failed`);
 
     // Reschedule all pods from failed node
     const podsToReschedule = [...node.pods];
@@ -669,14 +669,14 @@ class OrchestrationSimulator {
   getStatus(): void {
     console.log('\n=== Cluster Status ===\n');
     for (const node of this.nodes.values()) {
-      console.log(`Node: ${node.name} (${node.healthy ? '✅' : '❌'})`);
+      console.log(`Node: ${node.name} (${node.healthy ? '?' : '?'})`);
       console.log(`  CPU: ${node.availableCpu}/${node.cpu}`);
       console.log(`  Memory: ${node.availableMemory}/${node.memory}`);
       console.log(`  Pods: ${node.pods.map(p => `${p.name}(${p.status})`).join(', ') || 'none'}`);
       console.log('');
     }
     if (this.pendingPods.length > 0) {
-      console.log(`⚠️  Pending pods: ${this.pendingPods.length}`);
+      console.log(`??  Pending pods: ${this.pendingPods.length}`);
     }
   }
 }
@@ -740,34 +740,34 @@ class OrchestratorComparator {
   private readonly dimensions: ComparisonDimension[] = [
     {
       category: 'Deployment', features: [
-        { name: 'Rolling updates', kubernetes: '✅', swarm: '✅', nomad: '✅', ecs: '✅' },
-        { name: 'Blue-green deploy', kubernetes: '✅', swarm: '⚠️ Manual', nomad: '⚠️ Manual', ecs: '✅' },
-        { name: 'Canary releases', kubernetes: '✅', swarm: '❌', nomad: '⚠️ Manual', ecs: '✅' },
-        { name: 'Batch jobs', kubernetes: '✅', swarm: '❌', nomad: '✅', ecs: '✅' },
+        { name: 'Rolling updates', kubernetes: '?', swarm: '?', nomad: '?', ecs: '?' },
+        { name: 'Blue-green deploy', kubernetes: '?', swarm: '?? Manual', nomad: '?? Manual', ecs: '?' },
+        { name: 'Canary releases', kubernetes: '?', swarm: '?', nomad: '?? Manual', ecs: '?' },
+        { name: 'Batch jobs', kubernetes: '?', swarm: '?', nomad: '?', ecs: '?' },
       ],
     },
     {
       category: 'Networking', features: [
-        { name: 'Service discovery', kubernetes: '✅ DNS', swarm: '✅ DNS', nomad: '✅ Consul', ecs: '✅ Cloud Map' },
-        { name: 'Ingress/LB', kubernetes: '✅', swarm: '⚠️ Basic', nomad: '⚠️ Fabio', ecs: '✅ ALB/NLB' },
-        { name: 'Network policies', kubernetes: '✅', swarm: '❌', nomad: '⚠️', ecs: '✅ SG' },
-        { name: 'Service mesh', kubernetes: '✅ Istio/Linkerd', swarm: '❌', nomad: '✅ Consul', ecs: '✅ App Mesh' },
+        { name: 'Service discovery', kubernetes: '? DNS', swarm: '? DNS', nomad: '? Consul', ecs: '? Cloud Map' },
+        { name: 'Ingress/LB', kubernetes: '?', swarm: '?? Basic', nomad: '?? Fabio', ecs: '? ALB/NLB' },
+        { name: 'Network policies', kubernetes: '?', swarm: '?', nomad: '??', ecs: '? SG' },
+        { name: 'Service mesh', kubernetes: '? Istio/Linkerd', swarm: '?', nomad: '? Consul', ecs: '? App Mesh' },
       ],
     },
     {
       category: 'Operations', features: [
-        { name: 'Self-healing', kubernetes: '✅', swarm: '✅', nomad: '✅', ecs: '✅' },
-        { name: 'Auto-scaling', kubernetes: '✅ HPA', swarm: '❌', nomad: '⚠️', ecs: '✅' },
-        { name: 'Multi-AZ', kubernetes: '✅', swarm: '✅', nomad: '✅', ecs: '✅' },
-        { name: 'Audit logging', kubernetes: '✅', swarm: '⚠️', nomad: '✅', ecs: '✅' },
+        { name: 'Self-healing', kubernetes: '?', swarm: '?', nomad: '?', ecs: '?' },
+        { name: 'Auto-scaling', kubernetes: '? HPA', swarm: '?', nomad: '??', ecs: '?' },
+        { name: 'Multi-AZ', kubernetes: '?', swarm: '?', nomad: '?', ecs: '?' },
+        { name: 'Audit logging', kubernetes: '?', swarm: '??', nomad: '?', ecs: '?' },
       ],
     },
     {
       category: 'Ecosystem', features: [
         { name: 'Community size', kubernetes: 'Largest', swarm: 'Declining', nomad: 'Growing', ecs: 'Large (AWS)' },
-        { name: 'Cloud native', kubernetes: '✅ CNCF', swarm: '❌', nomad: '✅ CNCF', ecs: '❌' },
+        { name: 'Cloud native', kubernetes: '? CNCF', swarm: '?', nomad: '? CNCF', ecs: '?' },
         { name: 'Learning curve', kubernetes: 'Steep', swarm: 'Gentle', nomad: 'Moderate', ecs: 'Moderate' },
-        { name: 'Helm charts', kubernetes: '✅', swarm: '❌', nomad: '❌', ecs: '❌' },
+        { name: 'Helm charts', kubernetes: '?', swarm: '?', nomad: '?', ecs: '?' },
       ],
     },
   ];
@@ -841,6 +841,48 @@ console.log('\n## Recommendation\n', ranked[0].platform, '-', ranked[0].bestFor)
 
 ---
 
+
+// docker compose
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'docker compose', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Container orchestration automates deployment, scaling, networking, and management of containerized applications.
@@ -868,7 +910,7 @@ console.log('\n## Recommendation\n', ranked[0].platform, '-', ranked[0].bestFor)
 2. Compare three orchestration platforms for a team of 5 deploying 10 microservices.
 3. Implement an autoscaling strategy based on CPU utilization.
 4. Create a service discovery and load balancing design for a multi-service application.
-5. Extend the `OrchestrationSimulator` class to support: **StatefulSet** behavior (pods with stable identity — rescheduled pods retain their name), **pod topology spread constraints** (ensure pods are distributed across at least 3 nodes with a max skew of 1), and **graceful termination** (pods run a preStop hook that drains connections in 5s before SIGKILL at 30s).
+5. Extend the `OrchestrationSimulator` class to support: **StatefulSet** behavior (pods with stable identity � rescheduled pods retain their name), **pod topology spread constraints** (ensure pods are distributed across at least 3 nodes with a max skew of 1), and **graceful termination** (pods run a preStop hook that drains connections in 5s before SIGKILL at 30s).
 6. Implement a `SchedulingPolicyEngine` that accepts pod requirements and node labels then returns the optimal node assignment. Support the following constraint types: `requiredNodeAffinity` (pod must run on matching nodes), `preferredNodeAffinity` (weighted preference for node attributes), `podAntiAffinity` (prevent same-app pods on same node), and `toleration` (pod tolerates tainted nodes). Use the engine to schedule 6 web pods across a 3-node cluster where each node has a different zone label.
 
 ### Challenge Problem

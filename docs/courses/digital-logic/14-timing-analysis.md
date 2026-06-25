@@ -1,7 +1,7 @@
 # Chapter 14: Timing Analysis
 
-> **Prereq:** Chapter 6 (Sequential Circuits) — flip-flop timing parameters are the foundation of static timing analysis.
-> **Next:** Chapter 15 (Advanced Topics) — timing closure is a critical step in modern VLSI design.
+> **Prereq:** Chapter 6 (Sequential Circuits) ? flip-flop timing parameters are the foundation of static timing analysis.
+> **Next:** Chapter 15 (Advanced Topics) ? timing closure is a critical step in modern VLSI design.
 
 ## Learning Objectives
 
@@ -22,12 +22,12 @@ A **timing path** starts at a clock pin of a flip-flop (or a primary input) and 
 
 ```mermaid
 graph LR
-    CLK1[Clock Source] --> FF1[FF₁<br>Launch]
+    CLK1[Clock Source] --> FF1[FF1<br>Launch]
     FF1 --> COMB[Combinational<br>Logic]
-    COMB --> FF2[FF₂<br>Capture]
-    CLK2[Clock at FF₂] --> FF2
+    COMB --> FF2[FF2<br>Capture]
+    CLK2[Clock at FF2] --> FF2
     subgraph "Timing Path"
-        START[Startpoint<br>FF₁/CLK] --> END[Endpoint<br>FF₂/D]
+        START[Startpoint<br>FF1/CLK] --> END[Endpoint<br>FF2/D]
     end
 ```
 
@@ -71,11 +71,11 @@ STA exhaustively verifies every timing path without simulation, using delay mode
 Setup constraint: data must arrive before the capturing clock edge.
 
 ```
-t_data_arrival ≤ t_clock_capture - t_su
+t_data_arrival = t_clock_capture - t_su
 
 Slack = (t_clock_capture - t_su) - t_data_arrival
-Positive slack → timing met
-Negative slack → timing violation
+Positive slack ? timing met
+Negative slack ? timing violation
 ```
 
 ```typescript
@@ -109,7 +109,7 @@ console.log(`Setup slack at 200 MHz: ${slackFail.toFixed(2)} ns`); // negative
 Hold constraint: data must remain stable after the capturing clock edge.
 
 ```
-t_data_arrival ≥ t_clock_capture + t_hold
+t_data_arrival = t_clock_capture + t_hold
 
 Slack = t_data_arrival - (t_clock_capture + t_hold)
 ```
@@ -235,7 +235,7 @@ class ClockTree {
     }
 
     power(switchingActivity: number, freq: number, capacitance: number): number {
-        // Dynamic power: P = α·C·V²·f
+        // Dynamic power: P = a?C?V??f
         return switchingActivity * capacitance * 1.0 * 1.0 * freq;
     }
 }
@@ -286,7 +286,7 @@ console.log(`Power savings: ${100 - (activeFlops / totalFlops) * 100}%`);
 
 ### 14.4.1 Clock Skew
 
-Clock skew is the spatial variation in clock arrival time — different flip-flops see the clock edge at different times.
+Clock skew is the spatial variation in clock arrival time ? different flip-flops see the clock edge at different times.
 
 | Type | Description | Impact |
 |------|-------------|--------|
@@ -323,13 +323,13 @@ Jitter is the temporal variation of clock edges from their ideal positions.
 ```mermaid
 graph LR
     subgraph "Ideal Clock"
-        I1[↑] --> I2[↑]
-        I2 --> I3[↑]
+        I1[?] --> I2[?]
+        I2 --> I3[?]
     end
     subgraph "Clock with Jitter"
-        J1[↑] --> J2[↑]
+        J1[?] --> J2[?]
         J2 --> J3[~]
-        J3 --> J4[↑]
+        J3 --> J4[?]
     end
 ```
 
@@ -342,7 +342,7 @@ interface JitterSpec {
 
 function jitterMargin(jitter: JitterSpec, confidence: number): number {
     // Convert RMS to peak-to-peak at given confidence level
-    // 6σ covers 99.7% of jitter events
+    // 6s covers 99.7% of jitter events
     const sigma = confidence >= 99.7 ? 6 : confidence >= 95 ? 4 : 3;
     return jitter.periodJitter * sigma;
 }
@@ -357,7 +357,7 @@ Process, voltage, and temperature (PVT) variations cause delays to differ betwee
 
 ```typescript
 class OCV {
-    readonly processFactor: number; // 0.9–1.1 for mature node
+    readonly processFactor: number; // 0.9?1.1 for mature node
     readonly voltageFactor: number;
     readonly temperatureFactor: number;
 
@@ -432,7 +432,7 @@ class TimingFixer {
         driveStrength: number,
         targetDelay: number
     ): number {
-        // Upsizing: increase transistor width → lower delay, higher power
+        // Upsizing: increase transistor width ? lower delay, higher power
         const newDelay = nominalDelay / Math.sqrt(driveStrength);
         return newDelay < targetDelay ? newDelay : targetDelay;
     }
@@ -449,10 +449,10 @@ function fixHoldViolation(pathDelay: number, requiredHold: number): number {
     if (additionalDelay <= 0) return 0;
 
     // Methods:
-    // 1. Add buffer stages (delay per buffer ~50–100 ps)
+    // 1. Add buffer stages (delay per buffer ~50?100 ps)
     // 2. Insert delay cells
     // 3. Route detour (wire delay)
-    // 4. Downsize cells (slower → more delay)
+    // 4. Downsize cells (slower ? more delay)
 
     const bufferDelay = 0.08; // ns per buffer
     const buffersNeeded = Math.ceil(additionalDelay / bufferDelay);
@@ -472,12 +472,12 @@ When a switching net (aggressor) couples energy into a neighbouring net (victim)
 ```typescript
 class CrosstalkAnalysis {
     static couplingCapacitance(
-        length: number,       // µm
-        spacing: number,      // µm
-        layerHeight: number   // µm
+        length: number,       // ?m
+        spacing: number,      // ?m
+        layerHeight: number   // ?m
     ): number {
         // Parallel plate + fringing capacitance model
-        const epsilon = 3.9 * 8.854e-18; // F/µm (SiO₂)
+        const epsilon = 3.9 * 8.854e-18; // F/?m (SiO2)
         const parallel = epsilon * length * layerHeight / spacing;
         const fringing = epsilon * length * 0.5;
         return (parallel + fringing) * 1e15; // fF
@@ -518,7 +518,7 @@ Voltage drop along power distribution networks reduces cell drive strength and i
 class IRDrop {
     static voltageDrop(
         current: number,   // A
-        resistance: number // Ω
+        resistance: number // O
     ): number {
         return current * resistance; // V = IR
     }
@@ -588,11 +588,11 @@ console.log(`Slack: ${sdc.applyToPath(8.5, 'reg-to-reg').toFixed(2)} ns`); // 1.
 
 ## Practical Takeaways
 
-1. **Setup violations limit max frequency** — fix by pipelining, retiming, or reducing logic depth
-2. **Hold violations must be fixed regardless of frequency** — even DC circuits need hold closure
-3. **Clock skew is both friend and enemy** — positive skew helps setup but hurts hold; balance carefully
-4. **OCV margin increases at smaller nodes** — 28 nm and below require significant derating factors
-5. **STA is exhaustive but not complete** — it covers static paths but misses dynamic effects like crosstalk and EMI
+1. **Setup violations limit max frequency** ? fix by pipelining, retiming, or reducing logic depth
+2. **Hold violations must be fixed regardless of frequency** ? even DC circuits need hold closure
+3. **Clock skew is both friend and enemy** ? positive skew helps setup but hurts hold; balance carefully
+4. **OCV margin increases at smaller nodes** ? 28 nm and below require significant derating factors
+5. **STA is exhaustive but not complete** ? it covers static paths but misses dynamic effects like crosstalk and EMI
 
 ## TypeScript Implementations
 
@@ -779,6 +779,98 @@ const ad = new AdaptiveClock(8, 8.5);
 console.log(`Adaptive clock @85C: ${(ad.measure(85) / 1e6).toFixed(0)} MHz`);
 ```
 
+
+// timing analysis
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'timing analysis', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// timing analysis - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'timing analysis' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Timing analysis is the gatekeeper between digital design and silicon reality. This chapter covered the fundamentals of static timing analysis, including setup and hold checks, clock distribution, skew and jitter, on-chip variation, and signal integrity effects like crosstalk and IR drop. Timing violations are addressed through pipelining, retiming, cell sizing, and clock tuning. SDC constraints guide synthesis tools toward timing closure. The next chapter explores advanced topics including low-power design, testing, and emerging technologies.
@@ -823,7 +915,7 @@ Q1: b | Q2: a | Q3: b | Q4: b | Q5: b
 
 1. **STA engine:** Implement a basic STA engine in TypeScript that accepts a netlist of cells with delay models and reports setup/hold slack for all paths.
 
-2. **Clock tree synthesis:** Design an H-tree for a 16×16 mm² chip. Calculate the worst-case skew with 5% local mismatch and 0.1%/mm wire delay gradient.
+2. **Clock tree synthesis:** Design an H-tree for a 16?16 mm? chip. Calculate the worst-case skew with 5% local mismatch and 0.1%/mm wire delay gradient.
 
 3. **OCV analysis:** For a 7 nm process with 12% process variation, 5% voltage variation, and 3% temperature variation, calculate the setup and hold derating factors for a 500 MHz design.
 
@@ -831,7 +923,7 @@ Q1: b | Q2: a | Q3: b | Q4: b | Q5: b
 
 5. **Multi-corner analysis:** Implement setup and hold checks at three corners (slow-slow, typical-typical, fast-fast) and report the limiting corner for each constraint.
 
-6. **Power grid analysis:** Model a 64-bit datapath with 50 µm grid pitch. Calculate worst-case IR drop when 80% of flops switch simultaneously. Show the spatial voltage map.
+6. **Power grid analysis:** Model a 64-bit datapath with 50 ?m grid pitch. Calculate worst-case IR drop when 80% of flops switch simultaneously. Show the spatial voltage map.
 
 7. **Retiming:** Given a 5-stage pipeline with delays [4, 8, 6, 9, 3] ns, retime the flip-flops to balance delays and maximise the clock frequency.
 

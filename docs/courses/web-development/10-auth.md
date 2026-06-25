@@ -14,8 +14,8 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-|Auth vs Auth|Authentication verifies identity; authorization controls access|Always check auth first, then authz â€” never skip either step|
-|Password Hashing|bcrypt with salt rounds makes rainbow table attacks infeasible|Use 12+ salt rounds â€” higher is slower but more resistant to GPU cracking|
+|Auth vs Auth|Authentication verifies identity; authorization controls access|Always check auth first, then authz — never skip either step|
+|Password Hashing|bcrypt with salt rounds makes rainbow table attacks infeasible|Use 12+ salt rounds — higher is slower but more resistant to GPU cracking|
 |JWT Tokens|Stateless access tokens (short-lived) and refresh tokens (long-lived)|Keep access tokens to 15min, rotate refresh tokens on each use to detect theft|
 |OAuth 2.0|Delegated authorization via third-party providers (Google, GitHub)|Use Passport.js strategies for standardized social login integration|
 |RBAC|Role-based access control maps permissions to roles, not users|Define roles as enums with explicit permission matrices for each role|
@@ -460,7 +460,7 @@ router.post("/mfa/verify", authenticate, async (req, res) => {
 ### Session Management Best Practices
 
 ```typescript
-// Session token rotation â€” re-issue after privilege elevation
+// Session token rotation — re-issue after privilege elevation
 function rotateSession(req: Request, res: Response) {
   const oldSid = req.sessionID;
   req.session.regenerate((err) => {
@@ -472,7 +472,7 @@ function rotateSession(req: Request, res: Response) {
   });
 }
 
-// Session fingerprinting â€” detect hijacking via user-agent + IP mismatch
+// Session fingerprinting — detect hijacking via user-agent + IP mismatch
 function sessionFingerprint(req: Request): string {
   const ua = req.headers["user-agent"] ?? "";
   const ip = req.ip ?? "";
@@ -570,7 +570,7 @@ Test your understanding with these quick questions.
 **Q2. Why should refresh tokens be rotated?**
 
 - A) To reduce server storage
-- B) To detect token theft â€” if a stolen token is used, the old one becomes invalid
+- B) To detect token theft — if a stolen token is used, the old one becomes invalid
 - C) To comply with GDPR
 - D) To improve API performance
 
@@ -589,7 +589,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**C) 12 or higher. The cost factor is exponential â€” 12 rounds (2^12 iterations) balances security and performance for production use.**
+**C) 12 or higher. The cost factor is exponential — 12 rounds (2^12 iterations) balances security and performance for production use.**
 
 </details>
 
@@ -805,6 +805,48 @@ console.log("TOTP:", totp);
 console.log("TOTP verify:", TOTPGenerator.verify(totp, "JBSWY3DPEHPK3PXP"));
 ```
 
+
+// auth
+// fullstack-frontend-backend implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'auth', data: { topic: 'fullstack-frontend-backend' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 Authentication verifies identity while authorization controls access. JWTs provide stateless authentication with short-lived access tokens and long-lived refresh tokens for secure session management. bcrypt salts and hashes passwords, OAuth 2.0 enables third-party login, RBAC structures permissions by role, and TOTP adds an extra security layer with multi-factor authentication.
@@ -832,8 +874,8 @@ Build a complete auth system with Google OAuth, MFA/TOTP, role-based permissions
 
 ### Practical Takeaways
 
-1. **Never store plaintext passwords** â€” use bcrypt with 12+ salt rounds. Argon2id is even better if your platform supports it.
-2. **Short-lived access tokens + rotating refresh tokens** â€” keep access tokens at 15min, rotate refresh tokens on each use to detect theft.
-3. **Always check auth before authz** â€” authenticate the user first, then check permissions. Never skip either step.
-4. **Use SameSite Strict cookies** â€” prevents CSRF on modern browsers without needing token-based CSRF protection.
-5. **Log auth events** â€” failed logins, password changes, MFA enrollments, and session revocations should all be audited.
+1. **Never store plaintext passwords** — use bcrypt with 12+ salt rounds. Argon2id is even better if your platform supports it.
+2. **Short-lived access tokens + rotating refresh tokens** — keep access tokens at 15min, rotate refresh tokens on each use to detect theft.
+3. **Always check auth before authz** — authenticate the user first, then check permissions. Never skip either step.
+4. **Use SameSite Strict cookies** — prevents CSRF on modern browsers without needing token-based CSRF protection.
+5. **Log auth events** — failed logins, password changes, MFA enrollments, and session revocations should all be audited.

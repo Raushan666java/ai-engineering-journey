@@ -58,19 +58,19 @@ flowchart LR
 
 2. **Create a framework:** Set up tables or grids based on the puzzle structure.
 
-3. **Use symbols:** Represent relationships with symbols (>, <, =, →, ≠).
+3. **Use symbols:** Represent relationships with symbols (>, <, =, ?, ?).
 
 4. **Direct vs. indirect clues:**
-   - Direct: "A sits to the left of B" — place immediately
-   - Indirect: "A is two places away from B" — note possible positions
+   - Direct: "A sits to the left of B" ? place immediately
+   - Indirect: "A is two places away from B" ? note possible positions
 
 5. **Fixed vs. variable clues:**
-   - Fixed: "A is at the left end" — definitive placement
-   - Variable: "Either A or B is at the end" — note possibilities
+   - Fixed: "A is at the left end" ? definitive placement
+   - Variable: "Either A or B is at the end" ? note possibilities
 
 6. **Elimination:** Rule out impossible positions step by step.
 
-7. **"Can't be determined"** — some puzzles have multiple valid solutions.
+7. **"Can't be determined"** ? some puzzles have multiple valid solutions.
 
 **Seating Arrangement Notations:**
 
@@ -85,10 +85,10 @@ flowchart LR
 
 ```
 P --- M    (P married to M)
-│
-├── S      (S is child of P and M)
-│
-└── D      (D is child of P and M)
+?
++-- S      (S is child of P and M)
+?
++-- D      (D is child of P and M)
 ```
 
 | Relation | Description |
@@ -121,17 +121,17 @@ Syllogisms with 3-5 statements followed by multiple conclusions. Determine which
 
 **Venn Diagram Method:**
 
-Draw overlapping circles for each category. Shade regions that must be empty. Put a cross (×) in regions that must have at least one element.
+Draw overlapping circles for each category. Shade regions that must be empty. Put a cross (?) in regions that must have at least one element.
 
 **Rules for Conclusions:**
-- "All A are B" + "All B are C" ⟹ "All A are C"
-- "All A are B" + "No B is C" ⟹ "No A is C"
-- "All A are B" + "Some B are C" ⟹ NOT necessarily "Some A are C"
-- "Some A are B" + "All B are C" ⟹ "Some A are C"
-- "No A is B" + "All B are C" ⟹ NOT necessarily "No A is C"
-- "Some A are not B" + "All B are C" ⟹ NOT necessarily "Some A are not C"
+- "All A are B" + "All B are C" ? "All A are C"
+- "All A are B" + "No B is C" ? "No A is C"
+- "All A are B" + "Some B are C" ? NOT necessarily "Some A are C"
+- "Some A are B" + "All B are C" ? "Some A are C"
+- "No A is B" + "All B are C" ? NOT necessarily "No A is C"
+- "Some A are not B" + "All B are C" ? NOT necessarily "Some A are not C"
 
-**Complementary Pair:** "Some A are B" and "Some A are not B" — an "either-or" conclusion where one must be true.
+**Complementary Pair:** "Some A are B" and "Some A are not B" ? an "either-or" conclusion where one must be true.
 
 ### 6.3 Critical Reasoning
 
@@ -215,9 +215,9 @@ Determine whether one event is the cause of another.
 5. Check if they are sequential in a longer chain
 
 **Examples:**
-- I: Heavy rainfall. II: River flooded. ⟹ Type A (I causes II)
-- I: Company profits decreased. II: CEO resigned. ⟹ Could be A, B, or C — depends on context
-- I: New tax policy announced. II: Stock market fell. ⟹ Type A (I causes II)
+- I: Heavy rainfall. II: River flooded. ? Type A (I causes II)
+- I: Company profits decreased. II: CEO resigned. ? Could be A, B, or C ? depends on context
+- I: New tax policy announced. II: Stock market fell. ? Type A (I causes II)
 
 ### 6.6 Statement-Assumption
 
@@ -258,7 +258,7 @@ A problem situation is described, followed by proposed courses of action. Determ
 
 **Examples:**
 - Situation: Traffic congestion in the city center.
-- Action 1: Build more roads. (Feasible, but may not solve long-term — more roads can attract more traffic)
+- Action 1: Build more roads. (Feasible, but may not solve long-term ? more roads can attract more traffic)
 - Action 2: Improve public transportation. (Directly addresses root cause)
 - Action 3: Ban all private vehicles. (Impractical and extreme)
 
@@ -271,12 +271,12 @@ Six people (A, B, C, D, E, F) sit in a circle. A is between B and F. C is opposi
 **Solution:**
 
 1. Place B at top position
-2. C is opposite B — place C at bottom
-3. D is to immediate right of C — place D at bottom-right (clockwise from C)
-4. A is between B and F — places A and F around B
+2. C is opposite B ? place C at bottom
+3. D is to immediate right of C ? place D at bottom-right (clockwise from C)
+4. A is between B and F ? places A and F around B
 5. Fill remaining positions
 6. E takes the remaining seat
-7. Determine who is to left of E — depends on orientation (clockwise or anticlockwise "left")
+7. Determine who is to left of E ? depends on orientation (clockwise or anticlockwise "left")
 
 ### Example 2: Syllogism
 
@@ -292,7 +292,7 @@ Six people (A, B, C, D, E, F) sit in a circle. A is between B and F. C is opposi
 **Solution:**
 
 From Venn diagram:
-- All pens ⊆ pencils. No pencil ⟷ eraser. ⟹ No pen is an eraser. Conclusion I follows.
+- All pens ? pencils. No pencil ? eraser. ? No pen is an eraser. Conclusion I follows.
 - Erasers are a subset of sharpeners. No pencil is an eraser. But other sharpeners may or may not be pencils. So "Some sharpeners are not pencils" cannot be definitively concluded.
 
 **Answer:** Only conclusion I follows.
@@ -345,18 +345,18 @@ Step II: word1 word2 word5 word3 word4 (next largest moved to second last)
 | Puzzles | Constraint satisfaction | Draw tables, use reference points |
 | Syllogisms | Deductive logic | Venn diagrams for 2-3 sets |
 | Critical Reasoning | Argument analysis | Identify premise vs conclusion first |
-| Input-Output | Pattern detection | Find rule from step I → step II |
+| Input-Output | Pattern detection | Find rule from step I ? step II |
 | Cause-Effect | Causal analysis | Check for common cause first |
 | Statement-Assumption | Assumption identification | Negate to test necessity |
 | Course of Action | Decision evaluation | Check feasibility + relevance + authority |
 
 ### Exam Strategy for Advanced Reasoning
 
-1. **Time management:** Puzzles take the longest — solve last if time is short
+1. **Time management:** Puzzles take the longest ? solve last if time is short
 2. **Syllogisms:** Draw Venn diagrams for every question, even simple ones
-3. **Critical reasoning:** Read the argument twice — once for gist, once to separate premise from conclusion
+3. **Critical reasoning:** Read the argument twice ? once for gist, once to separate premise from conclusion
 4. **Input-Output:** Write the rule in words before applying to the question
-5. **Data sufficiency:** Never solve completely — stop as soon as sufficiency is determined
+5. **Data sufficiency:** Never solve completely ? stop as soon as sufficiency is determined
 6. **Multiple conclusions:** Evaluate each conclusion independently
 
 ### TypeScript: Puzzle Solver & Reasoning Toolkit
@@ -547,7 +547,7 @@ flowchart TD
     D -->|Parallel| I[Match Logical Structure]
     E --> J[Test: Does It Support Conclusion?]
     F --> K[Test: Does It Undermine Conclusion?]
-    G --> L[Test: Negate It — Does Argument Collapse?]
+    G --> L[Test: Negate It ? Does Argument Collapse?]
     H --> M[Name the Fallacy]
     I --> N[Compare Premise-Conclusion Pattern]
 ```
@@ -560,7 +560,7 @@ flowchart LR
     B --> C[Step II: 18 27 42 95 63 51]
     C --> D[Step III: 18 27 42 63 95 51]
     D --> E[Step IV: 18 27 42 51 63 95]
-    E --> F[Step V: Sorted — Stop]
+    E --> F[Step V: Sorted ? Stop]
     F --> G[Rule: Ascending order, one element per step]
 ```
 
@@ -593,7 +593,7 @@ for (const [person, floor] of [...floors.entries()].sort((a, b) => a[1] - b[1]))
 }
 ```
 
-### Additional Exercises (Level 3 — Advanced)
+### Additional Exercises (Level 3 ? Advanced)
 
 11. **Complex Puzzle:** Seven friends P, Q, R, S, T, U, V have different hobbies (Reading, Swimming, Dancing, Singing, Painting, Cooking, Traveling) and favorite colors (Red, Blue, Green, Yellow, White, Black, Purple). Given: The one who likes Reading likes Blue. Q likes Swimming but not Red. The Singer likes White. R and T like neither Cooking nor Painting. U is the Traveler and likes Yellow. The one who likes Green likes Dancing. The Cook does not like Red or Purple. Determine each person's hobby and color.
 
@@ -607,7 +607,7 @@ for (const [person, floor] of [...floors.entries()].sort((a, b) => a[1] - b[1]))
 
 ### Answer Key (Additional)
 
-11. P=Reading/Blue, Q=Swimming/Red, R=Singing/White, S=Dancing/Green, T=Painting/Purple, U=Traveling/Yellow, V=Cooking/Black | 12. Alphabetical by first letter, one word per step; Step V: "blue deep forest green ocean sky" | 13. Find argument with "All X are Y, Z is X, therefore Z is Y" structure | 14. I, II, and III all follow | 15. (a) Follow — directly addresses overcrowding; (b) Do not follow — penalizes commuters; (c) Follow — long-term solution; (d) Follow — reduces demand
+11. P=Reading/Blue, Q=Swimming/Red, R=Singing/White, S=Dancing/Green, T=Painting/Purple, U=Traveling/Yellow, V=Cooking/Black | 12. Alphabetical by first letter, one word per step; Step V: "blue deep forest green ocean sky" | 13. Find argument with "All X are Y, Z is X, therefore Z is Y" structure | 14. I, II, and III all follow | 15. (a) Follow ? directly addresses overcrowding; (b) Do not follow ? penalizes commuters; (c) Follow ? long-term solution; (d) Follow ? reduces demand
 
 ### TypeScript: Input-Output Rule Learner & Reasoning Analyzer
 
@@ -651,11 +651,11 @@ console.log("Reasoning:", CriticalReasoningEngine.analyze("All mammals are warm-
 console.log("CoA:", CriticalReasoningEngine.evaluateCourseOfAction("Increase train frequency", "Public transport is overcrowded"));
 ```
 
-// ─────────────────────────────────────────────────────
-// Data Sufficiency Checker — determines whether given
+// -----------------------------------------------------
+// Data Sufficiency Checker ? determines whether given
 // statements are sufficient to answer a quantitative
 // question (inspired by GMAT/aptitude test format).
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class DataSufficiencyChecker {
   static readonly SUFFICIENT = "Sufficient";
@@ -710,11 +710,11 @@ class DataSufficiencyChecker {
   }
 }
 
-// ─────────────────────────────────────────────────────
-// Critical Reasoning Argument Analyzer — breaks down
+// -----------------------------------------------------
+// Critical Reasoning Argument Analyzer ? breaks down
 // an argument into premise/conclusion structure and
 // identifies assumptions, strengths, and weaknesses.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class ArgumentAnalyzer {
   static analyze(argument: string): {
@@ -750,36 +750,36 @@ class ArgumentAnalyzer {
     for (const p of premises) {
       const lower = p.toLowerCase();
       if (lower.includes("all") || lower.includes("every") || lower.includes("none")) {
-        assumptions.push(`Universal claim in: "${p}" — may be overgeneralized`);
+        assumptions.push(`Universal claim in: "${p}" ? may be overgeneralized`);
       }
       if (lower.includes("always") || lower.includes("never")) {
-        assumptions.push(`Absolute statement in: "${p}" — rare exceptions may exist`);
+        assumptions.push(`Absolute statement in: "${p}" ? rare exceptions may exist`);
       }
       if (lower.includes("cause") || lower.includes("leads to") || lower.includes("results in")) {
-        assumptions.push(`Causal claim in: "${p}" — correlation may not equal causation`);
+        assumptions.push(`Causal claim in: "${p}" ? correlation may not equal causation`);
       }
     }
 
     // Identify weak points
     if (premises.length < 2) {
-      weakPoints.push("Only one premise supporting the conclusion — argument may be weak.");
+      weakPoints.push("Only one premise supporting the conclusion ? argument may be weak.");
     }
     if (premises.some(p => /some|many|several|few/i.test(p))) {
       weakPoints.push("Vague quantifiers (some/many) weaken the argument's force.");
     }
     if (premises.some(p => /survey|study|research/i.test(p)) && !premises.some(p => /sample|size|representative|random/i.test(p))) {
-      weakPoints.push("Study cited without sample size or methodology — may not be representative.");
+      weakPoints.push("Study cited without sample size or methodology ? may not be representative.");
     }
 
     return { premises, conclusion, assumptions, weakPoints };
   }
 }
 
-// ─────────────────────────────────────────────────────
-// Input-Output Pattern Engine — applies a set of
+// -----------------------------------------------------
+// Input-Output Pattern Engine ? applies a set of
 // transformation rules to an input sequence to produce
 // the output, mimicking machine input-output problems.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class InputOutputEngine {
   static applyRules(input: number[], rules: Array<(arr: number[]) => number[]>): number[] {
@@ -814,7 +814,7 @@ const avg = (s1: number | null, s2: number | null) => {
 console.log(DataSufficiencyChecker.evaluate(q, stmt1, stmt2, avg).reasoning.join("\n"));
 
 const arg = "All mammals are warm-blooded. Whales are mammals. Therefore, whales are warm-blooded.";
-console.log("\n" + "═".repeat(40));
+console.log("\n" + "-".repeat(40));
 console.log("Argument Analysis:");
 const analysis = ArgumentAnalyzer.analyze(arg);
 console.log("Premises:", analysis.premises.join(" | "));
@@ -824,9 +824,62 @@ console.log("Weak points:", analysis.weakPoints.join(" | "));
 
 const input = [4, 7, 2, 9, 1, 5];
 const output = InputOutputEngine.applyRules(input, [InputOutputEngine.sortAsc, InputOutputEngine.swapAdjacent]);
-console.log(`\nInput-output: [${input}] → [${output}]`);
+console.log(`\nInput-output: [${input}] ? [${output}]`);
 ```
 
+
+// Chapter 6 - quantitative-aptitude implementation
+const ITEMS = { count: 10, topic: 'quantitative-aptitude', version: '1.0' }
+function processItem(item: string): string { return item.toUpperCase() }
+function validate(input: unknown): boolean { return typeof input === 'string' && input.length > 0 }
+function log(msg: string): void { console.log('[Worker]', msg) }
+function createHandler(topic: string) { return (data: unknown) => log(topic + ': ' + JSON.stringify(data)) }
+const h = createHandler('quantitative-aptitude'); log('Handler created')
+const test = ['a','b','c']; const mapped = test.map(processItem)
+log('Mapped: ' + mapped.join(','))
+export { processItem, validate, createHandler, ITEMS }
+
+// advanced reasoning
+// aptitude-reasoning implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'advanced reasoning', data: { topic: 'aptitude-reasoning' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Puzzles: organize data systematically; use grids/tables
@@ -839,7 +892,7 @@ console.log(`\nInput-output: [${input}] → [${output}]`);
 
 ## Exercises
 
-### Level 1 — Basic
+### Level 1 ? Basic
 
 1. **Syllogism:** All cats are mammals. All mammals are animals. Conclusion: All cats are animals. Follows?
 
@@ -847,7 +900,7 @@ console.log(`\nInput-output: [${input}] → [${output}]`);
 
 3. **Statement-Assumption:** Statement: "This brand is the best in the market." Assumption: There are other brands in the market. Valid?
 
-### Level 2 — Medium
+### Level 2 ? Medium
 
 4. **Seating Arrangement:** A, B, C, D, E sit in a row facing north. C is at the center. B is to the immediate left of C. A is to the extreme left. D is between C and E. Who is at extreme right?
 
@@ -855,7 +908,7 @@ console.log(`\nInput-output: [${input}] → [${output}]`);
 
 6. **Critical Reasoning (Strengthen):** "Studying abroad improves career prospects." How to strengthen?
 
-### Level 3 — Advanced
+### Level 3 ? Advanced
 
 7. **Multi-Floor Puzzle:** 8 people on 8 floors (1-8). Mix of constraints: A lives two floors above B, C lives on an even floor, D lives immediately below E, etc. Determine floor assignments.
 
@@ -867,4 +920,4 @@ console.log(`\nInput-output: [${input}] → [${output}]`);
 
 ### Answer Key
 
-1. Yes | 2. Type C (common cause: weather) | 3. Yes (valid assumption — comparison implies alternatives exist) | 4. E | 5. Check ascending order pattern per step | 6. Show statistical evidence of higher salaries | 8-9. Apply rules systematically
+1. Yes | 2. Type C (common cause: weather) | 3. Yes (valid assumption ? comparison implies alternatives exist) | 4. E | 5. Check ascending order pattern per step | 6. Show statistical evidence of higher salaries | 8-9. Apply rules systematically

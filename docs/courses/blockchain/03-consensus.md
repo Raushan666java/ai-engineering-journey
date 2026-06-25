@@ -24,7 +24,7 @@
 | PBFT | Multi-round voting protocol | Near-instant finality, suited for permissioned networks |
 | DPoS | Delegated voting for block producers | Faster than PoW, semi-centralized |
 | Finality | Probabilistic (PoW) vs Absolute (PBFT) | Affects how long to wait for confirmation |
-| Difficulty Adjustment | Network adjusts target to maintain consistent block time | Self-regulating â€” more miners = harder puzzles |
+| Difficulty Adjustment | Network adjusts target to maintain consistent block time | Self-regulating — more miners = harder puzzles |
 
 ## Chapter Roadmap
 
@@ -197,9 +197,9 @@ sequenceDiagram
 2. **Prepare:** Each backup validates the pre-prepare, then broadcasts a prepare message. After receiving `2f` prepare messages from different replicas (including the primary), the replica enters the prepared state.
 3. **Commit:** Each replica broadcasts a commit message. After receiving `2f+1` commit messages (including its own), the replica executes the request and sends the reply to the client.
 
-**Requirements:** `n > 3f` â€” for 4 nodes, tolerate 1 fault; for 7 nodes, tolerate 2 faults.
+**Requirements:** `n > 3f` — for 4 nodes, tolerate 1 fault; for 7 nodes, tolerate 2 faults.
 
-PBFT provides **instant finality** â€” once a block is committed, it cannot be reverted. However, communication complexity is `O(n^2)`, limiting scalability to dozens of nodes.
+PBFT provides **instant finality** — once a block is committed, it cannot be reverted. However, communication complexity is `O(n^2)`, limiting scalability to dozens of nodes.
 
 ### Raft (Crash Fault Tolerant)
 
@@ -412,7 +412,7 @@ function processCheckpoint(
 
 <details>
 <summary>Answer</summary>
-**B) By requiring computational work (hash power) to participate in block creation.** An attacker would need to control more than 50% of the network's total hash rate, which requires enormous hardware and electricity investment â€” impractical for most adversaries.
+**B) By requiring computational work (hash power) to participate in block creation.** An attacker would need to control more than 50% of the network's total hash rate, which requires enormous hardware and electricity investment — impractical for most adversaries.
 </details>
 
 2. What is the key economic difference between PoW and PoS security?
@@ -556,8 +556,8 @@ const comparisonTable: ConsensusComparison[] = [
   { property: "Finality", nakamotoConsensus: "Probabilistic (6+ blocks)", pbft: "Instant (after commit phase)" },
   { property: "Node Identity", nakamotoConsensus: "Permissionless (anonymous)", pbft: "Permissioned (known validators)" },
   { property: "Leader Selection", nakamotoConsensus: "Hash power / stake lottery", pbft: "Round-robin by view number" },
-  { property: "Communication", nakamotoConsensus: "Gossip (O(n))", pbft: "All-to-all (O(nÂ²))" },
-  { property: "Fault Tolerance", nakamotoConsensus: "â‰¤50% hash power / stake", pbft: "â‰¤33% Byzantine replicas" },
+  { property: "Communication", nakamotoConsensus: "Gossip (O(n))", pbft: "All-to-all (O(n²))" },
+  { property: "Fault Tolerance", nakamotoConsensus: "=50% hash power / stake", pbft: "=33% Byzantine replicas" },
   { property: "Energy Cost", nakamotoConsensus: "Very high (PoW) / Low (PoS)", pbft: "Low (no computation race)" },
   { property: "Throughput", nakamotoConsensus: "Low to moderate", pbft: "High (thousands TPS)" },
   { property: "Scalability (nodes)", nakamotoConsensus: "Thousands to millions", pbft: "Dozens to low hundreds" },
@@ -816,6 +816,48 @@ dpos.vote('v1', 100, 'd1'); dpos.vote('v2', 200, 'd2'); dpos.vote('v3', 50, 'd1'
 console.log(`DPoS elected: ${dpos.elect()}`);
 ```
 
+
+// consensus
+// distributed-ledger-crypto implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'consensus', data: { topic: 'distributed-ledger-crypto' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Consensus mechanisms enable distributed nodes to agree on the state of a ledger.
@@ -833,9 +875,9 @@ console.log(`DPoS elected: ${dpos.elect()}`);
 
 1. Wait for 6+ block confirmations on Bitcoin PoW to achieve probabilistic finality (~1 hour).
 2. For enterprise, prefer BFT or Raft consensus for instant finality and high throughput.
-3. PoS slashing conditions determine validator behavior â€” study them before staking.
+3. PoS slashing conditions determine validator behavior — study them before staking.
 4. Energy comparisons between consensus mechanisms differ by orders of magnitude.
-5. No single consensus mechanism is optimal for all use cases â€” choose based on trust assumptions, throughput needs, and finality requirements.
+5. No single consensus mechanism is optimal for all use cases — choose based on trust assumptions, throughput needs, and finality requirements.
 
 ---
 

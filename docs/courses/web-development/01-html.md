@@ -1,4 +1,4 @@
-# Chapter 1 â€” HTML5
+# Chapter 1 — HTML5
 
 > **Next:** [02-css](./02-css.md)
 
@@ -62,13 +62,13 @@ HTML5 introduced a set of landmark elements that replace the generic `<div>`-bas
 
 The primary semantic landmarks are:
 
-- `<header>` â€” Introductory content, navigation links, branding, or heading group for a page or section.
-- `<nav>` â€” A block of navigation links. Documents may contain multiple `<nav>` elements (e.g., primary nav, table of contents, breadcrumbs).
-- `<main>` â€” The dominant content of the `<body>`. A document must have exactly one `<main>` element, visible and not hidden via `display: none` or `aria-hidden`.
-- `<section>` â€” A thematic grouping of content, typically introduced with a heading. Not a generic container; use `<div>` when no semantic relationship exists.
-- `<article>` â€” A self-contained composition that is independently distributable or reusable (forum post, news story, blog entry, comment).
-- `<aside>` â€” Content tangentially related to the surrounding content, such as sidebars, pull quotes, or advertising.
-- `<footer>` â€” Footer for its nearest ancestor sectioning content; typically contains author info, copyright, or related links.
+- `<header>` — Introductory content, navigation links, branding, or heading group for a page or section.
+- `<nav>` — A block of navigation links. Documents may contain multiple `<nav>` elements (e.g., primary nav, table of contents, breadcrumbs).
+- `<main>` — The dominant content of the `<body>`. A document must have exactly one `<main>` element, visible and not hidden via `display: none` or `aria-hidden`.
+- `<section>` — A thematic grouping of content, typically introduced with a heading. Not a generic container; use `<div>` when no semantic relationship exists.
+- `<article>` — A self-contained composition that is independently distributable or reusable (forum post, news story, blog entry, comment).
+- `<aside>` — Content tangentially related to the surrounding content, such as sidebars, pull quotes, or advertising.
+- `<footer>` — Footer for its nearest ancestor sectioning content; typically contains author info, copyright, or related links.
 
 A typical document skeleton:
 
@@ -188,7 +188,7 @@ HTML5 provides native elements for embedding media without third-party plugins.
 </video>
 ```
 
-The `<track>` element supports `kind` values of `captions`, `subtitles`, `descriptions`, `chapters`, and `metadata` â€” essential for accessibility and internationalization.
+The `<track>` element supports `kind` values of `captions`, `subtitles`, `descriptions`, `chapters`, and `metadata` — essential for accessibility and internationalization.
 
 **Canvas:**
 
@@ -405,14 +405,14 @@ const formatter = new Intl.DateTimeFormat("fr-FR", {
   dateStyle: "full",
   timeStyle: "short",
 });
-console.log(formatter.format(date)); // "mercredi 24 juin 2026 à 14:30"
+console.log(formatter.format(date)); // "mercredi 24 juin 2026 � 14:30"
 
 // Intl.NumberFormat for currency
 const price = new Intl.NumberFormat("de-DE", {
   style: "currency",
   currency: "EUR",
 }).format(1234.56);
-console.log(price); // "1.234,56 €"
+console.log(price); // "1.234,56 �"
 
 // Plural rules
 const pluralRules = new Intl.PluralRules("en-US");
@@ -491,7 +491,7 @@ function onDrop(event) {
 > Always use `label` elements with `for` attributes on form inputs to ensure screen-reader accessibility.
 
 > [!REMEMBER]
-> A valid HTML document must have exactly one `<main>` element per page — never duplicate it.
+> A valid HTML document must have exactly one `<main>` element per page � never duplicate it.
 
 
 
@@ -538,7 +538,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**B) `<main>` — a document must have exactly one visible `<main>` element.**
+**B) `<main>` � a document must have exactly one visible `<main>` element.**
 
 </details>
 
@@ -551,7 +551,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**C) `pattern` — the value is matched against the given regular expression.**
+**C) `pattern` � the value is matched against the given regular expression.**
 
 </details>
 
@@ -564,7 +564,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**D) Both B and C — `localStorage` and persistent cookies survive browser restarts.**
+**D) Both B and C � `localStorage` and persistent cookies survive browser restarts.**
 
 </details>
 
@@ -612,7 +612,7 @@ class HTMLValidator {
     if (!levels.length) return "No headings";
     let outline = "", prev = 0;
     levels.forEach(l => {
-      if (l > prev + 1) outline += "⚠ Skipped level\n";
+      if (l > prev + 1) outline += "? Skipped level\n";
       outline += `${"  ".repeat(l - 1)}H${l}\n`;
       prev = l;
     });
@@ -686,7 +686,7 @@ class HTMLAnalyzer {
             const level = parseInt(h[1]);
             const text = h[3].replace(/<[^>]*>/g, "").trim();
             const indent = "  ".repeat(Math.max(0, level - 1));
-            result += `${indent}${"•".repeat(level)} ${text}\n`;
+            result += `${indent}${"�".repeat(level)} ${text}\n`;
             prevLevel = level;
         }
         return result;
@@ -733,6 +733,48 @@ console.log("Contrast ratio #fff/#000:", HTMLAnalyzer.checkColorContrast("#fff",
 console.log("Contrast ratio #aaa/#fff:", HTMLAnalyzer.checkColorContrast("#aaa", "#fff").toFixed(2));
 ```
 
+
+// html
+// fullstack-frontend-backend implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'html', data: { topic: 'fullstack-frontend-backend' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 > **One-Sentence Takeaway:** Meta tags and Open Graph data control how content appears in search results and social media.
@@ -757,7 +799,7 @@ console.log("Contrast ratio #aaa/#fff:", HTMLAnalyzer.checkColorContrast("#aaa",
 
 ### Application Problems
 
-5. Write the HTML for a product review form with fields for name, rating (1â€“5), email, and review text. Include appropriate validation and accessibility attributes.
+5. Write the HTML for a product review form with fields for name, rating (1–5), email, and review text. Include appropriate validation and accessibility attributes.
 6. Build a page layout using `<header>`, `<nav>`, `<main>`, `<article>`, `<aside>`, and `<footer>` that represents a blog post with a sidebar containing related links.
 7. Implement an audio player with fallback text and both MP3 and OGG source formats.
 
@@ -765,11 +807,11 @@ console.log("Contrast ratio #aaa/#fff:", HTMLAnalyzer.checkColorContrast("#aaa",
 
 ### Practical Takeaways
 
-1. **Use semantic elements by default** — reach for `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>` before `<div>`. They improve SEO, accessibility, and code readability.
-2. **Always include `alt` text** — every `<img>` needs an `alt` attribute. Use `alt=""` for decorative images so screen readers ignore them.
-3. **Validate forms with HTML attributes first** — `required`, `pattern`, `min`, `max` provide zero-JS validation. Enhance with JavaScript, never replace.
-4. **Use `<picture>` for responsive images** — serve WebP/AVIF with JPEG fallback and different resolutions per viewport for bandwidth savings.
-5. **Add structured data** — Schema.org microdata or JSON-LD helps search engines display rich snippets, improving click-through rates.
+1. **Use semantic elements by default** � reach for `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>` before `<div>`. They improve SEO, accessibility, and code readability.
+2. **Always include `alt` text** � every `<img>` needs an `alt` attribute. Use `alt=""` for decorative images so screen readers ignore them.
+3. **Validate forms with HTML attributes first** � `required`, `pattern`, `min`, `max` provide zero-JS validation. Enhance with JavaScript, never replace.
+4. **Use `<picture>` for responsive images** � serve WebP/AVIF with JPEG fallback and different resolutions per viewport for bandwidth savings.
+5. **Add structured data** � Schema.org microdata or JSON-LD helps search engines display rich snippets, improving click-through rates.
 
 ### Application Problems
 

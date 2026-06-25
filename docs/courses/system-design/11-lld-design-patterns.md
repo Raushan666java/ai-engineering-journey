@@ -30,16 +30,16 @@ flowchart LR
 ```
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 ### What Are Design Patterns?
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 Design patterns are reusable, battle-tested solutions to recurring design problems. They are not code templates but rather formalized best practices that provide a shared vocabulary for designers. The Gang of Four (GoF) book "Design Patterns: Elements of Reusable Object-Oriented Software" (1994) cataloged 23 patterns into three categories: Creational, Structural, and Behavioral.
 
 A pattern has four essential elements: a **name** (shared vocabulary), a **problem** (when to apply it), a **solution** (the abstraction and relationships), and **consequences** (trade-offs and results).
@@ -100,11 +100,11 @@ pizza = PizzaBuilder().set_size("large").add_cheese().add_topping("pepperoni").b
 
 ### Structural Patterns
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
-Structural patterns concern class and object compositionâ€”how entities use each other to form larger structures.
+Structural patterns concern class and object composition�how entities use each other to form larger structures.
 
 **Adapter** converts the interface of a class into another interface that clients expect. A **class adapter** uses multiple inheritance; an **object adapter** uses composition. The object adapter is more flexible because it adapts not just a class but an entire hierarchy.
 
@@ -125,7 +125,7 @@ def compute(x: int) -> int:
     return x * 2
 ```
 
-**Facade** provides a unified interface to a set of interfaces in a subsystem. It defines a higher-level interface that makes the subsystem easier to use. The Facade does not encapsulate the subsystemâ€”it merely provides a simplified interface.
+**Facade** provides a unified interface to a set of interfaces in a subsystem. It defines a higher-level interface that makes the subsystem easier to use. The Facade does not encapsulate the subsystem�it merely provides a simplified interface.
 
 **Proxy** provides a surrogate or placeholder for another object to control access to it. Variants include:
 - **Virtual proxy**: delays expensive object creation until it is needed.
@@ -159,13 +159,13 @@ class EventBus:
 
 **State** allows an object to alter its behavior when its internal state changes. The object appears to change its class. Each state is a separate class implementing a common interface; transitions are handled within state classes.
 
-**Template Method** defines the skeleton of an algorithm in a base class, deferring some steps to subclasses. Subclasses redefine certain steps without changing the algorithm's structure. It is one of the most common patternsâ€”essentially "Hollywood Principle": don't call us, we'll call you.
+**Template Method** defines the skeleton of an algorithm in a base class, deferring some steps to subclasses. Subclasses redefine certain steps without changing the algorithm's structure. It is one of the most common patterns�essentially "Hollywood Principle": don't call us, we'll call you.
 
 **Chain of Responsibility** passes a request along a chain of handlers. Each handler decides either to process the request or to pass it to the next handler in the chain. Middleware pipelines in web frameworks (Express.js, ASP.NET Core) are textbook examples.
 
 **Iterator** provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation. Python's `__iter__` and `__next__` protocols make any class iterable.
 
-**Mediator** defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping objects from referring to each other explicitly. An air traffic control tower is the real-world analogyâ€”planes communicate through the tower, not directly with each other.
+**Mediator** defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping objects from referring to each other explicitly. An air traffic control tower is the real-world analogy�planes communicate through the tower, not directly with each other.
 
 ### Concurrency Patterns
 
@@ -187,7 +187,7 @@ Anti-patterns are common but ineffective solutions that appear attractive at fir
 
 **God Object** (aka Blob): A single class that knows too much or does too much. Symptoms include hundreds of methods and fields across dozens of responsibilities. Resolution: decompose by SRP.
 
-**Spaghetti Code**: Code with an unstructured, tangled control flow. Characterized by extensive use of `goto` (or its equivalentsâ€”deeply nested conditionals, exception-based control flow). Resolution: apply structured programming and extract methods.
+**Spaghetti Code**: Code with an unstructured, tangled control flow. Characterized by extensive use of `goto` (or its equivalents�deeply nested conditionals, exception-based control flow). Resolution: apply structured programming and extract methods.
 
 **Copy-Paste Programming**: Duplicating code instead of abstracting common behavior. Leads to inconsistent fixes (fixed in one copy but not another). Resolution: extract duplicated logic into shared methods or classes.
 
@@ -217,7 +217,7 @@ Anti-patterns are common but ineffective solutions that appear attractive at fir
 
 ---
 ## Examples
-### Example 1: Factory Method â€” Document Creation
+### Example 1: Factory Method � Document Creation
 
 A document editor creates different types of documents. The editor should not know the concrete document type at compile time.
 
@@ -256,7 +256,7 @@ class SpreadsheetApp(Application):
         return SpreadsheetDocument()
 ```
 
-### Example 2: Decorator â€” Adding Compression and Encryption to a Data Stream
+### Example 2: Decorator � Adding Compression and Encryption to a Data Stream
 
 The base component reads/writes raw data. Decorators add compression and encryption without modifying the base class.
 
@@ -309,7 +309,7 @@ class EncryptionDecorator(DataSourceDecorator):
         raw = super().read()
         return raw.replace("[ENCRYPTED]", "").replace("[/ENCRYPTED]", "")
 
-# Usage â€” compose decorators at runtime
+# Usage � compose decorators at runtime
 source = FileDataSource("data.txt")
 source = CompressionDecorator(source)
 source = EncryptionDecorator(source)
@@ -319,7 +319,7 @@ print(source.read())  # Hello World
 
 Decorators can be stacked in any order, providing enormous flexibility at composition time.
 
-### Example 3: Command Pattern â€” Undo in a Text Editor
+### Example 3: Command Pattern � Undo in a Text Editor
 
 Each operation is a command object that knows how to execute and undo itself.
 
@@ -378,7 +378,7 @@ editor.undo()  # Removes "World"
 print(editor._buffer)  # ['Hello']
 ```
 
-### Example 4: Observer â€” Stock Price Notification
+### Example 4: Observer � Stock Price Notification
 
 Multiple displays observe stock price changes without the stock exchange knowing about them.
 
@@ -421,7 +421,7 @@ exchange.set_price(155.0)
 # Alert: Price threshold exceeded! $155.00
 ```
 
-### Example 5: State Pattern â€” Vending Machine
+### Example 5: State Pattern � Vending Machine
 
 A vending machine behaves differently based on whether it is idle, has money inserted, or is dispensing a product.
 
@@ -687,6 +687,123 @@ class CompressionDecorator implements DataSource {
 }
 ```
 
+
+### Implementation: Design Patterns and Architecture
+
+```typescript
+abstract class Creator { abstract factoryMethod(): Product; operation(): string { return `Creator: ${this.factoryMethod().operation()}`; } }
+class ConcreteCreatorA extends Creator { factoryMethod(): Product { return new ConcreteProductA(); } }
+class ConcreteCreatorB extends Creator { factoryMethod(): Product { return new ConcreteProductB(); } }
+interface Product { operation(): string; }
+class ConcreteProductA implements Product { operation(): string { return "Product A"; } }
+class ConcreteProductB implements Product { operation(): string { return "Product B"; } }
+class BuilderPattern { private parts: string[] = []; add(part: string): this { this.parts.push(part); return this; } build(): string { const r = this.parts.join(" -> "); this.parts = []; return r; } }
+class SingletonClass { private static instance: SingletonClass; private constructor() { this.data = Math.random(); } readonly data: number; static getInstance(): SingletonClass { if (!SingletonClass.instance) SingletonClass.instance = new SingletonClass(); return SingletonClass.instance; } }
+class ObserverPattern { private subs = new Map<string, Set<(data: any) => void>>();
+  subscribe(event: string, cb: (data: any) => void): void { if (!this.subs.has(event)) this.subs.set(event, new Set()); this.subs.get(event)!.add(cb); }
+  emit(event: string, data: any): void { this.subs.get(event)?.forEach(cb => cb(data)); }
+  unsubscribe(event: string, cb: (data: any) => void): void { this.subs.get(event)?.delete(cb); }
+}
+class StrategyPattern { constructor(private fn: (a: number) => number) {} execute(value: number): number { return this.fn(value); } setStrategy(fn: (a: number) => number): void { this.fn = fn; } }
+class DecoratorPattern { operation(): string { return "base"; } }
+class DecoratedA extends DecoratorPattern { constructor(private comp: DecoratorPattern) { super(); } operation(): string { return `A(${this.comp.operation()})`; } }
+class FacadePattern { private sub1 = new SubSystemA(); private sub2 = new SubSystemB(); execute(): string { return `${this.sub1.prepare()} -> ${this.sub2.finalize()}`; } }
+class SubSystemA { prepare(): string { return "SubA ready"; } }
+class SubSystemB { finalize(): string { return "SubB done"; } }
+class CommandPattern { private history: string[] = []; execute(cmd: string): void { this.history.push(cmd); } undo(): string | undefined { return this.history.pop(); } getHistory(): string[] { return [...this.history]; } }
+```
+
+// lld design patterns
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'lld design patterns', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// lld design patterns - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'lld design patterns' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 - Creational patterns abstract object creation: Singleton (single instance), Factory Method (deferred creation), Abstract Factory (product families), Builder (stepwise construction), Prototype (cloning).
 - Structural patterns compose objects: Adapter (interface translation), Decorator (dynamic responsibility), Facade (simplified interface), Proxy (controlled access), Composite (uniform tree handling).

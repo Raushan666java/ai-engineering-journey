@@ -23,12 +23,12 @@
 |-------|-------------|-------------------|
 | Curse of Dimensionality | As dimensions increase, data becomes sparse and distances become less meaningful | Reduce dimensions before modeling to avoid overfitting and improve performance |
 | Principal Component Analysis | PCA finds directions of maximum variance in the data | Use PCA for feature extraction, noise reduction, and visualization |
-| Explained Variance Ratio | Measures how much information each principal component retains | Choose enough components to capture 90–95% of total variance |
+| Explained Variance Ratio | Measures how much information each principal component retains | Choose enough components to capture 90?95% of total variance |
 | Eigenvectors & Eigenvalues | Eigenvectors define the new axes; eigenvalues measure variance along each axis | Sort by eigenvalue magnitude to identify the most important components |
 | t-SNE | Non-linear technique preserving local neighborhood structure | Best for visualization (2D/3D) of high-dimensional data, not for preprocessing |
 | UMAP | Non-linear technique balancing local and global structure | Faster than t-SNE; scales better to large datasets |
 | Feature Selection vs. Extraction | Selection chooses existing features; extraction creates new ones | Use extraction (PCA) when features are correlated; use selection for interpretability |
-| Autoencoders | Neural network learning compressed latent representations | Captures non-linear manifolds — useful for images, text embeddings |
+| Autoencoders | Neural network learning compressed latent representations | Captures non-linear manifolds ? useful for images, text embeddings |
 
 ## Chapter Roadmap
 
@@ -50,7 +50,7 @@ flowchart LR
 
 ### The Curse of Dimensionality
 
-As the number of features (dimensions) increases, the volume of the feature space grows exponentially. For a dataset with uniform distribution in $d$ dimensions, the fraction of points within a hypercube of side $\epsilon$ is only $\epsilon^d$ — this vanishes exponentially as $d$ grows. Distances between any two points converge to the same value, making nearest-neighbor and distance-based algorithms unreliable. Dimensionality reduction mitigates this by projecting data into a lower-dimensional subspace that retains the most meaningful structure.
+As the number of features (dimensions) increases, the volume of the feature space grows exponentially. For a dataset with uniform distribution in $d$ dimensions, the fraction of points within a hypercube of side $\epsilon$ is only $\epsilon^d$ ? this vanishes exponentially as $d$ grows. Distances between any two points converge to the same value, making nearest-neighbor and distance-based algorithms unreliable. Dimensionality reduction mitigates this by projecting data into a lower-dimensional subspace that retains the most meaningful structure.
 
 ### Principal Component Analysis (PCA)
 
@@ -100,7 +100,7 @@ $$
 \frac{\lambda_j}{\sum_{i=1}^{d} \lambda_i}
 $$
 
-The cumulative ratio for the top $k$ components tells us the fraction of total variance preserved. This directly guides the choice of $k$ — we typically select $k$ such that the cumulative ratio exceeds 0.90 or 0.95.
+The cumulative ratio for the top $k$ components tells us the fraction of total variance preserved. This directly guides the choice of $k$ ? we typically select $k$ such that the cumulative ratio exceeds 0.90 or 0.95.
 
 ```text
 Eigenvalues:       [10.0, 5.0, 2.0, 1.0, 0.5]
@@ -129,14 +129,14 @@ bar
 flowchart LR
     subgraph SVD["Singular Value Decomposition"]
         direction LR
-        A["X (n×d)"] --> B["U (n×n)"]
-        A --> C["Σ (n×d)"]
-        A --> D["V^T (d×d)"]
+        A["X (n?d)"] --> B["U (n?n)"]
+        A --> C["S (n?d)"]
+        A --> D["V^T (d?d)"]
     end
     B --> E["Left singular vectors<br/>(columns of U)"]
-    C --> F["Singular values σ_i<br/>on diagonal"]
+    C --> F["Singular values s_i<br/>on diagonal"]
     D --> G["Right singular vectors<br/>(columns of V)"]
-    F --> H["σ_i² = λ_i<br/>(eigenvalues of cov)"]
+    F --> H["s_i? = ?_i<br/>(eigenvalues of cov)"]
     G --> I["Principal directions<br/>(eigenvectors of cov)"]
 ```
 
@@ -148,9 +148,9 @@ $$
 X = U \Sigma V^T
 $$
 
-- $U \in \mathbb{R}^{n \times n}$ — orthonormal columns (left singular vectors)
-- $\Sigma \in \mathbb{R}^{n \times d}$ — diagonal matrix of singular values $\sigma_1 \ge \sigma_2 \ge \cdots \ge 0$
-- $V \in \mathbb{R}^{d \times d}$ — orthonormal columns (right singular vectors)
+- $U \in \mathbb{R}^{n \times n}$ ? orthonormal columns (left singular vectors)
+- $\Sigma \in \mathbb{R}^{n \times d}$ ? diagonal matrix of singular values $\sigma_1 \ge \sigma_2 \ge \cdots \ge 0$
+- $V \in \mathbb{R}^{d \times d}$ ? orthonormal columns (right singular vectors)
 
 **Key relationship**: The covariance matrix eigendecomposition connects directly to SVD:
 
@@ -164,7 +164,7 @@ Thus:
 
 **Advantages of SVD over eigendecomposition**:
 - Numerically more stable (avoids forming $X^T X$, which squares the condition number)
-- Works directly on the data matrix — no covariance matrix needed
+- Works directly on the data matrix ? no covariance matrix needed
 - Handles rectangular and sparse matrices efficiently
 - Truncated SVD (keeping only top $k$ singular values) is faster for large $d$
 
@@ -178,7 +178,7 @@ $$
 p_{j|i} = \frac{\exp(-\|x_i - x_j\|^2 / 2\sigma_i^2)}{\sum_{k \ne i} \exp(-\|x_i - x_k\|^2 / 2\sigma_i^2)}
 $$
 
-The perplexity parameter (typically 5–50) controls $\sigma_i$ by specifying the effective number of neighbors.
+The perplexity parameter (typically 5?50) controls $\sigma_i$ by specifying the effective number of neighbors.
 
 **Low-dimensional space**: A Student t-distribution with one degree of freedom (Cauchy) is used:
 
@@ -186,9 +186,9 @@ $$
 q_{ij} = \frac{(1 + \|y_i - y_j\|^2)^{-1}}{\sum_{k \ne l} (1 + \|y_k - y_l\|^2)^{-1}}
 $$
 
-The heavy tails of the t-distribution alleviate the "crowding problem" — moderate distances in high-dimension are mapped to larger distances in low-dimension, preventing points from collapsing into each other.
+The heavy tails of the t-distribution alleviate the "crowding problem" ? moderate distances in high-dimension are mapped to larger distances in low-dimension, preventing points from collapsing into each other.
 
-**Optimization**: t-SNE minimizes the Kullback–Leibler divergence:
+**Optimization**: t-SNE minimizes the Kullback?Leibler divergence:
 
 $$
 KL(P \| Q) = \sum_{i \ne j} p_{ij} \log \frac{p_{ij}}{q_{ij}}
@@ -208,13 +208,13 @@ flowchart TB
         direction LR
         A1["Global variance<br/>maximization"] --> B1["Preserves large<br/>pairwise distances"]
         B1 --> C1["Deterministic"]
-        C1 --> D1["Fast, O(d²n)"]
+        C1 --> D1["Fast, O(d?n)"]
     end
     subgraph TSNE["t-SNE (Non-linear)"]
         direction LR
         A2["Local neighbor<br/>probabilities"] --> B2["Preserves small<br/>pairwise distances"]
         B2 --> C2["Stochastic"]
-        C2 --> D2["Slow, O(n²)"]
+        C2 --> D2["Slow, O(n?)"]
     end
     A1 -.-> A2
 ```
@@ -246,11 +246,11 @@ The first term encourages preserving the presence of edges (local structure), wh
 
 | Aspect | t-SNE | UMAP |
 |--------|-------|------|
-| Speed | $O(n^2)$ — slow on large datasets | $O(n \log n)$ with approximate neighbors |
+| Speed | $O(n^2)$ ? slow on large datasets | $O(n \log n)$ with approximate neighbors |
 | Global structure | Poorly preserved | Better preserved (second term in loss) |
 | Scalability | Struggles above 100K points | Handles millions of points |
 | Interpretability | Sensitive to perplexity | Robust to n_neighbors choice |
-| Determinism | No — multiple runs differ | Yes — fixed seed gives same output |
+| Determinism | No ? multiple runs differ | Yes ? fixed seed gives same output |
 
 ### Feature Selection Methods
 
@@ -322,7 +322,7 @@ $$
 \mathcal{L}(x, \hat{x}) = \|x - \hat{x}\|_2^2
 $$
 
-With linear activation functions ($\sigma$ = identity) and mean squared error loss, the autoencoder learns the same subspace as PCA. The advantage comes from non-linear activations, which allow the network to unfold curved manifolds — something PCA cannot capture.
+With linear activation functions ($\sigma$ = identity) and mean squared error loss, the autoencoder learns the same subspace as PCA. The advantage comes from non-linear activations, which allow the network to unfold curved manifolds ? something PCA cannot capture.
 
 **Variants**:
 - **Denoising Autoencoder**: Corrupt input during training; forces robust latent representations
@@ -337,7 +337,7 @@ With linear activation functions ($\sigma$ = identity) and mean squared error lo
 
 > **Pro Tip:** Always standardize your data (zero mean, unit variance) before applying PCA. If features are on different scales, the components will be dominated by the features with the largest absolute values rather than the most informative ones.
 
-> **Remember:** The explained variance ratio is your guide to choosing the number of components. Plot the cumulative explained variance and look for the point where the curve flattens — this is your "variance elbow."
+> **Remember:** The explained variance ratio is your guide to choosing the number of components. Plot the cumulative explained variance and look for the point where the curve flattens ? this is your "variance elbow."
 
 > **Warning:** PCA assumes linear relationships between features. If your data lies on a non-linear manifold (e.g., a curved surface), t-SNE or UMAP will produce more meaningful low-dimensional representations than PCA.
 
@@ -351,7 +351,7 @@ Reducing 4 dimensions to 2 using a custom PCA implementation.
 
 ```typescript
 /**
- * StandardScaler — centers and scales each feature to unit variance.
+ * StandardScaler ? centers and scales each feature to unit variance.
  */
 class StandardScaler {
   private means: number[] = [];
@@ -376,7 +376,7 @@ class StandardScaler {
 }
 
 /**
- * PCA — principal component analysis via covariance eigendecomposition.
+ * PCA ? principal component analysis via covariance eigendecomposition.
  */
 class PCA {
   private components: number[][] = [];
@@ -531,11 +531,11 @@ console.log(`Components for 95% variance: ${k95}`);
 console.log(`Compression ratio: ${(64 / k95).toFixed(1)}x`);
 ```
 
-**Outcome**: With 64 features, typically only 6–10 components are needed for 95% variance — achieving 6–10x compression.
+**Outcome**: With 64 features, typically only 6?10 components are needed for 95% variance ? achieving 6?10x compression.
 
-### Example 3: Eigenfaces — Face Recognition via PCA
+### Example 3: Eigenfaces ? Face Recognition via PCA
 
-The Eigenfaces method applies PCA to a database of face images. Each face image (e.g., $100 \times 100$ pixels = 10,000 dimensions) is flattened into a vector. PCA identifies the principal axes of the face space — the "eigenfaces" — which capture the most significant variations among faces (lighting, expression, facial hair, glasses).
+The Eigenfaces method applies PCA to a database of face images. Each face image (e.g., $100 \times 100$ pixels = 10,000 dimensions) is flattened into a vector. PCA identifies the principal axes of the face space ? the "eigenfaces" ? which capture the most significant variations among faces (lighting, expression, facial hair, glasses).
 
 **Recognition pipeline**:
 1. Flatten all $m$ training face images into a matrix $X \in \mathbb{R}^{m \times p}$ where $p = \text{width} \times \text{height}$
@@ -544,7 +544,7 @@ The Eigenfaces method applies PCA to a database of face images. Each face image 
 4. For a new face, project it using the same components
 5. Classify by nearest neighbor in the reduced face space
 
-**Result**: 10,000 pixel dimensions reduce to 20–100 eigenface coefficients while maintaining >90% recognition accuracy.
+**Result**: 10,000 pixel dimensions reduce to 20?100 eigenface coefficients while maintaining >90% recognition accuracy.
 
 ### Example 4: Feature Selection for High-Dimensional Genomic Data
 
@@ -604,7 +604,7 @@ console.log(`Selected ${topFeatures.length} features from 20,000`);
 
 **Outcome**: From 20,000 genes, RFE selects 50 biomarkers that are most predictive of the disease. Model performance improves dramatically because the 50-dimensional space has reasonable density for 200 samples.
 
-> **One-Sentence Takeaway:** PCA compresses correlated features into principal components; t-SNE/UMAP visualize non-linear structure; feature selection preserves interpretability — choose the right tool for the task.
+> **One-Sentence Takeaway:** PCA compresses correlated features into principal components; t-SNE/UMAP visualize non-linear structure; feature selection preserves interpretability ? choose the right tool for the task.
 
 ---
 
@@ -632,8 +632,8 @@ console.log(`Selected ${topFeatures.length} features from 20,000`);
 | Projection | $X_{\text{reduced}} = X W_k$ where $W_k$ has top $k$ eigenvectors |
 | Reconstruction | $X_{\text{approx}} = X_{\text{reduced}} W_k^T$ |
 | SVD | $X_{n \times d} = U_{n \times n} \Sigma_{n \times d} V^T_{d \times d}$; $\sigma_i^2 = n \cdot \lambda_i$ |
-| t-SNE Perplexity | Typical range: 5–50; controls balance between local and global aspects |
-| UMAP n_neighbors | Typical range: 5–100; controls balance between local and global structure |
+| t-SNE Perplexity | Typical range: 5?50; controls balance between local and global aspects |
+| UMAP n_neighbors | Typical range: 5?100; controls balance between local and global structure |
 | Autoencoder Loss | $\mathcal{L} = \frac{1}{n}\sum_i \|x_i - \hat{x}_i\|_2^2$ |
 | Lasso Objective | $\min_w \|y - Xw\|_2^2 + \alpha\|w\|_1$ |
 
@@ -788,6 +788,98 @@ const sim = TSNESimilarity.similarityMatrix(dist, 2);
 console.log("t-SNE KL divergence (random Q):", TSNESimilarity.klDivergence(sim, Array.from({ length: 6 }, () => new Array(6).fill(1 / 6))).toFixed(4));
 ```
 
+
+// dimensionality reduction
+// ml-supervised-unsupervised implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'dimensionality reduction', data: { topic: 'ml-supervised-unsupervised' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// dimensionality reduction - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'ml-algorithms demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'machine-learning', chapter: 'dimensionality reduction' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('ml-algorithms'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Dimensionality reduction mitigates the curse of dimensionality and improves model efficiency.
@@ -796,7 +888,7 @@ console.log("t-SNE KL divergence (random Q):", TSNESimilarity.klDivergence(sim, 
 - The explained variance ratio helps in choosing the optimal number of components.
 - Reducing dimensions can help in data visualization and removing noise from the signal.
 - SVD provides the numerically stable implementation for large-scale PCA.
-- t-SNE and UMAP capture non-linear structure — use them for visualization, not preprocessing.
+- t-SNE and UMAP capture non-linear structure ? use them for visualization, not preprocessing.
 - Feature selection (filter, wrapper, embedded) preserves interpretability.
 - Autoencoders extend dimensionality reduction to non-linear manifolds.
 
@@ -804,14 +896,14 @@ console.log("t-SNE KL divergence (random Q):", TSNESimilarity.klDivergence(sim, 
 
 ## Practical Takeaways
 
-1. **Always standardize before PCA** — without scaling, features with larger units dominate the principal components regardless of informativeness.
-2. **Use the cumulative explained variance plot** to choose $k$ — look for the "elbow" where adding more components yields diminishing returns.
-3. **Prefer SVD over eigendecomposition** for numerical stability — SVD avoids computing $X^T X$ and works on sparse matrices directly.
-4. **t-SNE is for visualization only** — the output is stochastic, has no out-of-sample mapping, and distances in t-SNE space are not meaningful.
-5. **Feature selection beats PCA for interpretability** — when stakeholders ask "which features matter?", a subset of original columns is far easier to explain than linear combinations.
-6. **Autoencoders handle non-linearity** — if your data lives on a curved manifold (images, text embeddings, molecular structures), a deep autoencoder will outperform PCA.
-7. **Combine filter + wrapper for robust selection** — use a cheap filter (variance threshold, chi-square) to cull obvious duds, then apply RFE or forward selection on the remaining candidates.
-8. **Reconstruction error as an anomaly detector** — both PCA and autoencoders produce high reconstruction error on outliers, making them effective unsupervised anomaly detectors.
+1. **Always standardize before PCA** ? without scaling, features with larger units dominate the principal components regardless of informativeness.
+2. **Use the cumulative explained variance plot** to choose $k$ ? look for the "elbow" where adding more components yields diminishing returns.
+3. **Prefer SVD over eigendecomposition** for numerical stability ? SVD avoids computing $X^T X$ and works on sparse matrices directly.
+4. **t-SNE is for visualization only** ? the output is stochastic, has no out-of-sample mapping, and distances in t-SNE space are not meaningful.
+5. **Feature selection beats PCA for interpretability** ? when stakeholders ask "which features matter?", a subset of original columns is far easier to explain than linear combinations.
+6. **Autoencoders handle non-linearity** ? if your data lives on a curved manifold (images, text embeddings, molecular structures), a deep autoencoder will outperform PCA.
+7. **Combine filter + wrapper for robust selection** ? use a cheap filter (variance threshold, chi-square) to cull obvious duds, then apply RFE or forward selection on the remaining candidates.
+8. **Reconstruction error as an anomaly detector** ? both PCA and autoencoders produce high reconstruction error on outliers, making them effective unsupervised anomaly detectors.
 
 ---
 
@@ -831,7 +923,7 @@ console.log("t-SNE KL divergence (random Q):", TSNESimilarity.klDivergence(sim, 
 2. If you have 100 features and you keep 10 principal components, how much compression (as a ratio) have you achieved?
 3. Draw a 2D plot with points elongated along the line $y=x$. Where would the first principal component point?
 4. A genomics study measures 50,000 gene expressions across 100 patients. You need to find the 30 most relevant genes for a disease classification task. Which feature selection strategy do you recommend and why?
-5. You have 1 million 128×128 grayscale images (16,384 pixels each). You must visualize the dataset structure in 2D. Which dimensionality reduction technique would you choose? Justify your answer in terms of scalability and visualization quality.
+5. You have 1 million 128?128 grayscale images (16,384 pixels each). You must visualize the dataset structure in 2D. Which dimensionality reduction technique would you choose? Justify your answer in terms of scalability and visualization quality.
 6. Implement the `chiSquareSelection(data, labels, k)` function in TypeScript that selects the $k$ features with the highest chi-square statistic against a binary label. Use the expected vs. observed contingency table for each feature.
 
 ### Challenge Problem
@@ -847,13 +939,13 @@ Test your understanding of Dimensionality Reduction.
 **1.** What is the correct order of steps in PCA?
 
 <details><summary>**Answer**</summary>
-**C)** The correct sequence is: center the data → compute covariance matrix → eigen-decomposition → sort eigenvectors by eigenvalue → select top K → project data.
+**C)** The correct sequence is: center the data ? compute covariance matrix ? eigen-decomposition ? sort eigenvectors by eigenvalue ? select top K ? project data.
 </details>
 
-- A) Project data → compute covariance → eigen-decomposition → center data
-- B) Compute covariance → center data → eigen-decomposition → select top K
-- C) Center data → compute covariance → eigen-decomposition → sort → select → project
-- D) Select top K → eigen-decomposition → project → compute covariance
+- A) Project data ? compute covariance ? eigen-decomposition ? center data
+- B) Compute covariance ? center data ? eigen-decomposition ? select top K
+- C) Center data ? compute covariance ? eigen-decomposition ? sort ? select ? project
+- D) Select top K ? eigen-decomposition ? project ? compute covariance
 
 **2.** If the first principal component explains 70% of the variance and the second explains 20%, what is the cumulative explained variance of the first two components?
 
@@ -883,7 +975,7 @@ Test your understanding of Dimensionality Reduction.
 **B)** The right singular vectors $V$ from SVD of the centered data matrix are exactly the principal components (eigenvectors of the covariance matrix). The singular values squared equal the eigenvalues scaled by $n-1$.
 </details>
 
-- A) SVD and PCA are unrelated — they solve different optimization problems
+- A) SVD and PCA are unrelated ? they solve different optimization problems
 - B) The right singular vectors of $X$ equal the eigenvectors of $X^T X$, linking SVD directly to PCA
 - C) SVD is only applicable to square matrices, so it cannot be used for PCA on rectangular data
 - D) PCA requires the covariance matrix, while SVD requires the correlation matrix
@@ -891,10 +983,10 @@ Test your understanding of Dimensionality Reduction.
 **5.** A dataset lies on a spiral manifold in 3D space. Which technique will produce the most meaningful 2D visualization?
 
 <details><summary>**Answer**</summary>
-**D)** A spiral is a non-linear manifold — PCA would flatten it and destroy the spiral structure. t-SNE preserves local neighborhood order along the spiral, revealing the true geometry.
+**D)** A spiral is a non-linear manifold ? PCA would flatten it and destroy the spiral structure. t-SNE preserves local neighborhood order along the spiral, revealing the true geometry.
 </details>
 
-- A) PCA — it captures global variance best
-- B) Linear autoencoder — it reconstructs with the lowest error
-- C) Feature selection — it picks the two most informative original axes
-- D) t-SNE — it preserves local neighborhood structure on non-linear manifolds
+- A) PCA ? it captures global variance best
+- B) Linear autoencoder ? it reconstructs with the lowest error
+- C) Feature selection ? it picks the two most informative original axes
+- D) t-SNE ? it preserves local neighborhood structure on non-linear manifolds

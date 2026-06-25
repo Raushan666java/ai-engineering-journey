@@ -16,7 +16,7 @@ By the end of this chapter, you will be able to:
 |-------|-------------|-------------------|
 |REST Principles|Six constraints including stateless, cacheable, uniform interface|Use plural nouns for resources, HTTP methods for actions, nested URIs for relations|
 |Route Design|Maps HTTP methods + URL patterns to handler functions|Keep resource names plural, use params for IDs, query params for filtering|
-|Input Validation|Zod schemas parse and validate request bodies and query params|Validate at the boundary â€” parse input before it reaches business logic|
+|Input Validation|Zod schemas parse and validate request bodies and query params|Validate at the boundary — parse input before it reaches business logic|
 |Error Handling|Structured error responses with code, message, and details fields|Use consistent error shape across all endpoints for client-side handling|
 |OpenAPI/Swagger|YAML/JSON specification documents the entire API surface|Auto-generate client SDKs and interactive docs from the spec file|
 |API Versioning|URI, header, or query-parameter strategies for backward compat|Prefer URI versioning `/v1/` for simplicity; header versioning for cleaner URLs|
@@ -439,7 +439,7 @@ app.post("/api/users/bulk", async (req, res, next) => {
 
 
 > [!TIP]
-> Use `z.coerce.number()` to automatically convert query string values to numbers in Zod schemas â€” query params are always strings.
+> Use `z.coerce.number()` to automatically convert query string values to numbers in Zod schemas — query params are always strings.
 
 > [!WARNING]
 > Never expose internal IDs like database primary keys in API responses. Use UUIDs or slugs for public resource identifiers.
@@ -820,6 +820,48 @@ console.log("HATEOAS:", JSON.stringify(HATEOASLinkBuilder.collection("/api/users
 console.log("Resource:", JSON.stringify(HATEOASLinkBuilder.resource("/api/users", "42")._links, null, 2));
 ```
 
+
+// rest apis
+// fullstack-frontend-backend implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'rest apis', data: { topic: 'fullstack-frontend-backend' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 REST API design follows resource-oriented principles with consistent URI naming, proper HTTP method usage, and appropriate status codes. Key practices include input validation with Zod, structured error responses, pagination, filtering, sorting, and comprehensive documentation with OpenAPI. Versioning strategies ensure backward compatibility as APIs evolve.

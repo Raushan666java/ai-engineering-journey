@@ -1,7 +1,7 @@
 # Chapter 3: Logic Gates
 
-> **Prereq:** Chapter 2 (Boolean Algebra) — gates implement the Boolean operations directly.
-> **Next:** Chapter 4 (Karnaugh Maps) — minimisation leads to optimal gate-level implementations.
+> **Prereq:** Chapter 2 (Boolean Algebra) ? gates implement the Boolean operations directly.
+> **Next:** Chapter 4 (Karnaugh Maps) ? minimisation leads to optimal gate-level implementations.
 
 ## Learning Objectives
 
@@ -54,7 +54,7 @@ A logic gate is an electronic circuit that implements a Boolean function. The se
 
 The AND gate produces a HIGH output (1) only when all inputs are HIGH.
 
-| A | B | A · B |
+| A | B | A ? B |
 |---|---|:---:|
 | 0 | 0 | 0 |
 | 0 | 1 | 0 |
@@ -98,7 +98,7 @@ Symbol: A triangle pointing to the right with a small circle (bubble) at the out
 
 The NAND gate is the complement of AND. It is a universal gate.
 
-| A | B | (A · B)' |
+| A | B | (A ? B)' |
 |---|---|:---:|
 | 0 | 0 | 1 |
 | 0 | 1 | 1 |
@@ -124,27 +124,27 @@ Symbol: An OR symbol followed by a bubble at the output.
 
 The XOR gate produces a HIGH output when the inputs differ.
 
-| A | B | A ⊕ B |
+| A | B | A ? B |
 |---|---|:---:|
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
 
-Expression: A ⊕ B = A'B + AB'
+Expression: A ? B = A'B + AB'
 
 #### 3.1.7 XNOR Gate (Exclusive-NOR)
 
 The XNOR gate produces a HIGH output when the inputs are equal.
 
-| A | B | (A ⊕ B)' |
+| A | B | (A ? B)' |
 |---|---|:---:|
 | 0 | 0 | 1 |
 | 0 | 1 | 0 |
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
 
-Expression: A ⊙ B = A·B + A'·B'
+Expression: A ? B = A?B + A'?B'
 
 ```mermaid
 graph TD
@@ -161,22 +161,22 @@ graph TD
 NAND and NOR are termed universal gates because either alone suffices to implement any Boolean expression.
 
 **NAND as universal gate**:
-- NOT: Connect both inputs together: A' = (A·A)'
-- AND: Complement the output of NAND: A·B = [(A·B)']'
-- OR: Apply De Morgan's theorem: A + B = (A'·B')'
+- NOT: Connect both inputs together: A' = (A?A)'
+- AND: Complement the output of NAND: A?B = [(A?B)']'
+- OR: Apply De Morgan's theorem: A + B = (A'?B')'
 
 **NOR as universal gate**:
 - NOT: Connect both inputs together: A' = (A + A)'
 - OR: Complement the output of NOR: A + B = [(A + B)']'
-- AND: Apply De Morgan's theorem: A·B = (A' + B')'
+- AND: Apply De Morgan's theorem: A?B = (A' + B')'
 
 ### 3.3 Gate-Level Minimisation
 
 Gate-level minimisation reduces the number of gates (and thus transistors, area, and power) needed to implement a function.
 
-**Example**: Implement F = A·B + A·C using minimal gates.
+**Example**: Implement F = A?B + A?C using minimal gates.
 - Direct: Two AND gates and one OR gate
-- Minimised: F = A·(B + C) — one AND, one OR (saves one gate)
+- Minimised: F = A?(B + C) ? one AND, one OR (saves one gate)
 
 ```typescript
 interface Gate {
@@ -222,13 +222,13 @@ class GateNetwork {
 
 Propagation delay t_p is the time required for a change at the input to propagate to the output. It is measured from the 50% transition point of the input waveform to the 50% transition point of the output waveform. Two measurements are specified: t_{PLH} (LOW-to-HIGH) and t_{PHL} (HIGH-to-LOW).
 
-The propagation delay through a chain of gates determines the maximum clock frequency of a synchronous system. For a path with N gates: t_total = Σ t_{p_i}
+The propagation delay through a chain of gates determines the maximum clock frequency of a synchronous system. For a path with N gates: t_total = S t_{p_i}
 
 ```mermaid
 graph LR
     subgraph "Timing Diagram"
-        CLK["Clock"] -->|"t_PLH"| Q1["Output ↑"]
-        CLK -->|"t_PHL"| Q2["Output ↓"]
+        CLK["Clock"] -->|"t_PLH"| Q1["Output ?"]
+        CLK -->|"t_PHL"| Q2["Output ?"]
     end
 ```
 
@@ -257,8 +257,8 @@ Exceeding fan-out causes:
 
 Noise margin quantifies the circuit's immunity to voltage noise. It represents the difference between the guaranteed output voltage and the required input voltage for each logic state.
 
-NM_{LOW} = V_{IL}(max) − V_{OL}(max)
-NM_{HIGH} = V_{OH}(min) − V_{IH}(min)
+NM_{LOW} = V_{IL}(max) - V_{OL}(max)
+NM_{HIGH} = V_{OH}(min) - V_{IH}(min)
 
 ```mermaid
 graph LR
@@ -274,10 +274,10 @@ graph LR
 
 Power dissipation comprises static and dynamic components:
 
-**Static power**: P_static = I_leak × V_DD. In CMOS, static power is near-zero (leakage only).
+**Static power**: P_static = I_leak ? V_DD. In CMOS, static power is near-zero (leakage only).
 
-**Dynamic power**: P_dynamic = α × C_L × V_DD² × f, where:
-- α = activity factor (fraction of gates switching per cycle)
+**Dynamic power**: P_dynamic = a ? C_L ? V_DD? ? f, where:
+- a = activity factor (fraction of gates switching per cycle)
 - C_L = load capacitance
 - f = switching frequency
 
@@ -287,7 +287,7 @@ Power dissipation comprises static and dynamic components:
 
 TTL logic uses bipolar junction transistors. Key characteristics:
 
-- Supply voltage: 5 V ± 5%
+- Supply voltage: 5 V ? 5%
 - Logic LOW: 0 V to 0.8 V (input), 0 V to 0.4 V (output)
 - Logic HIGH: 2.0 V to 5 V (input), 2.4 V to 5 V (output)
 - Typical propagation delay: 10 ns (standard TTL)
@@ -309,7 +309,7 @@ CMOS logic uses complementary pairs of p-channel and n-channel MOSFETs. Key char
 
 - Supply voltage: 3 V to 15 V (varies by subfamily)
 - Near-zero static power consumption
-- Logic levels proportional to supply voltage: V_{IL} ≤ 0.3V_{DD}, V_{IH} ≥ 0.7V_{DD}
+- Logic levels proportional to supply voltage: V_{IL} = 0.3V_{DD}, V_{IH} = 0.7V_{DD}
 - Typical propagation delay: 20-50 ns (standard CMOS)
 - High noise margin: approximately 0.4V_{DD}
 - High fan-out capability
@@ -326,7 +326,7 @@ CMOS subfamilies:
 
 | Parameter | TTL (74LS) | CMOS (74HC) | Advanced CMOS (74AC) |
 |-----------|------------|-------------|---------------------|
-| Supply voltage | 5 V ± 5% | 2-6 V | 3-5 V |
+| Supply voltage | 5 V ? 5% | 2-6 V | 3-5 V |
 | Power per gate (static) | 2 mW | 0.002 mW | ~0.001 mW |
 | Propagation delay | 10 ns | 20 ns | 5 ns |
 | Fan-out | 20 | 50 | 30 |
@@ -362,7 +362,7 @@ An open-drain (CMOS) or open-collector (TTL) output can only pull the output LOW
 **Wired-AND connection**: Multiple open-drain outputs connected to a common pull-up resistor implement a wired-AND function. The output is HIGH only if ALL gates are in the HIGH-impedance state.
 
 Applications:
-- I²C bus (both SDA and SCL are open-drain)
+- I?C bus (both SDA and SCL are open-drain)
 - Interrupt lines (multiple devices share one interrupt input)
 - Level shifting (pull-up to different voltage than the gate supply)
 
@@ -370,7 +370,7 @@ Applications:
 
 Schmitt trigger inputs have hysteresis: the input threshold for LOW-to-HIGH transitions (V_T+) is higher than the threshold for HIGH-to-LOW transitions (V_T-). This provides noise immunity for slow or noisy input signals.
 
-Hysteresis voltage: V_H = V_T+ − V_T-
+Hysteresis voltage: V_H = V_T+ - V_T-
 
 Applications:
 - Debouncing mechanical switches
@@ -381,28 +381,28 @@ Applications:
 
 ### Example 3.1: Universal Gate Conversion
 
-Implement the function F = A·B + C·D using only NAND gates.
+Implement the function F = A?B + C?D using only NAND gates.
 
 **Solution**: The function is in SOP form. Replace AND and OR with NAND equivalents.
-F = A·B + C·D
-= [(A·B)']' + [(C·D)']' (double complement)
-= ([A·B)'·(C·D)']' (De Morgan: X' + Y' = (X·Y)')
-= [(A·B)'·(C·D)']'
+F = A?B + C?D
+= [(A?B)']' + [(C?D)']' (double complement)
+= ([A?B)'?(C?D)']' (De Morgan: X' + Y' = (X?Y)')
+= [(A?B)'?(C?D)']'
 
-Implementation: Three NAND gates — two for the AND functions, one for the OR.
+Implementation: Three NAND gates ? two for the AND functions, one for the OR.
 
 ### Example 3.2: Propagation Delay Analysis
 
 A logic circuit consists of five cascaded NAND gates. Each gate has t_{PLH} = 8 ns and t_{PHL} = 12 ns. A rising edge arrives at the input. Calculate the worst-case propagation delay through the chain.
 
-**Solution**: For a rising edge, the first gate exhibits t_{PHL} = 12 ns (since the output falls). The second gate exhibits t_{PLH} = 8 ns. The pattern alternates. Worst case: 3 gates exhibit t_{PHL} and 2 exhibit t_{PLH}. Total delay = 3×12 + 2×8 = 36 + 16 = 52 ns.
+**Solution**: For a rising edge, the first gate exhibits t_{PHL} = 12 ns (since the output falls). The second gate exhibits t_{PLH} = 8 ns. The pattern alternates. Worst case: 3 gates exhibit t_{PHL} and 2 exhibit t_{PLH}. Total delay = 3?12 + 2?8 = 36 + 16 = 52 ns.
 
 ### Example 3.3: Fan-Out Calculation
 
-A 74LS00 NAND gate has I_{OH} = −0.4 mA, I_{OL} = 8 mA, I_{IH} = 20 μA, I_{IL} = −0.4 mA. Calculate the fan-out.
+A 74LS00 NAND gate has I_{OH} = -0.4 mA, I_{OL} = 8 mA, I_{IH} = 20 ?A, I_{IL} = -0.4 mA. Calculate the fan-out.
 
 **Solution**: 
-HIGH-state fan-out: |I_{OH}| / I_{IH} = 0.4 mA / 20 μA = 400 μA / 20 μA = 20
+HIGH-state fan-out: |I_{OH}| / I_{IH} = 0.4 mA / 20 ?A = 400 ?A / 20 ?A = 20
 LOW-state fan-out: I_{OL} / |I_{IL}| = 8 mA / 0.4 mA = 20
 Fan-out = min(20, 20) = 20
 
@@ -411,14 +411,14 @@ Fan-out = min(20, 20) = 20
 A 74LS00 has V_{OH}(min) = 2.7 V, V_{OL}(max) = 0.5 V, V_{IH}(min) = 2.0 V, V_{IL}(max) = 0.8 V. Calculate noise margins.
 
 **Solution**:
-NM_{HIGH} = 2.7 − 2.0 = 0.7 V
-NM_{LOW} = 0.8 − 0.5 = 0.3 V
+NM_{HIGH} = 2.7 - 2.0 = 0.7 V
+NM_{LOW} = 0.8 - 0.5 = 0.3 V
 
 ### Example 3.5: Dynamic Power Calculation
 
 A CMOS gate operates at V_{DD} = 3.3 V, drives a 15 pF load, and switches at 100 MHz with an activity factor of 0.5. Calculate the dynamic power.
 
-**Solution**: P = 0.5 × 15×10^{-12} × (3.3)^2 × 100×10^6 = 0.5 × 15 × 10.89 × 10^{-12} × 10^8 = 0.5 × 15 × 10.89 × 10^{-4} = 81.675 × 10^{-4} = 8.1675 mW
+**Solution**: P = 0.5 ? 15?10^{-12} ? (3.3)^2 ? 100?10^6 = 0.5 ? 15 ? 10.89 ? 10^{-12} ? 10^8 = 0.5 ? 15 ? 10.89 ? 10^{-4} = 81.675 ? 10^{-4} = 8.1675 mW
 
 ### Concept Comparison
 
@@ -432,13 +432,13 @@ A CMOS gate operates at V_{DD} = 3.3 V, drives a 15 pF load, and switches at 100
 
 | Gate | Output When | Expression | Symbol |
 |------|-----------|------------|--------|
-| AND | All inputs 1 | A·B | D-shape |
+| AND | All inputs 1 | A?B | D-shape |
 | OR | Any input 1 | A+B | Curved body |
 | NOT | Complement | A' | Triangle + bubble |
-| NAND | Not all 1 | (A·B)' | AND + bubble |
+| NAND | Not all 1 | (A?B)' | AND + bubble |
 | NOR | No input 1 | (A+B)' | OR + bubble |
-| XOR | Inputs differ | A⊕B | OR + extra curve |
-| XNOR | Inputs match | (A⊕B)' | XOR + bubble |
+| XOR | Inputs differ | A?B | OR + extra curve |
+| XNOR | Inputs match | (A?B)' | XOR + bubble |
 
 ### Cross-Application Matrix
 
@@ -451,12 +451,12 @@ A CMOS gate operates at V_{DD} = 3.3 V, drives a 15 pF load, and switches at 100
 
 ## Practical Takeaways
 
-1. **NAND and NOR are universal** — master converting any expression to these gate types for IC design.
-2. **Propagation delay limits speed** — the critical path delay through gates determines max clock frequency.
-3. **Fan-out cannot be exceeded** — violating fan-out causes unreliable logic levels and potential damage.
-4. **CMOS dominates modern design** — near-zero static power makes CMOS the choice for most applications.
-5. **Tri-state enables shared buses** — but ensuring only one driver is active at a time is critical.
-6. **Open-drain for wired-AND** — useful for shared interrupt lines and I²C protocol.
+1. **NAND and NOR are universal** ? master converting any expression to these gate types for IC design.
+2. **Propagation delay limits speed** ? the critical path delay through gates determines max clock frequency.
+3. **Fan-out cannot be exceeded** ? violating fan-out causes unreliable logic levels and potential damage.
+4. **CMOS dominates modern design** ? near-zero static power makes CMOS the choice for most applications.
+5. **Tri-state enables shared buses** ? but ensuring only one driver is active at a time is critical.
+6. **Open-drain for wired-AND** ? useful for shared interrupt lines and I?C protocol.
 
 ## TypeScript Examples
 
@@ -680,7 +680,7 @@ const testRequests: [Bit, Bit, Bit, Bit][] = [
 for (const req of testRequests) {
   const en = TriStateBus.priorityArbiter(req);
   const active = en.findIndex(e => e === 1);
-  console.log(`  Req=${req.join("")} → En=${en.join("")} (M${active >= 0 ? active + 1 : "none"} drives bus)`);
+  console.log(`  Req=${req.join("")} ? En=${en.join("")} (M${active >= 0 ? active + 1 : "none"} drives bus)`);
 }
 ```
 
@@ -691,18 +691,18 @@ for (const req of testRequests) {
 ```mermaid
 flowchart LR
     subgraph AND[AND & NAND]
-        A1[A] -->|&| Y1[Y = A·B]
+        A1[A] -->|&| Y1[Y = A?B]
         B1[B] -->|&| Y1
     end
     subgraph OR[OR & NOR]
-        A2[A] -->|≥1| Y2[Y = A+B]
-        B2[B] -->|≥1| Y2
+        A2[A] -->|=1| Y2[Y = A+B]
+        B2[B] -->|=1| Y2
     end
     subgraph NOT[NOT]
         A3[A] -->|1| Y3[Y = A']
     end
     subgraph XOR[XOR & XNOR]
-        A4[A] -->|=1| Y4[Y = A⊕B]
+        A4[A] -->|=1| Y4[Y = A?B]
         B4[B] -->|=1| Y4
     end
 ```
@@ -713,14 +713,14 @@ flowchart LR
 flowchart TD
     subgraph NAND_Only[NAND as Universal Gate]
         NA[INV: NAND A,A] --> NAo[A']
-        NAND_AB[NAND A,B] --> NAND_A[NAND with A,A] --> AAND[AND A·B]
+        NAND_AB[NAND A,B] --> NAND_A[NAND with A,A] --> AAND[AND A?B]
         NAND_AB2[NAND A,B] --> NAND_B
         NA_A[NAND A,A] --> NAND_BB[NAND B,B] --> NAND_AB3[NAND ...] --> AOR[OR A+B]
         N1[NAND A,B] --> NAND_N1[NAND A,N1]
         N1 --> NAND_N2[NAND B,N1]
         NAND_N1 --> NAND_N3[NAND N2,N3]
         NAND_N2 --> NAND_N3
-        NAND_N3 --> AXOR[XOR A⊕B]
+        NAND_N3 --> AXOR[XOR A?B]
     end
 ```
 
@@ -743,22 +743,114 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    VDD[VDD] --> P[PMOS<br/>Q₁]
+    VDD[VDD] --> P[PMOS<br/>Q1]
     Input[Input A] --> P
-    Input --> N[NMOS<br/>Q₂]
+    Input --> N[NMOS<br/>Q2]
     P --> Output[Output Y = A']
     N --> Output
     N --> GND[GND]
     subgraph Behavior
-        A1["A=0 → P ON, N OFF → Y=1"] -->|Pull-up to VDD| H[Output = VDD]
-        A0["A=1 → P OFF, N ON → Y=0"] -->|Pull-down to GND| L[Output = GND]
+        A1["A=0 ? P ON, N OFF ? Y=1"] -->|Pull-up to VDD| H[Output = VDD]
+        A0["A=1 ? P OFF, N ON ? Y=0"] -->|Pull-down to GND| L[Output = GND]
     end
 ```
 
+
+// logic gates
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'logic gates', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// logic gates - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'logic gates' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Seven fundamental gates exist: AND, OR, NOT, NAND, NOR, XOR, and XNOR.
-- NAND and NOR are universal gates — any Boolean function can be constructed from either alone.
+- NAND and NOR are universal gates ? any Boolean function can be constructed from either alone.
 - Three-state gates enable shared bus architectures by providing a high-impedance state.
 - Open-drain outputs implement wired-AND connections with external pull-up resistors.
 - TTL and CMOS are the dominant logic families, with CMOS prevailing in modern designs due to low power.
@@ -817,7 +909,7 @@ flowchart TD
 2. Show how to implement a 2-input XOR gate using only NAND gates. Determine the minimum number of NAND gates required.
 3. A 74LS00 quad NAND gate has the following specifications: V_{OH}(min) = 2.7 V, V_{OL}(max) = 0.5 V, V_{IH}(min) = 2.0 V, V_{IL}(max) = 0.8 V. Calculate the LOW and HIGH noise margins.
 4. A CMOS inverter operates at V_{DD} = 3.3 V and switches at 100 MHz driving a 15 pF load. Calculate the dynamic power dissipation.
-5. Implement the function F = (A + B)·C + D using only:
+5. Implement the function F = (A + B)?C + D using only:
    a) NAND gates
    b) NOR gates
 

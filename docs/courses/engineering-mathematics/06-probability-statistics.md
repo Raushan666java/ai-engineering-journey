@@ -78,7 +78,7 @@ $$P(B_i|A) = \frac{P(A|B_i)P(B_i)}{\sum_{j=1}^n P(A|B_j)P(B_j)}$$
 
 **Combinations with Repetition:** $\binom{n+r-1}{r}$
 
-**Key Principle:** $P(n,r) = r! \cdot C(n,r)$ — choose the set, then order it.
+**Key Principle:** $P(n,r) = r! \cdot C(n,r)$ ? choose the set, then order it.
 
 ### 6.3 Discrete Random Variables
 
@@ -107,24 +107,24 @@ $$P(X = x_k) = p_k, \quad \sum_k p_k = 1$$
 
 ### 6.4 Standard Discrete Distributions
 
-**Bernoulli:** $X \sim \text{Bern}(p)$ — single trial, success with prob $p$
+**Bernoulli:** $X \sim \text{Bern}(p)$ ? single trial, success with prob $p$
 - $P(X=1) = p$, $P(X=0) = 1-p$
 - $E[X] = p$, $\text{Var}(X) = p(1-p)$
 
-**Binomial:** $X \sim \text{Bin}(n, p)$ — $n$ independent Bernoulli trials
+**Binomial:** $X \sim \text{Bin}(n, p)$ ? $n$ independent Bernoulli trials
 - $P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}$
 - $E[X] = np$, $\text{Var}(X) = np(1-p)$
 
-**Poisson:** $X \sim \text{Pois}(\lambda)$ — count of rare events in fixed interval
+**Poisson:** $X \sim \text{Pois}(\lambda)$ ? count of rare events in fixed interval
 - $P(X=k) = \frac{e^{-\lambda} \lambda^k}{k!}$, $k = 0, 1, 2, \ldots$
 - $E[X] = \lambda$, $\text{Var}(X) = \lambda$
 - Approximates $\text{Bin}(n, p)$ when $n$ large, $p$ small, $\lambda = np$
 
-**Geometric:** $X \sim \text{Geom}(p)$ — number of trials until first success
+**Geometric:** $X \sim \text{Geom}(p)$ ? number of trials until first success
 - $P(X=k) = (1-p)^{k-1}p$, $k = 1, 2, 3, \ldots$
 - $E[X] = 1/p$, $\text{Var}(X) = (1-p)/p^2$
 
-**Negative Binomial:** $X \sim \text{NB}(r, p)$ — number of trials for $r$ successes
+**Negative Binomial:** $X \sim \text{NB}(r, p)$ ? number of trials for $r$ successes
 - $P(X=k) = \binom{k-1}{r-1} p^r (1-p)^{k-r}$, $k = r, r+1, \ldots$
 - $E[X] = r/p$, $\text{Var}(X) = r(1-p)/p^2$
 
@@ -156,16 +156,16 @@ $$P(a \leq X \leq b) = \int_a^b f(x)\,dx$$
 - **Standard Normal:** $Z = \frac{X-\mu}{\sigma} \sim N(0,1)$
 - **68-95-99.7 Rule:** 68% within 1$\sigma$, 95% within 2$\sigma$, 99.7% within 3$\sigma$
 
-**Exponential:** $X \sim \text{Exp}(\lambda)$ — time between events
+**Exponential:** $X \sim \text{Exp}(\lambda)$ ? time between events
 - $f(x) = \lambda e^{-\lambda x}$, $x \geq 0$
 - $E[X] = 1/\lambda$, $\text{Var}(X) = 1/\lambda^2$
 - **Memoryless Property:** $P(X > s+t | X > s) = P(X > t)$
 
-**Gamma:** $X \sim \text{Gamma}(\alpha, \beta)$ — sum of $\alpha$ independent Exp($\beta$) variables
+**Gamma:** $X \sim \text{Gamma}(\alpha, \beta)$ ? sum of $\alpha$ independent Exp($\beta$) variables
 - $f(x) = \frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} e^{-\beta x}$, $x \geq 0$
 - $E[X] = \alpha/\beta$, $\text{Var}(X) = \alpha/\beta^2$
 
-**Beta:** $X \sim \text{Beta}(\alpha, \beta)$ — distribution on $[0,1]$, conjugate prior for Bernoulli
+**Beta:** $X \sim \text{Beta}(\alpha, \beta)$ ? distribution on $[0,1]$, conjugate prior for Bernoulli
 - $f(x) = \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha-1}(1-x)^{\beta-1}$, $0 \leq x \leq 1$
 - $E[X] = \frac{\alpha}{\alpha+\beta}$
 
@@ -198,7 +198,7 @@ $$P(a \leq X \leq b) = \int_a^b f(x)\,dx$$
 - $E[X^n] = M_X^{(n)}(0)$
 - $M_{X+Y}(t) = M_X(t) M_Y(t)$ for independent $X, Y$
 
-**Characteristic Function:** $\phi_X(t) = E[e^{itX}]$ — always exists, generalizes MGF.
+**Characteristic Function:** $\phi_X(t) = E[e^{itX}]$ ? always exists, generalizes MGF.
 
 **Convolution:** The PDF of $Z = X + Y$ for independent continuous $X, Y$ is:
 
@@ -280,9 +280,9 @@ $$\left(\frac{(n-1)s^2}{\chi^2_{\alpha/2, n-1}}, \frac{(n-1)s^2}{\chi^2_{1-\alph
 **Null Hypothesis $H_0$:** Status quo claim.
 **Alternative Hypothesis $H_1$:** The claim we want to support.
 
-**Type I Error:** Reject $H_0$ when it's true (probability = $\alpha$ — significance level).
+**Type I Error:** Reject $H_0$ when it's true (probability = $\alpha$ ? significance level).
 **Type II Error:** Fail to reject $H_0$ when it's false (probability = $\beta$).
-**Power:** $1 - \beta$ — probability of correctly rejecting false $H_0$.
+**Power:** $1 - \beta$ ? probability of correctly rejecting false $H_0$.
 
 **$p$-value:** Probability of observing data as extreme as what we saw, assuming $H_0$ is true. Reject $H_0$ if $p < \alpha$.
 
@@ -312,7 +312,7 @@ $$\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1 \bar{X}$$
 
 $R^2$ measures the proportion of variance in $Y$ explained by $X$.
 
-**Residual Analysis:** $\hat{\epsilon}_i = Y_i - \hat{Y}_i$ — should be approximately normal with constant variance.
+**Residual Analysis:** $\hat{\epsilon}_i = Y_i - \hat{Y}_i$ ? should be approximately normal with constant variance.
 
 **ANOVA for Regression:**
 
@@ -324,9 +324,9 @@ $R^2$ measures the proportion of variance in $Y$ explained by $X$.
 
 ### 6.15 Bayesian Statistics
 
-**Prior Distribution:** $p(\theta)$ — our belief about $\theta$ before seeing data.
+**Prior Distribution:** $p(\theta)$ ? our belief about $\theta$ before seeing data.
 
-**Likelihood:** $p(D|\theta)$ — probability of data given $\theta$.
+**Likelihood:** $p(D|\theta)$ ? probability of data given $\theta$.
 
 **Posterior Distribution (Bayes' Theorem):**
 
@@ -354,7 +354,7 @@ $P(D) = 0.001$, $P(T|D) = 0.99$, $P(T|D^c) = 0.01$
 
 $$P(D|T) = \frac{P(T|D)P(D)}{P(T|D)P(D) + P(T|D^c)P(D^c)} = \frac{0.99 \times 0.001}{0.99 \times 0.001 + 0.01 \times 0.999} = \frac{0.00099}{0.00099 + 0.00999} \approx 0.09$$
 
-Only 9%! This illustrates the **false positive paradox** — when prevalence is low, even accurate tests produce many false positives.
+Only 9%! This illustrates the **false positive paradox** ? when prevalence is low, even accurate tests produce many false positives.
 
 ### Example 2: CLT in Action
 
@@ -389,7 +389,7 @@ function monteCarlo(f: (x: number) => number, a: number, b: number, n: number = 
   return (b - a) * sum / n;
 }
 
-// Estimate π: area of unit circle = π, quarter in [0,1]²
+// Estimate p: area of unit circle = p, quarter in [0,1]?
 function estimatePi(n: number = 1000000): number {
   let inside = 0;
   for (let i = 0; i < n; i++) {
@@ -398,11 +398,11 @@ function estimatePi(n: number = 1000000): number {
   }
   return 4 * inside / n;
 }
-console.log(`MC π = ${estimatePi(1000000).toFixed(6)} (error: ${Math.abs(estimatePi(1000000) - Math.PI).toFixed(6)})`);
+console.log(`MC p = ${estimatePi(1000000).toFixed(6)} (error: ${Math.abs(estimatePi(1000000) - Math.PI).toFixed(6)})`);
 
-// ∫₀¹ 4/(1+x²) dx = π
+// ?0? 4/(1+x?) dx = p
 const pi4 = 4 * monteCarlo(x => 1 / (1 + x * x), 0, 1, 1000000);
-console.log(`MC ∫ 4/(1+x²) dx = ${pi4.toFixed(6)} (expected: ${Math.PI.toFixed(6)})`);
+console.log(`MC ? 4/(1+x?) dx = ${pi4.toFixed(6)} (expected: ${Math.PI.toFixed(6)})`);
 
 ### TypeScript: Central Limit Theorem Demonstration
 
@@ -414,7 +414,7 @@ function cltDemo(numSamples: number, sampleSize: number): { means: number[]; sta
     for (let i = 0; i < sampleSize; i++) sum += Math.random();
     means.push(sum / sampleSize);
   }
-  // Uniform[0,1]: μ=0.5, σ²=1/12 → CLT: sample mean ~ N(0.5, 1/(12n))
+  // Uniform[0,1]: ?=0.5, s?=1/12 ? CLT: sample mean ~ N(0.5, 1/(12n))
   const mean = means.reduce((a, b) => a + b, 0) / means.length;
   const variance = means.reduce((s, m) => s + (m - 0.5) ** 2, 0) / means.length;
   const theoStd = Math.sqrt(1 / (12 * sampleSize));
@@ -423,70 +423,70 @@ function cltDemo(numSamples: number, sampleSize: number): { means: number[]; sta
 }
 
 const { stats: clt10 } = cltDemo(10000, 10);
-console.log(`CLT n=10: mean=${clt10.mean.toFixed(4)} std=${clt10.std.toFixed(4)} within2σ=${(clt10.within2 / 100 * 1).toFixed(1)}%`);
+console.log(`CLT n=10: mean=${clt10.mean.toFixed(4)} std=${clt10.std.toFixed(4)} within2s=${(clt10.within2 / 100 * 1).toFixed(1)}%`);
 
 const { stats: clt30 } = cltDemo(10000, 30);
-console.log(`CLT n=30: mean=${clt30.mean.toFixed(4)} std=${clt30.std.toFixed(4)} within2σ=${(clt30.within2 / 100 * 1).toFixed(1)}% (expected ~95%)`);
+console.log(`CLT n=30: mean=${clt30.mean.toFixed(4)} std=${clt30.std.toFixed(4)} within2s=${(clt30.within2 / 100 * 1).toFixed(1)}% (expected ~95%)`);
 
 // The chi-squared goodness-of-fit test verifies normality
-function chiSquaredNormal(observed: number[], bins: number, μ: number, σ: number): number {
-  const binEdges = Array.from({ length: bins + 1 }, (_, i) => μ + σ * (i - bins / 2) * 4 / bins);
+function chiSquaredNormal(observed: number[], bins: number, ?: number, s: number): number {
+  const binEdges = Array.from({ length: bins + 1 }, (_, i) => ? + s * (i - bins / 2) * 4 / bins);
   const expected = binEdges.slice(0, -1).map((e, i) => {
-    const z1 = (e - μ) / σ, z2 = (binEdges[i + 1] - μ) / σ;
+    const z1 = (e - ?) / s, z2 = (binEdges[i + 1] - ?) / s;
     return observed.length / bins;  // uniform under normal approximation
   });
-  let χ² = 0;
-  for (let i = 0; i < bins; i++) χ² += (observed[i] - expected[i]) ** 2 / expected[i];
-  return χ²;
+  let ?? = 0;
+  for (let i = 0; i < bins; i++) ?? += (observed[i] - expected[i]) ** 2 / expected[i];
+  return ??;
 }
 
 ### TypeScript: Bayesian Beta-Bernoulli Updating
 
 ```typescript
-function betaPosterior(successes: number, failures: number, α: number, β: number) {
-  return { αPost: α + successes, βPost: β + failures };
+function betaPosterior(successes: number, failures: number, a: number, ?: number) {
+  return { aPost: a + successes, ?Post: ? + failures };
 }
-function betaMean(α: number, β: number): number { return α / (α + β); }
-function betaVar(α: number, β: number): number { return α * β / ((α + β) ** 2 * (α + β + 1)); }
+function betaMean(a: number, ?: number): number { return a / (a + ?); }
+function betaVar(a: number, ?: number): number { return a * ? / ((a + ?) ** 2 * (a + ? + 1)); }
 
 // Coin flip example: prior Beta(2,2), observe 8 heads, 2 tails
-const prior = { α: 2, β: 2 };
-const post = betaPosterior(8, 2, prior.α, prior.β);
+const prior = { a: 2, ?: 2 };
+const post = betaPosterior(8, 2, prior.a, prior.?);
 console.log(`Prior: Beta(2,2), mean=${betaMean(2, 2).toFixed(3)}, var=${betaVar(2, 2).toFixed(4)}`);
-console.log(`Posterior: Beta(${post.αPost},${post.βPost}), mean=${betaMean(post.αPost, post.βPost).toFixed(3)}`);
-console.log(`  Posterior mean = ${betaMean(post.αPost, post.βPost).toFixed(3)} (MLE = 0.8)`);
+console.log(`Posterior: Beta(${post.aPost},${post.?Post}), mean=${betaMean(post.aPost, post.?Post).toFixed(3)}`);
+console.log(`  Posterior mean = ${betaMean(post.aPost, post.?Post).toFixed(3)} (MLE = 0.8)`);
 
 // Sequential updating: same result whether data comes all at once or one observation at a time
-function sequentialUpdate(data: number[], α0: number, β0: number): void {
-  let α = α0, β = β0;
+function sequentialUpdate(data: number[], a0: number, ?0: number): void {
+  let a = a0, ? = ?0;
   console.log("Sequential Bayesian update (coin flips):");
-  console.log(`  Prior: α=${α}, β=${β}, mean=${betaMean(α, β).toFixed(3)}`);
+  console.log(`  Prior: a=${a}, ?=${?}, mean=${betaMean(a, ?).toFixed(3)}`);
   for (const flip of data) {
-    if (flip === 1) α++; else β++;
-    console.log(`  After ${flip === 1 ? "H" : "T"}: α=${α}, β=${β}, mean=${betaMean(α, β).toFixed(3)}`);
+    if (flip === 1) a++; else ?++;
+    console.log(`  After ${flip === 1 ? "H" : "T"}: a=${a}, ?=${?}, mean=${betaMean(a, ?).toFixed(3)}`);
   }
-  console.log(`  Final posterior: Beta(${α},${β})`);
+  console.log(`  Final posterior: Beta(${a},${?})`);
 }
 sequentialUpdate([1, 0, 1, 1, 1, 0, 1, 1, 1, 1], 2, 2);
 
 // Credible interval (equal-tailed)
-function credibleInterval(α: number, β: number, level: number = 0.95): [number, number] {
-  // Approximate using normal approximation for large α,β
-  const μ = betaMean(α, β), σ = Math.sqrt(betaVar(α, β));
+function credibleInterval(a: number, ?: number, level: number = 0.95): [number, number] {
+  // Approximate using normal approximation for large a,?
+  const ? = betaMean(a, ?), s = Math.sqrt(betaVar(a, ?));
   const z = 1.96;  // 95% normal quantile
-  return [Math.max(0, μ - z * σ), Math.min(1, μ + z * σ)];
+  return [Math.max(0, ? - z * s), Math.min(1, ? + z * s)];
 }
-const [lo, hi] = credibleInterval(post.αPost, post.βPost);
+const [lo, hi] = credibleInterval(post.aPost, post.?Post);
 console.log(`95% credible interval: [${lo.toFixed(3)}, ${hi.toFixed(3)}]`);
 ```
 
 ```
 // --- Probability Distribution Functions ---
-function normalPDF(x: number, μ: number, σ: number): number {
-  return (1 / (σ * Math.sqrt(2 * Math.PI))) * Math.exp(-0.5 * ((x - μ) / σ) ** 2);
+function normalPDF(x: number, ?: number, s: number): number {
+  return (1 / (s * Math.sqrt(2 * Math.PI))) * Math.exp(-0.5 * ((x - ?) / s) ** 2);
 }
-function normalCDF(x: number, μ: number = 0, σ: number = 1): number {
-  return 0.5 * (1 + erf((x - μ) / (σ * Math.SQRT2)));
+function normalCDF(x: number, ?: number = 0, s: number = 1): number {
+  return 0.5 * (1 + erf((x - ?) / (s * Math.SQRT2)));
 }
 function erf(x: number): number {
   const a1 = 0.254829592, a2 = -0.284496736, a3 = 1.421413741, a4 = -1.453152027, a5 = 1.061405429, p = 0.3275911;
@@ -499,29 +499,29 @@ console.log('N(0,1) PDF at x=0:', normalPDF(0, 0, 1).toFixed(4), '(expected: 0.3
 console.log('N(0,1) CDF at x=1.96:', normalCDF(1.96).toFixed(4), '(expected: 0.975)');
 
 // --- t-Distribution and Hypothesis Testing ---
-function tStatistic(sample: number[], μ0: number): { t: number; df: number; pValue: number } {
+function tStatistic(sample: number[], ?0: number): { t: number; df: number; pValue: number } {
   const n = sample.length, mean = sample.reduce((s, v) => s + v, 0) / n;
   const variance = sample.reduce((s, v) => s + (v - mean) ** 2, 0) / (n - 1);
   const se = Math.sqrt(variance / n);
-  const t = (mean - μ0) / se;
+  const t = (mean - ?0) / se;
   // Approximate p-value using normal for large df
   const pValue = 2 * (1 - normalCDF(Math.abs(t)));
   return { t: +t.toFixed(4), df: n - 1, pValue: +pValue.toFixed(4) };
 }
 const tResult = tStatistic([2.1, 2.4, 2.3, 2.2, 2.5, 2.3, 2.0, 2.6], 2.0);
-console.log('\nOne-sample t-test (H₀: μ=2.0): t=', tResult.t, 'p=', tResult.pValue);
+console.log('\nOne-sample t-test (H0: ?=2.0): t=', tResult.t, 'p=', tResult.pValue);
 
 // --- Chi-Squared Goodness of Fit ---
-function chiSquared(observed: number[], expected: number[]): { χ²: number; pValue: number } {
-  const χ² = observed.reduce((s, o, i) => s + (o - expected[i]) ** 2 / expected[i], 0);
+function chiSquared(observed: number[], expected: number[]): { ??: number; pValue: number } {
+  const ?? = observed.reduce((s, o, i) => s + (o - expected[i]) ** 2 / expected[i], 0);
   const df = observed.length - 1;
   // Approximate p-value
-  const pValue = 1 - normalCDF((χ² - df) / Math.sqrt(2 * df));
-  return { χ²: +χ².toFixed(4), pValue: +pValue.toFixed(4) };
+  const pValue = 1 - normalCDF((?? - df) / Math.sqrt(2 * df));
+  return { ??: +??.toFixed(4), pValue: +pValue.toFixed(4) };
 }
 // Fair die? Observed rolls: [18, 22, 20, 19, 21, 20], expected: 20 each
 const chi = chiSquared([18, 22, 20, 19, 21, 20], [20, 20, 20, 20, 20, 20]);
-console.log('\nχ² goodness of fit (die): χ²=', chi.χ², 'p=', chi.pValue);
+console.log('\n?? goodness of fit (die): ??=', chi.??, 'p=', chi.pValue);
 
 // --- Correlation and Covariance ---
 function covariance(xs: number[], ys: number[]): number {
@@ -549,6 +549,98 @@ const ci = confidenceInterval([2.1, 2.4, 2.3, 2.2, 2.5, 2.3, 2.0, 2.6], 0.95);
 console.log('\n95% CI:', `[${ci.lower}, ${ci.upper}], mean=${ci.mean}`);
 ```
 
+
+// probability statistics
+// linear-algebra-calculus implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'probability statistics', data: { topic: 'linear-algebra-calculus' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// probability statistics - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'engineering-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'engineering-mathematics', chapter: 'probability statistics' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('engineering-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Probability quantifies uncertainty via Kolmogorov's axioms
@@ -678,7 +770,7 @@ const xs = [1, 2, 3, 4, 5];
 const ys = [5.1, 8.2, 11.3, 14.1, 17.0];
 const { beta0, beta1, r2 } = linearRegression(xs, ys);
 console.log(`y = ${beta0.toFixed(2)} + ${beta1.toFixed(2)}x`);
-console.log(`R² = ${r2.toFixed(4)}`);
+console.log(`R? = ${r2.toFixed(4)}`);
 ```
 
 ## Real-World Application: A/B Testing
@@ -700,9 +792,9 @@ $$n = \frac{(z_{\alpha/2} + z_\beta)^2 \cdot 2\sigma^2}{\delta^2}$$
 
 where $\delta$ is the minimum detectable effect.
 
-**Sequential Testing:** Traditional A/B tests fix sample size upfront. Sequential testing (using the SPRT — Sequential Probability Ratio Test) allows early stopping when results are conclusive, reducing the expected sample size by up to 50%.
+**Sequential Testing:** Traditional A/B tests fix sample size upfront. Sequential testing (using the SPRT ? Sequential Probability Ratio Test) allows early stopping when results are conclusive, reducing the expected sample size by up to 50%.
 
-**Example:** A website tests a new checkout button. Version A (n=1000) converts at 8.2%; Version B (n=1000) converts at 9.7%. The two-proportion z-test yields $z = 1.21$, $p = 0.226$ — not statistically significant at $\alpha = 0.05$. The experiment needs a larger sample or a larger effect.
+**Example:** A website tests a new checkout button. Version A (n=1000) converts at 8.2%; Version B (n=1000) converts at 9.7%. The two-proportion z-test yields $z = 1.21$, $p = 0.226$ ? not statistically significant at $\alpha = 0.05$. The experiment needs a larger sample or a larger effect.
 
 ```typescript
 function twoProportionZTest(
@@ -719,7 +811,7 @@ function twoProportionZTest(
 
 const { z, pValue } = twoProportionZTest(82, 1000, 97, 1000);
 console.log(`z = ${z.toFixed(3)}, p = ${pValue.toFixed(4)}`);
-// z ≈ -1.21, p ≈ 0.226 — not significant
+// z ? -1.21, p ? 0.226 ? not significant
 ```
 
 ### TypeScript: Bootstrap Resampling

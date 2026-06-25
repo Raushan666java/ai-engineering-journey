@@ -1,7 +1,7 @@
-# Chapter 9 — AI System Design & Architecture
+# Chapter 9 � AI System Design & Architecture
 
 **Duration:** 2 weeks, ~25 hours
-**Goal:** Architect production AI systems — RAG pipelines, agent infrastructures, and cost-optimized serving stacks. Make design decisions you can defend in a system-design interview.
+**Goal:** Architect production AI systems � RAG pipelines, agent infrastructures, and cost-optimized serving stacks. Make design decisions you can defend in a system-design interview.
 
 ---
 
@@ -26,16 +26,16 @@
 
 ## 9.1 RAG System Architecture Patterns
 
-### Pattern 1 — Naive RAG (Basic)
+### Pattern 1 � Naive RAG (Basic)
 
 ```
-User Query → Embed → Vector Search → Top-K Chunks → LLM → Response
+User Query ? Embed ? Vector Search ? Top-K Chunks ? LLM ? Response
 ```
 
 Simple, but every query pays the full cost. No query rewriting, no re-ranking, no context refinement.
 
 ```python
-# Naive RAG — one-shot retrieval + generation
+# Naive RAG � one-shot retrieval + generation
 from openai import OpenAI
 import chromadb
 
@@ -71,13 +71,13 @@ def naive_rag(query: str) -> str:
 
 **When to use:** Prototypes, internal tools, low QPS (< 10 req/min).
 
-### Pattern 2 — Agentic RAG (Advanced)
+### Pattern 2 � Agentic RAG (Advanced)
 
 ```
-User Query → Query Rewriter → Multi-Query Expansion → 
-    Parallel Vector Searches → Re-Ranker → 
-    Context Builder → LLM → Response Validation → 
-    Hallucination Check → Response
+User Query ? Query Rewriter ? Multi-Query Expansion ? 
+    Parallel Vector Searches ? Re-Ranker ? 
+    Context Builder ? LLM ? Response Validation ? 
+    Hallucination Check ? Response
 ```
 
 Each step is a lightweight LLM call or a deterministic function. More latency, dramatically better quality.
@@ -163,20 +163,20 @@ def agentic_rag(query: str) -> str:
     # Step 5: Validate
     validation = validate_response(query, context, response)
     if validation.is_hallucinated:
-        return response + "\n\n⚠️ Note: Some claims could not be verified against the provided context."
+        return response + "\n\n?? Note: Some claims could not be verified against the provided context."
 
     return response
 ```
 
-### Pattern 3 — Multi-Hop RAG
+### Pattern 3 � Multi-Hop RAG
 
 For questions that require synthesizing information from multiple documents where no single chunk contains the answer.
 
 ```
-Query → Extract entities → Find related chunks → 
-    First-hop retrieval → Extract new entities → 
-    Second-hop retrieval → Cross-document synthesis → 
-    LLM → Response
+Query ? Extract entities ? Find related chunks ? 
+    First-hop retrieval ? Extract new entities ? 
+    Second-hop retrieval ? Cross-document synthesis ? 
+    LLM ? Response
 ```
 
 ```python
@@ -220,13 +220,13 @@ def multi_hop_rag(query: str) -> str:
 ### Three Layers of AI Cache
 
 ```
-┌────────────────────────────┐
-│  L1: Prompt Cache (in-memory) │ ← Exact query match, TTL seconds
-├────────────────────────────┤
-│  L2: Semantic Cache (vector) │ ← Similar query match, cosine > 0.95
-├────────────────────────────┤
-│  L3: KV Cache (model-level)  │ ← Reused across turns in same session
-└────────────────────────────┘
++----------------------------+
+�  L1: Prompt Cache (in-memory) � ? Exact query match, TTL seconds
++----------------------------�
+�  L2: Semantic Cache (vector) � ? Similar query match, cosine > 0.95
++----------------------------�
+�  L3: KV Cache (model-level)  � ? Reused across turns in same session
++----------------------------+
 ```
 
 ### L1: Prompt Cache (Exact Match)
@@ -417,7 +417,7 @@ print(f"Estimated daily cost (10K req): ${cost.total_cost * 10000:.2f}")
 
 | Strategy | Savings | Tradeoff |
 |----------|---------|----------|
-| Model tiering (simple queries → cheap model) | 40-70% | Complex queries may degrade if misrouted |
+| Model tiering (simple queries ? cheap model) | 40-70% | Complex queries may degrade if misrouted |
 | Prompt caching (exact match) | 30-50% hit rate on repeated queries | Extra memory, cache invalidation |
 | Semantic caching (similar match) | 15-30% additional hit rate | Compute for similarity search, lower precision |
 | KV cache reuse across turns | 50-80% latency reduction per turn | State management complexity |
@@ -691,36 +691,36 @@ async def multi_region_search(
 ### Multi-Agent System Architecture
 
 ```
-                         ┌─────────────┐
-                         │ API Gateway  │
-                         │ (rate limit, │
-                         │  auth, route)│
-                         └──────┬──────┘
-                                │
-                    ┌───────────┴───────────┐
-                    │    Agent Supervisor    │
-                    │  (orchestration layer) │
-                    └───────────┬───────────┘
-                                │
-         ┌──────────────────────┼──────────────────────┐
-         │                      │                      │
-    ┌────┴────┐          ┌─────┴─────┐          ┌─────┴────┐
-    │ Agent A │          │  Agent B  │          │  Agent C  │
-    │(search) │          │ (analyze) │          │ (respond) │
-    └────┬────┘          └─────┬─────┘          └─────┬────┘
-         │                     │                      │
-         └─────────────────────┼──────────────────────┘
-                               │
-                    ┌──────────┴──────────┐
-                    │     Message Bus      │
-                    │  (Redis / RabbitMQ)  │
-                    ├─────────────────────┤
-                    │    State Store       │
-                    │  (Postgres / Redis)  │
-                    ├─────────────────────┤
-                    │    Tool Registry     │
-                    │  (MCP server list)   │
-                    └─────────────────────┘
+                         +-------------+
+                         � API Gateway  �
+                         � (rate limit, �
+                         �  auth, route)�
+                         +-------------+
+                                �
+                    +-----------------------+
+                    �    Agent Supervisor    �
+                    �  (orchestration layer) �
+                    +-----------------------+
+                                �
+         +----------------------+----------------------+
+         �                      �                      �
+    +---------+          +-----------+          +----------+
+    � Agent A �          �  Agent B  �          �  Agent C  �
+    �(search) �          � (analyze) �          � (respond) �
+    +---------+          +-----------+          +----------+
+         �                     �                      �
+         +---------------------+----------------------+
+                               �
+                    +---------------------+
+                    �     Message Bus      �
+                    �  (Redis / RabbitMQ)  �
+                    +---------------------�
+                    �    State Store       �
+                    �  (Postgres / Redis)  �
+                    +---------------------�
+                    �    Tool Registry     �
+                    �  (MCP server list)   �
+                    +---------------------+
 ```
 
 ### Tool Registry
@@ -1041,6 +1041,46 @@ class AIGateway:
 
 ---
 
+
+interface SanitizeResult { cleaned: string; removed: string[]; warnings: string[] }
+class InputSanitizer {
+  stripHTML(input: string): string { return input.replace(/<[^>]*>/g, "") }
+  escapeSQL(input: string): string { return input.replace(/'/g,"''").replace(/--/g,"").replace(/;/g,"") }
+  sanitize(input: string): SanitizeResult {
+    const removed: string[] = []; const warnings: string[] = []
+    let cleaned = input
+    if(/<script/i.test(cleaned)) { removed.push("script tags"); cleaned = cleaned.replace(/<script[\s\S]*?<\/script>/gi,"") }
+    if(/['"];/.test(cleaned)) { warnings.push("Possible SQL injection"); cleaned = this.escapeSQL(cleaned) }
+    if(input!==cleaned) warnings.push("Content was modified")
+    return {cleaned,removed,warnings}
+  }
+}
+class PIIDetector {
+  private patterns: [RegExp,string][] = [
+    [/\b\d{3}-\d{2}-\d{4}\b/g, "SSN"],[/(?:\d{4}-){3}\d{4}\b/g, "CreditCard"],[/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g, "Email"]
+  ]
+  detect(text: string): Array<{type:string;value:string;position:number}> {
+    const found: Array<{type:string;value:string;position:number}> = []
+    for(const [pattern,type] of this.patterns) {
+      let match: RegExpExecArray|null
+      while((match = pattern.exec(text)) !== null) { found.push({type,value:match[0],position:match.index}) }
+    }
+    return found
+  }
+  redact(text: string): string { let result = text
+    for(const [pattern] of this.patterns) result = result.replace(pattern,"[REDACTED]")
+    return result
+  }
+}
+class PromptInjectionGuard {
+  private dangerousPatterns = [/ignore.*previous/i,/forget.*instruction/i,/system.*prompt/i,/new.*role/i,/you are now/i]
+  check(input: string): { safe: boolean; flags: string[] } {
+    const flags: string[] = []
+    for(const p of this.dangerousPatterns) if(p.test(input)) flags.push(`Pattern: ${p.source}`)
+    return {safe:flags.length===0,flags}
+  }
+}
+export { InputSanitizer, PIIDetector, PromptInjectionGuard }
 ## Exercises
 
 1. **Cost model:** Build a spreadsheet or Python script that estimates daily cost for a RAG system at 10K, 100K, and 1M queries/day. Identify the top-3 cost drivers.

@@ -1,7 +1,7 @@
 # Chapter 1: Introduction to Digital Logic
 
 > **Prereq:** Basic arithmetic (decimal operations).
-> **Next:** Chapter 2 (Boolean Algebra) — digital circuits operate on binary values manipulated by Boolean logic.
+> **Next:** Chapter 2 (Boolean Algebra) ? digital circuits operate on binary values manipulated by Boolean logic.
 
 ## Learning Objectives
 
@@ -50,7 +50,7 @@ flowchart LR
 
 ### 1.1 Analog vs Digital Systems
 
-An **analog** signal is continuous in both time and amplitude. It can take any value within a range. A **digital** signal is discrete — it takes only a finite set of values, typically two (0 and 1) in binary logic.
+An **analog** signal is continuous in both time and amplitude. It can take any value within a range. A **digital** signal is discrete ? it takes only a finite set of values, typically two (0 and 1) in binary logic.
 
 | Property | Analog | Digital |
 |----------|--------|---------|
@@ -81,11 +81,11 @@ A positional number system represents quantities using an ordered set of digits,
 
 N = d_{n-1} * r^{n-1} + d_{n-2} * r^{n-2} + ... + d_0 * r^0 + d_{-1} * r^{-1} + ... + d_{-m} * r^{-m}
 
-where each digit *d_i* satisfies 0 ≤ *d_i* ≤ *r* - 1.
+where each digit *d_i* satisfies 0 = *d_i* = *r* - 1.
 
 #### 1.2.1 Decimal System (Base 10)
 
-The decimal system employs ten digits {0, 1, 2, 3, 4, 5, 6, 7, 8, 9} with positional weights that are powers of ten. Example: 345.67 = 3×10² + 4×10¹ + 5×10⁰ + 6×10⁻¹ + 7×10⁻².
+The decimal system employs ten digits {0, 1, 2, 3, 4, 5, 6, 7, 8, 9} with positional weights that are powers of ten. Example: 345.67 = 3?10? + 4?10? + 5?10? + 6?10?? + 7?10??.
 
 #### 1.2.2 Binary System (Base 2)
 
@@ -109,13 +109,13 @@ The hexadecimal system employs sixteen digits {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, 
 
 To convert a number from any base to decimal, expand the number using the positional weight formula and sum.
 
-**Algorithm**: For each digit *d_i* at position *i* (where position 0 is the least significant digit), compute *d_i* × *r^i* and accumulate the sum.
+**Algorithm**: For each digit *d_i* at position *i* (where position 0 is the least significant digit), compute *d_i* ? *r^i* and accumulate the sum.
 
 **Example**: Convert 2A3_16 to decimal.
 
-2A3_16 = 2 × 16² + A × 16¹ + 3 × 16⁰ = 2 × 256 + 10 × 16 + 3 × 1 = 512 + 160 + 3 = 675_10
+2A3_16 = 2 ? 16? + A ? 16? + 3 ? 16? = 2 ? 256 + 10 ? 16 + 3 ? 1 = 512 + 160 + 3 = 675_10
 
-#### 1.3.2 Conversion from Decimal — Integer Part
+#### 1.3.2 Conversion from Decimal ? Integer Part
 
 **Repeated division algorithm**:
 1. Divide the integer by the target base *r*.
@@ -136,7 +136,7 @@ function decimalToBase(n: number, base: number): string {
 }
 ```
 
-#### 1.3.3 Conversion from Decimal — Fractional Part
+#### 1.3.3 Conversion from Decimal ? Fractional Part
 
 **Repeated multiplication algorithm**:
 1. Multiply the fraction by the target base *r*.
@@ -165,15 +165,15 @@ Digital systems require methods for representing negative integers. Four princip
 
 #### 1.4.1 Sign-Magnitude
 
-The most significant bit (MSB) indicates sign: 0 for positive, 1 for negative. The remaining bits represent the magnitude. For an *n*-bit word, the range is −(2^{n-1} − 1) to +(2^{n-1} − 1). Two representations for zero exist: +0 and −0.
+The most significant bit (MSB) indicates sign: 0 for positive, 1 for negative. The remaining bits represent the magnitude. For an *n*-bit word, the range is -(2^{n-1} - 1) to +(2^{n-1} - 1). Two representations for zero exist: +0 and -0.
 
 #### 1.4.2 Ones' Complement
 
-Negative numbers are formed by complementing every bit of the positive representation. The range is −(2^{n-1} − 1) to +(2^{n-1} − 1). Two representations for zero persist.
+Negative numbers are formed by complementing every bit of the positive representation. The range is -(2^{n-1} - 1) to +(2^{n-1} - 1). Two representations for zero persist.
 
 #### 1.4.3 Two's Complement
 
-Negative numbers are formed by taking the ones' complement and adding 1. The range is −2^{n-1} to +(2^{n-1} − 1). A unique representation for zero exists. Two's complement is the dominant signed representation because addition hardware need not distinguish signed from unsigned operands.
+Negative numbers are formed by taking the ones' complement and adding 1. The range is -2^{n-1} to +(2^{n-1} - 1). A unique representation for zero exists. Two's complement is the dominant signed representation because addition hardware need not distinguish signed from unsigned operands.
 
 **Algorithm to compute two's complement**: Invert all bits, then add 1.
 
@@ -203,28 +203,28 @@ function twosComplement(bits: string): string {
 | +2 | 0010 |
 | +1 | 0001 |
 | 0 | 0000 |
-| −1 | 1111 |
-| −2 | 1110 |
-| −3 | 1101 |
-| −4 | 1100 |
-| −5 | 1011 |
-| −6 | 1010 |
-| −7 | 1001 |
-| −8 | 1000 |
+| -1 | 1111 |
+| -2 | 1110 |
+| -3 | 1101 |
+| -4 | 1100 |
+| -5 | 1011 |
+| -6 | 1010 |
+| -7 | 1001 |
+| -8 | 1000 |
 
 #### 1.4.4 Sign Extension
 
 To widen a two's complement number from *m* bits to *n* bits (*n* > *m*), copy the sign bit into all added higher-order bit positions. This operation preserves the numeric value.
 
-Example: Extend 1011 (−5 in 4 bits) to 8 bits: 11111011. The value remains −5.
+Example: Extend 1011 (-5 in 4 bits) to 8 bits: 11111011. The value remains -5.
 
 ### 1.5 Overflow Detection
 
-Overflow occurs when the result of an arithmetic operation exceeds the representable range of the number system. In two's complement addition, overflow is detected by comparing the carry into the sign bit with the carry out of the sign bit. Overflow = C_in ⊕ C_out.
+Overflow occurs when the result of an arithmetic operation exceeds the representable range of the number system. In two's complement addition, overflow is detected by comparing the carry into the sign bit with the carry out of the sign bit. Overflow = C_in ? C_out.
 
 **Cases**:
-- Adding two positive numbers yields a negative result → overflow
-- Adding two negative numbers yields a positive result → overflow
+- Adding two positive numbers yields a negative result ? overflow
+- Adding two negative numbers yields a positive result ? overflow
 - Adding a positive and negative number never overflows
 
 ```typescript
@@ -273,7 +273,7 @@ function bcdAdd(a: number, b: number): { sum: number; carry: number } {
 
 Gray code (reflected binary code) is a binary sequence wherein successive values differ in exactly one bit position. This property is valuable for reducing switching errors in mechanical encoders and for state machines where single-bit transitions prevent glitches.
 
-**Construction**: The *n*-bit Gray code is recursively generated from the (*n* − 1)-bit Gray code by prefixing 0 to the existing sequence and then 1 to the reversed sequence.
+**Construction**: The *n*-bit Gray code is recursively generated from the (*n* - 1)-bit Gray code by prefixing 0 to the existing sequence and then 1 to the reversed sequence.
 
 | Decimal | Binary | Gray Code |
 |---------|--------|-----------|
@@ -286,9 +286,9 @@ Gray code (reflected binary code) is a binary sequence wherein successive values
 | 6 | 0110 | 0101 |
 | 7 | 0111 | 0100 |
 
-**Binary to Gray**: G_i = B_i ⊕ B_{i+1}. For example, binary 1011 → Gray: G_3 = 1, G_2 = 1⊕0=1, G_1 = 0⊕1=1, G_0 = 1⊕1=0 → 1110.
+**Binary to Gray**: G_i = B_i ? B_{i+1}. For example, binary 1011 ? Gray: G_3 = 1, G_2 = 1?0=1, G_1 = 0?1=1, G_0 = 1?1=0 ? 1110.
 
-**Gray to Binary**: B_i = G_i ⊕ B_{i+1}, computed from MSB to LSB.
+**Gray to Binary**: B_i = G_i ? B_{i+1}, computed from MSB to LSB.
 
 ```typescript
 function binaryToGray(binary: string): string {
@@ -324,7 +324,7 @@ function computeParity(data: string, even: boolean = true): string {
 
 #### 1.8.2 Hamming Code
 
-Hamming codes can detect and correct single-bit errors. For data bits *d*, the number of parity bits *p* satisfies 2^p ≥ d + p + 1. Parity bits occupy positions that are powers of 2.
+Hamming codes can detect and correct single-bit errors. For data bits *d*, the number of parity bits *p* satisfies 2^p = d + p + 1. Parity bits occupy positions that are powers of 2.
 
 For a (7,4) Hamming code with 4 data bits and 3 parity bits:
 - Positions: 1 (P1), 2 (P2), 3 (D1), 4 (P3), 5 (D2), 6 (D3), 7 (D4)
@@ -354,7 +354,7 @@ Convert 110101.101_2 to decimal.
 
 **Solution**: Expand using positional weights:
 
-110101.101_2 = 1×2^5 + 1×2^4 + 0×2^3 + 1×2^2 + 0×2^1 + 1×2^0 + 1×2^{-1} + 0×2^{-2} + 1×2^{-3}
+110101.101_2 = 1?2^5 + 1?2^4 + 0?2^3 + 1?2^2 + 0?2^1 + 1?2^0 + 1?2^{-1} + 0?2^{-2} + 1?2^{-3}
 
 = 32 + 16 + 0 + 4 + 0 + 1 + 0.5 + 0 + 0.125 = 53.625_10
 
@@ -362,24 +362,24 @@ Convert 110101.101_2 to decimal.
 
 Convert 89.375_10 to binary.
 
-**Solution**: Integer part (89): 89 ÷ 2 = 44 rem 1 (LSB); 44 ÷ 2 = 22 rem 0; 22 ÷ 2 = 11 rem 0; 11 ÷ 2 = 5 rem 1; 5 ÷ 2 = 2 rem 1; 2 ÷ 2 = 1 rem 0; 1 ÷ 2 = 0 rem 1 (MSB). Reading upward: 1011001_2.
+**Solution**: Integer part (89): 89 ? 2 = 44 rem 1 (LSB); 44 ? 2 = 22 rem 0; 22 ? 2 = 11 rem 0; 11 ? 2 = 5 rem 1; 5 ? 2 = 2 rem 1; 2 ? 2 = 1 rem 0; 1 ? 2 = 0 rem 1 (MSB). Reading upward: 1011001_2.
 
-Fractional part (0.375): 0.375 × 2 = 0.750 int 0 (MSB); 0.750 × 2 = 1.500 int 1; 0.500 × 2 = 1.000 int 1 (LSB). Reading downward: 011_2.
+Fractional part (0.375): 0.375 ? 2 = 0.750 int 0 (MSB); 0.750 ? 2 = 1.500 int 1; 0.500 ? 2 = 1.000 int 1 (LSB). Reading downward: 011_2.
 
 Result: 1011001.011_2
 
 ### Example 1.3: Two's Complement Arithmetic with Overflow Detection
 
-Compute 7 + 5 and 7 + (−5) using 4-bit two's complement. Detect overflow.
+Compute 7 + 5 and 7 + (-5) using 4-bit two's complement. Detect overflow.
 
 **Solution**: 
-+7 = 0111_2; +5 = 0101_2; −5 = 1011_2.
++7 = 0111_2; +5 = 0101_2; -5 = 1011_2.
 
-7 + 5: 0111 + 0101 = 1100. Carry into sign = 0, carry out = 0. Overflow = 0⊕0 = 0. Result: 1100 = −4. This is correct (no overflow) but the result is negative because we exceeded the positive range.
+7 + 5: 0111 + 0101 = 1100. Carry into sign = 0, carry out = 0. Overflow = 0?0 = 0. Result: 1100 = -4. This is correct (no overflow) but the result is negative because we exceeded the positive range.
 
-Wait — 7 + 5 = 12, but 4-bit two's complement max is 7. So actually 1100 is −4, and overflow = Cin⊕Cout = 0⊕0 = 0? Let me recheck: 0111 + 0101 = 1100. Cin_to_MSB = carry from bit 2 to bit 3 = 1 (1+0+carry1=10). Cout = 0 (no carry out of MSB). Overflow = 1⊕0 = 1. Yes, overflow occurred.
+Wait ? 7 + 5 = 12, but 4-bit two's complement max is 7. So actually 1100 is -4, and overflow = Cin?Cout = 0?0 = 0? Let me recheck: 0111 + 0101 = 1100. Cin_to_MSB = carry from bit 2 to bit 3 = 1 (1+0+carry1=10). Cout = 0 (no carry out of MSB). Overflow = 1?0 = 1. Yes, overflow occurred.
 
-7 + (−5): 0111 + 1011 = 1 0010. Discard carry-out. Cin = 1, Cout = 1. Overflow = 1⊕1 = 0. Result: 0010 = +2. Correct, no overflow.
+7 + (-5): 0111 + 1011 = 1 0010. Discard carry-out. Cin = 1, Cout = 1. Overflow = 1?1 = 0. Result: 0010 = +2. Correct, no overflow.
 
 ### Example 1.4: BCD Addition
 
@@ -392,9 +392,9 @@ Add 7 (0111_BCD) and 6 (0110_BCD).
 Generate a (7,4) Hamming code for data bits 1011.
 
 **Solution**: Data bits: D1=1, D2=0, D3=1, D4=1.
-- P1 = D1⊕D2⊕D4 = 1⊕0⊕1 = 0
-- P2 = D1⊕D3⊕D4 = 1⊕1⊕1 = 1
-- P3 = D2⊕D3⊕D4 = 0⊕1⊕1 = 0
+- P1 = D1?D2?D4 = 1?0?1 = 0
+- P2 = D1?D3?D4 = 1?1?1 = 1
+- P3 = D2?D3?D4 = 0?1?1 = 0
 
 Codeword: P1 P2 D1 P3 D2 D3 D4 = 0 1 1 0 0 1 1 = 0110011
 
@@ -402,20 +402,20 @@ Codeword: P1 P2 D1 P3 D2 D3 D4 = 0 1 1 0 0 1 1 = 0110011
 
 | Representation | Zero Count | Range (n bits) | Hardware Complexity |
 |---------------|-----------|----------------|---------------------|
-| Sign-Magnitude | 2 (+0, -0) | −(2^{n-1}−1) to +(2^{n-1}−1) | Separate sign logic |
-| Ones' Complement | 2 | −(2^{n-1}−1) to +(2^{n-1}−1) | End-around carry |
-| Two's Complement | 1 | −2^{n-1} to +(2^{n-1}−1) | Single adder for all |
-| BCD | 1 (0000) | 0 to 10^{n/4}−1 | Correction logic needed |
+| Sign-Magnitude | 2 (+0, -0) | -(2^{n-1}-1) to +(2^{n-1}-1) | Separate sign logic |
+| Ones' Complement | 2 | -(2^{n-1}-1) to +(2^{n-1}-1) | End-around carry |
+| Two's Complement | 1 | -2^{n-1} to +(2^{n-1}-1) | Single adder for all |
+| BCD | 1 (0000) | 0 to 10^{n/4}-1 | Correction logic needed |
 
 ### Quick Reference
 
 | Conversion | Method | Example |
 |-----------|--------|---------|
-| Binary → Decimal | Sum powers of 2 | 1101 = 8+4+0+1 = 13 |
-| Decimal → Binary | Repeat divide by 2 | 13 ÷ 2 = 6 r1 → 1101 |
-| Binary → Hex | Group 4 bits | 1101 0110 = D6 |
-| Binary → Gray | G_i = B_i ⊕ B_{i+1} | 1011 → 1110 |
-| Gray → Binary | B_i = G_i ⊕ B_{i+1} | 1110 → 1011 |
+| Binary ? Decimal | Sum powers of 2 | 1101 = 8+4+0+1 = 13 |
+| Decimal ? Binary | Repeat divide by 2 | 13 ? 2 = 6 r1 ? 1101 |
+| Binary ? Hex | Group 4 bits | 1101 0110 = D6 |
+| Binary ? Gray | G_i = B_i ? B_{i+1} | 1011 ? 1110 |
+| Gray ? Binary | B_i = G_i ? B_{i+1} | 1110 ? 1011 |
 
 ### Cross-Application Matrix
 
@@ -428,11 +428,11 @@ Codeword: P1 P2 D1 P3 D2 D3 D4 = 0 1 1 0 0 1 1 = 0110011
 
 ## Practical Takeaways
 
-1. **Two's complement is universal** — learn it well. The same adder circuit handles signed and unsigned addition, simplifying ALU design.
-2. **Overflow ≠ carry** — carry indicates unsigned overflow; XOR of carry-in/carry-out indicates signed overflow.
-3. **Gray code prevents glitches** — when crossing clock domains or using mechanical encoders, Gray code eliminates race conditions.
-4. **BCD correction is simple** — anytime a BCD sum exceeds 9, add 6 to produce the correct digit and carry.
-5. **Parity is cheap, Hamming is robust** — parity adds 1 bit for detection; Hamming adds log₂(n) bits for single-error correction.
+1. **Two's complement is universal** ? learn it well. The same adder circuit handles signed and unsigned addition, simplifying ALU design.
+2. **Overflow ? carry** ? carry indicates unsigned overflow; XOR of carry-in/carry-out indicates signed overflow.
+3. **Gray code prevents glitches** ? when crossing clock domains or using mechanical encoders, Gray code eliminates race conditions.
+4. **BCD correction is simple** ? anytime a BCD sum exceeds 9, add 6 to produce the correct digit and carry.
+5. **Parity is cheap, Hamming is robust** ? parity adds 1 bit for detection; Hamming adds log2(n) bits for single-error correction.
 
 ## Number System Evolution
 
@@ -494,15 +494,15 @@ class NumberSystemConverter {
 
 const cvt = NumberSystemConverter;
 console.log("=== Conversions ===");
-console.log(`  218 decimal     → ${cvt.decToBin(218)} binary`);
-console.log(`  DA hex          → ${cvt.hexToDec("DA")} decimal`);
-console.log(`  332 octal       → ${cvt.octToDec("332")} decimal`);
-console.log(`  218 decimal     → ${cvt.decToHex(218)} hex`);
-console.log(`  1010 binary     → ${cvt.binToDec("1010")} decimal`);
-console.log(`  15 decimal      → ${cvt.decToOct(15)} octal`);
-console.log(`  11011010 binary → ${cvt.binToHex("11011010")} hex`);
-console.log(`  -6 (4-bit)      → ${cvt.twosComplement(-6, 4)}`);
-console.log(`  1010 (2's C)    → ${cvt.fromTwosComplement("1010")} decimal`);
+console.log(`  218 decimal     ? ${cvt.decToBin(218)} binary`);
+console.log(`  DA hex          ? ${cvt.hexToDec("DA")} decimal`);
+console.log(`  332 octal       ? ${cvt.octToDec("332")} decimal`);
+console.log(`  218 decimal     ? ${cvt.decToHex(218)} hex`);
+console.log(`  1010 binary     ? ${cvt.binToDec("1010")} decimal`);
+console.log(`  15 decimal      ? ${cvt.decToOct(15)} octal`);
+console.log(`  11011010 binary ? ${cvt.binToHex("11011010")} hex`);
+console.log(`  -6 (4-bit)      ? ${cvt.twosComplement(-6, 4)}`);
+console.log(`  1010 (2's C)    ? ${cvt.fromTwosComplement("1010")} decimal`);
 ```
 
 ### Binary Adder Simulation
@@ -638,12 +638,12 @@ console.log(`  589 + 326 = ${BCDAdder.addDecimal(589, 326)} (correct: 915)`);
 
 ```mermaid
 flowchart LR
-    Dec[Decimal<br/>Base 10] -->|÷2 read remainder| Bin[Binary<br/>Base 2]
-    Bin -->|∑ digit × 2ⁿ| Dec
-    Dec -->|÷8 read remainder| Oct[Octal<br/>Base 8]
-    Oct -->|∑ digit × 8ⁿ| Dec
-    Dec -->|÷16 read remainder| Hex[Hex<br/>Base 16]
-    Hex -->|∑ digit × 16ⁿ| Dec
+    Dec[Decimal<br/>Base 10] -->|?2 read remainder| Bin[Binary<br/>Base 2]
+    Bin -->|? digit ? 2n| Dec
+    Dec -->|?8 read remainder| Oct[Octal<br/>Base 8]
+    Oct -->|? digit ? 8n| Dec
+    Dec -->|?16 read remainder| Hex[Hex<br/>Base 16]
+    Hex -->|? digit ? 16n| Dec
     Bin -->|group 4 bits from right| Hex
     Hex -->|expand 1 digit to 4 bits| Bin
     Bin -->|group 3 bits from right| Oct
@@ -656,9 +656,9 @@ flowchart LR
 flowchart TD
     A[Addition Operation] --> Check{Sign of inputs?}
     Check -->|Same sign| Compare{Input sign vs<br/>result sign?}
-    Compare -->|Same| OK[No overflow ✓]
-    Compare -->|Different| OVF[Overflow ✗]
-    Check -->|Different signs| OK2[No overflow ✓<br/>(result always valid)]
+    Compare -->|Same| OK[No overflow ?]
+    Compare -->|Different| OVF[Overflow ?]
+    Check -->|Different signs| OK2[No overflow ?<br/>(result always valid)]
 ```
 
 ### 4-Bit Ripple-Carry Adder
@@ -667,18 +667,18 @@ flowchart TD
 flowchart TD
     subgraph Inputs
         direction LR
-        A0[A₀=1] B0[B₀=0] Cin[C₀=0]
-        A1[A₁=0] B1[B₁=1]
-        A2[A₂=1] B2[B₂=1]
-        A3[A₃=0] B3[B₃=0]
+        A0[A0=1] B0[B0=0] Cin[C0=0]
+        A1[A1=0] B1[B1=1]
+        A2[A2=1] B2[B2=1]
+        A3[A3=0] B3[B3=0]
     end
     subgraph Adders
-        FA0[FA₀] -->|C₁=0| FA1[FA₁]
-        FA1 -->|C₂=1| FA2[FA₂]
-        FA2 -->|C₃=0| FA3[FA₃]
+        FA0[FA0] -->|C1=0| FA1[FA1]
+        FA1 -->|C2=1| FA2[FA2]
+        FA2 -->|C3=0| FA3[FA3]
     end
     subgraph Outputs
-        S0[S₀=1] S1[S₁=0] S2[S₂=1] S3[S₃=1] Cout[C₄=0]
+        S0[S0=1] S1[S1=0] S2[S2=1] S3[S3=1] Cout[C4=0]
     end
     A0 & B0 & Cin --> FA0 --> S0
     A1 & B1 --> FA1 --> S1
@@ -778,6 +778,98 @@ const flipped = test ^ 0b0001000;
 console.log(`Decode (flipped): data=${hammingDecode74(flipped).data.toString(2).padStart(4, '0')}`);
 ```
 
+
+// introduction
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'introduction', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// introduction - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'introduction' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Positional number systems represent quantities using weighted digit positions.
@@ -785,7 +877,7 @@ console.log(`Decode (flipped): data=${hammingDecode74(flipped).data.toString(2).
 - Octal and hexadecimal provide compact notation for binary data.
 - Base conversion between any two radices proceeds via repeated division (integer part) or multiplication (fractional part).
 - Two's complement is the standard signed representation, enabling unified addition hardware.
-- Overflow occurs when the result exceeds the representable range; detect via Cin⊕Cout.
+- Overflow occurs when the result exceeds the representable range; detect via Cin?Cout.
 - BCD encodes decimal digits in 4-bit binary groups for precision-sensitive applications.
 - Gray code ensures single-bit transitions between adjacent values.
 - Error detection and correction codes (parity, Hamming) improve reliability.
@@ -813,7 +905,7 @@ console.log(`Decode (flipped): data=${hammingDecode74(flipped).data.toString(2).
 4. BCD addition of 9 + 7 produces what invalid result requiring correction?
    - A) 1111 (valid), no correction needed
    - B) 1 0000 (valid BCD), no correction
-   - C) 1 0000 (invalid — sum > 9), add 6 to correct
+   - C) 1 0000 (invalid ? sum > 9), add 6 to correct
    - D) 0110 (valid), no correction
 
 5. A (7,4) Hamming code can:
@@ -845,7 +937,7 @@ console.log(`Decode (flipped): data=${hammingDecode74(flipped).data.toString(2).
    c) 0.6875_10 to binary
    d) 101110.101_2 to octal
 
-2. Represent −42 in 8-bit sign-magnitude, ones' complement, and two's complement.
+2. Represent -42 in 8-bit sign-magnitude, ones' complement, and two's complement.
 
 3. Perform the following 6-bit two's complement additions and indicate overflow:
    a) 101011 + 001001
@@ -860,4 +952,4 @@ console.log(`Decode (flipped): data=${hammingDecode74(flipped).data.toString(2).
 
 ### Challenge Problem
 
-Design a circuit that accepts a 4-bit binary number and outputs its two's complement. The circuit should also produce an error flag when the input is 1000 (−8), since this value has no positive counterpart in 4-bit two's complement. Describe the truth table and minimal logic expressions.
+Design a circuit that accepts a 4-bit binary number and outputs its two's complement. The circuit should also produce an error flag when the input is 1000 (-8), since this value has no positive counterpart in 4-bit two's complement. Describe the truth table and minimal logic expressions.

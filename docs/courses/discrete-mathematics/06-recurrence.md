@@ -37,12 +37,12 @@ flowchart LR
     C --> D[Linear Homogeneous Recurrences]
     D --> E[Characteristic Equation]
     E --> F{Distinct or Repeated Roots?}
-    F -->|Distinct| G[a_n = Σ α_i r_i^n]
-    F -->|Repeated| H[a_n = (Σ α_i n^i) r^n]
+    F -->|Distinct| G[a_n = S a_i r_i^n]
+    F -->|Repeated| H[a_n = (S a_i n^i) r^n]
     D --> I[Nonhomogeneous Recurrences]
     I --> J[Particular + Homogeneous Solution]
     A --> K[Generating Functions]
-    K --> L[Algebraic Equation → Coefficients]
+    K --> L[Algebraic Equation ? Coefficients]
     D --> M[Algorithm Analysis]
     M --> N[Master Theorem]
 ```
@@ -59,7 +59,7 @@ The **order** (or degree) of a recurrence is the difference between the largest 
 
 > **One-Sentence Takeaway:** A recurrence relation defines each term using previous terms; without initial conditions the sequence is not uniquely determined.
 >
-> **Pro Tip:** Always specify initial conditions clearly — the recurrence alone is insufficient to determine a unique sequence.
+> **Pro Tip:** Always specify initial conditions clearly ? the recurrence alone is insufficient to determine a unique sequence.
 
 ### 6.2 Solving by Iteration (Forward Substitution)
 
@@ -111,18 +111,18 @@ function solveLinearRecurrence(
     // Distinct real roots
     const r1 = (c1 + Math.sqrt(discriminant)) / 2;
     const r2 = (c1 - Math.sqrt(discriminant)) / 2;
-    // Solve for alpha, beta: a0 = α + β, a1 = α*r1 + β*r2
+    // Solve for alpha, beta: a0 = a + ?, a1 = a*r1 + ?*r2
     const beta = (a1 - a0 * r1) / (r2 - r1);
     const alpha = a0 - beta;
     return alpha * r1 ** n + beta * r2 ** n;
   } else if (discriminant === 0) {
     // Repeated root
     const r = c1 / 2;
-    const beta = (a1 - a0 * r) / r; // n=1 case: a1 = (α + β*1)*r
+    const beta = (a1 - a0 * r) / r; // n=1 case: a1 = (a + ?*1)*r
     const alpha = a0;
     return (alpha + beta * n) * r ** n;
   } else {
-    // Complex roots — return Fibonacci-style via iteration
+    // Complex roots ? return Fibonacci-style via iteration
     let prev2 = a0, prev1 = a1;
     for (let i = 2; i <= n; i++) {
       const curr = c1 * prev1 + c2 * prev2;
@@ -139,7 +139,7 @@ console.log(solveLinearRecurrence(1, 1, 0, 1, 10)); // 55
 
 > **One-Sentence Takeaway:** Linear homogeneous recurrences are solved via the characteristic polynomial; distinct roots give independent $r^n$ terms while repeated roots multiply by powers of $n$.
 >
-> **Pro Tip:** Always write the characteristic equation as $r^k - c_1 r^{k-1} - \dots - c_k = 0$, not $r^k = c_1 r^{k-1} + \dots$ — the sign convention matters when roots are negative.
+> **Pro Tip:** Always write the characteristic equation as $r^k - c_1 r^{k-1} - \dots - c_k = 0$, not $r^k = c_1 r^{k-1} + \dots$ ? the sign convention matters when roots are negative.
 
 ### 6.5 Linear Nonhomogeneous Recurrences
 
@@ -194,14 +194,14 @@ function generatingFunctionCoefficients(
   denominatorRoots: number[],
   limit: number
 ): number[] {
-  // Simple case: G(x) = Σ a_n x^n — use recurrence
+  // Simple case: G(x) = S a_n x^n ? use recurrence
   const result: number[] = [];
   // If we know the closed form via partial fractions, compute directly
   for (let n = 0; n <= limit; n++) {
     let sum = 0;
     for (const root of denominatorRoots) {
       const coeff = 1 / denominatorRoots.reduce((p, r) => r === root ? p : p * (root - r), 1);
-      sum += coeff * (1 / root) ** (n + 1); // Simplified — actual formula depends on partial fraction decomposition
+      sum += coeff * (1 / root) ** (n + 1); // Simplified ? actual formula depends on partial fraction decomposition
     }
     result.push(sum);
   }
@@ -221,11 +221,11 @@ function generatingFunctionCoefficients(
 
 | Algorithm | Recurrence | $a$ | $b$ | $f(n)$ | $\log_b a$ | Case | Complexity |
 |-----------|-----------|-----|-----|--------|------------|------|------------|
-| Linear search | $T(n) = T(n-1) + 1$ | — | — | — | — | — | $\Theta(n)$ |
+| Linear search | $T(n) = T(n-1) + 1$ | ? | ? | ? | ? | ? | $\Theta(n)$ |
 | Binary search | $T(n) = T(n/2) + 1$ | 1 | 2 | $n^0$ | 0 | 2 | $\Theta(\log n)$ |
 | Merge sort | $T(n) = 2T(n/2) + n$ | 2 | 2 | $n^1$ | 1 | 2 | $\Theta(n \log n)$ |
 | Strassen's matrix | $T(n) = 7T(n/2) + n^2$ | 7 | 2 | $n^2$ | $\log_2 7 \approx 2.81$ | 1 | $\Theta(n^{2.81})$ |
-| Median of medians | $T(n) = T(n/5) + T(7n/10) + n$ | — | — | — | — | — | $\Theta(n)$ |
+| Median of medians | $T(n) = T(n/5) + T(7n/10) + n$ | ? | ? | ? | ? | ? | $\Theta(n)$ |
 
 > **One-Sentence Takeaway:** The Master theorem provides immediate closed-form solutions for recurrences of the form $T(n) = aT(n/b) + f(n)$ by comparing $f(n)$ to $n^{\log_b a}$.
 
@@ -240,13 +240,13 @@ function simulateMergeSortCost(n: number): number {
 }
 
 function masterTheorem(a: number, b: number, fExponent: number, logBA: number): string {
-  if (fExponent < logBA) return `Θ(n^${logBA})`;
-  if (fExponent === logBA) return `Θ(n^${logBA} log n)`;
-  return `Θ(n^${fExponent})`;
+  if (fExponent < logBA) return `T(n^${logBA})`;
+  if (fExponent === logBA) return `T(n^${logBA} log n)`;
+  return `T(n^${fExponent})`;
 }
 
-console.log(masterTheorem(2, 2, 1, 1)); // Θ(n log n) — merge sort
-console.log(masterTheorem(1, 2, 0, 0)); // Θ(log n) — binary search
+console.log(masterTheorem(2, 2, 1, 1)); // T(n log n) ? merge sort
+console.log(masterTheorem(1, 2, 0, 0)); // T(log n) ? binary search
 ```
 
 ## Concept Comparison Table
@@ -282,8 +282,8 @@ console.log(masterTheorem(1, 2, 0, 0)); // Θ(log n) — binary search
 | Recurrence Relations | Algorithm complexity analysis | Counting sequences, Catalan numbers | Digital signal processing (IIR filters) | Loan amortization, compound interest |
 | Characteristic Equation | Solving divide-and-conquer recurrences | Fibonacci, derangements | Vibration analysis, differential equations | Population growth models |
 | Generating Functions | Combinatorial generation, partition problems | Sequence manipulation, closed forms | Probability generating functions | Moment-generating functions in statistics |
-| Algorithm Analysis | Merge sort, binary search runtime | — | Embedded system timing analysis | — |
-| Master Theorem | Quick complexity class determination | — | Real-time system scheduling | — |
+| Algorithm Analysis | Merge sort, binary search runtime | ? | Embedded system timing analysis | ? |
+| Master Theorem | Quick complexity class determination | ? | Real-time system scheduling | ? |
 
 ## Chapter Quiz
 
@@ -292,28 +292,28 @@ console.log(masterTheorem(1, 2, 0, 0)); // Θ(log n) — binary search
    - B) 5
    - C) 3
    - D) 7
-   <details><summary>Answer</summary>**B)** 5 — the degree is the furthest back term referenced ($n-5$).</details>
+   <details><summary>Answer</summary>**B)** 5 ? the degree is the furthest back term referenced ($n-5$).</details>
 
 2. Which recurrence corresponds to merge sort's time complexity?
    - A) $T(n) = T(n-1) + 1$
    - B) $T(n) = T(n/2) + 1$
    - C) $T(n) = 2T(n/2) + n$
    - D) $T(n) = 2T(n-1) + 1$
-   <details><summary>Answer</summary>**C)** $T(n) = 2T(n/2) + n$ — splitting into two halves with linear merge cost gives $\Theta(n \log n)$.</details>
+   <details><summary>Answer</summary>**C)** $T(n) = 2T(n/2) + n$ ? splitting into two halves with linear merge cost gives $\Theta(n \log n)$.</details>
 
 3. A recurrence has characteristic roots $r=3$ (multiplicity 2). The general solution is:
    - A) $a_n = \alpha 3^n$
    - B) $a_n = (\alpha + \beta n) 3^n$
    - C) $a_n = \alpha 3^n + \beta (-3)^n$
    - D) $a_n = \alpha 3^n + \beta n 3^n$
-   <details><summary>Answer</summary>**B)** $a_n = (\alpha + \beta n) 3^n$ — repeated roots multiply the $r^n$ term by a polynomial in $n$ of degree one less than multiplicity. (Note: D is also equivalent since $(\alpha + \beta n)3^n$ and $\alpha 3^n + \beta n 3^n$ are the same — but B is the standard form.)</details>
+   <details><summary>Answer</summary>**B)** $a_n = (\alpha + \beta n) 3^n$ ? repeated roots multiply the $r^n$ term by a polynomial in $n$ of degree one less than multiplicity. (Note: D is also equivalent since $(\alpha + \beta n)3^n$ and $\alpha 3^n + \beta n 3^n$ are the same ? but B is the standard form.)</details>
 
 4. For the recurrence $T(n) = 4T(n/2) + n$, the Master theorem gives:
    - A) $\Theta(n^2)$
    - B) $\Theta(n^2 \log n)$
    - C) $\Theta(n \log n)$
    - D) $\Theta(n)$
-   <details><summary>Answer</summary>**A)** $\Theta(n^2)$ — $a=4$, $b=2$, $\log_2 4 = 2$, $f(n) = n = O(n^{2-\epsilon})$, case 1.</details>
+   <details><summary>Answer</summary>**A)** $\Theta(n^2)$ ? $a=4$, $b=2$, $\log_2 4 = 2$, $f(n) = n = O(n^{2-\epsilon})$, case 1.</details>
 
 5. The generating function for $a_n = 3 \cdot 5^n$ is:
    - A) $G(x) = 3/(1 - 5x)$
@@ -326,24 +326,24 @@ console.log(masterTheorem(1, 2, 0, 0)); // Θ(log n) — binary search
 
 **Example 6.1** (Iteration). Solve $a_n = a_{n-1} + 3$, $a_0 = 2$.
 
-*Solution.* $a_1 = 5$, $a_2 = 8$, $a_3 = 11$ — pattern $a_n = 2 + 3n$. Induction confirms.
+*Solution.* $a_1 = 5$, $a_2 = 8$, $a_3 = 11$ ? pattern $a_n = 2 + 3n$. Induction confirms.
 
 **Example 6.2** (Backward substitution). Solve $a_n = 2a_{n-1}$, $a_0 = 3$.
 
 *Solution.* $a_n = 2a_{n-1} = 2(2a_{n-2}) = \cdots = 2^n a_0 = 3 \cdot 2^n$.
 
-**Example 6.3** (Characteristic equation — distinct roots). Solve $a_n = a_{n-1} + 2a_{n-2}$, $a_0 = 2$, $a_1 = 3$.
+**Example 6.3** (Characteristic equation ? distinct roots). Solve $a_n = a_{n-1} + 2a_{n-2}$, $a_0 = 2$, $a_1 = 3$.
 
 *Solution.* Characteristic: $r^2 - r - 2 = 0 \implies r = 2$ or $r = -1$. General: $a_n = \alpha 2^n + \beta (-1)^n$. Using $a_0 = 2 \implies \alpha + \beta = 2$. $a_1 = 3 \implies 2\alpha - \beta = 3$. Solving: $\alpha = 5/3$, $\beta = 1/3$. So $a_n = \frac{5}{3} 2^n + \frac{1}{3} (-1)^n$.
 
-**Example 6.4** (Characteristic — repeated root). Solve $a_n = 4a_{n-1} - 4a_{n-2}$, $a_0 = 1$, $a_1 = 4$.
+**Example 6.4** (Characteristic ? repeated root). Solve $a_n = 4a_{n-1} - 4a_{n-2}$, $a_0 = 1$, $a_1 = 4$.
 
 *Solution.* $r^2 - 4r + 4 = 0 \implies (r-2)^2 = 0 \implies r = 2$ (multiplicity 2). General: $a_n = (\alpha + \beta n)2^n$. $a_0 = \alpha = 1$. $a_1 = (\alpha + \beta)2 = (1+\beta)2 = 4 \implies \beta = 1$. So $a_n = (1 + n)2^n$.
 
 **Example 6.5** (Nonhomogeneous). Solve $a_n = a_{n-1} + 2n$, $a_0 = 1$.
 
 *Solution.* Homogeneous part: $a_n^{(h)} = \alpha \cdot 1^n = \alpha$. Particular: try $a_n^{(p)} = An + B$:
-$An + B = A(n-1) + B + 2n \implies An + B = An - A + B + 2n \implies 0 = -A + 2n \implies A = 2n$ (contradiction — degree mismatch). Try $a_n^{(p)} = An^2 + Bn$:
+$An + B = A(n-1) + B + 2n \implies An + B = An - A + B + 2n \implies 0 = -A + 2n \implies A = 2n$ (contradiction ? degree mismatch). Try $a_n^{(p)} = An^2 + Bn$:
 $An^2 + Bn = A(n-1)^2 + B(n-1) + 2n = A(n^2 - 2n + 1) + Bn - B + 2n$
 Simplify: $An^2 + Bn = An^2 + (-2A + B + 2)n + (A - B)$
 Compare coefficients: $A = A$ (ok); $B = -2A + B + 2 \implies 0 = -2A + 2 \implies A = 1$; $0 = A - B \implies B = 1$.
@@ -353,7 +353,7 @@ So $a_n^{(p)} = n^2 + n$. Thus $a_n = \alpha + n^2 + n$. $a_0 = \alpha = 1 \impl
 
 *Solution.* $G(x) = \sum a_n x^n$, so $G(x) - 2 = 3xG(x)$, thus $G(x)(1 - 3x) = 2$, $G(x) = 2/(1 - 3x) = 2\sum (3x)^n = \sum 2\cdot 3^n x^n$, so $a_n = 2\cdot 3^n$.
 
-**Example 6.7** (Master theorem — binary search). $T(n) = T(n/2) + 1$.
+**Example 6.7** (Master theorem ? binary search). $T(n) = T(n/2) + 1$.
 
 $a = 1$, $b = 2$, $\log_2 1 = 0$, $f(n) = 1 = \Theta(n^0)$. Case 2: $T(n) = \Theta(\log n)$.
 
@@ -416,14 +416,14 @@ const binarySearchCost = (n: number) => simulateDivideConquer(1, 2, n => 1, n =>
 console.log(binarySearchCost(16)); // 4 comparisons
 ```
 
-### 6.8 Master Theorem — Extended Cases
+### 6.8 Master Theorem ? Extended Cases
 
 **Theorem 6.3 (Master Theorem).** For recurrences of the form $T(n) = aT(n/b) + f(n)$:
 
 Let $\alpha = \log_b a$. Compare $f(n)$ to $n^\alpha$:
-- **Case 1:** $f(n) = O(n^{\alpha - \epsilon})$ → $T(n) = \Theta(n^\alpha)$
-- **Case 2:** $f(n) = \Theta(n^\alpha \log^k n)$ → $T(n) = \Theta(n^\alpha \log^{k+1} n)$
-- **Case 3:** $f(n) = \Omega(n^{\alpha + \epsilon})$ and $af(n/b) \leq c f(n)$ for some $c < 1$ → $T(n) = \Theta(f(n))$
+- **Case 1:** $f(n) = O(n^{\alpha - \epsilon})$ ? $T(n) = \Theta(n^\alpha)$
+- **Case 2:** $f(n) = \Theta(n^\alpha \log^k n)$ ? $T(n) = \Theta(n^\alpha \log^{k+1} n)$
+- **Case 3:** $f(n) = \Omega(n^{\alpha + \epsilon})$ and $af(n/b) \leq c f(n)$ for some $c < 1$ ? $T(n) = \Theta(f(n))$
 
 ```typescript
 function masterTheorem(
@@ -436,22 +436,22 @@ function masterTheorem(
   const diff = fExponent - alpha;
 
   if (Math.abs(diff) < 1e-10) {
-    if (fLogPower === -1) return `Θ(n^${alpha} log log n)`;
-    return `Θ(n^${alpha} log^${fLogPower + 1} n)`;
+    if (fLogPower === -1) return `T(n^${alpha} log log n)`;
+    return `T(n^${alpha} log^${fLogPower + 1} n)`;
   }
-  if (diff < 0) return `Θ(n^${alpha.toFixed(2)})`;
-  if (diff > 0) return `Θ(n^${fExponent})`;
+  if (diff < 0) return `T(n^${alpha.toFixed(2)})`;
+  if (diff > 0) return `T(n^${fExponent})`;
   return "Check regularity condition";
 }
 
-console.log(masterTheorem(2, 2, 1, 0));   // Merge sort: Θ(n log n)
-console.log(masterTheorem(1, 2, 0, 0));   // Binary search: Θ(log n)
-console.log(masterTheorem(4, 2, 2, 0));   // Case 2: Θ(n² log n)
-console.log(masterTheorem(2, 2, 2, 0));   // Case 3: Θ(n²)
-console.log(masterTheorem(3, 4, 1, 0));   // Case 1: Θ(n^0.79)
+console.log(masterTheorem(2, 2, 1, 0));   // Merge sort: T(n log n)
+console.log(masterTheorem(1, 2, 0, 0));   // Binary search: T(log n)
+console.log(masterTheorem(4, 2, 2, 0));   // Case 2: T(n? log n)
+console.log(masterTheorem(2, 2, 2, 0));   // Case 3: T(n?)
+console.log(masterTheorem(3, 4, 1, 0));   // Case 1: T(n^0.79)
 ```
 
-### 6.9 Generating Functions — Extended Examples
+### 6.9 Generating Functions ? Extended Examples
 
 A **generating function** encodes a sequence as coefficients of a power series: $G(x) = \sum_{n=0}^\infty a_n x^n$.
 
@@ -476,7 +476,7 @@ console.log(seqToGeneratingFunction(fib));
 
 $$F(x) = \frac{x}{1 - x - x^2}$$
 
-### 6.10 Nonhomogeneous Recurrences — Root Conflict Handling
+### 6.10 Nonhomogeneous Recurrences ? Root Conflict Handling
 
 When the nonhomogeneous term matches a characteristic root, multiply the particular solution by $n^m$ where $m$ is the root multiplicity.
 
@@ -497,7 +497,7 @@ Particular: $a_n^{(p)} = -2n \cdot 2^n$. General: $a_n = \alpha \cdot 2^n + \bet
 Using $a_0 = \alpha + \beta = 0$, $a_1 = 2\alpha + 3\beta - 4 = 1$, we get $\alpha = 1$, $\beta = -1$.
 Thus $a_n = 2^n - 3^n - 2n \cdot 2^n$.
 
-**Example 6.11** (Master theorem — Strassen's matrix multiplication). $T(n) = 7T(n/2) + O(n^2)$.
+**Example 6.11** (Master theorem ? Strassen's matrix multiplication). $T(n) = 7T(n/2) + O(n^2)$.
 
 $a = 7$, $b = 2$, $\alpha = \log_2 7 \approx 2.807$, $f(n) = n^2 = O(n^{2.807 - 0.807})$. Case 1: $T(n) = \Theta(n^{\log_2 7}) \approx \Theta(n^{2.807})$.
 
@@ -523,7 +523,7 @@ function quicksortCost(n: number): number {
   if (n <= 1) return 0;
   return n + quicksortCost(n - 1);
 }
-console.log(quicksortCost(10)); // 55 comparisons (n(n+1)/2 - n = n²/2 - n/2)
+console.log(quicksortCost(10)); // 55 comparisons (n(n+1)/2 - n = n?/2 - n/2)
 ```
 
 ```mermaid
@@ -536,8 +536,8 @@ flowchart TD
         C -->|No| F[Generating<br/>Functions]
         E -->|Yes| G[Characteristic<br/>Equation]
         E -->|No| H[Homogeneous +<br/>Particular]
-        G --> I[r^k - c₁r^{k-1} - ... = 0]
-        I --> J[Roots → General Form]
+        G --> I[r^k - c1r^{k-1} - ... = 0]
+        I --> J[Roots ? General Form]
         H --> K[Root Conflict?]
         K -->|Yes| L[Multiply by n^m]
         K -->|No| M[Standard Form]
@@ -545,7 +545,7 @@ flowchart TD
     end
 ```
 
-**Example 6.12** (Divide-and-conquer — maximum subarray). The divide-and-conquer approach for Kadane's problem can be analyzed as $T(n) = 2T(n/2) + O(n) = O(n \log n)$.
+**Example 6.12** (Divide-and-conquer ? maximum subarray). The divide-and-conquer approach for Kadane's problem can be analyzed as $T(n) = 2T(n/2) + O(n) = O(n \log n)$.
 
 **Proof 6.5** (Correctness of Master theorem case 2). Let $T(n) = aT(n/b) + cn^\alpha \log^k n$ where $\alpha = \log_b a$. Expanding the recurrence:
 
@@ -553,7 +553,7 @@ $$T(n) = n^\alpha \sum_{j=0}^{\log_b n} c \log^k\left(\frac{n}{b^j}\right)$$
 
 The sum approximates $\int_0^{\log_b n} c(\log_b n - x)^k \,dx = \frac{c}{k+1} (\log_b n)^{k+1}$, giving $T(n) = \Theta(n^\alpha \log^{k+1} n)$. $\square$
 
-**Example 6.13** (Solving $a_n = a_{n-1} + a_{n-2}$ — Fibonacci closed form).
+**Example 6.13** (Solving $a_n = a_{n-1} + a_{n-2}$ ? Fibonacci closed form).
 
 ```typescript
 function fibonacciClosedForm(n: number): number {
@@ -633,14 +633,14 @@ console.log('Recurrence a_5:', linearRecurrence([3, -2], [1, 2], 5)); // ?
 // --- Master Theorem Analyzer ---
 function masterTheorem(a: number, b: number, fExponent: number): string {
   const logBA = Math.log(a) / Math.log(b);
-  if (Math.abs(fExponent - logBA) < 1e-10) return `Θ(n^${logBA} log n)`;
-  if (fExponent < logBA) return `Θ(n^${logBA.toFixed(2)})`;
-  return `Θ(n^${fExponent})`; // assumes regularity condition holds
+  if (Math.abs(fExponent - logBA) < 1e-10) return `T(n^${logBA} log n)`;
+  if (fExponent < logBA) return `T(n^${logBA.toFixed(2)})`;
+  return `T(n^${fExponent})`; // assumes regularity condition holds
 }
 // T(n) = 2T(n/2) + n
-console.log('T(n)=2T(n/2)+n:', masterTheorem(2, 2, 1)); // Θ(n log n)
+console.log('T(n)=2T(n/2)+n:', masterTheorem(2, 2, 1)); // T(n log n)
 // T(n) = 8T(n/2) + n^3
-console.log('T(n)=8T(n/2)+n³:', masterTheorem(8, 2, 3)); // Θ(n^3)
+console.log('T(n)=8T(n/2)+n?:', masterTheorem(8, 2, 3)); // T(n^3)
 
 // --- Divide-and-Conquer Recurrence Simulator ---
 function mergeSortComparisons(arr: number[]): number {
@@ -709,14 +709,14 @@ console.log('\nLinear recurrence a_n=2a_{n-1}+3a_{n-2}: a_5 =', linearRecurrence
 function masterTheorem(a: number, b: number, f_n_degree: number): string {
   const logba = Math.log(a) / Math.log(b);
   const epsilon = 0.0001;
-  if (f_n_degree < logba - epsilon) return `Θ(n^${logba.toFixed(2)}) (case 1)`;
-  if (Math.abs(f_n_degree - logba) < epsilon) return `Θ(n^${logba.toFixed(2)} log n) (case 2)`;
-  if (f_n_degree > logba + epsilon) return `Θ(n^${f_n_degree.toFixed(2)}) (case 3)`;
+  if (f_n_degree < logba - epsilon) return `T(n^${logba.toFixed(2)}) (case 1)`;
+  if (Math.abs(f_n_degree - logba) < epsilon) return `T(n^${logba.toFixed(2)} log n) (case 2)`;
+  if (f_n_degree > logba + epsilon) return `T(n^${f_n_degree.toFixed(2)}) (case 3)`;
   return 'complexity ambiguous';
 }
-console.log('\nMaster theorem T(n)=2T(n/2)+O(n):', masterTheorem(2, 2, 1));  // case 2: Θ(n log n)
-console.log('Master theorem T(n)=4T(n/2)+O(n):', masterTheorem(4, 2, 1));  // case 1: Θ(n²)
-console.log('Master theorem T(n)=2T(n/2)+O(n²):', masterTheorem(2, 2, 2)); // case 3: Θ(n²)
+console.log('\nMaster theorem T(n)=2T(n/2)+O(n):', masterTheorem(2, 2, 1));  // case 2: T(n log n)
+console.log('Master theorem T(n)=4T(n/2)+O(n):', masterTheorem(4, 2, 1));  // case 1: T(n?)
+console.log('Master theorem T(n)=2T(n/2)+O(n?):', masterTheorem(2, 2, 2)); // case 3: T(n?)
 
 // --- Generating Function Term Calculator ---
 function genFuncCoeff(seq: number[], n: number): number[] {
@@ -731,6 +731,98 @@ function genFuncCoeff(seq: number[], n: number): number[] {
 console.log('\nCoin change ways (coins 1,2,5) up to n=10:', genFuncCoeff([1, 2, 5], 10).join(', '));
 ```
 
+
+// recurrence
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'recurrence', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// recurrence - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'recurrence' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Recurrence relations define sequences from initial terms and a dependency rule.
@@ -742,12 +834,12 @@ console.log('\nCoin change ways (coins 1,2,5) up to n=10:', genFuncCoeff([1, 2, 
 
 ## Practical Takeaways
 
-1. **Iterate for simple recurrences** — forward or backward, then prove by induction.
-2. **Characteristic equation for homogeneous** — solve $r^k - c_1 r^{k-1} - \cdots - c_k = 0$.
-3. **Particular solutions need the right form** — if $f(n)$ matches a characteristic root, multiply by $n^m$.
-4. **Generate for complex sequences** — generating functions handle recurrences that resist other methods.
-5. **Master theorem for algorithms** — $T(n) = aT(n/b) + f(n)$ covers most divide-and-conquer algorithms.
-6. **Always verify solutions** — plug the closed form back into the recurrence to check correctness.
+1. **Iterate for simple recurrences** ? forward or backward, then prove by induction.
+2. **Characteristic equation for homogeneous** ? solve $r^k - c_1 r^{k-1} - \cdots - c_k = 0$.
+3. **Particular solutions need the right form** ? if $f(n)$ matches a characteristic root, multiply by $n^m$.
+4. **Generate for complex sequences** ? generating functions handle recurrences that resist other methods.
+5. **Master theorem for algorithms** ? $T(n) = aT(n/b) + f(n)$ covers most divide-and-conquer algorithms.
+6. **Always verify solutions** ? plug the closed form back into the recurrence to check correctness.
 
 ## Exercises
 

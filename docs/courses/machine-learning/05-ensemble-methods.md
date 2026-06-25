@@ -86,13 +86,13 @@ If models were independent, variance reduces by a factor of $M$. In practice, mo
 
 $$\text{Var}(\text{ensemble}) = \rho\sigma^2 + \frac{1-\rho}{M}\sigma^2$$
 
-As $M \to \infty$, variance approaches $\rho\sigma^2$. This is why **decorrelation is critical** — Random Forest forces feature subsampling to reduce $\rho$.
+As $M \to \infty$, variance approaches $\rho\sigma^2$. This is why **decorrelation is critical** ? Random Forest forces feature subsampling to reduce $\rho$.
 
 **For Boosting**: Each new model fits the residual errors of the ensemble, reducing bias. If the base learners are weak (slightly better than chance), boosting can convert them into a strong learner with arbitrarily low bias.
 
 ### Bagging: Bootstrap Aggregating
 
-Bagging involves training multiple versions of a model on different subsets created via **Bootstrapping** — sampling with replacement from the training set.
+Bagging involves training multiple versions of a model on different subsets created via **Bootstrapping** ? sampling with replacement from the training set.
 
 **Algorithm**:
 ```
@@ -101,13 +101,13 @@ For m = 1 to M:
     2. Train model f_m on S_m
 
 For prediction:
-    - Regression: f(x) = (1/M) Σ f_m(x)
+    - Regression: f(x) = (1/M) S f_m(x)
     - Classification: f(x) = mode{ f_1(x), ..., f_M(x) }  (majority vote)
 ```
 
 **Properties**:
 - Each bootstrap sample contains ~63.2% of unique training points ($1 - 1/e$)
-- The remaining ~36.8% are **out-of-bag (OOB)** samples — used for free validation
+- The remaining ~36.8% are **out-of-bag (OOB)** samples ? used for free validation
 - Bagging primarily reduces **variance** without increasing bias
 - Works best with high-variance base learners (deep decision trees)
 
@@ -134,10 +134,10 @@ Random Forest (Breiman, 2001) is Bagging applied to decision trees with one cruc
 - Classification: $m = \sqrt{d}$
 - Regression: $m = d/3$
 
-**Why feature subsampling helps**: Without it, trees in Bagging are highly correlated — the strongest feature tends to be chosen at the top of every tree. Forcing random feature subsets decorrelates the trees, which reduces the $\rho\sigma^2$ term in the variance decomposition.
+**Why feature subsampling helps**: Without it, trees in Bagging are highly correlated ? the strongest feature tends to be chosen at the top of every tree. Forcing random feature subsets decorrelates the trees, which reduces the $\rho\sigma^2$ term in the variance decomposition.
 
 **Properties**:
-- Extremely robust — works well with default hyperparameters
+- Extremely robust ? works well with default hyperparameters
 - Built-in OOB error estimation
 - Built-in feature importance
 - Parallelizable across trees
@@ -156,15 +156,15 @@ AdaBoost (Freund & Schapire, 1997) assigns weights to training samples and adjus
 Initialize weights w_i = 1/n for all i
 For m = 1 to M:
     1. Train classifier f_m on weighted data
-    2. Compute weighted error: ε_m = (Σ w_i * I(y_i ≠ f_m(x_i))) / Σ w_i
-    3. Compute classifier weight: α_m = 0.5 * ln((1 - ε_m) / ε_m)
-    4. Update sample weights: w_i = w_i * exp(α_m * I(y_i ≠ f_m(x_i)))
+    2. Compute weighted error: e_m = (S w_i * I(y_i ? f_m(x_i))) / S w_i
+    3. Compute classifier weight: a_m = 0.5 * ln((1 - e_m) / e_m)
+    4. Update sample weights: w_i = w_i * exp(a_m * I(y_i ? f_m(x_i)))
     5. Normalize weights to sum to 1
 
-Final prediction: H(x) = sign(Σ α_m * f_m(x))
+Final prediction: H(x) = sign(S a_m * f_m(x))
 ```
 
-**Intuition**: Samples that are misclassified get higher weight, forcing the next classifier to focus on them. The weight $\alpha_m$ measures how much say the classifier gets — better classifiers have higher $\alpha$.
+**Intuition**: Samples that are misclassified get higher weight, forcing the next classifier to focus on them. The weight $\alpha_m$ measures how much say the classifier gets ? better classifiers have higher $\alpha$.
 
 #### Gradient Boosting
 
@@ -176,7 +176,7 @@ Initialize: F_0(x) = mean(y)
 For m = 1 to M:
     1. Compute pseudo-residuals: r_im = y_i - F_{m-1}(x_i)
     2. Train tree f_m to predict r_im from x_i
-    3. Update: F_m(x) = F_{m-1}(x) + ν * f_m(x)
+    3. Update: F_m(x) = F_{m-1}(x) + ? * f_m(x)
 ```
 
 Where $\nu$ (learning rate) shrinks each tree's contribution, typically 0.01 - 0.3.
@@ -201,7 +201,7 @@ Where $\nu$ (learning rate) shrinks each tree's contribution, typically 0.01 - 0
 flowchart TD
     A[Initial Model F0] --> B[Compute Residuals]
     B --> C[Train shallow tree on residuals]
-    C --> D[Update: F = F + ν * tree]
+    C --> D[Update: F = F + ? * tree]
     D --> E{Stopping criteria?}
     E -->|No| B
     E -->|Yes| F[Final ensemble]
@@ -238,7 +238,7 @@ In Bagging, each bootstrap sample leaves out ~37% of training points. For each t
 - Typically slightly pessimistic compared to test error
 - Eliminates the need for cross-validation when using bagged models
 
-> **One-Sentence Takeaway:** Ensemble methods combine multiple weak models — either in parallel (bagging) to reduce variance or sequentially (boosting) to reduce bias — producing a stronger final predictor.
+> **One-Sentence Takeaway:** Ensemble methods combine multiple weak models ? either in parallel (bagging) to reduce variance or sequentially (boosting) to reduce bias ? producing a stronger final predictor.
 
 > **Remember:** Random Forests work well out-of-the-box with minimal tuning, while Gradient Boosting requires careful adjustment of learning rate and tree count to avoid overfitting.
 
@@ -518,19 +518,19 @@ console.log(`AdaBoost (20): ${(new AdaBoost(20).score(X, y) * 100).toFixed(2)}%`
 
 > **One-Sentence Takeaway:** Bagging smooths out noisy models through averaging, while boosting systematically corrects errors to build highly accurate predictors from weak learners.
 
-> **Pro Tip:** XGBoost and LightGBM are the most popular gradient boosting implementations for tabular data — they offer built-in regularization, missing value handling, and GPU acceleration.
+> **Pro Tip:** XGBoost and LightGBM are the most popular gradient boosting implementations for tabular data ? they offer built-in regularization, missing value handling, and GPU acceleration.
 
 ---
 
 ## Practical Takeaways
 
-1. **Bagging for high-variance models** — if your base model overfits, bagging will almost always help
-2. **Random Forest is the default** — works with minimal tuning, handles mixed data, provides feature importance
-3. **Gradient Boosting for maximum accuracy** — tune learning rate and tree depth carefully; use early stopping
-4. **Stacking for competitions** — combine diverse model families (tree-based, linear, neural) with a simple meta-learner
-5. **OOB error replaces CV in bagged models** — saves computation while providing an unbiased performance estimate
-6. **More trees is rarely harmful** — Random Forest accuracy plateaus as M increases; OOB error stabilizes
-7. **Shallow trees for boosting** — depth 3-6 is usually optimal for boosted trees; deeper = overfit
+1. **Bagging for high-variance models** ? if your base model overfits, bagging will almost always help
+2. **Random Forest is the default** ? works with minimal tuning, handles mixed data, provides feature importance
+3. **Gradient Boosting for maximum accuracy** ? tune learning rate and tree depth carefully; use early stopping
+4. **Stacking for competitions** ? combine diverse model families (tree-based, linear, neural) with a simple meta-learner
+5. **OOB error replaces CV in bagged models** ? saves computation while providing an unbiased performance estimate
+6. **More trees is rarely harmful** ? Random Forest accuracy plateaus as M increases; OOB error stabilizes
+7. **Shallow trees for boosting** ? depth 3-6 is usually optimal for boosted trees; deeper = overfit
 
 ## Concept Comparison Table
 
@@ -740,6 +740,98 @@ console.log("GBM predict [5]:", gb.predict([5]).toFixed(2));
 console.log("XGBoost gain test:", XGBoostStylePruner.gain(10, 8, 5, 3, 0.5));
 ```
 
+
+// ensemble methods
+// ml-supervised-unsupervised implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'ensemble methods', data: { topic: 'ml-supervised-unsupervised' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// ensemble methods - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'ml-algorithms demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'machine-learning', chapter: 'ensemble methods' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('ml-algorithms'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Ensemble methods improve performance by combining multiple weak learners into a single strong learner, leveraging the wisdom of the crowd principle.
@@ -750,7 +842,7 @@ console.log("XGBoost gain test:", XGBoostStylePruner.gain(10, 8, 5, 3, 0.5));
 - Stacking combines diverse model families through a meta-learner, often winning competitions.
 - OOB evaluation provides a free validation estimate in bagged models.
 
-> **One-Sentence Takeaway:** Ensemble methods consistently outperform individual models — use Random Forests for robustness and Gradient Boosting for maximum accuracy on tabular data.
+> **One-Sentence Takeaway:** Ensemble methods consistently outperform individual models ? use Random Forests for robustness and Gradient Boosting for maximum accuracy on tabular data.
 
 ---
 

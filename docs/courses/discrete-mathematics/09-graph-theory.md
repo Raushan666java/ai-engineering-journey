@@ -280,7 +280,7 @@ function hasEulerianPath(graph: Graph): boolean {
 }
 ```
 
-**Example 9.5** (Euler's formula). The cube graph $Q_3$ has $V = 8$, $E = 12$, $F = 6$. Euler's formula: $8 - 12 + 6 = 2$. ✓
+**Example 9.5** (Euler's formula). The cube graph $Q_3$ has $V = 8$, $E = 12$, $F = 6$. Euler's formula: $8 - 12 + 6 = 2$. ?
 
 **Example 9.6** (Adjacency matrix). For graph with edges $\{1,2\},\{2,3\},\{3,1\}$:
 $$A = \begin{bmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{bmatrix}$$
@@ -291,7 +291,7 @@ $$A = \begin{bmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{bmatrix}$$
 
 **Example 9.9** (Finding cut vertices). In a path graph $P_4$ ($1-2-3-4$), every internal vertex (2 and 3) is a cut vertex. The end vertices (1 and 4) are not.
 
-**Example 9.10** (Isomorphism). $C_4$ drawn as a square is isomorphic to $C_4$ drawn as a diamond — vertex labels differ but structure is identical.
+**Example 9.10** (Isomorphism). $C_4$ drawn as a square is isomorphic to $C_4$ drawn as a diamond ? vertex labels differ but structure is identical.
 
 ### 9.8 Graph Traversal Algorithms
 
@@ -547,24 +547,24 @@ function isBipartite(graph: number[][]): boolean {
 flowchart TD
     subgraph "Graph Problems by Complexity"
         A[Graph Problem] --> B{Eulerian?}
-        B -->|Yes| C[O(E) — check degrees]
+        B -->|Yes| C[O(E) ? check degrees]
         B -->|No| D{Hamiltonian?}
-        D -->|Yes| E[NP-complete — brute force]
+        D -->|Yes| E[NP-complete ? brute force]
         D -->|No| F{Planar?}
-        F -->|Yes| G[O(V) — check K5, K3,3 minors]
+        F -->|Yes| G[O(V) ? check K5, K3,3 minors]
         F -->|No| H[Non-planar]
     end
 ```
 
-**Example 9.7** (Dijkstra in GPS navigation). The road network has ~2M vertices (intersections) and ~5M edges (road segments). Dijkstra with a priority queue runs in $O((V+E)\log V) \approx 15M$ operations — feasible for real-time navigation. A* adds a heuristic (straight-line distance) for faster routing.
+**Example 9.7** (Dijkstra in GPS navigation). The road network has ~2M vertices (intersections) and ~5M edges (road segments). Dijkstra with a priority queue runs in $O((V+E)\log V) \approx 15M$ operations ? feasible for real-time navigation. A* adds a heuristic (straight-line distance) for faster routing.
 
 **Example 9.8** (Graph coloring for exam scheduling). Five exams: A conflicts with B, C; B conflicts with A, C, D; C conflicts with A, B, E; D conflicts with B, E; E conflicts with C, D. Greedy coloring: color A=1, B=2, C=3 (conflicts with 1,2), D=1 (conflicts with 2 only), E=2 (conflicts with 3,1). Uses 3 colors.
 
-**Proof 9.3** (Five Color Theorem — sketch). Every planar graph is 5-colorable.
+**Proof 9.3** (Five Color Theorem ? sketch). Every planar graph is 5-colorable.
 
 *Proof sketch.* By induction on $|V|$. Every planar graph has a vertex $v$ of degree $\leq 5$ (by Euler's formula $E \leq 3V - 6$). Remove $v$, 5-color the rest by induction. If the 5 neighbors use fewer than 5 colors, recolor $v$ with the unused color. Otherwise, use Kempe chain recolorings: consider two nonadjacent colors among the neighbors, swap them along alternating paths to free a color for $v$. $\square$
 
-**Example 9.9** (Topological sort — DAG ordering).
+**Example 9.9** (Topological sort ? DAG ordering).
 
 ```typescript
 function topologicalSort(graph: number[][]): number[] {
@@ -588,7 +588,7 @@ function topologicalSort(graph: number[][]): number[] {
   return result;
 }
 
-// Course prerequisites: {0 → 1, 0 → 2, 1 → 3, 2 → 3}
+// Course prerequisites: {0 ? 1, 0 ? 2, 1 ? 3, 2 ? 3}
 console.log(topologicalSort([[1, 2], [3], [3], []])); // [0, 1, 2, 3] or [0, 2, 1, 3]
 ```
 
@@ -783,6 +783,98 @@ const path4: number[][] = [[1],[0,2],[1,3],[2]];
 console.log('\nCenter of path of length 4:', graphCenter(path4));
 ```
 
+
+// graph theory
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'graph theory', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// graph theory - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'graph theory' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Graphs are modeled as $(V,E)$; types include undirected, directed, weighted, and multigraphs.
@@ -794,11 +886,11 @@ console.log('\nCenter of path of length 4:', graphCenter(path4));
 
 ## Practical Takeaways
 
-1. **Use adjacency list for sparse graphs** — real-world graphs are almost always sparse.
-2. **Bipartite = 2-colorable** — check via BFS alternating colors; any conflict means an odd cycle.
-3. **Euler = edges, Hamilton = vertices** — Euler is computationally easy, Hamilton is hard.
-4. **Even-degree condition** — always check parity first when looking for Eulerian trails.
-5. **Planar graphs have $E \leq 3V - 6$** — a quick check for non-planarity.
+1. **Use adjacency list for sparse graphs** ? real-world graphs are almost always sparse.
+2. **Bipartite = 2-colorable** ? check via BFS alternating colors; any conflict means an odd cycle.
+3. **Euler = edges, Hamilton = vertices** ? Euler is computationally easy, Hamilton is hard.
+4. **Even-degree condition** ? always check parity first when looking for Eulerian trails.
+5. **Planar graphs have $E \leq 3V - 6$** ? a quick check for non-planarity.
 
 ## Exercises
 

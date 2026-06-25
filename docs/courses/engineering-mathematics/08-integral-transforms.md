@@ -303,7 +303,7 @@ const N = 16;
 const signal = Array.from({ length: N }, (_, i) =>
   new Complex(Math.sin(2 * Math.PI * 1 * i / N), 0));
 const spectrum = fft(signal);
-console.log("FFT of sin(2πt), N=16:");
+console.log("FFT of sin(2pt), N=16:");
 const peaks = spectrum.map((z, i) => ({ k: i, mag: z.mag() })).filter(s => s.mag > 0.1);
 peaks.forEach(p => console.log(`  k=${p.k}: magnitude=${p.mag.toFixed(4)}`));
 console.log(`  (Peaks at k=1 and k=${N - 1} correspond to +1 Hz and -1 Hz)`);
@@ -323,7 +323,7 @@ rectFFT.forEach((z, i) => console.log(`  k=${i}: |F|=${z.mag().toFixed(4)}`));
 ### TypeScript: Numerical Laplace Transform
 
 ```typescript
-// F(s) = ∫₀^∞ f(t)e^{-st} dt (numerical approximation)
+// F(s) = ?0^8 f(t)e^{-st} dt (numerical approximation)
 function laplaceNum(f: (t: number) => number, s: number, tMax: number = 50, steps: number = 10000): number {
   const dt = tMax / steps;
   let sum = 0;
@@ -335,10 +335,10 @@ function laplaceNum(f: (t: number) => number, s: number, tMax: number = 50, step
 console.log(`L{1}(2) = ${laplaceNum(t => 1, 2).toFixed(4)} (expected: 1/2 = 0.5)`);
 console.log(`L{t}(3) = ${laplaceNum(t => t, 3).toFixed(4)} (expected: 1/9 = ${(1 / 9).toFixed(4)})`);
 console.log(`L{e^{-t}}(4) = ${laplaceNum(t => Math.exp(-t), 4).toFixed(4)} (expected: 1/5 = 0.2)`);
-console.log(`L{sin(t)}(2) = ${laplaceNum(t => Math.sin(t), 2).toFixed(4)} (expected: 1/(2²+1) = 0.2)`);
-console.log(`L{cos(t)}(2) = ${laplaceNum(t => Math.cos(t), 2).toFixed(4)} (expected: 2/(2²+1) = ${(2 / 5).toFixed(4)})`);
+console.log(`L{sin(t)}(2) = ${laplaceNum(t => Math.sin(t), 2).toFixed(4)} (expected: 1/(2?+1) = 0.2)`);
+console.log(`L{cos(t)}(2) = ${laplaceNum(t => Math.cos(t), 2).toFixed(4)} (expected: 2/(2?+1) = ${(2 / 5).toFixed(4)})`);
 
-// Convolution via FFT: (f*g)(t) = ∫₀ᵗ f(τ)g(t-τ)dτ
+// Convolution via FFT: (f*g)(t) = ?0? f(t)g(t-t)dt
 function convolve(f: number[], g: number[]): number[] {
   const n = f.length + g.length - 1;
   const padF = [...f, ...new Array(n - f.length).fill(0)].map(x => new Complex(x, 0));
@@ -375,7 +375,7 @@ function dftMagnitude(signal: number[]): number[] {
 // Pure sine wave at frequency 2
 const sineWave = Array.from({ length: 64 }, (_, t) => Math.sin(2 * Math.PI * 2 * t / 64));
 const mag = dftMagnitude(sineWave);
-console.log('DFT of sin(2·2πt/64):');
+console.log('DFT of sin(2?2pt/64):');
 console.log('  Peak at k=2:', mag[2].toFixed(4), '(expected: 0.5)');
 console.log('  DC component k=0:', mag[0].toFixed(4), '(expected: ~0)');
 
@@ -385,15 +385,15 @@ const laplaceTable: LaplaceEntry[] = [
   { f_t: '1', F_s: '1/s', conditions: 's > 0' },
   { f_t: 't^n', F_s: 'n!/s^(n+1)', conditions: 's > 0' },
   { f_t: 'e^(at)', F_s: '1/(s - a)', conditions: 's > a' },
-  { f_t: 'sin(ωt)', F_s: 'ω/(s² + ω²)', conditions: 's > 0' },
-  { f_t: 'cos(ωt)', F_s: 's/(s² + ω²)', conditions: 's > 0' },
-  { f_t: 't·sin(ωt)', F_s: '2ωs/(s² + ω²)²', conditions: 's > 0' },
-  { f_t: 'e^(at)·sin(ωt)', F_s: 'ω/((s - a)² + ω²)', conditions: 's > a' },
-  { f_t: 'δ(t)', F_s: '1', conditions: 'all s' },
+  { f_t: 'sin(?t)', F_s: '?/(s? + ??)', conditions: 's > 0' },
+  { f_t: 'cos(?t)', F_s: 's/(s? + ??)', conditions: 's > 0' },
+  { f_t: 't?sin(?t)', F_s: '2?s/(s? + ??)?', conditions: 's > 0' },
+  { f_t: 'e^(at)?sin(?t)', F_s: '?/((s - a)? + ??)', conditions: 's > a' },
+  { f_t: 'd(t)', F_s: '1', conditions: 'all s' },
   { f_t: 'u(t)', F_s: '1/s', conditions: 's > 0' },
 ];
 console.log('\nLaplace table lookup:');
-laplaceTable.slice(0, 5).forEach(e => console.log(`  £{${e.f_t}} = ${e.F_s}`));
+laplaceTable.slice(0, 5).forEach(e => console.log(`  ?{${e.f_t}} = ${e.F_s}`));
 
 // --- Convolution via DFT (overlap-save) ---
 function convolveDFT(a: number[], b: number[]): number[] {
@@ -419,7 +419,7 @@ console.log('\nConvolution (DFT):', convDFT.map(v => v.toFixed(0)).join(', '), '
 // --- Z-Transform Pole-Zero Check ---
 function zTransformPoles(coeffs: number[]): number[] {
   // Find roots of denominator polynomial for a transfer function
-  // For H(z) = 1 / (1 + a₁z⁻¹ + a₂z⁻²) → poles are roots of z² + a₁z + a₂ = 0
+  // For H(z) = 1 / (1 + a1z?? + a2z??) ? poles are roots of z? + a1z + a2 = 0
   if (coeffs.length > 3) return []; // simplified for quadratic
   const [a0, a1, a2] = coeffs.length === 3 ? coeffs : [1, coeffs[0], coeffs[1] ?? 0];
   const disc = a1 * a1 - 4 * a0 * a2;
@@ -427,9 +427,101 @@ function zTransformPoles(coeffs: number[]): number[] {
   return []; // complex
 }
 const poles = zTransformPoles([1, -0.5, 0.25]);
-console.log('\nZ-transform poles of H(z)=1/(1-0.5z⁻¹+0.25z⁻²):', poles.map(p => p.toFixed(4)).join(', '));
+console.log('\nZ-transform poles of H(z)=1/(1-0.5z??+0.25z??):', poles.map(p => p.toFixed(4)).join(', '));
 ```
 
+
+// integral transforms
+// linear-algebra-calculus implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'integral transforms', data: { topic: 'linear-algebra-calculus' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// integral transforms - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'engineering-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'engineering-mathematics', chapter: 'integral transforms' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('engineering-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Fourier series decompose periodic functions into sine/cosine harmonics
@@ -461,11 +553,11 @@ A signal $f(t) = \cos(2\pi \cdot 100t) + \cos(2\pi \cdot 300t)$ contains frequen
 **Question:** If sampled at $f_s = 250$ Hz, which frequencies appear?
 
 **Solution:**
-Nyquist rate $= 2 \times 300 = 600$ Hz. Sampling at 250 Hz < 600 Hz → aliasing occurs.
+Nyquist rate $= 2 \times 300 = 600$ Hz. Sampling at 250 Hz < 600 Hz ? aliasing occurs.
 
 The 300 Hz component aliases to $|300 - 250| = 50$ Hz (folded back into baseband).
 The 100 Hz component is below Nyquist (125 Hz) and appears correctly.
-The reconstructed signal would appear as $\cos(2\pi \cdot 100t) + \cos(2\pi \cdot 50t)$ — the 300 Hz tone is misinterpreted as a 50 Hz tone.
+The reconstructed signal would appear as $\cos(2\pi \cdot 100t) + \cos(2\pi \cdot 50t)$ ? the 300 Hz tone is misinterpreted as a 50 Hz tone.
 
 ### Example 7: System Transfer Function and Stability
 
@@ -474,7 +566,7 @@ A system has transfer function $H(s) = \frac{s+2}{s^2 + 2s + 5}$.
 **Question:** Determine the impulse response and stability.
 
 **Solution:**
-Poles: $s^2 + 2s + 5 = 0 \implies s = -1 \pm 2i$. Both have $\text{Re}(s) = -1 < 0$ → stable.
+Poles: $s^2 + 2s + 5 = 0 \implies s = -1 \pm 2i$. Both have $\text{Re}(s) = -1 < 0$ ? stable.
 
 Partial fractions: $\frac{s+2}{s^2 + 2s + 5} = \frac{s+2}{(s+1)^2 + 4} = \frac{s+1}{(s+1)^2 + 4} + \frac{1}{(s+1)^2 + 4}$
 
@@ -508,7 +600,7 @@ const squareWave = {
   ),
 };
 const val = reconstructFromFourier(squareWave, 0.1, 2 * Math.PI);
-console.log(`Reconstructed value: ${val.toFixed(4)}`); // ≈ 1.0 (square wave at t=0.1)
+console.log(`Reconstructed value: ${val.toFixed(4)}`); // ? 1.0 (square wave at t=0.1)
 ```
 
 ## Exercises
@@ -518,7 +610,7 @@ console.log(`Reconstructed value: ${val.toFixed(4)}`); // ≈ 1.0 (square wave a
 1. What conditions guarantee that a Fourier series converges to the function at every point?
 2. Explain Parseval's theorem in terms of signal energy
 3. How do poles of a system's transfer function determine stability?
-4. Compare the Laplace and Fourier transforms — when would you use each?
+4. Compare the Laplace and Fourier transforms ? when would you use each?
 5. What happens when a signal is sampled below the Nyquist rate?
 
 ### Application Problems
@@ -559,7 +651,7 @@ function squareWave(t: number, harmonics: number): number {
   }
   return (4 / Math.PI) * sum;
 }
-// Example: squareWave(Math.PI/2, 10) ≈ 0.998
+// Example: squareWave(Math.PI/2, 10) ? 0.998
 console.log(squareWave(Math.PI / 2, 10));
 ```
 
@@ -576,26 +668,26 @@ console.log(squareWave(Math.PI / 2, 10));
 ```mermaid
 graph TB
     subgraph "Continuous Domain"
-        FS[Fourier Series<br/>Periodic → Discrete Spectrum]
-        FT[Fourier Transform<br/>Non-periodic → Continuous Spectrum]
-        LT[Laplace Transform<br/>s = σ + iω<br/>Includes transient response]
+        FS[Fourier Series<br/>Periodic ? Discrete Spectrum]
+        FT[Fourier Transform<br/>Non-periodic ? Continuous Spectrum]
+        LT[Laplace Transform<br/>s = s + i?<br/>Includes transient response]
     end
     
     subgraph "Discrete Domain"
-        DFT[Discrete Fourier Transform<br/>Sampled → Sampled Spectrum]
+        DFT[Discrete Fourier Transform<br/>Sampled ? Sampled Spectrum]
         FFT[Fast Fourier Transform<br/>O(N log N) implementation]
         ZT[Z-Transform<br/>z = e^(sT)<br/>Discrete-time systems]
     end
     
     subgraph "Relationships"
-        R1[FT is LT evaluated on<br/>imaginary axis s = iω]
+        R1[FT is LT evaluated on<br/>imaginary axis s = i?]
         R2[ZT is sampled LT:<br/>z = e^(sT)]
         R3[DFT is sampled FT:<br/>frequency discretization]
-        R4[FS → FT as period T → ∞]
+        R4[FS ? FT as period T ? 8]
     end
     
-    FS -->|Period T → ∞| FT
-    FT -->|s = iω| LT
+    FS -->|Period T ? 8| FT
+    FT -->|s = i?| LT
     FT -->|Sample at f_s| DFT
     DFT -->|Cooley-Tukey| FFT
     LT -->|z = e^(sT)| ZT
@@ -641,7 +733,7 @@ for (let k = 0; k < N / 2; k++) {
     console.log(`  f=${k}/${N}: magnitude=${magnitude[k].toFixed(4)}`);
   }
 }
-// Output: f=2/16: magnitude ≈ 0.5000, f=14/16: magnitude ≈ 0.5000
+// Output: f=2/16: magnitude ? 0.5000, f=14/16: magnitude ? 0.5000
 ```
 
 ## TypeScript: Laplace Transform Solver for ODEs
@@ -687,7 +779,7 @@ function analyzeSystemFromTransferFunction(
     } else {
       const real = -a1 / (2 * a2);
       const imag = Math.sqrt(-discriminant) / (2 * a2);
-      poles.push(`${real.toFixed(3)} ± ${imag.toFixed(3)}i`);
+      poles.push(`${real.toFixed(3)} ? ${imag.toFixed(3)}i`);
       stable = real < 0;
     }
   } else if (denominator.length === 2) {
@@ -706,7 +798,7 @@ function analyzeSystemFromTransferFunction(
   };
 }
 
-// H(s) = (s + 2) / (s² + 2s + 5)
+// H(s) = (s + 2) / (s? + 2s + 5)
 const result = analyzeSystemFromTransferFunction([1, 2], [1, 2, 5]);
 console.log("Transfer Function:", result.expression);
 console.log("Poles:", result.poles.join(", "));
@@ -721,7 +813,7 @@ function zTransformFIR(
   coefficients: number[],
   z: number
 ): number {
-  // X(z) = Σ h[n] z^(-n)
+  // X(z) = S h[n] z^(-n)
   const re = coefficients.reduce(
     (sum, h, n) => sum + h * Math.cos(-n * Math.atan2(0, z)), 0
   );
@@ -740,7 +832,7 @@ function frequencyResponse(
   for (let i = 0; i < numPoints; i++) {
     const w = (Math.PI * i) / (numPoints - 1);
     omega.push(w);
-    // Evaluate H(e^(jω)) = Σ b[n] e^(-jωn)
+    // Evaluate H(e^(j?)) = S b[n] e^(-j?n)
     let re = 0, im = 0;
     for (let n = 0; n < b.length; n++) {
       re += b[n] * Math.cos(-w * n);
@@ -756,8 +848,8 @@ const maFilter = [1 / 3, 1 / 3, 1 / 3];
 const response = frequencyResponse(maFilter);
 
 console.log("Moving Average Filter Frequency Response:");
-console.log("  DC (ω=0):", response.magnitude[0].toFixed(4));  // 1.0
-console.log("  Nyquist (ω=π):", response.magnitude[response.magnitude.length - 1].toFixed(4));  // 0.0
+console.log("  DC (?=0):", response.magnitude[0].toFixed(4));  // 1.0
+console.log("  Nyquist (?=p):", response.magnitude[response.magnitude.length - 1].toFixed(4));  // 0.0
 ```
 
 ### Additional Exercises
@@ -778,11 +870,11 @@ JPEG compression uses the Discrete Cosine Transform (DCT), a variant of the Four
 
 $$X[k] = \sum_{n=0}^{N-1} x[n] \cos\left(\frac{\pi}{N}\left(n+\frac{1}{2}\right)k\right)$$
 
-Unlike the DFT, the DCT has excellent energy compaction properties — most of the signal energy concentrates in the low-frequency coefficients.
+Unlike the DFT, the DCT has excellent energy compaction properties ? most of the signal energy concentrates in the low-frequency coefficients.
 
 **JPEG Compression Pipeline:**
 
-1. **Color space conversion:** RGB → YCbCr (separates luminance from chrominance)
+1. **Color space conversion:** RGB ? YCbCr (separates luminance from chrominance)
 2. **Block splitting:** Image divided into $8 \times 8$ pixel blocks
 3. **DCT:** Each block transformed to frequency domain
 4. **Quantization:** High-frequency coefficients divided by larger quantization values (lossy step)
@@ -805,7 +897,7 @@ function dct1D(signal: number[]): number[] {
   return result;
 }
 
-// DC signal: all same value → DCT concentrates all energy in first coefficient
+// DC signal: all same value ? DCT concentrates all energy in first coefficient
 const dcSignal = Array.from({ length: 8 }, () => 100);
 const dctCoeffs = dct1D(dcSignal);
 console.log(`DC signal DCT: [${dctCoeffs.map(c => c.toFixed(1)).join(', ')}]`);
@@ -840,7 +932,7 @@ $$H(s) = \frac{V_C(s)}{V_{in}(s)} = \frac{1}{LC s^2 + RC s + 1} = \frac{1}{0.5s^
 | Transform | Best For | Key Property |
 |-----------|----------|--------------|
 | Fourier Series | Periodic continuous signals | Harmonic decomposition |
-| Fourier Transform | Non-periodic signals, spectrum analysis | Time ↔ frequency duality |
+| Fourier Transform | Non-periodic signals, spectrum analysis | Time ? frequency duality |
 | Laplace Transform | ODEs, control systems, circuits | Converts DEs to algebraic equations |
 | Z-Transform | Discrete-time systems, digital filters | Maps time domain to frequency domain |
 | DFT/FFT | Digital signal processing | $O(N \log N)$ computation |

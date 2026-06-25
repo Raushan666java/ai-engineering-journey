@@ -1,6 +1,6 @@
 # Chapter 3: Top-Down Parsing
 
-**← Previous:** [Chapter 2: Lexical Analysis](02-lexical.md) | **Next:** [Chapter 4: Bottom-Up Parsing](04-parsing-bottomup.md)
+**? Previous:** [Chapter 2: Lexical Analysis](02-lexical.md) | **Next:** [Chapter 4: Bottom-Up Parsing](04-parsing-bottomup.md)
 
 ## Learning Objectives
 
@@ -44,34 +44,34 @@ A **context-free grammar** (CFG) is a four-tuple `G = (V, T, P, S)`, where:
 
 - `V` is a finite set of **nonterminal** symbols
 - `T` is a finite set of **terminal** symbols disjoint from V
-- `P` is a finite set of **productions** `A → α` where `A ∈ V` and `α ∈ (V ∪ T)*`
-- `S ∈ V` is the **start symbol**
+- `P` is a finite set of **productions** `A ? a` where `A ? V` and `a ? (V ? T)*`
+- `S ? V` is the **start symbol**
 
 The language `L(G)` is the set of all strings of terminals derivable from the start symbol by repeatedly replacing nonterminals with the right-hand side of a production.
 
 **Example**: A grammar for arithmetic expressions with standard precedence:
 
 ```
-expr   → expr + term | term
-term   → term * factor | factor
-factor → ( expr ) | id
+expr   ? expr + term | term
+term   ? term * factor | factor
+factor ? ( expr ) | id
 ```
 
 This grammar has `V = {expr, term, factor}`, `T = {id, +, *, (, )}`, and `S = expr`.
 
-> **One-Sentence Takeaway:** A CFG is to syntax what regular expressions are to lexemes — the formal notation for describing hierarchical structure.
+> **One-Sentence Takeaway:** A CFG is to syntax what regular expressions are to lexemes ? the formal notation for describing hierarchical structure.
 
 ### Derivations and Parse Trees
 
 A **derivation** is a sequence of replacement steps transforming the start symbol into a terminal string. A **leftmost derivation** replaces the leftmost nonterminal at each step; a **rightmost derivation** replaces the rightmost nonterminal at each step.
 
-For grammar `E → E + T | T, T → id`, leftmost derivation of `id + id`:
+For grammar `E ? E + T | T, T ? id`, leftmost derivation of `id + id`:
 
 ```
-E ⇒ E + T ⇒ T + T ⇒ id + T ⇒ id + id
+E ? E + T ? T + T ? id + T ? id + id
 ```
 
-A **parse tree** is a graphical representation of a derivation. Interior nodes are labeled with nonterminals, leaves with terminals (or ε). The children of an interior node correspond to the right-hand side of a production.
+A **parse tree** is a graphical representation of a derivation. Interior nodes are labeled with nonterminals, leaves with terminals (or e). The children of an interior node correspond to the right-hand side of a production.
 
 **Parse tree vs. Abstract Syntax Tree (AST)**:
 
@@ -100,14 +100,14 @@ A grammar is **ambiguous** if there exists a terminal string that has more than 
 Consider the grammar:
 
 ```
-string → string + string | id
+string ? string + string | id
 ```
 
 The string `id + id + id` has two leftmost derivations:
 
 ```
-1. string ⇒ string + string ⇒ id + string ⇒ id + string + string ⇒ id + id + string ⇒ id + id + id
-2. string ⇒ string + string ⇒ string + string + string ⇒ id + string + string ⇒ id + id + string ⇒ id + id + id
+1. string ? string + string ? id + string ? id + string + string ? id + id + string ? id + id + id
+2. string ? string + string ? string + string + string ? id + string + string ? id + id + string ? id + id + id
 ```
 
 These correspond to left-associative and right-associative grouping. Ambiguity is resolved by imposing associativity and precedence rules, either in the grammar or in the parser implementation.
@@ -115,56 +115,56 @@ These correspond to left-associative and right-associative grouping. Ambiguity i
 **The dangling-else ambiguity** is the classic case:
 
 ```
-stmt → if expr then stmt | if expr then stmt else stmt | other
+stmt ? if expr then stmt | if expr then stmt else stmt | other
 ```
 
 For input `if e1 then if e2 then s1 else s2`, two parse trees exist: the `else` can attach to either `if`. Most languages resolve this by associating `else` with the nearest unmatched `if`.
 
 ### Left Recursion Elimination
 
-A grammar is **left-recursive** if a nonterminal `A` derives a string beginning with `A`. **Immediate left recursion**, where `A → Aα | β`, is eliminated by rewriting as:
+A grammar is **left-recursive** if a nonterminal `A` derives a string beginning with `A`. **Immediate left recursion**, where `A ? Aa | ?`, is eliminated by rewriting as:
 
 ```
-A  → βA'
-A' → αA' | ε
+A  ? ?A'
+A' ? aA' | e
 ```
 
-For multiple alternatives `A → Aα₁ | Aα₂ | ... | Aαₙ | β₁ | β₂ | ... | βₘ`, the transformation is:
+For multiple alternatives `A ? Aa1 | Aa2 | ... | Aa? | ?1 | ?2 | ... | ??`, the transformation is:
 
 ```
-A  → β₁A' | β₂A' | ... | βₘA'
-A' → α₁A' | α₂A' | ... | αₙA' | ε
+A  ? ?1A' | ?2A' | ... | ??A'
+A' ? a1A' | a2A' | ... | a?A' | e
 ```
 
-**Indirect left recursion** (e.g., `A ⇒ B ⇒ Aα`) is eliminated by ordering nonterminals and substituting productions until all left recursion is immediate, then eliminating it.
+**Indirect left recursion** (e.g., `A ? B ? Aa`) is eliminated by ordering nonterminals and substituting productions until all left recursion is immediate, then eliminating it.
 
 **Algorithm for indirect left recursion elimination:**
 
 ```
 Algorithm: EliminateIndirectLeftRecursion
-Input: Grammar G with nonterminals A₁, A₂, ..., Aₙ
+Input: Grammar G with nonterminals A1, A2, ..., A?
 Output: Grammar with no left recursion
 
 for i = 1 to n:
     for j = 1 to i-1:
-        Replace each Aᵢ → Aⱼγ with Aᵢ → δ₁γ | δ₂γ | ... | δₖγ
-            where Aⱼ → δ₁ | δ₂ | ... | δₖ are all productions for Aⱼ
-    Eliminate immediate left recursion for Aᵢ
+        Replace each A? ? A?? with A? ? d1? | d2? | ... | d??
+            where A? ? d1 | d2 | ... | d? are all productions for A?
+    Eliminate immediate left recursion for A?
 ```
 
 **Example**: Eliminate left recursion from the expression grammar:
 
 ```
-Original:   E → E + T | T
-            T → T * F | F
-            F → (E) | id
+Original:   E ? E + T | T
+            T ? T * F | F
+            F ? (E) | id
 
 Transformed:
-            E  → TE'
-            E' → +TE' | ε
-            T  → FT'
-            T' → *FT' | ε
-            F  → (E) | id
+            E  ? TE'
+            E' ? +TE' | e
+            T  ? FT'
+            T' ? *FT' | e
+            F  ? (E) | id
 ```
 
 ### Left Factoring
@@ -172,36 +172,36 @@ Transformed:
 When two or more productions for the same nonterminal share a common prefix, predictive parsing cannot choose among them without lookahead. **Left factoring** delays the choice by extracting the common prefix:
 
 ```
-A → αβ₁ | αβ₂    becomes    A → αA'   A' → β₁ | β₂
+A ? a?1 | a?2    becomes    A ? aA'   A' ? ?1 | ?2
 ```
 
 **Algorithm:**
 
 ```
 Algorithm: LeftFactor
-Input: Nonterminal A with productions A → αβ₁ | αβ₂ | ... | αβₙ | γ
-    where γ represents alternatives without the common prefix α
+Input: Nonterminal A with productions A ? a?1 | a?2 | ... | a?? | ?
+    where ? represents alternatives without the common prefix a
 Output: Factored productions
 
-Let α be the longest common prefix of two or more alternatives
+Let a be the longest common prefix of two or more alternatives
 If no common prefix exists, return unchanged
-Replace A → αβ₁ | αβ₂ | ... | αβₙ | γ with:
-    A → αA' | γ
-    A' → β₁ | β₂ | ... | βₙ
+Replace A ? a?1 | a?2 | ... | a?? | ? with:
+    A ? aA' | ?
+    A' ? ?1 | ?2 | ... | ??
 ```
 
-**Example**: Left factor the grammar `S → iEtS | iEtSeS | a`:
+**Example**: Left factor the grammar `S ? iEtS | iEtSeS | a`:
 
 ```
-S  → iEtSS' | a
-S' → eS | ε
+S  ? iEtSS' | a
+S' ? eS | e
 ```
 
 Here, the common prefix is `iEtS`. After factoring, the parser shifts past `iEtS`, then uses the lookahead to decide between the two branches of `S'`.
 
 ### FIRST and FOLLOW Sets
 
-The **FIRST** set of a string `α`, denoted `FIRST(α)`, is the set of terminals that can begin strings derivable from `α`. If `α ⇒* ε`, then `ε ∈ FIRST(α)`.
+The **FIRST** set of a string `a`, denoted `FIRST(a)`, is the set of terminals that can begin strings derivable from `a`. If `a ?* e`, then `e ? FIRST(a)`.
 
 The **FOLLOW** set of a nonterminal `A`, denoted `FOLLOW(A)`, is the set of terminals that can appear immediately to the right of `A` in some sentential form.
 
@@ -214,18 +214,18 @@ Output: FIRST(X) for all symbols X
 
 for each terminal a: FIRST(a) = {a}
 for each nonterminal A: FIRST(A) = {}
-ε_in_current_pass = true
+e_in_current_pass = true
 
-while ε_in_current_pass:
-    ε_in_current_pass = false
-    for each production A → X₁X₂...Xₖ:
+while e_in_current_pass:
+    e_in_current_pass = false
+    for each production A ? X1X2...X?:
         k = 0
-        all_derive_ε = true
-        while all_derive_ε and k < length:
+        all_derive_e = true
+        while all_derive_e and k < length:
             k++
-            add (FIRST(Xₖ) \ {ε}) to FIRST(A)
-            if ε ∉ FIRST(Xₖ): all_derive_ε = false
-        if all_derive_ε: add ε to FIRST(A)
+            add (FIRST(X?) \ {e}) to FIRST(A)
+            if e ? FIRST(X?): all_derive_e = false
+        if all_derive_e: add e to FIRST(A)
 ```
 
 **Algorithm for FOLLOW:**
@@ -236,17 +236,17 @@ Input: Grammar G
 Output: FOLLOW(A) for all nonterminals A
 
 FOLLOW(S) = {$}  // $ is end-of-input marker
-for each nonterminal A ≠ S: FOLLOW(A) = {}
+for each nonterminal A ? S: FOLLOW(A) = {}
 
 while any FOLLOW set changes:
-    for each production A → αBβ:
-        // Rule 2: add FIRST(β) \ {ε} to FOLLOW(B)
-        add (FIRST(β) \ {ε}) to FOLLOW(B)
-        // Rule 3: if ε ∈ FIRST(β), add FOLLOW(A) to FOLLOW(B)
-        if ε ∈ FIRST(β):
+    for each production A ? aB?:
+        // Rule 2: add FIRST(?) \ {e} to FOLLOW(B)
+        add (FIRST(?) \ {e}) to FOLLOW(B)
+        // Rule 3: if e ? FIRST(?), add FOLLOW(A) to FOLLOW(B)
+        if e ? FIRST(?):
             add FOLLOW(A) to FOLLOW(B)
-    for each production A → αB:
-        // Rule 3 (no β): add FOLLOW(A) to FOLLOW(B)
+    for each production A ? aB:
+        // Rule 3 (no ?): add FOLLOW(A) to FOLLOW(B)
         add FOLLOW(A) to FOLLOW(B)
 ```
 
@@ -255,33 +255,33 @@ while any FOLLOW set changes:
 | Symbol | FIRST | FOLLOW |
 |--------|-------|--------|
 | E | {(, id} | {$, )} |
-| E' | {+, ε} | {$, )} |
+| E' | {+, e} | {$, )} |
 | T | {(, id} | {+, $, )} |
-| T' | {*, ε} | {+, $, )} |
+| T' | {*, e} | {+, $, )} |
 | F | {(, id} | {*, +, $, )} |
 
 ### LL(1) Parsing Tables
 
-An **LL(1) parser** reads input left-to-right, produces a leftmost derivation, and uses one token of lookahead. A grammar is **LL(1)** if for every pair of productions `A → α | β`:
+An **LL(1) parser** reads input left-to-right, produces a leftmost derivation, and uses one token of lookahead. A grammar is **LL(1)** if for every pair of productions `A ? a | ?`:
 
-1. `FIRST(α) ∩ FIRST(β) = ∅`
-2. At most one of `α` and `β` can derive `ε`
-3. If `β ⇒* ε`, then `FIRST(α) ∩ FOLLOW(A) = ∅` (and vice versa)
+1. `FIRST(a) n FIRST(?) = ?`
+2. At most one of `a` and `?` can derive `e`
+3. If `? ?* e`, then `FIRST(a) n FOLLOW(A) = ?` (and vice versa)
 
 **Parsing table construction:**
 
 ```
 Algorithm: BuildLL1Table
 Input: Grammar G with FIRST and FOLLOW computed
-Output: Parsing table M[A, a] — production to apply
+Output: Parsing table M[A, a] ? production to apply
 
 Initialize M[A, a] = error for all A, a
-for each production A → α:
-    for each terminal a in FIRST(α) \ {ε}:
-        M[A, a] = A → α
-    if ε ∈ FIRST(α):
+for each production A ? a:
+    for each terminal a in FIRST(a) \ {e}:
+        M[A, a] = A ? a
+    if e ? FIRST(a):
         for each terminal b in FOLLOW(A):
-            M[A, b] = A → α
+            M[A, b] = A ? a
 ```
 
 The **LL(1) parsing algorithm** uses a stack initialized with `[$, S]` (end marker, start symbol) and the input buffer `w$`:
@@ -296,9 +296,9 @@ while stack is not empty:
         pop(X); advance input
     elif X is a terminal: error
     elif M[X, a] == error: error
-    elif M[X, a] == X → Y₁Y₂...Yₙ:
+    elif M[X, a] == X ? Y1Y2...Y?:
         pop(X)
-        push Yₙ...Y₂Y₁ (reverse order)
+        push Y?...Y2Y1 (reverse order)
 ```
 
 ### Complete LL(1) Parser Generator in TypeScript
@@ -313,7 +313,7 @@ class LL1ParserGenerator {
     first: Map<Symbol, Set<Symbol>> = new Map();
     follow: Map<Symbol, Set<Symbol>> = new Map();
     table: Map<string, Production> = new Map();
-    private epsilon = "ε";
+    private epsilon = "e";
 
     constructor(productions: Production[], start: Symbol) {
         this.grammar = this.normalize(productions, start);
@@ -343,7 +343,7 @@ class LL1ParserGenerator {
                 const before = this.first.get(lhs)!.size;
                 let allEpsilon = true;
                 for (const sym of prod.rhs) {
-                    if (sym === this.epsilon) break; // A → ε, add ε
+                    if (sym === this.epsilon) break; // A ? e, add e
                     const symFirst = this.first.get(sym) ?? new Set([sym]);
                     for (const f of symFirst) {
                         if (f !== this.epsilon) this.first.get(lhs)!.add(f);
@@ -370,9 +370,9 @@ class LL1ParserGenerator {
                     const B = prod.rhs[i];
                     if (!this.grammar.nonterminals.has(B)) continue;
                     const before = this.follow.get(B)!.size;
-                    const β = prod.rhs.slice(i + 1);
+                    const ? = prod.rhs.slice(i + 1);
                     let allEpsilon = true;
-                    for (const sym of β) {
+                    for (const sym of ?) {
                         const symFirst = this.first.get(sym) ?? new Set([sym]);
                         for (const f of symFirst) {
                             if (f !== this.epsilon) this.follow.get(B)!.add(f);
@@ -462,10 +462,10 @@ class LL1ParserGenerator {
 const prods: Production[] = [
     { lhs: "E", rhs: ["T", "E'"] },
     { lhs: "E'", rhs: ["+", "T", "E'"] },
-    { lhs: "E'", rhs: ["ε"] },
+    { lhs: "E'", rhs: ["e"] },
     { lhs: "T", rhs: ["F", "T'"] },
     { lhs: "T'", rhs: ["*", "F", "T'"] },
-    { lhs: "T'", rhs: ["ε"] },
+    { lhs: "T'", rhs: ["e"] },
     { lhs: "F", rhs: ["(", "E", ")"] },
     { lhs: "F", rhs: ["id"] },
 ];
@@ -534,7 +534,7 @@ class RecursiveDescentParser {
             this.consume("+");
             return this.term() && this.exprTail();
         }
-        return true; // ε
+        return true; // e
     }
 
     private term(): boolean {
@@ -549,7 +549,7 @@ class RecursiveDescentParser {
             this.consume("*");
             return this.factor() && this.termTail();
         }
-        return true; // ε
+        return true; // e
     }
 
     private factor(): boolean {
@@ -579,11 +579,103 @@ LL(1) parsers use **panic-mode recovery**: on encountering an error (blank table
 ## Practical Takeaways
 
 1. **LL(1) parsing is sufficient for most programming languages**: Expressions, statements, and declarations can all be handled with LL(1) techniques. The need for bottom-up parsing is rare in practice.
-2. **Recursive descent is the most intuitive parsing technique**: Each nonterminal maps to exactly one function — the implementation mirrors the grammar directly.
+2. **Recursive descent is the most intuitive parsing technique**: Each nonterminal maps to exactly one function ? the implementation mirrors the grammar directly.
 3. **Always eliminate left recursion first**: Left-recursive grammars cause infinite loops in top-down parsers. The transformation is mechanical and should be done before any other analysis.
 4. **Compute FIRST and FOLLOW carefully**: Errors in these sets propagate to the parsing table and produce mysterious failures. Verify with known examples.
 5. **Error reporting matters**: A good error message includes the line number, the unexpected token, and the expected tokens. Never just say "syntax error."
 
+
+// parsing topdown
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'parsing topdown', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// parsing topdown - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'parsing topdown' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Top-down parsing constructs a derivation from the root (start symbol) toward the leaves (input). LL(1) grammars enable deterministic parsing using a predictive parsing table. Eliminating left recursion and left factoring is essential for converting practical grammars into LL(1) form. Recursive-descent parsing provides a straightforward implementation strategy when the grammar meets LL(1) conditions. The FIRST and FOLLOW sets are fundamental to table construction and error recovery.
@@ -594,24 +686,24 @@ Top-down parsing constructs a derivation from the root (start symbol) toward the
    - A) It must be left-recursive
    - B) FIRST sets of alternative productions for the same nonterminal must be disjoint
    - C) It must use at least 3 tokens of lookahead
-   - D) All nonterminals must derive ε
+   - D) All nonterminals must derive e
 
 2. What is the purpose of left factoring?
-   - A) To eliminate ε-productions from the grammar
+   - A) To eliminate e-productions from the grammar
    - B) To delay the parsing decision until sufficient lookahead is available
    - C) To convert the grammar to Chomsky normal form
    - D) To reduce the number of nonterminals
 
-3. In the LL(1) parsing table, ε at position `M[E', )]` means:
+3. In the LL(1) parsing table, e at position `M[E', )]` means:
    - A) The parser should emit an error
-   - B) The parser should apply the production E' → ε when ) is the lookahead
+   - B) The parser should apply the production E' ? e when ) is the lookahead
    - C) The parser should skip the ) token
-   - D) ε is added to FOLLOW(E')
+   - D) e is added to FOLLOW(E')
 
 4. What is the time complexity of the iterative FIRST computation?
    - A) O(n) where n is the number of terminals
-   - B) O(p × n) where p is the number of productions
-   - C) O(2ⁿ)
+   - B) O(p ? n) where p is the number of productions
+   - C) O(2n)
    - D) O(n log n)
 
 5. In recursive-descent parsing, what does each nonterminal correspond to?
@@ -637,10 +729,10 @@ Top-down parsing constructs a derivation from the root (start symbol) toward the
 
 ### Application Problems
 
-1. Eliminate left recursion from the following grammar: `A → Aa | Ab | c | d`.
-2. Left factor the grammar: `S → iEtS | iEtSeS | a`. What is the purpose of left factoring?
+1. Eliminate left recursion from the following grammar: `A ? Aa | Ab | c | d`.
+2. Left factor the grammar: `S ? iEtS | iEtSeS | a`. What is the purpose of left factoring?
 3. Compute FIRST and FOLLOW for all nonterminals in the grammar:
-   `S → aBDh  B → cC  C → bC | ε  D → EF  E → g | ε  F → f | ε`
+   `S ? aBDh  B ? cC  C ? bC | e  D ? EF  E ? g | e  F ? f | e`
 4. Construct the LL(1) parsing table for the expression grammar and parse `id + id * id`.
 5. Using the TypeScript `LL1ParserGenerator` class, add the nonterminal `L` for a list of IDs separated by commas and verify the table has no conflicts.
 
@@ -648,10 +740,10 @@ Top-down parsing constructs a derivation from the root (start symbol) toward the
 
 1. Implement a recursive-descent parser in TypeScript for a grammar that recognizes simple assignment statements:
    ```
-   assign → id = expr
-   expr   → term { (+|-) term }
-   term   → factor { (*|/) factor }
-   factor → id | number | ( expr )
+   assign ? id = expr
+   expr   ? term { (+|-) term }
+   term   ? factor { (*|/) factor }
+   factor ? id | number | ( expr )
    ```
    The parser should report syntax errors with meaningful messages and show the parse tree structure as a parenthesized expression. Test it on valid and invalid inputs. Extend the `LL1ParserGenerator` to output the actual parse tree as a structured JSON object during parsing.
 </details>

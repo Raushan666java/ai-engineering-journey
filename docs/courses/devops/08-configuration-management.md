@@ -82,7 +82,7 @@ Idempotency is the property that a configuration management operation can be app
 
 ### Ansible Architecture
 
-Ansible is agentless — it connects via SSH (or WinRM for Windows) and pushes modules to execute:
+Ansible is agentless � it connects via SSH (or WinRM for Windows) and pushes modules to execute:
 
 ```mermaid
 flowchart LR
@@ -146,22 +146,22 @@ Roles organize playbooks, variables, files, templates, and handlers into reusabl
 
 ```text
 roles/
-├── common/
-│   ├── tasks/main.yml
-│   ├── handlers/main.yml
-│   ├── templates/
-│   ├── files/
-│   ├── vars/main.yml
-│   └── defaults/main.yml
-├── nginx/
-│   ├── tasks/main.yml
-│   ├── templates/nginx.conf.j2
-│   ├── vars/main.yml
-│   └── meta/main.yml
-└── app/
-    ├── tasks/main.yml
-    ├── templates/app.env.j2
-    └── defaults/main.yml
++-- common/
+�   +-- tasks/main.yml
+�   +-- handlers/main.yml
+�   +-- templates/
+�   +-- files/
+�   +-- vars/main.yml
+�   +-- defaults/main.yml
++-- nginx/
+�   +-- tasks/main.yml
+�   +-- templates/nginx.conf.j2
+�   +-- vars/main.yml
+�   +-- meta/main.yml
++-- app/
+    +-- tasks/main.yml
+    +-- templates/app.env.j2
+    +-- defaults/main.yml
 ```
 
 ### Comparison of CM Tools
@@ -522,15 +522,15 @@ class DriftDetector {
     let output = '# Configuration Drift Report\n\n';
 
     if (report.compliant) {
-      output += '✅ All systems are compliant — no drift detected.\n';
+      output += '? All systems are compliant � no drift detected.\n';
       return output;
     }
 
-    output += `❌ ${report.drifts.length} drift(s) detected\n\n`;
+    output += `? ${report.drifts.length} drift(s) detected\n\n`;
 
     for (const drift of report.drifts) {
-      const icon = drift.type === 'missing' ? '🔴' :
-                   drift.type === 'content' ? '🟡' : '⚪';
+      const icon = drift.type === 'missing' ? '??' :
+                   drift.type === 'content' ? '??' : '?';
       output += `${icon} ${drift.path}\n`;
       output += `   Type: ${drift.type}\n`;
       output += `   Expected: ${drift.expected}\n`;
@@ -711,7 +711,7 @@ class ConfigBackupManager {
     for (let i = 0; i < maxLen; i++) {
       if (i >= linesA.length) changes.push({ line: i + 1, type: 'added', content: linesB[i] });
       else if (i >= linesB.length) changes.push({ line: i + 1, type: 'removed', content: linesA[i] });
-      else if (linesA[i] !== linesB[i]) changes.push({ line: i + 1, type: 'changed', content: `${linesA[i]} → ${linesB[i]}` });
+      else if (linesA[i] !== linesB[i]) changes.push({ line: i + 1, type: 'changed', content: `${linesA[i]} ? ${linesB[i]}` });
     }
 
     return changes;
@@ -770,7 +770,7 @@ console.log('Recovery plan:', backupMgr.planRecovery(v2.id));
 ## Practical Takeaways
 
 1. **Use Ansible for agentless configuration management.** No agents to install or maintain.
-2. **Design for idempotency.** Always use `state=present`, `state=started` — not imperative commands.
+2. **Design for idempotency.** Always use `state=present`, `state=started` � not imperative commands.
 3. **Structure with roles.** Roles make playbooks reusable across projects.
 4. **Use templates for dynamic config.** Keep configuration files generic with Jinja2 variables.
 5. **Encrypt secrets with Ansible Vault.** Never store plaintext passwords in playbooks.
@@ -780,7 +780,7 @@ console.log('Recovery plan:', backupMgr.planRecovery(v2.id));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What makes Ansible different from Puppet and Chef?</summary>**A)** Ansible uses a master-agent architecture<br>**B)** Ansible is agentless — it connects via SSH<br>**C)** Ansible is written in Ruby<br>**D)** Ansible is pull-based<br><br>**Answer: B)** Ansible is agentless — it connects via SSH</details>
+<details><summary>Question 1: What makes Ansible different from Puppet and Chef?</summary>**A)** Ansible uses a master-agent architecture<br>**B)** Ansible is agentless � it connects via SSH<br>**C)** Ansible is written in Ruby<br>**D)** Ansible is pull-based<br><br>**Answer: B)** Ansible is agentless � it connects via SSH</details>
 
 <details><summary>Question 2: What does idempotency mean in configuration management?</summary>**A)** Running a playbook multiple times produces different results<br>**B)** Running a playbook multiple times produces the same result<br>**C)** A playbook runs only once<br>**D)** A playbook requires root access<br><br>**Answer: B)** Running a playbook multiple times produces the same result</details>
 
@@ -792,6 +792,48 @@ console.log('Recovery plan:', backupMgr.planRecovery(v2.id));
 
 ---
 
+
+// configuration management
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'configuration management', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Configuration management ensures systems are consistently configured through idempotent, automated processes.

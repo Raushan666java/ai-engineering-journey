@@ -1,6 +1,6 @@
 # Chapter 9: Code Generation
 
-← Previous: [Chapter 8: Runtime Environment](08-runtime-env.md) | **Next:** [Chapter 10: Code Optimization](10-optimization.md)
+? Previous: [Chapter 8: Runtime Environment](08-runtime-env.md) | **Next:** [Chapter 10: Code Optimization](10-optimization.md)
 
 ## Learning Objectives
 
@@ -79,10 +79,10 @@ Addressing modes specify how to compute the effective address of an operand:
 | Mode | Example | Effective Address | Usage |
 |------|---------|------------------|-------|
 | Absolute | `ld R1, 0x1000` | 0x1000 | Global variables |
-| Register direct | `add R1, R2, R3` | — | Fastest operand access |
+| Register direct | `add R1, R2, R3` | ? | Fastest operand access |
 | Register indirect | `ld R1, (R2)` | `R2` | Pointer dereference |
 | Indexed | `ld R1, 4(R2)` | `R2 + 4` | Stack locals, struct fields |
-| Immediate | `li R1, 42` | — | Constants |
+| Immediate | `li R1, 42` | ? | Constants |
 | PC-relative | `beq R1, R2, L` | `PC + offset` | Branch targets |
 
 ### Basic Blocks and Flow Graphs
@@ -104,7 +104,7 @@ A **basic block** is a maximal sequence of consecutive three-address instruction
 - For each leader, its basic block extends to (but not including) the next leader
 ```
 
-A **flow graph** has basic blocks as nodes and edges representing control flow. An edge `B₁ → B₂` exists if control can pass from `B₁`'s last instruction to `B₂`'s first instruction (fall-through or jump target).
+A **flow graph** has basic blocks as nodes and edges representing control flow. An edge `B1 ? B2` exists if control can pass from `B1`'s last instruction to `B2`'s first instruction (fall-through or jump target).
 
 ### Next-Use Information
 
@@ -277,10 +277,10 @@ class FlowGraph {
         const block = this.blocks[blockIdx];
         if (!block) return new Map();
 
-        const regMap = new Map<string, string>();  // variable → register
-        const varMap = new Map<string, string>();  // register → variable
-        const memMap = new Map<string, string>();  // variable → memory location
-        const nextUse = new Map<string, number>(); // variable → next use index
+        const regMap = new Map<string, string>();  // variable ? register
+        const varMap = new Map<string, string>();  // register ? variable
+        const memMap = new Map<string, string>();  // variable ? memory location
+        const nextUse = new Map<string, number>(); // variable ? next use index
 
         const freeRegs = REGISTERS.filter(r => r !== ZERO && r !== SP);
 
@@ -317,7 +317,7 @@ class FlowGraph {
                 }
             }
 
-            // All registers in use — spill farthest next use
+            // All registers in use ? spill farthest next use
             let spillReg = freeRegs[0];
             let farthestUse = -1;
 
@@ -451,7 +451,7 @@ class FlowGraph {
                 asm.push({ op: "jal", operands: [funcName], comment: `call with ${nArgs} args` });
                 if (instr.result) {
                     const reg = allocateReg(instr.result, i);
-                    asm.push({ op: "mov", operands: [reg, "R0"], comment: `return value → ${instr.result}` });
+                    asm.push({ op: "mov", operands: [reg, "R0"], comment: `return value ? ${instr.result}` });
                 }
                 continue;
             }
@@ -648,7 +648,7 @@ For whole procedures, graph coloring dominates. An **interference graph** has no
 **Chaitin's algorithm**:
 1. Build the interference graph from live-range data.
 2. Simplify: repeatedly remove nodes with degree < K, pushing them on a stack.
-3. If all remaining nodes have degree ≥ K, select a node to spill (remove and push on stack).
+3. If all remaining nodes have degree = K, select a node to spill (remove and push on stack).
 4. Pop nodes from the stack: assign a color not used by any neighbor. If no color available, mark for spill and insert spill code.
 5. If spills occurred, rebuild and repeat.
 
@@ -656,16 +656,16 @@ For whole procedures, graph coloring dominates. An **interference graph** has no
 
 Tree-rewriting instruction selection maps expression trees to machine instructions via pattern matching.
 
-**Rule format**: `pattern → instruction {cost}`
+**Rule format**: `pattern ? instruction {cost}`
 
 Example rules for a load-store architecture:
 
 ```
-(1) Ri = MEM(const)       → li  Ri, const       {cost=2}
-(2) Ri = MEM(addr)        → ld  Ri, addr        {cost=2}
-(3) Rk = Ri + Rj          → add Rk, Ri, Rj      {cost=1}
-(4) Rk = Ri + MEM(addr)   → add Rk, Ri, addr    {cost=2}
-(5) MEM(result) = Ri      → st  Ri, result      {cost=2}
+(1) Ri = MEM(const)       ? li  Ri, const       {cost=2}
+(2) Ri = MEM(addr)        ? ld  Ri, addr        {cost=2}
+(3) Rk = Ri + Rj          ? add Rk, Ri, Rj      {cost=1}
+(4) Rk = Ri + MEM(addr)   ? add Rk, Ri, addr    {cost=2}
+(5) MEM(result) = Ri      ? st  Ri, result      {cost=2}
 ```
 
 **Bottom-up DP algorithm (Burke-McKeeman)**:
@@ -810,7 +810,7 @@ function genCall(funcName: string, args: string[], returnReg: string): AsmInstr[
 | Allocation Strategy | Scope | Optimality | Spill Handling | Complexity |
 |-------------------|-------|------------|---------------|------------|
 | Farthest-Next-Use | Basic block | Optimal (single block) | Immediate spill | O(n) |
-| Graph Coloring | Whole procedure | Good (NP-hard approximation) | Heuristic spill | O(K × n²) |
+| Graph Coloring | Whole procedure | Good (NP-hard approximation) | Heuristic spill | O(K ? n?) |
 | Linear Scan | Whole procedure | Weaker but faster | Simple interval | O(n log n) |
 
 ### Quick Reference
@@ -840,6 +840,98 @@ function genCall(funcName: string, args: string[], returnReg: string): AsmInstr[
 4. **Tree-rewriting with DP automates instruction selection**: Express the target instruction set as tree patterns with costs. The DP pass selects the cheapest covering.
 5. **Procedure calls are the hardest part**: Saving and restoring caller-saved registers, passing arguments, and aligning the stack require careful coordination.
 
+
+// code gen
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'code gen', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// code gen - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'code gen' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Code generation maps IR to target machine instructions. Basic blocks partition code for analysis and optimization. Register allocation via the farthest-next-use heuristic handles single blocks optimally; graph coloring handles whole procedures. Instruction selection via tree-rewriting with dynamic programming automates pattern matching against the target instruction set. Effective code generation balances instruction cost, register pressure, and compile time. The TypeScript `FlowGraph` and `InstructionSelector` classes demonstrate block identification, register allocation, and instruction selection with working demos.

@@ -1,4 +1,4 @@
-# Chapter 23: Case Study â€” Dropbox and File Storage
+# Chapter 23: Case Study � Dropbox and File Storage
 > **Previous:** [22 Case Study Twitter](./22-case-study-twitter.md) | **Next:** [24 Interview Preparation](./24-interview-preparation.md)
 
 ---
@@ -48,26 +48,26 @@ flowchart LR
 ```
 
 ## Theory / Case Study
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![Dropbox Architecture Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/23-dropbox.png)
 
 ### Phase 1: Problem Scope and Requirements
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
-Dropbox serves over 700 million users storing more than 500 billion files across Windows, macOS, Linux, iOS, Android, and the web. The core promise is simple: a file saved on one device appears on all others within seconds. Behind this simplicity lies one of the most complex engineering challenges in distributed systems â€” synchronizing billions of file changes across heterogeneous devices with unreliable network connections, limited battery life, and widely varying storage capacities.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
+Dropbox serves over 700 million users storing more than 500 billion files across Windows, macOS, Linux, iOS, Android, and the web. The core promise is simple: a file saved on one device appears on all others within seconds. Behind this simplicity lies one of the most complex engineering challenges in distributed systems � synchronizing billions of file changes across heterogeneous devices with unreliable network connections, limited battery life, and widely varying storage capacities.
 
-The requirements are deceptively demanding. Conflict detection for small files must complete within 100 milliseconds â€” the user should not see a sync conflict icon persist after saving a file. Sync must work across platforms with fundamentally different file system event notification APIs: Windows uses ReadDirectoryChangesW, macOS uses FSEvents, and Linux uses inotify. The system must handle files up to hundreds of gigabytes (CAD files, video projects, database dumps) while also optimizing for the common case of small text documents and photos.
+The requirements are deceptively demanding. Conflict detection for small files must complete within 100 milliseconds � the user should not see a sync conflict icon persist after saving a file. Sync must work across platforms with fundamentally different file system event notification APIs: Windows uses ReadDirectoryChangesW, macOS uses FSEvents, and Linux uses inotify. The system must handle files up to hundreds of gigabytes (CAD files, video projects, database dumps) while also optimizing for the common case of small text documents and photos.
 
 Non-functional requirements include strong read-after-write consistency within a single user's namespace (if I save a file on my laptop and open it on my phone 10 seconds later, I must see the latest version), bi-directional sync that converges to the same state on all devices, and graceful handling of offline periods lasting days or weeks. For business users, the system must support team folders with shared ownership, granular permissions, and audit logging.
 
-The scale is staggering. Users store over 500 billion files. The average user stores 10,000 files across 500 folders. The total data stored exceeds 10 exabytes (10 million terabytes). On the desktop client alone, the file watcher must track changes to millions of files without consuming more than 5% of CPU or 200MB of memory â€” the client cannot degrade the user's computing experience. The mobile app must handle photo uploads from the camera roll, selective sync (choose which folders to sync to mobile), and offline access with local caching. The web client must serve file previews for 100+ file types, including Office documents, PDFs, videos, and RAW photos â€” all within a browser tab.
+The scale is staggering. Users store over 500 billion files. The average user stores 10,000 files across 500 folders. The total data stored exceeds 10 exabytes (10 million terabytes). On the desktop client alone, the file watcher must track changes to millions of files without consuming more than 5% of CPU or 200MB of memory � the client cannot degrade the user's computing experience. The mobile app must handle photo uploads from the camera roll, selective sync (choose which folders to sync to mobile), and offline access with local caching. The web client must serve file previews for 100+ file types, including Office documents, PDFs, videos, and RAW photos � all within a browser tab.
 
 ### Phase 2: Client Architecture
 
@@ -87,7 +87,7 @@ The file watcher monitors the Dropbox folder for changes. On each platform, it u
 
 The file watcher must handle several edge cases:
 - **Rapid successive saves**: An application may save a file dozens of times per second (auto-save in IDEs, Excel auto-recovery). The watcher debounces events with a 200ms coalescing window.
-- **Atomic moves**: When an application saves a file by writing to a temp file and renaming, the watcher sees a delete event followed by a create event â€” it must recognize this as a modification, not a delete-and-recreate.
+- **Atomic moves**: When an application saves a file by writing to a temp file and renaming, the watcher sees a delete event followed by a create event � it must recognize this as a modification, not a delete-and-recreate.
 - **Symlinks**: On macOS and Linux, symlinks within the Dropbox folder are followed; symlinks pointing outside are ignored (to avoid syncing system files).
 
 **Indexing Engine**
@@ -143,11 +143,11 @@ Implementation differs by platform:
 - **Windows**: Uses the `CfApi` (Cloud Files API) introduced in Windows 10. The client registers sync root IDs and uses `CfCreatePlaceholders`, `CfGetPlaceholderInfo`, and `CfHydratePlaceholder` for the same functionality.
 - **Linux**: Selective sync is supported but Smart Sync is not available due to the lack of a standardized cloud files API in the Linux kernel.
 
-Smart Sync dramatically reduces local storage requirements. An enterprise user with a team folder containing 500GB of files might only store 5GB locally â€” the files they actually use â€” while seeing all 500GB in their file system.
+Smart Sync dramatically reduces local storage requirements. An enterprise user with a team folder containing 500GB of files might only store 5GB locally � the files they actually use � while seeing all 500GB in their file system.
 
 ### Phase 3: Sync Protocol and Block-Level Transfer
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -169,7 +169,7 @@ The savings are dramatic. For a 100MB presentation where one slide image is repl
 Dropbox uses content-defined chunking with a rolling hash based on Rabin fingerprinting. Unlike fixed-size block boundaries (which shift every time a byte is inserted or deleted near a boundary), CDC determines block boundaries based on the content itself.
 
 The Rabin fingerprint is a polynomial hash computed over a sliding window of bytes. When the fingerprint modulo a target value hits zero, a block boundary is declared. This means:
-- Inserting or deleting bytes in the middle of a file only affects the local block boundary â€” most block boundaries remain stable.
+- Inserting or deleting bytes in the middle of a file only affects the local block boundary � most block boundaries remain stable.
 - The same content chunk in different files produces the same block hash, enabling cross-file deduplication.
 - The average block size is configurable (Dropbox uses ~4MB), but blocks can be as small as 512KB or as large as 16MB.
 
@@ -181,7 +181,7 @@ At the server side, Dropbox stores each unique block exactly once. The block is 
 file_block_list = ["hash1", "hash2", "hash3", ...]
 ```
 
-When the server receives a block upload, it checks if a block with that hash already exists. If yes, the block is not stored again â€” the file's block list simply references the existing block. This provides:
+When the server receives a block upload, it checks if a block with that hash already exists. If yes, the block is not stored again � the file's block list simply references the existing block. This provides:
 
 - **Block-level deduplication across files**: If 1 million users each have a copy of the same 100MB video file, the server stores it once (roughly 100MB) instead of 1 million times (100PB). Each user's block list references the same set of block hashes.
 - **Block-level deduplication across versions**: When a file is edited, only the changed blocks consume new storage space.
@@ -217,7 +217,7 @@ The metadata store must be highly available. Write operations go to the MySQL ma
 
 **Storage Architecture: From S3 to Magic Pocket**
 
-Dropbox initially stored all file blocks on Amazon S3. As the platform grew to hundreds of petabytes, the S3 bill became one of Dropbox's largest operational expenses. In 2015, Dropbox began migrating to Magic Pocket â€” a custom object storage system built from commodity hardware.
+Dropbox initially stored all file blocks on Amazon S3. As the platform grew to hundreds of petabytes, the S3 bill became one of Dropbox's largest operational expenses. In 2015, Dropbox began migrating to Magic Pocket � a custom object storage system built from commodity hardware.
 
 Magic Pocket's key design decisions:
 - **Commodity servers**: Standard x86 servers with directly attached hard drives (12-16 drives per server). No SAN, no NAS.
@@ -276,7 +276,7 @@ The mobile sync strategy is optimized for the most common mobile use case: photo
 
 For file access, the mobile client does not maintain a full local copy of the Dropbox folder. Instead, it keeps a lightweight index (file names, sizes, thumbnails) in the local SQLite database. Full file content is downloaded on demand when the user taps a file. Recently viewed files are cached locally; the cache is evicted using an LRU policy bounded by a configurable storage limit (default: 2GB on iOS, varies by Android device).
 
-Offline access is implemented through "favorites." When the user marks a file or folder as a favorite, the client downloads all content (files in the folder) to the local cache and marks it as "pinned" â€” exempt from LRU eviction. Pinned files are updated whenever the device has connectivity and the file changes on the server.
+Offline access is implemented through "favorites." When the user marks a file or folder as a favorite, the client downloads all content (files in the folder) to the local cache and marks it as "pinned" � exempt from LRU eviction. Pinned files are updated whenever the device has connectivity and the file changes on the server.
 
 **Web Client Architecture**
 
@@ -385,7 +385,7 @@ graph TB
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory / Case Study | Core topic covered in Chapter 23: Case Study â€” Dropbox and File Storage | Defined by specific measurable attributes |
+| Theory / Case Study | Core topic covered in Chapter 23: Case Study � Dropbox and File Storage | Defined by specific measurable attributes |
 
 ---
 
@@ -394,7 +394,7 @@ graph TB
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory / Case Study | Fundamental concept for Chapter 23: Case Study â€” Dropbox and File Storage |
+| Theory / Case Study | Fundamental concept for Chapter 23: Case Study � Dropbox and File Storage |
 
 ---
 
@@ -438,10 +438,10 @@ graph TB
 
 | Concept | Definition | Key Insight |
 |---------|-----------|-------------|
-| Theory / Case Study | Core topic in Chapter 23: Case Study â€” Dropbox and File Storage | Fundamental to system design |
-| Concept Comparison | Core topic in Chapter 23: Case Study â€” Dropbox and File Storage | Fundamental to system design |
-| Quick Reference | Core topic in Chapter 23: Case Study â€” Dropbox and File Storage | Fundamental to system design |
-| Cross-Application Matrix | Core topic in Chapter 23: Case Study â€” Dropbox and File Storage | Fundamental to system design |
+| Theory / Case Study | Core topic in Chapter 23: Case Study � Dropbox and File Storage | Fundamental to system design |
+| Concept Comparison | Core topic in Chapter 23: Case Study � Dropbox and File Storage | Fundamental to system design |
+| Quick Reference | Core topic in Chapter 23: Case Study � Dropbox and File Storage | Fundamental to system design |
+| Cross-Application Matrix | Core topic in Chapter 23: Case Study � Dropbox and File Storage | Fundamental to system design |
 
 ---
 
@@ -450,9 +450,9 @@ graph TB
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory / Case Study | Essential concept for Chapter 23: Case Study â€” Dropbox and File Storage |
-| Concept Comparison | Essential concept for Chapter 23: Case Study â€” Dropbox and File Storage |
-| Quick Reference | Essential concept for Chapter 23: Case Study â€” Dropbox and File Storage |
+| Theory / Case Study | Essential concept for Chapter 23: Case Study � Dropbox and File Storage |
+| Concept Comparison | Essential concept for Chapter 23: Case Study � Dropbox and File Storage |
+| Quick Reference | Essential concept for Chapter 23: Case Study � Dropbox and File Storage |
 
 ---
 
@@ -604,6 +604,129 @@ class SyncEngine {
 }
 ```
 
+
+### Implementation: Dropbox Architecture Case Study
+
+```typescript
+class DropboxFileSystem {
+  private files = new Map<string, { id: string; name: string; userId: string; size: number; parentId: string | null; isDir: boolean; version: number; chunks: string[] }>();
+  private chunks = new Map<string, string>(); private chunkSize = 4 * 1024 * 1024; // 4MB
+  createFile(userId: string, name: string, parentId: string | null, content: string): string {
+    const id = `file-${Date.now()}-${Math.random().toString(36).slice(2)}`; const chunks: string[] = [];
+    for (let i = 0; i < content.length; i += this.chunkSize) { const cid = `${id}-chunk-${i / this.chunkSize}`; this.chunks.set(cid, content.slice(i, i + this.chunkSize)); chunks.push(cid); }
+    this.files.set(id, { id, name, userId, size: content.length, parentId, isDir: false, version: 1, chunks }); return id; }
+  readFile(fileId: string): string | null { const file = this.files.get(fileId); if (!file) return null; return file.chunks.map(cid => this.chunks.get(cid) || "").join(""); }
+  updateFile(fileId: string, content: string): boolean {
+    const file = this.files.get(fileId); if (!file) return false; const oldChunks = file.chunks;
+    file.chunks.forEach(cid => this.chunks.delete(cid)); const newChunks: string[] = [];
+    for (let i = 0; i < content.length; i += this.chunkSize) { const cid = `${fileId}-chunk-${i / this.chunkSize}`; this.chunks.set(cid, content.slice(i, i + this.chunkSize)); newChunks.push(cid); }
+    file.chunks = newChunks; file.size = content.length; file.version++; return true; }
+  createFolder(userId: string, name: string, parentId: string | null): string { const id = `folder-${Date.now()}`; this.files.set(id, { id, name, userId, size: 0, parentId, isDir: true, version: 1, chunks: [] }); return id; }
+  listFolder(folderId: string): { name: string; isDir: boolean; size: number; version: number }[] {
+    return [...this.files.values()].filter(f => f.parentId === folderId).map(({ name, isDir, size, version }) => ({ name, isDir, size, version })); }
+  deleteFile(fileId: string): boolean { const f = this.files.get(fileId); if (!f) return false; if (!f.isDir) f.chunks.forEach(cid => this.chunks.delete(cid)); this.files.delete(fileId); return true; }
+}
+class SyncEngine { private syncStatus = new Map<string, "synced" | "pending" | "conflict">();
+  markPending(fileId: string): void { this.syncStatus.set(fileId, "pending"); }
+  sync(fileId: string): { status: string } { const status = this.syncStatus.get(fileId) || "synced"; if (status === "conflict") return { status: "conflict" }; this.syncStatus.set(fileId, "synced"); return { status: "synced" }; }
+  getConflicts(): string[] { return [...this.syncStatus.entries()].filter(([_, s]) => s === "conflict").map(([id]) => id); }
+  resolveConflict(fileId: string, resolution: "local" | "remote"): void { this.syncStatus.set(fileId, "synced"); } }
+class VersionHistory { private versions = new Map<string, { version: number; timestamp: number; size: number }[]>();
+  record(fileId: string, size: number): void { if (!this.versions.has(fileId)) this.versions.set(fileId, []); this.versions.get(fileId)!.push({ version: this.versions.get(fileId)!.length + 1, timestamp: Date.now(), size }); }
+  getHistory(fileId: string, limit = 10): { version: number; timestamp: number; size: number }[] { return (this.versions.get(fileId) || []).slice(-limit); } }
+```
+
+// case study dropbox
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'case study dropbox', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// case study dropbox - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'case study dropbox' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Dropbox's sync engine uses a three-state state machine (local, remote, desired) to reconcile file differences across devices, communicating with the server via HTTPS with persistent connections and exponential backoff.
@@ -649,11 +772,11 @@ class SyncEngine {
 
 3. **Bandwidth Optimization**: A user has a 500GB video project folder with 40,000 files. The first sync will take hours. Design a sync prioritization strategy that: (a) makes the folder usable within 60 seconds (the user can open any file and see a placeholder), (b) downloads files on-demand when opened, (c) prioritizes files modified within the last 7 days, (d) uses bandwidth estimation to avoid saturating the user's connection. How would you represent the sync priority as a score per file?
 
-   Provide: (a) the priority scoring formula with at least 5 features and their weights, (b) the adaptation logic when the user opens a file that was not in the priority queue, (c) the bandwidth allocation algorithm (fair share across concurrent downloads vs sequential priority queue), and (d) how priority changes when the user's connectivity type changes (WiFi â†’ cellular â†’ metered hotspot).
+   Provide: (a) the priority scoring formula with at least 5 features and their weights, (b) the adaptation logic when the user opens a file that was not in the priority queue, (c) the bandwidth allocation algorithm (fair share across concurrent downloads vs sequential priority queue), and (d) how priority changes when the user's connectivity type changes (WiFi ? cellular ? metered hotspot).
 
 4. **Magic Pocket Capacity Planning**: Dropbox is adding 500PB of new storage per year across two geographic regions. Design the capacity plan:
 
-   (a) How many commodity storage servers are needed per year if each server has 12 Ã— 12TB HDDs? (assume 70% usable capacity after formatting and system overhead)
+   (a) How many commodity storage servers are needed per year if each server has 12 � 12TB HDDs? (assume 70% usable capacity after formatting and system overhead)
    (b) How many racks are needed per year if each rack holds 40 servers?
    (c) What is the total power consumption for the new capacity if each server consumes 200W idle and 350W under load? (assume 80% utilization on average)
    (d) How does the erasure coding scheme (12,8) affect the usable-to-raw ratio compared to 3x replication?
@@ -678,7 +801,7 @@ Your solution should include:
 
 **Data Placement Strategy**:
 - A three-tier block placement: "hot" blocks (accessed daily) stored in the user's home region, "warm" blocks (accessed weekly) stored with a primary replica in the home region and a secondary in a paired region, "cold" blocks (accessed rarely) stored with erasure coding stripes spanning 3 regions
-- The pairing topology: which regions are paired for warm block replication (e.g., US-East â†” EU-West for transatlantic latency)
+- The pairing topology: which regions are paired for warm block replication (e.g., US-East ? EU-West for transatlantic latency)
 - The promotion/demotion policy: what access pattern triggers a block to move from cold to warm tier (e.g., 3 accesses in 24 hours)
 
 **Metadata Consistency Protocol**:
@@ -688,7 +811,7 @@ Your solution should include:
 - Failure mode: if the authoritative region for user X is unreachable, a secondary region is elected via a Paxos-based leader election among the 8 regions
 
 **Cross-Region Sharing Protocol**:
-- Sharing without copying: when user A in London shares a file with user B in Sydney, the metadata is updated (file_id â†’ shared_with_user_B) without copying any blocks
+- Sharing without copying: when user A in London shares a file with user B in Sydney, the metadata is updated (file_id ? shared_with_user_B) without copying any blocks
 - On access: when user B opens the shared file, the Australian client is redirected to the London region for block download (HTTP 302 redirect with a signed URL valid for 1 hour)
 - Caching: if user B accesses the file frequently (>5 times in a week), the blocks are replicated to the Australian region asynchronously
 - Consistency: the share permission change is visible globally within 1 second (the metadata update propagates via the metadata consistency protocol)
@@ -696,9 +819,9 @@ Your solution should include:
 **Storage Requirement Calculation**:
 - Raw user data: 50EB
 - Erasure coding overhead for cold tier (3x 12,8 over 3 regions = 12/8 * 3/2 = 2.25x): ~50EB * 2.25 = 112.5EB
-- Replication for hot/warm tiers (2x per region, 2 regions = 4x): estimate 20% of data is hot/warm â†’ 10EB * 4 = 40EB
+- Replication for hot/warm tiers (2x per region, 2 regions = 4x): estimate 20% of data is hot/warm ? 10EB * 4 = 40EB
 - Total raw storage: ~152.5EB
-- Usable capacity per server (12 Ã— 12TB at 70%): ~100TB per server
+- Usable capacity per server (12 � 12TB at 70%): ~100TB per server
 - Servers needed: 152.5EB / 100TB = ~1.5 million servers
 - Racks: 1.5M / 40 = ~38,000 racks
-- Power: 1.5M servers Ã— 300W Ã— 24h Ã— 365 = ~3.9 billion kWh/year (comparable to a medium-sized country)
+- Power: 1.5M servers � 300W � 24h � 365 = ~3.9 billion kWh/year (comparable to a medium-sized country)

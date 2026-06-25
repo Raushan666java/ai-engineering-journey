@@ -58,19 +58,19 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![Observability and Resiliency Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/17-observability-resiliency.png)
 
 ### 1. The Three Pillars of Observability
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 Observability is the ability to understand a system's internal state from its external outputs. Three data types form the foundation:
 
 **Logging**: Immutable, timestamped records of discrete events. Structured logs (JSON) include severity level, module, correlation ID, and key-value pairs. Best for debugging specific requests and post-mortem analysis.
@@ -81,7 +81,7 @@ Observability is the ability to understand a system's internal state from its ex
 
 **RED Method** (for services): Rate (requests/second), Errors (failed requests/second), Duration (latency distribution). Every service should expose at minimum these three metrics.
 
-**USE Method** (for resources): Utilization (time resource busy), Saturation (work queued), Errors (failure count). Applied to CPU, memory, disk, network â€” every infrastructure resource.
+**USE Method** (for resources): Utilization (time resource busy), Saturation (work queued), Errors (failure count). Applied to CPU, memory, disk, network � every infrastructure resource.
 
 **Four Golden Signals** (Google SRE):
 - **Latency**: Time to service a request. Distinguish success latency (fast) from error latency (slow).
@@ -144,7 +144,7 @@ groups:
 
 ### 3. Grafana
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -206,14 +206,14 @@ def get_order(id):
 
 ```
 traceparent: 00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01
-  â”€â”¬â”€ â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”¬â”€
-   â”‚          â”‚                          â”‚              â”‚
+  --- -------------------------- ------------------- ---
+   �          �                          �              �
  version   trace_id                    span_id       trace_flags
 
 tracestate: vendor1=value1,vendor2=value2
 ```
 
-Automatic propagation via OpenTelemetry's HTTP instrumentation libraries â€” no manual header passing needed.
+Automatic propagation via OpenTelemetry's HTTP instrumentation libraries � no manual header passing needed.
 
 **Sampling strategies**:
 - **Head-based**: Decision at the root span (first service). Simple but may miss important slow requests. Use ProbabilitySampler (sample 1% of traces).
@@ -322,15 +322,15 @@ Isolates resources so failure in one component doesn't exhaust shared resources.
 
 ```
 Thread pools:
-  â”Œâ”€ order-service â”€â”
-  â”‚ pool: 10 threadsâ”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-  â”Œâ”€ payment-serviceâ”€â”  â† this pool exhausts, orders pool unaffected
-  â”‚ pool: 5 threads â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-  â”Œâ”€ inventory-svc â”€â”
-  â”‚ pool: 8 threads â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+  +- order-service -+
+  � pool: 10 threads�
+  +-----------------+
+  +- payment-service-+  ? this pool exhausts, orders pool unaffected
+  � pool: 5 threads �
+  +-----------------+
+  +- inventory-svc -+
+  � pool: 8 threads �
+  +-----------------+
 ```
 
 **Semaphore isolation**: Lighter-weight. Limit concurrent calls to a dependency (no thread context switch). Use when latency is low (< 10ms). Semaphore count = max concurrent calls.
@@ -406,7 +406,7 @@ if len(work_queue) > MAX_DEPTH: return {"error": "too many requests"}, 503
 
 ### 13. Health Check API
 
-Standard endpoints: `GET /health` (liveness â€” process alive?) and `GET /ready` (readiness â€” dependencies reachable?). Dependency checks return 503 to remove degraded pods from the load balancer:
+Standard endpoints: `GET /health` (liveness � process alive?) and `GET /ready` (readiness � dependencies reachable?). Dependency checks return 503 to remove degraded pods from the load balancer:
 
 ```python
 @app.route("/ready")
@@ -723,14 +723,130 @@ class DistributedTracer {
 }
 ```
 
+
+### Implementation: Observability, Monitoring, and Resiliency
+
+```typescript
+class MetricsCollector { private metrics = new Map<string, { values: number[]; timestamps: number[] }>();
+  record(name: string, value: number): void { if (!this.metrics.has(name)) this.metrics.set(name, { values: [], timestamps: [] }); const m = this.metrics.get(name)!; m.values.push(value); m.timestamps.push(Date.now()); if (m.values.length > 1000) { m.values.shift(); m.timestamps.shift(); } }
+  query(name: string, durationMs = 300000): number[] { const m = this.metrics.get(name); if (!m) return []; const cutoff = Date.now() - durationMs; const indices = m.timestamps.map((t, i) => t >= cutoff ? i : -1).filter(i => i >= 0); return indices.map(i => m.values[i]); }
+  avg(name: string, durationMs = 300000): number { const vals = this.query(name, durationMs); return vals.length > 0 ? vals.reduce((a, b) => a + b, 0) / vals.length : 0; }
+  p95(name: string, durationMs = 300000): number { const vals = this.query(name, durationMs).sort((a, b) => a - b); return vals.length > 0 ? vals[Math.floor(vals.length * 0.95)] : 0; }
+  p99(name: string, durationMs = 300000): number { const vals = this.query(name, durationMs).sort((a, b) => a - b); return vals.length > 0 ? vals[Math.floor(vals.length * 0.99)] : 0; }
+}
+class HealthCheckService { private checks = new Map<string, () => Promise<boolean>>();
+  register(name: string, check: () => Promise<boolean>): void { this.checks.set(name, check); }
+  async runAll(): Promise<{ healthy: boolean; results: { name: string; ok: boolean; latencyMs: number }[] }> { const results = []; for (const [name, check] of this.checks) { const start = Date.now(); try { const ok = await check(); results.push({ name, ok, latencyMs: Date.now() - start }); } catch { results.push({ name, ok: false, latencyMs: Date.now() - start }); } } return { healthy: results.every(r => r.ok), results }; }
+}
+class RetryPolicy { constructor(private maxRetries: number, private baseDelay: number, private maxDelay: number) {}
+  async execute<T>(fn: () => Promise<T>): Promise<T> { let lastError: any; for (let i = 0; i <= this.maxRetries; i++) { try { return await fn(); } catch (e) { lastError = e; if (i < this.maxRetries) await this.delay(i); } } throw lastError; }
+  private async delay(attempt: number): Promise<void> { const jitter = Math.random() * 100; const delay = Math.min(this.baseDelay * Math.pow(2, attempt) + jitter, this.maxDelay); return new Promise(r => setTimeout(r, delay)); }
+}
+class ChaosMonkey { private services = new Map<string, { fail: boolean; latency: number }>();
+  addService(name: string): void { this.services.set(name, { fail: false, latency: 0 }); }
+  injectFailure(name: string, type: "crash" | "latency"): void { const s = this.services.get(name); if (s) { if (type === "crash") s.fail = true; else s.latency = 2000 + Math.random() * 3000; } }
+  check(): string[] { const affected: string[] = []; for (const [name, s] of this.services) { if (s.fail || s.latency > 500) affected.push(name); } return affected; } }
+```
+
+// observability resiliency
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'observability resiliency', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// observability resiliency - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'observability resiliency' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- The three pillars of observability are logging, metrics, and tracing â€” each serves a distinct purpose: debugging, alerting, and latency analysis
+- The three pillars of observability are logging, metrics, and tracing � each serves a distinct purpose: debugging, alerting, and latency analysis
 - RED method (Rate, Errors, Duration) for services; USE method (Utilization, Saturation, Errors) for infrastructure resources
 - Prometheus uses a pull model with Counter (monotonic), Gauge (fluctuating), Histogram (bucketed), and Summary (quantile) metric types
 - OpenTelemetry provides vendor-neutral tracing with W3C TraceContext propagation and configurable sampling strategies
 - Structured logging with JSON format and correlation IDs enables centralized aggregation and cross-service log stitching
-- Circuit breaker transitions through CLOSED â†’ OPEN â†’ HALF-OPEN states with configurable thresholds and recovery timeouts
+- Circuit breaker transitions through CLOSED ? OPEN ? HALF-OPEN states with configurable thresholds and recovery timeouts
 - Bulkhead pattern isolates thread pools or semaphores per dependency to prevent cascading resource exhaustion
 - Retry with exponential backoff and full jitter prevents thundering herd during transient failures
 - Graceful degradation uses fallbacks, default responses, and feature flags to serve partial functionality under load

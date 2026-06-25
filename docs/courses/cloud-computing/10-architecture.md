@@ -1,4 +1,4 @@
-﻿# Chapter 10: Cloud Architecture Design Patterns
+# Chapter 10: Cloud Architecture Design Patterns
 
 > **Previous:** [Chapter 9: Containerization](./09-containerization.md) | **Next:** [Course Capstone](./00-capstone.md)
 
@@ -430,9 +430,9 @@ const review: WARReview = {
 console.log(generateReviewActions(review).join("\n"));
 \\\
 
-> **One-Sentence Takeaway:** Cloud architecture design is the art of balancing the six Well-Architected pillars — operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability — across every design decision.
+> **One-Sentence Takeaway:** Cloud architecture design is the art of balancing the six Well-Architected pillars ? operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability ? across every design decision.
 
-> **Pro Tip:** Run a Well-Architected Review quarterly. Fix low-scoring pillars incrementally. The worst architecture pattern is "set and forget" — cloud architectures need continuous refinement as services and workloads evolve.
+> **Pro Tip:** Run a Well-Architected Review quarterly. Fix low-scoring pillars incrementally. The worst architecture pattern is "set and forget" ? cloud architectures need continuous refinement as services and workloads evolve.
 
 > **Warning:** Multi-region active-active architectures are expensive and complex. Most workloads do not need them. Start with Backup & Restore DR, level up to Pilot Light, and only go active-active when your business genuinely cannot tolerate minutes of downtime.
 
@@ -442,7 +442,7 @@ console.log(generateReviewActions(review).join("\n"));
 |---------|-----------|-----------------|----------|
 | Well-Architected | 6-pillar framework for cloud design | Continuous improvement process | Architecture reviews |
 | 6 Rs | Migration strategy spectrum | Speed vs. benefit trade-off | Workload migration |
-| DR Strategies | Backup → Pilot Light → Warm → Multi-Site | RTO/RPO drive the choice | Business continuity |
+| DR Strategies | Backup ? Pilot Light ? Warm ? Multi-Site | RTO/RPO drive the choice | Business continuity |
 | Fault Tolerance | Design for component failure | Eliminate SPOFs at every layer | All production systems |
 | Microservices | Bounded context decomposition | Independent deployment and scaling | Large applications |
 | Observability | Metrics + Logs + Traces | Three data types for full visibility | Monitoring and debugging |
@@ -758,6 +758,98 @@ console.log("Migration phases:", JSON.stringify(plan, null, 2));
 ```
 ```
 
+
+// architecture
+// iaas-paas-saas-cloud-native implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'architecture', data: { topic: 'iaas-paas-saas-cloud-native' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// architecture - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'cloud-services demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'cloud-computing', chapter: 'architecture' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('cloud-services'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - The Well-Architected Framework has 6 pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.

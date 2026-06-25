@@ -28,7 +28,7 @@
 | Vanishing Gradient | Gradients become extremely small in deep networks with Sigmoid/Tanh, stalling training | Use ReLU or its variants (Leaky ReLU, ELU) to mitigate vanishing gradients |
 | Stochastic Gradient Descent | Iterative weight updates using small random batches of data | Mini-batch SGD balances convergence speed and stability |
 | Regularization | L2 penalty, Dropout, and Batch Normalization prevent overfitting | Always use at least one form of regularization in networks with >2 hidden layers |
-| Weight Initialization | Xavier and He initialization prevent gradient explosion/vanishing at layer boundaries | He init for ReLU, Xavier init for Tanh — never start with zero weights |
+| Weight Initialization | Xavier and He initialization prevent gradient explosion/vanishing at layer boundaries | He init for ReLU, Xavier init for Tanh ? never start with zero weights |
 
 ## Chapter Roadmap
 
@@ -72,22 +72,22 @@ Activation functions introduce non-linearity into the network, which is essentia
 ```mermaid
 graph LR
     subgraph Sigmoid
-        S1["σ(x) = 1/(1+e⁻ˣ)"]
+        S1["s(x) = 1/(1+e??)"]
         S2["Range: (0, 1)"]
         S3["Saturates at extremes"]
     end
     subgraph ReLU
         R1["f(x) = max(0, x)"]
-        R2["Range: [0, ∞)"]
+        R2["Range: [0, 8)"]
         R3["No saturation for x>0"]
     end
     subgraph Tanh
-        T1["tanh(x) ∈ (-1, 1)"]
+        T1["tanh(x) ? (-1, 1)"]
         T2["Zero-centered"]
         T3["Still saturates"]
     end
     subgraph Softmax
-        SM1["e^zᵢ / Σ e^zʲ"]
+        SM1["e^z? / S e^z?"]
         SM2["Probability vector"]
         SM3["Multi-class output"]
     end
@@ -97,11 +97,11 @@ graph LR
 |------------|---------|-------|-------------------|----------|
 | Sigmoid | $\sigma(x) = \frac{1}{1+e^{-x}}$ | (0, 1) | Vanishes for $|x|>3$ | Binary output layer |
 | Tanh | $\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}$ | (-1, 1) | Vanishes for $|x|>3$ | Zero-centered hidden |
-| ReLU | $f(x) = \max(0, x)$ | [0, ∞) | 1 for $x>0$, 0 for $x<0$ | Default hidden layer |
-| Leaky ReLU | $f(x) = \max(0.01x, x)$ | (-∞, ∞) | 0.01 for $x<0$, 1 for $x>0$ | Avoids dying ReLU |
-| ELU | $f(x) = x \text{ if } x>0, \alpha(e^x-1) \text{ else}$ | (-α, ∞) | Smooth for $x<0$ | Deeper networks |
-| GELU | $f(x) = x \cdot \Phi(x)$ | (-∞, ∞) | Smooth everywhere | Transformers |
-| Swish | $f(x) = x \cdot \sigma(x)$ | (-∞, ∞) | Non-monotonic | Deep NAS-found nets |
+| ReLU | $f(x) = \max(0, x)$ | [0, 8) | 1 for $x>0$, 0 for $x<0$ | Default hidden layer |
+| Leaky ReLU | $f(x) = \max(0.01x, x)$ | (-8, 8) | 0.01 for $x<0$, 1 for $x>0$ | Avoids dying ReLU |
+| ELU | $f(x) = x \text{ if } x>0, \alpha(e^x-1) \text{ else}$ | (-a, 8) | Smooth for $x<0$ | Deeper networks |
+| GELU | $f(x) = x \cdot \Phi(x)$ | (-8, 8) | Smooth everywhere | Transformers |
+| Swish | $f(x) = x \cdot \sigma(x)$ | (-8, 8) | Non-monotonic | Deep NAS-found nets |
 | Softmax | $\sigma(\mathbf{z})_i = e^{z_i} / \sum e^{z_j}$ | (0, 1) | Shift-invariant | Multi-class output |
 
 ### Backpropagation: Detailed Derivation
@@ -147,27 +147,27 @@ The pattern is recursive: the gradient at layer $l$ depends on the gradient at l
 ```mermaid
 flowchart TD
     subgraph Forward
-        X["x"] --> Z1["z¹ = W¹x + b¹"]
-        Z1 --> A1["a¹ = f(z¹)"]
-        A1 --> Z2["z² = W²a¹ + b²"]
-        Z2 --> A2["a² = f(z²)"]
-        A2 --> Z3["z³ = W³a² + b³"]
-        Z3 --> YH["ŷ = f(z³)"]
-        YH --> L["ℒ = ½(y - ŷ)²"]
+        X["x"] --> Z1["z? = W?x + b?"]
+        Z1 --> A1["a? = f(z?)"]
+        A1 --> Z2["z? = W?a? + b?"]
+        Z2 --> A2["a? = f(z?)"]
+        A2 --> Z3["z? = W?a? + b?"]
+        Z3 --> YH["y = f(z?)"]
+        YH --> L["L = ?(y - y)?"]
     end
     subgraph Backward
-        L --> DZ3["∂ℒ/∂z³ = -(y-ŷ)·f'(z³)"]
-        DZ3 --> DW3["∂ℒ/∂W³ = δ³·(a²)ᵀ"]
-        DZ3 --> DA2["∂ℒ/∂a² = (W³)ᵀ·δ³"]
-        DA2 --> DZ2["∂ℒ/∂z² = δ²·f'(z²)"]
-        DZ2 --> DW2["∂ℒ/∂W² = δ²·(a¹)ᵀ"]
-        DZ2 --> DA1["∂ℒ/∂a¹ = (W²)ᵀ·δ²"]
-        DA1 --> DZ1["∂ℒ/∂z¹ = δ¹·f'(z¹)"]
-        DZ1 --> DW1["∂ℒ/∂W¹ = δ¹·xᵀ"]
+        L --> DZ3["?L/?z? = -(y-y)?f'(z?)"]
+        DZ3 --> DW3["?L/?W? = d??(a?)?"]
+        DZ3 --> DA2["?L/?a? = (W?)??d?"]
+        DA2 --> DZ2["?L/?z? = d??f'(z?)"]
+        DZ2 --> DW2["?L/?W? = d??(a?)?"]
+        DZ2 --> DA1["?L/?a? = (W?)??d?"]
+        DA1 --> DZ1["?L/?z? = d??f'(z?)"]
+        DZ1 --> DW1["?L/?W? = d??x?"]
     end
-    DW1 --> U1["W¹ := W¹ - α·∂ℒ/∂W¹"]
-    DW2 --> U2["W² := W² - α·∂ℒ/∂W²"]
-    DW3 --> U3["W³ := W³ - α·∂ℒ/∂W³"]
+    DW1 --> U1["W? := W? - a??L/?W?"]
+    DW2 --> U2["W? := W? - a??L/?W?"]
+    DW3 --> U3["W? := W? - a??L/?W?"]
 ```
 
 ### Vanishing & Exploding Gradients
@@ -176,7 +176,7 @@ flowchart TD
 
 $$\sigma'(x) = \sigma(x)(1-\sigma(x)) \leq 0.25$$
 
-After $L$ layers, the gradient is multiplied by $(0.25)^L$ — for $L=10$, that gives a scaling factor of $10^{-6}$.
+After $L$ layers, the gradient is multiplied by $(0.25)^L$ ? for $L=10$, that gives a scaling factor of $10^{-6}$.
 
 **Exploding gradients** occur when weights are large, causing the gradient norm to grow exponentially through layers, leading to NaN weights and training divergence.
 
@@ -192,15 +192,15 @@ After $L$ layers, the gradient is multiplied by $(0.25)^L$ — for $L=10$, that 
 
 ### Weight Initialization
 
-Initializing all weights to zero causes every neuron in a layer to compute the same gradient — they become symmetric and never differentiate.
+Initializing all weights to zero causes every neuron in a layer to compute the same gradient ? they become symmetric and never differentiate.
 
-**Xavier (Glorot) Initialization** — optimal for Tanh / Sigmoid:
+**Xavier (Glorot) Initialization** ? optimal for Tanh / Sigmoid:
 
 $$\text{Var}(W) = \frac{2}{\text{fan\_in} + \text{fan\_out}}$$
 
 Preserves variance of activations and gradients through layers when activation is linear near zero.
 
-**He Initialization** — optimal for ReLU:
+**He Initialization** ? optimal for ReLU:
 
 $$\text{Var}(W) = \frac{2}{\text{fan\_in}}}$$
 
@@ -208,7 +208,7 @@ ReLU zeroes half the neurons, doubling the variance needed to compensate.
 
 | Init Method | Formula | Activation | Rationale |
 |------------|---------|-------|-----------|
-| Zero | $W = 0$ | Any | Breaks symmetry — never use |
+| Zero | $W = 0$ | Any | Breaks symmetry ? never use |
 | Random Uniform | $W \sim U(-r, r)$ | Any | Simple but variance grows with depth |
 | Xavier Uniform | $W \sim U(-\sqrt{6/(n_i+n_o)}, \sqrt{6/(n_i+n_o)})$ | Tanh, Sigmoid | Preserves forward/backward variance |
 | Xavier Normal | $W \sim \mathcal{N}(0, \sqrt{2/(n_i+n_o)})$ | Tanh, Sigmoid | Same, Gaussian sampled |
@@ -325,13 +325,13 @@ Benefits: allows higher learning rates, reduces sensitivity to initialization, p
 | Hyperparameter | Typical Range | Effect of Too Large | Effect of Too Small |
 |---------------|-------------|--------------------|--------------------|
 | Learning Rate $\alpha$ | $10^{-5}$ to $10^{-1}$ | Divergence, NaN weights | Slow convergence, plateaus |
-| Batch Size | 16 — 512 | Generalization gap, memory high | Noisy gradients, slow wall-time |
-| Hidden Layers | 1 — 100+ | Overfitting, vanishing grads | Underfitting |
-| Neurons/Layer | 32 — 4096 | Overfitting, slow | Underfitting |
-| Dropout Rate $p$ | 0.1 — 0.5 | Underfitting (too much dropout) | Overfitting (too little) |
+| Batch Size | 16 ? 512 | Generalization gap, memory high | Noisy gradients, slow wall-time |
+| Hidden Layers | 1 ? 100+ | Overfitting, vanishing grads | Underfitting |
+| Neurons/Layer | 32 ? 4096 | Overfitting, slow | Underfitting |
+| Dropout Rate $p$ | 0.1 ? 0.5 | Underfitting (too much dropout) | Overfitting (too little) |
 | L2 $\lambda$ | $10^{-5}$ to $10^{-1}$ | Underfitting (weights too small) | Overfitting (no penalty) |
-| Momentum $\beta$ | 0.9 — 0.99 | Overshooting minima | Slow convergence |
-| Epochs | 10 — 1000+ | Overfitting (without early stop) | Underfitting |
+| Momentum $\beta$ | 0.9 ? 0.99 | Overshooting minima | Slow convergence |
+| Epochs | 10 ? 1000+ | Overfitting (without early stop) | Underfitting |
 
 ---
 
@@ -606,7 +606,7 @@ const mnistNet = new NeuralNetwork(
   "he"
 );
 
-// Training loop (conceptual — real data would come from a loader)
+// Training loop (conceptual ? real data would come from a loader)
 function trainMNIST(
   trainData: MNISTSample[],
   valData: MNISTSample[]
@@ -696,11 +696,11 @@ const regResult = regularizedNet.train(trainIn, trainOut, {
 ```mermaid
 graph LR
     subgraph Overfitting
-        OTL["Train Loss ↓"] --- OVG["Val Loss ↑"]
+        OTL["Train Loss ?"] --- OVG["Val Loss ?"]
         OVG --- OGAP["Large gap = overfitting"]
     end
     subgraph Regularized
-        RTL["Train Loss ↓"] --- RVL["Val Loss ↓"]
+        RTL["Train Loss ?"] --- RVL["Val Loss ?"]
         RVL --- RGAP["Small gap = good"]
     end
 ```
@@ -715,7 +715,7 @@ graph LR
 ```mermaid
 graph LR
     subgraph Overfitting_Pattern
-        A["Epochs →"] --> B["Loss ↓ then val ↑"]
+        A["Epochs ?"] --> B["Loss ? then val ?"]
     end
 ```
 
@@ -733,8 +733,8 @@ graph LR
 graph LR
     subgraph Overfitting_Curve
         direction TB
-        TL["Train<br/>Loss"] --> TLD["↓ steady<br/>near zero"]
-        VL["Validation<br/>Loss"] --> VLD["↓ then ↑<br/>U-shape"]
+        TL["Train<br/>Loss"] --> TLD["? steady<br/>near zero"]
+        VL["Validation<br/>Loss"] --> VLD["? then ?<br/>U-shape"]
     end
 ```
 
@@ -750,11 +750,11 @@ graph LR
 
 4. **Monitor training vs validation loss gap.** A widening gap is the earliest sign of overfitting. Apply L2, Dropout, or reduce capacity immediately.
 
-5. **Prefer ReLU (or Leaky ReLU) over Sigmoid/Tanh for hidden layers.** The vanishing gradient problem is not theoretical — it kills learning in 5+ layer networks with saturating activations.
+5. **Prefer ReLU (or Leaky ReLU) over Sigmoid/Tanh for hidden layers.** The vanishing gradient problem is not theoretical ? it kills learning in 5+ layer networks with saturating activations.
 
 6. **Use learning rate schedules, not a fixed LR.** Cosine annealing or ReduceLROnPlateau can squeeze 10-20% more accuracy from the same architecture at no extra cost.
 
-7. **Batch size is a hyperparameter, not a free choice.** Small batches (16-64) give noisy but regularizing gradients. Large batches (512+) save time but may generalize worse — scale LR with batch size.
+7. **Batch size is a hyperparameter, not a free choice.** Small batches (16-64) give noisy but regularizing gradients. Large batches (512+) save time but may generalize worse ? scale LR with batch size.
 
 8. **Start small: one hidden layer of 64 neurons on a subset of data.** If the model cannot overfit a small subset, there is a bug. If it overfits before generalizing, add regularization. Scale up only when both conditions hold.
 
@@ -879,6 +879,98 @@ console.log("XOR [1,1]:", nn.predict([1, 1]).map(v => v.toFixed(4)));
 console.log("Softmax test:", Activation.softmax([2.0, 1.0, 0.1]).map(v => v.toFixed(4)));
 ```
 
+
+// neural networks
+// ml-supervised-unsupervised implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'neural networks', data: { topic: 'ml-supervised-unsupervised' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// neural networks - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'ml-algorithms demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'machine-learning', chapter: 'neural networks' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('ml-algorithms'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Neural networks are inspired by the biological structure of the brain.
@@ -983,7 +1075,7 @@ Test your understanding of Neural Networks.
 
 ## Additional Resources
 
-- [3Blue1Brown — Backpropagation Calculus](https://www.youtube.com/watch?v=tIeHLnjs5U8)
-- [CS231n Lecture Notes — Neural Networks](https://cs231n.github.io/neural-networks-1/)
-- [Andrej Karpathy — A Recipe for Training Neural Networks](https://karpathy.github.io/2019/04/25/recipe/)
+- [3Blue1Brown ? Backpropagation Calculus](https://www.youtube.com/watch?v=tIeHLnjs5U8)
+- [CS231n Lecture Notes ? Neural Networks](https://cs231n.github.io/neural-networks-1/)
+- [Andrej Karpathy ? A Recipe for Training Neural Networks](https://karpathy.github.io/2019/04/25/recipe/)
 - [Neural Networks and Deep Learning (Michael Nielsen)](http://neuralnetworksanddeeplearning.com/)

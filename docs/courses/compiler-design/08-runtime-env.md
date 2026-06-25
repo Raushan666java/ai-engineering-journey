@@ -1,6 +1,6 @@
 # Chapter 8: Runtime Environment
 
-← Previous: [Chapter 7: Type Checking](07-type-checking.md) | **Next:** [Chapter 9: Code Generation](09-code-gen.md)
+? Previous: [Chapter 7: Type Checking](07-type-checking.md) | **Next:** [Chapter 9: Code Generation](09-code-gen.md)
 
 ## Learning Objectives
 
@@ -60,15 +60,15 @@ The compiler generates code that references fields within the activation record 
 +-----------------------+
 | Arguments (caller frame)|
 +-----------------------+
-| Return address        |  ← pushed by CALL instruction
+| Return address        |  ? pushed by CALL instruction
 +-----------------------+
-| Old frame pointer     |  ← FP points here
+| Old frame pointer     |  ? FP points here
 +-----------------------+
 | Saved registers       |
 +-----------------------+
 | Local variables       |
 +-----------------------+
-| Temporaries           |  ← SP points here
+| Temporaries           |  ? SP points here
 +-----------------------+
 ```
 
@@ -78,15 +78,15 @@ A **calling convention** specifies how arguments are passed, how the stack is ma
 
 **x86-64 System V ABI** (used by Linux, macOS):
 - First 6 integer arguments: RDI, RSI, RDX, RCX, R8, R9
-- First 8 floating-point arguments: XMM0–XMM7
+- First 8 floating-point arguments: XMM0?XMM7
 - Additional arguments: pushed on the stack (right to left)
 - Return value: RAX (integer) or XMM0 (float)
-- Callee-saved registers: RBX, RBP, R12–R15
-- Caller-saved registers: RAX, RCX, RDX, RSI, RDI, R8–R11
+- Callee-saved registers: RBX, RBP, R12?R15
+- Caller-saved registers: RAX, RCX, RDX, RSI, RDI, R8?R11
 
 **Call sequence**:
 1. Caller evaluates arguments, places in registers or pushes on stack.
-2. Caller executes `CALL` instruction — pushes return address.
+2. Caller executes `CALL` instruction ? pushes return address.
 3. Callee pushes old FP (`PUSH RBP`).
 4. Callee sets FP to current SP (`MOV RBP, RSP`).
 5. Callee decrements SP for local variables (`SUB RSP, N`).
@@ -95,7 +95,7 @@ A **calling convention** specifies how arguments are passed, how the stack is ma
 8. Callee restores saved registers.
 9. Callee restores SP from FP (`MOV RSP, RBP`).
 10. Callee pops old FP (`POP RBP`).
-11. Callee executes `RET` — pops return address and jumps.
+11. Callee executes `RET` ? pops return address and jumps.
 
 ### Complete TypeScript Activation Record Simulator
 
@@ -156,7 +156,7 @@ class RuntimeSimulator {
         body(this);
 
         const result = this.stack[this.stack.length - 1].returnValue;
-        this.output.push(`RETURN ${name} → ${result}`);
+        this.output.push(`RETURN ${name} ? ${result}`);
         this.stack.pop();
         return result;
     }
@@ -524,7 +524,7 @@ console.log(`\nHeap stats: allocated=${stats.allocated} free=${stats.free} frag=
 | Mechanism | Access links / display | Call stack search |
 | Variable binding | Lexical structure | Call chain |
 | Predictability | High (textual) | Low (call-dependent) |
-| Implementation | Access link → display | Linear stack search |
+| Implementation | Access link ? display | Linear stack search |
 | Examples | Pascal, C, Java, ML | Early Lisp, Emacs Lisp |
 
 ### Parameter Passing
@@ -651,7 +651,7 @@ const child2 = new RefCountedObject("child2");
 root.children.push(child1);
 root.children.push(child2);
 child1.addRef();  // child2 also references child1
-child2.children.push(child1); // ← creates a cycle! child1 → child2 → child1
+child2.children.push(child1); // ? creates a cycle! child1 ? child2 ? child1
 
 console.log("Release root (should free root, but NOT child1/child2 due to cycle):");
 root.release();
@@ -727,7 +727,7 @@ class MarkSweepCollector {
         this.mark(roots);
         const reclaimed = this.sweep();
         console.log(
-            `  GC: ${before} objects → ${this.objects.size} objects, ` +
+            `  GC: ${before} objects ? ${this.objects.size} objects, ` +
             `reclaimed ${reclaimed} bytes`
         );
         return reclaimed;
@@ -754,7 +754,7 @@ const a2 = gc.alloc(64, "alive2");
 const dead1 = gc.alloc(128, "dead1");
 const dead2 = gc.alloc(128, "dead2");
 
-// Build graph: r1 → a1 → a2, r2 → a1
+// Build graph: r1 ? a1 ? a2, r2 ? a1
 gc.addEdge(r1, a1);
 gc.addEdge(a1, a2);
 gc.addEdge(r2, a1);
@@ -901,7 +901,7 @@ class GenerationalCollector {
     private nursery: (any | null)[] = [];
     private tenured: (any | null)[] = [];
     private nurseryPtr = 0;
-    private generations = new Map<number, number>(); // object id → generation
+    private generations = new Map<number, number>(); // object id ? generation
     private nurserySize: number;
 
     constructor(nurserySize: number, private promotionThreshold: number) {
@@ -1021,7 +1021,7 @@ genCollector.printState();
 |-------------|---------------|----------|------------|-----------|-----------------|
 | Reference Counting | No | No | Incremental | Moderate | High (per-object count) |
 | Mark-Sweep | Yes | No | Heap-wide scan | Moderate | Low (one bit per object) |
-| Copying | Yes | Yes | Live-data scan | High | 2× (semi-space) |
+| Copying | Yes | Yes | Live-data scan | High | 2? (semi-space) |
 | Generational | Yes | Yes (nursery) | Small regions | Very high | Moderate |
 | Mark-Compact | Yes | Yes | Two passes | Moderate | Low |
 
@@ -1043,6 +1043,98 @@ genCollector.printState();
 4. **Reference counting is simple but leaky**: It handles cycles poorly. Most production collectors use tracing (mark-sweep or generational) for correctness.
 5. **Generational collection wins in practice**: The weak generational hypothesis holds for virtually all applications. Collect the nursery frequently and the tenured space rarely.
 
+
+// runtime env
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'runtime env', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// runtime env - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'runtime env' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Runtime organization manages program storage during execution. Activation records on the stack efficiently handle procedure calls. The heap accommodates dynamic data with longer lifetimes. Static scoping provides compile-time resolution of nonlocal references, while dynamic scoping uses the call chain. Parameter-passing mechanisms control caller-callee data flow. Garbage collection automates heap management; reference counting, mark-sweep, copying, and generational collection offer different trade-offs in throughput, pause time, and memory overhead. The TypeScript `RuntimeSimulator`, `Heap`, and GC implementations demonstrate these concepts with working code.
@@ -1099,7 +1191,7 @@ Runtime organization manages program storage during execution. Activation record
 
 1. For nested Pascal-like procedures f and g with g calling f, draw the activation stack with access links. Show how f resolves a nonlocal variable declared in the outer scope.
 2. Simulate reference counting on a circular list. Show why the cycle is not reclaimed and describe how a cycle-detection pass could help.
-3. Given 128 MB heap with 40 MB live data, compare collection costs: mark-sweep (mark 40 MB, sweep 128 MB); copying (two 64 MB semi-spaces, copy 40 MB); generational (8 MB nursery, 120 MB tenured, trace nursery: 8 MB × 30% live = 2.4 MB). Which does the least work per cycle? Which has the lowest memory overhead?
+3. Given 128 MB heap with 40 MB live data, compare collection costs: mark-sweep (mark 40 MB, sweep 128 MB); copying (two 64 MB semi-spaces, copy 40 MB); generational (8 MB nursery, 120 MB tenured, trace nursery: 8 MB ? 30% live = 2.4 MB). Which does the least work per cycle? Which has the lowest memory overhead?
 4. Write short functions in your language of choice demonstrating call-by-value and call-by-reference semantics.
 5. Using the TypeScript `Heap` class, simulate allocation and deallocation of 5 blocks of varying sizes (16, 32, 64, 128, 256). Free every other block, then allocate a 48-byte block. Show the heap layout and measure fragmentation before and after.
 

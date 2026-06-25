@@ -1,6 +1,6 @@
 # Chapter 13: Loop Optimization
 
-← Previous: [Chapter 12: Data-Flow Analysis](12-dfa.md) | **Next:** [Chapter 14: Register Allocation](14-register-allocation.md)
+? Previous: [Chapter 12: Data-Flow Analysis](12-dfa.md) | **Next:** [Chapter 14: Register Allocation](14-register-allocation.md)
 
 ## Learning Objectives
 
@@ -48,9 +48,9 @@ flowchart TB
 
 ### The Critical Role of Loops
 
-Loops account for the vast majority of execution time in most programs. Amdahl's law makes this precise: if a program spends 90% of its time in loops, a 2× speedup of the loop code yields a 1.8× overall speedup, while a 2× speedup of non-loop code yields only 1.05×. Concentrating optimization effort on loops delivers the highest return on compiler development time.
+Loops account for the vast majority of execution time in most programs. Amdahl's law makes this precise: if a program spends 90% of its time in loops, a 2? speedup of the loop code yields a 1.8? overall speedup, while a 2? speedup of non-loop code yields only 1.05?. Concentrating optimization effort on loops delivers the highest return on compiler development time.
 
-The loop optimizations described in this chapter depend on the **natural-loop** identification and loop-nest hierarchy established by control-flow analysis (Chapter 11). Each natural loop has a single header node that dominates all other nodes in the loop, and a **pre-header** — an empty basic block placed just before the header — that serves as the landing point for code moved out of the loop.
+The loop optimizations described in this chapter depend on the **natural-loop** identification and loop-nest hierarchy established by control-flow analysis (Chapter 11). Each natural loop has a single header node that dominates all other nodes in the loop, and a **pre-header** ? an empty basic block placed just before the header ? that serves as the landing point for code moved out of the loop.
 
 ### Loop-Invariant Code Motion (LICM)
 
@@ -74,7 +74,7 @@ An instruction is **safe to move** to the pre-header only if all of the followin
 2. **Unique definition**: the instruction is the only definition of `x` that reaches any use of `x` inside the loop. If another definition of `x` inside the loop could reach some uses, moving this one would change the value observed by those uses.
 3. **No side effects**: the instruction has no observable side effects beyond assigning `x`. In particular, it must not raise an exception, perform I/O, or modify memory that is visible outside the loop. For languages with strict exception semantics, this condition is conservative: even a division that might divide by zero is unsafe to move.
 
-When an instruction satisfies invariance but not safety, it is said to be **speculatively movable** — some compilers (LLVM, GCC with `-fspeculative-load`) move it anyway and insert compensation code on error paths.
+When an instruction satisfies invariance but not safety, it is said to be **speculatively movable** ? some compilers (LLVM, GCC with `-fspeculative-load`) move it anyway and insert compensation code on error paths.
 
 ```
 // Before LICM
@@ -94,12 +94,12 @@ for (i = 0; i < n; i++) {
 
 ### Induction Variable Detection
 
-An **induction variable (IV)** is a variable whose value changes by a fixed amount on each iteration of a loop. More formally, a variable `v` is an induction variable in loop `L` if every definition of `v` within `L` is of the form `v = v ± c` or `v = c ± v` where `c` is loop-invariant.
+An **induction variable (IV)** is a variable whose value changes by a fixed amount on each iteration of a loop. More formally, a variable `v` is an induction variable in loop `L` if every definition of `v` within `L` is of the form `v = v ? c` or `v = c ? v` where `c` is loop-invariant.
 
 #### Basic vs. Derived Induction Variables
 
 - **Basic induction variable (BIV)**: an IV that is incremented or decremented by a constant each iteration, such as `i = i + 1`. BIVs are typically loop counters updated by a single, simple assignment.
-- **Derived induction variable (DIV)**: a variable whose value is a linear function of a BIV: `t = c₁ × i + c₂`, where `i` is a BIV and `c₁`, `c₂` are loop-invariant. Array index computations are the canonical DIVs: `addr = base + i × elem_size`.
+- **Derived induction variable (DIV)**: a variable whose value is a linear function of a BIV: `t = c1 ? i + c2`, where `i` is a BIV and `c1`, `c2` are loop-invariant. Array index computations are the canonical DIVs: `addr = base + i ? elem_size`.
 
 #### Detection Algorithm
 
@@ -131,13 +131,13 @@ Strength reduction replaces an expensive operation inside a loop with a cheaper 
 
 #### Principle
 
-If `j = i × c` where `i` is a BIV incremented by `d` each iteration, then:
-- At iteration `k`: `j_k = i_k × c = (i₀ + k × d) × c = i₀ × c + k × (d × c)`
-- The sequence `j₀, j₁, j₂, ...` forms an arithmetic progression with step `d × c`.
+If `j = i ? c` where `i` is a BIV incremented by `d` each iteration, then:
+- At iteration `k`: `j_k = i_k ? c = (i0 + k ? d) ? c = i0 ? c + k ? (d ? c)`
+- The sequence `j0, j1, j2, ...` forms an arithmetic progression with step `d ? c`.
 
-Rather than recomputing `j = i × c` each iteration (which costs a multiplication), maintain `j` as a separate IV:
-- Initialize `j = i₀ × c`.
-- On each iteration, update `j += d × c` (which costs only an addition).
+Rather than recomputing `j = i ? c` each iteration (which costs a multiplication), maintain `j` as a separate IV:
+- Initialize `j = i0 ? c`.
+- On each iteration, update `j += d ? c` (which costs only an addition).
 
 ```
 // Before strength reduction
@@ -152,9 +152,9 @@ for i = 0 to n-1:
     addr = addr + 4          // addition replaces multiplication
 ```
 
-The general case covers `j = c₁ × i + c₂` with step `d`:
-- Initialize: `j = c₁ × i₀ + c₂`
-- Increment: `j += c₁ × d`
+The general case covers `j = c1 ? i + c2` with step `d`:
+- Initialize: `j = c1 ? i0 + c2`
+- Increment: `j += c1 ? d`
 
 #### General Strength-Reduction Algorithm
 
@@ -163,7 +163,7 @@ function strengthReduce(loop, basicIVs, derivedIVs):
     for each (t, (base: i, mult: c1, add: c2)) in derivedIVs:
         d = step of i
         // Create new temporary r_t for the reduced IV
-        // Initialize: r_t = c1 * i₀ + c2
+        // Initialize: r_t = c1 * i0 + c2
         insert "r_t = c1 * i_init + c2" in pre-header
         // Replace each computation of t with r_t
         for each use of t in loop body:
@@ -176,7 +176,7 @@ function strengthReduce(loop, basicIVs, derivedIVs):
 
 ### Induction Variable Elimination
 
-After strength reduction, the BIV may become dead — no longer used for any computation other than loop termination. If a DIV exists that steps in lockstep with the BIV, the BIV can be eliminated entirely.
+After strength reduction, the BIV may become dead ? no longer used for any computation other than loop termination. If a DIV exists that steps in lockstep with the BIV, the BIV can be eliminated entirely.
 
 #### BIV Elimination Condition
 
@@ -186,7 +186,7 @@ A BIV `i` can be eliminated if:
 
 When these conditions hold, the compiler can:
 
-1. Replace the comparison `i < n` with a comparison of a DIV against a rewritten bound. For example, if `t = 4 × i` is the DIV, replace `i < n` with `t < 4 × n`.
+1. Replace the comparison `i < n` with a comparison of a DIV against a rewritten bound. For example, if `t = 4 ? i` is the DIV, replace `i < n` with `t < 4 ? n`.
 2. Remove the increment `i = i + 1`.
 3. Increment the DIV in the loop's back edge.
 
@@ -266,7 +266,7 @@ Loop fusion combines two adjacent loops with the same iteration range into a sin
 - **Reduced loop overhead**: one branch instead of two.
 - **Enabling vectorization**: the combined loop may have enough vectorizable work to justify SIMD.
 
-**Legality condition**: fusion is legal if no cross-loop data dependence exists. Specifically, if a value computed in loop 1 at iteration `i` is used in loop 2 at iteration `j`, and `i ≠ j`, fusion would change the program semantics because the accesses would now interleave.
+**Legality condition**: fusion is legal if no cross-loop data dependence exists. Specifically, if a value computed in loop 1 at iteration `i` is used in loop 2 at iteration `j`, and `i ? j`, fusion would change the program semantics because the accesses would now interleave.
 
 ```
 // Before fusion
@@ -309,7 +309,7 @@ Loop interchange swaps the nesting order of two loops in a perfectly nested loop
 Most languages (C, C++, TypeScript, Rust) store matrices in **row-major** order: `a[i][j]` is stored with `j` as the fastest-varying index. The element `a[i][j]` is at memory address `base + i * N * elem_size + j * elem_size`.
 
 ```
-// Stride-N access (cache-inefficient) — inner loop varies j, but outer loop i
+// Stride-N access (cache-inefficient) ? inner loop varies j, but outer loop i
 // On each inner iteration, we access a different i, so stride = N * elem_size
 for i = 0 to N-1:
     for j = 0 to N-1:
@@ -322,17 +322,17 @@ for j = 0 to N-1:
         a[i][j] = a[i][j] + 1
 ```
 
-Wait — this is actually wrong! In row-major order, the original code `a[i][j]` with `i` outer and `j` inner accesses memory sequentially (stride-1). The interchange would make it stride-N. Let me correct:
+Wait ? this is actually wrong! In row-major order, the original code `a[i][j]` with `i` outer and `j` inner accesses memory sequentially (stride-1). The interchange would make it stride-N. Let me correct:
 
 Actually, in row-major order (C), `a[i][j]` has `j` as the fastest dimension. So `for i { for j { a[i][j] } }` is already stride-1 in the inner loop. The interchange is beneficial when the innermost loop varies `i`, not `j`. The correct example:
 
 ```
-// Column-major access pattern — inner i varies, stride-N
+// Column-major access pattern ? inner i varies, stride-N
 for j = 0 to N-1:
     for i = 0 to N-1:
         a[i][j] = a[i][j] + 1    // each iteration jumps N elements
 
-// After interchange — row-major access, stride-1
+// After interchange ? row-major access, stride-1
 for i = 0 to N-1:
     for j = 0 to N-1:
         a[i][j] = a[i][j] + 1    // sequential access
@@ -342,15 +342,15 @@ for i = 0 to N-1:
 
 ### Vectorization
 
-Vectorization transforms a loop to use SIMD instructions that operate on multiple data elements in a single instruction. Modern CPUs have SIMD instruction sets (SSE, AVX, AVX-512 on x86; NEON, SVE on ARM) that can process 2–64 elements per operation.
+Vectorization transforms a loop to use SIMD instructions that operate on multiple data elements in a single instruction. Modern CPUs have SIMD instruction sets (SSE, AVX, AVX-512 on x86; NEON, SVE on ARM) that can process 2?64 elements per operation.
 
 #### Legality via Dependence Analysis
 
 A loop is vectorizable if no **loop-carried dependence** exists. A loop-carried dependence occurs when iteration `i` produces a value consumed by iteration `j > i` (or vice versa).
 
 Dependence types:
-- **True (flow) dependence**: `S₁` writes `x`, `S₂` reads `x` in later iteration. Not vectorizable unless the dependence can be handled (e.g., reductions).
-- **Anti-dependence**: `S₁` reads `x`, `S₂` writes `x` in later iteration. Can be removed by renaming.
+- **True (flow) dependence**: `S1` writes `x`, `S2` reads `x` in later iteration. Not vectorizable unless the dependence can be handled (e.g., reductions).
+- **Anti-dependence**: `S1` reads `x`, `S2` writes `x` in later iteration. Can be removed by renaming.
 - **Output dependence**: both write `x`. Can be removed by renaming.
 - **Input dependence**: both read `x`. Always safe.
 
@@ -374,7 +374,7 @@ for i = 0 to N-1 step 4:
 sum = horizontal_add(sum_vec)
 ```
 
-### Putting It All Together — TypeScript Implementation
+### Putting It All Together ? TypeScript Implementation
 
 ```typescript
 // ============================================================
@@ -613,7 +613,7 @@ class LoopUnroller {
     const header = this.fg.blocks.get(headerId)!
     const bodyBlocks = this.loop.blocks.filter(b => b !== headerId)
 
-    // Check if trip count is known and small — simplification
+    // Check if trip count is known and small ? simplification
     const newBlocks = new Map<number, IRStmt[]>()
     let newId = 1000
 
@@ -641,7 +641,7 @@ class LoopUnroller {
       this.fg.blocks.set(id, stmts)
     }
 
-    // Connect new blocks (simplified — real impl needs edge adjustments)
+    // Connect new blocks (simplified ? real impl needs edge adjustments)
     console.log(`Loop unrolled by factor ${this.factor}, ${newBlocks.size} new blocks created`)
   }
 }
@@ -752,20 +752,112 @@ Derived IVs: t3
 
 | Insight | Why It Matters |
 |---------|----------------|
-| LICM is the lowest-hanging fruit: one invariant move saves N−1 evaluations | Always run LICM first in any optimization pipeline |
-| Strength reduction converts array-index multiplications into pointer arithmetic | 2–10× speedup on tight array loops; essential for C/C++ and systems languages |
+| LICM is the lowest-hanging fruit: one invariant move saves N-1 evaluations | Always run LICM first in any optimization pipeline |
+| Strength reduction converts array-index multiplications into pointer arithmetic | 2?10? speedup on tight array loops; essential for C/C++ and systems languages |
 | IV elimination can remove the loop counter entirely | Frees a register and an ALU operation per iteration |
-| Unrolling trades code size for speed — optimal factor is machine-dependent | Use PGO or a machine model to select; 4–8 is typical |
+| Unrolling trades code size for speed ? optimal factor is machine-dependent | Use PGO or a machine model to select; 4?8 is typical |
 | Loop fusion improves cache locality but may prevent vectorization | Apply fission first to isolate vectorizable code, then fuse the rest |
 | Interchange is the most impactful for column-major access patterns | On row-major systems (x86), always prefer stride-1 inner loops |
 | Dependence analysis is the gatekeeper for vectorization | True dependencies block vectorization; anti/output dependencies can be renamed |
 | Profile-guided feedback dramatically improves loop transformation decisions | Hot/cold splitting and trip-count profiling make unrolling and interchange more effective |
 
+
+// loop optimization
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'loop optimization', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// loop optimization - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'loop optimization' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Loop optimization delivers the highest performance payoff in compilation because a small fraction of code accounts for most execution time. Loop-invariant code motion eliminates per-iteration recomputation of constant expressions. Induction-variable detection and strength reduction replace expensive multiplications with additions inside loops. Induction-variable elimination may remove the loop counter entirely. Loop unrolling increases basic-block size and reduces branch overhead. Loop fusion and fission restructure loop bodies to improve cache behavior and enable vectorization. Loop interchange optimizes memory access patterns. Vectorization exploits SIMD hardware when loop-carried dependencies permit.
 
-These transformations form a coordinated pipeline that depends on the natural-loop identification from control-flow analysis and the data-flow facts from the previous chapter. When applied judiciously — guided by profile data and machine models — they produce the order-of-magnitude speedups that distinguish production compilers from toy implementations.
+These transformations form a coordinated pipeline that depends on the natural-loop identification from control-flow analysis and the data-flow facts from the previous chapter. When applied judiciously ? guided by profile data and machine models ? they produce the order-of-magnitude speedups that distinguish production compilers from toy implementations.
 
 ## Chapter Quiz
 

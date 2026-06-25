@@ -283,11 +283,11 @@ class CanaryController {
   }
 
   async execute(): Promise<boolean> {
-    console.log(`🚀 Starting canary deployment for ${this.config.name}\n`);
+    console.log(`?? Starting canary deployment for ${this.config.name}\n`);
 
     // Deploy canary instances
     await this.deployCanary();
-    console.log(`✅ Canary deployed: ${this.config.canaryReplicas} replicas\n`);
+    console.log(`? Canary deployed: ${this.config.canaryReplicas} replicas\n`);
 
     // Progress through traffic weight steps
     for (const step of this.config.steps) {
@@ -301,17 +301,17 @@ class CanaryController {
       for (const metric of this.config.metrics) {
         const passed = await this.checkMetric(metric);
         if (!passed) {
-          console.log(`❌ Metric "${metric.name}" exceeded threshold (${metric.threshold})`);
+          console.log(`? Metric "${metric.name}" exceeded threshold (${metric.threshold})`);
           await this.rollback();
           return false;
         }
-        console.log(`✅ ${metric.name}: within threshold`);
+        console.log(`? ${metric.name}: within threshold`);
       }
     }
 
     // Promote to full rollout
     await this.promote();
-    console.log('🎉 Canary promotion complete');
+    console.log('?? Canary promotion complete');
     return true;
   }
 
@@ -336,7 +336,7 @@ class CanaryController {
   }
 
   private async rollback(): Promise<void> {
-    console.log('⚠️  Rolling back canary...');
+    console.log('??  Rolling back canary...');
     console.log('Removing canary instances...');
     console.log('Restoring full stable traffic.');
   }
@@ -390,16 +390,16 @@ class ReleaseOrchestrator {
   private currentRelease?: Release;
 
   async promote(release: Release, from: string, to: string): Promise<boolean> {
-    console.log(`\n🚀 Promoting ${release.version} from ${from} to ${to}`);
+    console.log(`\n?? Promoting ${release.version} from ${from} to ${to}`);
     this.currentRelease = release;
 
     const passed = await this.runEnvironmentTests(to);
     if (!passed) {
-      console.log(`❌ Tests failed in ${to}, halting promotion`);
+      console.log(`? Tests failed in ${to}, halting promotion`);
       return false;
     }
 
-    console.log(`✅ ${release.version} promoted to ${to}`);
+    console.log(`? ${release.version} promoted to ${to}`);
     return true;
   }
 
@@ -419,9 +419,9 @@ class ReleaseOrchestrator {
   }
 
   async rollback(environment: string, targetVersion: string): Promise<void> {
-    console.log(`\n⚠️  Rolling back ${environment} to ${targetVersion}`);
+    console.log(`\n??  Rolling back ${environment} to ${targetVersion}`);
     this.releases.push(this.currentRelease!);
-    console.log(`✅ Rollback complete`);
+    console.log(`? Rollback complete`);
   }
 
   getReleaseHistory(): string {
@@ -644,7 +644,7 @@ class RollbackOrchestrator {
     const lines = [
       `Rollback Report - ${plan.timestamp.toISOString()}`,
       `Trigger: ${plan.trigger}`,
-      `Result: ${result.success ? '✅ Successful' : '❌ Failed'}`,
+      `Result: ${result.success ? '? Successful' : '? Failed'}`,
       `Duration: ${(result.durationMs / 1000).toFixed(1)}s`,
       `Risk Score: ${plan.riskScore} (approval: ${plan.approvalRequired})`,
       '',
@@ -652,7 +652,7 @@ class RollbackOrchestrator {
     ];
     for (const target of plan.targets) {
       lines.push(`  ${target.serviceName}: v${target.targetVersion} (${target.estimatedImpact} impact, ${target.estimatedDurationSec}s)`);
-      for (const bc of target.breakingChanges) lines.push(`    ⚠ ${bc}`);
+      for (const bc of target.breakingChanges) lines.push(`    ? ${bc}`);
     }
     return lines.join('\n');
   }
@@ -678,7 +678,7 @@ console.log(orchestrator.generateRollbackReport(plan, result));
 1. **Use feature flags to decouple deploy from release.** Deploy often, release when ready.
 2. **Implement blue-green or canary for production.** Zero-downtime deployments reduce risk.
 3. **Automate rollback triggers.** Health check failures should automatically revert.
-4. **Promote the same artifact.** Build once, deploy everywhere — no rebuilding.
+4. **Promote the same artifact.** Build once, deploy everywhere � no rebuilding.
 5. **Monitor every deployment.** Error rates, latency, and throughput are key signals.
 6. **Keep deployments small.** Smaller changes are easier to test and roll back.
 
@@ -854,12 +854,54 @@ const analysisConfig: CanaryAnalysisConfig = {
 };
 ```
 
+
+// continuous delivery
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'continuous delivery', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Continuous Delivery ensures every commit is potentially deployable through automated pipelines and testing.
 - Deployment strategies include blue-green (instant switch), canary (gradual rollout), and rolling (incremental replacement).
 - Feature flags decouple deployment from release, enabling safe, gradual feature exposure.
-- Environment promotion moves artifacts through dev → staging → production with gates.
+- Environment promotion moves artifacts through dev ? staging ? production with gates.
 - Automatic rollback triggers (error rate, latency, health checks) revert bad deployments.
 - The same immutable artifact should be promoted through all environments.
 - Release governance includes approval gates, audit trails, and compliance checks.
@@ -885,4 +927,4 @@ const analysisConfig: CanaryAnalysisConfig = {
 7. Write a deployment decision matrix similar to the decision tree above. For each of these scenarios, select the appropriate strategy and justify: (a) a database migration, (b) a frontend CSS change, (c) a payment service API change.
 
 ### Challenge Problem
-1. Design a complete release management system including: deployment pipeline with environment promotion (dev → staging → prod) with automated gates, canary deployment strategy with 5-step traffic shifting (10%, 25%, 50%, 75%, 100%) with 5-minute observation periods, rollback automation triggered by error rate > 1%, latency p99 > 500ms, or health check failure, feature flag management with gradual rollout and kill switches, automated release notes generated from conventional commits, and a deployment dashboard showing current versions per environment, deployment history, and rollback status.
+1. Design a complete release management system including: deployment pipeline with environment promotion (dev ? staging ? prod) with automated gates, canary deployment strategy with 5-step traffic shifting (10%, 25%, 50%, 75%, 100%) with 5-minute observation periods, rollback automation triggered by error rate > 1%, latency p99 > 500ms, or health check failure, feature flag management with gradual rollout and kill switches, automated release notes generated from conventional commits, and a deployment dashboard showing current versions per environment, deployment history, and rollback status.

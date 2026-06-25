@@ -477,16 +477,16 @@ class ClusterHealthChecker {
 
     for (const r of this.resources) {
       if (r.status === 'CrashLoopBackOff') {
-        issues.push(`❌ ${r.kind}/${r.name} in CrashLoopBackOff (restarted ${r.restarts}x)`);
+        issues.push(`? ${r.kind}/${r.name} in CrashLoopBackOff (restarted ${r.restarts}x)`);
       }
       if (r.status === 'Pending') {
-        issues.push(`⚠️  ${r.kind}/${r.name} is pending`);
+        issues.push(`??  ${r.kind}/${r.name} is pending`);
       }
       if (r.status === 'ImagePullBackOff') {
-        issues.push(`❌ ${r.kind}/${r.name} ImagePullBackOff`);
+        issues.push(`? ${r.kind}/${r.name} ImagePullBackOff`);
       }
       if (r.restarts > 5) {
-        issues.push(`⚠️  ${r.kind}/${r.name} has restarted ${r.restarts} times`);
+        issues.push(`??  ${r.kind}/${r.name} has restarted ${r.restarts} times`);
       }
     }
 
@@ -503,7 +503,7 @@ class ClusterHealthChecker {
 
     let report = '# Kubernetes Cluster Summary\n\n';
     report += `## Overview\n\n`;
-    report += `- **Status:** ${healthy ? '✅ Healthy' : '❌ Issues detected'}\n`;
+    report += `- **Status:** ${healthy ? '? Healthy' : '? Issues detected'}\n`;
     report += `- **Total resources:** ${this.resources.length}\n`;
     report += `- **Namespaces:** ${Object.keys(byNamespace).length}\n\n`;
 
@@ -835,15 +835,15 @@ class PDBAnalyzer {
       riskLevel = 'safe';
     } else if (allowedDisruptions === 1) {
       riskLevel = 'caution';
-      recommendations.push('Only 1 pod can be disrupted at a time — rolling updates will be slow');
-      if (podsOnSingleNode > 0) recommendations.push(`${podsOnSingleNode} node(s) run more than allowed disruptions — consider pod anti-affinity`);
+      recommendations.push('Only 1 pod can be disrupted at a time � rolling updates will be slow');
+      if (podsOnSingleNode > 0) recommendations.push(`${podsOnSingleNode} node(s) run more than allowed disruptions � consider pod anti-affinity`);
     } else {
       riskLevel = 'risky';
-      recommendations.push('Zero disruptions allowed — consider increasing minAvailable or adding replicas');
+      recommendations.push('Zero disruptions allowed � consider increasing minAvailable or adding replicas');
     }
 
     if (podsOnSingleNode > 0 && allowedDisruptions > 0) {
-      recommendations.push(`Spread pods across nodes — ${podsOnSingleNode} node(s) are single points of failure`);
+      recommendations.push(`Spread pods across nodes � ${podsOnSingleNode} node(s) are single points of failure`);
     }
 
     return {
@@ -871,7 +871,7 @@ class PDBAnalyzer {
       `**Namespace:** ${analysis.pdb.namespace} | **Selector:** ${JSON.stringify(analysis.pdb.selector)}\n` +
       `**Current Replicas:** ${analysis.currentReplicas} | **Min Available:** ${analysis.pdb.minAvailable ?? 'auto'}\n` +
       `**Allowed Disruptions:** ${analysis.allowedDisruptions} | **Risk:** ${analysis.riskLevel}\n` +
-      `**Safe to drain node?** ${analysis.safeToDrain ? '✅ Yes' : '❌ No'}\n\n` +
+      `**Safe to drain node?** ${analysis.safeToDrain ? '? Yes' : '? No'}\n\n` +
       (analysis.recommendations.length > 0 ? '**Recommendations:**\n' + analysis.recommendations.map(r => `- ${r}`).join('\n') : '');
   }
 }
@@ -919,6 +919,48 @@ console.log('Drain simulation:', analyzer.simulateDrain(analysis, 'node-1', 2));
 
 ---
 
+
+// infrastructure as code
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'infrastructure as code', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Kubernetes architecture separates the control plane (API Server, etcd, Scheduler, Controller Manager) from worker nodes (Kubelet, Kube-Proxy, Container Runtime).

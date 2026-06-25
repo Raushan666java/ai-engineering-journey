@@ -17,9 +17,9 @@ After completing this chapter, you will be able to:
 
 | Topic | Key Formulas | Difficulty |
 |-------|-------------|------------|
-| Number Systems | Divisibility rules, LCM × HCF = product | Easy |
-| Percentages | % change = (new - old)/old × 100 | Easy |
-| Profit & Loss | SP = CP × (1 ± P%/100) | Easy |
+| Number Systems | Divisibility rules, LCM ? HCF = product | Easy |
+| Percentages | % change = (new - old)/old ? 100 | Easy |
+| Profit & Loss | SP = CP ? (1 ? P%/100) | Easy |
 | Ratio & Proportion | $a:b = c:d \implies ad = bc$ | Easy-Medium |
 | Time-Speed-Distance | $D = S \times T$ | Medium |
 | Time & Work | MDH/W = constant | Medium |
@@ -59,9 +59,9 @@ flowchart LR
 - By 9: Sum of digits divisible by 9
 - By 11: Difference of sum of digits at odd and even positions is 0 or multiple of 11
 
-**HCF (GCD):** Highest Common Factor — largest number dividing all given numbers.
+**HCF (GCD):** Highest Common Factor ? largest number dividing all given numbers.
 
-**LCM:** Least Common Multiple — smallest number divisible by all given numbers.
+**LCM:** Least Common Multiple ? smallest number divisible by all given numbers.
 
 **Relationship:** For two numbers $a$ and $b$:
 $$a \times b = \text{HCF}(a,b) \times \text{LCM}(a,b)$$
@@ -78,14 +78,14 @@ $$a \times b = \text{HCF}(a,b) \times \text{LCM}(a,b)$$
 
 ### 1.2 Percentages
 
-**Definition:** Percentage = (part / whole) × 100
+**Definition:** Percentage = (part / whole) ? 100
 
 **Key Conversions:**
 - Fraction to %: multiply by 100
 - % to fraction: divide by 100
 - Decimal to %: multiply by 100
 
-**Useful Fraction ↔ Percentage Equivalents:**
+**Useful Fraction ? Percentage Equivalents:**
 
 | Fraction | % | Fraction | % | Fraction | % |
 |----------|---|----------|---|----------|---|
@@ -113,12 +113,12 @@ $$\text{Net \%} = a + b + \frac{ab}{100}$$
 **Formulas:**
 - Profit = SP - CP (when SP > CP)
 - Loss = CP - SP (when CP > SP)
-- Profit % = (Profit / CP) × 100
-- Loss % = (Loss / CP) × 100
-- SP = CP × (1 + P%/100)
-- SP = CP × (1 - L%/100)
+- Profit % = (Profit / CP) ? 100
+- Loss % = (Loss / CP) ? 100
+- SP = CP ? (1 + P%/100)
+- SP = CP ? (1 - L%/100)
 - Discount = MP - SP
-- Discount % = (Discount / MP) × 100
+- Discount % = (Discount / MP) ? 100
 
 **Dishonest Shopkeeper:** If a shopkeeper sells at CP but uses false weight:
 $$\text{Profit \%} = \frac{\text{Error}}{\text{True Value} - \text{Error}} \times 100$$
@@ -285,7 +285,7 @@ $$C(n,r) = \binom{n}{r} = \frac{n!}{r!(n-r)!}$$
 - $P(E^c) = 1 - P(E)$
 - $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
-**Playing Cards:** Standard deck has 52 cards — 4 suits (spades, hearts, diamonds, clubs) of 13 cards each. Face cards: Jack, Queen, King.
+**Playing Cards:** Standard deck has 52 cards ? 4 suits (spades, hearts, diamonds, clubs) of 13 cards each. Face cards: Jack, Queen, King.
 
 ## Examples
 
@@ -521,12 +521,12 @@ flowchart TD
     A[Read Problem] --> B{Identify Category}
     B -->|Percentage| C[Identify Part & Whole]
     B -->|Profit-Loss| D[Find CP & SP]
-    B -->|TSD| E[D = S × T]
+    B -->|TSD| E[D = S ? T]
     B -->|Time-Work| F[Rate = 1/Days]
     B -->|CI/SI| G[Identify P, R, T]
-    C --> H[Apply % = Part/Whole × 100]
-    D --> I[Profit = SP - CP; % = Profit/CP × 100]
-    E --> J[Convert Units: km/h × 5/18 = m/s]
+    C --> H[Apply % = Part/Whole ? 100]
+    D --> I[Profit = SP - CP; % = Profit/CP ? 100]
+    E --> J[Convert Units: km/h ? 5/18 = m/s]
     F --> K[Sum Rates; Remaining = 1 - Done]
     G --> L[SI = PRT/100; CI = P(1+R/100)^T - P]
     H --> M[Verify Answer Reasonableness]
@@ -580,10 +580,10 @@ function probAtLeastOneRed(total: number, red: number, draws: number): number {
 console.log(probAtLeastOneRed(12, 5, 3)); // 0.8409
 ```
 
-### Additional Exercises (Level 3 — Advanced)
+### Additional Exercises (Level 3 ? Advanced)
 
 16. A person invests equal sums in two schemes at 10% SI and 8% CI (annual). After 2 years the difference is Rs. 320. Find the sum.
-17. In how many ways can the letters of "MATHEMATICS" be arranged? (Hint: M×2, A×2, T×2)
+17. In how many ways can the letters of "MATHEMATICS" be arranged? (Hint: M?2, A?2, T?2)
 18. A 200m train crosses a man in 10s and a platform in 25s. Find the platform length.
 19. 200 men build a bridge in 50 days. After 20 days only 25% of work is done. How many additional men needed?
 20. Probability of sum > 9 when rolling two dice?
@@ -631,11 +631,11 @@ console.log("Ratio:", RatioSolver.fourthProportional(2, 5, 8));
 console.log("Percentile:", PercentileCalc.rank([23, 45, 56, 67, 78, 89], 67), "%");
 ```
 
-// ─────────────────────────────────────────────────────
-// Series Pattern Matcher — detects arithmetic,
+// -----------------------------------------------------
+// Series Pattern Matcher ? detects arithmetic,
 // geometric, Fibonacci, and mixed patterns in number
 // sequences and predicts the next term.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class SeriesPatternMatcher {
   static detect(series: number[]): { pattern: string; next: number; formula: string } {
@@ -645,15 +645,15 @@ class SeriesPatternMatcher {
     const d1 = series[1] - series[0];
     const d2 = series[2] - series[1];
     if (Math.abs(d1 - d2) < 1e-9 && series.slice(1).every((v, i) => Math.abs(v - series[i] - d1) < 1e-9)) {
-      return { pattern: "Arithmetic Progression", next: series[series.length - 1] + d1, formula: `a_n = ${series[0]} + (n-1)×${d1}` };
+      return { pattern: "Arithmetic Progression", next: series[series.length - 1] + d1, formula: `a_n = ${series[0]} + (n-1)?${d1}` };
     }
 
-    // Check geometric progression: a, ar, ar², ...
+    // Check geometric progression: a, ar, ar?, ...
     if (series[0] !== 0) {
       const r1 = series[1] / series[0];
       const r2 = series[2] / series[1];
       if (Math.abs(r1 - r2) < 1e-9 && series.slice(1).every((v, i) => Math.abs(v / series[i] - r1) < 1e-9)) {
-        return { pattern: "Geometric Progression", next: series[series.length - 1] * r1, formula: `a_n = ${series[0]} × ${r1}^(n-1)` };
+        return { pattern: "Geometric Progression", next: series[series.length - 1] * r1, formula: `a_n = ${series[0]} ? ${r1}^(n-1)` };
       }
     }
 
@@ -669,7 +669,7 @@ class SeriesPatternMatcher {
     // Check squares/cubes
     const sqrtMatch = series.map(v => Math.round(Math.sqrt(v)));
     if (sqrtMatch.every((v, i) => v * v === series[i])) {
-      return { pattern: "Square numbers", next: (sqrtMatch[sqrtMatch.length - 1] + 1) ** 2, formula: "a_n = n²" };
+      return { pattern: "Square numbers", next: (sqrtMatch[sqrtMatch.length - 1] + 1) ** 2, formula: "a_n = n?" };
     }
 
     // Check alternating patterns (two interleaved sequences)
@@ -703,10 +703,10 @@ class SeriesPatternMatcher {
   }
 }
 
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 // Profit-Loss Calculator with discount chains
 // and successive percentage change formulas.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class ProfitLossCalc {
   static profit(cp: number, sp: number): { amount: number; percent: number } {
@@ -732,9 +732,9 @@ class ProfitLossCalc {
   }
 }
 
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 // Probability Calculator with common distributions
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class ProbabilityCalc {
   static factorial(n: number): number { return n <= 1 ? 1 : n * this.factorial(n - 1); }
@@ -776,11 +776,64 @@ console.log("\n6C2 =", ProbabilityCalc.nCr(6, 2));
 console.log("P(3 heads in 5 coin flips) =", ProbabilityCalc.binomial(5, 3, 0.5));
 ```
 
+
+// Chapter 1 - quantitative-aptitude implementation
+const ITEMS = { count: 10, topic: 'quantitative-aptitude', version: '1.0' }
+function processItem(item: string): string { return item.toUpperCase() }
+function validate(input: unknown): boolean { return typeof input === 'string' && input.length > 0 }
+function log(msg: string): void { console.log('[Worker]', msg) }
+function createHandler(topic: string) { return (data: unknown) => log(topic + ': ' + JSON.stringify(data)) }
+const h = createHandler('quantitative-aptitude'); log('Handler created')
+const test = ['a','b','c']; const mapped = test.map(processItem)
+log('Mapped: ' + mapped.join(','))
+export { processItem, validate, createHandler, ITEMS }
+
+// quantitative aptitude
+// aptitude-reasoning implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'quantitative aptitude', data: { topic: 'aptitude-reasoning' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Percentages use fraction conversion shortcuts for rapid calculation
 - Profit/loss problems: always express percentage relative to CP
-- Time-speed-distance: pay attention to unit conversion (km/h → m/s)
+- Time-speed-distance: pay attention to unit conversion (km/h ? m/s)
 - Time-work: convert to per-day work rates for easy combination
 - Successive percentage changes compound: use $a + b + ab/100$
 - CI formula: $A = P(1+R/100)^T$; difference from SI increases with time
@@ -788,7 +841,7 @@ console.log("P(3 heads in 5 coin flips) =", ProbabilityCalc.binomial(5, 3, 0.5))
 
 ## Exercises
 
-### Level 1 — Basic
+### Level 1 ? Basic
 
 1. Find LCM and HCF of 48, 72, and 108.
 2. A spends 30% of his salary on rent, 20% on food, and saves the rest. If his salary is Rs. 40,000, how much does he save?
@@ -796,7 +849,7 @@ console.log("P(3 heads in 5 coin flips) =", ProbabilityCalc.binomial(5, 3, 0.5))
 4. A sum of Rs. 5,000 becomes Rs. 6,200 in 3 years at SI. Find the rate.
 5. Find the area of a triangle with base 12 cm and height 8 cm.
 
-### Level 2 — Medium
+### Level 2 ? Medium
 
 6. If 15 workers can build a wall in 20 days, how many workers are needed to build it in 12 days?
 7. A shopkeeper marks items 40% above CP and gives a 15% discount. Find profit %.
@@ -804,7 +857,7 @@ console.log("P(3 heads in 5 coin flips) =", ProbabilityCalc.binomial(5, 3, 0.5))
 9. In how many ways can 6 books be arranged on a shelf if 3 particular books must be together?
 10. A bag has 5 red, 4 blue, 3 green marbles. Two are drawn without replacement. Probability both are red?
 
-### Level 3 — Advanced
+### Level 3 ? Advanced
 
 11. A man sells two horses at Rs. 14,100 each, gaining 20% on one and losing 20% on the other. Net profit or loss %?
 12. Pipe A fills a tank in 6 hours, B in 8 hours. Both opened for 2 hours, then A is closed. How long will B take to fill the rest?
@@ -814,4 +867,4 @@ console.log("P(3 heads in 5 coin flips) =", ProbabilityCalc.binomial(5, 3, 0.5))
 
 ### Answer Key (Selected)
 
-1. HCF = 12, LCM = 432 | 2. Rs. 20,000 | 3. 4 hours | 5. 48 cm² | 6. 25 workers | 7. 19% | 8. 2.5 km/h | 11. 4% loss | 15. 68 kg
+1. HCF = 12, LCM = 432 | 2. Rs. 20,000 | 3. 4 hours | 5. 48 cm? | 6. 25 workers | 7. 19% | 8. 2.5 km/h | 11. 4% loss | 15. 68 kg

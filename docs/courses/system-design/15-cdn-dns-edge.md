@@ -58,19 +58,19 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![CDN DNS Edge Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/15-cdn-dns-edge.png)
 
 ### 1. DNS Hierarchy
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 The Domain Name System (DNS) is a hierarchical, distributed naming system that resolves human-readable domain names (e.g., api.example.com) to IP addresses. The hierarchy has four tiers:
 
 **Root servers**: 13 logical root zones (A through M) operated by 12 independent organizations, anycasted across hundreds of physical locations worldwide. Root servers answer with referrals to TLD servers. They contain no domain-specific records.
@@ -89,15 +89,15 @@ The Domain Name System (DNS) is a hierarchical, distributed naming system that r
 
 ```
 Client (stub resolver)
-  â†’ Recursive resolver (e.g., 8.8.8.8)
-    â†’ Root server (gets .com TLD referral)
-    â†’ TLD server (gets example.com authoritative referral)
-    â†’ Authoritative server (returns A record: 93.184.216.34)
-  â†’ Returns IP to client
+  ? Recursive resolver (e.g., 8.8.8.8)
+    ? Root server (gets .com TLD referral)
+    ? TLD server (gets example.com authoritative referral)
+    ? Authoritative server (returns A record: 93.184.216.34)
+  ? Returns IP to client
 ```
 
 **Step-by-step**:
-1. Application calls `getaddrinfo("api.example.com", ...)` â€” the stub resolver (OS library) sends a UDP query (port 53) to the configured recursive resolver
+1. Application calls `getaddrinfo("api.example.com", ...)` � the stub resolver (OS library) sends a UDP query (port 53) to the configured recursive resolver
 2. Recursive resolver checks its cache; on miss, sends query to a root server (built-in root hints file)
 3. Root server responds with NS records for .com TLD, plus glue A records for those NS IPs
 4. Resolver queries .com TLD server, which returns NS records for example.com
@@ -108,7 +108,7 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 
 ### 3. DNS Caching
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -116,7 +116,7 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 
 **OS cache (stub resolver cache)**: Windows caches positive results for 86400s (1 day) by default, negative results for 300s (5 min). Linux glibc nscd or systemd-resolved provides nameserver caching. Accessible via `ipconfig /displaydns` on Windows.
 
-**Resolver cache**: Recursive resolvers cache aggressively (typically full TTL). Google Public DNS respects TTL but has a minimum of 10 seconds. ISPs may ignore TTL (a practice called "TTL overrides") to reduce upstream load â€” problematic for fast failover.
+**Resolver cache**: Recursive resolvers cache aggressively (typically full TTL). Google Public DNS respects TTL but has a minimum of 10 seconds. ISPs may ignore TTL (a practice called "TTL overrides") to reduce upstream load � problematic for fast failover.
 
 **Negative caching**: NXDOMAIN results (domain doesn't exist) and NODATA (domain exists but record type missing) are cached per RFC 2308. SOA minimum TTL field controls negative cache duration, typically 300-3600 seconds.
 
@@ -135,26 +135,26 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 |-------|-----------------------------------|----------------------------------------|
 | A     | IPv4 address mapping              | 93.184.216.34                          |
 | AAAA  | IPv6 address mapping              | 2606:2800:220:1:248:1893:25c8:1946    |
-| CNAME | Canonical name (alias)            | www â†’ example.com                      |
+| CNAME | Canonical name (alias)            | www ? example.com                      |
 | MX    | Mail exchange                     | priority 10 mail.example.com           |
 | NS    | Nameserver delegation             | ns1.example.com                        |
 | TXT   | Arbitrary text                    | SPF, DKIM, DMARC, verification tokens  |
 | SRV   | Service location                  | priority weight port target            |
 | SOA   | Start of authority                | Primary NS, admin email, serial, refresh, retry, expire, minimum |
 
-**CNAME caveat**: A CNAME record cannot coexist with any other record type at the same name. The apex domain (example.com) cannot be a CNAME â€” use ALIAS/ANAME records (provided by some DNS providers) that resolve at the authoritative server level.
+**CNAME caveat**: A CNAME record cannot coexist with any other record type at the same name. The apex domain (example.com) cannot be a CNAME � use ALIAS/ANAME records (provided by some DNS providers) that resolve at the authoritative server level.
 
 ### 5. DNS-Based Load Balancing
 
-**Round-robin DNS**: Multiple A records for one name returned in rotating order. Simple but stateless â€” does not consider server health or load. If one server fails, clients with cached results still connect to it.
+**Round-robin DNS**: Multiple A records for one name returned in rotating order. Simple but stateless � does not consider server health or load. If one server fails, clients with cached results still connect to it.
 
 ```
-api.example.com  â†’  10.0.0.1 (TTL=60)
+api.example.com  ?  10.0.0.1 (TTL=60)
                    10.0.0.2 (TTL=60)
                    10.0.0.3 (TTL=60)
 ```
 
-**Weighted round-robin**: Associate weights with each IP. A weight-3 server gets 3Ã— the traffic of a weight-1 server. Used for gradual traffic migration during deployments.
+**Weighted round-robin**: Associate weights with each IP. A weight-3 server gets 3� the traffic of a weight-1 server. Used for gradual traffic migration during deployments.
 
 **Geo-based DNS**: Return different IPs based on the resolver's geographic location (GeoIP database). Direct US users to us-east servers, EU users to eu-west. Imprecise because resolver location may differ from client location (especially with public resolvers like 8.8.8.8).
 
@@ -181,8 +181,8 @@ A Content Delivery Network (CDN) caches content at edge Points of Presence (PoPs
 **Pull zone (origin pull)**: Edge fetches content on first user request, caches it, serves subsequent requests. Simplest setup. Cold-start latency on first request per object.
 
 ```
-User â†’ PoP (miss) â†’ Origin â†’ PoP caches â†’ User
-User â†’ PoP (hit)  â†’ User
+User ? PoP (miss) ? Origin ? PoP caches ? User
+User ? PoP (hit)  ? User
 ```
 
 **Push zone**: Content is proactively uploaded to edge nodes. Used for large files (videos, software downloads) where pull latency is unacceptable. Requires pre-provisioning storage on edge.
@@ -201,7 +201,7 @@ User â†’ PoP (hit)  â†’ User
 | no-store       | Do not cache at all                              |
 | must-revalidate| Origin must validate stale content               |
 
-**ETag**: An opaque entity tag (typically a content hash) sent by the origin. Conditional request: `If-None-Match: "abc123"` â†’ origin returns 304 Not Modified if content unchanged, saving bandwidth.
+**ETag**: An opaque entity tag (typically a content hash) sent by the origin. Conditional request: `If-None-Match: "abc123"` ? origin returns 304 Not Modified if content unchanged, saving bandwidth.
 
 **Last-Modified**: Timestamp of last change. Conditional: `If-Modified-Since: Wed, 21 Oct 2023 07:28:00 GMT`.
 
@@ -233,13 +233,13 @@ Key parameters: `w` (width), `h` (height), `q` (quality), `f` (format), `fit` (c
 
 ### 11. Origin Shielding
 
-Without shielding, a cache miss for a popular object triggers N concurrent origin requests from N different edge PoPs â€” a thundering herd on the origin. Origin shielding designates a single intermediate shield layer:
+Without shielding, a cache miss for a popular object triggers N concurrent origin requests from N different edge PoPs � a thundering herd on the origin. Origin shielding designates a single intermediate shield layer:
 
 ```
-User â†’ Edge PoP (miss) â†’ Shield PoP (miss) â†’ Origin
-                              â†“
+User ? Edge PoP (miss) ? Shield PoP (miss) ? Origin
+                              ?
                         Shield caches
-User2 â†’ Edge PoP (miss) â†’ Shield PoP (hit) â†’ User2
+User2 ? Edge PoP (miss) ? Shield PoP (hit) ? User2
 ```
 
 Only one edge node (the shield) ever contacts the origin per object. Subsequent misses from other PoPs fetch from the shield.
@@ -262,7 +262,7 @@ Only one edge node (the shield) ever contacts the origin per object. Subsequent 
 
 **Lambda@Edge**: AWS Lambda functions triggered by CloudFront events (viewer request, origin request, viewer response, origin response). Use cases: rewrite URLs, A/B testing, authentication (JWT validation at edge), header normalization, redirects. Execution limited to 5 seconds, 128 MB, Node.js/Python.
 
-**Cloudflare Workers**: V8 isolates (not containers) running JavaScript/WASM. Sub-millisecond cold starts, 50-100Î¼s processing overhead per request. Globally distributed every request runs on the nearest of 330+ PoPs. KV storage (eventually consistent, global). Durable Objects (strongly consistent, single-location).
+**Cloudflare Workers**: V8 isolates (not containers) running JavaScript/WASM. Sub-millisecond cold starts, 50-100�s processing overhead per request. Globally distributed every request runs on the nearest of 330+ PoPs. KV storage (eventually consistent, global). Durable Objects (strongly consistent, single-location).
 
 **EdgeKV**: Distributed key-value storage at edge. Cloudflare Workers KV (eventually consistent, 1s-60s propagation), AWS EdgeKV (via Lambda@Edge + DynamoDB global tables). Use cases: feature flags, configuration, A/B test assignments, redirect maps, JWT public keys.
 
@@ -270,13 +270,13 @@ Only one edge node (the shield) ever contacts the origin per object. Subsequent 
 
 | Use Case                 | Edge Compute | Traditional Origin |
 |--------------------------|-------------|-------------------|
-| URL rewriting/redirect   | âœ“ Near-zero latency | Higher latency |
-| A/B split testing        | âœ“ Cookie-based split | Session-based |
-| Authentication (JWT)     | âœ“ Validate at edge   | Centralized |
-| Image optimization       | âœ“ On-the-fly transform | Pre-processing pipeline |
-| Personalization          | âœ“ Cookie/header based | Full-page rendering |
-| Heavy aggregation queries| âœ— Resource limits    | âœ“ Full compute |
-| Database transactions    | âœ— No local DB        | âœ“ Full ACID   |
+| URL rewriting/redirect   | ? Near-zero latency | Higher latency |
+| A/B split testing        | ? Cookie-based split | Session-based |
+| Authentication (JWT)     | ? Validate at edge   | Centralized |
+| Image optimization       | ? On-the-fly transform | Pre-processing pipeline |
+| Personalization          | ? Cookie/header based | Full-page rendering |
+| Heavy aggregation queries| ? Resource limits    | ? Full compute |
+| Database transactions    | ? No local DB        | ? Full ACID   |
 
 ---
 
@@ -296,7 +296,7 @@ dig +trace www.github.com
 #         github.com.  A 140.82.121.3
 ```
 
-The resolver walked 4 hops (root â†’ .com TLD â†’ github.com authoritative â†’ answer) in approximately 120ms. With warm cache, subsequent lookups complete in <1ms.
+The resolver walked 4 hops (root ? .com TLD ? github.com authoritative ? answer) in approximately 120ms. With warm cache, subsequent lookups complete in <1ms.
 
 ### Example 2: Anycast DDoS Absorption
 
@@ -304,10 +304,10 @@ Cloudflare's architecture uses anycast to distribute a 2 Tbps DDoS attack across
 
 ```
 Attack: 2 Tbps UDP amplification targeting 1.2.3.4
-â†’ BGP distributes to 330+ PoPs worldwide
-â†’ Each PoP absorbs ~6 Gbps of attack traffic
-â†’ Rate limiting and packet filtering at each PoP
-â†’ Clean traffic (legitimate user requests) forwarded to origin
+? BGP distributes to 330+ PoPs worldwide
+? Each PoP absorbs ~6 Gbps of attack traffic
+? Rate limiting and packet filtering at each PoP
+? Clean traffic (legitimate user requests) forwarded to origin
 ```
 
 Without anycast, the single origin data center would need 2 Tbps of scrubbing capacity.
@@ -357,7 +357,7 @@ async function handleRequest(request) {
 }
 ```
 
-This worker runs in 330+ locations globally. JWT verification completes in ~200Î¼s per request, adding no perceptible latency.
+This worker runs in 330+ locations globally. JWT verification completes in ~200�s per request, adding no perceptible latency.
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -473,7 +473,7 @@ This worker runs in 330+ locations globally. JWT verification completes in ~200�
 
 ### CDN Cache Simulator
 
-The following TypeScript class models a CDN edge cache with TTL-based expiry, LRU eviction, and hit/miss tracking — useful for understanding cache behavior under load:
+The following TypeScript class models a CDN edge cache with TTL-based expiry, LRU eviction, and hit/miss tracking ? useful for understanding cache behavior under load:
 
 ```typescript
 interface CacheEntry<T> {
@@ -616,13 +616,13 @@ class DnsResolutionChain {
     // Walk root
     const root = this.rootServers[0];
     this.totalTimeMs += root.latencyMs;
-    hops.push(`root(${root.name}) → referral to TLD`);
+    hops.push(`root(${root.name}) ? referral to TLD`);
 
     // Walk TLD
     const tld = this.tldServers[0];
     this.totalTimeMs += tld.latencyMs;
     const tldDomain = domain.split('.').slice(-1)[0];
-    hops.push(`tld(${tld.name}, ${tldDomain}) → referral to authoritative`);
+    hops.push(`tld(${tld.name}, ${tldDomain}) ? referral to authoritative`);
 
     // Walk authoritative
     const auth = this.authoritativeServers.find(
@@ -633,7 +633,7 @@ class DnsResolutionChain {
     const records = auth.records.get(domain)!;
     const record = records.find(r => r.type === type);
     if (!record) throw new Error(`No ${type} record for ${domain}`);
-    hops.push(`auth(${auth.name}) → ${record.type} ${record.value}`);
+    hops.push(`auth(${auth.name}) ? ${record.type} ${record.value}`);
 
     this.resolverCache.set(`${domain}:${type}`, {
       record, expiresAt: Date.now() + record.ttl * 1000,
@@ -647,7 +647,7 @@ dns.registerDomain('example.com', [
   { type: 'A', name: 'example.com', value: '93.184.216.34', ttl: 3600 },
 ]);
 dns.resolve('example.com', 'A').then(r =>
-  console.log(`Resolved → ${r.ip} in ${r.timeMs}ms\n  ${r.hops.join('\n  ')}`)
+  console.log(`Resolved ? ${r.ip} in ${r.timeMs}ms\n  ${r.hops.join('\n  ')}`)
 );
 ```
 
@@ -736,14 +736,14 @@ const locations = [
 for (const loc of locations) {
   const decision = router.route(loc.lat, loc.lon);
   console.log(
-    `${loc.city} → ${decision.popId} ` +
+    `${loc.city} ? ${decision.popId} ` +
     `(~${decision.estimatedLatencyMs}ms, ` +
     `originFallback: ${decision.originFallback})`
   );
 }
 ```
 
-### CDN Origin Pull — Sequence Diagram
+### CDN Origin Pull ? Sequence Diagram
 
 ```mermaid
 sequenceDiagram
@@ -773,7 +773,7 @@ sequenceDiagram
     EdgePOP-->>User: 200 OK (from edge cache)
 ```
 
-### Global Edge Architecture — Deployment View
+### Global Edge Architecture ? Deployment View
 
 ```mermaid
 flowchart TB
@@ -825,7 +825,7 @@ flowchart TB
     class API,DB,OBJ_STORE,REDIS infra
 ```
 
-### Cache Hit Ratio vs Latency — Trade-off Visualization
+### Cache Hit Ratio vs Latency ? Trade-off Visualization
 
 ```mermaid
 quadrantChart
@@ -833,9 +833,9 @@ quadrantChart
     x-axis "Low Hit Ratio" --> "High Hit Ratio"
     y-axis "High Latency" --> "Low Latency"
     quadrant-1 "Optimal Region"
-    quadrant-2 "Good — high cache but slower"
-    quadrant-3 "Poor — miss-heavy"
-    quadrant-4 "Good — fast but uncached"
+    quadrant-2 "Good ? high cache but slower"
+    quadrant-3 "Poor ? miss-heavy"
+    quadrant-4 "Good ? fast but uncached"
     "Long TTL (86400s)": [0.95, 0.25]
     "Short TTL (60s)": [0.45, 0.85]
     "Origin Shield + Long TTL": [0.97, 0.40]
@@ -846,9 +846,134 @@ quadrantChart
 
 ---
 
+
+### Implementation: DNS, CDN, and Edge Computing
+
+```typescript
+interface DNSRecord { domain: string; type: "A" | "AAAA" | "CNAME" | "MX" | "NS" | "TXT"; value: string; ttl: number; }
+class DNSResolver {
+  private zone = new Map<string, DNSRecord[]>(); private cache = new Map<string, { record: DNSRecord; expiry: number }>();
+  addRecord(domain: string, type: DNSRecord["type"], value: string, ttl = 3600): void { const key = domain; if (!this.zone.has(key)) this.zone.set(key, []); this.zone.get(key)!.push({ domain, type, value, ttl }); }
+  resolve(domain: string, type: string): string | null {
+    const cacheKey = `${domain}:${type}`; const cached = this.cache.get(cacheKey);
+    if (cached && cached.expiry > Date.now()) return cached.record.value;
+    const records = this.zone.get(domain); if (!records) return null;
+    const match = records.find(r => r.type === type); if (!match) return null;
+    this.cache.set(cacheKey, { record: match, expiry: Date.now() + match.ttl * 1000 }); return match.value; }
+  flushCache(): void { this.cache.clear(); }
+}
+class CDNNode { private cache = new Map<string, { content: string; ttl: number; cachedAt: number; hits: number }>();
+  private region: string; constructor(region: string) { this.region = region; }
+  get(url: string): string | null { const entry = this.cache.get(url); if (!entry || Date.now() - entry.cachedAt > entry.ttl * 1000) { this.cache.delete(url); return null; } entry.hits++; return entry.content; }
+  set(url: string, content: string, ttl = 3600): void { this.cache.set(url, { content, ttl, cachedAt: Date.now(), hits: 0 }); }
+  getStats(): { items: number; totalHits: number; hitRate: number } {
+    let hits = 0; for (const e of this.cache.values()) hits += e.hits;
+    const items = this.cache.size; return { items, totalHits: hits, hitRate: items > 0 ? hits / items : 0 }; }
+}
+class EdgeWorker { private handlers = new Map<string, (req: Request) => Response>();
+  on(event: string, handler: (req: Request) => Response): void { this.handlers.set(event, handler); }
+  dispatch(event: string, req: Request): Response { const h = this.handlers.get(event); return h ? h(req) : new Response("Not found", { status: 404 }); }
+}
+class Request { constructor(public url: string, public method: string, public headers: Record<string, string>) {} }
+class Response { constructor(public body: string, public init: { status: number; headers?: Record<string, string> }) {} }
+class GeoDNS { private regions = new Map<string, string[]>(); addRegion(name: string, ips: string[]): void { this.regions.set(name, ips); }
+  resolveByLocation(location: string): string[] { return this.regions.get(location) || this.regions.get("default") || []; } }
+```
+
+// cdn dns edge
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'cdn dns edge', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// cdn dns edge - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'cdn dns edge' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- DNS hierarchy has 4 levels: root, TLD, authoritative, recursive resolver â€” each delegation step is a query from resolver to nameserver
+- DNS hierarchy has 4 levels: root, TLD, authoritative, recursive resolver � each delegation step is a query from resolver to nameserver
 - DNS caching occurs at 4 layers (browser, OS, resolver, app) with TTL controlling refresh frequency
 - Round-robin DNS is simple but health-unaware; latency-based routing (Route53 LBR) is more sophisticated
 - Anycast routing (same IP from multiple locations via BGP) provides automatic DDoS absorption and latency reduction

@@ -1,4 +1,4 @@
-# Chapter 11 â€” AI Testing, Evaluation & Quality
+# Chapter 11 — AI Testing, Evaluation & Quality
 
 **Duration:** 1.5 weeks, ~18 hours
 **Goal:** Build a systematic testing and evaluation framework for AI agents and RAG pipelines. Move from "it works on my machine" to quantitative quality gates.
@@ -372,7 +372,7 @@ result = judge.evaluate(
 print(f"Verdict: {result.verdict}")
 print(f"Overall: {result.overall_score}")
 for s in result.scores:
-    print(f"  {s.dimension.value}: {s.score}/5 â€” {s.reasoning}")
+    print(f"  {s.dimension.value}: {s.score}/5 — {s.reasoning}")
 ```
 
 ---
@@ -430,7 +430,7 @@ class TrajectoryEvaluator:
         unnecessary = []
         for i, step in enumerate(trajectory.steps):
             if step.action and "error" in (step.observation or "").lower():
-                unnecessary.append(f"Step {i+1}: {step.action} failed â€” could have been avoided")
+                unnecessary.append(f"Step {i+1}: {step.action} failed — could have been avoided")
         evaluation.efficiency = {
             "score": max(1, 10 - len(unnecessary) * 2),
             "reasoning": f"{len(trajectory.steps)} total steps, {len(unnecessary)} unnecessary",
@@ -905,6 +905,26 @@ print(f"Winner: {report['recommendation']}")
 
 ---
 
+
+interface ProjectScaffold { name: string; files: Array<{path:string;content:string}> }
+class ProjectGenerator {
+  generateAIDemo(name: string): ProjectScaffold {
+    return {name,files:[
+      {path:"src/index.ts",content:`import {Agent} from "./agent"\nconst agent = new Agent({model:"gpt-4",maxTokens:1024,temperature:0.7})\nagent.run()`},
+      {path:"src/agent.ts",content:`export class Agent { constructor(private config: {model:string;maxTokens:number;temperature:number}) {}\n  async run(): Promise<void> { console.log("Agent running with",this.config) } }`},
+      {path:"tsconfig.json",content:JSON.stringify({compilerOptions:{target:"ES2022",module:"NodeNext",strict:true},include:["src"]},null,2)},
+      {path:"package.json",content:JSON.stringify({name,dependencies:{openai:"^4.0"}},null,2)},
+      {path:".env.example",content:"OPENAI_API_KEY=sk-..."}
+    ]}
+  }
+  generateRAGDemo(name: string): ProjectScaffold {
+    return {name,files:[
+      {path:"src/index.ts",content:`import {RAGPipeline} from "./rag"\nconst rag = new RAGPipeline()\nrag.query("What is AI?")`},
+      {path:"src/rag.ts",content:`export class RAGPipeline { async query(q:string): Promise<string> { return "Result" } }`}
+    ]}
+  }
+}
+export { ProjectGenerator, ProjectScaffold }
 ## Exercises
 
 1. **Unit test suite:** Write unit tests for your LangGraph agent covering: correct tool selection, state transitions, error states, and edge cases (empty input, missing state keys).

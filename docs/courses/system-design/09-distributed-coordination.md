@@ -19,7 +19,7 @@
 |--------|---------|
 | **Scope** | Distributed coordination, ZooKeeper, etcd, leader election, locking |
 | **Key Concepts** | Consensus, distributed locks, service discovery, configuration |
-| **Coordination Services** | ZooKeeper, etcd, Consul — architecture and guarantees |
+| **Coordination Services** | ZooKeeper, etcd, Consul ? architecture and guarantees |
 | **Leader Election** | Raft-based election, fencing, lease mechanisms |
 | **Distributed Locking** | Mutex, read/write locks, lock reentrancy, deadlock |
 | **Real-World** | Kafka (ZooKeeper), Kubernetes (etcd), HashiCorp stack |
@@ -33,19 +33,19 @@ flowchart LR
 ```
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![Distributed Coordination Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/09-distributed-coordination.png)
 
 ### Service Registry Pattern
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 A service registry is a database of available service instances and their network locations. Services register themselves on startup and deregister on shutdown. Clients or routers query the registry to find service endpoints.
 
 ```
@@ -101,7 +101,7 @@ Client <- response
 
 ### ZooKeeper
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -760,6 +760,136 @@ class ServiceRegistry {
 }
 ```
 
+
+### Implementation: Distributed Coordination and Service Discovery
+
+```typescript
+class DistributedLock { private locks = new Map<string, { owner: string; expiry: number; waiters: string[] }>();
+  acquire(lockName: string, owner: string, ttlMs = 30000): boolean {
+    const existing = this.locks.get(lockName);
+    if (existing && existing.expiry > Date.now() && existing.owner !== owner) return false;
+    this.locks.set(lockName, { owner, expiry: Date.now() + ttlMs, waiters: [] }); return true; }
+  release(lockName: string, owner: string): boolean {
+    const lock = this.locks.get(lockName); if (lock && lock.owner === owner) { this.locks.delete(lockName); return true; } return false; }
+  renew(lockName: string, owner: string, ttlMs = 30000): boolean { const lock = this.locks.get(lockName); if (lock && lock.owner === owner) { lock.expiry = Date.now() + ttlMs; return true; } return false; }
+}
+class LeaderElection { private candidates: string[] = []; private leader: string | null = null; private term = 0;
+  addCandidate(id: string): void { if (!this.candidates.includes(id)) this.candidates.push(id); }
+  elect(): { leader: string; term: number } { this.term++; this.candidates.sort(); this.leader = this.candidates[0]; return { leader: this.leader, term: this.term }; }
+  stepDown(): void { this.leader = null; }
+  getLeader(): string | null { return this.leader; }
+}
+class ServiceDiscovery { private services = new Map<string, { instances: string[]; healthy: boolean[] }>();
+  register(svc: string, instance: string): void { if (!this.services.has(svc)) this.services.set(svc, { instances: [], healthy: [] }); const s = this.services.get(svc)!; s.instances.push(instance); s.healthy.push(true); }
+  getInstances(svc: string): string[] { const s = this.services.get(svc); if (!s) return []; return s.instances.filter((_, i) => s.healthy[i]); }
+  markUnhealthy(svc: string, instance: string): void { const s = this.services.get(svc); if (!s) return; const idx = s.instances.indexOf(instance); if (idx >= 0) s.healthy[idx] = false; }
+}
+class DistributedBarrier { private count: number; private waiting = 0; private release: (() => void) | null = null;
+  constructor(count: number) { this.count = count; }
+  async wait(): Promise<void> { this.waiting++; if (this.waiting >= this.count) { this.release?.(); this.waiting = 0; return; } return new Promise(r => this.release = r); }
+  reset(): void { this.waiting = 0; this.release = null; }
+}
+class ZookeeperLike { private data = new Map<string, { value: string; ephemeral: boolean; watchers: Set<() => void> }>();
+  create(path: string, value: string, ephemeral = false): void { this.data.set(path, { value, ephemeral, watchers: new Set() }); }
+  get(path: string): string | undefined { return this.data.get(path)?.value; }
+  set(path: string, value: string): void { const node = this.data.get(path); if (node) { node.value = value; for (const w of node.watchers) w(); } }
+  watch(path: string, cb: () => void): void { const node = this.data.get(path); if (node) node.watchers.add(cb); }
+  exists(path: string): boolean { return this.data.has(path); }
+  delete(path: string): void { this.data.delete(path); }
+}
+```
+
+// distributed coordination
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'distributed coordination', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// distributed coordination - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'distributed coordination' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Service registries maintain dynamic mappings between service names and network locations; ZooKeeper, Etcd, Consul, and Eureka are common implementations

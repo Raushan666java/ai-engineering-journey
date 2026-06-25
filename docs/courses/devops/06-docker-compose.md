@@ -178,7 +178,7 @@ services:
 
   db:
     image: postgres:16
-    # No profile â€” always starts
+    # No profile — always starts
 
   mailhog:
     image: mailhog/mailhog
@@ -191,10 +191,10 @@ Run: `docker compose --profile dev up`
 
 Split configuration across files for different environments:
 
-- `docker-compose.yml` â€” Base configuration
-- `docker-compose.override.yml` â€” Development overrides (auto-loaded)
-- `docker-compose.prod.yml` â€” Production overrides
-- `docker-compose.test.yml` â€” Test overrides
+- `docker-compose.yml` — Base configuration
+- `docker-compose.override.yml` — Development overrides (auto-loaded)
+- `docker-compose.prod.yml` — Production overrides
+- `docker-compose.test.yml` — Test overrides
 
 ```text
 # Development (override auto-loaded)
@@ -505,7 +505,7 @@ class ComposeValidator {
     if (service.volumes) {
       for (const vol of service.volumes) {
         if (vol.includes(':') && !vol.startsWith('.') && !vol.startsWith('/')) {
-          this.warnings.push(`Service "${name}": volume "${vol}" uses a named volume â€” ensure it is declared`);
+          this.warnings.push(`Service "${name}": volume "${vol}" uses a named volume — ensure it is declared`);
         }
       }
     }
@@ -513,15 +513,15 @@ class ComposeValidator {
 
   private printReport(): void {
     if (this.errors.length > 0) {
-      console.log('âŒ Validation failed:\n');
+      console.log('? Validation failed:\n');
       this.errors.forEach(e => console.log(`  ERROR: ${e}`));
     }
     if (this.warnings.length > 0) {
-      console.log('\nâš ï¸  Warnings:\n');
+      console.log('\n??  Warnings:\n');
       this.warnings.forEach(w => console.log(`  WARNING: ${w}`));
     }
     if (this.errors.length === 0) {
-      console.log('âœ… Compose file is valid');
+      console.log('? Compose file is valid');
     }
   }
 }
@@ -859,6 +859,48 @@ console.log('=== Dev Override ===\n' + gen.generate(gen.generateDevConfig(prod))
 
 ---
 
+
+// docker compose
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'docker compose', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Docker Compose defines multi-container applications in YAML with services, networks, and volumes.

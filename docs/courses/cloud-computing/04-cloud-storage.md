@@ -1,4 +1,4 @@
-﻿# Chapter 4: Cloud Storage Services
+# Chapter 4: Cloud Storage Services
 
 > **Previous:** [Chapter 3: Cloud Compute Services](./03-cloud-compute.md) | **Next:** [Chapter 5: Cloud Database Services](./05-cloud-database.md)
 
@@ -19,9 +19,9 @@ After completing this chapter, students will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| Object Storage | S3, Blob, GCS — infinite scale via HTTP | Best for static files, backups, data lakes |
-| Block Storage | EBS, Disk, PD — raw volumes for VMs | Best for databases, OS boot volumes |
-| File Storage | EFS, Azure Files, Filestore — shared NFS/SMB | Best for multi-VM shared access |
+| Object Storage | S3, Blob, GCS ? infinite scale via HTTP | Best for static files, backups, data lakes |
+| Block Storage | EBS, Disk, PD ? raw volumes for VMs | Best for databases, OS boot volumes |
+| File Storage | EFS, Azure Files, Filestore ? shared NFS/SMB | Best for multi-VM shared access |
 | Storage Tiers | Hot, Cool, Archive | Automate tier transitions for cost savings |
 | Lifecycle Policies | Auto-move data between tiers | Essential for cost management at scale |
 | CDN | Edge caching for global performance | Cuts latency, reduces origin load |
@@ -266,7 +266,7 @@ graph TB
 - **Versioning:** Preserves all object versions. Protects against accidental deletion and overwrites.
 - **Object Lock:** Write-once-read-many (WORM) protection. Prevents object deletion even by root users. Essential for compliance (SEC 17a-4).
 - **MFA Delete:** Requires multi-factor authentication to delete objects or change versioning state.
-- **Snapshots:** Point-in-time backups of block storage volumes. Incremental — only changed data is saved.
+- **Snapshots:** Point-in-time backups of block storage volumes. Incremental ? only changed data is saved.
 
 ### 4.7 Content Delivery Networks (CDN)
 
@@ -428,9 +428,9 @@ async function runDemo(): Promise<void> {
 runDemo();
 \\\
 
-> **One-Sentence Takeaway:** The three cloud storage models serve fundamentally different purposes — object for scale and durability, block for performance, and file for shared access — and knowing which to use is the key to cost-effective cloud architecture.
+> **One-Sentence Takeaway:** The three cloud storage models serve fundamentally different purposes ? object for scale and durability, block for performance, and file for shared access ? and knowing which to use is the key to cost-effective cloud architecture.
 
-> **Pro Tip:** For cost-optimized object storage, set up lifecycle policies on day one — move objects to infrequent access after 30 days and archive after 90. This can reduce storage costs by 80%+ for data with predictable access decay.
+> **Pro Tip:** For cost-optimized object storage, set up lifecycle policies on day one ? move objects to infrequent access after 30 days and archive after 90. This can reduce storage costs by 80%+ for data with predictable access decay.
 
 > **Warning:** Object storage does not support file locking or POSIX semantics. If your application needs concurrent writes with locking, use block or file storage. Attempting to use object storage for a database will result in data corruption.
 
@@ -481,7 +481,7 @@ runDemo();
 </details>
 
 2. When should you choose File Storage (EFS/Azure Files/Filestore) over attaching Block Storage to each VM?
-   - A) Always — file storage is cheaper
+   - A) Always ? file storage is cheaper
    - B) When multiple VMs need concurrent read/write access to the same data
    - C) File storage is faster than block storage
    - D) When you need a boot volume for VMs
@@ -762,6 +762,98 @@ console.log("Yearly cost:", JSON.stringify(cost, null, 2));
 ```
 ```
 
+
+// cloud storage
+// iaas-paas-saas-cloud-native implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'cloud storage', data: { topic: 'iaas-paas-saas-cloud-native' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// cloud storage - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'cloud-services demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'cloud-computing', chapter: 'cloud storage' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('cloud-services'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Cloud storage is categorized into Object, Block, and File models.

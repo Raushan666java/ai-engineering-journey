@@ -82,7 +82,7 @@ $$P(E) = \frac{|E|}{|S|}$$
 - $P(E \cup F) = P(E) + P(F) - P(E \cap F)$ (addition rule).
 - $0 \leq P(E) \leq 1$.
 
-> **One-Sentence Takeaway:** Every probability rule — complement, addition, inclusion-exclusion — follows from Kolmogorov's three axioms.
+> **One-Sentence Takeaway:** Every probability rule ? complement, addition, inclusion-exclusion ? follows from Kolmogorov's three axioms.
 
 ### 13.3 Conditional Probability
 
@@ -95,7 +95,7 @@ provided $P(B) > 0$.
 **Generalized multiplication rule:**
 $$P(A_1 \cap A_2 \cap \dots \cap A_n) = P(A_1) \cdot P(A_2 \mid A_1) \cdot P(A_3 \mid A_1 \cap A_2) \cdots P(A_n \mid A_1 \cap \dots \cap A_{n-1})$$
 
-> **One-Sentence Takeaway:** Conditional probability updates the probability of $A$ given knowledge that $B$ occurred — it renormalizes $P(A \cap B)$ over $P(B)$.
+> **One-Sentence Takeaway:** Conditional probability updates the probability of $A$ given knowledge that $B$ occurred ? it renormalizes $P(A \cap B)$ over $P(B)$.
 
 ### 13.4 Independence
 
@@ -109,7 +109,7 @@ Events $A$ and $B$ are **independent** if any of the following equivalent condit
 Events $A_1, A_2, \dots, A_n$ are **mutually independent** if for every subset $\{i_1, \dots, i_k\}$:
 $$P(A_{i_1} \cap \dots \cap A_{i_k}) = P(A_{i_1}) \cdots P(A_{i_k})$$
 
-> **One-Sentence Takeaway:** Independence means the occurrence of one event does not affect the probability of another — the joint probability is the product of marginals.
+> **One-Sentence Takeaway:** Independence means the occurrence of one event does not affect the probability of another ? the joint probability is the product of marginals.
 
 ### 13.5 Bayes' Theorem
 
@@ -125,7 +125,7 @@ $$P(H_j \mid E) = \frac{P(E \mid H_j) \cdot P(H_j)}{\sum_{i=1}^n P(E \mid H_i) \
 - $P(E \mid H)$: **likelihood**.
 - $P(E)$: **marginal likelihood** (normalization constant).
 
-> **One-Sentence Takeaway:** Bayes' theorem tells us how to update our belief in a hypothesis given new evidence — it is the foundation of inference, spam filtering, and machine learning.
+> **One-Sentence Takeaway:** Bayes' theorem tells us how to update our belief in a hypothesis given new evidence ? it is the foundation of inference, spam filtering, and machine learning.
 
 ### 13.6 Random Variables
 
@@ -191,7 +191,7 @@ console.log(expectedValue(die)); // 3.5
 console.log(variance(die));      // ~2.917
 ```
 
-> **One-Sentence Takeaway:** Expected value is the probability-weighted average; variance measures spread — linearity of expectation holds regardless of independence.
+> **One-Sentence Takeaway:** Expected value is the probability-weighted average; variance measures spread ? linearity of expectation holds regardless of independence.
 
 ### 13.8 Bernoulli and Binomial Distributions
 
@@ -236,7 +236,7 @@ The number of trials until the first success in independent Bernoulli trials.
 - $\text{Var}(X) = (1-p)/p^2$.
 - **Memoryless property:** $P(X > n + m \mid X > n) = P(X > m)$.
 
-> **One-Sentence Takeaway:** The geometric distribution models "waiting time" until the first success; it is memoryless — past failures do not affect future probability.
+> **One-Sentence Takeaway:** The geometric distribution models "waiting time" until the first success; it is memoryless ? past failures do not affect future probability.
 
 ### 13.10 Inclusion-Exclusion for Probability
 
@@ -252,7 +252,7 @@ $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A\cap C) - P(B\cap C)
 
 | Distribution | Support | Parameter(s) | $E[X]$ | $\text{Var}(X)$ | Memoryless |
 |-------------|---------|--------------|--------|-----------------|------------|
-| Bernoulli | $\{0,1\}$ | $p$ | $p$ | $p(1-p)$ | — |
+| Bernoulli | $\{0,1\}$ | $p$ | $p$ | $p(1-p)$ | ? |
 | Binomial | $\{0,\dots,n\}$ | $n, p$ | $np$ | $np(1-p)$ | No |
 | Geometric | $\{1,2,\dots\}$ | $p$ | $1/p$ | $(1-p)/p^2$ | Yes |
 | Uniform (discrete) | $\{1,\dots,n\}$ | $n$ | $(n+1)/2$ | $(n^2-1)/12$ | No |
@@ -265,7 +265,7 @@ $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A\cap C) - P(B\cap C)
 | Expected Value | A/B testing, RL | Loss functions | Reliability engineering | Portfolio expected return |
 | Variance | Feature selection, PCA | Regularization | Quality control (6$\sigma$) | Portfolio risk (Volatility) |
 | Binomial Distribution | Error rate estimation | Binary classification | Defect rate modeling | Default probability |
-| Geometric Distribution | Retry modeling | — | Redundancy design | Stopping time analysis |
+| Geometric Distribution | Retry modeling | ? | Redundancy design | Stopping time analysis |
 | Conditional Probability | Probabilistic graphs | Markov models | System reliability | Conditional VaR |
 
 ## Chapter Quiz
@@ -438,7 +438,7 @@ function conditionalExpectation(
 
 ### 13.14 Markov and Chebyshev Inequalities
 
-These inequalities bound probabilities using only the mean and variance — no distributional assumptions required.
+These inequalities bound probabilities using only the mean and variance ? no distributional assumptions required.
 
 **Theorem 13.8 (Markov's Inequality).** For a nonnegative random variable $X$ and $a > 0$:
 $$P(X \geq a) \leq \frac{E[X]}{a}$$
@@ -504,13 +504,13 @@ flowchart TD
 
 **Example 13.11** (Monte Carlo approximation of $\pi$). Using 1,000,000 random points in $[-1,1]^2$, the proportion inside the unit circle approximates $\pi/4$, giving $\pi \approx 4 \times \text{inside} / \text{total}$.
 
-**Example 13.12** (Law of total expectation — expected die roll). Let $Y$ be the result of the first roll of a die, and $X$ the sum of two independent rolls. Then $E[X \mid Y = y] = y + 3.5$, so $E[X] = E[E[X \mid Y]] = E[Y + 3.5] = 3.5 + 3.5 = 7$.
+**Example 13.12** (Law of total expectation ? expected die roll). Let $Y$ be the result of the first roll of a die, and $X$ the sum of two independent rolls. Then $E[X \mid Y = y] = y + 3.5$, so $E[X] = E[E[X \mid Y]] = E[Y + 3.5] = 3.5 + 3.5 = 7$.
 
-**Example 13.13** (Chebyshev bound on a die). For a fair die, $\mu = 3.5$, $\sigma^2 \approx 2.917$, $\sigma \approx 1.708$. For $k = 2$, $P(|X - 3.5| \geq 3.416) \leq 1/4 = 0.25$. The actual probability $P(X \leq 0 \text{ or } X \geq 7) = 0$ — Chebyshev gives a loose bound but requires no distribution assumption.
+**Example 13.13** (Chebyshev bound on a die). For a fair die, $\mu = 3.5$, $\sigma^2 \approx 2.917$, $\sigma \approx 1.708$. For $k = 2$, $P(|X - 3.5| \geq 3.416) \leq 1/4 = 0.25$. The actual probability $P(X \leq 0 \text{ or } X \geq 7) = 0$ ? Chebyshev gives a loose bound but requires no distribution assumption.
 
 **Example 13.14** (Naive Bayes for spam). A word "offer" appears in 80% of spam emails and 10% of legitimate emails. Prior: 30% of all emails are spam. For an email containing "offer", the posterior $P(\text{spam} \mid \text{offer}) = (0.8 \times 0.3) / (0.8 \times 0.3 + 0.1 \times 0.7) = 0.24 / 0.31 \approx 0.774$.
 
-**Example 13.15** (Counting with probability — birthday problem simulation).
+**Example 13.15** (Counting with probability ? birthday problem simulation).
 
 ```typescript
 function simulateBirthdayCollision(people: number, trials: number): number {
@@ -556,8 +556,8 @@ flowchart TD
     C --> H[Normal]
     C --> I[Exponential]
     D --> J["P(1)=p, P(0)=1-p"]
-    E --> K["P(k)=C(n,k)pᵏ(1-p)ⁿ⁻ᵏ"]
-    F --> L["P(k)=e⁻ˡ'λᵏ/k!"]
+    E --> K["P(k)=C(n,k)p?(1-p)n??"]
+    F --> L["P(k)=e??'??/k!"]
 ```
 
 ## TypeScript Implementations
@@ -593,7 +593,7 @@ console.log('Var[die]:', variance([1,2,3,4,5,6], Array(6).fill(1/6))); // ~2.917
 function bayesTheorem(
   priorA: number,        // P(A)
   probBGivenA: number,   // P(B|A)
-  probBGivenNotA: number // P(B|¬A)
+  probBGivenNotA: number // P(B|?A)
 ): number {
   const probNotA = 1 - priorA;
   const probB = probBGivenA * priorA + probBGivenNotA * probNotA;
@@ -672,7 +672,7 @@ console.log('\nE[die]:', expectedValue(die).toFixed(4), 'Var[die]:', variance(di
 function poissonPMF(lambda: number, k: number): number {
   return Math.exp(-lambda) * Math.pow(lambda, k) / Array.from({length: k}, (_, i) => i + 1).reduce((a, b) => a * b, 1);
 }
-console.log('\nPoisson λ=3: P(X=2):', poissonPMF(3, 2).toFixed(4), '(expected: ~0.224)');
+console.log('\nPoisson ?=3: P(X=2):', poissonPMF(3, 2).toFixed(4), '(expected: ~0.224)');
 
 // --- Hypergeometric Distribution ---
 function hypergeometric(N: number, K: number, n: number, k: number): number {
@@ -706,10 +706,102 @@ function markovChain(
   return { states, stationary: pi.map(v => +v.toFixed(4)) };
 }
 const mc = markovChain([[0.7,0.3],[0.4,0.6]], 0, 20);
-console.log('\nMarkov chain states (20 steps):', mc.states.slice(0,10).join('→'), '…');
+console.log('\nMarkov chain states (20 steps):', mc.states.slice(0,10).join('?'), '?');
 console.log('Stationary distribution:', mc.stationary);
 ```
 
+
+// probability
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'probability', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// probability - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'probability' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Probability measures likelihood from 0 to 1; all rules derive from Kolmogorov's axioms.
@@ -721,11 +813,11 @@ console.log('Stationary distribution:', mc.stationary);
 
 ## Practical Takeaways
 
-1. **Complement is your best friend** — $P(\text{at least one})$ is almost always easier as $1 - P(\text{none})$.
-2. **Linearity of expectation works without independence** — this is the most powerful tool in probability.
-3. **Bayes' theorem avoids false positives** — always account for the base rate (prior).
-4. **Binomial counts successes in 0/1 trials** — check independence and constant $p$ before using.
-5. **Variance is not linear** — $\text{Var}(X+Y) = \text{Var}(X) + \text{Var}(Y)$ only for independent variables.
+1. **Complement is your best friend** ? $P(\text{at least one})$ is almost always easier as $1 - P(\text{none})$.
+2. **Linearity of expectation works without independence** ? this is the most powerful tool in probability.
+3. **Bayes' theorem avoids false positives** ? always account for the base rate (prior).
+4. **Binomial counts successes in 0/1 trials** ? check independence and constant $p$ before using.
+5. **Variance is not linear** ? $\text{Var}(X+Y) = \text{Var}(X) + \text{Var}(Y)$ only for independent variables.
 
 ## Exercises
 

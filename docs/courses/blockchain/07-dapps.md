@@ -45,8 +45,8 @@ flowchart LR
 
 ### The dApp Stack
 
-A traditional app uses: `Frontend → API → Centralized Database`.
-A dApp uses: `Frontend → Provider/Wallet → Blockchain (Smart Contracts)`.
+A traditional app uses: `Frontend ? API ? Centralized Database`.
+A dApp uses: `Frontend ? Provider/Wallet ? Blockchain (Smart Contracts)`.
 
 ```mermaid
 flowchart TB
@@ -74,9 +74,9 @@ flowchart TB
 ```
 
 **Key components:**
-1. **Frontend:** React, Vue, or Angular — same as Web2.
+1. **Frontend:** React, Vue, or Angular � same as Web2.
 2. **Wallet (e.g., MetaMask):** Manages private keys and signs transactions. Injects `window.ethereum` into the browser.
-3. **Provider (e.g., Infura, Alchemy):** JSON-RPC interface to blockchain nodes — enables reading data and sending transactions.
+3. **Provider (e.g., Infura, Alchemy):** JSON-RPC interface to blockchain nodes � enables reading data and sending transactions.
 4. **Smart Contracts:** On-chain logic deployed on the blockchain.
 5. **Decentralized Storage (IPFS):** Content-addressed P2P storage for files that are too expensive to store on-chain.
 
@@ -202,7 +202,7 @@ const contract = new ethers.Contract(address, abi, provider);
 
 // Real-time event listener
 contract.on("Transfer", (from, to, value, event) => {
-    console.log(`Transfer: ${from} → ${to} = ${ethers.formatEther(value)} ETH`);
+    console.log(`Transfer: ${from} ? ${to} = ${ethers.formatEther(value)} ETH`);
     // Update UI in real-time
     updateTransactionList({ from, to, value, txHash: event.log.transactionHash });
 });
@@ -217,7 +217,7 @@ const events = await contract.queryFilter(
 
 ### IPFS (InterPlanetary File System)
 
-IPFS is a peer-to-peer, content-addressed file system. Files are addressed by their **CID (Content Identifier)** — a hash of the content itself, not a location URL.
+IPFS is a peer-to-peer, content-addressed file system. Files are addressed by their **CID (Content Identifier)** � a hash of the content itself, not a location URL.
 
 ```mermaid
 flowchart TB
@@ -487,11 +487,11 @@ async function loadAllNFTs(
 }
 ```
 
-> **One-Sentence Takeaway:** In a dApp, the user's wallet is both their identity (authentication) and their signing key (authorization) — there is no backend session, no password reset, and no central authority controlling access.
+> **One-Sentence Takeaway:** In a dApp, the user's wallet is both their identity (authentication) and their signing key (authorization) � there is no backend session, no password reset, and no central authority controlling access.
 
 > **Pro Tip:** When building a dApp frontend, handle the "no wallet" and "wrong network" states explicitly. A blank screen when MetaMask isn't installed is the #1 UX failure in new dApps.
 
-> **Warning:** IPFS does not guarantee availability — content is only accessible if at least one node is pinning the data. Use a pinning service (Pinata, web3.storage) to ensure your dApp's data persists.
+> **Warning:** IPFS does not guarantee availability � content is only accessible if at least one node is pinning the data. Use a pinning service (Pinata, web3.storage) to ensure your dApp's data persists.
 
 ---
 
@@ -499,8 +499,8 @@ async function loadAllNFTs(
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| Web2 Architecture | Frontend → API → Centralized DB | Server controls data and identity | Social media, banking |
-| dApp Architecture | Frontend → Provider → Blockchain | User controls keys and data | DeFi, NFTs |
+| Web2 Architecture | Frontend ? API ? Centralized DB | Server controls data and identity | Social media, banking |
+| dApp Architecture | Frontend ? Provider ? Blockchain | User controls keys and data | DeFi, NFTs |
 | MetaMask | Browser wallet extension | Injects window.ethereum provider | Transaction signing, identity |
 | Infura/Alchemy | Node-as-a-Service providers | No need to sync full blockchain | dApp backend connectivity |
 | IPFS | Content-addressed P2P file system | Files addressed by CID, not URL | NFT metadata, dApp content |
@@ -516,7 +516,7 @@ async function loadAllNFTs(
 | **Wallet** | MetaMask, WalletConnect, Coinbase Wallet | Manages private keys, signs txs |
 | **Provider** | JSON-RPC (Infura, Alchemy, QuickNode) | Read operations are free |
 | **IPFS** | CID (Qm...), Gateway (ipfs.io), Pinning | Content addressing, not location addressing |
-| **ENS** | john.eth → 0xabc... | Human-readable addresses |
+| **ENS** | john.eth ? 0xabc... | Human-readable addresses |
 | **Events** | Emitted by contracts, captured by frontend | Real-time UI updates |
 | **ethers.js** | Provider, Signer, Contract | Main API for blockchain interaction |
 | **WebSocket** | Real-time event streaming | Lower latency than polling |
@@ -565,7 +565,7 @@ async function loadAllNFTs(
 
 <details>
 <summary>Answer</summary>
-**B) The content is inaccessible until a node with that CID comes back online.** IPFS does not guarantee persistence — content availability depends on at least one node hosting it. This is why pinning services exist.
+**B) The content is inaccessible until a node with that CID comes back online.** IPFS does not guarantee persistence � content availability depends on at least one node hosting it. This is why pinning services exist.
 </details>
 
 4. What is the difference between a Provider and a Signer in ethers.js?
@@ -581,13 +581,13 @@ async function loadAllNFTs(
 
 5. Why is content addressing important for decentralized applications?
    - A) It makes URLs shorter
-   - B) Content is addressable by its hash, not its location — links never break if content doesn't change
+   - B) Content is addressable by its hash, not its location � links never break if content doesn't change
    - C) It's faster than location addressing
    - D) It uses less bandwidth
 
 <details>
 <summary>Answer</summary>
-**B) Content is addressable by its hash, not its location — links never break if content doesn't change.** In IPFS, the CID (content hash) uniquely identifies the content. As long as the content is the same, the CID is the same, and anyone hosting that CID can serve it.
+**B) Content is addressable by its hash, not its location � links never break if content doesn't change.** In IPFS, the CID (content hash) uniquely identifies the content. As long as the content is the same, the CID is the same, and anyone hosting that CID can serve it.
 </details>
 
 ### TypeScript: Multi-Sig Wallet Logic
@@ -826,6 +826,48 @@ const ipfs = new IPFSSim();
 console.log(`IPFS hash: ${ipfs.add('hello world')}`);
 ```
 
+
+// dapps
+// distributed-ledger-crypto implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'dapps', data: { topic: 'distributed-ledger-crypto' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - dApps remove central points of control and failure by utilizing blockchain and P2P storage.
@@ -840,7 +882,7 @@ console.log(`IPFS hash: ${ipfs.add('hello world')}`);
 ## Practical Takeaways
 
 1. Always handle "wallet not installed" and "wrong network" states in your dApp UI.
-2. Use ethers.js over web3.js — it's smaller, better typed, and more actively maintained.
+2. Use ethers.js over web3.js � it's smaller, better typed, and more actively maintained.
 3. Listen to smart contract events via WebSocket for real-time updates rather than polling.
 4. Use a pinning service (Pinata, web3.storage) to ensure IPFS content availability.
 5. Implement Sign-in with Ethereum (EIP-4361 / SIWE) for session-based authentication.

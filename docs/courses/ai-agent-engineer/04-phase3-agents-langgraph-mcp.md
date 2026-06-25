@@ -1,4 +1,4 @@
-# Phase 3 — AI Agents: LangGraph, CrewAI, MCP
+# Phase 3 � AI Agents: LangGraph, CrewAI, MCP
 
 **Duration:** Weeks 6-8, ~35 hours
 **Goal:** Build agent state machines with LangGraph, multi-agent crews with CrewAI, and MCP clients that connect LLMs to tools. Rebuild your Purvanchal Flow Studio orchestration layer from n8n to LangGraph.
@@ -9,14 +9,14 @@
 
 | # | Subtopic | Hours | Done checkpoint |
 |---|----------|-------|-----------------|
-| 1 | ReAct pattern (think → act → observe → repeat) | 2 | Explain agent loop vs single LLM call in one sentence |
+| 1 | ReAct pattern (think ? act ? observe ? repeat) | 2 | Explain agent loop vs single LLM call in one sentence |
 | 2 | Tool calling deep-dive | 1.5 | Write a tool schema with nested object parameters |
 | 3 | LangGraph: StateGraph, nodes, edges | 3 | Build a 3-node linear graph from scratch |
 | 4 | Conditional edges and routing | 2.5 | Write a conditional edge based on a custom state field |
 | 5 | LangGraph persistence (checkpointer) | 2 | Kill a graph mid-execution and resume it |
 | 6 | Human-in-the-loop patterns | 1.5 | Describe a real use case for interrupt/resume |
 | 7 | CrewAI: agents, tasks, crews, processes | 2.5 | Build a 2-agent crew (researcher + writer) |
-| 8 | MCP protocol spec — 3 primitives | 3 | Map tools/resources/prompts to your existing MCP server |
+| 8 | MCP protocol spec � 3 primitives | 3 | Map tools/resources/prompts to your existing MCP server |
 | 9 | Building an MCP client | 2.5 | Write a client that connects to your memory server |
 | 10 | Agent memory patterns | 2 | Distinguish short-term vs long-term memory in your system |
 | 11 | Multi-agent orchestration patterns | 2 | Sketch a CRM assistant with 3 agents, justify the pattern |
@@ -29,7 +29,7 @@
 
 ## 3.1 The ReAct Pattern
 
-**The key insight:** A single LLM call returns text. An agent loops: think → act → observe → repeat.
+**The key insight:** A single LLM call returns text. An agent loops: think ? act ? observe ? repeat.
 
 ```
 User: "Book a meeting with John tomorrow at 2pm"
@@ -79,7 +79,7 @@ def react_loop(tools: dict[str, callable], user_input: str, max_iterations: int 
 
 ### Exercise
 
-Explain the difference between a single LLM call and an agent loop in one sentence that a non-technical client would understand. Example: "A single call answers your question. An agent checks, tries, fails, retries, and then answers — like a person researching instead of guessing."
+Explain the difference between a single LLM call and an agent loop in one sentence that a non-technical client would understand. Example: "A single call answers your question. An agent checks, tries, fails, retries, and then answers � like a person researching instead of guessing."
 
 ---
 
@@ -88,7 +88,7 @@ Explain the difference between a single LLM call and an agent loop in one senten
 ### Nested parameter schemas
 
 ```python
-# Tool that creates a booking — nested address object
+# Tool that creates a booking � nested address object
 create_booking_schema = {
     "type": "function",
     "function": {
@@ -127,16 +127,16 @@ create_booking_schema = {
 
 ### How the model decides which tool to call
 
-The model reads the `description` field and the parameter names/types to decide. **Clear descriptions are critical** — the function name and parameter descriptions are what the model sees, not your code comments.
+The model reads the `description` field and the parameter names/types to decide. **Clear descriptions are critical** � the function name and parameter descriptions are what the model sees, not your code comments.
 
 ```python
-# Bad — model won't understand when to call this
+# Bad � model won't understand when to call this
 tool_spec = {
     "name": "process",
     "parameters": {"type": "object", "properties": {"a": {"type": "string"}, "b": {"type": "integer"}}},
 }
 
-# Good — model can route correctly
+# Good � model can route correctly
 tool_spec = {
     "name": "search_knowledge_base",
     "description": "Search the vector database for relevant documents",
@@ -212,7 +212,7 @@ graph.add_edge("generate_music", "generate_vocals")
 graph.add_edge("generate_vocals", "source_clips")
 graph.add_edge("source_clips", "compose_video")
 
-# Conditional edge — the part n8n can't express cleanly
+# Conditional edge � the part n8n can't express cleanly
 def should_retry(state: PipelineState) -> str:
     if state.get("error") and state["retry_count"] < 3:
         return "retry"
@@ -252,7 +252,7 @@ print(result["final_video_path"])
 
 ### Exercise
 
-Build a throwaway 3-node linear graph — no external calls, just print statements that simulate work. Confirm the graph runs in order. Then add a conditional edge. Then break a node and confirm the retry mechanism triggers. Do this before touching the real Purvanchal pipeline.
+Build a throwaway 3-node linear graph � no external calls, just print statements that simulate work. Confirm the graph runs in order. Then add a conditional edge. Then break a node and confirm the retry mechanism triggers. Do this before touching the real Purvanchal pipeline.
 
 ---
 
@@ -282,7 +282,7 @@ graph.add_conditional_edges(
 
 ### Why conditional edges matter for your portfolio
 
-Visual examples: generic tutorials show `router.add_conditional_edges("classify", ...)`. Your pipeline shows **real business logic** — retry based on output length, quality checks, failure recovery. That's the difference between "I read the docs" and "I built in production."
+Visual examples: generic tutorials show `router.add_conditional_edges("classify", ...)`. Your pipeline shows **real business logic** � retry based on output length, quality checks, failure recovery. That's the difference between "I read the docs" and "I built in production."
 
 ### Exercise
 
@@ -294,7 +294,7 @@ Write a conditional edge function that routes based on a custom state field (e.g
 
 ### Why this matters for media pipelines
 
-Your Purvanchal pipeline generates music files that take 2-5 minutes each. If the server crashes at "compose_video," n8n restarts from the beginning. With LangGraph's checkpointer, it resumes from "compose_video" — 4 nodes of work saved.
+Your Purvanchal pipeline generates music files that take 2-5 minutes each. If the server crashes at "compose_video," n8n restarts from the beginning. With LangGraph's checkpointer, it resumes from "compose_video" � 4 nodes of work saved.
 
 ```python
 from langgraph.checkpoint.memory import MemorySaver
@@ -303,7 +303,7 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 # In-memory (for prototyping)
 checkpointer = MemorySaver()
 
-# SQLite (for production — survives server restart)
+# SQLite (for production � survives server restart)
 checkpointer = SqliteSaver.from_conn_string("checkpoints.db")
 
 app = graph.compile(checkpointer=checkpointer)
@@ -322,7 +322,7 @@ Start a graph run, kill it mid-execution (Ctrl+C), then resume it using the same
 
 ## 3.6 Human-in-the-Loop (Interrupt/Resume)
 
-Some pipeline stages need approval before proceeding — spending money on API calls, publishing content, approving generated lyrics.
+Some pipeline stages need approval before proceeding � spending money on API calls, publishing content, approving generated lyrics.
 
 ```python
 from langgraph.constants import interrupt
@@ -347,7 +347,7 @@ app.invoke(
 
 ### Exercise
 
-Describe one real use case from your own work where this pattern would prevent a costly automated mistake. Write it down — it's an interview talking point.
+Describe one real use case from your own work where this pattern would prevent a costly automated mistake. Write it down � it's an interview talking point.
 
 ---
 
@@ -409,7 +409,7 @@ print(result)
 
 | Process | When to use |
 |---------|-------------|
-| **Sequential** | Simple pipelines, clear dependency order (research → write → publish) |
+| **Sequential** | Simple pipelines, clear dependency order (research ? write ? publish) |
 | **Hierarchical** | Complex tasks where a manager agent decomposes work and delegates |
 
 ### Exercise
@@ -431,7 +431,7 @@ Build a 2-agent throwaway crew (researcher + writer) without looking at docs. Ru
 ### Message types
 
 ```
-Client → Server:
+Client ? Server:
   - initialize (handshake)
   - tools/list
   - tools/call
@@ -440,7 +440,7 @@ Client → Server:
   - prompts/list
   - prompts/get
 
-Server → Client:
+Server ? Client:
   - initialize.result
   - tools.list.result
   - tools.call.result
@@ -472,7 +472,7 @@ async def memory_stats(uri: str) -> str:
 
 ### Exercise
 
-Map your existing MCP server against the 3 primitives. Which tools does it expose? Which resources? Which prompts? Write this mapping down — you'll use it when discussing MCP in interviews.
+Map your existing MCP server against the 3 primitives. Which tools does it expose? Which resources? Which prompts? Write this mapping down � you'll use it when discussing MCP in interviews.
 
 ---
 
@@ -490,7 +490,7 @@ async def main():
             # List tools
             tools = await session.list_tools()
             for tool in tools.tools:
-                print(f"Tool: {tool.name} — {tool.description}")
+                print(f"Tool: {tool.name} � {tool.description}")
 
             # Call a tool
             result = await session.call_tool(
@@ -533,7 +533,7 @@ Stays in the context window. Automatically managed by the LLM API:
 ```python
 messages = [
     {"role": "system", "content": system_prompt},
-    {"role": "assistant", "content": "I found the membership fee is ₹12,000/year."},
+    {"role": "assistant", "content": "I found the membership fee is ?12,000/year."},
     {"role": "user", "content": "What about the joining fee?"},
 ]
 ```
@@ -561,8 +561,8 @@ def agent_with_memory(user_query: str, user_id: str):
 ### What your system is missing
 
 You have long-term memory (ChromaDB server). You're likely missing:
-- **Conversation summaries** — after N turns, summarize and store in memory
-- **Entity extraction** — extract key entities (project names, dates, decisions) and store them as structured memory
+- **Conversation summaries** � after N turns, summarize and store in memory
+- **Entity extraction** � extract key entities (project names, dates, decisions) and store them as structured memory
 
 ### Exercise
 
@@ -575,9 +575,9 @@ Identify what short-term memory your current agent pipelines are missing. Add a 
 ### Supervisor/Worker
 
 ```
-Supervisor agent ──▶ Sales agent
-                 ──▶ Follow-up agent
-                 ──▶ Report agent
+Supervisor agent --? Sales agent
+                 --? Follow-up agent
+                 --? Report agent
 ```
 
 Supervisor delegates tasks. Workers report back. Supervisor decides next action.
@@ -587,9 +587,9 @@ Supervisor delegates tasks. Workers report back. Supervisor decides next action.
 ### Peer-to-Peer
 
 ```
-Sales agent ◀──▶ Follow-up agent
-     │
-Follow-up agent ◀──▶ Report agent
+Sales agent ?--? Follow-up agent
+     �
+Follow-up agent ?--? Report agent
 ```
 
 Agents communicate directly. No central coordinator.
@@ -600,9 +600,9 @@ Agents communicate directly. No central coordinator.
 
 ```
 Supervisor
-  ├── Sales Agent: handles inquiries, booking requests
-  ├── Follow-up Agent: sends reminders, follow-ups
-  └── Report Agent: generates daily/weekly reports
+  +-- Sales Agent: handles inquiries, booking requests
+  +-- Follow-up Agent: sends reminders, follow-ups
+  +-- Report Agent: generates daily/weekly reports
 ```
 
 **Why supervisor/worker fits here:** The Supervisor maintains customer context. Sales doesn't need to know about reports. Report doesn't need to know about active sales.
@@ -681,7 +681,7 @@ Write 2 concrete evaluation checks for one of your agents. Don't just run it and
 | Step | Model | Input tokens | Output tokens | Cost |
 |------|-------|-------------|--------------|------|
 | Generate lyrics | GPT-4 | 300 | 200 | $0.009 + $0.012 = $0.021 |
-| Generate music API | ACE-Step | — | — | $0.005 (API call) |
+| Generate music API | ACE-Step | � | � | $0.005 (API call) |
 | Evaluate quality | GPT-4-mini | 500 | 50 | $0.00075 + $0.0003 = $0.001 |
 | Total per pipeline run | | | | ~$0.03 |
 
@@ -733,14 +733,14 @@ Replace the n8n orchestration of your Bhojpuri content pipeline with a LangGraph
 ### State graph design
 
 ```
-generate_lyrics ──▶ generate_music ──▶ generate_vocals ──▶ source_clips ──▶ compose_video
-                                                                                │
-                                                                          ┌─────┴─────┐
-                                                                          │           │
+generate_lyrics --? generate_music --? generate_vocals --? source_clips --? compose_video
+                                                                                �
+                                                                          +-----------+
+                                                                          �           �
                                                                       success       failure
-                                                                          │       (retry < 3)
-                                                                          │           │
-                                                                         END    handle_failure ──▶ generate_music (retry)
+                                                                          �       (retry < 3)
+                                                                          �           �
+                                                                         END    handle_failure --? generate_music (retry)
 ```
 
 ### Node implementations
@@ -784,25 +784,25 @@ def ffmpeg_compose_node(state: PipelineState) -> dict:
 
 ```
 purvanchal-flow-studio/
-├── pipeline/
-│   ├── state.py           # PipelineState TypedDict
-│   ├── graph.py           # StateGraph construction
-│   ├── nodes/
-│   │   ├── __init__.py
-│   │   ├── lyrics.py      # generate_lyrics_node
-│   │   ├── music.py       # ace_step_node
-│   │   ├── vocals.py      # coqui_xtts_node
-│   │   ├── clips.py       # moneyprinterturbo_node
-│   │   ├── compose.py     # ffmpeg_compose_node
-│   │   └── failure.py     # failure_recovery_node
-│   └── config.py          # Settings via pydantic-settings
-├── api/
-│   ├── main.py            # FastAPI app with pipeline endpoints
-│   └── schemas.py         # Request/response models
-├── .env.example           # API keys with placeholders
-├── Dockerfile
-├── docker-compose.yml
-└── README.md              # Architecture diagram, setup, demo
++-- pipeline/
+�   +-- state.py           # PipelineState TypedDict
+�   +-- graph.py           # StateGraph construction
+�   +-- nodes/
+�   �   +-- __init__.py
+�   �   +-- lyrics.py      # generate_lyrics_node
+�   �   +-- music.py       # ace_step_node
+�   �   +-- vocals.py      # coqui_xtts_node
+�   �   +-- clips.py       # moneyprinterturbo_node
+�   �   +-- compose.py     # ffmpeg_compose_node
+�   �   +-- failure.py     # failure_recovery_node
+�   +-- config.py          # Settings via pydantic-settings
++-- api/
+�   +-- main.py            # FastAPI app with pipeline endpoints
+�   +-- schemas.py         # Request/response models
++-- .env.example           # API keys with placeholders
++-- Dockerfile
++-- docker-compose.yml
++-- README.md              # Architecture diagram, setup, demo
 ```
 
 ### n8n vs LangGraph comparison write-up
@@ -811,7 +811,7 @@ Create `docs/n8n-vs-langgraph.md` covering:
 
 | Dimension | n8n | LangGraph |
 |-----------|-----|-----------|
-| **Prototyping speed** | Fast — drag, connect, done | Slower — code, debug, compile |
+| **Prototyping speed** | Fast � drag, connect, done | Slower � code, debug, compile |
 | **Conditional logic** | Visual IF nodes | Arbitrary Python functions |
 | **State persistence** | None (no checkpointer) | Built-in checkpointer |
 | **Crash recovery** | Full restart | Resume from failed node |
@@ -851,7 +851,7 @@ from agents import Agent, Runner, function_tool
 @function_tool
 def get_weather(location: str) -> str:
     """Get the current weather for a location."""
-    return f"The weather in {location} is 72°F and sunny."
+    return f"The weather in {location} is 72�F and sunny."
 
 agent = Agent(
     name="Weather agent",
@@ -861,7 +861,7 @@ agent = Agent(
 
 result = Runner.run_sync(agent, "What's the weather in Dubai?")
 print(result.final_output)
-# The weather in Dubai is 72°F and sunny.
+# The weather in Dubai is 72�F and sunny.
 ```
 
 ### Multi-agent with handoffs
@@ -887,7 +887,7 @@ triage_agent = Agent(
     handoffs=[spanish_agent, english_agent],
 )
 
-result = Runner.run_sync(triage_agent, "Hola, ¿cómo estás?")
+result = Runner.run_sync(triage_agent, "Hola, �c�mo est�s?")
 print(result.final_output)
 # "Hello, how are you?"
 ```
@@ -928,12 +928,12 @@ from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("Advanced Memory Server")
 
-# Tool — action
+# Tool � action
 @mcp.tool()
 def search_memories(query: str) -> list[dict]:
     return memory_store.search(query, top_k=5)
 
-# Resource — readable data
+# Resource � readable data
 @mcp.resource("memory://recent/{count}")
 def recent_memories(count: int = 10) -> str:
     memories = memory_store.get_recent(count)
@@ -942,7 +942,7 @@ def recent_memories(count: int = 10) -> str:
         for m in memories
     )
 
-# Resource — static file
+# Resource � static file
 @mcp.resource("config://prompts/analyze")
 def analyze_prompt() -> str:
     return """Analyze the following information and provide:
@@ -1023,6 +1023,35 @@ Add at least 1 resource and 1 prompt template to your MCP memory server. Test wi
 
 ---
 
+
+interface PromptTemplate { name: string; template: string; variables: string[]; version: string }
+class PromptEngine {
+  private templates: Map<string,PromptTemplate> = new Map()
+  register(t: PromptTemplate): void { this.templates.set(t.name, t) }
+  render(name: string, vars: Record<string,string>): string {
+    const t = this.templates.get(name); if(!t) throw new Error(`Template ${name} not found`)
+    let result = t.template
+    for(const v of t.variables) { if(vars[v] === undefined) throw new Error(`Variable ${v} not provided`); result = result.replace(`{{${v}}}`, vars[v]) }
+    return result
+  }
+  listVersions(): string[] { return Array.from(this.templates.values()).map(t => `${t.name}@${t.version}`) }
+  diff(t1: string, t2: string): string { const a = t1.split("\n"), b = t2.split("\n")
+    const changes: string[] = []; const max = Math.max(a.length,b.length)
+    for(let i=0;i<max;i++) if(a[i] !== b[i]) changes.push(`L${i+1}: ${a[i]??""} | ${b[i]??""}`)
+    return changes.join("\n")
+  }
+}
+class ChatComposer {
+  private system = ""; private examples: Array<{input:string;output:string}> = []
+  setSystem(s: string): this { this.system = s; return this }
+  addExample(input: string, output: string): this { this.examples.push({input,output}); return this }
+  compose(userInput: string): Array<{role:string;content:string}> {
+    const msgs: Array<{role:string;content:string}> = [{role:"system",content:this.system}]
+    for(const ex of this.examples) { msgs.push({role:"user",content:ex.input}); msgs.push({role:"assistant",content:ex.output}) }
+    msgs.push({role:"user",content:userInput}); return msgs
+  }
+}
+export { PromptTemplate, PromptEngine, ChatComposer }
 ## Phase 3 Done Checkpoint
 
 Before moving to Phase 4, you should be able to:
@@ -1041,4 +1070,4 @@ Before moving to Phase 4, you should be able to:
 
 **Estimated time to checkpoint:** 35-40 hours over 3 weeks.
 
-[Next: Phase 4 — Production Hardening](05-phase4-production-hardening.md)
+[Next: Phase 4 � Production Hardening](05-phase4-production-hardening.md)

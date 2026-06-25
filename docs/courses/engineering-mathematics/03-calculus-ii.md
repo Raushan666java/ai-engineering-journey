@@ -59,7 +59,7 @@ A function $f: \mathbb{R}^n \to \mathbb{R}$ assigns a real number to each point 
 
 $$\frac{\partial f}{\partial x}(a,b) = \lim_{h \to 0} \frac{f(a+h, b) - f(a,b)}{h}$$
 
-Similarly for $\frac{\partial f}{\partial y}$ — differentiate with respect to $y$, treating $x$ as constant.
+Similarly for $\frac{\partial f}{\partial y}$ ? differentiate with respect to $y$, treating $x$ as constant.
 
 **Geometric Interpretation:** $\frac{\partial f}{\partial x}(a,b)$ is the slope of the tangent line to the curve obtained by intersecting $z = f(x,y)$ with the plane $y = b$.
 
@@ -136,7 +136,7 @@ $$\nabla f = \lambda \nabla g \quad \text{and} \quad g(x,y) = 0$$
 
 where $\lambda$ is the Lagrange multiplier. This gives a system of 3 equations in 3 unknowns.
 
-**Meaning of $\lambda$:** $\frac{df}{dg} = \lambda$ — the Lagrange multiplier represents the rate of change of the optimal value as the constraint changes.
+**Meaning of $\lambda$:** $\frac{df}{dg} = \lambda$ ? the Lagrange multiplier represents the rate of change of the optimal value as the constraint changes.
 
 ### 3.7 Double Integrals
 
@@ -225,7 +225,7 @@ $$\nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k
 
 where $\mathbf{r}(t)$ parametrizes curve $C$ from $t = a$ to $t = b$.
 
-**Scalar Line Integral:** $\int_C f\,ds = \int_a^b f(\mathbf{r}(t)) \|\mathbf{r}'(t)\|\,dt$ — integrates scalar function along curve.
+**Scalar Line Integral:** $\int_C f\,ds = \int_a^b f(\mathbf{r}(t)) \|\mathbf{r}'(t)\|\,dt$ ? integrates scalar function along curve.
 
 **Fundamental Theorem for Line Integrals:** If $\mathbf{F} = \nabla f$:
 
@@ -267,7 +267,7 @@ $$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_E (\nabla \cdot \mathbf{F})\,dV$
 
 $$\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}$$
 
-**Unified View — Generalized Stokes' Theorem:**
+**Unified View ? Generalized Stokes' Theorem:**
 
 $$\int_{\partial M} \omega = \int_M d\omega$$
 
@@ -363,9 +363,9 @@ Now compute the flux directly. On the sphere, $\mathbf{n} = \langle x, y, z \ran
 
 $$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_S \langle x,y,z \rangle \cdot \langle x,y,z \rangle\,dS = \iint_S (x^2 + y^2 + z^2)\,dS = \iint_S 1\,dS = 4\pi$$
 
-Both equal $4\pi$. Verified ✓
+Both equal $4\pi$. Verified ?
 
-### Example 7: Application — Gradient Descent in 2D
+### Example 7: Application ? Gradient Descent in 2D
 
 For $f(x,y) = x^2 + 2y^2$, starting at $(1,1)$, compute one step of gradient descent with $\eta = 0.1$.
 
@@ -466,7 +466,7 @@ function doubleIntegral(
   return total;
 }
 
-// Integrate f(x,y) = x + 2y over region: 0 ≤ x ≤ 2, x² ≤ y ≤ 2x
+// Integrate f(x,y) = x + 2y over region: 0 = x = 2, x? = y = 2x
 const result = doubleIntegral(
   (x, y) => x + 2 * y,
   0, 2,
@@ -474,7 +474,7 @@ const result = doubleIntegral(
   (x) => 2 * x,
   200, 200
 );
-console.log(`Double integral ≈ ${result.toFixed(4)} (expected 5.6)`);
+console.log(`Double integral ? ${result.toFixed(4)} (expected 5.6)`);
 ```
 
 ## Real-World Application: Backpropagation as the Chain Rule
@@ -515,13 +515,13 @@ function gradientDescent(
   return { x, fx: f(x), iterations: maxIter };
 }
 
-// Minimize f(x,y) = x² + 2y²: gradient = [2x, 4y], min at (0,0)
+// Minimize f(x,y) = x? + 2y?: gradient = [2x, 4y], min at (0,0)
 const quad = (x: Vec) => x[0] ** 2 + 2 * x[1] ** 2;
 const gradQuad = (x: Vec): Vec => [2 * x[0], 4 * x[1]];
 const { x: minPt, fx: minVal, iterations: iters } = gradientDescent(quad, gradQuad, [5, 3], 0.1, 500);
 console.log(`GD: min at (${minPt[0].toFixed(4)}, ${minPt[1].toFixed(4)}), f=${minVal.toFixed(6)}, iters=${iters}`);
 
-// Minimize Rosenbrock f(x,y) = (1-x)² + 100(y-x²)², known as banana function
+// Minimize Rosenbrock f(x,y) = (1-x)? + 100(y-x?)?, known as banana function
 const rosenbrock = (x: Vec) => (1 - x[0]) ** 2 + 100 * (x[1] - x[0] ** 2) ** 2;
 const gradRosen = (x: Vec): Vec => [
   -2 * (1 - x[0]) - 400 * x[0] * (x[1] - x[0] ** 2),
@@ -550,12 +550,12 @@ function doubleIntegral(
   return total;
 }
 
-// ∫₀¹∫₀¹ (x² + y²) dy dx = 2/3 ≈ 0.6667
+// ?0??0? (x? + y?) dy dx = 2/3 ? 0.6667
 const f2d = (x: number, y: number) => x * x + y * y;
 const r1 = doubleIntegral(f2d, 0, 1, () => 0, () => 1, 200, 200);
-console.log(`∬(x²+y²) over [0,1]²: ${r1.toFixed(4)} (expected: 0.6667)`);
+console.log(`?(x?+y?) over [0,1]?: ${r1.toFixed(4)} (expected: 0.6667)`);
 
-// ∬_D 1 dA over triangle: 0≤x≤1, 0≤y≤x → area = 1/2
+// ?_D 1 dA over triangle: 0=x=1, 0=y=x ? area = 1/2
 const triArea = doubleIntegral(() => 1, 0, 1, x => 0, x => x, 200, 200);
 console.log(`Triangle area: ${triArea.toFixed(4)} (expected: 0.5)`);
 
@@ -580,7 +580,7 @@ function tripleIntegral(
   return total;
 }
 
-// Unit sphere volume: ∭ 1 dV = 4π/3 ≈ 4.18879
+// Unit sphere volume: ? 1 dV = 4p/3 ? 4.18879
 const sphereVol = tripleIntegral(
   () => 1, -1, 1,
   x => -Math.sqrt(Math.max(0, 1 - x * x)), x => Math.sqrt(Math.max(0, 1 - x * x)),
@@ -641,7 +641,7 @@ function doubleIntegral(
   return sum;
 }
 const vol = doubleIntegral((x, y) => x * x + y * y, [0, 1], [0, 1], 100, 100);
-console.log('∬(x²+y²) dA over [0,1]²:', vol.toFixed(4), '(expected: 2/3 ≈ 0.6667)');
+console.log('?(x?+y?) dA over [0,1]?:', vol.toFixed(4), '(expected: 2/3 ? 0.6667)');
 
 // --- Jacobian Determinant ---
 function jacobianDet(
@@ -655,9 +655,9 @@ function jacobianDet(
   const [xv, yv] = transform(u, v + h);
   return ((xu - x0) / h) * ((yv - y0) / h) - ((xv - x0) / h) * ((yu - y0) / h);
 }
-// Polar: x = r cos θ, y = r sin θ → Jacobian = r
-const polarJ = jacobianDet((r, θ) => [r * Math.cos(θ), r * Math.sin(θ)], 2, Math.PI / 4);
-console.log('\nPolar Jacobian at (2, π/4):', polarJ.toFixed(4), '(expected: 2)');
+// Polar: x = r cos ?, y = r sin ? ? Jacobian = r
+const polarJ = jacobianDet((r, ?) => [r * Math.cos(?), r * Math.sin(?)], 2, Math.PI / 4);
+console.log('\nPolar Jacobian at (2, p/4):', polarJ.toFixed(4), '(expected: 2)');
 
 // --- Lagrange Multipliers (2D numeric) ---
 function lagrangeMultiplier(
@@ -667,41 +667,133 @@ function lagrangeMultiplier(
   guess: [number, number],
   learningRate: number = 0.01,
   iterations: number = 1000
-): { x: number; y: number; λ: number } {
-  let x = guess[0], y = guess[1], λ = 0;
+): { x: number; y: number; ?: number } {
+  let x = guess[0], y = guess[1], ? = 0;
   const h = 1e-6;
   for (let i = 0; i < iterations; i++) {
     const fx = (f(x + h, y) - f(x - h, y)) / (2 * h);
     const fy = (f(x, y + h) - f(x, y - h)) / (2 * h);
     const gx = (g(x + h, y) - g(x - h, y)) / (2 * h);
     const gy = (g(x, y + h) - g(x, y - h)) / (2 * h);
-    x -= learningRate * (fx - λ * gx);
-    y -= learningRate * (fy - λ * gy);
-    λ += learningRate * (g(x, y) - gTarget);
+    x -= learningRate * (fx - ? * gx);
+    y -= learningRate * (fy - ? * gy);
+    ? += learningRate * (g(x, y) - gTarget);
   }
-  return { x: +x.toFixed(4), y: +y.toFixed(4), λ: +λ.toFixed(4) };
+  return { x: +x.toFixed(4), y: +y.toFixed(4), ?: +?.toFixed(4) };
 }
 // Maximize f(x,y)=xy subject to x+y=1
 const lm = lagrangeMultiplier((x, y) => x * y, (x, y) => x + y, 1, [0.3, 0.7]);
 console.log('\nLagrange: max xy s.t. x+y=1:', `x=${lm.x}, y=${lm.y}, f=${(+lm.x * +lm.y).toFixed(4)}`);
 
 // --- Triple Integral in Spherical Coordinates ---
-function sphericalVolume(ρFn: (θ: number, φ: number) => number): number {
+function sphericalVolume(?Fn: (?: number, f: number) => number): number {
   const n = 50;
   let vol = 0;
-  const dθ = 2 * Math.PI / n, dφ = Math.PI / n;
+  const d? = 2 * Math.PI / n, df = Math.PI / n;
   for (let i = 0; i < n; i++)
     for (let j = 0; j < n; j++) {
-      const θ = (i + 0.5) * dθ, φ = (j + 0.5) * dφ;
-      const ρ = ρFn(θ, φ);
-      vol += (ρ ** 3 / 3) * Math.sin(φ) * dθ * dφ;
+      const ? = (i + 0.5) * d?, f = (j + 0.5) * df;
+      const ? = ?Fn(?, f);
+      vol += (? ** 3 / 3) * Math.sin(f) * d? * df;
     }
   return vol;
 }
-const sphereVol = sphericalVolume((θ, φ) => 1); // unit sphere
-console.log('\nUnit sphere volume (spherical):', sphereVol.toFixed(4), '(expected: 4π/3 ≈ 4.1888)');
+const sphereVol = sphericalVolume((?, f) => 1); // unit sphere
+console.log('\nUnit sphere volume (spherical):', sphereVol.toFixed(4), '(expected: 4p/3 ? 4.1888)');
 ```
 
+
+// calculus ii
+// linear-algebra-calculus implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'calculus ii', data: { topic: 'linear-algebra-calculus' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// calculus ii - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'engineering-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'engineering-mathematics', chapter: 'calculus ii' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('engineering-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Partial derivatives compute rates of change with respect to one variable at a time
@@ -795,12 +887,12 @@ class MultivariableCalculus {
 
 ```mermaid
 flowchart LR
-    A[Start θ₀] --> B[Compute ∇f(θ)]
-    B --> C{‖∇f(θ)‖ < ε?}
+    A[Start ?0] --> B[Compute ?f(?)]
+    B --> C{??f(?)? < e?}
     C -->|Yes| D[Converged]
-    C -->|No| E[θ ← θ − α∇f(θ)]
+    C -->|No| E[? ? ? - a?f(?)]
     E --> B
-    D --> F[Return θ*]
+    D --> F[Return ?*]
 ```
 
 ### Mermaid: Double Integral Over a Region
@@ -809,8 +901,8 @@ flowchart LR
 flowchart TD
     A[Region R] --> B[Type I: x-simple]
     A --> C[Type II: y-simple]
-    B --> D[∫ₐᵇ ∫_{g₁(x)}^{g₂(x)} f dy dx]
-    C --> E[∫ₐᵇ ∫_{h₁(y)}^{h₂(y)} f dx dy]
+    B --> D[??? ?_{g1(x)}^{g2(x)} f dy dx]
+    C --> E[??? ?_{h1(y)}^{h2(y)} f dx dy]
     D --> F[Evaluate inner integral]
     F --> G[Evaluate outer integral]
     E --> H[Evaluate inner integral]

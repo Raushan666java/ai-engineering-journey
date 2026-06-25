@@ -1,7 +1,7 @@
 # Chapter 7: State Machines
 
-> **Prereq:** Chapter 6 (Sequential Circuits) — flip-flops provide the state memory for state machines.
-> **Next:** Chapter 8 (Registers and Counters) — application-specific sequential structures.
+> **Prereq:** Chapter 6 (Sequential Circuits) ? flip-flops provide the state memory for state machines.
+> **Next:** Chapter 8 (Registers and Counters) ? application-specific sequential structures.
 
 ## Learning Objectives
 
@@ -38,13 +38,13 @@ graph TD
 
 ### 7.1.1 Formal Definition
 
-An FSM is a 6-tuple (Σ, Γ, S, s₀, δ, λ) where:
-- Σ = input alphabet
-- Γ = output alphabet
+An FSM is a 6-tuple (S, G, S, s0, d, ?) where:
+- S = input alphabet
+- G = output alphabet
 - S = finite set of states
-- s₀ ∈ S = initial state
-- δ: S × Σ → S = next-state function (transition function)
-- λ: S → Γ (Moore) or λ: S × Σ → Γ (Mealy) = output function
+- s0 ? S = initial state
+- d: S ? S ? S = next-state function (transition function)
+- ?: S ? G (Moore) or ?: S ? S ? G (Mealy) = output function
 
 ### 7.1.2 Mealy vs Moore Models
 
@@ -105,10 +105,10 @@ graph TD
 
 | Present State | Next State (X=0) | Next State (X=1) | Output Z |
 |--------------|-----------------|-----------------|----------|
-| S₀           | S₀              | S₁              | 0        |
-| S₁           | S₂              | S₁              | 0        |
-| S₂           | S₀              | S₃              | 0        |
-| S₃           | S₂              | S₁              | 1        |
+| S0           | S0              | S1              | 0        |
+| S1           | S2              | S1              | 0        |
+| S2           | S0              | S3              | 0        |
+| S3           | S2              | S1              | 1        |
 
 ```typescript
 type State = 'S0' | 'S1' | 'S2' | 'S3';
@@ -189,7 +189,7 @@ console.log(sequenceDetectorMealy(test).join('')); // 0000001001 (output on same
 
 ## 7.3 State Minimisation
 
-Reducing the number of states simplifies the combinational logic and reduces the flip-flop count (log₂N flops for N states).
+Reducing the number of states simplifies the combinational logic and reduces the flip-flop count (log2N flops for N states).
 
 ### 7.3.1 Implication Table Method
 
@@ -202,7 +202,7 @@ Algorithm:
 3. For remaining pairs, list implied pairs from next-state transitions
 4. Propagate: if any implied pair is incompatible, mark this pair
 5. Repeat step 4 until no changes occur
-6. Unmarked pairs are equivalent — merge them
+6. Unmarked pairs are equivalent ? merge them
 ```
 
 ```typescript
@@ -278,10 +278,10 @@ function minimiseMealy(table: StateTable): string[][] {
 
 An alternative approach that partitions states into equivalence classes:
 
-1. P₀ = partition by output values
-2. P₁ = partition by 1-step next-state behaviour (states that transition to same P₀-class)
-3. Pₖ₊₁ = partition by k+1-step behaviour
-4. Stop when Pₖ = Pₖ₊₁
+1. P0 = partition by output values
+2. P1 = partition by 1-step next-state behaviour (states that transition to same P0-class)
+3. P??1 = partition by k+1-step behaviour
+4. Stop when P? = P??1
 
 ## 7.4 State Encoding
 
@@ -292,12 +292,12 @@ State encoding assigns binary codes to symbolic states. The choice of encoding d
 Assigns consecutive binary values to states.
 
 ```
-S₀ = 00, S₁ = 01, S₂ = 10, S₃ = 11
+S0 = 00, S1 = 01, S2 = 10, S3 = 11
 ```
 
 | Pros | Cons |
 |------|------|
-| Fewest flip-flops (log₂N) | More combinational logic |
+| Fewest flip-flops (log2N) | More combinational logic |
 | Natural for counters | Multiple bit transitions between states |
 
 ### 7.4.2 One-Hot Encoding
@@ -305,7 +305,7 @@ S₀ = 00, S₁ = 01, S₂ = 10, S₃ = 11
 Each state gets its own flip-flop; exactly one flip-flop is high at any time.
 
 ```
-S₀ = 0001, S₁ = 0010, S₂ = 0100, S₃ = 1000
+S0 = 0001, S1 = 0010, S2 = 0100, S3 = 1000
 ```
 
 | Pros | Cons |
@@ -338,7 +338,7 @@ class OneHotFSM {
 Consecutive states differ by exactly one bit.
 
 ```
-S₀ = 000, S₁ = 001, S₂ = 011, S₃ = 010, S₄ = 110, S₅ = 111
+S0 = 000, S1 = 001, S2 = 011, S3 = 010, S4 = 110, S5 = 111
 ```
 
 | Pros | Cons |
@@ -362,18 +362,18 @@ S₀ = 000, S₁ = 001, S₂ = 011, S₃ = 010, S₄ = 110, S₅ = 111
 
 ### 7.5.1 D Flip-Flop Implementation
 
-D flip-flops are the simplest: Q⁺ = D, so the next-state equations are directly the D inputs.
+D flip-flops are the simplest: Q? = D, so the next-state equations are directly the D inputs.
 
-Using the 101 Moore detector with binary encoding (S₀=00, S₁=01, S₂=10, S₃=11):
+Using the 101 Moore detector with binary encoding (S0=00, S1=01, S2=10, S3=11):
 
 ```
-State bits: Q₁, Q₀
-Next state: D₁, D₀
+State bits: Q1, Q0
+Next state: D1, D0
 
 From the state table:
-D₁ = Q₁·Q₀'·X + Q₁'·Q₀·X + Q₁·Q₀·X'
-D₀ = Q₁'·Q₀'·X + Q₁'·Q₀·X' + Q₁·Q₀·X
-Z  = Q₁·Q₀
+D1 = Q1?Q0'?X + Q1'?Q0?X + Q1?Q0?X'
+D0 = Q1'?Q0'?X + Q1'?Q0?X' + Q1?Q0?X
+Z  = Q1?Q0
 ```
 
 ```typescript
@@ -391,11 +391,11 @@ JK flip-flops often require less external logic because of their toggle capabili
 
 ```
 From excitation table:
-J₁ = Q₀·X + Q₀'·X = X
-K₁ = Q₀·X' + Q₀'·X' = X'
-J₀ = Q₁'·X + Q₁·X = X
-K₀ = Q₁'·X + Q₁·X' + Q₁'·X' = X' + Q₁
-Z  = Q₁·Q₀
+J1 = Q0?X + Q0'?X = X
+K1 = Q0?X' + Q0'?X' = X'
+J0 = Q1'?X + Q1?X = X
+K0 = Q1'?X + Q1?X' + Q1'?X' = X' + Q1
+Z  = Q1?Q0
 ```
 
 ```typescript
@@ -414,8 +414,8 @@ function jkImpl(Q1: number, Q0: number, X: number) {
 T flip-flops are useful when many transitions are toggles.
 
 ```
-T₁ = Q₁⁺ ⊕ Q₁
-T₀ = Q₀⁺ ⊕ Q₀
+T1 = Q1? ? Q1
+T0 = Q0? ? Q0
 ```
 
 ## 7.6 ASM Charts
@@ -424,9 +424,9 @@ The **Algorithmic State Machine (ASM) chart** is a flowchart-like representation
 
 ```mermaid
 graph TD
-    START([Start]) --> SB[State Box<br>State S₀]
+    START([Start]) --> SB[State Box<br>State S0]
     SB --> DC{Decision<br>Box<br>Test X}
-    DC --> |0| SB2[State Box<br>State S₁]
+    DC --> |0| SB2[State Box<br>State S1]
     DC --> |1| CO[Conditional<br>Output Box<br>Z = 1]
     CO --> SB2
     SB2 --> SB
@@ -603,7 +603,7 @@ class VendingMachineFSM {
 
 ## 7.8 Lock-Up States and Self-Starting Design
 
-A **lock-up state** is an unused state that the FSM enters (due to noise or power-up) and cannot leave without a reset. All FSMs should be **self-starting** — every state (including unused ones) must have a transition path to a valid state.
+A **lock-up state** is an unused state that the FSM enters (due to noise or power-up) and cannot leave without a reset. All FSMs should be **self-starting** ? every state (including unused ones) must have a transition path to a valid state.
 
 ```typescript
 // Self-starting check: verify all unused state codes transition to valid states
@@ -671,11 +671,11 @@ class GlitchFreeMealy {
 
 ## Practical Takeaways
 
-1. **Start with a state diagram** — it forces you to enumerate all states and transitions before coding
-2. **One-hot for FPGAs, binary for ASICs** — match the encoding to the target technology
-3. **Make FSMs self-starting** — always verify that unused states transition to a known valid state
-4. **Register Mealy outputs** — registered outputs eliminate glitches without adding latency
-5. **Separate next-state and output logic** — clean RTL code matches the structural diagram
+1. **Start with a state diagram** ? it forces you to enumerate all states and transitions before coding
+2. **One-hot for FPGAs, binary for ASICs** ? match the encoding to the target technology
+3. **Make FSMs self-starting** ? always verify that unused states transition to a known valid state
+4. **Register Mealy outputs** ? registered outputs eliminate glitches without adding latency
+5. **Separate next-state and output logic** ? clean RTL code matches the structural diagram
 
 ## TypeScript Implementations
 
@@ -807,6 +807,98 @@ console.log('\nVending Machine:');
 [10, 5, 25].forEach(c => console.log(`Insert ${c}c:`, JSON.stringify(vending.insert(c))));
 ```
 
+
+// state machines
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'state machines', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// state machines - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'state machines' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Finite state machines provide the theoretical framework for sequential control in digital systems. This chapter covered Mealy and Moore models, the complete design flow from state diagram to gate-level implementation, state minimisation using implication tables, encoding strategies (binary, one-hot, Gray), and practical implementation with D, JK, and T flip-flops. ASM charts bridge the gap between algorithms and hardware, while design patterns for traffic light controllers, UART receivers, and vending machines demonstrate real-world applications. The next chapter examines specialised sequential structures: registers and counters.
@@ -821,7 +913,7 @@ d) The next state only
 
 **Q2.** One-hot encoding requires how many flip-flops for N states?
 a) N
-b) log₂N
+b) log2N
 c) 2N
 d) N/2
 

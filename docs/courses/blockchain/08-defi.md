@@ -20,7 +20,7 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
 | DeFi Ecosystem | Financial services without intermediaries | Built entirely on smart contracts |
-| AMMs | x × y = k constant product formula | No order book needed, but price slippage |
+| AMMs | x � y = k constant product formula | No order book needed, but price slippage |
 | Stablecoins | Fiat-backed, crypto-collateralized, algorithmic | Each type has different trust assumptions |
 | Yield Farming | Moving assets across protocols for returns | High APY but high risk, impermanent loss |
 | Flash Loans | Uncollateralized loans within one transaction | Powerful tool; also exploited in attacks |
@@ -87,8 +87,8 @@ flowchart TB
     end
     subgraph AMM["Automated Market Maker"]
         Pool["Liquidity Pool<br/>10 ETH + 20,000 USDC"]
-        Formula["x × y = k<br/>10 × 20,000 = 200,000"]
-        Trade["Trade: 1 ETH → get USDC<br/>New pool: 11 ETH + 18,181 USDC<br/>Trader receives: 1,818 USDC"]
+        Formula["x � y = k<br/>10 � 20,000 = 200,000"]
+        Trade["Trade: 1 ETH ? get USDC<br/>New pool: 11 ETH + 18,181 USDC<br/>Trader receives: 1,818 USDC"]
     end
     
     Buyers --> Match
@@ -97,7 +97,7 @@ flowchart TB
     Formula --> Trade
 ```
 
-**Constant Product Formula:** `x × y = k`
+**Constant Product Formula:** `x � y = k`
 - `x` and `y` are the quantities of two tokens in the pool
 - `k` must remain constant
 - If you buy `x`, its price increases (because its quantity in the pool decreases)
@@ -122,7 +122,7 @@ function calculateOutput(
 
 // Example: ETH/USDC pool (10 ETH, 20,000 USDC)
 const output = calculateOutput(1, 10, 20000);
-console.log(`1 ETH → ${output.toFixed(2)} USDC`);  // ~1,818 USDC (slippage of ~9%)
+console.log(`1 ETH ? ${output.toFixed(2)} USDC`);  // ~1,818 USDC (slippage of ~9%)
 ```
 
 **Liquidity Provider (LP) tokens:** When you deposit tokens into a pool, you receive LP tokens representing your share. You earn fees from trades.
@@ -142,15 +142,15 @@ function calculateImpermanentLoss(priceRatio: number): number {
 const losses = [1, 1.25, 1.5, 2, 3, 4, 5];
 for (const r of losses) {
     const il = calculateImpermanentLoss(r);
-    console.log(`${r}x price change → IL: ${(il * 100).toFixed(2)}%`);
+    console.log(`${r}x price change ? IL: ${(il * 100).toFixed(2)}%`);
 }
-// 1x  → IL: 0%
-// 1.25x → IL: ~0.6%
-// 1.5x → IL: ~2.0%
-// 2x  → IL: ~5.7%
-// 3x  → IL: ~13.4%
-// 4x  → IL: ~20.0%
-// 5x  → IL: ~25.5%
+// 1x  ? IL: 0%
+// 1.25x ? IL: ~0.6%
+// 1.5x ? IL: ~2.0%
+// 2x  ? IL: ~5.7%
+// 3x  ? IL: ~13.4%
+// 4x  ? IL: ~20.0%
+// 5x  ? IL: ~25.5%
 ```
 
 ### Lending Protocols
@@ -204,7 +204,7 @@ const alicePosition: LendingPosition = {
 
 console.log(calculateHealthFactor(alicePosition));  // 1.375
 // If ETH drops to $1,500:
-// collat.value = $75K, HF = (75K * 0.825) / 60K = 1.03 — close to liquidation!
+// collat.value = $75K, HF = (75K * 0.825) / 60K = 1.03 � close to liquidation!
 ```
 
 ### Stablecoin Types
@@ -244,9 +244,9 @@ flowchart TB
 Yield farming is the practice of moving assets across DeFi protocols to maximize returns.
 
 **Common strategies:**
-1. **Liquidity Provision:** Deposit tokens into AMM pools → earn trading fees + incentives
-2. **Lending:** Supply assets to lending protocols → earn interest + token rewards
-3. **Staking:** Lock tokens in a protocol → earn protocol fees + inflation rewards
+1. **Liquidity Provision:** Deposit tokens into AMM pools ? earn trading fees + incentives
+2. **Lending:** Supply assets to lending protocols ? earn interest + token rewards
+3. **Staking:** Lock tokens in a protocol ? earn protocol fees + inflation rewards
 4. **Auto-compounding:** Use vaults (Yearn) that automatically reinvest rewards
 
 ```mermaid
@@ -294,8 +294,8 @@ interface FlashLoanCallback {
 // Flash loan arbitrage example
 async function executeFlashLoanArbitrage() {
     // 1. Borrow $10M USDC via flash loan
-    // 2. Swap USDC → ETH on DEX A (price: $2000)
-    // 3. Swap ETH → USDC on DEX B (price: $2020)
+    // 2. Swap USDC ? ETH on DEX A (price: $2000)
+    // 3. Swap ETH ? USDC on DEX B (price: $2020)
     // 4. Profit = 0.99% (minus fees)
     // 5. Repay flash loan + fee (~0.09%)
     // 6. Keep profit (~$90,000)
@@ -315,7 +315,7 @@ async function executeFlashLoanArbitrage() {
 
 ### DeFi Composability (Money Legos)
 
-DeFi's power comes from **composability** — protocols can be combined like Lego bricks:
+DeFi's power comes from **composability** � protocols can be combined like Lego bricks:
 
 ```mermaid
 flowchart TB
@@ -342,7 +342,7 @@ A **Decentralized Autonomous Organization (DAO)** is an organization governed by
 | Model | Description | Example | Pros | Cons |
 |-------|-------------|---------|------|------|
 | Token-based | 1 token = 1 vote | Uniswap | Simple, aligned with economic stake | Plutocracy, whale dominance |
-| Quadratic | Cost = votes² | Gitcoin | Better minority representation | Complex, Sybil-prone |
+| Quadratic | Cost = votes� | Gitcoin | Better minority representation | Complex, Sybil-prone |
 | Delegated | Delegate voting power | Compound | More informed voting | Potential delegate centralization |
 | Multisig | M-of-N signers | Gnosis Safe | Fast execution | Trusted signers needed |
 
@@ -410,15 +410,15 @@ NFTs (Non-Fungible Tokens) represent unique digital assets on the blockchain.
 
 ### Example 1: Trading on Uniswap
 
-A pool has 10 ETH and 20,000 USDC. `k = 10 × 20,000 = 200,000`.
+A pool has 10 ETH and 20,000 USDC. `k = 10 � 20,000 = 200,000`.
 
 Alice wants to sell 1 ETH.
 
 1. New ETH quantity = 11 (10 + 1).
-2. New USDC quantity = 200,000 / 11 ≈ 18,181.8.
-3. With fee: `Δy = y - (k / (x + Δx))` where Δx includes 0.3% fee.
+2. New USDC quantity = 200,000 / 11 � 18,181.8.
+3. With fee: `?y = y - (k / (x + ?x))` where ?x includes 0.3% fee.
 4. With 0.997 multiplier: Alice receives ~1,818 USDC.
-5. Price impact: Without AMM, 1 ETH = $2,000. Alice receives $1,818 — a slippage of ~9%.
+5. Price impact: Without AMM, 1 ETH = $2,000. Alice receives $1,818 � a slippage of ~9%.
 
 ```typescript
 function uniswapTrade(
@@ -480,7 +480,7 @@ function simulateImpermanentLoss(
     const initialUsdcValue = initialUsdc;
     const initialEthValue = initialEth * (initialUsdc / initialEth) / 2;
     
-    // HODL value = initial value × price change
+    // HODL value = initial value � price change
     const hodlEthValue = initialEth * ethPriceChange;
     const hodlTotal = hodlEthValue + initialUsdcValue;
     
@@ -502,7 +502,7 @@ console.log(`LP: $${result.lp.toFixed(2)}`);
 console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 ```
 
-> **One-Sentence Takeaway:** DeFi composability means any protocol can plug into any other like Lego bricks — but this also means a vulnerability in one contract can cascade across the entire ecosystem.
+> **One-Sentence Takeaway:** DeFi composability means any protocol can plug into any other like Lego bricks � but this also means a vulnerability in one contract can cascade across the entire ecosystem.
 
 > **Pro Tip:** When providing liquidity to an AMM, use a calculator to estimate impermanent loss before depositing. For a 2x price change, impermanent loss is ~5.7%; for 5x, it's ~25.5%.
 
@@ -514,7 +514,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| AMM (Uniswap) | x × y = k constant product | No order book, infinite liquidity | Token swaps |
+| AMM (Uniswap) | x � y = k constant product | No order book, infinite liquidity | Token swaps |
 | Order Book (CEX) | Buy/sell limit orders | Better price discovery | Professional trading |
 | DAI | Crypto-collateralized stablecoin | Over-collateralized, decentralized | Lending, stable savings |
 | USDC | Fiat-backed stablecoin | Centralized, audited reserves | Payments, trading pairs |
@@ -527,7 +527,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 | Category | Key Concepts | Notes |
 |----------|-------------|-------|
-| **AMM Formula** | x × y = k | Larger pools = less slippage |
+| **AMM Formula** | x � y = k | Larger pools = less slippage |
 | **Impermanent Loss** | Loss vs holding during price divergence | 2x change = 5.7% IL |
 | **Stablecoin Types** | Fiat-backed, crypto-collateralized, algorithmic | Different trust and risk profiles |
 | **Lending** | Over-collateralization, liquidation, health factor | Typically 120-150% collateral ratio |
@@ -558,7 +558,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 <details>
 <summary>Answer</summary>
-**B) ~20%.** The formula for impermanent loss is (2√r)/(1+r) - 1 where r is the price ratio. For r=4, IL ≈ 20%. For comparison, 2x → 5.7%, 3x → 13.4%, 5x → 25.5%.
+**B) ~20%.** The formula for impermanent loss is (2vr)/(1+r) - 1 where r is the price ratio. For r=4, IL � 20%. For comparison, 2x ? 5.7%, 3x ? 13.4%, 5x ? 25.5%.
 </details>
 
 2. Why must flash loans be repaid in the same transaction?
@@ -569,7 +569,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 <details>
 <summary>Answer</summary>
-**B) Because Ethereum atomicity guarantees the entire tx succeeds or reverts.** If the flash loan isn't repaid by the end of the transaction, the entire transaction reverts — including the loan. This makes them trustless.
+**B) Because Ethereum atomicity guarantees the entire tx succeeds or reverts.** If the flash loan isn't repaid by the end of the transaction, the entire transaction reverts � including the loan. This makes them trustless.
 </details>
 
 3. What is the primary risk of an algorithmic stablecoin?
@@ -585,13 +585,13 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 4. What does TVL measure in DeFi?
    - A) Transaction Volume Location
-   - B) Total Value Locked — the amount of assets deposited in a protocol
+   - B) Total Value Locked � the amount of assets deposited in a protocol
    - C) Token Velocity Limit
    - D) Total Verified Loans
 
 <details>
 <summary>Answer</summary>
-**B) Total Value Locked — the amount of assets deposited in a protocol.** TVL measures the sum of all assets deposited in a DeFi protocol's smart contracts. It's a key metric for protocol adoption and ecosystem health.
+**B) Total Value Locked � the amount of assets deposited in a protocol.** TVL measures the sum of all assets deposited in a DeFi protocol's smart contracts. It's a key metric for protocol adoption and ecosystem health.
 </details>
 
 5. What is a key difference between a DAO and a traditional company?
@@ -888,6 +888,48 @@ console.log(`Mint 100 stablecoins: ${se.mint('alice', 100)}`);
 console.log(`Position safe: ${se.isSafe('alice')}`);
 ```
 
+
+// defi
+// distributed-ledger-crypto implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'defi', data: { topic: 'distributed-ledger-crypto' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - DeFi provides financial services without intermediaries through smart contracts.
@@ -903,7 +945,7 @@ console.log(`Position safe: ${se.isSafe('alice')}`);
 ## Practical Takeaways
 
 1. Use a calculator to estimate impermanent loss before providing AMM liquidity.
-2. Monitor health factors on lending positions — set alerts for liquidation thresholds.
+2. Monitor health factors on lending positions � set alerts for liquidation thresholds.
 3. Prefer crypto-collateralized stablecoins (DAI) over algorithmic ones for safety.
 4. Verify contract audits and TVL distribution before depositing in any protocol.
 5. Use slippage protection (minOut) when trading on AMMs.
@@ -915,7 +957,7 @@ console.log(`Position safe: ${se.isSafe('alice')}`);
 
 ### Review Questions
 
-1. Explain the constant product formula (x × y = k).
+1. Explain the constant product formula (x � y = k).
 2. What is "Impermanent Loss"?
 3. Define "Over-collateralization".
 4. How do decentralized Oracles (like Chainlink) help DeFi protocols?

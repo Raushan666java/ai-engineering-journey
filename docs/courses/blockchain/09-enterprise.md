@@ -52,7 +52,7 @@ Public blockchains like Bitcoin are designed for total transparency and anonymit
 2. **Performance:** Higher throughput and lower latency than public chains.
 3. **Governance:** A known set of participants with clear legal responsibilities.
 4. **Regulatory Compliance:** Know Your Customer (KYC), Anti-Money Laundering (AML).
-5. **Finality:** No probabilistic settlement â€” transactions settle instantly.
+5. **Finality:** No probabilistic settlement — transactions settle instantly.
 
 ```mermaid
 flowchart TB
@@ -395,7 +395,7 @@ sequenceDiagram
 | **Healthcare** | Patient records across providers | Interoperable, patient-consented access | MediLedger |
 | **Finance** | Trade finance, letter of credit | Instant settlement, shared truth | we.trade |
 | **Insurance** | Claims processing | Automated verification, fraud reduction | B3i |
-| **Government** | Land registry, identity | Tamper-proof records, reduced corruption | Sweden LantmÃ¤teriet |
+| **Government** | Land registry, identity | Tamper-proof records, reduced corruption | Sweden Lantmäteriet |
 | **Pharma** | Drug supply chain security | Counterfeit detection (DSCSA compliance) | MediLedger |
 | **Energy** | Grid management, carbon credits | Transparent trading, certificate tracking | Energy Web Foundation |
 | **Maritime** | Shipping documents, bills of lading | Digital documents, reduced delays | TradeLens |
@@ -506,11 +506,11 @@ const collectionConfig = [
 ];
 ```
 
-> **One-Sentence Takeaway:** Enterprise blockchains trade open, permissionless participation for privacy, throughput, and finality â€” making them suitable for regulated industries but fundamentally different from public chains.
+> **One-Sentence Takeaway:** Enterprise blockchains trade open, permissionless participation for privacy, throughput, and finality — making them suitable for regulated industries but fundamentally different from public chains.
 
-> **Pro Tip:** When designing a Hyperledger Fabric network, structure channels around natural business confidentiality boundaries. Every channel is a separate ledger â€” use them to enforce data isolation between competitors.
+> **Pro Tip:** When designing a Hyperledger Fabric network, structure channels around natural business confidentiality boundaries. Every channel is a separate ledger — use them to enforce data isolation between competitors.
 
-> **Warning:** Permissioned blockchains reduce but do not eliminate the need for trust. The ordering service is a trusted component â€” if orderers collude, they can censor or reorder transactions.
+> **Warning:** Permissioned blockchains reduce but do not eliminate the need for trust. The ordering service is a trusted component — if orderers collude, they can censor or reorder transactions.
 
 ---
 
@@ -533,7 +533,7 @@ const collectionConfig = [
 |----------|-------------|-------|
 | **Fabric Nodes** | Peer, Orderer, CA | Each has distinct role |
 | **MSP** | Membership Service Provider | X.509 certificate-based identity |
-| **Consensus** | Raft (CFT), Kafka (old), PBFT (planned) | No mining â€” fast finality |
+| **Consensus** | Raft (CFT), Kafka (old), PBFT (planned) | No mining — fast finality |
 | **Chaincode** | Go, Java, Node.js | Smart contract in familiar languages |
 | **World State** | CouchDB or LevelDB | Current state of all assets (key-value) |
 | **Channel** | Private subnet with own ledger | Data isolation between groups |
@@ -561,7 +561,7 @@ const collectionConfig = [
 
 <details>
 <summary>Answer</summary>
-**B) To create a private sub-network where only authorized members see transactions.** Channels provide data isolation â€” members on different channels cannot see each other's transactions, enabling competing organizations to share only necessary data.
+**B) To create a private sub-network where only authorized members see transactions.** Channels provide data isolation — members on different channels cannot see each other's transactions, enabling competing organizations to share only necessary data.
 </details>
 
 2. How does Hyperledger Fabric's consensus differ from Bitcoin's PoW?
@@ -583,7 +583,7 @@ const collectionConfig = [
 
 <details>
 <summary>Answer</summary>
-**B) Fabric provides privacy (competitors see different data), identity management (X.509), and higher throughput.** Supply chains need confidential pricing between partners while maintaining an audit trail â€” Fabric's channel architecture and MSP identity model are designed for this.
+**B) Fabric provides privacy (competitors see different data), identity management (X.509), and higher throughput.** Supply chains need confidential pricing between partners while maintaining an audit trail — Fabric's channel architecture and MSP identity model are designed for this.
 </details>
 
 4. What is the role of the Endorsing Peer in Hyperledger Fabric?
@@ -891,6 +891,48 @@ const raft = new RaftOrderer(['n0', 'n1', 'n2']);
 console.log(`Order tx: ${raft.requestOrder('tx1', 'n0') !== null ? 'ordered' : 'rejected'}`);
 ```
 
+
+// enterprise
+// distributed-ledger-crypto implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'enterprise', data: { topic: 'distributed-ledger-crypto' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Enterprise blockchains prioritize privacy, performance, and controlled access over openness.
@@ -901,7 +943,7 @@ console.log(`Order tx: ${raft.requestOrder('tx1', 'n0') !== null ? 'ordered' : '
 - Endorsement policies define flexible trust models per chaincode.
 - Raft consensus provides crash fault tolerance with instant finality.
 - Chaincode can be written in standard programming languages (Go, Java, Node.js).
-- Enterprise blockchains are not replacements for public chains â€” they serve different needs.
+- Enterprise blockchains are not replacements for public chains — they serve different needs.
 
 ## Practical Takeaways
 

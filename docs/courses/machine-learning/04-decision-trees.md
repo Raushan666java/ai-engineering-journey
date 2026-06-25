@@ -18,14 +18,14 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Tree Structure | Internal nodes test attributes, leaves assign labels | Extremely interpretable — useful for stakeholder explanations |
+| Tree Structure | Internal nodes test attributes, leaves assign labels | Extremely interpretable ? useful for stakeholder explanations |
 | Entropy | Measures disorder in a dataset | Lower entropy means purer, more homogeneous subsets |
 | Information Gain | Reduction in entropy after a split | Choose the feature with highest gain at each node |
 | Gini Impurity | Alternative to entropy; computationally faster | CART uses Gini by default; similar results to entropy |
-| ID3 Algorithm | Iterative Dichotomiser 3 — builds trees using entropy | Handles categorical features naturally |
+| ID3 Algorithm | Iterative Dichotomiser 3 ? builds trees using entropy | Handles categorical features naturally |
 | CART Algorithm | Binary splits using Gini; supports regression | sklearn's default; produces binary trees |
 | Recursive Splitting | Tree built top-down by repeated partitioning | Stop when depth max or node purity is reached |
-| Pruning | Removing branches that add little predictive power | Critical for generalization — deep trees overfit badly |
+| Pruning | Removing branches that add little predictive power | Critical for generalization ? deep trees overfit badly |
 | Feature Importance | How often a feature splits nodes, weighted by improvement | Built-in feature selection from a trained tree |
 | Missing Values | Surrogate splits, weighted distributions | Real-world data always has missing values |
 
@@ -59,13 +59,13 @@ A Decision Tree is a flowchart-like structure used for both classification and r
 Decision trees partition the **feature space** into axis-aligned rectangular regions. In 2D, the decision boundary is a series of horizontal and vertical lines, creating a piecewise-constant classification or regression surface.
 
 **Advantages**:
-- Highly interpretable — the model's decisions can be explained to non-technical stakeholders
+- Highly interpretable ? the model's decisions can be explained to non-technical stakeholders
 - No feature scaling required
 - Handles both numerical and categorical data
 - Captures non-linear relationships and feature interactions
 
 **Disadvantages**:
-- High variance — small data changes can produce completely different trees
+- High variance ? small data changes can produce completely different trees
 - Greedy splitting is locally optimal but may miss globally better structures
 - Axis-aligned splits struggle with diagonal decision boundaries
 
@@ -117,7 +117,7 @@ $$Gini(S) = 1 - \sum_{i=1}^{c} p_i^2$$
 - For binary classification: $Gini = 2p(1-p)$ where $p$ is the proportion of class 1
 
 **Why choose Gini over Entropy?**
-- Gini avoids logarithmic calculations — slightly faster computationally
+- Gini avoids logarithmic calculations ? slightly faster computationally
 - In practice, both produce very similar trees
 - CART's default is Gini; sklearn uses it by default
 
@@ -142,7 +142,7 @@ ID3(examples, target_attribute, attributes):
 **Key limitations**:
 - Cannot handle numerical attributes (must be discretized first)
 - Cannot handle missing values
-- Does not prune — prone to overfitting
+- Does not prune ? prone to overfitting
 - Only categorical features
 
 ### The CART Algorithm
@@ -169,7 +169,7 @@ The prediction at a leaf node is the mean target value of all training examples 
 
 ### Pruning
 
-Decision trees are prone to severe overfitting — a fully grown tree can memorize every training example.
+Decision trees are prone to severe overfitting ? a fully grown tree can memorize every training example.
 
 **Pre-pruning (Early Stopping)**:
 - Limit `max_depth`: maximum tree depth
@@ -195,11 +195,11 @@ flowchart TD
         D -->|No| E[Continue splitting]
     end
     subgraph "Post-Pruning"
-        F[Grow full tree] --> G[Compute cost-complexity RαT]
+        F[Grow full tree] --> G[Compute cost-complexity RaT]
         G --> H[Prune weakest branch]
         H --> I{Validation error still improving?}
         I -->|Yes| G
-        I -->|No| J[Select best α via CV]
+        I -->|No| J[Select best a via CV]
         J --> K[Final pruned tree]
     end
 ```
@@ -234,7 +234,7 @@ Decision trees can handle missing values natively through:
 
 Decision trees are **low bias, high variance** models:
 - **Low bias**: They can represent any complex decision boundary given enough depth
-- **High variance**: Small changes in training data can produce completely different trees — a single incorrect split at the root cascades through the entire tree
+- **High variance**: Small changes in training data can produce completely different trees ? a single incorrect split at the root cascades through the entire tree
 
 This is why:
 1. Pruning is essential (reduces variance at the cost of some bias)
@@ -252,7 +252,7 @@ flowchart LR
 
 > **One-Sentence Takeaway:** Decision trees partition the feature space with hierarchical tests, choosing splits that maximize purity through entropy reduction or Gini impurity minimization.
 
-> **Pro Tip:** Decision trees handle both numerical and categorical data natively with no need for feature scaling — but they are sensitive to small data variations, so always pair them with cross-validation.
+> **Pro Tip:** Decision trees handle both numerical and categorical data natively with no need for feature scaling ? but they are sensitive to small data variations, so always pair them with cross-validation.
 
 ---
 
@@ -528,7 +528,7 @@ function calculateInformationGain(
 // Golf dataset: 14 samples, 9 play (1), 5 don't play (0)
 const golfLabels = [1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0];
 // Split by "Outlook": Sunny=[0,1,2,3,4], Overcast=[5,6,7,8], Rainy=[9,10,11,12,13]
-// Wait — let me be more precise:
+// Wait ? let me be more precise:
 // Let's say Outlook splits: Sunny (indices 0,1,2,3,4), Overcast (5,6,7,8), Rainy (9,10,11,12,13)
 // But this is approximate. Let's just show the calculation.
 
@@ -550,18 +550,18 @@ console.log(`Parent Entropy: ${parentE.toFixed(4)}`);
 
 > **One-Sentence Takeaway:** Decision trees provide intuitive, interpretable models but require careful hyperparameter tuning and pruning to avoid overfitting the training data.
 
-> **Warning:** A single decision tree is highly sensitive to data changes — a different training split can produce a completely different tree, which is why ensemble methods are often preferred.
+> **Warning:** A single decision tree is highly sensitive to data changes ? a different training split can produce a completely different tree, which is why ensemble methods are often preferred.
 
 ---
 
 ## Practical Takeaways
 
-1. **Trees are a great baseline** — they handle mixed data types, need no scaling, and give interpretable results quickly
-2. **Prune aggressively** — a fully grown tree always overfits; set `max_depth` and `min_samples_leaf` based on validation performance
-3. **Use Gini for speed, Entropy for theoretical purity** — in practice they give almost identical results
-4. **Feature importance is a free by-product** — use it for exploratory analysis and feature selection
-5. **Trees struggle with diagonal boundaries** — if the true decision boundary is at a 45-degree angle, trees need many axis-aligned splits to approximate it
-6. **Single trees are unstable** — always pair with cross-validation; prefer ensembles for production
+1. **Trees are a great baseline** ? they handle mixed data types, need no scaling, and give interpretable results quickly
+2. **Prune aggressively** ? a fully grown tree always overfits; set `max_depth` and `min_samples_leaf` based on validation performance
+3. **Use Gini for speed, Entropy for theoretical purity** ? in practice they give almost identical results
+4. **Feature importance is a free by-product** ? use it for exploratory analysis and feature selection
+5. **Trees struggle with diagonal boundaries** ? if the true decision boundary is at a 45-degree angle, trees need many axis-aligned splits to approximate it
+6. **Single trees are unstable** ? always pair with cross-validation; prefer ensembles for production
 
 ## Concept Comparison Table
 
@@ -638,7 +638,7 @@ console.log(`Parent Entropy: ${parentE.toFixed(4)}`);
    C) It makes many assumptions about the data distribution
    D) It can only fit linear decision boundaries
 
-<details><summary>Answer</summary>**B)** Decision trees are unstable — a small change in training data, especially near the root, cascades through the entire tree structure.
+<details><summary>Answer</summary>**B)** Decision trees are unstable ? a small change in training data, especially near the root, cascades through the entire tree structure.
 </details>
 
 5. In CART regression trees, what value does a leaf node predict?
@@ -818,12 +818,104 @@ console.log("Forest predict [4,3]:", rf.predict([4, 3]));
 console.log("Feature importance:", rf.featureImportance(X, y, 2).map(v => v.toFixed(4)));
 ```
 
+
+// decision trees
+// ml-supervised-unsupervised implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'decision trees', data: { topic: 'ml-supervised-unsupervised' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// decision trees - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'ml-algorithms demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'machine-learning', chapter: 'decision trees' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('ml-algorithms'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Decision Trees partition the feature space into rectangular regions via a series of binary or multi-way splits.
 - Entropy and Gini Impurity are the most common metrics for evaluating split quality; Information Gain selects features that most reduce uncertainty.
 - The ID3 algorithm pioneered categorical tree learning; CART extended it with binary splits, numerical features, and regression support.
-- Overfitting is a significant risk — a fully grown tree memorizes the training data.
+- Overfitting is a significant risk ? a fully grown tree memorizes the training data.
 - Pre-pruning (max_depth, min_samples_split) and post-pruning (cost-complexity pruning) are essential for controlling tree complexity.
 - Feature importance is a natural by-product of tree training, enabling built-in feature selection.
 - Single decision trees are high-variance, explaining why ensemble methods (Random Forests, Gradient Boosting) are preferred in practice.
@@ -849,4 +941,4 @@ console.log("Feature importance:", rf.featureImportance(X, y, 2).map(v => v.toFi
 5. For a regression tree, a node with values $[2, 4, 6, 8]$ and a split producing $[2, 4]$ and $[6, 8]$, compute the MSE reduction.
 
 ### Challenge Problem
-1. Decision Trees are often criticized for being "unstable" — a small change in the data can result in a completely different tree. Explain why this happens (consider the greedy, recursive nature of splitting) and how ensemble methods (Bagging, Random Forest) solve this problem while maintaining the benefits of interpretable individual trees.
+1. Decision Trees are often criticized for being "unstable" ? a small change in the data can result in a completely different tree. Explain why this happens (consider the greedy, recursive nature of splitting) and how ensemble methods (Bagging, Random Forest) solve this problem while maintaining the benefits of interpretable individual trees.

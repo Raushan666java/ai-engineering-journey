@@ -26,7 +26,7 @@ After completing this chapter, you will be able to:
 | Existential Quantifier | $\exists x\; P(x)$ means "there exists $x$ such that $P(x)$" | Proving existence requires just one example |
 | Translation Patterns | "All A are B" uses $\rightarrow$; "Some A are B" uses $\land$ | The choice of connective is critical for correct translation |
 | Quantifier Negation | $\neg \forall \equiv \exists \neg$ and $\neg \exists \equiv \forall \neg$ | Negating a quantifier flips it and pushes negation inward |
-| Nested Quantifiers | $\forall x\; \exists y$ is NOT the same as $\exists y\; \forall x$ | Order matters — reversing quantifiers changes meaning completely |
+| Nested Quantifiers | $\forall x\; \exists y$ is NOT the same as $\exists y\; \forall x$ | Order matters ? reversing quantifiers changes meaning completely |
 | Uniqueness Quantifier | $\exists!x\; P(x)$ means exactly one $x$ satisfies $P(x)$ | Useful for expressing "exactly one" in specifications |
 | Inference Rules | Universal instantiation, existential generalization | Formal reasoning with quantified statements |
 
@@ -58,7 +58,7 @@ $$\{x \in D \mid P(x)\}$$
 
 A predicate can have multiple variables: $Q(x, y)$ = "$x$ loves $y$". The truth set becomes a subset of $D_1 \times D_2$.
 
-> **One-Sentence Takeaway:** A predicate is like a function that returns a truth value — it only becomes a proposition when its variable is bound to a specific value.
+> **One-Sentence Takeaway:** A predicate is like a function that returns a truth value ? it only becomes a proposition when its variable is bound to a specific value.
 
 ### 3.2 Quantifiers
 
@@ -75,17 +75,17 @@ A predicate can have multiple variables: $Q(x, y)$ = "$x$ loves $y$". The truth 
 flowchart LR
     subgraph Universal
         direction TB
-        A1[∀x Px]
+        A1[?x Px]
         A2[All elements satisfy P]
     end
     subgraph Existential
         direction TB
-        B1[∃x Px]
+        B1[?x Px]
         B2[At least one element satisfies P]
     end
 ```
 
-> **One-Sentence Takeaway:** $\forall$ requires all elements to satisfy the condition; $\exists$ requires at least one — they are duals via negation.
+> **One-Sentence Takeaway:** $\forall$ requires all elements to satisfy the condition; $\exists$ requires at least one ? they are duals via negation.
 
 ### 3.3 Translation between English and Logic
 
@@ -100,10 +100,10 @@ English often uses implicit quantifiers. Careful translation requires identifyin
 Note the pattern: "all" uses $\rightarrow$; "some" uses $\land$.
 
 **Common translation errors:**
-- $\forall x\;(\text{Cat}(x) \land \text{Black}(x))$ means "everything is a black cat" — wrong!
-- $\exists x\;(\text{Cat}(x) \rightarrow \text{Black}(x))$ is trivially true if any non-cat exists — wrong!
+- $\forall x\;(\text{Cat}(x) \land \text{Black}(x))$ means "everything is a black cat" ? wrong!
+- $\exists x\;(\text{Cat}(x) \rightarrow \text{Black}(x))$ is trivially true if any non-cat exists ? wrong!
 
-> **One-Sentence Takeaway:** Translate "all A are B" as $\forall x (A(x) \rightarrow B(x))$ and "some A are B" as $\exists x (A(x) \land B(x))$ — mixing these up is the most common quantifier mistake.
+> **One-Sentence Takeaway:** Translate "all A are B" as $\forall x (A(x) \rightarrow B(x))$ and "some A are B" as $\exists x (A(x) \land B(x))$ ? mixing these up is the most common quantifier mistake.
 
 ### 3.4 Negating Quantified Statements
 
@@ -115,17 +115,17 @@ In words: the negation of "all are true" is "at least one is false". The negatio
 
 ```typescript
 function negateUniversal<T>(domain: T[], predicate: (x: T) => boolean): boolean {
-  // ¬∀x P(x) ≡ ∃x ¬P(x)
+  // ??x P(x) = ?x ?P(x)
   return domain.some(x => !predicate(x));
 }
 
 function negateExistential<T>(domain: T[], predicate: (x: T) => boolean): boolean {
-  // ¬∃x P(x) ≡ ∀x ¬P(x)
+  // ??x P(x) = ?x ?P(x)
   return domain.every(x => !predicate(x));
 }
 
 const nums = [1, 2, 3, 4, 5];
-console.log(negateUniversal(nums, x => x > 0)); // false (∀x x>0 is true, so negation is false)
+console.log(negateUniversal(nums, x => x > 0)); // false (?x x>0 is true, so negation is false)
 console.log(negateExistential(nums, x => x > 10)); // true (no element > 10)
 ```
 
@@ -145,17 +145,17 @@ When quantifiers appear within each other, order matters.
 **Important:** $\forall x\; \exists y\; P(x,y)$ and $\exists y\; \forall x\; P(x,y)$ are **not** equivalent.
 
 **Example over integers:**
-- $\forall x\; \exists y\; (y = x + 1)$: TRUE — for each $x$, choose $y = x + 1$.
-- $\exists y\; \forall x\; (y = x + 1)$: FALSE — no single $y$ equals $x + 1$ for all $x$.
+- $\forall x\; \exists y\; (y = x + 1)$: TRUE ? for each $x$, choose $y = x + 1$.
+- $\exists y\; \forall x\; (y = x + 1)$: FALSE ? no single $y$ equals $x + 1$ for all $x$.
 
 ```typescript
 function checkForallExists(domain: number[]): boolean {
-  // ∀x ∃y (y > x)
+  // ?x ?y (y > x)
   return domain.every(x => domain.some(y => y > x));
 }
 
 function checkExistsForall(domain: number[]): boolean {
-  // ∃y ∀x (y > x)
+  // ?y ?x (y > x)
   return domain.some(y => domain.every(x => y > x));
 }
 
@@ -164,7 +164,7 @@ console.log(checkForallExists(nums)); // false (3 is not less than any element)
 console.log(checkExistsForall(nums)); // false (no single element > all others in [1,2,3])
 ```
 
-> **One-Sentence Takeaway:** With nested quantifiers, order determines meaning — $\forall x\; \exists y$ allows $y$ to depend on $x$, while $\exists y\; \forall x$ requires a single $y$ that works for all $x$.
+> **One-Sentence Takeaway:** With nested quantifiers, order determines meaning ? $\forall x\; \exists y$ allows $y$ to depend on $x$, while $\exists y\; \forall x$ requires a single $y$ that works for all $x$.
 
 ### 3.6 Negating Nested Quantifiers
 
@@ -180,7 +180,7 @@ $$\neg \forall x\; \exists y\; \forall z\; P(x,y,z) \equiv \exists x\; \forall y
 2. Push negation past each quantifier.
 3. Negate the innermost predicate.
 
-> **One-Sentence Takeaway:** Negating nested quantifiers is mechanical — flip each quantifier and push the negation through, working left to right.
+> **One-Sentence Takeaway:** Negating nested quantifiers is mechanical ? flip each quantifier and push the negation through, working left to right.
 
 ### 3.7 Uniqueness Quantifier
 
@@ -200,7 +200,7 @@ console.log(existsUnique([1, 2, 3, 4, 5], x => x % 2 === 0)); // false (2 and 4)
 console.log(existsUnique([1, 2, 3, 4, 5], x => x === 3));      // true
 ```
 
-> **One-Sentence Takeaway:** $\exists!x\; P(x)$ — "there exists exactly one" — is shorthand for existence plus uniqueness.
+> **One-Sentence Takeaway:** $\exists!x\; P(x)$ ? "there exists exactly one" ? is shorthand for existence plus uniqueness.
 
 ### 3.8 Validity of Arguments with Quantifiers
 
@@ -237,11 +237,11 @@ Step 2: $\exists x\; \neg(\neg P(x) \lor \exists y\; Q(x,y)) \equiv \exists x\; 
 Step 3: $\exists x\; (P(x) \land \forall y\; \neg Q(x,y))$
 Step 4: $\exists x\; \forall y\; (P(x) \land \neg Q(x,y))$
 
-> **Pro Tip:** When translating "every student has a computer," use $\forall x (S(x) \rightarrow C(x))$ — NOT $\forall x (S(x) \land C(x))$, which incorrectly claims everyone is a student with a computer.
+> **Pro Tip:** When translating "every student has a computer," use $\forall x (S(x) \rightarrow C(x))$ ? NOT $\forall x (S(x) \land C(x))$, which incorrectly claims everyone is a student with a computer.
 >
-> **Pro Tip:** To disprove a universal statement $\forall x\; P(x)$, find exactly one counterexample — that's sufficient and often easier than attempting a proof.
+> **Pro Tip:** To disprove a universal statement $\forall x\; P(x)$, find exactly one counterexample ? that's sufficient and often easier than attempting a proof.
 >
-> **Warning:** The statement "some A are B" translates to $\exists x (A(x) \land B(x))$, NOT $\exists x (A(x) \rightarrow B(x))$ — the latter would be trivially true if there is any element that is not A.
+> **Warning:** The statement "some A are B" translates to $\exists x (A(x) \land B(x))$, NOT $\exists x (A(x) \rightarrow B(x))$ ? the latter would be trivially true if there is any element that is not A.
 >
 > **Warning:** Existential instantiation introduces a NEW constant symbol, not one already in use. This prevents incorrect deductions.
 
@@ -301,7 +301,7 @@ Step 4: $\exists x\; \forall y\; (P(x) \land \neg Q(x,y))$
    - C) $\forall x\; \forall y\; (x < y)$
    - D) $\exists x\; \forall y\; (x > y)$
 
-   <details><summary>Answer</summary>**A)** For every integer $x$, we can pick $y = x + 1$ — this is always true over $\mathbb{Z}$.</details>
+   <details><summary>Answer</summary>**A)** For every integer $x$, we can pick $y = x + 1$ ? this is always true over $\mathbb{Z}$.</details>
 
 3. "Every cat is a mammal" translates to:
    - A) $\forall x\; (Cat(x) \land Mammal(x))$
@@ -331,10 +331,10 @@ Step 4: $\exists x\; \forall y\; (P(x) \land \neg Q(x,y))$
 
 **Example 3.1** (Truth value). Let domain be $\mathbb{Z}$. Determine truth:
 
-- $\forall x\; (x^2 \geq 0)$: True — squares of integers are nonnegative.
-- $\exists x\; (x^2 = 2)$: False — no integer squares to 2.
-- $\forall x\; \exists y\; (y = x^2)$: True — for each $x$, we can choose $y = x^2$.
-- $\exists y\; \forall x\; (y = x^2)$: False — no single integer equals all squares.
+- $\forall x\; (x^2 \geq 0)$: True ? squares of integers are nonnegative.
+- $\exists x\; (x^2 = 2)$: False ? no integer squares to 2.
+- $\forall x\; \exists y\; (y = x^2)$: True ? for each $x$, we can choose $y = x^2$.
+- $\exists y\; \forall x\; (y = x^2)$: False ? no single integer equals all squares.
 
 **Example 3.2** (Translation). Translate "Every student in this class has taken exactly one math course."
 
@@ -384,10 +384,10 @@ const people = [
   { name: "Charlie", age: 30 },
 ];
 
-// ∀x (Person(x) → Age(x) ≥ 18)
+// ?x (Person(x) ? Age(x) = 18)
 console.log(forAll(people, p => p.age >= 18)); // false (Bob is 17)
 
-// ∃x (Person(x) ∧ Name(x) = "Alice")
+// ?x (Person(x) ? Name(x) = "Alice")
 console.log(exists(people, p => p.name === "Alice")); // true
 ```
 
@@ -409,8 +409,8 @@ function exists<T>(domain: T[], p: Predicate<T>): boolean {
 }
 
 const numbers = [1, 2, 3, 4, 5];
-console.log('∀x > 0:', forAll(numbers, n => n > 0));  // true
-console.log('∃x even:', exists(numbers, n => n % 2 === 0)); // true
+console.log('?x > 0:', forAll(numbers, n => n > 0));  // true
+console.log('?x even:', exists(numbers, n => n % 2 === 0)); // true
 
 // --- Nested Quantifier Checker ---
 function nestedForAllExists<T, U>(
@@ -424,7 +424,7 @@ const people = ['Alice', 'Bob'];
 const items = ['Apple', 'Banana'];
 const likes = (p: string, i: string) =>
   (p === 'Alice' && i === 'Apple') || (p === 'Bob' && i === 'Banana');
-console.log('∀x∃y likes(x,y):', nestedForAllExists(people, items, likes)); // true
+console.log('?x?y likes(x,y):', nestedForAllExists(people, items, likes)); // true
 
 // --- Quantifier Negation Converter ---
 type QuantifiedExpr = 
@@ -445,7 +445,7 @@ function negate(expr: QuantifiedExpr): QuantifiedExpr {
       return { type: 'not', expr };
   }
 }
-// ¬∀x P(x) → ∃x ¬P(x)
+// ??x P(x) ? ?x ?P(x)
 const expr: QuantifiedExpr = { type: 'forall', var: 'x', pred: { type: 'pred', name: 'P', arg: 'x' } };
 const negated = negate(expr);
 console.log('Negated:', JSON.stringify(negated));
@@ -471,10 +471,10 @@ function exists<T>(domain: T[], pred: (x: T) => boolean): boolean {
   return domain.some(pred);
 }
 const nums = [0, 1, 2, 3, 4, 5];
-console.log('∀x∈{0..5}: x≥0:', forall(nums, x => x >= 0));   // true
-console.log('∃x∈{0..5}: x>4:', exists(nums, x => x > 4));     // true
-console.log('∀x∈{0..5}: x>3:', forall(nums, x => x > 3));     // false
-console.log('∃x∈{0..5}: x<0:', exists(nums, x => x < 0));     // false
+console.log('?x?{0..5}: x=0:', forall(nums, x => x >= 0));   // true
+console.log('?x?{0..5}: x>4:', exists(nums, x => x > 4));     // true
+console.log('?x?{0..5}: x>3:', forall(nums, x => x > 3));     // false
+console.log('?x?{0..5}: x<0:', exists(nums, x => x < 0));     // false
 
 // --- Nested Quantifier Checker ---
 function nestedQuantifier<T1, T2>(
@@ -488,8 +488,8 @@ function nestedQuantifier<T1, T2>(
 }
 // For every integer there exists a larger integer
 const ints = [0, 1, 2, 3, 4, 5];
-console.log('\n∀x∃y: y > x:', nestedQuantifier(ints, ints, 'forall-exists', (x, y) => y > x)); // true
-console.log('∃x∀y: y > x:', nestedQuantifier(ints, ints, 'exists-forall', (x, y) => y > x)); // false
+console.log('\n?x?y: y > x:', nestedQuantifier(ints, ints, 'forall-exists', (x, y) => y > x)); // true
+console.log('?x?y: y > x:', nestedQuantifier(ints, ints, 'exists-forall', (x, y) => y > x)); // false
 
 // --- Domain Model Checker ---
 type DomainConstraint = { quantifier: 'forall' | 'exists', var: string, pred: (val: number) => boolean };
@@ -508,19 +508,111 @@ console.log('Model check (positives, no 3):', checkModel([1, 2, 4], model));    
 // --- Predicate Transformer ---
 function negateQuantified<T>(domain: T[], quantifier: 'forall' | 'exists', pred: (x: T) => boolean): { quantifier: string; result: boolean } {
   if (quantifier === 'forall') {
-    // ¬∀x P(x) ≡ ∃x ¬P(x)
+    // ??x P(x) = ?x ?P(x)
     const result = domain.some(x => !pred(x));
-    return { quantifier: '∃x ¬P(x)', result };
+    return { quantifier: '?x ?P(x)', result };
   } else {
-    // ¬∃x P(x) ≡ ∀x ¬P(x)
+    // ??x P(x) = ?x ?P(x)
     const result = domain.every(x => !pred(x));
-    return { quantifier: '∀x ¬P(x)', result };
+    return { quantifier: '?x ?P(x)', result };
   }
 }
-console.log('\nNegate ∀x (x>0) on [1,-2,3]:', negateQuantified([1, -2, 3], 'forall', x => x > 0));
-console.log('Negate ∃x (x<0) on [1,2,3]:', negateQuantified([1, 2, 3], 'exists', x => x < 0));
+console.log('\nNegate ?x (x>0) on [1,-2,3]:', negateQuantified([1, -2, 3], 'forall', x => x > 0));
+console.log('Negate ?x (x<0) on [1,2,3]:', negateQuantified([1, 2, 3], 'exists', x => x < 0));
 ```
 
+
+// predicates
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'predicates', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// predicates - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'predicates' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Predicates are statements that depend on variables. Quantifiers $\forall$ and $\exists$ bind variables.
@@ -546,13 +638,13 @@ function evaluateQuantified(
   domain: number[],
   expression: string
 ): { result: boolean; counterexample?: any } {
-  if (expression === "∀x (x > 0)" && domain[0] === 1) {
+  if (expression === "?x (x > 0)" && domain[0] === 1) {
     const allPos = domain.every(x => x > 0);
     return allPos
       ? { result: true }
       : { result: false, counterexample: domain.find(x => x <= 0) };
   }
-  if (expression === "∃x (x < 0)") {
+  if (expression === "?x (x < 0)") {
     const found = domain.some(x => x < 0);
     return found
       ? { result: true, example: domain.find(x => x < 0) }
@@ -583,7 +675,7 @@ function evaluateNested(
   return recurse([], 0);
 }
 
-// ∀x ∃y (x + y = 0) over [-2, -1, 0, 1, 2]
+// ?x ?y (x + y = 0) over [-2, -1, 0, 1, 2]
 const result1 = evaluateNested(
   [-2, -1, 0, 1, 2],
   ["forall", "exists"],
@@ -591,7 +683,7 @@ const result1 = evaluateNested(
 );
 console.log(result1); // true
 
-// ∃y ∀x (x + y = 0) — same domain
+// ?y ?x (x + y = 0) ? same domain
 const result2 = evaluateNested(
   [-2, -1, 0, 1, 2],
   ["exists", "forall"],
@@ -600,7 +692,7 @@ const result2 = evaluateNested(
 console.log(result2); // false (no single y works for all x)
 ```
 
-### 3.7 Negation of Quantified Statements — Normalization
+### 3.7 Negation of Quantified Statements ? Normalization
 
 **Theorem 3.3 (Quantifier Negation).**
 $$\neg \forall x\; P(x) \equiv \exists x\; \neg P(x)$$
@@ -608,13 +700,13 @@ $$\neg \exists x\; P(x) \equiv \forall x\; \neg P(x)$$
 
 ```typescript
 function negate(formula: string): string {
-  if (formula.startsWith("∀")) return formula.replace("∀", "∃").replace("P", "¬P");
-  if (formula.startsWith("∃")) return formula.replace("∃", "∀").replace("P", "¬P");
-  return `¬(${formula})`;
+  if (formula.startsWith("?")) return formula.replace("?", "?").replace("P", "?P");
+  if (formula.startsWith("?")) return formula.replace("?", "?").replace("P", "?P");
+  return `?(${formula})`;
 }
 
-console.log(negate("∀x P(x)"));  // ∃x ¬P(x)
-console.log(negate("∃x P(x)"));  // ∀x ¬P(x)
+console.log(negate("?x P(x)"));  // ?x ?P(x)
+console.log(negate("?x P(x)"));  // ?x ?P(x)
 ```
 
 ### 3.8 Prenex Normal Form and Skolemization
@@ -632,14 +724,14 @@ $$Q_1 x_1\; Q_2 x_2\; \ldots\; Q_n x_n\; (\text{quantifier-free formula})$$
 
 ```typescript
 function toPrenex(formula: string): string {
-  // ∀x ∃y (P(x) → Q(y)) → ∀x ∃y (¬P(x) ∨ Q(y)) → ∀x ∃y (¬P(x) ∨ Q(y))
+  // ?x ?y (P(x) ? Q(y)) ? ?x ?y (?P(x) ? Q(y)) ? ?x ?y (?P(x) ? Q(y))
   // Already in prenex form
   return formula;
 }
 
 // Example: "Every rational number has a multiplicative inverse if nonzero"
-// ∀x ∈ ℚ (x ≠ 0 → ∃y (xy = 1))
-// In prenex: ∀x ∃y (x ≠ 0 → xy = 1)
+// ?x ? Q (x ? 0 ? ?y (xy = 1))
+// In prenex: ?x ?y (x ? 0 ? xy = 1)
 ```
 
 ### 3.9 First-Order Logic in Practice
@@ -689,7 +781,7 @@ function existentialGeneralization<T>(
   return P(c);
 }
 
-// Example: ∀x (x > 0 → x^2 > 0) over positive integers
+// Example: ?x (x > 0 ? x^2 > 0) over positive integers
 const forallPosSquare = (arr: number[]) => arr.every(x => x > 0 ? x * x > 0 : true);
 console.log(universalInstantiation(forallPosSquare, [1, 2, 3], 5)); // true
 ```
@@ -697,8 +789,8 @@ console.log(universalInstantiation(forallPosSquare, [1, 2, 3], 5)); // true
 ### 3.11 Limitations of First-Order Logic
 
 - **Compactness theorem:** If every finite subset of a theory has a model, the whole theory has a model.
-- **Löwenheim-Skolem theorem:** If a countable theory has an infinite model, it has models of every infinite cardinality.
-- **Gödel's incompleteness:** No consistent, complete, recursive axiomatization of arithmetic exists.
+- **L?wenheim-Skolem theorem:** If a countable theory has an infinite model, it has models of every infinite cardinality.
+- **G?del's incompleteness:** No consistent, complete, recursive axiomatization of arithmetic exists.
 - First-order logic cannot express: "there are finitely many," "most," or transitive closure in general.
 
 ```mermaid
@@ -707,8 +799,8 @@ flowchart TD
         A[Propositional Logic] -->|Add quantifiers| B[First-Order Logic]
         B -->|Add set quantification| C[Second-Order Logic]
         A --> D[Boolean connectives only]
-        B --> E[∀x, ∃x over individuals]
-        C --> F[∀P, ∃P over predicates]
+        B --> E[?x, ?x over individuals]
+        C --> F[?P, ?P over predicates]
         B --> G[Expressiveness limit: compactness]
     end
 ```

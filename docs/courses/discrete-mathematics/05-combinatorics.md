@@ -121,9 +121,9 @@ console.log(binomialExpansion(4)); // ["1x^4", "4x^3y", "6x^2y^2", "4xy^3", "1y^
 
 **Generalized Pigeonhole Principle.** If $N$ items are placed into $k$ boxes, then at least one box contains at least $\lceil N/k \rceil$ items.
 
-> **One-Sentence Takeaway:** If there are more items than containers, at least one container must hold multiple items — a simple but powerful existence proof.
+> **One-Sentence Takeaway:** If there are more items than containers, at least one container must hold multiple items ? a simple but powerful existence proof.
 
-**Theorem 5.4 (Erdős–Szekeres).** Any sequence of $n^2 + 1$ distinct real numbers contains an increasing or decreasing subsequence of length $n + 1$.
+**Theorem 5.4 (Erdos?Szekeres).** Any sequence of $n^2 + 1$ distinct real numbers contains an increasing or decreasing subsequence of length $n + 1$.
 
 **Example (Birthday problem).** In a group of 23 people, the probability that at least two share a birthday is approximately 50%. By the pigeonhole principle, with 367 people a collision is guaranteed (only 366 possible birthdays including Feb 29).
 
@@ -160,7 +160,7 @@ $$\binom{n + r - 1}{r}$$
 
 > **One-Sentence Takeaway:** Stars and bars counts ways to distribute $r$ identical items into $n$ distinct categories using $\binom{n+r-1}{r}$.
 >
-> **Pro Tip:** For stars and bars, remember the formula $\binom{n+r-1}{r}$ where $n$ is item types and $r$ is items chosen — the most common mistake is swapping $n$ and $r$.
+> **Pro Tip:** For stars and bars, remember the formula $\binom{n+r-1}{r}$ where $n$ is item types and $r$ is items chosen ? the most common mistake is swapping $n$ and $r$.
 
 ### 5.8 Inclusion-Exclusion Principle (General)
 
@@ -185,7 +185,7 @@ $$\binom{m+n}{r} = \sum_{k=0}^{r} \binom{m}{k} \binom{n}{r-k}$$
 
 *Combinatorial proof.* Choose $r$ elements from a set of $m+n$ elements. Let $k$ be the number of elements chosen from the first $m$, and $r-k$ from the remaining $n$. Sum over all $k$. $\square$
 
-> **One-Sentence Takeaway:** Combinatorial proofs derive identities by counting the same set in two different ways — if both counting approaches are correct, the expressions must be equal.
+> **One-Sentence Takeaway:** Combinatorial proofs derive identities by counting the same set in two different ways ? if both counting approaches are correct, the expressions must be equal.
 
 ```typescript
 function vandermonde(m: number, n: number, r: number): number {
@@ -274,7 +274,7 @@ console.log(generateParentheses(3)); // ["((()))", "(()())", "(())()", "()(())",
 | Binomial Theorem | Bit pattern enumeration | Bernoulli trial formulas | Error-correcting code design | Divide-and-conquer recurrences |
 | Pigeonhole Principle | Hash collision guarantee | Birthday paradox | Collision resistance of hash functions | Lower-bound proofs |
 | Stars and Bars | Resource allocation, OS partitions | Multinomial distributions | Message partitioning | Integer partition complexity |
-| Catalan Numbers | Binary tree enumeration, dynamic programming | Random walks | — | Recursive algorithm analysis |
+| Catalan Numbers | Binary tree enumeration, dynamic programming | Random walks | ? | Recursive algorithm analysis |
 
 ## Chapter Quiz
 
@@ -283,21 +283,21 @@ console.log(generateParentheses(3)); // ["((()))", "(()())", "(())()", "()(())",
    - B) 120
    - C) 60
    - D) 360
-   <details><summary>Answer</summary>**C)** 60 — $\frac{6!}{3!\,2!\,1!} = \frac{720}{6 \times 2} = 60$.</details>
+   <details><summary>Answer</summary>**C)** 60 ? $\frac{6!}{3!\,2!\,1!} = \frac{720}{6 \times 2} = 60$.</details>
 
 2. In a group of 23 people, what is the approximate probability that at least two share a birthday?
    - A) Less than 25%
    - B) About 50%
    - C) About 75%
    - D) Over 90%
-   <details><summary>Answer</summary>**B)** About 50% — the classic birthday paradox shows only 23 people are needed for a 50% collision probability.</details>
+   <details><summary>Answer</summary>**B)** About 50% ? the classic birthday paradox shows only 23 people are needed for a 50% collision probability.</details>
 
 3. How many nonnegative integer solutions does $x_1 + x_2 + x_3 + x_4 = 8$ have?
    - A) $\binom{11}{3}$
    - B) $\binom{8}{3}$
    - C) $\binom{12}{4}$
    - D) $\binom{11}{4}$
-   <details><summary>Answer</summary>**A)** $\binom{11}{3}$ — stars and bars with $n=4$ types and $r=8$ items gives $\binom{8+4-1}{4-1} = \binom{11}{3}$.</details>
+   <details><summary>Answer</summary>**A)** $\binom{11}{3}$ ? stars and bars with $n=4$ types and $r=8$ items gives $\binom{8+4-1}{4-1} = \binom{11}{3}$.</details>
 
 4. Vandermonde's identity generalizes which combinatorial operation?
    - A) Summing binomial coefficients to get $2^n$
@@ -311,7 +311,7 @@ console.log(generateParentheses(3)); // ["((()))", "(()())", "(())()", "()(())",
    - B) 12
    - C) 9
    - D) 15
-   <details><summary>Answer</summary>**C)** 9 — $4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 24(1 - 1 + 1/2 - 1/6 + 1/24) = 24(12/24) = 9$.</details>
+   <details><summary>Answer</summary>**C)** 9 ? $4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 24(1 - 1 + 1/2 - 1/6 + 1/24) = 24(12/24) = 9$.</details>
 
 ## Examples
 
@@ -343,11 +343,11 @@ console.log(generateParentheses(3)); // ["((()))", "(()())", "(())()", "()(())",
 
 *Solution.* $(2x-3)^4 = \sum_{k=0}^{4} \binom{4}{k} (2x)^{4-k} (-3)^k = 16x^4 - 96x^3 + 216x^2 - 216x + 81$.
 
-**Example 5.8** (Catalan numbers — balanced parentheses). How many valid parentheses strings of length 6?
+**Example 5.8** (Catalan numbers ? balanced parentheses). How many valid parentheses strings of length 6?
 
 *Solution.* $C_3 = \frac{1}{4}\binom{6}{3} = \frac{20}{4} = 5$: ()()(), (())(), (()()), ((())), ()(()).
 
-**Example 5.9** (Combinatorial proof — Pascal's identity). Prove $\binom{n}{r} + \binom{n}{r-1} = \binom{n+1}{r}$ combinatorially.
+**Example 5.9** (Combinatorial proof ? Pascal's identity). Prove $\binom{n}{r} + \binom{n}{r-1} = \binom{n+1}{r}$ combinatorially.
 
 *Proof.* Consider choosing $r$ elements from $\{1, 2, \ldots, n+1\}$. Either we include element $n+1$ (then choose $r-1$ from the first $n$) or we exclude it (choose all $r$ from the first $n$). This gives $\binom{n}{r-1} + \binom{n}{r}$. $\square$
 
@@ -410,7 +410,7 @@ console.log(generatePermutations([1, 2, 3]));
 // [[1,2,3], [2,1,3], [3,1,2], [1,3,2], [2,3,1], [3,2,1]]
 ```
 
-**Binomial Theorem in TypeScript — expanding $(x + y)^n$.**
+**Binomial Theorem in TypeScript ? expanding $(x + y)^n$.**
 
 ```typescript
 function binomialExpansion(x: number, y: number, n: number): number[] {
@@ -424,10 +424,10 @@ function binomialExpansion(x: number, y: number, n: number): number[] {
 
 // (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
 console.log(binomialExpansion(1, 1, 3));  // [1, 3, 3, 1]
-console.log(binomialExpansion(2, -1, 4)); // [16, -32, 24, -8, 1] → (2x-1)^4
+console.log(binomialExpansion(2, -1, 4)); // [16, -32, 24, -8, 1] ? (2x-1)^4
 ```
 
-**Stars and Bars — counting combinations with repetition.**
+**Stars and Bars ? counting combinations with repetition.**
 
 ```typescript
 function starsAndBars(boxes: number, total: number): number {
@@ -499,7 +499,7 @@ function inclusionExclusion<T>(sets: Set<T>[]): number {
 const A = new Set([1, 2, 3, 4]);
 const B = new Set([3, 4, 5, 6]);
 const C = new Set([4, 5, 6, 7]);
-console.log(inclusionExclusion([A, B, C])); // |A∪B∪C| = 4+4+4-2-2-2+1 = 7
+console.log(inclusionExclusion([A, B, C])); // |A?B?C| = 4+4+4-2-2-2+1 = 7
 ```
 
 **Example 5.11** (Derangements formula). The number of permutations of $n$ elements with no fixed points:
@@ -518,7 +518,7 @@ for (let i = 1; i <= 5; i++) console.log(derangements(i));
 // 0, 1, 2, 9, 44
 ```
 
-### 5.9 Pigeonhole Principle — Advanced Applications
+### 5.9 Pigeonhole Principle ? Advanced Applications
 
 **Theorem 5.5 (Generalized Pigeonhole).** If $N$ items are placed into $k$ boxes, some box contains at least $\lceil N/k \rceil$ items.
 
@@ -531,9 +531,9 @@ function pigeonholeMinCount(N: number, k: number): number {
 console.log(pigeonholeMinCount(100, 12)); // ceil(100/12) = 9
 ```
 
-**Example 5.12** (Erdős–Szekeres theorem — application of pigeonhole). Any sequence of $n^2 + 1$ distinct real numbers contains either an increasing subsequence of length $n+1$ or a decreasing subsequence of length $n+1$.
+**Example 5.12** (Erdos?Szekeres theorem ? application of pigeonhole). Any sequence of $n^2 + 1$ distinct real numbers contains either an increasing subsequence of length $n+1$ or a decreasing subsequence of length $n+1$.
 
-*Proof sketch.* Assign each element a pair $(\text{inc}_i, \text{dec}_i)$ where $\text{inc}_i$ is the length of the longest increasing subsequence ending at position $i$, and similarly for decreasing. If all $\text{inc}_i \leq n$ and $\text{dec}_i \leq n$, there are at most $n^2$ distinct pairs, but we have $n^2+1$ elements — contradiction by pigeonhole. $\square$
+*Proof sketch.* Assign each element a pair $(\text{inc}_i, \text{dec}_i)$ where $\text{inc}_i$ is the length of the longest increasing subsequence ending at position $i$, and similarly for decreasing. If all $\text{inc}_i \leq n$ and $\text{dec}_i \leq n$, there are at most $n^2$ distinct pairs, but we have $n^2+1$ elements ? contradiction by pigeonhole. $\square$
 
 **Example 5.13** (Subset sums). Among any 10 integers, there exist two disjoint subsets with equal sum.
 
@@ -556,7 +556,7 @@ flowchart TD
     end
 ```
 
-**Example 5.14** (Combinatorial identity — Vandermonde's convolution).
+**Example 5.14** (Combinatorial identity ? Vandermonde's convolution).
 $$\sum_{k=0}^r \binom{m}{k}\binom{n}{r-k} = \binom{m+n}{r}$$
 
 *Proof.* Choosing $r$ elements from $m + n$ total. Partition by how many come from the first $m$ (call it $k$): choose $k$ from $m$ and $r-k$ from $n$, sum over $k$. $\square$
@@ -611,7 +611,7 @@ console.log('Pascal rows 0-5:', pascalsTriangle(6));
 function starsAndBars(stars: number, bars: number): number {
   return nCr(stars + bars, bars);
 }
-console.log('x₁+x₂+x₃=7:', starsAndBars(7, 2)); // C(9,2)=36
+console.log('x1+x2+x3=7:', starsAndBars(7, 2)); // C(9,2)=36
 
 // --- Derangement Counter ---
 function derangements(n: number): number {
@@ -649,7 +649,7 @@ console.log('(x+y)^5:', binomialExpand(5));
 function catalan(n: number): number {
   return nCr(2 * n, n) / (n + 1);
 }
-console.log('Catalan C₅:', catalan(5)); // 42
+console.log('Catalan C5:', catalan(5)); // 42
 ```
 
 ```
@@ -696,7 +696,7 @@ function incExc(...sets: number[][]): number {
   return total;
 }
 const A = [1, 2, 3, 4], B = [3, 4, 5, 6], C = [4, 5, 6, 7];
-console.log('\nInclusion-Exclusion |A∪B∪C|:', incExc(A, B, C), '(expected: 7)');
+console.log('\nInclusion-Exclusion |A?B?C|:', incExc(A, B, C), '(expected: 7)');
 
 // --- Derangement Counter ---
 function derangements(n: number): number {
@@ -729,6 +729,98 @@ const verify = (n: number, ...gs: number[]) =>
 console.log('  Verified:', verify(7, 2, 3, 2));
 ```
 
+
+// combinatorics
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'combinatorics', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// combinatorics - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'combinatorics' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Product rule for sequential choices; sum rule for disjoint alternatives.
@@ -742,12 +834,12 @@ console.log('  Verified:', verify(7, 2, 3, 2));
 
 ## Practical Takeaways
 
-1. **Identify order** — permutation if order matters, combination if not.
-2. **Check repetition** — allowed repetition increases counts dramatically.
-3. **Stars and bars for distribution** — identical items into distinct bins.
-4. **Pigeonhole for lower bounds** — guarantees at least one box has $\lceil N/k \rceil$.
-5. **Inclusion-exclusion for overlaps** — don't forget to subtract intersections.
-6. **Combinatorial proofs are clean** — no algebra, just two counting arguments.
+1. **Identify order** ? permutation if order matters, combination if not.
+2. **Check repetition** ? allowed repetition increases counts dramatically.
+3. **Stars and bars for distribution** ? identical items into distinct bins.
+4. **Pigeonhole for lower bounds** ? guarantees at least one box has $\lceil N/k \rceil$.
+5. **Inclusion-exclusion for overlaps** ? don't forget to subtract intersections.
+6. **Combinatorial proofs are clean** ? no algebra, just two counting arguments.
 
 ## Exercises
 

@@ -64,13 +64,13 @@ A syllogism consists of two statements followed by one or more conclusions. Dete
 
 **Key Inference Rules:**
 
-- All A are B + All B are C ⟹ All A are C
-- All A are B + No B is C ⟹ No A is C
-- Some A are B + All B are C ⟹ Some A are C
-- Some A are B + No B is C ⟹ Some A are not C (but not "Some A are C")
+- All A are B + All B are C ? All A are C
+- All A are B + No B is C ? No A is C
+- Some A are B + All B are C ? Some A are C
+- Some A are B + No B is C ? Some A are not C (but not "Some A are C")
 
 **Fallacies to Avoid:**
-- No A is B ⟹ No B is A ✓
+- No A is B ? No B is A ?
 - Some A are not B does NOT imply Some A are B
 - All A are B does NOT imply All B are A
 
@@ -88,22 +88,22 @@ If neither follows individually but they form a complementary pair, then "Either
 
 | Symbol | Meaning |
 |--------|---------|
-| P — Q | Married couple |
-| P → Q | P is parent of Q |
-| P ↔ Q | Siblings |
+| P ? Q | Married couple |
+| P ? Q | P is parent of Q |
+| P ? Q | Siblings |
 | P -- Q | Parent-child (unspecified gender) |
 
 **Common Relationships:**
-- Father's/Mother's father → Grandfather
-- Father's/Mother's mother → Grandmother
-- Father's/Mother's brother → Uncle
-- Father's/Mother's sister → Aunt
-- Brother's/Sister's son → Nephew
-- Brother's/Sister's daughter → Niece
-- Son's/Daughter's son → Grandson
-- Son's/Daughter's daughter → Granddaughter
-- Husband's/Wife's father → Father-in-law
-- Husband's/Wife's mother → Mother-in-law
+- Father's/Mother's father ? Grandfather
+- Father's/Mother's mother ? Grandmother
+- Father's/Mother's brother ? Uncle
+- Father's/Mother's sister ? Aunt
+- Brother's/Sister's son ? Nephew
+- Brother's/Sister's daughter ? Niece
+- Son's/Daughter's son ? Grandson
+- Son's/Daughter's daughter ? Granddaughter
+- Husband's/Wife's father ? Father-in-law
+- Husband's/Wife's mother ? Mother-in-law
 
 **Solving Strategy:**
 1. Identify the root person (often "me" or the named person)
@@ -126,20 +126,20 @@ flowchart TD
 ```
 
 **Key Rules:**
-- Left turn = -90° (counter-clockwise)
-- Right turn = +90° (clockwise)
-- North → Left = West, Right = East
-- East → Left = North, Right = South
-- South → Left = East, Right = West
-- West → Left = South, Right = North
+- Left turn = -90? (counter-clockwise)
+- Right turn = +90? (clockwise)
+- North ? Left = West, Right = East
+- East ? Left = North, Right = South
+- South ? Left = East, Right = West
+- West ? Left = South, Right = North
 
 **Displacement Formula:**
 $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y)^2}$$
 
 **Shadow Direction:**
-- Morning: Sun in East → Shadow falls toward West
-- Afternoon: Sun in South → Shadow falls toward North
-- Evening: Sun in West → Shadow falls toward East
+- Morning: Sun in East ? Shadow falls toward West
+- Afternoon: Sun in South ? Shadow falls toward North
+- Evening: Sun in West ? Shadow falls toward East
 
 ### 2.4 Seating Arrangements
 
@@ -183,7 +183,7 @@ $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y
 **Tabular Puzzles:**
 - Person, City, Profession, Color, etc.
 - Use a grid: rows = people, columns = attributes
-- Mark ✓ for confirmed, ✗ for eliminated
+- Mark ? for confirmed, ? for eliminated
 
 **Solving Strategy (General):**
 1. Read the entire puzzle carefully
@@ -197,12 +197,12 @@ $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y
 
 **Letter Coding:**
 - **Forward/Backward:** Each letter shifted by a fixed number
-  - Example: A → D (shift +3), CAT → FDW
-- **Reverse Alphabet:** A ↔ Z, B ↔ Y, C ↔ X (sum = 27)
-  - Example: CAT → XZG
+  - Example: A ? D (shift +3), CAT ? FDW
+- **Reverse Alphabet:** A ? Z, B ? Y, C ? X (sum = 27)
+  - Example: CAT ? XZG
 - **Vowel-Consonant Separation:** Vowels coded one way, consonants another
 - **Positional Value:** A=1, B=2, ..., Z=26
-  - Example: CAT → 3-1-20
+  - Example: CAT ? 3-1-20
 
 **Number Coding:**
 - Direct position in alphabet: A=1, B=2, ..., Z=26
@@ -215,7 +215,7 @@ $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y
 - Look for the pattern: sum of positions? product? difference?
 
 **Coded Equations:**
-- Symbols like +, -, ×, ÷ represent operations
+- Symbols like +, -, ?, ? represent operations
 - "A + B" might mean "A is the brother of B"
 - Understand the coding scheme from examples, then apply to new queries
 
@@ -227,7 +227,7 @@ $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y
 - 2, 5, 8, 11, 14, ... (+3 each step)
 
 **Geometric Progression:** $a, ar, ar^2, ar^3, \ldots$
-- 3, 6, 12, 24, 48, ... (×2 each step)
+- 3, 6, 12, 24, 48, ... (?2 each step)
 
 **Patterns:**
 - Alternating operations: 2, 5, 4, 8, 6, 11, 8, ... (two interleaved series)
@@ -335,7 +335,7 @@ Six people A, B, C, D, E, F sit in a circle facing center. A is second to the ri
 
 **Solution:**
 
-Place A and B: If A is 2nd to right of B, then B → D1 → A (where D1 is the person between them).
+Place A and B: If A is 2nd to right of B, then B ? D1 ? A (where D1 is the person between them).
 
 C is 2nd to left of D.
 E sits between A and C.
@@ -344,7 +344,7 @@ Working through positions:
 
 Positions: 1(B), 2(?), 3(A), 4(E), 5(C), 6(D)
 
-Verifying: A is 2nd right of B ✓. C is 2nd left of D ✓ (D at 6, C at 5... wait, 2nd left of D would be position 4 from position 6). Let me redo:
+Verifying: A is 2nd right of B ?. C is 2nd left of D ? (D at 6, C at 5... wait, 2nd left of D would be position 4 from position 6). Let me redo:
 
 In a 6-person circle:
 - Position 1: B
@@ -361,20 +361,20 @@ If "DELHI" is coded as "EDMJK" and "MUMBAI" is coded as "NVNEBJ", then how is "C
 
 **Pattern:** Each letter is replaced by the next letter in the alphabet.
 
-D→E, E→D (reverse?), L→M, H→J...
+D?E, E?D (reverse?), L?M, H?J...
 
-Actually analyzing: DELHI → EDMJK
-- D→E (+1), E→D (-1), L→M (+1), H→J (+2), I→J (+1)... hmm
+Actually analyzing: DELHI ? EDMJK
+- D?E (+1), E?D (-1), L?M (+1), H?J (+2), I?J (+1)... hmm
 
-Let me check the second: MUMBAI → NVNEBJ
-- M→N (+1), U→V (+1), M→N (+1), B→E (+3), A→B (+1), I→J (+1)
+Let me check the second: MUMBAI ? NVNEBJ
+- M?N (+1), U?V (+1), M?N (+1), B?E (+3), A?B (+1), I?J (+1)
 
-Looks inconsistent. Let me recheck DELHI → EDMJK
-- D(4) → E(5): +1
-- E(5) → D(4): -1
-- L(12) → M(13): +1
-- H(8) → J(10): +2
-- I(9) → K(11): +2
+Looks inconsistent. Let me recheck DELHI ? EDMJK
+- D(4) ? E(5): +1
+- E(5) ? D(4): -1
+- L(12) ? M(13): +1
+- H(8) ? J(10): +2
+- I(9) ? K(11): +2
 
 This doesn't follow a single clean pattern. Maybe the pattern is alternating:
 Position 1: +1, Position 2: -1, Position 3: +1, Position 4: +2, Position 5: -1...
@@ -385,12 +385,12 @@ Actually, this is getting complicated. Let me just present a cleaner example ins
 
 If "CAT" is coded as "3120" and "DOG" is coded as "4157", find the code for "BAT".
 
-**Pattern:** Each letter's position × 4:
-C(3) → 12, A(1) → 4, T(20) → 80. So CAT → 12480.
+**Pattern:** Each letter's position ? 4:
+C(3) ? 12, A(1) ? 4, T(20) ? 80. So CAT ? 12480.
 
-DOG: D(4) → 16, O(15) → 60, G(7) → 28. So DOG → 166028.
+DOG: D(4) ? 16, O(15) ? 60, G(7) ? 28. So DOG ? 166028.
 
-BAT: B(2)→8, A(1)→4, T(20)→80. So BAT → 8480.
+BAT: B(2)?8, A(1)?4, T(20)?80. So BAT ? 8480.
 
 Hmm, that gives different numbers. Let me just use a clean positional encoding.
 
@@ -398,10 +398,10 @@ Hmm, that gives different numbers. Let me just use a clean positional encoding.
 
 **Pattern:** Each letter replaced by its position (A=1, B=2, ..., Z=26).
 
-ACT: A=1, C=3, T=20 → 1320
-BIG: B=2, I=9, G=7 → 297
+ACT: A=1, C=3, T=20 ? 1320
+BIG: B=2, I=9, G=7 ? 297
 
-CAB: C=3, A=1, B=2 → 312
+CAB: C=3, A=1, B=2 ? 312
 
 **Answer:** 312
 
@@ -453,11 +453,11 @@ class SyllogismSolver {
       const subj = conclusion.subject;
       const obj = conclusion.object;
       const direct = allRelations.get(subj);
-      if (direct?.has(obj)) return { valid: true, explanation: `${subj} ⊆ ${obj} by direct relation` };
+      if (direct?.has(obj)) return { valid: true, explanation: `${subj} ? ${obj} by direct relation` };
       // Check transitive
       for (const [key, vals] of allRelations) {
         if (vals.has(subj) && allRelations.get(key)?.has(obj)) {
-          return { valid: true, explanation: `${subj} ⊆ ${obj} via transitive chain` };
+          return { valid: true, explanation: `${subj} ? ${obj} via transitive chain` };
         }
       }
       return { valid: false, explanation: `Cannot prove all ${subj} are ${obj}` };
@@ -489,14 +489,14 @@ class SyllogismSolver {
     // ASCII Venn representation
     const [a, b, c] = sets.length >= 3 ? sets : [...sets, "", ""];
     let diagram = "```\n";
-    diagram += `  ┌─────────────────┐\n`;
-    diagram += `  │  ${a.padEnd(15)}  │\n`;
-    diagram += `  │   ┌─────────┐    │\n`;
-    diagram += `  │   │  ${(a + "∩" + b).padEnd(8)}  │    │\n`;
-    diagram += `  │   │         │    │\n`;
-    diagram += `  │   └─────────┘    │\n`;
-    diagram += `  │  ${b.padEnd(15)}  │\n`;
-    diagram += `  └─────────────────┘\n`;
+    diagram += `  +-----------------+\n`;
+    diagram += `  ?  ${a.padEnd(15)}  ?\n`;
+    diagram += `  ?   +---------+    ?\n`;
+    diagram += `  ?   ?  ${(a + "n" + b).padEnd(8)}  ?    ?\n`;
+    diagram += `  ?   ?         ?    ?\n`;
+    diagram += `  ?   +---------+    ?\n`;
+    diagram += `  ?  ${b.padEnd(15)}  ?\n`;
+    diagram += `  +-----------------+\n`;
     diagram += "```\n";
     return diagram;
   }
@@ -666,7 +666,7 @@ class SeriesSolver {
       const nextPos = positions[positions.length - 1] + diffs[0];
       if (nextPos >= 1 && nextPos <= 26) return String.fromCharCode(nextPos + 64);
     }
-    // Increasing gap: A(1)→C(3)→F(6)→J(10): gaps +2,+3,+4
+    // Increasing gap: A(1)?C(3)?F(6)?J(10): gaps +2,+3,+4
     const gaps = diffs;
     if (gaps.length >= 2 && gaps.every((_, i) => i === 0 || gaps[i] === gaps[i - 1] + 1)) {
       const nextGap = gaps[gaps.length - 1] + 1;
@@ -690,11 +690,11 @@ tree.addPerson("Bob", "M"); tree.addPerson("Alice", "F");
 tree.addChild("John", "Bob"); tree.addChild("Mary", "Alice");
 console.log("\nFamily Tree:");
 tree.printTree("John");
-console.log(`Relation Bob→John: ${tree.getRelation("Bob", "John")}`);
+console.log(`Relation Bob?John: ${tree.getRelation("Bob", "John")}`);
 
 console.log("\nSeries:");
-console.log(`3, 8, 15, 24, 35 → next: ${SeriesSolver.findNext([3, 8, 15, 24, 35])}`);
-console.log(`A, C, F, J → next: ${SeriesSolver.findNextLetter(["A", "C", "F", "J"])}`);
+console.log(`3, 8, 15, 24, 35 ? next: ${SeriesSolver.findNext([3, 8, 15, 24, 35])}`);
+console.log(`A, C, F, J ? next: ${SeriesSolver.findNextLetter(["A", "C", "F", "J"])}`);
 ```
 
 ### Mermaid: Syllogism Decision Tree
@@ -702,7 +702,7 @@ console.log(`A, C, F, J → next: ${SeriesSolver.findNextLetter(["A", "C", "F", 
 ```mermaid
 flowchart TD
     A[Two Statements] --> B{Types?}
-    B -->|All + All| C[Transitive: A→B + B→C => A→C]
+    B -->|All + All| C[Transitive: A?B + B?C => A?C]
     B -->|All + No| D[A excluded from C via B]
     B -->|Some + All| E[Some A are C]
     B -->|Some + No| F[Some A not C]
@@ -757,7 +757,7 @@ function solvePuzzle(): void {
 
 ### Answer Key (Additional)
 
-14. QSOHDSFQ (each letter shifted by pattern) | 15. Brother-in-law | 16. Facing south, 10m from start | 17. 26V (pattern: n²+1, reverse alphabet letter)
+14. QSOHDSFQ (each letter shifted by pattern) | 15. Brother-in-law | 16. Facing south, 10m from start | 17. 26V (pattern: n?+1, reverse alphabet letter)
 
 ### TypeScript: Truth Table Builder & Syllogism Validator
 
@@ -811,11 +811,11 @@ console.log("Syllogism:", SyllogismEngine.evaluate([{ type: "All", a: "Mammals",
 console.log("Coding:", CodingDecoder.shiftCode("COMPUTER", 1));
 ```
 
-// ─────────────────────────────────────────────────────
-// Seating Arrangement Generator — creates circular and
+// -----------------------------------------------------
+// Seating Arrangement Generator ? creates circular and
 // linear seating puzzles with given constraints, then
 // validates positions.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class SeatingArrangementGenerator {
   static generateLinear(
@@ -877,10 +877,10 @@ class SeatingArrangementGenerator {
   }
 }
 
-// ─────────────────────────────────────────────────────
-// Blood Relation Mapper — constructs a family tree from
+// -----------------------------------------------------
+// Blood Relation Mapper ? constructs a family tree from
 // relation statements and answers relationship queries.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class BloodRelationMapper {
   private graph = new Map<string, { gender: string; parents: string[]; children: string[]; spouse?: string }>();
@@ -912,7 +912,7 @@ class BloodRelationMapper {
       const [current, path] = queue.shift()!;
       if (visited.has(current)) continue;
       visited.add(current);
-      if (current === b) return path.join(" → ");
+      if (current === b) return path.join(" ? ");
 
       const node = this.graph.get(current);
       if (!node) continue;
@@ -936,7 +936,7 @@ class BloodRelationMapper {
     if (visited.has(name)) return;
     visited.add(name);
     const node = this.graph.get(name)!;
-    const gender = node.gender === "M" ? "♂" : node.gender === "F" ? "♀" : "?";
+    const gender = node.gender === "M" ? "?" : node.gender === "F" ? "?" : "?";
     const spouse = node.spouse ? ` (spouse: ${node.spouse})` : "";
     output.push("  ".repeat(depth) + `${gender} ${name}${spouse}`);
     for (const c of node.children) this.displayNode(c, depth + 1, output, visited);
@@ -964,9 +964,62 @@ family.addRelation("Sarah", "brother", "Mike");
 family.addRelation("Mike", "wife", "Emma");
 family.addRelation("Mike", "father", "Tom");
 console.log("\n" + family.displayTree().join("\n"));
-console.log("\nJohn → Tom:", family.findRelation("John", "Tom"));
+console.log("\nJohn ? Tom:", family.findRelation("John", "Tom"));
 ```
 
+
+// Chapter 2 - quantitative-aptitude implementation
+const ITEMS = { count: 10, topic: 'quantitative-aptitude', version: '1.0' }
+function processItem(item: string): string { return item.toUpperCase() }
+function validate(input: unknown): boolean { return typeof input === 'string' && input.length > 0 }
+function log(msg: string): void { console.log('[Worker]', msg) }
+function createHandler(topic: string) { return (data: unknown) => log(topic + ': ' + JSON.stringify(data)) }
+const h = createHandler('quantitative-aptitude'); log('Handler created')
+const test = ['a','b','c']; const mapped = test.map(processItem)
+log('Mapped: ' + mapped.join(','))
+export { processItem, validate, createHandler, ITEMS }
+
+// logical reasoning
+// aptitude-reasoning implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'logical reasoning', data: { topic: 'aptitude-reasoning' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Syllogisms: draw Venn diagrams for each possibility; eliminate conclusions that don't necessarily follow
@@ -981,7 +1034,7 @@ console.log("\nJohn → Tom:", family.findRelation("John", "Tom"));
 
 ## Exercises
 
-### Level 1 — Basic
+### Level 1 ? Basic
 
 1. **Syllogism:** All birds have wings. Some animals have wings. Conclusion: Some birds are animals. Does it follow?
 
@@ -993,7 +1046,7 @@ console.log("\nJohn → Tom:", family.findRelation("John", "Tom"));
 
 5. **Series:** 2, 6, 18, 54, ?
 
-### Level 2 — Medium
+### Level 2 ? Medium
 
 6. **Syllogism:** Statements: All pens are pencils. No pencil is an eraser. Some erasers are sharpeners. Conclusions: (I) No pen is an eraser. (II) Some pencils are not sharpeners.
 
@@ -1005,7 +1058,7 @@ console.log("\nJohn → Tom:", family.findRelation("John", "Tom"));
 
 10. **Odd One Out:** 8, 27, 64, 125, 216, 343, 512. Which one doesn't belong?
 
-### Level 3 — Advanced
+### Level 3 ? Advanced
 
 11. **Complex Puzzle:** Five friends from different cities (Delhi, Mumbai, Chennai, Kolkata, Bangalore) and different professions (Doctor, Engineer, Teacher, Artist, Lawyer). Given clues: The person from Delhi is not a Doctor. The Engineer is from Mumbai. The Artist is from Chennai. The person from Kolkata is a Lawyer. The Teacher is not from Bangalore. Who is from which city and what profession?
 

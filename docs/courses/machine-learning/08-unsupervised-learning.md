@@ -93,7 +93,7 @@ This weighted selection ensures that centroids are spread across the dataset, re
 flowchart TD
     A[Start: K centroids needed] --> B[Pick 1st centroid uniformly at random]
     B --> C[For each remaining point x, compute Dx: distance to nearest chosen centroid]
-    C --> D[Select next centroid with probability ∝ Dx²]
+    C --> D[Select next centroid with probability ? Dx?]
     D --> E{K centroids chosen?}
     E -- No --> C
     E -- Yes --> F[Run standard K-means with these centroids]
@@ -123,7 +123,7 @@ DBSCAN groups points that are closely packed together, marking points in low-den
 ```mermaid
 flowchart TD
     A[Unlabeled Points] --> B[For each point, find eps-neighborhood]
-    B --> C{Neighbors ≥ minPts?}
+    B --> C{Neighbors = minPts?}
     C -- Yes --> D[Label as Core Point]
     C -- No --> E{Adjacent to a Core Point?}
     E -- Yes --> F[Label as Border Point, assign to cluster]
@@ -145,11 +145,11 @@ flowchart LR
 
 ### Gaussian Mixture Models (GMM)
 
-GMM assumes the data is generated from a mixture of $K$ Gaussian distributions, each with its own mean $\mu_k$ and covariance $\Sigma_k$. Unlike K-means, GMM performs **soft clustering** — each point has a probability of belonging to each cluster.
+GMM assumes the data is generated from a mixture of $K$ Gaussian distributions, each with its own mean $\mu_k$ and covariance $\Sigma_k$. Unlike K-means, GMM performs **soft clustering** ? each point has a probability of belonging to each cluster.
 
 **The EM Algorithm**:
 1. **Initialize**: Parameters $\mu_k$, $\Sigma_k$, and mixing coefficients $\pi_k$ for each component.
-2. **Expectation Step (E-Step)**: Compute the responsibility $\gamma(z_{nk})$ — the probability that point $n$ belongs to component $k$:
+2. **Expectation Step (E-Step)**: Compute the responsibility $\gamma(z_{nk})$ ? the probability that point $n$ belongs to component $k$:
    $$\gamma(z_{nk}) = \frac{\pi_k \mathcal{N}(x_n \mid \mu_k, \Sigma_k)}{\sum_{j=1}^K \pi_j \mathcal{N}(x_n \mid \mu_j, \Sigma_j)}$$
 3. **Maximization Step (M-Step)**: Update parameters using the weighted responsibilities:
    - $\mu_k = \frac{\sum_n \gamma(z_{nk}) x_n}{\sum_n \gamma(z_{nk})}$
@@ -228,22 +228,22 @@ Distance-based clustering algorithms (K-means, DBSCAN, hierarchical) are highly 
 | Robust Scaling | $x' = \frac{x - \text{median}}{\text{IQR}}$ | Resistant to outliers |
 
 **Which distance metrics are affected**:
-- Euclidean, Manhattan, Minkowski — all affected (scale-sensitive)
-- Cosine similarity — unaffected by magnitude (normalized vectors)
-- Correlation distance — unaffected (uses centered data)
+- Euclidean, Manhattan, Minkowski ? all affected (scale-sensitive)
+- Cosine similarity ? unaffected by magnitude (normalized vectors)
+- Correlation distance ? unaffected (uses centered data)
 
 ### Curse of Dimensionality for Clustering
 
-As dimensionality increases, distance metrics become less meaningful — a phenomenon known as the **curse of dimensionality**. This severely impacts clustering algorithms.
+As dimensionality increases, distance metrics become less meaningful ? a phenomenon known as the **curse of dimensionality**. This severely impacts clustering algorithms.
 
 **Why distances fail**:
 - In high dimensions, the ratio between the nearest and farthest point distance converges to 1 (Beyer et al., 1999).
 - Point pairs become almost equally far apart, making proximity-based grouping unreliable.
 
-**Example**: For a unit cube in $d$ dimensions, the fraction of volume near the surface is $1 - 0.5^d$. At $d = 10$, over 99.9% of the volume is in the outer shell — points are nearly all "far apart".
+**Example**: For a unit cube in $d$ dimensions, the fraction of volume near the surface is $1 - 0.5^d$. At $d = 10$, over 99.9% of the volume is in the outer shell ? points are nearly all "far apart".
 
 **Mitigation strategies**:
-1. **Dimensionality reduction** first (PCA, t-SNE, UMAP — see Chapter 9).
+1. **Dimensionality reduction** first (PCA, t-SNE, UMAP ? see Chapter 9).
 2. **Feature selection** to retain only informative features.
 3. **Subspace clustering** methods that cluster in different feature subsets.
 4. **Increase minPts** in DBSCAN (rule of thumb: $\text{minPts} \ge 2 \times d$).
@@ -428,7 +428,7 @@ function silhouetteScore(
     }
     a_i = countA > 0 ? a_i / countA : 0;
 
-    // Inter-cluster distance b(i) — smallest mean distance to another cluster
+    // Inter-cluster distance b(i) ? smallest mean distance to another cluster
     let b_i = Infinity;
     for (let c = 0; c < k; c++) {
       if (c === clusterI) continue;
@@ -505,11 +505,11 @@ class DBSCAN {
       const neighbors = this.regionQuery(points, i);
 
       if (neighbors.length < this.minPts) {
-        labels[i] = -1; // Noise (tentative — may become border point later)
+        labels[i] = -1; // Noise (tentative ? may become border point later)
         continue;
       }
 
-      // Core point — start new cluster
+      // Core point ? start new cluster
       const queue = [...neighbors];
       labels[i] = clusterId;
 
@@ -621,12 +621,12 @@ const report = generateSegmentationReport(
 );
 
 console.table(report);
-// ┌─────────┬──────┬──────┬───────────┬──────────┬──────────────────────┐
-// │ (index) │  id  │ size │ avgIncome │ avgScore │        label         │
-// ├─────────┼──────┼──────┼───────────┼──────────┼──────────────────────┤
-// │    0    │  0   │  6   │   0.175   │  0.5317  │   'Young Spenders'   │
-// │    1    │  1   │  4   │   0.7425  │   0.525  │ 'Premium Loyalists'  │
-// └─────────┴──────┴──────┴───────────┴──────────┴──────────────────────┘
+// +---------------------------------------------------------------------+
+// ? (index) ?  id  ? size ? avgIncome ? avgScore ?        label         ?
+// +---------+------+------+-----------+----------+----------------------?
+// ?    0    ?  0   ?  6   ?   0.175   ?  0.5317  ?   'Young Spenders'   ?
+// ?    1    ?  1   ?  4   ?   0.7425  ?   0.525  ? 'Premium Loyalists'  ?
+// +---------------------------------------------------------------------+
 ```
 
 ---
@@ -809,6 +809,98 @@ console.log("DBSCAN clusters:", dbscan.getClusterCount(), "noise:", dbscan.getNo
 console.log("Silhouette score:", silhouetteScore(data, dbLabels).toFixed(4));
 ```
 
+
+// unsupervised learning
+// ml-supervised-unsupervised implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'unsupervised learning', data: { topic: 'ml-supervised-unsupervised' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// unsupervised learning - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'ml-algorithms demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'machine-learning', chapter: 'unsupervised learning' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('ml-algorithms'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Unsupervised learning finds patterns in unlabeled data.
@@ -818,7 +910,7 @@ console.log("Silhouette score:", silhouetteScore(data, dbLabels).toFixed(4));
 - DBSCAN identifies clusters based on density, handling arbitrary shapes and naturally labeling outliers as noise points.
 - Gaussian Mixture Models extend clustering to the probabilistic domain, providing soft assignments with covariance modeling.
 - Internal validation metrics (silhouette score, Davies-Bouldin, Calinski-Harabasz) help evaluate cluster quality when ground truth is unavailable.
-- Feature scaling is essential before clustering — all distance-based methods are sensitive to feature magnitudes.
+- Feature scaling is essential before clustering ? all distance-based methods are sensitive to feature magnitudes.
 - The curse of dimensionality makes distance metrics less meaningful in high dimensions; dimensionality reduction is recommended as a preprocessing step.
 
 ---
@@ -832,7 +924,7 @@ console.log("Silhouette score:", silhouetteScore(data, dbLabels).toFixed(4));
 - **Prefer GMM when uncertainty matters.** If you need to know how confident a point's cluster assignment is, or if clusters have different shapes/sizes, GMM's probabilistic framework provides richer insight than K-means.
 - **Tune DBSCAN's eps with a k-distance plot.** Plot sorted distances to the k-th nearest neighbor (where $k = \text{minPts}$). The "elbow" in this plot is a good starting value for eps.
 - **Understand the curse of dimensionality.** Beyond 20-30 features, distance-based clustering becomes unreliable. Always reduce dimensionality first with PCA, t-SNE, or UMAP.
-- **Beware of the "all-inertia" trap.** WCSS always decreases as K increases. Never choose K solely by minimizing WCSS — use silhouette score or domain knowledge as a counterbalance.
+- **Beware of the "all-inertia" trap.** WCSS always decreases as K increases. Never choose K solely by minimizing WCSS ? use silhouette score or domain knowledge as a counterbalance.
 
 ---
 
@@ -891,7 +983,7 @@ Test your understanding of Unsupervised Learning.
 **3.** A silhouette score close to 1 indicates:
 
 <details><summary>**Answer**</summary>
-**A)** A silhouette score near 1 means each point is much closer to its own cluster than to neighboring clusters — indicating well-separated, compact clusters.
+**A)** A silhouette score near 1 means each point is much closer to its own cluster than to neighboring clusters ? indicating well-separated, compact clusters.
 </details>
 
 - A) Well-separated, dense clusters
@@ -902,7 +994,7 @@ Test your understanding of Unsupervised Learning.
 **4.** Which of the following is NOT a property of DBSCAN?
 
 <details><summary>**Answer**</summary>
-**B)** DBSCAN does not require K in advance, it handles arbitrary shapes, and it identifies noise. However, it does NOT assume spherical clusters — that limitation belongs to K-means.
+**B)** DBSCAN does not require K in advance, it handles arbitrary shapes, and it identifies noise. However, it does NOT assume spherical clusters ? that limitation belongs to K-means.
 </details>
 
 - A) It can identify noise points as outliers

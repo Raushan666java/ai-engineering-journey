@@ -1,6 +1,6 @@
 # Chapter 1: Introduction to Compiler Design
 
-**← Prerequisite:** None | **Next:** [Chapter 2: Lexical Analysis](02-lexical.md)
+**? Prerequisite:** None | **Next:** [Chapter 2: Lexical Analysis](02-lexical.md)
 
 ## Learning Objectives
 
@@ -59,9 +59,9 @@ flowchart LR
 
 A **compiler** is a program that reads a program written in a source language and translates it into an equivalent program in a target language. This translation process is conventionally partitioned into two broad components: the **analysis phase** (front end) and the **synthesis phase** (back end). Analysis decomposes the source program into a structured intermediate representation, exposing its grammatical structure and semantic content. Synthesis constructs the desired target program from this intermediate representation, typically performing resource-conscious transformations such as register allocation and instruction selection.
 
-The rationale for this division is modularity. The front end depends only on the source language and is largely independent of the target architecture. The back end depends on the target architecture and is largely independent of the source language. A compiler writer may combine N front ends with M back ends to support N source languages on M target machines, incurring **N + M** development efforts rather than **N × M**. This architecture is prominently realized in the GNU Compiler Collection (GCC) and the LLVM Compiler Infrastructure, where language-specific front ends (C, C++, Fortran, Rust, Swift) share common back ends (x86, ARM, RISC-V, WebAssembly).
+The rationale for this division is modularity. The front end depends only on the source language and is largely independent of the target architecture. The back end depends on the target architecture and is largely independent of the source language. A compiler writer may combine N front ends with M back ends to support N source languages on M target machines, incurring **N + M** development efforts rather than **N ? M**. This architecture is prominently realized in the GNU Compiler Collection (GCC) and the LLVM Compiler Infrastructure, where language-specific front ends (C, C++, Fortran, Rust, Swift) share common back ends (x86, ARM, RISC-V, WebAssembly).
 
-> **One-Sentence Takeaway:** The N+M model is the central architectural insight in compiler design — it reduces the implementation problem from N×M to N+M.
+> **One-Sentence Takeaway:** The N+M model is the central architectural insight in compiler design ? it reduces the implementation problem from N?M to N+M.
 
 > **Pro Tip:** When designing a new language, always plan for an intermediate representation. A well-designed IR lets you target multiple architectures with minimal additional effort.
 
@@ -204,7 +204,7 @@ class SymbolTable {
 // Usage example
 const symtab = new SymbolTable();
 symtab.declare("x", "int", "variable");
-symtab.declare("printf", "(int)→int", "function");
+symtab.declare("printf", "(int)?int", "function");
 
 symtab.enterScope(); // block scope
 symtab.declare("x", "float", "variable"); // shadows outer x
@@ -228,15 +228,15 @@ Let:
 - `C_jit_exec` = cost of executing a JIT-compiled statement
 
 Total costs:
-- **AOT compiler**: `C_compile + N × C_machine`
-- **Interpreter**: `N × C_interpret`
-- **JIT compiler**: `C_jit_compile + N × C_jit_exec`
+- **AOT compiler**: `C_compile + N ? C_machine`
+- **Interpreter**: `N ? C_interpret`
+- **JIT compiler**: `C_jit_compile + N ? C_jit_exec`
 
-Typical ratios: `C_interpret ≈ 10-50 × C_machine`, `C_jit_exec ≈ 1.5-3 × C_machine`, `C_jit_compile ≈ 0.1-0.5 × C_compile`.
+Typical ratios: `C_interpret ? 10-50 ? C_machine`, `C_jit_exec ? 1.5-3 ? C_machine`, `C_jit_compile ? 0.1-0.5 ? C_compile`.
 
-**Break-even analysis**: A JIT beats interpretation when `C_jit_compile / (C_interpret - C_jit_exec) < N`. For a method executing 10,000+ iterations, JIT almost always wins. JIT beats AOT when startup time matters and total execution is bounded — the JIT compiles only hot paths while AOT compiles everything.
+**Break-even analysis**: A JIT beats interpretation when `C_jit_compile / (C_interpret - C_jit_exec) < N`. For a method executing 10,000+ iterations, JIT almost always wins. JIT beats AOT when startup time matters and total execution is bounded ? the JIT compiles only hot paths while AOT compiles everything.
 
-Modern virtual machine implementations for Java (HotSpot) and .NET (RyūJIT) employ JIT compilation, combining portability with performance approaching AOT. JIT systems may also employ **adaptive optimization**, where frequently executed methods are recompiled at higher optimization levels.
+Modern virtual machine implementations for Java (HotSpot) and .NET (RyuJIT) employ JIT compilation, combining portability with performance approaching AOT. JIT systems may also employ **adaptive optimization**, where frequently executed methods are recompiled at higher optimization levels.
 
 ### Bootstrapping and Cross-Compilation
 
@@ -261,7 +261,7 @@ graph TD
 A **T-diagram** is a three-cornered notation: the top corner is the source language, the left corner is the implementation language, and the right corner is the target language. For a compiler `C` that translates `S` to `T` and is written in `L`:
 
 ```
-    S → T
+    S ? T
    /     \
   L       L
 ```
@@ -509,7 +509,7 @@ Compilers must handle errors gracefully, reporting them clearly without crashing
 
 1. **Panic mode**: On error, discard input tokens until a synchronizing token (e.g., `;`, `}`) is found. Simple and prevents cascading errors.
 2. **Phrase-level recovery**: Insert, delete, or replace tokens to complete the current construct (e.g., insert a missing semicolon).
-3. **Error productions**: Augment the grammar with productions that deliberately match common mistakes (e.g., `stmt → error ;`), associating recovery actions.
+3. **Error productions**: Augment the grammar with productions that deliberately match common mistakes (e.g., `stmt ? error ;`), associating recovery actions.
 4. **Global correction**: Find the minimal edit distance to a valid program (expensive, used in some IDEs).
 
 TypeScript implementation of lexical error recovery:
@@ -570,9 +570,101 @@ class ErrorRecoveringLexer {
 2. **Scope management in the symbol table**: Use a stack of scopes with enter/exit operations. Always test deeply nested scopes with shadowed identifiers.
 3. **Start with a working interpreter**: For a new language, build an interpreter first. It gives you instant feedback and is much faster to implement than a full compiler.
 4. **Leverage existing tools**: Use Lex/Flex, Yacc/Bison, or ANTLR for the front end. Focus your effort on optimization and code generation where tool support is weaker.
-5. **Error recovery is a feature**: A compiler that crashes on the first error is frustrating. Implement panic-mode recovery early — it costs little but dramatically improves usability.
+5. **Error recovery is a feature**: A compiler that crashes on the first error is frustrating. Implement panic-mode recovery early ? it costs little but dramatically improves usability.
 6. **Plan for self-hosting**: Even if you never self-host, designing the language to be compilable in itself leads to cleaner semantics.
 
+
+// introduction
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'introduction', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// introduction - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'introduction' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Compilers translate source programs into target programs through a sequence of phases organized into front end (analysis) and back end (synthesis). Lexical analysis, syntax analysis, semantic analysis, intermediate code generation, optimization, and code generation each transform one representation into another. Interpreters offer flexibility at the cost of execution speed, while JIT compilers attempt to bridge the gap. Specialized tools automate the construction of scanners, parsers, and other compiler components. The modern three-phase architecture with a shared IR enables efficient retargeting across source languages and target machines. Bootstrapping and T-diagrams illustrate how compilers can be self-hosting, and careful error handling strategies ensure robustness.

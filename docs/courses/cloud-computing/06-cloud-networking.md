@@ -1,4 +1,4 @@
-﻿# Chapter 6: Cloud Networking
+# Chapter 6: Cloud Networking
 
 > **Previous:** [Chapter 5: Cloud Database Services](./05-cloud-database.md) | **Next:** [Chapter 7: Cloud Security](./07-cloud-security.md)
 
@@ -22,10 +22,10 @@ After completing this chapter, students will be able to:
 | VPC Design | Virtual network in the cloud | Isolation through CIDR + subnets |
 | Security Groups | Stateful instance-level firewall | Allow rules only, evaluated as a whole |
 | Network ACLs | Stateless subnet-level firewall | Allow/deny rules, evaluated in order |
-| Load Balancers | ALB, NLB — distribute traffic across targets | Health checks + auto-scaling integration |
+| Load Balancers | ALB, NLB ? distribute traffic across targets | Health checks + auto-scaling integration |
 | VPN | Encrypted tunnels via public internet | Simple site-to-site connectivity |
 | Direct Connect | Dedicated private bandwidth to cloud | Consistent latency, higher capacity |
-| DNS | Route 53 — global DNS resolution | Routing policies: latency, geo, weighted |
+| DNS | Route 53 ? global DNS resolution | Routing policies: latency, geo, weighted |
 | Peering | Connect VPCs across accounts/regions | Non-transitive, no overlapping CIDRs |
 
 ## Chapter Roadmap
@@ -176,7 +176,7 @@ function createWebSecurityGroup(vpcId: string): SecurityGroup {
 function createAppSecurityGroup(vpcId: string): SecurityGroup {
   return {
     groupName: "app-sg",
-    description: "Application tier — only accessible from web tier",
+    description: "Application tier ? only accessible from web tier",
     vpcId: vpcId,
     ingressRules: [
       {
@@ -311,7 +311,7 @@ sequenceDiagram
 
 ### 6.6 VPC Peering and Transit Gateway
 
-**VPC Peering:** Direct network connection between two VPCs. Non-transitive — if VPC A peers with B and B peers with C, A cannot reach C through B.
+**VPC Peering:** Direct network connection between two VPCs. Non-transitive ? if VPC A peers with B and B peers with C, A cannot reach C through B.
 
 **Transit Gateway:** A hub that connects multiple VPCs and on-premises networks through a central router.
 
@@ -445,7 +445,7 @@ console.log("NAT Gateways:", architect.generateNatGateway(2));
 
 > **One-Sentence Takeaway:** A well-designed VPC with tiered subnets, stateful security groups, and stateless NACLs provides defense-in-depth for cloud workloads.
 
-> **Pro Tip:** Use VPC endpoints (Gateway and Interface) to privately access AWS services like S3 and DynamoDB without traversing the public internet — eliminates the need for NAT gateways for service access.
+> **Pro Tip:** Use VPC endpoints (Gateway and Interface) to privately access AWS services like S3 and DynamoDB without traversing the public internet ? eliminates the need for NAT gateways for service access.
 
 > **Warning:** VPC Peering is non-transitive. If you need hub-and-spoke routing between multiple VPCs and on-premises, use Transit Gateway. Peering alone cannot route through intermediate VPCs.
 
@@ -520,13 +520,13 @@ console.log("NAT Gateways:", architect.generateNatGateway(2));
 
 4. What is the limitation of VPC Peering?
    - A) It requires a VPN connection
-   - B) It is non-transitive — traffic cannot route through an intermediate VPC
+   - B) It is non-transitive ? traffic cannot route through an intermediate VPC
    - C) It only works within the same region
    - D) It only works between accounts in the same organization
 
 <details>
 <summary>Answer</summary>
-**B) It is non-transitive — traffic cannot route through an intermediate VPC.** If VPC A is peered with B and B with C, A cannot reach C through B. For hub-and-spoke routing, use Transit Gateway.
+**B) It is non-transitive ? traffic cannot route through an intermediate VPC.** If VPC A is peered with B and B with C, A cannot reach C through B. For hub-and-spoke routing, use Transit Gateway.
 </details>
 
 5. Which Route 53 routing policy is best for distributing traffic globally to the lowest-latency region?
@@ -750,17 +750,109 @@ class PeeringValidator {
 }
 
 const sc = new SubnetCalculator();
-console.log("Subnet (/20 → /24):", JSON.stringify(sc.calculate("10.0.0.0/20", 256)));
+console.log("Subnet (/20 ? /24):", JSON.stringify(sc.calculate("10.0.0.0/20", 256)));
 
 const pv = new PeeringValidator();
 const result = pv.validate([
   { vpcId: "vpc-1", cidr: "10.0.0.0/16", peerVpcId: "vpc-2", peerCidr: "10.0.0.0/24" },
   { vpcId: "vpc-3", cidr: "10.1.0.0/16", peerVpcId: "vpc-4", peerCidr: "10.1.0.0/24" },
 ]);
-console.log("Overlap check:", result.overlaps.length > 0 ? `Overlap detected: ${result.overlaps[0].vpc1} ↔ ${result.overlaps[0].vpc2}` : "No overlaps");
+console.log("Overlap check:", result.overlaps.length > 0 ? `Overlap detected: ${result.overlaps[0].vpc1} ? ${result.overlaps[0].vpc2}` : "No overlaps");
 ```
 ```
 
+
+// cloud networking
+// iaas-paas-saas-cloud-native implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'cloud networking', data: { topic: 'iaas-paas-saas-cloud-native' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// cloud networking - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'cloud-services demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'cloud-computing', chapter: 'cloud networking' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('cloud-services'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - VPCs isolate cloud resources within user-defined IP address ranges.

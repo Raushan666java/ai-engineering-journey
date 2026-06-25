@@ -418,20 +418,20 @@ class ComplianceScanner {
   }
 
   async runScan(): Promise<void> {
-    console.log('🔍 Starting compliance scan...\n');
+    console.log('?? Starting compliance scan...\n');
 
     for (const rule of this.rules) {
       try {
         const passed = await rule.check();
         this.results.push({ rule: rule.id, passed });
-        const icon = passed ? '✅' : '❌';
+        const icon = passed ? '?' : '?';
         console.log(`${icon} ${rule.id}: ${rule.description}`);
         if (!passed) {
           console.log(`   Severity: ${rule.severity}`);
         }
       } catch (error) {
         this.results.push({ rule: rule.id, passed: false, error: String(error) });
-        console.log(`❌ ${rule.id}: Error - ${error}`);
+        console.log(`? ${rule.id}: Error - ${error}`);
       }
     }
 
@@ -450,9 +450,9 @@ class ComplianceScanner {
     console.log(`Critical: ${critical}, High: ${high}`);
 
     if (failed > 0) {
-      console.log(`\n❌ Compliance score: ${((passed / this.results.length) * 100).toFixed(0)}%`);
+      console.log(`\n? Compliance score: ${((passed / this.results.length) * 100).toFixed(0)}%`);
     } else {
-      console.log(`\n✅ Fully compliant`);
+      console.log(`\n? Fully compliant`);
     }
   }
 
@@ -463,7 +463,7 @@ class ComplianceScanner {
 
     for (const result of this.results) {
       const rule = this.rules.find(r => r.id === result.rule);
-      const status = result.passed ? '✅ Passed' : '❌ Failed';
+      const status = result.passed ? '? Passed' : '? Failed';
       report += `| ${rule?.id} | ${status} | ${rule?.severity} |\n`;
     }
 
@@ -522,7 +522,7 @@ class AnsibleVaultManager {
     for (const entry of this.entries) {
       for (const [key, value] of Object.entries(entry.data)) {
         if (value.length > 4 && /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]{8,}$/.test(value)) {
-          issues.push(`Potential secret "${key}" in ${entry.path} — should be vault-encrypted`);
+          issues.push(`Potential secret "${key}" in ${entry.path} � should be vault-encrypted`);
         }
       }
     }
@@ -818,6 +818,48 @@ console.log(`Schedule: ${schedule.proposedOrder.length} tasks in window (${sched
 
 ---
 
+
+// configuration mgmt
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'configuration mgmt', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Dynamic inventories query cloud APIs (AWS, Azure, GCP) to discover hosts automatically.

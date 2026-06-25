@@ -123,7 +123,7 @@ The net outward flux of $\mathbf{F}$ through closed surface $S$ equals the tripl
 
 **Physical Interpretation:** Net outflow = total sources inside minus total sinks inside.
 
-**Conservation Laws:** If $\nabla \cdot \mathbf{F} = 0$ (divergence-free), then net flux through any closed surface is zero — incompressible flow.
+**Conservation Laws:** If $\nabla \cdot \mathbf{F} = 0$ (divergence-free), then net flux through any closed surface is zero ? incompressible flow.
 
 ### 10.8 Orthogonal Coordinate Systems
 
@@ -148,7 +148,7 @@ $$\nabla^2 f = \frac{1}{\rho^2}\frac{\partial}{\partial\rho}\left(\rho^2\frac{\p
 $$\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} \quad \text{(Gauss's law)}$$
 $$\nabla \cdot \mathbf{B} = 0 \quad \text{(No magnetic monopoles)}$$
 $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} \quad \text{(Faraday's law)}$$
-$$\nabla \times \mathbf{B} = \mu_0\mathbf{J} + \mu_0\epsilon_0\frac{\partial \mathbf{E}}{\partial t} \quad \text{(Ampère's law)}$$
+$$\nabla \times \mathbf{B} = \mu_0\mathbf{J} + \mu_0\epsilon_0\frac{\partial \mathbf{E}}{\partial t} \quad \text{(Amp?re's law)}$$
 
 **Integral Form (via Divergence and Stokes Theorems):**
 
@@ -204,7 +204,7 @@ $$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_0^{\pi/2} \langle \sin t, \cos t \r
 
 $$= \int_0^{\pi/2} \cos(2t)\,dt = \left[\frac{\sin(2t)}{2}\right]_0^{\pi/2} = 0$$
 
-Note: $\mathbf{F} = \nabla(xy)$, so $\mathbf{F}$ is conservative. The integral depends only on endpoints: $xy|_{(0,1)} - xy|_{(1,0)} = 0 - 0 = 0$. ✓
+Note: $\mathbf{F} = \nabla(xy)$, so $\mathbf{F}$ is conservative. The integral depends only on endpoints: $xy|_{(0,1)} - xy|_{(1,0)} = 0 - 0 = 0$. ?
 
 ### Example 2: Green's Theorem for Area
 
@@ -234,7 +234,7 @@ $\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 1 - 1 = 0$
 
 By Green's theorem: $\oint_C = \iint_D 0\,dA = 0$
 
-The integral is zero — the field is conservative with potential $\phi = \frac{x^3}{3} + \frac{y^3}{3} + xy$.
+The integral is zero ? the field is conservative with potential $\phi = \frac{x^3}{3} + \frac{y^3}{3} + xy$.
 
 ### Example 3: Stokes' Theorem
 
@@ -256,7 +256,7 @@ Now the boundary: $C$ is $x^2 + y^2 = 1$, $z = 0$. Parametrize: $\mathbf{r}(t) =
 
 $$\oint_C \mathbf{F} \cdot d\mathbf{r} = \int_0^{2\pi} \langle -\sin t, \cos t, 0 \rangle \cdot \langle -\sin t, \cos t, 0 \rangle\,dt = \int_0^{2\pi} (\sin^2 t + \cos^2 t)\,dt = 2\pi$$
 
-Both sides equal $2\pi$. ✓
+Both sides equal $2\pi$. ?
 
 ### Example 4: Divergence Theorem
 
@@ -272,7 +272,7 @@ $$\iiint_E (\nabla \cdot \mathbf{F})\,dV = \int_0^{2\pi}\int_0^\pi\int_0^1 3\rho
 
 $$= 3\int_0^{2\pi} d\theta \int_0^\pi \sin\phi\,d\phi \int_0^1 \rho^4\,d\rho = 3 \cdot 2\pi \cdot 2 \cdot \frac{1}{5} = \frac{12\pi}{5}$$
 
-### Example 5: Vector Calculus in ML — Score Matching
+### Example 5: Vector Calculus in ML ? Score Matching
 
 Given data $x \sim p_{\text{data}}(x)$, score matching learns $s_\theta(x) \approx \nabla_x \log p_{\text{data}}(x)$ by minimizing:
 
@@ -285,32 +285,32 @@ The divergence term $\nabla_x \cdot s_\theta$ comes from integration by parts of
 ```typescript
 function lineIntegral(
   F: (x: number, y: number, z: number) => [number, number, number],
-  γ: (t: number) => [number, number, number],
-  γDot: (t: number) => [number, number, number],
+  ?: (t: number) => [number, number, number],
+  ?Dot: (t: number) => [number, number, number],
   t0: number, t1: number, n: number = 1000
 ): number {
   const dt = (t1 - t0) / n;
   let sum = 0;
   for (let i = 0; i < n; i++) {
     const t = t0 + i * dt;
-    const p = γ(t), dp = γDot(t), f = F(p[0], p[1], p[2]);
+    const p = ?(t), dp = ?Dot(t), f = F(p[0], p[1], p[2]);
     sum += (f[0] * dp[0] + f[1] * dp[1] + f[2] * dp[2]) * dt;
   }
   return sum;
 }
 
-// F = (-y, x, 0), γ(t) = (cos t, sin t, 0) → circulation = 2π
+// F = (-y, x, 0), ?(t) = (cos t, sin t, 0) ? circulation = 2p
 const circF = (x: number, y: number, _z: number): [number, number, number] => [-y, x, 0];
-const circγ = (t: number): [number, number, number] => [Math.cos(t), Math.sin(t), 0];
-const circγDot = (t: number): [number, number, number] => [-Math.sin(t), Math.cos(t), 0];
-const circ = lineIntegral(circF, circγ, circγDot, 0, 2 * Math.PI, 10000);
-console.log(`Circulation ∮ F·dr: ${circ.toFixed(4)} (expected: ${(2 * Math.PI).toFixed(4)})`);
+const circ? = (t: number): [number, number, number] => [Math.cos(t), Math.sin(t), 0];
+const circ?Dot = (t: number): [number, number, number] => [-Math.sin(t), Math.cos(t), 0];
+const circ = lineIntegral(circF, circ?, circ?Dot, 0, 2 * Math.PI, 10000);
+console.log(`Circulation ? F?dr: ${circ.toFixed(4)} (expected: ${(2 * Math.PI).toFixed(4)})`);
 
-// Work done by F = (y, x) along γ(t) = (t, t²), t∈[0,1]: W = ∫₀¹ (t²·1 + t·2t) dt = ∫₀¹ 3t² dt = 1
+// Work done by F = (y, x) along ?(t) = (t, t?), t?[0,1]: W = ?0? (t??1 + t?2t) dt = ?0? 3t? dt = 1
 const workF = (x: number, y: number, _z: number): [number, number, number] => [y, x, 0];
-const workγ = (t: number): [number, number, number] => [t, t * t, 0];
-const workγDot = (_t: number): [number, number, number] => [1, 2 * _t, 0];
-const work = lineIntegral(workF, workγ, workγDot, 0, 1, 1000);
+const work? = (t: number): [number, number, number] => [t, t * t, 0];
+const work?Dot = (_t: number): [number, number, number] => [1, 2 * _t, 0];
+const work = lineIntegral(workF, work?, work?Dot, 0, 1, 1000);
 console.log(`Work: ${work.toFixed(4)} (expected: 1.0)`);
 
 ### TypeScript: Surface Integral via Parameterization
@@ -318,7 +318,7 @@ console.log(`Work: ${work.toFixed(4)} (expected: 1.0)`);
 ```typescript
 function surfaceIntegral(
   F: (x: number, y: number, z: number) => [number, number, number],
-  φ: (u: number, v: number) => [number, number, number],
+  f: (u: number, v: number) => [number, number, number],
   uMin: number, uMax: number, vMin: number, vMax: number,
   nu: number = 40, nv: number = 40
 ): number {
@@ -328,12 +328,12 @@ function surfaceIntegral(
     const u = uMin + (i + 0.5) * du;
     for (let j = 0; j < nv; j++) {
       const v = vMin + (j + 0.5) * dv;
-      const p = φ(u, v);
+      const p = f(u, v);
       const pu: [number, number, number] = [0, 0, 0];
       const pv: [number, number, number] = [0, 0, 0];
       const eps = 1e-5;
-      const pU = φ(u + eps, v), pD = φ(u - eps, v);
-      const pV = φ(u, v + eps), pB = φ(u, v - eps);
+      const pU = f(u + eps, v), pD = f(u - eps, v);
+      const pV = f(u, v + eps), pB = f(u, v - eps);
       for (let k = 0; k < 3; k++) {
         pu[k] = (pU[k] - pD[k]) / (2 * eps);
         pv[k] = (pV[k] - pB[k]) / (2 * eps);
@@ -350,18 +350,18 @@ function surfaceIntegral(
   return sum;
 }
 
-// Flux of F = (0,0,z) through unit sphere: divergence = 1, flux = volume = 4π/3
+// Flux of F = (0,0,z) through unit sphere: divergence = 1, flux = volume = 4p/3
 const fluxF = (x: number, y: number, z: number): [number, number, number] => [0, 0, z];
-const sphereφ = (u: number, v: number): [number, number, number] => [
+const spheref = (u: number, v: number): [number, number, number] => [
   Math.sin(u) * Math.cos(v), Math.sin(u) * Math.sin(v), Math.cos(u)
 ];
-const flux = surfaceIntegral(fluxF, sphereφ, 0, Math.PI, 0, 2 * Math.PI, 30, 30);
-console.log(`Flux ∬ F·dS through sphere: ${flux.toFixed(4)} (expected: ${(4 * Math.PI / 3).toFixed(4)})`);
+const flux = surfaceIntegral(fluxF, spheref, 0, Math.PI, 0, 2 * Math.PI, 30, 30);
+console.log(`Flux ? F?dS through sphere: ${flux.toFixed(4)} (expected: ${(4 * Math.PI / 3).toFixed(4)})`);
 
-// Surface area of sphere: ∬ |φᵤ × φᵥ| du dv = 4π
-function surfaceArea(φ: (u: number, v: number) => [number, number, number], ...args: number[]): number {
-  return surfaceIntegral(() => [1, 0, 0] as [number, number, number], φ, args[0], args[1], args[2], args[3], args[4] || 40, args[5] || 40);
-  // Actually compute |φᵤ × φᵥ| correctly
+// Surface area of sphere: ? |f? ? f?| du dv = 4p
+function surfaceArea(f: (u: number, v: number) => [number, number, number], ...args: number[]): number {
+  return surfaceIntegral(() => [1, 0, 0] as [number, number, number], f, args[0], args[1], args[2], args[3], args[4] || 40, args[5] || 40);
+  // Actually compute |f? ? f?| correctly
 }
 function sphereArea(nu: number = 40, nv: number = 40): number {
   let area = 0;
@@ -370,7 +370,7 @@ function sphereArea(nu: number = 40, nv: number = 40): number {
     for (let j = 0; j < nv; j++) {
       const v = 2 * Math.PI * (j + 0.5) / nv;
       const sinU = Math.sin(u);
-      area += sinU * Math.PI / nu * 2 * Math.PI / nv;  // |φᵤ×φᵥ| = sin(u)
+      area += sinU * Math.PI / nu * 2 * Math.PI / nv;  // |f??f?| = sin(u)
     }
   }
   return area;
@@ -380,39 +380,39 @@ console.log(`Sphere surface area: ${sphereArea(50, 50).toFixed(4)} (expected: ${
 ### TypeScript: Stokes' Theorem Verification
 
 ```typescript
-// Verify Stokes: ∮_∂S F·dr = ∬_S (∇×F)·dS
-// Take F = (-y/2, x/2, 0) with ∇×F = (0, 0, 1)
-// Surface: unit disk in z=0 plane. RHS = area = π. LHS = π as well.
+// Verify Stokes: ?_?S F?dr = ?_S (??F)?dS
+// Take F = (-y/2, x/2, 0) with ??F = (0, 0, 1)
+// Surface: unit disk in z=0 plane. RHS = area = p. LHS = p as well.
 const stokesF = (x: number, y: number, _z: number): [number, number, number] => [-y / 2, x / 2, 0];
 const curlStokes = (_x: number, _y: number, _z: number): [number, number, number] => [0, 0, 1];
 
 // LHS: line integral around unit circle
-const lhs = lineIntegral(stokesF, circγ, circγDot, 0, 2 * Math.PI, 10000);
+const lhs = lineIntegral(stokesF, circ?, circ?Dot, 0, 2 * Math.PI, 10000);
 
 // RHS: surface integral of curl over disk
 const disk = (u: number, v: number): [number, number, number] => [u * Math.cos(v), u * Math.sin(v), 0];
 const rhs = surfaceIntegral(curlStokes, disk, 0, 1, 0, 2 * Math.PI, 30, 30);
 
 console.log(`Stokes' Theorem Verification:`);
-console.log(`  LHS (∮ F·dr): ${lhs.toFixed(4)} (expected: ${Math.PI.toFixed(4)})`);
-console.log(`  RHS (∬ ∇×F·dS): ${rhs.toFixed(4)} (expected: ${Math.PI.toFixed(4)})`);
-console.log(`  Match: ${Math.abs(lhs - rhs) < 0.01 ? "YES ✓" : "NO ✗"}`);
+console.log(`  LHS (? F?dr): ${lhs.toFixed(4)} (expected: ${Math.PI.toFixed(4)})`);
+console.log(`  RHS (? ??F?dS): ${rhs.toFixed(4)} (expected: ${Math.PI.toFixed(4)})`);
+console.log(`  Match: ${Math.abs(lhs - rhs) < 0.01 ? "YES ?" : "NO ?"}`);
 
-// Divergence Theorem: ∮_∂E F·dS = ∭_E (∇·F) dV
+// Divergence Theorem: ?_?E F?dS = ?_E (??F) dV
 // F = (x, y, z) over unit sphere (divergence = 3)
-// LHS: flux through sphere = 3 * volume = 4π
-// RHS: ∭ 3 dV = 3 * 4π/3 = 4π
+// LHS: flux through sphere = 3 * volume = 4p
+// RHS: ? 3 dV = 3 * 4p/3 = 4p
 const divF = (x: number, y: number, z: number): [number, number, number] => [x, y, z];
-const fluxDiv = surfaceIntegral(divF, sphereφ, 0, Math.PI, 0, 2 * Math.PI, 30, 30);
-const divInt = 4 * Math.PI;  // 3 * volume = 3 * 4π/3 = 4π
+const fluxDiv = surfaceIntegral(divF, spheref, 0, Math.PI, 0, 2 * Math.PI, 30, 30);
+const divInt = 4 * Math.PI;  // 3 * volume = 3 * 4p/3 = 4p
 console.log(`Divergence Theorem: flux=${fluxDiv.toFixed(4)} (expected: ${divInt.toFixed(4)})`);
 
-// Green's Theorem verification: ∮ ½(x dy - y dx) = area enclosed
-// For ellipse x=2cos t, y=sin t: area = 2π
-const ellipseγ = (t: number): [number, number, number] => [2 * Math.cos(t), Math.sin(t), 0];
-const ellipseγDot = (t: number): [number, number, number] => [-2 * Math.sin(t), Math.cos(t), 0];
+// Green's Theorem verification: ? ?(x dy - y dx) = area enclosed
+// For ellipse x=2cos t, y=sin t: area = 2p
+const ellipse? = (t: number): [number, number, number] => [2 * Math.cos(t), Math.sin(t), 0];
+const ellipse?Dot = (t: number): [number, number, number] => [-2 * Math.sin(t), Math.cos(t), 0];
 const greenF = (x: number, y: number, _z: number): [number, number, number] => [-y / 2, x / 2, 0];
-const greenArea = lineIntegral(greenF, ellipseγ, ellipseγDot, 0, 2 * Math.PI, 10000);
+const greenArea = lineIntegral(greenF, ellipse?, ellipse?Dot, 0, 2 * Math.PI, 10000);
 console.log(`Green's Theorem (ellipse area): ${greenArea.toFixed(4)} (expected: ${(2 * Math.PI).toFixed(4)})`);
 ```
 
@@ -446,18 +446,18 @@ function surfaceIntegral(
   }
   return flux;
 }
-// Flux of F = (0, 0, z) through unit sphere (should be 4π/3)
+// Flux of F = (0, 0, z) through unit sphere (should be 4p/3)
 const sphere = (u: number, v: number): [number, number, number] => [
   Math.sin(v) * Math.cos(u), Math.sin(v) * Math.sin(u), Math.cos(v)];
 const fluxSphere = surfaceIntegral((x, y, z) => [0, 0, z], sphere, [0, 2 * Math.PI], [0, Math.PI], 20, 20);
-console.log('Flux of F=(0,0,z) through sphere:', fluxSphere.toFixed(4), '(expected: 4π/3 ≈ 4.1888)');
+console.log('Flux of F=(0,0,z) through sphere:', fluxSphere.toFixed(4), '(expected: 4p/3 ? 4.1888)');
 
 // --- Conservative Field Checker ---
 function isConservative(F: (x: number, y: number, z: number) => [number, number, number]): boolean {
   const h = 1e-6;
   const at = (p: [number, number, number]) => F(p[0], p[1], p[2]);
   const f = (x: number, y: number, z: number): [number, number, number] => F(x, y, z);
-  // curl = ∇ × F should be zero
+  // curl = ? ? F should be zero
   const curlX = (f(x, y + h, z)[2] - f(x, y - h, z)[2]) / (2 * h) - (f(x, y, z + h)[1] - f(x, y, z - h)[1]) / (2 * h);
   const curlY = (f(x, y, z + h)[0] - f(x, y, z - h)[0]) / (2 * h) - (f(x + h, y, z)[2] - f(x - h, y, z)[2]) / (2 * h);
   const curlZ = (f(x + h, y, z)[1] - f(x - h, y, z)[1]) / (2 * h) - (f(x, y + h, z)[0] - f(x, y - h, z)[0]) / (2 * h);
@@ -470,9 +470,9 @@ function isConservative(F: (x: number, y: number, z: number) => [number, number,
   const c3 = (F(1 + h, 1, 1)[1] - F(1 - h, 1, 1)[1]) / (2 * h) - (F(1, 1 + h, 1)[0] - F(1, 1 - h, 1)[0]) / (2 * h);
   return Math.abs(c1) < 1e-6 && Math.abs(c2) < 1e-6 && Math.abs(c3) < 1e-6;
 }
-// F = (-y, x, 0) has curl (0, 0, 2) → not conservative
+// F = (-y, x, 0) has curl (0, 0, 2) ? not conservative
 console.log('\nF=(-y,x,0) conservative:', isConservative((x, y, z) => [-y, x, 0])); // false
-// Gradient field F = ∇(x² + y²) = (2x, 2y, 0) → conservative
+// Gradient field F = ?(x? + y?) = (2x, 2y, 0) ? conservative
 console.log('F=(2x,2y,0) conservative:', isConservative((x, y, z) => [2 * x, 2 * y, 0])); // true
 
 // --- Divergence Theorem Checker ---
@@ -498,7 +498,7 @@ function divergenceTheoremCheck(
 }
 // F = (x, y, z): div = 3, box volume = 1, integral = 3
 const dtc = divergenceTheoremCheck((x, y, z) => [x, y, z], [0, 0, 0], [1, 1, 1]);
-console.log('\nDivergence theorem for F=(x,y,z) on [0,1]³:');
+console.log('\nDivergence theorem for F=(x,y,z) on [0,1]?:');
 console.log('  Volume integral of div F:', dtc.volumeIntegral, '(expected: 3)');
 
 // --- Scalar Potential Finder ---
@@ -519,9 +519,101 @@ function scalarPotential(F: (x: number, y: number, z: number) => [number, number
   };
 }
 const potential = scalarPotential((x, y, z) => [2 * x, 2 * y, 0]);
-console.log('\nScalar potential at (2,3,0):', potential?.(2, 3, 0).toFixed(4), '(expected: x²+y² = 13)');
+console.log('\nScalar potential at (2,3,0):', potential?.(2, 3, 0).toFixed(4), '(expected: x?+y? = 13)');
 ```
 
+
+// vector calculus
+// linear-algebra-calculus implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'vector calculus', data: { topic: 'linear-algebra-calculus' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// vector calculus - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'engineering-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'engineering-mathematics', chapter: 'vector calculus' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('engineering-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Line integrals measure accumulation along curves; Green's theorem links them to area integrals
@@ -576,13 +668,13 @@ Show that if $f_\theta = \nabla \phi_\theta$ (a gradient field), then the dynami
 
 | Theorem | 2D/3D | Connects | Key Application |
 |---------|-------|----------|-----------------|
-| Green's | 2D | Line integral ↔ Area integral | Computing area, flux in 2D |
-| Stokes' | 3D | Line integral ↔ Surface integral | Circulation, electromagnetism |
-| Divergence | 3D | Surface integral ↔ Volume integral | Flux, conservation laws |
+| Green's | 2D | Line integral ? Area integral | Computing area, flux in 2D |
+| Stokes' | 3D | Line integral ? Surface integral | Circulation, electromagnetism |
+| Divergence | 3D | Surface integral ? Volume integral | Flux, conservation laws |
 
 ### When to Use Each
 
-- **Check if a field is conservative:** Compute curl — if zero and domain is simply connected, it's conservative
+- **Check if a field is conservative:** Compute curl ? if zero and domain is simply connected, it's conservative
 - **Simplify complex integrals:** If a line integral looks hard, try applying Stokes' or Green's to convert to a surface/area integral
 - **Compute flux efficiently:** If the divergence is simple, use the Divergence Theorem instead of directly integrating over the surface
 - **Physics applications:** Maxwell's equations in integral form use all three theorems
@@ -613,9 +705,9 @@ function divergence(F: (p: Vector3) => Vector3,
   return dFdx + dFdy + dFdz;
 }
 
-// Example: F(x,y,z) = [x², y², z²]
+// Example: F(x,y,z) = [x?, y?, z?]
 const F_field = (p: Vector3): Vector3 => [p[0]**2, p[1]**2, p[2]**2];
-console.log(divergence(F_field, [1, 2, 3])); // ≈ 2+4+6 = 12
+console.log(divergence(F_field, [1, 2, 3])); // ? 2+4+6 = 12
 ```
 
 ## Real-World Application: Computational Fluid Dynamics
@@ -670,7 +762,7 @@ function curl(
 // Rotational field: F(x,y,z) = [-y, x, 0]
 const rotational = (p: Vector3): Vector3 => [-p[1], p[0], 0];
 console.log(`Curl of [-y,x,0] at (0,0,0):`, curl(rotational, [0,0,0]));
-// Expected: (0, 0, 2) — purely in z-direction
+// Expected: (0, 0, 2) ? purely in z-direction
 ```
 
 ### Example 7: Line Integral Computation
@@ -698,7 +790,7 @@ function lineIntegral(
       pNext[2] - p[2],
     ];
     const field = F(p);
-    // Dot product F · dr
+    // Dot product F ? dr
     integral += field[0] * dr[0] + field[1] * dr[1] + field[2] * dr[2];
   }
   return integral;
@@ -708,7 +800,7 @@ function lineIntegral(
 const F1 = (p: Vector3): Vector3 => [p[1], p[0], 0];
 const circle = (t: number): Vector3 => [Math.cos(t), Math.sin(t), 0];
 const work = lineIntegral(F1, circle, 0, Math.PI / 2);
-console.log(`Work along quarter-circle: ${work.toFixed(6)}`); // ≈ 0
+console.log(`Work along quarter-circle: ${work.toFixed(6)}`); // ? 0
 ```
 
 ### Example 8: Conservative Field Check and Potential
@@ -725,7 +817,7 @@ function isConservative(
       && Math.abs(c[2]) < tolerance;
 }
 
-// F = [2x, 2y, 2z] — gradient of phi = x^2 + y^2 + z^2
+// F = [2x, 2y, 2z] ? gradient of phi = x^2 + y^2 + z^2
 const gradientField = (p: Vector3): Vector3 => [2*p[0], 2*p[1], 2*p[2]];
 console.log(`Is gradient field conservative? ${isConservative(gradientField, [1,1,1])}`);
 // true
@@ -744,7 +836,7 @@ $\nabla \cdot \mathbf{F} = \frac{\partial(y^2)}{\partial x} + \frac{\partial(x^2
 
 This field IS divergence-free! This means the net flux through any closed surface is zero, representing an incompressible flow in 2D.
 
-**Physical interpretation:** A divergence-free vector field represents a source-free flow — whatever flows into a region must flow out. This is the mathematical basis of incompressible fluid dynamics and conservation of mass.
+**Physical interpretation:** A divergence-free vector field represents a source-free flow ? whatever flows into a region must flow out. This is the mathematical basis of incompressible fluid dynamics and conservation of mass.
 
 ## TypeScript: Parametrized Surface Area
 
@@ -810,7 +902,7 @@ const sphere: SurfaceParam = (u, v) => [
 ];
 
 const sphereArea = surfaceArea(sphere, [0, Math.PI], [0, 2 * Math.PI], 40, 60);
-console.log(`Sphere (R=2) surface area ≈ ${sphereArea.toFixed(4)} (expected: ${(4 * Math.PI * 4).toFixed(4)})`);
+console.log(`Sphere (R=2) surface area ? ${sphereArea.toFixed(4)} (expected: ${(4 * Math.PI * 4).toFixed(4)})`);
 ```
 
 ## TypeScript: Flux Computation via Divergence Theorem
@@ -843,22 +935,22 @@ function tripleIntegral(
   return sum;
 }
 
-// Example: F = [x, y, z], flux through cube [0,1]³
+// Example: F = [x, y, z], flux through cube [0,1]?
 // div(F) = 1 + 1 + 1 = 3
-// Flux = ∫∫∫ 3 dV = 3 * volume = 3
+// Flux = ??? 3 dV = 3 * volume = 3
 const fluxViaDivergence = tripleIntegral(
   (x, y, z) => 3, // div(F) = 3
   [0, 1], [0, 1], [0, 1],
   50, 50, 50
 );
-console.log(`Flux of F=[x,y,z] through unit cube ≈ ${fluxViaDivergence.toFixed(4)} (expected: 3.0000)`);
+console.log(`Flux of F=[x,y,z] through unit cube ? ${fluxViaDivergence.toFixed(4)} (expected: 3.0000)`);
 
-// Example: F = [x³, y³, z³], flux through sphere of radius R
-// div(F) = 3x² + 3y² + 3z² = 3r²
-// In spherical: ∫∫∫ 3r² dV = 3 * 4π * R⁵/5 = 12πR⁵/5
+// Example: F = [x?, y?, z?], flux through sphere of radius R
+// div(F) = 3x? + 3y? + 3z? = 3r?
+// In spherical: ??? 3r? dV = 3 * 4p * R5/5 = 12pR5/5
 const R = 2;
 const expectedFlux = (12 * Math.PI * R ** 5) / 5;
-console.log(`Flux of F=[x³,y³,z³] through sphere R=${R}: expected = ${expectedFlux.toFixed(4)}`);
+console.log(`Flux of F=[x?,y?,z?] through sphere R=${R}: expected = ${expectedFlux.toFixed(4)}`);
 ```
 
 ## Vector Calculus Theorem Relationships
@@ -866,23 +958,23 @@ console.log(`Flux of F=[x³,y³,z³] through sphere R=${R}: expected = ${expecte
 ```mermaid
 graph TB
     subgraph "Fundamental Theorem of Calculus"
-        FTC["∫ₐᵇ f'(x)dx = f(b) - f(a)"]
+        FTC["??? f'(x)dx = f(b) - f(a)"]
     end
     
-    subgraph "Gradient Theorem (1D → 3D)"
-        GT["∫_C ∇φ · dr = φ(b) - φ(a)"]
+    subgraph "Gradient Theorem (1D ? 3D)"
+        GT["?_C ?f ? dr = f(b) - f(a)"]
     end
     
     subgraph "Green's Theorem (2D)"
-        GR["∮_C P dx + Q dy = ∬_D (∂Q/∂x - ∂P/∂y) dA"]
+        GR["?_C P dx + Q dy = ?_D (?Q/?x - ?P/?y) dA"]
     end
     
     subgraph "Stokes' Theorem (3D, Circulation)"
-        ST["∮_C F · dr = ∬_S (∇ × F) · dS"]
+        ST["?_C F ? dr = ?_S (? ? F) ? dS"]
     end
     
     subgraph "Divergence Theorem (3D, Flux)"
-        DT["∬_S F · dS = ∭_E (∇ · F) dV"]
+        DT["?_S F ? dS = ?_E (? ? F) dV"]
     end
     
     FTC -->|Generalizes to| GT
@@ -895,13 +987,13 @@ graph TB
 
 ```mermaid
 flowchart LR
-    subgraph "Gradient ∇f"
+    subgraph "Gradient ?f"
         GRAD[Points uphill<br/>Direction of steepest ascent]
     end
-    subgraph "Divergence ∇·F"
+    subgraph "Divergence ??F"
         DIV[Measures outflow<br/>Source (+) or Sink (-)]
     end
-    subgraph "Curl ∇×F"
+    subgraph "Curl ??F"
         CURL[Measures rotation<br/>Vorticity / Circulation]
     end
     

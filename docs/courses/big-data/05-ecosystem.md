@@ -15,8 +15,8 @@ After completing this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| Hive — SQL-on-Hadoop | Translates HiveQL into MapReduce/Tez jobs | Being replaced by Spark SQL and Presto for most use cases |
-| HBase — Column-Family NoSQL | Low-latency random read/write on HDFS | Row key design is critical — avoid monotonically increasing keys |
+| Hive ? SQL-on-Hadoop | Translates HiveQL into MapReduce/Tez jobs | Being replaced by Spark SQL and Presto for most use cases |
+| HBase ? Column-Family NoSQL | Low-latency random read/write on HDFS | Row key design is critical ? avoid monotonically increasing keys |
 | Apache Kafka | Distributed streaming platform | The de-facto standard for data ingestion and event-driven architecture |
 | Data Serialization | Parquet for analytics, Avro for streaming | Choosing the right format is a 10x performance decision |
 | Cloud-Native Alternatives | S3 + Spark + Kafka MSK replaces Hadoop ecosystem | Learn concepts, not specific tools |
@@ -34,7 +34,7 @@ flowchart LR
 
 ![Hadoop Ecosystem](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/big-data/ch05-ecosystem.png)
 
-## 5.1 Hive — SQL-on-Hadoop
+## 5.1 Hive ? SQL-on-Hadoop
 
 Apache Hive provides a SQL interface to data stored in HDFS. It translates HiveQL queries into MapReduce (or Tez/Spark) jobs.
 
@@ -70,9 +70,9 @@ ORDER BY cnt DESC;
 | ACID | Yes (Transactions) | No | No |
 | Best for | Batch ETL, legacy pipelines | Unified batch+ML | Ad-hoc interactive queries |
 
-> **One-Sentence Takeaway:** Hive provides SQL access to HDFS data but is being outpaced by Spark SQL (for batch) and Presto/Trino (for interactive queries) — choose the engine based on latency requirements.
+> **One-Sentence Takeaway:** Hive provides SQL access to HDFS data but is being outpaced by Spark SQL (for batch) and Presto/Trino (for interactive queries) ? choose the engine based on latency requirements.
 
-## 5.2 HBase — Column-Family NoSQL
+## 5.2 HBase ? Column-Family NoSQL
 
 Apache HBase is a distributed, column-oriented NoSQL database modeled after Google Bigtable. It runs on top of HDFS.
 
@@ -239,7 +239,7 @@ query = parsed.writeStream \
 query.awaitTermination()
 ```
 
-> **Pro Tip:** For Kafka consumers, set `auto_offset_reset` to `"earliest"` in development (to replay all data) and `"latest"` in production (to avoid reprocessing old messages). Always set a `group_id` — it's what enables checkpoint-based recovery after a consumer restart.
+> **Pro Tip:** For Kafka consumers, set `auto_offset_reset` to `"earliest"` in development (to replay all data) and `"latest"` in production (to avoid reprocessing old messages). Always set a `group_id` ? it's what enables checkpoint-based recovery after a consumer restart.
 
 > **One-Sentence Takeaway:** Kafka is the industry standard for streaming data ingestion, providing durable, ordered, partitioned message queues that integrate natively with Spark Streaming for real-time processing.
 
@@ -306,7 +306,7 @@ decision = {
 }
 ```
 
-> **Remember:** The right tool depends on the workload pattern — there is no one-size-fits-all in the big data ecosystem. Interactive SQL needs Presto, batch ETL needs Spark, streaming needs Kafka/Flink, and low-latency KV stores need HBase/DynamoDB.
+> **Remember:** The right tool depends on the workload pattern ? there is no one-size-fits-all in the big data ecosystem. Interactive SQL needs Presto, batch ETL needs Spark, streaming needs Kafka/Flink, and low-latency KV stores need HBase/DynamoDB.
 
 ## Concept Comparison Table
 
@@ -327,7 +327,7 @@ decision = {
 | **NoSQL** | HBase, Cassandra, DynamoDB | HBase on HDFS; Cassandra for multi-DC |
 | **Streaming** | Kafka, Spark Streaming, Flink | Kafka for transport; Flink = true streaming |
 | **Formats** | Parquet (analytics), Avro (streaming), ORC (Hive) | Never CSV/JSON for production |
-| **Cloud Migration** | S3 → HDFS, EMR → MapReduce, Athena → Hive | Every Hadoop tool has a cloud-native equivalent |
+| **Cloud Migration** | S3 ? HDFS, EMR ? MapReduce, Athena ? Hive | Every Hadoop tool has a cloud-native equivalent |
 
 ## Cross-Application Matrix
 
@@ -387,7 +387,7 @@ decision = {
 
 ### Cloud Migration Decision Guide
 
-1. **Start small:** Migrate one pipeline at a time (Hive → Spark SQL)
+1. **Start small:** Migrate one pipeline at a time (Hive ? Spark SQL)
 2. **Storage first:** Move HDFS to S3/GCS (retain data format)
 3. **Compute second:** Replace MapReduce with Spark (EMR/Dataproc)
 4. **Streaming:** Keep Kafka or use managed MSK/Confluent
@@ -446,7 +446,7 @@ flowchart LR
 ## 5.9 Kafka Producer-Consumer TypeScript Simulator
 
 ```typescript
-// ─── Kafka Topic & Partition Simulator ─────────────────────
+// --- Kafka Topic & Partition Simulator ---------------------
 
 interface KafkaMessage {
   key: string;
@@ -503,7 +503,7 @@ class KafkaTopic {
   getPartitions() { return this.partitions; }
 }
 
-// ─── Kafka Producer ────────────────────────────────────────
+// --- Kafka Producer ----------------------------------------
 
 class KafkaProducer {
   constructor(private topic: KafkaTopic) {}
@@ -519,7 +519,7 @@ class KafkaProducer {
   }
 }
 
-// ─── Kafka Consumer ────────────────────────────────────────
+// --- Kafka Consumer ----------------------------------------
 
 class KafkaConsumer {
   private offsets: number[] = [];
@@ -549,7 +549,7 @@ class KafkaConsumer {
   }
 }
 
-// ─── Demo ──────────────────────────────────────────────────
+// --- Demo --------------------------------------------------
 
 const topic = new KafkaTopic("events", 3);
 const producer = new KafkaProducer(topic);
@@ -600,7 +600,7 @@ flowchart LR
 ## 5.10 HBase Column-Family TypeScript Simulator
 
 ```typescript
-// ─── HBase Column-Family Store Simulator ───────────────────
+// --- HBase Column-Family Store Simulator -------------------
 
 type ColumnFamily = Map<string, unknown>;
 type HBaseRow = Map<string, ColumnFamily>;
@@ -679,7 +679,7 @@ class HBaseTable {
   }
 }
 
-// ─── Demo ──────────────────────────────────────────────────
+// --- Demo --------------------------------------------------
 
 const events = new HBaseTable("events", ["meta", "payload"]);
 
@@ -797,18 +797,18 @@ console.table(results.map(r => ({
   pushdown: r.supportsPredicatePushdown ? "yes" : "no",
   schema: r.supportsSchema ? "yes" : "no",
 })));
-// ┌──────────┬──────────────┬──────────────┬──────────┬───────┐
-// │  format  │ readTime (s) │ storage (GB) │ pushdown │ schema│
-// ├──────────┼──────────────┼──────────────┼──────────┼───────┤
-// │  ORC     │     2.7      │    35.0      │   yes    │  yes  │
-// │ Parquet  │     3.0      │    40.0      │   yes    │  yes  │
-// │  Avro    │    80.0      │    60.0      │    no    │  yes  │
-// │  CSV     │   120.0      │   100.0      │    no    │  no   │
-// │  JSON    │   150.0      │   130.0      │    no    │  no   │
-// └──────────┴──────────────┴──────────────┴──────────┴───────┘
+// +-----------------------------------------------------------+
+// ?  format  ? readTime (s) ? storage (GB) ? pushdown ? schema?
+// +----------+--------------+--------------+----------+-------?
+// ?  ORC     ?     2.7      ?    35.0      ?   yes    ?  yes  ?
+// ? Parquet  ?     3.0      ?    40.0      ?   yes    ?  yes  ?
+// ?  Avro    ?    80.0      ?    60.0      ?    no    ?  yes  ?
+// ?  CSV     ?   120.0      ?   100.0      ?    no    ?  no   ?
+// ?  JSON    ?   150.0      ?   130.0      ?    no    ?  no   ?
+// +-----------------------------------------------------------+
 ```
 
-> **Key Insight:** With column pruning, Parquet reads only 3 of 20 columns — a 6.7x I/O reduction versus CSV. For analytical queries over wide tables, columnar formats deliver 10-50x performance gains.
+> **Key Insight:** With column pruning, Parquet reads only 3 of 20 columns ? a 6.7x I/O reduction versus CSV. For analytical queries over wide tables, columnar formats deliver 10-50x performance gains.
 
 ## 5.12 Cloud Migration Strategy Flow
 
@@ -886,6 +886,98 @@ console.log("Time-series schema:", tsSchema);
 ```
 ```
 
+
+// ecosystem
+// hadoop-spark-ecosystem implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'ecosystem', data: { topic: 'hadoop-spark-ecosystem' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// ecosystem - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'big-data-ecosystem demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'big-data', chapter: 'ecosystem' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('big-data-ecosystem'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Hive provides SQL-on-HDFS but is being replaced by Spark SQL and Presto for most use cases.
@@ -901,7 +993,7 @@ console.log("Time-series schema:", tsSchema);
 3. Compare the read performance of Parquet vs Avro vs CSV for a 10 GB dataset with a selective column query.
 4. Design a HBase row key strategy for a time-series table receiving 100K writes/second from 1000 sensors.
 5. Translate a legacy Hive ETL pipeline (3 HiveQL queries, 2 intermediate tables) into a Spark SQL job.
-6. Extend the TypeScript `KafkaTopic` class to support `replicationFactor` — simulate broker failure and verify that messages are still readable from replicas.
+6. Extend the TypeScript `KafkaTopic` class to support `replicationFactor` ? simulate broker failure and verify that messages are still readable from replicas.
 7. Use the `HBaseTable` simulator to design a time-series schema for 1000 IoT sensors writing temperature every second, and verify the salted key distribution.
 8. Implement a `KafkaConsumerGroup` class that distributes partitions across multiple consumer instances (round-robin), then test with 3 consumers and 6 partitions.
 9. Write a function that benchmarks Parquet vs Avro vs CSV for a 50 GB dataset with 50 columns, selecting 2 columns, and report estimated read times.

@@ -1,4 +1,4 @@
-# Chapter 22: Case Study â€” Twitter and News Feed
+# Chapter 22: Case Study � Twitter and News Feed
 > **Previous:** [21 Case Study Uber](./21-case-study-uber.md) | **Next:** [23 Case Study Dropbox](./23-case-study-dropbox.md)
 
 ---
@@ -48,26 +48,26 @@ flowchart LR
 ```
 
 ## Theory / Case Study
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![Twitter Architecture Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/22-twitter.png)
 
 ### Phase 1: Problem Scope and Requirements
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
-Twitter serves 330+ million monthly active users who generate 500+ million tweets per day. Every user expects to see their timeline load in under 5 seconds, no matter how many accounts they follow. When a breaking news event occurs â€” an earthquake, a political announcement, a celebrity death â€” Twitter must surface relevant tweets within seconds, not minutes. The character limit started at 140 and expanded to 280 in 2017, which fundamentally changed the distribution of tweet lengths and engagement patterns.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
+Twitter serves 330+ million monthly active users who generate 500+ million tweets per day. Every user expects to see their timeline load in under 5 seconds, no matter how many accounts they follow. When a breaking news event occurs � an earthquake, a political announcement, a celebrity death � Twitter must surface relevant tweets within seconds, not minutes. The character limit started at 140 and expanded to 280 in 2017, which fundamentally changed the distribution of tweet lengths and engagement patterns.
 
-The core challenge is the fan-out problem. A single tweet from a popular account must appear in the timelines of every one of that account's followers. When @BarackObama tweets â€” with 60+ million followers â€” the system must insert that tweet into 60 million timelines. If 10 celebrities tweet in the same second, that is 600 million timeline insertions. Doing this instantly is impossible; doing it in seconds requires careful architectural choices.
+The core challenge is the fan-out problem. A single tweet from a popular account must appear in the timelines of every one of that account's followers. When @BarackObama tweets � with 60+ million followers � the system must insert that tweet into 60 million timelines. If 10 celebrities tweet in the same second, that is 600 million timeline insertions. Doing this instantly is impossible; doing it in seconds requires careful architectural choices.
 
 Non-functional requirements include high write availability (tweets must never be lost), eventual consistency for timelines (it is acceptable if a tweet appears slightly late for some users), and resistance to abuse (spam, harassment, coordinated disinformation campaigns must be detectable and filterable). The platform operates under significant legal pressure regarding content moderation in different jurisdictions (Germany's NetzDG, India's IT Rules).
 
-### Phase 2: Timeline Generation â€” Fan-Out Strategies
+### Phase 2: Timeline Generation � Fan-Out Strategies
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
@@ -136,37 +136,37 @@ The threshold T has been tuned over the years. Initially set at around 10,000 fo
 To understand the trade-offs quantitatively, consider the cost model. Let:
 - T = total tweets per day = 500M
 - U = total users = 330M
-- F_avg = average followers per user â‰ˆ 200
+- F_avg = average followers per user � 200
 - F_celeb = followers of a celebrity account (e.g., @BarackObama = 60M)
-- R = timeline reads per day â‰ˆ 2B (each user reads ~6 timelines/day)
+- R = timeline reads per day � 2B (each user reads ~6 timelines/day)
 
 Under pure fan-on-write:
-- Write operations per day = sum over all tweets of (follower_count) â‰ˆ T * F_avg â‰ˆ 500M * 200 = 100B writes
-- Read operations per day = R â‰ˆ 2B reads
+- Write operations per day = sum over all tweets of (follower_count) � T * F_avg � 500M * 200 = 100B writes
+- Read operations per day = R � 2B reads
 - Total ops = ~102B
 
 Under pure fan-on-read:
 - Write operations per day = T = 500M writes
-- Read operations per day = R * F_avg_followees â‰ˆ 2B * 200 = 400B reads (each timeline read queries every followee's recent tweets)
+- Read operations per day = R * F_avg_followees � 2B * 200 = 400B reads (each timeline read queries every followee's recent tweets)
 - Total ops = ~400B
 
 The hybrid with threshold T where 99.9% of users have < T followers:
 - 99.9% of tweets use push (500M * 0.999 = 499.5M tweets, each fanned out to F_avg = 200 followers = 99.9B writes)
 - 0.1% of tweets use pull (500K celebrity tweets, written once = 500K writes, then merged on read by their followers)
 - Read merge: each timeline read merges ~200 normal entries (from Redis list) + N_celeb_followed celebrity tweets
-- Total ops â‰ˆ 100B (write-dominant, roughly same as pure push for normal users)
+- Total ops � 100B (write-dominant, roughly same as pure push for normal users)
 
 This analysis explains the hybrid threshold. Since 99.9% of users have followers well below the threshold, their tweets are pushed normally. The threshold effectively isolates the 0.1% of celebrity accounts whose follower counts would cause O(100B) additional writes per day under full push. The marginal cost of the read-time merge (pulling celebrity tweets) is small relative to the saved write costs.
 
 ### Phase 3: The Evolution of Twitter's Architecture
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 **The Ruby on Rails Monolith (2006-2010)**
 
-Twitter's original architecture was a Ruby on Rails application with a MySQL database. The "Fail Whale" â€” a cartoon whale being lifted by birds â€” became famous as the error page users saw when the site was down, which was frequently. The monolith struggled with:
+Twitter's original architecture was a Ruby on Rails application with a MySQL database. The "Fail Whale" � a cartoon whale being lifted by birds � became famous as the error page users saw when the site was down, which was frequently. The monolith struggled with:
 
 - MySQL replication lag: writes to the master caused followers to fall behind, serving stale data
 - Slow queries: timeline generation queries joined multiple tables and took seconds
@@ -179,7 +179,7 @@ The tipping point was the 2008 US presidential election, where traffic spikes ca
 
 Twitter's engineering team rebuilt the backend from the ground up, making the bet that the JVM with its mature garbage collection, profiling tools, and threading model would provide the performance and stability they needed. The key components of the new architecture were:
 
-- **Finagle**: A protocol-agnostic RPC system built on Netty, providing connection pooling, circuit breaking, load balancing, and request timeouts. Finagle allowed services to communicate with configurable reliability policies â€” retry budgets (max 5% retries), fail-fast patterns, and distributed tracing via Zipkin.
+- **Finagle**: A protocol-agnostic RPC system built on Netty, providing connection pooling, circuit breaking, load balancing, and request timeouts. Finagle allowed services to communicate with configurable reliability policies � retry budgets (max 5% retries), fail-fast patterns, and distributed tracing via Zipkin.
 
 - **Scala**: Chosen for its functional programming features (immutability, pattern matching) running on the JVM. Scala's concurrency model (Futures, Promises) integrated naturally with Finagle's async I/O.
 
@@ -266,11 +266,11 @@ Twitter's trending topics algorithm must identify which topics are spiking in us
 4. Separately, a Bloom filter tracks which entities have been seen in the current window, used for deduplication.
 5. The CM sketch provides approximate frequency counts with a known error bound. For each entity, the actual count is approximately count + epsilon * total_items.
 6. Every 60 seconds, the top K entities by frequency are extracted from the CM sketch using a min-heap.
-7. The candidate trends are filtered: must exceed a minimum frequency threshold, must not be a promoted trend (those are injected separately), must not be spam (detected by velocity anomaly â€” a topic spiking at 100x normal rate is likely bot-driven).
+7. The candidate trends are filtered: must exceed a minimum frequency threshold, must not be a promoted trend (those are injected separately), must not be spam (detected by velocity anomaly � a topic spiking at 100x normal rate is likely bot-driven).
 8. Trends are ranked by a composite score: `frequency * (1 + acceleration) * novelty_score`, where acceleration is the rate of change of frequency and novelty_score is lower for topics that have been trending recently.
 9. Geotagged trends: the pipeline also maintains per-city CM sketches for location-specific trends in New York, Tokyo, London, etc.
 
-The choice of CM sketch over exact counting is deliberate. An exact count would require storing the full set of entities and their counts in memory, which could be millions of entries. The CM sketch uses sub-linear memory â€” typically a 2D array of 1000x10 integers â€” and provides accuracy within 1-2% for top-K queries, which is more than sufficient for trending topics.
+The choice of CM sketch over exact counting is deliberate. An exact count would require storing the full set of entities and their counts in memory, which could be millions of entries. The CM sketch uses sub-linear memory � typically a 2D array of 1000x10 integers � and provides accuracy within 1-2% for top-K queries, which is more than sufficient for trending topics.
 
 **Tweet Indexing with Earlybird**
 
@@ -387,14 +387,14 @@ Both lists are stored in Memcache (in-memory) across a cluster of machines. The 
 
 **Redis Timeline Lists**
 
-The pre-computed timeline lists (fan-on-write output) are stored in Redis as lists keyed by user ID. Each list contains tweet IDs in reverse-chronological order. The list is capped at 800 entries â€” older tweets are evicted. When a user reads their timeline, the timeline service reads the list with `LRANGE user:<id>:timeline 0 799` and hydrates the tweet metadata from Manhattan.
+The pre-computed timeline lists (fan-on-write output) are stored in Redis as lists keyed by user ID. Each list contains tweet IDs in reverse-chronological order. The list is capped at 800 entries � older tweets are evicted. When a user reads their timeline, the timeline service reads the list with `LRANGE user:<id>:timeline 0 799` and hydrates the tweet metadata from Manhattan.
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory / Case Study | Core topic covered in Chapter 22: Case Study â€” Twitter and News Feed | Defined by specific measurable attributes |
+| Theory / Case Study | Core topic covered in Chapter 22: Case Study � Twitter and News Feed | Defined by specific measurable attributes |
 
 ---
 
@@ -403,7 +403,7 @@ The pre-computed timeline lists (fan-on-write output) are stored in Redis as lis
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory / Case Study | Fundamental concept for Chapter 22: Case Study â€” Twitter and News Feed |
+| Theory / Case Study | Fundamental concept for Chapter 22: Case Study � Twitter and News Feed |
 
 ---
 
@@ -447,10 +447,10 @@ The pre-computed timeline lists (fan-on-write output) are stored in Redis as lis
 
 | Concept | Definition | Key Insight |
 |---------|-----------|-------------|
-| Theory / Case Study | Core topic in Chapter 22: Case Study â€” Twitter and News Feed | Fundamental to system design |
-| Concept Comparison | Core topic in Chapter 22: Case Study â€” Twitter and News Feed | Fundamental to system design |
-| Quick Reference | Core topic in Chapter 22: Case Study â€” Twitter and News Feed | Fundamental to system design |
-| Cross-Application Matrix | Core topic in Chapter 22: Case Study â€” Twitter and News Feed | Fundamental to system design |
+| Theory / Case Study | Core topic in Chapter 22: Case Study � Twitter and News Feed | Fundamental to system design |
+| Concept Comparison | Core topic in Chapter 22: Case Study � Twitter and News Feed | Fundamental to system design |
+| Quick Reference | Core topic in Chapter 22: Case Study � Twitter and News Feed | Fundamental to system design |
+| Cross-Application Matrix | Core topic in Chapter 22: Case Study � Twitter and News Feed | Fundamental to system design |
 
 ---
 
@@ -459,9 +459,9 @@ The pre-computed timeline lists (fan-on-write output) are stored in Redis as lis
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory / Case Study | Essential concept for Chapter 22: Case Study â€” Twitter and News Feed |
-| Concept Comparison | Essential concept for Chapter 22: Case Study â€” Twitter and News Feed |
-| Quick Reference | Essential concept for Chapter 22: Case Study â€” Twitter and News Feed |
+| Theory / Case Study | Essential concept for Chapter 22: Case Study � Twitter and News Feed |
+| Concept Comparison | Essential concept for Chapter 22: Case Study � Twitter and News Feed |
+| Quick Reference | Essential concept for Chapter 22: Case Study � Twitter and News Feed |
 
 ---
 
@@ -601,6 +601,127 @@ function buildTimeline(tweets: string[], followerCounts: number[]): Map<string, 
 }
 ```
 
+
+### Implementation: Twitter Architecture Case Study
+
+```typescript
+class TwitterFeedService {
+  private tweets = new Map<string, { id: string; userId: string; content: string; ts: number; likes: number; retweets: number }>();
+  private users = new Map<string, { id: string; handle: string; followers: Set<string>; following: Set<string> }>();
+  private timelines = new Map<string, string[]>();
+  createUser(id: string, handle: string): void { this.users.set(id, { id, handle, followers: new Set(), following: new Set() }); }
+  postTweet(userId: string, content: string): string {
+    if (content.length > 280) throw new Error("Tweet too long"); const id = `tweet-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    this.tweets.set(id, { id, userId, content, ts: Date.now(), likes: 0, retweets: 0 });
+    if (!this.timelines.has(userId)) this.timelines.set(userId, []); this.timelines.get(userId)!.unshift(id);
+    const user = this.users.get(userId); if (user) { for (const f of user.followers) { if (!this.timelines.has(f)) this.timelines.set(f, []); this.timelines.get(f)!.unshift(id); } } return id; }
+  getTimeline(userId: string, limit = 20): { id: string; content: string; author: string; ts: number }[] {
+    const ids = (this.timelines.get(userId) || []).slice(0, limit); return ids.map(id => { const t = this.tweets.get(id); if (!t) return null; const u = this.users.get(t.userId); return { id: t.id, content: t.content, author: u?.handle || "unknown", ts: t.ts }; }).filter(Boolean) as any; }
+  follow(followerId: string, followeeId: string): void { const f1 = this.users.get(followerId); const f2 = this.users.get(followeeId); if (f1 && f2) { f1.following.add(followeeId); f2.followers.add(followerId); } }
+  like(userId: string, tweetId: string): void { const t = this.tweets.get(tweetId); if (t) t.likes++; }
+  getTrending(limit = 10): { hashtag: string; count: number }[] {
+    const hashtagCount = new Map<string, number>();
+    for (const t of this.tweets.values()) { const tags = t.content.match(/#\w+/g); if (tags) for (const tag of tags) hashtagCount.set(tag, (hashtagCount.get(tag) || 0) + 1); }
+    return [...hashtagCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, limit).map(([h, c]) => ({ hashtag: h, count: c })); }
+}
+class FanoutOnWrite { private writer = new Map<string, number>(); fanout(tweet: { id: string; userId: string }, followers: string[]): number { let count = 0; for (const f of followers) { this.writer.set(f, (this.writer.get(f) || 0) + 1); count++; } return count; } }
+class TweetSearchEngine { private inverted = new Map<string, Set<string>>();
+  index(tweetId: string, text: string): void { for (const word of text.toLowerCase().split(/\s+/)) { if (!this.inverted.has(word)) this.inverted.set(word, new Set()); this.inverted.get(word)!.add(tweetId); } }
+  search(query: string): string[] { const words = query.toLowerCase().split(/\s+/); let result: Set<string> | null = null; for (const w of words) { const s = this.inverted.get(w); if (!s) return []; result = result ? new Set([...result].filter(x => s.has(x))) : s; } return result ? [...result] : []; }
+}
+```
+
+// case study twitter
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'case study twitter', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// case study twitter - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'case study twitter' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - The timeline fan-out problem requires choosing between push (O(1) read, O(followers) write) and pull (O(1) write, O(followees) read); Twitter uses a hybrid approach with a follower-count threshold.
@@ -642,14 +763,14 @@ function buildTimeline(tweets: string[], followerCounts: number[]): Map<string, 
 
 3. **Timeline Cache Design**: Design a multi-tier cache for the timeline service. The service handles 10,000 requests/second. Each timeline request reads a Redis list (average 50 tweet IDs) and hydrates the tweets from Manhattan (50 key lookups). Propose a caching strategy that reduces P99 latency by 60%. Specify cache sizes, TTLs, eviction policies, and invalidation triggers.
 
-   Consider: (a) a local L1 cache in the timeline service process (what data, what size, what eviction), (b) a distributed L2 cache (Redis/Memcache â€” what key structure, what TTL), (c) cache invalidation when a new tweet appears in the timeline, and (d) how your cache handles the celebrity edge case (a user who follows 10,000 accounts).
+   Consider: (a) a local L1 cache in the timeline service process (what data, what size, what eviction), (b) a distributed L2 cache (Redis/Memcache � what key structure, what TTL), (c) cache invalidation when a new tweet appears in the timeline, and (d) how your cache handles the celebrity edge case (a user who follows 10,000 accounts).
 
 4. **API Rate Limiting Design**: Twitter's API serves 10M+ developer requests per second across hundreds of endpoints. Design a distributed rate limiting system that:
 
    (a) Enforces per-endpoint limits for each API key (e.g., 300 requests per 15-minute window for the statuses/user_timeline endpoint)
    (b) Supports burst allowance (a token bucket variant that allows short bursts up to 2x the sustained limit)
    (c) Returns standard rate limit headers (X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset) with globally consistent counts
-   (d) Works across multiple data centers â€” a request to US-EAST and EU-WEST must count toward the same limit
+   (d) Works across multiple data centers � a request to US-EAST and EU-WEST must count toward the same limit
    
    Compare the Redis sorted set approach (ZADD + ZREMRANGEBYSCORE + ZCARD) with the sliding window counter approach (increment Redis counter for the current second, maintain a rolling sum), and justify which one you would choose for each endpoint category.
 
@@ -660,11 +781,11 @@ function buildTimeline(tweets: string[], followerCounts: number[]): Map<string, 
 
 - Automatically detects the traffic onset within 5 seconds and classifies it as a global event (not a DDoS)
 - Spawns additional capacity (describe the auto-scaling mechanism, including cold-start mitigation for new instances)
-- Degrades gracefully: list at least 4 specific degradation modes ranked by severity (e.g., disable ML ranking â†’ disable media loading â†’ serve stale timelines â†’ show "Trending" landing page instead of user timeline)
+- Degrades gracefully: list at least 4 specific degradation modes ranked by severity (e.g., disable ML ranking ? disable media loading ? serve stale timelines ? show "Trending" landing page instead of user timeline)
 - Prevents cascading failure to downstream services (Earlybird, Flocks, Manhattan) through circuit breakers and request prioritization
 - Provides a post-event analysis: what data would you log to understand the event's impact on P50/P95/P99 latency, error rate, and user retention?
 
-Your design must assume that the event lasts 15 minutes and Twitter cannot simply "ride it out" â€” the platform must remain usable throughout.
+Your design must assume that the event lasts 15 minutes and Twitter cannot simply "ride it out" � the platform must remain usable throughout.
 
 Provide specific detail for each capacity dimension:
 

@@ -21,7 +21,7 @@ After completing this chapter, you will be able to:
 |-------|-------------|-------------------|
 | Boolean Algebra | Operations on $\{0,1\}$: $+$, $\cdot$, $'$ | Every Boolean algebra satisfies the same axioms |
 | Basic Identities | Idempotent, absorption, complement, involution | Simplifying expressions before building circuits saves hardware |
-| De Morgan's Laws | $(x+y)' = x'y'$, $(xy)' = x' + y'$ | NAND/NOR are universal gates — any circuit can use only NAND |
+| De Morgan's Laws | $(x+y)' = x'y'$, $(xy)' = x' + y'$ | NAND/NOR are universal gates ? any circuit can use only NAND |
 | Boolean Functions | Truth table $\rightarrow$ expression | Express as sum of minterms or product of maxterms |
 | Logic Gates | AND, OR, NOT, NAND, NOR, XOR, XNOR | Universal gates (NAND, NOR) implement any function |
 | Duality | Replace $+$ with $\cdot$ and $0$ with $1$ | Every theorem has a dual; proving one proves both |
@@ -68,7 +68,7 @@ A **Boolean algebra** is a set $B$ with two binary operations $+$ (OR), $\cdot$ 
 
 The standard Boolean algebra is $B = \{0, 1\}$ with these operations.
 
-> **One-Sentence Takeaway:** Boolean algebra is an algebraic structure on $\{0,1\}$ with AND, OR, and NOT — every identity follows from the six axiom groups.
+> **One-Sentence Takeaway:** Boolean algebra is an algebraic structure on $\{0,1\}$ with AND, OR, and NOT ? every identity follows from the six axiom groups.
 
 ### 12.2 Basic Identities
 
@@ -99,7 +99,7 @@ The **dual** of a Boolean expression replaces $+$ with $\cdot$, $\cdot$ with $+$
 **Example:** Dual of $x + (y \cdot z)$ is $x \cdot (y + z)$.
 Dual of $x + 0 = x$ is $x \cdot 1 = x$.
 
-> **One-Sentence Takeaway:** Duality halves the work — every proven identity gives its dual for free.
+> **One-Sentence Takeaway:** Duality halves the work ? every proven identity gives its dual for free.
 
 ### 12.4 Boolean Functions
 
@@ -183,7 +183,7 @@ function fullAdder(a: Bit, b: Bit, carryIn: Bit): { sum: Bit; carryOut: Bit } {
 }
 ```
 
-> **One-Sentence Takeaway:** NAND and NOR are universal — any Boolean function can be implemented entirely with NAND gates or entirely with NOR gates.
+> **One-Sentence Takeaway:** NAND and NOR are universal ? any Boolean function can be implemented entirely with NAND gates or entirely with NOR gates.
 
 ### 12.6 Minimization with Karnaugh Maps
 
@@ -203,7 +203,7 @@ function fullAdder(a: Bit, b: Bit, carryIn: Bit): { sum: Bit; carryOut: Bit } {
 x=0  | 0 | 1 |
 x=1  | 0 | 1 |
 ```
-Groups: column $y=1$ → $y$.
+Groups: column $y=1$ ? $y$.
 
 > **One-Sentence Takeaway:** K-maps minimize Boolean expressions by grouping adjacent 1s into the largest power-of-2 rectangles, eliminating variables that change within the group.
 
@@ -214,7 +214,7 @@ An algorithmic (tabular) method for minimizing Boolean functions with any number
 **Steps:**
 1. List all minterms where $f = 1$ (don't cares included).
 2. Group minterms by the number of 1s in their binary representation.
-3. Combine pairs differing by exactly one bit — the differing bit becomes "don't care" ($-$).
+3. Combine pairs differing by exactly one bit ? the differing bit becomes "don't care" ($-$).
 4. Repeat until no further combination is possible.
 5. The remaining terms are **prime implicants**.
 6. Use a prime implicant chart to select the minimal set covering all minterms.
@@ -243,7 +243,7 @@ function quineMcCluskey(minterms: number[], variables: number): number[][] {
 }
 ```
 
-> **One-Sentence Takeaway:** Quine-McCluskey algorithmically finds all prime implicants and selects the minimum cover — it is the computational version of K-map minimization.
+> **One-Sentence Takeaway:** Quine-McCluskey algorithmically finds all prime implicants and selects the minimum cover ? it is the computational version of K-map minimization.
 
 ### 12.8 Don't Care Conditions
 
@@ -253,7 +253,7 @@ In K-maps, don't cares are marked as "X" and included in a group only if they he
 
 **Theorem 12.7 (Don't care optimization).** If a don't care condition appears in a prime implicant that covers only also-covered or don't-care minterms, it does not need to be covered separately.
 
-> **One-Sentence Takeaway:** Don't cares are wildcards — use them to create larger K-map groups but never force them to be covered.
+> **One-Sentence Takeaway:** Don't cares are wildcards ? use them to create larger K-map groups but never force them to be covered.
 
 ## Concept Comparison Table
 
@@ -283,11 +283,11 @@ In K-maps, don't cares are marked as "X" and included in a group only if they he
 | Concept | Computer Engineering | Cryptography | AI/ML | Software Engineering |
 |---------|---------------------|--------------|-------|---------------------|
 | Boolean Functions | ALU design, control units | S-box optimization | Decision trees, rule learning | Conditional logic optimization |
-| De Morgan's Laws | Gate-level optimization | — | — | Refactoring conditionals |
-| K-maps | CPU register minimization | — | — | — |
-| Quine-McCluskey | VLSI synthesis | Boolean function representation | Feature selection | — |
+| De Morgan's Laws | Gate-level optimization | ? | ? | Refactoring conditionals |
+| K-maps | CPU register minimization | ? | ? | ? |
+| Quine-McCluskey | VLSI synthesis | Boolean function representation | Feature selection | ? |
 | Logic Gates | Full adder, multiplexer | AES circuit | Neural network threshold gates | Bitwise operations |
-| Don't Cares | State machine optimization | — | Missing data handling | Default cases in switch |
+| Don't Cares | State machine optimization | ? | Missing data handling | Default cases in switch |
 
 ## Chapter Quiz
 
@@ -432,7 +432,7 @@ function sopFromTruthTable(vars: number, truthTable: number[]): string {
   }
   return terms.join(' + ') || '0';
 }
-// XOR truth table: x1 ⊕ x2
+// XOR truth table: x1 ? x2
 const xorTT = [0, 1, 1, 0];
 console.log('XOR SOP:', sopFromTruthTable(2, xorTT)); // x1'x2 + x1x2'
 
@@ -471,8 +471,8 @@ console.log('Minterms for 3 vars:', mintermCount(3)); // 8
 ```
 // --- Boolean Expression Evaluator ---
 function evalExpr(expr: string, vars: Record<string, boolean>): boolean {
-  const tokens = expr.match(/[A-Za-z]+|[∧∨¬→↔⊕]|[()]/g) ?? [];
-  const prec: Record<string, number> = { '¬': 4, '∧': 3, '∨': 2, '→': 1, '↔': 1, '⊕': 1 };
+  const tokens = expr.match(/[A-Za-z]+|[??????]|[()]/g) ?? [];
+  const prec: Record<string, number> = { '?': 4, '?': 3, '?': 2, '?': 1, '?': 1, '?': 1 };
   const output: string[] = [], ops: string[] = [];
   for (const t of tokens) {
     if (t in vars) output.push(t);
@@ -484,29 +484,29 @@ function evalExpr(expr: string, vars: Record<string, boolean>): boolean {
   const stack: boolean[] = [];
   for (const t of output) {
     if (t in vars) stack.push(vars[t]);
-    else if (t === '¬') stack.push(!stack.pop()!);
+    else if (t === '?') stack.push(!stack.pop()!);
     else { const b = stack.pop()!, a = stack.pop()!;
-      if (t === '∧') stack.push(a && b);
-      else if (t === '∨') stack.push(a || b);
-      else if (t === '→') stack.push(!a || b);
-      else if (t === '↔') stack.push(a === b);
-      else if (t === '⊕') stack.push(a !== b);
+      if (t === '?') stack.push(a && b);
+      else if (t === '?') stack.push(a || b);
+      else if (t === '?') stack.push(!a || b);
+      else if (t === '?') stack.push(a === b);
+      else if (t === '?') stack.push(a !== b);
     }
   }
   return stack[0];
 }
-console.log('(p ∧ q) → r:', evalExpr('(p ∧ q) → r', {p:true, q:true, r:false}));
+console.log('(p ? q) ? r:', evalExpr('(p ? q) ? r', {p:true, q:true, r:false}));
 
 // --- DNF/CNF Converter (from truth table) ---
 function truthTableToForm(t: boolean[][], form: 'dnf' | 'cnf'): string {
   const vars = ['p', 'q', 'r'];
   if (form === 'dnf')
     return t.filter(r => r[r.length-1]).map(r =>
-      r.slice(0,-1).map((v, i) => (v ? '' : '¬') + vars[i]).join('∧')).join(' ∨ ');
+      r.slice(0,-1).map((v, i) => (v ? '' : '?') + vars[i]).join('?')).join(' ? ');
   return t.filter(r => !r[r.length-1]).map(r =>
-    r.slice(0,-1).map((v, i) => (v ? '¬' : '') + vars[i]).join('∨')).join(' ∧ ');
+    r.slice(0,-1).map((v, i) => (v ? '?' : '') + vars[i]).join('?')).join(' ? ');
 }
-// p ⊕ q truth table
+// p ? q truth table
 const xorTTbl: boolean[][] = [[1,1,0],[1,0,1],[0,1,1],[0,0,0]];
 console.log('\nXOR DNF:', truthTableToForm(xorTTbl, 'dnf'));
 console.log('XOR CNF:', truthTableToForm(xorTTbl, 'cnf'));
@@ -521,7 +521,7 @@ function isSatisfiable(expr: (v: boolean[]) => boolean, vars: number): boolean {
   return false;
 }
 const unsat = (v: boolean[]) => v[0] && !v[0];
-console.log('\np ∧ ¬p satisfiable:', isSatisfiable(unsat, 1));
+console.log('\np ? ?p satisfiable:', isSatisfiable(unsat, 1));
 
 // --- Boolean Function Minimization (Quine-McCluskey helper) ---
 function binaryRep(n: number, bits: number): string {
@@ -555,6 +555,98 @@ const ha = halfAdder(true, true);
 console.log('\nHalf adder (1+1): sum=', ha.sum, 'carry=', ha.carry);
 ```
 
+
+// boolean
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'boolean', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// boolean - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'boolean' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Boolean algebra is the algebraic foundation of digital logic, operating on $\{0,1\}$.
@@ -567,11 +659,11 @@ console.log('\nHalf adder (1+1): sum=', ha.sum, 'carry=', ha.carry);
 
 ## Practical Takeaways
 
-1. **Simplify before building** — a minimized expression means fewer gates, less power, and less cost.
-2. **NAND is universal** — any circuit can be implemented using only NAND gates.
-3. **Don't cares are your friend** — use them to form larger K-map groups.
-4. **De Morgan transforms circuit types** — use it to convert AND-OR to NAND-NAND or OR-AND to NOR-NOR.
-5. **K-maps work up to 4 variables** — for more, use Quine-McCluskey algorithmically.
+1. **Simplify before building** ? a minimized expression means fewer gates, less power, and less cost.
+2. **NAND is universal** ? any circuit can be implemented using only NAND gates.
+3. **Don't cares are your friend** ? use them to form larger K-map groups.
+4. **De Morgan transforms circuit types** ? use it to convert AND-OR to NAND-NAND or OR-AND to NOR-NOR.
+5. **K-maps work up to 4 variables** ? for more, use Quine-McCluskey algorithmically.
 
 ### 12.6 Boolean Function Implementations in TypeScript
 
@@ -608,10 +700,10 @@ function truthTable(func: BooleanFunc, n: number): boolean[][] {
   return table;
 }
 
-// XOR: a ⊕ b = a'b + ab'
+// XOR: a ? b = a'b + ab'
 const xor: BooleanFunc = ([a, b]) => (a !== b);
 const xorTable = truthTable(xor, 2);
-console.table(xorTable); // 00→0, 01→1, 10→1, 11→0
+console.table(xorTable); // 00?0, 01?1, 10?1, 11?0
 ```
 
 ### 12.7 K-Map Minimization Algorithm
@@ -644,7 +736,7 @@ function kmap2var(minterms: number[]): string {
   return terms.join(" + ") || "0";
 }
 
-// Example: f(a,b) = Σm(0,1,3) = a'b' + a'b + ab = a' + b
+// Example: f(a,b) = Sm(0,1,3) = a'b' + a'b + ab = a' + b
 console.log(kmap2var([0, 1, 3])); // a' + b
 ```
 
@@ -656,7 +748,7 @@ console.log(kmap2var([0, 1, 3])); // a' + b
 
 ```mermaid
 flowchart TD
-    subgraph "K-map for f=Σm(0,1,3,4,7,8,12,15)"
+    subgraph "K-map for f=Sm(0,1,3,4,7,8,12,15)"
         A["ab\cd 00 01 11 10"]
         A --> B["00: 1 1 0 1"]
         A --> C["01: 0 0 1 0"]
@@ -708,7 +800,7 @@ function quineMcCluskey(minterms: number[], n: number): string[] {
   return primes;
 }
 
-// Minimize f(a,b,c) = Σm(0,2,5,7)
+// Minimize f(a,b,c) = Sm(0,2,5,7)
 const primes = quineMcCluskey([0, 2, 5, 7], 3);
 console.log(primes);
 ```

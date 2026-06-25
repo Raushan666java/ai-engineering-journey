@@ -195,7 +195,7 @@ x_n' &= a_{n1}x_1 + a_{n2}x_2 + \cdots + a_{nn}x_n + f_n(t)
 
 **Homogeneous Solution ($\mathbf{x}' = A\mathbf{x}$):**
 
-Assume $\mathbf{x} = \mathbf{v} e^{\lambda t}$, giving $A\mathbf{v} = \lambda\mathbf{v}$ — eigenvalues and eigenvectors!
+Assume $\mathbf{x} = \mathbf{v} e^{\lambda t}$, giving $A\mathbf{v} = \lambda\mathbf{v}$ ? eigenvalues and eigenvectors!
 
 - **Real distinct eigenvalues:** $\mathbf{x} = c_1 \mathbf{v}_1 e^{\lambda_1 t} + \cdots + c_n \mathbf{v}_n e^{\lambda_n t}$
 - **Complex eigenvalues** $\lambda = \alpha \pm \beta i$ with $\mathbf{v} = \mathbf{a} \pm \mathbf{b} i$: solution involves $e^{\alpha t}(\cos\beta t, \sin\beta t)$
@@ -308,7 +308,7 @@ $$\frac{\partial^2 u}{\partial t^2} = c^2 \frac{\partial^2 u}{\partial x^2}$$
 
 where $u(x,t)$ is displacement and $c$ is wave speed.
 
-**d'Alembert's Solution:** $u(x,t) = f(x + ct) + g(x - ct)$ — waves traveling left and right.
+**d'Alembert's Solution:** $u(x,t) = f(x + ct) + g(x - ct)$ ? waves traveling left and right.
 
 **Separation of Variables:**
 
@@ -400,7 +400,7 @@ $y'(0) = -2(1) + c_2 = 0 \implies c_2 = 2$
 
 **Solution:** $y = e^{-2x}(\cos x + 2\sin x)$
 
-This represents an underdamped oscillator — oscillates with decaying amplitude.
+This represents an underdamped oscillator ? oscillates with decaying amplitude.
 
 ### Example 4: Systems of ODEs
 
@@ -501,7 +501,7 @@ function eulerMethod(
   return { t, y };
 }
 
-// y' = -2xy, y(0) = 1 → exact: y = exp(-x²)
+// y' = -2xy, y(0) = 1 ? exact: y = exp(-x?)
 const f = (x: number, y: number) => -2 * x * y;
 const { t: tv, y: yv } = eulerMethod(f, 0, 1, 0.1, 10);
 for (let i = 0; i <= 10; i += 2) {
@@ -542,11 +542,11 @@ function rk4System(
   return { t, y };
 }
 
-// Lotka-Volterra: dx/dt = αx - βxy, dy/dt = δxy - γy
-const α = 1.5, β = 1.0, δ = 1.0, γ = 3.0;
+// Lotka-Volterra: dx/dt = ax - ?xy, dy/dt = dxy - ?y
+const a = 1.5, ? = 1.0, d = 1.0, ? = 3.0;
 const lotkaVolterra: ODESystem = (_, y) => [
-  α * y[0] - β * y[0] * y[1],  // prey
-  δ * y[0] * y[1] - γ * y[1],  // predator
+  a * y[0] - ? * y[0] * y[1],  // prey
+  d * y[0] * y[1] - ? * y[1],  // predator
 ];
 
 const { t: lt, y: ly } = rk4System(lotkaVolterra, 0, [10, 5], 0.01, 500);
@@ -567,21 +567,21 @@ $$\frac{dS}{dt} = -\beta S I, \quad \frac{dI}{dt} = \beta S I - \gamma I, \quad 
 where $S$ = susceptible, $I$ = infected, $R$ = recovered, $\beta$ = transmission rate, $\gamma$ = recovery rate.
 
 **Key Epidemiological Parameters:**
-- **Basic reproduction number:** $R_0 = \beta S_0 / \gamma$ — average number of secondary infections
-- **Herd immunity threshold:** $1 - 1/R_0$ — fraction of population that must be immune
+- **Basic reproduction number:** $R_0 = \beta S_0 / \gamma$ ? average number of secondary infections
+- **Herd immunity threshold:** $1 - 1/R_0$ ? fraction of population that must be immune
 - **Peak infection:** Occurs when $S = \gamma/\beta$ (where $dI/dt = 0$)
 
 ```typescript
 const sir: ODESystem = (_, y) => {
   const S = y[0], I = y[1], R = y[2];
-  const beta = 0.3, gamma = 0.1;  // R₀ = 3.0
+  const beta = 0.3, gamma = 0.1;  // R0 = 3.0
   return [-beta * S * I, beta * S * I - gamma * I, gamma * I];
 };
 
 const { t: st, y: sy } = rk4System(sir, 0, [0.99, 0.01, 0], 0.1, 200);
 console.log(`Day 50: S=${sy[50][0].toFixed(3)}, I=${sy[50][1].toFixed(3)}, R=${sy[50][2].toFixed(3)}`);
 console.log(`Day 100: S=${sy[100][0].toFixed(3)}, I=${sy[100][1].toFixed(3)}, R=${sy[100][2].toFixed(3)}`);
-// At R₀=3, ~90% of population gets infected before epidemic ends
+// At R0=3, ~90% of population gets infected before epidemic ends
 ```
 
 ### TypeScript Implementation: Runge-Kutta 4 System Solver
@@ -604,9 +604,9 @@ function solveODE(f: ODESystem, t0: number, y0: number[], h: number, steps: numb
   return { t, y };
 }
 
-// Predator-Prey (Lotka-Volterra): dR/dt = αR - βRF, dF/dt = δRF - γF
-const lotkaVolterra = (α: number, β: number, δ: number, γ: number) =>
-  (_t: number, y: number[]): number[] => [α * y[0] - β * y[0] * y[1], δ * y[0] * y[1] - γ * y[1]];
+// Predator-Prey (Lotka-Volterra): dR/dt = aR - ?RF, dF/dt = dRF - ?F
+const lotkaVolterra = (a: number, ?: number, d: number, ?: number) =>
+  (_t: number, y: number[]): number[] => [a * y[0] - ? * y[0] * y[1], d * y[0] * y[1] - ? * y[1]];
 
 const { t: lvT, y: pop } = solveODE(lotkaVolterra(0.1, 0.02, 0.01, 0.1), 0, [40, 9], 0.5, 200);
 console.log("Predator-Prey (Lotka-Volterra):");
@@ -614,19 +614,19 @@ console.log(`  t=0:   R=${pop[0][0].toFixed(1)} F=${pop[0][1].toFixed(1)}`);
 console.log(`  t=25:  R=${pop[50][0].toFixed(1)} F=${pop[50][1].toFixed(1)}`);
 console.log(`  t=50:  R=${pop[100][0].toFixed(1)} F=${pop[100][1].toFixed(1)}`);
 console.log(`  t=100: R=${pop[200][0].toFixed(1)} F=${pop[200][1].toFixed(1)}`);
-// Equilibrium: R* = γ/δ = 10, F* = α/β = 5
-console.log(`  Equilibrium: R*=10, F*=5 (pure imaginary eigenvalues → persistent oscillations)`);
+// Equilibrium: R* = ?/d = 10, F* = a/? = 5
+console.log(`  Equilibrium: R*=10, F*=5 (pure imaginary eigenvalues ? persistent oscillations)`);
 
-// Simple harmonic oscillator: y'' + ω²y = 0 → system: y₀' = y₁, y₁' = -ω²y₀
-const harmonic = (ω: number) => (_t: number, y: number[]): number[] => [y[1], -ω * ω * y[0]];
-const { t: hT, y: hY } = solveODE(harmonic(2), 0, [1, 0], 0.01, 630);  // ω=2 → period = π ≈ 3.14
-const period = hT[630];  // Full cycle ≈ π
-console.log(`Harmonic oscillator: period ≈ ${period.toFixed(4)} (expected: ${Math.PI.toFixed(4)})`);
+// Simple harmonic oscillator: y'' + ??y = 0 ? system: y0' = y1, y1' = -??y0
+const harmonic = (?: number) => (_t: number, y: number[]): number[] => [y[1], -? * ? * y[0]];
+const { t: hT, y: hY } = solveODE(harmonic(2), 0, [1, 0], 0.01, 630);  // ?=2 ? period = p ? 3.14
+const period = hT[630];  // Full cycle ? p
+console.log(`Harmonic oscillator: period ? ${period.toFixed(4)} (expected: ${Math.PI.toFixed(4)})`);
 console.log(`  Amplitude after one period: ${hY[630][0].toFixed(4)} (expected: 1.0)`);
 
-// Damped spring: y'' + 2ζω y' + ω²y = 0 → system
-// ζ = 0.1 (underdamped), ω = 2
-const damped = (ζ: number, ω: number) => (_t: number, y: number[]): number[] => [y[1], -2 * ζ * ω * y[1] - ω * ω * y[0]];
+// Damped spring: y'' + 2?? y' + ??y = 0 ? system
+// ? = 0.1 (underdamped), ? = 2
+const damped = (?: number, ?: number) => (_t: number, y: number[]): number[] => [y[1], -2 * ? * ? * y[1] - ? * ? * y[0]];
 const { y: dY } = solveODE(damped(0.1, 2), 0, [1, 0], 0.01, 500);
 console.log(`Damped spring at t=5: y=${dY[500][0].toFixed(4)} (amplitude decaying over time)`);
 
@@ -652,7 +652,7 @@ console.log(`  t=1.0: V=${vOut[20].toFixed(4)} (exact: ${(1 - Math.exp(-1)).toFi
 console.log(`  t=5.0: V=${vOut[100].toFixed(4)} (exact: ${(1 - Math.exp(-5)).toFixed(4)})`);
 
 // Logistic growth: dP/dt = rP(1 - P/K), r=0.5, K=100
-// Analytic solution: P(t) = K / (1 + (K/P₀ - 1)e^{-rt})
+// Analytic solution: P(t) = K / (1 + (K/P0 - 1)e^{-rt})
 const logistic = (_t: number, P: number) => 0.5 * P * (1 - P / 100);
 const { y: popLog } = eulerMethod(logistic, 0, 10, 0.1, 100);
 console.log("Logistic Growth (Euler):");
@@ -684,21 +684,21 @@ function rk4(
   }
   return { t, y };
 }
-// Simple harmonic oscillator: y'' = -y → y' = v, v' = -y
+// Simple harmonic oscillator: y'' = -y ? y' = v, v' = -y
 const sho = (t: number, y: number[]) => [y[1], -y[0]];
 const shoSol = rk4(sho, 0, [1, 0], 0.1, 100);
-console.log('SHO y(0)=1, y\'(0)=0: y(2π) =', shoSol.y[shoSol.t.findIndex(t => t >= 2 * Math.PI)][0].toFixed(4));
+console.log('SHO y(0)=1, y\'(0)=0: y(2p) =', shoSol.y[shoSol.t.findIndex(t => t >= 2 * Math.PI)][0].toFixed(4));
 
 // --- Predator-Prey (Lotka-Volterra) ---
-const lotkaVolterra = (α: number, β: number, δ: number, γ: number) =>
-  (t: number, y: number[]) => [α * y[0] - β * y[0] * y[1], δ * y[0] * y[1] - γ * y[1]];
+const lotkaVolterra = (a: number, ?: number, d: number, ?: number) =>
+  (t: number, y: number[]) => [a * y[0] - ? * y[0] * y[1], d * y[0] * y[1] - ? * y[1]];
 const lv = rk4(lotkaVolterra(0.1, 0.02, 0.01, 0.1), 0, [40, 9], 0.5, 200);
 const lastLv = lv.y[lv.y.length - 1];
 console.log('\nLotka-Volterra (t=100): prey=', lastLv[0].toFixed(1), 'predator=', lastLv[1].toFixed(1));
 
 // --- Characteristic Equation Solver ---
 function solveCharacteristic(coeffs: number[]): { roots: number[]; type: string } {
-  // For quadratic: a*r² + b*r + c = 0
+  // For quadratic: a*r? + b*r + c = 0
   const [a, b, c] = coeffs;
   const disc = b * b - 4 * a * c;
   if (disc > 0) {
@@ -711,8 +711,8 @@ function solveCharacteristic(coeffs: number[]): { roots: number[]; type: string 
     return { roots: [-b / (2 * a)], type: 'complex' };
   }
 }
-const charEq = solveCharacteristic([1, -5, 6]); // r² - 5r + 6 = 0 → r=2, r=3
-console.log('\nCharacteristic r²-5r+6:', charEq.type, 'roots:', charEq.roots.join(', '));
+const charEq = solveCharacteristic([1, -5, 6]); // r? - 5r + 6 = 0 ? r=2, r=3
+console.log('\nCharacteristic r?-5r+6:', charEq.type, 'roots:', charEq.roots.join(', '));
 
 // --- Phase Portrait Direction Field ---
 function directionField(
@@ -732,9 +732,101 @@ function directionField(
   return fields;
 }
 const df = directionField((t, y) => y - t * t, [-2, 2], [-2, 2], 5);
-console.log('\nDirection field y\'=y-t² (sample):', df.slice(0, 5).map(p => `(t=${p.t},y=${p.y},s=${p.slope})`).join(', '));
+console.log('\nDirection field y\'=y-t? (sample):', df.slice(0, 5).map(p => `(t=${p.t},y=${p.y},s=${p.slope})`).join(', '));
 ```
 
+
+// differential equations
+// linear-algebra-calculus implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'differential equations', data: { topic: 'linear-algebra-calculus' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// differential equations - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'engineering-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'engineering-mathematics', chapter: 'differential equations' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('engineering-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - First-order ODEs are classified into separable, linear, exact, Bernoulli, and homogeneous types

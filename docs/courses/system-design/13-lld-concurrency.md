@@ -30,19 +30,19 @@ flowchart LR
 ```
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 ### Thread Safety Fundamentals
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 ![Concurrency and Threading Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/13-concurrency.png)
 
-A **race condition** occurs when the behavior of a program depends on the interleaving of operations across multiple threads. The classic example is a non-atomic increment: `counter += 1` compiles into three machine instructionsâ€”load, add, store. Two threads executing simultaneously can both load the same value, both increment it, and both store it, losing one increment.
+A **race condition** occurs when the behavior of a program depends on the interleaving of operations across multiple threads. The classic example is a non-atomic increment: `counter += 1` compiles into three machine instructions�load, add, store. Two threads executing simultaneously can both load the same value, both increment it, and both store it, losing one increment.
 
 A **critical section** is a region of code that accesses shared resources and must not be executed by more than one thread at a time. The goal of synchronization is to enforce mutual exclusion over critical sections.
 
@@ -104,7 +104,7 @@ A **lock order** prevents circular wait by ensuring that all threads acquire loc
 
 ### Lock-Free Programming
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -144,7 +144,7 @@ If another thread modifies the counter between the read and the CAS, the CAS fai
 Speedup(S) = 1 / (s + p/N)
 ```
 
-where `N` is the number of processors. As `N â†’ âˆž`, the maximum speedup is `1/s`. If 10% of a task is serial, the absolute maximum speedup is 10Ã—, regardless of how many cores you add. This is Amdahl's sobering insight: serial bottlenecks dominate at scale.
+where `N` is the number of processors. As `N ? 8`, the maximum speedup is `1/s`. If 10% of a task is serial, the absolute maximum speedup is 10�, regardless of how many cores you add. This is Amdahl's sobering insight: serial bottlenecks dominate at scale.
 
 **Gustafson's Law** provides a different perspective: rather than fixing the problem size and measuring how fast it runs, fix the execution time and ask how large a problem can be solved. Since problem size typically grows with available parallelism, the scaled speedup is:
 
@@ -210,7 +210,7 @@ The JavaScript event loop is similar but runs on a single thread with a callback
 
 ### Actor Model
 
-The Actor model (Erlang, Akka) treats every entity as an **actor**â€”a computation unit that encapsulates state, behavior, and a mailbox. Actors communicate exclusively through asynchronous message passing; they never share state. Each actor processes messages sequentially from its mailbox.
+The Actor model (Erlang, Akka) treats every entity as an **actor**�a computation unit that encapsulates state, behavior, and a mailbox. Actors communicate exclusively through asynchronous message passing; they never share state. Each actor processes messages sequentially from its mailbox.
 
 Advantages:
 - No shared state means no locks, no race conditions.
@@ -584,9 +584,9 @@ class LockFreeStack:
                     return old_top.value
 ```
 
-Python's GIL provides memory safety for individual bytecode operations, but the CAS loop pattern is necessary in languages without a GIL (C++, Rust, Java with `AtomicReference`). The ABA problem manifests when a node is popped, freed, then reallocated at the same addressâ€”a hazard pointer scheme or tagged reference is needed.
+Python's GIL provides memory safety for individual bytecode operations, but the CAS loop pattern is necessary in languages without a GIL (C++, Rust, Java with `AtomicReference`). The ABA problem manifests when a node is popped, freed, then reallocated at the same address�a hazard pointer scheme or tagged reference is needed.
 
-### Example 7: async/await â€” Web Scraper with asyncio
+### Example 7: async/await � Web Scraper with asyncio
 
 ```python
 import asyncio
@@ -610,7 +610,7 @@ async def main():
 asyncio.run(main())
 ```
 
-**Execution flow**: `asyncio.run(main())` creates the event loop, runs `main`, and closes the loop. Inside `fetch_all`, `asyncio.gather` schedules all coroutines concurrently. At each `await`, the event loop suspends the coroutine and runs another ready coroutine. I/O waits do not block the threadâ€”they register a callback with the OS poller and resume when data arrives.
+**Execution flow**: `asyncio.run(main())` creates the event loop, runs `main`, and closes the loop. Inside `fetch_all`, `asyncio.gather` schedules all coroutines concurrently. At each `await`, the event loop suspends the coroutine and runs another ready coroutine. I/O waits do not block the thread�they register a callback with the OS poller and resume when data arrives.
 
 ### Example 8: Deadlock Detection with Wait-For Graph
 
@@ -770,6 +770,134 @@ def select(chan_map: dict[Chan, callable], timeout=None) -> bool:
 
 ---
 
+
+### Implementation: Concurrency and Parallelism
+
+```typescript
+class ThreadPool { private queue: (() => void)[] = []; private running = 0;
+  constructor(private maxConcurrency: number) {}
+  enqueue(task: () => void): void { this.queue.push(task); this.drain(); }
+  private drain(): void { if (this.running >= this.maxConcurrency || this.queue.length === 0) return; this.running++; const task = this.queue.shift()!; Promise.resolve().then(() => { task(); this.running--; this.drain(); }); }
+  get pendingTasks(): number { return this.queue.length; } get activeTasks(): number { return this.running; }
+}
+class Mutex { private locked = false; private waiters: (() => void)[] = [];
+  acquire(): Promise<void> { if (!this.locked) { this.locked = true; return Promise.resolve(); } return new Promise(r => this.waiters.push(r)); }
+  release(): void { if (this.waiters.length > 0) this.waiters.shift()!(); else this.locked = false; }
+}
+class ReadWriteLock { private readers = 0; private writers = 0; private writeWaiters: (() => void)[] = [];
+  acquireRead(): Promise<void> { while (this.writers > 0 || this.writeWaiters.length > 0) return new Promise(r => setTimeout(r, 10)); this.readers++; return Promise.resolve(); }
+  releaseRead(): void { this.readers--; }
+  acquireWrite(): Promise<void> { this.writers++; while (this.readers > 0) return new Promise(r => setTimeout(r, 10)); return Promise.resolve(); }
+  releaseWrite(): void { this.writers--; }
+}
+class Barrier { private count: number; private arrived = 0; private resolve: (() => void) | null = null;
+  constructor(count: number) { this.count = count; }
+  wait(): Promise<void> { this.arrived++; if (this.arrived >= this.count) { this.resolve?.(); this.arrived = 0; return Promise.resolve(); } return new Promise(r => this.resolve = r); }
+}
+class Semaphore { private count: number; private waiters: (() => void)[] = [];
+  constructor(initial: number) { this.count = initial; }
+  acquire(): Promise<void> { if (this.count > 0) { this.count--; return Promise.resolve(); } return new Promise(r => this.waiters.push(r)); }
+  release(): void { if (this.waiters.length > 0) this.waiters.shift()!(); else this.count++; }
+}
+class ActorModel { private mailbox: any[] = []; private processing = false;
+  constructor(private name: string) {}
+  send(msg: any): void { this.mailbox.push(msg); if (!this.processing) this.process(); }
+  private async process(): Promise<void> { this.processing = true; while (this.mailbox.length > 0) { const msg = this.mailbox.shift(); await this.handle(msg); } this.processing = false; }
+  private async handle(msg: any): Promise<void> { console.log(`${this.name} received:`, msg); }
+}
+```
+
+// lld concurrency
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'lld concurrency', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// lld concurrency - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'lld concurrency' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 - Race conditions require mutual exclusion: use mutex, semaphore, or read-write locks to protect critical sections.
 - Deadlock requires four Coffman conditions; the most practical prevention is a global lock ordering to break circular wait.

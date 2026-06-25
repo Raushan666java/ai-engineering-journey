@@ -15,7 +15,7 @@ By the end of this chapter, you will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 |Testing Pyramid|Many unit tests, some integration tests, few E2E tests|Unit tests should be fast and isolated; E2E tests should cover critical user journeys only|
-|Vitest|Fast, Vite-native test runner with Jest-compatible API|Use `describe`/`it`/`expect` for structure â€” Vitest runs tests in parallel by default|
+|Vitest|Fast, Vite-native test runner with Jest-compatible API|Use `describe`/`it`/`expect` for structure — Vitest runs tests in parallel by default|
 |React Testing|Testing Library tests components from the user's perspective|Query by accessible roles and text, not implementation details like class names or state|
 |Integration Tests|Test API endpoints end-to-end with a real or test database|Spin up the server in beforeAll, clean data between tests, use test-specific environment variables|
 |Playwright E2E|Browser automation testing real user flows|Use data-testid attributes for selectors, test user registration through task completion|
@@ -385,13 +385,13 @@ afterAll(() => server.close());
 
 
 > [!TIP]
-> Use `screen.getByRole()` as the primary Testing Library query â€” it best reflects how assistive technologies and real users find elements.
+> Use `screen.getByRole()` as the primary Testing Library query — it best reflects how assistive technologies and real users find elements.
 
 > [!WARNING]
 > Testing implementation details (component state, internal methods, class names) creates brittle tests that break on refactoring. Test behavior, not implementation.
 
 > [!REMEMBER]
-> MSW intercepts at the network level, not the module level. This means your code runs exactly as it would in production, with no mocking framework leaks in your application code â€” unlike mocking fetch or axios directly.
+> MSW intercepts at the network level, not the module level. This means your code runs exactly as it would in production, with no mocking framework leaks in your application code — unlike mocking fetch or axios directly.
 
 
 ## 16.9 Code Coverage Configuration
@@ -527,7 +527,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**B) MSW intercepts HTTP requests at the network level using Service Worker API (browser) or protocol-level interception (Node). Application code uses real fetch â€” no mocks leak into production code.**
+**B) MSW intercepts HTTP requests at the network level using Service Worker API (browser) or protocol-level interception (Node). Application code uses real fetch — no mocks leak into production code.**
 
 </details>
 
@@ -771,6 +771,48 @@ const diff = SnapshotDiffTool.diff("hello\nworld\n", "hello\nuniverse\n");
 console.log("Snapshot diff:\n", diff.diff);
 ```
 
+
+// testing web
+// fullstack-frontend-backend implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'testing web', data: { topic: 'fullstack-frontend-backend' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 Testing follows the pyramid model: many unit tests for isolated logic, some integration tests for API behavior, and few E2E tests for critical user flows. Vitest provides fast unit testing, Testing Library tests React components by user interaction, Playwright automates browser testing, and MSW mocks HTTP requests for reliable test environments.
@@ -801,8 +843,8 @@ Achieve 90%+ code coverage on a web application with unit tests for utility func
 
 ### Practical Takeaways
 
-1. **Test behavior, not implementation** â€” use `getByRole` and `getByText` over `getByTestId` to test what users actually experience.
-2. **Use MSW for network mocking** â€” it intercepts at the network level so application code runs unchanged, unlike mocking `fetch` directly.
-3. **Structure tests with the AAA pattern** â€” Arrange (set up), Act (perform action), Assert (check result) makes tests readable and maintainable.
-4. **Run E2E tests sparingly** â€” E2E tests are slow and brittle. Cover critical user journeys only. Use unit and integration tests for everything else.
-5. **Enforce coverage thresholds** â€” set minimum coverage percentages in CI to prevent regressions from being merged.
+1. **Test behavior, not implementation** — use `getByRole` and `getByText` over `getByTestId` to test what users actually experience.
+2. **Use MSW for network mocking** — it intercepts at the network level so application code runs unchanged, unlike mocking `fetch` directly.
+3. **Structure tests with the AAA pattern** — Arrange (set up), Act (perform action), Assert (check result) makes tests readable and maintainable.
+4. **Run E2E tests sparingly** — E2E tests are slow and brittle. Cover critical user journeys only. Use unit and integration tests for everything else.
+5. **Enforce coverage thresholds** — set minimum coverage percentages in CI to prevent regressions from being merged.

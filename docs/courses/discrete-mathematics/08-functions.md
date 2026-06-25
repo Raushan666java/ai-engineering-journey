@@ -20,7 +20,7 @@ After completing this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Function Definition | Every input maps to exactly one output | Functions are a special case of relations — each $x$ has one $y$ |
+| Function Definition | Every input maps to exactly one output | Functions are a special case of relations ? each $x$ has one $y$ |
 | Injective, Surjective, Bijective | One-to-one, onto, and both | A bijection has an inverse; cardinality arguments depend on injections |
 | Composition | Apply $f$ then $g$: $(g \circ f)(x) = g(f(x))$ | Composition is associative but not commutative |
 | Inverse Functions | Exists only for bijections | $f^{-1}(y) = x$ iff $f(x) = y$; $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$ |
@@ -105,7 +105,7 @@ console.log(isInjective(domain, x => x * 2)); // true
 console.log(isInjective(domain, x => Math.floor(x / 2))); // false
 ```
 
-> **One-Sentence Takeaway:** Injective functions are one-to-one (distinct inputs map to distinct outputs); surjective functions hit every codomain element; bijective functions are both — and only bijections have inverses.
+> **One-Sentence Takeaway:** Injective functions are one-to-one (distinct inputs map to distinct outputs); surjective functions hit every codomain element; bijective functions are both ? and only bijections have inverses.
 
 ### 8.3 Composition
 
@@ -173,7 +173,7 @@ $$1 \prec \log n \prec \sqrt{n} \prec n \prec n \log n \prec n^2 \prec n^3 \prec
 
 **Theorem 8.5 (Product rule).** If $f_1 = O(g_1)$ and $f_2 = O(g_2)$, then $f_1 f_2 = O(g_1 g_2)$.
 
-**Theorem 8.6 (Polynomial dominance).** A polynomial of degree $d$ is $\Theta(n^d)$ — the highest-degree term dominates.
+**Theorem 8.6 (Polynomial dominance).** A polynomial of degree $d$ is $\Theta(n^d)$ ? the highest-degree term dominates.
 
 ```typescript
 function bigOClass(f: (n: number) => number): string {
@@ -182,8 +182,8 @@ function bigOClass(f: (n: number) => number): string {
     { name: "O(log n)", g: (n: number) => Math.log2(n) },
     { name: "O(n)", g: (n: number) => n },
     { name: "O(n log n)", g: (n: number) => n * Math.log2(n) },
-    { name: "O(n²)", g: (n: number) => n * n },
-    { name: "O(2ⁿ)", g: (n: number) => Math.pow(2, n) },
+    { name: "O(n?)", g: (n: number) => n * n },
+    { name: "O(2n)", g: (n: number) => Math.pow(2, n) },
   ];
 
   // Approximate check by ratio convergence
@@ -194,7 +194,7 @@ function bigOClass(f: (n: number) => number): string {
   return "check dominant term";
 }
 
-// Verify O(n²) for a quadratic
+// Verify O(n?) for a quadratic
 function isQuadraticGrowth(f: (n: number) => number): boolean {
   const ratio1 = f(100) / f(50);
   const ratio2 = f(200) / f(100);
@@ -205,7 +205,7 @@ function isQuadraticGrowth(f: (n: number) => number): boolean {
 console.log(isQuadraticGrowth(n => 3 * n * n + 2 * n + 1)); // roughly true
 ```
 
-> **One-Sentence Takeaway:** Big-O provides an asymptotic upper bound, big-$\Omega$ a lower bound, and big-$\Theta$ a tight bound — the growth hierarchy is $1 \prec \log n \prec n \prec n \log n \prec n^2 \prec 2^n \prec n!$.
+> **One-Sentence Takeaway:** Big-O provides an asymptotic upper bound, big-$\Omega$ a lower bound, and big-$\Theta$ a tight bound ? the growth hierarchy is $1 \prec \log n \prec n \prec n \log n \prec n^2 \prec 2^n \prec n!$.
 
 ### 8.7 Partial Functions
 
@@ -263,21 +263,21 @@ Recursive definitions require base case(s) and a recursive rule that eventually 
    - B) $f(n) = 2n$
    - C) $f(n) = n + 1$
    - D) $f(n) = n \bmod 2$
-   <details><summary>Answer</summary>**C)** $f(n) = n + 1$ — it is injective ($n+1 = m+1 \implies n=m$) and surjective (for any $y$, let $n = y-1$), hence bijective.</details>
+   <details><summary>Answer</summary>**C)** $f(n) = n + 1$ ? it is injective ($n+1 = m+1 \implies n=m$) and surjective (for any $y$, let $n = y-1$), hence bijective.</details>
 
 2. What is the growth rate of $f(n) = n \log n + \sqrt{n}$?
    - A) $\Theta(\sqrt{n})$
    - B) $\Theta(n)$
    - C) $\Theta(n \log n)$
    - D) $\Theta(\log n)$
-   <details><summary>Answer</summary>**C)** $\Theta(n \log n)$ — $n \log n$ dominates $\sqrt{n}$ asymptotically.</details>
+   <details><summary>Answer</summary>**C)** $\Theta(n \log n)$ ? $n \log n$ dominates $\sqrt{n}$ asymptotically.</details>
 
 3. Compute $\lfloor -3.14 \rfloor$.
    - A) $-3$
    - B) $-4$
    - C) $3$
    - D) $4$
-   <details><summary>Answer</summary>**B)** $-4$ — floor rounds **down** toward $-\infty$, so $-3.14$ goes to $-4$.</details>
+   <details><summary>Answer</summary>**B)** $-4$ ? floor rounds **down** toward $-\infty$, so $-3.14$ goes to $-4$.</details>
 
 4. If $g \circ f$ is injective, what can we conclude?
    - A) Both $f$ and $g$ are injective
@@ -328,7 +328,7 @@ function factorial(n: number): number {
 console.log(factorial(5)); // 120
 ```
 
-**Example 8.10** (Big-O in TypeScript — verifying growth). Show that $f(n) = 100n + 5$ is $O(n)$.
+**Example 8.10** (Big-O in TypeScript ? verifying growth). Show that $f(n) = 100n + 5$ is $O(n)$.
 
 ```typescript
 function verifyLinearGrowth(f: (n: number) => number, nMax: number): boolean {
@@ -399,7 +399,7 @@ function compose<T, U, V>(f: (x: T) => U, g: (y: U) => V): (x: T) => V {
 const double = (x: number) => 2 * x;
 const add1 = (x: number) => x + 1;
 const doubleThenAdd1 = compose(double, add1);
-console.log('(f∘g)(5):', doubleThenAdd1(5)); // 11
+console.log('(f?g)(5):', doubleThenAdd1(5)); // 11
 
 // --- Inverse Function Finder ---
 function inverse<T extends string | number, U extends string | number>(
@@ -420,8 +420,8 @@ function floorDiv(a: number, b: number): number {
 function ceilDiv(a: number, b: number): number {
   return Math.ceil(a / b);
 }
-console.log('⌊7/3⌋:', floorDiv(7, 3)); // 2
-console.log('⌈7/3⌉:', ceilDiv(7, 3)); // 3
+console.log('?7/3?:', floorDiv(7, 3)); // 2
+console.log('?7/3?:', ceilDiv(7, 3)); // 3
 
 // --- Big-O Verifier ---
 function bigOVerify(
@@ -435,10 +435,10 @@ function bigOVerify(
   }
   return true;
 }
-// Verify: 3n² + 2n + 1 = O(n²) with c=4, n0=1
+// Verify: 3n? + 2n + 1 = O(n?) with c=4, n0=1
 const f1 = (n: number) => 3 * n * n + 2 * n + 1;
 const f2 = (n: number) => n * n;
-console.log('3n²+2n+1 = O(n²):', bigOVerify(f1, f2, 4, 1)); // true
+console.log('3n?+2n+1 = O(n?):', bigOVerify(f1, f2, 4, 1)); // true
 
 // --- Function Growth Comparator ---
 function growthComparator(f: (n: number) => number, g: (n: number) => number, limit: number): string {
@@ -475,7 +475,7 @@ function inverseFunction(f: (x: number) => number, domain: number[], codomain: n
   return mapping;
 }
 const inv = inverseFunction(x => 2 * x, [1, 2, 3], [2, 4, 6]);
-console.log('\nInverse of f(x)=2x:', inv ? [...inv.entries()].map(([k, v]) => `f⁻¹(${k})=${v}`).join(', ') : 'no inverse');
+console.log('\nInverse of f(x)=2x:', inv ? [...inv.entries()].map(([k, v]) => `f??(${k})=${v}`).join(', ') : 'no inverse');
 
 // --- Pigeonhole Principle on Functions ---
 function pigeonholeFunc<T, U>(f: Map<T, U>): boolean {
@@ -483,7 +483,7 @@ function pigeonholeFunc<T, U>(f: Map<T, U>): boolean {
   return new Set(values).size < values.length;
 }
 const fMap = new Map([[1, 'a'], [2, 'b'], [3, 'a']]); // 3 domains, 2 codomains
-console.log('\nPigeonhole applies (3→2):', pigeonholeFunc(fMap));
+console.log('\nPigeonhole applies (3?2):', pigeonholeFunc(fMap));
 
 // --- Ceiling & Floor Calculator ---
 function calcFloor(x: number): number { return Math.floor(x); }
@@ -496,10 +496,10 @@ function bigOVerifier(f: (n: number) => number, g: (n: number) => number, c: num
   for (let n = n0; n <= limit; n++) if (f(n) > c * g(n)) return false;
   return true;
 }
-// Is n² ∈ O(n³)? Yes, for c=1, n0=1
-console.log('\nn² ∈ O(n³):', bigOVerifier(n => n * n, n => n * n * n, 1, 1, 100));
-// Is n³ ∈ O(n²)? No
-console.log('n³ ∈ O(n²):', bigOVerifier(n => n * n * n, n => n * n, 1, 1, 100));
+// Is n? ? O(n?)? Yes, for c=1, n0=1
+console.log('\nn? ? O(n?):', bigOVerifier(n => n * n, n => n * n * n, 1, 1, 100));
+// Is n? ? O(n?)? No
+console.log('n? ? O(n?):', bigOVerifier(n => n * n * n, n => n * n, 1, 1, 100));
 
 // --- Hash Function (Modular) ---
 function hashMod(key: string, tableSize: number): number {
@@ -512,6 +512,98 @@ console.log('\nHash "hello" mod 10:', hashMod('hello', 10));
 console.log('Hash "world" mod 10:', hashMod('world', 10));
 ```
 
+
+// functions
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'functions', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// functions - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'functions' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Functions map each input to exactly one output.
@@ -522,11 +614,11 @@ console.log('Hash "world" mod 10:', hashMod('world', 10));
 
 ## Practical Takeaways
 
-1. **Check injectivity via horizontal line test** — if any horizontal line hits the graph twice, not injective.
-2. **Surjectivity depends on codomain** — changing the codomain can make a non-surjective function surjective.
-3. **Inverse only for bijections** — only bijections have true inverses.
-4. **Big-O ignores constants** — $1000n$ is $O(n)$ just as much as $2n$ is.
-5. **Dominant term wins** — in a sum, only the fastest-growing term matters asymptotically.
+1. **Check injectivity via horizontal line test** ? if any horizontal line hits the graph twice, not injective.
+2. **Surjectivity depends on codomain** ? changing the codomain can make a non-surjective function surjective.
+3. **Inverse only for bijections** ? only bijections have true inverses.
+4. **Big-O ignores constants** ? $1000n$ is $O(n)$ just as much as $2n$ is.
+5. **Dominant term wins** ? in a sum, only the fastest-growing term matters asymptotically.
 
 **Example 8.11** (Partial function composition). Let $f: \mathbb{R} \rightharpoonup \mathbb{R}$ with $f(x) = 1/x$ (undefined at 0) and $g(x) = x + 1$. Then $(g \circ f)(x) = 1/x + 1$, also undefined at $x = 0$.
 
@@ -541,7 +633,7 @@ A function $f: A \to B$ associates each element of $A$ (domain) with exactly one
 **Definition 8.10 (Injection/Surjection/Bijection).**
 - **Injective (one-to-one):** $f(a_1) = f(a_2) \implies a_1 = a_2$. No two domain elements map to the same codomain element.
 - **Surjective (onto):** For every $b \in B$, there exists $a \in A$ such that $f(a) = b$. Every codomain element is hit.
-- **Bijective:** Both injective and surjective — a perfect one-to-one correspondence.
+- **Bijective:** Both injective and surjective ? a perfect one-to-one correspondence.
 
 ```typescript
 function isInjective<T, U>(f: (x: T) => U, domain: T[]): boolean {
@@ -598,7 +690,7 @@ const h = compose(double, add1);
 console.log(h(5)); // (5*2)+1 = 11
 ```
 
-### 8.8 Growth of Functions — Extended Analysis
+### 8.8 Growth of Functions ? Extended Analysis
 
 **Definition 8.13 (Little-o and Little-$\omega$).**
 - $f(n) = o(g(n))$: For every $c > 0$, there exists $n_0$ such that $0 \leq f(n) \leq c\,g(n)$ for all $n \geq n_0$. Strictly slower growth.
@@ -614,14 +706,14 @@ function growthClass(n: number, f: (n: number) => number): string {
   const fn = f(n);
 
   if (fn <= n) return "O(n) or less";
-  if (fn <= nLogN) return "Θ(n log n)";
-  if (fn <= nSq) return "Θ(n²)";
-  if (fn <= nCb) return "Θ(n³)";
+  if (fn <= nLogN) return "T(n log n)";
+  if (fn <= nSq) return "T(n?)";
+  if (fn <= nCb) return "T(n?)";
   if (fn <= twoN) return "O(2^n)";
   return "super-exponential";
 }
 
-console.log(growthClass(10, n => n * n + 5 * n));     // Θ(n²)
+console.log(growthClass(10, n => n * n + 5 * n));     // T(n?)
 console.log(growthClass(10, n => Math.pow(2, n)));     // O(2^n)
 ```
 
@@ -631,12 +723,12 @@ $$1 \ll \log n \ll \sqrt{n} \ll n \ll n\log n \ll n^2 \ll n^3 \ll 2^n \ll n! \ll
 ```mermaid
 flowchart LR
     A["1<br/>Constant"] --> B["log n<br/>Logarithmic"]
-    B --> C["√n<br/>Sublinear"]
+    B --> C["vn<br/>Sublinear"]
     C --> D["n<br/>Linear"]
     D --> E["n log n<br/>Linearithmic"]
-    E --> F["n²<br/>Quadratic"]
-    F --> G["n³<br/>Cubic"]
-    G --> H["2ⁿ<br/>Exponential"]
+    E --> F["n?<br/>Quadratic"]
+    F --> G["n?<br/>Cubic"]
+    G --> H["2n<br/>Exponential"]
     H --> I["n!<br/>Factorial"]
 ```
 
@@ -682,7 +774,7 @@ function stirling(n: number): number {
 }
 
 // Compare n! vs Stirling for n = 10
-console.log(stirling(10));  // ~3598695 (actual 3628800 — 0.8% error)
+console.log(stirling(10));  // ~3598695 (actual 3628800 ? 0.8% error)
 ```
 
 **Proof 8.4** ($\log(n!) = \Theta(n \log n)$ via integral bound).
@@ -750,7 +842,7 @@ function composePartial<T, U, V>(
 
 ### Challenge Problem
 
-13. Let $f: A \rightarrow B$ and $g: B \rightarrow C$. Prove: $g \circ f$ is bijective if and only if $f$ is injective and $g$ is surjective, **and** the image of $f$ equals $B$. More precisely: if $g \circ f$ is bijective, then $f$ is injective and $g$ is surjective. Show by counterexample that the converse (both injective and surjective individually) is not sufficient — find an example where $f$ and $g$ are each bijective but $g \circ f$ is not (which actually cannot happen, so find an example where $g \circ f$ is bijective but $f$ is not surjective).
+13. Let $f: A \rightarrow B$ and $g: B \rightarrow C$. Prove: $g \circ f$ is bijective if and only if $f$ is injective and $g$ is surjective, **and** the image of $f$ equals $B$. More precisely: if $g \circ f$ is bijective, then $f$ is injective and $g$ is surjective. Show by counterexample that the converse (both injective and surjective individually) is not sufficient ? find an example where $f$ and $g$ are each bijective but $g \circ f$ is not (which actually cannot happen, so find an example where $g \circ f$ is bijective but $f$ is not surjective).
 
 14. Prove that $\lfloor 2x \rfloor = \lfloor x \rfloor + \lfloor x + 0.5 \rfloor$ for all real $x$.
 

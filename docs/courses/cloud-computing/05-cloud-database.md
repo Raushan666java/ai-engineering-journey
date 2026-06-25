@@ -1,4 +1,4 @@
-﻿# Chapter 5: Cloud Database Services
+# Chapter 5: Cloud Database Services
 
 > **Previous:** [Chapter 4: Cloud Storage Services](./04-cloud-storage.md) | **Next:** [Chapter 6: Cloud Networking](./06-cloud-networking.md)
 
@@ -19,7 +19,7 @@ After completing this chapter, students will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| Relational Databases | RDS, Cloud SQL — managed PostgreSQL/MySQL/SQL Server | Best for structured data with ACID transactions |
+| Relational Databases | RDS, Cloud SQL ? managed PostgreSQL/MySQL/SQL Server | Best for structured data with ACID transactions |
 | NoSQL Databases | DynamoDB, CosmosDB, Firestore | Best for high-scale, flexible-schema workloads |
 | In-Memory Caches | ElastiCache (Redis/Memcached) | Sub-millisecond latency for hot data |
 | Data Warehouses | Redshift, Synapse, BigQuery | Analytics and OLAP at scale |
@@ -233,7 +233,7 @@ class UserService {
     return this.cache.get(
       "user:" + id,
       async () => {
-        console.log("Cache miss — fetching from database");
+        console.log("Cache miss ? fetching from database");
         return { id, name: "User_" + id };
       }
     );
@@ -374,7 +374,7 @@ aws rds create-db-instance-read-replica \
   --region eu-west-1
 \\\
 
-> **One-Sentence Takeaway:** Match your database to your workload — relational for ACID, NoSQL for scale, in-memory for speed, and a warehouse for analytics — and always plan for HA with Multi-AZ deployment.
+> **One-Sentence Takeaway:** Match your database to your workload ? relational for ACID, NoSQL for scale, in-memory for speed, and a warehouse for analytics ? and always plan for HA with Multi-AZ deployment.
 
 > **Pro Tip:** For cost-sensitive applications, start with DynamoDB On-Demand or Aurora Serverless to avoid provisioning excess capacity. Switch to provisioned capacity only after your workload pattern stabilizes.
 
@@ -455,7 +455,7 @@ aws rds create-db-instance-read-replica \
 
 <details>
 <summary>Answer</summary>
-**B) The application fetches data from the database and writes it to the cache.** In cache-aside, the application is responsible for loading cache misses: check cache → miss → query DB → populate cache → return to caller.
+**B) The application fetches data from the database and writes it to the cache.** In cache-aside, the application is responsible for loading cache misses: check cache ? miss ? query DB ? populate cache ? return to caller.
 </details>
 
 5. Which database type uses a denormalized star or snowflake schema?
@@ -656,6 +656,98 @@ console.log("Backup retention:", JSON.stringify(mlr.backupRetentionCost({ dailyR
 ```
 ```
 
+
+// cloud database
+// iaas-paas-saas-cloud-native implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'cloud database', data: { topic: 'iaas-paas-saas-cloud-native' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// cloud database - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'cloud-services demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'cloud-computing', chapter: 'cloud database' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('cloud-services'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - The CAP theorem forces a choice between consistency and availability during partitions.
@@ -799,11 +891,11 @@ export const dbPort = db.port;
 
 Airbnb's journey from a monolithic MySQL database to a polyglot persistence architecture illustrates the cloud database decision process.
 
-**2010–2013 — Monolithic RDS:** Airbnb ran a single large RDS MySQL instance serving all traffic. As the platform grew to 10M+ users, database bottlenecks appeared. Read replicas were added for analytics, but the primary database remained a single point of pressure.
+**2010?2013 ? Monolithic RDS:** Airbnb ran a single large RDS MySQL instance serving all traffic. As the platform grew to 10M+ users, database bottlenecks appeared. Read replicas were added for analytics, but the primary database remained a single point of pressure.
 
-**2014–2016 — Sharding:** Airbnb sharded their MySQL database by region and feature. They developed the "Spinal Tap" sharding framework and later migrated to AWS Aurora for improved throughput and built-in replication.
+**2014?2016 ? Sharding:** Airbnb sharded their MySQL database by region and feature. They developed the "Spinal Tap" sharding framework and later migrated to AWS Aurora for improved throughput and built-in replication.
 
-**2017–2020 — Polyglot Persistence:** Airbnb adopted specialized databases for specific workloads:
+**2017?2020 ? Polyglot Persistence:** Airbnb adopted specialized databases for specific workloads:
 - **Aurora** for transactional bookings and payments (ACID required)
 - **DynamoDB** for session stores and user preferences (high-scale KV)
 - **ElastiCache (Redis)** for real-time pricing and availability lookups (sub-ms)

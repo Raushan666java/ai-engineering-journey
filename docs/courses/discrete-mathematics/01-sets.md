@@ -59,20 +59,20 @@ or by a set-builder (predicate) notation:
 $$B = \{x \mid x \in \mathbb{N},\; x \text{ is even},\; x \leq 20\}$$
 
 Standard number sets:
-- $\mathbb{N} = \{0, 1, 2, 3, \ldots\}$ — natural numbers
-- $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$ — integers
-- $\mathbb{Q} = \{a/b \mid a, b \in \mathbb{Z},\; b \neq 0\}$ — rational numbers
-- $\mathbb{R}$ — real numbers
+- $\mathbb{N} = \{0, 1, 2, 3, \ldots\}$ ? natural numbers
+- $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$ ? integers
+- $\mathbb{Q} = \{a/b \mid a, b \in \mathbb{Z},\; b \neq 0\}$ ? rational numbers
+- $\mathbb{R}$ ? real numbers
 
 The **empty set** $\emptyset$ (or $\{\}$) contains no elements. The **universal set** $U$ is the set of all elements under consideration in a given context.
 
 **Set-builder notation patterns:**
-- $\{x \in \mathbb{N} \mid x < 10\}$ — natural numbers less than 10
-- $\{2k \mid k \in \mathbb{Z}\}$ — even integers
-- $\{x^2 \mid x \in \mathbb{R}\}$ — nonnegative reals
-- $\{a/b \in \mathbb{Q} \mid a, b \in \mathbb{Z},\; b \neq 0\}$ — rationals in lowest terms
+- $\{x \in \mathbb{N} \mid x < 10\}$ ? natural numbers less than 10
+- $\{2k \mid k \in \mathbb{Z}\}$ ? even integers
+- $\{x^2 \mid x \in \mathbb{R}\}$ ? nonnegative reals
+- $\{a/b \in \mathbb{Q} \mid a, b \in \mathbb{Z},\; b \neq 0\}$ ? rationals in lowest terms
 
-> **One-Sentence Takeaway:** A set is defined solely by its membership — two sets are equal iff they contain exactly the same elements, regardless of order.
+> **One-Sentence Takeaway:** A set is defined solely by its membership ? two sets are equal iff they contain exactly the same elements, regardless of order.
 
 ### 1.2 Subsets
 
@@ -99,9 +99,9 @@ The **cardinality** of a finite set $S$, denoted $|S|$, is the number of distinc
 
 **Theorem 1.3 (Cantor's Diagonalization).** The set of real numbers $\mathbb{R}$ is uncountable.
 
-*Proof sketch.* Assume $\mathbb{R}$ is countable, so we list all reals in $(0,1)$. Construct a number whose $n$-th digit differs from the $n$-th digit of the $n$-th number in the list. This new number is not in the list — contradiction.
+*Proof sketch.* Assume $\mathbb{R}$ is countable, so we list all reals in $(0,1)$. Construct a number whose $n$-th digit differs from the $n$-th digit of the $n$-th number in the list. This new number is not in the list ? contradiction.
 
-> **One-Sentence Takeaway:** Cardinality measures the size of a set; some infinities are larger than others — $\mathbb{R}$ is uncountably infinite while $\mathbb{Q}$ is countably infinite.
+> **One-Sentence Takeaway:** Cardinality measures the size of a set; some infinities are larger than others ? $\mathbb{R}$ is uncountably infinite while $\mathbb{Q}$ is countably infinite.
 
 ### 1.4 Power Set
 
@@ -110,9 +110,9 @@ $$\mathcal{P}(S) = \{T \mid T \subseteq S\}$$
 
 **Theorem 1.4.** If $|S| = n$, then $|\mathcal{P}(S)| = 2^n$.
 
-*Proof.* Each element of $S$ may either be in a given subset or not — two choices per element, independently, yielding $2^n$ subsets.
+*Proof.* Each element of $S$ may either be in a given subset or not ? two choices per element, independently, yielding $2^n$ subsets.
 
-> **One-Sentence Takeaway:** A set of size $n$ has $2^n$ subsets — the power set grows exponentially.
+> **One-Sentence Takeaway:** A set of size $n$ has $2^n$ subsets ? the power set grows exponentially.
 
 ### 1.5 Set Operations
 
@@ -163,11 +163,11 @@ Venn diagrams represent sets as overlapping regions in a plane. The universal se
 ```mermaid
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
 graph TD
-    subgraph "A ∪ B (Union)"
+    subgraph "A ? B (Union)"
         direction LR
         a1((A)) --- b1((B))
     end
-    subgraph "A ∩ B (Intersection)"
+    subgraph "A n B (Intersection)"
         a2((A)) --- b2((B))
     end
 ```
@@ -185,7 +185,7 @@ The $n$-fold Cartesian product $A_1 \times A_2 \times \cdots \times A_n$ is the 
 
 **Example:** If $A = \{1,2\}$ and $B = \{x,y\}$, then $A \times B = \{(1,x),(1,y),(2,x),(2,y)\}$.
 
-> **One-Sentence Takeaway:** The Cartesian product builds ordered pairs from sets, and its size is the product of the individual set sizes — the foundation of relations and functions.
+> **One-Sentence Takeaway:** The Cartesian product builds ordered pairs from sets, and its size is the product of the individual set sizes ? the foundation of relations and functions.
 
 ### 1.9 Characteristic Functions
 
@@ -254,11 +254,11 @@ For three sets: $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| -
 **General formula:**
 $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
 
-> **Pro Tip:** When proving set identities, start with the more complex side and reduce it to the simpler side using known identities — this is cleaner than elementwise arguments.
+> **Pro Tip:** When proving set identities, start with the more complex side and reduce it to the simpler side using known identities ? this is cleaner than elementwise arguments.
 >
 > **Pro Tip:** For finite sets, always use inclusion-exclusion to avoid double-counting when sets overlap.
 >
-> **Warning:** Do not confuse $\emptyset$ (the empty set, a set with no elements) with $\{\emptyset\}$ (a set containing the empty set as an element — its cardinality is 1).
+> **Warning:** Do not confuse $\emptyset$ (the empty set, a set with no elements) with $\{\emptyset\}$ (a set containing the empty set as an element ? its cardinality is 1).
 
 ## Concept Comparison Table
 
@@ -392,11 +392,11 @@ console.log(jaccardSimilarity(A, B)); // 0.333...
 ```mermaid
 flowchart LR
     subgraph Union
-        A1["A"] --- U1["A ∪ B"]
+        A1["A"] --- U1["A ? B"]
         B1["B"] --- U1
     end
     subgraph Intersection
-        A2["A"] --- I2["A ∩ B"]
+        A2["A"] --- I2["A n B"]
         B2["B"] --- I2
     end
     subgraph Difference
@@ -461,7 +461,7 @@ console.log('De Morgan holds:', verifyDeMorgan(U, A, B)); // true
 
 ```
 console.log('Power set of {1,2,3}:', powerSet([1,2,3]).map(s=>`{${s.join(',')}}`).join(', '));
-console.log('Cartesian product {1,2}×{a,b}:', cartesianProduct([1,2],['a','b']).map(p=>`(${p[0]},${p[1]})`).join(', '));
+console.log('Cartesian product {1,2}?{a,b}:', cartesianProduct([1,2],['a','b']).map(p=>`(${p[0]},${p[1]})`).join(', '));
 console.log('Union:', [...setUnion(new Set([1,2,3]), new Set([3,4,5]))]);
 console.log('Intersection:', [...setIntersection(new Set([1,2,3]), new Set([3,4,5]))]);
 console.log('Difference A-B:', [...setDifference(new Set([1,2,3]), new Set([3,4,5]))]);
@@ -506,9 +506,101 @@ function inclusionExclusion<T>(sets: Set<T>[]): number {
   return total;
 }
 const S1 = new Set([1,2,3,4]), S2 = new Set([3,4,5,6]), S3 = new Set([4,5,6,7]);
-console.log('\nInclusion-exclusion |A∪B∪C|:', inclusionExclusion([S1, S2, S3]), '(expected:', 7, ')');
+console.log('\nInclusion-exclusion |A?B?C|:', inclusionExclusion([S1, S2, S3]), '(expected:', 7, ')');
 ```
 
+
+// sets
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'sets', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// sets - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'sets' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - A set is a collection of distinct objects. Sets are equal when they contain exactly the same elements.
@@ -575,7 +667,7 @@ console.log([...difference(A, B)]); // [1, 2]
 console.log(powerSet(new Set([1, 2])).size); // 4
 ```
 
-### 1.9 Set Identities — Formal Proofs
+### 1.9 Set Identities ? Formal Proofs
 
 **Theorem 1.7 (De Morgan's Laws for Sets).**
 1. $\overline{A \cup B} = \overline{A} \cap \overline{B}$
@@ -596,7 +688,7 @@ $$A \cup (A \cap B) = A \quad \text{and} \quad A \cap (A \cup B) = A$$
 
 **Theorem 1.9 (Power Set Cardinality).** If $|S| = n$, then $|\mathcal{P}(S)| = 2^n$.
 
-*Proof.* For each element of $S$, a subset either includes or excludes that element — two choices per element. By the product rule, $2^n$ total subsets.
+*Proof.* For each element of $S$, a subset either includes or excludes that element ? two choices per element. By the product rule, $2^n$ total subsets.
 
 ```typescript
 function powerSetSize(n: number): number {
@@ -635,7 +727,7 @@ function subsetsOfSize<T>(set: Set<T>, k: number): Set<T>[] {
 - $r_2 = 0.d_{21}d_{22}d_{23}\ldots$
 - $r_3 = 0.d_{31}d_{32}d_{33}\ldots$
 
-Construct $x = 0.x_1x_2x_3\ldots$ where $x_i = 1 - d_{ii}$. Then $x$ differs from each $r_i$ at the $i$-th digit, so $x$ is not in the list — contradiction. $\square$
+Construct $x = 0.x_1x_2x_3\ldots$ where $x_i = 1 - d_{ii}$. Then $x$ differs from each $r_i$ at the $i$-th digit, so $x$ is not in the list ? contradiction. $\square$
 
 **Theorem 1.11.** $\mathbb{Q}$ is countably infinite.
 

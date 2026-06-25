@@ -33,7 +33,7 @@ flowchart LR
     A[Tree Definition] --> B[Properties]
     B --> C[n vertices, n-1 edges]
     B --> D[Unique path property]
-    B --> E[Leaf count ≥ 2]
+    B --> E[Leaf count = 2]
     A --> F[Rooted Trees]
     F --> G[Binary Trees]
     G --> H[BST]
@@ -62,7 +62,7 @@ A **tree** is a connected acyclic undirected graph. A **forest** is an acyclic g
 
 **Theorem 10.2 (Leaf count).** A tree with at least 2 vertices has at least 2 vertices of degree 1.
 
-> **One-Sentence Takeaway:** A tree is the minimal connected graph — $n-1$ edges, unique paths, at least two leaves, and adding any edge creates a cycle.
+> **One-Sentence Takeaway:** A tree is the minimal connected graph ? $n-1$ edges, unique paths, at least two leaves, and adding any edge creates a cycle.
 
 ### 10.2 Rooted Trees
 
@@ -257,7 +257,7 @@ function buildHuffmanTree(freqs: Map<string, number>): HuffmanNode {
 }
 ```
 
-> **One-Sentence Takeaway:** Huffman coding creates an optimal prefix code by repeatedly combining the two least-frequent characters — the tree minimizes total weighted codeword length.
+> **One-Sentence Takeaway:** Huffman coding creates an optimal prefix code by repeatedly combining the two least-frequent characters ? the tree minimizes total weighted codeword length.
 
 ## Cross-Application Matrix
 
@@ -265,10 +265,10 @@ function buildHuffmanTree(freqs: Map<string, number>): HuffmanNode {
 |---------|-----------------|--------------|----------|------------|
 | Binary Search Tree | Efficient search/sort | Database indexing | Routing tables | Symbol tables |
 | Minimum Spanning Tree | Network design | Clustering (single-link) | Network wiring | Supply chain routing |
-| Huffman Coding | Data compression | Feature encoding | Transmission optimization | — |
-| Decision Trees | Classification | Random forests | — | Decision analysis |
-| Tree Traversals | Expression evaluation | AST processing | — | Organizational chart analysis |
-| Spanning Tree | Network topology | — | STP protocol | Utility network design |
+| Huffman Coding | Data compression | Feature encoding | Transmission optimization | ? |
+| Decision Trees | Classification | Random forests | ? | Decision analysis |
+| Tree Traversals | Expression evaluation | AST processing | ? | Organizational chart analysis |
+| Spanning Tree | Network topology | ? | STP protocol | Utility network design |
 
 ## Chapter Quiz
 
@@ -311,7 +311,7 @@ function buildHuffmanTree(freqs: Map<string, number>): HuffmanNode {
 
 **Example 10.1** (Tree verification). Graph with $V = \{1,2,3,4\}$ and edges $\{\{1,2\},\{2,3\},\{3,4\},\{4,1\}\}$ has $n=4$, $e=4$, so it cannot be a tree ($e > n-1$). Indeed, it is $C_4$ (a cycle). Remove any edge to get a tree ($n=4$, $e=3$).
 
-**Example 10.2** (Rooted tree — file system). A UNIX filesystem directory is a rooted tree. `/` is the root. `/usr/bin/python3` illustrates depth. The depth of `python3` is 3.
+**Example 10.2** (Rooted tree ? file system). A UNIX filesystem directory is a rooted tree. `/` is the root. `/usr/bin/python3` illustrates depth. The depth of `python3` is 3.
 
 **Example 10.3** (BST insertion). Insert $[5, 3, 7, 2, 4, 6, 8]$ into an empty BST:
 ```
@@ -329,24 +329,24 @@ Inorder: $2, 3, 4, 5, 6, 7, 8$.
 - Postorder: $2, 4, 3, 6, 8, 7, 5$
 - Level-order: $5, 3, 7, 2, 4, 6, 8$
 
-**Example 10.5** (Kruskal's algorithm). Graph with edges: $(1,2,5)$, $(2,3,3)$, $(1,3,1)$, $(3,4,4)$, $(2,4,6)$. Sorted: $(1,3,1)$, $(2,3,3)$, $(3,4,4)$, $(1,2,5)$, $(2,4,6)$. Greedily pick: $(1,3)$, $(2,3)$, $(3,4)$ → MST with weight $1+3+4=8$.
+**Example 10.5** (Kruskal's algorithm). Graph with edges: $(1,2,5)$, $(2,3,3)$, $(1,3,1)$, $(3,4,4)$, $(2,4,6)$. Sorted: $(1,3,1)$, $(2,3,3)$, $(3,4,4)$, $(1,2,5)$, $(2,4,6)$. Greedily pick: $(1,3)$, $(2,3)$, $(3,4)$ ? MST with weight $1+3+4=8$.
 
 **Example 10.6** (Huffman code). Frequencies: $A:45$, $B:13$, $C:12$, $D:16$, $E:9$, $F:5$.
 
 Building the tree:
-1. Combine $F(5)$ and $E(9)$ → $14$.
-2. Combine $C(12)$ and $B(13)$ → $25$.
-3. Combine $14$ and $D(16)$ → $30$.
-4. Combine $A(45)$ and $25$ → $70$.
-5. Combine $30$ and $70$ → $100$.
+1. Combine $F(5)$ and $E(9)$ ? $14$.
+2. Combine $C(12)$ and $B(13)$ ? $25$.
+3. Combine $14$ and $D(16)$ ? $30$.
+4. Combine $A(45)$ and $25$ ? $70$.
+5. Combine $30$ and $70$ ? $100$.
 
 Codes: $A:0$, $B:101$, $C:100$, $D:111$, $E:1101$, $F:1100$. Total bits: $45 \cdot 1 + 13 \cdot 3 + 12 \cdot 3 + 16 \cdot 3 + 9 \cdot 4 + 5 \cdot 4 = 224$ bits.
 
-**Example 10.7** (Decision tree — sorting 3 elements). The decision tree for sorting $a,b,c$ has $3! = 6$ leaves. Depth $\geq \lceil \log_2 6 \rceil = 3$ comparisons.
+**Example 10.7** (Decision tree ? sorting 3 elements). The decision tree for sorting $a,b,c$ has $3! = 6$ leaves. Depth $\geq \lceil \log_2 6 \rceil = 3$ comparisons.
 
 **Example 10.8** (Spanning tree count). $K_3$ (triangle) has 3 spanning trees (remove any one edge). Cayley's formula: $K_n$ has $n^{n-2}$ spanning trees.
 
-**Example 10.9** (Prim's algorithm). Starting from vertex 1 in the same graph as Example 10.5: add $(1,3,1)$, then $(3,2,3)$, then $(3,4,4)$ → same MST.
+**Example 10.9** (Prim's algorithm). Starting from vertex 1 in the same graph as Example 10.5: add $(1,3,1)$, then $(3,2,3)$, then $(3,4,4)$ ? same MST.
 
 **Example 10.10** (Perfect binary tree). A perfect binary tree of height $h = 3$ has $2^{h+1} - 1 = 15$ nodes and $2^h = 8$ leaves.
 
@@ -533,6 +533,98 @@ const huff = huffmanCoding(chars);
 console.log('\nHuffman codes:', [...huff.entries()].map(([k, v]) => `${k}:${v}`).join(', '));
 ```
 
+
+// trees
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'trees', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// trees - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'trees' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - A tree is a connected acyclic graph with $n$ vertices and $n-1$ edges.
@@ -544,11 +636,11 @@ console.log('\nHuffman codes:', [...huff.entries()].map(([k, v]) => `${k}:${v}`)
 
 ## Practical Takeaways
 
-1. **$n-1$ edges is the quick check** — if $|E| \neq |V| - 1$, it is not a tree.
-2. **BST inorder = sorted** — use inorder traversal to verify search tree correctness.
-3. **MST is greedy** — Kruskal (sort edges) and Prim (grow from a vertex) both work greedily.
-4. **Huffman requires frequency data** — the compression ratio depends on the frequency distribution.
-5. **Tree height matters** — height determines traversal and search efficiency.
+1. **$n-1$ edges is the quick check** ? if $|E| \neq |V| - 1$, it is not a tree.
+2. **BST inorder = sorted** ? use inorder traversal to verify search tree correctness.
+3. **MST is greedy** ? Kruskal (sort edges) and Prim (grow from a vertex) both work greedily.
+4. **Huffman requires frequency data** ? the compression ratio depends on the frequency distribution.
+5. **Tree height matters** ? height determines traversal and search efficiency.
 
 ### 10.8 Binary Search Tree Implementation
 
@@ -659,7 +751,7 @@ flowchart TD
 | Postorder | 3, 7, 5, 12, 18, 15, 10 | left - right - root |
 | Level-order | 10, 5, 15, 3, 7, 12, 18 | BFS by level |
 
-### 10.10 Huffman Coding — Complete Implementation
+### 10.10 Huffman Coding ? Complete Implementation
 
 Huffman coding constructs an optimal prefix code from character frequencies.
 
@@ -820,7 +912,7 @@ console.log(decisionTreeHeight(24)); // 5 comparisons minimum
 
 *Proof.* Each internal node has exactly 2 children. Count edges two ways: (1) each of $n$ nodes except root has one parent, so $|E| = n - 1$. (2) Each internal node contributes 2 edges, so $|E| = 2i$. Thus $n - 1 = 2i$. Since $n = i + L$, we have $(i + L) - 1 = 2i \implies L = i + 1$. $\square$
 
-### 10.13 AVL Trees — Self-Balancing BST
+### 10.13 AVL Trees ? Self-Balancing BST
 
 An **AVL tree** maintains the invariant $|\text{height(left)} - \text{height(right)}| \leq 1$ for every node. Rotations restore balance after insertions and deletions.
 
@@ -905,6 +997,6 @@ function avlRotateLeft(x: AVLNode): AVLNode {
 
 13. Prove: In any binary tree, the number of leaves $L$ equals $i + 1$, where $i$ is the number of internal nodes with 2 children.
 
-14. Prove Cayley's formula: $K_n$ has $n^{n-2}$ spanning trees (hint: use Prüfer sequences).
+14. Prove Cayley's formula: $K_n$ has $n^{n-2}$ spanning trees (hint: use Pr?fer sequences).
 
 15. A **binary search tree** is **balanced** if $|\text{height(left)} - \text{height(right)}| \leq 1$ for every node. Prove that a balanced BST with $n$ nodes has height $\leq \lfloor 1.44 \log_2 (n+2) \rfloor$.

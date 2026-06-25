@@ -1,4 +1,4 @@
-# Chapter 2: Hadoop — HDFS, MapReduce & YARN
+# Chapter 2: Hadoop ? HDFS, MapReduce & YARN
 
 > **Previous:** [Chapter 1: Introduction to Big Data](./01-introduction.md) | **Next:** [Chapter 3: Apache Spark Basics](./03-spark-basics.md)
 
@@ -15,12 +15,12 @@ After completing this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| HDFS Architecture | Single namenode + multiple datanodes with block replication | The namenode is a single point of failure — monitor it closely |
+| HDFS Architecture | Single namenode + multiple datanodes with block replication | The namenode is a single point of failure ? monitor it closely |
 | Block Replication | 128 MB blocks, 3x replication with rack awareness | Rack-aware placement survives full rack failures |
 | MapReduce | Two-phase (map-reduce) model with automatic parallelization | Hadoop Streaming lets you write mappers/reducers in Python |
 | YARN | Separates resource management from processing framework | YARN enables Spark, MapReduce, Tez to share the same cluster |
 | Small Files Problem | HDFS is optimized for large files | Keep files close to 128 MB block size |
-| Cloud-Native Comparison | S3 + Spark is replacing on-premise Hadoop | Learn concepts, not tools — cloud services implement the same ideas |
+| Cloud-Native Comparison | S3 + Spark is replacing on-premise Hadoop | Learn concepts, not tools ? cloud services implement the same ideas |
 
 ## Chapter Roadmap
 
@@ -41,7 +41,7 @@ HDFS (Hadoop Distributed File System) is a fault-tolerant, high-throughput distr
 
 ### 2.1.1 Core Components
 
-**Namenode (NN):** The single master. Stores the filesystem tree and metadata for all files and directories (inode → block list mapping). Acts as the "directory" of the filesystem.
+**Namenode (NN):** The single master. Stores the filesystem tree and metadata for all files and directories (inode ? block list mapping). Acts as the "directory" of the filesystem.
 
 **Datanodes (DN):** One per cluster node. Store the actual block data. Report block health via heartbeats to the namenode.
 
@@ -182,7 +182,7 @@ Hadoop Streaming allows any executable (Python, Perl, Ruby) to serve as mapper a
 
 > **Pro Tip:** Always use a Combiner when the reduce function is associative and commutative (e.g., sum, max, count). It can reduce network shuffle data by 3-10x at no extra code cost.
 
-> **One-Sentence Takeaway:** Combiners and speculative execution are key MapReduce optimizations — combiners reduce network traffic and speculative execution mitigates straggler nodes.
+> **One-Sentence Takeaway:** Combiners and speculative execution are key MapReduce optimizations ? combiners reduce network traffic and speculative execution mitigates straggler nodes.
 
 ## 2.3 YARN (Yet Another Resource Negotiator)
 
@@ -192,9 +192,9 @@ YARN separates cluster resource management from the processing framework. This a
 
 | Component | Role |
 |-----------|------|
-| **ResourceManager (RM)** | Master — allocates resources, arbitrates contention |
-| **NodeManager (NM)** | Per-node agent — monitors containers, reports health |
-| **ApplicationMaster (AM)** | Per-job coordinator — negotiates resources, manages tasks |
+| **ResourceManager (RM)** | Master ? allocates resources, arbitrates contention |
+| **NodeManager (NM)** | Per-node agent ? monitors containers, reports health |
+| **ApplicationMaster (AM)** | Per-job coordinator ? negotiates resources, manages tasks |
 | **Container** | Isolated execution environment (CPU + memory) |
 
 ### 2.3.2 YARN Scheduling Flow
@@ -288,7 +288,7 @@ print(f"Storage waste for {avg_file_mb}MB files: {small_file_waste:.0f}%")
 
 > **Warning:** The small files problem is one of the most common real-world HDFS failures. A directory with millions of tiny (1 KB) files can crash the namenode by exhausting its heap. Always batch small files before ingesting into HDFS.
 
-> **One-Sentence Takeaway:** HDFS is designed for large files — small files waste namenode memory and storage efficiency, requiring batching strategies or object store alternatives.
+> **One-Sentence Takeaway:** HDFS is designed for large files ? small files waste namenode memory and storage efficiency, requiring batching strategies or object store alternatives.
 
 ## 2.6 Hadoop vs Cloud-Native
 
@@ -303,7 +303,7 @@ print(f"Storage waste for {avg_file_mb}MB files: {small_file_waste:.0f}%")
 
 The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), but HDFS concepts are still tested in interviews and used in on-premise deployments.
 
-> **Remember:** Every cloud object store (S3, GCS, Azure Blob) borrows concepts from HDFS — block storage, replication, and metadata management. Understanding HDFS gives you a mental model for all distributed storage.
+> **Remember:** Every cloud object store (S3, GCS, Azure Blob) borrows concepts from HDFS ? block storage, replication, and metadata management. Understanding HDFS gives you a mental model for all distributed storage.
 
 ## Concept Comparison Table
 
@@ -321,7 +321,7 @@ The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), bu
 | Category | Key Concepts | Notes |
 |----------|-------------|-------|
 | **HDFS Commands** | dfs -put, -get, -ls, -cat, -setrep | Always use `-setrep -w` to wait for replication |
-| **MapReduce Phases** | Map → Shuffle/Sort → Reduce | Combiner runs during shuffle output |
+| **MapReduce Phases** | Map ? Shuffle/Sort ? Reduce | Combiner runs during shuffle output |
 | **YARN Components** | RM, NM, AM, Container | AM per job negotiates with RM |
 | **HDFS Tuning** | dfs.blocksize, replication.factor, heartbeat.interval | 128 MB default; 3x replication |
 | **Key Metrics** | namenode heap, block count, DN heartbeats | 150 bytes/inode in namenode memory |
@@ -377,7 +377,7 @@ The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), bu
 | Hadoop Component | Role | Modern Alternative | Key Concept |
 |------------------|------|-------------------|-------------|
 | HDFS | Distributed storage | S3, GCS, Azure Blob | Block replication, rack awareness |
-| MapReduce | Batch processing | Spark, EMR, Dataproc | Map → Shuffle → Reduce |
+| MapReduce | Batch processing | Spark, EMR, Dataproc | Map ? Shuffle ? Reduce |
 | YARN | Resource management | Kubernetes | Separates compute from scheduling |
 | HDFS CLI | File operations | AWS CLI, gsutil | `dfs -put/get/ls/cat` |
 
@@ -387,7 +387,7 @@ The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), bu
 - **Slow MapReduce jobs:** Not enough reducers, data skew, too many small files
 - **Datanode failures:** Check heartbeats, disk space, network connectivity
 - **Rack awareness not working:** Verify topology script is configured correctly
-- **HDFS safe mode:** Namenode starting up or recovering — wait or manually leave safe mode
+- **HDFS safe mode:** Namenode starting up or recovering ? wait or manually leave safe mode
 
 ### TypeScript: HDFS & MapReduce Simulator
 
@@ -559,7 +559,7 @@ flowchart TD
     F --> G[Block 2 - Replica 2: Rack 3 Node 7]
     G --> H[Block 2 - Replica 3: Same Rack Node 8]
     B --> I[Block 3... across remaining nodes]
-    E --> J[Total: 10 blocks × 3 replicas = 30 block replicas]
+    E --> J[Total: 10 blocks ? 3 replicas = 30 block replicas]
     H --> J
 ```
 
@@ -626,8 +626,8 @@ console.log(`Savings: $${onPremCost.total - cloudCost.total}/year (${(((onPremCo
 6. Write a Python MapReduce job to compute the average temperature per month from a weather dataset (format: "date,temperature"). Use a combiner.
 7. Design a rack-aware replica placement strategy for a 30-node cluster across 3 racks. Show which rack receives each replica of Block 1.
 8. A YARN cluster has 10 nodes, each with 32 GB RAM and 8 vcores. If each container needs 4 GB and 1 vcore, what is the maximum number of concurrent mappers?
-9. Compare the cost of storing 500 TB on HDFS (3x replication, 50 nodes × 20 TB each) vs S3 standard ($0.023/GB/month) over 3 years.
-10. Simulate a datanode failure and trace the complete recovery process through heartbeat timeout → block detection → re-replication.
+9. Compare the cost of storing 500 TB on HDFS (3x replication, 50 nodes ? 20 TB each) vs S3 standard ($0.023/GB/month) over 3 years.
+10. Simulate a datanode failure and trace the complete recovery process through heartbeat timeout ? block detection ? re-replication.
 
 ### Answer Key (Additional)
 
@@ -694,12 +694,104 @@ console.log("Read pipeline:", JSON.stringify(hdfs.readPipeline(blocks[0]!.blockI
 ```
 ```
 
+
+// hadoop
+// hadoop-spark-ecosystem implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'hadoop', data: { topic: 'hadoop-spark-ecosystem' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// hadoop - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'big-data-ecosystem demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'big-data', chapter: 'hadoop' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('big-data-ecosystem'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - HDFS provides fault-tolerant distributed storage with block replication, rack awareness, and a single namenode.
 - MapReduce is a two-phase (map-reduce) programming model with automatic parallelization, fault tolerance, and data locality.
 - YARN manages cluster resources via ResourceManager, NodeManager, and per-job ApplicationMasters.
-- The small files problem degrades HDFS performance — keep files close to the block size (128 MB).
+- The small files problem degrades HDFS performance ? keep files close to the block size (128 MB).
 - Cloud-native architectures (S3 + Spark) are replacing on-premise Hadoop, but the concepts remain foundational.
 
 ## Exercises
@@ -708,4 +800,4 @@ console.log("Read pipeline:", JSON.stringify(hdfs.readPipeline(blocks[0]!.blockI
 2. Write a Python MapReduce job (mapper + reducer) to find the top 10 most frequent words in a book. Run it with Hadoop Streaming.
 3. Explain what happens in YARN when a NodeManager fails during a running MapReduce job. Trace the recovery path.
 4. Calculate the namenode memory required for a cluster storing 100 million files of average 10 MB each.
-5. Compare the cost of storing 100 TB on HDFS (3x replication, 100 nodes × 10 TB disk) vs S3 standard tier.
+5. Compare the cost of storing 100 TB on HDFS (3x replication, 100 nodes ? 10 TB disk) vs S3 standard tier.

@@ -48,19 +48,19 @@ flowchart LR
 ```
 
 ## Theory / Case Study
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![System Design Interview Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/24-interview-preparation.png)
 
 ### Phase 1: The Interview Format
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 A system design interview typically lasts 45-60 minutes. The format varies by company but generally follows one of four archetypes:
 
 **Product Design (most common)**: "Design YouTube." The interviewer wants to see how you approach a familiar consumer product, making reasonable assumptions about scale, and prioritizing features based on user needs. These questions test your ability to decompose a known product into its architectural components.
@@ -83,7 +83,7 @@ The interviewer is evaluating four dimensions simultaneously:
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-The most reliable approach to any system design question follows six phases. The time allocations are guidelines â€” adjust based on the question's emphasis and the interviewer's signals.
+The most reliable approach to any system design question follows six phases. The time allocations are guidelines � adjust based on the question's emphasis and the interviewer's signals.
 
 **Phase 1: Requirements Clarification (1-2 minutes)**
 
@@ -118,33 +118,33 @@ Traffic estimation:
 DAU = 500M
 Daily views = DAU * views_per_user = 500M * 5 = 2.5B
 Writes: uploads per day = 5M * 1 = 5M
-Reads: video views per second = 2.5B / 86400 â‰ˆ 29,000 QPS
-Peak QPS: 3-5x average â‰ˆ 100,000 QPS
+Reads: video views per second = 2.5B / 86400 � 29,000 QPS
+Peak QPS: 3-5x average � 100,000 QPS
 ```
 
 Storage estimation:
 ```
 Average video size: 50MB (compressed, various resolutions)
 Daily new video storage: 5M * 50MB = 250TB/day
-Yearly storage: 250TB * 365 â‰ˆ 91PB/year
+Yearly storage: 250TB * 365 � 91PB/year
 Total storage (5 years): ~455PB
 Metadata per video: 1KB
-Total metadata: 5 years * 5M * 365 * 1KB â‰ˆ 9TB
+Total metadata: 5 years * 5M * 365 * 1KB � 9TB
 ```
 
 Bandwidth estimation:
 ```
-Upload bandwidth: 5M videos/day * 50MB / 86400s â‰ˆ 2.9 GB/s
+Upload bandwidth: 5M videos/day * 50MB / 86400s � 2.9 GB/s
 Download bandwidth: 29,000 QPS * 50MB = 1.45 TB/s
-CDN bandwidth: 95% of download served by CDN â‰ˆ 1.38 TB/s
-Origin bandwidth: remaining 5% â‰ˆ 72.5 GB/s
+CDN bandwidth: 95% of download served by CDN � 1.38 TB/s
+Origin bandwidth: remaining 5% � 72.5 GB/s
 ```
 
 Memory estimation:
 ```
 Cache for hot videos (80% of traffic from 20% of videos):
     Hot videos = 2.5B * 0.2 = 500M cached videos
-    At 50MB each: 500M * 50MB = 25PB â†’ not feasible
+    At 50MB each: 500M * 50MB = 25PB ? not feasible
     Cache only metadata/popular= 100M * 10KB = 1TB
 ```
 
@@ -175,15 +175,15 @@ Scale cheat sheet:
 Draw the box diagram. Identify the major components and their interactions. Use a consistent set of building blocks:
 
 ```
-Client â†’ CDN â†’ Load Balancer â†’ Web Servers â†’ Application Services â†’ Data Stores
+Client ? CDN ? Load Balancer ? Web Servers ? Application Services ? Data Stores
 ```
 
 For "Design YouTube":
 ```
-Client (browser/mobile app) â†’ CDN (video content) â†’ Load Balancer â†’ API Gateway
-  â†’ User Service â†’ Video Service â†’ Upload Service â†’ Transcoder â†’ Metadata DB
-  â†’ Search Service (Elasticsearch) â†’ Recommendation Service â†’ Analytics Pipeline
-  â†’ Blob Storage (videos) â†’ CDN Origin
+Client (browser/mobile app) ? CDN (video content) ? Load Balancer ? API Gateway
+  ? User Service ? Video Service ? Upload Service ? Transcoder ? Metadata DB
+  ? Search Service (Elasticsearch) ? Recommendation Service ? Analytics Pipeline
+  ? Blob Storage (videos) ? CDN Origin
 ```
 
 At this phase, you are sketching boxes and drawing arrows. Do not descend into implementation details yet. Your goal is to demonstrate that you know what components exist and how they connect. Label each box with the technology you would use (PostgreSQL, Redis, Kafka, Elasticsearch, S3) and justify each choice briefly.
@@ -224,9 +224,9 @@ CREATE TABLE video_encodings (
 
 For key-value stores, describe the schema:
 ```
-User: user_id â†’ {name, email, created_at}
-Video: video_id â†’ {user_id, title, description, s3_key, duration, ...}
-Timeline: user_id â†’ sorted_set(video_id, timestamp)  -- in Redis
+User: user_id ? {name, email, created_at}
+Video: video_id ? {user_id, title, description, s3_key, duration, ...}
+Timeline: user_id ? sorted_set(video_id, timestamp)  -- in Redis
 Upload queue: list(video_id)  -- in Kafka
 ```
 
@@ -244,9 +244,9 @@ This is the most important phase. Pick 2-3 components from your high-level desig
 **Caching strategy**:
 ```
 Multi-tier caching for YouTube:
-  L1: Browser cache (video segments, API responses) â€” TTL 5 minutes
-  L2: CDN cache (video content, thumbnails) â€” 95% hit rate
-  L3: Application cache (Redis â€” video metadata, user sessions) â€” 99% hit rate
+  L1: Browser cache (video segments, API responses) � TTL 5 minutes
+  L2: CDN cache (video content, thumbnails) � 95% hit rate
+  L3: Application cache (Redis � video metadata, user sessions) � 99% hit rate
   L4: Database replica cache (MySQL query cache if needed)
 ```
 
@@ -272,7 +272,7 @@ This phase is your opportunity to show that you understand engineering as a seri
 
 ### Phase 3: Company-Specific Question Catalogs
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -280,7 +280,7 @@ This phase is your opportunity to show that you understand engineering as a seri
 
 Google interviewers favor questions that test algorithmic thinking and scalability. Their questions often have a search or data processing angle:
 
-- Design YouTube (most common â€” video streaming, upload, search, recommendations)
+- Design YouTube (most common � video streaming, upload, search, recommendations)
 - Design Google Docs (real-time collaboration, OT/CRDT, conflict resolution, operational transformation)
 - Design Google Maps (geospatial indexing, route optimization, real-time traffic, ETA)
 - Design a Web Crawler (distributed crawling, politeness policy, deduplication, prioritization)
@@ -295,7 +295,7 @@ Google emphasizes estimation and data structures. They may ask you to compute th
 
 Meta interviewers focus on social graph traversal, real-time communication, and news feed algorithms:
 
-- Design News Feed (the original system design interview question â€” ranking, storage, fan-out, personalization)
+- Design News Feed (the original system design interview question � ranking, storage, fan-out, personalization)
 - Design Messenger/Chat (WebSocket, presence detection, message ordering, delivery guarantees, encryption)
 - Design Nearby Friends (geospatial indexing, WebSocket push, battery optimization, privacy controls)
 - Design Facebook Live (streaming protocol, latency optimization, transcoding, interactive features)
@@ -314,7 +314,7 @@ Amazon's leadership principle "Bias for Action" means they want to see you make 
 - Design Fulfillment Center (warehouse layout optimization, inventory placement, picking routes, shipping optimization)
 - Design Product Search (inverted index, faceted navigation, spelling correction, ML ranking)
 
-Amazon interviewers care deeply about failure modes. For every component, be ready to answer "What happens when this fails?" They also expect detailed understanding of consistency models â€” Amazon's Dynamo paper (eventual consistency, vector clocks) is required reading.
+Amazon interviewers care deeply about failure modes. For every component, be ready to answer "What happens when this fails?" They also expect detailed understanding of consistency models � Amazon's Dynamo paper (eventual consistency, vector clocks) is required reading.
 
 **Netflix/Spotify**
 
@@ -324,7 +324,7 @@ These companies focus on media streaming, recommendation, and encoding pipelines
 - Design Music Recommendation (collaborative filtering, audio features, playlists, real-time personalization, A/B testing)
 - Design Audio Encoding Pipeline (parallel encoding, codec selection, metadata extraction, CDN distribution)
 
-Netflix questions often probe CDN and caching architecture. Understand Open Connect (Netflix's CDN appliance), adaptive bitrate algorithms (BOLA, MPC), and the encoding ladder (resolution Ã— bitrate combinations).
+Netflix questions often probe CDN and caching architecture. Understand Open Connect (Netflix's CDN appliance), adaptive bitrate algorithms (BOLA, MPC), and the encoding ladder (resolution � bitrate combinations).
 
 **Uber**
 
@@ -333,7 +333,7 @@ Uber questions focus on real-time systems, geospatial data, and marketplace dyna
 - Design Ride Matching (geospatial index, bipartite matching, real-time streaming, surge pricing)
 - Design ETA Prediction (ML features, map matching, real-time traffic, Kalman filtering)
 - Design Surge Pricing (demand-supply curves, real-time pricing, geographic granularity, fairness)
-- Design Geospatial Indexing (S2, H3, QuadTree, GeoHash â€” compare and contrast)
+- Design Geospatial Indexing (S2, H3, QuadTree, GeoHash � compare and contrast)
 
 **LLD-Focused Questions**
 
@@ -347,7 +347,7 @@ Some companies (especially for mid-level roles) focus on low-level design:
 - Distributed Cache Library (LRU/LFU eviction, sharding, replication, serialization)
 - Rate Limiter Library (token bucket, sliding window, distributed counters, per-user limits)
 
-For LLD questions, draw a class diagram with relationships (inheritance, composition, dependency). Use design patterns appropriately: Strategy (for pricing algorithms), Observer (for event-driven updates), Factory (for creating domain objects), Singleton (for loggers â€” with thread safety considerations).
+For LLD questions, draw a class diagram with relationships (inheritance, composition, dependency). Use design patterns appropriately: Strategy (for pricing algorithms), Observer (for event-driven updates), Factory (for creating domain objects), Singleton (for loggers � with thread safety considerations).
 
 ### Phase 4: Common Pitfalls
 
@@ -575,9 +575,132 @@ Practice with a timer. The following schedule simulates a real interview:
 
 ---
 
+
+### Implementation: System Design Interview Preparation
+
+```typescript
+class InterviewQuestion { constructor(public topic: string, public difficulty: "easy" | "medium" | "hard", public description: string, public keyPoints: string[]) {} }
+class InterviewPrep {
+  private questions: InterviewQuestion[] = [];
+  addQuestion(q: InterviewQuestion): void { this.questions.push(q); }
+  getByTopic(topic: string): InterviewQuestion[] { return this.questions.filter(q => q.topic.toLowerCase().includes(topic.toLowerCase())); }
+  getRandom(difficulty?: string): InterviewQuestion { const filtered = difficulty ? this.questions.filter(q => q.difficulty === difficulty) : this.questions; return filtered[Math.floor(Math.random() * filtered.length)]; }
+  runMock(topic: string, count = 3): { questions: InterviewQuestion[] } { const qs = this.getByTopic(topic).slice(0, count); return { questions: qs }; }
+}
+class BackOfEnvelopeCalculator {
+  calculateQPS(dau: number, actionsPerUser: number, peakMultiplier = 5): { avgQPS: number; peakQPS: number } {
+    const avgQPS = Math.ceil(dau * actionsPerUser / 86400); return { avgQPS, peakQPS: avgQPS * peakMultiplier }; }
+  estimateStorage(dailyWrites: number, writeSizeBytes: number, retentionDays: number, replication = 3): { dailyGB: string; monthlyGB: string; yearlyTB: string } {
+    const daily = (dailyWrites * writeSizeBytes * replication) / (1024 * 1024 * 1024);
+    return { dailyGB: daily.toFixed(2), monthlyGB: (daily * 30).toFixed(2), yearlyTB: (daily * 365 / 1024).toFixed(2) }; }
+  estimateBandwidth(qps: number, responseSizeBytes: number): { mbps: string; gbps: string } {
+    const bps = qps * responseSizeBytes * 8 / (1024 * 1024); return { mbps: bps.toFixed(2), gbps: (bps / 1024).toFixed(3) }; }
+}
+class ScoringEngine { score(userPoints: string[], keyPoints: string[]): { score: number; feedback: string; missed: string[] } {
+  const mentioned = new Set(userPoints.map(p => p.toLowerCase())); const missed = keyPoints.filter(kp => !mentioned.has(kp.toLowerCase()));
+  const hitRate = (keyPoints.length - missed.length) / keyPoints.length; const score = Math.round(hitRate * 100);
+  return { score, feedback: score >= 80 ? "Strong" : score >= 60 ? "Adequate" : "Needs improvement", missed }; }
+}
+class SystemDesignFramework { private frameworks = new Map<string, { steps: string[] }>();
+  add(name: string, steps: string[]): void { this.frameworks.set(name, { steps }); }
+  get(name: string): { steps: string[] } | undefined { return this.frameworks.get(name); }
+  recommend(requirements: string[]): string { if (requirements.some(r => r.includes("real-time"))) return "WebSocket + Event-Driven"; if (requirements.some(r => r.includes("analytics"))) return "Lambda + Kappa"; return "Microservices"; }
+}
+
+// interview preparation
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'interview preparation', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// interview preparation - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'interview preparation' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- The six-phase framework (Requirements â†’ Estimation â†’ HLD â†’ Data Model â†’ Deep Dive â†’ Trade-offs) provides a reliable structure for any system design interview question.
+- The six-phase framework (Requirements ? Estimation ? HLD ? Data Model ? Deep Dive ? Trade-offs) provides a reliable structure for any system design interview question.
 - Estimation demonstrates quantitative reasoning: compute QPS, storage, bandwidth, and memory requirements to justify architectural choices.
 - The evaluation rubric differs by level: E3/E4 needs guided small-system design, E5 independently designs medium systems, E6 drives large-scale ambiguous design, E7+ defines multi-org technical strategy.
 - Common pitfalls include skipping requirements clarification, ignoring data modeling, forgetting fault tolerance, designing SPOFs, and over-engineering beyond the problem's scale.
@@ -637,7 +760,7 @@ Practice with a timer. The following schedule simulates a real interview:
 
 **Design Amazon's Shopping Cart (Full Mock Interview)**
 
-You have 45 minutes. Design the shopping cart system for Amazon.com. Do not read the solution in advance â€” treat this as a live mock interview. Use a timer if possible and switch phases strictly.
+You have 45 minutes. Design the shopping cart system for Amazon.com. Do not read the solution in advance � treat this as a live mock interview. Use a timer if possible and switch phases strictly.
 
 Requirements:
 - 300M active users
@@ -780,22 +903,22 @@ class MockInterviewScorer {
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Books (ranked by difficulty)**
-- â˜…â˜†â˜†: "System Design Interview â€” An Insider's Guide" (Alex Xu) â€” Best for beginners, covers 15 common questions step by step
-- â˜…â˜…â˜†: "Designing Data-Intensive Applications" (Martin Kleppmann) â€” Required reading for distributed systems fundamentals
-- â˜…â˜…â˜…: "The Art of Scalability" (Abbott & Fisher) â€” Comprehensive but dense, covers organizational and process scalability
-- â˜…â˜…â˜†: "Building Microservices" (Sam Newman) â€” Practical guidance on service boundaries, communication patterns, and deployment
-- â˜…â˜…â˜…: "Distributed Systems" (van Steen & Tanenbaum) â€” Academic textbook covering theory behind replication, consensus, and consistency
+- ???: "System Design Interview � An Insider's Guide" (Alex Xu) � Best for beginners, covers 15 common questions step by step
+- ???: "Designing Data-Intensive Applications" (Martin Kleppmann) � Required reading for distributed systems fundamentals
+- ???: "The Art of Scalability" (Abbott & Fisher) � Comprehensive but dense, covers organizational and process scalability
+- ???: "Building Microservices" (Sam Newman) � Practical guidance on service boundaries, communication patterns, and deployment
+- ???: "Distributed Systems" (van Steen & Tanenbaum) � Academic textbook covering theory behind replication, consensus, and consistency
 
 **YouTube Channels**
-- Gaurav Sen (System Design) â€” Best format: clear diagrams, real system examples, multiple perspectives per topic
-- Tech Dummies (Design YouTube, Netflix, Uber) â€” Deep dives with whiteboard diagrams, good for visual learners
-- Hello Interview (asynchronous mock interviews) â€” Recorded mock interviews with real-time feedback
-- System Design Interview (codeKarle) â€” Clean, well-structured walkthroughs of common questions
+- Gaurav Sen (System Design) � Best format: clear diagrams, real system examples, multiple perspectives per topic
+- Tech Dummies (Design YouTube, Netflix, Uber) � Deep dives with whiteboard diagrams, good for visual learners
+- Hello Interview (asynchronous mock interviews) � Recorded mock interviews with real-time feedback
+- System Design Interview (codeKarle) � Clean, well-structured walkthroughs of common questions
 
 **Mock Interview Platforms**
-- Pramp â€” Free peer-to-peer mock interviews with structured feedback forms
-- interviewing.io â€” Anonymous technical interviews with engineers from FAANG companies
-- DesignGurus â€” Mock interviews specifically for system design with expert reviewers
+- Pramp � Free peer-to-peer mock interviews with structured feedback forms
+- interviewing.io � Anonymous technical interviews with engineers from FAANG companies
+- DesignGurus � Mock interviews specifically for system design with expert reviewers
 
 **Cheat Sheet to Memorize**
 
@@ -816,8 +939,8 @@ Caching Hierarchy:
    L1: Browser       L2: CDN        L3: App (Redis)    L4: DB
 
 Database Scaling Progression:
-   Single â†’ Read replicas â†’ Sharding â†’ Vitess/Citus â†’ NewSQL
+   Single ? Read replicas ? Sharding ? Vitess/Citus ? NewSQL
 
 Consistency Spectrum (strongest to weakest):
-   Linearizability â†’ Sequential â†’ Causal â†’ Eventual
+   Linearizability ? Sequential ? Causal ? Eventual
 ```

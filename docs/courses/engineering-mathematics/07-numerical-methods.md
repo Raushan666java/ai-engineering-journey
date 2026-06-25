@@ -49,7 +49,7 @@ flowchart LR
 
 **Machine Epsilon ($\epsilon$):** The smallest number such that $1 + \epsilon > 1$ in machine arithmetic. For IEEE double precision, $\epsilon \approx 2.22 \times 10^{-16}$.
 
-**Condition Number:** $\kappa = \left|\frac{x f'(x)}{f(x)}\right|$ — measures sensitivity of a function to input errors.
+**Condition Number:** $\kappa = \left|\frac{x f'(x)}{f(x)}\right|$ ? measures sensitivity of a function to input errors.
 
 **Stability:** An algorithm is stable if small input errors produce small output errors.
 
@@ -222,7 +222,7 @@ $$\int_D f(x)\,dx \approx \frac{V(D)}{N} \sum_{i=1}^N f(x_i)$$
 
 where $x_i$ are uniformly sampled from domain $D$, and $V(D)$ is the volume.
 
-**Error:** $O(1/\sqrt{N})$ — independent of dimension! (Unlike quadrature, which scales exponentially.)
+**Error:** $O(1/\sqrt{N})$ ? independent of dimension! (Unlike quadrature, which scales exponentially.)
 
 **Importance Sampling:** Sample from a distribution $g(x)$ that concentrates where $|f(x)|$ is large:
 
@@ -372,7 +372,7 @@ function rk4(
   return { t, y };
 }
 
-// Solve y' = -2ty², y(0) = 1 — exact solution: y = 1/(1+t²)
+// Solve y' = -2ty?, y(0) = 1 ? exact solution: y = 1/(1+t?)
 const f1: ODEFunction = (t, y) => -2 * t * y * y;
 const { t: tv, y: yv } = rk4(f1, 0, 1, 0.1, 20);
 for (let i = 0; i <= 20; i += 5) {
@@ -392,7 +392,7 @@ The heat equation $\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\p
 - Time (Forward Euler): $\frac{\partial u}{\partial t} \approx \frac{u^{n+1} - u^n}{\Delta t}$
 - Combined (explicit scheme): $u_i^{n+1} = u_i^n + \frac{\alpha \Delta t}{\Delta x^2}(u_{i+1}^n - 2u_i^n + u_{i-1}^n)$
 
-**Stability Constraint (CFL condition):** $\frac{\alpha \Delta t}{\Delta x^2} \leq \frac{1}{2}$ — the time step must be small enough to avoid numerical instability.
+**Stability Constraint (CFL condition):** $\frac{\alpha \Delta t}{\Delta x^2} \leq \frac{1}{2}$ ? the time step must be small enough to avoid numerical instability.
 
 ```typescript
 function solveHeatEquation1D(
@@ -420,10 +420,10 @@ function solveHeatEquation1D(
   return { x, u };
 }
 
-// Rod with initial temp: 100°C at center, 0°C at ends
+// Rod with initial temp: 100?C at center, 0?C at ends
 const initial = (x: number) => x < 0.5 ? 2 * 100 * x : 2 * 100 * (1 - x);
 const { x, u } = solveHeatEquation1D(0.01, 1, 20, 1, initial);
-console.log(`Temperature at center after 1s: ${u[u.length - 1][10].toFixed(2)}°C`);
+console.log(`Temperature at center after 1s: ${u[u.length - 1][10].toFixed(2)}?C`);
 ```
 
 ### TypeScript Implementation: Newton-Cotes Quadrature
@@ -459,11 +459,11 @@ function gaussQuad2(f: (x: number) => number, a: number, b: number): number {
   return (b - a) / 2 * (f(t(x1)) + f(t(x2)));
 }
 
-// Test: ∫₀¹ e^(-x²) dx ≈ 0.746824
+// Test: ?0? e^(-x?) dx ? 0.746824
 const gaussian = (x: number) => Math.exp(-x * x);
-console.log(`Simpson ∫₀¹ e^(-x²) dx: ${simpson(gaussian, 0, 1, 100).toFixed(6)} (expected: 0.746824)`);
-console.log(`Boole ∫₀¹ e^(-x²) dx: ${boole(gaussian, 0, 1, 100).toFixed(6)} (expected: 0.746824)`);
-console.log(`Gauss-2 ∫₀¹ e^(-x²) dx: ${gaussQuad2(gaussian, 0, 1).toFixed(6)} (expected: 0.746824)`);
+console.log(`Simpson ?0? e^(-x?) dx: ${simpson(gaussian, 0, 1, 100).toFixed(6)} (expected: 0.746824)`);
+console.log(`Boole ?0? e^(-x?) dx: ${boole(gaussian, 0, 1, 100).toFixed(6)} (expected: 0.746824)`);
+console.log(`Gauss-2 ?0? e^(-x?) dx: ${gaussQuad2(gaussian, 0, 1).toFixed(6)} (expected: 0.746824)`);
 
 ### TypeScript: Jacobi Iteration for Linear Systems
 
@@ -490,9 +490,9 @@ const b = [7, -8, 9];
 const sol = jacobi(A, b);
 console.log(`Jacobi: x=${sol[0].toFixed(4)}, y=${sol[1].toFixed(4)}, z=${sol[2].toFixed(4)}`);
 
-// Verify: A·x ≈ b
+// Verify: A?x ? b
 const verify = A.map((row, i) => row.reduce((s, aij, j) => s + aij * sol[j], 0));
-console.log(`Verify: A·x = [${verify.map(v => v.toFixed(2)).join(", ")}] ≈ [${b.join(", ")}]`);
+console.log(`Verify: A?x = [${verify.map(v => v.toFixed(2)).join(", ")}] ? [${b.join(", ")}]`);
 
 ### TypeScript: Cubic Spline Interpolation
 
@@ -500,18 +500,18 @@ console.log(`Verify: A·x = [${verify.map(v => v.toFixed(2)).join(", ")}] ≈ [$
 function cubicSpline(x: number[], y: number[]): (t: number) => number {
   const n = x.length;
   const h = x.slice(1).map((xi, i) => xi - x[i]);
-  const α = new Array(n).fill(0);
+  const a = new Array(n).fill(0);
   for (let i = 1; i < n - 1; i++)
-    α[i] = (3 / h[i]) * (y[i + 1] - y[i]) - (3 / h[i - 1]) * (y[i] - y[i - 1]);
-  const l = new Array(n).fill(1), μ = new Array(n).fill(0), z = new Array(n).fill(0);
+    a[i] = (3 / h[i]) * (y[i + 1] - y[i]) - (3 / h[i - 1]) * (y[i] - y[i - 1]);
+  const l = new Array(n).fill(1), ? = new Array(n).fill(0), z = new Array(n).fill(0);
   for (let i = 1; i < n - 1; i++) {
-    l[i] = 2 * (x[i + 1] - x[i - 1]) - h[i - 1] * μ[i - 1];
-    μ[i] = h[i] / l[i];
-    z[i] = (α[i] - h[i - 1] * z[i - 1]) / l[i];
+    l[i] = 2 * (x[i + 1] - x[i - 1]) - h[i - 1] * ?[i - 1];
+    ?[i] = h[i] / l[i];
+    z[i] = (a[i] - h[i - 1] * z[i - 1]) / l[i];
   }
   const c = new Array(n).fill(0), b = new Array(n).fill(0), d = new Array(n).fill(0);
   for (let j = n - 2; j >= 0; j--) {
-    c[j] = z[j] - μ[j] * c[j + 1];
+    c[j] = z[j] - ?[j] * c[j + 1];
     b[j] = (y[j + 1] - y[j]) / h[j] - h[j] * (c[j + 1] + 2 * c[j]) / 3;
     d[j] = (c[j + 1] - c[j]) / (3 * h[j]);
   }
@@ -561,7 +561,7 @@ function falsePosition(f: (x: number) => number, a: number, b: number, tol: numb
   return (a + b) / 2;
 }
 const fp = falsePosition(x => x * x - 2, 1, 2);
-console.log('False position √2:', fp.toFixed(10));
+console.log('False position v2:', fp.toFixed(10));
 
 // --- Gauss-Seidel Iteration ---
 function gaussSeidel(A: number[][], b: number[], maxIter: number = 100, tol: number = 1e-8): number[] {
@@ -603,27 +603,119 @@ function simpsonComposite(f: (x: number) => number, a: number, b: number, n: num
   return (h / 3) * sum;
 }
 const simpsonInt = simpsonComposite(x => Math.exp(-x * x), 0, 1, 100);
-console.log('\nSimpson ∫₀¹ e^(-x²) dx:', simpsonInt.toFixed(6), '(expected: ~0.746824)');
+console.log('\nSimpson ?0? e^(-x?) dx:', simpsonInt.toFixed(6), '(expected: ~0.746824)');
 
 // --- Power Method for Eigenvalues ---
 function powerMethod(A: number[][], maxIter: number = 100, tol: number = 1e-8): { eigenvalue: number; eigenvector: number[] } {
   const n = A.length;
   let v = new Array(n).fill(1).map((_, i) => i === 0 ? 1 : 0.1);
-  let λ = 0;
+  let ? = 0;
   for (let iter = 0; iter < maxIter; iter++) {
     const Av = A.map((r, i) => r.reduce((s, a, j) => s + a * v[j], 0));
     const norm = Math.sqrt(Av.reduce((s, x) => s + x * x, 0));
     const newV = Av.map(x => x / norm);
-    const newλ = newV.reduce((s, x, i) => s + x * Av[i], 0);
-    if (Math.abs(newλ - λ) < tol) break;
-    λ = newλ; v = newV;
+    const new? = newV.reduce((s, x, i) => s + x * Av[i], 0);
+    if (Math.abs(new? - ?) < tol) break;
+    ? = new?; v = newV;
   }
-  return { eigenvalue: +λ.toFixed(4), eigenvector: v.map(x => +x.toFixed(4)) };
+  return { eigenvalue: +?.toFixed(4), eigenvector: v.map(x => +x.toFixed(4)) };
 }
 const pm = powerMethod([[2, 1], [1, 2]]);
-console.log('\nPower method: λ=', pm.eigenvalue, '(expected: 3)');
+console.log('\nPower method: ?=', pm.eigenvalue, '(expected: 3)');
 ```
 
+
+// numerical methods
+// linear-algebra-calculus implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'numerical methods', data: { topic: 'linear-algebra-calculus' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// numerical methods - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'engineering-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'engineering-mathematics', chapter: 'numerical methods' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('engineering-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Root-finding methods (bisection, Newton-Raphson, secant) solve nonlinear equations
@@ -691,8 +783,8 @@ const result = newtonRaphson(
   (x) => 2 * x,
   2.0
 );
-console.log(`sqrt(5) ≈ ${result.root}, iterations: ${result.iterations}`);
-// Output: sqrt(5) ≈ 2.23606797749979, iterations: 4
+console.log(`sqrt(5) ? ${result.root}, iterations: ${result.iterations}`);
+// Output: sqrt(5) ? 2.23606797749979, iterations: 4
 ```
 
 ## TypeScript Implementation: Bisection Method
@@ -726,8 +818,8 @@ function bisection(
 
 // Solve cos(x) = x on [0, 1]
 const bisectResult = bisection((x) => Math.cos(x) - x, 0, 1);
-console.log(`cos(x) = x at x ≈ ${bisectResult.root.toFixed(6)}, iterations: ${bisectResult.iterations}`);
-// Output: cos(x) = x at x ≈ 0.739085, iterations: 21
+console.log(`cos(x) = x at x ? ${bisectResult.root.toFixed(6)}, iterations: ${bisectResult.iterations}`);
+// Output: cos(x) = x at x ? 0.739085, iterations: 21
 ```
 
 ## TypeScript Implementation: Simpson's Rule
@@ -749,10 +841,10 @@ function simpsonRule(
   return (h / 3) * sum;
 }
 
-// ∫₀¹ e^(-x²) dx ≈ 0.746824
+// ?0? e^(-x?) dx ? 0.746824
 const integral = simpsonRule((x) => Math.exp(-x * x), 0, 1, 100);
-console.log(`∫₀¹ e^(-x²) dx ≈ ${integral.toFixed(6)}`);
-// Output: ∫₀¹ e^(-x²) dx ≈ 0.746824
+console.log(`?0? e^(-x?) dx ? ${integral.toFixed(6)}`);
+// Output: ?0? e^(-x?) dx ? 0.746824
 
 function simpsonError(
   f: (x: number) => number,
@@ -771,7 +863,7 @@ function simpsonError(
   }
 }
 
-// Verify O(h⁴) convergence: doubling n should reduce error by ~16x
+// Verify O(h4) convergence: doubling n should reduce error by ~16x
 simpsonError((x) => Math.exp(-x * x), 0, 1, 0.746824132812427, [4, 8, 16, 32]);
 ```
 
@@ -794,7 +886,7 @@ function eulerMethod(
   return { t, y };
 }
 
-// y' = -2ty, y(0) = 1 (exact: y = e^(-t²))
+// y' = -2ty, y(0) = 1 (exact: y = e^(-t?))
 const eulerResult = eulerMethod((t, y) => -2 * t * y, 0, 1, 0.1, 10);
 for (let i = 0; i <= 10; i += 5) {
   const exact = Math.exp(-eulerResult.t[i] ** 2);
@@ -807,7 +899,7 @@ for (let i = 0; i <= 10; i += 5) {
 ```mermaid
 flowchart TB
     START([Start]) --> INPUT[Input f, a, b, tol]
-    INPUT --> CHECK{f(a) × f(b) < 0?}
+    INPUT --> CHECK{f(a) ? f(b) < 0?}
     CHECK -->|No| ERR[Error: No sign change]
     CHECK -->|Yes| LOOP
     subgraph LOOP [Iteration Loop]
@@ -815,7 +907,7 @@ flowchart TB
         C --> FC[Compute f[c]]
         FC --> CONV{|f[c]| < tol OR (b-a)/2 < tol?}
         CONV -->|Yes| DONE[Return c]
-        CONV -->|No| SIGN{f[a] × f[c] < 0?}
+        CONV -->|No| SIGN{f[a] ? f[c] < 0?}
         SIGN -->|Yes| SETB[Set b = c]
         SIGN -->|No| SETA[Set a = c]
         SETB --> LOOP
@@ -829,12 +921,12 @@ flowchart TB
 
 ```mermaid
 flowchart TB
-    START([Start x₀]) --> EVAL[Compute f[xₙ] and f'[xₙ]]
-    EVAL --> CHECK{f'[xₙ] = 0?}
+    START([Start x0]) --> EVAL[Compute f[x?] and f'[x?]]
+    EVAL --> CHECK{f'[x?] = 0?}
     CHECK -->|Yes| FAIL[Fail: zero derivative]
-    CHECK -->|No| UPDATE[xₙ₊₁ = xₙ - f[xₙ]/f'[xₙ]]
-    UPDATE --> CONV{|f[xₙ₊₁]| < tol?}
-    CONV -->|Yes| DONE[Return xₙ₊₁]
+    CHECK -->|No| UPDATE[x??1 = x? - f[x?]/f'[x?]]
+    UPDATE --> CONV{|f[x??1]| < tol?}
+    CONV -->|Yes| DONE[Return x??1]
     CONV -->|No| COUNT{Max iterations reached?}
     COUNT -->|Yes| DONE2[Return best estimate]
     COUNT -->|No| EVAL

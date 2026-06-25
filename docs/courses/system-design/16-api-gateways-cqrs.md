@@ -58,35 +58,35 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![API Gateways and CQRS Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/16-api-gateway-cqrs.png)
 
 ### 1. API Gateway vs Load Balancer
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 A **load balancer** (e.g., Nginx, HAProxy, AWS ELB) distributes traffic across backend servers at L4 (TCP) or L7 (HTTP). It handles connection pooling, SSL termination, and health checks. It operates at the transport or application layer but does not understand application semantics.
 
 An **API gateway** sits between clients and microservices and handles:
 
 | Responsibility        | Gateway | Load Balancer |
 |-----------------------|---------|---------------|
-| Request routing       | âœ“ Path/header/host-based | âœ“ Round-robin/least-conn |
-| Authentication        | âœ“ JWT, OAuth2, API keys | âœ—                              |
-| Rate limiting         | âœ“ Per-client, per-endpoint | âœ— (basic connection limiting)  |
-| Request aggregation   | âœ“ Compose N responses â†’ 1 | âœ—                              |
-| Circuit breaking      | âœ“ Per-service health tracking | âœ—                              |
-| Protocol translation  | âœ“ HTTPâ†’gRPC, HTTPâ†’WebSocket | âœ—                              |
-| Response transformation| âœ“ Header rewrite, body transform | âœ—                              |
-| Caching               | âœ“ Response caching | âœ—                              |
-| API versioning        | âœ“ /v1/ vs /v2/ routing | âœ—                              |
-| Canary deployments    | âœ“ Weighted traffic split | âœ“ (weighted pools)             |
+| Request routing       | ? Path/header/host-based | ? Round-robin/least-conn |
+| Authentication        | ? JWT, OAuth2, API keys | ?                              |
+| Rate limiting         | ? Per-client, per-endpoint | ? (basic connection limiting)  |
+| Request aggregation   | ? Compose N responses ? 1 | ?                              |
+| Circuit breaking      | ? Per-service health tracking | ?                              |
+| Protocol translation  | ? HTTP?gRPC, HTTP?WebSocket | ?                              |
+| Response transformation| ? Header rewrite, body transform | ?                              |
+| Caching               | ? Response caching | ?                              |
+| API versioning        | ? /v1/ vs /v2/ routing | ?                              |
+| Canary deployments    | ? Weighted traffic split | ? (weighted pools)             |
 
 ### 2. API Gateway Patterns
 
@@ -97,24 +97,24 @@ An **API gateway** sits between clients and microservices and handles:
 **Single gateway per system**: One gateway handles all client traffic. Simple, but becomes a single point of failure and bottleneck. All services must evolve in lock-step with the gateway contract.
 
 ```
-Client â†’ [Gateway] â†’ Service A
-                  â†’ Service B
-                  â†’ Service C
+Client ? [Gateway] ? Service A
+                  ? Service B
+                  ? Service C
 ```
 
 **Gateway per frontend (BFF)**: Each client type (mobile, web, IoT) gets its own gateway. Mobile BFF returns smaller payloads (limited bandwidth), web BFF returns full HTML + API data. Each BFF team owns their interface independently.
 
 ```
-Mobile App â†’ [Mobile BFF]
-Web App   â†’ [Web BFF]
-IoT        â†’ [IoT Gateway]
+Mobile App ? [Mobile BFF]
+Web App   ? [Web BFF]
+IoT        ? [IoT Gateway]
 ```
 
 **Gateway per domain**: Different business domains each have their own gateway (Orders Gateway, Users Gateway, Payments Gateway). Aligns with domain-driven design bounded contexts. Preferred for large organizations with independent service teams.
 
 ### 3. Rate Limiting in Gateways
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -188,29 +188,29 @@ def gateway_auth(request):
 The gateway fetches data from multiple services and merges into a single response. Without aggregation:
 
 ```
-Client â†’ /order/123
+Client ? /order/123
   Gateway:
-    1. GET /order-service/orders/123 â†’ {order data}
-    2. GET /user-service/users/456   â†’ {user data}
-    3. GET /payment-service/payments/789 â†’ {payment data}
+    1. GET /order-service/orders/123 ? {order data}
+    2. GET /user-service/users/456   ? {user data}
+    3. GET /payment-service/payments/789 ? {payment data}
   Response: merged {order, user, payment}
 ```
 
 N+1 request problem for list endpoints:
 
 ```
-Client â†’ GET /orders?user=456
+Client ? GET /orders?user=456
   Without aggregation:
-    Gateway â†’ order-service â†’ returns [order1, order2, ...]
-    Gateway â†’ for each order, call user-service (N requests)
-    Gateway â†’ for each order, call payment-service (N requests)
+    Gateway ? order-service ? returns [order1, order2, ...]
+    Gateway ? for each order, call user-service (N requests)
+    Gateway ? for each order, call payment-service (N requests)
   With batch aggregation:
-    Gateway â†’ order-service â†’ returns [order1, order2, ...]
-    Gateway â†’ user-service batch(user_ids) â†’ returns all users
-    Gateway â†’ payment-service batch(order_ids) â†’ returns all payments
+    Gateway ? order-service ? returns [order1, order2, ...]
+    Gateway ? user-service batch(user_ids) ? returns all users
+    Gateway ? payment-service batch(order_ids) ? returns all payments
 ```
 
-GraphQL gateways (Apollo Federation, Hasura) push aggregation responsibility to the query layer â€” clients specify exactly which data they need, gateway optimizes the fetch plan.
+GraphQL gateways (Apollo Federation, Hasura) push aggregation responsibility to the query layer � clients specify exactly which data they need, gateway optimizes the fetch plan.
 
 ### 6. CQRS Pattern
 
@@ -219,10 +219,10 @@ Command Query Responsibility Segregation separates the write model (Commands) fr
 ```
 Command Side:                    Query Side:
   Client sends Command             Client sends Query
-  â†’ Validate business rules        â†’ Read from read-optimized store
-  â†’ Write to write model           â†’ Return denormalized DTO
-  â†’ Publish event
-  â†’ Event handler updates read model
+  ? Validate business rules        ? Read from read-optimized store
+  ? Write to write model           ? Return denormalized DTO
+  ? Publish event
+  ? Event handler updates read model
 ```
 
 **Without CQRS**: Single model for reads and writes. Complex JOIN-based queries compete for resources with write operations. Object-relational impedance mismatch: domain objects (rich, behavior-laden) map poorly to relational tables.
@@ -256,9 +256,9 @@ class OrderQueryService:
 Simpler than full CQRS+ES. The command side writes to the write database; on write completion, the command handler updates the read database directly (dual-write).
 
 ```
-Client â†’ Command Handler â†’ Write DB (normalized)
-  â†’ Handler also writes to Read DB (denormalized)
-Client â†’ Query Handler â†’ Read DB â†’ Response
+Client ? Command Handler ? Write DB (normalized)
+  ? Handler also writes to Read DB (denormalized)
+Client ? Query Handler ? Read DB ? Response
 ```
 
 **Trade-offs**: Simpler than ES but has dual-write problem (use transactional outbox), lacks audit log, and cannot rebuild read models from scratch.
@@ -269,14 +269,14 @@ Event sourcing stores all changes as an append-only sequence of events. Current 
 
 ```
 Events for Order#123: v1: OrderPlaced, v2: PaymentReceived, v3: OrderShipped, v4: OrderDelivered
-Current state (fold): placed, paid, shipped, delivered âœ“
+Current state (fold): placed, paid, shipped, delivered ?
 ```
 
-Events are immutable facts â€” correction events (e.g., PaymentRefunded) are appended. **Snapshotting** saves aggregated state at version V, avoiding replay of millions of events. Rebuild: load snapshot, replay from V+1.
+Events are immutable facts � correction events (e.g., PaymentRefunded) are appended. **Snapshotting** saves aggregated state at version V, avoiding replay of millions of events. Rebuild: load snapshot, replay from V+1.
 
 ### 9. Event Store Design
 
-**Event versioning**: Two strategies â€” versioned event types (`OrderPlacedV1` â†’ `OrderPlacedV2`) handled by branching code, or **upcasting** (transform old events to latest schema on read):
+**Event versioning**: Two strategies � versioned event types (`OrderPlacedV1` ? `OrderPlacedV2`) handled by branching code, or **upcasting** (transform old events to latest schema on read):
 
 ```python
 class Upcaster:
@@ -291,7 +291,7 @@ class Upcaster:
 Upcaster.register("OrderPlaced", 1, lambda e: {**e, "version": 2, "currency": "USD"})
 ```
 
-**Schema evolution**: Use protobuf/Avro with forward/backward compatibility. Never delete fields â€” make them optional.
+**Schema evolution**: Use protobuf/Avro with forward/backward compatibility. Never delete fields � make them optional.
 
 ### 10. Rebuilding State: Projections and Snapshots
 
@@ -342,7 +342,7 @@ Query Side (Projections):
   7d. SearchProjection indexes order in Elasticsearch
 ```
 
-**Key insight**: The command side NEVER directly updates the read model. It only appends events. Projections handle read-side updates asynchronously. This means eventual consistency between command and query â€” a client that writes then immediately reads may see stale data.
+**Key insight**: The command side NEVER directly updates the read model. It only appends events. Projections handle read-side updates asynchronously. This means eventual consistency between command and query � a client that writes then immediately reads may see stale data.
 
 ### 12. Practical Trade-offs
 
@@ -372,7 +372,7 @@ Query Side (Projections):
 
 **Axon Framework**: Java framework for CQRS/ES. Provides Aggregate annotation, Command Handler, Event Sourcing Handler, and Saga orchestration. Integrates with any event store (Axon Server, Kafka, PostgreSQL).
 
-**Kafka as event store**: Kafka's log-compacted topics serve as an append-only event store. Key properties: ordered, durable, replayable. Each partition is an ordered sequence of events. Log compaction retains the latest value per key â€” acts as a distributed snapshot. Widely used as the backbone in CQRS architectures.
+**Kafka as event store**: Kafka's log-compacted topics serve as an append-only event store. Key properties: ordered, durable, replayable. Each partition is an ordered sequence of events. Log compaction retains the latest value per key � acts as a distributed snapshot. Widely used as the backbone in CQRS architectures.
 
 **Bank ledger systems**: Every transaction is an event (Deposited, Withdrawn, Transferred). Account balance = sum of all Deposit amounts - sum of all Withdrawal amounts. No records are ever deleted or modified. This gives complete audit trail and regulatory compliance.
 
@@ -419,7 +419,7 @@ import httpx
 mobile_gateway = Flask(__name__)
 web_gateway = Flask(__name__)
 
-# Mobile BFF â€” compact payloads, low bandwidth
+# Mobile BFF � compact payloads, low bandwidth
 @mobile_gateway.route("/feed")
 def mobile_feed():
     user_id = request.headers["X-User-Id"]
@@ -430,7 +430,7 @@ def mobile_feed():
         "thumbnail": p.get("images", [None])[0]
     } for p in posts])
 
-# Web BFF â€” rich content, full HTML
+# Web BFF � rich content, full HTML
 @web_gateway.route("/feed")
 def web_feed():
     user_id = request.headers["X-User-Id"]
@@ -721,9 +721,129 @@ class ProjectionBuilder {
 }
 ```
 
+
+### Implementation: API Gateways and CQRS Patterns
+
+```typescript
+class CQRSBus { private commands = new Map<string, (cmd: any) => any>(); private queries = new Map<string, (qry: any) => any>();
+  registerCommand(name: string, handler: (cmd: any) => any): void { this.commands.set(name, handler); }
+  registerQuery(name: string, handler: (qry: any) => any): void { this.queries.set(name, handler); }
+  sendCommand<T>(name: string, payload: T): any { const h = this.commands.get(name); if (!h) throw new Error(`No handler for ${name}`); return h(payload); }
+  sendQuery<T>(name: string, payload: T): any { const h = this.queries.get(name); if (!h) throw new Error(`No handler for ${name}`); return h(payload); }
+}
+class EventStore { private events: { type: string; data: any; aggregateId: string; version: number; timestamp: number }[] = []; private currentVersion = new Map<string, number>();
+  append(aggregateId: string, type: string, data: any): void { const v = (this.currentVersion.get(aggregateId) || 0) + 1; this.currentVersion.set(aggregateId, v); this.events.push({ type, data, aggregateId, version: v, timestamp: Date.now() }); }
+  getEvents(aggregateId: string): any[] { return this.events.filter(e => e.aggregateId === aggregateId).sort((a, b) => a.version - b.version); }
+  replayAll(): void { for (const e of this.events) console.log(`Replay: ${e.aggregateId} - ${e.type}`); }
+}
+class ProjectionBuilder { private projections = new Map<string, any>();
+  apply(event: { type: string; data: any; aggregateId: string }): void { if (event.type === "created") this.projections.set(event.aggregateId, { ...event.data, id: event.aggregateId }); else if (event.type === "updated") { const existing = this.projections.get(event.aggregateId); if (existing) this.projections.set(event.aggregateId, { ...existing, ...event.data }); } }
+  getState(id: string): any { return this.projections.get(id); }
+}
+class RateLimitMiddleware { private counters = new Map<string, { count: number; resetAt: number }>();
+  constructor(private maxRequests: number, private windowMs: number) {}
+  check(key: string): { allowed: boolean; remaining: number } { const now = Date.now(); let c = this.counters.get(key); if (!c || now > c.resetAt) { c = { count: 0, resetAt: now + this.windowMs }; this.counters.set(key, c); } c.count++; return { allowed: c.count <= this.maxRequests, remaining: Math.max(0, this.maxRequests - c.count) }; }
+}
+class SagaOrchestrator { private steps: { name: string; compensate: string }[] = [];
+  addStep(name: string, compensate: string): void { this.steps.push({ name, compensate }); }
+  execute<T>(fn: (step: string) => T, compensate: (step: string) => void): { ok: boolean; failedAt?: string } { for (const s of this.steps) try { fn(s.name); } catch { for (const cs of this.steps) { if (cs.name === s.name) break; compensate(cs.compensate); } return { ok: false, failedAt: s.name }; } return { ok: true }; }
+}
+```
+
+// api gateways cqrs
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'api gateways cqrs', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// api gateways cqrs - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'api gateways cqrs' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- API gateways handle routing, auth, rate limiting, aggregation, circuit breaking, and protocol translation â€” distinct from load balancers which only distribute traffic
+- API gateways handle routing, auth, rate limiting, aggregation, circuit breaking, and protocol translation � distinct from load balancers which only distribute traffic
 - BFF pattern (gateway per frontend) optimizes payloads per client type; gateway per domain aligns with bounded contexts
 - Distributed rate limiting uses token bucket (burst-tolerant) or sliding window (memory-expensive) algorithms with Redis backend
 - Request aggregation at the gateway eliminates N+1 fetch patterns from clients by composing microservice responses server-side
@@ -732,7 +852,7 @@ class ProjectionBuilder {
 - Event versioning and upcasting handle schema evolution without modifying historical events
 - Snapshots prevent unbounded replay costs by saving aggregated state at periodic intervals
 - Kafka serves as a scalable event bus connecting command-side writes to query-side projections
-- CQRS/ES adds significant complexity â€” use for audit trails and temporal queries, not simple CRUD
+- CQRS/ES adds significant complexity � use for audit trails and temporal queries, not simple CRUD
 - Financial systems, Axon Framework, and Event Store DB are canonical real-world applications
 
 ---

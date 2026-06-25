@@ -21,7 +21,7 @@
 | PDA Definition | NFA + stack (LIFO memory) | Recognizes context-free languages |
 | DPDA vs NPDA | Not equivalent for PDA! | Some CFLs need nondeterminism |
 | Computation | (state, input, stack) triples | Stack grows/shrinks during execution |
-| CFG ↔ PDA | Every CFG has equivalent PDA | Parsing algorithms use this equivalence |
+| CFG ? PDA | Every CFG has equivalent PDA | Parsing algorithms use this equivalence |
 | Stack Patterns | Counter, accumulator, nesting | Common design templates for PDA |
 
 
@@ -43,45 +43,45 @@ flowchart LR
 
 ### 6.1 What is a Pushdown Automaton?
 
-A pushdown automaton (PDA) extends an NFA with a **stack** â€” an unbounded memory that can store and retrieve information in last-in-first-out (LIFO) order. This additional memory enables PDAs to recognize **context-free languages** â€” languages that NFAs/DFAs cannot recognize (like {aâ¿bâ¿ | n â‰¥ 0}).
+A pushdown automaton (PDA) extends an NFA with a **stack** — an unbounded memory that can store and retrieve information in last-in-first-out (LIFO) order. This additional memory enables PDAs to recognize **context-free languages** — languages that NFAs/DFAs cannot recognize (like {aⁿbⁿ | n ≥ 0}).
 
 The stack is a powerful addition: it provides unlimited memory, but the LIFO restriction means not all types of unbounded memory are available (unlike the Turing machine's tape).
 
 ### 6.2 Formal Definition of a PDA
 
-A **pushdown automaton** is a 6-tuple (Q, Î£, Î“, Î´, qâ‚€, F) where:
+A **pushdown automaton** is a 6-tuple (Q, Σ, Γ, δ, q₀, F) where:
 
 - **Q** is a finite set of states.
-- **Î£** is the finite input alphabet.
-- **Î“** is the finite **stack alphabet** (symbols that can be pushed onto the stack).
-- **Î´: Q Ã— (Î£ âˆª {Îµ}) Ã— (Î“ âˆª {Îµ}) â†’ P(Q Ã— (Î“ âˆª {Îµ}))** is the transition function.
-- **qâ‚€ âˆˆ Q** is the start state.
-- **F âŠ† Q** is the set of accepting states.
+- **Σ** is the finite input alphabet.
+- **Γ** is the finite **stack alphabet** (symbols that can be pushed onto the stack).
+- **δ: Q × (Σ ∪ {ε}) × (Γ ∪ {ε}) → P(Q × (Γ ∪ {ε}))** is the transition function.
+- **q₀ ∈ Q** is the start state.
+- **F ⊆ Q** is the set of accepting states.
 
-A transition Î´(q, a, X) contains (p, Y), meaning:
-- From state q, reading input symbol a (or Îµ), with X on top of the stack (or Îµ = any/no check),
-- Move to state p and replace X with Y (if Y = Îµ, pop X; if Y = X, no change; if Y = ZW, push W then Z â€” effectively pushing a string).
+A transition δ(q, a, X) contains (p, Y), meaning:
+- From state q, reading input symbol a (or ε), with X on top of the stack (or ε = any/no check),
+- Move to state p and replace X with Y (if Y = ε, pop X; if Y = X, no change; if Y = ZW, push W then Z — effectively pushing a string).
 
 **Stack convention:** Usually the top of the stack is written first when pushing a string.
 
 ### 6.3 PDA Computation
 
-A **configuration** (or instantaneous description) of a PDA is a triple (q, w, Î³) where:
-- q âˆˆ Q is the current state.
-- w âˆˆ Î£* is the remaining input.
-- Î³ âˆˆ Î“* is the stack content (top of stack first).
+A **configuration** (or instantaneous description) of a PDA is a triple (q, w, γ) where:
+- q ∈ Q is the current state.
+- w ∈ Σ* is the remaining input.
+- γ ∈ Γ* is the stack content (top of stack first).
 
 Transitions between configurations follow the transition function.
 
-**Acceptance:** A PDA accepts a string w if there exists a computation path from (qâ‚€, w, Îµ) to (q, Îµ, Î³) where q âˆˆ F (accepting state).
+**Acceptance:** A PDA accepts a string w if there exists a computation path from (q₀, w, ε) to (q, ε, γ) where q ∈ F (accepting state).
 
 **Acceptance by empty stack:** An alternative definition requires the stack to be empty at the end. The two definitions are equivalent.
 
 ### 6.4 Deterministic vs Nondeterministic PDA
 
-A PDA is **deterministic (DPDA)** if for each (q, a, X) where a âˆˆ Î£ âˆª {Îµ} and X âˆˆ Î“ âˆª {Îµ}, there is at most one possible next configuration. Nondeterministic (NPDA) PDAs may have multiple choices.
+A PDA is **deterministic (DPDA)** if for each (q, a, X) where a ∈ Σ ∪ {ε} and X ∈ Γ ∪ {ε}, there is at most one possible next configuration. Nondeterministic (NPDA) PDAs may have multiple choices.
 
-**Key difference:** Deterministic and nondeterministic PDA are **NOT** equivalent! There are context-free languages that require nondeterminism. Example: { wwÊ€ | w âˆˆ {a,b}* } (even-length palindromes) requires nondeterminism to guess the midpoint.
+**Key difference:** Deterministic and nondeterministic PDA are **NOT** equivalent! There are context-free languages that require nondeterminism. Example: { wwʀ | w ∈ {a,b}* } (even-length palindromes) requires nondeterminism to guess the midpoint.
 
 **DPDA languages** are called deterministic context-free languages (DCFLs), which form a proper subset of CFLs.
 
@@ -89,15 +89,15 @@ A PDA is **deterministic (DPDA)** if for each (q, a, X) where a âˆˆ Î£ âˆ
 
 **Theorem:** A language is context-free if and only if some PDA recognizes it.
 
-**Direction 1 (CFG â†’ PDA):** Given CFG G, construct PDA that simulates a leftmost derivation:
+**Direction 1 (CFG → PDA):** Given CFG G, construct PDA that simulates a leftmost derivation:
 1. Push S (start symbol) onto the stack.
-2. If top of stack is a variable A, nondeterministically choose a production A â†’ Î± and replace A with Î± (push Î± in reverse).
+2. If top of stack is a variable A, nondeterministically choose a production A → α and replace A with α (push α in reverse).
 3. If top of stack is a terminal matching the next input, pop and advance input.
 4. If stack is empty, accept.
 
 This **top-down** construction produces an NPDA with one state.
 
-**Direction 2 (PDA â†’ CFG):** Given PDA P, construct CFG G:
+**Direction 2 (PDA → CFG):** Given PDA P, construct CFG G:
 - Variables are of the form [pXq] meaning: starting in state p with X on top of stack, eventually pop X and end in state q.
 - Productions simulate stack behavior.
 
@@ -111,73 +111,73 @@ Common patterns for PDA design:
 
 ## Examples
 
-### Example 6.1: PDA for L = { aâ¿bâ¿ | n â‰¥ 0 }
+### Example 6.1: PDA for L = { aⁿbⁿ | n ≥ 0 }
 
 Design: Push a's onto the stack; for each b, pop one a.
 
-States: qâ‚€ (start), qâ‚ (reading b's), qâ‚‚ (accept).
+States: q₀ (start), q₁ (reading b's), q₂ (accept).
 
 Transitions:
-- Î´(qâ‚€, a, Îµ) = {(qâ‚€, A)} â€” push A for each a
-- Î´(qâ‚€, b, A) = {(qâ‚, Îµ)} â€” switch to b-reading, start popping
-- Î´(qâ‚, b, A) = {(qâ‚, Îµ)} â€” continue popping for b's
-- Î´(qâ‚, Îµ, Îµ) = {(qâ‚‚, Îµ)} â€” accept when done
-- (also: Î´(qâ‚€, Îµ, Îµ) = {(qâ‚‚, Îµ)} for empty string)
+- δ(q₀, a, ε) = {(q₀, A)} — push A for each a
+- δ(q₀, b, A) = {(q₁, ε)} — switch to b-reading, start popping
+- δ(q₁, b, A) = {(q₁, ε)} — continue popping for b's
+- δ(q₁, ε, ε) = {(q₂, ε)} — accept when done
+- (also: δ(q₀, ε, ε) = {(q₂, ε)} for empty string)
 
 Computation for "aabb":
-(qâ‚€, aabb, Îµ) â†’ (qâ‚€, abb, A) â†’ (qâ‚€, bb, AA) â†’ (qâ‚, b, A) â†’ (qâ‚, Îµ, Îµ) â†’ (qâ‚‚, Îµ, Îµ). Accept.
+(q₀, aabb, ε) → (q₀, abb, A) → (q₀, bb, AA) → (q₁, b, A) → (q₁, ε, ε) → (q₂, ε, ε). Accept.
 
-### Example 6.2: PDA for Palindromes L = { wwÊ€ | w âˆˆ {a,b}* }
+### Example 6.2: PDA for Palindromes L = { wwʀ | w ∈ {a,b}* }
 
 Design: Push symbols onto the stack; nondeterministically guess the midpoint; then pop matching each input symbol.
 
-States: qâ‚€ (push mode), qâ‚ (pop mode), qâ‚‚ (accept).
+States: q₀ (push mode), q₁ (pop mode), q₂ (accept).
 
 Transitions:
-- Push mode: Î´(qâ‚€, a, Îµ) = {(qâ‚€, A)}, Î´(qâ‚€, b, Îµ) = {(qâ‚€, B)}
-- Guess midpoint (Îµ-transition): Î´(qâ‚€, Îµ, Îµ) = {(qâ‚, Îµ)}
-- Pop mode: Î´(qâ‚, a, A) = {(qâ‚, Îµ)}, Î´(qâ‚, b, B) = {(qâ‚, Îµ)}
-- Accept: Î´(qâ‚, Îµ, Îµ) = {(qâ‚‚, Îµ)}
+- Push mode: δ(q₀, a, ε) = {(q₀, A)}, δ(q₀, b, ε) = {(q₀, B)}
+- Guess midpoint (ε-transition): δ(q₀, ε, ε) = {(q₁, ε)}
+- Pop mode: δ(q₁, a, A) = {(q₁, ε)}, δ(q₁, b, B) = {(q₁, ε)}
+- Accept: δ(q₁, ε, ε) = {(q₂, ε)}
 
 Nondeterminism is essential here: the PDA must "guess" when the first half ends.
 
 Computation for "abba":
-(qâ‚€, abba, Îµ) â†’ (qâ‚€, bba, A) â†’ (qâ‚€, ba, BA) â†’ (qâ‚, ba, BA) [guess midpoint] â†’ (qâ‚, a, A) â†’ (qâ‚, Îµ, Îµ) â†’ (qâ‚‚, Îµ, Îµ). Accept.
+(q₀, abba, ε) → (q₀, bba, A) → (q₀, ba, BA) → (q₁, ba, BA) [guess midpoint] → (q₁, a, A) → (q₁, ε, ε) → (q₂, ε, ε). Accept.
 
-### Example 6.3: PDA for { aâ¿bÂ²â¿ | n â‰¥ 0 }
+### Example 6.3: PDA for { aⁿb²ⁿ | n ≥ 0 }
 
 Push two symbols for each a, pop one for each b.
 
-Î´(qâ‚€, a, Îµ) = {(qâ‚€, AA)} â€” push two A's for each a
-Î´(qâ‚€, b, A) = {(qâ‚, Îµ)} â€” start popping
-Î´(qâ‚, b, A) = {(qâ‚, Îµ)} â€” continue popping
-Î´(qâ‚, Îµ, Îµ) = {(qâ‚‚, Îµ)} â€” accept
+δ(q₀, a, ε) = {(q₀, AA)} — push two A's for each a
+δ(q₀, b, A) = {(q₁, ε)} — start popping
+δ(q₁, b, A) = {(q₁, ε)} — continue popping
+δ(q₁, ε, ε) = {(q₂, ε)} — accept
 
 Computation for "aabbbb" (n=2):
-(qâ‚€, aabbbb, Îµ) â†’ (qâ‚€, abbbb, AA) â†’ (qâ‚€, bbbb, AAAA) â†’ (qâ‚, bbb, AAA) â†’ (qâ‚, bb, AA) â†’ (qâ‚, b, A) â†’ (qâ‚, Îµ, Îµ) â†’ (qâ‚‚, Îµ, Îµ). Accept.
+(q₀, aabbbb, ε) → (q₀, abbbb, AA) → (q₀, bbbb, AAAA) → (q₁, bbb, AAA) → (q₁, bb, AA) → (q₁, b, A) → (q₁, ε, ε) → (q₂, ε, ε). Accept.
 
 ### Example 6.4: CFG to PDA Conversion
 
-Convert G: S â†’ aSb | Îµ to a PDA.
+Convert G: S → aSb | ε to a PDA.
 
 Using the top-down construction:
-- One-state PDA: Q = {q}, start qâ‚€ = q, accept F = {q}.
-- Initialize: Î´(q, Îµ, Îµ) = {(q, S$)} â€” push S and bottom marker $
-- For S â†’ aSb: Î´(q, Îµ, S) = {(q, bSa)} â€” replace S with reverse of aSb
-- For S â†’ Îµ: Î´(q, Îµ, S) = {(q, Îµ)} â€” pop S
-- For matching terminals: Î´(q, a, a) = {(q, Îµ)}, Î´(q, b, b) = {(q, Îµ)}
-- Accept: Î´(q, Îµ, $) = {(q, Îµ)}
+- One-state PDA: Q = {q}, start q₀ = q, accept F = {q}.
+- Initialize: δ(q, ε, ε) = {(q, S$)} — push S and bottom marker $
+- For S → aSb: δ(q, ε, S) = {(q, bSa)} — replace S with reverse of aSb
+- For S → ε: δ(q, ε, S) = {(q, ε)} — pop S
+- For matching terminals: δ(q, a, a) = {(q, ε)}, δ(q, b, b) = {(q, ε)}
+- Accept: δ(q, ε, $) = {(q, ε)}
 
 This PDA simulates leftmost derivations of G.
 
 ### Example 6.5: PDA for Balanced Parentheses
 
-L = { w âˆˆ {(,)}* | parentheses are properly matched }.
+L = { w ∈ {(,)}* | parentheses are properly matched }.
 
 Transitions:
-- Î´(qâ‚€, (, Îµ) = {(qâ‚€, P)} â€” push P for each '('
-- Î´(qâ‚€, ), P) = {(qâ‚€, Îµ)} â€” pop P for each ')'
-- Î´(qâ‚€, Îµ, Îµ) = {(qâ‚€, Îµ)} â€” Îµ transition (non-consuming)
+- δ(q₀, (, ε) = {(q₀, P)} — push P for each '('
+- δ(q₀, ), P) = {(q₀, ε)} — pop P for each ')'
+- δ(q₀, ε, ε) = {(q₀, ε)} — ε transition (non-consuming)
 - Accept with empty stack (using empty stack acceptance)
 
 The stack counts the nesting depth. At any point, the number of P's on the stack equals the current nesting level. If we try to pop when stack is empty, the computation dies (reject). After processing all input, accept if stack is empty.
@@ -225,7 +225,7 @@ class PDA {
         return true;
       }
 
-      // ε-moves (no input consumed)
+      // e-moves (no input consumed)
       const epsKey = this.key(state, '', stk[0] || '');
       const epsTrans = this.delta.get(epsKey) || [];
       for (const [nextState, pushStr] of epsTrans) {
@@ -262,7 +262,7 @@ class PDA {
 }
 ```
 
-This simulator performs DFS over the PDA's configuration space. Because the stack can grow unboundedly, the search may not terminate for rejecting inputs — which matches the theoretical limitation of PDAs.
+This simulator performs DFS over the PDA's configuration space. Because the stack can grow unboundedly, the search may not terminate for rejecting inputs � which matches the theoretical limitation of PDAs.
 
 ## Acceptance by Final State vs Empty Stack
 
@@ -282,11 +282,11 @@ Given a PDA \(P_F\) that accepts by final state, we construct \(P_\varepsilon\) 
 
 ```mermaid
 graph TD
-    subgraph "Final State → Empty Stack Conversion"
-        q0["q₀' (new start)"] -->|"ε, ε → $"| original["Original PDA"]
-        original -->|"ε, any → ε"| clear["q_clear (new)"]
-        clear -->|"ε, any → ε"| clear
-        clear -->|"ε, $ → ε"| accept["✓ Accept (empty stack)"]
+    subgraph "Final State ? Empty Stack Conversion"
+        q0["q0' (new start)"] -->|"e, e ? $"| original["Original PDA"]
+        original -->|"e, any ? e"| clear["q_clear (new)"]
+        clear -->|"e, any ? e"| clear
+        clear -->|"e, $ ? e"| accept["? Accept (empty stack)"]
     end
 ```
 
@@ -343,7 +343,7 @@ class ShiftReducePDA {
   }
 }
 
-// Grammar: S → aSb | ε (reverse representation)
+// Grammar: S ? aSb | e (reverse representation)
 const sr = new ShiftReducePDA();
 sr.addProduction('S', 'aSb');
 sr.addProduction('S', '');
@@ -356,17 +356,17 @@ console.log(sr.accepts('aab'));   // false
 ```mermaid
 graph LR
     subgraph "Accepting Computation"
-        I["(q₀, aabb, ε)"] -->|"push A"| S1["(q₀, abb, A)"]
-        S1 -->|"push A"| S2["(q₀, bb, AA)"]
-        S2 -->|"pop A"| S3["(q₁, b, A)"]
-        S3 -->|"pop A"| S4["(q₁, ε, ε)"]
-        S4 -->|"ε"| ACC["(q₂, ε, ε)✓"]
+        I["(q0, aabb, e)"] -->|"push A"| S1["(q0, abb, A)"]
+        S1 -->|"push A"| S2["(q0, bb, AA)"]
+        S2 -->|"pop A"| S3["(q1, b, A)"]
+        S3 -->|"pop A"| S4["(q1, e, e)"]
+        S4 -->|"e"| ACC["(q2, e, e)?"]
     end
 ```
 
 ## PDA to CFG Conversion Algorithm
 
-The reverse direction (PDA → CFG) constructs variables \([pXq]\) representing: "starting in state \(p\) with \(X\) on top of the stack, eventually pop \(X\) and end in state \(q\)."
+The reverse direction (PDA ? CFG) constructs variables \([pXq]\) representing: "starting in state \(p\) with \(X\) on top of the stack, eventually pop \(X\) and end in state \(q\)."
 
 ### Production Rules
 
@@ -416,13 +416,13 @@ function pdaToCFG(
     for (const [r, pushStr] of transitions) {
       const pushSymbols = [...pushStr];
       if (pushSymbols.length === 0) {
-        // Pop: R_{[pXr]} → a
+        // Pop: R_{[pXr]} ? a
         const varKey = `[${p}X${r}]`;
         if (!prods.has(varKey)) prods.set(varKey, []);
         prods.get(varKey)!.push([a]);
       }
-      // For k ≥ 1, we'd iterate over all intermediate states
-      // (omitted for brevity — generates O(|Q|^{k-1}) productions)
+      // For k = 1, we'd iterate over all intermediate states
+      // (omitted for brevity � generates O(|Q|^{k-1}) productions)
     }
   }
 
@@ -432,13 +432,13 @@ function pdaToCFG(
 
 ## Practical Takeaways
 
-1. **Stack memory enables counting.** PDAs can recognize languages like {aⁿbⁿ} that require counting, but the LIFO restriction means only one counter is available — languages requiring two independent counters (like {aⁿbⁿcⁿ}) are beyond CFG.
+1. **Stack memory enables counting.** PDAs can recognize languages like {anbn} that require counting, but the LIFO restriction means only one counter is available � languages requiring two independent counters (like {anbncn}) are beyond CFG.
 
 2. **Nondeterminism is essential for some CFLs.** Unlike finite automata, nondeterministic PDAs are strictly more powerful than deterministic ones. Languages like {ww^R} inherently require guessing.
 
-3. **CFG ↔ PDA equivalence is the basis for parsing.** Every grammar-to-PDA conversion gives a parsing algorithm. The direction matters: top-down (LL) parsers correspond to one construction, bottom-up (LR) to another.
+3. **CFG ? PDA equivalence is the basis for parsing.** Every grammar-to-PDA conversion gives a parsing algorithm. The direction matters: top-down (LL) parsers correspond to one construction, bottom-up (LR) to another.
 
-4. **DPDA = deterministic parsing.** Deterministic context-free languages are precisely those that can be parsed in linear time without backtracking — virtually all programming languages fall into this class.
+4. **DPDA = deterministic parsing.** Deterministic context-free languages are precisely those that can be parsed in linear time without backtracking � virtually all programming languages fall into this class.
 
 ## Concept Comparison Table
 | Feature | DFA | PDA | Turing Machine |
@@ -452,10 +452,10 @@ function pdaToCFG(
 | PDA Component | Description |
 |--------------|-------------|
 | Q | Finite states |
-| Σ | Input alphabet |
-| Γ | Stack alphabet |
-| δ | Q × (Σ∪{ε}) × (Γ∪{ε}) → P(Q × (Γ∪{ε})) |
-| q₀ | Start state |
+| S | Input alphabet |
+| G | Stack alphabet |
+| d | Q � (S?{e}) � (G?{e}) ? P(Q � (G?{e})) |
+| q0 | Start state |
 | F | Accepting states |
 
 ## Cross-Application Matrix
@@ -471,7 +471,7 @@ function pdaToCFG(
 
 **Q1.** A PDA = NFA + what?
 - A) Random access memory
-- B) Stack ✓
+- B) Stack ?
 - C) Queue
 - D) Counter
 
@@ -482,7 +482,7 @@ function pdaToCFG(
 
 **Q2.** DPDA and NPDA are:
 - A) Equivalent in power
-- B) Not equivalent ✓
+- B) Not equivalent ?
 - C) Equivalent only for regular languages
 - D) Both equivalent to DFA
 
@@ -494,7 +494,7 @@ function pdaToCFG(
 **Q3.** PDAs accept by:
 - A) Final state only
 - B) Empty stack only
-- C) Final state or empty stack ✓
+- C) Final state or empty stack ?
 - D) Both simultaneously
 
 <details>
@@ -504,24 +504,24 @@ function pdaToCFG(
 
 **Q4.** Every CFG can be converted to:
 - A) A DFA
-- B) A PDA ✓
+- B) A PDA ?
 - C) A regular expression
 - D) A Turing machine only
 
 <details>
 <summary>Answer</summary>
-**B)** Every CFG has an equivalent PDA (and vice versa) — this is a fundamental theorem.
+**B)** Every CFG has an equivalent PDA (and vice versa) � this is a fundamental theorem.
 </details>
 
 **Q5.** The language { ww^R } requires:
 - A) Deterministic PDA
-- B) Nondeterministic PDA ✓
+- B) Nondeterministic PDA ?
 - C) DFA
 - D) Regular expression
 
 <details>
 <summary>Answer</summary>
-**B)** The PDA must nondeterministically guess the midpoint — a DPDA cannot.
+**B)** The PDA must nondeterministically guess the midpoint � a DPDA cannot.
 </details>
 
 ### TypeScript: PDA Simulator
@@ -545,7 +545,7 @@ function runPDA(pda: PDAConfig, input: string): boolean {
     const { to, push } = trans[0];
     state = to;
     stack.pop();
-    for (const s of [...push].reverse()) if (s !== "ε") stack.push(s);
+    for (const s of [...push].reverse()) if (s !== "e") stack.push(s);
   }
   return pda.accept.has(state);
 }
@@ -562,8 +562,8 @@ type PDAStackSymbol = string;
 class PDARule {
   constructor(
     public from: PDAState,
-    public input: string,        // input symbol or "ε"
-    public pop: PDAStackSymbol,  // stack symbol to pop or "ε"
+    public input: string,        // input symbol or "e"
+    public pop: PDAStackSymbol,  // stack symbol to pop or "e"
     public to: PDAState,
     public push: string          // string to push (characters pushed in reverse order)
   ) {}
@@ -594,23 +594,23 @@ class PDA {
     if (this.acceptStates.has(state)) return true;
 
     // Try epsilon transitions first (no input consumed)
-    for (const rule of this.getRules(state, "ε")) {
-      if (rule.pop !== "ε" && (stack.length === 0 || stack[stack.length - 1] !== rule.pop))
+    for (const rule of this.getRules(state, "e")) {
+      if (rule.pop !== "e" && (stack.length === 0 || stack[stack.length - 1] !== rule.pop))
         continue;
       const newStack = [...stack];
-      if (rule.pop !== "ε") newStack.pop();
-      if (rule.push !== "ε") for (const ch of [...rule.push].reverse()) newStack.push(ch);
+      if (rule.pop !== "e") newStack.pop();
+      if (rule.push !== "e") for (const ch of [...rule.push].reverse()) newStack.push(ch);
       if (this.simulate(input, rule.to, newStack, pos)) return true;
     }
 
     // Try consuming one input symbol
     if (pos < input.length) {
       for (const rule of this.getRules(state, input[pos])) {
-        if (rule.pop !== "ε" && (stack.length === 0 || stack[last(stack)] !== rule.pop))
+        if (rule.pop !== "e" && (stack.length === 0 || stack[last(stack)] !== rule.pop))
           continue;
         const newStack = [...stack];
-        if (rule.pop !== "ε") newStack.pop();
-        if (rule.push !== "ε") for (const ch of [...rule.push].reverse()) newStack.push(ch);
+        if (rule.pop !== "e") newStack.pop();
+        if (rule.push !== "e") for (const ch of [...rule.push].reverse()) newStack.push(ch);
         if (this.simulate(input, rule.to, newStack, pos + 1)) return true;
       }
     }
@@ -629,20 +629,20 @@ class PDA {
     const qAccept = "q2";
 
     // Initial rule: push start symbol onto stack
-    rules.push(new PDARule(q0, "ε", "ε", qLoop, `${cfg.productions[0].lhs}`));
+    rules.push(new PDARule(q0, "e", "e", qLoop, `${cfg.productions[0].lhs}`));
 
-    // For each production A → γ, add rule: (qLoop, ε, A, qLoop, γ)
+    // For each production A ? ?, add rule: (qLoop, e, A, qLoop, ?)
     for (const p of cfg.productions) {
-      rules.push(new PDARule(qLoop, "ε", p.lhs, qLoop, p.rhs.join("")));
+      rules.push(new PDARule(qLoop, "e", p.lhs, qLoop, p.rhs.join("")));
     }
 
-    // For each terminal a, add rule: (qLoop, a, a, qLoop, ε)
+    // For each terminal a, add rule: (qLoop, a, a, qLoop, e)
     for (const t of cfg.terminals) {
-      rules.push(new PDARule(qLoop, t, t, qLoop, "ε"));
+      rules.push(new PDARule(qLoop, t, t, qLoop, "e"));
     }
 
     // Accept on empty stack
-    rules.push(new PDARule(qLoop, "ε", "ε", qAccept, "ε"));
+    rules.push(new PDARule(qLoop, "e", "e", qAccept, "e"));
 
     return new PDA(
       new Set([q0, qLoop, qAccept]),
@@ -661,11 +661,11 @@ const pda = new PDA(
   new Set(["(", ")"]),
   new Set(["Z", "X"]),
   [
-    new PDARule("q0", "ε", "ε", "q1", "Z"),
+    new PDARule("q0", "e", "e", "q1", "Z"),
     new PDARule("q1", "(", "Z", "q1", "XZ"),
     new PDARule("q1", "(", "X", "q1", "XX"),
-    new PDARule("q1", ")", "X", "q1", "ε"),
-    new PDARule("q1", "ε", "Z", "q2", "ε")
+    new PDARule("q1", ")", "X", "q1", "e"),
+    new PDARule("q1", "e", "Z", "q2", "e")
   ],
   "q0", "Z", new Set(["q2"])
 );
@@ -684,11 +684,11 @@ const cfgPDA = PDA.fromCFG({
 console.log(cfgPDA.states.size); // 3
 ```
 
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 // Instantaneous Description (ID) Tracer
 // Records the full configuration sequence of a PDA
 // as it processes an input string: (state, remaining input, stack).
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class IDTracer {
   private pda: {
@@ -718,13 +718,13 @@ class IDTracer {
     while (remaining.length > 0 && maxSteps-- > 0) {
       let matched = false;
 
-      // Try ε-transitions first (that don't consume input)
+      // Try e-transitions first (that don't consume input)
       for (const rule of this.pda.rules) {
-        if (rule.state === currentState && rule.input === "ε") {
+        if (rule.state === currentState && rule.input === "e") {
           const top = stack[stack.length - 1];
-          if (rule.stackTop === top || rule.stackTop === "ε") {
-            if (rule.stackTop !== "ε" && rule.stackTop === top) stack.pop();
-            if (rule.stackOp !== "ε") {
+          if (rule.stackTop === top || rule.stackTop === "e") {
+            if (rule.stackTop !== "e" && rule.stackTop === top) stack.pop();
+            if (rule.stackOp !== "e") {
               for (const ch of rule.stackOp) stack.push(ch);
             }
             currentState = rule.nextState;
@@ -741,9 +741,9 @@ class IDTracer {
       for (const rule of this.pda.rules) {
         if (rule.state === currentState && rule.input === ch) {
           const top = stack[stack.length - 1];
-          if (rule.stackTop === top || rule.stackTop === "ε") {
-            if (rule.stackTop !== "ε" && rule.stackTop === top) stack.pop();
-            if (rule.stackOp !== "ε") {
+          if (rule.stackTop === top || rule.stackTop === "e") {
+            if (rule.stackTop !== "e" && rule.stackTop === top) stack.pop();
+            if (rule.stackOp !== "e") {
               for (const c of rule.stackOp) stack.push(c);
             }
             currentState = rule.nextState;
@@ -765,11 +765,11 @@ class IDTracer {
     const ids = this.trace(input);
     const output: string[] = [];
     output.push(`ID Trace for input "${input}":`);
-    output.push("─".repeat(50));
+    output.push("-".repeat(50));
     for (let i = 0; i < ids.length; i++) {
       const id = ids[i];
       const stackStr = `[${id.stack.join("")}]`;
-      output.push(`ID ${i}: (${id.state}, ${id.remainingInput || "ε"}, ${stackStr})`);
+      output.push(`ID ${i}: (${id.state}, ${id.remainingInput || "e"}, ${stackStr})`);
     }
     output.push(`Final state: ${ids[ids.length - 1].state}`);
     output.push(`Stack: ${ids[ids.length - 1].stack.join("")}`);
@@ -785,11 +785,11 @@ const balancePDA = {
   inputAlphabet: new Set(["(", ")"]),
   stackAlphabet: new Set(["Z", "X"]),
   rules: [
-    { state: "q0", input: "ε", stackTop: "ε", nextState: "q1", stackOp: "Z" },
+    { state: "q0", input: "e", stackTop: "e", nextState: "q1", stackOp: "Z" },
     { state: "q1", input: "(", stackTop: "Z", nextState: "q1", stackOp: "XZ" },
     { state: "q1", input: "(", stackTop: "X", nextState: "q1", stackOp: "XX" },
-    { state: "q1", input: ")", stackTop: "X", nextState: "q1", stackOp: "ε" },
-    { state: "q1", input: "ε", stackTop: "Z", nextState: "q2", stackOp: "ε" },
+    { state: "q1", input: ")", stackTop: "X", nextState: "q1", stackOp: "e" },
+    { state: "q1", input: "e", stackTop: "Z", nextState: "q2", stackOp: "e" },
   ],
   startState: "q0", startStack: "Z", acceptStates: new Set(["q2"])
 };
@@ -798,28 +798,70 @@ const tracer = new IDTracer(balancePDA);
 console.log(tracer.renderTrace("(())").join("\n"));
 ```
 
+
+// pda
+// automata-complexity implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'pda', data: { topic: 'automata-complexity' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - PDA = NFA + stack (LIFO memory).
 - PDA configurations are triples: (state, remaining input, stack content).
 - Nondeterministic PDAs recognize all context-free languages.
-- Deterministic PDAs recognize a proper subset (DCFLs) â€” languages that can be parsed without backtracking.
+- Deterministic PDAs recognize a proper subset (DCFLs) — languages that can be parsed without backtracking.
 - Every CFG can be converted to an equivalent PDA (top-down or bottom-up construction).
 - Every PDA can be converted to an equivalent CFG.
 - Stack operations: push (add to top), pop (remove from top), or no change.
 - **Acceptance by final state** and **acceptance by empty stack** are equivalent definitions.
-- **DPDA vs NPDA** is the first model where nondeterminism adds genuine power — a unique situation in the Chomsky hierarchy.
+- **DPDA vs NPDA** is the first model where nondeterminism adds genuine power � a unique situation in the Chomsky hierarchy.
 - **Shift-reduce parsing** (LR parsing) is the practical realization of bottom-up PDA construction, used in real compilers.
 
 ## Practical Takeaways
 
-1. **Stack memory enables counting.** PDAs can recognize languages like {aⁿbⁿ} that require counting, but the LIFO restriction means only one counter is available — languages requiring two independent counters (like {aⁿbⁿcⁿ}) are beyond CFGs.
+1. **Stack memory enables counting.** PDAs can recognize languages like {anbn} that require counting, but the LIFO restriction means only one counter is available � languages requiring two independent counters (like {anbncn}) are beyond CFGs.
 
 2. **Nondeterminism is essential for some CFLs.** Unlike finite automata, nondeterministic PDAs are strictly more powerful than deterministic ones. Languages like {ww^R} inherently require guessing.
 
-3. **CFG ↔ PDA equivalence is the basis for parsing.** Every grammar-to-PDA conversion gives a parsing algorithm. The direction matters: top-down (LL) parsers correspond to one construction, bottom-up (LR) to another.
+3. **CFG ? PDA equivalence is the basis for parsing.** Every grammar-to-PDA conversion gives a parsing algorithm. The direction matters: top-down (LL) parsers correspond to one construction, bottom-up (LR) to another.
 
-4. **DPDA = deterministic parsing.** Deterministic context-free languages are precisely those that can be parsed in linear time without backtracking — virtually all programming languages fall into this class.
+4. **DPDA = deterministic parsing.** Deterministic context-free languages are precisely those that can be parsed in linear time without backtracking � virtually all programming languages fall into this class.
 
 5. **Empty stack acceptance simplifies proofs.** When constructing PDAs for theoretical results, empty stack acceptance often yields cleaner constructions, while final state acceptance is closer to how real parsers work.
 
@@ -827,29 +869,29 @@ console.log(tracer.renderTrace("(())").join("\n"));
 
 ### Basic
 
-1. Design a PDA for L = { aâ¿báµcâ¿ | n, m â‰¥ 0 }.
-2. Design a PDA for L = { w âˆˆ {a,b}* | w has equal numbers of a's and b's }.
+1. Design a PDA for L = { aⁿbᵐcⁿ | n, m ≥ 0 }.
+2. Design a PDA for L = { w ∈ {a,b}* | w has equal numbers of a's and b's }.
 3. Trace the PDA from Example 6.1 on input "ab" and "aab".
-4. Design a PDA for L = { aâ¿bâ¿cáµ | n, m â‰¥ 0 }.
-5. Convert the CFG S â†’ aSa | bSb | Îµ to a PDA.
+4. Design a PDA for L = { aⁿbⁿcᵐ | n, m ≥ 0 }.
+5. Convert the CFG S → aSa | bSb | ε to a PDA.
 
 ### Intermediate
 
-6. Design a PDA for L = { aâ¿báµ | n â‰¤ m â‰¤ 2n }.
+6. Design a PDA for L = { aⁿbᵐ | n ≤ m ≤ 2n }.
 7. Convert the PDA from Example 6.2 to a CFG.
-8. Prove that the PDA from Example 6.3 correctly recognizes { aâ¿bÂ²â¿ } by induction on n.
-9. Design a PDA for L = { w âˆˆ {a,b}* | w contains at least as many a's as b's }.
-10. Show that the language { aâ¿bâ¿câ¿ | n â‰¥ 0 } cannot be recognized by a PDA (it is not context-free). Use the intuition of the single stack's limitations.
+8. Prove that the PDA from Example 6.3 correctly recognizes { aⁿb²ⁿ } by induction on n.
+9. Design a PDA for L = { w ∈ {a,b}* | w contains at least as many a's as b's }.
+10. Show that the language { aⁿbⁿcⁿ | n ≥ 0 } cannot be recognized by a PDA (it is not context-free). Use the intuition of the single stack's limitations.
 
 ### Advanced
 
 11. Prove that DPDA languages are closed under complement, but NPDA languages are not.
-12. Design a PDA for L = { wâ‚cwâ‚‚ | wâ‚, wâ‚‚ âˆˆ {a,b}* and wâ‚ â‰  wâ‚‚ }. This requires nondeterminism â€” explain why.
+12. Design a PDA for L = { w₁cw₂ | w₁, w₂ ∈ {a,b}* and w₁ ≠ w₂ }. This requires nondeterminism — explain why.
 13. Show formally that if PDA P accepts by final state, there is an equivalent PDA P' that accepts by empty stack, and vice versa.
-14. Design a PDA for the language of arithmetic expressions generated by E â†’ E + T | T, T â†’ T * F | F, F â†’ (E) | i. Show the stack behavior for "i + i * i".
-15. Prove that the language { aâ¿báµ | n â‰  m } is a DCFL by constructing a DPDA for it.
+14. Design a PDA for the language of arithmetic expressions generated by E → E + T | T, T → T * F | F, F → (E) | i. Show the stack behavior for "i + i * i".
+15. Prove that the language { aⁿbᵐ | n ≠ m } is a DCFL by constructing a DPDA for it.
 16. Implement a TypeScript function that converts a CFG to a PDA using the top-down construction (single-state method). Test it on the grammar for palindromes.
-17. Show that the language L = { aⁱbʲcᵏ | i, j, k ≥ 0, i = j or j = k } is context-free by designing a PDA for it. Explain why nondeterminism is required.
+17. Show that the language L = { a?b?c? | i, j, k = 0, i = j or j = k } is context-free by designing a PDA for it. Explain why nondeterminism is required.
 18. Write a TypeScript simulator for the shift-reduce PDA and test it on a grammar for balanced parentheses.
-19. Prove that if L is a DCFL, then L̅ (complement) is also a DCFL. (Hint: modify the DPDA to swap accepting and non-accepting states — but be careful with infinite loops from ε-moves.)
-20. Design a DPDA for the language L = { aⁿbᵐcᵖ | n, m, p ≥ 0 and n = m + p }.
+19. Prove that if L is a DCFL, then L� (complement) is also a DCFL. (Hint: modify the DPDA to swap accepting and non-accepting states � but be careful with infinite loops from e-moves.)
+20. Design a DPDA for the language L = { anb?c? | n, m, p = 0 and n = m + p }.

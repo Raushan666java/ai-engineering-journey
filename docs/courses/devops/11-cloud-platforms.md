@@ -48,65 +48,65 @@ flowchart LR
 AWS is the largest and most mature public cloud provider, offering over 200 services across 30+ global regions.
 
 **Compute:**
-- **EC2 (Elastic Compute Cloud)** â€” Virtual machines optimized for general purpose (t3, m6i), compute (c6i), memory (r6i), storage (i3), and GPU (p4). Supports spot instances (60-90% discount), reserved instances (up to 72% discount), and dedicated hosts.
-- **Lambda** â€” Serverless function execution supporting Node.js, Python, Java, Go, Ruby, .NET, and custom runtimes. Scales automatically. Billed per invocation and duration (rounded to 1ms).
-- **ECS (Elastic Container Service)** â€” Docker container orchestration with Fargate (serverless) and EC2 launch types.
-- **EKS (Elastic Kubernetes Service)** â€” Managed Kubernetes control plane with automated upgrades and IAM integration.
+- **EC2 (Elastic Compute Cloud)** — Virtual machines optimized for general purpose (t3, m6i), compute (c6i), memory (r6i), storage (i3), and GPU (p4). Supports spot instances (60-90% discount), reserved instances (up to 72% discount), and dedicated hosts.
+- **Lambda** — Serverless function execution supporting Node.js, Python, Java, Go, Ruby, .NET, and custom runtimes. Scales automatically. Billed per invocation and duration (rounded to 1ms).
+- **ECS (Elastic Container Service)** — Docker container orchestration with Fargate (serverless) and EC2 launch types.
+- **EKS (Elastic Kubernetes Service)** — Managed Kubernetes control plane with automated upgrades and IAM integration.
 
 **Storage:**
-- **S3 (Simple Storage Service)** â€” Object storage with 99.999999999% durability. Storage classes: Standard, Intelligent-Tiering, Infrequent Access, Glacier, Deep Archive. Lifecycle policies automate tier transitions.
-- **EBS (Elastic Block Store)** â€” Block storage with gp3 (general purpose), io2 (provisioned IOPS up to 256K), st1 (throughput), sc1 (cold). Snapshots are incremental and stored in S3.
-- **RDS (Relational Database Service)** â€” Managed MySQL, PostgreSQL, Oracle, SQL Server, MariaDB, Aurora. Multi-AZ for high availability, Read Replicas for read scaling.
+- **S3 (Simple Storage Service)** — Object storage with 99.999999999% durability. Storage classes: Standard, Intelligent-Tiering, Infrequent Access, Glacier, Deep Archive. Lifecycle policies automate tier transitions.
+- **EBS (Elastic Block Store)** — Block storage with gp3 (general purpose), io2 (provisioned IOPS up to 256K), st1 (throughput), sc1 (cold). Snapshots are incremental and stored in S3.
+- **RDS (Relational Database Service)** — Managed MySQL, PostgreSQL, Oracle, SQL Server, MariaDB, Aurora. Multi-AZ for high availability, Read Replicas for read scaling.
 
 **Networking:**
-- **VPC (Virtual Private Cloud)** â€” Isolated network environment with subnets, route tables, internet/NAT gateways, security groups, network ACLs, VPC peering, Transit Gateway.
-- **CloudFront** â€” CDN with 400+ edge locations. Supports Lambda@Edge for custom logic at the edge.
-- **Route 53** â€” DNS with routing policies: simple, weighted, latency-based, geolocation, geonear, failover, multi-value.
+- **VPC (Virtual Private Cloud)** — Isolated network environment with subnets, route tables, internet/NAT gateways, security groups, network ACLs, VPC peering, Transit Gateway.
+- **CloudFront** — CDN with 400+ edge locations. Supports Lambda@Edge for custom logic at the edge.
+- **Route 53** — DNS with routing policies: simple, weighted, latency-based, geolocation, geonear, failover, multi-value.
 
-**IAM (Identity and Access Management)** â€” Fine-grained access control with users, groups, roles, policies, and identity federation. Supports SCIM, SAML 2.0, and OIDC. IAM Roles Anywhere for on-premises workloads.
+**IAM (Identity and Access Management)** — Fine-grained access control with users, groups, roles, policies, and identity federation. Supports SCIM, SAML 2.0, and OIDC. IAM Roles Anywhere for on-premises workloads.
 
 ### 11.2 Microsoft Azure
 
 Azure is the second-largest cloud provider with deep enterprise and Microsoft ecosystem integration across 60+ regions.
 
 **Compute:**
-- **Virtual Machines** â€” Windows and Linux VMs with flexible sizing. Availability sets (99.95% SLA) and availability zones (99.99% SLA) for high availability. Supports spot VMs and reserved instances.
-- **Azure Functions** â€” Serverless compute supporting C#, JavaScript, Python, Java, PowerShell. Consumption, Premium, and Dedicated plans.
-- **AKS (Azure Kubernetes Service)** â€” Managed Kubernetes with Azure AD integration, managed identity, and Azure Policy for governance.
-- **App Service** â€” Managed platform for web apps and APIs. Supports Windows and Linux, auto-scale, staging slots, and integrated CI/CD.
+- **Virtual Machines** — Windows and Linux VMs with flexible sizing. Availability sets (99.95% SLA) and availability zones (99.99% SLA) for high availability. Supports spot VMs and reserved instances.
+- **Azure Functions** — Serverless compute supporting C#, JavaScript, Python, Java, PowerShell. Consumption, Premium, and Dedicated plans.
+- **AKS (Azure Kubernetes Service)** — Managed Kubernetes with Azure AD integration, managed identity, and Azure Policy for governance.
+- **App Service** — Managed platform for web apps and APIs. Supports Windows and Linux, auto-scale, staging slots, and integrated CI/CD.
 
 **Storage:**
-- **Blob Storage** â€” Object storage with hot, cool, cold, and archive tiers. Supports lifecycle management and immutable storage for compliance.
-- **Azure SQL Database** â€” Managed SQL Server with built-in HA, auto-tuning, serverless compute, and geo-replication.
-- **Cosmos DB** â€” Globally distributed NoSQL database with turnkey distribution, multi-master, and five consistency models (strong, bounded staleness, session, consistent prefix, eventual).
+- **Blob Storage** — Object storage with hot, cool, cold, and archive tiers. Supports lifecycle management and immutable storage for compliance.
+- **Azure SQL Database** — Managed SQL Server with built-in HA, auto-tuning, serverless compute, and geo-replication.
+- **Cosmos DB** — Globally distributed NoSQL database with turnkey distribution, multi-master, and five consistency models (strong, bounded staleness, session, consistent prefix, eventual).
 
 **Networking:**
-- **Virtual Network (VNet)** â€” Network isolation with subnets, peering, VPN gateways, ExpressRoute for dedicated private connections.
-- **Azure DNS** â€” Domain hosting with 100% SLA.
-- **Azure Front Door** â€” Global load balancing and CDN with WAF, SSL termination, and URL-based routing.
+- **Virtual Network (VNet)** — Network isolation with subnets, peering, VPN gateways, ExpressRoute for dedicated private connections.
+- **Azure DNS** — Domain hosting with 100% SLA.
+- **Azure Front Door** — Global load balancing and CDN with WAF, SSL termination, and URL-based routing.
 
 **Identity:**
-- **Microsoft Entra ID (formerly Azure AD)** â€” Identity and access management with SSO, MFA, conditional access, identity protection, and privileged identity management (PIM).
+- **Microsoft Entra ID (formerly Azure AD)** — Identity and access management with SSO, MFA, conditional access, identity protection, and privileged identity management (PIM).
 
 ### 11.3 Google Cloud Platform (GCP)
 
 GCP excels in data analytics, machine learning, and container-native services across 35+ global regions.
 
 **Compute:**
-- **Compute Engine** â€” Virtual machines with live migration, custom machine types, sustained-use discounts (automatic 30% for full month), and committed use discounts (up to 57% for 1-3 year commitments).
-- **Cloud Functions** â€” Serverless functions (Node.js, Python, Go, Java, .NET, Ruby, PHP). 1st gen and 2nd gen (Cloud Run-based).
-- **GKE (Google Kubernetes Engine)** â€” Managed Kubernetes with Autopilot mode (serverless), integrated Cloud NAT, workload identity, and GKE Sandbox for extra isolation.
-- **Cloud Run** â€” Serverless container execution. Runs any containerized application with automatic scale-to-zero. Billed per 100ms of CPU and memory usage.
+- **Compute Engine** — Virtual machines with live migration, custom machine types, sustained-use discounts (automatic 30% for full month), and committed use discounts (up to 57% for 1-3 year commitments).
+- **Cloud Functions** — Serverless functions (Node.js, Python, Go, Java, .NET, Ruby, PHP). 1st gen and 2nd gen (Cloud Run-based).
+- **GKE (Google Kubernetes Engine)** — Managed Kubernetes with Autopilot mode (serverless), integrated Cloud NAT, workload identity, and GKE Sandbox for extra isolation.
+- **Cloud Run** — Serverless container execution. Runs any containerized application with automatic scale-to-zero. Billed per 100ms of CPU and memory usage.
 
 **Storage:**
-- **Cloud Storage** â€” Object storage with standard, nearline, coldline, and archive classes. Uniform and fine-grained access control through IAM and ACLs. Object lifecycle management.
-- **Cloud SQL** â€” Managed MySQL, PostgreSQL, SQL Server with automatic replication, backups, and failover.
-- **Cloud Spanner** â€” Horizontally scalable relational database with strong consistency and 99.999% SLA. Supports SQL queries and transactions.
+- **Cloud Storage** — Object storage with standard, nearline, coldline, and archive classes. Uniform and fine-grained access control through IAM and ACLs. Object lifecycle management.
+- **Cloud SQL** — Managed MySQL, PostgreSQL, SQL Server with automatic replication, backups, and failover.
+- **Cloud Spanner** — Horizontally scalable relational database with strong consistency and 99.999% SLA. Supports SQL queries and transactions.
 
 **Networking:**
-- **VPC** â€” Global virtual network (not regional like AWS). Subnets, firewall rules, Cloud NAT, Cloud VPN, Dedicated Interconnect.
-- **Cloud CDN** â€” Content delivery with global edge caching using Google's global fiber network.
-- **Cloud DNS** â€” Managed DNS with 100% SLA.
+- **VPC** — Global virtual network (not regional like AWS). Subnets, firewall rules, Cloud NAT, Cloud VPN, Dedicated Interconnect.
+- **Cloud CDN** — Content delivery with global edge caching using Google's global fiber network.
+- **Cloud DNS** — Managed DNS with 100% SLA.
 
 ### 11.4 Cloud Provider Comparison
 
@@ -126,7 +126,7 @@ GCP excels in data analytics, machine learning, and container-native services ac
 
 ### 11.5 Multi-Cloud and Hybrid Cloud
 
-**Multi-Cloud** â€” Using multiple cloud providers to avoid vendor lock-in, optimize costs, leverage best-of-breed services, or meet regulatory requirements.
+**Multi-Cloud** — Using multiple cloud providers to avoid vendor lock-in, optimize costs, leverage best-of-breed services, or meet regulatory requirements.
 
 **Challenges:**
 - Increased operational complexity and skill requirements
@@ -134,7 +134,7 @@ GCP excels in data analytics, machine learning, and container-native services ac
 - Inconsistent security models and tooling
 - Latency between services on different providers
 
-**Hybrid Cloud** â€” Connecting on-premises infrastructure with cloud resources.
+**Hybrid Cloud** — Connecting on-premises infrastructure with cloud resources.
 
 **Use cases:**
 - Legacy application migration (lift-and-shift, re-platform)
@@ -143,9 +143,9 @@ GCP excels in data analytics, machine learning, and container-native services ac
 - Disaster recovery (on-premises primary, cloud secondary)
 
 **Hybrid management platforms:**
-- **AWS Outposts** â€” AWS infrastructure on-premises
-- **Azure Arc** â€” Manage multi-cloud and on-prem from Azure
-- **Google Anthos** â€” Multi-cloud and on-prem Kubernetes management
+- **AWS Outposts** — AWS infrastructure on-premises
+- **Azure Arc** — Manage multi-cloud and on-prem from Azure
+- **Google Anthos** — Multi-cloud and on-prem Kubernetes management
 
 ### 11.6 Cloud Governance
 
@@ -158,9 +158,9 @@ Cloud governance ensures security, compliance, and cost control across cloud env
 - Use temporary credentials (STS) for automation
 
 **Policy as Code:**
-- **AWS Service Control Policies (SCPs)** â€” Guardrails for accounts in AWS Organizations
-- **Azure Policy** â€” Enforce compliance rules across subscriptions
-- **GCP Organization Policies** â€” Constraints at the organization level
+- **AWS Service Control Policies (SCPs)** — Guardrails for accounts in AWS Organizations
+- **Azure Policy** — Enforce compliance rules across subscriptions
+- **GCP Organization Policies** — Constraints at the organization level
 
 **Compliance Automation:**
 - Automated compliance scanning (AWS Config, Azure Policy, GCP Security Command Center)
@@ -173,22 +173,22 @@ Cloud governance ensures security, compliance, and cost control across cloud env
 FinOps is the practice of managing cloud costs through cultural change, financial accountability, and engineering excellence.
 
 **Key Practices:**
-- **Right-sizing** â€” Match instance types to workload requirements. Use AWS Compute Optimizer, Azure Advisor, GCP Rightsizing Recommendations.
-- **Reserved Instances and Savings Plans** â€” Commit to 1-year or 3-year terms for 30-72% discount over on-demand.
-- **Spot Instances** â€” Use spare compute capacity at 60-90% discount. Suitable for fault-tolerant workloads.
-- **Auto-scaling** â€” Scale resources to match demand. Scale down during low-traffic periods.
-- **Storage Lifecycle Policies** â€” Move data to cheaper storage tiers as it ages (automate with lifecycle rules).
-- **Tagging and Cost Allocation** â€” Tag resources by team, project, environment. Track spending with cost allocation reports.
-- **Budget Alerts** â€” Configure budgets with alert thresholds at 50%, 80%, 90%, 100%.
+- **Right-sizing** — Match instance types to workload requirements. Use AWS Compute Optimizer, Azure Advisor, GCP Rightsizing Recommendations.
+- **Reserved Instances and Savings Plans** — Commit to 1-year or 3-year terms for 30-72% discount over on-demand.
+- **Spot Instances** — Use spare compute capacity at 60-90% discount. Suitable for fault-tolerant workloads.
+- **Auto-scaling** — Scale resources to match demand. Scale down during low-traffic periods.
+- **Storage Lifecycle Policies** — Move data to cheaper storage tiers as it ages (automate with lifecycle rules).
+- **Tagging and Cost Allocation** — Tag resources by team, project, environment. Track spending with cost allocation reports.
+- **Budget Alerts** — Configure budgets with alert thresholds at 50%, 80%, 90%, 100%.
 
 ### 11.8 Auto-Scaling Strategies
 
 Auto-scaling adjusts compute resources dynamically based on demand:
 
-- **Horizontal Scaling** â€” Add/remove instances. Preferred for stateless applications. Near-infinite scaling.
-- **Vertical Scaling** â€” Increase/decrease instance size. Limited by maximum instance size. Requires restart.
-- **Predictive Scaling** â€” ML-based scaling based on historical patterns. Available in AWS Predictive Scaling.
-- **Scheduled Scaling** â€” Scale based on known traffic patterns (scale up at 8 AM, scale down at 8 PM).
+- **Horizontal Scaling** — Add/remove instances. Preferred for stateless applications. Near-infinite scaling.
+- **Vertical Scaling** — Increase/decrease instance size. Limited by maximum instance size. Requires restart.
+- **Predictive Scaling** — ML-based scaling based on historical patterns. Available in AWS Predictive Scaling.
+- **Scheduled Scaling** — Scale based on known traffic patterns (scale up at 8 AM, scale down at 8 PM).
 
 **Auto-scaling configuration considerations:**
 - Cooldown periods between scaling activities
@@ -448,14 +448,14 @@ class AutoScalerSimulator {
       const newCount = Math.min(currentInstances + this.policy.scaleUpBy, maxInstances);
       this.state.currentInstances = newCount;
       this.state.lastScalingAction = now;
-      return `SCALE_UP: ${currentInstances} â†’ ${newCount} (avg: ${avg.toFixed(1)} > ${targetValue})`;
+      return `SCALE_UP: ${currentInstances} ? ${newCount} (avg: ${avg.toFixed(1)} > ${targetValue})`;
     }
 
     if (avg < targetValue * 0.6 && currentInstances > minInstances) {
       const newCount = Math.max(currentInstances - this.policy.scaleDownBy, minInstances);
       this.state.currentInstances = newCount;
       this.state.lastScalingAction = now;
-      return `SCALE_DOWN: ${currentInstances} â†’ ${newCount} (avg: ${avg.toFixed(1)} < ${targetValue})`;
+      return `SCALE_DOWN: ${currentInstances} ? ${newCount} (avg: ${avg.toFixed(1)} < ${targetValue})`;
     }
 
     return null;
@@ -711,10 +711,10 @@ class CloudCostComparator {
   }
 
   private getRecommendation(workload: WorkloadProfile, provider: string, cost: number): string {
-    if (workload.networkEgressGB > 1000) return 'High egress cost risk â€” consider CDN or multi-region';
+    if (workload.networkEgressGB > 1000) return 'High egress cost risk — consider CDN or multi-region';
     if (workload.databaseType === 'managed-sql') return 'Good fit for managed SQL workloads';
     if (workload.storageType === 'object' && workload.storageGB > 10000) return 'Object storage cost-effective at scale';
-    return `$${cost.toFixed(0)}/mo â€” ${cost < 500 ? 'cost-effective' : 'consider reserved instances'}`;
+    return `$${cost.toFixed(0)}/mo — ${cost < 500 ? 'cost-effective' : 'consider reserved instances'}`;
   }
 }
 
@@ -727,6 +727,48 @@ console.log(comparator.generateReport(workload));
 
 ---
 
+
+// cloud platforms
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'cloud platforms', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 Each major cloud provider offers comprehensive compute, storage, networking, and identity services. AWS provides the broadest service catalog. Azure excels in enterprise integration and Microsoft ecosystem. GCP leads in data analytics, ML, and container-native services. Multi-cloud and hybrid cloud strategies address specific business needs but add operational complexity. Cloud governance ensures security, compliance, and cost control. FinOps practices optimize cloud costs through right-sizing, reservation models, spot instances, and budget governance. Auto-scaling ensures cost-efficient capacity management for variable workloads.
@@ -825,7 +867,7 @@ class DisasterRecoveryPlanner {
 3. Set up budget alerts on a cloud provider. Create a tagging strategy that allocates costs by project, environment, and team.
 4. Write a TypeScript Pulumi program that deploys an S3 bucket with versioning, lifecycle rules to transition objects to Glacier after 90 days, and public access blocking. Use the CostAllocator class to estimate monthly costs based on 100GB storage with 10GB daily uploads.
 5. Using the AutoScalerSimulator class from this chapter, configure a policy that: scales up when CPU exceeds 60% (add 1 instance), scales down when CPU drops below 30% (remove 1 instance), has min 3 and max 15 instances, and has a 60-second cooldown. Simulate with a workload pattern that spikes to 90% CPU during business hours (8 AM-6 PM) and drops to 10% overnight.
-6. Extend the `CostEstimator` class to support: monthly cost projections accounting for reserved instance discounts (1-year: 40% off, 3-year: 60% off), spot instance pricing (70% off on-demand), and data transfer costs between providers (AWSâ†’GCP $0.09/GB, GCPâ†’AWS $0.12/GB, Azureâ†’AWS $0.087/GB). Generate a 12-month cost projection for a multi-cloud deployment with 5 EC2-equivalent instances, 2TB storage, and 5TB monthly egress split 60/40 across two providers.
+6. Extend the `CostEstimator` class to support: monthly cost projections accounting for reserved instance discounts (1-year: 40% off, 3-year: 60% off), spot instance pricing (70% off on-demand), and data transfer costs between providers (AWS?GCP $0.09/GB, GCP?AWS $0.12/GB, Azure?AWS $0.087/GB). Generate a 12-month cost projection for a multi-cloud deployment with 5 EC2-equivalent instances, 2TB storage, and 5TB monthly egress split 60/40 across two providers.
 7. Write a `CloudGovernanceEnforcer` class that: defines required tagging policies (team, environment, project, cost-center), scans a list of resources for compliance, generates weekly violation reports with cost impact of untagged resources, and auto-remediates by applying default tags to non-compliant resources (with dry-run mode). Use the `CostAllocator` class for the cost impact calculation.
 
 ### Challenge Problems

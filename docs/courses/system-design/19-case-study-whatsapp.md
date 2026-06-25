@@ -1,4 +1,4 @@
-# Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging
+# Chapter 19: Case Study � WhatsApp and Real-Time Messaging
 > **Previous:** [18 Case Studies Classic](./18-case-studies-classic.md) | **Next:** [20 Case Study Netflix](./20-case-study-netflix.md)
 
 ---
@@ -24,7 +24,7 @@ flowchart LR
 ```
 |--------|---------|
 | **Scope** | WhatsApp architecture: Erlang, custom server, E2E encryption, 2B users |
-| **Key Concepts** | Core topics covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+| **Key Concepts** | Core topics covered in Chapter 19: Case Study � WhatsApp and Real-Time Messaging |
 | **Design Skills** | Real-time messaging, E2E encryption, Erlang/OTP patterns |
 | **Interview Angle** | Frequently tested in system design interviews |
 
@@ -32,7 +32,7 @@ flowchart LR
 
 | Aspect | Details |
 |--------|---------|
-| **Scope** | Core concepts covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+| **Scope** | Core concepts covered in Chapter 19: Case Study � WhatsApp and Real-Time Messaging |
 | **Key Concepts** | Theory, Case Study: WhatsApp Message Delivery Pipeline, Concept Comparison, Quick Reference |
 | **Design Skills** | Concept mastery and practical application |
 | **Interview Angle** | Common system design interview topic |
@@ -60,19 +60,19 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 
 ![WhatsApp Architecture Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/19-whatsapp.png)
 
 ### Requirements Phase
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 WhatsApp processes over 100 billion messages daily across 2 billion+ users. Understanding these requirements is essential before any design work begins.
 
 **Functional Requirements**
@@ -113,37 +113,37 @@ WhatsApp processes over 100 billion messages daily across 2 billion+ users. Unde
 **Message Volume**
 
 - 100B messages/day = 1.16M messages/sec average
-- Peak: 3-5x average during holidays â†’ ~5M messages/sec
+- Peak: 3-5x average during holidays ? ~5M messages/sec
 - Average message size: ~200 bytes (text) + media attachments
-- Text data: 100B Ã— 200 bytes = 20TB/day = 7.3PB/year
+- Text data: 100B � 200 bytes = 20TB/day = 7.3PB/year
 - Media: billions of images/videos per day, ~500MB-1PB/day depending on compression
 
 **Connection Management**
 
 - 2B users, ~30% online concurrently at peak = 600M concurrent connections
 - Each connection: TCP socket (~20KB kernel memory) + app state (~50KB) = ~70KB
-- Total server memory for connections: 600M Ã— 70KB â‰ˆ 42TB
+- Total server memory for connections: 600M � 70KB � 42TB
 - At 100K connections per server: 6,000 servers for connection handling alone
-- FreeBSD kqueue handles 1M+ connections per well-tuned machine â†’ ~600 servers
+- FreeBSD kqueue handles 1M+ connections per well-tuned machine ? ~600 servers
 
 **Storage Per User**
 
 - Average conversation history: ~500MB over lifetime (text + media)
-- 2B users Ã— 500MB = 1EB total storage
+- 2B users � 500MB = 1EB total storage
 - Each user's last 30 days of messages stored on server for multi-device sync
-- Active users (~1.5B): 1.5B Ã— 50MB (30 days text) â‰ˆ 75PB hot storage
+- Active users (~1.5B): 1.5B � 50MB (30 days text) � 75PB hot storage
 - Media stored in CDN/object store, deduplicated per hash
 
 **Bandwidth**
 
-- 1.16M msg/sec Ã— 200 bytes = 232 MB/sec text
+- 1.16M msg/sec � 200 bytes = 232 MB/sec text
 - Media adds 10-50x more bandwidth
 - Total outbound: ~10-50 Gbps per datacenter
 - Multi-datacenter replication: multiply by replication factor
 
 ### High-Level Design Phase
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -170,12 +170,12 @@ WhatsApp replaced ejabberd with a custom C++ server designed for maximum connect
 The custom server architecture:
 
 ```
-Client Device â†” (Persistent TCP/WebSocket) â†” WhatsApp Server (C++, FreeBSD)
-  â”œâ”€â”€ Connection Manager (kqueue event loop, multiplexed sockets)
-  â”œâ”€â”€ Session Manager (user state, presence, routing table)
-  â”œâ”€â”€ Message Router (inbox routing, group fan-out, offline queue)
-  â”œâ”€â”€ Media Handler (upload proxy, thumbnail generation)
-  â””â”€â”€ Storage Layer (MyRocks, custom message store)
+Client Device ? (Persistent TCP/WebSocket) ? WhatsApp Server (C++, FreeBSD)
+  +-- Connection Manager (kqueue event loop, multiplexed sockets)
+  +-- Session Manager (user state, presence, routing table)
+  +-- Message Router (inbox routing, group fan-out, offline queue)
+  +-- Media Handler (upload proxy, thumbnail generation)
+  +-- Storage Layer (MyRocks, custom message store)
 ```
 
 **Phase 3: Facebook Infrastructure (Post-2014)**
@@ -271,9 +271,9 @@ CREATE TABLE messages (
 
 The partition key is `user_id`, ensuring all messages for a user are on the same physical shard. The compound primary key enables efficient range scans: `SELECT * FROM messages WHERE user_id = ? AND conversation_id = ? ORDER BY message_id DESC LIMIT 50`.
 
-RocksDB's LSM-tree architecture provides excellent write throughput â€” critical for the spikey write patterns of messaging. Writes are sequential (append to memtable), and the sorted nature of the primary key means reads within a conversation are fast range scans on the same SST files.
+RocksDB's LSM-tree architecture provides excellent write throughput � critical for the spikey write patterns of messaging. Writes are sequential (append to memtable), and the sorted nature of the primary key means reads within a conversation are fast range scans on the same SST files.
 
-For disappearing messages, the `expires_at` column enables a background compaction process. RocksDB's compaction filters can drop expired messages during normal compaction cycles, making deletion essentially free â€” the expired data is simply not written to the next SST level.
+For disappearing messages, the `expires_at` column enables a background compaction process. RocksDB's compaction filters can drop expired messages during normal compaction cycles, making deletion essentially free � the expired data is simply not written to the next SST level.
 
 **Connection Management at Scale**
 
@@ -356,7 +356,7 @@ Message IDs must be globally unique, monotonically increasing, and sortable by t
 | 10 | Server ID | Data center + server within data center |
 | 12 | Sequence | Per-server monotonic counter |
 
-The 41-bit timestamp covers ~69 years. The 10-bit server ID supports 1024 servers. The 12-bit sequence allows 4096 messages per millisecond per server â€” sufficient for peak rates.
+The 41-bit timestamp covers ~69 years. The 10-bit server ID supports 1024 servers. The 12-bit sequence allows 4096 messages per millisecond per server � sufficient for peak rates.
 
 **End-to-End Encryption**
 
@@ -375,12 +375,12 @@ The server is a "directory service" for pre-keys. It stores users' identity keys
 **Double Ratchet** (Per-Message Keys):
 - After X3DH establishes the root key `RK`, both sides initialize a sending ratchet and a receiving ratchet
 - Each message derives a new message key using a KDF chain:
-  - Root Key (RK) â†’ Chain Key (CK) â†’ Message Key (MK)
+  - Root Key (RK) ? Chain Key (CK) ? Message Key (MK)
 - The Diffie-Hellman ratchet provides forward secrecy: if a chain key is compromised, past message keys cannot be recovered
 - The symmetric ratchet provides "break-in recovery": after compromise, a DH exchange with new ephemeral keys re-establishes security
 - Each message includes the sender's current ephemeral public key and a message number
 
-For a conversation with 100 messages per day, the double ratchet produces 200 new keys per day (one per message in each direction). The storage per conversation is minimal â€” just the current state of each ratchet chain.
+For a conversation with 100 messages per day, the double ratchet produces 200 new keys per day (one per message in each direction). The storage per conversation is minimal � just the current state of each ratchet chain.
 
 **Secure Group Messaging** (Sender Keys):
 - For groups, WhatsApp uses the Sender Key protocol (a push from the Signal Protocol)
@@ -422,7 +422,7 @@ At 100B messages/day, spam detection must be automated, real-time, and privacy-p
 - **Hardware attestation**: Android SafetyNet and iOS DeviceCheck attestations during registration prevent automated bulk account creation.
 - **IP-based clustering**: Multiple registrations from the same IP range are correlated and flagged for manual review.
 
-The detection pipeline computes a per-user abuse score every 5 minutes using a gradient-boosted model trained on labeled abuse patterns. Features include: messages per hour, unique recipients per day, groups joined per hour, and account age in hours. Users above threshold are "shadow banned" â€” their messages are delivered normally, but they are not notified of the restriction. This prevents abuse pattern adaptation.
+The detection pipeline computes a per-user abuse score every 5 minutes using a gradient-boosted model trained on labeled abuse patterns. Features include: messages per hour, unique recipients per day, groups joined per hour, and account age in hours. Users above threshold are "shadow banned" � their messages are delivered normally, but they are not notified of the restriction. This prevents abuse pattern adaptation.
 
 **Two-Phase Registration**
 
@@ -440,7 +440,7 @@ Media messages follow a different flow than text:
 1. Alice selects an image and presses send
 2. The WhatsApp client uploads the image to blob storage (CDN) via a direct HTTPS upload
 3. The upload generates an encrypted blob with an expiring URL (valid for 1 hour)
-4. The server stores a mapping: `(media_hash â†’ encrypted_blob_url, thumbnail_url)`
+4. The server stores a mapping: `(media_hash ? encrypted_blob_url, thumbnail_url)`
 5. The message sent to Bob contains only the media hash, encryption key (from Double Ratchet), and thumbnail
 6. Bob's client receives the message, resolves the media hash to the CDN URL, and downloads the encrypted blob
 
@@ -459,7 +459,7 @@ Video compression:
 
 Presence information is a real-time pub-sub problem:
 
-- Each user's presence state is maintained in Redis: `presence:{user_id} â†’ {status, last_seen, device_list}`
+- Each user's presence state is maintained in Redis: `presence:{user_id} ? {status, last_seen, device_list}`
 - When a user connects, their online status is published to a Redis pub-sub channel
 - Subscribers (contacts who have the user in their address book) receive the presence update via their persistent connection
 - For large contact lists (up to 1000 contacts), presence is aggregated: the server batches presence updates and sends a single batch message
@@ -467,7 +467,7 @@ Presence information is a real-time pub-sub problem:
 Typing indicators:
 - Client sends a "typing" event on every keystroke (but throttled to 1 per 2 seconds)
 - Server routes to the conversation partner's connection
-- No persistence â€” purely in-memory
+- No persistence � purely in-memory
 - Automatically expires after 5 seconds of inactivity
 
 Read receipts:
@@ -475,7 +475,7 @@ Read receipts:
 - Status states: SENT, DELIVERED, READ
 - DELIVERED is set when the message reaches the recipient's device
 - READ is set when the recipient opens the conversation
-- Read receipts for groups: batched â€” one update per N receipts
+- Read receipts for groups: batched � one update per N receipts
 
 **Offline Messages**
 
@@ -503,7 +503,7 @@ Multi-device support (added 2021) eliminated the requirement for the phone to st
 - The primary device maintains the account identity
 - Secondary devices are linked via QR code scan (encrypted channel)
 - Each device maintains its own ratchet state with each conversation partner
-- The server maintains a device list per user: `devices:{user_id} â†’ [{device_id, identity_key, signed_pre_key, ...}]`
+- The server maintains a device list per user: `devices:{user_id} ? [{device_id, identity_key, signed_pre_key, ...}]`
 
 Message delivery with multi-device:
 - When Alice sends a message from Device 1, the server delivers it to Bob's Device 1, Device 2, etc.
@@ -529,39 +529,157 @@ Design the message delivery path for a 1:1 message from Alice (India) to Bob (Br
 
 ```
 Alice's Phone (Mumbai, India)
-  â†“ (TCP connection, encrypted with Double Ratchet)
-  â†“
+  ? (TCP connection, encrypted with Double Ratchet)
+  ?
 Mumbai Connection Server (CS-IN-42)
-  â†“ (internal RPC)
-  â†“
+  ? (internal RPC)
+  ?
 Message Router (determines Bob is on CS-BR-17)
-  â†“ (internal RPC, data center hop via Facebook backbone)
-  â†“
+  ? (internal RPC, data center hop via Facebook backbone)
+  ?
 Sao Paulo Connection Server (CS-BR-17)
-  â†“ (TCP push, encrypted)
-  â†“
+  ? (TCP push, encrypted)
+  ?
 Bob's Phone (Sao Paulo, Brazil)
 ```
 
 ### Deep Dive
 
-The message router maintains a distributed hash table mapping `user_id â†’ connection_server`. This is stored in a consistent hash ring backed by ZooKeeper. When Alice sends a message:
+The message router maintains a distributed hash table mapping `user_id ? connection_server`. This is stored in a consistent hash ring backed by ZooKeeper. When Alice sends a message:
 
-1. CS-IN-42 receives the encrypted payload. It does not decrypt â€” the server is zero-knowledge for message content.
+1. CS-IN-42 receives the encrypted payload. It does not decrypt � the server is zero-knowledge for message content.
 2. CS-IN-42 looks up Bob's connection server. If Bob is online in the same server, routing is local. If on a different server (as in our cross-continent case), it routes via the internal RPC network.
 3. The RPC uses a custom binary protocol over TCP (not HTTP) to minimize overhead.
 4. The datacenter-to-datacenter link runs over Facebook's private backbone (not the public internet), ensuring predictable latency.
 5. CS-BR-17 receives the message, looks up Bob's current connection, and pushes the encrypted payload directly to Bob's TCP socket.
 
 Total latency budget:
-- Alice â†’ Mumbai CS: 5ms (local mobile network)
-- Mumbai CS â†’ Router: 1ms (in-datacenter)
+- Alice ? Mumbai CS: 5ms (local mobile network)
+- Mumbai CS ? Router: 1ms (in-datacenter)
 - Router lookup: <1ms
-- Mumbai â†’ Sao Paulo RPC: 80ms (transatlantic backbone)
-- Sao Paulo CS â†’ Bob: 5ms (local mobile network)
-- Total: ~92ms â€” under the 100ms target
+- Mumbai ? Sao Paulo RPC: 80ms (transatlantic backbone)
+- Sao Paulo CS ? Bob: 5ms (local mobile network)
+- Total: ~92ms � under the 100ms target
 
-### Summary
+#
+### Implementation: WhatsApp Architecture Case Study
+
+```typescript
+class WhatsAppSimulator {
+  private users = new Map<string, { status: "online" | "offline"; lastSeen: number }>();
+  private messages = new Map<string, { id: string; from: string; to: string; text: string; ts: number; delivered: boolean; read: boolean }[]>();
+  private groups = new Map<string, { name: string; members: Set<string>; messages: any[] }>();
+  connectUser(id: string): void { this.users.set(id, { status: "online", lastSeen: Date.now() }); }
+  disconnectUser(id: string): void { const u = this.users.get(id); if (u) { u.status = "offline"; u.lastSeen = Date.now(); } }
+  sendMessage(from: string, to: string, text: string): { id: string; ts: number } {
+    const key = [from, to].sort().join(":"); if (!this.messages.has(key)) this.messages.set(key, []);
+    const msg = { id: `msg-${Date.now()}`, from, to, text, ts: Date.now(), delivered: false, read: false };
+    this.messages.get(key)!.push(msg); return { id: msg.id, ts: msg.ts }; }
+  getConversation(user1: string, user2: string, limit = 50): any[] {
+    const key = [user1, user2].sort().join(":"); return (this.messages.get(key) || []).slice(-limit); }
+  markDelivered(msgId: string): void { for (const msgs of this.messages.values()) { const m = msgs.find(m => m.id === msgId); if (m) { m.delivered = true; break; } } }
+  markRead(msgId: string): void { for (const msgs of this.messages.values()) { const m = msgs.find(m => m.id === msgId); if (m) { m.read = true; break; } } }
+  createGroup(name: string, creator: string): string { const id = `group-${Date.now()}`; this.groups.set(id, { name, members: new Set([creator]), messages: [] }); return id; }
+  addToGroup(groupId: string, userId: string): void { this.groups.get(groupId)?.members.add(userId); }
+  sendGroupMessage(groupId: string, from: string, text: string): void { const g = this.groups.get(groupId); if (g && g.members.has(from)) g.messages.push({ from, text, ts: Date.now() }); }
+}
+class EndToEndEncryption { generateKeys(): { pub: string; priv: string } { return { pub: `pk-${Math.random().toString(36).slice(2)}`, priv: `sk-${Math.random().toString(36).slice(2)}` }; } }
+class MediaSharing { estimateUploadTime(fileSizeMB: number, bandwidthMbps: number): number { return (fileSizeMB * 8) / bandwidthMbps; }
+  compressImage(width: number, height: number, quality: number): { width: number; height: number; sizeReduction: number } { const newW = Math.round(width * quality); const newH = Math.round(height * quality); return { width: newW, height: newH, sizeReduction: 1 - quality }; } }
+```
+
+// case study whatsapp
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'case study whatsapp', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// case study whatsapp - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'case study whatsapp' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
+## Summary
 
 - Persistent TCP connections with FreeBSD kqueue handle 1M+ concurrent connections per server
 - Custom binary protocol eliminates XML overhead of the original XMPP design
@@ -579,8 +697,8 @@ Total latency budget:
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory | Core topic covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging | Defined by specific measurable attributes |
-| Case Study: WhatsApp Message Delivery Pipeline | Core topic covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging | Defined by specific measurable attributes |
+| Theory | Core topic covered in Chapter 19: Case Study � WhatsApp and Real-Time Messaging | Defined by specific measurable attributes |
+| Case Study: WhatsApp Message Delivery Pipeline | Core topic covered in Chapter 19: Case Study � WhatsApp and Real-Time Messaging | Defined by specific measurable attributes |
 
 ---
 
@@ -589,8 +707,8 @@ Total latency budget:
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Fundamental concept for Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
-| Case Study: WhatsApp Message Delivery Pipeline | Fundamental concept for Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+| Theory | Fundamental concept for Chapter 19: Case Study � WhatsApp and Real-Time Messaging |
+| Case Study: WhatsApp Message Delivery Pipeline | Fundamental concept for Chapter 19: Case Study � WhatsApp and Real-Time Messaging |
 
 ---
 
@@ -635,8 +753,8 @@ Total latency budget:
 
 | Concept | Definition | Key Insight |
 |---------|-----------|-------------|
-| Theory | Core topic in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging | Fundamental to system design |
-| Case Study: WhatsApp Message Delivery Pipeline | Core topic in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging | Fundamental to system design |
+| Theory | Core topic in Chapter 19: Case Study � WhatsApp and Real-Time Messaging | Fundamental to system design |
+| Case Study: WhatsApp Message Delivery Pipeline | Core topic in Chapter 19: Case Study � WhatsApp and Real-Time Messaging | Fundamental to system design |
 
 ---
 
@@ -645,7 +763,7 @@ Total latency budget:
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Essential concept for Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+| Theory | Essential concept for Chapter 19: Case Study � WhatsApp and Real-Time Messaging |
 
 ---
 
@@ -777,7 +895,7 @@ class PresenceTracker {
 - Persistent TCP connections with WebSocket fallback and long-polling as a last resort ensure connectivity across all network conditions
 - Multi-device support uses independent Ed25519 key pairs per device, eliminating phone-as-hub dependency
 - Offline message storage is per-user with a 30-day retention window and batched delivery on reconnection
-- Media upload is client-to-CDN with encrypted blobs and expiring URLs â€” messages only carry hashes and decryption keys
+- Media upload is client-to-CDN with encrypted blobs and expiring URLs � messages only carry hashes and decryption keys
 - Presence and typing use Redis pub-sub with aggregation for large contact lists
 - Message IDs use a Snowflake-style 64-bit scheme for global uniqueness and temporal ordering
 - The system achieves <100ms median delivery latency across continents using Facebook's private backbone
@@ -794,7 +912,7 @@ class PresenceTracker {
 
 3. How does the Double Ratchet algorithm provide both forward secrecy and break-in recovery? Describe the role of the Diffie-Hellman ratchet vs the symmetric ratchet.
 
-4. Describe the connection fallback chain: TCP â†’ WebSocket â†’ Long-Polling. Under what conditions would each fallback trigger?
+4. Describe the connection fallback chain: TCP ? WebSocket ? Long-Polling. Under what conditions would each fallback trigger?
 
 5. How does multi-device support work without the primary phone acting as a relay? What key material does each device hold?
 
@@ -817,11 +935,11 @@ class PresenceTracker {
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Disappearing Messages with Cryptographic Enforcement**
 
-WhatsApp supports disappearing messages (messages that auto-delete after 24 hours to 90 days). Currently, deletion relies on client cooperation â€” the server marks them as deleted but a malicious client could save messages before deletion. Design a system where the server can cryptographically enforce disappearance:
+WhatsApp supports disappearing messages (messages that auto-delete after 24 hours to 90 days). Currently, deletion relies on client cooperation � the server marks them as deleted but a malicious client could save messages before deletion. Design a system where the server can cryptographically enforce disappearance:
 
 1. The server issues an ephemeral decryption key that expires after the time limit
 2. Messages are encrypted with a time-based key derived from the current epoch window
-3. Design the key hierarchy: long-term identity keys â†’ session keys â†’ time-window keys â†’ message keys
+3. Design the key hierarchy: long-term identity keys ? session keys ? time-window keys ? message keys
 4. Handle the case where the recipient opens the message 1 minute before the window expires
 5. Ensure backward compatibility with existing client software
 6. Consider the case where the server is compromised: can an attacker recover expired messages from stored ciphertexts?

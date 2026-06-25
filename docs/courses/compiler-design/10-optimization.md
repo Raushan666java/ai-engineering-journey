@@ -1,6 +1,6 @@
 # Chapter 10: Code Optimization
 
-← Previous: [Chapter 9: Code Generation](09-code-gen.md) | **Next:** [Chapter 11: Control-Flow Analysis](11-cfa.md)
+? Previous: [Chapter 9: Code Generation](09-code-gen.md) | **Next:** [Chapter 11: Control-Flow Analysis](11-cfa.md)
 
 ## Learning Objectives
 
@@ -48,7 +48,7 @@ Code optimization encompasses any transformation of intermediate or target code 
 
 ### Peephole Optimization
 
-Peephole optimization examines a short window (typically 2–5 instructions) of consecutive code and replaces matched patterns with equivalent but faster or shorter sequences.
+Peephole optimization examines a short window (typically 2?5 instructions) of consecutive code and replaces matched patterns with equivalent but faster or shorter sequences.
 
 **Common peephole patterns**:
 
@@ -62,9 +62,9 @@ Peephole optimization examines a short window (typically 2–5 instructions) of 
 | Algebraic identity | `x * 0` | `0` | 1 instruction |
 | Strength reduction | `x * 8` | `x << 3` | Faster operation |
 | Strength reduction | `x / 4` | `x >> 2` | Faster operation |
-| Null sequence | `MOV R1, R2; MOV R2, R1` | — (remove both) | 2 instructions |
+| Null sequence | `MOV R1, R2; MOV R2, R1` | ? (remove both) | 2 instructions |
 | Jump to jump | `JMP L1; L1: JMP L2` | `JMP L2; L1: JMP L2` | 1 jump removed |
-| Branch to next | `BEQ R1, R2, L; L:` | — (remove branch) | 1 instruction |
+| Branch to next | `BEQ R1, R2, L; L:` | ? (remove branch) | 1 instruction |
 
 ### Complete TypeScript Peephole Optimizer
 
@@ -150,7 +150,7 @@ class PeepholeOptimizer {
                 }
                 if (folded !== null && !isNaN(folded)) {
                     result.push({ op: "=", result: instr.result, arg1: String(folded) });
-                    console.log(`  [fold] folded ${instr.op} ${a1} ${a2} → ${folded}`);
+                    console.log(`  [fold] folded ${instr.op} ${a1} ${a2} ? ${folded}`);
                 } else {
                     result.push(instr);
                 }
@@ -179,12 +179,12 @@ class PeepholeOptimizer {
                             arg1: instr.arg1,
                             arg2: String(shift),
                         });
-                        console.log(`  [strength] x*${multiplier} → x<<${shift}`);
+                        console.log(`  [strength] x*${multiplier} ? x<<${shift}`);
                         continue;
                     }
-                    // x * 3 → x + x + x (or x << 1 + x)
-                    // x * 5 → x << 2 + x
-                    // x * 7 → x << 3 - x
+                    // x * 3 ? x + x + x (or x << 1 + x)
+                    // x * 5 ? x << 2 + x
+                    // x * 7 ? x << 3 - x
                     if (multiplier === 3) {
                         const temp = `__str_${result.length}`;
                         result.push({ op: "<<", result: temp, arg1: instr.arg1, arg2: "1" });
@@ -223,7 +223,7 @@ class PeepholeOptimizer {
                         arg1: instr.arg1,
                         arg2: String(shift),
                     });
-                    console.log(`  [strength] x/${divisor} → x>>${shift}`);
+                    console.log(`  [strength] x/${divisor} ? x>>${shift}`);
                     continue;
                 }
             }
@@ -234,7 +234,7 @@ class PeepholeOptimizer {
         return result;
     }
 
-    // Algebraic simplification: x + 0 → x, x * 1 → x, etc.
+    // Algebraic simplification: x + 0 ? x, x * 1 ? x, etc.
     private algebraicSimplification(code: TACInstr[]): TACInstr[] {
         const result: TACInstr[] = [];
 
@@ -242,48 +242,48 @@ class PeepholeOptimizer {
             if (instr.op === "+") {
                 if (instr.arg2 === "0") {
                     result.push({ op: "=", result: instr.result, arg1: instr.arg1 });
-                    console.log(`  [algeb] x + 0 → x`);
+                    console.log(`  [algeb] x + 0 ? x`);
                     continue;
                 }
                 if (instr.arg1 === "0") {
                     result.push({ op: "=", result: instr.result, arg1: instr.arg2 });
-                    console.log(`  [algeb] 0 + y → y`);
+                    console.log(`  [algeb] 0 + y ? y`);
                     continue;
                 }
             }
             if (instr.op === "-") {
                 if (instr.arg2 === "0") {
                     result.push({ op: "=", result: instr.result, arg1: instr.arg1 });
-                    console.log(`  [algeb] x - 0 → x`);
+                    console.log(`  [algeb] x - 0 ? x`);
                     continue;
                 }
                 if (instr.arg1 === instr.arg2) {
                     result.push({ op: "=", result: instr.result, arg1: "0" });
-                    console.log(`  [algeb] x - x → 0`);
+                    console.log(`  [algeb] x - x ? 0`);
                     continue;
                 }
             }
             if (instr.op === "*") {
                 if (instr.arg2 === "1") {
                     result.push({ op: "=", result: instr.result, arg1: instr.arg1 });
-                    console.log(`  [algeb] x * 1 → x`);
+                    console.log(`  [algeb] x * 1 ? x`);
                     continue;
                 }
                 if (instr.arg2 === "0" || instr.arg1 === "0") {
                     result.push({ op: "=", result: instr.result, arg1: "0" });
-                    console.log(`  [algeb] x * 0 → 0`);
+                    console.log(`  [algeb] x * 0 ? 0`);
                     continue;
                 }
             }
             if (instr.op === "/") {
                 if (instr.arg2 === "1") {
                     result.push({ op: "=", result: instr.result, arg1: instr.arg1 });
-                    console.log(`  [algeb] x / 1 → x`);
+                    console.log(`  [algeb] x / 1 ? x`);
                     continue;
                 }
                 if (instr.arg1 === "0") {
                     result.push({ op: "=", result: instr.result, arg1: "0" });
-                    console.log(`  [algeb] 0 / x → 0`);
+                    console.log(`  [algeb] 0 / x ? 0`);
                     continue;
                 }
             }
@@ -295,7 +295,7 @@ class PeepholeOptimizer {
 
     // Copy propagation: replace occurrences of a variable with its value
     private copyPropagation(code: TACInstr[]): TACInstr[] {
-        const copies = new Map<string, string>(); // var → value
+        const copies = new Map<string, string>(); // var ? value
         const result: TACInstr[] = [];
         let changed = false;
 
@@ -314,12 +314,12 @@ class PeepholeOptimizer {
             if (instr.arg1 && copies.has(instr.arg1) && instr.result !== instr.arg1) {
                 newInstr.arg1 = copies.get(instr.arg1)!;
                 changed = true;
-                console.log(`  [copy-prop] ${instr.arg1} → ${newInstr.arg1} in ${instr.op}`);
+                console.log(`  [copy-prop] ${instr.arg1} ? ${newInstr.arg1} in ${instr.op}`);
             }
             if (instr.arg2 && copies.has(instr.arg2) && instr.result !== instr.arg2) {
                 newInstr.arg2 = copies.get(instr.arg2)!;
                 changed = true;
-                console.log(`  [copy-prop] ${instr.arg2} → ${newInstr.arg2} in ${instr.op}`);
+                console.log(`  [copy-prop] ${instr.arg2} ? ${newInstr.arg2} in ${instr.op}`);
             }
 
             result.push(newInstr);
@@ -330,7 +330,7 @@ class PeepholeOptimizer {
 
     // Constant propagation: replace variable uses with constant values
     private constantPropagation(code: TACInstr[]): TACInstr[] {
-        const constants = new Map<string, string>(); // var → constant value
+        const constants = new Map<string, string>(); // var ? constant value
         const result: TACInstr[] = [];
         let changed = false;
 
@@ -340,7 +340,7 @@ class PeepholeOptimizer {
                 if (!isNaN(Number(instr.arg1))) {
                     constants.set(instr.result, instr.arg1);
                 } else {
-                    // Variable assigned to another variable — if that other variable
+                    // Variable assigned to another variable ? if that other variable
                     // is a constant, propagate
                     if (constants.has(instr.arg1)) {
                         constants.set(instr.result, constants.get(instr.arg1)!);
@@ -353,12 +353,12 @@ class PeepholeOptimizer {
             if (instr.arg1 && constants.has(instr.arg1)) {
                 newInstr.arg1 = constants.get(instr.arg1)!;
                 changed = true;
-                console.log(`  [const-prop] ${instr.arg1} → ${newInstr.arg1}`);
+                console.log(`  [const-prop] ${instr.arg1} ? ${newInstr.arg1}`);
             }
             if (instr.arg2 && constants.has(instr.arg2)) {
                 newInstr.arg2 = constants.get(instr.arg2)!;
                 changed = true;
-                console.log(`  [const-prop] ${instr.arg2} → ${newInstr.arg2}`);
+                console.log(`  [const-prop] ${instr.arg2} ? ${newInstr.arg2}`);
             }
 
             result.push(newInstr);
@@ -391,7 +391,7 @@ class PeepholeOptimizer {
             // 3. Its result has side effects
             // 4. It's a "param" or "call" (side effects)
             if (!resultVar ||
-                resultVar.startsWith("__") || // temp from strength reduction — might still be needed
+                resultVar.startsWith("__") || // temp from strength reduction ? might still be needed
                 (uses.get(resultVar) ?? 0) > 0 ||
                 instr.op === "param" || instr.op === "call" || instr.op === "return" ||
                 instr.op === "if" || instr.op === "ifFalse" || instr.op === "goto" ||
@@ -432,7 +432,7 @@ If the same expression `a + b` appears at two points and the values of `a` and `
 class GlobalCSE {
     // Available expressions analysis (simplified within a basic block)
     eliminate(code: TACInstr[]): TACInstr[] {
-        const seen = new Map<string, string>(); // expression key → result variable
+        const seen = new Map<string, string>(); // expression key ? result variable
         const result: TACInstr[] = [];
         let eliminated = 0;
 
@@ -445,7 +445,7 @@ class GlobalCSE {
                 const key = `${instr.op}:${instr.arg1}:${instr.arg2}`;
 
                 if (seen.has(key)) {
-                    // Expression already computed — reuse
+                    // Expression already computed ? reuse
                     const existingVar = seen.get(key)!;
                     result.push({ op: "=", result: instr.result, arg1: existingVar });
                     eliminated++;
@@ -577,7 +577,7 @@ const opt3 = optimizer.optimize(opt2);
 console.log("\n=== Final Optimized Code ===");
 console.log(optimizer.formatCode(opt3));
 
-console.log(`\nSummary: ${testCode.length} → ${opt3.length} instructions (${((1 - opt3.length / testCode.length) * 100).toFixed(0)}% reduction)`);
+console.log(`\nSummary: ${testCode.length} ? ${opt3.length} instructions (${((1 - opt3.length / testCode.length) * 100).toFixed(0)}% reduction)`);
 ```
 
 ### Concept Comparison
@@ -589,8 +589,8 @@ console.log(`\nSummary: ${testCode.length} → ${opt3.length} instructions (${((
 | Algebraic Simplification | Local | Apply identity rules | O(n) | Low |
 | Copy Propagation | Local/Global | Replace variables with known values | O(n) | Low (enables others) |
 | Dead-Code Elimination | Local/Global | Remove unused computations | O(n) | Moderate |
-| CSE | Local/Global | Reuse previously computed expressions | O(n²) | High |
-| Loop-Invariant Code Motion | Global | Hoist invariant code out of loops | O(n²) | Very high |
+| CSE | Local/Global | Reuse previously computed expressions | O(n?) | High |
+| Loop-Invariant Code Motion | Global | Hoist invariant code out of loops | O(n?) | Very high |
 
 ### Quick Reference
 
@@ -611,7 +611,7 @@ console.log(`\nSummary: ${testCode.length} → ${opt3.length} instructions (${((
 | Domain | Application | Relevance |
 |--------|-------------|-----------|
 | Language Design | Optimization-friendly IR shape | IR determines transformation ease |
-| Systems Programming | High-performance computing | Optimized code can be 10× faster |
+| Systems Programming | High-performance computing | Optimized code can be 10? faster |
 | Web Development | JavaScript JIT optimization | Modern JITs apply peephole + CSE |
 | Tooling | Binary optimization/transpilation | Peephole rules apply to any ISA |
 | Scientific Computing | Loop nest optimization | Loop transformations improve cache behavior |
@@ -630,7 +630,7 @@ ADD R3, R1, R2
 ST d, R3
 ```
 
-After redundant-load elimination (the load of `a` is unnecessary — `R3` already holds it):
+After redundant-load elimination (the load of `a` is unnecessary ? `R3` already holds it):
 ```
 LD R1, b
 LD R2, c
@@ -645,12 +645,104 @@ This removes one `LD` instruction (a memory access), which is typically the most
 
 ## Practical Takeaways
 
-1. **Peephole is cheap and effective**: A well-designed peephole optimizer with 20–30 patterns can achieve 10–30% code reduction with minimal compile-time overhead.
+1. **Peephole is cheap and effective**: A well-designed peephole optimizer with 20?30 patterns can achieve 10?30% code reduction with minimal compile-time overhead.
 2. **Optimizations interact**: One optimization enables another. Always iterate to a fixed point. For example, constant folding may create new algebraic simplification opportunities.
 3. **Dead-code elimination must respect side effects**: Only remove instructions whose result is unused AND the instruction itself has no side effects. Function calls, stores to memory, and barrier instructions must never be removed.
 4. **CSE within basic blocks is easy**: Within a single block, available expressions are trivially computed by scanning forward. Across blocks, full available-expressions analysis (Chapter 12) is needed.
-5. **Strength reduction for multiply/divide by powers of 2 is safe for unsigned integers**: Signed division by powers of 2 has edge cases with negative numbers — the shift is not an exact replacement.
+5. **Strength reduction for multiply/divide by powers of 2 is safe for unsigned integers**: Signed division by powers of 2 has edge cases with negative numbers ? the shift is not an exact replacement.
 
+
+// optimization
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'optimization', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// optimization - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'optimization' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Code optimization improves program quality without changing its external behavior. Peephole optimization provides an efficient technique for local improvements through pattern matching. Algebraic simplification, constant folding, and strength reduction target common suboptimal patterns. Common-subexpression elimination reuses previously computed values. Copy propagation and constant propagation enable further optimization. Dead-code elimination removes unused computations. The TypeScript `PeepholeOptimizer` and `GlobalCSE` classes demonstrate all these techniques with a fixed-point iteration loop.

@@ -1,6 +1,6 @@
 # Chapter 1: Introduction to Big Data
 
-> **Previous:** None (First Chapter) | **Next:** [Chapter 2: Hadoop — HDFS, MapReduce & YARN](./02-hadoop.md)
+> **Previous:** None (First Chapter) | **Next:** [Chapter 2: Hadoop ? HDFS, MapReduce & YARN](./02-hadoop.md)
 
 ## Learning Objectives
 
@@ -40,7 +40,7 @@ flowchart LR
 
 Big data is defined by three dimensions that break traditional tools:
 
-**Volume** — The quantity of data. A single dataset can be terabytes or petabytes. At this scale, moving data to the compute engine is impossible; compute must move to the data.
+**Volume** ? The quantity of data. A single dataset can be terabytes or petabytes. At this scale, moving data to the compute engine is impossible; compute must move to the data.
 
 ```python
 # Simulating volume: 1 billion rows
@@ -52,7 +52,7 @@ estimated_time_spark = rows / 10_000_000  # ~100 seconds
 print(f"DB: {estimated_time_db:.0f}s, Spark: {estimated_time_spark:.0f}s")
 ```
 
-**Velocity** — The speed at which data arrives. IoT sensors emit millions of events per second. Batch processing is too slow; stream processing is required.
+**Velocity** ? The speed at which data arrives. IoT sensors emit millions of events per second. Batch processing is too slow; stream processing is required.
 
 ```python
 # 10,000 IoT devices sending 1 reading/second
@@ -61,11 +61,11 @@ events_per_day = events_per_second * 86400
 print(f"{events_per_second} events/sec, {events_per_day:,} events/day")
 ```
 
-**Variety** — Data arrives in multiple formats: structured (CSV, Parquet), semi-structured (JSON, XML), and unstructured (images, text, video).
+**Variety** ? Data arrives in multiple formats: structured (CSV, Parquet), semi-structured (JSON, XML), and unstructured (images, text, video).
 
 ![The 3 V's of Big Data](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/big-data/ch01-three-vs.png)
 
-> **One-Sentence Takeaway:** Big data breaks traditional tools across three dimensions — size, speed, and variety — demanding distributed, schema-flexible approaches.
+> **One-Sentence Takeaway:** Big data breaks traditional tools across three dimensions ? size, speed, and variety ? demanding distributed, schema-flexible approaches.
 
 ## 1.2 The Scale Problem
 
@@ -116,7 +116,7 @@ print(f"Expected failures/day: {expected_failures_per_day:.1f}")
 
 Distributed storage systems face the CAP theorem trade-off. HDFS chooses consistency (strong, via namenode). Cassandra chooses availability (eventual consistency).
 
-> **One-Sentence Takeaway:** Distributed systems must navigate the CAP theorem — choosing between consistency, availability, and partition tolerance — and every big data framework makes this trade-off differently.
+> **One-Sentence Takeaway:** Distributed systems must navigate the CAP theorem ? choosing between consistency, availability, and partition tolerance ? and every big data framework makes this trade-off differently.
 
 ## 1.4 The Hadoop Ecosystem
 
@@ -131,10 +131,10 @@ At its peak, Hadoop was the center of the big data universe. While cloud-native 
 | **HBase** | Column-family NoSQL on HDFS | Bigtable, DynamoDB |
 | **Kafka** | Distributed streaming | (still Kafka or Pulsar) |
 | **Oozie** | Workflow scheduler | Airflow, Dagster |
-| **Sqoop** | RDBMS ↔ Hadoop data transfer | (replaced by Spark JDBC) |
+| **Sqoop** | RDBMS ? Hadoop data transfer | (replaced by Spark JDBC) |
 | **Flume** | Log ingestion | Filebeat, Fluentd |
 
-> **Pro Tip:** Don't learn Hadoop tools in isolation. Learn the concepts (distributed FS, resource management, SQL-on-data) — cloud-native services like S3, EMR, and Athena implement the same ideas without the operational overhead.
+> **Pro Tip:** Don't learn Hadoop tools in isolation. Learn the concepts (distributed FS, resource management, SQL-on-data) ? cloud-native services like S3, EMR, and Athena implement the same ideas without the operational overhead.
 
 > **One-Sentence Takeaway:** The Hadoop ecosystem introduced every major concept in modern big data processing, even if cloud-native tools have replaced the original implementations.
 
@@ -263,11 +263,11 @@ result = spark.sql("""
 """)
 ```
 
-Parquet is the recommended default for analytical workloads. It stores columnar data with embedded schema and predicate pushdown — Spark reads only the columns and row groups needed.
+Parquet is the recommended default for analytical workloads. It stores columnar data with embedded schema and predicate pushdown ? Spark reads only the columns and row groups needed.
 
-> **Remember:** Parquet is not a database — it's a file format. You still need a query engine (Spark, Presto, DuckDB) to read it. But choosing Parquet over CSV is the single easiest performance win in big data.
+> **Remember:** Parquet is not a database ? it's a file format. You still need a query engine (Spark, Presto, DuckDB) to read it. But choosing Parquet over CSV is the single easiest performance win in big data.
 
-> **One-Sentence Takeaway:** Parquet is the default file format for big data analytics — always prefer it over CSV/JSON for production workloads.
+> **One-Sentence Takeaway:** Parquet is the default file format for big data analytics ? always prefer it over CSV/JSON for production workloads.
 
 ## Concept Comparison Table
 
@@ -444,7 +444,7 @@ class BigDataAnalyzer {
 
   static estimateCost(volumeTB: number, computeHours: number): { hdfs: number; s3: number; spark: number } {
     const hdfsStorage = volumeTB * 3 * 10; // 3x replication, $10/TB/month
-    const s3Storage = volumeTB * 23; // $0.023/GB ≈ $23/TB/month
+    const s3Storage = volumeTB * 23; // $0.023/GB ? $23/TB/month
     const sparkCompute = computeHours * 0.5 * 10; // 10 nodes at $0.50/hour
     return {
       hdfs: Math.round(hdfsStorage),
@@ -499,10 +499,10 @@ class CAPSimulator {
   static simulate(options: { consistency: boolean; availability: boolean; partitionTolerance: boolean }): string {
     const { consistency: C, availability: A, partitionTolerance: P } = options;
 
-    if (C && A && !P) return "CA System (e.g., Traditional RDBMS) — Single-site only, no partition tolerance";
-    if (C && !A && P) return "CP System (e.g., HDFS, MongoDB) — Consistent under partition, may reject writes";
-    if (!C && A && P) return "AP System (e.g., Cassandra, DynamoDB) — Available under partition, eventual consistency";
-    return "Invalid — must pick 2 of 3 in a distributed system";
+    if (C && A && !P) return "CA System (e.g., Traditional RDBMS) ? Single-site only, no partition tolerance";
+    if (C && !A && P) return "CP System (e.g., HDFS, MongoDB) ? Consistent under partition, may reject writes";
+    if (!C && A && P) return "AP System (e.g., Cassandra, DynamoDB) ? Available under partition, eventual consistency";
+    return "Invalid ? must pick 2 of 3 in a distributed system";
   }
 
   static comparison(): void {
@@ -596,8 +596,8 @@ flowchart LR
 ```
 
 **Results after migration:**
-- Fraud detection latency: 5 min → 350ms
-- Fraud capture rate: 60% → 94%
+- Fraud detection latency: 5 min ? 350ms
+- Fraud capture rate: 60% ? 94%
 - Annual savings: $2.4M in fraud losses
 
 ```typescript
@@ -607,7 +607,7 @@ const oldLatency = 5 * 60 * 1000; // ms
 const newLatency = 350; // ms
 console.log(`Peak throughput: ${peakTPS.toFixed(0)} TPS`);
 console.log(`Latency reduction: ${(oldLatency / newLatency).toFixed(0)}x`);
-console.log(`Fraud capture improvement: 60% → 94%`);
+console.log(`Fraud capture improvement: 60% ? 94%`);
 ```
 
 ### Additional Exercises
@@ -620,7 +620,7 @@ console.log(`Fraud capture improvement: 60% → 94%`);
 
 ### Answer Key (Additional)
 
-6. Batch layer: Spark hourly jobs → Parquet; Speed layer: Kafka + Flink → Redis for real-time; Serving layer: Presto on Parquet + API on Redis | 7. On-prem: ~$15K/mo, EMR: ~$5K/mo, Databricks: ~$8K/mo | 8. With locality: ~100s; without: ~800s (8x slower) | 9. ~75% storage savings, ~5x faster queries | 10. S3 is AP (available during partition), Spark shuffle is CP (blocks if partition)
+6. Batch layer: Spark hourly jobs ? Parquet; Speed layer: Kafka + Flink ? Redis for real-time; Serving layer: Presto on Parquet + API on Redis | 7. On-prem: ~$15K/mo, EMR: ~$5K/mo, Databricks: ~$8K/mo | 8. With locality: ~100s; without: ~800s (8x slower) | 9. ~75% storage savings, ~5x faster queries | 10. S3 is AP (available during partition), Spark shuffle is CP (blocks if partition)
 
 ### TypeScript: Big Data Ecosystem Component Selector
 
@@ -665,14 +665,106 @@ const mapper = new EcosystemMapper()
   .register({ name: "Spark", category: "processing", strengths: ["Speed", "Unified"], weaknesses: ["Memory hungry"] });
 
 console.log("CP-compatible:", mapper.query({ consistency: "strong", latency: "low" }).map(c => c.name).join(", "));
-console.log("Streaming stack:", mapper.recommend({ type: "stream", sizeTB: 50 }).join(" → "));
-console.log("Batch stack:", mapper.recommend({ type: "batch", sizeTB: 500 }).join(" → "));
+console.log("Streaming stack:", mapper.recommend({ type: "stream", sizeTB: 50 }).join(" ? "));
+console.log("Batch stack:", mapper.recommend({ type: "batch", sizeTB: 500 }).join(" ? "));
 ```
 ```
 
+
+// introduction
+// hadoop-spark-ecosystem implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'introduction', data: { topic: 'hadoop-spark-ecosystem' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// introduction - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'big-data-ecosystem demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'big-data', chapter: 'introduction' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('big-data-ecosystem'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- Big data is defined by volume, velocity, and variety — traditional tools break at petabyte scale.
+- Big data is defined by volume, velocity, and variety ? traditional tools break at petabyte scale.
 - Distributed computing requires new approaches to data locality, fault tolerance, and consistency.
 - The Hadoop ecosystem introduced HDFS, MapReduce, and YARN as foundational components.
 - Apache Spark replaced MapReduce as the primary big data engine due to in-memory processing and expressive APIs.

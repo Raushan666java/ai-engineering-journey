@@ -47,11 +47,11 @@ flowchart LR
 
 The capstone project is the culminating assessment of DevOps mastery. Unlike individual chapter exercises that focus on isolated skills, the capstone requires integration across the entire toolchain. The design philosophy follows three principles:
 
-**Integration over Isolation** — Individual tools (Docker, Kubernetes, Terraform, Prometheus) are easy to learn in isolation. The capstone tests whether you can compose them into a working system where each component correctly interfaces with its neighbors.
+**Integration over Isolation** � Individual tools (Docker, Kubernetes, Terraform, Prometheus) are easy to learn in isolation. The capstone tests whether you can compose them into a working system where each component correctly interfaces with its neighbors.
 
-**Production Realism** — The pipeline must handle real-world concerns: zero-downtime deployments, automated rollback on failure, security scanning gates that block vulnerable code, and observability that provides actionable insight. Toy exercises are replaced with production-grade patterns.
+**Production Realism** � The pipeline must handle real-world concerns: zero-downtime deployments, automated rollback on failure, security scanning gates that block vulnerable code, and observability that provides actionable insight. Toy exercises are replaced with production-grade patterns.
 
-**Incremental Build** — The project is too large to build in one pass. The recommended sequence is: local Docker Compose → Terraform infrastructure → Kubernetes manifests → CI/CD pipeline → blue-green → observability → security. Each step builds on the previous one.
+**Incremental Build** � The project is too large to build in one pass. The recommended sequence is: local Docker Compose ? Terraform infrastructure ? Kubernetes manifests ? CI/CD pipeline ? blue-green ? observability ? security. Each step builds on the previous one.
 
 ### 18.2 Project Planning and Estimation
 
@@ -86,27 +86,27 @@ flowchart TD
 
 Each pipeline stage has a specific purpose, trigger, and gate:
 
-**Stage 1 — Lint & Test (trigger: every push)**
+**Stage 1 � Lint & Test (trigger: every push)**
 - Purpose: Catch code quality and logic errors early
 - Gate: Zero lint errors, 80%+ test coverage, zero SAST high findings
 - Fast feedback loop (< 5 minutes)
 
-**Stage 2 — Build & Scan (trigger: push to main)**
+**Stage 2 � Build & Scan (trigger: push to main)**
 - Purpose: Produce container images with verified security posture
 - Gate: No CRITICAL or HIGH vulnerabilities in container scan, SBOM generated
 - Artifact: Container images tagged with commit SHA
 
-**Stage 3 — Deploy Staging (trigger: successful Stage 2)**
+**Stage 3 � Deploy Staging (trigger: successful Stage 2)**
 - Purpose: Validate deployment in production-like environment
 - Gate: Integration tests pass, DAST scan finds no HIGH findings
 - Contains: Database migrations run before app deploy
 
-**Stage 4 — Deploy Production (trigger: manual approval after Stage 3)**
+**Stage 4 � Deploy Production (trigger: manual approval after Stage 3)**
 - Purpose: Zero-downtime release to production
 - Gate: Smoke tests pass, 10-minute monitoring window with error rate < 1%
 - Fallback: Automatic rollback if gate fails
 
-**Stage 5 — Observe (continuous)**
+**Stage 5 � Observe (continuous)**
 - Purpose: Provide visibility into system health
 - Alert thresholds: Error rate > 1% for 5 minutes, p95 latency > 500ms, pod crash loops
 
@@ -124,9 +124,9 @@ Each pipeline stage has a specific purpose, trigger, and gate:
 
 You will build a complete DevOps pipeline for a sample e-commerce application. The application consists of three microservices:
 
-- **Frontend** — React single-page application served by Nginx
-- **API** — Node.js or Go REST API service
-- **Database** — PostgreSQL
+- **Frontend** � React single-page application served by Nginx
+- **API** � Node.js or Go REST API service
+- **Database** � PostgreSQL
 
 The pipeline must automate build, test, security scan, deploy, monitor, and rollback. All infrastructure is provisioned through code. All operations are observable.
 
@@ -141,17 +141,17 @@ The pipeline must automate build, test, security scan, deploy, monitor, and roll
 - Create a GitHub repository with the following directory structure:
 ```
 /
-â”œâ”€â”€ frontend/          # React application
-â”œâ”€â”€ api/               # Node.js or Go API service
-â”œâ”€â”€ infra/             # Terraform configurations
-â”œâ”€â”€ k8s/               # Kubernetes manifests
-â”œâ”€â”€ scripts/           # Automation scripts
-â”œâ”€â”€ .github/           # CI/CD workflows
-â”‚   â””â”€â”€ workflows/
-â”œâ”€â”€ docs/              # Documentation
-â”œâ”€â”€ docker-compose.yml # Local development
-â”œâ”€â”€ Makefile           # Development helpers
-â””â”€â”€ README.md
+├── frontend/          # React application
+├── api/               # Node.js or Go API service
+├── infra/             # Terraform configurations
+├── k8s/               # Kubernetes manifests
+├── scripts/           # Automation scripts
+├── .github/           # CI/CD workflows
+│   └── workflows/
+├── docs/              # Documentation
+├── docker-compose.yml # Local development
+├── Makefile           # Development helpers
+└── README.md
 ```
 
 - Use trunk-based development with short-lived feature branches
@@ -286,9 +286,9 @@ The deployment script:
   - Resource utilization (CPU, memory)
 - Configure Loki for log aggregation with Promtail
 - Set up alert rules:
-  - High error rate (>1% for 5 minutes) â†’ PagerDuty
-  - High latency (p95 > 500ms for 5 minutes) â†’ Slack notification
-  - Pod crash loop â†’ PagerDuty
+  - High error rate (>1% for 5 minutes) → PagerDuty
+  - High latency (p95 > 500ms for 5 minutes) → Slack notification
+  - Pod crash loop → PagerDuty
 
 ### 8. Security Scanning
 
@@ -314,12 +314,12 @@ Integrate the following security tools in the pipeline:
 
 Submit the following:
 
-1. **GitHub Repository** â€” Complete source code with all configurations
-2. **README.md** â€” Architecture overview, setup instructions, deployment guide
-3. **Pipeline Documentation** â€” Description of each stage, triggers, and gates
-4. **Architecture Diagram** â€” System architecture including network, deployment, and data flow
-5. **Runbook** â€” Operational procedures for deployment, rollback, incident response, and recovery
-6. **Presentation** â€” 10-minute recorded walkthrough of the pipeline
+1. **GitHub Repository** — Complete source code with all configurations
+2. **README.md** — Architecture overview, setup instructions, deployment guide
+3. **Pipeline Documentation** — Description of each stage, triggers, and gates
+4. **Architecture Diagram** — System architecture including network, deployment, and data flow
+5. **Runbook** — Operational procedures for deployment, rollback, incident response, and recovery
+6. **Presentation** — 10-minute recorded walkthrough of the pipeline
 
 ## Evaluation Criteria
 
@@ -348,6 +348,48 @@ Submit the following:
 - Use Helm charts from Artifact Hub for Prometheus and Loki rather than building from scratch.
 - Document your design decisions and trade-offs as you go.
 
+
+// capstone
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'capstone', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 ## Concept Comparison Table
@@ -467,7 +509,7 @@ const results = orchestrator.execute(run, 'deploy-staging');
 console.log(orchestrator.generateReport(run, results));
 ```
 
-**What this demonstrates:** A pipeline orchestrator models the complete CI/CD workflow with conditional gates, stage dependencies, and comprehensive reporting — integrating all DevOps practices.
+**What this demonstrates:** A pipeline orchestrator models the complete CI/CD workflow with conditional gates, stage dependencies, and comprehensive reporting � integrating all DevOps practices.
 
 ---
 

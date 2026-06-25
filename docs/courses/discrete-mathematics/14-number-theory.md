@@ -8,7 +8,7 @@ After completing this chapter, you will be able to:
 
 - Understand divisibility and the division algorithm
 - Compute greatest common divisors using the Euclidean algorithm
-- Apply the extended Euclidean algorithm to find Bézout coefficients
+- Apply the extended Euclidean algorithm to find B?zout coefficients
 - Understand modular arithmetic and congruence relations
 - Solve linear congruences using inverses modulo $n$
 - Apply the Chinese Remainder Theorem to solve systems of congruences
@@ -125,7 +125,7 @@ function extendedGcd(a: number, b: number): { gcd: number; x: number; y: number 
 console.log(extendedGcd(252, 198)); // { gcd: 18, x: 4, y: -5 }
 ```
 
-> **One-Sentence Takeaway:** The Euclidean algorithm computes GCD by repeated remainder operations in $O(\log n)$ time; the extended algorithm also finds the Bézout coefficients.
+> **One-Sentence Takeaway:** The Euclidean algorithm computes GCD by repeated remainder operations in $O(\log n)$ time; the extended algorithm also finds the B?zout coefficients.
 
 ### 14.5 Modular Arithmetic
 
@@ -156,8 +156,8 @@ function modInverse(a: number, m: number): number | null {
   return ((x % m) + m) % m; // ensure non-negative
 }
 
-console.log(modInverse(3, 7));  // 5 (since 3*5 = 15 ≡ 1 mod 7)
-console.log(modInverse(2, 4));  // null (gcd(2,4) ≠ 1)
+console.log(modInverse(3, 7));  // 5 (since 3*5 = 15 = 1 mod 7)
+console.log(modInverse(2, 4));  // null (gcd(2,4) ? 1)
 ```
 
 > **One-Sentence Takeaway:** A modular inverse exists exactly when $a$ and $m$ are coprime; use the extended Euclidean algorithm to find it.
@@ -198,11 +198,11 @@ function chineseRemainder(remainders: number[], moduli: number[]): number {
   return ((result % M) + M) % M;
 }
 
-// x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7)
+// x = 2 (mod 3), x = 3 (mod 5), x = 2 (mod 7)
 console.log(chineseRemainder([2, 3, 2], [3, 5, 7])); // 23
 ```
 
-> **One-Sentence Takeaway:** The CRT combines $n$ congruences with pairwise coprime moduli into a unique solution modulo the product — essential for RSA decryption and large integer arithmetic.
+> **One-Sentence Takeaway:** The CRT combines $n$ congruences with pairwise coprime moduli into a unique solution modulo the product ? essential for RSA decryption and large integer arithmetic.
 
 ### 14.9 Prime Numbers
 
@@ -326,10 +326,10 @@ const plaintext = rsaDecrypt(ciphertext, d, n); // 65
 | GCD & LCM | Key generation | Fraction simplification | Gear ratios | Diophantine equations |
 | Modular Arithmetic | All modern crypto | Hash functions, checksums | Signal processing | Congruence theory |
 | Chinese Remainder Theorem | RSA acceleration, secret sharing | Large integer arithmetic | Residue number systems | Combinatorial number theory |
-| Fermat's Little Theorem | Primality testing (Fermat test) | — | — | Foundation for Euler's theorem |
-| Euler's Theorem | RSA correctness proof | — | — | Generalization of FLT |
-| Sieve of Eratosthenes | Large prime generation | Algorithm optimization | — | Analytic number theory |
-| Modular Inverse | RSA key generation, ECC | — | — | Solving congruences |
+| Fermat's Little Theorem | Primality testing (Fermat test) | ? | ? | Foundation for Euler's theorem |
+| Euler's Theorem | RSA correctness proof | ? | ? | Generalization of FLT |
+| Sieve of Eratosthenes | Large prime generation | Algorithm optimization | ? | Analytic number theory |
+| Modular Inverse | RSA key generation, ECC | ? | ? | Solving congruences |
 
 ## Chapter Quiz
 
@@ -387,12 +387,12 @@ $\gcd(2024, 748) = 44$.
 Back-substitute:
 - $18 = 54 - 1 \cdot 36 = 54 - (198 - 3 \cdot 54) = 4 \cdot 54 - 198 = 4(252 - 198) - 198 = 4 \cdot 252 - 5 \cdot 198$
 
-So $x = 4$, $y = -5$. Check: $4(252) - 5(198) = 1008 - 990 = 18$. ✓
+So $x = 4$, $y = -5$. Check: $4(252) - 5(198) = 1008 - 990 = 18$. ?
 
 **Example 14.3** (Modular inverse). Find $3^{-1} \pmod{7}$:
 - $7 = 2 \cdot 3 + 1$, so $1 = 7 - 2 \cdot 3$.
 - Thus $(-2) \cdot 3 \equiv 1 \pmod{7}$, so $3^{-1} \equiv -2 \equiv 5 \pmod{7}$.
-- Check: $3 \cdot 5 = 15 \equiv 1 \pmod{7}$. ✓
+- Check: $3 \cdot 5 = 15 \equiv 1 \pmod{7}$. ?
 
 **Example 14.4** (Linear congruence). Solve $6x \equiv 3 \pmod{15}$:
 - $\gcd(6,15) = 3 \mid 3$, so there are 3 solutions.
@@ -408,7 +408,7 @@ So $x = 4$, $y = -5$. Check: $4(252) - 5(198) = 1008 - 990 = 18$. ✓
 - $M_3 = 105/7 = 15$, $y_3 = 15^{-1} \pmod{7} = 1$ ($15 \equiv 1 \pmod{7}$).
 - $x = 2 \cdot 35 \cdot 2 + 3 \cdot 21 \cdot 1 + 2 \cdot 15 \cdot 1 = 140 + 63 + 30 = 233 \equiv 23 \pmod{105}$.
 
-Check: $23 \equiv 2 \pmod{3}$, $23 \equiv 3 \pmod{5}$, $23 \equiv 2 \pmod{7}$. ✓
+Check: $23 \equiv 2 \pmod{3}$, $23 \equiv 3 \pmod{5}$, $23 \equiv 2 \pmod{7}$. ?
 
 **Example 14.6** (Modular exponentiation). Compute $3^{1000} \bmod 7$:
 By FLT: $3^{6} \equiv 1 \pmod{7}$. $1000 = 6 \cdot 166 + 4$.
@@ -434,7 +434,7 @@ $\phi(100) = \phi(2^2) \cdot \phi(5^2) = (4-2) \cdot (25-5) = 2 \cdot 20 = 40$.
 - Encrypt $m = 5$: $c = 5^{13} \bmod 77 = 26$.
 - Decrypt $c = 26$: $m = 26^{37} \bmod 77 = 5$.
 
-**Example 14.10** (GCD-LCM product). $\gcd(12, 18) = 6$, $\text{lcm}(12, 18) = 36$. $6 \cdot 36 = 216 = 12 \cdot 18$. ✓
+**Example 14.10** (GCD-LCM product). $\gcd(12, 18) = 6$, $\text{lcm}(12, 18) = 36$. $6 \cdot 36 = 216 = 12 \cdot 18$. ?
 
 ## TypeScript Implementations
 
@@ -465,7 +465,7 @@ function modInverse(a: number, m: number): number | null {
   if (g !== 1) return null; // inverse doesn't exist
   return ((x0 % m) + m) % m;
 }
-console.log('3^-1 mod 11:', modInverse(3, 11)); // 4 (since 3*4=12≡1 mod 11)
+console.log('3^-1 mod 11:', modInverse(3, 11)); // 4 (since 3*4=12=1 mod 11)
 console.log('Inverse of 6 mod 10:', modInverse(6, 10)); // null (not coprime)
 
 // --- Modular Exponentiation (fast exponentiation) ---
@@ -492,7 +492,7 @@ function crt(remainders: number[], moduli: number[]): number {
   }
   return result % N;
 }
-// x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7)
+// x = 2 (mod 3), x = 3 (mod 5), x = 2 (mod 7)
 console.log('CRT solution:', crt([2, 3, 2], [3, 5, 7])); // 23
 
 // --- Euler's Totient ---
@@ -508,8 +508,8 @@ function totient(n: number): number {
   if (temp > 1) result -= result / temp;
   return result;
 }
-console.log('φ(100):', totient(100)); // 40
-console.log('φ(77):', totient(77));   // 60
+console.log('f(100):', totient(100)); // 40
+console.log('f(77):', totient(77));   // 60
 
 // --- Prime Check ---
 function isPrime(n: number): boolean {
@@ -531,7 +531,7 @@ function primeSieve(limit: number): number[] {
     if (sieve[i]) for (let j = i * i; j <= limit; j += i) sieve[j] = false;
   return sieve.map((v, i) => v ? i : -1).filter(v => v !== -1);
 }
-console.log('Primes ≤ 50:', primeSieve(50).join(', '));
+console.log('Primes = 50:', primeSieve(50).join(', '));
 
 // --- Prime Factorization ---
 function primeFactors(n: number): Map<number, number> {
@@ -543,7 +543,7 @@ function primeFactors(n: number): Map<number, number> {
   if (d > 1) factors.set(d, (factors.get(d) ?? 0) + 1);
   return factors;
 }
-console.log('\nPrime factors of 84:', [...primeFactors(84)].map(([p, e]) => `${p}^${e}`).join(' × '));
+console.log('\nPrime factors of 84:', [...primeFactors(84)].map(([p, e]) => `${p}^${e}`).join(' ? '));
 
 // --- Euler's Totient Function ---
 function totient(n: number): number {
@@ -555,8 +555,8 @@ function totient(n: number): number {
   if (temp > 1) result -= result / temp;
   return result;
 }
-console.log('\nφ(12):', totient(12), '(expected: 4)');
-console.log('φ(100):', totient(100), '(expected: 40)');
+console.log('\nf(12):', totient(12), '(expected: 4)');
+console.log('f(100):', totient(100), '(expected: 40)');
 
 // --- Modular Exponentiation ---
 function modPow(base: number, exp: number, mod: number): number {
@@ -580,7 +580,7 @@ function rsaKeygen(p: number, q: number): { n: number; e: number; d: number } {
 function rsaEncrypt(msg: number, e: number, n: number): number { return modPow(msg, e, n); }
 function rsaDecrypt(cipher: number, d: number, n: number): number { return modPow(cipher, d, n); }
 const rsa = rsaKeygen(61, 53);
-console.log('\nRSA n=61×53:', rsa.n, 'e:', rsa.e, 'd:', rsa.d);
+console.log('\nRSA n=61?53:', rsa.n, 'e:', rsa.e, 'd:', rsa.d);
 const cipher = rsaEncrypt(42, rsa.e, rsa.n);
 console.log('Encrypt 42:', cipher);
 console.log('Decrypt:', rsaDecrypt(cipher, rsa.d, rsa.n));
@@ -595,13 +595,105 @@ function chineseRemainder(mods: number[], remainders: number[]): number {
   }
   return ((result % M) + M) % M;
 }
-console.log('\nCRT: x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7):', chineseRemainder([3,5,7], [2,3,2]));
+console.log('\nCRT: x = 2 (mod 3), x = 3 (mod 5), x = 2 (mod 7):', chineseRemainder([3,5,7], [2,3,2]));
 ```
 
+
+// number theory
+// sets-graphs-probability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'number theory', data: { topic: 'sets-graphs-probability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// number theory - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'discrete-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'discrete-mathematics', chapter: 'number theory' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('discrete-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Divisibility $a \mid b$ is the foundational concept; the division algorithm gives unique quotient and remainder.
-- The Euclidean algorithm efficiently computes $\gcd$; the extended version finds Bézout coefficients.
+- The Euclidean algorithm efficiently computes $\gcd$; the extended version finds B?zout coefficients.
 - Modular arithmetic preserves congruence under $+$, $-$, $\times$.
 - Modular inverses exist iff $\gcd(a,m) = 1$.
 - The Chinese Remainder Theorem solves systems of congruences with pairwise coprime moduli.
@@ -611,11 +703,11 @@ console.log('\nCRT: x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7):', chinese
 
 ## Practical Takeaways
 
-1. **Euclidean algorithm is $O(\log n)$** — extremely fast even for huge numbers.
-2. **Inverses are essential for division in modular arithmetic** — always check $\gcd(a,m) = 1$ first.
-3. **FLT is a primality test** — if $a^{n-1} \not\equiv 1 \pmod{n}$, then $n$ is composite (but there are Carmichael numbers that deceive this test).
-4. **RSA uses large primes** — typical $p, q$ are 2048-bit numbers (~600 decimal digits).
-5. **CRT speeds up RSA** — decryption can be done modulo $p$ and $q$ separately and combined, giving 4x speedup.
+1. **Euclidean algorithm is $O(\log n)$** ? extremely fast even for huge numbers.
+2. **Inverses are essential for division in modular arithmetic** ? always check $\gcd(a,m) = 1$ first.
+3. **FLT is a primality test** ? if $a^{n-1} \not\equiv 1 \pmod{n}$, then $n$ is composite (but there are Carmichael numbers that deceive this test).
+4. **RSA uses large primes** ? typical $p, q$ are 2048-bit numbers (~600 decimal digits).
+5. **CRT speeds up RSA** ? decryption can be done modulo $p$ and $q$ separately and combined, giving 4x speedup.
 
 ### 14.6 Euclidean Algorithm and Extended Euclidean
 
@@ -645,7 +737,7 @@ function extendedEuclidean(a: number, b: number): { gcd: number; x: number; y: n
 
 console.log(gcdEuclidean(462, 336)); // 42
 console.log(extendedEuclidean(11, 26));
-// { gcd: 1, x: -7, y: 3 } → 11(-7) + 26(3) = 1
+// { gcd: 1, x: -7, y: 3 } ? 11(-7) + 26(3) = 1
 ```
 
 ### 14.7 Modular Arithmetic and Inverses
@@ -670,7 +762,7 @@ function modExp(base: number, exp: number, mod: number): number {
   return result;
 }
 
-console.log(modInverse(11, 26)); // 19 (11*19=209≡1 mod 26)
+console.log(modInverse(11, 26)); // 19 (11*19=209=1 mod 26)
 console.log(modExp(7, 2023, 11)); // 7^2023 mod 11 using FLT
 ```
 
@@ -691,13 +783,13 @@ function chineseRemainder(remainders: number[], moduli: number[]): number {
   return x;
 }
 
-// x ≡ 1 (mod 4), x ≡ 2 (mod 5), x ≡ 3 (mod 9)
+// x = 1 (mod 4), x = 2 (mod 5), x = 3 (mod 9)
 const solution = chineseRemainder([1, 2, 3], [4, 5, 9]);
 console.log(solution); // 57
-// 57 ≡ 1 mod 4 ✓, 57 ≡ 2 mod 5 ✓, 57 ≡ 3 mod 9 ✓
+// 57 = 1 mod 4 ?, 57 = 2 mod 5 ?, 57 = 3 mod 9 ?
 ```
 
-### 14.9 RSA Cryptosystem — Complete Implementation
+### 14.9 RSA Cryptosystem ? Complete Implementation
 
 ```typescript
 function generateRSAKeys(p: number, q: number) {
@@ -724,7 +816,7 @@ const keys = generateRSAKeys(p, q);
 const plaintext = 42;
 const ciphertext = rsaEncrypt(plaintext, keys.publicKey.e, keys.publicKey.n);
 const decrypted = rsaDecrypt(ciphertext, keys.privateKey.d, keys.privateKey.n);
-console.log({ plaintext, ciphertext, decrypted }); // 42 → encrypted → 42
+console.log({ plaintext, ciphertext, decrypted }); // 42 ? encrypted ? 42
 ```
 
 ### 14.10 Primality Testing
@@ -771,7 +863,7 @@ console.log(fermatTest(7919));   // true
 
 ```mermaid
 flowchart TD
-    subgraph "Number Theory — Key Algorithms"
+    subgraph "Number Theory ? Key Algorithms"
         A[GCD] --> B[Euclidean: Olog mina,b]
         A --> C[Extended: ax + by = gcd]
         C --> D[Modular Inverse]
@@ -823,7 +915,7 @@ Since 11 is prime and $7 \not\equiv 0 \pmod{11}$, by FLT $7^{10} \equiv 1 \pmod{
 
 20. Write a TypeScript function `carmichael(n: number): boolean` that checks if $n$ is a Carmichael number by verifying $a^{n-1} \equiv 1 \pmod{n}$ for several $a$ coprime to $n$.
 
-21. Show that if $p$ is prime, then $a^p \equiv a \pmod{p}$ for all integers $a$ (Fermat's Little Theorem — alternative form).
+21. Show that if $p$ is prime, then $a^p \equiv a \pmod{p}$ for all integers $a$ (Fermat's Little Theorem ? alternative form).
 
 ## Exercises
 

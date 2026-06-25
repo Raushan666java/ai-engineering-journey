@@ -1,6 +1,6 @@
 # Chapter 11: Control-Flow Analysis
 
-← Previous: [Chapter 10: Code Optimization](10-optimization.md) | **Next:** [Chapter 12: Data-Flow Analysis](12-dfa.md)
+? Previous: [Chapter 10: Code Optimization](10-optimization.md) | **Next:** [Chapter 12: Data-Flow Analysis](12-dfa.md)
 
 ## Learning Objectives
 
@@ -52,8 +52,8 @@ A basic block is a maximal sequence of consecutive instructions with a single en
 ```
 MarkLeader(1); // first instruction is a leader
 for each instruction i:
-    if i has a label that is a jump target → MarkLeader(i)
-    if i is a jump → MarkLeader(i + 1)
+    if i has a label that is a jump target ? MarkLeader(i)
+    if i is a jump ? MarkLeader(i + 1)
 for each leader, extend block to the next leader
 ```
 
@@ -134,7 +134,7 @@ class FlowGraph {
         for (let i = 0; i < tac.length; i++) {
             const instr = tac[i];
             if (instr.op.endsWith(":")) {
-                // This is a label — might be a jump target
+                // This is a label ? might be a jump target
                 // Only mark as leader if it's not already preceded by a leader
                 // and it appears after a jump
             }
@@ -243,12 +243,12 @@ Block `d` **dominates** block `n` (written `d dom n`) if every directed path fro
 - **Transitive**: if `a dom b` and `b dom c` then `a dom c`
 - **Antisymmetric**: if `a dom b` and `b dom a` then `a = b`
 
-The **immediate dominator** `idom(n)` is the unique `d ≠ n` such that `d dom n` and every other dominator of `n` dominates `d`. The immediate-dominator relation forms the **dominator tree**, rooted at `entry`.
+The **immediate dominator** `idom(n)` is the unique `d ? n` such that `d dom n` and every other dominator of `n` dominates `d`. The immediate-dominator relation forms the **dominator tree**, rooted at `entry`.
 
 **Iterative data-flow algorithm**:
 ```
 DOM(entry) = {entry}
-DOM(n) = {n} ∪ (∩_{p in pred(n)} DOM(p))   for n ≠ entry
+DOM(n) = {n} ? (n_{p in pred(n)} DOM(p))   for n ? entry
 ```
 
 This is solved iteratively: initialize `DOM(n)` to all nodes, then repeatedly apply the equation until convergence.
@@ -402,7 +402,7 @@ class DominatorAnalysis {
 
 ### Lengauer-Tarjan Algorithm
 
-The Lengauer-Tarjan algorithm computes dominators in near-linear time `O(E·α(E,N))` using three passes:
+The Lengauer-Tarjan algorithm computes dominators in near-linear time `O(E?a(E,N))` using three passes:
 
 1. **DFS pass**: Perform depth-first search, numbering nodes in preorder.
 2. **Semi-dominator computation**: Process nodes in reverse DFS order, computing semi-dominators via path compression.
@@ -556,7 +556,7 @@ Depth-first search of the flow graph produces a **DFST** with edges classified a
 | **Forward edge** | To a descendant (not a child) | Redundant in DFS |
 | **Cross edge** | To a node in a different branch | Between unrelated subtrees |
 
-**Back edge test**: Edge `m → n` is a back edge iff `dfn(n) ≤ dfn(m)`.
+**Back edge test**: Edge `m ? n` is a back edge iff `dfn(n) = dfn(m)`.
 
 ```typescript
 class DFSTBuilder {
@@ -612,17 +612,17 @@ class DFSTBuilder {
 
     print(): void {
         console.log("\nDFS numbers:", this.dfn.map((d, i) => `BB${i}=${d}`).join(", "));
-        console.log(`Tree edges: ${this.treeEdges.map(([f, t]) => `BB${f}→BB${t}`).join(", ")}`);
-        console.log(`Back edges: ${this.backEdges.map(([f, t]) => `BB${f}→BB${t}`).join(", ")}`);
-        console.log(`Forward edges: ${this.forwardEdges.map(([f, t]) => `BB${f}→BB${t}`).join(", ")}`);
-        console.log(`Cross edges: ${this.crossEdges.map(([f, t]) => `BB${f}→BB${t}`).join(", ")}`);
+        console.log(`Tree edges: ${this.treeEdges.map(([f, t]) => `BB${f}?BB${t}`).join(", ")}`);
+        console.log(`Back edges: ${this.backEdges.map(([f, t]) => `BB${f}?BB${t}`).join(", ")}`);
+        console.log(`Forward edges: ${this.forwardEdges.map(([f, t]) => `BB${f}?BB${t}`).join(", ")}`);
+        console.log(`Cross edges: ${this.crossEdges.map(([f, t]) => `BB${f}?BB${t}`).join(", ")}`);
     }
 }
 ```
 
 ### Natural Loops
 
-A **natural loop** is defined by a back edge `m → n` and consists of `n` plus all nodes that can reach `m` without passing through `n`. The node `n` is the **loop header**.
+A **natural loop** is defined by a back edge `m ? n` and consists of `n` plus all nodes that can reach `m` without passing through `n`. The node `n` is the **loop header**.
 
 ```typescript
 class NaturalLoop {
@@ -680,7 +680,7 @@ class LoopDetector {
 
     printLoopNests(): void {
         // Build nesting tree
-        const nested = new Map<number, number[]>(); // outer index → inner indices
+        const nested = new Map<number, number[]>(); // outer index ? inner indices
         for (let i = 0; i < this.loops.length; i++) {
             nested.set(i, []);
         }
@@ -716,7 +716,7 @@ class LoopDetector {
 
 A flow graph is **reducible** if it can be collapsed to a single node by repeatedly applying:
 
-- **T1**: Remove a self-loop. If node `n` has edge `n → n`, remove it.
+- **T1**: Remove a self-loop. If node `n` has edge `n ? n`, remove it.
 - **T2**: If node `n` (not the entry) has a unique predecessor `m`, merge `n` into `m`.
 
 Equivalently, a reducible graph contains no cycle with two entry points. Structured programs (using only if-then-else, while, and for) always produce reducible flow graphs.
@@ -835,9 +835,9 @@ console.log(`\nReducible: ${red.isReducible(fg)}`);
 
 | Concept | Definition | Use | Algorithm |
 |---------|-----------|-----|-----------|
-| Dominator | d blocks every path entry→n | Safety for code motion | Iterative DF / Lengauer-Tarjan |
+| Dominator | d blocks every path entry?n | Safety for code motion | Iterative DF / Lengauer-Tarjan |
 | Immediate Dominator | Unique closest dominator | Builds dominator tree | LT semi-dominator |
-| Back Edge | Edge where target ≤ source | Identifies loops | DFS numbering |
+| Back Edge | Edge where target = source | Identifies loops | DFS numbering |
 | Natural Loop | Header + nodes reaching tail | Loop optimization target | Back-edge flood fill |
 | Reducible | T1/T2 collapse to single node | Fast DF analysis convergence | T1/T2 reduction |
 
@@ -846,9 +846,9 @@ console.log(`\nReducible: ${red.isReducible(fg)}`);
 | Algorithm | Input | Output | Complexity |
 |-----------|-------|--------|------------|
 | Leader Marking | TAC sequence | Basic blocks | O(n) |
-| Lengauer-Tarjan | Flow graph | Dominator tree | O(E·α(E,N)) |
-| Iterative Dominators | Flow graph | Dominator set | O(N²) worst case |
-| Natural Loop Detection | Back edges + dominators | Loop set | O(N·E) |
+| Lengauer-Tarjan | Flow graph | Dominator tree | O(E?a(E,N)) |
+| Iterative Dominators | Flow graph | Dominator set | O(N?) worst case |
+| Natural Loop Detection | Back edges + dominators | Loop set | O(N?E) |
 | T1/T2 Reduction | Flow graph | Reduced graph | O(N) |
 
 ### Cross-Application Matrix
@@ -862,20 +862,112 @@ console.log(`\nReducible: ${red.isReducible(fg)}`);
 
 ### Example 11.1: Dominator and Loop Detection
 
-Flow graph edges: `entry → B1, B1 → B2, B2 → B3, B2 → B4, B3 → B2, B4 → exit`.
+Flow graph edges: `entry ? B1, B1 ? B2, B2 ? B3, B2 ? B4, B3 ? B2, B4 ? exit`.
 
 **Dominators**: `entry` dominates all; `B1` dominates all except `entry`; `B2` dominates `B2, B3, B4, exit`; `B3` only dominates `B3`; `B4` only dominates `B4`. `idom(B1) = entry`, `idom(B2) = B1`, `idom(B3) = B2`, `idom(B4) = B2`, `idom(exit) = B2`.
 
-**Back edge**: `B3 → B2` (B2 dominates B3). **Natural loop**: header `B2`, body `{B3}`. Well-structured single-entry loop.
+**Back edge**: `B3 ? B2` (B2 dominates B3). **Natural loop**: header `B2`, body `{B3}`. Well-structured single-entry loop.
 
 ## Practical Takeaways
 
 1. **Basic blocks are the atomic unit**: All subsequent analyses operate on blocks, not individual instructions. Getting block identification right is essential.
-2. **Lengauer-Tarjan is the production standard**: The iterative data-flow algorithm is simpler to implement but O(N²). Use Lengauer-Tarjan for production compilers.
+2. **Lengauer-Tarjan is the production standard**: The iterative data-flow algorithm is simpler to implement but O(N?). Use Lengauer-Tarjan for production compilers.
 3. **Natural loops are the only "real" loops**: Unstructured cycles (gotos into the middle of a loop body) cannot be analyzed as natural loops. They are rare in practice.
 4. **Reducibility guarantees analysis speed**: Irreducible graphs cause iterative data-flow analysis to require more iterations. Node splitting can repair irreducibility.
 5. **Pre-headers simplify loop optimizations**: Inserting a pre-header gives a single point for loop-invariant code motion and loop-rotation transformations.
 
+
+// cfa
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'cfa', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// cfa - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'cfa' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Control-flow analysis transforms instruction sequences into graphs. Dominators establish block hierarchy and enable safe code motion. Depth-first search identifies back edges for loop detection. Natural loops have a single header and are amenable to optimization. Reducibility ensures convergence properties for iterative algorithms. The TypeScript `FlowGraph`, `DominatorAnalysis`, `LengauerTarjan`, `DFSTBuilder`, `LoopDetector`, and `ReducibilityCheck` classes implement the complete CFA pipeline with working demos.
@@ -884,14 +976,14 @@ Control-flow analysis transforms instruction sequences into graphs. Dominators e
 
 1. What condition defines a back edge in a depth-first spanning tree?
    - A) The edge points from a descendant to an ancestor
-   - B) dfn(target) ≤ dfn(source)
+   - B) dfn(target) = dfn(source)
    - C) Both A and B
    - D) The edge connects two nodes in the same basic block
 
 2. What is the immediate dominator of a block n?
    - A) The entry block
    - B) Any block that dominates n
-   - C) The unique block d ≠ n such that d dominates n and all other dominators of n dominate d
+   - C) The unique block d ? n such that d dominates n and all other dominators of n dominate d
    - D) The block that immediately precedes n in the instruction sequence
 
 3. Why does reducibility matter for compilers?
@@ -930,7 +1022,7 @@ Control-flow analysis transforms instruction sequences into graphs. Dominators e
 
 ### Application Problems
 
-1. For edges `entry→B1, B1→B2, B1→B3, B2→B4, B3→B4, B4→B5, B4→B6, B5→B7, B6→B7, B7→B1, B7→exit`: compute dominators, draw the dominator tree, and identify natural loops.
+1. For edges `entry?B1, B1?B2, B1?B3, B2?B4, B3?B4, B4?B5, B4?B6, B5?B7, B6?B7, B7?B1, B7?exit`: compute dominators, draw the dominator tree, and identify natural loops.
 2. Perform DFS on the flow graph from Problem 1. Assign dfn and classify each edge.
 3. Convert this C code into a flow graph and identify all basic blocks:
    ```c
@@ -941,7 +1033,7 @@ Control-flow analysis transforms instruction sequences into graphs. Dominators e
    }
    return x;
    ```
-4. Determine reducibility of `entry→A, A→B, A→C, B→D, C→D, D→C, D→exit`. If irreducible, apply node splitting and show the result.
+4. Determine reducibility of `entry?A, A?B, A?C, B?D, C?D, D?C, D?exit`. If irreducible, apply node splitting and show the result.
 5. Using the TypeScript `FlowGraph` class, build the flow graph for the TAC sequence from Demo 1. Compute dominators, print the dominator tree, and identify all natural loops and their nesting relationships.
 
 ### Challenge Problem

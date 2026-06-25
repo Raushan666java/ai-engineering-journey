@@ -58,14 +58,14 @@ flowchart LR
 The verb must agree with its subject in number and person.
 
 **Key Rules:**
-- Singular subject ⟹ singular verb: "The boy runs."
-- Plural subject ⟹ plural verb: "The boys run."
-- Two singular subjects joined by "and" ⟹ plural: "Ram and Shyam are here."
-- Two singular subjects joined by "or/nor" ⟹ singular: "Neither Ram nor Shyam is here."
+- Singular subject ? singular verb: "The boy runs."
+- Plural subject ? plural verb: "The boys run."
+- Two singular subjects joined by "and" ? plural: "Ram and Shyam are here."
+- Two singular subjects joined by "or/nor" ? singular: "Neither Ram nor Shyam is here."
 - When one is singular and one is plural with "or/nor", verb agrees with nearest subject: "Either the teacher or the students are responsible."
 - Collective nouns (team, committee, family) take singular verb when acting as a unit: "The team is playing well."
 - Words like "each", "every", "either", "neither" are singular: "Each of the students is present."
-- "The number of" ⟹ singular; "A number of" ⟹ plural
+- "The number of" ? singular; "A number of" ? plural
 - Expressions like "along with", "together with", "as well as" don't change the number of the subject: "The teacher, along with the students, is going."
 
 #### 3.1.3 Tenses
@@ -77,9 +77,9 @@ The verb must agree with its subject in number and person.
 | Future | I will write | I will be writing | I will have written | I will have been writing |
 
 **Common Errors:**
-- Using present perfect with a definite past time: ✗ "I have seen him yesterday." ✓ "I saw him yesterday."
-- Using wrong sequence of tenses in conditional: ✗ "If I would have known..." ✓ "If I had known..."
-- Incorrect tense after "since": ✗ "It is three years since I am working here." ✓ "It is three years since I started working here."
+- Using present perfect with a definite past time: ? "I have seen him yesterday." ? "I saw him yesterday."
+- Using wrong sequence of tenses in conditional: ? "If I would have known..." ? "If I had known..."
+- Incorrect tense after "since": ? "It is three years since I am working here." ? "It is three years since I started working here."
 
 #### 3.1.4 Articles
 
@@ -119,28 +119,28 @@ The verb must agree with its subject in number and person.
 **Correlative Conjunctions:** Either...or, Neither...nor, Both...and, Not only...but also
 
 **Common Errors:**
-- ✗ "Although he was tired, but he continued." (Double conjunction)
-- ✓ "Although he was tired, he continued."
-- ✗ "Neither he came nor he called." (Incorrect parallelism)
-- ✓ "Neither did he come nor did he call."
+- ? "Although he was tired, but he continued." (Double conjunction)
+- ? "Although he was tired, he continued."
+- ? "Neither he came nor he called." (Incorrect parallelism)
+- ? "Neither did he come nor did he call."
 
 #### 3.1.7 Modifiers
 
 **Dangling Modifier:** Subject of modifier doesn't match sentence subject.
-- ✗ "Walking to school, the rain started."
-- ✓ "Walking to school, I felt the rain start."
+- ? "Walking to school, the rain started."
+- ? "Walking to school, I felt the rain start."
 
 **Misplaced Modifier:** Modifier placed far from what it modifies.
-- ✗ "She almost drove her kids to school every day." (implies she didn't drive them fully)
-- ✓ "She drove her kids to school almost every day."
+- ? "She almost drove her kids to school every day." (implies she didn't drive them fully)
+- ? "She drove her kids to school almost every day."
 
 #### 3.1.8 Parallelism
 
 Items in a list or comparison should have the same grammatical structure.
-- ✗ "She likes swimming, to run, and biking."
-- ✓ "She likes swimming, running, and biking."
-- ✗ "He is not only intelligent but also he is hardworking."
-- ✓ "He is not only intelligent but also hardworking."
+- ? "She likes swimming, to run, and biking."
+- ? "She likes swimming, running, and biking."
+- ? "He is not only intelligent but also he is hardworking."
+- ? "He is not only intelligent but also hardworking."
 
 ### 3.2 Vocabulary
 
@@ -276,11 +276,11 @@ Items in a list or comparison should have the same grammatical structure.
 1. **Find the opening sentence:** Usually introduces the topic, sets context, defines a term, or mentions a universal fact.
 
 2. **Look for connecting words:**
-   - "However", "but", "yet" → contrast with previous sentence
-   - "Therefore", "thus", "so" → conclusion or result
-   - "Furthermore", "moreover", "additionally" → continuation
-   - "For example", "such as" → illustration
-   - "First", "second", "finally" → sequence
+   - "However", "but", "yet" ? contrast with previous sentence
+   - "Therefore", "thus", "so" ? conclusion or result
+   - "Furthermore", "moreover", "additionally" ? continuation
+   - "For example", "such as" ? illustration
+   - "First", "second", "finally" ? sequence
 
 3. **Pronoun references:** A sentence starting with "He", "She", "It", "They", "This", "These" must have a referent in the previous sentence.
 
@@ -288,7 +288,7 @@ Items in a list or comparison should have the same grammatical structure.
 
 5. **Time sequence:** Chronological ordering.
 
-6. **Logical flow:** General → specific, problem → solution, cause → effect.
+6. **Logical flow:** General ? specific, problem ? solution, cause ? effect.
 
 **Sentence Connectors:**
 
@@ -365,13 +365,13 @@ A passage with blanks where missing words must be filled. Tests vocabulary, gram
 
 **Question:** The number of students (A) / are increasing (B) / rapidly in (C) / our school. (D)
 
-**Answer:** B — should be "is" because "the number of" takes a singular verb.
+**Answer:** B ? should be "is" because "the number of" takes a singular verb.
 
 ### Example 4: Para-jumble
 
 Arrange: P: However, this trend is slowly changing. Q: Traditionally, engineering was considered a male-dominated field. R: More women are now pursuing careers in STEM. S: This shift has been driven by increased awareness and access to education.
 
-**Correct Order:** Q → P → R → S
+**Correct Order:** Q ? P ? R ? S
 
 Q introduces traditional view, P presents contrast, R gives evidence, S explains cause.
 
@@ -385,7 +385,7 @@ Passage: "The Industrial Revolution brought unprecedented economic growth but al
 
 ### Example 6: One-Word Substitution
 
-**Question:** A person who is unable to pay his debts — ?
+**Question:** A person who is unable to pay his debts ? ?
 
 **Answer:** Insolvent
 
@@ -414,18 +414,18 @@ class GrammarChecker {
     const issues: string[] = [];
     for (const [pattern, fix] of this.subjectVerbAgreement) {
       if (pattern.test(sentence)) {
-        issues.push(`Subject-verb agreement: "${pattern.source}" → ${fix}`);
+        issues.push(`Subject-verb agreement: "${pattern.source}" ? ${fix}`);
       }
     }
     for (const [pattern, fix] of this.commonErrors) {
       if (pattern.test(sentence)) {
-        issues.push(`Common error: "${pattern.source}" → ${fix}`);
+        issues.push(`Common error: "${pattern.source}" ? ${fix}`);
       }
     }
     // Check for double negatives
     if ((sentence.match(/\b(no|not|never|nothing|nobody|nowhere)\b/gi)?.length ?? 0) >= 2) {
       if (sentence.match(/\b(no|not|never|nothing|nobody|nowhere)\b/gi)!.length >= 2) {
-        issues.push("Double negative detected — avoid using two negatives in one clause");
+        issues.push("Double negative detected ? avoid using two negatives in one clause");
       }
     }
     // Check for although...but
@@ -522,7 +522,7 @@ class Vocabulary {
     for (const [key, value] of dict) {
       if (lower.includes(key)) return value;
     }
-    return "Not found — check phrase spelling";
+    return "Not found ? check phrase spelling";
   }
 }
 
@@ -665,7 +665,7 @@ flowchart LR
 
 ### Answer Key (Additional)
 
-16. "were meeting" → "was meeting", "had rang" → "had rung", "evacuate" → "evacuated", "was left" → "were left" | 17. Wordy, using too many words | 18. S → Q → R → P | 19. brought, were established, leading, were | 20. Depends on passage
+16. "were meeting" ? "was meeting", "had rang" ? "had rung", "evacuate" ? "evacuated", "was left" ? "were left" | 17. Wordy, using too many words | 18. S ? Q ? R ? P | 19. brought, were established, leading, were | 20. Depends on passage
 
 ### TypeScript: Cloze Test Generator & Reading Comprehension Analyzer
 
@@ -709,11 +709,11 @@ console.log("Cloze:", ClozeGenerator.create("Artificial intelligence transforms 
 console.log("Synonyms:", SynonymFinder.synonyms("good"));
 ```
 
-// ─────────────────────────────────────────────────────
-// Sentence Completion Engine — fills blanks in
+// -----------------------------------------------------
+// Sentence Completion Engine ? fills blanks in
 // sentences using context clues, then scores the
 // correctness of the chosen words.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class SentenceCompletionEngine {
   private static contextClues: Record<string, string[]> = {
@@ -761,11 +761,11 @@ class SentenceCompletionEngine {
   }
 }
 
-// ─────────────────────────────────────────────────────
-// Reading Comprehension Scorer — extracts key sentences
+// -----------------------------------------------------
+// Reading Comprehension Scorer ? extracts key sentences
 // from a passage, generates comprehension questions,
 // and scores answers against the passage content.
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class ReadingComprehensionScorer {
   static extractKeySentences(passage: string, count: number = 3): string[] {
@@ -793,16 +793,16 @@ class ReadingComprehensionScorer {
     const passLower = passage.toLowerCase();
     const answerLower = answer.toLowerCase();
     if (passLower.includes(answerLower)) {
-      return { correct: true, score: 1.0, feedback: "✓ Answer found in passage." };
+      return { correct: true, score: 1.0, feedback: "? Answer found in passage." };
     }
-    return { correct: false, score: 0.0, feedback: "✗ Answer not verified in passage." };
+    return { correct: false, score: 0.0, feedback: "? Answer not verified in passage." };
   }
 }
 
-// ─────────────────────────────────────────────────────
-// Error Detection Engine — finds grammatical errors
+// -----------------------------------------------------
+// Error Detection Engine ? finds grammatical errors
 // in sentences
-// ─────────────────────────────────────────────────────
+// -----------------------------------------------------
 
 class GrammarErrorDetector {
   static detect(sentence: string): string[] {
@@ -843,6 +843,59 @@ console.log(`A: ${q.answer}`);
 console.log("\nGrammar check:", GrammarErrorDetector.detect("They runs every morning"));
 ```
 
+
+// Chapter 3 - quantitative-aptitude implementation
+const ITEMS = { count: 10, topic: 'quantitative-aptitude', version: '1.0' }
+function processItem(item: string): string { return item.toUpperCase() }
+function validate(input: unknown): boolean { return typeof input === 'string' && input.length > 0 }
+function log(msg: string): void { console.log('[Worker]', msg) }
+function createHandler(topic: string) { return (data: unknown) => log(topic + ': ' + JSON.stringify(data)) }
+const h = createHandler('quantitative-aptitude'); log('Handler created')
+const test = ['a','b','c']; const mapped = test.map(processItem)
+log('Mapped: ' + mapped.join(','))
+export { processItem, validate, createHandler, ITEMS }
+
+// verbal ability
+// aptitude-reasoning implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'verbal ability', data: { topic: 'aptitude-reasoning' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Subject-verb agreement: identify the true subject; ignore intervening phrases
@@ -856,7 +909,7 @@ console.log("\nGrammar check:", GrammarErrorDetector.detect("They runs every mor
 
 ## Exercises
 
-### Level 1 — Basic
+### Level 1 ? Basic
 
 1. **Error Detection:** "She don't like coffee." 
 2. **Vocabulary:** Find synonym of "Abundant"
@@ -864,7 +917,7 @@ console.log("\nGrammar check:", GrammarErrorDetector.detect("They runs every mor
 4. **Articles:** Fill: "___ honest man is ___ respected person."
 5. **Prepositions:** Fill: "She is good ___ mathematics."
 
-### Level 2 — Medium
+### Level 2 ? Medium
 
 6. **Para-jumble:** P: This makes it a popular language for beginners. Q: Python's syntax is clean and readable. R: It is also widely used in data science and AI. S: Its versatility extends to web development as well.
 
@@ -876,18 +929,18 @@ console.log("\nGrammar check:", GrammarErrorDetector.detect("They runs every mor
 
 10. **Idiom:** "Let the cat out of the bag" means?
 
-### Level 3 — Advanced
+### Level 3 ? Advanced
 
 11. **Multiple Error Detection:** "Although the team were playing good, but they couldn't win the match due to the fact that their key player was being injured."
 
-12. **Sentence Improvement:** "Hardly had he entered the room when the lights went out." — Is this correct? If not, fix it.
+12. **Sentence Improvement:** "Hardly had he entered the room when the lights went out." ? Is this correct? If not, fix it.
 
 13. **Reading Comprehension (Inference):** Passage about economic theory. Select the most logical inference.
 
-14. **Synonym in Context:** "The speaker's **candid** remarks surprised the audience." — What does "candid" mean here?
+14. **Synonym in Context:** "The speaker's **candid** remarks surprised the audience." ? What does "candid" mean here?
 
 15. **Para-jumble with Connectors:** 4-sentence paragraph where sentences have connector words.
 
 ### Answer Key
 
-1. "She doesn't like coffee" | 2. Plentiful | 3. Optimist | 4. An, a | 5. at | 6. Q-P-R-S | 7. "were" → "was" | 8. Storage, grid infrastructure, and cost | 9. has, a, for | 10. Reveal a secret | 11. Remove "although" or "but" — double conjunction | 12. Correct as is | 14. Frank, honest
+1. "She doesn't like coffee" | 2. Plentiful | 3. Optimist | 4. An, a | 5. at | 6. Q-P-R-S | 7. "were" ? "was" | 8. Storage, grid infrastructure, and cost | 9. has, a, for | 10. Reveal a secret | 11. Remove "although" or "but" ? double conjunction | 12. Correct as is | 14. Frank, honest

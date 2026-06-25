@@ -108,7 +108,7 @@ $$B_{k+1} = B_k + \frac{y_k y_k^T}{y_k^T s_k} - \frac{B_k s_k s_k^T B_k}{s_k^T B
 
 where $s_k = x_{k+1} - x_k$ and $y_k = \nabla f(x_{k+1}) - \nabla f(x_k)$.
 
-**L-BFGS:** Limited-memory version — stores only recent $s_k, y_k$ pairs instead of full matrix.
+**L-BFGS:** Limited-memory version ? stores only recent $s_k, y_k$ pairs instead of full matrix.
 
 ### 9.3 Constrained Optimization
 
@@ -214,7 +214,7 @@ $$\lambda^{k+1} = \lambda^k + \rho(h(x^{k+1}) + g(z^{k+1}) - b)$$
 
 ### 9.8 Applications
 
-**Machine Learning — Empirical Risk Minimization:**
+**Machine Learning ? Empirical Risk Minimization:**
 $$\min_w \frac{1}{n} \sum_{i=1}^n L(y_i, f(x_i, w)) + \lambda \|w\|^2$$
 
 The first term is data fit; the second is regularization (convex if $L$ is convex in $w$).
@@ -247,7 +247,7 @@ $(x_3, y_3) = (0.64, 0.36) - 0.1\langle 1.28, 1.44 \rangle = (0.512, 0.216)$, $f
 
 After 10 iterations: $(0.107, 0.007)$, $f \approx 0.012$. Converging to $(0,0)$.
 
-### Example 2: Linear Programming — Simplex
+### Example 2: Linear Programming ? Simplex
 
 Maximize $z = 3x + 2y$ subject to $x + y \leq 4$, $2x + y \leq 6$, $x, y \geq 0$.
 
@@ -288,7 +288,7 @@ From first two: $2x - 2 = 2y - 4 \implies x - y = -1 \implies x = y - 1$
 
 With $x + y = 2$: $(y-1) + y = 2 \implies 2y = 3 \implies y = 1.5$, $x = 0.5$
 
-$\mu_1 = 2 - 2x = 2 - 1 = 1 \geq 0$ ✓
+$\mu_1 = 2 - 2x = 2 - 1 = 1 \geq 0$ ?
 
 KKT satisfied. The optimal point is $(0.5, 1.5)$ with $f = 0.25 + 0.25 = 0.5$.
 
@@ -325,12 +325,12 @@ function particleSwarm(
   return { x: globalBest, fx: globalBestVal, history };
 }
 
-// Test: minimize f(x,y) = (x-2)² + (y+3)² → min at (2,-3), f=0
+// Test: minimize f(x,y) = (x-2)? + (y+3)? ? min at (2,-3), f=0
 const quad = (x: Vec) => (x[0] - 2) ** 2 + (x[1] + 3) ** 2;
 const pso = particleSwarm(quad, 2, [-10, 10], 30, 100);
 console.log(`PSO quadratic: min at (${pso.x[0].toFixed(4)}, ${pso.x[1].toFixed(4)}), f=${pso.fx.toExponential(4)}`);
 
-// Test: Rastrigin function — many local minima, global min at (0,...,0), f=0
+// Test: Rastrigin function ? many local minima, global min at (0,...,0), f=0
 const rastrigin = (x: Vec) => x.reduce((s, xi) => s + xi ** 2 - 10 * Math.cos(2 * Math.PI * xi) + 10, 0);
 const psoRast = particleSwarm(rastrigin, 2, [-5.12, 5.12], 40, 200);
 console.log(`PSO Rastrigin: min at (${psoRast.x[0].toFixed(4)}, ${psoRast.x[1].toFixed(4)}), f=${psoRast.fx.toFixed(4)}`);
@@ -340,7 +340,7 @@ console.log(`PSO Rastrigin: min at (${psoRast.x[0].toFixed(4)}, ${psoRast.x[1].t
 ```typescript
 function simulatedAnnealing(
   f: (x: Vec) => number, dim: number, bounds: [number, number],
-  maxIter: number = 10000, t0: number = 100, α: number = 0.99
+  maxIter: number = 10000, t0: number = 100, a: number = 0.99
 ): { x: Vec; fx: number } {
   let curr = Vec.from({ length: dim }, () => bounds[0] + Math.random() * (bounds[1] - bounds[0]));
   let currVal = f(curr);
@@ -355,7 +355,7 @@ function simulatedAnnealing(
       curr = cand; currVal = candVal;
       if (candVal < bestVal) { best = [...cand]; bestVal = candVal; }
     }
-    T *= α;
+    T *= a;
   }
   return { x: best, fx: bestVal };
 }
@@ -371,34 +371,34 @@ console.log(`SA Rastrigin: min at (${saRast.x[0].toFixed(4)}, ${saRast.x[1].toFi
 ```typescript
 function penaltyMethod(
   f: (x: Vec) => number,
-  constraints: Array<(x: Vec) => number>,  // gᵢ(x) ≤ 0
+  constraints: Array<(x: Vec) => number>,  // g?(x) = 0
   dim: number, bounds: [number, number],
-  μ0: number = 1, μFactor: number = 10, outerIter: number = 10
+  ?0: number = 1, ?Factor: number = 10, outerIter: number = 10
 ): { x: Vec; fx: number } {
-  let μ = μ0;
+  let ? = ?0;
   let x = Vec.from({ length: dim }, () => bounds[0] + Math.random() * (bounds[1] - bounds[0]));
 
   for (let outer = 0; outer < outerIter; outer++) {
-    // Augmented objective: f(x) + μ * Σ max(0, gᵢ(x))²
+    // Augmented objective: f(x) + ? * S max(0, g?(x))?
     const augF = (p: Vec) => {
       let penalty = 0;
       for (const g of constraints) penalty += Math.max(0, g(p)) ** 2;
-      return f(p) + μ * penalty;
+      return f(p) + ? * penalty;
     };
     const inner = particleSwarm(augF, dim, bounds, 20, 50);
     x = inner.x;
-    μ *= μFactor;
+    ? *= ?Factor;
   }
   return { x, fx: f(x) };
 }
 
-// Minimize f(x,y) = (x-1)² + (y-2)² subject to x + y ≤ 2, x ≥ 0, y ≥ 0
+// Minimize f(x,y) = (x-1)? + (y-2)? subject to x + y = 2, x = 0, y = 0
 // True constrained optimum at (0.5, 1.5), f=0.5
 const constrF = (x: Vec) => (x[0] - 1) ** 2 + (x[1] - 2) ** 2;
 const constr: Array<(x: Vec) => number> = [
-  (x) => x[0] + x[1] - 2,  // x + y ≤ 2
-  (x) => -x[0],            // x ≥ 0
-  (x) => -x[1]             // y ≥ 0
+  (x) => x[0] + x[1] - 2,  // x + y = 2
+  (x) => -x[0],            // x = 0
+  (x) => -x[1]             // y = 0
 ];
 const pen = penaltyMethod(constrF, constr, 2, [0, 2], 1, 10, 5);
 console.log(`Penalty method: min at (${pen.x[0].toFixed(4)}, ${pen.x[1].toFixed(4)}), f=${pen.fx.toFixed(4)}`);
@@ -422,7 +422,7 @@ function subgradientDescent(
   }
   return { x, f: f(x) };
 }
-// f(x) = |x| → subgradient: sign(x)
+// f(x) = |x| ? subgradient: sign(x)
 const sg = subgradientDescent(
   (x: number[]) => Math.abs(x[0]),
   (x: number[]) => [x[0] > 0 ? 1 : x[0] < 0 ? -1 : 0],
@@ -436,22 +436,22 @@ function bfgs1D(f: (x: number) => number, x0: number, maxIter: number = 50, tol:
     const grad = (f(x + h) - f(x - h)) / (2 * h);
     if (Math.abs(grad) < tol) break;
     const dir = -B * grad;
-    let α = 1;
+    let a = 1;
     // Line search (simple backtracking)
-    while (f(x + α * dir) > f(x) + 0.0001 * α * grad * dir) α *= 0.5;
-    const s = α * dir;
+    while (f(x + a * dir) > f(x) + 0.0001 * a * grad * dir) a *= 0.5;
+    const s = a * dir;
     const xNew = x + s;
     const gradNew = (f(xNew + h) - f(xNew - h)) / (2 * h);
-    const γ = gradNew - grad;
+    const ? = gradNew - grad;
     // BFGS update
-    B = B + (s * s) / (s * γ) * (1 + B * γ * γ / (s * γ)) - (s * γ * B + B * γ * s) / (s * γ);
+    B = B + (s * s) / (s * ?) * (1 + B * ? * ? / (s * ?)) - (s * ? * B + B * ? * s) / (s * ?);
     x = xNew;
   }
   return x;
 }
-// Minimize f(x) = x⁴ - 3x³ + 2 (multiple minima)
+// Minimize f(x) = x4 - 3x? + 2 (multiple minima)
 const minx = bfgs1D(x => x * x * x * x - 3 * x * x * x + 2, 2);
-console.log('\nBFGS min x⁴-3x³+2:', minx.toFixed(6), 'f=', (minx ** 4 - 3 * minx ** 3 + 2).toFixed(6));
+console.log('\nBFGS min x4-3x?+2:', minx.toFixed(6), 'f=', (minx ** 4 - 3 * minx ** 3 + 2).toFixed(6));
 
 // --- Interior Point Method (penalty) ---
 function interiorPoint(
@@ -483,12 +483,12 @@ function interiorPoint(
   }
   return { x: x.map(v => +v.toFixed(4)), f: +f(x).toFixed(4) };
 }
-// Minimize x² + y² subject to x + y ≥ 1
+// Minimize x? + y? subject to x + y = 1
 const ip = interiorPoint(
   (x: number[]) => x[0] * x[0] + x[1] * x[1],
   [(x: number[]) => x[0] + x[1] - 1],
   [0.5, 0.5]);
-console.log('\nInterior point min x²+y² s.t. x+y≥1:', `x=${ip.x[0]}, y=${ip.x[1]}, f=${ip.f}`);
+console.log('\nInterior point min x?+y? s.t. x+y=1:', `x=${ip.x[0]}, y=${ip.x[1]}, f=${ip.f}`);
 
 // --- Particle Swarm Optimization ---
 function particleSwarm(
@@ -520,6 +520,98 @@ const ps = particleSwarm(x => x[0] * x[0] + x[1] * x[1] + 2 * x[0] * x[1] - 3 * 
 console.log('\nPSO min f(x,y):', `x=${ps.x[0]}, y=${ps.x[1]}, f=${ps.f}`);
 ```
 
+
+// optimization
+// linear-algebra-calculus implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'optimization', data: { topic: 'linear-algebra-calculus' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// optimization - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'engineering-math demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'engineering-mathematics', chapter: 'optimization' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('engineering-math'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Convexity guarantees global optimality and efficient solution methods
@@ -575,7 +667,7 @@ console.log('\nPSO min f(x,y):', `x=${ps.x[0]}, y=${ps.x[1]}, f=${ps.f}`);
 
 ### Optimization Checklist
 
-1. **Is the problem convex?** If yes, any local minimum is global — use gradient descent or Newton
+1. **Is the problem convex?** If yes, any local minimum is global ? use gradient descent or Newton
 2. **Is it large-scale ($n > 10^5$)?** Use SGD or L-BFGS (avoid full Hessian)
 3. **Are there constraints?** Use KKT conditions or transform to dual
 4. **Is it linear?** Use simplex or interior-point methods
@@ -729,7 +821,7 @@ function simplexStep(tableau: SimplexTableau): SimplexTableau {
   return newTableau;
 }
 
-// Maximize z = 3x + 2y subject to x + y ≤ 4, 2x + y ≤ 6, x,y ≥ 0
+// Maximize z = 3x + 2y subject to x + y = 4, 2x + y = 6, x,y = 0
 // Tableau: [x, y, s1, s2, RHS]
 let tableau: SimplexTableau = [
   [1, 1, 1, 0, 4],    // x + y + s1 = 4

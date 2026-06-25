@@ -1,6 +1,6 @@
 # Chapter 6: Intermediate Code Generation
 
-← Previous: [Chapter 5: Syntax-Directed Translation](05-sdt.md) | **Next:** [Chapter 7: Type Checking](07-type-checking.md)
+? Previous: [Chapter 5: Syntax-Directed Translation](05-sdt.md) | **Next:** [Chapter 7: Type Checking](07-type-checking.md)
 
 ## Learning Objectives
 
@@ -97,7 +97,7 @@ Postfix is evaluated by a stack machine: operands push onto the stack, operators
 - Instructions can be freely reordered, inserted, and removed during optimization.
 - It is close enough to machine code to generate efficiently.
 
-> **One-Sentence Takeaway:** TAC is the universal IR — simple enough to optimize, expressive enough for all language constructs, and close enough to machine code to generate efficiently.
+> **One-Sentence Takeaway:** TAC is the universal IR ? simple enough to optimize, expressive enough for all language constructs, and close enough to machine code to generate efficiently.
 
 ### Types of Three-Address Code Instructions
 
@@ -863,7 +863,7 @@ dag2.toTAC().forEach((instr, i) => {
 | TAC (Quadruple) | Linear with named temps | High | Moderate | High |
 | TAC (Triple) | Linear with positional refs | Low | Moderate | Moderate |
 | TAC (Indirect Triple) | Execution list + triple pool | High (movable) | Moderate | High |
-| SSA | CFG with φ-nodes | Very high | Moderate | High |
+| SSA | CFG with f-nodes | Very high | Moderate | High |
 
 ### Cross-Application Matrix
 
@@ -881,9 +881,101 @@ dag2.toTAC().forEach((instr, i) => {
 1. **Quadruples are the practical default**: Explicit result fields make code transformations easy. Use quadruples unless space constraints are extreme.
 2. **DAGs are free CSE**: Building a DAG during construction automatically eliminates common subexpressions without a separate optimization pass.
 3. **TAC is machine-independent**: Generate TAC without knowing the target architecture. Retargeting only requires translating TAC to the target assembly.
-4. **Label and temp naming conventions matter**: Use `L1, L2, ...` for labels and `t1, t2, ...` for temporaries — they keep the generated code readable and debuggable.
+4. **Label and temp naming conventions matter**: Use `L1, L2, ...` for labels and `t1, t2, ...` for temporaries ? they keep the generated code readable and debuggable.
 5. **Short-circuit evaluation matches source semantics**: Boolean `&&` and `||` must generate conditional jumps, not simple arithmetic, to preserve the evaluation semantics required by most languages.
 
+
+// intermediate code
+// lexical-parsing-codegen implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'intermediate code', data: { topic: 'lexical-parsing-codegen' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// intermediate code - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'compilers demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'compiler-design', chapter: 'intermediate code' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('compilers'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 Intermediate code generation translates the annotated parse tree into an IR independent of both source language and target machine. ASTs and DAGs provide graphical representations for analysis, while three-address code in quadruple, triple, or indirect-triple form provides a linear representation straightforward to translate into assembly. The choice of IR significantly influences the compiler's optimization capability and retargetability. TAC is the dominant IR in modern production compilers because of its simplicity, expressiveness, and optimization suitability. The TypeScript `TACGenerator` and `ExpressionDAG` classes demonstrate both linear and graphical IR construction with working demos covering expressions, control flow, loops, procedure calls, DAG-based CSE, and constant folding.

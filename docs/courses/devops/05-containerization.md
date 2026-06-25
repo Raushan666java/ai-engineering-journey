@@ -225,10 +225,10 @@ Container runtimes implement the OCI runtime specification and can be categorize
 | Firecracker | MicroVM | Lightweight VM | Near-native | AWS Lambda/Fargate |
 
 **Choosing a runtime:**
-- Standard workloads with trusted containers → `runc` or `crun`
-- Multi-tenant SaaS with untrusted code → `Kata Containers`
-- Serverless/functions with fast startup → `Firecracker`
-- High-security environments with untrusted images → `gVisor`
+- Standard workloads with trusted containers ? `runc` or `crun`
+- Multi-tenant SaaS with untrusted code ? `Kata Containers`
+- Serverless/functions with fast startup ? `Firecracker`
+- High-security environments with untrusted images ? `gVisor`
 
 ### Container Storage Patterns
 
@@ -243,9 +243,9 @@ Container storage follows ephemeral-by-default with options for persistence:
 | CSI (Container Storage Interface) | Plugin-based storage for orchestrators | Orchestrator-managed | Production stateful workloads |
 
 **Container storage best practices:**
-- Separate compute from storage — use managed databases instead of database containers
+- Separate compute from storage � use managed databases instead of database containers
 - Use persistent volumes for logs that must survive container restarts
-- Avoid storing secrets in container images — use secret injection mechanisms
+- Avoid storing secrets in container images � use secret injection mechanisms
 - Configure storage quotas per container to prevent disk exhaustion
 - Use ReadWriteMany volumes for shared file access across replicas
 
@@ -340,7 +340,7 @@ interface ScanResult {
 
 class ContainerSecurityScanner {
   async scanImage(imageName: string, tag: string): Promise<ScanResult> {
-    console.log(`🔍 Scanning ${imageName}:${tag}...`);
+    console.log(`?? Scanning ${imageName}:${tag}...`);
 
     // Simulated Trivy scan integration
     const results: Vulnerability[] = [
@@ -366,7 +366,7 @@ class ContainerSecurityScanner {
   generateReport(result: ScanResult): string {
     let report = `# Container Security Scan Report\n\n`;
     report += `**Image:** ${result.image}\n`;
-    report += `**Status:** ${result.passed ? '✅ PASSED' : '❌ FAILED'}\n\n`;
+    report += `**Status:** ${result.passed ? '? PASSED' : '? FAILED'}\n\n`;
 
     if (result.vulnerabilities.length === 0) {
       report += 'No vulnerabilities found.\n';
@@ -377,9 +377,9 @@ class ContainerSecurityScanner {
     report += `|----------|---------|-----------|-------|----|\n`;
 
     for (const v of result.vulnerabilities) {
-      const sev = v.severity === 'CRITICAL' ? '🔴' :
-                  v.severity === 'HIGH' ? '🟠' :
-                  v.severity === 'MEDIUM' ? '🟡' : '⚪';
+      const sev = v.severity === 'CRITICAL' ? '??' :
+                  v.severity === 'HIGH' ? '??' :
+                  v.severity === 'MEDIUM' ? '??' : '?';
       report += `| ${sev} ${v.severity} | ${v.package} | ${v.installedVersion} | ${v.fixedVersion} | ${v.id} |\n`;
     }
 
@@ -649,7 +649,7 @@ class ContainerSecurityScanner {
     return {
       passed,
       violations,
-      summary: passed ? '✅ Security scan passed all policies' : `❌ ${violations.length} policy violation(s)`,
+      summary: passed ? '? Security scan passed all policies' : `? ${violations.length} policy violation(s)`,
     };
   }
 
@@ -658,7 +658,7 @@ class ContainerSecurityScanner {
       `**Image:** ${result.image}:${result.tag}\n` +
       `**Scanned at:** ${result.scanTimestamp.toISOString()}\n` +
       `**Vulnerabilities:** CRITICAL: ${result.totalBySeverity['CRITICAL'] || 0}, HIGH: ${result.totalBySeverity['HIGH'] || 0}, MEDIUM: ${result.totalBySeverity['MEDIUM'] || 0}, LOW: ${result.totalBySeverity['LOW'] || 0}\n\n` +
-      `**Policy Result:** ${policyResult.passed ? '✅ PASSED' : '❌ BLOCKED'}\n` +
+      `**Policy Result:** ${policyResult.passed ? '? PASSED' : '? BLOCKED'}\n` +
       (policyResult.violations.length > 0 ? policyResult.violations.map(v => `- ${v}\n`).join('') : '') + '\n' +
       (result.vulnerabilities.length > 0
         ? `| ID | Package | Severity | Fixed |\n|----|---------|----------|-------|\n` +
@@ -783,7 +783,7 @@ class RegistryCleanupManager {
   generateReport(plan: CleanupPlan): string {
     return `## Registry Cleanup Plan\n\n` +
       `**To delete:** ${plan.tagsToDelete.length} tags\n` +
-      `**Space reclaimed:** ${plan.reclaimedSizeMB}MB (≈ $${plan.estimatedSavings}/month)\n` +
+      `**Space reclaimed:** ${plan.reclaimedSizeMB}MB (� $${plan.estimatedSavings}/month)\n` +
       `**After cleanup:** ${plan.afterCount} tags\n\n` +
       plan.tagsToDelete.slice(0, 20).map(t =>
         `- ${t.name} (${t.sizeMB}MB, ${Math.round((Date.now() - t.created.getTime()) / 86400000)} days old)`
@@ -837,6 +837,48 @@ console.log(cleanupManager.generateReport(cleanupManager.planCleanup(tags)));
 
 ---
 
+
+// containerization
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'containerization', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Containers provide lightweight, isolated environments that share the host kernel, unlike VMs which include a full guest OS.
@@ -871,7 +913,7 @@ services:
 **Seccomp Profiles:** Restrict system calls available to the container:
 ```text
 # Default Docker seccomp profile blocks 44 of 300+ syscalls
-# Custom profile — allow only specific syscalls
+# Custom profile � allow only specific syscalls
 {
   "defaultAction": "SCMP_ACT_ERRNO",
   "architectures": ["SCMP_ARCH_X86_64"],
@@ -925,9 +967,9 @@ class ContainerSecurityBenchmarker {
     let report = `# Container Security Benchmark Report\n\n`;
     report += `**Score:** ${passed}/${results.length} checks passed\n\n`;
 
-    failed.forEach(f => report += `❌ [${f.severity.toUpperCase()}] ${f.category}: ${f.check}\n`);
+    failed.forEach(f => report += `? [${f.severity.toUpperCase()}] ${f.category}: ${f.check}\n`);
     report += '\n';
-    results.filter(r => r.passed).forEach(p => report += `✅ [${p.severity.toUpperCase()}] ${p.category}: ${p.check}\n`);
+    results.filter(r => r.passed).forEach(p => report += `? [${p.severity.toUpperCase()}] ${p.category}: ${p.check}\n`);
 
     return report;
   }

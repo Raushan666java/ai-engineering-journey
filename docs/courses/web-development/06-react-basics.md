@@ -1,4 +1,4 @@
-# Chapter 6 â€” React Basics
+# Chapter 6 — React Basics
 
 > **Previous:** [05-es6-plus](./05-es6-plus.md) | **Next:** [07-react-advanced](./07-react-advanced.md)
 
@@ -17,13 +17,13 @@ By the end of this chapter, you will be able to:
 |JSX|HTML-like syntax that compiles to `React.createElement` calls|Use `className` instead of `class`, camelCase for style properties|
 |Components|Function components are the modern standard for defining reusable UI|Keep components small and focused on a single responsibility|
 |Props|Read-only inputs passed from parent to child components|Use default parameter values for optional props|
-|State (useState)|Mutable data that triggers re-renders when changed|Never mutate state directly — always use the setter function|
+|State (useState)|Mutable data that triggers re-renders when changed|Never mutate state directly � always use the setter function|
 |Effects (useEffect)|Synchronize components with external systems|Always include proper cleanup functions and correct dependency arrays|
-|Conditional Rendering|Use ternaries, `&&`, and conditional variables to render different UI|Avoid ternary nesting — extract into variables for complex conditions|
+|Conditional Rendering|Use ternaries, `&&`, and conditional variables to render different UI|Avoid ternary nesting � extract into variables for complex conditions|
 
 ## Chapter Roadmap
 
-> **One-Sentence Takeaway:** Props are immutable inputs from parent to child — never modify them directly.
+> **One-Sentence Takeaway:** Props are immutable inputs from parent to child � never modify them directly.
 
 ```mermaid
 graph TD
@@ -108,7 +108,7 @@ function Welcome({ name, age }) {
 }
 ```
 
-**Class components** (legacy â€” maintained for historical context):
+**Class components** (legacy — maintained for historical context):
 
 ```jsx
 class Welcome extends React.Component {
@@ -170,7 +170,7 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    setCount((prev) => prev + 1); // Functional update â€” safe in concurrent mode
+    setCount((prev) => prev + 1); // Functional update — safe in concurrent mode
   };
 
   const reset = () => setCount(0);
@@ -186,8 +186,8 @@ function Counter() {
 ```
 
 **State rules:**
-- Do not mutate state directly â€” always use the setter function.
-- State updates are asynchronous â€” reading state immediately after `setState` yields the old value.
+- Do not mutate state directly — always use the setter function.
+- State updates are asynchronous — reading state immediately after `setState` yields the old value.
 - For objects and arrays, create new references:
 
 ```jsx
@@ -245,7 +245,7 @@ function UserList() {
     fetchUsers();
 
     return () => {
-      cancelled = true; // Cleanup â€” prevents state updates on unmounted component
+      cancelled = true; // Cleanup — prevents state updates on unmounted component
     };
   }, []); // Empty dependency array = run once on mount
 
@@ -324,7 +324,7 @@ function TodoList({ items }) {
 **Key rules:**
 - Use stable IDs from data (`item.id`), never array index unless the list is static and will not be reordered.
 - Keys must be unique among siblings, not globally.
-- Keys are not passed as props â€” use a separate prop if the child needs the original ID.
+- Keys are not passed as props — use a separate prop if the child needs the original ID.
 
 ### 6.8 Forms
 
@@ -459,13 +459,13 @@ function FahrenheitDisplay({ value }) {
 
 
 > [!TIP]
-> Use the functional update form `setCount(prev => prev + 1)` when the new state depends on the previous state — it's safe in concurrent mode.
+> Use the functional update form `setCount(prev => prev + 1)` when the new state depends on the previous state � it's safe in concurrent mode.
 
 > [!WARNING]
 > Never use array index as a `key` prop for dynamic lists that can be reordered, filtered, or have items inserted/removed.
 
 > [!REMEMBER]
-> Effects run after every render by default. Always specify the dependency array — omitting it can cause infinite loops or stale closures.
+> Effects run after every render by default. Always specify the dependency array � omitting it can cause infinite loops or stale closures.
 
 
 
@@ -551,7 +551,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**C) Always create a new reference when updating objects in state — spread the previous state and override the specific property.**
+**C) Always create a new reference when updating objects in state � spread the previous state and override the specific property.**
 
 </details>
 
@@ -631,7 +631,7 @@ class VirtualDOMReconciler {
         if (!oldNode || !newNode) return { actions: [], updated: false };
 
         if (oldNode.tag !== newNode.tag) {
-            actions.push(`REPLACE ${oldNode.tag} → ${newNode.tag}[${index}]`);
+            actions.push(`REPLACE ${oldNode.tag} ? ${newNode.tag}[${index}]`);
             return { actions, updated: true };
         }
 
@@ -681,11 +681,11 @@ class HooksDependencyChecker {
             }
             const hasUndefined = effect.deps.some(d => d === undefined);
             if (hasUndefined) {
-                warnings.push(`Effect #${i}: Contains undefined dependency — may cause infinite loop`);
+                warnings.push(`Effect #${i}: Contains undefined dependency � may cause infinite loop`);
             }
             const hasObjects = effect.deps.some(d => typeof d === "object" && d !== null);
             if (hasObjects) {
-                warnings.push(`Effect #${i}: Object/reference dependency — referentially unstable, wrap in useMemo`);
+                warnings.push(`Effect #${i}: Object/reference dependency � referentially unstable, wrap in useMemo`);
             }
         }
         return { valid: warnings.length === 0, warnings };
@@ -738,6 +738,48 @@ console.log("Hook check:", JSON.stringify(HooksDependencyChecker.validate([
 ])));
 ```
 
+
+// react basics
+// fullstack-frontend-backend implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'react basics', data: { topic: 'fullstack-frontend-backend' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 > **One-Sentence Takeaway:** `useEffect` handles side effects with a cleanup function and dependency array for precise execution control.
@@ -770,11 +812,11 @@ console.log("Hook check:", JSON.stringify(HooksDependencyChecker.validate([
 
 ### Practical Takeaways
 
-1. **Components return JSX trees** — every component is a function returning a single root element. Use fragments (`<>...</>`) to avoid extra DOM nodes.
-2. **State drives the UI** — never mutate state directly. Use the setter function and treat state as immutable.
-3. **Keep components small** — if a component does more than one thing, split it. Aim for single-responsibility components under 50 lines.
-4. **Lift state up, drill props down** — shared state lives in the closest common ancestor. Pass data via props, not global state.
-5. **Effects have cleanup** — every `useEffect` that subscribes, timers, or event listeners must return a cleanup function to prevent memory leaks.
+1. **Components return JSX trees** � every component is a function returning a single root element. Use fragments (`<>...</>`) to avoid extra DOM nodes.
+2. **State drives the UI** � never mutate state directly. Use the setter function and treat state as immutable.
+3. **Keep components small** � if a component does more than one thing, split it. Aim for single-responsibility components under 50 lines.
+4. **Lift state up, drill props down** � shared state lives in the closest common ancestor. Pass data via props, not global state.
+5. **Effects have cleanup** � every `useEffect` that subscribes, timers, or event listeners must return a cleanup function to prevent memory leaks.
 
 ### Challenge Problem
 

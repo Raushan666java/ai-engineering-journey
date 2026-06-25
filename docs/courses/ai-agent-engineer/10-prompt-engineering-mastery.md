@@ -1,4 +1,4 @@
-# Chapter 10 â€” Prompt Engineering Mastery
+# Chapter 10 — Prompt Engineering Mastery
 
 **Duration:** 2 weeks, ~20 hours
 **Goal:** Master advanced prompt patterns, structured output design, prompt management at scale, and injection defense. Move beyond copying prompts to designing prompt systems.
@@ -29,7 +29,7 @@
 The most impactful prompt pattern. Elicits step-by-step reasoning before the answer.
 
 ```python
-# Zero-shot CoT â€” simply add "think step by step"
+# Zero-shot CoT — simply add "think step by step"
 def zero_shot_cot(question: str) -> str:
     response = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -40,7 +40,7 @@ def zero_shot_cot(question: str) -> str:
     )
     return response.choices[0].message.content
 
-# Few-shot CoT â€” provide examples of reasoning chains
+# Few-shot CoT — provide examples of reasoning chains
 def few_shot_cot(question: str) -> str:
     response = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -49,8 +49,8 @@ def few_shot_cot(question: str) -> str:
             {"role": "user", "content": """Q: A store has 120 apples. It sells 1/3 of them in the morning and 1/4 of the remaining in the afternoon. How many apples are left?
 A: 
 1. Start with 120 apples
-2. Morning: sold 1/3 â†’ 120 * 1/3 = 40 sold, 80 remaining
-3. Afternoon: sold 1/4 of remaining â†’ 80 * 1/4 = 20 sold, 60 remaining
+2. Morning: sold 1/3 ? 120 * 1/3 = 40 sold, 80 remaining
+3. Afternoon: sold 1/4 of remaining ? 80 * 1/4 = 20 sold, 60 remaining
 4. Final answer: 60 apples left
 
 Q: A class has 40 students. 60% are girls and the rest are boys. If 25% of girls and 50% of boys wear glasses, how many students wear glasses?
@@ -69,7 +69,7 @@ A:
 2. Time for second segment: 120/40 = 3 hours
 3. Total distance: 240 + 120 = 360 km
 4. Total time: 4 + 3 = 7 hours
-5. Average speed: 360/7 â‰ˆ 51.4 km/h
+5. Average speed: 360/7 ˜ 51.4 km/h
 6. Final answer: approximately 51.4 km/h
 
 Q: """ + question}
@@ -550,7 +550,7 @@ code_review_prompt = build_system_prompt(
         "Focus on logic errors first, then style.",
         "Provide specific fix suggestions, not general advice.",
         "If you find a security vulnerability, mark it CRITICAL.",
-        "Be concise â€” max 5 bullet points per review."
+        "Be concise — max 5 bullet points per review."
     ],
     output_format="Markdown with sections: Issues Found, Suggestions, Positive Notes.",
     examples=[
@@ -569,7 +569,7 @@ class DynamicPersona:
     DOMAINS = {
         "legal": {
             "persona": "a legal document reviewer. Be precise and cite specific clauses.",
-            "constraints": ["Quote exact language from documents.", "Flag ambiguous phrasing.", "Never give legal advice â€” only document analysis."]
+            "constraints": ["Quote exact language from documents.", "Flag ambiguous phrasing.", "Never give legal advice — only document analysis."]
         },
         "medical": {
             "persona": "a medical information assistant. Be cautious and evidence-based.",
@@ -987,8 +987,8 @@ class PromptInjectionDefense:
         """Remove or neutralize dangerous patterns."""
         # Strip known injection phrases
         text = re.sub(r"(?i)(ignore|disregard|override)\s+(all\s+)?(previous|above).*", "", text)
-        text = re.sub(r"(?i)system\s*(prompt|message).*?[:ï¼š]\s*", "", text)
-        text = re.sub(r"(?i)new\s+(instructions|prompt|system).*[:ï¼š]\s*", "", text)
+        text = re.sub(r"(?i)system\s*(prompt|message).*?[::]\s*", "", text)
+        text = re.sub(r"(?i)new\s+(instructions|prompt|system).*[::]\s*", "", text)
         return text.strip()
 
     @classmethod
@@ -1033,6 +1033,32 @@ def safe_completion(user_input: str, system_prompt: str) -> str:
 
 ---
 
+
+interface TestResult { name: string; passed: boolean; score: number; details: string }
+class AIEvaluator {
+  constructor(private llm: (prompt:string)=>Promise<string>) {}
+  async evaluate(output: string, criteria: string[]): Promise<TestResult[]> {
+    const results: TestResult[] = []
+    for(const c of criteria) {
+      const prompt = `Rate the following output on "${c}" from 0-1:\n${output}\nScore:`
+      const response = await this.llm(prompt); const score = parseFloat(response)||0
+      results.push({name:c,passed:score>=0.7,score,details:`Score:${score}`})
+    }
+    return results
+  }
+}
+class TestSuite {
+  private tests: Array<{name:string;fn:()=>Promise<{passed:boolean;details:string}>>} = []
+  add(name: string, fn: ()=>Promise<{passed:boolean;details:string}>): void { this.tests.push({name,fn}) }
+  async run(): Promise<{total:number;passed:number;failed:number;results:string[]}> {
+    let passed=0; const results:string[] = []
+    for(const t of this.tests) try { const r = await t.fn()
+      if(r.passed){passed++;results.push(`PASS ${t.name}`)} else results.push(`FAIL ${t.name}: ${r.details}`)
+    } catch(e) { results.push(`FAIL ${t.name}: ${(e as Error).message}`) }
+    return {total:this.tests.length,passed,failed:this.tests.length-passed,results}
+  }
+}
+export { AIEvaluator, TestSuite }
 ## Exercises
 
 1. **Prompt pattern comparison:** Pick a problem (e.g., "Explain the difference between supervised and unsupervised learning"). Write prompts using zero-shot, few-shot CoT, and self-consistency CoT. Compare output quality.

@@ -1,4 +1,4 @@
-﻿# Chapter 8: Serverless Computing
+# Chapter 8: Serverless Computing
 
 > **Previous:** [Chapter 7: Cloud Security](./07-cloud-security.md) | **Next:** [Chapter 9: Containerization](./09-containerization.md)
 
@@ -294,7 +294,7 @@ console.log("Monthly cost estimate:", thumbnailFunction.estimateMonthlyCost(1000
 - **VPC Access:** Functions in VPC use Elastic Network Interfaces (ENIs). Consider VPC endpoints instead.
 - **Function URLs:** Public HTTP endpoints created directly on Lambda. Authentication via IAM or resource policy.
 - **Code Signing:** Sign and verify function code to ensure only trusted code runs.
-- **Lambda@Edge:** For functions at CloudFront edge locations — stricter execution limits.
+- **Lambda@Edge:** For functions at CloudFront edge locations ? stricter execution limits.
 
 \\\	ypescript
 interface LambdaSecurityConfig {
@@ -401,7 +401,7 @@ async function apiHandler(event: APIGatewayEvent): Promise<{ statusCode: number;
 }
 \\\
 
-> **One-Sentence Takeaway:** Serverless lets you focus entirely on business logic while the cloud provider handles scaling, availability, and infrastructure — but requires rethinking state management and cold starts.
+> **One-Sentence Takeaway:** Serverless lets you focus entirely on business logic while the cloud provider handles scaling, availability, and infrastructure ? but requires rethinking state management and cold starts.
 
 > **Pro Tip:** Use Reserved Concurrency to protect critical functions from being throttled by other functions in the same account. A rogue function with a bug can consume all account concurrency otherwise.
 
@@ -713,13 +713,105 @@ console.log("Memory optimization:", JSON.stringify(opt, null, 2));
 ```
 ```
 
+
+// serverless
+// iaas-paas-saas-cloud-native implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'serverless', data: { topic: 'iaas-paas-saas-cloud-native' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// serverless - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'cloud-services demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'cloud-computing', chapter: 'serverless' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('cloud-services'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Serverless computing provides automatic scaling and pay-per-use pricing with no server management.
 - Lambda supports synchronous, asynchronous, and stream-based invocation patterns.
 - Cold starts are an inherent characteristic but can be mitigated with Provisioned Concurrency.
 - Serverless applications are event-driven, decoupling producers and consumers.
-- Functions are stateless — state must be stored in external services.
+- Functions are stateless ? state must be stored in external services.
 - IAM roles with least privilege are essential for security.
 - Step Functions orchestrates multi-step workflows across Lambda and other services.
 - Cost management involves balancing Provisioned Concurrency against per-invocation GB-second pricing.
@@ -929,7 +1021,7 @@ Nordstrom migrated their e-commerce notification platform to a fully serverless 
 - **SQS** for queuing and decoupling notification generation from delivery
 - **SNS** for fan-out to multiple channels
 - **DynamoDB** for storing notification templates and delivery status
-- **Step Functions** for orchestrating multi-step notification workflows (e.g., order confirmation → shipping update → delivery)
+- **Step Functions** for orchestrating multi-step notification workflows (e.g., order confirmation ? shipping update ? delivery)
 - **EventBridge** for scheduling recurring notifications
 
 **Results:**
@@ -943,7 +1035,7 @@ Nordstrom migrated their e-commerce notification platform to a fully serverless 
 
 ### Additional Exercises
 
-6. **Step Functions Workflow:** Design a Step Functions state machine for a serverless document approval workflow: user uploads document → Lambda extracts text → SNS notifies approvers → wait for approval (callback pattern) → if approved, store in S3 and notify user; if rejected, notify with reason.
+6. **Step Functions Workflow:** Design a Step Functions state machine for a serverless document approval workflow: user uploads document ? Lambda extracts text ? SNS notifies approvers ? wait for approval (callback pattern) ? if approved, store in S3 and notify user; if rejected, notify with reason.
 
 7. **Cost Optimization:** A Lambda function runs 10M times/month with 512 MB memory, 2s average duration, and 50 Provisioned Concurrency. Calculate the monthly cost. Then suggest three cost optimization strategies and estimate savings for each.
 

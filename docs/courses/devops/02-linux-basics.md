@@ -70,38 +70,38 @@ Understanding this hierarchy is crucial for DevOps work because logs live in `/v
 ### Essential Command-Line Operations
 
 **Navigation and File Operations:**
-- `pwd` — Print working directory
-- `ls -la` — List all files with details
-- `cd ~/project` — Change directory
-- `cp -r src/ dest/` — Copy recursively
-- `mv old new` — Move or rename
-- `rm -rf dir/` — Remove directory recursively (dangerous)
-- `mkdir -p a/b/c` — Create nested directories
-- `touch file.txt` — Create empty file or update timestamp
-- `find /path -name "*.log"` — Search for files
+- `pwd` � Print working directory
+- `ls -la` � List all files with details
+- `cd ~/project` � Change directory
+- `cp -r src/ dest/` � Copy recursively
+- `mv old new` � Move or rename
+- `rm -rf dir/` � Remove directory recursively (dangerous)
+- `mkdir -p a/b/c` � Create nested directories
+- `touch file.txt` � Create empty file or update timestamp
+- `find /path -name "*.log"` � Search for files
 
 **File Viewing:**
-- `cat file` — Display entire file
-- `less file` — Scroll through file (press `q` to quit)
-- `head -20 file` — First 20 lines
-- `tail -f file` — Follow file in real-time (crucial for logs)
-- `nl file` — Numbered lines
+- `cat file` � Display entire file
+- `less file` � Scroll through file (press `q` to quit)
+- `head -20 file` � First 20 lines
+- `tail -f file` � Follow file in real-time (crucial for logs)
+- `nl file` � Numbered lines
 
 **Process Management:**
-- `ps aux` — All processes with details
-- `top` or `htop` — Interactive process viewer
-- `kill -9 PID` — Force kill process
-- `pgrep -f pattern` — Search processes by name
-- `pkill -f pattern` — Kill processes by pattern
-- `nice -n 10 command` — Run with lower priority
+- `ps aux` � All processes with details
+- `top` or `htop` � Interactive process viewer
+- `kill -9 PID` � Force kill process
+- `pgrep -f pattern` � Search processes by name
+- `pkill -f pattern` � Kill processes by pattern
+- `nice -n 10 command` � Run with lower priority
 
 **System Information:**
-- `uname -a` — Kernel version and system info
-- `df -h` — Disk space usage
-- `du -sh /path` — Directory size
-- `free -h` — Memory usage
-- `uptime` — System uptime and load average
-- `lscpu` — CPU information
+- `uname -a` � Kernel version and system info
+- `df -h` � Disk space usage
+- `du -sh /path` � Directory size
+- `free -h` � Memory usage
+- `uptime` � System uptime and load average
+- `lscpu` � CPU information
 
 ### File Permissions
 
@@ -110,10 +110,10 @@ Every file and directory has three permission sets (owner, group, others) with t
 ```text
 -rwxr-xr--  1 user group  1024 Jun 24 10:00 script.sh
 |  |  |  |
-|  |  |  └─ Others: read only (r--)
-|  |  └──── Group: read and execute (r-x)
-|  └─────── Owner: read, write, execute (rwx)
-└────────── File type (- for file, d for directory)
+|  |  |  +- Others: read only (r--)
+|  |  +---- Group: read and execute (r-x)
+|  +------- Owner: read, write, execute (rwx)
++---------- File type (- for file, d for directory)
 ```
 
 **Numeric permissions (octal):**
@@ -133,9 +133,9 @@ chmod -R 755 directory/  # Recursively set permissions
 ### Pipes, Redirection, and Streams
 
 Linux uses three standard I/O streams:
-- **stdin** (0) — Input to command
-- **stdout** (1) — Normal output
-- **stderr** (2) — Error output
+- **stdin** (0) � Input to command
+- **stdout** (1) � Normal output
+- **stderr** (2) � Error output
 
 **Redirection operators:**
 ```text
@@ -155,7 +155,7 @@ cat access.log | cut -d' ' -f1 | sort | uniq -c | sort -rn | head -10
 
 ### Text Processing Power Tools
 
-**`grep` — Pattern searching:**
+**`grep` � Pattern searching:**
 ```text
 grep "ERROR" app.log                    # Find lines containing ERROR
 grep -v "DEBUG" app.log                 # Exclude DEBUG lines
@@ -166,7 +166,7 @@ grep -c "pattern" file                  # Count matches
 grep -A 5 -B 5 "ERROR" log              # 5 lines after and before match
 ```
 
-**`sed` — Stream editor:**
+**`sed` � Stream editor:**
 ```text
 sed -i 's/old/new/g' file               # Replace all occurrences in-place
 sed -n '/ERROR/p' log                   # Print only ERROR lines
@@ -175,7 +175,7 @@ sed '1,10d' file                        # Delete first 10 lines
 sed 's/  */,/g' data                    # Convert spaces to commas
 ```
 
-**`awk` — Pattern scanning and processing:**
+**`awk` � Pattern scanning and processing:**
 ```text
 awk '{print $1}' file                   # Print first column
 awk -F: '{print $1, $3}' /etc/passwd   # Use : as delimiter
@@ -648,7 +648,7 @@ class ShellScriptValidator {
 
   generateReport(report: ValidationReport): string {
     return `## Shell Script Validation\n\n` +
-      `**Score:** ${report.score}/100 | **Pass:** ${report.pass ? '✅' : '❌'}\n` +
+      `**Score:** ${report.score}/100 | **Pass:** ${report.pass ? '?' : '?'}\n` +
       `**Lines:** ${report.script.lineCount} | **Functions:** ${report.script.functionCount}\n\n` +
       `| Line | Severity | Message |\n` +
       `|------|----------|---------|\n` +
@@ -942,14 +942,56 @@ flowchart TD
 | Filesystem | `df` (space used) | `inode` count | `dmesg` FS errors |
 
 **Quick triage flow:**
-1. `uptime` → load averages (if > CPU cores, saturation)
-2. `dmesg -T | tail` → kernel errors (OOM, disk I/O errors)
-3. `vmstat 1` → run queue, swapping, context switches
-4. `mpstat -P ALL 1` → per-CPU utilization
-5. `pidstat 1` → top processes by CPU
-6. `iostat -xz 1` → disk I/O and await times
-7. `sar -n DEV 1` → network throughput and errors
+1. `uptime` ? load averages (if > CPU cores, saturation)
+2. `dmesg -T | tail` ? kernel errors (OOM, disk I/O errors)
+3. `vmstat 1` ? run queue, swapping, context switches
+4. `mpstat -P ALL 1` ? per-CPU utilization
+5. `pidstat 1` ? top processes by CPU
+6. `iostat -xz 1` ? disk I/O and await times
+7. `sar -n DEV 1` ? network throughput and errors
 
+
+// git
+// cicd-infrastructure-automation implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'git', data: { topic: 'cicd-infrastructure-automation' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - The Linux filesystem hierarchy (FHS) standardizes where configuration, log, and binary files reside.

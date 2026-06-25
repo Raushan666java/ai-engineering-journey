@@ -20,12 +20,12 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Maximum Margin Hyperplane | SVM finds the hyperplane maximizing distance between classes | Prioritize margin maximization for better generalization |
-| Support Vectors | Only closest points define the decision boundary | SVM is memory-efficient — minority of points determine the model |
+| Support Vectors | Only closest points define the decision boundary | SVM is memory-efficient ? minority of points determine the model |
 | Hard vs. Soft Margin | Soft margin introduces slack variables and C parameter | Tune C via cross-validation to balance margin vs. misclassification |
 | Kernel Trick | Maps data implicitly to higher dimensions | RBF kernel is a strong default for non-linear problems |
 | C Parameter | Controls tradeoff between wide margin and training error | Small C for high-dimensional sparse data; large C when clean separation |
 | Gamma ($\gamma$) | Defines radius of influence of a single training example | High gamma causes overfitting; low gamma causes underfitting |
-| Dual Formulation | Expresses SVM in terms of dot products — enables kernels | The kernel trick emerges naturally from the dual form |
+| Dual Formulation | Expresses SVM in terms of dot products ? enables kernels | The kernel trick emerges naturally from the dual form |
 | Lagrange Duality | Converts constrained optimization to unconstrained dual | Support vectors correspond to non-zero Lagrange multipliers |
 
 ## Chapter Roadmap
@@ -53,7 +53,7 @@ flowchart TD
 
 ### The Maximum Margin Hyperplane
 
-A Support Vector Machine (SVM) is a discriminative classifier that finds an optimal hyperplane to separate classes. While many hyperplanes can separate the data, SVM seeks the one with the **maximum margin** — the largest distance between the hyperplane and the closest points from either class.
+A Support Vector Machine (SVM) is a discriminative classifier that finds an optimal hyperplane to separate classes. While many hyperplanes can separate the data, SVM seeks the one with the **maximum margin** ? the largest distance between the hyperplane and the closest points from either class.
 
 **Why maximum margin?**
 - Larger margins correlate with better generalization (lower VC dimension)
@@ -68,7 +68,7 @@ Given a hyperplane $\mathbf{w}^T\mathbf{x} + b = 0$:
 
 $$\hat{\gamma}^{(i)} = y^{(i)}(\mathbf{w}^T\mathbf{x}^{(i)} + b)$$
 
-The functional margin is positive if the point is correctly classified. Its magnitude is a confidence measure — larger values indicate the point is farther from the boundary.
+The functional margin is positive if the point is correctly classified. Its magnitude is a confidence measure ? larger values indicate the point is farther from the boundary.
 
 **Geometric margin** is the actual Euclidean distance from the point to the hyperplane:
 
@@ -117,7 +117,7 @@ The **Karush-Kuhn-Tucker (KKT)** conditions for the SVM optimization state that 
 $$\alpha_i \left[ y^{(i)}(\mathbf{w}^T\mathbf{x}^{(i)} + b) - 1 \right] = 0$$
 
 This means:
-- If $\alpha_i = 0$, the constraint is inactive — the point does not affect the model
+- If $\alpha_i = 0$, the constraint is inactive ? the point does not affect the model
 - If $\alpha_i > 0$ (support vector), the point lies exactly on the margin boundary: $y^{(i)}(\mathbf{w}^T\mathbf{x}^{(i)} + b) = 1$
 
 Only the support vectors determine the decision boundary. Removing any non-support vector leaves the model unchanged.
@@ -133,8 +133,8 @@ Subject to:
 $$y^{(i)}(\mathbf{w}^T\mathbf{x}^{(i)} + b) \geq 1 - \xi_i, \quad \xi_i \geq 0$$
 
 **The C parameter** controls the penalty:
-- **Large C**: High penalty for violations → narrow margin, few support vectors, may overfit
-- **Small C**: Low penalty for violations → wide margin, many support vectors, may underfit
+- **Large C**: High penalty for violations ? narrow margin, few support vectors, may overfit
+- **Small C**: Low penalty for violations ? wide margin, many support vectors, may underfit
 
 The dual form with soft margin becomes:
 
@@ -174,8 +174,8 @@ Creates polynomial decision boundaries of degree $d$. With $d=2$, it captures al
 $$K(\mathbf{x}_i, \mathbf{x}_j) = \exp(-\gamma \|\mathbf{x}_i - \mathbf{x}_j\|^2)$$
 
 Maps to an infinite-dimensional space. Most popular default kernel. The $\gamma$ parameter controls the influence radius:
-- Small $\gamma$: Each point influences a large region → smoother boundary (high bias)
-- Large $\gamma$: Each point influences only nearby points → wiggly boundary (high variance)
+- Small $\gamma$: Each point influences a large region ? smoother boundary (high bias)
+- Large $\gamma$: Each point influences only nearby points ? wiggly boundary (high variance)
 
 **Sigmoid Kernel**:
 $$K(\mathbf{x}_i, \mathbf{x}_j) = \tanh(\gamma \mathbf{x}_i \cdot \mathbf{x}_j + r)$$
@@ -284,14 +284,14 @@ class SVM {
                 for (let i = 0; i < n; i++) {
                     const margin = y[i] * (this.decisionFunction(X[i]));
                     if (margin < 1) {
-                        // Misclassified or within margin — update with gradient
+                        // Misclassified or within margin ? update with gradient
                         for (let j = 0; j < d; j++) {
                             this.weights[j] -= this.learningRate * (-this.C * y[i] * X[i][j] + this.weights[j] / n);
                         }
                         this.bias -= this.learningRate * (-this.C * y[i]);
                         totalLoss += (1 - margin);
                     } else {
-                        // Correct with sufficient margin — just do regularization
+                        // Correct with sufficient margin ? just do regularization
                         for (let j = 0; j < d; j++) {
                             this.weights[j] -= this.learningRate * (this.weights[j] / n);
                         }
@@ -489,13 +489,13 @@ simulateCBoundary([0.01, 0.1, 1.0, 10.0, 100.0]);
 
 ## Practical Takeaways
 
-1. **Always scale features** — SVM is distance-based; features with larger ranges dominate unfairly
-2. **RBF kernel is the safe default** — set $\gamma = 1/d$, then tune around it
-3. **Tune C via cross-validation** — small C for wide margin (simpler model), large C for tight fit
-4. **SVMs work well when $d > n$** — text classification with TF-IDF is a classic sweet spot
-5. **SVMs provide no probability estimates natively** — Platt scaling adds calibration but is expensive
-6. **For large datasets ($n > 100{,}000$), prefer linear SVM** — train with SGD on hinge loss; avoid kernels
-7. **Support vectors are training data** — the model size grows with the number of SVs, not with $d$
+1. **Always scale features** ? SVM is distance-based; features with larger ranges dominate unfairly
+2. **RBF kernel is the safe default** ? set $\gamma = 1/d$, then tune around it
+3. **Tune C via cross-validation** ? small C for wide margin (simpler model), large C for tight fit
+4. **SVMs work well when $d > n$** ? text classification with TF-IDF is a classic sweet spot
+5. **SVMs provide no probability estimates natively** ? Platt scaling adds calibration but is expensive
+6. **For large datasets ($n > 100{,}000$), prefer linear SVM** ? train with SGD on hinge loss; avoid kernels
+7. **Support vectors are training data** ? the model size grows with the number of SVs, not with $d$
 
 ## Concept Comparison Table
 
@@ -546,7 +546,7 @@ simulateCBoundary([0.01, 0.1, 1.0, 10.0, 100.0]);
    C) The kernel type automatically changes
    D) Support vectors are ignored
 
-<details><summary>Answer</summary>**B)** As C → ∞, the model severely penalizes misclassifications, forcing a narrower margin to correctly classify all training points — approaching the hard-margin solution.
+<details><summary>Answer</summary>**B)** As C ? 8, the model severely penalizes misclassifications, forcing a narrower margin to correctly classify all training points ? approaching the hard-margin solution.
 </details>
 
 2. Which of the following is NOT a standard SVM kernel?
@@ -728,16 +728,108 @@ console.log("Linear kernel test:", Kernel.linear()([1, 2], [3, 4]));
 console.log("Poly kernel test:", Kernel.polynomial(2)([1, 2], [3, 4]));
 ```
 
+
+// support vector machines
+// ml-supervised-unsupervised implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'support vector machines', data: { topic: 'ml-supervised-unsupervised' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// support vector machines - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'ml-algorithms demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'machine-learning', chapter: 'support vector machines' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('ml-algorithms'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - SVMs find the maximum margin hyperplane, which provides better generalization than any other separating hyperplane.
 - The functional and geometric margins formalize the distance from a point to the decision boundary.
 - The primal optimization problem minimizes $\|\mathbf{w}\|^2$ subject to correct classification constraints.
 - Lagrange duality converts the constrained primal to an unconstrained dual, expressed entirely in dot products.
-- Support vectors are the only training points that define the model — KKT conditions ensure non-support vectors have zero Lagrange multiplier.
+- Support vectors are the only training points that define the model ? KKT conditions ensure non-support vectors have zero Lagrange multiplier.
 - The soft-margin C parameter controls the tradeoff between margin width and training error.
 - The kernel trick enables non-linear classification without explicit feature mapping.
-- Common kernels include linear, polynomial, RBF, and sigmoid — RBF is the default.
+- Common kernels include linear, polynomial, RBF, and sigmoid ? RBF is the default.
 - Multi-class SVM is handled via one-vs-rest or one-vs-one.
 
 > **One-Sentence Takeaway:** SVMs combine max-margin theory with the kernel trick to create powerful, sparse classifiers that excel in high-dimensional spaces.

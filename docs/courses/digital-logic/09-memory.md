@@ -1,7 +1,7 @@
 # Chapter 9: Semiconductor Memory
 
-> **Prereq:** Chapter 8 (Registers and Counters) — registers are the fastest, smallest memory elements; this chapter extends storage to arrays of cells.
-> **Next:** Chapter 10 (PLA and PAL) — programmable logic is a structured form of memory-based logic implementation.
+> **Prereq:** Chapter 8 (Registers and Counters) ? registers are the fastest, smallest memory elements; this chapter extends storage to arrays of cells.
+> **Next:** Chapter 10 (PLA and PAL) ? programmable logic is a structured form of memory-based logic implementation.
 
 ## Learning Objectives
 
@@ -37,14 +37,14 @@ graph TD
 | Volatile | Yes | Yes | No | No |
 | Cell size | 6 transistors | 1T + 1C | 1 floating-gate | 1 floating-gate |
 | Density | Low | High | Medium | Very high |
-| Speed | Fast (1–10 ns) | Moderate (50 ns) | Slow (70 ns read) | Very slow (µs read) |
+| Speed | Fast (1?10 ns) | Moderate (50 ns) | Slow (70 ns read) | Very slow (?s read) |
 | Refresh | No | Yes (64 ms) | No | No |
-| Write endurance | Infinite | Infinite | 10⁵–10⁶ cycles | 10³–10⁵ cycles |
+| Write endurance | Infinite | Infinite | 105?106 cycles | 10??105 cycles |
 | Power | Medium | Low (standby) | Zero (non-volatile) | Zero |
 
-## 9.2 SRAM — Static Random Access Memory
+## 9.2 SRAM ? Static Random Access Memory
 
-SRAM stores each bit in a **cross-coupled inverter pair** — a bistable latch that holds data as long as power is applied.
+SRAM stores each bit in a **cross-coupled inverter pair** ? a bistable latch that holds data as long as power is applied.
 
 ### 9.2.1 6T SRAM Cell
 
@@ -53,9 +53,9 @@ graph TD
     WL[Word Line] --> M5
     WL --> M6
     BL[Bit Line] --> M5[T5<br>Access]
-    BLB[¬Bit Line] --> M6[T6<br>Access]
+    BLB[?Bit Line] --> M6[T6<br>Access]
     M5 --> Q[Q]
-    M5 --> Qb[¬Q]
+    M5 --> Qb[?Q]
     M5 --> M1[T1<br>Pull-Up]
     M1 --> VDD[VDD]
     M1 --> M2[T2<br>Pull-Down]
@@ -94,7 +94,7 @@ class SRAM6T {
         }
     }
 
-    get state(): string { return `Q=${this.Q} ¬Q=${this.Qb}`; }
+    get state(): string { return `Q=${this.Q} ?Q=${this.Qb}`; }
 }
 ```
 
@@ -103,7 +103,7 @@ class SRAM6T {
 ```mermaid
 graph TD
     ADDR[Address] --> ROW[Row Decoder]
-    ROW --> ARRAY[Memory Cell Array<br>M rows × N columns]
+    ROW --> ARRAY[Memory Cell Array<br>M rows ? N columns]
     ADDR --> COL[Column Decoder]
     COL --> MUX[Column MUX]
     ARRAY --> SA[Sense Amplifiers]
@@ -148,7 +148,7 @@ class SRAMArray {
     }
 }
 
-// 64-word SRAM (8×8 array)
+// 64-word SRAM (8?8 array)
 const ram = new SRAMArray(8, 8);
 ram.write(0b001001, 1); // address 9, data 1
 console.log(ram.read(0b001001)); // 1
@@ -156,7 +156,7 @@ console.log(ram.read(0b001001)); // 1
 
 ### 9.2.3 Sense Amplifier
 
-The sense amplifier detects the tiny voltage difference (50–200 mV) between bit lines during a read and amplifies it to full CMOS levels.
+The sense amplifier detects the tiny voltage difference (50?200 mV) between bit lines during a read and amplifies it to full CMOS levels.
 
 ```typescript
 class SenseAmp {
@@ -168,7 +168,7 @@ class SenseAmp {
 }
 ```
 
-## 9.3 DRAM — Dynamic Random Access Memory
+## 9.3 DRAM ? Dynamic Random Access Memory
 
 DRAM stores each bit on a **capacitor** that leaks charge over time, requiring periodic refresh.
 
@@ -207,17 +207,17 @@ class DRAMCell {
 ### 9.3.2 DRAM Timing
 
 ```text
-          ────────
-RAS      │        │
-    ─────┘        └────────────
-               ────────
-CAS          │        │
-    ─────────┘        └───────
-               ────────
-Data Out     │XXXXXXXX│
-    ─────────┘        └───────
-    │← tRCD →│← tCAS →│
-    │←─────── tRC ──────────→│
+          --------
+RAS      ?        ?
+    -----+        +------------
+               --------
+CAS          ?        ?
+    ---------+        +-------
+               --------
+Data Out     ?XXXXXXXX?
+    ---------+        +-------
+    ?? tRCD ??? tCAS ??
+    ??------- tRC ----------??
 ```
 
 ```typescript
@@ -242,7 +242,7 @@ function accessTime(timing: DRAMTiming): number {
 
 ### 9.3.3 DRAM Refresh
 
-Every row must be refreshed every 64 ms. With 8192 rows, the refresh interval per row is 64 ms / 8192 ≈ 7.8 µs.
+Every row must be refreshed every 64 ms. With 8192 rows, the refresh interval per row is 64 ms / 8192 ? 7.8 ?s.
 
 ```typescript
 class DRAMController {
@@ -284,7 +284,7 @@ class DRAMController {
     }
 
     get refreshOverhead(): number {
-        return (this.rows / 64000) * 100; // refresh cycles per 1000 µs
+        return (this.rows / 64000) * 100; // refresh cycles per 1000 ?s
     }
 }
 ```
@@ -293,20 +293,20 @@ class DRAMController {
 
 | Generation | I/O Clock | Data Rate | Prefetch | VDD |
 |------------|-----------|-----------|----------|-----|
-| SDRAM      | 100–133 MHz | 100–133 MT/s | 1n | 3.3 V |
-| DDR        | 133–200 MHz | 266–400 MT/s | 2n | 2.5 V |
-| DDR2       | 200–533 MHz | 400–1066 MT/s | 4n | 1.8 V |
-| DDR3       | 400–800 MHz | 800–1600 MT/s | 8n | 1.5 V |
-| DDR4       | 800–1600 MHz | 1600–3200 MT/s | 8n | 1.2 V |
-| DDR5       | 1600–3200 MHz | 3200–6400 MT/s | 16n | 1.1 V |
+| SDRAM      | 100?133 MHz | 100?133 MT/s | 1n | 3.3 V |
+| DDR        | 133?200 MHz | 266?400 MT/s | 2n | 2.5 V |
+| DDR2       | 200?533 MHz | 400?1066 MT/s | 4n | 1.8 V |
+| DDR3       | 400?800 MHz | 800?1600 MT/s | 8n | 1.5 V |
+| DDR4       | 800?1600 MHz | 1600?3200 MT/s | 8n | 1.2 V |
+| DDR5       | 1600?3200 MHz | 3200?6400 MT/s | 16n | 1.1 V |
 
 ```typescript
 function dramBandwidth(dataRate: number, busWidth: number, channels: number): number {
     return (dataRate * busWidth * channels) / 8; // bytes/second
 }
 
-console.log(`DDR4-3200 × 64-bit × 1 ch: ${dramBandwidth(3200, 64, 1)} MB/s`); // 25600
-console.log(`DDR5-6400 × 64-bit × 2 ch: ${dramBandwidth(6400, 64, 2)} MB/s`); // 102400
+console.log(`DDR4-3200 ? 64-bit ? 1 ch: ${dramBandwidth(3200, 64, 1)} MB/s`); // 25600
+console.log(`DDR5-6400 ? 64-bit ? 2 ch: ${dramBandwidth(6400, 64, 2)} MB/s`); // 102400
 ```
 
 ## 9.4 Non-Volatile Memory
@@ -347,10 +347,10 @@ Flash memory is the dominant non-volatile technology. Two main variants:
 | Property | NOR Flash | NAND Flash |
 |----------|-----------|------------|
 | Cell arrangement | Parallel | Serial string |
-| Read speed | Fast (70–100 ns) | Slow (µs reads) |
-| Write speed | Slow (ms) | Fast (µs page writes) |
-| Erase granularity | Block (64–128 KB) | Block (64–512 KB) |
-| Density | Low–Medium | Very high |
+| Read speed | Fast (70?100 ns) | Slow (?s reads) |
+| Write speed | Slow (ms) | Fast (?s page writes) |
+| Erase granularity | Block (64?128 KB) | Block (64?512 KB) |
+| Density | Low?Medium | Very high |
 | Typical use | Code execution | Mass storage |
 
 ```typescript
@@ -375,7 +375,7 @@ class NANDFlash {
     }
 
     program(page: number, data: number[]): void {
-        // NAND programming only clears bits (1→0)
+        // NAND programming only clears bits (1?0)
         for (let i = 0; i < Math.min(data.length, this.pageSize); i++) {
             this.pages[page][i] &= data[i];
         }
@@ -398,17 +398,17 @@ class NANDFlash {
 
 ## 9.5 Address Decoding
 
-The address decoder selects one word line from 2ᴺ address lines. Two architectures:
+The address decoder selects one word line from 2? address lines. Two architectures:
 
 ### 9.5.1 Single-Level (NAND) Decoder
 
 A single NAND gate per word line with N inputs and a buffer.
 
 ```
-WLᵢ = ¬(A₀ = a₀ · A₁ = a₁ · ... · Aₙ₋₁ = aₙ₋₁)
+WL? = ?(A0 = a0 ? A1 = a1 ? ... ? A??1 = a??1)
 ```
 
-**Area:** O(N · 2ᴺ) — scales poorly beyond 8–10 bits.
+**Area:** O(N ? 2?) ? scales poorly beyond 8?10 bits.
 
 ### 9.5.2 Two-Level (Pre-) Decoder
 
@@ -463,9 +463,9 @@ Single-bit parity detects an odd number of errors. Used in DRAM row-based protec
 
 ### 9.6.2 Hamming Code (SECDED)
 
-A **Single Error Correct, Double Error Detect (SECDED)** code adds log₂(N) + 1 check bits to an N-bit word.
+A **Single Error Correct, Double Error Detect (SECDED)** code adds log2(N) + 1 check bits to an N-bit word.
 
-For 64-bit data: 7 check bits needed (2⁷ ≥ 64 + 7 + 1 → 128 ≥ 72).
+For 64-bit data: 7 check bits needed (27 = 64 + 7 + 1 ? 128 = 72).
 
 ```typescript
 class HammingCode {
@@ -485,7 +485,7 @@ class HammingCode {
         let dataIdx = 0n;
         for (let i = 0n; i < BigInt(this.dataBits + this.checkBits); i++) {
             const pos = 1n << i;
-            if (pos & (pos - 1n)) { // Not a power of 2 → data position
+            if (pos & (pos - 1n)) { // Not a power of 2 ? data position
                 const dataBit = (data >> dataIdx) & 1n;
                 if (dataBit) codeword |= (1n << i);
                 dataIdx++;
@@ -558,12 +558,12 @@ console.log(`Decoded: ${result.data.toString(2)} corrected=${result.corrected}`)
 
 ```mermaid
 graph TD
-    CPU[CPU Core] --> L1[L1 Cache<br>32–64 KB<br>1–2 ns]
-    L1 --> L2[L2 Cache<br>256–512 KB<br>3–10 ns]
-    L2 --> L3[L3 Cache<br>2–32 MB<br>10–30 ns]
-    L3 --> RAM[Main Memory<br>4–128 GB<br>50–100 ns]
-    RAM --> SSD[SSD<br>100 GB–4 TB<br>10–100 µs]
-    SSD --> HDD[HDD<br>500 GB–20 TB<br>5–15 ms]
+    CPU[CPU Core] --> L1[L1 Cache<br>32?64 KB<br>1?2 ns]
+    L1 --> L2[L2 Cache<br>256?512 KB<br>3?10 ns]
+    L2 --> L3[L3 Cache<br>2?32 MB<br>10?30 ns]
+    L3 --> RAM[Main Memory<br>4?128 GB<br>50?100 ns]
+    RAM --> SSD[SSD<br>100 GB?4 TB<br>10?100 ?s]
+    SSD --> HDD[HDD<br>500 GB?20 TB<br>5?15 ms]
 ```
 
 ```typescript
@@ -611,11 +611,11 @@ class DirectMappedCache {
 
 ## Practical Takeaways
 
-1. **SRAM is fast but large (6T/cell)** — used for caches and registers; 1–10 ns access
-2. **DRAM is dense but needs refresh** — 1T1C cell requires periodic refresh, ~50 ns access
-3. **NAND Flash is the highest density non-volatile memory** — page-based read/write, block erase
-4. **Address pre-decoders save area** — multi-level decoding reduces transistor count by orders of magnitude
-5. **ECC is essential for modern memories** — SECDED Hamming codes protect DRAM and Flash from soft errors
+1. **SRAM is fast but large (6T/cell)** ? used for caches and registers; 1?10 ns access
+2. **DRAM is dense but needs refresh** ? 1T1C cell requires periodic refresh, ~50 ns access
+3. **NAND Flash is the highest density non-volatile memory** ? page-based read/write, block erase
+4. **Address pre-decoders save area** ? multi-level decoding reduces transistor count by orders of magnitude
+5. **ECC is essential for modern memories** ? SECDED Hamming codes protect DRAM and Flash from soft errors
 
 ## TypeScript Implementations
 
@@ -780,9 +780,101 @@ console.log(`Cache hit rate: ${(cache.hitRate(addrs) * 100).toFixed(0)}%`);
 console.log(`SRAM 256KB @ 45nm power: ${MemoryPowerModel.estimateSRAM(256, 100, 45).toFixed(2)} mW`);
 ```
 
+
+// memory
+// boolean-circuits-sequential implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'memory', data: { topic: 'boolean-circuits-sequential' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// memory - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'digital-circuits demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'digital-logic', chapter: 'memory' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('digital-circuits'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-Semiconductor memory spans a wide design space from the 6T SRAM cell through 1T1C DRAM to floating-gate Flash. SRAM provides the fastest access (1–10 ns) at the cost of density, while DRAM offers higher density with refresh overhead. Flash memory provides non-volatile storage at the cost of write speed and endurance limits. Address decoding, sense amplification, and error correction circuits are critical enablers. The next chapter explores programmable logic arrays and PALs — structured logic that bridges memory and computation.
+Semiconductor memory spans a wide design space from the 6T SRAM cell through 1T1C DRAM to floating-gate Flash. SRAM provides the fastest access (1?10 ns) at the cost of density, while DRAM offers higher density with refresh overhead. Flash memory provides non-volatile storage at the cost of write speed and endurance limits. Address decoding, sense amplification, and error correction circuits are critical enablers. The next chapter explores programmable logic arrays and PALs ? structured logic that bridges memory and computation.
 
 ## Chapter Quiz
 
@@ -822,7 +914,7 @@ Q1: b | Q2: a | Q3: b | Q4: d | Q5: c
 
 ## Exercises
 
-1. **SRAM array:** Design and implement an 8×8 SRAM array in TypeScript with row decoder, column multiplexer, and sense amplifier.
+1. **SRAM array:** Design and implement an 8?8 SRAM array in TypeScript with row decoder, column multiplexer, and sense amplifier.
 
 2. **DRAM controller:** Implement a DRAM controller with auto-refresh. The controller should handle read, write, and refresh cycles with appropriate arbitration.
 
@@ -836,7 +928,7 @@ Q1: b | Q2: a | Q3: b | Q4: d | Q5: c
 
 7. **DDR timing:** Write a TypeScript function that computes the total memory access latency given DDR timing parameters (tRCD, tCAS, tRP, tRC) and a burst length of 8.
 
-8. **Error rate analysis:** For a memory with 10⁻¹² soft error rate per bit, compute the probability of an uncorrectable error in a 64-bit word with SECDEC over 1 year of continuous operation.
+8. **Error rate analysis:** For a memory with 10??? soft error rate per bit, compute the probability of an uncorrectable error in a 64-bit word with SECDEC over 1 year of continuous operation.
 
 9. **Memory power model:** Create a power estimation model for SRAM and DRAM at a given capacity, access rate, and technology node. Compare the energy per access.
 

@@ -30,16 +30,16 @@ flowchart LR
 ```
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 ### UML Class Diagram Syntax
 
-> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+> **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
-> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+> **Pro Tip:** Master this concept ? it appears in nearly every system design interview. Understand both the how and the why.
 
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
-> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
+> **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 ![Component and Class Design Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/12-component-design.png)
 
 The Unified Modeling Language (UML) provides a standardized notation for visualizing the structure of object-oriented systems.
@@ -113,7 +113,7 @@ deactivate Controller
 
 ### UML Activity Diagrams
 
-> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+> **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
@@ -276,7 +276,7 @@ class ParkingLot:
         return False
 ```
 
-**Flow**: `Client â†’ ParkingLot.park_vehicle() â†’ iterates floors â†’ finds spot â†’ parks â†’ issues Ticket`. On exit: `Client â†’ ParkingLot.remove_vehicle(ticket_id, payment) â†’ calculates duration â†’ processes payment â†’ frees spot`.
+**Flow**: `Client ? ParkingLot.park_vehicle() ? iterates floors ? finds spot ? parks ? issues Ticket`. On exit: `Client ? ParkingLot.remove_vehicle(ticket_id, payment) ? calculates duration ? processes payment ? frees spot`.
 
 ### Example 2: Designing a Vending Machine
 
@@ -543,7 +543,7 @@ class ElevatorController:
             if (direction == Direction.UP and floor >= elevator.current_floor) or \
                (direction == Direction.DOWN and floor <= elevator.current_floor):
                 return floor - elevator.current_floor if direction == Direction.UP else elevator.current_floor - floor
-        # Going opposite direction â€” must wait for turnaround
+        # Going opposite direction � must wait for turnaround
         return abs(elevator.current_floor - floor) + self.num_floors
 
     def step(self):
@@ -685,7 +685,7 @@ class Board:
         self._setup()
 
     def _setup(self):
-        # Place pieces â€” abbreviated for clarity
+        # Place pieces � abbreviated for clarity
         for col in range(8):
             self.grid[1][col] = Pawn(Color.BLACK, Position(1, col))
             self.grid[6][col] = Pawn(Color.WHITE, Position(6, col))
@@ -1022,6 +1022,127 @@ class RateLimiterFactory:
 
 ---
 
+
+### Implementation: Component Design and Modularity
+
+```typescript
+interface Component { name: string; dependencies: string[]; publicApi: string[]; internalModules: string[]; }
+class ComponentAnalyzer {
+  private components: Component[] = [];
+  addComponent(c: Component): void { this.components.push(c); }
+  detectCycles(): string[][] { const cycles: string[][] = []; const visited = new Set<string>(); const recStack = new Set<string>();
+    const dfs = (node: string, path: string[]) => { if (recStack.has(node)) { const cycleStart = path.indexOf(node); cycles.push(path.slice(cycleStart)); return; } if (visited.has(node)) return; visited.add(node); recStack.add(node); const comp = this.components.find(c => c.name === node); if (comp) for (const dep of comp.dependencies) dfs(dep, [...path, dep]); recStack.delete(node); };
+    for (const c of this.components) dfs(c.name, [c.name]); return cycles; }
+  calculateCoupling(): { afferent: number; efferent: number; instability: number } {
+    let aff = 0; let eff = 0;
+    for (const c of this.components) { eff += c.dependencies.length; aff += this.components.filter(o => o.dependencies.includes(c.name)).length; }
+    return { afferent: aff, efferent: eff, instability: eff / Math.max(1, eff + aff) }; }
+  measureCohesion(): number {
+    const deps = this.components.reduce((s, c) => s + c.dependencies.length, 0);
+    const maxDeps = this.components.length * (this.components.length - 1);
+    return maxDeps > 0 ? deps / maxDeps : 0; }
+}
+class ModuleSystem { private modules = new Map<string, { exports: Set<string>; imports: Set<string>; code: string }>();
+  register(name: string, exports: string[], imports: string[], code: string): void { this.modules.set(name, { exports: new Set(exports), imports: new Set(imports), code }); }
+  resolve(name: string): Set<string> { const result = new Set<string>(); const visit = (n: string, visited: Set<string>) => { if (visited.has(n)) return; visited.add(n); const mod = this.modules.get(n); if (mod) { for (const dep of mod.imports) visit(dep, visited); result.add(n); } }; visit(name, new Set()); return result; }
+}
+class DependencyGraph { private edges = new Map<string, Set<string>>();
+  addDependency(from: string, to: string): void { if (!this.edges.has(from)) this.edges.set(from, new Set()); this.edges.get(from)!.add(to); }
+  topologicalSort(): string[] { const visited = new Set<string>(); const result: string[] = []; const visit = (n: string) => { if (visited.has(n)) return; visited.add(n); for (const dep of this.edges.get(n) || []) visit(dep); result.unshift(n); }; for (const n of this.edges.keys()) visit(n); return result; }
+  layerCount(): number { return this.topologicalSort().length; } }
+```
+
+// lld component design
+// distributed-systems-scalability implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'lld component design', data: { topic: 'distributed-systems-scalability' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// lld component design - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'system-design demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'system-design', chapter: 'lld component design' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('system-design'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 - UML class diagrams use rectangles for classes, with `/` italicization for abstract entities, specific arrow types for inheritance (hollow triangle), composition (filled diamond), aggregation (hollow diamond), and dependency (dashed arrow).
 - Sequence diagrams model message flow across time with activation bars and combined fragments (alt, opt, loop, par) for control logic.
@@ -1048,7 +1169,7 @@ class RateLimiterFactory:
 Design and implement a **Movie Ticket Booking System** covering:
 - **Theaters** with multiple screens, each with a seating layout and showtimes
 - **Seat types** (standard, premium, recliner) each with different pricing
-- **Booking flow**: select movie â†’ showtime â†’ seats â†’ payment â†’ confirmation
+- **Booking flow**: select movie ? showtime ? seats ? payment ? confirmation
 - **Concurrency handling**: two users must not book the same seat within 50ms
 - **State machine**: a booking starts as `PENDING`, moves to `CONFIRMED` on payment, or `CANCELLED` on timeout (15-minute hold expiry)
 - **Seat locking**: seats are temporarily locked during booking and released on timeout or cancellation

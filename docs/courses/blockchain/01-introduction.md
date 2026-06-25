@@ -20,8 +20,8 @@
 |-------|-------------|--------------------|
 | Decentralization | Shifts trust from intermediaries to protocol and consensus | No single point of failure or control |
 | Block Anatomy | Header (metadata + prev hash) + body (transactions) | Chain integrity depends on cryptographic linking |
-| Blockchain Types | Public, private, consortium — different access models | Choose based on trust assumptions and privacy needs |
-| Transaction Flow | Request → Broadcast → Validation → Mining → Confirmation | Every full node validates every transaction |
+| Blockchain Types | Public, private, consortium � different access models | Choose based on trust assumptions and privacy needs |
+| Transaction Flow | Request ? Broadcast ? Validation ? Mining ? Confirmation | Every full node validates every transaction |
 | Blockchain Trilemma | Trade-off between security, scalability, decentralization | No blockchain optimizes all three simultaneously |
 | Byzantine Generals Problem | Distributed agreement despite faulty actors | Consensus mechanisms solve this fundamental problem |
 
@@ -147,10 +147,10 @@ Blockchains typically prioritize Partition Tolerance and Consistency over Availa
 
 | System | C | A | P | Notes |
 |--------|---|---|---|-------|
-| Traditional RDBMS | ✓ | ✓ | ✗ | Not partition-tolerant by design |
-| Cassandra | ✗ | ✓ | ✓ | Eventual consistency |
-| Bitcoin | ✓ | ✗ | ✓ | May halt during partition |
-| Ethereum | ✓ | ✗ | ✓ | Similar to Bitcoin |
+| Traditional RDBMS | ? | ? | ? | Not partition-tolerant by design |
+| Cassandra | ? | ? | ? | Eventual consistency |
+| Bitcoin | ? | ? | ? | May halt during partition |
+| Ethereum | ? | ? | ? | Similar to Bitcoin |
 
 ### The Blockchain Trilemma
 
@@ -317,10 +317,10 @@ function createNextBlock(
 ```mermaid
 flowchart LR
     subgraph Mempool["Mempool (Pending Transactions)"]
-        Tx1["Tx: Alice → Bob (5 BTC)"]
-        Tx2["Tx: Charlie → Dave (2 BTC)"]
-        Tx3["Tx: Eve → Frank (1 BTC)"]
-        Tx4["Tx: Alice → Bob (0.5 BTC)"]
+        Tx1["Tx: Alice ? Bob (5 BTC)"]
+        Tx2["Tx: Charlie ? Dave (2 BTC)"]
+        Tx3["Tx: Eve ? Frank (1 BTC)"]
+        Tx4["Tx: Alice ? Bob (0.5 BTC)"]
     end
     Miner["Miner selects<br/>highest fee txs"]
     Block["Block<br/>(limited size)"]
@@ -331,7 +331,7 @@ flowchart LR
     Block --> Chain
 ```
 
-> **Pro Tip:** When evaluating a blockchain platform, always identify which two corners of the trilemma it sacrifices. No project delivers all three — if they claim otherwise, they're likely compromising on decentralization (fewer nodes) or security (weaker consensus).
+> **Pro Tip:** When evaluating a blockchain platform, always identify which two corners of the trilemma it sacrifices. No project delivers all three � if they claim otherwise, they're likely compromising on decentralization (fewer nodes) or security (weaker consensus).
 
 ---
 
@@ -369,7 +369,7 @@ flowchart LR
 | **Block Header Fields** | Timestamp, version, prev hash, Merkle root, nonce | Every field has a specific security purpose |
 | **Blockchain Types** | Public, Private, Consortium | Determines trust model and performance |
 | **Key Properties** | Immutability, Decentralization, Transparency | Achieved through cryptography + consensus |
-| **Trilemma Corners** | Security, Scalability, Decentralization | Pick two — the third is sacrificed |
+| **Trilemma Corners** | Security, Scalability, Decentralization | Pick two � the third is sacrificed |
 | **Consensus** | PoW, PoS, BFT, DPoS | Each has different trade-offs |
 | **Byzantine Fault Tolerance** | n > 3f | f = number of faulty nodes |
 
@@ -390,7 +390,7 @@ flowchart LR
    - A) Only that block would be affected
    - B) All subsequent blocks would become invalid because their hashes depend on the altered block
    - C) The network would automatically recalculate the hashes
-   - D) Nothing — hashes are just metadata
+   - D) Nothing � hashes are just metadata
 
 <details>
 <summary>Answer</summary>
@@ -729,6 +729,48 @@ console.log(`PoW check (target=2): ${checkPoW(genesis.hash, 2)}`);
 console.log(`Generated address: ${generateAddress('alice')}`);
 ```
 
+
+// introduction
+// distributed-ledger-crypto implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'introduction', data: { topic: 'distributed-ledger-crypto' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
 ## Summary
 
 - Blockchain is a decentralized, distributed ledger technology ensuring data integrity without central authority.
@@ -743,8 +785,8 @@ console.log(`Generated address: ${generateAddress('alice')}`);
 ## Practical Takeaways
 
 1. Choose your blockchain type (public/private/consortium) based on your trust model and privacy requirements.
-2. Understand that all blockchains make trade-offs — there is no perfect solution for every use case.
-3. Immutability is probabilistic, not absolute — it depends on the amount of hashing power or stake securing the chain.
+2. Understand that all blockchains make trade-offs � there is no perfect solution for every use case.
+3. Immutability is probabilistic, not absolute � it depends on the amount of hashing power or stake securing the chain.
 4. Transaction costs and throughput vary dramatically between blockchain types and consensus mechanisms.
 5. Always evaluate the governance model before committing to a blockchain platform.
 

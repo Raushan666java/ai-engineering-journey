@@ -70,7 +70,7 @@ Where $z = \mathbf{w}^T\mathbf{x} = w_0 + w_1x_1 + \dots + w_dx_d$.
 - $\sigma(0) = 0.5$
 - $\sigma(z) \to 1$ as $z \to +\infty$
 - $\sigma(z) \to 0$ as $z \to -\infty$
-- Derivative: $\sigma'(z) = \sigma(z)(1 - \sigma(z))$ — this simplifies gradient computation
+- Derivative: $\sigma'(z) = \sigma(z)(1 - \sigma(z))$ ? this simplifies gradient computation
 
 The hypothesis outputs the probability of the positive class:
 
@@ -89,7 +89,7 @@ Taking the natural log gives the **log-odds** (logit function):
 
 $$\log\left(\frac{p}{1-p}\right) = \mathbf{w}^T\mathbf{x}$$
 
-This reveals that logistic regression is **linear in the log-odds space** — each unit increase in $x_j$ multiplies the odds by $e^{w_j}$.
+This reveals that logistic regression is **linear in the log-odds space** ? each unit increase in $x_j$ multiplies the odds by $e^{w_j}$.
 
 ### Decision Boundary
 
@@ -150,15 +150,15 @@ The confusion matrix summarizes classification results:
 
 **Accuracy**: $\frac{TP + TN}{TP + TN + FP + FN}$
 
-**Precision** (Positive Predictive Value): $\frac{TP}{TP + FP}$ — "How many predicted positives are actually positive?"
+**Precision** (Positive Predictive Value): $\frac{TP}{TP + FP}$ ? "How many predicted positives are actually positive?"
 
-**Recall** (Sensitivity, True Positive Rate): $\frac{TP}{TP + FN}$ — "How many actual positives did we catch?"
+**Recall** (Sensitivity, True Positive Rate): $\frac{TP}{TP + FN}$ ? "How many actual positives did we catch?"
 
 **Specificity** (True Negative Rate): $\frac{TN}{TN + FP}$
 
-**F1-Score**: $2 \times \frac{Precision \times Recall}{Precision + Recall}$ — harmonic mean of precision and recall
+**F1-Score**: $2 \times \frac{Precision \times Recall}{Precision + Recall}$ ? harmonic mean of precision and recall
 
-**F-beta Score**: $(1 + \beta^2) \frac{Precision \times Recall}{\beta^2 \times Precision + Recall}$ — weights recall by $\beta$ times more than precision
+**F-beta Score**: $(1 + \beta^2) \frac{Precision \times Recall}{\beta^2 \times Precision + Recall}$ ? weights recall by $\beta$ times more than precision
 
 ```mermaid
 flowchart TD
@@ -214,8 +214,8 @@ $$J(W) = -\frac{1}{n} \sum_{i=1}^{n} \sum_{k=1}^{K} \mathbf{1}\{y^{(i)} = k\} \l
 
 Same principles as linear regression:
 
-- **L2 (Ridge)**: Adds $\frac{\lambda}{2n} \sum \|w_j\|^2$ — prevents any single feature from dominating
-- **L1 (Lasso)**: Adds $\frac{\lambda}{n} \sum \|w_j\|$ — drives irrelevant feature weights to zero
+- **L2 (Ridge)**: Adds $\frac{\lambda}{2n} \sum \|w_j\|^2$ ? prevents any single feature from dominating
+- **L1 (Lasso)**: Adds $\frac{\lambda}{n} \sum \|w_j\|$ ? drives irrelevant feature weights to zero
 
 The $C$ parameter in sklearn's `LogisticRegression` is the inverse of regularization strength: $C = 1/\lambda$. Smaller $C$ = stronger regularization.
 
@@ -473,18 +473,18 @@ console.log(`Softmax Accuracy: ${(acc * 100).toFixed(2)}%`);
 
 > **One-Sentence Takeaway:** Logistic regression outputs interpretable probabilities, making it ideal for risk scoring and medical diagnosis where confidence matters as much as the class label.
 
-> **Warning:** Logistic Regression assumes a linear decision boundary — if classes are separated by a non-linear curve, consider kernel methods or non-linear classifiers.
+> **Warning:** Logistic Regression assumes a linear decision boundary ? if classes are separated by a non-linear curve, consider kernel methods or non-linear classifiers.
 
 ---
 
 ## Practical Takeaways
 
-1. **Cross-entropy loss is convex** — gradient descent is guaranteed to find the global optimum for logistic regression
-2. **Threshold is a business decision** — never use 0.5 blindly; tune it based on the relative cost of false positives vs. false negatives
-3. **AUC is threshold-independent** — use it for model comparison; use precision-recall curves for imbalanced problems
-4. **Softmax for multi-class** — prefer softmax over OvR when classes are mutually exclusive
-5. **Regularize when $d \gg n$** — L2 for many medium-effect features; L1 for sparse feature selection
-6. **Calibrate probabilities** — logistic regression produces well-calibrated probabilities by design, but Platt scaling or isotonic regression can further improve calibration
+1. **Cross-entropy loss is convex** ? gradient descent is guaranteed to find the global optimum for logistic regression
+2. **Threshold is a business decision** ? never use 0.5 blindly; tune it based on the relative cost of false positives vs. false negatives
+3. **AUC is threshold-independent** ? use it for model comparison; use precision-recall curves for imbalanced problems
+4. **Softmax for multi-class** ? prefer softmax over OvR when classes are mutually exclusive
+5. **Regularize when $d \gg n$** ? L2 for many medium-effect features; L1 for sparse feature selection
+6. **Calibrate probabilities** ? logistic regression produces well-calibrated probabilities by design, but Platt scaling or isotonic regression can further improve calibration
 
 ## Concept Comparison Table
 
@@ -687,7 +687,7 @@ class DecisionBoundaryPlotter {
             const x1 = x1Min + (x1Max - x1Min) * i / resolution;
             for (let j = 0; j < resolution; j++) {
                 const x2 = x2Min + (x2Max - x2Min) * j / resolution;
-                grid[i][j] = model.predict([x1, x2]) === 1 ? "■" : "□";
+                grid[i][j] = model.predict([x1, x2]) === 1 ? "?" : "?";
             }
         }
         return grid;
@@ -712,6 +712,98 @@ const probs = X.map(x => lr.predictProb(x));
 console.log("Binary Cross-Entropy:", binaryCrossEntropy(y, probs).toFixed(4));
 ```
 
+
+// logistic regression
+// ml-supervised-unsupervised implementation
+
+interface Task { id: string; name: string; status: string; data: unknown }
+class Processor {
+  private tasks: Task[] = []
+  private maxConcurrency: number
+  constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
+  async add(task: Omit<Task, "status">): Promise<void> {
+    this.tasks.push({ ...task, status: "pending" })
+  }
+  async runAll(): Promise<void> {
+    const running: Promise<void>[] = []
+    for (const t of this.tasks) {
+      if (running.length >= this.maxConcurrency) { await Promise.race(running) }
+      const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
+      running.push(p)
+    }
+    await Promise.all(running)
+  }
+  private async execute(t: Task): Promise<void> {
+    t.status = "running"
+    await new Promise(r => setTimeout(r, 10))
+    t.status = "done"
+  }
+  getResults(): Task[] { return this.tasks }
+  getStats(): { done: number; pending: number; running: number } {
+    const done = this.tasks.filter(t => t.status === "done").length
+    const pending = this.tasks.filter(t => t.status === "pending").length
+    const running = this.tasks.filter(t => t.status === "running").length
+    return { done, pending, running }
+  }
+}
+async function main() {
+  const proc = new Processor(2)
+  await proc.add({ id: '1', name: 'logistic regression', data: { topic: 'ml-supervised-unsupervised' } })
+  await proc.runAll()
+  console.log('Stats:', proc.getStats())
+}
+main().catch(console.error)
+export { Processor, Task }
+
+// logistic regression - additional TS implementations
+
+interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
+class Cache {
+  private store: Map<string, CacheEntry> = new Map()
+  constructor(private defaultTTL: number = 60000) {}
+  set(key: string, value: unknown, ttl?: number): void {
+    this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
+  }
+  get(key: string): unknown | undefined {
+    const entry = this.store.get(key)
+    if (!entry) return undefined
+    if (Date.now() - entry.createdAt > entry.ttl) { this.store.delete(key); return undefined }
+    return entry.value
+  }
+  delete(key: string): boolean { return this.store.delete(key) }
+  clear(): void { this.store.clear() }
+  size(): number { return this.store.size }
+  keys(): string[] { return Array.from(this.store.keys()) }
+}
+class Logger {
+  private entries: string[] = []
+  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+    const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
+    this.entries.push(entry)
+    console.log(entry)
+  }
+  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  getLogs(): string[] { return [...this.entries] }
+  clear(): void { this.entries = [] }
+}
+function computeHash(input: string): string {
+  let hash = 0
+  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  return Math.abs(hash).toString(16)
+}
+async function demo(): Promise<void> {
+  const cache = new Cache(5000)
+  cache.set('key1', 'ml-algorithms demo')
+  const log = new Logger()
+  log.info('Cache demo started', { course: 'machine-learning', chapter: 'logistic regression' })
+  const v = cache.get("key1")
+  console.log('Cached:', v)
+  console.log('Hash:', computeHash('ml-algorithms'))
+}
+demo()
+export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
 - Logistic Regression is a fundamental algorithm for binary classification, using the sigmoid function to map linear outputs to probabilities between 0 and 1.

@@ -1,4 +1,4 @@
-# Phase 0 — Compressed Backend Hardening
+# Phase 0 â€” Compressed Backend Hardening
 
 **Duration:** Week 1, ~12-15 hours
 **Goal:** Fill specific gaps between your Laravel/Node experience and what Python agent engineering demands. These are topics you've touched but haven't systematically covered.
@@ -51,7 +51,7 @@ async def expensive(redis: aioredis.Redis = Depends(get_redis)):
 Redis-backed job queues (RQ, Celery with Redis broker) solve a different problem: **durable async work that must survive server restarts**.
 
 ```python
-# FastAPI BackgroundTasks — NOT durable
+# FastAPI BackgroundTasks â€” NOT durable
 from fastapi import BackgroundTasks
 
 def process_document(doc_id: str):
@@ -64,7 +64,7 @@ async def upload(task: BackgroundTasks, doc_id: str):
 ```
 
 ```python
-# RQ (Redis Queue) — IS durable
+# RQ (Redis Queue) â€” IS durable
 from rq import Queue
 from redis import Redis
 
@@ -119,7 +119,7 @@ print(f"Job result: {job.result}")
 
 ## 0.2 Redis Pub/Sub
 
-Pub/Sub (Publish/Subscribe) is a messaging pattern where publishers send messages to channels, and subscribers receive all messages on channels they've subscribed to. Unlike queues, messages are **not stored** — if nobody is subscribed, the message is lost.
+Pub/Sub (Publish/Subscribe) is a messaging pattern where publishers send messages to channels, and subscribers receive all messages on channels they've subscribed to. Unlike queues, messages are **not stored** â€” if nobody is subscribed, the message is lost.
 
 ### When to use Pub/Sub
 
@@ -167,7 +167,7 @@ asyncio.run(main())
 
 ### Exercise
 
-Create two files — `pub.py` and `sub.py`. Run subscriber first, then publisher. The subscriber should print the message. Then kill the subscriber and publish again — verify the message is lost (this is the key difference from a queue).
+Create two files â€” `pub.py` and `sub.py`. Run subscriber first, then publisher. The subscriber should print the message. Then kill the subscriber and publish again â€” verify the message is lost (this is the key difference from a queue).
 
 ---
 
@@ -211,9 +211,9 @@ Each Pydantic model becomes a schema. Each endpoint shows:
 
 ### Key things to check when debugging
 
-1. **Response model matches actual return** — FastAPI serializes the `response_model`, not whatever you return. If they differ, you get a serialization error.
-2. **Validation constraints** — Add `Field(..., ge=1)` for integers, `min_length` for strings. Missing validation is the #1 OpenAPI bug.
-3. **Example values** — Add `Field(..., example="What is the gym membership fee?")` so the Swagger UI shows real examples.
+1. **Response model matches actual return** â€” FastAPI serializes the `response_model`, not whatever you return. If they differ, you get a serialization error.
+2. **Validation constraints** â€” Add `Field(..., ge=1)` for integers, `min_length` for strings. Missing validation is the #1 OpenAPI bug.
+3. **Example values** â€” Add `Field(..., example="What is the gym membership fee?")` so the Swagger UI shows real examples.
 
 ### Exercise
 
@@ -223,7 +223,7 @@ Create a throwaway FastAPI app with a single `POST /test` endpoint. Add a Pydant
 
 ## 0.4 JWT Refresh-Token Rotation Pattern
 
-You've implemented JWTs in Laravel. The gap is the **rotation pattern** — replacing the refresh token every time it's used, so a stolen refresh token can only be used once.
+You've implemented JWTs in Laravel. The gap is the **rotation pattern** â€” replacing the refresh token every time it's used, so a stolen refresh token can only be used once.
 
 ### Flow
 
@@ -291,7 +291,7 @@ async def expensive():
 
 Counts requests in a moving time window (e.g., last 60 seconds). If count exceeds threshold, reject.
 
-**Why sliding window for login endpoints:** More precise enforcement — a user doing 100 requests across the boundary of two token-bucket refill windows could technically send 200. Sliding window prevents this.
+**Why sliding window for login endpoints:** More precise enforcement â€” a user doing 100 requests across the boundary of two token-bucket refill windows could technically send 200. Sliding window prevents this.
 
 ### Exercise
 
@@ -313,7 +313,7 @@ A single deployable unit with clear module boundaries. Each module has its own d
 **When it wins:**
 
 - Your team is 1-5 people (you)
-- You're iterating fast — refactoring across modules is an IDE action, not an API change + deployment
+- You're iterating fast â€” refactoring across modules is an IDE action, not an API change + deployment
 - Transactional consistency matters (no distributed transactions)
 
 ### Microservices
@@ -328,7 +328,7 @@ Separate deployable units communicating over a network.
 
 ### Applied to ApexERP
 
-Your current architecture (monolithic Laravel with n8n for workflows) is a **modular monolith with an external orchestration layer** — a perfectly valid pattern. Moving individual modules to FastAPI microservices would make sense if:
+Your current architecture (monolithic Laravel with n8n for workflows) is a **modular monolith with an external orchestration layer** â€” a perfectly valid pattern. Moving individual modules to FastAPI microservices would make sense if:
 - The module needs GPU access (media pipeline)
 - The module has completely different traffic patterns (document ingestion spikes)
 - You want to deploy a public API without exposing the admin dashboard surface
@@ -343,7 +343,7 @@ Write a 1-page note arguing both sides for ApexERP's specific architecture. Whic
 
 **The problem:** A payment gateway sends a webhook for a successful charge. Your server processes it, credits the user. But the gateway didn't get a 200 response (network blip), so it retries. Now your server credits the user twice.
 
-**The fix:** Idempotency key — a unique identifier the client sends with every request. The server checks "have I already processed this key?" before doing any work.
+**The fix:** Idempotency key â€” a unique identifier the client sends with every request. The server checks "have I already processed this key?" before doing any work.
 
 ### Implementation
 
@@ -376,13 +376,13 @@ Your booking/payment module processes financial transactions. A webhook retry wi
 
 ### Exercise
 
-Add an idempotency-key check to a mock payment endpoint. Send the same key twice, verify the second call is rejected. Remove the check and send the same request twice — simulate what happens without it.
+Add an idempotency-key check to a mock payment endpoint. Send the same key twice, verify the second call is rejected. Remove the check and send the same request twice â€” simulate what happens without it.
 
 ---
 
 ## 0.8 API Versioning Strategies
 
-API versioning matters for AI products because your agent endpoints evolve fast — and agents on the other end can't click "upgrade."
+API versioning matters for AI products because your agent endpoints evolve fast â€” and agents on the other end can't click "upgrade."
 
 ### Four common strategies
 
@@ -433,7 +433,7 @@ Add `/v1/collections` and `/v2/collections` to your RAG demo. `/v2` should retur
 
 ## 0.9 WebSocket Fundamentals
 
-Agent pipelines often need real-time communication — streaming token output, live status updates, or bidirectional messaging.
+Agent pipelines often need real-time communication â€” streaming token output, live status updates, or bidirectional messaging.
 
 ### WebSocket vs HTTP
 
@@ -495,11 +495,11 @@ async def agent_stream(websocket: WebSocket):
 
 ### Exercise
 
-Build a WebSocket echo server. Connect to it from a browser console (`new WebSocket("ws://localhost:8000/ws")`). Send messages and verify echo. Then extend it to broadcast to all connected clients — useful for monitoring multiple agent runs.
+Build a WebSocket echo server. Connect to it from a browser console (`new WebSocket("ws://localhost:8000/ws")`). Send messages and verify echo. Then extend it to broadcast to all connected clients â€” useful for monitoring multiple agent runs.
 
 ---
 
-## TypeScript Equivalents — Backend Patterns
+## TypeScript Equivalents â€” Backend Patterns
 
 The following TypeScript examples mirror the Python patterns taught in this phase. They are useful for Laravel developers who want to see familiar syntax while learning new concepts.
 
@@ -623,7 +623,7 @@ const openAiLimiter = new TokenBucketRateLimiter(10, 1); // burst 10, refill 1/s
 async function callLlm(prompt: string): Promise<string | null> {
   const key = `user:${prompt.slice(0, 20)}`;
   if (!openAiLimiter.allow(key)) {
-    console.warn(`Rate limited — ${openAiLimiter.remaining(key)} tokens remaining`);
+    console.warn(`Rate limited â€” ${openAiLimiter.remaining(key)} tokens remaining`);
     return null;
   }
   // ... actual API call
@@ -737,7 +737,7 @@ class JwtRotationService {
     // Replay attack: same family used twice
     if (this.revokedFamilies.has(stored.family)) {
       this.revokeFamily(stored.family); // revoke ALL tokens in this family
-      return { error: "Token family compromised — all tokens revoked" };
+      return { error: "Token family compromised â€” all tokens revoked" };
     }
 
     // Revoke old token family (rotation)
@@ -816,7 +816,7 @@ mgr.register({
 });
 ```
 
-## Architecture Diagrams — Phase 0 Patterns
+## Architecture Diagrams â€” Phase 0 Patterns
 
 ### Redis Usage Patterns
 
@@ -942,4 +942,4 @@ Before moving to Phase 1, you should be able to:
 
 **Estimated time to checkpoint:** 14-18 hours over 1 week.
 
-[Next: Phase 1 — Python + FastAPI + AsyncIO](02-phase1-python-fastapi-async.md)
+[Next: Phase 1 â€” Python + FastAPI + AsyncIO](02-phase1-python-fastapi-async.md)

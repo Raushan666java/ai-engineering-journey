@@ -621,6 +621,125 @@ console.log(`AdaBoost (20): ${(new AdaBoost(20).score(X, y) * 100).toFixed(2)}%`
 
 ---
 
+## TypeScript Implementation: AdaBoost, Gradient Boosting, and XGBoost-Style Pruning
+
+```typescript
+class DecisionStump {
+    feature: number = 0;
+    threshold: number = 0;
+    polarity: number = 1;
+    alpha: number = 0;
+
+    predict(features: number[]): number {
+        const val = features[this.feature] <= this.threshold ? 1 : -1;
+        return val * this.polarity;
+    }
+}
+
+class AdaBoost {
+    private stumps: DecisionStump[] = [];
+
+    fit(features: number[][], labels: number[], nEstimators: number = 10): void {
+        const n = features.length;
+        const y = labels.map(l => l === 0 ? -1 : 1);
+        let weights = new Array(n).fill(1 / n);
+
+        for (let t = 0; t < nEstimators; t++) {
+            const stump = new DecisionStump();
+            let minError = Infinity;
+            for (let f = 0; f < features[0].length; f++) {
+                const values = [...new Set(features.map(r => r[f]))].sort((a, b) => a - b);
+                for (let i = 0; i < values.length - 1; i++) {
+                    const thresh = (values[i] + values[i + 1]) / 2;
+                    for (const pol of [1, -1]) {
+                        stump.feature = f; stump.threshold = thresh; stump.polarity = pol;
+                        let error = 0;
+                        for (let j = 0; j < n; j++) {
+                            if (stump.predict(features[j]) !== y[j]) error += weights[j];
+                        }
+                        if (error < minError) { minError = error; this.stumps[t] = new DecisionStump(); Object.assign(this.stumps[t], stump); }
+                    }
+                }
+            }
+            const best = this.stumps[t];
+            best.alpha = 0.5 * Math.log((1 - minError) / Math.max(minError, 1e-10));
+
+            let sumW = 0;
+            for (let j = 0; j < n; j++) {
+                weights[j] *= Math.exp(-best.alpha * y[j] * best.predict(features[j]));
+                sumW += weights[j];
+            }
+            for (let j = 0; j < n; j++) weights[j] /= sumW;
+        }
+    }
+
+    predict(features: number[]): number {
+        let sum = 0;
+        for (const stump of this.stumps) sum += stump.alpha * stump.predict(features);
+        return sum >= 0 ? 1 : 0;
+    }
+}
+
+class GradientBoostingRegressor {
+    private trees: DecisionTreeClassifier[] = [];
+    private lr: number;
+    private nEstimators: number;
+
+    constructor(lr: number = 0.1, nEstimators: number = 100) { this.lr = lr; this.nEstimators = nEstimators; }
+
+    fit(features: number[][], targets: number[]): void {
+        let preds = new Array(targets.length).fill(targets.reduce((a, b) => a + b, 0) / targets.length);
+        for (let t = 0; t < this.nEstimators; t++) {
+            const residuals = targets.map((y, i) => y - preds[i]);
+            const labels = residuals.map(r => r > 0 ? 1 : 0);
+            const tree = new DecisionTreeClassifier(3);
+            tree.fit(features, labels);
+            this.trees.push(tree);
+            for (let i = 0; i < features.length; i++) {
+                preds[i] += this.lr * (tree.predict(features[i]) === 1 ? 1 : -1) * Math.abs(residuals[i]);
+            }
+        }
+    }
+
+    predict(features: number[]): number {
+        let pred = 0;
+        for (const tree of this.trees) pred += this.lr * (tree.predict(features) === 1 ? 1 : -1);
+        return pred;
+    }
+}
+
+class XGBoostStylePruner {
+    static shouldPrune(gain: number, gamma: number, leftSamples: number, rightSamples: number, minChildWeight: number): boolean {
+        if (leftSamples < minChildWeight || rightSamples < minChildWeight) return true;
+        if (gain < gamma) return true;
+        return false;
+    }
+
+    static similarity( residuals: number[], lambda: number = 1 ): number {
+        const sum = residuals.reduce((a, b) => a + b, 0);
+        return (sum ** 2) / (residuals.length + lambda);
+    }
+
+    static gain( leftSimilarity: number, rightSimilarity: number, parentSimilarity: number, gamma: number ): number {
+        return leftSimilarity + rightSimilarity - parentSimilarity - gamma;
+    }
+}
+
+// Demo
+const X = [[1], [2], [3], [4], [5], [6], [7], [8], [9], [10]];
+const yClass = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1];
+const ada = new AdaBoost();
+ada.fit(X, yClass, 5);
+console.log("AdaBoost predict [4]:", ada.predict([4]));
+console.log("AdaBoost predict [8]:", ada.predict([8]));
+
+const yReg = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const gb = new GradientBoostingRegressor(0.1, 50);
+gb.fit(X, yReg);
+console.log("GBM predict [5]:", gb.predict([5]).toFixed(2));
+console.log("XGBoost gain test:", XGBoostStylePruner.gain(10, 8, 5, 3, 0.5));
+```
+
 ## Summary
 
 - Ensemble methods improve performance by combining multiple weak learners into a single strong learner, leveraging the wisdom of the crowd principle.

@@ -699,6 +699,123 @@ sim.getStatus();
 
 ---
 
+### Multi-Cloud Orchestrator Comparator
+
+Choosing the right orchestration platform depends on team maturity, scale, and cloud strategy. The following tool compares orchestration platforms across multiple dimensions and recommends the best fit.
+
+```typescript
+// orchestrator-comparator.ts
+// Compare container orchestration platforms
+
+interface PlatformFeature {
+  name: string;
+  kubernetes: boolean | string;
+  swarm: boolean | string;
+  nomad: boolean | string;
+  ecs: boolean | string;
+}
+
+interface PlatformCost {
+  platform: string;
+  controlPlane: string;
+  workerPricing: string;
+  hiddenCosts: string[];
+  estimatedMonthly100Nodes: number;
+}
+
+interface ComparisonDimension {
+  category: string;
+  features: PlatformFeature[];
+}
+
+interface Recommendation {
+  platform: string;
+  score: number;
+  strengths: string[];
+  weaknesses: string[];
+  bestFor: string;
+}
+
+class OrchestratorComparator {
+  private readonly dimensions: ComparisonDimension[] = [
+    {
+      category: 'Deployment', features: [
+        { name: 'Rolling updates', kubernetes: '✅', swarm: '✅', nomad: '✅', ecs: '✅' },
+        { name: 'Blue-green deploy', kubernetes: '✅', swarm: '⚠️ Manual', nomad: '⚠️ Manual', ecs: '✅' },
+        { name: 'Canary releases', kubernetes: '✅', swarm: '❌', nomad: '⚠️ Manual', ecs: '✅' },
+        { name: 'Batch jobs', kubernetes: '✅', swarm: '❌', nomad: '✅', ecs: '✅' },
+      ],
+    },
+    {
+      category: 'Networking', features: [
+        { name: 'Service discovery', kubernetes: '✅ DNS', swarm: '✅ DNS', nomad: '✅ Consul', ecs: '✅ Cloud Map' },
+        { name: 'Ingress/LB', kubernetes: '✅', swarm: '⚠️ Basic', nomad: '⚠️ Fabio', ecs: '✅ ALB/NLB' },
+        { name: 'Network policies', kubernetes: '✅', swarm: '❌', nomad: '⚠️', ecs: '✅ SG' },
+        { name: 'Service mesh', kubernetes: '✅ Istio/Linkerd', swarm: '❌', nomad: '✅ Consul', ecs: '✅ App Mesh' },
+      ],
+    },
+    {
+      category: 'Operations', features: [
+        { name: 'Self-healing', kubernetes: '✅', swarm: '✅', nomad: '✅', ecs: '✅' },
+        { name: 'Auto-scaling', kubernetes: '✅ HPA', swarm: '❌', nomad: '⚠️', ecs: '✅' },
+        { name: 'Multi-AZ', kubernetes: '✅', swarm: '✅', nomad: '✅', ecs: '✅' },
+        { name: 'Audit logging', kubernetes: '✅', swarm: '⚠️', nomad: '✅', ecs: '✅' },
+      ],
+    },
+    {
+      category: 'Ecosystem', features: [
+        { name: 'Community size', kubernetes: 'Largest', swarm: 'Declining', nomad: 'Growing', ecs: 'Large (AWS)' },
+        { name: 'Cloud native', kubernetes: '✅ CNCF', swarm: '❌', nomad: '✅ CNCF', ecs: '❌' },
+        { name: 'Learning curve', kubernetes: 'Steep', swarm: 'Gentle', nomad: 'Moderate', ecs: 'Moderate' },
+        { name: 'Helm charts', kubernetes: '✅', swarm: '❌', nomad: '❌', ecs: '❌' },
+      ],
+    },
+  ];
+
+  private readonly costModel: PlatformCost[] = [
+    { platform: 'Kubernetes', controlPlane: 'Free (self-hosted) or $0.10/hr (EKS)', workerPricing: 'Standard compute', hiddenCosts: ['etcd maintenance', 'Ingress controller', 'Monitoring stack'], estimatedMonthly100Nodes: 8500 },
+    { platform: 'Swarm', controlPlane: 'Free', workerPricing: 'Standard compute', hiddenCosts: ['Limited ecosystem tooling'], estimatedMonthly100Nodes: 7200 },
+    { platform: 'Nomad', controlPlane: 'Free', workerPricing: 'Standard compute', hiddenCosts: ['Consul for service discovery', 'Vault for secrets'], estimatedMonthly100Nodes: 7800 },
+    { platform: 'ECS', controlPlane: 'Fargate $0.01/task/hr', workerPricing: 'EC2 or Fargate', hiddenCosts: ['CloudWatch Logs', 'ALB'], estimatedMonthly100Nodes: 9900 },
+  ];
+
+  score(options: { kubernetes: number; swarm: number; nomad: number; ecs: number }): Recommendation[] {
+    const scores = [
+      { platform: 'Kubernetes', score: options.kubernetes, strengths: ['Largest ecosystem', 'Most features', 'Portable'], weaknesses: ['Complexity', 'Learning curve'], bestFor: 'Complex microservices, enterprise' },
+      { platform: 'Swarm', score: options.swarm, strengths: ['Simple', 'Docker native', 'Fast setup'], weaknesses: ['Limited features', 'Declining community'], bestFor: 'Small teams, simple apps' },
+      { platform: 'Nomad', score: options.nomad, strengths: ['Simple', 'Multi-workload', 'HashiCorp stack'], weaknesses: ['Smaller ecosystem', 'Fewer features'], bestFor: 'Mixed workloads, batch processing' },
+      { platform: 'ECS', score: options.ecs, strengths: ['AWS native', 'No control plane', 'Fargate'], weaknesses: ['Vendor lock-in', 'Limited flexibility'], bestFor: 'AWS-only shops, Fargate' },
+    ];
+
+    return scores.sort((a, b) => b.score - a.score);
+  }
+
+  generateComparisonTable(): string {
+    let output = '## Orchestration Platform Comparison\n\n';
+    for (const dim of this.dimensions) {
+      output += `### ${dim.category}\n\n| Feature | Kubernetes | Swarm | Nomad | ECS |\n|---------|------------|-------|-------|-----|\n`;
+      output += dim.features.map(f =>
+        `| ${f.name} | ${f.kubernetes} | ${f.swarm} | ${f.nomad} | ${f.ecs} |`
+      ).join('\n');
+      output += '\n\n';
+    }
+    output += '### Cost Comparison (100 nodes)\n\n| Platform | Monthly Est. |\n|----------|-------------|\n';
+    output += this.costModel.map(c => `| ${c.platform} | $${c.estimatedMonthly100Nodes.toLocaleString()} |`).join('\n');
+    return output;
+  }
+}
+
+const comparator = new OrchestratorComparator();
+console.log(comparator.generateComparisonTable());
+
+const ranked = comparator.score({ kubernetes: 4, swarm: 2, nomad: 3, ecs: 3 });
+console.log('\n## Recommendation\n', ranked[0].platform, '-', ranked[0].bestFor);
+```
+
+**What this demonstrates:** Systematic orchestrator comparison across deployment, networking, operations, ecosystem, and cost dimensions enables data-driven platform selection aligned with team capabilities and requirements.
+
+---
+
 ## Practical Takeaways
 
 1. **Start with simple orchestration.** Docker Swarm or ECS for small teams; Kubernetes for complex needs.

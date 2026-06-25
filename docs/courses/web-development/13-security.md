@@ -667,6 +667,147 @@ console.log("CSP:", CSPBuilder.strict());
 console.log("Escaped:", InputSanitizer.escapeHTML("<script>alert('xss')</script>"));
 ```
 
+## TypeScript Implementation: XSS Sanitizer, CSRF Token Generator, CSP Builder, SQL Injection Detector
+
+```typescript
+class XSSSanitizer {
+    static escapeHTML(input: string): string {
+        const map: Record<string, string> = {
+            "&": "&amp;", "<": "&lt;", ">": "&gt;",
+            '"': "&quot;", "'": "&#x27;", "/": "&#x2F;"
+        };
+        return input.replace(/[&<>"'/]/g, ch => map[ch] || ch);
+    }
+
+    static sanitizeUrl(url: string): string {
+        const blocked = ["javascript:", "data:", "vbscript:", "file:"];
+        const lower = url.toLowerCase().trim();
+        if (blocked.some(b => lower.startsWith(b))) return "#blocked";
+        return url;
+    }
+
+    static sanitizeHTML(input: string, allowedTags: string[] = ["b", "i", "em", "strong", "a", "code", "pre"]): string {
+        const tagPattern = /<\/?([a-zA-Z0-9]+)([^>]*)>/g;
+        return input.replace(tagPattern, (match, tag, attrs) => {
+            if (!allowedTags.includes(tag.toLowerCase())) {
+                return XSSSanitizer.escapeHTML(match);
+            }
+            if (tag.startsWith("/")) return `</${tag}>`;
+            const safeAttrs = attrs.replace(/\s*on\w+\s*=\s*["'][^"']*["']/gi, "");
+            const hrefMatch = safeAttrs.match(/\s*href\s*=\s*["']([^"']*)["']/i);
+            if (hrefMatch) {
+                const sanitizedHref = XSSSanitizer.sanitizeUrl(hrefMatch[1]);
+                return `<${tag} href="${sanitizedHref}"${safeAttrs.replace(/href\s*=\s*["'][^"']*["']/i, "")}>`;
+            }
+            return `<${tag}${safeAttrs}>`;
+        });
+    }
+
+    static stripTags(input: string): string {
+        return input.replace(/<[^>]*>/g, "");
+    }
+
+    static detectXSS(input: string): { hasXSS: boolean; patterns: string[] } {
+        const patterns = [
+            /<script[^>]*>/i, /javascript\s*:/i, /on\w+\s*=/i,
+            /<iframe[^>]*>/i, /<embed[^>]*>/i, /<object[^>]*>/i,
+            /alert\s*\(/i, /eval\s*\(/i, /document\.cookie/i,
+            /String\.fromCharCode/i, /<svg[^>]*>/i,
+        ];
+        const found = patterns.filter(p => p.test(input)).map(p => p.source);
+        return { hasXSS: found.length > 0, patterns: found };
+    }
+}
+
+class CSRFTokenGenerator {
+    static generate(length: number = 32): string {
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        let token = "";
+        for (let i = 0; i < length; i++) token += chars[Math.floor(Math.random() * chars.length)];
+        return token;
+    }
+
+    static validate(token: string, storedToken: string): boolean {
+        if (!token || !storedToken) return false;
+        if (token.length !== storedToken.length) return false;
+        let diff = 0;
+        for (let i = 0; i < token.length; i++) diff |= token.charCodeAt(i) ^ storedToken.charCodeAt(i);
+        return diff === 0;
+    }
+
+    static doubleSubmitCookie(token: string, cookieValue: string): boolean {
+        return this.validate(token, cookieValue);
+    }
+}
+
+class CSPBuilder {
+    static strict(): string {
+        return `default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'`;
+    }
+
+    static build(directives: Record<string, string[]>): string {
+        return Object.entries(directives)
+            .map(([key, values]) => `${key} ${values.join(" ")}`)
+            .join("; ");
+    }
+
+    static reportOnly(directives: Record<string, string[]>, reportUri: string): string {
+        const csp = this.build(directives);
+        return `${csp}; report-uri ${reportUri}`;
+    }
+}
+
+class SQLInjectionDetector {
+    static detect(input: string): { hasInjection: boolean; risk: "none" | "low" | "medium" | "high"; patterns: string[] } {
+        const patterns: { pattern: RegExp; risk: "low" | "medium" | "high" }[] = [
+            { pattern: /('|--|;)/, risk: "low" },
+            { pattern: /(OR|AND)\s+['"]?\w+['"]?\s*=\s*['"]?\w+['"]?/i, risk: "medium" },
+            { pattern: /(OR|AND)\s+\d+\s*=\s*\d+/i, risk: "high" },
+            { pattern: /UNION\s+(ALL\s+)?SELECT/i, risk: "high" },
+            { pattern: /DROP\s+TABLE/i, risk: "high" },
+            { pattern: /DELETE\s+FROM/i, risk: "high" },
+            { pattern: /INSERT\s+INTO/i, risk: "high" },
+            { pattern: /EXEC\s*\(/i, risk: "high" },
+            { pattern: /xp_cmdshell/i, risk: "high" },
+            { pattern: /LOAD_FILE\s*\(/i, risk: "high" },
+            { pattern: /INFORMATION_SCHEMA/i, risk: "medium" },
+            { pattern: /WAITFOR\s+DELAY/i, risk: "high" },
+            { pattern: /BENCHMARK\s*\(/i, risk: "high" },
+            { pattern: /SLEEP\s*\(/i, risk: "high" },
+        ];
+
+        const found: { pattern: RegExp; risk: "low" | "medium" | "high" }[] = [];
+        for (const p of patterns) {
+            if (p.pattern.test(input)) found.push(p);
+        }
+
+        const maxRisk = found.length === 0 ? "none" :
+            found.some(f => f.risk === "high") ? "high" :
+            found.some(f => f.risk === "medium") ? "medium" : "low";
+
+        return {
+            hasInjection: found.length > 0,
+            risk: maxRisk as "none" | "low" | "medium" | "high",
+            patterns: found.map(f => f.pattern.source)
+        };
+    }
+}
+
+// Demo
+const malicious = "<script>alert('xss')</script><img src=x onerror=alert(1)>";
+console.log("Escaped:", XSSSanitizer.escapeHTML(malicious));
+console.log("Sanitized:", XSSSanitizer.sanitizeHTML(malicious));
+console.log("XSS detect:", XSSSanitizer.detectXSS(malicious));
+
+const token = CSRFTokenGenerator.generate();
+console.log("CSRF token:", token);
+console.log("CSRF validate:", CSRFTokenGenerator.validate(token, token));
+
+console.log("CSP strict:", CSPBuilder.strict());
+console.log("SQLi detect ' OR 1=1 --:", SQLInjectionDetector.detect("' OR 1=1 --"));
+console.log("SQLi safe input:", SQLInjectionDetector.detect("hello world"));
+```
+
 ## Summary
 
 Web security requires defense in depth: parameterized queries prevent SQL injection, output escaping prevents XSS, CSRF tokens and SameSite cookies protect cross-site requests, CSP headers restrict resource origins, rate limiting prevents abuse, and input validation ensures data integrity at every layer.

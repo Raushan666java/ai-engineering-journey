@@ -605,6 +605,144 @@ console.log("Depth:", DOMTreeAnalyzer.findDepth("<div><section><article><p>Deep<
 console.log("Throttled:", EventDelegator.throttle(() => console.log("ok"), 1000).toString().slice(0, 50) + "...");
 ```
 
+## TypeScript Implementation: DOM Tree Walker, Event Delegation, Virtual DOM Diff
+
+```typescript
+interface VNode {
+    tag: string;
+    props: Record<string, any>;
+    children: (VNode | string)[];
+    key?: string;
+}
+
+function h(tag: string, props: Record<string, any> = {}, children: (VNode | string)[] = []): VNode {
+    return { tag, props, children, key: props?.key };
+}
+
+class VirtualDOM {
+    static diff(oldNode: VNode | string | null, newNode: VNode | string | null): { type: string; path: string; oldVal?: any; newVal?: any }[] {
+        const patches: { type: string; path: string; oldVal?: any; newVal?: any }[] = [];
+
+        if (oldNode === newNode) return patches;
+        if (oldNode === null || oldNode === undefined) {
+            patches.push({ type: "CREATE", path: "", newVal: newNode });
+            return patches;
+        }
+        if (newNode === null || newNode === undefined) {
+            patches.push({ type: "REMOVE", path: "", oldVal: oldNode });
+            return patches;
+        }
+        if (typeof oldNode === "string" || typeof newNode === "string") {
+            if (oldNode !== newNode) patches.push({ type: "TEXT", path: "", oldVal: oldNode, newVal: newNode });
+            return patches;
+        }
+        if (oldNode.tag !== newNode.tag) {
+            patches.push({ type: "REPLACE", path: "", oldVal: oldNode.tag, newVal: newNode.tag });
+            return patches;
+        }
+
+        const allKeys = [...new Set([...Object.keys(oldNode.props), ...Object.keys(newNode.props)])];
+        for (const key of allKeys) {
+            if (oldNode.props[key] !== newNode.props[key]) {
+                patches.push({ type: "PROP", path: key, oldVal: oldNode.props[key], newVal: newNode.props[key] });
+            }
+        }
+
+        const maxLen = Math.max(oldNode.children.length, newNode.children.length);
+        for (let i = 0; i < maxLen; i++) {
+            const childPatches = VirtualDOM.diff(
+                oldNode.children[i] as VNode | string | null,
+                newNode.children[i] as VNode | string | null
+            );
+            for (const p of childPatches) {
+                patches.push({ ...p, path: `[${i}]${p.path ? "." + p.path : ""}` });
+            }
+        }
+
+        return patches;
+    }
+
+    static patch(node: Element, patches: { type: string; path: string; oldVal?: any; newVal?: any }[]): void {
+        for (const p of patches) {
+            console.log(`[${p.type}] ${p.path}:`, p.oldVal, "→", p.newVal);
+        }
+    }
+}
+
+class DOMTreeWalker {
+    static walk(element: Element, depth: number = 0): { tag: string; id: string; classes: string; depth: number; children: number }[] {
+        const result: { tag: string; id: string; classes: string; depth: number; children: number }[] = [];
+        result.push({
+            tag: element.tagName.toLowerCase(),
+            id: element.id || "",
+            classes: Array.from(element.classList).join("."),
+            depth,
+            children: element.children.length
+        });
+        for (let i = 0; i < element.children.length; i++) {
+            result.push(...DOMTreeWalker.walk(element.children[i] as Element, depth + 1));
+        }
+        return result;
+    }
+
+    static queryAll(element: Element, selector: string): Element[] {
+        const results: Element[] = [];
+        if (element.matches && element.matches(selector)) results.push(element);
+        for (let i = 0; i < element.children.length; i++) {
+            results.push(...DOMTreeWalker.queryAll(element.children[i] as Element, selector));
+        }
+        return results;
+    }
+}
+
+class EventDelegation {
+    static delegate(parent: Element, selector: string, eventType: string, handler: (target: Element, e: Event) => void): () => void {
+        const listener = (e: Event) => {
+            const target = e.target as Element;
+            const matched = target.closest(selector);
+            if (matched && parent.contains(matched)) {
+                handler(matched as Element, e);
+            }
+        };
+        parent.addEventListener(eventType, listener);
+        return () => parent.removeEventListener(eventType, listener);
+    }
+
+    static throttle<T extends (...args: any[]) => any>(fn: T, delay: number): (...args: Parameters<T>) => void {
+        let lastCall = 0;
+        return (...args: Parameters<T>) => {
+            const now = Date.now();
+            if (now - lastCall >= delay) { lastCall = now; fn(...args); }
+        };
+    }
+
+    static debounce<T extends (...args: any[]) => any>(fn: T, delay: number): (...args: Parameters<T>) => void {
+        let timer: ReturnType<typeof setTimeout>;
+        return (...args: Parameters<T>) => {
+            clearTimeout(timer);
+            timer = setTimeout(() => fn(...args), delay);
+        };
+    }
+}
+
+// Demo
+const oldTree = h("div", { class: "container" }, [
+    h("h1", {}, ["Title"]),
+    h("p", { class: "desc" }, ["Description"]),
+    h("ul", {}, [h("li", { key: "1" }, ["Item 1"]), h("li", { key: "2" }, ["Item 2"])])
+]);
+const newTree = h("div", { class: "container wide" }, [
+    h("h1", {}, ["New Title"]),
+    h("p", { class: "desc" }, ["Updated description"]),
+    h("ul", {}, [h("li", { key: "1" }, ["Item 1"]), h("li", { key: "2" }, ["Item 2"]), h("li", { key: "3" }, ["Item 3"])])
+]);
+
+console.log("VDOM Diffs:", VirtualDOM.diff(oldTree, newTree).length, "changes");
+for (const d of VirtualDOM.diff(oldTree, newTree)) console.log(`  ${d.type} at ${d.path}`);
+
+console.log("Throttled:", EventDelegation.throttle(() => {}, 1000).toString().slice(0, 50) + "...");
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** `FormData` provides a convenient interface for capturing form data including file uploads.

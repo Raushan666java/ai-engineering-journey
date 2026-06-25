@@ -536,6 +536,148 @@ class OrderSaga:
 
 ---
 
+### TypeScript: gRPC Client, GraphQL Resolver, and Contract Tester
+
+```typescript
+type ProtoMessage = { [field: number]: any };
+class GrpcClient {
+  private handlers = new Map<string, (req: any) => any>();
+  registerService(method: string, handler: (req: any) => any): void { this.handlers.set(method, handler); }
+  async call<T>(method: string, request: ProtoMessage): Promise<T> {
+    const handler = this.handlers.get(method);
+    if (!handler) throw new Error(`gRPC method ${method} not found`);
+    return handler(request) as T;
+  }
+}
+
+class GraphQLResolver {
+  private resolvers = new Map<string, { resolve: (parent: any, args: any) => any; batch?: boolean }>();
+  private dataLoaders = new Map<string, Map<string, any>>();
+
+  register(type: string, field: string, resolve: (parent: any, args: any) => any, batch = false): void {
+    this.resolvers.set(`${type}.${field}`, { resolve, batch });
+  }
+
+  async resolveField(type: string, field: string, parent: any, args: any): Promise<any> {
+    const resolver = this.resolvers.get(`${type}.${field}`);
+    if (!resolver) throw new Error(`No resolver for ${type}.${field}`);
+    return resolver.resolve(parent, args);
+  }
+
+  dataloader(key: string): { load: (id: string) => any; prime: (id: string, value: any) => void } {
+    if (!this.dataLoaders.has(key)) this.dataLoaders.set(key, new Map());
+    const cache = this.dataLoaders.get(key)!;
+    return {
+      load: (id: string) => { if (!cache.has(id)) throw new Error(`Not found: ${id}`); return cache.get(id); },
+      prime: (id: string, value: any) => { cache.set(id, value); },
+    };
+  }
+}
+
+class ContractTester {
+  private contracts = new Map<string, { request: any; response: any }>();
+  define(service: string, request: any, response: any): void { this.contracts.set(service, { request, response }); }
+  verifyProvider(service: string, actualResponse: any): { valid: boolean; errors: string[] } {
+    const contract = this.contracts.get(service);
+    if (!contract) return { valid: false, errors: [`No contract defined for ${service}`] };
+    const errors: string[] = [];
+    for (const key of Object.keys(contract.response)) {
+      if (!(key in actualResponse)) errors.push(`Missing field: ${key}`);
+      else if (typeof actualResponse[key] !== typeof contract.response[key]) errors.push(`Type mismatch: ${key}`);
+    }
+    return { valid: errors.length === 0, errors };
+  }
+}
+```
+
+### TypeScript: API Gateway, Rate Limiter, Circuit Breaker, Saga
+
+```typescript
+class RateLimiter {
+  private buckets = new Map<string, { tokens: number; lastRefill: number }>();
+  constructor(private maxTokens: number, private refillRate: number, private refillIntervalMs: number) {}
+
+  allow(key: string): boolean {
+    const now = Date.now();
+    let bucket = this.buckets.get(key);
+    if (!bucket) { bucket = { tokens: this.maxTokens, lastRefill: now }; this.buckets.set(key, bucket); }
+    const elapsed = now - bucket.lastRefill;
+    const refill = Math.floor(elapsed / this.refillIntervalMs) * this.refillRate;
+    bucket.tokens = Math.min(this.maxTokens, bucket.tokens + refill);
+    bucket.lastRefill = now;
+    if (bucket.tokens <= 0) return false;
+    bucket.tokens--;
+    return true;
+  }
+}
+
+class CircuitBreaker {
+  private failures = 0;
+  private lastFailureTime = 0;
+  private state: "closed" | "open" | "half-open" = "closed";
+  constructor(private threshold: number, private timeoutMs: number) {}
+
+  async call<T>(fn: () => Promise<T>): Promise<T> {
+    if (this.state === "open") {
+      if (Date.now() - this.lastFailureTime > this.timeoutMs) this.state = "half-open";
+      else throw new Error("Circuit open");
+    }
+    try {
+      const result = await fn();
+      this.failures = 0;
+      this.state = "closed";
+      return result;
+    } catch (e) {
+      this.failures++;
+      this.lastFailureTime = Date.now();
+      if (this.failures >= this.threshold) this.state = "open";
+      throw e;
+    }
+  }
+}
+
+class SagaOrchestrator {
+  private steps: { name: string; execute: () => Promise<void>; compensate: () => Promise<void> }[] = [];
+  private executed: string[] = [];
+
+  addStep(name: string, execute: () => Promise<void>, compensate: () => Promise<void>): void {
+    this.steps.push({ name, execute, compensate });
+  }
+
+  async execute(): Promise<void> {
+    for (const step of this.steps) {
+      try {
+        await step.execute();
+        this.executed.push(step.name);
+      } catch (e) {
+        console.error(`Step ${step.name} failed. Compensating...`);
+        for (const done of this.executed.reverse()) {
+          const s = this.steps.find(st => st.name === done);
+          if (s) await s.compensate();
+        }
+        throw e;
+      }
+    }
+  }
+}
+
+class ApiGateway {
+  private rateLimiter = new RateLimiter(100, 10, 1000);
+  private circuitBreakers = new Map<string, CircuitBreaker>();
+
+  constructor(private services: Map<string, string>) {}
+
+  async route(service: string, request: any): Promise<any> {
+    if (!this.rateLimiter.allow(request.ip)) throw new Error("Rate limit exceeded");
+    if (!this.circuitBreakers.has(service)) this.circuitBreakers.set(service, new CircuitBreaker(5, 30000));
+    const cb = this.circuitBreakers.get(service)!;
+    const url = this.services.get(service);
+    if (!url) throw new Error("Service not found");
+    return cb.call(async () => ({ service, url, request, response: `ok from ${service}` }));
+  }
+}
+```
+
 ### TypeScript: Service Registry
 
 ```typescript

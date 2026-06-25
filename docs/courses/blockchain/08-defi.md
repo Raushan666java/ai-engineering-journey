@@ -743,6 +743,151 @@ class ImpermanentLossCalculator {
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === AMM Constant Product Formula ===
+class ConstantProductAMM {
+    private reserveA: number;
+    private reserveB: number;
+
+    constructor(initialA: number, initialB: number) { this.reserveA = initialA; this.reserveB = initialB; }
+    
+    swap(amountIn: number, isTokenA: boolean): { amountOut: number; newReserveA: number; newReserveB: number } {
+        const k = this.reserveA * this.reserveB;
+        if (isTokenA) {
+            const newA = this.reserveA + amountIn;
+            const newB = k / newA;
+            this.reserveA = newA; this.reserveB = newB;
+            return { amountOut: Math.floor(newB), newReserveA: this.reserveA, newReserveB: this.reserveB };
+        } else {
+            const newB = this.reserveB + amountIn;
+            const newA = k / newB;
+            this.reserveB = newB; this.reserveA = newA;
+            return { amountOut: Math.floor(newA), newReserveA: this.reserveA, newReserveB: this.reserveB };
+        }
+    }
+    addLiquidity(amountA: number, amountB: number): { shares: number; newReserveA: number; newReserveB: number } {
+        const shares = Math.sqrt(amountA * amountB);
+        this.reserveA += amountA; this.reserveB += amountB;
+        return { shares: Math.floor(shares), newReserveA: this.reserveA, newReserveB: this.reserveB };
+    }
+    removeLiquidity(shares: number, totalShares: number): { amountA: number; amountB: number } {
+        const pct = shares / totalShares;
+        const a = Math.floor(this.reserveA * pct);
+        const b = Math.floor(this.reserveB * pct);
+        this.reserveA -= a; this.reserveB -= b;
+        return { amountA: a, amountB: b };
+    }
+    getPrice(): number { return this.reserveB / this.reserveA; }
+    getReserves(): { reserveA: number; reserveB: number } { return { reserveA: this.reserveA, reserveB: this.reserveB }; }
+}
+
+// === Impermanent Loss Calculator ===
+class ImpermanentLoss {
+    static calculate(priceRatio: number): number {
+        const sqrtR = Math.sqrt(priceRatio);
+        const lpValue = 2 * sqrtR / (1 + priceRatio);
+        return (lpValue - 1) * 100;
+    }
+    static lossTable(): { ratio: number; lossPercent: number }[] {
+        return [1.25, 1.5, 1.75, 2, 3, 4, 5, 10].map(r => ({ ratio: r, lossPercent: this.calculate(r) }));
+    }
+    static breakEvenVolume(priceChangePct: number, fee: number, poolValue: number): number {
+        const loss = Math.abs(this.calculate(1 + priceChangePct / 100) / 100) * poolValue;
+        return loss / fee;
+    }
+}
+
+// === Liquidity Pool Simulator ===
+class LiquidityPool {
+    private providers = new Map<string, number>();
+    
+    constructor(private amm: ConstantProductAMM) {}
+    
+    provide(address: string, amountA: number, amountB: number): number {
+        const result = this.amm.addLiquidity(amountA, amountB);
+        this.providers.set(address, (this.providers.get(address) ?? 0) + result.shares);
+        return result.shares;
+    }
+    withdraw(address: string, shares: number): { amountA: number; amountB: number } | null {
+        const owned = this.providers.get(address) ?? 0;
+        if (shares > owned) return null;
+        const result = this.amm.removeLiquidity(shares, owned);
+        this.providers.set(address, owned - shares);
+        return result;
+    }
+    getShare(address: string): number { return this.providers.get(address) ?? 0; }
+}
+
+// === Yield Farming Simulator ===
+class YieldFarm {
+    private stakers = new Map<string, { amount: number; since: number }>();
+    private rewardRate: number;
+
+    constructor(private totalReward: number, private duration: number) { this.rewardRate = totalReward / duration; }
+    
+    stake(address: string, amount: number): void {
+        this.stakers.set(address, { amount, since: Date.now() });
+    }
+    unstake(address: string): { principal: number; reward: number } {
+        const s = this.stakers.get(address);
+        if (!s) return { principal: 0, reward: 0 };
+        const elapsed = (Date.now() - s.since) / 1000;
+        const totalStaked = Array.from(this.stakers.values()).reduce((a, s) => a + s.amount, 0);
+        const reward = totalStaked > 0 ? (s.amount / totalStaked) * this.rewardRate * elapsed : 0;
+        this.stakers.delete(address);
+        return { principal: s.amount, reward };
+    }
+}
+
+// === Stablecoin Collateralization Checker ===
+class StablecoinEngine {
+    private collateral: Map<string, { deposited: number; minted: number }> = new Map();
+    constructor(private minCollateralRatio: number) {}
+
+    deposit(address: string, amount: number): void {
+        const pos = this.collateral.get(address) ?? { deposited: 0, minted: 0 };
+        pos.deposited += amount;
+        this.collateral.set(address, pos);
+    }
+    mint(address: string, amount: number): boolean {
+        const pos = this.collateral.get(address);
+        if (!pos) return false;
+        const ratio = pos.deposited / (pos.minted + amount);
+        if (ratio < this.minCollateralRatio) return false;
+        pos.minted += amount;
+        return true;
+    }
+    isSafe(address: string): boolean {
+        const pos = this.collateral.get(address);
+        return pos ? (pos.deposited / pos.minted) >= this.minCollateralRatio : true;
+    }
+}
+
+// === Demo ===
+const amm = new ConstantProductAMM(100, 100);
+console.log('AMM initial price:', amm.getPrice());
+const swap = amm.swap(10, true);
+console.log(`Swap 10 A -> ${swap.amountOut} B`);
+console.log(`New price: ${amm.getPrice().toFixed(4)}`);
+console.log(`IL @ 2x price change: ${ImpermanentLoss.calculate(2).toFixed(2)}%`);
+console.log('IL table:', ImpermanentLoss.lossTable().map(r => `${r.ratio}x: ${r.lossPercent.toFixed(2)}%`).join(', '));
+
+const pool = new LiquidityPool(amm);
+pool.provide('alice', 50, 50);
+console.log(`Alice LP shares: ${pool.getShare('alice')}`);
+
+const farm = new YieldFarm(1000, 86400);
+farm.stake('alice', 100);
+console.log(`Farm staked`);
+
+const se = new StablecoinEngine(1.5);
+se.deposit('alice', 150);
+console.log(`Mint 100 stablecoins: ${se.mint('alice', 100)}`);
+console.log(`Position safe: ${se.isSafe('alice')}`);
+```
+
 ## Summary
 
 - DeFi provides financial services without intermediaries through smart contracts.

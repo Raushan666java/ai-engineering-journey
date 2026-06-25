@@ -761,6 +761,176 @@ class FrontRunningSimulator {
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === Reentrancy Detector ===
+class ReentrancyDetector {
+    private callStack = new Set<string>();
+    private reentrantCalls = new Map<string, number>();
+
+    callFunction(contract: string, fn: string): boolean {
+        const key = `${contract}:${fn}`;
+        if (this.callStack.has(key)) {
+            this.reentrantCalls.set(key, (this.reentrantCalls.get(key) ?? 0) + 1);
+            return false; // blocked
+        }
+        this.callStack.add(key);
+        return true;
+    }
+    finishCall(contract: string, fn: string): void {
+        this.callStack.delete(`${contract}:${fn}`);
+    }
+    detectPatterns(bytecode: string): { hasCall: boolean; hasStateChange: boolean; order: string } {
+        const hasCall = bytecode.includes('CALL') || bytecode.includes('DELEGATECALL');
+        const hasStateChange = bytecode.includes('SSTORE');
+        const callIdx = bytecode.indexOf('CALL');
+        const storeIdx = bytecode.indexOf('SSTORE');
+        const order = callIdx >= 0 && storeIdx >= 0 && callIdx < storeIdx ? 'checks-effects-interactions:VIOLATED' : 'safe';
+        return { hasCall, hasStateChange, order };
+    }
+}
+
+// === Integer Overflow Checker ===
+class OverflowChecker {
+    static checkAdd(a: bigint, b: bigint, bits: number): { result: bigint; overflow: boolean } {
+        const max = (BigInt(1) << BigInt(bits)) - BigInt(1);
+        const result = a + b;
+        return { result: result & max, overflow: result > max };
+    }
+    static checkSub(a: bigint, b: bigint, bits: number): { result: bigint; underflow: boolean } {
+        const max = (BigInt(1) << BigInt(bits)) - BigInt(1);
+        const result = a - b;
+        return { result: result & max, underflow: a < b };
+    }
+    static checkMul(a: bigint, b: bigint, bits: number): { result: bigint; overflow: boolean } {
+        const max = (BigInt(1) << BigInt(bits)) - BigInt(1);
+        const result = a * b;
+        return { result: result & max, overflow: result > max };
+    }
+    static analyzeBytecode(ops: string[]): { dangerous: boolean; issues: string[] } {
+        const issues: string[] = [];
+        let hasAdd = false, hasSafeMath = false;
+        for (const op of ops) {
+            if (op === 'ADD') hasAdd = true;
+            if (op.includes('SafeMath') || op.includes('checked')) hasSafeMath = true;
+        }
+        if (hasAdd && !hasSafeMath) issues.push('raw ADD without SafeMath');
+        return { dangerous: issues.length > 0, issues };
+    }
+}
+
+// === Access Control Analyzer ===
+class AccessControlAnalyzer {
+    private roles = new Map<string, Set<string>>();
+
+    assignRole(user: string, role: string): void {
+        if (!this.roles.has(role)) this.roles.set(role, new Set());
+        this.roles.get(role)!.add(user);
+    }
+    hasRole(user: string, role: string): boolean { return this.roles.get(role)?.has(user) ?? false; }
+
+    analyzeFunction(visibility: string, modifiers: string[], functionName: string): { risk: string; details: string[] } {
+        const issues: string[] = [];
+        if (visibility === 'public' && !modifiers.some(m => m.includes('only') || m.includes('auth'))) {
+            issues.push(`${functionName}: public without access control`);
+        }
+        if (visibility === 'external' && !modifiers.includes('onlyOwner')) {
+            issues.push(`${functionName}: external might need onlyOwner`);
+        }
+        return { risk: issues.length > 0 ? 'HIGH' : 'LOW', details: issues };
+    }
+}
+
+// === Front-Running Simulator ===
+class FrontRunningSim {
+    private mempool: { txid: string; data: string; gasPrice: bigint; from: string }[] = [];
+
+    submitTx(txid: string, data: string, gasPrice: bigint, from: string): void {
+        this.mempool.push({ txid, data, gasPrice, from });
+        this.mempool.sort((a, b) => Number(b.gasPrice - a.gasPrice));
+    }
+    frontRun(victimTxid: string, attackerAddr: string): { frontRunTx: string; profit: bigint } | null {
+        const victimIdx = this.mempool.findIndex(t => t.txid === victimTxid);
+        if (victimIdx < 0) return null;
+        const victim = this.mempool[victimIdx];
+        const frontRunTx = `frontrun-${victimTxid}`;
+        this.mempool.splice(victimIdx, 1);
+        return { frontRunTx, profit: BigInt(100) };
+    }
+    pendingCount(): number { return this.mempool.length; }
+}
+
+// === Layer 2 Rollup Simulator ===
+class RollupSimulator {
+    private batch: { sender: string; to: string; amount: bigint }[] = [];
+    private stateRoot = '0x0';
+    private batchNumber = 0;
+
+    submitTx(sender: string, to: string, amount: bigint): void {
+        this.batch.push({ sender, to, amount });
+    }
+    submitBatch(sequencer: string): { batchNum: number; txCount: number; stateRoot: string } {
+        this.batchNumber++;
+        const root = `0x${Math.abs(this.batchNumber * 0x9E3779B9).toString(16).padStart(64, '0')}`;
+        const count = this.batch.length;
+        this.stateRoot = root;
+        this.batch = [];
+        return { batchNum: this.batchNumber, txCount: count, stateRoot: root };
+    }
+    verifyBatch(batchNum: number, proof: string[]): boolean {
+        return proof.length > 0;
+    }
+}
+
+// === MEV (Maximal Extractable Value) Estimator ===
+class MEVEstimator {
+    estimateArbitrage(prices: Map<string, number>, dexes: string[]): number {
+        let maxProfit = 0;
+        for (let i = 0; i < dexes.length; i++) {
+            for (let j = i + 1; j < dexes.length; j++) {
+                const spread = Math.abs(prices.get(dexes[i])! - prices.get(dexes[j])!);
+                maxProfit = Math.max(maxProfit, spread);
+            }
+        }
+        return maxProfit;
+    }
+    estimateSandwich(targetAmount: number, slippage: number): number {
+        return targetAmount * (slippage / 100) * 0.5;
+    }
+}
+
+// === Demo ===
+const rd = new ReentrancyDetector();
+console.log(`Reentrancy call: ${rd.callFunction('vault', 'withdraw')}`);
+console.log(`Reentrancy call (re-entered): ${rd.callFunction('vault', 'withdraw')}`);
+rd.finishCall('vault', 'withdraw');
+console.log(`Pattern analysis:`, rd.detectPatterns('PUSH CALL SSTORE'));
+
+const oc = new OverflowChecker();
+console.log(`Overflow max+1: ${oc.checkAdd(BigInt(255), BigInt(1), 8).overflow}`);
+console.log(`Underflow 0-1: ${oc.checkSub(BigInt(0), BigInt(1), 8).underflow}`);
+
+const ac = new AccessControlAnalyzer();
+ac.assignRole('alice', 'admin');
+console.log(`Alice admin: ${ac.hasRole('alice', 'admin')}`);
+console.log(`Function analysis:`, ac.analyzeFunction('public', [], 'setBalance'));
+
+const fr = new FrontRunningSim();
+fr.submitTx('tx1', '0xbeef', BigInt(50), 'alice');
+fr.submitTx('tx2', '0xcafe', BigInt(100), 'bob');
+console.log(`Front-run tx1: ${fr.frontRun('tx1', 'mallory')?.frontRunTx}`);
+
+const rollup = new RollupSimulator();
+rollup.submitTx('alice', 'bob', BigInt(10));
+rollup.submitTx('bob', 'carol', BigInt(5));
+const batch = rollup.submitBatch('sequencer1');
+console.log(`Rollup batch ${batch.batchNum}: ${batch.txCount} txs`);
+
+const mev = new MEVEstimator();
+console.log(`MEV arbitrage: ${mev.estimateArbitrage(new Map([['Uniswap', 100], ['Sushiswap', 102]]), ['Uniswap', 'Sushiswap'])}`);
+```
+
 ## Summary
 
 - Scalability is the primary hurdle for mainstream blockchain adoption.

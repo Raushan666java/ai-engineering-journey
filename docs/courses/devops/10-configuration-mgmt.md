@@ -664,6 +664,135 @@ console.log(parser.generateSummary(plan));
 
 ---
 
+### Configuration Drift Remediation Scheduler
+
+Drift remediation must be scheduled intelligently to avoid disrupting workloads during peak hours. The following tool implements a drift-aware remediation scheduler with prioritization.
+
+```typescript
+// drift-scheduler.ts
+// Schedule drift remediation with prioritization
+
+interface RemediationTask {
+  id: string;
+  resourceId: string;
+  driftCategory: 'security' | 'config' | 'tag' | 'size' | 'missing';
+  driftSeverity: 'low' | 'medium' | 'high' | 'critical';
+  affectedScope: string;
+  estimatedDurationSec: number;
+  canAutoRemediate: boolean;
+  createdAt: Date;
+}
+
+interface ScheduleWindow {
+  dayOfWeek: number;
+  startHour: number;
+  endHour: number;
+  timezone: string;
+  maxConcurrentTasks: number;
+}
+
+interface RemediationSchedule {
+  tasks: RemediationTask[];
+  scheduleWindow: ScheduleWindow;
+  proposedOrder: RemediationTask[];
+  totalEstimatedMinutes: number;
+  windowCapacityMinutes: number;
+  fitsInWindow: boolean;
+  overflowCount: number;
+}
+
+class DriftScheduler {
+  private windows: ScheduleWindow[];
+  private history: Map<string, Date> = new Map();
+
+  constructor(windows: ScheduleWindow[]) {
+    this.windows = windows;
+  }
+
+  schedule(tasks: RemediationTask[], currentDate: Date): RemediationSchedule {
+    const currentDay = currentDate.getDay();
+    const currentHour = currentDate.getHours();
+    const availableWindow = this.windows.find(w => w.dayOfWeek === currentDay && currentHour >= w.startHour && currentHour < w.endHour);
+
+    if (!availableWindow) {
+      const nextWindow = this.findNextWindow(currentDate);
+      if (!nextWindow) throw new Error('No available maintenance windows');
+      return this.buildDeferredSchedule(tasks, nextWindow);
+    }
+
+    const prioritized = this.prioritizeRemediation(tasks);
+    const windowCapacity = availableWindow.endHour - currentHour;
+    const windowCapacityMinutes = windowCapacity * 60;
+    const totalEstimated = prioritized.reduce((s, t) => s + t.estimatedDurationSec, 0) / 60;
+    const fitsInWindow = totalEstimated <= windowCapacityMinutes;
+
+    const allowed = fitsInWindow ? prioritized : prioritized.slice(0, Math.floor(windowCapacityMinutes / (totalEstimated / prioritized.length)));
+    const overflow = fitsInWindow ? [] : prioritized.slice(allowed.length);
+
+    return {
+      tasks, scheduleWindow: availableWindow,
+      proposedOrder: allowed,
+      totalEstimatedMinutes: Math.ceil(totalEstimated),
+      windowCapacityMinutes, fitsInWindow,
+      overflowCount: overflow.length,
+    };
+  }
+
+  prioritizeRemediation(tasks: RemediationTask[]): RemediationTask[] {
+    return [...tasks].sort((a, b) => {
+      const severityOrder = { critical: 0, high: 1, medium: 2, low: 3 };
+      const catOrder = { security: 0, missing: 1, size: 2, config: 3, tag: 4 };
+      const aKey = `${severityOrder[a.driftSeverity]}-${catOrder[a.driftCategory]}`;
+      const bKey = `${severityOrder[b.driftSeverity]}-${catOrder[b.driftCategory]}`;
+      return aKey.localeCompare(bKey);
+    });
+  }
+
+  markCompleted(taskId: string): void {
+    this.history.set(taskId, new Date());
+  }
+
+  private findNextWindow(from: Date): ScheduleWindow | null {
+    for (let offset = 0; offset < 7; offset++) {
+      const checkDay = (from.getDay() + offset) % 7;
+      const window = this.windows.find(w => w.dayOfWeek === checkDay);
+      if (window) return window;
+    }
+    return null;
+  }
+
+  private buildDeferredSchedule(tasks: RemediationTask[], window: ScheduleWindow): RemediationSchedule {
+    const prioritized = this.prioritizeRemediation(tasks);
+    return {
+      tasks, scheduleWindow: window,
+      proposedOrder: prioritized,
+      totalEstimatedMinutes: Math.ceil(prioritized.reduce((s, t) => s + t.estimatedDurationSec, 0) / 60),
+      windowCapacityMinutes: (window.endHour - window.startHour) * 60,
+      fitsInWindow: false, overflowCount: 0,
+    };
+  }
+}
+
+const scheduler = new DriftScheduler([
+  { dayOfWeek: 1, startHour: 2, endHour: 5, timezone: 'UTC', maxConcurrentTasks: 3 },
+  { dayOfWeek: 3, startHour: 2, endHour: 5, timezone: 'UTC', maxConcurrentTasks: 3 },
+  { dayOfWeek: 5, startHour: 3, endHour: 6, timezone: 'UTC', maxConcurrentTasks: 2 },
+]);
+
+const tasks: RemediationTask[] = [
+  { id: 'drift-001', resourceId: 'sg-prod-web', driftCategory: 'security', driftSeverity: 'high', affectedScope: 'production', estimatedDurationSec: 90, canAutoRemediate: true, createdAt: new Date() },
+  { id: 'drift-002', resourceId: 'instance-db-01', driftCategory: 'size', driftSeverity: 'medium', affectedScope: 'production', estimatedDurationSec: 180, canAutoRemediate: true, createdAt: new Date() },
+  { id: 'drift-003', resourceId: 'bucket-logs', driftCategory: 'config', driftSeverity: 'low', affectedScope: 'staging', estimatedDurationSec: 45, canAutoRemediate: true, createdAt: new Date() },
+];
+
+const schedule = scheduler.schedule(tasks, new Date('2026-06-25T03:00:00Z'));
+console.log(`Schedule: ${schedule.proposedOrder.length} tasks in window (${schedule.totalEstimatedMinutes}min of ${schedule.windowCapacityMinutes}min), overflow: ${schedule.overflowCount}`);
+```
+
+**What this demonstrates:** A drift remediation scheduler ensures high-severity drifts are fixed within defined maintenance windows while preventing schedule overflow.
+
+---
+
 ## Practical Takeaways
 
 1. **Use dynamic inventories for cloud environments.** Don't maintain static host lists.

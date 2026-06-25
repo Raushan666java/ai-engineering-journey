@@ -717,6 +717,147 @@ class PerformanceOptimizer {
 console.log(CustomHookGenerator.createReducer({ count: 0 }, { increment: (s) => ({ count: s.count + 1 }) }));
 ```
 
+## TypeScript Implementation: Redux-Style State Manager, Context Provider, Custom Hook Creator
+
+```typescript
+type Reducer<S, A> = (state: S, action: A) => S;
+type Listener = () => void;
+
+class ReduxStore<S, A> {
+    private state: S;
+    private reducer: Reducer<S, A>;
+    private listeners: Set<Listener> = new Set();
+
+    constructor(reducer: Reducer<S, A>, initialState: S) {
+        this.reducer = reducer;
+        this.state = initialState;
+    }
+
+    getState(): S { return this.state; }
+
+    dispatch(action: A): void {
+        this.state = this.reducer(this.state, action);
+        this.listeners.forEach(l => l());
+    }
+
+    subscribe(listener: Listener): () => void {
+        this.listeners.add(listener);
+        return () => this.listeners.delete(listener);
+    }
+
+    combineReducers<R extends Record<string, Reducer<any, any>>>(reducers: R): Reducer<{ [K in keyof R]: ReturnType<R[K]> }, any> {
+        return (state: any, action: any) => {
+            const nextState: any = {};
+            for (const key of Object.keys(reducers)) {
+                nextState[key] = reducers[key](state?.[key], action);
+            }
+            return nextState;
+        };
+    }
+
+    static applyMiddleware<S, A>(...middlewares: ((store: ReduxStore<S, A>) => (next: (action: A) => void) => (action: A) => void)[]) {
+        return (store: ReduxStore<S, A>) => {
+            let dispatch = store.dispatch.bind(store);
+            for (const middleware of [...middlewares].reverse()) {
+                dispatch = middleware(store)(dispatch);
+            }
+            return { ...store, dispatch };
+        };
+    }
+}
+
+class ContextProvider<T> {
+    private value: T;
+    private subscribers: Set<() => void> = new Set();
+
+    constructor(defaultValue: T) { this.value = defaultValue; }
+
+    getValue(): T { return this.value; }
+
+    setValue(newValue: T): void {
+        this.value = newValue;
+        this.subscribers.forEach(cb => cb());
+    }
+
+    subscribe(cb: () => void): () => void {
+        this.subscribers.add(cb);
+        return () => this.subscribers.delete(cb);
+    }
+
+    static createContext<T>(defaultValue: T): { Provider: ContextProvider<T>; useContext: () => T } {
+        const provider = new ContextProvider(defaultValue);
+        return {
+            Provider: provider,
+            useContext: () => provider.getValue()
+        };
+    }
+}
+
+type AnyHook = (...args: any[]) => any;
+
+class CustomHookCreator {
+    static compose(...hooks: ((...args: any[]) => any)[]): (...args: any[]) => any[] {
+        return (...args: any[]) => hooks.map(h => h(...args));
+    }
+
+    static createStateful<T>(initialValue: T): { get: () => T; set: (v: T) => void; subscribe: (cb: (v: T) => void) => () => void } {
+        let value = initialValue;
+        const subscribers = new Set<(v: T) => void>();
+        return {
+            get: () => value,
+            set: (v: T) => { value = v; subscribers.forEach(cb => cb(value)); },
+            subscribe: (cb: (v: T) => void) => { subscribers.add(cb); return () => subscribers.delete(cb); }
+        };
+    }
+
+    static createDebounced<T>(delay: number): { get: () => T | undefined; set: (v: T) => void } {
+        let value: T | undefined;
+        let timer: ReturnType<typeof setTimeout>;
+        return {
+            get: () => value,
+            set: (v: T) => {
+                clearTimeout(timer);
+                timer = setTimeout(() => { value = v; }, delay);
+            }
+        };
+    }
+
+    static createToggle(initial: boolean = false): { value: boolean; toggle: () => void; setTrue: () => void; setFalse: () => void } {
+        let value = initial;
+        return {
+            get value() { return value; },
+            toggle: () => { value = !value; },
+            setTrue: () => { value = true; },
+            setFalse: () => { value = false; }
+        };
+    }
+}
+
+// Demo
+const counterReducer = (state = 0, action: any) => {
+    switch (action.type) {
+        case "INCREMENT": return state + 1;
+        case "DECREMENT": return state - 1;
+        case "RESET": return 0;
+        default: return state;
+    }
+};
+const store = new ReduxStore(counterReducer, 0);
+store.subscribe(() => console.log("State:", store.getState()));
+store.dispatch({ type: "INCREMENT" });
+store.dispatch({ type: "INCREMENT" });
+store.dispatch({ type: "DECREMENT" });
+
+const toggle = CustomHookCreator.createToggle(false);
+console.log("Toggle initial:", toggle.value);
+toggle.toggle();
+console.log("Toggle after:", toggle.value);
+
+const ctx = ContextProvider.createContext("default");
+console.log("Context value:", ctx.useContext());
+ctx.Provider.setValue("updated");
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** Custom hooks encapsulate reusable stateful logic and must start with the `use` prefix.

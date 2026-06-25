@@ -643,6 +643,197 @@ console.log('Circular deps:', analysis.circularDependencies.length > 0 ? analysi
 
 ---
 
+### Compose Config Generator from TypeScript Types
+
+Generating Docker Compose configurations programmatically from TypeScript type definitions ensures consistency across environments and reduces manual YAML editing errors.
+
+```typescript
+// compose-config-gen.ts
+// Generate Docker Compose YAML from TypeScript types
+
+interface ComposeServiceConfig {
+  name: string;
+  image: string;
+  build?: { context: string; dockerfile: string; args?: Record<string, string> };
+  ports?: string[];
+  environment?: Record<string, string>;
+  envFile?: string;
+  volumes?: string[];
+  dependsOn?: { service: string; condition?: 'service_started' | 'service_healthy' }[];
+  healthcheck?: { test: string[]; interval: string; timeout: string; retries: number; startPeriod: string };
+  networks?: string[];
+  restart?: 'always' | 'unless-stopped' | 'on-failure' | 'no';
+  deploy?: { replicas?: number; resources?: { limits?: { cpus?: string; memory?: string }; reservations?: { cpus?: string; memory?: string } } };
+  profiles?: string[];
+}
+
+interface ComposeNetworkConfig {
+  name: string;
+  driver?: 'bridge' | 'overlay' | 'host' | 'none';
+  internal?: boolean;
+  external?: boolean;
+}
+
+interface ComposeVolumeConfig {
+  name: string;
+  driver?: 'local' | 'nfs';
+  external?: boolean;
+}
+
+interface ComposeProject {
+  name: string;
+  version: string;
+  services: ComposeServiceConfig[];
+  networks?: ComposeNetworkConfig[];
+  volumes?: ComposeVolumeConfig[];
+}
+
+class ComposeConfigGenerator {
+  generate(project: ComposeProject): string {
+    let yaml = `name: ${project.name}\n\nservices:\n`;
+
+    for (const svc of project.services) {
+      yaml += `  ${svc.name}:\n`;
+      yaml += `    image: ${svc.image}\n`;
+      if (svc.build) {
+        yaml += `    build:\n      context: ${svc.build.context}\n`;
+        yaml += `      dockerfile: ${svc.build.dockerfile}\n`;
+        if (svc.build.args) {
+          yaml += '      args:\n';
+          for (const [k, v] of Object.entries(svc.build.args)) yaml += `        ${k}: "${v}"\n`;
+        }
+      }
+      if (svc.ports && svc.ports.length > 0) {
+        yaml += '    ports:\n';
+        svc.ports.forEach(p => yaml += `      - "${p}"\n`);
+      }
+      if (svc.environment && Object.keys(svc.environment).length > 0) {
+        yaml += '    environment:\n';
+        for (const [k, v] of Object.entries(svc.environment)) yaml += `      ${k}: "${v}"\n`;
+      }
+      if (svc.envFile) yaml += `    env_file: ${svc.envFile}\n`;
+      if (svc.volumes && svc.volumes.length > 0) {
+        yaml += '    volumes:\n';
+        svc.volumes.forEach(v => yaml += `      - ${v}\n`);
+      }
+      if (svc.dependsOn && svc.dependsOn.length > 0) {
+        yaml += '    depends_on:\n';
+        for (const dep of svc.dependsOn) {
+          if (dep.condition) yaml += `      ${dep.service}:\n        condition: ${dep.condition}\n`;
+          else yaml += `      - ${dep.service}\n`;
+        }
+      }
+      if (svc.healthcheck) {
+        yaml += '    healthcheck:\n';
+        yaml += `      test: ${JSON.stringify(svc.healthcheck.test)}\n`;
+        yaml += `      interval: ${svc.healthcheck.interval}\n`;
+        yaml += `      timeout: ${svc.healthcheck.timeout}\n`;
+        yaml += `      retries: ${svc.healthcheck.retries}\n`;
+        yaml += `      start_period: ${svc.healthcheck.startPeriod}\n`;
+      }
+      if (svc.restart) yaml += `    restart: ${svc.restart}\n`;
+      if (svc.deploy) {
+        yaml += '    deploy:\n';
+        if (svc.deploy.replicas) yaml += `      replicas: ${svc.deploy.replicas}\n`;
+        if (svc.deploy.resources) {
+          yaml += '      resources:\n';
+          if (svc.deploy.resources.limits) {
+            yaml += '        limits:\n';
+            if (svc.deploy.resources.limits.cpus) yaml += `          cpus: "${svc.deploy.resources.limits.cpus}"\n`;
+            if (svc.deploy.resources.limits.memory) yaml += `          memory: "${svc.deploy.resources.limits.memory}"\n`;
+          }
+          if (svc.deploy.resources.reservations) {
+            yaml += '        reservations:\n';
+            if (svc.deploy.resources.reservations.cpus) yaml += `          cpus: "${svc.deploy.resources.reservations.cpus}"\n`;
+            if (svc.deploy.resources.reservations.memory) yaml += `          memory: "${svc.deploy.resources.reservations.memory}"\n`;
+          }
+        }
+      }
+      if (svc.profiles && svc.profiles.length > 0) yaml += `    profiles: [${svc.profiles.join(', ')}]\n`;
+      yaml += '\n';
+    }
+
+    if (project.networks && project.networks.length > 0) {
+      yaml += 'networks:\n';
+      for (const net of project.networks) {
+        yaml += `  ${net.name}:\n`;
+        if (net.driver) yaml += `    driver: ${net.driver}\n`;
+        if (net.internal !== undefined) yaml += `    internal: ${net.internal}\n`;
+        if (net.external !== undefined) yaml += `    external: ${net.external}\n`;
+      }
+    }
+
+    if (project.volumes && project.volumes.length > 0) {
+      yaml += 'volumes:\n';
+      for (const vol of project.volumes) {
+        yaml += `  ${vol.name}:\n`;
+        if (vol.driver) yaml += `    driver: ${vol.driver}\n`;
+      }
+    }
+
+    return yaml;
+  }
+
+  generateProductionConfig(): ComposeProject {
+    return {
+      name: 'myapp-prod', version: '3.8',
+      services: [
+        {
+          name: 'api', image: 'myapp/api:latest',
+          ports: ['3000:3000'],
+          environment: { NODE_ENV: 'production', DB_HOST: 'postgres', REDIS_HOST: 'redis' },
+          dependsOn: [{ service: 'postgres', condition: 'service_healthy' }, { service: 'redis', condition: 'service_started' }],
+          healthcheck: { test: ['CMD', 'curl', '-f', 'http://localhost:3000/health'], interval: '30s', timeout: '10s', retries: 3, startPeriod: '15s' },
+          restart: 'unless-stopped', networks: ['frontend', 'backend'],
+          deploy: { replicas: 3, resources: { limits: { cpus: '0.5', memory: '512M' }, reservations: { cpus: '0.25', memory: '256M' } } },
+        },
+        {
+          name: 'postgres', image: 'postgres:16-alpine',
+          environment: { POSTGRES_DB: 'myapp', POSTGRES_PASSWORD: '${DB_PASSWORD}' },
+          volumes: ['pgdata:/var/lib/postgresql/data'],
+          healthcheck: { test: ['CMD-SHELL', 'pg_isready -U myapp'], interval: '10s', timeout: '5s', retries: 5, startPeriod: '30s' },
+          restart: 'always', networks: ['backend'],
+        },
+        {
+          name: 'redis', image: 'redis:7-alpine',
+          volumes: ['redisdata:/data'],
+          healthcheck: { test: ['CMD', 'redis-cli', 'ping'], interval: '10s', timeout: '5s', retries: 5, startPeriod: '10s' },
+          restart: 'always', networks: ['backend'],
+        },
+      ],
+      networks: [
+        { name: 'frontend', driver: 'bridge' },
+        { name: 'backend', driver: 'bridge', internal: true },
+      ],
+      volumes: [{ name: 'pgdata' }, { name: 'redisdata' }],
+    };
+  }
+
+  generateDevConfig(base: ComposeProject): ComposeProject {
+    return {
+      ...base, name: `${base.name}-dev`,
+      services: base.services.map(s => ({
+        ...s,
+        ports: s.ports?.map(p => p.replace(':3000', ':3001')),
+        environment: { ...s.environment, NODE_ENV: 'development', DEBUG: 'true' },
+        volumes: [...(s.volumes || []), './src:/app/src'],
+        deploy: undefined,
+        profiles: ['dev'],
+      })),
+    };
+  }
+}
+
+const gen = new ComposeConfigGenerator();
+const prod = gen.generateProductionConfig();
+console.log('=== Production Config ===\n' + gen.generate(prod));
+console.log('=== Dev Override ===\n' + gen.generate(gen.generateDevConfig(prod)));
+```
+
+**What this demonstrates:** Programmatic Compose config generation ensures type-safe, consistent, and well-documented Docker Compose configurations across development and production environments.
+
+---
+
 ## Practical Takeaways
 
 1. **Use `.env` files for environment-specific values.** Never hardcode secrets in compose files.

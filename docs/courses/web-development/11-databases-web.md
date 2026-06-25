@@ -661,6 +661,179 @@ const qb = new SQLQueryBuilder("users").select("id", "name").where("age > ?", 18
 console.log("SQL:", qb.toSQL());
 ```
 
+## TypeScript Implementation: SQL Query Builder, Connection Pool Health, Migration Tracker
+
+```typescript
+class SQLQueryBuilder {
+    private table: string;
+    private selectFields: string[] = ["*"];
+    private whereClauses: string[] = [];
+    private orderFields: string[] = [];
+    private groupFields: string[] = [];
+    private havingClauses: string[] = [];
+    private joins: string[] = [];
+    private limitCount: number | null = null;
+    private offsetCount: number | null = null;
+    private params: any[] = [];
+
+    constructor(table: string) { this.table = table; }
+
+    select(...fields: string[]): SQLQueryBuilder { this.selectFields = fields; return this; }
+
+    where(condition: string, ...values: any[]): SQLQueryBuilder {
+        this.whereClauses.push(condition);
+        this.params.push(...values);
+        return this;
+    }
+
+    andWhere(condition: string, ...values: any[]): SQLQueryBuilder {
+        return this.where(condition, ...values);
+    }
+
+    orWhere(condition: string, ...values: any[]): SQLQueryBuilder {
+        this.whereClauses.push(`(${condition})`);
+        this.params.push(...values);
+        return this;
+    }
+
+    join(table: string, on: string, type: "INNER" | "LEFT" | "RIGHT" = "INNER"): SQLQueryBuilder {
+        this.joins.push(`${type} JOIN ${table} ON ${on}`);
+        return this;
+    }
+
+    orderBy(field: string, dir: "ASC" | "DESC" = "ASC"): SQLQueryBuilder {
+        this.orderFields.push(`${field} ${dir}`);
+        return this;
+    }
+
+    groupBy(...fields: string[]): SQLQueryBuilder { this.groupFields.push(...fields); return this; }
+
+    having(condition: string): SQLQueryBuilder { this.havingClauses.push(condition); return this; }
+
+    setLimit(n: number): SQLQueryBuilder { this.limitCount = n; return this; }
+
+    setOffset(n: number): SQLQueryBuilder { this.offsetCount = n; return this; }
+
+    toSQL(): { query: string; params: any[] } {
+        let query = `SELECT ${this.selectFields.join(", ")} FROM ${this.table}`;
+        if (this.joins.length > 0) query += ` ${this.joins.join(" ")}`;
+        if (this.whereClauses.length > 0) query += ` WHERE ${this.whereClauses.map(c => `(${c})`).join(" AND ")}`;
+        if (this.groupFields.length > 0) query += ` GROUP BY ${this.groupFields.join(", ")}`;
+        if (this.havingClauses.length > 0) query += ` HAVING ${this.havingClauses.join(" AND ")}`;
+        if (this.orderFields.length > 0) query += ` ORDER BY ${this.orderFields.join(", ")}`;
+        if (this.limitCount !== null) query += ` LIMIT ${this.limitCount}`;
+        if (this.offsetCount !== null) query += ` OFFSET ${this.offsetCount}`;
+        return { query, params: this.params };
+    }
+
+    insert(fields: Record<string, any>): { query: string; params: any[] } {
+        const keys = Object.keys(fields);
+        const values = Object.values(fields);
+        const placeholders = values.map((_, i) => `$${i + 1}`);
+        return { query: `INSERT INTO ${this.table} (${keys.join(", ")}) VALUES (${placeholders.join(", ")})`, params: values };
+    }
+
+    update(fields: Record<string, any>): { query: string; params: any[] } {
+        const keys = Object.keys(fields);
+        const setClause = keys.map((k, i) => `${k} = $${i + 1}`).join(", ");
+        const values = Object.values(fields);
+        const whereClause = this.whereClauses.length > 0 ? ` WHERE ${this.whereClauses.join(" AND ")}` : "";
+        return { query: `UPDATE ${this.table} SET ${setClause}${whereClause}`, params: [...values, ...this.params] };
+    }
+
+    delete(): { query: string; params: any[] } {
+        const whereClause = this.whereClauses.length > 0 ? ` WHERE ${this.whereClauses.join(" AND ")}` : "";
+        return { query: `DELETE FROM ${this.table}${whereClause}`, params: this.params };
+    }
+}
+
+class ConnectionPoolHealthChecker {
+    private maxConnections: number;
+    private active: number = 0;
+    private waiting: number = 0;
+    private totalCreated: number = 0;
+    private totalErrors: number = 0;
+    private avgAcquireMs: number = 0;
+
+    constructor(maxConnections: number = 10) { this.maxConnections = maxConnections; }
+
+    acquire(): boolean {
+        if (this.active >= this.maxConnections) { this.waiting++; return false; }
+        this.active++; this.totalCreated++;
+        return true;
+    }
+
+    release(): void { this.active = Math.max(0, this.active - 1); }
+
+    health(): { healthy: boolean; usagePercent: number; active: number; waiting: number; totalCreated: number; errorRate: number } {
+        return {
+            healthy: this.active < this.maxConnections,
+            usagePercent: (this.active / this.maxConnections) * 100,
+            active: this.active,
+            waiting: this.waiting,
+            totalCreated: this.totalCreated,
+            errorRate: this.totalCreated > 0 ? this.totalErrors / this.totalCreated : 0
+        };
+    }
+
+    recordError(): void { this.totalErrors++; }
+
+    static thresholdAlert(health: { usagePercent: number }): string {
+        if (health.usagePercent > 90) return "CRITICAL: Pool nearly exhausted";
+        if (health.usagePercent > 75) return "WARNING: Pool usage elevated";
+        return "OK: Pool healthy";
+    }
+}
+
+class MigrationVersionTracker {
+    private versions: { id: number; name: string; appliedAt: Date; checksum: string }[] = [];
+    private currentVersion: number = 0;
+
+    addMigration(name: string, sql: string): { id: number; sql: string } {
+        const id = ++this.currentVersion;
+        const checksum = sql.split("").reduce((h, c) => ((h << 5) - h) + c.charCodeAt(0), 0).toString(16);
+        this.versions.push({ id, name, appliedAt: new Date(), checksum });
+        return { id, sql };
+    }
+
+    pending(targetVersion?: number): { id: number; name: string }[] {
+        const target = targetVersion || this.versions.length;
+        return this.versions.filter(v => v.id > this.currentVersion).slice(0, target - this.currentVersion);
+    }
+
+    rollback(toVersion: number): { rolledBack: string[] } {
+        const toRoll = this.versions.filter(v => v.id > toVersion).reverse();
+        this.currentVersion = toVersion;
+        return { rolledBack: toRoll.map(v => v.name) };
+    }
+
+    status(): { current: number; total: number; pending: number; migrations: { id: number; name: string; applied: string }[] } {
+        return {
+            current: this.currentVersion,
+            total: this.versions.length,
+            pending: this.versions.length - this.currentVersion,
+            migrations: this.versions.map(v => ({ id: v.id, name: v.name, applied: v.appliedAt.toISOString() }))
+        };
+    }
+}
+
+// Demo
+const qb = new SQLQueryBuilder("users").select("id", "name", "email")
+    .where("age > ?", 18).andWhere("status = ?", "active")
+    .join("orders", "users.id = orders.user_id", "LEFT")
+    .orderBy("name").setLimit(10);
+console.log("SQL:", qb.toSQL());
+
+const pool = new ConnectionPoolHealthChecker(5);
+pool.acquire(); pool.acquire(); pool.acquire();
+console.log("Pool health:", ConnectionPoolHealthChecker.thresholdAlert(pool.health()));
+
+const migrator = new MigrationVersionTracker();
+migrator.addMigration("create_users", "CREATE TABLE users (id INT)");
+migrator.addMigration("add_email", "ALTER TABLE users ADD email TEXT");
+console.log("Migration status:", migrator.status().migrations.map(m => m.name).join(", "));
+```
+
 ## Summary
 
 Databases are the persistence layer of web applications. Prisma ORM provides type-safe database access with auto-generated queries and migrations. SQL databases suit structured relational data, while NoSQL offers schema flexibility. Proper indexing, solving N+1 queries, and Redis caching are essential for performance at scale.

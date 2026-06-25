@@ -591,6 +591,104 @@ console.log("Flex:", FlexboxSimulator.distributeItems(800, [200, 150, 100], 20))
 console.log("Grid:", GridSimulator.templateColumns(3, 16, 1200));
 ```
 
+## TypeScript Implementation: Specificity Calculator, Breakpoints, and Color Contrast
+
+```typescript
+class CSSSpecificity {
+    static calculate(selector: string): { id: number; class: number; tag: number; total: number } {
+        const id = (selector.match(/#[a-zA-Z0-9_-]+/g) || []).length;
+        const cls = (selector.match(/\.[a-zA-Z0-9_-]+/g) || []).length;
+        const attr = (selector.match(/\[[^\]]+\]/g) || []).length;
+        const pseudo = (selector.match(/::?[a-zA-Z-]+/g) || []).filter(p => !["::before","::after","::first-line","::first-letter"].includes(p)).length;
+        const tag = (selector.match(/(^|[^.#\[])[a-zA-Z][a-zA-Z0-9]*/g) || []).filter(s => !["hover","focus","active","visited","link","first","last","nth","not","is","where","has"].includes(s.trim())).length;
+        return { id, class: cls + attr + pseudo, tag, total: id * 1000 + (cls + attr + pseudo) * 100 + tag };
+    }
+
+    static compare(a: string, b: string): string {
+        const sa = this.calculate(a); const sb = this.calculate(b);
+        if (sa.total > sb.total) return `"${a}" wins (${sa.total} vs ${sb.total})`;
+        if (sb.total > sa.total) return `"${b}" wins (${sb.total} vs ${sa.total})`;
+        return `"${a}" and "${b}" tie (${sa.total})`;
+    }
+
+    static explain(selector: string): string {
+        const s = this.calculate(selector);
+        return `Selector "${selector}": ${s.id} ID × 1000 = ${s.id * 1000}, ${s.class} class/attr/pseudo × 100 = ${s.class * 100}, ${s.tag} tags × 1 = ${s.tag}, total = ${s.total}`;
+    }
+}
+
+class ResponsiveBreakpoints {
+    static detect(widths: number[]): { name: string; minPx: number }[] {
+        const sorted = [...new Set(widths)].sort((a, b) => a - b);
+        const names = ["mobile-s", "mobile", "tablet", "tablet-l", "laptop", "desktop", "wide"];
+        const breakpoints: { name: string; minPx: number; maxPx: number | null }[] = [];
+        for (let i = 0; i < sorted.length; i++) {
+            const name = names[i] || `custom-${i}`;
+            breakpoints.push({
+                name,
+                minPx: sorted[i],
+                maxPx: i < sorted.length - 1 ? sorted[i + 1] - 1 : null
+            });
+        }
+        return breakpoints;
+    }
+
+    static generateCSS(breakpoints: { name: string; minPx: number }[]): string {
+        return breakpoints.map(bp =>
+            `/* ${bp.name} ≥ ${bp.minPx}px */\n@media (min-width: ${bp.minPx}px) {\n  /* ${bp.name} styles */\n}\n`
+        ).join("\n");
+    }
+
+    static findActive(width: number, breakpoints: { name: string; minPx: number }[]): string {
+        const active = breakpoints.filter(bp => width >= bp.minPx);
+        return active.length > 0 ? active[active.length - 1].name : "below-min";
+    }
+}
+
+class ColorContrastChecker {
+    static hexToRgb(hex: string): [number, number, number] {
+        const h = hex.replace("#", "");
+        return [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)];
+    }
+
+    static luminance(r: number, g: number, b: number): number {
+        const [rl, gl, bl] = [r, g, b].map(v => { const s = v / 255; return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4; });
+        return 0.2126 * rl + 0.7152 * gl + 0.0722 * bl;
+    }
+
+    static ratio(fg: string, bg: string): number {
+        const [r1, g1, b1] = this.hexToRgb(fg); const [r2, g2, b2] = this.hexToRgb(bg);
+        const l1 = this.luminance(r1, g1, b1); const l2 = this.luminance(r2, g2, b2);
+        return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+    }
+
+    static meetsAA(fg: string, bg: string, largeText: boolean = false): boolean {
+        return this.ratio(fg, bg) >= (largeText ? 3 : 4.5);
+    }
+
+    static meetsAAA(fg: string, bg: string, largeText: boolean = false): boolean {
+        return this.ratio(fg, bg) >= (largeText ? 4.5 : 7);
+    }
+
+    static suggest(fg: string, bg: string): string {
+        const r = this.ratio(fg, bg);
+        if (r >= 7) return "Excellent (AAA)";
+        if (r >= 4.5) return "Good (AA)";
+        if (r >= 3) return "Minimum (AA large text)";
+        return "FAIL — insufficient contrast";
+    }
+}
+
+// Demo
+console.log(CSSSpecificity.explain("div .container#main a.active"));
+console.log(CSSSpecificity.compare("div .container#main", "nav ul li"));
+const bps = ResponsiveBreakpoints.detect([320, 480, 768, 1024, 1280, 1440]);
+console.log("Breakpoints:", bps.map(b => `${b.name}: ${b.minPx}px`).join(", "));
+console.log("Active at 900px:", ResponsiveBreakpoints.findActive(900, bps));
+console.log("Contrast #333/#fff:", ColorContrastChecker.ratio("#333", "#fff").toFixed(2), ColorContrastChecker.suggest("#333", "#fff"));
+console.log("Contrast #ccc/#fff:", ColorContrastChecker.ratio("#ccc", "#fff").toFixed(2), ColorContrastChecker.suggest("#ccc", "#fff"));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** CSS custom properties enable maintainable, themeable stylesheets that update at runtime.

@@ -660,6 +660,87 @@ graph TD
 
 ---
 
+### TypeScript: Quorum, Vector Clock, CRDT, and CAP Simulator
+
+```typescript
+class QuorumReader {
+  constructor(private n: number, private w: number, private r: number) {
+    if (w + r <= n) throw new Error("Quorum condition W+R > N not met");
+  }
+
+  async write(key: string, value: string, replicas: { write: (k: string, v: string) => Promise<boolean> }[]): Promise<number> {
+    let acks = 0;
+    for (const rep of replicas) { try { if (await rep.write(key, value)) acks++; } catch {} }
+    if (acks < this.w) throw new Error(`Write failed: ${acks}/${this.w} acks`);
+    return acks;
+  }
+
+  async read<T>(key: string, replicas: { read: (k: string) => Promise<T | null> }[]): Promise<{ value: T | null; version: number }[]> {
+    const results: { value: T | null; version: number }[] = [];
+    for (const rep of replicas) {
+      try { const val = await rep.read(key); if (val !== null) results.push({ value: val, version: 1 }); } catch {}
+    }
+    if (results.length < this.r) throw new Error(`Read failed: ${results.length}/${this.r} responses`);
+    return results;
+  }
+}
+
+class VectorClock {
+  private clock = new Map<string, number>();
+
+  tick(nodeId: string): void { this.clock.set(nodeId, (this.clock.get(nodeId) ?? 0) + 1); }
+
+  get(nodeId: string): number { return this.clock.get(nodeId) ?? 0; }
+
+  isAfter(other: VectorClock): boolean {
+    let atLeastOneGreater = false;
+    const allNodes = new Set([...this.clock.keys(), ...other.clock.keys()]);
+    for (const n of allNodes) {
+      if (this.get(n) < other.get(n)) return false;
+      if (this.get(n) > other.get(n)) atLeastOneGreater = true;
+    }
+    return atLeastOneGreater;
+  }
+
+  isConcurrent(other: VectorClock): boolean { return !this.isAfter(other) && !other.isAfter(this); }
+
+  merge(other: VectorClock): void {
+    const allNodes = new Set([...this.clock.keys(), ...other.clock.keys()]);
+    for (const n of allNodes) this.clock.set(n, Math.max(this.get(n), other.get(n)));
+  }
+}
+
+class GCounter {
+  private counts = new Map<string, number>();
+
+  increment(nodeId: string): void { this.counts.set(nodeId, (this.counts.get(nodeId) ?? 0) + 1); }
+
+  value(): number { return [...this.counts.values()].reduce((a, b) => a + b, 0); }
+
+  merge(other: GCounter): void {
+    const allNodes = new Set([...this.counts.keys(), ...other.counts.keys()]);
+    for (const n of allNodes) this.counts.set(n, Math.max(this.counts.get(n) ?? 0, other.counts.get(n) ?? 0));
+  }
+}
+
+class CAPSimulator {
+  simulatePartition(chooseConsistency: boolean): string[] {
+    const events: string[] = [];
+    events.push("Network partition occurs - clients cannot reach all replicas");
+    if (chooseConsistency) {
+      events.push("System chooses CONSISTENCY: rejects writes to minority partition");
+      events.push("Minority partition becomes unavailable (CP)");
+      events.push("All clients see the same data when the partition heals");
+    } else {
+      events.push("System chooses AVAILABILITY: accepts writes on both sides");
+      events.push("Both partitions remain fully available (AP)");
+      events.push("Data diverges; conflict resolution needed when partition heals");
+    }
+    return events;
+  }
+}
+```
+
 ## Summary
 
 - The CAP theorem proves that during a network partition, a distributed system must choose between consistency and availability; it does not apply when the network is healthy

@@ -687,6 +687,97 @@ flowchart TD
     FA3 --> Cout
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === Number System Conversions ===
+function toBinary(n: number, bits = 8): string {
+    if (n < 0) return twosComplement(n, bits);
+    return n.toString(2).padStart(bits, '0').slice(-bits);
+}
+function toHex(b: string): string { return parseInt(b, 2).toString(16).toUpperCase(); }
+function toOctal(b: string): string { return parseInt(b, 2).toString(8); }
+function fromBinary(s: string): number { return parseInt(s, 2); }
+function fromHex(s: string): number { return parseInt(s, 16); }
+
+// === Signed Representations ===
+function signMagnitude(v: number, bits = 8): string {
+    const sign = v < 0 ? '1' : '0';
+    return sign + Math.abs(v).toString(2).padStart(bits - 1, '0');
+}
+function onesComplement(v: number, bits = 8): string {
+    if (v >= 0) return v.toString(2).padStart(bits, '0');
+    return Math.abs(v).toString(2).padStart(bits, '0')
+        .replace(/0/g, 'x').replace(/1/g, '0').replace(/x/g, '1');
+}
+function twosComplement(v: number, bits = 8): string {
+    if (v >= 0) return v.toString(2).padStart(bits, '0');
+    const one = onesComplement(v, bits);
+    return (parseInt(one, 2) + 1).toString(2).padStart(bits, '0');
+}
+
+// === Overflow Detection ===
+function overflowDetect(a: number, b: number, sum: number, bits = 8): boolean {
+    const msb = 1 << (bits - 1);
+    return ((a & msb) === (b & msb)) && ((a & msb) !== (sum & msb));
+}
+
+// === BCD Adder ===
+function bcdEncode(n: number): number[] {
+    return n.toString().split('').map(d => parseInt(d));
+}
+function bcdAddDigits(a: number[], b: number[]): { sum: number[]; carry: number } {
+    const align = Math.max(a.length, b.length);
+    const result: number[] = [];
+    let carry = 0;
+    for (let i = align - 1; i >= 0; i--) {
+        const da = a[i - (align - a.length)] ?? 0;
+        const db = b[i - (align - b.length)] ?? 0;
+        let s = da + db + carry;
+        if (s > 9) { s += 6; carry = 1; } else { carry = 0; }
+        result.unshift(s & 0xF);
+    }
+    return { sum: result, carry };
+}
+
+// === Gray Code ===
+function grayEncode(n: number): number { return n ^ (n >> 1); }
+function grayDecode(g: number, bits = 4): number {
+    let b = g;
+    for (let i = bits - 1; i > 0; i--) b ^= (b >> i);
+    return b;
+}
+function graySequence(bits = 4): number[] {
+    return Array.from({ length: 1 << bits }, (_, i) => grayEncode(i));
+}
+
+// === Hamming (7,4) Code ===
+function hammingEncode74(data4: number): number {
+    const d = [(data4 >> 3) & 1, (data4 >> 2) & 1, (data4 >> 1) & 1, data4 & 1];
+    const p1 = d[0] ^ d[1] ^ d[3], p2 = d[0] ^ d[2] ^ d[3], p3 = d[1] ^ d[2] ^ d[3];
+    return (p1 << 6) | (p2 << 5) | (d[0] << 4) | (p3 << 3) | (d[1] << 2) | (d[2] << 1) | d[3];
+}
+function hammingDecode74(cw: number): { data: number; error: number } {
+    const b = [0, 1, 2, 3, 4, 5, 6].map(i => (cw >> (6 - i)) & 1);
+    const s1 = b[0] ^ b[2] ^ b[4] ^ b[6];
+    const s2 = b[1] ^ b[2] ^ b[5] ^ b[6];
+    const s3 = b[3] ^ b[4] ^ b[5] ^ b[6];
+    const err = s1 | (s2 << 1) | (s3 << 2);
+    const fixed = err ? (cw ^ (1 << (7 - err))) : cw;
+    const data = ((fixed >> 4) & 1) << 3 | ((fixed >> 2) & 1) << 2 | ((fixed >> 1) & 1) << 1 | (fixed & 1);
+    return { data, error: err };
+}
+
+// === Demo ===
+console.log(`Binary(42) = ${toBinary(42)}`);
+console.log(`TwosComplement(-42) = ${twosComplement(-42)}`);
+console.log(`Gray(3) sequence: ${graySequence(3).map(g => toBinary(g, 3)).join(', ')}`);
+console.log(`Hamming encode 1010: ${hammingEncode74(0b1010).toString(2).padStart(7, '0')}`);
+const test = hammingEncode74(0b1010);
+const flipped = test ^ 0b0001000;
+console.log(`Decode (flipped): data=${hammingDecode74(flipped).data.toString(2).padStart(4, '0')}`);
+```
+
 ## Summary
 
 - Positional number systems represent quantities using weighted digit positions.

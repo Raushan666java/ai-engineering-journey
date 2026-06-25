@@ -616,6 +616,176 @@ class CoverageCollector {
 4. **Parameterise designs** — use `parameter` and `localparam` for reusable, configurable modules
 5. **Write testbenches first** — verification-driven design catches bugs at the earliest (cheapest) stage
 
+## TypeScript Implementations
+
+```typescript
+// === Logic Gate Netlist Parser ===
+type GateType = 'AND' | 'OR' | 'NAND' | 'NOR' | 'XOR' | 'XNOR' | 'NOT' | 'BUF';
+type NetlistNode = { id: string; gate: GateType; inputs: string[]; output: string };
+class NetlistParser {
+    parse(desc: string): NetlistNode[] {
+        const nodes: NetlistNode[] = [];
+        const lines = desc.split('\n');
+        for (const line of lines) {
+            const match = line.match(/^(\w+)\s*=\s*(\w+)\s*\(([^)]+)\)$/);
+            if (match) {
+                const [, output, gate, inputs] = match;
+                nodes.push({ id: output, gate: gate.toUpperCase() as GateType, inputs: inputs.split(',').map(s => s.trim()), output });
+            }
+        }
+        return nodes;
+    }
+}
+
+// === Logic Simulator (event-driven) ===
+class LogicSim {
+    private values = new Map<string, number>();
+    constructor(private nodes: NetlistNode[]) {}
+
+    setInput(name: string, value: number): void { this.values.set(name, value); }
+    evaluate(): Map<string, number> {
+        let changed = true;
+        while (changed) {
+            changed = false;
+            for (const node of this.nodes) {
+                const ins = node.inputs.map(i => this.values.get(i) ?? 0);
+                let result = 0;
+                switch (node.gate) {
+                    case 'AND': result = ins.reduce((a, b) => a & b, 1); break;
+                    case 'OR': result = ins.reduce((a, b) => a | b, 0); break;
+                    case 'NAND': result = ~(ins.reduce((a, b) => a & b, 1)) & 1; break;
+                    case 'NOR': result = ~(ins.reduce((a, b) => a | b, 0)) & 1; break;
+                    case 'XOR': result = ins.reduce((a, b) => a ^ b, 0); break;
+                    case 'XNOR': result = ~(ins.reduce((a, b) => a ^ b, 0)) & 1; break;
+                    case 'NOT': result = ~ins[0] & 1; break;
+                    case 'BUF': result = ins[0]; break;
+                }
+                if (this.values.get(node.output) !== result) { changed = true; this.values.set(node.output, result); }
+            }
+        }
+        return this.values;
+    }
+
+    testBench(inputs: { ins: Record<string, number>; expected: Record<string, number> }[]): { pass: boolean; fails: number } {
+        let fails = 0;
+        for (const tc of inputs) {
+            this.values.clear();
+            for (const [k, v] of Object.entries(tc.ins)) this.values.set(k, v);
+            this.evaluate();
+            for (const [k, v] of Object.entries(tc.expected)) {
+                if (this.values.get(k) !== v) fails++;
+            }
+        }
+        return { pass: fails === 0, fails };
+    }
+}
+
+// === Timing Diagram Data Generator ===
+class TimingDiagram {
+    private signals = new Map<string, number[]>();
+
+    addSignal(name: string, values: number[]): void { this.signals.set(name, values); }
+    generateSVG(): string {
+        let svg = '<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">\n';
+        const signals = Array.from(this.signals.entries());
+        const hStep = 600 / Math.max(...signals.map(([, v]) => v.length), 1);
+        signals.forEach(([name, values], idx) => {
+            const y = 30 + idx * 40;
+            svg += `<text x="10" y="${y + 4}" font-size="12">${name}</text>`;
+            for (let i = 0; i < values.length; i++) {
+                const x1 = 80 + i * hStep, x2 = 80 + (i + 1) * hStep;
+                const y1 = values[i] ? y - 10 : y + 10;
+                svg += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y1}" stroke="black" stroke-width="2"/>`;
+                if (i < values.length - 1 && values[i] !== values[i + 1]) {
+                    const midX = (x1 + x2) / 2;
+                    svg += `<line x1="${midX}" y1="${y1}" x2="${midX}" y2="${values[i + 1] ? y - 10 : y + 10}" stroke="black" stroke-width="2"/>`;
+                }
+            }
+        });
+        svg += '</svg>';
+        return svg;
+    }
+}
+
+// === Parameterised FIFO ===
+class ParamFIFO {
+    private buffer: number[];
+    private wp = 0, rp = 0, count = 0;
+    constructor(private depth: number, private width: number) { this.buffer = new Array(depth).fill(0); }
+    push(data: number): boolean {
+        if (this.count >= this.depth) return false;
+        this.buffer[this.wp] = data & ((1 << this.width) - 1);
+        this.wp = (this.wp + 1) % this.depth;
+        this.count++;
+        return true;
+    }
+    pop(): { data: number; valid: boolean } {
+        if (this.count === 0) return { data: 0, valid: false };
+        const data = this.buffer[this.rp];
+        this.rp = (this.rp + 1) % this.depth;
+        this.count--;
+        return { data, valid: true };
+    }
+    full(): boolean { return this.count >= this.depth; }
+    empty(): boolean { return this.count === 0; }
+    level(): number { return this.count; }
+}
+
+// === CDC Synchroniser (2-flop) ===
+class CDCSynchronizer {
+    private ff1 = 0, ff2 = 0;
+    sync(data: number, clk: number): number {
+        if (clk) { this.ff2 = this.ff1; this.ff1 = data; }
+        return this.ff2;
+    }
+    probabilityMeta(ff: number, tau: number, tClk: number): number {
+        return Math.exp(-(tClk) / (ff * tau));
+    }
+}
+
+// === Coverage-Driven Verification ===
+class CoverageCollector {
+    private covered = new Set<string>();
+    private total = new Set<string>();
+    addBin(name: string, value: number): void {
+        const key = `${name}=${value}`;
+        this.total.add(key);
+    }
+    cover(name: string, value: number): void {
+        const key = `${name}=${value}`;
+        this.covered.add(key);
+        this.total.add(key);
+    }
+    coverage(): number { return this.total.size > 0 ? this.covered.size / this.total.size : 0; }
+    report(): string { return `Coverage: ${(this.coverage() * 100).toFixed(1)}%`; }
+}
+
+// === Demo ===
+const parser = new NetlistParser();
+const netlist = parser.parse('F = AND(A, B, C)\nG = OR(D, E)');
+console.log('Parsed netlist:');
+netlist.forEach(n => console.log(`  ${n.output} = ${n.gate}(${n.inputs})`));
+
+const sim = new LogicSim(netlist);
+sim.setInput('A', 1); sim.setInput('B', 1); sim.setInput('C', 1);
+sim.setInput('D', 0); sim.setInput('E', 1);
+const vals = sim.evaluate();
+console.log(`F(1,1,1) = ${vals.get('F')}, G(0,1) = ${vals.get('G')}`);
+
+const fifo = new ParamFIFO(4, 8);
+fifo.push(0xAB); fifo.push(0xCD);
+console.log(`FIFO pop: 0x${fifo.pop().data.toString(16)}`);
+
+const td = new TimingDiagram();
+td.addSignal('clk', [0, 1, 0, 1, 0, 1, 0, 1]);
+td.addSignal('data', [0, 0, 1, 1, 0, 1, 0, 0]);
+console.log('Timing diagram SVG generated (signal count: 2)');
+
+const cov = new CoverageCollector();
+cov.cover('alu_op', 0); cov.cover('alu_op', 1); cov.addBin('alu_op', 2);
+console.log(cov.report());
+```
+
 ## Summary
 
 Hardware description languages bridge the gap between digital logic concepts and silicon implementation. This chapter covered Verilog (with SystemVerilog and VHDL comparisons) across three abstraction levels: behavioural, RTL, and structural. Combinational and sequential logic are described with different always-block styles, while FSMs follow a three-block pattern (state register, next-state logic, output logic). Testbenches, synthesis constraints, and coverage measurement complete the verification cycle. The next chapter transitions from the purely digital domain to mixed-signal interfaces — digital-to-analog and analog-to-digital converters.

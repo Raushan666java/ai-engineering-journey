@@ -600,6 +600,144 @@ class HookSimulator {
 console.log(ComponentGenerator.generateJSX({ name: "UserCard", props: { name: "string", age: "number" }, state: { editing: "boolean" } }));
 ```
 
+## TypeScript Implementation: Virtual DOM Reconciler, Component Tree, Hooks Dependency Checker
+
+```typescript
+interface FiberNode {
+    tag: string;
+    props: Record<string, any>;
+    children: FiberNode[];
+    state: Record<string, any>;
+    effects: { deps: any[]; cleanup?: () => void }[];
+    hooks: { type: string; value: any; deps?: any[] }[];
+}
+
+class VirtualDOMReconciler {
+    static reconcile(
+        parent: { children: FiberNode[] },
+        oldNode: FiberNode | null,
+        newNode: FiberNode | null,
+        index: number = 0
+    ): { actions: string[]; updated: boolean } {
+        const actions: string[] = [];
+        if (!oldNode && newNode) {
+            actions.push(`CREATE ${newNode.tag}[${index}]`);
+            return { actions, updated: true };
+        }
+        if (oldNode && !newNode) {
+            actions.push(`REMOVE ${oldNode.tag}[${index}]`);
+            return { actions, updated: true };
+        }
+        if (!oldNode || !newNode) return { actions: [], updated: false };
+
+        if (oldNode.tag !== newNode.tag) {
+            actions.push(`REPLACE ${oldNode.tag} → ${newNode.tag}[${index}]`);
+            return { actions, updated: true };
+        }
+
+        const maxLen = Math.max(oldNode.children.length, newNode.children.length);
+        for (let i = 0; i < maxLen; i++) {
+            const childResult = this.reconcile(
+                oldNode, oldNode.children[i] || null, newNode.children[i] || null, i
+            );
+            actions.push(...childResult.actions);
+        }
+
+        return { actions: actions.length > 0 ? actions : ["NO-OP"], updated: actions.length > 0 };
+    }
+}
+
+class ComponentTreeBuilder {
+    static build(definition: { name: string; props: Record<string, string>; children?: any[] }, depth: number = 0): FiberNode {
+        const node: FiberNode = {
+            tag: definition.name,
+            props: definition.props,
+            children: (definition.children || []).map((c: any) => this.build(c, depth + 1)),
+            state: {},
+            effects: [],
+            hooks: []
+        };
+        return node;
+    }
+
+    static flatten(root: FiberNode): { name: string; depth: number; propCount: number; childCount: number }[] {
+        const nodes: { name: string; depth: number; propCount: number; childCount: number }[] = [];
+        const walk = (node: FiberNode, depth: number) => {
+            nodes.push({ name: node.tag, depth, propCount: Object.keys(node.props).length, childCount: node.children.length });
+            for (const child of node.children) walk(child, depth + 1);
+        };
+        walk(root, 0);
+        return nodes;
+    }
+}
+
+class HooksDependencyChecker {
+    static validate(effects: { deps: any[]; name?: string }[]): { valid: boolean; warnings: string[] } {
+        const warnings: string[] = [];
+        for (let i = 0; i < effects.length; i++) {
+            const effect = effects[i];
+            if (effect.deps.length === 0) {
+                warnings.push(`Effect #${i}: Empty deps = run once (mount only)`);
+            }
+            const hasUndefined = effect.deps.some(d => d === undefined);
+            if (hasUndefined) {
+                warnings.push(`Effect #${i}: Contains undefined dependency — may cause infinite loop`);
+            }
+            const hasObjects = effect.deps.some(d => typeof d === "object" && d !== null);
+            if (hasObjects) {
+                warnings.push(`Effect #${i}: Object/reference dependency — referentially unstable, wrap in useMemo`);
+            }
+        }
+        return { valid: warnings.length === 0, warnings };
+    }
+
+    static compareDeps(oldDeps: any[], newDeps: any[]): { changed: boolean; changedIndices: number[] } {
+        const changedIndices: number[] = [];
+        for (let i = 0; i < Math.max(oldDeps.length, newDeps.length); i++) {
+            if (!Object.is(oldDeps[i], newDeps[i])) changedIndices.push(i);
+        }
+        return { changed: changedIndices.length > 0, changedIndices };
+    }
+}
+
+// Demo
+const appTree = ComponentTreeBuilder.build({
+    name: "App",
+    props: { theme: "dark" },
+    children: [
+        { name: "Header", props: { title: "My App" }, children: [
+            { name: "Nav", props: { items: "3" } }
+        ]},
+        { name: "Main", props: { role: "content" }, children: [
+            { name: "Sidebar", props: { collapsed: "false" } },
+            { name: "Content", props: { loading: "true" }, children: [
+                { name: "Card", props: { id: "1" } },
+                { name: "Card", props: { id: "2" } }
+            ]}
+        ]},
+        { name: "Footer", props: { year: "2026" } }
+    ]
+});
+
+console.log("Component tree:", ComponentTreeBuilder.flatten(appTree).map(n =>
+    `${"  ".repeat(n.depth)}${n.name} (props:${n.propCount}, children:${n.childCount})`
+).join("\n"));
+
+const oldVNode: FiberNode = { tag: "div", props: {}, children: [
+    { tag: "h1", props: {}, children: [], state: {}, effects: [], hooks: [] },
+    { tag: "p", props: {}, children: [], state: {}, effects: [], hooks: [] }
+], state: {}, effects: [], hooks: [] };
+const newVNode: FiberNode = { tag: "div", props: {}, children: [
+    { tag: "h1", props: {}, children: [], state: {}, effects: [], hooks: [] },
+    { tag: "span", props: {}, children: [], state: {}, effects: [], hooks: [] }
+], state: {}, effects: [], hooks: [] };
+
+console.log("Reconciliation:", VirtualDOMReconciler.reconcile({ children: [oldVNode] }, oldVNode, newVNode));
+console.log("Hook check:", JSON.stringify(HooksDependencyChecker.validate([
+    { deps: [1, 2, 3] }, { deps: [] }, { deps: [undefined] }, { deps: [{}] }
+])));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** `useEffect` handles side effects with a cleanup function and dependency array for precise execution control.

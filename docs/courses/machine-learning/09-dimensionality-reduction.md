@@ -653,6 +653,141 @@ console.log(`Selected ${topFeatures.length} features from 20,000`);
 
 ---
 
+## TypeScript Implementation: PCA, t-SNE Similarity, and Explained Variance
+
+```typescript
+class PCA {
+    private components: number[][] = [];
+    private mean: number[] = [];
+    private explainedVariance: number[] = [];
+    private explainedVarianceRatio: number[] = [];
+
+    fit(data: number[][]): void {
+        const n = data.length;
+        const d = data[0].length;
+        this.mean = data[0].map((_, j) => data.reduce((s, row) => s + row[j], 0) / n);
+        const centered = data.map(row => row.map((v, j) => v - this.mean[j]));
+
+        const cov = Array.from({ length: d }, (_, i) =>
+            Array.from({ length: d }, (_, j) =>
+                centered.reduce((s, row) => s + row[i] * row[j], 0) / (n - 1)
+            )
+        );
+
+        const eigen = this.powerIteration(cov, d);
+        this.components = eigen.vectors;
+        this.explainedVariance = eigen.values;
+        const totalVar = this.explainedVariance.reduce((a, b) => a + b, 0);
+        this.explainedVarianceRatio = this.explainedVariance.map(v => v / totalVar);
+    }
+
+    private powerIteration(matrix: number[][], k: number): { values: number[]; vectors: number[][] } {
+        const d = matrix.length;
+        const values: number[] = [];
+        const vectors: number[][] = [];
+
+        let residual = matrix.map(row => [...row]);
+
+        for (let comp = 0; comp < k; comp++) {
+            let v = new Array(d).fill(0).map(() => Math.random());
+            for (let iter = 0; iter < 100; iter++) {
+                let w = new Array(d).fill(0);
+                for (let i = 0; i < d; i++) {
+                    for (let j = 0; j < d; j++) w[i] += residual[i][j] * v[j];
+                }
+                const norm = Math.sqrt(w.reduce((s, val) => s + val * val, 0));
+                v = w.map(val => val / (norm || 1));
+            }
+            vectors.push(v);
+            const eigenvalue = v.reduce((s, vi, i) => s + vi * residual[0].reduce((sum, _, j) => sum + residual[i][j] * v[j], 0), 0);
+            values.push(eigenvalue);
+
+            for (let i = 0; i < d; i++) {
+                for (let j = 0; j < d; j++) {
+                    residual[i][j] -= eigenvalue * v[i] * v[j];
+                }
+            }
+        }
+        return { values, vectors };
+    }
+
+    transform(data: number[][], nComponents: number): number[][] {
+        const centered = data.map(row => row.map((v, j) => v - this.mean[j]));
+        return centered.map(row =>
+            this.components.slice(0, nComponents).map(comp =>
+                row.reduce((s, v, j) => s + v * comp[j], 0)
+            )
+        );
+    }
+
+    getExplainedVarianceRatio(): number[] { return this.explainedVarianceRatio; }
+
+    cumulativeVariance(nComponents: number): number {
+        return this.explainedVarianceRatio.slice(0, nComponents).reduce((a, b) => a + b, 0);
+    }
+}
+
+class TSNESimilarity {
+    static pairwiseDistances(data: number[][]): number[][] {
+        const n = data.length;
+        return data.map(row1 => data.map(row2 =>
+            Math.sqrt(row1.reduce((s, v, i) => s + (v - row2[i]) ** 2, 0))
+        ));
+    }
+
+    static similarityMatrix(distances: number[][], perplexity: number = 30): number[][] {
+        const n = distances.length;
+        const P: number[][] = Array.from({ length: n }, () => new Array(n).fill(0));
+        for (let i = 0; i < n; i++) {
+            const neighbors = distances[i].map((d, j) => ({ d, j })).filter((_, j) => j !== i).sort((a, b) => a.d - b.d);
+            const sigma = neighbors[Math.min(perplexity, neighbors.length - 1)].d / 2 || 1;
+            let sum = 0;
+            for (let j = 0; j < n; j++) {
+                if (i === j) continue;
+                P[i][j] = Math.exp(-distances[i][j] ** 2 / (2 * sigma * sigma));
+                sum += P[i][j];
+            }
+            for (let j = 0; j < n; j++) {
+                if (i !== j) P[i][j] /= sum || 1;
+            }
+        }
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j < n; j++) {
+                P[i][j] = (P[i][j] + P[j][i]) / (2 * n);
+            }
+        }
+        return P;
+    }
+
+    static klDivergence(P: number[][], Q: number[][]): number {
+        let kl = 0;
+        for (let i = 0; i < P.length; i++) {
+            for (let j = 0; j < P.length; j++) {
+                if (P[i][j] > 0 && Q[i][j] > 0) {
+                    kl += P[i][j] * Math.log(P[i][j] / Q[i][j]);
+                }
+            }
+        }
+        return kl;
+    }
+}
+
+// Demo
+const iris3D = [
+    [5.1, 3.5, 1.4], [4.9, 3.0, 1.4], [7.0, 3.2, 4.7],
+    [6.4, 3.2, 4.5], [6.3, 3.3, 6.0], [5.8, 2.7, 5.1]
+];
+const pca = new PCA();
+pca.fit(iris3D);
+console.log("Explained variance ratio:", pca.getExplainedVarianceRatio().map(v => v.toFixed(4)));
+console.log("2D projection:", pca.transform(iris3D, 2).map(r => r.map(v => v.toFixed(2))));
+console.log("Cumulative variance (2):", pca.cumulativeVariance(2).toFixed(4));
+
+const dist = TSNESimilarity.pairwiseDistances(iris3D);
+const sim = TSNESimilarity.similarityMatrix(dist, 2);
+console.log("t-SNE KL divergence (random Q):", TSNESimilarity.klDivergence(sim, Array.from({ length: 6 }, () => new Array(6).fill(1 / 6))).toFixed(4));
+```
+
 ## Summary
 
 - Dimensionality reduction mitigates the curse of dimensionality and improves model efficiency.

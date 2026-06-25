@@ -740,6 +740,75 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 
 ---
 
+### TypeScript: URL Shortener, Rate Limiter, and Pastebin
+
+```typescript
+class URLShortener {
+  private store = new Map<string, string>();
+  private base62 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  private counter = 1000000;
+
+  private encode(num: number): string {
+    let s = "";
+    while (num > 0) { s = this.base62[num % 62] + s; num = Math.floor(num / 62); }
+    return s;
+  }
+
+  shorten(longUrl: string): string {
+    const id = this.encode(this.counter++);
+    this.store.set(id, longUrl);
+    return `https://short.url/${id}`;
+  }
+
+  resolve(shortId: string): string | undefined { return this.store.get(shortId); }
+}
+
+class SlidingWindowCounter {
+  private windows = new Map<string, { timestamp: number; count: number }[]>();
+  constructor(private limit: number, private windowMs: number) {}
+
+  allow(key: string): boolean {
+    const now = Date.now();
+    let entries = this.windows.get(key) ?? [];
+    entries = entries.filter(e => now - e.timestamp < this.windowMs);
+    const total = entries.reduce((s, e) => s + e.count, 0);
+    if (total >= this.limit) return false;
+    const last = entries[entries.length - 1];
+    if (last && now - last.timestamp < 1000) { last.count++; }
+    else { entries.push({ timestamp: now, count: 1 }); }
+    this.windows.set(key, entries);
+    return true;
+  }
+}
+
+class PastebinStore {
+  private pastes = new Map<string, { content: string; title: string; language: string; createdAt: number; expiresAt: number }>();
+  private contentHash = new Map<string, string>();
+
+  create(content: string, title: string, language: string, ttlMs: number): string {
+    const hash = this.sha256(content);
+    const existing = this.contentHash.get(hash);
+    if (existing) return existing;
+    const id = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`;
+    this.pastes.set(id, { content, title, language, createdAt: Date.now(), expiresAt: Date.now() + ttlMs });
+    this.contentHash.set(hash, id);
+    return id;
+  }
+
+  get(id: string): { content: string; title: string; language: string } | null {
+    const paste = this.pastes.get(id);
+    if (!paste || Date.now() > paste.expiresAt) { this.pastes.delete(id); return null; }
+    return { content: paste.content, title: paste.title, language: paste.language };
+  }
+
+  private sha256(data: string): string {
+    let h = 0;
+    for (let i = 0; i < data.length; i++) h = ((h << 5) - h + data.charCodeAt(i)) | 0;
+    return Math.abs(h).toString(16);
+  }
+}
+```
+
 ## Summary
 
 - URL shorteners require collision-free key generation; KGS pre-generation is the standard pattern

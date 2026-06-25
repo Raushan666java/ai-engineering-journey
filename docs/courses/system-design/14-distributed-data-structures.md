@@ -528,6 +528,107 @@ class CuckooFilter:
 
 ---
 
+### TypeScript: Consistent Hash Ring, Count-Min Sketch, HyperLogLog
+
+```typescript
+class ConsistentHashRing {
+  private ring = new Map<number, string>();
+  private sortedKeys: number[] = [];
+  private readonly virtualNodes = 150;
+
+  constructor(private nodes: string[] = []) { for (const n of nodes) this.addNode(n); }
+
+  private hash(key: string): number {
+    let h = 0;
+    for (let i = 0; i < key.length; i++) { h = (h << 5) - h + key.charCodeAt(i); h |= 0; }
+    return h >>> 0;
+  }
+
+  addNode(node: string): void {
+    for (let v = 0; v < this.virtualNodes; v++) {
+      this.ring.set(this.hash(`${node}:v${v}`), node);
+    }
+    this.sortedKeys = [...this.ring.keys()].sort((a, b) => a - b);
+  }
+
+  removeNode(node: string): void {
+    for (let v = 0; v < this.virtualNodes; v++) this.ring.delete(this.hash(`${node}:v${v}`));
+    this.sortedKeys = [...this.ring.keys()].sort((a, b) => a - b);
+  }
+
+  getNode(key: string): string {
+    if (this.sortedKeys.length === 0) throw new Error("No nodes");
+    const h = this.hash(key);
+    let i = this.sortedKeys.findIndex(k => k >= h);
+    if (i === -1) i = 0;
+    return this.ring.get(this.sortedKeys[i])!;
+  }
+}
+
+class CountMinSketch {
+  private table: number[][];
+  private readonly depth: number;
+  private readonly width: number;
+
+  constructor(epsilon: number, delta: number) {
+    this.width = Math.ceil(Math.E / epsilon);
+    this.depth = Math.ceil(Math.log(1 / delta));
+    this.table = Array.from({ length: this.depth }, () => new Array(this.width).fill(0));
+  }
+
+  private hash(item: string, seed: number): number {
+    let h = seed * 31;
+    for (let i = 0; i < item.length; i++) h = ((h << 5) - h + item.charCodeAt(i)) | 0;
+    return Math.abs(h) % this.width;
+  }
+
+  add(item: string, count = 1): void {
+    for (let d = 0; d < this.depth; d++) this.table[d][this.hash(item, d)] += count;
+  }
+
+  estimate(item: string): number {
+    let min = Infinity;
+    for (let d = 0; d < this.depth; d++) min = Math.min(min, this.table[d][this.hash(item, d)]);
+    return min;
+  }
+}
+
+class HyperLogLog {
+  private registers: number[];
+  constructor(private b = 14) { this.registers = new Array(1 << b).fill(0); }
+
+  private hash(value: string): number {
+    let h = 0;
+    for (let i = 0; i < value.length; i++) { h = ((h << 5) - h + value.charCodeAt(i)) | 0; }
+    return h >>> 0;
+  }
+
+  add(value: string): void {
+    const h = this.hash(value);
+    const idx = h >>> (32 - this.b);
+    const w = h << this.b >>> this.b;
+    const leadingZeros = 1 + Math.clz32(w);
+    this.registers[idx] = Math.max(this.registers[idx], leadingZeros);
+  }
+
+  estimate(): number {
+    const m = this.registers.length;
+    const sum = this.registers.reduce((a, r) => a + 2 ** -r, 0);
+    const alpha = m === 16 ? 0.673 : m === 32 ? 0.697 : m === 64 ? 0.709 : 0.7213 / (1 + 1.079 / m);
+    let estimate = alpha * m * m / sum;
+    if (estimate <= 2.5 * m) {
+      let v = this.registers.filter(r => r === 0).length;
+      if (v > 0) estimate = m * Math.log(m / v);
+    }
+    return estimate;
+  }
+
+  merge(other: HyperLogLog): void {
+    for (let i = 0; i < this.registers.length; i++) this.registers[i] = Math.max(this.registers[i], other.registers[i]);
+  }
+}
+```
+
 ### TypeScript: Bloom Filter
 
 ```typescript

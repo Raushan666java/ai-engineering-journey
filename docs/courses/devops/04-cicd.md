@@ -682,6 +682,212 @@ console.log(generator.toYAML(workflow));
 
 ---
 
+### Pipeline Cost Estimator
+
+Understanding CI/CD pipeline costs enables informed infrastructure decisions. The following tool estimates runner costs, cache savings, and optimization ROI.
+
+```typescript
+// pipeline-cost.ts
+// Estimate CI/CD pipeline execution costs
+
+interface RunnerConfig {
+  type: string;
+  costPerMinute: number;
+  computeUnits: number;
+}
+
+interface PipelineRun {
+  runner: string;
+  durationMinutes: number;
+  cacheHit: boolean;
+  stageBreakdown: { name: string; durationMinutes: number }[];
+}
+
+interface CostReport {
+  totalCost: number;
+  monthlyEstimate: number;
+  cacheSavings: number;
+  optimizationPotential: number;
+  recommendations: string[];
+}
+
+class PipelineCostEstimator {
+  private readonly runners: RunnerConfig[] = [
+    { type: 'github-ubuntu', costPerMinute: 0.008, computeUnits: 2 },
+    { type: 'github-windows', costPerMinute: 0.016, computeUnits: 4 },
+    { type: 'github-macos', costPerMinute: 0.08, computeUnits: 3 },
+    { type: 'self-hosted', costPerMinute: 0.003, computeUnits: 4 },
+    { type: 'gitlab-saas-linux', costPerMinute: 0.01, computeUnits: 2 },
+    { type: 'gitlab-saas-macos', costPerMinute: 0.07, computeUnits: 3 },
+  ];
+
+  estimate(runs: PipelineRun[], dailyRunCount: number = 50): CostReport {
+    let totalCost = 0;
+    let totalMinutes = 0;
+    let cacheSavings = 0;
+
+    for (const run of runs) {
+      const runner = this.runners.find(r => r.type === run.runner) || this.runners[0];
+      const runCost = run.durationMinutes * runner.costPerMinute;
+      totalCost += runCost;
+      totalMinutes += run.durationMinutes;
+      if (run.cacheHit) cacheSavings += runCost * 0.6;
+    }
+
+    const avgRunCost = runs.length > 0 ? totalCost / runs.length : 0;
+    const monthlyEstimate = avgRunCost * dailyRunCount * 22;
+
+    // Calculate optimization potential
+    const slowestStage = runs.flatMap(r => r.stageBreakdown)
+      .sort((a, b) => b.durationMinutes - a.durationMinutes)[0];
+
+    const recommendations: string[] = [
+      totalMinutes > 30 ? 'Consider self-hosted runners for cost savings' : 'Runner costs are within acceptable range',
+      cacheSavings > 0 ? `Cache saves ~$${cacheSavings.toFixed(2)} per build — maintain cache hygiene` : 'Enable caching to reduce costs',
+      slowestStage ? `Optimize "${slowestStage.name}" stage (${slowestStage.durationMinutes}min) with parallel execution` : '',
+    ].filter(Boolean);
+
+    return {
+      totalCost: Math.round(totalCost * 100) / 100,
+      monthlyEstimate: Math.round(monthlyEstimate * 100) / 100,
+      cacheSavings: Math.round(cacheSavings * 100) / 100,
+      optimizationPotential: Math.round(totalCost * 0.3 * 100) / 100,
+      recommendations,
+    };
+  }
+
+  compareRunners(runs: PipelineRun[]): { runner: string; monthlyCost: number }[] {
+    return this.runners.map(r => ({
+      runner: r.type,
+      monthlyCost: Math.round(runs.reduce((s, run) => s + run.durationMinutes * r.costPerMinute, 0) * 22 * 100) / 100,
+    })).sort((a, b) => a.monthlyCost - b.monthlyCost);
+  }
+}
+
+const estimator = new PipelineCostEstimator();
+const sampleRun: PipelineRun = {
+  runner: 'github-ubuntu', durationMinutes: 12, cacheHit: true,
+  stageBreakdown: [
+    { name: 'lint', durationMinutes: 1 }, { name: 'test', durationMinutes: 5 },
+    { name: 'build', durationMinutes: 4 }, { name: 'deploy', durationMinutes: 2 },
+  ],
+};
+
+const report = estimator.estimate([sampleRun], 50);
+console.log(`Monthly cost: $${report.monthlyEstimate} | Savings: $${report.cacheSavings}`);
+report.recommendations.forEach(r => console.log(`- ${r}`));
+console.log('Runner comparison:', estimator.compareRunners([sampleRun]).slice(0, 3));
+```
+
+**What this demonstrates:** Pipeline cost modeling enables data-driven decisions about runner selection, caching strategy, and optimization ROI for CI/CD infrastructure.
+
+---
+
+### Release Gate Orchestrator
+
+Release gates ensure quality and compliance before production deployments. The following tool models approval workflows, quality checks, and automatic rollback triggers.
+
+```typescript
+// release-gate.ts
+// Model and orchestrate release gates
+
+type GateResult = 'pass' | 'fail' | 'skip';
+
+interface GateCheck {
+  name: string;
+  type: 'automated' | 'manual' | 'time-window' | 'compliance';
+  run(): Promise<GateResult>;
+  timeoutMs: number;
+}
+
+interface ReleaseGate {
+  stage: string;
+  checks: GateCheck[];
+  approvalRequired: boolean;
+  approvers: string[];
+  rollbackOnFail: boolean;
+}
+
+class GateOrchestrator {
+  private gates: ReleaseGate[] = [];
+
+  addGate(gate: ReleaseGate): void {
+    this.gates.push(gate);
+  }
+
+  async execute(from: string, to: string): Promise<{ passed: boolean; failedGates: string[]; duration: number }> {
+    const start = Date.now();
+    const relevantGates = this.gates.filter(g => g.stage === to);
+    const failedGates: string[] = [];
+
+    for (const gate of relevantGates) {
+      console.log(`🔒 Gate: ${to} — ${gate.checks.length} check(s)`);
+
+      for (const check of gate.checks) {
+        const result = await Promise.race([
+          check.run(),
+          new Promise<GateResult>(resolve => setTimeout(() => resolve('fail'), check.timeoutMs)),
+        ]);
+
+        if (result === 'fail') {
+          failedGates.push(check.name);
+          console.log(`  ❌ ${check.name}: FAILED`);
+          if (gate.rollbackOnFail) {
+            console.log(`  ⚠️  Rollback triggered for ${from} → ${to}`);
+          }
+        } else {
+          console.log(`  ✅ ${check.name}: ${result}`);
+        }
+      }
+
+      if (gate.approvalRequired) {
+        console.log(`  👤 Manual approval required from: ${gate.approvers.join(', ')}`);
+      }
+    }
+
+    return {
+      passed: failedGates.length === 0,
+      failedGates,
+      duration: Date.now() - start,
+    };
+  }
+
+  generateReport(result: { passed: boolean; failedGates: string[]; duration: number }): string {
+    return `## Release Gate Report\n\n` +
+      `**Status:** ${result.passed ? '✅ PASSED' : '❌ FAILED'}\n` +
+      `**Duration:** ${(result.duration / 1000).toFixed(1)}s\n` +
+      (result.failedGates.length > 0 ? `**Failed Gates:** ${result.failedGates.join(', ')}\n` : '');
+  }
+}
+
+const orchestrator = new GateOrchestrator();
+orchestrator.addGate({
+  stage: 'staging',
+  checks: [
+    { name: 'Unit tests pass', type: 'automated', run: async () => 'pass', timeoutMs: 120000 },
+    { name: 'No critical vulnerabilities', type: 'automated', run: async () => 'pass', timeoutMs: 60000 },
+    { name: 'Integration tests pass', type: 'automated', run: async () => 'pass', timeoutMs: 300000 },
+  ],
+  approvalRequired: false, approvers: [], rollbackOnFail: true,
+});
+
+orchestrator.addGate({
+  stage: 'production',
+  checks: [
+    { name: 'Staging smoke tests', type: 'automated', run: async () => 'pass', timeoutMs: 60000 },
+    { name: 'Load test within threshold', type: 'automated', run: async () => 'pass', timeoutMs: 180000 },
+    { name: 'Security scan passed', type: 'automated', run: async () => 'pass', timeoutMs: 120000 },
+  ],
+  approvalRequired: true, approvers: ['sre-team-lead', 'engineering-manager'], rollbackOnFail: true,
+});
+
+orchestrator.execute('staging', 'production').then(r => console.log(orchestrator.generateReport(r)));
+```
+
+**What this demonstrates:** Automated release gate orchestration enforces quality and compliance checkpoints, ensures proper approvals, and enables automatic rollback on failure.
+
+---
+
 ## Practical Takeaways
 
 1. **Fail fast.** Run the fastest tests first so broken builds are caught immediately.

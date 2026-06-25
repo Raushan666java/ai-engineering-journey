@@ -609,6 +609,84 @@ for c in cons: c.join()
 
 ---
 
+### TypeScript: Design Pattern Implementations
+
+```typescript
+// --- Singleton ---
+class ConfigManager {
+  private static instance: ConfigManager;
+  private settings = new Map<string, string>();
+  private constructor() {}
+  static getInstance(): ConfigManager {
+    if (!ConfigManager.instance) ConfigManager.instance = new ConfigManager();
+    return ConfigManager.instance;
+  }
+  set(key: string, value: string): void { this.settings.set(key, value); }
+  get(key: string): string | undefined { return this.settings.get(key); }
+}
+
+// --- Factory Method ---
+interface DatabaseConnection { query(sql: string): any[]; }
+class MySQLConnection implements DatabaseConnection {
+  query(sql: string): any[] { return [`MySQL result for: ${sql}`]; }
+}
+class PostgresConnection implements DatabaseConnection {
+  query(sql: string): any[] { return [`Postgres result for: ${sql}`]; }
+}
+abstract class DatabaseFactory { abstract createConnection(): DatabaseConnection; }
+class MySQLFactory extends DatabaseFactory {
+  createConnection(): DatabaseConnection { return new MySQLConnection(); }
+}
+class PostgresFactory extends DatabaseFactory {
+  createConnection(): DatabaseConnection { return new PostgresConnection(); }
+}
+
+// --- Observer ---
+interface Observer { update(event: string, data: any): void; }
+class EventBus {
+  private subscribers = new Map<string, Observer[]>();
+  subscribe(event: string, observer: Observer): void {
+    if (!this.subscribers.has(event)) this.subscribers.set(event, []);
+    this.subscribers.get(event)!.push(observer);
+  }
+  publish(event: string, data: any): void {
+    for (const obs of this.subscribers.get(event) ?? []) obs.update(event, data);
+  }
+}
+
+// --- Strategy ---
+interface CompressionStrategy { compress(data: string): string; }
+class GzipCompression implements CompressionStrategy {
+  compress(data: string): string { return `gzip(${data.slice(0, 10)}...)`; }
+}
+class SnappyCompression implements CompressionStrategy {
+  compress(data: string): string { return `snappy(${data.slice(0, 10)}...)`; }
+}
+class Compressor {
+  constructor(private strategy: CompressionStrategy) {}
+  setStrategy(s: CompressionStrategy): void { this.strategy = s; }
+  compress(data: string): string { return this.strategy.compress(data); }
+}
+
+// --- Decorator ---
+interface DataSource { write(data: string): void; read(): string; }
+class FileDataSource implements DataSource {
+  private data = "";
+  write(data: string): void { this.data = data; }
+  read(): string { return this.data; }
+}
+class EncryptionDecorator implements DataSource {
+  constructor(private wrapper: DataSource) {}
+  write(data: string): void { this.wrapper.write(`encrypted(${data})`); }
+  read(): string { const d = this.wrapper.read(); return d.startsWith("encrypted(") ? d.slice(10, -1) : d; }
+}
+class CompressionDecorator implements DataSource {
+  constructor(private wrapper: DataSource) {}
+  write(data: string): void { this.wrapper.write(`compressed(${data})`); }
+  read(): string { const d = this.wrapper.read(); return d.startsWith("compressed(") ? d.slice(11, -1) : d; }
+}
+```
+
 ## Summary
 - Creational patterns abstract object creation: Singleton (single instance), Factory Method (deferred creation), Abstract Factory (product families), Builder (stepwise construction), Prototype (cloning).
 - Structural patterns compose objects: Adapter (interface translation), Decorator (dynamic responsibility), Facade (simplified interface), Proxy (controlled access), Composite (uniform tree handling).

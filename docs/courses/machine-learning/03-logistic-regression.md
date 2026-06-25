@@ -576,6 +576,142 @@ console.log(`Softmax Accuracy: ${(acc * 100).toFixed(2)}%`);
 
 ---
 
+## TypeScript Implementation: Logistic Regression, Confusion Matrix, and Classification Metrics
+
+```typescript
+// Sigmoid activation and logistic regression from scratch
+function sigmoid(z: number): number {
+    return 1 / (1 + Math.exp(-z));
+}
+
+class LogisticRegression {
+    private weights: number[] = [];
+    private bias: number = 0;
+    private lr: number;
+    private epochs: number;
+
+    constructor(lr: number = 0.01, epochs: number = 1000) {
+        this.lr = lr;
+        this.epochs = epochs;
+    }
+
+    fit(features: number[][], targets: number[]): void {
+        const n = features.length;
+        const d = features[0].length;
+        this.weights = new Array(d).fill(0);
+        this.bias = 0;
+
+        for (let ep = 0; ep < this.epochs; ep++) {
+            for (let i = 0; i < n; i++) {
+                const z = features[i].reduce((s, f, j) => s + f * this.weights[j], this.bias);
+                const pred = sigmoid(z);
+                const error = pred - targets[i];
+                for (let j = 0; j < d; j++) {
+                    this.weights[j] -= this.lr * error * features[i][j];
+                }
+                this.bias -= this.lr * error;
+            }
+        }
+    }
+
+    predictProb(features: number[]): number {
+        const z = features.reduce((s, f, j) => s + f * this.weights[j], this.bias);
+        return sigmoid(z);
+    }
+
+    predict(features: number[], threshold: number = 0.5): number {
+        return this.predictProb(features) >= threshold ? 1 : 0;
+    }
+
+    decisionBoundary(x1: number, x2: number): number {
+        return -(this.bias + this.weights[0] * x1) / this.weights[1];
+    }
+}
+
+class ConfusionMatrix {
+    tp: number = 0; fp: number = 0; tn: number = 0; fn: number = 0;
+
+    constructor(actual: number[], predicted: number[]) {
+        for (let i = 0; i < actual.length; i++) {
+            if (actual[i] === 1 && predicted[i] === 1) this.tp++;
+            else if (actual[i] === 0 && predicted[i] === 1) this.fp++;
+            else if (actual[i] === 0 && predicted[i] === 0) this.tn++;
+            else this.fn++;
+        }
+    }
+
+    get accuracy(): number {
+        return (this.tp + this.tn) / (this.tp + this.tn + this.fp + this.fn);
+    }
+
+    get precision(): number {
+        return this.tp / (this.tp + this.fp) || 0;
+    }
+
+    get recall(): number {
+        return this.tp / (this.tp + this.fn) || 0;
+    }
+
+    get f1Score(): number {
+        const p = this.precision;
+        const r = this.recall;
+        return p + r === 0 ? 0 : 2 * (p * r) / (p + r);
+    }
+
+    get specificity(): number {
+        return this.tn / (this.tn + this.fp) || 0;
+    }
+
+    get negativePredictiveValue(): number {
+        return this.tn / (this.tn + this.fn) || 0;
+    }
+}
+
+function binaryCrossEntropy(actual: number[], probabilities: number[]): number {
+    const eps = 1e-15;
+    return -actual.reduce((sum, a, i) => {
+        const p = Math.max(eps, Math.min(1 - eps, probabilities[i]));
+        return sum + a * Math.log(p) + (1 - a) * Math.log(1 - p);
+    }, 0) / actual.length;
+}
+
+class DecisionBoundaryPlotter {
+    static grid(features: number[][], model: LogisticRegression, resolution: number = 20): string[][] {
+        const x1s = features.map(f => f[0]);
+        const x2s = features.map(f => f[1]);
+        const x1Min = Math.min(...x1s); const x1Max = Math.max(...x1s);
+        const x2Min = Math.min(...x2s); const x2Max = Math.max(...x2s);
+        const grid: string[][] = [];
+        for (let i = 0; i < resolution; i++) {
+            grid[i] = [];
+            const x1 = x1Min + (x1Max - x1Min) * i / resolution;
+            for (let j = 0; j < resolution; j++) {
+                const x2 = x2Min + (x2Max - x2Min) * j / resolution;
+                grid[i][j] = model.predict([x1, x2]) === 1 ? "■" : "□";
+            }
+        }
+        return grid;
+    }
+}
+
+// Demo
+const X = [[2, 3], [1, 2], [3, 4], [5, 6], [6, 7], [7, 8], [8, 9], [9, 10], [3, 2], [2, 1]];
+const y = [0, 0, 0, 1, 1, 1, 1, 1, 0, 0];
+
+const lr = new LogisticRegression(0.05, 2000);
+lr.fit(X, y);
+const preds = X.map(x => lr.predict(x));
+const cm = new ConfusionMatrix(y, preds);
+console.log("Accuracy:", cm.accuracy.toFixed(4));
+console.log("Precision:", cm.precision.toFixed(4));
+console.log("Recall:", cm.recall.toFixed(4));
+console.log("F1 Score:", cm.f1Score.toFixed(4));
+console.log("Specificity:", cm.specificity.toFixed(4));
+
+const probs = X.map(x => lr.predictProb(x));
+console.log("Binary Cross-Entropy:", binaryCrossEntropy(y, probs).toFixed(4));
+```
+
 ## Summary
 
 - Logistic Regression is a fundamental algorithm for binary classification, using the sigmoid function to map linear outputs to probabilities between 0 and 1.

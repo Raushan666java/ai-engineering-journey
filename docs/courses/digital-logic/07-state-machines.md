@@ -677,6 +677,136 @@ class GlitchFreeMealy {
 4. **Register Mealy outputs** — registered outputs eliminate glitches without adding latency
 5. **Separate next-state and output logic** — clean RTL code matches the structural diagram
 
+## TypeScript Implementations
+
+```typescript
+// === FSM Base ===
+type State = string;
+type FSMTranisition = { from: State; input: number; to: State };
+type FSMOutput = { state: State; output: number };
+
+// === Moore Machine Simulator ===
+class MooreFSM {
+    private current: State;
+    constructor(
+        private states: State[],
+        private transitions: FSMTranisition[],
+        private outputs: Map<State, number>,
+        initial: State
+    ) { this.current = initial; }
+
+    step(input: number): FSMOutput {
+        const next = this.transitions.find(t => t.from === this.current && t.input === input);
+        if (next) this.current = next.to;
+        return { state: this.current, output: this.outputs.get(this.current) ?? 0 };
+    }
+}
+
+// === Mealy Machine Simulator ===
+class MealyFSM {
+    private current: State;
+    constructor(
+        private states: State[],
+        private transitions: Map<string, { to: State; output: number }>,
+        initial: State
+    ) { this.current = initial; }
+
+    step(input: number): FSMOutput {
+        const key = `${this.current}:${input}`;
+        const t = this.transitions.get(key);
+        if (t) {
+            this.current = t.to;
+            return { state: this.current, output: t.output };
+        }
+        return { state: this.current, output: 0 };
+    }
+}
+
+// === Sequence Detector (1101 Moore) ===
+class SequenceDetector1101 {
+    private state = 0; // 0=S0,1=S1,2=S2,3=S3,4=S4
+    step(input: number): number {
+        switch (this.state) {
+            case 0: this.state = input === 1 ? 1 : 0; break;
+            case 1: this.state = input === 1 ? 2 : 0; break;
+            case 2: this.state = input === 0 ? 3 : 2; break;
+            case 3: this.state = input === 1 ? 4 : 0; break;
+            case 4: this.state = input === 1 ? 2 : 0; return 1;
+        }
+        return 0;
+    }
+}
+
+// === State Minimization (Implication Table) ===
+function minimizeStates(states: number[], transitions: number[][], outputs: number[][]): number[] {
+    const n = states.length;
+    const eq: boolean[][] = Array.from({ length: n }, () => new Array(n).fill(true));
+    for (let i = 0; i < n; i++)
+        for (let j = 0; j < i; j++)
+            if (outputs[i].some((o, k) => o !== outputs[j][k])) eq[i][j] = false;
+    let changed = true;
+    while (changed) {
+        changed = false;
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j < i; j++) {
+                if (!eq[i][j]) continue;
+                for (let k = 0; k < transitions[i].length; k++) {
+                    const ni = transitions[i][k], nj = transitions[j][k];
+                    if (ni !== nj && !eq[Math.max(ni, nj)][Math.min(ni, nj)]) {
+                        eq[i][j] = false; changed = true; break;
+                    }
+                }
+            }
+        }
+    }
+    const mapping = new Map<number, number>();
+    const result: number[] = [];
+    for (let i = 0; i < n; i++) {
+        let found = false;
+        for (let j = 0; j < i; j++) if (eq[i][j]) { mapping.set(i, mapping.get(j)!); found = true; break; }
+        if (!found) { mapping.set(i, i); result.push(i); }
+    }
+    return result;
+}
+
+// === ASM Chart Interpreter ===
+class ASMInterpreter {
+    execute(asm: { cond: (s: number, i: number) => boolean; t: State; f: State }[], state: State, input: number): State {
+        for (const block of asm) {
+            if (block.cond(0, input)) return block.t;
+        }
+        return state;
+    }
+}
+
+// === Vending Machine FSM ===
+class VendingMachineFSM {
+    private state = 0; // 0=idle, 5=5c, 10=10c, 15=15c
+    private readonly price = 15;
+    private readonly outputs = new Map<State, string>();
+
+    insert(coin: number): { dispense: boolean; change: number } {
+        this.state += coin;
+        if (this.state >= this.price) {
+            const change = this.state - this.price;
+            this.state = 0;
+            return { dispense: true, change };
+        }
+        return { dispense: false, change: 0 };
+    }
+}
+
+// === Demo ===
+const seq = new SequenceDetector1101();
+const bits = [1, 1, 0, 1, 0, 1, 1, 0, 1, 1];
+console.log('1101 Sequence Detector:');
+console.log(bits.map(b => `in=${b} out=${seq.step(b)}`).join(', '));
+
+const vending = new VendingMachineFSM();
+console.log('\nVending Machine:');
+[10, 5, 25].forEach(c => console.log(`Insert ${c}c:`, JSON.stringify(vending.insert(c))));
+```
+
 ## Summary
 
 Finite state machines provide the theoretical framework for sequential control in digital systems. This chapter covered Mealy and Moore models, the complete design flow from state diagram to gate-level implementation, state minimisation using implication tables, encoding strategies (binary, one-hot, Gray), and practical implementation with D, JK, and T flip-flops. ASM charts bridge the gap between algorithms and hardware, while design patterns for traffic light controllers, UART receivers, and vending machines demonstrate real-world applications. The next chapter examines specialised sequential structures: registers and counters.

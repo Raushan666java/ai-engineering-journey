@@ -702,6 +702,115 @@ console.log(remediator.generatePlan(drifts));
 
 ---
 
+### IaC Cost Estimator and Budget Enforcer
+
+Understanding infrastructure costs before deployment prevents budget overruns. The following tool estimates costs from IaC configurations, enforces budgets, and compares pricing across providers.
+
+```typescript
+// iac-cost-estimator.ts
+// Estimate infrastructure costs from IaC configurations
+
+interface IaCResource {
+  type: string;
+  provider: string;
+  properties: Record<string, string>;
+  count: number;
+}
+
+interface CostEstimate {
+  resource: IaCResource;
+  hourlyCost: number;
+  monthlyCost: number;
+  annualCost: number;
+  pricingModel: string;
+}
+
+interface CostBudget {
+  providerBudget: Map<string, number>;
+  totalBudget: number;
+  alertThreshold: number;
+}
+
+class IaCCostEstimator {
+  private readonly pricingDB: Record<string, (props: Record<string, string>) => number> = {
+    'aws_instance': (p) => {
+      const instancePrice: Record<string, number> = { 't3.micro': 0.0104, 't3.small': 0.0208, 't3.medium': 0.0416, 't3.large': 0.0832, 'm5.large': 0.096, 'm5.xlarge': 0.192 };
+      return instancePrice[p.instance_type] || 0.05;
+    },
+    'aws_rds_instance': (p) => {
+      const dbPrice: Record<string, number> = { 'db.t3.micro': 0.017, 'db.t3.small': 0.034, 'db.t3.medium': 0.068, 'db.r5.large': 0.24 };
+      return dbPrice[p.instance_class] || 0.10;
+    },
+    'aws_s3_bucket': () => 0.023, // per GB/month
+    'aws_lb': () => 0.0225,
+    'aws_nat_gateway': () => 0.045,
+    'aws_eip': () => 0.005,
+    'google_compute_instance': (p) => {
+      const gcpPrice: Record<string, number> = { 'e2-micro': 0.0076, 'e2-small': 0.0151, 'e2-medium': 0.0335, 'e2-standard-2': 0.067 };
+      return gcpPrice[p.machine_type] || 0.05;
+    },
+    'azurerm_virtual_machine': (p) => {
+      const azPrice: Record<string, number> = { 'Standard_B1s': 0.0076, 'Standard_B1ms': 0.0151, 'Standard_B2s': 0.0416, 'Standard_D2s_v3': 0.098 };
+      return azPrice[p.vm_size] || 0.08;
+    },
+  };
+
+  estimate(resource: IaCResource): CostEstimate {
+    const calcFn = this.pricingDB[resource.type] || (() => 0.02);
+    const hourlyUnitCost = calcFn(resource.properties);
+    const hourlyCost = hourlyUnitCost * resource.count;
+    const monthlyCost = hourlyCost * 730;
+    const annualCost = monthlyCost * 12;
+
+    const modelMap: Record<string, string> = {
+      'aws_instance': 'On-Demand (Linux)',
+      'google_compute_instance': 'On-Demand (e2)',
+      'azurerm_virtual_machine': 'Pay-as-you-go',
+    };
+
+    return { resource, hourlyCost, monthlyCost: Math.round(monthlyCost * 100) / 100, annualCost: Math.round(annualCost * 100) / 100, pricingModel: modelMap[resource.type] || 'On-Demand' };
+  }
+
+  batchEstimate(resources: IaCResource[]): { estimates: CostEstimate[]; totalMonthly: number; budgetStatus: string } {
+    const estimates = resources.map(r => this.estimate(r));
+    const totalMonthly = Math.round(estimates.reduce((s, e) => s + e.monthlyCost, 0) * 100) / 100;
+    return { estimates, totalMonthly, budgetStatus: totalMonthly > 1000 ? '⚠️ Over $1,000/mo — review required' : '✅ Within budget' };
+  }
+
+  compareProviders(workload: Record<string, string>, count: number): { provider: string; monthlyCost: number; annualSavingsVsMax: number }[] {
+    const awsCost = this.estimate({ type: 'aws_instance', provider: 'aws', properties: { instance_type: workload.aws || 't3.medium' }, count }).monthlyCost;
+    const gcpCost = this.estimate({ type: 'google_compute_instance', provider: 'gcp', properties: { machine_type: workload.gcp || 'e2-medium' }, count }).monthlyCost;
+    const azCost = this.estimate({ type: 'azurerm_virtual_machine', provider: 'azure', properties: { vm_size: workload.azure || 'Standard_B2s' }, count }).monthlyCost;
+
+    const results = [
+      { provider: 'AWS', monthlyCost: awsCost, annualSavingsVsMax: 0 },
+      { provider: 'GCP', monthlyCost: gcpCost, annualSavingsVsMax: 0 },
+      { provider: 'Azure', monthlyCost: azCost, annualSavingsVsMax: 0 },
+    ];
+
+    const maxMonthly = Math.max(...results.map(r => r.monthlyCost));
+    results.forEach(r => r.annualSavingsVsMax = Math.round((maxMonthly - r.monthlyCost) * 12 * 100) / 100);
+    return results.sort((a, b) => a.monthlyCost - b.monthlyCost);
+  }
+}
+
+const estimator = new IaCCostEstimator();
+const resources: IaCResource[] = [
+  { type: 'aws_instance', provider: 'aws', properties: { instance_type: 't3.medium' }, count: 3 },
+  { type: 'aws_rds_instance', provider: 'aws', properties: { instance_class: 'db.t3.small' }, count: 1 },
+  { type: 'aws_lb', provider: 'aws', properties: {}, count: 1 },
+  { type: 'aws_nat_gateway', provider: 'aws', properties: {}, count: 2 },
+];
+
+const result = estimator.batchEstimate(resources);
+console.log(`Total monthly: $${result.totalMonthly} | ${result.budgetStatus}`);
+console.log('\nProvider comparison:', estimator.compareProviders({ aws: 't3.medium', gcp: 'e2-medium', azure: 'Standard_B2s' }, 10));
+```
+
+**What this demonstrates:** Automated IaC cost estimation enables budget-aware infrastructure design, multi-cloud cost comparison, and proactive budget enforcement before infrastructure deployment.
+
+---
+
 ## Practical Takeaways
 
 1. **Always use remote state with locking.** Never share local state files across a team.

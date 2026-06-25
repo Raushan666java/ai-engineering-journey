@@ -543,6 +543,199 @@ class DutyCycleDivider {
 4. **Johnson counters simplify decoding** — 2-input AND gates replace N-input gates for state decoding
 5. **Programmable counters provide flexibility** — software-configurable division ratios without changing hardware
 
+## TypeScript Implementations
+
+```typescript
+// === Universal Shift Register (4-bit) ===
+class UniversalShiftRegister {
+    private data = 0;
+    constructor(private bits = 4) {}
+    load(value: number): void { this.data = value & ((1 << this.bits) - 1); }
+    shiftLeft(serialIn = 0): void { this.data = ((this.data << 1) | serialIn) & ((1 << this.bits) - 1); }
+    shiftRight(serialIn = 0): void { this.data = (this.data >> 1) | (serialIn << (this.bits - 1)); }
+    hold(): void {}
+    read(): number { return this.data; }
+    operate(mode: number, serialIn: number, parallelIn?: number): number {
+        switch (mode) {
+            case 0: this.hold(); break;
+            case 1: this.shiftLeft(serialIn); break;
+            case 2: this.shiftRight(serialIn); break;
+            case 3: if (parallelIn !== undefined) this.load(parallelIn); break;
+        }
+        return this.read();
+    }
+}
+
+// === Barrel Shifter (8-bit) ===
+class BarrelShifter {
+    shiftLeft(value: number, amount: number, bits = 8): number {
+        return ((value << amount) | (value >> (bits - amount))) & ((1 << bits) - 1);
+    }
+    shiftRight(value: number, amount: number, bits = 8): number {
+        return (value >> amount) | ((value << (bits - amount)) & ((1 << bits) - 1));
+    }
+    rotate(value: number, amount: number, bits = 8): number {
+        amount = ((amount % bits) + bits) % bits;
+        return this.shiftLeft(value, amount, bits);
+    }
+}
+
+// === Ripple Counter ===
+class RippleCounter {
+    private flops: number[] = [];
+    constructor(private stages: number) { this.flops = new Array(stages).fill(0); }
+    tick(): number[] {
+        let toggle = 1;
+        for (let i = 0; i < this.stages; i++) {
+            if (toggle) { this.flops[i] ^= 1; toggle = this.flops[i] === 0 ? 1 : 0; }
+            else break;
+        }
+        return [...this.flops];
+    }
+    value(): number { return this.flops.reduce((v, f, i) => v | (f << i), 0); }
+}
+
+// === Synchronous Counter ===
+class SyncCounter {
+    private count = 0;
+    constructor(private modulus: number) {}
+    tick(enable = true, load?: number): number {
+        if (load !== undefined) this.count = load & (this.modulus - 1);
+        else if (enable) this.count = (this.count + 1) % this.modulus;
+        return this.count;
+    }
+}
+
+// === BCD Counter ===
+class BCDCounter {
+    private count = 0;
+    tick(): { value: number; carry: number } {
+        this.count = (this.count + 1) % 10;
+        return { value: this.count, carry: this.count === 0 ? 1 : 0 };
+    }
+}
+
+// === Johnson Counter ===
+class JohnsonCounter {
+    private state = 0;
+    constructor(private stages: number) { this.state = 0; }
+    tick(): number {
+        const lsb = ~(this.state >> (this.stages - 1)) & 1;
+        this.state = ((this.state << 1) | lsb) & ((1 << this.stages) - 1);
+        return this.state;
+    }
+    value(): string { return this.state.toString(2).padStart(this.stages, '0'); }
+}
+
+// === LFSR (Maximal Length) ===
+class LFSR {
+    private state: number;
+    constructor(private bits: number, private taps: number[], seed = 1) {
+        this.state = seed & ((1 << bits) - 1);
+        if (this.state === 0) this.state = 1;
+    }
+    next(): number {
+        const feedback = this.taps.reduce((xor, t) => xor ^ ((this.state >> (t - 1)) & 1), 0);
+        this.state = ((this.state << 1) | feedback) & ((1 << this.bits) - 1);
+        return this.state;
+    }
+    sequence(): number[] {
+        const seen = new Set<number>();
+        const seq: number[] = [];
+        while (!seen.has(this.state)) {
+            seen.add(this.state);
+            seq.push(this.state);
+            this.next();
+        }
+        return seq;
+    }
+}
+
+// === Programmable Divider ===
+class ProgDivider {
+    private count = 0;
+    constructor(private divisor: number) {}
+    tick(): number {
+        this.count = (this.count + 1) % this.divisor;
+        return this.count === 0 ? 1 : 0;
+    }
+}
+
+// === PWM Generator ===
+class PWMGenerator {
+    private counter = 0;
+    constructor(private period: number, private dutyCycle: number) {}
+    tick(): number {
+        this.counter = (this.counter + 1) % this.period;
+        return this.counter < this.dutyCycle ? 1 : 0;
+    }
+    setDuty(percent: number): void { this.dutyCycle = Math.floor((percent / 100) * this.period); }
+}
+
+// === CRC-16-CCITT Generator ===
+class CRC16 {
+    compute(data: number[], poly = 0x1021): number {
+        let crc = 0xFFFF;
+        for (const byte of data) {
+            crc ^= (byte << 8);
+            for (let i = 0; i < 8; i++) {
+                if (crc & 0x8000) crc = (crc << 1) ^ poly;
+                else crc <<= 1;
+                crc &= 0xFFFF;
+            }
+        }
+        return crc ^ 0xFFFF;
+    }
+    verify(data: number[], crc: number, poly = 0x1021): boolean {
+        return this.compute(data, poly) === crc;
+    }
+}
+
+// === Ring Counter ===
+class RingCounter {
+    private state: number;
+    constructor(private stages: number) { this.state = 1; }
+    tick(): number {
+        this.state = ((this.state << 1) | (this.state >> (this.stages - 1))) & ((1 << this.stages) - 1);
+        return this.state;
+    }
+    value(): string { return this.state.toString(2).padStart(this.stages, '0'); }
+}
+
+// === Demo ===
+const usr = new UniversalShiftRegister();
+console.log(`Load 0b1011: ${usr.operate(3, 0, 0b1011).toString(2).padStart(4, '0')}`);
+console.log(`Shift left(1): ${usr.operate(1, 1).toString(2).padStart(4, '0')}`);
+console.log(`Shift right(0): ${usr.operate(2, 0).toString(2).padStart(4, '0')}`);
+
+const rc = new RippleCounter(4);
+console.log('\nRipple Counter (8 ticks):');
+for (let i = 0; i < 8; i++) { rc.tick(); process.stdout.write(`${rc.value()} `); }
+
+const lfsr = new LFSR(5, [5, 2]);
+console.log(`\n\nLFSR(5,x^5+x^2+1) sequence length: ${lfsr.sequence().length}`);
+
+const bcd = new BCDCounter();
+console.log('\nBCD Counter (15 ticks):');
+for (let i = 0; i < 15; i++) process.stdout.write(`${bcd.tick().value} `);
+
+const jc = new JohnsonCounter(4);
+console.log('\n\nJohnson Counter (10 ticks):');
+for (let i = 0; i < 10; i++) { console.log(`  ${jc.tick().toString(2).padStart(4, '0')}`); }
+
+const crc = new CRC16();
+const data = [0x48, 0x65, 0x6C, 0x6C, 0x6F];
+const c = crc.compute(data);
+console.log(`\nCRC-16 of [Hello]: 0x${c.toString(16).toUpperCase()}`);
+console.log(`Verify: ${crc.verify(data, c)}`);
+
+const pwm = new PWMGenerator(100, 30);
+console.log(`\nPWM duty 30%: ${Array.from({ length: 20 }, () => pwm.tick()).join('')}`);
+
+const barrel = new BarrelShifter();
+console.log(`Barrel shift 0xF0 << 3: ${barrel.shiftLeft(0xF0, 3).toString(16)}`);
+```
+
 ## Summary
 
 Registers and counters are the workhorses of sequential digital systems. This chapter covered advanced register architectures (universal shift registers, barrel shifters), a range of counter designs (BCD, Gray, programmable, Johnson, LFSR), and their applications in frequency division, sequence generation, and timing control. The LFSR in particular is a versatile building block for PRNGs, CRCs, and BIST. The next chapter moves to larger-scale storage — semiconductor memory architectures.

@@ -694,6 +694,81 @@ sequenceDiagram
 
 ---
 
+### TypeScript: Message Queue, Event Bus, and Outbox Pattern
+
+```typescript
+type MessageHandler = (msg: any) => Promise<void>;
+
+class MessageBroker {
+  private queues = new Map<string, any[]>();
+  private subscribers = new Map<string, MessageHandler[]>();
+  private dlq = new Map<string, any[]>();
+
+  createQueue(name: string): void { if (!this.queues.has(name)) this.queues.set(name, []); }
+
+  publish(queue: string, message: any): void {
+    if (!this.queues.has(queue)) this.queues.set(queue, []);
+    this.queues.get(queue)!.push({ ...message, enqueuedAt: Date.now() });
+  }
+
+  subscribe(queue: string, handler: MessageHandler): void {
+    if (!this.subscribers.has(queue)) this.subscribers.set(queue, []);
+    this.subscribers.get(queue)!.push(handler);
+  }
+
+  async consume(queue: string): Promise<void> {
+    const msgs = this.queues.get(queue) ?? [];
+    const handlers = this.subscribers.get(queue) ?? [];
+    while (msgs.length > 0) {
+      const msg = msgs.shift()!;
+      let success = false;
+      for (const handler of handlers) {
+        try { await handler(msg); success = true; break; }
+        catch (e) { console.error(`Handler failed for msg ${msg.id}:`, e); }
+      }
+      if (!success) {
+        if (!this.dlq.has(queue)) this.dlq.set(queue, []);
+        this.dlq.get(queue)!.push(msg);
+      }
+    }
+  }
+
+  redlq(queue: string): void {
+    const dead = this.dlq.get(queue) ?? [];
+    this.dlq.set(queue, []);
+    for (const msg of dead) this.publish(queue, msg);
+  }
+}
+
+class KafkaPartitioner {
+  private partitionCount: number;
+  constructor(partitions: number) { this.partitionCount = partitions; }
+
+  partition(key: string): number {
+    let h = 0;
+    for (let i = 0; i < key.length; i++) h = ((h << 5) - h + key.charCodeAt(i)) | 0;
+    return Math.abs(h) % this.partitionCount;
+  }
+}
+
+class OutboxPublisher {
+  private outbox: { id: string; topic: string; payload: any; published: boolean }[] = [];
+
+  record(id: string, topic: string, payload: any): void {
+    this.outbox.push({ id, topic, payload, published: false });
+  }
+
+  async publishPending(broker: MessageBroker): Promise<void> {
+    for (const entry of this.outbox) {
+      if (!entry.published) {
+        broker.publish(entry.topic, { id: entry.id, ...entry.payload });
+        entry.published = true;
+      }
+    }
+  }
+}
+```
+
 ## Summary
 
 - Asynchronous communication decouples services via a message broker, improving resilience and allowing independent scaling at the cost of increased system complexity

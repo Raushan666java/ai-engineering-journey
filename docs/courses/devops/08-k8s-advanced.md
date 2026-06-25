@@ -647,6 +647,153 @@ console.log(JSON.stringify(recommendations, null, 2));
 
 ---
 
+### Resource Quota Migrator
+
+Migrating resources between namespaces or clusters requires systematic quota translation and conflict detection. The following tool automates quota extraction, transformation, and validation.
+
+```typescript
+// quota-migrator.ts
+// Migrate Kubernetes resource quotas between namespaces
+
+interface QuotaSpec {
+  namespace: string;
+  requests: { cpu: string; memory: string; storage?: string };
+  limits: { cpu: string; memory: string };
+  count: Record<string, string>;
+  scopes: string[];
+}
+
+interface MigrationMapping {
+  sourceNamespace: string;
+  targetNamespace: string;
+  quotaTransforms: Array<{ field: string; operation: 'scale' | 'rename' | 'add' | 'remove'; value?: string; factor?: number }>;
+}
+
+interface MigrationPlan {
+  sourceQuota: QuotaSpec;
+  targetQuota: QuotaSpec;
+  transforms: string[];
+  conflicts: string[];
+  warnings: string[];
+  estimatedResourceDelta: { cpuBefore: string; cpuAfter: string; memBefore: string; memAfter: string };
+}
+
+interface MigrationResult {
+  plan: MigrationPlan;
+  applied: boolean;
+  timestamp: Date;
+  dryRun: boolean;
+}
+
+class QuotaMigrator {
+  private appliedMigrations: MigrationResult[] = [];
+
+  planMigration(source: QuotaSpec, mapping: MigrationMapping): MigrationPlan {
+    const warnings: string[] = [];
+    const conflicts: string[] = [];
+
+    const target: QuotaSpec = { namespace: mapping.targetNamespace, requests: { ...source.requests }, limits: { ...source.limits }, count: { ...source.count }, scopes: [...source.scopes] };
+
+    for (const t of mapping.quotaTransforms) {
+      switch (t.operation) {
+        case 'scale': {
+          const factor = t.factor || 1;
+          const cpuMatch = target.requests.cpu.match(/(\d+)([mMG]?)/);
+          if (cpuMatch) {
+            const val = parseInt(cpuMatch[1]) * factor;
+            target.requests.cpu = cpuMatch[2] === 'm' || cpuMatch[2] === '' ? `${val}m` : `${val}`;
+          }
+          const memMatch = target.requests.memory.match(/(\d+)([MG]i?)/);
+          if (memMatch) {
+            const val = parseInt(memMatch[1]) * factor;
+            target.requests.memory = `${val}${memMatch[2]}`;
+          }
+          warnings.push(`Scaled resources by factor ${factor}`);
+          break;
+        }
+        case 'rename':
+          if (t.field === 'namespace') target.namespace = t.value || target.namespace;
+          break;
+        case 'add':
+          target.requests.cpu = this.addResource(target.requests.cpu, t.value || '0m');
+          break;
+        case 'remove':
+          target.scopes = target.scopes.filter(s => s !== t.value);
+          break;
+      }
+    }
+
+    if (target.namespace === source.namespace) warnings.push('Source and target namespaces are the same');
+    const deltaCpu = this.resourceDelta(target.requests.cpu, source.requests.cpu);
+    const deltaMem = this.resourceDelta(target.requests.memory, source.requests.memory);
+
+    return {
+      sourceQuota: source, targetQuota: target,
+      transforms: mapping.quotaTransforms.map(t => `${t.operation}:${t.field}`),
+      conflicts, warnings,
+      estimatedResourceDelta: { cpuBefore: source.requests.cpu, cpuAfter: target.requests.cpu, memBefore: source.requests.memory, memAfter: target.requests.memory },
+    };
+  }
+
+  applyMigration(plan: MigrationPlan, dryRun: boolean): MigrationResult {
+    const result: MigrationResult = { plan, applied: dryRun ? false : true, timestamp: new Date(), dryRun };
+    this.appliedMigrations.push(result);
+    return result;
+  }
+
+  rollbackLatest(): MigrationResult | null {
+    const last = this.appliedMigrations.pop();
+    return last || null;
+  }
+
+  getHistory(filter?: { namespace?: string; dryRun?: boolean }): MigrationResult[] {
+    return this.appliedMigrations.filter(m => {
+      if (filter?.namespace && m.plan.sourceQuota.namespace !== filter.namespace) return false;
+      if (filter?.dryRun !== undefined && m.dryRun !== filter.dryRun) return false;
+      return true;
+    });
+  }
+
+  private addResource(current: string, addition: string): string {
+    const currentVal = parseInt(current);
+    const addVal = parseInt(addition);
+    const unit = current.includes('m') ? 'm' : '';
+    return `${currentVal + addVal}${unit}`;
+  }
+
+  private resourceDelta(after: string, before: string): string {
+    const aVal = parseInt(after);
+    const bVal = parseInt(before);
+    const diff = aVal - bVal;
+    const sign = diff >= 0 ? '+' : '';
+    return `${sign}${diff}`;
+  }
+}
+
+const migrator = new QuotaMigrator();
+const source: QuotaSpec = { namespace: 'staging', requests: { cpu: '2000m', memory: '4Gi' }, limits: { cpu: '4000m', memory: '8Gi' }, count: { pods: '10' }, scopes: ['BestEffort', 'NotTerminating'] };
+
+const mapping: MigrationMapping = {
+  sourceNamespace: 'staging', targetNamespace: 'production',
+  quotaTransforms: [
+    { field: 'namespace', operation: 'rename', value: 'production' },
+    { field: 'requests.cpu', operation: 'scale', factor: 2 },
+    { field: 'requests.memory', operation: 'scale', factor: 2 },
+  ],
+};
+
+const plan = migrator.planMigration(source, mapping);
+console.log('Migration plan:', JSON.stringify(plan.estimatedResourceDelta, null, 2));
+console.log('Warnings:', plan.warnings.join(', '));
+
+const result = migrator.applyMigration(plan, true);
+console.log(`Applied (dry-run: ${result.dryRun}): ${result.applied}`);
+```
+
+**What this demonstrates:** Automated quota migration with transform pipelines ensures accurate resource allocation when moving workloads between namespaces or clusters.
+
+---
+
 ## Practical Takeaways
 
 1. **RBAC: least privilege always.** Start with deny, grant specific access as needed.

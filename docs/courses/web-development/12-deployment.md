@@ -567,6 +567,162 @@ console.log("Pipeline:", pipe.stages.join(" -> "));
 console.log("Docker:", DockerComposeGenerator.compose([{ name: "app", image: "node:18", port: 3000 }]));
 ```
 
+## TypeScript Implementation: Dockerfile Generator, Nginx Config Validator, CI Pipeline Writer
+
+```typescript
+class DockerfileGenerator {
+    static node(baseImage: string = "node:20-alpine", options?: {
+        port?: number; workdir?: string; buildCmd?: string; startCmd?: string;
+        env?: Record<string, string>; extraSteps?: string[]
+    }): string {
+        const opts = options || {};
+        const lines: string[] = [
+            `FROM ${baseImage}`,
+            `WORKDIR ${opts.workdir || "/app"}`,
+        ];
+        if (opts.env) {
+            for (const [k, v] of Object.entries(opts.env)) lines.push(`ENV ${k}=${v}`);
+        }
+        lines.push(
+            `COPY package*.json ./`,
+            `RUN npm ci --only=production`,
+            `COPY . .`,
+        );
+        if (opts.buildCmd) lines.push(`RUN ${opts.buildCmd}`);
+        if (opts.extraSteps) lines.push(...opts.extraSteps);
+        lines.push(`EXPOSE ${opts.port || 3000}`);
+        lines.push(`CMD ["${(opts.startCmd || "node index.js").split(" ").join('", "')}"]`);
+        return lines.join("\n");
+    }
+
+    static multiStage(nodeVersion: string = "20"): string {
+        return `
+FROM node:${nodeVersion}-alpine AS builder
+WORKDIR /build
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+FROM node:${nodeVersion}-alpine AS runner
+WORKDIR /app
+COPY --from=builder /build/dist ./dist
+COPY --from=builder /build/node_modules ./node_modules
+COPY package*.json ./
+EXPOSE 3000
+CMD ["node", "dist/index.js"]
+`.trim();
+    }
+
+    static dockerignore(): string {
+        return `node_modules\n.git\n.env\n*.md\ndist\ncoverage\n.gitignore\n.DS_Store\n`;
+    }
+}
+
+class NginxConfigValidator {
+    static validate(config: string): { valid: boolean; errors: string[]; warnings: string[] } {
+        const errors: string[] = []; const warnings: string[] = [];
+        const lines = config.split("\n");
+
+        let hasServer = false; let hasListen = false; let braceCount = 0;
+        let inLocation = false; let hasProxyPass = false;
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (line.startsWith("#") || line === "") continue;
+
+            if (line.includes("{")) braceCount++;
+            if (line.includes("}")) braceCount--;
+            if (line.includes("server {")) hasServer = true;
+            if (line.startsWith("listen")) { hasListen = true; if (line.includes("80") && !line.includes("443")) warnings.push(`Line ${i+1}: HTTP only (port 80), consider HTTPS`); }
+            if (line.startsWith("location")) inLocation = true;
+            if (line.includes("proxy_pass")) hasProxyPass = true;
+            if (line.includes("ssl_certificate") && !line.includes(".pem") && !line.includes(".crt")) errors.push(`Line ${i+1}: SSL certificate path may be invalid`);
+            if (line.match(/server_name\s+_/)) warnings.push(`Line ${i+1}: Catch-all server_name _ may cause routing issues`);
+        }
+
+        if (braceCount !== 0) errors.push(`Unmatched braces (${braceCount > 0 ? "excess open" : "excess close"})`);
+        if (!hasServer) errors.push("No server block defined");
+        if (!hasListen) errors.push("No listen directive");
+        if (inLocation && !hasProxyPass) warnings.push("Location blocks exist but no proxy_pass found");
+
+        return { valid: errors.length === 0, errors, warnings };
+    }
+
+    static generateReverseProxy(domain: string, upstreamPort: number, ssl: boolean = true): string {
+        return `
+server {
+    listen ${ssl ? "443 ssl" : "80"};
+    server_name ${domain};
+    ${ssl ? `ssl_certificate /etc/ssl/certs/${domain}.pem;\n    ssl_certificate_key /etc/ssl/private/${domain}.key;` : ""}
+    location / {
+        proxy_pass http://localhost:${upstreamPort};
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+    location /static/ {
+        root /var/www;
+        expires 30d;
+        add_header Cache-Control "public, immutable";
+    }
+}
+`.trim();
+    }
+}
+
+class CIPipelineWriter {
+    static githubActions(config: { name: string; nodeVersion?: string; testCmd?: string; buildCmd?: string; deploy?: boolean }): string {
+        return `
+name: ${config.name}
+
+on:
+  push: { branches: [main] }
+  pull_request: { branches: [main] }
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [${config.nodeVersion || "20"}]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: \${{ matrix.node-version }} }
+      - run: npm ci
+      - run: ${config.testCmd || "npm test"}
+      - run: ${config.buildCmd || "npm run build"}
+      ${config.deploy ? `\n  deploy:\n    needs: quality\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - run: echo "Deploy step here"` : ""}
+`.trim();
+    }
+
+    static gitlabCI(config: { image?: string; stages?: string[]; commands?: Record<string, string> }): string {
+        const stages = config.stages || ["test", "build", "deploy"];
+        return `
+image: ${config.image || "node:20-alpine"}
+
+stages:${stages.map(s => `\n  - ${s}`).join("")}
+
+${stages.map(stage => `
+${stage}:
+  stage: ${stage}
+  script:
+    - ${(config.commands?.[stage] || `echo "${stage} step"`)}
+`).join("")}
+`.trim();
+    }
+}
+
+// Demo
+console.log("Dockerfile:\n", DockerfileGenerator.node("node:20-alpine", { port: 3000, startCmd: "npm start", buildCmd: "npm run build", env: { NODE_ENV: "production" } }));
+console.log("\nNginx config:\n", NginxConfigValidator.generateReverseProxy("example.com", 3000, false));
+const nginxConfig = NginxConfigValidator.generateReverseProxy("example.com", 3000, true);
+console.log("Nginx validation:", JSON.stringify(NginxConfigValidator.validate(nginxConfig).errors));
+console.log("\nCI Pipeline:\n", CIPipelineWriter.githubActions({ name: "CI", testCmd: "npm test", buildCmd: "npm run build", deploy: true }));
+```
+
 ## Summary
 
 Deployment transforms development code into production services. Modern platforms like Vercel, Netlify, and Railway abstract infrastructure management. Docker containerizes applications for consistent deployment across environments. CI/CD pipelines automate testing and deployment. Monitoring with structured logging and health checks ensures production reliability.

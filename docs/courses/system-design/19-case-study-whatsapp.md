@@ -686,6 +686,89 @@ Total latency budget:
 
 ---
 
+### TypeScript: Message Fan-Out, E2E Encryption, and Presence Tracker
+
+```typescript
+class MessageFanOut {
+  private groupMembers = new Map<string, string[]>();
+  private readonly fanOutThreshold = 1024;
+
+  createGroup(groupId: string, members: string[]): void { this.groupMembers.set(groupId, members); }
+
+  async sendMessage(groupId: string, senderId: string, content: string): Promise<{ strategy: string; deliveries: number }> {
+    const members = this.groupMembers.get(groupId) ?? [];
+    const recipients = members.filter(m => m !== senderId);
+    const strategy = recipients.length <= this.fanOutThreshold ? "fan-on-write" : "fan-on-read";
+    return { strategy, deliveries: recipients.length };
+  }
+}
+
+class SignalProtocol {
+  private keyPairs = new Map<string, { pub: string; priv: string }>();
+  private sessions = new Map<string, { rootKey: string; chainKey: string; ratchetKey: string }>();
+
+  generateKeyPair(): { pub: string; priv: string } {
+    const pub = `pub-${Math.random().toString(36).slice(2, 10)}`;
+    const priv = `priv-${Math.random().toString(36).slice(2, 10)}`;
+    this.keyPairs.set(pub, { pub, priv });
+    return { pub, priv };
+  }
+
+  x3dhInitiate(recipientPubKey: string): { ephemeralKey: string; sharedSecret: string } {
+    const ephemeral = this.generateKeyPair();
+    const sharedSecret = `derived-${recipientPubKey}-${ephemeral.pub}`;
+    this.sessions.set(recipientPubKey, { rootKey: sharedSecret, chainKey: sharedSecret, ratchetKey: ephemeral.pub });
+    return { ephemeralKey: ephemeral.pub, sharedSecret };
+  }
+
+  doubleRatchetEncrypt(sessionKey: string, plaintext: string): string {
+    const session = this.sessions.get(sessionKey);
+    if (!session) throw new Error("No session");
+    const msgKey = this.kdf(session.chainKey, "message");
+    session.chainKey = this.kdf(session.chainKey, "chain");
+    const ciphertext = this.xor(plaintext, msgKey);
+    return `encrypted(${ciphertext})`;
+  }
+
+  doubleRatchetDecrypt(sessionKey: string, ciphertext: string): string {
+    const session = this.sessions.get(sessionKey);
+    if (!session) throw new Error("No session");
+    const msgKey = this.kdf(session.chainKey, "message");
+    session.chainKey = this.kdf(session.chainKey, "chain");
+    const stripped = ciphertext.replace("encrypted(", "").replace(")", "");
+    return this.xor(stripped, msgKey);
+  }
+
+  private kdf(key: string, purpose: string): string { return `kdf(${key}|${purpose})`; }
+  private xor(a: string, b: string): string { return [...a].map((c, i) => String.fromCharCode(c.charCodeAt(0) ^ b.charCodeAt(i % b.length))).join(""); }
+}
+
+class PresenceTracker {
+  private presence = new Map<string, { status: "online" | "offline" | "away"; lastSeen: number }>();
+  private watchers = new Map<string, Set<string>>();
+
+  setStatus(userId: string, status: "online" | "offline" | "away"): void {
+    this.presence.set(userId, { status, lastSeen: Date.now() });
+    for (const watcher of this.watchers.get(userId) ?? []) {
+      this.notify(watcher, userId, status);
+    }
+  }
+
+  watch(watcherId: string, targetId: string): void {
+    if (!this.watchers.has(targetId)) this.watchers.set(targetId, new Set());
+    this.watchers.get(targetId)!.add(watcherId);
+  }
+
+  getStatus(userId: string): { status: string; lastSeen: number } {
+    return this.presence.get(userId) ?? { status: "offline", lastSeen: 0 };
+  }
+
+  private notify(watcherId: string, userId: string, status: string): void {
+    console.log(`[Presence] Notify ${watcherId}: ${userId} is ${status}`);
+  }
+}
+```
+
 ## Summary
 
 - WhatsApp's architecture evolved from Erlang/ejabberd (XMPP) to custom C++ on FreeBSD with kqueue for maximum connection density

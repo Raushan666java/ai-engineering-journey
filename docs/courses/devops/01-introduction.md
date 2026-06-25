@@ -632,6 +632,180 @@ flowchart LR
 **Operate:** Kubernetes, Terraform, Pulumi, Ansible, Docker, Vagrant
 **Monitor:** Prometheus, Grafana, Datadog, New Relic, ELK Stack
 
+### DevOps Maturity Model Calculator
+
+Measuring DevOps maturity across teams and organizations enables targeted improvement. The following tool evaluates maturity across the five CALMS dimensions and provides actionable recommendations.
+
+```typescript
+// devops-maturity.ts
+// Assess DevOps maturity across CALMS dimensions
+
+interface MaturityScore {
+  dimension: string;
+  current: number;  // 1-5
+  target: number;   // 1-5
+  gap: number;
+  evidence: string[];
+}
+
+interface MaturityAssessment {
+  teamName: string;
+  scores: MaturityScore[];
+  overallMaturity: number;
+  topGaps: string[];
+  recommendations: string[];
+}
+
+class DevOpsMaturityCalculator {
+  private readonly dimensions = [
+    { name: 'Culture', targets: { sharing: 4, blameless: 5, autonomy: 3 } },
+    { name: 'Automation', targets: { ci: 5, cd: 4, testing: 4 } },
+    { name: 'Lean', targets: { flow: 4, waste: 3, batchSize: 4 } },
+    { name: 'Measurement', targets: { dora: 5, logs: 4, alerts: 3 } },
+    { name: 'Sharing', targets: { docs: 3, feedback: 4, knowledge: 4 } },
+  ];
+
+  assess(data: Record<string, number>, teamName = 'default'): MaturityAssessment {
+    const scores: MaturityScore[] = [];
+    for (const dim of this.dimensions) {
+      const score = Object.entries(dim.targets);
+      const achieved = score.reduce((sum, [k]) => sum + (data[k] || 1), 0);
+      const possible = score.reduce((sum, [, v]) => sum + v, 0);
+      const current = Math.round((achieved / possible) * 4) + 1;
+      const target = 5;
+      scores.push({
+        dimension: dim.name,
+        current: Math.min(current, 5),
+        target,
+        gap: target - current,
+        evidence: [`${achieved}/${possible} points in ${dim.name}`],
+      });
+    }
+
+    const overallMaturity = Math.round(scores.reduce((s, sc) => s + sc.current, 0) / scores.length);
+    const sorted = [...scores].sort((a, b) => b.gap - a.gap);
+    const recommendations = sorted.filter(s => s.gap > 1).map(s =>
+      `Improve ${s.dimension}: current ${s.current}/5, target ${s.target}/5`
+    );
+    return {
+      teamName,
+      scores,
+      overallMaturity,
+      topGaps: sorted.filter(s => s.gap > 1).map(s => s.dimension),
+      recommendations,
+    };
+  }
+
+  generateReport(assessment: MaturityAssessment): string {
+    const levelMap = ['Initial', 'Repeatable', 'Defined', 'Managed', 'Optimizing'];
+    return `## DevOps Maturity Report\n\n` +
+      `**Team:** ${assessment.teamName}\n` +
+      `**Overall Maturity:** ${assessment.overallMaturity}/5 — ${levelMap[assessment.overallMaturity - 1]}\n\n` +
+      `| Dimension | Level | Target | Gap |\n` +
+      `|-----------|-------|--------|-----|\n` +
+      assessment.scores.map(s =>
+        `| ${s.dimension} | ${'⬛'.repeat(s.current)}${'⬜'.repeat(s.gap)} ${s.current}/5 | 5 | ${s.gap} |`
+      ).join('\n') + '\n\n**Top Recommendations:**\n' +
+      assessment.recommendations.map(r => `- ${r}`).join('\n');
+  }
+}
+
+const calc = new DevOpsMaturityCalculator();
+const assessment = calc.assess({
+  sharing: 3, blameless: 5, autonomy: 2,
+  ci: 4, cd: 3, testing: 3,
+  flow: 3, waste: 2, batchSize: 3,
+  dora: 2, logs: 3, alerts: 2,
+  docs: 2, feedback: 3, knowledge: 3,
+}, 'Platform Engineering Team');
+console.log(calc.generateReport(assessment));
+```
+
+**What this demonstrates:** Automated maturity assessment provides a quantitative baseline for DevOps improvement, identifies gaps across CALMS dimensions, and generates targeted recommendations for each team.
+
+---
+
+### DevOps Toolchain Dependency Graph
+
+Understanding toolchain dependencies helps teams manage their DevOps ecosystem. The following tool models tool relationships, identifies critical dependencies, and detects single points of failure.
+
+```typescript
+// toolchain-graph.ts
+// Model DevOps toolchain dependencies and find SPOFs
+
+interface Tool {
+  name: string;
+  category: 'plan' | 'code' | 'build' | 'test' | 'release' | 'deploy' | 'operate' | 'monitor';
+  dependsOn: string[];
+  critical: boolean;
+}
+
+interface ToolchainGraph {
+  tools: Tool[];
+  criticalPath: string[];
+  singlePointsOfFailure: string[];
+  recommendations: string[];
+}
+
+class ToolchainAnalyzer {
+  analyze(tools: Tool[]): ToolchainGraph {
+    const criticalPath = this.findCriticalPath(tools);
+    const spofs = this.findSPOFs(tools);
+    return {
+      tools,
+      criticalPath,
+      singlePointsOfFailure: spofs,
+      recommendations: spofs.map(s => `Consider adding redundancy or fallback for ${s}`),
+    };
+  }
+
+  private findCriticalPath(tools: Tool[]): string[] {
+    const activeCritical = tools.filter(t => t.critical);
+    return activeCritical.map(t => t.name);
+  }
+
+  private findSPOFs(tools: Tool[]): string[] {
+    const depCount = new Map<string, number>();
+    for (const tool of tools) {
+      for (const dep of tool.dependsOn) {
+        depCount.set(dep, (depCount.get(dep) || 0) + 1);
+      }
+    }
+    const spofs: string[] = [];
+    for (const [tool, count] of depCount) {
+      if (count >= 3) spofs.push(tool);
+    }
+    return spofs;
+  }
+
+  generateReport(graph: ToolchainGraph): string {
+    return `## Toolchain Analysis\n\n` +
+      `**Total Tools:** ${graph.tools.length}\n` +
+      `**Critical Path:** ${graph.criticalPath.join(' → ') || 'None'}\n` +
+      `**SPOFs:** ${graph.singlePointsOfFailure.join(', ') || 'None'}\n` +
+      (graph.recommendations.length > 0
+        ? `\n**Recommendations:**\n${graph.recommendations.map(r => `- ${r}`).join('\n')}`
+        : '\n✅ No single points of failure detected');
+  }
+}
+
+const analyzer = new ToolchainAnalyzer();
+const tools: Tool[] = [
+  { name: 'GitHub', category: 'code', dependsOn: [], critical: true },
+  { name: 'Jenkins', category: 'build', dependsOn: ['GitHub'], critical: true },
+  { name: 'SonarQube', category: 'test', dependsOn: ['Jenkins'], critical: false },
+  { name: 'Docker Registry', category: 'release', dependsOn: ['Jenkins'], critical: true },
+  { name: 'Kubernetes', category: 'operate', dependsOn: ['Docker Registry'], critical: true },
+  { name: 'Prometheus', category: 'monitor', dependsOn: ['Kubernetes'], critical: false },
+  { name: 'ArgoCD', category: 'deploy', dependsOn: ['Kubernetes', 'Docker Registry'], critical: true },
+];
+console.log(analyzer.generateReport(analyzer.analyze(tools)));
+```
+
+**What this demonstrates:** Toolchain dependency modeling reveals critical path dependencies and single points of failure, enabling teams to architect more resilient DevOps pipelines.
+
+---
+
 ### DORA Metrics Deep Dive
 
 The four key DORA metrics measure DevOps performance:

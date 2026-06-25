@@ -639,6 +639,261 @@ console.log(JSON.stringify(scheduler.simulateBatch(pods, nodes), null, 2));
 
 ---
 
+### Kubernetes Manifest Generator and Validator
+
+Generating Kubernetes manifests programmatically ensures consistency, reduces YAML errors, and enables template reuse across environments.
+
+```typescript
+// k8s-manifest-gen.ts
+// Generate and validate Kubernetes manifests
+
+interface ContainerSpec {
+  name: string;
+  image: string;
+  ports: number[];
+  env: Record<string, string>;
+  resources: { requests: { cpu: string; memory: string }; limits: { cpu: string; memory: string } };
+  healthProbe?: { path: string; port: number; initialDelay: number; period: number };
+  volumeMounts?: { name: string; mountPath: string }[];
+}
+
+interface DeploymentConfig {
+  name: string;
+  namespace: string;
+  replicas: number;
+  containers: ContainerSpec[];
+  volumes?: { name: string; configMap?: string; persistentVolumeClaim?: string }[];
+  labels: Record<string, string>;
+  strategy: 'rollingUpdate' | 'recreate';
+  maxSurge?: number;
+  maxUnavailable?: number;
+}
+
+interface ServiceConfig {
+  name: string;
+  namespace: string;
+  type: 'ClusterIP' | 'NodePort' | 'LoadBalancer';
+  ports: { port: number; targetPort: number; name?: string }[];
+  selector: Record<string, string>;
+}
+
+interface IngressConfig {
+  name: string;
+  namespace: string;
+  host: string;
+  tlsSecret?: string;
+  rules: { path: string; serviceName: string; servicePort: number }[];
+  annotations: Record<string, string>;
+}
+
+class K8sManifestGenerator {
+  generateDeployment(config: DeploymentConfig): object {
+    return {
+      apiVersion: 'apps/v1',
+      kind: 'Deployment',
+      metadata: { name: config.name, namespace: config.namespace, labels: config.labels },
+      spec: {
+        replicas: config.replicas,
+        strategy: {
+          type: config.strategy,
+          rollingUpdate: config.strategy === 'rollingUpdate'
+            ? { maxSurge: config.maxSurge || 1, maxUnavailable: config.maxUnavailable || 0 }
+            : undefined,
+        },
+        selector: { matchLabels: config.labels },
+        template: {
+          metadata: { labels: config.labels },
+          spec: {
+            containers: config.containers.map(c => ({
+              name: c.name,
+              image: c.image,
+              ports: c.ports.map(p => ({ containerPort: p })),
+              env: Object.entries(c.env).map(([k, v]) => ({ name: k, value: v })),
+              resources: c.resources,
+              livenessProbe: c.healthProbe ? { httpGet: { path: c.healthProbe.path, port: c.healthProbe.port }, initialDelaySeconds: c.healthProbe.initialDelay, periodSeconds: c.healthProbe.period } : undefined,
+              readinessProbe: c.healthProbe ? { httpGet: { path: c.healthProbe.path, port: c.healthProbe.port }, initialDelaySeconds: c.healthProbe.initialDelay, periodSeconds: c.healthProbe.period } : undefined,
+              volumeMounts: c.volumeMounts,
+            })),
+            volumes: config.volumes?.map(v => ({
+              name: v.name,
+              configMap: v.configMap ? { name: v.configMap } : undefined,
+              persistentVolumeClaim: v.persistentVolumeClaim ? { claimName: v.persistentVolumeClaim } : undefined,
+            })),
+          },
+        },
+      },
+    };
+  }
+
+  generateService(config: ServiceConfig): object {
+    return {
+      apiVersion: 'v1', kind: 'Service',
+      metadata: { name: config.name, namespace: config.namespace },
+      spec: { type: config.type, ports: config.ports, selector: config.selector },
+    };
+  }
+
+  generateIngress(config: IngressConfig): object {
+    return {
+      apiVersion: 'networking.k8s.io/v1', kind: 'Ingress',
+      metadata: { name: config.name, namespace: config.namespace, annotations: config.annotations },
+      spec: {
+        tls: config.tlsSecret ? [{ hosts: [config.host], secretName: config.tlsSecret }] : undefined,
+        rules: [{ host: config.host, http: { paths: config.rules.map(r => ({ path: r.path, pathType: 'Prefix', backend: { service: { name: r.serviceName, port: { number: r.servicePort } } } })) } }],
+      },
+    };
+  }
+
+  validate(manifest: object): string[] {
+    const warnings: string[] = [];
+    const doc = manifest as Record<string, any>;
+    if (!doc.apiVersion) warnings.push('Missing apiVersion');
+    if (!doc.kind) warnings.push('Missing kind');
+    if (doc.kind === 'Deployment' || doc.kind === 'StatefulSet') {
+      const containers = doc.spec?.template?.spec?.containers || [];
+      containers.forEach((c: any, i: number) => {
+        if (!c.resources?.requests?.cpu) warnings.push(`Container ${c.name || i} missing CPU request`);
+        if (!c.resources?.limits?.cpu) warnings.push(`Container ${c.name || i} missing CPU limit`);
+        if (!c.livenessProbe) warnings.push(`Container ${c.name || i} missing liveness probe`);
+        if (!c.readinessProbe) warnings.push(`Container ${c.name || i} missing readiness probe`);
+      });
+    }
+    return warnings;
+  }
+}
+
+const gen = new K8sManifestGenerator();
+const deploy = gen.generateDeployment({
+  name: 'api-server', namespace: 'production', replicas: 3,
+  containers: [{ name: 'api', image: 'myapp/api:1.0.0', ports: [3000, 9090], env: { NODE_ENV: 'production', DB_URL: 'postgres://db:5432' }, resources: { requests: { cpu: '250m', memory: '256Mi' }, limits: { cpu: '500m', memory: '512Mi' } }, healthProbe: { path: '/health', port: 3000, initialDelay: 5, period: 10 } }],
+  labels: { app: 'api', tier: 'backend' }, strategy: 'rollingUpdate', maxSurge: 1, maxUnavailable: 0,
+});
+
+const svc = gen.generateService({ name: 'api-service', namespace: 'production', type: 'ClusterIP', ports: [{ port: 80, targetPort: 3000 }], selector: { app: 'api' } });
+const ingress = gen.generateIngress({ name: 'api-ingress', namespace: 'production', host: 'api.example.com', tlsSecret: 'api-tls', rules: [{ path: '/api', serviceName: 'api-service', servicePort: 80 }], annotations: { 'kubernetes.io/ingress.class': 'nginx' } });
+
+console.log('Deployment warnings:', gen.validate(deploy));
+console.log('Service:', JSON.stringify(svc, null, 2));
+console.log('Ingress:', JSON.stringify(ingress, null, 2));
+```
+
+**What this demonstrates:** Programmatic manifest generation ensures consistent, best-practice-conforming Kubernetes resources with built-in validation for common configuration gaps.
+
+---
+
+### Pod Disruption Budget Analyzer
+
+Pod Disruption Budgets (PDBs) protect application availability during voluntary disruptions. The following tool analyzes PDB configurations, computes disruption tolerance, and validates migration safety.
+
+```typescript
+// pdb-analyzer.ts
+// Analyze Pod Disruption Budget configurations
+
+interface PDBConfig {
+  name: string;
+  namespace: string;
+  selector: Record<string, string>;
+  minAvailable?: number;
+  maxUnavailable?: number;
+}
+
+interface PodDistribution {
+  nodeName: string;
+  zone: string;
+  phase: 'Running' | 'Pending';
+}
+
+interface DisruptionAnalysis {
+  pdb: PDBConfig;
+  currentReplicas: number;
+  allowedDisruptions: number;
+  currentDisruptions: number;
+  disruptionBudget: number;
+  safeToDrain: boolean;
+  riskLevel: 'safe' | 'caution' | 'risky';
+  recommendations: string[];
+}
+
+class PDBAnalyzer {
+  analyze(pdb: PDBConfig, pods: PodDistribution[]): DisruptionAnalysis {
+    const matchingPods = pods.filter(p => p.phase === 'Running');
+    const currentReplicas = matchingPods.length;
+    const minAvailable = pdb.minAvailable ?? (currentReplicas - (pdb.maxUnavailable || 1));
+    const maxUnavailable = pdb.maxUnavailable ?? (currentReplicas - (pdb.minAvailable || 1));
+
+    const allowedDisruptions = currentReplicas - minAvailable;
+    const currentDisruptions = 0; // baseline
+
+    const byNode = new Map<string, number>();
+    for (const pod of matchingPods) byNode.set(pod.nodeName, (byNode.get(pod.nodeName) || 0) + 1);
+    const podsOnSingleNode = [...byNode.entries()].filter(([, count]) => count > allowedDisruptions).length;
+
+    let riskLevel: 'safe' | 'caution' | 'risky';
+    let recommendations: string[] = [];
+
+    if (allowedDisruptions >= 2 || currentReplicas <= 2) {
+      riskLevel = 'safe';
+    } else if (allowedDisruptions === 1) {
+      riskLevel = 'caution';
+      recommendations.push('Only 1 pod can be disrupted at a time — rolling updates will be slow');
+      if (podsOnSingleNode > 0) recommendations.push(`${podsOnSingleNode} node(s) run more than allowed disruptions — consider pod anti-affinity`);
+    } else {
+      riskLevel = 'risky';
+      recommendations.push('Zero disruptions allowed — consider increasing minAvailable or adding replicas');
+    }
+
+    if (podsOnSingleNode > 0 && allowedDisruptions > 0) {
+      recommendations.push(`Spread pods across nodes — ${podsOnSingleNode} node(s) are single points of failure`);
+    }
+
+    return {
+      pdb, currentReplicas, currentDisruptions,
+      allowedDisruptions: Math.max(0, allowedDisruptions),
+      disruptionBudget: allowedDisruptions,
+      safeToDrain: allowedDisruptions > 0,
+      riskLevel, recommendations,
+    };
+  }
+
+  simulateDrain(analysis: DisruptionAnalysis, nodeName: string, podsOnNode: number): { canDrain: boolean; survivingReplicas: number; impact: string } {
+    const newDisrupted = podsOnNode;
+    const survivingReplicas = analysis.currentReplicas - newDisrupted;
+    const canDrain = survivingReplicas >= (analysis.pdb.minAvailable || 1);
+    return {
+      canDrain,
+      survivingReplicas,
+      impact: canDrain ? 'Safe to drain' : `Draining would reduce replicas below minAvailable (${analysis.pdb.minAvailable})`,
+    };
+  }
+
+  generateReport(analysis: DisruptionAnalysis): string {
+    return `## PDB Analysis: ${analysis.pdb.name}\n\n` +
+      `**Namespace:** ${analysis.pdb.namespace} | **Selector:** ${JSON.stringify(analysis.pdb.selector)}\n` +
+      `**Current Replicas:** ${analysis.currentReplicas} | **Min Available:** ${analysis.pdb.minAvailable ?? 'auto'}\n` +
+      `**Allowed Disruptions:** ${analysis.allowedDisruptions} | **Risk:** ${analysis.riskLevel}\n` +
+      `**Safe to drain node?** ${analysis.safeToDrain ? '✅ Yes' : '❌ No'}\n\n` +
+      (analysis.recommendations.length > 0 ? '**Recommendations:**\n' + analysis.recommendations.map(r => `- ${r}`).join('\n') : '');
+  }
+}
+
+const analyzer = new PDBAnalyzer();
+const analysis = analyzer.analyze({ name: 'api-pdb', namespace: 'prod', selector: { app: 'api' }, minAvailable: 2 },
+  [
+    { nodeName: 'node-1', zone: 'us-east-1a', phase: 'Running' },
+    { nodeName: 'node-1', zone: 'us-east-1a', phase: 'Running' },
+    { nodeName: 'node-2', zone: 'us-east-1b', phase: 'Running' },
+    { nodeName: 'node-3', zone: 'us-east-1c', phase: 'Running' },
+  ],
+);
+
+console.log(analyzer.generateReport(analysis));
+console.log('Drain simulation:', analyzer.simulateDrain(analysis, 'node-1', 2));
+```
+
+**What this demonstrates:** PDB analysis ensures application availability during node drains and rolling updates, identifies misconfigured disruption budgets, and validates migration safety.
+
+---
+
 ## Practical Takeaways
 
 1. **Use namespaces for environment isolation.** Separate dev, staging, prod with RBAC per namespace.

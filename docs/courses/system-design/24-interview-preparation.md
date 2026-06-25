@@ -674,6 +674,108 @@ For your final answer, produce:
 
 If you scored "Pass" on at least 7 of 10 criteria, you are ready for E5-level interviews. For E6, aim for 9/10 with deeper reasoning on failure modes and trade-offs.
 
+### TypeScript: Estimation Utilities and Design Patterns
+
+```typescript
+class InterviewEstimator {
+  dailyQPS(dau: number, requestsPerUser: number, peakFactor = 5): { avg: number; peak: number } {
+    const avg = (dau * requestsPerUser) / 86400;
+    return { avg: Math.round(avg), peak: Math.round(avg * peakFactor) };
+  }
+
+  storagePerDay(writes: number, recordSizeBytes: number): string {
+    return this.formatBytes(writes * recordSizeBytes);
+  }
+
+  bandwidth(bytesPerSecond: number): string { return this.formatBytes(bytesPerSecond) + "/s"; }
+
+  cacheMemory(cacheSize: number, recordSizeBytes: number): string {
+    return this.formatBytes(cacheSize * recordSizeBytes);
+  }
+
+  serverCount(qps: number, capacityPerServer: number): number {
+    return Math.ceil(qps / capacityPerServer) + 1;
+  }
+
+  private formatBytes(bytes: number): string {
+    if (bytes >= 1e12) return (bytes / 1e12).toFixed(1) + " TB";
+    if (bytes >= 1e9) return (bytes / 1e9).toFixed(1) + " GB";
+    if (bytes >= 1e6) return (bytes / 1e6).toFixed(1) + " MB";
+    if (bytes >= 1e3) return (bytes / 1e3).toFixed(1) + " KB";
+    return bytes + " B";
+  }
+}
+
+class AvailabilityCalculator {
+  series(components: number[]): number { return components.reduce((p, a) => p * a, 1); }
+  parallel(components: number[]): number { return 1 - components.reduce((p, a) => p * (1 - a), 1); }
+  nines(a: number): string {
+    if (a >= 0.99999) return "Five 9s";
+    if (a >= 0.9999) return "Four 9s";
+    if (a >= 0.999) return "Three 9s";
+    if (a >= 0.99) return "Two 9s";
+    return "One 9 or less";
+  }
+
+  annualDowntime(a: number): string {
+    const seconds = (1 - a) * 365 * 86400;
+    if (seconds < 60) return `${seconds.toFixed(0)} seconds`;
+    if (seconds < 3600) return `${(seconds / 60).toFixed(1)} minutes`;
+    return `${(seconds / 3600).toFixed(1)} hours`;
+  }
+}
+
+class ConsistentHashRing {
+  private ring = new Map<number, string>();
+  private keys: number[] = [];
+  private virtualNodes = 150;
+
+  addNode(node: string): void {
+    for (let v = 0; v < this.virtualNodes; v++) {
+      const h = this.hash(`${node}:${v}`);
+      if (!this.ring.has(h)) this.ring.set(h, node);
+    }
+    this.keys = [...this.ring.keys()].sort((a, b) => a - b);
+  }
+
+  getNode(key: string): string {
+    const h = this.hash(key);
+    let i = this.keys.findIndex(k => k >= h);
+    if (i === -1) i = 0;
+    return this.ring.get(this.keys[i])!;
+  }
+
+  private hash(s: string): number {
+    let h = 0;
+    for (let i = 0; i < s.length; i++) { h = (h << 5) - h + s.charCodeAt(i); h |= 0; }
+    return h >>> 0;
+  }
+}
+
+class DesignTradeoffAnalyzer {
+  private prosCons = new Map<string, { pros: string[]; cons: string[] }>();
+  addOption(name: string, pros: string[], cons: string[]): void { this.prosCons.set(name, { pros, cons }); }
+  compare(...options: string[]): { option: string; score: number; pros: string[]; cons: string[] }[] {
+    return options.map(o => {
+      const entry = this.prosCons.get(o) ?? { pros: [], cons: [] };
+      return { option: o, score: entry.pros.length - entry.cons.length, pros: entry.pros, cons: entry.cons };
+    }).sort((a, b) => b.score - a.score);
+  }
+}
+
+class MockInterviewScorer {
+  private scores = new Map<string, number[]>();
+  scoreCriterion(criterion: string, score: number): void {
+    if (!this.scores.has(criterion)) this.scores.set(criterion, []);
+    this.scores.get(criterion)!.push(score);
+  }
+  getTotal(): number {
+    return [...this.scores.values()].reduce((s, v) => s + v[v.length - 1], 0);
+  }
+  isReady(): boolean { return this.getTotal() >= 7; }
+}
+```
+
 ### Resources for Further Study
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.

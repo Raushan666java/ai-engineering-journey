@@ -637,6 +637,183 @@ class SPI_ADC {
 4. **Flash for the fastest conversions** — 4–8 bit, multi-GSPS; used in oscilloscopes and communication receivers
 5. **Anti-alias filtering is mandatory** — without it, out-of-band signals alias into the passband and cannot be removed digitally
 
+## TypeScript Implementations
+
+```typescript
+// === Binary-Weighted DAC ===
+class BinaryWeightedDAC {
+    constructor(private bits: number, private vRef: number) {}
+    convert(digital: number): number {
+        let vOut = 0;
+        for (let i = 0; i < this.bits; i++) {
+            const bit = (digital >> i) & 1;
+            vOut += bit * (this.vRef / Math.pow(2, this.bits - i));
+        }
+        return vOut;
+    }
+}
+
+// === R-2R Ladder DAC ===
+class R2RDAC {
+    constructor(private bits: number, private vRef: number) {}
+    convert(digital: number): number {
+        let vOut = 0;
+        for (let i = 0; i < this.bits; i++) {
+            const bit = (digital >> (this.bits - 1 - i)) & 1;
+            vOut += bit * (this.vRef / Math.pow(2, i + 1));
+        }
+        return vOut;
+    }
+}
+
+// === Flash ADC (3-bit) ===
+class FlashADC {
+    private comparators: number[];
+    constructor(bits: number, private vRef: number) {
+        const levels = (1 << bits);
+        this.comparators = Array.from({ length: levels - 1 }, (_, i) => (this.vRef / levels) * (i + 1));
+    }
+    convert(vIn: number): number {
+        let code = 0;
+        for (let i = this.comparators.length - 1; i >= 0; i--) {
+            if (vIn >= this.comparators[i]) { code = i + 1; break; }
+        }
+        return code;
+    }
+}
+
+// === SAR ADC (8-bit) ===
+class SARADC {
+    private dac: BinaryWeightedDAC;
+    constructor(bits: number, private vRef: number) { this.dac = new BinaryWeightedDAC(bits, vRef); }
+    convert(vIn: number): number {
+        let result = 0;
+        for (let i = 7; i >= 0; i--) {
+            const trial = result | (1 << i);
+            const vDac = this.dac.convert(trial);
+            if (vDac <= vIn) result = trial;
+        }
+        return result;
+    }
+    conversionSteps(vIn: number): { step: number; trial: number; dacOut: number; decision: string }[] {
+        const steps: { step: number; trial: number; dacOut: number; decision: string }[] = [];
+        let result = 0;
+        for (let i = 7; i >= 0; i--) {
+            const trial = result | (1 << i);
+            const vDac = this.dac.convert(trial);
+            const keep = vDac <= vIn;
+            steps.push({ step: 7 - i, trial, dacOut: vDac, decision: keep ? 'keep' : 'skip' });
+            if (keep) result = trial;
+        }
+        return steps;
+    }
+}
+
+// === Sample-and-Hold ===
+class SampleAndHold {
+    private held = 0;
+    private lastClk = 0;
+    sample(input: number, clk: number): number {
+        if (clk === 1 && this.lastClk === 0) this.held = input;
+        this.lastClk = clk;
+        return this.held;
+    }
+}
+
+// === Quantizer ===
+class Quantizer {
+    constructor(private bits: number, private vRef: number) {}
+    quantize(vIn: number): { code: number; error: number; vQuantized: number } {
+        const levels = 1 << this.bits;
+        const step = this.vRef / levels;
+        const code = Math.round(vIn / step);
+        const clamped = Math.max(0, Math.min(levels - 1, code));
+        const vQuantized = clamped * step;
+        return { code: clamped, error: vIn - vQuantized, vQuantized };
+    }
+}
+
+// === Sigma-Delta Modulator (1st order) ===
+class SigmaDeltaModulator {
+    private integrator = 0;
+    constructor(private bits: number) {}
+    modulate(input: number, steps: number): number[] {
+        const output: number[] = [];
+        for (let i = 0; i < steps; i++) {
+            this.integrator += input;
+            const bit = this.integrator >= 0.5 ? 1 : 0;
+            this.integrator -= bit * 0.5;
+            output.push(bit);
+        }
+        return output;
+    }
+    demodulate(bits: number[]): number {
+        return bits.reduce((s, b) => s + b, 0) / bits.length;
+    }
+}
+
+// === Pipeline ADC (2-stage) ===
+class PipelineADC {
+    constructor(private stage1Bits: number, private stage2Bits: number, private vRef: number) {}
+    convert(vIn: number): number {
+        const flash1 = new FlashADC(this.stage1Bits, this.vRef);
+        const code1 = flash1.convert(vIn);
+        const vDac = (code1 / (1 << this.stage1Bits)) * this.vRef;
+        const residue = (vIn - vDac) * (1 << this.stage1Bits);
+        const flash2 = new FlashADC(this.stage2Bits, this.vRef);
+        const code2 = flash2.convert(Math.max(0, Math.min(this.vRef, residue)));
+        return (code1 << this.stage2Bits) | (code2 & ((1 << this.stage2Bits) - 1));
+    }
+}
+
+// === SNR / ENOB Calculator ===
+class ADCMetrics {
+    static snr(bits: number): number { return 6.02 * bits + 1.76; }
+    static enob(snrDb: number): number { return (snrDb - 1.76) / 6.02; }
+    static dynamicRange(maxSignal: number, minSignal: number): number {
+        return 20 * Math.log10(maxSignal / minSignal);
+    }
+    static jitterSNR(fSig: number, jitterRms: number): number {
+        return 20 * Math.log10(1 / (2 * Math.PI * fSig * jitterRms));
+    }
+}
+
+// === PWM DAC ===
+class PWMDAC {
+    constructor(private resolution: number, private pwmFreq: number, private rcTau: number) {}
+    convert(digital: number): number {
+        const duty = digital / ((1 << this.resolution) - 1);
+        const vAvg = duty * 3.3;
+        const ripple = vAvg * Math.exp(-1 / (this.pwmFreq * this.rcTau));
+        return vAvg - ripple;
+    }
+    rcCutoff(desiredAccuracy: number): number {
+        const steps = 1 << this.resolution;
+        return this.pwmFreq / (2 * Math.PI * Math.sqrt(Math.pow(1 / (1 - desiredAccuracy), 2) - 1));
+    }
+}
+
+// === Demo ===
+const dac = new BinaryWeightedDAC(8, 5);
+console.log(`8-bit DAC digital=128: ${dac.convert(128).toFixed(3)}V`);
+
+const sar = new SARADC(8, 5);
+console.log(`SAR ADC vIn=2.5V: ${sar.convert(2.5)}`);
+console.log('SAR conversion steps:');
+sar.conversionSteps(2.5).forEach(s => console.log(`  Step ${s.step}: trial=0x${s.trial.toString(16)}, dacOut=${s.dacOut.toFixed(3)}V, ${s.decision}`));
+
+const quant = new Quantizer(8, 5);
+console.log(`\nQuantize 1.23V: code=${quant.quantize(1.23).code}, error=${quant.quantize(1.23).error.toFixed(3)}`);
+
+const sd = new SigmaDeltaModulator(1);
+const bits = sd.modulate(0.3, 100);
+console.log(`Sigma-Delta demod 0.3: ${sd.demodulate(bits).toFixed(3)}`);
+
+console.log(`\n12-bit ideal SNR: ${ADCMetrics.snr(12).toFixed(1)} dB`);
+console.log(`ENOB from 65dB SNR: ${ADCMetrics.enob(65).toFixed(2)} bits`);
+console.log(`Jitter SNR @10MHz/1ps: ${ADCMetrics.jitterSNR(10e6, 1e-12).toFixed(1)} dB`);
+```
+
 ## Summary
 
 Data converters bridge the analog and digital worlds. This chapter covered the major DAC architectures (binary-weighted, R-2R, sigma-delta) and ADC architectures (flash, SAR, pipelined, sigma-delta) with their speed-resolution trade-offs. Sampling theory, quantisation noise, and performance metrics (SNR, ENOB, SFDR, FoM) provide the analytical framework for selecting and evaluating converters. The next chapter addresses timing analysis — the critical discipline for ensuring that digital systems meet their performance targets.

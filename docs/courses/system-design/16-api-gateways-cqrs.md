@@ -626,6 +626,101 @@ class OrderProjection:
 
 ---
 
+### TypeScript: API Gateway, Rate Limiter, CQRS, and Event Store
+
+```typescript
+class TokenBucketRateLimiter {
+  private buckets = new Map<string, { tokens: number; lastRefill: number }>();
+  constructor(private capacity: number, private refillRate: number, private refillIntervalMs: number) {}
+
+  allow(key: string, cost = 1): boolean {
+    const now = Date.now();
+    let b = this.buckets.get(key);
+    if (!b) { b = { tokens: this.capacity, lastRefill: now }; this.buckets.set(key, b); }
+    const elapsed = now - b.lastRefill;
+    const refill = Math.floor(elapsed / this.refillIntervalMs) * this.refillRate;
+    b.tokens = Math.min(this.capacity, b.tokens + refill);
+    b.lastRefill = now;
+    if (b.tokens < cost) return false;
+    b.tokens -= cost;
+    return true;
+  }
+}
+
+class SlidingWindowRateLimiter {
+  private windows = new Map<string, number[]>();
+  constructor(private limit: number, private windowMs: number) {}
+
+  allow(key: string): boolean {
+    const now = Date.now();
+    let timestamps = this.windows.get(key) ?? [];
+    timestamps = timestamps.filter(t => now - t < this.windowMs);
+    if (timestamps.length >= this.limit) return false;
+    timestamps.push(now);
+    this.windows.set(key, timestamps);
+    return true;
+  }
+}
+
+class ApiGatewayAggregator {
+  async aggregate<T>(calls: { service: string; fetch: () => Promise<T> }[]): Promise<Map<string, T>> {
+    const results = await Promise.allSettled(calls.map(c => c.fetch()));
+    const map = new Map<string, T>();
+    for (let i = 0; i < calls.length; i++) {
+      const r = results[i];
+      if (r.status === "fulfilled") map.set(calls[i].service, r.value);
+    }
+    return map;
+  }
+}
+
+class CommandBus {
+  private handlers = new Map<string, (cmd: any) => Promise<void>>();
+  register(commandType: string, handler: (cmd: any) => Promise<void>): void {
+    this.handlers.set(commandType, handler);
+  }
+  async dispatch(command: { type: string; payload: any }): Promise<void> {
+    const handler = this.handlers.get(command.type);
+    if (!handler) throw new Error(`No handler for ${command.type}`);
+    await handler(command.payload);
+  }
+}
+
+class EventStore {
+  private events: { streamId: string; eventType: string; data: any; version: number; timestamp: number }[] = [];
+  private snapshots = new Map<string, { version: number; state: any }>();
+  append(streamId: string, eventType: string, data: any): void {
+    const version = this.events.filter(e => e.streamId === streamId).length + 1;
+    this.events.push({ streamId, eventType, data, version, timestamp: Date.now() });
+  }
+  readStream(streamId: string): any[] { return this.events.filter(e => e.streamId === streamId); }
+  replay(streamId: string, apply: (state: any, event: any) => any, initialState: any): any {
+    let state = initialState;
+    const snapshot = this.snapshots.get(streamId);
+    if (snapshot) {
+      state = snapshot.state;
+      for (const e of this.events.filter(e => e.streamId === streamId && e.version > snapshot.version)) {
+        state = apply(state, e);
+      }
+    } else { for (const e of this.readStream(streamId)) state = apply(state, e); }
+    return state;
+  }
+  snapshot(streamId: string, state: any, version: number): void {
+    this.snapshots.set(streamId, { version, state });
+  }
+}
+
+class ProjectionBuilder {
+  private projections = new Map<string, (state: any, event: any) => any>();
+  register(name: string, handler: (state: any, event: any) => any): void { this.projections.set(name, handler); }
+  build(name: string, events: any[], initialState: any): any {
+    const handler = this.projections.get(name);
+    if (!handler) throw new Error(`Projection ${name} not found`);
+    return events.reduce((state, event) => handler(state, event), initialState);
+  }
+}
+```
+
 ## Summary
 
 - API gateways handle routing, auth, rate limiting, aggregation, circuit breaking, and protocol translation â€” distinct from load balancers which only distribute traffic

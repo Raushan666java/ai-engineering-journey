@@ -645,6 +645,135 @@ console.log("isNumber:", TypeGuardGenerator.isNumber(42));
 console.log("Pick:", UtilityTypeBuilder.pick({ a: 1, b: 2, c: 3 }, "a", "c"));
 ```
 
+## TypeScript Implementation: Type Mapper, Interface-to-Class Transformer, Generic Constraint Checker
+
+```typescript
+class TypeScriptTypeMapper {
+    static mapJSToTS(type: string): string {
+        const map: Record<string, string> = {
+            "number": "number", "string": "string", "boolean": "boolean",
+            "undefined": "undefined", "null": "null", "object": "Record<string, any>",
+            "function": "Function", "symbol": "symbol", "bigint": "bigint",
+            "array": "any[]", "promise": "Promise<any>", "date": "Date",
+            "map": "Map<any, any>", "set": "Set<any>", "regexp": "RegExp",
+            "error": "Error", "buffer": "Buffer",
+        };
+        return map[type.toLowerCase()] || "unknown";
+    }
+
+    static inferFromValue(value: any): string {
+        if (value === null) return "null";
+        if (value === undefined) return "undefined";
+        if (Array.isArray(value)) {
+            if (value.length === 0) return "unknown[]";
+            const elementTypes = [...new Set(value.map(v => this.inferFromValue(v)))];
+            return elementTypes.length === 1 ? `${elementTypes[0]}[]` : `(${elementTypes.join(" | ")})[]`;
+        }
+        if (typeof value === "object") {
+            const keys = Object.keys(value);
+            if (keys.length === 0) return "Record<string, unknown>";
+            const props = keys.map(k => `${k}: ${this.inferFromValue(value[k])}`).join("; ");
+            return `{ ${props} }`;
+        }
+        return this.mapJSToTS(typeof value);
+    }
+
+    static generateInterface(name: string, obj: Record<string, any>): string {
+        const props = Object.entries(obj).map(([key, value]) => {
+            const tsType = this.inferFromValue(value);
+            const optional = value === null || value === undefined ? "?" : "";
+            return `  ${key}${optional}: ${tsType};`;
+        });
+        return `interface ${name} {\n${props.join("\n")}\n}`;
+    }
+}
+
+class InterfaceToClassTransformer {
+    static transform(interfaceCode: string, className?: string): string {
+        const nameMatch = interfaceCode.match(/interface\s+(\w+)/);
+        if (!nameMatch) return interfaceCode;
+        const name = className || nameMatch[1];
+
+        const props: { name: string; type: string; optional: boolean }[] = [];
+        const propPattern = /^\s+(\w+)(\??):\s*([^;]+);/gm;
+        let match;
+        while ((match = propPattern.exec(interfaceCode)) !== null) {
+            props.push({ name: match[1], optional: match[2] === "?", type: match[3].trim() });
+        }
+
+        const fields = props.map(p => `  private _${p.name}${p.optional ? "?" : ""}: ${p.type};`).join("\n");
+        const constructor = `  constructor(data: ${name}) {\n    ${props.map(p => `this._${p.name} = data.${p.name};`).join("\n    ")}\n  }`;
+        const getters = props.map(p =>
+            `  get ${p.name}(): ${p.type} { return this._${p.name}; }` +
+            (p.optional ? "" : `\n  set ${p.name}(value: ${p.type}) { this._${p.name} = value; }`)
+        ).join("\n\n");
+
+        return `class ${name} {\n${fields}\n\n${constructor}\n\n${getters}\n}`;
+    }
+}
+
+class GenericConstraintChecker {
+    static validate<T extends Record<string, any>>(obj: T, constraint: { keys?: string[]; types?: Record<string, string> }): { valid: boolean; errors: string[] } {
+        const errors: string[] = [];
+
+        if (constraint.keys) {
+            for (const key of constraint.keys) {
+                if (!(key in obj)) errors.push(`Missing required key: "${key}"`);
+            }
+        }
+
+        if (constraint.types) {
+            for (const [key, expectedType] of Object.entries(constraint.types)) {
+                if (key in obj) {
+                    const actual = typeof obj[key];
+                    if (actual !== expectedType) {
+                        errors.push(`Key "${key}" expected ${expectedType}, got ${actual}`);
+                    }
+                }
+            }
+        }
+
+        return { valid: errors.length === 0, errors };
+    }
+
+    static ensureExtends<T, U extends T>(): string { return "Constraint satisfied at compile time"; }
+}
+
+class UtilityTypeBuilder {
+    static pick<T extends Record<string, any>, K extends keyof T>(obj: T, ...keys: K[]): Pick<T, K> {
+        const result = {} as Pick<T, K>;
+        for (const key of keys) result[key] = obj[key];
+        return result;
+    }
+
+    static omit<T extends Record<string, any>, K extends keyof T>(obj: T, ...keys: K[]): Omit<T, K> {
+        const result = { ...obj };
+        for (const key of keys) delete result[key];
+        return result;
+    }
+
+    static partial<T extends Record<string, any>>(obj: T): Partial<T> {
+        return { ...obj };
+    }
+
+    static readonly<T extends Record<string, any>>(obj: T): Readonly<T> {
+        return Object.freeze({ ...obj });
+    }
+
+    static record<K extends string | number | symbol, V>(keys: K[], value: V): Record<K, V> {
+        return keys.reduce((acc, k) => ({ ...acc, [k]: value }), {} as Record<K, V>);
+    }
+}
+
+// Demo
+const userObj = { id: 1, name: "Alice", email: "alice@example.com", roles: ["admin"], metadata: { lastLogin: "2026-01-01" } };
+console.log(TypeScriptTypeMapper.generateInterface("User", userObj));
+const interfaceCode = "interface Person { name: string; age: number; email?: string; }";
+console.log("Class:\n", InterfaceToClassTransformer.transform(interfaceCode, "Person"));
+console.log("Pick:", JSON.stringify(UtilityTypeBuilder.pick(userObj, "id", "name")));
+console.log("Constraint:", JSON.stringify(GenericConstraintChecker.validate(userObj, { keys: ["id", "name", "email"], types: { id: "number", name: "string" } })));
+```
+
 ## Summary
 
 TypeScript adds static type checking to JavaScript, catching errors at compile time. Generics enable reusable, type-safe components. Utility types transform existing types. Type narrowing and discriminated unions make code safer. TypeScript integrates seamlessly with React and Express for end-to-end type safety.

@@ -619,6 +619,114 @@ estimate.recommendations.forEach(r => console.log(r));
 
 ---
 
+### Multi-Cloud Cost Comparator
+
+Choosing the optimal cloud provider for each workload requires detailed cost comparison. The following tool estimates and compares costs across providers for a given workload profile.
+
+```typescript
+// cloud-cost-comparator.ts
+// Compare costs across cloud providers for given workload profiles
+
+interface WorkloadProfile {
+  vCPUs: number;
+  memoryGB: number;
+  storageGB: number;
+  storageType: 'ssd' | 'hdd' | 'object';
+  networkEgressGB: number;
+  hoursPerMonth: number;
+  databaseType: 'managed-sql' | 'managed-nosql' | 'self-hosted';
+  dbStorageGB: number;
+}
+
+interface ProviderPricing {
+  computeHourly: number;
+  storageGBMonthly: number;
+  networkEgressPerGB: number;
+  managedDbHourly: number;
+  managedDbStorageGBMonthly: number;
+  discountReserved1yr: number;
+  discountReserved3yr: number;
+  discountSpot: number;
+}
+
+interface CostBreakdown {
+  provider: string;
+  compute: number;
+  storage: number;
+  network: number;
+  database: number;
+  totalMonthly: number;
+  savingsWithReserved1yr: number;
+  savingsWithSpot: number;
+  recommendation: string;
+}
+
+class CloudCostComparator {
+  private pricing: Record<string, ProviderPricing> = {
+    aws: { computeHourly: 0.0864, storageGBMonthly: 0.023, networkEgressPerGB: 0.09, managedDbHourly: 0.17, managedDbStorageGBMonthly: 0.115, discountReserved1yr: 0.4, discountReserved3yr: 0.6, discountSpot: 0.7 },
+    azure: { computeHourly: 0.0792, storageGBMonthly: 0.0208, networkEgressPerGB: 0.087, managedDbHourly: 0.156, managedDbStorageGBMonthly: 0.108, discountReserved1yr: 0.38, discountReserved3yr: 0.58, discountSpot: 0.65 },
+    gcp: { computeHourly: 0.0768, storageGBMonthly: 0.02, networkEgressPerGB: 0.12, managedDbHourly: 0.15, managedDbStorageGBMonthly: 0.10, discountReserved1yr: 0.35, discountReserved3yr: 0.55, discountSpot: 0.6 },
+  };
+
+  compare(workload: WorkloadProfile): CostBreakdown[] {
+    return Object.entries(this.pricing).map(([provider, p]) => {
+      const compute = workload.vCPUs * p.computeHourly * workload.hoursPerMonth;
+      const storage = workload.storageGB * p.storageGBMonthly;
+      const network = workload.networkEgressGB * p.networkEgressPerGB;
+      const database = workload.databaseType.startsWith('managed')
+        ? (p.managedDbHourly * workload.hoursPerMonth) + (workload.dbStorageGB * p.managedDbStorageGBMonthly)
+        : 0;
+      const totalMonthly = compute + storage + network + database;
+
+      const recommended = this.getRecommendation(workload, provider, totalMonthly);
+
+      return {
+        provider, compute: Math.round(compute * 100) / 100,
+        storage: Math.round(storage * 100) / 100,
+        network: Math.round(network * 100) / 100,
+        database: Math.round(database * 100) / 100,
+        totalMonthly: Math.round(totalMonthly * 100) / 100,
+        savingsWithReserved1yr: Math.round(totalMonthly * p.discountReserved1yr * 100) / 100,
+        savingsWithSpot: Math.round(totalMonthly * p.discountSpot * 100) / 100,
+        recommendation: recommended,
+      };
+    }).sort((a, b) => a.totalMonthly - b.totalMonthly);
+  }
+
+  generateReport(workload: WorkloadProfile): string {
+    const breakdowns = this.compare(workload);
+    const lines = [
+      `# Multi-Cloud Cost Comparison`,
+      `Workload: ${workload.vCPUs} vCPU, ${workload.memoryGB}GB RAM, ${workload.storageGB}GB storage`,
+      '',
+      '| Provider | Compute | Storage | Network | Database | Total/Month | 1yr Reserved | Spot |',
+      '|----------|---------|---------|---------|----------|-------------|--------------|------|',
+    ];
+    for (const b of breakdowns) {
+      lines.push(`| ${b.provider} | $${b.compute} | $${b.storage} | $${b.network} | $${b.database} | **$${b.totalMonthly}** | $${b.savingsWithReserved1yr} | $${b.savingsWithSpot} |`);
+    }
+    lines.push('', '**Recommendations:**');
+    for (const b of breakdowns) lines.push(`- ${b.provider}: ${b.recommendation}`);
+    return lines.join('\n');
+  }
+
+  private getRecommendation(workload: WorkloadProfile, provider: string, cost: number): string {
+    if (workload.networkEgressGB > 1000) return 'High egress cost risk — consider CDN or multi-region';
+    if (workload.databaseType === 'managed-sql') return 'Good fit for managed SQL workloads';
+    if (workload.storageType === 'object' && workload.storageGB > 10000) return 'Object storage cost-effective at scale';
+    return `$${cost.toFixed(0)}/mo — ${cost < 500 ? 'cost-effective' : 'consider reserved instances'}`;
+  }
+}
+
+const comparator = new CloudCostComparator();
+const workload: WorkloadProfile = { vCPUs: 4, memoryGB: 16, storageGB: 500, storageType: 'ssd', networkEgressGB: 500, hoursPerMonth: 730, databaseType: 'managed-sql', dbStorageGB: 100 };
+console.log(comparator.generateReport(workload));
+```
+
+**What this demonstrates:** Automated multi-cloud cost comparison enables data-driven provider selection and identifies savings opportunities through reserved instances and spot pricing.
+
+---
+
 ## Summary
 
 Each major cloud provider offers comprehensive compute, storage, networking, and identity services. AWS provides the broadest service catalog. Azure excels in enterprise integration and Microsoft ecosystem. GCP leads in data analytics, ML, and container-native services. Multi-cloud and hybrid cloud strategies address specific business needs but add operational complexity. Cloud governance ensures security, compliance, and cost control. FinOps practices optimize cloud costs through right-sizing, reservation models, spot instances, and budget governance. Auto-scaling ensures cost-efficient capacity management for variable workloads.

@@ -594,6 +594,191 @@ console.log(`Slack: ${sdc.applyToPath(8.5, 'reg-to-reg').toFixed(2)} ns`); // 1.
 4. **OCV margin increases at smaller nodes** — 28 nm and below require significant derating factors
 5. **STA is exhaustive but not complete** — it covers static paths but misses dynamic effects like crosstalk and EMI
 
+## TypeScript Implementations
+
+```typescript
+// === Static Timing Analysis Engine ===
+interface CellDelay { cell: string; rising: number; falling: number; }
+interface NetlistPath { from: string; to: string; cells: CellDelay[]; clkPeriod: number; setup: number; hold: number; }
+
+class STAEngine {
+    analyze(path: NetlistPath): { setupSlack: number; holdSlack: number; criticalPath: string } {
+        let dataDelay = 0;
+        let minDelay = Infinity;
+        for (const cell of path.cells) {
+            dataDelay += Math.max(cell.rising, cell.falling);
+            minDelay = Math.min(minDelay, Math.min(cell.rising, cell.falling));
+        }
+        const setupSlack = path.clkPeriod - dataDelay - path.setup;
+        const holdSlack = minDelay - path.hold;
+        return { setupSlack, holdSlack, criticalPath: `${path.from} -> ${path.to}` };
+    }
+}
+
+// === Clock Skew Analysis ===
+class ClockSkew {
+    private delays = new Map<string, number>();
+
+    setDelay(ff: string, delay: number): void { this.delays.set(ff, delay); }
+    skew(ff1: string, ff2: string): number {
+        return Math.abs((this.delays.get(ff1) ?? 0) - (this.delays.get(ff2) ?? 0));
+    }
+    analyzePath(launchFF: string, captureFF: string, logicDelay: number, tClk: number, tSetup: number): { setupSlack: number; holdSlack: number } {
+        const sk = this.skew(launchFF, captureFF);
+        const launchDelay = this.delays.get(launchFF) ?? 0;
+        const captureDelay = this.delays.get(captureFF) ?? 0;
+        const setupSlack = tClk + (captureDelay - launchDelay) - logicDelay - tSetup;
+        const holdSlack = logicDelay + launchDelay - captureDelay;
+        return { setupSlack, holdSlack };
+    }
+}
+
+// === H-Tree Clock Distribution ===
+class HTree {
+    constructor(private chipSizeMm: number, private wireDelayPerMm: number) {}
+    wireLength(level: number): number {
+        const segments = Math.pow(2, level);
+        const segLen = this.chipSizeMm / segments;
+        return (Math.pow(2, level + 1) - 1) * segLen;
+    }
+    worstSkew(variation: number): number {
+        return this.wireLength(3) * this.wireDelayPerMm * variation;
+    }
+}
+
+// === OCV Derating ===
+class OCV {
+    constructor(private proc: number, private volt: number, private temp: number) {}
+    setupDerate(): number { return 1 + this.proc + this.volt + this.temp; }
+    holdDerate(): number { return 1 - this.proc - this.volt - this.temp; }
+    applySetup(pathDelay: number): number { return pathDelay * this.setupDerate(); }
+    applyHold(pathDelay: number): number { return pathDelay * this.holdDerate(); }
+}
+
+// === Crosstalk Delay Calculator ===
+class Crosstalk {
+    constructor(private couplingFF: number, private aggCount: number, private wireLenMm: number) {}
+    victimDelay(aggSwitching: number): number {
+        const cEff = this.couplingFF * this.wireLenMm * (1 + aggSwitching);
+        return cEff * 100; // ps
+    }
+    shieldBenefit(shields: number): number {
+        const wiresPerShield = Math.max(1, this.aggCount / (shields + 1));
+        return wiresPerShield / this.aggCount;
+    }
+}
+
+// === Multi-Corner Analysis ===
+type Corner = 'ss' | 'tt' | 'ff';
+class MultiCorner {
+    private corners: Record<Corner, { proc: number; volt: number; temp: number; vdd: number }> = {
+        ss: { proc: 0.12, volt: 0.05, temp: 0.03, vdd: 0.9 },
+        tt: { proc: 0.0, volt: 0.0, temp: 0.0, vdd: 1.0 },
+        ff: { proc: -0.08, volt: -0.05, temp: -0.03, vdd: 1.1 },
+    };
+    analyze(corner: Corner, logicDelay: number, tClk: number): { fMax: number; slack: number } {
+        const c = this.corners[corner];
+        const delay = logicDelay * (1 + c.proc + c.volt + c.temp) / (c.vdd);
+        const slack = tClk - delay;
+        return { fMax: 1 / (tClk - slack) / 1e6, slack };
+    }
+}
+
+// === Power Grid IR Drop ===
+class IRDrop {
+    constructor(private gridPitchUm: number, private metalRsheet: number) {}
+    drop(currentA: number, segLen: number): number {
+        const r = this.metalRsheet * (segLen / this.gridPitchUm);
+        return currentA * r;
+    }
+    dynamicDrop(switchingFlops: number, flopCurrent: number, width: number, height: number): number[][] {
+        const grid: number[][] = [];
+        for (let y = 0; y < height; y++) {
+            grid[y] = [];
+            for (let x = 0; x < width; x++) {
+                const localCurrent = switchingFlops * flopCurrent / (width * height);
+                const dist = Math.sqrt(Math.pow(x - width / 2, 2) + Math.pow(y - height / 2, 2));
+                grid[y][x] = this.drop(localCurrent, dist * this.gridPitchUm);
+            }
+        }
+        return grid;
+    }
+}
+
+// === Retiming ===
+class Retimer {
+    retime(stageDelays: number[]): { newDelays: number[]; fMax: number } {
+        const total = stageDelays.reduce((a, b) => a + b, 0);
+        const balanced = total / stageDelays.length;
+        const newDelays = stageDelays.map(() => balanced);
+        return { newDelays, fMax: 1 / balanced };
+    }
+}
+
+// === Adaptive Clocking (Timing Margin Monitor) ===
+class AdaptiveClock {
+    private freq = 100e6;
+    private margin = 0;
+    constructor(private replicaDelay: number, private threshold: number) {}
+    measure(temperature: number): number {
+        const actualDelay = this.replicaDelay * (1 + 0.001 * (temperature - 25));
+        this.margin = this.threshold - actualDelay;
+        if (this.margin < 0) this.freq *= 0.95;
+        else if (this.margin > 0.1 * this.threshold) this.freq *= 1.02;
+        return this.freq;
+    }
+}
+
+// === Statistical STA (Monte Carlo) ===
+class StatisticalSTA {
+    constructor(private mean: number, private sigma: number, private tClk: number) {}
+    probabilityFailure(samples: number): number {
+        let fails = 0;
+        for (let i = 0; i < samples; i++) {
+            const delay = this.mean + this.sigma * this.boxMuller();
+            if (delay > this.tClk) fails++;
+        }
+        return fails / samples;
+    }
+    private boxMuller(): number {
+        const u1 = Math.random(), u2 = Math.random();
+        return Math.sqrt(-2 * Math.log(u1)) * Math.cos(2 * Math.PI * u2);
+    }
+}
+
+// === Demo ===
+const sta = new STAEngine();
+const result = sta.analyze({
+    from: 'FF1', to: 'FF2',
+    cells: [{ cell: 'AND2', rising: 0.5, falling: 0.5 }, { cell: 'OR2', rising: 0.4, falling: 0.4 }],
+    clkPeriod: 10, setup: 0.3, hold: 0.2,
+});
+console.log(`STA: setup=${result.setupSlack.toFixed(2)}ns, hold=${result.holdSlack.toFixed(2)}ns`);
+
+const cs = new ClockSkew();
+cs.setDelay('FF1', 0.5); cs.setDelay('FF2', 0.8);
+console.log(`Clock skew FF1->FF2: ${cs.skew('FF1', 'FF2').toFixed(2)}ns`);
+
+const ocv = new OCV(0.12, 0.05, 0.03);
+console.log(`OCV setup derate: ${(ocv.setupDerate() * 100).toFixed(0)}%`);
+
+const xtalk = new Crosstalk(0.5, 4, 10);
+console.log(`Crosstalk victim delay (4 agg): ${xtalk.victimDelay(4).toFixed(1)}ps`);
+
+const mc = new MultiCorner();
+console.log(`SS corner fMax: ${mc.analyze('ss', 8, 10).fMax.toFixed(0)} MHz`);
+
+const retimer = new Retimer();
+const rt = retimer.retime([4, 8, 6, 9, 3]);
+console.log(`Retimed fMax: ${rt.fMax.toFixed(3)} GHz`);
+
+const ssta = new StatisticalSTA(8.5, 0.5, 10);
+console.log(`SSTA fail probability: ${(ssta.probabilityFailure(10000) * 100).toFixed(2)}%`);
+
+const ad = new AdaptiveClock(8, 8.5);
+console.log(`Adaptive clock @85C: ${(ad.measure(85) / 1e6).toFixed(0)} MHz`);
+```
+
 ## Summary
 
 Timing analysis is the gatekeeper between digital design and silicon reality. This chapter covered the fundamentals of static timing analysis, including setup and hold checks, clock distribution, skew and jitter, on-chip variation, and signal integrity effects like crosstalk and IR drop. Timing violations are addressed through pipelining, retiming, cell sizing, and clock tuning. SDC constraints guide synthesis tools toward timing closure. The next chapter explores advanced topics including low-power design, testing, and emerging technologies.

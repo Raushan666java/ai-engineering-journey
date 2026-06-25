@@ -760,6 +760,125 @@ graph LR
 
 ---
 
+## TypeScript Implementation: Full Neural Network with Backpropagation
+
+```typescript
+type ActivationFn = (x: number) => number;
+type ActivationDeriv = (x: number) => number;
+
+class Activation {
+    static relu: ActivationFn = x => Math.max(0, x);
+    static reluDeriv: ActivationDeriv = x => x > 0 ? 1 : 0;
+
+    static sigmoid: ActivationFn = x => 1 / (1 + Math.exp(-x));
+    static sigmoidDeriv: ActivationDeriv = x => {
+        const s = Activation.sigmoid(x);
+        return s * (1 - s);
+    };
+
+    static tanh: ActivationFn = x => Math.tanh(x);
+    static tanhDeriv: ActivationDeriv = x => 1 - Math.tanh(x) ** 2;
+
+    static softmax(logits: number[]): number[] {
+        const max = Math.max(...logits);
+        const exps = logits.map(l => Math.exp(l - max));
+        const sum = exps.reduce((a, b) => a + b, 0);
+        return exps.map(e => e / sum);
+    }
+}
+
+class Layer {
+    weights: number[][];
+    bias: number[];
+    activation: ActivationFn;
+    activationDeriv: ActivationDeriv;
+    input: number[] = [];
+    output: number[] = [];
+    z: number[] = [];
+
+    constructor(inputSize: number, outputSize: number, act: ActivationFn, deriv: ActivationDeriv) {
+        this.weights = Array.from({ length: outputSize }, () =>
+            Array.from({ length: inputSize }, () => Math.random() * 2 - 1)
+        );
+        this.bias = new Array(outputSize).fill(0);
+        this.activation = act;
+        this.activationDeriv = deriv;
+    }
+
+    forward(input: number[]): number[] {
+        this.input = input;
+        this.z = this.weights.map((w, i) =>
+            w.reduce((s, v, j) => s + v * input[j], this.bias[i])
+        );
+        this.output = this.z.map(z => this.activation(z));
+        return this.output;
+    }
+
+    backward(gradOutput: number[], lr: number): number[] {
+        const gradZ = gradOutput.map((g, i) => g * this.activationDeriv(this.z[i]));
+        const gradInput = this.weights[0].map((_, j) =>
+            gradZ.reduce((s, g, i) => s + g * this.weights[i][j], 0)
+        );
+        for (let i = 0; i < this.weights.length; i++) {
+            for (let j = 0; j < this.weights[0].length; j++) {
+                this.weights[i][j] -= lr * gradZ[i] * this.input[j];
+            }
+            this.bias[i] -= lr * gradZ[i];
+        }
+        return gradInput;
+    }
+}
+
+class NeuralNetwork {
+    private layers: Layer[] = [];
+
+    addLayer(inputSize: number, outputSize: number, act: ActivationFn, deriv: ActivationDeriv): void {
+        this.layers.push(new Layer(inputSize, outputSize, act, deriv));
+    }
+
+    forward(input: number[]): number[] {
+        return this.layers.reduce((data, layer) => layer.forward(data), input);
+    }
+
+    train(inputs: number[][], targets: number[][], epochs: number, lr: number): void {
+        for (let ep = 0; ep < epochs; ep++) {
+            let totalLoss = 0;
+            for (let i = 0; i < inputs.length; i++) {
+                const output = this.forward(inputs[i]);
+                const lossGrad = output.map((o, j) => o - targets[i][j]);
+                totalLoss += lossGrad.reduce((s, g) => s + g * g, 0) / 2;
+
+                let grad = lossGrad;
+                for (let l = this.layers.length - 1; l >= 0; l--) {
+                    grad = this.layers[l].backward(grad, lr);
+                }
+            }
+            if (ep % 100 === 0) console.log(`Epoch ${ep}, Loss: ${(totalLoss / inputs.length).toFixed(4)}`);
+        }
+    }
+
+    predict(input: number[]): number[] {
+        return this.forward(input);
+    }
+}
+
+// Demo: XOR problem
+const nn = new NeuralNetwork();
+nn.addLayer(2, 4, Activation.relu, Activation.reluDeriv);
+nn.addLayer(4, 4, Activation.relu, Activation.reluDeriv);
+nn.addLayer(4, 1, Activation.sigmoid, Activation.sigmoidDeriv);
+
+const xorInputs = [[0, 0], [0, 1], [1, 0], [1, 1]];
+const xorTargets = [[0], [1], [1], [0]];
+
+nn.train(xorInputs, xorTargets, 2000, 0.5);
+console.log("XOR [0,0]:", nn.predict([0, 0]).map(v => v.toFixed(4)));
+console.log("XOR [0,1]:", nn.predict([0, 1]).map(v => v.toFixed(4)));
+console.log("XOR [1,0]:", nn.predict([1, 0]).map(v => v.toFixed(4)));
+console.log("XOR [1,1]:", nn.predict([1, 1]).map(v => v.toFixed(4)));
+console.log("Softmax test:", Activation.softmax([2.0, 1.0, 0.1]).map(v => v.toFixed(4)));
+```
+
 ## Summary
 
 - Neural networks are inspired by the biological structure of the brain.

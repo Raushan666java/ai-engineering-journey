@@ -509,6 +509,74 @@ flowchart TD
     R --> A[ETA Predictions]
 ```
 
+### TypeScript: Geospatial Index, Surge Pricing, Dispatch Matcher
+
+```typescript
+class S2CellId {
+  static readonly maxLevel = 30;
+  static fromLatLng(lat: number, lng: number, level: number): bigint {
+    const phi = (lat * Math.PI) / 180;
+    const theta = (lng * Math.PI) / 180;
+    const x = Math.cos(phi) * Math.cos(theta);
+    const y = Math.cos(phi) * Math.sin(theta);
+    const z = Math.sin(phi);
+    const face = 0; // simplified: always face 0
+    const u = x / Math.max(Math.abs(y), Math.abs(z));
+    const v = y / Math.max(Math.abs(x), Math.abs(z));
+    const uvToST = (uv: number) => 0.5 * (uv + 1);
+    const stToIJ = (s: number, level: number) => Math.min(Math.floor(s * (1 << level)), (1 << level) - 1);
+    const i = stToIJ(uvToST(u), level);
+    const j = stToIJ(uvToST(v), level);
+    return BigInt((face << (2 * level)) | (i << level) | j);
+  }
+}
+
+class SurgePricing {
+  private demandHistory = new Map<string, number[]>();
+  private readonly decayFactor = 0.7;
+
+  recordDemand(geofence: string, requestCount: number): void {
+    if (!this.demandHistory.has(geofence)) this.demandHistory.set(geofence, []);
+    this.demandHistory.get(geofence)!.push(requestCount);
+  }
+
+  getMultiplier(geofence: string, supply: number): number {
+    const demands = this.demandHistory.get(geofence) ?? [0];
+    const recentDemand = demands.slice(-10).reduce((a, b) => a + b, 0) / Math.min(demands.length, 10);
+    if (supply === 0) return 5.0;
+    const ratio = recentDemand / supply;
+    if (ratio <= 1) return 1.0;
+    return Math.min(5.0, 1.0 + (ratio - 1) * 0.5);
+  }
+}
+
+class DispatchOptimizer {
+  match(requests: { id: string; lat: number; lng: number }[], drivers: { id: string; lat: number; lng: number }[]): Map<string, string> {
+    const assignment = new Map<string, string>();
+    const used = new Set<string>();
+    for (const req of requests) {
+      let best: string | null = null;
+      let bestDist = Infinity;
+      for (const drv of drivers) {
+        if (used.has(drv.id)) continue;
+        const dist = Math.hypot(drv.lat - req.lat, drv.lng - req.lng);
+        if (dist < bestDist) { bestDist = dist; best = drv.id; }
+      }
+      if (best) { assignment.set(req.id, best); used.add(best); }
+    }
+    return assignment;
+  }
+}
+
+class ETAPredictor {
+  predict(distanceKm: number, trafficFactor: number): number {
+    const baseSpeed = 30;
+    const adjustedSpeed = baseSpeed * (1 - trafficFactor * 0.5);
+    return (distanceKm / adjustedSpeed) * 3600;
+  }
+}
+```
+
 ### TypeScript: Ride Matching
 
 ```typescript

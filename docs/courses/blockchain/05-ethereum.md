@@ -689,6 +689,149 @@ class GasCalculator {
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === Account State Trie (simplified) ===
+interface AccountState { nonce: number; balance: bigint; storageRoot: string; codeHash: string; }
+class StateTrie {
+    private state = new Map<string, AccountState>();
+
+    createAccount(addr: string, balance: bigint): void {
+        this.state.set(addr.toLowerCase(), { nonce: 0, balance, storageRoot: '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b41', codeHash: '0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470' });
+    }
+    getAccount(addr: string): AccountState | undefined { return this.state.get(addr.toLowerCase()); }
+    transfer(from: string, to: string, amount: bigint): boolean {
+        const f = this.getAccount(from), t = this.getAccount(to);
+        if (!f || f.balance < amount) return false;
+        if (!t) return false;
+        this.state.set(from.toLowerCase(), { ...f, nonce: f.nonce + 1, balance: f.balance - amount });
+        this.state.set(to.toLowerCase(), { ...t, balance: t.balance + amount });
+        return true;
+    }
+    incrementNonce(addr: string): void {
+        const acct = this.getAccount(addr);
+        if (acct) this.state.set(addr.toLowerCase(), { ...acct, nonce: acct.nonce + 1 });
+    }
+    dump(): void { this.state.forEach((v, k) => console.log(`  ${k}: balance=${v.balance} nonce=${v.nonce}`)); }
+}
+
+// === Transaction Receipt Generator ===
+interface Receipt { txHash: string; status: number; gasUsed: number; logs: { address: string; topics: string[]; data: string }[]; }
+class ReceiptGenerator {
+    generate(txHash: string, success: boolean, gasUsed: number, logs: { address: string; topics: string[]; data: string }[]): Receipt {
+        return { txHash, status: success ? 1 : 0, gasUsed, logs };
+    }
+    receiptRoot(receipts: Receipt[]): string {
+        let h = 0;
+        for (const r of receipts) {
+            h ^= r.status + r.gasUsed;
+            for (const log of r.logs) h ^= log.topics.reduce((a, t) => a + parseInt(t.slice(2, 10), 16), 0);
+        }
+        return `0x${Math.abs(h).toString(16).padStart(64, '0')}`;
+    }
+}
+
+// === Gas Cost Calculator ===
+class GasCalculator {
+    static readonly BASE_TX = 21000;
+    static readonly SSTORE_SET = 20000;
+    static readonly SSTORE_RESET = 5000;
+    static readonly SLOAD_COLD = 2100;
+    static readonly CALL = 700;
+    static readonly LOG = 375;
+    static readonly SELFDESTRUCT = 5000;
+
+    static txDataCost(data: string): number {
+        let cost = 0;
+        for (let i = 2; i < data.length; i += 2) cost += data.slice(i, i + 2) === '00' ? 4 : 16;
+        return cost;
+    }
+    static contractCreation(bytecode: string): number {
+        const base = 32000;
+        const codeCost = Math.ceil((bytecode.length - 2) / 2) * 200;
+        return base + codeCost;
+    }
+    static totalGas(txData: string, storageWrites: number, storageReads: number, calls: number): number {
+        return this.BASE_TX + this.txDataCost(txData) + storageWrites * this.SSTORE_SET + storageReads * this.SLOAD_COLD + calls * this.CALL;
+    }
+    static fee(gasUsed: number, baseFeeGwei: number, priorityGwei: number): string {
+        return `${(gasUsed * (baseFeeGwei + priorityGwei)).toLocaleString()} Gwei`;
+    }
+}
+
+// === ABI Encoder ===
+class ABIEncoder {
+    static encodeFunctionSignature(sig: string): string {
+        let h = 0;
+        for (let i = 0; i < sig.length; i++) h = ((h << 5) - h) + sig.charCodeAt(i);
+        return `0x${Math.abs(h).toString(16).padStart(8, '0')}`;
+    }
+    static encodeUint(value: bigint): string {
+        return value.toString(16).padStart(64, '0');
+    }
+    static encodeAddress(addr: string): string {
+        return '0'.repeat(24) + addr.slice(2).toLowerCase();
+    }
+    static encodeBool(value: boolean): string {
+        return '0'.repeat(63) + (value ? '1' : '0');
+    }
+    static encodeCall(sig: string, args: string[]): string {
+        const selector = this.encodeFunctionSignature(sig).slice(2);
+        return '0x' + selector + args.join('');
+    }
+}
+
+// === Event Log Topic Extractor ===
+class EventLogParser {
+    private readonly signatureHash: (sig: string) => string;
+    constructor() {
+        this.signatureHash = (sig: string) => {
+            let h = 0;
+            for (let i = 0; i < sig.length; i++) h = ((h << 5) - h) + sig.charCodeAt(i);
+            return Math.abs(h).toString(16).padStart(64, '0');
+        };
+    }
+    parseLog(topics: string[], data: string, knownEvents: Map<string, string>): { event: string; args: Record<string, string> } | null {
+        const sig = topics[0]?.slice(2);
+        for (const [event, abi] of knownEvents) {
+            if (this.signatureHash(event) === sig) {
+                const args: Record<string, string> = {};
+                topics.slice(1).forEach((t, i) => args[`topic${i}`] = t);
+                args.data = data;
+                return { event, args };
+            }
+        }
+        return null;
+    }
+}
+
+// === Demo ===
+const trie = new StateTrie();
+trie.createAccount('0xalice', BigInt(100));
+trie.createAccount('0xbob', BigInt(50));
+console.log('State before transfer:');
+trie.dump();
+trie.transfer('0xalice', '0xbob', BigInt(25));
+console.log('State after transfer:');
+trie.dump();
+
+const gc = new GasCalculator();
+const txData = '0x6080604052';
+console.log(`Tx data cost: ${gc.txDataCost(txData)}`);
+console.log(`Total gas (1 write, 2 reads): ${gc.totalGas(txData, 1, 2, 0)}`);
+
+const abi = new ABIEncoder();
+console.log(`transfer selector: ${abi.encodeFunctionSignature('transfer(address,uint256)')}`);
+console.log(`Encoded uint(42): ${abi.encodeUint(BigInt(42)).slice(0, 16)}...`);
+
+const logs = new EventLogParser();
+const events = new Map<string, string>();
+events.set('Transfer(address,address,uint256)', 'transfer');
+const parsed = logs.parseLog(['0x' + 'ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef', '0x000000000000000000000000alice'], '0x', events);
+console.log(`Parsed event: ${parsed?.event ?? 'unknown'}`);
+```
+
 ## Summary
 
 - Ethereum is a "World Computer" that extends blockchain from payments to general computation.

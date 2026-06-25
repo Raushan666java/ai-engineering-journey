@@ -657,6 +657,78 @@ class UTXOBlockchain {
 // console.log(bc.balance("alice")); // 10
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === Block Explorer ===
+interface BlockData { index: number; hash: string; prevHash: string; timestamp: number; txs: string[]; nonce: number; }
+class BlockExplorer {
+    private blocks: BlockData[] = [];
+    addBlock(txs: string[], prevHash: string, nonce: number): BlockData {
+        const block: BlockData = {
+            index: this.blocks.length, hash: this.simpleHash(`${prevHash}${JSON.stringify(txs)}${nonce}`),
+            prevHash, timestamp: Date.now(), txs, nonce,
+        };
+        this.blocks.push(block);
+        return block;
+    }
+    private simpleHash(s: string): string {
+        let h = 0;
+        for (let i = 0; i < s.length; i++) { h = ((h << 5) - h) + s.charCodeAt(i); h |= 0; }
+        return Math.abs(h).toString(16).padStart(8, '0');
+    }
+    getBlock(index: number): BlockData | undefined { return this.blocks[index]; }
+    validateChain(): boolean {
+        for (let i = 1; i < this.blocks.length; i++) {
+            const prev = this.blocks[i - 1], curr = this.blocks[i];
+            if (curr.prevHash !== prev.hash) return false;
+        }
+        return true;
+    }
+    printChain(): void { this.blocks.forEach(b => console.log(`Block ${b.index}: ${b.hash} (prev: ${b.prevHash.slice(0, 8)}...)`)); }
+}
+
+// === Simple Transaction ===
+interface TxInput { txid: string; vout: number; sig: string; }
+interface TxOutput { address: string; amount: number; }
+function createCoinbaseTx(amount: number, addr: string): { inputs: TxInput[]; outputs: TxOutput[] } {
+    return { inputs: [{ txid: '0'.repeat(64), vout: 0, sig: 'coinbase' }], outputs: [{ address: addr, amount }] };
+}
+
+// === Genesis Block Generator ===
+function createGenesisBlock(timestamp: number, coinbaseAddr: string): BlockData {
+    const explorer = new BlockExplorer();
+    const coinbaseTx = `coinbase:${coinbaseAddr}:50`;
+    return explorer.addBlock([coinbaseTx], '0'.repeat(64), 0);
+}
+
+// === Simple PoW Checker ===
+function checkPoW(blockHash: string, target: number): boolean {
+    const prefix = '0'.repeat(target);
+    return blockHash.startsWith(prefix);
+}
+
+// === Address Generator (simplified) ===
+function generateAddress(seed: string): string {
+    let h = 0;
+    for (let i = 0; i < seed.length; i++) { h = ((h << 5) - h) + seed.charCodeAt(i); h |= 0; }
+    return `0x${Math.abs(h).toString(16).padStart(40, '0')}`;
+}
+
+// === Demo ===
+const exp = new BlockExplorer();
+exp.addBlock(['tx1:alice->bob:10'], '0'.repeat(64), 0);
+exp.addBlock(['tx2:bob->carol:5'], exp.getBlock(0)!.hash, 1);
+exp.addBlock(['tx3:carol->dave:2'], exp.getBlock(1)!.hash, 2);
+exp.printChain();
+console.log(`Chain valid: ${exp.validateChain()}`);
+
+const genesis = createGenesisBlock(1680000000, 'alice');
+console.log(`Genesis hash: ${genesis.hash}`);
+console.log(`PoW check (target=2): ${checkPoW(genesis.hash, 2)}`);
+console.log(`Generated address: ${generateAddress('alice')}`);
+```
+
 ## Summary
 
 - Blockchain is a decentralized, distributed ledger technology ensuring data integrity without central authority.

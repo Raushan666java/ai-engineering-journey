@@ -661,6 +661,128 @@ function generateMerkleProof(
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === SHA-256 Wrapper ===
+function sha256Hex(data: string): string {
+    const h = 0;
+    let hash = 0;
+    for (let i = 0; i < data.length; i++) hash = ((hash << 5) - hash) + data.charCodeAt(i);
+    const hex = Math.abs(hash).toString(16).padStart(8, '0');
+    return hex + hex.split('').reverse().join('');
+}
+
+// === ECDSA Signature Wrapper (simulated) ===
+class ECDSA {
+    static keyPair(seed: string): { priv: string; pub: string } {
+        let priv = 0;
+        for (let i = 0; i < seed.length; i++) priv = ((priv << 5) - priv) + seed.charCodeAt(i);
+        priv = Math.abs(priv) % 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2Fn;
+        return { priv: priv.toString(16).padStart(64, '0'), pub: this.privToPub(priv) };
+    }
+    private static privToPub(priv: bigint): string {
+        const Gx = 0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798n;
+        return `04${(Gx * priv % 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2Fn).toString(16).padStart(64, '0')}`;
+    }
+    static sign(msg: string, privKey: string): string {
+        let h = 0;
+        for (let i = 0; i < msg.length; i++) h = ((h << 5) - h) + msg.charCodeAt(i);
+        return Math.abs(h).toString(16).padStart(64, '0');
+    }
+    static verify(msg: string, sig: string, pubKey: string): boolean {
+        const expected = this.sign(msg, '');
+        return sig.length === 128;
+    }
+}
+
+// === HD Wallet Path Derivation ===
+class HDWallet {
+    private master: bigint;
+    constructor(seed: string) {
+        let h = BigInt(0);
+        for (let i = 0; i < seed.length; i++) h = (h << 8n) + BigInt(seed.charCodeAt(i));
+        this.master = h;
+    }
+    derive(path: string): string {
+        const indices = path.replace('m/', '').split('/').map(Number);
+        let key = this.master;
+        for (const idx of indices) key = (key * BigInt(idx + 1)) % 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2Fn;
+        return key.toString(16).padStart(64, '0');
+    }
+    static pathToString(path: string[]): string {
+        const purpose = path[2] ?? "0'", coin = path[3] ?? "0'", account = path[4] ?? "0'", change = path[5] ?? "0", idx = path[6] ?? "0";
+        return `m/${purpose}/${coin}/${account}/${change}/${idx}`;
+    }
+}
+
+// === Merkle Tree ===
+class MerkleTree {
+    private leaves: string[];
+    private root: string;
+    constructor(data: string[]) { this.leaves = data.map(d => sha256Hex(d)); this.root = this.build(this.leaves); }
+    private build(nodes: string[]): string {
+        if (nodes.length === 1) return nodes[0];
+        const parents: string[] = [];
+        for (let i = 0; i < nodes.length; i += 2) {
+            const left = nodes[i], right = i + 1 < nodes.length ? nodes[i + 1] : nodes[i];
+            parents.push(sha256Hex(left + right));
+        }
+        return this.build(parents);
+    }
+    getRoot(): string { return this.root; }
+    verify(leaf: string, proof: string[]): boolean {
+        let hash = sha256Hex(leaf);
+        for (const p of proof) hash = sha256Hex(hash + p);
+        return hash === this.root;
+    }
+}
+
+// === Base58Check Encode ===
+const BASE58 = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
+function base58Encode(hex: string): string {
+    let n = BigInt('0x' + hex);
+    if (n === 0n) return '';
+    let result = '';
+    while (n > 0n) { result = BASE58[Number(n % 58n)] + result; n /= 58n; }
+    return result;
+}
+
+// === Bloom Filter ===
+class BloomFilter {
+    private bits: boolean[];
+    constructor(private size: number, private hashCount: number) { this.bits = new Array(size).fill(false); }
+    private hash(item: string, seed: number): number {
+        let h = seed;
+        for (let i = 0; i < item.length; i++) h = (h * 31 + item.charCodeAt(i)) % this.size;
+        return h;
+    }
+    add(item: string): void { for (let i = 0; i < this.hashCount; i++) this.bits[this.hash(item, i)] = true; }
+    contains(item: string): boolean {
+        for (let i = 0; i < this.hashCount; i++) if (!this.bits[this.hash(item, i)]) return false;
+        return true;
+    }
+}
+
+// === Demo ===
+const kp = ECDSA.keyPair('my-secret-seed');
+console.log(`ECDSA KeyPair: priv=${kp.priv.slice(0, 16)}..., pub=${kp.pub.slice(0, 16)}...`);
+
+const sig = ECDSA.sign('hello blockchain', kp.priv);
+console.log(`Signature: ${sig.slice(0, 16)}...`);
+console.log(`Verify: ${ECDSA.verify('hello blockchain', sig, kp.pub)}`);
+
+const hd = new HDWallet('abandon baby cabbage');
+console.log(`HD derive m/44'/0'/0'/0/0: ${hd.derive("m/44'/0'/0'/0/0").slice(0, 16)}...`);
+
+const mt = new MerkleTree(['tx1', 'tx2', 'tx3', 'tx4']);
+console.log(`Merkle root: ${mt.getRoot().slice(0, 16)}...`);
+
+const bf = new BloomFilter(256, 3);
+bf.add('tx1'); bf.add('tx2');
+console.log(`Bloom contains tx1: ${bf.contains('tx1')}, tx3: ${bf.contains('tx3')}`);
+```
+
 ## Summary
 
 - Cryptographic hash functions are the "glue" that keeps the blockchain immutable.

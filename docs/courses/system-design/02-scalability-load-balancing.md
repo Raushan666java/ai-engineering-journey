@@ -710,6 +710,83 @@ class ConsistentHashRing:
 
 ---
 
+### TypeScript: Load Balancer and Auto-Scaler
+
+```typescript
+interface Server { id: string; connections: number; cpu: number; weight: number; healthy: boolean; }
+
+class LoadBalancer {
+  private servers: Server[] = [];
+  private rrIndex = 0;
+
+  addServer(s: Server): void { this.servers.push(s); }
+
+  roundRobin(): Server | null {
+    if (this.servers.length === 0) return null;
+    const start = this.rrIndex;
+    do {
+      const s = this.servers[this.rrIndex];
+      this.rrIndex = (this.rrIndex + 1) % this.servers.length;
+      if (s.healthy) return s;
+    } while (this.rrIndex !== start);
+    return null;
+  }
+
+  weightedRoundRobin(): Server | null {
+    const healthy = this.servers.filter(s => s.healthy);
+    if (healthy.length === 0) return null;
+    const totalWeight = healthy.reduce((s, h) => s + h.weight, 0);
+    let r = Math.random() * totalWeight;
+    for (const s of healthy) { r -= s.weight; if (r <= 0) return s; }
+    return healthy[healthy.length - 1];
+  }
+
+  leastConnections(): Server | null {
+    const healthy = this.servers.filter(s => s.healthy);
+    if (healthy.length === 0) return null;
+    return healthy.reduce((a, b) => a.connections < b.connections ? a : b);
+  }
+
+  leastResponseTime(responseTimes: Map<string, number>): Server | null {
+    const healthy = this.servers.filter(s => s.healthy);
+    if (healthy.length === 0) return null;
+    return healthy.reduce((a, b) => (responseTimes.get(a.id) ?? Infinity) < (responseTimes.get(b.id) ?? Infinity) ? a : b);
+  }
+
+  ipHash(ip: string): Server | null {
+    const healthy = this.servers.filter(s => s.healthy);
+    if (healthy.length === 0) return null;
+    let h = 0;
+    for (let i = 0; i < ip.length; i++) h = ((h << 5) - h + ip.charCodeAt(i)) | 0;
+    return healthy[Math.abs(h) % healthy.length];
+  }
+}
+
+class AutoScaler {
+  private metrics: { cpu: number; timestamp: number }[] = [];
+
+  constructor(private minServers: number, private maxServers: number, private targetCpu: number) {}
+
+  recordMetric(cpu: number): void {
+    this.metrics.push({ cpu, timestamp: Date.now() });
+    if (this.metrics.length > 60) this.metrics.shift();
+  }
+
+  desiredCount(currentCount: number): { count: number; action: string } {
+    const avgCpu = this.metrics.reduce((s, m) => s + m.cpu, 0) / Math.max(this.metrics.length, 1);
+    if (avgCpu > this.targetCpu * 1.3 && currentCount < this.maxServers) {
+      const add = Math.min(Math.ceil((avgCpu - this.targetCpu) / this.targetCpu * currentCount), this.maxServers - currentCount);
+      return { count: currentCount + add, action: `scaling up by ${add} (cpu=${avgCpu.toFixed(0)}%)` };
+    }
+    if (avgCpu < this.targetCpu * 0.5 && currentCount > this.minServers) {
+      const remove = Math.min(Math.ceil((this.targetCpu - avgCpu) / this.targetCpu * currentCount), currentCount - this.minServers);
+      return { count: currentCount - remove, action: `scaling down by ${remove} (cpu=${avgCpu.toFixed(0)}%)` };
+    }
+    return { count: currentCount, action: "stable" };
+  }
+}
+```
+
 ## Summary
 
 - Vertical scaling adds resources to one machine; horizontal scaling adds more machines. Horizontal is the dominant pattern for internet-scale systems.

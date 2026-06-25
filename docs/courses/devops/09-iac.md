@@ -460,6 +460,136 @@ console.log(ts);
 
 ---
 
+### Drift Remediation Engine
+
+Infrastructure drift — when actual infrastructure state diverges from declared configuration — is a leading cause of configuration drift incidents. The following tool detects, analyzes, and proposes remediation for drift.
+
+```typescript
+// drift-remediation.ts
+// Detect and remediate infrastructure drift
+
+interface DeclaredResource {
+  id: string;
+  type: string;
+  properties: Record<string, any>;
+  lastUpdated: Date;
+}
+
+interface ActualResource {
+  id: string;
+  type: string;
+  properties: Record<string, any>;
+  discoveredAt: Date;
+}
+
+interface DriftEntry {
+  resourceId: string;
+  resourceType: string;
+  property: string;
+  declaredValue: any;
+  actualValue: any;
+  severity: 'low' | 'medium' | 'high' | 'critical';
+  autoRemediable: boolean;
+  category: 'config' | 'tag' | 'security' | 'size' | 'missing';
+}
+
+interface DriftReport {
+  entries: DriftEntry[];
+  summary: {
+    total: number;
+    critical: number;
+    high: number;
+    medium: number;
+    low: number;
+    autoRemediableCount: number;
+    categories: Record<string, number>;
+  };
+  generatedAt: Date;
+}
+
+class DriftDetector {
+  detect(declared: DeclaredResource[], actual: ActualResource[]): DriftReport {
+    const entries: DriftEntry[] = [];
+    const actualMap = new Map(actual.map(a => [a.id, a]));
+
+    for (const d of declared) {
+      const a = actualMap.get(d.id);
+      if (!a) {
+        entries.push({ resourceId: d.id, resourceType: d.type, property: '__exists__', declaredValue: true, actualValue: false, severity: 'critical', autoRemediable: true, category: 'missing' });
+        continue;
+      }
+
+      for (const [key, declaredVal] of Object.entries(d.properties)) {
+        const actualVal = a.properties[key];
+        if (JSON.stringify(declaredVal) !== JSON.stringify(actualVal)) {
+          let severity: DriftEntry['severity'] = 'low';
+          let category: DriftEntry['category'] = 'config';
+          let autoRemediable = true;
+
+          if (key.toLowerCase().includes('port') || key.toLowerCase().includes('cidr')) {
+            severity = 'high'; category = 'security';
+          } else if (key.toLowerCase().includes('instance') || key.toLowerCase().includes('size')) {
+            severity = 'medium'; category = 'size';
+          } else if (key.toLowerCase().includes('tag')) {
+            severity = 'low'; category = 'tag';
+          }
+
+          entries.push({ resourceId: d.id, resourceType: d.type, property: key, declaredValue: declaredVal, actualValue: actualVal, severity, autoRemediable, category });
+        }
+      }
+    }
+
+    return this.buildReport(entries);
+  }
+
+  planRemediation(drift: DriftEntry[]): string[] {
+    const steps: string[] = [];
+    for (const d of drift) {
+      if (!d.autoRemediable) continue;
+      if (d.category === 'missing') {
+        steps.push(`terraform apply -target=${d.resourceType}.${d.resourceId}`);
+      } else {
+        steps.push(`terraform apply to correct ${d.resourceType}.${d.resourceId}.${d.property} from "${d.actualValue}" to "${d.declaredValue}"`);
+      }
+    }
+    return steps;
+  }
+
+  private buildReport(entries: DriftEntry[]): DriftReport {
+    const summary = {
+      total: entries.length,
+      critical: entries.filter(e => e.severity === 'critical').length,
+      high: entries.filter(e => e.severity === 'high').length,
+      medium: entries.filter(e => e.severity === 'medium').length,
+      low: entries.filter(e => e.severity === 'low').length,
+      autoRemediableCount: entries.filter(e => e.autoRemediable).length,
+      categories: {} as Record<string, number>,
+    };
+    for (const e of entries) summary.categories[e.category] = (summary.categories[e.category] || 0) + 1;
+    return { entries, summary, generatedAt: new Date() };
+  }
+}
+
+const detector = new DriftDetector();
+const declared: DeclaredResource[] = [
+  { id: 'web-sg', type: 'aws_security_group', properties: { name: 'web-sg', description: 'Web tier security group', ingress_port: 443, cidr_blocks: ['10.0.0.0/8'] }, lastUpdated: new Date('2026-01-01') },
+  { id: 'web-instance', type: 'aws_instance', properties: { instance_type: 't3.medium', ami: 'ami-12345', tags: { Name: 'web-server', Environment: 'production' } }, lastUpdated: new Date('2026-01-01') },
+];
+const actual: ActualResource[] = [
+  { id: 'web-sg', type: 'aws_security_group', properties: { name: 'web-sg', description: 'Web tier (modified)', ingress_port: 80, cidr_blocks: ['0.0.0.0/0'] }, discoveredAt: new Date() },
+  { id: 'web-instance', type: 'aws_instance', properties: { instance_type: 't3.large', ami: 'ami-67890', tags: { Name: 'web-server', Environment: 'production' } }, discoveredAt: new Date() },
+];
+
+const report = detector.detect(declared, actual);
+console.log(`Drift: ${report.summary.total} entries (${report.summary.critical} critical, ${report.summary.high} high)`);
+console.log('Categories:', JSON.stringify(report.summary.categories));
+console.log('Remediation steps:', detector.planRemediation(report.entries).join('; '));
+```
+
+**What this demonstrates:** Automated drift detection and remediation planning ensures infrastructure stays aligned with declared configuration, preventing configuration drift from causing production incidents.
+
+---
+
 ## Practical Takeaways
 
 1. **Always use remote state.** S3 + DynamoDB for locking is the standard.

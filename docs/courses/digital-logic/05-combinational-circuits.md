@@ -721,6 +721,119 @@ Each gate output can drive a limited number of inputs (fan-out). Exceeding the f
 4. **Hazards matter in asynchronous paths** — add redundant consensus terms to eliminate static hazards
 5. **Design for testability** — include scan chains and observability points in complex combinational blocks
 
+## TypeScript Implementations
+
+```typescript
+// === Decoder (N:2^N) ===
+class Decoder {
+    static decode(input: number, n: number): number[] {
+        const outputs = new Array(1 << n).fill(0);
+        if (input < outputs.length) outputs[input] = 1;
+        return outputs;
+    }
+}
+
+// === Priority Encoder ===
+class PriorityEncoder {
+    static encode(inputs: number[]): { code: number; valid: boolean } {
+        for (let i = inputs.length - 1; i >= 0; i--) {
+            if (inputs[i] === 1) return { code: i, valid: true };
+        }
+        return { code: 0, valid: false };
+    }
+}
+
+// === Multiplexer ===
+class Multiplexer {
+    static mux2(inputs: [number, number], sel: number): number { return inputs[sel]; }
+    static mux4(inputs: number[], sel: number): number { return inputs[sel] ?? 0; }
+    static mux8(inputs: number[], sel: number): number { return inputs[sel] ?? 0; }
+}
+
+// === Demultiplexer ===
+class Demultiplexer {
+    static demux1_2(input: number, sel: number): number[] {
+        const out = [0, 0]; out[sel] = input; return out;
+    }
+    static demux1_4(input: number, sel: number): number[] {
+        const out = [0, 0, 0, 0]; out[sel] = input; return out;
+    }
+}
+
+// === Comparator ===
+class Comparator {
+    static compare4(a: number, b: number): { gt: number; eq: number; lt: number } {
+        return {
+            gt: a > b ? 1 : 0,
+            eq: a === b ? 1 : 0,
+            lt: a < b ? 1 : 0,
+        };
+    }
+    static compare8(a: number, b: number): { gt: number; eq: number; lt: number } {
+        const h = Comparator.compare4(a >> 4, b >> 4);
+        if (h.gt || h.lt) return h;
+        return Comparator.compare4(a & 0xF, b & 0xF);
+    }
+}
+
+// === ALU (4-bit) ===
+class ALU4 {
+    static operate(a: number, b: number, op: number): { result: number; flags: { zero: number; carry: number } } {
+        let result = 0;
+        switch (op) {
+            case 0: result = a & b; break;       // AND
+            case 1: result = a | b; break;       // OR
+            case 2: result = a ^ b; break;       // XOR
+            case 3: result = ~a & 0xF; break;    // NOT A
+            case 4: result = (a + b) & 0xF; break; // ADD
+            case 5: result = (a - b) & 0xF; break; // SUB
+            case 6: result = (a << 1) & 0xF; break; // SHL
+            case 7: result = (a >> 1) & 0xF; break; // SHR
+        }
+        const carry = op === 4 && (a + b) > 15 ? 1 : op === 5 && a < b ? 1 : 0;
+        return { result, flags: { zero: result === 0 ? 1 : 0, carry } };
+    }
+}
+
+// === Full Adder ===
+function fullAdder(a: number, b: number, cin: number): { sum: number; cout: number } {
+    const sum = a ^ b ^ cin;
+    const cout = (a & b) | (cin & (a ^ b));
+    return { sum, cout };
+}
+
+// === Ripple-Carry Adder (8-bit) ===
+function rippleCarry8(a: number, b: number): { sum: number; carry: number } {
+    let sum = 0, carry = 0;
+    for (let i = 0; i < 8; i++) {
+        const ba = (a >> i) & 1, bb = (b >> i) & 1;
+        const fa = fullAdder(ba, bb, carry);
+        sum |= (fa.sum << i);
+        carry = fa.cout;
+    }
+    return { sum, carry };
+}
+
+// === Parity Generator / Checker ===
+class Parity {
+    static evenParity(data: number, bits: number): number {
+        let p = 0;
+        for (let i = 0; i < bits; i++) p ^= (data >> i) & 1;
+        return p;
+    }
+    static checkEven(data: number, bits: number, parity: number): boolean {
+        return Parity.evenParity(data, bits) === parity;
+    }
+}
+
+// === Demo ===
+console.log('Decoder 3:8 input=5:', Decoder.decode(5, 3));
+console.log('PriorityEncoder [0,1,0,1]:', PriorityEncoder.encode([0, 1, 0, 1]));
+console.log('MUX4([10,20,30,40], sel=2):', Multiplexer.mux4([10, 20, 30, 40], 2));
+console.log('ALU4 ADD(7, 6):', ALU4.operate(7, 6, 4));
+console.log('RippleCarry8(200, 55):', rippleCarry8(200, 55));
+```
+
 ## Summary
 
 Combinational circuits form the computational fabric of digital systems. This chapter covered the full design spectrum: from simple half-adders through carry-lookahead adders, multiplexers, decoders, encoders, comparators, and a complete ALU. Each circuit type was presented with minimised Boolean equations, gate-level implementations, TypeScript simulations, and practical trade-off analysis. The next chapter extends these concepts by adding state — introducing sequential circuits that combine combinational logic with memory elements.

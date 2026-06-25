@@ -637,6 +637,176 @@ console.log("Grade:", LighthouseAnalyzer.grade({ performance: 65, accessibility:
 console.log("PWA:", JSON.stringify(PWAManifestGenerator.create({ name: "MyApp", shortName: "App", startUrl: "/", themeColor: "#000", bgColor: "#fff", icons: [{ src: "/icon.png", sizes: "192x192", type: "image/png" }] })));
 ```
 
+## TypeScript Implementation: Bundle Analyzer, Lazy Load Scheduler, Memoization Cache, Performance Marker
+
+```typescript
+class BundleSizeAnalyzer {
+    static estimate(source: string): { totalBytes: number; totalKb: string; gzippedKb: string; lines: number } {
+        const bytes = new TextEncoder().encode(source).length;
+        const lines = source.split("\n").length;
+        const gzipRatio = 0.35;
+        return {
+            totalBytes: bytes,
+            totalKb: (bytes / 1024).toFixed(1),
+            gzippedKb: (bytes * gzipRatio / 1024).toFixed(1),
+            lines
+        };
+    }
+
+    static analyzeImports(source: string): { module: string; specifiers: string[] }[] {
+        const imports: { module: string; specifiers: string[] }[] = [];
+        const pattern = /import\s+(?:(\{[^}]*\}|[^;]+))\s+from\s+["']([^"']+)["']/g;
+        let match;
+        while ((match = pattern.exec(source)) !== null) {
+            const specifiers = match[1].replace(/[{}]/g, "").split(",").map(s => s.trim()).filter(Boolean);
+            imports.push({ module: match[2], specifiers });
+        }
+        return imports;
+    }
+
+    static treeShakeable(imports: { specifiers: string[]; module: string }[]): { treeShakeable: boolean; reasons: string[] } {
+        const reasons: string[] = [];
+        const sideEffectFree = imports.every(i => {
+            const isCSS = i.module.endsWith(".css");
+            const isSideEffect = i.specifiers.length === 0;
+            if (isCSS) reasons.push(`${i.module}: CSS imports cannot be tree-shaken`);
+            if (isSideEffect) reasons.push(`${i.module}: Side-effect import`);
+            return !isCSS && !isSideEffect;
+        });
+        return { treeShakeable: sideEffectFree, reasons };
+    }
+}
+
+class LazyLoadScheduler {
+    private loaded: Set<string> = new Set();
+    private pending: Map<string, { priority: number; loader: () => Promise<any> }> = new Map();
+
+    register(name: string, loader: () => Promise<any>, priority: number = 5): void {
+        this.pending.set(name, { priority, loader });
+    }
+
+    async loadNow(name: string): Promise<any> {
+        const entry = this.pending.get(name);
+        if (!entry) return null;
+        this.pending.delete(name);
+        this.loaded.add(name);
+        return entry.loader();
+    }
+
+    async loadBatch(threshold: number = 3): Promise<void> {
+        const sorted = [...this.pending.entries()]
+            .sort(([, a], [, b]) => a.priority - b.priority)
+            .slice(0, threshold);
+        await Promise.all(sorted.map(([name]) => this.loadNow(name)));
+    }
+
+    async loadOnIdle(name: string): Promise<any> {
+        return new Promise(resolve => {
+            if (typeof requestIdleCallback !== "undefined") {
+                requestIdleCallback(() => this.loadNow(name).then(resolve));
+            } else {
+                setTimeout(() => this.loadNow(name).then(resolve), 1);
+            }
+        });
+    }
+
+    getStats(): { registered: number; loaded: number; pending: number } {
+        return { registered: this.pending.size + this.loaded.size, loaded: this.loaded.size, pending: this.pending.size };
+    }
+}
+
+class MemoizationCache {
+    private cache = new Map<string, { value: any; timestamp: number }>();
+    private maxSize: number;
+    private ttlMs: number;
+
+    constructor(maxSize: number = 100, ttlMs: number = 60000) { this.maxSize = maxSize; this.ttlMs = ttlMs; }
+
+    private key(args: any[]): string { return args.map(a => JSON.stringify(a)).join("::"); }
+
+    get<T>(fn: (...args: any[]) => T, ...args: any[]): T {
+        const k = this.key(args);
+        const existing = this.cache.get(k);
+        if (existing && Date.now() - existing.timestamp < this.ttlMs) return existing.value as T;
+
+        const value = fn(...args);
+        this.set(k, value);
+        return value;
+    }
+
+    async getAsync<T>(fn: (...args: any[]) => Promise<T>, ...args: any[]): Promise<T> {
+        const k = this.key(args);
+        const existing = this.cache.get(k);
+        if (existing && Date.now() - existing.timestamp < this.ttlMs) return existing.value as T;
+
+        const value = await fn(...args);
+        this.set(k, value);
+        return value;
+    }
+
+    private set(key: string, value: any): void {
+        if (this.cache.size >= this.maxSize) {
+            const oldest = this.cache.entries().next().value?.[0];
+            if (oldest) this.cache.delete(oldest);
+        }
+        this.cache.set(key, { value, timestamp: Date.now() });
+    }
+
+    invalidate(...args: any[]): void {
+        if (args.length === 0) { this.cache.clear(); return; }
+        const k = this.key(args);
+        this.cache.delete(k);
+    }
+}
+
+class PerformanceMarker {
+    private marks: Map<string, number> = new Map();
+    private measures: { name: string; duration: number; startMark: string; endMark: string }[] = [];
+
+    start(name: string): void { this.marks.set(name, performance.now()); }
+
+    end(name: string): number {
+        const start = this.marks.get(name);
+        if (!start) return 0;
+        const duration = performance.now() - start;
+        this.measures.push({ name, duration, startMark: name, endMark: `${name}-end` });
+        return duration;
+    }
+
+    measure(name: string, startMark: string, endMark: string): number {
+        const start = this.marks.get(startMark);
+        const end = this.marks.get(endMark);
+        if (!start || !end) return 0;
+        const duration = end - start;
+        this.measures.push({ name, duration, startMark, endMark });
+        return duration;
+    }
+
+    getReport(): { measures: { name: string; duration: number }[]; total: number; avg: number } {
+        const durations = this.measures.map(m => m.duration);
+        return {
+            measures: this.measures.map(m => ({ name: m.name, duration: Math.round(m.duration * 100) / 100 })),
+            total: Math.round(durations.reduce((a, b) => a + b, 0) * 100) / 100,
+            avg: durations.length > 0 ? Math.round((durations.reduce((a, b) => a + b, 0) / durations.length) * 100) / 100 : 0
+        };
+    }
+}
+
+// Demo
+const code = `import { useState, useEffect } from "react";\nimport { Button } from "./Button";\nimport "./styles.css";\nconst App = () => { return <div>Hello</div>; };`;
+console.log("Bundle:", BundleSizeAnalyzer.estimate(code));
+console.log("Imports:", BundleSizeAnalyzer.analyzeImports(code));
+console.log("Tree-shakeable:", BundleSizeAnalyzer.treeShakeable(BundleSizeAnalyzer.analyzeImports(code)));
+
+const cache = new MemoizationCache(10, 5000);
+const expensive = (n: number) => n * 2;
+console.log("Cache:", cache.get(expensive, 5), cache.get(expensive, 5));
+
+const perf = new PerformanceMarker();
+perf.start("render");
+setTimeout(() => { perf.end("render"); console.log("Perf:", perf.getReport()); }, 10);
+```
+
 ## Summary
 
 Web performance optimization spans the entire stack. Core Web Vitals (LCP, FID, CLS) measure user experience. Code splitting reduces initial bundle size. Image optimization saves bandwidth. Caching strategies at CDN, browser, and service worker levels reduce latency. React.memo, useMemo, and useCallback prevent unnecessary re-renders. Database query optimization with proper indexing and batch operations handles data at scale.

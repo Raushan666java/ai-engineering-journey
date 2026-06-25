@@ -643,6 +643,130 @@ console.log('Warnings:', result.warnings.join(', ') || 'none');
 
 ---
 
+### Configuration Backup and Recovery Manager
+
+Automated configuration backup and recovery is essential for disaster resilience. The following tool implements scheduled backups, version comparison, and recovery validation.
+
+```typescript
+// config-backup.ts
+// Manage configuration backups and recovery
+
+interface BackupEntry {
+  id: string;
+  hostname: string;
+  configPath: string;
+  content: string;
+  checksum: string;
+  timestamp: Date;
+  sizeBytes: number;
+}
+
+interface BackupPolicy {
+  retentionDays: number;
+  maxVersions: number;
+  paths: string[];
+  compress: boolean;
+  notifyOnFailure: boolean;
+}
+
+interface RecoveryPlan {
+  backupId: string;
+  targetPath: string;
+  preChecksPassed: boolean;
+  preCheckDetails: string[];
+  estimatedRollbackTimeMs: number;
+  riskLevel: 'low' | 'medium' | 'high';
+}
+
+class ConfigBackupManager {
+  private backups: Map<string, BackupEntry[]> = new Map();
+  private policy: BackupPolicy;
+
+  constructor(policy: BackupPolicy) {
+    this.policy = policy;
+  }
+
+  backup(hostname: string, configPath: string, content: string): BackupEntry {
+    const crypto = require('crypto');
+    const checksum = crypto.createHash('sha256').update(content).digest('hex').substring(0, 16);
+    const entry: BackupEntry = {
+      id: `backup-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`,
+      hostname, configPath, content, checksum,
+      timestamp: new Date(),
+      sizeBytes: Buffer.byteLength(content),
+    };
+
+    if (!this.backups.has(configPath)) this.backups.set(configPath, []);
+    this.backups.get(configPath)!.push(entry);
+    this.enforceRetention();
+    return entry;
+  }
+
+  diff(path: string, versionA: string, versionB: string): { line: number; type: 'added' | 'removed' | 'changed'; content: string }[] {
+    const changes: { line: number; type: 'added' | 'removed' | 'changed'; content: string }[] = [];
+    const linesA = versionA.split('\n');
+    const linesB = versionB.split('\n');
+    const maxLen = Math.max(linesA.length, linesB.length);
+
+    for (let i = 0; i < maxLen; i++) {
+      if (i >= linesA.length) changes.push({ line: i + 1, type: 'added', content: linesB[i] });
+      else if (i >= linesB.length) changes.push({ line: i + 1, type: 'removed', content: linesA[i] });
+      else if (linesA[i] !== linesB[i]) changes.push({ line: i + 1, type: 'changed', content: `${linesA[i]} → ${linesB[i]}` });
+    }
+
+    return changes;
+  }
+
+  planRecovery(backupId: string): RecoveryPlan {
+    for (const [, entries] of this.backups) {
+      const entry = entries.find(e => e.id === backupId);
+      if (entry) {
+        const sizeMB = entry.sizeBytes / (1024 * 1024);
+        return {
+          backupId, targetPath: entry.configPath,
+          preChecksPassed: true,
+          preCheckDetails: [`Source exists: true`, `Size: ${sizeMB.toFixed(2)}MB`, `Checksum: ${entry.checksum}`],
+          estimatedRollbackTimeMs: 100 + entry.sizeBytes / 1000,
+          riskLevel: entry.configPath.includes('production') ? 'high' : 'low',
+        };
+      }
+    }
+    return { backupId, targetPath: 'unknown', preChecksPassed: false, preCheckDetails: ['Backup not found'], estimatedRollbackTimeMs: 0, riskLevel: 'high' };
+  }
+
+  listBackups(path?: string): BackupEntry[] {
+    if (path) return this.backups.get(path) || [];
+    return [...this.backups.values()].flat().sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime());
+  }
+
+  private enforceRetention(): void {
+    const cutoff = Date.now() - this.policy.retentionDays * 86400000;
+    for (const [path, entries] of this.backups) {
+      const filtered = entries.filter(e => e.timestamp.getTime() > cutoff);
+      if (filtered.length > this.policy.maxVersions) {
+        filtered.sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime());
+        this.backups.set(path, filtered.slice(0, this.policy.maxVersions));
+      } else {
+        this.backups.set(path, filtered);
+      }
+    }
+  }
+}
+
+const backupMgr = new ConfigBackupManager({ retentionDays: 90, maxVersions: 10, paths: ['/etc/nginx/nginx.conf', '/etc/ssh/sshd_config'], compress: true, notifyOnFailure: true });
+
+const v1 = backupMgr.backup('web-01', '/etc/nginx/nginx.conf', 'server { listen 80; server_name example.com; }');
+const v2 = backupMgr.backup('web-01', '/etc/nginx/nginx.conf', 'server { listen 443 ssl; server_name example.com; ssl_certificate /etc/ssl/cert.pem; }');
+
+console.log('Backups for nginx.conf:', backupMgr.listBackups('/etc/nginx/nginx.conf').length);
+console.log('Diff v1 -> v2:', backupMgr.diff('/etc/nginx/nginx.conf', v1.content, v2.content));
+console.log('Recovery plan:', backupMgr.planRecovery(v2.id));
+```
+
+**What this demonstrates:** Automated configuration backup with versioning, diffing, and recovery planning provides a safety net for configuration changes and enables rapid rollback.
+
+---
+
 ## Practical Takeaways
 
 1. **Use Ansible for agentless configuration management.** No agents to install or maintain.

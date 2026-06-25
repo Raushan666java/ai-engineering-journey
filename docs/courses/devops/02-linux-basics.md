@@ -538,6 +538,250 @@ console.log('Top by CPU:', monitor.findTopProcesses(2, 'cpu').map(p => `${p.name
 
 ---
 
+### Shell Script Validator and Analyzer
+
+Shell scripts are the backbone of DevOps automation. The following tool validates script correctness, detects common errors, and enforces best practices.
+
+```typescript
+// shell-validator.ts
+// Analyze and validate shell scripts for best practices
+
+interface ShellScript {
+  content: string[];
+  shebang: string | null;
+  hasStrictMode: boolean;
+  hasTraps: boolean;
+  functionCount: number;
+  lineCount: number;
+}
+
+interface ShellIssue {
+  line: number;
+  severity: 'error' | 'warning' | 'info';
+  message: string;
+  rule: string;
+}
+
+interface ValidationReport {
+  script: ShellScript;
+  issues: ShellIssue[];
+  score: number;
+  pass: boolean;
+}
+
+class ShellScriptValidator {
+  private readonly strictPatterns = [
+    { pattern: /set\s+-[a-z]*e[a-z]*/, flag: 'e', description: 'exit on error' },
+    { pattern: /set\s+-[a-z]*u[a-z]*/, flag: 'u', description: 'undefined variable error' },
+    { pattern: /set\s+-[a-z]*o\s+pipefail/, flag: 'o pipefail', description: 'pipe failure detection' },
+  ];
+
+  analyze(content: string): ShellScript {
+    const lines = content.split('\n');
+    const shebang = lines[0]?.startsWith('#!') ? lines[0] : null;
+
+    const hasStrictMode = lines.some(l => /set\s+-[a-z]*e[a-z]*/.test(l)) &&
+      lines.some(l => /set\s+-[a-z]*u[a-z]*/.test(l));
+
+    const hasTraps = lines.some(l => /^trap\s+/.test(l));
+    const functionCount = lines.filter(l => /^\s*(function\s+)?[a-zA-Z_][a-zA-Z0-9_]*\s*\(\)\s*\{/.test(l)).length;
+
+    return {
+      content: lines,
+      shebang,
+      hasStrictMode,
+      hasTraps,
+      functionCount,
+      lineCount: lines.length,
+    };
+  }
+
+  validate(content: string): ValidationReport {
+    const script = this.analyze(content);
+    const issues: ShellIssue[] = [];
+    const lines = script.content;
+
+    // Check for missing shebang
+    if (!script.shebang) {
+      issues.push({ line: 1, severity: 'error', message: 'Missing shebang (#!) line', rule: 'SHEBANG' });
+    }
+
+    // Check strict mode
+    if (!script.hasStrictMode) {
+      issues.push({ line: 1, severity: 'error', message: 'Missing set -euo pipefail (strict mode)', rule: 'STRICT' });
+    }
+
+    // Check for unquoted variables
+    lines.forEach((line, i) => {
+      const quotes = line.match(/\$\{[^}]*\}/g) || line.match(/\$[a-zA-Z_][a-zA-Z0-9_]*/g);
+      if (quotes && !line.trim().startsWith('#') && !line.includes('"') && !line.includes("'")) {
+        issues.push({ line: i + 1, severity: 'warning', message: 'Unquoted variable expansion', rule: 'QUOTING' });
+      }
+    });
+
+    // Check for cd without error handling
+    lines.forEach((line, i) => {
+      if (/^cd\s+/.test(line.trim()) && !/cd\s+.+\|\||cd\s+.+\||\|\|/.test(line.trim())) {
+        issues.push({ line: i + 1, severity: 'warning', message: 'cd without error handling (use || exit)', rule: 'CD_CHECK' });
+      }
+    });
+
+    // Check for using backticks instead of $()
+    lines.forEach((line, i) => {
+      if (/`[^`]+`/.test(line) && !line.trim().startsWith('#')) {
+        issues.push({ line: i + 1, severity: 'info', message: 'Use $(...) instead of backticks', rule: 'SUBSTITUTION' });
+      }
+    });
+
+    // Check for trap cleanup
+    if (!script.hasTraps) {
+      issues.push({ line: lines.length, severity: 'warning', message: 'No trap for cleanup (risks leaving temp files)', rule: 'TRAP' });
+    }
+
+    const errorCount = issues.filter(i => i.severity === 'error').length;
+    const warningCount = issues.filter(i => i.severity === 'warning').length;
+    const score = Math.max(0, 100 - errorCount * 25 - warningCount * 10);
+    const pass = errorCount === 0;
+
+    return { script, issues, score, pass };
+  }
+
+  generateReport(report: ValidationReport): string {
+    return `## Shell Script Validation\n\n` +
+      `**Score:** ${report.score}/100 | **Pass:** ${report.pass ? '✅' : '❌'}\n` +
+      `**Lines:** ${report.script.lineCount} | **Functions:** ${report.script.functionCount}\n\n` +
+      `| Line | Severity | Message |\n` +
+      `|------|----------|---------|\n` +
+      report.issues.map(i => `| ${i.line} | ${i.severity} | ${i.message} |`).join('\n') + '\n';
+  }
+}
+
+const validator = new ShellScriptValidator();
+const badScript = `#!/bin/bash
+echo Hello $name
+cd /tmp
+rm -rf data
+for f in $(ls); do
+  echo $f
+done`;
+
+const result = validator.validate(badScript);
+console.log(validator.generateReport(result));
+```
+
+**What this demonstrates:** Automated shell script validation catches common errors (unquoted variables, missing strict mode, unsafe cd) before they cause production incidents, and enforces DevOps scripting standards across teams.
+
+---
+
+### Linux Process Monitor Service
+
+The following tool implements a process monitoring service that tracks resource usage, detects anomalies, and generates alerts.
+
+```typescript
+// process-monitor.ts
+// Monitor and manage Linux processes
+
+interface ProcessInfo {
+  pid: number;
+  name: string;
+  cpuPercent: number;
+  memPercent: number;
+  state: 'R' | 'S' | 'D' | 'Z' | 'T';
+  uptimeSeconds: number;
+  threadCount: number;
+}
+
+interface ProcessThresholds {
+  maxCpuPercent: number;
+  maxMemPercent: number;
+  maxThreadCount: number;
+  minUptimeForAlert: number;
+}
+
+interface ProcessAlert {
+  process: ProcessInfo;
+  reason: string;
+  timestamp: Date;
+  severity: 'critical' | 'warning';
+}
+
+class ProcessMonitor {
+  private alerts: ProcessAlert[] = [];
+  private history: Map<number, ProcessInfo[]> = new Map();
+
+  constructor(private thresholds: ProcessThresholds) {}
+
+  snapshot(processes: ProcessInfo[]): ProcessInfo[] {
+    for (const proc of processes) {
+      if (!this.history.has(proc.pid)) {
+        this.history.set(proc.pid, []);
+      }
+      this.history.get(proc.pid)!.push(proc);
+
+      this.checkThresholds(proc);
+    }
+    return processes;
+  }
+
+  private checkThresholds(proc: ProcessInfo): void {
+    if (proc.uptimeSeconds < this.thresholds.minUptimeForAlert) return;
+
+    if (proc.cpuPercent > this.thresholds.maxCpuPercent) {
+      this.alerts.push({
+        process: proc, reason: `CPU at ${proc.cpuPercent}% (max ${this.thresholds.maxCpuPercent}%)`,
+        timestamp: new Date(), severity: proc.cpuPercent > this.thresholds.maxCpuPercent * 1.5 ? 'critical' : 'warning',
+      });
+    }
+
+    if (proc.memPercent > this.thresholds.maxMemPercent) {
+      this.alerts.push({
+        process: proc, reason: `Memory at ${proc.memPercent}% (max ${this.thresholds.maxMemPercent}%)`,
+        timestamp: new Date(), severity: proc.memPercent > this.thresholds.maxMemPercent * 1.5 ? 'critical' : 'warning',
+      });
+    }
+
+    if (proc.threadCount > this.thresholds.maxThreadCount) {
+      this.alerts.push({
+        process: proc, reason: `Threads at ${proc.threadCount} (max ${this.thresholds.maxThreadCount})`,
+        timestamp: new Date(), severity: 'warning',
+      });
+    }
+  }
+
+  getAlerts(severity?: 'critical' | 'warning'): ProcessAlert[] {
+    return severity ? this.alerts.filter(a => a.severity === severity) : this.alerts;
+  }
+
+  getSpikingProcesses(window: number = 5): string[] {
+    const spiking: string[] = [];
+    for (const [pid, snapshots] of this.history) {
+      if (snapshots.length < 2) continue;
+      const recent = snapshots.slice(-window);
+      const avgCpu = recent.reduce((s, p) => s + p.cpuPercent, 0) / recent.length;
+      if (avgCpu > this.thresholds.maxCpuPercent * 0.8) {
+        spiking.push(`PID ${pid} (${recent[0].name}): avg ${avgCpu.toFixed(1)}% CPU`);
+      }
+    }
+    return spiking;
+  }
+}
+
+const monitor = new ProcessMonitor({ maxCpuPercent: 80, maxMemPercent: 70, maxThreadCount: 500, minUptimeForAlert: 10 });
+const procs: ProcessInfo[] = [
+  { pid: 1001, name: 'nginx', cpuPercent: 2.1, memPercent: 1.5, state: 'S', uptimeSeconds: 3600, threadCount: 6 },
+  { pid: 1002, name: 'node', cpuPercent: 95.3, memPercent: 45.2, state: 'R', uptimeSeconds: 120, threadCount: 12 },
+  { pid: 1003, name: 'java', cpuPercent: 30.1, memPercent: 65.8, state: 'S', uptimeSeconds: 7200, threadCount: 256 },
+];
+
+monitor.snapshot(procs);
+console.log('Alerts:', monitor.getAlerts());
+console.log('Spiking:', monitor.getSpikingProcesses());
+```
+
+**What this demonstrates:** Systematic process monitoring detects resource anomalies early, distinguishes warning from critical thresholds, and enables proactive intervention before outages.
+
+---
+
 ## Practical Takeaways
 
 1. **Learn the find-grep-awk pipeline.** It's the single most powerful pattern for DevOps work.

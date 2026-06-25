@@ -687,6 +687,139 @@ class PaginationHelper {
 console.log("Pagination:", PaginationHelper.metadata(100, 2, 10));
 ```
 
+## TypeScript Implementation: Route Table Generator, OpenAPI Validator, HATEOAS Link Builder
+
+```typescript
+interface RouteDefinition {
+    method: "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
+    path: string;
+    summary: string;
+    tags: string[];
+    params?: Record<string, string>;
+    query?: Record<string, string>;
+    body?: Record<string, any>;
+    responses: Record<number, { description: string; schema?: any }>;
+}
+
+class RouteTableGenerator {
+    static generate(definitions: RouteDefinition[]): string {
+        let table = "| Method | Path | Description |\n|--------|------|-------------|\n";
+        for (const def of definitions.sort((a, b) => a.path.localeCompare(b.path) || a.method.localeCompare(b.method))) {
+            table += `| ${def.method.padEnd(6)} | \`${def.path}\` | ${def.summary} |\n`;
+        }
+        return table;
+    }
+
+    static tree(definitions: RouteDefinition[]): Record<string, any> {
+        const root: Record<string, any> = {};
+        for (const def of definitions) {
+            const parts = def.path.split("/").filter(Boolean);
+            let current = root;
+            for (let i = 0; i < parts.length; i++) {
+                const isParam = parts[i].startsWith(":");
+                const key = isParam ? ":param" : parts[i];
+                if (!current[key]) current[key] = {};
+                if (i === parts.length - 1) {
+                    current[key]["$" + def.method.toLowerCase()] = { summary: def.summary };
+                }
+                current = current[key];
+            }
+        }
+        return root;
+    }
+}
+
+class OpenAPISpecValidator {
+    static validate(spec: any): { valid: boolean; errors: string[] } {
+        const errors: string[] = [];
+
+        if (!spec.openapi) errors.push("Missing openapi version field");
+        if (!spec.info) errors.push("Missing info section");
+        if (!spec.info?.title) errors.push("Missing info.title");
+        if (!spec.info?.version) errors.push("Missing info.version");
+        if (!spec.paths || Object.keys(spec.paths).length === 0) errors.push("No paths defined");
+
+        if (spec.paths) {
+            for (const [path, methods] of Object.entries(spec.paths) as [string, any][]) {
+                if (!path.startsWith("/")) errors.push(`Path "${path}" must start with /`);
+                for (const [method, op] of Object.entries(methods) as [string, any][]) {
+                    if (!["get", "post", "put", "patch", "delete", "options", "head"].includes(method)) {
+                        errors.push(`Invalid method "${method}" in path "${path}"`);
+                    }
+                    if (op.operationId && op.operationId.includes(" ")) {
+                        errors.push(`operationId "${op.operationId}" should not contain spaces`);
+                    }
+                    if (op.parameters) {
+                        for (const param of op.parameters) {
+                            if (!param.name) errors.push(`Parameter missing name in ${path}.${method}`);
+                            if (!param.in) errors.push(`Parameter missing 'in' field in ${path}.${method}`);
+                        }
+                    }
+                }
+            }
+        }
+
+        if (!spec.components?.schemas) {}
+        return { valid: errors.length === 0, errors };
+    }
+
+    static generateTemplate(title: string, version: string): any {
+        return {
+            openapi: "3.1.0",
+            info: { title, version, description: `API specification for ${title}` },
+            servers: [{ url: "http://localhost:3000/api" }],
+            paths: {},
+            components: { schemas: {} }
+        };
+    }
+}
+
+class HATEOASLinkBuilder {
+    static link(rel: string, href: string, method: string = "GET", title?: string): { rel: string; href: string; method: string; title?: string } {
+        return { rel, href, method, ...(title ? { title } : {}) };
+    }
+
+    static collection(baseUrl: string, page: number, total: number, pageSize: number): { data: any[]; _links: Record<string, any> } {
+        const totalPages = Math.ceil(total / pageSize);
+        const links: Record<string, any> = {
+            self: this.link("self", `${baseUrl}?page=${page}&size=${pageSize}`),
+            first: this.link("first", `${baseUrl}?page=1&size=${pageSize}`),
+            last: this.link("last", `${baseUrl}?page=${totalPages}&size=${pageSize}`),
+        };
+        if (page > 1) links.prev = this.link("prev", `${baseUrl}?page=${page - 1}&size=${pageSize}`);
+        if (page < totalPages) links.next = this.link("next", `${baseUrl}?page=${page + 1}&size=${pageSize}`);
+        return { data: [], _links: links };
+    }
+
+    static resource(baseUrl: string, id: string | number): { _links: Record<string, any> } {
+        return {
+            _links: {
+                self: this.link("self", `${baseUrl}/${id}`),
+                update: this.link("update", `${baseUrl}/${id}`, "PUT"),
+                delete: this.link("delete", `${baseUrl}/${id}`, "DELETE"),
+                collection: this.link("collection", baseUrl)
+            }
+        };
+    }
+}
+
+// Demo
+const routes: RouteDefinition[] = [
+    { method: "GET", path: "/users", summary: "List all users", tags: ["users"], responses: { 200: { description: "User list" } } },
+    { method: "POST", path: "/users", summary: "Create a user", tags: ["users"], responses: { 201: { description: "Created" } } },
+    { method: "GET", path: "/users/:id", summary: "Get user by ID", tags: ["users"], responses: { 200: { description: "User" }, 404: { description: "Not found" } } },
+    { method: "PUT", path: "/users/:id", summary: "Update user", tags: ["users"], responses: { 200: { description: "Updated" } } },
+    { method: "DELETE", path: "/users/:id", summary: "Delete user", tags: ["users"], responses: { 204: { description: "Deleted" } } },
+];
+
+console.log(RouteTableGenerator.generate(routes));
+console.log("Route tree:", JSON.stringify(RouteTableGenerator.tree(routes), null, 2));
+const spec = OpenAPISpecValidator.generateTemplate("Users API", "1.0.0");
+console.log("Spec validation:", JSON.stringify(OpenAPISpecValidator.validate(spec)));
+console.log("HATEOAS:", JSON.stringify(HATEOASLinkBuilder.collection("/api/users", 2, 50, 10)._links, null, 2));
+console.log("Resource:", JSON.stringify(HATEOASLinkBuilder.resource("/api/users", "42")._links, null, 2));
+```
+
 ## Summary
 
 REST API design follows resource-oriented principles with consistent URI naming, proper HTTP method usage, and appropriate status codes. Key practices include input validation with Zod, structured error responses, pagination, filtering, sorting, and comprehensive documentation with OpenAPI. Versioning strategies ensure backward compatibility as APIs evolve.

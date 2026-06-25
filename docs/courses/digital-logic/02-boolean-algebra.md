@@ -673,6 +673,101 @@ flowchart LR
     TT -->|Maxterms → 0s| POS
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === Truth Table Generator ===
+function truthTable(vars: number, expr: (inputs: number[]) => number): string {
+    let result = '';
+    const headers = Array.from({ length: vars }, (_, i) => String.fromCharCode(65 + i)).join(' | ');
+    result += `${headers} | F\n${'---|-'.repeat(vars)}---|----\n`;
+    for (let i = 0; i < (1 << vars); i++) {
+        const inputs = Array.from({ length: vars }, (_, j) => (i >> (vars - 1 - j)) & 1);
+        const out = expr(inputs);
+        result += `${inputs.join(' | ')} | ${out}\n`;
+    }
+    return result;
+}
+
+// === Boolean Expression Evaluator ===
+type GateOp = 'AND' | 'OR' | 'NAND' | 'NOR' | 'XOR' | 'XNOR' | 'NOT';
+function evaluateGate(op: GateOp, a: number, b: number = 0): number {
+    switch (op) {
+        case 'AND': return a & b;
+        case 'OR': return a | b;
+        case 'NAND': return ~(a & b) & 1;
+        case 'NOR': return ~(a | b) & 1;
+        case 'XOR': return a ^ b;
+        case 'XNOR': return ~(a ^ b) & 1;
+        case 'NOT': return ~a & 1;
+    }
+}
+
+// === Minterm / Maxterm Calculator ===
+function minterms(vars: number, expr: (inputs: number[]) => number): number[] {
+    const result: number[] = [];
+    for (let i = 0; i < (1 << vars); i++) {
+        const inputs = Array.from({ length: vars }, (_, j) => (i >> (vars - 1 - j)) & 1);
+        if (expr(inputs) === 1) result.push(i);
+    }
+    return result;
+}
+function maxterms(vars: number, expr: (inputs: number[]) => number): number[] {
+    const result: number[] = [];
+    for (let i = 0; i < (1 << vars); i++) {
+        const inputs = Array.from({ length: vars }, (_, j) => (i >> (vars - 1 - j)) & 1);
+        if (expr(inputs) === 0) result.push(i);
+    }
+    return result;
+}
+
+// === Boolean Simplifier (Algebraic rules) ===
+function simplifyBoolean(expr: string): string {
+    let s = expr
+        .replace(/A\+A'?/g, '1').replace(/A'?\+A/g, '1')
+        .replace(/A·A'?/g, '0').replace(/A'?·A/g, '0')
+        .replace(/A\+A/g, 'A').replace(/A·A/g, 'A')
+        .replace(/A\+0/g, 'A').replace(/A·1/g, 'A')
+        .replace(/A·0/g, '0').replace(/A\+1/g, '1')
+        .replace(/A''/g, 'A');
+    return s;
+}
+
+// === Dual Function ===
+function dual(expr: string): string {
+    return expr.replace(/\+/g, 'T').replace(/·/g, '+').replace(/T/g, '·');
+}
+
+// === Boolean Difference (Shannon Expansion) ===
+function booleanDiff(expr: (x: number[]) => number, vars: number, idx: number): number[] {
+    const result: number[] = [];
+    for (let i = 0; i < (1 << (vars - 1)); i++) {
+        const inputs0: number[] = [];
+        const inputs1: number[] = [];
+        let pos = 0;
+        for (let j = 0; j < vars; j++) {
+            if (j === idx) { inputs0.push(0); inputs1.push(1); }
+            else {
+                const bit = (i >> (vars - 2 - pos)) & 1;
+                inputs0.push(bit); inputs1.push(bit);
+                pos++;
+            }
+        }
+        result.push(expr(inputs0) ^ expr(inputs1));
+    }
+    return result;
+}
+
+// === Demo ===
+const f = (x: number[]) => (x[0] & x[1]) | (~x[0] & x[2]);
+console.log('Truth table for F = A·B + A\'·C:');
+console.log(truthTable(3, f));
+console.log('Minterms:', minterms(3, f));
+console.log('Maxterms:', maxterms(3, f));
+console.log('Simplify A·B + A·B\':', simplifyBoolean('A·B+A·B\''));
+console.log('Dual of A+B·C:', dual('A+B·C'));
+```
+
 ## Summary
 
 - Boolean algebra, with operators AND, OR, and NOT on the set {0, 1}, is the mathematical foundation of digital logic design.

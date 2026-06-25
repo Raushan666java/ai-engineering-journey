@@ -635,6 +635,94 @@ Querying Loki for `{correlation_id="abc-123"}` reconstructs the full request flo
 
 ---
 
+### TypeScript: Metrics Collector, Circuit Breaker, Bulkhead, and Distributed Tracer
+
+```typescript
+class MetricsCollector {
+  private counters = new Map<string, number>();
+  private gauges = new Map<string, number>();
+  private histograms = new Map<string, number[]>();
+  incrementCounter(name: string, by = 1): void { this.counters.set(name, (this.counters.get(name) ?? 0) + by); }
+  setGauge(name: string, value: number): void { this.gauges.set(name, value); }
+  recordLatency(name: string, ms: number): void {
+    if (!this.histograms.has(name)) this.histograms.set(name, []);
+    this.histograms.get(name)!.push(ms);
+  }
+  getCounter(name: string): number { return this.counters.get(name) ?? 0; }
+  getGauge(name: string): number { return this.gauges.get(name) ?? 0; }
+  percentile(name: string, p: number): number {
+    const vals = this.histograms.get(name) ?? [];
+    if (vals.length === 0) return 0;
+    const sorted = [...vals].sort((a, b) => a - b);
+    const idx = Math.ceil((p / 100) * sorted.length) - 1;
+    return sorted[Math.max(0, idx)];
+  }
+}
+
+class ResilientCircuitBreaker {
+  private failures = 0;
+  private successes = 0;
+  private state: "closed" | "open" | "half-open" = "closed";
+  private lastFailureTime = 0;
+  constructor(private failureThreshold: number, private successThreshold: number, private timeoutMs: number) {}
+  async call<T>(fn: () => Promise<T>, fallback?: () => Promise<T>): Promise<T> {
+    if (this.state === "open") {
+      if (Date.now() - this.lastFailureTime > this.timeoutMs) this.state = "half-open";
+      else return fallback ? fallback() : Promise.reject(new Error("Circuit open"));
+    }
+    try {
+      const result = await fn();
+      if (this.state === "half-open") {
+        this.successes++;
+        if (this.successes >= this.successThreshold) { this.state = "closed"; this.failures = 0; this.successes = 0; }
+      }
+      return result;
+    } catch (e) {
+      this.failures++;
+      this.lastFailureTime = Date.now();
+      if (this.state === "half-open" || this.failures >= this.failureThreshold) { this.state = "open"; this.successes = 0; }
+      return fallback ? fallback() : Promise.reject(e);
+    }
+  }
+  getState(): string { return this.state; }
+}
+
+class Bulkhead {
+  private active = 0;
+  private queue: (() => void)[] = [];
+  constructor(private maxConcurrent: number, private queueSize: number) {}
+  async run<T>(fn: () => Promise<T>): Promise<T> {
+    if (this.active >= this.maxConcurrent) {
+      if (this.queue.length >= this.queueSize) throw new Error("Bulkhead queue full");
+      await new Promise<void>((resolve) => { this.queue.push(resolve); });
+    }
+    this.active++;
+    try { return await fn(); }
+    finally { this.active--; if (this.queue.length > 0) this.queue.shift()!(); }
+  }
+}
+
+class DistributedTracer {
+  private spans = new Map<string, { traceId: string; parentId: string; service: string; duration: number; startTime: number }[]>();
+  startTrace(): string { return `trace-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`; }
+  recordSpan(traceId: string, parentId: string, service: string): { spanId: string; end: () => void } {
+    const spanId = `${traceId}-span-${this.spans.size}`;
+    const startTime = Date.now();
+    if (!this.spans.has(traceId)) this.spans.set(traceId, []);
+    return {
+      spanId,
+      end: () => { this.spans.get(traceId)!.push({ traceId, parentId, service, duration: Date.now() - startTime, startTime }); },
+    };
+  }
+  getTrace(traceId: string): { service: string; duration: number }[] { return this.spans.get(traceId) ?? []; }
+  getTotalDuration(traceId: string): number {
+    const spans = this.spans.get(traceId) ?? [];
+    return spans.reduce((max, s) => Math.max(max, s.startTime + s.duration), 0) -
+      spans.reduce((min, s) => Math.min(min, s.startTime), Infinity);
+  }
+}
+```
+
 ## Summary
 
 - The three pillars of observability are logging, metrics, and tracing â€” each serves a distinct purpose: debugging, alerting, and latency analysis

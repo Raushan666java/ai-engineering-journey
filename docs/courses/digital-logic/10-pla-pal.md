@@ -610,6 +610,182 @@ class FPGAStateMachine {
 4. **LUTs are universal** — a K-input LUT implements any K-variable function, making FPGAs flexible for any logic
 5. **PLD choice depends on volume** — PALs/CPLDs for low–medium volume, FPGAs for prototyping/medium volume, ASICs for >100K units
 
+## TypeScript Implementations
+
+```typescript
+// === Product Term ===
+type ProductTerm = { inputs: number; mask: number; output: number };
+type PLASpec = { inputs: number; outputs: number; terms: ProductTerm[] };
+
+// === PLA Simulator (Programmable AND + OR) ===
+class PLASim {
+    constructor(private spec: PLASpec) {}
+    evaluate(input: number): number[] {
+        const results = new Array(this.spec.outputs).fill(0);
+        for (const term of this.spec.terms) {
+            const match = (input & term.mask) === term.inputs;
+            if (match) results[term.output] ^= 1;
+        }
+        return results;
+    }
+    productTermCount(): number { return this.spec.terms.length; }
+}
+
+// === PAL Simulator (fixed OR array) ===
+class PALSim {
+    private andTerms: { inputs: number[]; inverted: boolean[] }[];
+
+    constructor(private inputs: number, private outputs: number, andArray: { inputs: number[]; inverted: boolean[] }[]) {
+        this.andTerms = andArray;
+    }
+
+    evaluate(input: number): number[] {
+        const results = new Array(this.outputs).fill(0);
+        for (let o = 0; o < this.outputs; o++) {
+            let product = 1;
+            for (let t = o * 4; t < Math.min((o + 1) * 4, this.andTerms.length); t++) {
+                let term = 1;
+                for (let i = 0; i < this.andTerms[t]?.inputs.length ?? 0; i++) {
+                    const bit = (input >> this.andTerms[t].inputs[i]) & 1;
+                    term &= this.andTerms[t].inverted[i] ? (~bit & 1) : bit;
+                }
+                product = (product | term); // sum of products
+            }
+            results[o] = product;
+        }
+        return results;
+    }
+}
+
+// === PROM Simulator ===
+class PROMSim {
+    private words: number[];
+    constructor(private addrBits: number, private dataBits: number) {
+        this.words = new Array(1 << addrBits).fill(0);
+    }
+    program(addr: number, data: number): void { this.words[addr] = data & ((1 << this.dataBits) - 1); }
+    read(addr: number): number { return this.words[addr] ?? 0; }
+    implementFunction(truthTable: { input: number; output: number }[]): void {
+        for (const entry of truthTable) this.program(entry.input, entry.output);
+    }
+}
+
+// === LUT (K-input) Emulator ===
+class LUT {
+    private sram: number[];
+    constructor(private k: number) { this.sram = new Array(1 << k).fill(0); }
+    configure(truthTable: number[]): void {
+        if (truthTable.length === (1 << this.k)) this.sram = [...truthTable];
+    }
+    evaluate(input: number): number { return this.sram[input & ((1 << this.k) - 1)] ?? 0; }
+    implementFunction(fn: (inputs: number[]) => number): void {
+        const table: number[] = [];
+        for (let i = 0; i < (1 << this.k); i++) {
+            const ins = Array.from({ length: this.k }, (_, j) => (i >> (this.k - 1 - j)) & 1);
+            table.push(fn(ins));
+        }
+        this.configure(table);
+    }
+}
+
+// === Quine-McCluskey Minimizer ===
+class QuineMcCluskey {
+    minimize(minterms: number[], vars: number): string[] {
+        const groups: Map<number, number[]> = new Map();
+        for (const m of minterms) {
+            const ones = m.toString(2).split('1').length - 1;
+            if (!groups.has(ones)) groups.set(ones, []);
+            groups.get(ones)!.push(m);
+        }
+        const primes: string[] = [];
+        let combined = true;
+        let implicants = minterms.map(m => ({ value: m, mask: 0, used: false }));
+        while (combined) {
+            combined = false;
+            const next: { value: number; mask: number; used: boolean }[] = [];
+            for (let i = 0; i < implicants.length; i++) {
+                for (let j = i + 1; j < implicants.length; j++) {
+                    const diff = implicants[i].value ^ implicants[j].value;
+                    const maskDiff = implicants[i].mask ^ implicants[j].mask;
+                    if ((diff & (diff - 1)) === 0 && maskDiff === 0) {
+                        const val = implicants[i].value & ~diff;
+                        const mask = implicants[i].mask | diff;
+                        if (!next.some(n => n.value === val && n.mask === mask)) {
+                            next.push({ value: val, mask, used: false });
+                        }
+                        implicants[i].used = true;
+                        implicants[j].used = true;
+                        combined = true;
+                    }
+                }
+            }
+            for (const imp of implicants) if (!imp.used) primes.push(`${imp.value.toString(2).padStart(vars, '0')}`);
+            implicants = next;
+        }
+        for (const imp of implicants) primes.push(`${imp.value.toString(2).padStart(vars, '0')}`);
+        return [...new Set(primes)];
+    }
+}
+
+// === GAL/CPLD Output Logic Macrocell ===
+class OLMC {
+    private xor: number = 0;
+    private outputMux: 'reg' | 'comb' = 'comb';
+    private flipFlop = 0;
+
+    configure(xor: number, mode: 'reg' | 'comb'): void { this.xor = xor; this.outputMux = mode; }
+    compute(andResult: number, clk: number): number {
+        let result = andResult ^ this.xor;
+        if (this.outputMux === 'reg') {
+            if (clk) this.flipFlop = result;
+            return this.flipFlop;
+        }
+        return result;
+    }
+}
+
+// === FPGA Switch Box Router ===
+class SwitchBox {
+    private connections: boolean[][];
+
+    constructor(private wires: number) {
+        this.connections = Array.from({ length: wires }, () => new Array(wires).fill(false));
+    }
+    connect(w1: number, w2: number): void { this.connections[w1][w2] = this.connections[w2][w1] = true; }
+    canRoute(from: number, to: number): boolean { return this.connections[from][to]; }
+    routeProbability(utilization: number): number {
+        const available = this.wires * (this.wires - 1) / 2;
+        const used = Math.floor(available * utilization);
+        return used / available;
+    }
+}
+
+// === ASIC vs FPGA Break-Even Calculator ===
+class CostModel {
+    static breakEven(fpgaUnit: number, asicNRE: number, asicUnit: number): number {
+        return Math.ceil(asicNRE / (fpgaUnit - asicUnit));
+    }
+}
+
+// === Demo ===
+const qm = new QuineMcCluskey();
+console.log('Q-M minimization of F=Σ(0,1,2,4,5,6)@3:');
+console.log(qm.minimize([0, 1, 2, 4, 5, 6], 3));
+
+const lut = new LUT(3);
+lut.implementFunction((ins) => (ins[0] & ins[1]) | (~ins[0] & ins[2]) ? 1 : 0);
+console.log(`LUT(3) F=A·B+A'·C evaluate(5=101): ${lut.evaluate(5)}`);
+
+const prom = new PROMSim(3, 1);
+prom.implementFunction([{ input: 3, output: 1 }, { input: 5, output: 1 }, { input: 6, output: 1 }, { input: 7, output: 1 }]);
+console.log(`PROM F=Σ(3,5,6,7) read(5): ${prom.read(5)}`);
+
+const sb = new SwitchBox(40);
+sb.connect(0, 1); sb.connect(0, 2);
+console.log(`Switch box route prob @80%: ${(sb.routeProbability(0.8) * 100).toFixed(1)}%`);
+console.log(`ASIC break-even @$50/$5/$250K: ${CostModel.breakEven(50, 250000, 5)} units`);
+```
+
 ## Summary
 
 Programmable logic devices span a wide range from simple PROM-based logic through PLA, PAL, CPLD, and FPGA architectures. Each offers a different trade-off between flexibility, speed, density, and non-recurring engineering cost. PLAs provide the most flexible two-level logic (programmable AND and OR), PALs offer faster predictable delays (fixed OR), and FPGAs dominate high-density applications with LUT-based logic and abundant flip-flops. Understanding these trade-offs is essential for selecting the right implementation technology for any digital design.

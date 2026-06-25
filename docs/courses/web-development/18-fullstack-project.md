@@ -1479,6 +1479,130 @@ Test your understanding with these quick questions.
 
 </details>
 
+## TypeScript Implementation: Full-Stack Project Scaffolding, API Route Tree, Error Boundary Generator
+
+```typescript
+interface ProjectScaffoldConfig {
+    name: string;
+    withAuth: boolean;
+    withDb: boolean;
+    withTests: boolean;
+    withDocker: boolean;
+    frontend: "react" | "nextjs" | "none";
+    backend: "express" | "hono" | "none";
+    database: "postgres" | "sqlite" | "none";
+}
+
+class FullStackScaffolder {
+    static generate(config: ProjectScaffoldConfig): Record<string, string> {
+        const files: Record<string, string> = {};
+
+        files["package.json"] = JSON.stringify({
+            name: config.name, version: "1.0.0", private: true,
+            scripts: {
+                ...(config.frontend !== "none" ? { dev: "npm run dev --workspace=apps/web", build: "npm run build --workspace=apps/web" } : {}),
+                ...(config.backend !== "none" ? { "dev:api": "npm run dev --workspace=apps/api" } : {}),
+                test: "npm run test --workspaces"
+            },
+            workspaces: ["apps/*", "packages/*"]
+        }, null, 2);
+
+        if (config.withDocker) {
+            files["docker-compose.yml"] = `version: "3.9"\nservices:\n  db:\n    image: ${config.database === "postgres" ? "postgres:16" : "postgres:16-alpine"}\n    environment:\n      POSTGRES_DB: ${config.name}\n      POSTGRES_PASSWORD: devpassword\n    ports:\n      - "5432:5432"\n  redis:\n    image: redis:7-alpine\n    ports:\n      - "6379:6379"`;
+            files["Dockerfile"] = "FROM node:20-alpine\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci\nCOPY . .\nRUN npm run build\nEXPOSE 3000\nCMD [\"node\", \"dist/index.js\"]";
+        }
+
+        if (config.withTests) {
+            files["vitest.config.ts"] = `import { defineConfig } from "vitest/config";\nexport default defineConfig({ test: { globals: true, environment: "node", coverage: { reporter: ["text", "json"] } } });`;
+        }
+
+        return files;
+    }
+}
+
+class APIRouteTreeBuilder {
+    static buildTree(routes: { method: string; path: string; handler: string }[]): Record<string, any> {
+        const root: Record<string, any> = {};
+        for (const route of routes) {
+            const parts = route.path.split("/").filter(Boolean);
+            let current = root;
+            for (let i = 0; i < parts.length; i++) {
+                const isParam = parts[i].startsWith(":");
+                const key = isParam ? `{${parts[i].slice(1)}}` : parts[i];
+                if (!current[key]) current[key] = {};
+                if (i === parts.length - 1) {
+                    current[key].$method = route.method.toUpperCase();
+                    current[key].$handler = route.handler;
+                }
+                current = current[key];
+            }
+        }
+        return root;
+    }
+
+    static generateRouterCode(tree: Record<string, any>, indent: string = ""): string {
+        let code = "";
+        for (const [key, value] of Object.entries(tree)) {
+            if (key === "$method" || key === "$handler") continue;
+            const isParam = key.startsWith("{") && key.endsWith("}");
+            code += `${indent}// ${isParam ? `:${key.slice(1, -1)}` : `/${key}`}\n`;
+            if (value.$method) code += `${indent}router.${value.$method.toLowerCase()}("${isParam ? ":" + key.slice(1, -1) : "/" + key}", ${value.$handler});\n`;
+            code += this.generateRouterCode(value, indent + "  ");
+        }
+        return code;
+    }
+}
+
+class ErrorBoundaryGenerator {
+    static react(): string {
+        return `import React, { Component, ErrorInfo, ReactNode } from "react";
+
+interface Props { children: ReactNode; fallback?: ReactNode; onError?: (error: Error, info: ErrorInfo) => void; }
+interface State { hasError: boolean; error: Error | null; }
+
+class ErrorBoundary extends Component<Props, State> {
+  state: State = { hasError: false, error: null };
+
+  static getDerivedStateFromError(error: Error): State { return { hasError: true, error }; }
+
+  componentDidCatch(error: Error, info: ErrorInfo) { this.props.onError?.(error, info); }
+
+  render() {
+    if (this.state.hasError) return this.props.fallback || <div><h2>Something went wrong</h2><p>{this.state.error?.message}</p></div>;
+    return this.props.children;
+  }
+}
+
+export default ErrorBoundary;`;
+    }
+
+    static api(): string {
+        return `import { Request, Response, NextFunction } from "express";
+
+export function errorHandler(err: Error, req: Request, res: Response, next: NextFunction) {
+  console.error("Unhandled error:", err.message);
+  res.status(500).json({ error: "Internal server error", message: process.env.NODE_ENV === "development" ? err.message : undefined });
+}
+
+export function asyncHandler(fn: (req: Request, res: Response, next: NextFunction) => Promise<any>) {
+  return (req: Request, res: Response, next: NextFunction) => Promise.resolve(fn(req, res, next)).catch(next);
+}`;
+    }
+}
+
+// Demo
+const scaffold = FullStackScaffolder.generate({ name: "my-app", withAuth: true, withDb: true, withTests: true, withDocker: true, frontend: "nextjs", backend: "express", database: "postgres" });
+console.log("Scaffold files:", Object.keys(scaffold).join(", "));
+const tree = APIRouteTreeBuilder.buildTree([
+    { method: "GET", path: "/api/users", handler: "getUsers" },
+    { method: "POST", path: "/api/users", handler: "createUser" },
+    { method: "GET", path: "/api/users/:id", handler: "getUserById" },
+    { method: "DELETE", path: "/api/users/:id", handler: "deleteUser" },
+]);
+console.log("Route tree:\n", APIRouteTreeBuilder.generateRouterCode(tree));
+console.log("Error boundary:\n", ErrorBoundaryGenerator.react().slice(0, 200) + "...");
+```
+
 ## Summary
 
 Building a full-stack application requires integrating all the concepts from previous chapters into a cohesive system. In this chapter, we constructed TaskFlow, a complete task management application:

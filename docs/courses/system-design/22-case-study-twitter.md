@@ -504,6 +504,85 @@ The pre-computed timeline lists (fan-on-write output) are stored in Redis as lis
 
 ---
 
+### TypeScript: Trending Topics, Timeline Builder, Rate Limiter
+
+```typescript
+class TrendingTopics {
+  private sketch = new Map<string, number>();
+  private window: { topic: string; time: number }[] = [];
+  private readonly windowMs = 15 * 60 * 1000;
+
+  record(topic: string): void {
+    this.window.push({ topic, time: Date.now() });
+    this.sketch.set(topic, (this.sketch.get(topic) ?? 0) + 1);
+    this.evict();
+  }
+
+  private evict(): void {
+    const cutoff = Date.now() - this.windowMs;
+    while (this.window.length > 0 && this.window[0].time < cutoff) {
+      const old = this.window.shift()!;
+      const count = this.sketch.get(old.topic)! - 1;
+      if (count <= 0) this.sketch.delete(old.topic);
+      else this.sketch.set(old.topic, count);
+    }
+  }
+
+  getTop(n: number): { topic: string; count: number }[] {
+    return [...this.sketch.entries()]
+      .map(([k, v]) => ({ topic: k, count: v }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, n);
+  }
+}
+
+class TimelineBuilder {
+  private tweets = new Map<string, { userId: string; content: string; timestamp: number }>();
+  private followers = new Map<string, string[]>();
+  private readonly pushThreshold = 1500;
+
+  postTweet(tweetId: string, userId: string, content: string): void {
+    this.tweets.set(tweetId, { userId, content, timestamp: Date.now() });
+  }
+
+  follow(follower: string, followee: string): void {
+    if (!this.followers.has(followee)) this.followers.set(followee, []);
+    this.followers.get(followee)!.push(follower);
+  }
+
+  getTimeline(userId: string): { tweetId: string; content: string; userId: string; timestamp: number }[] {
+    const timeline: { tweetId: string; content: string; userId: string; timestamp: number }[] = [];
+    for (const [tweetId, tweet] of this.tweets) {
+      const followerCount = (this.followers.get(tweet.userId) ?? []).length;
+      if (followerCount <= this.pushThreshold || tweet.userId === userId) {
+        timeline.push({ tweetId, ...tweet });
+      }
+    }
+    return timeline.sort((a, b) => b.timestamp - a.timestamp).slice(0, 200);
+  }
+}
+
+class DistributedRateLimiter {
+  private buckets = new Map<string, { tokens: number; lastRefill: number }>();
+  constructor(private maxTokens: number, private refillIntervalMs: number) {}
+
+  allow(userId: string, cost = 1): boolean {
+    const now = Date.now();
+    let bucket = this.buckets.get(userId);
+    if (!bucket) { bucket = { tokens: this.maxTokens, lastRefill: now }; this.buckets.set(userId, bucket); }
+    const elapsed = now - bucket.lastRefill;
+    const refill = Math.floor(elapsed / this.refillIntervalMs);
+    bucket.tokens = Math.min(this.maxTokens, bucket.tokens + refill);
+    bucket.lastRefill = now;
+    if (bucket.tokens < cost) return false;
+    bucket.tokens -= cost;
+    return true;
+  }
+
+  getUserRate(userId: string): number { return this.buckets.get(userId)?.tokens ?? this.maxTokens; }
+}
+```
+
 ### TypeScript: Fan-Out Decision
 
 ```typescript

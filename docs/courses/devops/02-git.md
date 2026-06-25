@@ -648,6 +648,236 @@ console.log(predictor.generateReport(prediction));
 
 ---
 
+### Git Hook Generator and Manager
+
+Git hooks automate policy enforcement at every lifecycle stage. The following tool generates, installs, and manages client-side hooks across repositories.
+
+```typescript
+// git-hooks-manager.ts
+// Generate and manage Git hooks programmatically
+
+interface HookScript {
+  hook: 'pre-commit' | 'prepare-commit-msg' | 'commit-msg' | 'post-commit' | 'pre-push' | 'post-merge';
+  content: string;
+  language: 'bash' | 'node' | 'python';
+  enabled: boolean;
+}
+
+interface HookConfig {
+  scripts: HookScript[];
+  repoPath: string;
+}
+
+class GitHookManager {
+  constructor(private config: HookConfig) {}
+
+  generateHook(hook: HookScript): string {
+    const shebang: Record<string, string> = {
+      bash: '#!/usr/bin/env bash\nset -euo pipefail\n',
+      node: '#!/usr/bin/env node\n',
+      python: '#!/usr/bin/env python3\n',
+    };
+
+    return shebang[hook.language] + '\n' + hook.content + '\n';
+  }
+
+  getInstalledHooks(): string[] {
+    const hooksDir = `${this.config.repoPath}/.git/hooks`;
+    try {
+      return require('fs').readdirSync(hooksDir)
+        .filter(f => !f.endsWith('.sample') && !f.startsWith('.'));
+    } catch {
+      return [];
+    }
+  }
+
+  validateHookInstallation(hookName: string): boolean {
+    const installed = this.getInstalledHooks();
+    return installed.includes(hookName);
+  }
+
+  static createPreCommitNoSecrets(): HookScript {
+    return {
+      hook: 'pre-commit',
+      content: `
+for file in $(git diff --cached --name-only); do
+  if [[ -f "$file" ]]; then
+    if grep -qE '(AWS_SECRET|-----BEGIN RSA PRIVATE KEY-----|ghp_[a-zA-Z0-9]{36})' "$file"; then
+      echo "ERROR: Potential secret found in $file"
+      exit 1
+    fi
+  fi
+done
+`,
+      language: 'bash',
+      enabled: true,
+    };
+  }
+
+  static createPreCommitLint(): HookScript {
+    return {
+      hook: 'pre-commit',
+      content: `
+FILES=$(git diff --cached --name-only --diff-filter=ACM | grep '\\.ts$')
+if [ -n "$FILES" ]; then
+  npx eslint $FILES
+fi
+`,
+      language: 'bash',
+      enabled: true,
+    };
+  }
+
+  static createCommitMsgValidator(): HookScript {
+    return {
+      hook: 'commit-msg',
+      content: `
+COMMIT_MSG=$(cat "$1")
+# Validate conventional commit format
+if ! echo "$COMMIT_MSG" | grep -qE '^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\\(.+\\))?!?:\\s.+'; then
+  echo "ERROR: Commit message must follow conventional commits format"
+  echo "  <type>(<scope>): <description>"
+  echo "  Valid types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert"
+  exit 1
+fi
+`,
+      language: 'bash',
+      enabled: true,
+    };
+  }
+
+  static createPrePushDenyMain(): HookScript {
+    return {
+      hook: 'pre-push',
+      content: `
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$BRANCH" = "main" ] || [ "$BRANCH" = "master" ]; then
+  echo "ERROR: Direct push to $BRANCH is not allowed. Use pull requests."
+  exit 1
+fi
+`,
+      language: 'bash',
+      enabled: true,
+    };
+  }
+
+  static createPostMergeAutoClean(): HookScript {
+    return {
+      hook: 'post-merge',
+      content: `
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$BRANCH" = "main" ] || [ "$BRANCH" = "master" ]; then
+  echo "Cleaning up merged feature branches..."
+  git branch --merged main | grep -v "main\\|master" | xargs -r git branch -d
+fi
+`,
+      language: 'bash',
+      enabled: true,
+    };
+  }
+}
+
+const hooks = [
+  GitHookManager.createPreCommitNoSecrets(),
+  GitHookManager.createPreCommitLint(),
+  GitHookManager.createCommitMsgValidator(),
+  GitHookManager.createPrePushDenyMain(),
+  GitHookManager.createPostMergeAutoClean(),
+];
+
+const manager = new GitHookManager({ scripts: hooks, repoPath: '/repo' });
+for (const hook of hooks) {
+  console.log(`Generated ${hook.hook} (${hook.language}):`);
+  console.log(manager.generateHook(hook));
+}
+```
+
+**What this demonstrates:** Programmatic Git hook management ensures consistent enforcement of code quality, security, and workflow policies across all repositories without manual setup.
+
+---
+
+### Git Rebase Simulation Engine
+
+Understanding rebase mechanics is critical for Git mastery. The following simulator models the rebase operation at the object level.
+
+```typescript
+// git-rebase-sim.ts
+// Simulate Git rebase operations
+
+interface GitCommit {
+  hash: string;
+  parent: string | null;
+  message: string;
+  content: string;
+}
+
+class RebaseSimulator {
+  private commits: GitCommit[] = [];
+  private counter = 0;
+
+  addCommit(parent: string | null, message: string, content: string): GitCommit {
+    this.counter++;
+    const hash = `c${this.counter}`;
+    const commit: GitCommit = { hash, parent, message, content };
+    this.commits.push(commit);
+    return commit;
+  }
+
+  getBranchCommits(branchHead: string): GitCommit[] {
+    const result: GitCommit[] = [];
+    let current = this.commits.find(c => c.hash === branchHead);
+    while (current) {
+      result.unshift(current);
+      current = current.parent ? this.commits.find(c => c.hash === current!.parent) : undefined;
+    }
+    return result;
+  }
+
+  rebase(onto: string, branch: string): string[] {
+    const branchCommits = this.getBranchCommits(branch);
+    const ontoCommits = this.getBranchCommits(onto);
+    const ontoSet = new Set(ontoCommits.map(c => c.content));
+
+    // Find only commits unique to the branch
+    const uniqueToBranch = branchCommits.filter(c => !ontoSet.has(c.content));
+    const newHashes: string[] = [];
+    let newParent = onto;
+
+    for (const commit of uniqueToBranch) {
+      this.counter++;
+      const newHash = `c${this.counter}`;
+      this.addCommit(newParent, commit.message, commit.content);
+      newParent = newHash;
+      newHashes.push(newHash);
+    }
+
+    return newHashes; // new branch head
+  }
+
+  visualize(branchHead: string): string {
+    const commits = this.getBranchCommits(branchHead);
+    return commits.map(c => `${c.hash}: ${c.message} (${c.content.slice(0, 20)}...)`).join('\n');
+  }
+}
+
+const sim = new RebaseSimulator();
+const base = sim.addCommit(null, 'Initial commit', 'base init');
+const c1 = sim.addCommit(base.hash, 'feat: add login', 'login code');
+const c2 = sim.addCommit(c1.hash, 'feat: add dashboard', 'dashboard code');
+
+const onto = sim.addCommit(base.hash, 'fix: hotfix config', 'config fix');
+const newHead = sim.rebase(onto.hash, c2.hash);
+
+console.log('Before rebase (feature branch):');
+console.log(sim.visualize(c2.hash));
+console.log('\nAfter rebase (replayed onto hotfix):');
+console.log(sim.visualize(newHead[newHead.length - 1]));
+```
+
+**What this demonstrates:** Understanding rebase as replaying commits onto a new base clarifies when rebase is safe (local branches) vs destructive (shared branches).
+
+---
+
 ## Practical Takeaways
 
 1. **Use trunk-based development for CI/CD.** Short-lived branches keep integration pain low.

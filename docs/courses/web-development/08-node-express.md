@@ -548,6 +548,157 @@ console.log("Chain sim:", new MiddlewareChain().use((req, res, n) => n()));
 console.log("Route:", RouteTester.testRoute("get", "/users/:id"));
 ```
 
+## TypeScript Implementation: HTTP Server Router, Middleware Chain, Stream Pipeline Builder
+
+```typescript
+type RequestHandler = (req: any, res: any, next: (err?: any) => void) => void;
+
+class HTTPServerRouter {
+    private routes: Map<string, Map<string, RequestHandler>> = new Map();
+
+    private addRoute(method: string, path: string, handler: RequestHandler): void {
+        if (!this.routes.has(method)) this.routes.set(method, new Map());
+        this.routes.get(method)!.set(path, handler);
+    }
+
+    get(path: string, handler: RequestHandler): void { this.addRoute("GET", path, handler); }
+    post(path: string, handler: RequestHandler): void { this.addRoute("POST", path, handler); }
+    put(path: string, handler: RequestHandler): void { this.addRoute("PUT", path, handler); }
+    delete(path: string, handler: RequestHandler): void { this.addRoute("DELETE", path, handler); }
+
+    match(method: string, url: string): { handler: RequestHandler | null; params: Record<string, string> } {
+        const routes = this.routes.get(method);
+        if (!routes) return { handler: null, params: {} };
+        const urlParts = url.split("/").filter(Boolean);
+        for (const [pattern, handler] of routes) {
+            const patternParts = pattern.split("/").filter(Boolean);
+            if (patternParts.length !== urlParts.length) continue;
+            const params: Record<string, string> = {};
+            let match = true;
+            for (let i = 0; i < patternParts.length; i++) {
+                if (patternParts[i].startsWith(":")) {
+                    params[patternParts[i].slice(1)] = urlParts[i];
+                } else if (patternParts[i] !== urlParts[i]) {
+                    match = false; break;
+                }
+            }
+            if (match) return { handler, params };
+        }
+        return { handler: null, params: {} };
+    }
+
+    routeTable(): { method: string; path: string }[] {
+        const table: { method: string; path: string }[] = [];
+        for (const [method, routes] of this.routes) {
+            for (const path of routes.keys()) table.push({ method, path });
+        }
+        return table.sort((a, b) => a.method.localeCompare(b.method));
+    }
+}
+
+class MiddlewareChain {
+    private middlewares: RequestHandler[] = [];
+
+    use(fn: RequestHandler): MiddlewareChain {
+        this.middlewares.push(fn);
+        return this;
+    }
+
+    execute(req: any, res: any, finalHandler: RequestHandler): void {
+        let idx = 0;
+        const next = (err?: any) => {
+            if (err) {
+                console.error("Middleware error:", err);
+                res.statusCode = 500;
+                res.end("Internal Server Error");
+                return;
+            }
+            if (idx < this.middlewares.length) {
+                this.middlewares[idx++](req, res, next);
+            } else {
+                finalHandler(req, res, () => {});
+            }
+        };
+        next();
+    }
+
+    static compose(...middlewares: RequestHandler[]): RequestHandler {
+        return (req, res, next) => {
+            let idx = 0;
+            const dispatch = (err?: any) => {
+                if (err) return next(err);
+                if (idx >= middlewares.length) return next();
+                return middlewares[idx++](req, res, dispatch);
+            };
+            dispatch();
+        };
+    }
+}
+
+class StreamPipelineBuilder {
+    static pipeline<T>(...transforms: ((data: T) => T)[]): (data: T) => T {
+        return (data: T) => transforms.reduce((acc, fn) => fn(acc), data);
+    }
+
+    static buffer(stream: { on: (ev: string, cb: (...args: any[]) => void) => void }): Promise<Buffer> {
+        return new Promise((resolve, reject) => {
+            const chunks: Buffer[] = [];
+            stream.on("data", (chunk: Buffer) => chunks.push(chunk));
+            stream.on("end", () => resolve(Buffer.concat(chunks)));
+            stream.on("error", reject);
+        });
+    }
+
+    static transformStream(size: number): { write: (chunk: string) => string[]; end: () => string } {
+        const buffer: string[] = [];
+        return {
+            write: (chunk: string) => {
+                buffer.push(chunk);
+                const lines: string[] = [];
+                let remaining = buffer.join("");
+                const idx = remaining.lastIndexOf("\n");
+                if (idx >= 0) {
+                    lines.push(...remaining.slice(0, idx).split("\n"));
+                    buffer.length = 0;
+                    buffer.push(remaining.slice(idx + 1));
+                }
+                return lines;
+            },
+            end: () => buffer.join("")
+        };
+    }
+
+    static async batch<T>(items: T[], batchSize: number, fn: (item: T) => Promise<any>): Promise<any[]> {
+        const results: any[] = [];
+        for (let i = 0; i < items.length; i += batchSize) {
+            const batch = items.slice(i, i + batchSize);
+            const batchResults = await Promise.all(batch.map(fn));
+            results.push(...batchResults);
+        }
+        return results;
+    }
+}
+
+// Demo
+const router = new HTTPServerRouter();
+router.get("/users", (req, res, next) => {});
+router.get("/users/:id", (req, res, next) => {});
+router.post("/users", (req, res, next) => {});
+router.put("/users/:id", (req, res, next) => {});
+router.delete("/users/:id", (req, res, next) => {});
+
+const match = router.match("GET", "/users/42");
+console.log("Route match:", match.params);
+
+const chain = new MiddlewareChain();
+chain.use((req, res, next) => { console.log("Logger"); next(); });
+chain.use((req, res, next) => { console.log("Auth"); next(); });
+chain.execute({}, { statusCode: 200, end: (msg: string) => {} }, (req, res) => console.log("Handler"));
+console.log("Pipeline:", StreamPipelineBuilder.pipeline(
+    (s: number) => s * 2, (s: number) => s + 1
+)(5));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** Middleware functions process requests in order and can modify request/response objects.

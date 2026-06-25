@@ -741,6 +741,156 @@ class PDCConfigGenerator {
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === Endorsement Policy Simulator ===
+type Principal = { org: string; role: string };
+type EndorsementPolicy = { rule: 'AND' | 'OR' | 'NOutOf'; principals: Principal[]; threshold?: number };
+
+class EndorsementSimulator {
+    evaluate(policy: EndorsementPolicy, endorsers: { org: string; role: string }[]): boolean {
+        const match = (p: Principal) => endorsers.some(e => e.org === p.org && e.role === p.role);
+        switch (policy.rule) {
+            case 'AND': return policy.principals.every(match);
+            case 'OR': return policy.principals.some(match);
+            case 'NOutOf': {
+                const count = policy.principals.filter(match).length;
+                return count >= (policy.threshold ?? 1);
+            }
+        }
+    }
+    static parsePolicyString(s: string): EndorsementPolicy {
+        if (s.startsWith('AND(')) return { rule: 'AND', principals: s.slice(4, -1).split(',').map(p => { const [org, role] = p.trim().split('.'); return { org, role }; }) };
+        if (s.startsWith('OR(')) return { rule: 'OR', principals: s.slice(3, -1).split(',').map(p => { const [org, role] = p.trim().split('.'); return { org, role }; }) };
+        return { rule: 'OR', principals: [{ org: '', role: '' }] };
+    }
+}
+
+// === Channel Configuration Generator ===
+interface ChannelConfig { name: string; orgs: string[]; policies: { endorsement: string }; }
+
+class ChannelConfigGen {
+    static generate(name: string, orgs: string[], policy: string): ChannelConfig {
+        return { name, orgs, policies: { endorsement: policy } };
+    }
+    static crossChannel(invokingOrg: string, channel1: string, channel2: string): { success: boolean; error?: string } {
+        const orgs1 = ['Org1', 'Org2'], orgs2 = ['Org2', 'Org3'];
+        if (!orgs1.includes(invokingOrg) && !orgs2.includes(invokingOrg)) return { success: false, error: 'org not on any channel' };
+        if (!orgs1.some(o => orgs2.includes(o))) return { success: false, error: 'no common org to bridge channels' };
+        return { success: true };
+    }
+}
+
+// === Chaincode Lifecycle Manager ===
+class ChaincodeLifecycle {
+    private packages = new Map<string, { version: string; sequence: number; endorsed: Set<string>; committed: boolean }>();
+    
+    packageCC(name: string, version: string): string {
+        const id = `${name}@${version}`;
+        this.packages.set(id, { version, sequence: 1, endorsed: new Set(), committed: false });
+        return id;
+    }
+    approveCC(ccId: string, org: string): boolean {
+        const cc = this.packages.get(ccId);
+        if (!cc) return false;
+        cc.endorsed.add(org);
+        return true;
+    }
+    commitCC(ccId: string, requiredOrgs: string[]): boolean {
+        const cc = this.packages.get(ccId);
+        if (!cc) return false;
+        const approved = requiredOrgs.every(o => cc.endorsed.has(o));
+        if (approved) cc.committed = true;
+        return approved;
+    }
+    queryCC(ccId: string): { committed: boolean; approvals: number } | null {
+        const cc = this.packages.get(ccId);
+        return cc ? { committed: cc.committed, approvals: cc.endorsed.size } : null;
+    }
+}
+
+// === MSP (Membership Service Provider) ===
+interface Identity { id: string; org: string; role: string; certificate: string; }
+class MSPManager {
+    private identities = new Map<string, Identity>();
+    private revocations = new Set<string>();
+
+    register(id: string, org: string, role: string, cert: string): Identity {
+        const identity: Identity = { id, org, role, certificate: cert };
+        this.identities.set(id, identity);
+        return identity;
+    }
+    validate(id: string): boolean {
+        return this.identities.has(id) && !this.revocations.has(id);
+    }
+    revoke(id: string): void { this.revocations.add(id); }
+    getOrg(id: string): string | undefined { return this.identities.get(id)?.org; }
+}
+
+// === Private Data Collection ===
+class PrivateDataCollection {
+    private data = new Map<string, Map<string, string>>();
+    
+    store(collection: string, key: string, value: string, orgs: string[]): void {
+        if (!this.data.has(collection)) this.data.set(collection, new Map());
+        this.data.get(collection)!.set(key, value);
+    }
+    query(collection: string, key: string, org: string, allowedOrgs: string[]): string | null {
+        if (!allowedOrgs.includes(org)) return null;
+        return this.data.get(collection)?.get(key) ?? null;
+    }
+}
+
+// === Orderer Raft Simulator ===
+class RaftOrderer {
+    private leader: string;
+    private term = 0;
+    private logs: string[] = [];
+
+    constructor(private nodes: string[]) { this.leader = nodes[0]; }
+    
+    requestOrder(tx: string, from: string): { block: number } | null {
+        if (from !== this.leader) return null;
+        this.logs.push(tx);
+        if (this.logs.length % 3 === 0) return { block: this.logs.length / 3 };
+        return null;
+    }
+    getLogs(): string[] { return [...this.logs]; }
+    electLeader(candidate: string): void {
+        this.leader = candidate;
+        this.term++;
+    }
+}
+
+// === Demo ===
+const endorser = new EndorsementSimulator();
+const policy = EndorsementSimulator.parsePolicyString("OR('Org1.member','Org2.member')");
+console.log(`Endorsement policy OR(Org1,Org2):`);
+console.log(`  Org1 endorses: ${endorser.evaluate(policy, [{ org: 'Org1', role: 'member' }])}`);
+console.log(`  Org3 endorses: ${endorser.evaluate(policy, [{ org: 'Org3', role: 'member' }])}`);
+
+const lifecycle = new ChaincodeLifecycle();
+const cc = lifecycle.packageCC('mychaincode', '1.0');
+lifecycle.approveCC(cc, 'Org1'); lifecycle.approveCC(cc, 'Org2');
+const committed = lifecycle.commitCC(cc, ['Org1', 'Org2']);
+console.log(`Chaincode committed: ${committed}`);
+
+const msp = new MSPManager();
+msp.register('alice', 'Org1', 'member', 'cert1');
+console.log(`Alice valid: ${msp.validate('alice')}`);
+msp.revoke('alice');
+console.log(`Alice after revoke: ${msp.validate('alice')}`);
+
+const pdc = new PrivateDataCollection();
+pdc.store('collection1', 'key1', 'sensitive', ['Org1', 'Org2']);
+console.log(`Org1 can query: ${pdc.query('collection1', 'key1', 'Org1', ['Org1', 'Org2'])}`);
+console.log(`Org3 can query: ${pdc.query('collection1', 'key1', 'Org3', ['Org1', 'Org2'])}`);
+
+const raft = new RaftOrderer(['n0', 'n1', 'n2']);
+console.log(`Order tx: ${raft.requestOrder('tx1', 'n0') !== null ? 'ordered' : 'rejected'}`);
+```
+
 ## Summary
 
 - Enterprise blockchains prioritize privacy, performance, and controlled access over openness.

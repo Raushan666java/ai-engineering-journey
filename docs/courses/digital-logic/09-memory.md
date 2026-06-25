@@ -617,6 +617,169 @@ class DirectMappedCache {
 4. **Address pre-decoders save area** — multi-level decoding reduces transistor count by orders of magnitude
 5. **ECC is essential for modern memories** — SECDED Hamming codes protect DRAM and Flash from soft errors
 
+## TypeScript Implementations
+
+```typescript
+// === SRAM Array (8x8) ===
+class SRAM8x8 {
+    private cells: number[][] = Array.from({ length: 8 }, () => new Array(8).fill(0));
+    private rowDecoder(row: number): number { return 1 << row; }
+    write(row: number, col: number, data: number): void {
+        if (row < 8 && col < 8) this.cells[row][col] = data & 1;
+    }
+    read(row: number, col: number): number {
+        return row < 8 && col < 8 ? this.cells[row][col] : 0;
+    }
+    writeWord(row: number, data: number): void {
+        for (let i = 0; i < 8; i++) this.cells[row][i] = (data >> i) & 1;
+    }
+    readWord(row: number): number {
+        return this.cells[row].reduce((v, b, i) => v | (b << i), 0);
+    }
+}
+
+// === DRAM Controller ===
+class DRAMController {
+    private cells: Map<number, number> = new Map();
+    private rowBuffer = new Map<number, number>();
+    private lastRow = -1;
+    private readonly tRCD = 3, tCAS = 2, tRP = 2;
+    private cycles = 0;
+
+    constructor(private rows: number, private cols: number) {}
+
+    read(row: number, col: number): number {
+        if (this.lastRow !== row) {
+            this.cycles += this.tRP + this.tRCD;
+            this.lastRow = row;
+        }
+        this.cycles += this.tCAS;
+        const addr = (row << 4) | col;
+        return this.cells.get(addr) ?? 0;
+    }
+
+    write(row: number, col: number, data: number): void {
+        if (this.lastRow !== row) {
+            this.cycles += this.tRP + this.tRCD;
+            this.lastRow = row;
+        }
+        this.cycles += this.tCAS;
+        this.cells.set((row << 4) | col, data & 0xFF);
+    }
+
+    refreshAll(): void { this.cycles += this.rows * 8; }
+    totalCycles(): number { return this.cycles; }
+}
+
+// === Hamming SECDED (64-bit data) ===
+class HammingSECDED {
+    private readonly checkBits: number[][];
+
+    constructor(private dataBits = 64) {
+        this.checkBits = [];
+        let c = 0;
+        while ((1 << c) < dataBits + c + 1) c++;
+        for (let i = 0; i < dataBits; i++) {
+            const bits: number[] = [];
+            const pos = i + c + 1;
+            for (let j = 0; j < c; j++) if (pos & (1 << j)) bits.push(j);
+            this.checkBits.push(bits);
+        }
+    }
+
+    encode(data: bigint): { codeword: bigint; parity: number } {
+        let code = data;
+        const pbits: number[] = [];
+        for (let c = 0; c < this.checkBits[0]?.length ?? 0; c++) {
+            let p = 0;
+            for (let i = 0; i < this.dataBits; i++) {
+                if (this.checkBits[i]?.includes(c)) p ^= Number((data >> BigInt(i)) & BigInt(1));
+            }
+            pbits.push(p);
+        }
+        const totalParity = pbits.reduce((a, b) => a ^ b, 0) ^ data.toString(2).split('').reduce((a, c) => a ^ parseInt(c), 0);
+        return { codeword: code, parity: totalParity };
+    }
+}
+
+// === ROM-based Sine LUT ===
+class SineLUT {
+    private table: number[];
+    constructor(entries = 256) {
+        this.table = Array.from({ length: entries }, (_, i) =>
+            Math.round(127 * Math.sin((2 * Math.PI * i) / entries) + 128));
+    }
+    lookup(index: number): number { return this.table[index % this.table.length]; }
+    maxError(): number {
+        const ideal = Array.from({ length: this.table.length }, (_, i) => 127 * Math.sin((2 * Math.PI * i) / this.table.length) + 128);
+        return Math.max(...this.table.map((v, i) => Math.abs(v - ideal[i])));
+    }
+}
+
+// === Cache Simulator (4-way set-associative) ===
+class CacheSim {
+    private lines: { tag: number; valid: boolean; lru: number; data: number }[][];
+    constructor(private sets: number, private ways: number) {
+        this.lines = Array.from({ length: sets }, () =>
+            Array.from({ length: ways }, () => ({ tag: 0, valid: false, lru: 0, data: 0 })));
+    }
+    access(addr: number): { hit: boolean; data: number } {
+        const setIdx = addr % this.sets;
+        const tag = Math.floor(addr / this.sets);
+        const set = this.lines[setIdx];
+        const hit = set.find(l => l.valid && l.tag === tag);
+        if (hit) {
+            hit.lru = 0;
+            set.forEach(l => l.lru++);
+            return { hit: true, data: hit.data };
+        }
+        const lruWay = set.reduce((min, l, i) => l.lru > set[min].lru ? i : min, 0);
+        set[lruWay] = { tag, valid: true, lru: 0, data: addr };
+        set.forEach(l => l.lru++);
+        return { hit: false, data: addr };
+    }
+    hitRate(accesses: number[]): number {
+        const hits = accesses.filter(a => this.access(a).hit).length;
+        return hits / accesses.length;
+    }
+}
+
+// === Memory Power Model ===
+class MemoryPowerModel {
+    static estimateSRAM(capacityKB: number, accessRateMHz: number, techNm: number): number {
+        const cellPower = 0.5 * (techNm / 45) * capacityKB;
+        const dynamicPower = cellPower * (accessRateMHz / 100);
+        return dynamicPower; // mW
+    }
+    static estimateDRAM(capacityMB: number, accessRateMHz: number, techNm: number): number {
+        const cellPower = 0.1 * (techNm / 45) * capacityMB;
+        const refreshPower = cellPower * 0.05 * accessRateMHz;
+        return cellPower + refreshPower; // mW
+    }
+}
+
+// === Demo ===
+const sram = new SRAM8x8();
+sram.writeWord(0, 0b11001010);
+console.log(`SRAM read word[0]: ${sram.readWord(0).toString(2).padStart(8, '0')}`);
+
+const drc = new DRAMController(64, 16);
+drc.write(0, 0, 0x42);
+console.log(`DRAM read(0,0): ${drc.read(0, 0)} (${drc.totalCycles()} cycles)`);
+
+const sl = new SineLUT(256);
+console.log(`Sine LUT max error: ${sl.maxError().toFixed(3)}`);
+
+const hs = new HammingSECDED(64);
+console.log(`Hamming SECDED codeword bits: ${hs.encode(BigInt(0xDEADBEEF)).codeword.toString(16)}`);
+
+const cache = new CacheSim(8, 4);
+const addrs = [0, 4, 8, 12, 0, 16, 20, 4, 24, 8];
+console.log(`Cache hit rate: ${(cache.hitRate(addrs) * 100).toFixed(0)}%`);
+
+console.log(`SRAM 256KB @ 45nm power: ${MemoryPowerModel.estimateSRAM(256, 100, 45).toFixed(2)} mW`);
+```
+
 ## Summary
 
 Semiconductor memory spans a wide design space from the 6T SRAM cell through 1T1C DRAM to floating-gate Flash. SRAM provides the fastest access (1–10 ns) at the cost of density, while DRAM offers higher density with refresh overhead. Flash memory provides non-volatile storage at the cost of write speed and endurance limits. Address decoding, sense amplification, and error correction circuits are critical enablers. The next chapter explores programmable logic arrays and PALs — structured logic that bridges memory and computation.

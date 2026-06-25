@@ -650,6 +650,222 @@ console.log('Suggestions:', optimizer.suggestCopyOptimizations(nodeAppStages).jo
 
 ---
 
+### Docker Container Resource Profiler and Cost Allocator
+
+Understanding container resource consumption is critical for capacity planning and cost allocation. The following tool profiles container CPU, memory, and network usage, then allocates costs across teams.
+
+```typescript
+// container-profiler.ts
+// Profile container resource usage and allocate costs
+
+interface ContainerMetrics {
+  containerId: string;
+  serviceName: string;
+  team: string;
+  cpuPercent: number;
+  memoryMB: number;
+  networkRxMB: number;
+  networkTxMB: number;
+  uptimeHours: number;
+}
+
+interface ResourceProfile {
+  metrics: ContainerMetrics;
+  costPerHour: number;
+  dailyCost: number;
+  monthlyCost: number;
+  efficiencyScore: number;
+  recommendations: string[];
+}
+
+class ContainerProfiler {
+  private readonly cpuCostPerCoreHour = 0.04;
+  private readonly memCostPerGBHour = 0.005;
+
+  profile(metrics: ContainerMetrics): ResourceProfile {
+    const cpuCores = metrics.cpuPercent / 100;
+    const memGB = metrics.memoryMB / 1024;
+    const costPerHour = (cpuCores * this.cpuCostPerCoreHour) + (memGB * this.memCostPerGBHour);
+
+    const efficiencyScore = this.calculateEfficiency(metrics);
+    const recommendations = this.generateRecommendations(metrics, efficiencyScore);
+
+    return {
+      metrics,
+      costPerHour: Math.round(costPerHour * 1000) / 1000,
+      dailyCost: Math.round(costPerHour * 24 * 100) / 100,
+      monthlyCost: Math.round(costPerHour * 24 * 30 * 100) / 100,
+      efficiencyScore,
+      recommendations,
+    };
+  }
+
+  private calculateEfficiency(m: ContainerMetrics): number {
+    let score = 100;
+    if (m.cpuPercent < 5) score -= 20;
+    if (m.memoryMB < 10) score -= 10;
+    if (m.cpuPercent > 90) score -= 15;
+    if (m.memoryMB > 80 && m.cpuPercent < 10) score -= 25;
+    return Math.max(0, score);
+  }
+
+  private generateRecommendations(m: ContainerMetrics, score: number): string[] {
+    const recs: string[] = [];
+    if (m.cpuPercent < 5) recs.push(`Low CPU (${m.cpuPercent}%) — consider rightsizing or consolidating`);
+    if (m.memoryMB < 10) recs.push(`Low memory usage — container may be over-provisioned`);
+    if (m.cpuPercent > 90) recs.push(`High CPU (${m.cpuPercent}%) — consider scaling out`);
+    if (score < 50) recs.push('Poor efficiency — review resource requests and limits');
+    return recs;
+  }
+
+  allocateCosts(profiles: ResourceProfile[]): { team: string; totalMonthly: number; containers: number }[] {
+    const byTeam = new Map<string, { total: number; count: number }>();
+    for (const p of profiles) {
+      const entry = byTeam.get(p.metrics.team) || { total: 0, count: 0 };
+      entry.total += p.monthlyCost;
+      entry.count++;
+      byTeam.set(p.metrics.team, entry);
+    }
+
+    return [...byTeam.entries()]
+      .map(([team, data]) => ({ team, totalMonthly: Math.round(data.total * 100) / 100, containers: data.count }))
+      .sort((a, b) => b.totalMonthly - a.totalMonthly);
+  }
+
+  generateReport(profile: ResourceProfile): string {
+    return `## Container Resource Profile\n\n` +
+      `**Service:** ${profile.metrics.serviceName} (${profile.metrics.containerId.slice(0, 12)})\n` +
+      `**Team:** ${profile.metrics.team}\n` +
+      `**CPU:** ${profile.metrics.cpuPercent}% | **Memory:** ${profile.metrics.memoryMB}MB\n` +
+      `**Network:** ${profile.metrics.networkRxMB}MB RX / ${profile.metrics.networkTxMB}MB TX\n` +
+      `**Efficiency:** ${profile.efficiencyScore}/100\n\n` +
+      `**Cost:** $${profile.costPerHour}/hr | $${profile.dailyCost}/day | $${profile.monthlyCost}/mo\n\n` +
+      (profile.recommendations.length > 0 ? '**Recommendations:**\n' + profile.recommendations.map(r => `- ${r}`).join('\n') : '');
+  }
+}
+
+const profiler = new ContainerProfiler();
+const profiles = [
+  profiler.profile({ containerId: 'abc123def456', serviceName: 'api-gateway', team: 'platform', cpuPercent: 15, memoryMB: 256, networkRxMB: 500, networkTxMB: 200, uptimeHours: 168 }),
+  profiler.profile({ containerId: 'def789abc012', serviceName: 'batch-worker', team: 'data', cpuPercent: 2, memoryMB: 512, networkRxMB: 50, networkTxMB: 10, uptimeHours: 720 }),
+  profiler.profile({ containerId: 'ghi345def678', serviceName: 'redis-cache', team: 'platform', cpuPercent: 8, memoryMB: 128, networkRxMB: 1000, networkTxMB: 800, uptimeHours: 720 }),
+];
+
+profiles.forEach(p => console.log(profiler.generateReport(p)));
+console.log('\nTeam Cost Allocation:', profiler.allocateCosts(profiles));
+```
+
+**What this demonstrates:** Container resource profiling enables cost allocation across teams, identifies over-provisioned or inefficient containers, and provides actionable rightsizing recommendations.
+
+---
+
+### Docker Network Traffic Simulator and Security Analyzer
+
+Understanding container network behavior is essential for security and performance tuning. The following tool simulates network traffic patterns, detects anomalies, and enforces network policies.
+
+```typescript
+// docker-network.ts
+// Simulate container network traffic and analyze security
+
+interface NetworkFlow {
+  source: string;
+  destination: string;
+  port: number;
+  protocol: 'tcp' | 'udp';
+  bytesTransferred: number;
+  direction: 'inbound' | 'outbound';
+  encrypted: boolean;
+}
+
+interface NetworkPolicy {
+  sourceService: string;
+  destService: string;
+  allowedPorts: number[];
+  encryptedOnly: boolean;
+}
+
+interface TrafficAnomaly {
+  flow: NetworkFlow;
+  reason: string;
+  severity: 'low' | 'medium' | 'high';
+}
+
+class NetworkAnalyzer {
+  private policies: NetworkPolicy[] = [];
+
+  addPolicy(policy: NetworkPolicy): void {
+    this.policies.push(policy);
+  }
+
+  analyze(flows: NetworkFlow[]): { allowed: NetworkFlow[]; blocked: NetworkFlow[]; anomalies: TrafficAnomaly[] } {
+    const allowed: NetworkFlow[] = [];
+    const blocked: NetworkFlow[] = [];
+    const anomalies: TrafficAnomaly[] = [];
+
+    for (const flow of flows) {
+      const matchingPolicy = this.policies.find(p =>
+        p.sourceService === flow.source && p.destService === flow.destination
+      );
+
+      if (!matchingPolicy) {
+        blocked.push(flow);
+        anomalies.push({ flow, reason: `No network policy allows ${flow.source} → ${flow.destination}`, severity: 'high' });
+        continue;
+      }
+
+      if (!matchingPolicy.allowedPorts.includes(flow.port)) {
+        blocked.push(flow);
+        anomalies.push({ flow, reason: `Port ${flow.port} not allowed by policy`, severity: 'high' });
+        continue;
+      }
+
+      if (matchingPolicy.encryptedOnly && !flow.encrypted) {
+        blocked.push(flow);
+        anomalies.push({ flow, reason: 'Unencrypted traffic on encrypted-only policy', severity: 'medium' });
+        continue;
+      }
+
+      allowed.push(flow);
+    }
+
+    return { allowed, blocked, anomalies };
+  }
+
+  generateReport(result: { allowed: NetworkFlow[]; blocked: NetworkFlow[]; anomalies: TrafficAnomaly[] }): string {
+    return `## Container Network Traffic Report\n\n` +
+      `**Total flows:** ${result.allowed.length + result.blocked.length}\n` +
+      `**Allowed:** ${result.allowed.length} | **Blocked:** ${result.blocked.length}\n` +
+      `**Anomalies:** ${result.anomalies.length}\n\n` +
+      (result.anomalies.length > 0
+        ? `| Source | Dest | Port | Reason | Severity |\n` +
+          `|--------|------|------|--------|----------|\n` +
+          result.anomalies.map(a =>
+            `| ${a.flow.source} | ${a.flow.destination} | ${a.flow.port} | ${a.reason} | ${a.severity} |`
+          ).join('\n')
+        : '✅ All traffic conforms to network policies');
+  }
+}
+
+const analyzer = new NetworkAnalyzer();
+analyzer.addPolicy({ sourceService: 'web', destService: 'api', allowedPorts: [3000, 443], encryptedOnly: true });
+analyzer.addPolicy({ sourceService: 'api', destService: 'db', allowedPorts: [5432], encryptedOnly: true });
+analyzer.addPolicy({ sourceService: 'api', destService: 'redis', allowedPorts: [6379], encryptedOnly: false });
+
+const flows: NetworkFlow[] = [
+  { source: 'web', destination: 'api', port: 3000, protocol: 'tcp', bytesTransferred: 1024000, direction: 'outbound', encrypted: true },
+  { source: 'api', destination: 'db', port: 5432, protocol: 'tcp', bytesTransferred: 512000, direction: 'inbound', encrypted: false },
+  { source: 'api', destination: 'redis', port: 6379, protocol: 'tcp', bytesTransferred: 1000, direction: 'inbound', encrypted: false },
+  { source: 'web', destination: 'db', port: 5432, protocol: 'tcp', bytesTransferred: 500, direction: 'outbound', encrypted: true },
+];
+
+const result = analyzer.analyze(flows);
+console.log(analyzer.generateReport(result));
+```
+
+**What this demonstrates:** Container network traffic analysis with policy enforcement detects unauthorized communications, enforces encryption requirements, and provides a foundation for zero-trust network security in containerized environments.
+
+---
+
 ## Practical Takeaways
 
 1. **Use specific base image tags.** `node:20-alpine`, never `node:latest`.

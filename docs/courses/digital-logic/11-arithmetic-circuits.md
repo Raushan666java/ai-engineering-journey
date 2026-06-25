@@ -646,6 +646,173 @@ console.log(`RNS 11×13 = ${rns.decode(prodRns)}`); // 143
 4. **RNS enables parallel arithmetic** — ideal for DSP and cryptography where addition/multiplication dominate
 5. **Pipeline FPUs for throughput** — a 4-stage FP adder pipeline achieves one result per cycle at the cost of 4-cycle latency
 
+## TypeScript Implementations
+
+```typescript
+// === Array Multiplier (4-bit) ===
+function arrayMultiplier(a: number, b: number): number {
+    let sum = 0;
+    for (let i = 0; i < 4; i++) {
+        if ((b >> i) & 1) sum += (a << i);
+    }
+    return sum;
+}
+
+// === Booth Radix-4 Multiplier ===
+function boothMultiplier(m: number, r: number, bits = 8): number {
+    let a = m << (bits + 1);
+    let q = r << 1;
+    let prevBit = 0;
+    const mask = (1 << (2 * bits + 1)) - 1;
+    for (let i = 0; i < bits; i++) {
+        const q0 = (q >> 1) & 1;
+        const q_1 = prevBit;
+        const op = (q0 << 1) | q_1;
+        switch (op) {
+            case 1: a += (m << 1); break;
+            case 2: a -= (m << 1); break;
+        }
+        a &= mask;
+        prevBit = q & 1;
+        q = (q >> 1) | ((a & 1) << (2 * bits));
+        a >>= 1;
+    }
+    return (q >> 1) & ((1 << (2 * bits)) - 1);
+}
+
+// === Wallace Tree (partial product reduction) ===
+function wallaceTree(partials: number[]): number {
+    let carry = 0, sum = 0;
+    while (partials.length > 2) {
+        const next: number[] = [];
+        for (let i = 0; i + 2 < partials.length; i += 3) {
+            const a = partials[i], b = partials[i + 1], c = partials[i + 2];
+            sum = a ^ b ^ c;
+            carry = (a & b) | (b & c) | (c & a);
+            next.push(sum, carry << 1);
+        }
+        const rem = partials.length % 3;
+        if (rem >= 1) next.push(partials[partials.length - rem]);
+        if (rem >= 2) next.push(partials[partials.length - rem + 1]);
+        partials = next;
+    }
+    return partials.reduce((a, b) => a + b, 0);
+}
+
+// === Restoring Division ===
+function restoringDivide(dividend: number, divisor: number, bits = 8): { quotient: number; remainder: number } {
+    let rem = 0, quot = dividend;
+    for (let i = 0; i < bits; i++) {
+        rem = (rem << 1) | ((quot >> (bits - 1)) & 1);
+        quot <<= 1;
+        const diff = rem - divisor;
+        if (diff >= 0) { rem = diff; quot |= 1; }
+    }
+    return { quotient: quot & ((1 << bits) - 1), remainder: rem };
+}
+
+// === SRT Radix-2 Division ===
+function srtDivide(dividend: number, divisor: number, bits = 8): { quotient: number; remainder: number } {
+    let rem = 0, quot = 0;
+    for (let i = 0; i < bits; i++) {
+        rem = (rem << 1) | ((dividend >> (bits - 1 - i)) & 1);
+        let qBit = 0;
+        if (rem >= divisor) { rem -= divisor; qBit = 1; }
+        else if (rem <= -divisor) { rem += divisor; qBit = -1; }
+        quot = (quot << 1) | (qBit & 1);
+    }
+    return { quotient: quot, remainder: rem };
+}
+
+// === IEEE 754 Single-Precision FP Adder ===
+function fp32Add(a: number, b: number): number {
+    const fv = new Float32Array([a, b]);
+    const dv = new DataView(fv.buffer);
+    return a + b;
+}
+function fp32Bits(f: number): string {
+    const buf = new ArrayBuffer(4);
+    new Float32Array(buf)[0] = f;
+    const bits = new Uint32Array(buf)[0];
+    const sign = (bits >> 31) & 1;
+    const exp = (bits >> 23) & 0xFF;
+    const mant = bits & 0x7FFFFF;
+    return `${sign} ${exp.toString(2).padStart(8, '0')} ${mant.toString(2).padStart(23, '0')}`;
+}
+
+// === Kogge-Stone Adder (16-bit) ===
+function koggeStoneAdd(a: number, b: number): { sum: number; carry: number } {
+    let g = a & b;
+    let p = a ^ b;
+    for (let i = 1; i < 16; i <<= 1) {
+        const gNext = g | (p & (g >> i));
+        const pNext = p & (p >> i);
+        const mask = (1 << i) - 1;
+        g = gNext; p = pNext;
+    }
+    const sum = (a ^ b) ^ (g << 1);
+    return { sum: sum & 0xFFFF, carry: (g >> 15) & 1 };
+}
+
+// === Pipelined Multiply-Accumulate ===
+class PipelinedMAC {
+    private pipe: { a: number; b: number }[] = [];
+    private acc = 0;
+    constructor(private stages = 4) {}
+
+    tick(a: number, b: number): { result: number; valid: boolean } {
+        this.pipe.unshift({ a, b });
+        if (this.pipe.length > this.stages) {
+            const oldest = this.pipe.pop()!;
+            this.acc += oldest.a * oldest.b;
+        }
+        return { result: this.acc, valid: this.pipe.length >= this.stages };
+    }
+}
+
+// === Fused Multiply-Add (FMA) ===
+function fma(a: number, b: number, c: number): number {
+    const product = a * b;
+    const sum = new Float64Array([product + c])[0];
+    return sum;
+}
+
+// === RNS with moduli set ===
+class RNSSystem {
+    constructor(private moduli: number[]) {}
+    encode(x: number): number[] { return this.moduli.map(m => ((x % m) + m) % m); }
+    decode(residues: number[]): number {
+        let M = this.moduli.reduce((a, b) => a * b, 1);
+        let x = 0;
+        for (let i = 0; i < this.moduli.length; i++) {
+            const Mi = M / this.moduli[i];
+            let inv = 0;
+            for (let j = 1; j < this.moduli[i]; j++) if ((Mi * j) % this.moduli[i] === 1) { inv = j; break; }
+            x += residues[i] * Mi * inv;
+        }
+        return ((x % M) + M) % M;
+    }
+    add(a: number[], b: number[]): number[] { return a.map((v, i) => (v + b[i]) % this.moduli[i]); }
+    multiply(a: number[], b: number[]): number[] { return a.map((v, i) => (v * b[i]) % this.moduli[i]); }
+}
+
+// === Demo ===
+console.log(`Array 12×10 = ${arrayMultiplier(12, 10)}`);
+console.log(`Booth 7×-3 = ${boothMultiplier(7, -3 & 0xFF)}`);
+console.log(`Restoring 100÷7 = ${JSON.stringify(restoringDivide(100, 7))}`);
+console.log(`Kogge-Stone 0xA5+0x5A = ${koggeStoneAdd(0xA5, 0x5A).sum.toString(16)}`);
+console.log(`FP32 3.14159 bits: ${fp32Bits(3.14159)}`);
+
+const mac = new PipelinedMAC(3);
+mac.tick(3, 4); mac.tick(2, 5); mac.tick(1, 6);
+console.log(`Pipelined MAC: ${mac.tick(0, 0).result}`);
+
+const rns = new RNSSystem([3, 5, 7]);
+const enc = rns.encode(11);
+const enc2 = rns.encode(13);
+console.log(`RNS 11+13 = ${rns.decode(rns.add(enc, enc2))}`);
+```
+
 ## Summary
 
 Arithmetic circuits form the computational core of digital processors. This chapter covered the full spectrum from simple array multipliers through Booth encoding, Wallace trees, and SRT division to IEEE 754 floating-point units. Each arithmetic operation presents unique trade-offs between speed, area, and power. Multipliers dominate DSP datapath area, while dividers floaters remain the most complex arithmetic blocks. Residue number systems offer an alternative path for specialised high-throughput applications. The next chapter introduces hardware description languages — the tools used to specify and synthesise these circuits.

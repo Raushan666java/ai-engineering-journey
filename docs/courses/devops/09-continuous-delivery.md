@@ -528,6 +528,151 @@ for (const m of metricsHistory) {
 
 ---
 
+### Rollback Orchestrator
+
+Automated rollback is critical when deployments cause production issues. The following tool coordinates rollback decisions with impact assessment, service dependency analysis, and phased execution.
+
+```typescript
+// rollback-orchestrator.ts
+// Coordinate multi-service rollbacks with dependency analysis
+
+interface ServiceState {
+  name: string;
+  currentVersion: string;
+  previousVersion: string;
+  healthScore: number;
+  errorRate: number;
+  latencyP99: number;
+  dependencies: string[];
+  dependents: string[];
+}
+
+interface RollbackTarget {
+  serviceName: string;
+  targetVersion: string;
+  estimatedImpact: 'none' | 'low' | 'medium' | 'high';
+  breakingChanges: string[];
+  requiresDataMigration: boolean;
+  estimatedDurationSec: number;
+}
+
+interface RollbackPlan {
+  trigger: string;
+  timestamp: Date;
+  targets: RollbackTarget[];
+  executionOrder: string[];
+  coordinationNeeded: boolean;
+  estimatedTotalDurationSec: number;
+  riskScore: number;
+  approvalRequired: 'auto' | 'lead' | 'manager';
+}
+
+class RollbackOrchestrator {
+  private services: Map<string, ServiceState> = new Map();
+
+  registerService(svc: ServiceState): void {
+    this.services.set(svc.name, svc);
+  }
+
+  assessRollback(failedService: string, failureReason: string): RollbackPlan {
+    const svc = this.services.get(failedService);
+    if (!svc) throw new Error(`Service ${failedService} not found`);
+    const targets: RollbackTarget[] = [];
+    const executionOrder: string[] = [];
+
+    const directTarget: RollbackTarget = {
+      serviceName: failedService, targetVersion: svc.previousVersion,
+      estimatedImpact: 'high', breakingChanges: ['API contract rollback'],
+      requiresDataMigration: false, estimatedDurationSec: 120,
+    };
+    targets.push(directTarget);
+    executionOrder.push(failedService);
+
+    for (const depName of svc.dependents) {
+      const dep = this.services.get(depName);
+      if (!dep) continue;
+      const depTarget: RollbackTarget = {
+        serviceName: depName, targetVersion: dep.previousVersion,
+        estimatedImpact: 'medium', breakingChanges: ['Dependency API rollback', 'Client compatibility'],
+        requiresDataMigration: false, estimatedDurationSec: 90,
+      };
+      targets.push(depTarget);
+      executionOrder.push(depName);
+    }
+
+    const totalDuration = targets.reduce((s, t) => s + t.estimatedDurationSec, 0);
+    const riskScore = targets.filter(t => t.estimatedImpact === 'high').length * 3 +
+                       targets.filter(t => t.estimatedImpact === 'medium').length * 2 +
+                       targets.filter(t => t.estimatedImpact === 'low').length;
+
+    let approvalRequired: RollbackPlan['approvalRequired'] = 'auto';
+    if (riskScore > 10) approvalRequired = 'manager';
+    else if (riskScore > 5) approvalRequired = 'lead';
+
+    return {
+      trigger: failureReason, timestamp: new Date(), targets,
+      executionOrder, coordinationNeeded: targets.length > 1,
+      estimatedTotalDurationSec: totalDuration, riskScore, approvalRequired,
+    };
+  }
+
+  executeRollback(plan: RollbackPlan, approved: boolean): { success: boolean; failures: string[]; durationMs: number } {
+    if (plan.approvalRequired !== 'auto' && !approved) {
+      return { success: false, failures: ['Approval required but not granted'], durationMs: 0 };
+    }
+
+    const failures: string[] = [];
+    const startTime = Date.now();
+
+    for (const target of plan.targets) {
+      const svc = this.services.get(target.serviceName);
+      if (!svc) { failures.push(`${target.serviceName}: not found`); continue; }
+
+      if (Math.random() < 0.95) {
+        svc.currentVersion = target.targetVersion;
+        svc.healthScore = 95 + Math.floor(Math.random() * 5);
+        svc.errorRate = 0.001 + Math.random() * 0.004;
+      } else {
+        failures.push(`${target.serviceName}: rollback failed - health check timeout`);
+      }
+    }
+
+    return { success: failures.length === 0, failures, durationMs: Date.now() - startTime };
+  }
+
+  generateRollbackReport(plan: RollbackPlan, result: { success: boolean; failures: string[]; durationMs: number }): string {
+    const lines = [
+      `Rollback Report - ${plan.timestamp.toISOString()}`,
+      `Trigger: ${plan.trigger}`,
+      `Result: ${result.success ? '✅ Successful' : '❌ Failed'}`,
+      `Duration: ${(result.durationMs / 1000).toFixed(1)}s`,
+      `Risk Score: ${plan.riskScore} (approval: ${plan.approvalRequired})`,
+      '',
+      'Services rolled back:',
+    ];
+    for (const target of plan.targets) {
+      lines.push(`  ${target.serviceName}: v${target.targetVersion} (${target.estimatedImpact} impact, ${target.estimatedDurationSec}s)`);
+      for (const bc of target.breakingChanges) lines.push(`    ⚠ ${bc}`);
+    }
+    return lines.join('\n');
+  }
+}
+
+const orchestrator = new RollbackOrchestrator();
+orchestrator.registerService({ name: 'api-gateway', currentVersion: '2.5.0', previousVersion: '2.4.0', healthScore: 100, errorRate: 0.001, latencyP99: 45, dependencies: ['user-service', 'payment-service'], dependents: ['web-ui', 'mobile-api'] });
+orchestrator.registerService({ name: 'user-service', currentVersion: '3.1.0', previousVersion: '3.0.0', healthScore: 98, errorRate: 0.002, latencyP99: 32, dependencies: ['db-primary'], dependents: ['api-gateway'] });
+
+const plan = orchestrator.assessRollback('api-gateway', 'Error rate spike to 12% after canary ramp to 30%');
+console.log(`Rollback plan: ${plan.targets.length} services, ${plan.estimatedTotalDurationSec}s estimated, approval: ${plan.approvalRequired}`);
+
+const result = orchestrator.executeRollback(plan, true);
+console.log(orchestrator.generateRollbackReport(plan, result));
+```
+
+**What this demonstrates:** An automated rollback orchestrator with dependency-aware planning, impact assessment, and approval gates enables safe recovery from failed deployments.
+
+---
+
 ## Practical Takeaways
 
 1. **Use feature flags to decouple deploy from release.** Deploy often, release when ready.

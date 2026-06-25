@@ -587,6 +587,147 @@ simulateCBoundary([0.01, 0.1, 1.0, 10.0, 100.0]);
 
 ---
 
+## TypeScript Implementation: SVM Hinge Loss, Kernel Functions, and Dual Coefficients
+
+```typescript
+type KernelFunction = (x1: number[], x2: number[]) => number;
+
+class Kernel {
+    static linear(): KernelFunction {
+        return (x1, x2) => x1.reduce((s, v, i) => s + v * x2[i], 0);
+    }
+
+    static polynomial(degree: number = 3, coef0: number = 1): KernelFunction {
+        return (x1, x2) => Math.pow(x1.reduce((s, v, i) => s + v * x2[i], 0) + coef0, degree);
+    }
+
+    static rbf(gamma: number = 0.1): KernelFunction {
+        return (x1, x2) => Math.exp(-gamma * x1.reduce((s, v, i) => s + (v - x2[i]) ** 2, 0));
+    }
+}
+
+class SVM {
+    private weights: number[] = [];
+    private bias: number = 0;
+    private C: number;
+    private lr: number;
+    private epochs: number;
+
+    constructor(C: number = 1.0, lr: number = 0.001, epochs: number = 1000) {
+        this.C = C; this.lr = lr; this.epochs = epochs;
+    }
+
+    hingeLoss(features: number[][], labels: number[]): number {
+        let loss = 0;
+        const n = features.length;
+        for (let i = 0; i < n; i++) {
+            const score = features[i].reduce((s, f, j) => s + f * this.weights[j], this.bias);
+            loss += Math.max(0, 1 - labels[i] * score);
+        }
+        const reg = this.weights.reduce((s, w) => s + w * w, 0) / 2;
+        return reg + this.C * loss / n;
+    }
+
+    fit(features: number[][], labels: number[]): void {
+        const n = features.length;
+        const d = features[0].length;
+        const y = labels.map(l => l === 0 ? -1 : 1);
+        this.weights = new Array(d).fill(0);
+        this.bias = 0;
+
+        for (let ep = 0; ep < this.epochs; ep++) {
+            for (let i = 0; i < n; i++) {
+                const score = features[i].reduce((s, f, j) => s + f * this.weights[j], this.bias);
+                const condition = y[i] * score < 1;
+                for (let j = 0; j < d; j++) {
+                    const gradW = this.weights[j] - this.C * (condition ? y[i] * features[i][j] : 0);
+                    this.weights[j] -= this.lr * gradW;
+                }
+                if (condition) this.bias -= this.lr * (-this.C * y[i]);
+            }
+        }
+    }
+
+    predict(features: number[]): number {
+        const score = features.reduce((s, f, j) => s + f * this.weights[j], this.bias);
+        return score >= 0 ? 1 : 0;
+    }
+}
+
+class DualSVM {
+    private alphas: number[] = [];
+    private bias: number = 0;
+    private kernel: KernelFunction;
+    private C: number;
+    private X: number[][] = [];
+    private y: number[] = [];
+
+    constructor(C: number = 1.0, kernel: KernelFunction = Kernel.rbf(0.1)) {
+        this.C = C; this.kernel = kernel;
+    }
+
+    fit(features: number[][], labels: number[]): void {
+        this.X = features; this.y = labels.map(l => l === 0 ? -1 : 1);
+        const n = features.length;
+        this.alphas = new Array(n).fill(0);
+
+        for (let epoch = 0; epoch < 100; epoch++) {
+            for (let i = 0; i < n; i++) {
+                let sum = 0;
+                for (let j = 0; j < n; j++) {
+                    sum += this.alphas[j] * this.y[j] * this.kernel(features[i], features[j]);
+                }
+                const Ei = sum - this.y[i];
+                const eta = 2 * this.kernel(features[i], features[i]);
+                if (Math.abs(eta) < 1e-12) continue;
+                const newAlpha = this.alphas[i] + this.y[i] * Ei / eta;
+                this.alphas[i] = Math.max(0, Math.min(this.C, newAlpha));
+            }
+        }
+
+        let biasSum = 0; let count = 0;
+        for (let i = 0; i < n; i++) {
+            if (this.alphas[i] > 0 && this.alphas[i] < this.C) {
+                let sum = 0;
+                for (let j = 0; j < n; j++) sum += this.alphas[j] * this.y[j] * this.kernel(features[i], features[j]);
+                biasSum += this.y[i] - sum; count++;
+            }
+        }
+        this.bias = count > 0 ? biasSum / count : 0;
+    }
+
+    predict(features: number[]): number {
+        let sum = 0;
+        for (let i = 0; i < this.X.length; i++) {
+            if (this.alphas[i] > 1e-6) {
+                sum += this.alphas[i] * this.y[i] * this.kernel(features, this.X[i]);
+            }
+        }
+        return sum + this.bias >= 0 ? 1 : 0;
+    }
+
+    getSupportVectors(): number {
+        return this.alphas.filter(a => a > 1e-6).length;
+    }
+}
+
+// Demo
+const X = [[1, 2], [2, 1], [2, 3], [3, 2], [5, 6], [6, 5], [6, 7], [7, 6], [8, 9], [9, 8]];
+const y = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1];
+
+const svm = new SVM(0.5, 0.001, 2000);
+svm.fit(X, y);
+console.log("SVM hinge loss:", svm.hingeLoss(X, y).toFixed(4));
+console.log("SVM predict [4,4]:", svm.predict([4, 4]));
+
+const dual = new DualSVM(0.5, Kernel.rbf(0.2));
+dual.fit(X, y);
+console.log("Dual SVM predict [4,4]:", dual.predict([4, 4]));
+console.log("Support vectors:", dual.getSupportVectors());
+console.log("Linear kernel test:", Kernel.linear()([1, 2], [3, 4]));
+console.log("Poly kernel test:", Kernel.polynomial(2)([1, 2], [3, 4]));
+```
+
 ## Summary
 
 - SVMs find the maximum margin hyperplane, which provides better generalization than any other separating hyperplane.

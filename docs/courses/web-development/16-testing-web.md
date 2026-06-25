@@ -618,6 +618,159 @@ console.log(TestGenerator.generate("add", [{ name: "adds numbers", input: [1, 2]
 console.log("Mock:", MockFactory.apiResponse({ ok: true }, 200));
 ```
 
+## TypeScript Implementation: Unit Test Generator, Mock/Stub Factory, Coverage Analyzer, Snapshot Diff
+
+```typescript
+interface TestCase {
+    name: string;
+    input: any[];
+    expected: any;
+    description?: string;
+}
+
+class UnitTestGenerator {
+    static generate(functionName: string, cases: TestCase[], framework: "vitest" | "jest" = "vitest"): string {
+        const testFn = framework === "vitest" ? "it" : "it";
+        const describe = framework === "vitest" ? "describe" : "describe";
+        const expect = "expect";
+
+        const tests = cases.map(c =>
+            `  ${testFn}("${c.name}", () => {\n` +
+            `    const result = ${functionName}(${c.input.map((x: any) => JSON.stringify(x)).join(", ")});\n` +
+            `    ${this.assertion("result", c.expected)}\n` +
+            `  });`
+        ).join("\n\n");
+
+        return `import { ${describe}, ${testFn}, ${expect} } from "${framework}";\nimport { ${functionName} } from "./${functionName}";\n\n${describe}("${functionName}", () => {\n${tests}\n});\n`;
+    }
+
+    private static assertion(result: string, expected: any): string {
+        if (typeof expected === "number") return `${expect}(${result}).toBe(${expected});`;
+        if (typeof expected === "boolean") return `${expect}(${result}).toBe(${expected});`;
+        if (typeof expected === "string") return `${expect}(${result}).toBe("${expected}");`;
+        if (expected === null) return `${expect}(${result}).toBeNull();`;
+        if (Array.isArray(expected)) return `${expect}(${result}).toEqual(${JSON.stringify(expected)});`;
+        if (typeof expected === "object") return `${expect}(${result}).toMatchObject(${JSON.stringify(expected)});`;
+        return `${expect}(${result}).toBe(${JSON.stringify(expected)});`;
+    }
+}
+
+class MockFactory {
+    static apiResponse(data: any, status: number = 200, headers?: Record<string, string>): any {
+        return {
+            ok: status >= 200 && status < 300,
+            status,
+            headers: { get: (name: string) => (headers || {})[name] || null, ...(headers || {}) },
+            json: () => Promise.resolve(data),
+            text: () => Promise.resolve(JSON.stringify(data)),
+        };
+    }
+
+    static dbQuery(rows: any[] = []): any {
+        return { rows, rowCount: rows.length, command: "SELECT" };
+    }
+
+    static expressReq(overrides: Record<string, any> = {}): any {
+        return {
+            params: {}, query: {}, body: {}, headers: {},
+            cookies: {}, ip: "127.0.0.1", method: "GET", url: "/",
+            ...overrides
+        };
+    }
+
+    static expressRes(): any {
+        const res: any = {};
+        res.status = (code: number) => { res.statusCode = code; return res; };
+        res.json = (data: any) => { res.body = data; return res; };
+        res.send = (data: any) => { res.body = data; return res; };
+        res.end = () => {};
+        res.setHeader = () => {};
+        return res;
+    }
+
+    static reactComponent(name: string): any {
+        return {
+            displayName: name,
+            $$typeof: Symbol.for("react.element"),
+            type: name,
+            props: {},
+            __esModule: true,
+            default: () => null
+        };
+    }
+}
+
+class CoverageReportAnalyzer {
+    static analyze(json: { lines?: { total: number; covered: number }; branches?: { total: number; covered: number }; functions?: { total: number; covered: number }; statements?: { total: number; covered: number } }): {
+        lineCoverage: string; branchCoverage: string; functionCoverage: string; overall: string; grade: "A" | "B" | "C" | "D" | "F"
+    } {
+        const linePct = json.lines ? (json.lines.covered / json.lines.total) * 100 : 0;
+        const branchPct = json.branches ? (json.branches.covered / json.branches.total) * 100 : 0;
+        const funcPct = json.functions ? (json.functions.covered / json.functions.total) * 100 : 0;
+        const overall = (linePct + branchPct + funcPct) / 3;
+
+        let grade: "A" | "B" | "C" | "D" | "F";
+        if (overall >= 90) grade = "A";
+        else if (overall >= 80) grade = "B";
+        else if (overall >= 70) grade = "C";
+        else if (overall >= 60) grade = "D";
+        else grade = "F";
+
+        return {
+            lineCoverage: `${linePct.toFixed(1)}%`,
+            branchCoverage: `${branchPct.toFixed(1)}%`,
+            functionCoverage: `${funcPct.toFixed(1)}%`,
+            overall: `${overall.toFixed(1)}%`,
+            grade
+        };
+    }
+}
+
+class SnapshotDiffTool {
+    static diff(oldSnapshot: string, newSnapshot: string): { changed: boolean; additions: number; removals: number; diff: string } {
+        const oldLines = oldSnapshot.split("\n");
+        const newLines = newSnapshot.split("\n");
+        const oldSet = new Set(oldLines);
+        const newSet = new Set(newLines);
+
+        const additions = newLines.filter(l => !oldSet.has(l));
+        const removals = oldLines.filter(l => !newSet.has(l));
+
+        let diff = "";
+        let oi = 0, ni = 0;
+        while (oi < oldLines.length || ni < newLines.length) {
+            if (oi < oldLines.length && ni < newLines.length && oldLines[oi] === newLines[ni]) {
+                diff += `  ${oldLines[oi]}\n`; oi++; ni++;
+            } else if (ni < newLines.length && (oi >= oldLines.length || oldLines[oi] !== newLines[ni])) {
+                diff += `+ ${newLines[ni]}\n`; ni++;
+            } else {
+                diff += `- ${oldLines[oi]}\n`; oi++;
+            }
+        }
+
+        return { changed: additions.length > 0 || removals.length > 0, additions: additions.length, removals: removals.length, diff };
+    }
+}
+
+// Demo
+const testCases: TestCase[] = [
+    { name: "adds positive numbers", input: [1, 2], expected: 3 },
+    { name: "adds negative numbers", input: [-1, -2], expected: -3 },
+    { name: "adds zero", input: [0, 5], expected: 5 },
+];
+console.log(UnitTestGenerator.generate("add", testCases));
+
+const mockRes = MockFactory.expressRes();
+mockRes.status(200).json({ ok: true });
+console.log("Mock response:", JSON.stringify(mockRes.body));
+
+const coverage = CoverageReportAnalyzer.analyze({ lines: { total: 100, covered: 85 }, branches: { total: 50, covered: 35 }, functions: { total: 30, covered: 25 } });
+console.log("Coverage grade:", coverage.grade, "overall:", coverage.overall);
+
+const diff = SnapshotDiffTool.diff("hello\nworld\n", "hello\nuniverse\n");
+console.log("Snapshot diff:\n", diff.diff);
+```
+
 ## Summary
 
 Testing follows the pyramid model: many unit tests for isolated logic, some integration tests for API behavior, and few E2E tests for critical user flows. Vitest provides fast unit testing, Testing Library tests React components by user interaction, Playwright automates browser testing, and MSW mocks HTTP requests for reliable test environments.

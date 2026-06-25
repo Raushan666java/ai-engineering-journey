@@ -637,6 +637,95 @@ flowchart TD
     CA -.-> DB3["Single-site RDBMS<br/>PostgreSQL, MySQL"]
 ```
 
+### TypeScript: Capacity Estimator
+
+```typescript
+class CapacityEstimator {
+  estimateQPS(dailyActiveUsers: number, requestsPerUser: number, peakFactor: number) {
+    const avg = (dailyActiveUsers * requestsPerUser) / 86400;
+    return { avg: Math.round(avg), peak: Math.round(avg * peakFactor) };
+  }
+
+  estimateStorage(dailyWrites: number, recordSizeBytes: number, retentionDays: number): string {
+    return this.formatBytes(dailyWrites * recordSizeBytes * retentionDays);
+  }
+
+  estimateBandwidth(bytesPerSecond: number): string { return this.formatBytes(bytesPerSecond) + "/s"; }
+
+  private formatBytes(bytes: number): string {
+    if (bytes >= 1e12) return (bytes / 1e12).toFixed(1) + " TB";
+    if (bytes >= 1e9) return (bytes / 1e9).toFixed(1) + " GB";
+    if (bytes >= 1e6) return (bytes / 1e6).toFixed(1) + " MB";
+    return (bytes / 1e3).toFixed(1) + " KB";
+  }
+}
+
+class LatencySimulator {
+  async sequential(n: number, latencyMs: number): Promise<number> {
+    const start = Date.now();
+    for (let i = 0; i < n; i++) await new Promise(r => setTimeout(r, latencyMs));
+    return Date.now() - start;
+  }
+
+  async parallel(n: number, latencyMs: number): Promise<number> {
+    const start = Date.now();
+    await Promise.all(Array.from({ length: n }, () => new Promise(r => setTimeout(r, latencyMs))));
+    return Date.now() - start;
+  }
+
+  async pipelined(stages: number, stageLatencyMs: number): Promise<number> {
+    const start = Date.now();
+    let chain = Promise.resolve();
+    for (let s = 0; s < stages; s++) chain = chain.then(() => new Promise(r => setTimeout(r, stageLatencyMs)));
+    await chain;
+    return Date.now() - start;
+  }
+}
+
+class AvailabilityCalculator {
+  calculate(componentAvailabilities: Record<string, number>): { series: number; parallel: number } {
+    const series = Object.values(componentAvailabilities).reduce((p, a) => p * a, 1);
+    const parallel = 1 - Object.values(componentAvailabilities).reduce((p, a) => p * (1 - a), 1);
+    return { series, parallel };
+  }
+
+  nines(a: number): string {
+    if (a >= 0.99999) return "Five 9s";
+    if (a >= 0.9999) return "Four 9s";
+    if (a >= 0.999) return "Three 9s";
+    if (a >= 0.99) return "Two 9s";
+    if (a >= 0.9) return "One 9";
+    return "< 90%";
+  }
+}
+// const ce = new CapacityEstimator();
+// console.log(ce.estimateQPS(1e8, 10, 5));   // { avg: 11574, peak: 57870 }
+// console.log(ce.estimateStorage(1e7, 500, 365)); // 1.8 TB
+// const ac = new AvailabilityCalculator();
+// console.log(ac.calculate({ lb: 0.9999, app: 0.999, db: 0.999 }));
+// console.log(ac.nines(0.99997)); // "Four 9s"
+```
+
+### TypeScript: Little's Law Simulator
+
+```typescript
+class LittlesLawSimulator {
+  simulate(arrivalRate: number, avgServiceTimeMs: number, serverCount: number): {
+    throughput: number; responseTimeMs: number; concurrency: number; queueLength: number; utilization: number;
+  } {
+    const serviceRate = 1000 / avgServiceTimeMs;
+    const totalServiceRate = serviceRate * serverCount;
+    const throughput = Math.min(arrivalRate, totalServiceRate);
+    const utilization = arrivalRate / totalServiceRate;
+    const queueLength = (utilization * utilization) / (1 - utilization) * serverCount;
+    const waitTimeMs = (queueLength / serviceRate) * 1000;
+    const responseTimeMs = waitTimeMs + avgServiceTimeMs;
+    const concurrency = (throughput / 1000) * responseTimeMs;
+    return { throughput: Math.round(throughput), responseTimeMs: Math.round(responseTimeMs), concurrency: Math.round(concurrency), queueLength: Math.round(queueLength), utilization: Math.round(utilization * 100) };
+  }
+}
+```
+
 ## Summary
 
 - System design is distinct from software architecture (system-wide concerns) and algorithm design (computational efficiency at bounded scales).

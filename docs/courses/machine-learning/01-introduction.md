@@ -692,6 +692,133 @@ console.log(`Mean Accuracy: ${cvResult.mean.accuracy.toFixed(3)} ± ${cvResult.s
 
 ---
 
+## TypeScript Implementation: Linear Regression from Scratch
+
+```typescript
+// Gradient Descent Linear Regression — demonstrates core ML concepts
+type TrainTestSplit<T> = { train: T[]; test: T[] };
+
+function trainTestSplit<T>(data: T[], testRatio: number = 0.2): TrainTestSplit<T> {
+    const shuffled = [...data].sort(() => Math.random() - 0.5);
+    const splitIdx = Math.floor(data.length * (1 - testRatio));
+    return { train: shuffled.slice(0, splitIdx), test: shuffled.slice(splitIdx) };
+}
+
+function meanSquaredError(actual: number[], predicted: number[]): number {
+    return actual.reduce((sum, a, i) => sum + (a - predicted[i]) ** 2, 0) / actual.length;
+}
+
+function rootMeanSquaredError(actual: number[], predicted: number[]): number {
+    return Math.sqrt(meanSquaredError(actual, predicted));
+}
+
+function meanAbsoluteError(actual: number[], predicted: number[]): number {
+    return actual.reduce((sum, a, i) => sum + Math.abs(a - predicted[i]), 0) / actual.length;
+}
+
+class LinearRegressionGD {
+    private weights: number[] = [];
+    private bias: number = 0;
+    private learningRate: number;
+    private epochs: number;
+
+    constructor(learningRate: number = 0.01, epochs: number = 1000) {
+        this.learningRate = learningRate;
+        this.epochs = epochs;
+    }
+
+    fit(features: number[][], targets: number[]): void {
+        const n = features.length;
+        const d = features[0].length;
+        this.weights = new Array(d).fill(0);
+        this.bias = 0;
+
+        for (let epoch = 0; epoch < this.epochs; epoch++) {
+            let gradW = new Array(d).fill(0);
+            let gradB = 0;
+
+            for (let i = 0; i < n; i++) {
+                const pred = this.predict(features[i]);
+                const error = pred - targets[i];
+                for (let j = 0; j < d; j++) {
+                    gradW[j] += (2 / n) * error * features[i][j];
+                }
+                gradB += (2 / n) * error;
+            }
+
+            for (let j = 0; j < d; j++) {
+                this.weights[j] -= this.learningRate * gradW[j];
+            }
+            this.bias -= this.learningRate * gradB;
+        }
+    }
+
+    predict(features: number[]): number {
+        return features.reduce((sum, f, i) => sum + f * this.weights[i], this.bias);
+    }
+
+    predictBatch(samples: number[][]): number[] {
+        return samples.map(s => this.predict(s));
+    }
+
+    score(features: number[][], targets: number[]): number {
+        const preds = this.predictBatch(features);
+        const ssRes = targets.reduce((sum, t, i) => sum + (t - preds[i]) ** 2, 0);
+        const meanTarget = targets.reduce((a, b) => a + b, 0) / targets.length;
+        const ssTot = targets.reduce((sum, t) => sum + (t - meanTarget) ** 2, 0);
+        return 1 - ssRes / ssTot;
+    }
+}
+
+class PolynomialRegression {
+    private degree: number;
+    private model: LinearRegressionGD;
+
+    constructor(degree: number = 2, lr: number = 0.01, epochs: number = 1000) {
+        this.degree = degree;
+        this.model = new LinearRegressionGD(lr, epochs);
+    }
+
+    private polynomialFeatures(x: number[]): number[][] {
+        return x.map(v => {
+            const features: number[] = [];
+            for (let d = 1; d <= this.degree; d++) {
+                features.push(v ** d);
+            }
+            return features;
+        });
+    }
+
+    fit(x: number[], y: number[]): void {
+        const features = this.polynomialFeatures(x);
+        this.model.fit(features, y);
+    }
+
+    predict(x: number[]): number[] {
+        const features = this.polynomialFeatures(x);
+        return this.model.predictBatch(features);
+    }
+}
+
+// Demo
+const houseSizes = [600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400];
+const housePrices = [150, 180, 210, 245, 290, 330, 370, 415, 460, 500];
+const { train: xTrain, test: xTest } = trainTestSplit(houseSizes, 0.2);
+const { train: yTrain, test: yTest } = trainTestSplit(housePrices, 0.2);
+
+const lrModel = new LinearRegressionGD(0.0000001, 2000);
+lrModel.fit(xTrain.map(s => [s]), yTrain);
+const lrPreds = lrModel.predictBatch(xTest.map(s => [s]));
+console.log("Linear Regression RMSE:", rootMeanSquaredError(yTest, lrPreds).toFixed(2));
+console.log("Linear Regression MAE:", meanAbsoluteError(yTest, lrPreds).toFixed(2));
+
+const polyModel = new PolynomialRegression(2, 0.0000001, 5000);
+polyModel.fit(xTrain, yTrain);
+const polyPreds = polyModel.predict(xTest);
+console.log("Polynomial Regression RMSE:", rootMeanSquaredError(yTest, polyPreds).toFixed(2));
+console.log("Polynomial Regression R²:", (1 - yTest.reduce((s, t, i) => s + (t - polyPreds[i]) ** 2, 0) / yTest.reduce((s, t) => s + (t - yTest.reduce((a, b) => a + b, 0) / yTest.length) ** 2, 0)).toFixed(4));
+```
+
 ## Summary
 
 - Machine learning enables computers to learn from data instead of following static rules, formalized by Mitchell's definition $(T, E, P)$.

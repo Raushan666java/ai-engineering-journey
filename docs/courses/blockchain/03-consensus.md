@@ -664,6 +664,158 @@ class FinalityGadget {
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === PoW Simulator ===
+class PoWSimulator {
+    mine(block: string, target: number): { nonce: number; hash: string; attempts: number } {
+        let nonce = 0, hash = '';
+        do {
+            hash = this.simpleHash(block + nonce);
+            nonce++;
+        } while (!hash.startsWith('0'.repeat(target)) && nonce < 1_000_000);
+        return { nonce: nonce - 1, hash, attempts: nonce };
+    }
+    private simpleHash(s: string): string {
+        let h = 0;
+        for (let i = 0; i < s.length; i++) { h = ((h << 5) - h) + s.charCodeAt(i); h |= 0; }
+        return Math.abs(h).toString(16).padStart(8, '0');
+    }
+}
+
+// === PoS Validator ===
+class PoSValidator {
+    constructor(public address: string, public stake: number, public reliability: number = 1.0) {}
+}
+
+class PoSSimulator {
+    private validators: PoSValidator[] = [];
+    private totalStake = 0;
+
+    addValidator(v: PoSValidator): void { this.validators.push(v); this.totalStake += v.stake; }
+    selectProposer(seed: number): PoSValidator {
+        const target = seed % this.totalStake;
+        let cumulative = 0;
+        for (const v of this.validators) {
+            cumulative += v.stake;
+            if (target < cumulative) return v;
+        }
+        return this.validators[0];
+    }
+    simulateEpochs(count: number): Map<string, number> {
+        const proposals = new Map<string, number>();
+        for (let i = 0; i < count; i++) {
+            const proposer = this.selectProposer(i * 0x9E3779B9);
+            proposals.set(proposer.address, (proposals.get(proposer.address) ?? 0) + 1);
+        }
+        return proposals;
+    }
+}
+
+// === PBFT Consensus ===
+type PBFTMessage = { type: 'PRE-PREPARE' | 'PREPARE' | 'COMMIT'; view: number; seq: number; digest: string; node: string };
+class PBFTConsensus {
+    private prePrepares = new Set<string>();
+    private prepares = new Set<string>();
+    private commits = new Set<string>();
+    constructor(private nodes: string[], private faultTolerance: number) {}
+
+    private majority(): number { return Math.floor(this.nodes.length / 2) * 2 + 1; }
+
+    handleMessage(msg: PBFTMessage, from: string): string | null {
+        const key = `${msg.view}:${msg.seq}:${msg.digest}`;
+        switch (msg.type) {
+            case 'PRE-PREPARE':
+                if (from === this.nodes[msg.view % this.nodes.length]) {
+                    this.prePrepares.add(key);
+                    return 'broadcast:prepare';
+                }
+                return null;
+            case 'PREPARE':
+                this.prepares.add(`${key}:${from}`);
+                if (this.prepares.size >= this.majority()) return 'broadcast:commit';
+                return null;
+            case 'COMMIT':
+                this.commits.add(`${key}:${from}`);
+                if (this.commits.size >= this.majority()) return 'consensus:reached';
+                return null;
+        }
+    }
+}
+
+// === Nakamoto Consensus Fork Resolver ===
+class ForkResolver {
+    private chain: string[][] = [];
+    private orphancy: Map<string, number> = new Map();
+
+    addBlock(blockId: string, parentId: string | null): void {
+        const height = parentId === null ? 0 : (this.orphancy.get(parentId) ?? -1) + 1;
+        this.orphancy.set(blockId, height);
+    }
+    longestChain(): { id: string; height: number }[] {
+        const maxHeight = Math.max(...this.orphancy.values(), 0);
+        return Array.from(this.orphancy.entries())
+            .filter(([, h]) => h === maxHeight)
+            .map(([id, height]) => ({ id, height }));
+    }
+    confirmations(blockId: string, longestTip: string): number {
+        const bh = this.orphancy.get(blockId) ?? 0;
+        const th = this.orphancy.get(longestTip) ?? 0;
+        return Math.max(0, th - bh);
+    }
+    isSafe(blockId: string, longestTip: string, requiredConfirmations = 6): boolean {
+        return this.confirmations(blockId, longestTip) >= requiredConfirmations;
+    }
+}
+
+// === DPoS (Delegated PoS) ===
+class DPoSSimulator {
+    private voters = new Map<string, string>(); // voter -> delegate
+    private delegateStake = new Map<string, number>();
+    private readonly topN = 21;
+
+    vote(voter: string, voterStake: number, delegate: string): void {
+        this.voters.set(voter, delegate);
+        this.delegateStake.set(delegate, (this.delegateStake.get(delegate) ?? 0) + voterStake);
+    }
+    elect(): string[] {
+        return Array.from(this.delegateStake.entries())
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, this.topN)
+            .map(([addr]) => addr);
+    }
+    rotateProducer(round: number, delegates: string[]): string {
+        return delegates[round % delegates.length];
+    }
+}
+
+// === Demo ===
+const pow = new PoWSimulator();
+const result = pow.mine('block1', 3);
+console.log(`PoW mined in ${result.attempts} attempts: ${result.hash}`);
+
+const pos = new PoSSimulator();
+pos.addValidator(new PoSValidator('alice', 40));
+pos.addValidator(new PoSValidator('bob', 30));
+pos.addValidator(new PoSValidator('carol', 30));
+const props = pos.simulateEpochs(100);
+console.log(`PoS proposer distribution:`);
+props.forEach((c, a) => console.log(`  ${a}: ${c} blocks`));
+
+const pbft = new PBFTConsensus(['n0', 'n1', 'n2', 'n3'], 1);
+console.log(`PBFT test: ${pbft.handleMessage({ type: 'PRE-PREPARE', view: 0, seq: 1, digest: 'abc', node: 'n0' }, 'n0')}`);
+
+const fork = new ForkResolver();
+fork.addBlock('A', null); fork.addBlock('B', 'A'); fork.addBlock('C', 'B'); fork.addBlock('D', 'B');
+console.log(`Longest chain: ${fork.longestChain().map(c => `${c.id}@${c.height}`).join(', ')}`);
+console.log(`Block A safe (6 conf): ${fork.isSafe('A', 'C', 2)}`);
+
+const dpos = new DPoSSimulator();
+dpos.vote('v1', 100, 'd1'); dpos.vote('v2', 200, 'd2'); dpos.vote('v3', 50, 'd1');
+console.log(`DPoS elected: ${dpos.elect()}`);
+```
+
 ## Summary
 
 - Consensus mechanisms enable distributed nodes to agree on the state of a ledger.

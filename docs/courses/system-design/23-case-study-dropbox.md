@@ -508,6 +508,102 @@ flowchart LR
     F --> G[Both Versions Saved]
 ```
 
+### TypeScript: Content-Defined Chunking
+
+```typescript
+class RabinChunker {
+  private readonly windowSize = 48;
+  private readonly averageChunkSize = 8192;
+  private readonly minChunk = 2048;
+  private readonly maxChunk = 16384;
+  private readonly mask = (1 << 13) - 1;
+
+  chunk(data: Buffer): Buffer[] {
+    const chunks: Buffer[] = [];
+    let start = 0;
+    let hash = 0;
+    for (let i = 1; i < data.length; i++) {
+      hash = ((hash << 1) + data[i]) & 0x7fffffff;
+      const chunkLen = i - start + 1;
+      if ((chunkLen >= this.minChunk && (hash & this.mask) === 0) || chunkLen >= this.maxChunk) {
+        chunks.push(data.slice(start, i + 1));
+        start = i + 1;
+        hash = 0;
+      }
+    }
+    if (start < data.length) chunks.push(data.slice(start));
+    return chunks;
+  }
+}
+
+class DedupEngine {
+  private store = new Map<string, Buffer>();
+  private refCount = new Map<string, number>();
+
+  async storeBlock(block: Buffer): Promise<string> {
+    const hash = this.sha256(block);
+    if (!this.store.has(hash)) {
+      this.store.set(hash, block);
+      this.refCount.set(hash, 0);
+    }
+    this.refCount.set(hash, this.refCount.get(hash)! + 1);
+    return hash;
+  }
+
+  getBlock(hash: string): Buffer | undefined { return this.store.get(hash); }
+
+  removeBlock(hash: string): void {
+    const count = this.refCount.get(hash) ?? 0;
+    if (count <= 1) { this.store.delete(hash); this.refCount.delete(hash); }
+    else this.refCount.set(hash, count - 1);
+  }
+
+  private sha256(data: Buffer): string {
+    let hash = 0;
+    for (let i = 0; i < data.length; i++) hash = ((hash << 5) - hash + data[i]) | 0;
+    return Math.abs(hash).toString(16).padStart(8, "0");
+  }
+}
+
+class ConflictResolver {
+  resolve(localMtime: number, remoteMtime: number, localContent: string, remoteContent: string): { action: string; result: string } {
+    if (localContent === remoteContent) return { action: "noop", result: localContent };
+    if (localMtime > remoteMtime) return { action: "local-wins", result: localContent };
+    if (remoteMtime > localMtime) return { action: "remote-wins", result: remoteContent };
+    return {
+      action: "conflict-copy",
+      result: localContent,
+    };
+  }
+}
+
+class SyncEngine {
+  private localState = new Map<string, { mtime: number; content: string }>();
+  private remoteState = new Map<string, { mtime: number; content: string }>();
+  private resolver = new ConflictResolver();
+
+  localChange(path: string, content: string): void {
+    this.localState.set(path, { mtime: Date.now(), content });
+  }
+
+  remoteChange(path: string, content: string, mtime: number): void {
+    this.remoteState.set(path, { mtime, content });
+  }
+
+  sync(path: string): string {
+    const l = this.localState.get(path);
+    const r = this.remoteState.get(path);
+    if (!l && !r) return "noop";
+    if (!l) { this.localState.set(path, r!); return "downloaded"; }
+    if (!r) { this.remoteState.set(path, l); return "uploaded"; }
+    const result = this.resolver.resolve(l.mtime, r.mtime, l.content, r.content);
+    if (result.action === "local-wins") this.remoteState.set(path, l);
+    else if (result.action === "remote-wins") this.localState.set(path, r);
+    return result.action;
+  }
+}
+```
+
 ## Summary
 
 - Dropbox's sync engine uses a three-state state machine (local, remote, desired) to reconcile file differences across devices, communicating with the server via HTTPS with persistent connections and exponential backoff.

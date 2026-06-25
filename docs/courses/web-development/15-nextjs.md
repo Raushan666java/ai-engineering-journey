@@ -605,6 +605,154 @@ console.log("Strategy:", RenderingStrategy.compare("isr"));
 console.log("Recommend:", RenderingStrategy.recommend([{ path: "/dashboard", updateFreq: "daily", userSpecific: true }]));
 ```
 
+## TypeScript Implementation: SSG/SSR Data Flow Simulator, Dynamic Route Builder, Middleware Chain
+
+```typescript
+type RenderStrategy = "ssg" | "ssr" | "isr" | "csr";
+
+interface PageConfig {
+    path: string;
+    strategy: RenderStrategy;
+    revalidate?: number;
+    dynamicParams?: boolean;
+    generateStaticParams?: () => Record<string, string>[];
+}
+
+class RenderingStrategyEngine {
+    static simulate(config: PageConfig): { html: string; timestamp: number; strategy: string; cacheHeaders: string } {
+        const now = Date.now();
+        let html: string;
+        let cacheHeaders: string;
+
+        switch (config.strategy) {
+            case "ssg":
+                html = `<!-- SSG: built at build time --><html><body><h1>${config.path}</h1><p>Generated: ${new Date(now).toISOString()}</p></body></html>`;
+                cacheHeaders = "public, max-age=31536000, immutable";
+                break;
+            case "ssr":
+                html = `<!-- SSR: rendered per request --><html><body><h1>${config.path}</h1><p>Rendered: ${new Date(now).toISOString()}</p></body></html>`;
+                cacheHeaders = "no-cache, no-store, must-revalidate";
+                break;
+            case "isr":
+                html = `<!-- ISR: revalidated every ${config.revalidate || 60}s --><html><body><h1>${config.path}</h1><p>Generated: ${new Date(now).toISOString()}</p></body></html>`;
+                cacheHeaders = `public, s-maxage=${config.revalidate || 60}, stale-while-revalidate=${(config.revalidate || 60) * 10}`;
+                break;
+            case "csr":
+                html = `<!-- CSR: shell only, hydrate client-side --><html><body><div id="root"></div><script src="bundle.js"></script></body></html>`;
+                cacheHeaders = "public, max-age=0, must-revalidate";
+                break;
+            default:
+                html = "";
+                cacheHeaders = "";
+        }
+
+        return { html, timestamp: now, strategy: config.strategy, cacheHeaders };
+    }
+
+    static recommend(path: string, updateFreq: "realtime" | "daily" | "weekly" | "static", userSpecific: boolean): PageConfig {
+        let strategy: RenderStrategy;
+        let revalidate: number | undefined;
+
+        if (userSpecific) {
+            strategy = "ssr";
+        } else if (updateFreq === "realtime") {
+            strategy = "ssr";
+        } else if (updateFreq === "daily") {
+            strategy = "isr";
+            revalidate = 86400;
+        } else if (updateFreq === "weekly") {
+            strategy = "isr";
+            revalidate = 604800;
+        } else {
+            strategy = "ssg";
+        }
+
+        return { path, strategy, revalidate, generateStaticParams: strategy === "ssg" ? () => [] : undefined };
+    }
+}
+
+class DynamicRoutePathBuilder {
+    static build(pattern: string, params: Record<string, string>): string {
+        let path = pattern;
+        for (const [key, value] of Object.entries(params)) {
+            path = path.replace(`[${key}]`, value);
+            path = path.replace(`[...${key}]`, value);
+        }
+        path = path.replace(/\[\[\.\.\.[^\]]+\]\]/g, "");
+        return path;
+    }
+
+    static match(pattern: string, url: string): Record<string, string> | null {
+        const patternParts = pattern.split("/").filter(Boolean);
+        const urlParts = url.split("/").filter(Boolean);
+        if (patternParts.length !== urlParts.length) return null;
+
+        const params: Record<string, string> = {};
+        for (let i = 0; i < patternParts.length; i++) {
+            if (patternParts[i].startsWith("[...") || patternParts[i].startsWith("[[...")) {
+                const key = patternParts[i].replace(/[[\].]/g, "");
+                params[key] = urlParts.slice(i).join("/");
+                return params;
+            }
+            if (patternParts[i].startsWith("[") && patternParts[i].endsWith("]")) {
+                const key = patternParts[i].replace(/[[\]]/g, "").split("?")[0];
+                params[key] = urlParts[i];
+            } else if (patternParts[i] !== urlParts[i]) {
+                return null;
+            }
+        }
+        return params;
+    }
+
+    static sitemap(routes: string[]): string {
+        return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${
+            routes.map(r => `  <url><loc>https://example.com${r}</loc><lastmod>${new Date().toISOString()}</lastmod></url>`).join("\n")
+        }\n</urlset>`;
+    }
+}
+
+class NextJSMiddlewareChain {
+    private middlewares: Array<{
+        pattern: RegExp;
+        handler: (req: { url: string; headers: Record<string, string>; cookies: Record<string, string> }) => { redirect?: string; rewrite?: string; headers?: Record<string, string>; next?: boolean }
+    }> = [];
+
+    add(pattern: RegExp, handler: typeof this.middlewares[0]["handler"]): void {
+        this.middlewares.push({ pattern, handler });
+    }
+
+    run(url: string, req: { headers: Record<string, string>; cookies: Record<string, string> }): any {
+        for (const mw of this.middlewares) {
+            if (mw.pattern.test(url)) {
+                const result = mw.handler({ ...req, url });
+                if (result.redirect || result.rewrite) return result;
+                if (result.headers) Object.assign(req.headers, result.headers);
+            }
+        }
+        return { next: true };
+    }
+
+    static authMiddleware(allowedRoles: string[]): typeof this.middlewares[0]["handler"] {
+        return (req) => {
+            const role = req.cookies["role"] || "guest";
+            if (!allowedRoles.includes(role)) return { redirect: "/login" };
+            return { next: true };
+        };
+    }
+}
+
+// Demo
+console.log("SSG:", RenderingStrategyEngine.simulate({ path: "/about", strategy: "ssg" }).cacheHeaders);
+console.log("ISR:", RenderingStrategyEngine.simulate({ path: "/blog", strategy: "isr", revalidate: 60 }).cacheHeaders);
+console.log("Recommend /dashboard realtime user:", RenderingStrategyEngine.recommend("/dashboard", "daily", true).strategy);
+console.log("Route build:", DynamicRoutePathBuilder.build("/blog/[slug]/[id]", { slug: "hello-world", id: "42" }));
+console.log("Match:", DynamicRoutePathBuilder.match("/users/[id]", "/users/5"));
+const chain = new NextJSMiddlewareChain();
+chain.add(/^\/admin/, NextJSMiddlewareChain.authMiddleware(["admin"]));
+console.log("Middleware /admin:", chain.run("/admin", { headers: {}, cookies: { role: "user" } }));
+console.log("Middleware /public:", chain.run("/public", { headers: {}, cookies: {} }));
+```
+
 ## Summary
 
 Next.js is a React framework providing SSR, SSG, ISR, and client rendering. The App Router uses file-based routing with nested layouts. Server Components fetch data directly without client JavaScript. API routes handle backend logic. Middleware intercepts requests. SEO is managed through metadata export and sitemap generation.

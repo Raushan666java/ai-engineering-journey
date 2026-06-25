@@ -655,6 +655,111 @@ sequenceDiagram
 
 ---
 
+### TypeScript: Raft Leader Election, Distributed Lock, and Service Registry
+
+```typescript
+class RaftNode {
+  private term = 0;
+  private votedFor: string | null = null;
+  private state: "follower" | "candidate" | "leader" = "follower";
+  private log: { term: number; command: string }[] = [];
+  private commitIndex = 0;
+  private lastApplied = 0;
+  private electionTimeout: number;
+
+  constructor(public id: string, private peers: RaftNode[]) {
+    this.electionTimeout = 150 + Math.random() * 150;
+  }
+
+  startElection(): void {
+    this.term++;
+    this.state = "candidate";
+    this.votedFor = this.id;
+    let votes = 1;
+    for (const peer of this.peers) {
+      if (peer.id === this.id) continue;
+      if (peer.requestVote(this.term, this.id)) votes++;
+    }
+    if (votes > this.peers.length / 2) {
+      this.state = "leader";
+    }
+  }
+
+  requestVote(term: number, candidateId: string): boolean {
+    if (term > this.term) { this.term = term; this.state = "follower"; this.votedFor = null; }
+    if (term === this.term && this.votedFor === null) {
+      this.votedFor = candidateId;
+      return true;
+    }
+    return false;
+  }
+
+  appendEntries(term: number, entries: { term: number; command: string }[]): boolean {
+    if (term >= this.term) {
+      this.term = term;
+      this.state = "follower";
+      this.log.push(...entries);
+      return true;
+    }
+    return false;
+  }
+
+  getState(): string { return this.state; }
+  getTerm(): number { return this.term; }
+  getLogLength(): number { return this.log.length; }
+}
+
+class DistributedLock {
+  private locks = new Map<string, { owner: string; expiry: number; token: number }>();
+  private fencingTokenCounter = 0;
+
+  acquire(resource: string, owner: string, ttlMs: number): { success: boolean; token?: number } {
+    const now = Date.now();
+    const existing = this.locks.get(resource);
+    if (existing && existing.expiry > now && existing.owner !== owner) return { success: false };
+    const token = ++this.fencingTokenCounter;
+    this.locks.set(resource, { owner, expiry: now + ttlMs, token });
+    return { success: true, token };
+  }
+
+  release(resource: string, owner: string, token: number): boolean {
+    const lock = this.locks.get(resource);
+    if (!lock || lock.owner !== owner || lock.token !== token) return false;
+    this.locks.delete(resource);
+    return true;
+  }
+
+  isHeld(resource: string): boolean {
+    const lock = this.locks.get(resource);
+    return !!lock && lock.expiry > Date.now();
+  }
+}
+
+class ServiceRegistry {
+  private services = new Map<string, { url: string; ttl: number; expiresAt: number }[]>();
+
+  register(name: string, url: string, ttlMs = 30000): void {
+    if (!this.services.has(name)) this.services.set(name, []);
+    this.services.get(name)!.push({ url, ttl: ttlMs, expiresAt: Date.now() + ttlMs });
+  }
+
+  discover(name: string): string[] {
+    const instances = this.services.get(name) ?? [];
+    const healthy = instances.filter(i => i.expiresAt > Date.now());
+    return healthy.map(i => i.url);
+  }
+
+  heartbeat(name: string, url: string): boolean {
+    const instances = this.services.get(name);
+    if (!instances) return false;
+    const found = instances.find(i => i.url === url);
+    if (!found) return false;
+    found.expiresAt = Date.now() + found.ttl;
+    return true;
+  }
+}
+```
+
 ## Summary
 
 - Service registries maintain dynamic mappings between service names and network locations; ZooKeeper, Etcd, Consul, and Eureka are common implementations

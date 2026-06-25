@@ -717,6 +717,145 @@ for (const point of curve) {
 
 ---
 
+## TypeScript Implementation: Cross-Validator, ROC/AUC, Learning Curves, Grid Search
+
+```typescript
+class KFoldCrossValidator {
+    static split<T>(data: T[], k: number): { train: T[]; test: T[] }[] {
+        const shuffled = [...data].sort(() => Math.random() - 0.5);
+        const folds: T[][] = [];
+        const foldSize = Math.floor(data.length / k);
+        for (let i = 0; i < k; i++) {
+            folds.push(shuffled.slice(i * foldSize, (i + 1) * foldSize));
+        }
+        if (shuffled.length % k !== 0) folds[k - 1].push(...shuffled.slice(k * foldSize));
+        return folds.map((testFold, i) => ({
+            test: testFold,
+            train: folds.filter((_, j) => j !== i).flat()
+        }));
+    }
+
+    static stratified<T>(data: T[], labels: number[], k: number): { train: T[]; test: T[] }[] {
+        const pos = data.filter((_, i) => labels[i] === 1);
+        const neg = data.filter((_, i) => labels[i] === 0);
+        const posFolds = this.split(pos, k);
+        const negFolds = this.split(neg, k);
+        return Array.from({ length: k }, (_, i) => ({
+            train: [...posFolds.filter((_, j) => j !== i).flat(), ...negFolds.filter((_, j) => j !== i).flat()],
+            test: [...posFolds[i], ...negFolds[i]]
+        }));
+    }
+}
+
+class ROCCurve {
+    static compute(scores: number[], labels: number[], thresholds: number = 100): { fpr: number[]; tpr: number[]; auc: number } {
+        const steps = Array.from({ length: thresholds }, (_, i) => i / (thresholds - 1));
+        const fpr: number[] = []; const tpr: number[] = [];
+        const pos = labels.filter(l => l === 1).length;
+        const neg = labels.filter(l => l === 0).length;
+        for (const t of steps) {
+            let tp = 0; let fp = 0;
+            for (let i = 0; i < scores.length; i++) {
+                if (scores[i] >= t) { if (labels[i] === 1) tp++; else fp++; }
+            }
+            fpr.push(fp / (neg || 1));
+            tpr.push(tp / (pos || 1));
+        }
+        let auc = 0;
+        for (let i = 1; i < fpr.length; i++) {
+            auc += (fpr[i] - fpr[i - 1]) * (tpr[i] + tpr[i - 1]) / 2;
+        }
+        return { fpr, tpr, auc };
+    }
+}
+
+class LearningCurveGenerator {
+    static generate(
+        modelFactory: () => { fit: (x: number[][], y: number[]) => void; predict: (x: number[]) => number },
+        features: number[][], labels: number[], trainSizes: number[] = [0.1, 0.2, 0.4, 0.6, 0.8, 1.0]
+    ): { trainSize: number; trainScore: number; valScore: number }[] {
+        return trainSizes.map(frac => {
+            const n = Math.floor(features.length * frac);
+            const idx = features.slice(0, n).map((_, i) => i);
+            const model = modelFactory();
+            model.fit(idx.map(i => features[i]), idx.map(i => labels[i]));
+            const trainPreds = idx.map(i => model.predict(features[i]));
+            const trainAcc = trainPreds.filter((p, i) => p === labels[idx[i]]).length / idx.length;
+            const testIdx = features.slice(n).map((_, i) => i + n);
+            const testPreds = testIdx.map(i => model.predict(features[i]));
+            const testAcc = testPreds.filter((p, i) => p === labels[testIdx[i]]).length / testIdx.length;
+            return { trainSize: n, trainScore: trainAcc, valScore: testAcc };
+        });
+    }
+}
+
+class GridSearch {
+    static search(
+        modelFactory: (params: Record<string, any>) => { fit: (x: number[][], y: number[]) => void; predict: (x: number[]) => number },
+        paramGrid: Record<string, any[]>,
+        features: number[][], labels: number[], k: number = 3
+    ): { bestParams: Record<string, any>; bestScore: number; results: { params: Record<string, any>; score: number }[] } {
+        const keys = Object.keys(paramGrid);
+        const combinations = this.cartesian(keys.map(k => paramGrid[k]));
+        const results: { params: Record<string, any>; score: number }[] = [];
+
+        for (const combo of combinations) {
+            const params: Record<string, any> = {};
+            keys.forEach((k, i) => params[k] = combo[i]);
+            const folds = KFoldCrossValidator.split(features, k);
+            let scores = 0;
+            for (const fold of folds) {
+                const model = modelFactory(params);
+                model.fit(fold.train, fold.train.map((_, i) => labels[i]));
+                const preds = fold.test.map(x => model.predict(x));
+                const acc = preds.filter((p, i) => p === labels[fold.train.length + i]).length / fold.test.length;
+                scores += acc;
+            }
+            results.push({ params, score: scores / k });
+        }
+
+        results.sort((a, b) => b.score - a.score);
+        return { bestParams: results[0].params, bestScore: results[0].score, results };
+    }
+
+    private static cartesian(arrays: any[][]): any[][] {
+        if (arrays.length === 0) return [[]];
+        return arrays[0].flatMap(v => this.cartesian(arrays.slice(1)).map(arr => [v, ...arr]));
+    }
+}
+
+// Demo: KNN-style classifier for evaluation
+function simpleKNN(params: Record<string, any>) {
+    const k = params.k as number;
+    let X: number[][] = []; let y: number[] = [];
+    return {
+        fit: (features: number[][], labels: number[]) => { X = features; y = labels; },
+        predict: (point: number[]) => {
+            const dists = X.map((x, i) => ({ d: Math.sqrt(x.reduce((s, v, j) => s + (v - point[j]) ** 2, 0)), label: y[i] }))
+                .sort((a, b) => a.d - b.d).slice(0, k);
+            const ones = dists.filter(d => d.label === 1).length;
+            return ones > k / 2 ? 1 : 0;
+        }
+    };
+}
+
+const X = [[1, 2], [2, 3], [3, 4], [4, 5], [5, 1], [6, 2], [7, 3], [8, 4], [9, 5], [10, 6]];
+const yLabels = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1];
+const scores = [0.1, 0.2, 0.3, 0.4, 0.35, 0.6, 0.7, 0.8, 0.9, 0.85];
+const roc = ROCCurve.compute(scores, yLabels);
+console.log("AUC:", roc.auc.toFixed(4));
+
+const learning = LearningCurveGenerator.generate(() => simpleKNN({ k: 3 }), X, yLabels);
+console.log("Learning curve:", learning.map(l => `n=${l.trainSize} train=${l.trainScore.toFixed(2)} val=${l.valScore.toFixed(2)}`).join(" | "));
+
+const grid = GridSearch.search(
+    (p) => simpleKNN(p),
+    { k: [1, 3, 5, 7] },
+    X, yLabels, 3
+);
+console.log("Best params:", JSON.stringify(grid.bestParams), "score:", grid.bestScore.toFixed(4));
+```
+
 ## Summary
 
 - The bias-variance tradeoff is a central challenge in machine learning.

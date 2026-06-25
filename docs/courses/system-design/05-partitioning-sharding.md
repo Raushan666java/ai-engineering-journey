@@ -627,6 +627,69 @@ flowchart TD
     end
 ```
 
+### TypeScript: Consistent Hash Ring
+
+```typescript
+class ConsistentHashRing {
+  private ring = new Map<number, string>();
+  private sortedKeys: number[] = [];
+  private virtualNodes = 150;
+
+  constructor(private nodes: string[] = []) { for (const n of nodes) this.addNode(n); }
+
+  private hash(key: string): number {
+    let h = 0;
+    for (let i = 0; i < key.length; i++) { h = (h << 5) - h + key.charCodeAt(i); h |= 0; }
+    return h >>> 0;
+  }
+
+  addNode(node: string): void {
+    for (let v = 0; v < this.virtualNodes; v++) {
+      const h = this.hash(`${node}:v${v}`);
+      if (!this.ring.has(h)) this.ring.set(h, node);
+    }
+    this.sortedKeys = [...this.ring.keys()].sort((a, b) => a - b);
+  }
+
+  removeNode(node: string): void {
+    for (let v = 0; v < this.virtualNodes; v++) this.ring.delete(this.hash(`${node}:v${v}`));
+    this.sortedKeys = [...this.ring.keys()].sort((a, b) => a - b);
+  }
+
+  getNode(key: string): string {
+    if (this.sortedKeys.length === 0) throw new Error("No nodes available");
+    const h = this.hash(key);
+    let i = this.sortedKeys.findIndex(k => k >= h);
+    if (i === -1) i = 0;
+    return this.ring.get(this.sortedKeys[i])!;
+  }
+}
+
+class ShardRouter {
+  range(key: number, shards: { min: number; max: number; name: string }[]): string {
+    for (const s of shards) if (key >= s.min && key <= s.max) return s.name;
+    throw new Error("No matching shard");
+  }
+
+  hash(key: string, shardCount: number): number {
+    let h = 0;
+    for (let i = 0; i < key.length; i++) { h = (h << 5) - h + key.charCodeAt(i); h |= 0; }
+    return Math.abs(h >>> 0) % shardCount;
+  }
+
+  directory(key: string, lookup: Map<string, string>): string {
+    return lookup.get(key) ?? lookup.get("default") ?? "unassigned";
+  }
+}
+
+class ScatterGatherExecutor {
+  async execute<T>(shards: string[], query: (shard: string) => Promise<T>): Promise<T[]> {
+    const results = await Promise.all(shards.map(s => query(s).catch(e => { throw new Error(`Shard ${s} failed: ${e}`); })));
+    return results;
+  }
+}
+```
+
 ## Summary
 
 - Vertical partitioning splits by columns for I/O and cache efficiency; horizontal partitioning (sharding) splits by rows for distributed scale

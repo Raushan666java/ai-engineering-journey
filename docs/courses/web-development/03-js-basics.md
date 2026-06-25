@@ -581,6 +581,128 @@ const grouped = DataPipeline.groupBy([1, 2, 3, 4, 5, 6], n => (n % 2 === 0 ? "ev
 console.log("Grouped:", JSON.stringify(grouped));
 ```
 
+## TypeScript Implementation: Polyfill Detector, Type Coercion Analyzer, Prototype Walker
+
+```typescript
+class PolyfillDetector {
+    static check(feature: string): { supported: boolean; polyfill?: string } {
+        const checks: Record<string, { test: () => boolean; polyfillUrl: string }> = {
+            "Promise": { test: () => typeof Promise !== "undefined", polyfillUrl: "core-js/stable/promise" },
+            "Array.prototype.includes": { test: () => typeof Array.prototype.includes === "function", polyfillUrl: "core-js/stable/array/includes" },
+            "Object.entries": { test: () => typeof Object.entries === "function", polyfillUrl: "core-js/stable/object/entries" },
+            "Object.values": { test: () => typeof Object.values === "function", polyfillUrl: "core-js/stable/object/values" },
+            "String.prototype.startsWith": { test: () => typeof String.prototype.startsWith === "function", polyfillUrl: "core-js/stable/string/starts-with" },
+            "fetch": { test: () => typeof fetch !== "undefined", polyfillUrl: "whatwg-fetch" },
+            "Symbol": { test: () => typeof Symbol !== "undefined", polyfillUrl: "core-js/stable/symbol" },
+            "Map": { test: () => typeof Map !== "undefined", polyfillUrl: "core-js/stable/map" },
+            "Set": { test: () => typeof Set !== "undefined", polyfillUrl: "core-js/stable/set" },
+            "Array.from": { test: () => typeof Array.from === "function", polyfillUrl: "core-js/stable/array/from" },
+            "Object.assign": { test: () => typeof Object.assign === "function", polyfillUrl: "core-js/stable/object/assign" },
+            "Array.prototype.flat": { test: () => typeof Array.prototype.flat === "function", polyfillUrl: "core-js/stable/array/flat" },
+            "Array.prototype.flatMap": { test: () => typeof Array.prototype.flatMap === "function", polyfillUrl: "core-js/stable/array/flat-map" },
+            "globalThis": { test: () => typeof globalThis !== "undefined", polyfillUrl: "core-js/stable/global-this" },
+            "WeakRef": { test: () => typeof WeakRef !== "undefined", polyfillUrl: "core-js/stable/weak-ref" },
+        };
+        const c = checks[feature];
+        if (!c) return { supported: false, polyfill: "unknown feature" };
+        try { return { supported: c.test(), polyfill: c.polyfillUrl }; } catch { return { supported: false, polyfill: c.polyfillUrl }; }
+    }
+
+    static scanAll(): { feature: string; supported: boolean; polyfill: string }[] {
+        const features = ["Promise", "Array.prototype.includes", "Object.entries", "fetch", "Symbol", "Map", "Set", "Array.from", "Object.assign", "Array.prototype.flat"];
+        return features.map(f => {
+            const result = PolyfillDetector.check(f);
+            return { feature: f, supported: result.supported, polyfill: result.polyfill || "" };
+        });
+    }
+}
+
+class TypeCoercionAnalyzer {
+    static analyze(value: any, context: string): { input: any; type: string; coerced: string; result: any; explanation: string } {
+        let coerced: string = "none";
+        let result: any = value;
+        let explanation = "No coercion needed";
+
+        if (context === "number") {
+            result = Number(value);
+            coerced = "ToNumber";
+            explanation = `Number(${JSON.stringify(value)}) = ${result}`;
+        } else if (context === "string") {
+            result = String(value);
+            coerced = "ToString";
+            explanation = `String(${JSON.stringify(value)}) = ${JSON.stringify(result)}`;
+        } else if (context === "boolean") {
+            result = Boolean(value);
+            coerced = "ToBoolean";
+            explanation = `Boolean(${JSON.stringify(value)}) = ${result}`;
+        } else if (context === "loose-equal") {
+            const eq = value == 0;
+            result = eq;
+            coerced = "Abstract Equality";
+            explanation = `${JSON.stringify(value)} == 0 → ${eq}`;
+        }
+
+        return { input: value, type: typeof value, coerced, result, explanation };
+    }
+
+    static demonstrate(): string[] {
+        const lines: string[] = [];
+        const cases = [
+            { v: "5", ctx: "number" }, { v: null, ctx: "number" },
+            { v: undefined, ctx: "number" }, { v: [], ctx: "number" },
+            { v: [1], ctx: "number" }, { v: [1, 2], ctx: "number" },
+            { v: {}, ctx: "string" }, { v: [1, 2], ctx: "string" },
+            { v: 0, ctx: "boolean" }, { v: "", ctx: "boolean" },
+            { v: "false", ctx: "boolean" },
+        ];
+        for (const c of cases) {
+            const a = TypeCoercionAnalyzer.analyze(c.v, c.ctx);
+            lines.push(`  ${JSON.stringify(c.v)} (${a.type}) → ${a.coerced} → ${JSON.stringify(a.result)}`);
+        }
+        return lines;
+    }
+}
+
+class PrototypeChainWalker {
+    static walk(obj: any, maxDepth: number = 10): { constructor: string; proto: any; properties: string[]; depth: number }[] {
+        const chain: { constructor: string; proto: any; properties: string[]; depth: number }[] = [];
+        let current = obj;
+        let depth = 0;
+        while (current !== null && depth < maxDepth) {
+            const proto = Object.getPrototypeOf(current);
+            if (!proto) break;
+            const props = [
+                ...Object.getOwnPropertyNames(proto),
+                ...Object.getOwnPropertySymbols(proto).map(s => s.toString())
+            ];
+            chain.push({
+                constructor: proto.constructor?.name || "(anonymous)",
+                proto,
+                properties: props.filter(p => p !== "constructor"),
+                depth
+            });
+            current = proto;
+            depth++;
+        }
+        return chain;
+    }
+
+    static visualize(obj: any): string {
+        const chain = this.walk(obj);
+        return chain.map((l, i) => {
+            const indent = "  ".repeat(i);
+            const props = l.properties.slice(0, 8);
+            return `${indent}↓ ${l.constructor}${props.length > 0 ? ` [${props.join(", ")}${l.properties.length > 8 ? ", …" : ""}]` : " [empty]"}`;
+        }).join("\n");
+    }
+}
+
+// Demo
+console.log("Polyfills:", JSON.stringify(PolyfillDetector.scanAll().slice(0, 3), null, 2));
+console.log("Type coercion:\n", TypeCoercionAnalyzer.demonstrate().join("\n"));
+console.log("Array prototype chain:\n", PrototypeChainWalker.visualize([1, 2, 3]));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** Arrow functions inherit `this` from their enclosing scope, making them ideal for callbacks.

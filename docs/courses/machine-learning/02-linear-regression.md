@@ -555,6 +555,151 @@ console.log('After scaling:', X_scaled.map(r => r.map(v => v.toFixed(4))));
 
 ---
 
+## TypeScript Implementation: Multiple Regression, Ridge, Lasso, and Feature Engineering
+
+```typescript
+class MultipleLinearRegression {
+    private weights: number[] = [];
+    private bias: number = 0;
+
+    fit(features: number[][], targets: number[]): void {
+        const n = features.length;
+        const d = features[0].length;
+        const X = features.map(row => [1, ...row]);
+        const Xt = X[0].map((_, i) => X.map(row => row[i]));
+        const XtX = Xt.map(row => X[0].map((_, j) => row.reduce((s, _, k) => s + X[k][j] * row[k], 0)));
+        const nCols = XtX.length;
+        const augmented = XtX.map((row, i) => [...row, Xt.reduce((s, row2) => s + row2.reduce((sum, v, j) => sum + v * targets[j], 0), 0)]);
+        for (let i = 0; i < nCols; i++) {
+            const pivot = augmented[i][i];
+            for (let j = i; j <= nCols; j++) augmented[i][j] /= pivot;
+            for (let k = 0; k < nCols; k++) {
+                if (k !== i) {
+                    const factor = augmented[k][i];
+                    for (let j = i; j <= nCols; j++) augmented[k][j] -= factor * augmented[i][j];
+                }
+            }
+        }
+        this.bias = augmented[0][nCols];
+        this.weights = augmented.slice(1).map(r => r[nCols]);
+    }
+
+    predict(features: number[]): number {
+        return features.reduce((s, f, i) => s + f * this.weights[i], this.bias);
+    }
+
+    rSquared(features: number[][], targets: number[]): number {
+        const preds = features.map(f => this.predict(f));
+        const meanT = targets.reduce((a, b) => a + b, 0) / targets.length;
+        const ssRes = targets.reduce((s, t, i) => s + (t - preds[i]) ** 2, 0);
+        const ssTot = targets.reduce((s, t) => s + (t - meanT) ** 2, 0);
+        return 1 - ssRes / ssTot;
+    }
+
+    adjustedRSquared(features: number[][], targets: number[]): number {
+        const n = targets.length;
+        const p = features[0].length;
+        const r2 = this.rSquared(features, targets);
+        return 1 - ((1 - r2) * (n - 1)) / (n - p - 1);
+    }
+}
+
+class RidgeRegression {
+    private weights: number[] = [];
+    private bias: number = 0;
+    private alpha: number;
+
+    constructor(alpha: number = 1.0) { this.alpha = alpha; }
+
+    fit(features: number[][], targets: number[]): void {
+        const n = features.length;
+        const d = features[0].length;
+        const X = features.map(row => [1, ...row]);
+        const Xt = X[0].map((_, i) => X.map(row => row[i]));
+        const XtX = Xt.map(row => X[0].map((_, j) => row.reduce((s, _, k) => s + X[k][j] * row[k], 0)));
+        for (let i = 1; i <= d; i++) XtX[i][i] += this.alpha;
+        const Xty = Xt.map(row => row.reduce((s, v, j) => s + v * targets[j], 0));
+        const aug = XtX.map((row, i) => [...row, Xty[i]]);
+        for (let i = 0; i <= d; i++) {
+            const pivot = aug[i][i];
+            for (let j = i; j <= d + 1; j++) aug[i][j] /= pivot;
+            for (let k = 0; k <= d; k++) {
+                if (k !== i) {
+                    const factor = aug[k][i];
+                    for (let j = i; j <= d + 1; j++) aug[k][j] -= factor * aug[i][j];
+                }
+            }
+        }
+        this.bias = aug[0][d + 1];
+        this.weights = aug.slice(1).map(r => r[d + 1]);
+    }
+
+    predict(features: number[]): number { return features.reduce((s, f, i) => s + f * this.weights[i], this.bias); }
+}
+
+class LassoRegression {
+    private weights: number[] = [];
+    private bias: number = 0;
+    private alpha: number;
+    private lr: number;
+    private epochs: number;
+
+    constructor(alpha: number = 0.1, lr: number = 0.01, epochs: number = 1000) {
+        this.alpha = alpha; this.lr = lr; this.epochs = epochs;
+    }
+
+    fit(features: number[][], targets: number[]): void {
+        const n = features.length;
+        const d = features[0].length;
+        this.weights = new Array(d).fill(0);
+        this.bias = 0;
+        for (let ep = 0; ep < this.epochs; ep++) {
+            for (let i = 0; i < n; i++) {
+                const pred = this.predict(features[i]);
+                const err = pred - targets[i];
+                for (let j = 0; j < d; j++) {
+                    const grad = (2 / n) * err * features[i][j] + this.alpha * Math.sign(this.weights[j]);
+                    this.weights[j] -= this.lr * grad;
+                }
+                this.bias -= this.lr * (2 / n) * err;
+            }
+        }
+    }
+
+    predict(features: number[]): number { return features.reduce((s, f, i) => s + f * this.weights[i], this.bias); }
+}
+
+class PolynomialFeatureMapper {
+    static map(features: number[], degree: number): number[] {
+        const result: number[] = [];
+        const d = features.length;
+        const generate = (idx: number, current: number[]) => {
+            if (current.length === degree) { result.push(current.reduce((a, b) => a * b, 1)); return; }
+            for (let i = idx; i < d; i++) generate(i, [...current, features[i]]);
+        };
+        for (let deg = 1; deg <= degree; deg++) generate(0, []);
+        return result;
+    }
+}
+
+// Demo
+const X = [[1, 2], [2, 3], [3, 5], [4, 4], [5, 6], [6, 7], [7, 8], [8, 9]];
+const y = [5, 8, 11, 12, 16, 19, 22, 25];
+const mlr = new MultipleLinearRegression();
+mlr.fit(X, y);
+console.log("MLR R²:", mlr.rSquared(X, y).toFixed(4));
+console.log("MLR Adj R²:", mlr.adjustedRSquared(X, y).toFixed(4));
+
+const ridge = new RidgeRegression(0.5);
+ridge.fit(X, y);
+console.log("Ridge predict [9,10]:", ridge.predict([9, 10]).toFixed(2));
+
+const lasso = new LassoRegression(0.01, 0.001, 5000);
+lasso.fit(X, y);
+console.log("Lasso predict [9,10]:", lasso.predict([9, 10]).toFixed(2));
+console.log("Poly features of [2,3] deg 2:", PolynomialFeatureMapper.map([2, 3], 2));
+```
+
 ## Summary
 
 - Linear regression models the relationship between a dependent variable and one or more independent variables, solvable via the normal equation (closed-form) or gradient descent (iterative).

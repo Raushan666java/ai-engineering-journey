@@ -703,6 +703,88 @@ A critical quality issue: subtitles that render differently on different devices
 
 ---
 
+### TypeScript: Video Transcoding, Recommendation, and Chaos Engineering
+
+```typescript
+class VideoTranscoder {
+  private profiles = [
+    { name: "240p", resolution: "426x240", bitrate: 300_000 },
+    { name: "360p", resolution: "640x360", bitrate: 700_000 },
+    { name: "720p", resolution: "1280x720", bitrate: 2_500_000 },
+    { name: "1080p", resolution: "1920x1080", bitrate: 5_000_000 },
+    { name: "4K", resolution: "3840x2160", bitrate: 15_000_000 },
+  ];
+
+  selectLadder(deviceCapability: { maxResolution: string; bandwidth: number }): { name: string; bitrate: number }[] {
+    const maxIdx = this.profiles.findIndex(p => p.resolution.startsWith(deviceCapability.maxResolution.split("x")[0]));
+    return this.profiles.slice(0, maxIdx + 1).filter(p => p.bitrate <= deviceCapability.bandwidth * 0.8);
+  }
+}
+
+class AdaptiveBitrateStreamer {
+  private currentProfile = 0;
+  private buffer: number[] = [];
+
+  constructor(private profiles: { name: string; bitrate: number }[], private bufferTargetMs: number) {}
+
+  onChunkDownloaded(chunkSizeBytes: number, downloadTimeMs: number): string {
+    const throughput = (chunkSizeBytes * 8) / (downloadTimeMs / 1000);
+    this.buffer.push(throughput);
+    if (this.buffer.length > 10) this.buffer.shift();
+    const avgThroughput = this.buffer.reduce((s, t) => s + t, 0) / this.buffer.length;
+    let bestProfile = 0;
+    for (let i = 0; i < this.profiles.length; i++) {
+      if (this.profiles[i].bitrate <= avgThroughput * 0.8) bestProfile = i;
+    }
+    this.currentProfile = bestProfile;
+    return this.profiles[this.currentProfile].name;
+  }
+}
+
+class RecommendationEngine {
+  private userHistory = new Map<string, Map<string, number>>();
+  private contentFeatures = new Map<string, { genre: string; year: number; avgRating: number }>();
+
+  recordView(userId: string, contentId: string, rating: number): void {
+    if (!this.userHistory.has(userId)) this.userHistory.set(userId, new Map());
+    this.userHistory.get(userId)!.set(contentId, rating);
+  }
+
+  getRecommendations(userId: string, limit = 10): { contentId: string; score: number }[] {
+    const history = this.userHistory.get(userId) ?? new Map();
+    const likedGenres = new Map<string, number>();
+    for (const [contentId, rating] of history) {
+      const features = this.contentFeatures.get(contentId);
+      if (features && rating >= 4) likedGenres.set(features.genre, (likedGenres.get(features.genre) ?? 0) + 1);
+    }
+    const scores: { contentId: string; score: number }[] = [];
+    for (const [contentId, features] of this.contentFeatures) {
+      if (history.has(contentId)) continue;
+      const genreScore = (likedGenres.get(features.genre) ?? 0) / Math.max(history.size, 1);
+      scores.push({ contentId, score: genreScore * features.avgRating });
+    }
+    return scores.sort((a, b) => b.score - a.score).slice(0, limit);
+  }
+}
+
+class ChaosMonkey {
+  private enabled = false;
+  constructor(private failureRate: number) {}
+
+  start(): void { this.enabled = true; }
+
+  stop(): void { this.enabled = false; }
+
+  async inject<T>(serviceName: string, fn: () => Promise<T>): Promise<T> {
+    if (this.enabled && Math.random() < this.failureRate) {
+      const error = new Error(`ChaosMonkey: ${serviceName} failure injected`);
+      return Promise.reject(error);
+    }
+    return fn();
+  }
+}
+```
+
 ## Summary
 
 - Open Connect, Netflix's custom CDN deployed at ISP peering points, serves 95%+ of traffic and eliminates commercial CDN costs

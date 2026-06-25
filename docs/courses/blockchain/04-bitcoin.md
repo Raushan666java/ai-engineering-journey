@@ -688,6 +688,123 @@ class DifficultyAdjuster {
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === UTXO Set Tracker ===
+interface UTXO { txid: string; vout: number; amount: number; scriptPubKey: string; }
+class UTXOSet {
+    private utxos = new Map<string, UTXO>();
+    private key = (txid: string, vout: number) => `${txid}:${vout}`;
+
+    add(txid: string, vout: number, amount: number, script: string): void {
+        this.utxos.set(this.key(txid, vout), { txid, vout, amount, scriptPubKey: script });
+    }
+    spend(txid: string, vout: number): boolean {
+        return this.utxos.delete(this.key(txid, vout));
+    }
+    getBalance(address: string): number {
+        let balance = 0;
+        for (const utxo of this.utxos.values()) if (utxo.scriptPubKey.includes(address)) balance += utxo.amount;
+        return balance;
+    }
+    total(): number { return this.utxos.size; }
+}
+
+// === Transaction Validator ===
+class TxValidator {
+    validateTx(inputs: { txid: string; vout: number; amount: number }[], outputs: { amount: number; address: string }[]): { valid: boolean; reason: string } {
+        if (inputs.length === 0) return { valid: false, reason: 'no inputs' };
+        if (outputs.length === 0) return { valid: false, reason: 'no outputs' };
+        const totalIn = inputs.reduce((s, i) => s + i.amount, 0);
+        const totalOut = outputs.reduce((s, o) => s + o.amount, 0);
+        if (totalIn < totalOut) return { valid: false, reason: 'inputs < outputs' };
+        return { valid: true, reason: 'valid' };
+    }
+}
+
+// === Bitcoin Script Interpreter (subset) ===
+class ScriptInterpreter {
+    private stack: number[] = [];
+    private altStack: number[] = [];
+
+    execute(script: string, txData: { prevOutValue: number; scriptPubKey: string }): boolean {
+        const ops = script.split(' ');
+        let i = 0;
+        while (i < ops.length) {
+            const op = ops[i];
+            switch (op) {
+                case 'OP_DUP': this.stack.push(this.stack[this.stack.length - 1]); break;
+                case 'OP_HASH160': { const v = this.stack.pop() ?? 0; this.stack.push(this.simpleHash(v)); break; }
+                case 'OP_EQUALVERIFY': {
+                    const a = this.stack.pop() ?? 0, b = this.stack.pop() ?? 0;
+                    if (a !== b) return false;
+                    break;
+                }
+                case 'OP_CHECKSIG': {
+                    const pub = this.stack.pop() ?? 0, sig = this.stack.pop() ?? 0;
+                    this.stack.push(this.verifySig(sig, pub) ? 1 : 0);
+                    break;
+                }
+                case 'OP_VERIFY': { if ((this.stack.pop() ?? 0) === 0) return false; break; }
+                case 'OP_EQUAL': { const a = this.stack.pop() ?? 0, b = this.stack.pop() ?? 0; this.stack.push(a === b ? 1 : 0); break; }
+                default: {
+                    const n = parseInt(op);
+                    if (!isNaN(n) && n >= 0 && n <= 16) this.stack.push(n);
+                    break;
+                }
+            }
+            i++;
+        }
+        return this.stack.pop() === 1;
+    }
+    private simpleHash(v: number): number { return ((v * 0x9E3779B9) >>> 0) % (1 << 20); }
+    private verifySig(sig: number, pub: number): boolean { return (sig ^ pub) % 2 === 1; }
+}
+
+// === Block Header Parser ===
+function parseBlockHeader(header: string): { version: number; prevBlock: string; merkleRoot: string; timestamp: number; bits: number; nonce: number } {
+    return { version: parseInt(header.slice(0, 8), 16), prevBlock: header.slice(8, 72), merkleRoot: header.slice(72, 136), timestamp: parseInt(header.slice(136, 144), 16), bits: parseInt(header.slice(144, 152), 16), nonce: parseInt(header.slice(152, 160), 16) };
+}
+
+// === Mining Reward Calculator ===
+class MiningReward {
+    static readonly HALVING_INTERVAL = 210000;
+    static readonly INITIAL_REWARD = 50;
+
+    static rewardAtBlock(height: number): number {
+        const halvings = Math.floor(height / this.HALVING_INTERVAL);
+        if (halvings >= 64) return 0;
+        return this.INITIAL_REWARD / Math.pow(2, halvings);
+    }
+    static totalSupply(halvings: number): number {
+        let total = 0;
+        for (let h = 0; h < halvings; h++) total += this.HALVING_INTERVAL * this.rewardAtBlock(h * this.HALVING_INTERVAL);
+        return total;
+    }
+}
+
+// === Demo ===
+const utxo = new UTXOSet();
+utxo.add('a', 0, 50, 'pubkey:alice');
+utxo.add('b', 0, 30, 'pubkey:bob');
+console.log(`Alice balance: ${utxo.getBalance('alice')}`);
+console.log(`UTXO count: ${utxo.total()}`);
+
+const val = new TxValidator();
+console.log(`Tx valid: ${val.validateTx([{ txid: 'a', vout: 0, amount: 50 }], [{ amount: 40, address: 'bob' }, { amount: 10, address: 'alice' }]).valid}`);
+
+const script = new ScriptInterpreter();
+const result = script.execute('2 3 OP_EQUAL', { prevOutValue: 100, scriptPubKey: '' });
+console.log(`Script 2=3: ${result}`);
+
+const header = parseBlockHeader('01000000' + 'a'.repeat(64) + 'b'.repeat(64) + '00000000' + '1d00ffff' + '00000000');
+console.log(`Block nonce: ${header.nonce}`);
+
+console.log(`BTC reward @ block 420000: ${MiningReward.rewardAtBlock(420000)} BTC`);
+console.log(`Total supply after 32 halvings: ${MiningReward.totalSupply(32).toFixed(2)} BTC`);
+```
+
 ## Summary
 
 - Bitcoin is a P2P electronic cash system based on the UTXO model.

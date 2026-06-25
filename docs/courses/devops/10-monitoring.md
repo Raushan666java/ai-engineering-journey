@@ -377,6 +377,128 @@ console.log(`API budget remaining: ${apiBudget.remainingPercent}% - ${calc.alert
 
 ---
 
+### Error Budget Tracker
+
+Managing error budgets requires continuous tracking of SLO compliance and burn rate detection. The following tool implements a comprehensive error budget tracking system with burn-rate alerts.
+
+```typescript
+// error-budget-tracker.ts
+// Track SLO error budgets with burn-rate alerts
+
+interface SLOConfig {
+  name: string;
+  target: number;  // e.g., 0.999 for 99.9%
+  windowDays: number;
+  burnRateThresholds: Array<{ label: string; multiplier: number; alertAfterMinutes: number }>;
+}
+
+interface SLIDataPoint {
+  timestamp: Date;
+  totalRequests: number;
+  successfulRequests: number;
+  latencyP99: number;
+}
+
+interface ErrorBudgetState {
+  config: SLOConfig;
+  totalBudget: number;
+  consumed: number;
+  remaining: number;
+  remainingPercent: number;
+  burnRate: number;
+  burnRateAlerts: string[];
+  projectedExhaustion: Date | null;
+  isExhausted: boolean;
+}
+
+class ErrorBudgetTracker {
+  private configs: Map<string, SLOConfig> = new Map();
+  private data: Map<string, SLIDataPoint[]> = new Map();
+
+  registerSLO(config: SLOConfig): void {
+    this.configs.set(config.name, config);
+    this.data.set(config.name, []);
+  }
+
+  recordDataPoint(name: string, point: SLIDataPoint): void {
+    if (!this.data.has(name)) throw new Error(`SLO ${name} not registered`);
+    this.data.get(name)!.push(point);
+  }
+
+  calculateState(name: string, now: Date): ErrorBudgetState {
+    const config = this.configs.get(name);
+    if (!config) throw new Error(`SLO ${name} not found`);
+
+    const points = this.data.get(name) || [];
+    const windowStart = new Date(now.getTime() - config.windowDays * 86400000);
+    const windowPoints = points.filter(p => p.timestamp >= windowStart);
+
+    const totalRequests = windowPoints.reduce((s, p) => s + p.totalRequests, 0);
+    const successfulRequests = windowPoints.reduce((s, p) => s + p.successfulRequests, 0);
+    const actualAvailability = totalRequests > 0 ? successfulRequests / totalRequests : 1;
+
+    const totalBudget = (1 - config.target) * totalRequests;
+    const consumed = (1 - actualAvailability) * totalRequests;
+    const remaining = totalBudget - consumed;
+    const remainingPercent = totalBudget > 0 ? (remaining / totalBudget) * 100 : 0;
+
+    const recentPoints = windowPoints.slice(-10);
+    const recentFailures = recentPoints.reduce((s, p) => s + (p.totalRequests - p.successfulRequests), 0);
+    const recentTotal = recentPoints.reduce((s, p) => s + p.totalRequests, 0);
+    const recentErrorRate = recentTotal > 0 ? recentFailures / recentTotal : 0;
+    const errorBudgetErrorRate = totalBudget > 0 ? Math.max(config.target / (1 - config.target), 1) * (1 - config.target) : 0;
+    const burnRate = errorBudgetErrorRate > 0 ? recentErrorRate / errorBudgetErrorRate : 0;
+
+    const burnRateAlerts: string[] = [];
+    for (const threshold of config.burnRateThresholds) {
+      if (burnRate >= threshold.multiplier) {
+        burnRateAlerts.push(`Burn rate ${burnRate.toFixed(1)}x exceeds threshold ${threshold.multiplier}x (alert after ${threshold.alertAfterMinutes}min)`);
+      }
+    }
+
+    let projectedExhaustion: Date | null = null;
+    if (burnRate > 0 && remaining > 0) {
+      const msToExhaustion = (remaining / (burnRate * errorBudgetErrorRate)) * (totalRequests > 0 ? (config.windowDays * 86400000) / totalRequests : 0);
+      if (msToExhaustion < config.windowDays * 86400000) {
+        projectedExhaustion = new Date(now.getTime() + msToExhaustion);
+      }
+    }
+
+    return { config, totalBudget, consumed, remaining, remainingPercent, burnRate, burnRateAlerts, projectedExhaustion, isExhausted: remaining <= 0 };
+  }
+
+  generateReport(name: string, now: Date): string {
+    const state = this.calculateState(name, now);
+    const lines = [
+      `Error Budget Report: ${name}`,
+      `  Target: ${(state.config.target * 100).toFixed(1)}% over ${state.config.windowDays} days`,
+      `  Budget consumed: ${state.consumed.toFixed(0)} of ${state.totalBudget.toFixed(0)} errors`,
+      `  Remaining: ${state.remaining.toFixed(0)} errors (${state.remainingPercent.toFixed(1)}%)`,
+      `  Burn rate: ${state.burnRate.toFixed(2)}x`,
+      `  Status: ${state.isExhausted ? '❌ EXHAUSTED' : state.remainingPercent < 20 ? '⚠ WARNING' : '✅ HEALTHY'}`,
+    ];
+    if (state.projectedExhaustion) lines.push(`  Projected exhaustion: ${state.projectedExhaustion.toISOString()}`);
+    for (const alert of state.burnRateAlerts) lines.push(`  🚨 ${alert}`);
+    return lines.join('\n');
+  }
+}
+
+const tracker = new ErrorBudgetTracker();
+tracker.registerSLO({ name: 'api-availability', target: 0.999, windowDays: 30, burnRateThresholds: [{ label: 'critical', multiplier: 10, alertAfterMinutes: 5 }, { label: 'warning', multiplier: 3, alertAfterMinutes: 30 }] });
+
+for (let day = 0; day < 30; day++) {
+  const total = 100000;
+  const failed = day > 25 ? Math.floor(total * 0.005) : Math.floor(total * 0.0005);
+  tracker.recordDataPoint('api-availability', { timestamp: new Date(Date.now() - (29 - day) * 86400000), totalRequests: total, successfulRequests: total - failed, latencyP99: 45 });
+}
+
+console.log(tracker.generateReport('api-availability', new Date()));
+```
+
+**What this demonstrates:** An error budget tracker with burn-rate alerts and projection provides early warning when reliability is degrading faster than the SLO allows.
+
+---
+
 ## Practical Takeaways
 
 1. **Monitoring should focus on user-visible symptoms**, not internal system states. Alert on customer-impacting conditions.

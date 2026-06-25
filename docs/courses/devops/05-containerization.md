@@ -573,6 +573,245 @@ console.log('Advice:', report.optimizationAdvice.join('; '));
 
 ---
 
+### Container Image Vulnerability Scanner Integration
+
+Security scanning is a critical gate in container CI/CD pipelines. The following tool integrates with Trivy-compatible output, correlates vulnerabilities with image layers, and enforces policy gates.
+
+```typescript
+// image-scanner.ts
+// Container vulnerability scanning and policy enforcement
+
+interface Vulnerability {
+  id: string;
+  package: string;
+  severity: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';
+  installedVersion: string;
+  fixedVersion: string;
+  layerIndex: number;
+}
+
+interface ScanResult {
+  image: string;
+  tag: string;
+  vulnerabilities: Vulnerability[];
+  totalBySeverity: Record<string, number>;
+  scanTimestamp: Date;
+}
+
+interface VulnerabilityPolicy {
+  maxCritical: number;
+  maxHigh: number;
+  maxMedium: number;
+  blockOnCritical: boolean;
+  blockOnHigh: boolean;
+  exemptVulnerabilities: string[];
+}
+
+interface PolicyResult {
+  passed: boolean;
+  violations: string[];
+  summary: string;
+}
+
+class ContainerSecurityScanner {
+  private policy: VulnerabilityPolicy;
+
+  constructor(policy: VulnerabilityPolicy) {
+    this.policy = policy;
+  }
+
+  evaluate(result: ScanResult): PolicyResult {
+    const violations: string[] = [];
+    const filtered = result.vulnerabilities.filter(v => !this.policy.exemptVulnerabilities.includes(v.id));
+
+    const critical = filtered.filter(v => v.severity === 'CRITICAL');
+    const high = filtered.filter(v => v.severity === 'HIGH');
+    const medium = filtered.filter(v => v.severity === 'MEDIUM');
+
+    if (critical.length > this.policy.maxCritical) {
+      violations.push(`Found ${critical.length} critical vulnerabilities (max ${this.policy.maxCritical})`);
+    }
+    if (high.length > this.policy.maxHigh) {
+      violations.push(`Found ${high.length} high vulnerabilities (max ${this.policy.maxHigh})`);
+    }
+    if (medium.length > this.policy.maxMedium) {
+      violations.push(`Found ${medium.length} medium vulnerabilities (max ${this.policy.maxMedium})`);
+    }
+
+    if (this.policy.blockOnCritical && critical.length > 0) {
+      violations.push('Build blocked: critical vulnerabilities present and blockOnCritical is enabled');
+    }
+    if (this.policy.blockOnHigh && high.length > 0) {
+      violations.push('Build blocked: high vulnerabilities present and blockOnHigh is enabled');
+    }
+
+    const passed = violations.length === 0;
+    return {
+      passed,
+      violations,
+      summary: passed ? '✅ Security scan passed all policies' : `❌ ${violations.length} policy violation(s)`,
+    };
+  }
+
+  generateReport(result: ScanResult, policyResult: PolicyResult): string {
+    return `## Container Security Scan Report\n\n` +
+      `**Image:** ${result.image}:${result.tag}\n` +
+      `**Scanned at:** ${result.scanTimestamp.toISOString()}\n` +
+      `**Vulnerabilities:** CRITICAL: ${result.totalBySeverity['CRITICAL'] || 0}, HIGH: ${result.totalBySeverity['HIGH'] || 0}, MEDIUM: ${result.totalBySeverity['MEDIUM'] || 0}, LOW: ${result.totalBySeverity['LOW'] || 0}\n\n` +
+      `**Policy Result:** ${policyResult.passed ? '✅ PASSED' : '❌ BLOCKED'}\n` +
+      (policyResult.violations.length > 0 ? policyResult.violations.map(v => `- ${v}\n`).join('') : '') + '\n' +
+      (result.vulnerabilities.length > 0
+        ? `| ID | Package | Severity | Fixed |\n|----|---------|----------|-------|\n` +
+          result.vulnerabilities.slice(0, 10).map(v => `| ${v.id} | ${v.package} | ${v.severity} | ${v.fixedVersion} |`).join('\n') +
+          (result.vulnerabilities.length > 10 ? `\n... and ${result.vulnerabilities.length - 10} more` : '')
+        : 'No vulnerabilities found');
+  }
+
+  suggestRemediation(vulns: Vulnerability[]): string[] {
+    const byPackage = new Map<string, Vulnerability[]>();
+    for (const v of vulns) {
+      if (!byPackage.has(v.package)) byPackage.set(v.package, []);
+      byPackage.get(v.package)!.push(v);
+    }
+
+    return [...byPackage.entries()].map(([pkg, vs]) => {
+      const maxSev = vs.sort((a, b) =>
+        ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].indexOf(a.severity) -
+        ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].indexOf(b.severity)
+      )[0];
+      return `${pkg}: upgrade to fix ${vs.length} vulnerability(ies), highest severity ${maxSev.severity}`;
+    });
+  }
+}
+
+const scanner = new ContainerSecurityScanner({
+  maxCritical: 0, maxHigh: 3, maxMedium: 10, blockOnCritical: true, blockOnHigh: false, exemptVulnerabilities: ['CVE-2024-0001'],
+});
+
+const scanResult: ScanResult = {
+  image: 'myapp', tag: 'v1.2.3', scanTimestamp: new Date(),
+  totalBySeverity: { CRITICAL: 1, HIGH: 4, MEDIUM: 8, LOW: 15 },
+  vulnerabilities: [
+    { id: 'CVE-2025-1234', package: 'openssl', severity: 'CRITICAL', installedVersion: '1.1.1', fixedVersion: '1.1.1u', layerIndex: 2 },
+    { id: 'CVE-2025-5678', package: 'node', severity: 'HIGH', installedVersion: '18.0.0', fixedVersion: '18.19.1', layerIndex: 3 },
+  ],
+};
+
+const policyResult = scanner.evaluate(scanResult);
+console.log(scanner.generateReport(scanResult, policyResult));
+console.log('\nRemediation:', scanner.suggestRemediation(scanResult.vulnerabilities));
+```
+
+**What this demonstrates:** Container vulnerability scanning with policy enforcement provides automated security gates, blocks builds with unacceptable risk, and generates remediation guidance for development teams.
+
+---
+
+### Container Registry Cleanup and Retention Manager
+
+Container registries accumulate image bloat over time, increasing costs and attack surface. The following tool implements retention policies, garbage collection, and cost analysis.
+
+```typescript
+// registry-cleanup.ts
+// Manage container registry retention and cleanup
+
+interface ImageTag {
+  name: string;
+  digest: string;
+  created: Date;
+  sizeMB: number;
+  pulledCount: number;
+  lastPulled: Date | null;
+}
+
+interface RetentionPolicy {
+  maxTagsPerImage: number;
+  maxAgeDays: number;
+  minRequiredTags: number;
+  keepLatest: number;
+  tagsToPreserve: string[];
+}
+
+interface CleanupPlan {
+  tagsToDelete: ImageTag[];
+  reclaimedSizeMB: number;
+  afterCount: number;
+  estimatedSavings: number;
+}
+
+class RegistryCleanupManager {
+  constructor(private policy: RetentionPolicy) {}
+
+  planCleanup(tags: ImageTag[]): CleanupPlan {
+    const sorted = [...tags].sort((a, b) => b.created.getTime() - a.created.getTime());
+    const preserveTags = this.policy.tagsToPreserve || [];
+    const toDelete: ImageTag[] = [];
+
+    // Always keep preserved tags
+    const preserved = sorted.filter(t => preserveTags.some(p => t.name.startsWith(p)));
+    const candidates = sorted.filter(t => !preserveTags.some(p => t.name.startsWith(p)));
+
+    // Keep the latest N tags
+    const kept = candidates.slice(0, this.policy.keepLatest);
+    const deletable = candidates.slice(this.policy.keepLatest);
+
+    for (const tag of deletable) {
+      const ageDays = (Date.now() - tag.created.getTime()) / (1000 * 60 * 60 * 24);
+      if (ageDays > this.policy.maxAgeDays) {
+        toDelete.push(tag);
+      }
+    }
+
+    // Enforce max tags limit
+    const totalKept = preserved.length + kept.length + (deletable.length - toDelete.length);
+    if (totalKept > this.policy.maxTagsPerImage) {
+      const excess = totalKept - this.policy.maxTagsPerImage;
+      const extraDeletable = deletable.filter(t => !toDelete.includes(t)).reverse().slice(0, excess);
+      toDelete.push(...extraDeletable);
+    }
+
+    const reclaimedSizeMB = toDelete.reduce((s, t) => s + t.sizeMB, 0);
+    const afterCount = tags.length - toDelete.length;
+
+    return {
+      tagsToDelete: toDelete,
+      reclaimedSizeMB: Math.round(reclaimedSizeMB),
+      afterCount,
+      estimatedSavings: Math.round(reclaimedSizeMB * 0.10), // ~$0.10/GB/month storage cost
+    };
+  }
+
+  generateReport(plan: CleanupPlan): string {
+    return `## Registry Cleanup Plan\n\n` +
+      `**To delete:** ${plan.tagsToDelete.length} tags\n` +
+      `**Space reclaimed:** ${plan.reclaimedSizeMB}MB (≈ $${plan.estimatedSavings}/month)\n` +
+      `**After cleanup:** ${plan.afterCount} tags\n\n` +
+      plan.tagsToDelete.slice(0, 20).map(t =>
+        `- ${t.name} (${t.sizeMB}MB, ${Math.round((Date.now() - t.created.getTime()) / 86400000)} days old)`
+      ).join('\n') +
+      (plan.tagsToDelete.length > 20 ? `\n... and ${plan.tagsToDelete.length - 20} more` : '');
+  }
+}
+
+const cleanupManager = new RegistryCleanupManager({
+  maxTagsPerImage: 10, maxAgeDays: 90, minRequiredTags: 3, keepLatest: 5, tagsToPreserve: ['latest', 'stable', 'v1', 'v2'],
+});
+
+const tags: ImageTag[] = Array.from({ length: 30 }, (_, i) => ({
+  name: i === 0 ? 'latest' : `v1.0.${i}`,
+  digest: `sha256:${i.toString(16).padStart(64, '0')}`,
+  created: new Date(Date.now() - i * 15 * 86400000),
+  sizeMB: 50 + Math.floor(Math.random() * 150),
+  pulledCount: Math.floor(Math.random() * 1000),
+  lastPulled: Math.random() > 0.3 ? new Date(Date.now() - Math.random() * 30 * 86400000) : null,
+}));
+
+console.log(cleanupManager.generateReport(cleanupManager.planCleanup(tags)));
+```
+
+**What this demonstrates:** Automated registry cleanup policies prevent image bloat, reduce storage costs, and ensure compliance with retention requirements through programmable lifecycle management.
+
+---
+
 ## Practical Takeaways
 
 1. **Always use multi-stage builds.** Separate build dependencies from runtime for smaller, more secure images.

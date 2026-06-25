@@ -723,6 +723,154 @@ class EventLogParser {
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === Storage Layout Simulator ===
+class StorageLayout {
+    private slots = new Map<number, bigint>();
+    
+    write(slot: number, value: bigint): void { this.slots.set(slot, value); }
+    read(slot: number): bigint { return this.slots.get(slot) ?? BigInt(0); }
+    
+    static computeSlot(mappingSlot: number, key: string): number {
+        let h = mappingSlot;
+        for (let i = 0; i < key.length; i++) h = ((h << 5) - h) + key.charCodeAt(i);
+        return Math.abs(h) % (1 << 30);
+    }
+    static computeArraySlot(baseSlot: number, index: number): number {
+        let h = baseSlot;
+        for (let i = 0; i < index; i++) h = ((h << 5) - h) + i;
+        return Math.abs(h) % (1 << 30);
+    }
+    
+    packValues(values: number[], bitSizes: number[]): bigint {
+        let packed = BigInt(0);
+        let offset = 0;
+        for (let i = 0; i < values.length; i++) {
+            packed |= BigInt(values[i] & ((1 << bitSizes[i]) - 1)) << BigInt(offset);
+            offset += bitSizes[i];
+        }
+        return packed;
+    }
+    unpackValues(packed: bigint, bitSizes: number[]): number[] {
+        const result: number[] = [];
+        let offset = 0;
+        for (const bits of bitSizes) {
+            result.push(Number((packed >> BigInt(offset)) & BigInt((1 << bits) - 1)));
+            offset += bits;
+        }
+        return result;
+    }
+}
+
+// === Function Selector Generator ===
+class SelectorGenerator {
+    static generate(functionSig: string): string {
+        let h = 0;
+        for (let i = 0; i < functionSig.length; i++) h = ((h << 5) - h) + functionSig.charCodeAt(i);
+        return '0x' + Math.abs(h).toString(16).padStart(8, '0');
+    }
+    static selectorFromSignature(name: string, params: string[]): string {
+        const sig = `${name}(${params.join(',')})`;
+        return this.generate(sig);
+    }
+    static decodeSelector(selector: string, knownFunctions: Map<string, string>): string | null {
+        for (const [sig, sel] of knownFunctions) if (this.generate(sig) === selector) return sig;
+        return null;
+    }
+}
+
+// === Event Signature Generator ===
+class EventSignature {
+    static hash(eventName: string, params: string[]): string {
+        const sig = `${eventName}(${params.join(',')})`;
+        let h = BigInt(0);
+        for (let i = 0; i < sig.length; i++) h = (h << 5n) - h + BigInt(sig.charCodeAt(i));
+        const hex = (h < 0n ? -h : h).toString(16).padStart(64, '0');
+        return '0x' + hex;
+    }
+}
+
+// === Function Modifier Simulator ===
+type ModifierFn = (fn: () => any) => any;
+class ModifierEngine {
+    private modifiers = new Map<string, ModifierFn>();
+
+    defineModifier(name: string, impl: ModifierFn): void { this.modifiers.set(name, impl); }
+    execute(fn: () => any, modNames: string[]): any {
+        let wrapped = fn;
+        for (const name of modNames.reverse()) {
+            const mod = this.modifiers.get(name);
+            if (mod) { const next = wrapped; wrapped = () => mod(next); }
+        }
+        return wrapped();
+    }
+}
+
+// === ABI Decoder ===
+class ABIDecoder {
+    static decode(encoded: string, types: string[]): any[] {
+        const results: any[] = [];
+        let offset = 10;
+        for (const type of types) {
+            const chunk = encoded.slice(offset, offset + 64);
+            if (type === 'uint256' || type.startsWith('uint')) results.push(BigInt('0x' + chunk));
+            else if (type === 'address') results.push('0x' + chunk.slice(24));
+            else if (type === 'bool') results.push(chunk !== '0'.repeat(64));
+            else if (type === 'string') {
+                const len = parseInt(chunk, 16);
+                const data = encoded.slice(offset + 64, offset + 64 + len * 2);
+                results.push(Buffer.from(data, 'hex').toString());
+                offset += len * 2;
+            }
+            offset += 64;
+        }
+        return results;
+    }
+}
+
+// === Contract Factory ===
+class ContractFactory {
+    private bytecodes = new Map<string, string>();
+
+    register(name: string, bytecode: string): void { this.bytecodes.set(name, bytecode); }
+    deploy(name: string, args: string): { address: string; bytecode: string } {
+        const bc = this.bytecodes.get(name);
+        if (!bc) throw new Error(`Contract ${name} not found`);
+        let addr = 0;
+        for (let i = 0; i < (bc + args).length; i++) addr = ((addr << 5) - addr) + (bc + args).charCodeAt(i);
+        return { address: `0x${Math.abs(addr).toString(16).padStart(40, '0')}`, bytecode: bc + args };
+    }
+}
+
+// === Demo ===
+const sel = new SelectorGenerator();
+console.log(`Selector balanceOf: ${sel.selectorFromSignature('balanceOf', ['address'])}`);
+console.log(`Selector transfer: ${sel.selectorFromSignature('transfer', ['address', 'uint256'])}`);
+
+const evSig = new EventSignature();
+console.log(`Transfer event hash: ${evSig.hash('Transfer', ['address', 'address', 'uint256']).slice(0, 20)}...`);
+
+const layout = new StorageLayout();
+const packed = layout.packValues([255, 15, 1], [8, 4, 1]);
+console.log(`Packed storage: ${packed.toString(16)}`);
+console.log(`Unpacked: ${layout.unpackValues(packed, [8, 4, 1])}`);
+
+const mod = new ModifierEngine();
+mod.defineModifier('onlyOwner', (fn) => { console.log('  modifier: onlyOwner'); return fn(); });
+mod.defineModifier('nonReentrant', (fn) => { console.log('  modifier: nonReentrant'); return fn(); });
+mod.execute(() => { console.log('  function body'); return 'ok'; }, ['onlyOwner', 'nonReentrant']);
+
+const factory = new ContractFactory();
+factory.register('Token', '0x60806040');
+const deployed = factory.deploy('Token', '0000000000000000000000000000000000000000000000000000000000000001');
+console.log(`Deployed Token at: ${deployed.address}`);
+
+const decoded = ABIDecoder.decode('0x000000000000000000000000abc1230000000000000000000000000000000000000000000000000000000000000001', ['address', 'uint256']);
+console.log(`Decoded: ${decoded[0]}, ${decoded[1]}`);
+```
+
 ## Summary
 
 - Solidity is the most widely used language for EVM-compatible smart contracts.

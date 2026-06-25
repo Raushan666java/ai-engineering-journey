@@ -660,6 +660,233 @@ orchestrator.buildAll(true);
 
 ---
 
+### Build Artifact Analyzer and Size Budget Tracker
+
+Tracking build artifact sizes over time prevents bloat and enforces performance budgets. The following tool analyzes bundles, tracks historical sizes, and alerts when budgets are exceeded.
+
+```typescript
+// artifact-analyzer.ts
+// Track build artifact sizes and enforce budgets
+
+interface Artifact {
+  name: string;
+  path: string;
+  sizeBytes: number;
+  type: 'js' | 'css' | 'image' | 'wasm' | 'other';
+}
+
+interface ArtifactBudget {
+  name: string;
+  maxSizeBytes: number;
+  warnThresholdPercent: number;
+}
+
+interface ArtifactRecord {
+  artifact: Artifact;
+  budget: ArtifactBudget | null;
+  status: 'ok' | 'warning' | 'over_budget';
+  currentVsBudget: number;
+}
+
+interface ChangeAnalysis {
+  records: ArtifactRecord[];
+  totalSizeBytes: number;
+  totalBudgetBytes: number;
+  percentOverBudget: number;
+  recommendations: string[];
+}
+
+class BuildAnalyzer {
+  private readonly budgets: ArtifactBudget[] = [];
+
+  constructor(budgets: ArtifactBudget[]) {
+    this.budgets = budgets;
+  }
+
+  analyze(artifacts: Artifact[]): ChangeAnalysis {
+    const records = artifacts.map(artifact => {
+      const budget = this.budgets.find(b => b.name === artifact.name);
+      let status: 'ok' | 'warning' | 'over_budget' = 'ok';
+
+      if (budget && artifact.sizeBytes > budget.maxSizeBytes) {
+        status = 'over_budget';
+      } else if (budget && artifact.sizeBytes > budget.maxSizeBytes * budget.warnThresholdPercent) {
+        status = 'warning';
+      }
+
+      return {
+        artifact,
+        budget,
+        status,
+        currentVsBudget: budget ? (artifact.sizeBytes / budget.maxSizeBytes) * 100 : 0,
+      };
+    });
+
+    const totalSizeBytes = artifacts.reduce((s, a) => s + a.sizeBytes, 0);
+    const totalBudgetBytes = records
+      .filter(r => r.budget)
+      .reduce((s, r) => s + r.budget!.maxSizeBytes, 0);
+
+    const overBudget = records.filter(r => r.status === 'over_budget');
+    const recommendations: string[] = [];
+
+    if (overBudget.length > 0) {
+      recommendations.push(
+        `${overBudget.length} artifact(s) over budget. Largest offender: ${overBudget.sort((a, b) =>
+          b.currentVsBudget - a.currentVsBudget)[0].artifact.name} (${overBudget[0].currentVsBudget.toFixed(0)}% of budget).`
+      );
+    }
+
+    const largeArtifacts = artifacts.filter(a => a.sizeBytes > 500_000);
+    if (largeArtifacts.length > 0) {
+      recommendations.push(`${largeArtifacts.length} artifact(s) exceed 500KB. Consider code splitting.`);
+    }
+
+    return { records, totalSizeBytes, totalBudgetBytes, percentOverBudget: totalBudgetBytes > 0 ? (totalSizeBytes / totalBudgetBytes) * 100 : 0, recommendations };
+  }
+
+  formatBytes(bytes: number): string {
+    if (bytes > 1_000_000) return `${(bytes / 1_000_000).toFixed(1)} MB`;
+    if (bytes > 1_000) return `${(bytes / 1_000).toFixed(1)} KB`;
+    return `${bytes} B`;
+  }
+
+  generateReport(analysis: ChangeAnalysis): string {
+    return `## Build Artifact Analysis\n\n` +
+      `| Artifact | Size | Budget | Status |\n` +
+      `|----------|------|--------|--------|\n` +
+      analysis.records.map(r =>
+        `| ${r.artifact.name} | ${this.formatBytes(r.artifact.sizeBytes)} | ${r.budget ? this.formatBytes(r.budget.maxSizeBytes) : '—'} | ${r.status === 'ok' ? '✅' : r.status === 'warning' ? '⚠️' : '❌'} |`
+      ).join('\n') + '\n\n' +
+      `**Total:** ${this.formatBytes(analysis.totalSizeBytes)} / ${this.formatBytes(analysis.totalBudgetBytes)} (${analysis.percentOverBudget.toFixed(1)}%)` +
+      (analysis.recommendations.length > 0 ? '\n\n**Recommendations:**\n' + analysis.recommendations.map(r => `- ${r}`).join('\n') : '');
+  }
+}
+
+const analyzer = new BuildAnalyzer([
+  { name: 'main.js', maxSizeBytes: 250_000, warnThresholdPercent: 0.8 },
+  { name: 'vendor.js', maxSizeBytes: 500_000, warnThresholdPercent: 0.85 },
+  { name: 'styles.css', maxSizeBytes: 50_000, warnThresholdPercent: 0.9 },
+]);
+
+const artifacts: Artifact[] = [
+  { name: 'main.js', path: 'dist/main.js', sizeBytes: 320_000, type: 'js' },
+  { name: 'vendor.js', path: 'dist/vendor.js', sizeBytes: 480_000, type: 'js' },
+  { name: 'styles.css', path: 'dist/styles.css', sizeBytes: 45_000, type: 'css' },
+  { name: 'logo.svg', path: 'dist/logo.svg', sizeBytes: 12_000, type: 'image' },
+];
+
+console.log(analyzer.generateReport(analyzer.analyze(artifacts)));
+```
+
+**What this demonstrates:** Automated artifact size analysis with budget enforcement prevents bundle bloat, enforces performance budgets, and generates actionable recommendations for optimization.
+
+---
+
+### Dependency Cache Optimization Engine
+
+Build caching is critical for fast CI pipelines. The following tool analyzes dependency graphs, identifies cache opportunities, and computes optimal cache strategies.
+
+```typescript
+// cache-optimizer.ts
+// Optimize dependency caching strategies for CI builds
+
+interface CacheCandidate {
+  key: string;
+  paths: string[];
+  hashSource: string;
+  estimatedSizeMB: number;
+  restoreTimeMs: number;
+  missTimeMs: number;
+  frequency: number;
+}
+
+interface CachePlan {
+  candidates: CacheCandidate[];
+  totalCacheSizeMB: number;
+  estimatedSavingsPercent: number;
+  recommendations: string[];
+  tierOrder: string[];
+}
+
+class CacheOptimizer {
+  readonly TIERS = { lockfile: 1, nodeModules: 2, dist: 3, global: 4 };
+
+  computePlan(deps: { name: string; version: string; installTimeMs: number }[]): CachePlan {
+    const totalInstallTime = deps.reduce((s, d) => s + d.installTimeMs, 0);
+    const uniqueDeps = new Set(deps.map(d => d.name)).size;
+
+    const candidates: CacheCandidate[] = [
+      {
+        key: 'lockfile-hash',
+        paths: ['package-lock.json'],
+        hashSource: 'package-lock.json',
+        estimatedSizeMB: 0.1,
+        restoreTimeMs: 200,
+        missTimeMs: totalInstallTime,
+        frequency: 1.0,
+      },
+      {
+        key: `node-modules-${process.platform}`,
+        paths: ['node_modules'],
+        hashSource: 'package-lock.json + os',
+        estimatedSizeMB: Math.round(uniqueDeps * 1.5),
+        restoreTimeMs: 10_000,
+        missTimeMs: totalInstallTime,
+        frequency: 0.95,
+      },
+      {
+        key: 'dist-cache',
+        paths: ['dist', '.next', '.cache'],
+        hashSource: 'src/ checksums',
+        estimatedSizeMB: 50,
+        restoreTimeMs: 5_000,
+        missTimeMs: 60_000,
+        frequency: 0.7,
+      },
+    ];
+
+    const totalCacheSizeMB = candidates.reduce((s, c) => s + c.estimatedSizeMB, 0);
+    const savings = (totalInstallTime - 15_000) / totalInstallTime * 100;
+
+    return {
+      candidates,
+      totalCacheSizeMB: Math.round(totalCacheSizeMB),
+      estimatedSavingsPercent: Math.round(savings),
+      recommendations: [
+        `Cache node_modules with lockfile hash key (saves ~${Math.round(savings)}% install time)`,
+        candidates.filter(c => c.estimatedSizeMB > 100).length > 0
+          ? 'Large caches detected — consider splitting into per-package caches'
+          : 'Cache sizes within reasonable range',
+      ],
+      tierOrder: ['lockfile', 'node_modules', 'dist'],
+    };
+  }
+
+  scoreExistingCache(hits: number, misses: number): number {
+    const total = hits + misses;
+    const hitRate = total > 0 ? hits / total : 0;
+    return Math.round(hitRate * 100);
+  }
+}
+
+const optimizer = new CacheOptimizer();
+const deps = Array.from({ length: 50 }, (_, i) => ({
+  name: `dep-${i}`,
+  version: `${Math.floor(Math.random() * 5)}.0.0`,
+  installTimeMs: Math.random() * 2000 + 500,
+}));
+
+const plan = optimizer.computePlan(deps);
+console.log(`Cache Plan: ${plan.totalCacheSizeMB}MB total, ~${plan.estimatedSavingsPercent}% savings`);
+console.log(`Hit Rate Score: ${optimizer.scoreExistingCache(85, 15)}%`);
+plan.recommendations.forEach(r => console.log(`- ${r}`));
+```
+
+**What this demonstrates:** Strategic dependency caching analysis identifies the most impactful cache targets, computes size-constrained optimization plans, and accelerates CI pipelines by reducing redundant dependency installation.
+
+---
+
 ## Practical Takeaways
 
 1. **Use `npm ci` in CI pipelines, never `npm install`.** It respects the lock file and fails if there's a mismatch.

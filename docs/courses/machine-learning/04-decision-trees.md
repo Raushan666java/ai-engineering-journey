@@ -652,6 +652,172 @@ console.log(`Parent Entropy: ${parentE.toFixed(4)}`);
 
 ---
 
+## TypeScript Implementation: Decision Tree, Gini Impurity, Random Forest, Feature Importance
+
+```typescript
+type SplitResult = { feature: number; threshold: number; gain: number; leftIndices: number[]; rightIndices: number[] };
+
+class DecisionTreeNode {
+    feature: number = -1;
+    threshold: number = 0;
+    left: DecisionTreeNode | null = null;
+    right: DecisionTreeNode | null = null;
+    value: number | null = null;
+    impurity: number = 0;
+    samples: number = 0;
+    isLeaf: boolean = false;
+}
+
+function giniImpurity(groups: number[][]): number {
+    let total = 0;
+    for (const group of groups) {
+        const n = group.length;
+        if (n === 0) continue;
+        const p1 = group.filter(g => g === 1).length / n;
+        const p0 = 1 - p1;
+        total += (n / groups.reduce((s, g) => s + g.length, 0)) * (1 - p0 ** 2 - p1 ** 2);
+    }
+    return total;
+}
+
+function entropy(labels: number[]): number {
+    if (labels.length === 0) return 0;
+    const p1 = labels.filter(l => l === 1).length / labels.length;
+    const p0 = 1 - p1;
+    if (p0 === 0 || p1 === 0) return 0;
+    return -(p0 * Math.log2(p0) + p1 * Math.log2(p1));
+}
+
+function informationGain(parent: number[], left: number[], right: number[]): number {
+    const n = parent.length;
+    return entropy(parent) - (left.length / n) * entropy(left) - (right.length / n) * entropy(right);
+}
+
+class DecisionTreeClassifier {
+    private root: DecisionTreeNode | null = null;
+    private maxDepth: number;
+
+    constructor(maxDepth: number = 5) { this.maxDepth = maxDepth; }
+
+    fit(features: number[][], labels: number[]): void {
+        this.root = this.buildTree(features, labels, 0);
+    }
+
+    private buildTree(features: number[][], labels: number[], depth: number): DecisionTreeNode {
+        const node = new DecisionTreeNode();
+        node.samples = labels.length;
+        node.impurity = giniImpurity([labels]);
+
+        if (depth >= this.maxDepth || new Set(labels).size === 1) {
+            node.isLeaf = true;
+            node.value = labels.filter(l => l === 1).length >= labels.filter(l => l === 0).length ? 1 : 0;
+            return node;
+        }
+
+        const best = this.findBestSplit(features, labels);
+        if (!best || best.gain <= 0) {
+            node.isLeaf = true;
+            node.value = labels.filter(l => l === 1).length >= labels.filter(l => l === 0).length ? 1 : 0;
+            return node;
+        }
+
+        node.feature = best.feature;
+        node.threshold = best.threshold;
+        const leftFeatures = best.leftIndices.map(i => features[i]);
+        const leftLabels = best.leftIndices.map(i => labels[i]);
+        const rightFeatures = best.rightIndices.map(i => features[i]);
+        const rightLabels = best.rightIndices.map(i => labels[i]);
+        node.left = this.buildTree(leftFeatures, leftLabels, depth + 1);
+        node.right = this.buildTree(rightFeatures, rightLabels, depth + 1);
+        return node;
+    }
+
+    private findBestSplit(features: number[][], labels: number[]): SplitResult | null {
+        let best: SplitResult | null = null;
+        const d = features[0].length;
+        for (let f = 0; f < d; f++) {
+            const values = [...new Set(features.map(row => row[f]))].sort((a, b) => a - b);
+            for (let t = 0; t < values.length - 1; t++) {
+                const threshold = (values[t] + values[t + 1]) / 2;
+                const left: number[] = []; const right: number[] = [];
+                for (let i = 0; i < features.length; i++) {
+                    (features[i][f] <= threshold ? left : right).push(i);
+                }
+                if (left.length === 0 || right.length === 0) continue;
+                const gain = informationGain(labels, left.map(i => labels[i]), right.map(i => labels[i]));
+                if (!best || gain > best.gain) {
+                    best = { feature: f, threshold, gain, leftIndices: left, rightIndices: right };
+                }
+            }
+        }
+        return best;
+    }
+
+    predict(features: number[]): number {
+        return this.traverse(features, this.root!);
+    }
+
+    private traverse(features: number[], node: DecisionTreeNode): number {
+        if (node.isLeaf) return node.value!;
+        if (features[node.feature] <= node.threshold) return this.traverse(features, node.left!);
+        return this.traverse(features, node.right!);
+    }
+}
+
+class RandomForestClassifier {
+    private trees: DecisionTreeClassifier[] = [];
+    private nTrees: number;
+
+    constructor(nTrees: number = 10) { this.nTrees = nTrees; }
+
+    fit(features: number[][], labels: number[]): void {
+        for (let t = 0; t < this.nTrees; t++) {
+            const bootstrapX: number[][] = [];
+            const bootstrapY: number[] = [];
+            for (let i = 0; i < features.length; i++) {
+                const idx = Math.floor(Math.random() * features.length);
+                bootstrapX.push(features[idx]);
+                bootstrapY.push(labels[idx]);
+            }
+            const tree = new DecisionTreeClassifier(3);
+            tree.fit(bootstrapX, bootstrapY);
+            this.trees.push(tree);
+        }
+    }
+
+    predict(features: number[]): number {
+        const votes = this.trees.map(t => t.predict(features));
+        const ones = votes.filter(v => v === 1).length;
+        return ones > this.trees.length / 2 ? 1 : 0;
+    }
+
+    featureImportance(features: number[][], labels: number[], nFeatures: number): number[] {
+        const baseline = features.map(f => this.predict(f)).filter((p, i) => p === labels[i]).length / labels.length;
+        const importances: number[] = [];
+        for (let f = 0; f < nFeatures; f++) {
+            const shuffled = features.map(row => [...row]);
+            const colValues = features.map(row => row[f]).sort(() => Math.random() - 0.5);
+            shuffled.forEach((row, i) => row[f] = colValues[i]);
+            const acc = shuffled.map(r => this.predict(r)).filter((p, i) => p === labels[i]).length / labels.length;
+            importances.push(baseline - acc);
+        }
+        return importances;
+    }
+}
+
+// Demo
+const X = [[1, 2], [2, 3], [3, 1], [4, 5], [5, 4], [6, 7], [7, 6], [8, 9], [9, 8], [10, 11]];
+const y = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1];
+const dt = new DecisionTreeClassifier(3);
+dt.fit(X, y);
+console.log("Tree predict [4,3]:", dt.predict([4, 3]));
+
+const rf = new RandomForestClassifier(20);
+rf.fit(X, y);
+console.log("Forest predict [4,3]:", rf.predict([4, 3]));
+console.log("Feature importance:", rf.featureImportance(X, y, 2).map(v => v.toFixed(4)));
+```
+
 ## Summary
 
 - Decision Trees partition the feature space into rectangular regions via a series of binary or multi-way splits.

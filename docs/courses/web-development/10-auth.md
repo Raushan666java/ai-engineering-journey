@@ -654,6 +654,157 @@ console.log("Token:", JWTManager.createToken({ userId: 1 }, "secret", 3600).slic
 console.log("Password:", PasswordMeter.strength("Hello123!"));
 ```
 
+## TypeScript Implementation: JWT Encoder/Decoder, OAuth2 PKCE, bcrypt-Style Hash
+
+```typescript
+class JWTEncoder {
+    private static base64UrlEncode(data: string): string {
+        return Buffer.from(data).toString("base64url").replace(/=+$/, "");
+    }
+
+    private static base64UrlDecode(data: string): string {
+        return Buffer.from(data, "base64url").toString("utf8");
+    }
+
+    private static simpleHash(payload: string, secret: string): string {
+        let hash = 0;
+        const combined = payload + secret;
+        for (let i = 0; i < combined.length; i++) {
+            const char = combined.charCodeAt(i);
+            hash = ((hash << 5) - hash) + char;
+            hash |= 0;
+        }
+        return Math.abs(hash).toString(16);
+    }
+
+    static encode(payload: Record<string, any>, secret: string, expiresInSec: number = 3600): string {
+        const header = this.base64UrlEncode(JSON.stringify({ alg: "HS256", typ: "JWT" }));
+        const body = { ...payload, iat: Math.floor(Date.now() / 1000), exp: Math.floor(Date.now() / 1000) + expiresInSec };
+        const payloadEncoded = this.base64UrlEncode(JSON.stringify(body));
+        const signature = this.simpleHash(`${header}.${payloadEncoded}`, secret);
+        return `${header}.${payloadEncoded}.${signature}`;
+    }
+
+    static decode(token: string): { header: any; payload: any; valid: boolean } {
+        const parts = token.split(".");
+        if (parts.length !== 3) return { header: null, payload: null, valid: false };
+        try {
+            const header = JSON.parse(this.base64UrlDecode(parts[0]));
+            const payload = JSON.parse(this.base64UrlDecode(parts[1]));
+            return { header, payload, valid: true };
+        } catch { return { header: null, payload: null, valid: false }; }
+    }
+
+    static verify(token: string, secret: string): { valid: boolean; reason?: string } {
+        const parts = token.split(".");
+        if (parts.length !== 3) return { valid: false, reason: "Malformed token" };
+        const signature = this.simpleHash(`${parts[0]}.${parts[1]}`, secret);
+        if (signature !== parts[2]) return { valid: false, reason: "Invalid signature" };
+        const payload = JSON.parse(this.base64UrlDecode(parts[1]));
+        if (payload.exp && payload.exp < Math.floor(Date.now() / 1000)) return { valid: false, reason: "Token expired" };
+        return { valid: true };
+    }
+}
+
+class OAuth2PKCESimulator {
+    static generateCodeVerifier(length: number = 43): string {
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~";
+        let verifier = "";
+        for (let i = 0; i < length; i++) verifier += chars[Math.floor(Math.random() * chars.length)];
+        return verifier;
+    }
+
+    static generateCodeChallengeSHA256(verifier: string): string {
+        let hash = 0;
+        for (let i = 0; i < verifier.length; i++) {
+            hash = ((hash << 5) - hash) + verifier.charCodeAt(i);
+            hash |= 0;
+        }
+        const hex = Math.abs(hash).toString(16);
+        return Buffer.from(hex).toString("base64url").replace(/=+$/, "");
+    }
+
+    static simulateFlow(): { authUrl: string; code: string; token: string; refresh: string } {
+        const verifier = this.generateCodeVerifier();
+        const challenge = this.generateCodeChallengeSHA256(verifier);
+        const state = Math.random().toString(36).slice(2);
+        const authUrl = `https://auth.example.com/authorize?response_type=code&client_id=app&redirect_uri=https://app.example/callback&code_challenge=${challenge}&code_challenge_method=S256&state=${state}`;
+        const code = Math.random().toString(36).slice(2);
+        const token = JWTEncoder.encode({ sub: "user123", scope: "openid profile" }, "client_secret", 3600);
+        const refresh = JWTEncoder.encode({ sub: "user123", type: "refresh" }, "refresh_secret", 604800);
+        return { authUrl, code, token, refresh };
+    }
+}
+
+class BcryptStyleHasher {
+    static hash(password: string, rounds: number = 10): { hash: string; salt: string; rounds: number } {
+        const chars = "./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        let salt = "";
+        for (let i = 0; i < 22; i++) salt += chars[Math.floor(Math.random() * chars.length)];
+        let hash = 0;
+        for (let i = 0; i < password.length; i++) {
+            hash = ((hash << 5) - hash) + password.charCodeAt(i);
+            hash |= 0;
+        }
+        for (let r = 0; r < Math.pow(2, rounds); r++) {
+            for (let i = 0; i < password.length; i++) {
+                hash = ((hash << 5) - hash) + password.charCodeAt(i) + salt.charCodeAt(i % salt.length);
+                hash |= 0;
+            }
+        }
+        const hashStr = Math.abs(hash).toString(36);
+        return { hash: hashStr, salt, rounds };
+    }
+
+    static compare(password: string, storedHash: string, salt: string, rounds: number): boolean {
+        const { hash } = this.hash(password, rounds);
+        return hash === storedHash;
+    }
+}
+
+class TOTPGenerator {
+    static generate(secret: string, timeStep: number = 30): string {
+        const counter = Math.floor(Date.now() / 1000 / timeStep);
+        let hash = 0;
+        const combined = secret + counter.toString();
+        for (let i = 0; i < combined.length; i++) {
+            hash = ((hash << 5) - hash) + combined.charCodeAt(i);
+            hash |= 0;
+        }
+        const otp = String(Math.abs(hash) % 1000000).padStart(6, "0");
+        return otp;
+    }
+
+    static verify(token: string, secret: string, window: number = 1): boolean {
+        for (let i = -window; i <= window; i++) {
+            const counter = Math.floor(Date.now() / 1000 / 30) + i;
+            let hash = 0;
+            const combined = secret + counter.toString();
+            for (let j = 0; j < combined.length; j++) { hash = ((hash << 5) - hash) + combined.charCodeAt(j); hash |= 0; }
+            if (String(Math.abs(hash) % 1000000).padStart(6, "0") === token) return true;
+        }
+        return false;
+    }
+}
+
+// Demo
+const token = JWTEncoder.encode({ userId: 1, role: "admin" }, "mysecret", 3600);
+console.log("JWT:", token.slice(0, 30) + "...");
+console.log("Decoded:", JWTEncoder.decode(token));
+console.log("Verify:", JWTEncoder.verify(token, "mysecret"));
+
+const flow = OAuth2PKCESimulator.simulateFlow();
+console.log("PKCE Auth URL:", flow.authUrl.slice(0, 60) + "...");
+
+const pwd = BcryptStyleHasher.hash("MyPassword123!", 10);
+console.log("Hash:", pwd.hash.slice(0, 20) + "...");
+console.log("Compare:", BcryptStyleHasher.compare("MyPassword123!", pwd.hash, pwd.salt, pwd.rounds));
+
+const totp = TOTPGenerator.generate("JBSWY3DPEHPK3PXP");
+console.log("TOTP:", totp);
+console.log("TOTP verify:", TOTPGenerator.verify(totp, "JBSWY3DPEHPK3PXP"));
+```
+
 ## Summary
 
 Authentication verifies identity while authorization controls access. JWTs provide stateless authentication with short-lived access tokens and long-lived refresh tokens for secure session management. bcrypt salts and hashes passwords, OAuth 2.0 enables third-party login, RBAC structures permissions by role, and TOTP adds an extra security layer with multi-factor authentication.

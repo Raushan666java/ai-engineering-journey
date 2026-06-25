@@ -727,6 +727,203 @@ console.log('Total duration:', schedule.totalDuration, 's');
 
 ---
 
+### Test Flakiness Detector and Quarantine System
+
+Flaky tests erode trust in CI pipelines. The following tool tracks test results across runs, identifies flaky tests using statistical analysis, and automatically quarantines unreliable tests.
+
+```typescript
+// flakiness-detector.ts
+// Detect and quarantine flaky CI tests
+
+interface TestRun {
+  testName: string;
+  passed: boolean;
+  durationMs: number;
+  timestamp: Date;
+  runnerId: string;
+}
+
+interface FlakinessScore {
+  testName: string;
+  passRate: number;
+  runCount: number;
+  durationVariance: number;
+  score: number;
+  verdict: 'stable' | 'suspect' | 'flaky' | 'quarantine';
+}
+
+class FlakinessDetector {
+  private history: TestRun[] = [];
+
+  record(run: TestRun): void {
+    this.history.push(run);
+  }
+
+  analyze(window: number = 20): FlakinessScore[] {
+    const byTest = new Map<string, TestRun[]>();
+    for (const run of this.history) {
+      if (!byTest.has(run.testName)) byTest.set(run.testName, []);
+      byTest.get(run.testName)!.push(run);
+    }
+
+    const scores: FlakinessScore[] = [];
+    for (const [testName, runs] of byTest) {
+      const recent = runs.slice(-window);
+      const passCount = recent.filter(r => r.passed).length;
+      const passRate = recent.length > 0 ? passCount / recent.length : 1;
+      const avgDuration = recent.reduce((s, r) => s + r.durationMs, 0) / Math.max(recent.length, 1);
+      const variance = recent.length > 1
+        ? Math.sqrt(recent.reduce((s, r) => s + (r.durationMs - avgDuration) ** 2, 0) / recent.length) / avgDuration
+        : 0;
+
+      const flakinessPenalty = 1 - passRate;
+      const durationPenalty = Math.min(variance, 1) * 0.3;
+      const score = flakinessPenalty + durationPenalty;
+
+      let verdict: 'stable' | 'suspect' | 'flaky' | 'quarantine';
+      if (score < 0.05 && runs.length >= 10) verdict = 'stable';
+      else if (score < 0.2) verdict = 'suspect';
+      else if (score < 0.4) verdict = 'flaky';
+      else verdict = 'quarantine';
+
+      scores.push({ testName, passRate, runCount: runs.length, durationVariance: Math.round(variance * 100) / 100, score: Math.round(score * 100) / 100, verdict });
+    }
+
+    return scores.sort((a, b) => b.score - a.score);
+  }
+
+  quarantine(scores: FlakinessScore[]): FlakinessScore[] {
+    return scores.filter(s => s.verdict === 'quarantine' || s.verdict === 'flaky');
+  }
+
+  generateReport(scores: FlakinessScore[]): string {
+    const stable = scores.filter(s => s.verdict === 'stable').length;
+    const flaky = scores.filter(s => s.verdict === 'flaky' || s.verdict === 'quarantine').length;
+
+    return `## Flakiness Analysis Report\n\n` +
+      `**Tests analyzed:** ${scores.length} | **Stable:** ${stable} | **Flaky/Quarantined:** ${flaky}\n\n` +
+      `| Test | Pass Rate | Variance | Score | Verdict |\n` +
+      `|------|-----------|----------|-------|---------|\n` +
+      scores.map(s => `| ${s.testName} | ${(s.passRate * 100).toFixed(0)}% | ${s.durationVariance} | ${s.score} | ${s.verdict} |`).join('\n');
+  }
+}
+
+const detector = new FlakinessDetector();
+const tests = ['UserService.getUser', 'AuthService.login', 'PaymentService.process', 'SearchService.query'];
+tests.forEach((test, ti) => {
+  for (let i = 0; i < 25; i++) {
+    const isFlaky = ti === 0 || ti === 2;
+    detector.record({
+      testName: test, runnerId: `runner-${i % 3}`,
+      passed: isFlaky ? Math.random() > 0.4 : Math.random() > 0.02,
+      durationMs: isFlaky ? 100 + Math.random() * 900 : 50 + Math.random() * 50,
+      timestamp: new Date(),
+    });
+  }
+});
+
+const scores = detector.analyze();
+console.log(detector.generateReport(scores));
+console.log('\nQuarantined:', detector.quarantine(scores).map(s => s.testName));
+```
+
+**What this demonstrates:** Statistical flakiness detection identifies unreliable tests, quantifies their instability through pass rate and duration variance, and enables automatic quarantine to restore CI pipeline trust.
+
+---
+
+### Build Failure Classifier and Triage Engine
+
+Quickly classifying build failures speeds up developer resolution time. The following tool categorizes failures by root cause and routes them to the appropriate team.
+
+```typescript
+// build-failure-classifier.ts
+// Classify and triage CI build failures
+
+interface BuildFailure {
+  id: string;
+  stage: string;
+  errorMessage: string;
+  exitCode: number;
+  commitSha: string;
+  author: string;
+  timestamp: Date;
+  logSnippet: string;
+}
+
+interface FailureClassification {
+  failure: BuildFailure;
+  category: 'compilation' | 'test' | 'dependency' | 'infrastructure' | 'config' | 'lint' | 'unknown';
+  confidence: number;
+  suggestedTeam: string;
+  priority: 'p0' | 'p1' | 'p2';
+}
+
+class FailureClassifier {
+  private patterns: { regex: RegExp; category: FailureClassification['category']; team: string; priority: 'p0' | 'p1' | 'p2' }[] = [
+    { regex: /TS\d{4}|TypeError|cannot find module|TS2304/, category: 'compilation', team: 'platform', priority: 'p1' },
+    { regex: /FAIL|AssertionError|expected.*to.*equal|test.*failed/i, category: 'test', team: 'dev', priority: 'p1' },
+    { regex: /npm ERR|could not resolve|cannot find package|404.*Not Found/i, category: 'dependency', team: 'platform', priority: 'p2' },
+    { regex: /Cannot connect|ECONNREFUSED|ETIMEOUT|ENOTFOUND/, category: 'infrastructure', team: 'infra', priority: 'p0' },
+    { regex: /ESLint|prettier|formatting|lint/i, category: 'lint', team: 'dev', priority: 'p2' },
+    { regex: /Missing(.*)config|invalid(.*)config|yaml.*invalid/i, category: 'config', team: 'platform', priority: 'p1' },
+  ];
+
+  classify(failure: BuildFailure): FailureClassification {
+    for (const pattern of this.patterns) {
+      if (pattern.regex.test(failure.errorMessage) || pattern.regex.test(failure.logSnippet)) {
+        return {
+          failure, category: pattern.category,
+          confidence: 0.85, suggestedTeam: pattern.team,
+          priority: pattern.priority,
+        };
+      }
+    }
+    return {
+      failure, category: 'unknown', confidence: 0.3,
+      suggestedTeam: 'platform', priority: 'p2',
+    };
+  }
+
+  batchClassify(failures: BuildFailure[]): {
+    byCategory: Map<string, number>;
+    byTeam: Map<string, number>;
+    details: FailureClassification[];
+  } {
+    const details = failures.map(f => this.classify(f));
+    const byCategory = new Map<string, number>();
+    const byTeam = new Map<string, number>();
+
+    for (const d of details) {
+      byCategory.set(d.category, (byCategory.get(d.category) || 0) + 1);
+      byTeam.set(d.suggestedTeam, (byTeam.get(d.suggestedTeam) || 0) + 1);
+    }
+
+    return { byCategory, byTeam, details };
+  }
+
+  generateReport(result: { byCategory: Map<string, number>; byTeam: Map<string, number>; details: FailureClassification[] }): string {
+    return `## Build Failure Classification\n\n` +
+      `**By Category:**\n` +
+      [...result.byCategory.entries()].map(([c, n]) => `  - ${c}: ${n}`).join('\n') + '\n\n' +
+      `**By Team:**\n` +
+      [...result.byTeam.entries()].map(([t, n]) => `  - ${t}: ${n}`).join('\n') + '\n';
+  }
+}
+
+const classifier = new FailureClassifier();
+const failures: BuildFailure[] = [
+  { id: 'b1', stage: 'compile', errorMessage: 'TS2304: Cannot find name "Request"', exitCode: 1, commitSha: 'abc', author: 'alice', timestamp: new Date(), logSnippet: 'src/server.ts(42): error TS2304' },
+  { id: 'b2', stage: 'test', errorMessage: 'FAIL tests/api.test.ts - expected 200 to equal 401', exitCode: 1, commitSha: 'def', author: 'bob', timestamp: new Date(), logSnippet: 'AssertionError: expected 200 to equal 401' },
+  { id: 'b3', stage: 'deploy', errorMessage: 'Cannot connect to docker daemon at unix:///var/run/docker.sock', exitCode: 1, commitSha: 'ghi', author: 'charlie', timestamp: new Date(), logSnippet: 'Error: Cannot connect to the Docker daemon' },
+];
+
+console.log(classifier.generateReport(classifier.batchClassify(failures)));
+```
+
+**What this demonstrates:** Automated build failure classification reduces mean-time-to-resolution by identifying root cause categories and routing failures to the right team with appropriate priority.
+
+---
+
 ## Practical Takeaways
 
 1. **Every push triggers CI.** No exceptions. If the build breaks, fixing it is the top priority.

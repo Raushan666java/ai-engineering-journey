@@ -704,6 +704,128 @@ class ContractWrapper {
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+// === Multi-Sig Wallet (N-of-M) ===
+class MultiSigWallet {
+    private owners: string[];
+    private required: number;
+    private nonce = 0;
+    private pending = new Map<number, { to: string; value: bigint; data: string; confirmations: Set<string> }>();
+
+    constructor(owners: string[], required: number) {
+        this.owners = owners; this.required = required;
+    }
+    submitTransaction(to: string, value: bigint, data: string, submitter: string): number | null {
+        if (!this.owners.includes(submitter)) return null;
+        const txId = ++this.nonce;
+        this.pending.set(txId, { to, value, data, confirmations: new Set([submitter]) });
+        return txId;
+    }
+    confirmTransaction(txId: number, owner: string): { executed: boolean; tx?: { to: string; value: bigint; data: string } } {
+        const tx = this.pending.get(txId);
+        if (!tx || !this.owners.includes(owner)) return { executed: false };
+        tx.confirmations.add(owner);
+        if (tx.confirmations.size >= this.required) {
+            const executed = { to: tx.to, value: tx.value, data: tx.data };
+            this.pending.delete(txId);
+            return { executed: true, tx: executed };
+        }
+        return { executed: false };
+    }
+    getConfirmations(txId: number): string[] { return Array.from(this.pending.get(txId)?.confirmations ?? []); }
+}
+
+// === Timelock Transaction ===
+class TimelockTx {
+    private lockTime: number;
+    constructor(private unlockTime: number, private to: string, private value: bigint) { this.lockTime = unlockTime; }
+    execute(currentTime: number): { success: boolean; reason: string } {
+        if (currentTime < this.lockTime) return { success: false, reason: `locked until ${new Date(this.lockTime).toISOString()}` };
+        return { success: true, reason: `sent ${this.value} to ${this.to}` };
+    }
+    timeRemaining(now: number): number { return Math.max(0, this.lockTime - now); }
+}
+
+// === Escrow Contract ===
+class EscrowContract {
+    private buyer: string;
+    private seller: string;
+    private arbiter: string;
+    private amount: bigint;
+    private state: 'AWAITING_PAYMENT' | 'AWAITING_DELIVERY' | 'AWAITING_APPROVAL' | 'COMPLETE' | 'DISPUTED' = 'AWAITING_PAYMENT';
+
+    constructor(buyer: string, seller: string, arbiter: string) { this.buyer = buyer; this.seller = seller; this.arbiter = arbiter; this.amount = BigInt(0); }
+    deposit(from: string, amount: bigint): boolean {
+        if (from !== this.buyer || this.state !== 'AWAITING_PAYMENT') return false;
+        this.amount = amount; this.state = 'AWAITING_DELIVERY'; return true;
+    }
+    confirmDelivery(from: string): boolean {
+        if (from !== this.buyer || this.state !== 'AWAITING_APPROVAL') return false;
+        this.state = 'COMPLETE'; return true;
+    }
+    markShipped(from: string): boolean {
+        if (from !== this.seller || this.state !== 'AWAITING_DELIVERY') return false;
+        this.state = 'AWAITING_APPROVAL'; return true;
+    }
+    raiseDispute(from: string): boolean {
+        if (![this.buyer, this.seller].includes(from)) return false;
+        this.state = 'DISPUTED'; return true;
+    }
+    resolveDispute(from: string, awardTo: string): { success: boolean; reason: string } {
+        if (from !== this.arbiter || this.state !== 'DISPUTED') return { success: false, reason: 'unauthorized or not disputed' };
+        this.state = 'COMPLETE';
+        return { success: true, reason: `${this.amount} awarded to ${awardTo}` };
+    }
+    getState(): string { return this.state; }
+}
+
+// === IPFS Content Hash Simulator ===
+class IPFSSim {
+    static add(content: string): string {
+        let h = 0;
+        for (let i = 0; i < content.length; i++) h = ((h << 5) - h) + content.charCodeAt(i);
+        return `Qm${Math.abs(h).toString(36).padStart(44, '0')}`;
+    }
+}
+
+// === Wallet Connection Manager ===
+class WalletManager {
+    private accounts: string[] = [];
+    private connected = false;
+    connect(accounts: string[]): void { this.accounts = accounts; this.connected = true; }
+    isConnected(): boolean { return this.connected; }
+    getAccount(): string | undefined { return this.accounts[0]; }
+    signMessage(msg: string): string {
+        let h = 0;
+        for (let i = 0; i < msg.length; i++) h = ((h << 5) - h) + msg.charCodeAt(i);
+        return `0x${Math.abs(h).toString(16).padStart(128, '0')}`;
+    }
+}
+
+// === Demo ===
+const msw = new MultiSigWallet(['alice', 'bob', 'carol'], 2);
+const txId = msw.submitTransaction('0xdave', BigInt(100), '0x', 'alice');
+console.log(`Tx submitted: ${txId}`);
+let execResult = msw.confirmTransaction(txId!, 'bob');
+console.log(`Bob confirms (executed: ${execResult.executed}):`, execResult.tx?.to);
+
+const timelock = new TimelockTx(Date.now() + 3600000, '0xbob', BigInt(10));
+console.log(`Timelock remaining: ${timelock.timeRemaining(Date.now())}ms`);
+console.log(`Early exec: ${timelock.execute(Date.now()).reason}`);
+console.log(`After unlock: ${timelock.execute(Date.now() + 3600001).reason}`);
+
+const escrow = new EscrowContract('alice', 'bob', 'carol');
+escrow.deposit('alice', BigInt(50));
+escrow.markShipped('bob');
+escrow.confirmDelivery('alice');
+console.log(`Escrow state: ${escrow.getState()}`);
+
+const ipfs = new IPFSSim();
+console.log(`IPFS hash: ${ipfs.add('hello world')}`);
+```
+
 ## Summary
 
 - dApps remove central points of control and failure by utilizing blockchain and P2P storage.

@@ -676,6 +676,139 @@ console.table(report);
 
 ---
 
+## TypeScript Implementation: K-Means, DBSCAN, and Silhouette Score
+
+```typescript
+function euclidean(a: number[], b: number[]): number {
+    return Math.sqrt(a.reduce((s, v, i) => s + (v - b[i]) ** 2, 0));
+}
+
+class KMeans {
+    private k: number;
+    private maxIter: number;
+    private centroids: number[][] = [];
+    private labels: number[] = [];
+
+    constructor(k: number, maxIter: number = 100) { this.k = k; this.maxIter = maxIter; }
+
+    fit(data: number[][]): void {
+        this.centroids = data.slice(0, this.k).map(c => [...c]);
+        for (let iter = 0; iter < this.maxIter; iter++) {
+            this.labels = data.map(point => {
+                const dists = this.centroids.map(c => euclidean(point, c));
+                return dists.indexOf(Math.min(...dists));
+            });
+            const newCentroids = Array.from({ length: this.k }, (_, i) => {
+                const points = data.filter((_, j) => this.labels[j] === i);
+                if (points.length === 0) return [...this.centroids[i]];
+                return points[0].map((_, d) => points.reduce((s, p) => s + p[d], 0) / points.length);
+            });
+            const moved = newCentroids.some((c, i) => euclidean(c, this.centroids[i]) > 1e-6);
+            this.centroids = newCentroids;
+            if (!moved) break;
+        }
+    }
+
+    predict(point: number[]): number {
+        const dists = this.centroids.map(c => euclidean(point, c));
+        return dists.indexOf(Math.min(...dists));
+    }
+
+    inertia(data: number[][]): number {
+        return data.reduce((sum, point, i) => sum + euclidean(point, this.centroids[this.labels[i]]) ** 2, 0);
+    }
+
+    static elbowMethod(data: number[][], maxK: number = 10): { k: number; inertias: number[] } {
+        const inertias: number[] = [];
+        for (let k = 1; k <= maxK; k++) {
+            const km = new KMeans(k, 50);
+            km.fit(data);
+            inertias.push(km.inertia(data));
+        }
+        const diffs = inertias.map((v, i) => i > 0 ? inertias[i - 1] - v : 0);
+        const secondDiffs = diffs.map((v, i) => i > 1 ? diffs[i - 1] - v : 0);
+        const optimalK = secondDiffs.indexOf(Math.max(...secondDiffs)) + 1;
+        return { k: optimalK, inertias };
+    }
+}
+
+class DBSCAN {
+    private epsilon: number;
+    private minPts: number;
+    private labels: number[] = [];
+
+    constructor(epsilon: number = 0.5, minPts: number = 3) { this.epsilon = epsilon; this.minPts = minPts; }
+
+    fit(data: number[][]): number[] {
+        const n = data.length;
+        this.labels = new Array(n).fill(-1);
+        let clusterId = 0;
+
+        const neighbors = (idx: number): number[] => {
+            const result: number[] = [];
+            for (let j = 0; j < n; j++) {
+                if (euclidean(data[idx], data[j]) < this.epsilon) result.push(j);
+            }
+            return result;
+        };
+
+        for (let i = 0; i < n; i++) {
+            if (this.labels[i] !== -1) continue;
+            const nbs = neighbors(i);
+            if (nbs.length < this.minPts) { this.labels[i] = -2; continue; }
+            this.labels[i] = clusterId;
+            const queue = nbs.filter(n => n !== i);
+            while (queue.length > 0) {
+                const q = queue.shift()!;
+                if (this.labels[q] === -2) this.labels[q] = clusterId;
+                if (this.labels[q] !== -1) continue;
+                this.labels[q] = clusterId;
+                const nbs2 = neighbors(q);
+                if (nbs2.length >= this.minPts) queue.push(...nbs2.filter(n => this.labels[n] === -1));
+            }
+            clusterId++;
+        }
+        return this.labels;
+    }
+
+    getNoiseCount(): number { return this.labels.filter(l => l === -2).length; }
+    getClusterCount(): number { return Math.max(...this.labels) + 1; }
+}
+
+function silhouetteScore(data: number[][], labels: number[]): number {
+    const n = data.length;
+    const scores: number[] = [];
+    for (let i = 0; i < n; i++) {
+        const sameCluster = data.filter((_, j) => labels[j] === labels[i] && j !== i);
+        const a = sameCluster.length > 0
+            ? sameCluster.reduce((s, p) => s + euclidean(data[i], p), 0) / sameCluster.length
+            : 0;
+        const otherClusters = [...new Set(labels)].filter(l => l !== labels[i]);
+        const b = otherClusters.length > 0
+            ? Math.min(...otherClusters.map(l => {
+                const pts = data.filter((_, j) => labels[j] === l);
+                return pts.reduce((s, p) => s + euclidean(data[i], p), 0) / pts.length;
+            }))
+            : 0;
+        const max = Math.max(a, b);
+        scores.push(max === 0 ? 0 : (b - a) / max);
+    }
+    return scores.reduce((s, v) => s + v, 0) / n;
+}
+
+// Demo
+const data = [[1, 1], [1.5, 2], [2, 1], [8, 8], [8.5, 9], [9, 8], [25, 26], [26, 25]];
+const km = new KMeans(3);
+km.fit(data);
+console.log("K-Means inertia:", km.inertia(data).toFixed(2));
+console.log("Elbow method optimal K:", KMeans.elbowMethod(data, 8).k);
+
+const dbscan = new DBSCAN(3, 2);
+const dbLabels = dbscan.fit(data);
+console.log("DBSCAN clusters:", dbscan.getClusterCount(), "noise:", dbscan.getNoiseCount());
+console.log("Silhouette score:", silhouetteScore(data, dbLabels).toFixed(4));
+```
+
 ## Summary
 
 - Unsupervised learning finds patterns in unlabeled data.

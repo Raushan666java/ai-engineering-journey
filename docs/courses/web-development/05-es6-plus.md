@@ -632,6 +632,119 @@ const logged = ProxyValidator.createLoggedObject({ name: "ES6", version: 2015 })
 console.log("Logged:", logged.name);
 ```
 
+## TypeScript Implementation: Babel-Style Transpiler Helpers, Destructuring Analyzer, Spread/Rest Utility
+
+```typescript
+class BabelStyleTranspiler {
+    static arrowToFunction(code: string): string {
+        return code.replace(/(\w+)\s*=\s*\(([^)]*)\)\s*=>\s*{([^}]*)}/g, "function $1($2) {\n$3\n}");
+    }
+
+    static templateLiteralToString(code: string): string {
+        return code.replace(/`([^`]*)`/g, (match, content) => {
+            const parts = content.split(/\$\{([^}]+)\}/);
+            return parts.map((p: string, i: number) =>
+                i % 2 === 0 ? JSON.stringify(p) : p
+            ).filter((p: string) => p !== '""').join(" + ");
+        });
+    }
+
+    static destructureToVar(code: string): string {
+        return code.replace(/const\s*{([^}]+)}\s*=\s*([^;]+);/g, (match: string, props: string, obj: string) => {
+            return props.split(",").map((p: string) => {
+                const [key, alias] = p.trim().split(/\s*:\s*/);
+                return `const ${alias?.trim() || key.trim()} = ${obj.trim()}.${key.trim()};`;
+            }).join("\n");
+        });
+    }
+
+    static forOfToFor(code: string): string {
+        return code.replace(/for\s*\(\s*(?:let|const|var)\s+(\w+)\s+of\s+(\w+)\s*\)\s*{([^}]*)}/g, (match: string, item: string, iterable: string, body: string) => {
+            return `for (let ${item}Idx = 0; ${item}Idx < ${iterable}.length; ${item}Idx++) {\n  const ${item} = ${iterable}[${item}Idx];${body}\n}`;
+        });
+    }
+}
+
+class DestructuringAnalyzer {
+    static analyzePattern(code: string): { type: string; variables: string[]; depth: number; restUsed: boolean; defaults: boolean } {
+        let variables: string[] = [];
+        let depth = 0;
+        let restUsed = false;
+        let defaults = false;
+
+        const arrayMatch = code.match(/^\s*\[([^\]]+)\]\s*=/);
+        if (arrayMatch) {
+            const items = arrayMatch[1].split(",").map(s => s.trim());
+            variables = items.filter(i => i !== "").map(i => i.replace(/\s*=\s*[^,]+/, "").replace(/^\.\.\./, ""));
+            restUsed = items.some(i => i.startsWith("..."));
+            defaults = items.some(i => i.includes("="));
+            return { type: "array", variables, depth: 1, restUsed, defaults };
+        }
+
+        const objMatch = code.match(/^\s*{([^}]+)}\s*=/);
+        if (objMatch) {
+            const items = objMatch[1].split(",").map(s => s.trim());
+            variables = items.map(i => {
+                const colonIdx = i.indexOf(":");
+                if (colonIdx > -1) {
+                    const val = i.slice(colonIdx + 1).trim();
+                    return val.replace(/\s*=\s*[^,]+/, "").replace(/^\.\.\./, "");
+                }
+                return i.replace(/\s*=\s*[^,]+/, "").replace(/^\.\.\./, "");
+            }).filter(Boolean);
+            restUsed = items.some(i => i.startsWith("..."));
+            defaults = items.some(i => i.includes("="));
+            return { type: "object", variables, depth: code.includes("{") ? code.split("{").length - 1 : 1, restUsed, defaults };
+        }
+
+        return { type: "none", variables: [], depth: 0, restUsed: false, defaults: false };
+    }
+}
+
+class SpreadRestUtility {
+    static merge<T>(...objects: Record<string, T>[]): Record<string, T> {
+        return objects.reduce((acc, obj) => ({ ...acc, ...obj }), {});
+    }
+
+    static pick<T extends Record<string, any>>(obj: T, ...keys: (keyof T)[]): Partial<T> {
+        return keys.reduce((acc, key) => { if (key in obj) acc[key] = obj[key]; return acc; }, {} as Partial<T>);
+    }
+
+    static omit<T extends Record<string, any>>(obj: T, ...keys: (keyof T)[]): Partial<T> {
+        const result = { ...obj };
+        for (const key of keys) delete result[key];
+        return result;
+    }
+
+    static head<T>(arr: T[], n: number = 1): T[] { return arr.slice(0, n); }
+    static tail<T>(arr: T[], n: number = 1): T[] { return arr.slice(-n); }
+    static rest<T>(arr: T[], n: number = 1): T[] { return arr.slice(n); }
+
+    static groupBy<T>(arr: T[], fn: (item: T) => string): Record<string, T[]> {
+        return arr.reduce((acc, item) => {
+            const key = fn(item);
+            (acc[key] = acc[key] || []).push(item);
+            return acc;
+        }, {} as Record<string, T[]>);
+    }
+
+    static pipe<T>(...fns: ((arg: T) => T)[]): (arg: T) => T {
+        return (x: T) => fns.reduce((v, fn) => fn(v), x);
+    }
+}
+
+// Demo
+const code = "const { name: userName, age } = user;";
+console.log("Destructure analysis:", DestructuringAnalyzer.analyzePattern(code));
+console.log("Transpiled:\n", BabelStyleTranspiler.destructureToVar(code));
+console.log("Template:", BabelStyleTranspiler.templateLiteralToString("`Hello ${name}, age ${age}`"));
+console.log("Merge:", JSON.stringify(SpreadRestUtility.merge({ a: 1 }, { b: 2 }, { c: 3 })));
+console.log("Pick:", JSON.stringify(SpreadRestUtility.pick({ a: 1, b: 2, c: 3 }, "a", "c")));
+const double = (x: number) => x * 2;
+const inc = (x: number) => x + 1;
+console.log("Pipe(inc, double)(3):", SpreadRestUtility.pipe(inc, double)(3));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** ES6 classes and ES modules provide a modern OOP and code organization model.

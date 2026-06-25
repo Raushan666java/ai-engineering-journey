@@ -626,6 +626,113 @@ console.log("Missing alt:", HTMLValidator.checkAlt(sample));
 console.log("Outline:\n" + HTMLValidator.outline("<h1>Title</h1><h3>Sub</h3>"));
 ```
 
+## TypeScript Implementation: Semantic HTML Validator and Accessibility Checker
+
+```typescript
+interface AccessiblityIssue {
+    type: "missing-alt" | "missing-label" | "heading-skip" | "missing-lang" | "missing-role" | "missing-aria";
+    element: string;
+    message: string;
+    severity: "error" | "warning" | "info";
+}
+
+class HTMLAnalyzer {
+    static validateSemantic(html: string): AccessiblityIssue[] {
+        const issues: AccessiblityIssue[] = [];
+
+        const langMatch = html.match(/<html[^>]*lang=["']([^"']*)["']/i);
+        if (!langMatch) {
+            issues.push({ type: "missing-lang", element: "html", message: "Missing lang attribute on <html>", severity: "error" });
+        }
+
+        const imgs = html.match(/<img[^>]*>/gi) || [];
+        for (const img of imgs) {
+            if (!/alt\s*=/i.test(img)) {
+                issues.push({ type: "missing-alt", element: img.slice(0, 40), message: "Missing alt attribute on <img>", severity: "error" });
+            }
+        }
+
+        const inputs = html.match(/<(input|textarea|select)[^>]*>/gi) || [];
+        for (const input of inputs) {
+            const hasLabel = /aria-label\s*=|aria-labelledby\s*=/i.test(input);
+            const hasId = /id\s*=\s*["']([^"']*)["']/i.exec(input);
+            if (!hasLabel && !hasId) {
+                issues.push({ type: "missing-label", element: input.slice(0, 40), message: "Form element without accessible label", severity: "warning" });
+            }
+        }
+
+        const headings = [...html.matchAll(/<h([1-6])[^>]*>/gi)].map(m => parseInt(m[1]));
+        for (let i = 1; i < headings.length; i++) {
+            if (headings[i] > headings[i - 1] + 1) {
+                issues.push({ type: "heading-skip", element: `<h${headings[i]}>`, message: `Heading level jumps from h${headings[i-1]} to h${headings[i]}`, severity: "warning" });
+            }
+        }
+
+        const buttons = html.match(/<button[^>]*>/gi) || [];
+        for (const btn of buttons) {
+            if (!/aria-label\s*=|aria-labelledby\s*=/i.test(btn) && !btn.includes(">") && !/type\s*=/i.test(btn)) {
+                issues.push({ type: "missing-aria", element: btn.slice(0, 40), message: "Button without aria-label or text content", severity: "info" });
+            }
+        }
+
+        return issues;
+    }
+
+    static outline(html: string): string {
+        const headings = [...html.matchAll(/<h([1-6])([^>]*)>(.*?)<\/h\1>/gi)];
+        let result = "";
+        let prevLevel = 0;
+        for (const h of headings) {
+            const level = parseInt(h[1]);
+            const text = h[3].replace(/<[^>]*>/g, "").trim();
+            const indent = "  ".repeat(Math.max(0, level - 1));
+            result += `${indent}${"•".repeat(level)} ${text}\n`;
+            prevLevel = level;
+        }
+        return result;
+    }
+
+    static checkLandmarks(html: string): { present: string[]; missing: string[] } {
+        const required = ["header", "nav", "main", "footer"];
+        const present = required.filter(r => new RegExp(`<${r}[>\\s]`, "i").test(html));
+        const missing = required.filter(r => !present.includes(r));
+        return { present, missing };
+    }
+
+    static checkColorContrast(foreground: string, background: string): number {
+        const toRgb = (hex: string): number[] => {
+            const c = hex.replace("#", "");
+            return [parseInt(c.slice(0, 2), 16), parseInt(c.slice(2, 4), 16), parseInt(c.slice(4, 6), 16)];
+        };
+        const luminance = (r: number, g: number, b: number): number => {
+            const [rl, gl, bl] = [r, g, b].map(v => { const s = v / 255; return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4; });
+            return 0.2126 * rl + 0.7152 * gl + 0.0722 * bl;
+        };
+        const fg = toRgb(foreground); const bg = toRgb(background);
+        const l1 = luminance(fg[0], fg[1], fg[2]);
+        const l2 = luminance(bg[0], bg[1], bg[2]);
+        return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+    }
+}
+
+// Demo
+const sampleHTML = `
+<!DOCTYPE html><html><body>
+<h1>Page Title</h1><h3>Subsection</h3>
+<img src="photo.jpg">
+<button>Click</button><input placeholder="name">
+<nav><a href="/">Home</a></nav>
+<main><section><h2>Content</h2></section></main>
+<footer>Copyright</footer>
+</body></html>`;
+
+console.log("Accessibility issues:", JSON.stringify(HTMLAnalyzer.validateSemantic(sampleHTML), null, 2));
+console.log("Outline:\n", HTMLAnalyzer.outline(sampleHTML));
+console.log("Landmarks:", JSON.stringify(HTMLAnalyzer.checkLandmarks(sampleHTML)));
+console.log("Contrast ratio #fff/#000:", HTMLAnalyzer.checkColorContrast("#fff", "#000").toFixed(2));
+console.log("Contrast ratio #aaa/#fff:", HTMLAnalyzer.checkColorContrast("#aaa", "#fff").toFixed(2));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** Meta tags and Open Graph data control how content appears in search results and social media.

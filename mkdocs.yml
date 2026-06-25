@@ -1332,6 +1332,10 @@ nav:
     - "Ch 8: GATE & Theory Exam Prep": courses/learning-how-to-learn/ch-08-gate-theory-prep.md
     - "Ch 9: Framework & Language Learning": courses/learning-how-to-learn/ch-09-framework-language-learning.md
     - "Ch 10: Meta-Learning & Lifelong System": courses/learning-how-to-learn/ch-10-meta-learning-system.md
+    - "Ch 11: AI-Assisted Learning": courses/learning-how-to-learn/ch-11-ai-assisted-learning.md
+    - "Ch 12: Teaching & Knowledge Transfer": courses/learning-how-to-learn/ch-12-teaching-knowledge-transfer.md
+    - "Ch 13: Learning Analytics & Self-Measurement": courses/learning-how-to-learn/ch-13-learning-analytics.md
+    - "Ch 14: Social Learning & Communities": courses/learning-how-to-learn/ch-14-social-learning-communities.md
     - Archive (Full Reference): courses/learning-how-to-learn/archive-complete-reference.md
   - "🔄 Loop Engineering":
     - Overview: courses/loop-engineering/index.md

@@ -714,6 +714,284 @@ console.log(Array.from(permutations([1, 2, 3])));
 // [[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]]
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Fibonacci Generator (Python yield equivalent) ===
+function* fibonacciGen(n: number): Generator<number> {
+  let a = 0, b = 1;
+  for (let i = 0; i < n; i++) {
+    yield a;
+    [a, b] = [b, a + b];
+  }
+}
+console.log([...fibonacciGen(10)]); // [0,1,1,2,3,5,8,13,21,34]
+
+// === Range Generator ===
+function* rangeGen(start: number, end?: number, step = 1): Generator<number> {
+  if (end === undefined) { end = start; start = 0; }
+  for (let i = start; i < end; i += step) yield i;
+}
+console.log([...rangeGen(5)]);          // [0,1,2,3,4]
+console.log([...rangeGen(2, 10, 3)]);  // [2,5,8]
+
+// === Infinite Sequence Generator ===
+function* infiniteSequence(): Generator<number> {
+  let i = 0;
+  while (true) yield i++;
+}
+const seq = infiniteSequence();
+console.log(seq.next().value); // 0
+console.log(seq.next().value); // 1
+console.log(seq.next().value); // 2
+
+// === Async Generator (Python async generator equivalent) ===
+type AsyncGen<T> = AsyncGenerator<T>;
+async function* asyncRange(start: number, end: number): AsyncGen<number> {
+  for (let i = start; i < end; i++) {
+    await new Promise((r) => setTimeout(r, 10));
+    yield i;
+  }
+}
+async function collectAsync<T>(gen: AsyncGen<T>): Promise<T[]> {
+  const result: T[] = [];
+  for await (const val of gen) result.push(val);
+  return result;
+}
+// collectAsync(asyncRange(0, 5)).then(console.log); // [0,1,2,3,4]
+
+// === Pipeline with Generators (lazy transform) ===
+function* mapGen<T, U>(gen: Generator<T>, fn: (x: T) => U): Generator<U> {
+  for (const val of gen) yield fn(val);
+}
+function* filterGen<T>(gen: Generator<T>, pred: (x: T) => boolean): Generator<T> {
+  for (const val of gen) if (pred(val)) yield val;
+}
+const numbers = rangeGen(0, 20);
+const evens = filterGen(numbers, (x) => x % 2 === 0);
+const doubled = mapGen(evens, (x) => x * 2);
+console.log([...doubled]); // [0,4,8,12,16,20,24,28,32,36]
+
+// === Take (limit generator) ===
+function* take<T>(gen: Generator<T>, n: number): Generator<T> {
+  let count = 0;
+  for (const val of gen) { if (count++ >= n) break; yield val; }
+}
+const naturals = infiniteSequence();
+console.log([...take(naturals, 5)]); // [0,1,2,3,4]
+
+// === Cycle Generator ===
+function* cycle<T>(arr: T[]): Generator<T> {
+  while (true) { for (const val of arr) yield val; }
+}
+console.log([...take(cycle(["A", "B", "C"]), 7)]); // [A,B,C,A,B,C,A]
+```
+
+### TypeScript Generator & Iterator Patterns
+
+```typescript
+// === Generator Function (Python: def generator) ===
+function* count(start: number, end: number, step = 1): Generator<number> {
+  for (let i = start; i < end; i += step) yield i;
+}
+for (const n of count(0, 5)) console.log(n); // 0, 1, 2, 3, 4
+
+// === Infinite Generator (Python: while True + yield) ===
+function* fibonacciSeq(): Generator<number> {
+  let a = 0, b = 1;
+  while (true) { yield a; [a, b] = [b, a + b]; }
+}
+const fib = fibonacciSeq();
+for (let i = 0; i < 10; i++) console.log(fib.next().value); // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+// === Generator with return ===
+function* withReturn(): Generator<string, string> {
+  yield "first";
+  yield "second";
+  return "done";
+}
+const gen = withReturn();
+console.log(gen.next()); // { value: "first", done: false }
+console.log(gen.next()); // { value: "second", done: false }
+console.log(gen.next()); // { value: "done", done: true }
+
+// === yield* (Python: yield from) ===
+function* inner(): Generator<number> {
+  yield 1; yield 2; yield 3;
+}
+function* outer(): Generator<number | string> {
+  yield* inner(); // Python: yield from inner()
+  yield "done";
+}
+console.log([...outer()]); // [1, 2, 3, "done"]
+
+// === Custom Iterable Class ===
+class RangeIterable implements Iterable<number> {
+  constructor(private start: number, private end: number, private step = 1) {}
+  *[Symbol.iterator](): Generator<number> {
+    for (let i = this.start; i < this.end; i += this.step) yield i;
+  }
+}
+console.log([...new RangeIterable(2, 10, 2)]); // [2, 4, 6, 8]
+
+// === Lazy Sequence via Iterator Protocol ===
+class LazySequence<T> {
+  private items: T[];
+  private operations: Array<(arr: T[]) => T[]> = [];
+  constructor(items: T[]) { this.items = [...items]; }
+  filter(pred: (x: T) => boolean): this {
+    this.operations.push(arr => arr.filter(pred));
+    return this;
+  }
+  map<R>(fn: (x: T) => R): LazySequence<R> {
+    const ops = this.operations;
+    const seq = new LazySequence<R>(this.items as any);
+    seq.operations = ops as any;
+    seq.operations.push(arr => arr.map(fn as any) as any);
+    return seq;
+  }
+  toArray(): T[] {
+    let result = [...this.items];
+    for (const op of this.operations) result = op(result);
+    return result;
+  }
+}
+const seq = new LazySequence([1, 2, 3, 4, 5, 6]);
+const result2 = seq.filter(x => x % 2 === 0).map(x => x * 10).toArray();
+console.log(result2); // [20, 40, 60]
+
+// === Infinite Generator with Take ===
+function* naturalNumbers(): Generator<number> {
+  let n = 1;
+  while (true) yield n++;
+}
+function take<T>(n: number, iterable: Iterable<T>): T[] {
+  const result: T[] = [];
+  const iterator = iterable[Symbol.iterator]();
+  for (let i = 0; i < n; i++) {
+    const next = iterator.next();
+    if (next.done) break;
+    result.push(next.value);
+  }
+  return result;
+}
+console.log(take(5, naturalNumbers())); // [1, 2, 3, 4, 5]
+```
+
+### TypeScript Generator Pipeline Patterns
+
+```typescript
+// === Composable Generator Pipeline ===
+class GeneratorPipeline<T, R> {
+  constructor(private gen: () => Generator<T, R>) {}
+  map<U>(fn: (x: T) => U): GeneratorPipeline<U, R> {
+    const self = this.gen;
+    return new GeneratorPipeline(function* () {
+      const inner = self();
+      let result = inner.next();
+      while (!result.done) {
+        yield fn(result.value);
+        result = inner.next();
+      }
+      return result.value;
+    });
+  }
+  filter(pred: (x: T) => boolean): GeneratorPipeline<T, R> {
+    const self = this.gen;
+    return new GeneratorPipeline(function* () {
+      const inner = self();
+      let result = inner.next();
+      while (!result.done) {
+        if (pred(result.value)) yield result.value;
+        result = inner.next();
+      }
+      return result.value;
+    });
+  }
+  take(n: number): GeneratorPipeline<T, R> {
+    const self = this.gen;
+    return new GeneratorPipeline(function* () {
+      let count = 0;
+      const inner = self();
+      let result = inner.next();
+      while (!result.done && count < n) {
+        yield result.value;
+        count++;
+        result = inner.next();
+      }
+      return result.value;
+    });
+  }
+  reduce<A>(fn: (acc: A, x: T) => A, initial: A): A {
+    let acc = initial;
+    const inner = this.gen();
+    let result = inner.next();
+    while (!result.done) { acc = fn(acc, result.value); result = inner.next(); }
+    return acc;
+  }
+  toArray(): T[] {
+    const arr: T[] = [];
+    const inner = this.gen();
+    let result = inner.next();
+    while (!result.done) { arr.push(result.value); result = inner.next(); }
+    return arr;
+  }
+}
+
+// === Coroutine (two-way generator) ===
+function* coroutine<T, R>(): Generator<T | undefined, R, T> {
+  let value: T | undefined = yield;
+  while (value !== undefined) {
+    value = yield value;
+  }
+  return "done" as R;
+}
+
+// === Async Generator with Backpressure ===
+async function* backpressureGenerator<T>(items: T[], batchSize: number): AsyncGenerator<T[]> {
+  for (let i = 0; i < items.length; i += batchSize) {
+    await new Promise(resolve => setImmediate(resolve));
+    yield items.slice(i, i + batchSize);
+  }
+}
+
+// === Event Emitter as Generator ===
+class EventGenerator<T> {
+  private handlers = new Map<string, ((data: T) => void)[]>();
+  private buffer: T[] = [];
+  on(event: string, handler: (data: T) => void): void {
+    if (!this.handlers.has(event)) this.handlers.set(event, []);
+    this.handlers.get(event)!.push(handler);
+  }
+  emit(event: string, data: T): void {
+    this.handlers.get(event)?.forEach(h => h(data));
+    this.buffer.push(data);
+  }
+  async *stream(event: string): AsyncGenerator<T> {
+    while (true) {
+      if (this.buffer.length > 0) yield this.buffer.shift()!;
+      else yield await new Promise<T>(resolve => this.on(event, resolve));
+    }
+  }
+}
+
+// === Range Generator ===
+function* range2(start: number, end: number, step = 1): Generator<number> {
+  for (let i = start; i < end; i += step) yield i;
+}
+
+const piped = new GeneratorPipeline(() => range2(0, Infinity))
+  .filter(x => x % 2 === 0)
+  .map(x => x * 10)
+  .take(5);
+console.log(piped.toArray()); // [0, 20, 40, 60, 80]
+
+const reduced = new GeneratorPipeline(() => range2(1, 11))
+  .filter(x => x % 2 === 1)
+  .reduce((acc, x) => acc + x, 0);
+console.log(reduced); // 25 (1 + 3 + 5 + 7 + 9)
+```
+
 ## Summary
 
 - Generators use `yield` to produce sequences lazily.

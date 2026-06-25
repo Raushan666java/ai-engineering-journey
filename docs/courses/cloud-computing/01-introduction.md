@@ -582,6 +582,54 @@ const topRegions = selector.findBestRegion(
 console.log("Top regions for user distribution:", topRegions.slice(0, 2).map((r) => r.name + " (" + r.provider + ")").join(", "));
 ```
 
+### TypeScript: Cloud Adoption Maturity & TCO Comparator
+
+```typescript
+interface TCOInput {
+  serverCount: number; upfrontPerServer: number; opsYearPerServer: number; years: number;
+  onDemandHourly: number; reservedHourly: number; monthlyDataTransfer: number; monthlyManagedDB: number;
+}
+
+class TCOComparator {
+  compute(input: TCOInput): Record<string, { capex: number; opex: number; total: number }> {
+    const hoursPerYear = 8760;
+    const onPrem = {
+      capex: input.serverCount * input.upfrontPerServer,
+      opex: input.serverCount * input.opsYearPerServer * input.years,
+    };
+    onPrem.total = onPrem.capex + onPrem.opex;
+
+    const cloud = (hourly: number) => {
+      const computeCost = input.serverCount * hourly * hoursPerYear * input.years;
+      const networkCost = input.monthlyDataTransfer * 12 * input.years;
+      const dbCost = input.monthlyManagedDB * 12 * input.years;
+      return { capex: 0, opex: computeCost + networkCost + dbCost, total: computeCost + networkCost + dbCost };
+    };
+
+    return { onPremises: onPrem, onDemand: cloud(input.onDemandHourly), reserved: cloud(input.reservedHourly) };
+  }
+
+  rank(adoptionLevel: string): string[] {
+    const stages: Record<string, string[]> = {
+      "initial": ["Assess", "Pilot 3-5 apps"],
+      "established": ["Migrate phase 1", "Cloud COE"],
+      "optimized": ["FinOps", "Well-Architected reviews"],
+      "transformed": ["Cloud-native", "AI/ML integration"],
+    };
+    return stages[adoptionLevel] || stages["initial"];
+  }
+}
+
+const tco = new TCOComparator();
+const result = tco.compute({
+  serverCount: 50, upfrontPerServer: 8000, opsYearPerServer: 3000, years: 3,
+  onDemandHourly: 0.0832, reservedHourly: 0.0525, monthlyDataTransfer: 500, monthlyManagedDB: 200,
+});
+Object.entries(result).forEach(([k, v]) => console.log(`${k}: $${v.total.toLocaleString()}`));
+console.log("Transformed stage actions:", tco.rank("transformed").join(" → "));
+```
+```
+
 ## Summary
 
 Cloud computing represents a paradigm shift from capital-intensive, fixed-capacity IT infrastructure to an elastic, pay-per-use utility model. The five essential characteristics of on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service define the boundaries of true cloud computing. The three service models (IaaS, PaaS, SaaS) offer increasing levels of abstraction, while deployment models (public, private, hybrid, community, multi-cloud) provide flexibility in how cloud infrastructure is owned and operated. Cloud economics favor variable workloads through the CAPEX-to-OPEX shift, though careful TCO analysis is required. Organizations must weigh the benefits of agility, scale, and innovation against the challenges of security, compliance, and operational complexity. The 6 Rs framework provides a structured approach to cloud migration, while vendor lock-in awareness and mitigation strategies ensure long-term architectural flexibility.

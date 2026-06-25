@@ -462,6 +462,65 @@ function toPrenex(expr: QuantifiedExpr): QuantifiedExpr {
 }
 ```
 
+```
+// --- Quantifier Expansion Tester ---
+function forall<T>(domain: T[], pred: (x: T) => boolean): boolean {
+  return domain.every(pred);
+}
+function exists<T>(domain: T[], pred: (x: T) => boolean): boolean {
+  return domain.some(pred);
+}
+const nums = [0, 1, 2, 3, 4, 5];
+console.log('∀x∈{0..5}: x≥0:', forall(nums, x => x >= 0));   // true
+console.log('∃x∈{0..5}: x>4:', exists(nums, x => x > 4));     // true
+console.log('∀x∈{0..5}: x>3:', forall(nums, x => x > 3));     // false
+console.log('∃x∈{0..5}: x<0:', exists(nums, x => x < 0));     // false
+
+// --- Nested Quantifier Checker ---
+function nestedQuantifier<T1, T2>(
+  domain1: T1[], domain2: T2[],
+  order: 'forall-exists' | 'exists-forall' | 'forall-forall' | 'exists-exists',
+  pred: (x: T1, y: T2) => boolean): boolean {
+  if (order === 'forall-exists') return domain1.every(x => domain2.some(y => pred(x, y)));
+  if (order === 'exists-forall') return domain1.some(x => domain2.every(y => pred(x, y)));
+  if (order === 'forall-forall') return domain1.every(x => domain2.every(y => pred(x, y)));
+  return domain1.some(x => domain2.some(y => pred(x, y)));
+}
+// For every integer there exists a larger integer
+const ints = [0, 1, 2, 3, 4, 5];
+console.log('\n∀x∃y: y > x:', nestedQuantifier(ints, ints, 'forall-exists', (x, y) => y > x)); // true
+console.log('∃x∀y: y > x:', nestedQuantifier(ints, ints, 'exists-forall', (x, y) => y > x)); // false
+
+// --- Domain Model Checker ---
+type DomainConstraint = { quantifier: 'forall' | 'exists', var: string, pred: (val: number) => boolean };
+function checkModel(domain: number[], constraints: DomainConstraint[]): boolean {
+  return constraints.every(c =>
+    c.quantifier === 'forall' ? domain.every(c.pred) : domain.some(c.pred)
+  );
+}
+const model: DomainConstraint[] = [
+  { quantifier: 'forall', var: 'x', pred: x => x > 0 },
+  { quantifier: 'exists', var: 'y', pred: y => y === 3 }
+];
+console.log('\nModel check (positives, contains 3):', checkModel([1, 2, 3], model)); // true
+console.log('Model check (positives, no 3):', checkModel([1, 2, 4], model));       // false
+
+// --- Predicate Transformer ---
+function negateQuantified<T>(domain: T[], quantifier: 'forall' | 'exists', pred: (x: T) => boolean): { quantifier: string; result: boolean } {
+  if (quantifier === 'forall') {
+    // ¬∀x P(x) ≡ ∃x ¬P(x)
+    const result = domain.some(x => !pred(x));
+    return { quantifier: '∃x ¬P(x)', result };
+  } else {
+    // ¬∃x P(x) ≡ ∀x ¬P(x)
+    const result = domain.every(x => !pred(x));
+    return { quantifier: '∀x ¬P(x)', result };
+  }
+}
+console.log('\nNegate ∀x (x>0) on [1,-2,3]:', negateQuantified([1, -2, 3], 'forall', x => x > 0));
+console.log('Negate ∃x (x<0) on [1,2,3]:', negateQuantified([1, 2, 3], 'exists', x => x < 0));
+```
+
 ## Summary
 
 - Predicates are statements that depend on variables. Quantifiers $\forall$ and $\exists$ bind variables.

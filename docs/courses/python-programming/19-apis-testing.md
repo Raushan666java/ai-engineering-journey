@@ -709,6 +709,274 @@ async function concurrentRequests(): Promise<void> {
 }
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Fetch Wrapper with Retry ===
+interface FetchOptions extends RequestInit { retries?: number; retryDelay?: number }
+async function fetchWithRetry(url: string, options: FetchOptions = {}): Promise<Response> {
+  const { retries = 3, retryDelay = 1000, ...fetchOpts } = options;
+  for (let i = 0; i <= retries; i++) {
+    try {
+      const res = await fetch(url, fetchOpts);
+      if (res.ok) return res;
+      if (res.status >= 400 && res.status < 500 && res.status !== 429) throw new Error(`HTTP ${res.status}`);
+    } catch (err) {
+      if (i === retries) throw err;
+      await new Promise((r) => setTimeout(r, retryDelay * Math.pow(2, i)));
+    }
+  }
+  throw new Error("Unreachable");
+}
+// await fetchWithRetry("https://api.example.com/data");
+
+// === Rate-Limited Client ===
+class RateLimitedClient {
+  private queue: Array<() => Promise<unknown>> = [];
+  private running = 0;
+  private lastRequest = 0;
+  constructor(private maxRequests: number, private perMs: number) {}
+  async request<T>(fn: () => Promise<T>): Promise<T> {
+    return new Promise((resolve, reject) => {
+      this.queue.push(async () => { try { resolve(await fn()); } catch (e) { reject(e); } });
+      this.processQueue();
+    });
+  }
+  private async processQueue(): Promise<void> {
+    if (this.running >= this.maxRequests) return;
+    const elapsed = Date.now() - this.lastRequest;
+    if (elapsed < this.perMs / this.maxRequests) await new Promise((r) => setTimeout(r, this.perMs / this.maxRequests - elapsed));
+    const task = this.queue.shift();
+    if (!task) return;
+    this.running++;
+    this.lastRequest = Date.now();
+    try { await task(); } finally { this.running--; this.processQueue(); }
+  }
+}
+const client = new RateLimitedClient(5, 1000);
+// client.request(() => fetch("/api/data"));
+
+// === API Response Validator (Pydantic equivalent) ===
+class SchemaValidator {
+  static validate<T>(data: unknown, schema: Record<keyof T, string>): { valid: boolean; errors: string[] } {
+    const errors: string[] = [];
+    for (const [field, type] of Object.entries(schema)) {
+      const val = (data as Record<string, unknown>)[field];
+      if (type === "string" && typeof val !== "string") errors.push(`${field}: expected string, got ${typeof val}`);
+      if (type === "number" && typeof val !== "number") errors.push(`${field}: expected number, got ${typeof val}`);
+      if (type === "boolean" && typeof val !== "boolean") errors.push(`${field}: expected boolean, got ${typeof val}`);
+    }
+    return { valid: errors.length === 0, errors };
+  }
+}
+const userSchema = { name: "string", age: "number", active: "boolean" } as const;
+console.log(SchemaValidator.validate({ name: "Alice", age: 30, active: true }, userSchema));
+console.log(SchemaValidator.validate({ name: 42, age: "30", active: 1 }, userSchema));
+
+// === Mock HTTP Server for Testing ===
+async function mockHandler(url: string, method: string): Promise<{ status: number; body: unknown }> {
+  const routes: Array<{ pattern: RegExp; method: string; handler: () => unknown }> = [
+    { pattern: /^\/api\/users$/, method: "GET", handler: () => [{ id: 1, name: "Alice" }] },
+    { pattern: /^\/api\/users\/\d+$/, method: "GET", handler: () => ({ id: 1, name: "Alice" }) },
+  ];
+  for (const route of routes) {
+    if (route.method === method && route.pattern.test(url)) return { status: 200, body: route.handler() };
+  }
+  return { status: 404, body: { error: "Not found" } };
+}
+console.log(await mockHandler("/api/users", "GET"));
+```
+
+### TypeScript API & Testing Patterns
+
+```typescript
+// === Fetch API (Python: requests) ===
+interface ApiResponse<T> { data?: T; error?: string; status: number; }
+async function get<T>(url: string, headers?: Record<string, string>): Promise<ApiResponse<T>> {
+  try {
+    const res = await fetch(url, { headers: { "Content-Type": "application/json", ...headers } });
+    if (!res.ok) return { status: res.status, error: `HTTP ${res.status}: ${res.statusText}` };
+    return { status: res.status, data: await res.json() as T };
+  } catch (err) { return { status: 0, error: (err as Error).message }; }
+}
+
+async function post<T>(url: string, body: unknown, headers?: Record<string, string>): Promise<ApiResponse<T>> {
+  try {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", ...headers },
+      body: JSON.stringify(body),
+    });
+    return { status: res.status, data: await res.json() as T };
+  } catch (err) { return { status: 0, error: (err as Error).message }; }
+}
+
+// === REST Client Builder (Python: requests Session) ===
+class ApiClient {
+  private baseHeaders: Record<string, string> = {};
+  constructor(private baseUrl: string) {}
+  setHeader(key: string, value: string): this { this.baseHeaders[key] = value; return this; }
+  setAuth(token: string): this { return this.setHeader("Authorization", `Bearer ${token}`); }
+  async get<T>(path: string): Promise<ApiResponse<T>> { return get(`${this.baseUrl}${path}`, this.baseHeaders); }
+  async post<T>(path: string, body: unknown): Promise<ApiResponse<T>> { return post(`${this.baseUrl}${path}`, body, this.baseHeaders); }
+  async put<T>(path: string, body: unknown): Promise<ApiResponse<T>> {
+    const res = await fetch(`${this.baseUrl}${path}`, { method: "PUT", headers: this.baseHeaders, body: JSON.stringify(body) });
+    return { status: res.status, data: await res.json() as T };
+  }
+  async delete<T>(path: string): Promise<ApiResponse<T>> {
+    const res = await fetch(`${this.baseUrl}${path}`, { method: "DELETE", headers: this.baseHeaders });
+    return { status: res.status, data: await res.json() as T };
+  }
+}
+const api = new ApiClient("https://api.example.com").setAuth("token-123");
+// await api.get("/users");
+
+// === Response Validation ===
+function validateResponse<T>(data: unknown, schema: Record<string, string>): data is T {
+  if (typeof data !== "object" || data === null) return false;
+  for (const [key, type] of Object.entries(schema)) {
+    const val = (data as Record<string, unknown>)[key];
+    if (val === undefined || typeof val !== type) return false;
+  }
+  return true;
+}
+
+// === Retry with Exponential Backoff ===
+async function fetchWithRetry<T>(url: string, maxRetries = 3): Promise<T> {
+  for (let attempt = 0; attempt < maxRetries; attempt++) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) return await res.json() as T;
+      if (res.status < 500) throw new Error(`HTTP ${res.status}`);
+    } catch (err) {
+      if (attempt === maxRetries - 1) throw err;
+      await new Promise(r => setTimeout(r, 1000 * Math.pow(2, attempt)));
+    }
+  }
+  throw new Error("Max retries exceeded");
+}
+
+// === Assertion Utilities (Python: assert) ===
+function assertEqual<T>(actual: T, expected: T, msg = ""): void {
+  if (actual !== expected) throw new Error(`Assertion failed: ${msg || `${actual} !== ${expected}`}`);
+}
+function assertThrows(fn: () => void, expectedMsg?: string): void {
+  let threw = false;
+  try { fn(); } catch (err) {
+    threw = true;
+    if (expectedMsg && !(err as Error).message.includes(expectedMsg)) {
+      throw new Error(`Expected error containing "${expectedMsg}", got "${(err as Error).message}"`);
+    }
+  }
+  if (!threw) throw new Error("Expected function to throw");
+}
+assertEqual(2 + 2, 4, "basic math");
+assertThrows(() => { throw new Error("fail"); }, "fail");
+```
+
+### TypeScript API Patterns & Testing
+
+```typescript
+// === API Client Builder ===
+interface ApiConfig { baseUrl: string; timeout: number; headers: Record<string, string>; }
+class ApiClient {
+  constructor(private config: ApiConfig) {}
+  private async request<T>(method: string, path: string, body?: unknown): Promise<T> {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), this.config.timeout);
+    try {
+      const res = await fetch(`${this.config.baseUrl}${path}`, {
+        method, headers: this.config.headers, body: body ? JSON.stringify(body) : undefined,
+        signal: controller.signal,
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+      return res.json();
+    } finally { clearTimeout(timer); }
+  }
+  get<T>(path: string): Promise<T> { return this.request("GET", path); }
+  post<T>(path: string, body: unknown): Promise<T> { return this.request("POST", path, body); }
+  put<T>(path: string, body: unknown): Promise<T> { return this.request("PUT", path, body); }
+  delete<T>(path: string): Promise<T> { return this.request("DELETE", path); }
+}
+
+// === Mock Server (Python: unittest.mock / responses) ===
+interface MockEndpoint { method: string; path: string; status: number; body: unknown; }
+class MockServer {
+  private endpoints: MockEndpoint[] = [];
+  on(method: string, path: string, status = 200, body: unknown = {}): this {
+    this.endpoints.push({ method: method.toUpperCase(), path, status, body });
+    return this;
+  }
+  private async simulateRequest(method: string, path: string): Promise<Response> {
+    const ep = this.endpoints.find(e => e.method === method.toUpperCase() && e.path === path);
+    if (!ep) return new Response(null, { status: 404 });
+    return new Response(JSON.stringify(ep.body), { status: ep.status, headers: { "Content-Type": "application/json" } });
+  }
+  getClient(): ApiClient { return new ApiClient({ baseUrl: "http://mock", timeout: 1000, headers: {} }); }
+}
+
+// === Retry with Circuit Breaker ===
+class CircuitBreaker {
+  private failures = 0;
+  private lastFailure = 0;
+  constructor(private maxFailures = 5, private resetTimeoutMs = 30000) {}
+  async call<T>(fn: () => Promise<T>): Promise<T> {
+    if (this.failures >= this.maxFailures) {
+      if (Date.now() - this.lastFailure > this.resetTimeoutMs) this.failures = 0;
+      else throw new Error("Circuit breaker open");
+    }
+    try {
+      const result = await fn();
+      this.failures = 0;
+      return result;
+    } catch (e) {
+      this.failures++;
+      this.lastFailure = Date.now();
+      throw e;
+    }
+  }
+  get state(): "closed" | "open" | "half-open" {
+    if (this.failures === 0) return "closed";
+    if (this.failures >= this.maxFailures) return "open";
+    return "half-open";
+  }
+}
+
+// === Test Suite Runner (Python: unittest) ===
+interface TestCase { name: string; run(): Promise<void> | void; }
+class TestSuite {
+  private tests: TestCase[] = [];
+  private results = { passed: 0, failed: 0, errors: [] as Array<{ name: string; error: string }> };
+  add(test: TestCase): void { this.tests.push(test); }
+  async run(): Promise<void> {
+    for (const test of this.tests) {
+      try { await test.run(); this.results.passed++; } catch (e) { this.results.failed++; this.results.errors.push({ name: test.name, error: (e as Error).message }); }
+    }
+    console.log(`Passed: ${this.results.passed}, Failed: ${this.results.failed}`);
+  }
+}
+
+// === GraphQL Client ===
+class GraphQLClient {
+  constructor(private endpoint: string, private headers: Record<string, string> = {}) {}
+  async query<T>(query: string, variables?: Record<string, unknown>): Promise<T> {
+    const res = await fetch(this.endpoint, {
+      method: "POST",
+      headers: { ...this.headers, "Content-Type": "application/json" },
+      body: JSON.stringify({ query, variables }),
+    });
+    const data = await res.json();
+    if (data.errors) throw new Error(data.errors[0]?.message ?? "GraphQL error");
+    return data.data;
+  }
+}
+
+const client = new GraphQLClient("https://api.example.com/graphql");
+// const result = await client.query("{ users { id name } }");
+const circuit = new CircuitBreaker();
+console.log(circuit.state); // "closed"
+```
+
 ## Summary
 
 - `requests` and `httpx` make HTTP requests; `httpx` supports async.

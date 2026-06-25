@@ -595,6 +595,145 @@ console.log("MA:", GrowthCalculator.movingAverage([200, 220, 250, 240, 280, 310]
 ASCIIChartRenderer.bar(["Q1", "Q2", "Q3", "Q4"], [200, 250, 220, 280]);
 ```
 
+// ─────────────────────────────────────────────────────
+// Advanced Statistical Summary Calculator — computes
+// descriptive statistics, percentiles, and dispersion
+// measures for data interpretation problems.
+// ─────────────────────────────────────────────────────
+
+class StatisticalSummary {
+  data: number[];
+
+  constructor(data: number[]) {
+    this.data = [...data].sort((a, b) => a - b);
+  }
+
+  get mean(): number { return this.data.reduce((a, b) => a + b, 0) / this.data.length; }
+
+  get median(): number {
+    const n = this.data.length;
+    return n % 2 === 0 ? (this.data[n / 2 - 1] + this.data[n / 2]) / 2 : this.data[Math.floor(n / 2)];
+  }
+
+  get mode(): number[] {
+    const freq = new Map<number, number>();
+    for (const v of this.data) freq.set(v, (freq.get(v) || 0) + 1);
+    const maxFreq = Math.max(...freq.values());
+    return [...freq.entries()].filter(([_, f]) => f === maxFreq).map(([v]) => v);
+  }
+
+  get range(): number { return this.data[this.data.length - 1] - this.data[0]; }
+
+  get variance(): number {
+    const m = this.mean;
+    return this.data.reduce((s, v) => s + (v - m) ** 2, 0) / this.data.length;
+  }
+
+  get stdDev(): number { return Math.sqrt(this.variance); }
+
+  get quartiles(): { Q1: number; Q2: number; Q3: number; IQR: number } {
+    const n = this.data.length;
+    const lower = this.data.slice(0, Math.floor(n / 2));
+    const upper = this.data.slice(Math.ceil(n / 2));
+    const q1 = n % 2 === 0 ? (lower[Math.floor(lower.length / 2) - 1] + lower[Math.floor(lower.length / 2)]) / 2
+                           : lower[Math.floor(lower.length / 2)];
+    const q3 = n % 2 === 0 ? (upper[Math.floor(upper.length / 2) - 1] + upper[Math.floor(upper.length / 2)]) / 2
+                           : upper[Math.floor(upper.length / 2)];
+    return { Q1: q1, Q2: this.median, Q3: q3, IQR: q3 - q1 };
+  }
+
+  // Coefficient of variation (relative dispersion)
+  get cv(): number { return (this.stdDev / this.mean) * 100; }
+
+  // Skewness (Pearson's moment)
+  get skewness(): number {
+    const m = this.mean, s = this.stdDev;
+    return this.data.reduce((sum, v) => sum + ((v - m) / s) ** 3, 0) / this.data.length;
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Chart Data Generator — creates realistic datasets
+// for table, bar, line, and pie chart problems
+// ─────────────────────────────────────────────────────
+
+class ChartDataGenerator {
+  static quarterlyRevenue(years: number, base: number, growth: number): Array<{ year: string; quarter: string; revenue: number }> {
+    const data: Array<{ year: string; quarter: string; revenue: number }> = [];
+    for (let y = 1; y <= years; y++) {
+      for (let q = 1; q <= 4; q++) {
+        const seasonality = q === 1 ? 0.9 : q === 4 ? 1.15 : 1;
+        const noise = 0.95 + Math.random() * 0.1;
+        const revenue = base * Math.pow(1 + growth / 100, y - 1) * seasonality * noise;
+        data.push({ year: `Y${y}`, quarter: `Q${q}`, revenue: Math.round(revenue * 100) / 100 });
+      }
+    }
+    return data;
+  }
+
+  static marketShare(companies: string[], totalMarket: number): Array<{ company: string; share: number; revenue: number }> {
+    const shares = companies.map(() => Math.random());
+    const sum = shares.reduce((a, b) => a + b, 0);
+    return companies.map((c, i) => ({
+      company: c,
+      share: Math.round((shares[i] / sum) * 1000) / 10,
+      revenue: Math.round((shares[i] / sum) * totalMarket)
+    }));
+  }
+
+  static demographicPyramid(population: number): { ageGroup: string; male: number; female: number }[] {
+    const groups = ["0-14", "15-24", "25-34", "35-44", "45-54", "55-64", "65+"];
+    const dist = [0.18, 0.15, 0.17, 0.16, 0.14, 0.12, 0.08];
+    return groups.map((g, i) => ({
+      ageGroup: g,
+      male: Math.round(population * dist[i] * 0.49),
+      female: Math.round(population * dist[i] * 0.51)
+    }));
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Caselet Data Extractor — parses textual caselet
+// into structured table format
+// ─────────────────────────────────────────────────────
+
+class CaseletParser {
+  static extractNumbers(text: string): number[] {
+    return text.match(/\d+(\.\d+)?/g)?.map(Number) || [];
+  }
+
+  static extractPercentages(text: string): number[] {
+    return text.match(/\d+(\.\d+)?%/g)?.map(s => parseFloat(s)) || [];
+  }
+
+  static toTable(text: string): string[][] {
+    const lines = text.split(/[.?!\n]+/).map(l => l.trim()).filter(Boolean);
+    const table: string[][] = [["Statement", "Values"]];
+    for (const line of lines) {
+      const vals = this.extractNumbers(line);
+      table.push([line.substring(0, 40) + "...", vals.join(", ")]);
+    }
+    return table;
+  }
+}
+
+// Demo
+const stats = new StatisticalSummary([12, 15, 18, 22, 22, 25, 28, 31, 35, 42]);
+console.log(`Mean: ${stats.mean}, Median: ${stats.median}`);
+console.log(`Mode: ${stats.mode}, Range: ${stats.range}`);
+console.log(`Std Dev: ${stats.stdDev.toFixed(2)}, CV: ${stats.cv.toFixed(1)}%`);
+console.log(`Quartiles: Q1=${stats.quartiles.Q1}, Q3=${stats.quartiles.Q3}, IQR=${stats.quartiles.IQR}`);
+
+const rev = ChartDataGenerator.quarterlyRevenue(2, 1000, 10);
+console.log("\nQuarterly revenue sample:", rev.slice(0, 4));
+
+const shares = ChartDataGenerator.marketShare(["Apple", "Samsung", "Xiaomi", "Others"], 500000);
+console.log("\nMarket shares:", shares.map(s => `${s.company}: ${s.share}%`));
+
+const caselet = "Company A had 500 employees. 60% were male. 40% of males worked in engineering. 25% of females worked in HR.";
+console.log("\nCaselet table:", CaseletParser.toTable(caselet));
+```
+
 ## Summary
 
 - Tables: read carefully, identify headers, compute percentages correctly

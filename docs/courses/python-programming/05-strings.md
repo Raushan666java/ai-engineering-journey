@@ -806,6 +806,141 @@ function template(str: string, data: Record<string, string>): string {
 console.log(template("Hello {{name}}, you are {{age}}", { name: "Bob", age: "25" }));
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Template Evaluator (Python f-string style) ===
+function fmt(template: string, vars: Record<string, string | number>): string {
+  return template.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? `{${k}}`));
+}
+console.log(fmt("Hello {name}, you are {age}", { name: "Bob", age: 25 }));
+
+// === String Builder (performance comparison) ===
+class StringBuilder {
+  private parts: string[] = [];
+  append(s: string): this { this.parts.push(s); return this; }
+  build(sep = ""): string { return this.parts.join(sep); }
+  clear(): void { this.parts = []; }
+}
+const sb = new StringBuilder();
+sb.append("Hello").append("World").append("!");
+console.log(sb.build(" "));
+
+// === Unicode Normalizer ===
+type UnicodeForm = "NFC" | "NFD" | "NFKC" | "NFKD";
+function normalizeUnicode(s: string, form: UnicodeForm = "NFC"): string {
+  return s.normalize(form);
+}
+const composed = "\u00E9";    // é (precomposed)
+const decomposed = "\u0065\u0301"; // e + combining acute
+console.log(normalizeUnicode(decomposed) === composed); // true (NFC)
+
+// === Case Converter ===
+function toSnakeCase(s: string): string {
+  return s.replace(/([A-Z])/g, "_$1").toLowerCase().replace(/^_/, "");
+}
+function toCamelCase(s: string): string {
+  return s.replace(/_([a-z])/g, (_, c) => c.toUpperCase());
+}
+console.log(toSnakeCase("helloWorld"));   // hello_world
+console.log(toCamelCase("hello_world"));  // helloWorld
+
+// === Regex Builder ===
+class RegexBuilder {
+  private parts: string[] = [];
+  literal(s: string): this { this.parts.push(s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")); return this; }
+  digit(): this { this.parts.push("\\d"); return this; }
+  word(): this { this.parts.push("\\w+"); return this; }
+  optional(): this { this.parts.push("?"); return this; }
+  build(): RegExp { return new RegExp(this.parts.join("")); }
+}
+const rx = new RegexBuilder().literal("id:").digit().digit().build();
+console.log(rx.test("id:42")); // true
+
+// === Slug Generator ===
+function slugify(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+console.log(slugify("Hello World! How Are You?")); // hello-world-how-are-you
+```
+
+### TypeScript String Patterns
+
+```typescript
+// === Template Literals (Python: f-strings) ===
+const name = "Alice", age = 30, city = "Paris";
+console.log(`${name} is ${age} years old from ${city}`);
+const greeting = `Hello, ${name}! You are ${age > 18 ? "an adult" : "a minor"}.`;
+console.log(greeting);
+
+// === String Methods Comparison ===
+const str = "  Hello, World!  ";
+console.log({
+  trim: str.trim(),                         // Python: .strip()
+  trimStart: str.trimStart(),               // Python: .lstrip()
+  trimEnd: str.trimEnd(),                   // Python: .rstrip()
+  upper: str.toUpperCase(),                 // Python: .upper()
+  lower: str.toLowerCase(),                 // Python: .lower()
+  replace: str.replace("World", "TypeScript"), // Python: .replace()
+  replaceAll: "aabbcc".replaceAll("a", "x"),   // Python: .replace() with all
+  includes: str.includes("World"),           // Python: "World" in str
+  startsWith: str.startsWith("  Hello"),    // Python: .startswith()
+  endsWith: str.endsWith("!  "),            // Python: .endswith()
+});
+
+// === Split, Join, Slice ===
+const csv = "apple,banana,cherry,date";
+const parts = csv.split(",");
+console.log(parts);                        // ["apple", "banana", "cherry", "date"]
+console.log(parts.join(" | "));            // "apple | banana | cherry | date"
+console.log(str.slice(2, 7));              // "Hello"
+console.log(str.substring(2, 7));           // "Hello"
+console.log(str.slice(-6, -1));            // "World"
+
+// === Regex (Python: re module) ===
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+console.log(emailRegex.test("user@example.com")); // true
+const text = "Contact: alice@x.com or bob@y.org";
+const emails = text.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g);
+console.log(emails); // ["alice@x.com", "bob@y.org"]
+
+// === Pad and Repeat ===
+console.log("42".padStart(5, "0"));        // "00042" (Python: zfill)
+console.log("42".padEnd(5, "0"));          // "42000"
+console.log("ha ".repeat(3).trim());        // "ha ha ha" (Python: *)
+
+// === Character Access ===
+console.log("Hello"[0]);                    // "H" (Python: "Hello"[0])
+console.log("Hello".charCodeAt(0));         // 72 (Python: ord("H"))
+console.log(String.fromCharCode(72));        // "H" (Python: chr(72))
+
+// === Multiline Strings ===
+const multiline = `
+  Line 1
+  Line 2
+  Line 3
+`.trim();
+console.log(multiline);
+
+// === Tagged Template Literals ===
+function highlight(strings: TemplateStringsArray, ...values: unknown[]): string {
+  return strings.reduce((result, str, i) =>
+    result + str + (i < values.length ? `**${values[i]}**` : ""), "");
+}
+const highlighted = highlight`User ${name} is ${age} years old`;
+console.log(highlighted); // "User **Alice** is **30** years old"
+
+// === String Builder ===
+class StringBuilder {
+  private parts: string[] = [];
+  append(s: string): this { this.parts.push(s); return this; }
+  appendLine(s = ""): this { this.parts.push(s + "\n"); return this; }
+  toString(): string { return this.parts.join(""); }
+}
+const sb = new StringBuilder().appendLine("Header").appendLine("Body").appendLine("Footer");
+console.log(sb.toString());
+```
+
 ## Summary
 
 - Strings are immutable sequences of Unicode code points.

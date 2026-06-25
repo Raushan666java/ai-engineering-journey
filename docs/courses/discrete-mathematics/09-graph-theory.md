@@ -690,6 +690,99 @@ function greedyColoring(graph: number[][]): number[] {
 console.log('Greedy coloring:', greedyColoring([[1,2],[0,2],[0,1]])); // [0,1,2]
 ```
 
+```
+// --- Graph Isomorphism Checker (naive via degree sequence) ---
+function degreeSequence(adj: number[][]): number[] {
+  return adj.map(neighbors => neighbors.length).sort((a, b) => a - b);
+}
+function isIsomorphicPossible(adj1: number[][], adj2: number[][]): boolean {
+  if (adj1.length !== adj2.length) return false;
+  const seq1 = degreeSequence(adj1).join(',');
+  const seq2 = degreeSequence(adj2).join(',');
+  if (seq1 !== seq2) return false;
+  // Degree sequence match is necessary but not sufficient
+  return true;
+}
+const G1 = [[1,2],[0,2],[0,1]]; // triangle
+const G2 = [[1,2],[0,2],[0,1]]; // triangle
+console.log('Isomorphism possible (3-cycle):', isIsomorphicPossible(G1, G2));
+
+// --- Bipartite Graph Checker ---
+function isBipartite(adj: number[][]): { bipartite: boolean; partition?: [number[], number[]] } {
+  const color = new Array(adj.length).fill(-1);
+  const parts: [number[], number[]] = [[], []];
+  for (let start = 0; start < adj.length; start++) {
+    if (color[start] !== -1) continue;
+    color[start] = 0;
+    parts[0].push(start);
+    const queue = [start];
+    while (queue.length) {
+      const v = queue.shift()!;
+      for (const u of adj[v]) {
+        if (color[u] === color[v]) return { bipartite: false };
+        if (color[u] === -1) {
+          color[u] = 1 - color[v];
+          parts[color[u]].push(u);
+          queue.push(u);
+        }
+      }
+    }
+  }
+  return { bipartite: true, partition: parts };
+}
+const bipGraph = [[1,3],[0,2],[1,3],[0,2]]; // 4-cycle
+const nonBip = [[1,2],[0,2],[0,1]]; // triangle
+console.log('\n4-cycle bipartite:', isBipartite(bipGraph));
+console.log('Triangle bipartite:', isBipartite(nonBip));
+
+// --- Eulerian Path/Circuit Checker ---
+function isEulerian(adj: number[][]): 'circuit' | 'path' | 'none' {
+  const odd = adj.map((n, i) => n.length % 2 !== 0 ? i : -1).filter(i => i !== -1);
+  if (odd.length === 0) return 'circuit';
+  if (odd.length === 2) return 'path';
+  return 'none';
+}
+const eulerGraph = [[1,2],[0,2,3],[0,1,3],[1,2]]; // K4
+console.log('\nK4 Eulerian:', isEulerian(eulerGraph));
+
+// --- Hamiltonian Path (Brute force for small graphs) ---
+function hasHamiltonianPath(adj: number[][]): boolean {
+  const n = adj.length;
+  const perm = Array.from({length: n}, (_, i) => i);
+  function nextPerm(arr: number[]): boolean {
+    let i = arr.length - 2;
+    while (i >= 0 && arr[i] >= arr[i + 1]) i--;
+    if (i < 0) return false;
+    let j = arr.length - 1;
+    while (arr[j] <= arr[i]) j--;
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+    arr.splice(i + 1, arr.length - i - 1, ...arr.slice(i + 1).reverse());
+    return true;
+  }
+  do {
+    if (perm.every((v, i) => i === 0 || adj[perm[i - 1]].includes(v))) return true;
+  } while (nextPerm(perm));
+  return false;
+}
+console.log('\nHamiltonian path in K4:', hasHamiltonianPath(eulerGraph));
+
+// --- Graph Center (minimize eccentricity) ---
+function graphCenter(adj: number[][]): number[] {
+  const n = adj.length;
+  const dist = Array.from({length: n}, () => new Array(n).fill(Infinity));
+  for (let i = 0; i < n; i++) { dist[i][i] = 0; for (const j of adj[i]) dist[i][j] = 1; }
+  for (let k = 0; k < n; k++)
+    for (let i = 0; i < n; i++)
+      for (let j = 0; j < n; j++)
+        if (dist[i][k] + dist[k][j] < dist[i][j]) dist[i][j] = dist[i][k] + dist[k][j];
+  const ecc = dist.map(row => Math.max(...row.filter(d => d < Infinity)));
+  const minEcc = Math.min(...ecc);
+  return ecc.map((e, i) => e === minEcc ? i : -1).filter(i => i !== -1);
+}
+const path4: number[][] = [[1],[0,2],[1,3],[2]];
+console.log('\nCenter of path of length 4:', graphCenter(path4));
+```
+
 ## Summary
 
 - Graphs are modeled as $(V,E)$; types include undirected, directed, weighted, and multigraphs.

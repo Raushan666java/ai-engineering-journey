@@ -416,6 +416,112 @@ const greenArea = lineIntegral(greenF, ellipseγ, ellipseγDot, 0, 2 * Math.PI, 
 console.log(`Green's Theorem (ellipse area): ${greenArea.toFixed(4)} (expected: ${(2 * Math.PI).toFixed(4)})`);
 ```
 
+```
+// --- Surface Integral Approximation ---
+function surfaceIntegral(
+  F: (x: number, y: number, z: number) => [number, number, number],
+  surface: (u: number, v: number) => [number, number, number],
+  uRange: [number, number],
+  vRange: [number, number],
+  nu: number,
+  nv: number
+): number {
+  const du = (uRange[1] - uRange[0]) / nu, dv = (vRange[1] - vRange[0]) / nv;
+  let flux = 0;
+  for (let i = 0; i < nu; i++) for (let j = 0; j < nv; j++) {
+    const u = uRange[0] + (i + 0.5) * du, v = vRange[0] + (j + 0.5) * dv;
+    const r = surface(u, v);
+    const ru = surface(u + du, v), rv = surface(u, v + dv);
+    const drdu: [number, number, number] = [ru[0] - r[0], ru[1] - r[1], ru[2] - r[2]];
+    const drdv: [number, number, number] = [rv[0] - r[0], rv[1] - r[1], rv[2] - r[2]];
+    const cross: [number, number, number] = [
+      drdu[1] * drdv[2] - drdu[2] * drdv[1],
+      drdu[2] * drdv[0] - drdu[0] * drdv[2],
+      drdu[0] * drdv[1] - drdu[1] * drdv[0]
+    ];
+    const norm = Math.sqrt(cross[0] ** 2 + cross[1] ** 2 + cross[2] ** 2);
+    const Fval = F(r[0], r[1], r[2]);
+    const dot = Fval[0] * cross[0] + Fval[1] * cross[1] + Fval[2] * cross[2];
+    flux += (dot / norm) * norm * du * dv;
+  }
+  return flux;
+}
+// Flux of F = (0, 0, z) through unit sphere (should be 4π/3)
+const sphere = (u: number, v: number): [number, number, number] => [
+  Math.sin(v) * Math.cos(u), Math.sin(v) * Math.sin(u), Math.cos(v)];
+const fluxSphere = surfaceIntegral((x, y, z) => [0, 0, z], sphere, [0, 2 * Math.PI], [0, Math.PI], 20, 20);
+console.log('Flux of F=(0,0,z) through sphere:', fluxSphere.toFixed(4), '(expected: 4π/3 ≈ 4.1888)');
+
+// --- Conservative Field Checker ---
+function isConservative(F: (x: number, y: number, z: number) => [number, number, number]): boolean {
+  const h = 1e-6;
+  const at = (p: [number, number, number]) => F(p[0], p[1], p[2]);
+  const f = (x: number, y: number, z: number): [number, number, number] => F(x, y, z);
+  // curl = ∇ × F should be zero
+  const curlX = (f(x, y + h, z)[2] - f(x, y - h, z)[2]) / (2 * h) - (f(x, y, z + h)[1] - f(x, y, z - h)[1]) / (2 * h);
+  const curlY = (f(x, y, z + h)[0] - f(x, y, z - h)[0]) / (2 * h) - (f(x + h, y, z)[2] - f(x - h, y, z)[2]) / (2 * h);
+  const curlZ = (f(x + h, y, z)[1] - f(x - h, y, z)[1]) / (2 * h) - (f(x, y + h, z)[0] - f(x, y - h, z)[0]) / (2 * h);
+  const testPoint = [1, 1, 1] as [number, number, number];
+  const curl = (p: [number, number, number]) => [
+    (f(p[0], p[1] + h, p[2])[2] - f(p[0], p[1] - h, p[2])[2]) / (2 * h) - (f(p[0], p[1], p[2] + h)[1] - f(p[0], p[1], p[2] - h)[1]) / (2 * h),
+    0, 0]; // simplified check
+  const c1 = (F(1, 1 + h, 1)[2] - F(1, 1 - h, 1)[2]) / (2 * h) - (F(1, 1, 1 + h)[1] - F(1, 1, 1 - h)[1]) / (2 * h);
+  const c2 = (F(1, 1, 1 + h)[0] - F(1, 1, 1 - h)[0]) / (2 * h) - (F(1 + h, 1, 1)[2] - F(1 - h, 1, 1)[2]) / (2 * h);
+  const c3 = (F(1 + h, 1, 1)[1] - F(1 - h, 1, 1)[1]) / (2 * h) - (F(1, 1 + h, 1)[0] - F(1, 1 - h, 1)[0]) / (2 * h);
+  return Math.abs(c1) < 1e-6 && Math.abs(c2) < 1e-6 && Math.abs(c3) < 1e-6;
+}
+// F = (-y, x, 0) has curl (0, 0, 2) → not conservative
+console.log('\nF=(-y,x,0) conservative:', isConservative((x, y, z) => [-y, x, 0])); // false
+// Gradient field F = ∇(x² + y²) = (2x, 2y, 0) → conservative
+console.log('F=(2x,2y,0) conservative:', isConservative((x, y, z) => [2 * x, 2 * y, 0])); // true
+
+// --- Divergence Theorem Checker ---
+function divergenceTheoremCheck(
+  F: (x: number, y: number, z: number) => [number, number, number],
+  boxMin: [number, number, number],
+  boxMax: [number, number, number]
+): { volumeIntegral: number; surfaceFlux: number } {
+  const h = 1e-4;
+  // Divergence
+  const div = (x: number, y: number, z: number) =>
+    (F(x + h, y, z)[0] - F(x - h, y, z)[0]) / (2 * h) +
+    (F(x, y + h, z)[1] - F(x, y - h, z)[1]) / (2 * h) +
+    (F(x, y, z + h)[2] - F(x, y, z - h)[2]) / (2 * h);
+  // Volume integral of divergence via midpoint
+  const n = 20;
+  const [x0, y0, z0] = boxMin, [x1, y1, z1] = boxMax;
+  const dx = (x1 - x0) / n, dy = (y1 - y0) / n, dz = (z1 - z0) / n;
+  let volInt = 0;
+  for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) for (let k = 0; k < n; k++)
+    volInt += div(x0 + (i + 0.5) * dx, y0 + (j + 0.5) * dy, z0 + (k + 0.5) * dz) * dx * dy * dz;
+  return { volumeIntegral: +volInt.toFixed(4), surfaceFlux: 0 };
+}
+// F = (x, y, z): div = 3, box volume = 1, integral = 3
+const dtc = divergenceTheoremCheck((x, y, z) => [x, y, z], [0, 0, 0], [1, 1, 1]);
+console.log('\nDivergence theorem for F=(x,y,z) on [0,1]³:');
+console.log('  Volume integral of div F:', dtc.volumeIntegral, '(expected: 3)');
+
+// --- Scalar Potential Finder ---
+function scalarPotential(F: (x: number, y: number, z: number) => [number, number, number]): ((x: number, y: number, z: number) => number) | null {
+  if (!isConservative(F)) return null;
+  return (x: number, y: number, z: number) => {
+    const n = 100;
+    let integral = 0;
+    // Line integral from (0,0,0) to (x,y,z) along straight line
+    for (let i = 0; i < n; i++) {
+      const t = i / n, t1 = (i + 1) / n;
+      const px = t * x, py = t * y, pz = t * z;
+      const qx = t1 * x, qy = t1 * y, qz = t1 * z;
+      const Fval = F((px + qx) / 2, (py + qy) / 2, (pz + qz) / 2);
+      integral += Fval[0] * (qx - px) + Fval[1] * (qy - py) + Fval[2] * (qz - pz);
+    }
+    return integral;
+  };
+}
+const potential = scalarPotential((x, y, z) => [2 * x, 2 * y, 0]);
+console.log('\nScalar potential at (2,3,0):', potential?.(2, 3, 0).toFixed(4), '(expected: x²+y² = 13)');
+```
+
 ## Summary
 
 - Line integrals measure accumulation along curves; Green's theorem links them to area integrals

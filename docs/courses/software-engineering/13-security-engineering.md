@@ -780,6 +780,177 @@ class EnvConfig {
 
 **Answer: B** — CSP restricts which scripts can execute, preventing XSS.
 
+### TypeScript: Security Engineering Tools
+
+```typescript
+// === STRIDE Threat Modeler ===
+type StrideCategory = "spoofing" | "tampering" | "repudiation" | "information_disclosure" | "denial_of_service" | "elevation_of_privilege";
+interface Threat {
+  category: StrideCategory;
+  element: string;
+  description: string;
+  severity: "critical" | "high" | "medium" | "low";
+  mitigation: string;
+}
+function identifyStrideThreats(element: string, elementType: "data_flow" | "data_store" | "process" | "interactor"): Threat[] {
+  const threats: Threat[] = [];
+  if (elementType === "data_flow") {
+    threats.push({ category: "tampering", element, description: "Data flow could be modified in transit", severity: "high", mitigation: "Use TLS" });
+    threats.push({ category: "information_disclosure", element, description: "Data could be intercepted", severity: "medium", mitigation: "Encrypt payload" });
+  }
+  if (elementType === "data_store") {
+    threats.push({ category: "tampering", element, description: "Data at rest could be modified", severity: "high", mitigation: "Access control" });
+    threats.push({ category: "denial_of_service", element, description: "Store could be flooded", severity: "medium", mitigation: "Rate limiting" });
+  }
+  if (elementType === "process") {
+    threats.push({ category: "elevation_of_privilege", element, description: "Process could be exploited", severity: "critical", mitigation: "Least privilege" });
+    threats.push({ category: "denial_of_service", element, description: "Process could be crashed", severity: "medium", mitigation: "Input validation" });
+  }
+  if (elementType === "interactor") {
+    threats.push({ category: "spoofing", element, description: "External entity could be impersonated", severity: "high", mitigation: "Authentication" });
+    threats.push({ category: "repudiation", element, description: "Actions could be denied", severity: "low", mitigation: "Audit logging" });
+  }
+  return threats;
+}
+console.log(identifyStrideThreats("HTTP API", "data_flow"));
+
+// === Risk Matrix Calculator ===
+interface RiskItem {
+  threat: string;
+  likelihood: number;
+  impact: number;
+}
+function calculateRisk(items: RiskItem[]): { score: number; level: "critical" | "high" | "medium" | "low" }[] {
+  return items.map((i) => {
+    const score = i.likelihood * i.impact;
+    const level = score >= 15 ? "critical" : score >= 10 ? "high" : score >= 5 ? "medium" : "low";
+    return { score, level };
+  });
+}
+const risks: RiskItem[] = [
+  { threat: "SQL Injection", likelihood: 4, impact: 5 },
+  { threat: "XSS", likelihood: 3, impact: 4 },
+  { threat: "Brute force", likelihood: 3, impact: 2 },
+  { threat: "DDoS", likelihood: 2, impact: 5 },
+];
+console.log(calculateRisk(risks));
+
+// === Security Requirement Writer ===
+function generateSecurityReq(category: string, asset: string): string {
+  const templates: Record<string, string> = {
+    authentication: `The system SHALL authenticate all ${asset} requests before processing`,
+    authorization: `The system SHALL enforce role-based access control for ${asset}`,
+    encryption: `All ${asset} data SHALL be encrypted using AES-256-GCM`,
+    logging: `All ${asset} access attempts SHALL be logged with timestamp, identity, and outcome`,
+    validation: `All ${asset} input SHALL be validated against a positive specification`,
+  };
+  return templates[category] ?? `Security requirement for ${asset} in category ${category} is not defined`;
+}
+console.log(generateSecurityReq("authentication", "API"));
+
+// === SAST Rule Engine ===
+interface SASTRule { id: string; pattern: RegExp; message: string; severity: "error" | "warning" }
+const sastRules: SASTRule[] = [
+  { id: "S-001", pattern: /eval\s*\(/, message: "Avoid eval() - risk of code injection", severity: "error" },
+  { id: "S-002", pattern: /innerHTML\s*=/, message: "Use textContent instead of innerHTML to prevent XSS", severity: "error" },
+  { id: "S-003", pattern: /exec\s*\(/, message: "Avoid exec() - use safer alternatives", severity: "error" },
+  { id: "S-004", pattern: /crypto\.createHash\("md5"\)/, message: "Use SHA-256 instead of MD5", severity: "warning" },
+];
+function scanSource(source: string): { rule: SASTRule; line: number }[] {
+  const findings: { rule: SASTRule; line: number }[] = [];
+  const lines = source.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    for (const rule of sastRules) {
+      if (rule.pattern.test(lines[i])) findings.push({ rule, line: i + 1 });
+    }
+  }
+  return findings;
+}
+const testCode = `function process(input) {\n  return eval(input);\n}\ndocument.getElementById("x").innerHTML = "test";`;
+console.log(scanSource(testCode));
+
+// === OWASP Top 10 Checker ===
+const owaspTop10 = [
+  { rank: 1, name: "Broken Access Control", check: (code: string) => code.includes("role") || code.includes("permission") },
+  { rank: 2, name: "Cryptographic Failures", check: (code: string) => code.includes("https") || code.includes("TLS") },
+  { rank: 3, name: "Injection", check: (code: string) => !code.includes("parameterized") && !code.includes("prepared") },
+];
+function checkOWASP(code: string): string[] { return owaspTop10.filter((o) => !o.check(code)).map((o) => `A${o.rank}: ${o.name} - review needed`); }
+console.log(checkOWASP("SELECT * FROM users WHERE id = " + "input"));
+```
+
+### TypeScript: Security Assessment Tools
+
+```typescript
+// === Vulnerability Severity Calculator (CVSS-style) ===
+interface Vulnerability { exploitability: number; impact: number; scope: "unchanged" | "changed"; }
+function calculateSeverity(vuln: Vulnerability): { score: number; severity: string } {
+  const impact = vuln.scope === "changed" ? 7.52 * (vuln.impact - 0.029) - 3.25 * Math.pow(vuln.impact - 0.02, 15) : 6.42 * vuln.impact;
+  const exploitSub = 8.22 * vuln.exploitability;
+  const score = vuln.scope === "changed" ? 1.08 * (impact + exploitSub) : Math.min(impact + exploitSub, 10);
+  const rounded = Math.round(score * 10) / 10;
+  const severity = rounded >= 9 ? "Critical" : rounded >= 7 ? "High" : rounded >= 4 ? "Medium" : "Low";
+  return { score: rounded, severity };
+}
+
+// === Threat Modeling Tool ===
+interface Threat { id: string; description: string; category: "Spoofing" | "Tampering" | "Repudiation" | "Info Disclosure" | "DoS" | "Elevation"; mitigated: boolean; risk: number; }
+class ThreatModel {
+  private threats: Threat[] = [];
+  
+  addThreat(description: string, category: Threat["category"]): void {
+    this.threats.push({ id: `T${this.threats.length + 1}`, description, category, mitigated: false, risk: 5 });
+  }
+  
+  mitgate(id: string): void {
+    const threat = this.threats.find(t => t.id === id);
+    if (threat) threat.mitigated = true;
+  }
+
+  getRiskHeatmap(): Record<string, { total: number; mitigated: number; unmitigated: number }> {
+    const result: Record<string, { total: number; mitigated: number; unmitigated: number }> = {};
+    for (const t of this.threats) {
+      if (!result[t.category]) result[t.category] = { total: 0, mitigated: 0, unmitigated: 0 };
+      result[t.category].total++;
+      if (t.mitigated) result[t.category].mitigated++;
+      else result[t.category].unmitigated++;
+    }
+    return result;
+  }
+
+  coverageScore(): number {
+    return this.threats.length > 0
+      ? Math.round((this.threats.filter(t => t.mitigated).length / this.threats.length) * 100)
+      : 0;
+  }
+}
+
+// === Security Control Effectiveness Evaluator ===
+function evaluateControl(control: string, attacks: number, blocked: number): { name: string; effectiveness: number; recommendation: string } {
+  const effectiveness = attacks > 0 ? Math.round((blocked / attacks) * 100) : 100;
+  const recommendation = effectiveness >= 90 ? "Excellent" : effectiveness >= 70 ? "Adequate" : effectiveness >= 50 ? "Needs Improvement" : "Replace";
+  return { name: control, effectiveness, recommendation };
+}
+
+// === Dependency Vulnerability Checker ===
+interface Dependency { name: string; version: string; knownVulnerabilities: number; }
+function checkDependencySecurity(deps: Dependency[]): { safe: number; vulnerable: number; critical: string[] } {
+  const vulnerable = deps.filter(d => d.knownVulnerabilities > 0);
+  const critical = vulnerable.filter(d => d.knownVulnerabilities >= 3).map(d => d.name);
+  return { safe: deps.length - vulnerable.length, vulnerable: vulnerable.length, critical };
+}
+
+const vuln = calculateSeverity({ exploitability: 8, impact: 9, scope: "unchanged" });
+console.log(vuln); // High/Critical score
+
+const model = new ThreatModel();
+model.addThreat("SQL injection via user input", "Tampering");
+model.addThreat("JWT token theft", "Spoofing");
+model.mitgate("T1");
+console.log(model.coverageScore()); // 50
+console.log(model.getRiskHeatmap());
+```
+
 ## Summary
 
 Security engineering is the discipline of building systems that remain secure under attack. The CIA triad (Confidentiality, Integrity, Availability) provides foundational principles. The OWASP Top 10 catalogues the most critical web application risks. Threat modelling using STRIDE identifies security threats systematically. Secure coding practices include input validation, output encoding, parameterised queries, CSRF tokens, and Content Security Policy. Cryptographic primitives must be applied correctly using well-audited libraries. Secrets management ensures that credentials and keys are never hardcoded or exposed. Security testing includes static analysis (SAST), dynamic analysis (DAST), and dependency scanning. Security is an emergent property of the entire system, not a single feature.

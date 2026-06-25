@@ -539,6 +539,76 @@ function hasseLevels(rel: Relation, set: number[]): Map<number, number> {
 }
 ```
 
+```
+console.log('Reflexive:', isReflexive(R, [1,2,3]));  // true (has (1,1),(2,2),(3,3))
+console.log('Symmetric:', isSymmetric(R));            // true (pairs are symmetric)
+console.log('Transitive:', isTransitive(R));          // check
+console.log('Antisymmetric:', isAntisymmetric(R));    // check
+
+// --- Equivalence Class Partitioner ---
+function equivalenceClasses<T>(set: T[], relation: (a: T, b: T) => boolean): T[][] {
+  const remaining = new Set(set);
+  const classes: T[][] = [];
+  for (const elem of set) {
+    if (!remaining.has(elem)) continue;
+    const eqClass = set.filter(x => remaining.has(x) && relation(elem, x));
+    eqClass.forEach(x => remaining.delete(x));
+    classes.push(eqClass);
+  }
+  return classes;
+}
+const sameParity = (a: number, b: number) => a % 2 === b % 2;
+console.log('\nEquivalence classes (same parity) on [1..5]:', equivalenceClasses([1,2,3,4,5], sameParity));
+
+// --- Partial Order Checker ---
+function isPartialOrder<T>(set: T[], rel: [T, T][]): boolean {
+  const has = (x: T, y: T) => rel.some(p => p[0] === x && p[1] === y);
+  return set.every(x => has(x, x)) &&                                  // reflexive
+    rel.every(([a, b]) => !has(b, a) || a === b) &&                   // antisymmetric
+    rel.every(([a, b]) => rel.every(([c, d]) => b !== c || has(a, d))); // transitive
+}
+const poset: [number, number][] = [[1,1],[2,2],[3,3],[1,2],[1,3],[2,3]];
+console.log('\nIs partial order:', isPartialOrder([1,2,3], poset));
+
+// --- Transitive Closure (Warshall's Algorithm) ---
+function transitiveClosure(adj: boolean[][]): boolean[][] {
+  const n = adj.length;
+  const tc = adj.map(row => [...row]);
+  for (let k = 0; k < n; k++)
+    for (let i = 0; i < n; i++)
+      for (let j = 0; j < n; j++)
+        tc[i][j] = tc[i][j] || (tc[i][k] && tc[k][j]);
+  return tc;
+}
+const graph: boolean[][] = [
+  [false, true, false, false],
+  [false, false, true, false],
+  [false, false, false, true],
+  [false, false, false, false]
+];
+const tc = transitiveClosure(graph);
+console.log('\nTransitive closure (1→2→3→4):');
+tc.forEach((r, i) => console.log(`  ${i}: ${r.map(v => v ? '1' : '0').join(' ')}`));
+
+// --- Topological Sort with Kahn's Algorithm ---
+function topologicalSort(n: number, edges: [number, number][]): number[] | null {
+  const inDegree = new Array(n).fill(0);
+  const adj: number[][] = Array.from({length: n}, () => []);
+  for (const [u, v] of edges) { adj[u].push(v); inDegree[v]++; }
+  const queue: number[] = [];
+  for (let i = 0; i < n; i++) if (inDegree[i] === 0) queue.push(i);
+  const result: number[] = [];
+  while (queue.length > 0) {
+    const u = queue.shift()!;
+    result.push(u);
+    for (const v of adj[u]) if (--inDegree[v] === 0) queue.push(v);
+  }
+  return result.length === n ? result : null;
+}
+const deps: [number, number][] = [[0,2],[1,2],[2,3],[3,4],[2,5]];
+console.log('\nTopological sort order:', topologicalSort(6, deps));
+```
+
 ## Summary
 
 - Relations are sets of ordered pairs. They can be matrices or digraphs.

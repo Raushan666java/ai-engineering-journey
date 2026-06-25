@@ -633,6 +633,67 @@ console.log(`Savings: $${onPremCost.total - cloudCost.total}/year (${(((onPremCo
 
 6. Mapper: parse date, emit (month, temp). Combiner: sum temps per month. Reducer: average = sum/count. | 7. R1: Rack1-Node1, R2: Rack2-Node4, R3: Rack2-Node5 | 8. 80 containers | 9. HDFS: ~$150K (disks+servers), S3: ~$414K over 3 years (S3 cheaper on storage but compute separate)
 
+### TypeScript: HDFS Read/Write Pipeline Simulator
+
+```typescript
+interface BlockReplica {
+  blockId: string; sizeMB: number; nodes: string[]; rack: string[];
+}
+
+class HDFSPipeline {
+  private blocks: Map<string, BlockReplica> = new Map();
+  private datanodes: Map<string, string> = new Map(); // node -> rack
+
+  addNode(node: string, rack: string): void { this.datanodes.set(node, rack); }
+
+  writeFile(name: string, sizeMB: number, blockSizeMB: number = 128, replication: number = 3): BlockReplica[] {
+    const blockCount = Math.ceil(sizeMB / blockSizeMB);
+    for (let i = 0; i < blockCount; i++) {
+      const nodes = [...this.datanodes.keys()];
+      const rackSet = new Set<string>();
+      const selected: string[] = [];
+      for (let r = 0; r < replication; r++) {
+        if (r === 0) { selected.push(nodes[Math.floor(Math.random() * nodes.length)]); }
+        else {
+          const candidate = nodes.find(n => !selected.includes(n) && this.datanodes.get(n) !== this.datanodes.get(selected[0]));
+          selected.push(candidate || nodes[Math.floor(Math.random() * nodes.length)]);
+        }
+        rackSet.add(this.datanodes.get(selected[r])!);
+      }
+      const id = `${name}_blk_${i}`;
+      this.blocks.set(id, { blockId: id, sizeMB: blockSizeMB, nodes: [...selected], rack: [...rackSet] });
+    }
+    return [...this.blocks.values()].filter(b => b.blockId.startsWith(name));
+  }
+
+  readPipeline(blockId: string): { node: string; readTimeMs: number }[] {
+    const block = this.blocks.get(blockId);
+    if (!block) return [];
+    return block.nodes.map((node, i) => ({
+      node,
+      readTimeMs: Math.round(block.sizeMB / (i === 0 ? 200 : 100) * 1000),
+    }));
+  }
+
+  getBlockDistribution(): { node: string; blockCount: number }[] {
+    const counts = new Map<string, number>();
+    this.blocks.forEach(b => b.nodes.forEach(n => counts.set(n, (counts.get(n) || 0) + 1)));
+    return [...counts.entries()].map(([node, blockCount]) => ({ node, blockCount }));
+  }
+}
+
+const hdfs = new HDFSPipeline();
+hdfs.addNode("node1", "/rack1"); hdfs.addNode("node2", "/rack1");
+hdfs.addNode("node3", "/rack2"); hdfs.addNode("node4", "/rack2");
+hdfs.addNode("node5", "/rack3"); hdfs.addNode("node6", "/rack3");
+
+const blocks = hdfs.writeFile("sales_2024.csv", 512, 128, 3);
+console.log(`Written ${blocks.length} blocks, replicas:`, blocks[0]?.nodes.join(", "));
+console.log("Distribution:", JSON.stringify(hdfs.getBlockDistribution(), null, 2));
+console.log("Read pipeline:", JSON.stringify(hdfs.readPipeline(blocks[0]!.blockId), null, 2));
+```
+```
+
 ## Summary
 
 - HDFS provides fault-tolerant distributed storage with block replication, rack awareness, and a single namenode.

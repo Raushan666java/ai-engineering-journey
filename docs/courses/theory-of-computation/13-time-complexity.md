@@ -615,6 +615,103 @@ console.log(ComplexityClassChecker.classifyProblem("Sorting", "O(n log n)", true
 console.log(ComplexityClassChecker.pVsNP().join("\n"));
 ```
 
+// ─────────────────────────────────────────────────────
+// Complexity Class Membership Checker
+// Given a problem and its known best-case runtime,
+// determines which complexity class(es) it belongs to.
+// ─────────────────────────────────────────────────────
+
+class ComplexityMembershipChecker {
+  // Classify a problem based on its best-known time complexity
+  static classify(name: string, complexity: string, verified: boolean): string[] {
+    const output: string[] = [];
+    output.push(`Problem: ${name}`);
+    output.push(`Best known complexity: ${complexity}`);
+    output.push(`Verified upper bound: ${verified}`);
+    output.push("");
+
+    // Extract the big-O function
+    const oMatch = complexity.match(/O\((.+)\)/);
+    if (!oMatch) { output.push("Unable to parse complexity expression."); return output; }
+    const func = oMatch[1];
+
+    output.push("Membership:");
+
+    // Check each class
+    const classes = this.checkClasses(func, verified);
+    for (const [cls, member] of classes) {
+      output.push(`  ${cls}: ${member ? "⊆" : "not known ⊆"} ${cls}`);
+    }
+
+    return output;
+  }
+
+  private static checkClasses(func: string, verified: boolean): [string, boolean][] {
+    const isPoly = /^n\b|^n\^\d|^n log|^\d/.test(func);
+    const isLinear = /^n$|^n log/.test(func);
+    const isQuadratic = /n\^2/.test(func);
+    const isExp = /2\^n|n!|n\^n/.test(func);
+
+    return [
+      ["L (O(log n) space)", /log n/.test(func)],
+      ["P (polynomial time)", isPoly],
+      ["NP (verifiable in poly time)", isPoly || isExp],
+      ["co-NP", isPoly || isExp],
+      ["EXP (2^(n^O(1)))", isExp || isPoly],
+      ["PSPACE (poly space)", isPoly || isExp],
+    ];
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Big-O Hierarchy Visualizer
+// Renders the time complexity hierarchy with common
+// examples at each level.
+// ─────────────────────────────────────────────────────
+
+class BigOHierarchy {
+  static render(): string[] {
+    return [
+      "Time Complexity Hierarchy",
+      "═══════════════════════════",
+      "",
+      "O(1)         Constant       — Array access, hash lookup",
+      "  ↓",
+      "O(log n)     Logarithmic    — Binary search, BST operations",
+      "  ↓",
+      "O(n)         Linear         — Array scan, linear search",
+      "  ↓",
+      "O(n log n)   Linearithmic   — Merge sort, heap sort, FFT",
+      "  ↓",
+      "O(n²)        Quadratic      — Bubble sort, insertion sort",
+      "  ↓",
+      "O(n³)        Cubic          — Floyd-Warshall, matrix multiplication (naive)",
+      "  ↓",
+      "O(2ⁿ)        Exponential    — Subset sum (brute force), SAT (brute force)",
+      "  ↓",
+      "O(n!)        Factorial      — Traveling salesman (brute force),permutations",
+      "",
+      "Class boundaries:",
+      "  P     = O(n^k) for some k (tractable)",
+      "  NP    = verifiable in O(n^k)",
+      "  EXP   = O(2^(n^k))",
+      "  NEXP  = nondeterministic EXP",
+      "",
+      "Key open question: P = NP? (Clay $1M Millennium Problem)"
+    ];
+  }
+}
+
+// Demo
+console.log(ComplexityMembershipChecker.classify("Matrix Multiplication (Strassen)",
+  "O(n^2.81)", true).join("\n"));
+console.log("");
+console.log(ComplexityMembershipChecker.classify("SAT (naive backtracking)",
+  "O(2^n)", true).join("\n"));
+console.log("");
+console.log(BigOHierarchy.render().join("\n"));
+```
+
 ## Summary
 
 - P = problems solvable in polynomial time on a DTM.

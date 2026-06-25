@@ -760,6 +760,252 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Map vs Object Performance Test ===
+function benchMapVsObj(ops = 100000): Record<string, number> {
+  const obj: Record<number, number> = {};
+  const map = new Map<number, number>();
+  const start1 = performance.now();
+  for (let i = 0; i < ops; i++) obj[i] = i * 2;
+  const objSet = performance.now() - start1;
+  const start2 = performance.now();
+  for (let i = 0; i < ops; i++) map.set(i, i * 2);
+  const mapSet = performance.now() - start2;
+  const start3 = performance.now();
+  for (let i = 0; i < ops; i++) { const _ = obj[i]; }
+  const objGet = performance.now() - start3;
+  const start4 = performance.now();
+  for (let i = 0; i < ops; i++) { const _ = map.get(i); }
+  const mapGet = performance.now() - start4;
+  return { objSetMs: Math.round(objSet), mapSetMs: Math.round(mapSet), objGetMs: Math.round(objGet), mapGetMs: Math.round(mapGet) };
+}
+console.log(benchMapVsObj());
+
+// === Deep Merge (Python dict merge equivalent) ===
+function deepMerge<T extends Record<string, unknown>>(target: T, ...sources: Partial<T>[]): T {
+  const result = { ...target };
+  for (const src of sources) {
+    for (const key of Object.keys(src) as (keyof T)[]) {
+      const val = src[key];
+      if (val !== null && typeof val === "object" && !Array.isArray(val)) {
+        result[key] = deepMerge(result[key] as Record<string, unknown> ?? {}, val as Record<string, unknown>) as T[keyof T];
+      } else if (val !== undefined) {
+        result[key] = val;
+      }
+    }
+  }
+  return result;
+}
+const merged = deepMerge({ a: 1, b: { c: 2 } }, { b: { d: 3 }, e: 4 });
+console.log(merged); // { a: 1, b: { c: 2, d: 3 }, e: 4 }
+
+// === Key Transformation Pipeline ===
+function transformKeys<T>(obj: Record<string, T>, fn: (k: string) => string): Record<string, T> {
+  return Object.fromEntries(Object.entries(obj).map(([k, v]) => [fn(k), v]));
+}
+function camelToSnake(k: string): string { return k.replace(/([A-Z])/g, "_$1").toLowerCase(); }
+function snakeToCamel(k: string): string { return k.replace(/_([a-z])/g, (_, c) => c.toUpperCase()); }
+const camelObj = { firstName: "Alice", lastName: "Smith" };
+console.log(transformKeys(camelObj, camelToSnake));  // { first_name: "Alice", last_name: "Smith" }
+
+// === Safe Get with Path (Python dict get equiv) ===
+function getIn<T>(obj: unknown, path: string[], fallback?: T): T | undefined {
+  let current: unknown = obj;
+  for (const key of path) {
+    if (current === null || current === undefined || typeof current !== "object") return fallback;
+    current = (current as Record<string, unknown>)[key];
+  }
+  return (current as T) ?? fallback;
+}
+const data = { user: { address: { city: "Paris" } } };
+console.log(getIn(data, ["user", "address", "city"]));  // Paris
+console.log(getIn(data, ["user", "phone"]));             // undefined
+
+// === Default Dict (Python defaultdict equivalent) ===
+class DefaultDict<K, V> {
+  private dict = new Map<K, V>();
+  constructor(private factory: () => V) {}
+  get(key: K): V { if (!this.dict.has(key)) this.dict.set(key, this.factory()); return this.dict.get(key)!; }
+  set(key: K, value: V): void { this.dict.set(key, value); }
+  entries(): [K, V][] { return [...this.dict.entries()]; }
+}
+const dd = new DefaultDict<string, number[]>(() => []);
+dd.get("a").push(1, 2, 3);
+dd.get("b").push(4);
+console.log(dd.entries()); // [["a", [1,2,3]], ["b", [4]]]
+```
+
+### TypeScript Advanced Dictionary Patterns
+
+```typescript
+// === Python dict methods mapped to TypeScript ===
+const pyDict = { name: "Alice", age: 30, city: "Paris" };
+
+// Python: d.keys() → Object.keys()
+console.log(Object.keys(pyDict));     // ["name", "age", "city"]
+// Python: d.values() → Object.values()
+console.log(Object.values(pyDict));   // ["Alice", 30, "Paris"]
+// Python: d.items() → Object.entries()
+console.log(Object.entries(pyDict));  // [["name","Alice"],["age",30],["city","Paris"]]
+
+// Python: d.get(k, default) → ?? or ||
+const score = { alice: 95, bob: 87 };
+console.log(score.alice ?? 0);        // 95
+console.log(score.charlie ?? 0);      // 0
+
+// Python: d.update() → Object.assign()
+const defaults = { theme: "light", lang: "en" };
+const userPrefs = { theme: "dark" };
+const merged = Object.assign({}, defaults, userPrefs);
+console.log(merged);                  // { theme: "dark", lang: "en" }
+
+// Python: dict comprehension → Object.fromEntries()
+const nums = [1, 2, 3, 4, 5];
+const squares = Object.fromEntries(nums.map(n => [n, n * n]));
+console.log(squares);                 // {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+// Python: dict.pop(k) → delete + rest
+const { age: _, ...rest } = pyDict;
+console.log(rest);                    // { name: "Alice", city: "Paris" }
+
+// Python: dict.setdefault → custom helper
+function setDefault<K, V>(map: Map<K, V>, key: K, factory: () => V): V {
+  if (!map.has(key)) map.set(key, factory());
+  return map.get(key)!;
+}
+const groups = new Map<string, number[]>();
+setDefault(groups, "evens", () => []).push(2, 4, 6);
+console.log([...groups.entries()]);   // [["evens", [2,4,6]]]
+
+// Python: collections.Counter
+function counter2<T>(items: T[]): Map<T, number> {
+  const c = new Map<T, number>();
+  for (const item of items) c.set(item, (c.get(item) ?? 0) + 1);
+  return c;
+}
+console.log([...counter2(["a","b","a","c","b","a"])]);
+
+// Python: dict merge | operator
+const a = { x: 1, y: 2 };
+const b = { y: 3, z: 4 };
+console.log({ ...a, ...b });          // { x: 1, y: 3, z: 4 }
+
+// Python: defaultdict(list)
+class DefaultDict2<K, V> {
+  private map = new Map<K, V>();
+  constructor(private factory: () => V) {}
+  get(key: K): V {
+    if (!this.map.has(key)) this.map.set(key, this.factory());
+    return this.map.get(key)!;
+  }
+  entries(): [K, V][] { return [...this.map.entries()]; }
+}
+const dd = new DefaultDict2<string, number[]>(() => []);
+dd.get("a").push(1); dd.get("a").push(2); dd.get("b").push(3);
+console.log(dd.entries());
+```
+
+### TypeScript Advanced Map Operations
+
+```typescript
+// === Bi-directional Map (Python: bidict) ===
+class BiMap<K, V> {
+  private keyToVal = new Map<K, V>();
+  private valToKey = new Map<V, K>();
+  set(key: K, value: V): void {
+    this.keyToVal.set(key, value);
+    this.valToKey.set(value, key);
+  }
+  get(key: K): V | undefined { return this.keyToVal.get(key); }
+  getKey(value: V): K | undefined { return this.valToKey.get(value); }
+  delete(key: K): void {
+    const val = this.keyToVal.get(key);
+    if (val !== undefined) { this.keyToVal.delete(key); this.valToKey.delete(val); }
+  }
+  get size(): number { return this.keyToVal.size; }
+}
+
+// === LRU Cache (Python: OrderedDict + lru_cache) ===
+class LRUCache2<K, V> {
+  private cache = new Map<K, V>();
+  constructor(private maxSize: number) {}
+  get(key: K): V | undefined {
+    if (!this.cache.has(key)) return undefined;
+    const val = this.cache.get(key)!;
+    this.cache.delete(key);
+    this.cache.set(key, val);
+    return val;
+  }
+  set(key: K, value: V): void {
+    if (this.cache.has(key)) this.cache.delete(key);
+    if (this.cache.size >= this.maxSize) {
+      const oldest = this.cache.keys().next().value;
+      if (oldest !== undefined) this.cache.delete(oldest);
+    }
+    this.cache.set(key, value);
+  }
+  entries(): [K, V][] { return [...this.cache.entries()]; }
+}
+
+// === MultiMap (Python: dict of lists) ===
+class MultiMap<K, V> {
+  private map = new Map<K, V[]>();
+  add(key: K, value: V): void {
+    if (!this.map.has(key)) this.map.set(key, []);
+    this.map.get(key)!.push(value);
+  }
+  get(key: K): V[] { return [...(this.map.get(key) ?? [])]; }
+  has(key: K): boolean { return this.map.has(key); }
+  keys(): K[] { return [...this.map.keys()]; }
+}
+
+// === Deep Get/Set for Nested Dicts ===
+function deepGet<T>(obj: Record<string, any>, path: string, defaultValue?: T): T | undefined {
+  const keys = path.split(".");
+  let current: any = obj;
+  for (const key of keys) {
+    if (current === null || current === undefined || typeof current !== "object") return defaultValue;
+    current = current[key];
+  }
+  return (current === undefined ? defaultValue : current) as T;
+}
+function deepSet(obj: Record<string, any>, path: string, value: unknown): void {
+  const keys = path.split(".");
+  let current = obj;
+  for (let i = 0; i < keys.length - 1; i++) {
+    if (!(keys[i] in current)) current[keys[i]] = {};
+    current = current[keys[i]];
+  }
+  current[keys[keys.length - 1]] = value;
+}
+
+// === Immutable Dict Update ===
+function updateDict<K extends string | number | symbol, V>(obj: Record<K, V>, updates: Partial<Record<K, V>>): Record<K, V> {
+  return { ...obj, ...updates };
+}
+function omitKeys<K extends string | number | symbol, V>(obj: Record<K, V>, ...keys: K[]): Partial<Record<K, V>> {
+  const result = { ...obj };
+  for (const key of keys) delete result[key];
+  return result;
+}
+function pickKeys<K extends string | number | symbol, V>(obj: Record<K, V>, ...keys: K[]): Partial<Record<K, V>> {
+  const result: Partial<Record<K, V>> = {};
+  for (const key of keys) if (key in obj) result[key] = obj[key];
+  return result;
+}
+
+const bimap = new BiMap<number, string>();
+bimap.set(1, "one"); bimap.set(2, "two");
+console.log(bimap.getKey("one")); // 1
+console.log(bimap.get(2)); // "two"
+
+const lru2 = new LRUCache2<string, number>(3);
+lru2.set("a", 1); lru2.set("b", 2); lru2.set("c", 3); lru2.get("a"); lru2.set("d", 4);
+console.log(lru2.entries()); // [["c", 3], ["a", 1], ["d", 4]]
+```
+
 ## Summary
 
 - Dictionaries map hashable keys to values; insertion order is preserved (3.7+).

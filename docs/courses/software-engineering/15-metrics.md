@@ -755,6 +755,171 @@ class DefectMetricsAnalyzer {
 
 **Answer: B** — 11-20 is moderate risk.
 
+### TypeScript: Software Metrics Tools
+
+```typescript
+// === LOC / Complexity / Cohesion Analyzer ===
+interface MetricResult {
+  loc: number;
+  commentLines: number;
+  blankLines: number;
+  cyclomaticComplexity: number;
+}
+function analyzeMetrics(source: string): MetricResult {
+  const lines = source.split("\n");
+  const loc = lines.filter((l) => l.trim().length > 0).length;
+  const commentLines = lines.filter((l) => l.trim().startsWith("//") || l.trim().startsWith("/*")).length;
+  const blankLines = lines.filter((l) => l.trim().length === 0).length;
+  let complexity = 1;
+  for (const l of lines) {
+    if (l.includes("if ") || l.includes("else if")) complexity++;
+    if (l.includes("for ") || l.includes("while ")) complexity++;
+    if (l.includes("case ") || l.includes("catch ")) complexity++;
+    if (l.includes("&&") || l.includes("||")) complexity++;
+  }
+  return { loc, commentLines, blankLines, cyclomaticComplexity: complexity };
+}
+const sampleCode = `function process(x: number) {
+  if (x > 0) {
+    if (x > 10) { return "big"; }
+    return "small";
+  }
+  return "none";
+}`;
+console.log(analyzeMetrics(sampleCode));
+
+// === Function Point Calculator ===
+interface FunctionCounts {
+  inputs: number; outputs: number; inquiries: number; files: number; interfaces: number;
+}
+function calculateFunctionPoints(fc: FunctionCounts, complexity: "simple" | "average" | "complex"): number {
+  const weights: Record<string, number[]> = { simple: [3, 4, 3, 7, 5], average: [4, 5, 4, 10, 7], complex: [6, 7, 6, 15, 10] };
+  const w = weights[complexity];
+  return fc.inputs * w[0] + fc.outputs * w[1] + fc.inquiries * w[2] + fc.files * w[3] + fc.interfaces * w[4];
+}
+console.log(calculateFunctionPoints({ inputs: 5, outputs: 3, inquiries: 2, files: 4, interfaces: 1 }, "average"));
+
+// === Maintainability Index Calculator ===
+function maintainabilityIndex(halsteadVolume: number, cyclomaticComplexity: number, loc: number): { mi: number; rating: string } {
+  const mi = Math.max(0, 171 - 5.2 * Math.log(halsteadVolume) - 0.23 * cyclomaticComplexity - 16.2 * Math.log(loc));
+  const rating = mi >= 85 ? "good" : mi >= 65 ? "moderate" : "poor";
+  return { mi: Math.round(mi * 100) / 100, rating };
+}
+console.log(maintainabilityIndex(500, 15, 200)); // some value with rating
+
+// === Halstead Metrics Calculator ===
+interface HalsteadResult { n1: number; n2: number; N1: number; N2: number; volume: number; difficulty: number; effort: number }
+function halsteadMetrics(operators: string[], operands: string[]): HalsteadResult {
+  const n1 = new Set(operators).size;
+  const n2 = new Set(operands).size;
+  const N1 = operators.length;
+  const N2 = operands.length;
+  const volume = (N1 + N2) * Math.log2(n1 + n2);
+  const difficulty = (n1 / 2) * (N2 / n2);
+  const effort = difficulty * volume;
+  return { n1, n2, N1, N2, volume: Math.round(volume), difficulty: Math.round(difficulty * 100) / 100, effort: Math.round(effort) };
+}
+const ops = ["+", "+", "*", "/", "=", "=", "if", "return"];
+const opds = ["x", "y", "z", "x", "result", "a", "b", "c"];
+console.log(halsteadMetrics(ops, opds));
+
+// === GQM (Goal-Question-Metric) Framework ===
+interface GQMNode { goal: string; questions: { text: string; metrics: { name: string; formula: string }[] }[] }
+function evaluateGQM(node: GQMNode, measurements: Record<string, number>): { goal: string; satisfaction: number; gaps: string[] } {
+  const gaps: string[] = [];
+  const scores: number[] = [];
+  for (const q of node.questions) {
+    for (const m of q.metrics) {
+      const val = measurements[m.name];
+      if (val === undefined) gaps.push(`Metric '${m.name}' has no data`);
+      else scores.push(val);
+    }
+  }
+  const satisfaction = scores.length > 0 ? scores.reduce((s, v) => s + v, 0) / scores.length : 0;
+  return { goal: node.goal, satisfaction: Math.round(satisfaction * 100) / 100, gaps };
+}
+const gqm: GQMNode = {
+  goal: "Improve software quality",
+  questions: [{ text: "How maintainable is the code?", metrics: [{ name: "maintainability", formula: "MI score" }] }],
+};
+console.log(evaluateGQM(gqm, { maintainability: 82, coverage: 90 }));
+
+// === Defect Removal Efficiency ===
+function dre(defectsFoundBefore: number, defectsFoundAfter: number): number {
+  return defectsFoundBefore + defectsFoundAfter > 0 ? defectsFoundBefore / (defectsFoundBefore + defectsFoundAfter) * 100 : 0;
+}
+console.log(`DRE: ${dre(95, 5).toFixed(1)}%`); // 95%
+```
+
+### TypeScript: Advanced Metrics Tools
+
+```typescript
+// === Halstead Complexity Metrics ===
+interface HalsteadMetrics { n1: number; n2: number; N1: number; N2: number; }
+function calculateHalstead(m: HalsteadMetrics): Record<string, number> {
+  const vocabulary = m.n1 + m.n2;
+  const length = m.N1 + m.N2;
+  const volume = length * Math.log2(vocabulary);
+  const difficulty = (m.n1 / 2) * (m.N2 / m.n2);
+  const effort = difficulty * volume;
+  const time = effort / 18; // seconds
+  const bugs = volume / 3000;
+  return {
+    vocabulary: Math.round(vocabulary),
+    length: Math.round(length),
+    volume: Math.round(volume),
+    difficulty: Math.round(difficulty * 100) / 100,
+    effort: Math.round(effort),
+    timeSec: Math.round(time),
+    bugs: Math.round(bugs * 100) / 100,
+  };
+}
+
+// === Maintainability Index ===
+function maintainabilityIndex(halsteadVolume: number, cyclomaticComplexity: number, linesOfCode: number, commentsPercent: number): number {
+  const rawMI = 171 - 5.2 * Math.log(halsteadVolume) - 0.23 * cyclomaticComplexity - 16.2 * Math.log(linesOfCode);
+  const adjusted = rawMI * (1 + (commentsPercent - 0.2) * 0.1);
+  return Math.round(Math.max(0, Math.min(100, adjusted)));
+}
+
+// === Defect Density Calculator ===
+function defectDensity(defects: number, sizeKLOC: number): string {
+  return `${(defects / sizeKLOC).toFixed(2)} defects/KLOC`;
+}
+
+// === Reliability Metrics ===
+interface ReliabilityData { totalTime: number; failures: number; avgRepairTime: number; }
+function calculateReliability(data: ReliabilityData): { mtbf: number; mttr: number; availability: number } {
+  const mtbf = data.failures > 0 ? data.totalTime / data.failures : data.totalTime;
+  const mttr = data.avgRepairTime;
+  const availability = mtbf / (mtbf + mttr);
+  return { mtbf: Math.round(mtbf), mttr: Math.round(mttr), availability: Math.round(availability * 10000) / 100 };
+}
+
+// === Prediction Accuracy (MRE - Magnitude of Relative Error) ===
+function mre(actual: number, estimated: number): number {
+  return actual > 0 ? Math.abs(actual - estimated) / actual : 0;
+}
+function mmre(actuals: number[], estimates: number[]): number {
+  const mres = actuals.map((a, i) => mre(a, estimates[i]));
+  return Math.round(mres.reduce((s, m) => s + m, 0) / mres.length * 100) / 100;
+}
+
+// === Effort Estimation (COCOMO-style) ===
+function cocomo(sizeKLOC: number, mode: "organic" | "semi-detached" | "embedded"): { effort: number; duration: number; team: number } {
+  const params = { organic: { a: 2.4, b: 1.05, c: 2.5, d: 0.38 }, "semi-detached": { a: 3.0, b: 1.12, c: 2.5, d: 0.35 }, embedded: { a: 3.6, b: 1.20, c: 2.5, d: 0.32 } };
+  const p = params[mode];
+  const effort = p.a * Math.pow(sizeKLOC, p.b);
+  const duration = p.c * Math.pow(effort, p.d);
+  return { effort: Math.round(effort * 10) / 10, duration: Math.round(duration * 10) / 10, team: Math.ceil(effort / duration) };
+}
+
+const halstead = calculateHalstead({ n1: 15, n2: 20, N1: 80, N2: 120 });
+console.log(halstead);
+console.log(maintainabilityIndex(halstead.volume, 15, 500, 0.15)); // ~70-80 range
+console.log(cocomo(50, "semi-detached")); // ~200 person-months, ~14 months, ~14 people
+```
+
 ## Summary
 
 Software metrics provide quantitative data for describing, evaluating, predicting, and improving software processes and products. The GQM paradigm ensures metrics align with goals. Size metrics (LOC, function points) measure scale. Complexity metrics (cyclomatic complexity, Halstead) assess understandability and testability. The Maintainability Index combines multiple metrics into a single maintainability score. Defect metrics track quality across phases. Process metrics measure development efficiency. Metrics collection should be automated, trend-focused, and transparent. Meaningful interpretation requires context, trends over time, and multiple metrics used together.

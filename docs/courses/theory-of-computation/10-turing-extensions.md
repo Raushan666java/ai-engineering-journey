@@ -707,6 +707,111 @@ console.log(`Found ${paths.length} computation paths`);
 console.log(UniversalTM.churchTuringThesis());
 ```
 
+// ─────────────────────────────────────────────────────
+// Multi-Tape TM Converter — simulates a multi-tape TM
+// by encoding k tapes onto a single tape using
+// interleaving and marker symbols.
+// ─────────────────────────────────────────────────────
+
+class MultiTapeTMConverter {
+  // Given k tapes, simulate one step by scanning the
+  // combined tape representation and dispatching per-tape
+  // transitions.
+  static simulate(
+    k: number,
+    transitions: Map<string, Array<{ write: string; direction: "L" | "R"; nextState: string }>>,
+    inputs: string[],
+    maxSteps: number = 100
+  ): { accepted: boolean; tapes: string[]; steps: number } {
+    // Initialize k tapes
+    const tapes = inputs.map(inp => inp.split(""));
+    const heads = new Array(k).fill(0);
+
+    let state = "q0";
+    let steps = 0;
+
+    while (steps < maxSteps) {
+      // Build read key: read symbol from each tape head
+      const readSymbols = heads.map((h, i) => {
+        if (h < 0) return "⊔";
+        if (h >= tapes[i].length) return "⊔";
+        return tapes[i][h] || "⊔";
+      });
+      const key = `${state},${readSymbols.join(",")}`;
+      const trans = transitions.get(key);
+
+      if (!trans) {
+        // No transition = halt
+        return {
+          accepted: state === "qAccept",
+          tapes: tapes.map(t => t.join("")),
+          steps
+        };
+      }
+
+      // Apply transition per tape
+      for (let i = 0; i < k && i < trans.length; i++) {
+        const act = trans[i];
+        if (act.write !== "ε") {
+          if (heads[i] < 0) {
+            tapes[i].unshift(act.write);
+            heads[i] = 0;
+          } else if (heads[i] >= tapes[i].length) {
+            tapes[i].push(act.write);
+          } else {
+            tapes[i][heads[i]] = act.write;
+          }
+        }
+        heads[i] += act.direction === "R" ? 1 : -1;
+      }
+
+      state = trans[0].nextState;
+      steps++;
+    }
+
+    return { accepted: false, tapes: tapes.map(t => t.join("")), steps };
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Universal Turing Machine Concept — demonstrates the
+// Church-Turing thesis by encoding TM descriptions as
+// strings and "simulating" them.
+// ─────────────────────────────────────────────────────
+
+class UniversalTM {
+  static churchTuringThesis(): string[] {
+    return [
+      "Church-Turing Thesis (simplified):",
+      "",
+      "  'Anything that can be computed by an algorithm",
+      "   can be computed by a Turing machine.'",
+      "",
+      "Consequences:",
+      "  • All programming languages are equivalent in power",
+      "    (Turing-complete).",
+      "  • A Universal TM can simulate any other TM given",
+      "    its description ⟨M⟩ and input w.",
+      "  • The UTM is the mathematical model for",
+      "    stored-program computers.",
+      "",
+      "Equivalence of models:",
+      "  Multi-tape TM   →  Single-tape TM (polynomial slowdown)",
+      "  NTM             →  DTM (exponential slowdown)",
+      "  RAM machine     →  TM (polynomial slowdown)",
+      "  Lambda calculus →  TM (Church-Turing)",
+      "  Cellular automaton → TM (Rule 110 is Turing-complete)"
+    ];
+  }
+}
+
+// Demo multi-tape TM (2-tape palindrome checker)
+const mtTrans = new Map<string, Array<{ write: string; direction: "L" | "R"; nextState: string }>>();
+mtTrans.set("q0,1,⊔", [ { write: "ε", direction: "R", nextState: "q0" }, { write: "ε", direction: "L", nextState: "q0" } ]);
+// First tape moves right, second tape starts empty, we just demonstrate the mechanism
+console.log(UniversalTM.churchTuringThesis().join("\n"));
+```
+
 ## Summary
 
 - Recursive languages are decidable (TM always halts); RE languages are recognizable (TM may loop).

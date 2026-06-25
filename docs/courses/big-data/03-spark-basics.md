@@ -877,6 +877,62 @@ console.log(optimalPartitions(1024));  // ~8192 partitions, ~54.62 min
 
 > **Key Insight:** Too few partitions wastes cluster parallelism; too many adds scheduling overhead. The 100-200 MB/partition rule balances both.
 
+### TypeScript: Spark Lineage DAG Builder & Join Strategy Advisor
+
+```typescript
+type JoinType = "broadcast" | "sort-merge" | "shuffle-hash";
+type StorageLevel = "MEMORY_ONLY" | "MEMORY_AND_DISK" | "DISK_ONLY";
+
+interface LineageNode {
+  id: string; operation: string; parents: string[]; estimatedSizeGB: number; storageLevel?: StorageLevel;
+}
+
+class LineageDAG {
+  private nodes: Map<string, LineageNode> = new Map();
+
+  add(id: string, op: string, parents: string[], sizeGB: number, storage?: StorageLevel): void {
+    this.nodes.set(id, { id, operation: op, parents, estimatedSizeGB: sizeGB, storageLevel: storage });
+  }
+
+  recommendJoin(leftSizeGB: number, rightSizeGB: number, broadcastThresholdGB: number = 10): JoinType {
+    if (Math.min(leftSizeGB, rightSizeGB) <= broadcastThresholdGB) return "broadcast";
+    return "sort-merge";
+  }
+
+  estimateShuffleSizeGB(): number {
+    let total = 0;
+    this.nodes.forEach(n => {
+      if (["groupBy", "reduceByKey", "join", "repartition"].some(op => n.operation.includes(op))) {
+        total += n.estimatedSizeGB;
+      }
+    });
+    return Math.round(total * 100) / 100;
+  }
+
+  lineage(id: string, depth: number = 0): string {
+    const node = this.nodes.get(id); if (!node) return "";
+    const indent = "  ".repeat(depth);
+    const storage = node.storageLevel ? ` [${node.storageLevel}]` : "";
+    let result = `${indent}${node.id}: ${node.operation} (${node.estimatedSizeGB}GB)${storage}\n`;
+    node.parents.forEach(p => result += this.lineage(p, depth + 1));
+    return result;
+  }
+}
+
+const dag = new LineageDAG();
+dag.add("1", "read.parquet(path=transactions)", [], 200);
+dag.add("2", "filter(status=completed)", ["1"], 150);
+dag.add("3", "groupBy(category).count()", ["2"], 5);
+dag.add("4", "read.parquet(path=customers)", [], 2);
+dag.add("5", "join(customerId)", ["3", "4"], 5.1);
+
+console.log("Lineage DAG:\n" + dag.lineage("5"));
+console.log("Join (5GB vs 2GB):", dag.recommendJoin(5, 2)); // broadcast
+console.log("Join (200GB vs 150GB):", dag.recommendJoin(200, 150)); // sort-merge
+console.log("Estimated shuffle:", dag.estimateShuffleSizeGB(), "GB");
+```
+```
+
 ## Summary
 
 - RDDs are the low-level building block; DataFrames provide a higher-level, optimized API.

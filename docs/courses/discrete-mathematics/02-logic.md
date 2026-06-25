@@ -483,6 +483,68 @@ console.log('\nTruth table for p XOR q:');
 truthTable(2, v => v[0] !== v[1]);
 ```
 
+```
+// --- Logical Equivalence Checker ---
+function isEquivalent(expr1: (v: boolean[]) => boolean, expr2: (v: boolean[]) => boolean, vars: number): boolean {
+  for (let i = 0; i < (1 << vars); i++) {
+    const vals: boolean[] = [];
+    for (let j = vars - 1; j >= 0; j--) vals.push(Boolean(i & (1 << j)));
+    if (expr1(vals) !== expr2(vals)) return false;
+  }
+  return true;
+}
+// De Morgan's: ¬(p ∧ q) ≡ ¬p ∨ ¬q
+const demorgan = isEquivalent(
+  v => !(v[0] && v[1]),
+  v => !v[0] || !v[1], 2);
+console.log('De Morgan holds:', demorgan);
+
+// --- SAT Solver Helper ---
+function findSatisfying(expr: (v: boolean[]) => boolean, vars: number): boolean[][] {
+  const solutions: boolean[][] = [];
+  for (let i = 0; i < (1 << vars); i++) {
+    const vals: boolean[] = [];
+    for (let j = vars - 1; j >= 0; j--) vals.push(Boolean(i & (1 << j)));
+    if (expr(vals)) solutions.push(vals);
+  }
+  return solutions;
+}
+// (p → q) ∧ (q → r) → (p → r) is a tautology
+const isTautology = (expr: (v: boolean[]) => boolean, vars: number): boolean =>
+  findSatisfying(v => !expr(v), vars).length === 0;
+const tautCheck = isTautology(v => !v[0] || !v[1] || v[2] || !(!v[0] || v[1]) || !(!v[1] || v[2]) || (!v[0] || v[2]), 3);
+console.log('Is tautology:', tautCheck);
+
+// --- CNF/DNF Converter ---
+function toDNF(truthTable: boolean[][]): string {
+  return truthTable.filter(row => row[row.length - 1])
+    .map(row => row.slice(0, -1).map((v, i) => (v ? '' : '¬') + String.fromCharCode(112 + i)).join('∧'))
+    .join('∨');
+}
+function toCNF(truthTable: boolean[][]): string {
+  return truthTable.filter(row => !row[row.length - 1])
+    .map(row => row.slice(0, -1).map((v, i) => (v ? '¬' : '') + String.fromCharCode(112 + i)).join('∨'))
+    .join('∧');
+}
+// XOR truth table: p q | p⊕q
+const xorTT: boolean[][] = [[true,true,false],[true,false,true],[false,true,true],[false,false,false]];
+console.log('\nXOR DNF:', toDNF(xorTT), 'XOR CNF:', toCNF(xorTT));
+
+// --- Modus Ponens Validator ---
+function isValidArgument(premises: ((v: boolean[]) => boolean)[], conclusion: (v: boolean[]) => boolean, vars: number): boolean {
+  for (let i = 0; i < (1 << vars); i++) {
+    const vals: boolean[] = [];
+    for (let j = vars - 1; j >= 0; j--) vals.push(Boolean(i & (1 << j)));
+    if (premises.every(p => p(vals)) && !conclusion(vals)) return false;
+  }
+  return true;
+}
+// If p→q and p are true, then q must be true
+console.log('\nModus ponens valid:', isValidArgument(
+  [v => !v[0] || v[1], v => v[0]],
+  v => v[1], 2));
+```
+
 ## Summary
 
 - Propositions are T/F statements. Logical connectives combine them into compound propositions.

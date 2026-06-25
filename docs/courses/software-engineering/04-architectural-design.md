@@ -663,6 +663,174 @@ class ADRManager {
 
 **Answer: B** — Blue-green allows instant rollback by switching traffic back to the previous environment.
 
+### TypeScript: Architecture Analysis Tools
+
+```typescript
+// === Architecture Style Comparator ===
+interface ArchStyle {
+  name: string;
+  coupling: "low" | "medium" | "high";
+  cohesion: "low" | "medium" | "high";
+  scalability: "low" | "medium" | "high";
+  deployability: "low" | "medium" | "high";
+  complexity: "low" | "medium" | "high";
+  latency: "low" | "medium" | "high";
+}
+const archStyles: ArchStyle[] = [
+  { name: "Layered", coupling: "low", cohesion: "medium", scalability: "medium", deployability: "low", complexity: "low", latency: "low" },
+  { name: "Microservices", coupling: "low", cohesion: "high", scalability: "high", deployability: "high", complexity: "high", latency: "high" },
+  { name: "Event-Driven", coupling: "low", cohesion: "high", scalability: "high", deployability: "medium", complexity: "high", latency: "medium" },
+  { name: "Pipe-and-Filter", coupling: "low", cohesion: "high", scalability: "medium", deployability: "medium", complexity: "medium", latency: "medium" },
+  { name: "Client-Server", coupling: "high", cohesion: "low", scalability: "medium", deployability: "medium", complexity: "low", latency: "low" },
+  { name: "Monolithic", coupling: "high", cohesion: "high", scalability: "low", deployability: "low", complexity: "low", latency: "low" },
+];
+
+function compareStyles(a: string, b: string): Record<string, { a: string; b: string }> {
+  const sa = archStyles.find((s) => s.name === a);
+  const sb = archStyles.find((s) => s.name === b);
+  if (!sa || !sb) return {};
+  const result: Record<string, { a: string; b: string }> = {};
+  for (const key of ["coupling", "cohesion", "scalability", "deployability", "complexity", "latency"] as (keyof ArchStyle)[]) {
+    if (key === "name") continue;
+    if (sa[key] !== sb[key]) result[key] = { a: sa[key], b: sb[key] };
+  }
+  return result;
+}
+console.log(compareStyles("Monolithic", "Microservices"));
+
+// === Quality Attribute Scorer ===
+interface QAScenario {
+  attribute: "performance" | "availability" | "security" | "maintainability" | "usability" | "scalability";
+  metric: string;
+  target: number;
+  actual: number;
+}
+function scoreAttributes(scenarios: QAScenario[]): { ok: number; failing: QAScenario[] } {
+  const failing = scenarios.filter((s) => s.actual < s.target);
+  return { ok: scenarios.length - failing.length, failing };
+}
+const qaScenarios: QAScenario[] = [
+  { attribute: "performance", metric: "Response time (ms)", target: 200, actual: 150 },
+  { attribute: "availability", metric: "Uptime (%)", target: 99.9, actual: 99.5 },
+  { attribute: "security", metric: "Auth bypass", target: 0, actual: 0 },
+];
+console.log(scoreAttributes(qaScenarios));
+
+// === Trade-off Analyzer ===
+interface Decision {
+  option: string;
+  pros: string[];
+  cons: string[];
+  cost: number;
+}
+function analyzeTradeoff(decisions: Decision[]): string[] {
+  return decisions.map((d) => {
+    const score = d.pros.length * 2 - d.cons.length - d.cost / 1000;
+    return `${d.option}: score=${score > 0 ? "+" : ""}${score.toFixed(1)} (${d.pros.length} pros, ${d.cons.length} cons, cost=$${d.cost})`;
+  });
+}
+const archDecisions: Decision[] = [
+  { option: "Microservices", pros: ["Independent deploy", "Team autonomy", "Tech diversity"], cons: ["Network complexity", "Data consistency", "DevOps burden"], cost: 50000 },
+  { option: "Monolith", pros: ["Simple dev", "Single deploy", "Strong consistency"], cons: ["Scaling limits", "Team coupling", "Tech lock-in"], cost: 10000 },
+];
+console.log(analyzeTradeoff(archDecisions));
+
+// === ADR Generator ===
+interface ADR {
+  title: string;
+  context: string;
+  decision: string;
+  alternatives: string[];
+  consequences: string[];
+}
+function formatADR(adr: ADR): string {
+  return [
+    `# ADR: ${adr.title}`,
+    `## Context\n${adr.context}`,
+    `## Decision\n${adr.decision}`,
+    `## Alternatives Considered\n${adr.alternatives.map((a) => `- ${a}`).join("\n")}`,
+    `## Consequences\n${adr.consequences.map((c) => `- ${c}`).join("\n")}`,
+  ].join("\n\n");
+}
+console.log(formatADR({
+  title: "Use PostgreSQL for primary data store",
+  context: "Need ACID-compliant relational storage with JSONB support",
+  decision: "Adopt PostgreSQL 16",
+  alternatives: ["MySQL 8", "MongoDB 7"],
+  consequences: ["Strong data integrity", "JSONB for flexible schemas", "Higher operational cost vs MySQL"],
+}));
+```
+
+### TypeScript: Architecture Evaluation Tools
+
+```typescript
+// === Architecture Style Evaluator ===
+interface QualityAttribute { name: string; weight: number; }
+interface ArchitectureStyle { name: string; scores: Record<string, number>; }
+
+function evaluateArchitecture(styles: ArchitectureStyle[], attributes: QualityAttribute[]): { name: string; total: number }[] {
+  return styles.map(style => {
+    const total = attributes.reduce((sum, attr) => sum + (style.scores[attr.name] ?? 0) * attr.weight, 0);
+    return { name: style.name, total: Math.round(total * 10) / 10 };
+  }).sort((a, b) => b.total - a.total);
+}
+
+// === Architectural Decision Record ===
+interface ADR { id: string; title: string; status: "Proposed" | "Accepted" | "Deprecated" | "Superseded"; context: string; decision: string; consequences: string[]; }
+function createADR(title: string, context: string, decision: string, consequences: string[]): ADR {
+  return { id: `ADR-${Date.now()}`, title, status: "Proposed", context, decision, consequences };
+}
+function supersedeADR(adr: ADR, newADR: ADR): void { adr.status = "Superseded"; }
+
+// === Module Dependency Analyzer ===
+interface Module { name: string; dependsOn: string[]; }
+function detectCycles(modules: Module[]): string[][] {
+  const cycles: string[][] = [];
+  const visited = new Set<string>();
+  const inStack = new Set<string>();
+  const dfs = (name: string, path: string[]) => {
+    if (inStack.has(name)) {
+      const cycleStart = path.indexOf(name);
+      cycles.push(path.slice(cycleStart));
+      return;
+    }
+    if (visited.has(name)) return;
+    visited.add(name);
+    inStack.add(name);
+    const mod = modules.find(m => m.name === name);
+    if (mod) for (const dep of mod.dependsOn) dfs(dep, [...path, dep]);
+    inStack.delete(name);
+  };
+  for (const mod of modules) dfs(mod.name, [mod.name]);
+  return cycles;
+}
+
+function computeLayeredArchitecture(modules: Module[]): Map<string, number> {
+  const layers = new Map<string, number>();
+  const visited = new Set<string>();
+  function assign(name: string): number {
+    if (layers.has(name)) return layers.get(name)!;
+    if (visited.has(name)) return 0;
+    visited.add(name);
+    const mod = modules.find(m => m.name === name);
+    if (!mod || mod.dependsOn.length === 0) { layers.set(name, 0); return 0; }
+    const maxLayer = Math.max(...mod.dependsOn.map(assign)) + 1;
+    layers.set(name, maxLayer);
+    return maxLayer;
+  }
+  for (const mod of modules) assign(mod.name);
+  return layers;
+}
+
+const mods: Module[] = [
+  { name: "UI", dependsOn: ["Service"] },
+  { name: "Service", dependsOn: ["DataAccess"] },
+  { name: "DataAccess", dependsOn: ["Database"] },
+  { name: "Database", dependsOn: [] },
+];
+console.log(computeLayeredArchitecture(mods)); // UI:2, Service:1, DataAccess:0, Database:0
+```
+
 ## Summary
 
 Architectural design defines the high-level structure of a software system. Major patterns include layered architecture for separation of concerns, MVC for interactive systems, repository for data-centric systems, client-server for distributed systems, pipe-and-filter for data processing, microservices for independent deployability, event-driven for reactive systems, and broker for distribution transparency. Each pattern has specific benefits and costs — selection should be guided by quality attribute requirements documented through scenarios. Application architectures vary by domain: transaction processing emphasises ACID guarantees, information systems focus on data management, and language processing systems follow a pipe-and-filter structure. Architectural decisions should be documented with ADRs.

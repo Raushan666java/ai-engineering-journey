@@ -487,6 +487,81 @@ function verifyFibonacciBound(upTo: number): boolean {
 console.log('Fibonacci bound holds n≤20:', verifyFibonacciBound(20)); // true
 ```
 
+```
+// --- Induction Step Generator ---
+function proveInduction<T>(
+  baseCase: T,
+  inductiveStep: (k: T) => T,
+  property: (n: T) => boolean,
+  upTo: number,
+  from: T,
+  next: (x: T) => T): boolean {
+  let current = from;
+  for (let i = 0; i <= upTo; i++) {
+    if (!property(current)) return false;
+    current = next(current);
+  }
+  return true;
+}
+// Prove: sum(1..n) = n(n+1)/2 for n = 0..20
+const sumFormula = (n: number) => (n * (n + 1)) / 2;
+const sumProperty = (n: number) => {
+  let s = 0;
+  for (let i = 1; i <= n; i++) s += i;
+  return s === sumFormula(n);
+};
+console.log('Induction (sum 1..n = n(n+1)/2) holds n≤20:', proveInduction(0, (k: number) => k + 1, sumProperty, 20, 0, (x: number) => x + 1));
+
+// --- Contradiction Checker ---
+function proofByContradiction(assumptions: (() => boolean)[], conclusion: () => boolean): { valid: boolean; counterexample?: string } {
+  // If assuming ¬conclusion leads to contradiction, conclusion holds
+  const allTrue = assumptions.every(a => a()) && !conclusion();
+  if (allTrue) return { valid: false, counterexample: 'No contradiction found' };
+  return { valid: true };
+}
+// √2 is irrational: assume rational leads to contradiction
+const sqrt2Rational = () => {
+  for (let p = 1; p <= 100; p++)
+    for (let q = 1; q <= 100; q++)
+      if (p * p === 2 * q * q) return true;
+  return false;
+};
+console.log('\n√2 irrational (no p,q≤100 with p²=2q²):', !sqrt2Rational());
+
+// --- Structural Induction on Trees ---
+type Tree<T> = { tag: 'leaf'; val: T } | { tag: 'node'; val: T; left: Tree<T>; right: Tree<T> };
+function treeSize<T>(t: Tree<T>): number {
+  return t.tag === 'leaf' ? 1 : 1 + treeSize(t.left) + treeSize(t.right);
+}
+function treeDepth<T>(t: Tree<T>): number {
+  return t.tag === 'leaf' ? 1 : 1 + Math.max(treeDepth(t.left), treeDepth(t.right));
+}
+// Structural induction: size ≤ 2^depth - 1 for full binary trees
+function isFull<T>(t: Tree<T>): boolean {
+  if (t.tag === 'leaf') return true;
+  return isFull(t.left) && isFull(t.right);
+}
+function checkStructuralBound<T>(t: Tree<T>): boolean {
+  if (!isFull(t)) return true; // property only applies to full trees
+  return treeSize(t) <= Math.pow(2, treeDepth(t)) - 1;
+}
+const fullTree: Tree<number> = {
+  tag: 'node', val: 1,
+  left: { tag: 'node', val: 2, left: { tag: 'leaf', val: 4 }, right: { tag: 'leaf', val: 5 } },
+  right: { tag: 'leaf', val: 3 }
+};
+console.log('\nFull tree size-depth bound holds:', checkStructuralBound(fullTree));
+
+// --- Counterexample Finder ---
+function findCounterexample<T>(domain: T[], property: (x: T) => boolean): T | null {
+  return domain.find(x => !property(x)) ?? null;
+}
+// Claim: all primes are odd (counterexample: 2)
+const isOdd = (n: number) => n % 2 !== 0;
+const primes = [2, 3, 5, 7, 11, 13];
+console.log('\nCounterexample to "all primes are odd":', findCounterexample(primes, isOdd));
+```
+
 ## Summary
 
 - Direct proof: assume hypothesis, derive conclusion.

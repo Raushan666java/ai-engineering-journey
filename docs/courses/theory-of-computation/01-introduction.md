@@ -590,6 +590,130 @@ console.log(generateStrings(ChomskyType.Type3, 5));     // ["", "a", "aa", "aaa"
 console.log(generateStrings(ChomskyType.Type2, 4));     // ["", "ab", "aabb", "aaabbb"]
 ```
 
+// ──────────────────────────────────────────────
+// Formal Language Type Checker — validates that
+// a given grammar belongs to the claimed type
+// in the Chomsky hierarchy.
+// ──────────────────────────────────────────────
+
+type Production = { lhs: string; rhs: string };
+type LanguageType = 0 | 1 | 2 | 3;
+
+class LanguageTypeChecker {
+  private productions: Production[];
+
+  constructor(productions: Production[]) {
+    this.productions = productions;
+  }
+
+  // Check if grammar satisfies Type-3 (regular) constraints:
+  // All productions must be of form A → aB or A → a (right-linear)
+  // or A → Ba or A → a (left-linear), and mix is forbidden.
+  isRegular(): boolean {
+    const rightLinear = this.productions.every(
+      p => /^[A-Z]$/.test(p.lhs) &&
+           (p.rhs.length === 1 && /^[a-z]$/.test(p.rhs) ||
+            p.rhs.length === 2 && /^[a-z][A-Z]$/.test(p.rhs))
+    );
+    const leftLinear = this.productions.every(
+      p => /^[A-Z]$/.test(p.lhs) &&
+           (p.rhs.length === 1 && /^[a-z]$/.test(p.rhs) ||
+            p.rhs.length === 2 && /^[A-Z][a-z]$/.test(p.rhs))
+    );
+    return rightLinear || leftLinear;
+  }
+
+  // Check if grammar satisfies Type-2 (context-free) constraints:
+  // LHS must be a single nonterminal.
+  isContextFree(): boolean {
+    return this.productions.every(p => /^[A-Z]$/.test(p.lhs));
+  }
+
+  // Check if grammar satisfies Type-1 (context-sensitive) constraints:
+  // RHS length ≥ LHS length (non-contracting), and LHS may have context.
+  // For simplicity, we check |lhs| ≤ |rhs|.
+  isContextSensitive(): boolean {
+    return this.productions.every(p => p.lhs.length <= p.rhs.length);
+  }
+
+  // Check if grammar satisfies Type-0 (unrestricted):
+  // No constraints — any production form is allowed.
+  isUnrestricted(): boolean {
+    return true;
+  }
+
+  // Infer the strictest type this grammar belongs to.
+  inferType(): LanguageType {
+    if (this.isRegular()) return 3;
+    if (this.isContextFree()) return 2;
+    if (this.isContextSensitive()) return 1;
+    return 0;
+  }
+
+  // Report the classification with explanation.
+  classify(name: string): string[] {
+    const output: string[] = [];
+    output.push(`Grammar: ${name}`);
+    output.push(`  Regular (Type-3): ${this.isRegular()}`);
+    output.push(`  Context-Free (Type-2): ${this.isContextFree()}`);
+    output.push(`  Context-Sensitive (Type-1): ${this.isContextSensitive()}`);
+    output.push(`  Unrestricted (Type-0): ${this.isUnrestricted()}`);
+    output.push(`  Inferred type: Type-${this.inferType()}`);
+    return output;
+  }
+}
+
+// ──────────────────────────────────────────────
+// Chomsky Hierarchy Visualizer — generates a
+// textual representation of the hierarchy.
+// ──────────────────────────────────────────────
+
+class ChomskyHierarchyRenderer {
+  static render(): string[] {
+    return [
+      "╔══════════════════════════════════════════╗",
+      "║     Chomsky Hierarchy (Classification)  ║",
+      "╠══════════════════════════════════════════╣",
+      "║  Type-0: Unrestricted                    ║",
+      "║    ↳ Recursively enumerable languages    ║",
+      "║    ↳ Recognized by Turing machines       ║",
+      "║         ↓                                ║",
+      "║  Type-1: Context-Sensitive               ║",
+      "║    ↳ Recognized by LBA                   ║",
+      "║    ↳ A context → B context substitutions ║",
+      "║         ↓                                ║",
+      "║  Type-2: Context-Free                    ║",
+      "║    ↳ Recognized by PDA                   ║",
+      "║    ↳ A → α (single nonterminal LHS)      ║",
+      "║         ↓                                ║",
+      "║  Type-3: Regular                         ║",
+      "║    ↳ Recognized by DFA / NFA             ║",
+      "║    ↳ A → aB | a (right-linear)           ║",
+      "╚══════════════════════════════════════════╝"
+    ];
+  }
+}
+
+// Demo
+const rg = [
+  { lhs: "S", rhs: "aA" }, { lhs: "A", rhs: "bS" }, { lhs: "A", rhs: "b" }
+];
+const cf = [
+  { lhs: "S", rhs: "aSb" }, { lhs: "S", rhs: "ab" }
+];
+const cs = [
+  { lhs: "aS", rhs: "aBC" }, { lhs: "CB", rhs: "BC" }
+];
+
+console.log(new LanguageTypeChecker(rg).classify("Regular Grammar (right-linear)").join("\n"));
+console.log("");
+console.log(new LanguageTypeChecker(cf).classify("Context-Free Grammar").join("\n"));
+console.log("");
+console.log(new LanguageTypeChecker(cs).classify("Context-Sensitive Grammar").join("\n"));
+console.log("");
+console.log(ChomskyHierarchyRenderer.render().join("\n"));
+```
+
 ## Summary
 
 The Theory of Computation provides the mathematical foundations for understanding what computers can and cannot do. Key concepts include:

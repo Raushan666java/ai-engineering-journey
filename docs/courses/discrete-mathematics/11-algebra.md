@@ -420,6 +420,73 @@ const result = composePerm(id, t12);
 console.log('Identity ∘ (1 2):', result); // [1,0,2]
 ```
 
+```
+console.log('Group check (Z₅ₓ):', isGroup(multTable_mod5x));
+console.log('Abelian:', isAbelian(multTable_mod5x));
+console.log('Identity of Z₅ₓ:', findIdentity(multTable_mod5x));
+console.log('Inverses:', multTable_mod5x.map((r, i) => `${i}: ${findInverse(multTable_mod5x, i)}`).join(', '));
+
+// --- Subgroup Checker ---
+function isSubgroup(groupTable: number[][], subset: number[]): boolean {
+  const identity = findIdentity(groupTable);
+  if (!subset.includes(identity)) return false;
+  for (const a of subset) {
+    const inv = findInverse(groupTable, a);
+    if (!subset.includes(inv)) return false;
+    for (const b of subset)
+      if (!subset.includes(groupTable[a][b])) return false;
+  }
+  return true;
+}
+console.log('\n{1,4} subgroup of Z₅ₓ:', isSubgroup(multTable_mod5x, [1, 4]));
+console.log('{1,2,4} subgroup of Z₅ₓ:', isSubgroup(multTable_mod5x, [1, 2, 4]));
+
+// --- Ring Property Checker ---
+function isRing(addTable: number[][], mulTable: number[][], set: number[]): boolean {
+  const addAssoc = set.every(a => set.every(b => set.every(c =>
+    addTable[addTable[a][b]][c] === addTable[a][addTable[b][c]])));
+  const addComm = set.every(a => set.every(b => addTable[a][b] === addTable[b][a]));
+  const identity = addTable.some((r, i) => set.every(a => addTable[a][i] === a));
+  const mulAssoc = set.every(a => set.every(b => set.every(c =>
+    mulTable[mulTable[a][b]][c] === mulTable[a][mulTable[b][c]])));
+  const distrib = set.every(a => set.every(b => set.every(c =>
+    mulTable[a][addTable[b][c]] === addTable[mulTable[a][b]][mulTable[a][c]])));
+  return addAssoc && addComm && identity !== false && mulAssoc && distrib;
+}
+const Z4_add = [[0,1,2,3],[1,2,3,0],[2,3,0,1],[3,0,1,2]];
+const Z4_mul = [[0,0,0,0],[0,1,2,3],[0,2,0,2],[0,3,2,1]];
+console.log('\nZ₄ is a ring:', isRing(Z4_add, Z4_mul, [0,1,2,3]));
+
+// --- Field Checker ---
+function isField(addTable: number[][], mulTable: number[][], set: number[]): boolean {
+  if (!isRing(addTable, mulTable, set)) return false;
+  const zero = addTable.findIndex((r, i) => set.every(a => addTable[a][i] === a));
+  const nonzero = set.filter(x => x !== zero);
+  const mulInv = nonzero.every(a => nonzero.some(b => mulTable[a][b] === set[nonzero[0]]));
+  return mulInv;
+}
+const F5_add = Array.from({length:5}, (_,i) => Array.from({length:5}, (_,j) => (i+j)%5));
+const F5_mul = Array.from({length:5}, (_,i) => Array.from({length:5}, (_,j) => (i*j)%5));
+console.log('ℤ₅ is a field:', isField(F5_add, F5_mul, [0,1,2,3,4]));
+
+// --- Group Homomorphism Checker ---
+function isHomomorphism(f: (x: number) => number, opG: (a: number, b: number) => number, opH: (a: number, b: number) => number, domain: number[]): boolean {
+  return domain.every(a => domain.every(b => f(opG(a, b)) === opH(f(a), f(b))));
+}
+const addMod6 = (a: number, b: number) => (a + b) % 6;
+const addMod3 = (a: number, b: number) => (a + b) % 3;
+const fMod = (x: number) => x % 3;
+console.log('\nf(x)=x mod 3 is homomorphism ℤ₆→ℤ₃:', isHomomorphism(fMod, addMod6, addMod3, [0,1,2,3,4,5]));
+
+// --- Cayley Table Pretty Printer ---
+function printCayley(table: number[][], label: string): void {
+  console.log(`\n${label}:`);
+  console.log('  ' + table.map((_, i) => i).join(' '));
+  table.forEach((row, i) => console.log(i + ' ' + row.join(' ')));
+}
+printCayley(multTable_mod5x, 'Cayley Table of ℤ₅ₓ');
+```
+
 ## Summary
 
 - Binary operations combine two elements; properties define the algebraic structure.

@@ -841,6 +841,167 @@ const enriched = employees.map((e) => ({
 }));
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === TypedArray Operations (NumPy ndarray equivalent) ===
+class TypedArrayOps {
+  static zeros(n: number): Float64Array { return new Float64Array(n); }
+  static ones(n: number): Float64Array { const a = new Float64Array(n); a.fill(1); return a; }
+  static arange(start: number, end: number, step = 1): Float64Array {
+    const len = Math.ceil((end - start) / step);
+    const a = new Float64Array(len);
+    for (let i = 0; i < len; i++) a[i] = start + i * step;
+    return a;
+  }
+  static add(a: Float64Array, b: Float64Array): Float64Array {
+    const r = new Float64Array(a.length);
+    for (let i = 0; i < a.length; i++) r[i] = a[i] + b[i];
+    return r;
+  }
+  static multiply(a: Float64Array, b: Float64Array): Float64Array {
+    const r = new Float64Array(a.length);
+    for (let i = 0; i < a.length; i++) r[i] = a[i] * b[i];
+    return r;
+  }
+  static sum(a: Float64Array): number { return Array.from(a).reduce((s, v) => s + v, 0); }
+  static mean(a: Float64Array): number { return TypedArrayOps.sum(a) / a.length; }
+  static max(a: Float64Array): number { return Math.max(...a); }
+  static min(a: Float64Array): number { return Math.min(...a); }
+}
+const arr1 = TypedArrayOps.arange(0, 5);
+const arr2 = TypedArrayOps.ones(5);
+console.log([...TypedArrayOps.add(arr1, arr2)]); // [1,2,3,4,5]
+
+// === Matrix Operations ===
+class MatrixOps {
+  static dot(a: number[][], b: number[][]): number[][] {
+    const result: number[][] = Array.from({ length: a.length }, () => Array(b[0].length).fill(0));
+    for (let i = 0; i < a.length; i++)
+      for (let j = 0; j < b[0].length; j++)
+        for (let k = 0; k < b.length; k++)
+          result[i][j] += a[i][k] * b[k][j];
+    return result;
+  }
+  static transpose(m: number[][]): number[][] {
+    return m[0].map((_, i) => m.map((r) => r[i]));
+  }
+  static identity(n: number): number[][] {
+    return Array.from({ length: n }, (_, i) => Array.from({ length: n }, (_, j) => i === j ? 1 : 0));
+  }
+}
+const m1 = [[1, 2], [3, 4]];
+const m2 = [[5, 6], [7, 8]];
+console.log(MatrixOps.dot(m1, m2)); // [[19,22],[43,50]]
+console.log(MatrixOps.transpose(m1)); // [[1,3],[2,4]]
+
+// === Statistics Helper ===
+class StatsHelper {
+  static mean(arr: number[]): number { return arr.reduce((s, v) => s + v, 0) / arr.length; }
+  static median(arr: number[]): number {
+    const sorted = [...arr].sort((a, b) => a - b);
+    const mid = Math.floor(sorted.length / 2);
+    return sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid];
+  }
+  static std(arr: number[]): number {
+    const m = StatsHelper.mean(arr);
+    return Math.sqrt(arr.reduce((s, v) => s + (v - m) ** 2, 0) / arr.length);
+  }
+  static percentile(arr: number[], p: number): number {
+    const sorted = [...arr].sort((a, b) => a - b);
+    const idx = (p / 100) * (sorted.length - 1);
+    const lo = Math.floor(idx);
+    const hi = Math.ceil(idx);
+    return lo === hi ? sorted[lo] : sorted[lo] + (sorted[hi] - sorted[lo]) * (idx - lo);
+  }
+}
+console.log(StatsHelper.mean([1, 2, 3, 4, 5]));  // 3
+console.log(StatsHelper.median([1, 2, 3, 4, 5])); // 3
+console.log(StatsHelper.percentile([1, 2, 3, 4, 5], 90)); // 4.6
+```
+
+### TypeScript Data Processing Patterns
+
+```typescript
+// === Python NumPy array operations in TypeScript ===
+interface TypedArray { data: number[]; shape: number[]; }
+function array(data: number[], shape?: number[]): TypedArray {
+  return { data, shape: shape ?? [data.length] };
+}
+function reshape(arr: TypedArray, ...shape: number[]): TypedArray {
+  const total = shape.reduce((a, b) => a * b, 1);
+  if (total !== arr.data.length) throw new Error("Shape mismatch");
+  return { data: [...arr.data], shape };
+}
+function zeros(...shape: number[]): TypedArray {
+  const total = shape.reduce((a, b) => a * b, 1);
+  return { data: Array(total).fill(0), shape };
+}
+function ones(...shape: number[]): TypedArray {
+  const total = shape.reduce((a, b) => a * b, 1);
+  return { data: Array(total).fill(1), shape };
+}
+function arange(stop: number): TypedArray {
+  return { data: Array.from({ length: stop }, (_, i) => i), shape: [stop] };
+}
+function add(a: TypedArray, b: TypedArray): TypedArray {
+  return { data: a.data.map((v, i) => v + b.data[i % b.data.length]), shape: a.shape };
+}
+function mult(a: TypedArray, b: TypedArray): TypedArray {
+  return { data: a.data.map((v, i) => v * b.data[i % b.data.length]), shape: a.shape };
+}
+const a = arange(12);
+const b = ones(2, 6);
+console.log(a.data);
+console.log(mult(a, array([2, 3])));
+
+// === DataFrame Operations (Python: pandas) ===
+interface DataFrame { columns: string[]; rows: Record<string, unknown>[]; }
+function DataFrame(columns: string[], data: unknown[][]): DataFrame {
+  return { columns, rows: data.map(row => Object.fromEntries(columns.map((c, i) => [c, row[i]]))) };
+}
+function head(df: DataFrame, n = 5): DataFrame {
+  return { columns: df.columns, rows: df.rows.slice(0, n) };
+}
+function filterRows(df: DataFrame, pred: (row: Record<string, unknown>) => boolean): DataFrame {
+  return { columns: df.columns, rows: df.rows.filter(pred) };
+}
+function select(df: DataFrame, ...cols: string[]): DataFrame {
+  return { columns: cols, rows: df.rows.map(r => Object.fromEntries(cols.map(c => [c, r[c]]))) };
+}
+function sortBy(df: DataFrame, col: string, desc = false): DataFrame {
+  return { columns: df.columns, rows: [...df.rows].sort((a, b) => {
+    const ca = a[col] as number, cb = b[col] as number;
+    return desc ? cb - ca : ca - cb;
+  })};
+}
+function groupBy(df: DataFrame, col: string): Map<string, DataFrame> {
+  const groups = new Map<string, typeof df.rows>();
+  for (const row of df.rows) {
+    const key = String(row[col]);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key)!.push(row);
+  }
+  const result = new Map<string, DataFrame>();
+  for (const [key, rows] of groups) result.set(key, { columns: df.columns, rows });
+  return result;
+}
+const df = DataFrame(["name", "age", "city"], [
+  ["Alice", 30, "NYC"], ["Bob", 25, "London"], ["Carol", 35, "Tokyo"], ["Dave", 28, "NYC"]
+]);
+console.log(filterRows(df, r => (r.age as number) > 28));
+console.log(select(df, "name", "city"));
+
+// === Statistics helpers ===
+function mean(arr: number[]): number { return arr.reduce((s, v) => s + v, 0) / arr.length; }
+function std(arr: number[]): number {
+  const m = mean(arr);
+  return Math.sqrt(arr.reduce((s, v) => s + (v - m) ** 2, 0) / arr.length);
+}
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log({ mean: mean(nums), std: std(nums) });
+```
+
 ## Summary
 
 - NumPy arrays enable efficient vectorised computation with broadcasting.

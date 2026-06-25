@@ -480,6 +480,75 @@ const [lo, hi] = credibleInterval(post.αPost, post.βPost);
 console.log(`95% credible interval: [${lo.toFixed(3)}, ${hi.toFixed(3)}]`);
 ```
 
+```
+// --- Probability Distribution Functions ---
+function normalPDF(x: number, μ: number, σ: number): number {
+  return (1 / (σ * Math.sqrt(2 * Math.PI))) * Math.exp(-0.5 * ((x - μ) / σ) ** 2);
+}
+function normalCDF(x: number, μ: number = 0, σ: number = 1): number {
+  return 0.5 * (1 + erf((x - μ) / (σ * Math.SQRT2)));
+}
+function erf(x: number): number {
+  const a1 = 0.254829592, a2 = -0.284496736, a3 = 1.421413741, a4 = -1.453152027, a5 = 1.061405429, p = 0.3275911;
+  const sign = x >= 0 ? 1 : -1;
+  x = Math.abs(x);
+  const t = 1 / (1 + p * x);
+  return sign * (1 - (a1 * t + a2 * t * t + a3 * t ** 3 + a4 * t ** 4 + a5 * t ** 5) * Math.exp(-x * x));
+}
+console.log('N(0,1) PDF at x=0:', normalPDF(0, 0, 1).toFixed(4), '(expected: 0.3989)');
+console.log('N(0,1) CDF at x=1.96:', normalCDF(1.96).toFixed(4), '(expected: 0.975)');
+
+// --- t-Distribution and Hypothesis Testing ---
+function tStatistic(sample: number[], μ0: number): { t: number; df: number; pValue: number } {
+  const n = sample.length, mean = sample.reduce((s, v) => s + v, 0) / n;
+  const variance = sample.reduce((s, v) => s + (v - mean) ** 2, 0) / (n - 1);
+  const se = Math.sqrt(variance / n);
+  const t = (mean - μ0) / se;
+  // Approximate p-value using normal for large df
+  const pValue = 2 * (1 - normalCDF(Math.abs(t)));
+  return { t: +t.toFixed(4), df: n - 1, pValue: +pValue.toFixed(4) };
+}
+const tResult = tStatistic([2.1, 2.4, 2.3, 2.2, 2.5, 2.3, 2.0, 2.6], 2.0);
+console.log('\nOne-sample t-test (H₀: μ=2.0): t=', tResult.t, 'p=', tResult.pValue);
+
+// --- Chi-Squared Goodness of Fit ---
+function chiSquared(observed: number[], expected: number[]): { χ²: number; pValue: number } {
+  const χ² = observed.reduce((s, o, i) => s + (o - expected[i]) ** 2 / expected[i], 0);
+  const df = observed.length - 1;
+  // Approximate p-value
+  const pValue = 1 - normalCDF((χ² - df) / Math.sqrt(2 * df));
+  return { χ²: +χ².toFixed(4), pValue: +pValue.toFixed(4) };
+}
+// Fair die? Observed rolls: [18, 22, 20, 19, 21, 20], expected: 20 each
+const chi = chiSquared([18, 22, 20, 19, 21, 20], [20, 20, 20, 20, 20, 20]);
+console.log('\nχ² goodness of fit (die): χ²=', chi.χ², 'p=', chi.pValue);
+
+// --- Correlation and Covariance ---
+function covariance(xs: number[], ys: number[]): number {
+  const n = xs.length;
+  const mx = xs.reduce((s, v) => s + v, 0) / n, my = ys.reduce((s, v) => s + v, 0) / n;
+  return xs.reduce((s, x, i) => s + (x - mx) * (ys[i] - my), 0) / (n - 1);
+}
+function correlation(xs: number[], ys: number[]): number {
+  const sx = Math.sqrt(xs.reduce((s, v, i) => s + (v - xs.reduce((a, b) => a + b, 0) / xs.length) ** 2, 0) / (xs.length - 1));
+  const sy = Math.sqrt(ys.reduce((s, v, i) => s + (v - ys.reduce((a, b) => a + b, 0) / ys.length) ** 2, 0) / (ys.length - 1));
+  return covariance(xs, ys) / (sx * sy);
+}
+const xData = [1, 2, 3, 4, 5], yData = [2, 4, 5, 4, 6];
+console.log('\nCovariance(x,y):', covariance(xData, yData).toFixed(4));
+console.log('Correlation r:', correlation(xData, yData).toFixed(4));
+
+// --- Confidence Interval ---
+function confidenceInterval(data: number[], level: number = 0.95): { lower: number; upper: number; mean: number } {
+  const n = data.length, mean = data.reduce((s, v) => s + v, 0) / n;
+  const se = Math.sqrt(data.reduce((s, v) => s + (v - mean) ** 2, 0) / (n - 1)) / Math.sqrt(n);
+  const z = level === 0.99 ? 2.576 : level === 0.95 ? 1.96 : 1.645;
+  return { lower: +(-z * se + mean).toFixed(4), upper: +(z * se + mean).toFixed(4), mean: +mean.toFixed(4) };
+}
+const ci = confidenceInterval([2.1, 2.4, 2.3, 2.2, 2.5, 2.3, 2.0, 2.6], 0.95);
+console.log('\n95% CI:', `[${ci.lower}, ${ci.upper}], mean=${ci.mean}`);
+```
+
 ## Summary
 
 - Probability quantifies uncertainty via Kolmogorov's axioms

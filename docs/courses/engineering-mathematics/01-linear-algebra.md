@@ -596,6 +596,95 @@ const { L, U } = luDec([[4, 3], [6, 3]]);
 console.log(`LU: det = ${L.map((r, i) => r.reduce((p, l, j) => p * (i === j ? U[i][j] : 1), 1)).reduce((a, b) => a * b, 1)} (should be -6)`);
 ```
 
+```
+// --- Cofactor Expansion for Determinant ---
+function determinantCofactor(A: number[][]): number {
+  const n = A.length;
+  if (n === 1) return A[0][0];
+  if (n === 2) return A[0][0] * A[1][1] - A[0][1] * A[1][0];
+  let det = 0;
+  for (let j = 0; j < n; j++) {
+    const minor = A.slice(1).map(r => [...r.slice(0, j), ...r.slice(j + 1)]);
+    det += (j % 2 === 0 ? 1 : -1) * A[0][j] * determinantCofactor(minor);
+  }
+  return det;
+}
+const M = [[1, 2, 3], [4, 5, 6], [7, 8, 10]];
+console.log('det M (cofactor):', determinantCofactor(M), '(expected: -3)');
+
+// --- Gram-Schmidt Orthogonalization ---
+function gramSchmidt(vectors: number[][]): number[][] {
+  const ortho: number[][] = [];
+  for (const v of vectors) {
+    let proj = v.map(x => x);
+    for (const u of ortho) {
+      const dotUV = u.reduce((s, _, i) => s + v[i] * u[i], 0);
+      const dotUU = u.reduce((s, _, i) => s + u[i] * u[i], 0);
+      if (dotUU === 0) continue;
+      proj = proj.map((x, i) => x - (dotUV / dotUU) * u[i]);
+    }
+    const norm = Math.sqrt(proj.reduce((s, x) => s + x * x, 0));
+    if (norm > 1e-10) ortho.push(proj.map(x => x / norm));
+  }
+  return ortho;
+}
+const vecs = [[1, 1, 0], [1, 0, 1], [0, 1, 1]];
+const gs = gramSchmidt(vecs);
+console.log('\nGram-Schmidt orthonormal basis:');
+gs.forEach((v, i) => console.log(`  u${i + 1}: [${v.map(x => x.toFixed(4)).join(', ')}]`));
+
+// --- Least Squares Solver ---
+function leastSquares(A: number[][], b: number[]): number[] {
+  const AT = A[0].map((_, i) => A.map(r => r[i]));
+  const ATA = AT.map(r => A[0].map((_, j) => r.reduce((s, v, k) => s + v * A[k][j], 0)));
+  const ATb = AT.map(r => r.reduce((s, v, k) => s + v * b[k], 0));
+  return solveGauss(ATA, ATb);
+}
+function solveGauss(A: number[][], b: number[]): number[] {
+  const n = A.length;
+  const aug = A.map((r, i) => [...r, b[i]]);
+  for (let col = 0; col < n; col++) {
+    let maxRow = col;
+    for (let row = col + 1; row < n; row++) if (Math.abs(aug[row][col]) > Math.abs(aug[maxRow][col])) maxRow = row;
+    [aug[col], aug[maxRow]] = [aug[maxRow], aug[col]];
+    for (let row = col + 1; row < n; row++) {
+      const factor = aug[row][col] / aug[col][col];
+      for (let j = col; j <= n; j++) aug[row][j] -= factor * aug[col][j];
+    }
+  }
+  const x = new Array(n).fill(0);
+  for (let i = n - 1; i >= 0; i--) {
+    x[i] = (aug[i][n] - aug[i].slice(i + 1, n).reduce((s, v, j) => s + v * x[i + 1 + j], 0)) / aug[i][i];
+  }
+  return x;
+}
+const lsA = [[1, 0], [1, 1], [1, 2]]; // fit y = a + bx
+const lsB = [1, 3, 5];
+const lsX = leastSquares(lsA, lsB);
+console.log('\nLeast squares fit: y =', lsX[0].toFixed(2), '+', lsX[1].toFixed(2), 'x');
+
+// --- Column Space Basis ---
+function columnSpace(A: number[][]): number[][] {
+  const m = A.length, n = A[0].length;
+  const rref = A.map(r => [...r]);
+  let pivotCols: number[] = [];
+  for (let col = 0, row = 0; col < n && row < m; col++) {
+    let pivot = row;
+    while (pivot < m && Math.abs(rref[pivot][col]) < 1e-10) pivot++;
+    if (pivot === m) continue;
+    pivotCols.push(col);
+    [rref[row], rref[pivot]] = [rref[pivot], rref[row]];
+    const scale = rref[row][col];
+    for (let j = col; j < n; j++) rref[row][j] /= scale;
+    for (let i = 0; i < m; i++) if (i !== row) { const f = rref[i][col]; for (let j = col; j < n; j++) rref[i][j] -= f * rref[row][j]; }
+    row++;
+  }
+  return pivotCols.map(j => A.map(r => r[j]));
+}
+const colA = [[1, 2, 3], [2, 4, 6], [0, 0, 1]];
+console.log('Column space basis vectors:', columnSpace(colA).length);
+```
+
 ## Summary
 
 - A matrix is a linear transformation; matrix multiplication composes transformations

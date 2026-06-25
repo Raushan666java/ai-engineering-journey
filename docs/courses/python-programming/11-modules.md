@@ -583,6 +583,84 @@ async function hotReload(modulePath: string): Promise<unknown> {
 export { func1, func2 };  // private names are not exported
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Re-Export Aggregator ===
+// Simulates collecting all exports from multiple modules
+interface ModuleExports {
+  module: string;
+  exports: string[];
+}
+function aggregateExports(modules: ModuleExports[]): { all: string[]; byModule: ModuleExports[] } {
+  const all = [...new Set(modules.flatMap((m) => m.exports))];
+  return { all, byModule: modules };
+}
+const mods = [
+  { module: "utils", exports: ["add", "subtract", "multiply"] },
+  { module: "strings", exports: ["capitalize", "reverse", "add"] },
+];
+console.log(aggregateExports(mods)); // { all: ["add","subtract","multiply","capitalize","reverse"], ... }
+
+// === Barrel File Generator ===
+function generateBarrel(modules: string[]): string {
+  return modules.map((m) => `export * from './${m}';`).join("\n");
+}
+console.log(generateBarrel(["math", "strings", "types"]));
+// export * from './math';
+// export * from './strings';
+// export * from './types';
+
+// === Circular Dependency Checker ===
+type DepGraph = Record<string, string[]>;
+function findCircularDeps(graph: DepGraph): string[][] {
+  const cycles: string[][] = [];
+  const visited = new Set<string>();
+  const inStack = new Set<string>();
+  function dfs(node: string, path: string[]): void {
+    if (inStack.has(node)) {
+      const idx = path.indexOf(node);
+      cycles.push(path.slice(idx));
+      return;
+    }
+    if (visited.has(node)) return;
+    visited.add(node);
+    inStack.add(node);
+    for (const dep of graph[node] ?? []) {
+      dfs(dep, [...path, node]);
+    }
+    inStack.delete(node);
+  }
+  for (const node of Object.keys(graph)) dfs(node, []);
+  return cycles;
+}
+const deps: DepGraph = {
+  a: ["b", "c"],
+  b: ["d"],
+  c: ["a"],    // c → a → c (circular)
+  d: ["e"],
+  e: ["b"],    // e → b → d → e (circular)
+};
+console.log(findCircularDeps(deps)); // [["c","a"], ["b","d","e"]]
+
+// === Module Import Optimizer ===
+function optimizeImports(imports: string[]): string[] {
+  return [...new Set(imports)].sort();
+}
+console.log(optimizeImports(["fs", "path", "fs", "os"])); // ["fs", "os", "path"]
+
+// === Dynamic Import Wrapper (Python __import__ equivalent) ===
+async function dynamicImport(moduleName: string): Promise<Record<string, unknown>> {
+  try {
+    return await import(moduleName);
+  } catch {
+    console.warn(`Module '${moduleName}' not found`);
+    return {};
+  }
+}
+// dynamicImport("fs").then((m) => console.log(Object.keys(m)));
+```
+
 ## Summary
 
 - Modules are `.py` files; packages are directories with `__init__.py`.
@@ -630,6 +708,188 @@ import * as math from "./math.js";  // namespace import
 if (require.main === module) {
   console.log(add(2, 3));
 }
+```
+
+### TypeScript Module Bundler Simulation
+
+```typescript
+// === Module Resolution System ===
+interface ModuleInfo { name: string; path: string; exports: string[]; imports: string[]; }
+class ModuleRegistry {
+  private modules = new Map<string, ModuleInfo>();
+  register(info: ModuleInfo): void { this.modules.set(info.name, info); }
+  resolve(name: string): ModuleInfo | undefined { return this.modules.get(name); }
+  getDependencyGraph(): Map<string, string[]> {
+    const graph = new Map<string, string[]>();
+    for (const [name, info] of this.modules) {
+      graph.set(name, info.imports.map(i => {
+        const mod = [...this.modules.values()].find(m => m.exports.includes(i));
+        return mod?.name ?? "unknown";
+      }));
+    }
+    return graph;
+  }
+  getCircularDependencies(): string[][] {
+    const cycles: string[][] = [];
+    const visited = new Set<string>();
+    const inStack = new Set<string>();
+    const dfs = (name: string, path: string[]) => {
+      if (inStack.has(name)) { cycles.push(path.slice(path.indexOf(name))); return; }
+      if (visited.has(name)) return;
+      visited.add(name); inStack.add(name);
+      const mod = this.modules.get(name);
+      if (mod) {
+        for (const imp of mod.imports) {
+          const dep = [...this.modules.values()].find(m => m.exports.includes(imp));
+          if (dep) dfs(dep.name, [...path, dep.name]);
+        }
+      }
+      inStack.delete(name);
+    };
+    for (const name of this.modules.keys()) dfs(name, [name]);
+    return cycles;
+  }
+  getBundleOrder(): string[] {
+    const visited = new Set<string>();
+    const order: string[] = [];
+    const dfs = (name: string): void => {
+      if (visited.has(name)) return;
+      visited.add(name);
+      const mod = this.modules.get(name);
+      if (mod) {
+        for (const imp of mod.imports) {
+          const dep = [...this.modules.values()].find(m => m.exports.includes(imp));
+          if (dep) dfs(dep.name);
+        }
+      }
+      order.push(name);
+    };
+    for (const name of this.modules.keys()) dfs(name);
+    return order;
+  }
+}
+
+// === Tree-shaking Simulation ===
+interface Export { name: string; used: boolean; }
+class TreeShaker {
+  private exports = new Map<string, Export[]>();
+  addModule(name: string, exports: string[]): void {
+    this.exports.set(name, exports.map(e => ({ name: e, used: false })));
+  }
+  markUsed(moduleName: string, exportName: string): void {
+    this.exports.get(moduleName)?.find(e => e.name === exportName);
+  }
+  getUnusedExports(): { module: string; unused: string[] }[] {
+    const result: { module: string; unused: string[] }[] = [];
+    for (const [mod, exports] of this.exports) {
+      const unused = exports.filter(e => !e.used).map(e => e.name);
+      if (unused.length > 0) result.push({ module: mod, unused });
+    }
+    return result;
+  }
+  getShrinkPercentage(): number {
+    let total = 0, used = 0;
+    for (const exports of this.exports.values()) {
+      total += exports.length;
+      used += exports.filter(e => e.used).length;
+    }
+    return total > 0 ? Math.round((1 - used / total) * 100) : 0;
+  }
+}
+
+// === Lazy Module Loader ===
+class LazyLoader {
+  private loaded = new Set<string>();
+  private pending = new Map<string, () => Promise<void>>();
+  register(name: string, loader: () => Promise<void>): void { this.pending.set(name, loader); }
+  async load(name: string): Promise<void> {
+    if (this.loaded.has(name)) return;
+    const loader = this.pending.get(name);
+    if (loader) { await loader(); this.loaded.add(name); this.pending.delete(name); }
+  }
+  async loadAll(): Promise<void> {
+    await Promise.all([...this.pending.keys()].map(n => this.load(n)));
+  }
+}
+
+const reg = new ModuleRegistry();
+reg.register({ name: "utils", path: "./utils.ts", exports: ["add", "multiply"], imports: [] });
+reg.register({ name: "main", path: "./main.ts", exports: ["run"], imports: ["add"] });
+console.log(reg.getBundleOrder()); // ["utils", "main"] or ["main", "utils"]
+```
+
+### TypeScript Practical Applications
+
+```typescript
+// === Cross-Platform Path Resolution ===
+import { resolve, basename, dirname, extname, join, normalize } from "path";
+import { existsSync, readFileSync, writeFileSync, readdirSync } from "fs";
+
+interface PythonPackage {
+  name: string;
+  version: string;
+  path: string;
+  dependencies: Record<string, string>;
+}
+
+function resolvePythonImport(name: string, searchPaths: string[]): string | null {
+  for (const base of searchPaths) {
+    const candidates = [
+      join(base, `${name}.py`),
+      join(base, name, "__init__.py"),
+      join(base, `${name}.pyw`),
+    ];
+    for (const c of candidates) {
+      if (existsSync(c)) return c;
+    }
+  }
+  return null;
+}
+
+// === Module Dependency Graph Builder ===
+interface Edge { from: string; to: string; type: "import" | "from-import" | "re-export"; }
+function buildDependencyGraph(rootDir: string): { nodes: Set<string>; edges: Edge[] } {
+  const nodes = new Set<string>();
+  const edges: Edge[] = [];
+  const files = readdirSync(rootDir).filter(f => f.endsWith(".py") || f.endsWith(".ts"));
+  for (const file of files) {
+    const content = readFileSync(join(rootDir, file), "utf-8");
+    nodes.add(file);
+    const importRegex = /^(?:import|from)\s+(\S+)/gm;
+    let match;
+    while ((match = importRegex.exec(content)) !== null) {
+      const target = match[1].split(".")[0];
+      const type = match[0].startsWith("import") ? "import" : "from-import";
+      edges.push({ from: file, to: `${target}.py`, type });
+    }
+  }
+  return { nodes, edges };
+}
+
+// === Entry Point Detection ===
+function findEntryPoints(rootDir: string): string[] {
+  const entries: string[] = [];
+  const files = readdirSync(rootDir).filter(f => f.endsWith(".py"));
+  for (const file of files) {
+    const content = readFileSync(join(rootDir, file), "utf-8");
+    if (content.includes('if __name__ == "__main__"') || content.includes("if __name__ == '__main__'")) {
+      entries.push(file);
+    }
+  }
+  return entries;
+}
+
+// === Virtual Environment Utils ===
+function getSitePackagesPaths(venvPath: string): string[] {
+  const sitePackages = join(venvPath, "Lib", "site-packages");
+  if (!existsSync(sitePackages)) return [];
+  return readdirSync(sitePackages)
+    .filter(f => f.endsWith(".dist-info") || f.endsWith(".pth"))
+    .map(f => join(sitePackages, f));
+}
+
+console.log("Entry points:", findEntryPoints("."));
+console.log("Module graph:", JSON.stringify(buildDependencyGraph("."), null, 2));
 ```
 
 ### TypeScript Module System vs Python

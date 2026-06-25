@@ -804,6 +804,138 @@ for (let i = items.length - 1; i >= 0; i--) {
 }
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Loop Performance Benchmark ===
+function benchmarkLoop(name: string, fn: () => void, iterations = 100000): { name: string; ms: number; ops: number } {
+  const start = performance.now();
+  for (let i = 0; i < iterations; i++) fn();
+  const ms = performance.now() - start;
+  return { name, ms: Math.round(ms * 100) / 100, ops: Math.round(iterations / (ms / 1000)) };
+}
+const arr = Array.from({ length: 1000 }, (_, i) => i);
+const forLoop = () => { let s = 0; for (let i = 0; i < arr.length; i++) s += arr[i]; };
+const forOfLoop = () => { let s = 0; for (const x of arr) s += x; };
+const forEachLoop = () => { let s = 0; arr.forEach((x) => { s += x; }); };
+console.log(benchmarkLoop("for", forLoop));
+console.log(benchmarkLoop("for-of", forOfLoop));
+console.log(benchmarkLoop("forEach", forEachLoop));
+
+// === Infinite Loop Detector ===
+function detectInfinite(condition: string, body: string, maxIter = 1000): string {
+  return `let _guard = 0;\nwhile (${condition}) {\n  if (_guard++ > ${maxIter}) throw new Error("Infinite loop detected");\n${body}\n}`;
+}
+console.log(detectInfinite("true", "console.log('running')"));
+
+// === Range Function (Python-like) ===
+function range(start: number, end?: number, step = 1): number[] {
+  if (end === undefined) { end = start; start = 0; }
+  const result: number[] = [];
+  for (let i = start; i < end; i += step) result.push(i);
+  return result;
+}
+console.log(range(5));        // [0, 1, 2, 3, 4]
+console.log(range(2, 8, 2));  // [2, 4, 6]
+
+// === Zip Function (Python-like) ===
+function zip<T, U>(a: T[], b: U[]): [T, U][] {
+  return a.slice(0, Math.min(a.length, b.length)).map((v, i) => [v, b[i]]);
+}
+console.log(zip(["a", "b", "c"], [1, 2])); // [["a", 1], ["b", 2]]
+
+// === Enumerate in TS ===
+function enumerate<T>(arr: T[]): [number, T][] {
+  return arr.map((v, i) => [i, v]);
+}
+console.log(enumerate(["x", "y", "z"])); // [[0, "x"], [1, "y"], [2, "z"]]
+```
+
+### TypeScript Loop & Iteration Patterns
+
+```typescript
+// === For-of (Python: for x in iterable) ===
+const items = [10, 20, 30, 40, 50];
+for (const item of items) console.log(item);
+
+// === For-in (Python: for key in dict) vs Object.keys ===
+const dict = { a: 1, b: 2, c: 3 };
+for (const key in dict) console.log(key, dict[key]);
+// Better: Object.entries
+for (const [key, value] of Object.entries(dict)) console.log(key, value);
+
+// === Array methods (Python: for with enumerate) ===
+items.forEach((item, index) => console.log(`[${index}] = ${item}`));
+const doubled = items.map(x => x * 2);
+const evens = items.filter(x => x % 2 === 0);
+const sum = items.reduce((acc, x) => acc + x, 0);
+const firstEven = items.find(x => x % 2 === 0);
+const allPositive = items.every(x => x > 0);
+const someOver30 = items.some(x => x > 30);
+
+// === Generator equivalents with Iterator ===
+class RangeIterator implements Iterable<number> {
+  constructor(private start: number, private end: number, private step = 1) {}
+  *[Symbol.iterator](): Generator<number> {
+    for (let i = this.start; i < this.end; i += this.step) yield i;
+  }
+}
+for (const n of new RangeIterator(0, 10, 2)) console.log(n); // 0, 2, 4, 6, 8
+
+// === Infinite sequence ===
+function* fibonacci(): Generator<number> {
+  let a = 0, b = 1;
+  while (true) { yield a; [a, b] = [b, a + b]; }
+}
+const fib = fibonacci();
+for (let i = 0; i < 10; i++) console.log(fib.next().value);
+
+// === Enumerate (Python: enumerate) ===
+function enumerate2<T>(arr: T[]): [number, T][] {
+  return arr.map((v, i) => [i, v]);
+}
+for (const [idx, val] of enumerate2(["a", "b", "c"])) console.log(idx, val);
+
+// === Zip (Python: zip) ===
+function zip2<T, U>(a: T[], b: U[]): [T, U][] {
+  return a.slice(0, Math.min(a.length, b.length)).map((v, i) => [v, b[i]]);
+}
+for (const [n, l] of zip2([1, 2, 3], ["a", "b", "c"])) console.log(n, l);
+
+// === While loop ===
+let i = 0;
+while (i < 5) { console.log(i++); }
+
+// === Do-while (no Python equivalent) ===
+let j = 0;
+do { console.log(j++); } while (j < 5);
+
+// === Nested loops with labels ===
+outer: for (let r = 0; r < 3; r++) {
+  for (let c = 0; c < 3; c++) {
+    if (r === 1 && c === 1) break outer;
+    console.log(`[${r},${c}]`);
+  }
+}
+
+// === Loop performance ===
+const big = Array.from({ length: 1000000 }, (_, i) => i);
+console.time("for");
+let sum2 = 0;
+for (let i = 0; i < big.length; i++) sum2 += big[i];
+console.timeEnd("for");
+
+console.time("for-of");
+let sum3 = 0;
+for (const v of big) sum3 += v;
+console.timeEnd("for-of");
+
+console.time("forEach");
+let sum4 = 0;
+big.forEach(v => sum4 += v);
+console.timeEnd("forEach");
+```
+
 ## Summary
 
 - `for` loops iterate over iterables; `while` loops run until a condition is falsy.

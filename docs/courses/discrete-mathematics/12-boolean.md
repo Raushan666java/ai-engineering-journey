@@ -468,6 +468,93 @@ function mintermCount(n: number): number { return 1 << n; }
 console.log('Minterms for 3 vars:', mintermCount(3)); // 8
 ```
 
+```
+// --- Boolean Expression Evaluator ---
+function evalExpr(expr: string, vars: Record<string, boolean>): boolean {
+  const tokens = expr.match(/[A-Za-z]+|[∧∨¬→↔⊕]|[()]/g) ?? [];
+  const prec: Record<string, number> = { '¬': 4, '∧': 3, '∨': 2, '→': 1, '↔': 1, '⊕': 1 };
+  const output: string[] = [], ops: string[] = [];
+  for (const t of tokens) {
+    if (t in vars) output.push(t);
+    else if (t === '(') ops.push(t);
+    else if (t === ')') { while (ops.length && ops[ops.length-1] !== '(') output.push(ops.pop()!); ops.pop(); }
+    else { while (ops.length && ops[ops.length-1] !== '(' && (prec[ops[ops.length-1]] ?? 0) >= (prec[t] ?? 0)) output.push(ops.pop()!); ops.push(t); }
+  }
+  while (ops.length) output.push(ops.pop()!);
+  const stack: boolean[] = [];
+  for (const t of output) {
+    if (t in vars) stack.push(vars[t]);
+    else if (t === '¬') stack.push(!stack.pop()!);
+    else { const b = stack.pop()!, a = stack.pop()!;
+      if (t === '∧') stack.push(a && b);
+      else if (t === '∨') stack.push(a || b);
+      else if (t === '→') stack.push(!a || b);
+      else if (t === '↔') stack.push(a === b);
+      else if (t === '⊕') stack.push(a !== b);
+    }
+  }
+  return stack[0];
+}
+console.log('(p ∧ q) → r:', evalExpr('(p ∧ q) → r', {p:true, q:true, r:false}));
+
+// --- DNF/CNF Converter (from truth table) ---
+function truthTableToForm(t: boolean[][], form: 'dnf' | 'cnf'): string {
+  const vars = ['p', 'q', 'r'];
+  if (form === 'dnf')
+    return t.filter(r => r[r.length-1]).map(r =>
+      r.slice(0,-1).map((v, i) => (v ? '' : '¬') + vars[i]).join('∧')).join(' ∨ ');
+  return t.filter(r => !r[r.length-1]).map(r =>
+    r.slice(0,-1).map((v, i) => (v ? '¬' : '') + vars[i]).join('∨')).join(' ∧ ');
+}
+// p ⊕ q truth table
+const xorTTbl: boolean[][] = [[1,1,0],[1,0,1],[0,1,1],[0,0,0]];
+console.log('\nXOR DNF:', truthTableToForm(xorTTbl, 'dnf'));
+console.log('XOR CNF:', truthTableToForm(xorTTbl, 'cnf'));
+
+// --- Satisfiability Checker (naive, 3 vars) ---
+function isSatisfiable(expr: (v: boolean[]) => boolean, vars: number): boolean {
+  for (let i = 0; i < (1 << vars); i++) {
+    const vals: boolean[] = [];
+    for (let j = vars - 1; j >= 0; j--) vals.push(Boolean(i & (1 << j)));
+    if (expr(vals)) return true;
+  }
+  return false;
+}
+const unsat = (v: boolean[]) => v[0] && !v[0];
+console.log('\np ∧ ¬p satisfiable:', isSatisfiable(unsat, 1));
+
+// --- Boolean Function Minimization (Quine-McCluskey helper) ---
+function binaryRep(n: number, bits: number): string {
+  return n.toString(2).padStart(bits, '0');
+}
+function combineTerms(a: string, b: string): string | null {
+  let diff = -1;
+  for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) { if (diff !== -1) return null; diff = i; }
+  if (diff === -1) return null;
+  return a.slice(0, diff) + '-' + a.slice(diff + 1);
+}
+const minterms = [0, 1, 2, 5, 7]; // for 3 vars
+const bits = 3;
+console.log('\nMinterms:', minterms.map(m => binaryRep(m, bits)).join(', '));
+// First-level combination
+const combined = new Set<string>();
+for (let i = 0; i < minterms.length; i++)
+  for (let j = i + 1; j < minterms.length; j++) {
+    const c = combineTerms(binaryRep(minterms[i], bits), binaryRep(minterms[j], bits));
+    if (c) combined.add(c);
+  }
+console.log('Combined (1st pass):', [...combined].join(', '));
+
+// --- XOR/XNOR Gate Simulation ---
+function xorGate(a: boolean, b: boolean): boolean { return a !== b; }
+function xnorGate(a: boolean, b: boolean): boolean { return a === b; }
+function halfAdder(a: boolean, b: boolean): { sum: boolean; carry: boolean } {
+  return { sum: xorGate(a, b), carry: a && b };
+}
+const ha = halfAdder(true, true);
+console.log('\nHalf adder (1+1): sum=', ha.sum, 'carry=', ha.carry);
+```
+
 ## Summary
 
 - Boolean algebra is the algebraic foundation of digital logic, operating on $\{0,1\}$.

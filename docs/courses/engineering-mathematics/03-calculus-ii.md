@@ -623,6 +623,85 @@ const c = curl(F)(1, 1, 0);
 console.log(`curl F at (1,1,0): (${c.map(v => v.toFixed(2)).join(", ")}) (expected: (0, 0, 2))`);
 ```
 
+```
+// --- Double Integral via Riemann Sum ---
+function doubleIntegral(
+  f: (x: number, y: number) => number,
+  xRange: [number, number],
+  yRange: [number, number],
+  nx: number,
+  ny: number
+): number {
+  const dx = (xRange[1] - xRange[0]) / nx;
+  const dy = (yRange[1] - yRange[0]) / ny;
+  let sum = 0;
+  for (let i = 0; i < nx; i++)
+    for (let j = 0; j < ny; j++)
+      sum += f(xRange[0] + (i + 0.5) * dx, yRange[0] + (j + 0.5) * dy) * dx * dy;
+  return sum;
+}
+const vol = doubleIntegral((x, y) => x * x + y * y, [0, 1], [0, 1], 100, 100);
+console.log('∬(x²+y²) dA over [0,1]²:', vol.toFixed(4), '(expected: 2/3 ≈ 0.6667)');
+
+// --- Jacobian Determinant ---
+function jacobianDet(
+  transform: (u: number, v: number) => [number, number],
+  u: number,
+  v: number
+): number {
+  const h = 1e-6;
+  const [x0, y0] = transform(u, v);
+  const [xu, yu] = transform(u + h, v);
+  const [xv, yv] = transform(u, v + h);
+  return ((xu - x0) / h) * ((yv - y0) / h) - ((xv - x0) / h) * ((yu - y0) / h);
+}
+// Polar: x = r cos θ, y = r sin θ → Jacobian = r
+const polarJ = jacobianDet((r, θ) => [r * Math.cos(θ), r * Math.sin(θ)], 2, Math.PI / 4);
+console.log('\nPolar Jacobian at (2, π/4):', polarJ.toFixed(4), '(expected: 2)');
+
+// --- Lagrange Multipliers (2D numeric) ---
+function lagrangeMultiplier(
+  f: (x: number, y: number) => number,
+  g: (x: number, y: number) => number,
+  gTarget: number,
+  guess: [number, number],
+  learningRate: number = 0.01,
+  iterations: number = 1000
+): { x: number; y: number; λ: number } {
+  let x = guess[0], y = guess[1], λ = 0;
+  const h = 1e-6;
+  for (let i = 0; i < iterations; i++) {
+    const fx = (f(x + h, y) - f(x - h, y)) / (2 * h);
+    const fy = (f(x, y + h) - f(x, y - h)) / (2 * h);
+    const gx = (g(x + h, y) - g(x - h, y)) / (2 * h);
+    const gy = (g(x, y + h) - g(x, y - h)) / (2 * h);
+    x -= learningRate * (fx - λ * gx);
+    y -= learningRate * (fy - λ * gy);
+    λ += learningRate * (g(x, y) - gTarget);
+  }
+  return { x: +x.toFixed(4), y: +y.toFixed(4), λ: +λ.toFixed(4) };
+}
+// Maximize f(x,y)=xy subject to x+y=1
+const lm = lagrangeMultiplier((x, y) => x * y, (x, y) => x + y, 1, [0.3, 0.7]);
+console.log('\nLagrange: max xy s.t. x+y=1:', `x=${lm.x}, y=${lm.y}, f=${(+lm.x * +lm.y).toFixed(4)}`);
+
+// --- Triple Integral in Spherical Coordinates ---
+function sphericalVolume(ρFn: (θ: number, φ: number) => number): number {
+  const n = 50;
+  let vol = 0;
+  const dθ = 2 * Math.PI / n, dφ = Math.PI / n;
+  for (let i = 0; i < n; i++)
+    for (let j = 0; j < n; j++) {
+      const θ = (i + 0.5) * dθ, φ = (j + 0.5) * dφ;
+      const ρ = ρFn(θ, φ);
+      vol += (ρ ** 3 / 3) * Math.sin(φ) * dθ * dφ;
+    }
+  return vol;
+}
+const sphereVol = sphericalVolume((θ, φ) => 1); // unit sphere
+console.log('\nUnit sphere volume (spherical):', sphereVol.toFixed(4), '(expected: 4π/3 ≈ 4.1888)');
+```
+
 ## Summary
 
 - Partial derivatives compute rates of change with respect to one variable at a time

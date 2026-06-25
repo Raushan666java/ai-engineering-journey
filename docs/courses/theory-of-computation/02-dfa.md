@@ -720,6 +720,160 @@ console.log(dfa.runWithTrace("010")); // ["q0","q1","q0","q1"]
 console.log(dfa.acceptsAnyString()); // true
 ```
 
+// ──────────────────────────────────────────────────
+// DFA Table-Filling Minimizer (Hopcroft-Ullman)
+// Finds indistinguishable state pairs and merges them
+// to produce the unique minimal DFA.
+// ──────────────────────────────────────────────────
+
+class DFAMinimizer {
+  states: Set<string>;
+  alphabet: Set<string>;
+  transitions: Map<string, string>;
+  start: string;
+  accept: Set<string>;
+
+  constructor(
+    states: Set<string>, alphabet: Set<string>,
+    transitions: Map<string, string>, start: string, accept: Set<string>
+  ) {
+    this.states = states; this.alphabet = alphabet;
+    this.transitions = transitions; this.start = start; this.accept = accept;
+  }
+
+  // Table-filling algorithm: mark distinguishable pairs
+  minimize(): { states: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> } {
+    const stateList = [...this.states];
+    const marked = new Set<string>();
+
+    // Phase 1: mark (accept, non-accept) pairs
+    for (let i = 0; i < stateList.length; i++) {
+      for (let j = i + 1; j < stateList.length; j++) {
+        const si = stateList[i], sj = stateList[j];
+        if (this.accept.has(si) !== this.accept.has(sj)) {
+          marked.add(`${si},${sj}`);
+        }
+      }
+    }
+
+    // Phase 2: iteratively mark pairs whose transitions lead to marked pairs
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (let i = 0; i < stateList.length; i++) {
+        for (let j = i + 1; j < stateList.length; j++) {
+          const pair = `${stateList[i]},${stateList[j]}`;
+          if (marked.has(pair)) continue;
+          for (const sym of this.alphabet) {
+            const t1 = this.transitions.get(`${stateList[i]},${sym}`);
+            const t2 = this.transitions.get(`${stateList[j]},${sym}`);
+            if (t1 !== undefined && t2 !== undefined && t1 !== t2) {
+              const mp = [t1, t2].sort().join(",");
+              if (marked.has(mp)) { marked.add(pair); changed = true; break; }
+            }
+          }
+        }
+      }
+    }
+
+    // Phase 3: build merged states from unmarked pairs
+    const unmarked = new Set<string>();
+    for (let i = 0; i < stateList.length; i++) {
+      for (let j = i + 1; j < stateList.length; j++) {
+        if (!marked.has(`${stateList[i]},${stateList[j]}`)) {
+          unmarked.add(`${stateList[i]},${stateList[j]}`);
+        }
+      }
+    }
+
+    const parent = new Map<string, string>();
+    for (const s of stateList) parent.set(s, s);
+
+    const find = (x: string): string => {
+      while (parent.get(x) !== x) { parent.set(x, parent.get(x)!); x = parent.get(x)!; }
+      return x;
+    };
+
+    for (const p of unmarked) {
+      const [a, b] = p.split(",");
+      const ra = find(a), rb = find(b);
+      if (ra !== rb) parent.set(ra, rb);
+    }
+
+    // Build new transition table
+    const mergedStates = new Set([...new Set(stateList.map(s => find(s)))]);
+    const newTrans = new Map<string, string>();
+    const newAccept = new Set<string>();
+
+    for (const s of mergedStates) {
+      if (this.accept.has(s)) newAccept.add(s);
+      for (const sym of this.alphabet) {
+        const t = this.transitions.get(`${s},${sym}`);
+        if (t !== undefined) newTrans.set(`${s},${sym}`, find(t));
+      }
+    }
+
+    return { states: mergedStates, transitions: newTrans, start: find(this.start), accept: newAccept };
+  }
+}
+
+// ──────────────────────────────────────────────────
+// Product DFA Builder — constructs the product
+// automaton of two DFAs for intersection/union/difference
+// ──────────────────────────────────────────────────
+
+class ProductDFABuilder {
+  static buildProduct(
+    dfa1: { states: Set<string>; alphabet: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> },
+    dfa2: { states: Set<string>; alphabet: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> },
+    acceptCondition: (s1: string, s2: string) => boolean
+  ) {
+    const productStates = new Set<string>();
+    const productTrans = new Map<string, string>();
+    let productStart = `${dfa1.start},${dfa2.start}`;
+    const productAccept = new Set<string>();
+
+    for (const s1 of dfa1.states) {
+      for (const s2 of dfa2.states) {
+        const ps = `${s1},${s2}`;
+        productStates.add(ps);
+        if (acceptCondition(s1, s2)) productAccept.add(ps);
+      }
+    }
+
+    for (const s1 of dfa1.states) {
+      for (const s2 of dfa2.states) {
+        for (const sym of dfa1.alphabet) {
+          const t1 = dfa1.transitions.get(`${s1},${sym}`);
+          const t2 = dfa2.transitions.get(`${s2},${sym}`);
+          if (t1 !== undefined && t2 !== undefined) {
+            productTrans.set(`${s1},${s2},${sym}`, `${t1},${t2}`);
+          }
+        }
+      }
+    }
+
+    return { states: productStates, transitions: productTrans, start: productStart, accept: productAccept };
+  }
+}
+
+// Demo: minimize the example DFA
+const dfaStates = new Set(["q0", "q1", "q2", "q3"]);
+const dfaAlphabet = new Set(["0", "1"]);
+const dfaTransitions = new Map([
+  ["q0,0", "q1"], ["q0,1", "q2"],
+  ["q1,0", "q0"], ["q1,1", "q3"],
+  ["q2,0", "q3"], ["q2,1", "q0"],
+  ["q3,0", "q2"], ["q3,1", "q1"]
+]);
+const dfaAccept = new Set(["q1"]);
+
+const minimizer = new DFAMinimizer(dfaStates, dfaAlphabet, dfaTransitions, "q0", dfaAccept);
+const minimized = minimizer.minimize();
+console.log(`Minimized states: ${[...minimized.states].join(", ")}`);
+console.log(`Minimized transitions: ${[...minimized.transitions].map(([k, v]) => `${k}→${v}`).join(", ")}`);
+```
+
 ## Summary
 
 - A DFA is a 5-tuple (Q, Î£, Î´, qâ‚€, F) with a deterministic transition function.

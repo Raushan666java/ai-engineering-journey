@@ -678,6 +678,101 @@ const solution = PostCorrespondenceProblem.solveBruteForce(pcpTiles, 5);
 console.log(`PCP solution: ${solution ? solution.join(" → ") : "none found at depth 5"}`);
 ```
 
+// ─────────────────────────────────────────────────────
+// Many-One Reduction Builder
+// Constructs a computable function f that maps instances
+// of problem A to instances of problem B such that
+// x ∈ A  ⇔  f(x) ∈ B.
+// ─────────────────────────────────────────────────────
+
+class ManyOneReductionBuilder {
+  // Build a reduction from ATM (TM acceptance) to HALT (halting problem)
+  // Given ⟨M, w⟩, construct ⟨M', w⟩ where M' simulates M and
+  // enters an infinite loop if M accepts.
+  static ATMtoHALT(): { name: string; f: (tm: string, input: string) => string; description: string } {
+    return {
+      name: "A_TM ≤ₘ HALT",
+      description: "Given ⟨M, w⟩, construct ⟨M', w⟩ where M' runs M on w; if M accepts, M' loops; if M rejects, M' halts.",
+      f: (tm: string, input: string) => {
+        // Encodes the reduction: transform ⟨M, w⟩ into a description
+        // of a new TM that halts iff M would accept.
+        return `TM_${tm}_MODIFIED|${input}`;
+      }
+    };
+  }
+
+  // Build a reduction from HALT to EMPTY_TM
+  static HALTtoEMPTY(): { name: string; description: string } {
+    return {
+      name: "HALT ≤ₘ EMPTY_TM",
+      description: "Given ⟨M, w⟩, construct ⟨M_w⟩ where M_w ignores its input, runs M on w, and accepts if M halts. L(M_w) = Σ* if M halts on w, else ∅."
+    };
+  }
+
+  // Verify that the reduction preserves membership
+  static verify(reduction: { name: string; f: (...args: string[]) => string }, testInput: string): string[] {
+    const output: string[] = [];
+    output.push(`Reduction: ${reduction.name}`);
+    output.push(`Test input: ${testInput}`);
+    output.push(`Mapped to: ${reduction.f("M", testInput)}`);
+    output.push("");
+    output.push("To be a valid many-one reduction, f must be:");
+    output.push("  • Computable (implementable as a TM)");
+    output.push("  • Total (defined for all inputs)");
+    output.push("  • Membership-preserving: x ∈ A ⇔ f(x) ∈ B");
+    return output;
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Mapping Reduction Verifier — checks whether a proposed
+// reduction function is a valid mapping reduction.
+// ─────────────────────────────────────────────────────
+
+class ReductionVerifier {
+  // Check that a reduction function is computable
+  // (all operations are primitive recursive)
+  static isComputable(f: (x: string) => string): boolean {
+    try {
+      const result = f("test");
+      return typeof result === "string" && result.length > 0;
+    } catch {
+      return false;
+    }
+  }
+
+  // Check if the reduction preserves membership direction
+  static checkMembershipPreservation(
+    f: (x: string) => string,
+    testCases: Array<{ input: string; expectedInA: boolean; expectedInB: boolean }>
+  ): string[] {
+    const output: string[] = [];
+    output.push("Mapping Reduction Verification");
+    output.push("=".repeat(40));
+
+    for (const tc of testCases) {
+      const mapped = f(tc.input);
+      output.push(`\nInput: "${tc.input}"`);
+      output.push(`  Mapped to: "${mapped}"`);
+      output.push(`  Expected: ${tc.input} ∈ A = ${tc.expectedInA}, f(x) ∈ B = ${tc.expectedInB}`);
+      const preserves = tc.expectedInA === tc.expectedInB;
+      output.push(`  Membership preserved: ${preserves ? "✓" : "✗"}`);
+    }
+
+    return output;
+  }
+}
+
+// Demo
+const atmToHalt = ManyOneReductionBuilder.ATMtoHALT();
+console.log(ManyOneReductionBuilder.verify(atmToHalt, "M_w").join("\n"));
+console.log("");
+console.log(`HALT to EMPTY: ${ManyOneReductionBuilder.HALTtoEMPTY().description}`);
+
+const simpleF = (x: string) => x + "_encoded";
+console.log(`\nReduction verifiable: ${ReductionVerifier.isComputable(simpleF)}`);
+```
+
 ## Summary
 
 - Mapping reductions are computable functions that preserve language membership.

@@ -697,6 +697,85 @@ function contourIntegrate(
 }
 ```
 
+```
+
+// --- Mandelbrot Set Generator ---
+function mandelbrot(cReal: number, cImag: number, maxIter: number): number {
+  let zr = 0, zi = 0;
+  for (let n = 0; n < maxIter; n++) {
+    const zr2 = zr * zr - zi * zi + cReal;
+    const zi2 = 2 * zr * zi + cImag;
+    zr = zr2; zi = zi2;
+    if (zr * zr + zi * zi > 4) return n;
+  }
+  return maxIter;
+}
+function mandelbrotGrid(width: number, height: number, xMin: number, xMax: number, yMin: number, yMax: number): number[][] {
+  const grid: number[][] = [];
+  for (let px = 0; px < width; px++) {
+    grid[px] = [];
+    for (let py = 0; py < height; py++) {
+      const x = xMin + (xMax - xMin) * px / width;
+      const y = yMin + (yMax - yMin) * py / height;
+      grid[px][py] = mandelbrot(x, y, 100);
+    }
+  }
+  return grid;
+}
+const mGrid = mandelbrotGrid(5, 5, -2, 1, -1.5, 1.5);
+console.log('Mandelbrot set (5×5 sample):');
+mGrid.forEach(r => console.log('  [' + r.map(v => v >= 100 ? '█' : '·').join(' ') + ']'));
+
+// --- Complex Exponentiation ---
+function complexPow(z: Complex, n: number): Complex {
+  if (n === 0) return new Complex(1, 0);
+  const r = z.mag(), θ = z.arg();
+  return new Complex(Math.pow(r, n) * Math.cos(n * θ), Math.pow(r, n) * Math.sin(n * θ));
+}
+const z3 = complexPow(new Complex(1, 1), 3);
+console.log('\n(1+i)³:', z3.re.toFixed(2), '+', z3.im.toFixed(2), 'i (expected: -2 + 2i)');
+
+// --- Complex Roots of Unity ---
+function rootsOfUnity(n: number): Complex[] {
+  return Array.from({ length: n }, (_, k) =>
+    new Complex(Math.cos(2 * Math.PI * k / n), Math.sin(2 * Math.PI * k / n)));
+}
+const roots4 = rootsOfUnity(4);
+console.log('\n4th roots of unity:', roots4.map(z => `(${z.re.toFixed(2)}, ${z.im.toFixed(2)})`).join(', '));
+
+// --- Power Series Radius of Convergence ---
+function radiusOfConvergence(seq: number[]): number {
+  // ratio test: lim |a_{n+1}/a_n|
+  if (seq.length < 2) return Infinity;
+  let lastRatio = 0;
+  for (let n = 0; n < seq.length - 1; n++) {
+    const ratio = Math.abs(seq[n + 1] / seq[n]);
+    if (isFinite(ratio)) lastRatio = ratio;
+  }
+  return lastRatio > 0 ? 1 / lastRatio : Infinity;
+}
+// a_n = 1/n! → R = ∞ (entire function, like e^z)
+const factSeq = Array.from({ length: 10 }, (_, n) => 1 / Array.from({ length: n }, (_, i) => i + 1).reduce((a, b) => a * b, 1));
+console.log('\nRadius of convergence (e^z):', radiusOfConvergence(factSeq).toFixed(1), '(expected: ∞)');
+
+// --- Möbius Transformation Checker ---
+function mobiusTransform(z: Complex, a: number, b: number, c: number, d: number): Complex {
+  const num = new Complex(a, 0).mul(z).add(new Complex(b, 0));
+  const den = new Complex(c, 0).mul(z).add(new Complex(d, 0));
+  return num.div(den);
+}
+const w = mobiusTransform(new Complex(1, 0), 1, 0, 0, 1); // identity: w = z
+console.log('\nMöbius w=z (identity):', `(${w.re}, ${w.im})`);
+
+// --- Laurent Expansion Simulator (1/(z-1) around z=0) ---
+function laurentSample(z: Complex): Complex {
+  // 1/(z-1) = -(1 + z + z² + z³ + ...) for |z| < 1
+  return new Complex(0, 0).sub(new Complex(1, 0)).div(new Complex(z.re - 1, z.im));
+}
+const laurentVal = laurentSample(new Complex(0.5, 0));
+console.log('Laurent |z|<1: 1/(0.5-1):', laurentVal.re.toFixed(4));
+```
+
 ## Notation Reference
 
 | Symbol | Meaning |

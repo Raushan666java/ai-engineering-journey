@@ -895,6 +895,49 @@ console.log("Processed features:", processed.map(r => ({
   features: r.features,
   scaled: r.scaledFeatures,
 })));
+
+### TypeScript: Hyperparameter Grid Search & Model Export Validator
+
+```typescript
+interface ParamGrid {
+  maxDepth: number[]; minInstancesPerNode: number[]; impurity: string[]; numTrees: number[];
+}
+
+interface TrialResult { params: Record<string, unknown>; metric: number; durationMs: number; }
+
+class GridSearch {
+  constructor(private grid: ParamGrid) {}
+
+  run(evalFn: (params: Record<string, unknown>) => { score: number; durationMs: number }): TrialResult[] {
+    const results: TrialResult[] = [];
+    for (const maxDepth of this.grid.maxDepth) {
+      for (const minInstances of this.grid.minInstancesPerNode) {
+        for (const impurity of this.grid.impurity) {
+          for (const numTrees of this.grid.numTrees) {
+            const p = { maxDepth, minInstancesPerNode: minInstances, impurity, numTrees };
+            const r = evalFn(p);
+            results.push({ params: p, metric: r.score, durationMs: r.durationMs });
+          }
+        }
+      }
+    }
+    return results.sort((a, b) => b.metric - a.metric);
+  }
+
+  static exportModel(coefficients: number[], intercept: number, featureNames: string[]): string {
+    const terms = featureNames.map((f, i) => `${coefficients[i].toFixed(4)} * ${f}`).join(" + ");
+    return `1 / (1 + exp(-(${intercept.toFixed(4)} + ${terms})))`;
+  }
+}
+
+const gs = new GridSearch({ maxDepth: [5, 10], minInstancesPerNode: [1, 5], impurity: ["gini", "entropy"], numTrees: [50, 100] });
+const results = gs.run(p => ({ score: Math.random() * 0.15 + 0.8, durationMs: Math.round(Math.random() * 60000) }));
+console.log("Best params:", JSON.stringify(results[0].params, null, 2));
+console.log("Best score:", results[0].metric.toFixed(4));
+
+const modelCode = GridSearch.exportModel([0.52, -1.23, 2.45], -0.87, ["age", "income", "credit_score"]);
+console.log("Model formula:", modelCode);
+```
 ```
 
 ## Summary

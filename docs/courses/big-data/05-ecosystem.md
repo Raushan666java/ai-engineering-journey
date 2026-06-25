@@ -835,6 +835,57 @@ flowchart TB
     Phase2 --> Phase3
 ```
 
+### TypeScript: Kafka Consumer Group Balancer & HBase Schema Designer
+
+```typescript
+interface PartitionAssignment { consumerId: string; partitions: number[]; }
+
+class ConsumerGroupBalancer {
+  balance(consumers: string[], totalPartitions: number): PartitionAssignment[] {
+    const perConsumer = Math.floor(totalPartitions / consumers.length);
+    const remainder = totalPartitions % consumers.length;
+    const assignments: PartitionAssignment[] = [];
+    let start = 0;
+    for (let i = 0; i < consumers.length; i++) {
+      const count = perConsumer + (i < remainder ? 1 : 0);
+      const partitions = Array.from({ length: count }, (_, j) => start + j);
+      assignments.push({ consumerId: consumers[i], partitions });
+      start += count;
+    }
+    return assignments;
+  }
+
+  rebalanceOnFailure(assignments: PartitionAssignment[], failedConsumer: string, newConsumer: string): PartitionAssignment[] {
+    return assignments.map(a =>
+      a.consumerId === failedConsumer
+        ? { consumerId: newConsumer, partitions: a.partitions }
+        : a
+    );
+  }
+}
+
+class HBaseSchemaDesigner {
+  designTimeSeries(prefix: string, sensors: number, payloadBytes: number): { rowKey: string; columnFamily: string; estimatedRowSize: number; regions: number } {
+    const rowKey = `${prefix}_${"{sensorId}"}_${"{timestamp}"}`;
+    const estimatedRowSize = 8 + payloadBytes + 16; // key + value + metadata
+    const regions = Math.max(1, Math.ceil((sensors * estimatedRowSize * 86400) / (256 * 1024 * 1024 * 1024)));
+    return { rowKey, columnFamily: "cf", estimatedRowSize, regions };
+  }
+}
+
+const balancer = new ConsumerGroupBalancer();
+const assigned = balancer.balance(["consumer-1", "consumer-2", "consumer-3"], 12);
+console.log("Partition assignments:", JSON.stringify(assigned, null, 2));
+
+const rebalanced = balancer.rebalanceOnFailure(assigned, "consumer-2", "consumer-4");
+console.log("After failure:", JSON.stringify(rebalanced, null, 2));
+
+const schema = new HBaseSchemaDesigner();
+const tsSchema = schema.designTimeSeries("iot", 1000, 64);
+console.log("Time-series schema:", tsSchema);
+```
+```
+
 ## Summary
 
 - Hive provides SQL-on-HDFS but is being replaced by Spark SQL and Presto for most use cases.

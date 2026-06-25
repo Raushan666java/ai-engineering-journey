@@ -730,6 +730,220 @@ function elementWise<T>(a: T[], b: T[], fn: (x: T, y: T) => T): T[] {
 console.log(elementWise([1, 2, 3], [4, 5, 6], (x, y) => x + y));  // [5, 7, 9]
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Function Pipeline Composer (Python pipe pattern) ===
+class Pipeline<T> {
+  private fns: Array<(x: T) => T> = [];
+  add(fn: (x: T) => T): this { this.fns.push(fn); return this; }
+  execute(initial: T): T { return this.fns.reduce((acc, fn) => fn(acc), initial); }
+}
+const pipe = new Pipeline<number>();
+pipe.add((x) => x * 2).add((x) => x + 1).add((x) => Math.abs(x));
+console.log(pipe.execute(-5)); // |(-5*2)+1| = 9
+
+// === Compose (right-to-left) and Pipe (left-to-right) ===
+function compose<T>(...fns: Array<(x: T) => T>): (x: T) => T {
+  return (x: T) => fns.reduceRight((acc, fn) => fn(acc), x);
+}
+function piped<T>(...fns: Array<(x: T) => T>): (x: T) => T {
+  return (x: T) => fns.reduce((acc, fn) => fn(acc), x);
+}
+const add1 = (x: number) => x + 1;
+const double = (x: number) => x * 2;
+const square = (x: number) => x * x;
+const comp = compose(add1, double, square); // square(double(add1(x)))
+const p = piped(add1, double, square);      // square(double(add1(x)))
+console.log(comp(5), p(5)); // square(double(6)) = 144, same
+
+// === Partial Applier (functools.partial) ===
+type Fn = (...args: any[]) => any;
+function partial2<T extends Fn>(fn: T, ...bound: Parameters<T>): (...rest: Parameters<T>) => ReturnType<T> {
+  return (...rest: Parameters<T>) => fn(...bound, ...rest);
+}
+const greet = (greeting: string, name: string) => `${greeting}, ${name}!`;
+const sayHello = partial2(greet, "Hello");
+console.log(sayHello("Alice")); // Hello, Alice!
+
+// === Map / Filter / Reduce as Python-style ===
+function pyMap<T, U>(arr: T[], fn: (x: T) => U): U[] { return arr.map(fn); }
+function pyFilter<T>(arr: T[], fn: (x: T) => boolean): T[] { return arr.filter(fn); }
+function pyReduce<T, U>(arr: T[], fn: (acc: U, x: T, i: number) => U, init: U): U {
+  return arr.reduce(fn, init);
+}
+const nums = [1, 2, 3, 4, 5];
+console.log(pyMap(pyFilter(nums, (x) => x % 2 === 1), (x) => x * x)); // [1, 9, 25]
+
+// === Lambda Cache (memoize for closures) ===
+function memoize<T extends (...args: any[]) => any>(fn: T): T {
+  const cache = new Map<string, ReturnType<T>>();
+  return ((...args: Parameters<T>) => {
+    const key = JSON.stringify(args);
+    if (!cache.has(key)) cache.set(key, fn(...args));
+    return cache.get(key);
+  }) as T;
+}
+const fib = memoize((n: number): number => n <= 1 ? n : fib(n - 1) + fib(n - 2));
+console.log(fib(40)); // 102334155 (fast due to memoization)
+
+// === Throttle / Debounce (functional utilities) ===
+function debounce<T extends (...args: any[]) => void>(fn: T, ms: number): (...args: Parameters<T>) => void {
+  let timer: ReturnType<typeof setTimeout>;
+  return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
+}
+function throttle<T extends (...args: any[]) => void>(fn: T, ms: number): (...args: Parameters<T>) => void {
+  let last = 0;
+  return (...args) => { const now = Date.now(); if (now - last >= ms) { last = now; fn(...args); } };
+}
+```
+
+### TypeScript Functional Programming in Depth
+
+```typescript
+// === Pure Function Utilities ===
+const identity = <T>(x: T): T => x;
+const constant = <T>(x: T) => () => x;
+const apply = <T, R>(fn: (x: T) => R) => (x: T): R => fn(x);
+
+// === Point-free Style ===
+type UnaryFn<T, R> = (x: T) => R;
+const compose2 = <T, R>(...fns: UnaryFn<any, any>[]): UnaryFn<T, R> =>
+  (x: T) => fns.reduceRight((acc, fn) => fn(acc), x) as R;
+const pipe3 = <T, R>(...fns: UnaryFn<any, any>[]): UnaryFn<T, R> =>
+  (x: T) => fns.reduce((acc, fn) => fn(acc), x) as R;
+
+// === Either Monad ===
+class Either<E, A> {
+  private constructor(private left?: E, private right?: A) {}
+  static left<E, A>(value: E): Either<E, A> { return new Either<E, A>(value, undefined); }
+  static right<E, A>(value: A): Either<E, A> { return new Either<E, A>(undefined, value); }
+  isLeft(): boolean { return this.left !== undefined; }
+  isRight(): boolean { return this.right !== undefined; }
+  map<B>(fn: (a: A) => B): Either<E, B> {
+    return this.isRight() ? Either.right(fn(this.right!)) : Either.left(this.left!);
+  }
+  flatMap<B>(fn: (a: A) => Either<E, B>): Either<E, B> {
+    return this.isRight() ? fn(this.right!) : Either.left(this.left!);
+  }
+  fold<B>(leftFn: (e: E) => B, rightFn: (a: A) => B): B {
+    return this.isRight() ? rightFn(this.right!) : leftFn(this.left!);
+  }
+}
+function safeDivide(a: number, b: number): Either<string, number> {
+  return b === 0 ? Either.left("Division by zero") : Either.right(a / b);
+}
+const divResult = safeDivide(10, 2).map(x => x * 3).fold(
+  err => `Error: ${err}`,
+  val => `Result: ${val}`
+);
+console.log(divResult); // "Result: 15"
+
+// === Task/Future Monad ===
+class Task<A> {
+  constructor(private run: () => Promise<A>) {}
+  static of<A>(value: A): Task<A> { return new Task(() => Promise.resolve(value)); }
+  map<B>(fn: (a: A) => B): Task<B> { return new Task(() => this.run().then(fn)); }
+  chain<B>(fn: (a: A) => Task<B>): Task<B> { return new Task(() => this.run().then(a => fn(a).run())); }
+  async execute(): Promise<A> { return this.run(); }
+}
+const task = Task.of(5).map(x => x * 2).chain(x => Task.of(x + 1));
+task.execute().then(console.log); // 11
+
+// === Transducer Pattern ===
+type Reducer<A, B> = (acc: A, val: B) => A;
+type Transducer<A, B, C> = (next: Reducer<A, C>) => Reducer<A, B>;
+function mapping<A, B, C>(fn: (x: B) => C): Transducer<A, B, C> {
+  return (next: Reducer<A, C>) => (acc: A, val: B) => next(acc, fn(val));
+}
+function filtering<A, B>(pred: (x: B) => boolean): Transducer<A, B, B> {
+  return (next: Reducer<A, B>) => (acc: A, val: B) => pred(val) ? next(acc, val) : acc;
+}
+function transduce<A, B, C>(xf: Transducer<A, B, C>, reducer: Reducer<A, C>, initial: A, input: B[]): A {
+  const tr = xf(reducer);
+  return input.reduce(tr, initial);
+}
+const isEven2 = (x: number) => x % 2 === 0;
+const double3 = (x: number) => x * 2;
+const sum3 = (acc: number, val: number) => acc + val;
+const result2 = transduce(mapping(double3), sum3, 0, [1, 2, 3, 4, 5, 6]);
+console.log(result2); // 42 (2+4+6+8+10+12)
+
+// === Applicative Functor ===
+class ApplicativeBox<T> {
+  constructor(private value: T) {}
+  static of<T>(v: T): ApplicativeBox<T> { return new ApplicativeBox(v); }
+  map<R>(fn: (x: T) => R): ApplicativeBox<R> { return new ApplicativeBox(fn(this.value)); }
+  ap<R>(fn: ApplicativeBox<(x: T) => R>): ApplicativeBox<R> { return new ApplicativeBox(fn.value(this.value)); }
+}
+const addNums = (a: number) => (b: number) => a + b;
+const apResult = ApplicativeBox.of(3).map(addNums).ap(ApplicativeBox.of(4));
+```
+
+### TypeScript Advanced Functional Patterns
+
+```typescript
+// === Function Composition Pipeline ===
+type Fn<T, R> = (x: T) => R;
+const compose = <T, R>(...fns: Fn<any, any>[]): Fn<T, R> =>
+  (x: T) => fns.reduceRight((acc, fn) => fn(acc), x) as R;
+const pipe2 = <T, R>(...fns: Fn<any, any>[]): Fn<T, R> =>
+  (x: T) => fns.reduce((acc, fn) => fn(acc), x) as R;
+
+const double2 = (x: number) => x * 2;
+const increment = (x: number) => x + 1;
+const toString = (x: number) => String(x);
+const processNumber = compose(String, double2, increment);
+console.log(processNumber(5)); // "12"
+
+// === Currying ===
+const curry2 = <A, B, R>(fn: (a: A, b: B) => R) => (a: A) => (b: B) => fn(a, b);
+const add2 = curry2((a: number, b: number) => a + b);
+const add5 = add2(5);
+console.log(add5(3)); // 8
+
+// === Functor Pattern ===
+interface Functor<T> { map<R>(fn: (x: T) => R): Functor<R> }
+class Box<T> implements Functor<T> {
+  constructor(private value: T) {}
+  map<R>(fn: (x: T) => R): Box<R> { return new Box(fn(this.value)); }
+  fold<R>(fn: (x: T) => R): R { return fn(this.value); }
+}
+const result = new Box(5).map(x => x * 2).map(x => x + 1).fold(x => `Value: ${x}`);
+console.log(result); // "Value: 11"
+
+// === Monad Pattern ===
+class Maybe<T> {
+  private constructor(private value: T | null) {}
+  static just<T>(v: T): Maybe<T> { return new Maybe(v); }
+  static nothing<T>(): Maybe<T> { return new Maybe<T>(null); }
+  map<R>(fn: (x: T) => R): Maybe<R> {
+    return this.value === null ? Maybe.nothing() : Maybe.just(fn(this.value));
+  }
+  flatMap<R>(fn: (x: T) => Maybe<R>): Maybe<R> {
+    return this.value === null ? Maybe.nothing() : fn(this.value);
+  }
+  getOrElse(defaultVal: T): T { return this.value ?? defaultVal; }
+}
+const safeDiv = (a: number, b: number): Maybe<number> =>
+  b === 0 ? Maybe.nothing() : Maybe.just(a / b);
+console.log(safeDiv(10, 2).map(x => x * 3).getOrElse(0)); // 15
+
+// === Partial Application ===
+const partial2 = <T extends unknown[], R>(fn: (...args: T) => R, ...args: Partial<T>) =>
+  (...rest: T) => fn(...args, ...rest) as R;
+
+// === Throttle / Debounce ===
+function debounce<T extends (...args: any[]) => void>(fn: T, ms: number): (...args: Parameters<T>) => void {
+  let timer: ReturnType<typeof setTimeout>;
+  return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
+}
+function throttle<T extends (...args: any[]) => void>(fn: T, ms: number): (...args: Parameters<T>) => void {
+  let last = 0;
+  return (...args) => { const now = Date.now(); if (now - last >= ms) { last = now; fn(...args); } };
+}
+```
+
 ## Summary
 
 - Lambdas are anonymous, single-expression functions.

@@ -699,6 +699,102 @@ function stableMatch(prefsMen: number[][], prefsWomen: number[][]): Map<number, 
 }
 ```
 
+```
+// --- Hamming(7,4) Error-Correcting Code ---
+function hammingEncode(data: number[]): number[] {
+  const d = [...data];
+  const p1 = d[0] ^ d[1] ^ d[3];
+  const p2 = d[0] ^ d[2] ^ d[3];
+  const p3 = d[1] ^ d[2] ^ d[3];
+  return [p1, p2, d[0], p3, d[1], d[2], d[3]];
+}
+function hammingDecode(code: number[]): { data: number[]; error: number } {
+  const p1 = code[0] ^ code[2] ^ code[4] ^ code[6];
+  const p2 = code[1] ^ code[2] ^ code[5] ^ code[6];
+  const p3 = code[3] ^ code[4] ^ code[5] ^ code[6];
+  const syndrome = p1 * 1 + p2 * 2 + p3 * 4;
+  const fixed = [...code];
+  if (syndrome !== 0) fixed[syndrome - 1] = fixed[syndrome - 1] ^ 1;
+  return { data: [fixed[2], fixed[4], fixed[5], fixed[6]], error: syndrome };
+}
+const msg = [1, 0, 1, 0];
+const encoded = hammingEncode(msg);
+const corrupted = [...encoded]; corrupted[2] = corrupted[2] ^ 1; // flip bit 3
+const decoded = hammingDecode(corrupted);
+console.log('Hamming(7,4):');
+console.log('  Original:', msg.join(''));
+console.log('  Encoded:', encoded.join(''));
+console.log('  Corrupted:', corrupted.join(''));
+console.log('  Decoded:', decoded.data.join(''), '(error at bit', decoded.error, ')');
+
+// --- Checksum Calculator (Internet Checksum) ---
+function internetChecksum(data: number[]): number {
+  let sum = 0;
+  for (let i = 0; i < data.length; i += 2) {
+    const word = (data[i] << 8) | (data[i + 1] ?? 0);
+    sum = (sum + word) & 0xFFFF;
+    sum = (sum + (sum >>> 16)) & 0xFFFF;
+  }
+  return (~sum) & 0xFFFF;
+}
+const packet = [0x45, 0x00, 0x00, 0x3C, 0x1C, 0x46];
+console.log('\nInternet checksum:', '0x' + internetChecksum(packet).toString(16).toUpperCase());
+
+// --- Caesar Cipher Simulator ---
+function caesarCipher(text: string, shift: number, mode: 'encrypt' | 'decrypt'): string {
+  const s = mode === 'encrypt' ? shift : (26 - shift) % 26;
+  return text.replace(/[a-zA-Z]/g, ch => {
+    const base = ch >= 'a' ? 97 : 65;
+    return String.fromCharCode(((ch.charCodeAt(0) - base + s) % 26) + base);
+  });
+}
+console.log('\nCaesar shift=3:');
+console.log('  Encrypt "HELLO":', caesarCipher('HELLO', 3, 'encrypt'));
+console.log('  Decrypt "KHOOR":', caesarCipher('KHOOR', 3, 'decrypt'));
+
+// --- Vigenère Cipher ---
+function vigenere(text: string, key: string, mode: 'encrypt' | 'decrypt'): string {
+  const k = key.toLowerCase();
+  return text.replace(/[a-zA-Z]/g, (ch, i) => {
+    const base = ch >= 'a' ? 97 : 65;
+    const shift = k[i % k.length].charCodeAt(0) - 97;
+    const s = mode === 'encrypt' ? shift : (26 - shift) % 26;
+    return String.fromCharCode(((ch.charCodeAt(0) - base + s) % 26) + base);
+  });
+}
+console.log('\nVigenère key="KEY":');
+console.log('  Encrypt "ATTACK":', vigenere('ATTACK', 'KEY', 'encrypt'));
+console.log('  Decrypt "KXEXTR":', vigenere('KXEXTR', 'KEY', 'decrypt'));
+
+// --- Max-Flow Min-Cut (Ford-Fulkerson) ---
+function fordFulkerson(capacity: number[][], s: number, t: number): number {
+  const n = capacity.length;
+  const flow = capacity.map(r => new Array(n).fill(0));
+  const adj = capacity.map((r, i) => r.map((_, j) => capacity[i][j] > 0 || capacity[j][i] > 0 ? j : -1).filter(x => x >= 0));
+  let totalFlow = 0;
+  while (true) {
+    const parent = new Array(n).fill(-1);
+    const queue: number[] = [s];
+    parent[s] = s;
+    while (queue.length && parent[t] === -1) {
+      const u = queue.shift()!;
+      for (const v of adj[u])
+        if (parent[v] === -1 && capacity[u][v] - flow[u][v] > 0) { parent[v] = u; queue.push(v); }
+    }
+    if (parent[t] === -1) break;
+    let add = Infinity;
+    for (let v = t; v !== s; v = parent[v]) add = Math.min(add, capacity[parent[v]][v] - flow[parent[v]][v]);
+    for (let v = t; v !== s; v = parent[v]) { flow[parent[v]][v] += add; flow[v][parent[v]] -= add; }
+    totalFlow += add;
+  }
+  return totalFlow;
+}
+const cap: number[][] = [
+  [0,16,13,0,0,0],[0,0,10,12,0,0],[0,4,0,0,14,0],[0,0,9,0,0,20],[0,0,0,7,0,4],[0,0,0,0,0,0]
+];
+console.log('\nMax flow (Ford-Fulkerson):', fordFulkerson(cap, 0, 5), '(expected: 23)');
+```
+
 ## Summary
 
 - Discrete mathematics provides the foundation for virtually all of computer science.

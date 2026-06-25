@@ -785,6 +785,181 @@ const channel = new MessageChannel();
 // CPU-bound work blocks the event loop — use Worker threads or child processes
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Thread Pool Executor (simulated) ===
+class ThreadPool {
+  private workers: Array<() => Promise<void>> = [];
+  private results: unknown[] = [];
+  constructor(private concurrency: number) {}
+  async submit<T>(fn: () => Promise<T>): Promise<void> {
+    this.workers.push(async () => { this.results.push(await fn()); });
+  }
+  async execute<T>(): Promise<T[]> {
+    this.results = [];
+    for (let i = 0; i < this.workers.length; i += this.concurrency) {
+      const batch = this.workers.slice(i, i + this.concurrency);
+      await Promise.all(batch.map((w) => w()));
+    }
+    this.workers = [];
+    return this.results as T[];
+  }
+}
+async function demoPool(): Promise<void> {
+  const pool = new ThreadPool(3);
+  for (let i = 0; i < 6; i++) {
+    const n = i;
+    pool.submit(async () => { await new Promise((r) => setTimeout(r, 50)); return n * 2; });
+  }
+  const results = await pool.execute<number>();
+  console.log(results); // [0,2,4,6,8,10]
+}
+demoPool();
+
+// === Promise Pool (concurrency-limited) ===
+async function promisePool<T>(tasks: (() => Promise<T>)[], limit: number): Promise<T[]> {
+  const results: T[] = [];
+  const executing: Promise<void>[] = [];
+  for (const task of tasks) {
+    const p = task().then((r) => { results.push(r); });
+    executing.push(p);
+    if (executing.length >= limit) await Promise.race(executing);
+  }
+  await Promise.all(executing);
+  return results;
+}
+// const urls = ["url1", "url2", "url3"];
+// const fetchers = urls.map((u) => () => fetch(u).then((r) => r.text()));
+// const pages = await promisePool(fetchers, 2);
+
+// === Async Queue with Concurrency ===
+class AsyncQueue<T> {
+  private queue: T[] = [];
+  private consumers: Array<(x: T) => void> = [];
+  push(item: T): void {
+    if (this.consumers.length > 0) this.consumers.shift()!(item);
+    else this.queue.push(item);
+  }
+  async pop(): Promise<T> {
+    if (this.queue.length > 0) return this.queue.shift()!;
+    return new Promise((r) => this.consumers.push(r));
+  }
+}
+async function queueDemo(): Promise<void> {
+  const q = new AsyncQueue<number>();
+  setTimeout(() => { q.push(1); q.push(2); q.push(3); }, 10);
+  console.log(await q.pop()); // 1
+  console.log(await q.pop()); // 2
+  console.log(await q.pop()); // 3
+}
+queueDemo();
+
+// === Parallel Map (Python Pool.map equivalent) ===
+async function parallelMap<T, U>(arr: T[], fn: (x: T) => Promise<U>, concurrency = 4): Promise<U[]> {
+  return promisePool(arr.map((x) => () => fn(x)), concurrency);
+}
+// const doubled = await parallelMap([1,2,3,4,5], async (x) => x * 2, 3);
+// console.log(doubled); // [2,4,6,8,10]
+```
+
+### TypeScript Async & Concurrency Patterns
+
+```typescript
+// === Promise-based async (Python: asyncio) ===
+async function fetchData(url: string): Promise<string> {
+  const response = await fetch(url);
+  return response.text();
+}
+
+// === Parallel execution (Python: asyncio.gather) ===
+async function parallel<T>(tasks: (() => Promise<T>)[]): Promise<T[]> {
+  return Promise.all(tasks.map(t => t()));
+}
+const urls = ["https://api.example.com/1", "https://api.example.com/2", "https://api.example.com/3"];
+const results = await parallel(urls.map(url => () => fetchData(url)));
+
+// === Thread pool equivalent (Python: concurrent.futures) ===
+async function mapParallel<T, R>(items: T[], fn: (item: T) => Promise<R>, concurrency = 4): Promise<R[]> {
+  const results: R[] = [];
+  const executing = new Set<Promise<void>>();
+  const queue = [...items];
+  while (queue.length > 0 || executing.size > 0) {
+    while (queue.length > 0 && executing.size < concurrency) {
+      const item = queue.shift()!;
+      const prom = fn(item).then(r => { results.push(r); });
+      executing.add(prom);
+      prom.finally(() => executing.delete(prom));
+    }
+    if (executing.size > 0) await Promise.race(executing);
+  }
+  return results;
+}
+const squares = await mapParallel([1, 2, 3, 4, 5], async (n) => {
+  await new Promise(r => setTimeout(r, 10));
+  return n * n;
+});
+console.log(squares); // [1, 4, 9, 16, 25]
+
+// === Async Queue (Python: asyncio.Queue) ===
+class AsyncQueue<T> {
+  private items: T[] = [];
+  private resolvers: ((value: T) => void)[] = [];
+  async push(item: T): Promise<void> {
+    if (this.resolvers.length > 0) this.resolvers.shift()!(item);
+    else this.items.push(item);
+  }
+  async pop(): Promise<T> {
+    if (this.items.length > 0) return this.items.shift()!;
+    return new Promise(resolve => this.resolvers.push(resolve));
+  }
+  get length(): number { return this.items.length - this.resolvers.length; }
+}
+
+// === Async Event Emitter ===
+class AsyncEventEmitter {
+  private listeners = new Map<string, ((...args: unknown[]) => void)[]>();
+  on(event: string, listener: (...args: unknown[]) => void): void {
+    if (!this.listeners.has(event)) this.listeners.set(event, []);
+    this.listeners.get(event)!.push(listener);
+  }
+  emit(event: string, ...args: unknown[]): void {
+    this.listeners.get(event)?.forEach(l => l(...args));
+  }
+  async emitAsync(event: string, ...args: unknown[]): Promise<void> {
+    await Promise.all(this.listeners.get(event)?.map(l => Promise.resolve(l(...args))) ?? []);
+  }
+}
+
+// === Worker Pool ===
+class WorkerPool {
+  private queue: (() => Promise<void>)[] = [];
+  private active = 0;
+  constructor(private size: number) {}
+  async run<T>(fn: () => Promise<T>): Promise<T> {
+    return new Promise((resolve, reject) => {
+      const task = async () => { try { resolve(await fn()); } catch (e) { reject(e); } };
+      this.queue.push(task);
+      this.processNext();
+    });
+  }
+  private async processNext(): Promise<void> {
+    if (this.active >= this.size || this.queue.length === 0) return;
+    this.active++;
+    const task = this.queue.shift()!;
+    await task();
+    this.active--;
+    this.processNext();
+  }
+}
+const pool = new WorkerPool(2);
+const outputs = await Promise.all([1, 2, 3, 4].map(n => pool.run(async () => {
+  await new Promise(r => setTimeout(r, 100));
+  return n * 2;
+})));
+console.log(outputs);
+```
+
 ## Summary
 
 - The GIL limits pure Python CPU-bound code to one core. Threading only helps I/O-bound tasks.

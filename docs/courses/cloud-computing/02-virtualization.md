@@ -729,6 +729,44 @@ console.log("Inflating balloons to reclaim 40GB:", balloon.inflateBalloons(40));
 console.log("Memory pressure:", JSON.stringify(balloon.getPressureReport(), null, 2));
 ```
 
+### TypeScript: Hypervisor Feature Comparator
+
+```typescript
+type HypervisorType = "type-1" | "type-2";
+
+interface Hypervisor {
+  name: string; type: HypervisorType;
+  features: { liveMigration: boolean; memoryOvercommit: boolean; gpuPassthrough: boolean; srIov: boolean; nestedVirt: boolean };
+}
+
+class HypervisorComparator {
+  private hypervisors: Hypervisor[] = [
+    { name: "VMware vSphere", type: "type-1", features: { liveMigration: true, memoryOvercommit: true, gpuPassthrough: true, srIov: true, nestedVirt: true } },
+    { name: "KVM", type: "type-1", features: { liveMigration: true, memoryOvercommit: true, gpuPassthrough: true, srIov: true, nestedVirt: true } },
+    { name: "Xen", type: "type-1", features: { liveMigration: true, memoryOvercommit: false, gpuPassthrough: true, srIov: true, nestedVirt: false } },
+    { name: "Hyper-V", type: "type-1", features: { liveMigration: true, memoryOvercommit: true, gpuPassthrough: true, srIov: true, nestedVirt: true } },
+    { name: "VirtualBox", type: "type-2", features: { liveMigration: false, memoryOvercommit: false, gpuPassthrough: false, srIov: false, nestedVirt: true } },
+  ];
+
+  filter(required: Partial<Hypervisor["features"]>): Hypervisor[] {
+    return this.hypervisors.filter(h =>
+      Object.entries(required).every(([k, v]) => !v || h.features[k as keyof typeof h.features] === v)
+    );
+  }
+
+  recommend(workload: "production" | "desktop" | "dev"): Hypervisor[] {
+    if (workload === "production") return this.filter({ liveMigration: true, memoryOvercommit: true });
+    if (workload === "desktop") return this.filter({ nestedVirt: true });
+    return this.hypervisors;
+  }
+}
+
+const hc = new HypervisorComparator();
+console.log("Production:", hc.recommend("production").map(h => h.name).join(", "));
+console.log("GPU passthrough:", hc.filter({ gpuPassthrough: true }).map(h => h.name).join(", "));
+```
+```
+
 ## Summary
 
 - Hypervisors abstract physical hardware into multiple virtual machines with strong isolation.

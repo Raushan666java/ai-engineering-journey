@@ -449,6 +449,144 @@ console.log(intersect("aabb"));  // true
 console.log(intersect("aaabbb")); // false (odd length)
 ```
 
+// ─────────────────────────────────────────────────────
+// CFL Closure Property Tester — verifies whether
+// CFLs are closed under various operations by
+// checking known closure properties programmatically.
+// ─────────────────────────────────────────────────────
+
+class CFLClosureTester {
+  // Known closure properties of CFLs
+  static readonly CLOSURE_PROPERTIES = {
+    union: true,
+    concatenation: true,
+    kleeneStar: true,
+    reversal: true,
+    homomorphism: true,
+    inverseHomomorphism: true,
+    intersectionWithRegular: true,
+    intersection: false,
+    complement: false,
+    difference: false,
+  };
+
+  // Generate a closure property report
+  static report(): string[] {
+    const output: string[] = [];
+    output.push("Context-Free Language Closure Properties");
+    output.push("=".repeat(45));
+
+    for (const [prop, closed] of Object.entries(this.CLOSURE_PROPERTIES)) {
+      const status = closed ? "✓ Closed" : "✗ Not closed";
+      const name = prop.replace(/([A-Z])/g, " $1").replace(/^./, c => c.toUpperCase());
+      output.push(`  ${name.padEnd(30)} ${status}`);
+    }
+
+    return output;
+  }
+
+  // Demonstrate CFL intersection with a regular language
+  static demonstrateIntersectionWithRegular(): string[] {
+    return [
+      "Intersection of CFL with Regular:",
+      "  L1 = {aⁿbⁿ | n ≥ 0}  (CFL)",
+      "  L2 = a* (regular)",
+      "  L1 ∩ L2 = {aⁿbⁿ | n ≥ 0}  (still CFL)",
+      "",
+      "  L1 = {aⁿbⁿ | n ≥ 0}  (CFL)",
+      "  L2 = {bⁿcⁿ | n ≥ 0}  (CFL)",
+      "  L1 ∩ L2 = {bⁿ | n ≥ 0}  (still CFL — intersection of two CFLs happens to be CFL here)",
+      "",
+      "  L1 = {aⁿbⁿcᵐ | n,m ≥ 0}  (CFL)",
+      "  L2 = {aⁿbᵐcᵐ | n,m ≥ 0}  (CFL)",
+      "  L1 ∩ L2 = {aⁿbⁿcⁿ | n ≥ 0}  (NOT CFL — canonical non-CFL example)"
+    ];
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// CFL Ambiguty Checker — tests whether a grammar in CNF
+// has multiple parse trees for any derived string by
+// enumerating all parse trees for short strings.
+// ─────────────────────────────────────────────────────
+
+class CFGAmbiguityChecker {
+  private productions: Map<string, string[][]>;
+
+  constructor(productions: Array<{ lhs: string; rhs: string[] }>) {
+    this.productions = new Map();
+    for (const p of productions) {
+      const existing = this.productions.get(p.lhs) || [];
+      existing.push(p.rhs);
+      this.productions.set(p.lhs, existing);
+    }
+  }
+
+  // Count parse trees for a given string using CYK-like enumeration
+  countParseTrees(input: string): number {
+    const n = input.length;
+    // table[i][j] = Map from nonterminal to number of parse trees for substring i..j
+    const table: Array<Array<Map<string, number>>> = [];
+
+    for (let i = 0; i < n; i++) {
+      table[i] = new Array(n);
+      for (let j = 0; j < n; j++) {
+        table[i][j] = new Map();
+      }
+    }
+
+    // Fill diagonals (terminals)
+    for (let i = 0; i < n; i++) {
+      for (const [lhs, rhss] of this.productions) {
+        for (const rhs of rhss) {
+          if (rhs.length === 1 && rhs[0] === input[i]) {
+            table[i][i].set(lhs, (table[i][i].get(lhs) || 0) + 1);
+          }
+        }
+      }
+    }
+
+    // Fill for longer spans
+    for (let len = 2; len <= n; len++) {
+      for (let i = 0; i <= n - len; i++) {
+        const j = i + len - 1;
+        for (let k = i; k < j; k++) {
+          for (const [lhs, rhss] of this.productions) {
+            for (const rhs of rhss) {
+              if (rhs.length === 2) {
+                const left = table[i][k].get(rhs[0]) || 0;
+                const right = table[k + 1][j].get(rhs[1]) || 0;
+                if (left > 0 && right > 0) {
+                  table[i][j].set(lhs, (table[i][j].get(lhs) || 0) + left * right);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    return table[0][n - 1].get("S") || 0;
+  }
+
+  isAmbiguous(input: string): boolean {
+    return this.countParseTrees(input) > 1;
+  }
+}
+
+// Demo
+console.log(CFLClosureTester.report().join("\n"));
+console.log("");
+console.log(CFLClosureTester.demonstrateIntersectionWithRegular().join("\n"));
+
+// Ambiguity checker demo
+const ambGrammar = new CFGAmbiguityChecker([
+  { lhs: "S", rhs: ["S", "S"] }, { lhs: "S", rhs: ["a"] }
+]);
+console.log(`\nParse trees for "aa": ${ambGrammar.countParseTrees("aa")}`);
+console.log(`Is ambiguous for "aa": ${ambGrammar.isAmbiguous("aa")}`);
+```
+
 ## Summary
 
 - The pumping lemma for CFLs provides two pumpable substrings (v and y).

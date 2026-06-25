@@ -716,6 +716,81 @@ const { root: rootPi } = secantMethod(sinFn, 3, 3.2);
 console.log(`Secant π ≈ ${rootPi.toFixed(10)} (error: ${(rootPi - Math.PI).toExponential(2)})`);
 ```
 
+```
+// --- L'Hôpital's Rule Checker ---
+function lHopital(f: (x: number) => number, g: (x: number) => number, a: number): { indeterminate: boolean; limit?: number } {
+  const f_a = f(a), g_a = g(a);
+  const is0_0 = Math.abs(f_a) < 1e-10 && Math.abs(g_a) < 1e-10;
+  const isInf = Math.abs(f_a) === Infinity && Math.abs(g_a) === Infinity;
+  if (!is0_0 && !isInf) return { indeterminate: false };
+  const h = 1e-6;
+  const fp = (f(a + h) - f(a - h)) / (2 * h);
+  const gp = (g(a + h) - g(a - h)) / (2 * h);
+  if (Math.abs(gp) < 1e-10) return { indeterminate: true };
+  return { indeterminate: true, limit: fp / gp };
+}
+const lhs = lHopital(x => Math.sin(x), x => x, 0);
+console.log('L\'Hôpital sin(x)/x at 0:', lhs.limit?.toFixed(6), '(expected: 1)');
+
+// --- Taylor Series with Remainder ---
+function taylorSeries(f: (x: number) => number, a: number, order: number, x: number): { value: number; remainder: number } {
+  let sum = 0, term = 1;
+  for (let n = 0; n <= order; n++) {
+    sum += term * f(a) / (n === 0 ? 1 : n);
+    const h = 1e-6;
+    const deriv = n === 0 ? f(a) : (() => { const vals = []; for (let i = 0; i <= n; i++) vals.push(f(a + i * h)); return vals.reduce((s, v) => s + v * (i % 2 === 0 ? 1 : -1) * (() => { /* binomial */ let c = 1; for (let j = 0; j < i; j++) c = c * (n - j) / (j + 1); return c; })()) / (Math.pow(h, n)); })();
+    term *= (x - a);
+    term /= (n + 1);
+  }
+  // Simple numeric remainder estimate
+  const h = 1e-5;
+  const nextDeriv = (f(x + h) - f(x - h)) / (2 * h);
+  const remainder = Math.abs(nextDeriv) / (order + 1) * Math.pow(Math.abs(x - a), order + 1);
+  return { value: sum, remainder };
+}
+console.log('\nTaylor e^x at x=0.5 (order 5):', taylorSeries(Math.exp, 0, 5, 0.5).value.toFixed(6), '(expected: 1.648721)');
+
+// --- Newton's Method ---
+function newtonsMethod(f: (x: number) => number, fp: (x: number) => number, guess: number, tol: number = 1e-8, maxIter: number = 100): { root: number; iterations: number } {
+  let x = guess;
+  for (let i = 0; i < maxIter; i++) {
+    const fx = f(x);
+    if (Math.abs(fx) < tol) return { root: x, iterations: i };
+    x = x - fx / fp(x);
+  }
+  return { root: x, iterations: maxIter };
+}
+const sqrt2 = newtonsMethod(x => x * x - 2, x => 2 * x, 1.5);
+console.log('\nNewton √2:', sqrt2.root.toFixed(10), '(error:', (sqrt2.root - Math.SQRT2).toExponential(2), ')');
+
+// --- Riemann Sum with Multiple Rules ---
+function riemannSum(f: (x: number) => number, a: number, b: number, n: number, rule: 'left' | 'right' | 'midpoint' | 'trapezoid'): number {
+  const dx = (b - a) / n;
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+    const x = rule === 'left' ? a + i * dx : rule === 'right' ? a + (i + 1) * dx : a + (i + 0.5) * dx;
+    sum += rule === 'trapezoid' ? (f(a + i * dx) + f(a + (i + 1) * dx)) : f(x);
+  }
+  return rule === 'trapezoid' ? sum * dx / 2 : sum * dx;
+}
+console.log('\n∫₀¹ x² dx (midpoint, n=100):', riemannSum(x => x * x, 0, 1, 100, 'midpoint').toFixed(6), '(expected: 0.333333)');
+
+// --- Curve Sketching Data ---
+function criticalPoints(f: (x: number) => number, a: number, b: number, step: number): { x: number; f: number; fprime: number; fdouble: number }[] {
+  const points: { x: number; f: number; fprime: number; fdouble: number }[] = [];
+  const h = 1e-6;
+  for (let x = a; x <= b; x += step) {
+    const fp = (f(x + h) - f(x - h)) / (2 * h);
+    const fpp = (f(x + h) - 2 * f(x) + f(x - h)) / (h * h);
+    points.push({ x: +x.toFixed(2), f: +f(x).toFixed(4), fprime: +fp.toFixed(4), fdouble: +fpp.toFixed(4) });
+  }
+  return points;
+}
+const crit = criticalPoints(x => x * x * x - 3 * x, -2, 2, 0.5);
+console.log('\nCurve sketch f(x)=x³-3x:');
+crit.slice(0, 5).forEach(p => console.log(`  x=${p.x}: f=${p.f}, f'=${p.fprime}, f''=${p.fdouble}`));
+```
+
 ## Summary
 
 - Limits describe function behavior near points; continuity ensures no gaps

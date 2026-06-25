@@ -661,6 +661,80 @@ console.log(`  t=5: P=${popLog[50].toFixed(1)} (analytic: ${(100 / (1 + (100 / 1
 console.log(`  t=10: P=${popLog[100].toFixed(1)} (approaching K=100)`);
 ```
 
+```
+// --- Runge-Kutta 4th Order (general system) ---
+function rk4(
+  f: (t: number, y: number[]) => number[],
+  t0: number,
+  y0: number[],
+  h: number,
+  steps: number
+): { t: number[]; y: number[][] } {
+  const t = [t0];
+  const y = [y0];
+  for (let i = 0; i < steps; i++) {
+    const ti = t[i], yi = y[i];
+    const k1 = f(ti, yi).map(v => v);
+    const k2 = f(ti + h / 2, yi.map((v, j) => v + (h / 2) * k1[j]));
+    const k3 = f(ti + h / 2, yi.map((v, j) => v + (h / 2) * k2[j]));
+    const k4 = f(ti + h, yi.map((v, j) => v + h * k3[j]));
+    const next = yi.map((v, j) => v + (h / 6) * (k1[j] + 2 * k2[j] + 2 * k3[j] + k4[j]));
+    t.push(ti + h);
+    y.push(next);
+  }
+  return { t, y };
+}
+// Simple harmonic oscillator: y'' = -y → y' = v, v' = -y
+const sho = (t: number, y: number[]) => [y[1], -y[0]];
+const shoSol = rk4(sho, 0, [1, 0], 0.1, 100);
+console.log('SHO y(0)=1, y\'(0)=0: y(2π) =', shoSol.y[shoSol.t.findIndex(t => t >= 2 * Math.PI)][0].toFixed(4));
+
+// --- Predator-Prey (Lotka-Volterra) ---
+const lotkaVolterra = (α: number, β: number, δ: number, γ: number) =>
+  (t: number, y: number[]) => [α * y[0] - β * y[0] * y[1], δ * y[0] * y[1] - γ * y[1]];
+const lv = rk4(lotkaVolterra(0.1, 0.02, 0.01, 0.1), 0, [40, 9], 0.5, 200);
+const lastLv = lv.y[lv.y.length - 1];
+console.log('\nLotka-Volterra (t=100): prey=', lastLv[0].toFixed(1), 'predator=', lastLv[1].toFixed(1));
+
+// --- Characteristic Equation Solver ---
+function solveCharacteristic(coeffs: number[]): { roots: number[]; type: string } {
+  // For quadratic: a*r² + b*r + c = 0
+  const [a, b, c] = coeffs;
+  const disc = b * b - 4 * a * c;
+  if (disc > 0) {
+    const r1 = (-b + Math.sqrt(disc)) / (2 * a);
+    const r2 = (-b - Math.sqrt(disc)) / (2 * a);
+    return { roots: [r1, r2], type: 'real and distinct' };
+  } else if (Math.abs(disc) < 1e-10) {
+    return { roots: [-b / (2 * a)], type: 'repeated real' };
+  } else {
+    return { roots: [-b / (2 * a)], type: 'complex' };
+  }
+}
+const charEq = solveCharacteristic([1, -5, 6]); // r² - 5r + 6 = 0 → r=2, r=3
+console.log('\nCharacteristic r²-5r+6:', charEq.type, 'roots:', charEq.roots.join(', '));
+
+// --- Phase Portrait Direction Field ---
+function directionField(
+  f: (t: number, y: number) => number,
+  tRange: [number, number],
+  yRange: [number, number],
+  gridSize: number
+): { t: number; y: number; slope: number }[] {
+  const dt = (tRange[1] - tRange[0]) / gridSize;
+  const dy = (yRange[1] - yRange[0]) / gridSize;
+  const fields: { t: number; y: number; slope: number }[] = [];
+  for (let i = 0; i <= gridSize; i++)
+    for (let j = 0; j <= gridSize; j++) {
+      const t = tRange[0] + i * dt, y = yRange[0] + j * dy;
+      fields.push({ t: +t.toFixed(2), y: +y.toFixed(2), slope: +f(t, y).toFixed(2) });
+    }
+  return fields;
+}
+const df = directionField((t, y) => y - t * t, [-2, 2], [-2, 2], 5);
+console.log('\nDirection field y\'=y-t² (sample):', df.slice(0, 5).map(p => `(t=${p.t},y=${p.y},s=${p.slope})`).join(', '));
+```
+
 ## Summary
 
 - First-order ODEs are classified into separable, linear, exact, Bernoulli, and homogeneous types

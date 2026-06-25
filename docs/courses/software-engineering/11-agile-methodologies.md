@@ -806,6 +806,156 @@ class KanbanBoard {
 
 **Answer: B** — WIP limits expose bottlenecks and reduce context switching overhead.
 
+### TypeScript: Agile Methodology Tools
+
+```typescript
+// === Sprint Velocity Calculator ===
+function calcVelocity(sprintHistory: number[]): { avg: number; med: number; trend: "up" | "down" | "stable" } {
+  const avg = Math.round(sprintHistory.reduce((s, v) => s + v, 0) / sprintHistory.length);
+  const sorted = [...sprintHistory].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  const med = sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid];
+  const recent = sprintHistory.slice(-3);
+  const trend: "up" | "down" | "stable" = recent[2] > recent[0] ? "up" : recent[2] < recent[0] ? "down" : "stable";
+  return { avg, med, trend };
+}
+console.log(calcVelocity([30, 32, 28, 35, 29, 31]));
+
+// === Burndown Chart Data Generator ===
+function generateBurndown(totalPoints: number, days: number, dailyCompletion: number[]): { ideal: number[]; actual: number[]; days: number[] } {
+  const ideal = Array.from({ length: days + 1 }, (_, i) => totalPoints * (1 - i / days));
+  let remaining = totalPoints;
+  const actual = [remaining, ...dailyCompletion.map((c) => { remaining = Math.max(0, remaining - c); return remaining; })];
+  return { ideal, actual, days: Array.from({ length: days + 1 }, (_, i) => i) };
+}
+const burndown = generateBurndown(50, 10, [6, 4, 5, 7, 3, 5, 6, 4, 5, 5]);
+console.log(burndown.actual);
+
+// === Story Point Estimator (Planning Poker) ===
+const fibonacciScale = [1, 2, 3, 5, 8, 13, 21];
+function estimatePoints(estimates: number[]): { final: number; confidence: "high" | "medium" | "low"; spread: number } {
+  const avg = estimates.reduce((s, e) => s + e, 0) / estimates.length;
+  const closest = fibonacciScale.reduce((prev, curr) => Math.abs(curr - avg) < Math.abs(prev - avg) ? curr : prev);
+  const variance = estimates.reduce((s, e) => s + (e - avg) ** 2, 0) / estimates.length;
+  const std = Math.sqrt(variance);
+  return { final: closest, confidence: std <= 2 ? "high" : std <= 5 ? "medium" : "low", spread: Math.round(std * 100) / 100 };
+}
+console.log(estimatePoints([3, 5, 5, 3, 8]));
+
+// === Backlog Prioritizer (MoSCoW + WSJF) ===
+interface BacklogItem {
+  id: string; value: number; timeCriticality: number; riskReduction: number; jobSize: number;
+}
+function wsjf(item: BacklogItem): number {
+  return (item.value + item.timeCriticality + item.riskReduction) / item.jobSize;
+}
+function prioritizeBacklog(items: BacklogItem[]): BacklogItem[] {
+  return [...items].sort((a, b) => wsjf(b) - wsjf(a));
+}
+const backlog: BacklogItem[] = [
+  { id: "US-1", value: 10, timeCriticality: 8, riskReduction: 3, jobSize: 5 },
+  { id: "US-2", value: 5, timeCriticality: 2, riskReduction: 8, jobSize: 3 },
+  { id: "US-3", value: 8, timeCriticality: 5, riskReduction: 2, jobSize: 8 },
+  { id: "US-4", value: 3, timeCriticality: 3, riskReduction: 5, jobSize: 2 },
+];
+console.log(prioritizeBacklog(backlog).map((i) => `${i.id}: WSJF=${wsjf(i).toFixed(2)}`));
+
+// === Cycle Time Calculator ===
+function cycleTime(completedItems: { started: Date; finished: Date }[]): { avg: number; p50: number; p95: number } {
+  const days = completedItems.map((i) => (i.finished.getTime() - i.started.getTime()) / (1000 * 60 * 60 * 24));
+  const sorted = [...days].sort((a, b) => a - b);
+  const avg = days.reduce((s, d) => s + d, 0) / days.length;
+  const idx50 = Math.floor(sorted.length * 0.5);
+  const idx95 = Math.floor(sorted.length * 0.95);
+  return { avg: Math.round(avg * 10) / 10, p50: sorted[idx50], p95: sorted[Math.min(idx95, sorted.length - 1)] };
+}
+const now = Date.now();
+console.log(cycleTime([
+  { started: new Date(now - 5 * 86400000), finished: new Date(now) },
+  { started: new Date(now - 3 * 86400000), finished: new Date(now) },
+]));
+
+// === Velocity Forecaster ===
+function forecastVelocity(history: number[], confidence = 0.85): { min: number; likely: number; max: number } {
+  const avg = history.reduce((s, v) => s + v, 0) / history.length;
+  const std = Math.sqrt(history.reduce((s, v) => s + (v - avg) ** 2, 0) / history.length);
+  const z = confidence === 0.85 ? 1.44 : confidence === 0.95 ? 1.96 : 1;
+  return { min: Math.round(avg - z * std), likely: Math.round(avg), max: Math.round(avg + z * std) };
+}
+console.log(forecastVelocity([30, 32, 28, 35, 29, 31]));
+```
+
+### TypeScript: Agile Metrics Tools
+
+```typescript
+// === Sprint Velocity Tracker ===
+interface Sprint { number: number; plannedPoints: number; completedPoints: number; }
+class VelocityTracker {
+  private sprints: Sprint[] = [];
+  addSprint(sprint: Sprint): void { this.sprints.push(sprint); }
+  getAverageVelocity(): number {
+    if (this.sprints.length === 0) return 0;
+    return Math.round(this.sprints.reduce((s, sp) => s + sp.completedPoints, 0) / this.sprints.length);
+  }
+  getVelocityTrend(): { increasing: boolean; percentage: number } {
+    if (this.sprints.length < 2) return { increasing: true, percentage: 0 };
+    const first = this.sprints[0].completedPoints;
+    const last = this.sprints[this.sprints.length - 1].completedPoints;
+    return { increasing: last >= first, percentage: first > 0 ? Math.round(((last - first) / first) * 100) : 0 };
+  }
+  predictCompletion(backlogPoints: number): number {
+    const avg = this.getAverageVelocity();
+    return avg > 0 ? Math.ceil(backlogPoints / avg) : -1;
+  }
+}
+
+// === Burndown Chart Calculator ===
+function calculateBurndown(days: number, totalPoints: number, actual: { day: number; remaining: number }[]): { ideal: number[]; actual: number[] } {
+  const ideal = Array.from({ length: days }, (_, i) => Math.round(totalPoints * (1 - i / days)));
+  const actualData: number[] = [];
+  for (let d = 0; d < days; d++) {
+    const entry = actual.find(a => a.day === d);
+    actualData.push(entry ? entry.remaining : actualData[actualData.length - 1] ?? totalPoints);
+  }
+  return { ideal, actual: actualData };
+}
+
+// === Kanban WIP Limit Enforcer ===
+function enforceWIP(columns: { name: string; wipLimit: number; items: number; }[]): { column: string; withinLimit: boolean; violation: number }[] {
+  return columns.map(col => ({
+    column: col.name,
+    withinLimit: col.items <= col.wipLimit,
+    violation: Math.max(0, col.items - col.wipLimit),
+  }));
+}
+
+// === Cycle Time Analyzer ===
+interface WorkItem { id: string; started: Date; completed: Date; }
+function cycleTime(item: WorkItem): number { return (item.completed.getTime() - item.started.getTime()) / (1000 * 60 * 60 * 24); }
+function averageCycleTime(items: WorkItem[]): number {
+  if (items.length === 0) return 0;
+  return Math.round(items.reduce((s, i) => s + cycleTime(i), 0) / items.length);
+}
+
+// === Throughput Calculator ===
+function throughput(items: WorkItem[], periodDays: number): number {
+  return Math.round(items.length / periodDays);
+}
+
+const tracker = new VelocityTracker();
+tracker.addSprint({ number: 1, plannedPoints: 30, completedPoints: 25 });
+tracker.addSprint({ number: 2, plannedPoints: 30, completedPoints: 28 });
+tracker.addSprint({ number: 3, plannedPoints: 35, completedPoints: 32 });
+console.log(tracker.getAverageVelocity()); // ~28
+console.log(tracker.predictCompletion(100)); // ~4 sprints
+
+const burndown = calculateBurndown(10, 50, [{ day: 0, remaining: 50 }, { day: 5, remaining: 30 }, { day: 10, remaining: 5 }]);
+console.log(burndown.ideal[0], burndown.actual[0]);
+
+const wipCheck = enforceWIP([{ name: "In Progress", wipLimit: 3, items: 5 }, { name: "Review", wipLimit: 2, items: 1 }]);
+console.log(wipCheck); // Violation in "In Progress"
+```
+
 ## Summary
 
 Agile methodologies emphasize iterative development, customer collaboration, and responsiveness to change over rigid planning. The Agile Manifesto provides four values and twelve principles. Scrum implements agile through defined roles (Product Owner, Scrum Master, Development Team), artifacts (Product Backlog, Sprint Backlog, Increment), and events (Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective). Extreme Programming adds engineering practices like TDD, pair programming, and continuous integration. Kanban visualises workflow and limits work in progress. User stories capture requirements in an INVEST-compliant format. Estimation uses story points and velocity for forecasting. Burndown charts track sprint progress. Agile adoption requires cultural shift, not just process change.

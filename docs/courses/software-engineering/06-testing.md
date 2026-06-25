@@ -662,6 +662,164 @@ graph TD
     end
 ```
 
+### TypeScript: Testing Tools
+
+```typescript
+// === Test Case Generator ===
+interface MethodUnderTest {
+  name: string;
+  params: { name: string; type: string; examples: unknown[] }[];
+  returnType: string;
+  invariants: string[];
+}
+function generateTestCases(method: MethodUnderTest): string[] {
+  const tests: string[] = [];
+  const paramCombos = method.params.length === 0 ? [[]] : method.params[0].examples.map((v) => [v]);
+  for (const combo of paramCombos) {
+    tests.push(`// ${method.name}(${combo.join(", ")}) should return ${method.returnType}`);
+  }
+  if (method.invariants.length > 0) {
+    tests.push(`// Property: ${method.invariants.join(" and ")}`);
+  }
+  tests.push(`// Edge case: null input`, `// Edge case: empty input`, `// Edge case: boundary value`);
+  return tests;
+}
+const addMethod: MethodUnderTest = {
+  name: "add",
+  params: [{ name: "a", type: "number", examples: [0, 1, -1, 100] }, { name: "b", type: "number", examples: [0, 2, -2, 200] }],
+  returnType: "number",
+  invariants: ["add(a, b) === add(b, a)", "add(a, 0) === a"],
+};
+console.log(generateTestCases(addMethod).join("\n"));
+
+// === Coverage Report Parser ===
+interface CoverageData {
+  file: string;
+  linesTotal: number;
+  linesCovered: number;
+  branchesTotal: number;
+  branchesCovered: number;
+}
+function coverageSummary(data: CoverageData[]): { lineRate: number; branchRate: number; uncoveredFiles: string[] } {
+  const totalLines = data.reduce((s, d) => s + d.linesTotal, 0);
+  const coveredLines = data.reduce((s, d) => s + d.linesCovered, 0);
+  const totalBranches = data.reduce((s, d) => s + d.branchesTotal, 0);
+  const coveredBranches = data.reduce((s, d) => s + d.branchesCovered, 0);
+  return {
+    lineRate: totalLines > 0 ? coveredLines / totalLines : 0,
+    branchRate: totalBranches > 0 ? coveredBranches / totalBranches : 0,
+    uncoveredFiles: data.filter((d) => d.linesCovered / d.linesTotal < 0.8).map((d) => d.file),
+  };
+}
+const cov: CoverageData[] = [
+  { file: "auth.ts", linesTotal: 100, linesCovered: 95, branchesTotal: 20, branchesCovered: 18 },
+  { file: "api.ts", linesTotal: 50, linesCovered: 30, branchesTotal: 10, branchesCovered: 5 },
+];
+console.log(coverageSummary(cov));
+
+// === Mutation Testing Simulator ===
+function mutate(source: string): string[] {
+  const mutants: string[] = [];
+  if (source.includes(">")) mutants.push(source.replace(">", ">="));
+  if (source.includes("<")) mutants.push(source.replace("<", "<="));
+  if (source.includes("===")) mutants.push(source.replace("===", "!=="));
+  if (source.includes("!==")) mutants.push(source.replace("!==", "==="));
+  if (source.includes("&&")) mutants.push(source.replace("&&", "||"));
+  if (source.includes("||")) mutants.push(source.replace("||", "&&"));
+  return mutants;
+}
+console.log(mutate("if (x > 0 && y === 5)"));
+
+// === Test Pyramid Checker ===
+interface TestSuite { unit: number; integration: number; e2e: number }
+function checkPyramid(suite: TestSuite): { healthy: boolean; ratio: string } {
+  const total = suite.unit + suite.integration + suite.e2e;
+  if (total === 0) return { healthy: false, ratio: "0:0:0" };
+  const unitPct = (suite.unit / total * 100).toFixed(0);
+  const intPct = (suite.integration / total * 100).toFixed(0);
+  const e2ePct = (suite.e2e / total * 100).toFixed(0);
+  const healthy = suite.unit > suite.integration && suite.integration > suite.e2e;
+  return { healthy, ratio: `${unitPct}:${intPct}:${e2ePct}` };
+}
+console.log(checkPyramid({ unit: 100, integration: 30, e2e: 10 })); // healthy: true
+console.log(checkPyramid({ unit: 10, integration: 30, e2e: 60 })); // healthy: false
+```
+
+### TypeScript: Testing Strategy Tools
+
+```typescript
+// === Test Coverage Analyzer ===
+interface TestCase { id: string; requirement: string; steps: string[]; expected: string; automated: boolean; }
+interface CoverageMap { requirement: string; tested: boolean; passed: boolean; }
+
+class TestManager {
+  private tests: TestCase[] = [];
+  private results: Map<string, boolean> = new Map();
+
+  addTest(test: TestCase): void { this.tests.push(test); }
+  
+  getCoverage(): CoverageMap[] {
+    const reqs = [...new Set(this.tests.map(t => t.requirement))];
+    return reqs.map(req => {
+      const relevant = this.tests.filter(t => t.requirement === req);
+      const anyTested = relevant.some(t => this.results.has(t.id));
+      const allPassed = relevant.every(t => this.results.get(t.id) === true);
+      return { requirement: req, tested: anyTested, passed: anyTested && allPassed };
+    });
+  }
+
+  getCoveragePercentage(): number {
+    const coverage = this.getCoverage();
+    if (coverage.length === 0) return 0;
+    return Math.round((coverage.filter(c => c.tested).length / coverage.length) * 100);
+  }
+
+  getTestPyramid(): { unit: number; integration: number; e2e: number } {
+    return {
+      unit: this.tests.filter(t => t.id.startsWith("UT")).length,
+      integration: this.tests.filter(t => t.id.startsWith("IT")).length,
+      e2e: this.tests.filter(t => t.id.startsWith("E2E")).length,
+    };
+  }
+
+  runTest(id: string, passed: boolean): void { this.results.set(id, passed); }
+}
+
+// === Mutation Testing Simulator ===
+interface Mutation { operator: string; file: string; killed: boolean; }
+function simulateMutations(source: string): Mutation[] {
+  const mutations: Mutation[] = [
+    { operator: "Replace > with <", file: source, killed: false },
+    { operator: "Remove negation (!)", file: source, killed: false },
+    { operator: "Swap AND/OR", file: source, killed: false },
+    { operator: "Off-by-one: +1/-1", file: source, killed: false },
+    { operator: "Null check removal", file: source, killed: false },
+  ];
+  return mutations;
+}
+function mutationScore(mutations: Mutation[]): number {
+  const killed = mutations.filter(m => m.killed).length;
+  return Math.round((killed / mutations.length) * 100);
+}
+
+// === Risk-Based Testing Prioritizer ===
+function prioritizeTests(tests: TestCase[], risks: Map<string, number>): TestCase[] {
+  return [...tests].sort((a, b) => {
+    const riskA = risks.get(a.requirement) ?? 1;
+    const riskB = risks.get(b.requirement) ?? 1;
+    return riskB - riskA;
+  });
+}
+
+const tm = new TestManager();
+tm.addTest({ id: "UT-001", requirement: "REQ-001", steps: ["call fn"], expected: "42", automated: true });
+tm.addTest({ id: "IT-001", requirement: "REQ-002", steps: ["send req"], expected: "200 OK", automated: true });
+tm.runTest("UT-001", true);
+tm.runTest("IT-001", true);
+console.log(tm.getCoveragePercentage()); // 100
+console.log(tm.getTestPyramid()); // unit:1, integration:1, e2e:0
+```
+
 ## Summary
 
 Software testing is the primary dynamic verification and validation technique. Testing occurs at four levels: unit, integration, system, and acceptance. White-box techniques use knowledge of internal structure; black-box techniques derive test cases from specifications. The test pyramid guides automation investment. TDD follows the red-green-refactor cycle and produces testable designs. Test doubles (dummy, fake, stub, spy, mock) isolate units under test. Property-based testing verifies behavioural properties across input ranges. Non-functional testing addresses performance, security, and usability. Regression testing protects against regression defects.

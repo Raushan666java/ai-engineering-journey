@@ -652,6 +652,83 @@ function catalan(n: number): number {
 console.log('Catalan C₅:', catalan(5)); // 42
 ```
 
+```
+// --- Advanced Combinatorial Generators ---
+function permutationsWithRepetition<T>(elements: T[], r: number): T[][] {
+  if (r === 0) return [[]];
+  return permutationsWithRepetition(elements, r - 1).flatMap(p =>
+    elements.map(e => [...p, e]));
+}
+function combinationsWithRepetition<T>(elements: T[], r: number): T[][] {
+  if (r === 0) return [[]];
+  if (elements.length === 0) return [];
+  const [first, ...rest] = elements;
+  const withFirst = combinationsWithRepetition(elements, r - 1).map(c => [first, ...c]);
+  const withoutFirst = combinationsWithRepetition(rest, r);
+  return [...withFirst, ...withoutFirst];
+}
+console.log('Permutations w/ rep of [A,B] (r=2):', permutationsWithRepetition(['A','B'],2).map(p=>p.join('')).join(', '));
+console.log('Combinations w/ rep of [A,B] (r=2):', combinationsWithRepetition(['A','B'],2).map(c=>c.join('')).join(', '));
+
+// --- Generalized Pigeonhole ---
+function pigeonholeGeneral(items: number, boxes: number): number {
+  return Math.ceil(items / boxes);
+}
+console.log('\nPigeonhole (10 items, 3 boxes):', pigeonholeGeneral(10, 3), 'items/box min');
+
+// --- Stars and Bars ---
+function starsAndBars(n: number, k: number): number {
+  return nCr(n + k - 1, k - 1);
+}
+console.log('Stars & bars (n=5, k=3):', starsAndBars(5, 3), 'ways (expected C(7,2)=21)');
+
+// --- Inclusion-Exclusion Calculator ---
+function incExc(...sets: number[][]): number {
+  let total = 0;
+  for (let mask = 1; mask < (1 << sets.length); mask++) {
+    const bits = mask.toString(2).split('').filter(b => b === '1').length;
+    let inter = new Set(sets[0]);
+    for (let i = 0; i < sets.length; i++)
+      if (mask & (1 << i))
+        inter = new Set([...inter].filter(x => sets[i].includes(x)));
+    total += (bits % 2 === 1 ? 1 : -1) * inter.size;
+  }
+  return total;
+}
+const A = [1, 2, 3, 4], B = [3, 4, 5, 6], C = [4, 5, 6, 7];
+console.log('\nInclusion-Exclusion |A∪B∪C|:', incExc(A, B, C), '(expected: 7)');
+
+// --- Derangement Counter ---
+function derangements(n: number): number {
+  if (n === 0) return 1;
+  if (n === 1) return 0;
+  let d0 = 1, d1 = 0;
+  for (let i = 2; i <= n; i++) {
+    const d2 = (i - 1) * (d0 + d1);
+    d0 = d1; d1 = d2;
+  }
+  return d1;
+}
+console.log('\nDerangements !4:', derangements(4), '(expected: 9)');
+console.log('Derangements !5:', derangements(5), '(expected: 44)');
+
+// --- Multinomial Coefficient ---
+function multinomial(n: number, ...groups: number[]): number {
+  let result = 1n, remaining = n;
+  for (const g of groups) {
+    result *= BigInt(nCr(remaining, g));
+    remaining -= g;
+  }
+  return Number(result);
+}
+console.log('\nMultinomial(7, 2, 3, 2):', multinomial(7, 2, 3, 2));
+// Verify: 7!/(2!3!2!)
+const verify = (n: number, ...gs: number[]) =>
+  Array.from({length: n}, (_, i) => i + 1).reduce((a, b) => a * b, 1) /
+  gs.reduce((a, g) => a * Array.from({length: g}, (_, i) => i + 1).reduce((a, b) => a * b, 1), 1);
+console.log('  Verified:', verify(7, 2, 3, 2));
+```
+
 ## Summary
 
 - Product rule for sequential choices; sum rule for disjoint alternatives.

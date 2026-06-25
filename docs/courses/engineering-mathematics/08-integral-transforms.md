@@ -353,6 +353,83 @@ const conv = convolve([1, 2, 3], [4, 5, 6]);
 console.log(`Convolution [1,2,3] * [4,5,6]: [${conv.map(v => v.toFixed(0)).join(", ")}] (expected: [4, 13, 28, 27, 18])`);
 ```
 
+```
+// --- DFT Implementation ---
+function dft(signal: number[]): { re: number[]; im: number[] } {
+  const n = signal.length;
+  const re = new Array(n).fill(0), im = new Array(n).fill(0);
+  for (let k = 0; k < n; k++) {
+    for (let t = 0; t < n; t++) {
+      const angle = (2 * Math.PI * k * t) / n;
+      re[k] += signal[t] * Math.cos(angle);
+      im[k] -= signal[t] * Math.sin(angle);
+    }
+    re[k] /= n; im[k] /= n;
+  }
+  return { re, im };
+}
+function dftMagnitude(signal: number[]): number[] {
+  const { re, im } = dft(signal);
+  return re.map((r, i) => Math.sqrt(r * r + im[i] * im[i]));
+}
+// Pure sine wave at frequency 2
+const sineWave = Array.from({ length: 64 }, (_, t) => Math.sin(2 * Math.PI * 2 * t / 64));
+const mag = dftMagnitude(sineWave);
+console.log('DFT of sin(2·2πt/64):');
+console.log('  Peak at k=2:', mag[2].toFixed(4), '(expected: 0.5)');
+console.log('  DC component k=0:', mag[0].toFixed(4), '(expected: ~0)');
+
+// --- Laplace Transform Table Lookup ---
+type LaplaceEntry = { f_t: string; F_s: string; conditions: string };
+const laplaceTable: LaplaceEntry[] = [
+  { f_t: '1', F_s: '1/s', conditions: 's > 0' },
+  { f_t: 't^n', F_s: 'n!/s^(n+1)', conditions: 's > 0' },
+  { f_t: 'e^(at)', F_s: '1/(s - a)', conditions: 's > a' },
+  { f_t: 'sin(ωt)', F_s: 'ω/(s² + ω²)', conditions: 's > 0' },
+  { f_t: 'cos(ωt)', F_s: 's/(s² + ω²)', conditions: 's > 0' },
+  { f_t: 't·sin(ωt)', F_s: '2ωs/(s² + ω²)²', conditions: 's > 0' },
+  { f_t: 'e^(at)·sin(ωt)', F_s: 'ω/((s - a)² + ω²)', conditions: 's > a' },
+  { f_t: 'δ(t)', F_s: '1', conditions: 'all s' },
+  { f_t: 'u(t)', F_s: '1/s', conditions: 's > 0' },
+];
+console.log('\nLaplace table lookup:');
+laplaceTable.slice(0, 5).forEach(e => console.log(`  £{${e.f_t}} = ${e.F_s}`));
+
+// --- Convolution via DFT (overlap-save) ---
+function convolveDFT(a: number[], b: number[]): number[] {
+  const n = a.length + b.length - 1;
+  const paddedA = [...a, ...new Array(n - a.length).fill(0)];
+  const paddedB = [...b, ...new Array(n - b.length).fill(0)];
+  const dftA = dft(paddedA);
+  const dftB = dft(paddedB);
+  const prodRe = dftA.re.map((_, i) => dftA.re[i] * dftB.re[i] - dftA.im[i] * dftB.im[i]);
+  const prodIm = dftA.re.map((_, i) => dftA.re[i] * dftB.im[i] + dftA.im[i] * dftB.re[i]);
+  // Inverse DFT
+  const result: number[] = [];
+  for (let t = 0; t < n; t++) {
+    let sum = 0;
+    for (let k = 0; k < n; k++) sum += prodRe[k] * Math.cos(2 * Math.PI * k * t / n) - prodIm[k] * Math.sin(2 * Math.PI * k * t / n);
+    result.push(sum / n);
+  }
+  return result;
+}
+const convDFT = convolveDFT([1, 2, 3], [4, 5, 6]);
+console.log('\nConvolution (DFT):', convDFT.map(v => v.toFixed(0)).join(', '), '(expected: 4, 13, 28, 27, 18)');
+
+// --- Z-Transform Pole-Zero Check ---
+function zTransformPoles(coeffs: number[]): number[] {
+  // Find roots of denominator polynomial for a transfer function
+  // For H(z) = 1 / (1 + a₁z⁻¹ + a₂z⁻²) → poles are roots of z² + a₁z + a₂ = 0
+  if (coeffs.length > 3) return []; // simplified for quadratic
+  const [a0, a1, a2] = coeffs.length === 3 ? coeffs : [1, coeffs[0], coeffs[1] ?? 0];
+  const disc = a1 * a1 - 4 * a0 * a2;
+  if (disc >= 0) return [(-a1 + Math.sqrt(disc)) / (2 * a0), (-a1 - Math.sqrt(disc)) / (2 * a0)];
+  return []; // complex
+}
+const poles = zTransformPoles([1, -0.5, 0.25]);
+console.log('\nZ-transform poles of H(z)=1/(1-0.5z⁻¹+0.25z⁻²):', poles.map(p => p.toFixed(4)).join(', '));
+```
+
 ## Summary
 
 - Fourier series decompose periodic functions into sine/cosine harmonics

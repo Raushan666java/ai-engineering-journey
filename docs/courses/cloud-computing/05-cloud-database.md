@@ -618,6 +618,44 @@ const plan = planner.plan(
 console.log("Migration plan:", JSON.stringify(plan, null, 2));
 ```
 
+### TypeScript: Multi-Region Latency Estimator
+
+```typescript
+interface RegionLatency { from: string; to: string; latencyMs: number; }
+interface BackupRetentionConfig { dailyRetention: number; weeklyRetention: number; monthlyRetention: number; yearlyRetention: number; }
+
+class MultiRegionLatency {
+  private matrix: RegionLatency[] = [
+    { from: "us-east-1", to: "eu-west-1", latencyMs: 80 },
+    { from: "us-east-1", to: "ap-southeast-1", latencyMs: 220 },
+    { from: "eu-west-1", to: "ap-southeast-1", latencyMs: 180 },
+    { from: "us-east-1", to: "us-west-2", latencyMs: 65 },
+  ];
+
+  estimate(primary: string, replicas: string[]): { avgLatencyMs: number; maxLatencyMs: number; estimatedSyncDelay: string } {
+    const latencies = replicas.filter(r => r !== primary).map(r => {
+      const entry = this.matrix.find(m => m.from === primary && m.to === r);
+      return entry ? entry.latencyMs : 300;
+    });
+    if (latencies.length === 0) return { avgLatencyMs: 0, maxLatencyMs: 0, estimatedSyncDelay: "0ms" };
+    const avg = Math.round(latencies.reduce((a, b) => a + b, 0) / latencies.length);
+    const max = Math.max(...latencies);
+    return { avgLatencyMs: avg, maxLatencyMs: max, estimatedSyncDelay: `${max * 3}ms (3x round-trip)` };
+  }
+
+  backupRetentionCost(config: BackupRetentionConfig, backupSizeGB: number, costPerGBMo: number): { totalBackups: number; monthlyCost: number } {
+    const totalBackups = config.dailyRetention + config.weeklyRetention + config.monthlyRetention + config.yearlyRetention;
+    const monthlyCost = Math.round(backupSizeGB * costPerGBMo * (config.dailyRetention / 30 + config.weeklyRetention / 4 + config.monthlyRetention + config.yearlyRetention / 12) * 100) / 100;
+    return { totalBackups, monthlyCost };
+  }
+}
+
+const mlr = new MultiRegionLatency();
+console.log("US to EU sync:", JSON.stringify(mlr.estimate("us-east-1", ["eu-west-1", "ap-southeast-1"]), null, 2));
+console.log("Backup retention:", JSON.stringify(mlr.backupRetentionCost({ dailyRetention: 7, weeklyRetention: 4, monthlyRetention: 12, yearlyRetention: 3 }, 500, 0.023), null, 2));
+```
+```
+
 ## Summary
 
 - The CAP theorem forces a choice between consistency and availability during partitions.

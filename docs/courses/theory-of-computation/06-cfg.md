@@ -728,6 +728,182 @@ console.log(cfg.cykParse("ba"));  // false
 console.log(cfg.isAmbiguous());   // false
 ```
 
+// ─────────────────────────────────────────────────────
+// CNF Converter — transforms any CFG into Chomsky
+// Normal Form where every production is A → BC or A → a
+// (plus S → ε for the empty string).
+// ─────────────────────────────────────────────────────
+
+class CNFConverter {
+  private variables: Set<string>;
+  private terminals: Set<string>;
+  private productions: Array<{ lhs: string; rhs: string[] }>;
+  private startVar: string;
+
+  constructor(
+    variables: Set<string>, terminals: Set<string>,
+    productions: Array<{ lhs: string; rhs: string[] }>,
+    startVar: string
+  ) {
+    this.variables = variables; this.terminals = terminals;
+    this.productions = productions; this.startVar = startVar;
+  }
+
+  // Step 1: Add new start variable S₀ → S
+  private addNewStart(): Array<{ lhs: string; rhs: string[] }> {
+    const prods = [...this.productions];
+    prods.push({ lhs: "S₀", rhs: [this.startVar] });
+    return prods;
+  }
+
+  // Step 2: Eliminate ε-productions (simplified)
+  private eliminateEpsilon(prods: Array<{ lhs: string; rhs: string[] }>): Array<{ lhs: string; rhs: string[] }> {
+    // Find nullable variables
+    const nullable = new Set<string>();
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const p of prods) {
+        if (p.rhs.length === 0 && !nullable.has(p.lhs)) {
+          nullable.add(p.lhs); changed = true;
+        }
+        if (p.rhs.every(s => nullable.has(s)) && !nullable.has(p.lhs)) {
+          nullable.add(p.lhs); changed = true;
+        }
+      }
+    }
+
+    // Build new productions omitting nullable symbols
+    const result: Array<{ lhs: string; rhs: string[] }> = [];
+    for (const p of prods) {
+      if (p.rhs.length === 0) continue;
+      const subsets = this.generateSubsets(p.rhs, nullable);
+      for (const subset of subsets) {
+        if (subset.length > 0) result.push({ lhs: p.lhs, rhs: subset });
+      }
+    }
+    return result;
+  }
+
+  private generateSubsets(rhs: string[], nullable: Set<string>): string[][] {
+    const results: string[][] = [[]];
+    for (const sym of rhs) {
+      const newResults: string[][] = [];
+      for (const r of results) {
+        newResults.push([...r, sym]);
+        if (nullable.has(sym)) newResults.push([...r]);
+      }
+      results.length = 0;
+      results.push(...newResults);
+    }
+    return results;
+  }
+
+  // Step 3: Eliminate unit productions (simplified)
+  private eliminateUnit(prods: Array<{ lhs: string; rhs: string[] }>): Array<{ lhs: string; rhs: string[] }> {
+    const unitPairs = new Map<string, Set<string>>();
+    for (const v of this.variables) unitPairs.set(v, new Set([v]));
+
+    // Find unit closure
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const p of prods) {
+        if (p.rhs.length === 1 && /^[A-Z₀]$/.test(p.rhs[0])) {
+          const target = p.rhs[0];
+          for (const s of unitPairs.get(target)!) {
+            if (!unitPairs.get(p.lhs)!.has(s)) {
+              unitPairs.get(p.lhs)!.add(s);
+              changed = true;
+            }
+          }
+        }
+      }
+    }
+
+    // Remove unit productions, add non-unit from closure
+    const result: Array<{ lhs: string; rhs: string[] }> = [];
+    for (const [v, closure] of unitPairs) {
+      for (const c of closure) {
+        if (c === v) continue;
+        for (const p of prods) {
+          if (p.lhs === c && !(p.rhs.length === 1 && /^[A-Z₀]$/.test(p.rhs[0]))) {
+            result.push({ lhs: v, rhs: [...p.rhs] });
+          }
+        }
+      }
+    }
+    // Keep existing non-unit productions
+    for (const p of prods) {
+      if (!(p.rhs.length === 1 && /^[A-Z₀]$/.test(p.rhs[0]))) {
+        result.push({ lhs: p.lhs, rhs: [...p.rhs] });
+      }
+    }
+    return result;
+  }
+
+  // Step 4: Convert to CNF — replace terminals in mixed rhs,
+  // and break long RHS sequences into binary productions.
+  private toCNF(prods: Array<{ lhs: string; rhs: string[] }>): Array<{ lhs: string; rhs: string[] }> {
+    const result: Array<{ lhs: string; rhs: string[] }> = [];
+    let counter = 0;
+    const newVar = () => `X${counter++}`;
+
+    // Replace terminals in mixed RHS
+    const terminalMap = new Map<string, string>();
+    for (const p of prods) {
+      if (p.rhs.length === 1 && this.terminals.has(p.rhs[0])) {
+        result.push({ lhs: p.lhs, rhs: [...p.rhs] });
+      } else if (p.rhs.length >= 2) {
+        const newRhs = p.rhs.map(sym => {
+          if (this.terminals.has(sym)) {
+            if (!terminalMap.has(sym)) {
+              const nv = newVar();
+              terminalMap.set(sym, nv);
+              result.push({ lhs: nv, rhs: [sym] });
+            }
+            return terminalMap.get(sym)!;
+          }
+          return sym;
+        });
+        // Break into binary productions
+        let current = newRhs;
+        while (current.length > 2) {
+          const nv = newVar();
+          result.push({ lhs: nv, rhs: [current[0], current[1]] });
+          current = [nv, ...current.slice(2)];
+        }
+        result.push({ lhs: p.lhs, rhs: current });
+      }
+    }
+    return result;
+  }
+
+  convert(): Array<{ lhs: string; rhs: string[] }> {
+    let prods = this.addNewStart();
+    prods = this.eliminateEpsilon(prods);
+    prods = this.eliminateUnit(prods);
+    prods = this.toCNF(prods);
+    return prods;
+  }
+}
+
+// Demo
+const cnf = new CNFConverter(
+  new Set(["S", "A", "B"]), new Set(["a", "b"]),
+  [
+    { lhs: "S", rhs: ["A", "S", "B"] }, { lhs: "S", rhs: [] },
+    { lhs: "A", rhs: ["a"] }, { lhs: "B", rhs: ["b"] }
+  ],
+  "S"
+);
+const cnfProds = cnf.convert();
+console.log("CNF productions:");
+for (const p of cnfProds) {
+  console.log(`  ${p.lhs} → ${p.rhs.join(" ")}`);
+}
+```
+
 ## Summary
 
 - A CFG consists of variables, terminals, productions, and a start variable.

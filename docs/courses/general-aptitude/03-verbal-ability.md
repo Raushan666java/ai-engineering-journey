@@ -709,6 +709,140 @@ console.log("Cloze:", ClozeGenerator.create("Artificial intelligence transforms 
 console.log("Synonyms:", SynonymFinder.synonyms("good"));
 ```
 
+// ─────────────────────────────────────────────────────
+// Sentence Completion Engine — fills blanks in
+// sentences using context clues, then scores the
+// correctness of the chosen words.
+// ─────────────────────────────────────────────────────
+
+class SentenceCompletionEngine {
+  private static contextClues: Record<string, string[]> = {
+    "however": ["but", "yet", "although", "nevertheless", "nonetheless"],
+    "therefore": ["thus", "hence", "consequently", "accordingly", "so"],
+    "moreover": ["furthermore", "additionally", "also", "besides", "in addition"],
+    "contrast": ["whereas", "while", "on the other hand", "conversely", "in contrast"],
+    "example": ["for instance", "for example", "such as", "namely", "specifically"],
+    "cause": ["because", "since", "as", "due to", "owing to"],
+    "result": ["as a result", "as a consequence", "therefore", "thus", "accordingly"],
+    "similarity": ["similarly", "likewise", "in the same way", "equally"],
+    "emphasis": ["indeed", "in fact", "certainly", "surely", "undoubtedly"],
+    "time": ["first", "then", "next", "subsequently", "finally", "meanwhile"]
+  };
+
+  static findContextClue(sentence: string): string[] {
+    const lower = sentence.toLowerCase();
+    const clues: string[] = [];
+    for (const [clue, synonyms] of Object.entries(this.contextClues)) {
+      for (const s of synonyms) {
+        if (lower.includes(s)) { clues.push(clue); break; }
+      }
+    }
+    return clues;
+  }
+
+  static suggestWords(sentence: string, blankIdx: number): string[] {
+    const clues = this.findContextClue(sentence);
+    const suggestions: string[] = [];
+    for (const c of clues) suggestions.push(...(this.contextClues[c] || []));
+    return [...new Set(suggestions)];
+  }
+
+  static scoreFill(original: string, filled: string): number {
+    const orig = original.toLowerCase();
+    const filledL = filled.toLowerCase();
+    const blank = "_".repeat(5);
+    const idx = orig.indexOf(blank);
+    if (idx === -1) return 0;
+    const contextBefore = orig.slice(Math.max(0, idx - 20), idx).trim();
+    const contextAfter = orig.slice(idx + blank.length, idx + blank.length + 20).trim();
+    const filledWord = filledL.slice(idx, idx + filled.slice(idx, idx + blank.length).trim().length);
+    const score = (contextBefore.length > 0 && contextAfter.length > 0) ? 1 : 0.5;
+    return score;
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Reading Comprehension Scorer — extracts key sentences
+// from a passage, generates comprehension questions,
+// and scores answers against the passage content.
+// ─────────────────────────────────────────────────────
+
+class ReadingComprehensionScorer {
+  static extractKeySentences(passage: string, count: number = 3): string[] {
+    const sentences = passage.split(/[.!?]+/).filter(s => s.trim().length > 10);
+    // Score sentences by length and keyword density
+    const scored = sentences.map(s => {
+      const wordCount = s.split(/\s+/).length;
+      const keywordScore = (s.match(/\b(is|are|was|were|has|have|had|do|does|did|will|would|can|could|may|might|shall|should|must)\b/gi) || []).length;
+      return { sentence: s.trim(), score: wordCount * 0.5 + keywordScore * 2 };
+    });
+    return scored.sort((a, b) => b.score - a.score).slice(0, count).map(s => s.sentence);
+  }
+
+  static generateQuestion(passage: string): { question: string; answer: string } {
+    const sentences = this.extractKeySentences(passage, 5);
+    const chosen = sentences[Math.floor(Math.random() * sentences.length)];
+    // Extract a phrase as the answer
+    const words = chosen.split(/\s+/);
+    const answerWord = words.find(w => w.length > 4) || words[0];
+    const q = chosen.replace(new RegExp(answerWord, "i"), "______");
+    return { question: q, answer: answerWord };
+  }
+
+  static scoreAnswer(passage: string, question: string, answer: string): { correct: boolean; score: number; feedback: string } {
+    const passLower = passage.toLowerCase();
+    const answerLower = answer.toLowerCase();
+    if (passLower.includes(answerLower)) {
+      return { correct: true, score: 1.0, feedback: "✓ Answer found in passage." };
+    }
+    return { correct: false, score: 0.0, feedback: "✗ Answer not verified in passage." };
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Error Detection Engine — finds grammatical errors
+// in sentences
+// ─────────────────────────────────────────────────────
+
+class GrammarErrorDetector {
+  static detect(sentence: string): string[] {
+    const errors: string[] = [];
+    const words = sentence.split(/\s+/);
+
+    // Subject-verb agreement check (simplified)
+    const singularSubject = /\b(he|she|it|the\s+\w+)\b/i;
+    const pluralSubject = /\b(they|we|these|those)\b/i;
+
+    for (let i = 0; i < words.length - 1; i++) {
+      // Check "he/she/it ... -s" -> "he run" should be "he runs"
+      if (singularSubject.test(words[i]) && words[i + 1] === "run") errors.push("Subject-verb agreement: 'he/she/it' requires 'runs'");
+      // Check "they ... -s" -> "they runs" should be "they run"
+      if (pluralSubject.test(words[i]) && words[i + 1] === "runs") errors.push("Subject-verb agreement: 'they/we' requires 'run'");
+    }
+
+    // Check for double negatives
+    if (/don't\s+\w*n't|never\s+\w*n't|nobody\s+\w*n't/i.test(sentence)) {
+      errors.push("Double negation detected");
+    }
+
+    return errors.length > 0 ? errors : ["No obvious errors detected"];
+  }
+}
+
+// Demo
+const sent = "The company's profits increased significantly; however, the market share declined.";
+console.log("Context clues:", SentenceCompletionEngine.findContextClue(sent));
+console.log("Suggested words:", SentenceCompletionEngine.suggestWords(sent, 0));
+
+const passage = "Artificial intelligence is transforming industries through automation. Machine learning algorithms can analyze vast amounts of data. Deep learning networks have achieved human-level performance in image recognition. Natural language processing enables computers to understand human speech.";
+console.log("\nKey sentences:", ReadingComprehensionScorer.extractKeySentences(passage));
+const q = ReadingComprehensionScorer.generateQuestion(passage);
+console.log(`Q: ${q.question}`);
+console.log(`A: ${q.answer}`);
+
+console.log("\nGrammar check:", GrammarErrorDetector.detect("They runs every morning"));
+```
+
 ## Summary
 
 - Subject-verb agreement: identify the true subject; ignore intervening phrases

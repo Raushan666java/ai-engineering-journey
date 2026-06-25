@@ -664,6 +664,58 @@ requests.forEach((r) => {
 });
 ```
 
+### TypeScript: IAM Policy Diff Checker & Encryption Validator
+
+```typescript
+interface PolicyStatement { effect: string; actions: string[]; resources: string[]; }
+interface Policy { name: string; statements: PolicyStatement[]; }
+
+class PolicyDiffChecker {
+  diff(desired: Policy, actual: Policy): { missing: PolicyStatement[]; excessive: PolicyStatement[] } {
+    const missing: PolicyStatement[] = [];
+    const excessive: PolicyStatement[] = [];
+    for (const ds of desired.statements) {
+      const match = actual.statements.find(as =>
+        as.effect === ds.effect && as.actions.every(a => ds.actions.includes(a))
+      );
+      if (!match) missing.push(ds);
+    }
+    for (const as of actual.statements) {
+      const match = desired.statements.find(ds =>
+        ds.effect === as.effect && as.actions.every(a => ds.actions.includes(a))
+      );
+      if (!match) excessive.push(as);
+    }
+    return { missing, excessive };
+  }
+}
+
+class EncryptionValidator {
+  check(config: { s3Encryption: boolean; s3TLS: boolean; ebsEncryption: boolean; rdsEncryption: boolean; kmsEnabled: boolean; tlsVersion: string }): { pass: boolean; failures: string[] } {
+    const failures: string[] = [];
+    if (!config.s3Encryption) failures.push("S3 default encryption disabled");
+    if (!config.s3TLS) failures.push("S3 HTTPS-only not enforced");
+    if (!config.ebsEncryption) failures.push("EBS encryption not enabled");
+    if (!config.rdsEncryption) failures.push("RDS encryption at rest disabled");
+    if (!config.kmsEnabled) failures.push("KMS customer-managed keys not configured");
+    if (config.tlsVersion < "1.2") failures.push(`TLS ${config.tlsVersion} too old, minimum 1.2 required`);
+    return { pass: failures.length === 0, failures };
+  }
+}
+
+const pdc = new PolicyDiffChecker();
+const diff = pdc.diff(
+  { name: "desired", statements: [{ effect: "Allow", actions: ["s3:GetObject"], resources: ["arn:aws:s3:::bucket/*"] }] },
+  { name: "actual", statements: [{ effect: "Allow", actions: ["s3:*", "iam:*"], resources: ["*"] }] }
+);
+console.log("Policy issues:", diff.excessive.length > 0 ? `${diff.excessive.length} excessive permissions found` : "OK");
+
+const ev = new EncryptionValidator();
+const check = ev.check({ s3Encryption: true, s3TLS: true, ebsEncryption: false, rdsEncryption: true, kmsEnabled: true, tlsVersion: "1.0" });
+console.log("Encryption check:", check.pass ? "PASS" : `FAIL: ${check.failures.join("; ")}`);
+```
+```
+
 ## Summary
 
 - The shared responsibility model defines clear boundaries for provider and customer security obligations.

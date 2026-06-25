@@ -405,6 +405,121 @@ console.log(`Penalty method: min at (${pen.x[0].toFixed(4)}, ${pen.x[1].toFixed(
 console.log(`  Expected: (0.5, 1.5), f=0.5, constraint violation: ${Math.max(0, pen.x[0] + pen.x[1] - 2).toExponential(2)}`);
 ```
 
+```
+// --- Subgradient Descent ---
+function subgradientDescent(
+  f: (x: number[]) => number,
+  subgrad: (x: number[]) => number[],
+  x0: number[],
+  learningRate: number,
+  iterations: number
+): { x: number[]; f: number } {
+  let x = [...x0];
+  for (let i = 0; i < iterations; i++) {
+    const g = subgrad(x);
+    const lr = learningRate / Math.sqrt(i + 1); // diminishing step
+    x = x.map((v, j) => v - lr * g[j]);
+  }
+  return { x, f: f(x) };
+}
+// f(x) = |x| → subgradient: sign(x)
+const sg = subgradientDescent(
+  (x: number[]) => Math.abs(x[0]),
+  (x: number[]) => [x[0] > 0 ? 1 : x[0] < 0 ? -1 : 0],
+  [10], 0.5, 1000);
+console.log('Subgradient descent min |x|:', sg.x[0].toFixed(4), 'f=', sg.f.toFixed(4));
+
+// --- BFGS Quasi-Newton (simplified 1D) ---
+function bfgs1D(f: (x: number) => number, x0: number, maxIter: number = 50, tol: number = 1e-8): number {
+  let x = x0, B = 1, h = 1e-6;
+  for (let iter = 0; iter < maxIter; iter++) {
+    const grad = (f(x + h) - f(x - h)) / (2 * h);
+    if (Math.abs(grad) < tol) break;
+    const dir = -B * grad;
+    let α = 1;
+    // Line search (simple backtracking)
+    while (f(x + α * dir) > f(x) + 0.0001 * α * grad * dir) α *= 0.5;
+    const s = α * dir;
+    const xNew = x + s;
+    const gradNew = (f(xNew + h) - f(xNew - h)) / (2 * h);
+    const γ = gradNew - grad;
+    // BFGS update
+    B = B + (s * s) / (s * γ) * (1 + B * γ * γ / (s * γ)) - (s * γ * B + B * γ * s) / (s * γ);
+    x = xNew;
+  }
+  return x;
+}
+// Minimize f(x) = x⁴ - 3x³ + 2 (multiple minima)
+const minx = bfgs1D(x => x * x * x * x - 3 * x * x * x + 2, 2);
+console.log('\nBFGS min x⁴-3x³+2:', minx.toFixed(6), 'f=', (minx ** 4 - 3 * minx ** 3 + 2).toFixed(6));
+
+// --- Interior Point Method (penalty) ---
+function interiorPoint(
+  f: (x: number[]) => number,
+  constraints: Array<(x: number[]) => number>,
+  x0: number[],
+  t0: number = 1,
+  mu: number = 10,
+  maxOuter: number = 20
+): { x: number[]; f: number } {
+  let x = [...x0], t = t0;
+  for (let outer = 0; outer < maxOuter; outer++) {
+    // Logarithmic barrier
+    const barrierFn = (y: number[]) => {
+      let val = f(y);
+      for (const g of constraints) val -= (1 / t) * Math.log(-g(y));
+      return val;
+    };
+    // Gradient descent step on barrier
+    const h = 1e-6;
+    for (let inner = 0; inner < 50; inner++) {
+      const grad = x.map((_, i) => {
+        const plus = [...x], minus = [...x]; plus[i] += h; minus[i] -= h;
+        return (barrierFn(plus) - barrierFn(minus)) / (2 * h);
+      });
+      x = x.map((v, i) => v - 0.01 * grad[i]);
+    }
+    t *= mu;
+  }
+  return { x: x.map(v => +v.toFixed(4)), f: +f(x).toFixed(4) };
+}
+// Minimize x² + y² subject to x + y ≥ 1
+const ip = interiorPoint(
+  (x: number[]) => x[0] * x[0] + x[1] * x[1],
+  [(x: number[]) => x[0] + x[1] - 1],
+  [0.5, 0.5]);
+console.log('\nInterior point min x²+y² s.t. x+y≥1:', `x=${ip.x[0]}, y=${ip.x[1]}, f=${ip.f}`);
+
+// --- Particle Swarm Optimization ---
+function particleSwarm(
+  f: (x: number[]) => number,
+  dim: number,
+  bounds: [number, number],
+  particles: number = 30,
+  iterations: number = 100
+): { x: number[]; f: number } {
+  let swarm = Array.from({ length: particles }, () => ({
+    x: Array.from({ length: dim }, () => bounds[0] + Math.random() * (bounds[1] - bounds[0])),
+    v: Array.from({ length: dim }, () => (Math.random() - 0.5) * 0.1),
+    pBest: Infinity, pBestX: new Array(dim).fill(0)
+  }));
+  let gBest = Infinity, gBestX = new Array(dim).fill(0);
+  for (let iter = 0; iter < iterations; iter++) {
+    for (const p of swarm) {
+      const val = f(p.x);
+      if (val < p.pBest) { p.pBest = val; p.pBestX = [...p.x]; }
+      if (val < gBest) { gBest = val; gBestX = [...p.x]; }
+      const w = 0.7, c1 = 1.5, c2 = 1.5;
+      p.v = p.v.map((v, i) => w * v + c1 * Math.random() * (p.pBestX[i] - p.x[i]) + c2 * Math.random() * (gBestX[i] - p.x[i]));
+      p.x = p.x.map((v, i) => Math.max(bounds[0], Math.min(bounds[1], v + p.v[i])));
+    }
+  }
+  return { x: gBestX.map(v => +v.toFixed(4)), f: +gBest.toFixed(4) };
+}
+const ps = particleSwarm(x => x[0] * x[0] + x[1] * x[1] + 2 * x[0] * x[1] - 3 * x[0] + 4 * x[1], 2, [-5, 5]);
+console.log('\nPSO min f(x,y):', `x=${ps.x[0]}, y=${ps.x[1]}, f=${ps.f}`);
+```
+
 ## Summary
 
 - Convexity guarantees global optimality and efficient solution methods

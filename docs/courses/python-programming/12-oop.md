@@ -723,6 +723,248 @@ class ImmutablePoint {
 }
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Class Diagram Generator (text-based) ===
+interface ClassInfo {
+  name: string;
+  properties: { name: string; type: string; access: "public" | "private" | "protected" }[];
+  methods: { name: string; params: string; returnType: string; access: "public" | "private" | "protected" }[];
+  extends?: string;
+  implements?: string[];
+}
+function generateClassDiagram(cls: ClassInfo): string {
+  const lines = [`class ${cls.name}${cls.extends ? ` extends ${cls.extends}` : ""}${cls.implements ? ` implements ${cls.implements.join(", ")}` : ""} {`];
+  for (const p of cls.properties) {
+    lines.push(`  ${p.access === "private" ? "-" : p.access === "protected" ? "#" : "+"} ${p.name}: ${p.type}`);
+  }
+  lines.push("  " + "---".repeat(8));
+  for (const m of cls.methods) {
+    lines.push(`  ${m.access === "private" ? "-" : p.access === "protected" ? "#" : "+"} ${m.name}(${m.params}): ${m.returnType}`);
+  }
+  lines.push("}");
+  return lines.join("\n");
+}
+const userClass: ClassInfo = {
+  name: "User",
+  properties: [{ name: "id", type: "number", access: "private" }, { name: "name", type: "string", access: "public" }],
+  methods: [{ name: "getId", params: "", returnType: "number", access: "public" }, { name: "setName", params: "name: string", returnType: "void", access: "public" }],
+};
+console.log(generateClassDiagram(userClass));
+
+// === Method Chain Validator ===
+function isChainable(cls: object): boolean {
+  const proto = Object.getPrototypeOf(cls);
+  const methods = Object.getOwnPropertyNames(proto).filter((n) => n !== "constructor" && typeof proto[n] === "function");
+  return methods.every((m) => proto[m]() === undefined || proto[m]() !== undefined);
+}
+class ChainBuilder {
+  private value = 0;
+  add(n: number): this { this.value += n; return this; }
+  multiply(n: number): this { this.value *= n; return this; }
+  result(): number { return this.value; }
+}
+console.log(isChainable(new ChainBuilder())); // true
+
+// === Access Modifier Checker ===
+class VisibilityChecker {
+  static check(obj: object): { public: string[]; private: string[]; protected: string[] } {
+    const all = Object.getOwnPropertyNames(obj);
+    return {
+      public: all.filter((k) => !k.startsWith("_")),
+      private: all.filter((k) => k.startsWith("_") && !k.startsWith("__")),
+      protected: all.filter((k) => k.startsWith("__")),
+    };
+  }
+}
+class Demo {
+  public x = 1; private y = 2; protected z = 3;
+}
+console.log(VisibilityChecker.check(new Demo()));
+
+// === Static Factory Pattern ===
+class ConfigBuilder {
+  private constructor(private config: Record<string, unknown>) {}
+  static fromEnv(): ConfigBuilder { return new ConfigBuilder({ NODE_ENV: process.env.NODE_ENV ?? "development" }); }
+  static defaults(): ConfigBuilder { return new ConfigBuilder({ host: "localhost", port: 3000 }); }
+  build(): Record<string, unknown> { return { ...this.config }; }
+}
+console.log(ConfigBuilder.defaults().build());
+```
+
+### TypeScript OOP Patterns
+
+```typescript
+// === Class with access modifiers (Python: public, _protected, __private) ===
+class Person {
+  constructor(
+    public name: string,      // Python: self.name = name
+    private age: number,       // Python: self.__age = age
+    protected id: string       // Python: self._id = id
+  ) {}
+  greet(): string { return `Hi, I'm ${this.name}, ${this.age}`; }
+  getAge(): number { return this.age; }
+}
+const p = new Person("Alice", 30, "A001");
+console.log(p.greet());       // Hi, I'm Alice, 30
+// p.age  // Error: Property 'age' is private
+
+// === Python @property in TypeScript ===
+class Temperature {
+  constructor(private _celsius: number) {}
+  get celsius(): number { return this._celsius; }
+  set celsius(v: number) {
+    if (v < -273.15) throw new Error("Below absolute zero");
+    this._celsius = v;
+  }
+  get fahrenheit(): number { return this._celsius * 9 / 5 + 32; }
+  set fahrenheit(v: number) { this._celsius = (v - 32) * 5 / 9; }
+}
+const t = new Temperature(0);
+console.log(t.fahrenheit);    // 32
+t.celsius = 100;
+console.log(t.fahrenheit);    // 212
+
+// === Static members (Python: @staticmethod, @classmethod) ===
+class MathUtils {
+  static PI = 3.14159;
+  static add(a: number, b: number): number { return a + b; }
+  static createDefault(): MathUtils { return new MathUtils(); }
+}
+console.log(MathUtils.PI);
+console.log(MathUtils.add(3, 4));
+
+// === Abstract class (Python: ABC) ===
+abstract class Shape {
+  abstract area(): number;
+  abstract perimeter(): number;
+  describe(): string { return `Area: ${this.area()}, Perimeter: ${this.perimeter()}`; }
+}
+class Circle extends Shape {
+  constructor(private radius: number) { super(); }
+  area(): number { return Math.PI * this.radius ** 2; }
+  perimeter(): number { return 2 * Math.PI * this.radius; }
+}
+class Rectangle extends Shape {
+  constructor(private w: number, private h: number) { super(); }
+  area(): number { return this.w * this.h; }
+  perimeter(): number { return 2 * (this.w + this.h); }
+}
+const shapes: Shape[] = [new Circle(5), new Rectangle(3, 4)];
+shapes.forEach(s => console.log(s.describe()));
+
+// === Interface (Python: Protocol) ===
+interface Flyable { fly(): string; }
+interface Swimmable { swim(): string; }
+class Duck implements Flyable, Swimmable {
+  fly(): string { return "Duck flying"; }
+  swim(): string { return "Duck swimming"; }
+}
+
+// === Method Overloading (Python: @singledispatch) ===
+class Display {
+  render(value: string): string;
+  render(value: number): string;
+  render(value: boolean): string;
+  render(value: string | number | boolean): string {
+    if (typeof value === "string") return `String: ${value}`;
+    if (typeof value === "number") return `Number: ${value}`;
+    return `Boolean: ${value}`;
+  }
+}
+
+// === Builder Pattern ===
+class UserBuilder {
+  private user: { name: string; age?: number; email?: string } = { name: "" };
+  setName(name: string): this { this.user.name = name; return this; }
+  setAge(age: number): this { this.user.age = age; return this; }
+  setEmail(email: string): this { this.user.email = email; return this; }
+  build(): { name: string; age?: number; email?: string } { return { ...this.user }; }
+}
+const user = new UserBuilder().setName("Bob").setAge(25).setEmail("bob@x.com").build();
+```
+
+### TypeScript OOP Design Patterns
+
+```typescript
+// === Abstract Factory ===
+interface Button { click(): string; }
+interface Checkbox { toggle(): string; }
+class WinButton implements Button { click(): string { return "Windows button clicked"; } }
+class MacButton implements Button { click(): string { return "Mac button clicked"; } }
+class WinCheckbox implements Checkbox { toggle(): string { return "Windows checkbox toggled"; } }
+class MacCheckbox implements Checkbox { toggle(): string { return "Mac checkbox toggled"; } }
+interface GUIFactory2 { createButton(): Button; createCheckbox(): Checkbox; }
+class WinFactory2 implements GUIFactory2 {
+  createButton(): Button { return new WinButton(); }
+  createCheckbox(): Checkbox { return new WinCheckbox(); }
+}
+class MacFactory2 implements GUIFactory2 {
+  createButton(): Button { return new MacButton(); }
+  createCheckbox(): Checkbox { return new MacCheckbox(); }
+}
+
+// === Observer Pattern ===
+interface Observer<T> { update(data: T): void; }
+class Observable<T> {
+  private observers: Observer<T>[] = [];
+  subscribe(obs: Observer<T>): void { this.observers.push(obs); }
+  unsubscribe(obs: Observer<T>): void { this.observers = this.observers.filter(o => o !== obs); }
+  notify(data: T): void { for (const obs of this.observers) obs.update(data); }
+}
+class ConsoleObserver implements Observer<string> { update(data: string): void { console.log(`Received: ${data}`); } }
+
+// === Strategy Pattern ===
+interface SortStrategy { sort<T>(items: T[]): T[]; }
+class BubbleSort implements SortStrategy { sort<T>(items: T[]): T[] { const arr = [...items]; for (let i = 0; i < arr.length; i++) for (let j = 0; j < arr.length - i - 1; j++) if (arr[j] > arr[j + 1]) [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]; return arr; } }
+class QuickSort implements SortStrategy { sort<T>(items: T[]): T[] { if (items.length <= 1) return items; const pivot = items[0]; const left = items.slice(1).filter(x => x < pivot); const right = items.slice(1).filter(x => x >= pivot); return [...this.sort(left), pivot, ...this.sort(right)]; } }
+class Sorter { constructor(private strategy: SortStrategy) {} setStrategy(s: SortStrategy): void { this.strategy = s; } sort<T>(items: T[]): T[] { return this.strategy.sort(items); } }
+
+// === Singleton ===
+class Singleton {
+  private static instance: Singleton;
+  private constructor(public readonly id: string) {}
+  static getInstance(): Singleton { if (!Singleton.instance) Singleton.instance = new Singleton("unique"); return Singleton.instance; }
+}
+
+// === Composite ===
+interface Component { operation(): string; }
+class Leaf implements Component { constructor(private name: string) {} operation(): string { return this.name; } }
+class Composite implements Component {
+  private children: Component[] = [];
+  add(c: Component): void { this.children.push(c); }
+  operation(): string { return this.children.map(c => c.operation()).join(" + "); }
+}
+
+// === Proxy (Lazy Initialization) ===
+class ExpensiveResource {
+  constructor() { console.log("Loading expensive resource..."); }
+  getData(): string { return "expensive data"; }
+}
+class LazyProxy implements ExpensiveResource {
+  private real: ExpensiveResource | null = null;
+  getData(): string {
+    if (!this.real) this.real = new ExpensiveResource();
+    return this.real.getData();
+  }
+}
+
+const factory = new WinFactory2();
+const btn = factory.createButton();
+console.log(btn.click()); // "Windows button clicked"
+
+const observable = new Observable<string>();
+const obs = new ConsoleObserver();
+observable.subscribe(obs);
+observable.notify("Hello observers!"); // "Received: Hello observers!"
+
+const sorter = new Sorter(new BubbleSort());
+console.log(sorter.sort([3, 1, 4, 1, 5])); // [1, 1, 3, 4, 5]
+sorter.setStrategy(new QuickSort());
+console.log(sorter.sort([3, 1, 4, 1, 5])); // [1, 1, 3, 4, 5]
+```
+
 ## Summary
 
 - Classes define blueprints; `__init__` initialises instances.

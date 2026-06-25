@@ -680,6 +680,39 @@ const result = calc.calculate({ invocationsPerMonth: 10_000_000, memoryMB: 512, 
 console.log("Lambda monthly cost:", JSON.stringify(result, null, 2));
 ```
 
+### TypeScript: Function Memory Optimizer & Cold Start Mitigator
+
+```typescript
+interface LambdaProfile { memoryMB: number; avgDurationMs: number; initDurationMs: number; invocationsPerMonth: number; provisionedConcurrency: number; }
+
+class MemoryOptimizer {
+  private readonly costPerGBSecond = 0.0000166667;
+
+  optimize(profile: LambdaProfile): { recommendedMemoryMB: number; monthlyCostSavings: number; coldStartProbability: string } {
+    const baseCost = profile.invocationsPerMonth * (profile.avgDurationMs / 1000) * (profile.memoryMB / 1024) * this.costPerGBSecond;
+    const provCost = profile.provisionedConcurrency * profile.memoryMB / 1024 * this.costPerGBSecond * 730 * 3600;
+
+    const trials = [128, 256, 512, 1024, 2048, 4096, 10240].map(mem => {
+      const scaleFactor = mem / profile.memoryMB;
+      const estimatedDuration = Math.max(100, Math.round(profile.avgDurationMs / Math.min(scaleFactor, 3)));
+      const computeCost = profile.invocationsPerMonth * (estimatedDuration / 1000) * (mem / 1024) * this.costPerGBSecond;
+      const provC = profile.provisionedConcurrency * mem / 1024 * this.costPerGBSecond * 730 * 3600;
+      return { memoryMB: mem, totalCost: computeCost + provC, estimatedDuration };
+    });
+
+    const best = trials.reduce((a, b) => a.totalCost < b.totalCost ? a : b);
+    const savings = Math.round((baseCost + provCost - best.totalCost) * 100) / 100;
+    const coldProb = best.memoryMB >= 1024 ? "Low (>1GB reduces init time)" : "Medium (<1GB may increase cold starts)";
+    return { recommendedMemoryMB: best.memoryMB, monthlyCostSavings: Math.max(0, savings), coldStartProbability: coldProb };
+  }
+}
+
+const mo = new MemoryOptimizer();
+const opt = mo.optimize({ memoryMB: 256, avgDurationMs: 2000, initDurationMs: 500, invocationsPerMonth: 10_000_000, provisionedConcurrency: 20 });
+console.log("Memory optimization:", JSON.stringify(opt, null, 2));
+```
+```
+
 ## Summary
 
 - Serverless computing provides automatic scaling and pay-per-use pricing with no server management.

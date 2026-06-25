@@ -664,6 +664,162 @@ graph TD
     end
 ```
 
+### TypeScript: Software Evolution Tools
+
+```typescript
+// === Impact Analysis ===
+interface DependencyGraph {
+  module: string;
+  dependsOn: string[];
+  dependents: string[];
+}
+function impactAnalysis(graph: DependencyGraph[], changedModules: string[]): Set<string> {
+  const affected = new Set<string>(changedModules);
+  const queue = [...changedModules];
+  while (queue.length > 0) {
+    const current = queue.shift()!;
+    const entry = graph.find((g) => g.module === current);
+    if (!entry) continue;
+    for (const dep of entry.dependents) {
+      if (!affected.has(dep)) { affected.add(dep); queue.push(dep); }
+    }
+  }
+  return affected;
+}
+const depGraph: DependencyGraph[] = [
+  { module: "auth", dependsOn: ["db"], dependents: ["api", "admin"] },
+  { module: "api", dependsOn: ["auth", "db"], dependents: ["frontend"] },
+  { module: "admin", dependsOn: ["auth"], dependents: ["frontend"] },
+  { module: "db", dependsOn: [], dependents: ["auth", "api"] },
+  { module: "frontend", dependsOn: ["api", "admin"], dependents: [] },
+];
+console.log([...impactAnalysis(depGraph, ["auth"])]); // auth, api, admin, frontend
+
+// === Refactoring Suggestion Engine ===
+interface CodeMetrics { name: string; lines: number; methods: number; avgParams: number; complexity: number; duplications: number }
+function suggestRefactoring(m: CodeMetrics): string[] {
+  const suggestions: string[] = [];
+  if (m.lines > 300) suggestions.push("Extract Module: file exceeds 300 lines");
+  if (m.methods > 15) suggestions.push("Extract Class: more than 15 methods");
+  if (m.avgParams > 4) suggestions.push("Introduce Parameter Object: average parameter count exceeds 4");
+  if (m.complexity > 10) suggestions.push("Replace Conditional with Polymorphism: complexity exceeds 10");
+  if (m.duplications > 3) suggestions.push("Extract Method: duplicated code blocks found in " + m.duplications + " locations");
+  return suggestions;
+}
+const codeMetric: CodeMetrics = { name: "OrderProcessor.ts", lines: 450, methods: 22, avgParams: 5.2, complexity: 14, duplications: 5 };
+console.log(suggestRefactoring(codeMetric));
+
+// === Technical Debt Tracker ===
+type DebtCategory = "code" | "design" | "test" | "documentation" | "infrastructure";
+interface DebtItem {
+  id: string;
+  description: string;
+  category: DebtCategory;
+  effortHours: number;
+  interestHours: number;
+  dateIdentified: Date;
+}
+class DebtTracker {
+  private items: DebtItem[] = [];
+  add(item: DebtItem): void { this.items.push(item); }
+  getTotalDebt(): number { return this.items.reduce((s, i) => s + i.effortHours, 0); }
+  getTotalInterest(): number { return this.items.reduce((s, i) => s + i.interestHours, 0); }
+  getRatio(): number { return this.getTotalInterest() / (this.getTotalDebt() || 1); }
+  getByCategory(cat: DebtCategory): DebtItem[] { return this.items.filter((i) => i.category === cat); }
+  prioritize(): DebtItem[] {
+    return [...this.items].sort((a, b) => b.interestHours / b.effortHours - a.interestHours / a.effortHours);
+  }
+}
+const tracker = new DebtTracker();
+tracker.add({ id: "TD-1", description: "No error handling in API", category: "code", effortHours: 8, interestHours: 40, dateIdentified: new Date() });
+tracker.add({ id: "TD-2", description: "Missing integration tests", category: "test", effortHours: 16, interestHours: 80, dateIdentified: new Date() });
+console.log(`Total debt: ${tracker.getTotalDebt()}h, Interest: ${tracker.getTotalInterest()}h, Ratio: ${tracker.getRatio().toFixed(1)}`);
+
+// === Lehman's Law Checker ===
+function checkLehmanLaws(history: { version: string; loc: number; modules: number; defects: number }[]): string[] {
+  const observations: string[] = [];
+  if (history.length >= 2) {
+    const first = history[0], last = history[history.length - 1];
+    if (last.loc > first.loc) observations.push("Law I (Continuing Change): system is evolving");
+    if (last.modules > first.modules) observations.push("Law II (Increasing Complexity): module count grew");
+    if (last.defects > 0) observations.push("Law VI (Continuing Growth): defects still present");
+  }
+  return observations;
+}
+const versionHistory = [
+  { version: "1.0", loc: 10000, modules: 50, defects: 20 },
+  { version: "2.0", loc: 15000, modules: 75, defects: 15 },
+  { version: "3.0", loc: 22000, modules: 110, defects: 8 },
+];
+console.log(checkLehmanLaws(versionHistory));
+```
+
+### TypeScript: Software Evolution Tools
+
+```typescript
+// === Impact Analysis Engine ===
+interface CodeEntity { name: string; type: "class" | "function" | "module" | "interface"; dependencies: string[]; }
+class ImpactAnalyzer {
+  constructor(private entities: CodeEntity[]) {}
+  
+  getAffected(changed: string[], visited = new Set<string>()): string[] {
+    for (const name of changed) {
+      if (visited.has(name)) continue;
+      visited.add(name);
+      const dependents = this.entities.filter(e => e.dependencies.includes(name)).map(e => e.name);
+      this.getAffected(dependents, visited);
+    }
+    return [...visited];
+  }
+
+  getImpactScore(changed: string[]): { entities: number; depth: number } {
+    const affected = this.getAffected(changed);
+    const maxDepth = Math.max(...changed.map(c => {
+      const deps = this.entities.filter(e => e.dependencies.includes(c)).length;
+      return deps;
+    }));
+    return { entities: affected.length, depth: maxDepth };
+  }
+}
+
+// === Refactoring Opportunity Detector ===
+interface RefactoringTarget { entity: string; issue: string; effort: "Low" | "Medium" | "High"; benefit: string; }
+function detectRefactoringNeeds(entities: CodeEntity[]): RefactoringTarget[] {
+  const targets: RefactoringTarget[] = [];
+  const depCount = new Map<string, number>();
+  for (const e of entities) for (const d of e.dependencies) depCount.set(d, (depCount.get(d) ?? 0) + 1);
+  for (const [name, count] of depCount) {
+    if (count > 5) targets.push({ entity: name, issue: `High coupling (${count} dependents)`, effort: "High", benefit: "Reduce ripple effects" });
+  }
+  const lonely = entities.filter(e => e.dependencies.length === 0 && entities.filter(x => x.dependencies.includes(e.name)).length === 0);
+  for (const e of lonely) targets.push({ entity: e.name, issue: "Dead code / orphan module", effort: "Low", benefit: "Remove unused code" });
+  return targets;
+}
+
+// === Technical Debt Calculator ===
+function calculateTechDebt(entities: CodeEntity[], qualityMetrics: { complexity: number; duplication: number; coverage: number }): { debtRatio: number; estimatedHours: number } {
+  const couplingIssues = entities.filter(e => e.dependencies.length > 5).length;
+  const orphanIssues = entities.filter(e => e.dependencies.length === 0 && !entities.some(x => x.dependencies.includes(e.name))).length;
+  const complexityDebt = (qualityMetrics.complexity / 100) * 20;
+  const duplicationDebt = (qualityMetrics.duplication / 100) * 15;
+  const coverageDebt = ((100 - qualityMetrics.coverage) / 100) * 25;
+  const couplingDebt = (couplingIssues / Math.max(1, entities.length)) * 30;
+  const orphanDebt = (orphanIssues / Math.max(1, entities.length)) * 10;
+  const debtRatio = Math.min(100, complexityDebt + duplicationDebt + coverageDebt + couplingDebt + orphanDebt);
+  const estimatedHours = Math.round(debtRatio * 0.5);
+  return { debtRatio: Math.round(debtRatio), estimatedHours };
+}
+
+const entities: CodeEntity[] = [
+  { name: "UserService", type: "class", dependencies: ["Database", "Logger", "EmailService", "AuthService", "Cache", "Queue"] },
+  { name: "Logger", type: "module", dependencies: ["Config"] },
+  { name: "Database", type: "module", dependencies: ["Config", "ConnectionPool"] },
+];
+console.log(new ImpactAnalyzer(entities).getImpactScore(["Database"])); // ~3 affected
+console.log(detectRefactoringNeeds(entities));
+console.log(calculateTechDebt(entities, { complexity: 45, duplication: 12, coverage: 78 }));
+```
+
 ## Summary
 
 Software evolution consumes the majority of lifecycle costs. Maintenance is classified as corrective, adaptive, perfective, and preventive. Lehman's eight laws describe the empirical dynamics of evolution, including the inevitable increase in complexity (Law II) and the necessity of continuing change (Law I). Reverse engineering recovers design information from existing code. Refactoring catalogues provide behaviour-preserving transformations (Extract Method, Replace Conditional with Polymorphism, Extract Class). The technical debt quadrant helps prioritise improvement work. Legacy systems require strategies from scrapping to wrapping. Impact analysis quantifies change consequences. Regression testing is essential throughout evolution.

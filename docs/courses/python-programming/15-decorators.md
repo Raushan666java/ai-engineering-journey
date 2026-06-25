@@ -698,6 +698,308 @@ class Singleton {
 }
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Decorator Factory ===
+type Decorator<T extends (...args: any[]) => any> = (fn: T, context?: ClassMethodDecoratorContext) => T | void;
+function createDecorator<T extends (...args: any[]) => any>(before?: () => void, after?: () => void): Decorator<T> {
+  return ((fn: T, _context?: ClassMethodDecoratorContext) => {
+    return function (this: any, ...args: Parameters<T>): ReturnType<T> {
+      before?.();
+      const result = fn.apply(this, args);
+      after?.();
+      return result;
+    } as T;
+  }) as Decorator<T>;
+}
+const logCall = createDecorator(() => console.log("Before"), () => console.log("After"));
+class Service {
+  static process(n: number): number { return n * 2; }
+}
+console.log(Service.process(5));
+
+// === Memoize with TTL ===
+function memoizeWithTTL<T>(fn: (...args: unknown[]) => T, ttlMs: number): (...args: unknown[]) => T {
+  const cache = new Map<string, { value: T; expiry: number }>();
+  return (...args: unknown[]): T => {
+    const key = JSON.stringify(args);
+    const entry = cache.get(key);
+    if (entry && Date.now() < entry.expiry) return entry.value;
+    const result = fn(...args);
+    cache.set(key, { value: result, expiry: Date.now() + ttlMs });
+    return result;
+  };
+}
+let callCount = 0;
+const expensiveFn = (n: number) => { callCount++; return n * n; };
+const memoized = memoizeWithTTL(expensiveFn, 5000);
+console.log(memoized(5), memoized(5), callCount); // 25, 25, 1
+
+// === Retry with Backoff ===
+async function retryWithBackoff<T>(
+  fn: () => Promise<T>,
+  maxRetries = 3,
+  baseDelay = 1000
+): Promise<T> {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try { return await fn(); }
+    catch (err) {
+      if (attempt === maxRetries) throw err;
+      const delay = baseDelay * Math.pow(2, attempt) + Math.random() * 100;
+      await new Promise((r) => setTimeout(r, delay));
+    }
+  }
+  throw new Error("Unreachable");
+}
+// await retryWithBackoff(() => fetch("https://api.example.com/data"));
+
+// === Method Decorator for Timing ===
+function timed<T>(target: any, propertyKey: string, descriptor: TypedPropertyDescriptor<(...args: any[]) => T>) {
+  const original = descriptor.value!;
+  descriptor.value = function (...args: any[]) {
+    const start = performance.now();
+    const result = original.apply(this, args);
+    console.log(`${propertyKey} took ${performance.now() - start}ms`);
+    return result;
+  };
+}
+
+// === Property Decorator for Validation ===
+function validate(min: number, max: number) {
+  return function (target: any, propertyKey: string) {
+    let value: number;
+    Object.defineProperty(target, propertyKey, {
+      get: () => value,
+      set: (v: number) => { if (v < min || v > max) throw new Error(`Out of range [${min}, ${max}]`); value = v; },
+    });
+  };
+}
+class Temp {
+  @validate(-273, 1000)
+  celsius = 0;
+}
+const t = new Temp();
+// t.celsius = -300; // throws
+```
+
+### TypeScript Decorator & HOF Patterns
+
+```typescript
+// === Python-style decorator via higher-order function ===
+function logCalls<T extends (...args: unknown[]) => unknown>(fn: T): T {
+  return ((...args: Parameters<T>) => {
+    console.log(`Called ${fn.name}(${args.map(a => JSON.stringify(a)).join(", ")})`);
+    const result = fn(...args);
+    console.log(`Returned ${JSON.stringify(result)}`);
+    return result;
+  }) as T;
+}
+const add = logCalls((a: number, b: number) => a + b);
+console.log(add(3, 4)); // Logs: Called (3, 4) → 7
+
+// === Timing decorator ===
+function timed<T extends (...args: unknown[]) => unknown>(fn: T): T {
+  return ((...args: Parameters<T>) => {
+    const start = performance.now();
+    const result = fn(...args);
+    const elapsed = performance.now() - start;
+    console.log(`${fn.name} took ${elapsed.toFixed(2)}ms`);
+    return result;
+  }) as T;
+}
+const expensive = timed((n: number) => {
+  let sum = 0;
+  for (let i = 0; i < n; i++) sum += i;
+  return sum;
+});
+console.log(expensive(1000000));
+
+// === Retry decorator ===
+function retry<T extends (...args: unknown[]) => unknown>(maxAttempts: number, delayMs = 0): (fn: T) => T {
+  return (fn: T) => ((...args: Parameters<T>) => {
+    let lastError: unknown;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      try {
+        return fn(...args);
+      } catch (err) {
+        lastError = err;
+        console.log(`Attempt ${attempt}/${maxAttempts} failed: ${err}`);
+        if (attempt < maxAttempts && delayMs > 0) {
+          // wait
+        }
+      }
+    }
+    throw lastError;
+  }) as T;
+}
+
+// === Memoization decorator ===
+function memoize2<T extends (...args: unknown[]) => unknown>(fn: T): T {
+  const cache = new Map<string, unknown>();
+  return ((...args: Parameters<T>) => {
+    const key = JSON.stringify(args);
+    if (cache.has(key)) {
+      console.log(`[cache hit] ${key}`);
+      return cache.get(key);
+    }
+    const result = fn(...args);
+    cache.set(key, result);
+    return result;
+  }) as T;
+}
+const fib = memoize2((n: number): number => {
+  if (n < 2) return n;
+  return fib(n - 1) + fib(n - 2);
+});
+console.log(fib(40)); // Fast
+
+// === Validation decorator ===
+function validate<T extends (...args: unknown[]) => unknown>(schema: Record<string, string>): (fn: T) => T {
+  return (fn: T) => ((...args: Parameters<T>) => {
+    args.forEach((arg, i) => {
+      const expected = schema[`arg${i}`];
+      if (expected && typeof arg !== expected) {
+        throw new TypeError(`Argument ${i}: expected ${expected}, got ${typeof arg}`);
+      }
+    });
+    return fn(...args);
+  }) as T;
+}
+
+// === Rate limiting decorator ===
+function rateLimit<T extends (...args: unknown[]) => unknown>(maxCalls: number, periodMs: number): (fn: T) => T {
+  const calls: number[] = [];
+  return ((...args: Parameters<T>) => {
+    const now = Date.now();
+    while (calls.length > 0 && calls[0] < now - periodMs) calls.shift();
+    if (calls.length >= maxCalls) throw new Error("Rate limit exceeded");
+    calls.push(now);
+    return fn(...args);
+  }) as T;
+}
+
+// === Python @wraps equivalent ===
+function wraps<T extends (...args: unknown[]) => unknown>(original: T, wrapper: T): T {
+  Object.defineProperties(wrapper, {
+    name: { value: original.name, configurable: true },
+    length: { value: original.length, configurable: true },
+  });
+  return wrapper;
+}
+const original = (a: number, b: number) => a + b;
+const wrapped = wraps(original, ((...args: unknown[]) => {
+  console.log("wrapper");
+  return original(...args as [number, number]);
+}) as typeof original);
+console.log(wrapped.name); // original
+```
+
+### TypeScript Advanced Decorator Patterns
+
+```typescript
+// === Async Decorator with Retry ===
+function asyncRetry(maxRetries = 3, delay = 500) {
+  return (_target: any, _key: string, descriptor: PropertyDescriptor) => {
+    const original = descriptor.value;
+    descriptor.value = async function (...args: unknown[]) {
+      for (let i = 0; i < maxRetries; i++) {
+        try { return await original.apply(this, args); } catch (e) {
+          if (i === maxRetries - 1) throw e;
+          await new Promise(r => setTimeout(r, delay * Math.pow(2, i)));
+        }
+      }
+    };
+    return descriptor;
+  };
+}
+
+// === Deprecation Decorator ===
+function deprecated(message?: string) {
+  return (target: any, key: string, descriptor: PropertyDescriptor) => {
+    const original = descriptor.value;
+    descriptor.value = function (...args: unknown[]) {
+      console.warn(`Deprecated: ${key}${message ? ` - ${message}` : ""}`);
+      return original.apply(this, args);
+    };
+    return descriptor;
+  };
+}
+
+// === Rate Limit Decorator ===
+function rateLimit(maxCalls: number, windowMs: number) {
+  let calls: number[] = [];
+  return (_target: any, _key: string, descriptor: PropertyDescriptor) => {
+    const original = descriptor.value;
+    descriptor.value = function (...args: unknown[]) {
+      const now = Date.now();
+      calls = calls.filter(t => now - t < windowMs);
+      if (calls.length >= maxCalls) throw new Error("Rate limit exceeded");
+      calls.push(now);
+      return original.apply(this, args);
+    };
+    return descriptor;
+  };
+}
+
+// === Memoize Decorator ===
+function memoize(target: any, key: string, descriptor: PropertyDescriptor) {
+  const original = descriptor.value;
+  const cache = new Map<string, unknown>();
+  descriptor.value = function (...args: unknown[]) {
+    const key2 = JSON.stringify(args);
+    if (!cache.has(key2)) cache.set(key2, original.apply(this, args));
+    return cache.get(key2);
+  };
+  return descriptor;
+}
+
+// === Debounce Decorator ===
+function debounceDecorator(delay: number) {
+  let timeouts: ReturnType<typeof setTimeout>[] = [];
+  return (_target: any, _key: string, descriptor: PropertyDescriptor) => {
+    const original = descriptor.value;
+    descriptor.value = function (...args: unknown[]) {
+      for (const t of timeouts) clearTimeout(t);
+      timeouts.push(setTimeout(() => {
+        original.apply(this, args);
+        timeouts = [];
+      }, delay));
+    };
+    return descriptor;
+  };
+}
+
+// === Validation Decorator ===
+function validate(...validators: Array<(value: unknown) => boolean | string>) {
+  return (_target: any, _key: string, descriptor: PropertyDescriptor) => {
+    const original = descriptor.value;
+    descriptor.value = function (...args: unknown[]) {
+      for (let i = 0; i < Math.min(validators.length, args.length); i++) {
+        const result = validators[i](args[i]);
+        if (typeof result === "string") throw new Error(result);
+        if (!result) throw new Error(`Argument ${i} failed validation`);
+      }
+      return original.apply(this, args);
+    };
+    return descriptor;
+  };
+}
+
+class DecoratedService {
+  @memoize
+  fibonacci(n: number): number {
+    return n <= 1 ? n : this.fibonacci(n - 1) + this.fibonacci(n - 2);
+  }
+  
+  @deprecated("Use newMethod instead")
+  oldMethod(): string { return "old result"; }
+}
+
+const svc = new DecoratedService();
+console.log(svc.fibonacci(40)); // 102334155 (fast due to memoize)
+```
+
 ## Summary
 
 - Decorators wrap functions to extend behaviour.

@@ -622,6 +622,54 @@ console.log(`Fraud capture improvement: 60% → 94%`);
 
 6. Batch layer: Spark hourly jobs → Parquet; Speed layer: Kafka + Flink → Redis for real-time; Serving layer: Presto on Parquet + API on Redis | 7. On-prem: ~$15K/mo, EMR: ~$5K/mo, Databricks: ~$8K/mo | 8. With locality: ~100s; without: ~800s (8x slower) | 9. ~75% storage savings, ~5x faster queries | 10. S3 is AP (available during partition), Spark shuffle is CP (blocks if partition)
 
+### TypeScript: Big Data Ecosystem Component Selector
+
+```typescript
+interface EcosystemComponent {
+  name: string;
+  category: "storage" | "processing" | "messaging" | "sql" | "nosql";
+  dataModel?: "key-value" | "document" | "column-family" | "graph";
+  capProfile?: "CP" | "AP" | "CA";
+  strengths: string[];
+  weaknesses: string[];
+}
+
+class EcosystemMapper {
+  private catalog: Map<string, EcosystemComponent> = new Map();
+
+  register(comp: EcosystemComponent): this { this.catalog.set(comp.name, comp); return this; }
+
+  query(opts: { consistency: "strong" | "eventual"; latency: "low" | "high" }): EcosystemComponent[] {
+    return [...this.catalog.values()].filter(c => {
+      if (opts.consistency === "strong" && c.capProfile === "AP") return false;
+      if (opts.latency === "low" && c.category === "storage" && c.name !== "HBase") return false;
+      return true;
+    });
+  }
+
+  recommend(workload: { type: "batch" | "stream" | "interactive"; sizeTB: number }): string[] {
+    const picks: string[] = [];
+    if (workload.type === "batch") picks.push("Spark", "HDFS");
+    if (workload.type === "stream") picks.push("Kafka", "Flink", "Cassandra");
+    if (workload.type === "interactive") picks.push("Presto", "HBase", "Parquet");
+    if (workload.sizeTB > 100) picks.push("S3", "Spark", "HDFS");
+    return [...new Set(picks)];
+  }
+}
+
+const mapper = new EcosystemMapper()
+  .register({ name: "HDFS", category: "storage", strengths: ["Large files", "Streaming"], weaknesses: ["Small files"] })
+  .register({ name: "HBase", category: "nosql", dataModel: "column-family", capProfile: "CP", strengths: ["Random R/W", "Strong consistency"], weaknesses: ["Row key design"] })
+  .register({ name: "Cassandra", category: "nosql", dataModel: "column-family", capProfile: "AP", strengths: ["Linear scale", "Multi-DC"], weaknesses: ["No joins"] })
+  .register({ name: "Kafka", category: "messaging", strengths: ["High throughput", "Durable"], weaknesses: ["ZooKeeper dep"] })
+  .register({ name: "Spark", category: "processing", strengths: ["Speed", "Unified"], weaknesses: ["Memory hungry"] });
+
+console.log("CP-compatible:", mapper.query({ consistency: "strong", latency: "low" }).map(c => c.name).join(", "));
+console.log("Streaming stack:", mapper.recommend({ type: "stream", sizeTB: 50 }).join(" → "));
+console.log("Batch stack:", mapper.recommend({ type: "batch", sizeTB: 500 }).join(" → "));
+```
+```
+
 ## Summary
 
 - Big data is defined by volume, velocity, and variety — traditional tools break at petabyte scale.

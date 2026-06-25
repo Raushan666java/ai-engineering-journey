@@ -637,6 +637,79 @@ function conditionalProb(pAandB: number, pB: number): number {
 console.log('P(A|B) = 0.3/0.6:', conditionalProb(0.3, 0.6)); // 0.5
 ```
 
+```
+// --- Law of Total Probability ---
+function totalProbability(partitions: { prob: number; condProb: number }[]): number {
+  return partitions.reduce((sum, p) => sum + p.prob * p.condProb, 0);
+}
+const diseaseTest = [
+  { prob: 0.01, condProb: 0.99 },  // has disease, test +
+  { prob: 0.99, condProb: 0.02 }   // no disease, test +
+];
+console.log('P(positive test):', totalProbability(diseaseTest).toFixed(4));
+
+// --- Bayes' Theorem Calculator ---
+function bayesTheorem(prior: number, likelihood: number, evidence: number): number {
+  return (prior * likelihood) / evidence;
+}
+const pDisease = 0.01;
+const pPosGivenDisease = 0.99;
+const pGivenPositive = bayesTheorem(pDisease, pPosGivenDisease, totalProbability(diseaseTest));
+console.log('P(disease | positive):', pGivenPositive.toFixed(4));
+
+// --- Expectation and Variance Calculator ---
+function expectedValue(dist: { x: number; p: number }[]): number {
+  return dist.reduce((sum, v) => sum + v.x * v.p, 0);
+}
+function variance(dist: { x: number; p: number }[]): number {
+  const mu = expectedValue(dist);
+  return dist.reduce((sum, v) => sum + (v.x - mu) ** 2 * v.p, 0);
+}
+const die = [{x:1,p:1/6},{x:2,p:1/6},{x:3,p:1/6},{x:4,p:1/6},{x:5,p:1/6},{x:6,p:1/6}];
+console.log('\nE[die]:', expectedValue(die).toFixed(4), 'Var[die]:', variance(die).toFixed(4));
+
+// --- Poisson Distribution ---
+function poissonPMF(lambda: number, k: number): number {
+  return Math.exp(-lambda) * Math.pow(lambda, k) / Array.from({length: k}, (_, i) => i + 1).reduce((a, b) => a * b, 1);
+}
+console.log('\nPoisson λ=3: P(X=2):', poissonPMF(3, 2).toFixed(4), '(expected: ~0.224)');
+
+// --- Hypergeometric Distribution ---
+function hypergeometric(N: number, K: number, n: number, k: number): number {
+  return (nCr(K, k) * nCr(N - K, n - k)) / nCr(N, n);
+}
+console.log('Hypergeometric N=52,K=13,n=5,k=3:', hypergeometric(52, 13, 5, 3).toFixed(4));
+
+// --- Markov Chain Simulator ---
+function markovChain(
+  transMatrix: number[][],
+  initialState: number,
+  steps: number
+): { states: number[]; stationary: number[] } {
+  const n = transMatrix.length;
+  let state = initialState;
+  const states = [state];
+  for (let s = 0; s < steps; s++) {
+    const r = Math.random();
+    let cum = 0;
+    for (let j = 0; j < n; j++) {
+      cum += transMatrix[state][j];
+      if (r < cum) { state = j; break; }
+    }
+    states.push(state);
+  }
+  // Power iteration for stationary distribution
+  let pi = new Array(n).fill(1 / n);
+  for (let iter = 0; iter < 100; iter++) {
+    pi = pi.map((_, j) => pi.reduce((s, p, i) => s + p * transMatrix[i][j], 0));
+  }
+  return { states, stationary: pi.map(v => +v.toFixed(4)) };
+}
+const mc = markovChain([[0.7,0.3],[0.4,0.6]], 0, 20);
+console.log('\nMarkov chain states (20 steps):', mc.states.slice(0,10).join('→'), '…');
+console.log('Stationary distribution:', mc.stationary);
+```
+
 ## Summary
 
 - Probability measures likelihood from 0 to 1; all rules derive from Kolmogorov's axioms.

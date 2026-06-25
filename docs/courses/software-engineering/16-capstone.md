@@ -1037,6 +1037,92 @@ As you complete this course, you should be able to demonstrate competence in all
 | Define and collect software metrics | Chapter 15, Capstone Phase 7 |
 | Build and deploy a complete system | Chapter 16 (this chapter) |
 
+### TypeScript: Capstone Project Integration
+
+```typescript
+// === Complete System Scaffold Generator ===
+interface ProjectScaffold {
+  name: string;
+  directories: string[];
+  files: { path: string; content: string }[];
+  dependencies: string[];
+  scripts: Record<string, string>;
+}
+function generateScaffold(project: ProjectScaffold): string {
+  return [
+    `# ${project.name}`,
+    `## Directories\n${project.directories.map((d) => `mkdir -p ${d}`).join("\n")}`,
+    `## Files\n${project.files.map((f) => `- ${f.path}`).join("\n")}`,
+    `## Dependencies\n${project.dependencies.join(", ")}`,
+    `## Scripts\n${Object.entries(project.scripts).map(([k, v]) => `  "${k}": "${v}"`).join("\n")}`,
+  ].join("\n\n");
+}
+const taskBoard: ProjectScaffold = {
+  name: "team-task-board",
+  directories: ["src/server", "src/client", "src/shared", "tests", "docs"],
+  files: [
+    { path: "src/server/index.ts", content: "import express from 'express';\nconst app = express();\napp.listen(3000);" },
+    { path: "src/client/App.tsx", content: "export function App() { return <div>Task Board</div>; }" },
+    { path: "docker-compose.yml", content: "version: '3.8'\nservices:\n  app:\n    build: .\n    ports:\n      - '3000:3000'" },
+  ],
+  dependencies: ["express", "react", "typescript", "prisma", "redis"],
+  scripts: { dev: "tsx watch src/server/index.ts", build: "tsc", test: "vitest", start: "node dist/index.js" },
+};
+console.log(generateScaffold(taskBoard));
+
+// === Chapter Cross-Reference Validator ===
+const capstonePhases = [
+  { phase: 1, title: "Process Selection", chapters: [1, 11], tools: ["recommendModel()"] },
+  { phase: 2, title: "Requirements", chapters: [2], tools: ["moscowPrioritize()", "furpsClassifier"] },
+  { phase: 3, title: "Architecture", chapters: [4], tools: ["compareStyles()", "tradeoffAnalyzer"] },
+  { phase: 4, title: "Design & Implementation", chapters: [3, 5, 6], tools: ["umlClassToTS()", "solidValidator"] },
+  { phase: 5, title: "Testing", chapters: [6], tools: ["generateTestCases()", "checkPyramid()"] },
+  { phase: 6, title: "DevOps & CI/CD", chapters: [12], tools: ["validatePipeline()", "canRollback()"] },
+  { phase: 7, title: "Quality & Metrics", chapters: [9, 15], tools: ["calculateQualityIndex()", "gqmFramework"] },
+  { phase: 8, title: "Configuration Management", chapters: [10], tools: ["validateBranchStrategy()", "diffBaselines()"] },
+  { phase: 9, title: "Security", chapters: [13], tools: ["strideThreats()", "owaspTop10"] },
+  { phase: 10, title: "Formal Specification", chapters: [14], tools: ["verifyFSM()"] },
+];
+
+function crossReferenceChapters(chapterNum: number): { phase: number; tools: string[] }[] {
+  return capstonePhases
+    .filter((p) => p.chapters.includes(chapterNum))
+    .map((p) => ({ phase: p.phase, tools: p.tools }));
+}
+console.log(crossReferenceChapters(6)); // Testing + Design phases
+
+// === Capstone Deliverable Checklist ===
+interface Deliverable {
+  name: string;
+  description: string;
+  verified: boolean;
+}
+function checklistProgress(deliverables: Deliverable[]): { done: number; total: number; percent: number; pending: string[] } {
+  const done = deliverables.filter((d) => d.verified).length;
+  return { done, total: deliverables.length, percent: Math.round(done / deliverables.length * 100), pending: deliverables.filter((d) => !d.verified).map((d) => d.name) };
+}
+const deliverables: Deliverable[] = [
+  { name: "SRS Document", description: "Software requirements specification", verified: true },
+  { name: "Architecture ADRs", description: "Architecture Decision Records", verified: true },
+  { name: "API Implementation", description: "RESTful API endpoints", verified: false },
+  { name: "Frontend UI", description: "React-based user interface", verified: false },
+  { name: "Test Suite", description: "Unit + integration + e2e", verified: false },
+  { name: "CI/CD Pipeline", description: "Automated build and deploy", verified: false },
+  { name: "Deployment Config", description: "Docker Compose + cloud config", verified: false },
+];
+console.log(checklistProgress(deliverables));
+
+// === Skill Summary Generator ===
+function generateSkillSummary(): { chapter: number; topics: string; typescriptTools: string }[] {
+  return capstonePhases.map((p) => ({
+    chapter: p.phase,
+    topics: p.title,
+    typescriptTools: p.tools.join(", "),
+  }));
+}
+console.log(generateSkillSummary().slice(0, 3));
+```
+
 ## Summary
 
 This capstone chapter integrates all 15 preceding chapters into the development of a Team Task Board application. The complete software engineering lifecycle is demonstrated: process selection (Scrum), requirements specification (user stories, SRS), architecture design (system decomposition, technology stack), detailed design (API, database, patterns), implementation (TypeScript with Express, React, PostgreSQL, Redis), testing (unit, integration, CI), quality management (metrics, gates, monitoring), configuration management (Git, CI/CD), security (authentication, authorisation, rate limiting), and deployment (Docker Compose). Each phase references the relevant chapter for deeper study. The final deliverable is a production-ready software system with full documentation — the culmination of all skills taught in this course.

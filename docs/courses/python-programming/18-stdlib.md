@@ -706,6 +706,254 @@ console.log(mean([1, 2, 3, 4, 5]), stdev([1, 2, 3, 4, 5]));
 const choice = (arr: unknown[]) => arr[Math.floor(Math.random() * arr.length)];
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Date Formatter (Python strftime equivalent) ===
+function formatDate(date: Date, fmt: string): string {
+  const map: Record<string, string> = {
+    YYYY: String(date.getFullYear()),
+    YY: String(date.getFullYear()).slice(-2),
+    MM: String(date.getMonth() + 1).padStart(2, "0"),
+    M: String(date.getMonth() + 1),
+    DD: String(date.getDate()).padStart(2, "0"),
+    D: String(date.getDate()),
+    HH: String(date.getHours()).padStart(2, "0"),
+    mm: String(date.getMinutes()).padStart(2, "0"),
+    ss: String(date.getSeconds()).padStart(2, "0"),
+  };
+  return Object.entries(map).reduce((s, [k, v]) => s.replace(k, () => v), fmt);
+}
+console.log(formatDate(new Date(), "YYYY-MM-DD HH:mm")); // 2026-06-25 14:30
+
+// === Path Utility (Python pathlib equivalent) ===
+class PathUtil {
+  static join(...parts: string[]): string {
+    return parts.join("/").replace(/\/+/g, "/").replace(/\/$/, "") || "/";
+  }
+  static dirname(p: string): string { return p.includes("/") ? p.split("/").slice(0, -1).join("/") || "/" : "."; }
+  static basename(p: string): string { return p.split("/").pop() ?? p; }
+  static extname(p: string): string { const i = p.lastIndexOf("."); return i >= 0 ? p.slice(i) : ""; }
+  static resolve(...parts: string[]): string { return PathUtil.join(...parts); }
+}
+console.log(PathUtil.join("/a", "b", "c"));  // /a/b/c
+console.log(PathUtil.basename("/a/b/file.txt")); // file.txt
+console.log(PathUtil.extname("/a/b/file.txt")); // .txt
+
+// === RegExp Builder (Python re.compile equivalent) ===
+class RegexPattern {
+  private source = "";
+  static start(): RegexPattern { const p = new RegexPattern(); p.source = "^"; return p; }
+  digits(n?: number): this { this.source += "\\d" + (n ? `{${n}}` : "+"); return this; }
+  letters(n?: number): this { this.source += "[a-zA-Z]" + (n ? `{${n}}` : "+"); return this; }
+  literal(s: string): this { this.source += s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); return this; }
+  optional(): this { this.source += "?"; return this; }
+  end(): this { this.source += "$"; return this; }
+  build(): RegExp { return new RegExp(this.source); }
+}
+const emailRx = RegexPattern.start().letters().literal("@").letters().literal(".").letters(2).end().build();
+console.log(emailRx.test("user@example.com")); // true
+
+// === URL Parser ===
+function parseUrl(url: string): Record<string, string> {
+  try {
+    const u = new URL(url);
+    return { protocol: u.protocol, host: u.hostname, port: u.port || "80", path: u.pathname, query: u.search, hash: u.hash };
+  } catch { return { error: "Invalid URL" }; }
+}
+console.log(parseUrl("https://api.example.com:443/users?id=5#section"));
+```
+
+### TypeScript System Programming Patterns
+
+```typescript
+// === Process Management (Python: os, subprocess) ===
+import { spawn, execSync } from "child_process";
+function runCommand(cmd: string, args: string[]): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const child = spawn(cmd, args);
+    let output = "";
+    child.stdout.on("data", (data: Buffer) => { output += data.toString(); });
+    child.stderr.on("data", (data: Buffer) => { output += data.toString(); });
+    child.on("close", (code: number) => {
+      code === 0 ? resolve(output) : reject(new Error(`Exit code ${code}: ${output}`));
+    });
+  });
+}
+
+// === File System Watcher (Python: watchdog) ===
+import { watch, FSWatcher } from "fs";
+class FileWatcher {
+  private watchers = new Map<string, FSWatcher>();
+  watchFile(path: string, callback: (event: string, filename: string) => void): void {
+    const watcher = watch(path, (event, filename) => {
+      if (filename) callback(event, filename.toString());
+    });
+    this.watchers.set(path, watcher);
+  }
+  unwatch(path: string): void {
+    this.watchers.get(path)?.close();
+    this.watchers.delete(path);
+  }
+  unwatchAll(): void {
+    for (const watcher of this.watchers.values()) watcher.close();
+    this.watchers.clear();
+  }
+}
+
+// === INI Config Parser (Python: configparser) ===
+function parseIni(raw: string): Record<string, Record<string, string>> {
+  const result: Record<string, Record<string, string>> = {};
+  let currentSection = "DEFAULT";
+  result[currentSection] = {};
+  for (const line of raw.split("\n")) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#") || trimmed.startsWith(";")) continue;
+    const sectionMatch = trimmed.match(/^\[(.+)\]$/);
+    if (sectionMatch) { currentSection = sectionMatch[1]; result[currentSection] = {}; continue; }
+    const eqIdx = trimmed.indexOf("=");
+    if (eqIdx > 0) {
+      const key = trimmed.slice(0, eqIdx).trim();
+      const value = trimmed.slice(eqIdx + 1).trim();
+      result[currentSection][key] = value;
+    }
+  }
+  return result;
+}
+
+// === Logging System (Python: logging) ===
+enum LogLevel { DEBUG = 0, INFO = 1, WARN = 2, ERROR = 3 }
+class Logger {
+  private loggers = new Map<string, LogLevel>();
+  private handlers: ((level: LogLevel, name: string, msg: string) => void)[] = [];
+  
+  setLevel(name: string, level: LogLevel): void { this.loggers.set(name, level); }
+  
+  addHandler(handler: (level: LogLevel, name: string, msg: string) => void): void {
+    this.handlers.push(handler);
+  }
+  
+  log(level: LogLevel, name: string, msg: string): void {
+    const minLevel = this.loggers.get(name) ?? LogLevel.INFO;
+    if (level >= minLevel) {
+      for (const handler of this.handlers) handler(level, name, msg);
+    }
+  }
+  
+  info(name: string, msg: string): void { this.log(LogLevel.INFO, name, msg); }
+  error(name: string, msg: string): void { this.log(LogLevel.ERROR, name, msg); }
+  warn(name: string, msg: string): void { this.log(LogLevel.WARN, name, msg); }
+  debug(name: string, msg: string): void { this.log(LogLevel.DEBUG, name, msg); }
+}
+
+// === Temporary File Manager (Python: tempfile) ===
+import { mkdtempSync, writeFileSync, rmSync } from "fs";
+import { tmpdir } from "os";
+import { join } from "path";
+class TempDir {
+  private path: string;
+  constructor(prefix = "tmp") {
+    this.path = mkdtempSync(join(tmpdir(), prefix));
+  }
+  write(name: string, content: string): string {
+    const fullPath = join(this.path, name);
+    writeFileSync(fullPath, content, "utf-8");
+    return fullPath;
+  }
+  getPath(): string { return this.path; }
+  cleanup(): void { rmSync(this.path, { recursive: true, force: true }); }
+}
+
+const config = parseIni("[database]\nhost=localhost\nport=5432\nuser=admin");
+console.log(config); // { DEFAULT: {}, database: { host: "localhost", ... } }
+
+const tmp = new TempDir("py-stdlib-");
+tmp.write("test.txt", "hello");
+console.log(tmp.getPath());
+tmp.cleanup();
+```
+
+### TypeScript Standard Library Patterns
+
+```typescript
+// === Python stdlib equivalents in TypeScript ===
+import { resolve, basename, dirname, extname, join, normalize, relative } from "path";
+import { existsSync, readFileSync, writeFileSync, readdirSync, mkdirSync, statSync, copyFileSync, unlinkSync } from "fs";
+import { createHash, randomBytes, createHmac } from "crypto";
+import { format } from "util";
+import { EventEmitter } from "events";
+
+// === Python: os.path operations ===
+function pathOps() {
+  const p = "/home/user/projects/src/main.py";
+  console.log({
+    basename: basename(p),
+    dirname: dirname(p),
+    ext: extname(p),
+    stem: basename(p).replace(extname(p), ""),
+    absolute: resolve("."),
+  });
+}
+
+// === Python: shutil operations ===
+function fileOps() {
+  const src = "data.txt", dst = "backup/data.txt";
+  if (!existsSync(dirname(dst))) mkdirSync(dirname(dst), { recursive: true });
+  copyFileSync(src, dst);
+  const stats = statSync(src);
+  console.log({ size: stats.size, created: stats.birthtime, modified: stats.mtime });
+}
+
+// === Python: json operations ===
+function jsonOps() {
+  const data = { name: "Alice", scores: [95, 87, 92], meta: { created: new Date().toISOString() } };
+  writeFileSync("data.json", JSON.stringify(data, null, 2), "utf-8");
+  const parsed = JSON.parse(readFileSync("data.json", "utf-8"));
+  console.log("JSON roundtrip:", JSON.stringify(parsed) === JSON.stringify(data));
+}
+
+// === Python: csv module ===
+function csvOps() {
+  const csvData = "name,age,city\nAlice,30,New York\nBob,25,London";
+  const lines = csvData.trim().split("\n");
+  const headers = lines[0].split(",");
+  const rows = lines.slice(1).map(l => {
+    const vals = l.split(",");
+    return headers.reduce((obj, h, i) => ({ ...obj, [h]: vals[i] }), {} as Record<string, string>);
+  });
+  console.log(rows);
+}
+
+// === Python: hashlib ===
+function hashOps() {
+  const data = "hello world";
+  console.log({
+    md5: createHash("md5").update(data).digest("hex"),
+    sha256: createHash("sha256").update(data).digest("hex"),
+    randomHex: randomBytes(16).toString("hex"),
+  });
+}
+
+// === Python: datetime ===
+function dateOps() {
+  const now = new Date();
+  const yesterday = new Date(now);
+  yesterday.setDate(yesterday.getDate() - 1);
+  console.log({ now: now.toISOString(), yesterday: yesterday.toISOString() });
+}
+
+// === Python: collections.Counter ===
+function counter<T>(items: T[]): Map<T, number> {
+  const counts = new Map<T, number>();
+  for (const item of items) counts.set(item, (counts.get(item) ?? 0) + 1);
+  return counts;
+}
+
+console.log("=== Python stdlib × TypeScript equivalents ===");
+pathOps(); fileOps(); jsonOps(); csvOps(); hashOps(); dateOps();
+console.log(counter(["a","b","a","c","b","a"]));
+```
+
 ## Summary
 
 - `os` and `sys` provide low-level system access; `pathlib` and `shutil` are higher-level.

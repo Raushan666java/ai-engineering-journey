@@ -548,6 +548,82 @@ function lagrangeInterp(x: number[], y: number[], t: number): number {
 console.log(`Lagrange(0.8): ${lagrangeInterp(xs, ys, 0.8).toFixed(4)} (cubic spline: ${spline(0.8).toFixed(4)})`);
 ```
 
+```
+// --- False Position (Regula Falsi) Method ---
+function falsePosition(f: (x: number) => number, a: number, b: number, tol: number = 1e-8, maxIter: number = 100): number {
+  let fa = f(a), fb = f(b);
+  for (let i = 0; i < maxIter; i++) {
+    const c = (a * fb - b * fa) / (fb - fa);
+    const fc = f(c);
+    if (Math.abs(fc) < tol) return c;
+    if (fa * fc < 0) { b = c; fb = fc; } else { a = c; fa = fc; }
+  }
+  return (a + b) / 2;
+}
+const fp = falsePosition(x => x * x - 2, 1, 2);
+console.log('False position √2:', fp.toFixed(10));
+
+// --- Gauss-Seidel Iteration ---
+function gaussSeidel(A: number[][], b: number[], maxIter: number = 100, tol: number = 1e-8): number[] {
+  const n = A.length;
+  let x = new Array(n).fill(0);
+  for (let iter = 0; iter < maxIter; iter++) {
+    let maxDiff = 0;
+    for (let i = 0; i < n; i++) {
+      let sum = b[i];
+      for (let j = 0; j < n; j++) if (j !== i) sum -= A[i][j] * x[j];
+      const newX = sum / A[i][i];
+      maxDiff = Math.max(maxDiff, Math.abs(newX - x[i]));
+      x[i] = newX;
+    }
+    if (maxDiff < tol) break;
+  }
+  return x;
+}
+const gsA = [[4, -1, 0], [-1, 4, -1], [0, -1, 4]], gsB = [15, 10, 10];
+const gsX = gaussSeidel(gsA, gsB);
+console.log('\nGauss-Seidel solution:', gsX.map(v => v.toFixed(4)).join(', '), '(expected: x=5, y=4.375, z=3.75)');
+
+// --- Richardson Extrapolation ---
+function richardsonExtrap(f: (h: number) => number, h: number, order: number = 2): number {
+  const f1 = f(h);
+  const f2 = f(h / 2);
+  return (Math.pow(2, order) * f2 - f1) / (Math.pow(2, order) - 1);
+}
+// Approximate f'(x) = cos(x) at x=0 using forward diff
+const derivRich = richardsonExtrap(h => (Math.sin(h) - Math.sin(0)) / h, 0.1);
+console.log('\nRichardson extrapolation f\'(0) for sin(x):', derivRich.toFixed(6), '(expected: 1)');
+
+// --- Composite Simpson's Rule ---
+function simpsonComposite(f: (x: number) => number, a: number, b: number, n: number): number {
+  if (n % 2 !== 0) n++; // must be even
+  const h = (b - a) / n;
+  let sum = f(a) + f(b);
+  for (let i = 1; i < n; i++) sum += (i % 2 === 0 ? 2 : 4) * f(a + i * h);
+  return (h / 3) * sum;
+}
+const simpsonInt = simpsonComposite(x => Math.exp(-x * x), 0, 1, 100);
+console.log('\nSimpson ∫₀¹ e^(-x²) dx:', simpsonInt.toFixed(6), '(expected: ~0.746824)');
+
+// --- Power Method for Eigenvalues ---
+function powerMethod(A: number[][], maxIter: number = 100, tol: number = 1e-8): { eigenvalue: number; eigenvector: number[] } {
+  const n = A.length;
+  let v = new Array(n).fill(1).map((_, i) => i === 0 ? 1 : 0.1);
+  let λ = 0;
+  for (let iter = 0; iter < maxIter; iter++) {
+    const Av = A.map((r, i) => r.reduce((s, a, j) => s + a * v[j], 0));
+    const norm = Math.sqrt(Av.reduce((s, x) => s + x * x, 0));
+    const newV = Av.map(x => x / norm);
+    const newλ = newV.reduce((s, x, i) => s + x * Av[i], 0);
+    if (Math.abs(newλ - λ) < tol) break;
+    λ = newλ; v = newV;
+  }
+  return { eigenvalue: +λ.toFixed(4), eigenvector: v.map(x => +x.toFixed(4)) };
+}
+const pm = powerMethod([[2, 1], [1, 2]]);
+console.log('\nPower method: λ=', pm.eigenvalue, '(expected: 3)');
+```
+
 ## Summary
 
 - Root-finding methods (bisection, Newton-Raphson, secant) solve nonlinear equations

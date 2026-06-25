@@ -674,6 +674,127 @@ console.log(RegexEngine.matches("ab*c", "abbc"));// true
 console.log(RegexEngine.matches("ab*c", "ab"));  // false
 ```
 
+// ───────────────────────────────────────────────────────
+// Thompson Construction — converts a regex (in postfix
+// "ab|c*." notation) to an equivalent NFA via Thompson's
+// algorithm.  Each sub-NFA is built compositionally.
+// ───────────────────────────────────────────────────────
+
+class ThompsonConstruction {
+  // Build NFA from a regex in postfix notation
+  // Operators: . = concat, | = union, * = star
+  static toNFA(postfix: string): {
+    states: Set<string>; alphabet: Set<string>;
+    transitions: Map<string, Set<string>>;
+    epsilon: Map<string, Set<string>>;
+    start: string; accept: Set<string>;
+  } {
+    const stack: Array<{
+      start: string; accept: Set<string>;
+      states: Set<string>; trans: Map<string, Set<string>>;
+      epsilon: Map<string, Set<string>>;
+    }> = [];
+    let stateCounter = 0;
+    const newState = () => `q${stateCounter++}`;
+
+    for (const ch of postfix) {
+      if (ch === ".") {
+        const n2 = stack.pop()!;
+        const n1 = stack.pop()!;
+        const states = new Set([...n1.states, ...n2.states]);
+        const trans = new Map([...n1.trans, ...n2.trans]);
+        const epsilon = new Map([...n1.epsilon, ...n2.epsilon]);
+
+        // ε from n1's accept states to n2's start
+        for (const acc of n1.accept) {
+          const existing = epsilon.get(acc) || new Set();
+          existing.add(n2.start);
+          epsilon.set(acc, existing);
+        }
+        // n1's accept states are no longer accept
+        stack.push({ start: n1.start, accept: n2.accept, states, trans, epsilon });
+      } else if (ch === "|") {
+        const n2 = stack.pop()!;
+        const n1 = stack.pop()!;
+        const s = newState();
+        const a = newState();
+        const states = new Set([s, a, ...n1.states, ...n2.states]);
+        const trans = new Map([...n1.trans, ...n2.trans]);
+        const epsilon = new Map([...n1.epsilon, ...n2.epsilon]);
+
+        epsilon.set(s, (epsilon.get(s) || new Set()).add(n1.start).add(n2.start));
+        for (const acc of n1.accept) {
+          (epsilon.get(acc) || new Set()).add(a);
+        }
+        for (const acc of n2.accept) {
+          (epsilon.get(acc) || new Set()).add(a);
+        }
+        stack.push({ start: s, accept: new Set([a]), states, trans, epsilon });
+      } else if (ch === "*") {
+        const n = stack.pop()!;
+        const s = newState();
+        const a = newState();
+        const states = new Set([s, a, ...n.states]);
+        const trans = new Map([...n.trans]);
+        const epsilon = new Map([...n.epsilon]);
+
+        epsilon.set(s, new Set([n.start, a]));
+        for (const acc of n.accept) {
+          (epsilon.get(acc) || new Set()).add(n.start).add(a);
+        }
+        stack.push({ start: s, accept: new Set([a]), states, trans, epsilon });
+      } else {
+        // Single character
+        const s = newState();
+        const a = newState();
+        const trans = new Map<string, Set<string>>();
+        trans.set(`${s},${ch}`, new Set([a]));
+        stack.push({
+          start: s, accept: new Set([a]),
+          states: new Set([s, a]), trans, epsilon: new Map()
+        });
+      }
+    }
+
+    const final = stack.pop()!;
+    return {
+      states: final.states, alphabet: new Set(postfix.replace(/[.|*]/g, "")),
+      transitions: final.trans, epsilon: final.epsilon,
+      start: final.start, accept: final.accept
+    };
+  }
+}
+
+// ───────────────────────────────────────────────────────
+// Regex Simplifier — applies algebraic laws
+// to simplify regular expressions symbolically.
+// ───────────────────────────────────────────────────────
+
+class RegexSimplifier {
+  static simplify(expr: string): string {
+    let s = expr;
+    // ∅ + R = R,  R + ∅ = R,  ∅R = ∅,  R∅ = ∅
+    s = s.replace(/∅\+\(/g, "(").replace(/\+∅/g, "");
+    s = s.replace(/∅\*/g, "ε").replace(/ε\*/g, "ε");
+    // εR = R,  Rε = R
+    s = s.replace(/ε\(/g, "(").replace(/\)ε/g, ")");
+    // RR* = R+R,  R*R = R+R  (simplification)
+    s = s.replace(/\(\w\)\*\(\w\)/g, (m) => {
+      const c = m[1];
+      return c === m[4] ? `(${c})+` : m;
+    });
+    return s;
+  }
+}
+
+// Demo
+const thompson = ThompsonConstruction.toNFA("ab.c|");
+console.log(`Thompson NFA states: ${thompson.states.size}`);
+console.log(`Thompson NFA start: ${thompson.start}`);
+console.log(`Thompson NFA accept: ${[...thompson.accept].join(", ")}`);
+console.log(`Simplified: ${RegexSimplifier.simplify("(a|∅)*b")}`);
+```
+
 ## Summary
 
 - Regular expressions describe languages algebraically using union (+), concatenation, and Kleene star (*).

@@ -693,6 +693,60 @@ const city2 = user2?.address?.city ?? "Unknown";
 // Python: getattr(getattr(user, "address", None), "city", "Unknown") or try/except
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Python vs TypeScript Syntax Equivalency Table ===
+type SyntaxEntry = {
+  python: string;
+  typescript: string;
+  notes: string;
+};
+const syntaxTable: SyntaxEntry[] = [
+  { python: "print(x)", typescript: "console.log(x)", notes: "Console output" },
+  { python: "def f(x):", typescript: "function f(x):", notes: "Function definition" },
+  { python: "if x > 0:", typescript: "if (x > 0) {", notes: "Blocks use indentation vs braces" },
+  { python: "x if cond else y", typescript: "cond ? x : y", notes: "Ternary order differs" },
+  { python: "x is None", typescript: "x === null || x === undefined", notes: "None vs null/undefined" },
+  { python: "len(lst)", typescript: "lst.length", notes: "Function vs property" },
+  { python: "lst.append(x)", typescript: "lst.push(x)", notes: "Add to end" },
+  { python: "not x", typescript: "!x", notes: "Logical negation" },
+  { python: "x and y", typescript: "x && y", notes: "Logical AND" },
+  { python: "x or y", typescript: "x || y", notes: "Logical OR" },
+  { python: "range(n)", typescript: "[...Array(n).keys()]", notes: "Range generation" },
+  { python: "for i, v in enumerate(lst):", typescript: "lst.forEach((v, i) => {})", notes: "Indexed iteration" },
+  { python: "x in lst", typescript: "lst.includes(x)", notes: "Membership test" },
+  { python: '"".join(lst)', typescript: "lst.join('')", notes: "Join strings" },
+  { python: "import math", typescript: "import * as math from 'math'", notes: "Module import" },
+  { python: "class A:", typescript: "class A {}", notes: "Class definition" },
+  { python: "try/except", typescript: "try/catch", notes: "Exception handling" },
+  { python: "with open(f) as fh:", typescript: "No direct equivalent", notes: "Context manager" },
+];
+function lookupSyntax(python: string): string {
+  return syntaxTable.find((e) => e.python === python)?.typescript ?? "Not found";
+}
+console.log(lookupSyntax("print(x)"));
+
+// === Environment Setup Checker ===
+interface EnvRequirement {
+  tool: string;
+  command: string;
+  required: boolean;
+}
+const envReqs: EnvRequirement[] = [
+  { tool: "Python 3.10+", command: "python --version", required: true },
+  { tool: "pip", command: "pip --version", required: true },
+  { tool: "venv", command: "python -m venv --help", required: true },
+  { tool: "Node.js 18+", command: "node --version", required: false },
+  { tool: "TypeScript", command: "npx tsc --version", required: false },
+];
+function checkSetup(reqs: EnvRequirement[]): { ok: boolean; missing: string[] } {
+  const missing = reqs.filter((r) => r.required).map((r) => r.tool);
+  return { ok: missing.length === 0, missing };
+}
+console.log(checkSetup(envReqs));
+```
+
 ## Summary
 
 - Python is an interpreted, dynamically typed language emphasising readability.
@@ -724,6 +778,228 @@ const city2 = user2?.address?.city ?? "Unknown";
 ### Challenge Problem
 
 Write a script that creates a virtual environment, installs the `requests` and `pandas` packages, generates a `requirements.txt` file, then deactivates and removes the environment using `subprocess.run` or `os.system`. Verify each step with print statements.
+
+### TypeScript Practical Applications
+
+```typescript
+// === Python ↔ TypeScript Syntax Equivalence Table ===
+const equivTable = [
+  { python: "print('hello')", ts: "console.log('hello')", note: "Console output" },
+  { python: "len(list)", ts: "list.length", note: "Length property" },
+  { python: "None", ts: "null", note: "Null value" },
+  { python: "True / False", ts: "true / false", note: "Boolean literals" },
+  { python: "def f(x):", ts: "function f(x: type): type", note: "Function definition with types" },
+  { python: "if __name__ == '__main__':", ts: "if (require.main === module)", note: "Entry point" },
+  { python: "str(42)", ts: "String(42)", note: "Convert to string" },
+  { python: "# comment", ts: "// comment", note: "Single-line comment" },
+  { python: "'''doc'''", ts: "/** doc */", note: "Documentation comment" },
+  { python: "pass", ts: "{} // empty block", note: "No-op placeholder" },
+  { python: "lambda x: x*2", ts: "(x: number) => x * 2", note: "Anonymous function" },
+  { python: "range(5)", ts: "[...Array(5).keys()]", note: "Number range" },
+  { python: "isinstance(x, int)", ts: "typeof x === 'number'", note: "Type check" },
+  { python: "...", ts: "/* empty */", note: "Ellipsis / placeholder" },
+  { python: "raise Exception()", ts: "throw new Error()", note: "Exception throwing" },
+  { python: "try/except/finally", ts: "try/catch/finally", note: "Exception handling" },
+  { python: "with open(f) as fh:", ts: "// Manual try/finally", note: "Resource management" },
+  { python: "for x in iterable:", ts: "for (const x of iterable)", note: "Iteration" },
+  { python: "a, b = b, a", ts: "[a, b] = [b, a]", note: "Swap via destructuring" },
+  { python: "dict.keys()", ts: "Object.keys(dict)", note: "Key enumeration" },
+  { python: "set.add(x)", ts: "set.add(x)", note: "Set insertion" },
+  { python: "list.append(x)", ts: "array.push(x)", note: "List/array append" },
+  { python: "list.pop()", ts: "array.pop()", note: "Pop last element" },
+  { python: "sorted(list)", ts: "[...array].sort()", note: "Sorted copy" },
+  { python: "reversed(list)", ts: "[...array].reverse()", note: "Reversed copy" },
+  { python: "enumerate(list)", ts: "array.entries()", note: "Indexed iteration" },
+  { python: "zip(a, b)", ts: "a.map((_, i) => [a[i], b[i]])", note: "Parallel iteration" },
+  { python: "any(list)", ts: "array.some(Boolean)", note: "Any true" },
+  { python: "all(list)", ts: "array.every(Boolean)", note: "All true" },
+  { python: "sum(list)", ts: "array.reduce((a,b)=>a+b, 0)", note: "Summation" },
+];
+equivTable.forEach(e => console.log(`${e.python.padEnd(25)} → ${e.ts.padEnd(35)} # ${e.note}`));
+
+// === Python Interop Pattern: Config Parser in Both ===
+interface PythonConfig {
+  version: string;
+  dependencies: Record<string, string>;
+  scripts: Record<string, string>;
+}
+function parsePythonCfg(raw: string): PythonConfig {
+  const lines = raw.split("\n").filter(l => l.trim() && !l.startsWith("#"));
+  const cfg: PythonConfig = { version: "", dependencies: {}, scripts: {} };
+  let section = "";
+  for (const line of lines) {
+    if (line.startsWith("[")) { section = line.match(/\[(.+)\]/)![1]; continue; }
+    const [k, ...v] = line.split("=").map(s => s.trim());
+    const val = v.join("=");
+    if (section === "metadata") cfg.version ??= val;
+    else if (section === "dependencies") cfg.dependencies[k] = val;
+    else if (section === "scripts") cfg.scripts[k] = val;
+  }
+  return cfg;
+}
+console.log(parsePythonCfg("[metadata]\nversion=1.0\n[dependencies]\nrequests=2.28\n[scripts]\ntest=pytest"));
+
+// === Execution Time Benchmark ===
+function bench(fn: () => void, label: string, iterations = 10000): number {
+  const start = performance.now();
+  for (let i = 0; i < iterations; i++) fn();
+  return performance.now() - start;
+}
+const arr = Array.from({ length: 1000 }, (_, i) => i);
+const listComp = bench(() => { const r: number[] = []; for (const x of arr) if (x % 2 === 0) r.push(x * 2); return r; }, "list comprehension");
+const filterMap = bench(() => arr.filter(x => x % 2 === 0).map(x => x * 2), "filter+map");
+console.log(`list comp: ${listComp.toFixed(2)}ms, filter+map: ${filterMap.toFixed(2)}ms`);
+```
+
+### TypeScript Data Structures & Algorithms Primer
+
+```typescript
+// === Stack (Python: list as stack) ===
+class Stack<T> {
+  private items: T[] = [];
+  push(item: T): void { this.items.push(item); }
+  pop(): T | undefined { return this.items.pop(); }
+  peek(): T | undefined { return this.items[this.items.length - 1]; }
+  get length(): number { return this.items.length; }
+}
+const stack = new Stack<number>();
+stack.push(1); stack.push(2); stack.push(3);
+console.log(stack.pop());  // 3
+console.log(stack.peek()); // 2
+
+// === Queue (Python: deque) ===
+class Queue<T> {
+  private items: T[] = [];
+  enqueue(item: T): void { this.items.push(item); }
+  dequeue(): T | undefined { return this.items.shift(); }
+  get length(): number { return this.items.length; }
+}
+
+// === Linked List (Python: manual implementation) ===
+class ListNode<T> { constructor(public value: T, public next: ListNode<T> | null = null) {} }
+class LinkedList<T> {
+  private head: ListNode<T> | null = null;
+  append(value: T): void {
+    if (!this.head) { this.head = new ListNode(value); return; }
+    let current = this.head;
+    while (current.next) current = current.next;
+    current.next = new ListNode(value);
+  }
+  toArray(): T[] {
+    const result: T[] = [];
+    let current = this.head;
+    while (current) { result.push(current.value); current = current.next; }
+    return result;
+  }
+}
+
+// === Binary Search Tree (Python: BST) ===
+class BSTNode { constructor(public value: number, public left: BSTNode | null = null, public right: BSTNode | null = null) {} }
+class BST {
+  private root: BSTNode | null = null;
+  insert(value: number): void {
+    const newNode = new BSTNode(value);
+    if (!this.root) { this.root = newNode; return; }
+    let current = this.root;
+    while (true) {
+      if (value < current.value) {
+        if (!current.left) { current.left = newNode; return; }
+        current = current.left;
+      } else {
+        if (!current.right) { current.right = newNode; return; }
+        current = current.right;
+      }
+    }
+  }
+  inOrder(): number[] {
+    const result: number[] = [];
+    function traverse(node: BSTNode | null): void {
+      if (!node) return;
+      traverse(node.left);
+      result.push(node.value);
+      traverse(node.right);
+    }
+    traverse(this.root);
+    return result;
+  }
+  search(value: number): boolean {
+    let current = this.root;
+    while (current) {
+      if (value === current.value) return true;
+      current = value < current.value ? current.left : current.right;
+    }
+    return false;
+  }
+}
+
+// === Graph (Python: adjacency list) ===
+class Graph {
+  private adj = new Map<string, string[]>();
+  addVertex(v: string): void { if (!this.adj.has(v)) this.adj.set(v, []); }
+  addEdge(v1: string, v2: string): void {
+    this.adj.get(v1)?.push(v2);
+    this.adj.get(v2)?.push(v1);
+  }
+  bfs(start: string): string[] {
+    const visited = new Set<string>();
+    const queue = [start];
+    const result: string[] = [];
+    while (queue.length > 0) {
+      const v = queue.shift()!;
+      if (visited.has(v)) continue;
+      visited.add(v);
+      result.push(v);
+      for (const neighbor of this.adj.get(v) ?? []) {
+        if (!visited.has(neighbor)) queue.push(neighbor);
+      }
+    }
+    return result;
+  }
+  dfs(start: string): string[] {
+    const visited = new Set<string>();
+    const result: string[] = [];
+    const dfs_rec = (v: string): void => {
+      if (visited.has(v)) return;
+      visited.add(v);
+      result.push(v);
+      for (const n of this.adj.get(v) ?? []) dfs_rec(n);
+    };
+    dfs_rec(start);
+    return result;
+  }
+}
+
+// === Hash Table (Python: dict) ===
+class SimpleHashTable<K, V> {
+  private buckets = new Map<number, [K, V][]>();
+  private hash(key: K): number {
+    const str = String(key);
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) { hash = (hash << 5) - hash + str.charCodeAt(i); hash |= 0; }
+    return Math.abs(hash);
+  }
+  set(key: K, value: V): void {
+    const h = this.hash(key);
+    if (!this.buckets.has(h)) this.buckets.set(h, []);
+    const bucket = this.buckets.get(h)!;
+    const existing = bucket.find(([k]) => k === key);
+    if (existing) existing[1] = value;
+    else bucket.push([key, value]);
+  }
+  get(key: K): V | undefined { return this.buckets.get(this.hash(key))?.find(([k]) => k === key)?.[1]; }
+}
+
+const bst = new BST();
+[5, 3, 7, 2, 4, 6, 8].forEach(v => bst.insert(v));
+console.log(bst.inOrder());  // [2, 3, 4, 5, 6, 7, 8]
+console.log(bst.search(4));  // true
+console.log(bst.search(9));  // false
+
+const g = new Graph();
+["A","B","C","D","E"].forEach(v => g.addVertex(v));
+g.addEdge("A","B"); g.addEdge("A","C"); g.addEdge("B","D"); g.addEdge("C","E");
+console.log(g.bfs("A")); // ["A","B","C","D","E"]
+```
 
 ### TypeScript Challenge
 

@@ -450,6 +450,68 @@ function growthComparator(f: (n: number) => number, g: (n: number) => number, li
 }
 ```
 
+```
+console.log('Injective f(x)=2x:', isInjective(f1));                   // true
+console.log('Surjective f(x)=2x on {0,2,4}:', isSurjective(f1, [1,2,3], [2,4,6]));  // no, target has 6
+
+// --- Function Composition ---
+function compose<A, B, C>(f: (x: A) => B, g: (y: B) => C): (x: A) => C {
+  return (x: A) => g(f(x));
+}
+const double = (x: number) => 2 * x;
+const addOne = (x: number) => x + 1;
+const doubleThenAdd = compose(double, addOne);
+console.log('\nCompose (double then add1) 5:', doubleThenAdd(5)); // 11
+
+// --- Inverse Function Finder ---
+function inverseFunction(f: (x: number) => number, domain: number[], codomain: number[]): Map<number, number> | null {
+  const mapping = new Map<number, number>();
+  for (const x of domain) {
+    const y = f(x);
+    if (!codomain.includes(y)) return null;
+    if (mapping.has(y)) return null; // not injective
+    mapping.set(y, x);
+  }
+  return mapping;
+}
+const inv = inverseFunction(x => 2 * x, [1, 2, 3], [2, 4, 6]);
+console.log('\nInverse of f(x)=2x:', inv ? [...inv.entries()].map(([k, v]) => `f⁻¹(${k})=${v}`).join(', ') : 'no inverse');
+
+// --- Pigeonhole Principle on Functions ---
+function pigeonholeFunc<T, U>(f: Map<T, U>): boolean {
+  const values = [...f.values()];
+  return new Set(values).size < values.length;
+}
+const fMap = new Map([[1, 'a'], [2, 'b'], [3, 'a']]); // 3 domains, 2 codomains
+console.log('\nPigeonhole applies (3→2):', pigeonholeFunc(fMap));
+
+// --- Ceiling & Floor Calculator ---
+function calcFloor(x: number): number { return Math.floor(x); }
+function calcCeil(x: number): number { return Math.ceil(x); }
+console.log('\nfloor(3.7):', calcFloor(3.7), 'ceil(3.7):', calcCeil(3.7));
+console.log('floor(-2.3):', calcFloor(-2.3), 'ceil(-2.3):', calcCeil(-2.3));
+
+// --- Big-O Verifier ---
+function bigOVerifier(f: (n: number) => number, g: (n: number) => number, c: number, n0: number, limit: number): boolean {
+  for (let n = n0; n <= limit; n++) if (f(n) > c * g(n)) return false;
+  return true;
+}
+// Is n² ∈ O(n³)? Yes, for c=1, n0=1
+console.log('\nn² ∈ O(n³):', bigOVerifier(n => n * n, n => n * n * n, 1, 1, 100));
+// Is n³ ∈ O(n²)? No
+console.log('n³ ∈ O(n²):', bigOVerifier(n => n * n * n, n => n * n, 1, 1, 100));
+
+// --- Hash Function (Modular) ---
+function hashMod(key: string, tableSize: number): number {
+  let hash = 0;
+  for (let i = 0; i < key.length; i++)
+    hash = (hash * 31 + key.charCodeAt(i)) % tableSize;
+  return hash;
+}
+console.log('\nHash "hello" mod 10:', hashMod('hello', 10));
+console.log('Hash "world" mod 10:', hashMod('world', 10));
+```
+
 ## Summary
 
 - Functions map each input to exactly one output.

@@ -805,6 +805,192 @@ function validateTransfer(transfer: Transfer): { valid: boolean; violations: str
 
 **Answer: B** — Statecharts (Harel) add hierarchy (nested states), concurrency (orthogonal regions), and communication.
 
+### TypeScript: Formal Methods Tools
+
+```typescript
+// === Propositional Logic Evaluator ===
+type TruthTable = Record<string, boolean>;
+function evaluate(expr: string, vars: TruthTable): boolean {
+  let s = expr;
+  for (const [k, v] of Object.entries(vars)) s = s.replace(new RegExp(k, "g"), v ? "true" : "false");
+  return Function(`return (${s})`)();
+}
+console.log(evaluate("a && b || !c", { a: true, b: false, c: true })); // false
+
+// === Finite State Machine Verifier ===
+interface FSM {
+  states: string[];
+  alphabet: string[];
+  transitions: Map<string, Map<string, string>>;
+  initial: string;
+  accepting: string[];
+}
+function verifyFSM(fsm: FSM): { complete: boolean; deterministic: boolean; unreachable: string[] } {
+  const reachable = new Set<string>([fsm.initial]);
+  const queue = [fsm.initial];
+  while (queue.length > 0) {
+    const state = queue.shift()!;
+    const trans = fsm.transitions.get(state);
+    if (trans) for (const next of trans.values()) { if (!reachable.has(next)) { reachable.add(next); queue.push(next); } }
+  }
+  const unreachable = fsm.states.filter((s) => !reachable.has(s));
+  const complete = fsm.states.every((s) => {
+    const trans = fsm.transitions.get(s);
+    return trans && fsm.alphabet.every((a) => trans.has(a));
+  });
+  const deterministic = fsm.transitions.size === fsm.states.length;
+  return { complete, deterministic, unreachable };
+}
+const fsm: FSM = {
+  states: ["S0", "S1", "S2"],
+  alphabet: ["0", "1"],
+  transitions: new Map([
+    ["S0", new Map([["0", "S0"], ["1", "S1"]])],
+    ["S1", new Map([["0", "S2"], ["1", "S0"]])],
+    ["S2", new Map([["0", "S1"], ["1", "S2"]])],
+  ]),
+  initial: "S0",
+  accepting: ["S0"],
+};
+console.log(verifyFSM(fsm)); // complete: true, deterministic: true
+
+// === Hoare Triple Checker ===
+interface HoareTriple {
+  precondition: string;
+  program: string;
+  postcondition: string;
+}
+function weakestPrecondition(program: string, postcondition: string): string {
+  if (program.startsWith("x = ")) {
+    const expr = program.substring(4);
+    return postcondition.replace(/x/g, `(${expr})`);
+  }
+  return `wp(${program}, ${postcondition})`;
+}
+const triple: HoareTriple = { precondition: "x >= 0", program: "x = x + 1", postcondition: "x > 0" };
+console.log(weakestPrecondition(triple.program, triple.postcondition)); // (x + 1) > 0
+
+// === LTL Property Checker ===
+type LTLOperator = "G" | "F" | "X" | "U";
+interface LTLProperty { formula: string; trace: boolean[] }
+function checkLTL(prop: LTLProperty): boolean {
+  switch (prop.formula[0] as LTLOperator) {
+    case "G": return prop.trace.every((v) => v);         // Globally
+    case "F": return prop.trace.some((v) => v);          // Finally
+    case "X": return prop.trace.length > 1 && prop.trace[1]; // Next
+    default: return false;
+  }
+}
+console.log(checkLTL({ formula: "G(ok)", trace: [true, true, true, true] })); // true
+console.log(checkLTL({ formula: "F(error)", trace: [false, false, true] }));  // true
+
+// === Invariant Checker ===
+interface LoopInvariant {
+  condition: string;
+  holdsBefore: boolean;
+  holdsAfter: boolean;
+  holdsAtEnd: boolean;
+}
+function checkInvariant(inv: LoopInvariant): string[] {
+  const violations: string[] = [];
+  if (!inv.holdsBefore) violations.push("Invariant does not hold before loop entry");
+  if (!inv.holdsAfter) violations.push("Invariant does not hold after iteration");
+  if (!inv.holdsAtEnd) violations.push("Invariant does not hold at loop termination");
+  return violations;
+}
+console.log(checkInvariant({ condition: "sum <= n", holdsBefore: true, holdsAfter: true, holdsAtEnd: true }));
+
+// === Model Checking Path Generator ===
+function generateAllPaths(fsm: FSM, maxDepth: number): string[][] {
+  const paths: string[][] = [];
+  function dfs(state: string, path: string[]): void {
+    if (path.length >= maxDepth) { paths.push(path); return; }
+    const trans = fsm.transitions.get(state);
+    if (!trans) { paths.push(path); return; }
+    for (const [symbol, next] of trans) { dfs(next, [...path, symbol]); }
+  }
+  dfs(fsm.initial, []);
+  return paths;
+}
+console.log(generateAllPaths(fsm, 3).slice(0, 5));
+```
+
+### TypeScript: Formal Verification Tools
+
+```typescript
+// === Propositional Logic Prover ===
+type Formula = { type: "var"; name: string } | { type: "not"; operand: Formula } | { type: "and"; left: Formula; right: Formula } | { type: "or"; left: Formula; right: Formula } | { type: "implies"; left: Formula; right: Formula };
+
+function evaluate(formula: Formula, env: Map<string, boolean>): boolean {
+  switch (formula.type) {
+    case "var": return env.get(formula.name) ?? false;
+    case "not": return !evaluate(formula.operand, env);
+    case "and": return evaluate(formula.left, env) && evaluate(formula.right, env);
+    case "or": return evaluate(formula.left, env) || evaluate(formula.right, env);
+    case "implies": return !evaluate(formula.left, env) || evaluate(formula.right, env);
+  }
+}
+
+function isTautology(formula: Formula, vars: string[]): boolean {
+  const total = 1 << vars.length;
+  for (let i = 0; i < total; i++) {
+    const env = new Map<string, boolean>();
+    for (let j = 0; j < vars.length; j++) env.set(vars[j], (i & (1 << (vars.length - 1 - j))) !== 0);
+    if (!evaluate(formula, env)) return false;
+  }
+  return true;
+}
+
+// === Invariant Checker ===
+class InvariantChecker<T> {
+  private invariants: ((state: T) => boolean)[] = [];
+  
+  addInvariant(name: string, check: (state: T) => boolean): void { this.invariants.push(check); }
+  
+  checkAll(state: T): { passed: number; failed: number; failures: number[] } {
+    const failures: number[] = [];
+    this.invariants.forEach((inv, i) => { if (!inv(state)) failures.push(i); });
+    return { passed: this.invariants.length - failures.length, failed: failures.length, failures };
+  }
+}
+
+// === Model Checking Simulator ===
+interface State { id: number; label: string; }
+interface Transition { from: number; to: number; guard: string; }
+function reachableStates(states: State[], transitions: Transition[], initial: number): Set<number> {
+  const reachable = new Set<number>();
+  const stack = [initial];
+  while (stack.length > 0) {
+    const current = stack.pop()!;
+    if (reachable.has(current)) continue;
+    reachable.add(current);
+    for (const t of transitions.filter(t => t.from === current)) {
+      if (!reachable.has(t.to)) stack.push(t.to);
+    }
+  }
+  return reachable;
+}
+
+// === Type Safety Proof ===
+function proveTypeSafety(types: Map<string, Set<string>>, expr: "var" | "and" | "or"): boolean {
+  if (expr === "var") return true;
+  for (const [, subtypes] of types) {
+    for (const s of subtypes) {
+      if (!types.has(s)) return false; // Missing type definition
+    }
+  }
+  return true;
+}
+
+const formula: Formula = { type: "implies", left: { type: "and", left: { type: "var", name: "P" }, right: { type: "var", name: "Q" } }, right: { type: "var", name: "P" } };
+console.log(isTautology(formula, ["P", "Q"])); // true (P ∧ Q → P)
+
+const checker = new InvariantChecker<{ x: number; y: number }>();
+checker.addInvariant("x never negative", s => s.x >= 0);
+checker.addInvariant("y never negative", s => s.y >= 0);
+console.log(checker.checkAll({ x: -1, y: 5 })); // 1 passed, 1 failed
+```
+
 ## Summary
 
 Formal methods apply mathematical techniques to software specification, development, and verification. Propositional and predicate logic provide the foundation for precise specifications. Finite State Machines model discrete system behaviour. Temporal logic (LTL, CTL) enables reasoning about properties over time. Hoare Logic verifies program correctness using preconditions, postconditions, and weakest preconditions. Invariants capture properties that must hold at specific program points. The Z notation structures formal specifications using schemas. Model checking automatically verifies temporal properties by exhaustively exploring system states. While formal methods are most commonly applied to safety-critical and security-critical systems, even lightweight applications such as the specification pattern in TypeScript improve software quality.

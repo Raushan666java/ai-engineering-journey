@@ -858,6 +858,100 @@ graph TD
     end
 ```
 
+### TypeScript: Design & Implementation Tools
+
+```typescript
+// === SOLID Principle Validator ===
+interface ClassAnalysis {
+  className: string;
+  responsibilities: string[];
+  dependencies: string[];
+  methods: number;
+}
+function violatesSRP(cls: ClassAnalysis): string[] {
+  const distinctResponsibilities = [...new Set(cls.responsibilities)];
+  if (distinctResponsibilities.length > 1) return [`SRP violation: ${cls.className} has ${distinctResponsibilities.length} responsibilities: ${distinctResponsibilities.join(", ")}`];
+  return [];
+}
+function violatesDIP(cls: ClassAnalysis): { concreteDeps: string[]; abstractDeps: string[] } {
+  return {
+    concreteDeps: cls.dependencies.filter((d) => d.startsWith("Concrete")),
+    abstractDeps: cls.dependencies.filter((d) => d.startsWith("I") || d.startsWith("Abstract")),
+  };
+}
+const orderSvc: ClassAnalysis = {
+  className: "OrderService",
+  responsibilities: ["process orders", "send emails", "generate invoices"],
+  dependencies: ["ConcreteEmailSender", "ConcreteInvoiceGenerator", "IOrderRepository"],
+  methods: 12,
+};
+console.log(violatesSRP(orderSvc));
+console.log(violatesDIP(orderSvc));
+
+// === Simple Dependency Injector ===
+type Token = string;
+class Container {
+  private registry = new Map<Token, { factory: () => unknown; singleton: boolean; instance?: unknown }>();
+  register<T>(token: Token, factory: () => T, singleton = true): void {
+    this.registry.set(token, { factory: factory as () => unknown, singleton });
+  }
+  resolve<T>(token: Token): T {
+    const entry = this.registry.get(token);
+    if (!entry) throw new Error(`No registration for ${token}`);
+    if (entry.singleton) {
+      if (!entry.instance) entry.instance = entry.factory();
+      return entry.instance as T;
+    }
+    return entry.factory() as T;
+  }
+}
+interface ILogger { log(msg: string): void }
+interface IUserRepo { find(id: number): string }
+const container = new Container();
+container.register("Logger", () => ({ log: (m: string) => console.log(m) }));
+container.register("UserRepo", () => ({
+  find: (id: number) => `User ${id}`,
+}));
+
+// === LSP Checker ===
+interface Shape { area(): number }
+class Rectangle implements Shape {
+  constructor(public w: number, public h: number) {}
+  area(): number { return this.w * this.h; }
+}
+class Square implements Shape {
+  constructor(public side: number) {}
+  area(): number { return this.side * this.side; }
+}
+function lspCheck(shapes: Shape[]): number {
+  return shapes.reduce((sum, s) => sum + s.area(), 0);
+}
+console.log(lspCheck([new Rectangle(2, 3), new Square(4)])); // 6 + 16 = 22
+
+// === Design Pattern Detector ===
+function detectPattern(codeLines: string[]): string[] {
+  const patterns: string[] = [];
+  const joined = codeLines.join(" ");
+  if (joined.includes("private constructor")) patterns.push("Singleton");
+  if (joined.includes("implements Observer")) patterns.push("Observer");
+  if (joined.includes("create") && joined.includes(": ")) patterns.push("Factory Method");
+  if (joined.includes("interface") && joined.includes("class") && joined.includes("implements")) patterns.push("Strategy");
+  if (joined.includes("wrapper") || joined.includes("delegate")) patterns.push("Decorator");
+  return patterns;
+}
+console.log(detectPattern(["class Config {", "  private constructor() {}", "  static getInstance() {}", "}"]));
+
+// === Factory Method Generator ===
+interface Product { operation(): string }
+class ConcreteProductA implements Product { operation(): string { return "Product A"; } }
+class ConcreteProductB implements Product { operation(): string { return "Product B"; } }
+abstract class Creator { abstract factoryMethod(): Product; someOperation(): string { return `Creator: ${this.factoryMethod().operation()}`; } }
+class CreatorA extends Creator { factoryMethod(): Product { return new ConcreteProductA(); } }
+class CreatorB extends Creator { factoryMethod(): Product { return new ConcreteProductB(); } }
+console.log(new CreatorA().someOperation());
+console.log(new CreatorB().someOperation());
+```
+
 ## Summary
 
 Design principles guide the creation of maintainable, understandable software. The SOLID principles address class-level design; DRY, KISS, and YAGNI promote simplicity and avoid duplication. Low coupling and high cohesion are the primary indicators of design quality. GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) provide reusable solutions to common problems. Design by contract formalises preconditions, postconditions, and invariants. Refactoring systematically improves design without changing behaviour. Design reviews provide structured evaluation of design quality.

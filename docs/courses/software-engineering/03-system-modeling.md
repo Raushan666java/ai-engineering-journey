@@ -681,6 +681,173 @@ accountValidator.addConstraint<Account>({
 
 **Answer: A** — A Platform-Independent Model describes the system without platform-specific details.
 
+### TypeScript: UML Model Converters
+
+```typescript
+// === Class Diagram to TypeScript ===
+interface UMLClass {
+  name: string;
+  attributes: { name: string; type: string; visibility: "+" | "-" | "#" }[];
+  methods: { name: string; params: string; returnType: string; visibility: "+" | "-" | "#" }[];
+  extends?: string;
+  implements?: string[];
+}
+function umlClassToTS(uml: UMLClass): string {
+  const lines: string[] = [];
+  lines.push(`class ${uml.name}${uml.extends ? ` extends ${uml.extends}` : ""}${uml.implements ? ` implements ${uml.implements.join(", ")}` : ""} {`);
+  for (const attr of uml.attributes) {
+    const acc = attr.visibility === "-" ? "private" : attr.visibility === "#" ? "protected" : "public";
+    lines.push(`  ${acc} ${attr.name}: ${attr.type};`);
+  }
+  for (const method of uml.methods) {
+    const acc = method.visibility === "-" ? "private" : method.visibility === "#" ? "protected" : "public";
+    lines.push(`  ${acc} ${method.name}(${method.params}): ${method.returnType} {}`);
+  }
+  lines.push("}");
+  return lines.join("\n");
+}
+const userClassUML: UMLClass = {
+  name: "User",
+  attributes: [{ name: "id", type: "number", visibility: "-" }, { name: "email", type: "string", visibility: "+" }],
+  methods: [{ name: "getId", params: "", returnType: "number", visibility: "+" }],
+};
+console.log(umlClassToTS(userClassUML));
+
+// === Use Case Flow Checker ===
+interface UseCase {
+  name: string;
+  actor: string;
+  preconditions: string[];
+  postconditions: string[];
+  mainFlow: string[];
+  alternateFlows: string[][];
+}
+function validateUseCase(uc: UseCase): string[] {
+  const issues: string[] = [];
+  if (!uc.name || uc.name.length === 0) issues.push("Use case must have a name");
+  if (!uc.actor) issues.push("Use case must have a primary actor");
+  if (uc.mainFlow.length === 0) issues.push("Use case must have a main success flow");
+  if (uc.preconditions.length === 0 && uc.postconditions.length === 0) issues.push("Consider adding pre/post conditions");
+  return issues;
+}
+const loginUC: UseCase = {
+  name: "Login",
+  actor: "User",
+  preconditions: ["User has an account"],
+  postconditions: ["User is authenticated"],
+  mainFlow: ["User enters credentials", "System validates credentials", "System creates session"],
+  alternateFlows: [["Wrong password → show error"]],
+};
+console.log(validateUseCase(loginUC));
+
+// === Sequence Diagram Helper ===
+interface SequenceMessage {
+  from: string;
+  to: string;
+  message: string;
+  type: "sync" | "async" | "return";
+}
+function generateSequenceLog(messages: SequenceMessage[]): string[] {
+  return messages.map((m) => {
+    const arrow = m.type === "sync" ? "->>" : m.type === "async" ? "-->>" : "-->>";
+    return `${m.from} ${arrow} ${m.to}: ${m.message}`;
+  });
+}
+const seq: SequenceMessage[] = [
+  { from: "Client", to: "Controller", message: "POST /login", type: "sync" },
+  { from: "Controller", to: "AuthService", message: "authenticate()", type: "sync" },
+  { from: "AuthService", to: "Database", message: "SELECT user", type: "sync" },
+  { from: "Database", to: "AuthService", message: "user data", type: "return" },
+  { from: "AuthService", to: "Controller", message: "token", type: "return" },
+  { from: "Controller", to: "Client", message: "200 OK", type: "return" },
+];
+console.log(generateSequenceLog(seq).join("\n"));
+
+// === State Machine Builder ===
+interface StateTransition {
+  from: string;
+  to: string;
+  event: string;
+}
+class StateMachine {
+  private transitions: StateTransition[] = [];
+  private current: string;
+  constructor(initial: string) { this.current = initial; }
+  addTransition(from: string, event: string, to: string): void {
+    this.transitions.push({ from, to, event });
+  }
+  send(event: string): boolean {
+    const t = this.transitions.find((tr) => tr.from === this.current && tr.event === event);
+    if (!t) return false;
+    this.current = t.to;
+    return true;
+  }
+  getState(): string { return this.current; }
+}
+const sm = new StateMachine("draft");
+sm.addTransition("draft", "review", "in-review");
+sm.addTransition("in-review", "approve", "approved");
+sm.addTransition("in-review", "reject", "draft");
+sm.send("review");
+sm.send("approve");
+console.log(sm.getState()); // approved
+```
+
+### TypeScript: System Model Validator
+
+```typescript
+// === UML Model Consistency Checker ===
+interface ClassModel { name: string; attributes: string[]; methods: string[]; associations: string[]; }
+interface SequenceStep { from: string; to: string; message: string; }
+interface StateModel { states: string[]; transitions: { from: string; to: string; event: string }[]; }
+
+class ModelValidator {
+  private warnings: string[] = [];
+  private errors: string[] = [];
+
+  validateClassModel(cm: ClassModel): void {
+    if (!cm.name) this.errors.push("Class must have a name");
+    for (const attr of cm.attributes) {
+      if (attr.includes(" ")) this.warnings.push(`Attribute '${attr}' in ${cm.name} contains spaces`);
+    }
+  }
+  
+  validateSequenceConsistency(classes: ClassModel[], steps: SequenceStep[]): void {
+    const classNames = new Set(classes.map(c => c.name));
+    for (const step of steps) {
+      if (!classNames.has(step.from)) this.errors.push(`Sequence ${step.message}: sender '${step.from}' not in class model`);
+      if (!classNames.has(step.to)) this.errors.push(`Sequence ${step.message}: receiver '${step.to}' not in class model`);
+    }
+  }
+
+  validateStateModel(sm: StateModel): void {
+    if (sm.states.length < 2) this.errors.push("State model must have at least 2 states");
+    for (const t of sm.transitions) {
+      if (!sm.states.includes(t.from)) this.errors.push(`Transition '${t.event}' references unknown source state '${t.from}'`);
+      if (!sm.states.includes(t.to)) this.errors.push(`Transition '${t.event}' references unknown target state '${t.to}'`);
+    }
+  }
+
+  getReport(): { errors: string[]; warnings: string[]; valid: boolean } {
+    return { errors: this.errors, warnings: this.warnings, valid: this.errors.length === 0 };
+  }
+}
+
+// === Model Coverage Analyzer ===
+function coverageAnalysis(models: { type: string; elements: number }[]): Record<string, number> {
+  const total = models.reduce((s, m) => s + m.elements, 0);
+  return Object.fromEntries(models.map(m => [m.type, Math.round((m.elements / total) * 100)]));
+}
+
+const validator = new ModelValidator();
+validator.validateClassModel({ name: "User", attributes: ["id", "name", "email"], methods: ["login()", "logout()"], associations: ["Account"] });
+validator.validateSequenceConsistency(
+  [{ name: "Client", attributes: [], methods: [], associations: [] }],
+  [{ from: "Client", to: "Server", message: "request()" }]
+);
+console.log(validator.getReport());
+```
+
 ## Summary
 
 System modelling provides multiple perspectives on a software system. UML is the standard modelling language, offering thirteen diagram types for structural and behavioural modelling. Use case diagrams establish system boundaries and functionality. Class diagrams define static structure. Sequence diagrams detail interactions over time. Activity diagrams model control flow. State machine diagrams capture lifecycle behaviour. Component and deployment diagrams show physical organisation. DFDs and ER diagrams remain valuable for data-oriented modelling. OCL adds formal precision to UML models. Model-driven engineering transforms models from documentation into primary development artefacts.

@@ -522,6 +522,82 @@ function isPrime(n: number): boolean {
 console.log('Is 97 prime:', isPrime(97)); // true
 ```
 
+```
+// --- Sieve of Eratosthenes ---
+function primeSieve(limit: number): number[] {
+  const sieve = new Array(limit + 1).fill(true);
+  sieve[0] = sieve[1] = false;
+  for (let i = 2; i * i <= limit; i++)
+    if (sieve[i]) for (let j = i * i; j <= limit; j += i) sieve[j] = false;
+  return sieve.map((v, i) => v ? i : -1).filter(v => v !== -1);
+}
+console.log('Primes ≤ 50:', primeSieve(50).join(', '));
+
+// --- Prime Factorization ---
+function primeFactors(n: number): Map<number, number> {
+  const factors = new Map<number, number>();
+  let d = n;
+  for (let p = 2; p * p <= d; p++) {
+    while (d % p === 0) { factors.set(p, (factors.get(p) ?? 0) + 1); d /= p; }
+  }
+  if (d > 1) factors.set(d, (factors.get(d) ?? 0) + 1);
+  return factors;
+}
+console.log('\nPrime factors of 84:', [...primeFactors(84)].map(([p, e]) => `${p}^${e}`).join(' × '));
+
+// --- Euler's Totient Function ---
+function totient(n: number): number {
+  let result = n;
+  let temp = n;
+  for (let p = 2; p * p <= temp; p++) {
+    if (temp % p === 0) { while (temp % p === 0) temp /= p; result -= result / p; }
+  }
+  if (temp > 1) result -= result / temp;
+  return result;
+}
+console.log('\nφ(12):', totient(12), '(expected: 4)');
+console.log('φ(100):', totient(100), '(expected: 40)');
+
+// --- Modular Exponentiation ---
+function modPow(base: number, exp: number, mod: number): number {
+  let result = 1;
+  let b = base % mod;
+  let e = exp;
+  while (e > 0) { if (e & 1) result = (result * b) % mod; b = (b * b) % mod; e >>= 1; }
+  return result;
+}
+console.log('\n3^5 mod 7:', modPow(3, 5, 7), '(expected: 5)');
+console.log('Fermat: 2^10 mod 11:', modPow(2, 10, 11), '(expected: 1)');
+
+// --- RSA Helper ---
+function rsaKeygen(p: number, q: number): { n: number; e: number; d: number } {
+  const n = p * q, phi = (p - 1) * (q - 1);
+  let e = 2;
+  while (gcd(e, phi) !== 1) e++;
+  const d = modInverse(e, phi);
+  return { n, e, d };
+}
+function rsaEncrypt(msg: number, e: number, n: number): number { return modPow(msg, e, n); }
+function rsaDecrypt(cipher: number, d: number, n: number): number { return modPow(cipher, d, n); }
+const rsa = rsaKeygen(61, 53);
+console.log('\nRSA n=61×53:', rsa.n, 'e:', rsa.e, 'd:', rsa.d);
+const cipher = rsaEncrypt(42, rsa.e, rsa.n);
+console.log('Encrypt 42:', cipher);
+console.log('Decrypt:', rsaDecrypt(cipher, rsa.d, rsa.n));
+
+// --- Chinese Remainder Theorem ---
+function chineseRemainder(mods: number[], remainders: number[]): number {
+  let result = 0;
+  const M = mods.reduce((a, b) => a * b, 1);
+  for (let i = 0; i < mods.length; i++) {
+    const mi = M / mods[i];
+    result += remainders[i] * modInverse(mi % mods[i], mods[i]) * mi;
+  }
+  return ((result % M) + M) % M;
+}
+console.log('\nCRT: x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7):', chineseRemainder([3,5,7], [2,3,2]));
+```
+
 ## Summary
 
 - Divisibility $a \mid b$ is the foundational concept; the division algorithm gives unique quotient and remainder.

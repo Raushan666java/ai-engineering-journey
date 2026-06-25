@@ -756,6 +756,54 @@ cache.build(changedDockerfile, "myapp:1.1");
 console.log("Cache stats:", JSON.stringify(cache.getStats(), null, 2));
 ```
 
+### TypeScript: Pod Resource Validator & HPA Config Tester
+
+```typescript
+interface PodResources { requests: { cpu: string; memory: string }; limits: { cpu: string; memory: string }; replicas: number; }
+interface HPAConfig { minReplicas: number; maxReplicas: number; targetCPUUtilization: number; targetMemoryUtilization?: number; }
+
+class PodValidator {
+  validate(resources: PodResources, nodeCapacity: { cpuCores: number; memoryGB: number }, nodeCount: number): { valid: boolean; issues: string[]; maxPodsPerNode: number } {
+    const issues: string[] = [];
+    const reqCPU = parseInt(resources.requests.cpu) || 0;
+    const reqMem = parseInt(resources.requests.memory) || 0;
+    const limCPU = parseInt(resources.limits.cpu) || 0;
+    const limMem = parseInt(resources.limits.memory) || 0;
+
+    if (reqCPU > limCPU && limCPU > 0) issues.push("CPU request exceeds limit");
+    if (reqMem > limMem && limMem > 0) issues.push("Memory request exceeds limit");
+    if (reqCPU <= 0) issues.push("CPU request not set");
+    if (reqMem <= 0) issues.push("Memory request not set");
+
+    const maxByCPU = Math.floor((nodeCapacity.cpuCores * 1000) / Math.max(reqCPU, 1));
+    const maxByMem = Math.floor((nodeCapacity.memoryGB * 1024) / Math.max(reqMem, 1));
+    const maxPodsPerNode = Math.min(maxByCPU, maxByMem);
+
+    const totalPods = maxPodsPerNode * nodeCount;
+    if (resources.replicas > totalPods) issues.push(`Replicas (${resources.replicas}) exceed cluster pod capacity (${totalPods})`);
+
+    return { valid: issues.length === 0, issues, maxPodsPerNode };
+  }
+
+  testHPA(config: HPAConfig, currentReplicas: number, currentCPU: number): { desiredReplicas: number; scalingReason: string } {
+    const ratio = currentCPU / config.targetCPUUtilization;
+    let desiredReplicas = Math.round(currentReplicas * ratio);
+    desiredReplicas = Math.max(config.minReplicas, Math.min(config.maxReplicas, desiredReplicas));
+    let reason = "";
+    if (desiredReplicas > currentReplicas) reason = `Scaling up: CPU ${currentCPU}% > target ${config.targetCPUUtilization}%`;
+    else if (desiredReplicas < currentReplicas) reason = `Scaling down: CPU ${currentCPU}% < target ${config.targetCPUUtilization}%`;
+    else reason = "Stable";
+    return { desiredReplicas, scalingReason: reason };
+  }
+}
+
+const pv = new PodValidator();
+const val = pv.validate({ requests: { cpu: "500m", memory: "512Mi" }, limits: { cpu: "1", memory: "1Gi" }, replicas: 20 }, { cpuCores: 8, memoryGB: 32 }, 3);
+console.log("Pod validation:", val.valid ? "PASS" : val.issues.join("; "));
+console.log("HPA test:", JSON.stringify(pv.testHPA({ minReplicas: 3, maxReplicas: 30, targetCPUUtilization: 70 }, 10, 90), null, 2));
+```
+```
+
 ## Summary
 
 - Docker packages applications with dependencies into portable images.

@@ -755,6 +755,243 @@ if (!connected) {
 }
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === If-Else Chain Optimizer ===
+interface Branch { condition: string; cost: number; probability: number }
+function optimizeChain(branches: Branch[]): { reordered: Branch[]; avgCost: number } {
+  const sorted = [...branches].sort((a, b) => b.probability - a.probability);
+  const avgCost = sorted.reduce((s, b, i) => s + b.cost * (i + 1) * b.probability, 0);
+  return { reordered: sorted, avgCost: Math.round(avgCost * 100) / 100 };
+}
+const branches = [
+  { condition: "score >= 90", cost: 2, probability: 0.15 },
+  { condition: "score >= 80", cost: 2, probability: 0.25 },
+  { condition: "score >= 70", cost: 2, probability: 0.30 },
+  { condition: "else", cost: 2, probability: 0.30 },
+];
+console.log(optimizeChain(branches));
+
+// === Switch/Case Builder ===
+type CaseClause = { pattern: string; result: string };
+function buildSwitch(expr: string, cases: CaseClause[], default_: string): string {
+  const lines = cases.map((c) => `  case ${c.pattern}: return ${c.result};`);
+  return `switch (${expr}) {\n${lines.join("\n")}\n  default: return ${default_};\n}`;
+}
+const sw = buildSwitch("status", [
+  { pattern: '"ok"', result: '"Success"' },
+  { pattern: '"err"', result: '"Error"' },
+], '"Unknown"');
+console.log(sw);
+
+// === Ternary Converter (flatten if-else to ternary) ===
+function toTernary(condition: string, thenVal: string, elseVal: string): string {
+  return `${condition} ? ${thenVal} : ${elseVal}`;
+}
+console.log(toTernary("age >= 18", '"Adult"', '"Minor"'));
+
+// === Guard Clause Detector ===
+function needsGuard(conditions: string[], nestedBodies: number): boolean {
+  return conditions.length > 1 && nestedBodies > 2;
+}
+console.log(needsGuard(["x == null", "y == null"], 3)); // true
+
+// === Pattern Match Simulator (Python match-case in TS) ===
+type MatchCase = { pattern: RegExp; handler: (...m: string[]) => string };
+class PatternMatcher {
+  private cases: MatchCase[] = [];
+  add(pattern: RegExp, handler: (...m: string[]) => string): void { this.cases.push({ pattern, handler }); }
+  match(input: string): string {
+    for (const c of this.cases) {
+      const m = input.match(c.pattern);
+      if (m) return c.handler(...m.slice(1));
+    }
+    return "No match";
+  }
+}
+const calc = new PatternMatcher();
+calc.add(/^add (\d+) (\d+)$/, (a, b) => `${+a + +b}`);
+calc.add(/^sub (\d+) (\d+)$/, (a, b) => `${+a - +b}`);
+console.log(calc.match("add 5 3")); // 8
+console.log(calc.match("sub 10 4")); // 6
+```
+
+### TypeScript Control Flow Patterns
+
+```typescript
+// === TypeScript guards vs Python isinstance ===
+function process(input: string | number): string {
+  if (typeof input === "string") return input.toUpperCase();
+  if (typeof input === "number") return input.toFixed(2);
+  return "unknown";
+}
+
+// === Switch (Python: match/case 3.10+) ===
+type Command = "start" | "stop" | "restart" | "status";
+function executeCommand(cmd: Command): string {
+  switch (cmd) {
+    case "start": return "Starting...";
+    case "stop": return "Stopping...";
+    case "restart": return "Restarting...";
+    case "status": return "Checking status...";
+    default: const _exhaustive: never = cmd; return _exhaustive;
+  }
+}
+console.log(executeCommand("start"));
+
+// === Ternary Operator (Python: conditional expression) ===
+const age = 20;
+const category = age >= 18 ? "Adult" : "Minor";
+console.log(category); // Adult
+
+// === Short-circuit evaluation ===
+const user = { name: "Alice", preferences: { theme: "dark" } };
+const theme = user.preferences?.theme ?? "light";
+console.log(theme); // dark
+
+// === Guard Clause Pattern ===
+function processOrder(order: { status: string; amount: number }): string {
+  if (!order) return "No order";
+  if (order.status === "cancelled") return "Order cancelled";
+  if (order.amount <= 0) return "Invalid amount";
+  if (order.status === "pending") return "Processing payment...";
+  return `Order ${order.status} for $${order.amount}`;
+}
+
+// === Pattern Matching with Discriminated Unions ===
+type Shape =
+  | { kind: "circle"; radius: number }
+  | { kind: "rectangle"; width: number; height: number }
+  | { kind: "triangle"; base: number; height: number };
+function area(shape: Shape): number {
+  switch (shape.kind) {
+    case "circle": return Math.PI * shape.radius ** 2;
+    case "rectangle": return shape.width * shape.height;
+    case "triangle": return (shape.base * shape.height) / 2;
+  }
+}
+console.log(area({ kind: "circle", radius: 5 }));
+
+// === Nullish Coalescing (Python: or) ===
+const score = 0;
+const displayScore = score ?? 100; // 0 (nullish coalescing)
+const displayScore2 = score || 100; // 100 (logical or)
+
+// === Early Return vs Python elif ===
+function classify(n: number): string {
+  if (n < 0) return "negative";
+  if (n === 0) return "zero";
+  if (n > 0 && n < 10) return "small positive";
+  return "large positive";
+}
+
+// === For Loop Control Flow ===
+const matrix = [[1, 2], [3, 4], [5, 6]];
+outer: for (let i = 0; i < matrix.length; i++) {
+  for (let j = 0; j < matrix[i].length; j++) {
+    if (matrix[i][j] === 3) break outer;
+  }
+}
+
+// === While loop with sentinel ===
+function findFirst(arr: number[], predicate: (n: number) => boolean): number | undefined {
+  let i = 0;
+  while (i < arr.length && !predicate(arr[i])) i++;
+  return i < arr.length ? arr[i] : undefined;
+}
+console.log(findFirst([1, 3, 5, 7, 8, 9], (n) => n % 2 === 0)); // 8
+```
+
+### TypeScript Advanced Flow Control
+
+```typescript
+// === Guard Function (Python: guard clause) ===
+type GuardResult<T, E = Error> = { ok: true; value: T } | { ok: false; error: E };
+function guard<T>(value: T, predicate: (v: T) => boolean, message: string): GuardResult<T> {
+  return predicate(value) ? { ok: true, value } : { ok: false, error: new Error(message) };
+}
+
+// === Exhaustive Check (Python: assert_never) ===
+function assertNever(value: never): never { throw new Error(`Unexpected value: ${value}`); }
+function exhaustiveCheck(x: never): never { throw new Error(`Unknown variant: ${x}`); }
+
+// === Control Flow via Monadic Error Handling ===
+class Try<T> {
+  private constructor(private value: T | null, private error: Error | null) {}
+  static attempt<T>(fn: () => T): Try<T> {
+    try { return new Try(fn(), null); } catch (e) { return new Try(null, e as Error); }
+  }
+  map<R>(fn: (v: T) => R): Try<R> {
+    return this.error ? new Try<R>(null, this.error) : Try.attempt(() => fn(this.value!));
+  }
+  recover(fn: (e: Error) => T): T { return this.error ? fn(this.error) : this.value!; }
+  getOr(defaultValue: T): T { return this.error ? defaultValue : this.value!; }
+  get(): T { if (this.error) throw this.error; return this.value!; }
+}
+
+// === Lazy Evaluation ===
+class Lazy<T> {
+  private computed = false;
+  private result!: T;
+  constructor(private factory: () => T) {}
+  force(): T {
+    if (!this.computed) { this.result = this.factory(); this.computed = true; }
+    return this.result;
+  }
+  map<R>(fn: (v: T) => R): Lazy<R> { return new Lazy(() => fn(this.force())); }
+}
+
+// === Promise-based Control Flow ===
+async function retryAsync<T>(fn: () => Promise<T>, retries = 3, delay = 1000): Promise<T> {
+  for (let i = 0; i < retries; i++) { try { return await fn(); } catch (e) { if (i === retries - 1) throw e; await new Promise(r => setTimeout(r, delay)); } }
+  throw new Error("Unreachable");
+}
+
+async function timeout<T>(promise: Promise<T>, ms: number): Promise<T> {
+  const timer = new Promise<never>((_, reject) => setTimeout(() => reject(new Error("Timeout")), ms));
+  return Promise.race([promise, timer]);
+}
+
+// === Coroutine Runner (Python: async/await basic impl) ===
+type Coroutine<T> = Generator<Promise<unknown>, T, unknown>;
+function runCoroutine<T>(gen: Coroutine<T>): Promise<T> {
+  return new Promise((resolve, reject) => {
+    const step = (lastValue?: unknown) => {
+      try {
+        const { value, done } = gen.next(lastValue);
+        if (done) resolve(value as T);
+        else if (value instanceof Promise) value.then(step, reject);
+        else step(value);
+      } catch (e) { reject(e); }
+    };
+    step();
+  });
+}
+
+// === Async Pool (Python: asyncio.Semaphore) ===
+class AsyncPool {
+  private pending = 0;
+  private queue: (() => void)[] = [];
+  constructor(private limit: number) {}
+  async run<T>(fn: () => Promise<T>): Promise<T> {
+    if (this.pending >= this.limit) await new Promise<void>(resolve => this.queue.push(resolve));
+    this.pending++;
+    try { return await fn(); } finally { this.pending--; this.queue.shift()?.(); }
+  }
+}
+
+const tryResult = Try.attempt(() => JSON.parse('{"valid": true}')).map((v: any) => v.valid);
+console.log(tryResult.getOr(false)); // true
+
+const pool = new AsyncPool(2);
+const results2 = await Promise.all([1, 2, 3].map(i => pool.run(async () => {
+  await new Promise(r => setTimeout(r, 100));
+  return i * 10;
+})));
+console.log(results2); // [10, 20, 30]
+```
+
 ## Summary
 
 - `if`/`elif`/`else` provides branching; `match-case` (3.10+) adds structural pattern matching.

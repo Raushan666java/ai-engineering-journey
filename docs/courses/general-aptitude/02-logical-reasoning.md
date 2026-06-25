@@ -811,6 +811,162 @@ console.log("Syllogism:", SyllogismEngine.evaluate([{ type: "All", a: "Mammals",
 console.log("Coding:", CodingDecoder.shiftCode("COMPUTER", 1));
 ```
 
+// ─────────────────────────────────────────────────────
+// Seating Arrangement Generator — creates circular and
+// linear seating puzzles with given constraints, then
+// validates positions.
+// ─────────────────────────────────────────────────────
+
+class SeatingArrangementGenerator {
+  static generateLinear(
+    persons: string[],
+    constraints: Array<{ a: string; relation: "left" | "right" | "adjacent" | "not_adjacent"; b: string }>
+  ): string[] | null {
+    const perms = this.permute(persons);
+    for (const perm of perms) {
+      if (constraints.every(c => this.satisfiesLinear(perm, c))) return perm;
+    }
+    return null;
+  }
+
+  static generateCircular(
+    persons: string[],
+    constraints: Array<{ a: string; relation: "left" | "right" | "adjacent" | "not_adjacent" | "opposite"; b: string }>
+  ): string[] | null {
+    const perms = this.permute(persons);
+    for (const perm of perms) {
+      if (constraints.every(c => this.satisfiesCircular(perm, c))) return perm;
+    }
+    return null;
+  }
+
+  private static satisfiesLinear(arr: string[], c: { a: string; relation: string; b: string }): boolean {
+    const ia = arr.indexOf(c.a), ib = arr.indexOf(c.b);
+    if (ia === -1 || ib === -1) return false;
+    switch (c.relation) {
+      case "left": return ia < ib;
+      case "right": return ia > ib;
+      case "adjacent": return Math.abs(ia - ib) === 1;
+      case "not_adjacent": return Math.abs(ia - ib) > 1;
+      default: return true;
+    }
+  }
+
+  private static satisfiesCircular(arr: string[], c: { a: string; relation: string; b: string }): boolean {
+    const n = arr.length, ia = arr.indexOf(c.a), ib = arr.indexOf(c.b);
+    if (ia === -1 || ib === -1) return false;
+    const dist = Math.min(Math.abs(ia - ib), n - Math.abs(ia - ib));
+    switch (c.relation) {
+      case "adjacent": return dist === 1;
+      case "not_adjacent": return dist > 1;
+      case "opposite": return dist === n / 2;
+      case "left": return (ia + 1) % n === ib;
+      case "right": return (ib + 1) % n === ia;
+      default: return true;
+    }
+  }
+
+  private static permute(arr: string[]): string[][] {
+    if (arr.length <= 1) return [arr];
+    const result: string[][] = [];
+    for (let i = 0; i < arr.length; i++) {
+      const rest = [...arr.slice(0, i), ...arr.slice(i + 1)];
+      for (const p of this.permute(rest)) result.push([arr[i], ...p]);
+    }
+    return result;
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Blood Relation Mapper — constructs a family tree from
+// relation statements and answers relationship queries.
+// ─────────────────────────────────────────────────────
+
+class BloodRelationMapper {
+  private graph = new Map<string, { gender: string; parents: string[]; children: string[]; spouse?: string }>();
+
+  addPerson(name: string, gender: string): void {
+    if (!this.graph.has(name)) this.graph.set(name, { gender, parents: [], children: [] });
+  }
+
+  addRelation(a: string, relation: string, b: string): void {
+    this.addPerson(a, "?"); this.addPerson(b, "?");
+    const pa = this.graph.get(a)!, pb = this.graph.get(b)!;
+    switch (relation) {
+      case "father": pa.gender = "M"; pb.parents.push(a); pa.children.push(b); break;
+      case "mother": pa.gender = "F"; pb.parents.push(a); pa.children.push(b); break;
+      case "brother": pa.gender = "M"; pa.parents = pb.parents; break;
+      case "sister": pa.gender = "F"; pa.parents = pb.parents; break;
+      case "husband": pa.gender = "M"; pa.spouse = b; pb.spouse = a; break;
+      case "wife": pa.gender = "F"; pa.spouse = b; pb.spouse = a; break;
+      case "son": pa.gender = "M"; pa.parents.push(b); this.graph.get(b)?.children.push(a); break;
+      case "daughter": pa.gender = "F"; pa.parents.push(b); this.graph.get(b)?.children.push(a); break;
+    }
+  }
+
+  // Find relationship between two persons using BFS
+  findRelation(a: string, b: string): string | null {
+    const visited = new Set<string>();
+    const queue: Array<[string, string[]]> = [[a, [a]]];
+    while (queue.length > 0) {
+      const [current, path] = queue.shift()!;
+      if (visited.has(current)) continue;
+      visited.add(current);
+      if (current === b) return path.join(" → ");
+
+      const node = this.graph.get(current);
+      if (!node) continue;
+      const neighbors = [...node.parents, ...node.children];
+      if (node.spouse) neighbors.push(node.spouse);
+      for (const n of neighbors) {
+        if (!visited.has(n)) queue.push([n, [...path, n]]);
+      }
+    }
+    return null;
+  }
+
+  displayTree(): string[] {
+    const roots = [...this.graph.keys()].filter(p => this.graph.get(p)!.parents.length === 0);
+    const output: string[] = ["Family Tree:"];
+    for (const r of roots) this.displayNode(r, 0, output, new Set());
+    return output;
+  }
+
+  private displayNode(name: string, depth: number, output: string[], visited: Set<string>): void {
+    if (visited.has(name)) return;
+    visited.add(name);
+    const node = this.graph.get(name)!;
+    const gender = node.gender === "M" ? "♂" : node.gender === "F" ? "♀" : "?";
+    const spouse = node.spouse ? ` (spouse: ${node.spouse})` : "";
+    output.push("  ".repeat(depth) + `${gender} ${name}${spouse}`);
+    for (const c of node.children) this.displayNode(c, depth + 1, output, visited);
+  }
+}
+
+// Demo
+const linear = SeatingArrangementGenerator.generateLinear(
+  ["A", "B", "C", "D"],
+  [{ a: "A", relation: "left", b: "C" }, { a: "B", relation: "not_adjacent", b: "D" }]
+);
+console.log("Linear arrangement:", linear?.join(" < "));
+
+const circular = SeatingArrangementGenerator.generateCircular(
+  ["P", "Q", "R", "S"],
+  [{ a: "P", relation: "adjacent", b: "Q" }, { a: "Q", relation: "opposite", b: "S" }]
+);
+console.log("Circular arrangement:", circular?.join(" - "));
+
+// Blood relation demo
+const family = new BloodRelationMapper();
+family.addRelation("John", "father", "Mike");
+family.addRelation("John", "father", "Sarah");
+family.addRelation("Sarah", "brother", "Mike");
+family.addRelation("Mike", "wife", "Emma");
+family.addRelation("Mike", "father", "Tom");
+console.log("\n" + family.displayTree().join("\n"));
+console.log("\nJohn → Tom:", family.findRelation("John", "Tom"));
+```
+
 ## Summary
 
 - Syllogisms: draw Venn diagrams for each possibility; eliminate conclusions that don't necessarily follow

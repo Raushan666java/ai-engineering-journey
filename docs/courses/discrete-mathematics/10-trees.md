@@ -446,6 +446,93 @@ function levelOrder<T>(root: BTNode<T> | null): T[][] {
 console.log('Level-order:', levelOrder(bst)); // [[4],[2,6],[1,3,5,7]]
 ```
 
+```
+// --- Tree Height/Depth Calculator ---
+function treeHeight<T>(root: BTNode<T> | null): number {
+  if (!root) return -1;
+  return 1 + Math.max(treeHeight(root.left), treeHeight(root.right));
+}
+function treeDepth<T>(root: BTNode<T> | null, target: T, depth: number = 0): number {
+  if (!root) return -1;
+  if (root.value === target) return depth;
+  return Math.max(treeDepth(root.left, target, depth + 1), treeDepth(root.right, target, depth + 1));
+}
+console.log('Tree height:', treeHeight(bst));
+console.log('Depth of node 1:', treeDepth(bst, 1));
+console.log('Depth of node 7:', treeDepth(bst, 7));
+
+// --- Diameter of Tree ---
+function treeDiameter<T>(root: BTNode<T> | null): number {
+  let diam = 0;
+  function dfs(node: BTNode<T> | null): number {
+    if (!node) return -1;
+    const l = dfs(node.left) + 1, r = dfs(node.right) + 1;
+    diam = Math.max(diam, l + r);
+    return Math.max(l, r);
+  }
+  dfs(root);
+  return diam;
+}
+console.log('Tree diameter:', treeDiameter(bst));
+
+// --- Kruskal's MST ---
+function kruskalMST(vertices: number, edges: [number, number, number][]): [number, number, number][] {
+  const parent = Array.from({length: vertices}, (_, i) => i);
+  const find = (x: number): number => parent[x] === x ? x : (parent[x] = find(parent[x]));
+  const union = (a: number, b: number) => { parent[find(a)] = find(b); };
+  const sorted = [...edges].sort((a, b) => a[2] - b[2]);
+  const mst: [number, number, number][] = [];
+  for (const [u, v, w] of sorted) {
+    if (find(u) !== find(v)) { union(u, v); mst.push([u, v, w]); }
+  }
+  return mst;
+}
+const edgeList: [number, number, number][] = [
+  [0,1,4],[0,2,3],[1,2,1],[1,3,2],[2,3,5]];
+console.log('\nKruskal MST:', kruskalMST(4, edgeList).map(e => `(${e[0]}-${e[1]}:${e[2]})`).join(', '));
+
+// --- Prim's MST ---
+function primMST(adj: number[][][]): [number, number, number][] {
+  const n = adj.length, visited = new Set<number>(), mst: [number, number, number][] = [];
+  const pq: [number, number, number][] = []; // [weight, from, to]
+  visited.add(0);
+  for (const [v, w] of adj[0]) pq.push([w, 0, v]);
+  pq.sort((a, b) => a[0] - b[0]);
+  while (pq.length > 0 && visited.size < n) {
+    const [w, u, v] = pq.shift()!;
+    if (visited.has(v)) continue;
+    visited.add(v);
+    mst.push([u, v, w]);
+    for (const [to, wt] of adj[v]) if (!visited.has(to)) { pq.push([wt, v, to]); pq.sort((a, b) => a[0] - b[0]); }
+  }
+  return mst;
+}
+const weightedAdj: [number, number][][] = [
+  [[1,4],[2,3]], [[0,4],[2,1],[3,2]], [[0,3],[1,1],[3,5]], [[1,2],[2,5]]];
+console.log('Prim MST:', primMST(weightedAdj).map(e => `(${e[0]}-${e[1]}:${e[2]})`).join(', '));
+
+// --- Huffman Coding ---
+function huffmanCoding(freq: [string, number][]): Map<string, string> {
+  interface Node { char?: string; freq: number; left?: Node; right?: Node; }
+  let nodes: Node[] = freq.map(([c, f]) => ({ char: c, freq: f }));
+  while (nodes.length > 1) {
+    nodes.sort((a, b) => a.freq - b.freq);
+    const left = nodes.shift()!, right = nodes.shift()!;
+    nodes.push({ freq: left.freq + right.freq, left, right });
+  }
+  const codes = new Map<string, string>();
+  function walk(node: Node, code: string) {
+    if (node.char !== undefined) codes.set(node.char, code || '0');
+    else { if (node.left) walk(node.left, code + '0'); if (node.right) walk(node.right, code + '1'); }
+  }
+  walk(nodes[0], '');
+  return codes;
+}
+const chars: [string, number][] = [['a',45],['b',13],['c',12],['d',16],['e',9],['f',5]];
+const huff = huffmanCoding(chars);
+console.log('\nHuffman codes:', [...huff.entries()].map(([k, v]) => `${k}:${v}`).join(', '));
+```
+
 ## Summary
 
 - A tree is a connected acyclic graph with $n$ vertices and $n-1$ edges.

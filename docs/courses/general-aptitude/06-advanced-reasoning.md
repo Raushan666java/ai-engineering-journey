@@ -651,6 +651,182 @@ console.log("Reasoning:", CriticalReasoningEngine.analyze("All mammals are warm-
 console.log("CoA:", CriticalReasoningEngine.evaluateCourseOfAction("Increase train frequency", "Public transport is overcrowded"));
 ```
 
+// ─────────────────────────────────────────────────────
+// Data Sufficiency Checker — determines whether given
+// statements are sufficient to answer a quantitative
+// question (inspired by GMAT/aptitude test format).
+// ─────────────────────────────────────────────────────
+
+class DataSufficiencyChecker {
+  static readonly SUFFICIENT = "Sufficient";
+  static readonly INSUFFICIENT = "Not Sufficient";
+  static readonly COMBINED = "Sufficient (combined)";
+
+  static evaluate(
+    question: string,
+    statement1: () => number | null,
+    statement2: () => number | null,
+    required: (a: number | null, b: number | null) => number | null
+  ): { answer: number | null; verdict: string; reasoning: string[] } {
+    const s1 = statement1();
+    const s2 = statement2();
+    const reasoning: string[] = [];
+    reasoning.push(`Question: ${question}`);
+    reasoning.push(`Statement (1): ${s1 !== null ? s1 : "Cannot determine"}`);
+    reasoning.push(`Statement (2): ${s2 !== null ? s2 : "Cannot determine"}`);
+
+    // Check if each alone is sufficient
+    const ans1 = s1 !== null ? required(s1, null) : null;
+    const ans2 = s2 !== null ? required(null, s2) : null;
+    const ansCombined = s1 !== null && s2 !== null ? required(s1, s2) : null;
+
+    let verdict: string;
+    let answer: number | null = null;
+
+    if (ans1 !== null && ans2 !== null && ans1 === ans2) {
+      verdict = this.SUFFICIENT;
+      answer = ans1;
+      reasoning.push("Either statement alone is sufficient.");
+    } else if (ans1 !== null && ans2 === null) {
+      verdict = this.SUFFICIENT;
+      answer = ans1;
+      reasoning.push("Statement (1) alone is sufficient.");
+    } else if (ans1 === null && ans2 !== null) {
+      verdict = this.SUFFICIENT;
+      answer = ans2;
+      reasoning.push("Statement (2) alone is sufficient.");
+    } else if (ansCombined !== null) {
+      verdict = this.COMBINED;
+      answer = ansCombined;
+      reasoning.push("Both statements together are sufficient, but neither alone.");
+    } else {
+      verdict = this.INSUFFICIENT;
+      reasoning.push("Even with both statements, the answer cannot be determined.");
+    }
+
+    reasoning.push(`\nVerdict: ${verdict}`);
+    if (answer !== null) reasoning.push(`Answer: ${answer}`);
+    return { answer, verdict, reasoning };
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Critical Reasoning Argument Analyzer — breaks down
+// an argument into premise/conclusion structure and
+// identifies assumptions, strengths, and weaknesses.
+// ─────────────────────────────────────────────────────
+
+class ArgumentAnalyzer {
+  static analyze(argument: string): {
+    premises: string[];
+    conclusion: string;
+    assumptions: string[];
+    weakPoints: string[];
+  } {
+    const sentences = argument.split(/[.?!\n]+/).map(s => s.trim()).filter(Boolean);
+    const conclusionMarkers = ["therefore", "thus", "hence", "so", "consequently", "this shows that", "as a result"];
+    const premiseMarkers = ["because", "since", "as", "given that", "due to", "owing to", "for"];
+
+    let conclusion = "";
+    let premises: string[] = [];
+    let assumptions: string[] = [];
+    let weakPoints: string[] = [];
+
+    for (const s of sentences) {
+      const lower = s.toLowerCase();
+      const isConclusion = conclusionMarkers.some(m => lower.startsWith(m) || lower.includes(m));
+      if (isConclusion) {
+        conclusion = s;
+      } else {
+        premises.push(s);
+      }
+    }
+
+    if (!conclusion && premises.length > 0) {
+      conclusion = premises.pop() || "";
+    }
+
+    // Identify potential assumptions
+    for (const p of premises) {
+      const lower = p.toLowerCase();
+      if (lower.includes("all") || lower.includes("every") || lower.includes("none")) {
+        assumptions.push(`Universal claim in: "${p}" — may be overgeneralized`);
+      }
+      if (lower.includes("always") || lower.includes("never")) {
+        assumptions.push(`Absolute statement in: "${p}" — rare exceptions may exist`);
+      }
+      if (lower.includes("cause") || lower.includes("leads to") || lower.includes("results in")) {
+        assumptions.push(`Causal claim in: "${p}" — correlation may not equal causation`);
+      }
+    }
+
+    // Identify weak points
+    if (premises.length < 2) {
+      weakPoints.push("Only one premise supporting the conclusion — argument may be weak.");
+    }
+    if (premises.some(p => /some|many|several|few/i.test(p))) {
+      weakPoints.push("Vague quantifiers (some/many) weaken the argument's force.");
+    }
+    if (premises.some(p => /survey|study|research/i.test(p)) && !premises.some(p => /sample|size|representative|random/i.test(p))) {
+      weakPoints.push("Study cited without sample size or methodology — may not be representative.");
+    }
+
+    return { premises, conclusion, assumptions, weakPoints };
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Input-Output Pattern Engine — applies a set of
+// transformation rules to an input sequence to produce
+// the output, mimicking machine input-output problems.
+// ─────────────────────────────────────────────────────
+
+class InputOutputEngine {
+  static applyRules(input: number[], rules: Array<(arr: number[]) => number[]>): number[] {
+    let result = [...input];
+    for (const rule of rules) result = rule(result);
+    return result;
+  }
+
+  static swapAdjacent: (arr: number[]) => number[] = (arr) => {
+    const r = [...arr];
+    for (let i = 0; i < r.length - 1; i += 2) [r[i], r[i + 1]] = [r[i + 1], r[i]];
+    return r;
+  };
+
+  static sortAsc: (arr: number[]) => number[] = (arr) => [...arr].sort((a, b) => a - b);
+  static sortDesc: (arr: number[]) => number[] = (arr) => [...arr].sort((a, b) => b - a);
+  static reverse: (arr: number[]) => number[] = (arr) => [...arr].reverse();
+  static shiftLeft: (n: number) => (arr: number[]) => number[] = (n) => (arr) => [...arr.slice(n), ...arr.slice(0, n)];
+  static shiftRight: (n: number) => (arr: number[]) => number[] = (n) => (arr) => [...arr.slice(-n), ...arr.slice(0, -n)];
+  static doubleEven: (arr: number[]) => number[] = (arr) => arr.map((v, i) => i % 2 === 0 ? v * 2 : v);
+  static addPrevious: (arr: number[]) => number[] = (arr) => arr.map((v, i) => i === 0 ? v : v + arr[i - 1]);
+}
+
+// Demo
+const q = "What is the average of the numbers?";
+const stmt1 = () => 100; // sum = 100
+const stmt2 = () => 5;   // count = 5
+const avg = (s1: number | null, s2: number | null) => {
+  if (s1 !== null && s2 !== null) return s1 / s2;
+  return null;
+};
+console.log(DataSufficiencyChecker.evaluate(q, stmt1, stmt2, avg).reasoning.join("\n"));
+
+const arg = "All mammals are warm-blooded. Whales are mammals. Therefore, whales are warm-blooded.";
+console.log("\n" + "═".repeat(40));
+console.log("Argument Analysis:");
+const analysis = ArgumentAnalyzer.analyze(arg);
+console.log("Premises:", analysis.premises.join(" | "));
+console.log("Conclusion:", analysis.conclusion);
+console.log("Assumptions:", analysis.assumptions.join(" | "));
+console.log("Weak points:", analysis.weakPoints.join(" | "));
+
+const input = [4, 7, 2, 9, 1, 5];
+const output = InputOutputEngine.applyRules(input, [InputOutputEngine.sortAsc, InputOutputEngine.swapAdjacent]);
+console.log(`\nInput-output: [${input}] → [${output}]`);
+```
+
 ## Summary
 
 - Puzzles: organize data systematically; use grids/tables

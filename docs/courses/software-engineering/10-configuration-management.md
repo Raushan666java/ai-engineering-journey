@@ -733,6 +733,170 @@ class ReleaseManager {
 
 **Answer: B** — FCA verifies that the product functionally meets its requirements.
 
+### TypeScript: Configuration Management Tools
+
+```typescript
+// === Branch Strategy Validator ===
+interface BranchRule {
+  pattern: string;
+  allowedParents: string[];
+  requiresPR: boolean;
+  requiresReview: boolean;
+}
+function validateBranchStrategy(branchName: string, rules: BranchRule[], parentBranch: string): { valid: boolean; violations: string[] } {
+  const violations: string[] = [];
+  const matchingRules = rules.filter((r) => new RegExp(r.pattern).test(branchName));
+  for (const rule of matchingRules) {
+    if (!rule.allowedParents.includes(parentBranch)) violations.push(`Branch ${branchName} cannot be based on ${parentBranch}`);
+    if (rule.requiresPR) violations.push(`Branch ${branchName} requires a pull request`);
+    if (rule.requiresReview) violations.push(`Branch ${branchName} requires code review`);
+  }
+  return { valid: violations.length === 0, violations };
+}
+const gitFlowRules: BranchRule[] = [
+  { pattern: "^main$", allowedParents: ["release/*"], requiresPR: true, requiresReview: true },
+  { pattern: "^develop$", allowedParents: ["feature/*", "main"], requiresPR: true, requiresReview: true },
+  { pattern: "^feature/.*", allowedParents: ["develop"], requiresPR: false, requiresReview: false },
+  { pattern: "^release/.*", allowedParents: ["develop"], requiresPR: true, requiresReview: true },
+  { pattern: "^hotfix/.*", allowedParents: ["main"], requiresPR: true, requiresReview: true },
+];
+console.log(validateBranchStrategy("feature/login", gitFlowRules, "develop"));
+
+// === Merge Conflict Predictor ===
+function predictConflicts(changedFiles: string[], recentChanges: Record<string, string[]>): { highRisk: string[]; mediumRisk: string[] } {
+  const highRisk: string[] = [];
+  const mediumRisk: string[] = [];
+  for (const file of changedFiles) {
+    const recent = recentChanges[file] ?? [];
+    if (recent.length > 3) highRisk.push(file);
+    else if (recent.length > 0) mediumRisk.push(file);
+  }
+  return { highRisk, mediumRisk };
+}
+const recentChanges: Record<string, string[]> = {
+  "auth.ts": ["fix-login", "add-mfa", "update-session", "fix-expiry"],
+  "config.ts": ["add-env", "update-config"],
+};
+console.log(predictConflicts(["auth.ts", "config.ts", "new.ts"], recentChanges));
+
+// === Commit Graph Builder ===
+interface CommitNode {
+  hash: string;
+  message: string;
+  parents: string[];
+  branch: string;
+}
+function buildCommitGraph(commits: CommitNode[]): string {
+  const lines: string[] = [];
+  for (const c of commits) {
+    const prefix = c.parents.length > 1 ? "*" : "o";
+    lines.push(`${prefix} ${c.hash.substring(0, 7)} (${c.branch}) ${c.message}`);
+  }
+  return lines.join("\n");
+}
+const commits: CommitNode[] = [
+  { hash: "a1b2c3d4e5", message: "Initial commit", parents: [], branch: "main" },
+  { hash: "b2c3d4e5f6", message: "Add auth module", parents: ["a1b2c3d4e5"], branch: "main" },
+  { hash: "c3d4e5f6a7", message: "Merge feature/login", parents: ["b2c3d4e5f6", "d4e5f6a7b8"], branch: "main" },
+];
+console.log(buildCommitGraph(commits));
+
+// === Semantic Version Calculator ===
+function nextVersion(current: string, change: "major" | "minor" | "patch"): string {
+  const [major, minor, patch] = current.split(".").map(Number);
+  if (change === "major") return `${major + 1}.0.0`;
+  if (change === "minor") return `${major}.${minor + 1}.0`;
+  return `${major}.${minor}.${patch + 1}`;
+}
+console.log(nextVersion("1.2.3", "minor")); // 1.3.0
+console.log(nextVersion("2.0.0", "patch")); // 2.0.1
+
+// === Baseline Differ ===
+interface ConfigItem { id: string; version: string; content: string }
+function diffBaselines(a: ConfigItem[], b: ConfigItem[]): { added: string[]; removed: string[]; modified: string[] } {
+  const aMap = new Map(a.map((i) => [i.id, i]));
+  const bMap = new Map(b.map((i) => [i.id, i]));
+  const added = b.filter((i) => !aMap.has(i.id)).map((i) => i.id);
+  const removed = a.filter((i) => !bMap.has(i.id)).map((i) => i.id);
+  const modified = a.filter((i) => { const bi = bMap.get(i.id); return bi && i.version !== bi.version; }).map((i) => i.id);
+  return { added, removed, modified };
+}
+const baselineV1 = [{ id: "config.json", version: "1.0", content: "{}" }, { id: "db.sql", version: "1.0", content: "CREATE" }];
+const baselineV2 = [{ id: "config.json", version: "1.1", content: '{"debug": true}' }, { id: "docker-compose.yml", version: "1.0", content: "version:3" }];
+console.log(diffBaselines(baselineV1, baselineV2));
+```
+
+### TypeScript: Change Management Tools
+
+```typescript
+// === Version Control Simulator ===
+interface Commit { id: string; message: string; timestamp: number; parent: string | null; changes: { file: string; diff: string }[]; }
+class VCSimulator {
+  private commits: Commit[] = [];
+  private head: string | null = null;
+
+  commit(message: string, changes: { file: string; diff: string }[]): Commit {
+    const id = `c${this.commits.length + 1}`;
+    const commit: Commit = { id, message, timestamp: Date.now(), parent: this.head, changes };
+    this.commits.push(commit);
+    this.head = id;
+    return commit;
+  }
+
+  getHistory(branch = "main"): Commit[] {
+    const history: Commit[] = [];
+    let current = this.head;
+    while (current) {
+      const commit = this.commits.find(c => c.id === current)!;
+      history.push(commit);
+      current = commit.parent;
+    }
+    return history;
+  }
+
+  diffVersions(from: string, to: string): { file: string; added: number; removed: number }[] {
+    const start = this.commits.find(c => c.id === from);
+    const end = this.commits.find(c => c.id === to);
+    if (!start || !end) return [];
+    const allFiles = new Set<string>();
+    [...start.changes, ...end.changes].forEach(c => allFiles.add(c.file));
+    return [...allFiles].map(file => ({
+      file,
+      added: end.changes.filter(c => c.file === file && c.diff.startsWith("+")).length,
+      removed: end.changes.filter(c => c.file === file && c.diff.startsWith("-")).length,
+    }));
+  }
+}
+
+// === Baseline Management ===
+interface Baseline { id: string; date: Date; artifacts: string[]; approved: boolean; }
+class BaselineManager {
+  private baselines: Baseline[] = [];
+  createBaseline(artifacts: string[]): Baseline {
+    const bl: Baseline = { id: `BL-${this.baselines.length + 1}`, date: new Date(), artifacts, approved: false };
+    this.baselines.push(bl);
+    return bl;
+  }
+  approveBaseline(id: string): void {
+    const bl = this.baselines.find(b => b.id === id);
+    if (bl) bl.approved = true;
+  }
+  getLatest(): Baseline | undefined { return this.baselines[this.baselines.length - 1]; }
+}
+
+// === Change Request Tracker ===
+interface ChangeRequest { id: string; description: string; priority: "Low" | "Medium" | "High" | "Critical"; status: "Open" | "Analysis" | "Approved" | "Implemented" | "Verified" | "Closed"; impact: string[]; }
+function isInControl(requests: ChangeRequest[], threshold = 0.2): boolean {
+  const open = requests.filter(r => r.status === "Open" || r.status === "Analysis").length;
+  return open / Math.max(1, requests.length) <= threshold;
+}
+
+const vcs = new VCSimulator();
+vcs.commit("Initial commit", [{ file: "main.ts", diff: "+initial" }]);
+vcs.commit("Add feature", [{ file: "feature.ts", diff: "+new" }]);
+console.log(vcs.getHistory().length); // 2
+```
+
 ## Summary
 
 Software Configuration Management controls the evolution of software through identification of configuration items, establishment of baselines, version control, change control, build and release management, status accounting, and configuration auditing. Git provides powerful version control with branching strategies such as Git Flow, GitHub Flow, GitLab Flow, and trunk-based development. Formal change control ensures that all changes are evaluated and approved. Semantic versioning (MAJOR.MINOR.PATCH) communicates compatibility. Automation of builds and releases reduces human error. Configuration audits verify product integrity. SCM is essential for team collaboration, regulatory compliance, and reproducible software delivery.

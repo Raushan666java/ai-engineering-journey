@@ -564,6 +564,287 @@ class Money {
 }
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Proxy-Based Observable (Python __getattr__/__setattr__ pattern) ===
+function createObservable<T extends Record<string, unknown>>(target: T, onChange: (key: string, value: unknown) => void): T {
+  return new Proxy(target, {
+    get(obj, prop) {
+      if (prop === "__isProxy") return true;
+      return Reflect.get(obj, prop);
+    },
+    set(obj, prop, value) {
+      const old = obj[prop as string];
+      const result = Reflect.set(obj, prop, value);
+      if (old !== value) onChange(String(prop), value);
+      return result;
+    },
+  });
+}
+const observed = createObservable({ x: 10, y: 20 }, (key, val) => console.log(`Changed: ${key} = ${val}`));
+observed.x = 15; // "Changed: x = 15"
+observed.y = 25; // "Changed: y = 25"
+
+// === Symbol.iterator Helper (Python __iter__ pattern) ===
+class RangeIterator {
+  constructor(private start: number, private end: number, private step = 1) {}
+  *[Symbol.iterator](): Generator<number> {
+    for (let i = this.start; i < this.end; i += this.step) yield i;
+  }
+}
+const r = new RangeIterator(1, 6, 2);
+console.log([...r]); // [1, 3, 5]
+
+// === toString Override Generator ===
+function autoToString<T extends Record<string, unknown>>(obj: T): string {
+  const entries = Object.entries(obj).map(([k, v]) => `${k}=${v}`).join(", ");
+  return `${obj.constructor.name}(${entries})`;
+}
+class User2 {
+  constructor(public name: string, public age: number) {}
+  toString(): string { return autoToString(this); }
+}
+console.log(new User2("Alice", 30).toString()); // User2(name=Alice, age=30)
+
+// === ValueOf Equivalent ===
+class Money {
+  constructor(private amount: number, private currency: string) {}
+  valueOf(): number { return this.amount; }
+  toString(): string { return `${this.amount} ${this.currency}`; }
+}
+const m1 = new Money(10, "USD");
+const m2 = new Money(5, "USD");
+console.log(m1.valueOf() + m2.valueOf()); // 15
+
+// === Python __getitem__ / __setitem__ via Proxy ===
+function createDictList<T>(items: T[] = []): { items: T[]; get(idx: number): T; set(idx: number, val: T): void; push(val: T): void } {
+  return {
+    items: [...items],
+    get(idx: number): T { return this.items[idx]; },
+    set(idx: number, val: T): void { if (idx < this.items.length) this.items[idx] = val; },
+    push(val: T): void { this.items.push(val); },
+  };
+}
+const dl = createDictList<number>([1, 2, 3]);
+console.log(dl.get(1)); // 2
+dl.set(1, 99);
+console.log(dl.items);  // [1, 99, 3]
+```
+
+### TypeScript Metaprogramming with Proxy
+
+```typescript
+// === Property Access Logger (Python: __getattr__) ===
+function loggedObject<T extends object>(target: T): T {
+  return new Proxy(target, {
+    get(obj, prop) {
+      console.log(`Accessing ${String(prop)}`);
+      return Reflect.get(obj, prop);
+    },
+    set(obj, prop, value) {
+      console.log(`Setting ${String(prop)} = ${value}`);
+      return Reflect.set(obj, prop, value);
+    },
+  });
+}
+
+// === Negative Array Indexing (Python: arr[-1]) ===
+function negativeIndexArray<T>(arr: T[]): T[] {
+  return new Proxy(arr, {
+    get(target, prop) {
+      if (typeof prop === "string" && !isNaN(Number(prop))) {
+        const idx = Number(prop);
+        return idx < 0 ? target[target.length + idx] : target[idx];
+      }
+      return Reflect.get(target, prop);
+    },
+    set(target, prop, value) {
+      if (typeof prop === "string" && !isNaN(Number(prop))) {
+        const idx = Number(prop);
+        if (idx < 0) target[target.length + idx] = value as T;
+        else target[idx] = value as T;
+        return true;
+      }
+      return Reflect.set(target, prop, value);
+    },
+  });
+}
+const arr = negativeIndexArray([10, 20, 30, 40, 50]);
+console.log(arr[-1]); // 50
+console.log(arr[-2]); // 40
+
+// === Method Missing Handler (Python: __getattr__ for methods) ===
+function dynamicMethods<T extends object>(target: T): T {
+  return new Proxy(target, {
+    get(obj, prop) {
+      if (prop in obj) return Reflect.get(obj, prop);
+      return (...args: unknown[]) => console.log(`Called dynamic method ${String(prop)}(${args.map(a => JSON.stringify(a)).join(", ")})`);
+    },
+  });
+}
+const dyn = dynamicMethods({ name: "test" });
+console.log(dyn.name); // "test"
+(dyn as any).unknownMethod(1, 2, 3); // "Called dynamic method unknownMethod(1, 2, 3)"
+
+// === Memoized Property (Python: @cached_property) ===
+function cachedProperty<T, K extends keyof T>(target: T, key: K, getter: () => T[K]): void {
+  let value: T[K] | undefined;
+  let initialized = false;
+  Object.defineProperty(target, key, {
+    get() {
+      if (!initialized) { value = getter(); initialized = true; }
+      return value;
+    },
+    configurable: true,
+    enumerable: true,
+  });
+}
+
+// === Auto-stringification (Python: __str__) ===
+function autoString<T extends object>(target: T): T {
+  return new Proxy(target, {
+    get(obj, prop) {
+      if (prop === "toString" || prop === Symbol.toPrimitive) {
+        return () => JSON.stringify(obj);
+      }
+      return Reflect.get(obj, prop);
+    },
+  });
+}
+
+// === Validation Proxy (Python: __setattr__ validation) ===
+function validatedObject<T extends object>(target: T, schema: Partial<Record<keyof T, (v: unknown) => boolean>>): T {
+  return new Proxy(target, {
+    set(obj, prop, value) {
+      const validator = schema[prop as keyof T];
+      if (validator && !validator(value)) throw new Error(`Invalid value for ${String(prop)}`);
+      return Reflect.set(obj, prop, value);
+    },
+  });
+}
+
+// === Default Values (Python: defaultdict pattern via __missing__) ===
+function withDefault<T extends object>(target: T, defaultFn: (key: string) => unknown): T {
+  return new Proxy(target, {
+    get(obj, prop) {
+      if (prop in obj) return Reflect.get(obj, prop);
+      const val = defaultFn(String(prop));
+      Reflect.set(obj, prop, val as any);
+      return val;
+    },
+  });
+}
+
+// === Read-only Wrapper ===
+function readonly<T extends object>(target: T): T {
+  return new Proxy(target, {
+    set: () => { throw new Error("Object is read-only"); },
+    deleteProperty: () => { throw new Error("Object is read-only"); },
+    defineProperty: () => { throw new Error("Object is read-only"); },
+  });
+}
+
+interface UserSchema { name: string; age: number; }
+const user = validatedObject<UserSchema>({ name: "Alice", age: 30 }, {
+  age: (v) => typeof v === "number" && v >= 0 && v < 150,
+  name: (v) => typeof v === "string" && v.length > 0,
+});
+user.age = 25; // OK
+// user.age = -5; // Throws Error
+
+const defaults = withDefault({}, key => `default_${key}`);
+console.log((defaults as any).foo); // "default_foo"
+```
+
+### TypeScript Proxy-based Magic Patterns
+
+```typescript
+// === Operator Overloading via Proxy ===
+function createOverloaded<T extends object>(target: T): T {
+  const handler: ProxyHandler<T> = {
+    get(target, prop, receiver) {
+      const val = Reflect.get(target, prop, receiver);
+      if (typeof val === "function") {
+        return function(...args: unknown[]) {
+          console.log(`[magic] ${String(prop)}(${args.map(a => JSON.stringify(a)).join(", ")})`);
+          return val.apply(this, args);
+        };
+      }
+      return val;
+    },
+    set(target, prop, value) {
+      console.log(`[magic] set ${String(prop)} = ${JSON.stringify(value)}`);
+      return Reflect.set(target, prop, value);
+    },
+    has(target, prop) {
+      console.log(`[magic] contains ${String(prop)}`);
+      return prop in target;
+    },
+    deleteProperty(target, prop) {
+      console.log(`[magic] delete ${String(prop)}`);
+      return delete target[prop];
+    },
+    ownKeys(target) {
+      console.log("[magic] dir()");
+      return Reflect.ownKeys(target);
+    },
+  };
+  return new Proxy(target, handler);
+}
+const obj = createOverloaded({ x: 10, y: 20 });
+"x" in obj;           // logs: contains x
+obj.z = 30;           // logs: set z = 30
+delete obj.y;         // logs: delete y
+
+// === Python-style __str__ / __repr__ via toString ===
+class ReprMixin {
+  toString(): string { return `${this.constructor.name}(${JSON.stringify(this)})`; }
+  toJSON(): unknown { return { ...this, _type: this.constructor.name }; }
+}
+
+// === Python-style __len__, __getitem__ via Proxy ===
+function arrayLike<T>(items: T[]): T[] {
+  return new Proxy(items, {
+    get(target, prop) {
+      if (prop === "__len__") return target.length;
+      if (typeof prop === "string" && !isNaN(Number(prop))) {
+        const idx = Number(prop);
+        return idx < 0 ? target[target.length + idx] : target[idx];
+      }
+      return Reflect.get(target, prop);
+    },
+  });
+}
+const seq = arrayLike([10, 20, 30, 40, 50]);
+console.log((seq as any)["-1"]);  // 50 (Python-style negative index)
+
+// === Python-style __call__ via Proxy ===
+function makeCallable<T extends object>(obj: T, fn: (...args: unknown[]) => unknown): T {
+  const handler: ProxyHandler<T> = {
+    apply(target, thisArg, args) { return fn.apply(thisArg, args); },
+    get(target, prop) { return Reflect.get(target, prop); },
+  };
+  return new Proxy(obj, handler);
+}
+
+// === Python-style property descriptor via Object.defineProperty ===
+function defineProperty<T>(obj: T, key: keyof T, getter: () => unknown, setter?: (v: unknown) => void): void {
+  Object.defineProperty(obj, key, { get: getter, set: setter, enumerable: true, configurable: true });
+}
+
+// === Python-style __iter__ / __next__ ===
+class Iterable<T> implements Iterable<T> {
+  constructor(private items: T[]) {}
+  [Symbol.iterator](): Iterator<T> {
+    let idx = 0;
+    const items = this.items;
+    return { next: () => ({ value: items[idx], done: idx++ >= items.length }) };
+  }
+}
+for (const item of new Iterable([1, 2, 3])) console.log(item);
+```
+
 ## Summary
 
 Magic methods hook into Python's built-in behaviours:

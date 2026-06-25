@@ -781,6 +781,203 @@ const checkRange = (x: number): boolean => x > 1 && x < 10;
 // Python: if (n := len(x)) > 0:  →  TypeScript: const n = x.length; if (n > 0)
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Type Inference Helper ===
+function inferType(v: unknown): string {
+  if (v === null) return "null";
+  if (v === undefined) return "undefined";
+  if (typeof v === "number") return Number.isInteger(v) ? "integer" : "float";
+  if (typeof v === "string") return "string";
+  if (typeof v === "boolean") return "boolean";
+  if (Array.isArray(v)) {
+    const types = [...new Set(v.map((e) => typeof e))];
+    return `${types.join(" | ")}[]`;
+  }
+  return typeof v;
+}
+console.log(inferType(42), inferType("hi"), inferType([1, "a"]));
+
+// === Const / Let / Var Analyzer ===
+type DeclKind = "const" | "let" | "var";
+interface DeclInfo { kind: DeclKind; name: string; type: string; mut: boolean; scoped: boolean }
+function analyzeDecl(kind: DeclKind, name: string, value: unknown, mut: boolean): DeclInfo {
+  return { kind, name, type: inferType(value), mut, scoped: kind !== "var" };
+}
+console.log(analyzeDecl("const", "PI", 3.14, false));
+console.log(analyzeDecl("let", "count", 0, true));
+
+// === Union Type Builder ===
+type StringOrNum = string | number;
+function format(v: StringOrNum): string {
+  if (typeof v === "string") return `str:${v.length}`;
+  return `num:${v.toFixed(2)}`;
+}
+console.log(format("hello"), format(42));
+
+// === Intersection Type vs Python Multiple Inheritance ===
+interface Named { name: string }
+interface Aged { age: number }
+type Person = Named & Aged;
+const p: Person = { name: "Alice", age: 30 };
+
+// === Literal Union vs Python Enum ===
+type Color = "red" | "green" | "blue";
+function swatch(c: Color): string { return `Color: ${c}`; }
+
+// === Readonly vs Frozen Dataclass ===
+type Config = Readonly<{ host: string; port: number }>;
+const cfg: Config = { host: "localhost", port: 8080 };
+
+// === Pick / Omit Helpers ===
+interface User { id: number; name: string; email: string; role: string }
+type PublicUser = Pick<User, "id" | "name">;
+type Sensitive = Omit<User, "email">;
+const pub: PublicUser = { id: 1, name: "Alice" };
+```
+
+### TypeScript Type System Patterns
+
+```typescript
+// === Type Inference vs. Python Dynamic Typing ===
+let inferred = 42;         // TypeScript infers number
+let annotated: string = "hello"; // Explicit annotation
+// Python: x = 42; x = "hello" (reassignment changes type)
+// TypeScript: inferred = "world" // Error: Type 'string' not assignable to 'number'
+
+// === Union Types (Python: Union[str, int]) ===
+type ID = string | number;
+function lookup(id: ID): string {
+  if (typeof id === "string") return `User: ${id}`;
+  return `User #${id}`;
+}
+console.log(lookup("abc")); // User: abc
+console.log(lookup(42));    // User #42
+
+// === Literal Types ===
+type Status = "active" | "inactive" | "pending";
+function setUserStatus(status: Status): void {
+  console.log(`Status set to: ${status}`);
+}
+setUserStatus("active"); // OK
+// setUserStatus("disabled"); // TypeScript error
+
+// === Type Aliases (Python: TypeAlias) ===
+type Point = { x: number; y: number };
+type Color = "red" | "green" | "blue";
+type ColoredPoint = Point & { color: Color };
+const cp: ColoredPoint = { x: 10, y: 20, color: "red" };
+
+// === Readonly (Python: Final from typing) ===
+interface Config { readonly apiKey: string; readonly endpoint: string; }
+const config: Config = { apiKey: "sk-123", endpoint: "https://api.example.com" };
+// config.apiKey = "new-key"; // Error: Cannot assign to readonly
+
+// === Optional Properties (Python: Optional) ===
+interface UserProfile { name: string; age?: number; email?: string; }
+function greet(user: UserProfile): string {
+  const age = user.age ?? "unknown";
+  return `${user.name} (${age})`;
+}
+console.log(greet({ name: "Alice", age: 30 }));
+console.log(greet({ name: "Bob" }));
+
+// === Type Assertions ===
+const rawValue: unknown = "hello world";
+const strLength = (rawValue as string).length;
+console.log(strLength); // 11
+
+// === Enums (Python: Enum) ===
+enum Direction { Up = "UP", Down = "DOWN", Left = "LEFT", Right = "RIGHT" }
+function move(d: Direction): string { return `Moving ${d}`; }
+console.log(move(Direction.Up));
+
+// === Generics (Python: TypeVar) ===
+function first<T>(arr: T[]): T | undefined { return arr[0]; }
+console.log(first([1, 2, 3])); // 1
+console.log(first(["a", "b"])); // "a"
+
+// === Keyof and Indexed Access ===
+function getProp<T, K extends keyof T>(obj: T, key: K): T[K] { return obj[key]; }
+const car = { make: "Tesla", model: "Model 3", year: 2024 };
+console.log(getProp(car, "make")); // Tesla
+// getProp(car, "color"); // TypeScript error
+
+// === Mapped Types ===
+type Readonly2<T> = { readonly [K in keyof T]: T[K] };
+type Partial2<T> = { [K in keyof T]?: T[K] };
+type Point2 = { x: number; y: number };
+const readonlyPoint: Readonly2<Point2> = { x: 10, y: 20 };
+// readonlyPoint.x = 5; // Error
+```
+
+### TypeScript Advanced Variable Types
+
+```typescript
+// === Mapped Types (Python: type transformation) ===
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type ReadonlyDeep<T> = {
+  readonly [K in keyof T]: T[K] extends object ? ReadonlyDeep<T[K]> : T[K];
+};
+type PickByValue<T, V> = { [K in keyof T as T[K] extends V ? K : never]: T[K] };
+type OmitByValue<T, V> = { [K in keyof T as T[K] extends V ? never : K]: T[K] };
+type RequiredBy<T, K extends keyof T> = Omit<T, K> & { [P in K]-?: T[P] };
+
+// === Template Literal Types (Python: f-strings at type level) ===
+type EventName = `on${Capitalize<string>}`;
+type CSSUnit = `${number}px` | `${number}rem` | `${number}em` | `${number}%`;
+type HexColor = `#${string}`;
+type HttpMethod = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
+type ApiEndpoint = `/api/${string}`;
+
+// === Conditional Types (Python: type narrowing) ===
+type IsString<T> = T extends string ? "yes" : "no";
+type ElementOf<T> = T extends (infer E)[] ? E : T;
+type FunctionResult<T> = T extends (...args: any[]) => infer R ? R : never;
+
+// === Variadic Tuple Types (Python: *args typed) ===
+type Head<T extends unknown[]> = T extends [infer H, ...unknown[]] ? H : never;
+type Tail<T extends unknown[]> = T extends [unknown, ...infer Rest] ? Rest : never;
+type Last<T extends unknown[]> = T extends [...unknown[], infer L] ? L : never;
+type Concat<A extends unknown[], B extends unknown[]> = [...A, ...B];
+
+// === Union Distribution (Python: type switching) ===
+type ToArray<T> = T extends unknown ? T[] : never;
+type Stringify<T> = T extends string ? T : T extends number ? `${T}` : never;
+
+// === Structural Type Testing ===
+interface TypeTest { a: string; b: number; }
+type ExtraKeys = { a: string; b: number; c: boolean };
+type MissingKeys = { a: string };
+type IsSubtype<S, T> = S extends T ? true : false;
+type Test1 = IsSubtype<ExtraKeys, TypeTest>; // true (extra keys allowed)
+type Test2 = IsSubtype<MissingKeys, TypeTest>; // false
+
+// === Recursive Type (Python: self-referential) ===
+type JSONValue = string | number | boolean | null | JSONValue[] | { [key: string]: JSONValue };
+type DeepPartial<T> = { [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K] };
+type DeepRequired<T> = { [K in keyof T]-?: T[K] extends object ? DeepRequired<T[K]> : T[K] };
+
+// === Branded Types for Type Safety ===
+type Branded<T, B> = T & { __brand: B };
+type Email = Branded<string, "Email">;
+type Phone = Branded<string, "Phone">;
+function sendEmail(to: Email, body: string): void { console.log(`Email to ${String(to)}: ${body}`); }
+function createEmail(s: string): Email { return s as Email; }
+const email = createEmail("user@example.com");
+sendEmail(email, "Hello"); // OK
+
+// === Type-safe Builder Pattern ===
+class ConfigBuilder {
+  private config: Record<string, unknown> = {};
+  set<T>(key: string, value: T): this & Record<typeof key, T> { (this.config as any)[key] = value; return this as any; }
+  build(): Record<string, unknown> { return { ...this.config }; }
+}
+const builder = new ConfigBuilder();
+const cfg = builder.set("host", "localhost").set("port", 8080).build();
+```
+
 ## Summary
 
 - Python is dynamically typed; variables are references to objects.

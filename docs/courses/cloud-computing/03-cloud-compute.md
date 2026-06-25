@@ -690,6 +690,43 @@ fleet.addOption({ type: "c5.large", price: 0.034, onDemand: 0.085, interruptRate
 console.log("Spot fleet plan:", fleet.optimize(0.5).map((o) => o.type + " @ $" + o.price));
 ```
 
+### TypeScript: Instance Config Validator
+
+```typescript
+interface InstanceConfig {
+  family: string; vCores: number; memoryGB: number; networkGbps: number; ebsBandwidthMbps: number;
+}
+
+class InstanceValidator {
+  validate(config: InstanceConfig, requirements: { minCores: number; minMemoryGB: number; minNetworkGbps: number }): { pass: boolean; issues: string[] } {
+    const issues: string[] = [];
+    if (config.vCores < requirements.minCores) issues.push(`Needs ${requirements.minCores} vCores, has ${config.vCores}`);
+    if (config.memoryGB < requirements.minMemoryGB) issues.push(`Needs ${requirements.minMemoryGB} GB, has ${config.memoryGB}`);
+    if (config.networkGbps < requirements.minNetworkGbps) issues.push(`Needs ${requirements.minNetworkGbps} Gbps, has ${config.networkGbps}`);
+    return { pass: issues.length === 0, issues };
+  }
+
+  recommendMonthly(requirements: { minCores: number; minMemoryGB: number; minNetworkGbps: number }, budget: number): InstanceConfig[] {
+    const catalog: InstanceConfig[] = [
+      { family: "t3.medium", vCores: 2, memoryGB: 4, networkGbps: 0.5, ebsBandwidthMbps: 2085 },
+      { family: "m5.large", vCores: 2, memoryGB: 8, networkGbps: 10, ebsBandwidthMbps: 4750 },
+      { family: "c5.xlarge", vCores: 4, memoryGB: 8, networkGbps: 10, ebsBandwidthMbps: 4750 },
+      { family: "r5.xlarge", vCores: 4, memoryGB: 32, networkGbps: 10, ebsBandwidthMbps: 4750 },
+    ];
+    const prices: Record<string, number> = { "t3.medium": 30, "m5.large": 69, "c5.xlarge": 85, "r5.xlarge": 126 };
+    return catalog.filter(c => {
+      const valid = this.validate(c, requirements);
+      return valid.pass && (prices[c.family] || 0) <= budget;
+    });
+  }
+}
+
+const iv = new InstanceValidator();
+console.log("m5.large validation:", JSON.stringify(iv.validate({ family: "m5.large", vCores: 2, memoryGB: 8, networkGbps: 10, ebsBandwidthMbps: 4750 }, { minCores: 4, minMemoryGB: 16, minNetworkGbps: 5 }), null, 2));
+console.log("Recommended under $100/month:", iv.recommendMonthly({ minCores: 2, minMemoryGB: 8, minNetworkGbps: 5 }, 100).map(c => c.family));
+```
+```
+
 ## Summary
 
 - Cloud compute provides virtualized hardware (IaaS) through VMs.

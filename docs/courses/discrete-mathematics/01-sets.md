@@ -459,6 +459,56 @@ const U = new Set([1, 2, 3, 4, 5, 6]);
 console.log('De Morgan holds:', verifyDeMorgan(U, A, B)); // true
 ```
 
+```
+console.log('Power set of {1,2,3}:', powerSet([1,2,3]).map(s=>`{${s.join(',')}}`).join(', '));
+console.log('Cartesian product {1,2}×{a,b}:', cartesianProduct([1,2],['a','b']).map(p=>`(${p[0]},${p[1]})`).join(', '));
+console.log('Union:', [...setUnion(new Set([1,2,3]), new Set([3,4,5]))]);
+console.log('Intersection:', [...setIntersection(new Set([1,2,3]), new Set([3,4,5]))]);
+console.log('Difference A-B:', [...setDifference(new Set([1,2,3]), new Set([3,4,5]))]);
+console.log('Symmetric diff:', [...symmetricDiff(new Set([1,2,3]), new Set([3,4,5]))]);
+
+// --- Fuzzy Set Operations ---
+type FuzzySet = Record<string, number>;
+function fuzzyUnion(a: FuzzySet, b: FuzzySet): FuzzySet {
+  const result: FuzzySet = {};
+  for (const k of new Set([...Object.keys(a), ...Object.keys(b)]))
+    result[k] = Math.max(a[k] ?? 0, b[k] ?? 0);
+  return result;
+}
+function fuzzyIntersection(a: FuzzySet, b: FuzzySet): FuzzySet {
+  const result: FuzzySet = {};
+  for (const k of new Set([...Object.keys(a), ...Object.keys(b)]))
+    result[k] = Math.min(a[k] ?? 0, b[k] ?? 0);
+  return result;
+}
+function fuzzyComplement(a: FuzzySet): FuzzySet {
+  const result: FuzzySet = {};
+  for (const k of Object.keys(a)) result[k] = +(1 - a[k]).toFixed(2);
+  return result;
+}
+const hot: FuzzySet = {coffee: 0.8, tea: 0.3, soup: 0.9};
+const caffeinated: FuzzySet = {coffee: 1.0, tea: 0.8, juice: 0.0};
+console.log('\nFuzzy union:', fuzzyUnion(hot, caffeinated));
+console.log('Fuzzy intersection:', fuzzyIntersection(hot, caffeinated));
+console.log('Fuzzy complement (hot):', fuzzyComplement(hot));
+
+// --- Inclusion-Exclusion Principle ---
+function inclusionExclusion<T>(sets: Set<T>[]): number {
+  let total = 0;
+  for (let mask = 1; mask < (1 << sets.length); mask++) {
+    const bits = mask.toString(2).split('').filter(b=>b==='1').length;
+    let intersection: Set<T> | null = null;
+    for (let i = 0; i < sets.length; i++)
+      if (mask & (1 << i))
+        intersection = intersection ? new Set([...intersection].filter(x => sets[i].has(x))) : new Set(sets[i]);
+    total += (bits % 2 === 1 ? 1 : -1) * (intersection?.size ?? 0);
+  }
+  return total;
+}
+const S1 = new Set([1,2,3,4]), S2 = new Set([3,4,5,6]), S3 = new Set([4,5,6,7]);
+console.log('\nInclusion-exclusion |A∪B∪C|:', inclusionExclusion([S1, S2, S3]), '(expected:', 7, ')');
+```
+
 ## Summary
 
 - A set is a collection of distinct objects. Sets are equal when they contain exactly the same elements.

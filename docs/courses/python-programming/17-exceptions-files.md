@@ -700,6 +700,264 @@ class FileHandler implements Disposable {
 // Equivalent Python: with FileHandler("data.txt") as file:
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Error Classification Tree ===
+class AppError extends Error {
+  constructor(message: string, public code: string, public statusCode = 500) {
+    super(message);
+    this.name = this.constructor.name;
+  }
+}
+class NetworkError extends AppError {
+  constructor(message: string) { super(message, "NETWORK_ERROR", 503); }
+}
+class ValidationError extends AppError {
+  constructor(message: string) { super(message, "VALIDATION_ERROR", 400); }
+}
+class AuthError extends AppError {
+  constructor(message: string) { super(message, "AUTH_ERROR", 401); }
+}
+class NotFoundError extends AppError {
+  constructor(message: string) { super(message, "NOT_FOUND", 404); }
+}
+function classifyError(err: Error): string {
+  if (err instanceof ValidationError) return "Validation";
+  if (err instanceof AuthError) return "Authentication";
+  if (err instanceof NetworkError) return "Network";
+  if (err instanceof NotFoundError) return "Not Found";
+  return "Unknown";
+}
+console.log(classifyError(new ValidationError("Invalid input"))); // Validation
+
+// === Try-Catch Wrapper (Result pattern) ===
+type Result<T, E = Error> = { ok: true; value: T } | { ok: false; error: E };
+function safeTry<T>(fn: () => T): Result<T> {
+  try { return { ok: true, value: fn() }; }
+  catch (err) { return { ok: false, error: err as Error }; }
+}
+const r1 = safeTry(() => JSON.parse('{"valid": true}'));
+const r2 = safeTry(() => JSON.parse("{invalid:}"));
+console.log(r1.ok ? r1.value : r1.error.message);
+console.log(r2.ok ? "OK" : `Error: ${(r2 as { ok: false; error: Error }).error.message}`);
+
+// === Async Result Pattern ===
+async function safeAsync<T>(fn: () => Promise<T>): Promise<Result<T>> {
+  try { return { ok: true, value: await fn() }; }
+  catch (err) { return { ok: false, error: err as Error }; }
+}
+
+// === Resource Disposer (Python context manager equivalent) ===
+class Resource {
+  constructor(public name: string) { console.log(`Acquired ${name}`); }
+  close(): void { console.log(`Released ${name}`); }
+}
+function using<T extends { close(): void }, R>(resource: T, fn: (r: T) => R): R {
+  try { return fn(resource); }
+  finally { resource.close(); }
+}
+const result = using(new Resource("db"), (db) => `Working with ${db.name}`);
+console.log(result);
+
+// === Custom Error Factory ===
+function createErrorClass(name: string, parent = AppError) {
+  return class extends parent {
+    constructor(message: string, code = `${name.toUpperCase()}_ERROR`) {
+      super(message, code);
+      this.name = name;
+    }
+  };
+}
+const RateLimitError = createErrorClass("RateLimitError");
+try { throw new RateLimitError("Too many requests"); }
+catch (err) { console.log((err as Error).name); } // RateLimitError
+```
+
+### TypeScript Error Handling Patterns
+
+```typescript
+// === Python-style Exception Hierarchy ===
+class PythonError extends Error { constructor(msg: string) { super(msg); this.name = "PythonError"; } }
+class ValueError extends PythonError { constructor(msg: string) { super(msg); this.name = "ValueError"; } }
+class TypeError extends PythonError { constructor(msg: string) { super(msg); this.name = "TypeError"; } }
+class KeyError extends PythonError { constructor(msg: string) { super(msg); this.name = "KeyError"; } }
+class FileNotFoundError extends PythonError { constructor(msg: string) { super(msg); this.name = "FileNotFoundError"; } }
+
+function checkValue(v: unknown): void {
+  if (v === null || v === undefined) throw new ValueError("Value cannot be null/undefined");
+  if (typeof v === "string" && v.trim() === "") throw new ValueError("String cannot be empty");
+}
+
+// === Result Type (Python try/except pattern) ===
+interface TryResult<T> { success: boolean; value?: T; error?: Error; }
+function tryExcept<T>(fn: () => T, fallback?: T): TryResult<T> {
+  try { const value = fn(); return { success: true, value }; }
+  catch (error) { return { success: false, error: error as Error }; }
+}
+
+// === Context Manager Pattern ===
+interface ContextManager<T> { enter(): T; exit(err?: Error): void; }
+function withContext<T, R>(cm: ContextManager<T>, fn: (resource: T) => R): R {
+  const resource = cm.enter();
+  try { return fn(resource); } finally { cm.exit(); }
+}
+class FileManager implements ContextManager<string[]> {
+  private lines: string[] = [];
+  constructor(private path: string) {}
+  enter(): string[] {
+    const fs = require("fs");
+    this.lines = fs.readFileSync(this.path, "utf-8").split("\n");
+    return this.lines;
+  }
+  exit(err?: Error): void { console.log(`Closed ${this.path}`); }
+}
+
+// === Multi-catch handler ===
+function handleError(err: Error): string {
+  if (err instanceof FileNotFoundError) return "File not found";
+  if (err instanceof ValueError) return "Invalid value";
+  if (err instanceof KeyError) return "Key not found";
+  if (err instanceof TypeError) return "Type mismatch";
+  return `Unexpected: ${err.message}`;
+}
+
+// === Python-style file I/O ===
+const fsp = require("fs").promises;
+async function fileOps(): Promise<void> {
+  const data = await fsp.readFile("file.txt", "utf-8");
+  await fsp.writeFile("output.txt", data.toUpperCase(), "utf-8");
+  await fsp.appendFile("log.txt", `[${new Date().toISOString()}] done\n`, "utf-8");
+  const exists = await fsp.access("file.txt").then(() => true).catch(() => false);
+}
+
+// === Async context manager ===
+async function withAsyncContext<T, R>(setup: () => Promise<T>, teardown: (r: T) => Promise<void>, fn: (r: T) => Promise<R>): Promise<R> {
+  const resource = await setup();
+  try { return await fn(resource); } finally { await teardown(resource); }
+}
+```
+
+### TypeScript File & Error Handling Patterns
+
+```typescript
+// === Safe File Operations (Python: try/except/finally) ===
+import { readFileSync, writeFileSync, unlinkSync, existsSync, mkdirSync } from "fs";
+import { dirname } from "path";
+class SafeFileOps {
+  static read(path: string): { ok: true; data: string } | { ok: false; error: string } {
+    try {
+      if (!existsSync(path)) return { ok: false, error: `File not found: ${path}` };
+      return { ok: true, data: readFileSync(path, "utf-8") };
+    } catch (e) { return { ok: false, error: (e as Error).message }; }
+  }
+  static write(path: string, content: string): { ok: true } | { ok: false; error: string } {
+    try {
+      const dir = dirname(path);
+      if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+      writeFileSync(path, content, "utf-8");
+      return { ok: true };
+    } catch (e) { return { ok: false, error: (e as Error).message }; }
+  }
+  static delete(path: string): { ok: true } | { ok: false; error: string } {
+    try {
+      if (!existsSync(path)) return { ok: false, error: `File not found: ${path}` };
+      unlinkSync(path);
+      return { ok: true };
+    } catch (e) { return { ok: false, error: (e as Error).message }; }
+  }
+}
+
+// === Nested Error Context (Python: raise ... from) ===
+class DatabaseError extends Error {
+  constructor(public override message: string, public cause?: Error) {
+    super(message);
+    this.name = "DatabaseError";
+  }
+}
+class FileStorageError extends DatabaseError {
+  constructor(path: string, cause: Error) { super(`Storage error at ${path}`, cause); this.name = "FileStorageError"; }
+}
+
+// === Resource Pool with Error Recovery ===
+class ResourcePool<T> {
+  private resources: T[] = [];
+  constructor(private factory: () => T, private destroy: (r: T) => void, private maxSize: number) {}
+  acquire(): T {
+    if (this.resources.length > 0) return this.resources.pop()!;
+    try { return this.factory(); } catch (e) { throw new DatabaseError("Failed to create resource", e as Error); }
+  }
+  release(resource: T): void {
+    if (this.resources.length < this.maxSize) this.resources.push(resource);
+    else this.destroy(resource);
+  }
+}
+
+// === Compensating Transaction (Python: try/except/else pattern) ===
+async function withTransaction<T>(
+  begin: () => Promise<void>,
+  work: () => Promise<T>,
+  rollback: () => Promise<void>,
+  commit: () => Promise<void>
+): Promise<T> {
+  await begin();
+  try {
+    const result = await work();
+    await commit();
+    return result;
+  } catch (e) {
+    await rollback(); // compensating action
+    throw e;
+  }
+}
+
+// === Error Boundary (React/Python context manager pattern) ===
+class ErrorBoundary {
+  private errors: { context: string; error: Error; timestamp: Date }[] = [];
+  try<T>(context: string, fn: () => T): T {
+    try { return fn(); } catch (e) {
+      this.errors.push({ context, error: e as Error, timestamp: new Date() });
+      throw e;
+    }
+  }
+  getErrors(): typeof this.errors { return [...this.errors]; }
+  clear(): void { this.errors = []; }
+  hasErrors(): boolean { return this.errors.length > 0; }
+}
+
+// === File Format Detector (Python: magic bytes) ===
+const MAGIC_BYTES: Record<string, Uint8Array> = {
+  PNG: new Uint8Array([0x89, 0x50, 0x4E, 0x47]),
+  JPEG: new Uint8Array([0xFF, 0xD8, 0xFF]),
+  PDF: new Uint8Array([0x25, 0x50, 0x44, 0x46]),
+  ZIP: new Uint8Array([0x50, 0x4B, 0x03, 0x04]),
+};
+function detectFormat(buffer: Uint8Array): string | null {
+  for (const [format, magic] of Object.entries(MAGIC_BYTES)) {
+    if (buffer.length >= magic.length && magic.every((b, i) => b === buffer[i])) return format;
+  }
+  return null;
+}
+
+// === Temporary File Manager with Auto-cleanup ===
+class TempFileManager {
+  private files: string[] = [];
+  create(prefix = "tmp", suffix = ".txt"): string {
+    const path = `${prefix}_${Date.now()}_${Math.random().toString(36).slice(2)}${suffix}`;
+    this.files.push(path);
+    return path;
+  }
+  cleanup(): void { for (const f of this.files) { try { unlinkSync(f); } catch {} } this.files = []; }
+}
+
+const result = SafeFileOps.read("nonexistent.txt");
+console.log(result); // { ok: false, error: "File not found: nonexistent.txt" }
+
+const boundary = new ErrorBoundary();
+boundary.try("parse", () => JSON.parse("valid json"));
+console.log(boundary.hasErrors()); // false
+```
+
 ## Summary
 
 - `try/except/else/finally` handles exceptions; `finally` always executes.

@@ -807,6 +807,188 @@ CMD ["node", "dist/index.js"]
 
 **Answer: B** — These four signals comprehensively describe service health from Google SRE.
 
+### TypeScript: DevOps Tools
+
+```typescript
+// === CI/CD Pipeline Validator ===
+interface PipelineStage {
+  name: string;
+  required: boolean;
+  duration: number;
+  dependsOn: string[];
+  passed: boolean;
+}
+function validatePipeline(stages: PipelineStage[]): { ready: boolean; blockages: string[] } {
+  const blockages: string[] = [];
+  for (const stage of stages) {
+    const depsMet = stage.dependsOn.every((dep) => stages.find((s) => s.name === dep)?.passed);
+    if (!stage.passed && stage.required && depsMet) blockages.push(`${stage.name} failed`);
+    if (!depsMet) blockages.push(`${stage.name} blocked by: ${stage.dependsOn.filter((d) => !stages.find((s) => s.name === d)?.passed).join(", ")}`);
+  }
+  return { ready: blockages.length === 0, blockages };
+}
+const pipeline: PipelineStage[] = [
+  { name: "Lint", required: true, duration: 1, dependsOn: [], passed: true },
+  { name: "Build", required: true, duration: 3, dependsOn: ["Lint"], passed: true },
+  { name: "Unit Tests", required: true, duration: 5, dependsOn: ["Build"], passed: false },
+  { name: "Integration Tests", required: true, duration: 8, dependsOn: ["Unit Tests"], passed: false },
+  { name: "Deploy", required: false, duration: 2, dependsOn: ["Integration Tests"], passed: false },
+];
+console.log(validatePipeline(pipeline));
+
+// === Deployment Risk Scorer ===
+interface DeployRisk {
+  factor: string;
+  weight: number;
+  score: number;
+}
+function assessDeploymentRisk(risks: DeployRisk[]): { total: number; severity: "low" | "medium" | "high" } {
+  const total = risks.reduce((s, r) => s + r.weight * r.score, 0) / risks.reduce((s, r) => s + r.weight, 0);
+  const severity = total < 3 ? "low" : total < 7 ? "medium" : "high";
+  return { total: Math.round(total * 10) / 10, severity };
+}
+const deployRisks: DeployRisk[] = [
+  { factor: "Changes LOC", weight: 3, score: 4 },
+  { factor: "Files modified", weight: 2, score: 6 },
+  { factor: "New dependencies", weight: 4, score: 2 },
+  { factor: "Database changes", weight: 5, score: 8 },
+  { factor: "Previous rollbacks", weight: 3, score: 1 },
+];
+console.log(assessDeploymentRisk(deployRisks));
+
+// === Rollback Checker ===
+interface DeploymentRecord {
+  version: string;
+  timestamp: Date;
+  healthy: boolean;
+  duration: number;
+}
+function canRollback(history: DeploymentRecord[]): { possible: boolean; target?: string; reason?: string } {
+  if (history.length < 2) return { possible: false, reason: "No previous deployment to rollback to" };
+  const lastHealthy = [...history].reverse().find((d, i) => d.healthy && i > 0);
+  if (!lastHealthy) return { possible: false, reason: "No healthy previous deployment found" };
+  return { possible: true, target: lastHealthy.version };
+}
+const deployHistory: DeploymentRecord[] = [
+  { version: "v2.0", timestamp: new Date(), healthy: false, duration: 300 },
+  { version: "v1.9", timestamp: new Date(Date.now() - 3600000), healthy: true, duration: 280 },
+  { version: "v1.8", timestamp: new Date(Date.now() - 7200000), healthy: true, duration: 260 },
+];
+console.log(canRollback(deployHistory));
+
+// === SLI / SLO / Error Budget Calculator ===
+function errorBudget(sli: number, slo: number, windowDays: number): { remaining: number; consumed: number; budgetDaysLeft: number } {
+  const allowedErrors = (1 - slo / 100) * windowDays * 24 * 60;
+  const actualErrors = (1 - sli / 100) * windowDays * 24 * 60;
+  const remaining = Math.max(0, allowedErrors - actualErrors);
+  const consumed = (actualErrors / allowedErrors) * 100;
+  const budgetDaysLeft = allowedErrors > 0 ? (remaining / (actualErrors / windowDays)) : windowDays;
+  return {
+    remaining: Math.round(remaining),
+    consumed: Math.round(consumed * 10) / 10,
+    budgetDaysLeft: Math.round(budgetDaysLeft * 10) / 10,
+  };
+}
+console.log(errorBudget(99.5, 99.9, 30));
+
+// === Dockerfile Best Practice Checker ===
+function checkDockerfile(content: string): string[] {
+  const issues: string[] = [];
+  const lines = content.split("\n").map((l) => l.trim());
+  if (!lines.some((l) => l.startsWith("FROM "))) issues.push("Missing FROM instruction");
+  if (lines.some((l) => l.startsWith("FROM ") && l.includes(":latest"))) issues.push("Avoid :latest tag in production");
+  if (!lines.some((l) => l.startsWith("EXPOSE "))) issues.push("Missing EXPOSE instruction");
+  if (!lines.some((l) => l.startsWith("HEALTHCHECK"))) issues.push("Missing HEALTHCHECK");
+  return issues;
+}
+console.log(checkDockerfile("FROM node:18\nWORKDIR /app\nCOPY . .\nCMD npm start"));
+
+// === Canary Analyzer ===
+function analyzeCanary(canaryErrors: number, canaryTotal: number, baselineErrors: number, baselineTotal: number): { increase: number; rollback: boolean } {
+  const canaryRate = canaryTotal > 0 ? canaryErrors / canaryTotal : 0;
+  const baselineRate = baselineTotal > 0 ? baselineErrors / baselineTotal : 0;
+  const increase = baselineRate > 0 ? (canaryRate - baselineRate) / baselineRate * 100 : canaryRate * 100;
+  return { increase: Math.round(increase * 100) / 100, rollback: increase > 50 };
+}
+console.log(analyzeCanary(5, 1000, 2, 1000)); // 150% increase, rollback
+```
+
+### TypeScript: Pipeline & Deployment Tools
+
+```typescript
+// === CI/CD Pipeline Simulator ===
+interface Stage { name: string; duration: number; dependsOn: string[]; status: "pending" | "running" | "passed" | "failed"; }
+class PipelineSimulator {
+  private stages: Map<string, Stage> = new Map();
+  
+  addStage(name: string, duration: number, dependsOn: string[] = []): void {
+    this.stages.set(name, { name, duration, dependsOn, status: "pending" });
+  }
+
+  async run(): Promise<{ totalTime: number; results: Record<string, string> }> {
+    const start = Date.now();
+    const results: Record<string, string> = {};
+    
+    const runStage = async (name: string): Promise<void> => {
+      const stage = this.stages.get(name)!;
+      const deps = stage.dependsOn.map(d => this.stages.get(d)!);
+      await Promise.all(deps.filter(d => d.status !== "passed").map(d => runStage(d.name)));
+      stage.status = "running";
+      await new Promise(r => setTimeout(r, stage.duration));
+      stage.status = "passed";
+      results[name] = "passed";
+    };
+
+    const entryStages = [...this.stages.values()].filter(s => s.dependsOn.length === 0);
+    await Promise.all(entryStages.map(s => runStage(s.name)));
+    return { totalTime: Date.now() - start, results };
+  }
+}
+
+// === Deployment Risk Calculator ===
+interface Deployment { version: string; time: Date; success: boolean; rollbackTime?: number; }
+function calculateDeploymentRisk(deployments: Deployment[]): { failureRate: number; avgRecovery: number; recommendation: string } {
+  const failures = deployments.filter(d => !d.success);
+  const failureRate = Math.round((failures.length / deployments.length) * 100);
+  const rollbacks = failures.filter(f => f.rollbackTime !== undefined);
+  const avgRecovery = rollbacks.length > 0
+    ? Math.round(rollbacks.reduce((s, r) => s + (r.rollbackTime ?? 0), 0) / rollbacks.length)
+    : 0;
+  const recommendation = failureRate > 10 ? "Improve testing" : failureRate > 5 ? "Monitor closely" : "Acceptable";
+  return { failureRate, avgRecovery, recommendation };
+}
+
+// === Canary Release Manager ===
+class CanaryManager {
+  constructor(private initialWeight = 100, private stepSize = 25, private intervalMs = 60000) {}
+  private currentWeight = this.initialWeight;
+
+  async rollout(): Promise<{ phase: number; weight: number; stable: boolean }[]> {
+    const phases: { phase: number; weight: number; stable: boolean }[] = [];
+    let phase = 0;
+    while (this.currentWeight > 0) {
+      this.currentWeight = Math.max(0, this.currentWeight - this.stepSize);
+      phase++;
+      const stable = this.currentWeight === 0;
+      phases.push({ phase, weight: this.currentWeight, stable });
+      await new Promise(r => setTimeout(r, 10));
+    }
+    return phases;
+  }
+}
+
+// === SLA Calculator ===
+function calculateUptime(downtimeMinutes: number, periodDays = 30): string {
+  const totalMinutes = periodDays * 24 * 60;
+  const uptime = ((totalMinutes - downtimeMinutes) / totalMinutes) * 100;
+  return `${uptime.toFixed(3)}%`;
+}
+
+console.log(calculateUptime(43.2)); // 99.9% (three nines)
+const canary = new CanaryManager(100, 25);
+console.log(canary.rollout());
+```
+
 ## Summary
 
 DevOps bridges development and operations through culture, automation, and measurement. CI integrates code changes frequently with automated builds and tests. CD extends this to automated deployment. Infrastructure as Code manages infrastructure through version-controlled definition files. Containerisation with Docker and orchestration with Kubernetes provide portable, scalable deployment. Deployment strategies (rolling, blue-green, canary) balance speed and safety. Observability through metrics, logging, tracing, and alerting provides system understanding. A complete DevOps pipeline automates the entire flow from commit to production with quality gates at each stage.

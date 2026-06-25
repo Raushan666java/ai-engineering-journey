@@ -713,6 +713,233 @@ function isSubset<T>(subset: Set<T>, superset: Set<T>): boolean {
 }
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Set Theory Operations ===
+class SetOps<T> {
+  static union<T>(a: Set<T>, b: Set<T>): Set<T> { return new Set([...a, ...b]); }
+  static intersection<T>(a: Set<T>, b: Set<T>): Set<T> { return new Set([...a].filter((x) => b.has(x))); }
+  static difference<T>(a: Set<T>, b: Set<T>): Set<T> { return new Set([...a].filter((x) => !b.has(x))); }
+  static symmetricDifference<T>(a: Set<T>, b: Set<T>): Set<T> {
+    return SetOps.difference(SetOps.union(a, b), SetOps.intersection(a, b));
+  }
+  static isSubset<T>(a: Set<T>, b: Set<T>): boolean { return [...a].every((x) => b.has(x)); }
+  static isSuperset<T>(a: Set<T>, b: Set<T>): boolean { return SetOps.isSubset(b, a); }
+  static jaccard<T>(a: Set<T>, b: Set<T>): number {
+    const inter = SetOps.intersection(a, b).size;
+    const union = SetOps.union(a, b).size;
+    return union === 0 ? 0 : inter / union;
+  }
+}
+const s1 = new Set([1, 2, 3, 4]);
+const s2 = new Set([3, 4, 5, 6]);
+console.log([...SetOps.union(s1, s2)]);           // [1,2,3,4,5,6]
+console.log([...SetOps.intersection(s1, s2)]);    // [3,4]
+console.log([...SetOps.difference(s1, s2)]);      // [1,2]
+console.log(SetOps.jaccard(s1, s2));              // 0.333...
+
+// === Tuple Destructuring Helper ===
+function swap<T, U>(pair: readonly [T, U]): [U, T] {
+  return [pair[1], pair[0]];
+}
+function splitHead<T>(list: T[]): [T, T[]] {
+  const [head, ...rest] = list;
+  return [head, rest];
+}
+console.log(swap([1, "hello"] as const));  // ["hello", 1]
+console.log(splitHead([1, 2, 3, 4]));      // [1, [2, 3, 4]]
+
+// === Readonly Checker ===
+type DeepReadonly<T> = {
+  readonly [P in keyof T]: T[P] extends object ? DeepReadonly<T[P]> : T[P];
+};
+interface Point { x: number; y: number; }
+type ImmutablePoint = DeepReadonly<Point>;
+const p: ImmutablePoint = { x: 10, y: 20 };
+// p.x = 5; // Error: readonly
+
+// === Named Tuple (Python namedtuple equivalent) ===
+class NamedTuple {
+  static create<T extends Record<string, unknown>>(schema: T, values: Partial<T>): T & { _fields: string[] } {
+    const fields = Object.keys(schema);
+    const instance = { ...schema, ...values, _fields: fields };
+    return instance as T & { _fields: string[] };
+  }
+}
+const Student = NamedTuple.create({ name: "", id: 0, gpa: 0.0 }, { name: "Alice", id: 101, gpa: 3.8 });
+console.log(Student.name, Student.id, Student.gpa);
+```
+
+### TypeScript Advanced Collection Patterns
+
+```typescript
+// === Python-style Tuple Implementation ===
+class PyTuple<T> {
+  private readonly items: readonly T[];
+  constructor(...items: T[]) { this.items = Object.freeze([...items]); }
+  get length(): number { return this.items.length; }
+  at(index: number): T {
+    if (index < 0) index = this.items.length + index;
+    if (index < 0 || index >= this.items.length) throw new Error("Index out of range");
+    return this.items[index];
+  }
+  slice(start?: number, end?: number): PyTuple<T> { return new PyTuple(...this.items.slice(start, end)); }
+  concat<U>(other: PyTuple<U>): PyTuple<T | U> { return new PyTuple(...this.items, ...other.items); }
+  includes(item: T): boolean { return this.items.includes(item); }
+  indexOf(item: T): number { return this.items.indexOf(item); }
+  count(item: T): number { return this.items.filter(i => i === item).length; }
+  [Symbol.iterator](): Iterator<T> { return this.items[Symbol.iterator](); }
+}
+const t = new PyTuple(1, "hello", true);
+console.log(t.at(0), t.at(-1));
+
+// === Python-style Set Operations ===
+function setUnion<T>(a: Set<T>, b: Set<T>): Set<T> { return new Set([...a, ...b]); }
+function setIntersection<T>(a: Set<T>, b: Set<T>): Set<T> { return new Set([...a].filter(x => b.has(x))); }
+function setDifference<T>(a: Set<T>, b: Set<T>): Set<T> { return new Set([...a].filter(x => !b.has(x))); }
+function setSymmetricDiff<T>(a: Set<T>, b: Set<T>): Set<T> {
+  return new Set([...a].filter(x => !b.has(x)).concat([...b].filter(x => !a.has(x))));
+}
+function setIsSubset<T>(a: Set<T>, b: Set<T>): boolean { return [...a].every(x => b.has(x)); }
+function isDisjoint<T>(a: Set<T>, b: Set<T>): boolean { return ![...a].some(x => b.has(x)); }
+
+const A = new Set([1, 2, 3, 4]);
+const B = new Set([3, 4, 5, 6]);
+console.log([...setUnion(A, B)]);
+console.log([...setIntersection(A, B)]);
+
+// === FrozenSet Equivalent ===
+class FrozenSet<T> {
+  private readonly items: Set<T>;
+  constructor(items: Iterable<T>) { this.items = new Set(items); }
+  has(value: T): boolean { return this.items.has(value); }
+  get size(): number { return this.items.size; }
+  union(other: FrozenSet<T>): FrozenSet<T> { return new FrozenSet(setUnion(this.items, other.items)); }
+  intersection(other: FrozenSet<T>): FrozenSet<T> { return new FrozenSet(setIntersection(this.items, other.items)); }
+  [Symbol.iterator](): Iterator<T> { return this.items[Symbol.iterator](); }
+}
+
+// === DefaultSet ===
+class DefaultSet<K, V> {
+  private map = new Map<K, Set<V>>();
+  add(key: K, value: V): void {
+    if (!this.map.has(key)) this.map.set(key, new Set());
+    this.map.get(key)!.add(value);
+  }
+  has(key: K, value: V): boolean { return this.map.get(key)?.has(value) ?? false; }
+}
+
+// === Performance Benchmark ===
+function benchSetVsArray(size = 10000): Record<string, number> {
+  const arr = Array.from({ length: size }, (_, i) => i);
+  const set = new Set(arr);
+  const searchItems = [0, size / 2, size - 1, -1];
+  const t1 = performance.now();
+  for (const item of searchItems) arr.includes(item);
+  const arrTime = performance.now() - t1;
+  const t2 = performance.now();
+  for (const item of searchItems) set.has(item);
+  const setTime = performance.now() - t2;
+  return { arraySearchMs: +arrTime.toFixed(3), setSearchMs: +setTime.toFixed(3), ratio: +(arrTime / setTime).toFixed(1) };
+}
+console.log(benchSetVsArray());
+```
+
+### TypeScript Advanced Collection Patterns
+
+```typescript
+// === Multiset (Python: collections.Counter) ===
+class Counter2<T> {
+  private counts = new Map<T, number>();
+  add(item: T): void { this.counts.set(item, (this.counts.get(item) ?? 0) + 1); }
+  remove(item: T): boolean {
+    const c = this.counts.get(item);
+    if (!c) return false;
+    if (c === 1) this.counts.delete(item); else this.counts.set(item, c - 1);
+    return true;
+  }
+  get(item: T): number { return this.counts.get(item) ?? 0; }
+  entries(): [T, number][] { return [...this.counts.entries()]; }
+  mostCommon(n?: number): [T, number][] {
+    const sorted = [...this.counts.entries()].sort((a, b) => b[1] - a[1]);
+    return n ? sorted.slice(0, n) : sorted;
+  }
+  total(): number { return [...this.counts.values()].reduce((a, b) => a + b, 0); }
+}
+
+// === Ordered Set (Python: ordered-set) ===
+class OrderedSet<T> {
+  private items = new Map<T, number>();
+  private order: T[] = [];
+  add(value: T): void {
+    if (!this.items.has(value)) { this.items.set(value, this.order.length); this.order.push(value); }
+  }
+  has(value: T): boolean { return this.items.has(value); }
+  delete(value: T): void {
+    const idx = this.items.get(value);
+    if (idx !== undefined) { this.order.splice(idx, 1); this.items.delete(value); }
+  }
+  values(): T[] { return [...this.order]; }
+  intersection(other: OrderedSet<T>): OrderedSet<T> {
+    const r = new OrderedSet<T>();
+    for (const v of this.order) if (other.has(v)) r.add(v);
+    return r;
+  }
+}
+
+// === Trie (prefix tree) ===
+class Trie {
+  private children = new Map<string, Trie>();
+  private isEnd = false;
+  insert(word: string): void {
+    let node: Trie = this;
+    for (const ch of word) {
+      if (!node.children.has(ch)) node.children.set(ch, new Trie());
+      node = node.children.get(ch)!;
+    }
+    node.isEnd = true;
+  }
+  search(word: string): boolean {
+    let node: Trie = this;
+    for (const ch of word) { if (!node.children.has(ch)) return false; node = node.children.get(ch)!; }
+    return node.isEnd;
+  }
+  startsWith(prefix: string): string[] {
+    let node: Trie = this;
+    for (const ch of prefix) { if (!node.children.has(ch)) return []; node = node.children.get(ch)!; }
+    const results: string[] = [];
+    const dfs = (n: Trie, path: string) => {
+      if (n.isEnd) results.push(path);
+      for (const [ch, child] of n.children) dfs(child, path + ch);
+    };
+    dfs(node, prefix);
+    return results;
+  }
+}
+
+// === LRU Set (bounded) ===
+class BoundedSet<T> {
+  private items = new Set<T>();
+  constructor(private maxSize: number) {}
+  add(value: T): void {
+    if (this.items.size >= this.maxSize) this.items.delete(this.items.values().next().value);
+    this.items.add(value);
+  }
+  has(value: T): boolean { return this.items.has(value); }
+}
+
+const ctr = new Counter2<string>();
+ctr.add("a"); ctr.add("b"); ctr.add("a"); ctr.add("a"); ctr.add("b");
+console.log(ctr.mostCommon()); // [["a", 3], ["b", 2]]
+
+const trie = new Trie();
+trie.insert("hello"); trie.insert("help"); trie.insert("world");
+console.log(trie.startsWith("hel")); // ["hello", "help"]
+console.log(trie.search("help"));   // true
+console.log(trie.search("he"));     // false
+```
+
 ## Summary
 
 - Tuples are immutable sequences; sorted by stability and hashability.

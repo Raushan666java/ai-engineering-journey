@@ -724,6 +724,44 @@ repl.replicate();
 console.log("Replication status:", JSON.stringify(repl.getComplianceReport(), null, 2));
 ```
 
+### TypeScript: Storage Tier Lifecycle Policy Engine
+
+```typescript
+interface TierConfig { name: string; costPerGBMo: number; retrievalHours: number; minDays: number; }
+interface LifecycleRule { prefix: string; transitions: { tier: string; afterDays: number }[]; }
+
+class LifecyclePolicyEngine {
+  private tiers: TierConfig[] = [
+    { name: "Standard", costPerGBMo: 0.023, retrievalHours: 0, minDays: 0 },
+    { name: "Infrequent Access", costPerGBMo: 0.0125, retrievalHours: 1, minDays: 30 },
+    { name: "Glacier", costPerGBMo: 0.0036, retrievalHours: 12, minDays: 90 },
+    { name: "Deep Archive", costPerGBMo: 0.00099, retrievalHours: 48, minDays: 180 },
+  ];
+
+  simulateCost(dataGB: number, rules: LifecycleRule[], months: number): { byTier: Record<string, number>; total: number } {
+    const monthlyCosts: Record<string, number> = {};
+    let currentData = dataGB;
+    for (let m = 1; m <= months; m++) {
+      for (const rule of rules) {
+        for (const t of rule.transitions) {
+          if (m === t.afterDays / 30 + 1) {
+            const tier = this.tiers.find(ti => ti.name === t.tier)!;
+            monthlyCosts[t.tier] = (monthlyCosts[t.tier] || 0) + currentData * tier.costPerGBMo;
+          }
+        }
+      }
+    }
+    const total = Object.values(monthlyCosts).reduce((a, b) => a + b, 0);
+    return { byTier: monthlyCosts, total: Math.round(total * 100) / 100 };
+  }
+}
+
+const lpe = new LifecyclePolicyEngine();
+const cost = lpe.simulateCost(10000, [{ prefix: "logs/", transitions: [{ tier: "Infrequent Access", afterDays: 30 }, { tier: "Glacier", afterDays: 90 }] }], 12);
+console.log("Yearly cost:", JSON.stringify(cost, null, 2));
+```
+```
+
 ## Summary
 
 - Cloud storage is categorized into Object, Block, and File models.

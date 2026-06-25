@@ -711,10 +711,260 @@ function deepCount(obj: Record<string, any>): number {
 }
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Overload Resolver ===
+type OverloadFn = (...args: unknown[]) => unknown;
+interface OverloadSignature { args: string[]; returnType: string; }
+function resolveOverload(fn: OverloadFn, signatures: OverloadSignature[], args: unknown[]): string {
+  for (const sig of signatures) {
+    if (sig.args.length !== args.length) continue;
+    const match = sig.args.every((type, i) => {
+      if (type === "number") return typeof args[i] === "number";
+      if (type === "string") return typeof args[i] === "string";
+      if (type === "boolean") return typeof args[i] === "boolean";
+      return true;
+    });
+    if (match) return `Matches: (${sig.args.join(", ")}) => ${sig.returnType}`;
+  }
+  return "No matching overload";
+}
+const sigs: OverloadSignature[] = [
+  { args: ["string"], returnType: "number" },
+  { args: ["number", "number"], returnType: "number" },
+];
+console.log(resolveOverload(() => {}, sigs, ["hello"]));  // Matches (string) => number
+console.log(resolveOverload(() => {}, sigs, [1, 2]));      // Matches (number, number) => number
+
+// === Default Param Analyzer ===
+interface ParamConfig { name: string; hasDefault: boolean; defaultVal?: unknown; isRest: boolean }
+function analyzeParams(fn: (...args: unknown[]) => unknown): ParamConfig[] {
+  const src = fn.toString();
+  const params = src.match(/\(([^)]*)\)/)?.[1] ?? "";
+  return params.split(",").filter(Boolean).map((p) => {
+    const trimmed = p.trim();
+    return {
+      name: trimmed.replace(/[=?].*/, "").replace(/^\.\.\./, "").trim(),
+      hasDefault: trimmed.includes("="),
+      defaultVal: trimmed.includes("=") ? trimmed.split("=")[1]?.trim() : undefined,
+      isRest: trimmed.startsWith("..."),
+    };
+  });
+}
+function example(a: string, b = 10, ...rest: number[]) { return a; }
+console.log(analyzeParams(example));
+
+// === Rest / Spread Helper ===
+function mergeArrays<T>(...arrays: T[][]): T[] {
+  return arrays.reduce((acc, arr) => [...acc, ...arr], []);
+}
+function pickProps<T extends Record<string, unknown>>(obj: T, ...keys: (keyof T)[]): Partial<T> {
+  return keys.reduce((acc, k) => ({ ...acc, [k]: obj[k] }), {} as Partial<T>);
+}
+console.log(mergeArrays([1, 2], [3, 4], [5]));
+console.log(pickProps({ a: 1, b: 2, c: 3 }, "a", "c"));
+
+// === Partial Application (Python functools.partial equivalent) ===
+function partial<T extends unknown[], R>(fn: (...args: T) => R, ...bound: Partial<T>): (...rest: T) => R {
+  return (...rest: T) => fn(...bound, ...rest) as R;
+}
+const add = (a: number, b: number, c: number) => a + b + c;
+const add5 = partial(add, 5);
+console.log(add5(10, 3)); // 18
+
+// === Currying Helper ===
+function curry<T extends unknown[], R>(fn: (...args: T) => R): (...args: Partial<T>) => unknown {
+  return (...args: Partial<T>) => args.length >= fn.length ? fn(...args as T) : curry(fn.bind(null, ...args));
+}
+const curriedAdd = curry((a: number, b: number, c: number) => a + b + c);
+console.log(curriedAdd(1)(2)(3)); // 6
+```
+
+### TypeScript Advanced Patterns
+
+```typescript
+// === Generic Function Constraints ===
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const person = { name: "Alice", age: 30, city: "Paris" };
+console.log(getProperty(person, "name")); // Alice
+// getProperty(person, "zip"); // TypeScript error
+
+// === Function Composition Pipeline ===
+type Unary<T, R> = (x: T) => R;
+function pipe<T, R>(...fns: Unary<any, any>[]): Unary<T, R> {
+  return (x: T) => fns.reduce((acc, fn) => fn(acc), x) as R;
+}
+const trim = (s: string) => s.trim();
+const upper = (s: string) => s.toUpperCase();
+const excerpt = (s: string) => s.length > 10 ? s.slice(0, 10) + "..." : s;
+const processTitle = pipe(trim, upper, excerpt);
+console.log(processTitle("  hello world example  ")); // "HELLO WOR..."
+
+// === Memoization (Python: functools.lru_cache) ===
+function memoize<T, R>(fn: (arg: T) => R): (arg: T) => R {
+  const cache = new Map<T, R>();
+  return (arg: T): R => {
+    if (cache.has(arg)) {
+      console.log(`[cache hit] ${arg}`);
+      return cache.get(arg)!;
+    }
+    const result = fn(arg);
+    cache.set(arg, result);
+    return result;
+  };
+}
+const fib = memoize((n: number): number => {
+  if (n < 2) return n;
+  return fib(n - 1) + fib(n - 2);
+});
+console.log(fib(40)); // Fast due to memoization
+
+// === Type Guards (Python: isinstance checks) ===
+interface Cat { type: "cat"; meow(): void }
+interface Dog { type: "dog"; bark(): void }
+type Animal = Cat | Dog;
+function isCat(animal: Animal): animal is Cat {
+  return animal.type === "cat";
+}
+function handleAnimal(animal: Animal): void {
+  if (isCat(animal)) animal.meow();
+  else animal.bark();
+}
+
+// === Callback to Promise Wrapper ===
+function promisify<T>(fn: (cb: (err: Error | null, result?: T) => void) => void): () => Promise<T> {
+  return () => new Promise<T>((resolve, reject) => {
+    fn((err, result) => err ? reject(err) : resolve(result!));
+  });
+}
+
+// === Async Function Pattern ===
+async function fetchWithTimeout<T>(url: string, timeoutMs = 5000): Promise<T> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, { signal: controller.signal });
+    return await response.json() as T;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+// === Partial Application with Types ===
+function partialApply<T extends unknown[], R>(fn: (...args: T) => R, ...args: Partial<T>): (...rest: T) => R {
+  return (...rest: T) => fn(...args, ...rest) as R;
+}
+const multiply = (a: number, b: number, c: number) => a * b * c;
+const double = partialApply(multiply, 2);
+console.log(double(3, 4)); // 24 (2 * 3 * 4)
+
+// === Variadic Function Overloads ===
+function sum(...args: number[]): number;
+function sum(...args: string[]): string;
+function sum(...args: (number | string)[]): number | string {
+  if (typeof args[0] === "number") return (args as number[]).reduce((a, b) => a + b, 0);
+  return (args as string[]).join("");
+}
+console.log(sum(1, 2, 3));    // 6
+console.log(sum("a", "b")); // "ab"
+
+// === Python-style decorator via higher-order function ===
+function logCalls<T extends (...args: unknown[]) => unknown>(fn: T): T {
+  return ((...args: Parameters<T>) => {
+    console.log(`Called ${fn.name}(${args.map(a => JSON.stringify(a)).join(", ")})`);
+    const result = fn(...args);
+    console.log(`Returned ${JSON.stringify(result)}`);
+    return result;
+  }) as T;
+}
+const loggedAdd = logCalls((a: number, b: number) => a + b);
+loggedAdd(3, 4); // logs: Called (3, 4) → 7
+```
+
+### TypeScript Function Composition & Pipeline
+
+```typescript
+// === Pipe Operator (Python: function composition) ===
+const pipe = <T>(...fns: Array<(arg: T) => T>) => (value: T): T => fns.reduce((acc, fn) => fn(acc), value);
+const compose = <T>(...fns: Array<(arg: T) => T>) => (value: T): T => fns.reduceRight((acc, fn) => fn(acc), value);
+
+// === Throttle & Debounce ===
+function debounce<T extends unknown[]>(fn: (...args: T) => void, delay: number) {
+  let timer: ReturnType<typeof setTimeout>;
+  return (...args: T) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), delay);
+  };
+}
+function throttle<T extends unknown[]>(fn: (...args: T) => void, limit: number) {
+  let inThrottle = false;
+  return (...args: T) => {
+    if (!inThrottle) { fn(...args); inThrottle = true; setTimeout(() => { inThrottle = false; }, limit); }
+  };
+}
+
+// === Once (Python: functools.cache with no args) ===
+function once<T extends unknown[], R>(fn: (...args: T) => R): (...args: T) => R {
+  let called = false, result: R;
+  return (...args: T) => { if (!called) { called = true; result = fn(...args); } return result; };
+}
+
+// === Function Wrapping (Python: @wraps equivalent) ===
+function wrap<T extends unknown[], R>(fn: (...args: T) => R) {
+  const wrapped = (...args: T) => fn(...args);
+  Object.defineProperty(wrapped, 'name', { value: `wrapped_${fn.name}` });
+  return wrapped;
+}
+
+// === Async Pipe ===
+async function asyncPipe<T>(initial: T, ...fns: Array<(x: any) => Promise<any>>): Promise<T> {
+  let result = initial as any;
+  for (const fn of fns) result = await fn(result);
+  return result;
+}
+
+// === Curried Function Builder ===
+function curryN<T, R>(fn: (...args: T[]) => R, arity = fn.length): (...args: T[]) => R | ((...args: T[]) => R) {
+  return (...args: T[]) => {
+    if (args.length >= arity) return fn(...args);
+    return curryN((...more: T[]) => fn(...args, ...more) as R, arity - args.length) as any;
+  };
+}
+
+// === Function Identity & Tap ===
+const identityFn = <T>(x: T): T => x;
+function tap<T>(fn: (x: T) => void): (x: T) => T { return (x: T) => { fn(x); return x; }; }
+
+// === Pipeline with Validation ===
+const pipelineResult = pipe(
+  (x: number) => x * 2,
+  tap(x => console.log(`After double: ${x}`)),
+  (x: number) => x + 1,
+)(5);
+console.log(pipelineResult); // 11
+
+// === Strategy Pattern via Functions ===
+type Strategy = (a: number, b: number) => number;
+const strategies: Record<string, Strategy> = {
+  add: (a, b) => a + b,
+  multiply: (a, b) => a * b,
+  max: (a, b) => Math.max(a, b),
+  power: (a, b) => a ** b,
+};
+function executeStrategy(name: string, a: number, b: number): number {
+  return strategies[name]?.(a, b) ?? (() => { throw new Error(`Unknown strategy: ${name}`); })();
+}
+console.log(executeStrategy("add", 5, 3)); // 8
+console.log(executeStrategy("power", 2, 10)); // 1024
+```
+
 ## Summary
 
 - Parameters: positional, keyword, default, `*args`, `**kwargs`, positional-only (`/`), keyword-only (`*`).
-- Default arguments are evaluated once â€” use `None` for mutable defaults.
+- Default arguments are evaluated once â€" use `None` for mutable defaults.
 - LEGB scope: Local, Enclosing, Global, Built-in.
 - `global` and `nonlocal` modify variables in outer scopes.
 - Docstrings and annotations document the function contract.

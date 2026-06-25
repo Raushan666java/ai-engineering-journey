@@ -661,6 +661,76 @@ function mergeSortComparisons(arr: number[]): number {
 console.log('Merge sort comparisons:', mergeSortComparisons([5, 2, 4, 7, 1, 3, 6, 8])); // ~n log n
 ```
 
+```
+// --- Matrix Exponentiation for Recurrences ---
+function matMul(A: number[][], B: number[][]): number[][] {
+  const n = A.length, m = B[0].length, p = A[0].length;
+  const C = Array.from({length: n}, () => new Array(m).fill(0));
+  for (let i = 0; i < n; i++)
+    for (let k = 0; k < p; k++)
+      if (A[i][k] !== 0)
+        for (let j = 0; j < m; j++)
+          C[i][j] += A[i][k] * B[k][j];
+  return C;
+}
+function matPow(M: number[][], exp: number): number[][] {
+  const n = M.length;
+  let result = Array.from({length: n}, (_, i) => Array.from({length: n}, (_, j) => i === j ? 1 : 0));
+  let base = M.map(r => [...r]);
+  let e = exp;
+  while (e > 0) { if (e & 1) result = matMul(result, base); base = matMul(base, base); e >>= 1; }
+  return result;
+}
+// Fibonacci via matrix exponentiation: [[1,1],[1,0]]^n
+function fibMatrix(n: number): number {
+  if (n === 0) return 0;
+  const M = [[1, 1], [1, 0]];
+  const Mn = matPow(M, n - 1);
+  return Mn[0][0];
+}
+console.log('Fib(50) via matrix exp:', fibMatrix(50));
+console.log('Fib(100) via matrix exp:', fibMatrix(100));
+
+// --- Linear Recurrence Solver ---
+function linearRecurrence(coeffs: number[], initial: number[], n: number): number {
+  const k = coeffs.length;
+  const seq = [...initial];
+  for (let i = seq.length; i <= n; i++) {
+    let next = 0;
+    for (let j = 0; j < k; j++) next += coeffs[j] * seq[i - 1 - j];
+    seq.push(next);
+  }
+  return seq[n];
+}
+// a_n = 2*a_{n-1} + 3*a_{n-2}, a_0=1, a_1=2
+console.log('\nLinear recurrence a_n=2a_{n-1}+3a_{n-2}: a_5 =', linearRecurrence([2, 3], [1, 2], 5));
+
+// --- Divide-and-Conquer Master Theorem Verifier ---
+function masterTheorem(a: number, b: number, f_n_degree: number): string {
+  const logba = Math.log(a) / Math.log(b);
+  const epsilon = 0.0001;
+  if (f_n_degree < logba - epsilon) return `Θ(n^${logba.toFixed(2)}) (case 1)`;
+  if (Math.abs(f_n_degree - logba) < epsilon) return `Θ(n^${logba.toFixed(2)} log n) (case 2)`;
+  if (f_n_degree > logba + epsilon) return `Θ(n^${f_n_degree.toFixed(2)}) (case 3)`;
+  return 'complexity ambiguous';
+}
+console.log('\nMaster theorem T(n)=2T(n/2)+O(n):', masterTheorem(2, 2, 1));  // case 2: Θ(n log n)
+console.log('Master theorem T(n)=4T(n/2)+O(n):', masterTheorem(4, 2, 1));  // case 1: Θ(n²)
+console.log('Master theorem T(n)=2T(n/2)+O(n²):', masterTheorem(2, 2, 2)); // case 3: Θ(n²)
+
+// --- Generating Function Term Calculator ---
+function genFuncCoeff(seq: number[], n: number): number[] {
+  const result = new Array(n + 1).fill(0);
+  result[0] = 1;
+  for (const s of seq) {
+    for (let i = s; i <= n; i++) result[i] += result[i - s];
+  }
+  return result;
+}
+// Generating function for coins {1, 2, 5}: number of ways to make change
+console.log('\nCoin change ways (coins 1,2,5) up to n=10:', genFuncCoeff([1, 2, 5], 10).join(', '));
+```
+
 ## Summary
 
 - Recurrence relations define sequences from initial terms and a dependency rule.

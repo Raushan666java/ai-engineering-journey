@@ -647,6 +647,152 @@ graph TD
     DECIDE --> RESULT[Recommended Process Model]
 ```
 
+### TypeScript: SDLC Model Selector
+
+```typescript
+interface ProjectProfile {
+  requirementsStability: "stable" | "volatile" | "emerging";
+  riskLevel: "low" | "medium" | "high";
+  teamSize: "small" | "medium" | "large";
+  customerInvolvement: "low" | "medium" | "high";
+  deliveryCadence: "single" | "incremental" | "continuous";
+}
+
+interface ProcessModel {
+  name: string;
+  suitability: number;
+  description: string;
+}
+
+function recommendModel(profile: ProjectProfile): ProcessModel[] {
+  const scores: ProcessModel[] = [
+    { name: "Waterfall", suitability: 0, description: "Linear sequential phases" },
+    { name: "V-Model", suitability: 0, description: "Verification & validation focus" },
+    { name: "Incremental", suitability: 0, description: "Build in increments" },
+    { name: "Spiral", suitability: 0, description: "Risk-driven iterations" },
+    { name: "RUP", suitability: 0, description: "Architecture-centric iterative" },
+    { name: "Scrum", suitability: 0, description: "Sprint-based agile" },
+    { name: "XP", suitability: 0, description: "Engineering-practice agile" },
+    { name: "Kanban", suitability: 0, description: "Flow-based delivery" },
+  ];
+  if (profile.requirementsStability === "stable") scores[0].suitability += 3;
+  if (profile.requirementsStability === "volatile") { scores[4].suitability += 3; scores[5].suitability += 2; }
+  if (profile.requirementsStability === "emerging") { scores[2].suitability += 3; scores[6].suitability += 2; }
+  if (profile.riskLevel === "high") scores[3].suitability += 3;
+  if (profile.customerInvolvement === "high") { scores[5].suitability += 2; scores[6].suitability += 2; }
+  if (profile.deliveryCadence === "continuous") { scores[7].suitability += 3; scores[5].suitability += 1; }
+  return scores.sort((a, b) => b.suitability - a.suitability);
+}
+
+const project: ProjectProfile = {
+  requirementsStability: "volatile",
+  riskLevel: "medium",
+  teamSize: "small",
+  customerInvolvement: "high",
+  deliveryCadence: "incremental",
+};
+console.log(recommendModel(project).slice(0, 3));
+
+// === Process Type Comparator ===
+interface ProcessDimension {
+  dimension: string;
+  waterfall: string;
+  agile: string;
+  spiral: string;
+}
+const processComparison: ProcessDimension[] = [
+  { dimension: "Requirements", waterfall: "Fixed upfront", agile: "Evolving backlog", spiral: "Risk-refined" },
+  { dimension: "Delivery", waterfall: "Single release", agile: "Frequent increments", spiral: "Prototype cycles" },
+  { dimension: "Customer", waterfall: "At milestones", agile: "Continuous", spiral: "Risk review points" },
+  { dimension: "Team size", waterfall: "Large possible", agile: "Small preferred", spiral: "Medium" },
+  { dimension: "Risk mgmt", waterfall: "Implicit", agile: "Via adaptation", spiral: "Explicit driver" },
+  { dimension: "Documentation", waterfall: "Heavy", agile: "Minimal", spiral: "Risk-based" },
+];
+function compareProcesses(a: string, b: string): string[] {
+  return processComparison
+    .filter((d) => (d as any)[a] !== (d as any)[b])
+    .map((d) => `${d.dimension}: ${(d as any)[a]} vs ${(d as any)[b]}`);
+}
+console.log(compareProcesses("waterfall", "agile"));
+
+// === Methodology Quizzer ===
+const quiz = [
+  { q: "Which model introduces explicit risk management?", a: "Spiral" },
+  { q: "Which model has verification on one leg and validation on the other?", a: "V-Model" },
+  { q: "Which methodology uses sprints of fixed duration?", a: "Scrum" },
+  { q: "Which model delivers working software in repeated cycles?", a: "Incremental" },
+  { q: "Which model separates create, evaluate, and anchor phases?", a: "Spiral" },
+];
+function checkAnswer(question: string, answer: string): boolean {
+  const entry = quiz.find((q) => q.q === question);
+  return entry?.a.toLowerCase() === answer.toLowerCase();
+}
+console.log(checkAnswer("Which model introduces explicit risk management?", "Spiral")); // true
+```
+
+### TypeScript: Process Model Simulator
+
+```typescript
+// === Process Model Phase Simulator ===
+interface Phase { name: string; duration: number; predecessors: string[]; completed: boolean; }
+class ProcessSimulator {
+  private phases: Phase[] = [];
+  private time = 0;
+  addPhase(name: string, duration: number, predecessors: string[] = []): void {
+    this.phases.push({ name, duration, predecessors, completed: false });
+  }
+  getEarliestStart(name: string): number {
+    const phase = this.phases.find(p => p.name === name);
+    if (!phase || phase.predecessors.length === 0) return 0;
+    return Math.max(...phase.predecessors.map(p => {
+      const pred = this.phases.find(ph => ph.name === p);
+      return pred ? pred.duration : 0;
+    }));
+  }
+  getCriticalPath(): string[] {
+    const dp = new Map<string, { duration: number; path: string[] }>();
+    const topo: string[] = [];
+    const visited = new Set<string>();
+    const dfs = (name: string): void => {
+      if (visited.has(name)) return;
+      visited.add(name);
+      const phase = this.phases.find(p => p.name === name);
+      if (phase) for (const pred of phase.predecessors) dfs(pred);
+      topo.push(name);
+    };
+    for (const p of this.phases) dfs(p.name);
+    for (const name of topo) {
+      const phase = this.phases.find(p => p.name === name)!;
+      let maxPred = 0;
+      let bestPath: string[] = [];
+      for (const pred of phase.predecessors) {
+        const prev = dp.get(pred);
+        if (prev && prev.duration > maxPred) { maxPred = prev.duration; bestPath = prev.path; }
+      }
+      dp.set(name, { duration: maxPred + phase.duration, path: [...bestPath, name] });
+    }
+    return [...dp.values()].reduce((a, b) => a.duration > b.duration ? a : b).path;
+  }
+  simulate(): { totalTime: number; criticalPath: string[]; phaseSchedule: { name: string; start: number; end: number }[] } {
+    const criticalPath = this.getCriticalPath();
+    const phaseSchedule = this.phases.map(p => {
+      const start = this.getEarliestStart(p.name);
+      return { name: p.name, start, end: start + p.duration };
+    });
+    return { totalTime: Math.max(...phaseSchedule.map(p => p.end)), criticalPath, phaseSchedule };
+  }
+}
+const waterfall = new ProcessSimulator();
+waterfall.addPhase("Requirements", 10);
+waterfall.addPhase("Design", 15, ["Requirements"]);
+waterfall.addPhase("Implementation", 30, ["Design"]);
+waterfall.addPhase("Testing", 15, ["Implementation"]);
+waterfall.addPhase("Deployment", 5, ["Testing"]);
+watershed.simulate();
+console.log("Critical path:", waterfallEntry.getCriticalPath());
+// The simulator shows Waterfall's serial nature: critical path = all phases
+```
+
 ## Summary
 
 Software process models provide structure and guidance for development activities. No single model is appropriate for all projects. The Waterfall model offers simplicity but lacks flexibility. The V-model emphasises verification and traceability. Incremental and iterative approaches deliver early value and accommodate change. The Spiral model incorporates explicit risk management. The Unified Process provides an iterative, architecture-centric framework. Agile methods (Scrum, XP) prioritise people, working software, and responsiveness to change. The selection of a process model should be based on project characteristics including requirements stability, risk profile, team size, and organisational context.

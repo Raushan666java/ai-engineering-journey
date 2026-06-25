@@ -646,6 +646,132 @@ console.log(InteractiveProof.IPequalsPSPACE());
 console.log(PCPTheorem.statement());
 ```
 
+// ─────────────────────────────────────────────────────
+// Cook-Levin Reduction Helper — demonstrates the
+// core idea of the Cook-Levin theorem: encoding a TM
+// computation as a Boolean formula.
+// ─────────────────────────────────────────────────────
+
+class CookLevinHelper {
+  // Build a Boolean formula that encodes the acceptance
+  // of a simple TM on an input of length n.
+  static buildEncoding(tmStates: number, tapeLength: number, inputSymbols: string[]): string[] {
+    const clauses: string[] = [];
+    const varName = (t: number, i: number, s: string) => `X${t}_${i}_${s}`;
+
+    // Each cell contains exactly one symbol
+    for (let t = 0; t < tmStates; t++) {
+      for (let i = 0; i < tapeLength; i++) {
+        const symbols = inputSymbols;
+        // At least one symbol
+        clauses.push(`(${symbols.map(s => varName(t, i, s)).join(" ∨ ")})`);
+        // At most one symbol (pairwise)
+        for (let a = 0; a < symbols.length; a++) {
+          for (let b = a + 1; b < symbols.length; b++) {
+            clauses.push(`(¬${varName(t, i, symbols[a])} ∨ ¬${varName(t, i, symbols[b])})`);
+          }
+        }
+      }
+    }
+
+    // Initial configuration
+    clauses.push(`(${varName(0, 0, "q0_initial")})`);
+    for (let i = 0; i < tapeLength; i++) {
+      clauses.push(`(${varName(0, i, inputSymbols[i] || "blank")})`);
+    }
+
+    // Acceptance condition
+    clauses.push(`(${varName(tmStates - 1, 0, "q_accept")})`);
+
+    return clauses;
+  }
+
+  static explanation(): string[] {
+    return [
+      "Cook-Levin Theorem: SAT is NP-complete",
+      "",
+      "Key insight: Any NP problem can be solved by a",
+      "nondeterministic TM in polynomial time. The TM's",
+      "computation can be encoded as a Boolean formula",
+      "that is satisfiable iff the TM accepts.",
+      "",
+      "Encoding components:",
+      "  1. Variables X_{t,i,s}: at time t, cell i contains symbol s",
+      "  2. Clauses for initial configuration",
+      "  3. Clauses for valid transitions (local)",
+      "  4. Clauses for acceptance",
+      "",
+      "Formula size: O(p(n)³) where p(n) is the TM's runtime.",
+      "This proves SAT is NP-hard, and since SAT ∈ NP,",
+      "SAT is NP-complete."
+    ];
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// NP-Completeness Checker — given a problem's properties,
+// checks if it satisfies the conditions for NP-completeness.
+// ─────────────────────────────────────────────────────
+
+class NPCompletenessChecker {
+  static check(name: string, inNP: boolean, hasReductionFromSAT: boolean): string[] {
+    const output: string[] = [];
+    output.push(`NP-Completeness Check: ${name}`);
+    output.push("=".repeat(40));
+    output.push(`  1. Is the problem in NP?         ${inNP ? "✓" : "✗"}`);
+    output.push(`  2. SAT ≤_P this problem?         ${hasReductionFromSAT ? "✓" : "✗"}`);
+
+    if (inNP && hasReductionFromSAT) {
+      output.push("\n  Verdict: NP-COMPLETE");
+      output.push("  The problem is among the hardest problems in NP.");
+    } else if (!inNP && hasReductionFromSAT) {
+      output.push("\n  Verdict: NP-HARD (but not known to be in NP)");
+      output.push("  At least as hard as all NP problems, but may not be in NP.");
+    } else if (inNP && !hasReductionFromSAT) {
+      output.push("\n  Verdict: IN NP (but not known to be NP-complete)");
+      output.push("  No polynomial reduction from SAT is known yet.");
+    } else {
+      output.push("\n  Verdict: Not known to be in NP or NP-hard");
+    }
+
+    return output;
+  }
+
+  // List of classic NP-complete problems
+  static classicList(): string[] {
+    return [
+      "Classic NP-Complete Problems (Karp's 21):",
+      "",
+      "  SAT / 3SAT              — Boolean satisfiability",
+      "  Vertex Cover            — Vertex cover of size k in graph",
+      "  Clique                  — Clique of size k in graph",
+      "  Hamiltonian Path/Cycle  — Path visiting all vertices",
+      "  Traveling Salesman      — Shortest Hamiltonian cycle",
+      "  Subset Sum              — Subset summing to target",
+      "  Knapsack                — Max value under weight limit",
+      "  Graph Coloring          — k-colorability of graph",
+      "  Set Cover               — Smallest subcollection covering universe",
+      "  Independent Set         — Independent set of size k",
+      "  Exact Cover             — Exact cover decision problem",
+      "  Max Cut                 — Maximum cut in graph",
+      "  Integer Programming     — ILP feasibility"
+    ];
+  }
+}
+
+// Demo
+console.log(CookLevinHelper.explanation().join("\n"));
+console.log("");
+const enc = CookLevinHelper.buildEncoding(3, 2, ["0", "1"]);
+console.log(`Cook-Levin encoding: ${enc.length} clauses generated`);
+enc.slice(0, 5).forEach(c => console.log(`  ${c}`));
+console.log("  ...");
+console.log("");
+console.log(NPCompletenessChecker.check("Traveling Salesman", true, true).join("\n"));
+console.log("");
+console.log(NPCompletenessChecker.classicList().join("\n"));
+```
+
 ## Summary
 
 - Log-space reductions define completeness for L and NL.

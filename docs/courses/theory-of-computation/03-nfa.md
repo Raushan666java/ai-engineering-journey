@@ -653,6 +653,140 @@ console.log(dfa.accept);            // DFA accepts
 console.log([...dfa.transitions]);  // DFA transition table
 ```
 
+// ────────────────────────────────────────────────────────
+// Epsilon-Closure Calculator — given an NFA state,
+// finds all states reachable via ε-transitions.
+// ────────────────────────────────────────────────────────
+
+class EpsilonClosureCalculator {
+  // Compute ε-closure for a single state
+  static compute(
+    state: string,
+    epsilonTransitions: Map<string, Set<string>>
+  ): Set<string> {
+    const closure = new Set<string>([state]);
+    const stack = [state];
+    while (stack.length > 0) {
+      const current = stack.pop()!;
+      const epsilonNext = epsilonTransitions.get(current);
+      if (epsilonNext) {
+        for (const next of epsilonNext) {
+          if (!closure.has(next)) {
+            closure.add(next);
+            stack.push(next);
+          }
+        }
+      }
+    }
+    return closure;
+  }
+
+  // Compute ε-closure for a set of states
+  static computeSet(
+    states: Set<string>,
+    epsilonTransitions: Map<string, Set<string>>
+  ): Set<string> {
+    const result = new Set<string>();
+    for (const s of states) {
+      const c = EpsilonClosureCalculator.compute(s, epsilonTransitions);
+      for (const cs of c) result.add(cs);
+    }
+    return result;
+  }
+}
+
+// ────────────────────────────────────────────────────────
+// Subset Construction (NFA → DFA converter)
+// Converts any NFA (with or without ε) into an
+// equivalent DFA using the powerset construction.
+// ────────────────────────────────────────────────────────
+
+class SubsetConstructionConverter {
+  static convert(
+    nfaStates: Set<string>,
+    alphabet: Set<string>,
+    nfaTransitions: Map<string, Set<string>>,
+    epsilonTransitions: Map<string, Set<string>>,
+    nfaStart: string,
+    nfaAccept: Set<string>
+  ): {
+    dfaStates: Set<string>;
+    dfaTransitions: Map<string, string>;
+    dfaStart: string;
+    dfaAccept: Set<string>;
+  } {
+    const dfaStates = new Set<string>();
+    const dfaTransitions = new Map<string, string>();
+    const dfaAccept = new Set<string>();
+
+    // Initial DFA state = ε-closure of NFA start state
+    const startClosure = EpsilonClosureCalculator.compute(nfaStart, epsilonTransitions);
+    const startLabel = [...startClosure].sort().join(",");
+    dfaStates.add(startLabel);
+
+    if ([...startClosure].some(s => nfaAccept.has(s))) {
+      dfaAccept.add(startLabel);
+    }
+
+    const queue = [startLabel];
+    const processed = new Set<string>([startLabel]);
+
+    while (queue.length > 0) {
+      const currentLabel = queue.shift()!;
+      const currentSet = new Set(currentLabel.split(",").filter(Boolean));
+
+      for (const sym of alphabet) {
+        // Find all states reachable on symbol
+        const moveResult = new Set<string>();
+        for (const s of currentSet) {
+          const trans = nfaTransitions.get(`${s},${sym}`);
+          if (trans) {
+            for (const t of trans) moveResult.add(t);
+          }
+        }
+
+        // Compute ε-closure of the move result
+        const closure = EpsilonClosureCalculator.computeSet(moveResult, epsilonTransitions);
+        if (closure.size === 0) continue;
+
+        const nextLabel = [...closure].sort().join(",");
+        dfaTransitions.set(`${currentLabel},${sym}`, nextLabel);
+
+        if (!processed.has(nextLabel)) {
+          processed.add(nextLabel);
+          dfaStates.add(nextLabel);
+          queue.push(nextLabel);
+
+          if ([...closure].some(s => nfaAccept.has(s))) {
+            dfaAccept.add(nextLabel);
+          }
+        }
+      }
+    }
+
+    return { dfaStates, dfaTransitions, dfaStart: startLabel, dfaAccept };
+  }
+}
+
+// Demo: convert the running NFA example to DFA
+const nfaStates = new Set(["q0", "q1", "q2"]);
+const nfaAlphabet = new Set(["0", "1"]);
+const nfaTransitions = new Map<string, Set<string>>([
+  ["q0,0", new Set(["q0", "q1"])], ["q0,1", new Set(["q0"])],
+  ["q1,0", new Set()], ["q1,1", new Set(["q2"])],
+  ["q2,0", new Set()], ["q2,1", new Set()],
+]);
+const nfaEpsilon = new Map<string, Set<string>>();
+
+const result = SubsetConstructionConverter.convert(
+  nfaStates, nfaAlphabet, nfaTransitions, nfaEpsilon, "q0", new Set(["q2"])
+);
+console.log(`DFA states (subset construction): ${[...result.dfaStates].join(", ")}`);
+console.log(`DFA start: ${result.dfaStart}`);
+console.log(`DFA accept: ${[...result.dfaAccept].join(", ")}`);
+console.log(`DFA transitions: ${[...result.dfaTransitions].map(([k, v]) => `${k} → ${v}`).join("; ")}`);
+```
+
 ## Summary
 
 - NFA generalizes DFA by allowing multiple or zero next states per input symbol.

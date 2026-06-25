@@ -1021,8 +1021,110 @@ graph LR
     subgraph "Dashboard Status"
         DS1[Score 80-100] -->|🟢| HLTH[Healthy]
         DS2[Score 50-79] -->|🟡| WARN[Warning]
-        DS3[Score 0-49] -->|🔴| CRIT[Critical]
+        DS3[Score 0-49] -->|🔴|         CRIT[Critical]
     end
+```
+
+### TypeScript: Quality Management Tools
+
+```typescript
+// === Quality Score Calculator ===
+interface QualityDimension {
+  name: string;
+  weight: number;
+  score: number;
+}
+function calculateQualityIndex(dimensions: QualityDimension[]): { overall: number; breakdown: QualityDimension[] } {
+  const totalWeight = dimensions.reduce((s, d) => s + d.weight, 0);
+  const weightedSum = dimensions.reduce((s, d) => s + d.weight * d.score, 0);
+  const breakdown = dimensions.map((d) => ({ ...d, weighted: d.weight * d.score / totalWeight }));
+  return { overall: totalWeight > 0 ? weightedSum / totalWeight : 0, breakdown: dimensions };
+}
+const qualityDims: QualityDimension[] = [
+  { name: "Reliability", weight: 30, score: 85 },
+  { name: "Performance", weight: 25, score: 72 },
+  { name: "Security", weight: 25, score: 90 },
+  { name: "Maintainability", weight: 20, score: 78 },
+];
+console.log(calculateQualityIndex(qualityDims));
+
+// === Defect Density Analyzer ===
+function defectDensity(defects: number, kloc: number): { density: number; severity: "low" | "medium" | "high" } {
+  const density = kloc > 0 ? defects / kloc : 0;
+  const severity = density < 5 ? "low" : density < 15 ? "medium" : "high";
+  return { density: Math.round(density * 100) / 100, severity };
+}
+console.log(defectDensity(42, 10)); // 4.2 defects/KLOC
+
+// === Quality Gate Checker ===
+interface QualityGate {
+  metric: string;
+  operator: ">" | ">=" | "<" | "<=" | "==";
+  threshold: number;
+}
+function checkGates(gates: QualityGate[], measurements: Record<string, number>): { passed: boolean; failures: string[] } {
+  const failures: string[] = [];
+  for (const gate of gates) {
+    const value = measurements[gate.metric];
+    if (value === undefined) { failures.push(`${gate.metric}: not measured`); continue; }
+    const pass = gate.operator === ">" ? value > gate.threshold
+      : gate.operator === ">=" ? value >= gate.threshold
+      : gate.operator === "<" ? value < gate.threshold
+      : gate.operator === "<=" ? value <= gate.threshold
+      : value === gate.threshold;
+    if (!pass) failures.push(`${gate.metric}: ${value} ${gate.operator} ${gate.threshold} failed`);
+  }
+  return { passed: failures.length === 0, failures };
+}
+const gates: QualityGate[] = [
+  { metric: "testCoverage", operator: ">=", threshold: 80 },
+  { metric: "complexity", operator: "<=", threshold: 15 },
+  { metric: "duplications", operator: "<", threshold: 5 },
+];
+const measurements = { testCoverage: 85, complexity: 12, duplications: 3 };
+console.log(checkGates(gates, measurements)); // passed: true
+
+// === SPC Control Chart Calculator ===
+interface ControlLimits {
+  mean: number;
+  upper: number;
+  lower: number;
+}
+function calculateControlLimits(values: number[]): ControlLimits {
+  const mean = values.reduce((s, v) => s + v, 0) / values.length;
+  const std = Math.sqrt(values.reduce((s, v) => s + (v - mean) ** 2, 0) / values.length);
+  return { mean: Math.round(mean * 100) / 100, upper: Math.round((mean + 3 * std) * 100) / 100, lower: Math.round(Math.max(0, mean - 3 * std) * 100) / 100 };
+}
+const sprintVelocities = [30, 32, 28, 35, 29, 31, 33, 27];
+console.log(calculateControlLimits(sprintVelocities));
+
+// === Fagan Inspection Calculator ===
+function faganEfficiency(defectsFound: number, totalDefects: number, preparationHours: number, meetingHours: number): { detectionRate: number; costPerDefect: number } {
+  return {
+    detectionRate: totalDefects > 0 ? defectsFound / totalDefects : 0,
+    costPerDefect: defectsFound > 0 ? (preparationHours + meetingHours) / defectsFound : 0,
+  };
+}
+console.log(faganEfficiency(8, 12, 4, 2));
+
+// === CMMI Maturity Checker ===
+type CMMILevel = 1 | 2 | 3 | 4 | 5;
+const cmmiPractices: Record<CMMILevel, string[]> = {
+  1: ["Basic project management", "Ad hoc processes"],
+  2: ["Requirements management", "Project planning", "Project monitoring", "Configuration management"],
+  3: ["Requirements development", "Technical solution", "Product integration", "Verification", "Validation", "Organisational process focus"],
+  4: ["Organisational process performance", "Quantitative project management"],
+  5: ["Organisational performance management", "Causal analysis and resolution"],
+};
+function checkCMMILevel(implemented: string[]): CMMILevel {
+  for (let level = 5; level >= 2; level--) {
+    const practices = cmmiPractices[level as CMMILevel];
+    if (practices.every((p) => implemented.some((i) => i.includes(p)))) return level as CMMILevel;
+  }
+  return 1;
+}
+const orgPractices = ["Requirements management", "Project planning", "Project monitoring", "Configuration management", "Technical solution"];
+console.log(`CMMI Level: ${checkCMMILevel(orgPractices)}`); // 2
 ```
 
 ## Summary

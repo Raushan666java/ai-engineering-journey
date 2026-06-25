@@ -708,6 +708,202 @@ function shuffle<T>(arr: T[]): T[] {
 }
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === List Operation Stats Tracker ===
+class ListStats<T> {
+  private pushes = 0; private pops = 0; private shifts = 0; private unshifts = 0;
+  push(...items: T[]): number {
+    this.pushes += items.length;
+    return items.length;
+  }
+  pop(): T | undefined { this.pops++; return undefined; }
+  shift(): T | undefined { this.shifts++; return undefined; }
+  unshift(...items: T[]): number { this.unshifts += items.length; return items.length; }
+  report(): Record<string, number> {
+    return { pushes: this.pushes, pops: this.pops, shifts: this.shifts, unshifts: this.unshifts };
+  }
+}
+const tracker = new ListStats<number>();
+tracker.push(1, 2, 3);
+tracker.pop();
+console.log(tracker.report());
+
+// === Sort Comparator Generator ===
+type CompareFn<T> = (a: T, b: T) => number;
+function byField<T>(field: keyof T, desc = false): CompareFn<T> {
+  return (a, b) => (a[field] < b[field] ? -1 : a[field] > b[field] ? 1 : 0) * (desc ? -1 : 1);
+}
+function byMultiple<T>(...fns: CompareFn<T>[]): CompareFn<T> {
+  return (a, b) => { for (const fn of fns) { const r = fn(a, b); if (r !== 0) return r; } return 0; };
+}
+const users = [{ name: "Alice", age: 30 }, { name: "Bob", age: 25 }, { name: "Alice", age: 20 }];
+users.sort(byMultiple(byField("name"), byField("age")));
+console.log(users);
+
+// === Chunk / Partition ===
+function chunk<T>(arr: T[], size: number): T[][] {
+  const result: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) result.push(arr.slice(i, i + size));
+  return result;
+}
+function partition<T>(arr: T[], pred: (x: T) => boolean): [T[], T[]] {
+  return arr.reduce(([a, b], x) => (pred(x) ? [a.concat(x), b] : [a, b.concat(x)]), [[] as T[], [] as T[]]);
+}
+console.log(chunk([1, 2, 3, 4, 5], 2));
+console.log(partition([1, 2, 3, 4, 5], (x) => x % 2 === 0));
+
+// === Deduplicate ===
+function unique<T>(arr: T[]): T[] {
+  return [...new Set(arr)];
+}
+console.log(unique([1, 2, 2, 3, 1, 4]));
+
+// === Flatten (Python list flatten) ===
+function flatten<T>(arr: (T | T[])[]): T[] {
+  return arr.reduce<T[]>((acc, x) => acc.concat(Array.isArray(x) ? flatten(x) : x), []);
+}
+console.log(flatten([1, [2, [3, 4]], 5]));
+```
+
+### TypeScript Advanced Array Patterns
+
+```typescript
+// === Immutable List Operations ===
+function push<T>(arr: readonly T[], item: T): T[] { return [...arr, item]; }
+function pop<T>(arr: readonly T[]): { item: T | undefined; rest: T[] } {
+  return { item: arr[arr.length - 1], rest: arr.slice(0, -1) };
+}
+function removeAt<T>(arr: readonly T[], idx: number): T[] {
+  return [...arr.slice(0, idx), ...arr.slice(idx + 1)];
+}
+function updateAt<T>(arr: readonly T[], idx: number, val: T): T[] {
+  return idx < 0 || idx >= arr.length ? [...arr] : Object.assign([...arr], { [idx]: val });
+}
+const base = [1, 2, 3, 4, 5];
+console.log(push(base, 6));      // [1,2,3,4,5,6]
+console.log(pop(base));           // { item: 5, rest: [1,2,3,4] }
+console.log(removeAt(base, 2));   // [1,2,4,5]
+console.log(base);                // [1,2,3,4,5] (unchanged)
+
+// === Python-style Slice ===
+function slice<T>(arr: T[], start = 0, end = arr.length, step = 1): T[] {
+  const result: T[] = [];
+  if (step > 0) {
+    for (let i = start; i < end && i < arr.length; i += step) result.push(arr[i]);
+  } else {
+    for (let i = start; i > end && i >= 0; i += step) result.push(arr[i]);
+  }
+  return result;
+}
+const items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(slice(items, 2, 7));       // [2,3,4,5,6]
+console.log(slice(items, 0, 10, 2));   // [0,2,4,6,8]
+
+// === Python-style Array Methods ===
+function enumerate<T>(arr: T[]): [number, T][] { return arr.map((v, i) => [i, v]); }
+function zip<T, U>(a: T[], b: U[]): [T, U][] { return a.slice(0, Math.min(a.length, b.length)).map((v, i) => [v, b[i]]); }
+function chunk<T>(arr: T[], size: number): T[][] {
+  const result: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) result.push(arr.slice(i, i + size));
+  return result;
+}
+console.log(enumerate(["a","b","c"]));
+console.log(chunk([1,2,3,4,5,6,7], 3));
+
+// === Binary Search ===
+function binarySearch<T>(arr: T[], target: T): number {
+  let lo = 0, hi = arr.length - 1;
+  while (lo <= hi) {
+    const mid = (lo + hi) >>> 1;
+    if (arr[mid] === target) return mid;
+    if (arr[mid] < target) lo = mid + 1;
+    else hi = mid - 1;
+  }
+  return -lo - 1;
+}
+console.log(binarySearch([1, 3, 5, 7, 9], 5));
+
+// === Performance Benchmark ===
+function benchListOps(size = 50000): Record<string, number> {
+  const arr: number[] = [];
+  const t1 = performance.now();
+  for (let i = 0; i < size; i++) arr.push(i);
+  const t2 = performance.now();
+  for (let i = 0; i < size; i++) arr[i] = i * 2;
+  const t3 = performance.now();
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) sum += arr[i];
+  const t4 = performance.now();
+  let sum2 = 0;
+  for (const v of arr) sum2 += v;
+  const t5 = performance.now();
+  return { pushMs: +(t2-t1).toFixed(2), indexLoopMs: +(t4-t3).toFixed(2), forOfMs: +(t5-t4).toFixed(2) };
+}
+console.log(benchListOps());
+```
+
+### TypeScript Array Transform & Pipeline Patterns
+
+```typescript
+// === Array Monad (flatMap/bind) ===
+class ArrayMonad<T> {
+  constructor(private items: T[]) {}
+  map<R>(fn: (x: T) => R): ArrayMonad<R> { return new ArrayMonad(this.items.map(fn)); }
+  flatMap<R>(fn: (x: T) => R[]): ArrayMonad<R> { return new ArrayMonad(this.items.flatMap(fn)); }
+  filter(pred: (x: T) => boolean): ArrayMonad<T> { return new ArrayMonad(this.items.filter(pred)); }
+  reduce<R>(fn: (acc: R, x: T) => R, init: R): R { return this.items.reduce(fn, init); }
+  toArray(): T[] { return [...this.items]; }
+  static of<T>(...items: T[]): ArrayMonad<T> { return new ArrayMonad(items); }
+}
+const pipeResult = ArrayMonad.of(1, 2, 3, 4, 5)
+  .filter(x => x % 2 === 0)
+  .flatMap(x => [x, x * 10])
+  .map(x => `#${x}`);
+console.log(pipeResult.toArray()); // ["#2", "#20", "#4", "#40"]
+
+// === Partition & Group By ===
+function partition<T>(arr: T[], pred: (x: T) => boolean): [T[], T[]] {
+  const pass: T[] = [], fail: T[] = [];
+  for (const item of arr) (pred(item) ? pass : fail).push(item);
+  return [pass, fail];
+}
+function groupBy<T, K>(arr: T[], keyFn: (x: T) => K): Map<K, T[]> {
+  const map = new Map<K, T[]>();
+  for (const item of arr) {
+    const key = keyFn(item);
+    if (!map.has(key)) map.set(key, []);
+    map.get(key)!.push(item);
+  }
+  return map;
+}
+
+// === Window/Sliding Operations ===
+function slidingWindow<T>(arr: T[], windowSize: number): T[][] {
+  const result: T[][] = [];
+  for (let i = 0; i <= arr.length - windowSize; i++) result.push(arr.slice(i, i + windowSize));
+  return result;
+}
+function movingAverage(data: number[], window: number): number[] {
+  return slidingWindow(data, window).map(w => w.reduce((a, b) => a + b, 0) / window);
+}
+
+// === Zip & Unzip ===
+function zip2<A, B>(a: A[], b: B[]): [A, B][] { return a.map((x, i) => [x, b[i]]); }
+function zip3<A, B, C>(a: A[], b: B[], c: C[]): [A, B, C][] { return a.map((x, i) => [x, b[i], c[i]]); }
+function unzip<A, B>(pairs: [A, B][]): [A[], B[]] { return pairs.reduce(([a, b], [x, y]) => [a.concat(x), b.concat(y)], [[] as A[], [] as B[]]); }
+
+// === List Rotation ===
+function rotateLeft<T>(arr: T[], n: number): T[] { const i = n % arr.length; return [...arr.slice(i), ...arr.slice(0, i)]; }
+function rotateRight<T>(arr: T[], n: number): T[] { return rotateLeft(arr, arr.length - (n % arr.length)); }
+
+console.log(partition([1, 2, 3, 4, 5], x => x > 3)); // [[4, 5], [1, 2, 3]]
+console.log(movingAverage([1, 2, 3, 4, 5], 3)); // [2, 3, 4]
+console.log(rotateLeft([1, 2, 3, 4, 5], 2)); // [3, 4, 5, 1, 2]
+console.log(zip2(["a", "b", "c"], [1, 2, 3])); // [["a", 1], ["b", 2], ["c", 3]]
+```
+
 ## Summary
 
 - Lists are ordered, mutable, and heterogeneous.

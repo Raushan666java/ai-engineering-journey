@@ -531,6 +531,117 @@ console.log(HaltingProblem.proveUndecidable().join("\n"));
 console.log(HaltingProblem.riceTheorem().join("\n"));
 ```
 
+// ─────────────────────────────────────────────────────
+// Halting Problem Reduction Mapper
+// Maps a given decision problem to a known undecidable
+// problem (the Halting Problem) to prove undecidability.
+// ─────────────────────────────────────────────────────
+
+class ReductionMapper {
+  // Map any problem P to HALT by constructing a TM that
+  // simulates P's solver and then does something detectable.
+  static mapToHalting(problemName: string, description: string): string[] {
+    return [
+      `Reduction: ${problemName} ≤ₘ HALT`,
+      "",
+      `Problem: ${problemName}`,
+      `  ${description}`,
+      "",
+      "Construction:",
+      `  Given an instance I of ${problemName}, we construct`,
+      "  a Turing machine M that:",
+      "    1. Reads input x",
+      "    2. Simulates the solver for the original problem on I",
+      "    3. If the solver accepts, M enters an infinite loop",
+      "    4. If the solver rejects, M halts",
+      "",
+      "Correctness:",
+      `  I ∈ ${problemName}  ⇒  M loops forever on x  ⇒  ⟨M, x⟩ ∉ HALT`,
+      `  I ∉ ${problemName}  ⇒  M halts on x        ⇒  ⟨M, x⟩ ∈ HALT`,
+      "",
+      "Since HALT is undecidable, so is",
+      `  ${problemName}.`
+    ];
+  }
+
+  // Classic undecidable problems with their HALT reductions
+  static classicReductions(): Map<string, string> {
+    const m = new Map<string, string>();
+    m.set("A_TM (TM Acceptance)",
+      "Given ⟨M, w⟩, does TM M accept input w?");
+    m.set("EMPTY_TM (TM Emptiness)",
+      "Given TM M, does L(M) = ∅?");
+    m.set("EQ_TM (TM Equivalence)",
+      "Given TMs M₁, M₂, do they recognize the same language?");
+    m.set("REGULAR_TM (Regularity of TM languages)",
+      "Given TM M, is L(M) regular?");
+    m.set("PCP (Post Correspondence Problem)",
+      "Given dominoes, can we arrange them with matching top/bottom?");
+    m.set("TOT_TM (Totality/Universality)",
+      "Given TM M, does M halt on every input?");
+    return m;
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Decision Problem Decidability Classifier
+// Given a problem description, classifies it as
+// Decidable / Undecidable (RE) / Undecidable (non-RE)
+// based on known results.
+// ─────────────────────────────────────────────────────
+
+class DecidabilityClassifier {
+  // Known classifications
+  private static readonly knownResults = new Map<string, string>([
+    ["DFA membership", "Decidable"],
+    ["DFA emptiness", "Decidable"],
+    ["DFA equivalence", "Decidable"],
+    ["NFA membership", "Decidable"],
+    ["CFG membership", "Decidable (CYK algorithm)"],
+    ["CFG emptiness", "Decidable"],
+    ["CFG ambiguity", "Undecidable"],
+    ["PDA membership", "Decidable"],
+    ["PDA equivalence", "Undecidable"],
+    ["CFL ambiguity", "Undecidable"],
+    ["CFL equivalence", "Undecidable"],
+    ["TM membership", "Undecidable (RE)"],
+    ["TM emptiness", "Undecidable (non-RE)"],
+    ["TM equivalence", "Undecidable (non-RE)"],
+    ["TM regularity", "Undecidable (non-RE)"],
+    ["TM halting", "Undecidable (RE)"],
+    ["TM totality", "Undecidable (non-RE)"],
+    ["PCP", "Undecidable"],
+    ["Hilbert's 10th", "Undecidable"],
+    ["Word problem for groups", "Undecidable"],
+    ["Mortal matrix problem", "Undecidable"],
+  ]);
+
+  static classify(problem: string): string {
+    return this.knownResults.get(problem) || "Unknown — research frontier";
+  }
+
+  static table(): string[] {
+    const output: string[] = [];
+    output.push("Decision Problem Decidability Table");
+    output.push("=".repeat(55));
+    output.push("Problem".padEnd(30) + "Classification");
+    output.push("-".repeat(55));
+
+    for (const [problem, classification] of this.knownResults) {
+      output.push(`${problem.padEnd(30)} ${classification}`);
+    }
+
+    return output;
+  }
+}
+
+// Demo
+console.log(ReductionMapper.mapToHalting("CFG_AMBIGUITY",
+  "Does a given context-free grammar have more than one parse tree for some string?").join("\n"));
+console.log("");
+console.log(DecidabilityClassifier.table().join("\n"));
+```
+
 ## Summary
 
 - The halting problem (does TM M halt on w?) is undecidable — proved via diagonalization.

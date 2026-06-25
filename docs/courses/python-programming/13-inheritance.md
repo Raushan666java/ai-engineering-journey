@@ -716,6 +716,274 @@ function handle(shape: unknown): void {
 // TypeScript: single inheritance chain — no MRO complexities
 ```
 
+### TypeScript Utilities
+
+```typescript
+// === Diamond Problem Detector ===
+interface InheritanceNode {
+  name: string;
+  parents: string[];
+}
+function detectDiamond(graph: InheritanceNode[]): string[][] {
+  const diamonds: string[][] = [];
+  const nameMap = new Map(graph.map((n) => [n.name, n]));
+  for (const node of graph) {
+    if (node.parents.length < 2) continue;
+    for (let i = 0; i < node.parents.length; i++) {
+      for (let j = i + 1; j < node.parents.length; j++) {
+        const ancestorsI = allAncestors(node.parents[i], nameMap);
+        const ancestorsJ = allAncestors(node.parents[j], nameMap);
+        const shared = ancestorsI.filter((a) => ancestorsJ.includes(a));
+        for (const s of shared) diamonds.push([node.name, node.parents[i], node.parents[j], s]);
+      }
+    }
+  }
+  return diamonds;
+}
+function allAncestors(name: string, map: Map<string, InheritanceNode>): string[] {
+  const result: string[] = [];
+  const queue = [name];
+  while (queue.length > 0) {
+    const current = queue.shift()!;
+    if (current !== name) result.push(current);
+    const node = map.get(current);
+    if (node) queue.push(...node.parents);
+  }
+  return result;
+}
+console.log(detectDiamond([
+  { name: "D", parents: ["B", "C"] },
+  { name: "B", parents: ["A"] },
+  { name: "C", parents: ["A"] },
+]));
+
+// === Abstract Class Implementer ===
+abstract class AbstractTemplate {
+  abstract step1(): void;
+  abstract step2(): void;
+  execute(): void { this.step1(); this.step2(); }
+}
+class ConcreteImpl extends AbstractTemplate {
+  step1(): void { console.log("Step 1 done"); }
+  step2(): void { console.log("Step 2 done"); }
+}
+new ConcreteImpl().execute();
+
+// === Mixin Combiner ===
+type Ctor<T = {}> = new (...args: any[]) => T;
+function Timestamped2<TBase extends Ctor>(Base: TBase) {
+  return class extends Base { createdAt = new Date(); updatedAt = new Date(); };
+}
+function Named2<TBase extends Ctor>(Base: TBase) {
+  return class extends Base { name = "Unnamed"; setName(n: string): void { this.name = n; } };
+}
+class Empty {}
+const TimestampedNamed = Timestamped2(Named2(Empty));
+const obj = new TimestampedNamed();
+console.log(obj.createdAt, obj.name);
+
+// === Instanceof Pattern (Python isinstance equivalent) ===
+class Animal {}
+class Dog extends Animal { bark(): string { return "Woof!"; } }
+class Cat extends Animal { meow(): string { return "Meow!"; } }
+function handleAnimal(a: Animal): string {
+  if (a instanceof Dog) return a.bark();
+  if (a instanceof Cat) return a.meow();
+  return "Unknown animal";
+}
+console.log(handleAnimal(new Dog()));   // Woof!
+console.log(handleAnimal(new Cat()));   // Meow!
+
+// === Property Override Check ===
+class Shape { readonly kind = "shape"; }
+class Circle2 extends Shape { readonly kind = "circle"; }
+console.log(new Circle2().kind); // "circle"
+```
+
+### TypeScript Inheritance & Composition Patterns
+
+```typescript
+// === Class Inheritance (Python: class Child(Parent)) ===
+class Animal {
+  constructor(public name: string) {}
+  speak(): string { return `${this.name} makes a sound`; }
+}
+class Dog extends Animal {
+  constructor(name: string, public breed: string) {
+    super(name); // Python: super().__init__(name)
+  }
+  speak(): string { return `${this.name} barks`; }  // Override
+  fetch(): string { return `${this.name} fetches`; }
+}
+const dog = new Dog("Rex", "Labrador");
+console.log(dog.speak());   // Rex barks
+console.log(dog.fetch());   // Rex fetches
+
+// === Method Override with super ===
+class BaseLogger {
+  log(level: string, msg: string): void { console.log(`[${level}] ${msg}`); }
+}
+class DetailedLogger extends BaseLogger {
+  log(level: string, msg: string): void {
+    super.log(level, msg); // Python: super().log(level, msg)
+    console.log(`Timestamp: ${new Date().toISOString()}`);
+  }
+}
+
+// === Protected Members ===
+class Vehicle {
+  constructor(protected speed: number) {}
+  accelerate(amount: number): void { this.speed += amount; }
+}
+class Car extends Vehicle {
+  constructor(speed: number, private fuel: number) { super(speed); }
+  boost(): void {
+    super.accelerate(50); // Access parent method
+    this.fuel -= 10;      // Access own member
+  }
+  getSpeed(): number { return this.speed; } // Access protected member
+}
+
+// === Composition over Inheritance ===
+interface Engine { start(): string; stop(): string; }
+class ElectricEngine implements Engine {
+  start(): string { return "Electric motor whirring"; }
+  stop(): string { return "Motor silent"; }
+}
+class CombustionEngine implements Engine {
+  start(): string { return "Engine roaring"; }
+  stop(): string { return "Engine sputtering"; }
+}
+class Car2 {
+  constructor(private engine: Engine, private model: string) {}
+  start(): string { return `${this.model}: ${this.engine.start()}`; }
+  stop(): string { return `${this.model}: ${this.engine.stop()}`; }
+}
+const ev = new Car2(new ElectricEngine(), "Tesla");
+console.log(ev.start());
+
+// === Mixins (Python: multiple inheritance) ===
+type Constructor<T = {}> = new (...args: any[]) => T;
+function Timestamped<T extends Constructor>(Base: T) {
+  return class extends Base {
+    timestamp = new Date();
+    getAge(): number { return Date.now() - this.timestamp.getTime(); }
+  };
+}
+function Loggable<T extends Constructor>(Base: T) {
+  return class extends Base {
+    log(msg: string): void { console.log(`[${new Date().toISOString()}] ${msg}`); }
+  };
+}
+class SimpleService { constructor(public name: string) {} }
+const EnhancedService = Timestamped(Loggable(SimpleService));
+const service = new EnhancedService("MyApp");
+service.log("Service started");
+
+// === Interface Extension ===
+interface Basic { name: string; }
+interface Detailed extends Basic { age: number; email?: string; }
+const user: Detailed = { name: "Alice", age: 30 };
+```
+
+### TypeScript Advanced Type Relationships
+
+```typescript
+// === F-bounded Polymorphism (Python: Self) ===
+interface Comparable<T> { compareTo(other: T): number; }
+class NumericValue implements Comparable<NumericValue> {
+  constructor(public value: number) {}
+  compareTo(other: NumericValue): number { return this.value - other.value; }
+}
+
+// === Visitor Pattern (Python: singledispatch alternative) ===
+interface Visitable { accept(visitor: Visitor): string; }
+interface Visitor {
+  visitCircle(c: Circle2): string;
+  visitSquare(s: Square2): string;
+}
+class Circle2 implements Visitable {
+  constructor(public radius: number) {}
+  accept(visitor: Visitor): string { return visitor.visitCircle(this); }
+}
+class Square2 implements Visitable {
+  constructor(public side: number) {}
+  accept(visitor: Visitor): string { return visitor.visitSquare(this); }
+}
+class AreaVisitor implements Visitor {
+  visitCircle(c: Circle2): string { return `Circle area: ${Math.PI * c.radius ** 2}`; }
+  visitSquare(s: Square2): string { return `Square area: ${s.side ** 2}`; }
+}
+
+// === Phantom Type (Python: type hints without runtime effect) ===
+class Phantom<Tag extends string> {
+  constructor(public value: string) {}
+  static create<T extends string>(val: string): Phantom<T> { return new Phantom<T>(val); }
+}
+type Meters = Phantom<"meters">;
+type Feet = Phantom<"feet">;
+function convertToFeet(m: Meters): Feet { const val = parseFloat(m.value) * 3.281; return Phantom.create<"feet">(val.toFixed(2)); }
+
+// === Type-safe Builder with Inheritance ===
+abstract class Builder<T> {
+  protected config: Partial<T> = {};
+  abstract build(): T;
+}
+class CarBuilder extends Builder<{ engine: string; wheels: number; color: string }> {
+  setEngine(engine: string): this { this.config.engine = engine; return this; }
+  setWheels(n: number): this { this.config.wheels = n; return this; }
+  setColor(color: string): this { this.config.color = color; return this; }
+  build(): { engine: string; wheels: number; color: string } {
+    if (!this.config.engine || !this.config.wheels || !this.config.color) throw new Error("Missing config");
+    return this.config as any;
+  }
+}
+
+// === Dependent Types via Declaration Merging ===
+interface User { name: string; age?: number; }
+declare module "./user" {
+  interface User { email?: string; }
+}
+
+// === Template Method Pattern ===
+abstract class DataProcessor {
+  process(): string[] {
+    const data = this.loadData();
+    const cleaned = this.cleanData(data);
+    const transformed = this.transformData(cleaned);
+    return this.outputData(transformed);
+  }
+  protected abstract loadData(): string[];
+  protected cleanData(data: string[]): string[] { return data.filter(x => x.trim().length > 0); }
+  protected abstract transformData(data: string[]): string[];
+  protected outputData(data: string[]): string[] { return data.map(x => x.toUpperCase()); }
+}
+class CSVProcessor extends DataProcessor {
+  protected loadData(): string[] { return ["a", "b", "c"]; }
+  protected transformData(data: string[]): string[] { return data.map(x => `${x}_processed`); }
+}
+
+// === Polymorphic Serialization ===
+interface Serializable { serialize(): string; }
+abstract class Entity implements Serializable {
+  constructor(public id: number) {}
+  abstract serialize(): string;
+  static deserialize<T extends Entity>(this: new (...args: any[]) => T, data: string): T {
+    return JSON.parse(data);
+  }
+}
+
+const shapes: Visitable[] = [new Circle2(5), new Square2(4)];
+const visitor = new AreaVisitor();
+shapes.forEach(s => console.log(s.accept(visitor)));
+
+const car = new CarBuilder().setEngine("V8").setWheels(4).setColor("red").build();
+console.log(car); // { engine: "V8", wheels: 4, color: "red" }
+
+const csvProc = new CSVProcessor();
+console.log(csvProc.process()); // ["A_PROCESSED", "B_PROCESSED", "C_PROCESSED"]
+```
+
 ## Summary
 
 - `super()` delegates to the next class in the MRO.

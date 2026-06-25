@@ -700,6 +700,64 @@ console.log("Viable DR strategies:", viable.map((s) => s.name).join(", "));
 console.log("5-year TCO:", JSON.stringify(dr.tcoOverYears("Pilot Light", 5), null, 2));
 ```
 
+### TypeScript: HA Score Calculator & Migration Planner
+
+```typescript
+interface ComponentScore { name: string; tier: "web" | "app" | "data"; multiAZ: boolean; autoScaling: boolean; healthChecks: boolean; backupConfigured: boolean; }
+
+class HAScoreCalculator {
+  calculate(components: ComponentScore[]): { overall: number; breakdown: { component: string; score: number; }[] } {
+    const breakdown = components.map(c => {
+      let score = 0;
+      if (c.multiAZ) score += 30;
+      if (c.autoScaling) score += 25;
+      if (c.healthChecks) score += 20;
+      if (c.backupConfigured) score += 25;
+      if (c.tier === "data") score = Math.min(score, 90); // data tier can't be 100%
+      return { component: c.name, score: Math.min(100, score) };
+    });
+    const overall = Math.round(breakdown.reduce((a, b) => a + b.score, 0) / breakdown.length);
+    return { overall, breakdown };
+  }
+
+  recommendForRTO(rtoMinutes: number): string {
+    if (rtoMinutes <= 1) return "Multi-region Active/Active";
+    if (rtoMinutes <= 15) return "Warm Standby / Pilot Light";
+    if (rtoMinutes <= 60) return "Backup & Restore with automated recovery";
+    return "Backup & Restore";
+  }
+}
+
+class MigrationPlanner {
+  plan(apps: { name: string; complexity: "low" | "medium" | "high"; dependencyCount: number }[]): { phase: string; apps: string[]; estimatedWeeks: number }[] {
+    const sorted = [...apps].sort((a, b) => a.complexity === "low" ? -1 : a.complexity === "medium" ? 0 : 1);
+    const phases = [
+      { phase: "Quick Wins (Rehost)", apps: sorted.filter(a => a.complexity === "low").map(a => a.name), weeks: 2 },
+      { phase: "Replatform", apps: sorted.filter(a => a.complexity === "medium").map(a => a.name), weeks: 6 },
+      { phase: "Refactor", apps: sorted.filter(a => a.complexity === "high").map(a => a.name), weeks: 12 },
+    ];
+    return phases.filter(p => p.apps.length > 0);
+  }
+}
+
+const ha = new HAScoreCalculator();
+const haScore = ha.calculate([
+  { name: "ALB", tier: "web", multiAZ: true, autoScaling: false, healthChecks: true, backupConfigured: false },
+  { name: "ECS Service", tier: "app", multiAZ: true, autoScaling: true, healthChecks: true, backupConfigured: false },
+  { name: "RDS", tier: "data", multiAZ: true, autoScaling: false, healthChecks: true, backupConfigured: true },
+]);
+console.log("HA Score:", haScore.overall, "%", "- RTO recommendation:", ha.recommendForRTO(15));
+
+const mp = new MigrationPlanner();
+const plan = mp.plan([
+  { name: "web-app", complexity: "low", dependencyCount: 1 },
+  { name: "legacy-db", complexity: "high", dependencyCount: 8 },
+  { name: "api-gateway", complexity: "medium", dependencyCount: 3 },
+]);
+console.log("Migration phases:", JSON.stringify(plan, null, 2));
+```
+```
+
 ## Summary
 
 - The Well-Architected Framework has 6 pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.

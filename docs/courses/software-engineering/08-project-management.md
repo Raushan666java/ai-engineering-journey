@@ -594,6 +594,188 @@ function pertRange(input: PERTInput, confidence = 0.95): { low: number; high: nu
 }
 ```
 
+### TypeScript: Project Management Tools
+
+```typescript
+// === Resource Leveler ===
+interface Task {
+  id: string;
+  name: string;
+  effortDays: number;
+  dependencies: string[];
+  assigned?: string;
+}
+function levelResources(tasks: Task[], maxParallel = 3): { scheduled: Map<string, number>; duration: number } {
+  const scheduled = new Map<string, number>();
+  const endTimes = new Map<string, number>();
+  let currentTime = 0;
+  let inProgress = 0;
+  const sorted = [...tasks];
+  let remaining = [...sorted];
+  let day = 0;
+  while (remaining.length > 0) {
+    const available = remaining.filter((t) => t.dependencies.every((d) => endTimes.has(d) && endTimes.get(d)! <= day));
+    const toStart = available.slice(0, maxParallel - inProgress);
+    for (const t of toStart) { scheduled.set(t.id, day); endTimes.set(t.id, day + t.effortDays); inProgress++; }
+    remaining = remaining.filter((t) => !toStart.includes(t));
+    day++;
+    inProgress = 0;
+    for (const [id, end] of endTimes) if (end <= day) inProgress++;
+  }
+  return { scheduled, duration: Math.max(...endTimes.values()) };
+}
+const projectTasks: Task[] = [
+  { id: "A", name: "Requirements", effortDays: 5, dependencies: [] },
+  { id: "B", name: "Design", effortDays: 4, dependencies: ["A"] },
+  { id: "C", name: "Frontend", effortDays: 8, dependencies: ["B"] },
+  { id: "D", name: "Backend", effortDays: 8, dependencies: ["B"] },
+  { id: "E", name: "Testing", effortDays: 3, dependencies: ["C", "D"] },
+];
+const leveled = levelResources(projectTasks, 2);
+console.log(`Duration: ${leveled.duration} days`);
+
+// === Critical Path Method (CPM) ===
+function criticalPath(tasks: Task[]): { path: string[]; duration: number } {
+  const topo: Task[] = [];
+  const visited = new Set<string>();
+  function dfs(id: string): void {
+    if (visited.has(id)) return;
+    visited.add(id);
+    const task = tasks.find((t) => t.id === id)!;
+    for (const dep of task.dependencies) dfs(dep);
+    topo.push(task);
+  }
+  for (const t of tasks) dfs(t.id);
+  const es = new Map<string, number>();
+  const ef = new Map<string, number>();
+  for (const t of topo) {
+    const maxEs = Math.max(0, ...t.dependencies.map((d) => ef.get(d) ?? 0));
+    es.set(t.id, maxEs);
+    ef.set(t.id, maxEs + t.effortDays);
+  }
+  // Backward pass for critical path
+  const projectEnd = Math.max(...ef.values());
+  const ls = new Map<string, number>();
+  const lf = new Map<string, number>();
+  for (const t of [...topo].reverse()) {
+    const minLf = Math.min(projectEnd, ...tasks.filter((x) => x.dependencies.includes(t.id)).map((x) => ls.get(x.id) ?? projectEnd));
+    lf.set(t.id, minLf);
+    ls.set(t.id, minLf - t.effortDays);
+  }
+  const critical = tasks.filter((t) => es.get(t.id) === ls.get(t.id));
+  return { path: critical.map((t) => t.id), duration: projectEnd };
+}
+console.log(criticalPath(projectTasks));
+
+// === Gantt Chart Data Generator ===
+function generateGantt(tasks: Task[]): Record<string, number[]> {
+  const result: Record<string, number[]> = {};
+  const endTimes = new Map<string, number>();
+  for (const t of tasks.sort((a, b) => a.dependencies.length - b.dependencies.length)) {
+    const start = Math.max(0, ...t.dependencies.map((d) => endTimes.get(d) ?? 0));
+    endTimes.set(t.id, start + t.effortDays);
+    result[t.id] = [start, start + t.effortDays];
+  }
+  return result;
+}
+console.log(generateGantt(projectTasks));
+
+// === EVM Analyzer ===
+interface EVMData { plannedValue: number; earnedValue: number; actualCost: number }
+function analyzeEVM(evm: EVMData): { pv: number; ev: number; ac: number; sv: number; cv: number; spi: number; cpi: number } {
+  return {
+    pv: evm.plannedValue, ev: evm.earnedValue, ac: evm.actualCost,
+    sv: evm.earnedValue - evm.plannedValue,
+    cv: evm.earnedValue - evm.actualCost,
+    spi: evm.plannedValue > 0 ? evm.earnedValue / evm.plannedValue : 0,
+    cpi: evm.actualCost > 0 ? evm.earnedValue / evm.actualCost : 0,
+  };
+}
+console.log(analyzeEVM({ plannedValue: 100000, earnedValue: 75000, actualCost: 80000 }));
+// sv=-25000 (behind), cv=-5000 (over budget), spi=0.75, cpi=0.94
+```
+
+### TypeScript: Project Management Analytics
+
+```typescript
+// === Earned Value Management Calculator ===
+interface EVMData { plannedValue: number; earnedValue: number; actualCost: number; }
+interface EVMReport { 
+  scheduleVariance: number; costVariance: number; schedulePerformanceIndex: number;
+  costPerformanceIndex: number; estimateAtCompletion: number; estimateToComplete: number;
+}
+function calculateEVM(data: EVMData): EVMReport {
+  const sv = data.earnedValue - data.plannedValue;
+  const cv = data.earnedValue - data.actualCost;
+  const spi = data.plannedValue > 0 ? data.earnedValue / data.plannedValue : 0;
+  const cpi = data.actualCost > 0 ? data.earnedValue / data.actualCost : 0;
+  return {
+    scheduleVariance: Math.round(sv * 100) / 100,
+    costVariance: Math.round(cv * 100) / 100,
+    schedulePerformanceIndex: Math.round(spi * 100) / 100,
+    costPerformanceIndex: Math.round(cpi * 100) / 100,
+    estimateAtCompletion: cpi > 0 ? Math.round(data.plannedValue / cpi * 100) / 100 : 0,
+    estimateToComplete: cpi > 0 ? Math.round((data.plannedValue - data.earnedValue) / cpi * 100) / 100 : 0,
+  };
+}
+
+// === Resource Leveling Algorithm ===
+interface Task { id: string; effort: number; dependencies: string[]; assigned?: string; }
+interface Resource { name: string; capacity: number; }
+function levelResources(tasks: Task[], resources: Resource[]): Map<string, string[]> {
+  const schedule = new Map<string, string[]>();
+  const resourceLoad = new Map<string, number>();
+  for (const r of resources) resourceLoad.set(r.name, 0);
+  
+  const sorted = [...tasks].sort((a, b) => b.effort - a.effort);
+  for (const task of sorted) {
+    let bestResource = resources[0].name;
+    let bestLoad = resourceLoad.get(bestResource)! + task.effort;
+    for (const r of resources) {
+      const load = resourceLoad.get(r.name)! + task.effort;
+      if (load < bestLoad) { bestLoad = load; bestResource = r.name; }
+    }
+    task.assigned = bestResource;
+    resourceLoad.set(bestResource, resourceLoad.get(bestResource)! + task.effort);
+    if (!schedule.has(bestResource)) schedule.set(bestResource, []);
+    schedule.get(bestResource)!.push(task.id);
+  }
+  return schedule;
+}
+
+// === Monte Carlo Schedule Simulator ===
+function simulateDuration(tasks: Task[], iterations = 1000): { min: number; max: number; avg: number; p50: number; p90: number } {
+  const durations: number[] = [];
+  for (let i = 0; i < iterations; i++) {
+    let total = 0;
+    for (const task of tasks) {
+      const variance = task.effort * 0.2;
+      const randomDuration = task.effort + (Math.random() - 0.5) * variance * 2;
+      total += randomDuration;
+    }
+    durations.push(total);
+  }
+  durations.sort((a, b) => a - b);
+  return {
+    min: Math.round(durations[0]),
+    max: Math.round(durations[durations.length - 1]),
+    avg: Math.round(durations.reduce((s, d) => s + d, 0) / durations.length),
+    p50: Math.round(durations[Math.floor(iterations * 0.5)]),
+    p90: Math.round(durations[Math.floor(iterations * 0.9)]),
+  };
+}
+
+const evm = calculateEVM({ plannedValue: 100000, earnedValue: 75000, actualCost: 80000 });
+console.log(evm); // SV: -25000, CV: -5000, SPI: 0.75
+
+const tasks: Task[] = [
+  { id: "T1", effort: 10, dependencies: [] },
+  { id: "T2", effort: 20, dependencies: ["T1"] },
+  { id: "T3", effort: 15, dependencies: ["T1"] },
+];
+console.log(simulateDuration(tasks, 100));
+```
+
 ## Summary
 
 Software project management addresses the challenges of planning, estimating, scheduling, and controlling software projects. The Work Breakdown Structure decomposes work into manageable units. Estimation techniques range from expert judgement to algorithmic models (function points, COCOMO II). Scheduling methods include Gantt charts for visualisation, PERT for uncertainty, and CPM for critical path analysis. Risk management identifies, analyses, and responds to potential problems. Earned Value Management integrates scope, scope, schedule, and cost into objective performance metrics. Team organisation patterns balance authority with collaboration. Effective project management is essential for delivering quality software on time and within budget.

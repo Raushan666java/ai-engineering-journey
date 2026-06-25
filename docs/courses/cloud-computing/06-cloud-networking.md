@@ -716,6 +716,51 @@ for (let i = 0; i < 100; i++) {
 console.log("Top talkers:", JSON.stringify(monitor.getTopTalkers(), null, 2));
 ```
 
+### TypeScript: Subnet Calculator & Peering Validator
+
+```typescript
+class SubnetCalculator {
+  calculate(cidr: string, subnetSize: number): { totalIPs: number; usableIPs: number; subnetMask: string; maxSubnets: number } {
+    const maskBits = 32 - Math.log2(subnetSize);
+    const [, prefix] = cidr.split("/");
+    const totalIPs = Math.pow(2, 32 - parseInt(prefix));
+    const usable = Math.max(0, subnetSize - 5); // AWS reserves 5 IPs per subnet
+    const maxSubnets = Math.floor(totalIPs / subnetSize);
+    return { totalIPs, usableIPs: usable, subnetMask: `${Math.ceil(maskBits)}`, maxSubnets };
+  }
+}
+
+class PeeringValidator {
+  validate(peerings: { vpcId: string; cidr: string; peerVpcId: string; peerCidr: string }[]): { valid: boolean; overlaps: { vpc1: string; vpc2: string; overlappingCIDR: string }[] } {
+    const overlaps: { vpc1: string; vpc2: string; overlappingCIDR: string }[] = [];
+    for (let i = 0; i < peerings.length; i++) {
+      for (let j = i + 1; j < peerings.length; j++) {
+        const [a1, b1] = peerings[i].cidr.split("/").map(Number);
+        const [a2, b2] = peerings[j].cidr.split("/").map(Number);
+        const minBits = Math.min(b1, b2);
+        const mask1 = a1 >>> (32 - minBits);
+        const mask2 = a2 >>> (32 - minBits);
+        if (mask1 === mask2) {
+          overlaps.push({ vpc1: peerings[i].vpcId, vpc2: peerings[j].vpcId, overlappingCIDR: `${Math.min(b1, b2)}-bit overlap` });
+        }
+      }
+    }
+    return { valid: overlaps.length === 0, overlaps };
+  }
+}
+
+const sc = new SubnetCalculator();
+console.log("Subnet (/20 → /24):", JSON.stringify(sc.calculate("10.0.0.0/20", 256)));
+
+const pv = new PeeringValidator();
+const result = pv.validate([
+  { vpcId: "vpc-1", cidr: "10.0.0.0/16", peerVpcId: "vpc-2", peerCidr: "10.0.0.0/24" },
+  { vpcId: "vpc-3", cidr: "10.1.0.0/16", peerVpcId: "vpc-4", peerCidr: "10.1.0.0/24" },
+]);
+console.log("Overlap check:", result.overlaps.length > 0 ? `Overlap detected: ${result.overlaps[0].vpc1} ↔ ${result.overlaps[0].vpc2}` : "No overlaps");
+```
+```
+
 ## Summary
 
 - VPCs isolate cloud resources within user-defined IP address ranges.

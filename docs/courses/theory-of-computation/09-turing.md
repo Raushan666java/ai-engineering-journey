@@ -517,6 +517,89 @@ console.log(palTM.simulate("1000"));   // rejected
 console.log(TuringMachine.haltChecker());
 ```
 
+// ─────────────────────────────────────────────────────
+// Busy Beaver Runner — simulates the classic Busy Beaver
+// Turing machine competition.  The Busy Beaver function
+// Σ(n) is the maximum number of 1s an n-state TM can
+// write before halting.  We demonstrate known winners.
+// ─────────────────────────────────────────────────────
+
+class BusyBeaverRunner {
+  // Run a Busy Beaver candidate TM and count steps / ones
+  static run(
+    transitions: Map<string, { write: string; direction: "L" | "R"; nextState: string }>,
+    maxSteps: number = 10000
+  ): { steps: number; ones: number; tape: Map<number, string>; halted: boolean } {
+    const tape = new Map<number, string>();
+    let head = 0;
+    let state = "A";
+    let steps = 0;
+
+    while (steps < maxSteps) {
+      const symbol = tape.get(head) || "0";
+      const key = `${state},${symbol}`;
+      const trans = transitions.get(key);
+
+      if (!trans) {
+        // No transition = halt
+        const ones = [...tape.values()].filter(v => v === "1").length;
+        return { steps, ones, tape: new Map(tape), halted: true };
+      }
+
+      tape.set(head, trans.write);
+      head += trans.direction === "R" ? 1 : -1;
+      state = trans.nextState;
+      steps++;
+    }
+
+    const ones = [...tape.values()].filter(v => v === "1").length;
+    return { steps, ones, tape: new Map(tape), halted: false };
+  }
+
+  // Known Busy Beaver winners for Σ(1) through Σ(4)
+  static knownWinners(): string[] {
+    return [
+      "Σ(1) = 1  (1-state champ writes a single 1)",
+      "Σ(2) = 4  (2-state champ writes 4 ones)",
+      "Σ(3) = 6  (3-state champ writes 6 ones)",
+      "Σ(4) = 13 (4-state champ writes 13 ones)",
+      "Σ(5) ≥ 4,098 (current record, not proven maximal)",
+      "Σ(6) ≥ 3.5×10¹⁶²⁶⁷ (astronomical — not maximal)",
+      "",
+      "Note: Σ(5) and beyond are mostly unknown; some candidates",
+      "are equivalent to the Collatz conjecture and may be",
+      "independent of ZFC set theory."
+    ];
+  }
+
+  // Run the Σ(2) champion
+  static runSigma2(): { steps: number; ones: number } {
+    const bb2Trans = new Map<string, { write: string; direction: "L" | "R"; nextState: string }>([
+      ["A,0", { write: "1", direction: "R", nextState: "B" }],
+      ["A,1", { write: "1", direction: "L", nextState: "B" }],
+      ["B,0", { write: "1", direction: "L", nextState: "A" }],
+      ["B,1", { write: "1", direction: "R", nextState: "HALT" }],
+    ]);
+    return BusyBeaverRunner.run(bb2Trans);
+  }
+}
+
+console.log(BusyBeaverRunner.knownWinners().join("\n"));
+console.log("");
+const sigma2 = BusyBeaverRunner.runSigma2();
+console.log(`Σ(2) champion: ${sigma2.ones} ones in ${sigma2.steps} steps`);
+
+// Render tape region with ones
+const tapeEntries = [...sigma2.tape.entries()].filter(([_, v]) => v === "1");
+const minPos = Math.min(...tapeEntries.map(([k]) => k));
+const maxPos = Math.max(...tapeEntries.map(([k]) => k));
+let tapeVis = "";
+for (let p = minPos; p <= maxPos; p++) {
+  tapeVis += sigma2.tape.get(p) || "0";
+}
+console.log(`Tape output: ${tapeVis}`);
+```
+
 ## Summary
 
 - Turing machines have infinite tape, read/write capability, and bidirectional head movement.

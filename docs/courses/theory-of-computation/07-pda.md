@@ -684,6 +684,120 @@ const cfgPDA = PDA.fromCFG({
 console.log(cfgPDA.states.size); // 3
 ```
 
+// ─────────────────────────────────────────────────────
+// Instantaneous Description (ID) Tracer
+// Records the full configuration sequence of a PDA
+// as it processes an input string: (state, remaining input, stack).
+// ─────────────────────────────────────────────────────
+
+class IDTracer {
+  private pda: {
+    states: Set<string>; inputAlphabet: Set<string>; stackAlphabet: Set<string>;
+    rules: Array<{ state: string; input: string; stackTop: string; nextState: string; stackOp: string }>;
+    startState: string; startStack: string; acceptStates: Set<string>;
+  };
+
+  constructor(pda: {
+    states: Set<string>; inputAlphabet: Set<string>; stackAlphabet: Set<string>;
+    rules: Array<{ state: string; input: string; stackTop: string; nextState: string; stackOp: string }>;
+    startState: string; startStack: string; acceptStates: Set<string>;
+  }) {
+    this.pda = pda;
+  }
+
+  // Trace all IDs (configurations) for a given input
+  trace(input: string): Array<{ state: string; remainingInput: string; stack: string[] }> {
+    const ids: Array<{ state: string; remainingInput: string; stack: string[] }> = [];
+    let currentState = this.pda.startState;
+    let remaining = input;
+    let stack = [this.pda.startStack];
+
+    ids.push({ state: currentState, remainingInput: remaining, stack: [...stack] });
+
+    let maxSteps = 1000;
+    while (remaining.length > 0 && maxSteps-- > 0) {
+      let matched = false;
+
+      // Try ε-transitions first (that don't consume input)
+      for (const rule of this.pda.rules) {
+        if (rule.state === currentState && rule.input === "ε") {
+          const top = stack[stack.length - 1];
+          if (rule.stackTop === top || rule.stackTop === "ε") {
+            if (rule.stackTop !== "ε" && rule.stackTop === top) stack.pop();
+            if (rule.stackOp !== "ε") {
+              for (const ch of rule.stackOp) stack.push(ch);
+            }
+            currentState = rule.nextState;
+            ids.push({ state: currentState, remainingInput: remaining, stack: [...stack] });
+            matched = true;
+            break;
+          }
+        }
+      }
+      if (matched) continue;
+
+      // Try consuming a character
+      const ch = remaining[0];
+      for (const rule of this.pda.rules) {
+        if (rule.state === currentState && rule.input === ch) {
+          const top = stack[stack.length - 1];
+          if (rule.stackTop === top || rule.stackTop === "ε") {
+            if (rule.stackTop !== "ε" && rule.stackTop === top) stack.pop();
+            if (rule.stackOp !== "ε") {
+              for (const c of rule.stackOp) stack.push(c);
+            }
+            currentState = rule.nextState;
+            remaining = remaining.slice(1);
+            ids.push({ state: currentState, remainingInput: remaining, stack: [...stack] });
+            matched = true;
+            break;
+          }
+        }
+      }
+      if (!matched) break; // stuck
+    }
+
+    return ids;
+  }
+
+  // Render the ID trace in human-readable format
+  renderTrace(input: string): string[] {
+    const ids = this.trace(input);
+    const output: string[] = [];
+    output.push(`ID Trace for input "${input}":`);
+    output.push("─".repeat(50));
+    for (let i = 0; i < ids.length; i++) {
+      const id = ids[i];
+      const stackStr = `[${id.stack.join("")}]`;
+      output.push(`ID ${i}: (${id.state}, ${id.remainingInput || "ε"}, ${stackStr})`);
+    }
+    output.push(`Final state: ${ids[ids.length - 1].state}`);
+    output.push(`Stack: ${ids[ids.length - 1].stack.join("")}`);
+    const accepted = this.pda.acceptStates.has(ids[ids.length - 1].state);
+    output.push(`Accepted: ${accepted}`);
+    return output;
+  }
+}
+
+// Demo: trace the balanced parentheses PDA
+const balancePDA = {
+  states: new Set(["q0", "q1", "q2"]),
+  inputAlphabet: new Set(["(", ")"]),
+  stackAlphabet: new Set(["Z", "X"]),
+  rules: [
+    { state: "q0", input: "ε", stackTop: "ε", nextState: "q1", stackOp: "Z" },
+    { state: "q1", input: "(", stackTop: "Z", nextState: "q1", stackOp: "XZ" },
+    { state: "q1", input: "(", stackTop: "X", nextState: "q1", stackOp: "XX" },
+    { state: "q1", input: ")", stackTop: "X", nextState: "q1", stackOp: "ε" },
+    { state: "q1", input: "ε", stackTop: "Z", nextState: "q2", stackOp: "ε" },
+  ],
+  startState: "q0", startStack: "Z", acceptStates: new Set(["q2"])
+};
+
+const tracer = new IDTracer(balancePDA);
+console.log(tracer.renderTrace("(())").join("\n"));
+```
+
 ## Summary
 
 - PDA = NFA + stack (LIFO memory).

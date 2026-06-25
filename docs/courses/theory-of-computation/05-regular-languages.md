@@ -672,6 +672,144 @@ const classes = MyhillNerode.computeEquivalence(["a", "b"], langEvenAs, 2);
 console.log(`Myhill-Nerode equivalence classes: ${classes.size}`);
 ```
 
+// ─────────────────────────────────────────────────────
+// Myhill-Nerode Equivalence Class Finder
+// Computes the right-invariant equivalence relation
+// for a language and reports the number of classes.
+// ─────────────────────────────────────────────────────
+
+class MyhillNerodeClassifier {
+  // Given a language L over alphabet Σ, compute equivalence
+  // classes of strings up to length maxLen using the
+  // Myhill-Nerode relation: x ~ y iff for all z,
+  // xz ∈ L ⇔ yz ∈ L.
+  static computeClasses(
+    alphabet: string[],
+    language: (s: string) => boolean,
+    maxLen: number
+  ): Map<string, string[]> {
+    // Generate all strings up to maxLen
+    const allStrings = this.generateAllStrings(alphabet, maxLen);
+    const classes = new Map<string, string[]>();
+    const assigned = new Set<string>();
+
+    for (const x of allStrings) {
+      if (assigned.has(x)) continue;
+      const representatives: string[] = [x];
+      assigned.add(x);
+
+      for (const y of allStrings) {
+        if (x === y || assigned.has(y)) continue;
+        if (this.areEquivalent(x, y, alphabet, language, maxLen)) {
+          representatives.push(y);
+          assigned.add(y);
+        }
+      }
+      classes.set(x, representatives);
+    }
+
+    return classes;
+  }
+
+  // Check if two strings are Myhill-Nerode equivalent
+  // by testing all possible extensions z up to maxLen.
+  private static areEquivalent(
+    x: string, y: string,
+    alphabet: string[],
+    language: (s: string) => boolean,
+    maxLen: number
+  ): boolean {
+    const maxExt = maxLen - Math.max(x.length, y.length);
+    const allExts = this.generateAllStrings(alphabet, maxExt);
+
+    for (const z of allExts) {
+      if (language(x + z) !== language(y + z)) return false;
+    }
+    return true;
+  }
+
+  private static generateAllStrings(
+    alphabet: string[], maxLen: number
+  ): string[] {
+    const result: string[] = [""]; // empty string
+    for (let len = 1; len <= maxLen; len++) {
+      this.genRec(alphabet, len, "", result);
+    }
+    return result;
+  }
+
+  private static genRec(
+    alphabet: string[], len: number,
+    current: string, result: string[]
+  ): void {
+    if (current.length === len) { result.push(current); return; }
+    for (const a of alphabet) {
+      this.genRec(alphabet, len, current + a, result);
+    }
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// DFA Equivalence Checker — verifies whether two DFAs
+// recognize the same language by checking if the symmetric
+// difference of their languages is empty.
+// ─────────────────────────────────────────────────────
+
+class DFAEquivalenceChecker {
+  static areEquivalent(
+    dfa1: { states: Set<string>; alphabet: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> },
+    dfa2: { states: Set<string>; alphabet: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> }
+  ): boolean {
+    // BFS over pairs of states — search for a distinguishing string
+    const visited = new Set<string>();
+    const queue: [string, string][] = [[dfa1.start, dfa2.start]];
+
+    while (queue.length > 0) {
+      const [s1, s2] = queue.shift()!;
+      const pair = `${s1},${s2}`;
+      if (visited.has(pair)) continue;
+      visited.add(pair);
+
+      // If one accepts and the other doesn't, languages differ
+      if (dfa1.accept.has(s1) !== dfa2.accept.has(s2)) {
+        return false;
+      }
+
+      for (const sym of dfa1.alphabet) {
+        const t1 = dfa1.transitions.get(`${s1},${sym}`);
+        const t2 = dfa2.transitions.get(`${s2},${sym}`);
+        if (t1 !== undefined && t2 !== undefined) {
+          const nextPair = `${t1},${t2}`;
+          if (!visited.has(nextPair)) queue.push([t1, t2]);
+        }
+      }
+    }
+    return true;
+  }
+}
+
+// Demo
+const lang = (s: string) => (s.match(/a/g) || []).length % 2 === 0;
+const classes = MyhillNerodeClassifier.computeClasses(["a", "b"], lang, 3);
+console.log(`Myhill-Nerode equivalence classes: ${classes.size}`);
+for (const [rep, members] of classes) {
+  console.log(`  Class [${rep}]: ${members.join(", ")}`);
+}
+
+// DFA equivalence demo
+const dfaA = {
+  states: new Set(["q0", "q1"]), alphabet: new Set(["0"]),
+  transitions: new Map([["q0,0", "q1"], ["q1,0", "q0"]]),
+  start: "q0", accept: new Set(["q0"])
+};
+const dfaB = {
+  states: new Set(["p0", "p1"]), alphabet: new Set(["0"]),
+  transitions: new Map([["p0,0", "p1"], ["p1,0", "p0"]]),
+  start: "p0", accept: new Set(["p0"])
+};
+console.log(`DFAs equivalent: ${DFAEquivalenceChecker.areEquivalent(dfaA, dfaB)}`);
+```
+
 ## Summary
 
 - The pumping lemma provides a necessary condition for regularity used to prove non-regularity.

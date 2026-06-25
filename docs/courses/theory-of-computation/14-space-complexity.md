@@ -463,6 +463,101 @@ console.log(PSPACEProblems.isPSPACEComplete("QBF"));
 console.log(PSPACEProblems.isPSPACEComplete("SAT"));
 ```
 
+// ─────────────────────────────────────────────────────
+// L / NL / PSPACE Classifier
+// Given a problem description, classifies it by its
+// known space complexity class.
+// ─────────────────────────────────────────────────────
+
+class SpaceComplexityClassifier {
+  // Known problems and their space complexity classes
+  private static readonly knownProblems = new Map<string, string>([
+    ["DFA membership", "L (O(log n) space)"],
+    ["Tree traversal", "L (O(log n) space)"],
+    ["Graph connectivity (undirected)", "L (Reingold 2005)"],
+    ["Graph connectivity (directed)", "NL-complete"],
+    ["ST-connectivity (directed)", "NL-complete"],
+    ["2SAT", "NL-complete"],
+    ["CFG membership (CYK)", "P (not space-bounded)"],
+    ["SAT", "NP-complete (not space-bounded)"],
+    ["QBF (Quantified Boolean Formula)", "PSPACE-complete"],
+    ["Geography game", "PSPACE-complete"],
+    ["Generalized Go", "PSPACE-complete"],
+    ["Generalized Chess", "PSPACE-complete"],
+    ["Generalized Checkers", "PSPACE-complete"],
+    ["TQBF", "PSPACE-complete"],
+    ["Regex with backreferences", "PSPACE-complete"],
+    ["NEXP", "Nondeterministic exponential time"],
+    ["EXPSPACE", "EXPSPACE"],
+  ]);
+
+  static classify(name: string): string {
+    return this.knownProblems.get(name) || "Unknown — research frontier";
+  }
+
+  static table(): string[] {
+    const output: string[] = [];
+    output.push("Space Complexity Classification Table");
+    output.push("=".repeat(55));
+    output.push("Problem".padEnd(40) + "Class");
+    output.push("-".repeat(55));
+
+    for (const [problem, cls] of this.knownProblems) {
+      output.push(`${problem.padEnd(40)} ${cls}`);
+    }
+
+    return output;
+  }
+}
+
+// ─────────────────────────────────────────────────────
+// Savitch's Theorem Helper — demonstrates the key
+// insight: NL ⊆ SPACE(log² n) by simulating
+// nondeterministic space with deterministic space
+// using divide-and-conquer on the computation path.
+// ─────────────────────────────────────────────────────
+
+class SavitchHelper {
+  // Simulate the Savitch construction: to check if path
+  // exists from c1 to c2 in ≤ t steps, recursively check
+  // if there is a midpoint reachable in ≤ t/2 steps.
+  static reachableInSteps(
+    configs: string[],
+    successors: Map<string, string[]>,
+    c1: string, c2: string, steps: number,
+    depth: number = 0
+  ): boolean {
+    if (steps === 0) return c1 === c2;
+    if (steps === 1) return successors.get(c1)?.includes(c2) ?? false;
+
+    const mid = Math.floor(steps / 2);
+    for (const cfg of configs) {
+      if (this.reachableInSteps(configs, successors, c1, cfg, mid, depth + 1) &&
+          this.reachableInSteps(configs, successors, cfg, c2, steps - mid, depth + 1)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  // Space usage of Savitch's algorithm
+  static spaceUsage(n: number): string {
+    // O(log² n) space for the recursion stack
+    return `O(log² ${n}) = O(${Math.ceil(Math.log2(n) ** 2)}) cells`;
+  }
+}
+
+// Demo
+console.log(SpaceComplexityClassifier.table().join("\n"));
+console.log("");
+const configs = ["c1", "c2", "c3", "c4"];
+const succ = new Map<string, string[]>([
+  ["c1", ["c2", "c3"]], ["c2", ["c4"]], ["c3", ["c4"]], ["c4", []]
+]);
+console.log(`c1 → c4 in ≤3 steps: ${SavitchHelper.reachableInSteps(configs, succ, "c1", "c4", 3)}`);
+console.log(`Space for n=${configs.length}: ${SavitchHelper.spaceUsage(configs.length)}`);
+```
+
 ## Summary
 
 - Space complexity measures the maximum tape cells used during computation.

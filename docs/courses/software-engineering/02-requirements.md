@@ -754,6 +754,124 @@ graph TD
     end
 ```
 
+### TypeScript: Requirements Engineering Tools
+
+```typescript
+interface Requirement {
+  id: string;
+  type: "functional" | "non-functional" | "domain";
+  description: string;
+  priority: "MUST" | "SHOULD" | "COULD" | "WONT";
+  status: "draft" | "proposed" | "approved" | "implemented" | "verified";
+}
+
+// === MoSCoW Prioritizer ===
+function moscowPrioritize(reqs: Requirement[]): { must: Requirement[]; should: Requirement[]; could: Requirement[]; wont: Requirement[] } {
+  return {
+    must: reqs.filter((r) => r.priority === "MUST"),
+    should: reqs.filter((r) => r.priority === "SHOULD"),
+    could: reqs.filter((r) => r.priority === "COULD"),
+    wont: reqs.filter((r) => r.priority === "WONT"),
+  };
+}
+
+// === Kano Classifier ===
+type KanoCategory = "basic" | "performance" | "excitement" | "indifferent" | "reverse";
+function kanoClassify(delightIfPresent: boolean, frustrationIfAbsent: boolean): KanoCategory {
+  if (!delightIfPresent && frustrationIfAbsent) return "basic";
+  if (delightIfPresent && frustrationIfAbsent) return "performance";
+  if (delightIfPresent && !frustrationIfAbsent) return "excitement";
+  if (!delightIfPresent && !frustrationIfAbsent) return "indifferent";
+  return "reverse";
+}
+console.log(kanoClassify(true, false)); // excitement (WiFi on an airplane)
+
+// === Traceability Matrix ===
+interface TraceLink {
+  reqId: string;
+  testCaseId: string;
+  designElement: string;
+  verified: boolean;
+}
+class TraceMatrix {
+  private links: TraceLink[] = [];
+  add(link: TraceLink): void { this.links.push(link); }
+  getCoverage(reqId: string): { testCases: string[]; covered: boolean } {
+    const links = this.links.filter((l) => l.reqId === reqId);
+    return { testCases: links.map((l) => l.testCaseId), covered: links.some((l) => l.verified) };
+  }
+  getUntraced(): string[] {
+    const traced = [...new Set(this.links.map((l) => l.reqId))];
+    return []; // would need all reqs to compare
+  }
+  getRequirementsByStatus(status: string): string[] {
+    return this.links.filter((l) => l.verified === (status === "verified")).map((l) => l.reqId);
+  }
+}
+const tm = new TraceMatrix();
+tm.add({ reqId: "REQ-001", testCaseId: "TC-001", designElement: "AuthModule", verified: true });
+tm.add({ reqId: "REQ-002", testCaseId: "TC-002", designElement: "UserController", verified: false });
+console.log(tm.getCoverage("REQ-001"));
+
+// === FURPS+ Classifier ===
+type FurpsCategory = "functionality" | "usability" | "reliability" | "performance" | "supportability" | "plus";
+function classifyFurps(description: string): FurpsCategory {
+  const keywords: Record<FurpsCategory, string[]> = {
+    functionality: ["feature", "must", "shall", "calculate", "process", "generate"],
+    usability: ["user-friendly", "intuitive", "help", "documentation", "training"],
+    reliability: ["available", "failover", "recover", "backup", "uptime", "fault"],
+    performance: ["speed", "response", "throughput", "latency", "concurrent", "second"],
+    supportability: ["maintain", "test", "deploy", "configure", "monitor", "log"],
+    plus: ["legal", "regulatory", "security", "privacy", "standard"],
+  };
+  const lower = description.toLowerCase();
+  for (const [cat, words] of Object.entries(keywords)) {
+    if (words.some((w) => lower.includes(w))) return cat as FurpsCategory;
+  }
+  return "functionality";
+}
+console.log(classifyFurps("The system must process 1000 requests per second")); // performance
+```
+
+### TypeScript: Requirements Quality Analyzer
+
+```typescript
+// === Requirements Quality Checklist Analyzer ===
+interface Requirement { id: string; text: string; priority: "MUST" | "SHOULD" | "COULD" | "WONT"; }
+interface QualityReport { id: string; issues: string[]; score: number; }
+function analyzeRequirement(req: Requirement): QualityReport {
+  const issues: string[] = [];
+  let score = 100;
+  if (req.text.length < 10) { issues.push("Too short (< 10 chars)"); score -= 20; }
+  if (req.text.includes("and/or") || req.text.includes("etc")) { issues.push("Contains ambiguous terms"); score -= 15; }
+  if (/fast|quick|easy|user-friendly|robust|efficient/i.test(req.text)) { issues.push("Contains subjective terms"); score -= 15; }
+  if (req.text.includes("should") && !req.text.includes("shall")) { issues.push("Weak language (use 'shall')"); score -= 10; }
+  if (!/[A-Z]/.test(req.text[0])) { issues.push("Should start with capital letter"); score -= 5; }
+  if (!req.text.endsWith(".") && !req.text.endsWith(";")) { issues.push("Missing sentence terminator"); score -= 5; }
+  if (/always|never|all|every|none/i.test(req.text)) { issues.push("Contains absolute terms"); score -= 10; }
+  if (!/\d+/.test(req.text) && req.priority === "MUST") { issues.push("MUST priority lacks measurable criteria"); score -= 10; }
+  return { id: req.id, issues, score: Math.max(0, score) };
+}
+
+function analyzeRequirementSet(reqs: Requirement[]): { averageScore: number; totalIssues: number; summary: string } {
+  const reports = reqs.map(analyzeRequirement);
+  const avg = reports.reduce((s, r) => s + r.score, 0) / reports.length;
+  const totalIssues = reports.reduce((s, r) => s + r.issues.length, 0);
+  const grade = avg >= 80 ? "Excellent" : avg >= 60 ? "Needs Improvement" : "Poor";
+  return { averageScore: Math.round(avg * 10) / 10, totalIssues, summary: `${reqs.length} requirements: ${grade} (${avg}%) with ${totalIssues} issues` };
+}
+
+const reqs: Requirement[] = [
+  { id: "REQ-001", text: "The system shall process 1000 transactions per second.", priority: "MUST" },
+  { id: "REQ-002", text: "The UI should be user-friendly and fast.", priority: "SHOULD" },
+  { id: "REQ-003", text: "Error handling", priority: "MUST" },
+  { id: "REQ-004", text: "The system shall support 10,000 concurrent users with < 200ms latency.", priority: "MUST" },
+  { id: "REQ-005", text: "The system should always be available.", priority: "SHOULD" },
+];
+for (const req of reqs) console.log(analyzeRequirement(req));
+console.log(analyzeRequirementSet(reqs));
+```
+
 ## Summary
 
 Requirements engineering is the foundation of successful software development. Functional requirements define what the system must do; non-functional constraints how it does it; and domain requirements capture the context. FURPS+ provides a comprehensive classification. Feasibility studies determine project viability. Elicitation techniques must be selected based on project context. Specifications take different forms — IEEE 830 documents, user stories with Gherkin acceptance criteria, or use cases. MoSCoW and the Kano model support prioritisation. Validation ensures correctness. Management through traceability, prioritisation, and change control maintains the specification's integrity as the system evolves.

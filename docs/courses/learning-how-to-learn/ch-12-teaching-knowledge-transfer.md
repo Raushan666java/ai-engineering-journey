@@ -1,7 +1,7 @@
 # Chapter 12: Teaching & Knowledge Transfer
 
 > **Prerequisites:** [Chapter 2: Practice, Mindset & Performance](./ch-02-practice-mindset.md), [Chapter 4: Pomodoro, Interleaving & Feynman](./ch-04-pomodoro-interleaving-feynman.md)
-> **Next:** None (final chapter)
+> **Next:** [Chapter 14: Social Learning & Communities](./ch-14-social-learning-communities.md)
 
 Teaching is the master key to learning. Every time you explain a concept to someone else — a peer, a rubber duck, a blog audience, a rubber duck — you strengthen your own understanding. This chapter covers the science of the protégé effect, the Feynman technique at scale, technical writing, code review as teaching, building in public, and how to design a sustainable teaching practice that accelerates your learning more than any amount of solo study.
 

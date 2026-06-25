@@ -1,7 +1,7 @@
 # Learning How to Learn
 
 > **Master the universal meta-skill: accelerate learning across every course in this repository.**
-> 12 chapters · 195 Q&As · 12 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
+> 14 chapters · 225 Q&As · 14 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
 >
 > *Deployed: commit `23502cfa3`*
 
@@ -9,7 +9,7 @@
 
 ## Course Overview
 
-This course teaches you **how to learn anything** — from GATE CS theory to coding interviews to new frameworks. Every technique is demonstrated with worked examples from the 27+ courses in this repository.
+This course teaches you **how to learn anything** — from GATE CS theory to coding interviews to new frameworks. Every technique is demonstrated with worked examples from the 32+ courses in this repository.
 
 You'll learn:
 - How your brain encodes, stores, and retrieves information
@@ -77,12 +77,14 @@ You'll learn:
 |---|---------|--------|------|
 | 10 | Meta-Learning & Lifelong System | Building in public, meta-learning, Waitzkin stages, 80/20 rule, skill tree, Dunning-Kruger, imposter syndrome, knowledge compounding, second brain, Atomic Habits, PARA method, learning dashboard, SM-2/FSRS algorithms, Obsidian, learning communities, plateaus, daily routine, anti-patterns, compound effect, feedback loops, annual review | Q121–Q145 |
 
-### Module 6: Advanced & Future-Facing (Chapters 11–12)
+### Module 6: AI-Assisted & Advanced Learning (Chapters 11–14)
 
 | # | Chapter | Topics | Q&As |
 |---|---------|--------|------|
-| 11 | AI-Assisted Learning | Socratic AI tutoring, prompt engineering for learning, AI spaced repetition, AI code review, knowledge gap detection, AI learning dashboard, multi-modal learning, pitfalls of AI over-reliance, AI detox, lifelong AI-assisted system | Q146–Q160 |
-| 12 | Teaching & Knowledge Transfer | Protégé effect, three-level Feynman technique, rubber duck debugging, pair programming, building in public, code review as teaching, study groups, BLUF technical writing, mentoring, handling unknown questions, adaptive teaching, sustainable teaching practice | Q161–Q195 |
+| 11 | AI-Assisted Learning | Socratic AI tutoring, prompt engineering for learning, AI spaced repetition, AI code review, knowledge gap detection, AI learning dashboard, multi-modal learning, pitfalls of AI over-reliance, AI detox, lifelong AI-assisted system | Q146–Q165 |
+| 12 | Teaching & Knowledge Transfer | Protégé effect, three-level Feynman technique, rubber duck debugging, pair programming, building in public, code review as teaching, study groups, BLUF technical writing, mentoring, handling unknown questions, adaptive teaching, sustainable teaching practice | Q166–Q185 |
+| 13 | Learning Analytics & Self-Measurement | Learning metrics, SpacedRepMetric, knowledge graph health, confidence calibration, forgetting curve tracking, dashboards, review logs, analytics-driven study decisions, dashboard build walkthrough | Q186–Q205 |
+| 14 | Social Learning & Communities | Community advantage, social accountability, study groups, pair programming, building in public, mentoring, online communities, open-source contributions, Stack Overflow, teaching as learning, learning economy | Q206–Q225 |
 
 ---
 
@@ -110,6 +112,8 @@ Before you begin, rate yourself on these six statements (1 = strongly disagree, 
 - Q4 → Chapters 3 & 6 (Spaced Repetition & Deep Work)
 - Q5 → Chapters 7, 9 & 11 (DSA, Framework Learning & AI-Assisted Learning)
 - Q6 → Chapters 10 & 12 (Meta-Learning System & Teaching Practice)
+- Q7 → Chapter 13 (Learning Analytics)
+- Q8 → Chapter 14 (Social Learning)
 
 ---
 

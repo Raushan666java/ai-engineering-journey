@@ -1,7 +1,7 @@
 # Chapter 11: AI-Assisted Learning
 
 > **Prerequisites:** [Chapter 3: Active Recall & Spaced Repetition](./ch-03-active-recall-spaced-repetition.md)
-> **Next:** None (final chapter for now)
+> **Next:** [Chapter 13: Learning Analytics & Self-Measurement](./ch-13-learning-analytics.md)
 
 This chapter teaches you how to use AI as a learning accelerator — not a crutch. You'll learn prompt patterns that turn LLMs into Socratic tutors, build AI-powered spaced-repetition tools, use AI for code review and debugging without becoming dependent, and design a personal learning system that combines AI with evidence-based techniques. By the end, you'll know exactly when to ask AI and when to struggle productively on your own.
 

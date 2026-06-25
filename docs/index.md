@@ -137,7 +137,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 -   <span class="course-icon">🎯</span> __[GATE CS Preparation](courses/gate-cs-preparation/)__ <span class="course-chaps">19 ch</span>
 -   <span class="course-icon">💼</span> __[Placement Preparation](courses/placement-preparation/)__ <span class="course-chaps">7 ch</span>
--   <span class="course-icon">🧠</span> __[Learning How to Learn](courses/learning-how-to-learn/)__ <span class="course-chaps">10 ch</span>
+-   <span class="course-icon">🧠</span> __[Learning How to Learn](courses/learning-how-to-learn/)__ <span class="course-chaps">14 ch</span>
 
 </div>
 

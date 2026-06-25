@@ -27,7 +27,7 @@ Maintain and improve software engineering course materials at `docs/courses/`.
 - **DevOps (27 ch):** Expanded all 27 chapters from 378-608 to 704-785 lines (avg 733). Added 20+ TypeScript implementations across all chapters (maturity checker, conflict predictor, layer analyzer, dependency analyzer, scheduler simulators, cost calculators, plan parsers, release managers, pipeline orchestrators, trace analyzers, drift remediators, canary managers, error budget trackers, load balancer validators, security scanner wrappers, policy enforcers, quota analyzers, build optimizers, process monitors, and config generators). All 27 chapters now 700+ lines.
 
 - **Cloud Computing (10 ch):** Expanded all 10 chapters from 600-735 to 730-917 lines (avg 793). Added TypeScript implementations (CloudCostCalculator, HypervisorScheduler, AutoScalingGroup, LifecyclePolicyEngine, ReadReplicaManager, VPCDesigner, IAMPolicyAnalyzer, StepFunctionsBuilder, K8sScheduler, WellArchitectedScorer, DRCostComparator). All chapters now 730+ lines.
-- (none)
+- **Learning How to Learn (14 ch):** All 1,544-1,768 lines (avg 1,658). Covers brain fundamentals, active recall, spaced repetition, Pomodoro, interleaving, Feynman technique, memory systems, mnemonics, procrastination, deep work, DSA prep, GATE exam prep, framework learning, meta-learning, AI-assisted learning, teaching & knowledge transfer, learning analytics, social learning.
 
 ## Next Steps
 - (none — all planned work complete)

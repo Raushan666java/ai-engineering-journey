@@ -228,10 +228,10 @@ You've implemented JWTs in Laravel. The gap is the **rotation pattern** — repl
 ### Flow
 
 ```
-1. POST /auth/login ? returns { access_token, refresh_token }
-2. POST /auth/refresh (with refresh_token) ? returns NEW { access_token, refresh_token }
+1. POST /auth/login → returns { access_token, refresh_token }
+2. POST /auth/refresh (with refresh_token) → returns NEW { access_token, refresh_token }
 3. Old refresh_token is invalidated immediately
-4. If old refresh_token is used again ? both tokens are revoked (someone stole it)
+4. If old refresh_token is used again → both tokens are revoked (someone stole it)
 ```
 
 ### Implementation sketch
@@ -416,7 +416,7 @@ app.include_router(router_v2)
 ### When to bump version
 
 1. Breaking schema change (response field removed)
-2. Behavior change (same input ? different meaning)
+2. Behavior change (same input → different meaning)
 3. Endpoint removal
 
 ### When NOT to bump
@@ -854,7 +854,7 @@ sequenceDiagram
 
     Note over C,A: Token Rotation
     C->>A: POST /auth/refresh (refresh_token)
-    A->>S: Lookup hash ? get token family
+    A->>S: Lookup hash → get token family
     A->>S: Check family not revoked
     A->>S: Remove old hash
     A->>S: Store NEW hash with NEW family
@@ -862,8 +862,8 @@ sequenceDiagram
 
     Note over C,A: Replay Attack
     C->>A: POST /auth/refresh (OLD refresh_token)
-    A->>S: Lookup hash ? not found
-    A->>S: Check family ? already revoked!
+    A->>S: Lookup hash → not found
+    A->>S: Check family → already revoked!
     A->>S: Revoke ALL tokens in this family
     A-->>C: 401 "Token family compromised"
 ```
@@ -907,26 +907,6 @@ flowchart TB
 
 ---
 
-
-interface FastAPIEndpoint { method: "GET"|"POST"|"PUT"|"DELETE"; path: string; handler: string; middleware?: string[] }
-class FastAPISDK {
-  private baseURL: string; private headers: Record<string,string> = {}
-  constructor(baseURL: string, apiKey?: string) { this.baseURL = baseURL; if(apiKey) this.headers["Authorization"] = `Bearer ${apiKey}` }
-  async get<T>(path: string, params?: Record<string,string>): Promise<T> {
-    const url = new URL(`${this.baseURL}${path}`)
-    if(params) Object.entries(params).forEach(([k,v]) => url.searchParams.set(k,v))
-    const res = await fetch(url.toString(), { headers: this.headers })
-    if(!res.ok) throw new Error(`API error: ${res.status}`)
-    return res.json() as Promise<T>
-  }
-  async post<T>(path: string, body: unknown): Promise<T> {
-    const res = await fetch(`${this.baseURL}${path}`, { method: "POST", headers: {...this.headers,"Content-Type":"application/json"}, body: JSON.stringify(body) })
-    if(!res.ok) throw new Error(`API error: ${res.status}`)
-    return res.json() as Promise<T>
-  }
-  buildEndpoint(config: FastAPIEndpoint): string { return `${config.method} ${config.path} -> ${config.handler}` }
-}
-export { FastAPISDK, FastAPIEndpoint }
 ## Phase 0 Done Checkpoint
 
 Before moving to Phase 1, you should be able to:

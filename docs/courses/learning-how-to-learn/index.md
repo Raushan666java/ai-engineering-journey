@@ -1,7 +1,7 @@
 # Learning How to Learn
 
 > **Master the universal meta-skill: accelerate learning across every course in this repository.**
-> 10 chapters · 162 Q&As · 10 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
+> 12 chapters · 195 Q&As · 12 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
 >
 > *Deployed: commit `23502cfa3`*
 
@@ -77,6 +77,13 @@ You'll learn:
 |---|---------|--------|------|
 | 10 | Meta-Learning & Lifelong System | Building in public, meta-learning, Waitzkin stages, 80/20 rule, skill tree, Dunning-Kruger, imposter syndrome, knowledge compounding, second brain, Atomic Habits, PARA method, learning dashboard, SM-2/FSRS algorithms, Obsidian, learning communities, plateaus, daily routine, anti-patterns, compound effect, feedback loops, annual review | Q121–Q145 |
 
+### Module 6: Advanced & Future-Facing (Chapters 11–12)
+
+| # | Chapter | Topics | Q&As |
+|---|---------|--------|------|
+| 11 | AI-Assisted Learning | Socratic AI tutoring, prompt engineering for learning, AI spaced repetition, AI code review, knowledge gap detection, AI learning dashboard, multi-modal learning, pitfalls of AI over-reliance, AI detox, lifelong AI-assisted system | Q146–Q160 |
+| 12 | Teaching & Knowledge Transfer | Protégé effect, three-level Feynman technique, rubber duck debugging, pair programming, building in public, code review as teaching, study groups, BLUF technical writing, mentoring, handling unknown questions, adaptive teaching, sustainable teaching practice | Q161–Q195 |
+
 ---
 
 ## Diagnostic Pre-Test
@@ -101,8 +108,8 @@ Before you begin, rate yourself on these six statements (1 = strongly disagree, 
 - Q1–Q2 → Chapters 1–2 (Brain Fundamentals)
 - Q3 → Chapter 5 (Memory Systems)
 - Q4 → Chapters 3 & 6 (Spaced Repetition & Deep Work)
-- Q5 → Chapter 7 & 9 (DSA & Framework Learning)
-- Q6 → Chapter 10 (Meta-Learning System)
+- Q5 → Chapters 7, 9 & 11 (DSA, Framework Learning & AI-Assisted Learning)
+- Q6 → Chapters 10 & 12 (Meta-Learning System & Teaching Practice)
 
 ---
 
@@ -111,7 +118,9 @@ Before you begin, rate yourself on these six statements (1 = strongly disagree, 
 1. **If you're preparing for GATE CS:** Start with Chapters 1–4 for fundamentals, then Chapter 8 for GATE-specific strategy
 2. **If you're preparing for coding interviews:** Start with Chapters 1–4, then Chapter 7 for DSA-specific techniques
 3. **If you want to learn a new framework:** Start with Chapters 1–2, then Chapter 9 for the framework blueprint
-4. **If you want to build a complete learning system:** Read all chapters in order
+4. **If you want to leverage AI for learning:** Start with Chapters 1–4, then Chapter 11 for AI-assisted techniques
+5. **If you want to teach or mentor others:** Start with Chapters 1–2, then Chapter 12 for knowledge transfer
+6. **If you want to build a complete learning system:** Read all chapters in order
 
 ---
 
@@ -134,7 +143,7 @@ Learning Objectives → Q&A Content → Self-Assessment Quiz → Chapter Summary
 
 ## Building in Public
 
-This course lives alongside 27+ courses in this repository. As you study, contribute back:
+This course lives alongside 32+ courses in this repository. As you study, contribute back:
 
 - Solve problems from the DSA bank and explain your approach
 - Add new Q&As to any chapter

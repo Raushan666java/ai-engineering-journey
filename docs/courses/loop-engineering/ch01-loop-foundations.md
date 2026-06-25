@@ -1078,6 +1078,474 @@ main();
 
 ---
 
+### Advanced Tooling: Loop Analyzers, Optimizers, and Filters
+
+This section adds production-grade analysis and filtering tools: a `LoopAnalyzerTool` that computes gain/phase margins from transfer function data, a `SettlingTimeOptimizer` using golden-section search, a `NoiseFilter` combining EMA and median filtering, a `StepResponseAnalyzer` that measures rise time/overshoot/settling time, and a `BodePlotGenerator` that maps frequency response magnitude/phase.
+
+```typescript
+// ch01-advanced-tooling.ts
+// bun run ch01-advanced-tooling.ts
+
+// ─── Loop Type Comparison Mermaid Diagram ───────────────────────────────
+
+/*
+```mermaid
+graph TD
+    subgraph "Open-Loop Control"
+        A1[Reference] --> B1[Controller] --> C1[Plant] --> D1[Output]
+    end
+    
+    subgraph "Closed-Loop Control"
+        A2[Reference] --> B2[Comparator] --> C2[Controller] --> D2[Plant] --> E2[Output]
+        E2 --> F2[Sensor] --> B2
+    end
+    
+    subgraph "Positive Feedback"
+        A3[Reference] --> B3[Sum] --> C3[Controller] --> D3[Plant] --> E3[Output]
+        E3 --> F3[Sensor] -->|+ added to reference| B3
+    end
+    
+    subgraph "Negative Feedback"
+        A4[Reference] --> B4[Sum] --> C4[Controller] --> D4[Plant] --> E4[Output]
+        E4 --> F4[Sensor] -->|- subtracted from reference| B4
+    end
+    
+    style D1 fill:#e74c3c,color:#fff
+    style E2 fill:#2ecc71,color:#fff
+    style E3 fill:#e74c3c,color:#fff
+    style E4 fill:#2ecc71,color:#fff
+```
+*/
+
+// ─── LoopAnalyzerTool ──────────────────────────────────────────────────
+
+interface GainPhaseData {
+  frequencyRad: number;
+  gainLinear: number;
+  phaseRad: number;
+}
+
+interface MarginResult {
+  gainMargin: number | null;
+  gainMarginDb: number | null;
+  phaseMarginDeg: number | null;
+  crossoverFreqGain: number | null;
+  crossoverFreqPhase: number | null;
+  verdict: "stable" | "marginally-stable" | "unstable";
+}
+
+class LoopAnalyzerTool {
+  computeMargins(data: GainPhaseData[]): MarginResult {
+    let gainMargin: number | null = null;
+    let phaseMarginDeg: number | null = null;
+    let crossoverFreqGain: number | null = null;
+    let crossoverFreqPhase: number | null = null;
+
+    for (let i = 1; i < data.length; i++) {
+      const prev = data[i - 1];
+      const curr = data[i];
+
+      if (Math.abs(prev.phaseRad) >= Math.PI && Math.abs(curr.phaseRad) <= Math.PI) {
+        const gainAtPhaseCrossover = (prev.gainLinear + curr.gainLinear) / 2;
+        gainMargin = gainAtPhaseCrossover > 0 ? 1 / gainAtPhaseCrossover : null;
+        gainMarginDb = gainMargin !== null ? 20 * Math.log10(gainMargin) : null;
+        crossoverFreqPhase = curr.frequencyRad;
+      }
+
+      if (prev.gainLinear >= 1 && curr.gainLinear <= 1) {
+        const interp = (1 - prev.gainLinear) / (curr.gainLinear - prev.gainLinear);
+        const phaseAtGainCrossoverRad = prev.phaseRad + interp * (curr.phaseRad - prev.phaseRad);
+        phaseMarginDeg = 180 - Math.abs(phaseAtGainCrossoverRad * 180 / Math.PI);
+        crossoverFreqGain = curr.frequencyRad;
+      }
+    }
+
+    let verdict: MarginResult["verdict"] = "stable";
+    if (gainMargin !== null && gainMargin < 1) verdict = "unstable";
+    if (phaseMarginDeg !== null && phaseMarginDeg < 0) verdict = "unstable";
+    if ((gainMargin !== null && gainMargin < 2) || (phaseMarginDeg !== null && phaseMarginDeg < 30)) {
+      if (verdict !== "unstable") verdict = "marginally-stable";
+    }
+
+    return { gainMargin, gainMarginDb, phaseMarginDeg, crossoverFreqGain, crossoverFreqPhase, verdict };
+  }
+
+  static generateTestData(
+    baseGain: number,
+    poleRad: number,
+    frequencies: number[]
+  ): GainPhaseData[] {
+    return frequencies.map((omega) => {
+      const h = baseGain / (1 + 1j * omega / poleRad);
+      const magnitude = Math.sqrt(h.real * h.real + h.imag * h.imag);
+      const phase = Math.atan2(h.imag, h.real);
+      return { frequencyRad: omega, gainLinear: magnitude, phaseRad: phase };
+    });
+  }
+}
+
+// Complex number helper for the static method
+const 1j = { real: 0, imag: 1 } as const;
+function complexDiv(num: { real: number; imag: number }, den: { real: number; imag: number }): { real: number; imag: number } {
+  const denom = den.real * den.real + den.imag * den.imag;
+  return {
+    real: (num.real * den.real + num.imag * den.imag) / denom,
+    imag: (num.imag * den.real - num.real * den.imag) / denom,
+  };
+}
+
+// ─── SettlingTimeOptimizer (Golden-Section Search) ─────────────────────
+
+class SettlingTimeOptimizer {
+  private readonly phi = (1 + Math.sqrt(5)) / 2;
+  private readonly resphi = 2 - this.phi;
+
+  optimize(
+    gainRange: [number, number],
+    tolerance: number,
+    target: number,
+    noiseLevel: number,
+    maxCycles: number,
+    iterations: number = 20
+  ): { optimalGain: number; settlingTime: number; iterations: number } {
+    let [a, b] = gainRange;
+    let c = b - this.resphi * (b - a);
+    let d = a + this.resphi * (b - a);
+
+    for (let i = 0; i < iterations; i++) {
+      const fc = this.simulateSettlingTime(c, tolerance, target, noiseLevel, maxCycles);
+      const fd = this.simulateSettlingTime(d, tolerance, target, noiseLevel, maxCycles);
+
+      if (fc < fd) {
+        b = d;
+      } else {
+        a = c;
+      }
+
+      c = b - this.resphi * (b - a);
+      d = a + this.resphi * (b - a);
+
+      if (Math.abs(b - a) < 1e-4) break;
+    }
+
+    const optimalGain = (a + b) / 2;
+    const settlingTime = this.simulateSettlingTime(optimalGain, tolerance, target, noiseLevel, maxCycles);
+    return { optimalGain, settlingTime, iterations };
+  }
+
+  private simulateSettlingTime(
+    gain: number,
+    tolerance: number,
+    target: number,
+    noiseLevel: number,
+    maxCycles: number
+  ): number {
+    let value = 0;
+    for (let i = 0; i < maxCycles; i++) {
+      const error = target - value;
+      if (Math.abs(error) <= tolerance) return i;
+      value += gain * error + (Math.random() - 0.5) * noiseLevel;
+    }
+    return maxCycles;
+  }
+
+  gainSweep(
+    gains: number[],
+    tolerance: number,
+    target: number,
+    noiseLevel: number,
+    maxCycles: number
+  ): Array<{ gain: number; settlingTime: number }> {
+    return gains.map((g) => ({
+      gain: g,
+      settlingTime: this.simulateSettlingTime(g, tolerance, target, noiseLevel, maxCycles),
+    }));
+  }
+}
+
+// ─── NoiseFilter (EMA + Median) ────────────────────────────────────────
+
+class NoiseFilter {
+  private emaValue: number | null = null;
+  private medianWindow: number[] = [];
+  private readonly emaAlpha: number;
+  private readonly medianWindowSize: number;
+
+  constructor(emaAlpha: number = 0.3, medianWindowSize: number = 5) {
+    this.emaAlpha = emaAlpha;
+    this.medianWindowSize = medianWindowSize;
+  }
+
+  ema(input: number): number {
+    if (this.emaValue === null) {
+      this.emaValue = input;
+    } else {
+      this.emaValue = this.emaAlpha * input + (1 - this.emaAlpha) * this.emaValue;
+    }
+    return this.emaValue;
+  }
+
+  median(input: number): number {
+    this.medianWindow.push(input);
+    if (this.medianWindow.length > this.medianWindowSize) {
+      this.medianWindow.shift();
+    }
+    const sorted = [...this.medianWindow].sort((a, b) => a - b);
+    const mid = Math.floor(sorted.length / 2);
+    return sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid];
+  }
+
+  both(input: number): number {
+    const emaOut = this.ema(input);
+    return this.median(emaOut);
+  }
+
+  reset(): void {
+    this.emaValue = null;
+    this.medianWindow = [];
+  }
+
+  static filterNoiseTrace(
+    rawTrace: number[],
+    alpha: number,
+    windowSize: number
+  ): { raw: number[]; ema: number[]; median: number[]; combined: number[] } {
+    const emaFilter = new NoiseFilter(alpha, windowSize);
+    const medianFilter = new NoiseFilter(alpha, windowSize);
+    const combinedFilter = new NoiseFilter(alpha, windowSize);
+
+    const ema: number[] = [];
+    const median: number[] = [];
+    const combined: number[] = [];
+
+    for (const v of rawTrace) {
+      ema.push(emaFilter.ema(v));
+      median.push(medianFilter.median(v));
+      combined.push(combinedFilter.both(v));
+    }
+
+    return { raw: rawTrace, ema, median, combined };
+  }
+}
+
+// ─── StepResponseAnalyzer ──────────────────────────────────────────────
+
+interface StepResponseMetrics {
+  riseTime: number;
+  overshoot: number;
+  settlingTime: number;
+  peakValue: number;
+  steadyStateValue: number;
+  delayTime: number;
+}
+
+class StepResponseAnalyzer {
+  analyze(trace: number[], setpoint: number, tolerance: number = 0.02): StepResponseMetrics {
+    const n = trace.length;
+    const finalValue = trace[n - 1];
+    const steadyStateValue = trace.slice(-Math.min(5, n)).reduce((a, b) => a + b, 0) / Math.min(5, n);
+
+    const targetLow = setpoint * (1 - tolerance);
+    const targetHigh = setpoint * (1 + tolerance);
+    const settleBandLow = steadyStateValue * (1 - tolerance);
+    const settleBandHigh = steadyStateValue * (1 + tolerance);
+
+    let riseStart = 0;
+    let riseEnd = 0;
+    let settlingTime = n;
+    let peakValue = trace[0];
+    let delayTime = 0;
+
+    for (let i = 0; i < n; i++) {
+      if (trace[i] >= setpoint * 0.1 && riseStart === 0) riseStart = i;
+      if (trace[i] >= setpoint * 0.9 && riseStart > 0 && riseEnd === 0) {
+        riseEnd = i;
+      }
+      if (trace[i] >= setpoint * 0.5 && delayTime === 0) delayTime = i;
+      if (trace[i] > peakValue) peakValue = trace[i];
+    }
+
+    for (let i = n - 1; i >= 0; i--) {
+      if (trace[i] < settleBandLow || trace[i] > settleBandHigh) {
+        settlingTime = i + 2;
+        break;
+      }
+    }
+
+    const overshoot = steadyStateValue > 0
+      ? ((peakValue - steadyStateValue) / steadyStateValue) * 100
+      : 0;
+
+    return {
+      riseTime: Math.max(0, riseEnd - riseStart),
+      overshoot: Math.max(0, overshoot),
+      settlingTime: Math.min(settlingTime, n),
+      peakValue,
+      steadyStateValue,
+      delayTime,
+    };
+  }
+
+  static generateStepResponse(
+    gain: number,
+    timeConstant: number,
+    steps: number,
+    noise: number = 0
+  ): number[] {
+    const trace: number[] = [];
+    let value = 0;
+    for (let i = 0; i < steps; i++) {
+      value += (gain * 100 - value) / timeConstant;
+      value += (Math.random() - 0.5) * noise;
+      trace.push(value);
+    }
+    return trace;
+  }
+
+  printMetrics(metrics: StepResponseMetrics): void {
+    console.log(`  Rise time: ${metrics.riseTime} samples`);
+    console.log(`  Overshoot: ${metrics.overshoot.toFixed(1)}%`);
+    console.log(`  Settling time: ${metrics.settlingTime} samples`);
+    console.log(`  Peak value: ${metrics.peakValue.toFixed(2)}`);
+    console.log(`  Steady-state value: ${metrics.steadyStateValue.toFixed(2)}`);
+    console.log(`  Delay time: ${metrics.delayTime} samples`);
+  }
+}
+
+// ─── BodePlotGenerator ─────────────────────────────────────────────────
+
+interface BodePoint {
+  frequencyRad: number;
+  magnitudeDb: number;
+  phaseDeg: number;
+}
+
+class BodePlotGenerator {
+  generate(
+    frequencies: number[],
+    numeratorZeros: number[],
+    denominatorPoles: number[],
+    gain: number
+  ): BodePoint[] {
+    return frequencies.map((omega) => {
+      const s = { real: 0, imag: omega };
+      let num = { real: gain, imag: 0 };
+      for (const zero of numeratorZeros) {
+        const term = { real: s.real - zero, imag: s.imag };
+        num = this.complexMultiply(num, term);
+      }
+      let den = { real: 1, imag: 0 };
+      for (const pole of denominatorPoles) {
+        const term = { real: s.real - pole, imag: s.imag };
+        den = this.complexMultiply(den, term);
+      }
+      const h = this.complexDivide(num, den);
+      const magnitudeDb = 20 * Math.log10(Math.sqrt(h.real * h.real + h.imag * h.imag) + 1e-15);
+      const phaseDeg = (Math.atan2(h.imag, h.real) * 180) / Math.PI;
+      return { frequencyRad: omega, magnitudeDb, phaseDeg };
+    });
+  }
+
+  private complexMultiply(a: { real: number; imag: number }, b: { real: number; imag: number }): { real: number; imag: number } {
+    return {
+      real: a.real * b.real - a.imag * b.imag,
+      imag: a.real * b.imag + a.imag * b.real,
+    };
+  }
+
+  private complexDivide(a: { real: number; imag: number }, b: { real: number; imag: number }): { real: number; imag: number } {
+    const denom = b.real * b.real + b.imag * b.imag;
+    return {
+      real: (a.real * b.real + a.imag * b.imag) / denom,
+      imag: (a.imag * b.real - a.real * b.imag) / denom,
+    };
+  }
+
+  findCrossover(data: BodePoint[]): { gainCrossover: number | null; phaseCrossover: number | null } {
+    let gainCrossover: number | null = null;
+    let phaseCrossover: number | null = null;
+    for (let i = 1; i < data.length; i++) {
+      if (data[i - 1].magnitudeDb >= 0 && data[i].magnitudeDb <= 0) gainCrossover = data[i].frequencyRad;
+      if (Math.abs(data[i].phaseDeg) >= 175 && Math.abs(data[i].phaseDeg) <= 185) phaseCrossover = data[i].frequencyRad;
+    }
+    return { gainCrossover, phaseCrossover };
+  }
+}
+
+// ─── Demo ──────────────────────────────────────────────────────────────
+
+function mainAdvancedTools() {
+  console.log("=== Advanced Loop Tooling Demo ===\n");
+
+  // 1. Loop Analyzer
+  const analyzer = new LoopAnalyzerTool();
+  const freqs = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50];
+  const testData: GainPhaseData[] = freqs.map((omega) => {
+    const mag = 5 / Math.sqrt(1 + (omega * 0.3) ** 2);
+    const phase = -Math.atan2(omega * 0.3, 1);
+    return { frequencyRad: omega, gainLinear: mag, phaseRad: phase };
+  });
+  const margins = analyzer.computeMargins(testData);
+  console.log("Loop Analyzer — Margins:");
+  console.log(`  Gain Margin: ${margins.gainMargin?.toFixed(2) ?? "N/A"} (${margins.gainMarginDb?.toFixed(1) ?? "N/A"} dB)`);
+  console.log(`  Phase Margin: ${margins.phaseMarginDeg?.toFixed(1) ?? "N/A"}°`);
+  console.log(`  Verdict: ${margins.verdict}`);
+
+  // 2. Settling Time Optimizer
+  const optimizer = new SettlingTimeOptimizer();
+  const result = optimizer.optimize([0.05, 1.5], 0.5, 100, 0.2, 50, 15);
+  console.log(`\nSettlingTime Optimizer: optimal gain=${result.optimalGain.toFixed(3)}, settle=${result.settlingTime} cycles`);
+  
+  const sweep = optimizer.gainSweep([0.1, 0.3, 0.5, 0.7, 0.9, 1.1, 1.3], 0.5, 100, 0.2, 50);
+  console.log("Gain sweep:");
+  for (const s of sweep) {
+    console.log(`  gain=${s.gain.toFixed(1)} → settle=${s.settlingTime} cycles`);
+  }
+
+  // 3. Noise Filter
+  const rawSignal: number[] = [];
+  let sig = 0;
+  for (let i = 0; i < 30; i++) {
+    sig += (100 - sig) * 0.2;
+    rawSignal.push(sig + (Math.random() - 0.5) * 30);
+  }
+  const filtered = NoiseFilter.filterNoiseTrace(rawSignal, 0.25, 5);
+  const lastRaw = rawSignal[rawSignal.length - 1];
+  const lastCombined = filtered.combined[filtered.combined.length - 1];
+  console.log(`\nNoise Filter: raw=${lastRaw.toFixed(1)} ema=${filtered.ema[filtered.ema.length - 1].toFixed(1)} median=${filtered.median[filtered.median.length - 1].toFixed(1)} combined=${lastCombined.toFixed(1)}`);
+
+  // 4. Step Response Analyzer
+  const stepTrace = StepResponseAnalyzer.generateStepResponse(0.8, 5, 40, 0.5);
+  const stepAnalyzer = new StepResponseAnalyzer();
+  const metrics = stepAnalyzer.analyze(stepTrace, 80);
+  console.log("\nStep Response Analyzer:");
+  stepAnalyzer.printMetrics(metrics);
+
+  // 5. Bode Plot Generator
+  const bode = new BodePlotGenerator();
+  const bodeFreqs = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20];
+  const points = bode.generate(bodeFreqs, [], [-5], 10);
+  console.log("\nBode Plot Generator (first 3 points):");
+  points.slice(0, 3).forEach((p) => {
+    console.log(`  ω=${p.frequencyRad.toFixed(1)} rad  |G|=${p.magnitudeDb.toFixed(1)} dB  φ=${p.phaseDeg.toFixed(1)}°`);
+  });
+  const cross = bode.findCrossover(points);
+  console.log(`  Gain crossover: ${cross.gainCrossover ?? "none"} rad/s`);
+  console.log(`  Phase crossover: ${cross.phaseCrossover ?? "none"} rad/s`);
+}
+
+mainAdvancedTools();
+```
+
+**Key concepts demonstrated:**
+- **LoopAnalyzerTool** computes gain margin, phase margin, and stability verdict from frequency-domain data; includes crossover frequency detection
+- **SettlingTimeOptimizer** uses golden-section search to find the gain that minimizes settling cycles without exhaustive sweep
+- **NoiseFilter** combines exponential moving average (smoothing) with median filtering (spike rejection) for robust feedback signal conditioning
+- **StepResponseAnalyzer** measures rise time (10%-90%), overshoot (percentage above steady state), settling time (within 2% band), peak value, and delay time
+- **BodePlotGenerator** accepts numerator zeros and denominator poles to produce magnitude/phase arrays suitable for plotting or crossover analysis
+
+---
+
 ## Summary
 
 1.  **All agent loops are feedback control systems.** The ReAct cycle (`thought → action → observation`) is a negative-feedback closed loop. Understanding control theory lets you debug convergence failures by reasoning about gain, phase, and stability.

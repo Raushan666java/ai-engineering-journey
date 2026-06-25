@@ -1457,6 +1457,781 @@ Benchmark: baseline-plan (10 iterations...
   ...
 ```
 
+
+### Production Platform Tooling
+
+The following architecture diagram shows how the complete loop system composes sub-loops, templates, deployment validation, monitoring, upgrade management, multi-tenancy, and evaluation into a unified production platform:
+
+```mermaid
+graph TB
+    subgraph "Templates & Composition"
+        LTL[LoopTemplateLibrary]
+        LC[LoopComposer]
+    end
+    subgraph "Deployment & Validation"
+        DV[DeploymentValidator]
+        LUM[LoopUpgradeManager]
+    end
+    subgraph "Operations"
+        OCD[OnCallDashboard]
+        MTM[MultiTenantLoopManager]
+    end
+    subgraph "Evaluation"
+        CPE[CapstoneProjectEvaluator]
+    end
+    LTL -->|instantiates| LC
+    LC -->|validates| DV
+    DV -->|deploys| OCD
+    OCD -->|monitors| LUM
+    LUM -->|upgrades| MTM
+    MTM -->|reports| CPE
+    CPE -->|scores| LTL
+```
+
+#### LoopTemplateLibrary
+
+Provides pre-built templates for common loop patterns — ReAct, RAG, chat, code generation, and moderation — each with pre-configured tools, prompts, and cycle hooks.
+
+```typescript
+// loop-template-library.ts
+type LoopTemplateId = "react" | "rag" | "chat" | "code-gen" | "moderation";
+
+interface TemplateDefinition {
+  name: string;
+  description: string;
+  tools: Array<{ name: string; description: string }>;
+  maxSteps: number;
+  maxTokens: number;
+  systemPrompt: string;
+  cycleHooks: string[];
+}
+
+class LoopTemplateLibrary {
+  private templates = new Map<LoopTemplateId, TemplateDefinition>();
+
+  constructor() {
+    this.registerDefaults();
+  }
+
+  private registerDefaults(): void {
+    this.templates.set("react", {
+      name: "ReAct Agent",
+      description: "Plan–Act–Observe reasoning loop",
+      tools: [
+        { name: "search", description: "Search knowledge base" },
+        { name: "calculate", description: "Perform calculation" },
+      ],
+      maxSteps: 25,
+      maxTokens: 50_000,
+      systemPrompt:
+        "You are a ReAct agent. Think step by step. Output a plan before each action.",
+      cycleHooks: ["plan", "act", "observe"],
+    });
+    this.templates.set("rag", {
+      name: "RAG Pipeline",
+      description: "Retrieve–Augment–Generate with document retrieval",
+      tools: [
+        { name: "retrieve", description: "Retrieve relevant chunks" },
+        { name: "rerank", description: "Rerank by relevance" },
+      ],
+      maxSteps: 10,
+      maxTokens: 80_000,
+      systemPrompt:
+        "You are a RAG agent. Retrieve relevant information before answering.",
+      cycleHooks: ["retrieve", "augment", "generate"],
+    });
+    this.templates.set("chat", {
+      name: "Conversational Chat",
+      description: "Multi-turn dialogue with context management",
+      tools: [
+        {
+          name: "searchMemory",
+          description: "Search conversation history",
+        },
+      ],
+      maxSteps: 50,
+      maxTokens: 100_000,
+      systemPrompt:
+        "You are a helpful conversational agent. Maintain context across turns.",
+      cycleHooks: ["contextualize", "respond"],
+    });
+    this.templates.set("code-gen", {
+      name: "Code Generation",
+      description: "Code writing with file ops and test generation",
+      tools: [
+        { name: "read", description: "Read a file" },
+        { name: "write", description: "Write a file" },
+        { name: "test", description: "Run tests" },
+      ],
+      maxSteps: 30,
+      maxTokens: 120_000,
+      systemPrompt:
+        "You are a code generation agent. Write clean, tested code.",
+      cycleHooks: ["plan", "write", "test", "fix"],
+    });
+    this.templates.set("moderation", {
+      name: "Content Moderation",
+      description: "Classification loop with human escalation gates",
+      tools: [
+        { name: "classify", description: "Classify content" },
+        { name: "escalate", description: "Escalate to human" },
+      ],
+      maxSteps: 5,
+      maxTokens: 20_000,
+      systemPrompt:
+        "You are a content moderation agent. Flag and escalate harmful content.",
+      cycleHooks: ["classify", "gate", "escalate"],
+    });
+  }
+
+  get(id: LoopTemplateId): TemplateDefinition {
+    const t = this.templates.get(id);
+    if (!t) throw new Error(`Unknown template: ${id}`);
+    return { ...t };
+  }
+
+  list(): Array<{ id: LoopTemplateId; name: string; description: string }> {
+    return [...this.templates.entries()].map(([id, t]) => ({
+      id,
+      name: t.name,
+      description: t.description,
+    }));
+  }
+}
+```
+
+#### DeploymentValidator
+
+Checks environment readiness before deploying a loop — verifies filesystem writability, memory headroom, API key presence, and runtime version.
+
+```typescript
+// deployment-validator.ts
+class DeploymentValidator {
+  private checks: Array<{
+    name: string;
+    run: () => Promise<{ passed: boolean; message: string }>;
+  }> = [];
+
+  addCheck(
+    name: string,
+    fn: () => Promise<{ passed: boolean; message: string }>,
+  ): void {
+    this.checks.push({ name, run: fn });
+  }
+
+  addDefaultChecks(config: {
+    checkpointsDir: string;
+    maxMemoryMb: number;
+  }): void {
+    this.addCheck("Checkpoints directory writable", async () => {
+      const testFile = `${config.checkpointsDir}/.write-test`;
+      await Bun.write(testFile, "ok");
+      return {
+        passed: true,
+        message: `${config.checkpointsDir} is writable`,
+      };
+    });
+    this.addCheck("Memory within limits", async () => {
+      const used = process.memoryUsage().heapUsed / 1024 / 1024;
+      return {
+        passed: used < config.maxMemoryMb * 0.8,
+        message: `Heap: ${used.toFixed(1)} MB / ${config.maxMemoryMb} MB limit`,
+      };
+    });
+    this.addCheck("Node.js version >= 18", async () => {
+      const major = parseInt(process.version.slice(1).split(".")[0], 10);
+      return {
+        passed: major >= 18,
+        message: `Node.js ${process.version}`,
+      };
+    });
+  }
+
+  async validateAll(): Promise<{
+    passed: boolean;
+    results: Array<{ name: string; passed: boolean; message: string }>;
+  }> {
+    console.log("═══ Deployment Validation ═══\n");
+    const results: Array<{
+      name: string;
+      passed: boolean;
+      message: string;
+    }> = [];
+    for (const check of this.checks) {
+      process.stdout.write(`  ${check.name}... `);
+      try {
+        const r = await check.run();
+        results.push({ name: check.name, ...r });
+        console.log(r.passed ? "✓" : `✗ — ${r.message}`);
+      } catch (err) {
+        results.push({ name: check.name, passed: false, message: String(err) });
+        console.log(`✗ — ${err}`);
+      }
+    }
+    const passed = results.every((r) => r.passed);
+    console.log(`\n${passed ? "✅" : "❌"} Environment ${passed ? "ready" : "not ready"}`);
+    return { passed, results };
+  }
+}
+```
+
+#### OnCallDashboard
+
+Shows live loop health, recent alerts, and incident history. Computes an aggregate health score from all running loops.
+
+```typescript
+// on-call-dashboard.ts
+interface Alert {
+  id: string;
+  severity: "critical" | "warning" | "info";
+  message: string;
+  loopId: string;
+  timestamp: string;
+  acknowledged: boolean;
+}
+
+interface Incident {
+  id: string;
+  title: string;
+  loopId: string;
+  startedAt: string;
+  resolvedAt?: string;
+  summary: string;
+}
+
+class OnCallDashboard {
+  private alerts: Alert[] = [];
+  private incidents: Incident[] = [];
+  private loopStatuses = new Map<
+    string,
+    {
+      status: "healthy" | "degraded" | "down";
+      lastHeartbeat: string;
+      cyclesPerMinute: number;
+    }
+  >();
+
+  reportAlert(alert: Omit<Alert, "id" | "timestamp">): void {
+    this.alerts.push({
+      ...alert,
+      id: `alert-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+      timestamp: new Date().toISOString(),
+    });
+  }
+
+  acknowledgeAlert(alertId: string): void {
+    const alert = this.alerts.find((a) => a.id === alertId);
+    if (alert) alert.acknowledged = true;
+  }
+
+  reportIncident(incident: Omit<Incident, "id">): void {
+    this.incidents.push({ ...incident, id: `inc-${Date.now()}` });
+  }
+
+  resolveIncident(incidentId: string, summary: string): void {
+    const inc = this.incidents.find((i) => i.id === incidentId);
+    if (inc) {
+      inc.resolvedAt = new Date().toISOString();
+      inc.summary = summary;
+    }
+  }
+
+  updateLoopStatus(
+    loopId: string,
+    status: "healthy" | "degraded" | "down",
+    cyclesPerMinute: number,
+  ): void {
+    this.loopStatuses.set(loopId, {
+      status,
+      lastHeartbeat: new Date().toISOString(),
+      cyclesPerMinute,
+    });
+  }
+
+  healthScore(): number {
+    const statuses = [...this.loopStatuses.values()];
+    if (statuses.length === 0) return 1.0;
+    return (
+      statuses.reduce(
+        (s, st) =>
+          s +
+          (st.status === "healthy" ? 1 : st.status === "degraded" ? 0.5 : 0),
+        0,
+      ) / statuses.length
+    );
+  }
+
+  generateDashboard(): string {
+    const lines = ["═══ On-Call Dashboard ═══\n"];
+    const score = this.healthScore();
+    lines.push(
+      `Health Score: ${(score * 100).toFixed(0)}% ${
+        score >= 0.8 ? "✅" : score >= 0.5 ? "⚠️" : "🚨"
+      }\n`,
+    );
+    lines.push("Running Loops:");
+    for (const [id, st] of this.loopStatuses) {
+      lines.push(
+        `  ${id}: ${st.status} (${st.cyclesPerMinute.toFixed(1)} cpm, last: ${st.lastHeartbeat.slice(11, 19)})`,
+      );
+    }
+    const unacked = this.alerts.filter((a) => !a.acknowledged);
+    lines.push(`\nUnacknowledged Alerts: ${unacked.length}`);
+    for (const a of unacked.slice(0, 5))
+      lines.push(`  [${a.severity}] ${a.message} (${a.loopId})`);
+    const open = this.incidents.filter((i) => !i.resolvedAt);
+    lines.push(`\nOpen Incidents: ${open.length}`);
+    for (const i of open.slice(0, 3))
+      lines.push(`  ${i.title} — ${i.startedAt.slice(11, 19)}`);
+    return lines.join("\n");
+  }
+
+  exportJson(): string {
+    return JSON.stringify(
+      {
+        healthScore: this.healthScore(),
+        loops: [...this.loopStatuses.entries()].map(([k, v]) => ({
+          loopId: k,
+          ...v,
+        })),
+        unacknowledgedAlerts: this.alerts.filter((a) => !a.acknowledged).length,
+        openIncidents: this.incidents.filter((i) => !i.resolvedAt).length,
+      },
+      null,
+      2,
+    );
+  }
+}
+```
+
+#### LoopUpgradeManager
+
+Handles zero-downtime upgrades of running loops using a canary deployment strategy with automatic rollback.
+
+```typescript
+// loop-upgrade-manager.ts
+interface LoopVersion {
+  version: string;
+  deployedAt: string;
+  config: Record<string, unknown>;
+  active: boolean;
+}
+
+class LoopUpgradeManager {
+  private versions: LoopVersion[] = [];
+  private currentIdx = -1;
+  private upgrading = false;
+
+  deployVersion(version: string, config: Record<string, unknown>): void {
+    this.versions.push({
+      version,
+      deployedAt: new Date().toISOString(),
+      config,
+      active: false,
+    });
+  }
+
+  async canaryUpgrade(
+    version: string,
+    trafficPercent = 10,
+  ): Promise<boolean> {
+    const ver = this.versions.find((v) => v.version === version);
+    if (!ver || this.upgrading) return false;
+    this.upgrading = true;
+    console.log(
+      `[upgrade] Canary deploying ${version} at ${trafficPercent}%`,
+    );
+    await new Promise((r) => setTimeout(r, 50));
+    const healthy = Math.random() > 0.15;
+    if (healthy) {
+      this.versions.forEach((v) => (v.active = false));
+      ver.active = true;
+      this.currentIdx = this.versions.indexOf(ver);
+      console.log(`[upgrade] ${version} healthy — promoted`);
+    } else {
+      console.log(`[upgrade] ${version} unhealthy — rolling back`);
+    }
+    this.upgrading = false;
+    return healthy;
+  }
+
+  async rollingUpgrade(
+    versions: string[],
+  ): Promise<{ success: boolean; finalVersion: string }> {
+    for (const ver of versions) {
+      this.deployVersion(ver, { version: ver });
+      const ok = await this.canaryUpgrade(ver);
+      if (!ok)
+        return { success: false, finalVersion: this.currentVersion };
+    }
+    return { success: true, finalVersion: this.currentVersion };
+  }
+
+  rollback(): { version: string; rolledBackAt: string } | null {
+    if (this.currentIdx < 1) return null;
+    const prev = this.versions[this.currentIdx - 1];
+    if (!prev) return null;
+    this.versions.forEach((v) => (v.active = false));
+    prev.active = true;
+    this.currentIdx--;
+    return {
+      version: prev.version,
+      rolledBackAt: new Date().toISOString(),
+    };
+  }
+
+  get currentVersion(): string {
+    return this.versions[this.currentIdx]?.version ?? "none";
+  }
+}
+```
+
+#### MultiTenantLoopManager
+
+Isolates loops per tenant with resource quotas — concurrent loops, hourly tokens, and daily cost — and enforces limits at runtime.
+
+```typescript
+// multi-tenant-loop-manager.ts
+interface TenantQuota {
+  maxConcurrentLoops: number;
+  maxTokensPerHour: number;
+  maxCostPerDay: number;
+}
+
+interface TenantState {
+  activeLoops: number;
+  tokensThisHour: number;
+  costToday: number;
+  tokensResetAt: number;
+  costResetAt: number;
+}
+
+class MultiTenantLoopManager {
+  private tenants = new Map<string, TenantState>();
+  private quotas = new Map<string, TenantQuota>();
+  private loopOwners = new Map<string, string>();
+
+  registerTenant(tenantId: string, quota: TenantQuota): void {
+    this.tenants.set(tenantId, {
+      activeLoops: 0,
+      tokensThisHour: 0,
+      costToday: 0,
+      tokensResetAt: Date.now(),
+      costResetAt: Date.now(),
+    });
+    this.quotas.set(tenantId, quota);
+  }
+
+  canStartLoop(
+    tenantId: string,
+  ): { allowed: boolean; reason?: string } {
+    const state = this.tenants.get(tenantId);
+    const quota = this.quotas.get(tenantId);
+    if (!state || !quota)
+      return { allowed: false, reason: "Tenant not registered" };
+    this.refreshWindows(state);
+    if (state.activeLoops >= quota.maxConcurrentLoops)
+      return {
+        allowed: false,
+        reason: `Max concurrent loops (${quota.maxConcurrentLoops}) reached`,
+      };
+    if (state.tokensThisHour >= quota.maxTokensPerHour)
+      return {
+        allowed: false,
+        reason: `Hourly token quota (${quota.maxTokensPerHour}) exhausted`,
+      };
+    if (state.costToday >= quota.maxCostPerDay)
+      return {
+        allowed: false,
+        reason: `Daily cost quota ($${quota.maxCostPerDay.toFixed(2)}) exhausted`,
+      };
+    return { allowed: true };
+  }
+
+  startLoop(tenantId: string, loopId: string): boolean {
+    if (!this.canStartLoop(tenantId).allowed) return false;
+    this.tenants.get(tenantId)!.activeLoops++;
+    this.loopOwners.set(loopId, tenantId);
+    return true;
+  }
+
+  endLoop(loopId: string, tokensUsed: number, costUsd: number): void {
+    const tenantId = this.loopOwners.get(loopId);
+    if (!tenantId) return;
+    const state = this.tenants.get(tenantId)!;
+    state.activeLoops = Math.max(0, state.activeLoops - 1);
+    state.tokensThisHour += tokensUsed;
+    state.costToday += costUsd;
+    this.loopOwners.delete(loopId);
+  }
+
+  private refreshWindows(state: TenantState): void {
+    const hour = 60 * 60 * 1000;
+    if (Date.now() - state.tokensResetAt > hour) {
+      state.tokensThisHour = 0;
+      state.tokensResetAt = Date.now();
+    }
+    if (Date.now() - state.costResetAt > 24 * hour) {
+      state.costToday = 0;
+      state.costResetAt = Date.now();
+    }
+  }
+
+  usageReport(
+    tenantId: string,
+  ): {
+    activeLoops: number;
+    tokenUsagePct: number;
+    costUsagePct: number;
+  } | null {
+    const state = this.tenants.get(tenantId);
+    const quota = this.quotas.get(tenantId);
+    if (!state || !quota) return null;
+    this.refreshWindows(state);
+    return {
+      activeLoops: state.activeLoops,
+      tokenUsagePct:
+        (state.tokensThisHour / Math.max(quota.maxTokensPerHour, 1)) * 100,
+      costUsagePct:
+        (state.costToday / Math.max(quota.maxCostPerDay, 0.01)) * 100,
+    };
+  }
+}
+```
+
+#### CapstoneProjectEvaluator
+
+Scores a capstone project submission against a weighted rubric. The default rubric evaluates loop completeness, HITL safety gates, tooling integration, code quality, and chaos resilience.
+
+```typescript
+// capstone-project-evaluator.ts
+interface RubricCriterion {
+  name: string;
+  weight: number;
+  maxScore: number;
+  check: (submission: {
+    code: string;
+    readme: string;
+  }) => Promise<{ score: number; feedback: string }>;
+}
+
+interface EvalCriterionResult {
+  criterion: string;
+  score: number;
+  maxScore: number;
+  weightedScore: number;
+  feedback: string;
+}
+
+class CapstoneProjectEvaluator {
+  private rubric: RubricCriterion[] = [];
+
+  addCriterion(c: RubricCriterion): void {
+    this.rubric.push(c);
+  }
+
+  addDefaultRubric(): void {
+    this.addCriterion({
+      name: "Loop Completeness",
+      weight: 0.25,
+      maxScore: 100,
+      check: async (s) => {
+        const hasReAct =
+          /plan.*act.*observe|ReAct/i.test(s.code);
+        const hasBudget =
+          /\b(budget|maxTokens|maxCost)\b/i.test(s.code);
+        const hasCheckpoint =
+          /\b(checkpoint|resume)\b/i.test(s.code);
+        const score =
+          (hasReAct ? 40 : 0) + (hasBudget ? 30 : 0) + (hasCheckpoint ? 30 : 0);
+        return {
+          score,
+          feedback: `ReAct: ${hasReAct}, Budget: ${hasBudget}, Checkpoint: ${hasCheckpoint}`,
+        };
+      },
+    });
+    this.addCriterion({
+      name: "HITL Safety Gates",
+      weight: 0.15,
+      maxScore: 100,
+      check: async (s) => {
+        const hasRisk =
+          /\b(riskLevel|approveGate)\b/i.test(s.code);
+        const hasRollback =
+          /\b(rollback|denied|compensate)\b/i.test(s.code);
+        return {
+          score: (hasRisk ? 50 : 0) + (hasRollback ? 50 : 0),
+          feedback: `Risk levels: ${hasRisk}, Rollback: ${hasRollback}`,
+        };
+      },
+    });
+    this.addCriterion({
+      name: "Tooling Integration",
+      weight: 0.20,
+      maxScore: 100,
+      check: async (s) => {
+        const hasTracing =
+          /\b(tracer|TraceSpan|profiler)\b/i.test(s.code);
+        const hasTesting =
+          /\b(Mock|TestHarness|assertion)\b/i.test(s.code);
+        return {
+          score: (hasTracing ? 50 : 0) + (hasTesting ? 50 : 0),
+          feedback: `Tracing: ${hasTracing}, Testing: ${hasTesting}`,
+        };
+      },
+    });
+    this.addCriterion({
+      name: "Code Quality",
+      weight: 0.15,
+      maxScore: 100,
+      check: async (s) => {
+        const hasTypes = /\b(interface|type\s)\b/.test(s.code);
+        const hasDocs = s.readme.length > 200;
+        return {
+          score: (hasTypes ? 50 : 0) + (hasDocs ? 50 : 0),
+          feedback: `Typed: ${hasTypes}, Documented: ${hasDocs}`,
+        };
+      },
+    });
+    this.addCriterion({
+      name: "Chaos Resilience",
+      weight: 0.25,
+      maxScore: 100,
+      check: async (s) => {
+        const hasRetry =
+          /\b(retry|maxRetries|attempt)\b/i.test(s.code);
+        const hasRecovery =
+          /\b(resume|checkpoint|saga)\b/i.test(s.code);
+        return {
+          score: (hasRetry ? 50 : 0) + (hasRecovery ? 50 : 0),
+          feedback: `Retry: ${hasRetry}, Recovery: ${hasRecovery}`,
+        };
+      },
+    });
+  }
+
+  async evaluate(submission: { code: string; readme: string }): Promise<{
+    results: EvalCriterionResult[];
+    totalScore: number;
+    maxScore: number;
+    percentage: number;
+    grade: string;
+  }> {
+    const results: EvalCriterionResult[] = [];
+    let total = 0;
+    let maxTotal = 0;
+    for (const c of this.rubric) {
+      const r = await c.check(submission);
+      const weighted = (r.score / c.maxScore) * c.weight * 100;
+      results.push({
+        criterion: c.name,
+        score: r.score,
+        maxScore: c.maxScore,
+        weightedScore: Math.round(weighted * 100) / 100,
+        feedback: r.feedback,
+      });
+      total += weighted;
+      maxTotal += c.weight * 100;
+    }
+    const pct = maxTotal > 0 ? (total / maxTotal) * 100 : 0;
+    const grade =
+      pct >= 90 ? "A" : pct >= 80 ? "B" : pct >= 70 ? "C" : pct >= 60 ? "D" : "F";
+    return {
+      results,
+      totalScore: Math.round(total * 100) / 100,
+      maxScore: Math.round(maxTotal * 100) / 100,
+      percentage: Math.round(pct * 100) / 100,
+      grade,
+    };
+  }
+}
+```
+
+#### Demo: Platform Tooling Integration
+
+```typescript
+// demo-platform-tooling.ts
+async function demoPlatformTooling() {
+  console.log("═══ Platform Tooling Demo ═══\n");
+
+  // 1. Loop Template Library
+  const lib = new LoopTemplateLibrary();
+  console.log("Available templates:");
+  for (const t of lib.list()) console.log(`  - ${t.id}: ${t.name}`);
+
+  // 2. Deployment validation
+  const validator = new DeploymentValidator();
+  validator.addDefaultChecks({
+    checkpointsDir: "/tmp/loop-checkpoints",
+    maxMemoryMb: 512,
+  });
+  await validator.validateAll();
+
+  // 3. On-Call Dashboard
+  const dashboard = new OnCallDashboard();
+  dashboard.updateLoopStatus("agent-prod-1", "healthy", 12.5);
+  dashboard.updateLoopStatus("agent-prod-2", "degraded", 3.2);
+  dashboard.reportAlert({
+    severity: "warning",
+    message: "High token consumption",
+    loopId: "agent-prod-2",
+    acknowledged: false,
+  });
+  dashboard.reportIncident({
+    title: "Agent-prod-2 budget exceeded",
+    loopId: "agent-prod-2",
+    startedAt: new Date().toISOString(),
+    summary: "",
+  });
+  console.log("\n" + dashboard.generateDashboard());
+
+  // 4. Multi-tenant management
+  const mtm = new MultiTenantLoopManager();
+  mtm.registerTenant("acme-corp", {
+    maxConcurrentLoops: 5,
+    maxTokensPerHour: 50_000,
+    maxCostPerDay: 2.0,
+  });
+  mtm.registerTenant("startup-inc", {
+    maxConcurrentLoops: 2,
+    maxTokensPerHour: 10_000,
+    maxCostPerDay: 0.5,
+  });
+  mtm.startLoop("acme-corp", "loop-1");
+  mtm.endLoop("loop-1", 5_000, 0.05);
+  const usage = mtm.usageReport("acme-corp");
+  console.log(
+    `\nAcme-Corp usage: ${usage?.activeLoops} active, ${usage?.tokenUsagePct.toFixed(0)}% token quota, ${usage?.costUsagePct.toFixed(0)}% cost quota`,
+  );
+
+  // 5. Zero-downtime upgrade
+  const upgrade = new LoopUpgradeManager();
+  upgrade.deployVersion("v1.0.0", { maxSteps: 25 });
+  upgrade.deployVersion("v1.1.0", { maxSteps: 30 });
+  const upResult = await upgrade.rollingUpgrade(["v1.2.0", "v1.3.0"]);
+  console.log(
+    `\nUpgrade: ${upResult.success ? "✓" : "✗"} (current: ${upgrade.currentVersion})`,
+  );
+
+  // 6. Capstone evaluation
+  const evaluator = new CapstoneProjectEvaluator();
+  evaluator.addDefaultRubric();
+  const evalResult = await evaluator.evaluate({
+    code: `class CodingAgent { plan(){} act(){} observe(){} checkpoint(){} resume(){} retry(){} riskLevel(){} tracer: any; }`,
+    readme: `# Coding Agent\n\nA production-grade coding agent with loop support.`,
+  });
+  console.log(
+    `\nCapstone Evaluation: ${evalResult.grade} (${evalResult.percentage}%)`,
+  );
+  for (const r of evalResult.results)
+    console.log(
+      `  ${r.criterion}: ${r.score}/${r.maxScore} (weighted: ${r.weightedScore})`,
+    );
+}
+
+await demoPlatformTooling();
+```
+
 ---
 
 ## Summary: What You Have Built

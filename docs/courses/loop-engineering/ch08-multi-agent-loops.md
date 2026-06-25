@@ -1536,15 +1536,722 @@ async function main() {
 main();
 ```
 
----
+### Mermaid: Supervisor-Worker Architecture with Health Checks
 
-## 3. Summary
+```mermaid
+flowchart TD
+    subgraph Supervisor["Supervisor Node"]
+        A[Task Queue] --> B[Task Decomposition Engine]
+        B --> C[Dynamic Agent Spawner]
+        C --> D[Worker Pool]
+    end
 
-- **Supervisor loops** use a central orchestrator that decomposes tasks, dispatches to workers, and aggregates results. Best for well-structured problems with clear subtask boundaries.
-- **Debate loops** produce higher-quality reasoning through adversarial argumentation. A judge evaluates clarity, evidence, logic, and responsiveness. Best for open-ended questions and critical decisions.
-- **Negotiation loops** model resource exchange between agents with different utility functions. Concession strategies (Boulware, Conceder, Tit-for-Tat) control the pace of convergence. Best for resource allocation and compromise scenarios.
-- **Consensus loops** use BFT-style voting to reach agreement despite faulty agents. Quorum thresholds determine fault tolerance. Tie-breaking strategies handle split outcomes. Best for decisions requiring broad agreement.
-- **Swarm loops** achieve emergent coordination from simple per-agent rules with no central control. Stigmergy and pheromone maps enable indirect communication. Best for large-scale exploration and optimization problems.
+    subgraph Workers["Worker Pool"]
+        E[Worker Alpha] --> F[Capability: research]
+        G[Worker Beta] --> H[Capability: code]
+        I[Worker Gamma] --> J[Capability: review]
+        K[Worker Delta] --> L[Capability: test]
+    end
+
+    subgraph Observability["Observability"]
+        M[Agent Capability Registry]
+        N[Agent Log Collector]
+        O[Voting Aggregator]
+        P[Health Monitor]
+    end
+
+    Supervisor --> Workers
+    Workers --> Observability
+    P -.->|health status| Supervisor
+    O -->|consensus| Supervisor
+```
+
+### Extended Implementation: Capability Registry, Task Decomposition, Voting Aggregator, Log Collector, and Dynamic Spawner
+
+```typescript
+/// <reference types="node" />
+
+import { randomUUID } from "node:crypto";
+
+// ── AgentCapabilityRegistry ─────────────────────────────────────
+interface AgentCapability {
+  agentId: string;
+  agentName: string;
+  capabilities: string[];
+  maxLoad: number;
+  currentLoad: number;
+  avgLatencyMs: number;
+  successRate: number;
+  lastHeartbeat: number;
+}
+
+interface CapabilityQuery {
+  requiredCapabilities: string[];
+  maxLoad?: number;
+  minSuccessRate?: number;
+}
+
+class AgentCapabilityRegistry {
+  private agents: Map<string, AgentCapability> = new Map();
+  private capabilityIndex: Map<string, Set<string>> = new Map(); // capability -> agentIds
+
+  register(agent: AgentCapability): void {
+    this.agents.set(agent.agentId, agent);
+    for (const cap of agent.capabilities) {
+      const existing = this.capabilityIndex.get(cap) ?? new Set();
+      existing.add(agent.agentId);
+      this.capabilityIndex.set(cap, existing);
+    }
+  }
+
+  unregister(agentId: string): boolean {
+    const agent = this.agents.get(agentId);
+    if (!agent) return false;
+    for (const cap of agent.capabilities) {
+      this.capabilityIndex.get(cap)?.delete(agentId);
+    }
+    return this.agents.delete(agentId);
+  }
+
+  /** Find agents matching a capability query. */
+  query(query: CapabilityQuery): AgentCapability[] {
+    const candidates = [...this.agents.values()].filter((agent) => {
+      const hasAllCaps = query.requiredCapabilities.every(
+        (cap) => agent.capabilities.includes(cap),
+      );
+      if (!hasAllCaps) return false;
+      if (query.maxLoad !== undefined && agent.currentLoad >= query.maxLoad) return false;
+      if (query.minSuccessRate !== undefined && agent.successRate < query.minSuccessRate) return false;
+      return true;
+    });
+    return candidates.sort((a, b) => a.currentLoad - b.currentLoad);
+  }
+
+  /** Find agents that have all of the required capabilities. */
+  findByCapabilities(capabilities: string[]): AgentCapability[] {
+    return this.query({ requiredCapabilities: capabilities });
+  }
+
+  /** Update agent heartbeat and load. */
+  heartbeat(agentId: string, load: number, latencyMs: number, success: boolean): boolean {
+    const agent = this.agents.get(agentId);
+    if (!agent) return false;
+    agent.currentLoad = load;
+    agent.avgLatencyMs = (agent.avgLatencyMs + latencyMs) / 2;
+    agent.lastHeartbeat = Date.now();
+    agent.successRate = success
+      ? Math.min(1, agent.successRate + 0.01)
+      : Math.max(0, agent.successRate - 0.05);
+    return true;
+  }
+
+  /** Get agents that haven't sent a heartbeat recently. */
+  getStaleAgents(timeoutMs: number = 30000): AgentCapability[] {
+    const now = Date.now();
+    return [...this.agents.values()].filter((a) => now - a.lastHeartbeat > timeoutMs);
+  }
+
+  /** Get all registered capabilities across all agents. */
+  getCapabilityCatalog(): string[] {
+    return [...this.capabilityIndex.keys()].sort();
+  }
+
+  /** Report overall registry health. */
+  report(): {
+    totalAgents: number;
+    totalCapabilities: number;
+    avgSuccessRate: number;
+    avgLoad: number;
+    staleAgents: number;
+  } {
+    const all = [...this.agents.values()];
+    return {
+      totalAgents: all.length,
+      totalCapabilities: this.capabilityIndex.size,
+      avgSuccessRate: all.length > 0
+        ? all.reduce((s, a) => s + a.successRate, 0) / all.length
+        : 0,
+      avgLoad: all.length > 0
+        ? all.reduce((s, a) => s + a.currentLoad, 0) / all.length
+        : 0,
+      staleAgents: this.getStaleAgents().length,
+    };
+  }
+}
+
+// ── TaskDecompositionEngine ─────────────────────────────────────
+interface DecomposedTask {
+  id: string;
+  parentId: string | null;
+  description: string;
+  requiredCapabilities: string[];
+  priority: number;
+  dependencies: string[]; // task IDs that must complete first
+  estimatedComplexity: number;
+}
+
+interface DecompositionStrategy {
+  maxDepth: number;
+  maxSubtasks: number;
+  granularity: "coarse" | "medium" | "fine";
+}
+
+class TaskDecompositionEngine {
+  private decompositions: Map<string, DecomposedTask[]> = new Map();
+
+  constructor(private strategy: DecompositionStrategy) {}
+
+  /** Decompose a high-level task into subtasks. */
+  decompose(
+    parentId: string,
+    description: string,
+    capabilities: string[],
+    depth: number = 0,
+  ): DecomposedTask[] {
+    if (depth >= this.strategy.maxDepth) {
+      const leaf: DecomposedTask = {
+        id: randomUUID().slice(0, 8),
+        parentId,
+        description,
+        requiredCapabilities: capabilities,
+        priority: 5,
+        dependencies: [],
+        estimatedComplexity: 1,
+      };
+      this.decompositions.set(parentId, [leaf]);
+      return [leaf];
+    }
+
+    const subtasks = this.splitTask(description, capabilities, depth);
+    this.decompositions.set(parentId, subtasks);
+    return subtasks;
+  }
+
+  /** Split a task into smaller pieces based on granularity. */
+  private splitTask(
+    description: string,
+    capabilities: string[],
+    depth: number,
+  ): DecomposedTask[] {
+    const numSubtasks = Math.max(1, Math.min(
+      this.strategy.maxSubtasks,
+      this.strategy.granularity === "fine" ? 6 :
+      this.strategy.granularity === "medium" ? 4 : 2,
+    ));
+
+    const subtasks: DecomposedTask[] = [];
+    const words = description.split(" ");
+    const chunkSize = Math.max(1, Math.ceil(words.length / numSubtasks));
+
+    for (let i = 0; i < numSubtasks; i++) {
+      const start = i * chunkSize;
+      const end = Math.min(start + chunkSize, words.length);
+      const chunk = words.slice(start, end).join(" ");
+
+      subtasks.push({
+        id: randomUUID().slice(0, 8),
+        parentId: description,
+        description: chunk,
+        requiredCapabilities: capabilities,
+        priority: 5 - Math.min(4, depth),
+        dependencies: i > 0 ? [subtasks[i - 1].id] : [],
+        estimatedComplexity: chunk.length / description.length,
+      });
+    }
+
+    return subtasks;
+  }
+
+  /** Build a dependency-ordered execution plan. */
+  buildExecutionPlan(taskId: string): DecomposedTask[] {
+    const tasks = this.decompositions.get(taskId);
+    if (!tasks) return [];
+
+    // Topological sort by dependencies
+    const sorted: DecomposedTask[] = [];
+    const visited = new Set<string>();
+
+    const visit = (task: DecomposedTask) => {
+      if (visited.has(task.id)) return;
+      visited.add(task.id);
+      for (const depId of task.dependencies) {
+        const dep = tasks.find((t) => t.id === depId);
+        if (dep) visit(dep);
+      }
+      sorted.push(task);
+    };
+
+    for (const task of tasks) {
+      visit(task);
+    }
+
+    return sorted;
+  }
+
+  /** Get decomposition statistics. */
+  stats(taskId: string): { totalSubtasks: number; depth: number; parallelGroups: number } | null {
+    const tasks = this.decompositions.get(taskId);
+    if (!tasks) return null;
+    const maxDepth = new Set(tasks.map((t) => t.parentId)).size;
+    const rootCount = tasks.filter((t) => t.dependencies.length === 0).length;
+    return {
+      totalSubtasks: tasks.length,
+      depth: maxDepth,
+      parallelGroups: rootCount,
+    };
+  }
+}
+
+// ── VotingAggregator ────────────────────────────────────────────
+type VotingStrategy = "majority" | "weighted" | "ranked_choice" | "borda_count";
+
+interface VoterInput {
+  agentId: string;
+  vote: string;
+  weight: number;
+  rankings?: string[]; // for ranked-choice: ordered list of preferences
+}
+
+interface VotingResult {
+  winner: string | null;
+  voteDistribution: Record<string, number>;
+  totalVotes: number;
+  strategy: VotingStrategy;
+  rounds?: number;
+}
+
+class VotingAggregator {
+  constructor(private defaultStrategy: VotingStrategy = "majority") {}
+
+  /** Count votes using the specified strategy. */
+  tally(votes: VoterInput[], strategy?: VotingStrategy): VotingResult {
+    const s = strategy ?? this.defaultStrategy;
+
+    switch (s) {
+      case "majority":
+        return this.majorityTally(votes);
+      case "weighted":
+        return this.weightedTally(votes);
+      case "ranked_choice":
+        return this.rankedChoiceTally(votes);
+      case "borda_count":
+        return this.bordaCountTally(votes);
+    }
+  }
+
+  /** Simple majority: most votes wins. */
+  private majorityTally(votes: VoterInput[]): VotingResult {
+    const counts: Record<string, number> = {};
+    for (const v of votes) {
+      counts[v.vote] = (counts[v.vote] ?? 0) + 1;
+    }
+    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+    const totalVotes = votes.length;
+    return {
+      winner: sorted.length > 0 ? sorted[0][0] : null,
+      voteDistribution: counts,
+      totalVotes,
+      strategy: "majority",
+    };
+  }
+
+  /** Weighted voting: each vote counts according to the voter's weight. */
+  private weightedTally(votes: VoterInput[]): VotingResult {
+    const counts: Record<string, number> = {};
+    for (const v of votes) {
+      counts[v.vote] = (counts[v.vote] ?? 0) + v.weight;
+    }
+    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+    const totalWeight = votes.reduce((s, v) => s + v.weight, 0);
+    return {
+      winner: sorted.length > 0 ? sorted[0][0] : null,
+      voteDistribution: counts,
+      totalVotes: totalWeight,
+      strategy: "weighted",
+    };
+  }
+
+  /** Ranked-choice voting: eliminate lowest until majority. */
+  private rankedChoiceTally(votes: VoterInput[]): VotingResult {
+    const activeCandidates = new Set<string>();
+    for (const v of votes) {
+      if (v.rankings) {
+        for (const r of v.rankings) activeCandidates.add(r);
+      } else {
+        activeCandidates.add(v.vote);
+      }
+    }
+
+    let round = 0;
+    while (activeCandidates.size > 1) {
+      round++;
+      const counts: Record<string, number> = {};
+      for (const v of votes) {
+        const currentVote = this.currentRankedVote(v, [...activeCandidates]);
+        if (currentVote) {
+          counts[currentVote] = (counts[currentVote] ?? 0) + 1;
+        }
+      }
+
+      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      if (sorted.length === 0) break;
+
+      // Check if any candidate has majority
+      const totalVotes = votes.length;
+      if (sorted[0][1] > totalVotes / 2) {
+        return {
+          winner: sorted[0][0],
+          voteDistribution: counts,
+          totalVotes,
+          strategy: "ranked_choice",
+          rounds: round,
+        };
+      }
+
+      // Eliminate lowest
+      const eliminated = sorted[sorted.length - 1][0];
+      activeCandidates.delete(eliminated);
+    }
+
+    const remaining = [...activeCandidates];
+    return {
+      winner: remaining[0] ?? null,
+      voteDistribution: {},
+      totalVotes: votes.length,
+      strategy: "ranked_choice",
+      rounds: round,
+    };
+  }
+
+  /** Get the highest-ranked still-active candidate. */
+  private currentRankedVote(voter: VoterInput, activeCandidates: string[]): string | null {
+    if (voter.rankings) {
+      for (const r of voter.rankings) {
+        if (activeCandidates.includes(r)) return r;
+      }
+    }
+    return activeCandidates.includes(voter.vote) ? voter.vote : null;
+  }
+
+  /** Borda count: points assigned by rank position. */
+  private bordaCountTally(votes: VoterInput[]): VotingResult {
+    const points: Record<string, number> = {};
+
+    for (const v of votes) {
+      const rankings = v.rankings ?? [v.vote];
+      const numOptions = rankings.length;
+      for (let i = 0; i < rankings.length; i++) {
+        // Points: (numOptions - i - 1) per voter
+        points[rankings[i]] = (points[rankings[i]] ?? 0) + (numOptions - i);
+      }
+    }
+
+    const sorted = Object.entries(points).sort((a, b) => b[1] - a[1]);
+    return {
+      winner: sorted.length > 0 ? sorted[0][0] : null,
+      voteDistribution: points,
+      totalVotes: votes.length,
+      strategy: "borda_count",
+    };
+  }
+}
+
+// ── AgentLogCollector ───────────────────────────────────────────
+interface LogEntry {
+  id: string;
+  correlationId: string;
+  agentId: string;
+  level: "debug" | "info" | "warn" | "error";
+  message: string;
+  timestamp: number;
+  metadata: Record<string, unknown>;
+}
+
+interface LogQuery {
+  correlationId?: string;
+  agentId?: string;
+  level?: string;
+  since?: number;
+  until?: number;
+  limit?: number;
+}
+
+class AgentLogCollector {
+  private logs: LogEntry[] = [];
+  private maxEntries: number;
+
+  constructor(maxEntries: number = 100000) {
+    this.maxEntries = maxEntries;
+  }
+
+  /** Write a log entry. */
+  log(
+    correlationId: string,
+    agentId: string,
+    level: LogEntry["level"],
+    message: string,
+    metadata: Record<string, unknown> = {},
+  ): LogEntry {
+    const entry: LogEntry = {
+      id: randomUUID().slice(0, 12),
+      correlationId,
+      agentId,
+      level,
+      message,
+      timestamp: Date.now(),
+      metadata,
+    };
+    this.logs.push(entry);
+    if (this.logs.length > this.maxEntries) {
+      this.logs = this.logs.slice(-this.maxEntries);
+    }
+    return entry;
+  }
+
+  /** Convenience methods. */
+  info(correlationId: string, agentId: string, message: string, meta?: Record<string, unknown>): LogEntry {
+    return this.log(correlationId, agentId, "info", message, meta);
+  }
+
+  warn(correlationId: string, agentId: string, message: string, meta?: Record<string, unknown>): LogEntry {
+    return this.log(correlationId, agentId, "warn", message, meta);
+  }
+
+  error(correlationId: string, agentId: string, message: string, meta?: Record<string, unknown>): LogEntry {
+    return this.log(correlationId, agentId, "error", message, meta);
+  }
+
+  debug(correlationId: string, agentId: string, message: string, meta?: Record<string, unknown>): LogEntry {
+    return this.log(correlationId, agentId, "debug", message, meta);
+  }
+
+  /** Query logs with filters. */
+  query(query: LogQuery): LogEntry[] {
+    return this.logs.filter((entry) => {
+      if (query.correlationId && entry.correlationId !== query.correlationId) return false;
+      if (query.agentId && entry.agentId !== query.agentId) return false;
+      if (query.level && entry.level !== query.level) return false;
+      if (query.since && entry.timestamp < query.since) return false;
+      if (query.until && entry.timestamp > query.until) return false;
+      return true;
+    }).slice(0, query.limit ?? 1000);
+  }
+
+  /** Build a trace for a specific correlation ID. */
+  buildTrace(correlationId: string): {
+    entries: LogEntry[];
+    duration: number;
+    errorCount: number;
+    agentSequence: string[];
+  } {
+    const entries = this.query({ correlationId });
+    const errorCount = entries.filter((e) => e.level === "error").length;
+    const agentSequence = [...new Set(entries.map((e) => e.agentId))];
+    const duration = entries.length > 1
+      ? entries[entries.length - 1].timestamp - entries[0].timestamp
+      : 0;
+    return { entries, duration, errorCount, agentSequence };
+  }
+
+  /** Get aggregate stats. */
+  stats(): { totalEntries: number; errorCount: number; uniqueAgents: number; uniqueCorrelations: number } {
+    const errorCount = this.logs.filter((e) => e.level === "error").length;
+    const uniqueAgents = new Set(this.logs.map((e) => e.agentId)).size;
+    const uniqueCorrelations = new Set(this.logs.map((e) => e.correlationId)).size;
+    return { totalEntries: this.logs.length, errorCount, uniqueAgents, uniqueCorrelations };
+  }
+
+  reset(): void {
+    this.logs = [];
+  }
+}
+
+// ── DynamicAgentSpawner ─────────────────────────────────────────
+interface SpawnerConfig {
+  minAgents: number;
+  maxAgents: number;
+  scaleUpThreshold: number;  // queue depth per agent to trigger scale-up
+  scaleDownThreshold: number; // queue depth per agent to trigger scale-down
+  cooldownMs: number;
+  agentFactory: (id: string) => Promise<{ id: string; capabilities: string[] }>;
+}
+
+interface SpawnerState {
+  activeAgents: number;
+  queueDepth: number;
+  desiredAgents: number;
+  lastScaleEvent: number;
+  totalSpawned: number;
+  totalDestroyed: number;
+}
+
+class DynamicAgentSpawner {
+  private agents: Map<string, { id: string; capabilities: string[]; busy: boolean }> = new Map();
+  private queue: string[] = [];
+  private state: SpawnerState;
+  private scaleTimer: ReturnType<typeof setInterval> | null = null;
+
+  constructor(private config: SpawnerConfig) {
+    this.state = {
+      activeAgents: 0,
+      queueDepth: 0,
+      desiredAgents: config.minAgents,
+      lastScaleEvent: Date.now(),
+      totalSpawned: 0,
+      totalDestroyed: 0,
+    };
+  }
+
+  async initialize(): Promise<void> {
+    for (let i = 0; i < this.config.minAgents; i++) {
+      await this.spawnAgent();
+    }
+    this.scaleTimer = setInterval(() => this.evaluateScaling(), this.config.cooldownMs);
+  }
+
+  get status(): SpawnerState {
+    return { ...this.state, activeAgents: this.agents.size, queueDepth: this.queue.length };
+  }
+
+  /** Submit a task to the queue. */
+  async submit(task: string): Promise<string> {
+    const available = [...this.agents.values()].find((a) => !a.busy);
+    if (available) {
+      available.busy = true;
+      this.state.activeAgents++;
+      return task;
+    }
+    this.queue.push(task);
+    this.state.queueDepth = this.queue.length;
+    return task;
+  }
+
+  /** Mark an agent as available. */
+  complete(agentId: string): void {
+    const agent = this.agents.get(agentId);
+    if (agent) {
+      agent.busy = false;
+      this.state.activeAgents = Math.max(0, this.state.activeAgents - 1);
+    }
+    // Dispatch queued task if available
+    if (this.queue.length > 0) {
+      const nextAvailable = [...this.agents.values()].find((a) => !a.busy);
+      if (nextAvailable) {
+        this.queue.shift();
+        nextAvailable.busy = true;
+        this.state.activeAgents++;
+        this.state.queueDepth = this.queue.length;
+      }
+    }
+  }
+
+  /** Evaluate whether to scale up or down. */
+  private async evaluateScaling(): Promise<void> {
+    const now = Date.now();
+    if (now - this.state.lastScaleEvent < this.config.cooldownMs) return;
+
+    const queuePerAgent = this.queue.length / Math.max(this.agents.size, 1);
+
+    if (queuePerAgent > this.config.scaleUpThreshold && this.agents.size < this.config.maxAgents) {
+      await this.spawnAgent();
+      this.state.lastScaleEvent = now;
+    } else if (
+      queuePerAgent < this.config.scaleDownThreshold &&
+      this.agents.size > this.config.minAgents
+    ) {
+      await this.destroyAgent();
+      this.state.lastScaleEvent = now;
+    }
+
+    this.state.desiredAgents = Math.max(
+      this.config.minAgents,
+      Math.min(this.config.maxAgents, Math.ceil(queuePerAgent * 2)),
+    );
+  }
+
+  private async spawnAgent(): Promise<void> {
+    const id = `agent_${randomUUID().slice(0, 6)}`;
+    const agent = await this.config.agentFactory(id);
+    this.agents.set(agent.id, { ...agent, busy: false });
+    this.state.totalSpawned++;
+  }
+
+  private async destroyAgent(): Promise<void> {
+    // Destroy the least busy agent
+    const sorted = [...this.agents.values()].sort((a, b) =>
+      (a.busy ? 1 : 0) - (b.busy ? 1 : 0),
+    );
+    const target = sorted[0];
+    if (target) {
+      this.agents.delete(target.id);
+      this.state.totalDestroyed++;
+    }
+  }
+
+  shutdown(): void {
+    if (this.scaleTimer) clearInterval(this.scaleTimer);
+    this.agents.clear();
+    this.queue = [];
+  }
+}
+
+// ── Usage ──────────────────────────────────────────────────────
+async function main() {
+  // AgentCapabilityRegistry demo
+  const registry = new AgentCapabilityRegistry();
+  registry.register({ agentId: "a1", agentName: "Researcher", capabilities: ["research", "analysis"], maxLoad: 5, currentLoad: 2, avgLatencyMs: 300, successRate: 0.95, lastHeartbeat: Date.now() });
+  registry.register({ agentId: "a2", agentName: "Coder", capabilities: ["code", "debug"], maxLoad: 5, currentLoad: 1, avgLatencyMs: 500, successRate: 0.92, lastHeartbeat: Date.now() });
+  registry.register({ agentId: "a3", agentName: "Reviewer", capabilities: ["review", "analysis"], maxLoad: 3, currentLoad: 0, avgLatencyMs: 200, successRate: 0.98, lastHeartbeat: Date.now() });
+  const matches = registry.findByCapabilities(["code"]);
+  console.log(`Code-capable agents: ${matches.map((a) => a.agentName).join(", ")}`);
+  console.log(`Registry catalog: ${registry.getCapabilityCatalog().join(", ")}`);
+
+  // TaskDecompositionEngine demo
+  const decomposer = new TaskDecompositionEngine({ maxDepth: 3, maxSubtasks: 4, granularity: "medium" });
+  const subtasks = decomposer.decompose("root", "Build a REST API with authentication, rate limiting, and logging", ["code", "security"]);
+  const plan = decomposer.buildExecutionPlan("root");
+  console.log(`Decomposed into ${plan.length} subtasks`);
+  const stats = decomposer.stats("root");
+  console.log(`Decomposition stats: ${JSON.stringify(stats)}`);
+
+  // VotingAggregator demo
+  const aggregator = new VotingAggregator("majority");
+  const votes: VoterInput[] = [
+    { agentId: "v1", vote: "option_a", weight: 1 },
+    { agentId: "v2", vote: "option_a", weight: 2 },
+    { agentId: "v3", vote: "option_b", weight: 1 },
+    { agentId: "v4", vote: "option_c", weight: 3, rankings: ["option_c", "option_a", "option_b"] },
+  ];
+  console.log("Majority:", aggregator.tally(votes, "majority").winner);
+  console.log("Weighted:", aggregator.tally(votes, "weighted").winner);
+  console.log("Ranked-choice:", aggregator.tally(votes, "ranked_choice").winner);
+
+  // AgentLogCollector demo
+  const logger = new AgentLogCollector();
+  const corrId = randomUUID().slice(0, 8);
+  logger.info(corrId, "agent_1", "Task started", { taskId: "t1" });
+  logger.warn(corrId, "agent_2", "Resource high", { cpu: 0.85 });
+  logger.error(corrId, "agent_1", "Task failed", { error: "timeout" });
+  const trace = logger.buildTrace(corrId);
+  console.log(`Trace: ${trace.entries.length} entries, ${trace.errorCount} errors`);
+
+  // DynamicAgentSpawner demo
+  const spawner = new DynamicAgentSpawner({
+    minAgents: 2, maxAgents: 8, scaleUpThreshold: 3, scaleDownThreshold: 0.5,
+    cooldownMs: 100,
+    agentFactory: async (id) => ({ id, capabilities: ["task"] }),
+  });
+  await spawner.initialize();
+  for (let i = 0; i < 10; i++) {
+    await spawner.submit(`task_${i}`);
+  }
+  await new Promise((r) => setTimeout(r, 500));
+  console.log(`Spawner status: ${JSON.stringify(spawner.status)}`);
+  spawner.shutdown();
+}
+
+main();
+```
 
 ---
 

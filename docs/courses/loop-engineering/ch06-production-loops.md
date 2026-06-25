@@ -1157,21 +1157,568 @@ async function main() {
 main();
 ```
 
-## Summary
+### Mermaid: Production Loop with Safety and Observability
 
-Production loops close the gap between a model that works in a notebook and one that stays reliable under real traffic. The deploy → monitor → drift-detect → retrain → redeploy pipeline provides a continuous lifecycle that automatically detects and corrects degradation. Shadow and canary deployments let you validate model changes with zero or bounded user impact.
+```mermaid
+flowchart TD
+    subgraph Production["Production Loop Architecture"]
+        A[Request] --> B[Load Shedder]
+        B --> C{Rate Limit OK?}
+        C -->|No| D[429 Too Many Requests]
+        C -->|Yes| E[Adaptive Timeout]
+        E --> F[Agent Execution]
+        F --> G{Success?}
+        G -->|No| H[Retry with Backoff]
+        H --> F
+        G -->|Yes| I[Response]
+        F --> J[Prometheus Metrics]
+        F --> K[Health Endpoint]
+    end
 
-Cost governor loops are essential for production AI because API costs scale with loop depth, not just request count. A governor that tracks per-iteration cost and enforces budgets prevents runaway spending and gives operators hard limits for capacity planning.
+    subgraph Circuit["Circuit Breaker"]
+        L[CLOSED] -->|failures > threshold| M[OPEN]
+        M -->|timeout elapsed| N[HALF-OPEN]
+        N -->|test succeeds| L
+        N -->|test fails| M
+    end
 
-Observability loops extend standard telemetry with agent-specific dimensions: trace spans per loop iteration, prompt and completion token distributions, completion quality scores, and drift metrics. These feed both real-time dashboards and the drift-detection component, closing the observability-to-action loop.
+    Production --> Circuit
+```
 
-The three examples cover the critical production patterns:
+### Extended Implementation: Load Shedder, Adaptive Timeout, Rate Limiter, Health Endpoint, and Metrics Exporter
 
-| Component | Purpose |
-|---|---|
-| ProductionLoopManager | Lifecycle orchestration with timestamped deploy/monitor/drift/retrain |
-| AgentCostGovernor | Budget enforcement, per-iteration accounting, auto-halt |
-| ShadowDeployer | Parallel production/candidate scoring with promotion logic |
+```typescript
+/// <reference types="node" />
+
+import { randomUUID } from "node:crypto";
+
+// ── LoadShedder ─────────────────────────────────────────────────
+type RequestPriority = "critical" | "high" | "normal" | "low";
+
+interface IncomingRequest {
+  id: string;
+  priority: RequestPriority;
+  path: string;
+  body: unknown;
+  arrivalTime: number;
+}
+
+interface LoadShedderConfig {
+  maxConcurrent: number;
+  queueCapacity: number;
+  dropStrategy: "lowest_priority" | "oldest" | "random";
+  metricsCallback?: (dropped: number, accepted: number) => void;
+}
+
+class LoadShedder {
+  private active = 0;
+  private queue: IncomingRequest[] = [];
+  private dropped = 0;
+  private accepted = 0;
+
+  constructor(private config: LoadShedderConfig) {}
+
+  get activeRequests(): number {
+    return this.active;
+  }
+
+  get queueDepth(): number {
+    return this.queue.length;
+  }
+
+  get dropRate(): number {
+    const total = this.dropped + this.accepted;
+    return total > 0 ? this.dropped / total : 0;
+  }
+
+  /** Attempt to admit a request. Returns true if accepted, false if dropped. */
+  admit(request: IncomingRequest): boolean {
+    if (this.active < this.config.maxConcurrent) {
+      this.active++;
+      this.accepted++;
+      this.config.metricsCallback?.(this.dropped, this.accepted);
+      return true;
+    }
+
+    if (this.queue.length < this.config.queueCapacity) {
+      this.queue.push(request);
+      this.accepted++;
+      return true;
+    }
+
+    // Over capacity — apply drop strategy
+    this.dropped++;
+    this.config.metricsCallback?.(this.dropped, this.accepted);
+    return false;
+  }
+
+  /** Complete a request, allowing the next queued request through. */
+  complete(): IncomingRequest | null {
+    this.active = Math.max(0, this.active - 1);
+
+    if (this.queue.length > 0) {
+      // Select next request based on strategy
+      let index = 0;
+      switch (this.config.dropStrategy) {
+        case "lowest_priority": {
+          const priorityOrder: Record<string, number> = {
+            critical: 0, high: 1, normal: 2, low: 3,
+          };
+          let bestIdx = 0;
+          let bestPriority = Infinity;
+          for (let i = 0; i < this.queue.length; i++) {
+            const p = priorityOrder[this.queue[i].priority] ?? 4;
+            if (p < bestPriority) { bestPriority = p; bestIdx = i; }
+          }
+          index = bestIdx;
+          break;
+        }
+        case "oldest":
+          index = 0;
+          break;
+        case "random":
+          index = Math.floor(Math.random() * this.queue.length);
+          break;
+      }
+
+      const next = this.queue.splice(index, 1)[0];
+      this.active++;
+      return next;
+    }
+
+    return null;
+  }
+
+  /** Report current load state for health monitoring. */
+  snapshot(): {
+    active: number;
+    queued: number;
+    dropped: number;
+    accepted: number;
+    dropRate: number;
+    utilization: number;
+  } {
+    return {
+      active: this.active,
+      queued: this.queue.length,
+      dropped: this.dropped,
+      accepted: this.accepted,
+      dropRate: this.dropRate,
+      utilization: this.active / Math.max(this.config.maxConcurrent, 1),
+    };
+  }
+}
+
+// ── AdaptiveTimeout ─────────────────────────────────────────────
+class AdaptiveTimeout {
+  private latencies: number[] = [];
+  private currentTimeout: number;
+
+  constructor(
+    private initialTimeout: number = 5000,
+    private percentile: number = 95,
+    private windowSize: number = 100,
+    private minTimeout: number = 500,
+    private maxTimeout: number = 30000,
+  ) {
+    this.currentTimeout = initialTimeout;
+  }
+
+  get timeout(): number {
+    return this.currentTimeout;
+  }
+
+  /** Record a completed request latency. */
+  record(latencyMs: number): void {
+    this.latencies.push(latencyMs);
+    if (this.latencies.length > this.windowSize) {
+      this.latencies = this.latencies.slice(-this.windowSize);
+    }
+    this.recalculate();
+  }
+
+  /** Recalculate timeout based on percentile. */
+  private recalculate(): void {
+    if (this.latencies.length < 10) return;
+    const sorted = [...this.latencies].sort((a, b) => a - b);
+    const index = Math.ceil((this.percentile / 100) * sorted.length) - 1;
+    const pValue = sorted[Math.max(0, Math.min(index, sorted.length - 1))];
+
+    // Add 20% headroom above the percentile
+    this.currentTimeout = Math.max(
+      this.minTimeout,
+      Math.min(this.maxTimeout, Math.ceil(pValue * 1.2)),
+    );
+  }
+
+  /** Reset to initial state. */
+  reset(): void {
+    this.latencies = [];
+    this.currentTimeout = this.initialTimeout;
+  }
+
+  /** Get latency distribution stats. */
+  stats(): { p50: number; p95: number; p99: number; currentTimeout: number; samples: number } {
+    if (this.latencies.length === 0) {
+      return { p50: 0, p95: 0, p99: 0, currentTimeout: this.currentTimeout, samples: 0 };
+    }
+    const sorted = [...this.latencies].sort((a, b) => a - b);
+    const getP = (pct: number) => {
+      const idx = Math.ceil((pct / 100) * sorted.length) - 1;
+      return sorted[Math.max(0, Math.min(idx, sorted.length - 1))];
+    };
+    return {
+      p50: getP(50),
+      p95: getP(95),
+      p99: getP(99),
+      currentTimeout: this.currentTimeout,
+      samples: this.latencies.length,
+    };
+  }
+}
+
+// ── RateLimiter (Token Bucket) ──────────────────────────────────
+class TokenBucketRateLimiter {
+  private tokens: number;
+  private lastRefill: number;
+
+  constructor(
+    private maxTokens: number,
+    private refillRate: number,  // tokens per second
+    private refillInterval: number = 1000, // ms between refills
+  ) {
+    this.tokens = maxTokens;
+    this.lastRefill = Date.now();
+  }
+
+  get availableTokens(): number {
+    this.refill();
+    return this.tokens;
+  }
+
+  get utilization(): number {
+    return 1 - this.tokens / this.maxTokens;
+  }
+
+  /** Refill tokens based on elapsed time. */
+  private refill(): void {
+    const now = Date.now();
+    const elapsed = now - this.lastRefill;
+    const intervals = Math.floor(elapsed / this.refillInterval);
+    if (intervals > 0) {
+      const newTokens = intervals * this.refillRate * (this.refillInterval / 1000);
+      this.tokens = Math.min(this.maxTokens, this.tokens + newTokens);
+      this.lastRefill += intervals * this.refillInterval;
+    }
+  }
+
+  /** Try to consume `count` tokens. Returns true if allowed. */
+  tryConsume(count: number = 1): boolean {
+    this.refill();
+    if (this.tokens >= count) {
+      this.tokens -= count;
+      return true;
+    }
+    return false;
+  }
+
+  /** Wait until tokens are available (async). */
+  async consume(count: number = 1, timeoutMs: number = 10000): Promise<boolean> {
+    if (this.tryConsume(count)) return true;
+    const start = Date.now();
+    while (Date.now() - start < timeoutMs) {
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      if (this.tryConsume(count)) return true;
+    }
+    return false;
+  }
+
+  /** Estimate wait time before tokens are available. */
+  estimatedWaitMs(count: number = 1): number {
+    this.refill();
+    if (this.tokens >= count) return 0;
+    const deficit = count - this.tokens;
+    return Math.ceil((deficit / this.refillRate) * 1000);
+  }
+
+  reset(): void {
+    this.tokens = this.maxTokens;
+    this.lastRefill = Date.now();
+  }
+}
+
+// ── HealthEndpoint ──────────────────────────────────────────────
+interface HealthComponent {
+  name: string;
+  healthy: boolean;
+  lastCheck: number;
+  latencyMs: number;
+  detail: string;
+}
+
+type HealthCheck = () => Promise<{ ok: boolean; detail?: string }>;
+
+class HealthEndpoint {
+  private components: Map<string, { check: HealthCheck; lastResult: HealthComponent }> = new Map();
+  private startTime: number = Date.now();
+  private failureCount = 0;
+  private totalChecks = 0;
+
+  register(name: string, check: HealthCheck): void {
+    this.components.set(name, {
+      check,
+      lastResult: {
+        name,
+        healthy: true,
+        lastCheck: Date.now(),
+        latencyMs: 0,
+        detail: "not yet checked",
+      },
+    });
+  }
+
+  unregister(name: string): boolean {
+    return this.components.delete(name);
+  }
+
+  /** Run all health checks and return aggregate status. */
+  async checkAll(): Promise<{
+    status: "healthy" | "degraded" | "unhealthy";
+    uptime: number;
+    components: HealthComponent[];
+    failureRate: number;
+  }> {
+    this.totalChecks++;
+    const results: HealthComponent[] = [];
+
+    for (const [name, entry] of this.components) {
+      const start = Date.now();
+      try {
+        const result = await entry.check();
+        const healthComponent: HealthComponent = {
+          name,
+          healthy: result.ok,
+          lastCheck: Date.now(),
+          latencyMs: Date.now() - start,
+          detail: result.detail ?? (result.ok ? "ok" : "error"),
+        };
+        entry.lastResult = healthComponent;
+        results.push(healthComponent);
+        if (!result.ok) this.failureCount++;
+      } catch (err) {
+        const healthComponent: HealthComponent = {
+          name,
+          healthy: false,
+          lastCheck: Date.now(),
+          latencyMs: Date.now() - start,
+          detail: (err as Error).message,
+        };
+        entry.lastResult = healthComponent;
+        results.push(healthComponent);
+        this.failureCount++;
+      }
+    }
+
+    const healthyCount = results.filter((r) => r.healthy).length;
+    const totalComponents = results.length;
+    let status: "healthy" | "degraded" | "unhealthy";
+    if (healthyCount === totalComponents) status = "healthy";
+    else if (healthyCount >= totalComponents / 2) status = "degraded";
+    else status = "unhealthy";
+
+    return {
+      status,
+      uptime: Date.now() - this.startTime,
+      components: results,
+      failureRate: this.totalChecks > 0 ? this.failureCount / this.totalChecks : 0,
+    };
+  }
+
+  /** Get a JSON-serializable health report for orchestrators. */
+  async report(): Promise<Record<string, unknown>> {
+    const health = await this.checkAll();
+    return {
+      service: "production-loop",
+      status: health.status,
+      uptimeMs: health.uptime,
+      timestamp: new Date().toISOString(),
+      components: Object.fromEntries(
+        health.components.map((c) => [
+          c.name,
+          { healthy: c.healthy, latencyMs: c.latencyMs, detail: c.detail },
+        ]),
+      ),
+      failureRate: health.failureRate,
+    };
+  }
+
+  reset(): void {
+    this.failureCount = 0;
+    this.totalChecks = 0;
+    this.startTime = Date.now();
+  }
+}
+
+// ── PrometheusMetricsExporter ───────────────────────────────────
+interface MetricFamily {
+  name: string;
+  help: string;
+  type: "counter" | "gauge" | "histogram" | "summary";
+  labels: Record<string, string>;
+  value: number;
+}
+
+class PrometheusMetricsExporter {
+  private metrics: Map<string, MetricFamily> = new Map();
+  private histograms: Map<string, number[]> = new Map();
+
+  /** Increment a counter metric. */
+  incrementCounter(name: string, labels: Record<string, string> = {}, value: number = 1): void {
+    this.metrics.set(name, {
+      name,
+      help: `Counter for ${name}`,
+      type: "counter",
+      labels,
+      value: (this.metrics.get(name)?.value ?? 0) + value,
+    });
+  }
+
+  /** Set a gauge metric. */
+  setGauge(name: string, value: number, labels: Record<string, string> = {}): void {
+    this.metrics.set(name, {
+      name,
+      help: `Gauge for ${name}`,
+      type: "gauge",
+      labels,
+      value,
+    });
+  }
+
+  /** Observe a value for a histogram metric. */
+  observeHistogram(name: string, value: number, labels: Record<string, string> = {}): void {
+    const key = `${name}:${JSON.stringify(labels)}`;
+    const existing = this.histograms.get(key) ?? [];
+    existing.push(value);
+    this.histograms.set(key, existing);
+
+    // Keep last 1000 observations
+    if (existing.length > 1000) {
+      this.histograms.set(key, existing.slice(-1000));
+    }
+
+    // Store as the last metric set
+    this.metrics.set(name, {
+      name,
+      help: `Histogram for ${name}`,
+      type: "histogram",
+      labels,
+      value: existing.length,
+    });
+  }
+
+  /** Export all metrics in Prometheus text format. */
+  export(): string {
+    const lines: string[] = [];
+
+    for (const [, metric] of this.metrics) {
+      lines.push(`# HELP ${metric.name} ${metric.help}`);
+      lines.push(`# TYPE ${metric.name} ${metric.type}`);
+
+      const labelStr = Object.keys(metric.labels).length > 0
+        ? `{${Object.entries(metric.labels).map(([k, v]) => `${k}="${v}"`).join(",")}}`
+        : "";
+
+      // For histograms, include bucket counts
+      if (metric.type === "histogram") {
+        const key = `${metric.name}:${JSON.stringify(metric.labels)}`;
+        const values = this.histograms.get(key) ?? [];
+        const buckets = [10, 50, 100, 500, 1000, 5000];
+        for (const bucket of buckets) {
+          const count = values.filter((v) => v <= bucket).length;
+          lines.push(`${metric.name}_bucket${labelStr}{le="${bucket}"} ${count}`);
+        }
+        lines.push(`${metric.name}_bucket${labelStr}{le="+Inf"} ${values.length}`);
+        lines.push(`${metric.name}_count${labelStr} ${values.length}`);
+        lines.push(`${metric.name}_sum${labelStr} ${values.reduce((a, b) => a + b, 0)}`);
+      } else {
+        lines.push(`${metric.name}${labelStr} ${metric.value}`);
+      }
+    }
+
+    return lines.join("\n");
+  }
+
+  /** Get a snapshot of current metric values. */
+  snapshot(): Record<string, number> {
+    const result: Record<string, number> = {};
+    for (const [name, metric] of this.metrics) {
+      result[name] = metric.value;
+    }
+    return result;
+  }
+
+  reset(): void {
+    this.metrics.clear();
+    this.histograms.clear();
+  }
+}
+
+// ── Usage ──────────────────────────────────────────────────────
+async function main() {
+  // LoadShedder demo
+  const shedder = new LoadShedder({ maxConcurrent: 3, queueCapacity: 5, dropStrategy: "lowest_priority" });
+  for (let i = 0; i < 10; i++) {
+    const admitted = shedder.admit({
+      id: `req_${i}`,
+      priority: i < 3 ? "critical" : i < 6 ? "normal" : "low",
+      path: "/api/process",
+      body: {},
+      arrivalTime: Date.now(),
+    });
+    console.log(`Request ${i} (${i < 3 ? "critical" : i < 6 ? "normal" : "low"}): ${admitted ? "admitted" : "dropped"}`);
+  }
+  console.log(`Load shedder snapshot:`, shedder.snapshot());
+
+  // AdaptiveTimeout demo
+  const timeout = new AdaptiveTimeout(5000, 95, 20);
+  for (let i = 0; i < 25; i++) {
+    timeout.record(100 + Math.random() * 4000);
+  }
+  console.log(`Adaptive timeout: ${timeout.timeout}ms`, timeout.stats());
+
+  // TokenBucketRateLimiter demo
+  const limiter = new TokenBucketRateLimiter(10, 2);
+  for (let i = 0; i < 15; i++) {
+    const allowed = limiter.tryConsume();
+    if (i > 0 && i % 5 === 0) {
+      await new Promise((r) => setTimeout(r, 1100)); // let tokens refill
+    }
+    if (i === 12) console.log(`Rate limiter utilization: ${(limiter.utilization * 100).toFixed(0)}%`);
+  }
+
+  // HealthEndpoint demo
+  const health = new HealthEndpoint();
+  health.register("database", async () => ({ ok: Math.random() > 0.2 }));
+  health.register("api", async () => ({ ok: true }));
+  health.register("cache", async () => ({ ok: Math.random() > 0.1 }));
+  const healthReport = await health.report();
+  console.log(`Health status: ${healthReport.status}`);
+  console.log(`Health components:`, JSON.stringify((healthReport.components as Record<string, unknown>)), null, 2);
+
+  // PrometheusMetricsExporter demo
+  const metrics = new PrometheusMetricsExporter();
+  metrics.incrementCounter("http_requests_total", { method: "GET", path: "/api" });
+  metrics.incrementCounter("http_requests_total", { method: "POST", path: "/api" });
+  metrics.setGauge("active_requests", 5);
+  for (let i = 0; i < 50; i++) {
+    metrics.observeHistogram("request_duration_ms", 50 + Math.random() * 950);
+  }
+  console.log("\nPrometheus metrics:");
+  console.log(metrics.export());
+}
+
+main();
+```
 
 ## Exercises
 

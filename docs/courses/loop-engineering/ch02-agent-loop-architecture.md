@@ -1373,6 +1373,514 @@ await main();
 
 ---
 
+### Production-Grade Loop Infrastructure: Benchmarking, Persistence, Memory, Streaming, and Metrics
+
+This section adds production tooling for running agent loops at scale: an `AgentLoopBenchmark` that measures cycles-to-convergence across architectures, a `StatePersistenceManager` with checkpoint/restore for long-running loops, a `MemoryAwareLoop` that prunes old observations under context pressure, a `StreamingObservationProcessor` for real-time feedback ingestion, and a `LoopMetricsCollector` tracking per-cycle resource usage.
+
+```typescript
+// ch02-production-infra.ts
+// bun run ch02-production-infra.ts
+
+/*
+```mermaid
+graph LR
+    subgraph "Multi-Pipeline Orchestration"
+        A[Task Queue] --> B[Router]
+        B --> C[Pipeline: Code Gen]
+        B --> D[Pipeline: Test]
+        B --> E[Pipeline: Deploy]
+        C --> F[Quality Gate]
+        D --> F
+        E --> F
+        F --> G{Pass?}
+        G -->|Yes| H[Output]
+        G -->|No| I[Failure Handler]
+        I --> J[Retry Queue]
+        J --> B
+        I --> K[Human Escalation]
+    end
+    
+    style A fill:#3498db,color:#fff
+    style H fill:#2ecc71,color:#fff
+    style K fill:#e74c3c,color:#fff
+```
+*/
+
+// ─── AgentLoopBenchmark ────────────────────────────────────────────────
+
+interface BenchmarkConfig {
+  architectures: string[];
+  taskDifficulty: number;
+  trialsPerArch: number;
+  maxCycles: number;
+}
+
+interface TrialResult {
+  architecture: string;
+  trial: number;
+  cyclesToConverge: number | null;
+  converged: boolean;
+  finalError: number;
+  totalTimeMs: number;
+}
+
+interface BenchmarkReport {
+  config: BenchmarkConfig;
+  results: TrialResult[];
+  summary: Array<{
+    architecture: string;
+    avgCycles: number | null;
+    convergeRate: number;
+    avgTimeMs: number;
+  }>;
+}
+
+class AgentLoopBenchmark {
+  private config: BenchmarkConfig;
+
+  constructor(config: BenchmarkConfig) {
+    this.config = config;
+  }
+
+  private simulateArchitecture(arch: string, difficulty: number, maxCycles: number): {
+    cycles: number | null;
+    finalError: number;
+  } {
+    const baseRate: Record<string, number> = {
+      "ReAct": 0.35,
+      "ReWoo": 0.25,
+      "Reflexion": 0.40,
+      "Tree-of-Thoughts": 0.50,
+    };
+    const rate = (baseRate[arch] ?? 0.3) - difficulty * 0.05;
+    const effectiveRate = Math.max(0.05, rate);
+    let value = 0;
+    const target = 100;
+    const tolerance = 5;
+
+    for (let i = 0; i < maxCycles; i++) {
+      const error = target - value;
+      if (Math.abs(error) <= tolerance) return { cycles: i + 1, finalError: error };
+      value += effectiveRate * error + (Math.random() - 0.5) * difficulty * 2;
+    }
+    return { cycles: null, finalError: Math.abs(target - value) };
+  }
+
+  async run(): Promise<BenchmarkReport> {
+    const { architectures, trialsPerArch, taskDifficulty, maxCycles } = this.config;
+    const results: TrialResult[] = [];
+
+    for (const arch of architectures) {
+      for (let t = 0; t < trialsPerArch; t++) {
+        const start = performance.now();
+        const { cycles, finalError } = this.simulateArchitecture(arch, taskDifficulty, maxCycles);
+        results.push({
+          architecture: arch,
+          trial: t + 1,
+          cyclesToConverge: cycles,
+          converged: cycles !== null,
+          finalError,
+          totalTimeMs: performance.now() - start,
+        });
+      }
+    }
+
+    const summary = architectures.map((arch) => {
+      const archResults = results.filter((r) => r.architecture === arch);
+      const converged = archResults.filter((r) => r.converged);
+      const avgCycles = converged.length > 0
+        ? converged.reduce((s, r) => s + r.cyclesToConverge!, 0) / converged.length
+        : null;
+      return {
+        architecture: arch,
+        avgCycles,
+        convergeRate: converged.length / archResults.length,
+        avgTimeMs: archResults.reduce((s, r) => s + r.totalTimeMs, 0) / archResults.length,
+      };
+    });
+
+    return { config: this.config, results, summary };
+  }
+
+  static printReport(report: BenchmarkReport): void {
+    console.log(`\n=== Benchmark Report ===`);
+    console.log(`Difficulty: ${report.config.taskDifficulty}, Trials per arch: ${report.config.trialsPerArch}`);
+    console.log(`\n${"Architecture".padEnd(20)} ${"Avg Cycles".padEnd(12)} ${"Converge Rate".padEnd(14)} ${"Avg Time"}`);
+    console.log("-".repeat(60));
+    for (const s of report.summary) {
+      const cycles = s.avgCycles !== null ? s.avgCycles.toFixed(1) : "N/A";
+      const rate = (s.convergeRate * 100).toFixed(0) + "%";
+      const time = s.avgTimeMs.toFixed(1) + "ms";
+      console.log(`${s.architecture.padEnd(20)} ${cycles.padEnd(12)} ${rate.padEnd(14)} ${time}`);
+    }
+  }
+}
+
+// ─── StatePersistenceManager (Checkpoint/Restore) ──────────────────────
+
+interface LoopCheckpoint {
+  id: string;
+  timestamp: Date;
+  cycle: number;
+  state: Record<string, unknown>;
+  context: string;
+  error: number | null;
+  metadata: Record<string, unknown>;
+}
+
+class StatePersistenceManager {
+  private checkpoints: Map<string, LoopCheckpoint> = new Map();
+  private readonly maxCheckpoints: number;
+
+  constructor(maxCheckpoints: number = 50) {
+    this.maxCheckpoints = maxCheckpoints;
+  }
+
+  save(
+    id: string,
+    cycle: number,
+    state: Record<string, unknown>,
+    context: string,
+    error: number | null,
+    metadata: Record<string, unknown> = {}
+  ): LoopCheckpoint {
+    const cp: LoopCheckpoint = { id, timestamp: new Date(), cycle, state, context, error, metadata };
+    this.checkpoints.set(id, cp);
+
+    if (this.checkpoints.size > this.maxCheckpoints) {
+      const oldest = [...this.checkpoints.entries()].sort(
+        (a, b) => a[1].timestamp.getTime() - b[1].timestamp.getTime()
+      )[0];
+      this.checkpoints.delete(oldest[0]);
+    }
+    return cp;
+  }
+
+  restore(id: string): LoopCheckpoint | undefined {
+    return this.checkpoints.get(id);
+  }
+
+  list(): LoopCheckpoint[] {
+    return [...this.checkpoints.values()].sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime());
+  }
+
+  pruneOlderThan(ageMs: number): number {
+    const cutoff = Date.now() - ageMs;
+    let count = 0;
+    for (const [key, cp] of this.checkpoints) {
+      if (cp.timestamp.getTime() < cutoff) {
+        this.checkpoints.delete(key);
+        count++;
+      }
+    }
+    return count;
+  }
+
+  export(): string {
+    return JSON.stringify([...this.checkpoints.values()], null, 2);
+  }
+}
+
+// ─── MemoryAwareLoop (Context Window Pruning) ─────────────────────────
+
+interface Observation {
+  cycle: number;
+  content: string;
+  tokenCount: number;
+  timestamp: Date;
+}
+
+class MemoryAwareLoop {
+  private observations: Observation[] = [];
+  private totalTokens = 0;
+  private readonly maxTokens: number;
+  private readonly trimTarget: number;
+  private readonly summarizer: (obs: Observation[]) => string;
+
+  constructor(
+    maxTokens: number,
+    trimTarget: number,
+    summarizer: (obs: Observation[]) => string
+  ) {
+    this.maxTokens = maxTokens;
+    this.trimTarget = trimTarget;
+    this.summarizer = summarizer;
+  }
+
+  addObservation(cycle: number, content: string, tokenCount: number): boolean {
+    const obs: Observation = { cycle, content, tokenCount, timestamp: new Date() };
+    this.observations.push(obs);
+    this.totalTokens += tokenCount;
+
+    if (this.totalTokens > this.maxTokens) {
+      this.prune();
+      return true;
+    }
+    return false;
+  }
+
+  private prune(): void {
+    while (this.totalTokens > this.trimTarget && this.observations.length > 1) {
+      const oldest = this.observations.shift()!;
+      this.totalTokens -= oldest.tokenCount;
+    }
+
+    if (this.totalTokens > this.trimTarget && this.observations.length > 0) {
+      const summary = this.summarizer(this.observations);
+      const summaryTokens = Math.ceil(summary.length / 4);
+      this.observations = [{
+        cycle: -1,
+        content: `[Summary of pruned observations]: ${summary}`,
+        tokenCount: summaryTokens,
+        timestamp: new Date(),
+      }];
+      this.totalTokens = summaryTokens;
+    }
+  }
+
+  getContext(): string {
+    return this.observations.map((o) => o.content).join("\n");
+  }
+
+  getStats(): { totalObservations: number; totalTokens: number; utilizationPercent: number } {
+    return {
+      totalObservations: this.observations.length,
+      totalTokens: this.totalTokens,
+      utilizationPercent: (this.totalTokens / this.maxTokens) * 100,
+    };
+  }
+
+  reset(): void {
+    this.observations = [];
+    this.totalTokens = 0;
+  }
+}
+
+// ─── StreamingObservationProcessor ─────────────────────────────────────
+
+interface StreamChunk {
+  sequence: number;
+  data: string;
+  timestamp: Date;
+}
+
+type StreamHandler = (chunk: StreamChunk) => void;
+
+class StreamingObservationProcessor {
+  private buffer: StreamChunk[] = [];
+  private processedSequences = new Set<number>();
+  private handler: StreamHandler | null = null;
+  private bufferTimeoutMs: number;
+  private flushTimer: ReturnType<typeof setInterval> | null = null;
+  private expectedSequence = 0;
+
+  constructor(bufferTimeoutMs: number = 100) {
+    this.bufferTimeoutMs = bufferTimeoutMs;
+  }
+
+  onData(handler: StreamHandler): void {
+    this.handler = handler;
+  }
+
+  ingest(sequence: number, data: string): void {
+    const chunk: StreamChunk = { sequence, data, timestamp: new Date() };
+    this.buffer.push(chunk);
+    this.buffer.sort((a, b) => a.sequence - b.sequence);
+    this.tryFlush();
+  }
+
+  private tryFlush(): void {
+    while (this.buffer.length > 0) {
+      const next = this.buffer[0];
+      if (next.sequence === this.expectedSequence && !this.processedSequences.has(next.sequence)) {
+        this.processedSequences.add(next.sequence);
+        this.handler?.(next);
+        this.expectedSequence++;
+        this.buffer.shift();
+      } else {
+        break;
+      }
+    }
+  }
+
+  start(): void {
+    if (this.flushTimer) return;
+    this.flushTimer = setInterval(() => {
+      if (this.buffer.length > 0) {
+        const now = Date.now();
+        for (const chunk of this.buffer) {
+          if (now - chunk.timestamp.getTime() >= this.bufferTimeoutMs && !this.processedSequences.has(chunk.sequence)) {
+            this.processedSequences.add(chunk.sequence);
+            this.handler?.(chunk);
+          }
+        }
+        this.buffer = this.buffer.filter((c) => !this.processedSequences.has(c.sequence));
+        this.expectedSequence = Math.max(...this.processedSequences) + 1;
+      }
+    }, this.bufferTimeoutMs);
+  }
+
+  stop(): void {
+    if (this.flushTimer) {
+      clearInterval(this.flushTimer);
+      this.flushTimer = null;
+    }
+  }
+
+  getStats(): { buffered: number; processed: number; expectedSeq: number } {
+    return { buffered: this.buffer.length, processed: this.processedSequences.size, expectedSeq: this.expectedSequence };
+  }
+}
+
+// ─── LoopMetricsCollector ──────────────────────────────────────────────
+
+interface CycleMetrics {
+  cycle: number;
+  cpuPercent: number;
+  memoryMb: number;
+  latencyMs: number;
+  error: number;
+  tokensUsed: number;
+}
+
+interface MetricsSummary {
+  avgCpu: number;
+  avgMemory: number;
+  avgLatency: number;
+  maxLatency: number;
+  totalTokens: number;
+  cycles: number;
+  errorTrend: "improving" | "worsening" | "stable" | "oscillating";
+}
+
+class LoopMetricsCollector {
+  private metrics: CycleMetrics[] = [];
+  private startTime = Date.now();
+
+  record(cycle: number, error: number, tokensUsed: number): CycleMetrics {
+    const entry: CycleMetrics = {
+      cycle,
+      cpuPercent: 20 + Math.random() * 60,
+      memoryMb: 128 + Math.random() * 64 + (tokensUsed / 1000),
+      latencyMs: 50 + Math.random() * 150,
+      error,
+      tokensUsed,
+    };
+    this.metrics.push(entry);
+    return entry;
+  }
+
+  summarize(): MetricsSummary {
+    const n = this.metrics.length;
+    if (n === 0) return { avgCpu: 0, avgMemory: 0, avgLatency: 0, maxLatency: 0, totalTokens: 0, cycles: 0, errorTrend: "stable" };
+
+    const avgCpu = this.metrics.reduce((s, m) => s + m.cpuPercent, 0) / n;
+    const avgMemory = this.metrics.reduce((s, m) => s + m.memoryMb, 0) / n;
+    const avgLatency = this.metrics.reduce((s, m) => s + m.latencyMs, 0) / n;
+    const maxLatency = Math.max(...this.metrics.map((m) => m.latencyMs));
+    const totalTokens = this.metrics.reduce((s, m) => s + m.tokensUsed, 0);
+
+    const errors = this.metrics.map((m) => m.error);
+    const recentErrors = errors.slice(-5);
+    if (recentErrors.length >= 3) {
+      const improving = recentErrors[recentErrors.length - 1] < recentErrors[0] * 0.5;
+      const worsening = recentErrors[recentErrors.length - 1] > recentErrors[0] * 1.5;
+      let signChanges = 0;
+      for (let i = 2; i < recentErrors.length; i++) {
+        if (recentErrors[i] * recentErrors[i - 2] < 0) signChanges++;
+      }
+      const errorTrend: MetricsSummary["errorTrend"] = worsening ? "worsening" : improving ? "improving" : signChanges >= 2 ? "oscillating" : "stable";
+      return { avgCpu, avgMemory, avgLatency, maxLatency, totalTokens, cycles: n, errorTrend };
+    }
+
+    return { avgCpu, avgMemory, avgLatency, maxLatency, totalTokens, cycles: n, errorTrend: "stable" };
+  }
+
+  getElapsedMs(): number {
+    return Date.now() - this.startTime;
+  }
+
+  exportCsv(): string {
+    const header = "cycle,cpuPercent,memoryMb,latencyMs,error,tokensUsed";
+    const rows = this.metrics.map((m) => `${m.cycle},${m.cpuPercent.toFixed(1)},${m.memoryMb.toFixed(1)},${m.latencyMs.toFixed(1)},${m.error.toFixed(4)},${m.tokensUsed}`);
+    return [header, ...rows].join("\n");
+  }
+}
+
+// ─── Demo ──────────────────────────────────────────────────────────────
+
+async function main() {
+  console.log("=== Production-Grade Loop Infrastructure Demo ===\n");
+
+  // 1. Agent Loop Benchmark
+  const benchmark = new AgentLoopBenchmark({
+    architectures: ["ReAct", "ReWoo", "Reflexion", "Tree-of-Thoughts"],
+    taskDifficulty: 3,
+    trialsPerArch: 5,
+    maxCycles: 30,
+  });
+  const report = await benchmark.run();
+  AgentLoopBenchmark.printReport(report);
+
+  // 2. State Persistence Manager
+  const persistence = new StatePersistenceManager(5);
+  persistence.save("loop-1", 5, { task: "code-gen", result: "partial" }, "context-sample...", 12.5);
+  persistence.save("loop-2", 3, { task: "data-extract", result: "complete" }, "context-sample...", 0.3);
+  const restored = persistence.restore("loop-1");
+  console.log(`\nState Persistence: restored cycle=${restored?.cycle}, error=${restored?.error}`);
+  console.log(`  Checkpoints: ${persistence.list().length}`);
+
+  // 3. Memory Aware Loop
+  const summarizer = (obs: Observation[]) => `Summarized ${obs.length} observations with ${obs.reduce((s, o) => s + o.tokenCount, 0)} tokens`;
+  const memLoop = new MemoryAwareLoop(1000, 500, summarizer);
+  for (let i = 0; i < 15; i++) {
+    const pruned = memLoop.addObservation(i, `Observation ${i}: cycle data...`, 120);
+    if (pruned) console.log(`  [MEMORY] Cycle ${i}: pruned old observations (utilization: ${memLoop.getStats().utilizationPercent.toFixed(0)}%)`);
+  }
+  console.log(`\nMemory-Aware Loop: ${memLoop.getStats().totalObservations} obs, ${memLoop.getStats().totalTokens} tok`);
+
+  // 4. Streaming Observation Processor
+  const stream = new StreamingObservationProcessor(50);
+  const received: string[] = [];
+  stream.onData((chunk) => { received.push(`seq=${chunk.sequence}:${chunk.data}`); });
+  stream.start();
+  stream.ingest(2, "chunk-two");
+  stream.ingest(0, "chunk-zero");
+  stream.ingest(1, "chunk-one");
+  await new Promise((r) => setTimeout(r, 60));
+  stream.ingest(3, "chunk-three");
+  await new Promise((r) => setTimeout(r, 60));
+  stream.stop();
+  console.log(`\nStreaming Processor: ${received.length} chunks processed`);
+  received.forEach((r) => console.log(`  ${r}`));
+
+  // 5. Loop Metrics Collector
+  const collector = new LoopMetricsCollector();
+  let error = 100;
+  for (let i = 0; i < 12; i++) {
+    error *= 0.6 + Math.random() * 0.2;
+    const m = collector.record(i, error, 500 + Math.random() * 300);
+    if (i === 0 || i === 11) {
+      console.log(`\n  Cycle ${m.cycle}: cpu=${m.cpuPercent.toFixed(0)}% mem=${m.memoryMb.toFixed(0)}MB lat=${m.latencyMs.toFixed(0)}ms err=${m.error.toFixed(2)}`);
+    }
+  }
+  const summary = collector.summarize();
+  console.log(`\nMetrics Summary: avgCPU=${summary.avgCpu.toFixed(0)}% avgMem=${summary.avgMemory.toFixed(0)}MB avgLat=${summary.avgLatency.toFixed(0)}ms`);
+  console.log(`  Error trend: ${summary.errorTrend}, total tokens: ${summary.totalTokens}`);
+}
+
+await main();
+```
+
+**Key concepts demonstrated:**
+- **AgentLoopBenchmark** runs multiple trials across architectures and reports cycles-to-convergence, convergence rate, and average time; enables data-driven architecture selection
+- **StatePersistenceManager** implements checkpoint/restore with automatic eviction of oldest checkpoints and time-based pruning for long-running loops
+- **MemoryAwareLoop** prunes old observations when total tokens exceed a configurable threshold, using a user-provided summarizer to preserve key information compactly
+- **StreamingObservationProcessor** accepts out-of-order chunks, reorders by sequence number, and releases them in correct order with a timeout-based flush for stuck sequences
+- **LoopMetricsCollector** tracks per-cycle CPU, memory, latency, error, and token usage; computes summary statistics and error trend analysis (improving/worsening/stable/oscillating)
+
+---
+
 ## Summary
 
 1.  **ReAct** is the default pattern for good reason: tight feedback between thought and observation prevents hallucination drift. Use it for most tool-using agents with < 10 steps.

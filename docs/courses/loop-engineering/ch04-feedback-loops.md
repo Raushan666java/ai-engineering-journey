@@ -1177,6 +1177,508 @@ await main();
 
 ---
 
+### Advanced Feedback Tools: Oscillation Detection, Cascade Control, Feed-Forward, System ID, and Deadband Filtering
+
+This section adds specialized feedback analysis and control components: an `OscillationDetector` that flags growing amplitude in the error signal, a `CascadeController` chaining multiple controllers in series, a `FeedForwardController` that anticipates disturbances before feedback can react, a `BumpTestAnalyzer` for system identification from step response data, and a `DeadbandFilter` that ignores error changes below a configurable threshold to reduce dithering.
+
+```typescript
+// ch04-advanced-feedback-tools.ts
+// bun run ch04-advanced-feedback-tools.ts
+
+/*
+```mermaid
+graph TD
+    subgraph "Multi-Signal Fusion with Weighted Averaging"
+        A[Signal 1: Accuracy] -->|w1=0.4| F[Weighted Average]
+        B[Signal 2: Latency] -->|w2=0.3| F
+        C[Signal 3: Coverage] -->|w3=0.2| F
+        D[Signal 4: Cost] -->|w4=0.1| F
+        E[Median Filter] --> F
+        F --> G{Fused Score}
+        G -->|Above Threshold| H[Execute]
+        G -->|Below Threshold| I[Adjust Parameters]
+        G -->|Oscillating| J[Reduce Gain]
+        I --> K[Re-evaluate]
+        J --> K
+        K --> A
+    end
+    
+    style H fill:#2ecc71,color:#fff
+    style G fill:#3498db,color:#fff
+*/
+*/
+
+// ─── OscillationDetector ───────────────────────────────────────────────
+
+interface OscillationResult {
+  oscillating: boolean;
+  amplitude: number;
+  period: number | null;
+  growingAmplitude: boolean;
+  zeroCrossingCount: number;
+  recommendation: string;
+}
+
+class OscillationDetector {
+  private errorHistory: number[] = [];
+  private readonly minSamples: number;
+  private readonly amplitudeGrowthThreshold: number;
+
+  constructor(minSamples: number = 6, amplitudeGrowthThreshold: number = 1.1) {
+    this.minSamples = minSamples;
+    this.amplitudeGrowthThreshold = amplitudeGrowthThreshold;
+  }
+
+  feed(error: number): void {
+    this.errorHistory.push(error);
+  }
+
+  analyze(): OscillationResult {
+    const n = this.errorHistory.length;
+    if (n < this.minSamples) {
+      return { oscillating: false, amplitude: 0, period: null, growingAmplitude: false, zeroCrossingCount: 0, recommendation: "Need more samples" };
+    }
+
+    const recent = this.errorHistory.slice(-this.minSamples);
+    let zeroCrossings = 0;
+    for (let i = 1; i < recent.length; i++) {
+      if (recent[i] * recent[i - 1] < 0) zeroCrossings++;
+    }
+
+    const periods: number[] = [];
+    let lastZeroIdx: number | null = null;
+    for (let i = 0; i < this.errorHistory.length; i++) {
+      if (Math.abs(this.errorHistory[i]) < 0.001 || (i > 0 && this.errorHistory[i] * this.errorHistory[i - 1] < 0)) {
+        if (lastZeroIdx !== null) {
+          periods.push(i - lastZeroIdx);
+        }
+        lastZeroIdx = i;
+      }
+    }
+
+    const avgPeriod = periods.length > 0
+      ? periods.reduce((s, p) => s + p, 0) / periods.length
+      : null;
+
+    const halfN = Math.floor(n / 2);
+    const firstHalf = this.errorHistory.slice(0, halfN).map(Math.abs);
+    const secondHalf = this.errorHistory.slice(halfN).map(Math.abs);
+    const firstMean = firstHalf.reduce((s, v) => s + v, 0) / firstHalf.length;
+    const secondMean = secondHalf.reduce((s, v) => s + v, 0) / secondHalf.length;
+    const growingAmplitude = secondMean > firstMean * this.amplitudeGrowthThreshold;
+
+    const amplitude = recent.reduce((max, v) => Math.max(max, Math.abs(v)), 0);
+    const oscillating = zeroCrossings >= 3 && this.errorHistory.length >= 6;
+
+    let recommendation: string;
+    if (!oscillating) {
+      recommendation = "No oscillation detected.";
+    } else if (growingAmplitude) {
+      recommendation = "CRITICAL: Oscillation with growing amplitude. Reduce gain immediately or apply damping.";
+    } else if (amplitude > 10) {
+      recommendation = "WARNING: Sustained large-amplitude oscillation. Consider reducing gain by 30-50%.";
+    } else {
+      recommendation = "Minor oscillation detected. Monitor trend. Consider slight gain reduction or deadband filter.";
+    }
+
+    return { oscillating, amplitude, period: avgPeriod, growingAmplitude, zeroCrossingCount: zeroCrossings, recommendation };
+  }
+
+  reset(): void {
+    this.errorHistory = [];
+  }
+}
+
+// ─── CascadeController ────────────────────────────────────────────────
+
+interface CascadeStage {
+  controller: {
+    compute: (error: number) => number;
+    reset: () => void;
+  };
+  name: string;
+  minOutput: number;
+  maxOutput: number;
+  proportional: number;
+  integral: number;
+}
+
+class CascadeController {
+  private stages: CascadeStage[] = [];
+  private outputs: number[] = [];
+
+  addStage(name: string, kp: number, ki: number, minOutput: number, maxOutput: number): void {
+    let integral = 0;
+    let prevError = 0;
+    const dt = 0.01;
+
+    const controller = {
+      compute: (error: number): number => {
+        const p = kp * error;
+        integral += ki * error * dt;
+        integral = Math.max(minOutput, Math.min(maxOutput, integral));
+        const d = (error - prevError) / dt;
+        let output = p + integral + d;
+        output = Math.max(minOutput, Math.min(maxOutput, output));
+        prevError = error;
+        return output;
+      },
+      reset: () => { integral = 0; prevError = 0; },
+    };
+
+    this.stages.push({ controller, name, minOutput, maxOutput, proportional: kp, integral: ki });
+  }
+
+  compute(setpoint: number, measurement: number): number {
+    this.outputs = [];
+    let error = setpoint - measurement;
+
+    for (const stage of this.stages) {
+      const stageOutput = stage.controller.compute(error);
+      this.outputs.push(stageOutput);
+      error = stageOutput;
+    }
+
+    return this.outputs[this.outputs.length - 1];
+  }
+
+  simulate(
+    setpoint: number,
+    initialValue: number,
+    plantFn: (control: number) => number,
+    steps: number
+  ): Array<{ step: number; measurement: number; control: number; stageOutputs: number[] }> {
+    const trace: Array<{ step: number; measurement: number; control: number; stageOutputs: number[] }> = [];
+    let measurement = initialValue;
+
+    for (let i = 0; i < steps; i++) {
+      const control = this.compute(setpoint, measurement);
+      measurement = plantFn(control);
+      trace.push({ step: i, measurement, control, stageOutputs: [...this.outputs] });
+    }
+
+    return trace;
+  }
+
+  reset(): void {
+    for (const stage of this.stages) {
+      stage.controller.reset();
+    }
+    this.outputs = [];
+  }
+
+  getStageNames(): string[] {
+    return this.stages.map((s) => s.name);
+  }
+}
+
+// ─── FeedForwardController ─────────────────────────────────────────────
+
+interface FeedForwardConfig {
+  disturbanceGain: number;
+  modelInverseGain: number;
+  lookaheadSteps: number;
+}
+
+class FeedForwardController {
+  private config: FeedForwardConfig;
+  private disturbanceHistory: number[] = [];
+  private feedbackOutput = 0;
+
+  constructor(config: FeedForwardConfig) {
+    this.config = config;
+  }
+
+  compute(setpoint: number, measurement: number, predictedDisturbance: number | null): number {
+    const feedbackError = setpoint - measurement;
+
+    // Feedback component (simple P)
+    const feedbackTerm = 0.5 * feedbackError;
+
+    // Feed-forward component: anticipate known disturbances
+    let ffTerm = 0;
+    if (predictedDisturbance !== null) {
+      ffTerm = -this.config.disturbanceGain * predictedDisturbance * this.config.modelInverseGain;
+    }
+
+    this.feedbackOutput = feedbackTerm + ffTerm;
+    return this.feedbackOutput;
+  }
+
+  recordDisturbance(disturbance: number): void {
+    this.disturbanceHistory.push(disturbance);
+    if (this.disturbanceHistory.length > this.config.lookaheadSteps) {
+      this.disturbanceHistory.shift();
+    }
+  }
+
+  predictNextDisturbance(): number | null {
+    if (this.disturbanceHistory.length < 2) return null;
+    const last = this.disturbanceHistory[this.disturbanceHistory.length - 1];
+    const prev = this.disturbanceHistory[this.disturbanceHistory.length - 2];
+    const trend = last - prev;
+    return last + trend;
+  }
+
+  simulate(
+    setpoint: number,
+    initialValue: number,
+    steps: number,
+    disturbanceFn: (step: number) => number
+  ): Array<{ step: number; measurement: number; disturbance: number; control: number; ffTerm: number }> {
+    const trace: Array<{ step: number; measurement: number; disturbance: number; control: number; ffTerm: number }> = [];
+    let measurement = initialValue;
+
+    for (let i = 0; i < steps; i++) {
+      const disturbance = disturbanceFn(i);
+      this.recordDisturbance(disturbance);
+      const predicted = this.predictNextDisturbance();
+      const control = this.compute(setpoint, measurement, predicted);
+      measurement = measurement + 0.1 * control + 0.05 * disturbance + (Math.random() - 0.5) * 0.1;
+      measurement = Math.max(0, measurement);
+
+      const ffOnly = predicted !== null ? -this.config.disturbanceGain * predicted * this.config.modelInverseGain : 0;
+      trace.push({ step: i, measurement, disturbance, control, ffTerm: ffOnly });
+    }
+
+    return trace;
+  }
+
+  reset(): void {
+    this.disturbanceHistory = [];
+    this.feedbackOutput = 0;
+  }
+}
+
+// ─── BumpTestAnalyzer (System Identification) ─────────────────────────
+
+interface ProcessModel {
+  gain: number;
+  timeConstant: number;
+  deadTime: number;
+  fitPercent: number;
+}
+
+class BumpTestAnalyzer {
+  identify(stepResponse: number[], stepTime: number, finalValue: number): ProcessModel {
+    const n = stepResponse.length;
+    const steadyState = stepResponse[n - 1];
+    const gain = finalValue > 0 ? steadyState / finalValue : 0;
+
+    const y63 = steadyState * 0.632;
+    const y28 = steadyState * 0.283;
+
+    let t63 = -1;
+    let t28 = -1;
+
+    for (let i = 0; i < n; i++) {
+      if (t28 < 0 && stepResponse[i] >= y28) t28 = i;
+      if (t63 < 0 && stepResponse[i] >= y63) t63 = i;
+    }
+
+    const timeConstant = t63 > 0 && t28 > 0 ? 1.5 * (t63 - t28) : n / 3;
+    const deadTime = t28 > 0 ? Math.max(0, t28 - 0.4 * timeConstant) : 0;
+
+    const modelOutput = this.simulateModel(gain, timeConstant, deadTime, stepResponse.length, finalValue);
+    const ssRes = stepResponse.reduce((s, y, i) => s + (y - modelOutput[i]) ** 2, 0);
+    const ssTotal = stepResponse.reduce((s, y) => s + (y - stepResponse.reduce((a, b) => a + b, 0) / n) ** 2, 0);
+    const fitPercent = ssTotal > 0 ? Math.max(0, 100 * (1 - ssRes / ssTotal)) : 0;
+
+    return { gain, timeConstant: Math.max(0.1, timeConstant), deadTime: Math.max(0, deadTime), fitPercent };
+  }
+
+  private simulateModel(
+    gain: number, timeConstant: number, deadTime: number, steps: number, stepSize: number
+  ): number[] {
+    const output: number[] = [];
+    let value = 0;
+    const alpha = 1 / Math.max(1, timeConstant);
+    const deadSamples = Math.round(deadTime);
+
+    for (let i = 0; i < steps; i++) {
+      const input = i >= deadSamples ? stepSize : 0;
+      value += alpha * (gain * input - value);
+      output.push(value);
+    }
+    return output;
+  }
+
+  recommendTuning(model: ProcessModel): { kp: number; ki: number; kd: number } {
+    const { gain, timeConstant, deadTime } = model;
+    if (gain <= 0) return { kp: 0.5, ki: 0.1, kd: 0 };
+
+    const ratio = deadTime / Math.max(0.01, timeConstant);
+    let kp: number, ki: number, kd: number;
+
+    if (ratio < 0.1) {
+      kp = 0.6 / gain;
+      ki = 0.5 / timeConstant;
+      kd = 0;
+    } else if (ratio < 0.5) {
+      kp = 0.8 / gain;
+      ki = 0.3 / timeConstant;
+      kd = 0.1 * timeConstant;
+    } else {
+      kp = 0.4 / gain;
+      ki = 0.2 / timeConstant;
+      kd = 0;
+    }
+
+    return { kp, ki, kd };
+  }
+}
+
+// ─── DeadbandFilter ────────────────────────────────────────────────────
+
+class DeadbandFilter {
+  private readonly threshold: number;
+  private lastOutput = 0;
+  private lastValidError = 0;
+  private suppressedCount = 0;
+
+  constructor(threshold: number) {
+    this.threshold = threshold;
+  }
+
+  apply(error: number): number {
+    const change = Math.abs(error - this.lastValidError);
+
+    if (change < this.threshold) {
+      this.suppressedCount++;
+      return this.lastOutput;
+    }
+
+    this.lastOutput = error;
+    this.lastValidError = error;
+    this.suppressedCount = 0;
+    return error;
+  }
+
+  applyWithHysteresis(error: number, hysteresisFactor: number = 1.5): number {
+    const effectiveThreshold = this.suppressedCount > 3
+      ? this.threshold * hysteresisFactor
+      : this.threshold;
+
+    const change = Math.abs(error - this.lastValidError);
+    if (change < effectiveThreshold) {
+      this.suppressedCount++;
+      return this.lastOutput;
+    }
+
+    this.lastOutput = error;
+    this.lastValidError = error;
+    this.suppressedCount = 0;
+    return error;
+  }
+
+  getSuppressedCount(): number {
+    return this.suppressedCount;
+  }
+
+  reset(): void {
+    this.lastOutput = 0;
+    this.lastValidError = 0;
+    this.suppressedCount = 0;
+  }
+
+  static applyToTrace(
+    trace: number[],
+    threshold: number,
+    hysteresis: boolean = false
+  ): { filtered: number[]; suppressed: number } {
+    const filter = new DeadbandFilter(threshold);
+    const filtered = trace.map((v) => hysteresis ? filter.applyWithHysteresis(v) : filter.apply(v));
+    return { filtered, suppressed: filter.getSuppressedCount() };
+  }
+}
+
+// ─── Demo ──────────────────────────────────────────────────────────────
+
+async function main() {
+  console.log("=== Advanced Feedback Tools Demo ===\n");
+
+  // 1. Oscillation Detector
+  const detector = new OscillationDetector(8, 1.15);
+  const oscillatingErrors = [10, 8, -12, -6, 14, 9, -15, -8, 18, 10, -20, -11];
+  oscillatingErrors.forEach((e) => detector.feed(e));
+  const result = detector.analyze();
+  console.log("Oscillation Detector:");
+  console.log(`  Oscillating: ${result.oscillating}`);
+  console.log(`  Amplitude: ${result.amplitude.toFixed(1)}`);
+  console.log(`  Period: ${result.period?.toFixed(1) ?? "N/A"} samples`);
+  console.log(`  Growing amplitude: ${result.growingAmplitude}`);
+  console.log(`  Zero crossings: ${result.zeroCrossingCount}`);
+  console.log(`  Recommendation: ${result.recommendation}`);
+
+  // 2. Cascade Controller
+  const cascade = new CascadeController();
+  cascade.addStage("inner-velocity", 2.0, 0.1, -50, 50);
+  cascade.addStage("outer-position", 0.8, 0.05, -100, 100);
+  const plant = (u: number) => u * 0.05 + (Math.random() - 0.5) * 0.2;
+  const cascadeTrace = cascade.simulate(100, 0, plant, 30);
+  const lastC = cascadeTrace[cascadeTrace.length - 1];
+  console.log(`\nCascade Controller (${cascade.getStageNames().join(" → ")}):`);
+  console.log(`  Stages: ${cascade.getStageNames().length}`);
+  console.log(`  Final measurement: ${lastC.measurement.toFixed(2)}`);
+  console.log(`  Final control: ${lastC.control.toFixed(2)}`);
+  console.log(`  Final error: ${(100 - lastC.measurement).toFixed(2)}`);
+
+  // 3. Feed-Forward Controller
+  const ff = new FeedForwardController({ disturbanceGain: 0.6, modelInverseGain: 0.8, lookaheadSteps: 3 });
+  const ffTrace = ff.simulate(100, 0, 20, (step) => step >= 10 && step < 14 ? 40 : Math.random() * 2);
+  const lastFf = ffTrace[ffTrace.length - 1];
+  console.log(`\nFeed-Forward Controller (with disturbance at step 10-13):`);
+  console.log(`  Final measurement: ${lastFf.measurement.toFixed(2)}`);
+  const maxDeviation = Math.max(...ffTrace.map((t) => Math.abs(100 - t.measurement)));
+  console.log(`  Max deviation from setpoint: ${maxDeviation.toFixed(2)}`);
+  console.log(`  FF term at peak disturbance: ${ffTrace.filter((t) => t.disturbance > 10).map((t) => t.ffTerm.toFixed(2)).join(", ")}`);
+
+  // 4. Bump Test Analyzer
+  const bumpAnalyer = new BumpTestAnalyzer();
+  const stepResp: number[] = [];
+  let v = 0;
+  for (let i = 0; i < 40; i++) {
+    v += (1.5 * 100 - v) / 8;
+    stepResp.push(v + (Math.random() - 0.5) * 2);
+  }
+  const model = bumpAnalyer.identify(stepResp, 0, 100);
+  console.log(`\nBump Test Analyzer (System ID):`);
+  console.log(`  Process gain: ${model.gain.toFixed(3)}`);
+  console.log(`  Time constant: ${model.timeConstant.toFixed(1)} samples`);
+  console.log(`  Dead time: ${model.deadTime.toFixed(1)} samples`);
+  console.log(`  Fit: ${model.fitPercent.toFixed(0)}%`);
+
+  const tuning = bumpAnalyer.recommendTuning(model);
+  console.log(`  Recommended PID: Kp=${tuning.kp.toFixed(2)} Ki=${tuning.ki.toFixed(3)} Kd=${tuning.kd.toFixed(3)}`);
+
+  // 5. Deadband Filter
+  const noisyTrace: number[] = [];
+  for (let i = 0; i < 30; i++) {
+    const trueVal = 50 * Math.exp(-i * 0.08);
+    noisyTrace.push(trueVal + (Math.random() - 0.5) * 3);
+  }
+  const { filtered, suppressed } = DeadbandFilter.applyToTrace(noisyTrace, 0.5, true);
+  console.log(`\nDeadband Filter:`);
+  console.log(`  Raw range: [${Math.min(...noisyTrace).toFixed(1)}, ${Math.max(...noisyTrace).toFixed(1)}]`);
+  console.log(`  Values suppressed (cumulative): ${suppressed}`);
+  const changeCount = noisyTrace.reduce((s, val, i, arr) => s + (i > 0 && val !== arr[i - 1] ? 1 : 0), 0);
+  const filteredChangeCount = filtered.reduce((s, val, i, arr) => s + (i > 0 && val !== arr[i - 1] ? 1 : 0), 0);
+  console.log(`  Raw value changes: ${changeCount}, Filtered value changes: ${filteredChangeCount}`);
+  console.log(`  Dithering reduction: ${changeCount > 0 ? ((1 - filteredChangeCount / changeCount) * 100).toFixed(0) : 0}%`);
+}
+
+await main();
+```
+
+**Key concepts demonstrated:**
+- **OscillationDetector** analyzes error signal zero crossings and amplitude trends to detect sustained or growing oscillations; provides concrete recommendations (reduce gain, apply damping, monitor)
+- **CascadeController** chains multiple control stages in series (e.g., inner velocity loop feeding outer position loop), enabling tighter control of complex dynamics than a single controller
+- **FeedForwardController** anticipates known disturbances using a model-inverse approach, compensating before the feedback loop can react; includes disturbance prediction via trend extrapolation
+- **BumpTestAnalyzer** performs system identification from step response data — estimates process gain, time constant, dead time, and model fit quality; recommends PID tuning parameters based on dead-time-to-time-constant ratio
+- **DeadbandFilter** ignores error changes below a configurable threshold, reducing actuator dithering and controller chatter; includes hysteresis mode that widens the band after repeated suppression
+
+---
+
 ## Summary
 
 - **Eval-driven loops** are the general-purpose feedback mechanism: generate, score against explicit criteria, adjust parameters, and retry until quality converges.

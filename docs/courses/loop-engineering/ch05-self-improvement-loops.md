@@ -1127,19 +1127,567 @@ async function main() {
 main();
 ```
 
-## Summary
+### Mermaid: STaR Bootstrap Cycle
 
-Self-improvement loops are the engine behind modern alignment and capability bootstrapping. Constitutional AI provides runtime guardrails through self-critique and revision against written principles. RLAIF and RLHF train reward models from preference pairs, then optimize policy against them. STaR and ReST bootstrap reasoning by filtering self-generated traces and retraining. DPO eliminates the reward model entirely, optimizing preferences directly with a closed-form objective.
+```mermaid
+flowchart TD
+    subgraph STaR["STaR Bootstrap Cycle"]
+        A[Seed Model] --> B[Generate reasoning traces]
+        B --> C{Answer correct?}
+        C -->|Yes| D[Keep trace]
+        C -->|No| E[Provide hint]
+        E --> B
+        D --> F[Filtered trace dataset]
+        F --> G[Fine-tune model]
+        G --> H[Improved Model]
+        H -.->|next iteration| B
+    end
 
-The three examples in this chapter demonstrate concrete implementations:
+    subgraph ReST["ReST EMT"]
+        I[Policy Model] --> J[Grow: sample N outputs]
+        J --> K[Improve: filter by reward]
+        K --> L[Retrain on kept subset]
+        L -.->|anneal threshold| I
+    end
 
-| Component | Purpose |
-|---|---|
-| ConstitutionalReflectionLoop | Runtime output enforcement via iterative critique + revision |
-| PreferencePairGenerator | Dataset construction for DPO or reward-model training |
-| ImprovementPipeline | End-to-end generate → critique → revise → compare flow |
+    STaR -->|inspires| ReST
+```
 
-These loops compose: the preference pairs from Example 2 feed the constitutional critic's training, which improves the base model, which generates better candidates, which produce higher-quality pairs — a virtuous self-improvement spiral.
+### Extended Implementation: Curriculum Learning, Self-Consistency, Rejection Sampling, Skill Transfer, and Progress Tracking
+
+```typescript
+/// <reference types="node" />
+
+import { randomUUID } from "node:crypto";
+
+// ── CurriculumLearningScheduler ─────────────────────────────────
+interface CurriculumLevel {
+  level: number;
+  description: string;
+  minPerformance: number;   // minimum score to advance (0-1)
+  maxTasks: number;          // max tasks at this level before forced advance
+  taskTemplate: string;
+}
+
+interface CurriculumState {
+  currentLevel: number;
+  tasksAtLevel: number;
+  runningScore: number[];
+  completed: boolean;
+}
+
+class CurriculumLearningScheduler {
+  private state: CurriculumState = {
+    currentLevel: 0,
+    tasksAtLevel: 0,
+    runningScore: [],
+    completed: false,
+  };
+
+  constructor(private levels: CurriculumLevel[]) {}
+
+  get currentLevel(): CurriculumLevel {
+    return this.levels[Math.min(this.state.currentLevel, this.levels.length - 1)];
+  }
+
+  get progress(): number {
+    return this.state.currentLevel / Math.max(this.levels.length - 1, 1);
+  }
+
+  /** Record a score and check if the agent should advance. */
+  recordScore(score: number): { advanced: boolean; newLevel: number; completed: boolean } {
+    this.state.tasksAtLevel++;
+    this.state.runningScore.push(score);
+
+    const avgScore = this.state.runningScore.reduce((a, b) => a + b, 0) /
+                     this.state.runningScore.length;
+    const level = this.levels[this.state.currentLevel];
+
+    const shouldAdvance = avgScore >= level.minPerformance ||
+                          this.state.tasksAtLevel >= level.maxTasks;
+
+    if (shouldAdvance && this.state.currentLevel < this.levels.length - 1) {
+      this.state.currentLevel++;
+      this.state.tasksAtLevel = 0;
+      this.state.runningScore = [];
+    } else if (shouldAdvance && this.state.currentLevel >= this.levels.length - 1) {
+      this.state.completed = true;
+    }
+
+    return {
+      advanced: shouldAdvance,
+      newLevel: this.state.currentLevel,
+      completed: this.state.completed,
+    };
+  }
+
+  /** Get a task appropriate for the current level. */
+  getTask(): string {
+    return this.currentLevel.taskTemplate.replace(
+      "{level}",
+      String(this.currentLevel.level),
+    );
+  }
+
+  reset(): void {
+    this.state = { currentLevel: 0, tasksAtLevel: 0, runningScore: [], completed: false };
+  }
+}
+
+// ── SelfConsistencyEnsemble ─────────────────────────────────────
+interface ReasoningPath {
+  id: string;
+  steps: string[];
+  answer: string;
+  confidence: number;
+}
+
+class SelfConsistencyEnsemble {
+  private paths: ReasoningPath[] = [];
+
+  constructor(
+    private generatePath: (prompt: string) => Promise<ReasoningPath>,
+    private numPaths: number = 5,
+  ) {}
+
+  get allPaths(): readonly ReasoningPath[] {
+    return this.paths;
+  }
+
+  /** Sample multiple reasoning paths and return the consensus answer. */
+  async solve(prompt: string): Promise<{
+    consensus: string;
+    voteDistribution: Record<string, number>;
+    confidence: number;
+    paths: ReasoningPath[];
+  }> {
+    this.paths = [];
+
+    // Generate N reasoning paths in parallel
+    const results = await Promise.all(
+      Array.from({ length: this.numPaths }, () => this.generatePath(prompt)),
+    );
+    this.paths = results;
+
+    // Vote on answers
+    const votes: Record<string, { count: number; totalConfidence: number }> = {};
+    for (const path of results) {
+      if (!votes[path.answer]) {
+        votes[path.answer] = { count: 0, totalConfidence: 0 };
+      }
+      votes[path.answer].count++;
+      votes[path.answer].totalConfidence += path.confidence;
+    }
+
+    // Find the most common answer
+    const sorted = Object.entries(votes).sort((a, b) => b[1].count - a[1].count);
+    const consensus = sorted[0][0];
+    const consensusConfidence = sorted[0][1].totalConfidence / this.numPaths;
+    const voteDistribution: Record<string, number> = {};
+    for (const [answer, data] of Object.entries(votes)) {
+      voteDistribution[answer] = data.count / this.numPaths;
+    }
+
+    return { consensus, voteDistribution, confidence: consensusConfidence, paths: results };
+  }
+
+  /** Check how many paths agree with the consensus. */
+  get agreementRate(): number {
+    if (this.paths.length === 0) return 0;
+    const { consensus } = this.paths.reduce<{
+      consensus: string; counts: Record<string, number>;
+    }>(
+      (acc, p) => {
+        acc.counts[p.answer] = (acc.counts[p.answer] || 0) + 1;
+        return acc;
+      },
+      { consensus: "", counts: {} },
+    );
+    const maxCount = Math.max(...Object.values(this.paths.reduce<Record<string, number>>(
+      (acc, p) => { acc[p.answer] = (acc[p.answer] || 0) + 1; return acc; }, {},
+    )));
+    return maxCount / this.paths.length;
+  }
+}
+
+// ── RejectionSamplingLoop ───────────────────────────────────────
+interface SampledCandidate {
+  id: string;
+  output: string;
+  rewardScore: number;
+  accepted: boolean;
+}
+
+class RejectionSamplingLoop {
+  private candidates: SampledCandidate[] = [];
+  private iteration = 0;
+
+  constructor(
+    private generateFn: (prompt: string) => Promise<string>,
+    private rewardFn: (output: string) => Promise<number>,
+    private threshold: number,
+    private maxCandidates: number = 10,
+  ) {}
+
+  get acceptedCount(): number {
+    return this.candidates.filter((c) => c.accepted).length;
+  }
+
+  get averageReward(): number {
+    if (this.candidates.length === 0) return 0;
+    return this.candidates.reduce((s, c) => s + c.rewardScore, 0) / this.candidates.length;
+  }
+
+  get acceptanceRate(): number {
+    if (this.candidates.length === 0) return 0;
+    return this.acceptedCount / this.candidates.length;
+  }
+
+  /** Run one rejection sampling iteration. */
+  async runIteration(prompt: string): Promise<SampledCandidate> {
+    this.iteration++;
+    const output = await this.generateFn(prompt);
+    const rewardScore = await this.rewardFn(output);
+    const accepted = rewardScore >= this.threshold;
+
+    const candidate: SampledCandidate = {
+      id: randomUUID(),
+      output,
+      rewardScore,
+      accepted,
+    };
+
+    this.candidates.push(candidate);
+    return candidate;
+  }
+
+  /** Generate N candidates and keep the best K by reward score. */
+  async generateKeepK(
+    prompt: string,
+    n: number,
+    k: number,
+  ): Promise<SampledCandidate[]> {
+    const batch: SampledCandidate[] = [];
+    for (let i = 0; i < n; i++) {
+      const candidate = await this.runIteration(prompt);
+      batch.push(candidate);
+    }
+    batch.sort((a, b) => b.rewardScore - a.rewardScore);
+    return batch.slice(0, k);
+  }
+
+  /** Run until we accumulate `target` accepted candidates. */
+  async runUntilAccepted(
+    prompt: string,
+    target: number,
+    maxAttempts: number = 100,
+  ): Promise<SampledCandidate[]> {
+    const accepted: SampledCandidate[] = [];
+    for (let i = 0; i < maxAttempts && accepted.length < target; i++) {
+      const candidate = await this.runIteration(prompt);
+      if (candidate.accepted) {
+        accepted.push(candidate);
+      }
+    }
+    return accepted;
+  }
+
+  /** Export statistics. */
+  getStats(): {
+    totalCandidates: number;
+    accepted: number;
+    acceptanceRate: number;
+    avgReward: number;
+    bestReward: number;
+  } {
+    const rewards = this.candidates.map((c) => c.rewardScore);
+    return {
+      totalCandidates: this.candidates.length,
+      accepted: this.acceptedCount,
+      acceptanceRate: this.acceptanceRate,
+      avgReward: this.averageReward,
+      bestReward: rewards.length > 0 ? Math.max(...rewards) : 0,
+    };
+  }
+
+  reset(): void {
+    this.candidates = [];
+    this.iteration = 0;
+  }
+}
+
+// ── SkillTransferLoop ───────────────────────────────────────────
+interface SkillTransferConfig {
+  teacherFn: (task: string) => Promise<string>;
+  studentFn: (task: string) => Promise<string>;
+  judgeFn: (task: string, output: string) => Promise<number>;
+  transferBatchSize: number;
+  similarityThreshold: number;
+}
+
+interface TransferRecord {
+  task: string;
+  teacherOutput: string;
+  studentOutput: string;
+  teacherScore: number;
+  studentScore: number;
+  gap: number;
+  distilled: boolean;
+}
+
+class SkillTransferLoop {
+  private transferHistory: TransferRecord[] = [];
+  private studentBaseline = 0;
+
+  constructor(private config: SkillTransferConfig) {}
+
+  get averageGap(): number {
+    if (this.transferHistory.length === 0) return 0;
+    return this.transferHistory.reduce((s, r) => s + r.gap, 0) / this.transferHistory.length;
+  }
+
+  get transferCount(): number {
+    return this.transferHistory.filter((r) => r.distilled).length;
+  }
+
+  /** Run one transfer cycle: teacher demonstrates, student imitates, judge scores. */
+  async transfer(task: string): Promise<TransferRecord> {
+    const [teacherOutput, studentOutput] = await Promise.all([
+      this.config.teacherFn(task),
+      this.config.studentFn(task),
+    ]);
+
+    const [teacherScore, studentScore] = await Promise.all([
+      this.config.judgeFn(task, teacherOutput),
+      this.config.judgeFn(task, studentOutput),
+    ]);
+
+    const gap = teacherScore - studentScore;
+    const distilled = gap > 0 && gap <= this.config.similarityThreshold;
+
+    const record: TransferRecord = {
+      task,
+      teacherOutput,
+      studentOutput,
+      teacherScore,
+      studentScore,
+      gap,
+      distilled,
+    };
+
+    this.transferHistory.push(record);
+    this.studentBaseline = studentScore;
+    return record;
+  }
+
+  /** Run batch transfer on multiple tasks. */
+  async batchTransfer(tasks: string[]): Promise<TransferRecord[]> {
+    const results: TransferRecord[] = [];
+    for (let i = 0; i < tasks.length; i += this.config.transferBatchSize) {
+      const batch = tasks.slice(i, i + this.config.transferBatchSize);
+      const batchResults = await Promise.all(batch.map((t) => this.transfer(t)));
+      results.push(...batchResults);
+    }
+    return results;
+  }
+
+  /** Report improvement over baseline. */
+  improvementReport(): {
+    totalTransfers: number;
+    distilledCount: number;
+    avgGapReduction: number;
+    currentBaseline: number;
+  } {
+    return {
+      totalTransfers: this.transferHistory.length,
+      distilledCount: this.transferCount,
+      avgGapReduction: this.averageGap,
+      currentBaseline: this.studentBaseline,
+    };
+  }
+}
+
+// ── ProgressTracker ─────────────────────────────────────────────
+interface ProgressPoint {
+  iteration: number;
+  score: number;
+  timestamp: number;
+}
+
+interface PlateauDetectionResult {
+  plateaued: boolean;
+  plateauLength: number;
+  improvementRate: number;
+  recommendedAction: string;
+}
+
+class ProgressTracker {
+  private history: ProgressPoint[] = [];
+  private plateausDetected = 0;
+
+  constructor(
+    private windowSize: number = 10,
+    private plateauThreshold: number = 0.02,
+  ) {}
+
+  get currentScore(): number {
+    return this.history.length > 0 ? this.history[this.history.length - 1].score : 0;
+  }
+
+  get totalIterations(): number {
+    return this.history.length;
+  }
+
+  /** Record a new progress data point. */
+  record(iteration: number, score: number): void {
+    this.history.push({ iteration, score, timestamp: Date.now() });
+    if (this.history.length > this.windowSize * 3) {
+      this.history = this.history.slice(-this.windowSize * 3);
+    }
+  }
+
+  /** Calculate improvement rate over the last N iterations. */
+  improvementRate(window?: number): number {
+    const w = window ?? this.windowSize;
+    if (this.history.length < 2) return 0;
+    const recent = this.history.slice(-w);
+    const first = recent[0].score;
+    const last = recent[recent.length - 1].score;
+    return first > 0 ? (last - first) / first : 0;
+  }
+
+  /** Detect if progress has plateaued. */
+  detectPlateau(): PlateauDetectionResult {
+    if (this.history.length < this.windowSize) {
+      return {
+        plateaued: false,
+        plateauLength: 0,
+        improvementRate: this.improvementRate(),
+        recommendedAction: "collect more data",
+      };
+    }
+
+    const recent = this.history.slice(-this.windowSize);
+    const scores = recent.map((p) => p.score);
+    const mean = scores.reduce((a, b) => a + b, 0) / scores.length;
+    const variance = scores.reduce((s, v) => s + (v - mean) ** 2, 0) / scores.length;
+    const stddev = Math.sqrt(variance);
+
+    const improvement = this.improvementRate();
+    const plateaued = stddev < this.plateauThreshold || Math.abs(improvement) < this.plateauThreshold;
+
+    if (plateaued) {
+      this.plateausDetected++;
+    }
+
+    let recommendedAction: string;
+    if (plateaued) {
+      if (this.plateausDetected <= 2) {
+        recommendedAction = "increase task difficulty or add noise";
+      } else if (this.plateausDetected <= 5) {
+        recommendedAction = "switch training objective or reset to checkpoint";
+      } else {
+        recommendedAction = "consider model architecture change or curriculum reset";
+      }
+    } else {
+      recommendedAction = "continue current strategy";
+    }
+
+    return {
+      plateaued,
+      plateauLength: this.plateausDetected,
+      improvementRate: improvement,
+      recommendedAction,
+    };
+  }
+
+  /** Get a summary of training progress. */
+  summary(): {
+    iterations: number;
+    currentScore: number;
+    improvementRate: number;
+    plateausDetected: number;
+    plateaued: boolean;
+  } {
+    return {
+      iterations: this.history.length,
+      currentScore: this.currentScore,
+      improvementRate: this.improvementRate(),
+      plateausDetected: this.plateausDetected,
+      plateaued: this.detectPlateau().plateaued,
+    };
+  }
+
+  reset(): void {
+    this.history = [];
+    this.plateausDetected = 0;
+  }
+}
+
+// ── Usage ──────────────────────────────────────────────────────
+async function main() {
+  // CurriculumLearningScheduler demo
+  const curriculum = new CurriculumLearningScheduler([
+    { level: 1, description: "Basic addition", minPerformance: 0.8, maxTasks: 10, taskTemplate: "Add two numbers (level {level})" },
+    { level: 2, description: "Multiplication", minPerformance: 0.75, maxTasks: 15, taskTemplate: "Multiply numbers (level {level})" },
+    { level: 3, description: "Algebra", minPerformance: 0.7, maxTasks: 20, taskTemplate: "Solve equation (level {level})" },
+  ]);
+
+  for (let i = 0; i < 30; i++) {
+    const score = 0.5 + Math.random() * 0.5;
+    const result = curriculum.recordScore(score);
+    if (result.advanced) {
+      console.log(`Advanced to level ${result.newLevel + 1} after ${i + 1} tasks`);
+    }
+    if (result.completed) break;
+  }
+  console.log(`Curriculum progress: ${(curriculum.progress * 100).toFixed(0)}%`);
+
+  // SelfConsistencyEnsemble demo
+  const ensemble = new SelfConsistencyEnsemble(
+    async (_p) => ({
+      id: randomUUID(),
+      steps: ["step1", "step2"],
+      answer: Math.random() > 0.4 ? "42" : "7",
+      confidence: 0.7 + Math.random() * 0.3,
+    }),
+    7,
+  );
+  const consensus = await ensemble.solve("What is the meaning of life?");
+  console.log(`Consensus: ${consensus.consensus} (confidence: ${consensus.confidence.toFixed(2)})`);
+
+  // RejectionSamplingLoop demo
+  const sampler = new RejectionSamplingLoop(
+    async (p) => `Generated: ${p}`,
+    async (o) => o.length * 2 + Math.random() * 10,
+    50,
+  );
+  const kept = await sampler.generateKeepK("test prompt", 20, 5);
+  console.log(`Kept ${kept.length}/${sampler["candidates"].length} candidates`);
+  console.log(`Acceptance rate: ${(sampler.acceptanceRate * 100).toFixed(0)}%`);
+
+  // SkillTransferLoop demo
+  const transfer = new SkillTransferLoop({
+    teacherFn: async (t) => `Teacher answer to: ${t}`,
+    studentFn: async (t) => `Student answer to: ${t}`,
+    judgeFn: async (_t, o) => o.startsWith("Teacher") ? 95 : 65 + Math.random() * 20,
+    transferBatchSize: 3,
+    similarityThreshold: 40,
+  });
+  await transfer.batchTransfer(["task1", "task2", "task3"]);
+  console.log(`Transfers: ${transfer.transferCount}, avg gap: ${transfer.averageGap.toFixed(1)}`);
+
+  // ProgressTracker demo
+  const tracker = new ProgressTracker(5);
+  for (let i = 0; i < 15; i++) {
+    tracker.record(i, 0.5 + Math.random() * 0.05); // near-plateau scores
+  }
+  const plateau = tracker.detectPlateau();
+  console.log(`Plateaued: ${plateau.plateaued}, action: ${plateau.recommendedAction}`);
+}
+
+main();
+```
 
 ## Exercises
 

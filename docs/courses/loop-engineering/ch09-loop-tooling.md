@@ -1456,6 +1456,562 @@ Test harness assertions:
   ✓ Every read call returns content
 ```
 
+
+### 9.7 Extended Tooling: Test, Replay, and Document
+
+The following diagram shows seven complementary tools that provide observation, testing, analysis, and documentation for any agent loop:
+
+```mermaid
+graph TB
+    subgraph "Observation"
+        SR[ScenarioRecorder]
+        PR[LoopProfiler]
+    end
+    subgraph "Analysis"
+        SC[SnapshotComparator]
+        TV[TraceVisualizer]
+    end
+    subgraph "Testing"
+        LS[LoopSimulator]
+        AB[ABNTestFramework]
+        RS[RegressionTestSuite]
+    end
+    subgraph "Documentation"
+        DG[DocumentationGenerator]
+    end
+    SR --> SC
+    SR --> LS
+    LS --> SC
+    LS --> AB
+    SC --> RS
+    AB --> RS
+    RS --> DG
+```
+
+#### SnapshotComparator
+
+Diffs two loop snapshots to detect regressions in steps, tokens, cost, duration, and failure rate.
+
+```typescript
+// snapshot-comparator.ts
+interface LoopSnapshot {
+  id: string;
+  timestamp: string;
+  config: { maxSteps: number; maxTokens: number; maxCostUsd: number };
+  cycles: Array<{
+    step: number;
+    phase: string;
+    toolName: string;
+    durationMs: number;
+    tokens: number;
+    success: boolean;
+    error?: string;
+  }>;
+  totals: { steps: number; tokens: number; costUsd: number; durationMs: number };
+}
+
+interface DiffEntry {
+  metric: string;
+  baseline: number | string;
+  candidate: number | string;
+  delta: string;
+  impact: "critical" | "warning" | "info";
+}
+
+class SnapshotComparator {
+  compare(baseline: LoopSnapshot, candidate: LoopSnapshot): DiffEntry[] {
+    const diffs: DiffEntry[] = [];
+    const metrics = [
+      { key: "steps" as const, label: "Steps completed" },
+      { key: "tokens" as const, label: "Tokens consumed" },
+      { key: "costUsd" as const, label: "Cost (USD)" },
+      { key: "durationMs" as const, label: "Duration (ms)" },
+    ];
+    for (const { key, label } of metrics) {
+      const b = baseline.totals[key] as number;
+      const c = candidate.totals[key] as number;
+      const pct = b !== 0 ? ((c - b) / b) * 100 : 0;
+      diffs.push({
+        metric: label,
+        baseline: b,
+        candidate: c,
+        delta: `${pct > 0 ? "+" : ""}${pct.toFixed(1)}%`,
+        impact: Math.abs(pct) > 50 ? "critical" : Math.abs(pct) > 20 ? "warning" : "info",
+      });
+    }
+    const bFails = baseline.cycles.filter((c) => !c.success).length;
+    const cFails = candidate.cycles.filter((c) => !c.success).length;
+    diffs.push({
+      metric: "Failed cycles",
+      baseline: bFails,
+      candidate: cFails,
+      delta: `${cFails - bFails > 0 ? "+" : ""}${cFails - bFails}`,
+      impact: cFails > bFails ? "critical" : "info",
+    });
+    return diffs;
+  }
+
+  generateReport(baseline: LoopSnapshot, candidate: LoopSnapshot): string {
+    const diffs = this.compare(baseline, candidate);
+    const lines = ["═══ Snapshot Comparison Report ═══\n"];
+    lines.push(`Baseline:  ${baseline.id} @ ${baseline.timestamp}`);
+    lines.push(`Candidate: ${candidate.id} @ ${candidate.timestamp}\n`);
+    for (const d of diffs) {
+      const icon = d.impact === "critical" ? "🔴" : d.impact === "warning" ? "⚠️" : "ℹ️";
+      lines.push(`  ${icon} ${d.metric}: ${d.baseline} → ${d.candidate} (${d.delta})`);
+    }
+    return lines.join("\n");
+  }
+}
+```
+
+#### ScenarioRecorder
+
+Captures every step of a real loop run — LLM calls, tool results, decisions, and timing — and exports a replayable scenario file.
+
+```typescript
+// scenario-recorder.ts
+interface ScenarioStep {
+  step: number;
+  llmPrompt?: string;
+  llmResponse?: string;
+  toolCall: { name: string; args: Record<string, unknown> };
+  toolResult: { success: boolean; data: string; error?: string };
+  durationMs: number;
+}
+
+interface Scenario {
+  name: string;
+  description: string;
+  steps: ScenarioStep[];
+  metadata: Record<string, unknown>;
+}
+
+class ScenarioRecorder {
+  private scenario: Scenario;
+  private outputDir: string;
+
+  constructor(name: string, description: string, outputDir = "/tmp/scenarios") {
+    this.scenario = { name, description, steps: [], metadata: {} };
+    this.outputDir = outputDir;
+  }
+
+  recordStep(step: ScenarioStep): void {
+    this.scenario.steps.push(step);
+  }
+
+  setMetadata(key: string, value: unknown): void {
+    this.scenario.metadata[key] = value;
+  }
+
+  exportToFile(): string {
+    const slug = this.scenario.name.replace(/\s+/g, "-").toLowerCase();
+    const path = `${this.outputDir}/${slug}.json`;
+    Bun.write(path, JSON.stringify(this.scenario, null, 2));
+    return path;
+  }
+
+  static load(path: string): Scenario {
+    return JSON.parse(Bun.file(path).text()) as Scenario;
+  }
+
+  toTestScenario() {
+    return {
+      name: this.scenario.name,
+      steps: this.scenario.steps.map((s) => ({
+        tool: s.toolCall.name,
+        args: s.toolCall.args,
+        expectedSuccess: s.toolResult.success,
+      })),
+    };
+  }
+}
+```
+
+#### LoopSimulator
+
+Fast-forwards a loop by replaying a recorded scenario with synthetic timing, token accounting, and configurable failure injection.
+
+```typescript
+// loop-simulator.ts
+class LoopSimulator {
+  private scenarioPath: string;
+  private maxSteps: number;
+  private tokensPerStep: number;
+  private costPerToken: number;
+  private stepDurationMs: number;
+  private failEveryN: number;
+
+  constructor(config: {
+    scenarioPath: string;
+    maxSteps: number;
+    tokensPerStep: number;
+    costPerToken: number;
+    stepDurationMs: number;
+    failEveryN: number;
+  }) {
+    this.scenarioPath = config.scenarioPath;
+    this.maxSteps = config.maxSteps;
+    this.tokensPerStep = config.tokensPerStep;
+    this.costPerToken = config.costPerToken;
+    this.stepDurationMs = config.stepDurationMs;
+    this.failEveryN = config.failEveryN;
+  }
+
+  async run(): Promise<LoopSnapshot> {
+    const scenario = ScenarioRecorder.load(this.scenarioPath);
+    const cycles: LoopSnapshot["cycles"] = [];
+    let totalTokens = 0;
+    let totalCost = 0;
+    const startTime = Date.now();
+
+    for (let i = 0; i < Math.min(this.maxSteps, scenario.steps.length); i++) {
+      const step = scenario.steps[i];
+      const shouldFail = this.failEveryN > 0 && (i + 1) % this.failEveryN === 0;
+      const jitter = Math.floor(Math.random() * 20);
+      const tokens = this.tokensPerStep + Math.floor(Math.random() * 50);
+      totalTokens += tokens;
+      totalCost += tokens * this.costPerToken;
+
+      cycles.push({
+        step: i + 1,
+        phase: "act",
+        toolName: step.toolCall.name,
+        durationMs: this.stepDurationMs + jitter,
+        tokens,
+        success: !shouldFail,
+        error: shouldFail ? "Simulated failure" : undefined,
+      });
+      await new Promise((r) => setTimeout(r, 5));
+    }
+
+    return {
+      id: `sim-${Date.now()}`,
+      timestamp: new Date().toISOString(),
+      config: { maxSteps: this.maxSteps, maxTokens: 0, maxCostUsd: 0 },
+      cycles,
+      totals: {
+        steps: cycles.length,
+        tokens: totalTokens,
+        costUsd: totalCost,
+        durationMs: Date.now() - startTime,
+      },
+    };
+  }
+}
+```
+
+#### ABNTestFramework
+
+Compares two or more loop configurations side-by-side on the same scenario, reporting deltas in steps, tokens, cost, and duration.
+
+```typescript
+// abn-test-framework.ts
+interface ABConfig {
+  name: string;
+  overrides: Partial<{
+    maxSteps: number;
+    tokensPerStep: number;
+    stepDurationMs: number;
+    failEveryN: number;
+  }>;
+}
+
+class ABNTestFramework {
+  private baselineConfig: ConstructorParameters<typeof LoopSimulator>[0];
+
+  constructor(baselineConfig: ConstructorParameters<typeof LoopSimulator>[0]) {
+    this.baselineConfig = baselineConfig;
+  }
+
+  async compare(
+    configs: ABConfig[],
+  ): Promise<{ snapshots: LoopSnapshot[]; report: string }> {
+    const snapshots: LoopSnapshot[] = [];
+    for (const cfg of configs) {
+      const sim = new LoopSimulator({ ...this.baselineConfig, ...cfg.overrides });
+      snapshots.push(await sim.run());
+    }
+    return { snapshots, report: this.buildReport(snapshots) };
+  }
+
+  private buildReport(snapshots: LoopSnapshot[]): string {
+    if (snapshots.length < 2) return "Need at least 2 configurations";
+    const lines: string[] = [];
+    for (let i = 1; i < snapshots.length; i++) {
+      const comp = new SnapshotComparator();
+      const diffs = comp.compare(snapshots[0], snapshots[i]);
+      lines.push(`\n${snapshots[0].id} → ${snapshots[i].id}:`);
+      for (const d of diffs) {
+        lines.push(`  ${d.metric}: ${d.delta} (${d.impact})`);
+      }
+    }
+    return lines.join("\n");
+  }
+}
+```
+
+#### RegressionTestSuite
+
+Defines a library of named scenarios with expected outcomes. Runs all scenarios and reports pass/fail with diagnostic details.
+
+```typescript
+// regression-test-suite.ts
+interface TestCase {
+  name: string;
+  scenarioPath: string;
+  expectedSteps: number;
+  maxTokens: number;
+  maxDurationMs: number;
+  minSuccessRate: number;
+}
+
+interface TestResult {
+  name: string;
+  passed: boolean;
+  actual: { steps: number; tokens: number; durationMs: number; successRate: number };
+  failures: string[];
+}
+
+class RegressionTestSuite {
+  private tests: TestCase[] = [];
+
+  add(test: TestCase): void {
+    this.tests.push(test);
+  }
+
+  addFromFile(path: string): void {
+    const config: TestCase[] = JSON.parse(Bun.file(path).text());
+    for (const tc of config) this.tests.push(tc);
+  }
+
+  async runAll(
+    baseConfig: ConstructorParameters<typeof LoopSimulator>[0],
+  ): Promise<{ results: TestResult[]; passed: number; failed: number }> {
+    const results: TestResult[] = [];
+    for (const test of this.tests) {
+      const sim = new LoopSimulator({
+        ...baseConfig,
+        scenarioPath: test.scenarioPath,
+        maxSteps: test.expectedSteps * 2,
+      });
+      const snapshot = await sim.run();
+      const failures: string[] = [];
+      const successRate =
+        snapshot.cycles.filter((c) => c.success).length /
+        Math.max(snapshot.cycles.length, 1);
+
+      if (snapshot.totals.steps < test.expectedSteps)
+        failures.push(
+          `Steps: expected ≥${test.expectedSteps}, got ${snapshot.totals.steps}`,
+        );
+      if (snapshot.totals.tokens > test.maxTokens)
+        failures.push(
+          `Tokens: expected ≤${test.maxTokens}, got ${snapshot.totals.tokens}`,
+        );
+      if (snapshot.totals.durationMs > test.maxDurationMs)
+        failures.push(
+          `Duration: expected ≤${test.maxDurationMs}ms, got ${snapshot.totals.durationMs}ms`,
+        );
+      if (successRate < test.minSuccessRate)
+        failures.push(
+          `Success rate: expected ≥${(test.minSuccessRate * 100).toFixed(0)}%, got ${(successRate * 100).toFixed(0)}%`,
+        );
+
+      results.push({
+        name: test.name,
+        passed: failures.length === 0,
+        actual: {
+          steps: snapshot.totals.steps,
+          tokens: snapshot.totals.tokens,
+          durationMs: snapshot.totals.durationMs,
+          successRate,
+        },
+        failures,
+      });
+    }
+    return {
+      results,
+      passed: results.filter((r) => r.passed).length,
+      failed: results.filter((r) => !r.passed).length,
+    };
+  }
+}
+```
+
+#### DocumentationGenerator
+
+Reads TypeScript interfaces, classes, and JSDoc comments from source code to produce structured Markdown API documentation.
+
+```typescript
+// documentation-generator.ts
+interface DocEntry {
+  name: string;
+  kind: "interface" | "class" | "type" | "function";
+  description: string;
+  properties?: Array<{ name: string; type: string; description: string }>;
+}
+
+class DocumentationGenerator {
+  private entries: DocEntry[] = [];
+
+  parseFromSource(source: string): void {
+    const re =
+      /\/\*\*([\s\S]*?)\*\/\s*(?:export\s+)?(interface|class|type|function)\s+(\w+)/g;
+    let match: RegExpExecArray | null;
+    while ((match = re.exec(source)) !== null) {
+      this.entries.push({
+        name: match[3],
+        kind: match[2] as DocEntry["kind"],
+        description: match[1].replace(/^[\s*]+|[\s*]+$/gm, "").trim(),
+      });
+    }
+  }
+
+  addManual(entry: DocEntry): void {
+    this.entries.push(entry);
+  }
+
+  generateMarkdown(): string {
+    const lines = ["# Loop Tooling API Reference\n"];
+    for (const e of this.entries.sort((a, b) =>
+      a.name.localeCompare(b.name),
+    )) {
+      lines.push(`## ${e.name}\n`);
+      lines.push(`**Kind:** ${e.kind}\n`);
+      if (e.description) lines.push(`${e.description}\n`);
+      if (e.properties && e.properties.length > 0) {
+        lines.push("| Property | Type | Description |");
+        lines.push("|----------|------|-------------|");
+        for (const p of e.properties)
+          lines.push(
+            `| \`${p.name}\` | \`${p.type}\` | ${p.description} |`,
+          );
+        lines.push("");
+      }
+    }
+    lines.push(`_Generated on ${new Date().toISOString().split("T")[0]}_`);
+    return lines.join("\n");
+  }
+
+  writeToFile(path: string): void {
+    Bun.write(path, this.generateMarkdown());
+  }
+}
+```
+
+#### Demo: Extended Tooling Suite
+
+```typescript
+// demo-extended-tooling.ts
+async function demoExtendedTooling() {
+  console.log("═══ Extended Tooling Suite Demo ═══\n");
+
+  // 1. Record a scenario from a live run
+  const recorder = new ScenarioRecorder(
+    "demo-search",
+    "Simulated code search",
+  );
+  recorder.setMetadata("model", "claude-sonnet-4");
+  for (let i = 0; i < 3; i++) {
+    recorder.recordStep({
+      step: i + 1,
+      toolCall: { name: "read", args: { path: `file-${i}.ts` } },
+      toolResult: { success: true, data: `content of file ${i}` },
+      durationMs: 50 + Math.floor(Math.random() * 100),
+    });
+  }
+  const scenarioPath = recorder.exportToFile();
+  console.log(`1. Scenario recorded: ${scenarioPath}`);
+
+  // 2. Simulate from the recorded scenario
+  const sim = new LoopSimulator({
+    scenarioPath,
+    maxSteps: 3,
+    tokensPerStep: 150,
+    costPerToken: 0.00001,
+    stepDurationMs: 30,
+    failEveryN: 0,
+  });
+  const snapshot = await sim.run();
+  console.log(
+    `2. Simulation: ${snapshot.totals.steps} steps, ${snapshot.totals.tokens} tokens, ${snapshot.totals.durationMs}ms`,
+  );
+
+  // 3. A/B test two configurations
+  const ab = new ABNTestFramework({
+    scenarioPath,
+    maxSteps: 3,
+    tokensPerStep: 150,
+    costPerToken: 0.00001,
+    stepDurationMs: 30,
+    failEveryN: 0,
+  });
+  const abReport = await ab.compare([
+    { name: "fast", overrides: { stepDurationMs: 10, tokensPerStep: 100 } },
+    { name: "slow", overrides: { stepDurationMs: 60, tokensPerStep: 300 } },
+  ]);
+  console.log("3. A/B report:");
+  console.log(abReport);
+
+  // 4. Snapshot comparison (simulate a regression)
+  const regressed = {
+    ...snapshot,
+    id: "regressed-v2",
+    totals: {
+      ...snapshot.totals,
+      tokens: snapshot.totals.tokens * 2,
+      costUsd: snapshot.totals.costUsd * 2,
+    },
+  };
+  const comp = new SnapshotComparator();
+  console.log("\n4. Regression comparison:");
+  console.log(comp.generateReport(snapshot, regressed));
+
+  // 5. Regression test suite
+  const suite = new RegressionTestSuite();
+  suite.add({
+    name: "basic-test",
+    scenarioPath,
+    expectedSteps: 3,
+    maxTokens: 2000,
+    maxDurationMs: 5000,
+    minSuccessRate: 1.0,
+  });
+  const suiteResult = await suite.runAll({
+    scenarioPath,
+    maxSteps: 3,
+    tokensPerStep: 150,
+    costPerToken: 0.00001,
+    stepDurationMs: 30,
+    failEveryN: 0,
+  });
+  console.log(
+    `\n5. Regression suite: ${suiteResult.passed} passed, ${suiteResult.failed} failed`,
+  );
+
+  // 6. Generate documentation
+  const docGen = new DocumentationGenerator();
+  docGen.addManual({
+    name: "LoopSnapshot",
+    kind: "interface",
+    description: "Complete state of a loop run",
+    properties: [{ name: "cycles", type: "Cycle[]", description: "Recorded cycles" }],
+  });
+  docGen.addManual({
+    name: "ScenarioRecorder",
+    kind: "class",
+    description: "Captures loop runs for replay",
+    properties: [{ name: "scenario", type: "Scenario", description: "Internal state" }],
+  });
+  console.log(
+    `6. Generated ${docGen.entries.length} API documentation entries`,
+  );
+}
+
+await demoExtendedTooling();
+```
+
 ---
 
 ## Summary

@@ -1118,6 +1118,537 @@ await main();
 
 ---
 
+### HITL Production Tooling: Workload Balancing, Stale Proposals, Performance Tracking, and Simulated Reviewers
+
+This section adds production-grade HITL infrastructure: a `ReviewerWorkloadBalancer` that distributes proposals across available humans, a `StaleProposalCleaner` that expires unassigned proposals after TTL, a `HumanPerformanceTracker` measuring reviewer accuracy/speed/fatigue, a `SimulatedReviewerPool` for testing, and a `ProposalLifecycleLogger` for full lifecycle audit.
+
+```typescript
+// ch03-hitl-tooling.ts
+// bun run ch03-hitl-tooling.ts
+
+/*
+```mermaid
+graph TD
+    subgraph "HITL Escalation Flow with Timeouts & Fallbacks"
+        A[Proposal Submitted] --> B{Run Gates}
+        B -->|Auto-Approve| C[Execute]
+        B -->|Review Needed| D[Primary Reviewer]
+        D -->|Timeout| E[Secondary Reviewer]
+        D -->|Reject| F[Rejected]
+        D -->|Approve| C
+        E -->|Timeout| F
+        E -->|Reject| F
+        E -->|Approve| C
+        F --> G{Reviewer Available?}
+        G -->|Yes| H[Delegate Chain]
+        H --> D
+        G -->|No| I[Fallback Action]
+        I --> J{Policy}
+        J -->|Approve| C
+        J -->|Reject| K[Escalation Log]
+        C --> L[Outcome Recorded]
+    end
+    
+    style A fill:#3498db,color:#fff
+    style C fill:#2ecc71,color:#fff
+    style F fill:#f39c12,color:#fff
+    style K fill:#e74c3c,color:#fff
+*/
+*/
+
+// ─── ReviewerWorkloadBalancer ──────────────────────────────────────────
+
+interface Reviewer {
+  id: string;
+  name: string;
+  maxWorkload: number;
+  currentLoad: number;
+  specialties: string[];
+  averageReviewTimeMs: number;
+  isAvailable: boolean;
+}
+
+interface WorkloadAssignment {
+  proposalId: string;
+  reviewerId: string;
+  estimatedDurationMs: number;
+  assignedAt: Date;
+}
+
+class ReviewerWorkloadBalancer {
+  private reviewers: Reviewer[] = [];
+  private assignments: WorkloadAssignment[] = [];
+
+  registerReviewer(reviewer: Omit<Reviewer, "currentLoad" | "isAvailable">): void {
+    this.reviewers.push({ ...reviewer, currentLoad: 0, isAvailable: true });
+  }
+
+  assign(proposalId: string, category: string, estimatedComplexity: number): Reviewer | null {
+    const available = this.reviewers.filter(
+      (r) => r.isAvailable && r.currentLoad < r.maxWorkload
+    );
+
+    if (available.length === 0) return null;
+
+    const scored = available.map((r) => {
+      const specialtyBonus = r.specialties.includes(category) ? 0.2 : 0;
+      const loadFactor = 1 - r.currentLoad / r.maxWorkload;
+      const speedFactor = Math.max(0.3, 1 - r.averageReviewTimeMs / 10000);
+      const score = specialtyBonus + loadFactor * 0.5 + speedFactor * 0.3;
+      return { reviewer: r, score };
+    });
+
+    scored.sort((a, b) => b.score - a.score);
+    const best = scored[0].reviewer;
+    best.currentLoad++;
+    if (best.currentLoad >= best.maxWorkload) best.isAvailable = false;
+
+    this.assignments.push({
+      proposalId,
+      reviewerId: best.id,
+      estimatedDurationMs: best.averageReviewTimeMs * estimatedComplexity,
+      assignedAt: new Date(),
+    });
+
+    return best;
+  }
+
+  completeReview(reviewerId: string): void {
+    const reviewer = this.reviewers.find((r) => r.id === reviewerId);
+    if (reviewer) {
+      reviewer.currentLoad = Math.max(0, reviewer.currentLoad - 1);
+      reviewer.isAvailable = reviewer.currentLoad < reviewer.maxWorkload;
+    }
+  }
+
+  getWorkloadSnapshot(): Array<{ id: string; load: number; maxLoad: number; available: boolean }> {
+    return this.reviewers.map((r) => ({
+      id: r.id,
+      load: r.currentLoad,
+      maxLoad: r.maxWorkload,
+      available: r.isAvailable,
+    }));
+  }
+
+  getAverageUtilization(): number {
+    if (this.reviewers.length === 0) return 0;
+    const totalLoad = this.reviewers.reduce((s, r) => s + r.currentLoad, 0);
+    const totalCapacity = this.reviewers.reduce((s, r) => s + r.maxWorkload, 0);
+    return totalCapacity > 0 ? totalLoad / totalCapacity : 0;
+  }
+}
+
+// ─── StaleProposalCleaner ──────────────────────────────────────────────
+
+interface StaleProposal {
+  id: string;
+  action: string;
+  status: "pending" | "assigned" | "in-review";
+  submittedAt: Date;
+  assignedAt: Date | null;
+  ttlMs: number;
+}
+
+class StaleProposalCleaner {
+  private proposals: Map<string, StaleProposal> = new Map();
+  private expiredCount = 0;
+  private cleanInterval: ReturnType<typeof setInterval> | null = null;
+
+  track(proposal: StaleProposal): void {
+    this.proposals.set(proposal.id, proposal);
+  }
+
+  updateStatus(id: string, status: StaleProposal["status"]): void {
+    const p = this.proposals.get(id);
+    if (p) {
+      p.status = status;
+      if (status === "assigned" && !p.assignedAt) p.assignedAt = new Date();
+    }
+  }
+
+  private computeRemainingMs(proposal: StaleProposal): number {
+    const start = proposal.assignedAt ?? proposal.submittedAt;
+    return proposal.ttlMs - (Date.now() - start.getTime());
+  }
+
+  getExpired(): StaleProposal[] {
+    const expired: StaleProposal[] = [];
+    for (const [id, proposal] of this.proposals) {
+      if (proposal.status === "in-review") continue;
+      if (this.computeRemainingMs(proposal) <= 0) {
+        expired.push(proposal);
+        this.proposals.delete(id);
+        this.expiredCount++;
+      }
+    }
+    return expired;
+  }
+
+  getExpiringSoon(thresholdMs: number): StaleProposal[] {
+    return [...this.proposals.values()].filter((p) => {
+      const remaining = this.computeRemainingMs(p);
+      return remaining > 0 && remaining <= thresholdMs;
+    });
+  }
+
+  startAutoClean(intervalMs: number = 5000, onExpired?: (proposals: StaleProposal[]) => void): void {
+    if (this.cleanInterval) return;
+    this.cleanInterval = setInterval(() => {
+      const expired = this.getExpired();
+      if (expired.length > 0) {
+        console.log(`[CLEANER] Expired ${expired.length} stale proposals`);
+        onExpired?.(expired);
+      }
+    }, intervalMs);
+  }
+
+  stopAutoClean(): void {
+    if (this.cleanInterval) {
+      clearInterval(this.cleanInterval);
+      this.cleanInterval = null;
+    }
+  }
+
+  getStats(): { tracked: number; expired: number } {
+    return { tracked: this.proposals.size, expired: this.expiredCount };
+  }
+}
+
+// ─── HumanPerformanceTracker ──────────────────────────────────────────
+
+interface ReviewEvent {
+  proposalId: string;
+  reviewerId: string;
+  decision: "approved" | "rejected" | "escalated";
+  timeToDecisionMs: number;
+  outcomeCorrect: boolean;
+  fatigueLevel: number;
+  timestamp: Date;
+}
+
+interface ReviewerStats {
+  reviewerId: string;
+  totalReviews: number;
+  accuracy: number;
+  averageTimeMs: number;
+  rejectionRate: number;
+  fatigueLevel: number;
+  streak: number;
+  efficiencyScore: number;
+}
+
+class HumanPerformanceTracker {
+  private events: ReviewEvent[] = [];
+  private readonly fatigueDecayPerReview = 0.05;
+  private readonly fatigueRecoveryPerMinute = 0.02;
+
+  recordReview(event: Omit<ReviewEvent, "timestamp" | "fatigueLevel">): void {
+    const recentEvents = this.events.filter((e) => e.reviewerId === event.reviewerId).slice(-10);
+    const fatigueLevel = Math.min(1, recentEvents.reduce((s, e) => s + this.fatigueDecayPerReview, 0));
+
+    this.events.push({ ...event, fatigueLevel, timestamp: new Date() });
+  }
+
+  getStats(reviewerId: string): ReviewerStats | null {
+    const reviewerEvents = this.events.filter((e) => e.reviewerId === reviewerId);
+    if (reviewerEvents.length === 0) return null;
+
+    const totalReviews = reviewerEvents.length;
+    const correctOutcomes = reviewerEvents.filter((e) => e.outcomeCorrect).length;
+    const rejected = reviewerEvents.filter((e) => e.decision === "rejected").length;
+    const avgTime = reviewerEvents.reduce((s, e) => s + e.timeToDecisionMs, 0) / totalReviews;
+
+    let streak = 0;
+    for (let i = reviewerEvents.length - 1; i >= 0; i--) {
+      if (reviewerEvents[i].outcomeCorrect) streak++;
+      else break;
+    }
+
+    const accuracy = totalReviews > 0 ? correctOutcomes / totalReviews : 0;
+    const latest = reviewerEvents[reviewerEvents.length - 1];
+
+    const efficiencyScore = accuracy * (1 / Math.max(1, avgTime / 1000)) * (1 - latest.fatigueLevel);
+
+    return {
+      reviewerId,
+      totalReviews,
+      accuracy,
+      averageTimeMs: avgTime,
+      rejectionRate: totalReviews > 0 ? rejected / totalReviews : 0,
+      fatigueLevel: latest.fatigueLevel,
+      streak,
+      efficiencyScore,
+    };
+  }
+
+  getRankedReviewers(): ReviewerStats[] {
+    const ids = [...new Set(this.events.map((e) => e.reviewerId))];
+    return ids
+      .map((id) => this.getStats(id)!)
+      .filter((s) => s !== null)
+      .sort((a, b) => b.efficiencyScore - a.efficiencyScore);
+  }
+
+  applyTimeDecay(minutesPassed: number): void {
+    for (const event of this.events) {
+      event.fatigueLevel = Math.max(0, event.fatigueLevel - this.fatigueRecoveryPerMinute * minutesPassed);
+    }
+  }
+
+  exportCsv(): string {
+    const header = "reviewerId,proposalId,decision,timeMs,correct,fatigue,timestamp";
+    const rows = this.events.map((e) =>
+      `${e.reviewerId},${e.proposalId},${e.decision},${e.timeToDecisionMs.toFixed(0)},${e.outcomeCorrect},${e.fatigueLevel.toFixed(2)},${e.timestamp.toISOString()}`
+    );
+    return [header, ...rows].join("\n");
+  }
+}
+
+// ─── SimulatedReviewerPool ─────────────────────────────────────────────
+
+type SimulatedDecision = "approve" | "reject" | "escalate";
+
+interface SimulatedReviewerConfig {
+  id: string;
+  name: string;
+  accuracy: number;
+  speedMs: [number, number];
+  fatigueThreshold: number;
+}
+
+class SimulatedReviewerPool {
+  private reviewers: SimulatedReviewerConfig[] = [];
+  private reviewCount: Map<string, number> = new Map();
+  private fatigue: Map<string, number> = new Map();
+
+  addReviewer(config: SimulatedReviewerConfig): void {
+    this.reviewers.push(config);
+    this.reviewCount.set(config.id, 0);
+    this.fatigue.set(config.id, 0);
+  }
+
+  getRandomReviewer(): SimulatedReviewerConfig {
+    return this.reviewers[Math.floor(Math.random() * this.reviewers.length)];
+  }
+
+  async simulateReview(
+    reviewerId: string,
+    proposalRisk: number
+  ): Promise<{ decision: SimulatedDecision; timeMs: number; feedback: string }> {
+    const reviewer = this.reviewers.find((r) => r.id === reviewerId);
+    if (!reviewer) throw new Error(`Unknown reviewer: ${reviewerId}`);
+
+    const [minSpeed, maxSpeed] = reviewer.speedMs;
+    const timeMs = minSpeed + Math.random() * (maxSpeed - minSpeed);
+    const currentFatigue = this.fatigue.get(reviewerId) ?? 0;
+    const count = this.reviewCount.get(reviewerId) ?? 0;
+
+    await new Promise((r) => setTimeout(r, Math.min(timeMs, 50)));
+
+    const effectiveAccuracy = reviewer.accuracy * (1 - currentFatigue * 0.5);
+    const rand = Math.random();
+
+    let decision: SimulatedDecision;
+    let feedback: string;
+
+    if (rand < effectiveAccuracy) {
+      if (proposalRisk > 0.7) {
+        decision = "escalate";
+        feedback = `Risk too high (${(proposalRisk * 100).toFixed(0)}%). Escalating.`;
+      } else {
+        decision = "approve";
+        feedback = "Looks good. Approved.";
+      }
+    } else if (rand < effectiveAccuracy + (1 - effectiveAccuracy) * 0.6) {
+      decision = "reject";
+      feedback = proposalRisk > 0.5
+        ? "Rejected: concerns about implementation approach."
+        : "Rejected: needs more detail.";
+    } else {
+      decision = currentFatigue > reviewer.fatigueThreshold ? "escalate" : "approve";
+      feedback = currentFatigue > reviewer.fatigueThreshold
+        ? "Fatigue threshold exceeded. Escalating."
+        : "Approved with minor suggestions.";
+    }
+
+    this.reviewCount.set(reviewerId, count + 1);
+    this.fatigue.set(reviewerId, currentFatigue + 0.05);
+
+    return { decision, timeMs, feedback };
+  }
+
+  resetFatigue(): void {
+    for (const key of this.fatigue.keys()) {
+      this.fatigue.set(key, 0);
+    }
+  }
+
+  getFatigueLevels(): Record<string, number> {
+    const levels: Record<string, number> = {};
+    for (const [id, level] of this.fatigue) {
+      levels[id] = level;
+    }
+    return levels;
+  }
+
+  getReviewerCount(): number {
+    return this.reviewers.length;
+  }
+}
+
+// ─── ProposalLifecycleLogger ───────────────────────────────────────────
+
+interface LifecycleEvent {
+  timestamp: Date;
+  proposalId: string;
+  eventType: "created" | "gated" | "assigned" | "reviewed" | "escalated" | "approved" | "rejected" | "executed" | "expired";
+  actor: string;
+  detail: string;
+  durationMs?: number;
+}
+
+class ProposalLifecycleLogger {
+  private events: LifecycleEvent[] = [];
+
+  log(event: Omit<LifecycleEvent, "timestamp">): void {
+    this.events.push({ ...event, timestamp: new Date() });
+  }
+
+  getTimeline(proposalId: string): LifecycleEvent[] {
+    return this.events
+      .filter((e) => e.proposalId === proposalId)
+      .sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime());
+  }
+
+  getTimeInStage(proposalId: string): Array<{ stage: string; durationMs: number }> {
+    const timeline = this.getTimeline(proposalId);
+    const stages: Array<{ stage: string; durationMs: number }> = [];
+    for (let i = 1; i < timeline.length; i++) {
+      const duration = timeline[i].timestamp.getTime() - timeline[i - 1].timestamp.getTime();
+      stages.push({ stage: `${timeline[i - 1].eventType} → ${timeline[i].eventType}`, durationMs: duration });
+    }
+    return stages;
+  }
+
+  getStats(): { totalProposals: number; avgTimeToDecision: number; approvalRate: number } {
+    const proposalIds = [...new Set(this.events.map((e) => e.proposalId))];
+    const approved = this.events.filter((e) => e.eventType === "approved").length;
+    const rejected = this.events.filter((e) => e.eventType === "rejected").length;
+
+    let totalDecisionTime = 0;
+    let decisionCount = 0;
+    for (const id of proposalIds) {
+      const timeline = this.getTimeline(id);
+      const created = timeline.find((e) => e.eventType === "created");
+      const decided = timeline.find((e) => e.eventType === "approved" || e.eventType === "rejected" || e.eventType === "expired");
+      if (created && decided) {
+        totalDecisionTime += decided.timestamp.getTime() - created.timestamp.getTime();
+        decisionCount++;
+      }
+    }
+
+    const totalDecisions = approved + rejected;
+    return {
+      totalProposals: proposalIds.length,
+      avgTimeToDecision: decisionCount > 0 ? totalDecisionTime / decisionCount : 0,
+      approvalRate: totalDecisions > 0 ? approved / totalDecisions : 0,
+    };
+  }
+
+  exportJson(): string {
+    return JSON.stringify(this.events, null, 2);
+  }
+}
+
+// ─── Demo ──────────────────────────────────────────────────────────────
+
+async function main() {
+  console.log("=== HITL Production Tooling Demo ===\n");
+
+  // 1. Reviewer Workload Balancer
+  const balancer = new ReviewerWorkloadBalancer();
+  balancer.registerReviewer({ id: "alice", name: "Alice", maxWorkload: 3, specialties: ["security", "backend"], averageReviewTimeMs: 2000 });
+  balancer.registerReviewer({ id: "bob", name: "Bob", maxWorkload: 5, specialties: ["frontend", "ux"], averageReviewTimeMs: 3000 });
+  balancer.registerReviewer({ id: "carol", name: "Carol", maxWorkload: 2, specialties: ["infrastructure", "security"], averageReviewTimeMs: 1500 });
+
+  for (let i = 0; i < 6; i++) {
+    const assigned = balancer.assign(`prop-${i}`, i % 2 === 0 ? "security" : "frontend", 1);
+    console.log(`Workload: prop-${i} → ${assigned ? assigned.name : "NO AVAILABLE REVIEWER"}`);
+  }
+  balancer.completeReview("alice");
+  const assigned2 = balancer.assign("prop-6", "security", 1);
+  console.log(`  prop-6 (after Alice freed) → ${assigned2 ? assigned2.name : "NONE"}`);
+  console.log(`  Avg utilization: ${(balancer.getAverageUtilization() * 100).toFixed(0)}%`);
+
+  // 2. Stale Proposal Cleaner
+  const cleaner = new StaleProposalCleaner();
+  cleaner.track({ id: "sp-1", action: "deploy", status: "pending", submittedAt: new Date(Date.now() - 5000), assignedAt: null, ttlMs: 2000 });
+  cleaner.track({ id: "sp-2", action: "rollback", status: "assigned", submittedAt: new Date(Date.now() - 3000), assignedAt: new Date(Date.now() - 2000), ttlMs: 4000 });
+  const expired = cleaner.getExpired();
+  console.log(`\nStale Cleaner: ${expired.length} expired proposals`);
+  cleaner.getExpiringSoon(1000).forEach((p) => console.log(`  Expiring soon: ${p.id} (${p.action})`));
+
+  // 3. Human Performance Tracker
+  const perfTracker = new HumanPerformanceTracker();
+  for (let i = 0; i < 8; i++) {
+    perfTracker.recordReview({
+      proposalId: `perf-${i}`,
+      reviewerId: "alice",
+      decision: i < 6 ? "approved" : "rejected",
+      timeToDecisionMs: 1500 + Math.random() * 2000,
+      outcomeCorrect: i !== 5,
+    });
+  }
+  const aliceStats = perfTracker.getStats("alice");
+  console.log(`\nPerformance Tracker (Alice):`);
+  console.log(`  Accuracy: ${(aliceStats!.accuracy * 100).toFixed(0)}%`);
+  console.log(`  Avg time: ${aliceStats!.averageTimeMs.toFixed(0)}ms`);
+  console.log(`  Fatigue: ${(aliceStats!.fatigueLevel * 100).toFixed(0)}%`);
+  console.log(`  Streak: ${aliceStats!.streak}`);
+  console.log(`  Efficiency score: ${aliceStats!.efficiencyScore.toFixed(3)}`);
+
+  // 4. Simulated Reviewer Pool
+  const pool = new SimulatedReviewerPool();
+  pool.addReviewer({ id: "r1", name: "Fast Alice", accuracy: 0.85, speedMs: [100, 300], fatigueThreshold: 0.6 });
+  pool.addReviewer({ id: "r2", name: "Careful Bob", accuracy: 0.95, speedMs: [400, 800], fatigueThreshold: 0.4 });
+  pool.addReviewer({ id: "r3", name: "Quick Carol", accuracy: 0.70, speedMs: [50, 150], fatigueThreshold: 0.8 });
+
+  console.log(`\nSimulated Reviewer Pool (${pool.getReviewerCount()} reviewers):`);
+  for (let i = 0; i < 5; i++) {
+    const reviewer = pool.getRandomReviewer();
+    const { decision, timeMs } = await pool.simulateReview(reviewer.id, 0.3 + Math.random() * 0.6);
+    console.log(`  ${reviewer.name}: ${decision} (${timeMs.toFixed(0)}ms)`);
+  }
+  console.log(`  Fatigue levels:`, pool.getFatigueLevels());
+
+  // 5. Proposal Lifecycle Logger
+  const logger = new ProposalLifecycleLogger();
+  logger.log({ proposalId: "pl-1", eventType: "created", actor: "agent", detail: "Proposal created" });
+  logger.log({ proposalId: "pl-1", eventType: "gated", actor: "system", detail: "Confidence=0.72 → review needed" });
+  logger.log({ proposalId: "pl-1", eventType: "assigned", actor: "alice", detail: "Assigned to Alice" });
+  logger.log({ proposalId: "pl-1", eventType: "reviewed", actor: "alice", detail: "Reviewed and approved" });
+  logger.log({ proposalId: "pl-1", eventType: "executed", actor: "system", detail: "Action committed" });
+
+  const timeline = logger.getTimeline("pl-1");
+  console.log(`\nLifecycle Logger: ${timeline.length} events for pl-1`);
+  timeline.forEach((e) => console.log(`  ${e.eventType}: ${e.detail} (${e.actor})`));
+  const stats = logger.getStats();
+  console.log(`  Total proposals: ${stats.totalProposals}`);
+  console.log(`  Approval rate: ${(stats.approvalRate * 100).toFixed(0)}%`);
+}
+
+await main();
+```
+
+**Key concepts demonstrated:**
+- **ReviewerWorkloadBalancer** scores reviewers by specialty match, current load, and speed to make optimal assignment decisions; tracks utilization across the pool
+- **StaleProposalCleaner** tracks proposal TTLs, detects expired items, and supports automatic periodic cleanup with a configurable callback; also surfaces items expiring soon
+- **HumanPerformanceTracker** measures accuracy, average decision time, fatigue level (cumulative per-session), streak length, and computes a composite efficiency score for reviewer ranking
+- **SimulatedReviewerPool** generates configurable reviewers with distinct accuracy, speed distributions, and fatigue thresholds; useful for testing HITL systems without real humans
+- **ProposalLifecycleLogger** records every state transition with timestamps, computes time-in-stage breakdowns per proposal, and aggregates approval rate and average time-to-decision statistics
+
+---
+
 ## Summary
 
 - **Propose-then-commit** is the atomic HITL pattern: separate suggestion from execution with a human gate between them.

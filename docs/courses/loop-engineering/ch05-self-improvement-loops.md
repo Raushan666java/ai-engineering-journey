@@ -589,6 +589,544 @@ flowchart TD
     RLHF --> |"No reward model needed"| DPO
 ```
 
+### Extended Implementation: STaR Bootstrapping, DPO, Constitutional Chain, and Self-Play
+
+```typescript
+/// <reference types="node" />
+
+import { randomUUID } from "node:crypto";
+
+// ── Math Problem Types ─────────────────────────────────────────
+interface MathProblem {
+  id: string;
+  question: string;
+  answer: number;
+}
+
+interface ReasoningTrace {
+  problemId: string;
+  steps: string[];
+  finalAnswer: number;
+  correct: boolean;
+}
+
+type SimulateModelFn = (problem: MathProblem) => ReasoningTrace;
+
+// ── StarLoop: STaR Bootstrapping ───────────────────────────────
+class StarLoop {
+  private traces: ReasoningTrace[] = [];
+  private iteration = 0;
+
+  constructor(
+    private problems: MathProblem[],
+    private model: SimulateModelFn,
+    private accuracyKey: (trace: ReasoningTrace) => boolean,
+  ) {}
+
+  get accuracy(): number {
+    if (this.traces.length === 0) return 0;
+    return this.traces.filter((t) => t.correct).length / this.traces.length;
+  }
+
+  get currentIteration(): number {
+    return this.iteration;
+  }
+
+  /** Run one STaR iteration: generate traces, filter correct, retrain. */
+  async runIteration(): Promise<{
+    generated: number;
+    filtered: number;
+    accuracyBefore: number;
+    accuracyAfter: number;
+  }> {
+    const accuracyBefore = this.accuracy;
+
+    // Generate reasoning traces for all problems
+    const generatedTraces = this.problems.map((p) => this.model(p));
+
+    // Filter: keep only correct traces
+    const correctTraces = generatedTraces.filter((t) => this.accuracyKey(t));
+    this.traces.push(...correctTraces);
+
+    // Retrain: the model improves because it trains on correct traces
+    this.retrain(correctTraces);
+    this.iteration++;
+
+    const accuracyAfter = this.accuracy;
+
+    return {
+      generated: generatedTraces.length,
+      filtered: correctTraces.length,
+      accuracyBefore,
+      accuracyAfter,
+    };
+  }
+
+  /** Simulate retraining on correct traces — accuracy improves each iteration. */
+  private retrain(correct: ReasoningTrace[]): void {
+    const improvement = Math.min(correct.length / this.problems.length, 1.0) * 0.15;
+    const originalModel = this.model;
+    const self = this;
+    this.model = (problem: MathProblem): ReasoningTrace => {
+      const trace = originalModel(problem);
+      const alreadyCorrect = self.traces.some(
+        (t) => t.problemId === problem.id && t.correct,
+      );
+      // Previously correct problems stay correct; others improve gradually
+      trace.correct = alreadyCorrect || Math.random() < 0.3 + improvement;
+      return trace;
+    };
+  }
+
+  /** Run N iterations and return history. */
+  async run(iterations: number): Promise<
+    Array<{ iteration: number; generated: number; filtered: number; accuracy: number }>
+  > {
+    const history: Array<{ iteration: number; generated: number; filtered: number; accuracy: number }> = [];
+    for (let i = 0; i < iterations; i++) {
+      const result = await this.runIteration();
+      history.push({
+        iteration: i + 1,
+        generated: result.generated,
+        filtered: result.filtered,
+        accuracy: result.accuracyAfter,
+      });
+    }
+    return history;
+  }
+}
+
+// ── DPO Loss with Numerical Stability ──────────────────────────
+interface DpoLossParams {
+  policyLogprobs: number[];
+  refLogprobs: number[];
+  chosen: boolean[];
+  beta: number;
+}
+
+function computeDpoLoss(params: DpoLossParams): number {
+  const { policyLogprobs, refLogprobs, chosen, beta } = params;
+  const eps = 1e-8;
+
+  if (
+    policyLogprobs.length !== refLogprobs.length ||
+    refLogprobs.length !== chosen.length
+  ) {
+    throw new Error("All input arrays must have the same length");
+  }
+
+  let totalLoss = 0;
+  let count = 0;
+
+  for (let i = 0; i < policyLogprobs.length - 1; i += 2) {
+    // Pairs are consecutive: (chosen, rejected)
+    if (i + 1 >= policyLogprobs.length) break;
+
+    const chosenIdx = chosen[i] ? i : i + 1;
+    const rejectedIdx = chosen[i] ? i + 1 : i;
+
+    const piChosen = Math.max(policyLogprobs[chosenIdx], eps);
+    const piRejected = Math.max(policyLogprobs[rejectedIdx], eps);
+    const refChosen = Math.max(refLogprobs[chosenIdx], eps);
+    const refRejected = Math.max(refLogprobs[rejectedIdx], eps);
+
+    const logRatio = Math.log(piChosen / refChosen + eps) -
+                     Math.log(piRejected / refRejected + eps);
+
+    const loss = -Math.log(sigmoid(beta * logRatio) + eps);
+    totalLoss += loss;
+    count++;
+  }
+
+  return count > 0 ? totalLoss / count : 0;
+}
+
+function sigmoid(x: number): number {
+  if (x >= 0) return 1 / (1 + Math.exp(-x));
+  const expX = Math.exp(x);
+  return expX / (1 + expX);
+}
+
+// ── Constitutional Critics ────────────────────────────────────
+interface ConstitutionalPrinciple {
+  id: string;
+  description: string;
+  domain: "safety" | "style" | "factuality" | "custom";
+}
+
+interface CritiqueResult {
+  principleId: string;
+  violated: boolean;
+  explanation: string;
+  severity: number; // 0-1
+}
+
+interface CritiqueResponse {
+  critiques: CritiqueResult[];
+  revisedOutput: string;
+  rounds: number;
+}
+
+type GenerateFn = (prompt: string) => Promise<string>;
+
+// ── Single-Domain Constitutional Critic ────────────────────────
+class ConstitutionalCritic {
+  constructor(
+    public readonly principles: ConstitutionalPrinciple[],
+    private generate: GenerateFn,
+    private maxRounds: number = 3,
+  ) {}
+
+  async run(prompt: string): Promise<CritiqueResponse> {
+    let output = await this.generate(prompt);
+    const allCritiques: CritiqueResult[] = [];
+
+    for (let round = 0; round < this.maxRounds; round++) {
+      const critiques = await this.evaluate(output);
+      allCritiques.push(...critiques);
+
+      const violated = critiques.filter((c) => c.violated);
+      if (violated.length === 0) break;
+
+      output = await this.revise(output, violated);
+    }
+
+    return { critiques: allCritiques, revisedOutput: output, rounds: Math.min(this.maxRounds, allCritiques.length) };
+  }
+
+  private async evaluate(output: string): Promise<CritiqueResult[]> {
+    return this.principles.map((p) => {
+      const violated = this.checkViolation(p, output);
+      return {
+        principleId: p.id,
+        violated,
+        explanation: violated ? `Violates ${p.domain} principle: ${p.description}` : "Passed",
+        severity: violated ? 0.7 : 0,
+      };
+    });
+  }
+
+  private checkViolation(principle: ConstitutionalPrinciple, output: string): boolean {
+    const keywords = principle.description.toLowerCase().split(" ");
+    return keywords.some((kw) => output.toLowerCase().includes(kw));
+  }
+
+  private async revise(output: string, violations: CritiqueResult[]): Promise<string> {
+    let revised = output;
+    for (const v of violations) {
+      const word = v.explanation.split(" ").pop() || "";
+      if (word.length > 3) {
+        revised = revised.replace(new RegExp(word, "gi"), `[${word}]`);
+      }
+    }
+    return revised;
+  }
+}
+
+// ── ConstitutionalChain: Multi-Domain Sequential Critic ────────
+class ConstitutionalChain {
+  private critics: ConstitutionalCritic[];
+
+  constructor(critics: ConstitutionalCritic[]) {
+    this.critics = critics;
+  }
+
+  async run(prompt: string): Promise<{
+    finalOutput: string;
+    domainReports: Array<{
+      domain: string;
+      violations: number;
+      rounds: number;
+    }>;
+    totalRounds: number;
+  }> {
+    let currentOutput = prompt;
+    const domainReports: Array<{ domain: string; violations: number; rounds: number }> = [];
+    let totalRounds = 0;
+
+    for (const critic of this.critics) {
+      const result = await critic.run(currentOutput);
+      currentOutput = result.revisedOutput;
+
+      const domain = critic.principles[0]?.domain || "unknown";
+      const violations = result.critiques.filter((c) => c.violated).length;
+      domainReports.push({ domain, violations, rounds: result.rounds });
+      totalRounds += result.rounds;
+    }
+
+    return { finalOutput: currentOutput, domainReports, totalRounds };
+  }
+}
+
+// ── TemperatureAnnealingPairGenerator ──────────────────────────
+interface AnnealingPair {
+  prompt: string;
+  chosen: string;
+  rejected: string;
+  chosenTemperature: number;
+  rejectedTemperature: number;
+  score: number;
+}
+
+class TemperatureAnnealingPairGenerator {
+  private pairs: AnnealingPair[] = [];
+
+  constructor(
+    private generateAtTemperature: (prompt: string, temperature: number) => Promise<string>,
+    private scoreFn: (output: string) => Promise<number>,
+  ) {}
+
+  get statistics(): Record<string, number> {
+    if (this.pairs.length === 0) return {};
+    const byTemp: Record<number, { chosen: number; total: number }> = {};
+    for (const p of this.pairs) {
+      for (const t of [p.chosenTemperature, p.rejectedTemperature]) {
+        if (!byTemp[t]) byTemp[t] = { chosen: 0, total: 0 };
+        byTemp[t].total++;
+      }
+      byTemp[p.chosenTemperature].chosen++;
+    }
+    const stats: Record<string, number> = {};
+    for (const [t, v] of Object.entries(byTemp)) {
+      stats[`temp_${t}_win_rate`] = v.total > 0 ? v.chosen / v.total : 0;
+    }
+    return stats;
+  }
+
+  async generatePairs(
+    prompts: string[],
+    temperatures: number[] = [0.3, 0.7, 1.0],
+  ): Promise<AnnealingPair[]> {
+    this.pairs = [];
+    for (const prompt of prompts) {
+      // Sample at multiple temperatures
+      const samples: Array<{ output: string; temperature: number; score: number }> = [];
+      for (const temp of temperatures) {
+        const output = await this.generateAtTemperature(prompt, temp);
+        const score = await this.scoreFn(output);
+        samples.push({ output, temperature: temp, score });
+      }
+
+      // Create all pairwise comparisons
+      for (let i = 0; i < samples.length; i++) {
+        for (let j = i + 1; j < samples.length; j++) {
+          const better = samples[i].score >= samples[j].score ? samples[i] : samples[j];
+          const worse = samples[i].score >= samples[j].score ? samples[j] : samples[i];
+          this.pairs.push({
+            prompt,
+            chosen: better.output,
+            rejected: worse.output,
+            chosenTemperature: better.temperature,
+            rejectedTemperature: worse.temperature,
+            score: better.score - worse.score,
+          });
+        }
+      }
+    }
+    return this.pairs;
+  }
+}
+
+// ── ImprovementPipeline with Accumulate and Retrain ────────────
+interface AccumulatedPair {
+  prompt: string;
+  chosen: string;
+  rejected: string;
+  delta: number;
+}
+
+class ImprovementPipelineWithRetrain {
+  private accumulatedPairs: AccumulatedPair[] = [];
+  private modelQuality = 0.5; // simulated model quality (0-1)
+  private generations: number[] = [];
+
+  constructor(
+    private generateFn: (prompt: string) => Promise<string>,
+    private critiqueFn: (output: string) => Promise<{ violations: number; revised: string }>,
+    private scorer: (output: string) => Promise<number>,
+  ) {}
+
+  get pairCount(): number {
+    return this.accumulatedPairs.length;
+  }
+
+  get averageQuality(): number {
+    return this.generations.length > 0
+      ? this.generations.reduce((a, b) => a + b, 0) / this.generations.length
+      : 0;
+  }
+
+  async run(prompt: string): Promise<{ output: string; delta: number; violations: number }> {
+    const raw = await this.generateFn(prompt);
+    const rawScore = await this.scorer(raw);
+
+    const { violations, revised } = await this.critiqueFn(raw);
+    const revisedScore = await this.scorer(revised);
+
+    const delta = revisedScore - rawScore;
+    this.generations.push(revisedScore);
+
+    this.accumulatedPairs.push({
+      prompt,
+      chosen: delta >= 0 ? revised : raw,
+      rejected: delta >= 0 ? raw : revised,
+      delta,
+    });
+
+    return { output: revised, delta, violations };
+  }
+
+  async retrain(): Promise<void> {
+    if (this.accumulatedPairs.length === 0) return;
+    const improvement = this.accumulatedPairs.filter((p) => p.delta > 0).length /
+                        this.accumulatedPairs.length;
+    this.modelQuality = Math.min(1.0, this.modelQuality + improvement * 0.1);
+  }
+
+  async batchRun(prompts: string[]): Promise<{
+    results: Array<{ output: string; delta: number }>;
+    avgDelta: number;
+  }> {
+    const results = await Promise.all(prompts.map((p) => this.run(p)));
+    const deltas = results.map((r) => r.delta);
+    const avgDelta = deltas.reduce((a, b) => a + b, 0) / deltas.length;
+    return { results, avgDelta };
+  }
+}
+
+// ── SelfPlayLoop: Policy Improvement via Self-Play ─────────────
+type PolicyFn = (state: string) => string;
+
+interface SelfPlayCheckpoint {
+  version: number;
+  policy: PolicyFn;
+  winRate: number;
+}
+
+class SelfPlayLoop {
+  private checkpoints: SelfPlayCheckpoint[] = [];
+  private version = 0;
+
+  constructor(
+    private policy: PolicyFn,
+    private opponent: PolicyFn,
+    private simulateGame: (policy: PolicyFn, opponent: PolicyFn) => { policyWon: boolean },
+  ) {}
+
+  get currentVersion(): number {
+    return this.version;
+  }
+
+  /** Play one self-play generation: current policy vs past checkpoint. */
+  async playGeneration(): Promise<{
+    winRate: number;
+    newVersion: number;
+    promoted: boolean;
+  }> {
+    const totalGames = 50;
+    let wins = 0;
+
+    const pastCheckpoint = this.checkpoints.length > 0
+      ? this.checkpoints[this.checkpoints.length - 1]
+      : null;
+
+    const opponent = pastCheckpoint?.policy || this.opponent;
+
+    for (let i = 0; i < totalGames; i++) {
+      const result = this.simulateGame(this.policy, opponent);
+      if (result.policyWon) wins++;
+    }
+
+    const winRate = wins / totalGames;
+    const promoted = winRate > 0.55;
+
+    if (promoted) {
+      this.version++;
+      this.checkpoints.push({
+        version: this.version,
+        policy: this.policy,
+        winRate,
+      });
+    }
+
+    return { winRate, newVersion: this.version, promoted };
+  }
+
+  /** Run multiple self-play generations to build a champion. */
+  async run(generations: number): Promise<SelfPlayCheckpoint[]> {
+    for (let g = 0; g < generations; g++) {
+      await this.playGeneration();
+    }
+    return this.checkpoints;
+  }
+}
+
+// ── Usage ──────────────────────────────────────────────────────
+async function main() {
+  // StarLoop demo
+  const problems: MathProblem[] = Array.from({ length: 20 }, (_, i) => ({
+    id: `prob_${i}`,
+    question: `What is ${i} + ${i}?`,
+    answer: i + i,
+  }));
+
+  const baseModel: SimulateModelFn = (p) => ({
+    problemId: p.id,
+    steps: [`Add ${p.question.split(" ")[2]} + ${p.question.split(" ")[4].replace("?", "")}`],
+    finalAnswer: Math.random() > 0.5 ? p.answer : p.answer + 1,
+    correct: false,
+  });
+
+  const star = new StarLoop(problems, baseModel, (t) => t.finalAnswer === problems.find(p => p.id === t.problemId)?.answer);
+  const history = await star.run(5);
+  console.log("STaR Bootstrapping:", history);
+
+  // DPO loss demo
+  const loss = computeDpoLoss({
+    policyLogprobs: [0.8, 0.3, 0.9, 0.2, 0.85, 0.25],
+    refLogprobs: [0.7, 0.4, 0.7, 0.3, 0.7, 0.3],
+    chosen: [true, false, true, false, true, false],
+    beta: 0.1,
+  });
+  console.log("DPO Loss:", loss.toFixed(4));
+
+  // ConstitutionalChain demo
+  const gen: GenerateFn = async (p) => `Answer: ${p}`;
+  const safetyPrinciples: ConstitutionalPrinciple[] = [
+    { id: "no_harm", description: "must not contain harmful", domain: "safety" },
+  ];
+  const stylePrinciples: ConstitutionalPrinciple[] = [
+    { id: "concise", description: "must be under 50 words", domain: "style" },
+  ];
+  const chain = new ConstitutionalChain([
+    new ConstitutionalCritic(safetyPrinciples, gen),
+    new ConstitutionalCritic(stylePrinciples, gen),
+  ]);
+  const chainResult = await chain.run("Write a short safety message");
+  console.log("ConstitutionalChain rounds:", chainResult.totalRounds);
+
+  // TemperatureAnnealingPairGenerator demo
+  const tempGen = new TemperatureAnnealingPairGenerator(
+    async (p, t) => `[temp=${t}] ${p}`,
+    async (o) => o.length,
+  );
+  const pairs = await tempGen.generatePairs(["test prompt"]);
+  console.log("Temperature stats:", tempGen.statistics);
+
+  // SelfPlayLoop demo
+  const randomPolicy: PolicyFn = () => Math.random() > 0.5 ? "left" : "right";
+  const selfPlay = new SelfPlayLoop(
+    (s) => s === "start" ? "left" : "right",
+    randomPolicy,
+    (p, o) => ({ policyWon: Math.random() > 0.4 }),
+  );
+  const checkpoints = await selfPlay.run(3);
+  console.log("Self-play checkpoints:", checkpoints.length);
+}
+
+main();
+```
+
 ## Summary
 
 Self-improvement loops are the engine behind modern alignment and capability bootstrapping. Constitutional AI provides runtime guardrails through self-critique and revision against written principles. RLAIF and RLHF train reward models from preference pairs, then optimize policy against them. STaR and ReST bootstrap reasoning by filtering self-generated traces and retraining. DPO eliminates the reward model entirely, optimizing preferences directly with a closed-form objective.

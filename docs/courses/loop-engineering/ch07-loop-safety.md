@@ -921,6 +921,577 @@ console.log("\nLoop Report 2:");
 console.log(JSON.stringify(report2, null, 2));
 ```
 
+### Extended Implementation: Safety Monitor, Guardrail Composition, Fail-Safe Mechanisms, and Safety Policy Enforcer
+
+```typescript
+/// <reference types="node" />
+
+import { randomUUID } from "node:crypto";
+
+// ── Safety Guard Types ─────────────────────────────────────────
+type GuardType = "output_validator" | "rate_limiter" | "content_filter" | "cost_guard" | "iteration_guard";
+
+interface GuardConfig {
+  type: GuardType;
+  enabled: boolean;
+  severity: "info" | "warn" | "critical";
+  maxRetries?: number;
+  threshold?: number;
+  windowMs?: number;
+}
+
+interface GuardResult {
+  passed: boolean;
+  guardType: GuardType;
+  message: string;
+  severity: string;
+  metadata: Record<string, unknown>;
+}
+
+// ── Safety Monitor ─────────────────────────────────────────────
+type ValidationFn = (input: string) => Promise<{ valid: boolean; reason?: string }>;
+type RateLimitFn = () => Promise<{ allowed: boolean; remaining: number }>;
+
+class SafetyMonitor {
+  private guards: Map<GuardType, GuardConfig> = new Map();
+  private violations: GuardResult[] = [];
+  private tripped = false;
+
+  constructor(
+    private outputValidator?: ValidationFn,
+    private rateLimiter?: RateLimitFn,
+    private contentFilter?: ValidationFn,
+  ) {}
+
+  get isTripped(): boolean {
+    return this.tripped;
+  }
+
+  registerGuard(config: GuardConfig): void {
+    this.guards.set(config.type, config);
+  }
+
+  /** Run all registered guards against an output. */
+  async check(output: string): Promise<GuardResult[]> {
+    const results: GuardResult[] = [];
+
+    // Output validator guard
+    if (this.outputValidator && this.guards.get("output_validator")?.enabled !== false) {
+      const v = await this.outputValidator(output);
+      const passed = v.valid;
+      results.push({
+        passed,
+        guardType: "output_validator",
+        message: passed ? "Output valid" : v.reason ?? "Invalid output",
+        severity: passed ? "info" : "critical",
+        metadata: { outputLength: output.length },
+      });
+    }
+
+    // Rate limiter guard
+    if (this.rateLimiter && this.guards.get("rate_limiter")?.enabled !== false) {
+      const r = await this.rateLimiter();
+      results.push({
+        passed: r.allowed,
+        guardType: "rate_limiter",
+        message: r.allowed ? "Rate OK" : "Rate limit exceeded",
+        severity: r.allowed ? "info" : "warn",
+        metadata: { remaining: r.remaining },
+      });
+    }
+
+    // Content filter guard
+    if (this.contentFilter && this.guards.get("content_filter")?.enabled !== false) {
+      const c = await this.contentFilter(output);
+      results.push({
+        passed: c.valid,
+        guardType: "content_filter",
+        message: c.valid ? "Content OK" : c.reason ?? "Content blocked",
+        severity: c.valid ? "info" : "critical",
+        metadata: {},
+      });
+    }
+
+    this.violations.push(...results.filter((r) => !r.passed));
+
+    // Trip on any critical failure
+    const criticalFailures = results.filter((r) => !r.passed && r.severity === "critical");
+    if (criticalFailures.length > 0) {
+      this.tripped = true;
+    }
+
+    return results;
+  }
+
+  /** Get violation summary for audit. */
+  getViolationReport(): { totalViolations: number; criticalViolations: number; guardsTripped: GuardType[] } {
+    const criticalViolations = this.violations.filter((v) => v.severity === "critical").length;
+    const guardsTripped = [...new Set(this.violations.filter((v) => !v.passed).map((v) => v.guardType))];
+    return { totalViolations: this.violations.length, criticalViolations, guardsTripped };
+  }
+
+  reset(): void {
+    this.violations = [];
+    this.tripped = false;
+  }
+}
+
+// ── Guardrail Composition Chain ────────────────────────────────
+interface GuardrailStep {
+  name: string;
+  execute: (input: string) => Promise<{ passed: boolean; transformed?: string; reason?: string }>;
+  critical: boolean;
+}
+
+class GuardrailComposition {
+  private steps: GuardrailStep[] = [];
+  private auditLog: Array<{ step: string; passed: boolean; input: string; output: string }> = [];
+
+  addStep(step: GuardrailStep): void {
+    this.steps.push(step);
+  }
+
+  get auditTrail(): Array<{ step: string; passed: boolean; input: string; output: string }> {
+    return [...this.auditLog];
+  }
+
+  /** Run all guardrails sequentially. Stops on critical failure. */
+  async execute(input: string): Promise<{
+    passed: boolean;
+    finalOutput: string;
+    failedStep: string | null;
+  }> {
+    let current = input;
+    for (const step of this.steps) {
+      const result = await step.execute(current);
+      this.auditLog.push({
+        step: step.name,
+        passed: result.passed,
+        input: current,
+        output: result.transformed ?? current,
+      });
+
+      if (!result.passed) {
+        if (step.critical) {
+          return { passed: false, finalOutput: current, failedStep: step.name };
+        }
+        // Non-critical: log and continue
+      }
+
+      current = result.transformed ?? current;
+    }
+
+    return { passed: true, finalOutput: current, failedStep: null };
+  }
+}
+
+// ── Safety Audit Logger ────────────────────────────────────────
+interface AuditEntry {
+  id: string;
+  timestamp: number;
+  agentId: string;
+  action: string;
+  guardResults: GuardResult[];
+  input: string;
+  output: string;
+  escalated: boolean;
+}
+
+class SafetyAuditLogger {
+  private entries: AuditEntry[] = [];
+  private readonly maxEntries: number;
+
+  constructor(maxEntries: number = 5000) {
+    this.maxEntries = maxEntries;
+  }
+
+  log(entry: Omit<AuditEntry, "id" | "timestamp">): AuditEntry {
+    const full: AuditEntry = {
+      id: randomUUID(),
+      timestamp: Date.now(),
+      ...entry,
+    };
+    this.entries.push(full);
+    if (this.entries.length > this.maxEntries) {
+      this.entries = this.entries.slice(-this.maxEntries);
+    }
+    return full;
+  }
+
+  query(filter: { agentId?: string; escalated?: boolean; since?: number }): AuditEntry[] {
+    return this.entries.filter((e) => {
+      if (filter.agentId && e.agentId !== filter.agentId) return false;
+      if (filter.escalated !== undefined && e.escalated !== filter.escalated) return false;
+      if (filter.since && e.timestamp < filter.since) return false;
+      return true;
+    });
+  }
+
+  /** Generate a compliance summary for a time window. */
+  complianceSummary(sinceMs: number): {
+    totalActions: number;
+    violations: number;
+    escalationRate: number;
+    topViolatingGuards: GuardType[];
+  } {
+    const filtered = this.entries.filter((e) => e.timestamp >= sinceMs);
+    const violations = filtered.filter((e) => e.guardResults.some((g) => !g.passed)).length;
+    const escalations = filtered.filter((e) => e.escalated).length;
+
+    const guardCount = new Map<GuardType, number>();
+    for (const entry of filtered) {
+      for (const g of entry.guardResults) {
+        if (!g.passed) {
+          guardCount.set(g.guardType, (guardCount.get(g.guardType) ?? 0) + 1);
+        }
+      }
+    }
+    const topViolatingGuards = [...guardCount.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5)
+      .map(([t]) => t);
+
+    return {
+      totalActions: filtered.length,
+      violations,
+      escalationRate: filtered.length > 0 ? escalations / filtered.length : 0,
+      topViolatingGuards,
+    };
+  }
+}
+
+// ── Fail Safe Mechanism ────────────────────────────────────────
+interface FailSafeTrigger {
+  name: string;
+  check: () => Promise<{ triggered: boolean; reason?: string }>;
+  action: "halt" | "warn" | "fallback";
+}
+
+class FailSafeMechanism {
+  private triggers: FailSafeTrigger[] = [];
+  private active = false;
+
+  addTrigger(trigger: FailSafeTrigger): void {
+    this.triggers.push(trigger);
+  }
+
+  get isActive(): boolean {
+    return this.active;
+  }
+
+  /** Evaluate all triggers. Returns first triggered action. */
+  async evaluate(): Promise<{ triggered: boolean; action: "halt" | "warn" | "fallback" | "none"; reason?: string }> {
+    for (const trigger of this.triggers) {
+      const result = await trigger.check();
+      if (result.triggered) {
+        if (trigger.action === "halt") {
+          this.active = true;
+        }
+        return { triggered: true, action: trigger.action, reason: result.reason };
+      }
+    }
+    return { triggered: false, action: "none" };
+  }
+
+  reset(): void {
+    this.active = false;
+  }
+}
+
+// ── Human Handoff Escalator ────────────────────────────────────
+interface EscalationTicket {
+  id: string;
+  severity: "low" | "medium" | "high" | "critical";
+  agentId: string;
+  reason: string;
+  context: Record<string, unknown>;
+  status: "open" | "acknowledged" | "resolved";
+  createdAt: number;
+  resolvedAt?: number;
+  resolution?: string;
+}
+
+class HumanHandoffEscalator {
+  private tickets: EscalationTicket[] = [];
+  private onEscalate?: (ticket: EscalationTicket) => Promise<void>;
+
+  constructor(onEscalate?: (ticket: EscalationTicket) => Promise<void>) {
+    this.onEscalate = onEscalate;
+  }
+
+  get openTickets(): EscalationTicket[] {
+    return this.tickets.filter((t) => t.status === "open");
+  }
+
+  async escalate(params: {
+    severity: EscalationTicket["severity"];
+    agentId: string;
+    reason: string;
+    context: Record<string, unknown>;
+  }): Promise<EscalationTicket> {
+    const ticket: EscalationTicket = {
+      id: randomUUID(),
+      severity: params.severity,
+      agentId: params.agentId,
+      reason: params.reason,
+      context: params.context,
+      status: "open",
+      createdAt: Date.now(),
+    };
+    this.tickets.push(ticket);
+    await this.onEscalate?.(ticket);
+    return ticket;
+  }
+
+  acknowledge(ticketId: string): boolean {
+    const ticket = this.tickets.find((t) => t.id === ticketId);
+    if (ticket && ticket.status === "open") {
+      ticket.status = "acknowledged";
+      return true;
+    }
+    return false;
+  }
+
+  resolve(ticketId: string, resolution: string): boolean {
+    const ticket = this.tickets.find((t) => t.id === ticketId);
+    if (ticket && ticket.status !== "resolved") {
+      ticket.status = "resolved";
+      ticket.resolvedAt = Date.now();
+      ticket.resolution = resolution;
+      return true;
+    }
+    return false;
+  }
+}
+
+// ── Break Glass Override System ────────────────────────────────
+interface BreakGlassPolicy {
+  overrideId: string;
+  authorizedRoles: string[];
+  maxDurationMs: number;
+  allowedActions: string[];
+  requireJustification: boolean;
+}
+
+interface BreakGlassSession {
+  policyId: string;
+  activatedBy: string;
+  justification: string;
+  activatedAt: number;
+  expiresAt: number;
+  actions: string[];
+  revoked: boolean;
+}
+
+class BreakGlassOverride {
+  private policies: Map<string, BreakGlassPolicy> = new Map();
+  private activeSessions: BreakGlassSession[] = [];
+
+  registerPolicy(policy: BreakGlassPolicy): void {
+    this.policies.set(policy.overrideId, policy);
+  }
+
+  get activeSessionsCount(): number {
+    return this.activeSessions.filter((s) => !s.revoked && s.expiresAt > Date.now()).length;
+  }
+
+  /** Activate a break-glass override. */
+  activate(params: {
+    policyId: string;
+    role: string;
+    justification: string;
+  }): BreakGlassSession {
+    const policy = this.policies.get(params.policyId);
+    if (!policy) throw new Error(`Unknown policy: ${params.policyId}`);
+    if (!policy.authorizedRoles.includes(params.role)) {
+      throw new Error(`Role ${params.role} not authorized for break-glass`);
+    }
+    if (policy.requireJustification && !params.justification) {
+      throw new Error("Justification required for this policy");
+    }
+
+    const session: BreakGlassSession = {
+      policyId: params.policyId,
+      activatedBy: params.role,
+      justification: params.justification,
+      activatedAt: Date.now(),
+      expiresAt: Date.now() + policy.maxDurationMs,
+      actions: [],
+      revoked: false,
+    };
+    this.activeSessions.push(session);
+    return session;
+  }
+
+  /** Check if an action is permitted under an active session. */
+  isActionAllowed(session: BreakGlassSession, action: string): boolean {
+    if (session.revoked || session.expiresAt <= Date.now()) return false;
+    const policy = this.policies.get(session.policyId);
+    if (!policy) return false;
+    return policy.allowedActions.includes(action);
+  }
+
+  recordAction(session: BreakGlassSession, action: string): void {
+    if (this.isActionAllowed(session, action)) {
+      session.actions.push(action);
+    }
+  }
+
+  revoke(session: BreakGlassSession): void {
+    session.revoked = true;
+  }
+}
+
+// ── Safety Policy Enforcer ─────────────────────────────────────
+interface SafetyPolicyRule {
+  ruleId: string;
+  description: string;
+  guardType: GuardType;
+  params: Record<string, unknown>;
+  action: "block" | "warn" | "log";
+}
+
+interface SafetyPolicy {
+  policyId: string;
+  name: string;
+  version: string;
+  rules: SafetyPolicyRule[];
+}
+
+class SafetyPolicyEnforcer {
+  private policies: Map<string, SafetyPolicy> = new Map();
+  private appliedRules: Array<{ policyId: string; ruleId: string; passed: boolean; timestamp: number }> = [];
+
+  loadPolicy(policy: SafetyPolicy): void {
+    this.policies.set(policy.policyId, policy);
+  }
+
+  removePolicy(policyId: string): boolean {
+    return this.policies.delete(policyId);
+  }
+
+  /** Enforce all policies against an action. */
+  async enforce(action: string, context: Record<string, unknown>): Promise<{
+    allowed: boolean;
+    warnings: string[];
+    policyResults: Array<{ policyId: string; ruleId: string; action: string; passed: boolean }>;
+  }> {
+    const warnings: string[] = [];
+    const policyResults: Array<{ policyId: string; ruleId: string; action: string; passed: boolean }> = [];
+
+    for (const [policyId, policy] of this.policies) {
+      for (const rule of policy.rules) {
+        const passed = await this.evaluateRule(rule, action, context);
+        this.appliedRules.push({ policyId, ruleId: rule.ruleId, passed, timestamp: Date.now() });
+        policyResults.push({ policyId, ruleId: rule.ruleId, action: rule.action, passed });
+
+        if (!passed) {
+          if (rule.action === "block") {
+            return { allowed: false, warnings, policyResults };
+          }
+          if (rule.action === "warn") {
+            warnings.push(`Rule ${rule.ruleId}: ${rule.description}`);
+          }
+        }
+      }
+    }
+
+    return { allowed: warnings.length === 0, warnings, policyResults };
+  }
+
+  private async evaluateRule(rule: SafetyPolicyRule, action: string, context: Record<string, unknown>): Promise<boolean> {
+    // Simulated rule evaluation based on guard type
+    switch (rule.guardType) {
+      case "rate_limiter": {
+        const limit = (rule.params.maxPerMinute as number) ?? 60;
+        const recentCount = this.appliedRules.filter(
+          (r) => r.timestamp > Date.now() - 60000,
+        ).length;
+        return recentCount < limit;
+      }
+      case "content_filter": {
+        const blockedTerms = rule.params.blockedTerms as string[] ?? [];
+        return !blockedTerms.some((term) => action.toLowerCase().includes(term));
+      }
+      case "cost_guard": {
+        const maxCost = (rule.params.maxCost as number) ?? Infinity;
+        const currentCost = this.appliedRules.length * 0.01;
+        return currentCost < maxCost;
+      }
+      default:
+        return true;
+    }
+  }
+
+  /** Get enforcement statistics. */
+  statistics(): { totalRulesApplied: number; blockedCount: number; warnCount: number } {
+    const blockedCount = this.appliedRules.filter((r) => !r.passed).length;
+    return { totalRulesApplied: this.appliedRules.length, blockedCount, warnCount: blockedCount };
+  }
+}
+
+// ── Usage ──────────────────────────────────────────────────────
+async function main() {
+  // SafetyMonitor with multiple guards
+  const monitor = new SafetyMonitor(
+    async (o) => ({ valid: o.length < 200 }),
+    async () => ({ allowed: Math.random() > 0.1, remaining: 90 }),
+    async (o) => ({ valid: !o.includes("dangerous"), reason: o.includes("dangerous") ? "Blocked term" : undefined }),
+  );
+  monitor.registerGuard({ type: "output_validator", enabled: true, severity: "critical" });
+  monitor.registerGuard({ type: "rate_limiter", enabled: true, severity: "warn" });
+  monitor.registerGuard({ type: "content_filter", enabled: true, severity: "critical" });
+
+  const checkResult = await monitor.check("This is a safe output");
+  console.log("Safety monitor check:", checkResult.map((r) => `${r.guardType}: ${r.passed}`));
+
+  // GuardrailComposition chain
+  const chain = new GuardrailComposition();
+  chain.addStep({ name: "length_check", execute: async (i) => i.length > 500 ? { passed: false, reason: "too long" } : { passed: true, transformed: i }, critical: true });
+  chain.addStep({ name: "sanitize", execute: async (i) => ({ passed: true, transformed: i.replace(/<script>/gi, "") }), critical: false });
+  const chainResult = await chain.execute("Hello <script>alert(1)</script> world");
+  console.log("Guardrail chain passed:", chainResult.passed);
+
+  // SafetyAuditLogger
+  const auditLogger = new SafetyAuditLogger();
+  auditLogger.log({ agentId: "agent_1", action: "generate", guardResults: [checkResult[0]], input: "test", output: "safe", escalated: false });
+  console.log("Audit compliance:", auditLogger.complianceSummary(Date.now() - 3600000));
+
+  // FailSafeMechanism
+  const failsafe = new FailSafeMechanism();
+  failsafe.addTrigger({ name: "cost_explosion", check: async () => ({ triggered: Math.random() > 0.8, reason: "Cost exceeded budget" }), action: "halt" });
+  const fsResult = await failsafe.evaluate();
+  console.log("Fail-safe triggered:", fsResult.triggered);
+
+  // HumanHandoffEscalator
+  const escalator = new HumanHandoffEscalator();
+  const ticket = await escalator.escalate({ severity: "high", agentId: "agent_1", reason: "Repeated policy violation", context: { violationCount: 5 } });
+  console.log("Escalation ticket:", ticket.id);
+
+  // BreakGlassOverride
+  const bgo = new BreakGlassOverride();
+  bgo.registerPolicy({ overrideId: "bg_1", authorizedRoles: ["admin"], maxDurationMs: 300000, allowedActions: ["disable_guard", "reset_budget"], requireJustification: true });
+  const session = bgo.activate({ policyId: "bg_1", role: "admin", justification: "Emergency fix" });
+  console.log("Break-glass action allowed:", bgo.isActionAllowed(session, "disable_guard"));
+
+  // SafetyPolicyEnforcer
+  const enforcer = new SafetyPolicyEnforcer();
+  enforcer.loadPolicy({
+    policyId: "prod_safety_v1",
+    name: "Production Safety Policy",
+    version: "1.0.0",
+    rules: [
+      { ruleId: "rate_001", description: "Max 100 requests per minute", guardType: "rate_limiter", params: { maxPerMinute: 100 }, action: "warn" },
+      { ruleId: "content_001", description: "Block dangerous content", guardType: "content_filter", params: { blockedTerms: ["exploit", "malware"] }, action: "block" },
+    ],
+  });
+  const enforceResult = await enforcer.enforce("run normal command", {});
+  console.log("Policy enforcer allowed:", enforceResult.allowed);
+}
+
+main();
+```
+
 ---
 
 ## 3. Summary

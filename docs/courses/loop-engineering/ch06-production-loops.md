@@ -702,6 +702,461 @@ async function main() {
 main();
 ```
 
+### Extended Implementation: Circuit Breaker, Health Checker, Canary Release, and Fallback Strategies
+
+```typescript
+/// <reference types="node" />
+
+import { randomUUID } from "node:crypto";
+
+// ── Circuit Breaker State Machine ──────────────────────────────
+type CircuitState = "CLOSED" | "HALF_OPEN" | "OPEN";
+
+interface CircuitBreakerConfig {
+  failureThreshold: number;
+  successThreshold: number;
+  halfOpenTimeoutMs: number;
+  cooldownMs: number;
+}
+
+class CircuitBreakerStateMachine {
+  private state: CircuitState = "CLOSED";
+  private failureCount = 0;
+  private successCount = 0;
+  private lastStateChange: number = Date.now();
+
+  constructor(private config: CircuitBreakerConfig) {}
+
+  get currentState(): CircuitState {
+    return this.state;
+  }
+
+  /** Call before each operation. Throws if circuit is OPEN and not yet cooled down. */
+  preCheck(): void {
+    if (this.state === "OPEN") {
+      const elapsed = Date.now() - this.lastStateChange;
+      if (elapsed >= this.config.cooldownMs) {
+        this.transitionTo("HALF_OPEN");
+        return;
+      }
+      throw new Error(`Circuit OPEN — call blocked for ${this.config.cooldownMs}ms`);
+    }
+  }
+
+  /** Report a successful operation. */
+  recordSuccess(): void {
+    if (this.state === "HALF_OPEN") {
+      this.successCount++;
+      if (this.successCount >= this.config.successThreshold) {
+        this.reset();
+      }
+    } else if (this.state === "CLOSED") {
+      this.failureCount = 0; // reset failure count on success
+    }
+  }
+
+  /** Report a failed operation. */
+  recordFailure(): void {
+    this.failureCount++;
+    if (this.state === "HALF_OPEN") {
+      this.transitionTo("OPEN");
+    } else if (this.state === "CLOSED" && this.failureCount >= this.config.failureThreshold) {
+      this.transitionTo("OPEN");
+    }
+  }
+
+  private transitionTo(newState: CircuitState): void {
+    this.state = newState;
+    this.lastStateChange = Date.now();
+    this.failureCount = 0;
+    this.successCount = 0;
+  }
+
+  private reset(): void {
+    this.state = "CLOSED";
+    this.lastStateChange = Date.now();
+    this.failureCount = 0;
+    this.successCount = 0;
+  }
+}
+
+// ── Retry Exhaustion Predictor ─────────────────────────────────
+interface RetryRecord {
+  attempt: number;
+  error: string;
+  timestamp: number;
+  durationMs: number;
+}
+
+class RetryExhaustionPredictor {
+  private history: RetryRecord[] = [];
+  private readonly windowMs: number;
+
+  constructor(
+    private maxRetries: number,
+    windowMinutes: number = 5,
+  ) {
+    this.windowMs = windowMinutes * 60 * 1000;
+  }
+
+  get recentRetryRate(): number {
+    this.prune();
+    return this.history.length / (this.windowMs / 1000);
+  }
+
+  get exhaustionProbability(): number {
+    this.prune();
+    const attempts = this.history.length;
+    if (attempts === 0) return 0;
+    const durationPerAttempt = this.history.reduce((s, r) => s + r.durationMs, 0) / attempts;
+    const projectedTotal = (durationPerAttempt * this.maxRetries) / 1000;
+    return Math.min(1, projectedTotal / (this.windowMs / 1000));
+  }
+
+  recordAttempt(attempt: number, error: string, durationMs: number): void {
+    this.history.push({ attempt, error, timestamp: Date.now(), durationMs });
+    this.prune();
+  }
+
+  shouldEscalate(): boolean {
+    return this.exhaustionProbability > 0.8 || this.recentRetryRate > 10;
+  }
+
+  private prune(): void {
+    const cutoff = Date.now() - this.windowMs;
+    this.history = this.history.filter((r) => r.timestamp >= cutoff);
+  }
+}
+
+// ── Observability Collector ────────────────────────────────────
+interface LoopMetric {
+  loopId: string;
+  cycleNumber: number;
+  cycleTimeMs: number;
+  error: boolean;
+  inputTokens: number;
+  outputTokens: number;
+  timestamp: number;
+}
+
+interface DerivedMetrics {
+  avgCycleTimeMs: number;
+  errorRate: number;
+  throughputPerMin: number;
+  p95CycleTimeMs: number;
+  totalCycles: number;
+}
+
+class ObservabilityCollector {
+  private metrics: LoopMetric[] = [];
+  private readonly maxRetention: number;
+
+  constructor(maxRetention: number = 10000) {
+    this.maxRetention = maxRetention;
+  }
+
+  record(metric: LoopMetric): void {
+    this.metrics.push(metric);
+    if (this.metrics.length > this.maxRetention) {
+      this.metrics = this.metrics.slice(-this.maxRetention);
+    }
+  }
+
+  getMetrics(loopId?: string): LoopMetric[] {
+    return loopId
+      ? this.metrics.filter((m) => m.loopId === loopId)
+      : [...this.metrics];
+  }
+
+  derive(loopId?: string): DerivedMetrics {
+    const filtered = this.getMetrics(loopId);
+    if (filtered.length === 0) {
+      return { avgCycleTimeMs: 0, errorRate: 0, throughputPerMin: 0, p95CycleTimeMs: 0, totalCycles: 0 };
+    }
+
+    const cycleTimes = filtered.map((m) => m.cycleTimeMs).sort((a, b) => a - b);
+    const avgCycleTimeMs = cycleTimes.reduce((a, b) => a + b, 0) / cycleTimes.length;
+    const errorRate = filtered.filter((m) => m.error).length / filtered.length;
+    const p95Index = Math.ceil(cycleTimes.length * 0.95) - 1;
+    const p95CycleTimeMs = cycleTimes[Math.max(0, p95Index)];
+
+    const timeSpanMs = filtered.length > 1
+      ? filtered[filtered.length - 1].timestamp - filtered[0].timestamp
+      : 60000;
+    const timeSpanMin = Math.max(timeSpanMs / 60000, 0.01);
+    const throughputPerMin = filtered.length / timeSpanMin;
+
+    return { avgCycleTimeMs, errorRate, throughputPerMin, p95CycleTimeMs, totalCycles: filtered.length };
+  }
+
+  /** Export for dashboard integration. */
+  exportSnapshot(): { metrics: LoopMetric[]; derived: DerivedMetrics } {
+    return { metrics: [...this.metrics], derived: this.derive() };
+  }
+}
+
+// ── Production Loop Health Checker ─────────────────────────────
+interface HealthCheckResult {
+  healthy: boolean;
+  component: string;
+  latencyMs: number;
+  error: string | null;
+  timestamp: number;
+}
+
+type HealthCheckFn = () => Promise<{ ok: boolean; error?: string }>;
+
+class ProductionLoopHealthChecker {
+  private results: HealthCheckResult[] = [];
+
+  constructor(
+    private checks: Map<string, HealthCheckFn>,
+    private intervalMs: number = 30000,
+  ) {}
+
+  get lastResults(): HealthCheckResult[] {
+    return [...this.results];
+  }
+
+  get overallHealth(): boolean {
+    if (this.results.length === 0) return true;
+    const recent = this.results.slice(-this.checks.size * 3);
+    const failures = recent.filter((r) => !r.healthy).length;
+    return failures / recent.length < 0.5;
+  }
+
+  /** Run all health checks once. */
+  async runAll(): Promise<HealthCheckResult[]> {
+    const batch: HealthCheckResult[] = [];
+    for (const [component, check] of this.checks) {
+      const start = Date.now();
+      try {
+        const result = await check();
+        batch.push({
+          healthy: result.ok,
+          component,
+          latencyMs: Date.now() - start,
+          error: result.error ?? null,
+          timestamp: Date.now(),
+        });
+      } catch (err) {
+        batch.push({
+          healthy: false,
+          component,
+          latencyMs: Date.now() - start,
+          error: (err as Error).message,
+          timestamp: Date.now(),
+        });
+      }
+    }
+    this.results.push(...batch);
+    return batch;
+  }
+
+  /** Start periodic health checks. Returns a disposer. */
+  startPeriodic(): () => void {
+    const timer = setInterval(() => this.runAll(), this.intervalMs);
+    return () => clearInterval(timer);
+  }
+}
+
+// ── Canary Release Manager ─────────────────────────────────────
+interface CanaryStep {
+  trafficPercent: number;
+  observationWindowMs: number;
+}
+
+interface CanaryConfig {
+  steps: CanaryStep[];
+  maxErrorRate: number;
+  maxLatencyP95Ms: number;
+  promotionCallback?: () => Promise<void>;
+  rollbackCallback?: () => Promise<void>;
+}
+
+class CanaryReleaseManager {
+  private currentStep = -1;
+  private promoted = false;
+  private rolledBack = false;
+  private stepMetrics: Array<{ step: number; trafficPercent: number; errorRate: number; latencyP95Ms: number }> = [];
+
+  constructor(
+    private config: CanaryConfig,
+    private measureErrorRate: () => Promise<number>,
+    private measureLatencyP95: () => Promise<number>,
+  ) {}
+
+  get status(): string {
+    if (this.promoted) return "PROMOTED";
+    if (this.rolledBack) return "ROLLED_BACK";
+    if (this.currentStep < 0) return "NOT_STARTED";
+    return `STEP_${this.currentStep}_AT_${this.config.steps[this.currentStep]?.trafficPercent}%`;
+  }
+
+  /** Advance one canary step with validation. */
+  async advance(): Promise<{
+    step: number;
+    trafficPercent: number;
+    passed: boolean;
+    promoted: boolean;
+    rolledBack: boolean;
+  }> {
+    if (this.promoted || this.rolledBack) {
+      return { step: this.currentStep, trafficPercent: this.config.steps[this.currentStep]?.trafficPercent ?? 0, passed: true, promoted: this.promoted, rolledBack: this.rolledBack };
+    }
+
+    this.currentStep++;
+    if (this.currentStep >= this.config.steps.length) {
+      this.promoted = true;
+      await this.config.promotionCallback?.();
+      return { step: this.currentStep, trafficPercent: 100, passed: true, promoted: true, rolledBack: false };
+    }
+
+    const step = this.config.steps[this.currentStep];
+    // Observe for the window duration
+    await this.sleep(step.observationWindowMs);
+
+    const errorRate = await this.measureErrorRate();
+    const latencyP95 = await this.measureLatencyP95();
+    this.stepMetrics.push({ step: this.currentStep, trafficPercent: step.trafficPercent, errorRate, latencyP95Ms: latencyP95 });
+
+    if (errorRate > this.config.maxErrorRate || latencyP95 > this.config.maxLatencyP95Ms) {
+      this.rolledBack = true;
+      await this.config.rollbackCallback?.();
+      return { step: this.currentStep, trafficPercent: step.trafficPercent, passed: false, promoted: false, rolledBack: true };
+    }
+
+    return { step: this.currentStep, trafficPercent: step.trafficPercent, passed: true, promoted: false, rolledBack: false };
+  }
+
+  /** Run full canary from 0% to 100%. */
+  async runAll(): Promise<void> {
+    while (!this.promoted && !this.rolledBack) {
+      await this.advance();
+    }
+  }
+
+  private sleep(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+}
+
+// ── Fallback Strategy Executor ─────────────────────────────────
+type FallbackAction = () => Promise<{ success: boolean; output?: string; error?: string }>;
+
+interface FallbackStrategyConfig {
+  strategies: Array<{ name: string; execute: FallbackAction; timeoutMs: number }>;
+  onAllFailed?: () => Promise<void>;
+}
+
+class FallbackStrategyExecutor {
+  private attemptLog: Array<{ strategy: string; success: boolean; durationMs: number }> = [];
+
+  constructor(private config: FallbackStrategyConfig) {}
+
+  get lastAttempts(): Array<{ strategy: string; success: boolean; durationMs: number }> {
+    return [...this.attemptLog];
+  }
+
+  /** Execute strategies in priority order. Returns first success or throws. */
+  async execute(): Promise<{ output: string; usedStrategy: string; attempts: number }> {
+    for (const strategy of this.config.strategies) {
+      const start = Date.now();
+      try {
+        const result = await this.withTimeout(strategy.execute, strategy.timeoutMs);
+        this.attemptLog.push({ strategy: strategy.name, success: result.success, durationMs: Date.now() - start });
+        if (result.success && result.output !== undefined) {
+          return { output: result.output, usedStrategy: strategy.name, attempts: this.attemptLog.length };
+        }
+      } catch (err) {
+        this.attemptLog.push({ strategy: strategy.name, success: false, durationMs: Date.now() - start });
+      }
+    }
+
+    await this.config.onAllFailed?.();
+    throw new Error("All fallback strategies exhausted");
+  }
+
+  private withTimeout<T>(fn: () => Promise<T>, ms: number): Promise<T> {
+    return Promise.race([
+      fn(),
+      new Promise<T>((_, reject) => setTimeout(() => reject(new Error(`Timeout after ${ms}ms`)), ms)),
+    ]);
+  }
+}
+
+// ── Usage ──────────────────────────────────────────────────────
+async function main() {
+  // Circuit breaker demo
+  const cb = new CircuitBreakerStateMachine({ failureThreshold: 3, successThreshold: 2, halfOpenTimeoutMs: 1000, cooldownMs: 5000 });
+  console.log("Circuit state:", cb.currentState);
+  try {
+    for (let i = 0; i < 5; i++) {
+      cb.preCheck();
+      if (i < 3) cb.recordFailure();
+      else cb.recordSuccess();
+    }
+  } catch (e) {
+    console.log("Circuit opened after 3 failures:", (e as Error).message);
+  }
+
+  // RetryExhaustionPredictor demo
+  const predictor = new RetryExhaustionPredictor(5);
+  for (let i = 0; i < 4; i++) {
+    predictor.recordAttempt(i, `timeout_${i}`, 2000);
+  }
+  console.log("Exhaustion probability:", predictor.exhaustionProbability.toFixed(2));
+  console.log("Should escalate:", predictor.shouldEscalate());
+
+  // ObservabilityCollector demo
+  const collector = new ObservabilityCollector();
+  for (let i = 0; i < 50; i++) {
+    collector.record({
+      loopId: "loop_1",
+      cycleNumber: i,
+      cycleTimeMs: 100 + Math.random() * 900,
+      error: Math.random() < 0.1,
+      inputTokens: 500,
+      outputTokens: 200,
+      timestamp: Date.now(),
+    });
+  }
+  const derived = collector.derive("loop_1");
+  console.log("Derived metrics:", JSON.stringify(derived, null, 2));
+
+  // Health checker demo
+  const checker = new ProductionLoopHealthChecker(
+    new Map([
+      ["api", async () => ({ ok: true })],
+      ["database", async () => ({ ok: Math.random() > 0.2 })],
+    ]),
+  );
+  await checker.runAll();
+  console.log("Overall health:", checker.overallHealth);
+
+  // Canary release demo
+  const canary = new CanaryReleaseManager(
+    { steps: [{ trafficPercent: 5, observationWindowMs: 100 }, { trafficPercent: 25, observationWindowMs: 100 }, { trafficPercent: 50, observationWindowMs: 100 }, { trafficPercent: 100, observationWindowMs: 100 }], maxErrorRate: 0.05, maxLatencyP95Ms: 2000 },
+    async () => 0.01,
+    async () => 500,
+  );
+  await canary.runAll();
+  console.log("Canary status:", canary.status);
+
+  // Fallback executor demo
+  const executor = new FallbackStrategyExecutor({
+    strategies: [
+      { name: "primary", execute: async () => ({ success: false, error: "rate_limited" }), timeoutMs: 500 },
+      { name: "secondary", execute: async () => ({ success: true, output: "fallback_output" }), timeoutMs: 500 },
+    ],
+  });
+  const fallbackResult = await executor.execute();
+  console.log("Fallback used:", fallbackResult.usedStrategy);
+}
+
+main();
+```
+
 ## Summary
 
 Production loops close the gap between a model that works in a notebook and one that stays reliable under real traffic. The deploy → monitor → drift-detect → retrain → redeploy pipeline provides a continuous lifecycle that automatically detects and corrects degradation. Shadow and canary deployments let you validate model changes with zero or bounded user impact.

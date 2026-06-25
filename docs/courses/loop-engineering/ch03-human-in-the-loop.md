@@ -616,6 +616,508 @@ await main();
 
 ---
 
+### Extended Implementation: Escalation Chains, Approval Gates, Priority Queue, and Audit Logging
+
+This section builds production HITL infrastructure: an `EscalationChain` with timeout, delegation, and fallback handlers; a `MultiStageApprovalGate` requiring N independent approvals; a `ConfidenceDecayTracker` with time-based decay; a `PriorityQueueHITL` with starvation prevention; an `AuditTrailLogger` for HITL decisions; and a human feedback aggregator with consensus scoring.
+
+```typescript
+// ch03-advanced-hitl.ts
+// bun run ch03-advanced-hitl.ts
+
+// ─── EscalationChain ───────────────────────────────────────────────────
+
+interface EscalationTier {
+  name: string;
+  timeoutMs: number;
+  canHandle: (proposal: ProposalData) => boolean;
+}
+
+interface ProposalData {
+  id: string;
+  action: string;
+  riskScore: number;
+  cost: number;
+  submittedAt: Date;
+}
+
+interface EscalationResult {
+  proposalId: string;
+  finalDecision: "approved" | "rejected";
+  handledBy: string;
+  chain: string[];
+  totalTimeMs: number;
+}
+
+class EscalationChain {
+  private tiers: EscalationTier[] = [];
+  private fallbackDecision: "approved" | "rejected" = "rejected";
+  private delegateMap = new Map<string, string[]>();
+
+  addTier(tier: EscalationTier): void {
+    this.tiers.push(tier);
+  }
+
+  addDelegate(from: string, to: string[]): void {
+    this.delegateMap.set(from, to);
+  }
+
+  setFallback(decision: "approved" | "rejected"): void {
+    this.fallbackDecision = decision;
+  }
+
+  async escalate(proposal: ProposalData): Promise<EscalationResult> {
+    const startTime = Date.now();
+    const chain: string[] = [];
+
+    for (const tier of this.tiers) {
+      chain.push(tier.name);
+      console.log(`  [ESCALATION] Trying tier: ${tier.name}`);
+
+      if (!tier.canHandle(proposal)) {
+        console.log(`  [ESCALATION] ${tier.name} cannot handle, skipping`);
+        continue;
+      }
+
+      const handled = await this.tryHandle(tier, proposal);
+      if (handled !== null) {
+        return {
+          proposalId: proposal.id,
+          finalDecision: handled,
+          handledBy: tier.name,
+          chain,
+          totalTimeMs: Date.now() - startTime,
+        };
+      }
+    }
+
+    console.log(`  [ESCALATION] All tiers exhausted, fallback=${this.fallbackDecision}`);
+    return {
+      proposalId: proposal.id,
+      finalDecision: this.fallbackDecision,
+      handledBy: "fallback",
+      chain,
+      totalTimeMs: Date.now() - startTime,
+    };
+  }
+
+  private async tryHandle(tier: EscalationTier, proposal: ProposalData): Promise<"approved" | "rejected" | null> {
+    const delegates = this.delegateMap.get(tier.name);
+    const candidates = delegates ?? [tier.name];
+
+    for (const delegate of candidates) {
+      try {
+        const result = await Promise.race([
+          this.simulateReview(delegate, proposal),
+          new Promise<null>((_, reject) =>
+            setTimeout(() => reject(new Error("timeout")), tier.timeoutMs)
+          ),
+        ]);
+        return result;
+      } catch {
+        console.log(`  [ESCALATION] ${delegate} timed out or unavailable`);
+      }
+    }
+
+    return null;
+  }
+
+  private async simulateReview(reviewer: string, proposal: ProposalData): Promise<"approved" | "rejected"> {
+    await new Promise((r) => setTimeout(r, 10 + Math.random() * 30));
+    return proposal.riskScore < 0.7 && Math.random() > 0.2 ? "approved" : "rejected";
+  }
+}
+
+// ─── MultiStageApprovalGate ────────────────────────────────────────────
+
+interface ApprovalRequest {
+  id: string;
+  description: string;
+  riskLevel: "low" | "medium" | "high" | "critical";
+  requiredApprovals: number;
+  approverPool: string[];
+  approvedBy: string[];
+  rejectedBy: string[];
+  status: "pending" | "approved" | "rejected";
+}
+
+class MultiStageApprovalGate {
+  private requests = new Map<string, ApprovalRequest>();
+
+  createRequest(description: string, riskLevel: ApprovalRequest["riskLevel"], pool: string[]): ApprovalRequest {
+    const requiredApprovals = riskLevel === "critical" ? 3 : riskLevel === "high" ? 2 : 1;
+    const request: ApprovalRequest = {
+      id: `approval-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+      description,
+      riskLevel,
+      requiredApprovals,
+      approverPool: pool,
+      approvedBy: [],
+      rejectedBy: [],
+      status: "pending",
+    };
+    this.requests.set(request.id, request);
+    return request;
+  }
+
+  submitApproval(requestId: string, approver: string, decision: "approve" | "reject"): string | null {
+    const req = this.requests.get(requestId);
+    if (!req || req.status !== "pending") return null;
+
+    if (decision === "approve") {
+      if (!req.approvedBy.includes(approver)) req.approvedBy.push(approver);
+      if (req.approvedBy.length >= req.requiredApprovals) {
+        req.status = "approved";
+        return "approved";
+      }
+    } else {
+      if (!req.rejectedBy.includes(approver)) req.rejectedBy.push(approver);
+      if (req.rejectedBy.length >= req.requiredApprovals) {
+        req.status = "rejected";
+        return "rejected";
+      }
+    }
+
+    return null;
+  }
+
+  getStatus(requestId: string): ApprovalRequest | undefined {
+    return this.requests.get(requestId);
+  }
+
+  requestApprovals(request: ApprovalRequest): { needed: number; remaining: number } {
+    const remaining = request.requiredApprovals - request.approvedBy.length;
+    return { needed: request.requiredApprovals, remaining: Math.max(0, remaining) };
+  }
+}
+
+// ─── ConfidenceDecayTracker ────────────────────────────────────────────
+
+class ConfidenceDecayTracker {
+  private scores = new Map<string, { score: number; lastActive: Date; count: number }>();
+  private readonly decayRatePerDay: number;
+
+  constructor(decayRatePerDay: number = 0.05) {
+    this.decayRatePerDay = decayRatePerDay;
+  }
+
+  record(actionType: string, succeeded: boolean, alpha: number = 0.15): void {
+    const entry = this.scores.get(actionType) ?? { score: 0.5, lastActive: new Date(), count: 0 };
+    this.applyDecay(entry);
+    const reward = succeeded ? 1 : 0;
+    entry.score += alpha * (reward - entry.score);
+    entry.lastActive = new Date();
+    entry.count++;
+    this.scores.set(actionType, entry);
+  }
+
+  getConfidence(actionType: string): number {
+    const entry = this.scores.get(actionType);
+    if (!entry) return 0.5;
+    this.applyDecay(entry);
+    return entry.score;
+  }
+
+  needsReview(actionType: string, proposedConfidence: number, threshold: number = 0.7): boolean {
+    const trustScore = this.getConfidence(actionType);
+    const effectiveThreshold = threshold * (1 - trustScore * 0.5);
+    return proposedConfidence < effectiveThreshold;
+  }
+
+  private applyDecay(entry: { score: number; lastActive: Date; count: number }): void {
+    const now = new Date();
+    const msSinceActive = now.getTime() - entry.lastActive.getTime();
+    const daysSinceActive = msSinceActive / (1000 * 60 * 60 * 24);
+    if (daysSinceActive > 0) {
+      const decay = Math.pow(1 - this.decayRatePerDay, daysSinceActive);
+      entry.score *= decay;
+    }
+  }
+
+  getStats(): Record<string, { score: number; count: number }> {
+    const stats: Record<string, { score: number; count: number }> = {};
+    for (const [actionType, entry] of this.scores) {
+      stats[actionType] = { score: entry.score, count: entry.count };
+    }
+    return stats;
+  }
+}
+
+// ─── PriorityQueueHITL with Starvation Prevention ──────────────────────
+
+type PriorityLevel = "critical" | "high" | "medium" | "low";
+
+interface PrioritizedProposal {
+  id: string;
+  action: string;
+  priority: PriorityLevel;
+  submittedAt: Date;
+  lastAttemptAt: Date | null;
+  attemptCount: number;
+  riskScore: number;
+}
+
+class PriorityQueueHITL {
+  private queues: Record<PriorityLevel, PrioritizedProposal[]> = {
+    critical: [],
+    high: [],
+    medium: [],
+    low: [],
+  };
+  private ageBoostMs: number;
+  private maxAttempts: number;
+  private processedCount = 0;
+
+  constructor(ageBoostMs: number = 30000, maxAttempts: number = 3) {
+    this.ageBoostMs = ageBoostMs;
+    this.maxAttempts = maxAttempts;
+  }
+
+  enqueue(proposal: Omit<PrioritizedProposal, "id" | "submittedAt" | "lastAttemptAt" | "attemptCount">): string {
+    const id = `hitl-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
+    const entry: PrioritizedProposal = {
+      id,
+      ...proposal,
+      submittedAt: new Date(),
+      lastAttemptAt: null,
+      attemptCount: 0,
+    };
+    this.queues[proposal.priority].push(entry);
+    console.log(`[PRIORITY] Enqueued ${id} (${proposal.priority}): ${proposal.action} (queue depth: ${this.queues[proposal.priority].length})`);
+    return id;
+  }
+
+  dequeue(): PrioritizedProposal | null {
+    const effectivePriority = this.computeEffectivePriority();
+    const queue = this.queues[effectivePriority];
+    while (queue.length > 0) {
+      const proposal = queue.shift()!;
+      if (proposal.attemptCount >= this.maxAttempts) {
+        console.log(`  [PRIORITY] ${proposal.id} exceeded max attempts, escalating`);
+        this.escalate(proposal);
+        continue;
+      }
+      proposal.lastAttemptAt = new Date();
+      proposal.attemptCount++;
+      return proposal;
+    }
+    return null;
+  }
+
+  private computeEffectivePriority(): PriorityLevel {
+    const now = Date.now();
+    const priorities: PriorityLevel[] = ["critical", "high", "medium", "low"];
+
+    for (const level of priorities) {
+      for (const item of this.queues[level]) {
+        const age = now - item.submittedAt.getTime();
+        if (age >= this.ageBoostMs) {
+          return level === "critical" ? "critical" : priorities[priorities.indexOf(level) - 1] ?? "critical";
+        }
+      }
+    }
+
+    for (const level of priorities) {
+      if (this.queues[level].length > 0) return level;
+    }
+
+    return "low";
+  }
+
+  private escalate(proposal: PrioritizedProposal): void {
+    console.log(`  [PRIORITY] Escalating ${proposal.id} (${proposal.action}) to critical`);
+    this.queues.critical.push({ ...proposal, priority: "critical" });
+  }
+
+  getDepth(): Record<PriorityLevel, number> {
+    return {
+      critical: this.queues.critical.length,
+      high: this.queues.high.length,
+      medium: this.queues.medium.length,
+      low: this.queues.low.length,
+    };
+  }
+
+  isEmpty(): boolean {
+    return Object.values(this.queues).every((q) => q.length === 0);
+  }
+}
+
+// ─── AuditTrailLogger ─────────────────────────────────────────────────
+
+interface AuditEntry {
+  timestamp: Date;
+  proposalId: string;
+  action: string;
+  decision: string;
+  reviewer: string;
+  riskScore: number;
+  previousState?: string;
+  metadata: Record<string, unknown>;
+}
+
+class AuditTrailLogger {
+  private entries: AuditEntry[] = [];
+  private readonly maxEntries: number;
+
+  constructor(maxEntries: number = 10000) {
+    this.maxEntries = maxEntries;
+  }
+
+  log(entry: Omit<AuditEntry, "timestamp">): void {
+    this.entries.push({ timestamp: new Date(), ...entry });
+    if (this.entries.length > this.maxEntries) this.entries.shift();
+  }
+
+  query(filters: Partial<AuditEntry>): AuditEntry[] {
+    return this.entries.filter((e) => {
+      for (const [key, value] of Object.entries(filters)) {
+        if ((e as Record<string, unknown>)[key] !== value) return false;
+      }
+      return true;
+    });
+  }
+
+  getStats(): { total: number; approved: number; rejected: number; avgRisk: number } {
+    const approved = this.entries.filter((e) => e.decision === "approved").length;
+    const rejected = this.entries.filter((e) => e.decision === "rejected").length;
+    const avgRisk = this.entries.reduce((s, e) => s + e.riskScore, 0) / (this.entries.length || 1);
+    return { total: this.entries.length, approved, rejected, avgRisk };
+  }
+
+  export(): string {
+    return JSON.stringify(this.entries, null, 2);
+  }
+}
+
+// ─── Human Feedback Aggregator ─────────────────────────────────────────
+
+interface FeedbackVote {
+  reviewerId: string;
+  score: number;
+  comment: string;
+}
+
+interface AggregatedFeedback {
+  meanScore: number;
+  medianScore: number;
+  stdDev: number;
+  consensusLevel: "strong" | "moderate" | "weak" | "none";
+  voteCount: number;
+  comments: string[];
+}
+
+class FeedbackAggregator {
+  aggregate(votes: FeedbackVote[]): AggregatedFeedback {
+    const scores = votes.map((v) => v.score);
+    const n = scores.length;
+    if (n === 0) return { meanScore: 0, medianScore: 0, stdDev: 0, consensusLevel: "none", voteCount: 0, comments: [] };
+
+    const meanScore = scores.reduce((a, b) => a + b, 0) / n;
+    const sorted = [...scores].sort((a, b) => a - b);
+    const medianScore = n % 2 === 0 ? (sorted[n / 2 - 1] + sorted[n / 2]) / 2 : sorted[Math.floor(n / 2)];
+    const variance = scores.reduce((sum, s) => sum + (s - meanScore) ** 2, 0) / n;
+    const stdDev = Math.sqrt(variance);
+
+    let consensusLevel: AggregatedFeedback["consensusLevel"] = "none";
+    if (n >= 3 && stdDev < 0.3) consensusLevel = "strong";
+    else if (n >= 2 && stdDev < 0.6) consensusLevel = "moderate";
+    else if (n >= 1) consensusLevel = "weak";
+
+    return {
+      meanScore,
+      medianScore,
+      stdDev,
+      consensusLevel,
+      voteCount: n,
+      comments: votes.map((v) => v.comment),
+    };
+  }
+
+  static weightedScore(votes: FeedbackVote[], weights: Record<string, number>): number {
+    let totalWeight = 0;
+    let weightedSum = 0;
+    for (const vote of votes) {
+      const w = weights[vote.reviewerId] ?? 1;
+      weightedSum += vote.score * w;
+      totalWeight += w;
+    }
+    return totalWeight > 0 ? weightedSum / totalWeight : 0;
+  }
+}
+
+// ─── Demo ──────────────────────────────────────────────────────────────
+
+async function main() {
+  console.log("=== Extended HITL Demo ===\n");
+
+  // 1. Escalation Chain
+  const chain = new EscalationChain();
+  chain.addTier({ name: "junior-reviewer", timeoutMs: 20, canHandle: (p) => p.riskScore < 0.5 });
+  chain.addTier({ name: "senior-reviewer", timeoutMs: 30, canHandle: () => true });
+  chain.addTier({ name: "manager", timeoutMs: 50, canHandle: () => true });
+  chain.addDelegate("junior-reviewer", ["junior-a", "junior-b"]);
+  chain.addDelegate("senior-reviewer", ["senior-a"]);
+  chain.setFallback("rejected");
+
+  const escResult = await chain.escalate({
+    id: "p1", action: "delete-database", riskScore: 0.9, cost: 1000, submittedAt: new Date(),
+  });
+  console.log(`Escalation: ${escResult.finalDecision} by ${escResult.handledBy} via [${escResult.chain.join(" -> ")}]`);
+
+  // 2. MultiStageApprovalGate
+  const gate = new MultiStageApprovalGate();
+  const req = gate.createRequest("Deploy to production", "critical", ["alice", "bob", "carol", "dave"]);
+  console.log(`\nMultiStage: ${req.id} needs ${req.requiredApprovals} approvals`);
+  gate.submitApproval(req.id, "alice", "approve");
+  gate.submitApproval(req.id, "bob", "approve");
+  console.log(`  After 2 approvals: ${gate.submitApproval(req.id, "carol", "approve")}`);
+
+  // 3. Confidence Decay
+  const decay = new ConfidenceDecayTracker(0.05);
+  for (let i = 0; i < 10; i++) {
+    decay.record("code-gen", true);
+  }
+  console.log(`\nConfidence Decay: code-gen score=${decay.getConfidence("code-gen").toFixed(3)}`);
+
+  // 4. Priority Queue
+  const pq = new PriorityQueueHITL(500, 2);
+  pq.enqueue({ action: "fix-typo", priority: "low", riskScore: 0.1 });
+  pq.enqueue({ action: "patch-security", priority: "critical", riskScore: 0.9 });
+  pq.enqueue({ action: "refactor-module", priority: "medium", riskScore: 0.3 });
+  console.log(`\nPriority Queue depths:`, pq.getDepth());
+  const item = pq.dequeue();
+  console.log(`  Dequeued: ${item?.id} (${item?.priority}): ${item?.action}`);
+
+  // 5. Audit Trail
+  const audit = new AuditTrailLogger();
+  audit.log({ proposalId: "p1", action: "deploy", decision: "approved", reviewer: "alice", riskScore: 0.3, metadata: {} });
+  audit.log({ proposalId: "p2", action: "delete", decision: "rejected", reviewer: "bob", riskScore: 0.9, metadata: {} });
+  console.log(`\nAudit Trail:`, audit.getStats());
+
+  // 6. Feedback Aggregator
+  const aggregator = new FeedbackAggregator();
+  const votes: FeedbackVote[] = [
+    { reviewerId: "alice", score: 0.85, comment: "Looks good" },
+    { reviewerId: "bob", score: 0.90, comment: "Minor nits" },
+    { reviewerId: "carol", score: 0.70, comment: "Check edge cases" },
+  ];
+  const agg = aggregator.aggregate(votes);
+  console.log(`\nFeedback Aggregator: mean=${agg.meanScore.toFixed(2)} median=${agg.medianScore.toFixed(2)} consensus=${agg.consensusLevel}`);
+}
+
+await main();
+```
+
+**Key concepts demonstrated:**
+- **EscalationChain** models multi-tier human escalation with per-tier timeouts, delegation pools, and a configurable fallback decision
+- **MultiStageApprovalGate** requires N independent approvals before an action commits, with separate approve/reject counters
+- **ConfidenceDecayTracker** applies time-based decay to trust scores — inactivity reduces autonomy over time
+- **PriorityQueueHITL** implements starvation prevention via age-boosting: old proposals get promoted to higher-priority queues
+- **AuditTrailLogger** provides immutable, queryable HITL decision records with summary statistics
+- **FeedbackAggregator** computes mean, median, standard deviation, and consensus level from multiple reviewer votes
+
+---
+
 ## Summary
 
 - **Propose-then-commit** is the atomic HITL pattern: separate suggestion from execution with a human gate between them.

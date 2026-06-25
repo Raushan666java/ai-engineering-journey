@@ -871,6 +871,591 @@ Chaos injections: 4
 Retries: 6, Unrecoverable failures: 1
 ```
 
+### Extended Implementation: Advanced Loop Tooling Suite
+
+The following suite brings together six production-grade tools that wrap any agent loop with debugging, profiling, visualization, testing, scaffolding, and configuration management.
+
+```typescript
+// advanced-loop-tooling-suite.ts
+
+// ─── 1. LoopDebugger: breakpoints, cycle stepping, state inspection ───
+
+interface Breakpoint {
+  condition: string;
+  onHit: (ctx: DebugContext) => Promise<"continue" | "pause" | "abort">;
+}
+
+interface DebugContext {
+  step: number;
+  phase: "plan" | "act" | "observe" | "critique";
+  state: Record<string, unknown>;
+  messages: Array<{ role: string; content: string }>;
+}
+
+class LoopDebugger {
+  private breakpoints: Breakpoint[] = [];
+  private paused = false;
+  private history: DebugContext[] = [];
+
+  addBreakpoint(bp: Breakpoint): void {
+    this.breakpoints.push(bp);
+  }
+
+  clearBreakpoints(): void {
+    this.breakpoints.length = 0;
+  }
+
+  async step(ctx: DebugContext): Promise<"continue" | "abort"> {
+    this.history.push(ctx);
+    for (const bp of this.breakpoints) {
+      if (ctx.phase.includes(bp.condition) || ctx.step.toString() === bp.condition) {
+        const action = await bp.onHit(ctx);
+        if (action === "abort") return "abort";
+        if (action === "pause") this.paused = true;
+      }
+    }
+    if (this.paused) {
+      console.log(`[debugger] PAUSED at step ${ctx.step} (${ctx.phase})`);
+      console.log(`  State keys: ${Object.keys(ctx.state).join(", ")}`);
+      console.log(`  Messages: ${ctx.messages.length}`);
+      this.paused = false;
+    }
+    return "continue";
+  }
+
+  getContext(index: number): DebugContext | undefined {
+    return this.history[index];
+  }
+
+  get fullTrace(): DebugContext[] {
+    return [...this.history];
+  }
+
+  exportSnapshot(): string {
+    return JSON.stringify({
+      historySize: this.history.length,
+      lastStep: this.history[this.history.length - 1] ?? null,
+    }, null, 2);
+  }
+}
+
+// ─── 2. LoopProfiler: cycle-time histogram, hot-spot detection ───
+
+interface ProfileSample {
+  step: number;
+  phase: string;
+  durationMs: number;
+  tokens: number;
+  toolName: string;
+}
+
+class LoopProfiler {
+  private samples: ProfileSample[] = [];
+  private startTime = Date.now();
+
+  recordSample(sample: ProfileSample): void {
+    this.samples.push(sample);
+  }
+
+  /** Return a histogram of cycle durations bucketed into 100ms intervals */
+  cycleTimeHistogram(): Map<string, number> {
+    const buckets = new Map<string, number>();
+    for (const s of this.samples) {
+      const bucket = `${Math.floor(s.durationMs / 100) * 100}-${Math.floor(s.durationMs / 100) * 100 + 99}ms`;
+      buckets.set(bucket, (buckets.get(bucket) ?? 0) + 1);
+    }
+    return buckets;
+  }
+
+  /** Identify phases whose average duration exceeds the threshold */
+  detectHotSpots(thresholdMs = 500): Array<{ phase: string; avgDurationMs: number; count: number }> {
+    const byPhase = new Map<string, number[]>();
+    for (const s of this.samples) {
+      const arr = byPhase.get(s.phase) ?? [];
+      arr.push(s.durationMs);
+      byPhase.set(s.phase, arr);
+    }
+    const hot: Array<{ phase: string; avgDurationMs: number; count: number }> = [];
+    for (const [phase, durations] of byPhase) {
+      const avg = durations.reduce((a, b) => a + b, 0) / durations.length;
+      if (avg > thresholdMs) hot.push({ phase, avgDurationMs: Math.round(avg), count: durations.length });
+    }
+    return hot.sort((a, b) => b.avgDurationMs - a.avgDurationMs);
+  }
+
+  /** Find the slowest N cycles */
+  findBottlenecks(topN = 3): ProfileSample[] {
+    return [...this.samples].sort((a, b) => b.durationMs - a.durationMs).slice(0, topN);
+  }
+
+  summary(): { totalSamples: number; totalDurationMs: number; avgMs: number; elapsedMs: number } {
+    const totalDurationMs = this.samples.reduce((s, x) => s + x.durationMs, 0);
+    return {
+      totalSamples: this.samples.length,
+      totalDurationMs,
+      avgMs: this.samples.length > 0 ? Math.round(totalDurationMs / this.samples.length) : 0,
+      elapsedMs: Date.now() - this.startTime,
+    };
+  }
+
+  exportCsv(): string {
+    const header = "step,phase,durationMs,tokens,toolName";
+    const rows = this.samples.map((s) => `${s.step},${s.phase},${s.durationMs},${s.tokens},${s.toolName}`);
+    return [header, ...rows].join("\n");
+  }
+}
+
+// ─── 3. TraceVisualizer: flame-graph and cycle-metrics data ───
+
+interface FlameGraphNode {
+  name: string;
+  value: number;
+  children: FlameGraphNode[];
+}
+
+class TraceVisualizer {
+  private cycles: Array<{ step: number; spans: Array<{ phase: string; ms: number }> }> = [];
+
+  addCycle(step: number, spans: Array<{ phase: string; ms: number }>): void {
+    this.cycles.push({ step, spans });
+  }
+
+  /** Build a hierarchical flame-graph data structure */
+  buildFlameGraph(): FlameGraphNode {
+    const root: FlameGraphNode = { name: "loop", value: 0, children: [] };
+    for (const cycle of this.cycles) {
+      const cycleNode: FlameGraphNode = {
+        name: `cycle-${cycle.step}`,
+        value: 0,
+        children: [],
+      };
+      for (const span of cycle.spans) {
+        cycleNode.children.push({
+          name: span.phase,
+          value: span.ms,
+          children: [],
+        });
+        cycleNode.value += span.ms;
+      }
+      root.children.push(cycleNode);
+      root.value += cycleNode.value;
+    }
+    return root;
+  }
+
+  /** Generate per-cycle metrics for plotting (chart.js compatible) */
+  cycleMetrics(): Array<{ step: number; planMs: number; actMs: number; observeMs: number; critiqueMs: number }> {
+    return this.cycles.map((c) => {
+      const m = { step: c.step, planMs: 0, actMs: 0, observeMs: 0, critiqueMs: 0 };
+      for (const s of c.spans) {
+        if (s.phase.startsWith("plan")) m.planMs += s.ms;
+        else if (s.phase.startsWith("act")) m.actMs += s.ms;
+        else if (s.phase.startsWith("observe")) m.observeMs += s.ms;
+        else if (s.phase.startsWith("critique")) m.critiqueMs += s.ms;
+      }
+      return m;
+    });
+  }
+
+  /** JSON export for external visualization tools */
+  exportJson(): string {
+    return JSON.stringify({
+      flameGraph: this.buildFlameGraph(),
+      cycleMetrics: this.cycleMetrics(),
+      totalCycles: this.cycles.length,
+    }, null, 2);
+  }
+}
+
+// ─── 4. LoopTestHarness: mock outputs, assertion engine, property-based testing ───
+
+interface MockSpec {
+  toolName: string;
+  argsMatcher: (args: Record<string, unknown>) => boolean;
+  output: unknown;
+  shouldThrow?: boolean;
+}
+
+interface Assertion {
+  description: string;
+  check: (history: Array<{ step: number; tool: string; args: Record<string, unknown>; result: unknown }>) => boolean;
+}
+
+class LoopTestHarness {
+  private mocks: MockSpec[] = [];
+  private assertions: Assertion[] = [];
+  private executionHistory: Array<{ step: number; tool: string; args: Record<string, unknown>; result: unknown }> = [];
+
+  registerMock(mock: MockSpec): void {
+    this.mocks.push(mock);
+  }
+
+  /** Intercept a tool call and return the mock response if matched */
+  async callWithMocks(toolName: string, args: Record<string, unknown>, step: number): Promise<unknown> {
+    for (const mock of this.mocks) {
+      if (mock.toolName === toolName && mock.argsMatcher(args)) {
+        if (mock.shouldThrow) throw new Error(`Mock error for ${toolName}`);
+        this.executionHistory.push({ step, tool: toolName, args, result: mock.output });
+        return mock.output;
+      }
+    }
+    throw new Error(`No mock registered for ${toolName}(${JSON.stringify(args)})`);
+  }
+
+  addAssertion(assertion: Assertion): void {
+    this.assertions.push(assertion);
+  }
+
+  runAssertions(): Array<{ description: string; passed: boolean }> {
+    return this.assertions.map((a) => ({
+      description: a.description,
+      passed: a.check(this.executionHistory),
+    }));
+  }
+
+  /** Property-based: run N iterations with random inputs within constraints */
+  async propertyTest(
+    iterations: number,
+    generator: (step: number) => { tool: string; args: Record<string, unknown> },
+    validator: (history: LoopTestHarness["executionHistory"]) => boolean,
+  ): Promise<{ passed: boolean; failingInputs: number }> {
+    let failures = 0;
+    for (let i = 0; i < iterations; i++) {
+      const input = generator(i);
+      try {
+        await this.callWithMocks(input.tool, input.args, i);
+      } catch {
+        // Expected for some mocks; continue
+      }
+      if (!validator(this.executionHistory)) failures++;
+    }
+    return { passed: failures === 0, failingInputs: failures };
+  }
+
+  reset(): void {
+    this.executionHistory = [];
+  }
+
+  get history(): typeof this.executionHistory {
+    return [...this.executionHistory];
+  }
+}
+
+// ─── 5. LoopScaffoldGenerator: boilerplate for new agent loops ───
+
+interface LoopBlueprint {
+  name: string;
+  tools: string[];
+  hasHITL: boolean;
+  hasCheckpoint: boolean;
+  hasCritique: boolean;
+}
+
+class LoopScaffoldGenerator {
+  generate(blueprint: LoopBlueprint): Map<string, string> {
+    const files = new Map<string, string>();
+    const toolsArray = blueprint.tools.map((t) => `    "${t}"`).join(",\n");
+
+    files.set("loop-config.yaml", `# ${blueprint.name} Loop Configuration
+loop:
+  name: ${blueprint.name}
+  maxSteps: 25
+  maxTokens: 50000
+  maxCostUsd: 0.50
+  tools:
+${blueprint.tools.map((t) => `    - ${t}`).join("\n")}
+  features:
+    humanInTheLoop: ${String(blueprint.hasHITL)}
+    checkpointing: ${String(blueprint.hasCheckpoint)}
+    selfCritique: ${String(blueprint.hasCritique)}
+`);
+
+    files.set("index.ts", `// ${blueprint.name} — Auto-generated agent loop
+import { createLoopRuntime } from "./runtime";
+
+interface ToolCall {
+  id: string;
+  name: string;
+  args: Record<string, unknown>;
+}
+
+interface ToolResult {
+  id: string;
+  name: string;
+  success: boolean;
+  data: string;
+  error?: string;
+}
+
+class ${blueprint.name} {
+  private step = 0;
+  private readonly tools = new Set([${toolsArray}]);
+
+  constructor(private config: { maxSteps: number; maxTokens: number; maxCostUsd: number }) {}
+
+  private async plan(): Promise<ToolCall | null> {
+    // LLM prompt goes here
+    return null;
+  }
+
+  private async act(tc: ToolCall): Promise<ToolResult> {
+    // Tool dispatch goes here
+    return { id: tc.id, name: tc.name, success: true, data: "" };
+  }
+
+  async run(): Promise<{ success: boolean; stepsCompleted: number }> {
+    while (this.step < this.config.maxSteps) {
+      this.step++;
+      const plan = await this.plan();
+      if (plan === null) break;
+${blueprint.hasHITL ? `      const approved = await this.approveGate(plan);
+      if (!approved) continue;\n` : ""}
+      const result = await this.act(plan);
+${blueprint.hasCritique ? `      if (!result.success) {
+        const shouldRetry = await this.critique(plan, result);
+        if (shouldRetry) { this.step--; continue; }
+      }\n` : ""}
+${blueprint.hasCheckpoint ? `      await this.saveCheckpoint();\n` : ""}
+    }
+    return { success: this.step > 0, stepsCompleted: this.step };
+  }
+}
+
+export { ${blueprint.name} };
+`);
+
+    if (blueprint.hasCheckpoint) {
+      files.set("runtime.ts", `// Checkpoint runtime for ${blueprint.name}
+import { mkdir, writeFile, readFile } from "node:fs/promises";
+import { join } from "node:path";
+
+const CHECKPOINT_DIR = "/tmp/${blueprint.name.toLowerCase()}-checkpoints";
+
+export async function saveCheckpoint(loopId: string, data: unknown): Promise<void> {
+  await mkdir(CHECKPOINT_DIR, { recursive: true });
+  const path = join(CHECKPOINT_DIR, \`\${loopId}.json\`);
+  await writeFile(path, JSON.stringify(data, null, 2));
+}
+
+export async function loadCheckpoint<T>(loopId: string): Promise<T | null> {
+  try {
+    const path = join(CHECKPOINT_DIR, \`\${loopId}.json\`);
+    const text = await readFile(path, "utf-8");
+    return JSON.parse(text) as T;
+  } catch { return null; }
+}
+`);
+    }
+
+    return files;
+  }
+}
+
+// ─── 6. ConfigurationManager: YAML/JSON configs with schema validation ───
+
+interface LoopConfigSchema {
+  fields: Array<{
+    key: string;
+    type: "string" | "number" | "boolean" | "array" | "object";
+    required: boolean;
+    defaultValue?: unknown;
+    validator?: (value: unknown) => boolean;
+  }>;
+}
+
+interface LoopConfig {
+  [key: string]: unknown;
+}
+
+class ConfigurationManager {
+  private schema: LoopConfigSchema;
+  private config: LoopConfig = {};
+
+  constructor(schema: LoopConfigSchema) {
+    this.schema = schema;
+  }
+
+  /** Load and validate a JSON configuration object */
+  load(jsonConfig: string): { valid: boolean; errors: string[] } {
+    const errors: string[] = [];
+    let parsed: LoopConfig;
+    try {
+      parsed = JSON.parse(jsonConfig);
+    } catch {
+      return { valid: false, errors: ["Invalid JSON"] };
+    }
+
+    for (const field of this.schema.fields) {
+      const value = parsed[field.key];
+      if (value === undefined || value === null) {
+        if (field.required && field.defaultValue === undefined) {
+          errors.push(`Missing required field: ${field.key}`);
+        } else if (field.defaultValue !== undefined) {
+          this.config[field.key] = field.defaultValue;
+        }
+        continue;
+      }
+
+      const expectedType = field.type;
+      const actualType = Array.isArray(value) ? "array" : typeof value;
+      if (actualType !== expectedType) {
+        errors.push(`Field "${field.key}": expected ${expectedType}, got ${actualType}`);
+        continue;
+      }
+
+      if (field.validator && !field.validator(value)) {
+        errors.push(`Field "${field.key}" failed custom validation`);
+        continue;
+      }
+
+      this.config[field.key] = value;
+    }
+
+    return { valid: errors.length === 0, errors };
+  }
+
+  /** Load configuration from a YAML-like string (simple parser) */
+  loadYaml(yamlString: string): { valid: boolean; errors: string[] } {
+    const parsed: LoopConfig = {};
+    const errors: string[] = [];
+    for (const line of yamlString.split("\n")) {
+      const trimmed = line.trim();
+      if (trimmed === "" || trimmed.startsWith("#")) continue;
+      const colonIdx = trimmed.indexOf(":");
+      if (colonIdx === -1) continue;
+      const key = trimmed.slice(0, colonIdx).trim();
+      let value: unknown = trimmed.slice(colonIdx + 1).trim();
+      if (value === "true") value = true;
+      else if (value === "false") value = false;
+      else if (/^\d+$/.test(value as string)) value = parseInt(value as string, 10);
+      else if (/^\d+\.\d+$/.test(value as string)) value = parseFloat(value as string);
+      parsed[key] = value;
+    }
+    return this.load(JSON.stringify(parsed));
+  }
+
+  get<T>(key: string, fallback?: T): T | undefined {
+    return (this.config[key] as T) ?? fallback;
+  }
+
+  getAll(): LoopConfig {
+    return { ...this.config };
+  }
+
+  validateSchema(jsonConfig: string): { valid: boolean; errors: string[] } {
+    const prev = { ...this.config };
+    const result = this.load(jsonConfig);
+    this.config = prev;
+    return result;
+  }
+}
+
+// ─── Demo: wiring all six tools together ───
+
+async function demoAdvancedToolingSuite() {
+  console.log("═══ Advanced Loop Tooling Suite Demo ═══\n");
+
+  // 1. Scaffold a new loop
+  const generator = new LoopScaffoldGenerator();
+  const blueprint: LoopBlueprint = {
+    name: "CodeReviewAgent",
+    tools: ["read", "grep", "glob", "ask"],
+    hasHITL: true,
+    hasCheckpoint: true,
+    hasCritique: true,
+  };
+  const files = generator.generate(blueprint);
+  console.log(`Generated ${files.size} files for ${blueprint.name}`);
+  for (const [name] of files) {
+    console.log(`  - ${name}`);
+  }
+
+  // 2. Validate a configuration for the scaffolded loop
+  const schema: LoopConfigSchema = {
+    fields: [
+      { key: "maxSteps", type: "number", required: true, validator: (v) => (v as number) > 0 },
+      { key: "maxTokens", type: "number", required: true },
+      { key: "maxCostUsd", type: "number", required: true },
+      { key: "featureHITL", type: "boolean", required: false, defaultValue: false },
+    ],
+  };
+  const configMgr = new ConfigurationManager(schema);
+  const result = configMgr.load(JSON.stringify({ maxSteps: 50, maxTokens: 100000, maxCostUsd: 0.25 }));
+  console.log(`\nConfig valid: ${result.valid}, errors: ${result.errors.join(", ")}`);
+
+  // 3. Profile some simulated samples
+  const profiler = new LoopProfiler();
+  profiler.recordSample({ step: 1, phase: "plan", durationMs: 1200, tokens: 500, toolName: "read" });
+  profiler.recordSample({ step: 1, phase: "act", durationMs: 3400, tokens: 100, toolName: "bash" });
+  profiler.recordSample({ step: 2, phase: "plan", durationMs: 800, tokens: 400, toolName: "grep" });
+  profiler.recordSample({ step: 2, phase: "act", durationMs: 150, tokens: 50, toolName: "read" });
+  profiler.recordSample({ step: 2, phase: "critique", durationMs: 2200, tokens: 600, toolName: "ask" });
+
+  console.log("\nProfiler hot spots:");
+  for (const h of profiler.detectHotSpots(300)) {
+    console.log(`  ${h.phase}: avg ${h.avgDurationMs}ms (${h.count} samples)`);
+  }
+  console.log("\nBottlenecks (top 2):");
+  for (const b of profiler.findBottlenecks(2)) {
+    console.log(`  Step ${b.step} / ${b.phase}: ${b.durationMs}ms`);
+  }
+
+  // 4. Visualize trace data
+  const visualizer = new TraceVisualizer();
+  visualizer.addCycle(1, [{ phase: "plan", ms: 1200 }, { phase: "act", ms: 3400 }, { phase: "observe", ms: 200 }]);
+  visualizer.addCycle(2, [{ phase: "plan", ms: 800 }, { phase: "act", ms: 150 }, { phase: "critique", ms: 2200 }]);
+  const metrics = visualizer.cycleMetrics();
+  console.log("\nTrace cycle metrics:");
+  for (const m of metrics) {
+    console.log(`  Cycle ${m.step}: plan=${m.planMs}ms act=${m.actMs}ms critique=${m.critiqueMs}ms`);
+  }
+
+  // 5. Run the test harness
+  const harness = new LoopTestHarness();
+  harness.registerMock({ toolName: "read", argsMatcher: () => true, output: "file content" });
+  harness.addAssertion({
+    description: "Every read call returns content",
+    check: (h) => h.filter((e) => e.tool === "read").every((e) => e.result === "file content"),
+  });
+  await harness.callWithMocks("read", { path: "test.txt" }, 1);
+  const assertionResults = harness.runAssertions();
+  console.log("\nTest harness assertions:");
+  for (const a of assertionResults) {
+    console.log(`  ${a.passed ? "✓" : "✗"} ${a.description}`);
+  }
+}
+
+await demoAdvancedToolingSuite();
+```
+
+**Expected output:**
+```
+═══ Advanced Loop Tooling Suite Demo ═══
+
+Generated 3 files for CodeReviewAgent
+  - loop-config.yaml
+  - index.ts
+  - runtime.ts
+
+Config valid: true, errors: 
+
+Profiler hot spots:
+  plan: avg 1000ms (2 samples)
+  act: avg 1775ms (2 samples)
+  critique: avg 2200ms (1 samples)
+
+Bottlenecks (top 2):
+  Step 1 / act: 3400ms
+  Step 2 / critique: 2200ms
+
+Trace cycle metrics:
+  Cycle 1: plan=1200ms act=3400ms critique=0ms
+  Cycle 2: plan=800ms act=150ms critique=2200ms
+
+Test harness assertions:
+  ✓ Every read call returns content
+```
+
 ---
 
 ## Summary

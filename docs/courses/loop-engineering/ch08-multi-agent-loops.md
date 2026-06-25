@@ -943,6 +943,599 @@ console.log(JSON.stringify({
 }, null, 2));
 ```
 
+### Extended Implementation: Agent Orchestrator, Consensus Voter, Debate Engine, Supervisor Pool, and Communication Bus
+
+```typescript
+/// <reference types="node" />
+
+import { randomUUID } from "node:crypto";
+
+// ── Agent Task Types ───────────────────────────────────────────
+type AgentCapability = "code" | "review" | "research" | "security" | "design" | "analysis";
+
+interface AgentTask {
+  id: string;
+  description: string;
+  requiredCapabilities: AgentCapability[];
+  priority: number;
+  maxDurationMs: number;
+  payload: Record<string, unknown>;
+}
+
+interface AgentDescriptor {
+  id: string;
+  name: string;
+  capabilities: AgentCapability[];
+  load: number;
+  isAvailable: boolean;
+}
+
+interface TaskAssignment {
+  taskId: string;
+  agentId: string;
+  status: "assigned" | "in_progress" | "completed" | "failed";
+  result?: unknown;
+  error?: string;
+}
+
+// ── Agent Orchestrator ─────────────────────────────────────────
+class AgentOrchestrator {
+  private agents: Map<string, AgentDescriptor> = new Map();
+  private assignments: TaskAssignment[] = [];
+
+  registerAgent(agent: AgentDescriptor): void {
+    this.agents.set(agent.id, agent);
+  }
+
+  unregisterAgent(agentId: string): boolean {
+    return this.agents.delete(agentId);
+  }
+
+  get availableAgents(): AgentDescriptor[] {
+    return [...this.agents.values()].filter((a) => a.isAvailable);
+  }
+
+  /** Find the best agent for a task based on capabilities and load. */
+  private selectAgent(task: AgentTask): AgentDescriptor | null {
+    const candidates = this.availableAgents.filter((a) =>
+      task.requiredCapabilities.every((c) => a.capabilities.includes(c)),
+    );
+    if (candidates.length === 0) return null;
+    return candidates.sort((a, b) => a.load - b.load)[0]; // least loaded
+  }
+
+  /** Assign a task to the best available agent. */
+  async assignTask(task: AgentTask): Promise<TaskAssignment> {
+    const agent = this.selectAgent(task);
+    if (!agent) {
+      const failed: TaskAssignment = {
+        taskId: task.id,
+        agentId: "none",
+        status: "failed",
+        error: "No available agent with required capabilities",
+      };
+      this.assignments.push(failed);
+      return failed;
+    }
+
+    agent.isAvailable = false;
+    agent.load++;
+
+    const assignment: TaskAssignment = {
+      taskId: task.id,
+      agentId: agent.id,
+      status: "assigned",
+    };
+    this.assignments.push(assignment);
+    return assignment;
+  }
+
+  /** Report task result from an agent. */
+  reportCompletion(taskId: string, agentId: string, result: unknown): void {
+    const assignment = this.assignments.find(
+      (a) => a.taskId === taskId && a.agentId === agentId,
+    );
+    if (assignment) {
+      assignment.status = "completed";
+      assignment.result = result;
+    }
+    const agent = this.agents.get(agentId);
+    if (agent) {
+      agent.isAvailable = true;
+    }
+  }
+
+  reportFailure(taskId: string, agentId: string, error: string): void {
+    const assignment = this.assignments.find(
+      (a) => a.taskId === taskId && a.agentId === agentId,
+    );
+    if (assignment) {
+      assignment.status = "failed";
+      assignment.error = error;
+    }
+    const agent = this.agents.get(agentId);
+    if (agent) {
+      agent.isAvailable = true;
+    }
+  }
+
+  /** Distribute multiple tasks across the agent pool. */
+  async distribute(tasks: AgentTask[]): Promise<TaskAssignment[]> {
+    const results: TaskAssignment[] = [];
+    for (const task of tasks) {
+      results.push(await this.assignTask(task));
+    }
+    return results;
+  }
+
+  /** Get agent utilization stats. */
+  utilization(): { totalAgents: number; busyAgents: number; totalAssignments: number } {
+    return {
+      totalAgents: this.agents.size,
+      busyAgents: [...this.agents.values()].filter((a) => !a.isAvailable).length,
+      totalAssignments: this.assignments.length,
+    };
+  }
+}
+
+// ── Consensus Voter ────────────────────────────────────────────
+interface Vote {
+  agentId: string;
+  choice: string;
+  confidence: number; // 0-1
+  rationale: string;
+}
+
+interface ConsensusResult {
+  winner: string | null;
+  voteDistribution: Record<string, number>;
+  confidenceScore: number;
+  majorityReached: boolean;
+  tieBroken: boolean;
+}
+
+class ConsensusVoter {
+  private votes: Vote[] = [];
+
+  cast(vote: Vote): void {
+    this.votes.push(vote);
+  }
+
+  reset(): void {
+    this.votes = [];
+  }
+
+  /** Calculate the consensus winner. */
+  tally(threshold: number = 0.5): ConsensusResult {
+    if (this.votes.length === 0) {
+      return { winner: null, voteDistribution: {}, confidenceScore: 0, majorityReached: false, tieBroken: false };
+    }
+
+    // Count weighted votes (by confidence)
+    const distribution: Record<string, number> = {};
+    let totalWeight = 0;
+    for (const v of this.votes) {
+      distribution[v.choice] = (distribution[v.choice] ?? 0) + v.confidence;
+      totalWeight += v.confidence;
+    }
+
+    // Find top two choices
+    const sorted = Object.entries(distribution).sort((a, b) => b[1] - a[1]);
+    const winner = sorted[0][0];
+    const winnerWeight = sorted[0][1];
+    const runnerUpWeight = sorted[1]?.[1] ?? 0;
+
+    const majorityReached = winnerWeight / totalWeight >= threshold;
+    const tieBroken = Math.abs(winnerWeight - runnerUpWeight) < 0.01;
+
+    return {
+      winner: majorityReached ? winner : null,
+      voteDistribution: distribution,
+      confidenceScore: totalWeight > 0 ? winnerWeight / totalWeight : 0,
+      majorityReached,
+      tieBroken,
+    };
+  }
+
+  /** Weighted consensus where each agent has a vote weight. */
+  tallyWeighted(weights: Map<string, number>, threshold: number = 0.5): ConsensusResult {
+    if (this.votes.length === 0) {
+      return { winner: null, voteDistribution: {}, confidenceScore: 0, majorityReached: false, tieBroken: false };
+    }
+
+    const distribution: Record<string, number> = {};
+    let totalWeight = 0;
+    for (const v of this.votes) {
+      const w = (weights.get(v.agentId) ?? 1) * v.confidence;
+      distribution[v.choice] = (distribution[v.choice] ?? 0) + w;
+      totalWeight += w;
+    }
+
+    const sorted = Object.entries(distribution).sort((a, b) => b[1] - a[1]);
+    const winner = sorted[0][0];
+    const winnerWeight = sorted[0][1];
+
+    return {
+      winner: winnerWeight / totalWeight >= threshold ? winner : null,
+      voteDistribution: distribution,
+      confidenceScore: totalWeight > 0 ? winnerWeight / totalWeight : 0,
+      majorityReached: winnerWeight / totalWeight >= threshold,
+      tieBroken: sorted.length > 1 && Math.abs(sorted[0][1] - sorted[1][1]) < 0.01,
+    };
+  }
+}
+
+// ── Debate Engine ──────────────────────────────────────────────
+type ArgumentFn = (topic: string, opposingPoints: string[]) => Promise<string>;
+type JudgeFn = (arguments_: string[], topic: string) => Promise<{ winner: number; scores: number[]; rationale: string }>;
+
+interface DebateRound {
+  roundNumber: number;
+  arguments: string[];
+  judgeScores?: number[];
+}
+
+class DebateEngine {
+  private rounds: DebateRound[] = [];
+  private readonly maxRounds: number;
+
+  constructor(
+    private proposer: ArgumentFn,
+    private opponent: ArgumentFn,
+    private judge: JudgeFn,
+    maxRounds: number = 3,
+  ) {
+    this.maxRounds = maxRounds;
+  }
+
+  get roundHistory(): DebateRound[] {
+    return [...this.rounds];
+  }
+
+  /** Run a full debate with multiple rounds. */
+  async debate(topic: string): Promise<{
+    winner: number;
+    finalScore: number;
+    rounds: DebateRound[];
+    judgeRationale: string;
+  }> {
+    let proposerPoints: string[] = [];
+    let opponentPoints: string[] = [];
+
+    for (let round = 0; round < this.maxRounds; round++) {
+      // Proposer argues
+      const propArg = await this.proposer(topic, opponentPoints);
+      proposerPoints.push(propArg);
+
+      // Opponent argues
+      const oppArg = await this.opponent(topic, proposerPoints);
+      opponentPoints.push(oppArg);
+
+      const roundArgs = [propArg, oppArg];
+      const judgeResult = await this.judge(roundArgs, topic);
+
+      this.rounds.push({
+        roundNumber: round + 1,
+        arguments: roundArgs,
+        judgeScores: judgeResult.scores,
+      });
+    }
+
+    // Final judgment across all rounds
+    const allArgs = this.rounds.flatMap((r) => r.arguments);
+    const finalJudgment = await this.judge(allArgs, topic);
+
+    return {
+      winner: finalJudgment.winner,
+      finalScore: finalJudgment.scores[finalJudgment.winner] ?? 0,
+      rounds: this.rounds,
+      judgeRationale: finalJudgment.rationale,
+    };
+  }
+}
+
+// ── Supervisor Worker Pool ─────────────────────────────────────
+interface WorkerPoolConfig {
+  minWorkers: number;
+  maxWorkers: number;
+  workerTimeoutMs: number;
+  healthCheckIntervalMs: number;
+}
+
+type WorkerFn = (task: string) => Promise<string>;
+
+interface PoolWorker {
+  id: string;
+  fn: WorkerFn;
+  busy: boolean;
+  lastHealthCheck: number;
+  healthy: boolean;
+  tasksCompleted: number;
+}
+
+class SupervisorWorkerPool {
+  private workers: Map<string, PoolWorker> = new Map();
+  private taskQueue: Array<{ id: string; task: string; resolve: (v: string) => void; reject: (e: Error) => void }> = [];
+  private healthTimer: ReturnType<typeof setInterval> | null = null;
+
+  constructor(
+    private config: WorkerPoolConfig,
+    private workerFactory: () => WorkerFn,
+  ) {
+    this.initialize();
+  }
+
+  private initialize(): void {
+    for (let i = 0; i < this.config.minWorkers; i++) {
+      this.addWorker();
+    }
+    this.healthTimer = setInterval(() => this.healthCheck(), this.config.healthCheckIntervalMs);
+  }
+
+  private addWorker(): PoolWorker {
+    const worker: PoolWorker = {
+      id: randomUUID().slice(0, 8),
+      fn: this.workerFactory(),
+      busy: false,
+      lastHealthCheck: Date.now(),
+      healthy: true,
+      tasksCompleted: 0,
+    };
+    this.workers.set(worker.id, worker);
+    return worker;
+  }
+
+  private healthCheck(): void {
+    for (const [id, worker] of this.workers) {
+      const elapsed = Date.now() - worker.lastHealthCheck;
+      if (elapsed > this.config.healthCheckIntervalMs * 3) {
+        worker.healthy = false;
+        this.workers.delete(id);
+        // Replace unhealthy worker
+        if (this.workers.size < this.config.maxWorkers) {
+          this.addWorker();
+        }
+      }
+    }
+    // Process queued tasks
+    this.dispatchQueue();
+  }
+
+  private get availableWorker(): PoolWorker | null {
+    return [...this.workers.values()].find((w) => !w.busy && w.healthy) ?? null;
+  }
+
+  private async dispatchQueue(): Promise<void> {
+    while (this.taskQueue.length > 0 && this.availableWorker) {
+      const task = this.taskQueue.shift()!;
+      const worker = this.availableWorker!;
+      this.executeTask(worker, task).catch(task.reject);
+    }
+  }
+
+  private async executeTask(
+    worker: PoolWorker,
+    task: { id: string; task: string; resolve: (v: string) => void; reject: (e: Error) => void },
+  ): Promise<void> {
+    worker.busy = true;
+    try {
+      const result = await Promise.race([
+        worker.fn(task.task),
+        new Promise<string>((_, reject) =>
+          setTimeout(() => reject(new Error("Worker timeout")), this.config.workerTimeoutMs),
+        ),
+      ]);
+      worker.tasksCompleted++;
+      task.resolve(result);
+    } catch (err) {
+      worker.healthy = false;
+      this.workers.delete(worker.id);
+      if (this.workers.size < this.config.maxWorkers) {
+        this.addWorker();
+      }
+      task.reject(err as Error);
+    } finally {
+      worker.busy = false;
+      worker.lastHealthCheck = Date.now();
+    }
+  }
+
+  /** Submit a task to the pool. */
+  async submit(task: string): Promise<string> {
+    return new Promise((resolve, reject) => {
+      this.taskQueue.push({ id: randomUUID(), task, resolve, reject });
+      this.dispatchQueue();
+    });
+  }
+
+  /** Submit multiple tasks and aggregate results. */
+  async batchSubmit(tasks: string[]): Promise<Array<{ task: string; result?: string; error?: string }>> {
+    const results = await Promise.allSettled(tasks.map((t) => this.submit(t)));
+    return tasks.map((task, i) => {
+      const r = results[i];
+      return { task, result: r.status === "fulfilled" ? r.value : undefined, error: r.status === "rejected" ? (r.reason as Error).message : undefined };
+    });
+  }
+
+  get stats(): { totalWorkers: number; busyWorkers: number; queuedTasks: number; tasksCompleted: number } {
+    const w = [...this.workers.values()];
+    return {
+      totalWorkers: w.length,
+      busyWorkers: w.filter((w) => w.busy).length,
+      queuedTasks: this.taskQueue.length,
+      tasksCompleted: w.reduce((s, w) => s + w.tasksCompleted, 0),
+    };
+  }
+
+  shutdown(): void {
+    if (this.healthTimer) clearInterval(this.healthTimer);
+    this.workers.clear();
+    this.taskQueue = [];
+  }
+}
+
+// ── Agent Communication Bus (Pub/Sub) ──────────────────────────
+interface Message {
+  id: string;
+  topic: string;
+  sender: string;
+  payload: unknown;
+  timestamp: number;
+  ttlMs: number;
+}
+
+type MessageHandler = (message: Message) => Promise<void>;
+
+interface Subscription {
+  id: string;
+  topic: string;
+  handler: MessageHandler;
+  filter?: (message: Message) => boolean;
+}
+
+class AgentCommunicationBus {
+  private subscriptions: Map<string, Subscription[]> = new Map();
+  private messageHistory: Message[] = [];
+  private readonly maxHistory: number;
+
+  constructor(maxHistory: number = 1000) {
+    this.maxHistory = maxHistory;
+  }
+
+  /** Subscribe to a topic. */
+  subscribe(topic: string, handler: MessageHandler, filter?: (message: Message) => boolean): string {
+    const id = randomUUID();
+    const subscription: Subscription = { id, topic, handler, filter };
+    const existing = this.subscriptions.get(topic) ?? [];
+    existing.push(subscription);
+    this.subscriptions.set(topic, existing);
+    return id;
+  }
+
+  /** Unsubscribe by subscription ID. */
+  unsubscribe(subscriptionId: string): boolean {
+    for (const [topic, subs] of this.subscriptions) {
+      const filtered = subs.filter((s) => s.id !== subscriptionId);
+      if (filtered.length !== subs.length) {
+        if (filtered.length === 0) {
+          this.subscriptions.delete(topic);
+        } else {
+          this.subscriptions.set(topic, filtered);
+        }
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /** Publish a message to a topic. */
+  async publish(topic: string, sender: string, payload: unknown, ttlMs: number = 30000): Promise<void> {
+    const message: Message = {
+      id: randomUUID(),
+      topic,
+      sender,
+      payload,
+      timestamp: Date.now(),
+      ttlMs,
+    };
+    this.messageHistory.push(message);
+    if (this.messageHistory.length > this.maxHistory) {
+      this.messageHistory = this.messageHistory.slice(-this.maxHistory);
+    }
+
+    const subs = this.subscriptions.get(topic) ?? [];
+    const wildcardSubs = this.subscriptions.get("*") ?? [];
+
+    const deliveries = [...subs, ...wildcardSubs]
+      .filter((s) => !s.filter || s.filter(message));
+
+    await Promise.allSettled(deliveries.map((s) => s.handler(message)));
+  }
+
+  /** Get recent messages on a topic. */
+  getMessages(topic: string, sinceMs?: number): Message[] {
+    return this.messageHistory.filter((m) => {
+      if (m.topic !== topic) return false;
+      if (sinceMs && m.timestamp < sinceMs) return false;
+      return Date.now() - m.timestamp < m.ttlMs;
+    });
+  }
+
+  /** Get all active subscriptions. */
+  activeSubscriptions(): number {
+    let count = 0;
+    for (const subs of this.subscriptions.values()) {
+      count += subs.length;
+    }
+    return count;
+  }
+
+  /** Clear all expired messages. */
+  pruneExpired(): number {
+    const before = this.messageHistory.length;
+    this.messageHistory = this.messageHistory.filter((m) => Date.now() - m.timestamp < m.ttlMs);
+    return before - this.messageHistory.length;
+  }
+}
+
+// ── Usage ──────────────────────────────────────────────────────
+async function main() {
+  // AgentOrchestrator demo
+  const orchestrator = new AgentOrchestrator();
+  orchestrator.registerAgent({ id: "agent_1", name: "Coder", capabilities: ["code", "analysis"], load: 0, isAvailable: true });
+  orchestrator.registerAgent({ id: "agent_2", name: "Reviewer", capabilities: ["review", "security"], load: 0, isAvailable: true });
+  const tasks: AgentTask[] = [
+    { id: "t1", description: "Write validator", requiredCapabilities: ["code"], priority: 1, maxDurationMs: 5000, payload: {} },
+    { id: "t2", description: "Security audit", requiredCapabilities: ["security"], priority: 2, maxDurationMs: 5000, payload: {} },
+  ];
+  const assignments = await orchestrator.distribute(tasks);
+  console.log("Orchestrator assignments:", assignments.map((a) => `${a.taskId} -> ${a.agentId}`));
+
+  // ConsensusVoter demo
+  const voter = new ConsensusVoter();
+  voter.cast({ agentId: "a1", choice: "approve", confidence: 0.9, rationale: "Good design" });
+  voter.cast({ agentId: "a2", choice: "approve", confidence: 0.7, rationale: "Meets requirements" });
+  voter.cast({ agentId: "a3", choice: "reject", confidence: 0.4, rationale: "Security concerns" });
+  const consensus = voter.tally(0.5);
+  console.log("Consensus winner:", consensus.winner, "confidence:", consensus.confidenceScore.toFixed(2));
+
+  // Weighted consensus
+  const weights = new Map([["a1", 3], ["a2", 1], ["a3", 2]]);
+  const weighted = voter.tallyWeighted(weights);
+  console.log("Weighted consensus winner:", weighted.winner);
+
+  // DebateEngine demo
+  const debate = new DebateEngine(
+    async (topic, _opposing) => `Proposal for ${topic}: implement with layered architecture`,
+    async (topic, _proposal) => `Counterpoint for ${topic}: layered adds unnecessary complexity`,
+    async (args, _topic) => ({ winner: 0, scores: [0.8, 0.6], rationale: "Proposer had stronger arguments" }),
+  );
+  const debateResult = await debate.debate("Should we use microservices?");
+  console.log("Debate winner:", debateResult.winner, "score:", debateResult.finalScore);
+
+  // SupervisorWorkerPool demo
+  const pool = new SupervisorWorkerPool(
+    { minWorkers: 2, maxWorkers: 5, workerTimeoutMs: 1000, healthCheckIntervalMs: 5000 },
+    () => async (task) => `Processed: ${task}`,
+  );
+  const poolResults = await pool.batchSubmit(["task1", "task2", "task3"]);
+  console.log("Pool results:", poolResults.map((r) => r.result));
+  console.log("Pool stats:", pool.stats);
+  pool.shutdown();
+
+  // AgentCommunicationBus demo
+  const bus = new AgentCommunicationBus();
+  bus.subscribe("task:complete", async (msg) => {
+    console.log(`Bus received: ${msg.sender} completed task`);
+  });
+  await bus.publish("task:complete", "agent_1", { taskId: "t1", result: "done" });
+  console.log("Bus subscriptions:", bus.activeSubscriptions());
+  console.log("Bus messages in topic:", bus.getMessages("task:complete").length);
+}
+
+main();
+```
+
 ---
 
 ## 3. Summary

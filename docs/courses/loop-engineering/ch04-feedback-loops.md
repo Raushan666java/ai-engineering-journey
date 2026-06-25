@@ -753,6 +753,430 @@ await main();
 
 ---
 
+### Extended Implementation: Feedback Controller, Q-Learning Loop, Adaptive Threshold, and Multi-Signal Fusion
+
+This section builds advanced feedback infrastructure: a generic `FeedbackController` with pluggable sensor/actuator/controller components, a `ReinforcementFeedbackLoop` using Q-learning update rules, an `AdaptiveThresholdDetector` with moving window statistics, a `MultiSignalFusion` engine combining multiple feedback signals, a Smith predictor for delay compensation, and saturation/anti-windup protection.
+
+```typescript
+// ch04-advanced-feedback.ts
+// bun run ch04-advanced-feedback.ts
+
+// ─── Generic Feedback Controller ───────────────────────────────────────
+
+interface Sensor {
+  read(): number;
+}
+
+interface Actuator {
+  apply(control: number): void;
+}
+
+interface Controller {
+  compute(setpoint: number, measurement: number): number;
+  reset(): void;
+}
+
+class FeedbackController {
+  private sensor: Sensor;
+  private actuator: Actuator;
+  private controller: Controller;
+  private setpoint: number;
+  private trace: Array<{ cycle: number; measurement: number; control: number; error: number }> = [];
+  private cycle = 0;
+
+  constructor(sensor: Sensor, actuator: Actuator, controller: Controller, setpoint: number) {
+    this.sensor = sensor;
+    this.actuator = actuator;
+    this.controller = controller;
+    this.setpoint = setpoint;
+  }
+
+  async run(cycles: number): Promise<typeof this.trace> {
+    for (let i = 0; i < cycles; i++) {
+      this.cycle++;
+      const measurement = this.sensor.read();
+      const error = this.setpoint - measurement;
+      const control = this.controller.compute(this.setpoint, measurement);
+      this.actuator.apply(control);
+      this.trace.push({ cycle: this.cycle, measurement, control, error });
+    }
+    return this.trace;
+  }
+
+  changeSetpoint(newSetpoint: number): void {
+    this.setpoint = newSetpoint;
+  }
+
+  reset(): void {
+    this.controller.reset();
+    this.trace = [];
+    this.cycle = 0;
+  }
+
+  getTrace(): typeof this.trace {
+    return [...this.trace];
+  }
+}
+
+// ─── PID Controller (imported pattern, re-implemented for feedback context) ───
+
+class PIDFeedbackController implements Controller {
+  private integral = 0;
+  private prevError = 0;
+  private outputMin: number;
+  private outputMax: number;
+
+  constructor(
+    private kp: number,
+    private ki: number,
+    private kd: number,
+    private dt: number,
+    limits?: { min: number; max: number }
+  ) {
+    this.outputMin = limits?.min ?? -Infinity;
+    this.outputMax = limits?.max ?? Infinity;
+  }
+
+  compute(setpoint: number, measurement: number): number {
+    const error = setpoint - measurement;
+    const proportional = this.kp * error;
+    this.integral += this.ki * error * this.dt;
+    this.integral = Math.max(this.outputMin, Math.min(this.outputMax, this.integral));
+    const derivative = this.kd * ((error - this.prevError) / (this.dt || 1e-6));
+    let output = proportional + this.integral + derivative;
+    output = Math.max(this.outputMin, Math.min(this.outputMax, output));
+    this.prevError = error;
+    return output;
+  }
+
+  reset(): void {
+    this.integral = 0;
+    this.prevError = 0;
+  }
+}
+
+// ─── Reinforcement Feedback Loop (Q-Learning Update) ───────────────────
+
+interface QLearningConfig {
+  learningRate: number;
+  discountFactor: number;
+  explorationRate: number;
+  stateCount: number;
+  actionCount: number;
+}
+
+class ReinforcementFeedbackLoop {
+  private qTable: number[][];
+  private config: QLearningConfig;
+  private episodeRewards: number[] = [];
+  private currentEpisode = 0;
+
+  constructor(config: QLearningConfig) {
+    this.config = config;
+    this.qTable = Array.from({ length: config.stateCount }, () =>
+      Array.from({ length: config.actionCount }, () => Math.random() * 0.1)
+    );
+  }
+
+  selectAction(state: number): number {
+    if (Math.random() < this.config.explorationRate) {
+      return Math.floor(Math.random() * this.config.actionCount);
+    }
+    return this.qTable[state].indexOf(Math.max(...this.qTable[state]));
+  }
+
+  update(state: number, action: number, reward: number, nextState: number): void {
+    const { learningRate: alpha, discountFactor: gamma } = this.config;
+    const currentQ = this.qTable[state][action];
+    const maxNextQ = Math.max(...this.qTable[nextState]);
+    this.qTable[state][action] = currentQ + alpha * (reward + gamma * maxNextQ - currentQ);
+  }
+
+  runEpisode(
+    env: (state: number, action: number) => { nextState: number; reward: number; done: boolean },
+    maxSteps: number
+  ): { totalReward: number; steps: number } {
+    this.currentEpisode++;
+    let state = 0;
+    let totalReward = 0;
+    let steps = 0;
+
+    for (let i = 0; i < maxSteps; i++) {
+      const action = this.selectAction(state);
+      const { nextState, reward, done } = env(state, action);
+      this.update(state, action, reward, nextState);
+      totalReward += reward;
+      state = nextState;
+      steps++;
+      if (done) break;
+    }
+
+    this.episodeRewards.push(totalReward);
+
+    if (this.currentEpisode % 100 === 0) {
+      this.config.explorationRate = Math.max(0.01, this.config.explorationRate * 0.95);
+    }
+
+    return { totalReward, steps };
+  }
+
+  getQTable(): number[][] {
+    return this.qTable.map((row) => [...row]);
+  }
+
+  getAverageReward(lastN: number = 10): number {
+    const recent = this.episodeRewards.slice(-lastN);
+    return recent.reduce((a, b) => a + b, 0) / (recent.length || 1);
+  }
+}
+
+// ─── Adaptive Threshold Detector ────────────────────────────────────────
+
+class AdaptiveThresholdDetector {
+  private window: number[] = [];
+  private readonly windowSize: number;
+  private readonly multiplier: number;
+  private threshold: number;
+
+  constructor(windowSize: number = 20, multiplier: number = 2.0) {
+    this.windowSize = windowSize;
+    this.multiplier = multiplier;
+    this.threshold = 0;
+  }
+
+  update(value: number): void {
+    this.window.push(value);
+    if (this.window.length > this.windowSize) {
+      this.window.shift();
+    }
+    if (this.window.length >= 5) {
+      const mean = this.window.reduce((a, b) => a + b, 0) / this.window.length;
+      const variance = this.window.reduce((sum, v) => sum + (v - mean) ** 2, 0) / this.window.length;
+      const stdDev = Math.sqrt(variance);
+      this.threshold = mean + this.multiplier * stdDev;
+    }
+  }
+
+  isAnomalous(value: number): boolean {
+    return this.window.length >= 5 && Math.abs(value) > this.threshold;
+  }
+
+  getThreshold(): number {
+    return this.threshold;
+  }
+
+  getStats(): { mean: number; stdDev: number; count: number } {
+    if (this.window.length === 0) return { mean: 0, stdDev: 0, count: 0 };
+    const mean = this.window.reduce((a, b) => a + b, 0) / this.window.length;
+    const variance = this.window.reduce((sum, v) => sum + (v - mean) ** 2, 0) / this.window.length;
+    return { mean, stdDev: Math.sqrt(variance), count: this.window.length };
+  }
+}
+
+// ─── Multi-Signal Fusion ───────────────────────────────────────────────
+
+type FusionMethod = "weighted" | "median" | "min" | "max" | "product";
+
+interface SignalSource {
+  name: string;
+  weight: number;
+  read: () => number;
+}
+
+class MultiSignalFusion {
+  private sources: SignalSource[] = [];
+
+  addSource(source: SignalSource): void {
+    this.sources.push(source);
+  }
+
+  fuse(method: FusionMethod = "weighted"): { value: number; contributions: Record<string, number> } {
+    const readings = this.sources.map((s) => ({ name: s.name, value: s.read(), weight: s.weight }));
+    const contributions: Record<string, number> = {};
+    readings.forEach((r) => { contributions[r.name] = r.value; });
+
+    let value: number;
+    switch (method) {
+      case "weighted": {
+        const totalWeight = readings.reduce((s, r) => s + r.weight, 0);
+        value = readings.reduce((s, r) => s + r.value * r.weight, 0) / (totalWeight || 1);
+        break;
+      }
+      case "median": {
+        const sorted = [...readings].sort((a, b) => a.value - b.value);
+        value = sorted[Math.floor(sorted.length / 2)].value;
+        break;
+      }
+      case "min":
+        value = Math.min(...readings.map((r) => r.value));
+        break;
+      case "max":
+        value = Math.max(...readings.map((r) => r.value));
+        break;
+      case "product":
+        value = readings.reduce((p, r) => p * Math.max(r.value, 0.01), 1);
+        break;
+      default:
+        value = readings.reduce((s, r) => s + r.value, 0) / readings.length;
+    }
+
+    return { value, contributions };
+  }
+
+  listSources(): string[] {
+    return this.sources.map((s) => s.name);
+  }
+
+  adjustWeight(name: string, newWeight: number): void {
+    const source = this.sources.find((s) => s.name === name);
+    if (source) source.weight = Math.max(0, newWeight);
+  }
+}
+
+// ─── Feedback Delay Compensator (Smith Predictor) ──────────────────────
+
+class SmithPredictor {
+  private delayBuffer: number[] = [];
+  private modelOutput: number = 0;
+  private readonly delay: number;
+  private readonly modelGain: number;
+  private readonly modelTimeConstant: number;
+  private readonly dt: number;
+
+  constructor(delay: number, modelGain: number, modelTimeConstant: number, dt: number) {
+    this.delay = delay;
+    this.modelGain = modelGain;
+    this.modelTimeConstant = modelTimeConstant;
+    this.dt = dt;
+    this.delayBuffer = new Array(Math.max(1, Math.round(delay / dt))).fill(0);
+  }
+
+  predict(controlSignal: number, measuredOutput: number): number {
+    const alpha = this.dt / (this.modelTimeConstant + this.dt);
+    this.modelOutput = (1 - alpha) * this.modelOutput + alpha * this.modelGain * controlSignal;
+    this.delayBuffer.push(this.modelOutput);
+    const delayedOutput = this.delayBuffer.shift() ?? 0;
+    const predictedError = measuredOutput - delayedOutput;
+    return this.modelOutput + predictedError;
+  }
+
+  reset(): void {
+    this.delayBuffer = new Array(this.delayBuffer.length).fill(0);
+    this.modelOutput = 0;
+  }
+}
+
+// ─── Saturation / Anti-Windup Protection ───────────────────────────────
+
+class AntiWindupProtector {
+  private accumulatedError = 0;
+  private readonly limit: number;
+  private readonly decayRate: number;
+
+  constructor(integralLimit: number = 10, decayRate: number = 0.1) {
+    this.limit = integralLimit;
+    this.decayRate = decayRate;
+  }
+
+  update(error: number, controlOutput: number, isSaturated: boolean): number {
+    if (isSaturated) {
+      this.accumulatedError = (1 - this.decayRate) * this.accumulatedError;
+    } else {
+      this.accumulatedError += error * this.decayRate;
+    }
+    this.accumulatedError = Math.max(-this.limit, Math.min(this.limit, this.accumulatedError));
+    return controlOutput + this.accumulatedError;
+  }
+
+  clamp(value: number, min: number, max: number): { value: number; saturated: boolean } {
+    const saturated = value < min || value > max;
+    return { value: Math.max(min, Math.min(max, value)), saturated };
+  }
+
+  reset(): void {
+    this.accumulatedError = 0;
+  }
+}
+
+// ─── Demo ──────────────────────────────────────────────────────────────
+
+async function main() {
+  console.log("=== Extended Feedback Demo ===\n");
+
+  // 1. Feedback Controller with PID
+  let plantOutput = 0;
+  const sensor: Sensor = { read: () => plantOutput + (Math.random() - 0.5) * 0.1 };
+  const actuator: Actuator = { apply: (control) => { plantOutput += control * 0.1 - plantOutput * 0.05; } };
+  const pid = new PIDFeedbackController(2.0, 0.3, 0.05, 0.1, { min: -50, max: 50 });
+  const fc = new FeedbackController(sensor, actuator, pid, 100);
+  const trace = await fc.run(30);
+  const last = trace[trace.length - 1];
+  console.log(`Feedback Controller: ${trace.length} cycles, final error=${last.error.toFixed(3)}`);
+
+  // 2. Reinforcement Feedback Loop
+  const rl = new ReinforcementFeedbackLoop({
+    learningRate: 0.1, discountFactor: 0.9, explorationRate: 0.5,
+    stateCount: 5, actionCount: 3,
+  });
+  for (let ep = 0; ep < 200; ep++) {
+    rl.runEpisode((state, action) => {
+      const reward = action === 1 ? 1 : -0.1;
+      const nextState = Math.min(4, state + (action === 1 ? 1 : -1));
+      return { nextState: Math.max(0, nextState), reward, done: nextState >= 4 };
+    }, 20);
+  }
+  console.log(`\nQ-Learning: avg reward (last 10) = ${rl.getAverageReward(10).toFixed(3)}`);
+  const qTable = rl.getQTable();
+  console.log(`Q-table max value: ${Math.max(...qTable.flat()).toFixed(3)}`);
+
+  // 3. Adaptive Threshold Detector
+  const detector = new AdaptiveThresholdDetector(15, 2.5);
+  const values = [1, 1.2, 0.8, 1.1, 0.9, 1.3, 1.0, 0.7, 1.1, 1.2, 5.0, 1.0, 0.9];
+  console.log("\nAdaptive Threshold:");
+  for (const v of values) {
+    detector.update(v);
+    const anomalous = detector.isAnomalous(v) ? " ⚠ ANOMALOUS" : "";
+    if (anomalous) console.log(`  value=${v.toFixed(1)} threshold=${detector.getThreshold().toFixed(2)}${anomalous}`);
+  }
+
+  // 4. Multi-Signal Fusion
+  const fusion = new MultiSignalFusion();
+  fusion.addSource({ name: "accuracy", weight: 0.5, read: () => 0.85 + Math.random() * 0.1 });
+  fusion.addSource({ name: "latency", weight: 0.3, read: () => 0.7 + Math.random() * 0.2 });
+  fusion.addSource({ name: "coverage", weight: 0.2, read: () => 0.9 + Math.random() * 0.05 });
+  const fused = fusion.fuse("weighted");
+  console.log(`\nMulti-Signal Fusion (weighted): ${fused.value.toFixed(3)}`);
+  console.log(`  Contributions: ${JSON.stringify(fused.contributions)}`);
+
+  // 5. Smith Predictor
+  const smith = new SmithPredictor(5, 1.0, 2.0, 0.5);
+  const predicted = smith.predict(10, 2.5);
+  console.log(`\nSmith Predictor: predicted_output=${predicted.toFixed(3)}`);
+
+  // 6. Anti-Windup Protection
+  const aw = new AntiWindupProtector(5, 0.2);
+  let ctrlOutput = 0;
+  for (let i = 0; i < 10; i++) {
+    const { value, saturated } = aw.clamp(ctrlOutput, -10, 10);
+    ctrlOutput = aw.update(2.0, value, saturated);
+  }
+  console.log(`\nAnti-Windup: output=${ctrlOutput.toFixed(3)}`);
+}
+
+await main();
+```
+
+**Key concepts demonstrated:**
+- **FeedbackController** separates sensor, actuator, and controller concerns — any component can be swapped independently
+- **PIDFeedbackController** implements proportional-integral-derivative control with integral clamping for anti-windup
+- **ReinforcementFeedbackLoop** uses Q-learning update rules (Bellman equation) to learn optimal actions from delayed rewards
+- **AdaptiveThresholdDetector** computes a moving-window mean and standard deviation, flagging values beyond `mean + k·σ`
+- **MultiSignalFusion** combines signals via weighted, median, min, max, or product fusion strategies
+- **SmithPredictor** compensates for known feedback delays by modeling the plant and subtracting the delayed component
+- **AntiWindupProtector** prevents integral windup by decaying the accumulated error when the actuator is saturated
+
+---
+
 ## Summary
 
 - **Eval-driven loops** are the general-purpose feedback mechanism: generate, score against explicit criteria, adjust parameters, and retry until quality converges.

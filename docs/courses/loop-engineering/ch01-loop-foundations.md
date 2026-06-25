@@ -614,6 +614,470 @@ This maps directly to agent loops: a low-gain agent is cautious and takes many c
 
 ---
 
+### Extended Implementation: Loop Gain Analyzer and PID Controller Suite
+
+This section builds a comprehensive control-theory toolkit: a gain/phase analyzer with Bode-plot data generation, a Barkhausen criterion checker, a configurable PID controller, an adaptive gain scheduler, a discrete-time transfer function simulator, and a stability margin calculator.
+
+```typescript
+// ch01-advanced-control-suite.ts
+// bun run ch01-advanced-control-suite.ts
+
+// ─── Bode Plot Data Generator ──────────────────────────────────────────
+
+interface BodePoint {
+  frequencyRad: number;
+  magnitudeDb: number;
+  phaseDeg: number;
+}
+
+class BodeAnalyzer {
+  generateData(
+    frequencies: number[],
+    transferFunction: (omega: number) => { magnitude: number; phase: number }
+  ): BodePoint[] {
+    return frequencies.map((omega) => {
+      const { magnitude, phase } = transferFunction(omega);
+      return {
+        frequencyRad: omega,
+        magnitudeDb: 20 * Math.log10(Math.max(magnitude, 1e-10)),
+        phaseDeg: (phase * 180) / Math.PI,
+      };
+    });
+  }
+
+  findCrossoverFrequencies(data: BodePoint[]): {
+    gainCrossoverRad: number | null;
+    phaseCrossoverRad: number | null;
+  } {
+    let gainCrossover: number | null = null;
+    let phaseCrossover: number | null = null;
+
+    for (let i = 1; i < data.length; i++) {
+      if (data[i - 1].magnitudeDb >= 0 && data[i].magnitudeDb <= 0) {
+        gainCrossover = data[i].frequencyRad;
+      }
+      if (
+        Math.abs(Math.abs(data[i - 1].phaseDeg) - 180) <= 5 ||
+        Math.abs(Math.abs(data[i].phaseDeg) - 180) <= 5
+      ) {
+        phaseCrossover = data[i].frequencyRad;
+      }
+    }
+    return { gainCrossoverRad: gainCrossover, phaseCrossoverRad: phaseCrossover };
+  }
+
+  computeGainMargin(data: BodePoint[]): number | null {
+    for (const point of data) {
+      if (Math.abs(Math.abs(point.phaseDeg) - 180) <= 1) {
+        return -point.magnitudeDb;
+      }
+    }
+    return null;
+  }
+
+  computePhaseMargin(data: BodePoint[]): number | null {
+    for (const point of data) {
+      if (Math.abs(point.magnitudeDb) <= 0.5) {
+        return 180 - Math.abs(point.phaseDeg);
+      }
+    }
+    return null;
+  }
+}
+
+// ─── Barkhausen Criterion Checker ──────────────────────────────────────
+
+interface BarkhausenResult {
+  oscillates: boolean;
+  gainCondition: boolean;
+  phaseCondition: boolean;
+  loopGain: number;
+  loopPhaseDeg: number;
+}
+
+class BarkhausenChecker {
+  check(loopGain: number, loopPhaseDeg: number): BarkhausenResult {
+    const gainCondition = loopGain >= 1.0;
+    const phaseCondition = Math.abs(loopPhaseDeg % 360) < 5;
+    return {
+      oscillates: gainCondition && phaseCondition,
+      gainCondition,
+      phaseCondition,
+      loopGain,
+      loopPhaseDeg,
+    };
+  }
+
+  isMarginallyStable(loopGain: number, loopPhaseDeg: number): boolean {
+    return Math.abs(loopGain - 1.0) < 0.05 && Math.abs(loopPhaseDeg % 360) < 10;
+  }
+
+  recommendedGain(phaseDeg: number, targetMarginDeg: number = 45): number {
+    const phaseMargin = 180 - Math.abs(phaseDeg % 360);
+    if (phaseMargin < targetMarginDeg) {
+      const safetyFactor = phaseMargin / targetMarginDeg;
+      return Math.max(0.1, 0.5 * safetyFactor);
+    }
+    return 0.7;
+  }
+}
+
+// ─── PID Controller Simulator ──────────────────────────────────────────
+
+interface PIDConfig {
+  kp: number;
+  ki: number;
+  kd: number;
+  dt: number;
+  outputMin: number;
+  outputMax: number;
+}
+
+interface PIDState {
+  proportional: number;
+  integral: number;
+  derivative: number;
+  output: number;
+  setpoint: number;
+  measurement: number;
+}
+
+class PIDController {
+  private config: PIDConfig;
+  private integral = 0;
+  private prevError = 0;
+
+  constructor(config: PIDConfig) {
+    this.config = config;
+  }
+
+  update(setpoint: number, measurement: number): PIDState {
+    const { kp, ki, kd, dt, outputMin, outputMax } = this.config;
+    const error = setpoint - measurement;
+    const proportional = kp * error;
+    this.integral += ki * error * dt;
+    this.integral = Math.max(outputMin, Math.min(outputMax, this.integral));
+    const derivative = kd * ((error - this.prevError) / (dt || 1e-6));
+    let output = proportional + this.integral + derivative;
+    output = Math.max(outputMin, Math.min(outputMax, output));
+    this.prevError = error;
+    return { proportional, integral: this.integral, derivative, output, setpoint, measurement };
+  }
+
+  reset(): void {
+    this.integral = 0;
+    this.prevError = 0;
+  }
+
+  simulateStepResponse(
+    setpoint: number,
+    initialValue: number,
+    plantFn: (control: number) => number,
+    steps: number
+  ): PIDState[] {
+    const trace: PIDState[] = [];
+    let measurement = initialValue;
+    for (let i = 0; i < steps; i++) {
+      const state = this.update(setpoint, measurement);
+      measurement = plantFn(state.output);
+      trace.push(state);
+    }
+    return trace;
+  }
+
+  static tuneZieglerNichols(ultimateGain: number, ultimatePeriod: number): PIDConfig {
+    return {
+      kp: 0.6 * ultimateGain,
+      ki: 1.2 * ultimateGain / ultimatePeriod,
+      kd: 0.075 * ultimateGain * ultimatePeriod,
+      dt: 0.01,
+      outputMin: -100,
+      outputMax: 100,
+    };
+  }
+
+  getConfig(): PIDConfig {
+    return { ...this.config };
+  }
+}
+
+// ─── Convergence Rate Estimator ────────────────────────────────────────
+
+interface ConvergenceStats {
+  estimatedRate: number;
+  settlingCycles: number | null;
+  overshoot: number;
+  steadyStateError: number;
+  oscillationDetected: boolean;
+  noiseTolerance: number;
+}
+
+class ConvergenceRateEstimator {
+  constructor(private readonly tolerance: number = 0.05) {}
+
+  analyze(errorTrace: number[]): ConvergenceStats {
+    const absErrors = errorTrace.map(Math.abs);
+    const n = absErrors.length;
+    let rate = 0;
+    if (n >= 3 && absErrors[0] > 0) {
+      const ratios: number[] = [];
+      for (let i = 1; i < n; i++) {
+        if (absErrors[i - 1] > 0) ratios.push(absErrors[i] / absErrors[i - 1]);
+      }
+      if (ratios.length > 0) {
+        const product = ratios.reduce((a, b) => a * b, 1);
+        rate = 1 - Math.pow(product, 1 / ratios.length);
+      }
+    }
+
+    let settlingCycle: number | null = null;
+    for (let i = 0; i < n; i++) {
+      if (absErrors[i] <= this.tolerance) {
+        settlingCycle = i + 1;
+        break;
+      }
+    }
+
+    const peakError = Math.max(...absErrors);
+    const finalError = absErrors[absErrors.length - 1];
+    const overshoot = peakError > absErrors[0] ? (peakError - absErrors[0]) / absErrors[0] : 0;
+
+    let signChanges = 0;
+    for (let i = 2; i < n; i++) {
+      if (errorTrace[i] * errorTrace[i - 2] < 0) signChanges++;
+    }
+
+    const noiseEstimate = n >= 5
+      ? absErrors.slice(-5).reduce((s, e, i, a) => s + (i > 0 ? Math.abs(e - a[i - 1]) : 0), 0) / 4
+      : 0;
+
+    return {
+      estimatedRate: rate,
+      settlingCycles: settlingCycle,
+      overshoot,
+      steadyStateError: finalError,
+      oscillationDetected: signChanges >= 3,
+      noiseTolerance: noiseEstimate,
+    };
+  }
+
+  predictCyclesRemaining(currentError: number, estimatedRate: number): number {
+    if (estimatedRate <= 0) return Infinity;
+    if (currentError <= this.tolerance) return 0;
+    return Math.ceil(Math.log(this.tolerance / currentError) / Math.log(1 - estimatedRate));
+  }
+}
+
+// ─── Adaptive Gain Scheduler ────────────────────────────────────────────
+
+class AdaptiveGainScheduler {
+  private gain: number;
+  private errorHistory: number[] = [];
+  private readonly minGain = 0.05;
+  private readonly maxGain = 2.0;
+  private signChangeCount = 0;
+  private consecutiveImprovement = 0;
+
+  constructor(initialGain: number = 0.5) {
+    this.gain = initialGain;
+  }
+
+  adapt(error: number): number {
+    this.errorHistory.push(error);
+    if (this.errorHistory.length < 2) return this.gain;
+
+    const prevError = this.errorHistory[this.errorHistory.length - 2];
+    const improving = Math.abs(error) < Math.abs(prevError);
+
+    if (error * prevError < 0) {
+      this.signChangeCount++;
+      this.consecutiveImprovement = 0;
+      if (this.signChangeCount >= 2) {
+        this.gain *= 0.5;
+        this.signChangeCount = 0;
+      }
+    } else if (improving) {
+      this.consecutiveImprovement++;
+      this.signChangeCount = 0;
+      if (this.consecutiveImprovement >= 3) {
+        this.gain *= 1.1;
+        this.consecutiveImprovement = 0;
+      }
+    } else {
+      this.consecutiveImprovement = 0;
+    }
+
+    this.gain = Math.max(this.minGain, Math.min(this.maxGain, this.gain));
+    return this.gain;
+  }
+
+  getGain(): number {
+    return this.gain;
+  }
+
+  reset(gain?: number): void {
+    this.gain = gain ?? 0.5;
+    this.errorHistory = [];
+    this.signChangeCount = 0;
+    this.consecutiveImprovement = 0;
+  }
+}
+
+// ─── Discrete-Time Transfer Function Simulator ─────────────────────────
+
+class DiscreteTransferFunction {
+  private numCoeffs: number[];
+  private denCoeffs: number[];
+  private inputHistory: number[] = [];
+  private outputHistory: number[] = [];
+
+  constructor(numCoeffs: number[], denCoeffs: number[]) {
+    this.numCoeffs = numCoeffs;
+    this.denCoeffs = denCoeffs;
+  }
+
+  step(input: number): number {
+    this.inputHistory.unshift(input);
+    if (this.inputHistory.length > this.numCoeffs.length) {
+      this.inputHistory.pop();
+    }
+    let output = 0;
+    for (let i = 0; i < this.numCoeffs.length; i++) {
+      output += this.numCoeffs[i] * (this.inputHistory[i] ?? 0);
+    }
+    for (let i = 1; i < this.denCoeffs.length; i++) {
+      output -= this.denCoeffs[i] * (this.outputHistory[i - 1] ?? 0);
+    }
+    const denom = this.denCoeffs[0] ?? 1;
+    output /= denom;
+    this.outputHistory.unshift(output);
+    if (this.outputHistory.length > this.denCoeffs.length) {
+      this.outputHistory.pop();
+    }
+    return output;
+  }
+
+  simulate(inputs: number[]): number[] {
+    return inputs.map((u) => this.step(u));
+  }
+
+  reset(): void {
+    this.inputHistory = [];
+    this.outputHistory = [];
+  }
+}
+
+// ─── Stability Margin Calculator ──────────────────────────────────────
+
+interface StabilityMargins {
+  gainMargin: number | null;
+  phaseMarginDeg: number | null;
+  delayMargin: number | null;
+  verdict: "stable" | "marginally-stable" | "unstable";
+}
+
+class StabilityCalculator {
+  compute(
+    openLoopGain: number,
+    openLoopPhaseDeg: number,
+    crossoverFreqRad: number
+  ): StabilityMargins {
+    const gm = openLoopGain > 0 ? 1 / openLoopGain : null;
+    const pm = 180 - Math.abs(openLoopPhaseDeg % 360);
+    const dm = crossoverFreqRad > 0 ? (pm * Math.PI) / (180 * crossoverFreqRad) : null;
+    let verdict: StabilityMargins["verdict"] = "stable";
+    if (gm !== null && gm < 1) verdict = "unstable";
+    else if (pm < 0) verdict = "unstable";
+    else if ((gm !== null && gm < 2) || pm < 30) verdict = "marginally-stable";
+    return { gainMargin: gm, phaseMarginDeg: pm, delayMargin: dm, verdict };
+  }
+
+  static computeFromBode(bodeData: BodePoint[]): StabilityMargins[] {
+    const analyzer = new BodeAnalyzer();
+    const margins: StabilityMargins[] = [];
+    for (const point of bodeData) {
+      margins.push({
+        gainMargin: analyzer.computeGainMargin(bodeData),
+        phaseMarginDeg: analyzer.computePhaseMargin(bodeData),
+        delayMargin: null,
+        verdict: "stable",
+      });
+    }
+    return margins;
+  }
+}
+
+// ─── Demo ──────────────────────────────────────────────────────────────
+
+function main() {
+  console.log("=== Extended Control Suite Demo ===\n");
+
+  // 1. Bode Analyzer + Barkhausen
+  const analyzer = new BodeAnalyzer();
+  const freqs = [0.1, 0.5, 1, 2, 5, 10, 20, 50, 100];
+  const tf = (omega: number) => ({
+    magnitude: 5 / Math.sqrt(1 + (omega * 0.2) ** 2),
+    phase: -Math.atan2(omega * 0.2, 1),
+  });
+  const bodeData = analyzer.generateData(freqs, tf);
+  console.log("Bode Data (first 3 points):");
+  bodeData.slice(0, 3).forEach((p) =>
+    console.log(`  ω=${p.frequencyRad}rad  |G|=${p.magnitudeDb.toFixed(1)}dB  φ=${p.phaseDeg.toFixed(1)}°`)
+  );
+
+  const checker = new BarkhausenChecker();
+  const result = checker.check(1.2, 358);
+  console.log(`\nBarkhausen (gain=1.2, phase=358°): oscillates=${result.oscillates}`);
+
+  // 2. PID Controller
+  const pid = new PIDController({ kp: 2.0, ki: 0.5, kd: 0.1, dt: 0.01, outputMin: -50, outputMax: 50 });
+  const plant = (u: number) => u * 0.8 + (Math.random() - 0.5) * 0.2;
+  const trace = pid.simulateStepResponse(100, 0, plant, 50);
+  const finalState = trace[trace.length - 1];
+  console.log(`\nPID Step Response (50 steps): final=${finalState.measurement.toFixed(2)} error=${(100 - finalState.measurement).toFixed(2)}`);
+
+  // 3. Convergence Estimator
+  const estimator = new ConvergenceRateEstimator(0.05);
+  const errorTrace = Array.from({ length: 20 }, (_, i) => 100 * Math.pow(0.6, i));
+  const stats = estimator.analyze(errorTrace);
+  console.log(`\nConvergence Stats: rate=${stats.estimatedRate.toFixed(3)} settling=${stats.settlingCycles} overshoot=${(stats.overshoot * 100).toFixed(1)}%`);
+  console.log(`Predicted remaining cycles (error=2.5, rate=0.4): ${estimator.predictCyclesRemaining(2.5, 0.4)}`);
+
+  // 4. Adaptive Gain Scheduler
+  const scheduler = new AdaptiveGainScheduler(0.5);
+  const errors = [50, 30, -10, 5, -2, 1, 0.5];
+  console.log("\nAdaptive Gain Schedule:");
+  for (const e of errors) {
+    const g = scheduler.adapt(e);
+    console.log(`  error=${e.toFixed(1)} → gain=${g.toFixed(3)}`);
+  }
+
+  // 5. Transfer Function
+  const tfsys = new DiscreteTransferFunction([0.2, 0.15], [1, -0.7, 0.1]);
+  const inputs = Array.from({ length: 10 }, (_, i) => (i === 0 ? 1 : 0));
+  const outputs = tfsys.simulate(inputs);
+  console.log(`\nTransfer Function Impulse Response (first 5): ${outputs.slice(0, 5).map((o) => o.toFixed(4)).join(", ")}`);
+
+  // 6. Stability Margin
+  const stabCalc = new StabilityCalculator();
+  const margins = stabCalc.compute(0.8, 35, 5);
+  console.log(`\nStability: ${margins.verdict}  GM=${margins.gainMargin?.toFixed(2) ?? "N/A"}  PM=${margins.phaseMarginDeg?.toFixed(1)}°`);
+}
+
+main();
+```
+
+**Key concepts demonstrated:**
+- **Bode plots** map frequency-domain gain/phase for stability analysis
+- **Barkhausen criterion** predicts oscillation from loop gain and phase conditions
+- **PID controller** with configurable gains, anti-windup clamping, and Ziegler-Nichols tuning
+- **Convergence rate estimator** computes settling time, overshoot, and noise tolerance from error traces
+- **Adaptive gain scheduler** detects oscillation sign changes and adjusts gain dynamically
+- **Discrete transfer function** simulates any rational system in the z-domain
+- **Stability margins** (gain, phase, delay) give concrete pass/fail criteria for loop design
+
+---
+
 ## Summary
 
 1.  **All agent loops are feedback control systems.** The ReAct cycle (`thought → action → observation`) is a negative-feedback closed loop. Understanding control theory lets you debug convergence failures by reasoning about gain, phase, and stability.

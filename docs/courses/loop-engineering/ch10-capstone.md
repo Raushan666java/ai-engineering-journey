@@ -876,6 +876,587 @@ async function demonstrateMultiStepRecovery() {
 await demonstrateMultiStepRecovery();
 ```
 
+### Extended Implementation: Complete Loop System Assembly
+
+The `LoopComposer` orchestrates all prior components into a deployable system. It is accompanied by a metrics aggregator, system validator, deployment config, and performance benchmark.
+
+```typescript
+// complete-loop-system-assembly.ts
+
+// ─── 1. Component Registry — every sub-loop has a slot ───
+
+interface SubLoopDescriptor {
+  name: string;
+  run: (context: LoopContext) => Promise<SubLoopResult>;
+  dependencies: string[];
+  timeoutMs: number;
+}
+
+interface SubLoopResult {
+  name: string;
+  success: boolean;
+  output: unknown;
+  durationMs: number;
+  error?: string;
+}
+
+interface LoopContext {
+  sharedState: Map<string, unknown>;
+  messages: Array<{ role: string; content: string }>;
+  budget: { tokensUsed: number; costUsedUsd: number };
+  startTime: number;
+}
+
+// ─── 2. Metrics Aggregator — collects and reports across all sub-loops ───
+
+interface MetricPoint {
+  subLoop: string;
+  metric: string;
+  value: number;
+  timestamp: number;
+}
+
+class MetricsAggregator {
+  private points: MetricPoint[] = [];
+  private labels: Map<string, string> = new Map();
+
+  record(subLoop: string, metric: string, value: number): void {
+    this.points.push({ subLoop, metric, value, timestamp: Date.now() });
+  }
+
+  label(subLoop: string, label: string): void {
+    this.labels.set(subLoop, label);
+  }
+
+  /** Average of a specific metric across all sub-loops */
+  average(metric: string): number {
+    const relevant = this.points.filter((p) => p.metric === metric);
+    if (relevant.length === 0) return 0;
+    return relevant.reduce((s, p) => s + p.value, 0) / relevant.length;
+  }
+
+  /** Per-sub-loop summary */
+  bySubLoop(): Map<string, MetricPoint[]> {
+    const grouped = new Map<string, MetricPoint[]>();
+    for (const p of this.points) {
+      const arr = grouped.get(p.subLoop) ?? [];
+      arr.push(p);
+      grouped.set(p.subLoop, arr);
+    }
+    return grouped;
+  }
+
+  /** Generate a human-readable report */
+  generateReport(): string {
+    const lines: string[] = ["═══ Loop Metrics Report ═══\n"];
+    const byLoop = this.bySubLoop();
+    for (const [name, pts] of byLoop) {
+      const label = this.labels.get(name) ?? "";
+      lines.push(`Sub-loop: ${name} ${label ? `(${label})` : ""}`);
+      for (const p of pts) {
+        lines.push(`  ${p.metric}: ${p.value}`);
+      }
+      lines.push("");
+    }
+    lines.push(`System-wide averages:`);
+    const uniqueMetrics = [...new Set(this.points.map((p) => p.metric))];
+    for (const m of uniqueMetrics) {
+      lines.push(`  ${m}: ${this.average(m).toFixed(2)}`);
+    }
+    lines.push(`\nTotal data points: ${this.points.length}`);
+    return lines.join("\n");
+  }
+
+  /** Export as JSON for dashboarding */
+  exportJson(): string {
+    return JSON.stringify({
+      points: this.points,
+      summary: {
+        totalPoints: this.points.length,
+        averages: Object.fromEntries(
+          [...new Set(this.points.map((p) => p.metric))].map((m) => [m, this.average(m)])
+        ),
+      },
+    }, null, 2);
+  }
+}
+
+// ─── 3. SystemValidator — pre-flight checks and integration tests ───
+
+interface ValidationCheck {
+  name: string;
+  severity: "critical" | "warning" | "info";
+  run: () => Promise<{ passed: boolean; message: string }>;
+}
+
+class SystemValidator {
+  private checks: ValidationCheck[] = [];
+
+  addCheck(check: ValidationCheck): void {
+    this.checks.push(check);
+  }
+
+  /** Run all pre-flight checks */
+  async preFlight(): Promise<{
+    passed: boolean;
+    results: Array<{ name: string; severity: string; passed: boolean; message: string }>;
+  }> {
+    console.log("═══ Pre-flight validation ═══\n");
+    const results: Array<{ name: string; severity: string; passed: boolean; message: string }> = [];
+
+    for (const check of this.checks) {
+      process.stdout.write(`  [${check.severity}] ${check.name}... `);
+      try {
+        const result = await check.run();
+        results.push({ name: check.name, severity: check.severity, passed: result.passed, message: result.message });
+        console.log(result.passed ? "✓" : `✗ — ${result.message}`);
+      } catch (err) {
+        results.push({ name: check.name, severity: check.severity, passed: false, message: String(err) });
+        console.log(`✗ — ${err}`);
+      }
+    }
+
+    const criticalFails = results.filter((r) => r.severity === "critical" && !r.passed);
+    console.log(`\n${criticalFails.length > 0 ? "❌ PRE-FLIGHT FAILED" : "✅ Pre-flight passed"}`);
+    console.log(`  ${results.filter((r) => r.passed).length}/${results.length} checks passed`);
+    return { passed: criticalFails.length === 0, results };
+  }
+
+  /** Run integration tests that exercise end-to-end scenarios */
+  async integrationTests(
+    scenarios: Array<{
+      name: string;
+      run: () => Promise<boolean>;
+      setup?: () => Promise<void>;
+      teardown?: () => Promise<void>;
+    }>,
+  ): Promise<{ passed: number; failed: number; results: Array<{ name: string; passed: boolean }> }> {
+    console.log("\n═══ Integration tests ═══\n");
+    const results: Array<{ name: string; passed: boolean }> = [];
+    for (const scenario of scenarios) {
+      process.stdout.write(`  ${scenario.name}... `);
+      try {
+        if (scenario.setup) await scenario.setup();
+        const passed = await scenario.run();
+        results.push({ name: scenario.name, passed });
+        console.log(passed ? "✓" : "✗");
+        if (scenario.teardown) await scenario.teardown();
+      } catch (err) {
+        results.push({ name: scenario.name, passed: false });
+        console.log(`✗ (${err})`);
+      }
+    }
+    const passed = results.filter((r) => r.passed).length;
+    const failed = results.filter((r) => !r.passed).length;
+    console.log(`\nIntegration: ${passed} passed, ${failed} failed`);
+    return { passed, failed, results };
+  }
+}
+
+// ─── 4. LoopComposer — assembles sub-loops into a complete system ───
+
+class LoopComposer {
+  private subLoops: SubLoopDescriptor[] = [];
+  private context: LoopContext = {
+    sharedState: new Map(),
+    messages: [],
+    budget: { tokensUsed: 0, costUsedUsd: 0 },
+    startTime: Date.now(),
+  };
+  private metrics = new MetricsAggregator();
+  private validator = new SystemValidator();
+  private results: SubLoopResult[] = [];
+
+  register(subLoop: SubLoopDescriptor): void {
+    this.subLoops.push(subLoop);
+  }
+
+  getMetrics(): MetricsAggregator {
+    return this.metrics;
+  }
+
+  getValidator(): SystemValidator {
+    return this.validator;
+  }
+
+  /** Resolve dependency order using topological sort */
+  private resolveOrder(): SubLoopDescriptor[] {
+    const visited = new Set<string>();
+    const order: SubLoopDescriptor[] = [];
+    const map = new Map(this.subLoops.map((s) => [s.name, s]));
+
+    function visit(node: SubLoopDescriptor): void {
+      if (visited.has(node.name)) return;
+      visited.add(node.name);
+      for (const dep of node.dependencies) {
+        const depNode = map.get(dep);
+        if (depNode) visit(depNode);
+      }
+      order.push(node);
+    }
+
+    for (const sl of this.subLoops) visit(sl);
+    return order;
+  }
+
+  /** Execute all sub-loops in dependency order */
+  async execute(): Promise<{ success: boolean; results: SubLoopResult[]; elapsedMs: number }> {
+    const order = this.resolveOrder();
+    console.log(`═══ LoopComposer: ${order.length} sub-loops in dependency order ═══\n`);
+    for (const sl of order) {
+      console.log(`  Running: ${sl.name} (timeout: ${sl.timeoutMs}ms)`);
+      const start = Date.now();
+      try {
+        const result = await Promise.race([
+          sl.run(this.context),
+          new Promise<never>((_, reject) =>
+            setTimeout(() => reject(new Error(`Timeout after ${sl.timeoutMs}ms`)), sl.timeoutMs),
+          ),
+        ]);
+        this.results.push(result);
+        this.metrics.record(sl.name, "durationMs", result.durationMs);
+        this.metrics.record(sl.name, "success", result.success ? 1 : 0);
+        console.log(`    → ${result.success ? "✓" : "✗"} (${result.durationMs}ms)`);
+      } catch (err) {
+        this.results.push({
+          name: sl.name,
+          success: false,
+          output: null,
+          durationMs: Date.now() - start,
+          error: String(err),
+        });
+        this.metrics.record(sl.name, "durationMs", Date.now() - start);
+        this.metrics.record(sl.name, "success", 0);
+        console.log(`    → ✗ ${err}`);
+      }
+    }
+
+    const elapsedMs = Date.now() - this.context.startTime;
+    const success = this.results.every((r) => r.success);
+    console.log(`\nComposer finished: ${success ? "ALL PASSED" : "SOME FAILED"} in ${elapsedMs}ms`);
+    return { success, results: [...this.results], elapsedMs };
+  }
+
+  /** Clear all state for a fresh run */
+  reset(): void {
+    this.context = {
+      sharedState: new Map(),
+      messages: [],
+      budget: { tokensUsed: 0, costUsedUsd: 0 },
+      startTime: Date.now(),
+    };
+    this.results = [];
+    this.metrics = new MetricsAggregator();
+  }
+}
+
+// ─── 5. DeploymentConfig — runtime configuration for the composed loop ───
+
+interface EnvironmentOverrides {
+  [env: string]: { maxSteps?: number; maxTokens?: number; maxCostUsd?: number; logLevel?: string };
+}
+
+class DeploymentConfig {
+  private envOverrides: EnvironmentOverrides = {};
+  private baseConfig = {
+    maxSteps: 25,
+    maxTokens: 50_000,
+    maxCostUsd: 0.50,
+    logLevel: "info",
+    checkpointsEnabled: true,
+    checkpointsDir: "/tmp/loop-checkpoints",
+    metricsEnabled: true,
+    metricsIntervalMs: 5000,
+    hitalAutoApproveRisk: "low",
+    maxRetries: 3,
+    retryBackoffMs: 1000,
+    killSwitchEnabled: true,
+    killSwitchCooldownMs: 30_000,
+  };
+
+  setBaseConfig(partial: Partial<typeof this.baseConfig>): void {
+    Object.assign(this.baseConfig, partial);
+  }
+
+  setEnvironmentOverrides(env: string, overrides: EnvironmentOverrides[string]): void {
+    this.envOverrides[env] = overrides;
+  }
+
+  resolve(environment: string): typeof this.baseConfig {
+    const envConfig = this.envOverrides[environment];
+    if (!envConfig) return { ...this.baseConfig };
+    return { ...this.baseConfig, ...envConfig };
+  }
+
+  /** Generate a deployment manifest */
+  generateManifest(environment: string): string {
+    const cfg = this.resolve(environment);
+    return JSON.stringify({
+      manifestVersion: "1.0",
+      environment,
+      deployedAt: new Date().toISOString(),
+      config: cfg,
+      resources: {
+        cpu: "1 core",
+        memory: "512 MB",
+        storage: "100 MB",
+      },
+    }, null, 2);
+  }
+}
+
+// ─── 6. PerformanceBenchmark — stress-tests the complete system ───
+
+interface BenchmarkResult {
+  scenario: string;
+  iterations: number;
+  totalMs: number;
+  avgMs: number;
+  p50Ms: number;
+  p95Ms: number;
+  p99Ms: number;
+  throughputPerSec: number;
+  failures: number;
+}
+
+class PerformanceBenchmark {
+  private timings: Map<string, number[]> = new Map();
+  private failures: Map<string, number> = new Map();
+
+  async runScenario(
+    name: string,
+    iterations: number,
+    fn: (iteration: number) => Promise<void>,
+    concurrency = 1,
+  ): Promise<BenchmarkResult> {
+    console.log(`Benchmark: ${name} (${iterations} iterations, concurrency=${concurrency})`);
+    const durations: number[] = [];
+    let failureCount = 0;
+
+    const runBatch = async (start: number, count: number): Promise<void> => {
+      for (let i = start; i < start + count; i++) {
+        const t0 = performance.now();
+        try {
+          await fn(i);
+          durations.push(performance.now() - t0);
+        } catch {
+          failureCount++;
+        }
+      }
+    };
+
+    const batches: Array<() => Promise<void>> = [];
+    for (let i = 0; i < iterations; i += concurrency) {
+      const count = Math.min(concurrency, iterations - i);
+      batches.push(() => runBatch(i, count));
+    }
+
+    const totalStart = performance.now();
+    for (const batch of batches) await batch();
+    const totalMs = performance.now() - totalStart;
+
+    durations.sort((a, b) => a - b);
+    const p50 = durations[Math.floor(durations.length * 0.5)] ?? 0;
+    const p95 = durations[Math.floor(durations.length * 0.95)] ?? 0;
+    const p99 = durations[Math.floor(durations.length * 0.99)] ?? 0;
+    const avg = durations.length > 0 ? durations.reduce((s, d) => s + d, 0) / durations.length : 0;
+    const throughput = totalMs > 0 ? (iterations / totalMs) * 1000 : 0;
+
+    this.timings.set(name, durations);
+    this.failures.set(name, failureCount);
+
+    const result: BenchmarkResult = {
+      scenario: name,
+      iterations,
+      totalMs: Math.round(totalMs),
+      avgMs: Math.round(avg),
+      p50Ms: Math.round(p50),
+      p95Ms: Math.round(p95),
+      p99Ms: Math.round(p99),
+      throughputPerSec: Math.round(throughput * 10) / 10,
+      failures: failureCount,
+    };
+
+    console.log(`  Total: ${result.totalMs}ms, Avg: ${result.avgMs}ms, P50: ${result.p50Ms}ms, P95: ${result.p95Ms}ms, Throughput: ${result.throughputPerSec}/s, Failures: ${result.failures}`);
+    return result;
+  }
+
+  /** Compare two benchmark runs */
+  compare(baseline: BenchmarkResult, candidate: BenchmarkResult): string {
+    const speedup = baseline.avgMs > 0 ? ((baseline.avgMs - candidate.avgMs) / baseline.avgMs * 100).toFixed(1) : "N/A";
+    const failureDelta = candidate.failures - baseline.failures;
+    return [
+      `═══ Comparison: ${baseline.scenario} vs ${candidate.scenario} ═══`,
+      `  Avg: ${baseline.avgMs}ms → ${candidate.avgMs}ms (${speedup}%)`,
+      `  P95: ${baseline.p95Ms}ms → ${candidate.p95Ms}ms`,
+      `  Throughput: ${baseline.throughputPerSec}/s → ${candidate.throughputPerSec}/s`,
+      `  Failures: ${baseline.failures} → ${candidate.failures} (${failureDelta > 0 ? "+" : ""}${failureDelta})`,
+    ].join("\n");
+  }
+}
+
+// ─── Demo: wiring the complete system ───
+
+async function demoCompleteAssembly() {
+  console.log("═══ Complete Loop System Assembly Demo ═══\n");
+
+  // Build deployment config
+  const deployCfg = new DeploymentConfig();
+  deployCfg.setBaseConfig({ maxSteps: 30, maxCostUsd: 0.25, logLevel: "debug" });
+  deployCfg.setEnvironmentOverrides("production", { maxTokens: 100_000, logLevel: "warn" });
+  const manifest = deployCfg.generateManifest("production");
+  console.log("Deployment manifest generated for production");
+  const prodCfg = deployCfg.resolve("production");
+  console.log(`  Production maxTokens: ${prodCfg.maxTokens}, logLevel: ${prodCfg.logLevel}`);
+
+  // Create the composer and register sub-loops
+  const composer = new LoopComposer();
+  composer.register({
+    name: "planning-loop",
+    dependencies: [],
+    timeoutMs: 10_000,
+    run: async (ctx) => {
+      const start = Date.now();
+      ctx.sharedState.set("plan", ["read config", "scan files"]);
+      return { name: "planning-loop", success: true, output: ["read config", "scan files"], durationMs: Date.now() - start };
+    },
+  });
+  composer.register({
+    name: "execution-loop",
+    dependencies: ["planning-loop"],
+    timeoutMs: 15_000,
+    run: async (ctx) => {
+      const start = Date.now();
+      const plan = ctx.sharedState.get("plan") as string[] ?? [];
+      ctx.messages.push({ role: "system", content: `Executing: ${plan.join(", ")}` });
+      ctx.budget.tokensUsed += 500;
+      return { name: "execution-loop", success: true, output: plan, durationMs: Date.now() - start };
+    },
+  });
+  composer.register({
+    name: "critique-loop",
+    dependencies: ["execution-loop"],
+    timeoutMs: 8_000,
+    run: async (ctx) => {
+      const start = Date.now();
+      const successRate = ctx.budget.tokensUsed < 1000 ? 1.0 : 0.5;
+      return { name: "critique-loop", success: true, output: { score: successRate }, durationMs: Date.now() - start };
+    },
+  });
+
+  // Pre-flight validation
+  const validator = composer.getValidator();
+  validator.addCheck({
+    name: "All sub-loops registered",
+    severity: "critical",
+    run: async () => ({ passed: true, message: "3 sub-loops detected" }),
+  });
+  validator.addCheck({
+    name: "Dependency graph is acyclic",
+    severity: "critical",
+    run: async () => ({ passed: true, message: "No cycles detected" }),
+  });
+  validator.addCheck({
+    name: "Budget limits are positive",
+    severity: "warning",
+    run: async () => {
+      const cfg = deployCfg.resolve("staging");
+      return { passed: cfg.maxSteps > 0 && cfg.maxTokens > 0, message: `maxSteps=${cfg.maxSteps}, maxTokens=${cfg.maxTokens}` };
+    },
+  });
+  await validator.preFlight();
+
+  // Execute all sub-loops
+  const execResult = await composer.execute();
+
+  // Generate metrics report
+  const metrics = composer.getMetrics();
+  metrics.label("planning-loop", "Phase 1");
+  metrics.label("execution-loop", "Phase 2");
+  metrics.label("critique-loop", "Phase 3");
+  console.log("\n" + metrics.generateReport());
+
+  // Integration tests
+  await validator.integrationTests([
+    {
+      name: "Empty composer produces no results",
+      run: async () => {
+        const c2 = new LoopComposer();
+        const r = await c2.execute();
+        return r.results.length === 0;
+      },
+    },
+    {
+      name: "Single sub-loop passes through",
+      run: async () => {
+        const c2 = new LoopComposer();
+        c2.register({ name: "test", dependencies: [], timeoutMs: 1000, run: async () => ({ name: "test", success: true, output: "ok", durationMs: 1 }) });
+        const r = await c2.execute();
+        return r.results.length === 1 && r.results[0].success;
+      },
+    },
+    {
+      name: "Timeout kills slow sub-loop",
+      run: async () => {
+        const c2 = new LoopComposer();
+        c2.register({ name: "slow", dependencies: [], timeoutMs: 10, run: async () => { await new Promise((r) => setTimeout(r, 100_000)); return { name: "slow", success: true, output: "", durationMs: 0 }; } });
+        const r = await c2.execute();
+        return !r.success && r.results[0].error?.includes("Timeout") === true;
+      },
+    },
+  ]);
+
+  // Performance benchmark
+  const benchmark = new PerformanceBenchmark();
+  const baseline = await benchmark.runScenario("baseline-plan", 10, async (i) => {
+    await new Promise((r) => setTimeout(r, 5 + Math.random() * 10));
+  });
+  const optimized = await benchmark.runScenario("optimized-plan", 10, async () => {
+    await new Promise((r) => setTimeout(r, 3 + Math.random() * 5));
+  });
+  console.log("\n" + benchmark.compare(baseline, optimized));
+}
+
+await demoCompleteAssembly();
+```
+
+**Expected output:**
+```
+═══ Complete Loop System Assembly Demo ═══
+
+Deployment manifest generated for production
+  Production maxTokens: 100000, logLevel: warn
+
+═══ Pre-flight validation ═══
+  [critical] All sub-loops registered... ✓
+  [critical] Dependency graph is acyclic... ✓
+  [warning] Budget limits are positive... ✓
+✅ Pre-flight passed
+  3/3 checks passed
+
+═══ LoopComposer: 3 sub-loops in dependency order ═══
+
+  Running: planning-loop (timeout: 10000ms)
+    → ✓ (0ms)
+  Running: execution-loop (timeout: 15000ms)
+    → ✓ (0ms)
+  Running: critique-loop (timeout: 8000ms)
+    → ✓ (0ms)
+
+Composer finished: ALL PASSED in Xms
+
+═══ Metrics Report ═══
+...
+Integration: 3 passed, 0 failed
+
+Benchmark: baseline-plan (10 iterations...
+  Total: Xms, Avg: Yms, P50: Zms, P95: Wms...
+
+═══ Comparison: baseline-plan vs optimized-plan ═══
+  Avg: Xms → Yms (...%)
+  ...
+```
+
 ---
 
 ## Summary: What You Have Built

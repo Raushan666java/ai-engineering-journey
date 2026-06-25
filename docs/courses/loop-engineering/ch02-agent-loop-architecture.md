@@ -869,6 +869,510 @@ await main();
 
 ---
 
+### Extended Implementation: Pipeline Orchestrator, State Machine, and Hierarchical Controller
+
+This section builds production-grade agent loop infrastructure: a multi-stage pipeline orchestrator with retry/fallback, a ReAct pattern generic executor, a tool registry with JSON Schema validation, a formal loop state machine, a parallel agent executor, and a hierarchical supervisor/worker controller.
+
+```typescript
+// ch02-advanced-architecture.ts
+// bun run ch02-advanced-architecture.ts
+
+// ─── Tool Registry with Schema Validation ──────────────────────────────
+
+interface ToolSchema {
+  type: "string" | "number" | "boolean" | "object";
+  required?: boolean;
+  description?: string;
+}
+
+interface ToolDefinition {
+  name: string;
+  description: string;
+  parameters: Record<string, ToolSchema>;
+  execute: (args: Record<string, unknown>) => Promise<string>;
+}
+
+class ToolRegistry {
+  private tools = new Map<string, ToolDefinition>();
+
+  register(tool: ToolDefinition): void {
+    if (this.tools.has(tool.name)) throw new Error(`Tool "${tool.name}" already registered`);
+    this.tools.set(tool.name, tool);
+  }
+
+  get(name: string): ToolDefinition | undefined {
+    return this.tools.get(name);
+  }
+
+  list(): ToolDefinition[] {
+    return Array.from(this.tools.values());
+  }
+
+  validateArgs(toolName: string, args: Record<string, unknown>): string[] {
+    const tool = this.tools.get(toolName);
+    if (!tool) return [`Unknown tool: ${toolName}`];
+    const errors: string[] = [];
+    for (const [key, schema] of Object.entries(tool.parameters)) {
+      if (schema.required && (args[key] === undefined || args[key] === null)) {
+        errors.push(`Missing required parameter "${key}" for tool "${toolName}"`);
+      }
+      if (args[key] !== undefined && schema.type === "number" && typeof args[key] !== "number") {
+        errors.push(`Parameter "${key}" should be number, got ${typeof args[key]}`);
+      }
+    }
+    return errors;
+  }
+
+  async call(toolName: string, args: Record<string, unknown>): Promise<string> {
+    const errors = this.validateArgs(toolName, args);
+    if (errors.length > 0) throw new Error(errors.join("; "));
+    const tool = this.tools.get(toolName)!;
+    return tool.execute(args);
+  }
+}
+
+// ─── Loop State Machine ────────────────────────────────────────────────
+
+type LoopState = "IDLE" | "THINKING" | "ACTING" | "OBSERVING" | "EVALUATING" | "DONE" | "ERROR";
+type LoopEvent = "START" | "THOUGHT_READY" | "ACTION_READY" | "OBSERVATION_READY" | "EVAL_COMPLETE" | "RETRY" | "FAIL" | "ABORT";
+
+interface StateTransition {
+  from: LoopState[];
+  event: LoopEvent;
+  to: LoopState;
+}
+
+class LoopStateMachine {
+  private state: LoopState = "IDLE";
+  private transitions: StateTransition[] = [
+    { from: ["IDLE"], event: "START", to: "THINKING" },
+    { from: ["THINKING"], event: "THOUGHT_READY", to: "ACTING" },
+    { from: ["ACTING"], event: "ACTION_READY", to: "OBSERVING" },
+    { from: ["OBSERVING"], event: "OBSERVATION_READY", to: "EVALUATING" },
+    { from: ["EVALUATING"], event: "EVAL_COMPLETE", to: "THINKING" },
+    { from: ["EVALUATING"], event: "RETRY", to: "THINKING" },
+    { from: ["EVALUATING"], event: "FAIL", to: "DONE" },
+    { from: ["EVALUATING"], event: "DONE", to: "DONE" },
+    { from: ["IDLE", "THINKING", "ACTING", "OBSERVING", "EVALUATING"], event: "ABORT", to: "ERROR" },
+  ];
+  private history: { from: LoopState; to: LoopState; event: LoopEvent; timestamp: number }[] = [];
+
+  getState(): LoopState {
+    return this.state;
+  }
+
+  send(event: LoopEvent): boolean {
+    for (const t of this.transitions) {
+      if (t.from.includes(this.state) && t.event === event) {
+        this.history.push({ from: this.state, to: t.to, event, timestamp: Date.now() });
+        this.state = t.to;
+        return true;
+      }
+    }
+    return false;
+  }
+
+  reset(): void {
+    this.state = "IDLE";
+    this.history = [];
+  }
+
+  getHistory(): { from: LoopState; to: LoopState; event: LoopEvent; timestamp: number }[] {
+    return [...this.history];
+  }
+
+  isTerminal(): boolean {
+    return this.state === "DONE" || this.state === "ERROR";
+  }
+
+  can(event: LoopEvent): boolean {
+    return this.transitions.some((t) => t.from.includes(this.state) && t.event === event);
+  }
+}
+
+// ─── Multi-Stage Pipeline Orchestrator ─────────────────────────────────
+
+interface StageConfig {
+  name: string;
+  handler: (input: unknown) => Promise<unknown>;
+  retries?: number;
+  fallback?: (input: unknown, error: Error) => Promise<unknown>;
+  timeoutMs?: number;
+}
+
+interface StageResult {
+  stageName: string;
+  success: boolean;
+  output: unknown;
+  error?: string;
+  attempts: number;
+  durationMs: number;
+}
+
+class PipelineOrchestrator {
+  private stages: StageConfig[] = [];
+
+  addStage(stage: StageConfig): void {
+    this.stages.push(stage);
+  }
+
+  async run(input: unknown): Promise<{ results: StageResult[]; finalOutput: unknown }> {
+    const results: StageResult[] = [];
+    let currentInput = input;
+
+    for (const stage of this.stages) {
+      const start = performance.now();
+      let attempts = 0;
+      let lastError: Error | null = null;
+      let output: unknown = null;
+      let success = false;
+
+      while (attempts <= (stage.retries ?? 0) && !success) {
+        attempts++;
+        try {
+          const result = await (stage.timeoutMs
+            ? Promise.race([
+                stage.handler(currentInput),
+                new Promise<never>((_, reject) =>
+                  setTimeout(() => reject(new Error(`Stage "${stage.name}" timed out after ${stage.timeoutMs}ms`)), stage.timeoutMs)
+                ),
+              ])
+            : stage.handler(currentInput));
+          output = result;
+          success = true;
+        } catch (err) {
+          lastError = err instanceof Error ? err : new Error(String(err));
+          if (attempts <= (stage.retries ?? 0)) {
+            console.log(`  [PIPELINE] ${stage.name} attempt ${attempts} failed, retrying...`);
+          }
+        }
+      }
+
+      if (!success && stage.fallback) {
+        try {
+          output = await stage.fallback(currentInput, lastError!);
+          success = true;
+          console.log(`  [PIPELINE] ${stage.name} fallback succeeded`);
+        } catch (fallbackErr) {
+          console.log(`  [PIPELINE] ${stage.name} fallback also failed`);
+        }
+      }
+
+      results.push({
+        stageName: stage.name,
+        success,
+        output,
+        error: success ? undefined : lastError?.message,
+        attempts,
+        durationMs: performance.now() - start,
+      });
+
+      if (!success) break;
+      currentInput = output;
+    }
+
+    return { results, finalOutput: currentInput };
+  }
+}
+
+// ─── ReAct Pattern Generic Executor ────────────────────────────────────
+
+interface ReActStep {
+  thought: string;
+  action: { tool: string; args: Record<string, unknown> } | null;
+  observation: string;
+}
+
+interface ReActExecutorConfig {
+  maxCycles: number;
+  tools: ToolRegistry;
+  llm: (prompt: string) => Promise<{ thought: string; tool: string | null; args: Record<string, unknown> }>;
+}
+
+class ReActExecutor {
+  private config: ReActExecutorConfig;
+  private stateMachine: LoopStateMachine;
+  private steps: ReActStep[] = [];
+
+  constructor(config: ReActExecutorConfig) {
+    this.config = config;
+    this.stateMachine = new LoopStateMachine();
+  }
+
+  async execute(task: string): Promise<{ steps: ReActStep[]; answer: string }> {
+    this.stateMachine.send("START");
+    let prompt = `Task: ${task}\n\n`;
+
+    for (let cycle = 0; cycle < this.config.maxCycles; cycle++) {
+      console.log(`\n[ReAct] Cycle ${cycle + 1} (state: ${this.stateMachine.getState()})`);
+
+      this.stateMachine.send("THOUGHT_READY");
+      const { thought, tool, args } = await this.config.llm(prompt);
+      const step: ReActStep = { thought, action: tool ? { tool, args } : null, observation: "" };
+      prompt += `Thought: ${thought}\n`;
+
+      this.stateMachine.send("ACTION_READY");
+      if (tool) {
+        const obs = await this.config.tools.call(tool, args);
+        step.observation = obs;
+        prompt += `Action: ${tool}(${JSON.stringify(args)})\nObservation: ${obs}\n`;
+        this.stateMachine.send("ACTION_READY");
+      } else {
+        step.observation = "No action needed.";
+        prompt += `Action: none\n`;
+      }
+
+      this.stateMachine.send("OBSERVATION_READY");
+      this.steps.push(step);
+      console.log(`  Thought: ${thought.slice(0, 50)}...`);
+
+      if (!tool) {
+        this.stateMachine.send("EVAL_COMPLETE");
+        this.stateMachine.send("DONE");
+        return { steps: this.steps, answer: step.observation };
+      }
+
+      this.stateMachine.send("EVAL_COMPLETE");
+    }
+
+    this.stateMachine.send("FAIL");
+    return { steps: this.steps, answer: "Max cycles reached without terminal action." };
+  }
+}
+
+// ─── Parallel Agent Executor ───────────────────────────────────────────
+
+interface AgentTask {
+  id: string;
+  handler: () => Promise<string>;
+}
+
+interface AgentResult {
+  id: string;
+  success: boolean;
+  output?: string;
+  error?: string;
+}
+
+class ParallelAgentExecutor {
+  private concurrencyLimit: number;
+
+  constructor(concurrencyLimit: number = 4) {
+    this.concurrencyLimit = concurrencyLimit;
+  }
+
+  async executeAll(tasks: AgentTask[]): Promise<AgentResult[]> {
+    const results: AgentResult[] = [];
+    const chunks: AgentTask[][] = [];
+
+    for (let i = 0; i < tasks.length; i += this.concurrencyLimit) {
+      chunks.push(tasks.slice(i, i + this.concurrencyLimit));
+    }
+
+    for (const chunk of chunks) {
+      const chunkResults = await Promise.all(
+        chunk.map(async (task) => {
+          try {
+            const output = await task.handler();
+            return { id: task.id, success: true, output };
+          } catch (err) {
+            return { id: task.id, success: false, error: String(err) };
+          }
+        })
+      );
+      results.push(...chunkResults);
+    }
+
+    return results;
+  }
+
+  static aggregateResults(results: AgentResult[]): {
+    total: number;
+    succeeded: number;
+    failed: number;
+    outputs: string[];
+  } {
+    return {
+      total: results.length,
+      succeeded: results.filter((r) => r.success).length,
+      failed: results.filter((r) => !r.success).length,
+      outputs: results.filter((r) => r.output).map((r) => r.output!),
+    };
+  }
+}
+
+// ─── Hierarchical Loop Controller (Supervisor + Worker) ────────────────
+
+interface SupervisorConfig {
+  decompose: (task: string) => string[];
+  shouldEscalate: (subtaskResults: AgentResult[]) => boolean;
+}
+
+class HierarchicalController {
+  private supervisor: SupervisorConfig;
+  private workerPool: ParallelAgentExecutor;
+  private stateMachine: LoopStateMachine;
+
+  constructor(supervisor: SupervisorConfig, concurrency: number = 3) {
+    this.supervisor = supervisor;
+    this.workerPool = new ParallelAgentExecutor(concurrency);
+    this.stateMachine = new LoopStateMachine();
+  }
+
+  async execute(task: string): Promise<{
+    subtaskResults: AgentResult[];
+    supervisorDecisions: string[];
+    finalVerdict: string;
+  }> {
+    this.stateMachine.send("START");
+    const supervisorDecisions: string[] = [];
+
+    this.stateMachine.send("THOUGHT_READY");
+    const subtasks = this.supervisor.decompose(task);
+    supervisorDecisions.push(`Decomposed into ${subtasks.length} subtasks: ${subtasks.join(", ")}`);
+    console.log("\n[HIERARCHICAL] Supervisor decomposition:");
+    subtasks.forEach((s, i) => console.log(`  Worker ${i + 1}: ${s}`));
+
+    this.stateMachine.send("ACTION_READY");
+    const workerTasks: AgentTask[] = subtasks.map((sub, i) => ({
+      id: `worker-${i}`,
+      handler: async () => {
+        await new Promise((r) => setTimeout(r, 20 + Math.random() * 30));
+        if (Math.random() < 0.15) throw new Error(`Subtask "${sub}" failed`);
+        return `Completed: ${sub}`;
+      },
+    }));
+
+    const workerResults = await this.workerPool.executeAll(workerTasks);
+    this.stateMachine.send("OBSERVATION_READY");
+
+    this.stateMachine.send("EVALUATING");
+    const shouldEscalate = this.supervisor.shouldEscalate(workerResults);
+    if (shouldEscalate) {
+      supervisorDecisions.push("Escalating: too many worker failures");
+      this.stateMachine.send("FAIL");
+    } else {
+      supervisorDecisions.push("All workers completed successfully");
+      this.stateMachine.send("EVAL_COMPLETE");
+      this.stateMachine.send("DONE");
+    }
+
+    const summary = ParallelAgentExecutor.aggregateResults(workerResults);
+    const finalVerdict = shouldEscalate
+      ? `ESCALATED (${summary.failed}/${summary.total} workers failed)`
+      : `COMPLETED (${summary.succeeded}/${summary.total} workers succeeded)`;
+
+    return { subtaskResults: workerResults, supervisorDecisions, finalVerdict };
+  }
+}
+
+// ─── Demo ──────────────────────────────────────────────────────────────
+
+async function main() {
+  console.log("=== Extended Architecture Demo ===\n");
+
+  // 1. Tool Registry
+  const registry = new ToolRegistry();
+  registry.register({
+    name: "web_search",
+    description: "Search the web for information",
+    parameters: { query: { type: "string", required: true, description: "Search query" } },
+    execute: async (args) => `Results for "${args.query}"`,
+  });
+  registry.register({
+    name: "calculator",
+    description: "Evaluate a mathematical expression",
+    parameters: { expression: { type: "string", required: true, description: "Math expression" } },
+    execute: async (args) => `= ${Function(`"use strict"; return (${args.expression})`)()}`,
+  });
+  console.log(`Registered tools: ${registry.list().map((t) => t.name).join(", ")}`);
+
+  // 2. State Machine
+  const sm = new LoopStateMachine();
+  console.log(`\nState Machine: initial=${sm.getState()}`);
+  sm.send("START");
+  console.log(`  after START: ${sm.getState()}`);
+  sm.send("THOUGHT_READY");
+  console.log(`  after THOUGHT_READY: ${sm.getState()}`);
+  sm.send("ACTION_READY");
+  console.log(`  after ACTION_READY: ${sm.getState()}`);
+  console.log(`  can ABORT: ${sm.can("ABORT")}`);
+  console.log(`  isTerminal: ${sm.isTerminal()}`);
+
+  // 3. Pipeline Orchestrator
+  const pipeline = new PipelineOrchestrator();
+  pipeline.addStage({
+    name: "validate",
+    handler: async (input) => {
+      if (typeof input !== "string" || input.length === 0) throw new Error("Invalid input");
+      return `validated: ${input}`;
+    },
+    retries: 1,
+  });
+  pipeline.addStage({
+    name: "process",
+    handler: async (input) => `processed: ${input}`,
+    fallback: async (_input, _err) => "fallback-processed",
+  });
+  pipeline.addStage({
+    name: "format",
+    handler: async (input) => `formatted: ${input}`,
+    timeoutMs: 100,
+  });
+  const pipelineResult = await pipeline.run("hello");
+  console.log(`\nPipeline: ${pipelineResult.results.length} stages, final=${pipelineResult.finalOutput}`);
+
+  // 4. ReAct Executor
+  const react = new ReActExecutor({
+    maxCycles: 3,
+    tools: registry,
+    llm: async (prompt) => {
+      if (prompt.includes("Observation:")) {
+        return { thought: "I have enough info.", tool: null, args: {} };
+      }
+      return { thought: "Let me search.", tool: "web_search", args: { query: "typescript" } };
+    },
+  });
+  const reactResult = await react.execute("Find info about TypeScript");
+  console.log(`\nReAct Executor: ${reactResult.steps.length} steps, answer="${reactResult.answer.slice(0, 30)}..."`);
+
+  // 5. Parallel Executor
+  const parallel = new ParallelAgentExecutor(2);
+  const tasks: AgentTask[] = [
+    { id: "a", handler: async () => { await new Promise((r) => setTimeout(r, 10)); return "A done"; } },
+    { id: "b", handler: async () => { await new Promise((r) => setTimeout(r, 5)); return "B done"; } },
+    { id: "c", handler: async () => { throw new Error("C failed"); } },
+  ];
+  const parallelResults = await parallel.executeAll(tasks);
+  const stats = ParallelAgentExecutor.aggregateResults(parallelResults);
+  console.log(`\nParallel Executor: ${stats.succeeded} succeeded, ${stats.failed} failed`);
+
+  // 6. Hierarchical Controller
+  const controller = new HierarchicalController({
+    decompose: (task) => {
+      if (task.includes("deploy")) return ["build", "test", "package", "push"];
+      return ["analyze", "implement"];
+    },
+    shouldEscalate: (results) => results.filter((r) => !r.success).length > 1,
+  });
+  const hierResult = await controller.execute("deploy release v2.0");
+  console.log(`\nHierarchical Controller: ${hierResult.finalVerdict}`);
+  hierResult.supervisorDecisions.forEach((d) => console.log(`  Decision: ${d}`));
+}
+
+await main();
+```
+
+**Key concepts demonstrated:**
+- **ToolRegistry** with JSON Schema parameter validation prevents malformed tool calls at the boundary
+- **LoopStateMachine** formalizes the agent lifecycle — every transition is explicit and auditable
+- **PipelineOrchestrator** chains multi-stage processing with per-stage retry budgets and fallback handlers
+- **ReActExecutor** wraps the generic executor around a state machine, tool registry, and pluggable LLM
+- **ParallelAgentExecutor** fans out N tasks across configurable concurrency with result aggregation
+- **HierarchicalController** implements supervisor/worker decomposition: the supervisor plans, workers execute, results are evaluated, and the supervisor decides to escalate or continue
+
+---
+
 ## Summary
 
 1.  **ReAct** is the default pattern for good reason: tight feedback between thought and observation prevents hallucination drift. Use it for most tool-using agents with < 10 steps.

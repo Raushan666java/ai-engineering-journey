@@ -551,6 +551,139 @@ function runPDA(pda: PDAConfig, input: string): boolean {
 }
 ```
 
+## TypeScript Implementation: PDA Simulator and CFG-to-PDA Converter
+
+```typescript
+// Pushdown Automaton Simulator
+
+type PDAState = string;
+type PDAStackSymbol = string;
+
+class PDARule {
+  constructor(
+    public from: PDAState,
+    public input: string,        // input symbol or "ε"
+    public pop: PDAStackSymbol,  // stack symbol to pop or "ε"
+    public to: PDAState,
+    public push: string          // string to push (characters pushed in reverse order)
+  ) {}
+}
+
+class PDA {
+  constructor(
+    public states: Set<PDAState>,
+    public inputAlphabet: Set<string>,
+    public stackAlphabet: Set<PDAStackSymbol>,
+    public rules: PDARule[],
+    public startState: PDAState,
+    public startStack: PDAStackSymbol,
+    public acceptStates: Set<PDAState>
+  ) {}
+
+  accepts(input: string): boolean {
+    return this.simulate(input, this.startState, [this.startStack], 0);
+  }
+
+  private simulate(
+    input: string,
+    state: PDAState,
+    stack: PDAStackSymbol[],
+    pos: number
+  ): boolean {
+    if (pos > input.length) return false;
+    if (this.acceptStates.has(state)) return true;
+
+    // Try epsilon transitions first (no input consumed)
+    for (const rule of this.getRules(state, "ε")) {
+      if (rule.pop !== "ε" && (stack.length === 0 || stack[stack.length - 1] !== rule.pop))
+        continue;
+      const newStack = [...stack];
+      if (rule.pop !== "ε") newStack.pop();
+      if (rule.push !== "ε") for (const ch of [...rule.push].reverse()) newStack.push(ch);
+      if (this.simulate(input, rule.to, newStack, pos)) return true;
+    }
+
+    // Try consuming one input symbol
+    if (pos < input.length) {
+      for (const rule of this.getRules(state, input[pos])) {
+        if (rule.pop !== "ε" && (stack.length === 0 || stack[last(stack)] !== rule.pop))
+          continue;
+        const newStack = [...stack];
+        if (rule.pop !== "ε") newStack.pop();
+        if (rule.push !== "ε") for (const ch of [...rule.push].reverse()) newStack.push(ch);
+        if (this.simulate(input, rule.to, newStack, pos + 1)) return true;
+      }
+    }
+
+    return false;
+  }
+
+  private getRules(state: PDAState, symbol: string): PDARule[] {
+    return this.rules.filter(r => r.from === state && r.input === symbol);
+  }
+
+  static fromCFG(cfg: { variables: string[]; terminals: string[]; productions: { lhs: string; rhs: string[] }[] }): PDA {
+    const rules: PDARule[] = [];
+    const q0 = "q0";
+    const qLoop = "q1";
+    const qAccept = "q2";
+
+    // Initial rule: push start symbol onto stack
+    rules.push(new PDARule(q0, "ε", "ε", qLoop, `${cfg.productions[0].lhs}`));
+
+    // For each production A → γ, add rule: (qLoop, ε, A, qLoop, γ)
+    for (const p of cfg.productions) {
+      rules.push(new PDARule(qLoop, "ε", p.lhs, qLoop, p.rhs.join("")));
+    }
+
+    // For each terminal a, add rule: (qLoop, a, a, qLoop, ε)
+    for (const t of cfg.terminals) {
+      rules.push(new PDARule(qLoop, t, t, qLoop, "ε"));
+    }
+
+    // Accept on empty stack
+    rules.push(new PDARule(qLoop, "ε", "ε", qAccept, "ε"));
+
+    return new PDA(
+      new Set([q0, qLoop, qAccept]),
+      new Set(cfg.terminals),
+      new Set([...cfg.variables, ...cfg.terminals]),
+      rules, q0, "S", new Set([qAccept])
+    );
+  }
+}
+
+function last<T>(arr: T[]): number { return arr.length - 1; }
+
+// PDA for balanced parentheses
+const pda = new PDA(
+  new Set(["q0", "q1", "q2"]),
+  new Set(["(", ")"]),
+  new Set(["Z", "X"]),
+  [
+    new PDARule("q0", "ε", "ε", "q1", "Z"),
+    new PDARule("q1", "(", "Z", "q1", "XZ"),
+    new PDARule("q1", "(", "X", "q1", "XX"),
+    new PDARule("q1", ")", "X", "q1", "ε"),
+    new PDARule("q1", "ε", "Z", "q2", "ε")
+  ],
+  "q0", "Z", new Set(["q2"])
+);
+
+console.log(pda.accepts("()"));     // true
+console.log(pda.accepts("(())"));   // true
+console.log(pda.accepts("(()"));    // false
+console.log(pda.accepts(")("));     // false
+
+// Generate PDA from simple CFG
+const cfgPDA = PDA.fromCFG({
+  variables: ["S"],
+  terminals: ["a", "b"],
+  productions: [{ lhs: "S", rhs: ["a", "S", "b"] }, { lhs: "S", rhs: [] }]
+});
+console.log(cfgPDA.states.size); // 3
+```
+
 ## Summary
 
 - PDA = NFA + stack (LIFO memory).

@@ -423,6 +423,114 @@ function haltToEmptyReduction(
 
 4. **Reductions transfer undecidability.** To prove a new problem undecidable, show it can solve a known undecidable problem. This is the standard toolkit: halting → acceptance → emptiness → equivalence → all non-trivial TM properties.
 
+## TypeScript Implementation: Decision Problem Classifier and Halting Problem
+
+```typescript
+// Decision Problem Classifier and Undecidability Demonstrations
+
+type DecisionProblem = {
+  name: string;
+  inputType: string;
+  question: string;
+  isDecidable: boolean;
+  complexityClass?: string;
+};
+
+class DecisionProblemClassifier {
+  static knownProblems: DecisionProblem[] = [
+    { name: "DFA Membership", inputType: "DFA + string", question: "Does the DFA accept the string?", isDecidable: true, complexityClass: "P" },
+    { name: "DFA Emptiness", inputType: "DFA", question: "Does the DFA accept any string?", isDecidable: true, complexityClass: "P" },
+    { name: "DFA Equivalence", inputType: "Two DFAs", question: "Do the two DFAs recognize the same language?", isDecidable: true, complexityClass: "PSPACE" },
+    { name: "NFA Membership", inputType: "NFA + string", question: "Does the NFA accept the string?", isDecidable: true, complexityClass: "P" },
+    { name: "CFG Membership (CYK)", inputType: "CFG + string", question: "Does the CFG generate the string?", isDecidable: true, complexityClass: "P" },
+    { name: "CFG Emptiness", inputType: "CFG", question: "Does the CFG generate any string?", isDecidable: true, complexityClass: "P" },
+    { name: "CFG Ambiguity", inputType: "CFG", question: "Is the grammar ambiguous?", isDecidable: false },
+    { name: "CFG Equivalence", inputType: "Two CFGs", question: "Do the two CFGs generate the same language?", isDecidable: false },
+    { name: "CFL Membership", inputType: "PDA + string", question: "Does the PDA accept the string?", isDecidable: true, complexityClass: "P" },
+    { name: "TM Acceptance (A_TM)", inputType: "TM + string", question: "Does the TM accept the string?", isDecidable: false },
+    { name: "Halting Problem", inputType: "TM + string", question: "Does the TM halt on the string?", isDecidable: false },
+    { name: "TM Emptiness", inputType: "TM", question: "Does the TM accept any string?", isDecidable: false },
+    { name: "TM Equivalence", inputType: "Two TMs", question: "Do the two TMs recognize the same language?", isDecidable: false },
+    { name: "Post Correspondence", inputType: "Set of tiles", question: "Does a matching sequence exist?", isDecidable: false },
+    { name: "Hilbert's 10th", inputType: "Polynomial equation", question: "Does the equation have integer solutions?", isDecidable: false },
+    { name: "QBF Satisfiability", inputType: "Quantified Boolean formula", question: "Is the QBF true?", isDecidable: true, complexityClass: "PSPACE-complete" },
+  ];
+
+  static classify(model: string, question: string): DecisionProblem | string {
+    const match = this.knownProblems.find(p =>
+      p.name.toLowerCase().includes(model.toLowerCase()) ||
+      p.question.toLowerCase().includes(question.toLowerCase())
+    );
+    return match || `Unknown problem: "${model}: ${question}" — research required`;
+  }
+
+  static listUndecidable(): DecisionProblem[] {
+    return this.knownProblems.filter(p => !p.isDecidable);
+  }
+
+  static listDecidable(): DecisionProblem[] {
+    return this.knownProblems.filter(p => p.isDecidable);
+  }
+}
+
+class HaltingProblem {
+  // Simulates the halting problem proof by diagonalization
+  static proveUndecidable(): string[] {
+    const proof: string[] = [];
+    proof.push("Theorem: The halting problem is undecidable.");
+    proof.push("Proof by contradiction using diagonalization (Turing 1936):");
+    proof.push("1. Assume HALT(M, w) exists and decides if TM M halts on w.");
+    proof.push("2. Construct a new TM D that takes a TM description ⟨M⟩:");
+    proof.push("   - D simulates HALT(M, ⟨M⟩).");
+    proof.push("   - If HALT says M halts, D enters an infinite loop.");
+    proof.push("   - If HALT says M doesn't halt, D halts.");
+    proof.push("3. Now run D on its own description: D(⟨D⟩).");
+    proof.push("   - If D halts, HALT(D, ⟨D⟩) says D doesn't halt → contradiction.");
+    proof.push("   - If D loops, HALT(D, ⟨D⟩) says D halts → contradiction.");
+    proof.push("4. Therefore no such HALT can exist. QED.");
+    return proof;
+  }
+
+  static riceTheorem(): string[] {
+    const proof: string[] = [];
+    proof.push("Rice's Theorem: Every non-trivial semantic property of TMs is undecidable.");
+    proof.push("'Semantic' means the property depends only on the language recognized.");
+    proof.push("'Non-trivial' means some TMs have it and some don't.");
+    proof.push("");
+    proof.push("Examples of undecidable properties:");
+    proof.push("- Does TM M accept the empty string ε?");
+    proof.push("- Does TM M accept a finite language?");
+    proof.push("- Does TM M accept a regular language?");
+    proof.push("- Does TM M accept a context-free language?");
+    proof.push("- Does TM M accept a string of length > 100?");
+    proof.push("");
+    proof.push("Decidable properties of TMs are always structural (syntactic):");
+    proof.push("- Does TM M have exactly 5 states?");
+    proof.push("- Does TM M ever move left on the first cell?");
+    proof.push("- Does TM M have a transition on state q3 reading 'a'?");
+    return proof;
+  }
+
+  static undecidabilityReduction(): string[] {
+    return [
+      "Standard undecidability reduction chain:",
+      "HALT (Halting Problem) — PCP (Post Correspondence Problem)",
+      "   ↓                                            ↓",
+      "A_TM (TM Acceptance)                    EMPTY_TM (TM Emptiness)",
+      "   ↓                                            ↓",
+      "ALL_TM (TM recognizes Σ*)              EQ_TM (TM Equivalence)",
+      "   ↓                                            ↓",
+      "REGULAR_TM (TM recognizes regular lang)  ... infinite chain"
+    ];
+  }
+}
+
+console.log(DecisionProblemClassifier.classify("DFA", "accept"));
+console.log(DecisionProblemClassifier.classify("TM", "halt"));
+console.log(HaltingProblem.proveUndecidable().join("\n"));
+console.log(HaltingProblem.riceTheorem().join("\n"));
+```
+
 ## Summary
 
 - The halting problem (does TM M halt on w?) is undecidable — proved via diagonalization.

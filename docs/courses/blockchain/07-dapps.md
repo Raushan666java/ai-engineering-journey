@@ -590,6 +590,120 @@ async function loadAllNFTs(
 **B) Content is addressable by its hash, not its location — links never break if content doesn't change.** In IPFS, the CID (content hash) uniquely identifies the content. As long as the content is the same, the CID is the same, and anyone hosting that CID can serve it.
 </details>
 
+### TypeScript: Multi-Sig Wallet Logic
+
+```typescript
+interface MultiSigTx {
+  id: string; to: string; value: bigint; data: string; confirmations: Set<string>; executed: boolean;
+}
+
+class MultiSigWallet {
+  owners: string[];
+  required: number;
+  transactions: Map<string, MultiSigTx> = new Map();
+  nonce = 0;
+
+  constructor(owners: string[], required: number) {
+    this.owners = owners;
+    this.required = required;
+  }
+
+  submit(to: string, value: bigint, data: string): string {
+    const id = sha256(to + value.toString() + data + this.nonce++);
+    this.transactions.set(id, { id, to, value, data, confirmations: new Set(), executed: false });
+    return id;
+  }
+
+  confirm(txId: string, owner: string): boolean {
+    if (!this.owners.includes(owner)) return false;
+    const tx = this.transactions.get(txId);
+    if (!tx || tx.executed) return false;
+    tx.confirmations.add(owner);
+    if (tx.confirmations.size >= this.required) {
+      tx.executed = true;
+    }
+    return tx.executed;
+  }
+
+  revoke(txId: string, owner: string): void {
+    this.transactions.get(txId)?.confirmations.delete(owner);
+  }
+
+  getQueue(): MultiSigTx[] {
+    return [...this.transactions.values()].filter(tx => !tx.executed);
+  }
+}
+```
+
+### TypeScript: Event Listener Framework
+
+```typescript
+type EventCallback = (event: unknown) => void;
+
+class EventListener {
+  private listeners: Map<string, EventCallback[]> = new Map();
+  private polling = false;
+
+  on(eventName: string, callback: EventCallback): void {
+    if (!this.listeners.has(eventName)) this.listeners.set(eventName, []);
+    this.listeners.get(eventName)!.push(callback);
+  }
+
+  off(eventName: string, callback: EventCallback): void {
+    const cbs = this.listeners.get(eventName);
+    if (cbs) this.listeners.set(eventName, cbs.filter(c => c !== callback));
+  }
+
+  emit(eventName: string, data: unknown): void {
+    this.listeners.get(eventName)?.forEach(cb => cb(data));
+  }
+
+  async poll(fetchFn: () => Promise<{ event: string; data: unknown }[]>, intervalMs = 5000): Promise<void> {
+    this.polling = true;
+    while (this.polling) {
+      const events = await fetchFn();
+      for (const ev of events) this.emit(ev.event, ev.data);
+      await new Promise(r => setTimeout(r, intervalMs));
+    }
+  }
+
+  stop(): void { this.polling = false; }
+}
+```
+
+### TypeScript: Smart Contract Interaction Wrapper
+
+```typescript
+interface ContractABI {
+  name: string; type: string; inputs: { name: string; type: string }[];
+  outputs?: { name: string; type: string }[];
+}
+
+class ContractWrapper {
+  private abi: ContractABI[];
+  private address: string;
+
+  constructor(address: string, abi: ContractABI[]) {
+    this.address = address;
+    this.abi = abi;
+  }
+
+  estimateGas(functionName: string, args: unknown[]): number {
+    const fn = this.abi.find(a => a.name === functionName && a.type === "function");
+    if (!fn) throw new Error(`Function ${functionName} not found`);
+    let gas = 21000;
+    gas += args.length * 5000;
+    return gas;
+  }
+
+  parseError(data: string): string {
+    if (data.startsWith("0x08c379a0")) return "Revert: " + Buffer.from(data.slice(10), "hex").toString();
+    if (data.startsWith("0x4e487b71")) return "Panic: arithmetic error";
+    return "Unknown error: " + data;
+  }
+}
+```
+
 ## Summary
 
 - dApps remove central points of control and failure by utilizing blockchain and P2P storage.

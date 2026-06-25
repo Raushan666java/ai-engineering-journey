@@ -581,6 +581,122 @@ with timing("compute"):
 # - Use context managers when timing varies per invocation
 # - Use explicit wrappers when you need conditional application
 ```
+```typescript
+// Chapter 15: TypeScript Decorator & Higher-Order Function Equivalents
+// Python: decorators wrap functions → TypeScript: higher-order functions
+
+// Simple function wrapper (like a decorator without @ syntax)
+function timer<Args extends unknown[], Return>(
+  fn: (...args: Args) => Return
+): (...args: Args) => Return {
+  return (...args: Args): Return => {
+    const start = performance.now();
+    const result = fn(...args);
+    const elapsed = performance.now() - start;
+    console.log(`${fn.name} took ${elapsed.toFixed(2)}ms`);
+    return result;
+  };
+}
+
+const slowSum = (a: number, b: number): number => {
+  for (let i = 0; i < 1e7; i++);  // simulate work
+  return a + b;
+};
+
+const timedSum = timer(slowSum);
+console.log(timedSum(3, 4));  // logs timing, returns 7
+
+// Python: @lru_cache → TypeScript: memoization wrapper
+function memoize<Args extends unknown[], Return>(
+  fn: (...args: Args) => Return
+): (...args: Args) => Return {
+  const cache = new Map<string, Return>();
+  return (...args: Args): Return => {
+    const key = JSON.stringify(args);
+    if (cache.has(key)) return cache.get(key)!;
+    const result = fn(...args);
+    cache.set(key, result);
+    return result;
+  };
+}
+
+const fib = memoize((n: number): number => {
+  if (n <= 1) return n;
+  return fib(n - 1) + fib(n - 2);
+});
+console.log(fib(40));  // 102334155 (fast due to memoization)
+
+// TypeScript native decorators (Stage 3, TS 5.x)
+function Logged(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+  const original = descriptor.value;
+  descriptor.value = function (...args: any[]) {
+    console.log(`Calling ${propertyKey} with`, args);
+    return original.apply(this, args);
+  };
+}
+```
+
+### TypeScript Higher-Order Function Patterns
+
+```typescript
+// Python: retry decorator → TypeScript: retry wrapper
+async function retry<T>(
+  fn: () => Promise<T>,
+  maxAttempts: number = 3,
+  delayMs: number = 1000
+): Promise<T> {
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      return await fn();
+    } catch (error) {
+      if (attempt === maxAttempts) throw error;
+      console.warn(`Attempt ${attempt} failed, retrying...`);
+      await new Promise((r) => setTimeout(r, delayMs));
+    }
+  }
+  throw new Error("Unreachable");
+}
+
+// Python: @validate_args → TypeScript: runtime type check wrapper
+function validateTypes(fn: Function, paramTypes: string[]): Function {
+  return (...args: unknown[]) => {
+    for (let i = 0; i < args.length; i++) {
+      const actual = typeof args[i];
+      const expected = paramTypes[i];
+      if (actual !== expected) {
+        throw new TypeError(`Argument ${i}: expected ${expected}, got ${actual}`);
+      }
+    }
+    return fn(...args);
+  };
+}
+const safeAdd = validateTypes((a: number, b: number) => a + b, ["number", "number"]);
+console.log(safeAdd(2, 3));  // 5
+// safeAdd(2, "3");  // TypeError
+
+// Python: @deprecated → TypeScript: deprecation wrapper
+function deprecated(message: string) {
+  return (_target: any, propertyKey: string, descriptor: PropertyDescriptor) => {
+    const original = descriptor.value;
+    descriptor.value = function (...args: unknown[]) {
+      console.warn(`Deprecated: ${propertyKey} — ${message}`);
+      return original.apply(this, args);
+    };
+  };
+}
+
+// Python: @singleton → TypeScript: Singleton pattern
+class Singleton {
+  private static instance: Singleton;
+  private constructor() {}
+  static getInstance(): Singleton {
+    if (!Singleton.instance) {
+      Singleton.instance = new Singleton();
+    }
+    return Singleton.instance;
+  }
+}
+```
 
 ## Summary
 

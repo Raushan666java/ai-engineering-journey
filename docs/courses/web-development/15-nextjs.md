@@ -554,6 +554,57 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: Next.js SSR/SSG Comparator & Middleware Builder
+
+```typescript
+class RenderingStrategy {
+  static compare(strategy: "ssr" | "ssg" | "isr" | "csr"): { dataAge: string; freshPerRequest: boolean; cached: boolean; revalidate?: number } {
+    const configs = {
+      ssr: { dataAge: "Request time", freshPerRequest: true, cached: false },
+      ssg: { dataAge: "Build time", freshPerRequest: false, cached: true },
+      isr: { dataAge: "Build time + revalidate", freshPerRequest: false, cached: true, revalidate: 60 },
+      csr: { dataAge: "Client render time", freshPerRequest: true, cached: false },
+    };
+    return configs[strategy];
+  }
+  static recommend(pages: Array<{ path: string; updateFreq: string; userSpecific: boolean }>): Record<string, string> {
+    const recommendations: Record<string, string> = {};
+    pages.forEach(p => {
+      if (p.userSpecific) recommendations[p.path] = "SSR";
+      else if (p.updateFreq === "never") recommendations[p.path] = "SSG";
+      else recommendations[p.path] = "ISR (revalidate: 60)";
+    });
+    return recommendations;
+  }
+}
+
+class MiddlewareBuilder {
+  static createRedirect(from: string, to: string, permanent: boolean = false): Record<string, any> {
+    return { source: from, destination: to, permanent };
+  }
+  static createRewrite(from: string, to: string): Record<string, any> {
+    return { source: from, destination: to };
+  }
+  static header(source: string, headers: Record<string, string>): Record<string, any> {
+    return { source, headers: Object.entries(headers).map(([k, v]) => ({ key: k, value: v })) };
+  }
+}
+
+class ServerActionBuilder {
+  static create<T>(name: string, fn: (data: T) => Promise<Record<string, any>>): string {
+    return `"use server";
+
+export async function ${name}(formData: FormData) {
+  const data = Object.fromEntries(formData) as unknown as T;
+  return JSON.stringify(await fn(data));
+}`;
+  }
+}
+
+console.log("Strategy:", RenderingStrategy.compare("isr"));
+console.log("Recommend:", RenderingStrategy.recommend([{ path: "/dashboard", updateFreq: "daily", userSpecific: true }]));
+```
+
 ## Summary
 
 Next.js is a React framework providing SSR, SSG, ISR, and client rendering. The App Router uses file-based routing with nested layouts. Server Components fetch data directly without client JavaScript. API routes handle backend logic. Middleware intercepts requests. SEO is managed through metadata export and sitemap generation.

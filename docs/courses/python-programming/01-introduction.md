@@ -565,6 +565,132 @@ tsc --version
 const version: string = process.version;
 console.log(`Node.js version: ${version}`);
 // Node.js v22.0.0
+
+// TypeScript: static typing example
+function greet(name: string, age: number): string {
+  return `Hello, ${name}! You are ${age} years old.`;
+}
+// Python equivalent: def greet(name, age): return f"Hello, {name}! ..."
+
+// TypeScript: arrays and methods
+const languages: string[] = ["Python", "TypeScript", "JavaScript"];
+languages.push("Rust");
+console.log(languages.length);  // 4
+
+// TypeScript: BigInt for large integers (Python int is arbitrary precision)
+const big: bigint = 2n ** 100n;
+console.log(big.toString());
+
+// TypeScript: module system
+import { createServer } from "node:http";
+const server = createServer((req, res) => {
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("Hello from TypeScript!\n");
+});
+server.listen(3000);
+```
+
+### TypeScript Development Environment
+
+```typescript
+// package.json — project setup
+{
+  "name": "ts-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
+```
+
+```typescript
+// tsconfig.json — TypeScript compiler configuration
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
+}
+```
+
+### Python → TypeScript Quick Reference
+
+| Python Concept | TypeScript Equivalent | Key Difference |
+|----------------|----------------------|----------------|
+| `venv` / `conda` | `node_modules` / Bun workspaces | Python isolates interpreters; Node has global vs local packages |
+| `pip install` | `npm install` / `bun add` | Same concept, different registries |
+| `requirements.txt` | `package.json` | TS pins exact versions in lockfile |
+| `python script.py` | `bun run script.ts` | TS compiles (or transpiles via Bun) before execution |
+| REPL | `node` / `bun` shell | Both provide interactive read-eval-print loops |
+| `PyPI` | `npm` registry | Both are public package registries |
+
+### Python vs TypeScript: Hello World Comparison
+
+```typescript
+// TypeScript Hello World with type safety
+function hello(name: string): string {
+  return `Hello, ${name}! Welcome to TypeScript.`;
+}
+
+// Python: def hello(name): return f"Hello, {name}! Welcome to Python."
+console.log(hello("Developer"));
+
+// TypeScript type checking catches errors at compile time
+const greeting: string = hello("World");
+// const age: number = greeting;  // TypeScript error: Type 'string' not assignable to 'number'
+```
+
+### Python vs TypeScript: Key Architectural Differences
+
+```typescript
+// Execution model: Interpreted (Python) vs Compiled (TypeScript → JavaScript)
+// Python: python script.py  (interpreted line by line)
+// TypeScript: tsc → node dist/script.js  (compiled, then run)
+// Bun: bun run script.ts  (transpiled and run JIT)
+
+// Type safety: Dynamic (Python) vs Static (TypeScript)
+// Python: x = 42; x = "hello"  (perfectly valid)
+// TypeScript: let x: number = 42; x = "hello";  // Compile error
+
+// Block structure: Indentation (Python) vs Braces (TypeScript)
+// Python:
+//   if True:
+//       print("hello")
+// TypeScript:
+//   if (true) {
+//     console.log("hello");
+//   }
+
+// TypeScript: Union types (not available in Python type hints)
+type Result = { status: "success"; data: string } | { status: "error"; message: string };
+function handleResult(r: Result): string {
+  if (r.status === "success") return `Data: ${r.data}`;
+  return `Error: ${r.message}`;
+}
+// Python: Union types via typing.Union but no discriminated union narrowing
+
+// TypeScript: Generics (compile-time) vs Python generics (runtime hints)
+function identity<T>(value: T): T { return value; }
+const num = identity<number>(42);    // type: number
+const str = identity<string>("hi");  // type: string
+
+// TypeScript: Optional chaining (Python: no equivalent)
+const user2: { address?: { city?: string } } = {};
+const city2 = user2?.address?.city ?? "Unknown";
+// Python: getattr(getattr(user, "address", None), "city", "Unknown") or try/except
 ```
 
 ## Summary

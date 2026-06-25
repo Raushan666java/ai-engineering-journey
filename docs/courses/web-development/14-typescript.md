@@ -596,6 +596,55 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: Type Guard Generator & Utility Type Builder
+
+```typescript
+class TypeGuardGenerator {
+  static isString(val: unknown): val is string { return typeof val === "string"; }
+  static isNumber(val: unknown): val is number { return typeof val === "number" && !isNaN(val); }
+  static isBoolean(val: unknown): val is boolean { return typeof val === "boolean"; }
+  static isObject<T extends Record<string, unknown>>(val: unknown, shape: Record<keyof T, (v: unknown) => boolean>): val is T {
+    if (typeof val !== "object" || val === null) return false;
+    return Object.entries(shape).every(([key, check]) => check((val as Record<string, unknown>)[key]));
+  }
+  static isArrayOf<T>(val: unknown, check: (v: unknown) => v is T): val is T[] {
+    return Array.isArray(val) && val.every(check);
+  }
+  static isNullable<T>(val: unknown, check: (v: unknown) => v is T): val is T | null | undefined {
+    return val == null || check(val);
+  }
+}
+
+class UtilityTypeBuilder {
+  static deepPartial<T>(obj: T): Partial<T> {
+    if (typeof obj !== "object" || obj === null) return obj;
+    const result: Record<string, any> = {};
+    for (const [k, v] of Object.entries(obj))
+      result[k] = typeof v === "object" ? UtilityTypeBuilder.deepPartial(v) : v;
+    return result as Partial<T>;
+  }
+  static pick<T, K extends keyof T>(obj: T, ...keys: K[]): Pick<T, K> {
+    const result = {} as Pick<T, K>;
+    keys.forEach(k => result[k] = obj[k]);
+    return result;
+  }
+}
+
+class DiscriminatedUnionDemo {
+  static process(event: { kind: string; data: unknown }): string {
+    switch (event.kind) {
+      case "click": return `Clicked at ${JSON.stringify(event.data)}`;
+      case "focus": return `Focused on ${event.data}`;
+      case "scroll": return `Scrolled to position ${event.data}`;
+      default: return `Unknown event: ${event.kind}`;
+    }
+  }
+}
+
+console.log("isNumber:", TypeGuardGenerator.isNumber(42));
+console.log("Pick:", UtilityTypeBuilder.pick({ a: 1, b: 2, c: 3 }, "a", "c"));
+```
+
 ## Summary
 
 TypeScript adds static type checking to JavaScript, catching errors at compile time. Generics enable reusable, type-safe components. Utility types transform existing types. Type narrowing and discriminated unions make code safer. TypeScript integrates seamlessly with React and Express for end-to-end type safety.

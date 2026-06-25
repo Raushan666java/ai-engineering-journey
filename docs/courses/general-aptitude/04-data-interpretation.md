@@ -546,6 +546,55 @@ console.log(`Marketing female managers: ${femaleMgrs}`);
 - **Fraction Conversion:** Knowing common fractions: $33.3\% = 1/3$, $25\% = 1/4$, $20\% = 1/5$, $12.5\% = 1/8$
 - **Growth Rate Doubling:** A 10% growth rate doubles in ~7.2 years (Rule of 72)
 
+### TypeScript: Growth Rate Calculator & Data Chart Generator
+
+```typescript
+class GrowthCalculator {
+  static CAGR(begin: number, end: number, years: number): number {
+    return (Math.pow(end / begin, 1 / years) - 1) * 100;
+  }
+  static compoundGrowth(principal: number, rate: number, periods: number): number[] {
+    const values: number[] = [principal];
+    for (let i = 1; i <= periods; i++)
+      values.push(values[i - 1] * (1 + rate / 100));
+    return values;
+  }
+  static movingAverage(data: number[], window: number): number[] {
+    const result: number[] = [];
+    for (let i = window - 1; i < data.length; i++)
+      result.push(data.slice(i - window + 1, i + 1).reduce((a, b) => a + b, 0) / window);
+    return result;
+  }
+  static trendLine(data: number[]): { slope: number; intercept: number } {
+    const n = data.length, xm = (n - 1) / 2, ym = data.reduce((a, b) => a + b, 0) / n;
+    const num = data.reduce((s, y, x) => s + (x - xm) * (y - ym), 0);
+    const den = data.reduce((s, _, x) => s + (x - xm) ** 2, 0);
+    return { slope: den === 0 ? 0 : num / den, intercept: ym - (den === 0 ? 0 : num / den) * xm };
+  }
+}
+
+class ASCIIChartRenderer {
+  static bar(labels: string[], values: number[], width: number = 20): void {
+    const max = Math.max(...values);
+    labels.forEach((l, i) => {
+      const barLen = Math.round((values[i] / max) * width);
+      console.log(`${l.padEnd(12)} ${"█".repeat(barLen)} ${values[i]}`);
+    });
+  }
+  static pie(labels: string[], values: number[]): void {
+    const total = values.reduce((a, b) => a + b, 0);
+    labels.forEach((l, i) => {
+      const pct = (values[i] / total) * 100;
+      console.log(`${l.padEnd(12)} ${"●".repeat(Math.round(pct / 5))} ${pct.toFixed(1)}%`);
+    });
+  }
+}
+
+console.log("CAGR:", GrowthCalculator.CAGR(10000, 16105, 5).toFixed(2) + "%");
+console.log("MA:", GrowthCalculator.movingAverage([200, 220, 250, 240, 280, 310], 3));
+ASCIIChartRenderer.bar(["Q1", "Q2", "Q3", "Q4"], [200, 250, 220, 280]);
+```
+
 ## Summary
 
 - Tables: read carefully, identify headers, compute percentages correctly

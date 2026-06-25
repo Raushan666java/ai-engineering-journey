@@ -432,6 +432,57 @@ console.log(isValidModusTollens(true, false, true));   // true
 console.log(isValidModusTollens(true, true, false));   // false
 ```
 
+## TypeScript Implementations
+
+```typescript
+// --- SAT Solver via Truth Table ---
+function satSolve(vars: number, expr: (vals: boolean[]) => boolean): boolean[][] {
+  const solutions: boolean[][] = [];
+  for (let i = 0; i < 1 << vars; i++) {
+    const vals: boolean[] = [];
+    for (let j = vars - 1; j >= 0; j--) vals.push(Boolean(i & (1 << j)));
+    if (expr(vals)) solutions.push(vals);
+  }
+  return solutions;
+}
+// (p ∨ q) ∧ (¬p ∨ ¬q)
+const expr = (v: boolean[]) => (v[0] || v[1]) && (!v[0] || !v[1]);
+console.log('SAT solutions:', satSolve(2, expr));
+// [[false,true],[true,false]]
+
+// --- Logical Equivalence Checker ---
+function areEquivalent(
+  vars: number,
+  expr1: (vals: boolean[]) => boolean,
+  expr2: (vals: boolean[]) => boolean
+): boolean {
+  for (let i = 0; i < 1 << vars; i++) {
+    const vals: boolean[] = [];
+    for (let j = vars - 1; j >= 0; j--) vals.push(Boolean(i & (1 << j)));
+    if (expr1(vals) !== expr2(vals)) return false;
+  }
+  return true;
+}
+// Verify: p → q ≡ ¬p ∨ q
+const impl = (v: boolean[]) => !v[0] || v[1];
+const orForm = (v: boolean[]) => !v[0] || v[1];
+console.log('p→q ≡ ¬p∨q:', areEquivalent(2, impl, orForm)); // true
+
+// --- Truth Table Generator ---
+function truthTable(vars: number, expr: (vals: boolean[]) => boolean): void {
+  const header = Array.from({ length: vars }, (_, i) => String.fromCharCode(112 + i)).concat('Result').join(' | ');
+  console.log(header);
+  console.log('-'.repeat(header.length));
+  for (let i = 0; i < 1 << vars; i++) {
+    const vals: boolean[] = [];
+    for (let j = vars - 1; j >= 0; j--) vals.push(Boolean(i & (1 << j)));
+    console.log(vals.map(v => v ? 'T' : 'F').concat(expr(vals) ? 'T' : 'F').join(' | '));
+  }
+}
+console.log('\nTruth table for p XOR q:');
+truthTable(2, v => v[0] !== v[1]);
+```
+
 ## Summary
 
 - Propositions are T/F statements. Logical connectives combine them into compound propositions.

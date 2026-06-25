@@ -379,6 +379,98 @@ Submit the following:
 | Enterprise | Production-grade deployment standards |
 | Startup | Blueprint for DevOps platform setup |
 
+### DevOps Capstone Pipeline Orchestrator
+
+The capstone project ties together all DevOps concepts. The following orchestrator models a complete pipeline with stages, gates, notifications, and reporting.
+
+```typescript
+interface PipelineStage {
+  name: string;
+  status: 'pending' | 'running' | 'passed' | 'failed' | 'skipped';
+  duration: number; // seconds
+  artifacts: string[];
+  retries: number;
+}
+
+interface PipelineRun {
+  id: string;
+  commitSha: string;
+  branch: string;
+  stages: PipelineStage[];
+  startedAt: Date;
+  completedAt?: Date;
+  triggeredBy: 'push' | 'pr' | 'manual' | 'schedule';
+}
+
+interface GateCondition {
+  stage: string;
+  condition: (run: PipelineRun) => boolean;
+  errorMessage: string;
+}
+
+class PipelineOrchestrator {
+  private gates: GateCondition[] = [];
+
+  addGate(gate: GateCondition): void {
+    this.gates.push(gate);
+  }
+
+  execute(run: PipelineRun, stage: string): PipelineStage[] {
+    const stageNames = ['lint', 'unit-test', 'build', 'integration-test', 'security-scan', 'deploy-staging', 'e2e-test', 'deploy-production'];
+    const currentIndex = stageNames.indexOf(stage);
+    const results: PipelineStage[] = [];
+
+    for (let i = 0; i < stageNames.length; i++) {
+      if (i < currentIndex) {
+        results.push({ name: stageNames[i], status: 'passed', duration: 30, artifacts: [], retries: 0 });
+      } else if (i === currentIndex) {
+        const failedGates = this.gates.filter(g => g.stage === stageNames[i] && !g.condition(run));
+        if (failedGates.length > 0) {
+          results.push({ name: stageNames[i], status: 'failed', duration: 0, artifacts: [], retries: 0 });
+          break;
+        }
+        const stageResult: PipelineStage = { name: stageNames[i], status: 'running', duration: 0, artifacts: ['build.zip'], retries: 0 };
+        stageResult.status = 'passed';
+        stageResult.duration = 45;
+        results.push(stageResult);
+      } else {
+        results.push({ name: stageNames[i], status: 'pending', duration: 0, artifacts: [], retries: 0 });
+      }
+    }
+    return results;
+  }
+
+  generateReport(run: PipelineRun, results: PipelineStage[]): string {
+    const allPassed = results.every(r => r.status === 'passed');
+    const totalTime = results.reduce((s, r) => s + r.duration, 0);
+    return `## Pipeline Report: ${run.id}\n\n` +
+      `**Commit:** ${run.commitSha.substring(0, 8)}\n` +
+      `**Branch:** ${run.branch}\n` +
+      `**Status:** ${allPassed ? 'PASSED' : 'FAILED'}\n` +
+      `**Duration:** ${totalTime}s\n\n` +
+      `| Stage | Status | Duration |\n` +
+      `|-------|--------|----------|\n` +
+      results.map(r => `| ${r.name} | ${r.status} | ${r.duration}s |`).join('\n');
+  }
+}
+
+const orchestrator = new PipelineOrchestrator();
+orchestrator.addGate({ stage: 'security-scan', condition: (run) => true, errorMessage: 'Security scan must pass' });
+orchestrator.addGate({ stage: 'deploy-production', condition: (run) => run.branch === 'main', errorMessage: 'Only main branch deploys to production' });
+
+const run: PipelineRun = {
+  id: 'run-001', commitSha: 'a1b2c3d4e5f6', branch: 'main',
+  stages: [], startedAt: new Date(), triggeredBy: 'push',
+};
+
+const results = orchestrator.execute(run, 'deploy-staging');
+console.log(orchestrator.generateReport(run, results));
+```
+
+**What this demonstrates:** A pipeline orchestrator models the complete CI/CD workflow with conditional gates, stage dependencies, and comprehensive reporting — integrating all DevOps practices.
+
+---
+
 ## Chapter Quiz
 
 <details><summary>Question 1: Why use trunk-based development for this capstone?</summary>**A)** It's the only option<br>**B)** Supports CI/CD with short-lived branches<br>**C)** Required by GitHub<br>**D)** Easier to document<br><br>**Answer: B)** Supports CI/CD with short-lived branches</details>

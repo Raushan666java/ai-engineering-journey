@@ -413,6 +413,80 @@ function verifyHeightBound<T>(t: BinTree<T>): boolean {
 
 *Proof.* Consider the residues of each integer modulo 12. There are 12 possible residues ($0$ through $11$). By the pigeonhole principle, with 13 integers, two must share the same residue. Their difference is divisible by 12. $\square$
 
+## TypeScript Implementations
+
+```typescript
+// --- Induction Proof Structure Checker ---
+interface InductionProof {
+  baseCase: number;
+  hypothesis: string;
+  inductiveStep: (k: number) => boolean;
+}
+
+function verifyInduction<T>(
+  proof: InductionProof,
+  property: (n: number) => boolean,
+  upTo: number
+): boolean {
+  // Verify base case
+  if (!property(proof.baseCase)) return false;
+  // Verify inductive step for each k
+  for (let k = proof.baseCase; k < upTo; k++) {
+    if (property(k) && !property(k + 1)) return false;
+  }
+  return true;
+}
+
+// Prove: sum_{i=1}^{n} i = n(n+1)/2
+function sumFormula(n: number): boolean {
+  const sum = (n * (n + 1)) / 2;
+  let actual = 0;
+  for (let i = 1; i <= n; i++) actual += i;
+  return sum === actual;
+}
+const induction: InductionProof = { baseCase: 1, hypothesis: 'P(k)', inductiveStep: () => true };
+console.log('Induction holds for n≤100:', verifyInduction(induction, sumFormula, 100)); // true
+
+// --- Direct Proof Step Verifier ---
+type ProofStep = { statement: string; justification: string; dependsOn: number[] };
+
+function verifyProofChain(steps: ProofStep[]): boolean {
+  for (let i = 0; i < steps.length; i++) {
+    for (const dep of steps[i].dependsOn) {
+      if (dep >= i) return false; // can't depend on future steps
+    }
+  }
+  return true;
+}
+const proof: ProofStep[] = [
+  { statement: 'Let n be even', justification: 'Given', dependsOn: [] },
+  { statement: 'n = 2k for some integer k', justification: 'Definition of even', dependsOn: [0] },
+  { statement: 'n² = 4k²', justification: 'Algebra', dependsOn: [1] },
+  { statement: 'n² = 2(2k²) is even', justification: 'Definition of even', dependsOn: [2] },
+];
+console.log('Proof chain valid:', verifyProofChain(proof)); // true
+
+// --- Pigeonhole Principle Checker ---
+function pigeonholeViolation<T>(items: T[], boxes: number): boolean {
+  return items.length > boxes; // true = collision guaranteed
+}
+console.log('13 ints, 12 residues:', pigeonholeViolation(new Array(13), 12)); // true
+
+// --- Strong Induction Fibonacci Bound ---
+function fibUpperBound(n: number): number {
+  const phi = (1 + Math.sqrt(5)) / 2;
+  return Math.ceil(Math.pow(phi, n) / Math.sqrt(5));
+}
+function verifyFibonacciBound(upTo: number): boolean {
+  for (let n = 0; n <= upTo; n++) {
+    const fib = n < 2 ? n : (() => { let a=0,b=1; for(let i=2;i<=n;i++)[a,b]=[b,a+b]; return b; })();
+    if (fib > fibUpperBound(n)) return false;
+  }
+  return true;
+}
+console.log('Fibonacci bound holds n≤20:', verifyFibonacciBound(20)); // true
+```
+
 ## Summary
 
 - Direct proof: assume hypothesis, derive conclusion.

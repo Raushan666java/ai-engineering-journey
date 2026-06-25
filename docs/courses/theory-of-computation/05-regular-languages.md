@@ -537,6 +537,141 @@ class DecisionProcedures {
 
 6. **Closure under complement is unique to regular languages.** For CFLs and above, complement closure fails spectacularly. This makes regular languages exceptionally well-behaved for verification tasks.
 
+## TypeScript Implementation: Pumping Lemma and Myhill-Nerode Equivalence
+
+```typescript
+// Pumping Lemma Checker and Myhill-Nerode Equivalence
+
+class PumpingLemma {
+  static canBePumped(
+    language: (s: string) => boolean,
+    p: number,
+    maxChecks: number = 100
+  ): boolean {
+    // Try to find a pumpable string of length >= p
+    for (let len = p; len < p + maxChecks; len++) {
+      const str = this.generateString(len);
+      if (!language(str)) continue;
+
+      // Try all possible splits s = xyz with |xy| <= p, |y| >= 1
+      for (let yStart = 0; yStart < p; yStart++) {
+        for (let yLen = 1; yStart + yLen <= p; yLen++) {
+          const x = str.slice(0, yStart);
+          const y = str.slice(yStart, yStart + yLen);
+          const z = str.slice(yStart + yLen);
+
+          // Check if pumping works
+          let isPumpable = true;
+          for (let i = 0; i <= 3; i++) {
+            const pumped = x + y.repeat(i) + z;
+            if (!language(pumped)) {
+              isPumpable = false;
+              break;
+            }
+          }
+          if (isPumpable) return true;
+        }
+      }
+    }
+    return false; // Likely not regular
+  }
+
+  private static generateString(len: number): string {
+    return "a".repeat(len);
+  }
+
+  static proveNonRegular(languageName: string,
+                         language: (s: string) => boolean,
+                         p: number): string[] {
+    // Attempt to find a counterexample for the pumping lemma
+    const proof: string[] = [];
+    proof.push(`Assume ${languageName} is regular with pumping length p.`);
+    const s = "a".repeat(p) + "b".repeat(p);
+    proof.push(`Choose s = a^p b^p ∈ ${languageName}, |s| = ${s.length} >= p.`);
+
+    for (let yStart = 0; yStart < p; yStart++) {
+      for (let yLen = 1; yStart + yLen <= p; yLen++) {
+        const x = s.slice(0, yStart);
+        const y = s.slice(yStart, yStart + yLen);
+        const z = s.slice(yStart + yLen);
+        // Pump with i=2: xy²z has more a's than b's
+        const pumped = x + y.repeat(2) + z;
+        if (!language(pumped)) {
+          proof.push(`All splits: x=${x}, y=${y}, z=${z}.`);
+          proof.push(`Then xy²z = ${pumped} ∉ ${languageName} => contradiction.`);
+          return proof;
+        }
+      }
+    }
+    proof.push("No contradiction found — language may be regular.");
+    return proof;
+  }
+}
+
+class MyhillNerode {
+  static computeEquivalence(
+    alphabet: string[],
+    language: (s: string) => boolean,
+    maxLen: number
+  ): Map<string, string[]> {
+    // Build distinguishing suffixes for strings up to maxLen
+    const strings = this.generateStrings(alphabet, maxLen);
+    const classes = new Map<string, string[]>();
+    const assigned = new Set<string>();
+
+    for (const s of strings) {
+      if (assigned.has(s)) continue;
+      const equiv = [s];
+      assigned.add(s);
+
+      for (const t of strings) {
+        if (assigned.has(t) || s === t) continue;
+        let equivalent = true;
+        for (let i = 0; i <= maxLen; i++) {
+          const suffix = this.generateStrings(alphabet, i);
+          for (const w of suffix) {
+            if (language(s + w) !== language(t + w)) {
+              equivalent = false;
+              break;
+            }
+          }
+          if (!equivalent) break;
+        }
+        if (equivalent) {
+          equiv.push(t);
+          assigned.add(t);
+        }
+      }
+      classes.set(s, equiv);
+    }
+    return classes;
+  }
+
+  private static generateStrings(alphabet: string[], maxLen: number): string[] {
+    const result: string[] = [""];
+    for (let len = 1; len <= maxLen; len++)
+      this.generateRec(alphabet, len, "", result);
+    return result;
+  }
+
+  private static generateRec(alphabet: string[], len: number,
+                              current: string, result: string[]): void {
+    if (current.length === len) { result.push(current); return; }
+    for (const a of alphabet) this.generateRec(alphabet, len, current + a, result);
+  }
+}
+
+const langEvenAs = (s: string) => (s.match(/a/g) || []).length % 2 === 0;
+console.log(PumpingLemma.canBePumped(langEvenAs, 2)); // true
+
+const langAnBn = (s: string) => /^a+b+$/.test(s) &&
+  (s.match(/a/g) || []).length === (s.match(/b/g) || []).length;
+console.log(PumpingLemma.proveNonRegular("L = {aⁿbⁿ}", langAnBn, 3));
+
+const classes = MyhillNerode.computeEquivalence(["a", "b"], langEvenAs, 2);
+console.log(`Myhill-Nerode equivalence classes: ${classes.size}`);
+```
+
 ## Summary
 
 - The pumping lemma provides a necessary condition for regularity used to prove non-regularity.

@@ -636,6 +636,97 @@ notifier.notify({
 
 ---
 
+### Parallel Stage Scheduler
+
+Efficient parallel execution in CI/CD pipelines reduces overall build time. The following scheduler models stage dependencies and computes optimal parallel schedules.
+
+```typescript
+interface Stage {
+  id: string;
+  duration: number; // seconds
+  dependencies: string[];
+}
+
+interface Schedule {
+  order: string[][]; // parallel stages at each level
+  totalDuration: number;
+  criticalPath: string[];
+}
+
+class ParallelStageScheduler {
+  schedule(stages: Stage[]): Schedule {
+    const depMap = new Map<string, string[]>();
+    const durationMap = new Map<string, number>();
+    stages.forEach(s => { depMap.set(s.id, s.dependencies); durationMap.set(s.id, s.duration); });
+
+    const levels: string[][] = [];
+    const scheduled = new Set<string>();
+
+    while (scheduled.size < stages.length) {
+      const ready = stages.filter(s => !scheduled.has(s.id) && s.dependencies.every(d => scheduled.has(d))).map(s => s.id);
+      if (ready.length === 0) break;
+      levels.push(ready);
+      ready.forEach(r => scheduled.add(r));
+    }
+
+    const criticalPath = this.findCriticalPath(stages, depMap, durationMap);
+    const totalDuration = criticalPath.reduce((s, id) => s + (durationMap.get(id) || 0), 0);
+
+    return { order: levels, totalDuration, criticalPath };
+  }
+
+  private findCriticalPath(stages: Stage[], depMap: Map<string, string[]>, durationMap: Map<string, number>): string[] {
+    const earliestStart = new Map<string, number>();
+    const parents = new Map<string, string>();
+
+    for (const stage of stages) {
+      let maxStart = 0;
+      let maxParent = '';
+      for (const dep of stage.dependencies) {
+        const depEnd = (earliestStart.get(dep) || 0) + (durationMap.get(dep) || 0);
+        if (depEnd > maxStart) { maxStart = depEnd; maxParent = dep; }
+      }
+      earliestStart.set(stage.id, maxStart);
+      if (maxParent) parents.set(stage.id, maxParent);
+    }
+
+    let lastStage = '';
+    let lastEnd = 0;
+    for (const stage of stages) {
+      const end = (earliestStart.get(stage.id) || 0) + (durationMap.get(stage.id) || 0);
+      if (end > lastEnd) { lastEnd = end; lastStage = stage.id; }
+    }
+
+    const path: string[] = [];
+    let current = lastStage;
+    while (current) {
+      path.unshift(current);
+      current = parents.get(current) || '';
+    }
+    return path;
+  }
+}
+
+const scheduler = new ParallelStageScheduler();
+const stages: Stage[] = [
+  { id: 'lint', duration: 30, dependencies: [] },
+  { id: 'unit', duration: 45, dependencies: [] },
+  { id: 'build', duration: 60, dependencies: ['lint'] },
+  { id: 'integration', duration: 120, dependencies: ['unit', 'build'] },
+  { id: 'e2e', duration: 180, dependencies: ['integration'] },
+  { id: 'deploy', duration: 30, dependencies: ['e2e'] },
+];
+
+const schedule = scheduler.schedule(stages);
+console.log('Parallel levels:', schedule.order.map(l => `[${l.join(', ')}]`).join(' -> '));
+console.log('Critical path:', schedule.criticalPath.join(' -> '));
+console.log('Total duration:', schedule.totalDuration, 's');
+```
+
+**What this demonstrates:** Parallel stage scheduling minimizes CI/CD pipeline wall-clock time by identifying independent stages that can execute concurrently.
+
+---
+
 ## Practical Takeaways
 
 1. **Every push triggers CI.** No exceptions. If the build breaks, fixing it is the top priority.

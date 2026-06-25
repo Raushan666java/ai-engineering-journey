@@ -593,6 +593,142 @@ def process(items):
             result.append(cleaned)
     return result
 ```
+```typescript
+// Chapter 10: TypeScript Arrow Function Equivalents (Python lambdas)
+// Python: lambda x: x * 2
+const double = (x: number): number => x * 2;
+console.log(double(5));  // 10
+
+// Python: sorted(lst, key=lambda x: x[1])
+const pairs: [string, number][] = [["b", 3], ["a", 1], ["c", 2]];
+pairs.sort((a, b) => a[1] - b[1]);
+console.log(pairs);  // [["a", 1], ["c", 2], ["b", 3]]
+
+// Python: map(lambda x: x.upper(), items)
+const words: string[] = ["hello", "world"];
+const uppercased: string[] = words.map((w) => w.toUpperCase());
+console.log(uppercased);  // ["HELLO", "WORLD"]
+
+// Python: filter(lambda x: x > 0, numbers)
+const nums: number[] = [-1, 0, 3, -2, 5];
+const positive: number[] = nums.filter((n) => n > 0);
+console.log(positive);  // [3, 5]
+
+// Python: reduce(lambda a, b: a + b, numbers)
+const sum: number = nums.reduce((acc, n) => acc + n, 0);
+
+// Python: functools.partial → TypeScript: .bind() or closure
+const multiply = (a: number, b: number): number => a * b;
+const double2 = (x: number): number => multiply(2, x);
+console.log(double2(5));  // 10
+
+// Python: operator.itemgetter(1) → TypeScript: destructuring
+const getSecond = <T,>(_: unknown, index: number, arr: T[]): T => arr[index];
+// More idiomatic: destructure in callback
+pairs.forEach(([key, val]) => console.log(key, val));
+
+// Python: lambda limitations (single expression) — same for arrow functions
+// But TypeScript arrow functions can have blocks:
+const safeDivide = (a: number, b: number): number => {
+  if (b === 0) throw new Error("Division by zero");
+  return a / b;
+};
+```
+
+### TypeScript Functional Composition Patterns
+
+```typescript
+// Python: multiple lambdas composed → TypeScript: pipes
+const add = (x: number) => (y: number) => x + y;
+const multiply = (x: number) => (y: number) => x * y;
+
+// Function composition: (f ∘ g)(x) = f(g(x))
+function compose<T>(...fns: ((x: T) => T)[]): (x: T) => T {
+  return (x: T) => fns.reduceRight((acc, fn) => fn(acc), x);
+}
+
+const addThenMultiply = compose(add(2), multiply(3));
+console.log(addThenMultiply(5));  // (5 * 3) + 2 = 17
+
+// Python: partial() → TypeScript: arrow function binding
+const pow = (base: number, exp: number): number => base ** exp;
+const square = (x: number): number => pow(x, 2);
+const cube = (x: number): number => pow(x, 3);
+console.log(square(4), cube(4));  // 16, 64
+
+// Python: operator functions → TypeScript: explicit functions
+const gt = (a: number) => (b: number) => b > a;
+const greaterThan5 = gt(5);
+[1, 6, 3, 8].filter(greaterThan5);  // [6, 8]
+
+// Python: reduce with lambda → TypeScript: reduce with arrow
+const numbers: number[] = [1, 2, 3, 4, 5];
+const product = numbers.reduce((a, b) => a * b, 1);
+console.log(product);  // 120
+
+// Python: sorted with key=lambda → TypeScript: sort with comparator
+type Person = { name: string; age: number };
+const people: Person[] = [
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 },
+  { name: "Charlie", age: 35 },
+];
+people.sort((a, b) => a.age - b.age);  // sort by age ascending
+console.log(people.map((p) => p.name));  // ["Bob", "Alice", "Charlie"]
+
+// Python: map and filter with lambda → TypeScript: chained array methods
+const result = [1, 2, 3, 4, 5, 6]
+  .filter((x) => x % 2 === 0)
+  .map((x) => x ** 2);
+console.log(result);  // [4, 16, 36]
+```
+
+### TypeScript Currying & Advanced Functional Patterns
+
+```typescript
+// Python: currying with lambda → TypeScript: curried arrow functions
+const curriedAdd = (a: number) => (b: number) => (c: number) => a + b + c;
+console.log(curriedAdd(1)(2)(3));  // 6
+// Python equivalent: lambda a: lambda b: lambda c: a + b + c
+
+// Python: functools.compose → TypeScript: pipe function
+function pipe<T>(...fns: Array<(arg: T) => T>): (arg: T) => T {
+  return (x: T) => fns.reduce((acc, fn) => fn(acc), x);
+}
+const trim = (s: string) => s.trim();
+const lower = (s: string) => s.toLowerCase();
+const truncate = (s: string) => s.slice(0, 10);
+const clean = pipe(trim, lower, truncate);
+console.log(clean("  HELLO WORLD  "));  // "hello worl"
+
+// Python: filter(None, items) → TypeScript: Boolean constructor
+const mixed2 = [0, 1, "", "hello", null, undefined, false, 42];
+const truthy = mixed2.filter(Boolean);
+console.log(truthy);  // [1, "hello", 42]
+
+// Python: sorted with lambda and operator.attrgetter
+type Task = { name: string; priority: number; due: Date };
+const tasks: Task[] = [
+  { name: "Fix bug", priority: 1, due: new Date("2026-01-15") },
+  { name: "Add feature", priority: 2, due: new Date("2026-02-01") },
+];
+tasks.sort((a, b) => a.priority - b.priority || a.due.getTime() - b.due.getTime());
+
+// Python: functools.partial for callback binding
+function fetchApi(endpoint: string, params: Record<string, string>): Promise<Response> {
+  const url = new URL(endpoint);
+  Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
+  return fetch(url.toString());
+}
+const fetchUsers = (params: Record<string, string>) => fetchApi("/api/users", params);
+const fetchProducts = (params: Record<string, string>) => fetchApi("/api/products", params);
+
+// Python: map with multiple iterables → TypeScript: Function.apply or zip
+function elementWise<T>(a: T[], b: T[], fn: (x: T, y: T) => T): T[] {
+  return a.map((val, i) => fn(val, b[i]));
+}
+console.log(elementWise([1, 2, 3], [4, 5, 6], (x, y) => x + y));  // [5, 7, 9]
+```
 
 ## Summary
 

@@ -588,6 +588,134 @@ function playAll(items: Playable[]): void {
 | Method override | Automatic | Automatic (explicit `override` keyword optional) |
 | super() in MRO | C3 linearization | Single chain (no multiple inheritance) |
 
+### TypeScript Advanced Inheritance & Composition Patterns
+
+```typescript
+// Python: diamond problem (MRO) → TypeScript: no multiple inheritance
+// but mixins via interface merging
+interface Loggable {
+  log(message: string): void;
+}
+
+interface Timestamped {
+  readonly createdAt: Date;
+}
+
+// TypeScript: implements multiple interfaces (not multiple classes)
+class Entity implements Loggable, Timestamped {
+  readonly createdAt: Date = new Date();
+  log(message: string): void {
+    console.log(`[${this.createdAt.toISOString()}] ${message}`);
+  }
+}
+
+// Python: super().__init__() → TypeScript: super()
+class Animal {
+  constructor(public name: string) {}
+  speak(): void { console.log("..."); }
+}
+
+class Dog extends Animal {
+  constructor(name: string, public breed: string) {
+    super(name);  // Equivalent: super().__init__(name)
+  }
+  override speak(): void {
+    console.log(`${this.name} barks!`);
+  }
+}
+
+// Python: abstractmethod → TypeScript: abstract class
+abstract class Shape {
+  abstract area(): number;
+  abstract perimeter(): number;
+  description(): string {
+    return `${this.constructor.name} with area ${this.area()}`;
+  }
+}
+
+class Circle extends Shape {
+  constructor(public radius: number) { super(); }
+  area(): number { return Math.PI * this.radius ** 2; }
+  perimeter(): number { return 2 * Math.PI * this.radius; }
+}
+
+// Python: Protocol → TypeScript: interface
+interface Flyable {
+  fly(): void;
+}
+class Bird implements Flyable {
+  fly(): void { console.log("Flapping wings"); }
+}
+class Airplane implements Flyable {
+  fly(): void { console.log("Jet engines"); }
+}
+// Both satisfy Flyable without extending a common base
+
+// Python: composition over inheritance
+class Engine {
+  start(): void { console.log("Engine started"); }
+}
+class Car {
+  private engine = new Engine();  // composition
+  start(): void { this.engine.start(); }
+}
+```
+
+### TypeScript Generic Constraints & Mixin Patterns
+
+```typescript
+// Python: generic types → TypeScript: generics with constraints
+interface HasId {
+  id: number;
+}
+class Repository<T extends HasId> {
+  private items: Map<number, T> = new Map();
+  save(item: T): void { this.items.set(item.id, item); }
+  findById(id: number): T | undefined { return this.items.get(id); }
+  delete(id: number): boolean { return this.items.delete(id); }
+  findAll(): T[] { return [...this.items.values()]; }
+}
+
+// Python: Mixin pattern → TypeScript: mixin function
+type GConstructor<T = {}> = new (...args: any[]) => T;
+function Timestamped<TBase extends GConstructor>(Base: TBase) {
+  return class extends Base {
+    readonly createdAt = new Date();
+    get age(): number {
+      return Date.now() - this.createdAt.getTime();
+    }
+  };
+}
+class BasicEntity {
+  constructor(public id: number) {}
+}
+const TimestampedEntity = Timestamped(BasicEntity);
+const entity = new TimestampedEntity(1);
+console.log(entity.createdAt);  // current date/time
+
+// Python: Protocol → TypeScript: structural typing
+interface Drawable {
+  draw(): void;
+}
+class Canvas {
+  render(...shapes: Drawable[]): void {
+    shapes.forEach((s) => s.draw());  // any Drawable works
+  }
+}
+
+// Python: isinstance check with ABC → TypeScript: instanceof
+function handle(shape: unknown): void {
+  if (shape instanceof Circle) {
+    console.log(`Circle with radius ${shape.radius}`);
+  } else if (shape instanceof Rectangle) {
+    console.log(`Rectangle ${shape.width}x${shape.height}`);
+  }
+}
+
+// Python: MRO (C3 linearization) → TypeScript: chain of super() calls
+// TypeScript: single inheritance chain — no MRO complexities
+```
+
 ## Summary
 
 - `super()` delegates to the next class in the MRO.

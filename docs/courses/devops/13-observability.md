@@ -463,6 +463,92 @@ console.log(calculator.generateDashboard(slos, [999000, 994000, 999800], [100000
 | Enterprise | Compliance-focused monitoring |
 | Microservices | Distributed tracing for service mesh |
 
+### Trace Analyzer
+
+Distributed tracing is essential for understanding request flows across microservices. The following analyzer processes trace spans, detects anomalies, and visualizes service interactions.
+
+```typescript
+interface Span {
+  traceId: string;
+  spanId: string;
+  parentSpanId: string | null;
+  serviceName: string;
+  operation: string;
+  startTime: number;
+  endTime: number;
+  tags: Record<string, string>;
+  status: 'ok' | 'error';
+}
+
+interface Trace {
+  traceId: string;
+  spans: Span[];
+  rootService: string;
+  totalDuration: number;
+  errorSpans: number;
+}
+
+class TraceAnalyzer {
+  buildTrace(spans: Span[]): Trace | null {
+    if (spans.length === 0) return null;
+    const root = spans.find(s => !s.parentSpanId);
+    if (!root) return null;
+    const traceId = root.traceId;
+    const totalDuration = Math.max(...spans.map(s => s.endTime)) - Math.min(...spans.map(s => s.startTime));
+    const errorSpans = spans.filter(s => s.status === 'error').length;
+    return { traceId, spans, rootService: root.serviceName, totalDuration, errorSpans };
+  }
+
+  findSlowPaths(trace: Trace, thresholdMs: number): Span[] {
+    return trace.spans.filter(s => (s.endTime - s.startTime) > thresholdMs);
+  }
+
+  detectAnomalies(traces: Trace[]): string[] {
+    const anomalies: string[] = [];
+    const durations = traces.map(t => t.totalDuration);
+    const avg = durations.reduce((s, d) => s + d, 0) / durations.length;
+    const stdDev = Math.sqrt(durations.reduce((s, d) => s + (d - avg) ** 2, 0) / durations.length);
+
+    for (const trace of traces) {
+      if (trace.totalDuration > avg + 3 * stdDev) {
+        anomalies.push(`Trace ${trace.traceId.substring(0, 8)}: ${(trace.totalDuration).toFixed(0)}ms exceeds 3σ threshold (${(avg + 3 * stdDev).toFixed(0)}ms)`);
+      }
+      if (trace.errorSpans > 0) anomalies.push(`Trace ${trace.traceId.substring(0, 8)}: ${trace.errorSpans} error spans`);
+    }
+    return anomalies;
+  }
+
+  buildServiceGraph(traces: Trace[]): Map<string, string[]> {
+    const graph = new Map<string, Set<string>>();
+    for (const trace of traces) {
+      for (const span of trace.spans) {
+        if (!graph.has(span.serviceName)) graph.set(span.serviceName, new Set());
+        const parent = trace.spans.find(s => s.spanId === span.parentSpanId);
+        if (parent && parent.serviceName !== span.serviceName) graph.get(parent.serviceName)!.add(span.serviceName);
+      }
+    }
+    return new Map([...graph.entries()].map(([k, v]) => [k, [...v]]));
+  }
+}
+
+const analyzer = new TraceAnalyzer();
+const spans: Span[] = [
+  { traceId: 'abc123', spanId: 's1', parentSpanId: null, serviceName: 'api-gateway', operation: 'GET /users', startTime: 1000, endTime: 2500, tags: {}, status: 'ok' },
+  { traceId: 'abc123', spanId: 's2', parentSpanId: 's1', serviceName: 'user-service', operation: 'getUser', startTime: 1200, endTime: 2200, tags: {}, status: 'ok' },
+  { traceId: 'abc123', spanId: 's3', parentSpanId: 's2', serviceName: 'database', operation: 'SELECT', startTime: 1300, endTime: 2100, tags: {}, status: 'error' },
+];
+const trace = analyzer.buildTrace(spans);
+if (trace) {
+  console.log(`Root: ${trace.rootService}, Duration: ${trace.totalDuration}ms, Errors: ${trace.errorSpans}`);
+  console.log('Slow paths:', analyzer.findSlowPaths(trace, 300).map(s => s.operation));
+  console.log('Service graph:', JSON.stringify([...analyzer.buildServiceGraph([trace])]));
+}
+```
+
+**What this demonstrates:** Trace analysis enables root cause identification by correlating spans across services, detecting performance anomalies, and mapping service dependencies.
+
+---
+
 ## Chapter Quiz
 
 <details><summary>Question 1: What are the three pillars of observability?</summary>**A)** Build, Test, Deploy<br>**B)** Logs, Metrics, Traces<br>**C)** CPU, Memory, Disk<br>**D)** Dev, Staging, Prod<br><br>**Answer: B)** Logs, Metrics, Traces</details>

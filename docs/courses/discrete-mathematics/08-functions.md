@@ -368,6 +368,88 @@ function isBijective<T, U>(f: Func<T, U>, codomain: Set<U>): boolean {
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+// --- Function Type Checkers ---
+type Func<T, U> = Map<T, U>;
+
+function isInjective<T, U>(f: Func<T, U>): boolean {
+  const images = new Set(f.values());
+  return images.size === f.size;
+}
+function isSurjective<T, U>(f: Func<T, U>, codomain: Set<U>): boolean {
+  const images = new Set(f.values());
+  return [...codomain].every(v => images.has(v));
+}
+function isBijective<T, U>(f: Func<T, U>, codomain: Set<U>): boolean {
+  return isInjective(f) && isSurjective(f, codomain);
+}
+
+const f = new Map([[1,'a'],[2,'b'],[3,'c']]);
+const cod = new Set(['a','b','c']);
+console.log('Injective:', isInjective(f));     // true
+console.log('Surjective:', isSurjective(f, cod)); // true
+console.log('Bijective:', isBijective(f, cod));   // true
+
+// --- Function Composition ---
+function compose<T, U, V>(f: (x: T) => U, g: (y: U) => V): (x: T) => V {
+  return (x: T) => g(f(x));
+}
+const double = (x: number) => 2 * x;
+const add1 = (x: number) => x + 1;
+const doubleThenAdd1 = compose(double, add1);
+console.log('(f∘g)(5):', doubleThenAdd1(5)); // 11
+
+// --- Inverse Function Finder ---
+function inverse<T extends string | number, U extends string | number>(
+  f: Map<T, U>
+): Map<U, T> | null {
+  if (!isInjective(f)) return null; // only bijective functions have inverses
+  const inv = new Map<U, T>();
+  for (const [k, v] of f) inv.set(v, k);
+  return inv;
+}
+const bij = new Map([['a',1],['b',2],['c',3]]);
+console.log('Inverse:', [...(inverse(bij) ?? new Map())]); // [[1,'a'],[2,'b'],[3,'c']]
+
+// --- Floor/Ceiling Functions ---
+function floorDiv(a: number, b: number): number {
+  return Math.floor(a / b);
+}
+function ceilDiv(a: number, b: number): number {
+  return Math.ceil(a / b);
+}
+console.log('⌊7/3⌋:', floorDiv(7, 3)); // 2
+console.log('⌈7/3⌉:', ceilDiv(7, 3)); // 3
+
+// --- Big-O Verifier ---
+function bigOVerify(
+  f: (n: number) => number,
+  g: (n: number) => number,
+  c: number,
+  n0: number
+): boolean {
+  for (let n = n0; n <= 10000; n++) {
+    if (f(n) > c * g(n)) return false;
+  }
+  return true;
+}
+// Verify: 3n² + 2n + 1 = O(n²) with c=4, n0=1
+const f1 = (n: number) => 3 * n * n + 2 * n + 1;
+const f2 = (n: number) => n * n;
+console.log('3n²+2n+1 = O(n²):', bigOVerify(f1, f2, 4, 1)); // true
+
+// --- Function Growth Comparator ---
+function growthComparator(f: (n: number) => number, g: (n: number) => number, limit: number): string {
+  for (let n = 1; n <= limit; n += Math.max(1, Math.floor(limit / 100))) {
+    if (f(n) < g(n)) return 'f grows slower';
+    if (f(n) > g(n)) return 'f grows faster';
+  }
+  return 'comparable';
+}
+```
+
 ## Summary
 
 - Functions map each input to exactly one output.

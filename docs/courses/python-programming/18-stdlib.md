@@ -606,6 +606,105 @@ logging.basicConfig(level=logging.INFO)
 - log level only
 - log handlers
 
+```typescript
+// Chapter 18: TypeScript Standard Library Equivalents
+// Python: os.getcwd() → Node: process.cwd()
+import * as fs from "node:fs";
+import * as path from "node:path";
+import * as os from "node:os";
+
+console.log(process.cwd());   // Equivalent: os.getcwd()
+
+// Python: os.listdir() / pathlib.iterdir() → Node: fs.readdirSync()
+const files: string[] = fs.readdirSync(".");
+console.log(files);
+
+// Python: pathlib.Path.stat() → Node: fs.statSync()
+const stats = fs.statSync(".");
+console.log(stats.size, stats.mtime);
+
+// Python: datetime → TypeScript: Date
+const now: Date = new Date();
+console.log(now.toISOString());  // Equivalent: datetime.now().isoformat()
+
+// Python: re module → TypeScript: RegExp
+const pattern: RegExp = /hello/i;
+console.log(pattern.test("Hello World"));  // true
+
+// Python: collections.deque → TypeScript: Array (shift/unshift/push/pop)
+const queue: number[] = [];
+queue.push(1); queue.push(2);
+console.log(queue.shift());  // 1  (like deque.popleft())
+
+// Python: functools.lru_cache → TypeScript: Map-based memoization
+function memoize<A, B>(fn: (arg: A) => B): (arg: A) => B {
+  const cache = new Map<A, B>();
+  return (arg: A): B => {
+    if (cache.has(arg)) return cache.get(arg)!;
+    const result = fn(arg);
+    cache.set(arg, result);
+    return result;
+  };
+}
+
+// Python: math module → TypeScript: Math global
+console.log(Math.sqrt(16));      // Equivalent: math.sqrt(16)
+console.log(Math.PI);            // Equivalent: math.pi
+console.log(Math.random());      // Equivalent: random.random()
+
+// Python: argparse → TypeScript: process.argv or yargs/commander
+const args = process.argv.slice(2);
+console.log("CLI args:", args);
+
+// Python: logging → TypeScript: console or pino/winston
+console.error("Error message");  // Equivalent: logging.error()
+console.warn("Warning");
+```
+
+### TypeScript Standard Library: More Equivalents
+
+```typescript
+// Python: os.environ → TypeScript: process.env
+const homeDir: string | undefined = process.env.HOME;
+const nodeEnv: string = process.env.NODE_ENV ?? "development";
+
+// Python: sys.argv → TypeScript: process.argv
+const scriptName: string = process.argv[1] ?? "";
+const cliArgs: string[] = process.argv.slice(2);
+console.log(`Script: ${scriptName}, Args: ${cliArgs}`);
+
+// Python: shutil.copy → TypeScript: fs.cpSync
+fs.cpSync("source.txt", "dest.txt", { recursive: false });
+
+// Python: glob.glob → TypeScript: fs.globSync (Node 22+)
+// or: const globbed = fs.readdirSync(".").filter(f => f.endsWith(".ts"));
+
+// Python: datetime.timedelta → TypeScript: milliseconds
+const oneHour = 60 * 60 * 1000;  // hours * minutes * seconds * ms
+const future = new Date(Date.now() + oneHour);
+
+// Python: re.search / re.match → TypeScript: RegExp
+const emailRegex = /^[\w.-]+@[\w.-]+\.\w+$/;
+console.log(emailRegex.test("alice@example.com"));  // true
+
+// Python: json.dumps / json.loads → TypeScript: JSON.stringify / JSON.parse
+const data = { name: "Alice", scores: [90, 85] };
+const json = JSON.stringify(data, null, 2);
+const parsed = JSON.parse(json);
+
+// Python: statistics.mean / stdev → TypeScript: manual
+function mean(arr: number[]): number {
+  return arr.reduce((a, b) => a + b, 0) / arr.length;
+}
+function stdev(arr: number[]): number {
+  const m = mean(arr);
+  return Math.sqrt(arr.reduce((sum, v) => sum + (v - m) ** 2, 0) / arr.length);
+}
+console.log(mean([1, 2, 3, 4, 5]), stdev([1, 2, 3, 4, 5]));
+
+// Python: random.choice → TypeScript: random index
+const choice = (arr: unknown[]) => arr[Math.floor(Math.random() * arr.length)];
+```
 
 ## Summary
 

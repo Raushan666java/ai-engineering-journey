@@ -581,6 +581,51 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: HTML Validator & Accessibility Checker
+
+```typescript
+class HTMLValidator {
+  static checkNesting(html: string): string[] {
+    const errors: string[] = [], stack: string[] = [];
+    const selfClosing = new Set(["br", "hr", "img", "input", "meta", "link"]);
+    const re = /<\/?(\w+)[^>]*>/g;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(html)) !== null) {
+      const t = m[1].toLowerCase();
+      if (m[0][1] === "/") {
+        if (stack.length && stack[stack.length - 1] === t) stack.pop();
+        else errors.push(`Mismatched </${t}>`);
+      } else if (!selfClosing.has(t)) stack.push(t);
+    }
+    if (stack.length) errors.push(`Unclosed: ${stack.join(", ")}`);
+    return errors;
+  }
+  static checkAlt(html: string): number {
+    return (html.match(/<img /g) || []).length - (html.match(/alt=/g) || []).length;
+  }
+  static missingMeta(html: string): string[] {
+    const needed = ["viewport", "description", "charset"];
+    return needed.filter(n => !html.toLowerCase().includes(n));
+  }
+  static outline(headings: string): string {
+    const levels = [...headings.matchAll(/<h([1-6])[^>]*>/gi)].map(m => +m[1]);
+    if (!levels.length) return "No headings";
+    let outline = "", prev = 0;
+    levels.forEach(l => {
+      if (l > prev + 1) outline += "⚠ Skipped level\n";
+      outline += `${"  ".repeat(l - 1)}H${l}\n`;
+      prev = l;
+    });
+    return outline;
+  }
+}
+
+const sample = '<div><p>Text<img src="a.jpg"></p></div>';
+console.log("Nesting:", HTMLValidator.checkNesting(sample));
+console.log("Missing alt:", HTMLValidator.checkAlt(sample));
+console.log("Outline:\n" + HTMLValidator.outline("<h1>Title</h1><h3>Sub</h3>"));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** Meta tags and Open Graph data control how content appears in search results and social media.

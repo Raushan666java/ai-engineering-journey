@@ -552,6 +552,166 @@ fs = frozenset([1, 2, 3])
 - D) discard works on lists
 
 
+```typescript
+// Chapter 7: TypeScript Tuple & Set Equivalents
+// Python: tuple literal → TypeScript: readonly array
+const point: readonly [number, number] = [3, 4];
+console.log(point[0], point[1]);  // 3 4
+
+// Python: tuple unpacking → TypeScript: destructuring
+const [x, y] = point;
+console.log(x, y);  // 3 4
+
+// Python: namedtuple → TypeScript: class or interface
+interface Student {
+  name: string;
+  id: number;
+  grades: number[];
+}
+const alice: Student = { name: "Alice", id: 1, grades: [90, 85, 92] };
+// Python equivalent: Student = namedtuple("Student", ["name", "id", "grades"])
+
+// Python: rest unpacking (first, *rest = items) → TypeScript: rest
+const items: number[] = [1, 2, 3, 4, 5];
+const [first, ...rest] = items;
+console.log(first);  // 1
+console.log(rest);   // [2, 3, 4, 5]
+
+// Python: set literal → TypeScript: Set
+const setA: Set<number> = new Set([1, 2, 3, 4]);
+const setB: Set<number> = new Set([3, 4, 5, 6]);
+
+// Python: membership (x in s) → TypeScript: .has()
+console.log(setA.has(2));  // true  (Python: 2 in setA)
+
+// Python: set operations must be implemented manually
+// union: A | B
+const union = new Set([...setA, ...setB]);
+console.log(union);  // Set {1, 2, 3, 4, 5, 6}
+
+// intersection: A & B
+const intersection = new Set([...setA].filter((x) => setB.has(x)));
+console.log(intersection);  // Set {3, 4}
+
+// difference: A - B
+const difference = new Set([...setA].filter((x) => !setB.has(x)));
+console.log(difference);  // Set {1, 2}
+
+// symmetric difference: A ^ B
+const symmetricDiff = new Set(
+  [...setA].filter((x) => !setB.has(x)).concat(
+    [...setB].filter((x) => !setA.has(x))
+  )
+);
+
+// Python: frozenset → TypeScript: no direct equivalent
+// Use ReadonlySet<T> type or wrap in a frozen object
+const frozen: ReadonlySet<number> = new Set([1, 2, 3]);
+// frozen.add(4);  // TypeScript prevents mutation at compile time
+```
+
+### TypeScript Advanced Set & Tuple Patterns
+
+```typescript
+// Python: Jaccard similarity → TypeScript implementation
+function jaccardSimilarity<T>(a: Set<T>, b: Set<T>): number {
+  const intersection = new Set([...a].filter((x) => b.has(x)));
+  const union = new Set([...a, ...b]);
+  return intersection.size / union.size;
+}
+const set1 = new Set([1, 2, 3, 4]);
+const set2 = new Set([3, 4, 5, 6]);
+console.log(jaccardSimilarity(set1, set2));  // 0.333...
+
+// Python: frozenset as dict key → TypeScript: Map with tuple keys
+const cache = new Map<string, number>();
+const makeKey = (...args: unknown[]): string => JSON.stringify(args);
+cache.set(makeKey(1, 2, 3), 42);
+console.log(cache.get(makeKey(1, 2, 3)));  // 42
+
+// Python: namedtuple for data → TypeScript: readonly tuple
+type Color = readonly [number, number, number, number];  // RGBA
+const red: Color = [255, 0, 0, 255];
+// red[0] = 0;  // TypeScript error: Cannot assign to readonly
+
+// Python: set comprehension → TypeScript: Set from array methods
+const squares = new Set([1, 2, 3, 4, 5].map((x) => x * x));
+console.log(squares);  // Set {1, 4, 9, 16, 25}
+
+// Python: tuple as record → TypeScript: discriminated union
+type Status = ["success", string] | ["error", Error];
+function handleResult(result: Status): void {
+  if (result[0] === "success") {
+    console.log(`OK: ${result[1]}`);  // TypeScript narrows the type
+  } else {
+    console.error(`FAIL: ${result[1].message}`);
+  }
+}
+
+// Python: multiple return as tuple → TypeScript: destructured return
+function minMax(values: number[]): [number, number] {
+  let min = Infinity, max = -Infinity;
+  for (const v of values) { if (v < min) min = v; if (v > max) max = v; }
+  return [min, max];
+}
+const [min, max] = minMax([3, 1, 4, 1, 5]);
+console.log(min, max);  // 1, 5
+```
+
+### TypeScript Collection Operations
+
+```typescript
+// Python: set as membership filter → TypeScript: Set.has
+function removeDuplicates<T>(items: T[]): T[] {
+  return [...new Set(items)];
+}
+console.log(removeDuplicates([1, 2, 2, 3, 3, 3]));  // [1, 2, 3]
+
+// Python: set operations on strings → TypeScript: Set from string
+const vowels = new Set("aeiou".split(""));
+const word = "typescript";
+const foundVowels = word.split("").filter((c) => vowels.has(c));
+console.log(foundVowels);  // ["e", "i"]
+
+// Python: tuple as dict key → TypeScript: Map with composite key
+const distances = new Map<string, number>();
+const coordKey = (x: number, y: number): string => `${x},${y}`;
+distances.set(coordKey(0, 0), 0);
+distances.set(coordKey(0, 1), 1);
+console.log(distances.get(coordKey(0, 1)));  // 1
+
+// Python: collections.Counter from set difference
+function commonElements<T>(a: T[], b: T[]): T[] {
+  const setB = new Set(b);
+  return a.filter((x) => setB.has(x));
+}
+
+// Python: tuple swap → TypeScript: destructuring swap
+let x2 = 10, y2 = 20;
+[x2, y2] = [y2, x2];  // swap (same as Python)
+
+// Python: sorted(set) → TypeScript: sort with Set
+function uniqueSorted(items: number[]): number[] {
+  return [...new Set(items)].sort((a, b) => a - b);
+}
+console.log(uniqueSorted([4, 2, 4, 1, 3, 2]));  // [1, 2, 3, 4]
+
+// Python: tuple return unpacking in function call
+function polarToCartesian(r: number, theta: number): [number, number] {
+  return [r * Math.cos(theta), r * Math.sin(theta)];
+}
+// Use spread to pass tuple as multiple arguments
+function distance(x: number, y: number): number {
+  return Math.sqrt(x ** 2 + y ** 2);
+}
+const [x3, y3] = polarToCartesian(1, Math.PI / 4);
+console.log(x3, y3);  // 0.707..., 0.707...
+
+// Python: chain set comparisons → TypeScript: Set subset check
+function isSubset<T>(subset: Set<T>, superset: Set<T>): boolean {
+  return [...subset].every((x) => superset.has(x));
+}
+```
 
 ## Summary
 

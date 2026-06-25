@@ -606,6 +606,122 @@ class Repository(ABC):
     @abstractmethod
     def delete(self, id): ...
 ```
+```typescript
+// Chapter 12: TypeScript Class Equivalents
+// Python: class with __init__ → TypeScript: class with constructor
+class BankAccount {
+  private _balance: number;
+  static interestRate: number = 0.05;
+
+  constructor(public owner: string, initialBalance: number = 0) {
+    this._balance = initialBalance;
+  }
+
+  // Python: @property → TypeScript: getter
+  get balance(): number {
+    return this._balance;
+  }
+
+  // Python: @property.setter → TypeScript: setter
+  set balance(amount: number) {
+    if (amount < 0) throw new Error("Balance cannot be negative");
+    this._balance = amount;
+  }
+
+  // Python: classmethod → TypeScript: static method
+  static setInterestRate(rate: number): void {
+    BankAccount.interestRate = rate;
+  }
+
+  deposit(amount: number): void {
+    if (amount <= 0) throw new Error("Amount must be positive");
+    this._balance += amount;
+  }
+
+  withdraw(amount: number): boolean {
+    if (amount > this._balance) return false;
+    this._balance -= amount;
+    return true;
+  }
+}
+
+// Usage
+const acc = new BankAccount("Alice", 1000);
+acc.deposit(500);
+console.log(acc.balance);  // 1500
+
+// Python: @dataclass → TypeScript: class with constructor shorthand
+class Address {
+  constructor(
+    public street: string,
+    public city: string,
+    public zip: string,
+    public country: string = "US"
+  ) {}
+}
+
+// Python: @staticmethod → TypeScript: static method
+class MathUtils {
+  static clamp(value: number, min: number, max: number): number {
+    return Math.max(min, Math.min(max, value));
+  }
+}
+console.log(MathUtils.clamp(150, 0, 100));  // 100
+```
+
+### More TypeScript OOP Patterns
+
+```typescript
+// Python: @property for computed attributes → TypeScript: getter
+class Circle {
+  constructor(public radius: number) {}
+  get area(): number { return Math.PI * this.radius ** 2; }
+  get circumference(): number { return 2 * Math.PI * this.radius; }
+}
+const c = new Circle(5);
+console.log(c.area);  // 78.54 (computed, not stored)
+
+// Python: @staticmethod → TypeScript: static method
+class StringUtils {
+  static isEmpty(s: string | null | undefined): boolean {
+    return s == null || s.trim().length === 0;
+  }
+}
+console.log(StringUtils.isEmpty(""));   // true
+console.log(StringUtils.isEmpty("a"));  // false
+
+// Python: @classmethod → TypeScript: static factory method
+class Temperature {
+  private constructor(public kelvin: number) {}
+  static fromCelsius(c: number): Temperature {
+    return new Temperature(c + 273.15);
+  }
+  static fromFahrenheit(f: number): Temperature {
+    return new Temperature(((f - 32) * 5) / 9 + 273.15);
+  }
+  get celsius(): number { return this.kelvin - 273.15; }
+}
+const boiling = Temperature.fromCelsius(100);
+console.log(boiling.celsius);  // 100
+
+// Python: __slots__ → TypeScript: class with known properties
+class Point {
+  constructor(
+    public x: number,
+    public y: number
+  ) {}
+  // TypeScript enforces property names at compile time
+  // (Point has only x, y — no dynamic properties possible)
+}
+
+// Python: dataclass frozen=True → TypeScript: readonly
+class ImmutablePoint {
+  constructor(
+    readonly x: number,
+    readonly y: number
+  ) {}
+}
+```
 
 ## Summary
 

@@ -526,6 +526,133 @@ The subset construction demonstrates that NFAs are a **convenience abstraction**
 **B)** NFA and DFA recognize exactly the same class: regular languages.
 </details>
 
+## TypeScript Implementation: Epsilon-Closure and NFA-to-DFA Conversion
+
+```typescript
+// NFA Simulator with epsilon-closure and subset construction
+
+type NFAState = string;
+type NFATransitions = Map<string, Set<NFAState>>; // key: "state,symbol"
+
+class NFA {
+  constructor(
+    public states: Set<NFAState>,
+    public alphabet: Set<string>,
+    public transitions: NFATransitions,
+    public epsilon: Map<NFAState, Set<NFAState>>,
+    public start: NFAState,
+    public accept: Set<NFAState>
+  ) {}
+
+  epsilonClosure(states: Set<NFAState>): Set<NFAState> {
+    const closure = new Set(states);
+    const stack = [...states];
+    while (stack.length > 0) {
+      const state = stack.pop()!;
+      const epsTrans = this.epsilon.get(state);
+      if (epsTrans) {
+        for (const next of epsTrans) {
+          if (!closure.has(next)) {
+            closure.add(next);
+            stack.push(next);
+          }
+        }
+      }
+    }
+    return closure;
+  }
+
+  move(states: Set<NFAState>, symbol: string): Set<NFAState> {
+    const result = new Set<NFAState>();
+    for (const state of states) {
+      const key = `${state},${symbol}`;
+      const targets = this.transitions.get(key);
+      if (targets) for (const t of targets) result.add(t);
+    }
+    return result;
+  }
+
+  accepts(input: string): boolean {
+    let current = this.epsilonClosure(new Set([this.start]));
+    for (const symbol of input) {
+      current = this.epsilonClosure(this.move(current, symbol));
+      if (current.size === 0) return false;
+    }
+    for (const state of current) if (this.accept.has(state)) return true;
+    return false;
+  }
+
+  toDFA(): { states: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> } {
+    const dfaStates = new Map<string, Set<NFAState>>();
+    const dfaTransitions = new Map<string, string>();
+    const dfaAccept = new Set<string>();
+    const queue: string[] = [];
+
+    const startClosure = this.epsilonClosure(new Set([this.start]));
+    const startName = this.setName(startClosure);
+    dfaStates.set(startName, startClosure);
+    queue.push(startName);
+
+    while (queue.length > 0) {
+      const dfaState = queue.shift()!;
+      const nfaSet = dfaStates.get(dfaState)!;
+
+      // Check if this DFA state contains an NFA accept state
+      for (const s of nfaSet) if (this.accept.has(s)) dfaAccept.add(dfaState);
+
+      for (const sym of this.alphabet) {
+        const moveSet = this.move(nfaSet, sym);
+        const closure = this.epsilonClosure(moveSet);
+        if (closure.size === 0) continue;
+        const name = this.setName(closure);
+        dfaTransitions.set(`${dfaState},${sym}`, name);
+        if (!dfaStates.has(name)) {
+          dfaStates.set(name, closure);
+          queue.push(name);
+        }
+      }
+    }
+
+    return {
+      states: new Set([...dfaStates.keys()]),
+      transitions: dfaTransitions,
+      start: startName,
+      accept: dfaAccept
+    };
+  }
+
+  private setName(set: Set<NFAState>): string {
+    return `{${[...set].sort().join(",")}}`;
+  }
+}
+
+// NFA recognizing strings ending with "01"
+const nfa = new NFA(
+  new Set(["q0", "q1", "q2"]),
+  new Set(["0", "1"]),
+  new Map([
+    ["q0,0", new Set(["q0", "q1"])],
+    ["q0,1", new Set(["q0"])],
+    ["q1,0", new Set()],
+    ["q1,1", new Set(["q2"])],
+    ["q2,0", new Set()],
+    ["q2,1", new Set()]
+  ]),
+  new Map(),
+  "q0", new Set(["q2"])
+);
+
+console.log(nfa.accepts("01"));     // true
+console.log(nfa.accepts("101"));    // true
+console.log(nfa.accepts("0"));      // false
+console.log(nfa.accepts("10"));     // false
+
+const dfa = nfa.toDFA();
+console.log(dfa.states);            // DFA state names
+console.log(dfa.accept);            // DFA accepts
+console.log([...dfa.transitions]);  // DFA transition table
+```
+
 ## Summary
 
 - NFA generalizes DFA by allowing multiple or zero next states per input symbol.

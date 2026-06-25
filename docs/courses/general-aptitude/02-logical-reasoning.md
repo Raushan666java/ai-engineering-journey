@@ -759,6 +759,58 @@ function solvePuzzle(): void {
 
 14. QSOHDSFQ (each letter shifted by pattern) | 15. Brother-in-law | 16. Facing south, 10m from start | 17. 26V (pattern: n²+1, reverse alphabet letter)
 
+### TypeScript: Truth Table Builder & Syllogism Validator
+
+```typescript
+class TruthTable {
+  static generate(vars: string[], expr: (vals: boolean[]) => boolean): void {
+    const rows = 2 ** vars.length;
+    console.log(vars.join(" | ") + " | Result");
+    console.log("-".repeat(vars.length * 5 + 10));
+    for (let i = 0; i < rows; i++) {
+      const vals: boolean[] = [];
+      for (let j = 0; j < vars.length; j++)
+        vals.push(Boolean(i & (1 << (vars.length - 1 - j))));
+      console.log(vals.map(v => v ? "T" : "F").join(" | ") + " | " + (expr(vals) ? "T" : "F"));
+    }
+  }
+}
+
+class SyllogismEngine {
+  static evaluate(stmts: { type: string; a: string; b: string }[]): string[] {
+    const conclusions: string[] = [];
+    for (let i = 0; i < stmts.length; i++) {
+      for (let j = i + 1; j < stmts.length; j++) {
+        const s1 = stmts[i], s2 = stmts[j];
+        if (s1.b === s2.a || s2.b === s1.a) {
+          const [p, q, r] = s1.b === s2.a ? [s1.a, s1.b, s2.b] : [s2.a, s2.b, s1.a];
+          if (s1.type === "All" && s2.type === "All") conclusions.push(`All ${p} are ${r}`);
+          if (s1.type === "All" && s2.type === "No") conclusions.push(`No ${p} is ${r}`);
+          if (s1.type === "Some" && s2.type === "All") conclusions.push(`Some ${p} are ${r}`);
+        }
+      }
+    }
+    return conclusions;
+  }
+}
+
+class CodingDecoder {
+  static shiftCode(word: string, shift: number): string {
+    return word.split("").map(c => {
+      const code = c.charCodeAt(0);
+      if (code >= 65 && code <= 90) return String.fromCharCode(((code - 65 + shift) % 26) + 65);
+      if (code >= 97 && code <= 122) return String.fromCharCode(((code - 97 + shift) % 26) + 97);
+      return c;
+    }).join("");
+  }
+}
+
+console.log("Truth table demo:");
+TruthTable.generate(["P", "Q"], ([p, q]) => (p && q) || !p);
+console.log("Syllogism:", SyllogismEngine.evaluate([{ type: "All", a: "Mammals", b: "Animals" }, { type: "All", a: "Animals", b: "Living" }]));
+console.log("Coding:", CodingDecoder.shiftCode("COMPUTER", 1));
+```
+
 ## Summary
 
 - Syllogisms: draw Venn diagrams for each possibility; eliminate conclusions that don't necessarily follow

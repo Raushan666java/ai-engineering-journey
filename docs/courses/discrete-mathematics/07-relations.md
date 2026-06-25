@@ -459,6 +459,86 @@ function subset<T>(a: Set<T>, b: Set<T>): boolean {
 // Transitive: A ⊆ B and B ⊆ C → A ⊆ C ✓
 ```
 
+## TypeScript Implementations
+
+```typescript
+// --- Relation Property Checker ---
+type Relation = [number, number][];
+
+function isReflexive(rel: Relation, set: number[]): boolean {
+  return set.every(x => rel.some(([a]) => a === x && a === x));
+}
+function isSymmetric(rel: Relation): boolean {
+  return rel.every(([a, b]) => rel.some(([c, d]) => a === d && b === c));
+}
+function isAntisymmetric(rel: Relation): boolean {
+  return rel.every(([a, b]) => {
+    if (a === b) return true;
+    return !rel.some(([c, d]) => a === d && b === c);
+  });
+}
+function isTransitive(rel: Relation): boolean {
+  return rel.every(([a, b]) =>
+    rel.every(([c, d]) =>
+      b !== c || rel.some(([e, f]) => e === a && f === d)
+    )
+  );
+}
+
+const S = [1, 2, 3];
+const R: Relation = [[1,1],[2,2],[3,3],[1,2],[2,1],[1,3],[3,1]];
+console.log('Reflexive:', isReflexive(R, S));   // true
+console.log('Symmetric:', isSymmetric(R));      // true
+console.log('Transitive:', isTransitive(R));    // false (2,1)+(1,3)→(2,3) missing
+
+// --- Equivalence Relation Checker ---
+function isEquivalence(rel: Relation, set: number[]): boolean {
+  return isReflexive(rel, set) && isSymmetric(rel) && isTransitive(rel);
+}
+const eqRel: Relation = [[1,1],[2,2],[3,3],[1,2],[2,1]];
+console.log('Is equivalence:', isEquivalence(eqRel, [1,2,3]));
+
+// --- Transitive Closure (Warshall's Algorithm) ---
+function transitiveClosure(matrix: boolean[][]): boolean[][] {
+  const n = matrix.length;
+  const tc = matrix.map(row => [...row]);
+  for (let k = 0; k < n; k++)
+    for (let i = 0; i < n; i++)
+      for (let j = 0; j < n; j++)
+        tc[i][j] = tc[i][j] || (tc[i][k] && tc[k][j]);
+  return tc;
+}
+const adjMatrix = [
+  [false, true, false],
+  [false, false, true],
+  [false, false, false]
+];
+const closure = transitiveClosure(adjMatrix);
+console.log('Transitive closure:', closure);
+// [[false,true,true],[false,false,true],[false,false,false]]
+
+// --- Partial Order Verifier ---
+function isPartialOrder(rel: Relation, set: number[]): boolean {
+  return isReflexive(rel, set) && isAntisymmetric(rel) && isTransitive(rel);
+}
+const poset: Relation = [[1,1],[2,2],[3,3],[4,4],[1,2],[1,3],[2,4],[3,4],[1,4]];
+console.log('Is partial order:', isPartialOrder(poset, [1,2,3,4])); // true
+
+// --- Hasse Diagram Level Generator ---
+function hasseLevels(rel: Relation, set: number[]): Map<number, number> {
+  const levels = new Map<number, number>();
+  const sorted = [...set].sort((a,b) => {
+    const ab = rel.some(([x,y]) => x===a && y===b);
+    const ba = rel.some(([x,y]) => x===b && y===a);
+    if (ab && !ba) return -1;
+    if (ba && !ab) return 1;
+    return 0;
+  });
+  sorted.forEach((x, i) => levels.set(x, i));
+  return levels;
+}
+```
+
 ## Summary
 
 - Relations are sets of ordered pairs. They can be matrices or digraphs.

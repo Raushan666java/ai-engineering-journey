@@ -533,6 +533,151 @@ const solution = findPCPSolutionBruteForce(example, 6);
 // This may not find a solution even if one exists (undecidable!)
 ```
 
+## TypeScript Implementation: Many-One Reduction Mapper and Reduction Verifier
+
+```typescript
+// Many-One Reduction Framework
+
+type ReductionFunction = (input: string) => string;
+
+class Reduction {
+  constructor(
+    public name: string,
+    public fromProblem: string,
+    public toProblem: string,
+    public transform: ReductionFunction
+  ) {}
+
+  apply(input: string): string {
+    return this.transform(input);
+  }
+
+  static compose(r1: Reduction, r2: Reduction): Reduction {
+    return new Reduction(
+      `(${r1.name} ∘ ${r2.name})`,
+      r1.fromProblem,
+      r2.toProblem,
+      (input: string) => r2.transform(r1.transform(input))
+    );
+  }
+}
+
+class ReducibilityProver {
+  // Halting Problem → A_TM reduction
+  static haltToATM(): Reduction {
+    return new Reduction(
+      "HALT ≤ₘ A_TM",
+      "HALT (Does TM M halt on w?)",
+      "A_TM (Does TM M' accept w'?)",
+      (input: string) => {
+        const [tmDesc, ...rest] = input.split("|");
+        const w = rest.join("|");
+        // Transform ⟨M, w⟩ → ⟨M', w'⟩ where M' accepts iff M halts
+        return `modified:${tmDesc}|${w}`;
+      }
+    );
+  }
+
+  // A_TM → HALT reduction
+  static ATMToHalt(): Reduction {
+    return new Reduction(
+      "A_TM ≤ₘ HALT",
+      "A_TM (Does TM M accept w?)",
+      "HALT (Does TM M' halt on w'?)",
+      (input: string) => {
+        const [tmDesc, w] = input.split("|");
+        return `loopIfReject:${tmDesc}|${w}`;
+      }
+    );
+  }
+
+  // A_TM → EMPTY_TM reduction
+  static ATMToEmpty(): Reduction {
+    return new Reduction(
+      "A_TM ≤ₘ EMPTY_TM",
+      "A_TM (Does TM M accept w?)",
+      "EMPTY_TM (Does TM M' accept nothing?)",
+      (input: string) => {
+        const [tmDesc, w] = input.split("|");
+        // Build new TM that accepts if original accepts w
+        return `ignoreInput_runMOnW:${tmDesc}|${w}`;
+      }
+    );
+  }
+
+  static verifyReduction(reduction: Reduction, testInput: string): void {
+    console.log(`Reduction: ${reduction.name}`);
+    console.log(`  From: ${reduction.fromProblem}`);
+    console.log(`  To:   ${reduction.toProblem}`);
+    console.log(`  Input: "${testInput}"`);
+    console.log(`  Output: "${reduction.apply(testInput)}"`);
+  }
+
+  static computeClosure(problems: string[], reductions: Map<string, string>): string[] {
+    // Compute transitive closure of reductions
+    const closure = new Set(problems);
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const [from, to] of reductions) {
+        if (closure.has(from) && !closure.has(to)) {
+          closure.add(to);
+          changed = true;
+        }
+      }
+    }
+    return [...closure];
+  }
+}
+
+class PostCorrespondenceProblem {
+  static solveBruteForce(tiles: [string, string][], maxDepth: number): string[] | null {
+    const queue: { sequence: number[]; top: string; bottom: string }[] =
+      tiles.map((_, i) => ({ sequence: [i], top: tiles[i][0], bottom: tiles[i][1] }));
+
+    while (queue.length > 0) {
+      const { sequence, top, bottom } = queue.shift()!;
+
+      if (top === bottom && sequence.length > 0) {
+        return sequence.map(i => `${tiles[i][0]}/${tiles[i][1]}`);
+      }
+
+      if (sequence.length >= maxDepth) continue;
+
+      for (let i = 0; i < tiles.length; i++) {
+        const newTop = top + tiles[i][0];
+        const newBottom = bottom + tiles[i][1];
+
+        // Only continue if one string is a prefix of the other
+        const shorter = newTop.length < newBottom.length ? newTop : newBottom;
+        const longer = newTop.length < newBottom.length ? newBottom : newTop;
+        if (longer.startsWith(shorter)) {
+          queue.push({ sequence: [...sequence, i], top: newTop, bottom: newBottom });
+        }
+      }
+    }
+    return null;
+  }
+}
+
+// Example reductions
+const haltRed = ReducibilityProver.haltToATM();
+ReducibilityProver.verifyReduction(haltRed, "someTM|inputString");
+
+const composed = Reduction.compose(
+  ReducibilityProver.ATMToHalt(),
+  ReducibilityProver.haltToATM()
+);
+console.log(`Composed reduction: ${composed.name}`);
+
+// PCP example
+const pcpTiles: [string, string][] = [
+  ["a", "ab"], ["b", "a"], ["ab", "ba"], ["ba", "b"]
+];
+const solution = PostCorrespondenceProblem.solveBruteForce(pcpTiles, 5);
+console.log(`PCP solution: ${solution ? solution.join(" → ") : "none found at depth 5"}`);
+```
+
 ## Summary
 
 - Mapping reductions are computable functions that preserve language membership.

@@ -599,6 +599,91 @@ console.log(analyzer.generateReport());
 | Enterprise | Compliance policy enforcement |
 | Container | Container image CVE scanning |
 
+### SAST/DAST Scanner Wrapper
+
+Integrating security scanning into CI/CD pipelines requires consistent interfaces across scanning tools. The following wrapper unifies static and dynamic analysis results.
+
+```typescript
+interface ScanIssue {
+  id: string;
+  severity: 'critical' | 'high' | 'medium' | 'low' | 'info';
+  type: string;
+  file: string;
+  line: number;
+  description: string;
+  remediation: string;
+  cve?: string;
+}
+
+interface ScanResult {
+  scanner: 'sast' | 'dast' | 'sca' | 'container';
+  issues: ScanIssue[];
+  duration: number;
+  passed: boolean;
+}
+
+interface SecurityGateResult {
+  passed: boolean;
+  criticalCount: number;
+  highCount: number;
+  mediumCount: number;
+  failedGates: string[];
+}
+
+class ScannerWrapper {
+  runSAST(code: string): ScanResult {
+    const issues: ScanIssue[] = [];
+    const lines = code.split('\n');
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].includes('eval(') || lines[i].includes('exec(')) {
+        issues.push({ id: `SAST-${issues.length + 1}`, severity: 'high', type: 'Code Injection', file: 'src/app.ts', line: i + 1, description: 'Dangerous function usage', remediation: 'Avoid eval/exec, use safe alternatives' });
+      }
+      if (lines[i].includes('innerHTML') || lines[i].includes('document.write')) {
+        issues.push({ id: `SAST-${issues.length + 1}`, severity: 'medium', type: 'XSS', file: 'src/app.ts', line: i + 1, description: 'Potential XSS vulnerability', remediation: 'Use textContent or sanitize input' });
+      }
+    }
+    return { scanner: 'sast', issues, duration: 12, passed: issues.filter(i => i.severity === 'critical' || i.severity === 'high').length === 0 };
+  }
+
+  runDAST(endpoints: string[]): ScanResult {
+    const issues: ScanIssue[] = [];
+    for (const ep of endpoints) {
+      if (ep.includes('/api/')) {
+        issues.push({ id: `DAST-${issues.length + 1}`, severity: 'medium', type: 'Missing Auth', file: ep, line: 0, description: 'Endpoint missing authentication header', remediation: 'Add authorization middleware' });
+      }
+    }
+    return { scanner: 'dast', issues, duration: 45, passed: issues.length === 0 };
+  }
+
+  evaluateGates(results: ScanResult[]): SecurityGateResult {
+    const allIssues = results.flatMap(r => r.issues);
+    const criticalCount = allIssues.filter(i => i.severity === 'critical').length;
+    const highCount = allIssues.filter(i => i.severity === 'high').length;
+    const mediumCount = allIssues.filter(i => i.severity === 'medium').length;
+    const failedGates: string[] = [];
+
+    if (criticalCount > 0) failedGates.push('Blocking: Critical vulnerabilities found');
+    if (highCount > 2) failedGates.push('Blocking: More than 2 high severity issues');
+    if (mediumCount > 10) failedGates.push('Warning: More than 10 medium severity issues');
+
+    return { passed: failedGates.filter(g => g.startsWith('Blocking')).length === 0, criticalCount, highCount, mediumCount, failedGates };
+  }
+}
+
+const wrapper = new ScannerWrapper();
+const code = `const data = eval(userInput); document.getElementById('output').innerHTML = data;`;
+const sastResult = wrapper.runSAST(code);
+const dastResult = wrapper.runDAST(['https://app.com/api/users', 'https://app.com/about']);
+const gateResult = wrapper.evaluateGates([sastResult, dastResult]);
+console.log(`SAST: ${sastResult.issues.length} issues, ${sastResult.passed ? 'PASSED' : 'FAILED'}`);
+console.log(`DAST: ${dastResult.issues.length} issues, ${dastResult.passed ? 'PASSED' : 'FAILED'}`);
+console.log(`Gate: ${gateResult.passed ? 'PASSED' : 'FAILED'}, Critical: ${gateResult.criticalCount}, High: ${gateResult.highCount}`);
+```
+
+**What this demonstrates:** A unified security scanner wrapper standardizes SAST/DAST results, enables consistent gate evaluation, and enforces security policies across CI/CD pipelines.
+
+---
+
 ## Chapter Quiz
 
 <details><summary>Question 1: What is shift-left security?</summary>**A)** Moving security testing to the right<br>**B)** Integrating security earlier in development<br>**C)** Outsourcing security<br>**D)** Removing security gates<br><br>**Answer: B)** Integrating security earlier in development</details>

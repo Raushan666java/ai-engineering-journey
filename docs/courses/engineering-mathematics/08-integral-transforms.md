@@ -264,6 +264,95 @@ $$X(z) = \sum_{n=0}^\infty a^n z^{-n} = \sum_{n=0}^\infty (a z^{-1})^n = \frac{1
 
 ROC: $|z| > |a|$.
 
+### TypeScript Implementation: FFT via Cooley-Tukey
+
+```typescript
+class Complex {
+  constructor(public re: number, public im: number) {}
+  add(z: Complex): Complex { return new Complex(this.re + z.re, this.im + z.im); }
+  sub(z: Complex): Complex { return new Complex(this.re - z.re, this.im - z.im); }
+  mul(z: Complex): Complex { return new Complex(this.re * z.re - this.im * z.im, this.re * z.im + this.im * z.re); }
+  conj(): Complex { return new Complex(this.re, -this.im); }
+  mag(): number { return Math.sqrt(this.re * this.re + this.im * this.im); }
+}
+
+// Cooley-Tukey FFT (radix-2, decimation-in-time)
+function fft(x: Complex[]): Complex[] {
+  const n = x.length;
+  if (n <= 1) return x;
+  const even = fft(x.filter((_, i) => i % 2 === 0));
+  const odd = fft(x.filter((_, i) => i % 2 === 1));
+  const result = new Array(n);
+  for (let k = 0; k < n / 2; k++) {
+    const angle = -2 * Math.PI * k / n;
+    const twiddle = new Complex(Math.cos(angle), Math.sin(angle)).mul(odd[k]);
+    result[k] = even[k].add(twiddle);
+    result[k + n / 2] = even[k].sub(twiddle);
+  }
+  return result;
+}
+
+function ifft(x: Complex[]): Complex[] {
+  const conj = x.map(z => z.conj());
+  const f = fft(conj);
+  return f.map(z => new Complex(z.re / x.length, z.im / x.length).conj());
+}
+
+// Test: FFT of pure sine at frequency 1, N=16
+const N = 16;
+const signal = Array.from({ length: N }, (_, i) =>
+  new Complex(Math.sin(2 * Math.PI * 1 * i / N), 0));
+const spectrum = fft(signal);
+console.log("FFT of sin(2πt), N=16:");
+const peaks = spectrum.map((z, i) => ({ k: i, mag: z.mag() })).filter(s => s.mag > 0.1);
+peaks.forEach(p => console.log(`  k=${p.k}: magnitude=${p.mag.toFixed(4)}`));
+console.log(`  (Peaks at k=1 and k=${N - 1} correspond to +1 Hz and -1 Hz)`);
+
+// Verify IFFT reconstruction
+const reconstructed = ifft(spectrum);
+const maxErr = Math.max(...reconstructed.map((z, i) => Math.abs(z.re - signal[i].re)));
+console.log(`IFFT reconstruction max error: ${maxErr.toExponential(2)}`);
+
+// FFT of rectangular pulse
+const rect = Array.from({ length: N }, (_, i) =>
+  new Complex(i < N / 4 || i >= 3 * N / 4 ? 0 : 1, 0));
+const rectFFT = fft(rect);
+console.log("Rectangular pulse FFT (sinc-like):");
+rectFFT.forEach((z, i) => console.log(`  k=${i}: |F|=${z.mag().toFixed(4)}`));
+
+### TypeScript: Numerical Laplace Transform
+
+```typescript
+// F(s) = ∫₀^∞ f(t)e^{-st} dt (numerical approximation)
+function laplaceNum(f: (t: number) => number, s: number, tMax: number = 50, steps: number = 10000): number {
+  const dt = tMax / steps;
+  let sum = 0;
+  for (let i = 0; i < steps; i++) sum += f((i + 0.5) * dt) * Math.exp(-s * (i + 0.5) * dt) * dt;
+  return sum;
+}
+
+// Test known transforms
+console.log(`L{1}(2) = ${laplaceNum(t => 1, 2).toFixed(4)} (expected: 1/2 = 0.5)`);
+console.log(`L{t}(3) = ${laplaceNum(t => t, 3).toFixed(4)} (expected: 1/9 = ${(1 / 9).toFixed(4)})`);
+console.log(`L{e^{-t}}(4) = ${laplaceNum(t => Math.exp(-t), 4).toFixed(4)} (expected: 1/5 = 0.2)`);
+console.log(`L{sin(t)}(2) = ${laplaceNum(t => Math.sin(t), 2).toFixed(4)} (expected: 1/(2²+1) = 0.2)`);
+console.log(`L{cos(t)}(2) = ${laplaceNum(t => Math.cos(t), 2).toFixed(4)} (expected: 2/(2²+1) = ${(2 / 5).toFixed(4)})`);
+
+// Convolution via FFT: (f*g)(t) = ∫₀ᵗ f(τ)g(t-τ)dτ
+function convolve(f: number[], g: number[]): number[] {
+  const n = f.length + g.length - 1;
+  const padF = [...f, ...new Array(n - f.length).fill(0)].map(x => new Complex(x, 0));
+  const padG = [...g, ...new Array(n - g.length).fill(0)].map(x => new Complex(x, 0));
+  const fF = fft(padF), fG = fft(padG);
+  const product = fF.map((z, i) => z.mul(fG[i]));
+  return ifft(product).map(z => z.re);
+}
+
+// Example: convolution of [1,2,3] and [4,5,6] = [4,13,28,27,18]
+const conv = convolve([1, 2, 3], [4, 5, 6]);
+console.log(`Convolution [1,2,3] * [4,5,6]: [${conv.map(v => v.toFixed(0)).join(", ")}] (expected: [4, 13, 28, 27, 18])`);
+```
+
 ## Summary
 
 - Fourier series decompose periodic functions into sine/cosine harmonics

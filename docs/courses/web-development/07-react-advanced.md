@@ -668,6 +668,55 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: Custom Hook Builder & Context Generator
+
+```typescript
+class CustomHookGenerator {
+  static createReducer<S extends Record<string, any>>(
+    initial: S, handlers: Record<string, (state: S, action: any) => S>
+  ): { initialState: S; reducer: (state: S, action: { type: string; payload?: any }) => S } {
+    return {
+      initialState: initial,
+      reducer: (state, action) => handlers[action.type]?.(state, action.payload) ?? state,
+    };
+  }
+
+  static contextTemplate<T>(name: string, defaultValue: T): string {
+    return `import { createContext, useContext, useState, ReactNode } from "react";
+
+interface ${name}ContextType {
+  value: ${typeof defaultValue};
+  setValue: (val: ${typeof defaultValue}) => void;
+}
+
+const ${name}Context = createContext<${name}ContextType | undefined>(undefined);
+
+export const ${name}Provider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const [value, setValue] = useState<${typeof defaultValue}>(${JSON.stringify(defaultValue)});
+  return <${name}Context.Provider value={{ value, setValue }}>{children}</${name}Context.Provider>;
+};
+
+export const use${name} = (): ${name}ContextType => {
+  const ctx = useContext(${name}Context);
+  if (!ctx) throw new Error("use${name} must be used within ${name}Provider");
+  return ctx;
+};`;
+  }
+}
+
+class PerformanceOptimizer {
+  static memoCompare<T>(prev: T, next: T, deps: (keyof T)[]): boolean {
+    return deps.every(d => prev[d] === next[d]);
+  }
+  static debounce<T extends (...args: any[]) => void>(fn: T, ms: number): T {
+    let timer: ReturnType<typeof setTimeout>;
+    return ((...args: any[]) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); }) as T;
+  }
+}
+
+console.log(CustomHookGenerator.createReducer({ count: 0 }, { increment: (s) => ({ count: s.count + 1 }) }));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** Custom hooks encapsulate reusable stateful logic and must start with the `use` prefix.

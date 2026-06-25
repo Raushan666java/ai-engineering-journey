@@ -570,6 +570,54 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: Test Generator & Mock Factory
+
+```typescript
+interface TestCase { name: string; input: any; expected: any; }
+class TestGenerator {
+  static generate<T>(fnName: string, cases: TestCase[]): string {
+    return `import { describe, it, expect } from "vitest";
+import { ${fnName} } from "./module";
+
+describe("${fnName}", () => {
+${cases.map(c => `  it("${c.name}", () => {
+    expect(${fnName}(${JSON.stringify(c.input)})).toEqual(${JSON.stringify(c.expected)});
+  });`).join("\n")}
+});`;
+  }
+  static edgeCases<T>(fn: (input: any) => T): TestCase[] {
+    return [
+      { name: "handles null", input: null, expected: fn(null) },
+      { name: "handles undefined", input: undefined, expected: fn(undefined) },
+      { name: "handles empty string", input: "", expected: fn("") },
+    ];
+  }
+}
+
+class MockFactory {
+  static apiResponse<T>(data: T, status: number = 200, ok: boolean = true): Response {
+    return { ok, status, json: async () => data, text: async () => JSON.stringify(data) } as Response;
+  }
+  static request(options?: Partial<Request>): Request {
+    return { method: "GET", url: "http://test.com", headers: new Headers(), ...options } as Request;
+  }
+}
+
+class PlaywrightGenerator {
+  static test(component: string, interactions: string[]): string {
+    return `import { test, expect } from "@playwright/test";
+
+test("${component} interactions", async ({ page }) => {
+  await page.goto("/${component.toLowerCase()}");
+${interactions.map(i => `  await ${i};`).join("\n")}
+});`;
+  }
+}
+
+console.log(TestGenerator.generate("add", [{ name: "adds numbers", input: [1, 2], expected: 3 }]));
+console.log("Mock:", MockFactory.apiResponse({ ok: true }, 200));
+```
+
 ## Summary
 
 Testing follows the pyramid model: many unit tests for isolated logic, some integration tests for API behavior, and few E2E tests for critical user flows. Vitest provides fast unit testing, Testing Library tests React components by user interaction, Playwright automates browser testing, and MSW mocks HTTP requests for reliable test environments.

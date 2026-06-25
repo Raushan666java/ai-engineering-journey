@@ -545,6 +545,163 @@ console.log(explorer.generateReport());
 
 ---
 
+### Resource Dependency Graph Builder
+
+Understanding resource dependencies is critical for safe Terraform changes. The following implementation builds a dependency graph from Terraform state and detects potential impact zones before modifications.
+
+```typescript
+interface ResourceNode {
+  address: string;
+  type: string;
+  dependencies: string[];
+}
+
+interface DependencyGraph {
+  nodes: Map<string, ResourceNode>;
+  adjacencyList: Map<string, string[]>;
+}
+
+class DependencyGraphBuilder {
+  buildGraph(resources: ResourceNode[]): DependencyGraph {
+    const nodes = new Map<string, ResourceNode>();
+    const adjacencyList = new Map<string, string[]>();
+
+    for (const r of resources) {
+      nodes.set(r.address, r);
+      adjacencyList.set(r.address, r.dependencies);
+    }
+
+    return { nodes, adjacencyList };
+  }
+
+  findImpactZone(graph: DependencyGraph, target: string): string[] {
+    const visited = new Set<string>();
+    const queue = [target];
+    visited.add(target);
+
+    while (queue.length > 0) {
+      const current = queue.shift()!;
+      for (const [addr, deps] of graph.adjacencyList) {
+        if (!visited.has(addr) && deps.includes(current)) {
+          visited.add(addr);
+          queue.push(addr);
+        }
+      }
+    }
+
+    return Array.from(visited);
+  }
+
+  detectCycles(graph: DependencyGraph): string[][] {
+    const cycles: string[][] = [];
+    const visited = new Set<string>();
+    const recStack = new Set<string>();
+
+    const dfs = (node: string, path: string[]) => {
+      visited.add(node);
+      recStack.add(node);
+
+      for (const dep of graph.adjacencyList.get(node) || []) {
+        if (!visited.has(dep)) dfs(dep, [...path, dep]);
+        else if (recStack.has(dep)) cycles.push([...path.slice(path.indexOf(dep)), dep]);
+      }
+
+      recStack.delete(node);
+    };
+
+    for (const addr of graph.adjacencyList.keys()) {
+      if (!visited.has(addr)) dfs(addr, [addr]);
+    }
+
+    return cycles;
+  }
+}
+
+// Example: VPC, subnets, security groups, and EC2 instances
+const resources: ResourceNode[] = [
+  { address: 'aws_vpc.main', type: 'aws_vpc', dependencies: [] },
+  { address: 'aws_subnet.public', type: 'aws_subnet', dependencies: ['aws_vpc.main'] },
+  { address: 'aws_security_group.web', type: 'aws_security_group', dependencies: ['aws_vpc.main'] },
+  { address: 'aws_instance.web', type: 'aws_instance', dependencies: ['aws_subnet.public', 'aws_security_group.web'] },
+  { address: 'aws_eip.web', type: 'aws_eip', dependencies: ['aws_instance.web'] },
+];
+
+const builder = new DependencyGraphBuilder();
+const graph = builder.buildGraph(resources);
+console.log('Impact zone for aws_vpc.main:', builder.findImpactZone(graph, 'aws_vpc.main'));
+console.log('Cycles detected:', builder.detectCycles(graph));
+```
+
+**What this demonstrates:** Dependency graph analysis enables safe Terraform refactoring by identifying all resources affected by a change and preventing circular dependencies.
+
+---
+
+### State Drift Remediation Scheduler
+
+Configuration drift is inevitable in production environments. The following tool detects drift between desired and actual states, then schedules and executes remediation actions.
+
+```typescript
+interface DesiredState {
+  resource: string;
+  properties: Record<string, string>;
+}
+
+interface ActualState {
+  resource: string;
+  properties: Record<string, string>;
+  lastChecked: Date;
+}
+
+interface DriftItem {
+  resource: string;
+  property: string;
+  expected: string;
+  actual: string;
+  severity: 'low' | 'medium' | 'high';
+}
+
+class DriftRemediationScheduler {
+  detect(expected: DesiredState[], actual: ActualState[]): DriftItem[] {
+    const drifts: DriftItem[] = [];
+    for (const exp of expected) {
+      const act = actual.find(a => a.resource === exp.resource);
+      if (!act) {
+        drifts.push({ resource: exp.resource, property: 'exists', expected: 'true', actual: 'false', severity: 'high' });
+        continue;
+      }
+      for (const [key, val] of Object.entries(exp.properties)) {
+        if (act.properties[key] !== val) {
+          const sev = key === 'cidr_block' || key === 'instance_type' ? 'high' : key === 'tags' ? 'low' : 'medium';
+          drifts.push({ resource: exp.resource, property: key, expected: val, actual: act.properties[key] || '', severity: sev });
+        }
+      }
+    }
+    return drifts;
+  }
+
+  prioritize(drifts: DriftItem[]): DriftItem[] {
+    const order = { high: 0, medium: 1, low: 2 };
+    return [...drifts].sort((a, b) => order[a.severity] - order[b.severity]);
+  }
+
+  generatePlan(drifts: DriftItem[]): string {
+    const grouped = this.prioritize(drifts);
+    return `## Drift Remediation Plan\n${grouped.map(d => `| ${d.resource} | ${d.property} | ${d.expected} | ${d.actual} | ${d.severity} |`).join('\n')}`;
+  }
+}
+
+const remediator = new DriftRemediationScheduler();
+const drifts = remediator.detect(
+  [{ resource: 'aws_vpc.main', properties: { cidr_block: '10.0.0.0/16', enable_dns_support: 'true' } }],
+  [{ resource: 'aws_vpc.main', properties: { cidr_block: '10.0.0.0/24', enable_dns_support: 'true' }, lastChecked: new Date() }]
+);
+console.log(remediator.generatePlan(drifts));
+```
+
+**What this demonstrates:** Automated drift detection and remediation scheduling maintains infrastructure alignment with desired configurations, preventing configuration drift accumulation.
+
+---
+
 ## Practical Takeaways
 
 1. **Always use remote state with locking.** Never share local state files across a team.

@@ -525,6 +525,127 @@ console.log(xorCircuit.evaluate([true, true]));   // false
 
 4. **The PCP theorem changes approximation.** Before PCP, approximation was heuristic. After PCP, we know that some NP-complete problems have hard thresholds: you can approximate within some factor efficiently, but improving beyond the threshold is NP-hard.
 
+## TypeScript Implementation: P vs NP Framework and NP-Completeness Verifier
+
+```typescript
+// Advanced Complexity: Polynomial Hierarchy and Circuit Complexity
+
+type ProblemInstance = {
+  name: string;
+  size: number;
+  verify: (certificate: string) => boolean;
+};
+
+class PvsNP {
+  static ladnerTheorem(): string {
+    return "Ladner's Theorem (1975): If P ≠ NP, then NPI (NP-intermediate) is non-empty — " +
+      "there exist problems in NP that are neither in P nor NP-complete. " +
+      "Examples believed to be in NPI: Graph Isomorphism, Factoring.";
+  }
+
+  static polynomialHierarchy(): Map<string, string> {
+    const ph = new Map<string, string>();
+    ph.set("Σ₀P = Π₀P = P", "Base level: deterministic polynomial time");
+    ph.set("Σ₁P = NP", "∃ quantifier: existential problems");
+    ph.set("Π₁P = co-NP", "∀ quantifier: universal problems");
+    ph.set("Σ₂P = NP^NP", "∃∀: problems with existential+universal quantifiers");
+    ph.set("Π₂P = co-NP^NP", "∀∃: complement");
+    ph.set("PH = ∪ₖ ΣₖP", "Polynomial hierarchy (may collapse at some level)");
+    return ph;
+  }
+
+  static NPCompletenessReductionChain(): string[] {
+    return [
+      "SAT (Cook-Levin)",
+      "   ↓ polynomial reduction",
+      "3-SAT",
+      "   ↓",
+      "INDEPENDENT SET → VERTEX COVER → HAMILTONIAN PATH → TSP",
+      "   ↓                      ↓",
+      "CLIQUE                   SUBSET SUM → BIN PACKING → PARTITION",
+      "   ↓",
+      "SET COVER → HITTING SET → INTEGER PROGRAMMING"
+    ];
+  }
+
+  static isPolynomialReduction(reductionSize: (n: number) => number): boolean {
+    return reductionSize(10) < 100 && reductionSize(100) < 10000;
+  }
+}
+
+class CircuitComplexity {
+  static circuitDepth(circuit: { gates: string[]; inputs: number }): number {
+    // Estimate circuit depth by gate dependency analysis
+    let depth = 0;
+    const gateDepths = new Map<string, number>();
+    for (const gate of circuit.gates) {
+      const [type, ...deps] = gate.split(" ");
+      const maxDep = Math.max(0, ...deps.map(d => gateDepths.get(d) || 0));
+      gateDepths.set(gate, maxDep + 1);
+      depth = Math.max(depth, maxDep + 1);
+    }
+    return depth;
+  }
+
+  static circuitSize(circuit: { gates: string[]; inputs: number }): number {
+    return circuit.inputs + circuit.gates.length;
+  }
+
+  static pOverPoly(): string {
+    return "P/poly = languages decidable by polynomial-size circuits. " +
+      "Contains all of P (every P problem has poly-size circuits). " +
+      "May contain undecidable problems! (e.g., unary encoding of halting problem) " +
+      "Karp-Lipton theorem: If NP ⊆ P/poly, then PH collapses to Σ₂P.";
+  }
+}
+
+class InteractiveProof {
+  static IPequalsPSPACE(): string {
+    return "IP = PSPACE (Shamir, 1990): Every problem solvable with " +
+      "polynomial space has an interactive proof system. " +
+      "Conversely, any problem with an interactive proof requires " +
+      "only polynomial space. This includes problems not known to be in NP.";
+  }
+
+  static zeroKnowledgeProof(fact: string): string[] {
+    return [
+      `Zero-Knowledge Proof for: ${fact}`,
+      "Prover P knows a witness w for statement x.",
+      "Verifier V is convinced that P knows w, but learns nothing about w.",
+      "",
+      "Graph Isomorphism example:",
+      "1. P sends H = π(G₁) (random permutation of G₁).",
+      "2. V randomly asks: show isomorphism G₁ ≅ H or G₂ ≅ H.",
+      "3. P reveals appropriate isomorphism (or both if she knows both).",
+      "4. Repeat k times: probability of cheating = 2^(-k).",
+      "",
+      "Real-world use: zk-SNARKs in cryptocurrencies, identity verification."
+    ];
+  }
+}
+
+class PCPTheorem {
+  static statement(): string {
+    return "PCP Theorem (Arora-Safra, 1992): NP = PCP(O(log n), O(1)). " +
+      "Every NP problem has a probabilistically checkable proof where " +
+      "the verifier reads only O(log n) random bits and O(1) query bits. " +
+      "This revolutionized approximation algorithms — many optimization " +
+      "problems have hard thresholds beyond which approximation is NP-hard.";
+  }
+}
+
+console.log(PvsNP.ladnerTheorem());
+console.log([...PvsNP.polynomialHierarchy().entries()].map(([k, v]) => `  ${k}: ${v}`).join("\n"));
+console.log(PvsNP.NPCompletenessReductionChain().join("\n"));
+
+const circ = { gates: ["AND a b", "OR c d", "NOT e", "AND f g"], inputs: 4 };
+console.log(`Circuit depth: ${CircuitComplexity.circuitDepth(circ)}`);
+console.log(`Circuit size: ${CircuitComplexity.circuitSize(circ)}`);
+console.log(CircuitComplexity.pOverPoly());
+console.log(InteractiveProof.IPequalsPSPACE());
+console.log(PCPTheorem.statement());
+```
+
 ## Summary
 
 - Log-space reductions define completeness for L and NL.

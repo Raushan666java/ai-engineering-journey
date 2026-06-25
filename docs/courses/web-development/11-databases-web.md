@@ -606,6 +606,61 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: SQL Query Builder & Connection Pool Simulator
+
+```typescript
+class SQLQueryBuilder {
+  private table: string;
+  private selects: string[] = ["*"];
+  private wheres: string[] = [];
+  private orders: string[] = [];
+  private limit?: number;
+  private joins: string[] = [];
+
+  constructor(table: string) { this.table = table; }
+  select(...cols: string[]): this { this.selects = cols; return this; }
+  where(condition: string, params?: any): this { this.wheres.push(condition); return this; }
+  orderBy(col: string, dir: "ASC" | "DESC" = "ASC"): this { this.orders.push(`${col} ${dir}`); return this; }
+  setLimit(n: number): this { this.limit = n; return this; }
+  join(table: string, on: string): this { this.joins.push(`JOIN ${table} ON ${on}`); return this; }
+
+  toSQL(): string {
+    let sql = `SELECT ${this.selects.join(", ")} FROM ${this.table}`;
+    if (this.joins.length) sql += " " + this.joins.join(" ");
+    if (this.wheres.length) sql += " WHERE " + this.wheres.join(" AND ");
+    if (this.orders.length) sql += " ORDER BY " + this.orders.join(", ");
+    if (this.limit !== undefined) sql += ` LIMIT ${this.limit}`;
+    return sql;
+  }
+}
+
+class ConnectionPool {
+  private pool: number; private active = 0; private queue: Array<() => void> = [];
+  constructor(size: number) { this.pool = size; }
+  async acquire<T>(fn: () => Promise<T>): Promise<T> {
+    if (this.active >= this.pool) await new Promise<void>(r => this.queue.push(r));
+    this.active++;
+    try { return await fn(); }
+    finally { this.active--; if (this.queue.length) this.queue.shift()!(); }
+  }
+}
+
+class CacheManager {
+  private store = new Map<string, { data: any; expiry: number }>();
+  get<T>(key: string): T | null {
+    const entry = this.store.get(key);
+    if (!entry || Date.now() > entry.expiry) { this.store.delete(key); return null; }
+    return entry.data as T;
+  }
+  set(key: string, data: any, ttlMs: number): void {
+    this.store.set(key, { data, expiry: Date.now() + ttlMs });
+  }
+}
+
+const qb = new SQLQueryBuilder("users").select("id", "name").where("age > ?", 18).orderBy("name").setLimit(10);
+console.log("SQL:", qb.toSQL());
+```
+
 ## Summary
 
 Databases are the persistence layer of web applications. Prisma ORM provides type-safe database access with auto-generated queries and migrations. SQL databases suit structured relational data, while NoSQL offers schema flexibility. Proper indexing, solving N+1 queries, and Redis caching are essential for performance at scale.

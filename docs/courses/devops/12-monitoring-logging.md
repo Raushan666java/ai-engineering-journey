@@ -586,6 +586,109 @@ console.log(pipeline.generateFilebeat(config));
 | Enterprise | Centralized logging compliance |
 | Container | Pod metrics and container logs |
 
+### Structured Log Parser
+
+Structured logging enables automated analysis and alerting. The following parser extracts structured data from log streams, detects anomalies, and generates metric summaries.
+
+```typescript
+interface LogEntry {
+  timestamp: string;
+  level: string;
+  service: string;
+  message: string;
+  metadata: Record<string, unknown>;
+}
+
+interface LogQuery {
+  timeRange: [Date, Date];
+  levels?: string[];
+  services?: string[];
+  search?: string;
+}
+
+interface LogAnalysis {
+  totalEntries: number;
+  errorRate: number;
+  topErrors: { message: string; count: number }[];
+  serviceBreakdown: Record<string, number>;
+  timeSeries: { time: string; count: number; errors: number }[];
+}
+
+class StructuredLogParser {
+  parse(rawLine: string): LogEntry | null {
+    try {
+      const parsed = JSON.parse(rawLine);
+      return {
+        timestamp: parsed.timestamp || new Date().toISOString(),
+        level: parsed.level || 'INFO',
+        service: parsed.service || 'unknown',
+        message: parsed.message || '',
+        metadata: parsed.metadata || {},
+      };
+    } catch {
+      const regex = /^(\S+)\s+(\S+)\s+(\S+)\s+(.+)$/;
+      const match = rawLine.match(regex);
+      if (!match) return null;
+      return {
+        timestamp: match[1],
+        level: match[2],
+        service: match[3],
+        message: match[4],
+        metadata: {},
+      };
+    }
+  }
+
+  analyze(entries: LogEntry[], query: LogQuery): LogAnalysis {
+    const filtered = entries.filter(e => {
+      const t = new Date(e.timestamp);
+      if (t < query.timeRange[0] || t > query.timeRange[1]) return false;
+      if (query.levels && !query.levels.includes(e.level)) return false;
+      if (query.services && !query.services.includes(e.service)) return false;
+      if (query.search && !e.message.toLowerCase().includes(query.search.toLowerCase())) return false;
+      return true;
+    });
+
+    const errorEntries = filtered.filter(e => e.level === 'ERROR' || e.level === 'CRITICAL');
+    const errorMap = new Map<string, number>();
+    errorEntries.forEach(e => errorMap.set(e.message, (errorMap.get(e.message) || 0) + 1));
+    const topErrors = [...errorMap.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10).map(([message, count]) => ({ message, count }));
+
+    const serviceBreakdown: Record<string, number> = {};
+    filtered.forEach(e => { serviceBreakdown[e.service] = (serviceBreakdown[e.service] || 0) + 1; });
+
+    const timeSlots: Record<string, { count: number; errors: number }> = {};
+    filtered.forEach(e => {
+      const slot = e.timestamp.substring(0, 13);
+      if (!timeSlots[slot]) timeSlots[slot] = { count: 0, errors: 0 };
+      timeSlots[slot].count++;
+      if (e.level === 'ERROR') timeSlots[slot].errors++;
+    });
+
+    return {
+      totalEntries: filtered.length,
+      errorRate: filtered.length > 0 ? errorEntries.length / filtered.length : 0,
+      topErrors,
+      serviceBreakdown,
+      timeSeries: Object.entries(timeSlots).map(([time, data]) => ({ time, ...data })),
+    };
+  }
+}
+
+const parser = new StructuredLogParser();
+const rawLogs = [
+  '{"timestamp":"2025-06-25T10:00:00Z","level":"ERROR","service":"api-gateway","message":"timeout upstream","metadata":{"status":504}}',
+  '{"timestamp":"2025-06-25T10:01:00Z","level":"INFO","service":"auth","message":"login successful","metadata":{"user":"admin"}}',
+];
+const parsed = rawLogs.map(l => parser.parse(l)!).filter(Boolean);
+const analysis = parser.analyze(parsed, { timeRange: [new Date('2025-01-01'), new Date('2025-12-31')] });
+console.log(`Parsed ${analysis.totalEntries} entries, Error rate: ${(analysis.errorRate * 100).toFixed(1)}%`);
+```
+
+**What this demonstrates:** Structured log parsing enables automated extraction of error rates, service-level breakdowns, and time-series analysis from raw log streams.
+
+---
+
 ## Chapter Quiz
 
 <details><summary>Question 1: What are Prometheus's four metric types?</summary>**A)** String, Int, Float, Boolean<br>**B)** Counter, Gauge, Histogram, Summary<br>**C)** Log, Metric, Trace, Event<br>**D)** Hot, Warm, Cold, Archive<br><br>**Answer: B)** Counter, Gauge, Histogram, Summary</details>

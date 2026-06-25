@@ -579,6 +579,117 @@ export { launchInstances, configureScaling, createLoadBalancer };
 **A) 7.** Spread placement groups are limited to 7 running instances per Availability Zone because each instance runs on distinct hardware, ensuring maximum fault isolation.
 </details>
 
+### TypeScript: Auto Scaling Group Simulator
+
+```typescript
+interface ASGConfig {
+  minSize: number;
+  maxSize: number;
+  desiredCapacity: number;
+  cooldownSeconds: number;
+  scaleUpThreshold: number;
+  scaleDownThreshold: number;
+}
+
+class AutoScalingGroup {
+  private instances: { id: string; state: string; cpuUtil: number; healthy: boolean }[] = [];
+  private config: ASGConfig;
+  private time: number = 0;
+  private counter: number = 0;
+  private lastScale: number = 0;
+
+  constructor(config: ASGConfig) {
+    this.config = config;
+    for (let i = 0; i < config.desiredCapacity; i++) this.launchInstance();
+  }
+
+  private launchInstance(): void {
+    this.instances.push({
+      id: `i-${++this.counter}`, state: "running",
+      cpuUtil: Math.random() * 30 + 10, healthy: true,
+    });
+  }
+
+  setCPU(utils: number[]): void {
+    this.instances.filter((i) => i.state === "running")
+      .forEach((inst, idx) => { inst.cpuUtil = utils[idx % utils.length]; });
+  }
+
+  tick(): void {
+    this.time++;
+    const running = this.instances.filter((i) => i.state === "running");
+    const avgCPU = running.length > 0
+      ? running.reduce((s, i) => s + i.cpuUtil, 0) / running.length : 0;
+
+    if (this.time - this.lastScale >= this.config.cooldownSeconds) {
+      if (avgCPU > this.config.scaleUpThreshold && this.instances.length < this.config.maxSize) {
+        this.launchInstance();
+        this.lastScale = this.time;
+      } else if (avgCPU < this.config.scaleDownThreshold && this.instances.length > this.config.minSize) {
+        const t = this.instances.find((i) => i.state === "running");
+        if (t) { t.state = "terminated"; this.lastScale = this.time; }
+      }
+    }
+  }
+
+  getActive(): number { return this.instances.filter((i) => i.state === "running").length; }
+  getAvgCPU(): number {
+    const r = this.instances.filter((i) => i.state === "running");
+    return r.length > 0 ? r.reduce((s, i) => s + i.cpuUtil, 0) / r.length : 0;
+  }
+}
+
+const asg = new AutoScalingGroup({ minSize: 2, maxSize: 8, desiredCapacity: 2, cooldownSeconds: 3, scaleUpThreshold: 70, scaleDownThreshold: 30 });
+const load = [20, 25, 30, 40, 55, 65, 80, 85, 90, 85, 75, 60, 45, 35, 25, 20, 30, 50, 70, 85];
+load.forEach((l) => {
+  asg.setCPU(new Array(asg.getActive()).fill(l));
+  asg.tick();
+});
+console.log(`Final: ${asg.getActive()} instances, avg CPU: ${asg.getAvgCPU().toFixed(1)}%`);
+```
+
+### TypeScript: Spot Fleet Optimizer
+
+```typescript
+interface SpotOption {
+  type: string;
+  price: number;
+  onDemand: number;
+  interruptRate: "low" | "medium" | "high";
+}
+
+class SpotFleetOptimizer {
+  private options: SpotOption[] = [];
+
+  addOption(opt: SpotOption): void { this.options.push(opt); }
+
+  optimize(budget: number, diversity: number = 0.3): SpotOption[] {
+    const ranked = [...this.options]
+      .filter((o) => o.price <= budget)
+      .sort((a, b) => a.price / a.onDemand - b.price / b.onDemand);
+
+    const result: SpotOption[] = [];
+    const maxTypes = Math.max(1, Math.floor(ranked.length * diversity));
+    let remaining = budget;
+
+    for (let i = 0; i < Math.min(maxTypes, ranked.length); i++) {
+      const count = Math.floor(remaining / (ranked.length - i) / ranked[i].price);
+      if (count > 0) {
+        result.push(ranked[i]);
+        remaining -= count * ranked[i].price;
+      }
+    }
+    return result;
+  }
+}
+
+const fleet = new SpotFleetOptimizer();
+fleet.addOption({ type: "t3.medium", price: 0.015, onDemand: 0.0416, interruptRate: "low" });
+fleet.addOption({ type: "m5.large", price: 0.038, onDemand: 0.096, interruptRate: "medium" });
+fleet.addOption({ type: "c5.large", price: 0.034, onDemand: 0.085, interruptRate: "high" });
+console.log("Spot fleet plan:", fleet.optimize(0.5).map((o) => o.type + " @ $" + o.price));
+```
+
 ## Summary
 
 - Cloud compute provides virtualized hardware (IaaS) through VMs.

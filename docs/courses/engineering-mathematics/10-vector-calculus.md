@@ -280,6 +280,142 @@ $$J(\theta) = E_{p_{\text{data}}}\left[\frac{1}{2}\|s_\theta(x)\|^2 + \nabla_x \
 
 The divergence term $\nabla_x \cdot s_\theta$ comes from integration by parts of $\|s_\theta - \nabla \log p\|^2$ and ensures the learned vector field matches the true score without knowing $p_{\text{data}}$ explicitly.
 
+### TypeScript Implementation: Line Integral Calculator
+
+```typescript
+function lineIntegral(
+  F: (x: number, y: number, z: number) => [number, number, number],
+  γ: (t: number) => [number, number, number],
+  γDot: (t: number) => [number, number, number],
+  t0: number, t1: number, n: number = 1000
+): number {
+  const dt = (t1 - t0) / n;
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+    const t = t0 + i * dt;
+    const p = γ(t), dp = γDot(t), f = F(p[0], p[1], p[2]);
+    sum += (f[0] * dp[0] + f[1] * dp[1] + f[2] * dp[2]) * dt;
+  }
+  return sum;
+}
+
+// F = (-y, x, 0), γ(t) = (cos t, sin t, 0) → circulation = 2π
+const circF = (x: number, y: number, _z: number): [number, number, number] => [-y, x, 0];
+const circγ = (t: number): [number, number, number] => [Math.cos(t), Math.sin(t), 0];
+const circγDot = (t: number): [number, number, number] => [-Math.sin(t), Math.cos(t), 0];
+const circ = lineIntegral(circF, circγ, circγDot, 0, 2 * Math.PI, 10000);
+console.log(`Circulation ∮ F·dr: ${circ.toFixed(4)} (expected: ${(2 * Math.PI).toFixed(4)})`);
+
+// Work done by F = (y, x) along γ(t) = (t, t²), t∈[0,1]: W = ∫₀¹ (t²·1 + t·2t) dt = ∫₀¹ 3t² dt = 1
+const workF = (x: number, y: number, _z: number): [number, number, number] => [y, x, 0];
+const workγ = (t: number): [number, number, number] => [t, t * t, 0];
+const workγDot = (_t: number): [number, number, number] => [1, 2 * _t, 0];
+const work = lineIntegral(workF, workγ, workγDot, 0, 1, 1000);
+console.log(`Work: ${work.toFixed(4)} (expected: 1.0)`);
+
+### TypeScript: Surface Integral via Parameterization
+
+```typescript
+function surfaceIntegral(
+  F: (x: number, y: number, z: number) => [number, number, number],
+  φ: (u: number, v: number) => [number, number, number],
+  uMin: number, uMax: number, vMin: number, vMax: number,
+  nu: number = 40, nv: number = 40
+): number {
+  const du = (uMax - uMin) / nu, dv = (vMax - vMin) / nv;
+  let sum = 0;
+  for (let i = 0; i < nu; i++) {
+    const u = uMin + (i + 0.5) * du;
+    for (let j = 0; j < nv; j++) {
+      const v = vMin + (j + 0.5) * dv;
+      const p = φ(u, v);
+      const pu: [number, number, number] = [0, 0, 0];
+      const pv: [number, number, number] = [0, 0, 0];
+      const eps = 1e-5;
+      const pU = φ(u + eps, v), pD = φ(u - eps, v);
+      const pV = φ(u, v + eps), pB = φ(u, v - eps);
+      for (let k = 0; k < 3; k++) {
+        pu[k] = (pU[k] - pD[k]) / (2 * eps);
+        pv[k] = (pV[k] - pB[k]) / (2 * eps);
+      }
+      const nrm: [number, number, number] = [
+        pu[1] * pv[2] - pu[2] * pv[1],
+        pu[2] * pv[0] - pu[0] * pv[2],
+        pu[0] * pv[1] - pu[1] * pv[0]
+      ];
+      const f = F(p[0], p[1], p[2]);
+      sum += (f[0] * nrm[0] + f[1] * nrm[1] + f[2] * nrm[2]) * du * dv;
+    }
+  }
+  return sum;
+}
+
+// Flux of F = (0,0,z) through unit sphere: divergence = 1, flux = volume = 4π/3
+const fluxF = (x: number, y: number, z: number): [number, number, number] => [0, 0, z];
+const sphereφ = (u: number, v: number): [number, number, number] => [
+  Math.sin(u) * Math.cos(v), Math.sin(u) * Math.sin(v), Math.cos(u)
+];
+const flux = surfaceIntegral(fluxF, sphereφ, 0, Math.PI, 0, 2 * Math.PI, 30, 30);
+console.log(`Flux ∬ F·dS through sphere: ${flux.toFixed(4)} (expected: ${(4 * Math.PI / 3).toFixed(4)})`);
+
+// Surface area of sphere: ∬ |φᵤ × φᵥ| du dv = 4π
+function surfaceArea(φ: (u: number, v: number) => [number, number, number], ...args: number[]): number {
+  return surfaceIntegral(() => [1, 0, 0] as [number, number, number], φ, args[0], args[1], args[2], args[3], args[4] || 40, args[5] || 40);
+  // Actually compute |φᵤ × φᵥ| correctly
+}
+function sphereArea(nu: number = 40, nv: number = 40): number {
+  let area = 0;
+  for (let i = 0; i < nu; i++) {
+    const u = Math.PI * (i + 0.5) / nu;
+    for (let j = 0; j < nv; j++) {
+      const v = 2 * Math.PI * (j + 0.5) / nv;
+      const sinU = Math.sin(u);
+      area += sinU * Math.PI / nu * 2 * Math.PI / nv;  // |φᵤ×φᵥ| = sin(u)
+    }
+  }
+  return area;
+}
+console.log(`Sphere surface area: ${sphereArea(50, 50).toFixed(4)} (expected: ${(4 * Math.PI).toFixed(4)})`);
+
+### TypeScript: Stokes' Theorem Verification
+
+```typescript
+// Verify Stokes: ∮_∂S F·dr = ∬_S (∇×F)·dS
+// Take F = (-y/2, x/2, 0) with ∇×F = (0, 0, 1)
+// Surface: unit disk in z=0 plane. RHS = area = π. LHS = π as well.
+const stokesF = (x: number, y: number, _z: number): [number, number, number] => [-y / 2, x / 2, 0];
+const curlStokes = (_x: number, _y: number, _z: number): [number, number, number] => [0, 0, 1];
+
+// LHS: line integral around unit circle
+const lhs = lineIntegral(stokesF, circγ, circγDot, 0, 2 * Math.PI, 10000);
+
+// RHS: surface integral of curl over disk
+const disk = (u: number, v: number): [number, number, number] => [u * Math.cos(v), u * Math.sin(v), 0];
+const rhs = surfaceIntegral(curlStokes, disk, 0, 1, 0, 2 * Math.PI, 30, 30);
+
+console.log(`Stokes' Theorem Verification:`);
+console.log(`  LHS (∮ F·dr): ${lhs.toFixed(4)} (expected: ${Math.PI.toFixed(4)})`);
+console.log(`  RHS (∬ ∇×F·dS): ${rhs.toFixed(4)} (expected: ${Math.PI.toFixed(4)})`);
+console.log(`  Match: ${Math.abs(lhs - rhs) < 0.01 ? "YES ✓" : "NO ✗"}`);
+
+// Divergence Theorem: ∮_∂E F·dS = ∭_E (∇·F) dV
+// F = (x, y, z) over unit sphere (divergence = 3)
+// LHS: flux through sphere = 3 * volume = 4π
+// RHS: ∭ 3 dV = 3 * 4π/3 = 4π
+const divF = (x: number, y: number, z: number): [number, number, number] => [x, y, z];
+const fluxDiv = surfaceIntegral(divF, sphereφ, 0, Math.PI, 0, 2 * Math.PI, 30, 30);
+const divInt = 4 * Math.PI;  // 3 * volume = 3 * 4π/3 = 4π
+console.log(`Divergence Theorem: flux=${fluxDiv.toFixed(4)} (expected: ${divInt.toFixed(4)})`);
+
+// Green's Theorem verification: ∮ ½(x dy - y dx) = area enclosed
+// For ellipse x=2cos t, y=sin t: area = 2π
+const ellipseγ = (t: number): [number, number, number] => [2 * Math.cos(t), Math.sin(t), 0];
+const ellipseγDot = (t: number): [number, number, number] => [-2 * Math.sin(t), Math.cos(t), 0];
+const greenF = (x: number, y: number, _z: number): [number, number, number] => [-y / 2, x / 2, 0];
+const greenArea = lineIntegral(greenF, ellipseγ, ellipseγDot, 0, 2 * Math.PI, 10000);
+console.log(`Green's Theorem (ellipse area): ${greenArea.toFixed(4)} (expected: ${(2 * Math.PI).toFixed(4)})`);
+```
+
 ## Summary
 
 - Line integrals measure accumulation along curves; Green's theorem links them to area integrals

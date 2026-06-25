@@ -559,6 +559,171 @@ class StorageCostCalculator {
 // console.log(calc.compareTiers({ storageGb: 5000, monthlyGetRequests: 1e6, monthlyPutRequests: 1e5 }));
 ```
 
+### TypeScript: Storage Lifecycle Policy Simulator
+
+```typescript
+type StorageTier = "standard" | "infrequent-access" | "archive" | "deep-archive";
+
+interface LifecycleRule {
+  id: string;
+  prefix: string;
+  transitions: { days: number; tier: StorageTier }[];
+  expirationDays?: number;
+}
+
+interface StorageObject {
+  key: string;
+  sizeGB: number;
+  lastAccessed: number;
+  currentTier: StorageTier;
+  age: number;
+}
+
+class LifecyclePolicyEngine {
+  private rules: LifecycleRule[] = [];
+  private objects: StorageObject[] = [];
+  private tierCosts: Record<StorageTier, number> = {
+    "standard": 0.023, "infrequent-access": 0.0125,
+    "archive": 0.004, "deep-archive": 0.001,
+  };
+
+  addRule(rule: LifecycleRule): void { this.rules.push(rule); }
+  addObject(obj: StorageObject): void { this.objects.push(obj); }
+
+  simulateDay(): StorageObject[] {
+    const transitions: StorageObject[] = [];
+    for (const obj of this.objects) {
+      obj.age++;
+      for (const rule of this.rules) {
+        if (!obj.key.startsWith(rule.prefix)) continue;
+        for (const t of rule.transitions) {
+          if (obj.age >= t.days && obj.currentTier !== t.tier) {
+            const fromCost = this.tierCosts[obj.currentTier];
+            const toCost = this.tierCosts[t.tier];
+            const savings = obj.sizeGB * (fromCost - toCost);
+            obj.currentTier = t.tier;
+            transitions.push({ ...obj, currentTier: obj.currentTier });
+            console.log(`Transitioned ${obj.key} to ${t.tier}: saving $${savings.toFixed(3)}/month`);
+          }
+        }
+      }
+    }
+    return transitions;
+  }
+
+  calculateMonthlyCost(): number {
+    return this.objects.reduce((sum, obj) => sum + obj.sizeGB * this.tierCosts[obj.currentTier], 0);
+  }
+
+  simulateDays(days: number): void {
+    for (let d = 0; d < days; d++) this.simulateDay();
+  }
+}
+
+const engine = new LifecyclePolicyEngine();
+engine.addRule({
+  id: "logs-lifecycle", prefix: "logs/",
+  transitions: [
+    { days: 30, tier: "infrequent-access" },
+    { days: 90, tier: "archive" },
+    { days: 365, tier: "deep-archive" },
+  ],
+  expirationDays: 2555,
+});
+engine.addRule({
+  id: "media-lifecycle", prefix: "media/",
+  transitions: [
+    { days: 90, tier: "infrequent-access" },
+    { days: 730, tier: "archive" },
+  ],
+});
+for (let i = 1; i <= 5; i++) engine.addObject({ key: `logs/app-${i}.log`, sizeGB: 10, lastAccessed: 0, currentTier: "standard", age: 0 });
+for (let i = 1; i <= 3; i++) engine.addObject({ key: `media/video-${i}.mp4`, sizeGB: 50, lastAccessed: 0, currentTier: "standard", age: 0 });
+console.log("Monthly cost before lifecycle:", "$" + engine.calculateMonthlyCost().toFixed(2));
+engine.simulateDays(400);
+console.log("Monthly cost after lifecycle:", "$" + engine.calculateMonthlyCost().toFixed(2));
+```
+
+### TypeScript: Replication Manager
+
+```typescript
+interface ReplicationConfig {
+  sourceBucket: string;
+  destinationBucket: string;
+  destinationRegion: string;
+  prefix: string;
+  replicateDeleteMarkers: boolean;
+  encryptionEnabled: boolean;
+}
+
+interface ReplicationMetrics {
+  totalObjects: number;
+  replicatedObjects: number;
+  failedObjects: number;
+  totalBytes: number;
+  replicatedBytes: number;
+  lastReplicationTime: number | null;
+  replicationLag: number;
+}
+
+class ReplicationManager {
+  private configs: ReplicationConfig[] = [];
+  private metrics: Map<string, ReplicationMetrics> = new Map();
+
+  addConfig(config: ReplicationConfig): void {
+    this.configs.push(config);
+    this.metrics.set(config.sourceBucket + "->" + config.destinationBucket, {
+      totalObjects: 0, replicatedObjects: 0, failedObjects: 0,
+      totalBytes: 0, replicatedBytes: 0,
+      lastReplicationTime: null, replicationLag: 0,
+    });
+  }
+
+  recordObject(key: string, sizeBytes: number): void {
+    for (const cfg of this.configs) {
+      if (!key.startsWith(cfg.prefix)) continue;
+      const metricKey = cfg.sourceBucket + "->" + cfg.destinationBucket;
+      const m = this.metrics.get(metricKey)!;
+      m.totalObjects++;
+      m.totalBytes += sizeBytes;
+    }
+  }
+
+  replicate(): void {
+    for (const cfg of this.configs) {
+      const metricKey = cfg.sourceBucket + "->" + cfg.destinationBucket;
+      const m = this.metrics.get(metricKey)!;
+      const pending = m.totalObjects - m.replicatedObjects - m.failedObjects;
+      const success = Math.floor(pending * 0.95);
+      const failed = pending - success;
+
+      m.replicatedObjects += success;
+      m.failedObjects += failed;
+      m.lastReplicationTime = Date.now();
+      m.replicationLag = 5000 + Math.floor(Math.random() * 30000);
+
+      if (failed > 0) {
+        console.log(`[${metricKey}] ${success} replicated, ${failed} failed (lag: ${m.replicationLag}ms)`);
+      }
+    }
+  }
+
+  getComplianceReport(): { config: string; progress: number; lag: number }[] {
+    return [...this.metrics.entries()].map(([key, m]) => ({
+      config: key,
+      progress: m.totalObjects > 0 ? Math.round((m.replicatedObjects / m.totalObjects) * 100) : 100,
+      lag: m.replicationLag,
+    }));
+  }
+}
+
+const repl = new ReplicationManager();
+repl.addConfig({ sourceBucket: "prod-data", destinationBucket: "prod-data-dr", destinationRegion: "eu-west-1", prefix: "critical/", replicateDeleteMarkers: true, encryptionEnabled: true });
+for (let i = 1; i <= 100; i++) repl.recordObject(`critical/order-${i}.json`, 1024 * 50);
+repl.replicate();
+console.log("Replication status:", JSON.stringify(repl.getComplianceReport(), null, 2));
+```
+
 ## Summary
 
 - Cloud storage is categorized into Object, Block, and File models.

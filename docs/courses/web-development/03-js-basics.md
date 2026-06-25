@@ -541,6 +541,46 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: Closure Analyzer & Data Transformer
+
+```typescript
+class ClosureAnalyzer {
+  static memoize<T extends (...args: any[]) => any>(fn: T): T {
+    const cache = new Map<string, ReturnType<T>>();
+    return ((...args: any[]) => {
+      const key = JSON.stringify(args);
+      if (!cache.has(key)) cache.set(key, fn(...args));
+      return cache.get(key);
+    }) as T;
+  }
+  static createCounter(start: number = 0): { value: number; increment: () => number; reset: () => void } {
+    let count = start;
+    return { value: count, increment: () => ++count, reset: () => { count = start; } };
+  }
+  static compose<T>(...fns: ((x: T) => T)[]): (x: T) => T {
+    return (x: T) => fns.reduceRight((acc, fn) => fn(acc), x);
+  }
+}
+
+class DataPipeline {
+  static async chain<T>(data: T[], ...transforms: ((arr: T[]) => T[])[]): Promise<T[]> {
+    return transforms.reduce((acc, fn) => fn(acc), data);
+  }
+  static groupBy<T, K extends string | number>(items: T[], keyFn: (item: T) => K): Record<K, T[]> {
+    return items.reduce((acc, item) => {
+      const key = keyFn(item);
+      (acc[key] ?? (acc[key] = [])).push(item);
+      return acc;
+    }, {} as Record<K, T[]>);
+  }
+}
+
+const fib = ClosureAnalyzer.memoize((n: number): number => n <= 1 ? n : fib(n - 1) + fib(n - 2));
+console.log("Fib(42):", fib(42));
+const grouped = DataPipeline.groupBy([1, 2, 3, 4, 5, 6], n => (n % 2 === 0 ? "even" : "odd"));
+console.log("Grouped:", JSON.stringify(grouped));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** Arrow functions inherit `this` from their enclosing scope, making them ideal for callbacks.

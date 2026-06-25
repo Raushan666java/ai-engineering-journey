@@ -555,6 +555,112 @@ flowchart LR
 
 This flow ensures the private key never leaves the signer's device, yet any network participant can independently verify the signature without trusting a third party.
 
+### TypeScript: HD Wallet Path Derivation
+
+```typescript
+import { createHash, createHmac } from "node:crypto";
+
+const sha256 = (d: string): string => createHash("sha256").update(d).digest("hex");
+const hmacSHA512 = (key: string, data: string): string =>
+  createHmac("sha512", key).update(data, "hex").digest("hex");
+
+interface ExtendedKey {
+  key: string; chainCode: string; depth: number; index: number;
+}
+
+class HDDerivator {
+  static master(seed: string): ExtendedKey {
+    const hash = hmacSHA512("Bitcoin seed", seed);
+    return { key: hash.slice(0, 64), chainCode: hash.slice(64), depth: 0, index: 0 };
+  }
+
+  static cKD(parent: ExtendedKey, index: number): ExtendedKey {
+    const data = `0x00${parent.key}${index.toString(16).padStart(8, "0")}`;
+    const hash = hmacSHA512(parent.chainCode, data);
+    return { key: hash.slice(0, 64), chainCode: hash.slice(64), depth: parent.depth + 1, index };
+  }
+
+  static derivePath(master: ExtendedKey, path: string): ExtendedKey {
+    const parts = path.split("/").filter(p => !p.includes("m"));
+    let key = master;
+    for (const part of parts) {
+      const hardened = part.includes("'");
+      const index = parseInt(part.replace("'", "")) + (hardened ? 2147483648 : 0);
+      key = this.cKD(key, index);
+    }
+    return key;
+  }
+}
+```
+
+### TypeScript: Signature Aggregation with BLS-Style Logic
+
+```typescript
+import { createHash } from "node:crypto";
+
+const sha256 = (d: string): string => createHash("sha256").update(d).digest("hex");
+
+class SignatureAggregator {
+  static aggregate(signatures: string[]): string {
+    if (signatures.length === 0) return "";
+    let agg = signatures[0];
+    for (let i = 1; i < signatures.length; i++) agg = sha256(agg + signatures[i]);
+    return agg;
+  }
+
+  static verifyAggregate(aggregate: string, message: string, pubKeys: string[]): boolean {
+    const expected = pubKeys.reduce((acc, pk) => sha256(acc + sha256(message + pk)), "");
+    return aggregate === expected;
+  }
+}
+```
+
+### TypeScript: Merkle Proof Verifier
+
+```typescript
+import { createHash } from "node:crypto";
+
+const sha256 = (d: string): string => createHash("sha256").update(d).digest("hex");
+
+function verifyMerkleProof(
+  leaf: string,
+  proof: { hash: string; isLeft: boolean }[],
+  root: string
+): boolean {
+  let current = leaf;
+  for (const p of proof) {
+    current = p.isLeft ? sha256(p.hash + current) : sha256(current + p.hash);
+  }
+  return current === root;
+}
+
+function generateMerkleProof(
+  transactions: string[],
+  targetIndex: number
+): { hash: string; isLeft: boolean }[] {
+  if (transactions.length === 0) return [];
+  let level = transactions.map(t => sha256(t));
+  const proof: { hash: string; isLeft: boolean }[] = [];
+  let idx = targetIndex;
+  while (level.length > 1) {
+    const next: string[] = [];
+    for (let i = 0; i < level.length; i += 2) {
+      if (i + 1 < level.length) {
+        if (i === idx || i + 1 === idx) {
+          proof.push({ hash: level[i === idx ? i + 1 : i], isLeft: i === idx });
+        }
+        next.push(sha256(level[i] + level[i + 1]));
+      } else {
+        next.push(level[i]);
+      }
+    }
+    idx = Math.floor(idx / 2);
+    level = next;
+  }
+  return proof;
+}
+```
+
 ## Summary
 
 - Cryptographic hash functions are the "glue" that keeps the blockchain immutable.

@@ -292,6 +292,119 @@ $\mu_1 = 2 - 2x = 2 - 1 = 1 \geq 0$ ✓
 
 KKT satisfied. The optimal point is $(0.5, 1.5)$ with $f = 0.25 + 0.25 = 0.5$.
 
+### TypeScript Implementation: Particle Swarm Optimization
+
+```typescript
+type Vec = number[];
+
+function particleSwarm(
+  f: (x: Vec) => number, dim: number, bounds: [number, number],
+  popSize: number = 30, maxIter: number = 200
+): { x: Vec; fx: number; history: Vec[] } {
+  const particles = Array.from({ length: popSize }, () => {
+    const pos = Vec.from({ length: dim }, () => bounds[0] + Math.random() * (bounds[1] - bounds[0]));
+    const vel = Vec.from({ length: dim }, () => (Math.random() - 0.5) * (bounds[1] - bounds[0]) * 0.1);
+    return { pos, vel, best: [...pos], bestVal: f(pos) };
+  });
+  let globalBest = [...particles[0].best], globalBestVal = particles[0].bestVal;
+  const history: Vec[] = [globalBest];
+  const w = 0.7, c1 = 1.5, c2 = 1.5;  // inertia, cognitive, social
+
+  for (let iter = 0; iter < maxIter; iter++) {
+    for (const p of particles) {
+      for (let d = 0; d < dim; d++) {
+        p.vel[d] = w * p.vel[d] + c1 * Math.random() * (p.best[d] - p.pos[d]) + c2 * Math.random() * (globalBest[d] - p.pos[d]);
+        p.pos[d] = Math.max(bounds[0], Math.min(bounds[1], p.pos[d] + p.vel[d]));
+      }
+      const val = f(p.pos);
+      if (val < p.bestVal) { p.best = [...p.pos]; p.bestVal = val; }
+      if (val < globalBestVal) { globalBest = [...p.pos]; globalBestVal = val; }
+    }
+    if (iter % 20 === 0) history.push([...globalBest]);
+  }
+  return { x: globalBest, fx: globalBestVal, history };
+}
+
+// Test: minimize f(x,y) = (x-2)² + (y+3)² → min at (2,-3), f=0
+const quad = (x: Vec) => (x[0] - 2) ** 2 + (x[1] + 3) ** 2;
+const pso = particleSwarm(quad, 2, [-10, 10], 30, 100);
+console.log(`PSO quadratic: min at (${pso.x[0].toFixed(4)}, ${pso.x[1].toFixed(4)}), f=${pso.fx.toExponential(4)}`);
+
+// Test: Rastrigin function — many local minima, global min at (0,...,0), f=0
+const rastrigin = (x: Vec) => x.reduce((s, xi) => s + xi ** 2 - 10 * Math.cos(2 * Math.PI * xi) + 10, 0);
+const psoRast = particleSwarm(rastrigin, 2, [-5.12, 5.12], 40, 200);
+console.log(`PSO Rastrigin: min at (${psoRast.x[0].toFixed(4)}, ${psoRast.x[1].toFixed(4)}), f=${psoRast.fx.toFixed(4)}`);
+
+### TypeScript Implementation: Simulated Annealing
+
+```typescript
+function simulatedAnnealing(
+  f: (x: Vec) => number, dim: number, bounds: [number, number],
+  maxIter: number = 10000, t0: number = 100, α: number = 0.99
+): { x: Vec; fx: number } {
+  let curr = Vec.from({ length: dim }, () => bounds[0] + Math.random() * (bounds[1] - bounds[0]));
+  let currVal = f(curr);
+  let best = [...curr], bestVal = currVal;
+  let T = t0;
+
+  for (let iter = 0; iter < maxIter && T > 1e-4; iter++) {
+    const step = (bounds[1] - bounds[0]) * 0.1 * (T / t0);
+    const cand = curr.map(xi => Math.max(bounds[0], Math.min(bounds[1], xi + (Math.random() - 0.5) * step)));
+    const candVal = f(cand);
+    if (candVal < currVal || Math.random() < Math.exp(-(candVal - currVal) / T)) {
+      curr = cand; currVal = candVal;
+      if (candVal < bestVal) { best = [...cand]; bestVal = candVal; }
+    }
+    T *= α;
+  }
+  return { x: best, fx: bestVal };
+}
+
+const saQuad = simulatedAnnealing(quad, 2, [-10, 10], 5000, 50, 0.98);
+console.log(`SA quadratic: min at (${saQuad.x[0].toFixed(4)}, ${saQuad.x[1].toFixed(4)}), f=${saQuad.fx.toExponential(4)}`);
+
+const saRast = simulatedAnnealing(rastrigin, 2, [-5.12, 5.12], 20000, 100, 0.995);
+console.log(`SA Rastrigin: min at (${saRast.x[0].toFixed(4)}, ${saRast.x[1].toFixed(4)}), f=${saRast.fx.toFixed(4)}`);
+
+### TypeScript: Constrained Optimization via Penalty Method
+
+```typescript
+function penaltyMethod(
+  f: (x: Vec) => number,
+  constraints: Array<(x: Vec) => number>,  // gᵢ(x) ≤ 0
+  dim: number, bounds: [number, number],
+  μ0: number = 1, μFactor: number = 10, outerIter: number = 10
+): { x: Vec; fx: number } {
+  let μ = μ0;
+  let x = Vec.from({ length: dim }, () => bounds[0] + Math.random() * (bounds[1] - bounds[0]));
+
+  for (let outer = 0; outer < outerIter; outer++) {
+    // Augmented objective: f(x) + μ * Σ max(0, gᵢ(x))²
+    const augF = (p: Vec) => {
+      let penalty = 0;
+      for (const g of constraints) penalty += Math.max(0, g(p)) ** 2;
+      return f(p) + μ * penalty;
+    };
+    const inner = particleSwarm(augF, dim, bounds, 20, 50);
+    x = inner.x;
+    μ *= μFactor;
+  }
+  return { x, fx: f(x) };
+}
+
+// Minimize f(x,y) = (x-1)² + (y-2)² subject to x + y ≤ 2, x ≥ 0, y ≥ 0
+// True constrained optimum at (0.5, 1.5), f=0.5
+const constrF = (x: Vec) => (x[0] - 1) ** 2 + (x[1] - 2) ** 2;
+const constr: Array<(x: Vec) => number> = [
+  (x) => x[0] + x[1] - 2,  // x + y ≤ 2
+  (x) => -x[0],            // x ≥ 0
+  (x) => -x[1]             // y ≥ 0
+];
+const pen = penaltyMethod(constrF, constr, 2, [0, 2], 1, 10, 5);
+console.log(`Penalty method: min at (${pen.x[0].toFixed(4)}, ${pen.x[1].toFixed(4)}), f=${pen.fx.toFixed(4)}`);
+console.log(`  Expected: (0.5, 1.5), f=0.5, constraint violation: ${Math.max(0, pen.x[0] + pen.x[1] - 2).toExponential(2)}`);
+```
+
 ## Summary
 
 - Convexity guarantees global optimality and efficient solution methods

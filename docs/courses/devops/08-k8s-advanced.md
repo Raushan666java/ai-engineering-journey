@@ -563,6 +563,90 @@ console.log(optimizer.generateRightSizingRecommendations());
 
 ---
 
+### Resource Quota Calculator
+
+Kubernetes resource quotas prevent resource starvation across namespaces. The following implementation calculates optimal resource allocations and validates quotas against actual usage.
+
+```typescript
+interface ResourceQuota {
+  cpuRequest: string;
+  cpuLimit: string;
+  memoryRequest: string;
+  memoryLimit: string;
+  podCount: number;
+}
+
+interface NamespaceResources {
+  name: string;
+  quota: ResourceQuota;
+  currentUsage: ResourceQuota;
+}
+
+interface QuotaRecommendation {
+  namespace: string;
+  issues: string[];
+  recommendedQuota: ResourceQuota;
+}
+
+function parseCpu(cpu: string): number {
+  if (cpu.endsWith('m')) return parseInt(cpu) / 1000;
+  if (cpu.endsWith('n')) return parseInt(cpu) / 1_000_000_000;
+  return parseInt(cpu);
+}
+
+function parseMemory(mem: string): number {
+  if (mem.endsWith('Gi')) return parseInt(mem) * 1024 * 1024 * 1024;
+  if (mem.endsWith('Mi')) return parseInt(mem) * 1024 * 1024;
+  if (mem.endsWith('Ki')) return parseInt(mem) * 1024;
+  return parseInt(mem);
+}
+
+class QuotaAnalyzer {
+  analyze(namespaces: NamespaceResources[]): QuotaRecommendation[] {
+    return namespaces.map(ns => {
+      const issues: string[] = [];
+      const usageCpu = parseCpu(ns.currentUsage.cpuRequest);
+      const quotaCpu = parseCpu(ns.quota.cpuRequest);
+      const usageMem = parseMemory(ns.currentUsage.memoryRequest);
+      const quotaMem = parseMemory(ns.quota.memoryRequest);
+
+      if (usageCpu / quotaCpu > 0.85) issues.push('CPU request usage exceeds 85%');
+      if (usageMem / quotaMem > 0.85) issues.push('Memory request usage exceeds 85%');
+
+      const recCpu = Math.round(usageCpu * 1.3 * 1000) + 'm';
+      const recMem = Math.round((usageMem * 1.3) / (1024 * 1024)) + 'Mi';
+
+      return {
+        namespace: ns.name,
+        issues,
+        recommendedQuota: {
+          cpuRequest: recCpu,
+          cpuLimit: Math.round(parseCpu(recCpu) * 2 * 1000) + 'm',
+          memoryRequest: recMem,
+          memoryLimit: Math.round(parseMemory(recMem) * 2 / (1024 * 1024)) + 'Mi',
+          podCount: Math.ceil(ns.currentUsage.podCount * 1.5),
+        },
+      };
+    });
+  }
+}
+
+const analyzer = new QuotaAnalyzer();
+const recommendations = analyzer.analyze([
+  {
+    name: 'production',
+    quota: { cpuRequest: '4000m', cpuLimit: '8000m', memoryRequest: '8Gi', memoryLimit: '16Gi', podCount: 20 },
+    currentUsage: { cpuRequest: '3600m', cpuLimit: '7200m', memoryRequest: '7.2Gi', memoryLimit: '14Gi', podCount: 18 },
+  },
+]);
+
+console.log(JSON.stringify(recommendations, null, 2));
+```
+
+**What this demonstrates:** Automated quota analysis prevents resource contention in multi-tenant Kubernetes clusters by right-sizing limits based on actual consumption patterns.
+
+---
+
 ## Practical Takeaways
 
 1. **RBAC: least privilege always.** Start with deny, grant specific access as needed.

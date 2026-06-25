@@ -650,6 +650,72 @@ $$L(\theta_t) - L(\theta^*) \leq \frac{\|\theta_0 - \theta^*\|^2}{2\eta t}$$
 
 This $O(1/t)$ convergence rate is the same asymptotic behavior as a series that converges like $\sum 1/n^2$ — fast enough for practical use but slower than Newton's method ($O(e^{-ct})$).
 
+### TypeScript Implementation: Numerical Differentiation & Root Finding
+
+```typescript
+// Central difference for first derivative
+function centralDiff(f: (x: number) => number, x: number, h: number = 1e-8): number {
+  return (f(x + h) - f(x - h)) / (2 * h);
+}
+
+// Second derivative via central difference
+function secondCentralDiff(f: (x: number) => number, x: number, h: number = 1e-6): number {
+  return (f(x + h) - 2 * f(x) + f(x - h)) / (h * h);
+}
+
+// Composite Riemann sum integrator
+function riemannSum(f: (x: number) => number, a: number, b: number, n: number = 1000): number {
+  const dx = (b - a) / n;
+  let sum = 0;
+  for (let i = 0; i < n; i++) sum += f(a + (i + 0.5) * dx);
+  return sum * dx;
+}
+
+// Tests
+const cube = (x: number) => x * x * x;
+const sinFn = (x: number) => Math.sin(x);
+console.log(`f(x)=x³, f'(2) central: ${centralDiff(cube, 2).toFixed(6)} (expected: 12.0)`);
+console.log(`f(x)=sin(x), f''(1): ${secondCentralDiff(sinFn, 1).toFixed(6)} (expected: ${(-Math.sin(1)).toFixed(6)})`);
+console.log(`∫₀¹ x² dx = ${riemannSum(x => x * x, 0, 1, 10000).toFixed(6)} (expected: 0.333333)`);
+console.log(`∫₀^π sin(x) dx = ${riemannSum(sinFn, 0, Math.PI, 10000).toFixed(6)} (expected: 2.0)`);
+
+// Newton's method root finder
+function newtonMethod(
+  f: (x: number) => number, df: (x: number) => number,
+  x0: number, tol: number = 1e-14, maxIter: number = 100
+): { root: number; iterations: number; error: number } {
+  let x = x0;
+  for (let iter = 0; iter < maxIter; iter++) {
+    const fx = f(x);
+    if (Math.abs(fx) < tol) return { root: x, iterations: iter, error: Math.abs(fx) };
+    x = x - fx / df(x);
+  }
+  return { root: x, iterations: maxIter, error: Math.abs(f(x)) };
+}
+
+// Find √2: solve x² - 2 = 0
+const { root: sqrt2, iterations: nIters } = newtonMethod(x => x * x - 2, x => 2 * x, 1.5);
+console.log(`√2 ≈ ${sqrt2.toFixed(10)} (error: ${(sqrt2 - Math.SQRT2).toExponential(2)}, ${nIters} iters)`);
+
+// Find π: solve sin(x) = 0 near x = 3
+const { root: piEst } = newtonMethod(sinFn, Math.cos, 3);
+console.log(`π ≈ ${piEst.toFixed(10)} (error: ${(piEst - Math.PI).toExponential(2)})`);
+
+// Secant method (no derivative needed)
+function secantMethod(f: (x: number) => number, x0: number, x1: number, tol: number = 1e-14, maxIter: number = 100): { root: number; iterations: number } {
+  let [a, b] = [x0, x1];
+  for (let iter = 0; iter < maxIter; iter++) {
+    const fa = f(a), fb = f(b);
+    if (Math.abs(fb) < tol) return { root: b, iterations: iter + 1 };
+    const next = b - fb * (b - a) / (fb - fa);
+    a = b; b = next;
+  }
+  return { root: b, iterations: maxIter };
+}
+const { root: rootPi } = secantMethod(sinFn, 3, 3.2);
+console.log(`Secant π ≈ ${rootPi.toFixed(10)} (error: ${(rootPi - Math.PI).toExponential(2)})`);
+```
+
 ## Summary
 
 - Limits describe function behavior near points; continuity ensures no gaps

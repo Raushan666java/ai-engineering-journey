@@ -317,6 +317,138 @@ This construction works because the DFA's finite memory can be absorbed into the
 
 4. **The CYK algorithm is a practical parser.** With O(n³) time and O(n²) space, CYK is one of the most practical general CFG parsing algorithms. It handles all context-free grammars without restriction.
 
+## TypeScript Implementation: CFL Pumping Lemma Checker and Closure Verifier
+
+```typescript
+// CFL Pumping Lemma Checker and Closure Property Verifier
+
+class CFLPumpingLemma {
+  static findPumpable(
+    language: (s: string) => boolean,
+    p: number
+  ): { canPump: boolean; witness?: string; proof?: string[] } {
+    // Try string a^p b^p c^p
+    const s = "a".repeat(p) + "b".repeat(p) + "c".repeat(p);
+    if (!language(s)) {
+      return { canPump: false, proof: [`${s} not in language`] };
+    }
+
+    // Try all decompositions s = uvxyz with |vxy| <= p, |vy| >= 1
+    for (let vxStart = 0; vxStart < s.length; vxStart++) {
+      for (let vLen = 1; vxStart + vLen <= s.length && vLen <= p; vLen++) {
+        for (let yLen = 0; vxStart + vLen + yLen <= s.length &&
+             vxStart + vLen + yLen <= vxStart + p; yLen++) {
+          // Skip if |vy| < 1
+          if (vLen === 0 && yLen === 0) continue;
+          const u = s.slice(0, vxStart);
+          const v = s.slice(vxStart, vxStart + vLen);
+          const x = s.slice(vxStart + vLen, vxStart + vLen + yLen);
+          const y = s.slice(vxStart + vLen + yLen, vxStart + vLen + yLen + (yLen === 0 ? 0 : 1));
+          const z = s.slice(vxStart + vLen + yLen + (yLen === 0 ? 0 : 1));
+
+          // Check if pumping works for i=0 and i=2
+          const pumped0 = u + x + z;
+          const pumped2 = u + v + v + x + y + y + z;
+          if (language(pumped0) && language(pumped2)) {
+            return {
+              canPump: true,
+              witness: s,
+              proof: [
+                `Found decomposition: u=${u}, v=${v}, x=${x}, y=${y}, z=${z}`,
+                `uv⁰xy⁰z = "${pumped0}" ∈ L`, `uv²xy²z = "${pumped2}" ∈ L`
+              ]
+            };
+          }
+        }
+      }
+    }
+    return { canPump: false, proof: ["No pumpable decomposition found — likely not CFL"] };
+  }
+
+  static proveNonCFL(languageName: string,
+                     language: (s: string) => boolean, p: number): string[] {
+    const proof: string[] = [];
+    proof.push(`Assume ${languageName} is context-free with pumping length p.`);
+    const s = "a".repeat(p) + "b".repeat(p) + "c".repeat(p);
+    proof.push(`Choose s = a^p b^p c^p ∈ ${languageName}, |s| = 3p >= p.`);
+
+    // When vxy spans at most two types of characters, pumping breaks balance
+    for (let vxStart = 0; vxStart < s.length; vxStart++) {
+      for (let vLen = 1; vxStart + vLen <= s.length && vLen <= p; vLen++) {
+        for (let yLen = 0; vxStart + vLen + yLen <= s.length &&
+             vxStart + vLen + yLen <= vxStart + p; yLen++) {
+          if (vLen === 0 && yLen === 0) continue;
+          const u = s.slice(0, vxStart);
+          const v = s.slice(vxStart, vxStart + vLen);
+          const x = s.slice(vxStart + vLen, vxStart + vLen + yLen);
+          const y = s.slice(vxStart + vLen + yLen, vxStart + vLen + yLen + 1);
+          const z = s.slice(vxStart + vLen + yLen + 1) || "";
+          const pumped2 = u + v + v + x + y + y + z;
+          if (!language(pumped2)) {
+            proof.push(`Split: u=${u}, v=${v}, x=${x}, y=${y}, z=${z}`);
+            proof.push(`uv²xy²z = "${pumped2}" ∉ ${languageName} → contradiction.`);
+            return proof;
+          }
+        }
+      }
+    }
+    return proof;
+  }
+}
+
+class CFLClosure {
+  static union(lang1: (s: string) => boolean, lang2: (s: string) => boolean): (s: string) => boolean {
+    return (s: string) => lang1(s) || lang2(s);
+  }
+
+  static concat(lang1: (s: string) => boolean, lang2: (s: string) => boolean): (s: string) => boolean {
+    return (s: string) => {
+      for (let i = 0; i <= s.length; i++)
+        if (lang1(s.slice(0, i)) && lang2(s.slice(i))) return true;
+      return false;
+    };
+  }
+
+  static star(lang: (s: string) => boolean): (s: string) => boolean {
+    const memo = new Map<string, boolean>();
+    const check = (s: string): boolean => {
+      if (s === "") return true;
+      if (memo.has(s)) return memo.get(s)!;
+      for (let i = 1; i <= s.length; i++) {
+        if (lang(s.slice(0, i)) && check(s.slice(i))) {
+          memo.set(s, true);
+          return true;
+        }
+      }
+      memo.set(s, false);
+      return false;
+    };
+    return check;
+  }
+
+  static intersectWithRegular(lang: (s: string) => boolean,
+                               reg: (s: string) => boolean): (s: string) => boolean {
+    return (s: string) => lang(s) && reg(s);
+  }
+}
+
+const langAnBn = (s: string) => {
+  const aCount = (s.match(/^a+/) || [""])[0].length;
+  return s === "a".repeat(aCount) + "b".repeat(aCount) && aCount > 0;
+};
+
+const langEvenLen = (s: string) => s.length % 2 === 0;
+console.log(CFLPumpingLemma.findPumpable(langAnBn, 3));
+
+const union = CFLClosure.union(langAnBn, langEvenLen);
+console.log(union("aabb"));   // true
+console.log(union("aaa"));    // true (even length)
+
+const intersect = CFLClosure.intersectWithRegular(langAnBn, langEvenLen);
+console.log(intersect("aabb"));  // true
+console.log(intersect("aaabbb")); // false (odd length)
+```
+
 ## Summary
 
 - The pumping lemma for CFLs provides two pumpable substrings (v and y).

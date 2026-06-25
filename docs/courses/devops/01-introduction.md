@@ -336,6 +336,124 @@ console.log(assessment.generateReport());
 
 ---
 
+### DevOps Maturity Model Checker
+
+The following TypeScript implementation provides a programmatic DevOps maturity assessment tool that evaluates an organization across five key dimensions: culture, automation, measurement, sharing, and technology adoption.
+
+```typescript
+interface MaturityDimension {
+  name: string;
+  score: number; // 1-5
+  weight: number; // 0-1
+}
+
+interface MaturityAssessment {
+  dimensions: MaturityDimension[];
+  calculateOverall(): number;
+  getLevel(): string;
+  getRecommendations(): string[];
+}
+
+class DevOpsMaturityChecker implements MaturityAssessment {
+  dimensions: MaturityDimension[] = [];
+
+  constructor(dimensions: MaturityDimension[]) {
+    this.dimensions = dimensions;
+  }
+
+  calculateOverall(): number {
+    const totalWeight = this.dimensions.reduce((s, d) => s + d.weight, 0);
+    const weightedScore = this.dimensions.reduce((s, d) => s + d.score * d.weight, 0);
+    return Math.round((weightedScore / totalWeight) * 100) / 100;
+  }
+
+  getLevel(): string {
+    const score = this.calculateOverall();
+    if (score >= 4.5) return 'Elite';
+    if (score >= 3.5) return 'High';
+    if (score >= 2.5) return 'Medium';
+    if (score >= 1.5) return 'Low';
+    return 'Initial';
+  }
+
+  getRecommendations(): string[] {
+    const recs: string[] = [];
+    for (const d of this.dimensions) {
+      if (d.score <= 2) recs.push(`Critical improvement needed in ${d.name}`);
+      else if (d.score <= 3) recs.push(`Moderate improvement needed in ${d.name}`);
+    }
+    return recs;
+  }
+}
+
+// Example assessment for a mid-stage organization
+const assessment = new DevOpsMaturityChecker([
+  { name: 'Culture', score: 3, weight: 0.25 },
+  { name: 'Automation', score: 4, weight: 0.25 },
+  { name: 'Measurement', score: 2, weight: 0.2 },
+  { name: 'Sharing', score: 3, weight: 0.15 },
+  { name: 'Technology', score: 4, weight: 0.15 },
+]);
+
+console.log(`Overall Maturity: ${assessment.calculateOverall().toFixed(2)}`);
+console.log(`Level: ${assessment.getLevel()}`);
+console.log('Recommendations:', assessment.getRecommendations().join('; '));
+```
+
+**What this demonstrates:** Programmatic maturity assessment enables objective DevOps progress tracking and targeted improvement planning across organizational dimensions.
+
+---
+
+### Pipeline Stage Timer
+
+Measuring pipeline stage duration helps identify bottlenecks. The following timer tracks execution time across DevOps pipeline stages and reports slowdowns.
+
+```typescript
+interface PipelineTimerEvent {
+  stage: string;
+  startTime: number;
+  endTime: number;
+}
+
+class PipelineStageTimer {
+  private stages: PipelineTimerEvent[] = [];
+  private currentStage: string | null = null;
+  private stageStart: number = 0;
+
+  startStage(name: string): void {
+    this.currentStage = name;
+    this.stageStart = Date.now();
+    console.log(`[${name}] started`);
+  }
+
+  endStage(): void {
+    if (!this.currentStage) return;
+    this.stages.push({ stage: this.currentStage, startTime: this.stageStart, endTime: Date.now() });
+    console.log(`[${this.currentStage}] completed in ${((Date.now() - this.stageStart) / 1000).toFixed(1)}s`);
+    this.currentStage = null;
+  }
+
+  getReport(): string {
+    const total = this.stages.reduce((s, st) => s + (st.endTime - st.startTime), 0);
+    let report = '## Pipeline Stage Times\n\n';
+    for (const s of this.stages) {
+      const pct = ((s.endTime - s.startTime) / total * 100).toFixed(1);
+      report += `| ${s.stage} | ${((s.endTime - s.startTime) / 1000).toFixed(1)}s | ${pct}% |\n`;
+    }
+    report += `\n**Total:** ${(total / 1000).toFixed(1)}s\n`;
+    return report;
+  }
+}
+
+const timer = new PipelineStageTimer();
+timer.startStage('Build'); setTimeout(() => { timer.endStage(); timer.startStage('Test'); }, 100);
+// In practice, endStage is called when each pipeline stage completes
+```
+
+**What this demonstrates:** Pipeline timing enables data-driven optimization by identifying the slowest stages in the delivery process.
+
+---
+
 ## Practical Takeaways
 
 1. **Start with culture before tools.** DevOps transformation begins with people and processes. Tools are enablers, not solutions.

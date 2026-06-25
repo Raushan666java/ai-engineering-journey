@@ -567,6 +567,155 @@ function availableSubnets(vpcCidr: string, subnetSize: number): string[] {
 // console.log(availableSubnets("10.0.0.0/16", 256)); // 256 /24 subnets
 ```
 
+### TypeScript: VPC Subnet & NAT Gateway Calculator
+
+```typescript
+interface SubnetPlan {
+  cidr: string;
+  az: string;
+  type: "public" | "private" | "database";
+  availableIPs: number;
+  natGatewayRequired: boolean;
+  natGatewayMonthlyCost: number;
+}
+
+class VPCDesigner {
+  private vpcCIDR: string;
+  private azs: string[];
+
+  constructor(vpcCIDR: string, azs: string[]) {
+    this.vpcCIDR = vpcCIDR;
+    this.azs = azs;
+  }
+
+  private cidrToMask(cidr: string): number { return parseInt(cidr.split("/")[1]); }
+
+  private maskToIPs(mask: number): number { return Math.pow(2, 32 - mask) - 5; }
+
+  private generateSubnetCIDR(baseCIDR: string, index: number, newMask: number): string {
+    const baseMask = this.cidrToMask(baseCIDR);
+    const baseIP = 0;
+    const blockSize = Math.pow(2, 32 - newMask);
+    const baseBlock = Math.pow(2, 32 - baseMask);
+    const offset = index * blockSize;
+    const octets = [
+      (baseIP + (offset >> 24)) & 255,
+      (baseIP + (offset >> 16)) & 255,
+      (baseIP + (offset >> 8)) & 255,
+      (baseIP + offset) & 255,
+    ];
+    return `${octets.join(".")}/${newMask}`;
+  }
+
+  designSubnets(publicPerAZ: number, privatePerAZ: number, subnetMask: number): SubnetPlan[] {
+    const plans: SubnetPlan[] = [];
+    let index = 0;
+
+    for (const az of this.azs) {
+      for (let p = 0; p < publicPerAZ; p++) {
+        plans.push({
+          cidr: this.generateSubnetCIDR(this.vpcCIDR, index++, subnetMask),
+          az, type: "public",
+          availableIPs: this.maskToIPs(subnetMask),
+          natGatewayRequired: false,
+          natGatewayMonthlyCost: 0,
+        });
+      }
+      for (let p = 0; p < privatePerAZ; p++) {
+        plans.push({
+          cidr: this.generateSubnetCIDR(this.vpcCIDR, index++, subnetMask),
+          az, type: "private",
+          availableIPs: this.maskToIPs(subnetMask),
+          natGatewayRequired: true,
+          natGatewayMonthlyCost: 32.40,
+        });
+      }
+    }
+    return plans;
+  }
+
+  calculateMonthlyNATCost(subnets: SubnetPlan[]): number {
+    const uniqueAZs = new Set(subnets.filter((s) => s.natGatewayRequired).map((s) => s.az));
+    return uniqueAZs.size * 32.40 + uniqueAZs.size * 0.045 * 730;
+  }
+
+  summarize(subnets: SubnetPlan[]): { totalIPs: number; publicSubnets: number; privateSubnets: number; natCost: number } {
+    return {
+      totalIPs: subnets.reduce((s, n) => s + n.availableIPs, 0),
+      publicSubnets: subnets.filter((s) => s.type === "public").length,
+      privateSubnets: subnets.filter((s) => s.type === "private").length,
+      natCost: this.calculateMonthlyNATCost(subnets),
+    };
+  }
+}
+
+const designer = new VPCDesigner("10.0.0.0/16", ["us-east-1a", "us-east-1b", "us-east-1c"]);
+const subnets = designer.designSubnets(1, 2, 24);
+console.log("VPC design:", JSON.stringify(designer.summarize(subnets), null, 2));
+console.log("Subnet plan:", subnets.map((s) => `${s.cidr} (${s.az}, ${s.type})`).join(", "));
+```
+
+### TypeScript: Traffic Flow Monitor
+
+```typescript
+interface FlowRecord {
+  sourceIP: string;
+  destIP: string;
+  sourcePort: number;
+  destPort: number;
+  protocol: "TCP" | "UDP";
+  bytes: number;
+  packets: number;
+  timestamp: number;
+  action: "allow" | "deny";
+}
+
+class TrafficFlowMonitor {
+  private flows: FlowRecord[] = [];
+  private alertThresholds = { deniedPercent: 20, bandwidthPerSecond: 1e9 };
+
+  recordFlow(flow: FlowRecord): void {
+    this.flows.push(flow);
+    this.checkAlerts();
+  }
+
+  private checkAlerts(): void {
+    const window = this.flows.filter((f) => Date.now() - f.timestamp < 60000);
+    const denied = window.filter((f) => f.action === "deny").length;
+    const deniedPercent = window.length > 0 ? (denied / window.length) * 100 : 0;
+    const bandwidth = window.reduce((s, f) => s + f.bytes, 0) / 60;
+
+    if (deniedPercent > this.alertThresholds.deniedPercent) {
+      console.log(`ALERT: ${deniedPercent.toFixed(1)}% traffic denied (threshold: ${this.alertThresholds.deniedPercent}%)`);
+    }
+    if (bandwidth > this.alertThresholds.bandwidthPerSecond) {
+      console.log(`ALERT: Bandwidth ${(bandwidth / 1e9).toFixed(2)} Gbps exceeds threshold`);
+    }
+  }
+
+  getTopTalkers(limit: number = 5): { ip: string; bytes: number }[] {
+    const aggregated: Record<string, number> = {};
+    this.flows.forEach((f) => { aggregated[f.sourceIP] = (aggregated[f.sourceIP] || 0) + f.bytes; });
+    return Object.entries(aggregated)
+      .map(([ip, bytes]) => ({ ip, bytes }))
+      .sort((a, b) => b.bytes - a.bytes)
+      .slice(0, limit);
+  }
+}
+
+const monitor = new TrafficFlowMonitor();
+for (let i = 0; i < 100; i++) {
+  monitor.recordFlow({
+    sourceIP: `10.0.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}`,
+    destIP: "10.0.1.100", sourcePort: 30000 + i, destPort: 443,
+    protocol: "TCP", bytes: Math.random() * 10000, packets: Math.ceil(Math.random() * 20),
+    timestamp: Date.now() - Math.floor(Math.random() * 30000),
+    action: Math.random() > 0.85 ? "deny" : "allow",
+  });
+}
+console.log("Top talkers:", JSON.stringify(monitor.getTopTalkers(), null, 2));
+```
+
 ## Summary
 
 - VPCs isolate cloud resources within user-defined IP address ranges.

@@ -739,6 +739,107 @@ print(df.groupby("Age").mean())
 - reshapes data
 - plots data
 
+```typescript
+// Chapter 20: TypeScript Numerical Computing Equivalents
+// Python: numpy.array() → TypeScript: Typed arrays
+const arr: Float64Array = new Float64Array([1, 2, 3, 4, 5]);
+
+// Element-wise operations (Python: arr * 2)
+const doubled = arr.map((x) => x * 2);
+console.log(Array.from(doubled));  // [2, 4, 6, 8, 10]
+
+// Python: np.mean(), np.std()
+const values: number[] = [1, 2, 3, 4, 5];
+const mean = values.reduce((a, b) => a + b) / values.length;
+const std = Math.sqrt(
+  values.reduce((acc, v) => acc + (v - mean) ** 2, 0) / values.length
+);
+console.log(`Mean: ${mean}, Std: ${std}`);
+
+// Python: pandas DataFrame → TypeScript: array of objects
+interface Row {
+  name: string;
+  age: number;
+  salary: number;
+}
+
+const df: Row[] = [
+  { name: "Alice", age: 30, salary: 70000 },
+  { name: "Bob", age: 25, salary: 55000 },
+  { name: "Charlie", age: 35, salary: 90000 },
+];
+
+// Python: df.groupby().mean() → TypeScript: reduce
+const avgSalary = df.reduce((acc, row) => acc + row.salary, 0) / df.length;
+console.log(`Average salary: ${avgSalary}`);
+
+// Python: df[df.age > 30] → TypeScript: filter
+const filtered = df.filter((row) => row.age > 30);
+console.log(filtered);  // [{ name: "Charlie", age: 35, salary: 90000 }]
+
+// Python: df.sort_values(by="salary") → TypeScript: sort
+df.sort((a, b) => b.salary - a.salary);
+console.log(df);  // Charlie, Alice, Bob (by salary descending)
+
+// Python: np.dot() / @ → TypeScript: manual
+function dot(a: number[], b: number[]): number {
+  return a.reduce((sum, val, i) => sum + val * b[i], 0);
+}
+console.log(dot([1, 2, 3], [4, 5, 6]));  // 32
+```
+
+### More TypeScript Data Processing Patterns
+
+```typescript
+// Python: pandas groupby + agg → TypeScript: reduce with grouping
+interface Sale {
+  product: string; region: string; amount: number;
+}
+const sales: Sale[] = [
+  { product: "A", region: "US", amount: 100 },
+  { product: "B", region: "EU", amount: 200 },
+  { product: "A", region: "EU", amount: 150 },
+  { product: "B", region: "US", amount: 250 },
+];
+
+// Group by region, sum amounts
+const byRegion: Record<string, number> = sales.reduce((acc, s) => {
+  acc[s.region] = (acc[s.region] ?? 0) + s.amount;
+  return acc;
+}, {} as Record<string, number>);
+console.log(byRegion);  // { US: 350, EU: 350 }
+
+// Python: df.sort_values() → TypeScript: sort
+const sorted = [...sales].sort((a, b) => b.amount - a.amount);
+
+// Python: df.head(n) → TypeScript: slice
+const top2 = sorted.slice(0, 2);
+
+// Python: rolling window → TypeScript: map with window
+function rollingAverage(data: number[], window: number): number[] {
+  const result: number[] = [];
+  for (let i = window - 1; i < data.length; i++) {
+    const sum = data.slice(i - window + 1, i + 1).reduce((a, b) => a + b, 0);
+    result.push(sum / window);
+  }
+  return result;
+}
+const temps = [20, 22, 21, 25, 28, 26, 23];
+console.log(rollingAverage(temps, 3));  // [21, 22.67, 24.67, 26.33, 25.67]
+
+// Python: np.where → TypeScript: ternary map
+const threshold = 25;
+const flags = temps.map((t) => (t > threshold ? "Hot" : "Normal"));
+
+// Python: pd.merge → TypeScript: Map join
+type Employee = { empId: number; name: string; deptId: number };
+type Dept = { deptId: number; name: string };
+const deptMap = new Map(depts.map((d) => [d.deptId, d.name]));
+const enriched = employees.map((e) => ({
+  ...e,
+  deptName: deptMap.get(e.deptId) ?? "Unknown",
+}));
+```
 
 ## Summary
 

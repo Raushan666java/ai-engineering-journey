@@ -573,6 +573,85 @@ $$\sum_{k=0}^r \binom{m}{k}\binom{n}{r-k} = \binom{m+n}{r}$$
 
 20. Count the number of ways to distribute 10 identical candies to 4 distinct children where each child gets at least 1 candy.
 
+## TypeScript Implementations
+
+```typescript
+// --- nCr / nPr Calculator ---
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+function nPr(n: number, r: number): number {
+  if (r < 0 || r > n) return 0;
+  return factorial(n) / factorial(n - r);
+}
+
+function nCr(n: number, r: number): number {
+  if (r < 0 || r > n) return 0;
+  if (r === 0 || r === n) return 1;
+  return nPr(n, r) / factorial(r);
+}
+
+console.log('P(10,3):', nPr(10, 3)); // 720
+console.log('C(10,3):', nCr(10, 3)); // 120
+
+// --- Pascal's Triangle Generator ---
+function pascalsTriangle(rows: number): number[][] {
+  const tri: number[][] = [];
+  for (let n = 0; n < rows; n++) {
+    tri.push([]);
+    for (let k = 0; k <= n; k++) tri[n].push(nCr(n, k));
+  }
+  return tri;
+}
+console.log('Pascal rows 0-5:', pascalsTriangle(6));
+
+// --- Stars and Bars ---
+function starsAndBars(stars: number, bars: number): number {
+  return nCr(stars + bars, bars);
+}
+console.log('x₁+x₂+x₃=7:', starsAndBars(7, 2)); // C(9,2)=36
+
+// --- Derangement Counter ---
+function derangements(n: number): number {
+  if (n === 0) return 1;
+  if (n === 1) return 0;
+  let d = 0, prev2 = 1, prev1 = 0;
+  for (let i = 2; i <= n; i++) {
+    d = (i - 1) * (prev1 + prev2);
+    prev2 = prev1;
+    prev1 = d;
+  }
+  return d;
+}
+console.log('!4:', derangements(4));  // 9
+console.log('!5:', derangements(5));  // 44
+
+// --- Binomial Theorem Expander ---
+function binomialExpand(n: number): string {
+  const terms: string[] = [];
+  for (let k = 0; k <= n; k++) {
+    const coef = nCr(n, k);
+    if (coef === 0) continue;
+    let term = '';
+    if (coef !== 1 || k === n) term += coef;
+    if (n - k > 0) term += 'x' + (n - k > 1 ? `^${n-k}` : '');
+    if (k > 0) term += 'y' + (k > 1 ? `^${k}` : '');
+    if (k === 0) term = `${coef}x^${n}`;
+    terms.push(term);
+  }
+  return terms.join(' + ');
+}
+console.log('(x+y)^5:', binomialExpand(5));
+
+// --- Catalan Numbers ---
+function catalan(n: number): number {
+  return nCr(2 * n, n) / (n + 1);
+}
+console.log('Catalan C₅:', catalan(5)); // 42
+```
+
 ## Summary
 
 - Product rule for sequential choices; sum rule for disjoint alternatives.

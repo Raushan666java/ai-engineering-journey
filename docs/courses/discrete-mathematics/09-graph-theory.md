@@ -604,6 +604,92 @@ console.log(topologicalSort([[1, 2], [3], [3], []])); // [0, 1, 2, 3] or [0, 2, 
 
 20. Prove that a finite graph where every vertex has degree at least 2 contains a cycle.
 
+## TypeScript Implementations
+
+```typescript
+// --- BFS (Breadth-First Search) ---
+function bfs(graph: number[][], start: number): Map<number, number> {
+  const dist = new Map<number, number>();
+  const queue: number[] = [start];
+  dist.set(start, 0);
+  while (queue.length > 0) {
+    const v = queue.shift()!;
+    for (const n of graph[v]) {
+      if (!dist.has(n)) { dist.set(n, dist.get(v)! + 1); queue.push(n); }
+    }
+  }
+  return dist;
+}
+const adj: number[][] = [[1,2],[0,3],[0,3],[1,2]];
+console.log('BFS distances:', [...bfs(adj, 0)]); // [[0,0],[1,1],[2,1],[3,2]]
+
+// --- DFS (Depth-First Search) & Cycle Detection ---
+function hasCycle(graph: number[][]): boolean {
+  const visited = new Array(graph.length).fill(false);
+  function dfs(v: number, parent: number): boolean {
+    visited[v] = true;
+    for (const n of graph[v]) {
+      if (!visited[n]) { if (dfs(n, v)) return true; }
+      else if (n !== parent) return true;
+    }
+    return false;
+  }
+  for (let v = 0; v < graph.length; v++) if (!visited[v] && dfs(v, -1)) return true;
+  return false;
+}
+console.log('Cycle detected:', hasCycle([[1],[0,2],[1]]));         // false (path)
+console.log('Cycle detected:', hasCycle([[1],[0,2],[1,0]]));      // true (triangle)
+
+// --- Dijkstra's Algorithm ---
+type Edge = { to: number; weight: number };
+function dijkstra(graph: Edge[][], start: number): number[] {
+  const dist = new Array(graph.length).fill(Infinity);
+  const visited = new Array(graph.length).fill(false);
+  dist[start] = 0;
+  for (let i = 0; i < graph.length; i++) {
+    let u = -1;
+    for (let v = 0; v < graph.length; v++)
+      if (!visited[v] && (u === -1 || dist[v] < dist[u])) u = v;
+    if (dist[u] === Infinity) break;
+    visited[u] = true;
+    for (const { to, weight } of graph[u])
+      if (!visited[to] && dist[u] + weight < dist[to])
+        dist[to] = dist[u] + weight;
+  }
+  return dist;
+}
+const weightedGraph: Edge[][] = [
+  [{ to: 1, weight: 4 }, { to: 2, weight: 2 }],
+  [{ to: 2, weight: 1 }, { to: 3, weight: 5 }],
+  [{ to: 3, weight: 8 }, { to: 4, weight: 10 }],
+  [{ to: 4, weight: 2 }], []
+];
+console.log('Dijkstra from 0:', dijkstra(weightedGraph, 0)); // [0,4,2,9,11]
+
+// --- Isomorphism Checker (simple) ---
+function degreeSequence(graph: number[][]): number[] {
+  return graph.map(v => v.length).sort((a,b) => b-a);
+}
+function couldBeIsomorphic(g1: number[][], g2: number[][]): boolean {
+  if (g1.length !== g2.length) return false;
+  const d1 = degreeSequence(g1), d2 = degreeSequence(g2);
+  return d1.every((d,i) => d === d2[i]);
+}
+console.log('Could be isomorphic:', couldBeIsomorphic([[1,2],[0],[0]], [[1],[0,2],[1]]));
+// true (both are paths of 3 vertices)
+
+// --- Graph Coloring (Greedy) ---
+function greedyColoring(graph: number[][]): number[] {
+  const colors = new Array(graph.length).fill(-1);
+  for (let v = 0; v < graph.length; v++) {
+    const used = new Set(graph[v].map(n => colors[n]));
+    for (let c = 0; c < graph.length; c++) { if (!used.has(c)) { colors[v] = c; break; } }
+  }
+  return colors;
+}
+console.log('Greedy coloring:', greedyColoring([[1,2],[0,2],[0,1]])); // [0,1,2]
+```
+
 ## Summary
 
 - Graphs are modeled as $(V,E)$; types include undirected, directed, weighted, and multigraphs.

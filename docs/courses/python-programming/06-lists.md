@@ -568,6 +568,145 @@ deep = copy.deepcopy(items)
 - D) import collections
 
 
+```typescript
+// Chapter 6: TypeScript Array Equivalents (Python lists)
+// Python: lst = [1, 2, 3]
+const numbers: number[] = [1, 2, 3];
+// or: const numbers: Array<number> = [1, 2, 3];
+
+// Python: lst.append(x) → TypeScript: .push()
+numbers.push(4);  // [1, 2, 3, 4]
+
+// Python: lst.pop() → TypeScript: .pop()
+const last: number | undefined = numbers.pop();  // 4
+
+// Python: lst.insert(i, x) → TypeScript: .splice()
+numbers.splice(0, 0, 0);  // [0, 1, 2, 3]  (insert at index 0)
+
+// Python: lst.remove(x) → TypeScript: indexOf + splice
+const idx: number = numbers.indexOf(2);
+if (idx !== -1) numbers.splice(idx, 1);  // [0, 1, 3]
+
+// Python: slicing (lst[1:3]) → TypeScript: .slice()
+const sliced: number[] = numbers.slice(1, 3);
+
+// Python: list comprehension [x*2 for x in range(5)]
+const doubled: number[] = [0, 1, 2, 3, 4].map((x) => x * 2);
+// Equivalent: [0, 2, 4, 6, 8]
+
+// Python: filtered list [x for x in lst if x > 2]
+const filtered: number[] = numbers.filter((x) => x > 2);
+
+// Python: sorted(lst) → TypeScript: .toSorted() (ES2023+)
+const sorted: number[] = [3, 1, 2].toSorted((a, b) => a - b);
+
+// Python: lst.sort() → TypeScript: .sort()
+const mutable: number[] = [3, 1, 2];
+mutable.sort((a, b) => a - b);  // mutates in place
+
+// Python: copy.deepcopy() → TypeScript: structuredClone()
+const nested: number[][] = [[1, 2], [3, 4]];
+const deepCopy: number[][] = structuredClone(nested);
+deepCopy[0][0] = 99;
+console.log(nested[0][0]);  // 1 (original unchanged)
+
+// Python: len(lst) → TypeScript: .length
+console.log(numbers.length);
+```
+
+### More TypeScript Array Patterns
+
+```typescript
+// Python: 2D list (matrix) → TypeScript: nested arrays
+const matrix: number[][] = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+// Python: matrix[1][2] → TypeScript: matrix[1][2]
+console.log(matrix[1][2]);  // 6
+
+// Python: list flattening → TypeScript: flat()
+const nested: number[][] = [[1, 2], [3, 4], [5]];
+console.log(nested.flat());  // [1, 2, 3, 4, 5]
+// Python: [item for sublist in nested for item in sublist]
+
+// Python: any() / all() → TypeScript: .some() / .every()
+const nums: number[] = [1, 2, 3, 4, 5];
+console.log(nums.some((x) => x > 4));   // true (Python: any(x > 4 for x in nums))
+console.log(nums.every((x) => x > 0));  // true (Python: all(x > 0 for x in nums))
+
+// Python: enumerate with start → TypeScript: entries + map
+for (const [i, val] of ["a", "b", "c"].entries()) {
+  console.log(`${i}: ${val}`);  // 0: a, 1: b, 2: c
+}
+
+// Python: reversed list → TypeScript: toReversed() (ES2023+)
+console.log([1, 2, 3].toReversed());  // [3, 2, 1]
+
+// Python: list.find() → TypeScript: .find()
+const found = nums.find((x) => x > 3);  // 4 (first match)
+console.log(found);
+
+// Python: in operator for list → TypeScript: .includes()
+console.log(nums.includes(3));  // true (Python: 3 in nums)
+
+// Python: slice assignment → TypeScript: splice
+const arr: number[] = [1, 2, 3, 4, 5];
+arr.splice(1, 2, 99, 100);  // replaces 2 elements starting at index 1
+console.log(arr);  // [1, 99, 100, 4, 5]
+// Python: arr[1:3] = [99, 100]
+```
+
+### TypeScript Sorting & Searching Patterns
+
+```typescript
+// Python: sorted with reverse → TypeScript: sort with comparator
+const unsorted = [3, 1, 4, 1, 5, 9, 2, 6];
+unsorted.sort((a, b) => a - b);    // ascending [1, 1, 2, 3, 4, 5, 6, 9]
+unsorted.sort((a, b) => b - a);    // descending [9, 6, 5, 4, 3, 2, 1, 1]
+
+// Python: sorted with key=str.lower → TypeScript: sort with transform
+const mixed = ["Banana", "apple", "Cherry"];
+mixed.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
+console.log(mixed);  // ["apple", "Banana", "Cherry"]
+
+// Python: binary search (bisect) → TypeScript: manual implementation
+function binarySearch<T>(sorted: T[], target: T): number {
+  let left = 0, right = sorted.length - 1;
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+    if (sorted[mid] === target) return mid;
+    if (sorted[mid] < target) left = mid + 1;
+    else right = mid - 1;
+  }
+  return -1;  // not found
+}
+const sorted2 = [1, 3, 5, 7, 9, 11];
+console.log(binarySearch(sorted2, 7));   // 3
+console.log(binarySearch(sorted2, 4));   // -1
+
+// Python: list as stack → TypeScript: push/pop
+const stack: number[] = [];
+stack.push(1); stack.push(2); stack.push(3);
+console.log(stack.pop());  // 3 (LIFO)
+console.log(stack.pop());  // 2
+
+// Python: list as queue (deque preferred) → TypeScript: push/shift
+const queue2: number[] = [];
+queue2.push(1); queue2.push(2); queue2.push(3);
+console.log(queue2.shift());  // 1 (FIFO)
+
+// Python: random.shuffle → TypeScript: Fisher-Yates
+function shuffle<T>(arr: T[]): T[] {
+  const result = [...arr];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+```
 
 ## Summary
 

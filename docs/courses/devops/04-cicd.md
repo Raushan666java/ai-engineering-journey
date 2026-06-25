@@ -613,6 +613,75 @@ console.log(collector.generateReport());
 
 ---
 
+### CI Pipeline Config Generator
+
+Generating CI pipeline configurations programmatically ensures consistency across projects. The following generator creates GitHub Actions workflow configurations from a declarative schema.
+
+```typescript
+interface JobDefinition {
+  name: string;
+  runsOn: string;
+  steps: { name: string; run: string }[];
+  needs?: string[];
+  environment?: string;
+}
+
+interface WorkflowConfig {
+  name: string;
+  on: string[];
+  jobs: JobDefinition[];
+}
+
+class CIConfigGenerator {
+  generateStandardWorkflow(language: string): WorkflowConfig {
+    const baseSteps = [
+      { name: 'Checkout code', run: 'actions/checkout@v4' },
+      { name: 'Setup Node.js', run: 'actions/setup-node@v4' },
+    ];
+
+    const testSteps = [
+      { name: 'Install dependencies', run: 'npm ci' },
+      { name: 'Run linter', run: 'npm run lint' },
+      { name: 'Run tests', run: 'npm test' },
+    ];
+
+    const buildSteps = [
+      { name: 'Build project', run: 'npm run build' },
+    ];
+
+    return {
+      name: `${language} CI Pipeline`,
+      on: ['push', 'pull_request'],
+      jobs: [
+        { name: 'lint-and-test', runsOn: 'ubuntu-latest', steps: [...baseSteps, ...testSteps] },
+        { name: 'build', runsOn: 'ubuntu-latest', steps: [...baseSteps, ...buildSteps], needs: ['lint-and-test'] },
+      ],
+    };
+  }
+
+  toYAML(config: WorkflowConfig): string {
+    let yaml = `name: ${config.name}\n\non:\n`;
+    for (const trigger of config.on) yaml += `  ${trigger}: [branches: [main]]\n`;
+    yaml += '\njobs:\n';
+    for (const job of config.jobs) {
+      yaml += `  ${job.name}:\n    runs-on: ${job.runsOn}\n`;
+      if (job.needs) yaml += `    needs: [${job.needs.join(', ')}]\n`;
+      yaml += '    steps:\n';
+      for (const step of job.steps) yaml += `      - name: ${step.name}\n        run: ${step.run}\n`;
+    }
+    return yaml;
+  }
+}
+
+const generator = new CIConfigGenerator();
+const workflow = generator.generateStandardWorkflow('TypeScript');
+console.log(generator.toYAML(workflow));
+```
+
+**What this demonstrates:** Programmatic CI configuration generation standardizes pipeline definitions across projects, reducing manual configuration drift and onboarding time.
+
+---
+
 ## Practical Takeaways
 
 1. **Fail fast.** Run the fastest tests first so broken builds are caught immediately.

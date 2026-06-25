@@ -474,6 +474,147 @@ flowchart TD
 
 Ladner's theorem guarantees that if P ≠ NP, then NPI is non-empty — there exist problems in NP that are neither in P nor NP-complete.
 
+## TypeScript Implementation: Big-O Analyzer and Complexity Class Classifier
+
+```typescript
+// Asymptotic Complexity Analyzer and P vs NP Framework
+
+type ComplexityFunction = (n: number) => number;
+
+class BigOAnalyzer {
+  static O(f: ComplexityFunction): string {
+    return `O(${this.functionName(f)})`;
+  }
+
+  static Θ(f: ComplexityFunction): string {
+    return `Θ(${this.functionName(f)})`;
+  }
+
+  static Ω(f: ComplexityFunction): string {
+    return `Ω(${this.functionName(f)})`;
+  }
+
+  private static functionName(f: ComplexityFunction): string {
+    const names: [ComplexityFunction, string][] = [
+      [n => 1, "1"],
+      [n => Math.log2(n), "log n"],
+      [n => n, "n"],
+      [n => n * Math.log2(n), "n log n"],
+      [n => n ** 2, "n²"],
+      [n => n ** 3, "n³"],
+      [n => 2 ** n, "2ⁿ"],
+      [n => n ** n, "nⁿ"],
+      [n => Math.log2(Math.log2(n)), "log log n"]
+    ];
+    for (const [fn, name] of names) {
+      if (this.areEqual(f, fn)) return name;
+    }
+    return "unknown";
+  }
+
+  private static areEqual(f: ComplexityFunction, g: ComplexityFunction): boolean {
+    for (const n of [2, 4, 8, 16, 32, 64, 128]) {
+      if (Math.abs(f(n) - g(n)) > 0.01) return false;
+    }
+    return true;
+  }
+
+  static analyzeRuntime(algorithm: (input: number[]) => number[], input: number[]): {
+    inputSize: number;
+    operations: number;
+    estimatedClass: string;
+  } {
+    let ops = 0;
+    const proxy = new Proxy(algorithm, {
+      apply: (target, thisArg, args) => {
+        const result = target(...args);
+        ops = this.countOps(result, args[0]);
+        return result;
+      }
+    });
+    const n = input.length;
+    proxy(input);
+
+    const classes: [string, (n: number) => boolean][] = [
+      ["O(1)", (n) => ops <= 10],
+      ["O(log n)", (n) => ops <= 10 * Math.log2(n)],
+      ["O(n)", (n) => ops <= 2 * n],
+      ["O(n log n)", (n) => ops <= 2 * n * Math.log2(n)],
+      ["O(n²)", (n) => ops <= n * n],
+      ["O(2ⁿ)", (n) => true]
+    ];
+
+    const estimated = classes.find(([_, pred]) => pred(n))?.[0] || "O(2ⁿ+)";
+
+    return { inputSize: n, operations: ops, estimatedClass: estimated };
+  }
+
+  private static countOps(result: number[], input: number[]): number {
+    // Approximate count: iterations, comparisons, swaps
+    return Math.min(result.length + input.length, 100000);
+  }
+
+  static comparativeTable(): Map<string, number[]> {
+    const table = new Map<string, number[]>();
+    const ns = [1, 10, 100, 1000, 10000];
+    const fns: [string, (n: number) => number][] = [
+      ["O(1)", n => 1],
+      ["O(log n)", n => Math.ceil(Math.log2(n))],
+      ["O(n)", n => n],
+      ["O(n log n)", n => n * Math.ceil(Math.log2(n))],
+      ["O(n²)", n => n * n],
+      ["O(n³)", n => n * n * n],
+      ["O(2ⁿ)", n => Math.pow(2, n)]
+    ];
+    for (const [name, fn] of fns) {
+      table.set(name, ns.map(n => fn(n)));
+    }
+    return table;
+  }
+
+  static isPolynomial(complexity: string): boolean {
+    return ["O(1)", "O(log n)", "O(n)", "O(n log n)", "O(n²)", "O(n³)"].includes(complexity);
+  }
+}
+
+class ComplexityClassChecker {
+  static classifyProblem(name: string, bestKnownTime: string, verifiableInP: boolean): string {
+    if (verifiableInP) {
+      if (BigOAnalyzer.isPolynomial(bestKnownTime)) {
+        return `${name} ∈ P (polynomial time) and therefore also ∈ NP`;
+      }
+      return `${name} ∈ NP (verifiable in P, best known: ${bestKnownTime})`;
+    }
+    return `${name} likely ∉ NP (verification not known to be in P)`;
+  }
+
+  static pVsNP(): string[] {
+    return [
+      "P vs NP: The central open question in computer science.",
+      "",
+      "P = Problems solvable in deterministic polynomial time.",
+      "NP = Problems whose solutions are verifiable in polynomial time.",
+      "",
+      "If P = NP: Every problem with an efficiently verifiable solution",
+      "  could also be efficiently solved. SAT, TSP, Factorization all in P.",
+      "  Modern cryptography would collapse.",
+      "",
+      "If P ≠ NP: Some hard problems truly require exponential time.",
+      "  NP-complete problems cannot be solved in polynomial time.",
+      "  Cryptography remains secure.",
+      "",
+      "Most researchers believe P ≠ NP, but no proof exists yet.",
+      "The Clay Institute offers USD $1M for a correct proof."
+    ];
+  }
+}
+
+console.log(BigOAnalyzer.comparativeTable());
+console.log(ComplexityClassChecker.classifyProblem("SAT", "O(2ⁿ)", true));
+console.log(ComplexityClassChecker.classifyProblem("Sorting", "O(n log n)", true));
+console.log(ComplexityClassChecker.pVsNP().join("\n"));
+```
+
 ## Summary
 
 - P = problems solvable in polynomial time on a DTM.

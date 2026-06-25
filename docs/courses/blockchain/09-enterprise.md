@@ -608,6 +608,139 @@ const collectionConfig = [
 **B) A method for restricting data visibility to specific members within a channel.** PDCs allow certain data to be shared only with specific organization peers, even within the same channel. Data is stored in a private state database and is not visible to all channel members.
 </details>
 
+### TypeScript: Endorsement Policy Simulator
+
+```typescript
+interface EndorsementProposal {
+  chaincodeId: string; args: string[]; clientId: string;
+}
+
+interface Endorsement {
+  peerId: string; orgId: string; signature: string; approved: boolean;
+}
+
+class EndorsementPolicySimulator {
+  orgs: string[];
+  peers: Map<string, string> = new Map();
+
+  constructor(orgs: string[]) { this.orgs = orgs; }
+
+  addPeer(peerId: string, orgId: string): void { this.peers.set(peerId, orgId); }
+
+  simulate(endorsements: Endorsement[], policy: string): boolean {
+    if (policy === "ANY") return endorsements.some(e => e.approved);
+    if (policy === "ALL") return endorsements.every(e => e.approved);
+    if (policy.startsWith("MAJORITY")) {
+      const total = this.orgs.length;
+      const approved = new Set(endorsements.filter(e => e.approved).map(e => this.peers.get(e.peerId)));
+      return approved.size > total / 2;
+    }
+    if (policy.startsWith("OUTOF")) {
+      const match = policy.match(/OUTOF\((\d+),(.+)\)/);
+      if (!match) return false;
+      const required = parseInt(match[1]);
+      const orgs = match[2].split(",").map(s => s.trim().replace(/'/g, ""));
+      const approvedOrgs = new Set(endorsements.filter(e => e.approved).map(e => this.peers.get(e.peerId)));
+      return orgs.filter(o => approvedOrgs.has(o)).length >= required;
+    }
+    return false;
+  }
+
+  validateProposal(proposal: EndorsementProposal): { valid: boolean; reason: string } {
+    if (!proposal.chaincodeId) return { valid: false, reason: "No chaincode ID" };
+    if (proposal.args.length > 100) return { valid: false, reason: "Too many args" };
+    return { valid: true, reason: "" };
+  }
+}
+```
+
+### TypeScript: Channel Configuration Builder
+
+```typescript
+interface ChannelConfig {
+  name: string; orgs: string[]; policies: Record<string, string>;
+  anchorPeers: string[]; ordererEndpoints: string[];
+}
+
+class ChannelConfigBuilder {
+  private config: ChannelConfig;
+
+  constructor(name: string) {
+    this.config = {
+      name, orgs: [], policies: {}, anchorPeers: [], ordererEndpoints: [],
+    };
+  }
+
+  addOrg(orgId: string, anchorPeer: string): this {
+    if (!this.config.orgs.includes(orgId)) {
+      this.config.orgs.push(orgId);
+      this.config.anchorPeers.push(anchorPeer);
+    }
+    return this;
+  }
+
+  setPolicy(name: string, rule: string): this {
+    this.config.policies[name] = rule;
+    return this;
+  }
+
+  addOrderer(endpoint: string): this {
+    if (!this.config.ordererEndpoints.includes(endpoint)) {
+      this.config.ordererEndpoints.push(endpoint);
+    }
+    return this;
+  }
+
+  build(): ChannelConfig {
+    if (this.config.orgs.length < 2) throw new Error("Channel needs at least 2 orgs");
+    return { ...this.config };
+  }
+
+  static consortiumTemplate(orgIds: string[]): ChannelConfig {
+    const builder = new ChannelConfigBuilder("consortium-channel");
+    for (const org of orgIds) builder.addOrg(org, `peer0.${org}.example.com`);
+    builder.setPolicy("Admins", `OR(${orgIds.map(o => `'${o}.admin'`).join(",")})`);
+    builder.setPolicy("Readers", `OR(${orgIds.map(o => `'${o}.member'`).join(",")})`);
+    builder.setPolicy("Writers", `OR(${orgIds.map(o => `'${o}.member'`).join(",")})`);
+    builder.setPolicy("Endorsement", `OUTOF(${Math.ceil(orgIds.length / 2) + 1},${orgIds.map(o => `'${o}.member'`).join(",")})`);
+    return builder.build();
+  }
+}
+```
+
+### TypeScript: Private Data Collection Config Generator
+
+```typescript
+interface PDCConfig {
+  name: string; policy: string; requiredPeerCount: number;
+  maxPeerCount: number; blockToLive: number; memberOnlyRead: boolean;
+}
+
+class PDCConfigGenerator {
+  static bilateral(name: string, org1: string, org2: string): PDCConfig {
+    return {
+      name, policy: `OR('${org1}.member','${org2}.member')`,
+      requiredPeerCount: 0, maxPeerCount: 3, blockToLive: 0, memberOnlyRead: true,
+    };
+  }
+
+  static orgOnly(name: string, org: string): PDCConfig {
+    return {
+      name, policy: `OR('${org}.member')`,
+      requiredPeerCount: 0, maxPeerCount: 1, blockToLive: 100, memberOnlyRead: true,
+    };
+  }
+
+  static regulatory(name: string, orgs: string[], regulatorOrg: string): PDCConfig {
+    const allOrgs = [...orgs, regulatorOrg].map(o => `'${o}.member'`).join(",");
+    return {
+      name, policy: `OR(${allOrgs})`,
+      requiredPeerCount: 1, maxPeerCount: orgs.length, blockToLive: 0, memberOnlyRead: true,
+    };
+  }
+}
+```
+
 ## Summary
 
 - Enterprise blockchains prioritize privacy, performance, and controlled access over openness.

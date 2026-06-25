@@ -583,6 +583,92 @@ console.log(scheduler.generateScheduleReport(team, 7));
 | Enterprise | Enterprise incident management |
 | Microservices | Resilience patterns for distributed systems |
 
+### Error Budget Tracker
+
+Error budgets bridge the gap between reliability and velocity. The following implementation tracks SLO compliance, calculates burn rate, and triggers alerts when the error budget is at risk.
+
+```typescript
+interface SLOConfig {
+  name: string;
+  target: number; // e.g., 0.999 for 99.9%
+  windowDays: number;
+}
+
+interface SLIMeasurement {
+  timestamp: Date;
+  totalRequests: number;
+  successfulRequests: number;
+  latencyP99Ms: number;
+  latencyThresholdMs: number;
+}
+
+interface ErrorBudgetState {
+  sloName: string;
+  budgetRemaining: number; // percentage
+  burnRate: number; // per hour
+  daysUntilExhaustion: number;
+  status: 'healthy' | 'warning' | 'critical' | 'exhausted';
+}
+
+class ErrorBudgetTracker {
+  private measurements: SLIMeasurement[] = [];
+
+  addMeasurement(m: SLIMeasurement): void {
+    this.measurements.push(m);
+  }
+
+  calculate(config: SLOConfig): ErrorBudgetState {
+    const windowStart = new Date();
+    windowStart.setDate(windowStart.getDate() - config.windowDays);
+
+    const windowMeasurements = this.measurements.filter(m => m.timestamp >= windowStart);
+    const totalGood = windowMeasurements.reduce((s, m) => s + m.successfulRequests, 0);
+    const total = windowMeasurements.reduce((s, m) => s + m.totalRequests, 0);
+    const actualAvailability = total > 0 ? totalGood / total : 1;
+
+    const errorBudgetTotal = 1 - config.target;
+    const errorBudgetConsumed = Math.max(0, 1 - actualAvailability);
+    const budgetRemaining = Math.max(0, (errorBudgetTotal - errorBudgetConsumed) / errorBudgetTotal * 100);
+
+    const recent = this.measurements.slice(-24);
+    const recentGood = recent.reduce((s, m) => s + m.successfulRequests, 0);
+    const recentTotal = recent.reduce((s, m) => s + m.totalRequests, 0);
+    const recentFailureRate = recentTotal > 0 ? 1 - recentGood / recentTotal : 0;
+    const burnRate = recentFailureRate / errorBudgetTotal * 24;
+
+    const remainingBudget = errorBudgetTotal - errorBudgetConsumed;
+    const daysUntilExhaustion = recentFailureRate > 0
+      ? Math.round(remainingBudget / (recentFailureRate / 24) / 24)
+      : Infinity;
+
+    let status: ErrorBudgetState['status'] = 'healthy';
+    if (budgetRemaining <= 0) status = 'exhausted';
+    else if (budgetRemaining < 25) status = 'critical';
+    else if (budgetRemaining < 50) status = 'warning';
+
+    return {
+      sloName: config.name,
+      budgetRemaining: Math.round(budgetRemaining * 100) / 100,
+      burnRate: Math.round(burnRate * 100) / 100,
+      daysUntilExhaustion: daysUntilExhaustion === Infinity ? 999 : daysUntilExhaustion,
+      status,
+    };
+  }
+}
+
+const tracker = new ErrorBudgetTracker();
+tracker.addMeasurement({ timestamp: new Date(), totalRequests: 10000, successfulRequests: 9980, latencyP99Ms: 120, latencyThresholdMs: 200 });
+tracker.addMeasurement({ timestamp: new Date(Date.now() - 3600000), totalRequests: 9500, successfulRequests: 9200, latencyP99Ms: 350, latencyThresholdMs: 200 });
+
+const budget = tracker.calculate({ name: 'API Latency', target: 0.995, windowDays: 30 });
+console.log(`SLO: ${budget.sloName}, Budget: ${budget.budgetRemaining}%, Status: ${budget.status}`);
+console.log(`Burn Rate: ${budget.burnRate}/hr, Days Until Exhaustion: ${budget.daysUntilExhaustion}`);
+```
+
+**What this demonstrates:** Error budget tracking provides a quantitative framework for balancing feature velocity against reliability, enabling data-driven release decisions.
+
+---
+
 ## Chapter Quiz
 
 <details><summary>Question 1: What is the 50% rule in SRE?</summary>**A)** 50% test coverage target<br>**B)** Max 50% of time on operational work<br>**C)** 50% budget for tools<br>**D)** 50% of team must be on-call<br><br>**Answer: B)** Max 50% of time on operational work</details>

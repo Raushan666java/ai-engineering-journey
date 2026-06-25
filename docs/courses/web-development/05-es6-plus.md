@@ -588,6 +588,50 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: ES Module Loader & Generator Function Demo
+
+```typescript
+class ModuleSystem {
+  static async dynamicImport(modulePath: string): Promise<any> {
+    try { return await import(modulePath); }
+    catch { throw new Error(`Module ${modulePath} not found`); }
+  }
+  static treeShake<T extends Record<string, any>>(exports: T, used: (keyof T)[]): Partial<T> {
+    const result: Partial<T> = {};
+    used.forEach(k => { if (k in exports) result[k] = exports[k]; });
+    return result;
+  }
+}
+
+class GeneratorDemo {
+  static *fibonacci(limit: number): Generator<number> {
+    let [a, b] = [0, 1];
+    while (a <= limit) { yield a; [a, b] = [b, a + b]; }
+  }
+  static *range(start: number, end: number, step: number = 1): Generator<number> {
+    for (let i = start; i <= end; i += step) yield i;
+  }
+  static *take<T>(gen: Generator<T>, n: number): Generator<T> {
+    let count = 0;
+    for (const v of gen) { if (count++ >= n) break; yield v; }
+  }
+}
+
+class ProxyValidator {
+  static createLoggedObject<T extends Record<string, any>>(target: T): T {
+    return new Proxy(target, {
+      get(obj, prop) { console.log(`GET ${String(prop)}`); return obj[prop as keyof T]; },
+      set(obj, prop, val) { console.log(`SET ${String(prop)} = ${val}`); obj[prop as keyof T] = val; return true; },
+    });
+  }
+}
+
+const fib = [...GeneratorDemo.take(GeneratorDemo.fibonacci(1000), 10)];
+console.log("Fibonacci:", fib);
+const logged = ProxyValidator.createLoggedObject({ name: "ES6", version: 2015 });
+console.log("Logged:", logged.name);
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** ES6 classes and ES modules provide a modern OOP and code organization model.

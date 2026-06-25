@@ -609,6 +609,48 @@ for (const [person, floor] of [...floors.entries()].sort((a, b) => a[1] - b[1]))
 
 11. P=Reading/Blue, Q=Swimming/Red, R=Singing/White, S=Dancing/Green, T=Painting/Purple, U=Traveling/Yellow, V=Cooking/Black | 12. Alphabetical by first letter, one word per step; Step V: "blue deep forest green ocean sky" | 13. Find argument with "All X are Y, Z is X, therefore Z is Y" structure | 14. I, II, and III all follow | 15. (a) Follow — directly addresses overcrowding; (b) Do not follow — penalizes commuters; (c) Follow — long-term solution; (d) Follow — reduces demand
 
+### TypeScript: Input-Output Rule Learner & Reasoning Analyzer
+
+```typescript
+class IORuleLearner {
+  static detectPattern(input: number[], output: number[]): string {
+    const s = [...output], asc = s.every((v, i) => i === 0 || v >= s[i - 1]);
+    const desc = s.every((v, i) => i === 0 || v <= s[i - 1]);
+    if (asc) return "Ascending sort";
+    if (desc) return "Descending sort";
+    const pos = output.map(v => input.indexOf(v));
+    if (pos.every((v, i) => v === pos[0] + i)) return "Cyclic shift";
+    return "Custom transformation";
+  }
+}
+
+class CriticalReasoningEngine {
+  static analyze(argument: string): { premises: string[]; conclusion: string; type: string } {
+    const markers = ["therefore", "thus", "hence", "so", "consequently"];
+    const lower = argument.toLowerCase();
+    let conclusion = "Not identified";
+    for (const m of markers) {
+      const idx = lower.indexOf(m);
+      if (idx !== -1) { conclusion = argument.slice(idx).split(".")[0] + "."; break; }
+    }
+    const premises = argument.split(".").filter(s => s.trim() && !s.toLowerCase().includes("therefore") && !s.toLowerCase().includes("hence"));
+    const fallacies: Record<string, string> = { everyone: "Bandwagon", "if we allow": "Slippery slope", "straw man": "Straw man" };
+    const type = Object.entries(fallacies).find(([k]) => lower.includes(k))?.[1] ?? "Valid reasoning";
+    return { premises, conclusion, type };
+  }
+
+  static evaluateCourseOfAction(action: string, problem: string): "Follows" | "Does not follow" {
+    const a = action.toLowerCase(), p = problem.toLowerCase();
+    const common = a.split(" ").filter(w => p.includes(w)).length;
+    return common >= 2 ? "Follows" : "Does not follow";
+  }
+}
+
+console.log("Pattern:", IORuleLearner.detectPattern([42, 18, 95, 27], [18, 27, 42, 95]));
+console.log("Reasoning:", CriticalReasoningEngine.analyze("All mammals are warm-blooded. Whales are mammals. Therefore, whales are warm-blooded."));
+console.log("CoA:", CriticalReasoningEngine.evaluateCourseOfAction("Increase train frequency", "Public transport is overcrowded"));
+```
+
 ## Summary
 
 - Puzzles: organize data systematically; use grids/tables

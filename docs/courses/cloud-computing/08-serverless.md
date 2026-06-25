@@ -498,6 +498,188 @@ async function apiHandler(event: APIGatewayEvent): Promise<{ statusCode: number;
 **B) To guarantee the function always has capacity, preventing throttling by other functions.** Reserved Concurrency allocates a specific portion of account concurrency to a function, protecting it from being throttled when other functions consume all available concurrency.
 </details>
 
+### TypeScript: Step Functions State Machine DSL
+
+```typescript
+type StateType = "task" | "choice" | "parallel" | "wait" | "succeed" | "fail" | "map";
+
+interface StateDefinition {
+  type: StateType;
+  resource?: string;
+  next?: string;
+  end?: boolean;
+  branches?: StateMachineDefinition[];
+  choices?: { variable: string; comparison: string; value: any; next: string }[];
+  seconds?: number;
+  iterator?: StateMachineDefinition;
+  maxConcurrency?: number;
+  catch?: { errorEquals: string[]; next: string }[];
+  retry?: { errors: string[]; maxAttempts: number; intervalSeconds: number }[];
+}
+
+interface StateMachineDefinition {
+  comment?: string;
+  startAt: string;
+  states: Record<string, StateDefinition>;
+}
+
+class StepFunctionsBuilder {
+  private definition: StateMachineDefinition;
+
+  constructor(name: string) {
+    this.definition = { startAt: name, states: {} };
+  }
+
+  addTask(name: string, config: { resource: string; next?: string; end?: boolean; retry?: { errors: string[]; maxAttempts: number; intervalSeconds: number }[] }): this {
+    const state: StateDefinition = { type: "task", resource: config.resource };
+    if (config.next) state.next = config.next;
+    if (config.end) state.end = config.end;
+    if (config.retry) state.retry = config.retry;
+    this.definition.states[name] = state;
+    return this;
+  }
+
+  addChoice(name: string, config: { choices: { variable: string; comparison: string; value: any; next: string }[]; default: string }): this {
+    this.definition.states[name] = { type: "choice", choices: config.choices, next: config.default };
+    return this;
+  }
+
+  addWait(name: string, seconds: number, next: string): this {
+    this.definition.states[name] = { type: "wait", seconds, next };
+    return this;
+  }
+
+  addParallel(name: string, branches: StateMachineDefinition[], next: string): this {
+    this.definition.states[name] = { type: "parallel", branches, next };
+    return this;
+  }
+
+  addMap(name: string, config: { iterator: StateMachineDefinition; maxConcurrency: number; next?: string; end?: boolean }): this {
+    const state: StateDefinition = { type: "map", iterator: config.iterator, maxConcurrency: config.maxConcurrency };
+    if (config.next) state.next = config.next;
+    if (config.end) state.end = config.end;
+    this.definition.states[name] = state;
+    return this;
+  }
+
+  addSucceed(name: string): this {
+    this.definition.states[name] = { type: "succeed" };
+    return this;
+  }
+
+  addFail(name: string): this {
+    this.definition.states[name] = { type: "fail" };
+    return this;
+  }
+
+  build(): StateMachineDefinition { return this.definition; }
+
+  simulate(input: any): { state: string; output: any }[] {
+    const execution: { state: string; output: any }[] = [];
+    let current = this.definition.startAt;
+    let data = input;
+
+    while (current) {
+      const state = this.definition.states[current];
+      execution.push({ state: current, output: data });
+
+      if (state.type === "succeed" || state.end) break;
+      if (state.type === "fail") { execution.push({ state: current, output: { error: "Execution failed" } }); break; }
+
+      if (state.type === "task") {
+        data = { ...data, result: `processed by ${state.resource}` };
+        current = state.next || "";
+      } else if (state.type === "wait") {
+        current = state.next || "";
+      } else if (state.type === "choice") {
+        const match = state.choices?.find((c) => {
+          const value = data[c.variable.replace("$.", "")];
+          return c.comparison === "StringEquals" ? value === c.value : value > c.value;
+        });
+        current = match?.next || "";
+      } else {
+        current = state.next || "";
+      }
+    }
+    return execution;
+  }
+}
+
+const workflow = new StepFunctionsBuilder("ProcessOrder")
+  .addTask("ValidateOrder", { resource: "arn:aws:lambda:validate-order", next: "CheckInventory" })
+  .addTask("CheckInventory", { resource: "arn:aws:lambda:check-inventory", next: "ProcessPayment" })
+  .addChoice("ProcessPayment", {
+    choices: [{ variable: "$.amount", comparison: "NumericGreaterThan", value: 10000, next: "ManualApproval" }],
+    default: "ChargeCard",
+  })
+  .addTask("ManualApproval", { resource: "arn:aws:lambda:send-approval-email", next: "WaitForApproval" })
+  .addWait("WaitForApproval", 86400, "ChargeCard")
+  .addTask("ChargeCard", { resource: "arn:aws:lambda:charge-card", next: "FulfillOrder" })
+  .addTask("FulfillOrder", { resource: "arn:aws:lambda:fulfill-order", end: true })
+  .build();
+
+const trace = workflow.simulate({ orderId: "ORD-123", amount: 500 });
+console.log("Execution trace:", trace.map((s) => s.state).join(" -> "));
+```
+
+### TypeScript: Lambda Cost Calculator
+
+```typescript
+interface LambdaCostParams {
+  invocationsPerMonth: number;
+  memoryMB: number;
+  avgDurationMs: number;
+  provisionedConcurrency: number;
+  provisionedHours: number;
+}
+
+class LambdaCostCalculator {
+  private readonly FREE_TIER_INVOCATIONS = 1_000_000;
+  private readonly FREE_TIER_COMPUTE_SECONDS = 400_000;
+  private readonly PRICE_PER_GB_SECOND = 0.0000166667;
+  private readonly PRICE_PER_INVOCATION = 0.0000002;
+  private readonly PROVISIONED_PRICE_PER_GB_SECOND = 0.0000138889;
+
+  calculate(params: LambdaCostParams): {
+    computeCost: number;
+    invocationCost: number;
+    provConcurrencyCost: number;
+    total: number;
+    avgCostPerInvocation: number;
+  } {
+    const computeSeconds = params.invocationsPerMonth * (params.avgDurationMs / 1000);
+    const computeGBSeconds = computeSeconds * (params.memoryMB / 1024);
+    const billableCompute = Math.max(0, computeGBSeconds - this.FREE_TIER_COMPUTE_SECONDS);
+    const computeCost = billableCompute * this.PRICE_PER_GB_SECOND;
+
+    const billableInvocations = Math.max(0, params.invocationsPerMonth - this.FREE_TIER_INVOCATIONS);
+    const invocationCost = billableInvocations * this.PRICE_PER_INVOCATION;
+
+    const provCompute = params.provisionedConcurrency * (params.memoryMB / 1024) * params.provisionedHours * 3600;
+    const provConcurrencyCost = provCompute * this.PROVISIONED_PRICE_PER_GB_SECOND;
+
+    const total = computeCost + invocationCost + provConcurrencyCost;
+
+    return {
+      computeCost: Math.round(computeCost * 100) / 100,
+      invocationCost: Math.round(invocationCost * 100) / 100,
+      provConcurrencyCost: Math.round(provConcurrencyCost * 100) / 100,
+      total: Math.round(total * 100) / 100,
+      avgCostPerInvocation: Math.round((total / params.invocationsPerMonth) * 10000) / 10000,
+    };
+  }
+
+  compareConfigs(configs: LambdaCostParams[]): LambdaCostParams & LambdaCostReturn[] {
+    return configs.map((c) => ({ ...c, ...this.calculate(c) }));
+  }
+}
+
+type LambdaCostReturn = ReturnType<LambdaCostCalculator["calculate"]>;
+const calc = new LambdaCostCalculator();
+const result = calc.calculate({ invocationsPerMonth: 10_000_000, memoryMB: 512, avgDurationMs: 2000, provisionedConcurrency: 50, provisionedHours: 730 });
+console.log("Lambda monthly cost:", JSON.stringify(result, null, 2));
+```
+
 ## Summary
 
 - Serverless computing provides automatic scaling and pay-per-use pricing with no server management.

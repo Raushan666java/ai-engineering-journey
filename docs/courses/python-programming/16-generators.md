@@ -600,6 +600,119 @@ print(sm.send("stop"))        # stopped
 | Multiple passes over data | List | Generators are single-use |
 | Small fixed dataset | List comprehension | Overhead of generator protocol |
 | Parallel processing | `concurrent.futures` | Generators are single-threaded |
+```typescript
+// Chapter 16: TypeScript Generator Equivalents
+// Python: generator with yield → TypeScript: function* with yield
+function* fibonacci(): Generator<number, void, unknown> {
+  let a = 0, b = 1;
+  while (true) {
+    yield a;
+    [a, b] = [b, a + b];
+  }
+}
+
+const fibGen = fibonacci();
+console.log(fibGen.next().value);  // 0
+console.log(fibGen.next().value);  // 1
+console.log(fibGen.next().value);  // 1
+console.log(fibGen.next().value);  // 2
+console.log(fibGen.next().value);  // 3
+
+// Python: generator expression (x*2 for x in range(5))
+// TypeScript: use an iterator or array methods (no native lazy evaluation)
+function* range(start: number, end: number): Generator<number> {
+  for (let i = start; i < end; i++) yield i;
+}
+const doubled = Array.from(range(0, 5), (x) => x * 2);
+console.log(doubled);  // [0, 2, 4, 6, 8]
+
+// Python: yield from → TypeScript: yield* (delegation)
+function* concat<T>(...iters: Iterable<T>[]): Generator<T> {
+  for (const iter of iters) yield* iter;
+}
+const combined = Array.from(concat([1, 2], [3, 4]));
+console.log(combined);  // [1, 2, 3, 4]
+
+// Python: itertools.islice → TypeScript: take from generator
+function* take<T>(gen: Generator<T>, count: number): Generator<T> {
+  for (let i = 0; i < count; i++) {
+    const next = gen.next();
+    if (next.done) return;
+    yield next.value;
+  }
+}
+const first5 = Array.from(take(fibonacci(), 5));
+console.log(first5);  // [0, 1, 1, 2, 3]
+
+// Python: two-way communication with .send()
+// TypeScript: generators can receive values via yield expression
+function* accumulator(): Generator<number, void, number> {
+  let sum = 0;
+  while (true) {
+    sum += yield sum;  // receives value via .next(value)
+  }
+}
+```
+
+### TypeScript Iterable & Iterator Protocol
+
+```typescript
+// Python: custom iterator via __iter__/__next__ → TypeScript: Symbol.iterator
+class CountDown implements Iterable<number> {
+  constructor(private start: number) {}
+  [Symbol.iterator](): Iterator<number> {
+    let count = this.start;
+    return {
+      next: (): IteratorResult<number> => {
+        if (count < 0) return { done: true, value: undefined as any };
+        return { done: false, value: count-- };
+      },
+    };
+  }
+}
+for (const n of new CountDown(3)) {
+  console.log(n);  // 3, 2, 1, 0
+}
+
+// Python: itertools.chain → TypeScript: spread or flat
+const combined2 = [...[1, 2], ...[3, 4]];  // [1, 2, 3, 4]
+// Python: list(itertools.chain([1, 2], [3, 4]))
+
+// Python: itertools.cycle → TypeScript: generator
+function* cycle<T>(items: T[]): Generator<T> {
+  while (true) {
+    for (const item of items) yield item;
+  }
+}
+const colors = cycle(["red", "green", "blue"]);
+console.log(colors.next().value);  // red
+console.log(colors.next().value);  // green
+console.log(colors.next().value);  // blue
+console.log(colors.next().value);  // red (wraps around)
+
+// Python: itertools.accumulate → TypeScript: scan
+function* accumulate(iter: number[]): Generator<number> {
+  let sum = 0;
+  for (const n of iter) {
+    sum += n;
+    yield sum;
+  }
+}
+console.log(Array.from(accumulate([1, 2, 3, 4])));  // [1, 3, 6, 10]
+
+// Python: itertools.permutations → TypeScript: recursive generator
+function* permutations<T>(items: T[]): Generator<T[]> {
+  if (items.length <= 1) { yield items; return; }
+  for (let i = 0; i < items.length; i++) {
+    const rest = [...items.slice(0, i), ...items.slice(i + 1)];
+    for (const perm of permutations(rest)) {
+      yield [items[i], ...perm];
+    }
+  }
+}
+console.log(Array.from(permutations([1, 2, 3])));
+// [[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]]
+```
 
 ## Summary
 

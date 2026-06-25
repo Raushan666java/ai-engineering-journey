@@ -619,6 +619,148 @@ const solutions: ScalingSolution[] = [
 **B) By opening a multisig channel and updating balance commitments off-chain.** The Lightning Network creates 2-of-2 multisig payment channels where balance updates are signed off-chain but only the final balance is settled on-chain. This allows instant, low-fee micro-transactions without waiting for block confirmations.
 </details>
 
+### TypeScript: Reentrancy Detector
+
+```typescript
+import { createHash } from "node:crypto";
+
+const sha256 = (d: string): string => createHash("sha256").update(d).digest("hex");
+
+interface SSAInstruction {
+  op: string; args: string[]; result?: string;
+}
+
+class ReentrancyDetector {
+  static detect(bytecode: string[]): { risk: boolean; pattern: string } {
+    const stateWrites: number[] = [];
+    const externalCalls: number[] = [];
+    for (let i = 0; i < bytecode.length; i++) {
+      if (bytecode[i] === "SSTORE") stateWrites.push(i);
+      if (bytecode[i] === "CALL" || bytecode[i] === "DELEGATECALL") externalCalls.push(i);
+    }
+    for (const callIdx of externalCalls) {
+      const subsequentWrites = stateWrites.filter(idx => idx > callIdx);
+      if (subsequentWrites.length > 0) {
+        return { risk: true, pattern: `External call at instruction ${callIdx} before state write at ${subsequentWrites[0]}` };
+      }
+    }
+    return { risk: false, pattern: "Check-Effects-Interactions pattern followed" };
+  }
+}
+```
+
+### TypeScript: Integer Overflow Checker
+
+```typescript
+class OverflowChecker {
+  static checkAddition(a: bigint, b: bigint): { safe: boolean; result?: bigint; error?: string } {
+    const result = a + b;
+    if (result < a || result < b) return { safe: false, error: "Addition overflow" };
+    return { safe: true, result };
+  }
+
+  static checkSubtraction(a: bigint, b: bigint): { safe: boolean; result?: bigint; error?: string } {
+    if (b > a) return { safe: false, error: "Subtraction underflow" };
+    return { safe: true, result: a - b };
+  }
+
+  static checkMultiplication(a: bigint, b: bigint): { safe: boolean; result?: bigint; error?: string } {
+    if (a === BigInt(0) || b === BigInt(0)) return { safe: true, result: BigInt(0) };
+    const result = a * b;
+    if (result / a !== b) return { safe: false, error: "Multiplication overflow" };
+    return { safe: true, result };
+  }
+
+  static analyzeExpression(op: string, a: bigint, b: bigint): { safe: boolean; error?: string } {
+    switch (op) {
+      case "+": return this.checkAddition(a, b);
+      case "-": return this.checkSubtraction(a, b);
+      case "*": return this.checkMultiplication(a, b);
+      default: return { safe: true };
+    }
+  }
+}
+```
+
+### TypeScript: Access Control Analyzer
+
+```typescript
+interface AccessControlRule {
+  functionName: string; modifier: string; roles: string[];
+}
+
+class AccessControlAnalyzer {
+  private rules: AccessControlRule[] = [];
+  private roleHierarchy: Map<string, string[]> = new Map();
+
+  addRule(func: string, modifier: string, roles: string[]): void {
+    this.rules.push({ functionName: func, modifier, roles });
+  }
+
+  addRole(name: string, inherits: string[] = []): void {
+    this.roleHierarchy.set(name, inherits);
+  }
+
+  hasAccess(role: string, requiredRole: string): boolean {
+    if (role === requiredRole) return true;
+    const inherits = this.roleHierarchy.get(requiredRole);
+    if (!inherits) return false;
+    return inherits.includes(role) || inherits.some(r => this.hasAccess(role, r));
+  }
+
+  analyze(): { function: string; modifier: string; risk: string }[] {
+    return this.rules.map(r => {
+      let risk = "ok";
+      if (r.modifier === "onlyOwner" && r.roles.length === 0) risk = "single-admin risk";
+      if (r.modifier === "tx.origin") risk = "CRITICAL: phishing vulnerability";
+      if (r.roles.length === 0 && r.modifier !== "public") risk = "no access control";
+      return { function: r.functionName, modifier: r.modifier, risk };
+    });
+  }
+}
+```
+
+### TypeScript: Front-Running Simulator
+
+```typescript
+interface MempoolTx {
+  txHash: string; from: string; to: string; value: bigint;
+  gasPrice: bigint; nonce: number; data: string;
+}
+
+class FrontRunningSimulator {
+  mempool: MempoolTx[] = [];
+
+  addToMempool(tx: MempoolTx): void {
+    this.mempool.push(tx);
+    this.mempool.sort((a, b) => Number(b.gasPrice - a.gasPrice));
+  }
+
+  detectFrontRunnable(): MempoolTx[] {
+    return this.mempool.filter(tx => {
+      const decoded = this.decodeSwapData(tx.data);
+      return decoded !== null && decoded.amount > BigInt(1000);
+    });
+  }
+
+  simulateFrontRun(victim: MempoolTx, frontRunAmount: bigint): { attackerProfit: bigint } {
+    const decoded = this.decodeSwapData(victim.data);
+    if (!decoded) return { attackerProfit: BigInt(0) };
+    const priceBefore = BigInt(100);
+    const priceAfter = priceBefore + (frontRunAmount / BigInt(1000));
+    const victimValue = decoded.amount * priceBefore;
+    const victimValueAfter = decoded.amount * priceAfter;
+    const slippageLoss = victimValueAfter - victimValue;
+    return { attackerProfit: slippageLoss > BigInt(0) ? slippageLoss : BigInt(0) };
+  }
+
+  private decodeSwapData(data: string): { amount: bigint; path: string[] } | null {
+    if (!data || data.length < 10) return null;
+    return { amount: BigInt("0x" + data.slice(2, 10)), path: ["tokenA", "tokenB"] };
+  }
+}
+```
+
 ## Summary
 
 - Scalability is the primary hurdle for mainstream blockchain adoption.

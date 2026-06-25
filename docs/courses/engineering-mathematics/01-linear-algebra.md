@@ -521,6 +521,81 @@ function rankKApprox(A: Matrix, k: number): Matrix {
 
 Storage savings: $m \times n$ original → $k(m + n + 1)$ with SVD. For $1000 \times 1000$ at $k = 100$: $1,000,000$ → $100(1000 + 1000 + 1) = 200,100$, a 5x compression.
 
+### TypeScript Implementation: QR Decomposition via Gram-Schmidt
+
+```typescript
+type Vec = number[];
+type Mat = Vec[];
+
+function dot(u: Vec, v: Vec): number {
+  return u.reduce((s, ui, i) => s + ui * v[i], 0);
+}
+function norm(u: Vec): number { return Math.sqrt(dot(u, u)); }
+function scale(u: Vec, c: number): Vec { return u.map(x => x * c); }
+function sub(u: Vec, v: Vec): Vec { return u.map((x, i) => x - v[i]); }
+function transpose(M: Mat): Mat { return M[0].map((_, i) => M.map(row => row[i])); }
+function eye(n: number): Mat { return Array.from({ length: n }, (_, i) => Array.from({ length: n }, (_, j) => i === j ? 1 : 0)); }
+
+function qrDec(A: Mat): { Q: Mat; R: Mat } {
+  const m = A[0].length;
+  const Q: Mat = [], R: Mat = Array.from({ length: m }, () => Array(m).fill(0));
+  for (let k = 0; k < m; k++) {
+    const col = A.map(row => row[k]);
+    let v = col;
+    for (let j = 0; j < k; j++) {
+      const qj = Q[j]; R[j][k] = dot(qj, col);
+      v = sub(v, scale(qj, R[j][k]));
+    }
+    R[k][k] = norm(v);
+    Q[k] = scale(v, 1 / R[k][k]);
+  }
+  return { Q: transpose(Q), R };
+}
+
+// LU Decomposition with partial pivoting
+function luDec(A: Mat): { L: Mat; U: Mat; P: Mat } {
+  const n = A.length;
+  let L = eye(n), U = A.map(r => [...r]), P = eye(n);
+  for (let k = 0; k < n - 1; k++) {
+    let mi = k;
+    for (let i = k + 1; i < n; i++) if (Math.abs(U[i][k]) > Math.abs(U[mi][k])) mi = i;
+    if (mi !== k) { [U[k], U[mi]] = [U[mi], U[k]]; [P[k], P[mi]] = [P[mi], P[k]]; if (k > 0) [L[k], L[mi]] = [L[mi], L[k]]; }
+    for (let i = k + 1; i < n; i++) { L[i][k] = U[i][k] / U[k][k]; for (let j = k; j < n; j++) U[i][j] -= L[i][k] * U[k][j]; }
+  }
+  return { L, U, P };
+}
+
+// Power iteration for dominant eigenvalue
+function powerIter(A: Mat, maxIter: number = 1000, tol: number = 1e-10): { eigenvalue: number; eigenvector: Vec } {
+  const n = A.length;
+  let v = Array.from({ length: n }, () => Math.random());
+  let eigenvalue = 0;
+  for (let iter = 0; iter < maxIter; iter++) {
+    const w = v.map((_, i) => v.reduce((s, vj, j) => s + A[i][j] * vj, 0));
+    const normW = Math.sqrt(w.reduce((s, wi) => s + wi * wi, 0));
+    v = w.map(wi => wi / normW);
+    const newEigen = v.reduce((s, vi, i) => {
+      const Av = A[i].reduce((sum, aij, j) => sum + aij * v[j], 0);
+      return s + vi * Av;
+    }, 0);
+    if (Math.abs(newEigen - eigenvalue) < tol) break;
+    eigenvalue = newEigen;
+  }
+  return { eigenvalue, eigenvector: v };
+}
+
+// Demos
+const A: Mat = [[1, 1, 1], [1, 0, 2], [1, 2, 0]];
+const { Q, R } = qrDec(A);
+console.log("QR: Q × R ≈ A?", Q.map((r, i) => r.reduce((s, _, k) => s + (R[i].reduce((ss, rr, kk) => ss + rr * Q[kk][i], 0) - A[i][k]) ** 2, 0)).every(e => e < 1e-10) ? "YES ✓" : "NO ✗");
+
+const { eigenvalue } = powerIter([[2, 1], [1, 2]]);
+console.log(`Power iteration λ≈${eigenvalue.toFixed(4)} (expected: 3 — max eigenvalue of [[2,1],[1,2]])`);
+
+const { L, U } = luDec([[4, 3], [6, 3]]);
+console.log(`LU: det = ${L.map((r, i) => r.reduce((p, l, j) => p * (i === j ? U[i][j] : 1), 1)).reduce((a, b) => a * b, 1)} (should be -6)`);
+```
+
 ## Summary
 
 - A matrix is a linear transformation; matrix multiplication composes transformations

@@ -495,6 +495,134 @@ This is the chain rule: the gradient at layer $l$ depends on gradients at layer 
 
 **Connection to Jacobians:** The entire backpropagation algorithm can be understood as efficient computation of the Jacobian-vector product $\nabla_w L = (J_{f_L} \cdot J_{f_{L-1}} \cdots J_{f_1})^T \cdot 1$, where each $J_{f_l}$ is the Jacobian of layer $l$.
 
+### TypeScript Implementation: Gradient Descent Optimizer
+
+```typescript
+type Vec = number[];
+
+function gradientDescent(
+  f: (x: Vec) => number, grad: (x: Vec) => Vec,
+  initial: Vec, lr: number = 0.01, maxIter: number = 1000, tol: number = 1e-6
+): { x: Vec; fx: number; iterations: number } {
+  let x = [...initial];
+  for (let iter = 0; iter < maxIter; iter++) {
+    const g = grad(x);
+    const xNext = x.map((xi, i) => xi - lr * g[i]);
+    const step = Math.sqrt(xNext.reduce((s, xi, i) => s + (xi - x[i]) ** 2, 0));
+    x = xNext;
+    if (step < tol) return { x, fx: f(x), iterations: iter };
+  }
+  return { x, fx: f(x), iterations: maxIter };
+}
+
+// Minimize f(x,y) = x² + 2y²: gradient = [2x, 4y], min at (0,0)
+const quad = (x: Vec) => x[0] ** 2 + 2 * x[1] ** 2;
+const gradQuad = (x: Vec): Vec => [2 * x[0], 4 * x[1]];
+const { x: minPt, fx: minVal, iterations: iters } = gradientDescent(quad, gradQuad, [5, 3], 0.1, 500);
+console.log(`GD: min at (${minPt[0].toFixed(4)}, ${minPt[1].toFixed(4)}), f=${minVal.toFixed(6)}, iters=${iters}`);
+
+// Minimize Rosenbrock f(x,y) = (1-x)² + 100(y-x²)², known as banana function
+const rosenbrock = (x: Vec) => (1 - x[0]) ** 2 + 100 * (x[1] - x[0] ** 2) ** 2;
+const gradRosen = (x: Vec): Vec => [
+  -2 * (1 - x[0]) - 400 * x[0] * (x[1] - x[0] ** 2),
+  200 * (x[1] - x[0] ** 2)
+];
+const rosenResult = gradientDescent(rosenbrock, gradRosen, [0, 0], 0.001, 10000);
+console.log(`Rosenbrock: min at (${rosenResult.x[0].toFixed(4)}, ${rosenResult.x[1].toFixed(4)}), f=${rosenResult.fx.toExponential(3)}`);
+
+### TypeScript: Double and Triple Integrals via Riemann Sums
+
+```typescript
+function doubleIntegral(
+  f: (x: number, y: number) => number,
+  xMin: number, xMax: number,
+  yMin: (x: number) => number, yMax: (x: number) => number,
+  nx: number = 100, ny: number = 100
+): number {
+  const dx = (xMax - xMin) / nx;
+  let total = 0;
+  for (let i = 0; i < nx; i++) {
+    const x = xMin + (i + 0.5) * dx;
+    const yLow = yMin(x), yHigh = yMax(x);
+    const dy = (yHigh - yLow) / ny;
+    for (let j = 0; j < ny; j++) total += f(x, yLow + (j + 0.5) * dy) * dx * dy;
+  }
+  return total;
+}
+
+// ∫₀¹∫₀¹ (x² + y²) dy dx = 2/3 ≈ 0.6667
+const f2d = (x: number, y: number) => x * x + y * y;
+const r1 = doubleIntegral(f2d, 0, 1, () => 0, () => 1, 200, 200);
+console.log(`∬(x²+y²) over [0,1]²: ${r1.toFixed(4)} (expected: 0.6667)`);
+
+// ∬_D 1 dA over triangle: 0≤x≤1, 0≤y≤x → area = 1/2
+const triArea = doubleIntegral(() => 1, 0, 1, x => 0, x => x, 200, 200);
+console.log(`Triangle area: ${triArea.toFixed(4)} (expected: 0.5)`);
+
+function tripleIntegral(
+  f: (x: number, y: number, z: number) => number,
+  xMin: number, xMax: number,
+  yMin: (x: number) => number, yMax: (x: number) => number,
+  zMin: (x: number, y: number) => number, zMax: (x: number, y: number) => number,
+  nx = 40, ny = 40, nz = 40
+): number {
+  const dx = (xMax - xMin) / nx;
+  let total = 0;
+  for (let i = 0; i < nx; i++) {
+    const x = xMin + (i + 0.5) * dx;
+    const yl = yMin(x), yh = yMax(x); const dy = (yh - yl) / ny;
+    for (let j = 0; j < ny; j++) {
+      const y = yl + (j + 0.5) * dy;
+      const zl = zMin(x, y), zh = zMax(x, y); const dz = (zh - zl) / nz;
+      for (let k = 0; k < nz; k++) total += f(x, y, zl + (k + 0.5) * dz) * dx * dy * dz;
+    }
+  }
+  return total;
+}
+
+// Unit sphere volume: ∭ 1 dV = 4π/3 ≈ 4.18879
+const sphereVol = tripleIntegral(
+  () => 1, -1, 1,
+  x => -Math.sqrt(Math.max(0, 1 - x * x)), x => Math.sqrt(Math.max(0, 1 - x * x)),
+  (x, y) => -Math.sqrt(Math.max(0, 1 - x * x - y * y)), (x, y) => Math.sqrt(Math.max(0, 1 - x * x - y * y)),
+  30, 30, 30
+);
+console.log(`Sphere volume: ${sphereVol.toFixed(4)} (expected: ${(4 * Math.PI / 3).toFixed(4)})`);
+
+### TypeScript: Divergence and Curl of a Vector Field
+
+```typescript
+function divergence(F: (x: number, y: number, z: number) => [number, number, number], h: number = 1e-6) {
+  return (x: number, y: number, z: number): number => {
+    const [Fx, Fy, Fz] = F(x, y, z);
+    const [Fxx] = F(x + h, y, z); const [Fxy] = F(x - h, y, z);
+    const [, Fyy] = F(x, y + h, z); const [, Fys] = F(x, y - h, z);
+    const [, , Fzz] = F(x, y, z + h); const [, , Fzs] = F(x, y, z - h);
+    return (Fxx - Fxy + Fyy - Fys + Fzz - Fzs) / (2 * h);
+  };
+}
+
+function curl(F: (x: number, y: number, z: number) => [number, number, number], h: number = 1e-6) {
+  return (x: number, y: number, z: number): [number, number, number] => {
+    const [, Fy, Fz] = F(x, y, z);
+    const [, Fyp] = F(x, y + h, z); const [, Fym] = F(x, y - h, z);
+    const [, , Fzp] = F(x, y, z + h); const [, , Fzm] = F(x, y, z - h);
+    const [Fx, , Fzz] = F(x, y, z); const [Fxp] = F(x + h, y, z)[0]; const [Fxm] = F(x - h, y, z)[0];
+    const [Fxx] = F(x, y, z);
+    const curlX = (Fzp - Fzm - (Fyp - Fym)) / (2 * h);
+    const curlY = (Fxp - Fxm - (Fzz - Fzm)) / (2 * h);
+    const curlZ = (Fyp - Fym - (Fxp - Fxm)) / (2 * h);
+    return [curlX, curlY, curlZ];
+  };
+}
+
+// F = (-y, x, 0): divergence = 0, curl = (0, 0, 2)
+const F = (x: number, y: number, z: number): [number, number, number] => [-y, x, 0];
+console.log(`div F at (1,1,0): ${divergence(F)(1, 1, 0).toFixed(2)} (expected: 0)`);
+const c = curl(F)(1, 1, 0);
+console.log(`curl F at (1,1,0): (${c.map(v => v.toFixed(2)).join(", ")}) (expected: (0, 0, 2))`);
+```
+
 ## Summary
 
 - Partial derivatives compute rates of change with respect to one variable at a time

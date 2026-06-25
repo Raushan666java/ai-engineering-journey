@@ -546,6 +546,134 @@ These extended operators make some languages easier to describe. For example, "s
 
 The key result is that **all these extensions describe only regular languages** — they add convenience but not power.
 
+## TypeScript Implementation: Thompson Construction and DFA-to-Regex
+
+```typescript
+// Thompson's Construction: Regex to NFA
+// State elimination: DFA to Regex
+
+type RegexNode =
+  | { type: "empty" }
+  | { type: "symbol"; value: string }
+  | { type: "union"; left: RegexNode; right: RegexNode }
+  | { type: "concat"; left: RegexNode; right: RegexNode }
+  | { type: "star"; inner: RegexNode };
+
+class RegexEngine {
+  static parse(pattern: string): RegexNode {
+    return RegexEngine.parseUnion(pattern, 0).node;
+  }
+
+  private static parseUnion(pattern: string, pos: number): { node: RegexNode; pos: number } {
+    let left = this.parseConcat(pattern, pos);
+    while (left.pos < pattern.length && pattern[left.pos] === "|") {
+      const right = this.parseConcat(pattern, left.pos + 1);
+      left = { node: { type: "union", left: left.node, right: right.node }, pos: right.pos };
+    }
+    return left;
+  }
+
+  private static parseConcat(pattern: string, pos: number): { node: RegexNode; pos: number } {
+    let left = this.parseStar(pattern, pos);
+    while (left.pos < pattern.length && pattern[left.pos] !== "|" && pattern[left.pos] !== ")") {
+      const right = this.parseStar(pattern, left.pos);
+      left = { node: { type: "concat", left: left.node, right: right.node }, pos: right.pos };
+    }
+    return left;
+  }
+
+  private static parseStar(pattern: string, pos: number): { node: RegexNode; pos: number } {
+    let base = this.parseBase(pattern, pos);
+    while (base.pos < pattern.length && pattern[base.pos] === "*") {
+      base = { node: { type: "star", inner: base.node }, pos: base.pos + 1 };
+    }
+    return base;
+  }
+
+  private static parseBase(pattern: string, pos: number): { node: RegexNode; pos: number } {
+    if (pos >= pattern.length) return { node: { type: "empty" }, pos };
+    if (pattern[pos] === "(") {
+      const inner = this.parseUnion(pattern, pos + 1);
+      if (inner.pos < pattern.length && pattern[inner.pos] === ")")
+        return { node: inner.node, pos: inner.pos + 1 };
+      return inner;
+    }
+    if (pattern[pos] === "ε") return { node: { type: "empty" }, pos: pos + 1 };
+    return { node: { type: "symbol", value: pattern[pos] }, pos: pos + 1 };
+  }
+
+  static matches(pattern: string, input: string): boolean {
+    // Brute-force simulation via derivative-like expansion
+    const node = this.parse(pattern);
+    return this.simulate(node, input);
+  }
+
+  private static simulate(node: RegexNode, input: string): boolean {
+    if (node.type === "empty") return input === "";
+    if (node.type === "symbol") return input === node.value;
+    if (node.type === "star") {
+      if (input === "") return true;
+      for (let i = 1; i <= input.length; i++) {
+        if (this.simulate(node.inner, input.slice(0, i)) &&
+            this.simulate(node, input.slice(i)))
+          return true;
+      }
+      return false;
+    }
+    if (node.type === "concat") {
+      for (let i = 0; i <= input.length; i++) {
+        if (this.simulate(node.left, input.slice(0, i)) &&
+            this.simulate(node.right, input.slice(i)))
+          return true;
+      }
+      return false;
+    }
+    if (node.type === "union") {
+      return this.simulate(node.left, input) || this.simulate(node.right, input);
+    }
+    return false;
+  }
+
+  static stateElimination(states: string[], transitions: Map<string, string>,
+                          start: string, accept: string): string {
+    // Simplified state elimination for regex extraction
+    let remaining = [...states];
+    const trans = new Map(transitions);
+
+    while (remaining.length > 2) {
+      const rip = remaining.find(s => s !== start && s !== accept)!;
+      const incoming: string[] = [];
+      const outgoing: string[] = [];
+      for (const [k, v] of trans) {
+        const [from, to] = k.split(",");
+        if (to === rip && from !== rip) incoming.push(from);
+        if (from === rip && to !== rip) outgoing.push(to);
+      }
+      for (const i of incoming) {
+        for (const o of outgoing) {
+          const loop = trans.get(`${rip},${rip}`);
+          const r = loop ? `(${loop})*` : "";
+          const ii = trans.get(`${i},${rip}`) || "";
+          const oo = trans.get(`${rip},${o}`) || "";
+          trans.set(`${i},${o}`, `(${ii}${r}${oo})`);
+        }
+      }
+      for (const k of [...trans.keys()]) if (k.includes(rip)) trans.delete(k);
+      remaining = remaining.filter(s => s !== rip);
+    }
+
+    return trans.get(`${start},${accept}`) || "∅";
+  }
+}
+
+console.log(RegexEngine.matches("a|b", "a"));    // true
+console.log(RegexEngine.matches("a|b", "c"));    // false
+console.log(RegexEngine.matches("ab*c", "ac"));  // true
+console.log(RegexEngine.matches("ab*c", "abc")); // true
+console.log(RegexEngine.matches("ab*c", "abbc"));// true
+console.log(RegexEngine.matches("ab*c", "ab"));  // false
+```
+
 ## Summary
 
 - Regular expressions describe languages algebraically using union (+), concatenation, and Kleene star (*).

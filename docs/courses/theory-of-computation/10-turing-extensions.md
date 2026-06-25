@@ -570,6 +570,143 @@ Every context-free language can be expressed as the homomorphic image of the int
 **B)** Oracle machines create relativized complexity classes and identify proof barriers.
 </details>
 
+## TypeScript Implementation: NTM Branch Explorer and Universal TM
+
+```typescript
+// Nondeterministic TM Branch Explorer and Universal TM Concept
+
+type NTMTransition = {
+  read: string;
+  write: string;
+  direction: "L" | "R";
+  nextState: string;
+};
+
+class NondeterministicTM {
+  constructor(
+    public states: Set<string>,
+    public inputAlphabet: Set<string>,
+    public tapeAlphabet: Set<string>,
+    public transitions: Map<string, NTMTransition[]>,
+    public start: string,
+    public accept: string,
+    public reject: string
+  ) {}
+
+  private branch(
+    tape: string[],
+    head: number,
+    state: string,
+    depth: number,
+    maxDepth: number
+  ): boolean {
+    if (depth > maxDepth) return false;
+    if (state === this.accept) return true;
+    if (state === this.reject) return false;
+
+    const symbol = head < tape.length ? tape[head] : "⊔";
+    const key = `${state},${symbol}`;
+    const options = this.transitions.get(key) || [];
+
+    for (const option of options) {
+      const newTape = [...tape];
+      if (head >= newTape.length) newTape.push("⊔");
+      newTape[head] = option.write;
+      const newHead = option.direction === "L" ? Math.max(0, head - 1) : head + 1;
+      if (this.branch(newTape, newHead, option.nextState, depth + 1, maxDepth))
+        return true;
+    }
+    return false;
+  }
+
+  accepts(input: string, maxDepth: number = 10): boolean {
+    return this.branch(input.split(""), 0, this.start, 0, maxDepth);
+  }
+
+  exploreBranches(input: string, maxDepth: number = 5): string[][] {
+    const allPaths: string[][] = [];
+    this.dfsExplore(input.split(""), 0, this.start, [], allPaths, maxDepth);
+    return allPaths;
+  }
+
+  private dfsExplore(
+    tape: string[], head: number, state: string,
+    path: string[], allPaths: string[][], maxDepth: number
+  ): void {
+    if (path.length > maxDepth) return;
+    const symbol = head < tape.length ? tape[head] : "⊔";
+    const key = `${state},${symbol}`;
+    const options = this.transitions.get(key) || [];
+
+    if (options.length === 0) {
+      allPaths.push([...path, `${state}→halt`]);
+      return;
+    }
+
+    for (const opt of options) {
+      const step = `${state}→${opt.nextState} (read:${symbol},write:${opt.write},${opt.direction})`;
+      const newTape = [...tape];
+      if (head >= newTape.length) newTape.push("⊔");
+      newTape[head] = opt.write;
+      const newHead = opt.direction === "L" ? Math.max(0, head - 1) : head + 1;
+      this.dfsExplore(newTape, newHead, opt.nextState, [...path, step], allPaths, maxDepth);
+    }
+  }
+}
+
+class UniversalTM {
+  static encode(machineDescription: object): string {
+    // Simplified encoding: convert TM description to binary string
+    return JSON.stringify(machineDescription).split("").map(c =>
+      c.charCodeAt(0).toString(2).padStart(8, "0")
+    ).join("");
+  }
+
+  static simulate(encoding: string, input: string): { result: string; steps: number } {
+    // Conceptual UTM simulation — real UTMs parse the encoding, then simulate
+    const desc = JSON.parse(
+      encoding.match(/.{8}/g)!.map(b => String.fromCharCode(parseInt(b, 2))).join("")
+    );
+    const tm = new NondeterministicTM(
+      new Set(desc.states),
+      new Set(desc.inputAlphabet),
+      new Set(desc.tapeAlphabet),
+      new Map(Object.entries(desc.transitions)),
+      desc.start, desc.accept, desc.reject
+    );
+    const start = Date.now();
+    const accepted = tm.accepts(input, 20);
+    return { result: accepted ? "accept" : "reject or timeout", steps: Date.now() - start };
+  }
+
+  static churchTuringThesis(): string {
+    return "Church-Turing Thesis: Every effectively computable function " +
+      "can be computed by a Turing machine (or any equivalent model).";
+  }
+}
+
+const ntm = new NondeterministicTM(
+  new Set(["q0", "q1", "q2", "qAccept", "qReject"]),
+  new Set(["a", "b"]),
+  new Set(["a", "b", "⊔"]),
+  new Map([
+    ["q0,a", [{ read: "a", write: "X", direction: "R", nextState: "q0" },
+              { read: "a", write: "X", direction: "R", nextState: "q1" }]],
+    ["q0,⊔", [{ read: "⊔", write: "⊔", direction: "L", nextState: "qAccept" }]],
+    ["q1,b", [{ read: "b", write: "Y", direction: "R", nextState: "q1" },
+              { read: "b", write: "Y", direction: "R", nextState: "q2" }]],
+    ["q2,a", [{ read: "a", write: "Z", direction: "R", nextState: "qAccept" }]],
+    ["q2,⊔", [{ read: "⊔", write: "⊔", direction: "L", nextState: "qAccept" }]],
+  ]),
+  "q0", "qAccept", "qReject"
+);
+
+console.log(ntm.accepts("a"));     // true (guess q0→q1 path)
+const paths = ntm.exploreBranches("a", 3);
+console.log(`Found ${paths.length} computation paths`);
+console.log(UniversalTM.churchTuringThesis());
+```
+
 ## Summary
 
 - Recursive languages are decidable (TM always halts); RE languages are recognizable (TM may loop).

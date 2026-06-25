@@ -587,6 +587,107 @@ interface CoinbaseScript {
 **B) It allows replacing a stuck transaction with a higher-fee version.** RBF allows a user to broadcast a new transaction that spends the same inputs with a higher fee, replacing the original unconfirmed transaction and potentially getting it confirmed faster.
 </details>
 
+### TypeScript: Bitcoin Script Interpreter
+
+```typescript
+class ScriptInterpreter {
+  stack: (number | string)[] = [];
+  altStack: (number | string)[] = [];
+  opcodes: Map<number, () => void> = new Map();
+
+  constructor() {
+    this.opcodes.set(0x76, () => this.stack.push(this.stack[this.stack.length - 1]));
+    this.opcodes.set(0x87, () => { const a = this.stack.pop(); const b = this.stack.pop(); this.stack.push(a === b ? 1 : 0); });
+    this.opcodes.set(0x88, () => { const a = this.stack.pop(); const b = this.stack.pop(); if (a !== b) throw new Error("EQUALVERIFY failed"); });
+    this.opcodes.set(0xAC, () => { this.stack.push(1); });
+    this.opcodes.set(0x6A, () => this.stack.pop());
+  }
+
+  execute(bytecode: number[]): boolean {
+    for (const op of bytecode) {
+      if (op >= 0x01 && op <= 0x4B) {
+        const dataLen = op;
+        const data = bytecode.slice(bytecode.indexOf(op) + 1, bytecode.indexOf(op) + 1 + dataLen);
+        this.stack.push(data.join(","));
+        continue;
+      }
+      const handler = this.opcodes.get(op);
+      if (handler) handler();
+    }
+    return this.stack.pop() === 1 || this.stack.pop() === true;
+  }
+}
+```
+
+### TypeScript: Block Header Parser
+
+```typescript
+interface BitcoinBlockHeader {
+  version: number;
+  previousBlockHash: string;
+  merkleRoot: string;
+  timestamp: number;
+  bits: number;
+  nonce: number;
+  hash: string;
+}
+
+class BlockHeaderParser {
+  static parse(raw: Buffer): BitcoinBlockHeader {
+    let offset = 0;
+    const version = raw.readUInt32LE(offset); offset += 4;
+    const previousBlockHash = raw.subarray(offset, offset + 32).reverse().toString("hex"); offset += 32;
+    const merkleRoot = raw.subarray(offset, offset + 32).reverse().toString("hex"); offset += 32;
+    const timestamp = raw.readUInt32LE(offset); offset += 4;
+    const bits = raw.readUInt32LE(offset); offset += 4;
+    const nonce = raw.readUInt32LE(offset);
+    return { version, previousBlockHash, merkleRoot, timestamp, bits, nonce, hash: "" };
+  }
+
+  static difficultyFromBits(bits: number): number {
+    const exponent = bits >> 24;
+    const mantissa = bits & 0xFFFFFF;
+    const target = mantissa * 2 ** (8 * (exponent - 3));
+    const maxTarget = 0xFFFF * 2 ** (8 * (256 - 3 - 1));
+    return maxTarget / target;
+  }
+}
+```
+
+### TypeScript: Difficulty Adjustment Calculator
+
+```typescript
+class DifficultyAdjuster {
+  static readonly BLOCK_INTERVAL = 600;
+  static readonly RETARGET_INTERVAL = 2016;
+  static readonly MAX_ADJUSTMENT = 4;
+
+  static calculateNextTarget(
+    previousTarget: bigint,
+    actualTimespanSeconds: number
+  ): bigint {
+    const expected = BigInt(this.RETARGET_INTERVAL) * BigInt(this.BLOCK_INTERVAL);
+    let timespan = BigInt(Math.max(1, actualTimespanSeconds));
+    const maxTimespan = expected * BigInt(this.MAX_ADJUSTMENT);
+    const minTimespan = expected / BigInt(this.MAX_ADJUSTMENT);
+    if (timespan > maxTimespan) timespan = maxTimespan;
+    if (timespan < minTimespan) timespan = minTimespan;
+    return (previousTarget * timespan) / expected;
+  }
+
+  static estimateHashRate(
+    difficulty: number,
+    blockTimeSeconds: number
+  ): string {
+    const hashesPerBlock = difficulty * 2 ** 32;
+    const hashRate = hashesPerBlock / blockTimeSeconds;
+    if (hashRate > 1e12) return `${(hashRate / 1e12).toFixed(2)} TH/s`;
+    if (hashRate > 1e9) return `${(hashRate / 1e9).toFixed(2)} GH/s`;
+    return `${(hashRate / 1e6).toFixed(2)} MH/s`;
+  }
+}
+```
+
 ## Summary
 
 - Bitcoin is a P2P electronic cash system based on the UTXO model.

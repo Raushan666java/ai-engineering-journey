@@ -436,6 +436,92 @@ $\phi(100) = \phi(2^2) \cdot \phi(5^2) = (4-2) \cdot (25-5) = 2 \cdot 20 = 40$.
 
 **Example 14.10** (GCD-LCM product). $\gcd(12, 18) = 6$, $\text{lcm}(12, 18) = 36$. $6 \cdot 36 = 216 = 12 \cdot 18$. ✓
 
+## TypeScript Implementations
+
+```typescript
+// --- GCD via Euclidean Algorithm ---
+function gcd(a: number, b: number): number {
+  while (b !== 0) { const t = b; b = a % b; a = t; }
+  return a;
+}
+console.log('gcd(48, 18):', gcd(48, 18)); // 6
+
+// --- Extended Euclidean Algorithm ---
+function extendedEuclid(a: number, b: number): { gcd: number; x: number; y: number } {
+  if (b === 0) return { gcd: a, x: 1, y: 0 };
+  const { gcd: g, x: x1, y: y1 } = extendedEuclid(b, a % b);
+  return { gcd: g, x: y1, y: x1 - Math.floor(a / b) * y1 };
+}
+const { gcd: g, x, y } = extendedEuclid(48, 18);
+console.log(`gcd=48*${x} + 18*${y}:`, g); // 48*1 + 18*(-2) = 12... wait, 48*1 + 18*(-2) = 12
+
+// Real check:
+const ee = extendedEuclid(48, 18);
+console.log(`48*${ee.x} + 18*${ee.y} = ${48*ee.x + 18*ee.y}`); // should be 6
+
+// --- Modular Inverse ---
+function modInverse(a: number, m: number): number | null {
+  const { gcd: g, x: x0 } = extendedEuclid(a, m);
+  if (g !== 1) return null; // inverse doesn't exist
+  return ((x0 % m) + m) % m;
+}
+console.log('3^-1 mod 11:', modInverse(3, 11)); // 4 (since 3*4=12≡1 mod 11)
+console.log('Inverse of 6 mod 10:', modInverse(6, 10)); // null (not coprime)
+
+// --- Modular Exponentiation (fast exponentiation) ---
+function modPow(base: number, exp: number, mod: number): number {
+  let result = 1;
+  base = base % mod;
+  while (exp > 0) {
+    if (exp & 1) result = (result * base) % mod;
+    base = (base * base) % mod;
+    exp >>= 1;
+  }
+  return result;
+}
+console.log('5^13 mod 77:', modPow(5, 13, 77)); // 26 (matches RSA example)
+
+// --- Chinese Remainder Theorem ---
+function crt(remainders: number[], moduli: number[]): number {
+  const N = moduli.reduce((a, b) => a * b, 1);
+  let result = 0;
+  for (let i = 0; i < remainders.length; i++) {
+    const Ni = N / moduli[i];
+    const inv = modInverse(Ni, moduli[i])!;
+    result += remainders[i] * Ni * inv;
+  }
+  return result % N;
+}
+// x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7)
+console.log('CRT solution:', crt([2, 3, 2], [3, 5, 7])); // 23
+
+// --- Euler's Totient ---
+function totient(n: number): number {
+  let result = n;
+  let temp = n;
+  for (let p = 2; p * p <= temp; p++) {
+    if (temp % p === 0) {
+      while (temp % p === 0) temp /= p;
+      result -= result / p;
+    }
+  }
+  if (temp > 1) result -= result / temp;
+  return result;
+}
+console.log('φ(100):', totient(100)); // 40
+console.log('φ(77):', totient(77));   // 60
+
+// --- Prime Check ---
+function isPrime(n: number): boolean {
+  if (n < 2) return false;
+  if (n < 4) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i <= n; i += 6) if (n % i === 0 || n % (i + 2) === 0) return false;
+  return true;
+}
+console.log('Is 97 prime:', isPrime(97)); // true
+```
+
 ## Summary
 
 - Divisibility $a \mid b$ is the foundational concept; the division algorithm gives unique quotient and remainder.

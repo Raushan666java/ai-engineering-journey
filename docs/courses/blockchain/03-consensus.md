@@ -567,6 +567,103 @@ const comparisonTable: ConsensusComparison[] = [
 console.table(comparisonTable);
 ```
 
+### TypeScript: Nakamoto Consensus Simulator with Fork Resolution
+
+```typescript
+import { createHash } from "node:crypto";
+
+const sha256 = (d: string): string => createHash("sha256").update(d).digest("hex");
+
+interface NakamotoBlock {
+  index: number; hash: string; prevHash: string; miner: string; nonce: number; timestamp: number;
+}
+
+class NakamotoSimulator {
+  chains: Map<string, NakamotoBlock[]> = new Map();
+  heads: Map<string, string> = new Map();
+
+  constructor() {
+    const genesis: NakamotoBlock = { index: 0, hash: "0".repeat(64), prevHash: "", miner: "satoshin", nonce: 0, timestamp: Date.now() };
+    this.chains.set(genesis.hash, [genesis]);
+    this.heads.set("node1", genesis.hash);
+    this.heads.set("node2", genesis.hash);
+  }
+
+  mine(node: string, difficulty = 4): NakamotoBlock {
+    const headHash = this.heads.get(node)!;
+    const head = this.chains.get(headHash)!;
+    const tip = head[head.length - 1];
+    let nonce = 0, hash = "";
+    do { hash = sha256(tip.hash + node + nonce++); }
+    while (!hash.startsWith("0".repeat(difficulty)));
+    const block: NakamotoBlock = { index: tip.index + 1, hash, prevHash: tip.hash, miner: node, nonce, timestamp: Date.now() };
+    this.chains.set(hash, [...head, block]);
+    this.heads.set(node, hash);
+    return block;
+  }
+
+  resolveForks(): NakamotoBlock[] {
+    let longest: NakamotoBlock[] = [];
+    for (const [hash] of this.chains) {
+      const chain = this.chains.get(hash)!;
+      if (chain.length > longest.length) longest = chain;
+    }
+    for (const [node] of this.heads) this.heads.set(node, longest[longest.length - 1].hash);
+    return longest;
+  }
+
+  simulateAttack(attackerNode: string, honestNode: string, blocks: number, difficulty = 4): boolean {
+    for (let i = 0; i < blocks; i++) this.mine(attackerNode, difficulty);
+    for (let i = 0; i < blocks; i++) this.mine(honestNode, difficulty);
+    const honestHead = this.chains.get(this.heads.get(honestNode)!)!;
+    const attackerHead = this.chains.get(this.heads.get(attackerNode)!)!;
+    return attackerHead.length > honestHead.length;
+  }
+}
+```
+
+### TypeScript: Finality Gadget (Casper-Style)
+
+```typescript
+interface Checkpoint {
+  epoch: number; blockHash: string; justified: boolean; finalized: boolean;
+}
+
+class FinalityGadget {
+  checkpoints: Map<number, Checkpoint> = new Map();
+  totalValidators: number;
+
+  constructor(totalValidators: number) {
+    this.totalValidators = totalValidators;
+    this.checkpoints.set(0, { epoch: 0, blockHash: "0xgenesis", justified: true, finalized: true });
+  }
+
+  proposeCheckpoint(epoch: number, blockHash: string): Checkpoint {
+    const cp: Checkpoint = { epoch, blockHash, justified: false, finalized: false };
+    this.checkpoints.set(epoch, cp);
+    return cp;
+  }
+
+  attest(epoch: number, attestations: number): Checkpoint {
+    const cp = this.checkpoints.get(epoch);
+    if (!cp) throw new Error("Checkpoint not found");
+    const required = Math.ceil((2 / 3) * this.totalValidators);
+    if (attestations >= required) {
+      cp.justified = true;
+      const prev = this.checkpoints.get(epoch - 1);
+      if (prev && prev.justified && prev.epoch === epoch - 1) {
+        cp.finalized = true;
+      }
+    }
+    return cp;
+  }
+
+  isFinalized(epoch: number): boolean {
+    return this.checkpoints.get(epoch)?.finalized ?? false;
+  }
+}
+```
+
 ## Summary
 
 - Consensus mechanisms enable distributed nodes to agree on the state of a ledger.

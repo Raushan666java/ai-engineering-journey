@@ -542,6 +542,55 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: CSS Specificity Calculator & Layout Simulator
+
+```typescript
+class SpecificityCalc {
+  static compute(sel: string): { id: number; class: number; tag: number } {
+    return {
+      id: (sel.match(/#[\w-]+/g) || []).length,
+      class: (sel.match(/\.[\w-]+/g) || []).length + (sel.match(/\[[^\]]+\]/g) || []).length,
+      tag: (sel.match(/(?:^|[^.#\[:\s])([a-z][\w-]*)(?=[\s,.#\[:\s]|$)/gi) || []).length,
+    };
+  }
+  static compare(a: string, b: string): string {
+    const score = (s: string) => {
+      const c = SpecificityCalc.compute(s);
+      return c.id * 100 + c.class * 10 + c.tag;
+    };
+    const sa = score(a), sb = score(b);
+    return sa > sb ? `${a} wins (${sa})` : sb > sa ? `${b} wins (${sb})` : "Equal";
+  }
+}
+
+class FlexboxSimulator {
+  static distributeItems(container: number, items: number[], gap: number): number[] {
+    const totalGap = gap * (items.length - 1);
+    const available = container - totalGap;
+    const totalSize = items.reduce((a, b) => a + b, 0);
+    return items.map(s => (s / totalSize) * available);
+  }
+  static wrap(items: number[], maxWidth: number): number[][] {
+    const rows: number[][] = [[]];
+    items.forEach(s => {
+      const row = rows[rows.length - 1];
+      row.reduce((a, b) => a + b, 0) + s > maxWidth ? rows.push([s]) : row.push(s);
+    });
+    return rows.filter(r => r.length);
+  }
+}
+
+class GridSimulator {
+  static templateColumns(cols: number, gap: number, width: number): number {
+    return (width - gap * (cols - 1)) / cols;
+  }
+}
+
+console.log("Specificity:", SpecificityCalc.compare("div .container#main", "nav ul li"));
+console.log("Flex:", FlexboxSimulator.distributeItems(800, [200, 150, 100], 20));
+console.log("Grid:", GridSimulator.templateColumns(3, 16, 1200));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** CSS custom properties enable maintainable, themeable stylesheets that update at runtime.

@@ -667,6 +667,48 @@ flowchart LR
 
 16. "were meeting" → "was meeting", "had rang" → "had rung", "evacuate" → "evacuated", "was left" → "were left" | 17. Wordy, using too many words | 18. S → Q → R → P | 19. brought, were established, leading, were | 20. Depends on passage
 
+### TypeScript: Cloze Test Generator & Reading Comprehension Analyzer
+
+```typescript
+class ClozeGenerator {
+  static create(text: string, gapCount: number): string[] {
+    const words = text.split(/\s+/);
+    const indices = new Set<number>();
+    while (indices.size < Math.min(gapCount, words.length))
+      indices.add(Math.floor(Math.random() * words.length));
+    return words.map((w, i) => indices.has(i) ? "______" : w);
+  }
+  static score(original: string, filled: string): number {
+    return original.toLowerCase().split(/\s+/)
+      .reduce((a, w, i) => a + (w === filled.toLowerCase().split(/\s+/)[i] ? 1 : 0), 0);
+  }
+}
+
+class ParaJumbleValidator {
+  static score(proposed: string[], correct: string[]): number {
+    return proposed.reduce((a, p, i) => a + (p === correct[i] ? 1 : 0), 0);
+  }
+  static validateSequence(paragraphs: string[]): string[] {
+    const starters = paragraphs.filter(p => /^(The|This|In|A|An|When)/.test(p));
+    const connectors = paragraphs.filter(p => /^(However|Therefore|Moreover|Furthermore|Thus)/.test(p));
+    return [...starters, ...paragraphs.filter(p => !starters.includes(p) && !connectors.includes(p)), ...connectors];
+  }
+}
+
+class SynonymFinder {
+  static thesaurus: Record<string, string[]> = {
+    good: ["excellent", "superior", "admirable", "commendable"],
+    bad: ["inferior", "poor", "substandard", "deficient"],
+    big: ["enormous", "immense", "colossal", "vast"],
+    small: ["tiny", "minute", "compact", "diminutive"],
+  };
+  static synonyms(word: string): string[] { return SynonymFinder.thesaurus[word.toLowerCase()] ?? ["Not found"]; }
+}
+
+console.log("Cloze:", ClozeGenerator.create("Artificial intelligence transforms industries through automation", 3).join(" "));
+console.log("Synonyms:", SynonymFinder.synonyms("good"));
+```
+
 ## Summary
 
 - Subject-verb agreement: identify the true subject; ignore intervening phrases

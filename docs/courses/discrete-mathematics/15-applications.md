@@ -579,6 +579,126 @@ Wait, let me recalculate: items 1 (2,3) + 2 (3,4) + 3 (4,5) is weight 9 > 8. Ite
 
 **Example 15.10** (DFA for email validation). While a full email regex is complex, a simplified DFA can check `user@domain.tld` form: state machine with states for local part, @, domain, ., tld.
 
+## TypeScript Implementations
+
+```typescript
+// --- Huffman Coding ---
+class HuffmanNode {
+  constructor(
+    public char: string | null,
+    public freq: number,
+    public left: HuffmanNode | null = null,
+    public right: HuffmanNode | null = null
+  ) {}
+}
+function buildHuffmanTree(freqs: Map<string, number>): HuffmanNode {
+  const heap: HuffmanNode[] = [];
+  for (const [char, freq] of freqs) heap.push(new HuffmanNode(char, freq));
+  heap.sort((a, b) => a.freq - b.freq);
+  while (heap.length > 1) {
+    const a = heap.shift()!, b = heap.shift()!;
+    const parent = new HuffmanNode(null, a.freq + b.freq, a, b);
+    heap.push(parent);
+    heap.sort((x, y) => x.freq - y.freq);
+  }
+  return heap[0];
+}
+function huffmanCodes(node: HuffmanNode, prefix = ''): Map<string, string> {
+  const codes = new Map<string, string>();
+  if (node.char !== null) codes.set(node.char, prefix);
+  if (node.left) huffmanCodes(node.left, prefix + '0').forEach((v, k) => codes.set(k, v));
+  if (node.right) huffmanCodes(node.right, prefix + '1').forEach((v, k) => codes.set(k, v));
+  return codes;
+}
+const freqMap = new Map([['A',45],['B',13],['C',12],['D',16],['E',9],['F',5]]);
+const huffTree = buildHuffmanTree(freqMap);
+console.log('Huffman codes:', [...huffmanCodes(huffTree)]);
+
+// --- Hamming (7,4) Error-Correcting Code ---
+function hammingEncode(data: Bit[]): Bit[] {
+  const d = data; // d0..d3
+  const p1 = XOR(XOR(d[0], d[1]), d[3]);
+  const p2 = XOR(XOR(d[0], d[2]), d[3]);
+  const p3 = XOR(XOR(d[1], d[2]), d[3]);
+  return [p1, p2, d[0], p3, d[1], d[2], d[3]];
+}
+function hammingDecode(codeword: Bit[]): { data: Bit[]; errorPosition: number } {
+  const p1 = XOR(XOR(XOR(codeword[2], codeword[4]), codeword[6]), codeword[0]);
+  const p2 = XOR(XOR(XOR(codeword[2], codeword[5]), codeword[6]), codeword[1]);
+  const p3 = XOR(XOR(XOR(codeword[4], codeword[5]), codeword[6]), codeword[3]);
+  const errorPos = p1 + p2 * 2 + p3 * 4 - 1;
+  return { data: [codeword[2], codeword[4], codeword[5], codeword[6]], errorPosition: errorPos };
+}
+const encoded = hammingEncode([1, 0, 1, 1]);
+console.log('Hamming encoded:', encoded);
+// Single-bit error correction:
+const corrupted: Bit[] = [...encoded]; corrupted[2] = 0; // flip bit 2
+const { data, errorPosition } = hammingDecode(corrupted);
+console.log('Corrected data:', data, 'error at:', errorPosition); // [1,0,1,1], error at 2
+
+// --- Ford-Fulkerson (Max Flow) ---
+function fordFulkerson(graph: number[][], source: number, sink: number): number {
+  const n = graph.length;
+  const residual = graph.map(row => [...row]);
+  const parent = new Array(n).fill(-1);
+  let maxFlow = 0;
+
+  function bfs(): boolean {
+    parent.fill(-1);
+    parent[source] = source;
+    const queue = [source];
+    while (queue.length) {
+      const u = queue.shift()!;
+      for (let v = 0; v < n; v++) {
+        if (parent[v] === -1 && residual[u][v] > 0) { parent[v] = u; queue.push(v); }
+      }
+    }
+    return parent[sink] !== -1;
+  }
+
+  while (bfs()) {
+    let flow = Infinity;
+    for (let v = sink; v !== source; v = parent[v]) flow = Math.min(flow, residual[parent[v]][v]);
+    for (let v = sink; v !== source; v = parent[v]) {
+      residual[parent[v]][v] -= flow;
+      residual[v][parent[v]] += flow;
+    }
+    maxFlow += flow;
+  }
+  return maxFlow;
+}
+const flowGraph = [
+  [0, 16, 13, 0, 0, 0],
+  [0, 0, 10, 12, 0, 0],
+  [0, 4, 0, 0, 14, 0],
+  [0, 0, 9, 0, 0, 20],
+  [0, 0, 0, 7, 0, 4],
+  [0, 0, 0, 0, 0, 0]
+];
+console.log('Max flow:', fordFulkerson(flowGraph, 0, 5)); // 23
+
+// --- Stable Matching (Gale-Shapley) ---
+function stableMatch(prefsMen: number[][], prefsWomen: number[][]): Map<number, number> {
+  const n = prefsMen.length;
+  const freeMen = new Set([...Array(n).keys()]);
+  const nextProposal = new Array(n).fill(0);
+  const currentMatch = new Map<number, number>(); // woman -> man
+  const womenRank = prefsWomen.map(p => { const r: number[] = []; p.forEach((m,i) => r[m]=i); return r; });
+
+  while (freeMen.size > 0) {
+    const m = freeMen.values().next().value as number;
+    const w = prefsMen[m][nextProposal[m]++];
+    if (!currentMatch.has(w)) { currentMatch.set(w, m); freeMen.delete(m); }
+    else if (womenRank[w][m] < womenRank[w][currentMatch.get(w)!]) {
+      freeMen.delete(m);
+      freeMen.add(currentMatch.get(w)!);
+      currentMatch.set(w, m);
+    }
+  }
+  return currentMatch;
+}
+```
+
 ## Summary
 
 - Discrete mathematics provides the foundation for virtually all of computer science.

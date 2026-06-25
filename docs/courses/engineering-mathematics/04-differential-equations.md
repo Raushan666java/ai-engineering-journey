@@ -584,6 +584,83 @@ console.log(`Day 100: S=${sy[100][0].toFixed(3)}, I=${sy[100][1].toFixed(3)}, R=
 // At R₀=3, ~90% of population gets infected before epidemic ends
 ```
 
+### TypeScript Implementation: Runge-Kutta 4 System Solver
+
+```typescript
+type ODESystem = (t: number, y: number[]) => number[];
+
+function rk4Step(f: ODESystem, t: number, y: number[], h: number): number[] {
+  const n = y.length;
+  const k1 = f(t, y);
+  const y2 = y.map((yi, i) => yi + 0.5 * h * k1[i]); const k2 = f(t + 0.5 * h, y2);
+  const y3 = y.map((yi, i) => yi + 0.5 * h * k2[i]); const k3 = f(t + 0.5 * h, y3);
+  const y4 = y.map((yi, i) => yi + h * k3[i]);       const k4 = f(t + h, y4);
+  return y.map((yi, i) => yi + (h / 6) * (k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i]));
+}
+
+function solveODE(f: ODESystem, t0: number, y0: number[], h: number, steps: number) {
+  const t = [t0], y = [y0];
+  for (let i = 0; i < steps; i++) { y.push(rk4Step(f, t[i], y[i], h)); t.push(t[i] + h); }
+  return { t, y };
+}
+
+// Predator-Prey (Lotka-Volterra): dR/dt = αR - βRF, dF/dt = δRF - γF
+const lotkaVolterra = (α: number, β: number, δ: number, γ: number) =>
+  (_t: number, y: number[]): number[] => [α * y[0] - β * y[0] * y[1], δ * y[0] * y[1] - γ * y[1]];
+
+const { t: lvT, y: pop } = solveODE(lotkaVolterra(0.1, 0.02, 0.01, 0.1), 0, [40, 9], 0.5, 200);
+console.log("Predator-Prey (Lotka-Volterra):");
+console.log(`  t=0:   R=${pop[0][0].toFixed(1)} F=${pop[0][1].toFixed(1)}`);
+console.log(`  t=25:  R=${pop[50][0].toFixed(1)} F=${pop[50][1].toFixed(1)}`);
+console.log(`  t=50:  R=${pop[100][0].toFixed(1)} F=${pop[100][1].toFixed(1)}`);
+console.log(`  t=100: R=${pop[200][0].toFixed(1)} F=${pop[200][1].toFixed(1)}`);
+// Equilibrium: R* = γ/δ = 10, F* = α/β = 5
+console.log(`  Equilibrium: R*=10, F*=5 (pure imaginary eigenvalues → persistent oscillations)`);
+
+// Simple harmonic oscillator: y'' + ω²y = 0 → system: y₀' = y₁, y₁' = -ω²y₀
+const harmonic = (ω: number) => (_t: number, y: number[]): number[] => [y[1], -ω * ω * y[0]];
+const { t: hT, y: hY } = solveODE(harmonic(2), 0, [1, 0], 0.01, 630);  // ω=2 → period = π ≈ 3.14
+const period = hT[630];  // Full cycle ≈ π
+console.log(`Harmonic oscillator: period ≈ ${period.toFixed(4)} (expected: ${Math.PI.toFixed(4)})`);
+console.log(`  Amplitude after one period: ${hY[630][0].toFixed(4)} (expected: 1.0)`);
+
+// Damped spring: y'' + 2ζω y' + ω²y = 0 → system
+// ζ = 0.1 (underdamped), ω = 2
+const damped = (ζ: number, ω: number) => (_t: number, y: number[]): number[] => [y[1], -2 * ζ * ω * y[1] - ω * ω * y[0]];
+const { y: dY } = solveODE(damped(0.1, 2), 0, [1, 0], 0.01, 500);
+console.log(`Damped spring at t=5: y=${dY[500][0].toFixed(4)} (amplitude decaying over time)`);
+
+### TypeScript: Euler's Method for First-Order ODEs
+
+```typescript
+function eulerMethod(f: (t: number, y: number) => number, t0: number, y0: number, h: number, steps: number) {
+  const t = [t0], y = [y0];
+  for (let i = 0; i < steps; i++) {
+    y.push(y[i] + h * f(t[i], y[i]));
+    t.push(t[i] + h);
+  }
+  return { t, y };
+}
+
+// RC circuit: dV/dt = (V_in - V) / (RC) with step input V_in = 1, RC = 1
+// Analytic: V(t) = 1 - e^{-t}
+const rcCircuit = (_t: number, V: number) => (1 - V);  // RC = 1, V_in = 1
+const { y: vOut } = eulerMethod(rcCircuit, 0, 0, 0.05, 100);
+console.log("RC Circuit (Euler, h=0.05):");
+console.log(`  t=0.5: V=${vOut[10].toFixed(4)} (exact: ${(1 - Math.exp(-0.5)).toFixed(4)})`);
+console.log(`  t=1.0: V=${vOut[20].toFixed(4)} (exact: ${(1 - Math.exp(-1)).toFixed(4)})`);
+console.log(`  t=5.0: V=${vOut[100].toFixed(4)} (exact: ${(1 - Math.exp(-5)).toFixed(4)})`);
+
+// Logistic growth: dP/dt = rP(1 - P/K), r=0.5, K=100
+// Analytic solution: P(t) = K / (1 + (K/P₀ - 1)e^{-rt})
+const logistic = (_t: number, P: number) => 0.5 * P * (1 - P / 100);
+const { y: popLog } = eulerMethod(logistic, 0, 10, 0.1, 100);
+console.log("Logistic Growth (Euler):");
+console.log(`  t=0: P=${popLog[0].toFixed(1)}`);
+console.log(`  t=5: P=${popLog[50].toFixed(1)} (analytic: ${(100 / (1 + (100 / 10 - 1) * Math.exp(-0.5 * 5))).toFixed(1)})`);
+console.log(`  t=10: P=${popLog[100].toFixed(1)} (approaching K=100)`);
+```
+
 ## Summary
 
 - First-order ODEs are classified into separable, linear, exact, Bernoulli, and homogeneous types

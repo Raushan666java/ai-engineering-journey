@@ -569,6 +569,137 @@ class TcoCalculator {
 }
 ```
 
+### TypeScript: Well-Architected Framework Scorer
+
+```typescript
+interface PillarScore {
+  pillar: string;
+  score: number;
+  maxScore: number;
+  findings: { question: string; answer: boolean; weight: number }[];
+  riskLevel: "low" | "medium" | "high";
+}
+
+class WellArchitectedScorer {
+  private pillars: PillarScore[] = [];
+
+  constructor() {
+    this.pillars = [
+      { pillar: "Operational Excellence", score: 0, maxScore: 0, findings: [], riskLevel: "low" },
+      { pillar: "Security", score: 0, maxScore: 0, findings: [], riskLevel: "low" },
+      { pillar: "Reliability", score: 0, maxScore: 0, findings: [], riskLevel: "low" },
+      { pillar: "Performance Efficiency", score: 0, maxScore: 0, findings: [], riskLevel: "low" },
+      { pillar: "Cost Optimization", score: 0, maxScore: 0, findings: [], riskLevel: "low" },
+      { pillar: "Sustainability", score: 0, maxScore: 0, findings: [], riskLevel: "low" },
+    ];
+  }
+
+  addFinding(pillarName: string, question: string, answer: boolean, weight: number): void {
+    const pillar = this.pillars.find((p) => p.pillar === pillarName);
+    if (!pillar) return;
+    pillar.findings.push({ question, answer, weight });
+    pillar.maxScore += weight;
+    if (answer) pillar.score += weight;
+  }
+
+  private calculateRiskLevel(percentage: number): "low" | "medium" | "high" {
+    if (percentage >= 80) return "low";
+    if (percentage >= 50) return "medium";
+    return "high";
+  }
+
+  evaluate(): { pillars: PillarScore[]; overallScore: number; overallRisk: "low" | "medium" | "high"; recommendations: string[] } {
+    const recommendations: string[] = [];
+
+    for (const pillar of this.pillars) {
+      const pct = pillar.maxScore > 0 ? (pillar.score / pillar.maxScore) * 100 : 0;
+      pillar.riskLevel = this.calculateRiskLevel(pct);
+
+      if (pct < 80) {
+        const gaps = pillar.findings.filter((f) => !f.answer).map((f) => f.question);
+        recommendations.push(`${pillar.pillar} (${Math.round(pct)}%): ${gaps.slice(0, 2).join("; ")}`);
+      }
+    }
+
+    const totalScore = this.pillars.reduce((s, p) => s + p.score, 0);
+    const totalMax = this.pillars.reduce((s, p) => s + p.maxScore, 0);
+    const overallScore = totalMax > 0 ? Math.round((totalScore / totalMax) * 100) : 0;
+    const overallRisk = this.calculateRiskLevel(overallScore);
+
+    return { pillars: this.pillars, overallScore, overallRisk, recommendations };
+  }
+}
+
+const reviewer = new WellArchitectedScorer();
+reviewer.addFinding("Operational Excellence", "Are runbooks documented and tested?", true, 20);
+reviewer.addFinding("Operational Excellence", "Is infrastructure deployed via CI/CD?", true, 25);
+reviewer.addFinding("Operational Excellence", "Are there automated rollback procedures?", false, 15);
+reviewer.addFinding("Security", "Is encryption enabled at rest?", true, 25);
+reviewer.addFinding("Security", "Are IAM roles scoped to least privilege?", false, 25);
+reviewer.addFinding("Reliability", "Is the application deployed across multiple AZs?", true, 30);
+reviewer.addFinding("Reliability", "Are there automated failover procedures?", true, 25);
+reviewer.addFinding("Cost Optimization", "Are unused resources identified and removed?", false, 20);
+reviewer.addFinding("Cost Optimization", "Are reserved instances used for baseline capacity?", false, 15);
+
+const result = reviewer.evaluate();
+console.log("Overall Well-Architected score:", result.overallScore, "/ 100 (risk:", result.overallRisk + ")");
+result.recommendations.forEach((r) => console.log("  -", r));
+```
+
+### TypeScript: HA/DR Cost Comparator
+
+```typescript
+interface DRStrategy {
+  name: string;
+  setupCost: number;
+  monthlyCost: number;
+  rto: string;
+  rpo: string;
+  complexity: "low" | "medium" | "high";
+  description: string;
+}
+
+class DRCostComparator {
+  private strategies: DRStrategy[] = [
+    { name: "Backup & Restore", setupCost: 1000, monthlyCost: 500, rto: "24h", rpo: "24h", complexity: "low", description: "Daily backups to S3 Glacier" },
+    { name: "Pilot Light", setupCost: 5000, monthlyCost: 2000, rto: "2h", rpo: "1h", complexity: "medium", description: "Core services running in DR region" },
+    { name: "Warm Standby", setupCost: 15000, monthlyCost: 8000, rto: "15min", rpo: "5min", complexity: "medium", description: "Scaled-down prod in DR region" },
+    { name: "Multi-Site Active/Active", setupCost: 50000, monthlyCost: 25000, rto: "<1min", rpo: "near-zero", complexity: "high", description: "Full prod in two regions" },
+  ];
+
+  compare(requirements: { maxRTO: string; maxRPO: string; budget: number }): DRStrategy[] {
+    const parseTime = (t: string): number => {
+      if (t.endsWith("h")) return parseInt(t) * 60;
+      if (t.endsWith("min")) return parseInt(t);
+      if (t.includes("<")) return 0;
+      return 99999;
+    };
+
+    const rtoReq = parseTime(requirements.maxRTO);
+    const qualifying = this.strategies
+      .filter((s) => parseTime(s.rto) <= rtoReq && s.monthlyCost <= requirements.budget)
+      .sort((a, b) => parseTime(a.rto) - parseTime(b.rto));
+
+    return qualifying;
+  }
+
+  tcoOverYears(strategyName: string, years: number): { name: string; year1: number; year3: number; year5: number } {
+    const s = this.strategies.find((s) => s.name === strategyName)!;
+    return {
+      name: s.name,
+      year1: s.setupCost + s.monthlyCost * 12,
+      year3: s.setupCost + s.monthlyCost * 36,
+      year5: s.setupCost + s.monthlyCost * 60,
+    };
+  }
+}
+
+const dr = new DRCostComparator();
+const viable = dr.compare({ maxRTO: "2h", maxRPO: "1h", budget: 10000 });
+console.log("Viable DR strategies:", viable.map((s) => s.name).join(", "));
+console.log("5-year TCO:", JSON.stringify(dr.tcoOverYears("Pilot Light", 5), null, 2));
+```
+
 ## Summary
 
 - The Well-Architected Framework has 6 pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.

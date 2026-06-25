@@ -729,6 +729,61 @@ with ProcessPoolExecutor(max_workers=4) as ex:
 - memory limit
 - process count
 
+```typescript
+// Chapter 21: TypeScript Concurrency Equivalents
+// Python: threading → TypeScript: Worker threads
+import { Worker, isMainThread, parentPort, workerData } from "node:worker_threads";
+
+// Python: ThreadPoolExecutor → TypeScript: Worker pool pattern
+function runInWorker(data: number): Promise<number> {
+  return new Promise((resolve, reject) => {
+    const worker = new Worker(new URL(import.meta.url), {
+      workerData: data,
+    });
+    worker.on("message", resolve);
+    worker.on("error", reject);
+  });
+}
+
+if (!isMainThread) {
+  // Worker code (Python equivalent: def worker(x): return x * x)
+  const result = (workerData as number) ** 2;
+  parentPort!.postMessage(result);
+}
+
+// Python: asyncio → TypeScript: async/await (first-class)
+async function fetchMultiple(urls: string[]): Promise<unknown[]> {
+  const results = await Promise.all(
+    urls.map(async (url) => {
+      const res = await fetch(url);
+      return res.json();
+    })
+  );
+  return results;
+}
+// Python equivalent: asyncio.gather(*[fetch(url) for url in urls])
+
+// Python: concurrent.futures.ProcessPoolExecutor
+// TypeScript: child_process.fork() for CPU-bound work
+import { fork } from "node:child_process";
+
+function runInProcess(script: string, data: unknown): Promise<unknown> {
+  return new Promise((resolve, reject) => {
+    const child = fork(script);
+    child.send(data);
+    child.on("message", resolve);
+    child.on("error", reject);
+  });
+}
+
+// Python: multiprocessing.Queue → TypeScript: MessageChannel
+const { MessageChannel } = require("node:worker_threads");
+const channel = new MessageChannel();
+
+// Python: GIL has no TypeScript equivalent
+// Node.js uses a single thread for JavaScript but offloads I/O to libuv
+// CPU-bound work blocks the event loop — use Worker threads or child processes
+```
 
 ## Summary
 

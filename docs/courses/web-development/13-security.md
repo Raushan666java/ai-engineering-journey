@@ -612,6 +612,61 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: CSP Builder & Input Sanitizer
+
+```typescript
+class CSPBuilder {
+  private directives: Record<string, string[]> = {};
+
+  add(directive: string, ...sources: string[]): this {
+    this.directives[directive] = sources;
+    return this;
+  }
+  build(): string {
+    return Object.entries(this.directives)
+      .map(([k, v]) => `${k} ${v.join(" ")}`).join("; ");
+  }
+  static strict(): string {
+    return new CSPBuilder()
+      .add("default-src", "'self'")
+      .add("script-src", "'self'", "'unsafe-inline'", "'strict-dynamic'")
+      .add("style-src", "'self'", "'unsafe-inline'")
+      .add("img-src", "'self'", "data:", "https:")
+      .add("connect-src", "'self'")
+      .add("font-src", "'self'")
+      .add("frame-ancestors", "'none'")
+      .build();
+  }
+}
+
+class InputSanitizer {
+  static escapeHTML(str: string): string {
+    const map: Record<string, string> = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#x27;" };
+    return str.replace(/[&<>"']/g, c => map[c]);
+  }
+  static escapeShell(str: string): string {
+    return str.replace(/[;&|`$(){}[\]!#~*?\\<>]/g, "");
+  }
+  static sanitizeSQL(str: string): string {
+    return str.replace(/[';\\--]/g, "");
+  }
+}
+
+class RateLimiter {
+  private hits = new Map<string, number[]>();
+  check(key: string, max: number, windowMs: number): boolean {
+    const now = Date.now();
+    const timestamps = (this.hits.get(key) || []).filter(t => now - t < windowMs);
+    timestamps.push(now);
+    this.hits.set(key, timestamps);
+    return timestamps.length <= max;
+  }
+}
+
+console.log("CSP:", CSPBuilder.strict());
+console.log("Escaped:", InputSanitizer.escapeHTML("<script>alert('xss')</script>"));
+```
+
 ## Summary
 
 Web security requires defense in depth: parameterized queries prevent SQL injection, output escaping prevents XSS, CSRF tokens and SameSite cookies protect cross-site requests, CSP headers restrict resource origins, rate limiting prevents abuse, and input validation ensures data integrity at every layer.

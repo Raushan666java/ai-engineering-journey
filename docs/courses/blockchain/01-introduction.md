@@ -580,6 +580,83 @@ class MerkleTree {
 }
 ```
 
+### TypeScript: UTXO Tracking Blockchain with Transaction Validation
+
+```typescript
+import { createHash } from "node:crypto";
+
+const sha256 = (d: string): string => createHash("sha256").update(d).digest("hex");
+
+interface UTXO {
+  txid: string; outIndex: number; amount: number; owner: string;
+}
+
+class Transaction {
+  constructor(
+    public inputs: { txid: string; outIndex: number; sig: string }[],
+    public outputs: { amount: number; owner: string }[],
+    public id: string = ""
+  ) {
+    this.id = id || sha256(JSON.stringify(inputs) + JSON.stringify(outputs));
+  }
+}
+
+class UTXOBlockchain {
+  chain: { index: number; hash: string; prevHash: string; txs: Transaction[]; nonce: number }[] = [];
+  utxoSet: Map<string, UTXO> = new Map();
+
+  constructor() { this.genesis(); }
+
+  private genesis() {
+    const coinbase = new Transaction([], [{ amount: 50, owner: "miner" }]);
+    this.chain.push({ index: 0, hash: "0".repeat(64), prevHash: "", txs: [coinbase], nonce: 0 });
+    coinbase.outputs.forEach((o, i) => this.utxoSet.set(`0:${i}`, { txid: "0", outIndex: i, amount: o.amount, owner: o.owner }));
+  }
+
+  addBlock(txs: Transaction[], difficulty = 3): Transaction[] {
+    const valid: Transaction[] = [];
+    for (const tx of txs) {
+      if (this.validateTx(tx)) {
+        this.applyTx(tx); valid.push(tx);
+      }
+    }
+    const prev = this.chain[this.chain.length - 1];
+    let nonce = 0, hash = "";
+    do { hash = sha256(prev.hash + JSON.stringify(valid) + nonce++); }
+    while (!hash.startsWith("0".repeat(difficulty)));
+    this.chain.push({ index: prev.index + 1, hash, prevHash: prev.hash, txs: valid, nonce });
+    return valid;
+  }
+
+  validateTx(tx: Transaction): boolean {
+    if (tx.inputs.length === 0) return true;
+    let totalIn = 0, totalOut = tx.outputs.reduce((s, o) => s + o.amount, 0);
+    for (const inp of tx.inputs) {
+      const key = `${inp.txid}:${inp.outIndex}`;
+      const utxo = this.utxoSet.get(key);
+      if (!utxo) return false;
+      totalIn += utxo.amount;
+    }
+    return totalIn >= totalOut;
+  }
+
+  private applyTx(tx: Transaction): void {
+    for (const inp of tx.inputs) this.utxoSet.delete(`${inp.txid}:${inp.outIndex}`);
+    tx.outputs.forEach((o, i) => this.utxoSet.set(`${tx.id}:${i}`, { txid: tx.id, outIndex: i, amount: o.amount, owner: o.owner }));
+  }
+
+  balance(owner: string): number {
+    let bal = 0;
+    for (const utxo of this.utxoSet.values()) if (utxo.owner === owner) bal += utxo.amount;
+    return bal;
+  }
+}
+// const bc = new UTXOBlockchain();
+// const tx = new Transaction([], [{ amount: 10, owner: "alice" }]);
+// bc.addBlock([tx]);
+// console.log(bc.balance("alice")); // 10
+```
+
 ## Summary
 
 - Blockchain is a decentralized, distributed ledger technology ensuring data integrity without central authority.

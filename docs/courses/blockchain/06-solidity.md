@@ -618,6 +618,111 @@ contract GasComparison {
 **B) Check → Effects → Interaction.** First check all conditions (require), then update state (effects), then make external calls (interaction). This order prevents reentrancy attacks because state changes are visible to the attacker before they can re-enter the function.
 </details>
 
+### TypeScript: Storage Layout Calculator
+
+```typescript
+class StorageLayoutCalculator {
+  static readonly SLOT_SIZE = 32;
+
+  static calculateSlot(variableIndex: number): number {
+    return variableIndex;
+  }
+
+  static mappingSlot(baseSlot: number, key: string): string {
+    const paddedKey = key.padStart(64, "0");
+    const paddedSlot = baseSlot.toString(16).padStart(64, "0");
+    const hash = sha256(paddedKey + paddedSlot);
+    return BigInt("0x" + hash).toString();
+  }
+
+  static arraySlot(baseSlot: number, index: number): string {
+    const arrStart = sha256(baseSlot.toString(16).padStart(64, "0"));
+    const elementSlot = BigInt("0x" + arrStart) + BigInt(index);
+    return elementSlot.toString();
+  }
+}
+```
+
+### TypeScript: Function Selector Generator
+
+```typescript
+import { createHash } from "node:crypto";
+
+const keccak256 = (d: string): string => createHash("sha256").update(d).digest("hex");
+
+class SelectorGenerator {
+  static generate(sig: string): string {
+    return keccak256(sig).slice(0, 8);
+  }
+
+  static fromFunction(name: string, inputs: string[]): string {
+    const sig = `${name}(${inputs.join(",")})`;
+    return this.generate(sig);
+  }
+
+  static selectors(): Record<string, string> {
+    const sigs = [
+      "transfer(address,uint256)", "balanceOf(address)", "approve(address,uint256)",
+      "transferFrom(address,address,uint256)", "totalSupply()", "allowance(address,address)",
+      "ownerOf(uint256)", "safeTransferFrom(address,address,uint256)",
+      "mint(address,uint256)", "burn(uint256)", "pause()", "unpause()",
+    ];
+    const result: Record<string, string> = {};
+    for (const sig of sigs) {
+      const name = sig.split("(")[0];
+      result[name] = "0x" + this.generate(sig);
+    }
+    return result;
+  }
+}
+```
+
+### TypeScript: Event Log Parser
+
+```typescript
+interface EventLog {
+  address: string; topics: string[]; data: string; blockNumber: number; transactionHash: string;
+}
+
+interface ParsedEvent {
+  name: string; args: Record<string, unknown>;
+}
+
+class EventLogParser {
+  private eventSignatures: Map<string, string> = new Map();
+
+  register(signature: string, name: string): void {
+    this.eventSignatures.set(keccak256(signature), name);
+  }
+
+  parse(log: EventLog): ParsedEvent | null {
+    const topic0 = log.topics[0]?.slice(2);
+    const name = this.eventSignatures.get(topic0 ?? "");
+    if (!name) return null;
+    const indexedCount = (log.topics.length - 1);
+    const dataHex = log.data.startsWith("0x") ? log.data.slice(2) : log.data;
+    const args: Record<string, unknown> = {};
+    for (let i = 1; i < log.topics.length; i++) {
+      args[`topic${i}`] = "0x" + log.topics[i].slice(2);
+    }
+    if (dataHex.length >= 64) {
+      args.value = BigInt("0x" + dataHex.slice(0, 64)).toString();
+    }
+    return { name, args };
+  }
+
+  parseTransfer(log: EventLog): { from: string; to: string; value: bigint } | null {
+    const sig = keccak256("Transfer(address,address,uint256)");
+    if ((log.topics[0]?.slice(2)) !== sig) return null;
+    return {
+      from: "0x" + log.topics[1].slice(26),
+      to: "0x" + log.topics[2].slice(26),
+      value: BigInt(log.data),
+    };
+  }
+}
+```
+
 ## Summary
 
 - Solidity is the most widely used language for EVM-compatible smart contracts.

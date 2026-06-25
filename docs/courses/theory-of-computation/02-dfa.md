@@ -564,6 +564,162 @@ console.log(areEquivalent(endsWith0, startsWith0));
 // false — "0" is accepted by both but "10" is accepted only by endsWith0
 ```
 
+## TypeScript Implementation: DFA Simulator with Minimization
+
+```typescript
+// DFA Simulator and Minimizer
+
+type State = string;
+type Alphabet = string;
+type TransitionTable = Map<string, State>;  // key: "state,symbol"
+
+class DFA {
+  constructor(
+    public states: Set<State>,
+    public alphabet: Set<Alphabet>,
+    public transitions: TransitionTable,
+    public start: State,
+    public accept: Set<State>
+  ) {}
+
+  simulate(input: string): boolean {
+    let current = this.start;
+    for (const symbol of input) {
+      const key = `${current},${symbol}`;
+      if (!this.transitions.has(key)) return false;
+      current = this.transitions.get(key)!;
+    }
+    return this.accept.has(current);
+  }
+
+  runWithTrace(input: string): State[] {
+    const trace: State[] = [this.start];
+    let current = this.start;
+    for (const symbol of input) {
+      const key = `${current},${symbol}`;
+      if (!this.transitions.has(key)) return [];
+      current = this.transitions.get(key)!;
+      trace.push(current);
+    }
+    return trace;
+  }
+
+  minimize(): DFA {
+    // Table-filling algorithm for DFA minimization
+    const states = [...this.states];
+    const pairs = new Map<string, boolean>(); // true = distinguishable
+
+    // Initialize: accept vs non-accept pairs are distinguishable
+    for (let i = 0; i < states.length; i++) {
+      for (let j = i + 1; j < states.length; j++) {
+        const key = `${states[i]},${states[j]}`;
+        const iAccept = this.accept.has(states[i]);
+        const jAccept = this.accept.has(states[j]);
+        pairs.set(key, iAccept !== jAccept);
+      }
+    }
+
+    // Iteratively mark distinguishable pairs
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (let i = 0; i < states.length; i++) {
+        for (let j = i + 1; j < states.length; j++) {
+          const key = `${states[i]},${states[j]}`;
+          if (pairs.get(key)) continue;
+          for (const sym of this.alphabet) {
+            const k1 = `${states[i]},${sym}`;
+            const k2 = `${states[j]},${sym}`;
+            const t1 = this.transitions.get(k1);
+            const t2 = this.transitions.get(k2);
+            if (t1 && t2 && t1 !== t2) {
+              const [a, b] = t1 < t2 ? [t1, t2] : [t2, t1];
+              if (pairs.get(`${a},${b}`)) {
+                pairs.set(key, true);
+                changed = true;
+                break;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Group equivalent states
+    const groups = new Map<string, State[]>();
+    const assigned = new Set<State>();
+    for (const s1 of states) {
+      if (assigned.has(s1)) continue;
+      const group: State[] = [s1];
+      assigned.add(s1);
+      for (const s2 of states) {
+        if (assigned.has(s2)) continue;
+        const [a, b] = s1 < s2 ? [s1, s2] : [s2, s1];
+        if (!pairs.get(`${a},${b}`)) {
+          group.push(s2);
+          assigned.add(s2);
+        }
+      }
+      groups.set(group[0], group);
+    }
+
+    // Build minimized DFA
+    const newStates = new Set([...groups.keys()]);
+    const newTransitions = new TransitionTable();
+    const newAccept = new Set<State>();
+    let newStart = this.start;
+
+    for (const [rep, _] of groups) {
+      if (this.accept.has(rep)) newAccept.add(rep);
+      for (const sym of this.alphabet) {
+        const oldKey = `${rep},${sym}`;
+        const oldTarget = this.transitions.get(oldKey);
+        if (oldTarget) {
+          const newTarget = [...groups].find(([_, g]) => g.includes(oldTarget))?.[0];
+          if (newTarget) newTransitions.set(`${rep},${sym}`, newTarget);
+        }
+      }
+    }
+
+    return new DFA(newStates, this.alphabet, newTransitions, newStart, newAccept);
+  }
+
+  acceptsAnyString(): boolean {
+    // BFS from start to see if any accept state is reachable
+    const visited = new Set<State>();
+    const queue: State[] = [this.start];
+    while (queue.length > 0) {
+      const current = queue.shift()!;
+      if (visited.has(current)) continue;
+      visited.add(current);
+      if (this.accept.has(current)) return true;
+      for (const sym of this.alphabet) {
+        const next = this.transitions.get(`${current},${sym}`);
+        if (next && !visited.has(next)) queue.push(next);
+      }
+    }
+    return false;
+  }
+}
+
+const dfa = new DFA(
+  new Set(["q0", "q1", "q2"]),
+  new Set(["0", "1"]),
+  new Map([
+    ["q0,0", "q1"], ["q0,1", "q2"],
+    ["q1,0", "q0"], ["q1,1", "q1"],
+    ["q2,0", "q2"], ["q2,1", "q2"]
+  ]),
+  "q0", new Set(["q1"])
+);
+
+console.log(dfa.simulate("0"));      // true (ends in q1)
+console.log(dfa.simulate("1"));      // false (ends in q2)
+console.log(dfa.simulate("010"));    // true
+console.log(dfa.runWithTrace("010")); // ["q0","q1","q0","q1"]
+console.log(dfa.acceptsAnyString()); // true
+```
+
 ## Summary
 
 - A DFA is a 5-tuple (Q, Î£, Î´, qâ‚€, F) with a deterministic transition function.

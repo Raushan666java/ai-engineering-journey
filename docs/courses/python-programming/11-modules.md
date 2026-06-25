@@ -480,6 +480,109 @@ print(module.greet("Alice"))
 - better security
 
 
+### TypeScript Package Management & Module Resolution
+
+```typescript
+// Python: pip install requests → TypeScript: bun add express
+// package.json dependencies:
+{
+  "dependencies": {
+    "express": "^4.18.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^1.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
+
+// Python: from module import → TypeScript: dynamic imports
+async function loadPlugin(name: string): Promise<unknown> {
+  const mod = await import(`./plugins/${name}.js`);
+  return mod.default;
+}
+// Python: importlib.import_module(f"plugins.{name}")
+
+// Python: __init__.py re-exports → TypeScript: barrel exports
+// index.ts (barrel file)
+export { add, subtract } from "./math.js";
+export type { User, Config } from "./types.js";
+
+// Python: sys.path → TypeScript: tsconfig paths
+// tsconfig.json:
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@utils/*": ["./src/utils/*"],
+//       "@models/*": ["./src/models/*"]
+//     }
+//   }
+// }
+// Usage: import { format } from "@utils/format";
+
+// Python: circular imports → TypeScript: same problem
+// Solution: extract shared types to a separate file, or use lazy imports
+
+// Python: if __name__ == "__main__" → TypeScript
+// Top-level await in modules (Node.js ESM + Bun)
+const isMain = process.argv[1]?.endsWith("script.ts");
+if (isMain) {
+  console.log("Running as main script");
+}
+```
+
+### TypeScript Module Re-export & Namespace Patterns
+
+```typescript
+// Python: from package import * → TypeScript: namespace re-export
+// utils/index.ts — barrel file
+export { formatDate } from "./date.js";
+export { validateEmail, sanitize } from "./validation.js";
+export type { User, Config } from "./types.js";
+
+// Python: package with __init__.py → TypeScript: index.ts convention
+// src/
+//   index.ts          (re-exports from modules below)
+//   math.ts
+//   validation.ts
+//   types.ts
+
+// Python: namespace packages → TypeScript: module augmentation
+// Extending an existing module
+declare module "./math.js" {
+  export function factorial(n: number): number;
+}
+
+// Python: sys.modules caching → TypeScript: module-level singletons
+// TypeScript modules are cached after first import (same as Python)
+let instance: Database | null = null;
+export function getDatabase(): Database {
+  if (!instance) instance = new Database();
+  return instance;
+}
+
+// Python: importlib.reload → TypeScript: no direct equivalent
+// Workaround for hot-reloading: dynamic import() with cache busting
+async function hotReload(modulePath: string): Promise<unknown> {
+  const url = new URL(modulePath, import.meta.url);
+  url.searchParams.set("t", Date.now().toString());
+  return await import(url.href);
+}
+
+// Python: module docstring → TypeScript: top-level JSDoc
+/**
+ * @module utils
+ * Utility functions for the application.
+ * @packageDocumentation
+ */
+
+// Python: __all__ → TypeScript: explicit exports
+// In Python: __all__ = ["func1", "func2"]
+// In TypeScript: only exported names are visible:
+export { func1, func2 };  // private names are not exported
+```
+
 ## Summary
 
 - Modules are `.py` files; packages are directories with `__init__.py`.

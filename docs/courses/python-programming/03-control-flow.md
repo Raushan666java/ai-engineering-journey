@@ -645,6 +645,115 @@ if (n := len(items)) > 0:
 - D) SyntaxError
 
 
+```typescript
+// Chapter 3: TypeScript Control Flow Equivalents
+// Python: if/elif/else
+function grade(score: number): string {
+  if (score >= 90) return "A";
+  else if (score >= 80) return "B";
+  else if (score >= 70) return "C";
+  else if (score >= 60) return "D";
+  else return "F";
+}
+
+// Python: ternary expression (x if cond else y)
+const status: string = grade(85) === "A" ? "Excellent" : "Keep trying";
+// Equivalent Python: status = "Excellent" if grade(85) == "A" else "Keep trying"
+
+// Python: match-case (3.10+) → TypeScript: switch
+function describe(value: unknown): string {
+  switch (typeof value) {
+    case "number":
+      return `Number: ${value}`;
+    case "string":
+      return `String (${value.length} chars)`;
+    case "boolean":
+      return value ? "Boolean: true" : "Boolean: false";
+    default:
+      return `Unknown type: ${String(value)}`;
+  }
+}
+
+// Python: chained comparisons (1 < x < 10) must be expanded
+function isBetween(x: number, lo: number, hi: number): boolean {
+  return x > lo && x < hi;
+}
+
+// Python: short-circuit evaluation works identically
+function validate(input: string | null): boolean {
+  return input !== null && input.length > 0;
+}
+
+// Python: match-case with pattern matching has no TS equivalent
+// but destructuring + switch approximates some use cases
+type Shape =
+  | { kind: "circle"; radius: number }
+  | { kind: "rect"; width: number; height: number };
+
+function area(shape: Shape): number {
+  if (shape.kind === "circle") return Math.PI * shape.radius ** 2;
+  if (shape.kind === "rect") return shape.width * shape.height;
+  throw new Error("Unknown shape");
+}
+```
+
+### More TypeScript Control Flow Patterns
+
+```typescript
+// Python: ternary with complex expressions
+const score = 85;
+const grade2 = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";
+// Equivalent Python: "A" if score >= 90 else "B" if score >= 80 else "C" else "F"
+
+// Python: short-circuit for default values → TypeScript: ??
+function getConfigValue(key: string, fallback: string): string {
+  return process.env[key] ?? fallback;
+}
+// Python: os.environ.get(key, fallback)
+
+// Python: match-case with OR patterns → TypeScript: fallthrough switch
+function isWeekend(day: string): boolean {
+  switch (day.toLowerCase()) {
+    case "saturday":
+    case "sunday":
+      return true;
+    default:
+      return false;
+  }
+}
+// Python: match day: case "saturday" | "sunday": return True
+
+// Python: match-case with guards → TypeScript: if-else chain
+interface Admin { kind: "admin"; permissions: string[]; }
+interface User { kind: "user"; email: string; }
+type Account = Admin | User;
+
+function getInfo(account: Account): string {
+  if (account.kind === "admin" && account.permissions.includes("manage")) {
+    return "Admin with manage permissions";
+  }
+  if (account.kind === "user") {
+    return `User: ${account.email}`;
+  }
+  return "Unknown";
+}
+
+// Python: while-else → TypeScript: flag-based pattern
+let attempts = 0;
+let connected = false;
+while (attempts < 3 && !connected) {
+  try {
+    // try connecting
+    connected = true;
+  } catch {
+    attempts++;
+  }
+}
+if (!connected) {
+  console.log("Failed after 3 attempts");
+  // Python: else clause runs when while completes without break
+}
+```
 
 ## Summary
 

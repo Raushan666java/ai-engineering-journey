@@ -592,6 +592,45 @@ console.log(probAtLeastOneRed(12, 5, 3)); // 0.8409
 
 16. Rs. 20,000 | 17. $\frac{11!}{2!2!2!} = 4,989,600$ | 18. 300m | 19. 100 men | 20. $\frac{6}{36} = \frac{1}{6}$
 
+### TypeScript: Time-Speed-Distance & Ratio Calculator
+
+```typescript
+// === Time-Speed-Distance Calculator ===
+class TSDCalculator {
+  static distance(speed: number, time: number): number { return speed * time; }
+  static speed(distance: number, time: number): number { return distance / time; }
+  static time(distance: number, speed: number): number { return distance / speed; }
+  static relativeSpeed(s1: number, s2: number, opposite: boolean): number {
+    return opposite ? s1 + s2 : Math.abs(s1 - s2);
+  }
+  static convertKmhToMs(kmh: number): number { return kmh * (5 / 18); }
+}
+
+class RatioSolver {
+  static fourthProportional(a: number, b: number, c: number): number { return (b * c) / a; }
+  static thirdProportional(a: number, b: number): number { return (b * b) / a; }
+  static compoundRatio(ratios: [number, number][]): string {
+    const p = ratios.reduce(([ax, ay], [bx, by]) => [ax * bx, ay * by], [1, 1]);
+    const g = ((x: number, y: number): number => y === 0 ? x : g(y, x % y))(p[0], p[1]);
+    return `${p[0] / g}:${p[1] / g}`;
+  }
+}
+
+class PercentileCalc {
+  static rank(scores: number[], value: number): number {
+    return (scores.filter(s => s < value).length / scores.length) * 100;
+  }
+  static atPercentile(scores: number[], p: number): number {
+    const s = [...scores].sort((a, b) => a - b);
+    return s[Math.max(0, Math.ceil((p / 100) * s.length) - 1)];
+  }
+}
+
+console.log("Speed:", TSDCalculator.speed(240, 4), "km/h");
+console.log("Ratio:", RatioSolver.fourthProportional(2, 5, 8));
+console.log("Percentile:", PercentileCalc.rank([23, 45, 56, 67, 78, 89], 67), "%");
+```
+
 ## Summary
 
 - Percentages use fraction conversion shortcuts for rapid calculation

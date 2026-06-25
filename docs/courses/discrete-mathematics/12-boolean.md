@@ -384,6 +384,90 @@ function fullAdderGates(a: Bit, b: Bit, cin: Bit): { sum: Bit; cout: Bit } {
 }
 ```
 
+## TypeScript Implementations
+
+```typescript
+type Bit = 0 | 1;
+
+// --- Gate Library ---
+const AND = (a: Bit, b: Bit): Bit => (a && b) as Bit;
+const OR = (a: Bit, b: Bit): Bit => (a || b) as Bit;
+const NOT = (a: Bit): Bit => (1 - a) as Bit;
+const NAND = (a: Bit, b: Bit): Bit => NOT(AND(a, b));
+const NOR = (a: Bit, b: Bit): Bit => NOT(OR(a, b));
+const XOR = (a: Bit, b: Bit): Bit => (a !== b ? 1 : 0) as Bit;
+const XNOR = (a: Bit, b: Bit): Bit => (a === b ? 1 : 0) as Bit;
+
+console.log('AND(1,0):', AND(1, 0)); // 0
+console.log('XOR(1,0):', XOR(1, 0)); // 1
+
+// --- Boolean Expression Simplifier (using identities) ---
+function simplifyExpr(expr: string): string {
+  // Apply basic Boolean identities iteratively
+  let s = expr;
+  const rules: [RegExp, string][] = [
+    [/A \+ A/g, 'A'], [/A \* A/g, 'A'],
+    [/A \+ 0/g, 'A'], [/A \* 1/g, 'A'],
+    [/A \* 0/g, '0'], [/A \+ 1/g, '1'],
+    [/A \+ A'/g, '1'], [/A \* A'/g, '0'],
+    [/A''/g, 'A'],
+  ];
+  for (let i = 0; i < 10; i++) for (const [pattern, repl] of rules) s = s.replace(pattern, repl);
+  return s;
+}
+console.log('Simplify A+A:', simplifyExpr('A + A')); // A
+
+// --- SOP / POS Converter ---
+function sopFromTruthTable(vars: number, truthTable: number[]): string {
+  const terms: string[] = [];
+  for (let i = 0; i < truthTable.length; i++) {
+    if (truthTable[i] === 1) {
+      const term: string[] = [];
+      for (let j = 0; j < vars; j++) {
+        const bit = (i >> (vars - 1 - j)) & 1;
+        term.push(bit ? `x${j+1}` : `x${j+1}'`);
+      }
+      terms.push(term.join(''));
+    }
+  }
+  return terms.join(' + ') || '0';
+}
+// XOR truth table: x1 ⊕ x2
+const xorTT = [0, 1, 1, 0];
+console.log('XOR SOP:', sopFromTruthTable(2, xorTT)); // x1'x2 + x1x2'
+
+// --- Logic Circuit Simulator ---
+function halfAdder(a: Bit, b: Bit): { sum: Bit; carry: Bit } {
+  return { sum: XOR(a, b), carry: AND(a, b) };
+}
+function fullAdder(a: Bit, b: Bit, cin: Bit): { sum: Bit; cout: Bit } {
+  const ha1 = halfAdder(a, b);
+  const ha2 = halfAdder(ha1.sum, cin);
+  return { sum: ha2.sum, cout: OR(ha1.carry, ha2.carry) };
+}
+console.log('Half adder (1,1):', halfAdder(1, 1)); // {sum:0, carry:1}
+console.log('Full adder (1,1,0):', fullAdder(1, 1, 0)); // {sum:0, cout:1}
+
+// --- 4-bit Ripple Carry Adder ---
+function rippleCarry4(a: Bit[], b: Bit[]): { sum: Bit[]; cout: Bit } {
+  let carry: Bit = 0;
+  const sum: Bit[] = [];
+  for (let i = 3; i >= 0; i--) {
+    const fa = fullAdder(a[i], b[i], carry);
+    sum.unshift(fa.sum);
+    carry = fa.cout;
+  }
+  return { sum, cout: carry };
+}
+const A: Bit[] = [1, 0, 1, 0]; // 10
+const B: Bit[] = [0, 1, 1, 0]; // 6
+console.log('4-bit add 1010+0110:', rippleCarry4(A, B)); // {sum:[1,0,0,0], cout:0} = 8
+
+// --- Minterm/Maxterm Counter ---
+function mintermCount(n: number): number { return 1 << n; }
+console.log('Minterms for 3 vars:', mintermCount(3)); // 8
+```
+
 ## Summary
 
 - Boolean algebra is the algebraic foundation of digital logic, operating on $\{0,1\}$.

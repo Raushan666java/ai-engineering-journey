@@ -497,6 +497,82 @@ console.log(dockerfile);
 
 ---
 
+### Container Layer Cache Analyzer
+
+Docker layer caching is critical for fast builds in CI/CD. The following tool analyzes Dockerfile layers, detects cache invalidation points, and recommends layer ordering optimizations.
+
+```typescript
+interface DockerLayer {
+  instruction: string;
+  content: string;
+  estimatedSizeBytes: number;
+  cacheKey: string;
+  cacheable: boolean;
+}
+
+interface LayerCacheReport {
+  layers: DockerLayer[];
+  invalidatedLayers: number;
+  totalBuildTime: number; // estimated seconds
+  optimizationAdvice: string[];
+}
+
+class LayerCacheAnalyzer {
+  analyze(dockerfile: string): LayerCacheReport {
+    const lines = dockerfile.split('\n');
+    const layers: DockerLayer[] = [];
+    const optimizationAdvice: string[] = [];
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('FROM')) {
+        layers.push({ instruction: 'FROM', content: trimmed, estimatedSizeBytes: 200_000_000, cacheKey: trimmed, cacheable: true });
+      } else if (trimmed.startsWith('RUN')) {
+        const cacheable = !trimmed.includes('apt-get update') && !trimmed.includes('npm install');
+        if (!cacheable) optimizationAdvice.push(`Combine RUN commands that change frequently: "${trimmed.substring(0, 50)}..."`);
+        layers.push({ instruction: 'RUN', content: trimmed, estimatedSizeBytes: 50_000_000, cacheKey: trimmed.substring(0, 80), cacheable });
+      } else if (trimmed.startsWith('COPY') || trimmed.startsWith('ADD')) {
+        layers.push({ instruction: trimmed.split(' ')[0], content: trimmed, estimatedSizeBytes: 10_000_000, cacheKey: trimmed, cacheable: false });
+        optimizationAdvice.push(`COPY/ADD changes invalidate all subsequent layers. Move "${trimmed}" later in the Dockerfile`);
+      }
+    }
+
+    let firstInvalidIndex = layers.findIndex(l => !l.cacheable);
+    if (firstInvalidIndex === -1) firstInvalidIndex = layers.length;
+    const invalidatedLayers = layers.length - firstInvalidIndex - 1;
+    const totalBuildTime = layers.length * 5 + invalidatedLayers * 10;
+
+    return { layers, invalidatedLayers, totalBuildTime, optimizationAdvice };
+  }
+
+  recommendOptimalOrdering(layers: DockerLayer[]): DockerLayer[] {
+    const sorted = [...layers];
+    sorted.sort((a, b) => {
+      const cacheOrder = (l: DockerLayer) => l.cacheable ? 0 : l.instruction === 'COPY' ? 2 : 1;
+      return cacheOrder(a) - cacheOrder(b);
+    });
+    return sorted;
+  }
+}
+
+const dockerfile = `FROM node:20-alpine
+RUN apk add --no-cache curl
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build`;
+
+const analyzer = new LayerCacheAnalyzer();
+const report = analyzer.analyze(dockerfile);
+console.log(`Invalidated layers: ${report.invalidatedLayers}`);
+console.log(`Est. build time: ${report.totalBuildTime}s`);
+console.log('Advice:', report.optimizationAdvice.join('; '));
+```
+
+**What this demonstrates:** Layer cache analysis identifies build bottlenecks and recommends Dockerfile restructuring for faster CI/CD pipeline execution.
+
+---
+
 ## Practical Takeaways
 
 1. **Always use multi-stage builds.** Separate build dependencies from runtime for smaller, more secure images.

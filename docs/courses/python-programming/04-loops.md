@@ -749,6 +749,60 @@ for x in sorted(seq, key=len): pass
 - D) It reverses the list
 
 
+```typescript
+// Chapter 4: TypeScript Loop Equivalents
+// Python: for x in iterable
+const items: string[] = ["apple", "banana", "cherry"];
+for (const item of items) {
+  console.log(item);
+}
+
+// Python: for i in range(5)
+for (let i = 0; i < 5; i++) {
+  console.log(i);  // 0, 1, 2, 3, 4
+}
+
+// Python: enumerate() → TypeScript: entries()
+for (const [index, value] of items.entries()) {
+  console.log(`${index}: ${value}`);
+}
+
+// Python: zip() → TypeScript: manual or utility
+const names: string[] = ["Alice", "Bob", "Charlie"];
+const scores: number[] = [92, 85, 78];
+for (let i = 0; i < names.length && i < scores.length; i++) {
+  console.log(`${names[i]}: ${scores[i]}`);
+}
+// Python equivalent: for name, score in zip(names, scores):
+
+// Python: while loop
+let n: number = 10;
+while (n > 0) {
+  console.log(n);
+  n--;
+}
+
+// Python: break / continue work identically
+for (const item of items) {
+  if (item === "banana") continue;
+  if (item === "cherry") break;
+  console.log(item);  // "apple" only
+}
+
+// Python: for/else (no TypeScript equivalent)
+// TypeScript workaround with a flag:
+let found = false;
+for (const name of names) {
+  if (name === "Alice") { found = true; break; }
+}
+if (!found) console.log("Not found");
+// Python: for name in names: ... else: print("Not found")
+
+// Python: reversed() → TypeScript: reverse() or manual loop
+for (let i = items.length - 1; i >= 0; i--) {
+  console.log(items[i]);  // cherry, banana, apple
+}
+```
 
 ## Summary
 

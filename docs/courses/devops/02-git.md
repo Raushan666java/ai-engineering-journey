@@ -562,6 +562,92 @@ for (const msg of testMessages) {
 
 ---
 
+### Merge Conflict Predictor
+
+Predicting merge conflicts before they happen enables proactive resolution and better branch management. The following tool analyzes branch divergence and estimates conflict probability.
+
+```typescript
+interface BranchInfo {
+  name: string;
+  commits: string[];
+  files: Map<string, string>; // file path -> content hash
+}
+
+interface ConflictPrediction {
+  branchA: string;
+  branchB: string;
+  conflictProbability: number; // 0-1
+  conflictingFiles: string[];
+  commonAncestorAge: number; // commits behind
+}
+
+class ConflictPredictor {
+  predict(base: BranchInfo, a: BranchInfo, b: BranchInfo): ConflictPrediction {
+    const conflictingFiles: string[] = [];
+
+    for (const [file, hashA] of a.files) {
+      if (b.files.has(file)) {
+        const hashB = b.files.get(file)!;
+        const hashBase = base.files.get(file);
+        if (hashBase && hashA !== hashBase && hashB !== hashBase && hashA !== hashB) {
+          conflictingFiles.push(file);
+        }
+      }
+    }
+
+    const overlapCount = conflictingFiles.length;
+    const totalChanged = new Set([...a.files.keys(), ...b.files.keys()]).size;
+    const baseProbability = overlapCount / Math.max(totalChanged, 1);
+    const divergencePenalty = Math.min(b.commits.length + a.commits.length, 50) / 50 * 0.3;
+    const probability = Math.min(baseProbability + divergencePenalty, 1);
+
+    return {
+      branchA: a.name,
+      branchB: b.name,
+      conflictProbability: Math.round(probability * 100) / 100,
+      conflictingFiles,
+      commonAncestorAge: Math.min(a.commits.length, b.commits.length),
+    };
+  }
+
+  generateReport(prediction: ConflictPrediction): string {
+    const riskLevel = prediction.conflictProbability > 0.5 ? 'HIGH' : prediction.conflictProbability > 0.2 ? 'MEDIUM' : 'LOW';
+    return `## Merge Conflict Report\n\n` +
+      `**Risk Level:** ${riskLevel}\n` +
+      `**Probability:** ${(prediction.conflictProbability * 100).toFixed(0)}%\n` +
+      `**Conflicting Files:** ${prediction.conflictingFiles.join(', ') || 'none'}\n` +
+      `**Divergence:** ${prediction.commonAncestorAge} commits behind\n`;
+  }
+}
+
+// Example: main vs feature-a vs feature-b branches
+const base: BranchInfo = {
+  name: 'main',
+  commits: ['c1', 'c2'],
+  files: new Map([['src/app.ts', 'abc'], ['src/utils.ts', 'def'], ['config.yaml', 'ghi']]),
+};
+
+const featureA: BranchInfo = {
+  name: 'feature/logging',
+  commits: ['c1', 'c2', 'c3', 'c4'],
+  files: new Map([['src/app.ts', 'xyz'], ['src/utils.ts', 'def'], ['src/logger.ts', 'new']]),
+};
+
+const featureB: BranchInfo = {
+  name: 'feature/auth',
+  commits: ['c1', 'c2', 'c3', 'c4', 'c5'],
+  files: new Map([['src/app.ts', 'pqr'], ['src/utils.ts', 'mno'], ['config.yaml', 'ghi']]),
+};
+
+const predictor = new ConflictPredictor();
+const prediction = predictor.predict(base, featureA, featureB);
+console.log(predictor.generateReport(prediction));
+```
+
+**What this demonstrates:** Merge conflict prediction enables teams to identify high-risk merges early, schedule integration points, and reduce resolution overhead.
+
+---
+
 ## Practical Takeaways
 
 1. **Use trunk-based development for CI/CD.** Short-lived branches keep integration pain low.

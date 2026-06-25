@@ -596,6 +596,169 @@ class LRUCache:
         self.cache[key] = value
         self.order.append(key)
 ```
+```typescript
+// Chapter 8: TypeScript Dictionary/Map Equivalents
+// Python: dict literal → TypeScript: object or Map
+const user: Record<string, string | number> = {
+  name: "Alice",
+  email: "alice@example.com",
+  age: 30,
+};
+// Equivalent Python: user = {"name": "Alice", "email": "alice@example.com", "age": 30}
+
+// Python: d[key] → TypeScript: bracket or dot notation
+console.log(user["name"]);  // "Alice"
+console.log(user.name);     // "Alice" (if key is a valid identifier)
+
+// Python: d.get(key, default) → TypeScript: ?? operator
+const city: string = (user.city as string) ?? "Unknown";
+// Equivalent Python: user.get("city", "Unknown")
+
+// Python: key in d → TypeScript: "key" in obj
+console.log("name" in user);  // true
+
+// Python: d.keys() / d.values() / d.items() → TypeScript: Object.keys/values/entries
+console.log(Object.keys(user));    // ["name", "email", "age"]
+console.log(Object.values(user));  // ["Alice", "alice@example.com", 30]
+console.log(Object.entries(user)); // [["name","Alice"],["email","alice@example.com"],["age",30]]
+
+// Python: dict comprehension → TypeScript: Object.fromEntries + map
+const keys: string[] = ["a", "b", "c"];
+const dict: Record<string, number> = Object.fromEntries(
+  keys.map((k, i) => [k, i])
+);
+console.log(dict);  // {a: 0, b: 1, c: 2}
+
+// Python: defaultdict(list) → TypeScript: manual or Map with default
+const groups: Map<string, number[]> = new Map();
+const addToGroup = (key: string, value: number): void => {
+  if (!groups.has(key)) groups.set(key, []);
+  groups.get(key)!.push(value);
+};
+addToGroup("even", 2);
+addToGroup("odd", 1);
+
+// Python: Counter → TypeScript: manual reduce
+const items: string[] = ["a", "b", "a", "c", "a", "b"];
+const counter: Record<string, number> = items.reduce((acc, item) => {
+  acc[item] = (acc[item] ?? 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+console.log(counter);  // {a: 3, b: 2, c: 1}
+```
+
+### TypeScript Map & Advanced Dictionary Patterns
+
+```typescript
+// Python: dict merge (|) → TypeScript: spread
+const defaults: Record<string, number> = { timeout: 30, retries: 3 };
+const overrides: Record<string, number> = { timeout: 60 };
+const config = { ...defaults, ...overrides };
+console.log(config);  // { timeout: 60, retries: 3 }
+// Python: {**defaults, **overrides} or defaults | overrides
+
+// Python: defaultdict(int) → TypeScript: Map with default
+function defaultDict<K, V>(factory: () => V): Map<K, V> {
+  const map = new Map<K, V>();
+  return new Proxy(map as any, {
+    get(target: any, prop: string) {
+      if (prop === "get") {
+        return (key: K) => {
+          if (!target.has(key)) target.set(key, factory());
+          return target.get(key);
+        };
+      }
+      return target[prop];
+    },
+  }) as Map<K, V>;
+}
+
+// Python: Counter.most_common() → TypeScript
+function mostCommon<T>(items: T[], n: number): [T, number][] {
+  const counts = new Map<T, number>();
+  for (const item of items) {
+    counts.set(item, (counts.get(item) ?? 0) + 1);
+  }
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, n);
+}
+const fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
+console.log(mostCommon(fruits, 2));  // [["apple", 3], ["banana", 2]]
+
+// Python: dict comprehension with condition
+const squares2: Record<number, number> = {};
+for (let i = 1; i <= 5; i++) {
+  if (i % 2 === 0) squares2[i] = i * i;
+}
+console.log(squares2);  // {2: 4, 4: 16}
+
+// Python: deep_merge → TypeScript: recursive merge
+function deepMerge<T extends Record<string, any>>(a: T, b: Partial<T>): T {
+  const result = { ...a };
+  for (const key of Object.keys(b)) {
+    if (b[key] && typeof b[key] === "object" && !Array.isArray(b[key])) {
+      result[key] = deepMerge(result[key] ?? {}, b[key]);
+    } else {
+      result[key] = b[key] ?? result[key];
+    }
+  }
+  return result;
+}
+```
+
+### TypeScript Dictionary Performance & Edge Cases
+
+```typescript
+// Python: dict.get with sentinel → TypeScript: Map.get with undefined
+const phoneBook = new Map<string, string>([
+  ["Alice", "555-0100"],
+  ["Bob", "555-0101"],
+]);
+console.log(phoneBook.get("Charlie") ?? "Not found");  // "Not found"
+
+// Python: dict.setdefault → TypeScript: Map custom get-or-set
+function getOrSet<K, V>(map: Map<K, V>, key: K, factory: () => V): V {
+  if (!map.has(key)) map.set(key, factory());
+  return map.get(key)!;
+}
+
+// Python: OrderedDict (insertion order preserved in Python 3.7+)
+// TypeScript Map also preserves insertion order
+const ordered = new Map<string, number>();
+ordered.set("first", 1);
+ordered.set("second", 2);
+ordered.set("third", 3);
+for (const [k, v] of ordered) {
+  console.log(k, v);  // first 1, second 2, third 3
+}
+
+// Python: dict.fromkeys → TypeScript: Object.fromEntries
+const keys2 = ["x", "y", "z"];
+const fromKeys = Object.fromEntries(keys2.map((k) => [k, 0]));
+console.log(fromKeys);  // {x: 0, y: 0, z: 0}
+
+// Python: nested dict get → TypeScript: optional chaining
+interface DeepConfig {
+  database?: { connection?: { host?: string; port?: number } };
+}
+const cfg: DeepConfig = {};
+const host = cfg.database?.connection?.host ?? "localhost";
+// Python: cfg.get("database", {}).get("connection", {}).get("host", "localhost")
+
+// Python: dict popitem → TypeScript: Map iteration + delete
+function popFirst<K, V>(map: Map<K, V>): [K, V] | undefined {
+  const entry = map.entries().next().value;
+  if (entry) map.delete(entry[0]);
+  return entry;
+}
+
+// Python: dict comprehensions with condition
+const evens: Record<number, boolean> = {};
+for (let i = 0; i < 10; i++) {
+  if (i % 2 === 0) evens[i] = true;
+}
+```
 
 ## Summary
 

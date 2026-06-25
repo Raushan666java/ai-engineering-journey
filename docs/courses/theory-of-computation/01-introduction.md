@@ -484,6 +484,112 @@ function haltingDetector(program: string, input: string): boolean {
 }
 ```
 
+## TypeScript Implementation: Chomsky Hierarchy Classifier
+
+```typescript
+// Chomsky Hierarchy Language Classifier
+// Determines which level of the Chomsky hierarchy a grammar belongs to
+
+type Production = { lhs: string; rhs: string };
+
+enum ChomskyType {
+  Type0 = "Type-0 (Recursively Enumerable)",
+  Type1 = "Type-1 (Context-Sensitive)",
+  Type2 = "Type-2 (Context-Free)",
+  Type3 = "Type-3 (Regular)"
+}
+
+function classifyChomsky(productions: Production[]): ChomskyType {
+  let isRegular = true;
+  let isContextFree = true;
+  let isContextSensitive = true;
+
+  for (const p of productions) {
+    // Type-3 (Regular): A → aB or A → a (RHS patterns)
+    // A must be single nonterminal, RHS must be terminal or terminal+nonterminal
+    // Skip ε-productions for simplicity
+    const lhsOk = /^[A-Z]$/.test(p.lhs);
+    const rhsIsTerminal = /^[a-z]$/.test(p.rhs);
+    const rhsIsTerminalNonterminal = /^[a-z][A-Z]$/.test(p.rhs);
+    const rhsLeftRegular = /^[A-Z][a-z]$/.test(p.rhs);
+    if (!(lhsOk && (rhsIsTerminal || rhsIsTerminalNonterminal || rhsLeftRegular || p.rhs === "ε"))) {
+      isRegular = false;
+    }
+
+    // Type-2 (CFG): A → γ where A is single nonterminal
+    if (!/^[A-Z]$/.test(p.lhs)) {
+      isContextFree = false;
+    }
+
+    // Type-1 (CSG): αAβ → αγβ with |γ| ≥ 1 (non-decreasing)
+    // or S → ε allowed at start
+    if (p.lhs.length > p.rhs.length && p.rhs !== "ε") {
+      isContextSensitive = false;
+    }
+  }
+
+  if (isRegular) return ChomskyType.Type3;
+  if (isContextFree) return ChomskyType.Type2;
+  if (isContextSensitive) return ChomskyType.Type1;
+  return ChomskyType.Type0;
+}
+
+class AlphabetValidator {
+  static isValidAlphabet(symbols: string[]): boolean {
+    const seen = new Set<string>();
+    for (const s of symbols) {
+      if (s.length !== 1) return false;
+      if (seen.has(s)) return false;
+      seen.add(s);
+    }
+    return seen.size > 0;
+  }
+
+  static isStringOverAlphabet(str: string, alphabet: string[]): boolean {
+    const alphabetSet = new Set(alphabet);
+    for (const ch of str) if (!alphabetSet.has(ch)) return false;
+    return true;
+  }
+
+  static classifyLanguage(name: string, grammar: Production[]): string {
+    const type = classifyChomsky(grammar);
+    return `Language "${name}" is classified as ${type}`;
+  }
+}
+
+// Examples
+const regularGrammar: Production[] = [
+  { lhs: "S", rhs: "aA" }, { lhs: "A", rhs: "bS" },
+  { lhs: "S", rhs: "ε" }
+];
+
+const cfgGrammar: Production[] = [
+  { lhs: "S", rhs: "aSb" }, { lhs: "S", rhs: "ε" }
+];
+
+const csGrammar: Production[] = [
+  { lhs: "S", rhs: "aBC" }, { lhs: "aS", rhs: "aSB" },
+  { lhs: "CB", rhs: "BC" }, { lhs: "B", rhs: "b" }
+];
+
+console.log(classifyChomsky(regularGrammar));  // Type-3
+console.log(classifyChomsky(cfgGrammar));       // Type-2
+console.log(classifyChomsky(csGrammar));        // Type-1 or Type-0
+
+const lang = new Set<string>();
+function generateStrings(type: ChomskyType, limit: number): string[] {
+  const result: string[] = [];
+  if (type === ChomskyType.Type3) {
+    for (let i = 0; i < limit; i++) result.push("a".repeat(i));
+  } else if (type === ChomskyType.Type2) {
+    for (let i = 0; i < limit; i++) result.push("a".repeat(i) + "b".repeat(i));
+  }
+  return result;
+}
+console.log(generateStrings(ChomskyType.Type3, 5));     // ["", "a", "aa", "aaa", "aaaa"]
+console.log(generateStrings(ChomskyType.Type2, 4));     // ["", "ab", "aabb", "aaabbb"]
+```
+
 ## Summary
 
 The Theory of Computation provides the mathematical foundations for understanding what computers can and cannot do. Key concepts include:

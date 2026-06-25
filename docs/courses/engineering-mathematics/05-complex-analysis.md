@@ -530,6 +530,99 @@ where $\hat{x}(t)$ is the Hilbert transform. The analytic signal enables:
 - Conformal mapping uses analytic functions to solve PDEs on complicated domains
 - Control stability determined by pole locations in complex plane
 
+### TypeScript: Laurent Series Expansion
+
+```typescript
+function laurentSeries(
+  f: (z: Complex, re: number, im: number) => Complex,
+  z0: Complex, nMin: number, nMax: number, z: Complex
+): Complex {
+  let sum = new Complex(0, 0);
+  for (let n = nMin; n <= nMax; n++) {
+    const an = laurentCoeff(f, z0, n, 80);
+    const term = z.sub(z0).pow(n);
+    sum = sum.add(an.mul(term));
+  }
+  return sum;
+}
+
+function laurentCoeff(
+  f: (z: Complex, re: number, im: number) => Complex,
+  z0: Complex, n: number, M: number
+): Complex {
+  // aₙ = (1/2πi) ∮ f(z)/(z-z₀)^{n+1} dz — numerical contour integral
+  const r = 0.3;
+  let sum = new Complex(0, 0);
+  for (let k = 0; k < M; k++) {
+    const theta = (2 * Math.PI * k) / M;
+    const z = new Complex(z0.re + r * Math.cos(theta), z0.im + r * Math.sin(theta));
+    const dz = new Complex(-r * Math.sin(theta) * (2 * Math.PI / M), r * Math.cos(theta) * (2 * Math.PI / M));
+    const integrand = f(z, z.re, z.im).div(z.sub(z0).pow(n + 1));
+    sum = sum.add(integrand.mul(dz));
+  }
+  return sum.div(new Complex(0, 2 * Math.PI));
+}
+
+### TypeScript: Residue Calculator and Contour Integration
+
+```typescript
+// Residue at simple pole via limit: Res(f,z₀) = lim_{z→z₀} (z-z₀)f(z)
+function residueSimple(f: (z: Complex, re: number, im: number) => Complex, z0: Complex, eps: number = 1e-6): Complex {
+  const zp = new Complex(z0.re + eps, z0.im);
+  const zm = new Complex(z0.re - eps, z0.im);
+  return zp.sub(z0).mul(f(zp, zp.re, zp.im)).add(zm.sub(z0).mul(f(zm, zm.re, zm.im))).mul(new Complex(0.5, 0));
+}
+
+// General contour integral evaluator
+function contourIntegral(
+  f: (z: Complex, re: number, im: number) => Complex,
+  center: Complex, radius: number, n: number = 10000
+): Complex {
+  let sum = new Complex(0, 0);
+  for (let k = 0; k < n; k++) {
+    const t1 = (2 * Math.PI * k) / n, t2 = (2 * Math.PI * (k + 1)) / n;
+    const z1 = new Complex(center.re + radius * Math.cos(t1), center.im + radius * Math.sin(t1));
+    const z2 = new Complex(center.re + radius * Math.cos(t2), center.im + radius * Math.sin(t2));
+    const dz = new Complex(z2.re - z1.re, z2.im - z1.im);
+    sum = sum.add(f(z1, z1.re, z1.im).mul(dz));
+  }
+  return sum;
+}
+
+// Example: f(z) = e^z / (z - 1). Pole at z=1, Res = e¹ ≈ 2.71828
+const fEx = (z: Complex, _re: number, _im: number) =>
+  new Complex(Math.exp(z.re) * Math.cos(z.im), Math.exp(z.re) * Math.sin(z.im)).div(z.sub(new Complex(1, 0)));
+const res = residueSimple(fEx, new Complex(1, 0));
+console.log(`Res(e^z/(z-1), 1): ${res.re.toFixed(4)} + ${res.im.toFixed(4)}i (expected: 2.7183 + 0i)`);
+
+// Verify residue theorem: ∮ f(z) dz = 2πi · Res = 2πi · e ≈ 17.079i
+const ci = contourIntegral(fEx, new Complex(1, 0), 0.5, 5000);
+const expected = new Complex(0, 2 * Math.PI).mul(new Complex(Math.E, 0));
+console.log(`∮ e^z/(z-1) dz: ${ci.re.toFixed(4)} + ${ci.im.toFixed(4)}i (expected: ${expected.re.toFixed(4)} + ${expected.im.toFixed(4)}i)`);
+
+// Example 2: f(z) = 1/(z²+1) = 1/((z-i)(z+i)). Res at z=i: Res = 1/(2i) = -i/2
+const fPole = (z: Complex, _re: number, _im: number) =>
+  new Complex(1, 0).div(new Complex(z.re * z.re - z.im * z.im + 1, 2 * z.re * z.im));
+const resI = residueSimple(fPole, new Complex(0, 1));
+console.log(`Res(1/(z²+1), i): ${resI.re.toFixed(4)} + ${resI.im.toFixed(4)}i (expected: 0 - 0.5i)`);
+
+// Map complex grid: output magnitude for visualization purposes
+function complexMagnitudeGrid(f: (z: Complex, re: number, im: number) => Complex, size: number): number[][] {
+  const grid: number[][] = [];
+  for (let i = 0; i < size; i++) {
+    grid[i] = [];
+    for (let j = 0; j < size; j++) {
+      const z = new Complex(-2 + 4 * i / size, -2 + 4 * j / size);
+      grid[i][j] = f(z, z.re, z.im).mag();
+    }
+  }
+  return grid;
+}
+// Example: |f(z)| for f(z) = z² on [-2,2]×[-2,2]
+const z2grid = complexMagnitudeGrid((z) => z.mul(z), 5);
+console.log("|z²| grid (5×5 sample):", z2grid.map(r => r.map(v => v.toFixed(1))));
+```
+
 ## Exercises
 
 ### Review Questions

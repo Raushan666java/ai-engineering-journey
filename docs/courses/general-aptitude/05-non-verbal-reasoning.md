@@ -655,6 +655,52 @@ flowchart TD
 
 13. Star at 270° rotation with outline fill | 14. Uses formula: depends on partition count | 15. 4 quarter-circles (one in each quadrant) | 16. Nets with overlapping faces when folded | 17. Triangle with 4 internal lines | 18. MATHS inverted vertically (water reflection)
 
+### TypeScript: Pattern Sequence Generator & Cube Simulation
+
+```typescript
+class PatternGenerator {
+  static rotationAngles(count: number): number[] {
+    return Array.from({ length: count }, (_, i) => i * 45);
+  }
+  static alternatingSymbols(n: number): string[] {
+    return Array.from({ length: n }, (_, i) => i % 2 === 0 ? "●" : "○");
+  }
+  static shapeCount(shape: string, baseCount: number, step: number, terms: number): number[] {
+    return Array.from({ length: terms }, (_, i) => baseCount + i * step);
+  }
+}
+
+class CubeSimulator {
+  static oppositeFaces: Record<string, string> = { "1": "6", "2": "5", "3": "4", "4": "3", "5": "2", "6": "1" };
+  static adjacency: Record<string, string[]> = {
+    "1": ["2", "3", "4", "5"], "2": ["1", "3", "4", "6"],
+    "3": ["1", "2", "5", "6"], "4": ["1", "2", "5", "6"],
+    "5": ["1", "3", "4", "6"], "6": ["2", "3", "4", "5"],
+  };
+  static isAdjacent(a: number, b: number): boolean {
+    return CubeSimulator.adjacency[String(a)]?.includes(String(b)) ?? false;
+  }
+  static isValidView(top: number, front: number, right: number): boolean {
+    return CubeSimulator.isAdjacent(top, front) && CubeSimulator.isAdjacent(top, right) && CubeSimulator.isAdjacent(front, right);
+  }
+}
+
+class FigureCounter {
+  static squaresInGrid(rows: number, cols: number): number {
+    let total = 0;
+    for (let s = 1; s <= Math.min(rows, cols); s++) total += (rows - s + 1) * (cols - s + 1);
+    return total;
+  }
+  static trianglesInSegments(baseSegments: number): number {
+    return (baseSegments * (baseSegments + 2) * (2 * baseSegments + 1)) / 8;
+  }
+}
+
+console.log("Rotation:", PatternGenerator.rotationAngles(5));
+console.log("Squares (3x3):", FigureCounter.squaresInGrid(3, 3));
+console.log("Valid dice view:", CubeSimulator.isValidView(1, 2, 3));
+```
+
 ## Summary
 
 - Figure series: identify the rule from first 2-3 figures; apply to predict next

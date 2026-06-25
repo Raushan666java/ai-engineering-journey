@@ -565,6 +565,91 @@ console.log('Tips:', result.optimizationTips);
 
 ---
 
+### Multi-Stage Build Optimizer
+
+Multi-stage builds reduce final image size by separating build and runtime dependencies. The following tool analyzes Dockerfiles and recommends optimal stage configurations.
+
+```typescript
+interface BuildStage {
+  name: string;
+  baseImage: string;
+  commands: string[];
+  artifacts: string[];
+  estimatedSizeMB: number;
+}
+
+interface OptimizedBuild {
+  stages: BuildStage[];
+  finalImage: string;
+  totalSizeMB: number;
+  savingsPercent: number;
+}
+
+class MultiStageOptimizer {
+  optimize(stages: BuildStage[]): OptimizedBuild {
+    const builder = stages[0];
+    const runtime = stages[stages.length - 1];
+
+    const builderSize = builder.estimatedSizeMB;
+    const monolithicSize = stages.reduce((s, stage) => s + stage.estimatedSizeMB, 0);
+    const finalSize = runtime.estimatedSizeMB;
+    const savingsPercent = Math.round((1 - finalSize / monolithicSize) * 100);
+
+    return {
+      stages,
+      finalImage: runtime.name,
+      totalSizeMB: finalSize,
+      savingsPercent,
+    };
+  }
+
+  suggestCopyOptimizations(stages: BuildStage[]): string[] {
+    const suggestions: string[] = [];
+    for (let i = 0; i < stages.length - 1; i++) {
+      const source = stages[i];
+      const target = stages[i + 1];
+      for (const artifact of source.artifacts) {
+        if (!target.commands.some(c => c.includes(artifact))) {
+          suggestions.push(`Stage "${source.name}" produces "${artifact}" but stage "${target.name}" never copies it`);
+        }
+      }
+    }
+    return suggestions;
+  }
+
+  compareStrategies(strategies: BuildStage[][]): OptimizedBuild[] {
+    return strategies.map(s => this.optimize(s));
+  }
+}
+
+const optimizer = new MultiStageOptimizer();
+const nodeAppStages: BuildStage[] = [
+  {
+    name: 'builder',
+    baseImage: 'node:20-alpine',
+    commands: ['WORKDIR /app', 'COPY package*.json .', 'RUN npm ci', 'COPY . .', 'RUN npm run build'],
+    artifacts: ['dist/', 'node_modules/'],
+    estimatedSizeMB: 350,
+  },
+  {
+    name: 'runner',
+    baseImage: 'node:20-slim',
+    commands: ['WORKDIR /app', 'COPY --from=builder /app/dist ./dist', 'COPY --from=builder /app/node_modules ./node_modules'],
+    artifacts: [],
+    estimatedSizeMB: 120,
+  },
+];
+
+const result = optimizer.optimize(nodeAppStages);
+console.log(`Final image: ${result.finalImage}, Size: ${result.totalSizeMB}MB`);
+console.log(`Savings: ${result.savingsPercent}% vs monolithic`);
+console.log('Suggestions:', optimizer.suggestCopyOptimizations(nodeAppStages).join('; ') || 'none');
+```
+
+**What this demonstrates:** Automated multi-stage analysis quantifies image size savings and identifies optimization opportunities in container build pipelines.
+
+---
+
 ## Practical Takeaways
 
 1. **Use specific base image tags.** `node:20-alpine`, never `node:latest`.

@@ -350,6 +350,102 @@ Codes: $A:0$, $B:101$, $C:100$, $D:111$, $E:1101$, $F:1100$. Total bits: $45 \cd
 
 **Example 10.10** (Perfect binary tree). A perfect binary tree of height $h = 3$ has $2^{h+1} - 1 = 15$ nodes and $2^h = 8$ leaves.
 
+## TypeScript Implementations
+
+```typescript
+// --- Binary Tree Node & Builder ---
+class BTNode<T> {
+  constructor(
+    public value: T,
+    public left: BTNode<T> | null = null,
+    public right: BTNode<T> | null = null
+  ) {}
+}
+
+function buildBST(sorted: number[], lo = 0, hi = sorted.length - 1): BTNode<number> | null {
+  if (lo > hi) return null;
+  const mid = Math.floor((lo + hi) / 2);
+  const node = new BTNode(sorted[mid]);
+  node.left = buildBST(sorted, lo, mid - 1);
+  node.right = buildBST(sorted, mid + 1, hi);
+  return node;
+}
+
+// --- Tree Traversals ---
+function inorder<T>(node: BTNode<T> | null, out: T[] = []): T[] {
+  if (!node) return out;
+  inorder(node.left, out); out.push(node.value); inorder(node.right, out);
+  return out;
+}
+function preorder<T>(node: BTNode<T> | null, out: T[] = []): T[] {
+  if (!node) return out;
+  out.push(node.value); preorder(node.left, out); preorder(node.right, out);
+  return out;
+}
+function postorder<T>(node: BTNode<T> | null, out: T[] = []): T[] {
+  if (!node) return out;
+  postorder(node.left, out); postorder(node.right, out); out.push(node.value);
+  return out;
+}
+
+const bst = buildBST([1, 2, 3, 4, 5, 6, 7]);
+console.log('Inorder:', inorder(bst));     // [1,2,3,4,5,6,7]
+console.log('Preorder:', preorder(bst));   // [4,2,1,3,6,5,7]
+console.log('Postorder:', postorder(bst)); // [1,3,2,5,7,6,4]
+
+// --- BST Validator ---
+function isValidBST(node: BTNode<number> | null, min = -Infinity, max = Infinity): boolean {
+  if (!node) return true;
+  if (node.value <= min || node.value >= max) return false;
+  return isValidBST(node.left, min, node.value) && isValidBST(node.right, node.value, max);
+}
+console.log('Is valid BST:', isValidBST(bst)); // true
+
+// --- Tree Height & Size ---
+function treeHeight<T>(node: BTNode<T> | null): number {
+  if (!node) return -1;
+  return 1 + Math.max(treeHeight(node.left), treeHeight(node.right));
+}
+function treeSize<T>(node: BTNode<T> | null): number {
+  if (!node) return 0;
+  return 1 + treeSize(node.left) + treeSize(node.right);
+}
+console.log('Height:', treeHeight(bst)); // 2
+console.log('Size:', treeSize(bst));     // 7
+
+// --- Kruskal's MST ---
+function kruskal(vertices: number, edges: [number, number, number][]): [number, number, number][] {
+  const parent = Array.from({ length: vertices }, (_, i) => i);
+  const find = (x: number): number => parent[x] === x ? x : parent[x] = find(parent[x]);
+  const union = (a: number, b: number) => parent[find(a)] = find(b);
+  const sorted = [...edges].sort((a, b) => a[2] - b[2]);
+  const mst: [number, number, number][] = [];
+  for (const [u, v, w] of sorted) {
+    if (find(u) !== find(v)) { union(u, v); mst.push([u, v, w]); }
+  }
+  return mst;
+}
+const graph5 = [0,1,2,3,4];
+const edges5: [number, number, number][] = [[0,1,2],[0,3,6],[1,2,3],[1,3,8],[1,4,5],[2,4,7],[3,4,9]];
+console.log('MST:', kruskal(5, edges5)); // [[0,1,2],[1,2,3],[1,4,5],[0,3,6]]
+
+// --- Level-Order Traversal ---
+function levelOrder<T>(root: BTNode<T> | null): T[][] {
+  if (!root) return [];
+  const result: T[][] = [];
+  let queue: BTNode<T>[] = [root];
+  while (queue.length) {
+    const level: T[] = [];
+    const next: BTNode<T>[] = [];
+    for (const n of queue) { level.push(n.value); if (n.left) next.push(n.left); if (n.right) next.push(n.right); }
+    result.push(level);
+    queue = next;
+  }
+  return result;
+}
+console.log('Level-order:', levelOrder(bst)); // [[4],[2,6],[1,3,5,7]]
+```
+
 ## Summary
 
 - A tree is a connected acyclic graph with $n$ vertices and $n-1$ edges.

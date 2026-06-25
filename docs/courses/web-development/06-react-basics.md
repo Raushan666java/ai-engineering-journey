@@ -555,6 +555,51 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: React Component Generator & Hook Tester
+
+```typescript
+interface ComponentConfig {
+  name: string; props?: Record<string, string>; state?: Record<string, string>;
+  children?: boolean; hooks?: string[];
+}
+class ComponentGenerator {
+  static generateJSX(config: ComponentConfig): string {
+    const props = config.props ? Object.keys(config.props).map(k => `${k}: ${config.props[k]}`).join("; ") : "";
+    const state = config.state ? Object.keys(config.state).map(k => {
+      return `const [${k}, set${k.charAt(0).toUpperCase() + k.slice(1)}] = useState<${config.state![k]}>(initial${k.charAt(0).toUpperCase() + k.slice(1)});`;
+    }).join("\n  ") : "";
+    const hooks = config.hooks?.map(h => `use${h}();`).join("\n  ") ?? "";
+    return `import { useState, useEffect } from "react";
+
+interface ${config.name}Props { ${props} }
+
+export const ${config.name}: React.FC<${config.name}Props> = ({ ${Object.keys(config.props ?? {}).join(", ")} }) => {
+  ${state}
+  ${hooks}
+  return <div>{/* ${config.name} content */}</div>;
+};`;
+  }
+
+  static formField(name: string, type: string, label: string): string {
+    return `const [${name}, set${name.charAt(0).toUpperCase() + name.slice(1)}] = useState("");`;
+  }
+}
+
+class HookSimulator {
+  static useState<T>(initial: T): [T, (val: T) => void] {
+    let state = initial;
+    const setState = (val: T) => { state = val; };
+    return [state, setState];
+  }
+  static useReducer<S, A>(reducer: (state: S, action: A) => S, initial: S): [S, (action: A) => void] {
+    let state = initial;
+    return [state, (action: A) => { state = reducer(state, action); }];
+  }
+}
+
+console.log(ComponentGenerator.generateJSX({ name: "UserCard", props: { name: "string", age: "number" }, state: { editing: "boolean" } }));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** `useEffect` handles side effects with a cleanup function and dependency array for precise execution control.

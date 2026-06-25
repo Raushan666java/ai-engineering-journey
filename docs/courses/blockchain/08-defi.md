@@ -605,6 +605,144 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 **B) DAO governance is transparent and executed through on-chain voting.** In a DAO, all proposals, votes, and treasury movements are recorded on-chain. This makes governance transparent and auditable, unlike traditional corporate governance which often happens behind closed doors.
 </details>
 
+### TypeScript: AMM Constant Product Simulator
+
+```typescript
+class AMMPool {
+  reserveA: number; reserveB: number; fee = 0.003; k: number;
+
+  constructor(reserveA: number, reserveB: number) {
+    this.reserveA = reserveA;
+    this.reserveB = reserveB;
+    this.k = reserveA * reserveB;
+  }
+
+  swap(inputIsA: boolean, inputAmount: number): number {
+    const inputWithFee = inputAmount * (1 - this.fee);
+    if (inputIsA) {
+      const newA = this.reserveA + inputWithFee;
+      const newB = this.k / newA;
+      const output = this.reserveB - newB;
+      this.reserveA = newA;
+      this.reserveB = newB;
+      return output;
+    } else {
+      const newB = this.reserveB + inputWithFee;
+      const newA = this.k / newB;
+      const output = this.reserveA - newA;
+      this.reserveB = newB;
+      this.reserveA = newA;
+      return output;
+    }
+  }
+
+  getPrice(inputIsA: boolean): number {
+    return inputIsA ? this.reserveB / this.reserveA : this.reserveA / this.reserveB;
+  }
+
+  getSlippage(inputIsA: boolean, inputAmount: number): number {
+    const spotPrice = this.getPrice(inputIsA);
+    const output = this.swap(inputIsA, inputAmount);
+    this.reverseSwap(inputIsA, inputAmount, output);
+    const effectivePrice = inputAmount / output;
+    return Math.abs(effectivePrice - spotPrice) / spotPrice;
+  }
+
+  private reverseSwap(inputIsA: boolean, inputAmount: number, output: number): void {
+    if (inputIsA) {
+      this.reserveA -= inputAmount * (1 - this.fee);
+      this.reserveB += output;
+    } else {
+      this.reserveB -= inputAmount * (1 - this.fee);
+      this.reserveA += output;
+    }
+  }
+
+  addLiquidity(amountA: number, amountB: number): number {
+    const shares = Math.min(amountA / this.reserveA, amountB / this.reserveB);
+    this.reserveA += amountA;
+    this.reserveB += amountB;
+    this.k = this.reserveA * this.reserveB;
+    return shares;
+  }
+}
+```
+
+### TypeScript: Liquidity Pool Simulator
+
+```typescript
+class LiquidityPoolSimulator {
+  private pool: AMMPool;
+  private lpShares: number;
+
+  constructor(initialA: number, initialB: number) {
+    this.pool = new AMMPool(initialA, initialB);
+    this.lpShares = Math.sqrt(initialA * initialB);
+  }
+
+  provide(amountA: number, amountB: number): number {
+    const shares = this.pool.addLiquidity(amountA, amountB);
+    this.lpShares += shares * this.lpShares;
+    return this.lpShares;
+  }
+
+  remove(shares: number): { amountA: number; amountB: number } {
+    const ratio = shares / this.lpShares;
+    const amountA = this.pool.reserveA * ratio;
+    const amountB = this.pool.reserveB * ratio;
+    this.pool.reserveA -= amountA;
+    this.pool.reserveB -= amountB;
+    this.pool.k = this.pool.reserveA * this.pool.reserveB;
+    this.lpShares -= shares;
+    return { amountA, amountB };
+  }
+
+  simulateTrades(trades: { isA: boolean; amount: number }[]): void {
+    for (const trade of trades) this.pool.swap(trade.isA, trade.amount);
+  }
+
+  getLPValue(tokenAPrice: number, tokenBPrice: number): number {
+    return this.pool.reserveA * tokenAPrice + this.pool.reserveB * tokenBPrice;
+  }
+}
+```
+
+### TypeScript: Impermanent Loss Calculator
+
+```typescript
+class ImpermanentLossCalculator {
+  static calculate(priceRatio: number): number {
+    const sqrtR = Math.sqrt(priceRatio);
+    return ((2 * sqrtR) / (1 + priceRatio) - 1) * 100;
+  }
+
+  static compareStrategies(
+    initialA: number,
+    initialB: number,
+    priceA: number,
+    finalPriceA: number
+  ): { hodlValue: number; lpValue: number; ilPercent: number; feesEarned: number } {
+    const initialValue = initialA * priceA + initialB * 1;
+    const priceRatio = finalPriceA / priceA;
+    const hodlValue = initialA * finalPriceA + initialB * 1;
+    const sqrtR = Math.sqrt(priceRatio);
+    const lpAValue = initialA * sqrtR * finalPriceA;
+    const lpBValue = (initialB / sqrtR) * 1;
+    const lpValue = lpAValue + lpBValue;
+    const ilPercent = ((lpValue - hodlValue) / hodlValue) * 100;
+    const volumeSimulated = Math.abs(initialA * finalPriceA - initialB) * 0.1;
+    const feesEarned = volumeSimulated * 0.003;
+    return { hodlValue, lpValue, ilPercent, feesEarned };
+  }
+
+  static breakEvenVolume(priceRatio: number, poolTVL: number, fee: number): number {
+    const il = this.calculate(priceRatio);
+    const ilAmount = (Math.abs(il) / 100) * poolTVL;
+    return ilAmount / fee;
+  }
+}
+```
+
 ## Summary
 
 - DeFi provides financial services without intermediaries through smart contracts.

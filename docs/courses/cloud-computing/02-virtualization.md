@@ -550,6 +550,185 @@ class MigrationEstimator {
 }
 ```
 
+### TypeScript: Hypervisor VM Scheduler Simulator
+
+```typescript
+interface VirtualMachine {
+  id: string;
+  vCPUs: number;
+  memoryGB: number;
+  diskGB: number;
+  hostAffinity: string[];
+  state: "running" | "stopped" | "paused";
+}
+
+interface PhysicalHost {
+  id: string;
+  totalVCPUs: number;
+  totalMemoryGB: number;
+  totalDiskGB: number;
+  usedVCPUs: number;
+  usedMemoryGB: number;
+  usedDiskGB: number;
+}
+
+class HypervisorScheduler {
+  private hosts: PhysicalHost[] = [];
+  private vms: Map<string, VirtualMachine> = new Map();
+  private placement: Map<string, string> = new Map();
+
+  addHost(host: Omit<PhysicalHost, "usedVCPUs" | "usedMemoryGB" | "usedDiskGB">): void {
+    this.hosts.push({ ...host, usedVCPUs: 0, usedMemoryGB: 0, usedDiskGB: 0 });
+  }
+
+  createVM(vm: VirtualMachine): boolean {
+    this.vms.set(vm.id, vm);
+    return this.scheduleVM(vm.id);
+  }
+
+  private scheduleVM(vmId: string): boolean {
+    const vm = this.vms.get(vmId)!;
+    const candidates = this.hosts
+      .filter((h) =>
+        h.usedVCPUs + vm.vCPUs <= h.totalVCPUs &&
+        h.usedMemoryGB + vm.memoryGB <= h.totalMemoryGB &&
+        h.usedDiskGB + vm.diskGB <= h.totalDiskGB
+      )
+      .sort((a, b) => {
+        const aScore = a.usedVCPUs / a.totalVCPUs + a.usedMemoryGB / a.totalMemoryGB;
+        const bScore = b.usedVCPUs / b.totalVCPUs + b.usedMemoryGB / b.totalMemoryGB;
+        return aScore - bScore;
+      });
+
+    if (candidates.length === 0) return false;
+    const host = candidates[0];
+    host.usedVCPUs += vm.vCPUs;
+    host.usedMemoryGB += vm.memoryGB;
+    host.usedDiskGB += vm.diskGB;
+    this.placement.set(vmId, host.id);
+    this.vms.set(vmId, { ...vm, state: "running" });
+    return true;
+  }
+
+  stopVM(vmId: string): void {
+    const vm = this.vms.get(vmId);
+    if (!vm || vm.state === "stopped") return;
+    const hostId = this.placement.get(vmId);
+    if (hostId) {
+      const host = this.hosts.find((h) => h.id === hostId)!;
+      host.usedVCPUs -= vm.vCPUs;
+      host.usedMemoryGB -= vm.memoryGB;
+      host.usedDiskGB -= vm.diskGB;
+    }
+    this.vms.set(vmId, { ...vm, state: "stopped" });
+    this.placement.delete(vmId);
+  }
+
+  getConsolidationReport(): { hostId: string; vms: string[]; cpuUtil: number; memUtil: number }[] {
+    return this.hosts.map((h) => {
+      const assignedVMs = [...this.placement.entries()]
+        .filter(([, hostId]) => hostId === h.id)
+        .map(([vmId]) => vmId);
+      return {
+        hostId: h.id,
+        vms: assignedVMs,
+        cpuUtil: Math.round((h.usedVCPUs / h.totalVCPUs) * 100),
+        memUtil: Math.round((h.usedMemoryGB / h.totalMemoryGB) * 100),
+      };
+    });
+  }
+
+  getVMCount(): number { return this.vms.size; }
+  getRunningVMCount(): number { return [...this.vms.values()].filter((v) => v.state === "running").length; }
+  getUtilization(): number {
+    const totalCPU = this.hosts.reduce((s, h) => s + h.totalVCPUs, 0);
+    const usedCPU = this.hosts.reduce((s, h) => s + h.usedVCPUs, 0);
+    return Math.round((usedCPU / totalCPU) * 100);
+  }
+}
+
+const sched = new HypervisorScheduler();
+sched.addHost({ id: "host-1", totalVCPUs: 32, totalMemoryGB: 256, totalDiskGB: 4000 });
+sched.addHost({ id: "host-2", totalVCPUs: 32, totalMemoryGB: 256, totalDiskGB: 4000 });
+
+["web-01", "web-02", "db-01", "cache-01", "worker-01", "worker-02"].forEach((id) => {
+  sched.createVM({ id, vCPUs: 4, memoryGB: 16, diskGB: 100, hostAffinity: ["host-1", "host-2"], state: "running" });
+});
+
+console.log("VM consolidation report:");
+console.table(sched.getConsolidationReport());
+console.log(`Total VMs: ${sched.getVMCount()}, Running: ${sched.getRunningVMCount()}, Util: ${sched.getUtilization()}%`);
+```
+
+### TypeScript: Memory Balloon Manager
+
+```typescript
+class MemoryBalloonManager {
+  private hostTotalGB: number;
+  private vms: Map<string, { hardLimit: number; currentUsage: number; weight: number; balloonInflated: number }> = new Map();
+
+  constructor(hostTotalGB: number) { this.hostTotalGB = hostTotalGB; }
+
+  registerVM(id: string, hardLimitGB: number, weight: number = 1): void {
+    this.vms.set(id, { hardLimit: hardLimitGB, currentUsage: hardLimitGB, weight, balloonInflated: 0 });
+  }
+
+  getOvercommitRatio(): number {
+    const totalHard = [...this.vms.values()].reduce((s, v) => s + v.hardLimit, 0);
+    return Math.round((totalHard / this.hostTotalGB) * 100) / 100;
+  }
+
+  getUsedMemory(): number {
+    return [...this.vms.values()].reduce((s, v) => s + v.currentUsage, 0);
+  }
+
+  inflateBalloons(targetReclaimGB: number): Record<string, number> {
+    const sorted = [...this.vms.entries()]
+      .filter(([, v]) => v.currentUsage > v.hardLimit * 0.3)
+      .sort(([, a], [, b]) => a.weight - b.weight);
+
+    let reclaimed = 0;
+    const result: Record<string, number> = {};
+
+    for (const [id, vm] of sorted) {
+      if (reclaimed >= targetReclaimGB) break;
+      const minMemory = vm.hardLimit * 0.3;
+      const availableReclaim = vm.currentUsage - minMemory;
+      const reclaimNow = Math.min(availableReclaim, targetReclaimGB - reclaimed);
+      vm.currentUsage -= reclaimNow;
+      vm.balloonInflated += reclaimNow;
+      reclaimed += reclaimNow;
+      result[id] = reclaimNow;
+    }
+    return result;
+  }
+
+  deflateAll(): void {
+    for (const vm of this.vms.values()) {
+      vm.currentUsage = vm.hardLimit;
+      vm.balloonInflated = 0;
+    }
+  }
+
+  getPressureReport(): { id: string; usageGB: number; limitGB: number; balloonGB: number; }[] {
+    return [...this.vms.entries()].map(([id, v]) => ({
+      id,
+      usageGB: Math.round(v.currentUsage * 10) / 10,
+      limitGB: v.hardLimit,
+      balloonGB: Math.round(v.balloonInflated * 10) / 10,
+    }));
+  }
+}
+
+const balloon = new MemoryBalloonManager(256);
+balloon.registerVM("web-01", 8, 1);
+balloon.registerVM("db-01", 64, 3);
+balloon.registerVM("cache-01", 32, 2);
+console.log("Overcommit ratio:", balloon.getOvercommitRatio());
+console.log("Inflating balloons to reclaim 40GB:", balloon.inflateBalloons(40));
+console.log("Memory pressure:", JSON.stringify(balloon.getPressureReport(), null, 2));
+```
+
 ## Summary
 
 - Hypervisors abstract physical hardware into multiple virtual machines with strong isolation.

@@ -551,6 +551,60 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: DOM Tree Analyzer & Event Delegation Helper
+
+```typescript
+class DOMTreeAnalyzer {
+  static countTags(html: string): Record<string, number> {
+    const counts: Record<string, number> = {};
+    const re = /<(\w+)[^>]*>/g;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(html)) !== null) {
+      const t = m[1].toLowerCase();
+      counts[t] = (counts[t] || 0) + 1;
+    }
+    return counts;
+  }
+  static findDepth(html: string): number {
+    let depth = 0, max = 0;
+    const selfClosing = new Set(["br", "hr", "img", "input", "meta", "link"]);
+    const re = /<\/?(\w+)[^>]*>/g;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(html)) !== null) {
+      if (m[0][1] === "/") depth--;
+      else if (!selfClosing.has(m[1].toLowerCase())) max = Math.max(max, ++depth);
+    }
+    return max;
+  }
+}
+
+class EventDelegator {
+  static selector(eventType: string, selector: string, handler: string): string {
+    return `document.addEventListener("${eventType}", (e) => {
+  const target = e.target.closest("${selector}");
+  if (target) { ${handler} }
+});`;
+  }
+  static throttle<T extends (...args: any[]) => void>(fn: T, ms: number): T {
+    let last = 0;
+    return ((...args: any[]) => {
+      const now = Date.now();
+      if (now - last >= ms) { last = now; fn(...args); }
+    }) as T;
+  }
+}
+
+class FormDataSimulator {
+  static serialize(form: Record<string, string>): string {
+    return Object.entries(form).map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`).join("&");
+  }
+}
+
+console.log("Tags:", DOMTreeAnalyzer.countTags("<div><p><span>Hi</span></p><img></div>"));
+console.log("Depth:", DOMTreeAnalyzer.findDepth("<div><section><article><p>Deep</p></article></section></div>"));
+console.log("Throttled:", EventDelegator.throttle(() => console.log("ok"), 1000).toString().slice(0, 50) + "...");
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** `FormData` provides a convenient interface for capturing form data including file uploads.

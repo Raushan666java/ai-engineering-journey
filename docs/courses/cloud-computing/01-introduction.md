@@ -450,6 +450,138 @@ EOL Reporting Tool: retire
 **B) High switching costs due to data egress fees and proprietary APIs.** Data egress fees ($0.05–$0.12/GB) and provider-specific service APIs create economic and technical barriers to switching providers.
 </details>
 
+### TypeScript: Cloud Service Cost Calculator
+
+```typescript
+interface PricingTier {
+  provider: "aws" | "azure" | "gcp";
+  service: string;
+  unitPrice: number;
+  unit: string;
+  freeTier: boolean;
+}
+
+interface CostEstimate {
+  compute: number;
+  storage: number;
+  dataTransfer: number;
+  database: number;
+  total: number;
+}
+
+class CloudCostCalculator {
+  private pricingMatrix: PricingTier[] = [
+    { provider: "aws", service: "compute-t3-medium", unitPrice: 0.0416, unit: "hour", freeTier: false },
+    { provider: "aws", service: "storage-s3-standard", unitPrice: 0.023, unit: "gb-month", freeTier: true },
+    { provider: "aws", service: "data-transfer-out", unitPrice: 0.09, unit: "gb", freeTier: false },
+    { provider: "aws", service: "rds-postgres-t3-medium", unitPrice: 0.068, unit: "hour", freeTier: false },
+    { provider: "azure", service: "compute-b2s", unitPrice: 0.0408, unit: "hour", freeTier: false },
+    { provider: "azure", service: "storage-blob-hot", unitPrice: 0.0208, unit: "gb-month", freeTier: true },
+    { provider: "azure", service: "data-transfer-out", unitPrice: 0.087, unit: "gb", freeTier: false },
+    { provider: "gcp", service: "compute-n2-standard-2", unitPrice: 0.0516, unit: "hour", freeTier: false },
+    { provider: "gcp", service: "storage-standard", unitPrice: 0.026, unit: "gb-month", freeTier: true },
+    { provider: "gcp", service: "data-transfer-out", unitPrice: 0.12, unit: "gb", freeTier: false },
+  ];
+
+  estimateMonthly(params: {
+    provider: "aws" | "azure" | "gcp";
+    instances: number;
+    instanceHours: number;
+    storageGB: number;
+    dataTransferGB: number;
+    useDatabase: boolean;
+  }): CostEstimate {
+    const computeRate = this.pricingMatrix.find(
+      (p) => p.provider === params.provider && p.service.startsWith("compute-")
+    )!;
+    const storageRate = this.pricingMatrix.find(
+      (p) => p.provider === params.provider && p.service.startsWith("storage-")
+    )!;
+    const transferRate = this.pricingMatrix.find(
+      (p) => p.provider === params.provider && p.service === "data-transfer-out"
+    )!;
+    const dbRate = this.pricingMatrix.find(
+      (p) => p.provider === params.provider && p.service.startsWith("rds-")
+    );
+
+    const compute = params.instances * params.instanceHours * computeRate.unitPrice;
+    const storage = params.storageGB * storageRate.unitPrice;
+    const dataTransfer = params.dataTransferGB * transferRate.unitPrice;
+    const database = params.useDatabase && dbRate ? 730 * dbRate.unitPrice : 0;
+
+    return { compute, storage, dataTransfer, database, total: compute + storage + dataTransfer + database };
+  }
+
+  compareProviders(params: Omit<Parameters<CloudCostCalculator["estimateMonthly"]>[0], "provider">): Record<string, CostEstimate> {
+    const results: Record<string, CostEstimate> = {};
+    for (const provider of ["aws", "azure", "gcp"] as const) {
+      results[provider] = this.estimateMonthly({ ...params, provider });
+    }
+    return results;
+  }
+
+  findCheapest(params: Omit<Parameters<CloudCostCalculator["estimateMonthly"]>[0], "provider">): { provider: string; cost: number } {
+    const results = this.compareProviders(params);
+    let best = { provider: "", cost: Infinity };
+    for (const [provider, estimate] of Object.entries(results)) {
+      if (estimate.total < best.cost) { best = { provider, cost: estimate.total }; }
+    }
+    return best;
+  }
+}
+
+const calculator = new CloudCostCalculator();
+const workload = { instances: 3, instanceHours: 730, storageGB: 500, dataTransferGB: 1000, useDatabase: true };
+console.log("AWS monthly:", "$" + calculator.estimateMonthly({ ...workload, provider: "aws" }).total.toFixed(2));
+console.log("Azure monthly:", "$" + calculator.estimateMonthly({ ...workload, provider: "azure" }).total.toFixed(2));
+console.log("GCP monthly:", "$" + calculator.estimateMonthly({ ...workload, provider: "gcp" }).total.toFixed(2));
+console.log("Cheapest:", calculator.findCheapest(workload));
+```
+
+### TypeScript: Region Latency Comparison Tool
+
+```typescript
+interface RegionData {
+  name: string;
+  provider: string;
+  continent: string;
+  latencyFrom: Record<string, number>;
+  complianceCertifications: string[];
+}
+
+class RegionSelector {
+  private regions: RegionData[] = [
+    { name: "us-east-1", provider: "AWS", continent: "North America", latencyFrom: { "New York": 5, "London": 80, "Tokyo": 180, "Sydney": 250 }, complianceCertifications: ["SOC", "PCI", "HIPAA"] },
+    { name: "eu-west-1", provider: "AWS", continent: "Europe", latencyFrom: { "New York": 80, "London": 5, "Tokyo": 250, "Sydney": 280 }, complianceCertifications: ["SOC", "PCI", "GDPR"] },
+    { name: "ap-southeast-1", provider: "AWS", continent: "Asia", latencyFrom: { "New York": 220, "London": 180, "Tokyo": 70, "Sydney": 100 }, complianceCertifications: ["SOC", "PCI"] },
+    { name: "us-central1", provider: "GCP", continent: "North America", latencyFrom: { "New York": 20, "London": 90, "Tokyo": 190, "Sydney": 260 }, complianceCertifications: ["SOC", "PCI", "HIPAA"] },
+    { name: "europe-west1", provider: "GCP", continent: "Europe", latencyFrom: { "New York": 90, "London": 15, "Tokyo": 260, "Sydney": 290 }, complianceCertifications: ["SOC", "PCI", "GDPR"] },
+  ];
+
+  findBestRegion(targetUsers: Record<string, number>, requirements: { minCompliance?: string[]; providers?: string[] }): RegionData[] {
+    const scored = this.regions
+      .filter((r) => !requirements.providers || requirements.providers.includes(r.provider))
+      .filter((r) => !requirements.minCompliance || requirements.minCompliance.every((c) => r.complianceCertifications.includes(c)))
+      .map((r) => {
+        const avgLatency = Object.entries(targetUsers)
+          .reduce((sum, [loc, weight]) => sum + (r.latencyFrom[loc] || 300) * weight, 0)
+          / Object.values(targetUsers).reduce((a, b) => a + b, 0);
+        return { region: r, avgLatency };
+      })
+      .sort((a, b) => a.avgLatency - b.avgLatency);
+
+    return scored.map((s) => s.region);
+  }
+}
+
+const selector = new RegionSelector();
+const topRegions = selector.findBestRegion(
+  { "New York": 40, "London": 30, "Tokyo": 20, "Sydney": 10 },
+  { providers: ["AWS", "GCP"] }
+);
+console.log("Top regions for user distribution:", topRegions.slice(0, 2).map((r) => r.name + " (" + r.provider + ")").join(", "));
+```
+
 ## Summary
 
 Cloud computing represents a paradigm shift from capital-intensive, fixed-capacity IT infrastructure to an elastic, pay-per-use utility model. The five essential characteristics of on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service define the boundaries of true cloud computing. The three service models (IaaS, PaaS, SaaS) offer increasing levels of abstraction, while deployment models (public, private, hybrid, community, multi-cloud) provide flexibility in how cloud infrastructure is owned and operated. Cloud economics favor variable workloads through the CAPEX-to-OPEX shift, though careful TCO analysis is required. Organizations must weigh the benefits of agility, scale, and innovation against the challenges of security, compliance, and operational complexity. The 6 Rs framework provides a structured approach to cloud migration, while vendor lock-in awareness and mitigation strategies ensure long-term architectural flexibility.

@@ -564,6 +564,131 @@ function verifyAccountState(
 **B) Patricia tries allow efficient proof of individual account states (key-value queries).** Ethereum needs to efficiently read, update, and prove the state of any account (balance, nonce, storage, code) by address. A Patricia Trie enables efficient key-value lookups and proofs, unlike Bitcoin's transaction-oriented Merkle tree.
 </details>
 
+### TypeScript: Simplified Account State Trie
+
+```typescript
+import { createHash } from "node:crypto";
+
+const sha256 = (d: string): string => createHash("sha256").update(d).digest("hex");
+
+interface AccountState {
+  nonce: number; balance: bigint; storageRoot: string; codeHash: string;
+}
+
+class StateTrie {
+  nodes: Map<string, { children: Map<string, string>; value?: AccountState }> = new Map();
+  root: string = "";
+
+  put(address: string, account: AccountState): void {
+    const hash = sha256(address);
+    const nibbles = hash.split("");
+    let current = this.root;
+    let path = "";
+    for (const nibble of nibbles.slice(0, 8)) {
+      path += nibble;
+      if (!this.nodes.has(path)) {
+        this.nodes.set(path, { children: new Map() });
+        if (current) {
+          const parent = this.nodes.get(current);
+          if (parent) parent.children.set(nibble, path);
+        }
+        if (!this.root) this.root = path;
+      }
+      current = path;
+    }
+    const leaf = this.nodes.get(current);
+    if (leaf) leaf.value = account;
+  }
+
+  get(address: string): AccountState | undefined {
+    const hash = sha256(address);
+    const nibbles = hash.split("").slice(0, 8);
+    let current = this.root;
+    for (const nibble of nibbles) {
+      const node = this.nodes.get(current);
+      if (!node) return undefined;
+      const child = node.children.get(nibble);
+      if (!child) return undefined;
+      current = child;
+    }
+    return this.nodes.get(current)?.value;
+  }
+
+  getRootHash(): string {
+    const entries = [...this.nodes.entries()].filter(([, n]) => n.value);
+    return sha256(entries.map(([k, v]) => k + JSON.stringify(v.value)).join("|"));
+  }
+}
+```
+
+### TypeScript: ABI Encoder / Decoder
+
+```typescript
+class ABIEncoder {
+  static encodeFunctionSignature(sig: string): string {
+    return sha256(sig).slice(0, 8);
+  }
+
+  static encodeUint(value: bigint): string {
+    return value.toString(16).padStart(64, "0");
+  }
+
+  static encodeAddress(addr: string): string {
+    return "0".repeat(24) + addr.slice(2).toLowerCase();
+  }
+
+  static encodeParams(types: string[], values: unknown[]): string {
+    return types.map((t, i) => {
+      const v = values[i];
+      if (t === "uint256") return this.encodeUint(BigInt(v as number));
+      if (t === "address") return this.encodeAddress(v as string);
+      if (t === "bool") return "0".repeat(63) + (v ? "1" : "0");
+      if (t.startsWith("bytes")) return (v as string).padEnd(64, "0");
+      return "";
+    }).join("");
+  }
+
+  static encodeCall(sig: string, types: string[], values: unknown[]): string {
+    return this.encodeFunctionSignature(sig) + this.encodeParams(types, values);
+  }
+}
+```
+
+### TypeScript: Gas Calculator
+
+```typescript
+class GasCalculator {
+  static readonly BASE_TX = 21000;
+  static readonly SSTORE_SET = 22100;
+  static readonly SSTORE_UPDATE = 5000;
+  static readonly SLOAD_COLD = 2100;
+  static readonly SLOAD_WARM = 100;
+  static readonly CALL = 2600;
+  static readonly CREATE = 32000;
+  static readonly LOG = 375;
+  static readonly SHA3 = 30;
+
+  static estimateContractCall(
+    storageWrites: number,
+    storageReads: number,
+    internalCalls: number,
+    logCount: number
+  ): number {
+    let gas = this.BASE_TX;
+    gas += storageWrites * this.SSTORE_SET;
+    gas += storageReads * this.SLOAD_COLD;
+    gas += internalCalls * this.CALL;
+    gas += logCount * this.LOG;
+    return gas;
+  }
+
+  static calculateFee(gasUsed: number, baseFeeGwei: number, priorityGwei: number): string {
+    const totalGwei = BigInt(gasUsed) * BigInt(baseFeeGwei + priorityGwei);
+    return `${totalGwei} Gwei (${Number(totalGwei) / 1e9} ETH)`;
+  }
+}
+```
+
 ## Summary
 
 - Ethereum is a "World Computer" that extends blockchain from payments to general computation.

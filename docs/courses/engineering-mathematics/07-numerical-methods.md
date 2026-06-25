@@ -426,6 +426,128 @@ const { x, u } = solveHeatEquation1D(0.01, 1, 20, 1, initial);
 console.log(`Temperature at center after 1s: ${u[u.length - 1][10].toFixed(2)}°C`);
 ```
 
+### TypeScript Implementation: Newton-Cotes Quadrature
+
+```typescript
+// Composite Simpson's rule (order 4)
+function simpson(f: (x: number) => number, a: number, b: number, n: number = 100): number {
+  if (n % 2 !== 0) n++;
+  const h = (b - a) / n;
+  let sum = f(a) + f(b);
+  for (let i = 1; i < n; i++) sum += (i % 2 === 0 ? 2 : 4) * f(a + i * h);
+  return sum * h / 3;
+}
+
+// Composite Boole's rule (order 6, n multiple of 4)
+function boole(f: (x: number) => number, a: number, b: number, n: number = 100): number {
+  n = Math.max(4, Math.ceil(n / 4) * 4);
+  const h = (b - a) / n;
+  let sum = 7 * (f(a) + f(b));
+  for (let i = 1; i < n; i++) {
+    const x = a + i * h;
+    if (i % 4 === 0) sum += 14 * f(x);
+    else if (i % 2 === 0) sum += 12 * f(x);
+    else sum += 32 * f(x);
+  }
+  return sum * 2 * h / 45;
+}
+
+// Gaussian quadrature (2-point rule)
+function gaussQuad2(f: (x: number) => number, a: number, b: number): number {
+  const x1 = -1 / Math.sqrt(3), x2 = 1 / Math.sqrt(3);
+  const t = (x: number) => (b - a) / 2 * x + (a + b) / 2;
+  return (b - a) / 2 * (f(t(x1)) + f(t(x2)));
+}
+
+// Test: ∫₀¹ e^(-x²) dx ≈ 0.746824
+const gaussian = (x: number) => Math.exp(-x * x);
+console.log(`Simpson ∫₀¹ e^(-x²) dx: ${simpson(gaussian, 0, 1, 100).toFixed(6)} (expected: 0.746824)`);
+console.log(`Boole ∫₀¹ e^(-x²) dx: ${boole(gaussian, 0, 1, 100).toFixed(6)} (expected: 0.746824)`);
+console.log(`Gauss-2 ∫₀¹ e^(-x²) dx: ${gaussQuad2(gaussian, 0, 1).toFixed(6)} (expected: 0.746824)`);
+
+### TypeScript: Jacobi Iteration for Linear Systems
+
+```typescript
+function jacobi(A: number[][], b: number[], tol: number = 1e-8, maxIter: number = 1000): number[] {
+  const n = b.length;
+  let x = new Array(n).fill(0);
+  for (let iter = 0; iter < maxIter; iter++) {
+    const xNew = x.map((_, i) => {
+      let sum = 0;
+      for (let j = 0; j < n; j++) if (j !== i) sum += A[i][j] * x[j];
+      return (b[i] - sum) / A[i][i];
+    });
+    const error = Math.sqrt(xNew.reduce((s, xi, i) => s + (xi - x[i]) ** 2, 0));
+    x = xNew;
+    if (error < tol) break;
+  }
+  return x;
+}
+
+// Solve: 4x - y + z = 7, x - 5y + 2z = -8, 2x + y + 6z = 9
+const A = [[4, -1, 1], [1, -5, 2], [2, 1, 6]];
+const b = [7, -8, 9];
+const sol = jacobi(A, b);
+console.log(`Jacobi: x=${sol[0].toFixed(4)}, y=${sol[1].toFixed(4)}, z=${sol[2].toFixed(4)}`);
+
+// Verify: A·x ≈ b
+const verify = A.map((row, i) => row.reduce((s, aij, j) => s + aij * sol[j], 0));
+console.log(`Verify: A·x = [${verify.map(v => v.toFixed(2)).join(", ")}] ≈ [${b.join(", ")}]`);
+
+### TypeScript: Cubic Spline Interpolation
+
+```typescript
+function cubicSpline(x: number[], y: number[]): (t: number) => number {
+  const n = x.length;
+  const h = x.slice(1).map((xi, i) => xi - x[i]);
+  const α = new Array(n).fill(0);
+  for (let i = 1; i < n - 1; i++)
+    α[i] = (3 / h[i]) * (y[i + 1] - y[i]) - (3 / h[i - 1]) * (y[i] - y[i - 1]);
+  const l = new Array(n).fill(1), μ = new Array(n).fill(0), z = new Array(n).fill(0);
+  for (let i = 1; i < n - 1; i++) {
+    l[i] = 2 * (x[i + 1] - x[i - 1]) - h[i - 1] * μ[i - 1];
+    μ[i] = h[i] / l[i];
+    z[i] = (α[i] - h[i - 1] * z[i - 1]) / l[i];
+  }
+  const c = new Array(n).fill(0), b = new Array(n).fill(0), d = new Array(n).fill(0);
+  for (let j = n - 2; j >= 0; j--) {
+    c[j] = z[j] - μ[j] * c[j + 1];
+    b[j] = (y[j + 1] - y[j]) / h[j] - h[j] * (c[j + 1] + 2 * c[j]) / 3;
+    d[j] = (c[j + 1] - c[j]) / (3 * h[j]);
+  }
+  const spline = (t: number): number => {
+    for (let i = 0; i < n - 1; i++)
+      if (t >= x[i] && t <= x[i + 1]) {
+        const dx = t - x[i];
+        return y[i] + b[i] * dx + c[i] * dx ** 2 + d[i] * dx ** 3;
+      }
+    return NaN;
+  };
+  return spline;
+}
+
+// Interpolate sin(x) at 5 uneven points
+const xs = [0, 0.5, 1.2, 2.0, Math.PI];
+const ys = xs.map(Math.sin);
+const spline = cubicSpline(xs, ys);
+console.log(`Spline(0.8): ${spline(0.8).toFixed(4)} (sin(0.8)=${Math.sin(0.8).toFixed(4)})`);
+console.log(`Spline(1.5): ${spline(1.5).toFixed(4)} (sin(1.5)=${Math.sin(1.5).toFixed(4)})`);
+console.log(`Spline(2.5): ${spline(2.5).toFixed(4)} (sin(2.5)=${Math.sin(2.5).toFixed(4)})`);
+
+// Compare with Lagrange interpolation to show spline avoids Runge phenomenon
+function lagrangeInterp(x: number[], y: number[], t: number): number {
+  let result = 0;
+  for (let i = 0; i < x.length; i++) {
+    let term = y[i];
+    for (let j = 0; j < x.length; j++)
+      if (j !== i) term *= (t - x[j]) / (x[i] - x[j]);
+    result += term;
+  }
+  return result;
+}
+console.log(`Lagrange(0.8): ${lagrangeInterp(xs, ys, 0.8).toFixed(4)} (cubic spline: ${spline(0.8).toFixed(4)})`);
+```
+
 ## Summary
 
 - Root-finding methods (bisection, Newton-Raphson, secant) solve nonlinear equations

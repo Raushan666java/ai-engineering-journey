@@ -596,6 +596,74 @@ console.log(gen.formatMarkdown(notes));
 
 ---
 
+### Branch Strategy Compliance Checker
+
+Enforcing branch strategy policies across teams ensures consistent workflows. The following tool validates branch naming, merge patterns, and lifecycle compliance.
+
+```typescript
+interface BranchRecord {
+  name: string;
+  author: string;
+  created: Date;
+  lastCommit: Date;
+  commitCount: number;
+  aheadBy: number;
+  behindBy: number;
+}
+
+interface BranchPolicy {
+  allowedPrefixes: string[];
+  maxAgeDays: number;
+  maxCommitsAhead: number;
+  requireRebase: boolean;
+}
+
+interface ComplianceReport {
+  compliant: BranchRecord[];
+  violations: { branch: BranchRecord; reason: string }[];
+}
+
+class BranchPolicyEnforcer {
+  check(branches: BranchRecord[], policy: BranchPolicy): ComplianceReport {
+    const violations: { branch: BranchRecord; reason: string }[] = [];
+    const compliant: BranchRecord[] = [];
+
+    for (const b of branches) {
+      const issues: string[] = [];
+      const hasValidPrefix = policy.allowedPrefixes.some(p => b.name.startsWith(p));
+      if (!hasValidPrefix) issues.push(`Name must start with: ${policy.allowedPrefixes.join(', ')}`);
+
+      const ageDays = (Date.now() - b.created.getTime()) / (1000 * 60 * 60 * 24);
+      if (ageDays > policy.maxAgeDays) issues.push(`Stale branch (${Math.round(ageDays)} days old, max ${policy.maxAgeDays})`);
+
+      if (b.behindBy > 0 && policy.requireRebase) issues.push(`Behind ${b.behindBy} commits, rebase required`);
+      if (b.aheadBy > policy.maxCommitsAhead) issues.push(`Too far ahead (${b.aheadBy} commits, max ${policy.maxCommitsAhead})`);
+
+      if (issues.length > 0) violations.push({ branch: b, reason: issues.join('; ') });
+      else compliant.push(b);
+    }
+
+    return { compliant, violations };
+  }
+}
+
+const enforcer = new BranchPolicyEnforcer();
+const policy: BranchPolicy = { allowedPrefixes: ['feature/', 'bugfix/', 'hotfix/'], maxAgeDays: 14, maxCommitsAhead: 20, requireRebase: true };
+const branches: BranchRecord[] = [
+  { name: 'feature/user-auth', author: 'alice', created: new Date('2025-06-10'), lastCommit: new Date(), commitCount: 8, aheadBy: 5, behindBy: 0 },
+  { name: 'old-feature', author: 'bob', created: new Date('2025-01-01'), lastCommit: new Date('2025-03-01'), commitCount: 30, aheadBy: 25, behindBy: 10 },
+  { name: 'bugfix/payment-fix', author: 'charlie', created: new Date('2025-06-20'), lastCommit: new Date(), commitCount: 3, aheadBy: 2, behindBy: 15 },
+];
+
+const report = enforcer.check(branches, policy);
+console.log(`Compliant: ${report.compliant.length}, Violations: ${report.violations.length}`);
+report.violations.forEach(v => console.log(`  ${v.branch.name}: ${v.reason}`));
+```
+
+**What this demonstrates:** Automated branch policy enforcement ensures consistent naming conventions, prevents stale branches, and enforces rebase workflows across development teams.
+
+---
+
 ## Practical Takeaways
 
 1. **Every commit should be a potential release.** Keep the main branch always deployable.

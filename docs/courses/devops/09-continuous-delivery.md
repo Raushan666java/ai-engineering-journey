@@ -452,6 +452,82 @@ orchestrator.promote(release, 'dev', 'staging');
 
 ---
 
+### Canary Release Manager
+
+Canary releases reduce deployment risk by gradually shifting traffic to new versions. The following implementation manages canary deployments with health checks and automated rollback.
+
+```typescript
+interface CanaryConfig {
+  name: string;
+  initialTrafficPercent: number;
+  incrementPercent: number;
+  promotionIntervalMinutes: number;
+  maxErrorRate: number;
+  maxLatencyP99Ms: number;
+}
+
+interface DeploymentMetrics {
+  errorRate: number;
+  latencyP99Ms: number;
+  requestCount: number;
+}
+
+interface CanaryStatus {
+  stage: 'initial' | 'ramping' | 'full' | 'rolled-back';
+  currentTrafficPercent: number;
+  healthy: boolean;
+  reason?: string;
+}
+
+class CanaryReleaseManager {
+  private config: CanaryConfig;
+  private status: CanaryStatus;
+
+  constructor(config: CanaryConfig) {
+    this.config = config;
+    this.status = { stage: 'initial', currentTrafficPercent: config.initialTrafficPercent, healthy: true };
+  }
+
+  promote(metrics: DeploymentMetrics): CanaryStatus {
+    if (metrics.errorRate > this.config.maxErrorRate) {
+      this.status = { stage: 'rolled-back', currentTrafficPercent: 0, healthy: false, reason: `Error rate ${(metrics.errorRate * 100).toFixed(1)}% exceeds ${(this.config.maxErrorRate * 100).toFixed(0)}%` };
+      return this.status;
+    }
+    if (metrics.latencyP99Ms > this.config.maxLatencyP99Ms) {
+      this.status = { stage: 'rolled-back', currentTrafficPercent: 0, healthy: false, reason: `P99 latency ${metrics.latencyP99Ms}ms exceeds ${this.config.maxLatencyP99Ms}ms` };
+      return this.status;
+    }
+
+    const nextTraffic = this.status.currentTrafficPercent + this.config.incrementPercent;
+    if (nextTraffic >= 100) {
+      this.status = { stage: 'full', currentTrafficPercent: 100, healthy: true };
+    } else {
+      this.status = { stage: 'ramping', currentTrafficPercent: nextTraffic, healthy: true };
+    }
+    return this.status;
+  }
+
+  getStatus(): CanaryStatus {
+    return this.status;
+  }
+}
+
+const canary = new CanaryReleaseManager({ name: 'api-v2', initialTrafficPercent: 5, incrementPercent: 15, promotionIntervalMinutes: 5, maxErrorRate: 0.01, maxLatencyP99Ms: 500 });
+const metricsHistory: DeploymentMetrics[] = [
+  { errorRate: 0.002, latencyP99Ms: 120, requestCount: 10000 },
+  { errorRate: 0.015, latencyP99Ms: 450, requestCount: 15000 },
+];
+for (const m of metricsHistory) {
+  const status = canary.promote(m);
+  console.log(`Traffic: ${status.currentTrafficPercent}%, Stage: ${status.stage}, Healthy: ${status.healthy}${status.reason ? ', Reason: ' + status.reason : ''}`);
+  if (status.stage === 'rolled-back' || status.stage === 'full') break;
+}
+```
+
+**What this demonstrates:** Automated canary management with health-based promotion and rollback enables safe, gradual deployments with minimal user impact.
+
+---
+
 ## Practical Takeaways
 
 1. **Use feature flags to decouple deploy from release.** Deploy often, release when ready.

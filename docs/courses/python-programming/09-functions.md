@@ -595,6 +595,122 @@ console.log(counter());  // 11
 | Doc in body | Docstring `"""..."""` | JSDoc `/** ... */` |
 | Anonymous | `lambda` or `def` | `() => {}` arrow function |
 
+### TypeScript Function Overloads & Advanced Patterns
+
+```typescript
+// Python has *args → TypeScript: rest parameters
+function sumAll(...numbers: number[]): number {
+  return numbers.reduce((a, b) => a + b, 0);
+}
+console.log(sumAll(1, 2, 3, 4));  // 10
+
+// Python: **kwargs → TypeScript: destructured object parameter
+function createUser(name: string, options: { age?: number; email?: string }): string {
+  const age = options.age ?? "unknown";
+  const email = options.email ?? "no email";
+  return `${name} (${age}) - ${email}`;
+}
+console.log(createUser("Alice", { age: 30, email: "alice@x.com" }));
+
+// Python: positional-only (/) and keyword-only (*) → TypeScript
+function divide(dividend: number, divisor: number): number {
+  // No positional-only distinction in TypeScript
+  return dividend / divisor;
+}
+// Python: def divide(dividend, divisor, /):
+
+// Python: default argument evaluation (beware mutable defaults)
+// TypeScript: same issue with default objects
+function addItem(item: string, list: string[] = []): string[] {
+  list.push(item);
+  return list;
+}
+// Each call without list creates a new default array (same as Python with None)
+
+// Python: nonlocal → TypeScript: closures work the same
+function makeMultiplier(factor: number): (x: number) => number {
+  return (x: number) => x * factor;  // captures factor
+}
+
+// Python: recursion with type hints
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+// Python: function annotations → TypeScript: compulsory types
+function process(value: string | number): string {
+  if (typeof value === "string") return value.toUpperCase();
+  return value.toFixed(2);  // TypeScript narrows type in each branch
+}
+```
+
+### TypeScript Callback & Async Function Patterns
+
+```typescript
+// Python: function as argument → TypeScript: callback
+function processArray<T, U>(
+  items: T[],
+  callback: (item: T, index: number) => U
+): U[] {
+  return items.map(callback);
+}
+const doubled3 = processArray([1, 2, 3], (x) => x * 2);
+
+// Python: generator vs TypeScript: callback pattern
+function asyncSequence<T>(
+  items: T[],
+  delay: number,
+  callback: (item: T, idx: number) => void
+): void {
+  items.forEach((item, i) => {
+    setTimeout(() => callback(item, i), delay * i);
+  });
+}
+
+// Python: nested functions → TypeScript: closures
+function createLogger(prefix: string) {
+  return {
+    info: (msg: string) => console.log(`[${prefix} INFO] ${msg}`),
+    error: (msg: string) => console.error(`[${prefix} ERROR] ${msg}`),
+  };
+}
+const logger = createLogger("App");
+logger.info("Started");  // [App INFO] Started
+logger.error("Failed");  // [App ERROR] Failed
+
+// Python: function attributes → TypeScript: function properties
+function greet3(name: string): string {
+  return `${greet3.prefix} ${name}!`;
+}
+greet3.prefix = "Hello";
+console.log(greet3("World"));  // Hello World!
+
+// Python: singledispatch → TypeScript: function overloads
+function format(input: string): string;
+function format(input: number): string;
+function format(input: boolean): string;
+function format(input: string | number | boolean): string {
+  if (typeof input === "string") return `"${input}"`;
+  if (typeof input === "number") return input.toFixed(2);
+  return input ? "true" : "false";
+}
+console.log(format(42));       // "42.00"
+console.log(format("hello"));  // '"hello"'
+
+// Python: recursive function with type hints
+function deepCount(obj: Record<string, any>): number {
+  let count = 0;
+  for (const val of Object.values(obj)) {
+    if (typeof val === "object" && val !== null) {
+      count += deepCount(val);
+    }
+    count++;
+  }
+  return count;
+}
+```
+
 ## Summary
 
 - Parameters: positional, keyword, default, `*args`, `**kwargs`, positional-only (`/`), keyword-only (`*`).

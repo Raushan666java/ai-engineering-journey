@@ -643,6 +643,63 @@ const content = fs.readFileSync(
 | File I/O | `pathlib` + built-in functions | `node:fs` module |
 | JSON | `json` module (built-in) | `JSON.parse`/`JSON.stringify` |
 
+### TypeScript Error Handling Patterns
+
+```typescript
+// Python: try/except/else/finally → TypeScript: try/catch/finally
+function readConfig(path: string): string {
+  try {
+    const data = fs.readFileSync(path, "utf-8");
+    return data;
+  } catch (error) {
+    if (error instanceof Error && "code" in error) {
+      const nodeErr = error as NodeJS.ErrnoException;
+      if (nodeErr.code === "ENOENT") {
+        throw new Error(`File not found: ${path}`);
+      }
+      if (nodeErr.code === "EACCES") {
+        throw new Error(`Permission denied: ${path}`);
+      }
+    }
+    throw error;
+  } finally {
+    console.log(`Attempted to read: ${path}`);  // always executes
+  }
+}
+// Python: try/except FileNotFoundError / except PermissionError / finally
+
+// Python: custom exception → TypeScript: custom Error class
+class ValidationError extends Error {
+  constructor(message: string, public readonly field: string) {
+    super(message);
+    this.name = "ValidationError";
+  }
+}
+function validateEmail(email: string): void {
+  if (!email.includes("@")) {
+    throw new ValidationError("Invalid email format", "email");
+  }
+}
+
+// Python: assert → TypeScript: if + throw
+function assert(condition: boolean, message: string): asserts condition {
+  if (!condition) throw new AssertionError(message);
+}
+
+// Python: with statement → TypeScript: Disposable (TS 5.2+)
+class FileHandler implements Disposable {
+  constructor(private path: string) {
+    console.log(`Opening ${path}`);
+  }
+  read(): string { return "content"; }
+  [Symbol.dispose](): void {
+    console.log(`Closing ${path}`);  // auto-called via `using`
+  }
+}
+// Usage: using file = new FileHandler("data.txt");
+// Equivalent Python: with FileHandler("data.txt") as file:
+```
+
 ## Summary
 
 - `try/except/else/finally` handles exceptions; `finally` always executes.

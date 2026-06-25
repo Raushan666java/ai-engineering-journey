@@ -697,6 +697,114 @@ b.decode("utf-8")
 - D) \0
 
 
+```typescript
+// Chapter 5: TypeScript String Equivalents
+// Python: str concatenation
+const greeting: string = "Hello";
+const name: string = "World";
+console.log(greeting + ", " + name + "!");  // "Hello, World!"
+
+// Python: f-strings → TypeScript: template literals
+const age: number = 30;
+console.log(`Name: ${name}, Age: ${age}`);
+// Python equivalent: print(f"Name: {name}, Age: {age}")
+
+// Python: str.split() → TypeScript: .split()
+const sentence: string = "Hello World Python";
+const words: string[] = sentence.split(" ");
+console.log(words);  // ["Hello", "World", "Python"]
+
+// Python: str.join() → TypeScript: .join()
+console.log(words.join(", "));  // "Hello, World, Python"
+// Python: ", ".join(words)
+
+// Python: str.strip() → TypeScript: .trim()
+const padded: string = "  hello  ";
+console.log(padded.trim());  // "hello"
+
+// Python: str.upper() / str.lower()
+console.log("Hello".toUpperCase());  // "HELLO"
+console.log("Hello".toLowerCase());  // "hello"
+
+// Python: str.replace() → TypeScript: .replaceAll()
+const text: string = "cat and dog and cat";
+console.log(text.replaceAll("cat", "bird"));  // "bird and dog and bird"
+// Note: Python uses .replace() (all occurrences by default)
+
+// Python: slicing (s[1:4]) → TypeScript: .slice()
+const s: string = "hello";
+console.log(s.slice(1, 4));   // "ell"  (Python: s[1:4])
+console.log(s.slice(-3));     // "llo"  (Python: s[-3:])
+console.log(s.slice(0, -1));  // "hell" (Python: s[:-1])
+
+// Python: len(s) → TypeScript: .length
+console.log(s.length);  // 5
+
+// Python: str.find() → TypeScript: .indexOf()
+console.log("hello".indexOf("l"));  // 2
+
+// Python: str.startswith() / str.endswith()
+console.log("hello".startsWith("he"));  // true
+console.log("hello".endsWith("lo"));    // true
+```
+
+### More TypeScript String Patterns
+
+```typescript
+// Python: regex sub → TypeScript: replace with RegExp
+const phone = "Call me at 555-123-4567";
+const masked = phone.replace(/\d{4}$/, "XXXX");
+console.log(masked);  // "Call me at 555-123-XXXX"
+
+// Python: str.partition → TypeScript: split with limit
+const email = "user@example.com";
+const [local, domain] = email.split("@");
+console.log(local, domain);  // "user" "example.com"
+
+// Python: str.zfill → TypeScript: padStart
+console.log("42".padStart(5, "0"));  // "00042"
+// Python: "42".zfill(5)
+
+// Python: str.center → TypeScript: padStart + padEnd
+function center(s: string, width: number, fill: string = " "): string {
+  const left = Math.floor((width - s.length) / 2);
+  const right = width - s.length - left;
+  return fill.repeat(left) + s + fill.repeat(right);
+}
+console.log(center("hello", 11, "-"));  // "---hello---"
+
+// Python: str.translate → TypeScript: replace with callback
+const leet = { a: "4", e: "3", l: "1", o: "0" };
+const translated = "hello world".replace(
+  /[aelo]/g,
+  (c) => leet[c as keyof typeof leet]
+);
+console.log(translated);  // "h3ll0 w0rld"
+
+// Python: textwrap.wrap → TypeScript: manual wrapping
+function wrap(text: string, width: number): string[] {
+  const words = text.split(" ");
+  const lines: string[] = [];
+  let current = "";
+  for (const word of words) {
+    if ((current + " " + word).trim().length > width) {
+      lines.push(current.trim());
+      current = word;
+    } else {
+      current += " " + word;
+    }
+  }
+  if (current.trim()) lines.push(current.trim());
+  return lines;
+}
+console.log(wrap("This is a long sentence that needs wrapping", 20));
+
+// Python: str.format_map → TypeScript: template function
+function template(str: string, data: Record<string, string>): string {
+  return str.replace(/\{\{(\w+)\}\}/g, (_, key) => data[key] ?? `{{${key}}}`);
+}
+console.log(template("Hello {{name}}, you are {{age}}", { name: "Bob", age: "25" }));
+```
 
 ## Summary
 

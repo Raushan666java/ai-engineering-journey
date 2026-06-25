@@ -558,6 +558,91 @@ console.log(detector.generateReport(report));
 
 ---
 
+### Ansible Playbook Validator
+
+Validating Ansible playbooks before execution prevents syntax errors, idempotency violations, and security misconfigurations. The following tool performs static analysis on playbook structures.
+
+```typescript
+interface AnsibleTask {
+  name: string;
+  module: string;
+  args: Record<string, unknown>;
+  register?: string;
+  when?: string;
+  notify?: string[];
+}
+
+interface AnsiblePlay {
+  name: string;
+  hosts: string;
+  become: boolean;
+  tasks: AnsibleTask[];
+  handlers?: AnsibleTask[];
+  vars?: Record<string, unknown>;
+}
+
+interface ValidationResult {
+  valid: boolean;
+  errors: string[];
+  warnings: string[];
+}
+
+class PlaybookValidator {
+  private dangerousModules = ['shell', 'command', 'raw', 'script'];
+  private idempotentModules = ['copy', 'template', 'service', 'file', 'user', 'package', 'lineinfile', 'replace', 'systemd'];
+
+  validate(plays: AnsiblePlay[]): ValidationResult {
+    const errors: string[] = [];
+    const warnings: string[] = [];
+
+    for (const play of plays) {
+      if (!play.hosts || play.hosts === 'all') {
+        warnings.push(`Play "${play.name}": Consider restricting hosts from 'all' for safety`);
+      }
+
+      for (let i = 0; i < play.tasks.length; i++) {
+        const task = play.tasks[i];
+        if (!task.name) errors.push(`Task at index ${i} is missing a name`);
+        if (this.dangerousModules.includes(task.module)) {
+          warnings.push(`Task "${task.name}": Using ${task.module} module is not idempotent`);
+        }
+      }
+
+      for (const h of play.handlers || []) {
+        if (!this.idempotentModules.includes(h.module)) {
+          warnings.push(`Handler "${h.name}": ${h.module} may not be idempotent`);
+        }
+      }
+    }
+
+    return { valid: errors.length === 0, errors, warnings };
+  }
+}
+
+const validator = new PlaybookValidator();
+const result = validator.validate([
+  {
+    name: 'Deploy web application',
+    hosts: 'web-servers',
+    become: true,
+    tasks: [
+      { name: 'Install nginx', module: 'package', args: { name: 'nginx', state: 'present' } },
+      { name: 'Copy config', module: 'copy', args: { src: 'nginx.conf', dest: '/etc/nginx/' }, notify: ['Restart nginx'] },
+      { name: 'Start service', module: 'service', args: { name: 'nginx', state: 'started', enabled: true } },
+    ],
+    handlers: [{ name: 'Restart nginx', module: 'service', args: { name: 'nginx', state: 'restarted' } }],
+  },
+]);
+
+console.log('Valid:', result.valid);
+console.log('Errors:', result.errors.join(', ') || 'none');
+console.log('Warnings:', result.warnings.join(', ') || 'none');
+```
+
+**What this demonstrates:** Static playbook analysis catches common issues before runtime, enforcing idempotency, security, and naming conventions across the configuration codebase.
+
+---
+
 ## Practical Takeaways
 
 1. **Use Ansible for agentless configuration management.** No agents to install or maintain.

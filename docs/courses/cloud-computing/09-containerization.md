@@ -571,6 +571,191 @@ class KubeScheduler {
 }
 ```
 
+### TypeScript: Kubernetes Pod Resource Scheduler
+
+```typescript
+interface Pod {
+  name: string;
+  cpuRequest: number;
+  memoryRequestGB: number;
+  cpuLimit: number;
+  memoryLimitGB: number;
+  priority: number;
+  namespace: string;
+}
+
+interface NodeResource {
+  name: string;
+  allocatableCPU: number;
+  allocatableMemoryGB: number;
+  allocatedCPU: number;
+  allocatedMemoryGB: number;
+  labels: Record<string, string>;
+}
+
+class K8sScheduler {
+  private nodes: NodeResource[] = [];
+
+  addNode(node: Omit<NodeResource, "allocatedCPU" | "allocatedMemoryGB">): void {
+    this.nodes.push({ ...node, allocatedCPU: 0, allocatedMemoryGB: 0 });
+  }
+
+  schedule(pod: Pod): { node: string; status: "scheduled" | "pending" } {
+    const candidates = this.nodes
+      .filter((n) =>
+        n.allocatedCPU + pod.cpuRequest <= n.allocatableCPU &&
+        n.allocatedMemoryGB + pod.memoryRequestGB <= n.allocatableMemoryGB
+      )
+      .sort((a, b) => {
+        const aScore = (a.allocatedCPU + pod.cpuRequest) / a.allocatableCPU +
+          (a.allocatedMemoryGB + pod.memoryRequestGB) / a.allocatableMemoryGB;
+        const bScore = (b.allocatedCPU + pod.cpuRequest) / b.allocatableCPU +
+          (b.allocatedMemoryGB + pod.memoryRequestGB) / b.allocatableMemoryGB;
+        return aScore - bScore;
+      });
+
+    if (candidates.length === 0) return { node: "", status: "pending" };
+
+    const node = candidates[0];
+    node.allocatedCPU += pod.cpuRequest;
+    node.allocatedMemoryGB += pod.memoryRequestGB;
+    return { node: node.name, status: "scheduled" };
+  }
+
+  scheduleBatch(pods: Pod[]): { scheduled: number; pending: number; report: { pod: string; node: string }[] } {
+    const sorted = [...pods].sort((a, b) => b.priority - a.priority);
+    const report: { pod: string; node: string }[] = [];
+    let pending = 0;
+
+    for (const pod of sorted) {
+      const result = this.schedule(pod);
+      if (result.status === "scheduled") report.push({ pod: pod.name, node: result.node });
+      else pending++;
+    }
+
+    return { scheduled: report.length, pending, report };
+  }
+
+  getUtilization(): { node: string; cpuPercent: number; memPercent: number }[] {
+    return this.nodes.map((n) => ({
+      node: n.name,
+      cpuPercent: Math.round((n.allocatedCPU / n.allocatableCPU) * 100),
+      memPercent: Math.round((n.allocatedMemoryGB / n.allocatableMemoryGB) * 100),
+    }));
+  }
+}
+
+const scheduler = new K8sScheduler();
+scheduler.addNode({ name: "node-1", allocatableCPU: 16, allocatableMemoryGB: 64, labels: { "node-type": "general" } });
+scheduler.addNode({ name: "node-2", allocatableCPU: 32, allocatableMemoryGB: 128, labels: { "node-type": "compute" } });
+scheduler.addNode({ name: "node-3", allocatableCPU: 8, allocatableMemoryGB: 32, labels: { "node-type": "general" } });
+
+const pods: Pod[] = [
+  { name: "web-1", cpuRequest: 1, memoryRequestGB: 2, cpuLimit: 2, memoryLimitGB: 4, priority: 5, namespace: "prod" },
+  { name: "web-2", cpuRequest: 1, memoryRequestGB: 2, cpuLimit: 2, memoryLimitGB: 4, priority: 5, namespace: "prod" },
+  { name: "db-1", cpuRequest: 4, memoryRequestGB: 16, cpuLimit: 8, memoryLimitGB: 32, priority: 10, namespace: "prod" },
+  { name: "batch-1", cpuRequest: 8, memoryRequestGB: 32, cpuLimit: 16, memoryLimitGB: 64, priority: 3, namespace: "batch" },
+  { name: "cache-1", cpuRequest: 2, memoryRequestGB: 8, cpuLimit: 4, memoryLimitGB: 16, priority: 7, namespace: "prod" },
+];
+
+const batchResult = scheduler.scheduleBatch(pods);
+console.log(`Scheduled: ${batchResult.scheduled}, Pending: ${batchResult.pending}`);
+console.log("Node utilization:", JSON.stringify(scheduler.getUtilization(), null, 2));
+```
+
+### TypeScript: Docker Layer Cache Simulator
+
+```typescript
+interface Layer {
+  id: string;
+  command: string;
+  sizeMB: number;
+  cacheHit: boolean;
+}
+
+interface Dockerfile {
+  baseImage: string;
+  layers: { command: string; sizeMB: number }[];
+}
+
+class DockerBuildCache {
+  private cache: Map<string, Layer[]> = new Map();
+  private hitCount: number = 0;
+  private missCount: number = 0;
+
+  private hashLayer(command: string): string {
+    let hash = 0;
+    for (let i = 0; i < command.length; i++) {
+      const char = command.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash |= 0;
+    }
+    return `layer-${Math.abs(hash).toString(16).slice(0, 8)}`;
+  }
+
+  build(dockerfile: Dockerfile, tag: string): Layer[] {
+    const result: Layer[] = [];
+    let invalidated = false;
+
+    const cached = this.cache.get(tag) || [];
+
+    for (const layerDef of dockerfile.layers) {
+      const layerId = this.hashLayer(layerDef.command);
+      const cachedLayer = cached.find((l) => l.id === layerId && !invalidated);
+
+      if (cachedLayer) {
+        result.push({ ...cachedLayer, cacheHit: true });
+        this.hitCount++;
+      } else {
+        result.push({ id: layerId, command: layerDef.command, sizeMB: layerDef.sizeMB, cacheHit: false });
+        this.missCount++;
+        invalidated = true;
+      }
+    }
+
+    this.cache.set(tag, result);
+    console.log(`Build ${tag}: ${result.filter((l) => l.cacheHit).length} cache hits, ${result.filter((l) => !l.cacheHit).length} new layers`);
+    return result;
+  }
+
+  getStats(): { hitRatio: number; totalBuilds: number; cacheSizeMB: number } {
+    const total = this.hitCount + this.missCount;
+    const allLayers = [...this.cache.values()].flat();
+    return {
+      hitRatio: total > 0 ? Math.round((this.hitCount / total) * 10000) / 100 : 0,
+      totalBuilds: this.cache.size,
+      cacheSizeMB: allLayers.reduce((s, l) => s + l.sizeMB, 0),
+    };
+  }
+}
+
+const cache = new DockerBuildCache();
+const appDockerfile: Dockerfile = {
+  baseImage: "node:20-alpine",
+  layers: [
+    { command: "COPY package.json package-lock.json", sizeMB: 1 },
+    { command: "RUN npm ci --production", sizeMB: 150 },
+    { command: "COPY src/", sizeMB: 20 },
+    { command: "RUN npm run build", sizeMB: 30 },
+    { command: "RUN rm -rf node_modules && npm ci --production", sizeMB: 120 },
+  ],
+};
+cache.build(appDockerfile, "myapp:1.0");
+cache.build(appDockerfile, "myapp:1.0");
+const changedDockerfile: Dockerfile = {
+  baseImage: "node:20-alpine",
+  layers: [
+    { command: "COPY package.json package-lock.json", sizeMB: 1 },
+    { command: "RUN npm ci --production", sizeMB: 150 },
+    { command: "COPY src/", sizeMB: 22 },
+    { command: "RUN npm run build", sizeMB: 35 },
+    { command: "RUN rm -rf node_modules && npm ci --production", sizeMB: 120 },
+  ],
+};
+cache.build(changedDockerfile, "myapp:1.1");
+console.log("Cache stats:", JSON.stringify(cache.getStats(), null, 2));
+```
+
 ## Summary
 
 - Docker packages applications with dependencies into portable images.

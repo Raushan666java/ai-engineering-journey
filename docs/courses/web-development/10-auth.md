@@ -606,6 +606,54 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: JWT Token Rotator & Password Strength Meter
+
+```typescript
+class JWTManager {
+  private static base64UrlEncode(data: string): string {
+    return btoa(data).replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
+  }
+  private static base64UrlDecode(str: string): string {
+    return atob(str.replace(/-/g, "+").replace(/_/g, "/"));
+  }
+  static createToken(payload: Record<string, any>, secret: string, expiresIn: number): string {
+    const header = this.base64UrlEncode(JSON.stringify({ alg: "HS256", typ: "JWT" }));
+    const now = Math.floor(Date.now() / 1000);
+    const body = this.base64UrlEncode(JSON.stringify({ ...payload, iat: now, exp: now + expiresIn }));
+    const sig = this.base64UrlEncode(btoa(secret + "." + header + "." + body));
+    return `${header}.${body}.${sig}`;
+  }
+  static isExpired(token: string): boolean {
+    try {
+      const payload = JSON.parse(this.base64UrlDecode(token.split(".")[1]));
+      return payload.exp < Math.floor(Date.now() / 1000);
+    } catch { return true; }
+  }
+  static rotate(oldToken: string, secret: string, newExpiresIn: number): string {
+    if (JWTManager.isExpired(oldToken)) throw new Error("Cannot rotate expired token");
+    const payload = JSON.parse(JWTManager.base64UrlDecode(oldToken.split(".")[1]));
+    return JWTManager.createToken(payload, secret, newExpiresIn);
+  }
+}
+
+class PasswordMeter {
+  static strength(pw: string): { score: number; label: string; feedback: string[] } {
+    let score = 0;
+    const feedback: string[] = [];
+    if (pw.length >= 8) score += 20; else feedback.push("At least 8 characters");
+    if (/[A-Z]/.test(pw)) score += 20; else feedback.push("Add an uppercase letter");
+    if (/[a-z]/.test(pw)) score += 20; else feedback.push("Add a lowercase letter");
+    if (/\d/.test(pw)) score += 20; else feedback.push("Add a digit");
+    if (/[^A-Za-z0-9]/.test(pw)) score += 20; else feedback.push("Add a special character");
+    const label = score >= 80 ? "Strong" : score >= 60 ? "Moderate" : score >= 40 ? "Weak" : "Very weak";
+    return { score, label, feedback };
+  }
+}
+
+console.log("Token:", JWTManager.createToken({ userId: 1 }, "secret", 3600).slice(0, 30) + "...");
+console.log("Password:", PasswordMeter.strength("Hello123!"));
+```
+
 ## Summary
 
 Authentication verifies identity while authorization controls access. JWTs provide stateless authentication with short-lived access tokens and long-lived refresh tokens for secure session management. bcrypt salts and hashes passwords, OAuth 2.0 enables third-party login, RBAC structures permissions by role, and TOTP adds an extra security layer with multi-factor authentication.

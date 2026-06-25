@@ -579,6 +579,88 @@ for (let i = 0; i <= 10; i++) {
 
 20. Write a TypeScript function that uses generating functions to compute the first 10 terms of any linear recurrence with constant coefficients.
 
+## TypeScript Implementations
+
+```typescript
+// --- Fibonacci via Dynamic Programming ---
+function fibonacciDP(n: number): number {
+  if (n <= 1) return n;
+  const dp = [0, 1];
+  for (let i = 2; i <= n; i++) dp[i] = dp[i - 1] + dp[i - 2];
+  return dp[n];
+}
+console.log('Fibonacci(10):', fibonacciDP(10)); // 55
+
+// Space-optimized version
+function fibonacciOpt(n: number): number {
+  if (n <= 1) return n;
+  let a = 0, b = 1;
+  for (let i = 2; i <= n; i++) { const t = a + b; a = b; b = t; }
+  return b;
+}
+console.log('Fibonacci(50):', fibonacciOpt(50)); // 12586269025
+
+// --- Tower of Hanoi Solver ---
+function hanoiSteps(n: number, from: string, to: string, aux: string): string[] {
+  if (n === 0) return [];
+  const steps: string[] = [];
+  steps.push(...hanoiSteps(n - 1, from, aux, to));
+  steps.push(`Move disk ${n} from ${from} to ${to}`);
+  steps.push(...hanoiSteps(n - 1, aux, to, from));
+  return steps;
+}
+console.log('Hanoi(3):', hanoiSteps(3, 'A', 'C', 'B'));
+
+// --- Linear Recurrence Solver ---
+function linearRecurrence(
+  coeffs: number[],    // c_1, c_2, ..., c_k
+  initials: number[],  // a_0, a_1, ..., a_{k-1}
+  n: number
+): number {
+  const k = coeffs.length;
+  if (n < k) return initials[n];
+  const seq = [...initials];
+  for (let i = k; i <= n; i++) {
+    let term = 0;
+    for (let j = 0; j < k; j++) term += coeffs[j] * seq[i - 1 - j];
+    seq.push(term);
+  }
+  return seq[n];
+}
+// a_n = 3a_{n-1} - 2a_{n-2}, a_0=1, a_1=2
+console.log('Recurrence a_5:', linearRecurrence([3, -2], [1, 2], 5)); // ?
+
+// --- Master Theorem Analyzer ---
+function masterTheorem(a: number, b: number, fExponent: number): string {
+  const logBA = Math.log(a) / Math.log(b);
+  if (Math.abs(fExponent - logBA) < 1e-10) return `Θ(n^${logBA} log n)`;
+  if (fExponent < logBA) return `Θ(n^${logBA.toFixed(2)})`;
+  return `Θ(n^${fExponent})`; // assumes regularity condition holds
+}
+// T(n) = 2T(n/2) + n
+console.log('T(n)=2T(n/2)+n:', masterTheorem(2, 2, 1)); // Θ(n log n)
+// T(n) = 8T(n/2) + n^3
+console.log('T(n)=8T(n/2)+n³:', masterTheorem(8, 2, 3)); // Θ(n^3)
+
+// --- Divide-and-Conquer Recurrence Simulator ---
+function mergeSortComparisons(arr: number[]): number {
+  if (arr.length <= 1) return 0;
+  const mid = Math.floor(arr.length / 2);
+  const left = arr.slice(0, mid), right = arr.slice(mid);
+  let comps = mergeSortComparisons(left) + mergeSortComparisons(right);
+  let i = 0, j = 0, k = 0;
+  while (i < left.length && j < right.length) {
+    comps++;
+    if (left[i] <= right[j]) arr[k++] = left[i++];
+    else arr[k++] = right[j++];
+  }
+  while (i < left.length) arr[k++] = left[i++];
+  while (j < right.length) arr[k++] = right[j++];
+  return comps;
+}
+console.log('Merge sort comparisons:', mergeSortComparisons([5, 2, 4, 7, 1, 3, 6, 8])); // ~n log n
+```
+
 ## Summary
 
 - Recurrence relations define sequences from initial terms and a dependency rule.

@@ -388,6 +388,135 @@ If any assignment satisfies the formula, the NTM accepts. The DTM simulation wou
 
 4. **TMs are not practical machines.** No one builds Turing machines for real computation. Their value is theoretical: they define the boundary of what is computable. Real engineering uses restricted models (DFA, PDA) for efficiency.
 
+## TypeScript Implementation: Turing Machine Tape Simulator
+
+```typescript
+// Turing Machine Simulator
+
+type TMState = string;
+type TMSymbol = string;
+
+class TuringMachine {
+  constructor(
+    public states: Set<TMState>,
+    public inputAlphabet: Set<TMSymbol>,
+    public tapeAlphabet: Set<TMSymbol>,
+    public transitions: Map<string, { nextState: TMState; write: TMSymbol; direction: "L" | "R" }>,
+    public start: TMState,
+    public accept: TMState,
+    public reject: TMState
+  ) {}
+
+  simulate(input: string, maxSteps: number = 1000): { accepted: boolean; steps: number; tape: string } {
+    let tape = input.split("");
+    let head = 0;
+    let state = this.start;
+    let steps = 0;
+
+    const tapeLog: string[] = [];
+
+    while (state !== this.accept && state !== this.reject && steps < maxSteps) {
+      const symbol = head < tape.length ? tape[head] : "⊔";
+      const key = `${state},${symbol}`;
+      const trans = this.transitions.get(key);
+
+      if (!trans) {
+        state = this.reject;
+        break;
+      }
+
+      // Write symbol
+      if (head >= tape.length) tape.push("⊔");
+      tape[head] = trans.write;
+
+      // Move head
+      if (trans.direction === "L") head = Math.max(0, head - 1);
+      else head++;
+
+      state = trans.nextState;
+      steps++;
+      tapeLog.push(tape.join(""));
+    }
+
+    return {
+      accepted: state === this.accept,
+      steps,
+      tape: tape.join("").replace(/⊔+$/, "")
+    };
+  }
+
+  // Binary incrementer TM
+  static binaryIncrementer(): TuringMachine {
+    const states = new Set(["q0", "q1", "q2", "qAccept", "qReject"]);
+    const inputAlphabet = new Set(["0", "1"]);
+    const tapeAlphabet = new Set(["0", "1", "⊔"]);
+
+    const trans = new Map<string, { nextState: string; write: string; direction: "L" | "R" }>();
+
+    // Move right to end of input
+    trans.set("q0,0", { nextState: "q0", write: "0", direction: "R" });
+    trans.set("q0,1", { nextState: "q0", write: "1", direction: "R" });
+    trans.set("q0,⊔", { nextState: "q1", write: "⊔", direction: "L" });
+
+    // Increment (backwards)
+    trans.set("q1,0", { nextState: "q2", write: "1", direction: "L" });
+    trans.set("q1,1", { nextState: "q1", write: "0", direction: "L" });
+    trans.set("q1,⊔", { nextState: "qAccept", write: "1", direction: "L" });
+
+    // Return to start
+    trans.set("q2,0", { nextState: "q2", write: "0", direction: "L" });
+    trans.set("q2,1", { nextState: "q2", write: "1", direction: "L" });
+    trans.set("q2,⊔", { nextState: "qAccept", write: "⊔", direction: "L" });
+
+    return new TuringMachine(states, inputAlphabet, tapeAlphabet, trans, "q0", "qAccept", "qReject");
+  }
+
+  // Palindrome checker TM
+  static palindromeChecker(): TuringMachine {
+    const states = new Set(["q0", "q1", "q2", "q3", "q4", "qAccept", "qReject"]);
+    const inputAlphabet = new Set(["0", "1"]);
+    const tapeAlphabet = new Set(["0", "1", "⊔", "X"]);
+    const trans = new Map<string, { nextState: string; write: string; direction: "L" | "R" }>();
+
+    trans.set("q0,0", { nextState: "q1", write: "X", direction: "R" });
+    trans.set("q0,1", { nextState: "q2", write: "X", direction: "R" });
+    trans.set("q0,⊔", { nextState: "qAccept", write: "⊔", direction: "L" });
+
+    trans.set("q1,0", { nextState: "q1", write: "0", direction: "R" });
+    trans.set("q1,1", { nextState: "q1", write: "1", direction: "R" });
+    trans.set("q1,⊔", { nextState: "q3", write: "⊔", direction: "L" });
+
+    trans.set("q2,0", { nextState: "q2", write: "0", direction: "R" });
+    trans.set("q2,1", { nextState: "q2", write: "1", direction: "R" });
+    trans.set("q2,⊔", { nextState: "q4", write: "⊔", direction: "L" });
+
+    trans.set("q3,0", { nextState: "qAccept", write: "X", direction: "L" });
+    trans.set("q3,1", { nextState: "qReject", write: "1", direction: "L" });
+
+    trans.set("q4,1", { nextState: "qAccept", write: "X", direction: "L" });
+    trans.set("q4,0", { nextState: "qReject", write: "0", direction: "L" });
+
+    return new TuringMachine(states, inputAlphabet, tapeAlphabet, trans, "q0", "qAccept", "qReject");
+  }
+
+  static haltChecker(): { halts: boolean; reason: string } {
+    // Demonstrates the halting problem concept
+    return {
+      halts: false,
+      reason: "The halting problem is undecidable — no TM can determine if another TM halts"
+    };
+  }
+}
+
+const incTM = TuringMachine.binaryIncrementer();
+console.log(incTM.simulate("1011"));  // 1100
+
+const palTM = TuringMachine.palindromeChecker();
+console.log(palTM.simulate("1001"));   // accepted
+console.log(palTM.simulate("1000"));   // rejected
+console.log(TuringMachine.haltChecker());
+```
+
 ## Summary
 
 - Turing machines have infinite tape, read/write capability, and bidirectional head movement.

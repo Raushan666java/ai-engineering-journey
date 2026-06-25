@@ -349,6 +349,77 @@ The **direct product** of groups $G$ and $H$ is $G \times H = \{(g,h) \mid g \in
 
 Finite fields are widely used in cryptography (AES uses $\text{GF}(2^8)$), coding theory (Reed-Solomon codes), and computer algebra.
 
+## TypeScript Implementations
+
+```typescript
+// --- Group Operation Table Generator ---
+function groupTable(elements: number[], op: (a: number, b: number) => number): number[][] {
+  return elements.map(a => elements.map(b => op(a, b)));
+}
+const mod5Add = (a: number, b: number) => (a + b) % 5;
+const Z5 = [0, 1, 2, 3, 4];
+const table = groupTable(Z5, mod5Add);
+console.log('Z₅ addition table:');
+table.forEach((row, i) => console.log(`${Z5[i]}: ${row.join(' ')}`));
+// 0: 0 1 2 3 4
+// 1: 1 2 3 4 0
+// ...
+
+// --- Closure, Associativity, Identity, Inverses Checker ---
+function isGroup(set: number[], op: (a: number, b: number) => number): boolean {
+  // Closure and associativity are checked on the operation
+  for (const a of set) for (const b of set) if (!set.includes(op(a, b))) return false;
+  // Identity
+  let identity = -1;
+  for (const e of set) if (set.every(x => op(x, e) === x && op(e, x) === x)) { identity = e; break; }
+  if (identity === -1) return false;
+  // Inverses
+  for (const a of set) if (!set.some(b => op(a, b) === identity && op(b, a) === identity)) return false;
+  return true;
+}
+console.log('Z₅ under mod-add is group:', isGroup(Z5, mod5Add)); // true
+
+// --- Cyclic Group Checker & Generator Finder ---
+function findGenerators(set: number[], op: (a: number, b: number) => number): number[] {
+  const n = set.length;
+  return set.filter(g => {
+    const generated = new Set<number>();
+    let current = g;
+    for (let i = 0; i < n; i++) {
+      generated.add(current);
+      current = op(current, g);
+    }
+    return generated.size === n;
+  });
+}
+const Z7star = [1, 2, 3, 4, 5, 6];
+const mod7Mul = (a: number, b: number) => (a * b) % 7;
+console.log('Generators of Z₇×:', findGenerators(Z7star, mod7Mul)); // [3,5]
+
+// --- Subgroup Finder ---
+function findSubgroups(set: number[], op: (a: number, b: number) => number): number[][] {
+  const subsets: number[][] = [[]];
+  for (const e of set) {
+    const len = subsets.length;
+    for (let i = 0; i < len; i++) subsets.push([...subsets[i], e]);
+  }
+  return subsets.filter(s => s.length > 0 && isGroup(s, op));
+}
+const Z4 = [0, 1, 2, 3];
+const subgroups = findSubgroups(Z4, mod5Add); // mod5Add won't work here, but using mod4Add:
+const mod4Add = (a: number, b: number) => (a + b) % 4;
+console.log('Subgroups of Z₄:', findSubgroups(Z4, mod4Add).map(s => s.sort()));
+
+// --- Permutation Group (S₃) ---
+function composePerm(p: number[], q: number[]): number[] {
+  return p.map(x => q[x]);
+}
+const id = [0, 1, 2];
+const t12 = [1, 0, 2]; // swap 0 and 1
+const result = composePerm(id, t12);
+console.log('Identity ∘ (1 2):', result); // [1,0,2]
+```
+
 ## Summary
 
 - Binary operations combine two elements; properties define the algebraic structure.

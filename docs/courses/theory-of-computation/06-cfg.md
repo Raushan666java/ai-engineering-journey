@@ -558,6 +558,176 @@ function cykParse(grammar: CNFRule[], input: string): boolean {
 }
 ```
 
+## TypeScript Implementation: CFG to CNF Converter and CYK Parser
+
+```typescript
+// CFG to Chomsky Normal Form converter and CYK parser
+
+type CFGProduction = { lhs: string; rhs: string[] };
+
+class CFG {
+  constructor(
+    public variables: Set<string>,
+    public terminals: Set<string>,
+    public productions: CFGProduction[],
+    public start: string
+  ) {}
+
+  toCNF(): CFG {
+    let prods = [...this.productions];
+    let vars = new Set(this.variables);
+    let varCounter = vars.size;
+
+    const newVar = (): string => {
+      const v = `X${varCounter++}`;
+      vars.add(v);
+      return v;
+    };
+
+    // Step 1: Add new start variable S₀ → S
+    const oldStart = this.start;
+    const newStart = "S₀";
+    vars.add(newStart);
+    prods.push({ lhs: newStart, rhs: [oldStart] });
+
+    // Step 2: Eliminate ε-productions (skip for brevity — handle nullable)
+    const nullable = new Set<string>();
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const p of prods) {
+        if (p.rhs.every(s => nullable.has(s) || s === "ε") && !nullable.has(p.lhs)) {
+          nullable.add(p.lhs);
+          changed = true;
+        }
+      }
+    }
+
+    // Step 3: Eliminate unit productions A → B
+    changed = true;
+    while (changed) {
+      changed = false;
+      for (const p of [...prods]) {
+        if (p.rhs.length === 1 && vars.has(p.rhs[0])) {
+          const unitTarget = p.rhs[0];
+          prods = prods.filter(x => x !== p);
+          for (const up of prods.filter(x => x.lhs === unitTarget)) {
+            prods.push({ lhs: p.lhs, rhs: up.rhs });
+          }
+          changed = true;
+        }
+      }
+    }
+
+    // Step 4: Replace terminals in mixed RHS
+    const terminalMap = new Map<string, string>();
+    const newProds: CFGProduction[] = [];
+    for (const p of prods) {
+      if (p.rhs.length === 1 && this.terminals.has(p.rhs[0])) {
+        newProds.push(p); // Already CNF: A → a
+        continue;
+      }
+      const rhs: string[] = [];
+      for (const sym of p.rhs) {
+        if (this.terminals.has(sym)) {
+          if (!terminalMap.has(sym)) {
+            const v = newVar();
+            terminalMap.set(sym, v);
+            newProds.push({ lhs: v, rhs: [sym] });
+          }
+          rhs.push(terminalMap.get(sym)!);
+        } else {
+          rhs.push(sym);
+        }
+      }
+      newProds.push({ lhs: p.lhs, rhs });
+    }
+
+    // Step 5: Break long RHS into binary productions
+    const binaryProds: CFGProduction[] = [];
+    for (const p of newProds) {
+      if (p.rhs.length <= 2) {
+        binaryProds.push(p);
+      } else {
+        let prev = p.rhs[0];
+        for (let i = 1; i < p.rhs.length - 1; i++) {
+          const v = newVar();
+          binaryProds.push({ lhs: i === 1 ? p.lhs : prev, rhs: [prev, v] });
+          prev = v;
+        }
+        binaryProds.push({ lhs: prev, rhs: [p.rhs[p.rhs.length - 2], p.rhs[p.rhs.length - 1]] });
+      }
+    }
+
+    return new CFG(vars, this.terminals, binaryProds, newStart);
+  }
+
+  cykParse(input: string): boolean {
+    const cnf = this.toCNF();
+    const n = input.length;
+    const table: Set<string>[][] = Array.from({ length: n }, () =>
+      Array.from({ length: n }, () => new Set<string>())
+    );
+
+    // Fill terminals
+    for (let i = 0; i < n; i++) {
+      for (const p of cnf.productions) {
+        if (p.rhs.length === 1 && p.rhs[0] === input[i]) {
+          table[i][i].add(p.lhs);
+        }
+      }
+    }
+
+    // Fill non-terminals
+    for (let len = 2; len <= n; len++) {
+      for (let i = 0; i <= n - len; i++) {
+        const j = i + len - 1;
+        for (let k = i; k < j; k++) {
+          for (const p of cnf.productions) {
+            if (p.rhs.length === 2 &&
+                table[i][k].has(p.rhs[0]) &&
+                table[k + 1][j].has(p.rhs[1])) {
+              table[i][j].add(p.lhs);
+            }
+          }
+        }
+      }
+    }
+
+    return table[0][n - 1].has(cnf.start);
+  }
+
+  isAmbiguous(): boolean {
+    // Quick ambiguity check: same RHS from same LHS with different patterns
+    const rhsCount = new Map<string, number>();
+    for (const p of this.productions) {
+      const key = `${p.lhs}→${p.rhs.join("")}`;
+      const pattern = p.rhs.length >= 2 ? "binary" : p.rhs.length === 1 && this.terminals.has(p.rhs[0]) ? "term" : "other";
+      const count = rhsCount.get(pattern) || 0;
+      rhsCount.set(pattern, count + 1);
+    }
+    return [...rhsCount.values()].some(c => c > 1);
+  }
+}
+
+const cfg = new CFG(
+  new Set(["S", "A", "B"]),
+  new Set(["a", "b"]),
+  [
+    { lhs: "S", rhs: ["A", "B"] },
+    { lhs: "S", rhs: ["a"] },
+    { lhs: "A", rhs: ["a"] },
+    { lhs: "B", rhs: ["b"] }
+  ],
+  "S"
+);
+
+console.log(cfg.cykParse("ab"));  // true
+console.log(cfg.cykParse("a"));   // true
+console.log(cfg.cykParse("ba"));  // false
+console.log(cfg.isAmbiguous());   // false
+```
+
 ## Summary
 
 - A CFG consists of variables, terminals, productions, and a start variable.

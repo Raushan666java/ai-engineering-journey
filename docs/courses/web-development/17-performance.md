@@ -589,6 +589,54 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: Lighthouse Score Analyzer & PWA Manifest Builder
+
+```typescript
+interface LighthouseScores { performance: number; accessibility: number; seo: number; bestPractices: number; }
+class LighthouseAnalyzer {
+  static grade(scores: LighthouseScores): Record<string, string> {
+    const grade = (n: number) => n >= 90 ? "Good" : n >= 50 ? "Needs work" : "Poor";
+    return Object.fromEntries(Object.entries(scores).map(([k, v]) => [k, grade(v)]));
+  }
+  static recommendations(scores: LighthouseScores): string[] {
+    const recs: string[] = [];
+    if (scores.performance < 90) recs.push("Optimize images, minify JS, enable compression");
+    if (scores.accessibility < 90) recs.push("Add aria labels, improve color contrast, fix heading hierarchy");
+    if (scores.seo < 90) recs.push("Add meta description, improve heading structure, add alt text");
+    if (scores.bestPractices < 90) recs.push("Use HTTPS, avoid deprecated APIs, add doctype");
+    return recs;
+  }
+}
+
+class PWAManifestGenerator {
+  static create(config: { name: string; shortName: string; startUrl: string; themeColor: string; bgColor: string; icons: { src: string; sizes: string; type: string }[] }): Record<string, any> {
+    return {
+      name: config.name, short_name: config.shortName,
+      start_url: config.startUrl, display: "standalone",
+      theme_color: config.themeColor, background_color: config.bgColor,
+      icons: config.icons,
+    };
+  }
+}
+
+class BundleAnalyzer {
+  static estimateSize(imports: string[]): { total: number; large: string[] } {
+    const sizeMap: Record<string, number> = { "react-dom": 130, "react": 7, "lodash": 71, "axios": 14, "chart.js": 60, "d3": 250 };
+    let total = 0;
+    const large: string[] = [];
+    imports.forEach(pkg => {
+      const size = sizeMap[pkg] ?? 10;
+      total += size;
+      if (size > 50) large.push(pkg);
+    });
+    return { total, large };
+  }
+}
+
+console.log("Grade:", LighthouseAnalyzer.grade({ performance: 65, accessibility: 85, seo: 92, bestPractices: 78 }));
+console.log("PWA:", JSON.stringify(PWAManifestGenerator.create({ name: "MyApp", shortName: "App", startUrl: "/", themeColor: "#000", bgColor: "#fff", icons: [{ src: "/icon.png", sizes: "192x192", type: "image/png" }] })));
+```
+
 ## Summary
 
 Web performance optimization spans the entire stack. Core Web Vitals (LCP, FID, CLS) measure user experience. Code splitting reduces initial bundle size. Image optimization saves bandwidth. Caching strategies at CDN, browser, and service worker levels reduce latency. React.memo, useMemo, and useCallback prevent unnecessary re-renders. Database query optimization with proper indexing and batch operations handles data at scale.

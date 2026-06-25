@@ -468,6 +468,76 @@ echo "Size: $(du -h "$BACKUP_FILE" | cut -f1)"
 
 ---
 
+### Process Monitor and Resource Tracker
+
+Linux process monitoring is fundamental to DevOps operations. The following TypeScript implementation simulates process monitoring, resource tracking, and alerting.
+
+```typescript
+interface ProcessInfo {
+  pid: number;
+  name: string;
+  cpuPercent: number;
+  memoryMB: number;
+  state: 'running' | 'sleeping' | 'stopped' | 'zombie';
+  uptimeSeconds: number;
+}
+
+interface SystemAlert {
+  type: 'cpu' | 'memory' | 'zombie' | 'oom';
+  message: string;
+  severity: 'warning' | 'critical';
+  timestamp: Date;
+}
+
+class ProcessMonitor {
+  private processes: ProcessInfo[] = [];
+  private totalMemoryMB: number;
+
+  constructor(totalMemoryMB: number = 16384) {
+    this.totalMemoryMB = totalMemoryMB;
+  }
+
+  ingest(snapshot: ProcessInfo[]): SystemAlert[] {
+    this.processes = snapshot;
+    return this.checkAlerts();
+  }
+
+  private checkAlerts(): SystemAlert[] {
+    const alerts: SystemAlert[] = [];
+    const totalCpu = this.processes.reduce((s, p) => s + p.cpuPercent, 0);
+    const totalMem = this.processes.reduce((s, p) => s + p.memoryMB, 0);
+
+    if (totalCpu > 90) alerts.push({ type: 'cpu', message: `Total CPU at ${totalCpu.toFixed(1)}%`, severity: 'critical', timestamp: new Date() });
+    if (totalMem > this.totalMemoryMB * 0.9) alerts.push({ type: 'memory', message: `Memory at ${(totalMem / 1024).toFixed(1)}GB / ${(this.totalMemoryMB / 1024)}GB`, severity: 'warning', timestamp: new Date() });
+
+    const zombies = this.processes.filter(p => p.state === 'zombie');
+    if (zombies.length > 0) alerts.push({ type: 'zombie', message: `${zombies.length} zombie processes detected`, severity: 'warning', timestamp: new Date() });
+
+    return alerts;
+  }
+
+  findTopProcesses(n: number = 5, by: 'cpu' | 'memory' = 'cpu'): ProcessInfo[] {
+    const key = by === 'cpu' ? 'cpuPercent' : 'memoryMB';
+    return [...this.processes].sort((a, b) => b[key] - a[key]).slice(0, n);
+  }
+}
+
+const monitor = new ProcessMonitor();
+const alerts = monitor.ingest([
+  { pid: 1001, name: 'nginx', cpuPercent: 2.1, memoryMB: 128, state: 'running', uptimeSeconds: 86400 },
+  { pid: 1002, name: 'node', cpuPercent: 45.3, memoryMB: 512, state: 'running', uptimeSeconds: 3600 },
+  { pid: 1003, name: 'python3', cpuPercent: 55.2, memoryMB: 256, state: 'running', uptimeSeconds: 7200 },
+  { pid: 1004, name: 'defunct-app', cpuPercent: 0, memoryMB: 0, state: 'zombie', uptimeSeconds: 0 },
+]);
+
+console.log('Alerts:', alerts.map(a => `[${a.severity}] ${a.message}`).join('; '));
+console.log('Top by CPU:', monitor.findTopProcesses(2, 'cpu').map(p => `${p.name}: ${p.cpuPercent}%`).join(', '));
+```
+
+**What this demonstrates:** Programmatic process monitoring enables automated anomaly detection, resource tracking, and alerting for Linux-based production systems.
+
+---
+
 ## Practical Takeaways
 
 1. **Learn the find-grep-awk pipeline.** It's the single most powerful pattern for DevOps work.

@@ -395,6 +395,73 @@ console.log(exists(people, p => p.name === "Alice")); // true
 
 *Solution.* $\neg\forall x\; P(x) \lor \exists y\; Q(y) \equiv \exists x\; \neg P(x) \lor \exists y\; Q(y) \equiv \exists x\; \exists y\; (\neg P(x) \lor Q(y))$.
 
+## TypeScript Implementations
+
+```typescript
+// --- Quantifier Evaluation ---
+type Predicate<T> = (x: T) => boolean;
+
+function forAll<T>(domain: T[], p: Predicate<T>): boolean {
+  return domain.every(p);
+}
+function exists<T>(domain: T[], p: Predicate<T>): boolean {
+  return domain.some(p);
+}
+
+const numbers = [1, 2, 3, 4, 5];
+console.log('∀x > 0:', forAll(numbers, n => n > 0));  // true
+console.log('∃x even:', exists(numbers, n => n % 2 === 0)); // true
+
+// --- Nested Quantifier Checker ---
+function nestedForAllExists<T, U>(
+  domainA: T[], domainB: U[],
+  p: (x: T, y: U) => boolean
+): boolean {
+  return forAll(domainA, x => exists(domainB, y => p(x, y)));
+}
+
+const people = ['Alice', 'Bob'];
+const items = ['Apple', 'Banana'];
+const likes = (p: string, i: string) =>
+  (p === 'Alice' && i === 'Apple') || (p === 'Bob' && i === 'Banana');
+console.log('∀x∃y likes(x,y):', nestedForAllExists(people, items, likes)); // true
+
+// --- Quantifier Negation Converter ---
+type QuantifiedExpr = 
+  | { type: 'forall'; var: string; pred: QuantifiedExpr }
+  | { type: 'exists'; var: string; pred: QuantifiedExpr }
+  | { type: 'not'; expr: QuantifiedExpr }
+  | { type: 'pred'; name: string; arg: string };
+
+function negate(expr: QuantifiedExpr): QuantifiedExpr {
+  switch (expr.type) {
+    case 'forall':
+      return { type: 'exists', var: expr.var, pred: negate(expr.pred) };
+    case 'exists':
+      return { type: 'forall', var: expr.var, pred: negate(expr.pred) };
+    case 'not':
+      return expr.expr;
+    case 'pred':
+      return { type: 'not', expr };
+  }
+}
+// ¬∀x P(x) → ∃x ¬P(x)
+const expr: QuantifiedExpr = { type: 'forall', var: 'x', pred: { type: 'pred', name: 'P', arg: 'x' } };
+const negated = negate(expr);
+console.log('Negated:', JSON.stringify(negated));
+// {"type":"exists","var":"x","pred":{"type":"not","expr":{"type":"pred","name":"P","arg":"x"}}}
+
+// --- Prenex Normal Form Converter (simplified) ---
+function toPrenex(expr: QuantifiedExpr): QuantifiedExpr {
+  if (expr.type === 'not') {
+    const inner = toPrenex(expr.expr);
+    if (inner.type === 'forall') return { type: 'exists', var: inner.var, pred: { type: 'not', ...toPrenex(inner.pred) } as QuantifiedExpr };
+    if (inner.type === 'exists') return { type: 'forall', var: inner.var, pred: { type: 'not', ...toPrenex(inner.pred) } as QuantifiedExpr };
+  }
+  return expr;
+}
+```
+
 ## Summary
 
 - Predicates are statements that depend on variables. Quantifiers $\forall$ and $\exists$ bind variables.

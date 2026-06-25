@@ -405,6 +405,60 @@ flowchart LR
     end
 ```
 
+## TypeScript Implementations
+
+```typescript
+// --- Power Set Generator ---
+function powerSet<T>(set: T[]): T[][] {
+  const result: T[][] = [];
+  for (let i = 0; i < 1 << set.length; i++) {
+    const subset: T[] = [];
+    for (let j = 0; j < set.length; j++) {
+      if (i & (1 << j)) subset.push(set[j]);
+    }
+    result.push(subset);
+  }
+  return result;
+}
+console.log(powerSet([1, 2, 3]));
+// [[], [1], [2], [1,2], [3], [1,3], [2,3], [1,2,3]]
+
+// --- Cartesian Product ---
+function cartesianProduct<T, U>(a: T[], b: U[]): [T, U][] {
+  const result: [T, U][] = [];
+  for (const x of a) for (const y of b) result.push([x, y]);
+  return result;
+}
+console.log(cartesianProduct([1, 2], ['a', 'b']));
+// [[1,'a'],[1,'b'],[2,'a'],[2,'b']]
+
+// --- Set Operations Calculator ---
+function setUnion<T>(a: Set<T>, b: Set<T>): Set<T> {
+  return new Set([...a, ...b]);
+}
+function setIntersection<T>(a: Set<T>, b: Set<T>): Set<T> {
+  return new Set([...a].filter(x => b.has(x)));
+}
+function setDifference<T>(a: Set<T>, b: Set<T>): Set<T> {
+  return new Set([...a].filter(x => !b.has(x)));
+}
+const A = new Set([1, 2, 3, 4]);
+const B = new Set([3, 4, 5, 6]);
+console.log('Union:', [...setUnion(A, B)]);          // [1,2,3,4,5,6]
+console.log('Intersection:', [...setIntersection(A, B)]); // [3,4]
+console.log('Difference A-B:', [...setDifference(A, B)]); // [1,2]
+
+// --- De Morgan's Law Verifier ---
+function verifyDeMorgan<T>(universal: Set<T>, a: Set<T>, b: Set<T>): boolean {
+  const complement = (s: Set<T>) => new Set([...universal].filter(x => !s.has(x)));
+  const lhs = complement(setUnion(a, b));
+  const rhs = setIntersection(complement(a), complement(b));
+  return [...lhs].every(x => rhs.has(x)) && lhs.size === rhs.size;
+}
+const U = new Set([1, 2, 3, 4, 5, 6]);
+console.log('De Morgan holds:', verifyDeMorgan(U, A, B)); // true
+```
+
 ## Summary
 
 - A set is a collection of distinct objects. Sets are equal when they contain exactly the same elements.

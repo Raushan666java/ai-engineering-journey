@@ -652,6 +652,41 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 });
 ```
 
+### TypeScript: REST API Client Builder & Endpoint Tester
+
+```typescript
+type HttpMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
+interface ApiRequest<T = any> { method: HttpMethod; path: string; body?: T; headers?: Record<string, string>; query?: Record<string, string>; }
+interface ApiResponse<T = any> { status: number; data: T; headers: Record<string, string>; }
+
+class APIClient {
+  private baseUrl: string;
+  constructor(base: string) { this.baseUrl = base; }
+  async request<T>(req: ApiRequest): Promise<ApiResponse<T>> {
+    const url = new URL(this.baseUrl + req.path);
+    if (req.query) Object.entries(req.query).forEach(([k, v]) => url.searchParams.set(k, v));
+    const res = await fetch(url.toString(), {
+      method: req.method, headers: { "Content-Type": "application/json", ...req.headers },
+      body: req.body ? JSON.stringify(req.body) : undefined,
+    });
+    const data = await res.json();
+    const headers: Record<string, string> = {};
+    res.headers.forEach((v, k) => headers[k] = v);
+    return { status: res.status, data, headers };
+  }
+  get<T>(path: string, query?: Record<string, string>) { return this.request<T>({ method: "GET", path, query }); }
+  post<T>(path: string, body?: any) { return this.request<T>({ method: "POST", path, body }); }
+}
+
+class PaginationHelper {
+  static metadata(total: number, page: number, limit: number): { total: number; page: number; limit: number; pages: number; hasNext: boolean; hasPrev: boolean } {
+    return { total, page, limit, pages: Math.ceil(total / limit), hasNext: page * limit < total, hasPrev: page > 1 };
+  }
+}
+
+console.log("Pagination:", PaginationHelper.metadata(100, 2, 10));
+```
+
 ## Summary
 
 REST API design follows resource-oriented principles with consistent URI naming, proper HTTP method usage, and appropriate status codes. Key practices include input validation with Zod, structured error responses, pagination, filtering, sorting, and comprehensive documentation with OpenAPI. Versioning strategies ensure backward compatibility as APIs evolve.

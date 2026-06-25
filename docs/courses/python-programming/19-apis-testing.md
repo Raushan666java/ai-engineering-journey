@@ -590,6 +590,124 @@ def test_example():
 - a fixture
 - a fixture scope
 
+```typescript
+// Chapter 19: TypeScript API & Testing Equivalents
+// Python: requests.get() → TypeScript: fetch()
+async function fetchData(url: string): Promise<unknown> {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+  return response.json();
+}
+// Python equivalent: requests.get(url).json()
+
+// Python: FastAPI → TypeScript: Express / Hono / Elysia
+import { Hono } from "hono";
+const app = new Hono();
+
+// Type-safe route with validation
+interface Book {
+  id: number;
+  title: string;
+  author: string;
+}
+
+let books: Book[] = [
+  { id: 1, title: "1984", author: "George Orwell" },
+];
+
+app.get("/books", (c) => c.json(books));
+app.get("/books/:id", (c) => {
+  const id = Number(c.req.param("id"));
+  const book = books.find((b) => b.id === id);
+  return book ? c.json(book) : c.json({ error: "Not found" }, 404);
+});
+// Python equivalent: FastAPI with Pydantic models
+
+// Python: pytest → TypeScript: vitest
+import { describe, it, expect } from "vitest";
+
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+describe("add", () => {
+  it("adds two numbers", () => {
+    expect(add(2, 3)).toBe(5);
+  });
+
+  it("handles negative numbers", () => {
+    expect(add(-1, 1)).toBe(0);
+  });
+});
+// Python equivalent: def test_add(): assert add(2, 3) == 5
+
+// Python: unittest.mock → TypeScript: vi.mock()
+// vi.mock("./database");
+// Python: mocker.patch("module.function")
+```
+
+### TypeScript API Client & Mock Testing Patterns
+
+```typescript
+// Python: requests.Session() → TypeScript: fetch with headers
+async function createApiClient(baseUrl: string) {
+  const headers = new Headers({ "Content-Type": "application/json" });
+  return {
+    get: async <T>(path: string): Promise<T> => {
+      const res = await fetch(`${baseUrl}${path}`, { headers });
+      if (!res.ok) throw new Error(`GET ${path}: ${res.status}`);
+      return res.json() as Promise<T>;
+    },
+    post: async <T>(path: string, body: unknown): Promise<T> => {
+      const res = await fetch(`${baseUrl}${path}`, {
+        method: "POST",
+        headers,
+        body: JSON.stringify(body),
+      });
+      return res.json() as Promise<T>;
+    },
+  };
+}
+
+// Python: pytest fixtures → TypeScript: vi.setupFiles / beforeAll
+// vitest.config.ts
+import { defineConfig } from "vitest/config";
+export default defineConfig({
+  test: {
+    globals: true,
+    setupFiles: ["./src/test/setup.ts"],
+  },
+});
+
+// Python: unittest.mock → TypeScript: vi.mock
+// __mocks__/database.ts
+export const db = {
+  findUser: vi.fn().mockResolvedValue({ id: 1, name: "Alice" }),
+  saveUser: vi.fn().mockResolvedValue(true),
+};
+
+// Python: parametrize → TypeScript: test.each
+// Equivalent Python: @pytest.mark.parametrize("a,b,expected", [(1,2,3), (-1,1,0)])
+const cases = [
+  { a: 1, b: 2, expected: 3 },
+  { a: -1, b: 1, expected: 0 },
+  { a: 0, b: 0, expected: 0 },
+];
+for (const { a, b, expected } of cases) {
+  describe(`add(${a}, ${b})`, () => {
+    it(`returns ${expected}`, () => expect(a + b).toBe(expected));
+  });
+}
+
+// Python: httpx async → TypeScript: fetch async
+async function concurrentRequests(): Promise<void> {
+  const urls = ["/api/users", "/api/products", "/api/orders"];
+  const results = await Promise.all(urls.map((u) => api.get(u)));
+  console.log(results);
+}
+```
 
 ## Summary
 

@@ -533,6 +533,116 @@ validator.validate(composeContent);
 
 ---
 
+### Service Dependency Graph Analyzer
+
+Docker Compose applications often have complex inter-service dependencies. The following tool visualizes and validates the service dependency graph, detecting circular dependencies and identifying critical paths.
+
+```typescript
+interface ComposeService {
+  name: string;
+  dependsOn: string[];
+  ports: string[];
+  volumes: string[];
+  healthcheck?: HealthCheckConfig;
+}
+
+interface HealthCheckConfig {
+  test: string[];
+  interval: string;
+  timeout: string;
+  retries: number;
+}
+
+interface DependencyAnalysis {
+  services: ComposeService[];
+  circularDependencies: string[][];
+  criticalPath: string[];
+  startOrder: string[];
+}
+
+class DependencyAnalyzer {
+  analyze(services: ComposeService[]): DependencyAnalysis {
+    const depMap = new Map<string, string[]>();
+    services.forEach(s => depMap.set(s.name, s.dependsOn));
+
+    const circularDependencies = this.findCircular(depMap);
+    const startOrder = this.topologicalSort(depMap);
+    const criticalPath = this.findCriticalPath(services, depMap);
+
+    return { services, circularDependencies, criticalPath, startOrder };
+  }
+
+  private findCircular(depMap: Map<string, string[]>): string[][] {
+    const cycles: string[][] = [];
+    const visited = new Set<string>();
+    const recStack = new Set<string>();
+
+    const dfs = (node: string, path: string[]) => {
+      visited.add(node);
+      recStack.add(node);
+      for (const dep of depMap.get(node) || []) {
+        if (!visited.has(dep)) dfs(dep, [...path, dep]);
+        else if (recStack.has(dep)) cycles.push([...path.slice(path.indexOf(dep)), dep]);
+      }
+      recStack.delete(node);
+    };
+
+    depMap.forEach((_, node) => { if (!visited.has(node)) dfs(node, [node]); });
+    return cycles;
+  }
+
+  private topologicalSort(depMap: Map<string, string[]>): string[] {
+    const visited = new Set<string>();
+    const order: string[] = [];
+
+    const visit = (node: string) => {
+      if (visited.has(node)) return;
+      visited.add(node);
+      for (const dep of depMap.get(node) || []) visit(dep);
+      order.push(node);
+    };
+
+    depMap.forEach((_, node) => visit(node));
+    return order;
+  }
+
+  private findCriticalPath(services: ComposeService[], depMap: Map<string, string[]>): string[] {
+    const depths = new Map<string, number>();
+
+    const computeDepth = (node: string): number => {
+      if (depths.has(node)) return depths.get(node)!;
+      const deps = depMap.get(node) || [];
+      const maxDepth = deps.length === 0 ? 0 : Math.max(...deps.map(d => computeDepth(d))) + 1;
+      depths.set(node, maxDepth);
+      return maxDepth;
+    };
+
+    services.forEach(s => computeDepth(s.name));
+
+    const maxDepth = Math.max(...depths.values(), 0);
+    return [...depths.entries()].filter(([, d]) => d === maxDepth).map(([n]) => n);
+  }
+}
+
+const analyzer = new DependencyAnalyzer();
+const services: ComposeService[] = [
+  { name: 'traefik', dependsOn: [], ports: ['80:80', '443:443'], volumes: ['/var/run/docker.sock'] },
+  { name: 'postgres', dependsOn: [], ports: ['5432:5432'], volumes: ['pgdata:/var/lib/postgresql/data'] },
+  { name: 'redis', dependsOn: [], ports: ['6379:6379'], volumes: [] },
+  { name: 'api', dependsOn: ['postgres', 'redis'], ports: ['3000:3000'], volumes: [] },
+  { name: 'frontend', dependsOn: ['api'], ports: ['80:80'], volumes: [] },
+];
+
+const analysis = analyzer.analyze(services);
+console.log('Start order:', analysis.startOrder.join(' -> '));
+console.log('Critical path:', analysis.criticalPath.join(' -> '));
+console.log('Circular deps:', analysis.circularDependencies.length > 0 ? analysis.circularDependencies : 'none');
+```
+
+**What this demonstrates:** Dependency graph analysis ensures correct service startup order, identifies blocking paths, and prevents circular dependency issues in multi-service Compose applications.
+
+---
+
 ## Practical Takeaways
 
 1. **Use `.env` files for environment-specific values.** Never hardcode secrets in compose files.

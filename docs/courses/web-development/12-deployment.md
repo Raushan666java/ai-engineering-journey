@@ -521,6 +521,52 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: CI/CD Pipeline Simulator & Health Checker
+
+```typescript
+class CICDPipeline {
+  readonly stages: string[] = [];
+  private results: Map<string, boolean> = new Map();
+
+  addStage(name: string): void { this.stages.push(name); }
+  async run(): Promise<boolean> {
+    for (const stage of this.stages) {
+      console.log(`Running stage: ${stage}...`);
+      const success = await this.executeStage(stage);
+      this.results.set(stage, success);
+      if (!success) { console.log(`FAILED at: ${stage}`); return false; }
+    }
+    return true;
+  }
+  private async executeStage(stage: string): Promise<boolean> {
+    await new Promise(r => setTimeout(r, 50));
+    return !stage.includes("fail");
+  }
+}
+
+class HealthChecker {
+  static async check(url: string, timeout: number = 5000): Promise<{ status: number; latency: number; healthy: boolean }> {
+    const start = Date.now();
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(timeout) });
+      return { status: res.status, latency: Date.now() - start, healthy: res.status < 500 };
+    } catch { return { status: 0, latency: Date.now() - start, healthy: false }; }
+  }
+}
+
+class DockerComposeGenerator {
+  static compose(services: Array<{ name: string; image: string; port?: number; env?: Record<string, string> }>): string {
+    const svcs = services.map(s => `  ${s.name}:\n    image: ${s.image}${s.port ? `\n    ports:\n      - "${s.port}:${s.port}"` : ""}${s.env ? `\n    environment:\n${Object.entries(s.env).map(([k, v]) => `      ${k}=${v}`).join("\n")}` : ""}`);
+    return `version: "3.8"\nservices:\n${svcs.join("\n")}`;
+  }
+}
+
+const pipe = new CICDPipeline();
+pipe.addStage("lint"); pipe.addStage("test"); pipe.addStage("build");
+console.log("Pipeline:", pipe.stages.join(" -> "));
+console.log("Docker:", DockerComposeGenerator.compose([{ name: "app", image: "node:18", port: 3000 }]));
+```
+
 ## Summary
 
 Deployment transforms development code into production services. Modern platforms like Vercel, Netlify, and Railway abstract infrastructure management. Docker containerizes applications for consistent deployment across environments. CI/CD pipelines automate testing and deployment. Monitoring with structured logging and health checks ensures production reliability.

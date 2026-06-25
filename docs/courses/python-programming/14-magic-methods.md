@@ -500,6 +500,70 @@ class Point:
 - getter/setter
 
 
+### More TypeScript Magic Method Equivalents
+
+```typescript
+// Python: __add__ → TypeScript: custom add method
+class Vector2D {
+  constructor(public x: number, public y: number) {}
+  add(other: Vector2D): Vector2D {
+    return new Vector2D(this.x + other.x, this.y + other.y);
+  }
+  // Python: __repr__
+  toString(): string {
+    return `Vector2D(${this.x}, ${this.y})`;
+  }
+}
+const v1 = new Vector2D(1, 2);
+const v2 = new Vector2D(3, 4);
+console.log(v1.add(v2).toString());  // Vector2D(4, 6)
+
+// Python: __getitem__ / __setitem__ → TypeScript: Proxy
+const handler: ProxyHandler<Record<string, unknown>> = {
+  get(target, prop: string) {
+    if (prop in target) return target[prop];
+    return `Key "${prop}" not found`;
+  },
+  set(target, prop: string, value) {
+    console.log(`Setting ${prop} to ${value}`);
+    target[prop] = value;
+    return true;
+  },
+};
+const dict = new Proxy({}, handler);
+dict.name = "Alice";  // logs: Setting name to Alice
+console.log(dict.missing);  // Key "missing" not found
+
+// Python: __len__ → TypeScript: length property
+class Collection<T> {
+  private items: T[] = [];
+  get length(): number { return this.items.length; }
+  add(item: T): void { this.items.push(item); }
+}
+
+// Python: __call__ → TypeScript: class with apply
+class Adder {
+  constructor(private n: number) {}
+  apply(value: number): number {
+    return value + this.n;
+  }
+}
+const add5 = new Adder(5);
+console.log(add5.apply(10));  // 15
+// Note: TypeScript doesn't support making instances directly callable
+
+// Python: __eq__ / __hash__ → TypeScript: custom equals
+class Money {
+  constructor(public amount: number, public currency: string) {}
+  equals(other: Money): boolean {
+    return this.amount === other.amount && this.currency === other.currency;
+  }
+  hashCode(): string {
+    return `${this.amount}:${this.currency}`;
+  }
+}
+```
+
 ## Summary
 
 Magic methods hook into Python's built-in behaviours:

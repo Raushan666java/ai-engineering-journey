@@ -574,6 +574,96 @@ console.log('\nHardcoded secrets audit:\n', vault.auditHardcodedSecrets('site.ym
 
 ---
 
+### Terraform Plan Parser
+
+Analyzing Terraform plan output programmatically enables automated compliance checks and impact analysis before infrastructure changes are applied.
+
+```typescript
+interface ResourceChange {
+  address: string;
+  action: 'create' | 'delete' | 'update' | 'no-op';
+  changeSummary: string;
+  before: Record<string, unknown>;
+  after: Record<string, unknown>;
+}
+
+interface PlanSummary {
+  additions: number;
+  changes: number;
+  destructions: number;
+  resourceChanges: ResourceChange[];
+  riskLevel: 'low' | 'medium' | 'high' | 'critical';
+  warnings: string[];
+}
+
+class TerraformPlanParser {
+  parse(rawPlan: string): PlanSummary {
+    const lines = rawPlan.split('\n');
+    const resourceChanges: ResourceChange[] = [];
+    const warnings: string[] = [];
+
+    for (const line of lines) {
+      if (line.startsWith('#') || line.startsWith('# aws_')) {
+        const parts = line.split(':');
+        const address = parts[0].replace('# ', '');
+        const action = parts[1]?.trim().toLowerCase() || 'no-op';
+        const actionMap: Record<string, ResourceChange['action']> = {
+          'will be created': 'create', 'will be destroyed': 'delete',
+          'will be updated in-place': 'update', 'will be replaced': 'delete',
+        };
+        resourceChanges.push({
+          address,
+          action: actionMap[action] || 'no-op',
+          changeSummary: action,
+          before: {},
+          after: {},
+        });
+      }
+    }
+
+    const additions = resourceChanges.filter(r => r.action === 'create').length;
+    const changes = resourceChanges.filter(r => r.action === 'update').length;
+    const destructions = resourceChanges.filter(r => r.action === 'delete').length;
+
+    if (destructions > 0) {
+      resourceChanges.filter(r => r.action === 'delete').forEach(r => {
+        warnings.push(`Destructive change: ${r.address}`);
+      });
+    }
+
+    let riskLevel: PlanSummary['riskLevel'] = 'low';
+    if (destructions > 5) riskLevel = 'critical';
+    else if (destructions > 2) riskLevel = 'high';
+    else if (destructions > 0) riskLevel = 'medium';
+
+    return { additions, changes, destructions, resourceChanges, riskLevel, warnings };
+  }
+
+  generateSummary(plan: PlanSummary): string {
+    return `## Terraform Plan Summary\n\n` +
+      `**Additions:** ${plan.additions}\n` +
+      `**Changes:** ${plan.changes}\n` +
+      `**Destructions:** ${plan.destructions}\n` +
+      `**Risk Level:** ${plan.riskLevel}\n\n` +
+      (plan.warnings.length > 0 ? `**Warnings:**\n${plan.warnings.map(w => `- ${w}`).join('\n')}\n` : '');
+  }
+}
+
+// Simulated terraform plan output
+const planOutput = `# aws_vpc.main: Will be updated in-place
+# aws_subnet.public: Will be created
+# aws_security_group.legacy: Will be destroyed
+# aws_instance.web: Will be updated in-place`;
+
+const parser = new TerraformPlanParser();
+const plan = parser.parse(planOutput);
+console.log(parser.generateSummary(plan));
+```
+
+**What this demonstrates:** Programmatic Terraform plan parsing enables automated risk classification, destructive change detection, and integration with CI/CD gating pipelines.
+
+---
+
 ## Practical Takeaways
 
 1. **Use dynamic inventories for cloud environments.** Don't maintain static host lists.

@@ -614,6 +614,109 @@ console.log(mapper.buildServiceDepList());
 | Enterprise | mTLS for zero-trust compliance |
 | Microservices | Service mesh traffic management |
 
+### Load Balancer Configuration Validator
+
+Network load balancer misconfigurations are a common source of outages. The following tool validates health checks, SSL settings, routing rules, and timeout configurations.
+
+```typescript
+interface HealthCheckConfig {
+  protocol: string;
+  port: number;
+  path: string;
+  intervalSeconds: number;
+  timeoutSeconds: number;
+  healthyThreshold: number;
+  unhealthyThreshold: number;
+}
+
+interface ListenerRule {
+  sourcePort: number;
+  targetPort: number;
+  protocol: string;
+  sslEnabled: boolean;
+  sslCertArn?: string;
+}
+
+interface LBConfig {
+  name: string;
+  listeners: ListenerRule[];
+  healthChecks: HealthCheckConfig[];
+  backendPool: string[];
+  algorithm: 'round-robin' | 'least-connections' | 'ip-hash';
+}
+
+interface ValidationReport {
+  valid: boolean;
+  errors: string[];
+  warnings: string[];
+}
+
+class LoadBalancerValidator {
+  validate(config: LBConfig): ValidationReport {
+    const errors: string[] = [];
+    const warnings: string[] = [];
+
+    for (const listener of config.listeners) {
+      if (listener.sslEnabled && !listener.sslCertArn) {
+        errors.push(`Listener ${listener.sourcePort}: SSL enabled but no certificate ARN specified`);
+      }
+      if (listener.sourcePort === listener.targetPort && listener.protocol === 'TCP') {
+        warnings.push(`Listener ${listener.sourcePort}: TCP passthrough, no health-check routing`);
+      }
+    }
+
+    for (const hc of config.healthChecks) {
+      if (hc.intervalSeconds < hc.timeoutSeconds) {
+        errors.push(`Health check interval (${hc.intervalSeconds}s) must be >= timeout (${hc.timeoutSeconds}s)`);
+      }
+      if (hc.healthyThreshold < 2) warnings.push(`Health check healthy threshold too low (${hc.healthyThreshold})`);
+      if (hc.unhealthyThreshold > 10) warnings.push(`Health check unhealthy threshold too high (${hc.unhealthyThreshold})`);
+    }
+
+    if (config.backendPool.length === 0) {
+      errors.push('Backend pool is empty — no targets to route traffic to');
+    }
+    if (config.backendPool.length === 1) {
+      warnings.push('Only one backend target — no redundancy');
+    }
+
+    return { valid: errors.length === 0, errors, warnings };
+  }
+
+  autoFix(config: LBConfig): LBConfig {
+    const fixed = JSON.parse(JSON.stringify(config)) as LBConfig;
+    for (const listener of fixed.listeners) {
+      if (listener.sslEnabled && !listener.sslCertArn) {
+        listener.sslCertArn = 'arn:aws:acm:us-east-1:123456789012:certificate/pending';
+      }
+    }
+    for (const hc of fixed.healthChecks) {
+      if (hc.intervalSeconds < hc.timeoutSeconds) hc.intervalSeconds = hc.timeoutSeconds + 5;
+      if (hc.healthyThreshold < 2) hc.healthyThreshold = 2;
+    }
+    return fixed;
+  }
+}
+
+const config: LBConfig = {
+  name: 'web-lb',
+  listeners: [{ sourcePort: 443, targetPort: 8080, protocol: 'HTTPS', sslEnabled: true, sslCertArn: '' }],
+  healthChecks: [{ protocol: 'HTTP', port: 8080, path: '/health', intervalSeconds: 10, timeoutSeconds: 15, healthyThreshold: 1, unhealthyThreshold: 15 }],
+  backendPool: ['web-1', 'web-2'],
+  algorithm: 'round-robin',
+};
+
+const validator = new LoadBalancerValidator();
+console.log('Validation:', JSON.stringify(validator.validate(config), null, 2));
+const fixed = validator.autoFix(config);
+console.log('Auto-fixed SSL cert:', fixed.listeners[0].sslCertArn);
+console.log('Auto-fixed interval:', fixed.healthChecks[0].intervalSeconds);
+```
+
+**What this demonstrates:** Automated load balancer validation catches SSL, health check, and redundancy misconfigurations before they cause production outages.
+
+---
+
 ## Chapter Quiz
 
 <details><summary>Question 1: Which CNI plugin uses eBPF?</summary>**A)** Flannel<br>**B)** Calico<br>**C)** Cilium<br>**D)** Weave<br><br>**Answer: C)** Cilium</details>

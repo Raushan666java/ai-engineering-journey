@@ -327,6 +327,142 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 
 4. **PSPACE-complete problems are harder than NP-complete ones.** While NP-complete problems like SAT have practical solvers, PSPACE-complete problems like QBF (quantified Boolean formulas) are exponentially harder. Generalized games (chess, Go) are PSPACE-hard.
 
+## TypeScript Implementation: Savitch's Theorem Explorer and PSPACE Verifier
+
+```typescript
+// Space Complexity Analyzer and Savitch's Theorem Simulation
+
+class SpaceComplexity {
+  static measure(fn: (arr: number[]) => number[], input: number[]): {
+    spaceCells: number;
+    complexityClass: string;
+  } {
+    // Measure approximate space usage
+    const initialMemory = process.memoryUsage().heapUsed;
+    fn(input);
+    const finalMemory = process.memoryUsage().heapUsed;
+    const deltaBytes = finalMemory - initialMemory;
+    const n = input.length;
+
+    // Classify based on growth relative to input
+    if (deltaBytes < 1000) return { spaceCells: deltaBytes, complexityClass: "O(1) / O(log n)" };
+    if (deltaBytes < 1000 * n) return { spaceCells: deltaBytes, complexityClass: "O(n)" };
+    if (deltaBytes < 1000 * n * n) return { spaceCells: deltaBytes, complexityClass: "O(n²)" };
+    return { spaceCells: deltaBytes, complexityClass: "O(2ⁿ) or worse" };
+  }
+
+  static configurationGraph(tmStates: number, tapeAlphabetSize: number, tapeCells: number): number {
+    // Total configurations = states × alphabet^tapeCells × headPositions
+    return tmStates * Math.pow(tapeAlphabetSize, tapeCells) * tapeCells;
+  }
+}
+
+class SavitchTheorem {
+  // Simulates Savitch's theorem: NSPACE(f(n)) ⊆ SPACE(f(n)²)
+  static reachability(
+    graph: Map<number, number[]>,
+    start: number,
+    target: number,
+    maxDepth: number,
+    depth: number = 0
+  ): boolean {
+    if (start === target) return true;
+    if (depth >= Math.ceil(Math.log2(maxDepth))) return false;
+
+    const midDepth = Math.ceil(maxDepth / 2);
+    const allNodes = [...graph.keys()];
+
+    for (const mid of allNodes) {
+      if (this.reachability(graph, start, mid, midDepth, depth + 1) &&
+          this.reachability(graph, mid, target, maxDepth - midDepth, depth + 1)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  static demonstrateTheorem(): string[] {
+    return [
+      "Savitch's Theorem (1970): NSPACE(f(n)) ⊆ SPACE(f(n)²)",
+      "",
+      "Key insight: Nondeterministic space can be simulated",
+      "deterministically with only a quadratic space overhead.",
+      "",
+      "For f(n) ≥ log n, NSPACE(f(n)) ⊆ SPACE(f(n)²)",
+      "",
+      "Proof uses the configuration graph of the NTM:",
+      "1. NTM configuration = (state, tape, head position)",
+      "2. The NTM accepts iff a path exists from start config to accept config",
+      "3. Use divide-and-conquer: CANYIELD(c₁, c₂, t) =",
+      "   ∃c₃: CANYIELD(c₁, c₃, t/2) ∧ CANYIELD(c₃, c₂, t/2)",
+      "4. Recursion depth = O(log t), each level stores O(f(n)) space",
+      "5. Total: O(f(n)²) deterministic space",
+      "",
+      "Corollaries:",
+      "- NPSPACE = PSPACE (nondeterminism doesn't help for polynomial space)",
+      "- NSPACE(n) ⊆ SPACE(n²)",
+      "- PSPACE = co-PSPACE (by Immerman-Szelepcsényi)"
+    ];
+  }
+
+  static hierarchySummary(): Map<string, string> {
+    const h = new Map<string, string>();
+    h.set("L", "Deterministic O(log n) space");
+    h.set("NL", "Nondeterministic O(log n) space");
+    h.set("P", "Polynomial time (⊇ NL by the PATH problem being in P)");
+    h.set("NP", "Nondeterministic polynomial time");
+    h.set("PSPACE", "Polynomial space (= NPSPACE by Savitch)");
+    h.set("EXPSPACE", "Exponential space");
+    h.set("L ⊆ NL ⊆ P ⊆ NP ⊆ PSPACE ⊆ EXPSPACE", "Known containments (none known to be strict)");
+    return h;
+  }
+}
+
+class PSPACEProblems {
+  static QBF(formula: string, variables: string[], values: Map<string, boolean>): boolean {
+    // Simplified QBF solver for quantified Boolean formulas
+    if (variables.length === 0) {
+      return this.evaluate(formula, values);
+    }
+    const var_ = variables[0];
+    const rest = variables.slice(1);
+
+    values.set(var_, true);
+    const trueResult = this.QBF(formula, rest, values);
+
+    values.set(var_, false);
+    const falseResult = this.QBF(formula, rest, values);
+
+    values.delete(var_);
+    return trueResult && falseResult; // Universal quantification
+  }
+
+  private static evaluate(formula: string, values: Map<string, boolean>): boolean {
+    let result = formula;
+    for (const [v, val] of values) {
+      result = result.replace(new RegExp(v, "g"), val ? "1" : "0");
+    }
+    result = result.replace(/¬1/g, "0").replace(/¬0/g, "1");
+    result = result.replace(/1∧1/g, "1").replace(/0∧./g, "0").replace(/1∧/g, "");
+    result = result.replace(/1∨./g, "1").replace(/0∨0/g, "0").replace(/0∨/g, "");
+    return result.includes("1") || result === "";
+  }
+
+  static isPSPACEComplete(problem: string): string {
+    const pspaceComplete = ["QBF", "GEOGRAPHY", "GO", "CHECKERS", "L", "NLM"];
+    return pspaceComplete.includes(problem.toUpperCase())
+      ? `${problem} is PSPACE-complete`
+      : `${problem} is not known to be PSPACE-complete`;
+  }
+}
+
+console.log(SavitchTheorem.demonstrateTheorem().join("\n"));
+const h = SavitchTheorem.hierarchySummary();
+console.log([...h.entries()].map(([k, v]) => `${k}: ${v}`).join("\n"));
+console.log(PSPACEProblems.isPSPACEComplete("QBF"));
+console.log(PSPACEProblems.isPSPACEComplete("SAT"));
+```
+
 ## Summary
 
 - Space complexity measures the maximum tape cells used during computation.

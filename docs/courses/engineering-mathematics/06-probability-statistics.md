@@ -380,6 +380,106 @@ Critical values for $t(29)$ at $\alpha = 0.05$ (two-tailed): $\pm 2.045$
 
 Since $|-1.826| < 2.045$, we fail to reject $H_0$. Not enough evidence to dispute the claim.
 
+### TypeScript Implementation: Monte Carlo Integration
+
+```typescript
+function monteCarlo(f: (x: number) => number, a: number, b: number, n: number = 1000000): number {
+  let sum = 0;
+  for (let i = 0; i < n; i++) sum += f(a + Math.random() * (b - a));
+  return (b - a) * sum / n;
+}
+
+// Estimate π: area of unit circle = π, quarter in [0,1]²
+function estimatePi(n: number = 1000000): number {
+  let inside = 0;
+  for (let i = 0; i < n; i++) {
+    const x = Math.random(), y = Math.random();
+    if (x * x + y * y <= 1) inside++;
+  }
+  return 4 * inside / n;
+}
+console.log(`MC π = ${estimatePi(1000000).toFixed(6)} (error: ${Math.abs(estimatePi(1000000) - Math.PI).toFixed(6)})`);
+
+// ∫₀¹ 4/(1+x²) dx = π
+const pi4 = 4 * monteCarlo(x => 1 / (1 + x * x), 0, 1, 1000000);
+console.log(`MC ∫ 4/(1+x²) dx = ${pi4.toFixed(6)} (expected: ${Math.PI.toFixed(6)})`);
+
+### TypeScript: Central Limit Theorem Demonstration
+
+```typescript
+function cltDemo(numSamples: number, sampleSize: number): { means: number[]; stats: { mean: number; std: number; within2: number } } {
+  const means: number[] = [];
+  for (let s = 0; s < numSamples; s++) {
+    let sum = 0;
+    for (let i = 0; i < sampleSize; i++) sum += Math.random();
+    means.push(sum / sampleSize);
+  }
+  // Uniform[0,1]: μ=0.5, σ²=1/12 → CLT: sample mean ~ N(0.5, 1/(12n))
+  const mean = means.reduce((a, b) => a + b, 0) / means.length;
+  const variance = means.reduce((s, m) => s + (m - 0.5) ** 2, 0) / means.length;
+  const theoStd = Math.sqrt(1 / (12 * sampleSize));
+  const within2 = means.filter(m => Math.abs(m - 0.5) < 2 * theoStd).length;
+  return { means, stats: { mean, std: Math.sqrt(variance), within2 } };
+}
+
+const { stats: clt10 } = cltDemo(10000, 10);
+console.log(`CLT n=10: mean=${clt10.mean.toFixed(4)} std=${clt10.std.toFixed(4)} within2σ=${(clt10.within2 / 100 * 1).toFixed(1)}%`);
+
+const { stats: clt30 } = cltDemo(10000, 30);
+console.log(`CLT n=30: mean=${clt30.mean.toFixed(4)} std=${clt30.std.toFixed(4)} within2σ=${(clt30.within2 / 100 * 1).toFixed(1)}% (expected ~95%)`);
+
+// The chi-squared goodness-of-fit test verifies normality
+function chiSquaredNormal(observed: number[], bins: number, μ: number, σ: number): number {
+  const binEdges = Array.from({ length: bins + 1 }, (_, i) => μ + σ * (i - bins / 2) * 4 / bins);
+  const expected = binEdges.slice(0, -1).map((e, i) => {
+    const z1 = (e - μ) / σ, z2 = (binEdges[i + 1] - μ) / σ;
+    return observed.length / bins;  // uniform under normal approximation
+  });
+  let χ² = 0;
+  for (let i = 0; i < bins; i++) χ² += (observed[i] - expected[i]) ** 2 / expected[i];
+  return χ²;
+}
+
+### TypeScript: Bayesian Beta-Bernoulli Updating
+
+```typescript
+function betaPosterior(successes: number, failures: number, α: number, β: number) {
+  return { αPost: α + successes, βPost: β + failures };
+}
+function betaMean(α: number, β: number): number { return α / (α + β); }
+function betaVar(α: number, β: number): number { return α * β / ((α + β) ** 2 * (α + β + 1)); }
+
+// Coin flip example: prior Beta(2,2), observe 8 heads, 2 tails
+const prior = { α: 2, β: 2 };
+const post = betaPosterior(8, 2, prior.α, prior.β);
+console.log(`Prior: Beta(2,2), mean=${betaMean(2, 2).toFixed(3)}, var=${betaVar(2, 2).toFixed(4)}`);
+console.log(`Posterior: Beta(${post.αPost},${post.βPost}), mean=${betaMean(post.αPost, post.βPost).toFixed(3)}`);
+console.log(`  Posterior mean = ${betaMean(post.αPost, post.βPost).toFixed(3)} (MLE = 0.8)`);
+
+// Sequential updating: same result whether data comes all at once or one observation at a time
+function sequentialUpdate(data: number[], α0: number, β0: number): void {
+  let α = α0, β = β0;
+  console.log("Sequential Bayesian update (coin flips):");
+  console.log(`  Prior: α=${α}, β=${β}, mean=${betaMean(α, β).toFixed(3)}`);
+  for (const flip of data) {
+    if (flip === 1) α++; else β++;
+    console.log(`  After ${flip === 1 ? "H" : "T"}: α=${α}, β=${β}, mean=${betaMean(α, β).toFixed(3)}`);
+  }
+  console.log(`  Final posterior: Beta(${α},${β})`);
+}
+sequentialUpdate([1, 0, 1, 1, 1, 0, 1, 1, 1, 1], 2, 2);
+
+// Credible interval (equal-tailed)
+function credibleInterval(α: number, β: number, level: number = 0.95): [number, number] {
+  // Approximate using normal approximation for large α,β
+  const μ = betaMean(α, β), σ = Math.sqrt(betaVar(α, β));
+  const z = 1.96;  // 95% normal quantile
+  return [Math.max(0, μ - z * σ), Math.min(1, μ + z * σ)];
+}
+const [lo, hi] = credibleInterval(post.αPost, post.βPost);
+console.log(`95% credible interval: [${lo.toFixed(3)}, ${hi.toFixed(3)}]`);
+```
+
 ## Summary
 
 - Probability quantifies uncertainty via Kolmogorov's axioms

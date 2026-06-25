@@ -469,6 +469,155 @@ aws rds create-db-instance-read-replica \
 **C) OLAP data warehouse.** Data warehouses like Redshift and BigQuery use denormalized schemas optimized for complex analytical queries. OLTP databases typically use normalized schemas optimized for fast transactions.
 </details>
 
+### TypeScript: Read Replica Failover Manager
+
+```typescript
+interface DatabaseInstance {
+  id: string;
+  role: "primary" | "replica";
+  region: string;
+  lagSeconds: number;
+  healthy: boolean;
+  promotedAt?: number;
+}
+
+class ReadReplicaManager {
+  private instances: DatabaseInstance[] = [];
+  private primaryId: string = "";
+
+  constructor(instances: DatabaseInstance[]) {
+    this.instances = instances;
+    this.primaryId = instances.find((i) => i.role === "primary")?.id || "";
+  }
+
+  private getPrimary(): DatabaseInstance | undefined {
+    return this.instances.find((i) => i.id === this.primaryId);
+  }
+
+  getReplicas(): DatabaseInstance[] {
+    return this.instances.filter((i) => i.role === "replica");
+  }
+
+  healthCheck(): void {
+    this.instances.forEach((inst) => {
+      inst.healthy = inst.lagSeconds < 60 && Math.random() > 0.05;
+    });
+  }
+
+  promoteReplica(replicaId: string): { oldPrimary: string; newPrimary: string; downtime: number } {
+    const replica = this.instances.find((i) => i.id === replicaId);
+    if (!replica) throw new Error("Replica not found");
+
+    const oldPrimary = this.primaryId;
+    replica.role = "primary";
+    replica.promotedAt = Date.now();
+    this.primaryId = replicaId;
+
+    const old = this.instances.find((i) => i.id === oldPrimary);
+    if (old) old.role = "replica";
+
+    return {
+      oldPrimary,
+      newPrimary: replicaId,
+      downtime: Math.max(0, replica.lagSeconds * 1000),
+    };
+  }
+
+  autoFailover(): { failed: boolean; promotedTo?: string; downtime?: number } {
+    const primary = this.getPrimary();
+    if (!primary || primary.healthy) return { failed: false };
+
+    const replicas = this.getReplicas()
+      .filter((r) => r.healthy)
+      .sort((a, b) => a.lagSeconds - b.lagSeconds);
+
+    if (replicas.length === 0) return { failed: true };
+
+    const bestReplica = replicas[0];
+    const result = this.promoteReplica(bestReplica.id);
+    return { failed: true, promotedTo: bestReplica.id, downtime: result.downtime };
+  }
+
+  getReadCapacity(): number { return this.getReplicas().filter((r) => r.healthy).length * 10000; }
+}
+
+const db = new ReadReplicaManager([
+  { id: "db-primary", role: "primary", region: "us-east-1", lagSeconds: 0, healthy: true },
+  { id: "db-replica-1", role: "replica", region: "us-east-1", lagSeconds: 1, healthy: true },
+  { id: "db-replica-2", role: "replica", region: "us-west-2", lagSeconds: 45, healthy: true },
+  { id: "db-replica-3", role: "replica", region: "eu-west-1", lagSeconds: 120, healthy: true },
+]);
+console.log("Read capacity:", db.getReadCapacity(), "qps");
+db.healthCheck();
+const failover = db.autoFailover();
+console.log("Auto-failover result:", JSON.stringify(failover));
+```
+
+### TypeScript: Database Migration Planner
+
+```typescript
+interface DatabaseConfig {
+  engine: "mysql" | "postgresql" | "aurora-mysql" | "aurora-postgresql" | "dynamodb";
+  storageGB: number;
+  connections: number;
+  iops: number;
+  multiAZ: boolean;
+  backupRetentionDays: number;
+}
+
+interface MigrationPlan {
+  source: DatabaseConfig;
+  target: DatabaseConfig;
+  strategy: "dump-load" | "replication" | "dual-write" | "database-migration-service";
+  estimatedDowntime: string;
+  risks: string[];
+}
+
+class DatabaseMigrationPlanner {
+  private transferSpeeds: Record<string, number> = {
+    "within-region": 500, "cross-region": 50, "on-premises-to-cloud": 10,
+  };
+
+  plan(source: DatabaseConfig, target: DatabaseConfig, location: keyof typeof this.transferSpeeds): MigrationPlan {
+    const speed = this.transferSpeeds[location];
+    const dataTransferHours = (source.storageGB * 1024) / (speed * 60 * 60);
+
+    const isSameEngine = source.engine === target.engine ||
+      (source.engine === "mysql" && target.engine === "aurora-mysql") ||
+      (source.engine === "postgresql" && target.engine === "aurora-postgresql");
+
+    const strategy = isSameEngine
+      ? "replication"
+      : target.engine === "dynamodb"
+        ? "dual-write"
+        : "database-migration-service";
+
+    const downtimeMap: Record<string, string> = {
+      "dump-load": `${Math.ceil(dataTransferHours)}h`,
+      "replication": "~5min",
+      "dual-write": "~1min",
+      "database-migration-service": "~15min",
+    };
+
+    const risks: string[] = [];
+    if (source.engine !== target.engine) risks.push("Schema conversion required between engines");
+    if (dataTransferHours > 24) risks.push("Long data transfer window exceeding 24 hours");
+    if (!target.multiAZ && source.multiAZ) risks.push("HA downgrade: source has Multi-AZ but target does not");
+    if (target.storageGB < source.storageGB) risks.push("Target storage smaller than source");
+
+    return { source, target, strategy, estimatedDowntime: downtimeMap[strategy], risks };
+  }
+}
+
+const planner = new DatabaseMigrationPlanner();
+const plan = planner.plan(
+  { engine: "mysql", storageGB: 500, connections: 500, iops: 5000, multiAZ: true, backupRetentionDays: 30 },
+  { engine: "aurora-mysql", storageGB: 500, connections: 1000, iops: 30000, multiAZ: true, backupRetentionDays: 35 },
+  "within-region"
+);
+console.log("Migration plan:", JSON.stringify(plan, null, 2));
+```
+
 ## Summary
 
 - The CAP theorem forces a choice between consistency and availability during partitions.

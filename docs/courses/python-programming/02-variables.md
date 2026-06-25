@@ -740,6 +740,46 @@ x in y, x not in y
 - D) 0.30000000000000004
 
 
+```typescript
+// Chapter 2: TypeScript Variable & Type Equivalents
+// Python: x = 42; name = "Alice"; is_valid = True
+const x: number = 42;
+const name: string = "Alice";
+const isValid: boolean = true;
+
+// Python: dynamic typing lets variables change type
+// TypeScript: static typing catches type mismatches at compile time
+let value: number = 10;
+// value = "hello";  // ❌ TypeScript error: Type 'string' not assignable to 'number'
+
+// Python: type() vs TypeScript: typeof
+console.log(typeof x);                 // "number"
+console.log(typeof name);              // "string"
+
+// Python: isinstance(x, int) → TypeScript: typeof / instanceof
+console.log(typeof x === "number");    // true
+
+// Python: None vs TypeScript: null / undefined
+let maybe: string | null = null;      // union type with null
+let unset: string | undefined;         // undefined by default
+
+// Python: type hints (not enforced at runtime)
+function add(a: number, b: number): number {
+  return a + b;  // TypeScript enforces types at compile time
+}
+
+// Python: f-strings vs TypeScript: template literals
+const age: number = 30;
+console.log(`Name: ${name}, Age: ${age}`);
+// Equivalent Python: print(f"Name: {name}, Age: {age}")
+
+// Python: chained comparisons are not available in TypeScript
+// Python: 1 < x < 10  →  TypeScript: x > 1 && x < 10
+const checkRange = (x: number): boolean => x > 1 && x < 10;
+
+// Python: walrus operator (:=) has no TypeScript equivalent
+// Python: if (n := len(x)) > 0:  →  TypeScript: const n = x.length; if (n > 0)
+```
 
 ## Summary
 

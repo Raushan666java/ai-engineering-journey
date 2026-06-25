@@ -486,6 +486,184 @@ for (const finding of findings) {
 **B) Access keys are long-lived credentials that can be stolen and used indefinitely.** IAM roles provide temporary security credentials that auto-rotate. If an EC2 instance with an access key is compromised, the attacker can use it until it is manually revoked.
 </details>
 
+### TypeScript: IAM Policy Analyzer
+
+```typescript
+interface IAMStatement {
+  effect: "Allow" | "Deny";
+  actions: string[];
+  resources: string[];
+  conditions?: Record<string, Record<string, string>>;
+}
+
+interface IAMPolicy {
+  name: string;
+  statements: IAMStatement[];
+}
+
+class IAMPolicyAnalyzer {
+  private highRiskActions = [
+    "iam:*", "iam:Create*", "iam:Delete*", "iam:PutRolePolicy",
+    "s3:PutBucketPolicy", "s3:PutBucketAcl", "s3:*",
+    "organizations:*", "lambda:Create*", "lambda:UpdateFunctionCode",
+  ];
+
+  analyze(policy: IAMPolicy): { findings: { severity: string; message: string; action: string }[]; score: number } {
+    const findings: { severity: string; message: string; action: string }[] = [];
+
+    for (const stmt of policy.statements) {
+      if (stmt.effect !== "Allow") continue;
+
+      for (const action of stmt.actions) {
+        if (action === "*" || action.startsWith("*")) {
+          findings.push({ severity: "CRITICAL", message: "Wildcard action grants full access", action });
+        }
+
+        const isHighRisk = this.highRiskActions.some((hr) => {
+          if (hr.endsWith("*")) return action.startsWith(hr.replace("*", ""));
+          return action === hr;
+        });
+
+        if (isHighRisk) {
+          const resourceRisk = stmt.resources.includes("*") || stmt.resources.includes("arn:aws:*");
+          findings.push({
+            severity: resourceRisk ? "CRITICAL" : "HIGH",
+            message: `High-risk action ${action} on ${resourceRisk ? "all resources" : "specific resources"}`,
+            action,
+          });
+        }
+      }
+
+      if (stmt.resources.includes("*") && !stmt.conditions) {
+        findings.push({
+          severity: "MEDIUM", message: "Wide resource access without condition constraints",
+          action: stmt.resources[0],
+        });
+      }
+    }
+
+    const score = Math.max(0, 100 - findings.reduce((penalty, f) => {
+      return penalty + (f.severity === "CRITICAL" ? 25 : f.severity === "HIGH" ? 15 : 5);
+    }, 0));
+
+    return { findings, score };
+  }
+
+  remediate(policy: IAMPolicy): IAMPolicy {
+    return {
+      name: policy.name + "-hardened",
+      statements: policy.statements.map((stmt) => ({
+        ...stmt,
+        actions: stmt.actions.filter((a) => !this.highRiskActions.includes(a)).slice(0, 50),
+        resources: stmt.resources.map((r) => r === "*" ? "arn:aws:s3:::my-bucket/*" : r),
+      })),
+    };
+  }
+}
+
+const analyzer = new IAMPolicyAnalyzer();
+const policy: IAMPolicy = {
+  name: "dev-access",
+  statements: [
+    { effect: "Allow", actions: ["s3:*", "ec2:Describe*"], resources: ["*"] },
+    { effect: "Allow", actions: ["iam:CreateUser"], resources: ["arn:aws:iam::*:user/*"], conditions: { "StringEquals": { "aws:PrincipalTag/role": "admin" } } },
+  ],
+};
+const result = analyzer.analyze(policy);
+console.log("Security score:", result.score, "/ 100");
+result.findings.forEach((f) => console.log(`[${f.severity}] ${f.message}`));
+```
+
+### TypeScript: WAF Rule Engine
+
+```typescript
+interface WAFRule {
+  name: string;
+  priority: number;
+  action: "allow" | "block" | "count";
+  matchType: "ip-set" | "sql-injection" | "xss" | "rate-limit" | "header-match";
+  pattern?: RegExp;
+  threshold?: number;
+  windowSeconds?: number;
+}
+
+interface Request {
+  sourceIP: string;
+  path: string;
+  headers: Record<string, string>;
+  body: string;
+  method: string;
+}
+
+class WAFEngine {
+  private rules: WAFRule[] = [];
+  private requestCounts: Map<string, { count: number; windowStart: number }> = new Map();
+
+  addRule(rule: WAFRule): void { this.rules.push(rule); }
+
+  private isSqlInjection(body: string): boolean {
+    return /(\bSELECT\b.*\bFROM\b|\bUNION\b.*\bSELECT\b|\bDROP\b.*\bTABLE\b|--|;--|' OR '1'='1)/i.test(body);
+  }
+
+  private isXSS(body: string): boolean {
+    return /<script[\s>]|javascript:|onerror\s*=|onload\s*=|alert\(|eval\(/i.test(body);
+  }
+
+  private isRateLimited(ip: string, threshold: number, windowSec: number): boolean {
+    const now = Date.now();
+    const entry = this.requestCounts.get(ip) || { count: 0, windowStart: now };
+    if (now - entry.windowStart > windowSec * 1000) { entry.count = 0; entry.windowStart = now; }
+    entry.count++;
+    this.requestCounts.set(ip, entry);
+    return entry.count > threshold;
+  }
+
+  evaluate(req: Request): { action: "allow" | "block" | "count"; matchedRule?: string; reasons: string[] } {
+    const sortedRules = [...this.rules].sort((a, b) => a.priority - b.priority);
+    const reasons: string[] = [];
+
+    for (const rule of sortedRules) {
+      switch (rule.matchType) {
+        case "sql-injection":
+          if (this.isSqlInjection(req.body) || this.isSqlInjection(req.path)) {
+            reasons.push(`SQL injection pattern detected (rule: ${rule.name})`);
+            return { action: rule.action, matchedRule: rule.name, reasons };
+          }
+          break;
+        case "xss":
+          if (this.isXSS(req.body) || this.isXSS(req.path)) {
+            reasons.push(`XSS pattern detected (rule: ${rule.name})`);
+            return { action: rule.action, matchedRule: rule.name, reasons };
+          }
+          break;
+        case "rate-limit":
+          if (rule.threshold && rule.windowSeconds && this.isRateLimited(req.sourceIP, rule.threshold, rule.windowSeconds)) {
+            reasons.push(`Rate limit exceeded: ${rule.threshold} req/${rule.windowSeconds}s (rule: ${rule.name})`);
+            return { action: rule.action, matchedRule: rule.name, reasons };
+          }
+          break;
+      }
+    }
+    return { action: "allow", reasons };
+  }
+}
+
+const waf = new WAFEngine();
+waf.addRule({ name: "block-sqli", priority: 1, action: "block", matchType: "sql-injection" });
+waf.addRule({ name: "block-xss", priority: 2, action: "block", matchType: "xss" });
+waf.addRule({ name: "rate-limit-100", priority: 3, action: "block", matchType: "rate-limit", threshold: 100, windowSeconds: 60 });
+
+const requests: Request[] = [
+  { sourceIP: "10.0.1.1", path: "/login", headers: {}, body: "username=admin&password=1234", method: "POST" },
+  { sourceIP: "10.0.1.2", path: "/search", headers: {}, body: "q=' OR '1'='1", method: "POST" },
+  { sourceIP: "10.0.1.3", path: "/comment", headers: {}, body: "<script>alert('xss')</script>", method: "POST" },
+];
+requests.forEach((r) => {
+  const result = waf.evaluate(r);
+  console.log(`${r.method} ${r.path} from ${r.sourceIP}: ${result.action}${result.matchedRule ? " (" + result.matchedRule + ")" : ""}`);
+});
+```
+
 ## Summary
 
 - The shared responsibility model defines clear boundaries for provider and customer security obligations.

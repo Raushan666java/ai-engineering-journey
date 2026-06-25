@@ -560,6 +560,83 @@ flowchart TD
     F --> L["P(k)=e⁻ˡ'λᵏ/k!"]
 ```
 
+## TypeScript Implementations
+
+```typescript
+// --- Factorial for Combinatorial Probability ---
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+function nCr(n: number, r: number): number {
+  if (r < 0 || r > n) return 0;
+  return factorial(n) / (factorial(r) * factorial(n - r));
+}
+
+// --- Expected Value Calculator (discrete) ---
+function expectedValue(values: number[], probs: number[]): number {
+  if (values.length !== probs.length) throw new Error('Mismatched lengths');
+  return values.reduce((sum, v, i) => sum + v * probs[i], 0);
+}
+// Fair die: E = (1+2+3+4+5+6)/6 = 3.5
+const dieEV = expectedValue([1,2,3,4,5,6], Array(6).fill(1/6));
+console.log('E[die]:', dieEV); // 3.5
+
+// --- Variance Calculator ---
+function variance(values: number[], probs: number[]): number {
+  const mu = expectedValue(values, probs);
+  return values.reduce((sum, v, i) => sum + (v - mu) ** 2 * probs[i], 0);
+}
+console.log('Var[die]:', variance([1,2,3,4,5,6], Array(6).fill(1/6))); // ~2.917
+
+// --- Bayes' Theorem Solver ---
+function bayesTheorem(
+  priorA: number,        // P(A)
+  probBGivenA: number,   // P(B|A)
+  probBGivenNotA: number // P(B|¬A)
+): number {
+  const probNotA = 1 - priorA;
+  const probB = probBGivenA * priorA + probBGivenNotA * probNotA;
+  return (probBGivenA * priorA) / probB; // P(A|B)
+}
+// Disease test: prevalence 1%, test 99% sensitive, 95% specific
+const pDiseaseGivenPositive = bayesTheorem(0.01, 0.99, 0.05);
+console.log('P(disease|positive):', pDiseaseGivenPositive.toFixed(4)); // ~0.1667
+
+// --- Binomial Distribution ---
+function binomialProb(n: number, k: number, p: number): number {
+  return nCr(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k);
+}
+// 3 heads in 5 fair coin flips
+console.log('P(3 heads in 5 flips):', binomialProb(5, 3, 0.5).toFixed(4)); // 0.3125
+
+// --- Random Variable Simulator ---
+function simulateBinomial(n: number, p: number, trials: number): number[] {
+  const results: number[] = [];
+  for (let t = 0; t < trials; t++) {
+    let successes = 0;
+    for (let i = 0; i < n; i++) if (Math.random() < p) successes++;
+    results.push(successes);
+  }
+  return results;
+}
+const simResults = simulateBinomial(10, 0.5, 1000);
+const avg = simResults.reduce((a,b) => a+b, 0) / simResults.length;
+console.log('Simulated E[Bin(10,0.5)]:', avg.toFixed(2)); // ~5
+
+// --- Geometric Distribution ---
+function geometricProb(k: number, p: number): number {
+  return Math.pow(1 - p, k - 1) * p;
+}
+console.log('P(first success on trial 4):', geometricProb(4, 0.25).toFixed(4));
+
+// --- Conditional Probability Relaxation ---
+function conditionalProb(pAandB: number, pB: number): number {
+  return pAandB / pB;
+}
+console.log('P(A|B) = 0.3/0.6:', conditionalProb(0.3, 0.6)); // 0.5
+```
+
 ## Summary
 
 - Probability measures likelihood from 0 to 1; all rules derive from Kolmogorov's axioms.

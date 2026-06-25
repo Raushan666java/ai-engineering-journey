@@ -531,6 +531,114 @@ console.log(checker.generateSummary());
 
 ---
 
+### Pod Scheduling Simulator
+
+Understanding pod scheduling decisions helps debug placement issues and optimize cluster utilization. The following simulator models the Kubernetes scheduling algorithm.
+
+```typescript
+interface NodeResources {
+  name: string;
+  cpuCapacity: number; // millicores
+  memoryCapacity: number; // MiB
+  cpuAllocated: number;
+  memoryAllocated: number;
+  labels: Record<string, string>;
+  taints: Taint[];
+}
+
+interface Taint {
+  key: string;
+  value: string;
+  effect: 'NoSchedule' | 'PreferNoSchedule' | 'NoExecute';
+}
+
+interface PodSpec {
+  name: string;
+  cpuRequest: number;
+  memoryRequest: number;
+  nodeSelector?: Record<string, string>;
+  tolerations?: Taint[];
+  affinity?: Affinity;
+}
+
+interface Affinity {
+  nodeSelectorTerms?: { matchExpressions: { key: string; operator: string; values: string[] }[] }[];
+}
+
+interface SchedulingResult {
+  podName: string;
+  scheduled: boolean;
+  nodeName?: string;
+  reason?: string;
+}
+
+class SchedulerSimulator {
+  schedule(pod: PodSpec, nodes: NodeResources[]): SchedulingResult {
+    const filtered = nodes.filter(node => {
+      if (pod.nodeSelector) {
+        for (const [k, v] of Object.entries(pod.nodeSelector)) {
+          if (node.labels[k] !== v) return false;
+        }
+      }
+      for (const taint of node.taints) {
+        if (taint.effect === 'NoSchedule') {
+          const tolerated = pod.tolerations?.some(t => t.key === taint.key && t.value === taint.value);
+          if (!tolerated) return false;
+        }
+      }
+      const cpuAvail = node.cpuCapacity - node.cpuAllocated;
+      const memAvail = node.memoryCapacity - node.memoryAllocated;
+      return cpuAvail >= pod.cpuRequest && memAvail >= pod.memoryRequest;
+    });
+
+    filtered.sort((a, b) => {
+      const scoreA = (a.cpuCapacity - a.cpuAllocated) / a.cpuCapacity + (a.memoryCapacity - a.memoryAllocated) / a.memoryCapacity;
+      const scoreB = (b.cpuCapacity - b.cpuAllocated) / b.cpuCapacity + (b.memoryCapacity - b.memoryAllocated) / b.memoryCapacity;
+      return scoreB - scoreA;
+    });
+
+    if (filtered.length === 0) {
+      return { podName: pod.name, scheduled: false, reason: 'No nodes match scheduling constraints' };
+    }
+
+    return { podName: pod.name, scheduled: true, nodeName: filtered[0].name };
+  }
+
+  simulateBatch(pods: PodSpec[], nodes: NodeResources[]): SchedulingResult[] {
+    const results: SchedulingResult[] = [];
+    const mutableNodes = nodes.map(n => ({ ...n }));
+    for (const pod of pods) {
+      const result = this.schedule(pod, mutableNodes);
+      if (result.scheduled && result.nodeName) {
+        const node = mutableNodes.find(n => n.name === result.nodeName)!;
+        node.cpuAllocated += pod.cpuRequest;
+        node.memoryAllocated += pod.memoryRequest;
+      }
+      results.push(result);
+    }
+    return results;
+  }
+}
+
+const scheduler = new SchedulerSimulator();
+const nodes: NodeResources[] = [
+  { name: 'node-1', cpuCapacity: 4000, memoryCapacity: 8192, cpuAllocated: 2000, memoryAllocated: 4096, labels: { 'disk': 'ssd' }, taints: [] },
+  { name: 'node-2', cpuCapacity: 4000, memoryCapacity: 8192, cpuAllocated: 3800, memoryAllocated: 7000, labels: { 'disk': 'hdd' }, taints: [{ key: 'gpu', value: 'true', effect: 'NoSchedule' }] },
+];
+
+const pods: PodSpec[] = [
+  { name: 'web-app', cpuRequest: 500, memoryRequest: 1024, nodeSelector: { 'disk': 'ssd' } },
+  { name: 'batch-job', cpuRequest: 2000, memoryRequest: 4096 },
+  { name: 'gpu-worker', cpuRequest: 1000, memoryRequest: 2048, tolerations: [{ key: 'gpu', value: 'true', effect: 'NoSchedule' }] },
+];
+
+console.log(JSON.stringify(scheduler.simulateBatch(pods, nodes), null, 2));
+```
+
+**What this demonstrates:** Pod scheduling simulation helps predict deployment behavior, identify resource bottlenecks, and optimize node configurations before actual scheduling.
+
+---
+
 ## Practical Takeaways
 
 1. **Use namespaces for environment isolation.** Separate dev, staging, prod with RBAC per namespace.

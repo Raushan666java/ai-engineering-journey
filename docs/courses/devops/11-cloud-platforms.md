@@ -515,6 +515,96 @@ console.log('Auto-scaling decisions:', simulator.simulate(cpuMetrics));
 | Enterprise | Hybrid cloud with on-prem integration |
 | ML | Vertex AI vs SageMaker for ML pipelines |
 
+### Cloud Cost Calculator
+
+Understanding cloud costs across providers is essential for budget management. The following tool compares pricing across AWS, Azure, and GCP for common resource types.
+
+```typescript
+interface ResourcePricing {
+  provider: string;
+  resourceType: string;
+  hourlyRate: number;
+  monthlyRate: number;
+  region: string;
+}
+
+interface CostEstimate {
+  resources: ResourcePricing[];
+  totalMonthly: number;
+  totalAnnual: number;
+  recommendations: string[];
+}
+
+class CloudCostCalculator {
+  private pricingCatalog: ResourcePricing[] = [
+    { provider: 'AWS', resourceType: 't3.medium', hourlyRate: 0.0416, monthlyRate: 30.37, region: 'us-east-1' },
+    { provider: 'Azure', resourceType: 'D2s_v3', hourlyRate: 0.0392, monthlyRate: 28.62, region: 'eastus' },
+    { provider: 'GCP', resourceType: 'e2-standard-2', hourlyRate: 0.0365, monthlyRate: 26.65, region: 'us-central1' },
+    { provider: 'AWS', resourceType: 't3.large', hourlyRate: 0.0832, monthlyRate: 60.74, region: 'us-east-1' },
+    { provider: 'Azure', resourceType: 'D4s_v3', hourlyRate: 0.0784, monthlyRate: 57.23, region: 'eastus' },
+    { provider: 'GCP', resourceType: 'e2-standard-4', hourlyRate: 0.0730, monthlyRate: 53.29, region: 'us-central1' },
+    { provider: 'AWS', resourceType: 'm5.xlarge', hourlyRate: 0.192, monthlyRate: 140.16, region: 'us-east-1' },
+    { provider: 'Azure', resourceType: 'D8s_v3', hourlyRate: 0.179, monthlyRate: 130.67, region: 'eastus' },
+    { provider: 'GCP', resourceType: 'n2-standard-8', hourlyRate: 0.168, monthlyRate: 122.64, region: 'us-central1' },
+  ];
+
+  estimate(requirements: { vcpu: number; memoryGB: number; hoursPerMonth: number }): CostEstimate {
+    const matched = this.pricingCatalog.filter(p => {
+      const specs = this.parseSpecs(p.resourceType);
+      return specs.vcpu >= requirements.vcpu && specs.memoryGB >= requirements.memoryGB;
+    });
+
+    const monthlyCosts = matched.map(r => ({
+      ...r,
+      actualMonthly: r.hourlyRate * requirements.hoursPerMonth,
+    }));
+
+    monthlyCosts.sort((a, b) => a.actualMonthly - b.actualMonthly);
+
+    const cheapest = monthlyCosts[0];
+    const recommendations: string[] = [];
+    if (cheapest) {
+      const mostExpensive = monthlyCosts[monthlyCosts.length - 1];
+      const savings = mostExpensive.actualMonthly - cheapest.actualMonthly;
+      recommendations.push(`Cheapest: ${cheapest.provider} ${cheapest.resourceType} at $${cheapest.actualMonthly.toFixed(2)}/mo`);
+      if (savings > 0) recommendations.push(`Potential savings: $${savings.toFixed(2)}/mo by choosing ${cheapest.provider}`);
+    }
+
+    const totalMonthly = monthlyCosts.reduce((s, r) => s + r.actualMonthly, 0) / Math.max(monthlyCosts.length, 1);
+    return {
+      resources: monthlyCosts,
+      totalMonthly: Math.round(totalMonthly * 100) / 100,
+      totalAnnual: Math.round(totalMonthly * 12 * 100) / 100,
+      recommendations,
+    };
+  }
+
+  private parseSpecs(type: string): { vcpu: number; memoryGB: number } {
+    const map: Record<string, { vcpu: number; memoryGB: number }> = {
+      't3.medium': { vcpu: 2, memoryGB: 4 },
+      'D2s_v3': { vcpu: 2, memoryGB: 8 },
+      'e2-standard-2': { vcpu: 2, memoryGB: 8 },
+      't3.large': { vcpu: 2, memoryGB: 8 },
+      'D4s_v3': { vcpu: 4, memoryGB: 16 },
+      'e2-standard-4': { vcpu: 4, memoryGB: 16 },
+      'm5.xlarge': { vcpu: 4, memoryGB: 16 },
+      'D8s_v3': { vcpu: 8, memoryGB: 32 },
+      'n2-standard-8': { vcpu: 8, memoryGB: 32 },
+    };
+    return map[type] || { vcpu: 2, memoryGB: 4 };
+  }
+}
+
+const calculator = new CloudCostCalculator();
+const estimate = calculator.estimate({ vcpu: 4, memoryGB: 16, hoursPerMonth: 730 });
+console.log(`Monthly: $${estimate.totalMonthly}, Annual: $${estimate.totalAnnual}`);
+estimate.recommendations.forEach(r => console.log(r));
+```
+
+**What this demonstrates:** Multi-cloud cost comparison enables data-driven provider selection and identifies savings opportunities across AWS, Azure, and GCP.
+
+---
+
 ## Chapter Quiz
 
 <details><summary>Question 1: Which provider has the most global regions?</summary>**A)** AWS<br>**B)** Azure<br>**C)** GCP<br>**D)** DigitalOcean<br><br>**Answer: B)** Azure with 60+ regions</details>

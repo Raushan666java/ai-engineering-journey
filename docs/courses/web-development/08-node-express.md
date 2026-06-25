@@ -506,6 +506,48 @@ Test your understanding with these quick questions.
 
 </details>
 
+### TypeScript: Middleware Chain Simulator & Route Tester
+
+```typescript
+class MiddlewareChain {
+  private middlewares: Array<(req: any, res: any, next: () => void) => void> = [];
+
+  use(fn: (req: any, res: any, next: () => void) => void): void {
+    this.middlewares.push(fn);
+  }
+  async run(req: any, res: any): Promise<void> {
+    let idx = 0;
+    const next = async () => {
+      if (idx < this.middlewares.length) await this.middlewares[idx++](req, res, next);
+    };
+    await next();
+  }
+}
+
+class RouteTester {
+  static testRoute(method: string, path: string): { match: boolean; params: Record<string, string> } {
+    const routeRegex = /:(\w+)/g;
+    const paramNames: string[] = [];
+    let pattern = "^" + path.replace(routeRegex, (_, name) => { paramNames.push(name); return "([^/]+)"; }) + "$";
+    return { match: new RegExp(pattern).test(method.toLowerCase()), params: {} };
+  }
+}
+
+class EventLoopSimulator {
+  static async simulate(tasks: Array<() => Promise<any>>): Promise<any[]> {
+    const results: any[] = [];
+    for (const task of tasks) results.push(await task());
+    return results;
+  }
+  static async parallel<T>(tasks: (() => Promise<T>)[]): Promise<T[]> {
+    return Promise.all(tasks.map(t => t()));
+  }
+}
+
+console.log("Chain sim:", new MiddlewareChain().use((req, res, n) => n()));
+console.log("Route:", RouteTester.testRoute("get", "/users/:id"));
+```
+
 ## Summary
 
 > **One-Sentence Takeaway:** Middleware functions process requests in order and can modify request/response objects.

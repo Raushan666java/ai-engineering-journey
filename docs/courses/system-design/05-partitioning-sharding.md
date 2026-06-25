@@ -47,7 +47,7 @@ flowchart LR
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 Partitioning is the process of splitting a large dataset into smaller, independent subsets that can be stored and queried separately. The two primary forms are vertical partitioning and horizontal partitioning (sharding).
 
-**Vertical Partitioning** splits a table by columns. Frequently accessed columns are placed in one partition, while less frequently accessed or larger columns (BLOBs, text) reside in another. This is natural in normalized database design — each normalized table is effectively a vertical partition of the logical entity.
+**Vertical Partitioning** splits a table by columns. Frequently accessed columns are placed in one partition, while less frequently accessed or larger columns (BLOBs, text) reside in another. This is natural in normalized database design â€” each normalized table is effectively a vertical partition of the logical entity.
 
 ```
 Vertical Partition:
@@ -56,7 +56,7 @@ Vertical Partition:
   Users_Auth:    user_id | password_hash | last_login
 ```
 
-The advantage is reduced I/O for common queries (scanning fewer bytes per row) and improved cache hit rates. The disadvantage emerges when queries frequently need to join across partitions — every cross-partition access adds latency.
+The advantage is reduced I/O for common queries (scanning fewer bytes per row) and improved cache hit rates. The disadvantage emerges when queries frequently need to join across partitions â€” every cross-partition access adds latency.
 
 **Horizontal Partitioning (Sharding)** splits a table by rows. Each shard holds a subset of rows but retains the full schema. The goal is to distribute both storage and query load across multiple database nodes.
 
@@ -83,9 +83,9 @@ Shard Key: timestamp (month)
   Shard 2:  Mar 2024
 ```
 
-**Advantages:** Range queries are efficient — a query for `WHERE created_at BETWEEN date1 AND date2` can be routed to a single shard. Shard boundaries are human-readable and easy to reason about. Sequential keys maintain physical locality.
+**Advantages:** Range queries are efficient â€” a query for `WHERE created_at BETWEEN date1 AND date2` can be routed to a single shard. Shard boundaries are human-readable and easy to reason about. Sequential keys maintain physical locality.
 
-**Disadvantages:** Hotspots are predictable. If the shard key is monotonically increasing (auto-increment IDs, timestamps), all writes hit the last shard while earlier shards sit idle. Range-based sharding also suffers from data skew — one shard may hold 80% of the data if the key distribution is uneven.
+**Disadvantages:** Hotspots are predictable. If the shard key is monotonically increasing (auto-increment IDs, timestamps), all writes hit the last shard while earlier shards sit idle. Range-based sharding also suffers from data skew â€” one shard may hold 80% of the data if the key distribution is uneven.
 
 #### Hash-Based Sharding
 
@@ -99,9 +99,9 @@ h(user_id) = CRC32(user_id) % 4
   user_id = 103  ? CRC32(103) % 4 = 1 ? Shard 1
 ```
 
-**Advantages:** Uniform distribution — a good hash function spreads keys evenly across shards regardless of the input distribution. Writes are spread evenly across all nodes, eliminating the monotonically-increasing-key problem.
+**Advantages:** Uniform distribution â€” a good hash function spreads keys evenly across shards regardless of the input distribution. Writes are spread evenly across all nodes, eliminating the monotonically-increasing-key problem.
 
-**Disadvantages:** Range queries become scatter-gather operations — the system must query every shard because adjacent keys hash to different shards. Adding or removing a shard changes `N`, which remaps almost every key, triggering massive data migration (this is the *resharding problem*).
+**Disadvantages:** Range queries become scatter-gather operations â€” the system must query every shard because adjacent keys hash to different shards. Adding or removing a shard changes `N`, which remaps almost every key, triggering massive data migration (this is the *resharding problem*).
 
 #### Directory-Based Sharding
 
@@ -117,7 +117,7 @@ Directory Entry:
 
 To find a row, the system queries the directory first, then routes to the appropriate shard. The directory itself must be replicated and fault-tolerant.
 
-**Advantages:** Maximum flexibility — shard assignments can be changed without affecting the data layout. Fine-grained control over data placement (hot data can be moved to faster nodes).
+**Advantages:** Maximum flexibility â€” shard assignments can be changed without affecting the data layout. Fine-grained control over data placement (hot data can be moved to faster nodes).
 
 **Disadvantages:** The directory becomes a potential bottleneck and single point of failure. Every read requires an additional lookup (two round trips), increasing latency. The directory must be kept consistent with actual shard contents.
 
@@ -148,7 +148,7 @@ Ring: [0, 2^32 - 1]
 
 #### Virtual Nodes
 
-Without virtual nodes, consistent hashing produces uneven load — some nodes own larger ring segments than others, especially with few nodes. Virtual nodes (vnodes) solve this by hashing each physical node multiple times with different suffixes:
+Without virtual nodes, consistent hashing produces uneven load â€” some nodes own larger ring segments than others, especially with few nodes. Virtual nodes (vnodes) solve this by hashing each physical node multiple times with different suffixes:
 
 ```
 Physical Node A:
@@ -181,7 +181,7 @@ After split:
   Shard 0b: user_id 500001..1000000
 ```
 
-Hash-based systems implement splitting by changing the hash function granularity. Consistent hashing naturally supports splitting — the hot spot on the ring can be divided by introducing a new vnode boundary.
+Hash-based systems implement splitting by changing the hash function granularity. Consistent hashing naturally supports splitting â€” the hot spot on the ring can be divided by introducing a new vnode boundary.
 
 #### Adding and Removing Nodes
 
@@ -229,7 +229,7 @@ SELECT * FROM users WHERE email = 'alice@example.com';
   ? Returns to client
 ```
 
-Scatter-gather is expensive — response time is limited by the slowest shard (tail latency). The coordinator must handle partial failures (a shard times out) and deduplication.
+Scatter-gather is expensive â€” response time is limited by the slowest shard (tail latency). The coordinator must handle partial failures (a shard times out) and deduplication.
 
 #### Distributed Joins
 
@@ -347,7 +347,7 @@ Instagram User ID (64-bit):
   | 41 bits timestamp | 13 bits shard ID | 10 bits sequence |
 ```
 
-When a user uploads a photo, the system computes `shard_id = user_id >> 10 % N` (extracting the shard bits from the ID). All data for that user — photos, comments, likes, profile — resides on the same shard. This ensures that the common query "load my feed" touches only one shard.
+When a user uploads a photo, the system computes `shard_id = user_id >> 10 % N` (extracting the shard bits from the ID). All data for that user â€” photos, comments, likes, profile â€” resides on the same shard. This ensures that the common query "load my feed" touches only one shard.
 
 **Hotspot handling:** When a celebrity posts, the fan-out-on-write approach distributes the post to followers' timelines. Each follower reads from their own shard, avoiding the celebrity shard read storm.
 
@@ -372,7 +372,7 @@ Board "Travel" (board_id = 42) ? Shard 7
   Pin 3 (board_id = 42) ? Shard 7
 ```
 
-Pinterest uses range-based sharding with dynamic shard splitting. When a shard grows too large or too hot, it is split at a board boundary — all pins for a given board always stay together.
+Pinterest uses range-based sharding with dynamic shard splitting. When a shard grows too large or too hot, it is split at a board boundary â€” all pins for a given board always stay together.
 
 **Reads per second per shard:**
 
@@ -398,7 +398,7 @@ Shard topology (early Discord):
 
 Discord's sharding faces the *server size skew* problem. Some servers (e.g., gaming communities with millions of members) are orders of magnitude larger than the median server. Their shard handles disproportionately more messages.
 
-**Mitigation:** Discord implemented *shard splitting* — the largest servers can be further partitioned by channel_id within the guild. Channel-level routing is configured in a routing table:
+**Mitigation:** Discord implemented *shard splitting* â€” the largest servers can be further partitioned by channel_id within the guild. Channel-level routing is configured in a routing table:
 
 ```
 Large Guild "FortniteOfficial":

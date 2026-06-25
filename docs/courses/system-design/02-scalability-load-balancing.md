@@ -85,7 +85,7 @@ Vertical scaling adds resources to a single machine: more CPU cores, more RAM, f
 
 **Disadvantages:**
 - **Hardware ceiling.** A single x86 server cannot exceed ~64 TB RAM (current max) or ~448 CPU cores. There is no way to vertically scale past the largest machine a vendor sells.
-- **Cost super-linearity.** High-end machines cost exponentially more than commodity servers. A 2x machine rarely costs 2x — it costs 3-5x because of premium hardware.
+- **Cost super-linearity.** High-end machines cost exponentially more than commodity servers. A 2x machine rarely costs 2x â€” it costs 3-5x because of premium hardware.
 - **Single point of failure.** If the machine dies, the system is down. Redundancy requires moving to horizontal scaling anyway.
 - **Planned downtime.** Upgrades require reboots (RAM, CPU replacement). This violates availability SLAs.
 
@@ -99,7 +99,7 @@ Vertical scaling is appropriate for legacy applications, stateful systems that c
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-Horizontal scaling adds more machines to the pool. Each machine handles a fraction of the workload. The system's total capacity is N × (capacity of a single node) minus coordination overhead.
+Horizontal scaling adds more machines to the pool. Each machine handles a fraction of the workload. The system's total capacity is N Ã— (capacity of a single node) minus coordination overhead.
 
 **Advantages:**
 - **Near-linear scalability** if the workload is partitionable. Load balancers + stateless app servers scale almost perfectly to hundreds of thousands of nodes.
@@ -126,7 +126,7 @@ Load balancers operate at different layers of the OSI model:
 
 | Criterion | L4 (Transport) | L7 (Application) |
 |-----------|----------------|------------------|
-| OSI Layer | 4 — TCP/UDP | 7 — HTTP/HTTPS, gRPC |
+| OSI Layer | 4 â€” TCP/UDP | 7 â€” HTTP/HTTPS, gRPC |
 | Routing basis | IP address, port, protocol | URL path, HTTP headers, cookies, request body |
 | Performance | Very high (kernel-level forwarding, minimal overhead) | Moderate (must parse and potentially modify traffic) |
 | TLS termination | No (passes encrypted traffic through) | Yes (terminates TLS, can inspect plaintext) |
@@ -207,7 +207,7 @@ $$server_index = hash(client\_IP) \bmod N$$
 where N is the number of servers.
 
 **Pros:** Ensures the same client (from the same IP) is always sent to the same server. Provides "poor man's sticky sessions" without requiring cookies.
-**Cons:** If a server is added or removed, the hash modulus changes — most clients remap to different servers. This is the **remapping problem.** IP addresses behind NAT or proxy (corporate networks, mobile carriers) all hash to the same server, causing uneven distribution.
+**Cons:** If a server is added or removed, the hash modulus changes â€” most clients remap to different servers. This is the **remapping problem.** IP addresses behind NAT or proxy (corporate networks, mobile carriers) all hash to the same server, causing uneven distribution.
 
 #### Consistent Hashing
 
@@ -315,7 +315,7 @@ response: TTL=300, records=[203.0.113.2, 203.0.113.3, 203.0.113.1]
 
 Clients typically use the first IP address returned, so traffic distributes roughly evenly.
 
-**Problems:** DNS caching by ISPs and clients defeats distribution (a busy resolver caches the result for the full TTL, sending all its traffic to one IP). There is no server load awareness — a dead server is still returned until the TTL expires and the DNS record is updated.
+**Problems:** DNS caching by ISPs and clients defeats distribution (a busy resolver caches the result for the full TTL, sending all its traffic to one IP). There is no server load awareness â€” a dead server is still returned until the TTL expires and the DNS record is updated.
 
 #### Weighted DNS
 
@@ -354,15 +354,15 @@ All data centers serve traffic simultaneously. Traffic is distributed based on g
 
 ```
 +---------------------------------------+
-¦              Global DNS                ¦
-¦        (Route53 / Cloud DNS)           ¦
+Â¦              Global DNS                Â¦
+Â¦        (Route53 / Cloud DNS)           Â¦
 +----------------------------------------+
-       ¦                    ¦
+       Â¦                    Â¦
        ?                    ?
 +--------------+   +--------------+
-¦  us-east-1   ¦   ¦  eu-west-1   ¦
-¦  (active)    ¦   ¦  (active)    ¦
-¦  60% traffic ¦   ¦  40% traffic ¦
+Â¦  us-east-1   Â¦   Â¦  eu-west-1   Â¦
+Â¦  (active)    Â¦   Â¦  (active)    Â¦
+Â¦  60% traffic Â¦   Â¦  40% traffic Â¦
 +--------------+   +--------------+
 ```
 
@@ -376,16 +376,16 @@ One region serves all traffic; the other region is on standby. On failure, traff
 ```
 Normal operation:
 +--------------+   +--------------+
-¦  us-east-1   ¦   ¦  eu-west-1   ¦
-¦  (active)    ¦   ¦  (passive)   ¦
-¦  100% traffic¦   ¦   0 traffic  ¦
+Â¦  us-east-1   Â¦   Â¦  eu-west-1   Â¦
+Â¦  (active)    Â¦   Â¦  (passive)   Â¦
+Â¦  100% trafficÂ¦   Â¦   0 traffic  Â¦
 +--------------+   +--------------+
 
 After failover:
 +--------------+   +--------------+
-¦  us-east-1   ¦   ¦  eu-west-1   ¦
-¦  (down)      ¦   ¦  (active)    ¦
-¦   0 traffic  ¦   ¦  100% traffic¦
+Â¦  us-east-1   Â¦   Â¦  eu-west-1   Â¦
+Â¦  (down)      Â¦   Â¦  (active)    Â¦
+Â¦   0 traffic  Â¦   Â¦  100% trafficÂ¦
 +--------------+   +--------------+
 ```
 
@@ -440,7 +440,7 @@ Every 5 seconds, send GET /health to each server.
 - After 2 consecutive successes ? return to pool
 ```
 
-**Pros:** Fast failure detection (independent of traffic volume). Proactive — catches failures before users see errors.
+**Pros:** Fast failure detection (independent of traffic volume). Proactive â€” catches failures before users see errors.
 **Cons:** Extra load on servers (must serve health requests). May over-flag servers under transient load spikes (require generous failure thresholds).
 
 ---
@@ -500,25 +500,25 @@ Store session state in a shared, highly available data store:
 
 ```
 +---------+   +---------+   +---------+
-¦ Client 1 ¦   ¦ Client 2 ¦   ¦ Client 3 ¦
+Â¦ Client 1 Â¦   Â¦ Client 2 Â¦   Â¦ Client 3 Â¦
 +---------+   +---------+   +---------+
-     ¦             ¦             ¦
+     Â¦             Â¦             Â¦
      ?             ?             ?
 +---------------------------------------+
-¦           Load Balancer               ¦
-¦         (round-robin or LC)           ¦
+Â¦           Load Balancer               Â¦
+Â¦         (round-robin or LC)           Â¦
 +---------------------------------------+
-   ¦          ¦          ¦
+   Â¦          Â¦          Â¦
    ?          ?          ?
 +-----+  +-----+  +-----+
-¦ S1  ¦  ¦ S2  ¦  ¦ S3  ¦  ? all stateless
+Â¦ S1  Â¦  Â¦ S2  Â¦  Â¦ S3  Â¦  ? all stateless
 +-----+  +-----+  +-----+
-  ¦        ¦        ¦
+  Â¦        Â¦        Â¦
   +--------+--------+
            ?
     +-----------+
-    ¦  Redis    ¦  ? session store
-    ¦ (cluster) ¦
+    Â¦  Redis    Â¦  ? session store
+    Â¦ (cluster) Â¦
     +-----------+
 ```
 
@@ -530,9 +530,9 @@ Any server can serve any request by reading/writing session data to Redis. This 
 
 **AWS Elastic Load Balancer (ELB).** Three tiers: Classic Load Balancer (L4/L7 hybrid, legacy), Application Load Balancer (L7, HTTP/HTTPS, content-based routing, path patterns, host-based routing), Network Load Balancer (L4, ultra-low latency, TCP/UDP/TLS, handles millions of requests/second). ALB supports weighted target groups, stickiness via cookies, native WebSocket support.
 
-**Google Cloud Load Balancer.** Unlike AWS, GCLB is a single global anycast front-end — you create one load balancer that serves traffic across all regions. Traffic enters the Google Front End (GFE) at the nearest edge point-of-presence (POP) and is routed over Google's private network (not the public internet) to the backend. This eliminates public internet variability.
+**Google Cloud Load Balancer.** Unlike AWS, GCLB is a single global anycast front-end â€” you create one load balancer that serves traffic across all regions. Traffic enters the Google Front End (GFE) at the nearest edge point-of-presence (POP) and is routed over Google's private network (not the public internet) to the backend. This eliminates public internet variability.
 
-**Cloudflare Load Balancing.** Monitors origin server health, pools, geo-steering. Cloudflare uses Anycast for its own IP addresses — all 200+ data centers announce the same IPs, and traffic naturally goes to the nearest one. Their load balancer sits on top of this Anycast layer.
+**Cloudflare Load Balancing.** Monitors origin server health, pools, geo-steering. Cloudflare uses Anycast for its own IP addresses â€” all 200+ data centers announce the same IPs, and traffic naturally goes to the nearest one. Their load balancer sits on top of this Anycast layer.
 
 ---
 
@@ -556,7 +556,7 @@ Any server can serve any request by reading/writing session data to Redis. This 
 
 **Problem:** A Memcached cluster with 10 nodes. Adding one node should not invalidate all cached keys.
 
-**Solution — Consistent Hash Ring:**
+**Solution â€” Consistent Hash Ring:**
 - Hash space: 0 to 2^32-1 (circle)
 - Each server placed at 100 virtual node positions (random points on the ring)
 - Each key `cache_key` = `hash("product:12345")` ? find nearest clockwise server

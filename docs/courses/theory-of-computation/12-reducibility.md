@@ -43,67 +43,67 @@ flowchart LR
 
 ### 11.1 Mapping Reductions (Many-One Reductions)
 
-A **mapping reduction** from language A to language B (written A ≤_m B) is a computable function f: Σ* → Σ* such that w ∈ A iff f(w) ∈ B.
+A **mapping reduction** from language A to language B (written A â‰¤_m B) is a computable function f: Î£* â†’ Î£* such that w âˆˆ A iff f(w) âˆˆ B.
 
 **Key properties:**
-- If A ≤_m B and B is decidable, then A is decidable.
-- If A ≤_m B and A is undecidable, then B is undecidable.
-- If A ≤_m B and B is RE, then A is RE.
-- If A ≤_m B and A is not RE, then B is not RE.
+- If A â‰¤_m B and B is decidable, then A is decidable.
+- If A â‰¤_m B and A is undecidable, then B is undecidable.
+- If A â‰¤_m B and B is RE, then A is RE.
+- If A â‰¤_m B and A is not RE, then B is not RE.
 
 **Completeness:** A language A is **RE-complete** (or m-complete for RE) if:
-1. A ∈ RE.
-2. For every language B ∈ RE, B ≤_m A.
+1. A âˆˆ RE.
+2. For every language B âˆˆ RE, B â‰¤_m A.
 
 A_TM is the canonical RE-complete language.
 
 ### 11.2 Rice's Theorem in Depth
 
 **Rice's Theorem (formal):** Let P be a set of RE languages such that:
-- P ≠ ∅ (some RE languages have property P).
-- P ≠ { all RE languages } (some RE languages lack property P).
+- P â‰  âˆ… (some RE languages have property P).
+- P â‰  { all RE languages } (some RE languages lack property P).
 
-Then L_P = { ⟨M⟩ | L(M) ∈ P } is undecidable.
+Then L_P = { âŸ¨MâŸ© | L(M) âˆˆ P } is undecidable.
 
-**Proof sketch:** Assume P doesn't contain the empty language (if it does, we can work with the complement). Let L∅ be a TM with empty language. Since P is non-trivial, there exists some TM M_P with L(M_P) ∈ P. Given ⟨M, w⟩ (instance of A_TM), construct M':
+**Proof sketch:** Assume P doesn't contain the empty language (if it does, we can work with the complement). Let Lâˆ… be a TM with empty language. Since P is non-trivial, there exists some TM M_P with L(M_P) âˆˆ P. Given âŸ¨M, wâŸ© (instance of A_TM), construct M':
 - M'(x): Simulate M on w. If M accepts w, simulate M_P on x and accept if M_P accepts.
-- Then: if M accepts w, L(M') = L(M_P) ∈ P. If M doesn't accept w, L(M') = L∅ ∉ P.
-- Thus A_TM ≤_m L_P, so L_P is undecidable.
+- Then: if M accepts w, L(M') = L(M_P) âˆˆ P. If M doesn't accept w, L(M') = Lâˆ… âˆ‰ P.
+- Thus A_TM â‰¤_m L_P, so L_P is undecidable.
 
 **Rice's theorem for properties of TMs themselves:** Some properties of TMs are syntactic (about the machine structure) rather than semantic (about the language). These can be decidable:
-- Does M have exactly 5 states? **Decidable** (count the states in ⟨M⟩).
+- Does M have exactly 5 states? **Decidable** (count the states in âŸ¨MâŸ©).
 - Does M ever move left on blank input? **Decidable** (simulate on blank input up to some bound).
 - Does M accept at least one string? **Undecidable** (semantic property of the language).
 
 ### 11.3 Turing Reductions
 
-A **Turing reduction** from A to B (written A ≤_T B) means there is an oracle TM that decides A given an oracle for B. This is more general than mapping reductions:
+A **Turing reduction** from A to B (written A â‰¤_T B) means there is an oracle TM that decides A given an oracle for B. This is more general than mapping reductions:
 - Mapping reductions are a special case of Turing reductions.
 - Turing reductions allow multiple oracle queries and can use the results arbitrarily.
-- If A ≤_T B and B is decidable, then A is decidable.
+- If A â‰¤_T B and B is decidable, then A is decidable.
 
 **Example:** The complement of A_TM (co-A_TM) is Turing-reducible to A_TM:
-- To decide if M doesn't accept w, query the oracle for A_TM with ⟨M, w⟩. If it says no, then M doesn't accept w.
+- To decide if M doesn't accept w, query the oracle for A_TM with âŸ¨M, wâŸ©. If it says no, then M doesn't accept w.
 - However, co-A_TM is NOT mapping-reducible to A_TM (it would require A_TM to be recursive).
 
 ### 11.4 The Post Correspondence Problem (PCP)
 
 **PCP Instance:** A collection of dominoes, each with a top string and bottom string:
-[ t₁/b₁ ], [ t₂/b₂ ], …, [ tₖ/bₖ ]
+[ tâ‚/bâ‚ ], [ tâ‚‚/bâ‚‚ ], â€¦, [ tâ‚–/bâ‚– ]
 
 **Question:** Can we arrange a sequence of dominoes (allowing repetition) such that the concatenation of top strings equals the concatenation of bottom strings?
 
-**Formally:** Does there exist a sequence i₁, i₂, …, iₙ (n ≥ 1) such that t_{i₁}t_{i₂}…t_{iₙ} = b_{i₁}b_{i₂}…b_{iₙ}?
+**Formally:** Does there exist a sequence iâ‚, iâ‚‚, â€¦, iâ‚™ (n â‰¥ 1) such that t_{iâ‚}t_{iâ‚‚}â€¦t_{iâ‚™} = b_{iâ‚}b_{iâ‚‚}â€¦b_{iâ‚™}?
 
 **Theorem:** PCP is undecidable.
 
-**Proof strategy:** Reduce A_TM to PCP. Given ⟨M, w⟩, construct a set of dominoes that simulate the computation of M on w. A solution to the PCP instance exists iff M accepts w. The construction:
+**Proof strategy:** Reduce A_TM to PCP. Given âŸ¨M, wâŸ©, construct a set of dominoes that simulate the computation of M on w. A solution to the PCP instance exists iff M accepts w. The construction:
 1. Encode the start configuration of M on w as the initial partial match.
 2. Add dominoes for each possible TM transition.
 3. Add "copy" dominoes to propagate unchanged portions of the configuration.
 4. Add "cleanup" dominoes to handle the accepting state.
 
-The undecidability of PCP is significant because PCP is a purely combinatorial problem — no TMs involved — showing that undecidability is not limited to questions about programs.
+The undecidability of PCP is significant because PCP is a purely combinatorial problem â€” no TMs involved â€” showing that undecidability is not limited to questions about programs.
 
 ### 11.5 Undecidable Problems in Formal Language Theory
 
@@ -112,13 +112,13 @@ Using PCP and other reductions, we can prove undecidability of:
 1. **Ambiguity of CFGs:** Given a CFG G, is G ambiguous?
    - Reduce from PCP: given dominoes, construct a CFG that generates each top and bottom concatenation. The grammar is ambiguous iff there is a PCP solution.
 
-2. **Emptiness of intersection of CFGs:** Given CFGs G₁ and G₂, is L(G₁) ∩ L(G₂) = ∅?
+2. **Emptiness of intersection of CFGs:** Given CFGs Gâ‚ and Gâ‚‚, is L(Gâ‚) âˆ© L(Gâ‚‚) = âˆ…?
    - Also reducible from PCP.
 
-3. **Equivalence of CFGs:** Given CFGs G₁ and G₂, is L(G₁) = L(G₂)?
+3. **Equivalence of CFGs:** Given CFGs Gâ‚ and Gâ‚‚, is L(Gâ‚) = L(Gâ‚‚)?
    - Undecidable; follows from universality.
 
-4. **Universality of CFGs:** Does a CFG generate Σ*?
+4. **Universality of CFGs:** Does a CFG generate Î£*?
    - Undecidable; reduce from ambiguity or PCP.
 
 5. **Context-free equivalence of TMs:** Is L(M) context-free?
@@ -128,11 +128,11 @@ Using PCP and other reductions, we can prove undecidability of:
 
 A problem is **RE-complete** if it is in RE and every RE problem reduces to it.
 
-**A_TM** is RE-complete (by definition of RE — each RE language corresponds to a TM).
+**A_TM** is RE-complete (by definition of RE â€” each RE language corresponds to a TM).
 
-**HALT_TM** is RE-complete: HALT_TM ∈ RE and A_TM ≤_m HALT_TM (given ⟨M,w⟩, output ⟨M,w⟩ — if M accepts w, M certainly halts on w; if M doesn't accept, either M halts rejecting or loops, and we want halting in the HALT_TM case. Actually, the mapping is: given ⟨M,w⟩, construct M' that halts iff M accepts. More precisely: A_TM ≤_m HALT_TM by mapping ⟨M,w⟩ to ⟨M', w⟩ where M' simulates M and halts when M accepts, loops when M rejects.)
+**HALT_TM** is RE-complete: HALT_TM âˆˆ RE and A_TM â‰¤_m HALT_TM (given âŸ¨M,wâŸ©, output âŸ¨M,wâŸ© â€” if M accepts w, M certainly halts on w; if M doesn't accept, either M halts rejecting or loops, and we want halting in the HALT_TM case. Actually, the mapping is: given âŸ¨M,wâŸ©, construct M' that halts iff M accepts. More precisely: A_TM â‰¤_m HALT_TM by mapping âŸ¨M,wâŸ© to âŸ¨M', wâŸ© where M' simulates M and halts when M accepts, loops when M rejects.)
 
-**PCP** is also RE-complete: PCP is RE (we can nondeterministically try sequences) and A_TM ≤_m PCP.
+**PCP** is also RE-complete: PCP is RE (we can nondeterministically try sequences) and A_TM â‰¤_m PCP.
 
 ### 11.7 Oracle Separations and the Limits of Diagonalization
 
@@ -140,7 +140,7 @@ The Baker-Gill-Solovay theorem (1975) showed:
 
 \[\exists A: P^A = NP^A \quad \text{and} \quad \exists B: P^B \neq NP^B\]
 
-This is significant because **any proof that resolves P vs NP must be non-relativizing** � it cannot work when both P and NP are given the same oracle. Since diagonalization relativizes (it works in all oracle worlds), this shows diagonalization alone cannot resolve P vs NP.
+This is significant because **any proof that resolves P vs NP must be non-relativizing** — it cannot work when both P and NP are given the same oracle. Since diagonalization relativizes (it works in all oracle worlds), this shows diagonalization alone cannot resolve P vs NP.
 
 **What relativizes and what doesn't:**
 - Diagonalization proofs (time hierarchy, space hierarchy) relativize.
@@ -226,7 +226,7 @@ flowchart TD
     RE --> co-RE
 ```
 
-Key insight: the decidable/undecidable boundary is not about how hard a problem is in practice � it's about whether any algorithm exists at all, even one that takes astronomically long.
+Key insight: the decidable/undecidable boundary is not about how hard a problem is in practice — it's about whether any algorithm exists at all, even one that takes astronomically long.
 
 ### 11.8 The Busy Beaver Problem
 
@@ -234,57 +234,57 @@ The **busy beaver function** BB(n) = maximum number of steps a halting n-state T
 
 **Key results:**
 - BB(n) is not computable (otherwise we could solve the halting problem).
-- BB(1) = 1, BB(2) = 6, BB(3) = 21, BB(4) = 107, BB(5) ≥ 47,176,870, BB(6) is astronomically large.
+- BB(1) = 1, BB(2) = 6, BB(3) = 21, BB(4) = 107, BB(5) â‰¥ 47,176,870, BB(6) is astronomically large.
 
-The busy beaver problem is an elegant example of a non-computable function — one that grows faster than any computable function.
+The busy beaver problem is an elegant example of a non-computable function â€” one that grows faster than any computable function.
 
 ## Examples
 
 ### Example 11.1: Mapping Reduction from A_TM to HALT_TM
 
-Define f(⟨M, w⟩) = ⟨M', w⟩ where M' is:
+Define f(âŸ¨M, wâŸ©) = âŸ¨M', wâŸ© where M' is:
 - M'(x): Run M on x. If M accepts, halt (accept). If M rejects, enter an infinite loop.
 
 Then:
-- ⟨M, w⟩ ∈ A_TM ⟹ M accepts w ⟹ M' halts on w ⟹ ⟨M', w⟩ ∈ HALT_TM.
-- ⟨M, w⟩ ∉ A_TM ⟹ M rejects or loops on w ⟹ M' loops (if M loops) or M' loops (if M rejects) ⟹ ⟨M', w⟩ ∉ HALT_TM.
+- âŸ¨M, wâŸ© âˆˆ A_TM âŸ¹ M accepts w âŸ¹ M' halts on w âŸ¹ âŸ¨M', wâŸ© âˆˆ HALT_TM.
+- âŸ¨M, wâŸ© âˆ‰ A_TM âŸ¹ M rejects or loops on w âŸ¹ M' loops (if M loops) or M' loops (if M rejects) âŸ¹ âŸ¨M', wâŸ© âˆ‰ HALT_TM.
 
-Thus A_TM ≤_m HALT_TM.
+Thus A_TM â‰¤_m HALT_TM.
 
 ### Example 11.2: PCP Instance
 
-Consider dominoes: [ab/a], [b/ba], [a/ab], [ε/a].
+Consider dominoes: [ab/a], [b/ba], [a/ab], [Îµ/a].
 
 Can we find a match? Try: [ab/a][b/ba] = top: abb, bottom: aba. Not matching.
 
 Try: [ab/a][b/ba][a/ab] = top: abba, bottom: abaab. No.
 
-This demonstrates that finding solutions is nontrivial — and the problem is undecidable in general.
+This demonstrates that finding solutions is nontrivial â€” and the problem is undecidable in general.
 
 ### Example 11.3: Valid Mapping Reduction Proof
 
-Show that EMPTY_TM = { ⟨M⟩ | L(M) = ∅ } is not RE.
+Show that EMPTY_TM = { âŸ¨MâŸ© | L(M) = âˆ… } is not RE.
 
-**Proof:** Reduce A_TM's complement to EMPTY_TM. Given ⟨M, w⟩, construct M':
+**Proof:** Reduce A_TM's complement to EMPTY_TM. Given âŸ¨M, wâŸ©, construct M':
 - M'(x): Simulate M on w. If M accepts w, accept x.
 
 Then:
-- If M accepts w, L(M') = Σ* ≠ ∅.
-- If M doesn't accept w (rejects or loops), L(M') = ∅.
+- If M accepts w, L(M') = Î£* â‰  âˆ….
+- If M doesn't accept w (rejects or loops), L(M') = âˆ….
 
-So: ⟨M, w⟩ ∉ A_TM iff ⟨M'⟩ ∈ EMPTY_TM.
+So: âŸ¨M, wâŸ© âˆ‰ A_TM iff âŸ¨M'âŸ© âˆˆ EMPTY_TM.
 
 Since co-A_TM is not RE, and EMPTY_TM is RE (we can simulate a TM and check if it accepts any string), this shows that the reduction goes the right way to prove EMPTY_TM is not RE.
 
-Wait — actually we need co-A_TM ≤_m EMPTY_TM. Since co-A_TM is not RE, this would show EMPTY_TM is not RE either. But EMPTY_TM is known to be not RE (we can prove this).
+Wait â€” actually we need co-A_TM â‰¤_m EMPTY_TM. Since co-A_TM is not RE, this would show EMPTY_TM is not RE either. But EMPTY_TM is known to be not RE (we can prove this).
 
-### Example 11.4: Rice's Theorem — Is L(M) Infinite?
+### Example 11.4: Rice's Theorem â€” Is L(M) Infinite?
 
 Property P = { L | L is infinite }. P is non-trivial:
-- Some RE languages are infinite (e.g., Σ*).
-- Some are not (e.g., ∅).
+- Some RE languages are infinite (e.g., Î£*).
+- Some are not (e.g., âˆ…).
 
-By Rice's theorem, INFINITE_TM = { ⟨M⟩ | L(M) is infinite } is undecidable.
+By Rice's theorem, INFINITE_TM = { âŸ¨MâŸ© | L(M) is infinite } is undecidable.
 
 ### Example 11.5: Proving CFG Ambiguity is Undecidable
 
@@ -297,17 +297,17 @@ We reduce PCP to CFG ambiguity. Given PCP instance D = {(t1,b1), ..., (t?,b?)}:
 - For each i: T? ? t?T? | t?T | e
 - For each i: B? ? b?B? | b?B | e
 
-**Key insight:** T generates all strings formed by concatenating top strings (with markers showing the sequence). B generates all strings formed by concatenating bottom strings. The grammar is ambiguous for a string s iff s can be generated by both T and B with the same sequence of domino indices � exactly a PCP solution.
+**Key insight:** T generates all strings formed by concatenating top strings (with markers showing the sequence). B generates all strings formed by concatenating bottom strings. The grammar is ambiguous for a string s iff s can be generated by both T and B with the same sequence of domino indices — exactly a PCP solution.
 
 ### Example 11.6: Mapping Reduction for CFG Ambiguity
 
-Given PCP instance with dominoes (t₁,b₁), …, (tₖ,bₖ), construct CFG:
-- S → T | B
-- T → t₁T | t₁T₁ | t₂T | t₂T₂ | … | tₖT | tₖTₖ
-- B → b₁B | b₁B₁ | b₂B | b₂B₂ | … | bₖB | bₖBₖ
-Where Tᵢ and Bᵢ are "marker" variables.
+Given PCP instance with dominoes (tâ‚,bâ‚), â€¦, (tâ‚–,bâ‚–), construct CFG:
+- S â†’ T | B
+- T â†’ tâ‚T | tâ‚Tâ‚ | tâ‚‚T | tâ‚‚Tâ‚‚ | â€¦ | tâ‚–T | tâ‚–Tâ‚–
+- B â†’ bâ‚B | bâ‚Bâ‚ | bâ‚‚B | bâ‚‚Bâ‚‚ | â€¦ | bâ‚–B | bâ‚–Bâ‚–
+Where Táµ¢ and Báµ¢ are "marker" variables.
 
-The idea: T generates sequences of top strings; B generates sequences of bottom strings. The grammar is ambiguous for some string iff the same sequence of dominoes (indices) can generate it from both T and B — i.e., there's a PCP solution.
+The idea: T generates sequences of top strings; B generates sequences of bottom strings. The grammar is ambiguous for some string iff the same sequence of dominoes (indices) can generate it from both T and B â€” i.e., there's a PCP solution.
 
 
 
@@ -322,7 +322,7 @@ The idea: T generates sequences of top strings; B generates sequences of bottom 
 | **Program synthesis** | Does a program satisfying this spec exist? | Grammar-guided synthesis, component-based approaches |
 | **Operating system** | Will the scheduler deadlock? | Lock ordering protocols, resource allocation policies |
 
-The key insight: **undecidability doesn't make problems go away** � it forces engineers to use conservative approximations, heuristics, and human judgment where perfect automation is impossible.
+The key insight: **undecidability doesn't make problems go away** — it forces engineers to use conservative approximations, heuristics, and human judgment where perfect automation is impossible.
 
 ## Concept Comparison Table
 | Reduction Type | Definition | Power |
@@ -397,7 +397,7 @@ The key insight: **undecidability doesn't make problems go away** � it forces en
 
 <details>
 <summary>Answer</summary>
-**B)** PCP is undecidable but purely combinatorial � no TMs in its statement.
+**B)** PCP is undecidable but purely combinatorial — no TMs in its statement.
 </details>
 
 **Q5.** The Busy Beaver function BB(n) is:
@@ -408,7 +408,7 @@ The key insight: **undecidability doesn't make problems go away** � it forces en
 
 <details>
 <summary>Answer</summary>
-**B)** BB(n) grows faster than any computable function � computing it would solve the halting problem.
+**B)** BB(n) grows faster than any computable function — computing it would solve the halting problem.
 </details>
 
 ## TypeScript: Undecidability Proof Assistant
@@ -437,7 +437,7 @@ function proveByReduction(
     `Proving ${target.name} undecidable by reduction from ${knownUndecidable.name}`
   );
   console.log(`Construction: ${construction}`);
-  console.log("Logic: If target were decidable, so would source be � contradiction.");
+  console.log("Logic: If target were decidable, so would source be — contradiction.");
 
   return {
     from: knownUndecidable,
@@ -452,7 +452,7 @@ const regularTMProof = proveByReduction(
   { name: "A_TM", reStatus: "RE" },
   { name: "REGULAR_TM", reStatus: "non-RE" },
   "Given ?M,w?, construct M' that simulates M on input w. " +
-  "If M accepts w, M' accepts {0n1n}. If M doesn't accept w, M' accepts �."
+  "If M accepts w, M' accepts {0n1n}. If M doesn't accept w, M' accepts Ø."
 );
 ```
 
@@ -554,7 +554,7 @@ class Reduction {
 
   static compose(r1: Reduction, r2: Reduction): Reduction {
     return new Reduction(
-      `(${r1.name} � ${r2.name})`,
+      `(${r1.name} ° ${r2.name})`,
       r1.fromProblem,
       r2.toProblem,
       (input: string) => r2.transform(r1.transform(input))
@@ -705,7 +705,7 @@ class ManyOneReductionBuilder {
   static HALTtoEMPTY(): { name: string; description: string } {
     return {
       name: "HALT =? EMPTY_TM",
-      description: "Given ?M, w?, construct ?M_w? where M_w ignores its input, runs M on w, and accepts if M halts. L(M_w) = S* if M halts on w, else �."
+      description: "Given ?M, w?, construct ?M_w? where M_w ignores its input, runs M on w, and accepts if M halts. L(M_w) = S* if M halts on w, else Ø."
     };
   }
 
@@ -717,15 +717,15 @@ class ManyOneReductionBuilder {
     output.push(`Mapped to: ${reduction.f("M", testInput)}`);
     output.push("");
     output.push("To be a valid many-one reduction, f must be:");
-    output.push("  � Computable (implementable as a TM)");
-    output.push("  � Total (defined for all inputs)");
-    output.push("  � Membership-preserving: x ? A ? f(x) ? B");
+    output.push("  • Computable (implementable as a TM)");
+    output.push("  • Total (defined for all inputs)");
+    output.push("  • Membership-preserving: x ? A ? f(x) ? B");
     return output;
   }
 }
 
 // -----------------------------------------------------
-// Mapping Reduction Verifier � checks whether a proposed
+// Mapping Reduction Verifier — checks whether a proposed
 // reduction function is a valid mapping reduction.
 // -----------------------------------------------------
 
@@ -841,12 +841,12 @@ export { Processor, Task }
 
 ### Intermediate
 
-7. Prove formally that EMPTY_TM = { ?M? | L(M) = � } is undecidable using a reduction from A_TM.
+7. Prove formally that EMPTY_TM = { ?M? | L(M) = Ø } is undecidable using a reduction from A_TM.
 8. Show that INFINITE_TM is undecidable using Rice's theorem, then via a direct reduction.
 9. Show that PCP is RE by describing a recognizer.
 10. Prove that the language { ?M? | L(M) is regular } is undecidable using Rice's theorem.
 11. Show that CFG universality (does G generate S*?) is undecidable.
-12. Prove that TOTAL_TM = { ?M? | M halts on all inputs } is ?2�-complete (not just undecidable).
+12. Prove that TOTAL_TM = { ?M? | M halts on all inputs } is ?2°-complete (not just undecidable).
 13. Show that the recursion theorem implies the existence of a quine: a TM that outputs its own description.
 
 ### Advanced

@@ -116,7 +116,7 @@ resource "aws_ecs_service" "app" {
 
 ### Terraform Provisioners
 
-Provisioners execute scripts on resources after creation (use sparingly — prefer user_data or configuration management):
+Provisioners execute scripts on resources after creation (use sparingly â€” prefer user_data or configuration management):
 
 ```hcl
 resource "aws_instance" "web" {
@@ -462,7 +462,7 @@ console.log(ts);
 
 ### Drift Remediation Engine
 
-Infrastructure drift — when actual infrastructure state diverges from declared configuration — is a leading cause of configuration drift incidents. The following tool detects, analyzes, and proposes remediation for drift.
+Infrastructure drift â€” when actual infrastructure state diverges from declared configuration â€” is a leading cause of configuration drift incidents. The following tool detects, analyzes, and proposes remediation for drift.
 
 ```typescript
 // drift-remediation.ts

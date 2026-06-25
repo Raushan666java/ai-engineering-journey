@@ -42,7 +42,7 @@ flowchart LR
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 ![Concurrency and Threading Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/13-concurrency.png)
 
-A **race condition** occurs when the behavior of a program depends on the interleaving of operations across multiple threads. The classic example is a non-atomic increment: `counter += 1` compiles into three machine instructions—load, add, store. Two threads executing simultaneously can both load the same value, both increment it, and both store it, losing one increment.
+A **race condition** occurs when the behavior of a program depends on the interleaving of operations across multiple threads. The classic example is a non-atomic increment: `counter += 1` compiles into three machine instructionsâ€”load, add, store. Two threads executing simultaneously can both load the same value, both increment it, and both store it, losing one increment.
 
 A **critical section** is a region of code that accesses shared resources and must not be executed by more than one thread at a time. The goal of synchronization is to enforce mutual exclusion over critical sections.
 
@@ -144,7 +144,7 @@ If another thread modifies the counter between the read and the CAS, the CAS fai
 Speedup(S) = 1 / (s + p/N)
 ```
 
-where `N` is the number of processors. As `N ? 8`, the maximum speedup is `1/s`. If 10% of a task is serial, the absolute maximum speedup is 10×, regardless of how many cores you add. This is Amdahl's sobering insight: serial bottlenecks dominate at scale.
+where `N` is the number of processors. As `N ? 8`, the maximum speedup is `1/s`. If 10% of a task is serial, the absolute maximum speedup is 10Ã—, regardless of how many cores you add. This is Amdahl's sobering insight: serial bottlenecks dominate at scale.
 
 **Gustafson's Law** provides a different perspective: rather than fixing the problem size and measuring how fast it runs, fix the execution time and ask how large a problem can be solved. Since problem size typically grows with available parallelism, the scaled speedup is:
 
@@ -210,7 +210,7 @@ The JavaScript event loop is similar but runs on a single thread with a callback
 
 ### Actor Model
 
-The Actor model (Erlang, Akka) treats every entity as an **actor**—a computation unit that encapsulates state, behavior, and a mailbox. Actors communicate exclusively through asynchronous message passing; they never share state. Each actor processes messages sequentially from its mailbox.
+The Actor model (Erlang, Akka) treats every entity as an **actor**â€”a computation unit that encapsulates state, behavior, and a mailbox. Actors communicate exclusively through asynchronous message passing; they never share state. Each actor processes messages sequentially from its mailbox.
 
 Advantages:
 - No shared state means no locks, no race conditions.
@@ -584,9 +584,9 @@ class LockFreeStack:
                     return old_top.value
 ```
 
-Python's GIL provides memory safety for individual bytecode operations, but the CAS loop pattern is necessary in languages without a GIL (C++, Rust, Java with `AtomicReference`). The ABA problem manifests when a node is popped, freed, then reallocated at the same address—a hazard pointer scheme or tagged reference is needed.
+Python's GIL provides memory safety for individual bytecode operations, but the CAS loop pattern is necessary in languages without a GIL (C++, Rust, Java with `AtomicReference`). The ABA problem manifests when a node is popped, freed, then reallocated at the same addressâ€”a hazard pointer scheme or tagged reference is needed.
 
-### Example 7: async/await — Web Scraper with asyncio
+### Example 7: async/await â€” Web Scraper with asyncio
 
 ```python
 import asyncio
@@ -610,7 +610,7 @@ async def main():
 asyncio.run(main())
 ```
 
-**Execution flow**: `asyncio.run(main())` creates the event loop, runs `main`, and closes the loop. Inside `fetch_all`, `asyncio.gather` schedules all coroutines concurrently. At each `await`, the event loop suspends the coroutine and runs another ready coroutine. I/O waits do not block the thread—they register a callback with the OS poller and resume when data arrives.
+**Execution flow**: `asyncio.run(main())` creates the event loop, runs `main`, and closes the loop. Inside `fetch_all`, `asyncio.gather` schedules all coroutines concurrently. At each `await`, the event loop suspends the coroutine and runs another ready coroutine. I/O waits do not block the threadâ€”they register a callback with the OS poller and resume when data arrives.
 
 ### Example 8: Deadlock Detection with Wait-For Graph
 

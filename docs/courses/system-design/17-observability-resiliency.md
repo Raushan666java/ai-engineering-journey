@@ -81,7 +81,7 @@ Observability is the ability to understand a system's internal state from its ex
 
 **RED Method** (for services): Rate (requests/second), Errors (failed requests/second), Duration (latency distribution). Every service should expose at minimum these three metrics.
 
-**USE Method** (for resources): Utilization (time resource busy), Saturation (work queued), Errors (failure count). Applied to CPU, memory, disk, network — every infrastructure resource.
+**USE Method** (for resources): Utilization (time resource busy), Saturation (work queued), Errors (failure count). Applied to CPU, memory, disk, network â€” every infrastructure resource.
 
 **Four Golden Signals** (Google SRE):
 - **Latency**: Time to service a request. Distinguish success latency (fast) from error latency (slow).
@@ -207,13 +207,13 @@ def get_order(id):
 ```
 traceparent: 00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01
   --- -------------------------- ------------------- ---
-   ¦          ¦                          ¦              ¦
+   Â¦          Â¦                          Â¦              Â¦
  version   trace_id                    span_id       trace_flags
 
 tracestate: vendor1=value1,vendor2=value2
 ```
 
-Automatic propagation via OpenTelemetry's HTTP instrumentation libraries — no manual header passing needed.
+Automatic propagation via OpenTelemetry's HTTP instrumentation libraries â€” no manual header passing needed.
 
 **Sampling strategies**:
 - **Head-based**: Decision at the root span (first service). Simple but may miss important slow requests. Use ProbabilitySampler (sample 1% of traces).
@@ -323,13 +323,13 @@ Isolates resources so failure in one component doesn't exhaust shared resources.
 ```
 Thread pools:
   +- order-service -+
-  ¦ pool: 10 threads¦
+  Â¦ pool: 10 threadsÂ¦
   +-----------------+
   +- payment-service-+  ? this pool exhausts, orders pool unaffected
-  ¦ pool: 5 threads ¦
+  Â¦ pool: 5 threads Â¦
   +-----------------+
   +- inventory-svc -+
-  ¦ pool: 8 threads ¦
+  Â¦ pool: 8 threads Â¦
   +-----------------+
 ```
 
@@ -406,7 +406,7 @@ if len(work_queue) > MAX_DEPTH: return {"error": "too many requests"}, 503
 
 ### 13. Health Check API
 
-Standard endpoints: `GET /health` (liveness — process alive?) and `GET /ready` (readiness — dependencies reachable?). Dependency checks return 503 to remove degraded pods from the load balancer:
+Standard endpoints: `GET /health` (liveness â€” process alive?) and `GET /ready` (readiness â€” dependencies reachable?). Dependency checks return 503 to remove degraded pods from the load balancer:
 
 ```python
 @app.route("/ready")
@@ -841,7 +841,7 @@ demo()
 export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- The three pillars of observability are logging, metrics, and tracing — each serves a distinct purpose: debugging, alerting, and latency analysis
+- The three pillars of observability are logging, metrics, and tracing â€” each serves a distinct purpose: debugging, alerting, and latency analysis
 - RED method (Rate, Errors, Duration) for services; USE method (Utilization, Saturation, Errors) for infrastructure resources
 - Prometheus uses a pull model with Counter (monotonic), Gauge (fluctuating), Histogram (bucketed), and Summary (quantile) metric types
 - OpenTelemetry provides vendor-neutral tracing with W3C TraceContext propagation and configurable sampling strategies

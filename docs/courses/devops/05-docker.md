@@ -711,10 +711,10 @@ class ContainerProfiler {
 
   private generateRecommendations(m: ContainerMetrics, score: number): string[] {
     const recs: string[] = [];
-    if (m.cpuPercent < 5) recs.push(`Low CPU (${m.cpuPercent}%) — consider rightsizing or consolidating`);
-    if (m.memoryMB < 10) recs.push(`Low memory usage — container may be over-provisioned`);
-    if (m.cpuPercent > 90) recs.push(`High CPU (${m.cpuPercent}%) — consider scaling out`);
-    if (score < 50) recs.push('Poor efficiency — review resource requests and limits');
+    if (m.cpuPercent < 5) recs.push(`Low CPU (${m.cpuPercent}%) â€” consider rightsizing or consolidating`);
+    if (m.memoryMB < 10) recs.push(`Low memory usage â€” container may be over-provisioned`);
+    if (m.cpuPercent > 90) recs.push(`High CPU (${m.cpuPercent}%) â€” consider scaling out`);
+    if (score < 50) recs.push('Poor efficiency â€” review resource requests and limits');
     return recs;
   }
 

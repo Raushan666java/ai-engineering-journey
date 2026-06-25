@@ -1,4 +1,4 @@
-# Chapter 20: Case Study — Netflix and Video Streaming
+# Chapter 20: Case Study â€” Netflix and Video Streaming
 > **Previous:** [19 Case Study Whatsapp](./19-case-study-whatsapp.md) | **Next:** [21 Case Study Uber](./21-case-study-uber.md)
 
 ---
@@ -26,7 +26,7 @@ flowchart LR
 ```
 |--------|---------|
 | **Scope** | Netflix architecture: microservices, chaos engineering, CDN, recommendation |
-| **Key Concepts** | Core topics covered in Chapter 20: Case Study — Netflix and Video Streaming |
+| **Key Concepts** | Core topics covered in Chapter 20: Case Study â€” Netflix and Video Streaming |
 | **Design Skills** | Chaos engineering, microservices decomposition, CDN strategy |
 | **Interview Angle** | Frequently tested in system design interviews |
 
@@ -34,7 +34,7 @@ flowchart LR
 
 | Aspect | Details |
 |--------|---------|
-| **Scope** | Core concepts covered in Chapter 20: Case Study — Netflix and Video Streaming |
+| **Scope** | Core concepts covered in Chapter 20: Case Study â€” Netflix and Video Streaming |
 | **Key Concepts** | Theory, Case Study: Netflix Playback Startup, Case Study: Netflix Content Ingestion and Processing Pipeline, Concept Comparison |
 | **Design Skills** | Concept mastery and practical application |
 | **Interview Angle** | Common system design interview topic |
@@ -118,15 +118,15 @@ Netflix streams over 100 million hours of content daily across 190+ countries. T
 - 100M hours/day = ~1.16M hours/sec peak
 - Average bitrate: ~5 Mbps (mix of SD/HD/4K)
 - Peak concurrent streams: ~20M (prime time)
-- Total peak bandwidth: 20M × 5 Mbps = 100,000 Gbps = 100 Tbps
+- Total peak bandwidth: 20M Ã— 5 Mbps = 100,000 Gbps = 100 Tbps
 - Daily data transfer: ~2.5 exabytes (2.5M TB)
 
 **Storage**
 
-- Master library: 1M hours × 50 GB/hour (4K source) = 50 PB of source content
+- Master library: 1M hours Ã— 50 GB/hour (4K source) = 50 PB of source content
 - Encoded output: each title encoded at 200+ bitrate/resolution combinations
 - Per-title encoded size: ~10 GB (all profiles)
-- Total encoded catalog: 17,000 × 10 GB = 170 TB
+- Total encoded catalog: 17,000 Ã— 10 GB = 170 TB
 - CDN cache: additional ~5 PB (most popular 10% of catalog cached at all OCAs)
 
 **Encoding Pipeline**
@@ -138,7 +138,7 @@ Netflix streams over 100 million hours of content daily across 190+ countries. T
 
 **Recommendation System**
 
-- 260M profiles × thousands of titles = 10^12 potential user-title pairs
+- 260M profiles Ã— thousands of titles = 10^12 potential user-title pairs
 - Model training: terabytes of watch history data
 - Feature vectors: 10,000+ dimensions per user and per title
 - Real-time inference: <500ms per personalized page load
@@ -275,12 +275,12 @@ The encoding ladder is the set of bitrate-resolution pairs available for a title
 
 | Profile | Resolution | Bitrate | Codec |
 |---------|------------|---------|-------|
-| Low | 235p (416×234) | 235 Kbps | H.264/AVC |
-| Medium | 360p (640×360) | 560 Kbps | H.264/AVC |
-| Standard | 480p (854×480) | 1 Mbps | H.264/AVC |
-| High | 720p (1280×720) | 3 Mbps | H.264/AVC |
-| Full HD | 1080p (1920×1080) | 6 Mbps | H.264/AVC |
-| UHD | 2160p (3840×2160) | 16 Mbps | HEVC/H.265 |
+| Low | 235p (416Ã—234) | 235 Kbps | H.264/AVC |
+| Medium | 360p (640Ã—360) | 560 Kbps | H.264/AVC |
+| Standard | 480p (854Ã—480) | 1 Mbps | H.264/AVC |
+| High | 720p (1280Ã—720) | 3 Mbps | H.264/AVC |
+| Full HD | 1080p (1920Ã—1080) | 6 Mbps | H.264/AVC |
+| UHD | 2160p (3840Ã—2160) | 16 Mbps | HEVC/H.265 |
 | HDR | 2160p (HDR10/DV) | 20 Mbps | HEVC/H.265 |
 
 Video content is divided into chunks (typically 2-4 seconds). The client's manifest file lists all available chunks at all bitrates. The client-side adaptive bitrate (ABR) algorithm selects the optimal bitrate based on:
@@ -316,7 +316,7 @@ The encoding pipeline is a large-scale distributed system:
 ```
 Source (IMF/J2K 4K) ? Step 1: Pre-processing
   ? Step 2: Detection (scene cuts, black frames, audio sync)
-  ? Step 3: Parallel Chunk Encoding (N chunks × M profiles)
+  ? Step 3: Parallel Chunk Encoding (N chunks Ã— M profiles)
   ? Step 4: Quality Validation (VMAF per chunk)
   ? Step 5: Manifest Generation (MPD for DASH, M3U8 for HLS)
   ? Step 6: Packaging (fMP4/CMAF segments)
@@ -324,8 +324,8 @@ Source (IMF/J2K 4K) ? Step 1: Pre-processing
 ```
 
 A single 2-hour movie at 200 encoding profiles with 2-second chunks produces:
-- 3,600 chunks per profile (2 hours × 60 min × 30 chunks/min)
-- 3,600 × 200 = 720,000 total chunks to encode
+- 3,600 chunks per profile (2 hours Ã— 60 min Ã— 30 chunks/min)
+- 3,600 Ã— 200 = 720,000 total chunks to encode
 - Each chunk is encoded independently ? massive parallelism
 
 Netflix runs this pipeline on AWS Spot instances (preemptible EC2 instances at 60-90% discount). The risk of spot termination is managed:
@@ -378,9 +378,9 @@ The ranking and re-ranking stages together execute in under 500ms per user page 
 
 **Chaos Engineering**
 
-Netflix pioneered chaos engineering — the practice of intentionally injecting failures into production systems to build confidence in resilience.
+Netflix pioneered chaos engineering â€” the practice of intentionally injecting failures into production systems to build confidence in resilience.
 
-**Chaos Monkey**: Randomly terminates EC2 instances in production. If the system survives, auto-scaling and retry mechanisms work correctly. If not, the team fixes the gap. Runs during business hours (not overnight — the goal is learning, not disruption).
+**Chaos Monkey**: Randomly terminates EC2 instances in production. If the system survives, auto-scaling and retry mechanisms work correctly. If not, the team fixes the gap. Runs during business hours (not overnight â€” the goal is learning, not disruption).
 
 **Latency Monkey**: Introduces artificial delays between services. Tests circuit breaker configurations and timeout handling. If Hystrix circuits open correctly, the system degrades gracefully. If not, cascading failures propagate.
 
@@ -404,7 +404,7 @@ The lifecycle of a chaos experiment at Netflix:
 
 1. **Design**: The engineer defines the experiment parameters: which service, what failure type (instance termination, latency injection, DNS failure), duration (typically 15-30 minutes), and the steady state hypothesis (error rate < 0.1%, P99 latency < 500ms).
 
-2. **Schedule**: The experiment is scheduled via the Chaos Platform (FIT — Failure Injection Testing). The platform checks that no other experiments are running in the same service, no production incidents are active, and it is within business hours.
+2. **Schedule**: The experiment is scheduled via the Chaos Platform (FIT â€” Failure Injection Testing). The platform checks that no other experiments are running in the same service, no production incidents are active, and it is within business hours.
 
 3. **Execute**: The platform injects the failure into a small subset of instances (e.g., 1% of the autoscaling group). Monitoring dashboards stream live metrics.
 
@@ -447,7 +447,7 @@ Netflix operates in multiple AWS regions with an active-active architecture. All
 
 Key components:
 
-- **Cassandra for cross-region data**: User profiles, viewing history, ratings, and My List are stored in Cassandra with cross-region replication. Each write is replicated asynchronously to other regions. Read-your-write consistency is maintained via a "local quorum" — the user's primary region is determined by geolocation.
+- **Cassandra for cross-region data**: User profiles, viewing history, ratings, and My List are stored in Cassandra with cross-region replication. Each write is replicated asynchronously to other regions. Read-your-write consistency is maintained via a "local quorum" â€” the user's primary region is determined by geolocation.
 
 - **EVCache for cross-region caching**: EVCache stores frequently accessed data. Cross-region replication is enabled for critical caches. If a region fails, the new primary region has warm caches via replication.
 
@@ -678,16 +678,16 @@ A new 4K HDR movie is delivered to Netflix. It must be encoded, packaged, subtit
 
 ```
 Source Media (IMF package, 4K HDR, 5.1 audio)
-  ? Step 1: Ingest — Validate format, checksum, metadata (24-bit audio, color space, frame rate)
-  ? Step 2: QC — Automated quality checks (black frames, audio sync, freeze frames, audio loudness)
-  ? Step 3: Mezzanine — Transcode to intermediate format (ProRes 4444 or JPEG 2000) for encoding
-  ? Step 4: Analysis — Scene detection, complexity analysis (SI/TI), audio track detection
-  ? Step 5: Encoding — Per-title optimized encoding into 200+ profiles
-  ? Step 6: Quality Validation — VMAF scoring per chunk, minimum score gate
-  ? Step 7: Packaging — CMAF segments, MPD/M3U8 manifests per language/audio combination
-  ? Step 8: Subtitle Processing — OCR for burned-in subtitles, timed-text conversion (TTML ? WebVTT)
-  ? Step 9: CDN Pre-population — Fill command to all Open Connect appliances
-  ? Step 10: Catalog Activation — Title appears in search and recommendations
+  ? Step 1: Ingest â€” Validate format, checksum, metadata (24-bit audio, color space, frame rate)
+  ? Step 2: QC â€” Automated quality checks (black frames, audio sync, freeze frames, audio loudness)
+  ? Step 3: Mezzanine â€” Transcode to intermediate format (ProRes 4444 or JPEG 2000) for encoding
+  ? Step 4: Analysis â€” Scene detection, complexity analysis (SI/TI), audio track detection
+  ? Step 5: Encoding â€” Per-title optimized encoding into 200+ profiles
+  ? Step 6: Quality Validation â€” VMAF scoring per chunk, minimum score gate
+  ? Step 7: Packaging â€” CMAF segments, MPD/M3U8 manifests per language/audio combination
+  ? Step 8: Subtitle Processing â€” OCR for burned-in subtitles, timed-text conversion (TTML ? WebVTT)
+  ? Step 9: CDN Pre-population â€” Fill command to all Open Connect appliances
+  ? Step 10: Catalog Activation â€” Title appears in search and recommendations
 ```
 
 ### Subtitle and Audio Pipeline
@@ -710,9 +710,9 @@ A critical quality issue: subtitles that render differently on different devices
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory | Core topic covered in Chapter 20: Case Study — Netflix and Video Streaming | Defined by specific measurable attributes |
-| Case Study: Netflix Playback Startup | Core topic covered in Chapter 20: Case Study — Netflix and Video Streaming | Defined by specific measurable attributes |
-| Case Study: Netflix Content Ingestion and Processing Pipeline | Core topic covered in Chapter 20: Case Study — Netflix and Video Streaming | Defined by specific measurable attributes |
+| Theory | Core topic covered in Chapter 20: Case Study â€” Netflix and Video Streaming | Defined by specific measurable attributes |
+| Case Study: Netflix Playback Startup | Core topic covered in Chapter 20: Case Study â€” Netflix and Video Streaming | Defined by specific measurable attributes |
+| Case Study: Netflix Content Ingestion and Processing Pipeline | Core topic covered in Chapter 20: Case Study â€” Netflix and Video Streaming | Defined by specific measurable attributes |
 
 ---
 
@@ -721,9 +721,9 @@ A critical quality issue: subtitles that render differently on different devices
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Fundamental concept for Chapter 20: Case Study — Netflix and Video Streaming |
-| Case Study: Netflix Playback Startup | Fundamental concept for Chapter 20: Case Study — Netflix and Video Streaming |
-| Case Study: Netflix Content Ingestion and Processing Pipeline | Fundamental concept for Chapter 20: Case Study — Netflix and Video Streaming |
+| Theory | Fundamental concept for Chapter 20: Case Study â€” Netflix and Video Streaming |
+| Case Study: Netflix Playback Startup | Fundamental concept for Chapter 20: Case Study â€” Netflix and Video Streaming |
+| Case Study: Netflix Content Ingestion and Processing Pipeline | Fundamental concept for Chapter 20: Case Study â€” Netflix and Video Streaming |
 
 ---
 
@@ -768,8 +768,8 @@ A critical quality issue: subtitles that render differently on different devices
 
 | Concept | Definition | Key Insight |
 |---------|-----------|-------------|
-| Theory | Core topic in Chapter 20: Case Study — Netflix and Video Streaming | Fundamental to system design |
-| Case Study: Netflix Playback Startup | Core topic in Chapter 20: Case Study — Netflix and Video Streaming | Fundamental to system design |
+| Theory | Core topic in Chapter 20: Case Study â€” Netflix and Video Streaming | Fundamental to system design |
+| Case Study: Netflix Playback Startup | Core topic in Chapter 20: Case Study â€” Netflix and Video Streaming | Fundamental to system design |
 
 ---
 
@@ -778,7 +778,7 @@ A critical quality issue: subtitles that render differently on different devices
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Essential concept for Chapter 20: Case Study — Netflix and Video Streaming |
+| Theory | Essential concept for Chapter 20: Case Study â€” Netflix and Video Streaming |
 
 ---
 
@@ -956,4 +956,4 @@ Design a live streaming architecture for Netflix that:
 4. **Time-shifted viewing**: Viewers join 30 minutes late and want to watch from the beginning. How do you simultaneously serve live and time-shifted streams from the same pipeline? How do you manage the transition from "live" to "available on-demand" after the event ends?
 5. **C3 (Content Continuity Control)**: Commercial broadcasters require frame-accurate ad insertion during live events. Design a signaling protocol that marks ad breaks in the live stream and enables server-side ad insertion without disrupting the viewing experience.
 
-This challenge must work for an audience of 200M+ concurrent viewers — a scale no current live streaming system has achieved.
+This challenge must work for an audience of 200M+ concurrent viewers â€” a scale no current live streaming system has achieved.

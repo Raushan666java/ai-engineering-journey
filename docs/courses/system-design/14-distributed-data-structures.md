@@ -1,4 +1,4 @@
-# Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond
+# Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond
 > **Previous:** [13 Lld Concurrency](./13-lld-concurrency.md) | **Next:** [15 Cdn Dns Edge](./15-cdn-dns-edge.md)
 
 ---
@@ -24,7 +24,7 @@ flowchart LR
 ```
 |--------|---------|
 | **Scope** | Distributed data structures, Bloom filters, HyperLogLog, Count-Min Sketch |
-| **Key Concepts** | Core topics covered in Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond |
+| **Key Concepts** | Core topics covered in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
 | **Design Skills** | Probabilistic data structure selection, memory budgeting |
 | **Interview Angle** | Frequently tested in system design interviews |
 
@@ -32,7 +32,7 @@ flowchart LR
 
 | Aspect | Details |
 |--------|---------|
-| **Scope** | Core concepts covered in Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond |
+| **Scope** | Core concepts covered in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
 | **Key Concepts** | Theory, Examples, Concept Comparison, Quick Reference |
 | **Design Skills** | Concept mastery and practical application |
 | **Interview Angle** | Common system design interview topic |
@@ -71,7 +71,7 @@ flowchart LR
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
-Consistent hashing maps keys to nodes in a hash ring (range [0, 2^m - 1]). Both nodes and keys hash into this ring; each key is assigned to the nearest clockwise node. When a node joins or leaves, only keys in its immediate vicinity redistribute — O(K/N) keys rather than O(K) reshuffling, where K is total keys and N is node count.
+Consistent hashing maps keys to nodes in a hash ring (range [0, 2^m - 1]). Both nodes and keys hash into this ring; each key is assigned to the nearest clockwise node. When a node joins or leaves, only keys in its immediate vicinity redistribute â€” O(K/N) keys rather than O(K) reshuffling, where K is total keys and N is node count.
 
 **Hash ring**: Construct a circle of size 2^m (typically m = 32 or 64). Hash each node identifier (e.g., IP:port) with a uniform hash function and place it on the ring. Hash each key and walk clockwise to find the first node.
 
@@ -144,7 +144,7 @@ For large node sets, HRW can be accelerated with a tree-based grouping (hierarch
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
-A Merkle tree is a complete binary tree where leaf nodes store hashes of data blocks and internal nodes store hashes of their children. The root hash commits the entire dataset. Two replicas compare root hashes; if they differ, they walk down divergent branches to find the specific blocks that differ — O(log B) comparisons for B blocks rather than O(B).
+A Merkle tree is a complete binary tree where leaf nodes store hashes of data blocks and internal nodes store hashes of their children. The root hash commits the entire dataset. Two replicas compare root hashes; if they differ, they walk down divergent branches to find the specific blocks that differ â€” O(log B) comparisons for B blocks rather than O(B).
 
 **Application in Dynamo**: Each node maintains a Merkle tree per key range. During anti-entropy (gossip-based reconciliation), nodes exchange root hashes. Mismatched ranges are recursively compared until individual conflicting key-value pairs are identified. This reduces reconciliation bandwidth from O(N) to O(log N) per range.
 
@@ -163,12 +163,12 @@ A Bloom filter is a space-efficient probabilistic data structure that tests set 
 **False positive rate** (after n insertions):
 
 ```
-p = (1 - (1 - 1/m)^(k*n))^k  ˜  (1 - e^(-k*n/m))^k
+p = (1 - (1 - 1/m)^(k*n))^k  Ëœ  (1 - e^(-k*n/m))^k
 ```
 
 **Optimal k**: k_opt = (m/n) * ln(2)
 
-At k_opt, p = (1/2)^k ˜ 0.6185^(m/n). For a 1% false positive rate, m/n ˜ 9.6 bits per element.
+At k_opt, p = (1/2)^k Ëœ 0.6185^(m/n). For a 1% false positive rate, m/n Ëœ 9.6 bits per element.
 
 ```python
 import hashlib, math
@@ -234,14 +234,14 @@ class CountMinSketch:
 
 ### 6. HyperLogLog
 
-Estimates the cardinality (number of distinct elements) of a multiset using O(log log N) space — 12 KB for 2% error on billions of elements. The algorithm observes the longest run of leading zeros in hashed values: if we see a hash starting with ? zeros, we expect approximately 2^? distinct elements.
+Estimates the cardinality (number of distinct elements) of a multiset using O(log log N) space â€” 12 KB for 2% error on billions of elements. The algorithm observes the longest run of leading zeros in hashed values: if we see a hash starting with ? zeros, we expect approximately 2^? distinct elements.
 
 **Loglog counting**: For n elements with hash values uniformly distributed in [0, 2^L), the probability of a hash beginning with ? zeros is 2^(-?-1). The maximum observed ? across n elements approximates log2(n).
 
 **HyperLogLog** improves this with stochastic averaging: split the hash into a bucket index (first p bits, yielding m = 2^p registers) and a value (remaining bits). Track ?_max per bucket. Combine estimates using harmonic mean:
 
 ```
-E = a_m * m² / S(2^(-M[j]))
+E = a_m * mÂ² / S(2^(-M[j]))
 ```
 
 where a_m is a bias correction constant (~0.7213 for m = 2^12).
@@ -277,18 +277,18 @@ class HyperLogLog:
 
 A Cuckoo filter stores fingerprints (f-bit hash of each item) in a Cuckoo hash table. Each item maps to two candidate buckets (via primary hash and XOR of fingerprint). On insertion, if both buckets are full, existing entries are relocated (cuckoo kick). Supports deletion natively by removing the fingerprint.
 
-**Properties**: Supports deletion, O(1) lookup, 95% load factor, better lookup performance than Bloom for low false positive targets (< 3%). False positive rate ˜ 1/2^f for f-bit fingerprint.
+**Properties**: Supports deletion, O(1) lookup, 95% load factor, better lookup performance than Bloom for low false positive targets (< 3%). False positive rate Ëœ 1/2^f for f-bit fingerprint.
 
 ```
 f = log2(1/p) + 3  bits per fingerprint
-Space ˜ (log2(1/p) + 3) / load_factor  bits per item
+Space Ëœ (log2(1/p) + 3) / load_factor  bits per item
 ```
 
 ### 8. Quotient Filter and XOR Filter
 
 **Quotient filter**: Stores the quotient (upper bits of hash) and remainder (lower bits) in a compact hash table using linear probing. Supports deletion, merging, and better cache locality than Bloom filters. Uses 3 metadata bits per slot: is_occupied, is_continuation, is_shifted.
 
-**XOR filter**: A recent alternative to Bloom filters for static sets (no inserts after build). Uses a single hash function and 3 hash tables. Requires ~1.23 log2(1/p) + 3 bits per entry — approximately 20-30% smaller than Bloom filters for 1% false positive rate. Cannot support dynamic insertions.
+**XOR filter**: A recent alternative to Bloom filters for static sets (no inserts after build). Uses a single hash function and 3 hash tables. Requires ~1.23 log2(1/p) + 3 bits per entry â€” approximately 20-30% smaller than Bloom filters for 1% false positive rate. Cannot support dynamic insertions.
 
 ### 9. Comparison Table
 
@@ -341,11 +341,11 @@ Given 10 million elements and 1% false positive rate:
 ```python
 n = 10_000_000
 p = 0.01
-m = int(-n * math.log(p) / (math.log(2)**2))  # 95,904,678 bits ˜ 11.4 MB
+m = int(-n * math.log(p) / (math.log(2)**2))  # 95,904,678 bits Ëœ 11.4 MB
 k = int((m / n) * math.log(2))                # 7 hash functions
 ```
 
-At k = 7 and m/n = 9.6, the actual false positive rate is (1 - e^(-7/9.6))^7 ˜ 0.0081 (0.81%), slightly better than target. Reducing m/n to 6.2 doubles the FP rate to ~2%.
+At k = 7 and m/n = 9.6, the actual false positive rate is (1 - e^(-7/9.6))^7 Ëœ 0.0081 (0.81%), slightly better than target. Reducing m/n to 6.2 doubles the FP rate to ~2%.
 
 ### Example 3: HyperLogLog Merge in Distributed Counting
 
@@ -368,7 +368,7 @@ for hll in hll_shards:
 print(f"Estimated unique visitors: {merged.cardinality()}")
 ```
 
-At p = 12 (m = 4096), total memory = 4096 registers × 6 bits ˜ 3 KB per shard, merged result accurate within ~2%.
+At p = 12 (m = 4096), total memory = 4096 registers Ã— 6 bits Ëœ 3 KB per shard, merged result accurate within ~2%.
 
 ### Example 4: Cuckoo Filter Implementation
 
@@ -424,7 +424,7 @@ class CuckooFilter:
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory | Core topic covered in Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond | Defined by specific measurable attributes |
+| Theory | Core topic covered in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond | Defined by specific measurable attributes |
 
 ---
 
@@ -433,7 +433,7 @@ class CuckooFilter:
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Fundamental concept for Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond |
+| Theory | Fundamental concept for Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
 
 ---
 
@@ -478,7 +478,7 @@ class CuckooFilter:
 
 | Concept | Definition | Key Insight |
 |---------|-----------|-------------|
-| Theory | Core topic in Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond | Fundamental to system design |
+| Theory | Core topic in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond | Fundamental to system design |
 
 ---
 
@@ -487,7 +487,7 @@ class CuckooFilter:
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Essential concept for Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond |
+| Theory | Essential concept for Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
 
 ---
 
@@ -781,11 +781,11 @@ demo()
 export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- Consistent hashing maps keys to nodes on a ring with O(log N) lookup; virtual nodes (R ˜ 150) smooth load imbalance to CV < 0.01
+- Consistent hashing maps keys to nodes on a ring with O(log N) lookup; virtual nodes (R Ëœ 150) smooth load imbalance to CV < 0.01
 - Rendezvous hashing needs O(N) lookups but is metadata-free and inherently balanced
 - Merkle trees enable log-time anti-entropy reconciliation in Dynamo/Cassandra by comparing block-level hash roots
 - Bloom filters (m/n = 9.6 for 1% FP rate) trade accuracy for space; optimal hash count k = (m/n) * ln(2)
-- Counting Bloom adds 4-bit counters per slot for deletion support but uses 4× the space
+- Counting Bloom adds 4-bit counters per slot for deletion support but uses 4Ã— the space
 - Count-Min Sketch estimates item frequency with ed-bounds in sublinear space
 - HyperLogLog estimates cardinality at ~2% error using 12 KB, with trivial merge for distributed counts
 - Cuckoo filters support deletion and beat Bloom on lookup speed for FP rates below 3%

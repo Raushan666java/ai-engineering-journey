@@ -142,7 +142,7 @@ interface IERC721 {
 
 **ERC-1155 (Multi-Token Standard):**
 
-Combines ERC-20 and ERC-721 features — one contract manages multiple token types.
+Combines ERC-20 and ERC-721 features â€” one contract manages multiple token types.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -183,7 +183,7 @@ function withdrawUnsafe(uint256 amount) external {
     require(balances[msg.sender] >= amount, "Insufficient balance");
     (bool success, ) = msg.sender.call{value: amount}("");  // External call FIRST
     require(success, "Transfer failed");
-    balances[msg.sender] -= amount;  // State update AFTER — VULNERABLE!
+    balances[msg.sender] -= amount;  // State update AFTER â€” VULNERABLE!
 }
 
 // SAFE: Check-Effects-Interactions
@@ -249,7 +249,7 @@ flowchart TB
 ```
 
 ```solidity
-// Minimal proxy pattern (UUPS — Universal Upgradeable Proxy Standard)
+// Minimal proxy pattern (UUPS â€” Universal Upgradeable Proxy Standard)
 contract UUPSProxy {
     address public implementation;
 
@@ -283,7 +283,7 @@ abstract contract UUPSUpgradeable {
 }
 ```
 
-**Note on storage collisions:** Proxy patterns must respect storage layout — you cannot reorder or remove state variables. The OpenZeppelin upgradeable contracts and UUPS/Transparent proxy patterns handle this.
+**Note on storage collisions:** Proxy patterns must respect storage layout â€” you cannot reorder or remove state variables. The OpenZeppelin upgradeable contracts and UUPS/Transparent proxy patterns handle this.
 
 ### Gas Optimization Techniques
 
@@ -515,11 +515,11 @@ contract GasComparison {
 }
 ```
 
-> **One-Sentence Takeaway:** Every storage write costs 5,000-22,100 gas while memory operations cost ~3 gas — the biggest optimization in Solidity is minimizing what you store on the blockchain.
+> **One-Sentence Takeaway:** Every storage write costs 5,000-22,100 gas while memory operations cost ~3 gas â€” the biggest optimization in Solidity is minimizing what you store on the blockchain.
 
 > **Pro Tip:** Use `calldata` instead of `memory` for read-only function parameters. It's cheaper than `memory` and avoids unnecessary data copying.
 
-> **Warning:** The `tx.origin` global should never be used for authentication — it returns the original sender of the transaction, which can be a malicious contract. Always use `msg.sender` for access control.
+> **Warning:** The `tx.origin` global should never be used for authentication â€” it returns the original sender of the transaction, which can be a malicious contract. Always use `msg.sender` for access control.
 
 ---
 
@@ -926,7 +926,7 @@ export { Processor, Task }
 
 ## Practical Takeaways
 
-1. Always follow Check-Effects-Interactions — update state before external calls.
+1. Always follow Check-Effects-Interactions â€” update state before external calls.
 2. Use OpenZeppelin's audited contracts for standards (ERC-20, ERC-721) rather than writing from scratch.
 3. Implement the proxy pattern for production contracts that may need future upgrades.
 4. Use `calldata` for read-only function parameters and pack struct fields to save gas.

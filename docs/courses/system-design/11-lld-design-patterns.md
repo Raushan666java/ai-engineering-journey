@@ -104,7 +104,7 @@ pizza = PizzaBuilder().set_size("large").add_cheese().add_topping("pepperoni").b
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
-Structural patterns concern class and object composition—how entities use each other to form larger structures.
+Structural patterns concern class and object compositionâ€”how entities use each other to form larger structures.
 
 **Adapter** converts the interface of a class into another interface that clients expect. A **class adapter** uses multiple inheritance; an **object adapter** uses composition. The object adapter is more flexible because it adapts not just a class but an entire hierarchy.
 
@@ -125,7 +125,7 @@ def compute(x: int) -> int:
     return x * 2
 ```
 
-**Facade** provides a unified interface to a set of interfaces in a subsystem. It defines a higher-level interface that makes the subsystem easier to use. The Facade does not encapsulate the subsystem—it merely provides a simplified interface.
+**Facade** provides a unified interface to a set of interfaces in a subsystem. It defines a higher-level interface that makes the subsystem easier to use. The Facade does not encapsulate the subsystemâ€”it merely provides a simplified interface.
 
 **Proxy** provides a surrogate or placeholder for another object to control access to it. Variants include:
 - **Virtual proxy**: delays expensive object creation until it is needed.
@@ -159,13 +159,13 @@ class EventBus:
 
 **State** allows an object to alter its behavior when its internal state changes. The object appears to change its class. Each state is a separate class implementing a common interface; transitions are handled within state classes.
 
-**Template Method** defines the skeleton of an algorithm in a base class, deferring some steps to subclasses. Subclasses redefine certain steps without changing the algorithm's structure. It is one of the most common patterns—essentially "Hollywood Principle": don't call us, we'll call you.
+**Template Method** defines the skeleton of an algorithm in a base class, deferring some steps to subclasses. Subclasses redefine certain steps without changing the algorithm's structure. It is one of the most common patternsâ€”essentially "Hollywood Principle": don't call us, we'll call you.
 
 **Chain of Responsibility** passes a request along a chain of handlers. Each handler decides either to process the request or to pass it to the next handler in the chain. Middleware pipelines in web frameworks (Express.js, ASP.NET Core) are textbook examples.
 
 **Iterator** provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation. Python's `__iter__` and `__next__` protocols make any class iterable.
 
-**Mediator** defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping objects from referring to each other explicitly. An air traffic control tower is the real-world analogy—planes communicate through the tower, not directly with each other.
+**Mediator** defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping objects from referring to each other explicitly. An air traffic control tower is the real-world analogyâ€”planes communicate through the tower, not directly with each other.
 
 ### Concurrency Patterns
 
@@ -187,7 +187,7 @@ Anti-patterns are common but ineffective solutions that appear attractive at fir
 
 **God Object** (aka Blob): A single class that knows too much or does too much. Symptoms include hundreds of methods and fields across dozens of responsibilities. Resolution: decompose by SRP.
 
-**Spaghetti Code**: Code with an unstructured, tangled control flow. Characterized by extensive use of `goto` (or its equivalents—deeply nested conditionals, exception-based control flow). Resolution: apply structured programming and extract methods.
+**Spaghetti Code**: Code with an unstructured, tangled control flow. Characterized by extensive use of `goto` (or its equivalentsâ€”deeply nested conditionals, exception-based control flow). Resolution: apply structured programming and extract methods.
 
 **Copy-Paste Programming**: Duplicating code instead of abstracting common behavior. Leads to inconsistent fixes (fixed in one copy but not another). Resolution: extract duplicated logic into shared methods or classes.
 
@@ -217,7 +217,7 @@ Anti-patterns are common but ineffective solutions that appear attractive at fir
 
 ---
 ## Examples
-### Example 1: Factory Method — Document Creation
+### Example 1: Factory Method â€” Document Creation
 
 A document editor creates different types of documents. The editor should not know the concrete document type at compile time.
 
@@ -256,7 +256,7 @@ class SpreadsheetApp(Application):
         return SpreadsheetDocument()
 ```
 
-### Example 2: Decorator — Adding Compression and Encryption to a Data Stream
+### Example 2: Decorator â€” Adding Compression and Encryption to a Data Stream
 
 The base component reads/writes raw data. Decorators add compression and encryption without modifying the base class.
 
@@ -309,7 +309,7 @@ class EncryptionDecorator(DataSourceDecorator):
         raw = super().read()
         return raw.replace("[ENCRYPTED]", "").replace("[/ENCRYPTED]", "")
 
-# Usage — compose decorators at runtime
+# Usage â€” compose decorators at runtime
 source = FileDataSource("data.txt")
 source = CompressionDecorator(source)
 source = EncryptionDecorator(source)
@@ -319,7 +319,7 @@ print(source.read())  # Hello World
 
 Decorators can be stacked in any order, providing enormous flexibility at composition time.
 
-### Example 3: Command Pattern — Undo in a Text Editor
+### Example 3: Command Pattern â€” Undo in a Text Editor
 
 Each operation is a command object that knows how to execute and undo itself.
 
@@ -378,7 +378,7 @@ editor.undo()  # Removes "World"
 print(editor._buffer)  # ['Hello']
 ```
 
-### Example 4: Observer — Stock Price Notification
+### Example 4: Observer â€” Stock Price Notification
 
 Multiple displays observe stock price changes without the stock exchange knowing about them.
 
@@ -421,7 +421,7 @@ exchange.set_price(155.0)
 # Alert: Price threshold exceeded! $155.00
 ```
 
-### Example 5: State Pattern — Vending Machine
+### Example 5: State Pattern â€” Vending Machine
 
 A vending machine behaves differently based on whether it is idle, has money inserted, or is dispensing a product.
 

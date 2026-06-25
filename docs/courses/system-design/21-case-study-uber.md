@@ -1,4 +1,4 @@
-# Chapter 21: Case Study — Uber and Location-Based Services
+# Chapter 21: Case Study â€” Uber and Location-Based Services
 > **Previous:** [20 Case Study Netflix](./20-case-study-netflix.md) | **Next:** [22 Case Study Twitter](./22-case-study-twitter.md)
 
 ---
@@ -61,9 +61,9 @@ flowchart LR
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
-Uber connects riders with drivers in real time across 70+ countries and 10,000+ cities. By 2024, the platform handled over 100 million monthly active riders and a comparable number of drivers, processing 30+ billion location events per day. Every four seconds, each active driver's GPS coordinate streams to Uber's servers. The matching system must pair a rider with the best available driver in under 500 milliseconds — fewer than the blink of an eye. The ETA displayed in the rider app must be accurate within 60 seconds for trips lasting over 30 minutes. Surge pricing adjusts in real time as demand spikes during rush hour, concerts, or severe weather.
+Uber connects riders with drivers in real time across 70+ countries and 10,000+ cities. By 2024, the platform handled over 100 million monthly active riders and a comparable number of drivers, processing 30+ billion location events per day. Every four seconds, each active driver's GPS coordinate streams to Uber's servers. The matching system must pair a rider with the best available driver in under 500 milliseconds â€” fewer than the blink of an eye. The ETA displayed in the rider app must be accurate within 60 seconds for trips lasting over 30 minutes. Surge pricing adjusts in real time as demand spikes during rush hour, concerts, or severe weather.
 
-The challenge is multifaceted. Location data is inherently two-dimensional, requiring specialized indexing structures that standard B-Trees cannot handle efficiently. GPS coordinates arrive with noise — urban canyons, tunnels, and atmospheric interference degrade accuracy. The system must distinguish between a driver stopped at a red light and a driver who has parked and gone offline. The matching problem is combinatorial: given N available drivers and M riders in a region, find the assignment that minimizes total wait time, subject to constraints on driver preferences, rider ratings, and vehicle type.
+The challenge is multifaceted. Location data is inherently two-dimensional, requiring specialized indexing structures that standard B-Trees cannot handle efficiently. GPS coordinates arrive with noise â€” urban canyons, tunnels, and atmospheric interference degrade accuracy. The system must distinguish between a driver stopped at a red light and a driver who has parked and gone offline. The matching problem is combinatorial: given N available drivers and M riders in a region, find the assignment that minimizes total wait time, subject to constraints on driver preferences, rider ratings, and vehicle type.
 
 Non-functional requirements include five-nines availability for the dispatch core, global consistency for trip accounting (a rider must never be double-billed), and sub-second P99 latency for the match endpoint. The system must tolerate the failure of an entire AWS Availability Zone without losing trip state. Compliance with GDPR (right to deletion), CCPA, and local transportation regulations in each market adds further complexity.
 
@@ -78,19 +78,19 @@ Specific quantifiable targets:
 
 The functional requirements span four major user flows. For riders: request a ride, track the driver in real time, pay seamlessly, and rate the experience. For drivers: go online, receive ride requests, navigate to pickup and destination, and receive earnings. For the platform: match riders with available drivers optimally, compute accurate ETAs, adjust prices dynamically, and detect fraud. For city operations teams: monitor supply and demand dashboards, manage driver incentives, and respond to incident reports.
 
-### Phase 2: Pre-Uber Architecture — The Monolith Era
+### Phase 2: Pre-Uber Architecture â€” The Monolith Era
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-Uber's original architecture circa 2010 was a Python monolith built on top of a single MySQL database. The monolith handled ride requests, driver dispatch, payment processing, driver onboarding, surge pricing, and the web dashboard — all in one codebase. The database held a single `trips` table, a `drivers` table, and a `riders` table, with spatial queries executed through MySQL's geospatial extensions (which at the time supported only basic bounding-box lookups via MyISAM tables with R-Tree indexes).
+Uber's original architecture circa 2010 was a Python monolith built on top of a single MySQL database. The monolith handled ride requests, driver dispatch, payment processing, driver onboarding, surge pricing, and the web dashboard â€” all in one codebase. The database held a single `trips` table, a `drivers` table, and a `riders` table, with spatial queries executed through MySQL's geospatial extensions (which at the time supported only basic bounding-box lookups via MyISAM tables with R-Tree indexes).
 
-As Uber expanded from San Francisco to Paris, London, Shanghai, and São Paulo, the monolith groaned under its own weight. A deployment to fix a typo in the payment email template required redeploying the entire stack, risking the dispatch system. The MySQL master could not keep up with write volume — the `trips` table alone grew to hundreds of gigabytes, and adding indexes caused replication lag that made followers minutes stale.
+As Uber expanded from San Francisco to Paris, London, Shanghai, and SÃ£o Paulo, the monolith groaned under its own weight. A deployment to fix a typo in the payment email template required redeploying the entire stack, risking the dispatch system. The MySQL master could not keep up with write volume â€” the `trips` table alone grew to hundreds of gigabytes, and adding indexes caused replication lag that made followers minutes stale.
 
 The spatial queries were the first bottleneck. Finding nearby drivers required a MySQL query like `SELECT * FROM drivers WHERE lat BETWEEN ? AND ? AND lng BETWEEN ? AND ? AND status = 'available'`. This bounding-box scan worked for 1,000 drivers but failed at 100,000. The response time for a dispatch query grew from 50 milliseconds to several seconds. Uber's engineers realized they needed a fundamentally different approach to spatial indexing.
 
-### Phase 3: Post-Uber Architecture — Microservices, S2, and Kafka
+### Phase 3: Post-Uber Architecture â€” Microservices, S2, and Kafka
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
@@ -98,17 +98,17 @@ The spatial queries were the first bottleneck. Finding nearby drivers required a
 
 Uber's transformation into a service-oriented architecture unfolded over several years, resulting in 750+ microservices organized by domain. The architecture can be understood as a set of interconnected subsystems.
 
-**Geospatial Indexing — S2 and H3**
+**Geospatial Indexing â€” S2 and H3**
 
 The heart of Uber's location infrastructure is Google's S2 geometry library, later supplemented by Uber's own H3 hexagon system. S2 addresses the fundamental problem of spatial indexing: how do you map a 2D coordinate into a 1D index that can be stored in a B-Tree, used as a key in a hash table, or indexed by a database?
 
-S2 solves this by projecting the Earth's surface onto a cube, then subdividing each cube face into a hierarchy of cells. The Hilbert space-filling curve visits every cell in a well-defined order, producing a single 64-bit integer (a "cell ID") for any point on Earth. Two points that are geographically close will have cell IDs that are numerically similar — a property that makes range queries efficient. The hierarchy has 31 levels (0 through 30), where level 0 cells cover roughly half the Earth's surface and level 30 cells cover roughly 0.5 square centimeters. Uber uses cells at levels 12-15 for dispatch (roughly 1-10 square kilometers per cell).
+S2 solves this by projecting the Earth's surface onto a cube, then subdividing each cube face into a hierarchy of cells. The Hilbert space-filling curve visits every cell in a well-defined order, producing a single 64-bit integer (a "cell ID") for any point on Earth. Two points that are geographically close will have cell IDs that are numerically similar â€” a property that makes range queries efficient. The hierarchy has 31 levels (0 through 30), where level 0 cells cover roughly half the Earth's surface and level 30 cells cover roughly 0.5 square centimeters. Uber uses cells at levels 12-15 for dispatch (roughly 1-10 square kilometers per cell).
 
-H3, developed by Uber in 2018, improves on S2 by using hexagons instead of squares. Hexagons have the critical property that all neighboring cells share an edge — a square's diagonal neighbors are farther away than its side neighbors, creating distortions in distance calculations. The hexagon hierarchy is aperture-7: each parent hexagon contains approximately 7 child hexagons. H3 resolution ranges from 0 (continent-sized) to 15 (roughly 0.5 square meters). Uber uses H3 primarily for visualization, aggregation, and market analysis rather than real-time dispatch.
+H3, developed by Uber in 2018, improves on S2 by using hexagons instead of squares. Hexagons have the critical property that all neighboring cells share an edge â€” a square's diagonal neighbors are farther away than its side neighbors, creating distortions in distance calculations. The hexagon hierarchy is aperture-7: each parent hexagon contains approximately 7 child hexagons. H3 resolution ranges from 0 (continent-sized) to 15 (roughly 0.5 square meters). Uber uses H3 primarily for visualization, aggregation, and market analysis rather than real-time dispatch.
 
 **Comparison of Geospatial Indexing Approaches**
 
-QuadTree was considered early in Uber's history before S2 was adopted. A QuadTree recursively subdivides space into four quadrants until each cell contains fewer than a threshold number of points. QuadTrees support dynamic grid sizing — dense urban areas are subdivided more finely than sparse rural areas — which naturally adapts to point density. However, QuadTrees have significant drawbacks for Uber's use case. They require in-memory tree traversal for neighbor queries, cannot be indexed in a standard database (the tree structure is complex to serialize), and are hard to shard across machines. In contrast, S2's 64-bit cell IDs are B-Tree friendly, storable in any database, and trivially shardable by cell ID prefix.
+QuadTree was considered early in Uber's history before S2 was adopted. A QuadTree recursively subdivides space into four quadrants until each cell contains fewer than a threshold number of points. QuadTrees support dynamic grid sizing â€” dense urban areas are subdivided more finely than sparse rural areas â€” which naturally adapts to point density. However, QuadTrees have significant drawbacks for Uber's use case. They require in-memory tree traversal for neighbor queries, cannot be indexed in a standard database (the tree structure is complex to serialize), and are hard to shard across machines. In contrast, S2's 64-bit cell IDs are B-Tree friendly, storable in any database, and trivially shardable by cell ID prefix.
 
 H3's hexagons add a third option with advantages for aggregation and visualization. A hexagon's six equidistant neighbors eliminate the distance distortion problem that plagues square grids. When computing "how many drivers are in the neighborhood," hexagons give more consistent results regardless of direction. The aperture-7 hierarchy means each parent hexagon has roughly 7 children, which maps naturally to the base-10 decimal system for human-readable zoom levels. However, hexagons require more computation for parent-child relationships (the 7 children do not tile perfectly), and H3's 64-bit encoding is less efficient than S2's for range queries because hexagons do not tile the plane with a space-filling curve.
 
@@ -116,12 +116,12 @@ Uber's architecture uses all three: S2 for dispatch (because cell IDs are sorted
 
 **S2 Cell Hierarchy in Practice**
 
-The S2 cell hierarchy ranges from level 0 (each face of the cube — roughly half a hemisphere) to level 30 (0.5 cm²). Each level subdivides the previous level by 4, so cell area decreases by a factor of 4 for each increment. For dispatch purposes, Uber found that levels 12-15 provide the right granularity:
+The S2 cell hierarchy ranges from level 0 (each face of the cube â€” roughly half a hemisphere) to level 30 (0.5 cmÂ²). Each level subdivides the previous level by 4, so cell area decreases by a factor of 4 for each increment. For dispatch purposes, Uber found that levels 12-15 provide the right granularity:
 
-- Level 12: ~100 km² — used for very sparse areas (highways between cities, rural zones)
-- Level 13: ~25 km² — default for suburban dispatch
-- Level 14: ~6.25 km² — default for urban dispatch (the most commonly used)
-- Level 15: ~1.56 km² — used for dense downtown cores with many drivers
+- Level 12: ~100 kmÂ² â€” used for very sparse areas (highways between cities, rural zones)
+- Level 13: ~25 kmÂ² â€” default for suburban dispatch
+- Level 14: ~6.25 kmÂ² â€” default for urban dispatch (the most commonly used)
+- Level 15: ~1.56 kmÂ² â€” used for dense downtown cores with many drivers
 
 The choice of level is dynamic. A geofence query starts at level 14 for the rider's location. If too few drivers are found (below a configurable threshold, typically 5), the query expands to the parent cell at level 13, then level 12, each time querying the cell's drivers plus a one-cell ring around it. Conversely, if too many drivers are found (above 100, typically), the system can narrow to child cells and route the query to only the cells closest to the rider. This adaptive depth ensures consistent performance across varying densities.
 
@@ -148,7 +148,7 @@ When a rider opens the Uber app and requests a ride, the following sequence exec
 
 1. The rider's phone sends its GPS coordinates to the matching service.
 2. The matching service uses S2 to compute the cell ID at resolution 14 for the rider's location.
-3. It queries a geofence around the rider — typically the rider's S2 cell plus all neighboring cells (the "ring" at distance 1).
+3. It queries a geofence around the rider â€” typically the rider's S2 cell plus all neighboring cells (the "ring" at distance 1).
 4. For each cell, it reads from Redis the list of available drivers in that cell, along with their current state (location, heading, speed, rating, acceptance rate).
 5. A scoring function computes a score for each eligible driver:
 
@@ -384,7 +384,7 @@ graph TB
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory / Case Study | Core topic covered in Chapter 21: Case Study — Uber and Location-Based Services | Defined by specific measurable attributes |
+| Theory / Case Study | Core topic covered in Chapter 21: Case Study â€” Uber and Location-Based Services | Defined by specific measurable attributes |
 
 ---
 
@@ -393,7 +393,7 @@ graph TB
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory / Case Study | Fundamental concept for Chapter 21: Case Study — Uber and Location-Based Services |
+| Theory / Case Study | Fundamental concept for Chapter 21: Case Study â€” Uber and Location-Based Services |
 
 ---
 
@@ -437,10 +437,10 @@ graph TB
 
 | Concept | Definition | Key Insight |
 |---------|-----------|-------------|
-| Theory / Case Study | Core topic in Chapter 21: Case Study — Uber and Location-Based Services | Fundamental to system design |
-| Concept Comparison | Core topic in Chapter 21: Case Study — Uber and Location-Based Services | Fundamental to system design |
-| Quick Reference | Core topic in Chapter 21: Case Study — Uber and Location-Based Services | Fundamental to system design |
-| Cross-Application Matrix | Core topic in Chapter 21: Case Study — Uber and Location-Based Services | Fundamental to system design |
+| Theory / Case Study | Core topic in Chapter 21: Case Study â€” Uber and Location-Based Services | Fundamental to system design |
+| Concept Comparison | Core topic in Chapter 21: Case Study â€” Uber and Location-Based Services | Fundamental to system design |
+| Quick Reference | Core topic in Chapter 21: Case Study â€” Uber and Location-Based Services | Fundamental to system design |
+| Cross-Application Matrix | Core topic in Chapter 21: Case Study â€” Uber and Location-Based Services | Fundamental to system design |
 
 ---
 
@@ -449,9 +449,9 @@ graph TB
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory / Case Study | Essential concept for Chapter 21: Case Study — Uber and Location-Based Services |
-| Concept Comparison | Essential concept for Chapter 21: Case Study — Uber and Location-Based Services |
-| Quick Reference | Essential concept for Chapter 21: Case Study — Uber and Location-Based Services |
+| Theory / Case Study | Essential concept for Chapter 21: Case Study â€” Uber and Location-Based Services |
+| Concept Comparison | Essential concept for Chapter 21: Case Study â€” Uber and Location-Based Services |
+| Quick Reference | Essential concept for Chapter 21: Case Study â€” Uber and Location-Based Services |
 
 ---
 
@@ -787,14 +787,14 @@ Your solution must consider that Uber operates in 70+ countries with different c
 
 Provide specific detail for each recovery tier:
 
-**Tier 1 (Hot Standby — 30 second RTO):**
+**Tier 1 (Hot Standby â€” 30 second RTO):**
 - Detail the Kafka replay mechanism: which Kafka consumer group reads which partitions, what offset management strategy is used, and how Flink state is reconstructed from the checkpoint
 - Describe the validation gate: how does the system verify that reconstructed driver positions are consistent (no impossible speeds, no duplicate drivers) before re-enabling dispatch?
 
-**Tier 2 (Warm Standby — 5 minute RTO):**
+**Tier 2 (Warm Standby â€” 5 minute RTO):**
 - Specify the fallback Redis cluster architecture: how is it kept warm, how does it differ from the primary cluster (larger TTLs? different eviction policy?), and what is the failover DNS mechanism?
 
-**Tier 3 (Cold Standby — 30 minute RTO):**
+**Tier 3 (Cold Standby â€” 30 minute RTO):**
 - Design the SMS-based dispatch flow: how does a rider request a ride via SMS, how is the nearest available driver identified without real-time GPS, and how does the system prevent double-dispatch without Redis?
 - Describe the precomputed city-grid fallback: a static grid of hexagons with baseline driver counts per time-of-day, used to estimate approximate availability without real-time data. How stale is this data (updated daily? weekly?), and how do you communicate uncertainty to the rider?
 

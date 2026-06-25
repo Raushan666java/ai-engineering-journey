@@ -1,4 +1,4 @@
-# Chapter 7 — React Advanced
+# Chapter 7 â€” React Advanced
 
 > **Previous:** [06-react-basics](./06-react-basics.md) | **Next:** [08-node-express](./08-node-express.md)
 
@@ -15,7 +15,7 @@ By the end of this chapter, you will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 |useRef|Mutable references that persist across renders without causing re-renders|Use for DOM access, previous values, and render count tracking|
-|useMemo/useCallback|Memoize expensive computations and function references|Only memoize after measuring � premature optimization adds complexity|
+|useMemo/useCallback|Memoize expensive computations and function references|Only memoize after measuring — premature optimization adds complexity|
 |useReducer|Handles complex state transitions with a reducer function|Ideal for state that depends on previous state with multiple sub-values|
 |useContext|Provides dependency injection across the component tree|Create custom hooks with context validation for better developer experience|
 |Custom Hooks|Encapsulate reusable stateful logic into functions that can use other hooks|Prefix custom hooks with `use` and compose them from built-in hooks|
@@ -128,7 +128,7 @@ function RenderCounter() {
 ```jsx
 import { useMemo, useCallback } from 'react';
 
-// useMemo — cache computed values
+// useMemo â€” cache computed values
 function ExpensiveList({ items, filter }) {
   const filtered = useMemo(() => {
     console.log('Filtering...');
@@ -146,7 +146,7 @@ function ExpensiveList({ items, filter }) {
     <div>
       <ul>
         {filtered.map((item) => (
-          <li key={item.id}>{item.name} — ${item.price}</li>
+          <li key={item.id}>{item.name} â€” ${item.price}</li>
         ))}
       </ul>
       <p>Total: ${total.toFixed(2)}</p>
@@ -154,7 +154,7 @@ function ExpensiveList({ items, filter }) {
   );
 }
 
-// useCallback — cache function references
+// useCallback â€” cache function references
 function ProductPage({ productId, onAddToCart }) {
   const [product, setProduct] = useState(null);
 
@@ -164,7 +164,7 @@ function ProductPage({ productId, onAddToCart }) {
       .then(setProduct);
   }, [productId]);
 
-  // Stable reference — does not re-create unless productId changes
+  // Stable reference â€” does not re-create unless productId changes
   const handleAdd = useCallback(() => {
     onAddToCart(productId);
   }, [productId, onAddToCart]);
@@ -183,7 +183,7 @@ function ProductPage({ productId, onAddToCart }) {
 **Optimization rules:**
 - Only use `useMemo` for genuinely expensive computations (iterations, complex transforms).
 - Only use `useCallback` when passing callbacks to optimized child components (wrapped in `React.memo`).
-- Premature optimization adds complexity — measure first, then memoize.
+- Premature optimization adds complexity â€” measure first, then memoize.
 
 ### 7.3 useReducer
 
@@ -242,7 +242,7 @@ function ShoppingCart() {
     <div>
       {cart.items.map((item, i) => (
         <div key={i}>
-          {item.name} — ${item.price}
+          {item.name} â€” ${item.price}
           <button onClick={() => removeItem(i)}>Remove</button>
         </div>
       ))}
@@ -327,7 +327,7 @@ function App() {
 Custom hooks extract reusable stateful logic into functions that may use other hooks.
 
 ```jsx
-// useFetch — generic data fetching
+// useFetch â€” generic data fetching
 function useFetch(url, options = {}) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -359,7 +359,7 @@ function useFetch(url, options = {}) {
   return { data, loading, error };
 }
 
-// useLocalStorage — synced with localStorage
+// useLocalStorage â€” synced with localStorage
 function useLocalStorage(key, initialValue) {
   const [storedValue, setStoredValue] = useState(() => {
     try {
@@ -379,7 +379,7 @@ function useLocalStorage(key, initialValue) {
   return [storedValue, setValue];
 }
 
-// useMediaQuery — responsive breakpoints
+// useMediaQuery â€” responsive breakpoints
 function useMediaQuery(query) {
   const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
 
@@ -535,7 +535,7 @@ function Modal({ open, onClose, children }) {
 ```jsx
 import { memo } from 'react';
 
-// React.memo — prevent re-render when props haven't changed (shallow comparison)
+// React.memo â€” prevent re-render when props haven't changed (shallow comparison)
 const ExpensiveChart = memo(function ExpensiveChart({ data, config }) {
   return <svg>{/* Complex rendering */}</svg>;
 });
@@ -572,10 +572,10 @@ React DevTools (browser extension) provides:
 
 
 > [!TIP]
-> Create a custom hook for every piece of reusable stateful logic. Extract `useFetch`, `useLocalStorage`, and `useMediaQuery` early � they pay for themselves.
+> Create a custom hook for every piece of reusable stateful logic. Extract `useFetch`, `useLocalStorage`, and `useMediaQuery` early — they pay for themselves.
 
 > [!WARNING]
-> `useMemo` and `useCallback` add complexity. Only use them when you've measured a performance problem � React is fast without them in most cases.
+> `useMemo` and `useCallback` add complexity. Only use them when you've measured a performance problem — React is fast without them in most cases.
 
 > [!REMEMBER]
 > Error boundaries catch errors during rendering, in lifecycle methods, and in constructors. They do NOT catch errors in event handlers, async code, or SSR.
@@ -618,10 +618,10 @@ Test your understanding with these quick questions.
 
 **Q1. When should you use `useReducer` over `useState`?**
 
-- A) Always � it's more powerful
+- A) Always — it's more powerful
 - B) When state has multiple sub-values or complex transition logic
 - C) When you need synchronous updates
-- D) Never � useReducer is deprecated
+- D) Never — useReducer is deprecated
 
 <details><summary>Answer</summary>
 
@@ -943,4 +943,4 @@ export { Processor, Task }
    - **Custom hook** `useLocalStorage` for persisting the cart
    - **Error boundary** wrapping the product detail page
    - **Memoized** product list to prevent unnecessary re-renders
-   - No external state management library — only React built-ins
+   - No external state management library â€” only React built-ins

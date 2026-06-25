@@ -210,7 +210,7 @@ Client ? GET /orders?user=456
     Gateway ? payment-service batch(order_ids) ? returns all payments
 ```
 
-GraphQL gateways (Apollo Federation, Hasura) push aggregation responsibility to the query layer — clients specify exactly which data they need, gateway optimizes the fetch plan.
+GraphQL gateways (Apollo Federation, Hasura) push aggregation responsibility to the query layer â€” clients specify exactly which data they need, gateway optimizes the fetch plan.
 
 ### 6. CQRS Pattern
 
@@ -272,11 +272,11 @@ Events for Order#123: v1: OrderPlaced, v2: PaymentReceived, v3: OrderShipped, v4
 Current state (fold): placed, paid, shipped, delivered ?
 ```
 
-Events are immutable facts — correction events (e.g., PaymentRefunded) are appended. **Snapshotting** saves aggregated state at version V, avoiding replay of millions of events. Rebuild: load snapshot, replay from V+1.
+Events are immutable facts â€” correction events (e.g., PaymentRefunded) are appended. **Snapshotting** saves aggregated state at version V, avoiding replay of millions of events. Rebuild: load snapshot, replay from V+1.
 
 ### 9. Event Store Design
 
-**Event versioning**: Two strategies — versioned event types (`OrderPlacedV1` ? `OrderPlacedV2`) handled by branching code, or **upcasting** (transform old events to latest schema on read):
+**Event versioning**: Two strategies â€” versioned event types (`OrderPlacedV1` ? `OrderPlacedV2`) handled by branching code, or **upcasting** (transform old events to latest schema on read):
 
 ```python
 class Upcaster:
@@ -291,7 +291,7 @@ class Upcaster:
 Upcaster.register("OrderPlaced", 1, lambda e: {**e, "version": 2, "currency": "USD"})
 ```
 
-**Schema evolution**: Use protobuf/Avro with forward/backward compatibility. Never delete fields — make them optional.
+**Schema evolution**: Use protobuf/Avro with forward/backward compatibility. Never delete fields â€” make them optional.
 
 ### 10. Rebuilding State: Projections and Snapshots
 
@@ -342,7 +342,7 @@ Query Side (Projections):
   7d. SearchProjection indexes order in Elasticsearch
 ```
 
-**Key insight**: The command side NEVER directly updates the read model. It only appends events. Projections handle read-side updates asynchronously. This means eventual consistency between command and query — a client that writes then immediately reads may see stale data.
+**Key insight**: The command side NEVER directly updates the read model. It only appends events. Projections handle read-side updates asynchronously. This means eventual consistency between command and query â€” a client that writes then immediately reads may see stale data.
 
 ### 12. Practical Trade-offs
 
@@ -372,7 +372,7 @@ Query Side (Projections):
 
 **Axon Framework**: Java framework for CQRS/ES. Provides Aggregate annotation, Command Handler, Event Sourcing Handler, and Saga orchestration. Integrates with any event store (Axon Server, Kafka, PostgreSQL).
 
-**Kafka as event store**: Kafka's log-compacted topics serve as an append-only event store. Key properties: ordered, durable, replayable. Each partition is an ordered sequence of events. Log compaction retains the latest value per key — acts as a distributed snapshot. Widely used as the backbone in CQRS architectures.
+**Kafka as event store**: Kafka's log-compacted topics serve as an append-only event store. Key properties: ordered, durable, replayable. Each partition is an ordered sequence of events. Log compaction retains the latest value per key â€” acts as a distributed snapshot. Widely used as the backbone in CQRS architectures.
 
 **Bank ledger systems**: Every transaction is an event (Deposited, Withdrawn, Transferred). Account balance = sum of all Deposit amounts - sum of all Withdrawal amounts. No records are ever deleted or modified. This gives complete audit trail and regulatory compliance.
 
@@ -419,7 +419,7 @@ import httpx
 mobile_gateway = Flask(__name__)
 web_gateway = Flask(__name__)
 
-# Mobile BFF — compact payloads, low bandwidth
+# Mobile BFF â€” compact payloads, low bandwidth
 @mobile_gateway.route("/feed")
 def mobile_feed():
     user_id = request.headers["X-User-Id"]
@@ -430,7 +430,7 @@ def mobile_feed():
         "thumbnail": p.get("images", [None])[0]
     } for p in posts])
 
-# Web BFF — rich content, full HTML
+# Web BFF â€” rich content, full HTML
 @web_gateway.route("/feed")
 def web_feed():
     user_id = request.headers["X-User-Id"]
@@ -843,7 +843,7 @@ demo()
 export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- API gateways handle routing, auth, rate limiting, aggregation, circuit breaking, and protocol translation — distinct from load balancers which only distribute traffic
+- API gateways handle routing, auth, rate limiting, aggregation, circuit breaking, and protocol translation â€” distinct from load balancers which only distribute traffic
 - BFF pattern (gateway per frontend) optimizes payloads per client type; gateway per domain aligns with bounded contexts
 - Distributed rate limiting uses token bucket (burst-tolerant) or sliding window (memory-expensive) algorithms with Redis backend
 - Request aggregation at the gateway eliminates N+1 fetch patterns from clients by composing microservice responses server-side
@@ -852,7 +852,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - Event versioning and upcasting handle schema evolution without modifying historical events
 - Snapshots prevent unbounded replay costs by saving aggregated state at periodic intervals
 - Kafka serves as a scalable event bus connecting command-side writes to query-side projections
-- CQRS/ES adds significant complexity — use for audit trails and temporal queries, not simple CRUD
+- CQRS/ES adds significant complexity â€” use for audit trails and temporal queries, not simple CRUD
 - Financial systems, Axon Framework, and Event Store DB are canonical real-world applications
 
 ---

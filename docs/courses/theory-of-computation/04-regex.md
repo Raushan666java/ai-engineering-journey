@@ -43,36 +43,36 @@ flowchart LR
 
 ### 3.1 What is a Regular Expression?
 
-A **regular expression** is a algebraic notation for describing a pattern — a set of strings. Regular expressions are used extensively in text processing, lexical analysis, and input validation.
+A **regular expression** is a algebraic notation for describing a pattern â€” a set of strings. Regular expressions are used extensively in text processing, lexical analysis, and input validation.
 
-A regular expression **r** denotes a language **L(r)**, which is a set of strings over some alphabet Σ.
+A regular expression **r** denotes a language **L(r)**, which is a set of strings over some alphabet Î£.
 
 ### 3.2 Formal Definition
 
 **Basis:**
-- ε is a regular expression denoting L(ε) = {ε} (the set containing the empty string).
-- ∅ is a regular expression denoting L(∅) = ∅ (the empty language).
-- For each a ∈ Σ, a is a regular expression denoting L(a) = {a}.
+- Îµ is a regular expression denoting L(Îµ) = {Îµ} (the set containing the empty string).
+- âˆ… is a regular expression denoting L(âˆ…) = âˆ… (the empty language).
+- For each a âˆˆ Î£, a is a regular expression denoting L(a) = {a}.
 
 **Inductive Step:**
 Let r and s be regular expressions denoting languages L(r) and L(s). Then:
 
-1. **(r + s)** or **(r | s)**: union/alternation — L(r + s) = L(r) ∪ L(s).
-2. **(r · s)** or **(rs)**: concatenation — L(rs) = L(r)L(s) = { xy | x ∈ L(r), y ∈ L(s) }.
-3. **(r\*)**: Kleene star — L(r*) = ∪_{i ≥ 0} L(r)ⁱ where L(r)⁰ = {ε} and L(r)ⁱ⁺¹ = L(r)ⁱL(r).
-4. **(r)**: parentheses for grouping — L((r)) = L(r).
+1. **(r + s)** or **(r | s)**: union/alternation â€” L(r + s) = L(r) âˆª L(s).
+2. **(r Â· s)** or **(rs)**: concatenation â€” L(rs) = L(r)L(s) = { xy | x âˆˆ L(r), y âˆˆ L(s) }.
+3. **(r\*)**: Kleene star â€” L(r*) = âˆª_{i â‰¥ 0} L(r)â± where L(r)â° = {Îµ} and L(r)â±âºÂ¹ = L(r)â±L(r).
+4. **(r)**: parentheses for grouping â€” L((r)) = L(r).
 
 Additional derived operators:
-- **r⁺** = rr* (one or more repetitions).
-- **r?** = r + ε (optional).
+- **râº** = rr* (one or more repetitions).
+- **r?** = r + Îµ (optional).
 - **.** (in some notations) = any single symbol.
 
 ### 3.3 Operator Precedence
 
 When interpreting regular expressions without explicit parentheses, the order is:
-1. **Kleene star** (*) — highest precedence (binds tightest).
-2. **Concatenation** (·).
-3. **Union** (+ or |) — lowest precedence.
+1. **Kleene star** (*) â€” highest precedence (binds tightest).
+2. **Concatenation** (Â·).
+3. **Union** (+ or |) â€” lowest precedence.
 
 So `ab*c` means `a(b*)c`, not `(ab)*c` or `ab(*c)`.
 
@@ -84,18 +84,18 @@ Regular expressions satisfy algebraic laws that can be used to simplify and mani
 |-----|-----------|
 | Associativity of union | (r + s) + t = r + (s + t) |
 | Commutativity of union | r + s = s + r |
-| Identity for union | r + ∅ = r = ∅ + r |
-| Annihilator for concat | ∅r = r∅ = ∅ |
-| Identity for concat | εr = rε = r |
+| Identity for union | r + âˆ… = r = âˆ… + r |
+| Annihilator for concat | âˆ…r = râˆ… = âˆ… |
+| Identity for concat | Îµr = rÎµ = r |
 | Associativity of concat | (rs)t = r(st) |
 | Distributive (left) | r(s + t) = rs + rt |
 | Distributive (right) | (s + t)r = sr + tr |
 | Idempotence of union | r + r = r |
-| Kleene star | ∅* = ε |
-| Kleene star | ε* = ε |
+| Kleene star | âˆ…* = Îµ |
+| Kleene star | Îµ* = Îµ |
 | Kleene star | (r*)* = r* |
-| Kleene star | r* = ε + rr* |
-| Kleene star | r* = (ε + r)* |
+| Kleene star | r* = Îµ + rr* |
+| Kleene star | r* = (Îµ + r)* |
 | Kleene star | r* = (r*)* |
 | r**r* | r*r* = r* |
 
@@ -105,25 +105,25 @@ Regular expressions satisfy algebraic laws that can be used to simplify and mani
 
 This theorem has two directions:
 
-**Direction 1 (RE → FA):** Every regular expression can be converted to an NFA-ε.
+**Direction 1 (RE â†’ FA):** Every regular expression can be converted to an NFA-Îµ.
 
-The conversion follows the structural induction of the regular expression definition. Each subexpression is converted to an NFA-ε with:
+The conversion follows the structural induction of the regular expression definition. Each subexpression is converted to an NFA-Îµ with:
 - Exactly one start state (no incoming transitions).
 - Exactly one accepting state (no outgoing transitions).
 
 **Basis conversions:**
-- For ε: start state connected to accept state via ε-transition.
-- For ∅: start state (non-accepting) with no outgoing transitions.
-- For a ∈ Σ: start --a--> accept.
+- For Îµ: start state connected to accept state via Îµ-transition.
+- For âˆ…: start state (non-accepting) with no outgoing transitions.
+- For a âˆˆ Î£: start --a--> accept.
 
 **Inductive conversions (using modular construction):**
-Let N₁ and N₂ be the NFAs for r and s with start states s₁, s₂ and accept states a₁, a₂.
+Let Nâ‚ and Nâ‚‚ be the NFAs for r and s with start states sâ‚, sâ‚‚ and accept states aâ‚, aâ‚‚.
 
-- **Union** (r + s): New start s₀ --ε--> s₁ and s₀ --ε--> s₂; a₁ --ε--> new accept a₀ and a₂ --ε--> a₀.
-- **Concatenation** (rs): a₁ (of N₁) --ε--> s₂ (of N₂); a₁ becomes non-accepting; a₂ is the accept state.
-- **Star** (r*): New start s₀ --ε--> new accept a₀ (for ε); s₀ --ε--> s₁; a₁ --ε--> s₁ (for loop) and a₁ --ε--> a₀.
+- **Union** (r + s): New start sâ‚€ --Îµ--> sâ‚ and sâ‚€ --Îµ--> sâ‚‚; aâ‚ --Îµ--> new accept aâ‚€ and aâ‚‚ --Îµ--> aâ‚€.
+- **Concatenation** (rs): aâ‚ (of Nâ‚) --Îµ--> sâ‚‚ (of Nâ‚‚); aâ‚ becomes non-accepting; aâ‚‚ is the accept state.
+- **Star** (r*): New start sâ‚€ --Îµ--> new accept aâ‚€ (for Îµ); sâ‚€ --Îµ--> sâ‚; aâ‚ --Îµ--> sâ‚ (for loop) and aâ‚ --Îµ--> aâ‚€.
 
-**Direction 2 (FA → RE):** Every DFA can be converted to a regular expression using one of:
+**Direction 2 (FA â†’ RE):** Every DFA can be converted to a regular expression using one of:
 - **State elimination method:** Remove states one by one, updating transitions with regular expressions.
 - **Arden's lemma** (see Section 3.6): Solve a system of linear equations over languages.
 
@@ -131,14 +131,14 @@ Let N₁ and N₂ be the NFAs for r and s with start states s₁, s₂ and accep
 
 Arden's lemma is a key tool for converting DFA to regular expressions by solving equations.
 
-**Lemma:** For languages A, B ⊆ Σ* with ε ∉ A (unless B = ∅ or A = ∅), the equation X = AX ∪ B has the unique solution X = A*B.
+**Lemma:** For languages A, B âŠ† Î£* with Îµ âˆ‰ A (unless B = âˆ… or A = âˆ…), the equation X = AX âˆª B has the unique solution X = A*B.
 
-**Proof intuition:** Unrolling the equation gives X = B ∪ AB ∪ A²B ∪ ... = A*B. The condition ε ∉ A ensures uniqueness.
+**Proof intuition:** Unrolling the equation gives X = B âˆª AB âˆª AÂ²B âˆª ... = A*B. The condition Îµ âˆ‰ A ensures uniqueness.
 
 To convert a DFA to a regular expression:
-1. For each state qᵢ, write the equation: Lᵢ = ∪_{a ∈ Σ} a · Lⱼ (where δ(qᵢ, a) = qⱼ) ∪ (if qᵢ ∈ F then ε).
+1. For each state qáµ¢, write the equation: Láµ¢ = âˆª_{a âˆˆ Î£} a Â· Lâ±¼ (where Î´(qáµ¢, a) = qâ±¼) âˆª (if qáµ¢ âˆˆ F then Îµ).
 2. Solve the system of equations using substitution and Arden's lemma.
-3. The language recognized is the solution for L₀ (start state).
+3. The language recognized is the solution for Lâ‚€ (start state).
 
 ## Examples
 
@@ -150,28 +150,28 @@ To convert a DFA to a regular expression:
 | Strings starting with 'a' | a(a+b)* |
 | Strings ending with 'b' | (a+b)* b |
 | Strings with even number of 'a's | (b* a b* a b*)* |
-| Strings with no consecutive 0s | (1* 011*)* (ε + 0) |
+| Strings with no consecutive 0s | (1* 011*)* (Îµ + 0) |
 | Binary strings divisible by 2 | (0+1)* 0 |
 | Strings of alternating 0s and 1s | (01)* + (10)* + 0(10)* + 1(01)* |
 
-### Example 3.2: Convert Regular Expression to NFA-ε
+### Example 3.2: Convert Regular Expression to NFA-Îµ
 
-Convert r = a(a+b)* b to an NFA-ε.
+Convert r = a(a+b)* b to an NFA-Îµ.
 
 **Step 1:** Parse: concatenation of a, (a+b)*, and b.
 
-**Step 2:** Build NFA for "a": q₀ --a--> q₁.
+**Step 2:** Build NFA for "a": qâ‚€ --a--> qâ‚.
 
-**Step 3:** Build NFA for "a+b": q₂ --a--> q₃, q₂ --b--> q₃.
+**Step 3:** Build NFA for "a+b": qâ‚‚ --a--> qâ‚ƒ, qâ‚‚ --b--> qâ‚ƒ.
 
-**Step 4:** Build NFA for "(a+b)*": New start q₄ --ε--> q₅ (accept for ε); q₄ --ε--> q₂; q₃ --ε--> q₂; q₃ --ε--> q₅.
+**Step 4:** Build NFA for "(a+b)*": New start qâ‚„ --Îµ--> qâ‚… (accept for Îµ); qâ‚„ --Îµ--> qâ‚‚; qâ‚ƒ --Îµ--> qâ‚‚; qâ‚ƒ --Îµ--> qâ‚….
 
 Simplified representation (text):
 ```
-q₀ --a--> q₁ --ε--> q₄ --ε--> q₂ --a--> q₃ --ε--> q₂
-                              q₂ --b--> q₃      q₃ --ε--> q₅
-q₅ --ε--> q₆
-q₆ --b--> q₇ (accept)
+qâ‚€ --a--> qâ‚ --Îµ--> qâ‚„ --Îµ--> qâ‚‚ --a--> qâ‚ƒ --Îµ--> qâ‚‚
+                              qâ‚‚ --b--> qâ‚ƒ      qâ‚ƒ --Îµ--> qâ‚…
+qâ‚… --Îµ--> qâ‚†
+qâ‚† --b--> qâ‚‡ (accept)
 ```
 
 This can be simplified further during construction.
@@ -179,39 +179,39 @@ This can be simplified further during construction.
 ### Example 3.3: Convert DFA to Regular Expression (State Elimination)
 
 Given DFA for strings with an even number of 0s over {0,1}:
-- q₀ (start, accept): on 0 → q₁, on 1 → q₀
-- q₁: on 0 → q₀, on 1 → q₁
+- qâ‚€ (start, accept): on 0 â†’ qâ‚, on 1 â†’ qâ‚€
+- qâ‚: on 0 â†’ qâ‚€, on 1 â†’ qâ‚
 
-**Step 1:** Add a new start s with ε → q₀ and new accept a with ε from q₀.
+**Step 1:** Add a new start s with Îµ â†’ qâ‚€ and new accept a with Îµ from qâ‚€.
 
-**Step 2:** Eliminate q₁:
-- q₀ → q₁ → q₀: path q₀ --0--> q₁ --0--> q₀ adds label 00
-- q₁ → q₁: loop 1
-- So new transition q₀ --0·(1)*·0--> q₀
-- Plus existing q₀ --1--> q₀
+**Step 2:** Eliminate qâ‚:
+- qâ‚€ â†’ qâ‚ â†’ qâ‚€: path qâ‚€ --0--> qâ‚ --0--> qâ‚€ adds label 00
+- qâ‚ â†’ qâ‚: loop 1
+- So new transition qâ‚€ --0Â·(1)*Â·0--> qâ‚€
+- Plus existing qâ‚€ --1--> qâ‚€
 
-**Step 3:** Result: q₀ has loop (1 + 0·1*·0)*. Remove q₀ connecting s to a: (1 + 01*0)*.
+**Step 3:** Result: qâ‚€ has loop (1 + 0Â·1*Â·0)*. Remove qâ‚€ connecting s to a: (1 + 01*0)*.
 
 The language is L = { w | w has an even number of 0s } = (1 + 01*0)*.
 
 ### Example 3.4: Using Arden's Lemma
 
 Solve for the language of the DFA with:
-- L₀ = 0·L₁ + 1·L₂ + ε (accepting)
-- L₁ = 1·L₀
-- L₂ = 0·L₁
+- Lâ‚€ = 0Â·Lâ‚ + 1Â·Lâ‚‚ + Îµ (accepting)
+- Lâ‚ = 1Â·Lâ‚€
+- Lâ‚‚ = 0Â·Lâ‚
 
-Where L₀, L₁, L₂ are the languages accepted from states q₀, q₁, q₂ respectively.
+Where Lâ‚€, Lâ‚, Lâ‚‚ are the languages accepted from states qâ‚€, qâ‚, qâ‚‚ respectively.
 
-**Step 1:** From L₁: L₁ = 1·L₀
+**Step 1:** From Lâ‚: Lâ‚ = 1Â·Lâ‚€
 
-**Step 2:** From L₂: L₂ = 0·L₁ = 0·1·L₀
+**Step 2:** From Lâ‚‚: Lâ‚‚ = 0Â·Lâ‚ = 0Â·1Â·Lâ‚€
 
-**Step 3:** Substitute into L₀:
-L₀ = 0·(1·L₀) + 1·(0·1·L₀) + ε = (01 + 101)·L₀ + ε
+**Step 3:** Substitute into Lâ‚€:
+Lâ‚€ = 0Â·(1Â·Lâ‚€) + 1Â·(0Â·1Â·Lâ‚€) + Îµ = (01 + 101)Â·Lâ‚€ + Îµ
 
-**Step 4:** Apply Arden's lemma (X = AX + B → X = A*B):
-L₀ = (01 + 101)*·ε = (01 + 101)*
+**Step 4:** Apply Arden's lemma (X = AX + B â†’ X = A*B):
+Lâ‚€ = (01 + 101)*Â·Îµ = (01 + 101)*
 
 
 
@@ -248,7 +248,7 @@ function dfaToRegex(states: string[], accept: Set<string>,
 }
 ```
 
-The theoretical connection between regular expressions and automata means every regex pattern can be compiled to a DFA for O(n) matching � this is exactly what lexer generators like Lex do.
+The theoretical connection between regular expressions and automata means every regex pattern can be compiled to a DFA for O(n) matching — this is exactly what lexer generators like Lex do.
 
 ## Thompson's Construction: Full TypeScript Implementation
 
@@ -404,13 +404,13 @@ flowchart LR
     end
 ```
 
-This pipeline is exactly what lexer generators (lex, flex) and regex libraries implement. The key insight: the conversion is fully automatable, so specifying the pattern is enough � the machine generates itself.
+This pipeline is exactly what lexer generators (lex, flex) and regex libraries implement. The key insight: the conversion is fully automatable, so specifying the pattern is enough — the machine generates itself.
 
 ## Concept Comparison Table
 | Operator | Notation | Example | Language |
 |----------|----------|---------|----------|
 | Union | + or | | a+b | {a, b} |
-| Concatenation | � or juxtaposition | ab | {ab} |
+| Concatenation | · or juxtaposition | ab | {ab} |
 | Kleene star | * | a* | {e, a, aa, ...} |
 | One or more | ? | a? | {a, aa, aaa, ...} |
 | Optional | ? | a? | {e, a} |
@@ -418,9 +418,9 @@ This pipeline is exactly what lexer generators (lex, flex) and regex libraries i
 ## Quick Reference
 | Rule | Law |
 |------|-----|
-| Identity (union) | r + � = r |
+| Identity (union) | r + Ø = r |
 | Identity (concat) | er = re = r |
-| Annihilator | �r = r� = � |
+| Annihilator | Ør = rØ = Ø |
 | Distributive | r(s+t) = rs + rt |
 | Star | (r*)* = r* |
 | Star | e* = e |
@@ -444,7 +444,7 @@ This pipeline is exactly what lexer generators (lex, flex) and regex libraries i
 
 <details>
 <summary>Answer</summary>
-**B)** r* = {e} ? {r} ? {rr} ? ... � zero or more repetitions.
+**B)** r* = {e} ? {r} ? {rr} ? ... — zero or more repetitions.
 </details>
 
 **Q2.** In ab*c, the star applies to:
@@ -488,7 +488,7 @@ This pipeline is exactly what lexer generators (lex, flex) and regex libraries i
 
 <details>
 <summary>Answer</summary>
-**B)** { anbn } is not regular � no regex can match balanced pairs without counting.
+**B)** { anbn } is not regular — no regex can match balanced pairs without counting.
 </details>
 
 ## Practical Takeaways
@@ -499,7 +499,7 @@ This pipeline is exactly what lexer generators (lex, flex) and regex libraries i
 
 3. **Star height reflects complexity.** Expressions with nested Kleene stars require more complex automata. When designing patterns, minimizing star depth leads to simpler, faster implementations.
 
-4. **"Regular expression" in practice ? regular expression in theory.** Modern regex engines include backreferences, lookahead, and recursion � making them strictly more powerful than regular expressions. They can match non-regular languages like {anbn} but risk catastrophic backtracking.
+4. **"Regular expression" in practice ? regular expression in theory.** Modern regex engines include backreferences, lookahead, and recursion — making them strictly more powerful than regular expressions. They can match non-regular languages like {anbn} but risk catastrophic backtracking.
 
 ## Star Height and Regular Expression Complexity
 
@@ -542,9 +542,9 @@ Regular expressions can be extended with additional operators while preserving t
 | Difference | $r - s$ | $L(r) - L(s)$ |
 | Reversal | $r^R$ | Reverse of all strings in $L(r)$ |
 
-These extended operators make some languages easier to describe. For example, "strings with at least one 'a' and at least one 'b'" can be written as $\Sigma^*a\Sigma^* \cap \Sigma^*b\Sigma^*$ � more readable than the pure regex form.
+These extended operators make some languages easier to describe. For example, "strings with at least one 'a' and at least one 'b'" can be written as $\Sigma^*a\Sigma^* \cap \Sigma^*b\Sigma^*$ — more readable than the pure regex form.
 
-The key result is that **all these extensions describe only regular languages** � they add convenience but not power.
+The key result is that **all these extensions describe only regular languages** — they add convenience but not power.
 
 ## TypeScript Implementation: Thompson Construction and DFA-to-Regex
 
@@ -662,7 +662,7 @@ class RegexEngine {
       remaining = remaining.filter(s => s !== rip);
     }
 
-    return trans.get(`${start},${accept}`) || "�";
+    return trans.get(`${start},${accept}`) || "Ø";
   }
 }
 
@@ -675,7 +675,7 @@ console.log(RegexEngine.matches("ab*c", "ab"));  // false
 ```
 
 // -------------------------------------------------------
-// Thompson Construction � converts a regex (in postfix
+// Thompson Construction — converts a regex (in postfix
 // "ab|c*." notation) to an equivalent NFA via Thompson's
 // algorithm.  Each sub-NFA is built compositionally.
 // -------------------------------------------------------
@@ -766,16 +766,16 @@ class ThompsonConstruction {
 }
 
 // -------------------------------------------------------
-// Regex Simplifier � applies algebraic laws
+// Regex Simplifier — applies algebraic laws
 // to simplify regular expressions symbolically.
 // -------------------------------------------------------
 
 class RegexSimplifier {
   static simplify(expr: string): string {
     let s = expr;
-    // � + R = R,  R + � = R,  �R = �,  R� = �
-    s = s.replace(/�\+\(/g, "(").replace(/\+�/g, "");
-    s = s.replace(/�\*/g, "e").replace(/e\*/g, "e");
+    // Ø + R = R,  R + Ø = R,  ØR = Ø,  RØ = Ø
+    s = s.replace(/Ø\+\(/g, "(").replace(/\+Ø/g, "");
+    s = s.replace(/Ø\*/g, "e").replace(/e\*/g, "e");
     // eR = R,  Re = R
     s = s.replace(/e\(/g, "(").replace(/\)e/g, ")");
     // RR* = R+R,  R*R = R+R  (simplification)
@@ -792,7 +792,7 @@ const thompson = ThompsonConstruction.toNFA("ab.c|");
 console.log(`Thompson NFA states: ${thompson.states.size}`);
 console.log(`Thompson NFA start: ${thompson.start}`);
 console.log(`Thompson NFA accept: ${[...thompson.accept].join(", ")}`);
-console.log(`Simplified: ${RegexSimplifier.simplify("(a|�)*b")}`);
+console.log(`Simplified: ${RegexSimplifier.simplify("(a|Ø)*b")}`);
 ```
 
 
@@ -853,25 +853,25 @@ export { Processor, Task }
 
 1. Write regular expressions for: (a) strings ending with "00", (b) strings starting with "a" and ending with "b", (c) strings of length exactly 4.
 2. Describe in English the languages denoted by: (a) a* b*, (b) (a+b)* aa (a+b)*, (c) (00+11)*.
-3. Convert r = (0+1)* 0 (0+1) to an NFA-ε using the modular construction.
-4. Show that (ε + a)* = a* using algebraic laws.
+3. Convert r = (0+1)* 0 (0+1) to an NFA-Îµ using the modular construction.
+4. Show that (Îµ + a)* = a* using algebraic laws.
 5. Simplify the regular expression: a* + a*b + a*bb.
 
 ### Intermediate
 
 6. Convert the DFA from Example 1.2 (exactly two 1s) to a regular expression using state elimination.
 7. Prove (r + s)* = r* (s r*)* using algebraic laws or set equality.
-8. Convert r = (a + b)* a (a + b)* b (a + b)* to an NFA-ε, then to a DFA via subset construction.
+8. Convert r = (a + b)* a (a + b)* b (a + b)* to an NFA-Îµ, then to a DFA via subset construction.
 9. Using Arden's lemma, solve for the language of a DFA for strings over {0,1} where every 0 is followed immediately by a 1.
-10. Find a regular expression for the language L = { w ∈ {0,1}* | w has no two consecutive 0s and no two consecutive 1s }.
+10. Find a regular expression for the language L = { w âˆˆ {0,1}* | w has no two consecutive 0s and no two consecutive 1s }.
 
 ### Advanced
 
 11. Prove that the set of regular languages is closed under complement using DFA-to-regular-expression conversion.
 12. Derive a regular expression for binary strings that represent numbers divisible by 3 (from Example 1.3).
-13. Prove that the language { 0ⁿ1ⁿ | n ≥ 0 } is not regular (cannot be described by a regular expression).
-14. Show that every regular expression can be converted to an equivalent ε-free NFA (no ε-transitions) with at most 2|r| states, where |r| is the length of the expression.
-15. Implement (in pseudocode) the Thompson construction: given a parse tree of a regular expression, produce an NFA-ε. Your algorithm should handle union, concatenation, and Kleene star.
+13. Prove that the language { 0â¿1â¿ | n â‰¥ 0 } is not regular (cannot be described by a regular expression).
+14. Show that every regular expression can be converted to an equivalent Îµ-free NFA (no Îµ-transitions) with at most 2|r| states, where |r| is the length of the expression.
+15. Implement (in pseudocode) the Thompson construction: given a parse tree of a regular expression, produce an NFA-Îµ. Your algorithm should handle union, concatenation, and Kleene star.
 16. Implement the full Thompson construction in TypeScript as shown in the chapter. Extend it to support `+` (one or more) and `?` (optional) operators.
 17. Using the state elimination method, convert the DFA for "binary strings divisible by 3" (Example 1.3) to a regular expression. Verify your answer by testing on sample strings.
 18. Write a TypeScript function that, given a DFA transition table, produces a regular expression using Arden's lemma. Test it on a 3-state DFA of your choice.

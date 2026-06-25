@@ -112,23 +112,23 @@ B-Tree nodes are stored in **pages** (typically 4 KB, 8 KB, or 16 KB). A page is
 
 ```
 +---------------------------------+
-¦ Page Header (24 bytes)          ¦
-¦   - page_type, free_start       ¦
-¦   - num_cells, checksum, LSN    ¦
-+---------------------------------¦
-¦ Cell pointer array (grows up)   ¦
-¦ [0]: offset=1568, key=42       ¦
-¦ [1]: offset=1824, key=78       ¦
-¦ [2]: offset=2048, key=105      ¦
-+---------------------------------¦
-¦                                 ¦
-¦   Unused space                  ¦
-¦                                 ¦
-+---------------------------------¦
-¦ Cell data (grows down)          ¦
-¦ Key=42, Value/ptr=<data>        ¦
-¦ Key=78, Value/ptr=<data>        ¦
-¦ Key=105, Value/ptr=<data>       ¦
+Â¦ Page Header (24 bytes)          Â¦
+Â¦   - page_type, free_start       Â¦
+Â¦   - num_cells, checksum, LSN    Â¦
++---------------------------------Â¦
+Â¦ Cell pointer array (grows up)   Â¦
+Â¦ [0]: offset=1568, key=42       Â¦
+Â¦ [1]: offset=1824, key=78       Â¦
+Â¦ [2]: offset=2048, key=105      Â¦
++---------------------------------Â¦
+Â¦                                 Â¦
+Â¦   Unused space                  Â¦
+Â¦                                 Â¦
++---------------------------------Â¦
+Â¦ Cell data (grows down)          Â¦
+Â¦ Key=42, Value/ptr=<data>        Â¦
+Â¦ Key=78, Value/ptr=<data>        Â¦
+Â¦ Key=105, Value/ptr=<data>       Â¦
 +---------------------------------+
 ```
 
@@ -196,24 +196,24 @@ The Log-Structured Merge-Tree (LSM-Tree), introduced by Patrick O'Neil in 1996, 
 
 ```
 MemTable (RAM, skiplist)
-    ¦
-    ¦ flushed when full (e.g., 64 MB)
+    Â¦
+    Â¦ flushed when full (e.g., 64 MB)
     ?
 SSTable 0  (L0, newest)
 SSTable 1  (L0)
 SSTable 2  (L0)
-    ¦
-    ¦ compacted in background
+    Â¦
+    Â¦ compacted in background
     ?
 SSTable 3  (L1, merged, larger)
 SSTable 4  (L1)
-    ¦
-    ¦ compacted
+    Â¦
+    Â¦ compacted
     ?
 SSTable 5  (L2, even larger)
 ```
 
-**Bloom Filters:** A probabilistic data structure that answers "is key K definitely not in this SSTable?" with no false negatives and configurable false positive rate. Before reading from an SSTable, check the bloom filter — if it says "not present," skip the file entirely. This avoids expensive disk reads for keys that do not exist in cold SSTables.
+**Bloom Filters:** A probabilistic data structure that answers "is key K definitely not in this SSTable?" with no false negatives and configurable false positive rate. Before reading from an SSTable, check the bloom filter â€” if it says "not present," skip the file entirely. This avoids expensive disk reads for keys that do not exist in cold SSTables.
 
 $$P(false\ positive) = (1 - e^{-kn/m})^k$$
 
@@ -235,7 +235,7 @@ L2: [1GB]
 **Pros:** Simple, good write throughput (no read-before-write during compaction).
 **Cons:** Space amplification (data exists in multiple levels simultaneously). Read amplification (must check many SSTables).
 
-**Leveled Compaction:** Used by LevelDB, RocksDB. Each level has a fixed size multiplier (typically 10x). L0 is the exception — can have multiple overlapping SSTables flushed from MemTable. L1 and below are non-overlapping: each key range appears in exactly one SSTable per level.
+**Leveled Compaction:** Used by LevelDB, RocksDB. Each level has a fixed size multiplier (typically 10x). L0 is the exception â€” can have multiple overlapping SSTables flushed from MemTable. L1 and below are non-overlapping: each key range appears in exactly one SSTable per level.
 
 ```
 L0: [A-E] [C-G] [F-J]            ? overlapping ranges (from multiple flushes)
@@ -244,7 +244,7 @@ L2: [A-F] [G-L] [M-R] [S-X] ...  ? non-overlapping, 10x larger
 ```
 
 **Pros:** Lower space amplification (no duplication across levels). Better read performance (fewer SSTables to check, binary search on level+file).
-**Cons:** Higher write amplification (compaction reads a key from L1 and writes it to L2, even if the key is unchanged — "write amplification" overhead).
+**Cons:** Higher write amplification (compaction reads a key from L1 and writes it to L2, even if the key is unchanged â€” "write amplification" overhead).
 
 **Time-Windowed Compaction:** Used for time-series data (Cassandra DTCS, now deprecated in favor of Unified Compaction). SSTables are grouped by time windows (e.g., daily). Only SSTables within the same time window are compacted together.
 
@@ -290,14 +290,14 @@ The most common replication pattern. One node (the leader/primary/master) accept
 
 ```
          +---------+
-         ¦  Leader  ¦   ? all writes here
+         Â¦  Leader  Â¦   ? all writes here
          +----------+
-              ¦
+              Â¦
      +--------+--------+
-     ¦        ¦        ¦
+     Â¦        Â¦        Â¦
      ?        ?        ?
   +-----+ +-----+ +-----+
-  ¦ F1  ¦ ¦ F2  ¦ ¦ F3  ¦   ? read-only replicas
+  Â¦ F1  Â¦ Â¦ F2  Â¦ Â¦ F3  Â¦   ? read-only replicas
   +-----+ +-----+ +-----+
 ```
 
@@ -340,23 +340,23 @@ Multiple nodes accept writes and replicate them to all other nodes. Each leader 
 
 ```
 +--------------+           +--------------+
-¦  Leader      ¦?---------?¦  Leader      ¦
-¦  (us-east-1) ¦     ¦     ¦  (eu-west-1) ¦
-+--------------+     ¦     +--------------+
-       ¦             ¦            ¦
-       ?             ¦            ?
-+--------------+     ¦     +--------------+
-¦  Follower     ¦    ¦     ¦  Follower     ¦
-+--------------+    ¦     +--------------+
-                    ¦
-+--------------+    ¦     +--------------+
-¦  Leader      ¦?--------?¦  Leader      ¦
-¦  (ap-southeast)¦        ¦  (sa-east-1) ¦
+Â¦  Leader      Â¦?---------?Â¦  Leader      Â¦
+Â¦  (us-east-1) Â¦     Â¦     Â¦  (eu-west-1) Â¦
++--------------+     Â¦     +--------------+
+       Â¦             Â¦            Â¦
+       ?             Â¦            ?
++--------------+     Â¦     +--------------+
+Â¦  Follower     Â¦    Â¦     Â¦  Follower     Â¦
++--------------+    Â¦     +--------------+
+                    Â¦
++--------------+    Â¦     +--------------+
+Â¦  Leader      Â¦?--------?Â¦  Leader      Â¦
+Â¦  (ap-southeast)Â¦        Â¦  (sa-east-1) Â¦
 +--------------+          +--------------+
-       ¦                        ¦
+       Â¦                        Â¦
        ?                        ?
 +--------------+          +--------------+
-¦  Follower     ¦         ¦  Follower     ¦
+Â¦  Follower     Â¦         Â¦  Follower     Â¦
 +--------------+          +--------------+
 ```
 
@@ -380,7 +380,7 @@ Leader B (Tokyo):   UPDATE product SET price = 20 WHERE id = 42
 $$\text{value} = \max_{timestamp}(value_1, value_2)$$
 
 **Pros:** Simple. No additional infrastructure needed.
-**Cons:** Clock skew is unavoidable (distributed clocks drift). Data loss — the losing write is silently discarded. Used by Cassandra's default conflict resolution (though Cassandra checks for equal timestamps and compares UUIDs as tiebreaker).
+**Cons:** Clock skew is unavoidable (distributed clocks drift). Data loss â€” the losing write is silently discarded. Used by Cassandra's default conflict resolution (though Cassandra checks for equal timestamps and compares UUIDs as tiebreaker).
 
 **Version Vectors:** Each node maintains a vector of version counters, one per replica:
 
@@ -393,7 +393,7 @@ A conflict exists if neither vector dominates the other (i.e., vector A is not g
 
 **Dotted Version Vectors:** An optimization adding a per-event dot to reduce storage. Used in Riak. Each write gets a unique event ID, and the vector tracks the "seen" set of event IDs per replica.
 
-**CRDTs (Conflict-free Replicated Data Types):** Mathematical data types designed for automatic conflict resolution — conflicts are impossible by construction.
+**CRDTs (Conflict-free Replicated Data Types):** Mathematical data types designed for automatic conflict resolution â€” conflicts are impossible by construction.
 
 ---
 
@@ -406,18 +406,18 @@ Dynamo-style replication (from Amazon's DynamoDB paper, 2007). There is no leade
         |                       |
         ?                       ?
   +---------+  +---------+  +---------+
-  ¦ Node 1  ¦  ¦ Node 2  ¦  ¦ Node 3  ¦
-  ¦  (N=3)  ¦  ¦  (N=3)  ¦  ¦  (N=3)  ¦
-  ¦ W=2 ok  ¦  ¦ W=2 ok  ¦  ¦ write   ¦
-  ¦ R=2 ok  ¦  ¦ R=2 ok  ¦  ¦ failed  ¦
+  Â¦ Node 1  Â¦  Â¦ Node 2  Â¦  Â¦ Node 3  Â¦
+  Â¦  (N=3)  Â¦  Â¦  (N=3)  Â¦  Â¦  (N=3)  Â¦
+  Â¦ W=2 ok  Â¦  Â¦ W=2 ok  Â¦  Â¦ write   Â¦
+  Â¦ R=2 ok  Â¦  Â¦ R=2 ok  Â¦  Â¦ failed  Â¦
   +---------+  +---------+  +---------+
 ```
 
 Key parameters:
 
 - **N:** Replication factor (number of replicas that store each piece of data).
-- **W:** Write quorum — the minimum number of replicas that must acknowledge a write for it to be considered successful.
-- **R:** Read quorum — the minimum number of replicas that must respond to a read for it to be considered successful.
+- **W:** Write quorum â€” the minimum number of replicas that must acknowledge a write for it to be considered successful.
+- **R:** Read quorum â€” the minimum number of replicas that must respond to a read for it to be considered successful.
 
 $$W + R > N \implies \text{strong consistency}$$
 
@@ -519,11 +519,11 @@ v2 = {"A": 0, "B": 3, "C": 0}
 # Neither dominates ? CONFLICT. Resolution required.
 ```
 
-**Dominance check:** v1 = v2 if every counter in v1 is = corresponding counter in v2. If neither dominates, the values are concurrent — conflict.
+**Dominance check:** v1 = v2 if every counter in v1 is = corresponding counter in v2. If neither dominates, the values are concurrent â€” conflict.
 
 #### CRDTs
 
-CRDTs are data types where concurrent operations commute. No conflict resolution is needed — the state always converges.
+CRDTs are data types where concurrent operations commute. No conflict resolution is needed â€” the state always converges.
 
 **G-Counter (Grow-only Counter):**
 
@@ -626,7 +626,7 @@ Key architecture:
 - **Zones:** Each zone contains one leader and multiple replicas. Zones map to data centers.
 - **Paxos groups:** Each shard is replicated via Paxos across zones. Leader of each shard processes writes.
 - **TrueTime:** Exposes a time interval `[earliest, latest]` for the current time. Spanner waits out the uncertainty interval (commit wait) to ensure linearizability.
-- **F1 RDBMS:** On top of Spanner for Google Ads (formerly AdWords) — a global SQL system.
+- **F1 RDBMS:** On top of Spanner for Google Ads (formerly AdWords) â€” a global SQL system.
 
 **Amazon DynamoDB.** Fully managed NoSQL key-value and document database based on the Dynamo paper. Uses leaderless replication with configurable N, W, R.
 
@@ -636,7 +636,7 @@ Key features:
 - **Global tables:** Multi-leader replication across regions with last-writer-wins conflict resolution.
 - **Transactions:** Limited ACID transactions (within a single partition or across partitions with TransactWriteItems/TransactGetItems).
 
-**Facebook TAO.** Not a database in the traditional sense — a distributed cache layer that serves Facebook's social graph. As discussed in Chapter 3, TAO sits between application servers and MySQL, providing a graph-optimized API with strong read-after-write consistency across global regions.
+**Facebook TAO.** Not a database in the traditional sense â€” a distributed cache layer that serves Facebook's social graph. As discussed in Chapter 3, TAO sits between application servers and MySQL, providing a graph-optimized API with strong read-after-write consistency across global regions.
 
 ---
 
@@ -652,7 +652,7 @@ Key features:
 - Delete: Bulk delete of data older than 90 days.
 
 **B-Tree analysis:**
-- Insert is random page write — each new data point writes to a different position in the B-Tree. This causes many small random I/Os. Write amplification is high (page splits).
+- Insert is random page write â€” each new data point writes to a different position in the B-Tree. This causes many small random I/Os. Write amplification is high (page splits).
 - Range scan on sorted timestamp is efficient (sequential page traversal).
 - Delete by range requires many page modifications (each leaf page must be modified).
 
@@ -917,7 +917,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - B-Trees use a high branching factor (~1000+) to minimize disk seeks, achieving O(log_base_factor(n)) depth. Page splits and merges keep the tree balanced automatically.
 - LSM-Trees buffer writes in an in-memory MemTable, flush to immutable SSTables on disk, and run background compaction to merge and reclaim space. They dramatically outperform B-Trees on write-heavy workloads.
 - The B-Tree vs LSM-Tree trade-off reduces to read speed vs write speed. B-Trees win on point lookups and range scans; LSM-Trees win on sequential write throughput.
-- Single-leader replication is the simplest topology. Failover requires detecting leader failure, electing a new leader, and reconfiguring the system — with split-brain as the primary risk.
+- Single-leader replication is the simplest topology. Failover requires detecting leader failure, electing a new leader, and reconfiguring the system â€” with split-brain as the primary risk.
 - Multi-leader replication is essential for multi-datacenter and offline-first applications, but requires conflict resolution (LWW, Version Vectors, CRDTs).
 - Leaderless replication (Dynamo-style) uses quorums (N, W, R) and eventual consistency. Hinted handoff and read repair handle failures and staleness.
 - Replication lag causes three anomalies: read-your-writes, monotonic reads, and consistent prefix reads. Each has known solutions.

@@ -543,7 +543,7 @@ class ElevatorController:
             if (direction == Direction.UP and floor >= elevator.current_floor) or \
                (direction == Direction.DOWN and floor <= elevator.current_floor):
                 return floor - elevator.current_floor if direction == Direction.UP else elevator.current_floor - floor
-        # Going opposite direction — must wait for turnaround
+        # Going opposite direction â€” must wait for turnaround
         return abs(elevator.current_floor - floor) + self.num_floors
 
     def step(self):
@@ -685,7 +685,7 @@ class Board:
         self._setup()
 
     def _setup(self):
-        # Place pieces — abbreviated for clarity
+        # Place pieces â€” abbreviated for clarity
         for col in range(8):
             self.grid[1][col] = Pawn(Color.BLACK, Position(1, col))
             self.grid[6][col] = Pawn(Color.WHITE, Position(6, col))

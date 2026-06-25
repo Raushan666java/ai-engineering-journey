@@ -226,7 +226,7 @@ flowchart TB
 
 ### The Data Availability Problem
 
-The key bottleneck for rollups is **data availability** — ensuring that L2 transaction data is available for anyone to reconstruct the L2 state.
+The key bottleneck for rollups is **data availability** â€” ensuring that L2 transaction data is available for anyone to reconstruct the L2 state.
 
 ```mermaid
 flowchart TB
@@ -517,11 +517,11 @@ const solutions: ScalingSolution[] = [
 ];
 ```
 
-> **One-Sentence Takeaway:** Every scaling solution involves a trade-off — Rollups inherit L1 security but add latency, sidechains have their own security models, and sharding increases complexity while maintaining full security.
+> **One-Sentence Takeaway:** Every scaling solution involves a trade-off â€” Rollups inherit L1 security but add latency, sidechains have their own security models, and sharding increases complexity while maintaining full security.
 
 > **Pro Tip:** For most applications, ZK-Rollups are the preferred scaling path: they offer instant finality, lower fees than Optimistic Rollups (no 7-day withdrawal delay), and strong privacy guarantees.
 
-> **Warning:** A 51% attack on a shard requires only 51% of that shard's hash power, not the whole network — sharding introduces cross-shard communication complexity and reduces the cost of attacking a single shard.
+> **Warning:** A 51% attack on a shard requires only 51% of that shard's hash power, not the whole network â€” sharding introduces cross-shard communication complexity and reduces the cost of attacking a single shard.
 
 ---
 
@@ -594,7 +594,7 @@ const solutions: ScalingSolution[] = [
 
 <details>
 <summary>Answer</summary>
-**B) STARKs require no trusted setup ceremony.** SNARKs require an initial trusted setup — if the setup's toxic waste is leaked, false proofs can be generated. STARKs use only publicly verifiable randomness, making them fully transparent and quantum-resistant.
+**B) STARKs require no trusted setup ceremony.** SNARKs require an initial trusted setup â€” if the setup's toxic waste is leaked, false proofs can be generated. STARKs use only publicly verifiable randomness, making them fully transparent and quantum-resistant.
 </details>
 
 4. What is the "data availability problem" in rollups?
@@ -992,10 +992,10 @@ export { Processor, Task }
 
 1. For dApp deployment, prefer ZK-Rollups for instant finality; use Optimistic Rollups for full EVM compatibility.
 2. Always use slippage protection (minOut) and Flashbots for large trades to avoid MEV.
-3. Monitor data availability — verify that rollup sequencers are publishing data to L1 blobs.
+3. Monitor data availability â€” verify that rollup sequencers are publishing data to L1 blobs.
 4. For Bitcoin micro-payments, the Lightning Network is the best option for instant settlement.
-5. Start preparing for quantum resistance — use wallets that support or plan to support post-quantum signatures.
-6. Sidechains have independent security — never assume a sidechain is as secure as its parent chain.
+5. Start preparing for quantum resistance â€” use wallets that support or plan to support post-quantum signatures.
+6. Sidechains have independent security â€” never assume a sidechain is as secure as its parent chain.
 7. Use MEV-Boost relays that enforce fair transaction ordering when running an Ethereum validator.
 
 ---

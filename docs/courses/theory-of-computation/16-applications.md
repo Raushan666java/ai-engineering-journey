@@ -56,14 +56,14 @@ The most widespread application of finite automata is **lexical analysis** (lexi
 
 **Example:** A lexer for simple arithmetic:
 ```
-DIGIT    → [0-9]
-NUMBER   → DIGIT+ (\. DIGIT+)?
-PLUS     → +
-MINUS    → -
-TIMES    → *
-DIVIDE   → /
-LPAREN   → (
-RPAREN   → )
+DIGIT    â†’ [0-9]
+NUMBER   â†’ DIGIT+ (\. DIGIT+)?
+PLUS     â†’ +
+MINUS    â†’ -
+TIMES    â†’ *
+DIVIDE   â†’ /
+LPAREN   â†’ (
+RPAREN   â†’ )
 ```
 Each rule compiles to a DFA. The lexer simulates them in parallel, picking the longest matching token.
 
@@ -82,7 +82,7 @@ Each rule compiles to a DFA. The lexer simulates them in parallel, picking the l
 2. **Bottom-up (LR) parsing:**
    - Build the parse tree from the leaves upward.
    - Shift symbols onto a stack until a production's RHS is matched, then reduce.
-   - More general than LL — can handle more grammars.
+   - More general than LL â€” can handle more grammars.
    - Used in: yacc, bison, and most parser generators.
 
 **Parser generators:** yacc/bison (LALR(1)), ANTLR (LL(*)), CUP (LALR), Happy (Haskell).
@@ -103,8 +103,8 @@ Each rule compiles to a DFA. The lexer simulates them in parallel, picking the l
 **Automata-theoretic approach:**
 1. Model the system as a finite automaton (a Kripke structure) M.
 2. Convert the specification (in LTL or CTL) to an automaton A that accepts violating behaviors.
-3. Compute the product automaton M × A.
-4. Check if the product has any accepting path — if so, the specification is violated.
+3. Compute the product automaton M Ã— A.
+4. Check if the product has any accepting path â€” if so, the specification is violated.
 
 **Applications:**
 - Hardware verification (Intel, AMD use model checking for CPU designs).
@@ -120,19 +120,19 @@ Complexity theory provides the foundation for modern cryptography. In particular
 
 **Key complexity-theoretic concepts in cryptography:**
 - **One-way functions:** f(x) is easy to compute, but given y = f(x), finding any x' with f(x') = y is hard (requires super-polynomial time).
-- **Trapdoor functions:** One-way functions with a "back door" — with the secret key, inversion is easy (used in public-key cryptography).
+- **Trapdoor functions:** One-way functions with a "back door" â€” with the secret key, inversion is easy (used in public-key cryptography).
 - **Zero-knowledge proofs:** An interactive proof reveals nothing beyond the validity of the statement. ZK proofs exist for all NP languages under cryptographic assumptions.
 
 **Computational hardness assumptions:**
 - **Factoring:** Given product of two large primes, find the factors. (Used in RSA.)
-- **Discrete log:** Given g, p, and gˣ mod p, find x. (Used in Diffie-Hellman, ElGamal.)
+- **Discrete log:** Given g, p, and gË£ mod p, find x. (Used in Diffie-Hellman, ElGamal.)
 - **Lattice problems:** Learning With Errors (LWE), Shortest Vector Problem (SVP). (Used in post-quantum cryptography.)
 - **SAT hardness:** Many cryptographic constructions rely on the hardness of NP-complete problems.
 
 ### 15.5 Automata in Natural Language Processing
 
 **Finite-state methods** are extensively used in NLP:
-- **Morphological analysis:** Finite-state transducers model word formation (e.g., "running" → run + ing).
+- **Morphological analysis:** Finite-state transducers model word formation (e.g., "running" â†’ run + ing).
 - **Phonology:** Finite-state machines model sound changes in language.
 - **Part-of-speech tagging:** Hidden Markov Models (probabilistic finite automata) assign POS tags to words.
 - **Speech recognition:** Viterbi algorithm (DP on a weighted automaton) finds the most likely word sequence.
@@ -150,7 +150,7 @@ Complexity theory provides the foundation for modern cryptography. In particular
 **Type systems** and automata theory:
 - **Regular types:** Types described by regular expressions (e.g., nullable types, option types).
 - **Context-free grammars** describe syntax, and **attribute grammars** extend CFGs with semantic actions.
-- **Recursive types** (e.g., lists, trees) correspond to concepts in µ-calculus and alternating automata.
+- **Recursive types** (e.g., lists, trees) correspond to concepts in Âµ-calculus and alternating automata.
 
 **Domain-specific languages (DSLs):** Many DSLs are designed to be regular or context-free, enabling efficient parsing and analysis. Examples: SQL, HTML/CSS (regular for practical purposes), JSON.
 
@@ -189,17 +189,17 @@ Understanding undecidability helps engineers recognize what **cannot** be automa
 **Practical consequences:**
 - Static analysis tools (like linters) use conservative approximations (sound but incomplete, or complete but unsound).
 - Type systems balance expressiveness with decidability.
-- Testing cannot prove correctness — it can only find bugs.
+- Testing cannot prove correctness â€” it can only find bugs.
 
 ### 15.10 Quantum Computing and Complexity
 
 **BQP** (Bounded-error Quantum Polynomial Time): The class of problems efficiently solvable by quantum computers.
 
 **Relationship to classical classes:**
-- P ⊆ BQP ⊆ PSPACE
-- It's believed that NP ⊄ BQP (quantum computers won't solve NP-complete problems efficiently).
-- Shor's algorithm: Factoring ∈ BQP (threatens RSA).
-- Grover's algorithm: Unstructured search in O(√n) (quadratic speedup).
+- P âŠ† BQP âŠ† PSPACE
+- It's believed that NP âŠ„ BQP (quantum computers won't solve NP-complete problems efficiently).
+- Shor's algorithm: Factoring âˆˆ BQP (threatens RSA).
+- Grover's algorithm: Unstructured search in O(âˆšn) (quadratic speedup).
 
 **Implications for the Church-Turing thesis:**
 The **extended Church-Turing thesis** (every physically realizable computation can be simulated by a probabilistic TM with polynomial slowdown) is challenged by quantum computing. Whether quantum computers provide a super-polynomial advantage remains an active research question.
@@ -464,7 +464,7 @@ REs: KEYWORD = if|while|else, ID = [a-z]+, NUM = [0-9]+, OP = +|-|*|/
 
 The combined DFA is constructed by:
 1. Building NFAs for each pattern.
-2. Combining via ε-transitions from a new start state.
+2. Combining via Îµ-transitions from a new start state.
 3. Converting to a DFA via subset construction.
 4. At each step, record which patterns are matched.
 
@@ -474,30 +474,30 @@ When multiple patterns match at the same position (e.g., "if" matches both KEYWO
 
 Consider a mutual exclusion protocol with two processes. The specification (safety property): "never both processes in critical section simultaneously."
 
-The model is a Kripke structure M with states (p_state, q_state) where each process state ∈ {idle, want, critical}. Transitions follow the protocol rules.
+The model is a Kripke structure M with states (p_state, q_state) where each process state âˆˆ {idle, want, critical}. Transitions follow the protocol rules.
 
-The property is expressed in LTL as: G ¬(in_cs₁ ∧ in_cs₂).
+The property is expressed in LTL as: G Â¬(in_csâ‚ âˆ§ in_csâ‚‚).
 
 Model checking constructs the product of M and the automaton for the negation of the property. If any accepting cycle exists, the system model violates mutual exclusion and a counterexample path is produced.
 
-### Example 15.3: Undecidability in Practice — Static Analysis
+### Example 15.3: Undecidability in Practice â€” Static Analysis
 
 A static analyzer for null pointer dereferences:
 - Cannot decide exactly which pointers are null (undecidable in general).
 - Instead, uses **conservative approximation**: may report false positives but never misses a real bug.
 - Example: assume any pointer assigned from a function return might be null unless proven otherwise.
 
-This is the practical consequence of Rice's theorem — static analysis tools must trade off precision for decidability.
+This is the practical consequence of Rice's theorem â€” static analysis tools must trade off precision for decidability.
 
 ### Example 15.4: RNA Secondary Structure Prediction with CFGs
 
-RNA bases {A, C, G, U} pair: A-U, C-G, G-U (wobble). Secondary structure prediction using Nussinov algorithm (DP, O(n³)):
+RNA bases {A, C, G, U} pair: A-U, C-G, G-U (wobble). Secondary structure prediction using Nussinov algorithm (DP, O(nÂ³)):
 
 **Grammar for RNA structure:**
-S → ε | a S | a S u | c S g | g S u | c S c | u S a | g S c | S S
+S â†’ Îµ | a S | a S u | c S g | g S u | c S c | u S a | g S c | S S
 
 Each production corresponds to a structural element:
-- ε: empty structure.
+- Îµ: empty structure.
 - a S: unpaired base.
 - a S u: paired bases (a-u).
 - S S: branch point.
@@ -576,7 +576,7 @@ The CYK-like DP algorithm finds the structure maximizing the number of paired ba
 
 <details>
 <summary>Answer</summary>
-**B)** One-way functions require computational hardness � if P = NP, they cannot exist.
+**B)** One-way functions require computational hardness — if P = NP, they cannot exist.
 </details>
 
 **Q5.** The halting problem affects software engineering by showing:
@@ -606,7 +606,7 @@ The CYK-like DP algorithm finds the structure maximizing the number of paired ba
 
 7. **Regex and automata are core security primitives.** Network IDS/IPS systems like Snort and Suricata compile rules into Aho-Corasick DFA automata for line-rate pattern matching. Every security scanner uses automata theory under the hood.
 
-8. **Grammarware is everywhere.** From JSON parse rs and SQL interpreters to HTML sanitizers and configuration file readers � any structured data format relies on automata and formal language theory for correct parsing.
+8. **Grammarware is everywhere.** From JSON parse rs and SQL interpreters to HTML sanitizers and configuration file readers — any structured data format relies on automata and formal language theory for correct parsing.
 
 ## TypeScript Implementation: Regex Engine, Parser Generator, and Model Checker
 
@@ -857,7 +857,7 @@ class PredictiveParserBuilder {
 }
 
 // -----------------------------------------------------
-// Formal Verification Helper � encodes program states
+// Formal Verification Helper — encodes program states
 // as automaton states and checks invariants using
 // model checking primitives.
 // -----------------------------------------------------
@@ -978,7 +978,7 @@ export { Processor, Task }
 - Automata theory is applied in NLP (morphology, POS tagging), bioinformatics (HMMs, RNA folding), and protocol verification.
 - Undecidability results guide the design of practical static analysis tools.
 - Quantum computing challenges the extended Church-Turing thesis.
-- The entire software stack � from compilers to security to AI � builds on automata theory.
+- The entire software stack — from compilers to security to AI — builds on automata theory.
 
 ## Exercises
 
@@ -995,7 +995,7 @@ export { Processor, Task }
 
 7. Design a lexer DFA that recognizes: identifiers ([a-zA-Z_][a-zA-Z0-9_]*), numbers ([0-9]+), and operators (+, -, *, /), with longest match semantics.
 8. Explain how model checking works for verifying hardware designs. What is the state explosion problem?
-9. Show how the LTL formula G(p ? F q) can be translated into a B�chi automaton.
+9. Show how the LTL formula G(p ? F q) can be translated into a Büchi automaton.
 10. Explain why static analysis tools cannot be both sound (no false negatives) and complete (no false positives) for non-trivial properties.
 11. Describe how RNA secondary structure prediction uses the CYK algorithm or similar DP methods.
 12. Implement a Viterbi algorithm in TypeScript for a 2-state HMM (rainy/sunny) predicting weather from activity observations.
@@ -1008,7 +1008,7 @@ export { Processor, Task }
 16. Explain the relationship between P, NP, and the existence of one-way functions. Show that if P = NP, then one-way functions do not exist.
 17. Show how the Aho-Corasick algorithm constructs a finite automaton for multiple pattern matching. What is its complexity?
 18. Write a research summary on the state of quantum computing relative to the Church-Turing thesis, covering BQP, Shor's algorithm, and the limits of quantum speedup.
-19. Implement an LTL model checker for a simple Kripke structure in TypeScript, checking property G(�critical1 ? �critical2).
+19. Implement an LTL model checker for a simple Kripke structure in TypeScript, checking property G(¬critical1 ? ¬critical2).
 
 ## Further Reading
 

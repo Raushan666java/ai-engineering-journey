@@ -74,9 +74,9 @@ flowchart TB
 ```
 
 **Key components:**
-1. **Frontend:** React, Vue, or Angular — same as Web2.
+1. **Frontend:** React, Vue, or Angular â€” same as Web2.
 2. **Wallet (e.g., MetaMask):** Manages private keys and signs transactions. Injects `window.ethereum` into the browser.
-3. **Provider (e.g., Infura, Alchemy):** JSON-RPC interface to blockchain nodes — enables reading data and sending transactions.
+3. **Provider (e.g., Infura, Alchemy):** JSON-RPC interface to blockchain nodes â€” enables reading data and sending transactions.
 4. **Smart Contracts:** On-chain logic deployed on the blockchain.
 5. **Decentralized Storage (IPFS):** Content-addressed P2P storage for files that are too expensive to store on-chain.
 
@@ -217,7 +217,7 @@ const events = await contract.queryFilter(
 
 ### IPFS (InterPlanetary File System)
 
-IPFS is a peer-to-peer, content-addressed file system. Files are addressed by their **CID (Content Identifier)** — a hash of the content itself, not a location URL.
+IPFS is a peer-to-peer, content-addressed file system. Files are addressed by their **CID (Content Identifier)** â€” a hash of the content itself, not a location URL.
 
 ```mermaid
 flowchart TB
@@ -487,11 +487,11 @@ async function loadAllNFTs(
 }
 ```
 
-> **One-Sentence Takeaway:** In a dApp, the user's wallet is both their identity (authentication) and their signing key (authorization) — there is no backend session, no password reset, and no central authority controlling access.
+> **One-Sentence Takeaway:** In a dApp, the user's wallet is both their identity (authentication) and their signing key (authorization) â€” there is no backend session, no password reset, and no central authority controlling access.
 
 > **Pro Tip:** When building a dApp frontend, handle the "no wallet" and "wrong network" states explicitly. A blank screen when MetaMask isn't installed is the #1 UX failure in new dApps.
 
-> **Warning:** IPFS does not guarantee availability — content is only accessible if at least one node is pinning the data. Use a pinning service (Pinata, web3.storage) to ensure your dApp's data persists.
+> **Warning:** IPFS does not guarantee availability â€” content is only accessible if at least one node is pinning the data. Use a pinning service (Pinata, web3.storage) to ensure your dApp's data persists.
 
 ---
 
@@ -565,7 +565,7 @@ async function loadAllNFTs(
 
 <details>
 <summary>Answer</summary>
-**B) The content is inaccessible until a node with that CID comes back online.** IPFS does not guarantee persistence — content availability depends on at least one node hosting it. This is why pinning services exist.
+**B) The content is inaccessible until a node with that CID comes back online.** IPFS does not guarantee persistence â€” content availability depends on at least one node hosting it. This is why pinning services exist.
 </details>
 
 4. What is the difference between a Provider and a Signer in ethers.js?
@@ -581,13 +581,13 @@ async function loadAllNFTs(
 
 5. Why is content addressing important for decentralized applications?
    - A) It makes URLs shorter
-   - B) Content is addressable by its hash, not its location — links never break if content doesn't change
+   - B) Content is addressable by its hash, not its location â€” links never break if content doesn't change
    - C) It's faster than location addressing
    - D) It uses less bandwidth
 
 <details>
 <summary>Answer</summary>
-**B) Content is addressable by its hash, not its location — links never break if content doesn't change.** In IPFS, the CID (content hash) uniquely identifies the content. As long as the content is the same, the CID is the same, and anyone hosting that CID can serve it.
+**B) Content is addressable by its hash, not its location â€” links never break if content doesn't change.** In IPFS, the CID (content hash) uniquely identifies the content. As long as the content is the same, the CID is the same, and anyone hosting that CID can serve it.
 </details>
 
 ### TypeScript: Multi-Sig Wallet Logic
@@ -882,7 +882,7 @@ export { Processor, Task }
 ## Practical Takeaways
 
 1. Always handle "wallet not installed" and "wrong network" states in your dApp UI.
-2. Use ethers.js over web3.js — it's smaller, better typed, and more actively maintained.
+2. Use ethers.js over web3.js â€” it's smaller, better typed, and more actively maintained.
 3. Listen to smart contract events via WebSocket for real-time updates rather than polling.
 4. Use a pinning service (Pinata, web3.storage) to ensure IPFS content availability.
 5. Implement Sign-in with Ethereum (EIP-4361 / SIWE) for session-based authentication.

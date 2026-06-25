@@ -14,12 +14,12 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-|Core Web Vitals|LCP (<2.5s), FID (<100ms), CLS (<0.1) measure real user experience|Track Web Vitals in production with RUM (Real User Monitoring) — lab tests alone are insufficient|
+|Core Web Vitals|LCP (<2.5s), FID (<100ms), CLS (<0.1) measure real user experience|Track Web Vitals in production with RUM (Real User Monitoring) â€” lab tests alone are insufficient|
 |Lighthouse|Automated auditing tool scoring performance, accessibility, SEO|Run Lighthouse CI in the pipeline to catch regressions before deployment|
 |Code Splitting|Split bundles by route and component to reduce initial payload|Use `React.lazy` + `Suspense` or `next/dynamic` with `ssr: false` for client-only components|
 |Image Optimization|Responsive images with WebP/AVIF, lazy loading, blur placeholders|Use next/image or the `<picture>` element with multiple source formats for broad compatibility|
-|Caching|Service workers cache assets; CDNs cache at edge; HTTP caching headers|Layer caches — CDN for static assets, SW for offline, memory cache for API data|
-|React Patterns|`memo`, `useMemo`, `useCallback`, and virtual scrolling prevent wasted renders|Profile with React DevTools before optimizing — don't add memoization prematurely|
+|Caching|Service workers cache assets; CDNs cache at edge; HTTP caching headers|Layer caches â€” CDN for static assets, SW for offline, memory cache for API data|
+|React Patterns|`memo`, `useMemo`, `useCallback`, and virtual scrolling prevent wasted renders|Profile with React DevTools before optimizing â€” don't add memoization prematurely|
 |Database Perf|Query optimization, selective columns, batch operations, connection pooling|Use `select` to fetch only needed columns, `createMany` for batch inserts|
 
 ## Chapter Roadmap
@@ -493,13 +493,13 @@ const pool = new Pool({
 
 
 > [!TIP]
-> Use `npx web-vitals` in your app to track real Core Web Vitals from actual users — Lighthouse gives lab data but real-user metrics reveal the true experience.
+> Use `npx web-vitals` in your app to track real Core Web Vitals from actual users â€” Lighthouse gives lab data but real-user metrics reveal the true experience.
 
 > [!WARNING]
 > Premature optimization adds complexity without measurable benefit. Always profile first with React DevTools or Chrome Performance tab, then optimize the actual bottleneck.
 
 > [!REMEMBER]
-> The single biggest performance win for most web apps is reducing JavaScript bundle size. Analyze your bundles regularly — a 100KB savings in JS often beats any memoization optimization.
+> The single biggest performance win for most web apps is reducing JavaScript bundle size. Analyze your bundles regularly â€” a 100KB savings in JS often beats any memoization optimization.
 
 
 
@@ -568,7 +568,7 @@ Test your understanding with these quick questions.
 - A) For every computed value
 - B) Only after profiling shows an expensive computation causing performance issues
 - C) For all function definitions
-- D) Never — it is deprecated
+- D) Never â€” it is deprecated
 
 <details><summary>Answer</summary>
 
@@ -585,7 +585,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**B) AVIF (AV1 Image Format) offers significantly better compression than JPEG — typically 50% smaller file sizes at equivalent quality, reducing bandwidth and improving load times.**
+**B) AVIF (AV1 Image Format) offers significantly better compression than JPEG â€” typically 50% smaller file sizes at equivalent quality, reducing bandwidth and improving load times.**
 
 </details>
 
@@ -879,8 +879,8 @@ Optimize a web application achieving 95+ Lighthouse performance score by impleme
 
 ### Practical Takeaways
 
-1. **Measure before optimizing** — always profile with Lighthouse, React DevTools, or the Chrome Performance tab before adding complexity. Premature optimization is the root of all evil.
-2. **Reduce JavaScript bundle size first** — the single biggest performance win is shipping less JS. Analyze bundles regularly, use dynamic imports, and tree-shake unused exports.
-3. **Optimize images aggressively** — use AVIF/WebP with responsive `srcSet` and lazy loading. Images are typically the largest assets on a page.
-4. **Layer your caches** — CDN for static assets, service worker for offline, browser cache for API responses, and in-memory cache for computed data.
-5. **Use resource hints** — `preload` critical resources, `preconnect` to third-party origins, and `prefetch` likely-next pages to eliminate network wait times.
+1. **Measure before optimizing** â€” always profile with Lighthouse, React DevTools, or the Chrome Performance tab before adding complexity. Premature optimization is the root of all evil.
+2. **Reduce JavaScript bundle size first** â€” the single biggest performance win is shipping less JS. Analyze bundles regularly, use dynamic imports, and tree-shake unused exports.
+3. **Optimize images aggressively** â€” use AVIF/WebP with responsive `srcSet` and lazy loading. Images are typically the largest assets on a page.
+4. **Layer your caches** â€” CDN for static assets, service worker for offline, browser cache for API responses, and in-memory cache for computed data.
+5. **Use resource hints** â€” `preload` critical resources, `preconnect` to third-party origins, and `prefetch` likely-next pages to eliminate network wait times.

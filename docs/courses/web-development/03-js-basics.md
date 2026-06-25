@@ -1,4 +1,4 @@
-# Chapter 3 — JavaScript Basics
+# Chapter 3 â€” JavaScript Basics
 
 > **Previous:** [02-css](./02-css.md) | **Next:** [04-js-dom](./04-js-dom.md)
 
@@ -15,9 +15,9 @@ By the end of this chapter, you will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 |Variables|`let` and `const` provide block scoping with the Temporal Dead Zone|Prefer `const` by default, use `let` when reassignment is necessary|
-|Types|JavaScript has 7 primitives and objects � `typeof null` returns `'object'` (a bug)|Use explicit coercion like `Number()`, `String()`, `Boolean()` for clarity|
+|Types|JavaScript has 7 primitives and objects — `typeof null` returns `'object'` (a bug)|Use explicit coercion like `Number()`, `String()`, `Boolean()` for clarity|
 |Operators|Optional chaining `?.` and nullish coalescing `??` prevent runtime errors|Always use `===` for equality to avoid type coercion surprises|
-|Control Flow|`for�of` iterates values, `for�in` iterates keys (with prototype chain)|Use `Object.hasOwn()` to filter inherited properties in `for�in`|
+|Control Flow|`for…of` iterates values, `for…in` iterates keys (with prototype chain)|Use `Object.hasOwn()` to filter inherited properties in `for…in`|
 |Functions|Arrow functions have lexical `this` and no `arguments` object|Use arrow functions for callbacks, regular functions for methods|
 |Arrays|Modern methods like `map`, `filter`, `reduce` enable declarative data transformations|Prefer non-mutating methods that return new arrays over mutating ones|
 
@@ -52,7 +52,7 @@ graph TD
 
 ## Theory
 
-> **One-Sentence Takeaway:** `for�of` loops over iterable values; `for�in` iterates property keys including inherited ones.
+> **One-Sentence Takeaway:** `for…of` loops over iterable values; `for…in` iterates property keys including inherited ones.
 
 ![JavaScript Basics Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/03-javascript-basics.png)
 
@@ -61,21 +61,21 @@ graph TD
 JavaScript provides three variable declaration keywords, each with distinct scoping rules.
 
 ```javascript
-// var — function-scoped, hoisted, can be redeclared
+// var â€” function-scoped, hoisted, can be redeclared
 var x = 10;
 if (true) {
-  var x = 20; // Same variable — leaks out of block
+  var x = 20; // Same variable â€” leaks out of block
 }
 console.log(x); // 20
 
-// let — block-scoped, hoisted but not initialized (TDZ)
+// let â€” block-scoped, hoisted but not initialized (TDZ)
 let y = 10;
 if (true) {
-  let y = 20; // Different variable — block-scoped
+  let y = 20; // Different variable â€” block-scoped
 }
 console.log(y); // 10
 
-// const — block-scoped, must be initialized, cannot be reassigned
+// const â€” block-scoped, must be initialized, cannot be reassigned
 const z = 30;
 // z = 40; // TypeError: Assignment to constant variable
 
@@ -199,7 +199,7 @@ if (score >= 90) {
   grade = 'C';
 }
 
-// switch — strict comparison
+// switch â€” strict comparison
 switch (grade) {
   case 'A':
     console.log('Excellent');
@@ -451,7 +451,7 @@ const { user: { address: { city } } } = data;
 > `typeof null === 'object'` is a long-standing JavaScript bug. Use `value === null` to check for null.
 
 > [!REMEMBER]
-> `const` does not make objects immutable � only the binding is constant. Use `Object.freeze()` for shallow immutability.
+> `const` does not make objects immutable — only the binding is constant. Use `Object.freeze()` for shallow immutability.
 
 
 
@@ -473,7 +473,7 @@ const { user: { address: { city } } } = data;
 |Array Methods|`map`,`filter`,`reduce`,`find`,`some`,`every`,`flat`,`flatMap`|
 |Object Methods|`Object.keys()`,`Object.values()`,`Object.entries()`,`Object.assign()`|
 |Operators|`===`,`!==`,`?.`,`??`,`...` (spread/rest)|
-|Loop Types|`for`,`for�of`,`for�in`,`while`,`do�while`|
+|Loop Types|`for`,`for…of`,`for…in`,`while`,`do…while`|
 
 ## Cross-Application Matrix
 
@@ -524,7 +524,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**B) Spread creates a shallow copy � nested objects are still shared between the original and the copy.**
+**B) Spread creates a shallow copy — nested objects are still shared between the original and the copy.**
 
 </details>
 
@@ -692,7 +692,7 @@ class PrototypeChainWalker {
         return chain.map((l, i) => {
             const indent = "  ".repeat(i);
             const props = l.properties.slice(0, 8);
-            return `${indent}? ${l.constructor}${props.length > 0 ? ` [${props.join(", ")}${l.properties.length > 8 ? ", �" : ""}]` : " [empty]"}`;
+            return `${indent}? ${l.constructor}${props.length > 0 ? ` [${props.join(", ")}${l.properties.length > 8 ? ", …" : ""}]` : " [empty]"}`;
         }).join("\n");
     }
 }
@@ -790,13 +790,13 @@ const original = {
   address: { city: "Portland", zip: 97201 },
 };
 
-// Deep clone � no mutation to original
+// Deep clone — no mutation to original
 const clone = structuredClone(original);
 clone.hobbies.push("hiking");
 clone.address.zip = 97202;
 
-console.log(original.hobbies); // ["reading", "coding"] � unchanged
-console.log(original.address.zip); // 97201 � unchanged
+console.log(original.hobbies); // ["reading", "coding"] — unchanged
+console.log(original.address.zip); // 97201 — unchanged
 
 // Supports: objects, arrays, maps, sets, dates, regexps, typed arrays, blobs
 // Not supported: functions, DOM nodes, class instances with prototypes, Error objects
@@ -851,8 +851,8 @@ function track(id, ref) {
 
 ### Practical Takeaways
 
-1. **Prefer `const` by default** � use `const` for variables that are never reassigned. Use `let` only when you need to reassign. Never use `var` in modern code.
-2. **Always use `===` for equality** � avoid `==` coercion surprises. The only exception is `== null` to check both `null` and `undefined`.
-3. **Use async/await over raw Promises** � it reads like synchronous code, has better error stacks, and works naturally with try/catch.
-4. **Use `Promise.all` for independent parallel work** � when tasks do not depend on each other, `Promise.all` runs them concurrently and fails fast on any rejection.
-5. **Prefer array methods over loops** � `map`, `filter`, `reduce`, `find`, and `some` express data transformations declaratively without manual indexing.
+1. **Prefer `const` by default** — use `const` for variables that are never reassigned. Use `let` only when you need to reassign. Never use `var` in modern code.
+2. **Always use `===` for equality** — avoid `==` coercion surprises. The only exception is `== null` to check both `null` and `undefined`.
+3. **Use async/await over raw Promises** — it reads like synchronous code, has better error stacks, and works naturally with try/catch.
+4. **Use `Promise.all` for independent parallel work** — when tasks do not depend on each other, `Promise.all` runs them concurrently and fails fast on any rejection.
+5. **Prefer array methods over loops** — `map`, `filter`, `reduce`, `find`, and `some` express data transformations declaratively without manual indexing.

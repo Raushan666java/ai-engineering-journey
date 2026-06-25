@@ -53,32 +53,32 @@ A CFG consists of:
 
 ### 5.2 Formal Definition
 
-A **context-free grammar** is a 4-tuple G = (V, Σ, R, S) where:
+A **context-free grammar** is a 4-tuple G = (V, Î£, R, S) where:
 
 - **V** is a finite set of **variables** (non-terminals), typically uppercase letters.
-- **Σ** is a finite set of **terminals** (the alphabet), disjoint from V.
-- **R** is a finite set of **productions** (rules) of the form A → α where A ∈ V and α ∈ (V ∪ Σ)*.
-- **S ∈ V** is the **start variable**.
+- **Î£** is a finite set of **terminals** (the alphabet), disjoint from V.
+- **R** is a finite set of **productions** (rules) of the form A â†’ Î± where A âˆˆ V and Î± âˆˆ (V âˆª Î£)*.
+- **S âˆˆ V** is the **start variable**.
 
 The term "context-free" means that a variable can be replaced by its production regardless of the surrounding context (unlike context-sensitive grammars where replacements depend on neighbors).
 
 ### 5.3 Derivations
 
-If G has a production A → γ, then we can replace A by γ in any string containing A.
+If G has a production A â†’ Î³, then we can replace A by Î³ in any string containing A.
 
-**Definition:** For strings u, v ∈ (V ∪ Σ)*, we write u ⇒ v (u derives v in one step) if:
-- u = αAβ and v = αγβ for some production A → γ ∈ R.
+**Definition:** For strings u, v âˆˆ (V âˆª Î£)*, we write u â‡’ v (u derives v in one step) if:
+- u = Î±AÎ² and v = Î±Î³Î² for some production A â†’ Î³ âˆˆ R.
 
-We write u ⇒* v if v can be obtained from u by zero or more derivation steps.
+We write u â‡’* v if v can be obtained from u by zero or more derivation steps.
 
 The **language generated** by G is:
-L(G) = { w ∈ Σ* | S ⇒* w }
+L(G) = { w âˆˆ Î£* | S â‡’* w }
 
 ### 5.4 Leftmost and Rightmost Derivations
 
-A derivation is **leftmost** if at each step the leftmost remaining variable is replaced. Denoted ⇒ₗ.
+A derivation is **leftmost** if at each step the leftmost remaining variable is replaced. Denoted â‡’â‚—.
 
-A derivation is **rightmost** if at each step the rightmost remaining variable is replaced. Denoted ⇒ᵣ.
+A derivation is **rightmost** if at each step the rightmost remaining variable is replaced. Denoted â‡’áµ£.
 
 For any parse tree, there is exactly one leftmost derivation and exactly one rightmost derivation.
 
@@ -86,51 +86,51 @@ For any parse tree, there is exactly one leftmost derivation and exactly one rig
 
 A **parse tree** (or derivation tree) is a graphical representation of a derivation:
 - The root is labeled with the start variable S.
-- Each leaf is labeled with a terminal or ε.
+- Each leaf is labeled with a terminal or Îµ.
 - Each interior node is labeled with a variable.
-- If node A has children X₁, X₂, …, Xₙ (in order), then A → X₁X₂…Xₙ is a production.
+- If node A has children Xâ‚, Xâ‚‚, â€¦, Xâ‚™ (in order), then A â†’ Xâ‚Xâ‚‚â€¦Xâ‚™ is a production.
 - The yield (leaf string read left to right) gives the derived string.
 
 ### 5.6 Ambiguity
 
-A grammar G is **ambiguous** if there exists some string w ∈ L(G) that has two or more distinct parse trees (equivalently, two distinct leftmost derivations).
+A grammar G is **ambiguous** if there exists some string w âˆˆ L(G) that has two or more distinct parse trees (equivalently, two distinct leftmost derivations).
 
-**Inherent Ambiguity:** A language L is **inherently ambiguous** if every grammar for L is ambiguous. Example: { aⁿbⁿcᵐdᵐ | n,m ≥ 0 } ∪ { aⁿbᵐcᵐdⁿ | n,m ≥ 0 }.
+**Inherent Ambiguity:** A language L is **inherently ambiguous** if every grammar for L is ambiguous. Example: { aâ¿bâ¿cáµdáµ | n,m â‰¥ 0 } âˆª { aâ¿báµcáµdâ¿ | n,m â‰¥ 0 }.
 
-For programming languages, ambiguity is unacceptable — every program must have a unique parse tree. Techniques like **precedence rules** and **associativity** resolve ambiguity in practice.
+For programming languages, ambiguity is unacceptable â€” every program must have a unique parse tree. Techniques like **precedence rules** and **associativity** resolve ambiguity in practice.
 
 ### 5.7 Left Recursion
 
-A grammar is **left-recursive** if it has a variable A such that A ⇒⁺ Aα for some α. This causes problems for top-down parsers (they may loop infinitely).
+A grammar is **left-recursive** if it has a variable A such that A â‡’âº AÎ± for some Î±. This causes problems for top-down parsers (they may loop infinitely).
 
-**Immediate left recursion:** A → Aα | β (can be eliminated)
+**Immediate left recursion:** A â†’ AÎ± | Î² (can be eliminated)
 
 **Elimination (simple case):**
-Replace A → Aα₁ | Aα₂ | … | Aαₙ | β₁ | β₂ | … | βₘ with:
-- A → β₁A' | β₂A' | … | βₘA'
-- A' → α₁A' | α₂A' | … | αₙA' | ε
+Replace A â†’ AÎ±â‚ | AÎ±â‚‚ | â€¦ | AÎ±â‚™ | Î²â‚ | Î²â‚‚ | â€¦ | Î²â‚˜ with:
+- A â†’ Î²â‚A' | Î²â‚‚A' | â€¦ | Î²â‚˜A'
+- A' â†’ Î±â‚A' | Î±â‚‚A' | â€¦ | Î±â‚™A' | Îµ
 
 **General left recursion elimination** requires ordering variables and systematically substituting.
 
 ### 5.8 Left Factoring
 
-Left factoring is a grammar transformation needed when two productions for the same variable start with the same prefix — this makes prediction difficult for top-down parsers.
+Left factoring is a grammar transformation needed when two productions for the same variable start with the same prefix â€” this makes prediction difficult for top-down parsers.
 
-**Technique:** If A → αβ₁ | αβ₂, replace with:
-- A → αA'
-- A' → β₁ | β₂
+**Technique:** If A â†’ Î±Î²â‚ | Î±Î²â‚‚, replace with:
+- A â†’ Î±A'
+- A' â†’ Î²â‚ | Î²â‚‚
 
 ## Examples
 
 ### Example 5.1: CFG for Palindromes
 
-Construct a CFG for PAL = { w ∈ {a,b}* | w = wʀ }.
+Construct a CFG for PAL = { w âˆˆ {a,b}* | w = wÊ€ }.
 
 **Grammar:**
-- S → aSa | bSb | ε | a | b
+- S â†’ aSa | bSb | Îµ | a | b
 
 **Derivation** of "abba":
-S ⇒ aSa ⇒ abSba ⇒ abbεba = abba
+S â‡’ aSa â‡’ abSba â‡’ abbÎµba = abba
 
 **Parse tree** (text description):
 ```
@@ -140,26 +140,26 @@ S ⇒ aSa ⇒ abSba ⇒ abbεba = abba
     /|\
    b S b
      |
-     ε
+     Îµ
 ```
 
-Yield: a b ε b a = abba ✓
+Yield: a b Îµ b a = abba âœ“
 
 ### Example 5.2: CFG for Simple Arithmetic Expressions
 
 Generate expressions with + and *, using identifiers (i) and parentheses.
 
 **Grammar:**
-- E → E + T | T
-- T → T * F | F
-- F → (E) | i
+- E â†’ E + T | T
+- T â†’ T * F | F
+- F â†’ (E) | i
 
 This grammar encodes precedence: + is lower than *, which is lower than ().
 
 **Derivation** of "i + i * i":
 
 Leftmost:
-E ⇒ E + T ⇒ T + T ⇒ F + T ⇒ i + T ⇒ i + T * F ⇒ i + F * F ⇒ i + i * F ⇒ i + i * i
+E â‡’ E + T â‡’ T + T â‡’ F + T â‡’ i + T â‡’ i + T * F â‡’ i + F * F â‡’ i + i * F â‡’ i + i * i
 
 **Parse tree** (text):
 ```
@@ -178,7 +178,7 @@ This tree correctly shows i + (i * i), not (i + i) * i.
 
 ### Example 5.3: Ambiguity Demonstration
 
-The grammar E → E + E | E * E | (E) | i is ambiguous. The string "i + i * i" has two parse trees:
+The grammar E â†’ E + E | E * E | (E) | i is ambiguous. The string "i + i * i" has two parse trees:
 
 **Tree 1** (i + (i * i)):
 ```
@@ -208,35 +208,35 @@ This ambiguity is resolved in Example 5.2 by introducing T and F to enforce prec
 
 Original (immediate left recursion):
 ```
-E → E + T | T
-T → T * F | F
-F → (E) | i
+E â†’ E + T | T
+T â†’ T * F | F
+F â†’ (E) | i
 ```
 
 Eliminated:
 ```
-E  → T E'
-E' → + T E' | ε
-T  → F T'
-T' → * F T' | ε
-F  → (E) | i
+E  â†’ T E'
+E' â†’ + T E' | Îµ
+T  â†’ F T'
+T' â†’ * F T' | Îµ
+F  â†’ (E) | i
 ```
 
 Now the grammar is suitable for recursive-descent or LL parsing. Derivation of "i + i":
-E ⇒ T E' ⇒ F T' E' ⇒ i T' E' ⇒ i ε E' ⇒ i + T E' ⇒ i + F T' E' ⇒ i + i T' E' ⇒ i + i ε ε = i + i
+E â‡’ T E' â‡’ F T' E' â‡’ i T' E' â‡’ i Îµ E' â‡’ i + T E' â‡’ i + F T' E' â‡’ i + i T' E' â‡’ i + i Îµ Îµ = i + i
 
 ### Example 5.5: CFG for a Simple Programming Language Fragment
 
 ```
-P  → D ; S
-D  → int id | float id
-S  → id = E ;
-S  → if ( E ) S else S
-S  → while ( E ) S
-S  → { S S }
-E  → E + T | T
-T  → T * F | F
-F  → (E) | id | num
+P  â†’ D ; S
+D  â†’ int id | float id
+S  â†’ id = E ;
+S  â†’ if ( E ) S else S
+S  â†’ while ( E ) S
+S  â†’ { S S }
+E  â†’ E + T | T
+T  â†’ T * F | F
+F  â†’ (E) | id | num
 ```
 
 This generates simple programs with declarations, assignments, conditionals, loops, and arithmetic.
@@ -313,7 +313,7 @@ This generates simple programs with declarations, assignments, conditionals, loo
 
 <details>
 <summary>Answer</summary>
-**B)** S ? aSa | bSb | e generates all palindromes � this requires a CFG.
+**B)** S ? aSa | bSb | e generates all palindromes — this requires a CFG.
 </details>
 
 **Q5.** Left factoring handles:
@@ -438,7 +438,7 @@ console.log('CNF productions:', cnf.length);
 
 ## CFG to PDA Conversion
 
-Every CFG can be converted to an equivalent **pushdown automaton** (PDA) � this is a key part of the equivalence proof between CFGs and PDAs.
+Every CFG can be converted to an equivalent **pushdown automaton** (PDA) — this is a key part of the equivalence proof between CFGs and PDAs.
 
 ### Algorithm: CFG ? PDA
 
@@ -526,7 +526,7 @@ console.log(grammar.canDerive('aaabbb', 50)); // true
 
 5. **CFGs are more expressive than regex.** Regular expressions can only describe regular languages. CFGs describe context-free languages, which properly include regular languages. Nested structures like balanced parentheses require CFGs.
 
-6. **Chomsky Normal Form enables polynomial parsing.** The CYK algorithm, which runs in O(n�) time, requires CNF. Converting to CNF is a prerequisite for efficient CFG recognition.
+6. **Chomsky Normal Form enables polynomial parsing.** The CYK algorithm, which runs in O(n³) time, requires CNF. Converting to CNF is a prerequisite for efficient CFG recognition.
 
 7. **CFG ? PDA equivalence** is the foundation for syntax analysis in compilers. Grammars are how we *specify* syntax; PDAs are how we *implement* recognizers.
 
@@ -590,7 +590,7 @@ class CFG {
     vars.add(newStart);
     prods.push({ lhs: newStart, rhs: [oldStart] });
 
-    // Step 2: Eliminate e-productions (skip for brevity � handle nullable)
+    // Step 2: Eliminate e-productions (skip for brevity — handle nullable)
     const nullable = new Set<string>();
     let changed = true;
     while (changed) {
@@ -729,7 +729,7 @@ console.log(cfg.isAmbiguous());   // false
 ```
 
 // -----------------------------------------------------
-// CNF Converter � transforms any CFG into Chomsky
+// CNF Converter — transforms any CFG into Chomsky
 // Normal Form where every production is A ? BC or A ? a
 // (plus S ? e for the empty string).
 // -----------------------------------------------------
@@ -842,7 +842,7 @@ class CNFConverter {
     return result;
   }
 
-  // Step 4: Convert to CNF � replace terminals in mixed rhs,
+  // Step 4: Convert to CNF — replace terminals in mixed rhs,
   // and break long RHS sequences into binary productions.
   private toCNF(prods: Array<{ lhs: string; rhs: string[] }>): Array<{ lhs: string; rhs: string[] }> {
     const result: Array<{ lhs: string; rhs: string[] }> = [];
@@ -956,35 +956,35 @@ export { Processor, Task }
 - CFGs can describe nested structures like parentheses, arithmetic expressions, and programming language syntax.
 - Formal grammars enable precise, unambiguous specification of programming language syntax.
 - **Chomsky Normal Form** restricts CFG productions to form \(A \to BC\) or \(A \to a\), enabling the CYK algorithm.
-- CFGs and **pushdown automata** are equivalent � every grammar can be converted to a PDA and vice versa.
+- CFGs and **pushdown automata** are equivalent — every grammar can be converted to a PDA and vice versa.
 
 ## Exercises
 
 ### Basic
 
-1. Find a CFG for L = { aⁿbⁿ | n ≥ 0 }.
-2. Find a CFG for L = { aⁿbᵐcⁿ⁺ᵐ | n, m ≥ 0 }.
-3. Show leftmost and rightmost derivations for the string "aababb" using grammar: S → aS | Sb | ε.
+1. Find a CFG for L = { aâ¿bâ¿ | n â‰¥ 0 }.
+2. Find a CFG for L = { aâ¿báµcâ¿âºáµ | n, m â‰¥ 0 }.
+3. Show leftmost and rightmost derivations for the string "aababb" using grammar: S â†’ aS | Sb | Îµ.
 4. Draw the parse tree (textually) for "i * (i + i)" using the grammar from Example 5.2.
-5. Test the grammar S → aS | Sb | ε for ambiguity. Find a string with two derivations.
+5. Test the grammar S â†’ aS | Sb | Îµ for ambiguity. Find a string with two derivations.
 
 ### Intermediate
 
-6. Eliminate left recursion from: A → Ab | Aa | a | b.
-7. Left-factor: S → if E then S else S | if E then S | other.
-8. Find a CFG for L = { aⁱbʲcᵏ | i = j or j = k } and show it is ambiguous.
+6. Eliminate left recursion from: A â†’ Ab | Aa | a | b.
+7. Left-factor: S â†’ if E then S else S | if E then S | other.
+8. Find a CFG for L = { aâ±bÊ²cáµ | i = j or j = k } and show it is ambiguous.
 9. Design a CFG for the language of balanced parentheses (all strings of '(' and ')' where parentheses match properly).
-10. Prove formally that the grammar E → E + T | T, T → id is unambiguous.
+10. Prove formally that the grammar E â†’ E + T | T, T â†’ id is unambiguous.
 11. Convert the arithmetic expression grammar (Example 5.2) to Chomsky Normal Form.
 12. Write a TypeScript function that, given a CFG, constructs an equivalent PDA using the single-state algorithm.
 
 ### Advanced
 
-13. Prove that the language { aⁿbⁿcⁿ | n ≥ 0 } is NOT context-free (using the pumping lemma for CFLs, which will be covered in Chapter 7).
-14. Write a CFG for the language L = { w ∈ {a,b}* | w has twice as many a's as b's }.
+13. Prove that the language { aâ¿bâ¿câ¿ | n â‰¥ 0 } is NOT context-free (using the pumping lemma for CFLs, which will be covered in Chapter 7).
+14. Write a CFG for the language L = { w âˆˆ {a,b}* | w has twice as many a's as b's }.
 15. Show that every regular language is context-free by constructing a CFG from a DFA.
-16. Design a CFG for L = { aⁿbᵐ | n ≠ m } and prove its correctness.
-17. Show that the grammar S → SS | aSb | ε generates strings with equal numbers of a's and b's where every prefix has at least as many a's as b's. Prove by induction on string length.
+16. Design a CFG for L = { aâ¿báµ | n â‰  m } and prove its correctness.
+17. Show that the grammar S â†’ SS | aSb | Îµ generates strings with equal numbers of a's and b's where every prefix has at least as many a's as b's. Prove by induction on string length.
 18. Implement the CYK algorithm in TypeScript for a grammar in CNF. Test it on the grammar for palindromes with input "abba".
 
 ## Further Reading
@@ -1002,7 +1002,7 @@ export { Processor, Task }
 
 3. **Left recursion prevents top-down parsing.** Always eliminate left recursion before attempting LL parsing. The transformation preserves the language while making it amenable to predictive parsers.
 
-4. **CNF is a prerequisite for efficient parsing.** The CYK algorithm (O(n�)) requires CNF. Converting to CNF is the first step for any grammar before algorithmic parsing.
+4. **CNF is a prerequisite for efficient parsing.** The CYK algorithm (O(n³)) requires CNF. Converting to CNF is the first step for any grammar before algorithmic parsing.
 
 5. **CFG ? PDA equivalence is foundational.** Grammars specify syntax; PDAs implement recognizers. This pair forms the backbone of compiler frontends.
 

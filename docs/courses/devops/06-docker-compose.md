@@ -178,7 +178,7 @@ services:
 
   db:
     image: postgres:16
-    # No profile — always starts
+    # No profile â€” always starts
 
   mailhog:
     image: mailhog/mailhog
@@ -191,10 +191,10 @@ Run: `docker compose --profile dev up`
 
 Split configuration across files for different environments:
 
-- `docker-compose.yml` — Base configuration
-- `docker-compose.override.yml` — Development overrides (auto-loaded)
-- `docker-compose.prod.yml` — Production overrides
-- `docker-compose.test.yml` — Test overrides
+- `docker-compose.yml` â€” Base configuration
+- `docker-compose.override.yml` â€” Development overrides (auto-loaded)
+- `docker-compose.prod.yml` â€” Production overrides
+- `docker-compose.test.yml` â€” Test overrides
 
 ```text
 # Development (override auto-loaded)
@@ -505,7 +505,7 @@ class ComposeValidator {
     if (service.volumes) {
       for (const vol of service.volumes) {
         if (vol.includes(':') && !vol.startsWith('.') && !vol.startsWith('/')) {
-          this.warnings.push(`Service "${name}": volume "${vol}" uses a named volume — ensure it is declared`);
+          this.warnings.push(`Service "${name}": volume "${vol}" uses a named volume â€” ensure it is declared`);
         }
       }
     }

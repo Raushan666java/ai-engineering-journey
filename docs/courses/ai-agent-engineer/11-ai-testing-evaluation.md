@@ -1,4 +1,4 @@
-# Chapter 11 — AI Testing, Evaluation & Quality
+# Chapter 11 â€” AI Testing, Evaluation & Quality
 
 **Duration:** 1.5 weeks, ~18 hours
 **Goal:** Build a systematic testing and evaluation framework for AI agents and RAG pipelines. Move from "it works on my machine" to quantitative quality gates.
@@ -372,7 +372,7 @@ result = judge.evaluate(
 print(f"Verdict: {result.verdict}")
 print(f"Overall: {result.overall_score}")
 for s in result.scores:
-    print(f"  {s.dimension.value}: {s.score}/5 — {s.reasoning}")
+    print(f"  {s.dimension.value}: {s.score}/5 â€” {s.reasoning}")
 ```
 
 ---
@@ -430,7 +430,7 @@ class TrajectoryEvaluator:
         unnecessary = []
         for i, step in enumerate(trajectory.steps):
             if step.action and "error" in (step.observation or "").lower():
-                unnecessary.append(f"Step {i+1}: {step.action} failed — could have been avoided")
+                unnecessary.append(f"Step {i+1}: {step.action} failed â€” could have been avoided")
         evaluation.efficiency = {
             "score": max(1, 10 - len(unnecessary) * 2),
             "reasoning": f"{len(trajectory.steps)} total steps, {len(unnecessary)} unnecessary",

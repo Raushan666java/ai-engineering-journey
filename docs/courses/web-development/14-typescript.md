@@ -19,7 +19,7 @@ By the end of this chapter, you will be able to:
 |Generics|Parameters that capture type relationships between inputs and outputs|Use `extends` constraints to restrict generic type parameters while preserving flexibility|
 |Utility Types|`Partial`,`Pick`,`Omit`,`Record` transform existing types|Compose utility types for derived types that stay in sync with the source type|
 |Type Narrowing|TypeScript narrows union types through control flow analysis|Use discriminated unions with a `kind` property for exhaustive switch-case narrowing|
-|React with TS|Type props, state, hooks, and components for end-to-end type safety|Define an interface for every component's props — even simple ones|
+|React with TS|Type props, state, hooks, and components for end-to-end type safety|Define an interface for every component's props â€” even simple ones|
 
 ## Chapter Roadmap
 
@@ -410,7 +410,7 @@ const id: string = "abc123";
 const userId = "abc123" as UserId;
 getUser(userId); // OK
 
-// Flavoring (weak brand) — only structural check, no runtime cost
+// Flavoring (weak brand) â€” only structural check, no runtime cost
 type Flavor<T, F> = T & { __flavor?: F };
 type Meters = Flavor<number, "meters">;
 type Seconds = Flavor<number, "seconds">;
@@ -427,21 +427,21 @@ travel(100 as Meters, 9.58 as Seconds);
 The `satisfies` operator (TS 4.9+) checks type compatibility without altering inference.
 
 ```typescript
-// Without satisfies — type widening loses literal info
+// Without satisfies â€” type widening loses literal info
 const palette1: Record<string, string | string[]> = {
   red: ["255", "0", "0"],
   green: "#00ff00",
 };
 palette1.red.map(Number); // Error: string | string[] may not have .map
 
-// With satisfies — checks type but keeps narrow inference
+// With satisfies â€” checks type but keeps narrow inference
 const palette2 = {
   red: ["255", "0", "0"],
   green: "#00ff00",
 } satisfies Record<string, string | string[]>;
 
-palette2.red.map(Number); // OK — inferred as string[]
-palette2.green.toUpperCase(); // OK — inferred as string
+palette2.red.map(Number); // OK â€” inferred as string[]
+palette2.green.toUpperCase(); // OK â€” inferred as string
 
 // Useful for connecting objects to types without losing precision
 type Color = "red" | "green" | "blue";
@@ -503,10 +503,10 @@ router.post(
 > Use `satisfies` operator (TS 4.9+) to check that a value matches a type without changing its inferred type: `const palette = { red: [255,0,0] } satisfies Record<string, number[]>`.
 
 > [!WARNING]
-> `any` disables type checking entirely. Use `unknown` instead when you cannot know the type — it forces type narrowing before use.
+> `any` disables type checking entirely. Use `unknown` instead when you cannot know the type â€” it forces type narrowing before use.
 
 > [!REMEMBER]
-> Enable `strict: true` in `tsconfig.json` — it enables `strictNullChecks`, `noImplicitAny`, `strictFunctionTypes`, and other critical checks in one flag.
+> Enable `strict: true` in `tsconfig.json` â€” it enables `strictNullChecks`, `noImplicitAny`, `strictFunctionTypes`, and other critical checks in one flag.
 
 
 
@@ -515,9 +515,9 @@ router.post(
 | Concept | Description | Use Case |
 |---------|-------------|---------|
 |Interface vs Type|Extendable, declaration merging, object shapes only|Unions, intersections, computed/mapped types|
-|`type` vs `interface` for React Props|Convention — both work|Convention — both work|
+|`type` vs `interface` for React Props|Convention â€” both work|Convention â€” both work|
 |`any` vs `unknown`|Disables all type checking|Forces narrowing before use|
-|`as` vs `satisfies`|Type assertion — overrides inference|Type check — preserves inference|
+|`as` vs `satisfies`|Type assertion â€” overrides inference|Type check â€” preserves inference|
 |`enum` vs `as const` object|Runtime value, reverse mapping|Const object with literal union type|
 
 ## Quick Reference
@@ -546,7 +546,7 @@ Test your understanding with these quick questions.
 
 **Q1. When should you use an interface over a type alias?**
 
-- A) Always — interfaces are better
+- A) Always â€” interfaces are better
 - B) For object shapes that may be extended or merged
 - C) For union types
 - D) For computed types
@@ -566,7 +566,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**B) `Pick` creates a type containing only the specified keys from the source type. `Omit` does the inverse — it excludes the specified keys.**
+**B) `Pick` creates a type containing only the specified keys from the source type. `Omit` does the inverse â€” it excludes the specified keys.**
 
 </details>
 
@@ -592,7 +592,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**B) `strict: true` is a convenience flag that enables all strict type-checking family options — critical for catching null reference errors, implicit anys, and function type mismatches at compile time.**
+**B) `strict: true` is a convenience flag that enables all strict type-checking family options â€” critical for catching null reference errors, implicit anys, and function type mismatches at compile time.**
 
 </details>
 
@@ -846,8 +846,8 @@ Build a type-safe ORM-like query builder using TypeScript generics, template lit
 
 ### Practical Takeaways
 
-1. **Enable `strict: true`** — it activates strictNullChecks, noImplicitAny, and other critical checks in one flag.
-2. **Prefer `interface` for public APIs** — interfaces support declaration merging and extension, making them ideal for library consumers.
-3. **Use `unknown` over `any`** — `unknown` forces type narrowing before use, preventing runtime errors. Reserve `any` for migration scenarios only.
-4. **Leverage `satisfies`** — the `satisfies` operator (TS 4.9+) checks type compatibility without changing the inferred type.
-5. **Compose utility types** — chain `Partial`, `Pick`, `Omit`, and `Record` to derive types that stay in sync with their source.
+1. **Enable `strict: true`** â€” it activates strictNullChecks, noImplicitAny, and other critical checks in one flag.
+2. **Prefer `interface` for public APIs** â€” interfaces support declaration merging and extension, making them ideal for library consumers.
+3. **Use `unknown` over `any`** â€” `unknown` forces type narrowing before use, preventing runtime errors. Reserve `any` for migration scenarios only.
+4. **Leverage `satisfies`** â€” the `satisfies` operator (TS 4.9+) checks type compatibility without changing the inferred type.
+5. **Compose utility types** â€” chain `Partial`, `Pick`, `Omit`, and `Record` to derive types that stay in sync with their source.

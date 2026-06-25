@@ -50,7 +50,7 @@ The CAP theorem, formalized by Seth Gilbert and Nancy Lynch in 2002, states that
 
 **Definitions:**
 
-- **Consistency (C):** Every read receives the most recent write or an error. All nodes see the same data at the same time. This is *linearizability* — operations appear to execute atomically at a single instant between invocation and response.
+- **Consistency (C):** Every read receives the most recent write or an error. All nodes see the same data at the same time. This is *linearizability* â€” operations appear to execute atomically at a single instant between invocation and response.
 - **Availability (A):** Every request receives a non-error response, without guarantee that it contains the most recent write. The system continues to function even when nodes are down.
 - **Partition Tolerance (P):** The system continues to operate despite an arbitrary number of messages being dropped or delayed between nodes (network partition).
 
@@ -80,7 +80,7 @@ The CAP theorem is often misunderstood. Key clarifications:
 
 2. **CAP is not 2-out-of-3.** You don't "pick two" at design time. You design for consistency or availability when partitions happen. Most systems choose CP or AP.
 
-3. **CAP ignores latency.** Partition-like behavior can occur even without a network cut — if two datacenters are connected by a high-latency link, a synchronous write may time out, forcing a choice between consistency and availability.
+3. **CAP ignores latency.** Partition-like behavior can occur even without a network cut â€” if two datacenters are connected by a high-latency link, a synchronous write may time out, forcing a choice between consistency and availability.
 
 ### PACELC Extension
 
@@ -121,7 +121,7 @@ Client 3: read(x) ? returns 1 (guaranteed)
 
 **Implementation:** Requires majority acknowledgment before returning to the client. In a quorum system, a write must reach `W` nodes and a read must reach `R` nodes such that `W + R > N`.
 
-**Cost:** Higher latency — every write must coordinate with multiple nodes. During failures, the system may become unavailable (CP sacrifice).
+**Cost:** Higher latency â€” every write must coordinate with multiple nodes. During failures, the system may become unavailable (CP sacrifice).
 
 #### Sequential Consistency
 
@@ -154,7 +154,7 @@ Causal consistency captures the *happens-before* relationship. It is typically i
 
 #### Eventual Consistency
 
-If no new updates are made to a data item, eventually all reads will return the last updated value. There is no time bound — the system converges eventually.
+If no new updates are made to a data item, eventually all reads will return the last updated value. There is no time bound â€” the system converges eventually.
 
 ```
 Write to Node A: x=42
@@ -164,7 +164,7 @@ Read from Node C: x=42 (converged)
 Read from Node B: x=42 (finally converged)
 ```
 
-Eventual consistency is the weakest model. It provides the best availability and latency because reads and writes can complete without waiting for other nodes. However, application complexity increases — developers must handle stale reads and resolve conflicts.
+Eventual consistency is the weakest model. It provides the best availability and latency because reads and writes can complete without waiting for other nodes. However, application complexity increases â€” developers must handle stale reads and resolve conflicts.
 
 **Convergence requires conflict resolution.** Two widely used approaches:
 
@@ -178,7 +178,7 @@ A quorum is the minimum number of nodes that must participate in a read or write
 
 **`W + R > N`**
 
-This ensures that any read quorum intersects with any write quorum — at least one node holds the latest write.
+This ensures that any read quorum intersects with any write quorum â€” at least one node holds the latest write.
 
 #### Quorum Configurations
 
@@ -225,7 +225,7 @@ Intended target: Node 3 (down)
   ? When Node 3 recovers, Node 5 delivers the write
 ```
 
-Hinted handoff improves availability — writes succeed even when some replicas are temporarily unavailable. However, it can weaken consistency guarantees if the hint is lost before delivery.
+Hinted handoff improves availability â€” writes succeed even when some replicas are temporarily unavailable. However, it can weaken consistency guarantees if the hint is lost before delivery.
 
 ### Gossip Protocol
 
@@ -255,7 +255,7 @@ SWIM (Scalable Weakly-consistent Infection-style Process Group Membership Protoc
 
 1. **Failure Detector:** Each node periodically picks a random member and sends a ping. If the ping times out, the node sends indirect pings through k other nodes to confirm the failure. After confirmation, the node is declared failed.
 
-2. **Dissemination Component:** Membership updates (joins, leaves, failures) are propagated via gossip — each piggyback update is attached to the ping/pong messages.
+2. **Dissemination Component:** Membership updates (joins, leaves, failures) are propagated via gossip â€” each piggyback update is attached to the ping/pong messages.
 
 ```
 Node A ? ping ? Node B (random target)
@@ -359,11 +359,11 @@ class ORSet:
                 self.elements[element] = set(other_tags)
 ```
 
-Two concurrent `add("x")` operations produce the same result as one `add("x")` — the union of tags converges. A concurrent add and remove: if the remove has seen the add's tag, the element stays removed; otherwise the remove is ignored.
+Two concurrent `add("x")` operations produce the same result as one `add("x")` â€” the union of tags converges. A concurrent add and remove: if the remove has seen the add's tag, the element stays removed; otherwise the remove is ignored.
 
 ### Logical Clocks
 
-Physical clocks are unreliable in distributed systems — clock skew can produce incorrect orderings. Logical clocks capture causality without relying on synchronized wall clocks.
+Physical clocks are unreliable in distributed systems â€” clock skew can produce incorrect orderings. Logical clocks capture causality without relying on synchronized wall clocks.
 
 #### Lamport Clocks
 
@@ -378,11 +378,11 @@ C=2 (send msg)      C=3 (internal)
 ? receives ts 4 ? C=max(2,4)+1=5
 ```
 
-**Property:** If `a happens-before b` (causal relationship), then `C(a) < C(b)`. However, `C(a) < C(b)` does NOT imply `a happens-before b` — Lamport clocks cannot detect concurrent events.
+**Property:** If `a happens-before b` (causal relationship), then `C(a) < C(b)`. However, `C(a) < C(b)` does NOT imply `a happens-before b` â€” Lamport clocks cannot detect concurrent events.
 
 #### Vector Clocks
 
-Each process maintains a vector of counters — one entry per process. Updates track causality more precisely.
+Each process maintains a vector of counters â€” one entry per process. Updates track causality more precisely.
 
 ```
 Process P1:        Process P2:
@@ -426,7 +426,7 @@ A Merkle tree is a hash tree where leaf nodes contain hashes of data blocks and 
 
 **Efficiency:** With N keys in a range, the expected number of exchanged hashes is O(log N) for comparing trees, and O(D * log N) for finding D differences. Without Merkle trees, two replicas would need to compare all N keys (O(N)).
 
-**Use in Dynamo:** Each node maintains a Merkle tree per key range. The tree depth is configurable — a depth-16 tree for 2^16 keys means only 16 hashes are exchanged to detect differences in that entire range. Once a mismatch is found at a specific hash level, the nodes drill down to the exact differing keys.
+**Use in Dynamo:** Each node maintains a Merkle tree per key range. The tree depth is configurable â€” a depth-16 tree for 2^16 keys means only 16 hashes are exchanged to detect differences in that entire range. Once a mismatch is found at a specific hash level, the nodes drill down to the exact differing keys.
 
 ### Distributed Snapshots (Chandy-Lamport Algorithm)
 
@@ -475,7 +475,7 @@ Amazon DynamoDB, derived from the Dynamo paper, offers tunable consistency level
 ```
 Consistency Levels:
   EVENTUAL:     R=1, W=1 (fastest, weakest)
-  STRONG:       R=N, W=N (slowest, strongest) — not available in standard DynamoDB
+  STRONG:       R=N, W=N (slowest, strongest) â€” not available in standard DynamoDB
   CONSISTENT_READ: R=1 with read-after-write consistency guarantee via coordinator
 ```
 
@@ -550,7 +550,7 @@ CL.ALL read: response when all 3 replicas respond (p50 ~10ms, p99 ~50ms)
 
 ### Example 3: Google Spanner External Consistency
 
-Google Spanner provides *external consistency* — the strongest consistency model for geographically distributed databases. It is equivalent to linearizability but across datacenters.
+Google Spanner provides *external consistency* â€” the strongest consistency model for geographically distributed databases. It is equivalent to linearizability but across datacenters.
 
 **Mechanism:** Spanner uses the TrueTime API, which exposes a time interval `[earliest, latest]` for the current time. TrueTime guarantees bounded clock skew of `< 7ms` using GPS clocks and atomic clocks.
 

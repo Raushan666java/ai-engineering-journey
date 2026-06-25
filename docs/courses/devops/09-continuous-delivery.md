@@ -678,7 +678,7 @@ console.log(orchestrator.generateRollbackReport(plan, result));
 1. **Use feature flags to decouple deploy from release.** Deploy often, release when ready.
 2. **Implement blue-green or canary for production.** Zero-downtime deployments reduce risk.
 3. **Automate rollback triggers.** Health check failures should automatically revert.
-4. **Promote the same artifact.** Build once, deploy everywhere — no rebuilding.
+4. **Promote the same artifact.** Build once, deploy everywhere â€” no rebuilding.
 5. **Monitor every deployment.** Error rates, latency, and throughput are key signals.
 6. **Keep deployments small.** Smaller changes are easier to test and roll back.
 

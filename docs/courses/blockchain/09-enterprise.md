@@ -52,7 +52,7 @@ Public blockchains like Bitcoin are designed for total transparency and anonymit
 2. **Performance:** Higher throughput and lower latency than public chains.
 3. **Governance:** A known set of participants with clear legal responsibilities.
 4. **Regulatory Compliance:** Know Your Customer (KYC), Anti-Money Laundering (AML).
-5. **Finality:** No probabilistic settlement — transactions settle instantly.
+5. **Finality:** No probabilistic settlement â€” transactions settle instantly.
 
 ```mermaid
 flowchart TB
@@ -395,7 +395,7 @@ sequenceDiagram
 | **Healthcare** | Patient records across providers | Interoperable, patient-consented access | MediLedger |
 | **Finance** | Trade finance, letter of credit | Instant settlement, shared truth | we.trade |
 | **Insurance** | Claims processing | Automated verification, fraud reduction | B3i |
-| **Government** | Land registry, identity | Tamper-proof records, reduced corruption | Sweden Lantmäteriet |
+| **Government** | Land registry, identity | Tamper-proof records, reduced corruption | Sweden LantmÃ¤teriet |
 | **Pharma** | Drug supply chain security | Counterfeit detection (DSCSA compliance) | MediLedger |
 | **Energy** | Grid management, carbon credits | Transparent trading, certificate tracking | Energy Web Foundation |
 | **Maritime** | Shipping documents, bills of lading | Digital documents, reduced delays | TradeLens |
@@ -506,11 +506,11 @@ const collectionConfig = [
 ];
 ```
 
-> **One-Sentence Takeaway:** Enterprise blockchains trade open, permissionless participation for privacy, throughput, and finality — making them suitable for regulated industries but fundamentally different from public chains.
+> **One-Sentence Takeaway:** Enterprise blockchains trade open, permissionless participation for privacy, throughput, and finality â€” making them suitable for regulated industries but fundamentally different from public chains.
 
-> **Pro Tip:** When designing a Hyperledger Fabric network, structure channels around natural business confidentiality boundaries. Every channel is a separate ledger — use them to enforce data isolation between competitors.
+> **Pro Tip:** When designing a Hyperledger Fabric network, structure channels around natural business confidentiality boundaries. Every channel is a separate ledger â€” use them to enforce data isolation between competitors.
 
-> **Warning:** Permissioned blockchains reduce but do not eliminate the need for trust. The ordering service is a trusted component — if orderers collude, they can censor or reorder transactions.
+> **Warning:** Permissioned blockchains reduce but do not eliminate the need for trust. The ordering service is a trusted component â€” if orderers collude, they can censor or reorder transactions.
 
 ---
 
@@ -533,7 +533,7 @@ const collectionConfig = [
 |----------|-------------|-------|
 | **Fabric Nodes** | Peer, Orderer, CA | Each has distinct role |
 | **MSP** | Membership Service Provider | X.509 certificate-based identity |
-| **Consensus** | Raft (CFT), Kafka (old), PBFT (planned) | No mining — fast finality |
+| **Consensus** | Raft (CFT), Kafka (old), PBFT (planned) | No mining â€” fast finality |
 | **Chaincode** | Go, Java, Node.js | Smart contract in familiar languages |
 | **World State** | CouchDB or LevelDB | Current state of all assets (key-value) |
 | **Channel** | Private subnet with own ledger | Data isolation between groups |
@@ -561,7 +561,7 @@ const collectionConfig = [
 
 <details>
 <summary>Answer</summary>
-**B) To create a private sub-network where only authorized members see transactions.** Channels provide data isolation — members on different channels cannot see each other's transactions, enabling competing organizations to share only necessary data.
+**B) To create a private sub-network where only authorized members see transactions.** Channels provide data isolation â€” members on different channels cannot see each other's transactions, enabling competing organizations to share only necessary data.
 </details>
 
 2. How does Hyperledger Fabric's consensus differ from Bitcoin's PoW?
@@ -583,7 +583,7 @@ const collectionConfig = [
 
 <details>
 <summary>Answer</summary>
-**B) Fabric provides privacy (competitors see different data), identity management (X.509), and higher throughput.** Supply chains need confidential pricing between partners while maintaining an audit trail — Fabric's channel architecture and MSP identity model are designed for this.
+**B) Fabric provides privacy (competitors see different data), identity management (X.509), and higher throughput.** Supply chains need confidential pricing between partners while maintaining an audit trail â€” Fabric's channel architecture and MSP identity model are designed for this.
 </details>
 
 4. What is the role of the Endorsing Peer in Hyperledger Fabric?
@@ -943,7 +943,7 @@ export { Processor, Task }
 - Endorsement policies define flexible trust models per chaincode.
 - Raft consensus provides crash fault tolerance with instant finality.
 - Chaincode can be written in standard programming languages (Go, Java, Node.js).
-- Enterprise blockchains are not replacements for public chains — they serve different needs.
+- Enterprise blockchains are not replacements for public chains â€” they serve different needs.
 
 ## Practical Takeaways
 

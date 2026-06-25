@@ -16,7 +16,7 @@ By the end of this chapter, you will be able to:
 |-------|-------------|-------------------|
 |Build Process|Transpile TypeScript, bundle assets, optimize output|Use `npm ci` for reproducible CI builds, validate env vars at startup with Zod|
 |Environment Config|Per-environment variables keep secrets out of source control|Use `.env.local` for dev, platform env vars for production, validate with Zod schemas|
-|Platform Deploy|Vercel (Next.js), Railway (backend), Netlify (static sites)|Match the platform to the framework — Vercel for Next.js, Railway for Express APIs|
+|Platform Deploy|Vercel (Next.js), Railway (backend), Netlify (static sites)|Match the platform to the framework â€” Vercel for Next.js, Railway for Express APIs|
 |Docker|Containerize apps with multi-stage builds for minimal production images|Use Alpine base images, separate build and run stages, run as non-root user|
 |CI/CD|GitHub Actions automate testing and deployment on every push|Run type-checking, linting, and testing in parallel before deploying|
 |Monitoring|Structured logging (pino), health checks, uptime tracking|Log in JSON format for machine parsing, include request IDs for traceability|
@@ -504,7 +504,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer</summary>
 
-**B) `npm ci` uses the lockfile to install exact versions, deletes `node_modules` first, and fails if the lockfile is out of sync with `package.json` — ensuring deterministic builds.**
+**B) `npm ci` uses the lockfile to install exact versions, deletes `node_modules` first, and fails if the lockfile is out of sync with `package.json` â€” ensuring deterministic builds.**
 
 </details>
 
@@ -792,7 +792,7 @@ graph LR
   "rollback": "npm run migrate:down && git revert HEAD --no-edit && git push"
 }
 
-// Feature flag gated — disable feature without redeploy
+// Feature flag gated â€” disable feature without redeploy
 async function getPricingPage() {
   if (await featureFlags.isEnabled("new-pricing-v2")) {
     return renderNewPricing();
@@ -803,7 +803,7 @@ async function getPricingPage() {
 
 ### Feature Flags with LaunchDarkly Pattern
 
-Feature flags decouple deployment from release — ship code dark and enable when ready.
+Feature flags decouple deployment from release â€” ship code dark and enable when ready.
 
 ```typescript
 // Feature flag manager (LaunchDarkly-like pattern)
@@ -815,7 +815,7 @@ class FeatureFlags {
     return this.store.get(flag) ?? false;
   }
 
-  // Kill switch — disable immediately without redeploy
+  // Kill switch â€” disable immediately without redeploy
   async setFlag(flag: string, enabled: boolean) {
     await redis.set(`flag:${flag}`, enabled ? "1" : "0", "EX", 3600);
     this.store.set(flag, enabled);
@@ -852,7 +852,7 @@ services:
     environment:
       - VERSION=canary
 
-# nginx — route 5% to canary
+# nginx â€” route 5% to canary
 # upstream app { server app-stable:3001 weight=95; server app-canary:3002 weight=5; }
 ```
 
@@ -881,10 +881,10 @@ Deploy a full-stack application (Next.js frontend + Express API + PostgreSQL) us
 
 ### Practical Takeaways
 
-1. **Validate env vars at startup** — use Zod to validate all environment variables when the app boots. A startup crash is far easier to debug than a runtime failure from a missing variable.
-2. **Use multi-stage Docker builds** — separate deps, build, and runner stages keep production images minimal and secure.
-3. **Pin dependency versions in CI** — use `npm ci` (not `npm install`) for reproducible builds that match the lockfile exactly.
-4. **Layer caches** — CDN for static assets, browser cache for API responses, service worker for offline fallback. Each layer reduces load on the next.
-5. **Monitor with health checks** — every service should expose a `/health` endpoint that verifies connectivity to its critical dependencies (database, cache, external APIs).
-6. **Feature flags decouple deploy from release** — ship code dark, enable when ready. A kill switch lets you disable broken features without rolling back.
-7. **Canary deployments reduce blast radius** — route 5% of traffic to new versions, monitor for 15-30 minutes, then promote or rollback.
+1. **Validate env vars at startup** â€” use Zod to validate all environment variables when the app boots. A startup crash is far easier to debug than a runtime failure from a missing variable.
+2. **Use multi-stage Docker builds** â€” separate deps, build, and runner stages keep production images minimal and secure.
+3. **Pin dependency versions in CI** â€” use `npm ci` (not `npm install`) for reproducible builds that match the lockfile exactly.
+4. **Layer caches** â€” CDN for static assets, browser cache for API responses, service worker for offline fallback. Each layer reduces load on the next.
+5. **Monitor with health checks** â€” every service should expose a `/health` endpoint that verifies connectivity to its critical dependencies (database, cache, external APIs).
+6. **Feature flags decouple deploy from release** â€” ship code dark, enable when ready. A kill switch lets you disable broken features without rolling back.
+7. **Canary deployments reduce blast radius** â€” route 5% of traffic to new versions, monitor for 15-30 minutes, then promote or rollback.

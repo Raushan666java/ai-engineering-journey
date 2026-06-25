@@ -1,7 +1,7 @@
-# Chapter 12 — AI Observability & Debugging
+# Chapter 12 â€” AI Observability & Debugging
 
 **Duration:** 1.5 weeks, ~18 hours
-**Goal:** Build comprehensive observability for your AI systems — tracing every agent step, tracking costs, monitoring quality metrics, and debugging production failures.
+**Goal:** Build comprehensive observability for your AI systems â€” tracing every agent step, tracking costs, monitoring quality metrics, and debugging production failures.
 
 ---
 
@@ -483,9 +483,9 @@ class LatencyProfiler:
         recs = []
         for p in profiles:
             if p["duration_ms"] > 1000:
-                recs.append(f"Hotspot: {p['name']} ({p['duration_ms']}ms) — consider caching or async")
+                recs.append(f"Hotspot: {p['name']} ({p['duration_ms']}ms) â€” consider caching or async")
             elif p["duration_ms"] > 500:
-                recs.append(f"Warning: {p['name']} ({p['duration_ms']}ms) — review for optimization")
+                recs.append(f"Warning: {p['name']} ({p['duration_ms']}ms) â€” review for optimization")
         return recs
 
 # Decorator for profiling FastAPI endpoints
@@ -789,7 +789,7 @@ for i in range(100):
     latency = 1200 + np.random.normal(0, 100)
     alert = alerts.check_metric("latency_ms", latency)
     if alert:
-        print(f"ALERT: latency {latency:.0f}ms — z={alert['z_score']}")
+        print(f"ALERT: latency {latency:.0f}ms â€” z={alert['z_score']}")
 ```
 
 ---
@@ -868,7 +868,7 @@ class AgentDebugger:
         if not state_changes:
             findings.append({
                 "location": "graph",
-                "error": "No state change events found — graph may not be executing",
+                "error": "No state change events found â€” graph may not be executing",
                 "severity": "high",
             })
 

@@ -69,7 +69,7 @@ Traditional software development followed the Waterfall model, where requirement
 
 ### Breaking the Silos
 
-In traditional organizations, developers were incentivized to deliver features quickly, while operations were incentivized to maintain stability (often by resisting change). This created the "Wall of Confusion" — a communication barrier where developers throw code over the wall to operations, who must figure out how to run it.
+In traditional organizations, developers were incentivized to deliver features quickly, while operations were incentivized to maintain stability (often by resisting change). This created the "Wall of Confusion" â€” a communication barrier where developers throw code over the wall to operations, who must figure out how to run it.
 
 DevOps aligns these incentives by making both teams responsible for the end-to-end delivery and stability of the service. When both teams share the same goals (frequent, reliable releases), they naturally collaborate to build automation, share knowledge, and improve processes.
 
@@ -131,24 +131,24 @@ flowchart LR
 ```
 
 **Waste categories in software delivery:**
-1. **Partially done work** — Code not deployed, specifications not implemented
-2. **Extra processes** — Unnecessary approvals, paperwork, handoffs
-3. **Extra features** — Gold-plating, building what wasn't requested
-4. **Task switching** — Context switching between multiple projects
-5. **Waiting** — Delays between steps, queue time
-6. **Motion** — Moving work between tools, searching for information
-7. **Defects** — Bugs, rework, failed deployments
-8. **Unused talent** — People not working at full capability
+1. **Partially done work** â€” Code not deployed, specifications not implemented
+2. **Extra processes** â€” Unnecessary approvals, paperwork, handoffs
+3. **Extra features** â€” Gold-plating, building what wasn't requested
+4. **Task switching** â€” Context switching between multiple projects
+5. **Waiting** â€” Delays between steps, queue time
+6. **Motion** â€” Moving work between tools, searching for information
+7. **Defects** â€” Bugs, rework, failed deployments
+8. **Unused talent** â€” People not working at full capability
 
 ### DevOps ROI and Maturity Model
 
 **ROI dimensions:**
-- **Faster time-to-market** — Shorter lead time from commit to production
-- **Higher deployment frequency** — More releases with less risk per release
-- **Lower failure rate** — Automated testing catches issues earlier
-- **Faster recovery** — Automated rollback and deployment strategies
-- **Reduced operational costs** — Automation replaces manual toil
-- **Improved employee satisfaction** — Less firefighting, more innovation
+- **Faster time-to-market** â€” Shorter lead time from commit to production
+- **Higher deployment frequency** â€” More releases with less risk per release
+- **Lower failure rate** â€” Automated testing catches issues earlier
+- **Faster recovery** â€” Automated rollback and deployment strategies
+- **Reduced operational costs** â€” Automation replaces manual toil
+- **Improved employee satisfaction** â€” Less firefighting, more innovation
 
 **DevOps Maturity Model:**
 
@@ -597,15 +597,15 @@ flowchart TD
     - Innovation culture"]
 ```
 
-**Phase 1 — Assessment (Weeks 1-4):** Audit current delivery process, measure lead time and deployment frequency, identify bottlenecks through value stream mapping, assess team culture and readiness.
+**Phase 1 â€” Assessment (Weeks 1-4):** Audit current delivery process, measure lead time and deployment frequency, identify bottlenecks through value stream mapping, assess team culture and readiness.
 
-**Phase 2 — Foundation (Weeks 5-12):** Implement version control for all production artifacts, set up a basic CI server, automate the deployment process for one service, establish basic monitoring and alerting.
+**Phase 2 â€” Foundation (Weeks 5-12):** Implement version control for all production artifacts, set up a basic CI server, automate the deployment process for one service, establish basic monitoring and alerting.
 
-**Phase 3 — Automation (Months 3-6):** Build a complete CI/CD pipeline with automated testing at every stage, containerize applications, provision infrastructure as code, implement configuration management.
+**Phase 3 â€” Automation (Months 3-6):** Build a complete CI/CD pipeline with automated testing at every stage, containerize applications, provision infrastructure as code, implement configuration management.
 
-**Phase 4 — Optimization (Months 6-12):** Create self-service developer platforms, implement proactive monitoring with SLOs and error budgets, introduce chaos engineering practices, adopt predictive scaling.
+**Phase 4 â€” Optimization (Months 6-12):** Create self-service developer platforms, implement proactive monitoring with SLOs and error budgets, introduce chaos engineering practices, adopt predictive scaling.
 
-**Phase 5 — Autonomy (Year 2+):** Implement auto-remediation for common failure scenarios, use AI/ML for operations optimization, foster a culture of continuous experimentation and improvement.
+**Phase 5 â€” Autonomy (Year 2+):** Implement auto-remediation for common failure scenarios, use AI/ML for operations optimization, foster a culture of continuous experimentation and improvement.
 
 ### DevOps Anti-Patterns to Avoid
 
@@ -619,7 +619,7 @@ Buying and installing tools before changing culture and processes. Tools without
 Automating a broken deployment process just makes it break faster. Fix the process first, then automate. Use value stream mapping to identify and eliminate waste before adding automation.
 
 **Anti-Pattern 4: Ignoring Security**
-Treating security as a separate phase at the end of delivery. Security must be "shifted left" — integrated into every stage of the pipeline. DevSecOps is DevOps done correctly, not an add-on.
+Treating security as a separate phase at the end of delivery. Security must be "shifted left" â€” integrated into every stage of the pipeline. DevSecOps is DevOps done correctly, not an add-on.
 
 **Anti-Pattern 5: Blame Culture**
 When incidents occur, the response is to find who caused it rather than what caused it. Blame culture destroys the psychological safety needed for continuous improvement. Always conduct blameless postmortems.
@@ -742,7 +742,7 @@ class DevOpsMaturityCalculator {
     const levelMap = ['Initial', 'Repeatable', 'Defined', 'Managed', 'Optimizing'];
     return `## DevOps Maturity Report\n\n` +
       `**Team:** ${assessment.teamName}\n` +
-      `**Overall Maturity:** ${assessment.overallMaturity}/5 — ${levelMap[assessment.overallMaturity - 1]}\n\n` +
+      `**Overall Maturity:** ${assessment.overallMaturity}/5 â€” ${levelMap[assessment.overallMaturity - 1]}\n\n` +
       `| Dimension | Level | Target | Gap |\n` +
       `|-----------|-------|--------|-----|\n` +
       assessment.scores.map(s =>
@@ -852,13 +852,13 @@ console.log(analyzer.generateReport(analyzer.analyze(tools)));
 
 The four key DORA metrics measure DevOps performance:
 
-**Deployment Frequency** — How often an organization deploys to production. Elite performers deploy multiple times per day. Low performers deploy once per month or less.
+**Deployment Frequency** â€” How often an organization deploys to production. Elite performers deploy multiple times per day. Low performers deploy once per month or less.
 
-**Lead Time for Changes** — The time from commit to production. Elite performers have lead times under one hour. Low performers have lead times of months.
+**Lead Time for Changes** â€” The time from commit to production. Elite performers have lead times under one hour. Low performers have lead times of months.
 
-**Change Failure Rate** — The percentage of deployments causing a failure in production. Elite performers have under 5% failure rate. Low performers exceed 15%.
+**Change Failure Rate** â€” The percentage of deployments causing a failure in production. Elite performers have under 5% failure rate. Low performers exceed 15%.
 
-**Time to Restore Service (MTTR)** — The time to recover from a failure. Elite performers restore in under one hour. Low performers take weeks.
+**Time to Restore Service (MTTR)** â€” The time to recover from a failure. Elite performers restore in under one hour. Low performers take weeks.
 
 **Measuring DORA metrics programmatically:**
 
@@ -907,16 +907,16 @@ console.log(calculator.generateReport(metrics));
 Successful DevOps adoption requires specific organizational structures:
 
 **Spotify Model (Squads, Tribes, Chapters, Guilds):**
-- **Squads** — Small cross-functional teams (6-12 people) owning specific features. Autonomous, self-organizing.
-- **Tribes** — Collection of squads working in related areas (up to 100 people). Aligned on broader mission.
-- **Chapters** — Cross-squad groups of people with the same skill set (e.g., QA chapter). Maintains expertise.
-- **Guilds** — Community of interest across the organization (e.g., security guild). Knowledge sharing.
+- **Squads** â€” Small cross-functional teams (6-12 people) owning specific features. Autonomous, self-organizing.
+- **Tribes** â€” Collection of squads working in related areas (up to 100 people). Aligned on broader mission.
+- **Chapters** â€” Cross-squad groups of people with the same skill set (e.g., QA chapter). Maintains expertise.
+- **Guilds** â€” Community of interest across the organization (e.g., security guild). Knowledge sharing.
 
 **Team Topologies (Matthew Skelton):**
-- **Stream-aligned team** — Aligned to a flow of work (feature, service, product). Primary team type.
-- **Enabling team** — Helps stream-aligned teams acquire missing capabilities. Temporary, skill-building.
-- **Complicated-subsystem team** — Owns a subsystem requiring specialized expertise (e.g., payment engine).
-- **Platform team** — Provides internal services that stream-aligned teams consume. Self-service, API-first.
+- **Stream-aligned team** â€” Aligned to a flow of work (feature, service, product). Primary team type.
+- **Enabling team** â€” Helps stream-aligned teams acquire missing capabilities. Temporary, skill-building.
+- **Complicated-subsystem team** â€” Owns a subsystem requiring specialized expertise (e.g., payment engine).
+- **Platform team** â€” Provides internal services that stream-aligned teams consume. Self-service, API-first.
 
 **Conway's Law:** Organizations design systems that mirror their communication structure. If teams are siloed, the software will be siloed. DevOps aims to align team structures with desired system architecture.
 
@@ -925,18 +925,18 @@ Successful DevOps adoption requires specific organizational structures:
 Beyond DORA, teams should track:
 
 **Flow Metrics (Kanban):**
-- **Work in Progress (WIP)** — Items started but not finished. Lower WIP = faster flow.
-- **Cycle Time** — Time from starting work to delivery. Excludes queued time before work starts.
-- **Throughput** — Items completed per unit time. Predicts future delivery capacity.
+- **Work in Progress (WIP)** â€” Items started but not finished. Lower WIP = faster flow.
+- **Cycle Time** â€” Time from starting work to delivery. Excludes queued time before work starts.
+- **Throughput** â€” Items completed per unit time. Predicts future delivery capacity.
 
 **Operational Metrics:**
-- **Mean Time to Acknowledge (MTTA)** — Time from alert to first human response.
-- **Mean Time Between Failures (MTBF)** — Time between system outages.
-- **Service Level Indicators (SLIs)** — Actual measured reliability (uptime, latency, throughput).
-- **Error Budget Consumption Rate** — How quickly the team is burning through its allowed unreliability.
+- **Mean Time to Acknowledge (MTTA)** â€” Time from alert to first human response.
+- **Mean Time Between Failures (MTBF)** â€” Time between system outages.
+- **Service Level Indicators (SLIs)** â€” Actual measured reliability (uptime, latency, throughput).
+- **Error Budget Consumption Rate** â€” How quickly the team is burning through its allowed unreliability.
 
 **Business Metrics Correlated with DevOps:**
-- **Customer satisfaction (CSAT/NPS)** — Faster delivery correlates with higher satisfaction.
-- **Employee retention** — Teams with good DevOps practices report higher job satisfaction.
-- **Revenue per employee** — Elite DevOps performers deliver 2-5x higher revenue per employee.
-- **Time to market** — Shorter lead time directly impacts competitive advantage.
+- **Customer satisfaction (CSAT/NPS)** â€” Faster delivery correlates with higher satisfaction.
+- **Employee retention** â€” Teams with good DevOps practices report higher job satisfaction.
+- **Revenue per employee** â€” Elite DevOps performers deliver 2-5x higher revenue per employee.
+- **Time to market** â€” Shorter lead time directly impacts competitive advantage.

@@ -73,7 +73,7 @@ SRE is a discipline that incorporates aspects of software engineering and applie
 
 ### The Four Golden Signals
 
-1. **Latency:** The time it takes to service a request. Distinguish between successful requests and failed requests—a failing service might return errors very quickly, masking the latency problem.
+1. **Latency:** The time it takes to service a request. Distinguish between successful requests and failed requestsâ€”a failing service might return errors very quickly, masking the latency problem.
 2. **Traffic:** A measure of how much demand is being placed on the system (requests per second, active users, throughput).
 3. **Errors:** The rate of requests that fail explicitly (5xx) or implicitly (success with wrong content, slow responses).
 4. **Saturation:** How "full" your service is (CPU usage, memory utilization, queue depth). The most overloaded component determines the system's saturation point.
@@ -83,9 +83,9 @@ SRE is a discipline that incorporates aspects of software engineering and applie
 The error budget is the acceptable amount of unreliability. For a 99.9% SLO over 30 days:
 
 ```
-Error Budget = (1 - SLO) × Time Window
-             = 0.001 × (30 × 24 × 60 × 60)
-             = 2,592 seconds ˜ 43 minutes
+Error Budget = (1 - SLO) Ã— Time Window
+             = 0.001 Ã— (30 Ã— 24 Ã— 60 Ã— 60)
+             = 2,592 seconds Ëœ 43 minutes
 ```
 
 **Error Budget Mechanics:**
@@ -338,7 +338,7 @@ console.log(`API budget remaining: ${apiBudget.remainingPercent}% - ${calc.alert
 | SLA | Contractual commitment with consequences |
 | Prometheus | Pull-based time-series monitoring |
 | Grafana | Visualization with multi-source dashboards |
-| Error Budget | Allowed unreliability = (1 - SLO) × window |
+| Error Budget | Allowed unreliability = (1 - SLO) Ã— window |
 | Toil | Manual, repetitive, automatable operational work |
 | Alertmanager | Deduplication, grouping, routing, silencing |
 

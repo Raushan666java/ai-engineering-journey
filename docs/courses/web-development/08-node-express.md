@@ -1,4 +1,4 @@
-# Chapter 8 — Node.js and Express
+# Chapter 8 â€” Node.js and Express
 
 > **Previous:** [07-react-advanced](./07-react-advanced.md) | **Next:** [09-rest-apis](./09-rest-apis.md)
 
@@ -18,7 +18,7 @@ By the end of this chapter, you will be able to:
 |Node Modules|CommonJS (`require`) and ES modules (`import`) are both supported|Use `.mjs` extension or `type: module` in package.json for ESM|
 |npm|Dependency management with `package.json`, scripts, and semantic versioning|Pin critical dependencies with exact versions; use `npm ci` for CI builds|
 |Express Routes|Map HTTP methods and URL paths to handler functions|Always validate request parameters and return appropriate status codes|
-|Middleware|Functions that process requests in a chain before the final handler|Order matters � error-handling middleware must have 4 parameters and be last|
+|Middleware|Functions that process requests in a chain before the final handler|Order matters — error-handling middleware must have 4 parameters and be last|
 |Static Files|Express serves files from a directory with optional virtual path prefix|Use `express.static()` with caching headers for production assets|
 
 ## Chapter Roadmap
@@ -66,12 +66,12 @@ Node.js is a JavaScript runtime built on Chrome's V8 engine. It provides an even
 
 Node.js processes JavaScript on a single thread using an event loop. The loop has six phases:
 
-1. **Timers** — executes callbacks scheduled by `setTimeout` and `setInterval`.
-2. **Pending callbacks** — executes I/O callbacks deferred to the next iteration.
-3. **Idle, prepare** — internal use.
-4. **Poll** — retrieves new I/O events; blocks if no timers are due.
-5. **Check** — executes `setImmediate` callbacks.
-6. **Close callbacks** — executes close event handlers (e.g., socket `close`).
+1. **Timers** â€” executes callbacks scheduled by `setTimeout` and `setInterval`.
+2. **Pending callbacks** â€” executes I/O callbacks deferred to the next iteration.
+3. **Idle, prepare** â€” internal use.
+4. **Poll** â€” retrieves new I/O events; blocks if no timers are due.
+5. **Check** â€” executes `setImmediate` callbacks.
+6. **Close callbacks** â€” executes close event handlers (e.g., socket `close`).
 
 ```javascript
 console.log('1: Start');
@@ -99,7 +99,7 @@ function square(x) { return x * x; }
 module.exports = { PI, square };
 module.exports.default = { PI, square };
 
-// app.js — synchronous require
+// app.js â€” synchronous require
 const math = require('./math.js');
 console.log(math.PI); // 3.14159
 ```
@@ -119,7 +119,7 @@ console.log(math.PI); // 3.14159
 export const PI = 3.14159;
 export function square(x) { return x * x; }
 
-// app.mjs — static import
+// app.mjs â€” static import
 import { PI, square } from './math.mjs';
 
 // Dynamic import
@@ -167,7 +167,7 @@ import express from 'express';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware — runs for every request
+// Middleware â€” runs for every request
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -187,7 +187,7 @@ app.listen(PORT, () => {
 Express routes map HTTP methods and URL paths to handler functions.
 
 ```javascript
-// GET — Retrieve resources
+// GET â€” Retrieve resources
 app.get('/api/users', (req, res) => {
   res.json(users);
 });
@@ -199,7 +199,7 @@ app.get('/api/users/:id', (req, res) => {
   res.json(user);
 });
 
-// POST — Create resource
+// POST â€” Create resource
 app.post('/api/users', (req, res) => {
   const { name, email } = req.body;
   if (!name || !email) {
@@ -210,7 +210,7 @@ app.post('/api/users', (req, res) => {
   res.status(201).json(newUser);
 });
 
-// PUT — Replace resource
+// PUT â€” Replace resource
 app.put('/api/users/:id', (req, res) => {
   const index = users.findIndex((u) => u.id === parseInt(req.params.id));
   if (index === -1) return res.status(404).json({ error: 'User not found' });
@@ -218,7 +218,7 @@ app.put('/api/users/:id', (req, res) => {
   res.json(users[index]);
 });
 
-// PATCH — Partial update
+// PATCH â€” Partial update
 app.patch('/api/users/:id', (req, res) => {
   const user = users.find((u) => u.id === parseInt(req.params.id));
   if (!user) return res.status(404).json({ error: 'User not found' });
@@ -226,7 +226,7 @@ app.patch('/api/users/:id', (req, res) => {
   res.json(user);
 });
 
-// DELETE — Remove resource
+// DELETE â€” Remove resource
 app.delete('/api/users/:id', (req, res) => {
   const index = users.findIndex((u) => u.id === parseInt(req.params.id));
   if (index === -1) return res.status(404).json({ error: 'User not found' });
@@ -416,7 +416,7 @@ curl -X DELETE http://localhost:3000/api/users/1
 > Always place error-handling middleware (4 parameters) LAST in the middleware chain, after all routes.
 
 > [!REMEMBER]
-> `process.nextTick` runs before `Promise.then()` callbacks, which run before `setTimeout(fn, 0)` � this microtask priority is critical for understanding execution order.
+> `process.nextTick` runs before `Promise.then()` callbacks, which run before `setTimeout(fn, 0)` — this microtask priority is critical for understanding execution order.
 
 
 
@@ -827,13 +827,13 @@ export const config = {
 ### Challenge Problem
 
 8. Build a complete RESTful blog API server with:
-   - `GET /api/posts` — list posts with pagination (`?page=1&limit=10`)
-   - `GET /api/posts/:id` — single post with author details
-   - `POST /api/posts` — create post (requires auth middleware)
-   - `PUT /api/posts/:id` — update post (only by author)
-   - `DELETE /api/posts/:id` — soft-delete post (sets `deletedAt`)
-   - `GET /api/posts/:id/comments` — nested comments
-   - `POST /api/posts/:id/comments` — add comment
-   - `DELETE /api/comments/:id` — delete comment (only by author)
+   - `GET /api/posts` â€” list posts with pagination (`?page=1&limit=10`)
+   - `GET /api/posts/:id` â€” single post with author details
+   - `POST /api/posts` â€” create post (requires auth middleware)
+   - `PUT /api/posts/:id` â€” update post (only by author)
+   - `DELETE /api/posts/:id` â€” soft-delete post (sets `deletedAt`)
+   - `GET /api/posts/:id/comments` â€” nested comments
+   - `POST /api/posts/:id/comments` â€” add comment
+   - `DELETE /api/comments/:id` â€” delete comment (only by author)
    - Custom middleware for: request logging, auth (Bearer token), error handling, 404 catch-all
    - Test coverage with curl commands in a README

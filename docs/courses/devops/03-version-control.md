@@ -317,11 +317,11 @@ docker push myapp:$VERSION
 
 Effective code review in version control:
 
-1. **Small PRs** — Reviewers process small changes faster and catch more defects
-2. **Automated checks first** — Lint, style, tests run before human review
-3. **Clear description** — What changed and why
-4. **Review checklist** — Consistency, correctness, coverage, security
-5. **No blame** — Review the code, not the author
+1. **Small PRs** â€” Reviewers process small changes faster and catch more defects
+2. **Automated checks first** â€” Lint, style, tests run before human review
+3. **Clear description** â€” What changed and why
+4. **Review checklist** â€” Consistency, correctness, coverage, security
+5. **No blame** â€” Review the code, not the author
 
 ---
 
@@ -783,7 +783,7 @@ class CommitGraphAnalyzer {
         `- ${a.author}: ${a.commitCount} commits, ~${a.filesTouched} files`
       ).join('\n') +
       `\n\n**Islands (disconnected histories):** ${this.findIslands().length}\n` +
-      (metrics.mergeCommitPercent > 30 ? '?? High merge commit ratio — consider rebase workflow\n' : '');
+      (metrics.mergeCommitPercent > 30 ? '?? High merge commit ratio â€” consider rebase workflow\n' : '');
   }
 }
 
@@ -991,7 +991,7 @@ export { Processor, Task }
 - Branching models range from simple (trunk-based) to complex (GitFlow), chosen based on release cadence.
 - Tags create immutable named references, ideally using semantic versioning.
 - CI/CD pipelines integrate with VCS through hooks and triggers for every event type.
-- Monorepos enable atomic changes; multi-repos provide team autonomy — choose based on context.
+- Monorepos enable atomic changes; multi-repos provide team autonomy â€” choose based on context.
 - Code review via pull requests is essential for quality, with automated checks before human review.
 
 ---

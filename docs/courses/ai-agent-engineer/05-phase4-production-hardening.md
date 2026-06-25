@@ -1,7 +1,7 @@
-# Phase 4 — Production Hardening
+# Phase 4 â€” Production Hardening
 
 **Duration:** Weeks 9-10, ~20 hours
-**Goal:** Add the production patterns your portfolio projects are missing — durable queues, structured logging, CI/CD, cost monitoring.
+**Goal:** Add the production patterns your portfolio projects are missing â€” durable queues, structured logging, CI/CD, cost monitoring.
 
 ---
 
@@ -132,11 +132,11 @@ queue = Queue("document_ingestion", connection=redis_conn)
 
 @app.post("/upload")
 async def upload(doc_id: str):
-    # Stored in Redis — survives restart
+    # Stored in Redis â€” survives restart
     job = queue.enqueue(process_large_document, doc_id, job_timeout=600)
     return {"status": "accepted", "job_id": job.id}
 
-# worker.py — run separately:
+# worker.py â€” run separately:
 # rq worker document_ingestion
 if __name__ == "__main__":
     from rq.worker import Worker
@@ -280,7 +280,7 @@ async def readyz():
 
 ### Why the distinction matters
 
-A service that's alive but not ready (e.g., ChromaDB is restarting) should **not** be killed and restarted — it should just stop receiving traffic until dependencies recover. Conflating them means a brief ChromaDB restart causes a container restart cascade.
+A service that's alive but not ready (e.g., ChromaDB is restarting) should **not** be killed and restarted â€” it should just stop receiving traffic until dependencies recover. Conflating them means a brief ChromaDB restart causes a container restart cascade.
 
 ### Exercise
 
@@ -704,4 +704,4 @@ Before moving to Phase 5, you should be able to:
 
 **Estimated time to checkpoint:** 24-26 hours over 2 weeks.
 
-[Next: Phase 5 — Portfolio + Market Positioning](06-phase5-portfolio-positioning.md)
+[Next: Phase 5 â€” Portfolio + Market Positioning](06-phase5-portfolio-positioning.md)

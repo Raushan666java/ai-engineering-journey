@@ -522,7 +522,7 @@ class AnsibleVaultManager {
     for (const entry of this.entries) {
       for (const [key, value] of Object.entries(entry.data)) {
         if (value.length > 4 && /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]{8,}$/.test(value)) {
-          issues.push(`Potential secret "${key}" in ${entry.path} — should be vault-encrypted`);
+          issues.push(`Potential secret "${key}" in ${entry.path} â€” should be vault-encrypted`);
         }
       }
     }

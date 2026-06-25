@@ -97,7 +97,7 @@ Client (stub resolver)
 ```
 
 **Step-by-step**:
-1. Application calls `getaddrinfo("api.example.com", ...)` — the stub resolver (OS library) sends a UDP query (port 53) to the configured recursive resolver
+1. Application calls `getaddrinfo("api.example.com", ...)` â€” the stub resolver (OS library) sends a UDP query (port 53) to the configured recursive resolver
 2. Recursive resolver checks its cache; on miss, sends query to a root server (built-in root hints file)
 3. Root server responds with NS records for .com TLD, plus glue A records for those NS IPs
 4. Resolver queries .com TLD server, which returns NS records for example.com
@@ -116,7 +116,7 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 
 **OS cache (stub resolver cache)**: Windows caches positive results for 86400s (1 day) by default, negative results for 300s (5 min). Linux glibc nscd or systemd-resolved provides nameserver caching. Accessible via `ipconfig /displaydns` on Windows.
 
-**Resolver cache**: Recursive resolvers cache aggressively (typically full TTL). Google Public DNS respects TTL but has a minimum of 10 seconds. ISPs may ignore TTL (a practice called "TTL overrides") to reduce upstream load — problematic for fast failover.
+**Resolver cache**: Recursive resolvers cache aggressively (typically full TTL). Google Public DNS respects TTL but has a minimum of 10 seconds. ISPs may ignore TTL (a practice called "TTL overrides") to reduce upstream load â€” problematic for fast failover.
 
 **Negative caching**: NXDOMAIN results (domain doesn't exist) and NODATA (domain exists but record type missing) are cached per RFC 2308. SOA minimum TTL field controls negative cache duration, typically 300-3600 seconds.
 
@@ -142,11 +142,11 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 | SRV   | Service location                  | priority weight port target            |
 | SOA   | Start of authority                | Primary NS, admin email, serial, refresh, retry, expire, minimum |
 
-**CNAME caveat**: A CNAME record cannot coexist with any other record type at the same name. The apex domain (example.com) cannot be a CNAME — use ALIAS/ANAME records (provided by some DNS providers) that resolve at the authoritative server level.
+**CNAME caveat**: A CNAME record cannot coexist with any other record type at the same name. The apex domain (example.com) cannot be a CNAME â€” use ALIAS/ANAME records (provided by some DNS providers) that resolve at the authoritative server level.
 
 ### 5. DNS-Based Load Balancing
 
-**Round-robin DNS**: Multiple A records for one name returned in rotating order. Simple but stateless — does not consider server health or load. If one server fails, clients with cached results still connect to it.
+**Round-robin DNS**: Multiple A records for one name returned in rotating order. Simple but stateless â€” does not consider server health or load. If one server fails, clients with cached results still connect to it.
 
 ```
 api.example.com  ?  10.0.0.1 (TTL=60)
@@ -154,7 +154,7 @@ api.example.com  ?  10.0.0.1 (TTL=60)
                    10.0.0.3 (TTL=60)
 ```
 
-**Weighted round-robin**: Associate weights with each IP. A weight-3 server gets 3× the traffic of a weight-1 server. Used for gradual traffic migration during deployments.
+**Weighted round-robin**: Associate weights with each IP. A weight-3 server gets 3Ã— the traffic of a weight-1 server. Used for gradual traffic migration during deployments.
 
 **Geo-based DNS**: Return different IPs based on the resolver's geographic location (GeoIP database). Direct US users to us-east servers, EU users to eu-west. Imprecise because resolver location may differ from client location (especially with public resolvers like 8.8.8.8).
 
@@ -233,7 +233,7 @@ Key parameters: `w` (width), `h` (height), `q` (quality), `f` (format), `fit` (c
 
 ### 11. Origin Shielding
 
-Without shielding, a cache miss for a popular object triggers N concurrent origin requests from N different edge PoPs — a thundering herd on the origin. Origin shielding designates a single intermediate shield layer:
+Without shielding, a cache miss for a popular object triggers N concurrent origin requests from N different edge PoPs â€” a thundering herd on the origin. Origin shielding designates a single intermediate shield layer:
 
 ```
 User ? Edge PoP (miss) ? Shield PoP (miss) ? Origin
@@ -262,7 +262,7 @@ Only one edge node (the shield) ever contacts the origin per object. Subsequent 
 
 **Lambda@Edge**: AWS Lambda functions triggered by CloudFront events (viewer request, origin request, viewer response, origin response). Use cases: rewrite URLs, A/B testing, authentication (JWT validation at edge), header normalization, redirects. Execution limited to 5 seconds, 128 MB, Node.js/Python.
 
-**Cloudflare Workers**: V8 isolates (not containers) running JavaScript/WASM. Sub-millisecond cold starts, 50-100µs processing overhead per request. Globally distributed every request runs on the nearest of 330+ PoPs. KV storage (eventually consistent, global). Durable Objects (strongly consistent, single-location).
+**Cloudflare Workers**: V8 isolates (not containers) running JavaScript/WASM. Sub-millisecond cold starts, 50-100Âµs processing overhead per request. Globally distributed every request runs on the nearest of 330+ PoPs. KV storage (eventually consistent, global). Durable Objects (strongly consistent, single-location).
 
 **EdgeKV**: Distributed key-value storage at edge. Cloudflare Workers KV (eventually consistent, 1s-60s propagation), AWS EdgeKV (via Lambda@Edge + DynamoDB global tables). Use cases: feature flags, configuration, A/B test assignments, redirect maps, JWT public keys.
 
@@ -357,7 +357,7 @@ async function handleRequest(request) {
 }
 ```
 
-This worker runs in 330+ locations globally. JWT verification completes in ~200µs per request, adding no perceptible latency.
+This worker runs in 330+ locations globally. JWT verification completes in ~200Âµs per request, adding no perceptible latency.
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -973,7 +973,7 @@ demo()
 export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- DNS hierarchy has 4 levels: root, TLD, authoritative, recursive resolver — each delegation step is a query from resolver to nameserver
+- DNS hierarchy has 4 levels: root, TLD, authoritative, recursive resolver â€” each delegation step is a query from resolver to nameserver
 - DNS caching occurs at 4 layers (browser, OS, resolver, app) with TTL controlling refresh frequency
 - Round-robin DNS is simple but health-unaware; latency-based routing (Route53 LBR) is more sophisticated
 - Anycast routing (same IP from multiple locations via BGP) provides automatic DDoS absorption and latency reduction

@@ -83,7 +83,7 @@ The interviewer is evaluating four dimensions simultaneously:
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-The most reliable approach to any system design question follows six phases. The time allocations are guidelines — adjust based on the question's emphasis and the interviewer's signals.
+The most reliable approach to any system design question follows six phases. The time allocations are guidelines â€” adjust based on the question's emphasis and the interviewer's signals.
 
 **Phase 1: Requirements Clarification (1-2 minutes)**
 
@@ -118,26 +118,26 @@ Traffic estimation:
 DAU = 500M
 Daily views = DAU * views_per_user = 500M * 5 = 2.5B
 Writes: uploads per day = 5M * 1 = 5M
-Reads: video views per second = 2.5B / 86400 ˜ 29,000 QPS
-Peak QPS: 3-5x average ˜ 100,000 QPS
+Reads: video views per second = 2.5B / 86400 Ëœ 29,000 QPS
+Peak QPS: 3-5x average Ëœ 100,000 QPS
 ```
 
 Storage estimation:
 ```
 Average video size: 50MB (compressed, various resolutions)
 Daily new video storage: 5M * 50MB = 250TB/day
-Yearly storage: 250TB * 365 ˜ 91PB/year
+Yearly storage: 250TB * 365 Ëœ 91PB/year
 Total storage (5 years): ~455PB
 Metadata per video: 1KB
-Total metadata: 5 years * 5M * 365 * 1KB ˜ 9TB
+Total metadata: 5 years * 5M * 365 * 1KB Ëœ 9TB
 ```
 
 Bandwidth estimation:
 ```
-Upload bandwidth: 5M videos/day * 50MB / 86400s ˜ 2.9 GB/s
+Upload bandwidth: 5M videos/day * 50MB / 86400s Ëœ 2.9 GB/s
 Download bandwidth: 29,000 QPS * 50MB = 1.45 TB/s
-CDN bandwidth: 95% of download served by CDN ˜ 1.38 TB/s
-Origin bandwidth: remaining 5% ˜ 72.5 GB/s
+CDN bandwidth: 95% of download served by CDN Ëœ 1.38 TB/s
+Origin bandwidth: remaining 5% Ëœ 72.5 GB/s
 ```
 
 Memory estimation:
@@ -244,9 +244,9 @@ This is the most important phase. Pick 2-3 components from your high-level desig
 **Caching strategy**:
 ```
 Multi-tier caching for YouTube:
-  L1: Browser cache (video segments, API responses) — TTL 5 minutes
-  L2: CDN cache (video content, thumbnails) — 95% hit rate
-  L3: Application cache (Redis — video metadata, user sessions) — 99% hit rate
+  L1: Browser cache (video segments, API responses) â€” TTL 5 minutes
+  L2: CDN cache (video content, thumbnails) â€” 95% hit rate
+  L3: Application cache (Redis â€” video metadata, user sessions) â€” 99% hit rate
   L4: Database replica cache (MySQL query cache if needed)
 ```
 
@@ -280,7 +280,7 @@ This phase is your opportunity to show that you understand engineering as a seri
 
 Google interviewers favor questions that test algorithmic thinking and scalability. Their questions often have a search or data processing angle:
 
-- Design YouTube (most common — video streaming, upload, search, recommendations)
+- Design YouTube (most common â€” video streaming, upload, search, recommendations)
 - Design Google Docs (real-time collaboration, OT/CRDT, conflict resolution, operational transformation)
 - Design Google Maps (geospatial indexing, route optimization, real-time traffic, ETA)
 - Design a Web Crawler (distributed crawling, politeness policy, deduplication, prioritization)
@@ -295,7 +295,7 @@ Google emphasizes estimation and data structures. They may ask you to compute th
 
 Meta interviewers focus on social graph traversal, real-time communication, and news feed algorithms:
 
-- Design News Feed (the original system design interview question — ranking, storage, fan-out, personalization)
+- Design News Feed (the original system design interview question â€” ranking, storage, fan-out, personalization)
 - Design Messenger/Chat (WebSocket, presence detection, message ordering, delivery guarantees, encryption)
 - Design Nearby Friends (geospatial indexing, WebSocket push, battery optimization, privacy controls)
 - Design Facebook Live (streaming protocol, latency optimization, transcoding, interactive features)
@@ -314,7 +314,7 @@ Amazon's leadership principle "Bias for Action" means they want to see you make 
 - Design Fulfillment Center (warehouse layout optimization, inventory placement, picking routes, shipping optimization)
 - Design Product Search (inverted index, faceted navigation, spelling correction, ML ranking)
 
-Amazon interviewers care deeply about failure modes. For every component, be ready to answer "What happens when this fails?" They also expect detailed understanding of consistency models — Amazon's Dynamo paper (eventual consistency, vector clocks) is required reading.
+Amazon interviewers care deeply about failure modes. For every component, be ready to answer "What happens when this fails?" They also expect detailed understanding of consistency models â€” Amazon's Dynamo paper (eventual consistency, vector clocks) is required reading.
 
 **Netflix/Spotify**
 
@@ -324,7 +324,7 @@ These companies focus on media streaming, recommendation, and encoding pipelines
 - Design Music Recommendation (collaborative filtering, audio features, playlists, real-time personalization, A/B testing)
 - Design Audio Encoding Pipeline (parallel encoding, codec selection, metadata extraction, CDN distribution)
 
-Netflix questions often probe CDN and caching architecture. Understand Open Connect (Netflix's CDN appliance), adaptive bitrate algorithms (BOLA, MPC), and the encoding ladder (resolution × bitrate combinations).
+Netflix questions often probe CDN and caching architecture. Understand Open Connect (Netflix's CDN appliance), adaptive bitrate algorithms (BOLA, MPC), and the encoding ladder (resolution Ã— bitrate combinations).
 
 **Uber**
 
@@ -333,7 +333,7 @@ Uber questions focus on real-time systems, geospatial data, and marketplace dyna
 - Design Ride Matching (geospatial index, bipartite matching, real-time streaming, surge pricing)
 - Design ETA Prediction (ML features, map matching, real-time traffic, Kalman filtering)
 - Design Surge Pricing (demand-supply curves, real-time pricing, geographic granularity, fairness)
-- Design Geospatial Indexing (S2, H3, QuadTree, GeoHash — compare and contrast)
+- Design Geospatial Indexing (S2, H3, QuadTree, GeoHash â€” compare and contrast)
 
 **LLD-Focused Questions**
 
@@ -347,7 +347,7 @@ Some companies (especially for mid-level roles) focus on low-level design:
 - Distributed Cache Library (LRU/LFU eviction, sharding, replication, serialization)
 - Rate Limiter Library (token bucket, sliding window, distributed counters, per-user limits)
 
-For LLD questions, draw a class diagram with relationships (inheritance, composition, dependency). Use design patterns appropriately: Strategy (for pricing algorithms), Observer (for event-driven updates), Factory (for creating domain objects), Singleton (for loggers — with thread safety considerations).
+For LLD questions, draw a class diagram with relationships (inheritance, composition, dependency). Use design patterns appropriately: Strategy (for pricing algorithms), Observer (for event-driven updates), Factory (for creating domain objects), Singleton (for loggers â€” with thread safety considerations).
 
 ### Phase 4: Common Pitfalls
 
@@ -760,7 +760,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 **Design Amazon's Shopping Cart (Full Mock Interview)**
 
-You have 45 minutes. Design the shopping cart system for Amazon.com. Do not read the solution in advance — treat this as a live mock interview. Use a timer if possible and switch phases strictly.
+You have 45 minutes. Design the shopping cart system for Amazon.com. Do not read the solution in advance â€” treat this as a live mock interview. Use a timer if possible and switch phases strictly.
 
 Requirements:
 - 300M active users
@@ -903,22 +903,22 @@ class MockInterviewScorer {
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Books (ranked by difficulty)**
-- ???: "System Design Interview — An Insider's Guide" (Alex Xu) — Best for beginners, covers 15 common questions step by step
-- ???: "Designing Data-Intensive Applications" (Martin Kleppmann) — Required reading for distributed systems fundamentals
-- ???: "The Art of Scalability" (Abbott & Fisher) — Comprehensive but dense, covers organizational and process scalability
-- ???: "Building Microservices" (Sam Newman) — Practical guidance on service boundaries, communication patterns, and deployment
-- ???: "Distributed Systems" (van Steen & Tanenbaum) — Academic textbook covering theory behind replication, consensus, and consistency
+- ???: "System Design Interview â€” An Insider's Guide" (Alex Xu) â€” Best for beginners, covers 15 common questions step by step
+- ???: "Designing Data-Intensive Applications" (Martin Kleppmann) â€” Required reading for distributed systems fundamentals
+- ???: "The Art of Scalability" (Abbott & Fisher) â€” Comprehensive but dense, covers organizational and process scalability
+- ???: "Building Microservices" (Sam Newman) â€” Practical guidance on service boundaries, communication patterns, and deployment
+- ???: "Distributed Systems" (van Steen & Tanenbaum) â€” Academic textbook covering theory behind replication, consensus, and consistency
 
 **YouTube Channels**
-- Gaurav Sen (System Design) — Best format: clear diagrams, real system examples, multiple perspectives per topic
-- Tech Dummies (Design YouTube, Netflix, Uber) — Deep dives with whiteboard diagrams, good for visual learners
-- Hello Interview (asynchronous mock interviews) — Recorded mock interviews with real-time feedback
-- System Design Interview (codeKarle) — Clean, well-structured walkthroughs of common questions
+- Gaurav Sen (System Design) â€” Best format: clear diagrams, real system examples, multiple perspectives per topic
+- Tech Dummies (Design YouTube, Netflix, Uber) â€” Deep dives with whiteboard diagrams, good for visual learners
+- Hello Interview (asynchronous mock interviews) â€” Recorded mock interviews with real-time feedback
+- System Design Interview (codeKarle) â€” Clean, well-structured walkthroughs of common questions
 
 **Mock Interview Platforms**
-- Pramp — Free peer-to-peer mock interviews with structured feedback forms
-- interviewing.io — Anonymous technical interviews with engineers from FAANG companies
-- DesignGurus — Mock interviews specifically for system design with expert reviewers
+- Pramp â€” Free peer-to-peer mock interviews with structured feedback forms
+- interviewing.io â€” Anonymous technical interviews with engineers from FAANG companies
+- DesignGurus â€” Mock interviews specifically for system design with expert reviewers
 
 **Cheat Sheet to Memorize**
 

@@ -44,7 +44,7 @@ flowchart LR
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 Object-Oriented Programming (OOP) rests on four pillars: Encapsulation, Abstraction, Inheritance, and Polymorphism. Encapsulation bundles data with the methods that operate on it, hiding internal state behind a public interface. Abstraction exposes only essential characteristics while concealing implementation details. Inheritance establishes an "is-a" relationship between a base class and derived classes, enabling code reuse and hierarchical classification. Polymorphism allows objects of different types to respond to the same interface contract, dispatching the correct method at runtime.
 
-**Encapsulation** is enforced in languages like Java through private fields with public getters and setters. Python uses a naming convention: a single underscore `_protected` signals internal use; a double underscore `__private` triggers name mangling to `_ClassName__private`. Neither provides true access control—Python trusts developers to follow conventions.
+**Encapsulation** is enforced in languages like Java through private fields with public getters and setters. Python uses a naming convention: a single underscore `_protected` signals internal use; a double underscore `__private` triggers name mangling to `_ClassName__private`. Neither provides true access controlâ€”Python trusts developers to follow conventions.
 
 **Abstraction** decouples what a system does from how it does it. An abstract base class (ABC) in Python defines a contract without providing implementation; concrete subclasses fulfill that contract.
 
@@ -58,9 +58,9 @@ Object-Oriented Programming (OOP) rests on four pillars: Encapsulation, Abstract
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-Coupling measures the degree of interdependence between modules. **Tight coupling** occurs when a class knows too much about the internal details of another class—it creates a chain where a change in one module forces cascading changes in many others. **Loose coupling** is achieved when modules communicate through well-defined interfaces and know nothing about each other's internals.
+Coupling measures the degree of interdependence between modules. **Tight coupling** occurs when a class knows too much about the internal details of another classâ€”it creates a chain where a change in one module forces cascading changes in many others. **Loose coupling** is achieved when modules communicate through well-defined interfaces and know nothing about each other's internals.
 
-Cohesion measures how strongly the responsibilities of a module are related. **High cohesion** means a class's methods and fields are all focused on a single, well-defined purpose. **Low cohesion** indicates a class does many unrelated things—a classic symptom of a God Object.
+Cohesion measures how strongly the responsibilities of a module are related. **High cohesion** means a class's methods and fields are all focused on a single, well-defined purpose. **Low cohesion** indicates a class does many unrelated thingsâ€”a classic symptom of a God Object.
 
 A useful metric is **LCOM** (Lack of Cohesion of Methods). LCOM counts pairs of methods that do not share any fields. A high LCOM value suggests the class should be split. Most static analysis tools calculate LCOM4, which counts connected components in a method-field access graph; LCOM4 > 1 indicates the class has multiple responsibilities.
 
@@ -72,7 +72,7 @@ A useful metric is **LCOM** (Lack of Cohesion of Methods). LCOM counts pairs of 
 
 > A class should have one, and only one, reason to change.
 
-SRP is about **actors**—the stakeholders who might request changes. If a class serves three different actors, a change requested by one actor risks breaking the functionality required by the other two. Every class should be responsible to a single actor.
+SRP is about **actors**â€”the stakeholders who might request changes. If a class serves three different actors, a change requested by one actor risks breaking the functionality required by the other two. Every class should be responsible to a single actor.
 
 Consider a `Report` class that generates content, formats it as HTML and PDF, and sends it via email. Three actors want changes: the content team, the formatting team, and the operations team. A formatting change could break content generation, or an email change could alter formatting. The solution is to split: `ReportGenerator` (content), `ReportFormatter` (output format strategy), and `ReportSender` (delivery mechanism).
 
@@ -82,13 +82,13 @@ Consider a `Report` class that generates content, formats it as HTML and PDF, an
 
 New functionality should be added by writing new code, not by modifying existing, tested code. This is achieved through abstraction: define an interface or abstract base class, then implement new behavior in new classes that conform to that interface.
 
-The Strategy pattern is a direct application of OCP. A `PaymentProcessor` class that uses a `switch` statement on payment type violates OCP—adding a new payment type requires modifying the class. Instead, define a `PaymentStrategy` interface with a `pay(amount)` method, then implement `CreditCardPayment`, `PayPalPayment`, and `CryptoPayment` separately. New payment types require zero changes to existing code.
+The Strategy pattern is a direct application of OCP. A `PaymentProcessor` class that uses a `switch` statement on payment type violates OCPâ€”adding a new payment type requires modifying the class. Instead, define a `PaymentStrategy` interface with a `pay(amount)` method, then implement `CreditCardPayment`, `PayPalPayment`, and `CryptoPayment` separately. New payment types require zero changes to existing code.
 
 ### Liskov Substitution Principle (LSP)
 
 > Subtypes must be substitutable for their base types without altering the correctness of the program.
 
-If `S` is a subtype of `T`, then objects of type `T` may be replaced with objects of type `S` without changing any of the desirable properties of the program. LSP is not about syntax—it is about **behavioral contracts**.
+If `S` is a subtype of `T`, then objects of type `T` may be replaced with objects of type `S` without changing any of the desirable properties of the program. LSP is not about syntaxâ€”it is about **behavioral contracts**.
 
 The classic violation is the Square-Rectangle problem. A `Rectangle` has `setWidth(w)` and `setHeight(h)`. A `Square` inherits from `Rectangle` but overrides both methods to keep width and height equal. Code that works for a rectangle breaks for a square:
 
@@ -111,7 +111,7 @@ A "fat interface" contains methods that are irrelevant to some implementors. Cli
 
 Consider a `Worker` interface with `work()`, `eat()`, and `sleep()`. A `Robot` class implements `Worker` but does not eat or sleep. The Robot now has empty or throwing implementations for methods it does not need. Instead, split into `Workable`, `Eatable`, and `Sleepable` interfaces. A `HumanWorker` implements all three; a `RobotWorker` implements only `Workable`.
 
-The symptom of ISP violation is the **"not implemented" exception**—methods that throw `NotImplementedError` or `UnsupportedOperationException`.
+The symptom of ISP violation is the **"not implemented" exception**â€”methods that throw `NotImplementedError` or `UnsupportedOperationException`.
 
 ### Dependency Inversion Principle (DIP)
 
@@ -143,13 +143,13 @@ The `UserService` never knows whether it is backed by PostgreSQL, MySQL, or an i
 Inheritance exposes subclasses to parent implementation details, violating encapsulation. Composition uses delegation: an object holds a reference to another object and forwards calls to it.
 
 ```python
-# Inheritance — fragile
+# Inheritance â€” fragile
 class OrderedCache(Dict):
     def __setitem__(self, key, value):
         super().__setitem__(key, value)
         self._order.append(key)
 
-# Composition — flexible
+# Composition â€” flexible
 class OrderedCache:
     def __init__(self):
         self._data = {}  # delegate to dict
@@ -178,7 +178,7 @@ REP and CRP are in tension with CCP. REP pushes for fine-grained packages (easy 
 ## Examples
 ### Example 1: Refactoring a Violation of Single Responsibility Principle
 
-**Before** — A monolithic `Order` class handles database persistence, email notification, and invoice generation:
+**Before** â€” A monolithic `Order` class handles database persistence, email notification, and invoice generation:
 
 ```python
 class Order:
@@ -202,7 +202,7 @@ class Order:
         return f"Invoice\nTotal: ${self.total}\nItems: {len(self.items)}"
 ```
 
-**After** — Three single-responsibility classes:
+**After** â€” Three single-responsibility classes:
 
 ```python
 class Order:
@@ -233,7 +233,7 @@ Three actors (DB team, email team, accounting team) can now change their respect
 
 ### Example 2: Applying OCP with the Strategy Pattern
 
-**Before** — A payment processor with a growing switch statement:
+**Before** â€” A payment processor with a growing switch statement:
 
 ```python
 class PaymentProcessor:
@@ -249,7 +249,7 @@ class PaymentProcessor:
         # Adding a new method requires adding an elif branch
 ```
 
-**After** — Open for extension:
+**After** â€” Open for extension:
 
 ```python
 from abc import ABC, abstractmethod
@@ -277,14 +277,14 @@ class PaymentProcessor:
     def process(self, amount: float):
         self._strategy.pay(amount)
 
-# Usage — inject strategy at runtime
+# Usage â€” inject strategy at runtime
 processor = PaymentProcessor(CreditCardPayment())
 processor.process(100.0)
 ```
 
-Adding Google Pay requires only a new class `GooglePayPayment(PaymentStrategy)`—zero modification to `PaymentProcessor`.
+Adding Google Pay requires only a new class `GooglePayPayment(PaymentStrategy)`â€”zero modification to `PaymentProcessor`.
 
-### Example 3: LSP — The Square-Rectangle Problem Resolved
+### Example 3: LSP â€” The Square-Rectangle Problem Resolved
 
 **Violation**:
 
@@ -313,7 +313,7 @@ def process_shape(r: Rectangle):
     assert r.area() == 50  # Square fails!
 ```
 
-**Resolution** — Both inherit from a common abstraction:
+**Resolution** â€” Both inherit from a common abstraction:
 
 ```python
 from abc import ABC, abstractmethod
@@ -340,7 +340,7 @@ class Square(Shape):
 
 `Rectangle` and `Square` are not in an inheritance relationship; both are sibling subtypes of `Shape`. Code that uses `Shape` works correctly for either.
 
-### Example 4: ISP — Splitting a Fat Interface
+### Example 4: ISP â€” Splitting a Fat Interface
 
 **Before**:
 
@@ -393,7 +393,7 @@ No client of `OldPrinter` is forced to depend on `fax` or `scan`.
 ### Example 5: DIP with Dependency Injection
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
-**Before** — High-level module depends on low-level module directly:
+**Before** â€” High-level module depends on low-level module directly:
 
 ```python
 class MySQLDatabase:
@@ -408,7 +408,7 @@ class UserService:
         self.db.save_user({"name": name, "email": email})
 ```
 
-**After** — Both depend on abstractions:
+**After** â€” Both depend on abstractions:
 
 ```python
 from abc import ABC, abstractmethod
@@ -849,7 +849,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - ISP mandates small, focused interfaces; clients should never depend on methods they do not call.
 - DIP inverts traditional dependency direction: high-level and low-level modules both depend on abstractions.
 - Composition over inheritance delegates behavior to composed objects, avoiding the fragile base class problem.
-- High cohesion and loose coupling are the twin goals of all modular design—measure them with LCOM and fan-in/fan-out metrics.
+- High cohesion and loose coupling are the twin goals of all modular designâ€”measure them with LCOM and fan-in/fan-out metrics.
 - Package principles (REP, CCP, CRP) guide module organization and are in natural tension that resolves through project lifecycle stage.
 ---
 ## Exercises

@@ -1,6 +1,6 @@
 # Job Search Playbook: AI Agent Engineer
 
-> A step-by-step system for finding, applying to, and landing AI Agent Engineer roles — full-time in Dubai, remote globally, and freelance on Upwork.
+> A step-by-step system for finding, applying to, and landing AI Agent Engineer roles â€” full-time in Dubai, remote globally, and freelance on Upwork.
 
 ---
 
@@ -46,7 +46,7 @@
 #### LinkedIn (your primary channel)
 
 **Optimize your profile for search:**
-- Headline: `AI Agent Engineer | LangGraph · RAG · FastAPI · MCP · Ex-Laravel`
+- Headline: `AI Agent Engineer | LangGraph Â· RAG Â· FastAPI Â· MCP Â· Ex-Laravel`
 - About section: First 3 lines must contain: LangGraph, RAG, FastAPI, MCP, ChromaDB
 - Skills: Add all 50 relevant skills, pin the top 3: LangGraph, RAG, FastAPI
 - Open to Work: Set to "AI Engineer", "Automation Engineer", "Full Stack AI"
@@ -71,12 +71,12 @@ Connecting to follow your work.
 
 After they accept:
 Hi [Name], thanks for connecting. I noticed [Company] works with
-AI agents — I just rebuilt a workflow system using LangGraph with
+AI agents â€” I just rebuilt a workflow system using LangGraph with
 MCP integration. If you're ever looking for someone who can ship
 both backend infra and agent pipelines, I'd love to chat.
 
 No response in 5 days:
-Hi [Name], quick follow up — I published a case study on porting
+Hi [Name], quick follow up â€” I published a case study on porting
 an n8n automation to a LangGraph state machine. Happy to share
 if relevant to what you're building at [Company].
 ```
@@ -111,7 +111,7 @@ I can start [date] and deliver [specific scope] in [timeframe].
 My rate for this type of project is $[X] fixed / $[Y]/hr.
 Happy to jump on a quick call this week to discuss your specific needs.
 
-— [Your name]
+â€” [Your name]
 ```
 
 **Upwork filtering strategy:**
@@ -171,7 +171,7 @@ Subject: AI Agent Engineer with LangGraph + RAG production experience
 
 Hi [Client Name],
 
-I read your project description — you need [specific outcome].
+I read your project description â€” you need [specific outcome].
 
 This is exactly the type of system I build. Here's what I've shipped:
 
@@ -181,9 +181,9 @@ This is exactly the type of system I build. Here's what I've shipped:
 ? Docker + Cloudflare Tunnel deployment
 
 Technologies I'll use for your project:
-• [Tech 1] for [purpose]
-• [Tech 2] for [purpose]
-• [Tech 3] for [purpose]
+â€¢ [Tech 1] for [purpose]
+â€¢ [Tech 2] for [purpose]
+â€¢ [Tech 3] for [purpose]
 
 Timeline: [X] weeks for the core system
 Budget: $[X] fixed (or $[X]/hr)
@@ -192,14 +192,14 @@ Availability: [start date]
 I'm available for a quick call to discuss your specific requirements
 this week. What time works for you?
 
-— [Your name]
+â€” [Your name]
 [Link to portfolio/GitHub]
 ```
 
 **Template B: Full-time application email/cover letter**
 
 ```
-Subject: AI Agent Engineer — [Name] — LangGraph · FastAPI · MCP
+Subject: AI Agent Engineer â€” [Name] â€” LangGraph Â· FastAPI Â· MCP
 
 Dear [Hiring Manager name],
 
@@ -209,16 +209,16 @@ I'm applying for the [Role Name] position at [Company].
 
 In my current work, I've built:
 
-1. A production RAG API — FastAPI backend with ChromaDB, text-embedding-3-small,
+1. A production RAG API â€” FastAPI backend with ChromaDB, text-embedding-3-small,
    HNSW indexing, Cohere re-ranker, deployed on Hetzner with Cloudflare Tunnel.
    ? Live demo: [URL]
 
-2. A LangGraph agent workflow — ported a visual n8n automation to a code-based
+2. A LangGraph agent workflow â€” ported a visual n8n automation to a code-based
    state machine with checkpoint persistence, conditional routing, and
    human-in-the-loop interrupt/resume.
    ? GitHub: [URL]
 
-3. An MCP memory server — FastMCP-based server exposing tools, resources,
+3. An MCP memory server â€” FastMCP-based server exposing tools, resources,
    and prompt templates for LLM tool calling.
 
 Technically: Python, FastAPI, LangGraph, CrewAI, MCP, ChromaDB, Redis, Docker,
@@ -228,8 +228,8 @@ I'm available for [Dubai / remote] roles and can start [timeline].
 
 Would you be open to a 15-minute call this week?
 
-— [Your name]
-[LinkedIn URL] · [GitHub URL] · [Portfolio URL]
+â€” [Your name]
+[LinkedIn URL] Â· [GitHub URL] Â· [Portfolio URL]
 ```
 
 ### Follow-up system
@@ -240,22 +240,22 @@ Would you be open to a 15-minute call this week?
 | Day 5 | If no response, send follow-up email |
 | Day 12 | If still no response, send LinkedIn message |
 | Day 21 | Move to "cold" pipeline, send one final check |
-| Day 30 | Archive — they're not hiring now |
+| Day 30 | Archive â€” they're not hiring now |
 
 **Follow-up email:**
 ```
-Subject: Re: AI Agent Engineer application — quick follow-up
+Subject: Re: AI Agent Engineer application â€” quick follow-up
 
 Hi [Name],
 
 I applied for the [Role] position last week. I know you're busy,
-so just a quick nudge — I'd love to discuss how my experience
+so just a quick nudge â€” I'd love to discuss how my experience
 building LangGraph agent pipelines and RAG systems could help
 [Company]'s team.
 
 Happy to do a brief call this week if there's interest.
 
-— [Your name]
+â€” [Your name]
 ```
 
 ---
@@ -284,21 +284,21 @@ Happy to do a brief call this week if there's interest.
 **Monthly actions (1-2 hours):**
 1. Publish 1 article (case study or tutorial)
 2. Attend 1 AI meetup or webinar
-3. Review your network growth — target 50 new connections/month
+3. Review your network growth â€” target 50 new connections/month
 
 ### LinkedIn engagement templates
 
 **Comment on a post:**
 ```
 Great breakdown of [topic]. I recently ran into [related challenge]
-while building a LangGraph pipeline — ended up solving it with
+while building a LangGraph pipeline â€” ended up solving it with
 [approach]. Would love to hear how you handled [related aspect].
 ```
 
 **DM to a new connection (engineer):**
 ```
 Hi [Name], liked your post about [topic]. I'm in the middle of
-transitioning from Laravel backend to AI agent engineering —
+transitioning from Laravel backend to AI agent engineering â€”
 just shipped my first LangGraph pipeline with MCP integration.
 
 Curious: what's been the most useful resource in your AI work?
@@ -308,7 +308,7 @@ Curious: what's been the most useful resource in your AI work?
 ```
 Hi [Name], I've been following [Company]'s work in [area].
 I just completed a RAG + LangGraph project that seems relevant
-to what you're building — happy to share a quick demo if
+to what you're building â€” happy to share a quick demo if
 there's interest.
 
 [Optional: link to your project URL]
@@ -316,7 +316,7 @@ there's interest.
 
 ### Twitter/X strategy
 
-- **Bio:** `AI Agent Engineer | LangGraph · RAG · MCP · FastAPI | Building agent systems | Ex-Laravel`
+- **Bio:** `AI Agent Engineer | LangGraph Â· RAG Â· MCP Â· FastAPI | Building agent systems | Ex-Laravel`
 - **Daily:** Reply to AI engineering posts with value-add comments
 - **Weekly:** Post your progress, code snippets, lessons learned
 - **Hashtags to follow:** #LangGraph #RAG #AIAgents #FastAPI #MCP
@@ -343,7 +343,7 @@ Your GitHub profile is your resume. Optimize it.
 ```markdown
 # Hi, I'm [Name] ??
 
-**AI Agent Engineer** — building LangGraph pipelines, RAG systems,
+**AI Agent Engineer** â€” building LangGraph pipelines, RAG systems,
 and MCP servers. Previously: full-stack Laravel developer.
 
 ## What I'm building
@@ -355,7 +355,7 @@ and MCP servers. Previously: full-stack Laravel developer.
 
 ## Featured repositories
 
-[Pin your 6 best repos — the RAG demo, LangGraph pipeline,
+[Pin your 6 best repos â€” the RAG demo, LangGraph pipeline,
 MCP server, booking module port, and any open-source contributions]
 
 ## Latest writing
@@ -364,7 +364,7 @@ MCP server, booking module port, and any open-source contributions]
 
 ## Connect
 
-[LinkedIn] · [Twitter] · [Upwork] · [Email]
+[LinkedIn] Â· [Twitter] Â· [Upwork] Â· [Email]
 ```
 
 **Pin the right repos:**
@@ -402,7 +402,7 @@ Visual overview of the system.
 Honest reflection. Shows maturity.
 
 ## Live demo
-[Link to your API] — try it yourself.
+[Link to your API] â€” try it yourself.
 
 ## Stack
 Python, FastAPI, ChromaDB, Redis, OpenAI, Docker
@@ -434,7 +434,7 @@ Python, FastAPI, ChromaDB, Redis, OpenAI, Docker
 
 ### 60-second pitch (for phone screens)
 
-> "I'm an AI Agent Engineer with 5 years of production backend experience. I build RAG systems and LangGraph agent pipelines deployed on Docker with CI/CD. Most recently, I ported a visual n8n workflow to a LangGraph state machine with checkpoint persistence and human-in-the-loop — and I have a live RAG API running on my own infrastructure that I can show you right now."
+> "I'm an AI Agent Engineer with 5 years of production backend experience. I build RAG systems and LangGraph agent pipelines deployed on Docker with CI/CD. Most recently, I ported a visual n8n workflow to a LangGraph state machine with checkpoint persistence and human-in-the-loop â€” and I have a live RAG API running on my own infrastructure that I can show you right now."
 
 ### Additional interview questions (beyond the 10 in Phase 5)
 
@@ -479,9 +479,9 @@ Each tenant gets an isolated collection in ChromaDB. API keys map to tenant IDs 
 
 **Q16: How do you handle context window limits in long conversations?**
 Three strategies:
-1. Sliding window — keep the last N messages, drop older ones
-2. Summarization — periodically summarize old context into a system message
-3. Selective retrieval — retrieve only the 5 most relevant past exchanges using vector similarity on conversation history
+1. Sliding window â€” keep the last N messages, drop older ones
+2. Summarization â€” periodically summarize old context into a system message
+3. Selective retrieval â€” retrieve only the 5 most relevant past exchanges using vector similarity on conversation history
 
 ### System design: Whiteboard a RAG system
 
@@ -553,11 +553,11 @@ If you get a take-home assignment, here's how to ace it:
 
 1. **Read the spec twice** before writing any code
 2. **Spend 30 min on architecture** before coding
-3. **Add tests** — this is the easiest way to stand out
+3. **Add tests** â€” this is the easiest way to stand out
 4. **Write a README** explaining your decisions
 5. **Include a demo** (if it's an API, deploy it temporarily)
-6. **Document tradeoffs** — shows senior thinking
-7. **Ship early** — 80% perfect on day 3 beats 100% perfect on day 7
+6. **Document tradeoffs** â€” shows senior thinking
+7. **Ship early** â€” 80% perfect on day 3 beats 100% perfect on day 7
 
 ---
 
@@ -602,7 +602,7 @@ If you get a take-home assignment, here's how to ace it:
 | Agency | Specialty | How to approach |
 |--------|-----------|----------------|
 | **Hays Dubai** | Tech, engineering, AI | Submit CV on their portal + LinkedIn connect to recruiters |
-| **Michael Page UAE** | Technology, digital | Same — portal + LinkedIn |
+| **Michael Page UAE** | Technology, digital | Same â€” portal + LinkedIn |
 | **Robert Half UAE** | Technology, finance | Portal + follow-up call |
 | **BAC Middle East** | General tech | Walk in or email CV |
 | **Talent Bridge HR** | AI, automation | LinkedIn outreach |
@@ -672,7 +672,7 @@ Rejection email after interview:
 ```
 Thank you for the update. I appreciate you taking the time to
 interview me. If you have any feedback on what I could improve,
-I'd genuinely value hearing it — I'm still early in my AI
+I'd genuinely value hearing it â€” I'm still early in my AI
 engineering transition and every signal helps.
 
 If any other opportunities open up that match my skills,

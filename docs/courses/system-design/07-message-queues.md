@@ -64,7 +64,7 @@ Client ? ? ? ? 202 Accepted (immediate)
 
 | Aspect | Synchronous | Asynchronous |
 |---|---|---|
-| Coupling | Tight — caller knows callee's location | Loose — only the broker is known |
+| Coupling | Tight â€” caller knows callee's location | Loose â€” only the broker is known |
 | Latency | Sum of all service times | Just the publish latency |
 | Availability | Requires all services up | Degrades gracefully |
 | Error handling | Immediate failure notification | Needs retry/DLQ mechanisms |
@@ -77,7 +77,7 @@ Client ? ? ? ? 202 Accepted (immediate)
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-**Point-to-Point (Queue):** A message is consumed by exactly one consumer. Multiple consumers compete for messages — Kafka consumer groups implement this model.
+**Point-to-Point (Queue):** A message is consumed by exactly one consumer. Multiple consumers compete for messages â€” Kafka consumer groups implement this model.
 
 ```
 Producer ? [Queue] ? Consumer A (takes message)
@@ -110,7 +110,7 @@ Apache Kafka is a distributed event streaming platform organized as a commit log
 
 #### Topics and Partitions
 
-A **topic** is a logical channel for messages of a particular type. Each topic is divided into **partitions** — ordered, immutable sequences of messages.
+A **topic** is a logical channel for messages of a particular type. Each topic is divided into **partitions** â€” ordered, immutable sequences of messages.
 
 ```
 Topic "orders":
@@ -119,11 +119,11 @@ Topic "orders":
   Partition 2: [msg0, msg1, msg2, msg3, ...]
 ```
 
-Each message within a partition has a unique **offset** (sequential ID). Messages within a partition are strictly ordered — message at offset 10 was published before offset 11. There is no ordering guarantee across partitions.
+Each message within a partition has a unique **offset** (sequential ID). Messages within a partition are strictly ordered â€” message at offset 10 was published before offset 11. There is no ordering guarantee across partitions.
 
 **Partition assignment:** The producer chooses which partition to write to. Common strategies:
 - **Round-robin:** Even distribution, no ordering guarantee
-- **Key-based:** `partition_id = hash(key) % num_partitions` — ensures all messages with the same key go to the same partition (and thus are ordered)
+- **Key-based:** `partition_id = hash(key) % num_partitions` â€” ensures all messages with the same key go to the same partition (and thus are ordered)
 
 #### Consumer Groups
 
@@ -137,9 +137,9 @@ Topic with 4 partitions:
   Partition 3 ? Consumer A (balanced, A handles 2 partitions)
 ```
 
-If a consumer fails, its partitions are rebalanced to the remaining members. Rebalancing triggers a *stop-the-world* phase where no messages are consumed — this is the cost of the consumer group protocol.
+If a consumer fails, its partitions are rebalanced to the remaining members. Rebalancing triggers a *stop-the-world* phase where no messages are consumed â€” this is the cost of the consumer group protocol.
 
-**Offset management:** Each consumer group tracks its committed offset per partition — the position of the last processed message. When a consumer restarts, it resumes from the committed offset.
+**Offset management:** Each consumer group tracks its committed offset per partition â€” the position of the last processed message. When a consumer restarts, it resumes from the committed offset.
 
 ```
 Consumer group "order-processor", topic "orders", partition 0:
@@ -157,7 +157,7 @@ The ISR set contains all followers that are fully caught up with the leader. A f
 Partition with replication factor 3:
   Leader: Broker 0 (handles reads/writes)
   Follower: Broker 1 (in ISR)
-  Follower: Broker 2 (out of ISR — lagging by 45s ? removed from ISR)
+  Follower: Broker 2 (out of ISR â€” lagging by 45s ? removed from ISR)
 ```
 
 **`acks` producer setting:**
@@ -299,7 +299,7 @@ If consumer crashes before ack ? message is redelivered ? processed twice
 Messages are delivered exactly once, even in the presence of failures. This is the hardest guarantee to achieve in a distributed system.
 
 **Exactly-once in Kafka (EOS):**
-1. **Idempotent producer:** Each batch carries a unique producer ID (PID) and sequence number. The broker deduplicates based on this — if a batch is received twice with the same PID and sequence number, it is ignored.
+1. **Idempotent producer:** Each batch carries a unique producer ID (PID) and sequence number. The broker deduplicates based on this â€” if a batch is received twice with the same PID and sequence number, it is ignored.
 
 2. **Transactional writes:** The producer wraps multiple messages into a transaction. All messages in the transaction become visible atomically. The broker writes a *commit marker* to the log.
 
@@ -441,7 +441,7 @@ MySQL ? Debezium ? Kafka Topic "db.orders.orders"
 
 ### Backpressure
 
-Backpressure occurs when a consumer cannot process messages as fast as the producer publishes them. Without backpressure, the system degrades — queues grow unbounded, memory fills, and latency increases.
+Backpressure occurs when a consumer cannot process messages as fast as the producer publishes them. Without backpressure, the system degrades â€” queues grow unbounded, memory fills, and latency increases.
 
 **Strategies:**
 
@@ -454,7 +454,7 @@ Backpressure occurs when a consumer cannot process messages as fast as the produ
 4. **Reactive streams (Reactive Manifesto):** Protocol-level backpressure (e.g., RSocket, ReactiveX). The consumer tells the producer exactly how many more items it can handle.
 
 ```java
-// ReactiveX example — backpressure via request(n)
+// ReactiveX example â€” backpressure via request(n)
 Observable.range(1, 1000)
     .subscribe(new Subscriber<Integer>() {
         @Override
@@ -470,7 +470,7 @@ Observable.range(1, 1000)
     });
 ```
 
-**Kafka backpressure:** Kafka handles backpressure through consumer polling. The consumer calls `poll(maxRecords)` — the broker sends at most `maxRecords` messages. The consumer controls the rate. If the consumer falls behind, messages accumulate on the broker (retained for `retention.ms`). This provides natural backpressure — the consumer processes at its own speed.
+**Kafka backpressure:** Kafka handles backpressure through consumer polling. The consumer calls `poll(maxRecords)` â€” the broker sends at most `maxRecords` messages. The consumer controls the rate. If the consumer falls behind, messages accumulate on the broker (retained for `retention.ms`). This provides natural backpressure â€” the consumer processes at its own speed.
 
 ### Priority Queues
 
@@ -904,7 +904,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - Dead-letter queues provide a safety net for messages that cannot be processed, enabling redrive after issue resolution
 - Event sourcing stores all state changes as an ordered event sequence, enabling complete audit trails, temporal queries, and multiple projections from the same event stream
 - Change data capture with Debezium bridges databases and event streams without application-level code changes
-- Backpressure must be explicitly managed — Kafka's consumer pull model provides natural rate limiting, while reactive streams implement protocol-level demand signaling
+- Backpressure must be explicitly managed â€” Kafka's consumer pull model provides natural rate limiting, while reactive streams implement protocol-level demand signaling
 - Priority queues enable time-critical processing by draining higher-priority messages first
 - The transactional outbox pattern solves the dual-write problem by atomically writing events alongside business data in the same transaction
 
@@ -950,13 +950,13 @@ Design an event-sourced ledger system for a financial exchange processing 50,000
 
 2. **Event store topology:** Design the Kafka topology. Specify topic names, partition count, replication factor, retention policy, compaction settings, and consumer groups. Justify each choice.
 
-3. **Projection design:** Show the code for rebuilding an account balance from the event stream. Then design a snapshot strategy — specify snapshot interval (based on event count), snapshot schema, and how rebuilding works from a snapshot.
+3. **Projection design:** Show the code for rebuilding an account balance from the event stream. Then design a snapshot strategy â€” specify snapshot interval (based on event count), snapshot schema, and how rebuilding works from a snapshot.
 
 4. **Exactly-once reconciliation:** Design a reconciliation process that runs nightly. It compares the event-sourced ledger balances with the actual database balances. If discrepancies exist, explain how you trace back through the event stream to find the root cause.
 
 5. **Audit query optimization:** An auditor needs to query the balance of account 12345 as of March 15, 2024 at 14:30:00 UTC. Current event volume is 4.3 billion events. Describe the query path (snapshot lookup + event replay) and estimate the expected query time. How would you optimize for sub-second audit queries?
 
-6. **Failure scenarios:** Describe what happens in each scenario — how events are recovered and whether any data is lost:
+6. **Failure scenarios:** Describe what happens in each scenario â€” how events are recovered and whether any data is lost:
    - Kafka broker fails (disk corruption)
    - Consumer crashes after processing an event but before committing the offset
    - The event store's snapshot table becomes corrupted

@@ -1,4 +1,4 @@
-# Chapter 4 — JavaScript and the DOM
+# Chapter 4 â€” JavaScript and the DOM
 
 > **Previous:** [03-js-basics](./03-js-basics.md) | **Next:** [05-es6-plus](./05-es6-plus.md)
 
@@ -15,10 +15,10 @@ By the end of this chapter, you will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 |Selecting Elements|`querySelector` and `querySelectorAll` use CSS selector syntax|Use `closest()` to find the nearest ancestor matching a selector|
-|DOM Traversal|Properties like `parentElement`, `children`, and `nextElementSibling` navigate the tree|Chain traversal methods cautiously � check for null at each step|
+|DOM Traversal|Properties like `parentElement`, `children`, and `nextElementSibling` navigate the tree|Chain traversal methods cautiously — check for null at each step|
 |Manipulation|`createElement`,`appendChild`,`prepend`,`remove` modify the DOM tree|Use `insertAdjacentHTML` as a safer alternative to `innerHTML`|
 |Events|The event lifecycle has capture, target, and bubble phases|Use event delegation to handle many child elements with one listener|
-|FormData|Captures form field values and file uploads programmatically|Pass `FormData` directly to `fetch()` � `Content-Type` auto-sets to multipart|
+|FormData|Captures form field values and file uploads programmatically|Pass `FormData` directly to `fetch()` — `Content-Type` auto-sets to multipart|
 |Observers|`IntersectionObserver` and `ResizeObserver` enable performant reactive behaviors|Use `IntersectionObserver` for lazy loading and `ResizeObserver` for responsive components|
 
 ## Chapter Roadmap
@@ -54,7 +54,7 @@ graph TD
 
 ## Theory
 
-> **One-Sentence Takeaway:** Events propagate through capture, target, and bubble phases � delegation exploits bubbling for efficiency.
+> **One-Sentence Takeaway:** Events propagate through capture, target, and bubble phases — delegation exploits bubbling for efficiency.
 
 ![DOM Manipulation Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/04-dom.png)
 
@@ -124,7 +124,7 @@ parent.insertBefore(div, referenceChild);   // Before reference child
 reference.after(div);                       // Inserts after reference
 reference.before(div);                      // Inserts before reference
 
-// HTML injection (use with caution — XSS risk)
+// HTML injection (use with caution â€” XSS risk)
 element.innerHTML = '<strong>Bold text</strong>';
 
 // Safer alternative
@@ -207,9 +207,9 @@ element.addEventListener('click', handler, {
 
 When a DOM event fires, it travels in three phases:
 
-1. **Capture phase** — Event travels from `document` down to the target element.
-2. **Target phase** — Event reaches the target element.
-3. **Bubble phase** — Event travels from target back up to `document`.
+1. **Capture phase** â€” Event travels from `document` down to the target element.
+2. **Target phase** â€” Event reaches the target element.
+3. **Bubble phase** â€” Event travels from target back up to `document`.
 
 ```javascript
 document.addEventListener('click', () => console.log('capture: document'), true);
@@ -303,7 +303,7 @@ form.addEventListener('submit', (event) => {
 
 ### 4.6 IntersectionObserver
 
-`IntersectionObserver` asynchronously observes visibility changes of elements relative to a parent or the viewport — essential for lazy loading, infinite scroll, and animation triggers.
+`IntersectionObserver` asynchronously observes visibility changes of elements relative to a parent or the viewport â€” essential for lazy loading, infinite scroll, and animation triggers.
 
 ```javascript
 const observer = new IntersectionObserver(
@@ -329,7 +329,7 @@ document.querySelectorAll('img[data-src]').forEach((img) => observer.observe(img
 
 ### 4.7 MutationObserver
 
-`MutationObserver` watches for DOM changes � useful for detecting when content is dynamically added.
+`MutationObserver` watches for DOM changes — useful for detecting when content is dynamically added.
 
 ```javascript
 const observer = new MutationObserver((mutations) => {
@@ -443,7 +443,7 @@ Usage in HTML:
 const resizeObserver = new ResizeObserver((entries) => {
   for (const entry of entries) {
     const { width, height } = entry.contentBoxSize[0];
-    console.log(`Element is now ${width}px × ${height}px`);
+    console.log(`Element is now ${width}px Ã— ${height}px`);
 
     // Adjust layout or behavior based on size
     entry.target.classList.toggle('compact', width < 400);
@@ -461,7 +461,7 @@ resizeObserver.observe(document.querySelector('.responsive-panel'));
 > `innerHTML` poses an XSS risk. Use `textContent` for text and `insertAdjacentHTML` when you must insert HTML from trusted sources.
 
 > [!REMEMBER]
-> `querySelectorAll` returns a static NodeList � changes to the DOM after selection are not reflected. Use `getElementsByClassName` for a live collection.
+> `querySelectorAll` returns a static NodeList — changes to the DOM after selection are not reflected. Use `getElementsByClassName` for a live collection.
 
 
 
@@ -823,11 +823,11 @@ export { Processor, Task }
 
 ### Practical Takeaways
 
-1. **Use event delegation for dynamic content** � attach one listener to a parent and use `event.target.closest()` to handle events from elements added after initial render.
-2. **Prefer `textContent` over `innerHTML`** � `textContent` is safe from XSS and faster because it does not parse HTML. Use `insertAdjacentHTML` when you must insert safe HTML.
-3. **Use `IntersectionObserver` for lazy loading** � it is more performant than scroll event listeners because it is browser-native and does not block the main thread.
-4. **Passive event listeners improve scroll performance** � add `{ passive: true }` to scroll and touch event listeners when you do not need `preventDefault()`.
-5. **Custom Elements encapsulate reusable behavior** � use Shadow DOM for style isolation and lifecycle callbacks for setup/cleanup. (`listbox`, `option`), keyboard navigation (arrow keys, Enter, Escape), and `ResizeObserver` to ensure the dropdown panel stays within the viewport. The component must:
+1. **Use event delegation for dynamic content** — attach one listener to a parent and use `event.target.closest()` to handle events from elements added after initial render.
+2. **Prefer `textContent` over `innerHTML`** — `textContent` is safe from XSS and faster because it does not parse HTML. Use `insertAdjacentHTML` when you must insert safe HTML.
+3. **Use `IntersectionObserver` for lazy loading** — it is more performant than scroll event listeners because it is browser-native and does not block the main thread.
+4. **Passive event listeners improve scroll performance** — add `{ passive: true }` to scroll and touch event listeners when you do not need `preventDefault()`.
+5. **Custom Elements encapsulate reusable behavior** — use Shadow DOM for style isolation and lifecycle callbacks for setup/cleanup. (`listbox`, `option`), keyboard navigation (arrow keys, Enter, Escape), and `ResizeObserver` to ensure the dropdown panel stays within the viewport. The component must:
    - Expand and collapse on click and Enter/Space
    - Navigate options with arrow keys (circular wrapping)
    - Set `aria-selected` on the active option

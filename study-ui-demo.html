@@ -3,15 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Study Focus — UI Demo</title>
+  <title>StudyFocus — Psychology-Optimized UI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
-    /* ===== RESET ===== */
+    /* ============================================================
+       STUDY-FOCUSED UI DESIGN SYSTEM
+       Psychology-optimized for deep focus, memory retention,
+       and reduced cognitive load.
+       ============================================================ */
+
+    /* ---------- RESET ---------- */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    /* ===== COLORS ===== */
+    /* ---------- COLOR SYSTEM ----------
+       Background:  soft off-white (not pure white)  — #F5F7FB
+       Surfaces:    pure white for cards             — #FFFFFF
+       Primary:     deep slate (not black)           — #1E293B
+       Secondary:   muted gray                       — #64748B
+       Tertiary:    lighter gray for metadata        — #94A3B8
+       Accent:      warm orange (calm, not red)      — #F97316
+       Green:       calm green for positive signals  — #22C55E
+       Borders:     soft dividers                    — #E2E8F0 / #F1F5F9
+       No pure red, no neon, no harsh black/white.
+       --------------------------------------------------------- */
     :root {
       --bg: #F5F7FB;
       --surface: #FFFFFF;
@@ -22,6 +38,8 @@
       --accent-light: #FFF7ED;
       --accent-green: #22C55E;
       --accent-green-light: #F0FDF4;
+      --accent-blue: #3B82F6;
+      --accent-blue-light: #EFF6FF;
       --border: #E2E8F0;
       --divider: #F1F5F9;
       --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
@@ -29,7 +47,14 @@
       --radius-sm: 8px;
     }
 
-    /* ===== BASE ===== */
+    /* ---------- TYPOGRAPHY ----------
+       Font:       Inter (sans-serif), JetBrains Mono (code)
+       Body:       16px · 1.7 line-height
+       H1:         28px · 1.3 · 700 weight
+       H2:         22px · 1.35 · 600 weight
+       H3:         18px · 1.4 · 600 weight
+       Max width:  70ch for optimal reading
+       --------------------------------------------------------- */
     html { font-size: 16px; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -40,10 +65,9 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* ===== LAYOUT ===== */
     .app { display: flex; min-height: 100vh; }
 
-    /* ===== SIDEBAR ===== */
+    /* ---------- SIDEBAR ---------- */
     .sidebar {
       width: 240px;
       flex-shrink: 0;
@@ -79,9 +103,17 @@
     .sidebar-link.active { background: var(--accent-light); color: var(--accent); font-weight: 600; }
     .sidebar-link svg { width: 18px; height: 18px; flex-shrink: 0; opacity: 0.7; }
     .sidebar-link.active svg { opacity: 1; }
-    .sidebar-section { margin-top: 24px; padding: 0 12px 8px; font-size: 11px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: var(--text-tertiary); }
+    .sidebar-section {
+      margin-top: 24px;
+      padding: 0 12px 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+    }
 
-    /* ===== MAIN CONTENT ===== */
+    /* ---------- MAIN CONTENT ---------- */
     .main {
       flex: 1;
       max-width: 960px;
@@ -89,20 +121,20 @@
       padding: 40px 48px;
     }
 
-    /* ===== TYPOGRAPHY ===== */
+    /* ---------- TYPOGRAPHY SCALE ---------- */
     h1 { font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -0.5px; color: var(--text-primary); margin-bottom: 8px; }
     h2 { font-size: 22px; font-weight: 600; line-height: 1.35; letter-spacing: -0.3px; color: var(--text-primary); margin-bottom: 6px; }
     h3 { font-size: 18px; font-weight: 600; line-height: 1.4; color: var(--text-primary); margin-bottom: 4px; }
     p { margin-bottom: 16px; max-width: 70ch; color: var(--text-primary); }
     .text-secondary { color: var(--text-secondary); font-size: 14px; }
 
-    /* ===== VERTICAL RHYTHM ===== */
-    .space-row-12 { height: 12px; }
-    .space-row-16 { height: 16px; }
-    .space-row-24 { height: 24px; }
-    .space-row-32 { height: 32px; }
+    /* ---------- VERTICAL SPACING SYSTEM (12 / 16 / 24 / 32 px) ---------- */
+    .space-12 { height: 12px; }
+    .space-16 { height: 16px; }
+    .space-24 { height: 24px; }
+    .space-32 { height: 32px; }
 
-    /* ===== CARD ===== */
+    /* ---------- CARD ---------- */
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -115,7 +147,7 @@
     .card-title { font-size: 16px; font-weight: 600; color: var(--text-primary); }
     .card-subtitle { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
 
-    /* ===== TOP BAR ===== */
+    /* ---------- TOP BAR ---------- */
     .topbar {
       display: flex; align-items: center; justify-content: space-between;
       margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid var(--divider);
@@ -129,7 +161,7 @@
     }
     .progress-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width 0.4s ease; }
 
-    /* ===== BULLET LIST ===== */
+    /* ---------- BULLET LIST ---------- */
     .bullet-list { list-style: none; padding: 0; }
     .bullet-list li {
       position: relative;
@@ -147,7 +179,7 @@
       opacity: 0.5;
     }
 
-    /* ===== DEFINITION TABLE ===== */
+    /* ---------- DEFINITION TABLE ---------- */
     .def-table { width: 100%; border-collapse: collapse; }
     .def-table td {
       padding: 10px 0;
@@ -159,7 +191,7 @@
     .def-table td:last-child { color: var(--text-secondary); }
     .def-table tr:last-child td { border-bottom: none; }
 
-    /* ===== CODE / MONO ===== */
+    /* ---------- CODE / MONOSPACE ---------- */
     code, .mono {
       font-family: 'JetBrains Mono', 'Fira Code', monospace;
       font-size: 14px;
@@ -183,7 +215,7 @@
     .code-block .cm { color: var(--text-tertiary); font-style: italic; }
     .code-block .num { color: #D97706; }
 
-    /* ===== HIGHLIGHT BOX ===== */
+    /* ---------- HIGHLIGHT BOX ---------- */
     .highlight-box {
       background: var(--accent-light);
       border-left: 3px solid var(--accent);
@@ -194,11 +226,11 @@
     .highlight-box p { margin: 0; font-size: 14px; color: var(--text-primary); }
     .highlight-box.green { background: var(--accent-green-light); border-left-color: var(--accent-green); }
 
-    /* ===== GRID ===== */
+    /* ---------- GRID ---------- */
     .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
 
-    /* ===== STAT CARD ===== */
+    /* ---------- STAT CARD ---------- */
     .stat-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -210,7 +242,7 @@
     .stat-label { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
     .stat-trend { font-size: 12px; font-weight: 600; color: var(--accent-green); margin-top: 4px; }
 
-    /* ===== FORM / INPUT ===== */
+    /* ---------- SEARCH INPUT ---------- */
     .search-box {
       display: flex; align-items: center;
       background: var(--surface);
@@ -231,7 +263,7 @@
     .search-box input::placeholder { color: var(--text-tertiary); }
     .search-box svg { width: 16px; height: 16px; color: var(--text-tertiary); flex-shrink: 0; }
 
-    /* ===== QUIZ ITEM ===== */
+    /* ---------- QUIZ ---------- */
     .quiz-option {
       display: flex; align-items: center; gap: 12px;
       padding: 12px 16px;
@@ -252,7 +284,7 @@
     .quiz-option:hover .radio { border-color: var(--accent); }
     .quiz-option .label { font-size: 14px; color: var(--text-primary); }
 
-    /* ===== TOPIC TAG ===== */
+    /* ---------- TOPIC TAG ---------- */
     .topic-tag {
       display: inline-block;
       padding: 4px 12px;
@@ -266,44 +298,7 @@
     }
     .topic-tag:hover { background: var(--accent-light); color: var(--accent); }
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 860px) {
-      .sidebar { display: none; }
-      .main { padding: 24px 20px; }
-      .grid-2 { grid-template-columns: 1fr; }
-      .grid-3 { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 600px) {
-      .topbar { flex-direction: column; align-items: stretch; gap: 12px; }
-      .card { padding: 20px; }
-      h1 { font-size: 24px; }
-      h2 { font-size: 20px; }
-    }
-
-    /* ===== DIVIDER ===== */
-    hr { border: none; border-top: 1px solid var(--divider); margin: 32px 0; }
-
-    /* ===== CHECKLIST ===== */
-    .checklist { list-style: none; padding: 0; }
-    .checklist li {
-      display: flex; align-items: flex-start; gap: 10px;
-      padding: 8px 0;
-      font-size: 15px;
-      color: var(--text-primary);
-    }
-    .checklist li::before {
-      content: '✓';
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 20px; height: 20px; flex-shrink: 0;
-      background: var(--accent-green-light);
-      color: var(--accent-green);
-      border-radius: 50%;
-      font-size: 11px;
-      font-weight: 700;
-      margin-top: 2px;
-    }
-
-    /* ===== FLASHCARD ===== */
+    /* ---------- FLASHCARD ---------- */
     .flashcard {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -323,7 +318,7 @@
       border-left: 3px solid var(--accent);
     }
 
-    /* ===== NOTE ===== */
+    /* ---------- NOTE ---------- */
     .note {
       background: var(--bg);
       border-radius: var(--radius-sm);
@@ -334,12 +329,60 @@
       margin: 12px 0;
     }
     .note strong { color: var(--text-primary); }
+
+    /* ---------- CHECKLIST ---------- */
+    .checklist { list-style: none; padding: 0; }
+    .checklist li {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 0;
+      font-size: 15px;
+      color: var(--text-primary);
+    }
+    .checklist li::before {
+      content: '✓';
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 20px; height: 20px; flex-shrink: 0;
+      background: var(--accent-green-light);
+      color: var(--accent-green);
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    /* ---------- DIVIDER ---------- */
+    hr { border: none; border-top: 1px solid var(--divider); margin: 32px 0; }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 860px) {
+      .sidebar { display: none; }
+      .main { padding: 24px 20px; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .topbar { flex-direction: column; align-items: stretch; gap: 12px; }
+      .topbar-right { justify-content: space-between; }
+      .card { padding: 20px; }
+      h1 { font-size: 24px; }
+      h2 { font-size: 20px; }
+    }
+
+    /* ---------- PRINT ---------- */
+    @media print {
+      .sidebar { display: none; }
+      .app { display: block; }
+      .main { max-width: 100%; padding: 20px; }
+      .card, .stat-card, .flashcard { box-shadow: none; border: 1px solid #ccc; }
+    }
   </style>
 </head>
 <body>
   <div class="app">
 
-    <!-- ===== SIDEBAR ===== -->
+    <!-- ============================================================
+         SIDEBAR — Navigation (Notion-inspired simplicity)
+         ============================================================ -->
     <aside class="sidebar">
       <div class="sidebar-logo">StudyFocus</div>
       <nav class="sidebar-nav">
@@ -372,10 +415,12 @@
       </nav>
     </aside>
 
-    <!-- ===== MAIN ===== -->
+    <!-- ============================================================
+         MAIN CONTENT
+         ============================================================ -->
     <main class="main">
 
-      <!-- Top Bar -->
+      <!-- ---- TOP BAR ---- -->
       <div class="topbar">
         <div class="breadcrumb">Dashboard / <span>Data Structures</span></div>
         <div class="topbar-right">
@@ -388,14 +433,14 @@
         </div>
       </div>
 
-      <!-- Page Title -->
+      <!-- ---- PAGE TITLE ---- -->
       <h1>Data Structures</h1>
-      <p class="text-secondary" style="margin-bottom:24px">
+      <p class="text-secondary" style="margin-bottom:24px;max-width:70ch">
         Master the fundamental building blocks of efficient software. Each concept is
         presented in focused, digestible sections to maximize retention.
       </p>
 
-      <!-- Stats Row -->
+      <!-- ---- STATS ROW ---- -->
       <div class="grid-3" style="margin-bottom:24px">
         <div class="stat-card">
           <div class="stat-value">8</div>
@@ -414,7 +459,9 @@
         </div>
       </div>
 
-      <!-- ===== SECTION: Learning Objectives ===== -->
+      <!-- =============================================================
+           SECTION 1 — Learning Objectives (one idea per block)
+           ============================================================= -->
       <div class="card">
         <div class="card-header">
           <div>
@@ -431,9 +478,11 @@
         </ul>
       </div>
 
-      <!-- ===== SECTION: Theory — One Idea ===== -->
+      <!-- =============================================================
+           SECTION 2 — Theory (one concept at a time)
+           ============================================================= -->
       <h2>Memory Layout</h2>
-      <div class="space-row-12"></div>
+      <div class="space-12"></div>
       <p>
         An array stores elements in <strong>contiguous memory locations</strong>.
         This guarantees constant-time access to any element through base-address
@@ -455,11 +504,13 @@
         </div>
       </div>
 
-      <div class="space-row-24"></div>
+      <div class="space-24"></div>
 
-      <!-- ===== SECTION: Code / Formula ===== -->
+      <!-- =============================================================
+           SECTION 3 — Code Implementation
+           ============================================================= -->
       <h2>Dynamic Array Implementation</h2>
-      <div class="space-row-12"></div>
+      <div class="space-12"></div>
       <div class="code-block">
 <span class="cm">// Dynamic array with geometric resizing (factor 2)</span>
 <span class="kw">class</span> <span class="fn">DynamicArray</span>&lt;T&gt; {
@@ -486,9 +537,11 @@
   }
 }</div>
 
-      <!-- ===== SECTION: Formula ===== -->
+      <!-- =============================================================
+           SECTION 4 — Formula (monospace for math)
+           ============================================================= -->
       <h2>Address Calculation</h2>
-      <div class="space-row-12"></div>
+      <div class="space-12"></div>
       <p>
         For a 1-indexed array with base address <code>B</code> and element size
         <code>s</code> bytes:
@@ -503,9 +556,11 @@
 
       <hr />
 
-      <!-- ===== SECTION: Common Operations ===== -->
+      <!-- =============================================================
+           SECTION 5 — Common Operations (bullet points preferred)
+           ============================================================= -->
       <h2>Common Operations</h2>
-      <div class="space-row-16"></div>
+      <div class="space-16"></div>
       <table class="def-table">
         <tr><td>Traversal</td><td>Visit every element — O(n) time, O(1) space</td></tr>
         <tr><td>Insertion (end)</td><td>Append to last occupied slot — O(1) amortized</td></tr>
@@ -516,9 +571,11 @@
 
       <hr />
 
-      <!-- ===== SECTION: Bullet Points ===== -->
+      <!-- =============================================================
+           SECTION 6 — When to Use (bullet points)
+           ============================================================= -->
       <h2>When to Use Arrays</h2>
-      <div class="space-row-12"></div>
+      <div class="space-12"></div>
       <ul class="bullet-list">
         <li>You need fast index-based access to elements</li>
         <li>The collection size is known ahead of time or grows predictably</li>
@@ -527,11 +584,13 @@
         <li>Insertions and deletions at the ends are the common case</li>
       </ul>
 
-      <div class="space-row-24"></div>
+      <div class="space-24"></div>
 
-      <!-- ===== SECTION: Flashcard ===== -->
+      <!-- =============================================================
+           SECTION 7 — Active Recall (flashcard)
+           ============================================================= -->
       <h2>Active Recall</h2>
-      <div class="space-row-12"></div>
+      <div class="space-12"></div>
       <div class="flashcard">
         <div class="question">What is the time complexity of inserting an element at index 0 in an array of size n?</div>
         <div class="hint">Think about what happens to the existing elements</div>
@@ -543,9 +602,11 @@
 
       <hr />
 
-      <!-- ===== SECTION: Chapter Quiz ===== -->
+      <!-- =============================================================
+           SECTION 8 — Chapter Quiz (5 MCQ)
+           ============================================================= -->
       <h2>Quick Check</h2>
-      <div class="space-row-16"></div>
+      <div class="space-16"></div>
 
       <p style="font-weight:600;font-size:15px;margin-bottom:12px">
         Which of the following best describes an array's memory layout?
@@ -567,7 +628,7 @@
         <span class="label">Elements stored in sorted order automatically upon insertion</span>
       </div>
 
-      <div class="space-row-16"></div>
+      <div class="space-16"></div>
       <div class="note">
         <strong>Answer:</strong> Option 2 — contiguous memory with index-based addressing.
         This is the defining property of arrays.
@@ -575,9 +636,11 @@
 
       <hr />
 
-      <!-- ===== SECTION: Summary ===== -->
+      <!-- =============================================================
+           SECTION 9 — Summary (concise, bullet points)
+           ============================================================= -->
       <h2>Summary</h2>
-      <div class="space-row-12"></div>
+      <div class="space-12"></div>
       <ul class="bullet-list">
         <li>Arrays store elements in contiguous memory: O(1) access, O(n) insert/delete</li>
         <li>Dynamic arrays amortize resizing cost to O(1) per append</li>
@@ -585,9 +648,11 @@
         <li>Use arrays when size is stable and index access is the primary operation</li>
       </ul>
 
-      <div class="space-row-24"></div>
+      <div class="space-24"></div>
 
-      <!-- ===== SECTION: Exercises ===== -->
+      <!-- =============================================================
+           SECTION 10 — Practice Exercises
+           ============================================================= -->
       <div class="card" style="background:var(--accent-light);border-color:rgba(249,115,22,0.2)">
         <div class="card-title" style="margin-bottom:16px">Practice Exercises</div>
         <ol class="bullet-list" style="counter-reset:ex">
@@ -606,7 +671,7 @@
         </ol>
       </div>
 
-      <div class="space-row-12"></div>
+      <div class="space-12"></div>
       <p class="text-secondary" style="font-size:13px">
         Next topic: Linked Lists — understanding node-based structures and dynamic memory.
       </p>

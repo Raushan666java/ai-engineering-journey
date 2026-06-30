@@ -82,6 +82,7 @@ extra_css:
   - assets/css/blueprint.css
   - assets/css/tabs-scroll.css
   - stylesheets/extra.css
+  - stylesheets/study-theme.css
 
 extra_javascript:
   - assets/js/noise.js

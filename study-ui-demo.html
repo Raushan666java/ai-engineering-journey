@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Focus — UI Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ===== COLORS ===== */
+    :root {
+      --bg: #F5F7FB;
+      --surface: #FFFFFF;
+      --text-primary: #1E293B;
+      --text-secondary: #64748B;
+      --text-tertiary: #94A3B8;
+      --accent: #F97316;
+      --accent-light: #FFF7ED;
+      --accent-green: #22C55E;
+      --accent-green-light: #F0FDF4;
+      --border: #E2E8F0;
+      --divider: #F1F5F9;
+      --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+
+    /* ===== BASE ===== */
+    html { font-size: 16px; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ===== LAYOUT ===== */
+    .app { display: flex; min-height: 100vh; }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 240px;
+      flex-shrink: 0;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 32px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .sidebar-logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      padding: 0 12px;
+      margin-bottom: 24px;
+      letter-spacing: -0.3px;
+    }
+    .sidebar-nav { display: flex; flex-direction: column; gap: 2px; }
+    .sidebar-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .sidebar-link:hover { background: var(--bg); color: var(--text-primary); }
+    .sidebar-link.active { background: var(--accent-light); color: var(--accent); font-weight: 600; }
+    .sidebar-link svg { width: 18px; height: 18px; flex-shrink: 0; opacity: 0.7; }
+    .sidebar-link.active svg { opacity: 1; }
+    .sidebar-section { margin-top: 24px; padding: 0 12px 8px; font-size: 11px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: var(--text-tertiary); }
+
+    /* ===== MAIN CONTENT ===== */
+    .main {
+      flex: 1;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 48px;
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1 { font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -0.5px; color: var(--text-primary); margin-bottom: 8px; }
+    h2 { font-size: 22px; font-weight: 600; line-height: 1.35; letter-spacing: -0.3px; color: var(--text-primary); margin-bottom: 6px; }
+    h3 { font-size: 18px; font-weight: 600; line-height: 1.4; color: var(--text-primary); margin-bottom: 4px; }
+    p { margin-bottom: 16px; max-width: 70ch; color: var(--text-primary); }
+    .text-secondary { color: var(--text-secondary); font-size: 14px; }
+
+    /* ===== VERTICAL RHYTHM ===== */
+    .space-row-12 { height: 12px; }
+    .space-row-16 { height: 16px; }
+    .space-row-24 { height: 24px; }
+    .space-row-32 { height: 32px; }
+
+    /* ===== CARD ===== */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+    .card-title { font-size: 16px; font-weight: 600; color: var(--text-primary); }
+    .card-subtitle { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
+
+    /* ===== TOP BAR ===== */
+    .topbar {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid var(--divider);
+    }
+    .breadcrumb { font-size: 13px; color: var(--text-secondary); }
+    .breadcrumb span { color: var(--text-primary); font-weight: 500; }
+    .topbar-right { display: flex; align-items: center; gap: 16px; }
+    .progress-label { font-size: 13px; color: var(--text-secondary); }
+    .progress-bar {
+      width: 140px; height: 6px; background: var(--divider); border-radius: 3px; overflow: hidden;
+    }
+    .progress-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width 0.4s ease; }
+
+    /* ===== BULLET LIST ===== */
+    .bullet-list { list-style: none; padding: 0; }
+    .bullet-list li {
+      position: relative;
+      padding: 6px 0 6px 20px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-primary);
+    }
+    .bullet-list li::before {
+      content: '';
+      position: absolute; left: 0; top: 14px;
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.5;
+    }
+
+    /* ===== DEFINITION TABLE ===== */
+    .def-table { width: 100%; border-collapse: collapse; }
+    .def-table td {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--divider);
+      font-size: 14px;
+      vertical-align: top;
+    }
+    .def-table td:first-child { font-weight: 600; color: var(--text-primary); width: 140px; }
+    .def-table td:last-child { color: var(--text-secondary); }
+    .def-table tr:last-child td { border-bottom: none; }
+
+    /* ===== CODE / MONO ===== */
+    code, .mono {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .code-block {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 20px 24px;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-primary);
+      margin: 16px 0;
+    }
+    .code-block .kw { color: #7C3AED; }
+    .code-block .fn { color: #2563EB; }
+    .code-block .str { color: #059669; }
+    .code-block .cm { color: var(--text-tertiary); font-style: italic; }
+    .code-block .num { color: #D97706; }
+
+    /* ===== HIGHLIGHT BOX ===== */
+    .highlight-box {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 16px 0;
+    }
+    .highlight-box p { margin: 0; font-size: 14px; color: var(--text-primary); }
+    .highlight-box.green { background: var(--accent-green-light); border-left-color: var(--accent-green); }
+
+    /* ===== GRID ===== */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+
+    /* ===== STAT CARD ===== */
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      box-shadow: var(--shadow);
+    }
+    .stat-value { font-size: 26px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.5px; }
+    .stat-label { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
+    .stat-trend { font-size: 12px; font-weight: 600; color: var(--accent-green); margin-top: 4px; }
+
+    /* ===== FORM / INPUT ===== */
+    .search-box {
+      display: flex; align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0 16px;
+      transition: border-color 0.15s ease;
+    }
+    .search-box:focus-within { border-color: var(--accent); }
+    .search-box input {
+      border: none; outline: none; background: transparent;
+      padding: 10px 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text-primary);
+      width: 220px;
+    }
+    .search-box input::placeholder { color: var(--text-tertiary); }
+    .search-box svg { width: 16px; height: 16px; color: var(--text-tertiary); flex-shrink: 0; }
+
+    /* ===== QUIZ ITEM ===== */
+    .quiz-option {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.12s ease;
+      margin-bottom: 8px;
+    }
+    .quiz-option:hover { border-color: var(--accent); background: var(--accent-light); }
+    .quiz-option .radio {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      flex-shrink: 0;
+      transition: all 0.12s ease;
+    }
+    .quiz-option:hover .radio { border-color: var(--accent); }
+    .quiz-option .label { font-size: 14px; color: var(--text-primary); }
+
+    /* ===== TOPIC TAG ===== */
+    .topic-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      background: var(--bg);
+      color: var(--text-secondary);
+      transition: all 0.12s ease;
+      text-decoration: none;
+    }
+    .topic-tag:hover { background: var(--accent-light); color: var(--accent); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 860px) {
+      .sidebar { display: none; }
+      .main { padding: 24px 20px; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .topbar { flex-direction: column; align-items: stretch; gap: 12px; }
+      .card { padding: 20px; }
+      h1 { font-size: 24px; }
+      h2 { font-size: 20px; }
+    }
+
+    /* ===== DIVIDER ===== */
+    hr { border: none; border-top: 1px solid var(--divider); margin: 32px 0; }
+
+    /* ===== CHECKLIST ===== */
+    .checklist { list-style: none; padding: 0; }
+    .checklist li {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 0;
+      font-size: 15px;
+      color: var(--text-primary);
+    }
+    .checklist li::before {
+      content: '✓';
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 20px; height: 20px; flex-shrink: 0;
+      background: var(--accent-green-light);
+      color: var(--accent-green);
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    /* ===== FLASHCARD ===== */
+    .flashcard {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .flashcard .question { font-size: 17px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+    .flashcard .hint { font-size: 13px; color: var(--text-tertiary); }
+    .flashcard-reveal {
+      margin-top: 16px; padding: 16px;
+      background: var(--accent-light);
+      border-radius: var(--radius-sm);
+      font-size: 15px;
+      color: var(--text-primary);
+      border-left: 3px solid var(--accent);
+    }
+
+    /* ===== NOTE ===== */
+    .note {
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      border-left: 3px solid var(--accent);
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin: 12px 0;
+    }
+    .note strong { color: var(--text-primary); }
+  </style>
+</head>
+<body>
+  <div class="app">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">StudyFocus</div>
+      <nav class="sidebar-nav">
+        <a href="#" class="sidebar-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Dashboard
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Notes
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Study Timer
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Flashcards
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          Progress
+        </a>
+      </nav>
+      <div class="sidebar-section">Subjects</div>
+      <nav class="sidebar-nav">
+        <a href="#" class="sidebar-link"><span style="width:8px;height:8px;border-radius:50%;background:#F97316;display:inline-block;opacity:0.7"></span>Data Structures</a>
+        <a href="#" class="sidebar-link"><span style="width:8px;height:8px;border-radius:50%;background:#22C55E;display:inline-block;opacity:0.7"></span>Algorithms</a>
+        <a href="#" class="sidebar-link"><span style="width:8px;height:8px;border-radius:50%;background:#3B82F6;display:inline-block;opacity:0.7"></span>Mathematics</a>
+      </nav>
+    </aside>
+
+    <!-- ===== MAIN ===== -->
+    <main class="main">
+
+      <!-- Top Bar -->
+      <div class="topbar">
+        <div class="breadcrumb">Dashboard / <span>Data Structures</span></div>
+        <div class="topbar-right">
+          <div class="progress-label">73% complete</div>
+          <div class="progress-bar"><div class="progress-fill" style="width:73%"></div></div>
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <input type="text" placeholder="Search notes..." />
+          </div>
+        </div>
+      </div>
+
+      <!-- Page Title -->
+      <h1>Data Structures</h1>
+      <p class="text-secondary" style="margin-bottom:24px">
+        Master the fundamental building blocks of efficient software. Each concept is
+        presented in focused, digestible sections to maximize retention.
+      </p>
+
+      <!-- Stats Row -->
+      <div class="grid-3" style="margin-bottom:24px">
+        <div class="stat-card">
+          <div class="stat-value">8</div>
+          <div class="stat-label">Topics remaining</div>
+          <div class="stat-trend">↑ 2 completed this week</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">42</div>
+          <div class="stat-label">Flashcards reviewed</div>
+          <div class="stat-trend">↑ 89% recall rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">6h 12m</div>
+          <div class="stat-label">Study time this week</div>
+          <div class="stat-trend">↑ 18% vs last week</div>
+        </div>
+      </div>
+
+      <!-- ===== SECTION: Learning Objectives ===== -->
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Learning Objectives</div>
+            <div class="card-subtitle">What you will master in this topic</div>
+          </div>
+          <span class="topic-tag">Arrays</span>
+        </div>
+        <ul class="checklist">
+          <li>Understand contiguous memory allocation and index-based access in O(1)</li>
+          <li>Analyze time complexity of insertion, deletion, and traversal operations</li>
+          <li>Implement dynamic arrays with amortized resizing strategies</li>
+          <li>Apply arrays to solve sliding window and two-pointer problems</li>
+        </ul>
+      </div>
+
+      <!-- ===== SECTION: Theory — One Idea ===== -->
+      <h2>Memory Layout</h2>
+      <div class="space-row-12"></div>
+      <p>
+        An array stores elements in <strong>contiguous memory locations</strong>.
+        This guarantees constant-time access to any element through base-address
+        arithmetic. The trade-off is that insertion and deletion require shifting
+        elements, leading to O(n) cost in the worst case.
+      </p>
+
+      <div class="grid-2">
+        <div class="highlight-box">
+          <strong>Access:</strong> O(1) — direct index computation<br />
+          <strong>Search:</strong> O(n) — linear scan<br />
+          <strong>Insert (end):</strong> O(1) amortized<br />
+          <strong>Insert (middle):</strong> O(n) — shift required
+        </div>
+        <div class="highlight-box green">
+          <strong>Key Insight</strong><br />
+          Contiguity enables CPU cache prefetching, making array traversal
+          significantly faster than linked-list traversal in practice.
+        </div>
+      </div>
+
+      <div class="space-row-24"></div>
+
+      <!-- ===== SECTION: Code / Formula ===== -->
+      <h2>Dynamic Array Implementation</h2>
+      <div class="space-row-12"></div>
+      <div class="code-block">
+<span class="cm">// Dynamic array with geometric resizing (factor 2)</span>
+<span class="kw">class</span> <span class="fn">DynamicArray</span>&lt;T&gt; {
+  <span class="kw">private</span> data: T[] = [];
+  <span class="kw">private</span> length = 0;
+
+  <span class="fn">push</span>(item: T): <span class="kw">void</span> {
+    <span class="kw">if</span> (this.length === this.data.length) {
+      <span class="kw">const</span> newSize = this.data.length === 0
+        ? 1
+        : this.data.length * 2;
+      <span class="kw">const</span> newData = <span class="kw">new</span> <span class="fn">Array</span>(newSize);
+      <span class="kw">for</span> (<span class="kw">let</span> i = 0; i &lt; this.length; i++) {
+        newData[i] = this.data[i];
+      }
+      this.data = newData;
+    }
+    this.data[this.length] = item;
+    this.length++;
+  }
+
+  <span class="fn">get</span>(index: <span class="kw">number</span>): T | <span class="kw">undefined</span> {
+    <span class="kw">return</span> index &lt; this.length ? this.data[index] : <span class="kw">undefined</span>;
+  }
+}</div>
+
+      <!-- ===== SECTION: Formula ===== -->
+      <h2>Address Calculation</h2>
+      <div class="space-row-12"></div>
+      <p>
+        For a 1-indexed array with base address <code>B</code> and element size
+        <code>s</code> bytes:
+      </p>
+      <div class="code-block" style="text-align:center;font-size:18px;padding:16px">
+        Address(A[i]) = B + (i − 1) × s
+      </div>
+      <p class="text-secondary">
+        Example: <code>int[10]</code> at base address <code>0x1000</code> →
+        <code>A[5]</code> at <code>0x1000 + 4 × 4 = 0x1010</code>
+      </p>
+
+      <hr />
+
+      <!-- ===== SECTION: Common Operations ===== -->
+      <h2>Common Operations</h2>
+      <div class="space-row-16"></div>
+      <table class="def-table">
+        <tr><td>Traversal</td><td>Visit every element — O(n) time, O(1) space</td></tr>
+        <tr><td>Insertion (end)</td><td>Append to last occupied slot — O(1) amortized</td></tr>
+        <tr><td>Insertion (index)</td><td>Shift elements right from index — O(n)</td></tr>
+        <tr><td>Deletion</td><td>Shift elements left to fill gap — O(n)</td></tr>
+        <tr><td>Search</td><td>Linear scan — O(n); binary search on sorted — O(log n)</td></tr>
+      </table>
+
+      <hr />
+
+      <!-- ===== SECTION: Bullet Points ===== -->
+      <h2>When to Use Arrays</h2>
+      <div class="space-row-12"></div>
+      <ul class="bullet-list">
+        <li>You need fast index-based access to elements</li>
+        <li>The collection size is known ahead of time or grows predictably</li>
+        <li>Memory overhead per element must be minimal (no pointer storage)</li>
+        <li>You frequently iterate over elements (cache-friendly)</li>
+        <li>Insertions and deletions at the ends are the common case</li>
+      </ul>
+
+      <div class="space-row-24"></div>
+
+      <!-- ===== SECTION: Flashcard ===== -->
+      <h2>Active Recall</h2>
+      <div class="space-row-12"></div>
+      <div class="flashcard">
+        <div class="question">What is the time complexity of inserting an element at index 0 in an array of size n?</div>
+        <div class="hint">Think about what happens to the existing elements</div>
+        <div class="flashcard-reveal">
+          <strong>O(n)</strong> — every existing element must be shifted one position
+          to the right to make room at index 0.
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- ===== SECTION: Chapter Quiz ===== -->
+      <h2>Quick Check</h2>
+      <div class="space-row-16"></div>
+
+      <p style="font-weight:600;font-size:15px;margin-bottom:12px">
+        Which of the following best describes an array's memory layout?
+      </p>
+      <div class="quiz-option">
+        <div class="radio"></div>
+        <span class="label">Elements stored in non-contiguous heap-allocated nodes</span>
+      </div>
+      <div class="quiz-option">
+        <div class="radio"></div>
+        <span class="label">Elements stored contiguously with index-based addressing</span>
+      </div>
+      <div class="quiz-option">
+        <div class="radio"></div>
+        <span class="label">Elements stored in random memory locations linked by pointers</span>
+      </div>
+      <div class="quiz-option">
+        <div class="radio"></div>
+        <span class="label">Elements stored in sorted order automatically upon insertion</span>
+      </div>
+
+      <div class="space-row-16"></div>
+      <div class="note">
+        <strong>Answer:</strong> Option 2 — contiguous memory with index-based addressing.
+        This is the defining property of arrays.
+      </div>
+
+      <hr />
+
+      <!-- ===== SECTION: Summary ===== -->
+      <h2>Summary</h2>
+      <div class="space-row-12"></div>
+      <ul class="bullet-list">
+        <li>Arrays store elements in contiguous memory: O(1) access, O(n) insert/delete</li>
+        <li>Dynamic arrays amortize resizing cost to O(1) per append</li>
+        <li>Cache locality makes arrays faster than linked structures for iteration</li>
+        <li>Use arrays when size is stable and index access is the primary operation</li>
+      </ul>
+
+      <div class="space-row-24"></div>
+
+      <!-- ===== SECTION: Exercises ===== -->
+      <div class="card" style="background:var(--accent-light);border-color:rgba(249,115,22,0.2)">
+        <div class="card-title" style="margin-bottom:16px">Practice Exercises</div>
+        <ol class="bullet-list" style="counter-reset:ex">
+          <li style="padding-left:28px;counter-increment:ex">
+            <span style="position:absolute;left:0;top:6px;font-weight:600;color:var(--accent);font-size:14px;">1.</span>
+            Write a function that reverses an array in-place with O(n) time and O(1) space.
+          </li>
+          <li style="padding-left:28px;counter-increment:ex;margin-top:8px">
+            <span style="position:absolute;left:0;top:6px;font-weight:600;color:var(--accent);font-size:14px;">2.</span>
+            Implement a circular buffer using a fixed-size array with head and tail pointers.
+          </li>
+          <li style="padding-left:28px;counter-increment:ex;margin-top:8px">
+            <span style="position:absolute;left:0;top:6px;font-weight:600;color:var(--accent);font-size:14px;">3.</span>
+            Given an array of integers, find the contiguous subarray with the largest sum (Kadane's algorithm).
+          </li>
+        </ol>
+      </div>
+
+      <div class="space-row-12"></div>
+      <p class="text-secondary" style="font-size:13px">
+        Next topic: Linked Lists — understanding node-based structures and dynamic memory.
+      </p>
+
+    </main>
+  </div>
+</body>
+</html>

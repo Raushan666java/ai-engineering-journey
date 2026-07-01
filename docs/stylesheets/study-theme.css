@@ -122,6 +122,7 @@
 /* ---------- BASE ---------- */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 body {
   font-family: var(--st-font-sans);
@@ -187,6 +188,7 @@ body {
   .md-main__inner {
     display: flex;
     gap: 0;
+    min-height: calc(100vh - 5.6rem);
   }
 
   .md-sidebar--primary {
@@ -457,7 +459,15 @@ body {
   color: var(--st-text-primary) !important;
   margin: 0 0 16px !important;
   position: relative;
-  background: linear-gradient(135deg, var(--st-text-primary) 0%, var(--st-text-primary) 50%, var(--st-accent) 100%);
+}
+[data-md-color-scheme="default"] .md-typeset h1 {
+  background: linear-gradient(135deg, #0F172A 0%, #0F172A 55%, #3553FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  background: linear-gradient(135deg, #F1F5F9 0%, #F1F5F9 55%, #5B7BFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -570,14 +580,10 @@ body {
 .md-typeset pre {
   border-radius: 12px !important;
   box-shadow: var(--st-shadow-lg) !important;
-  border: 1px solid var(--st-border) !important;
+  border: 1px solid #1E293B !important;
   background: #0B1121 !important;
   position: relative;
   padding-top: 40px !important;
-}
-[data-md-color-scheme="default"] .md-typeset pre {
-  background: #0B1121 !important;
-  border-color: #1E293B !important;
 }
 .md-typeset pre::before {
   content: '';
@@ -799,6 +805,7 @@ body {
   transition: box-shadow 0.2s ease;
   max-width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .mermaid:hover {
   box-shadow: var(--st-shadow-md);
@@ -806,6 +813,13 @@ body {
 .mermaid svg {
   max-width: 100%;
   height: auto;
+}
+.mermaid::-webkit-scrollbar {
+  height: 5px;
+}
+.mermaid::-webkit-scrollbar-thumb {
+  background: var(--st-text-tertiary);
+  border-radius: 3px;
 }
 [data-md-color-scheme="slate"] .mermaid {
   background: #0E1625;
@@ -1236,6 +1250,48 @@ body {
   color: var(--st-accent) !important;
   background: var(--st-accent-light) !important;
   transform: translateY(-2px) !important;
+}
+
+/* CTA row for homepage bottom buttons */
+.cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+.cta-row a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.cta-primary {
+  background: var(--st-accent);
+  color: #fff !important;
+  border: 1px solid var(--st-accent);
+}
+.cta-primary:hover {
+  background: var(--st-accent-strong) !important;
+  border-color: var(--st-accent-strong) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--st-accent-glow);
+}
+.cta-secondary {
+  background: var(--st-surface);
+  color: var(--st-text-primary) !important;
+  border: 1px solid var(--st-border);
+}
+.cta-secondary:hover {
+  border-color: var(--st-accent) !important;
+  background: var(--st-accent-light) !important;
+  transform: translateY(-2px);
 }
 
 /* Fix grid card borders and alignment */

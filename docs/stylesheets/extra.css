@@ -541,7 +541,7 @@ nav .md-nav__link .priority-badge {
 .md-content img[src*="Architecture"],
 .md-content img[src*="flow"],
 .md-content img[src*="Flow"] {
-  max-width: 90%;
+  max-width: 100%;
   display: block;
   margin: 1.5rem auto;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);

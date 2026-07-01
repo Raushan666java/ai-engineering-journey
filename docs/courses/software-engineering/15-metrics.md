@@ -184,15 +184,6 @@ Where:
 | **Rework %** | Rework effort / Total effort | Quality of initial work |
 | **Phase containment** | Defects found in phase / Defects injected | Phase effectiveness |
 
-## Practical Takeaways
-
-1. **Metrics are means, not ends** — measure to improve, not to judge
-2. **Never use a single metric in isolation** — each metric tells part of the story
-3. **GQM prevents vanity metrics** — always derive metrics from goals
-4. **Automate collection** — manual metrics are unreliable and unsustainable
-5. **Trends over thresholds** — a declining trend matters more than a single value
-6. **Share metrics transparently** — hidden metrics erode trust
-
 ## Examples
 
 ### Example 1: Metrics Collection Framework
@@ -713,6 +704,19 @@ class DefectMetricsAnalyzer {
 }
 ```
 
+## Summary
+
+Software metrics provide quantitative data for describing, evaluating, predicting, and improving software processes and products. The GQM paradigm ensures metrics align with goals. Size metrics (LOC, function points) measure scale. Complexity metrics (cyclomatic complexity, Halstead) assess understandability and testability. The Maintainability Index combines multiple metrics into a single maintainability score. Defect metrics track quality across phases. Process metrics measure development efficiency. Metrics collection should be automated, trend-focused, and transparent. Meaningful interpretation requires context, trends over time, and multiple metrics used together.
+
+## Practical Takeaways
+
+1. **Metrics are means, not ends** — measure to improve, not to judge
+2. **Never use a single metric in isolation** — each metric tells part of the story
+3. **GQM prevents vanity metrics** — always derive metrics from goals
+4. **Automate collection** — manual metrics are unreliable and unsustainable
+5. **Trends over thresholds** — a declining trend matters more than a single value
+6. **Share metrics transparently** — hidden metrics erode trust
+
 ## Chapter Quiz
 
 **Q1: The GQM paradigm stands for:**
@@ -920,10 +924,6 @@ console.log(maintainabilityIndex(halstead.volume, 15, 500, 0.15)); // ~70-80 ran
 console.log(cocomo(50, "semi-detached")); // ~200 person-months, ~14 months, ~14 people
 ```
 
-## Summary
-
-Software metrics provide quantitative data for describing, evaluating, predicting, and improving software processes and products. The GQM paradigm ensures metrics align with goals. Size metrics (LOC, function points) measure scale. Complexity metrics (cyclomatic complexity, Halstead) assess understandability and testability. The Maintainability Index combines multiple metrics into a single maintainability score. Defect metrics track quality across phases. Process metrics measure development efficiency. Metrics collection should be automated, trend-focused, and transparent. Meaningful interpretation requires context, trends over time, and multiple metrics used together.
-
 ## Exercises
 
 ### Review Questions
@@ -954,3 +954,4 @@ Software metrics provide quantitative data for describing, evaluating, predictin
 ### Challenge Problem
 
 Design a comprehensive measurement program for a 50-person software engineering organisation. Apply GQM to derive metrics for three goals: improve on-time delivery, reduce post-release defects, and increase team productivity. For each goal, define 2-3 questions and 2-4 metrics per question. Specify collection methods (automated tooling, manual entry), collection frequency, visualisation dashboards, and review cadence. Identify and discuss potential Goodhart's Law effects for each metric (what behaviours might the metric incentivise that undermine the true goal?). Implement a TypeScript program that collects five metrics daily, tracks them over time, generates trend reports, and alerts when any metric deviates more than 2 standard deviations from its rolling 30-day mean.
+

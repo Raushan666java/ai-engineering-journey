@@ -374,56 +374,7 @@ describe('PriceCalculator', () => {
 });
 ```
 
-## Practical Takeaways
-
-1. **Write tests first (TDD)** — it forces you to think about design before implementation
-2. **Follow the test pyramid** — invest most in fast, reliable unit tests
-3. **Test behaviours, not methods** — focus on what the code does, not how it's structured
-4. **Coverage is a hint, not a goal** — 100% coverage doesn't mean 100% correctness
-5. **Use test doubles wisely** — mock external dependencies, but prefer real objects for core logic
-6. **A failing test is progress** — it means you've found a spec-to-implementation gap before production
-
-## Chapter Quiz
-
-**Q1: What is the correct order of the TDD cycle?**
-- A) Green → Red → Refactor
-- B) Red → Green → Refactor
-- C) Refactor → Red → Green
-- D) Red → Refactor → Green
-
-**Answer: B** — Write a failing test (Red), make it pass (Green), improve the code (Refactor).
-
-**Q2: Which coverage criterion is strongest (finds the most defects)?**
-- A) Statement coverage
-- B) Branch coverage
-- C) Path coverage
-- D) Function coverage
-
-**Answer: C** — Path coverage exercises all unique execution paths but is often impractical.
-
-**Q3: What type of test double is an in-memory database that provides a simplified but working implementation?**
-- A) Stub
-- B) Mock
-- C) Fake
-- D) Dummy
-
-**Answer: C** — A Fake is a working implementation with shortcuts.
-
-**Q4: According to the test pyramid, which layer should have the most tests?**
-- A) End-to-end tests
-- B) Service tests
-- C) Unit tests
-- D) Manual tests
-
-**Answer: C** — Unit tests form the broad base of the pyramid.
-
-**Q5: Boundary value analysis is most effective at finding defects because:**
-- A) It tests random values
-- B) Defects frequently occur at input boundaries
-- C) It requires the least test cases
-- D) It tests internal code structure
-
-**Answer: B** — Empirical evidence shows defects cluster at boundary conditions.
+## Examples
 
 ## Test Coverage Analyzer and Quality Dashboard
 
@@ -824,6 +775,57 @@ console.log(tm.getTestPyramid()); // unit:1, integration:1, e2e:0
 
 Software testing is the primary dynamic verification and validation technique. Testing occurs at four levels: unit, integration, system, and acceptance. White-box techniques use knowledge of internal structure; black-box techniques derive test cases from specifications. The test pyramid guides automation investment. TDD follows the red-green-refactor cycle and produces testable designs. Test doubles (dummy, fake, stub, spy, mock) isolate units under test. Property-based testing verifies behavioural properties across input ranges. Non-functional testing addresses performance, security, and usability. Regression testing protects against regression defects.
 
+## Practical Takeaways
+
+1. **Write tests first (TDD)** — it forces you to think about design before implementation
+2. **Follow the test pyramid** — invest most in fast, reliable unit tests
+3. **Test behaviours, not methods** — focus on what the code does, not how it's structured
+4. **Coverage is a hint, not a goal** — 100% coverage doesn't mean 100% correctness
+5. **Use test doubles wisely** — mock external dependencies, but prefer real objects for core logic
+6. **A failing test is progress** — it means you've found a spec-to-implementation gap before production
+
+## Chapter Quiz
+
+**Q1: What is the correct order of the TDD cycle?**
+- A) Green → Red → Refactor
+- B) Red → Green → Refactor
+- C) Refactor → Red → Green
+- D) Red → Refactor → Green
+
+**Answer: B** — Write a failing test (Red), make it pass (Green), improve the code (Refactor).
+
+**Q2: Which coverage criterion is strongest (finds the most defects)?**
+- A) Statement coverage
+- B) Branch coverage
+- C) Path coverage
+- D) Function coverage
+
+**Answer: C** — Path coverage exercises all unique execution paths but is often impractical.
+
+**Q3: What type of test double is an in-memory database that provides a simplified but working implementation?**
+- A) Stub
+- B) Mock
+- C) Fake
+- D) Dummy
+
+**Answer: C** — A Fake is a working implementation with shortcuts.
+
+**Q4: According to the test pyramid, which layer should have the most tests?**
+- A) End-to-end tests
+- B) Service tests
+- C) Unit tests
+- D) Manual tests
+
+**Answer: C** — Unit tests form the broad base of the pyramid.
+
+**Q5: Boundary value analysis is most effective at finding defects because:**
+- A) It tests random values
+- B) Defects frequently occur at input boundaries
+- C) It requires the least test cases
+- D) It tests internal code structure
+
+**Answer: B** — Empirical evidence shows defects cluster at boundary conditions.
+
 ## Exercises
 
 ### Review Questions
@@ -852,3 +854,4 @@ Software testing is the primary dynamic verification and validation technique. T
 ### Challenge Problem
 
 You lead the testing effort for a medical device software system that calculates radiation dosage for cancer treatment. The system must meet FDA regulatory requirements: full traceability from requirements to test cases, 100% decision coverage at unit level, and documented risk-based testing. Design a comprehensive testing strategy. Specify coverage criteria, traceability approach, risk-based testing methods, and the test automation framework. Implement a TypeScript test coverage tracker that maps requirements to test cases and calculates coverage metrics.
+

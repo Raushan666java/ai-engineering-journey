@@ -212,15 +212,6 @@ BorrowBook ________________________________
 __________________________________________
 ```
 
-## Practical Takeaways
-
-1. **Formal methods are not all-or-nothing** — even partial application (lightweight formal methods) catches defects
-2. **Invariants are the most practical formal technique** — state them, enforce them, test them
-3. **Model checking is limited by state space** — use abstraction to manage complexity
-4. **Correctness by construction** — build correct programs incrementally via refinement
-5. **Formal specs expose ambiguity** — the act of writing a formal spec finds requirements gaps
-6. **Critical systems justify formal methods** — safety-critical, security-critical, or where failure costs exceed verification costs
-
 ## Examples
 
 ### Example 1: FSM Implementation in TypeScript
@@ -763,6 +754,19 @@ function validateTransfer(transfer: Transfer): { valid: boolean; violations: str
 }
 ```
 
+## Summary
+
+Formal methods apply mathematical techniques to software specification, development, and verification. Propositional and predicate logic provide the foundation for precise specifications. Finite State Machines model discrete system behaviour. Temporal logic (LTL, CTL) enables reasoning about properties over time. Hoare Logic verifies program correctness using preconditions, postconditions, and weakest preconditions. Invariants capture properties that must hold at specific program points. The Z notation structures formal specifications using schemas. Model checking automatically verifies temporal properties by exhaustively exploring system states. While formal methods are most commonly applied to safety-critical and security-critical systems, even lightweight applications such as the specification pattern in TypeScript improve software quality.
+
+## Practical Takeaways
+
+1. **Formal methods are not all-or-nothing** — even partial application (lightweight formal methods) catches defects
+2. **Invariants are the most practical formal technique** — state them, enforce them, test them
+3. **Model checking is limited by state space** — use abstraction to manage complexity
+4. **Correctness by construction** — build correct programs incrementally via refinement
+5. **Formal specs expose ambiguity** — the act of writing a formal spec finds requirements gaps
+6. **Critical systems justify formal methods** — safety-critical, security-critical, or where failure costs exceed verification costs
+
 ## Chapter Quiz
 
 **Q1: A Hoare triple {P} C {Q} expresses that:**
@@ -991,10 +995,6 @@ checker.addInvariant("y never negative", s => s.y >= 0);
 console.log(checker.checkAll({ x: -1, y: 5 })); // 1 passed, 1 failed
 ```
 
-## Summary
-
-Formal methods apply mathematical techniques to software specification, development, and verification. Propositional and predicate logic provide the foundation for precise specifications. Finite State Machines model discrete system behaviour. Temporal logic (LTL, CTL) enables reasoning about properties over time. Hoare Logic verifies program correctness using preconditions, postconditions, and weakest preconditions. Invariants capture properties that must hold at specific program points. The Z notation structures formal specifications using schemas. Model checking automatically verifies temporal properties by exhaustively exploring system states. While formal methods are most commonly applied to safety-critical and security-critical systems, even lightweight applications such as the specification pattern in TypeScript improve software quality.
-
 ## Exercises
 
 ### Review Questions
@@ -1027,3 +1027,4 @@ A nuclear reactor control system has four states (STARTUP, POWER_OPERATION, SHUT
 - Never reach a state where both temperature > 400°C AND pressure > 200 bar simultaneously
 
 Formalise this system as an FSM with guards. Implement a TypeScript formal verifier that checks all reachable states for safety property violations. Generate counterexamples for any invalid configurations.
+

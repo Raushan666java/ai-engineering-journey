@@ -160,15 +160,6 @@ graph TD
 | **Integrity / signatures** | SHA-256, Ed25519 | 256 bits |
 | **Key exchange** | ECDHE | Curve25519 |
 
-## Practical Takeaways
-
-1. **Never roll your own crypto** — use well-audited libraries
-2. **Sanitise input, encode output** — two different operations, both required
-3. **Password hashing is not encryption** — bcrypt/Argon2id, never SHA or MD5
-4. **Security is not a feature — it is a property of the system**
-5. **HTTPS everywhere** — even internal services should use TLS
-6. **Log security events** — you cannot respond to breaches you do not detect
-
 ## Examples
 
 ### Example 1: Secure Authentication with JWT
@@ -738,6 +729,19 @@ class EnvConfig {
 }
 ```
 
+## Summary
+
+Security engineering is the discipline of building systems that remain secure under attack. The CIA triad (Confidentiality, Integrity, Availability) provides foundational principles. The OWASP Top 10 catalogues the most critical web application risks. Threat modelling using STRIDE identifies security threats systematically. Secure coding practices include input validation, output encoding, parameterised queries, CSRF tokens, and Content Security Policy. Cryptographic primitives must be applied correctly using well-audited libraries. Secrets management ensures that credentials and keys are never hardcoded or exposed. Security testing includes static analysis (SAST), dynamic analysis (DAST), and dependency scanning. Security is an emergent property of the entire system, not a single feature.
+
+## Practical Takeaways
+
+1. **Never roll your own crypto** — use well-audited libraries
+2. **Sanitise input, encode output** — two different operations, both required
+3. **Password hashing is not encryption** — bcrypt/Argon2id, never SHA or MD5
+4. **Security is not a feature — it is a property of the system**
+5. **HTTPS everywhere** — even internal services should use TLS
+6. **Log security events** — you cannot respond to breaches you do not detect
+
 ## Chapter Quiz
 
 **Q1: Which of the following is NOT part of the STRIDE threat model?**
@@ -951,10 +955,6 @@ console.log(model.coverageScore()); // 50
 console.log(model.getRiskHeatmap());
 ```
 
-## Summary
-
-Security engineering is the discipline of building systems that remain secure under attack. The CIA triad (Confidentiality, Integrity, Availability) provides foundational principles. The OWASP Top 10 catalogues the most critical web application risks. Threat modelling using STRIDE identifies security threats systematically. Secure coding practices include input validation, output encoding, parameterised queries, CSRF tokens, and Content Security Policy. Cryptographic primitives must be applied correctly using well-audited libraries. Secrets management ensures that credentials and keys are never hardcoded or exposed. Security testing includes static analysis (SAST), dynamic analysis (DAST), and dependency scanning. Security is an emergent property of the entire system, not a single feature.
-
 ## Exercises
 
 ### Review Questions
@@ -977,3 +977,4 @@ Security engineering is the discipline of building systems that remain secure un
 ### Challenge Problem
 
 You are the security lead for a healthcare SaaS platform (HIPAA regulated) that stores patient health records. It uses a React frontend, Java Spring Boot backend, PostgreSQL database, and AWS infrastructure. The system was recently pen-tested and the report found: SQL injection in patient search, stored XSS in notes, missing encryption on PHI at rest, no MFA for providers, and hardcoded AWS keys in source code. Design a comprehensive remediation plan. Prioritise fixes by risk. For each finding, specify the vulnerable code pattern, the exploit scenario, the fix (with code examples), and the verification method. Implement a TypeScript security scanner that checks code patterns for the five vulnerabilities found.
+

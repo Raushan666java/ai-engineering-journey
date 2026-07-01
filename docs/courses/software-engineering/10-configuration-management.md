@@ -216,15 +216,6 @@ A **configuration audit** verifies that the product matches its documentation an
 | **SCM Process Audit** | SCM procedures are followed | Quarterly |
 | **In-Progress Audit** | SCM activities on active work | Per milestone |
 
-## Practical Takeaways
-
-1. **Everything that changes should be a CI** — source code, database scripts, build scripts, documentation
-2. **Baselines protect against scope creep** — once baselined, changes require formal approval
-3. **Branch early, branch often** — branches are cheap; isolation reduces coordination overhead
-4. **Automate everything you can** — builds, tests, deployments should be single-command operations
-5. **Tag every release** — you cannot inspect a bug in production if you cannot recreate the exact binary
-6. **Audit traceability** — every release must trace back to specific commits and change requests
-
 ## Examples
 
 ### Example 1: Version Manager (SemVer)
@@ -691,6 +682,19 @@ class ReleaseManager {
 }
 ```
 
+## Summary
+
+Software Configuration Management controls the evolution of software through identification of configuration items, establishment of baselines, version control, change control, build and release management, status accounting, and configuration auditing. Git provides powerful version control with branching strategies such as Git Flow, GitHub Flow, GitLab Flow, and trunk-based development. Formal change control ensures that all changes are evaluated and approved. Semantic versioning (MAJOR.MINOR.PATCH) communicates compatibility. Automation of builds and releases reduces human error. Configuration audits verify product integrity. SCM is essential for team collaboration, regulatory compliance, and reproducible software delivery.
+
+## Practical Takeaways
+
+1. **Everything that changes should be a CI** — source code, database scripts, build scripts, documentation
+2. **Baselines protect against scope creep** — once baselined, changes require formal approval
+3. **Branch early, branch often** — branches are cheap; isolation reduces coordination overhead
+4. **Automate everything you can** — builds, tests, deployments should be single-command operations
+5. **Tag every release** — you cannot inspect a bug in production if you cannot recreate the exact binary
+6. **Audit traceability** — every release must trace back to specific commits and change requests
+
 ## Chapter Quiz
 
 **Q1: What is a configuration item?**
@@ -897,10 +901,6 @@ vcs.commit("Add feature", [{ file: "feature.ts", diff: "+new" }]);
 console.log(vcs.getHistory().length); // 2
 ```
 
-## Summary
-
-Software Configuration Management controls the evolution of software through identification of configuration items, establishment of baselines, version control, change control, build and release management, status accounting, and configuration auditing. Git provides powerful version control with branching strategies such as Git Flow, GitHub Flow, GitLab Flow, and trunk-based development. Formal change control ensures that all changes are evaluated and approved. Semantic versioning (MAJOR.MINOR.PATCH) communicates compatibility. Automation of builds and releases reduces human error. Configuration audits verify product integrity. SCM is essential for team collaboration, regulatory compliance, and reproducible software delivery.
-
 ## Exercises
 
 ### Review Questions
@@ -926,3 +926,4 @@ Software Configuration Management controls the evolution of software through ide
 ### Challenge Problem
 
 You are the SCM lead for a safety-critical medical device software project that must comply with IEC 62304 and FDA 21 CFR Part 820. Define a comprehensive SCM strategy including CI identification, baseline establishment at each phase, change control with traceability to requirements and tests, build reproducibility (reproducible builds), audit trails for every change, and release management with electronic signatures. Implement a TypeScript program that enforces change control workflows: all changes to released CIs must go through CCB approval, with automatic notification to QA and documentation of each step.
+

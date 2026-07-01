@@ -214,15 +214,6 @@ Requirements management encompasses maintaining the specification as the system 
 - **Change control:** CCB reviews proposed changes, assesses impact on cost/schedule
 - **Baselining:** Freezing requirements at specific milestones
 
-## Practical Takeaways
-
-1. **Invest in elicitation upfront** — the cost of fixing a requirements error after deployment is 100x the cost of fixing it during elicitation
-2. **Use multiple elicitation techniques** — interviews alone miss what stakeholders don't think to mention
-3. **Write testable requirements** — every requirement should be verifiable; "user-friendly" is not testable
-4. **Maintain traceability** — when a requirement changes, you must know which design, code, and tests are affected
-5. **Expect change** — requirements will evolve; plan for it with change control processes
-6. **Distinguish wants from needs** — MoSCoW and Kano help separate essential from nice-to-have
-
 ## Examples
 
 ### Example 1: TypeScript RequirementsManager
@@ -458,48 +449,6 @@ const borrowBookCase = new UseCase(
 ### Case Study: SRS for a Library Management System
 
 A university library commissioned a new management system. The requirements team conducted interviews with librarians, library patrons, and IT staff. They distributed surveys to 500 library users and observed the circulation desk during peak hours. The resulting SRS included 73 functional requirements organised by subsystem, 18 non-functional requirements covering performance and security, and domain requirements specifying the Library of Congress classification system. A requirements traceability matrix linked every requirement to its source and test cases.
-
-## Chapter Quiz
-
-**Q1: Which of the following is a non-functional requirement?**
-- A) "The system shall allow users to search by author"
-- B) "The system shall process 1,000 transactions per second"
-- C) "The system shall send email notifications"
-- D) "The system shall support user registration"
-
-**Answer: B** — Performance is a non-functional requirement (a quality attribute).
-
-**Q2: In MoSCoW prioritisation, what does the 'W' stand for?**
-- A) Will do later
-- B) Wishful thinking
-- C) Won't have this time
-- D) Waiting
-
-**Answer: C** — "Won't have" — explicitly excluded from the current scope.
-
-**Q3: Which elicitation technique is most effective for discovering implicit requirements?**
-- A) Surveys
-- B) Observation
-- C) Document analysis
-- D) Interviews
-
-**Answer: B** — Observation reveals what users actually do, which may differ from what they say they do.
-
-**Q4: What is the primary purpose of a requirements traceability matrix?**
-- A) To estimate project cost
-- B) To enable impact analysis when requirements change
-- C) To prioritise requirements
-- D) To validate requirements with stakeholders
-
-**Answer: B** — The RTM links requirements to design, code, and tests, enabling impact analysis.
-
-**Q5: In the Kano model, features that cause dissatisfaction when absent but do not increase satisfaction when present are called:**
-- A) Delighters
-- B) Performance needs
-- C) Basic needs
-- D) Indifferent features
-
-**Answer: C** — Basic needs (threshold attributes) must be present but do not delight when available.
 
 ## Automated Requirements Validation Engine
 
@@ -876,6 +825,57 @@ console.log(analyzeRequirementSet(reqs));
 
 Requirements engineering is the foundation of successful software development. Functional requirements define what the system must do; non-functional constraints how it does it; and domain requirements capture the context. FURPS+ provides a comprehensive classification. Feasibility studies determine project viability. Elicitation techniques must be selected based on project context. Specifications take different forms — IEEE 830 documents, user stories with Gherkin acceptance criteria, or use cases. MoSCoW and the Kano model support prioritisation. Validation ensures correctness. Management through traceability, prioritisation, and change control maintains the specification's integrity as the system evolves.
 
+## Practical Takeaways
+
+1. **Invest in elicitation upfront** — the cost of fixing a requirements error after deployment is 100x the cost of fixing it during elicitation
+2. **Use multiple elicitation techniques** — interviews alone miss what stakeholders don't think to mention
+3. **Write testable requirements** — every requirement should be verifiable; "user-friendly" is not testable
+4. **Maintain traceability** — when a requirement changes, you must know which design, code, and tests are affected
+5. **Expect change** — requirements will evolve; plan for it with change control processes
+6. **Distinguish wants from needs** — MoSCoW and Kano help separate essential from nice-to-have
+
+## Chapter Quiz
+
+**Q1: Which of the following is a non-functional requirement?**
+- A) "The system shall allow users to search by author"
+- B) "The system shall process 1,000 transactions per second"
+- C) "The system shall send email notifications"
+- D) "The system shall support user registration"
+
+**Answer: B** — Performance is a non-functional requirement (a quality attribute).
+
+**Q2: In MoSCoW prioritisation, what does the 'W' stand for?**
+- A) Will do later
+- B) Wishful thinking
+- C) Won't have this time
+- D) Waiting
+
+**Answer: C** — "Won't have" — explicitly excluded from the current scope.
+
+**Q3: Which elicitation technique is most effective for discovering implicit requirements?**
+- A) Surveys
+- B) Observation
+- C) Document analysis
+- D) Interviews
+
+**Answer: B** — Observation reveals what users actually do, which may differ from what they say they do.
+
+**Q4: What is the primary purpose of a requirements traceability matrix?**
+- A) To estimate project cost
+- B) To enable impact analysis when requirements change
+- C) To prioritise requirements
+- D) To validate requirements with stakeholders
+
+**Answer: B** — The RTM links requirements to design, code, and tests, enabling impact analysis.
+
+**Q5: In the Kano model, features that cause dissatisfaction when absent but do not increase satisfaction when present are called:**
+- A) Delighters
+- B) Performance needs
+- C) Basic needs
+- D) Indifferent features
+
+**Answer: C** — Basic needs (threshold attributes) must be present but do not delight when available.
+
 ## Exercises
 
 ### Review Questions
@@ -901,3 +901,4 @@ Requirements engineering is the foundation of successful software development. F
 ### Challenge Problem
 
 A government agency is developing a benefits eligibility system that replaces a thirty-year-old mainframe application. The existing system has no documentation, and the original developers have retired. The new system must comply with recently enacted legislation that changes eligibility rules. Design a requirements engineering approach for this context. Address how you will recover knowledge of the current system, handle the legislative changes, and manage conflicting interests. Propose a specification format and a requirements management strategy. Implement a TypeScript class that manages the versioned evolution of requirements through this process.
+

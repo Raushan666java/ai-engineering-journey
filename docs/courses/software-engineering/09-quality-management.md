@@ -198,15 +198,6 @@ graph LR
     CHECK -->|No| SPECIAL[Special Cause - Investigate]
 ```
 
-## Practical Takeaways
-
-1. **Quality must be planned, not inspected in** — allocate dedicated time for quality activities
-2. **Process quality drives product quality** — fix the process, and product defects decrease
-3. **Inspections catch defects cheaper than testing** — the cost of fixing a bug increases exponentially through the lifecycle
-4. **Static analysis is cheap insurance** — run linters and vulnerability scanning as part of CI
-5. **Track quality metrics over time** — trends reveal process degradation before it becomes critical
-6. **Automate quality checks** — manual quality control does not scale
-
 ## Examples
 
 ### Example 1: Quality Metric Collector
@@ -541,6 +532,19 @@ class QualityTrendAnalyzer {
   }
 }
 ```
+
+## Summary
+
+Software quality management encompasses three interrelated components: quality planning defines the approach, quality assurance ensures processes are followed, and quality control verifies product quality. Standards like ISO 9001 provide general quality frameworks, while CMMI offers staged maturity levels from ad hoc (Level 1) to continuously improving (Level 5). ISO 25010 defines eight quality characteristics for software products. Formal inspections such as Fagan inspections detect up to 70% of defects before testing. Static analysis tools measure code metrics like cyclomatic complexity, which predicts testability. Statistical process control distinguishes common cause variation from special cause events. Automated quality gates integrated into CI/CD pipelines prevent quality degradation. Practical tools like coverage calculators, defect density analyzers, and quality dashboards enable teams to measure, track, and improve quality systematically across the software lifecycle.
+
+## Practical Takeaways
+
+1. **Quality must be planned, not inspected in** — allocate dedicated time for quality activities
+2. **Process quality drives product quality** — fix the process, and product defects decrease
+3. **Inspections catch defects cheaper than testing** — the cost of fixing a bug increases exponentially through the lifecycle
+4. **Static analysis is cheap insurance** — run linters and vulnerability scanning as part of CI
+5. **Track quality metrics over time** — trends reveal process degradation before it becomes critical
+6. **Automate quality checks** — manual quality control does not scale
 
 ## Chapter Quiz
 
@@ -1127,10 +1131,6 @@ const orgPractices = ["Requirements management", "Project planning", "Project mo
 console.log(`CMMI Level: ${checkCMMILevel(orgPractices)}`); // 2
 ```
 
-## Summary
-
-Software quality management encompasses three interrelated components: quality planning defines the approach, quality assurance ensures processes are followed, and quality control verifies product quality. Standards like ISO 9001 provide general quality frameworks, while CMMI offers staged maturity levels from ad hoc (Level 1) to continuously improving (Level 5). ISO 25010 defines eight quality characteristics for software products. Formal inspections such as Fagan inspections detect up to 70% of defects before testing. Static analysis tools measure code metrics like cyclomatic complexity, which predicts testability. Statistical process control distinguishes common cause variation from special cause events. Automated quality gates integrated into CI/CD pipelines prevent quality degradation. Practical tools like coverage calculators, defect density analyzers, and quality dashboards enable teams to measure, track, and improve quality systematically across the software lifecycle.
-
 ## Exercises
 
 ### Review Questions
@@ -1155,3 +1155,4 @@ Software quality management encompasses three interrelated components: quality p
 ### Challenge Problem
 
 Your organisation is at CMMI Level 1 and aims to reach CMMI Level 3 within 18 months. The 200-person engineering department is distributed across three continents with different quality cultures. Develop a staged quality improvement plan covering process area implementation (requirements management, project planning, quality assurance, configuration management, measurement and analysis). For each month, specify the process areas to implement, training required, tools to deploy, metrics to collect, and expected outcomes. Include how you will handle resistance to process adoption. Implement a TypeScript program that models the maturity progression and tracks whether milestone criteria are met each month.
+

@@ -246,15 +246,6 @@ graph TD
 | **Feature Team** | Cross-functional team owns a feature end-to-end | Long-lived product development | Requires broad skills |
 | **Component Team** | Team owns a system component | Large systems with clear modularity | Integration challenges |
 
-## Practical Takeaways
-
-1. **Estimates are ranges, not commitments** — always communicate confidence levels
-2. **Track EVM from the start** — you can't recover what you don't measure
-3. **Risk management is proactive** — the best risks are those you mitigated before they materialised
-4. **The critical path determines the project duration** — protect critical tasks with buffers
-5. **Planning is more important than the plan** — the process of planning creates shared understanding
-6. **Re-estimate regularly** — initial estimates are uncertain; update them as knowledge improves
-
 ## Examples
 
 ### Example 1: TypeScript EVM Calculator
@@ -498,6 +489,19 @@ class CriticalPathAnalyzer {
   }
 }
 ```
+
+## Summary
+
+Software project management addresses the challenges of planning, estimating, scheduling, and controlling software projects. The Work Breakdown Structure decomposes work into manageable units. Estimation techniques range from expert judgement to algorithmic models (function points, COCOMO II). Scheduling methods include Gantt charts for visualisation, PERT for uncertainty, and CPM for critical path analysis. Risk management identifies, analyses, and responds to potential problems. Earned Value Management integrates scope, scope, schedule, and cost into objective performance metrics. Team organisation patterns balance authority with collaboration. Effective project management is essential for delivering quality software on time and within budget.
+
+## Practical Takeaways
+
+1. **Estimates are ranges, not commitments** — always communicate confidence levels
+2. **Track EVM from the start** — you can't recover what you don't measure
+3. **Risk management is proactive** — the best risks are those you mitigated before they materialised
+4. **The critical path determines the project duration** — protect critical tasks with buffers
+5. **Planning is more important than the plan** — the process of planning creates shared understanding
+6. **Re-estimate regularly** — initial estimates are uncertain; update them as knowledge improves
 
 ## Chapter Quiz
 
@@ -776,10 +780,6 @@ const tasks: Task[] = [
 console.log(simulateDuration(tasks, 100));
 ```
 
-## Summary
-
-Software project management addresses the challenges of planning, estimating, scheduling, and controlling software projects. The Work Breakdown Structure decomposes work into manageable units. Estimation techniques range from expert judgement to algorithmic models (function points, COCOMO II). Scheduling methods include Gantt charts for visualisation, PERT for uncertainty, and CPM for critical path analysis. Risk management identifies, analyses, and responds to potential problems. Earned Value Management integrates scope, scope, schedule, and cost into objective performance metrics. Team organisation patterns balance authority with collaboration. Effective project management is essential for delivering quality software on time and within budget.
-
 ## Exercises
 
 ### Review Questions
@@ -806,3 +806,4 @@ Software project management addresses the challenges of planning, estimating, sc
 ### Challenge Problem
 
 You are appointed project manager for a critical software system that must be delivered in nine months for regulatory compliance. The COCOMO II estimate indicates twelve months with the current team. Stakeholders refuse to accept a later deadline and insist scope cannot be reduced. Develop a realistic project plan addressing this situation. Analyse options (staff addition, process improvement, scope negotiation, schedule compression) and propose a specific course of action. Include risk analysis and contingency plan. Implement a TypeScript project simulator that models schedule compression strategies (crashing, fast-tracking) and predicts their impact on cost and risk.
+

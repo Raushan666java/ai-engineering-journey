@@ -228,15 +228,6 @@ graph LR
 3. **Errors:** Rate of failed requests
 4. **Saturation:** How "full" the service is
 
-## Practical Takeaways
-
-1. **CI/CD is not optional** — manual deployment is the #1 source of production incidents
-2. **Build once, deploy many** — the same artifact moves through all environments
-3. **Fail fast** — the earlier a defect is caught, the cheaper it is to fix
-4. **Infrastructure is code** — everything should be in version control
-5. **Observability over monitoring** — understand WHY, not just WHAT
-6. **Rollback is a feature** — every deployment must have a tested rollback plan
-
 ## Examples
 
 ### Example 1: GitHub Actions CI Pipeline
@@ -765,6 +756,19 @@ ENV NODE_ENV=production
 CMD ["node", "dist/index.js"]
 ```
 
+## Summary
+
+DevOps bridges development and operations through culture, automation, and measurement. CI integrates code changes frequently with automated builds and tests. CD extends this to automated deployment. Infrastructure as Code manages infrastructure through version-controlled definition files. Containerisation with Docker and orchestration with Kubernetes provide portable, scalable deployment. Deployment strategies (rolling, blue-green, canary) balance speed and safety. Observability through metrics, logging, tracing, and alerting provides system understanding. A complete DevOps pipeline automates the entire flow from commit to production with quality gates at each stage.
+
+## Practical Takeaways
+
+1. **CI/CD is not optional** — manual deployment is the #1 source of production incidents
+2. **Build once, deploy many** — the same artifact moves through all environments
+3. **Fail fast** — the earlier a defect is caught, the cheaper it is to fix
+4. **Infrastructure is code** — everything should be in version control
+5. **Observability over monitoring** — understand WHY, not just WHAT
+6. **Rollback is a feature** — every deployment must have a tested rollback plan
+
 ## Chapter Quiz
 
 **Q1: What does CI stand for in DevOps?**
@@ -989,10 +993,6 @@ const canary = new CanaryManager(100, 25);
 console.log(canary.rollout());
 ```
 
-## Summary
-
-DevOps bridges development and operations through culture, automation, and measurement. CI integrates code changes frequently with automated builds and tests. CD extends this to automated deployment. Infrastructure as Code manages infrastructure through version-controlled definition files. Containerisation with Docker and orchestration with Kubernetes provide portable, scalable deployment. Deployment strategies (rolling, blue-green, canary) balance speed and safety. Observability through metrics, logging, tracing, and alerting provides system understanding. A complete DevOps pipeline automates the entire flow from commit to production with quality gates at each stage.
-
 ## Exercises
 
 ### Review Questions
@@ -1015,3 +1015,4 @@ DevOps bridges development and operations through culture, automation, and measu
 ### Challenge Problem
 
 A legacy monolithic application is deployed manually once per month by a senior operations engineer who is leaving the company. There are no automated tests, no CI, and no on-call monitoring. Infrastructure is configured manually in the AWS console. Design a six-month DevOps transformation plan. Address containerisation of the monolith, automated test adoption, CI pipeline construction, IaC for all infrastructure, blue-green deployment setup, monitoring and alerting with Prometheus and Grafana, and a runbook for incidents. Implement a TypeScript program that models the transformation milestones and tracks dependencies between initiatives.
+

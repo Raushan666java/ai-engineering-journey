@@ -235,15 +235,6 @@ graph TD
     end
 ```
 
-## Practical Takeaways
-
-1. **Agile is not a methodology, it is a mindset** — values and principles matter more than ceremony
-2. **Short feedback loops** — the shorter the cycle, the faster you learn and adapt
-3. **Self-organising teams outperform directed teams** — trust the team to find the best way
-4. **Velocity is unique to each team** — never compare velocities across teams
-5. **TDD reduces defect density by 40-80%** — the investment in tests pays for itself
-6. **Done means "potentially shippable"** — if it is not tested and documented, it is not done
-
 ## Examples
 
 ### Example 1: Sprint Burndown Chart Generator
@@ -764,6 +755,19 @@ class KanbanBoard {
 }
 ```
 
+## Summary
+
+Agile methodologies emphasize iterative development, customer collaboration, and responsiveness to change over rigid planning. The Agile Manifesto provides four values and twelve principles. Scrum implements agile through defined roles (Product Owner, Scrum Master, Development Team), artifacts (Product Backlog, Sprint Backlog, Increment), and events (Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective). Extreme Programming adds engineering practices like TDD, pair programming, and continuous integration. Kanban visualises workflow and limits work in progress. User stories capture requirements in an INVEST-compliant format. Estimation uses story points and velocity for forecasting. Burndown charts track sprint progress. Agile adoption requires cultural shift, not just process change.
+
+## Practical Takeaways
+
+1. **Agile is not a methodology, it is a mindset** — values and principles matter more than ceremony
+2. **Short feedback loops** — the shorter the cycle, the faster you learn and adapt
+3. **Self-organising teams outperform directed teams** — trust the team to find the best way
+4. **Velocity is unique to each team** — never compare velocities across teams
+5. **TDD reduces defect density by 40-80%** — the investment in tests pays for itself
+6. **Done means "potentially shippable"** — if it is not tested and documented, it is not done
+
 ## Chapter Quiz
 
 **Q1: Which of the following is NOT one of the four values of the Agile Manifesto?**
@@ -956,10 +960,6 @@ const wipCheck = enforceWIP([{ name: "In Progress", wipLimit: 3, items: 5 }, { n
 console.log(wipCheck); // Violation in "In Progress"
 ```
 
-## Summary
-
-Agile methodologies emphasize iterative development, customer collaboration, and responsiveness to change over rigid planning. The Agile Manifesto provides four values and twelve principles. Scrum implements agile through defined roles (Product Owner, Scrum Master, Development Team), artifacts (Product Backlog, Sprint Backlog, Increment), and events (Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective). Extreme Programming adds engineering practices like TDD, pair programming, and continuous integration. Kanban visualises workflow and limits work in progress. User stories capture requirements in an INVEST-compliant format. Estimation uses story points and velocity for forecasting. Burndown charts track sprint progress. Agile adoption requires cultural shift, not just process change.
-
 ## Exercises
 
 ### Review Questions
@@ -984,3 +984,4 @@ Agile methodologies emphasize iterative development, customer collaboration, and
 ### Challenge Problem
 
 A team of 6 developers is transitioning from waterfall to Scrum. They currently do not write automated tests, have no CI pipeline, and the product owner is unavailable after sprint planning. Their first sprint produced zero working software — the team tried to implement all features at once. Diagnose the root causes. Develop a transformation roadmap covering: team training, engineering practices (TDD, CI, pair programming), Scrum adoption (correct ceremony execution, PO commitment), and cultural changes. Implement a TypeScript team maturity model that assesses the team across 10 dimensions (TDD adoption, CI maturity, backlog management, estimation accuracy, etc.) and generates an improvement plan.
+

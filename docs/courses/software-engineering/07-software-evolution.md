@@ -362,56 +362,7 @@ class ImpactAnalyzer {
 | **Database First** | Medium | Medium | Medium | Modernise data layer first |
 | **API Encapsulation** | Low | Low | Short | Legacy wrapped behind APIs |
 
-## Practical Takeaways
-
-1. **Refactoring is not optional** — without it, Lehman's Law of Increasing Complexity guarantees degradation
-2. **Track technical debt explicitly** — quantify it, prioritise it, schedule it alongside features
-3. **The strangler fig pattern is safer than big-bang rewrites** — incremental replacement preserves business continuity
-4. **Automated tests are essential for evolution** — without them, refactoring is just "changing code and hoping"
-5. **Document decisions, not just code** — future maintainers need to know why, not just what
-6. **Legacy systems are valuable** — they represent years of business logic; treat them with respect
-
-## Chapter Quiz
-
-**Q1: What proportion of total lifecycle costs does maintenance typically represent?**
-- A) 20-30%
-- B) 40-50%
-- C) 60-80%
-- D) 80-90%
-
-**Answer: C** — Maintenance typically consumes 60-80% of total software lifecycle costs.
-
-**Q2: Lehman's Law of Increasing Complexity states that:**
-- A) Systems must be continually adapted or become unsatisfactory
-- B) Complexity increases unless deliberate work is performed to reduce it
-- C) The growth of each release is statistically invariant
-- D) Quality declines unless rigorously maintained
-
-**Answer: B** — Without deliberate refactoring, system complexity inevitably increases.
-
-**Q3: Which is NOT a characteristic of legacy systems?**
-- A) Outdated technology platforms
-- B) Modern architecture patterns
-- C) Poor documentation
-- D) Shortage of developers with relevant skills
-
-**Answer: B** — Legacy systems are characterised by outdated technology and architecture, not modern patterns.
-
-**Q4: The strangler fig pattern is:**
-- A) Rewriting the entire system at once
-- B) Incrementally replacing legacy functionality with new implementations
-- C) Wrapping legacy systems with APIs
-- D) Freezing all changes to the system
-
-**Answer: B** — The strangler fig pattern incrementally replaces legacy components.
-
-**Q5: In the technical debt quadrant, "we must ship now, we'll fix later" represents:**
-- A) Reckless & Deliberate
-- B) Prudent & Deliberate
-- C) Reckless & Inadvertent
-- D) Prudent & Inadvertent
-
-**Answer: B** — Prudent & Deliberate debt is an intentional short-term decision with a plan to fix later.
+## Examples
 
 ## Technical Debt Quantification Engine
 
@@ -824,6 +775,57 @@ console.log(calculateTechDebt(entities, { complexity: 45, duplication: 12, cover
 
 Software evolution consumes the majority of lifecycle costs. Maintenance is classified as corrective, adaptive, perfective, and preventive. Lehman's eight laws describe the empirical dynamics of evolution, including the inevitable increase in complexity (Law II) and the necessity of continuing change (Law I). Reverse engineering recovers design information from existing code. Refactoring catalogues provide behaviour-preserving transformations (Extract Method, Replace Conditional with Polymorphism, Extract Class). The technical debt quadrant helps prioritise improvement work. Legacy systems require strategies from scrapping to wrapping. Impact analysis quantifies change consequences. Regression testing is essential throughout evolution.
 
+## Practical Takeaways
+
+1. **Refactoring is not optional** — without it, Lehman's Law of Increasing Complexity guarantees degradation
+2. **Track technical debt explicitly** — quantify it, prioritise it, schedule it alongside features
+3. **The strangler fig pattern is safer than big-bang rewrites** — incremental replacement preserves business continuity
+4. **Automated tests are essential for evolution** — without them, refactoring is just "changing code and hoping"
+5. **Document decisions, not just code** — future maintainers need to know why, not just what
+6. **Legacy systems are valuable** — they represent years of business logic; treat them with respect
+
+## Chapter Quiz
+
+**Q1: What proportion of total lifecycle costs does maintenance typically represent?**
+- A) 20-30%
+- B) 40-50%
+- C) 60-80%
+- D) 80-90%
+
+**Answer: C** — Maintenance typically consumes 60-80% of total software lifecycle costs.
+
+**Q2: Lehman's Law of Increasing Complexity states that:**
+- A) Systems must be continually adapted or become unsatisfactory
+- B) Complexity increases unless deliberate work is performed to reduce it
+- C) The growth of each release is statistically invariant
+- D) Quality declines unless rigorously maintained
+
+**Answer: B** — Without deliberate refactoring, system complexity inevitably increases.
+
+**Q3: Which is NOT a characteristic of legacy systems?**
+- A) Outdated technology platforms
+- B) Modern architecture patterns
+- C) Poor documentation
+- D) Shortage of developers with relevant skills
+
+**Answer: B** — Legacy systems are characterised by outdated technology and architecture, not modern patterns.
+
+**Q4: The strangler fig pattern is:**
+- A) Rewriting the entire system at once
+- B) Incrementally replacing legacy functionality with new implementations
+- C) Wrapping legacy systems with APIs
+- D) Freezing all changes to the system
+
+**Answer: B** — The strangler fig pattern incrementally replaces legacy components.
+
+**Q5: In the technical debt quadrant, "we must ship now, we'll fix later" represents:**
+- A) Reckless & Deliberate
+- B) Prudent & Deliberate
+- C) Reckless & Inadvertent
+- D) Prudent & Inadvertent
+
+**Answer: B** — Prudent & Deliberate debt is an intentional short-term decision with a plan to fix later.
+
 ## Exercises
 
 ### Review Questions
@@ -850,3 +852,4 @@ Software evolution consumes the majority of lifecycle costs. Maintenance is clas
 ### Challenge Problem
 
 A government social security agency operates a thirty-year-old system written in an obsolete language. Documentation is incomplete, original developers have retired, and the system cannot be replaced because business rules are not fully understood. Recent legislation requires significant changes to eligibility rules, and the system must integrate with a modern citizen portal. Develop a comprehensive evolution strategy. Address knowledge recovery, legislative changes, testing approach, and transition planning. Implement a TypeScript modernization planner that tracks the migration of legacy modules through the strangler fig pattern.
+

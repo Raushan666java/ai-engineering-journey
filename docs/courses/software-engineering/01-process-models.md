@@ -260,27 +260,6 @@ graph TD
 | Team skill required | Low | Medium | Medium | High | High | Medium | High |
 | Regulatory suit. | Medium | High | Low | Medium | Medium | Low | Low |
 
-## Risk Analysis Per Model
-
-| Model | Primary Risk | Mitigation Strategy |
-|-------|-------------|---------------------|
-| Waterfall | Requirements volatility | Fixed-price contracts, freeze deadlines |
-| V-Model | Missing traceability | Automated traceability tools |
-| Incremental | Integration complexity | Continuous integration |
-| Spiral | Inadequate risk assessment | Experienced risk managers |
-| Unified Process | Process overhead | Tool support, tailoring |
-| Scrum | Scope creep | Time-boxed Sprints, velocity tracking |
-| XP | Pair programming fatigue | Rotate pairs, limit pair time |
-
-## Practical Takeaways
-
-1. **No single model fits all projects** — evaluate requirements stability, risk profile, and team size before choosing
-2. **Hybrid models are common** — many teams blend plan-driven and agile elements (e.g., Waterfall requirements + Scrum development)
-3. **Risk-driven selection** — high-risk projects need more iterative feedback loops
-4. **Regulatory constraints matter** — safety-critical domains often mandate V-model or strict documentation
-5. **Start agile, add ceremony as needed** — begin with Scrum/XP, introduce formal documentation only where justified
-6. **Process is a tool, not a goal** — any model must be adapted to context, not followed blindly
-
 ## Examples
 
 ### Example 1: TypeScript Process State Machine
@@ -413,47 +392,17 @@ An aerospace company developing flight control software adopted the Spiral model
 
 A fintech startup developing a mobile payments app adopted Scrum with 2-week Sprints. The Product Owner maintained a prioritised backlog. The team of 6 developers achieved a velocity of 35 story points per Sprint. After 8 Sprints, they released a minimum viable product with core payment functionality.
 
-## Chapter Quiz
+## Risk Analysis Per Model
 
-**Q1: Which process model is characterised by formal phase gates and no iteration between phases?**
-- A) Spiral Model
-- B) Waterfall Model
-- C) Unified Process
-- D) Scrum
-
-**Answer: B** — The Waterfall model requires each phase to complete before the next begins, with no mechanism for iteration.
-
-**Q2: What is the distinguishing feature of the Spiral model?**
-- A) Fixed-length iterations
-- B) Explicit risk analysis in each loop
-- C) Pair programming
-- D) Use case-driven development
-
-**Answer: B** — Risk analysis is the defining characteristic of the Spiral model, with each loop identifying and resolving major risks.
-
-**Q3: In Scrum, who is responsible for maximising the value of the product?**
-- A) Scrum Master
-- B) Development Team
-- C) Product Owner
-- D) Project Manager
-
-**Answer: C** — The Product Owner is accountable for maximising product value through backlog management and prioritisation.
-
-**Q4: Which of the following is NOT a value of Extreme Programming?**
-- A) Communication
-- B) Documentation
-- C) Simplicity
-- D) Courage
-
-**Answer: B** — XP values communication, simplicity, feedback, courage, and respect. Comprehensive documentation is de-emphasised.
-
-**Q5: The V-model is particularly well-suited for:**
-- A) Startups with rapidly changing requirements
-- B) Safety-critical systems requiring full traceability
-- C) Small experimental projects
-- D) Open-source community projects
-
-**Answer: B** — The V-model's explicit links between development and testing phases make it ideal for regulated domains.
+| Model | Primary Risk | Mitigation Strategy |
+|-------|-------------|---------------------|
+| Waterfall | Requirements volatility | Fixed-price contracts, freeze deadlines |
+| V-Model | Missing traceability | Automated traceability tools |
+| Incremental | Integration complexity | Continuous integration |
+| Spiral | Inadequate risk assessment | Experienced risk managers |
+| Unified Process | Process overhead | Tool support, tailoring |
+| Scrum | Scope creep | Time-boxed Sprints, velocity tracking |
+| XP | Pair programming fatigue | Rotate pairs, limit pair time |
 
 ## Process Model Selection Simulator
 
@@ -797,6 +746,57 @@ console.log("Critical path:", waterfallEntry.getCriticalPath());
 
 Software process models provide structure and guidance for development activities. No single model is appropriate for all projects. The Waterfall model offers simplicity but lacks flexibility. The V-model emphasises verification and traceability. Incremental and iterative approaches deliver early value and accommodate change. The Spiral model incorporates explicit risk management. The Unified Process provides an iterative, architecture-centric framework. Agile methods (Scrum, XP) prioritise people, working software, and responsiveness to change. The selection of a process model should be based on project characteristics including requirements stability, risk profile, team size, and organisational context.
 
+## Practical Takeaways
+
+1. **No single model fits all projects** — evaluate requirements stability, risk profile, and team size before choosing
+2. **Hybrid models are common** — many teams blend plan-driven and agile elements (e.g., Waterfall requirements + Scrum development)
+3. **Risk-driven selection** — high-risk projects need more iterative feedback loops
+4. **Regulatory constraints matter** — safety-critical domains often mandate V-model or strict documentation
+5. **Start agile, add ceremony as needed** — begin with Scrum/XP, introduce formal documentation only where justified
+6. **Process is a tool, not a goal** — any model must be adapted to context, not followed blindly
+
+## Chapter Quiz
+
+**Q1: Which process model is characterised by formal phase gates and no iteration between phases?**
+- A) Spiral Model
+- B) Waterfall Model
+- C) Unified Process
+- D) Scrum
+
+**Answer: B** — The Waterfall model requires each phase to complete before the next begins, with no mechanism for iteration.
+
+**Q2: What is the distinguishing feature of the Spiral model?**
+- A) Fixed-length iterations
+- B) Explicit risk analysis in each loop
+- C) Pair programming
+- D) Use case-driven development
+
+**Answer: B** — Risk analysis is the defining characteristic of the Spiral model, with each loop identifying and resolving major risks.
+
+**Q3: In Scrum, who is responsible for maximising the value of the product?**
+- A) Scrum Master
+- B) Development Team
+- C) Product Owner
+- D) Project Manager
+
+**Answer: C** — The Product Owner is accountable for maximising product value through backlog management and prioritisation.
+
+**Q4: Which of the following is NOT a value of Extreme Programming?**
+- A) Communication
+- B) Documentation
+- C) Simplicity
+- D) Courage
+
+**Answer: B** — XP values communication, simplicity, feedback, courage, and respect. Comprehensive documentation is de-emphasised.
+
+**Q5: The V-model is particularly well-suited for:**
+- A) Startups with rapidly changing requirements
+- B) Safety-critical systems requiring full traceability
+- C) Small experimental projects
+- D) Open-source community projects
+
+**Answer: B** — The V-model's explicit links between development and testing phases make it ideal for regulated domains.
+
 ## Exercises
 
 ### Review Questions
@@ -825,3 +825,4 @@ Software process models provide structure and guidance for development activitie
 ### Challenge Problem
 
 A large financial institution plans to replace its core banking system over a three-year period. The system must interface with dozens of existing subsystems, comply with multiple regulatory frameworks, and support a gradual migration from legacy systems. Propose a hybrid process model that combines elements from the Spiral model, the Unified Process, and agile practices. Justify each element with specific reference to the project characteristics. Describe how you would manage the tensions between plan-driven and agile elements. Implement a TypeScript hybrid process engine that supports configurable phase transitions with risk gates.
+

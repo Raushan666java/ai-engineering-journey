@@ -409,15 +409,6 @@ graph LR
 - **PSM (Platform-Specific Model):** Incorporates platform-specific details
 - **QVT (Query/View/Transformation):** Standard for model transformations
 
-## Practical Takeaways
-
-1. **Model what matters** — not every detail needs a model; focus on complex or critical aspects
-2. **Keep diagrams consistent** — the same class should appear identically across all diagrams
-3. **Use the right diagram for the audience** — use case diagrams for stakeholders, class diagrams for developers
-4. **Don't over-model** — excessive detail makes diagrams hard to read; use multiple levels of abstraction
-5. **Models should be living documents** — update them as the code evolves, or they become misleading
-6. **Combine UML with code** — generate skeleton code from class diagrams to ensure consistency
-
 ## Examples
 
 ### Example 1: Mapping UML to TypeScript
@@ -639,6 +630,19 @@ accountValidator.addConstraint<Account>({
 });
 ```
 
+## Summary
+
+System modelling provides multiple perspectives on a software system. UML is the standard modelling language, offering thirteen diagram types for structural and behavioural modelling. Use case diagrams establish system boundaries and functionality. Class diagrams define static structure. Sequence diagrams detail interactions over time. Activity diagrams model control flow. State machine diagrams capture lifecycle behaviour. Component and deployment diagrams show physical organisation. DFDs and ER diagrams remain valuable for data-oriented modelling. OCL adds formal precision to UML models. Model-driven engineering transforms models from documentation into primary development artefacts.
+
+## Practical Takeaways
+
+1. **Model what matters** — not every detail needs a model; focus on complex or critical aspects
+2. **Keep diagrams consistent** — the same class should appear identically across all diagrams
+3. **Use the right diagram for the audience** — use case diagrams for stakeholders, class diagrams for developers
+4. **Don't over-model** — excessive detail makes diagrams hard to read; use multiple levels of abstraction
+5. **Models should be living documents** — update them as the code evolves, or they become misleading
+6. **Combine UML with code** — generate skeleton code from class diagrams to ensure consistency
+
 ## Chapter Quiz
 
 **Q1: Which UML diagram is best suited for showing the flow of control across multiple actors?**
@@ -848,10 +852,6 @@ validator.validateSequenceConsistency(
 console.log(validator.getReport());
 ```
 
-## Summary
-
-System modelling provides multiple perspectives on a software system. UML is the standard modelling language, offering thirteen diagram types for structural and behavioural modelling. Use case diagrams establish system boundaries and functionality. Class diagrams define static structure. Sequence diagrams detail interactions over time. Activity diagrams model control flow. State machine diagrams capture lifecycle behaviour. Component and deployment diagrams show physical organisation. DFDs and ER diagrams remain valuable for data-oriented modelling. OCL adds formal precision to UML models. Model-driven engineering transforms models from documentation into primary development artefacts.
-
 ## Exercises
 
 ### Review Questions
@@ -877,3 +877,4 @@ System modelling provides multiple perspectives on a software system. UML is the
 ### Challenge Problem
 
 You are the chief architect for a hospital information system that must integrate patient records, appointment scheduling, billing, laboratory results, and pharmacy management. Develop a modelling strategy that addresses all five subsystems. Specify which UML diagram types you would use for each subsystem and in what order you would develop them. Explain how you would ensure consistency across the models. Implement a TypeScript model consistency checker that verifies cross-diagram references (e.g., a class appearing in a class diagram must match its usage in sequence diagrams).
+

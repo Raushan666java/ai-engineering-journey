@@ -305,15 +305,6 @@ graph TD
 - Pipe-and-filter structure: lexical → syntax → semantic → code generation → optimisation
 - Each phase transforms the program representation
 
-## Practical Takeaways
-
-1. **Start simple, evolve when needed** — a well-structured monolith beats premature microservices
-2. **Let quality attributes drive architecture** — performance, security, and maintainability requirements should determine pattern selection
-3. **Document architectural decisions** — ADRs save future teams from repeating mistakes
-4. **Design for change** — identify what's likely to change and isolate it behind interfaces
-5. **Monoliths are not anti-patterns** — many successful systems never need microservices
-6. **Test the architecture early** — performance and scalability should be validated with prototypes
-
 ## Examples
 
 ### Example 1: Layered Architecture in TypeScript
@@ -621,6 +612,19 @@ class ADRManager {
 }
 ```
 
+## Summary
+
+Architectural design defines the high-level structure of a software system. Major patterns include layered architecture for separation of concerns, MVC for interactive systems, repository for data-centric systems, client-server for distributed systems, pipe-and-filter for data processing, microservices for independent deployability, event-driven for reactive systems, and broker for distribution transparency. Each pattern has specific benefits and costs — selection should be guided by quality attribute requirements documented through scenarios. Application architectures vary by domain: transaction processing emphasises ACID guarantees, information systems focus on data management, and language processing systems follow a pipe-and-filter structure. Architectural decisions should be documented with ADRs.
+
+## Practical Takeaways
+
+1. **Start simple, evolve when needed** — a well-structured monolith beats premature microservices
+2. **Let quality attributes drive architecture** — performance, security, and maintainability requirements should determine pattern selection
+3. **Document architectural decisions** — ADRs save future teams from repeating mistakes
+4. **Design for change** — identify what's likely to change and isolate it behind interfaces
+5. **Monoliths are not anti-patterns** — many successful systems never need microservices
+6. **Test the architecture early** — performance and scalability should be validated with prototypes
+
 ## Chapter Quiz
 
 **Q1: Which architectural pattern is most appropriate for an interactive system that must support multiple views of the same data?**
@@ -831,10 +835,6 @@ const mods: Module[] = [
 console.log(computeLayeredArchitecture(mods)); // UI:2, Service:1, DataAccess:0, Database:0
 ```
 
-## Summary
-
-Architectural design defines the high-level structure of a software system. Major patterns include layered architecture for separation of concerns, MVC for interactive systems, repository for data-centric systems, client-server for distributed systems, pipe-and-filter for data processing, microservices for independent deployability, event-driven for reactive systems, and broker for distribution transparency. Each pattern has specific benefits and costs — selection should be guided by quality attribute requirements documented through scenarios. Application architectures vary by domain: transaction processing emphasises ACID guarantees, information systems focus on data management, and language processing systems follow a pipe-and-filter structure. Architectural decisions should be documented with ADRs.
-
 ## Exercises
 
 ### Review Questions
@@ -862,3 +862,4 @@ Architectural design defines the high-level structure of a software system. Majo
 ### Challenge Problem
 
 A global logistics company is building a real-time shipment tracking platform. The system must track millions of shipments across multiple carriers, process GPS location updates at thousands of events per second, provide REST APIs for customer-facing applications, and guarantee 99.99% availability. Design an architectural solution addressing these requirements. Specify the architectural patterns, component decomposition, data consistency approach, scalability strategy, and fault tolerance mechanisms. Implement a TypeScript simulation demonstrating the architecture's event processing pipeline with configurable throughput and latency.
+

@@ -1127,6 +1127,57 @@ console.log(generateSkillSummary().slice(0, 3));
 
 This capstone chapter integrates all 15 preceding chapters into the development of a Team Task Board application. The complete software engineering lifecycle is demonstrated: process selection (Scrum), requirements specification (user stories, SRS), architecture design (system decomposition, technology stack), detailed design (API, database, patterns), implementation (TypeScript with Express, React, PostgreSQL, Redis), testing (unit, integration, CI), quality management (metrics, gates, monitoring), configuration management (Git, CI/CD), security (authentication, authorisation, rate limiting), and deployment (Docker Compose). Each phase references the relevant chapter for deeper study. The final deliverable is a production-ready software system with full documentation — the culmination of all skills taught in this course.
 
+## Practical Takeaways
+
+1. **Integrate from day one** — every phase of the lifecycle impacts every other; process selection affects requirements, which affects architecture, which affects testing, which affects deployment
+2. **Traceability is the backbone of professional software engineering** — every requirement must trace to architecture decisions, design elements, code modules, and test cases; tools like the cross-reference validator make this explicit
+3. **CI/CD is not optional** — automated pipelines enforce quality gates (test coverage, linting, security scanning) and catch integration issues before they reach production
+4. **Security is a continuous activity, not a phase** — threat modelling, dependency scanning, rate limiting, and OWASP review must be part of every sprint, not a one-time audit
+5. **Metrics drive improvement** — velocity, coverage, response times, error rates, and defect density provide the empirical data needed for data-driven process improvement
+6. **Documentation is a deliverable** — ADRs, SRS documents, OpenAPI specs, runbooks, and monitoring dashboards are as important as the code itself for long-term project success
+
+## Chapter Quiz
+
+**Q1: What process model does the Team Task Board capstone adopt?**
+- A) Waterfall
+- B) V-Model
+- C) Scrum with iterative/incremental delivery
+- D) Spiral Model
+
+**Answer: C** — The capstone uses Scrum with 2-week sprints and an iterative/incremental approach, delivering features in four sprints.
+
+**Q2: What is the primary purpose of Architecture Decision Records (ADRs) as used in the capstone?**
+- A) To track project expenses
+- B) To document the rationale behind architectural choices
+- C) To replace user stories
+- D) To generate test cases automatically
+
+**Answer: B** — ADRs capture the context, decision, and consequences of architectural choices, providing traceability for future engineers.
+
+**Q3: Which OWASP Top 10 risk does the rate limiter middleware in Phase 9 primarily address?**
+- A) Injection
+- B) Broken Access Control
+- C) Security Misconfiguration
+- D) Rate limiting is not an OWASP category, it mitigates brute-force attacks and DoS
+
+**Answer: D** — Rate limiting mitigates brute-force authentication attacks and denial-of-service, which relate to several OWASP categories including Broken Authentication and security misconfiguration.
+
+**Q4: In the capstone's CI pipeline, what action does the pipeline take when test coverage falls below the 80% threshold?**
+- A) It deploys anyway with a warning
+- B) It fails the pipeline and blocks the deployment
+- C) It reduces the threshold automatically
+- D) It skips coverage checks on Fridays
+
+**Answer: B** — The pipeline enforces the quality gate by failing the build when coverage drops below 80%, preventing untested code from reaching production.
+
+**Q5: According to the capstone's metric dashboard, which three signals are monitored to assess system health?**
+- A) Lines of code, number of commits, team velocity
+- B) Request rate, error rate, and duration (the RED method)
+- C) Database size, cache hit ratio, and test count
+- D) CPU temperature, fan speed, and memory voltage
+
+**Answer: B** — The capstone dashboard follows the RED method: Rate (requests/second), Errors (error rate), and Duration (response time percentiles), which are the three key signals for microservice observability.
+
 ## Exercises
 
 ### Review Questions

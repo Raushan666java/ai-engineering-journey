@@ -470,56 +470,7 @@ console.log(`${coffee.getDescription()} costs $${coffee.getCost()}`);
 // "Simple coffee, milk, sugar, whipped cream costs $9.0"
 ```
 
-## Practical Takeaways
-
-1. **SOLID is a toolkit, not a checklist** — apply principles where they reduce complexity, not everywhere
-2. **Patterns solve problems, they don't create them** — don't use a pattern just because you studied it
-3. **Design for the specific, not the abstract** — YAGNI and KISS prevent over-engineering
-4. **Testability is a design quality indicator** — if a design is hard to test, it's probably a bad design
-5. **Refactor early, refactor often** — small continuous improvements prevent structural degradation
-6. **Coupling and cohesion are the most practical design metrics** — high cohesion + low coupling = good design
-
-## Chapter Quiz
-
-**Q1: Which SOLID principle states that a class should have only one reason to change?**
-- A) Open-Closed Principle
-- B) Single Responsibility Principle
-- C) Liskov Substitution Principle
-- D) Dependency Inversion Principle
-
-**Answer: B** — SRP states each class should have a single responsibility.
-
-**Q2: A class that depends directly on a concrete database implementation rather than an abstraction violates which principle?**
-- A) ISP
-- B) LSP
-- C) DIP
-- D) OCP
-
-**Answer: C** — Dependency Inversion Principle requires depending on abstractions.
-
-**Q3: Which design pattern would you use to notify multiple components when state changes?**
-- A) Singleton
-- B) Factory
-- C) Observer
-- D) Adapter
-
-**Answer: C** — The Observer pattern defines a one-to-many dependency for state change notifications.
-
-**Q4: The worst type of coupling is:**
-- A) Data coupling
-- B) Stamp coupling
-- C) Content coupling
-- D) Message coupling
-
-**Answer: C** — Content coupling (directly modifying another module's internal data) is the worst.
-
-**Q5: What is the purpose of the Decorator pattern?**
-- A) Ensure a class has only one instance
-- B) Attach additional responsibilities to an object dynamically
-- C) Define a family of interchangeable algorithms
-- D) Convert the interface of a class into another interface
-
-**Answer: B** — The Decorator pattern dynamically adds responsibilities to objects.
+## Examples
 
 ## SOLID Principle Compliance Checker
 
@@ -956,6 +907,57 @@ console.log(new CreatorB().someOperation());
 
 Design principles guide the creation of maintainable, understandable software. The SOLID principles address class-level design; DRY, KISS, and YAGNI promote simplicity and avoid duplication. Low coupling and high cohesion are the primary indicators of design quality. GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) provide reusable solutions to common problems. Design by contract formalises preconditions, postconditions, and invariants. Refactoring systematically improves design without changing behaviour. Design reviews provide structured evaluation of design quality.
 
+## Practical Takeaways
+
+1. **SOLID is a toolkit, not a checklist** — apply principles where they reduce complexity, not everywhere
+2. **Patterns solve problems, they don't create them** — don't use a pattern just because you studied it
+3. **Design for the specific, not the abstract** — YAGNI and KISS prevent over-engineering
+4. **Testability is a design quality indicator** — if a design is hard to test, it's probably a bad design
+5. **Refactor early, refactor often** — small continuous improvements prevent structural degradation
+6. **Coupling and cohesion are the most practical design metrics** — high cohesion + low coupling = good design
+
+## Chapter Quiz
+
+**Q1: Which SOLID principle states that a class should have only one reason to change?**
+- A) Open-Closed Principle
+- B) Single Responsibility Principle
+- C) Liskov Substitution Principle
+- D) Dependency Inversion Principle
+
+**Answer: B** — SRP states each class should have a single responsibility.
+
+**Q2: A class that depends directly on a concrete database implementation rather than an abstraction violates which principle?**
+- A) ISP
+- B) LSP
+- C) DIP
+- D) OCP
+
+**Answer: C** — Dependency Inversion Principle requires depending on abstractions.
+
+**Q3: Which design pattern would you use to notify multiple components when state changes?**
+- A) Singleton
+- B) Factory
+- C) Observer
+- D) Adapter
+
+**Answer: C** — The Observer pattern defines a one-to-many dependency for state change notifications.
+
+**Q4: The worst type of coupling is:**
+- A) Data coupling
+- B) Stamp coupling
+- C) Content coupling
+- D) Message coupling
+
+**Answer: C** — Content coupling (directly modifying another module's internal data) is the worst.
+
+**Q5: What is the purpose of the Decorator pattern?**
+- A) Ensure a class has only one instance
+- B) Attach additional responsibilities to an object dynamically
+- C) Define a family of interchangeable algorithms
+- D) Convert the interface of a class into another interface
+
+**Answer: B** — The Decorator pattern dynamically adds responsibilities to objects.
+
 ## Exercises
 
 ### Review Questions
@@ -982,3 +984,4 @@ Design principles guide the creation of maintainable, understandable software. T
 ### Challenge Problem
 
 You inherit a codebase with the following characteristics: a single class of over 10,000 lines implementing the entire business logic; all methods are public and directly access the database; global variables are used extensively; the system has no automated tests; and every change requires weeks of regression testing. Develop a systematic refactoring plan over six months. Prioritise the design principles, specify the order of addressing problems, and describe how to manage the risk of introducing defects. Implement the refactored version of at least three core methods in TypeScript.
+

@@ -239,7 +239,7 @@ nav .md-nav__link .priority-badge {
   letter-spacing: -0.03em;
   line-height: 1.1;
   margin: 0 0 0.5rem;
-  background: linear-gradient(135deg, var(--ai-primary) 0%, var(--ai-accent) 100%);
+  background: var(--st-accent-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -268,7 +268,7 @@ nav .md-nav__link .priority-badge {
 
 .hero-stat strong {
   font-size: 1.15rem;
-  color: var(--ai-primary);
+  color: var(--st-accent);
   display: block;
   font-weight: 800;
 }
@@ -293,24 +293,26 @@ nav .md-nav__link .priority-badge {
 }
 
 .hero-btn-primary {
-  background: var(--ai-primary);
+  background: var(--st-accent);
   color: #fff !important;
 }
 
 .hero-btn-primary:hover {
-  background: var(--ai-primary-dim);
-  transform: translateY(-1px);
+  background: var(--st-accent-strong);
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.25);
 }
 
 .hero-btn-secondary {
-  border: 1px solid var(--ai-card-border);
-  color: var(--md-default-fg-color) !important;
-  background: var(--md-default-fg-color--lightest);
+  border: 1px solid var(--st-border);
+  color: var(--st-text-primary) !important;
+  background: var(--st-surface);
 }
 
 .hero-btn-secondary:hover {
-  border-color: var(--ai-accent);
-  transform: translateY(-1px);
+  border-color: var(--st-accent);
+  background: var(--st-accent-light);
+  transform: translateY(-1.5px);
 }
 
 .hero-btn-ghost {

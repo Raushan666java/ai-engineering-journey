@@ -172,10 +172,33 @@ body {
 
 /* ---------- GRID ALIGNMENT ---------- */
 .md-grid {
-  max-width: 1080px;
+  max-width: 1200px;
+  gap: 0;
 }
 .md-header__inner {
-  max-width: 1080px;
+  max-width: 1200px;
+}
+
+/* Ensure left sidebar, content, and right TOC align vertically */
+.md-main__inner {
+  display: flex;
+  gap: 0;
+}
+
+.md-sidebar--primary {
+  width: 14rem !important;
+  flex-shrink: 0;
+}
+
+.md-sidebar--secondary {
+  width: 13rem !important;
+  flex-shrink: 0;
+}
+
+.md-content {
+  flex: 1;
+  min-width: 0;
+  padding: 44px 48px 80px !important;
 }
 
 /* ---------- HEADER ---------- */
@@ -350,8 +373,8 @@ body {
 
 /* ---------- CONTENT ---------- */
 .md-content {
-  max-width: 1080px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   padding: 44px 56px 80px;
   position: relative;
   z-index: 1;
@@ -1142,4 +1165,414 @@ body {
 /* Redefine horizontal scroll spacing for tabs */
 .md-tabs__list {
   padding: 0 16px !important;
+}
+
+/* ============================================================
+   SIDEBAR ALIGNMENT & SCROLL FIX
+   ============================================================ */
+
+/* Fix sidebar sticky offset to match actual header+tabs height */
+.md-sidebar {
+  top: 5.6rem !important;
+}
+
+/* Independent sidebar scrolling with contained overscroll */
+.md-sidebar__scrollwrap {
+  max-height: calc(100vh - 5.6rem) !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
+/* Hide sidebar scrollbar for cleaner look (thin, subtle) */
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 3px;
+}
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background: var(--st-text-tertiary);
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+/* Consistent sidebar inner padding */
+.md-sidebar__inner {
+  padding: 0.4rem 0 2rem !important;
+}
+
+/* Left nav scrollwrap borders/padding */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  padding-right: 0;
+}
+
+/* Right TOC scrollwrap borders/padding */
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  padding-left: 0;
+}
+
+/* Fix TOC link alignment */
+.md-nav--secondary .md-nav__link {
+  font-size: 12.5px !important;
+  padding: 3px 12px !important;
+  margin: 1px 8px !important;
+  line-height: 1.4 !important;
+}
+
+/* TOC title alignment */
+.md-nav--secondary .md-nav__title {
+  font-size: 11px !important;
+  padding: 6px 12px 4px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.6px !important;
+  color: var(--st-text-tertiary) !important;
+  font-weight: 700 !important;
+}
+
+/* Prevent content blowout from tables/code */
+.md-content {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.md-typeset__scrollwrap {
+  overflow-x: auto;
+  margin: 1.2em 0;
+  max-width: 100%;
+}
+
+.md-typeset__table {
+  min-width: 100%;
+  display: block;
+}
+
+.md-typeset table {
+  width: 100%;
+  display: table;
+}
+
+/* Fix pre/code overflow for long lines */
+.md-typeset pre {
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+/* Prevent code blocks from blowing out narrow viewports */
+.md-typeset pre code {
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+/* Responsive sidebar adjustments */
+@media (max-width: 1100px) {
+  .md-sidebar {
+    top: 5.2rem !important;
+  }
+  .md-sidebar__scrollwrap {
+    max-height: calc(100vh - 5.2rem) !important;
+  }
+}
+
+@media (max-width: 860px) {
+  .md-sidebar {
+    top: 4.8rem !important;
+  }
+  .md-sidebar__scrollwrap {
+    max-height: calc(100vh - 4.8rem) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .md-sidebar {
+    top: 4.4rem !important;
+  }
+  .md-sidebar__scrollwrap {
+    max-height: calc(100vh - 4.4rem) !important;
+  }
+}
+
+/* ============================================================
+   SMOOTH THEME TRANSITIONS (light ↔ dark)
+   ============================================================ */
+.md-header,
+.md-tabs,
+.md-sidebar__scrollwrap,
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-footer,
+.md-footer-nav,
+.md-search__form,
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset .tabbed-set,
+.md-typeset .grid.cards > ul > li,
+.md-typeset .mermaid,
+.md-typeset table:not(.md-typeset__scrollwrap) {
+  transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.md-typeset a,
+.md-header__button,
+.md-search__icon,
+.md-nav__link {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================================
+   HEADING PERMALINKS (¶ icon)
+   ============================================================ */
+.md-typeset .headerlink {
+  color: var(--st-text-tertiary) !important;
+  transition: color 0.15s ease, transform 0.15s ease !important;
+  margin-left: 6px;
+  opacity: 0.3;
+}
+.md-typeset .headerlink:hover {
+  color: var(--st-accent) !important;
+  opacity: 1;
+  transform: translateX(3px);
+}
+.md-typeset h1:hover .headerlink,
+.md-typeset h2:hover .headerlink,
+.md-typeset h3:hover .headerlink,
+.md-typeset h4:hover .headerlink,
+.md-typeset h5:hover .headerlink {
+  opacity: 0.7;
+}
+
+/* ============================================================
+   DROP CAP — first paragraph after h1
+   ============================================================ */
+.md-typeset h1 + p:first-of-type::first-letter {
+  font-size: 3.4em;
+  font-weight: 800;
+  float: left;
+  line-height: 0.85;
+  padding-right: 10px;
+  padding-top: 5px;
+  color: var(--st-accent);
+  font-family: var(--st-font-sans);
+}
+
+/* ============================================================
+   CODE COPY BUTTON
+   ============================================================ */
+.md-clipboard {
+  color: var(--st-text-tertiary) !important;
+  transition: all 0.2s ease !important;
+  border-radius: 6px !important;
+  padding: 4px !important;
+  right: 8px !important;
+  top: 8px !important;
+}
+.md-clipboard:hover {
+  color: var(--st-accent) !important;
+  background: rgba(249,115,22,0.1) !important;
+  transform: scale(1.1);
+}
+.md-clipboard:active {
+  transform: scale(0.95);
+}
+.md-typeset pre::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.md-typeset pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+.md-typeset pre::-webkit-scrollbar-thumb {
+  background: var(--st-text-tertiary);
+  border-radius: 3px;
+}
+.md-typeset pre::-webkit-scrollbar-thumb:hover {
+  background: var(--st-text-secondary);
+}
+
+/* ============================================================
+   BLOCKQUOTE REFINEMENT
+   ============================================================ */
+.md-typeset blockquote {
+  font-style: normal;
+}
+.md-typeset blockquote p:first-of-type {
+  font-size: 1.05em;
+}
+.md-typeset blockquote p:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+/* ============================================================
+   SEARCH MODAL
+   ============================================================ */
+.md-search__overlay {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(0,0,0,0.35) !important;
+}
+.md-search__inner {
+  border-radius: 16px !important;
+  overflow: hidden;
+  box-shadow: var(--st-shadow-xl) !important;
+}
+.md-search__form {
+  border-radius: 12px 12px 0 0 !important;
+  border: none !important;
+  border-bottom: 1px solid var(--st-border) !important;
+}
+.md-search-result {
+  border-radius: 0 0 12px 12px !important;
+  max-height: 600px;
+}
+.md-search-result__meta {
+  background: var(--st-bg) !important;
+  font-family: var(--st-font-sans) !important;
+  font-size: 11px !important;
+  padding: 8px 20px !important;
+}
+.md-search-result__link {
+  padding: 12px 20px !important;
+  transition: background 0.15s ease;
+}
+.md-search-result__link:hover {
+  background: var(--st-accent-light) !important;
+}
+.md-search-result__link h1,
+.md-search-result__link h2,
+.md-search-result__link h3 {
+  font-family: var(--st-font-sans) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  -webkit-text-fill-color: var(--st-text-primary) !important;
+  background: none !important;
+}
+
+/* ============================================================
+   SIDEBAR NAV — active accent bar
+   ============================================================ */
+.md-nav__item--active > .md-nav__link--active {
+  position: relative;
+}
+.md-nav__item--active > .md-nav__link--active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  background: var(--st-accent);
+  border-radius: 0 3px 3px 0;
+  opacity: 1;
+}
+.md-nav__item .md-nav__item {
+  padding-left: 4px;
+}
+.md-nav__item .md-nav__item .md-nav__item {
+  padding-left: 8px;
+}
+.md-nav__item--section {
+  border-top: 1px solid var(--st-divider);
+  margin-top: 8px;
+  padding-top: 4px;
+}
+.md-nav__item--section:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* ============================================================
+   MOBILE DRAWER
+   ============================================================ */
+@media (max-width: 76.1875em) {
+  .md-drawer {
+    background: var(--st-surface) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+  .md-drawer--active {
+    box-shadow: var(--st-shadow-xl) !important;
+  }
+  .md-overlay {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    background: rgba(0,0,0,0.4) !important;
+  }
+}
+
+/* ============================================================
+   FOOTNOTE & DEFINITION LIST
+   ============================================================ */
+.md-typeset .footnote {
+  font-size: 14px !important;
+  color: var(--st-text-secondary) !important;
+}
+.md-typeset .footnote-ref {
+  font-size: 80% !important;
+  color: var(--st-accent) !important;
+}
+.md-typeset dt {
+  font-weight: 700;
+  color: var(--st-text-primary);
+  margin-top: 16px;
+}
+.md-typeset dd {
+  margin-left: 24px;
+  color: var(--st-text-secondary);
+}
+
+/* ============================================================
+   CODE LINE HIGHLIGHT
+   ============================================================ */
+.md-typeset .highlight .hll {
+  display: block;
+  background: rgba(249,115,22,0.06) !important;
+  border-left: 3px solid var(--st-accent);
+  margin: 0 -16px;
+  padding: 0 13px;
+}
+
+/* ============================================================
+   CONTENT SPACING POLISH
+   ============================================================ */
+.md-typeset h2 {
+  margin-top: 56px !important;
+}
+.md-typeset h2:first-of-type {
+  margin-top: 32px !important;
+}
+.md-typeset ul,
+.md-typeset ol {
+  margin-top: 8px;
+}
+
+/* ============================================================
+   RESPONSIVE — DROP CAP & SEARCH
+   ============================================================ */
+@media (max-width: 1100px) {
+  .md-typeset h1 + p:first-of-type::first-letter {
+    font-size: 2.8em;
+  }
+}
+@media (max-width: 860px) {
+  .md-typeset h1 + p:first-of-type::first-letter {
+    font-size: 2.4em;
+  }
+}
+@media (max-width: 600px) {
+  .md-typeset h1 + p:first-of-type::first-letter {
+    font-size: 2.2em;
+    float: none;
+    padding-right: 6px;
+  }
+  .md-search__inner {
+    border-radius: 0 !important;
+  }
 }

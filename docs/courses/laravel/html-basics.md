@@ -612,7 +612,7 @@ The `href` attribute specifies the destination. The `target` attribute controls 
             <ul>
                 <li><a href="#internal">Jump to Internal Links</a> Ã¢â‚¬â€ <code>href="#internal"</code></li>
                 <li><a href="#rel-attr">Jump to Rel Attributes</a> Ã¢â‚¬â€ <code>href="#rel-attr"</code></li>
-                <li><a href="#top">Back to top</a> Ã¢â‚¬â€ <code>href="#top"</code></li>
+                <!-- <li><a href="#top">Back to top</a> Ã¢â‚¬â€ <code>href="#top"</code></li> -->
             </ul>
         </div>
     </section>

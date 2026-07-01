@@ -173,7 +173,7 @@ body {
 
 /* ---------- GRID ALIGNMENT ---------- */
 .md-grid {
-  max-width: 1200px;
+  max-width: 1500px;
   gap: 0;
 }
 .md-header__inner {

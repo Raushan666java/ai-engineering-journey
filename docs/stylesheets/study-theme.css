@@ -122,7 +122,7 @@
 /* ---------- BASE ---------- */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 7rem;
 }
 body {
   font-family: var(--st-font-sans);
@@ -202,13 +202,13 @@ body {
     padding: 44px 48px 80px !important;
   }
 
-  /* Sticky sidebar offset matching header(64px) + tabs(~32px) = ~6rem */
+  /* Sticky sidebar offset: header(64px) + tabs(~48px) = ~7rem */
   .md-sidebar {
-    top: 6rem !important;
+    top: 7rem !important;
   }
 
   .md-sidebar__scrollwrap {
-    max-height: calc(100vh - 6rem) !important;
+    max-height: calc(100vh - 7rem) !important;
     overflow-y: auto !important;
     overscroll-behavior: contain;
     scrollbar-gutter: stable;
@@ -246,7 +246,6 @@ body {
   border-bottom: 1px solid var(--st-border);
   box-shadow: var(--st-shadow-sm) !important;
   color: var(--st-text-primary) !important;
-  position: relative;
   z-index: 5;
 }
 .md-header::after {
@@ -908,6 +907,7 @@ body {
   bottom: 24px !important;
   min-width: auto !important;
   width: auto !important;
+  max-width: max-content !important;
   backdrop-filter: blur(8px);
   line-height: 1.4 !important;
 }

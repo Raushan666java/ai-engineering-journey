@@ -180,25 +180,29 @@ body {
 }
 
 /* Ensure left sidebar, content, and right TOC align vertically */
-.md-main__inner {
-  display: flex;
-  gap: 0;
+@media screen and (min-width: 60em) {
+  .md-main__inner {
+    display: flex;
+    gap: 0;
+  }
+
+  .md-sidebar--primary {
+    width: 14rem !important;
+    flex-shrink: 0;
+  }
+
+  .md-content {
+    flex: 1;
+    min-width: 0;
+    padding: 44px 48px 80px !important;
+  }
 }
 
-.md-sidebar--primary {
-  width: 14rem !important;
-  flex-shrink: 0;
-}
-
-.md-sidebar--secondary {
-  width: 13rem !important;
-  flex-shrink: 0;
-}
-
-.md-content {
-  flex: 1;
-  min-width: 0;
-  padding: 44px 48px 80px !important;
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--secondary {
+    width: 13rem !important;
+    flex-shrink: 0;
+  }
 }
 
 /* ---------- HEADER ---------- */

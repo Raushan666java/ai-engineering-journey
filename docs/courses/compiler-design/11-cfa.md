@@ -868,6 +868,10 @@ Flow graph edges: `entry ? B1, B1 ? B2, B2 ? B3, B2 ? B4, B3 ? B2, B4 ? exit`.
 
 **Back edge**: `B3 ? B2` (B2 dominates B3). **Natural loop**: header `B2`, body `{B3}`. Well-structured single-entry loop.
 
+## Summary
+
+Control-flow analysis transforms instruction sequences into graphs. Dominators establish block hierarchy and enable safe code motion. Depth-first search identifies back edges for loop detection. Natural loops have a single header and are amenable to optimization. Reducibility ensures convergence properties for iterative algorithms. The TypeScript `FlowGraph`, `DominatorAnalysis`, `LengauerTarjan`, `DFSTBuilder`, `LoopDetector`, and `ReducibilityCheck` classes implement the complete CFA pipeline with working demos.
+
 ## Practical Takeaways
 
 1. **Basic blocks are the atomic unit**: All subsequent analyses operate on blocks, not individual instructions. Getting block identification right is essential.
@@ -875,7 +879,6 @@ Flow graph edges: `entry ? B1, B1 ? B2, B2 ? B3, B2 ? B4, B3 ? B2, B4 ? exit`.
 3. **Natural loops are the only "real" loops**: Unstructured cycles (gotos into the middle of a loop body) cannot be analyzed as natural loops. They are rare in practice.
 4. **Reducibility guarantees analysis speed**: Irreducible graphs cause iterative data-flow analysis to require more iterations. Node splitting can repair irreducibility.
 5. **Pre-headers simplify loop optimizations**: Inserting a pre-header gives a single point for loop-invariant code motion and loop-rotation transformations.
-
 
 // cfa
 // lexical-parsing-codegen implementation
@@ -968,9 +971,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Control-flow analysis transforms instruction sequences into graphs. Dominators establish block hierarchy and enable safe code motion. Depth-first search identifies back edges for loop detection. Natural loops have a single header and are amenable to optimization. Reducibility ensures convergence properties for iterative algorithms. The TypeScript `FlowGraph`, `DominatorAnalysis`, `LengauerTarjan`, `DFSTBuilder`, `LoopDetector`, and `ReducibilityCheck` classes implement the complete CFA pipeline with working demos.
 
 ## Chapter Quiz
 
@@ -1041,3 +1041,4 @@ Control-flow analysis transforms instruction sequences into graphs. Dominators e
 1. Implement a complete CFA in TypeScript: take a TAC sequence, partition into basic blocks, build the flow graph, compute dominators using BOTH the iterative algorithm and Lengauer-Tarjan, build the DFST with edge classification, detect natural loops with nesting, and check reducibility. Test on code with three nested loops and conditionals. Print: flow graph with predecessor/successor lists, dominator tree, DFS numbers and edge classification, loop nest hierarchy, and reducibility verdict. Use the FlowGraph, DominatorAnalysis, LengauerTarjan, DFSTBuilder, LoopDetector, and ReducibilityCheck classes from this chapter.
 
 </details>
+

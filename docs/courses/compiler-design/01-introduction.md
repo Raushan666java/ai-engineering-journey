@@ -564,6 +564,10 @@ class ErrorRecoveringLexer {
 }
 ```
 
+## Summary
+
+Compilers translate source programs into target programs through a sequence of phases organized into front end (analysis) and back end (synthesis). Lexical analysis, syntax analysis, semantic analysis, intermediate code generation, optimization, and code generation each transform one representation into another. Interpreters offer flexibility at the cost of execution speed, while JIT compilers attempt to bridge the gap. Specialized tools automate the construction of scanners, parsers, and other compiler components. The modern three-phase architecture with a shared IR enables efficient retargeting across source languages and target machines. Bootstrapping and T-diagrams illustrate how compilers can be self-hosting, and careful error handling strategies ensure robustness.
+
 ## Practical Takeaways
 
 1. **Always design the IR first**: The intermediate representation is the most consequential architectural decision. A well-designed IR (like LLVM's) enables multi-language, multi-target compilation.
@@ -572,7 +576,6 @@ class ErrorRecoveringLexer {
 4. **Leverage existing tools**: Use Lex/Flex, Yacc/Bison, or ANTLR for the front end. Focus your effort on optimization and code generation where tool support is weaker.
 5. **Error recovery is a feature**: A compiler that crashes on the first error is frustrating. Implement panic-mode recovery early ? it costs little but dramatically improves usability.
 6. **Plan for self-hosting**: Even if you never self-host, designing the language to be compilable in itself leads to cleaner semantics.
-
 
 // introduction
 // lexical-parsing-codegen implementation
@@ -665,9 +668,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Compilers translate source programs into target programs through a sequence of phases organized into front end (analysis) and back end (synthesis). Lexical analysis, syntax analysis, semantic analysis, intermediate code generation, optimization, and code generation each transform one representation into another. Interpreters offer flexibility at the cost of execution speed, while JIT compilers attempt to bridge the gap. Specialized tools automate the construction of scanners, parsers, and other compiler components. The modern three-phase architecture with a shared IR enables efficient retargeting across source languages and target machines. Bootstrapping and T-diagrams illustrate how compilers can be self-hosting, and careful error handling strategies ensure robustness.
 
 ## Chapter Quiz
 
@@ -728,3 +728,4 @@ Compilers translate source programs into target programs through a sequence of p
 
 1. Design a minimal two-phase compiler for arithmetic expressions composed of integers, addition, and multiplication. The front end should convert the expression into postfix notation. The back end should evaluate the postfix expression using a stack machine. Implement both phases in TypeScript and demonstrate correct translation and evaluation. Extend your implementation to support subtraction and division, handling the error condition of division by zero with a meaningful error message. Use the `CompilerPipeline` pattern from this chapter as your starting point.
 </details>
+

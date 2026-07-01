@@ -622,6 +622,10 @@ SDDs are used throughout compilation:
 
 The **desk calculator** is the canonical S-attributed example; the **type checker** is the canonical L-attributed example with context propagation.
 
+## Summary
+
+Syntax-directed definitions decorate context-free grammars with semantic rules. S-attributed definitions use only synthesized attributes and are evaluated during bottom-up parsing. L-attributed definitions add inherited attributes subject to left-to-right restrictions and are evaluated during top-down parsing. Dependency graphs determine evaluation order ? any topological sort is valid. SDDs and SDTs enable the compiler to perform type checking, code generation, and other semantic processing in a single pass integrated with parsing. The TypeScript `SDTEvaluator` demonstrates both evaluation strategies with working code.
+
 ## Practical Takeaways
 
 1. **Start with synthesized attributes**: S-attributed definitions are simpler, expressive enough for many tasks, and map directly to bottom-up parsers.
@@ -629,7 +633,6 @@ The **desk calculator** is the canonical S-attributed example; the **type checke
 3. **Dependency graphs expose ordering issues**: Before implementing, draw the dependency graph. A cycle means your SDD is not well-formed.
 4. **SDTs for LL parsing embed actions inline**: Place actions where the needed information is available. Use marker nonterminals if an action must execute before a particular symbol.
 5. **Yacc/Bison's `$$`/$i is S-attributed by nature**: For inherited attributes in bottom-up parsers, use embedded actions with intermediate markers or pass values through the parser stack.
-
 
 // sdt
 // lexical-parsing-codegen implementation
@@ -722,9 +725,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Syntax-directed definitions decorate context-free grammars with semantic rules. S-attributed definitions use only synthesized attributes and are evaluated during bottom-up parsing. L-attributed definitions add inherited attributes subject to left-to-right restrictions and are evaluated during top-down parsing. Dependency graphs determine evaluation order ? any topological sort is valid. SDDs and SDTs enable the compiler to perform type checking, code generation, and other semantic processing in a single pass integrated with parsing. The TypeScript `SDTEvaluator` demonstrates both evaluation strategies with working code.
 
 ## Chapter Quiz
 
@@ -786,3 +786,4 @@ Syntax-directed definitions decorate context-free grammars with semantic rules. 
 
 1. Implement a syntax-directed translator in TypeScript that reads infix arithmetic expressions and produces three-address code. Use a recursive-descent parser and an L-attributed SDD. Each identifier should be assigned a temporary. Support addition, subtraction, multiplication, division, and parentheses. Extend to boolean expressions with relational operators (==, <, >) and short-circuit evaluation. Demonstrate on five distinct expressions, showing the generated three-address code. Include expressions that test operator precedence and nested parentheses. Use the `SDTEvaluator.toTAC` method as the core of your code generator.
 </details>
+

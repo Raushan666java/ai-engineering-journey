@@ -690,6 +690,10 @@ Spilled values:
   (none)
 ```
 
+## Summary
+
+Register allocation is the NP-complete problem of mapping virtual live ranges to physical registers. The graph-coloring approach ? build an interference graph, simplify by removing low-degree nodes, select colors by popping the stack, and spill when coloring fails ? provides a practical heuristic. Chaitin's algorithm established the framework; Briggs's optimistic coloring improved it by deferring spill decisions. Conservative coalescing eliminates copy instructions without causing spilling. Weighted spill costs and rematerialization optimize allocation for hot loops and cheap values. Modern production allocators (LLVM's greedy allocator, HotSpot C2) extend these ideas with eviction, live-range splitting, and region-based allocation, achieving register assignments that approach the theoretical optimum for most real-world programs.
+
 ## Practical Takeaways
 
 | Insight | Why It Matters |
@@ -701,7 +705,6 @@ Spilled values:
 | Live-range splitting at loop boundaries helps both allocation and assignment | Short inner-loop ranges are easier to color than long ranges spanning loops |
 | Pre-colored registers (ABI) constrain the allocator | Treat them as fixed nodes; the allocator must work around them |
 | LLVM's greedy allocator with eviction outperforms pure graph coloring | Eviction allows dynamic rebalancing when a high-cost range conflicts with several low-cost ones |
-
 
 // register allocation
 // lexical-parsing-codegen implementation
@@ -794,9 +797,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Register allocation is the NP-complete problem of mapping virtual live ranges to physical registers. The graph-coloring approach ? build an interference graph, simplify by removing low-degree nodes, select colors by popping the stack, and spill when coloring fails ? provides a practical heuristic. Chaitin's algorithm established the framework; Briggs's optimistic coloring improved it by deferring spill decisions. Conservative coalescing eliminates copy instructions without causing spilling. Weighted spill costs and rematerialization optimize allocation for hot loops and cheap values. Modern production allocators (LLVM's greedy allocator, HotSpot C2) extend these ideas with eviction, live-range splitting, and region-based allocation, achieving register assignments that approach the theoretical optimum for most real-world programs.
 
 ## Chapter Quiz
 
@@ -891,3 +891,4 @@ Register allocation is the NP-complete problem of mapping virtual live ranges to
    - The final register assignments for non-spilled values.
 
    Compare the number of spills with and without the Briggs improvement. Report the percentage of spills saved by optimistic coloring.
+

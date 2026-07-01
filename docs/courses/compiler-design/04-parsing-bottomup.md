@@ -618,6 +618,10 @@ stmt ? error ;
 
 When an error is encountered, the parser shifts a special `error` token (consuming input until `;`), then reduces to `stmt`. GLR parsing supports arbitrary error recovery with multiple interpretations.
 
+## Summary
+
+Bottom-up parsing reverses a rightmost derivation by repeatedly reducing handles. LR parsers generalize shift-reduce parsing using state-based tables. LR(0) provides the basic automaton; SLR(1) adds FOLLOW-based lookahead; CLR(1) tracks per-item lookahead; and LALR(1) compresses CLR(1) states for practical table sizes. Parser generators like Yacc and Bison automate LALR(1) construction. Ambiguous grammars are handled via precedence and associativity annotations.
+
 ## Practical Takeaways
 
 1. **Start with LR(0) then add lookahead**: Build the LR(0) automaton first, verify it, then add SLR(1) restrictions. This isolates bugs in the automaton from bugs in lookahead computation.
@@ -625,7 +629,6 @@ When an error is encountered, the parser shifts a special `error` token (consumi
 3. **Debug conflicts with Bison's -v output**: The `.output` file shows every state and the cause of each conflict. Look for states with multiple items competing for the same terminal.
 4. **Prefer LALR(1) over CLR(1)**: CLR(1) tables can be 10x larger than LALR(1) with negligible power difference for practical grammars.
 5. **Resolve conflicts with precedence, not grammar rewriting**: Precedence declarations are clearer and less error-prone than restructuring the grammar.
-
 
 // parsing bottomup
 // lexical-parsing-codegen implementation
@@ -718,9 +721,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Bottom-up parsing reverses a rightmost derivation by repeatedly reducing handles. LR parsers generalize shift-reduce parsing using state-based tables. LR(0) provides the basic automaton; SLR(1) adds FOLLOW-based lookahead; CLR(1) tracks per-item lookahead; and LALR(1) compresses CLR(1) states for practical table sizes. Parser generators like Yacc and Bison automate LALR(1) construction. Ambiguous grammars are handled via precedence and associativity annotations.
 
 ## Chapter Quiz
 
@@ -781,3 +781,4 @@ Bottom-up parsing reverses a rightmost derivation by repeatedly reducing handles
 
 1. Implement a shift-reduce parser with a hand-built SLR(1) table for the grammar `S ? AA, A ? aA | b`. Your implementation must include LR(0) automaton construction, FOLLOW computation, table construction, and the shift-reduce driver. Demonstrate on inputs `ab`, `aab`, `aaab`. Extend to produce a parse tree and print it in parenthesized format. Also implement panic-mode error recovery using the follow sets.
 </details>
+

@@ -748,6 +748,12 @@ Basic IVs: i
 Derived IVs: t3
 ```
 
+## Summary
+
+Loop optimization delivers the highest performance payoff in compilation because a small fraction of code accounts for most execution time. Loop-invariant code motion eliminates per-iteration recomputation of constant expressions. Induction-variable detection and strength reduction replace expensive multiplications with additions inside loops. Induction-variable elimination may remove the loop counter entirely. Loop unrolling increases basic-block size and reduces branch overhead. Loop fusion and fission restructure loop bodies to improve cache behavior and enable vectorization. Loop interchange optimizes memory access patterns. Vectorization exploits SIMD hardware when loop-carried dependencies permit.
+
+These transformations form a coordinated pipeline that depends on the natural-loop identification from control-flow analysis and the data-flow facts from the previous chapter. When applied judiciously ? guided by profile data and machine models ? they produce the order-of-magnitude speedups that distinguish production compilers from toy implementations.
+
 ## Practical Takeaways
 
 | Insight | Why It Matters |
@@ -760,7 +766,6 @@ Derived IVs: t3
 | Interchange is the most impactful for column-major access patterns | On row-major systems (x86), always prefer stride-1 inner loops |
 | Dependence analysis is the gatekeeper for vectorization | True dependencies block vectorization; anti/output dependencies can be renamed |
 | Profile-guided feedback dramatically improves loop transformation decisions | Hot/cold splitting and trip-count profiling make unrolling and interchange more effective |
-
 
 // loop optimization
 // lexical-parsing-codegen implementation
@@ -853,11 +858,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Loop optimization delivers the highest performance payoff in compilation because a small fraction of code accounts for most execution time. Loop-invariant code motion eliminates per-iteration recomputation of constant expressions. Induction-variable detection and strength reduction replace expensive multiplications with additions inside loops. Induction-variable elimination may remove the loop counter entirely. Loop unrolling increases basic-block size and reduces branch overhead. Loop fusion and fission restructure loop bodies to improve cache behavior and enable vectorization. Loop interchange optimizes memory access patterns. Vectorization exploits SIMD hardware when loop-carried dependencies permit.
-
-These transformations form a coordinated pipeline that depends on the natural-loop identification from control-flow analysis and the data-flow facts from the previous chapter. When applied judiciously ? guided by profile data and machine models ? they produce the order-of-magnitude speedups that distinguish production compilers from toy implementations.
 
 ## Chapter Quiz
 
@@ -971,3 +971,4 @@ These transformations form a coordinated pipeline that depends on the natural-lo
    ```
 
    Show the three-address code after each optimization phase. Verify that after the full pipeline, the loop uses only pointer-arithmetic IVs and no longer computes `i * 4` anywhere in the body. Measure the reduction in operations per iteration.
+

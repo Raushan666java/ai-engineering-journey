@@ -876,6 +876,10 @@ dag2.toTAC().forEach((instr, i) => {
 | Debugging | Source maps and IR breakpoints | IR-level debugging improves developer experience |
 | Optimization | Auto-vectorization, inlining | SSA-based IR enables aggressive optimization |
 
+## Summary
+
+Intermediate code generation translates the annotated parse tree into an IR independent of both source language and target machine. ASTs and DAGs provide graphical representations for analysis, while three-address code in quadruple, triple, or indirect-triple form provides a linear representation straightforward to translate into assembly. The choice of IR significantly influences the compiler's optimization capability and retargetability. TAC is the dominant IR in modern production compilers because of its simplicity, expressiveness, and optimization suitability. The TypeScript `TACGenerator` and `ExpressionDAG` classes demonstrate both linear and graphical IR construction with working demos covering expressions, control flow, loops, procedure calls, DAG-based CSE, and constant folding.
+
 ## Practical Takeaways
 
 1. **Quadruples are the practical default**: Explicit result fields make code transformations easy. Use quadruples unless space constraints are extreme.
@@ -883,7 +887,6 @@ dag2.toTAC().forEach((instr, i) => {
 3. **TAC is machine-independent**: Generate TAC without knowing the target architecture. Retargeting only requires translating TAC to the target assembly.
 4. **Label and temp naming conventions matter**: Use `L1, L2, ...` for labels and `t1, t2, ...` for temporaries ? they keep the generated code readable and debuggable.
 5. **Short-circuit evaluation matches source semantics**: Boolean `&&` and `||` must generate conditional jumps, not simple arithmetic, to preserve the evaluation semantics required by most languages.
-
 
 // intermediate code
 // lexical-parsing-codegen implementation
@@ -976,9 +979,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Intermediate code generation translates the annotated parse tree into an IR independent of both source language and target machine. ASTs and DAGs provide graphical representations for analysis, while three-address code in quadruple, triple, or indirect-triple form provides a linear representation straightforward to translate into assembly. The choice of IR significantly influences the compiler's optimization capability and retargetability. TAC is the dominant IR in modern production compilers because of its simplicity, expressiveness, and optimization suitability. The TypeScript `TACGenerator` and `ExpressionDAG` classes demonstrate both linear and graphical IR construction with working demos covering expressions, control flow, loops, procedure calls, DAG-based CSE, and constant folding.
 
 ## Chapter Quiz
 
@@ -1059,3 +1059,4 @@ Intermediate code generation translates the annotated parse tree into an IR inde
 2. Write a TypeScript class `QuadrupleToAssembly` that translates quadruple TAC to a simplified x86-64 assembly dialect. For each TAC instruction, generate the corresponding assembly sequence using `mov`, `add`, `sub`, `imul`, `cmp`, `jmp`, `jle`, etc. Assume all temporaries are stored in a stack frame. Demonstrate on the TAC output from Demo 2 and Demo 3 above.
 
 </details>
+

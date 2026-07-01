@@ -832,6 +832,10 @@ function genCall(funcName: string, args: string[], returnReg: string): AsmInstr[
 | Web Development | WebAssembly code generation | Wasm enables near-native performance |
 | Tooling | JIT compilers in VMs | Modern JITs use tree-rewriting and coloring |
 
+## Summary
+
+Code generation maps IR to target machine instructions. Basic blocks partition code for analysis and optimization. Register allocation via the farthest-next-use heuristic handles single blocks optimally; graph coloring handles whole procedures. Instruction selection via tree-rewriting with dynamic programming automates pattern matching against the target instruction set. Effective code generation balances instruction cost, register pressure, and compile time. The TypeScript `FlowGraph` and `InstructionSelector` classes demonstrate block identification, register allocation, and instruction selection with working demos.
+
 ## Practical Takeaways
 
 1. **Basic blocks are the fundamental unit**: All local optimization and code generation operates on basic blocks. Keep them maximal but correct.
@@ -839,7 +843,6 @@ function genCall(funcName: string, args: string[], returnReg: string): AsmInstr[
 3. **Graph coloring with K = number of allocatable registers**: Build an interference graph, simplify with stack, assign colors. Spill when chromatic number exceeds K.
 4. **Tree-rewriting with DP automates instruction selection**: Express the target instruction set as tree patterns with costs. The DP pass selects the cheapest covering.
 5. **Procedure calls are the hardest part**: Saving and restoring caller-saved registers, passing arguments, and aligning the stack require careful coordination.
-
 
 // code gen
 // lexical-parsing-codegen implementation
@@ -932,9 +935,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Code generation maps IR to target machine instructions. Basic blocks partition code for analysis and optimization. Register allocation via the farthest-next-use heuristic handles single blocks optimally; graph coloring handles whole procedures. Instruction selection via tree-rewriting with dynamic programming automates pattern matching against the target instruction set. Effective code generation balances instruction cost, register pressure, and compile time. The TypeScript `FlowGraph` and `InstructionSelector` classes demonstrate block identification, register allocation, and instruction selection with working demos.
 
 ## Chapter Quiz
 
@@ -1021,3 +1021,4 @@ Code generation maps IR to target machine instructions. Basic blocks partition c
 1. Implement a code generator in TypeScript for a basic block that translates TAC to simplified RISC assembly. Use farthest-next-use for register allocation with spilling. Support at least `add`, `sub`, `mul`, `load-immediate`, and `load/store`. Demonstrate on a block with 8 variables and 4 registers, showing spills. Emit the complete assembly sequence. Use the FlowGraph class from this chapter as your starting point.
 
 </details>
+

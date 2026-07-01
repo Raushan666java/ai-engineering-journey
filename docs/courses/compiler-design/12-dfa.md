@@ -620,6 +620,14 @@ flowchart TB
     style Backward fill:#fce4ec
 ```
 
+## Summary
+
+Data-flow analysis is the engine behind all global optimizations. The three classic problems ? reaching definitions (forward may), live variables (backward may), and available expressions (forward must) ? share a uniform mathematical structure: a lattice domain, a transfer function per block, and a meet operator that combines information at confluence points. The iterative algorithm solves these equations by repeatedly computing IN and OUT values until the sets stabilize at a monotone fixed point.
+
+Constant propagation extends the framework with a non-distributive lattice where values range from TOP (unknown) through specific integer constants to BOTTOM (not constant). Partial redundancy elimination unifies multiple optimizations into a single bidirectional analysis.
+
+The generic data-flow framework presented in this chapter can be instantiated for any of these analyses by plugging in the direction, meet operator, transfer sets, and initial values. This composability is why data-flow analysis remains the central organizing principle of modern optimizer design.
+
 ## Practical Takeaways
 
 | Insight | Why It Matters |
@@ -630,7 +638,6 @@ flowchart TB
 | SSA form simplifies every data-flow analysis | f-functions are the only merge points; use SSA if building a production compiler |
 | PRE subsumes CSE, code motion, and hoisting | A single bidirectional analysis achieves what previously required three separate passes |
 | Constant propagation is not distributive | The MFP ? MOP: some constant facts are lost; SCCP recovers many of them |
-
 
 // dfa
 // lexical-parsing-codegen implementation
@@ -723,13 +730,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Data-flow analysis is the engine behind all global optimizations. The three classic problems ? reaching definitions (forward may), live variables (backward may), and available expressions (forward must) ? share a uniform mathematical structure: a lattice domain, a transfer function per block, and a meet operator that combines information at confluence points. The iterative algorithm solves these equations by repeatedly computing IN and OUT values until the sets stabilize at a monotone fixed point.
-
-Constant propagation extends the framework with a non-distributive lattice where values range from TOP (unknown) through specific integer constants to BOTTOM (not constant). Partial redundancy elimination unifies multiple optimizations into a single bidirectional analysis.
-
-The generic data-flow framework presented in this chapter can be instantiated for any of these analyses by plugging in the direction, meet operator, transfer sets, and initial values. This composability is why data-flow analysis remains the central organizing principle of modern optimizer design.
 
 ## Chapter Quiz
 
@@ -837,3 +837,4 @@ The generic data-flow framework presented in this chapter can be instantiated fo
    Test all four analyses on a 6-block flow graph with at least one loop and one conditional branch. Print the IN/OUT sets for each block for each analysis and verify that they reach a fixed point within 5 iterations.
 
 2. **Sparse Conditional Constant Propagation.** Implement a simplified SCCP that operates on the program's SSA form (manually convert the test program to SSA first). Propagate constants through f-functions and only mark CFG edges as executable when branch conditions become constant. Compare the precision of your SCCP implementation with the simple lattice-based approach on a test case where a branch condition is always false, causing one path to be unreachable.
+

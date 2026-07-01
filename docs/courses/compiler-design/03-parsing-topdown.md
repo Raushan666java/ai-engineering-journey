@@ -576,6 +576,10 @@ LL(1) parsers use **panic-mode recovery**: on encountering an error (blank table
 
 **Synchronizing token sets**: For each nonterminal `A`, the synchronizing set is `FOLLOW(A)`. Additional tokens like semicolons, end-keywords, and closing braces are also good synchronizers because they terminate statements.
 
+## Summary
+
+Top-down parsing constructs a derivation from the root (start symbol) toward the leaves (input). LL(1) grammars enable deterministic parsing using a predictive parsing table. Eliminating left recursion and left factoring is essential for converting practical grammars into LL(1) form. Recursive-descent parsing provides a straightforward implementation strategy when the grammar meets LL(1) conditions. The FIRST and FOLLOW sets are fundamental to table construction and error recovery.
+
 ## Practical Takeaways
 
 1. **LL(1) parsing is sufficient for most programming languages**: Expressions, statements, and declarations can all be handled with LL(1) techniques. The need for bottom-up parsing is rare in practice.
@@ -583,7 +587,6 @@ LL(1) parsers use **panic-mode recovery**: on encountering an error (blank table
 3. **Always eliminate left recursion first**: Left-recursive grammars cause infinite loops in top-down parsers. The transformation is mechanical and should be done before any other analysis.
 4. **Compute FIRST and FOLLOW carefully**: Errors in these sets propagate to the parsing table and produce mysterious failures. Verify with known examples.
 5. **Error reporting matters**: A good error message includes the line number, the unexpected token, and the expected tokens. Never just say "syntax error."
-
 
 // parsing topdown
 // lexical-parsing-codegen implementation
@@ -676,9 +679,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Top-down parsing constructs a derivation from the root (start symbol) toward the leaves (input). LL(1) grammars enable deterministic parsing using a predictive parsing table. Eliminating left recursion and left factoring is essential for converting practical grammars into LL(1) form. Recursive-descent parsing provides a straightforward implementation strategy when the grammar meets LL(1) conditions. The FIRST and FOLLOW sets are fundamental to table construction and error recovery.
 
 ## Chapter Quiz
 
@@ -747,3 +747,4 @@ Top-down parsing constructs a derivation from the root (start symbol) toward the
    ```
    The parser should report syntax errors with meaningful messages and show the parse tree structure as a parenthesized expression. Test it on valid and invalid inputs. Extend the `LL1ParserGenerator` to output the actual parse tree as a structured JSON object during parsing.
 </details>
+

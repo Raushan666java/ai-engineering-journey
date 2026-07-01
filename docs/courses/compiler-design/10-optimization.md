@@ -643,6 +643,10 @@ ST d, R3
 
 This removes one `LD` instruction (a memory access), which is typically the most expensive operation.
 
+## Summary
+
+Code optimization improves program quality without changing its external behavior. Peephole optimization provides an efficient technique for local improvements through pattern matching. Algebraic simplification, constant folding, and strength reduction target common suboptimal patterns. Common-subexpression elimination reuses previously computed values. Copy propagation and constant propagation enable further optimization. Dead-code elimination removes unused computations. The TypeScript `PeepholeOptimizer` and `GlobalCSE` classes demonstrate all these techniques with a fixed-point iteration loop.
+
 ## Practical Takeaways
 
 1. **Peephole is cheap and effective**: A well-designed peephole optimizer with 20?30 patterns can achieve 10?30% code reduction with minimal compile-time overhead.
@@ -650,7 +654,6 @@ This removes one `LD` instruction (a memory access), which is typically the most
 3. **Dead-code elimination must respect side effects**: Only remove instructions whose result is unused AND the instruction itself has no side effects. Function calls, stores to memory, and barrier instructions must never be removed.
 4. **CSE within basic blocks is easy**: Within a single block, available expressions are trivially computed by scanning forward. Across blocks, full available-expressions analysis (Chapter 12) is needed.
 5. **Strength reduction for multiply/divide by powers of 2 is safe for unsigned integers**: Signed division by powers of 2 has edge cases with negative numbers ? the shift is not an exact replacement.
-
 
 // optimization
 // lexical-parsing-codegen implementation
@@ -743,9 +746,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Code optimization improves program quality without changing its external behavior. Peephole optimization provides an efficient technique for local improvements through pattern matching. Algebraic simplification, constant folding, and strength reduction target common suboptimal patterns. Common-subexpression elimination reuses previously computed values. Copy propagation and constant propagation enable further optimization. Dead-code elimination removes unused computations. The TypeScript `PeepholeOptimizer` and `GlobalCSE` classes demonstrate all these techniques with a fixed-point iteration loop.
 
 ## Chapter Quiz
 
@@ -820,3 +820,4 @@ Code optimization improves program quality without changing its external behavio
 1. Implement a peephole optimizer in TypeScript (based on the `PeepholeOptimizer` class) that reads a sequence of three-address code instructions and applies the following transformations in a fixed-point loop: (a) constant folding, (b) strength reduction for multiplication by powers of two, (c) algebraic simplification, (d) copy propagation, (e) elimination of redundant stores followed by loads of the same variable, (f) dead-code elimination. The optimizer must continue iterating until no further improvements are possible. Demonstrate the optimizer on a test sequence of at least 15 instructions and show the output after each optimization pass. Print a summary showing the code size reduction percentage.
 
 </details>
+

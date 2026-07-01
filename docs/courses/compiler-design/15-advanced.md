@@ -768,6 +768,10 @@ Block 3: x_2 = f(...); y_0 = x_2 + 1
 [Tier 2]    add(10) = 15
 ```
 
+## Summary
+
+Modern compilation extends far beyond the classic phase-by-phase pipeline. Just-in-time compilers adapt at runtime through tiered compilation and deoptimization, trading compilation speed for peak performance. Interprocedural analysis breaks the function-boundary barrier, enabling inlining, constant propagation across calls, and mod/ref analysis. Profile-guided optimization replaces static heuristics with real-world execution data, yielding 10?30% improvements. Static single assignment form ? where each variable is defined exactly once ? is the dominant IR in production compilers (LLVM, V8 TurboFan, HotSpot C2) because it simplifies all data-flow analyses, enabling global value numbering, dead-code elimination, and sparse conditional constant propagation. Auto-parallelization exploits multi-core hardware by proving loop iterations independent via dependence analysis and the polytope model. Together, these advanced topics represent the frontier of production compiler technology, transforming source code into machine code that approaches the limits of what the hardware can deliver.
+
 ## Practical Takeaways
 
 | Insight | Why It Matters |
@@ -780,7 +784,6 @@ Block 3: x_2 = f(...); y_0 = x_2 + 1
 | PGO fills the gap between static analysis and real-world execution | Profile data improves branch prediction, inlining, and layout by replacing heuristics with measurements |
 | Auto-parallelization is limited by dependence analysis precision | The polytope model handles affine loops exactly; non-affine code requires runtime techniques |
 | The sea-of-nodes IR subsumes multiple optimizations into one | Global code motion + LICM + PRE become a single graph transformation on the sea of nodes |
-
 
 // advanced
 // lexical-parsing-codegen implementation
@@ -873,9 +876,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Modern compilation extends far beyond the classic phase-by-phase pipeline. Just-in-time compilers adapt at runtime through tiered compilation and deoptimization, trading compilation speed for peak performance. Interprocedural analysis breaks the function-boundary barrier, enabling inlining, constant propagation across calls, and mod/ref analysis. Profile-guided optimization replaces static heuristics with real-world execution data, yielding 10?30% improvements. Static single assignment form ? where each variable is defined exactly once ? is the dominant IR in production compilers (LLVM, V8 TurboFan, HotSpot C2) because it simplifies all data-flow analyses, enabling global value numbering, dead-code elimination, and sparse conditional constant propagation. Auto-parallelization exploits multi-core hardware by proving loop iterations independent via dependence analysis and the polytope model. Together, these advanced topics represent the frontier of production compiler technology, transforming source code into machine code that approaches the limits of what the hardware can deliver.
 
 ## Chapter Quiz
 
@@ -984,3 +984,4 @@ Modern compilation extends far beyond the classic phase-by-phase pipeline. Just-
    Show: (a) the dominator tree, (b) dominance frontiers, (c) the CFG with f-functions inserted, (d) the renamed SSA form, (e) the GVN-optimized SSA form where `a+b` is computed once and reused in B2 and B3.
 
 2. **Tiered JIT Emulator.** Extend the `SimpleJIT` class with a simple optimization pass that runs at Tier 2. The optimizer should: (a) perform constant folding on the bytecode ("push 2; push 3; add" ? "push 5"), (b) eliminate dead stores (a `store` followed by another `store` to the same variable with no `load` in between), and (c) inline small methods (methods with = 3 bytecode instructions). Show the bytecode before and after optimization for a test method, and measure the execution speedup between Tier 1 (no optimization) and Tier 2 (optimized) over 10,000 invocations.
+

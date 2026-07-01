@@ -901,6 +901,10 @@ The **occurs check** prevents infinite recursion: if unifying `a` with `a ? int`
 | Tooling | IDE intellisense, type-aware refactoring | Type information powers smart tooling |
 | Verification | Proof assistants (Coq, Lean) | Type systems encode program properties |
 
+## Summary
+
+Type checking verifies that operations receive expected operand types. Type expressions describe the complete type of a language construct. Name and structural equivalence provide alternative equality criteria. Type inference automates type discovery through equation generation and unification. Overloading and polymorphism increase expressive power while requiring more sophisticated checking. Unification is the computational engine underlying Hindley-Milner inference, and the occurs check prevents infinite types. The TypeScript `TypeChecker` and Hindley-Milner inference engine demonstrate both synthesized checking and constraint-based inference with working demos.
+
 ## Practical Takeaways
 
 1. **Name equivalence catches more bugs**: Structural equivalence silently merges types that the programmer intended to be distinct. Use name equivalence for user-defined types.
@@ -908,7 +912,6 @@ The **occurs check** prevents infinite recursion: if unifying `a` with `a ? int`
 3. **Overload resolution is NP-hard in general**: The full problem with subtyping, multiple dispatch, and context-sensitive resolution is expensive. Keep the overload set small.
 4. **Variance annotations matter**: Use `in` (contravariant) and `out` (covariant) annotations in generic types (Kotlin, TypeScript) to preserve subtype relationships safely.
 5. **Unification with occurs check is essential**: Without the occurs check, the inference algorithm can loop infinitely or produce unsound substitutions.
-
 
 // type checking
 // lexical-parsing-codegen implementation
@@ -1001,9 +1004,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Type checking verifies that operations receive expected operand types. Type expressions describe the complete type of a language construct. Name and structural equivalence provide alternative equality criteria. Type inference automates type discovery through equation generation and unification. Overloading and polymorphism increase expressive power while requiring more sophisticated checking. Unification is the computational engine underlying Hindley-Milner inference, and the occurs check prevents infinite types. The TypeScript `TypeChecker` and Hindley-Milner inference engine demonstrate both synthesized checking and constraint-based inference with working demos.
 
 ## Chapter Quiz
 
@@ -1067,3 +1067,4 @@ Type checking verifies that operations receive expected operand types. Type expr
 1. Implement a type checker for a small expression language with integers, booleans, operators (+, -, *, <, =), if-then-else, and let-bindings. Use an L-attributed SDD with a symbol table. Report meaningful errors for type mismatches. Extend with Hindley-Milner inference: use type variables, generate constraints during a first pass, and solve via unification. Demonstrate correct typing of a polymorphic identity function and correct rejection of adding boolean to integer. Use the TypeScript `TypeChecker` and Hindley-Milner engine from this chapter as your base implementation. Extend the checker to handle recursive functions by pre-populating the environment with the function name before checking its body.
 
 </details>
+

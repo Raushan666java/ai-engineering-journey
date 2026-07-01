@@ -1035,6 +1035,10 @@ genCollector.printState();
 | Tooling | Memory profilers and leak detectors | Deep knowledge yields better tooling |
 | Game Development | Custom allocators for game engines | Predictable latency requires GC avoidance |
 
+## Summary
+
+Runtime organization manages program storage during execution. Activation records on the stack efficiently handle procedure calls. The heap accommodates dynamic data with longer lifetimes. Static scoping provides compile-time resolution of nonlocal references, while dynamic scoping uses the call chain. Parameter-passing mechanisms control caller-callee data flow. Garbage collection automates heap management; reference counting, mark-sweep, copying, and generational collection offer different trade-offs in throughput, pause time, and memory overhead. The TypeScript `RuntimeSimulator`, `Heap`, and GC implementations demonstrate these concepts with working code.
+
 ## Practical Takeaways
 
 1. **Stack is for procedure-lifetime data**: Use stack allocation for values whose lifetime matches function scope. It is faster than heap and has zero fragmentation.
@@ -1042,7 +1046,6 @@ genCollector.printState();
 3. **Frame pointer elimination is a trade-off**: It saves register pressure but makes debugging harder. Use it only in optimized release builds.
 4. **Reference counting is simple but leaky**: It handles cycles poorly. Most production collectors use tracing (mark-sweep or generational) for correctness.
 5. **Generational collection wins in practice**: The weak generational hypothesis holds for virtually all applications. Collect the nursery frequently and the tenured space rarely.
-
 
 // runtime env
 // lexical-parsing-codegen implementation
@@ -1135,9 +1138,6 @@ async function demo(): Promise<void> {
 }
 demo()
 export { Cache, Logger, computeHash, CacheEntry }
-## Summary
-
-Runtime organization manages program storage during execution. Activation records on the stack efficiently handle procedure calls. The heap accommodates dynamic data with longer lifetimes. Static scoping provides compile-time resolution of nonlocal references, while dynamic scoping uses the call chain. Parameter-passing mechanisms control caller-callee data flow. Garbage collection automates heap management; reference counting, mark-sweep, copying, and generational collection offer different trade-offs in throughput, pause time, and memory overhead. The TypeScript `RuntimeSimulator`, `Heap`, and GC implementations demonstrate these concepts with working code.
 
 ## Chapter Quiz
 
@@ -1200,3 +1200,4 @@ Runtime organization manages program storage during execution. Activation record
 1. Implement a mark-sweep collector in TypeScript based on the `MarkSweepCollector` class from this chapter. Manage a simulated 64 KB heap with a free list, allocate blocks via `malloc`, mark via stack-based DFS from the root set, and sweep by rebuilding the free list. Demonstrate by allocating a tree of objects, removing references to some subtrees, invoking the collector, and verifying reclamation by comparing the free list before and after collection. Print all free blocks with their addresses and sizes. Extend the implementation with a generational collector that partitions the heap into a nursery and tenured space, with objects promoted after 3 surviving minor collections.
 
 </details>
+

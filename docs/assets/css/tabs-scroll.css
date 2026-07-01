@@ -70,7 +70,8 @@
 /* Scroll hint gradient edges */
 .md-tabs {
   position: relative;
-  overflow: visible !important;
+  overflow-x: visible !important;
+  overflow-y: hidden !important;
 }
 
 .md-tabs::before,

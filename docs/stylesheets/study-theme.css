@@ -247,6 +247,7 @@ body {
   box-shadow: var(--st-shadow-sm) !important;
   color: var(--st-text-primary) !important;
   position: relative;
+  z-index: 5;
 }
 .md-header::after {
   content: '';
@@ -429,7 +430,6 @@ body {
   margin: 0;
   padding: 44px 56px 80px;
   position: relative;
-  z-index: 1;
 }
 .md-content__inner {
   margin: 0 !important;
@@ -894,26 +894,35 @@ body {
   color: var(--st-accent) !important;
 }
 
-/* ---------- TOP BUTTON ---------- */
+/* ---------- BACK TO TOP ---------- */
 .md-top {
   background: var(--st-accent) !important;
   color: white !important;
-  font-size: 13px !important;
+  font-size: 12px !important;
   font-weight: 600 !important;
-  border-radius: 10px !important;
+  border-radius: 8px !important;
   box-shadow: var(--st-shadow-md) !important;
   transition: all 0.25s ease !important;
-  padding: 10px 20px !important;
-  right: 28px !important;
-  bottom: 28px !important;
+  padding: 6px 14px !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  min-width: auto !important;
+  width: auto !important;
   backdrop-filter: blur(8px);
+  line-height: 1.4 !important;
 }
 .md-top:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   box-shadow: var(--st-shadow-lg), var(--st-accent-glow);
 }
 .md-top .md-icon {
-  margin-right: 6px;
+  margin-right: 4px;
+  width: 14px !important;
+  height: 14px !important;
+}
+.md-top .md-icon svg {
+  width: 14px !important;
+  height: 14px !important;
 }
 
 /* ---------- ANNOUNCEMENT BANNER ---------- */

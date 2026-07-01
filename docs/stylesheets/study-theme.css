@@ -240,13 +240,20 @@ body {
 
 /* ---------- HEADER ---------- */
 .md-header {
-  background: var(--st-surface-glass) !important;
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
+  background: transparent !important;
   border-bottom: 1px solid var(--st-border);
   box-shadow: var(--st-shadow-sm) !important;
   color: var(--st-text-primary) !important;
   z-index: 5;
+}
+.md-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--st-surface-glass);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  z-index: -1;
 }
 .md-header::after {
   content: '';

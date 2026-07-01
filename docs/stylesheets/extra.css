@@ -183,7 +183,7 @@ nav .md-nav__link .priority-badge {
   transform: translateX(-50%);
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(249,115,22,0.08) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(53,83,255,0.08) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
@@ -547,21 +547,20 @@ nav .md-nav__link .priority-badge {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-/* Mermaid diagram sizing */
-.mermaid {
-  max-width: 100%;
-  overflow-x: auto;
-  margin: 1.5rem 0;
-  text-align: center;
+/* Mermaid diagram dark-mode line color fix */
+[data-md-color-scheme="slate"] .mermaid .label {
+  color: #E2E8F0 !important;
 }
-
-.mermaid svg {
-  max-width: 100%;
-  height: auto;
+[data-md-color-scheme="slate"] .mermaid .node rect,
+[data-md-color-scheme="slate"] .mermaid .node circle,
+[data-md-color-scheme="slate"] .mermaid .node polygon {
+  fill: #141D2B !important;
+  stroke: #3553FF !important;
 }
-
-/* Inline mermaid in superfences */
-.md-typeset .mermaid {
-  max-width: 100%;
-  overflow-x: auto;
+[data-md-color-scheme="slate"] .mermaid .edgePath .path {
+  stroke: #546879 !important;
+}
+[data-md-color-scheme="slate"] .mermaid .edgeLabel {
+  background: #141D2B !important;
+  color: #8899B0 !important;
 }

@@ -61,6 +61,9 @@
   --md-footer-fg-color--lighter: #E2E8F0;
   --md-text-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --md-code-font: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace !important;
 }
 
 [data-md-color-scheme="slate"] {
@@ -111,6 +114,9 @@
   --md-footer-fg-color--lighter: #CBD5E1;
   --md-text-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --md-code-font: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace !important;
 }
 
 /* ---------- BASE ---------- */
@@ -252,8 +258,11 @@ body {
   padding: 0;
 }
 .md-tabs__link {
+  font-family: var(--st-font-sans) !important;
+  text-transform: none !important;
+  font-size: 13.5px !important;
+  letter-spacing: normal !important;
   color: var(--st-text-secondary) !important;
-  font-size: 12.5px !important;
   font-weight: 500 !important;
   padding: 10px 12px !important;
   transition: all 0.2s ease !important;
@@ -284,13 +293,16 @@ body {
   border-right: 1px solid var(--st-border);
 }
 .md-nav__title {
+  font-family: var(--st-font-sans) !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
   color: var(--st-text-primary) !important;
   font-weight: 700 !important;
   font-size: 14px !important;
-  letter-spacing: -0.2px;
   padding: 12px 12px !important;
 }
 .md-nav__item--section > .md-nav__link {
+  font-family: var(--st-font-sans) !important;
   color: var(--st-text-tertiary) !important;
   font-size: 10.5px !important;
   font-weight: 700 !important;
@@ -300,6 +312,9 @@ body {
   margin: 0 8px !important;
 }
 .md-nav__link {
+  font-family: var(--st-font-sans) !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
   color: var(--st-text-secondary) !important;
   font-size: 13.5px !important;
   font-weight: 500 !important;
@@ -1012,4 +1027,119 @@ body {
 @keyframes stShimmer {
   0% { background-position: -200px 0; }
   100% { background-position: calc(200px + 100%) 0; }
+}
+
+/* ============================================================
+   MODERN Refinements & Overrides (Fixing retro font & underlines)
+   ============================================================ */
+
+/* Global Reset for forced underlines on buttons, cards, list items, etc. */
+.md-typeset a.md-button,
+.md-typeset a.btn,
+.md-typeset .btn,
+.md-typeset .hero-btn,
+.md-typeset .cta-row a,
+.md-typeset .course-grid a,
+.md-typeset .phase-card,
+.md-typeset .start-here-btn,
+.md-typeset .project-card,
+.md-typeset .project-card a,
+.md-typeset .card,
+.md-typeset .card a,
+.md-typeset .sidebar-link,
+.md-typeset .sidebar-subject,
+.md-typeset .badge,
+.md-typeset .goal-item,
+.md-typeset .next-link,
+.md-typeset .quiz-option,
+.md-typeset .roadmap-tier a,
+.md-typeset .study-card,
+.md-typeset .contact-card {
+  text-decoration: none !important;
+}
+
+/* Ensure no text underline decoration on hover for layout links */
+.md-typeset a.md-button:hover,
+.md-typeset a.btn:hover,
+.md-typeset .btn:hover,
+.md-typeset .hero-btn:hover,
+.md-typeset .cta-row a:hover,
+.md-typeset .course-grid a:hover,
+.md-typeset .phase-card:hover,
+.md-typeset .start-here-btn:hover,
+.md-typeset .project-card:hover,
+.md-typeset .card:hover,
+.md-typeset .sidebar-link:hover,
+.md-typeset .sidebar-subject:hover,
+.md-typeset .badge:hover,
+.md-typeset .goal-item:hover,
+.md-typeset .next-link:hover,
+.md-typeset .quiz-option:hover,
+.md-typeset .roadmap-tier a:hover,
+.md-typeset .study-card:hover,
+.md-typeset .contact-card:hover {
+  text-decoration: none !important;
+}
+
+/* Specific button styles modernizing */
+.hero-btn {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-family: var(--st-font-sans) !important;
+  transition: all 0.2s ease !important;
+}
+
+.hero-btn-primary {
+  background: var(--st-accent) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 14px rgba(249,115,22,0.3) !important;
+}
+.hero-btn-primary:hover {
+  background: var(--st-accent-strong) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(249,115,22,0.4) !important;
+}
+
+.hero-btn-secondary {
+  border: 1px solid var(--st-border) !important;
+  background: var(--st-surface) !important;
+  color: var(--st-text-primary) !important;
+}
+.hero-btn-secondary:hover {
+  border-color: var(--st-accent) !important;
+  background: var(--st-accent-light) !important;
+  transform: translateY(-2px) !important;
+}
+
+.hero-btn-ghost {
+  color: var(--st-text-secondary) !important;
+}
+.hero-btn-ghost:hover {
+  color: var(--st-accent) !important;
+  background: var(--st-accent-light) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Fix grid card borders and alignment */
+.md-typeset .grid.cards > ol > li,
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > div {
+  border: 1px solid var(--st-border) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--st-shadow-md) !important;
+  background: var(--st-surface) !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.md-typeset .grid.cards > ol > li:hover,
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > div:hover {
+  box-shadow: var(--st-shadow-lg) !important;
+  border-color: var(--st-accent) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* Redefine horizontal scroll spacing for tabs */
+.md-tabs__list {
+  padding: 0 16px !important;
 }

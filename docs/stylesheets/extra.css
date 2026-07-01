@@ -225,13 +225,22 @@ nav .md-nav__link .priority-badge {
 .hero-stat {
   font-size: 0.85rem;
   color: var(--md-default-fg-color--light);
+  background: var(--st-surface-glass);
+  border: 1px solid var(--st-border);
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  min-width: 90px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .hero-stat strong {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: var(--st-accent);
   display: block;
   font-weight: 800;
+  margin-bottom: 2px;
 }
 
 .hero-ctas {
@@ -283,20 +292,26 @@ nav .md-nav__link .priority-badge {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.65rem 0.9rem;
+  padding: 0.7rem 0.9rem;
   border: 1px solid var(--ai-card-border);
   border-radius: 8px;
   font-size: 0.92rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--md-default-fg-color) !important;
-  transition: all 0.12s ease;
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
 }
 
 .course-grid a:hover {
   border-color: var(--ai-primary);
   background: var(--ai-bg-subtle);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.course-grid a:active {
+  transform: translateY(0);
 }
 
 .course-icon {

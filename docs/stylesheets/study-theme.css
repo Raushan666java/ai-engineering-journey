@@ -283,15 +283,15 @@ body {
 .md-tabs__link {
   font-family: var(--st-font-sans) !important;
   text-transform: none !important;
-  font-size: 13.5px !important;
-  letter-spacing: normal !important;
+  font-size: 12px !important;
+  letter-spacing: -0.2px !important;
   color: var(--st-text-secondary) !important;
   font-weight: 500 !important;
-  padding: 10px 12px !important;
+  padding: 7px 10px !important;
   transition: all 0.2s ease !important;
   border-bottom: 2px solid transparent !important;
   margin-bottom: -1px;
-  border-radius: 6px 6px 0 0 !important;
+  border-radius: 5px 5px 0 0 !important;
 }
 .md-tabs__link:hover {
   color: var(--st-accent) !important;
@@ -346,6 +346,9 @@ body {
   padding: 6px 12px !important;
   margin: 1px 8px !important;
   position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 .md-nav__link:hover {
   color: var(--st-accent) !important;
@@ -363,6 +366,16 @@ body {
   font-size: 13px !important;
   padding: 4px 12px !important;
   margin: 1px 8px !important;
+}
+
+/* Deep nav nesting — keep readable */
+.md-nav__item .md-nav__item .md-nav__link {
+  padding-left: 20px !important;
+  font-size: 13px !important;
+}
+.md-nav__item .md-nav__item .md-nav__item .md-nav__link {
+  padding-left: 28px !important;
+  font-size: 12.5px !important;
 }
 
 /* ---------- TABLE OF CONTENTS ---------- */
@@ -1496,6 +1509,7 @@ body {
     background: var(--st-surface) !important;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1) !important;
   }
   .md-drawer--active {
     box-shadow: var(--st-shadow-xl) !important;
@@ -1504,6 +1518,7 @@ body {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     background: rgba(0,0,0,0.4) !important;
+    transition: opacity 0.3s ease !important;
   }
 }
 
@@ -1551,6 +1566,37 @@ body {
 .md-typeset ul,
 .md-typeset ol {
   margin-top: 8px;
+}
+.md-typeset li {
+  margin-bottom: 6px;
+}
+.md-typeset li > ul,
+.md-typeset li > ol {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.md-typeset ul li::marker {
+  color: var(--st-accent);
+}
+.md-typeset ol li::marker {
+  color: var(--st-accent);
+  font-weight: 600;
+}
+
+/* ============================================================
+   IMAGES & HR
+   ============================================================ */
+.md-typeset img {
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  max-width: 100%;
+  height: auto;
+}
+.md-typeset hr {
+  border: none;
+  height: 1px;
+  background: var(--st-divider);
+  margin: 40px 0;
 }
 
 /* ============================================================

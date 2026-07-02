@@ -794,6 +794,173 @@
 
     /* ---------- SELECTION ---------- */
     ::selection { background: rgba(249,115,22,0.2); color: var(--text-primary); }
+
+    /* ===== SEARCH ===== */
+    .search-container {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 20px; padding: 8px 16px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      max-width: 360px; margin-left: auto;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+    .search-container:focus-within {
+      border-color: var(--accent); box-shadow: var(--shadow-glow);
+    }
+    .search-container input {
+      flex: 1; border: none; outline: none;
+      font-family: 'Inter', sans-serif; font-size: 13px;
+      background: transparent; color: var(--text-primary);
+    }
+    .search-container input::placeholder { color: var(--text-tertiary); }
+    .search-count { font-size: 11px; color: var(--text-tertiary); white-space: nowrap; flex-shrink:0; }
+    .search-clear {
+      background: none; border: none; cursor: pointer;
+      font-size: 14px; color: var(--text-tertiary); padding: 2px 4px;
+      line-height: 1; display: none; flex-shrink:0;
+    }
+    .search-clear:hover { color: var(--text-primary); }
+    .search-clear.visible { display: block; }
+    mark.search-highlight {
+      background: rgba(249,115,22,0.25);
+      color: inherit; padding: 0 2px; border-radius: 2px;
+    }
+    .search-hidden { display: none !important; }
+
+    /* ===== TIMER ===== */
+    .timer-card {
+      background: var(--surface-solid); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 32px 36px;
+      box-shadow: var(--shadow-md); text-align: center;
+      max-width: 400px; margin: 0 auto;
+    }
+    .timer-ring {
+      width: 100px; height: 100px; position: relative;
+      margin: 0 auto 20px;
+    }
+    .timer-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+    .timer-ring .bg { fill: none; stroke: var(--divider); stroke-width: 4; }
+    .timer-ring .fg.orange {
+      fill: none; stroke: var(--accent); stroke-width: 4;
+      stroke-linecap: round; stroke-dasharray: 100 100;
+      transition: stroke-dashoffset 0.3s ease;
+    }
+    .timer-display {
+      position: absolute; inset: 0; display: flex;
+      align-items: center; justify-content: center;
+      font-size: 24px; font-weight: 700; color: var(--text-primary);
+      font-variant-numeric: tabular-nums;
+    }
+    .timer-controls { display: flex; gap: 10px; justify-content: center; margin-bottom: 12px; }
+    .timer-btn {
+      padding: 8px 24px; border-radius: var(--radius-full);
+      border: 1.5px solid var(--border); background: var(--surface);
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600;
+      color: var(--text-secondary); cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .timer-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .timer-btn.primary { background: var(--accent); color: white; border-color: var(--accent); }
+    .timer-btn.primary:hover { background: var(--accent-strong); }
+    .timer-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .timer-sessions { font-size: 13px; color: var(--text-secondary); }
+    .timer-sessions span { font-weight: 700; color: var(--accent); }
+
+    /* ===== AVATAR ===== */
+    .sidebar-avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--accent-gradient);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700; color: white;
+      margin: 0 auto 12px; letter-spacing: -0.5px;
+      box-shadow: 0 2px 8px rgba(249,115,22,0.3);
+    }
+    .sidebar-user {
+      text-align: center; margin-bottom: 16px;
+    }
+    .sidebar-user .name { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+    .sidebar-user .title { font-size: 11px; color: var(--text-tertiary); margin-top: 1px; }
+
+    /* ===== BACK TO TOP ===== */
+    #backToTop {
+      position: fixed; bottom: 32px; right: 32px;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--accent-gradient); color: white;
+      border: none; font-size: 20px; cursor: pointer;
+      box-shadow: var(--shadow-lg); z-index: 999;
+      opacity: 0; pointer-events: none;
+      transition: all 0.3s ease; line-height: 1;
+    }
+    #backToTop.visible { opacity: 1; pointer-events: auto; }
+    #backToTop:hover { transform: translateY(-3px); box-shadow: var(--shadow-glow); }
+
+    /* ===== QUIZ STATES ===== */
+    .quiz-option.selected { border-color: var(--accent); background: var(--accent-light); }
+    .quiz-option.selected .radio { border-color: var(--accent); background: var(--accent); color: white; }
+    .quiz-option.correct { border-color: var(--accent-green); background: var(--accent-green-light); }
+    .quiz-option.correct .radio { border-color: var(--accent-green); background: var(--accent-green); color: white; }
+    .quiz-option.incorrect { border-color: #EF4444; background: #FEF2F2; }
+    .quiz-option.incorrect .radio { border-color: #EF4444; background: #EF4444; color: white; }
+    .quiz-option.disabled { pointer-events: none; opacity: 0.7; }
+    .quiz-actions { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; flex-wrap: wrap; }
+    .quiz-btn {
+      padding: 10px 28px; border-radius: var(--radius-full);
+      border: none; background: var(--accent); color: white;
+      font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600;
+      cursor: pointer; transition: all 0.2s ease;
+    }
+    .quiz-btn:hover { background: var(--accent-strong); }
+    .quiz-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .quiz-result { font-size: 14px; font-weight: 600; }
+    .quiz-result.correct { color: var(--accent-green); }
+    .quiz-result.incorrect { color: #EF4444; }
+    .quiz-score { font-size: 12px; color: var(--text-tertiary); margin-left: auto; }
+
+    /* ===== GOAL ANIMATION ===== */
+    .goal-check { cursor: pointer; user-select: none; }
+    .goal-check.animating { animation: goalPop 0.3s ease; }
+    @keyframes goalPop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+      100% { transform: scale(1); }
+    }
+
+    /* ===== ACCESSIBILITY / FOCUS ===== */
+    .sidebar-link:focus-visible,
+    .sidebar-subject:focus-visible,
+    .timer-btn:focus-visible,
+    .quiz-btn:focus-visible,
+    .search-container input:focus-visible,
+    #backToTop:focus-visible,
+    .goal-check:focus-visible {
+      outline: 2px solid var(--accent); outline-offset: 2px;
+    }
+
+    /* ===== FOOTER NAV ===== */
+    .footer-nav { display: flex; gap: 16px; align-items: center; }
+    .footer-nav a {
+      font-size: 13px; font-weight: 500; color: var(--text-secondary);
+      text-decoration: none; transition: color 0.2s ease;
+      display: flex; align-items: center; gap: 4px;
+    }
+    .footer-nav a:hover { color: var(--accent); }
+
+    /* ===== RESPONSIVE ADDITIONS ===== */
+    @media (max-width: 640px) {
+      .search-container { max-width: 100%; margin-left: 0; }
+      #backToTop { bottom: 16px; right: 16px; width: 38px; height: 38px; font-size: 16px; }
+      .timer-ring { width: 80px; height: 80px; }
+      .timer-display { font-size: 20px; }
+    }
+    @media (max-width: 900px) {
+      .sidebar-avatar, .sidebar-user { display: none; }
+    }
+    @media (max-width: 320px) {
+      .timer-controls { flex-direction: column; align-items: center; }
+      .quiz-actions { flex-direction: column; align-items: stretch; }
+      .quiz-score { margin-left: 0; }
+    }
   </style>
 </head>
 <body>
@@ -803,25 +970,30 @@
          SIDEBAR
          ============================================================ -->
     <aside class="sidebar">
+      <div class="sidebar-avatar">RK</div>
+      <div class="sidebar-user">
+        <div class="name">Raushan Kumar</div>
+        <div class="title">Software Engineer</div>
+      </div>
       <div class="sidebar-logo">StudyFocus</div>
-      <nav class="sidebar-nav">
-        <a href="#" class="sidebar-link active">
+      <nav class="sidebar-nav" role="navigation">
+        <a aria-label="Dashboard" href="#" class="sidebar-link active">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
           Dashboard
         </a>
-        <a href="#" class="sidebar-link">
+        <a aria-label="Notes" href="#" class="sidebar-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
           Notes
         </a>
-        <a href="#" class="sidebar-link">
+        <a aria-label="Study Timer" href="#timer" class="sidebar-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           Study Timer
         </a>
-        <a href="#" class="sidebar-link">
+        <a aria-label="Flashcards" href="#flashcards" class="sidebar-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           Flashcards
         </a>
-        <a href="#" class="sidebar-link">
+        <a aria-label="Progress" href="#" class="sidebar-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           Progress
         </a>
@@ -831,6 +1003,10 @@
       <a href="#" class="sidebar-subject"><span class="dot" style="background:#22C55E"></span>Algorithms</a>
       <a href="#" class="sidebar-subject"><span class="dot" style="background:#3B82F6"></span>Mathematics</a>
       <a href="#" class="sidebar-subject"><span class="dot" style="background:#8B5CF6"></span>System Design</a>
+
+      <div class="sidebar-section" style="margin-top:12px;">Links</div>
+      <a href="../temp_index.html" class="sidebar-subject" aria-label="Portfolio">🏠 Portfolio</a>
+      <a href="../docs/ai-ml-study.html" class="sidebar-subject" aria-label="Study Portal">📚 Study Portal</a>
 
       <div class="sidebar-rank">
         <div class="level">Level 7</div>
@@ -845,11 +1021,18 @@
          ============================================================ -->
     <main class="main">
 
+      <!-- ===== SEARCH BAR ===== -->
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search this page..." aria-label="Search page content" />
+        <span class="search-count" id="searchCount"></span>
+        <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      </div>
+
       <!-- ===== HERO SECTION ===== -->
       <div class="hero animate">
         <div class="hero-content">
           <div class="hero-text">
-            <h1>Good morning, Raushan</h1>
+            <h1 id="greeting">Good morning, Raushan</h1>
             <p>Continue where you left off. You're making great progress on Data Structures.</p>
           </div>
           <div class="hero-stats">
@@ -872,7 +1055,7 @@
           <div class="stat-ring">
             <svg viewBox="0 0 36 36">
               <circle class="bg" cx="18" cy="18" r="15.5"/>
-              <circle class="fg" cx="18" cy="18" r="15.5" style="stroke-dashoffset:30"/>
+              <circle class="fg" cx="18" cy="18" r="15.5" stroke-dashoffset="100" data-target="30"/>
             </svg>
             <div class="inner">70%</div>
           </div>
@@ -886,7 +1069,7 @@
           <div class="stat-ring">
             <svg viewBox="0 0 36 36">
               <circle class="bg" cx="18" cy="18" r="15.5"/>
-              <circle class="fg green" cx="18" cy="18" r="15.5" style="stroke-dashoffset:15"/>
+              <circle class="fg green" cx="18" cy="18" r="15.5" stroke-dashoffset="100" data-target="15"/>
             </svg>
             <div class="inner">85%</div>
           </div>
@@ -900,7 +1083,7 @@
           <div class="stat-ring">
             <svg viewBox="0 0 36 36">
               <circle class="bg" cx="18" cy="18" r="15.5"/>
-              <circle class="fg blue" cx="18" cy="18" r="15.5" style="stroke-dashoffset:45"/>
+              <circle class="fg blue" cx="18" cy="18" r="15.5" stroke-dashoffset="100" data-target="45"/>
             </svg>
             <div class="inner">55%</div>
           </div>
@@ -956,19 +1139,19 @@
         <div>
           <div class="side-card" style="margin-bottom:20px;">
             <div class="side-title">Today's Goals</div>
-            <div class="goal-item">
+            <div class="goal-item" data-goal="0">
               <div class="goal-check done">✓</div>
               Finish Arrays chapter
             </div>
-            <div class="goal-item">
+            <div class="goal-item" data-goal="1">
               <div class="goal-check done">✓</div>
               Review 20 flashcards
             </div>
-            <div class="goal-item">
+            <div class="goal-item" data-goal="2">
               <div class="goal-check"></div>
               Complete 3 exercises
             </div>
-            <div class="goal-item">
+            <div class="goal-item" data-goal="3">
               <div class="goal-check"></div>
               Study 45 min minimum
             </div>
@@ -1109,7 +1292,7 @@
       </div>
 
       <!-- ===== CONTENT: Active Recall ===== -->
-      <div class="content-section">
+      <div class="content-section" id="flashcards">
         <h2>Active Recall</h2>
         <div class="flashcard">
           <span class="fc-icon">🧠</span>
@@ -1124,29 +1307,56 @@
 
       <hr />
 
+      <!-- ===== CONTENT: Timer ===== -->
+      <div class="content-section" id="timer">
+        <h2>Study Timer</h2>
+        <div class="timer-card">
+          <div class="timer-ring">
+            <svg viewBox="0 0 36 36">
+              <circle class="bg" cx="18" cy="18" r="15.5"/>
+              <circle class="fg orange" id="timerRing" cx="18" cy="18" r="15.5" stroke-dashoffset="0"/>
+            </svg>
+            <div class="timer-display" id="timerDisplay">25:00</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="timerStart">Start</button>
+            <button class="timer-btn" id="timerPause" disabled>Pause</button>
+            <button class="timer-btn" id="timerReset">Reset</button>
+          </div>
+          <div class="timer-sessions">
+            Sessions today: <span id="sessionCount">0</span> / 4
+          </div>
+        </div>
+      </div>
+
       <!-- ===== CONTENT: Quiz ===== -->
-      <div class="content-section">
+      <div class="content-section" id="quiz">
         <h2>Quick Check</h2>
         <div style="margin-bottom:16px;">
           <p style="font-weight:600;font-size:15px;color:var(--text-primary);margin-bottom:14px;">
             Which of the following best describes an array's memory layout?
           </p>
-          <div class="quiz-option">
+          <div class="quiz-option" data-index="0">
             <div class="radio"></div>
             <span class="label">Elements stored in non-contiguous heap-allocated nodes</span>
           </div>
-          <div class="quiz-option">
+          <div class="quiz-option" data-index="1" data-correct="true">
             <div class="radio"></div>
             <span class="label">Elements stored contiguously with index-based addressing</span>
           </div>
-          <div class="quiz-option">
+          <div class="quiz-option" data-index="2">
             <div class="radio"></div>
             <span class="label">Elements stored in random memory locations linked by pointers</span>
           </div>
-          <div class="quiz-option">
+          <div class="quiz-option" data-index="3">
             <div class="radio"></div>
             <span class="label">Elements stored in sorted order automatically upon insertion</span>
           </div>
+        </div>
+        <div class="quiz-actions">
+          <button class="quiz-btn" id="checkAnswer">Check Answer</button>
+          <span class="quiz-result" id="quizResult"></span>
+          <span class="quiz-score" id="quizScore">Score: 0 / 0</span>
         </div>
         <div class="note">
           <strong>Answer:</strong> Option 2 — contiguous memory with index-based addressing.
@@ -1181,6 +1391,10 @@
 
       <!-- ===== FOOTER ===== -->
       <div class="content-footer">
+        <div class="footer-nav">
+          <a href="../temp_index.html" aria-label="Portfolio">🏠 Portfolio</a>
+          <a href="../docs/ai-ml-study.html" aria-label="Study Portal">📚 Study Portal</a>
+        </div>
         <p class="text-secondary" style="font-size:13px;margin:0;">
           Next topic: Linked Lists — understanding node-based structures and dynamic memory.
         </p>
@@ -1222,7 +1436,319 @@
         </div>
       </div>
 
+      <!-- ===== BACK TO TOP ===== -->
+      <button id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
     </main>
   </div>
+
+  <script>
+    /* ===== 1. DYNAMIC GREETING ===== */
+    (function setGreeting() {
+      const h = new Date().getHours();
+      let g = 'Good evening';
+      if (h >= 5 && h < 12) g = 'Good morning';
+      else if (h >= 12 && h < 17) g = 'Good afternoon';
+      const el = document.getElementById('greeting');
+      if (el) el.textContent = g + ', Raushan';
+    })();
+
+    /* ===== 2. QUIZ INTERACTIVITY ===== */
+    (function setupQuiz() {
+      const opts = document.querySelectorAll('.quiz-option');
+      const checkBtn = document.getElementById('checkAnswer');
+      const resultEl = document.getElementById('quizResult');
+      const scoreEl = document.getElementById('quizScore');
+      let selected = -1;
+      let answered = false;
+      let correct = 0;
+      let total = 0;
+
+      opts.forEach(o => {
+        o.addEventListener('click', function () {
+          if (this.classList.contains('disabled')) return;
+          opts.forEach(opt => opt.classList.remove('selected'));
+          this.classList.add('selected');
+          selected = parseInt(this.dataset.index);
+        });
+      });
+
+      checkBtn.addEventListener('click', function () {
+        if (selected === -1) return;
+        if (answered) return;
+        answered = true;
+        const correctIdx = [...opts].findIndex(o => o.dataset.correct === 'true');
+        total++;
+        const isCorrect = selected === correctIdx;
+        if (isCorrect) correct++;
+        opts.forEach(o => o.classList.add('disabled'));
+        opts[selected].classList.add(isCorrect ? 'correct' : 'incorrect');
+        opts[correctIdx].classList.add('correct');
+        resultEl.textContent = isCorrect ? '✓ Correct!' : '✗ Incorrect';
+        resultEl.className = 'quiz-result ' + (isCorrect ? 'correct' : 'incorrect');
+        scoreEl.textContent = 'Score: ' + correct + ' / ' + total;
+        this.disabled = true;
+
+        opts.forEach(o => {
+          if (parseInt(o.dataset.index) === correctIdx) {
+            if (!o.classList.contains('correct')) o.classList.add('correct');
+          }
+        });
+      });
+    })();
+
+    /* ===== 3. TOGGLEABLE GOALS ===== */
+    (function setupGoals() {
+      const key = 'studyfocus_goals';
+      let state = {};
+      try { state = JSON.parse(localStorage.getItem(key)) || {}; } catch(e) { state = {}; }
+
+      document.querySelectorAll('.goal-item[data-goal]').forEach(item => {
+        const id = item.dataset.goal;
+        const check = item.querySelector('.goal-check');
+        if (state[id] === true) {
+          check.classList.add('done');
+          check.textContent = '✓';
+        }
+        check.setAttribute('tabindex', '0');
+        check.setAttribute('role', 'checkbox');
+        check.setAttribute('aria-checked', state[id] === true ? 'true' : 'false');
+
+        function toggle() {
+          const isDone = check.classList.toggle('done');
+          check.textContent = isDone ? '✓' : '';
+          check.setAttribute('aria-checked', isDone ? 'true' : 'false');
+          state[id] = isDone;
+          try { localStorage.setItem(key, JSON.stringify(state)); } catch(e) {}
+          check.classList.remove('animating');
+          void check.offsetWidth;
+          check.classList.add('animating');
+        }
+
+        check.addEventListener('click', toggle);
+        check.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+        });
+      });
+    })();
+
+    /* ===== 4. POMODORO TIMER ===== */
+    (function setupTimer() {
+      const display = document.getElementById('timerDisplay');
+      const ring = document.getElementById('timerRing');
+      const startBtn = document.getElementById('timerStart');
+      const pauseBtn = document.getElementById('timerPause');
+      const resetBtn = document.getElementById('timerReset');
+      const sessionSpan = document.getElementById('sessionCount');
+
+      let totalSec = 25 * 60;
+      let remaining = totalSec;
+      let running = false;
+      let paused = false;
+      let interval = null;
+
+      let sessionKey = 'studyfocus_sessions';
+      let sessions = 0;
+      try { sessions = parseInt(localStorage.getItem(sessionKey)) || 0; } catch(e) { sessions = 0; }
+      sessionSpan.textContent = sessions;
+
+      function updateDisplay() {
+        const m = String(Math.floor(remaining / 60)).padStart(2, '0');
+        const s = String(remaining % 60).padStart(2, '0');
+        display.textContent = m + ':' + s;
+        const pct = 1 - (remaining / totalSec);
+        ring.setAttribute('stroke-dashoffset', Math.round(pct * 100));
+      }
+
+      function beep() {
+        try {
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.frequency.value = 880;
+          osc.type = 'sine';
+          gain.gain.value = 0.3;
+          osc.start();
+          osc.stop(ctx.currentTime + 0.3);
+        } catch(e) { /* Web Audio not available */ }
+      }
+
+      function stopTimer() {
+        if (interval) { clearInterval(interval); interval = null; }
+        running = false;
+        paused = false;
+        startBtn.disabled = false;
+        pauseBtn.disabled = true;
+        startBtn.textContent = 'Start';
+      }
+
+      function tick() {
+        if (remaining <= 0) {
+          stopTimer();
+          beep();
+          sessions++;
+          sessionSpan.textContent = sessions;
+          try { localStorage.setItem(sessionKey, String(sessions)); } catch(e) {}
+          return;
+        }
+        remaining--;
+        updateDisplay();
+      }
+
+      startBtn.addEventListener('click', function () {
+        if (paused) {
+          paused = false;
+          running = true;
+          interval = setInterval(tick, 1000);
+          this.textContent = 'Running';
+          this.disabled = true;
+          pauseBtn.disabled = false;
+          return;
+        }
+        if (running) return;
+        if (remaining <= 0) {
+          remaining = totalSec;
+          updateDisplay();
+        }
+        running = true;
+        interval = setInterval(tick, 1000);
+        this.disabled = true;
+        this.textContent = 'Running';
+        pauseBtn.disabled = false;
+      });
+
+      pauseBtn.addEventListener('click', function () {
+        if (!running) return;
+        if (interval) { clearInterval(interval); interval = null; }
+        running = false;
+        paused = true;
+        startBtn.disabled = false;
+        startBtn.textContent = 'Resume';
+        this.disabled = true;
+      });
+
+      resetBtn.addEventListener('click', function () {
+        if (interval) { clearInterval(interval); interval = null; }
+        running = false;
+        paused = false;
+        remaining = totalSec;
+        updateDisplay();
+        startBtn.disabled = false;
+        startBtn.textContent = 'Start';
+        pauseBtn.disabled = true;
+        ring.setAttribute('stroke-dashoffset', '0');
+      });
+    })();
+
+    /* ===== 5. PAGE SEARCH ===== */
+    (function setupSearch() {
+      const input = document.getElementById('searchInput');
+      const clearBtn = document.getElementById('searchClear');
+      const countEl = document.getElementById('searchCount');
+      let prevVal = '';
+
+      function removeHighlights() {
+        document.querySelectorAll('mark.search-highlight').forEach(m => {
+          const parent = m.parentNode;
+          parent.replaceChild(document.createTextNode(m.textContent), m);
+          parent.normalize();
+        });
+        document.querySelectorAll('.search-hidden').forEach(el => el.classList.remove('search-hidden'));
+      }
+
+      function doSearch(val) {
+        removeHighlights();
+        if (!val.trim()) {
+          countEl.textContent = '';
+          clearBtn.classList.remove('visible');
+          return;
+        }
+        clearBtn.classList.add('visible');
+
+        let total = 0;
+        const textNodes = [];
+        const walker = document.createTreeWalker(
+          document.querySelector('.main'),
+          NodeFilter.SHOW_TEXT,
+          { acceptNode: n => n.parentElement.closest('.search-container, .timer-card, #backToTop, script') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT }
+        );
+        while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+        const escaped = val.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const re = new RegExp('(' + escaped + ')', 'gi');
+
+        textNodes.forEach(node => {
+          if (!node.textContent.trim()) return;
+          const match = node.textContent.match(re);
+          if (match) total += match.length;
+          const html = node.textContent.replace(re, '<mark class="search-highlight">$1</mark>');
+          if (html !== node.textContent) {
+            const span = document.createElement('span');
+            span.innerHTML = html;
+            node.parentNode.replaceChild(span, node);
+          }
+        });
+
+        countEl.textContent = total + (total === 1 ? ' match' : ' matches');
+      }
+
+      input.addEventListener('input', function () { doSearch(this.value); });
+      clearBtn.addEventListener('click', function () {
+        input.value = '';
+        prevVal = '';
+        removeHighlights();
+        countEl.textContent = '';
+        clearBtn.classList.remove('visible');
+        input.focus();
+      });
+    })();
+
+    /* ===== 6. ANIMATED STAT RINGS ===== */
+    (function animateRings() {
+      const rings = document.querySelectorAll('.stat-ring .fg[data-target]');
+      rings.forEach((ring, i) => {
+        const target = parseInt(ring.dataset.target);
+        const duration = 800;
+        setTimeout(() => {
+          const start = performance.now();
+          const startOffset = 100;
+          const diff = target - startOffset;
+          function frame(now) {
+            const pct = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - pct, 3);
+            ring.setAttribute('stroke-dashoffset', Math.round(startOffset + diff * eased));
+            if (pct < 1) requestAnimationFrame(frame);
+          }
+          requestAnimationFrame(frame);
+        }, i * 200);
+      });
+    })();
+
+    /* ===== 7. BACK TO TOP ===== */
+    (function setupBackToTop() {
+      const btn = document.getElementById('backToTop');
+      window.addEventListener('scroll', function () {
+        btn.classList.toggle('visible', window.scrollY > 400);
+      }, { passive: true });
+      btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+
+    /* ===== 8. SMOOTH SCROLL FOR ANCHOR LINKS ===== */
+    (function setupSmoothScroll() {
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function (e) {
+          const id = this.getAttribute('href');
+          if (id === '#') return;
+          e.preventDefault();
+          const target = document.querySelector(id);
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

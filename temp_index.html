@@ -16,25 +16,31 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="#home" class="logo"><span class="logo-icon"></span> Raushan / Kumar</a>
-      <nav class="header-nav">
-        <a href="/study/" style="color: #64ffda; font-weight: bold;">CS Curriculum</a>
+      <div class="header-nav" id="stNav">
+        <button class="st-dark-toggle" id="stDarkToggle" aria-label="Toggle dark mode">
+          <span class="st-toggle-icon" id="stToggleIcon">&#9790;</span>
+        </button>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#work">Work</a>
         <a href="#study">Study</a>
         <a href="#contact">Contact</a>
         <a href="https://github.com/Raushan666java" class="gh-link" target="_blank">GitHub</a>
-      </nav>
+      </div>
+      <button class="st-hamburger" id="stHamburger" aria-label="Toggle navigation menu">&#9776;</button>
     </div>
   </header>
 
-  <section id="home" class="hero">
+  <section id="home" class="hero st-fade-section st-visible">
     <div class="hero-inner">
       <div class="masthead">
         <div class="masthead-text">
           <span class="fig-label">Software Engineer</span>
           <h1 class="hero-title">Raushan <span class="blueprint">Kumar</span></h1>
-          <p class="hero-desc">I build SaaS platforms, backend systems, and AI-powered tools at scale.</p>
+          <div class="st-typewriter-wrap">
+            <p class="hero-desc" id="stTypewriterText"></p>
+            <span class="st-cursor" id="stCursor">&#9608;</span>
+          </div>
           <span class="hero-sub">Laravel · React · DevOps · AI</span>
           <div class="hero-actions">
             <a href="#work" class="btn btn-primary">View Work</a>
@@ -50,7 +56,7 @@
 
   <div class="ascii-rule"></div>
 
-  <section id="about" class="section">
+  <section id="about" class="section st-fade-section">
     <div class="section-inner">
       <div class="section-head">
         <span class="section-num">01</span>
@@ -79,7 +85,7 @@
 
   <div class="ascii-rule"></div>
 
-  <section id="skills" class="section">
+  <section id="skills" class="section st-fade-section">
     <div class="section-inner">
       <div class="section-head">
         <span class="section-num">02</span>
@@ -88,40 +94,86 @@
       <div class="skills-grid">
         <div class="skill-card">
           <h3>Backend</h3>
-          <ul>
-            <li>Laravel, PHP, Node.js</li>
-            <li>REST APIs, Microservices</li>
-            <li>MySQL, PostgreSQL, MongoDB</li>
-            <li>Redis, Elasticsearch</li>
-            <li>Multi-tenant SaaS</li>
+          <ul class="st-skill-list" data-category="backend">
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>Laravel</span><span>90%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="90"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>Node.js</span><span>80%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="80"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>MySQL / PostgreSQL</span><span>85%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="85"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>Redis / Elasticsearch</span><span>75%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="75"></div></div>
+            </li>
           </ul>
         </div>
         <div class="skill-card">
           <h3>Frontend</h3>
-          <ul>
-            <li>React, Vue.js, Inertia</li>
-            <li>JavaScript (ES6+)</li>
-            <li>Tailwind CSS, Bootstrap</li>
-            <li>HTML5/CSS3</li>
+          <ul class="st-skill-list" data-category="frontend">
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>React</span><span>80%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="80"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>Vue.js / Inertia</span><span>75%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="75"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>JavaScript (ES6+)</span><span>85%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="85"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>Tailwind / Bootstrap</span><span>80%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="80"></div></div>
+            </li>
           </ul>
         </div>
         <div class="skill-card">
           <h3>DevOps</h3>
-          <ul>
-            <li>Docker, Kubernetes</li>
-            <li>CI/CD (GitHub Actions)</li>
-            <li>AWS, GCP, Linux</li>
-            <li>Nginx, Reverse Proxy</li>
-            <li>Prometheus, Grafana</li>
+          <ul class="st-skill-list" data-category="devops">
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>Docker</span><span>75%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="75"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>Kubernetes</span><span>65%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="65"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>CI/CD (GitHub Actions)</span><span>80%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="80"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>AWS / GCP</span><span>70%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="70"></div></div>
+            </li>
           </ul>
         </div>
         <div class="skill-card">
           <h3>AI &amp; Tools</h3>
-          <ul>
-            <li>Python, LangChain, LLMs</li>
-            <li>AI Agents (OpenAI, Claude)</li>
-            <li>RAG, Vector DBs</li>
-            <li>Git, Bash, Automation</li>
+          <ul class="st-skill-list" data-category="ai">
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>LangChain / LLMs</span><span>80%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="80"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>RAG / Vector DBs</span><span>75%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="75"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>AI Agents</span><span>70%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="70"></div></div>
+            </li>
+            <li class="st-skill-item">
+              <span class="st-skill-label"><span>Git / Bash / Automation</span><span>85%</span></span>
+              <div class="st-skill-bar-track"><div class="st-skill-bar-fill" data-width="85"></div></div>
+            </li>
           </ul>
         </div>
       </div>
@@ -130,7 +182,7 @@
 
   <div class="ascii-rule"></div>
 
-  <section id="work" class="section">
+  <section id="work" class="section st-fade-section">
     <div class="section-inner">
       <div class="section-head">
         <span class="section-num">03</span>
@@ -159,130 +211,130 @@
 
   <div class="ascii-rule"></div>
 
-  <section id="study" class="section">
+  <section id="study" class="section st-fade-section">
     <div class="section-inner">
       <div class="section-head">
         <span class="section-num">04</span>
         <h2>Study</h2>
       </div>
-      <div class="about-grid" style="margin-bottom: 28px;">
+      <div class="about-grid st-mb-28">
         <p class="about-text dropcap">Full-stack study system with two complete curricula — Placement Preparation (10 modules) and AI Engineering Journey (10 phases) — plus tools, trackers, and resources.</p>
       </div>
-      <div class="study-cta" style="margin-bottom: 40px;">
-        <a href="/study/" class="btn btn-primary">Enter Study Hub →</a>
-        <a href="/study/roadmap/" class="btn btn-secondary">View Roadmap</a>
+      <div class="study-cta st-mb-40">
+        <a href="study-ui-demo.html" class="btn btn-primary">Enter Study Hub &rarr;</a>
+        <a href="docs/ai-ml-study.html" class="btn btn-secondary">View Roadmap</a>
       </div>
-      <h3 style="margin-bottom: 20px; font-size: clamp(1.2rem, 2.6vw, 1.6rem); color: var(--blueprint);">Placement Prep</h3>
+      <h3 class="st-study-heading">Placement Prep</h3>
       <div class="study-grid">
-        <a href="/study/placement/dashboard/" class="study-card">
+        <a href="study-ui-demo.html" class="study-card">
           <span class="label">Tool</span>
           <h3>Dashboard</h3>
           <p>Pomodoro timer, streak tracking, daily plan, module progress</p>
         </a>
-        <a href="/study/placement/dsa-tracker/" class="study-card">
+        <a href="study-ui-demo.html" class="study-card">
           <span class="label">Tool</span>
           <h3>DSA Tracker</h3>
-          <p>130+ problems · Search &amp; filter · Random picker</p>
+          <p>130+ problems &middot; Search &amp; filter &middot; Random picker</p>
         </a>
-        <a href="/study/placement/goal/" class="study-card">
+        <a href="study-ui-demo.html" class="study-card">
           <span class="label">Tool</span>
           <h3>90-Day Plan</h3>
-          <p>Day-by-day plan · Auto-highlight today · Notes widget</p>
+          <p>Day-by-day plan &middot; Auto-highlight today &middot; Notes widget</p>
         </a>
-        <a href="/study/placement/02-cs-core/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Module</span>
           <h3>CS Core</h3>
           <p>DSA, OS, DBMS, Networks, COA, TOC, Software Engineering</p>
         </a>
-        <a href="/study/placement/03-programming/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Module</span>
           <h3>Programming</h3>
           <p>Python, JavaScript, OOP, concurrency, design patterns</p>
         </a>
-        <a href="/study/placement/04-web-dev/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Module</span>
           <h3>Web Dev</h3>
           <p>HTML/CSS, React, Laravel, APIs, auth, security</p>
         </a>
-        <a href="/study/placement/05-ai-ml/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Module</span>
           <h3>AI &amp; ML</h3>
           <p>LLMs, LangChain, RAG, agents, prompt engineering</p>
         </a>
-        <a href="/study/placement/08-interview-prep/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Module</span>
           <h3>Interview Prep</h3>
-          <p>Technical, behavioral, system design · STAR method</p>
+          <p>Technical, behavioral, system design &middot; STAR method</p>
         </a>
-        <a href="/study/placement/10-system-design/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Module</span>
           <h3>System Design</h3>
-          <p>Case studies · Framework · Scalability patterns</p>
+          <p>Case studies &middot; Framework &middot; Scalability patterns</p>
         </a>
       </div>
-      <div class="ascii-rule" style="margin: 40px 0;"></div>
-      <h3 style="margin-bottom: 20px; font-size: clamp(1.2rem, 2.6vw, 1.6rem); color: var(--blueprint);">AI Engineering Journey</h3>
+      <div class="ascii-rule st-ascii-space"></div>
+      <h3 class="st-study-heading">AI Engineering Journey</h3>
       <div class="study-grid">
-        <a href="/study/phase-01-python/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Phase 1</span>
           <h3>Python</h3>
           <p>Python fundamentals, automation, WhatsApp Analyzer project</p>
         </a>
-        <a href="/study/phase-02-dsa/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Phase 2</span>
           <h3>DSA</h3>
           <p>Data structures &amp; algorithms in Python, problem-solving</p>
         </a>
-        <a href="/study/phase-03-langchain/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Phase 3</span>
           <h3>LangChain</h3>
           <p>LLM apps, chains, agents, Document AI project</p>
         </a>
-        <a href="/study/phase-04-rag/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Phase 4</span>
           <h3>RAG</h3>
           <p>Retrieval-augmented generation, vector DBs, ApexERP RAG</p>
         </a>
-        <a href="/study/phase-05-agents/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Phase 5</span>
           <h3>AI Agents</h3>
           <p>Autonomous agents, tools, memory, ApexERP Agent project</p>
         </a>
-        <a href="/study/phase-06-multiagent/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Phase 6</span>
           <h3>Multi-Agent</h3>
           <p>Multi-agent systems, orchestration, ERP platform</p>
         </a>
-        <a href="/study/phase-07-automation/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Phase 7</span>
           <h3>Automation</h3>
           <p>Workflow automation, n8n, Flow Studio project</p>
         </a>
-        <a href="/study/phase-08-systemdesign/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Phase 8</span>
           <h3>System Design</h3>
           <p>Architecture, scalability, distributed systems</p>
         </a>
-        <a href="/study/phase-09-devops/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Phase 9</span>
           <h3>DevOps</h3>
           <p>Docker, K8s, CI/CD, monitoring, cloud deployment</p>
         </a>
-        <a href="/study/phase-10-portfolio/" class="study-card">
+        <a href="docs/ai-ml-study.html" class="study-card">
           <span class="label">Phase 10</span>
           <h3>Portfolio</h3>
           <p>Job hunt, interview prep, personal branding</p>
         </a>
       </div>
-      <div class="study-cta" style="margin-top: 32px;">
-        <a href="/study/" class="btn btn-primary">Open Full Study Hub →</a>
+      <div class="study-cta st-mt-32">
+        <a href="study-ui-demo.html" class="btn btn-primary">Open Full Study Hub &rarr;</a>
       </div>
     </div>
   </section>
 
   <div class="ascii-rule"></div>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section st-fade-section">
     <div class="section-inner">
       <div class="section-head">
         <span class="section-num">05</span>
@@ -293,17 +345,17 @@
         <a href="mailto:raushan919962@gmail.com" class="contact-card">
           <span class="contact-label">Email</span>
           <span class="contact-value">raushan919962@gmail.com</span>
-          <span class="contact-action">Send →</span>
+          <span class="contact-action">Send &rarr;</span>
         </a>
         <a href="https://linkedin.com/in/raushan666java" target="_blank" class="contact-card">
           <span class="contact-label">LinkedIn</span>
           <span class="contact-value">linkedin.com/in/raushan666java</span>
-          <span class="contact-action">Connect →</span>
+          <span class="contact-action">Connect &rarr;</span>
         </a>
         <a href="https://github.com/Raushan666java" target="_blank" class="contact-card">
           <span class="contact-label">GitHub</span>
           <span class="contact-value">github.com/Raushan666java</span>
-          <span class="contact-action">Follow →</span>
+          <span class="contact-action">Follow &rarr;</span>
         </a>
       </div>
     </div>
@@ -315,11 +367,108 @@
     <div class="footer-inner">
       <span>&copy; 2026 Raushan Kumar</span>
       <div class="footer-links">
+        <a href="study-ui-demo.html">Study Hub</a>
+        <a href="docs/ai-ml-study.html">Study Roadmap</a>
         <a href="https://github.com/Raushan666java" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/raushan666java" target="_blank">LinkedIn</a>
       </div>
     </div>
   </footer>
+
+  <button class="st-btt" id="stBtt" aria-label="Back to top">&uarr;</button>
+
+  <script>
+    (function() {
+      /* ── Hamburger ── */
+      var hamburger = document.getElementById('stHamburger');
+      var nav = document.getElementById('stNav');
+      if (hamburger && nav) {
+        hamburger.addEventListener('click', function() {
+          nav.classList.toggle('st-nav-open');
+        });
+        document.addEventListener('click', function(e) {
+          if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+            nav.classList.remove('st-nav-open');
+          }
+        });
+      }
+
+      /* ── Dark mode toggle ── */
+      var toggle = document.getElementById('stDarkToggle');
+      var icon = document.getElementById('stToggleIcon');
+      var root = document.documentElement;
+      var stored = localStorage.getItem('st-dark-mode');
+      if (stored === 'true') {
+        root.classList.add('dark');
+        if (icon) icon.textContent = '\u2600';
+      }
+      if (toggle) {
+        toggle.addEventListener('click', function() {
+          root.classList.toggle('dark');
+          var isDark = root.classList.contains('dark');
+          localStorage.setItem('st-dark-mode', isDark);
+          if (icon) icon.textContent = isDark ? '\u2600' : '\u263E';
+        });
+      }
+
+      /* ── Typewriter ── */
+      var textEl = document.getElementById('stTypewriterText');
+      var cursor = document.getElementById('stCursor');
+      if (textEl) {
+        var fullText = 'I build SaaS platforms, backend systems, and AI-powered tools at scale.';
+        var idx = 0;
+        function type() {
+          if (idx < fullText.length) {
+            textEl.textContent += fullText.charAt(idx);
+            idx++;
+            setTimeout(type, 28 + Math.random() * 22);
+          } else {
+            if (cursor) cursor.classList.add('st-hidden');
+          }
+        }
+        type();
+      }
+
+      /* ── Intersection Observer ── */
+      var sections = document.querySelectorAll('.st-fade-section');
+      if ('IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('st-visible');
+              /* animate skill bars inside this section */
+              var fills = entry.target.querySelectorAll('.st-skill-bar-fill:not(.st-animated)');
+              fills.forEach(function(fill) {
+                var w = fill.getAttribute('data-width');
+                if (w) {
+                  fill.style.width = w + '%';
+                  fill.classList.add('st-animated');
+                }
+              });
+            }
+          });
+        }, { threshold: 0.15 });
+        sections.forEach(function(s) { obs.observe(s); });
+      } else {
+        sections.forEach(function(s) { s.classList.add('st-visible'); });
+      }
+
+      /* ── Back to top ── */
+      var btt = document.getElementById('stBtt');
+      if (btt) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 300) {
+            btt.classList.add('st-show');
+          } else {
+            btt.classList.remove('st-show');
+          }
+        });
+        btt.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Engineering Journey — Raushan Kumar</title>
+<meta name="description" content="500+ lessons across 30+ courses — AI Engineering, CS fundamentals, full-stack development, system design, and placement prep. Free and open source.">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --bg: #f8f9fa; --fg: #1a1a2e; --accent: #e94560; --accent2: #0f3460; --muted: #6c757d; --border: #dee2e6; --card-bg: #fff; --header-bg: #1a1a2e; --header-fg: #eee; --font: ui-monospace, 'SF Mono', Menlo, Monaco, 'Cascadia Code', 'Segoe UI Mono', 'Roboto Mono', 'Fira Code', monospace; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0d1117; --fg: #e6edf3; --accent: #ff6b81; --accent2: #58a6ff; --muted: #8b949e; --border: #30363d; --card-bg: #161b22; --header-bg: #0d1117; --header-fg: #e6edf3; } }
+html { font-size: 15px; scroll-behavior: smooth; }
+body { font-family: var(--font); background: var(--bg); color: var(--fg); line-height: 1.7; }
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* Header */
+header { background: var(--header-bg); color: var(--header-fg); padding: 1rem 0; position: sticky; top: 0; z-index: 100; border-bottom: 2px solid var(--accent); }
+header .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; }
+header .logo { font-size: 1.15rem; font-weight: 700; letter-spacing: 0.5px; color: #fff; }
+header .logo span { color: var(--accent); }
+header nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+header nav a { color: var(--header-fg); font-size: 0.85rem; opacity: 0.85; }
+header nav a:hover { opacity: 1; color: var(--accent); text-decoration: none; }
+
+/* Hero */
+.hero { padding: 5rem 0 4rem; text-align: center; border-bottom: 1px solid var(--border); }
+.hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.2; margin-bottom: 0.75rem; letter-spacing: -0.5px; }
+.hero h1 span { color: var(--accent); }
+.hero .tagline { font-size: 1.05rem; color: var(--muted); max-width: 680px; margin: 0 auto 1.75rem; }
+.hero .stats { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.hero .stat { text-align: center; }
+.hero .stat .num { font-size: 1.6rem; font-weight: 800; color: var(--accent); }
+.hero .stat .label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.hero .ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.hero .ctas a { display: inline-block; padding: 0.7rem 1.6rem; border: 2px solid var(--accent2); border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: 0.2s; }
+.hero .ctas a.primary { background: var(--accent2); color: #fff; }
+.hero .ctas a.secondary { color: var(--accent2); }
+.hero .ctas a:hover { opacity: 0.85; text-decoration: none; }
+
+/* Section */
+section { padding: 3.5rem 0; }
+section h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.3px; }
+section .sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+section .sub a { color: var(--accent2); }
+
+/* About */
+#about p { max-width: 720px; font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem; color: var(--muted); }
+
+/* Course Grid */
+.course-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
+.course-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 6px; padding: 1.25rem; transition: 0.2s; }
+.course-card:hover { border-color: var(--accent2); }
+.course-card h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+.course-card h3 a { color: var(--fg); }
+.course-card h3 a:hover { color: var(--accent2); }
+.course-card .meta { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.5rem; }
+.course-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+.course-card .topics { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.7rem; }
+.course-card .topics span { font-size: 0.7rem; background: var(--border); padding: 0.15rem 0.5rem; border-radius: 3px; color: var(--muted); }
+.category-label { font-size: 0.85rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; }
+
+/* How It Works */
+#how ol { max-width: 680px; list-style: decimal; padding-left: 1.5rem; font-size: 0.95rem; color: var(--muted); line-height: 2; }
+#how ol li strong { color: var(--fg); }
+
+/* Footer */
+footer { border-top: 1px solid var(--border); padding: 2rem 0; text-align: center; font-size: 0.82rem; color: var(--muted); }
+footer .links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+footer .links a { color: var(--muted); }
+footer .links a:hover { color: var(--accent2); }
+
+@media (max-width: 640px) {
+  .hero h1 { font-size: 1.6rem; }
+  .hero .stats { gap: 1.25rem; }
+  .course-grid { grid-template-columns: 1fr; }
+  header .container { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+  <div class="logo"><span>AI</span> Engineering Journey</div>
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="ai-ml-study.html">Study Portal</a>
+    <a href="#about">About</a>
+    <a href="#how">How It Works</a>
+    <a href="https://github.com/Raushan666java/ai-engineering-journey">GitHub</a>
+  </nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+  <h1><span>AI</span> Engineering Journey</h1>
+  <p class="tagline">500+ lessons across 30+ courses — from first principles to production. Machine learning, agent loops, compilers, system design, full-stack, and placement prep. Free and open source.</p>
+  <div class="stats">
+    <div class="stat"><div class="num">30+</div><div class="label">Courses</div></div>
+    <div class="stat"><div class="num">500+</div><div class="label">Chapters</div></div>
+    <div class="stat"><div class="num">TS</div><div class="label">TypeScript</div></div>
+    <div class="stat"><div class="num">MIT</div><div class="label">License</div></div>
+  </div>
+  <div class="ctas">
+    <a href="#courses" class="primary">Browse Courses</a>
+    <a href="ai-ml-study.html" class="secondary">Study Portal</a>
+    <a href="https://github.com/Raushan666java/ai-engineering-journey" class="secondary">GitHub</a>
+  </div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+  <h2>About</h2>
+  <p>This is a structured, open-source curriculum built for engineers who want to go deep. Every course is written as standalone&nbsp;chapters — each 400+ lines with learning objectives, theory, examples, TypeScript implementations, Mermaid diagrams, chapter quizzes, and exercises.</p>
+  <p>Topics span AI/ML, software engineering, compiler design, blockchain, computer networks, databases, operating systems, system design, web development, DevOps, cloud computing, DSA, and more. Everything is MIT-licensed and built to run on your own machine.</p>
+</div>
+</section>
+
+<section id="courses">
+<div class="container">
+  <h2>Courses</h2>
+  <p class="sub">30+ courses &middot; 500+ chapters &middot; <a href="https://github.com/Raushan666java/ai-engineering-journey">Contribute on GitHub</a></p>
+
+  <div class="category-label">Languages &amp; Frameworks</div>
+  <div class="course-grid">
+    <div class="course-card"><h3><a href="docs/courses/python-programming/01-introduction.html">Python Programming</a></h3><div class="meta">21 chapters &middot; 800+ lines avg</div><p>From variables to concurrency — every concept with parallel TypeScript implementations.</p><div class="topics"><span>basics</span><span>OOP</span><span>concurrency</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/java/index.html">Java &amp; Spring Boot</a></h3><div class="meta">66 chapters &middot; 1800+ lines avg</div><p>Full-stack enterprise: JVM, concurrency, Spring Boot, microservices, WebFlux, interviews.</p><div class="topics"><span>Java</span><span>Spring</span><span>microservices</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/laravel/index.html">Laravel</a></h3><div class="meta">60 chapters &middot; 1800+ lines avg</div><p>Full Laravel coverage: Eloquent, queues, broadcasting, AI SDK, MCP, multi-agent systems, interviews.</p><div class="topics"><span>PHP</span><span>Laravel</span><span>AI SDK</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/c-programming/index.html">C Programming</a></h3><div class="meta">18 chapters &middot; 400+ lines avg</div><p>Systems-level C: pointers, DMA, file I/O, preprocessor, recursion, data structures.</p><div class="topics"><span>C</span><span>pointers</span><span>systems</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/oop-cpp/index.html">OOP with C++</a></h3><div class="meta">16 chapters &middot; 400+ lines avg</div><p>Classes, inheritance, polymorphism, templates, STL, smart pointers, move semantics, lambdas.</p><div class="topics"><span>C++</span><span>OOP</span><span>STL</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/web-development/index.html">Web Development</a></h3><div class="meta">18 chapters &middot; 870+ lines avg</div><p>HTML through full-stack: React, Node, TypeScript, Next.js, testing, performance.</p><div class="topics"><span>HTML/CSS</span><span>React</span><span>Node</span></div></div>
+  </div>
+
+  <div class="category-label">CS Core</div>
+  <div class="course-grid">
+    <div class="course-card"><h3><a href="docs/courses/data-structures/index.html">Data Structures</a></h3><div class="meta">18 chapters &middot; 500+ lines avg</div><p>Arrays, linked lists, trees, graphs, hash tables, heaps, tries, segment trees, union-find.</p><div class="topics"><span>DSA</span><span>trees</span><span>graphs</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/algorithms/index.html">Algorithms</a></h3><div class="meta">18 chapters &middot; 500+ lines avg</div><p>Sorting, divide &amp; conquer, greedy, DP (knapsack/sequences/trees/grids), graph, string, NP, approximation.</p><div class="topics"><span>sorting</span><span>DP</span><span>graphs</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/database-management-systems/index.html">Database Management Systems</a></h3><div class="meta">19 chapters &middot; 500+ lines avg</div><p>ER, SQL, normalization, transactions, concurrency, indexing, NoSQL, MongoDB, Redis, distributed DBs.</p><div class="topics"><span>SQL</span><span>NoSQL</span><span>indexing</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/computer-networks/index.html">Computer Networks</a></h3><div class="meta">18 chapters &middot; 500+ lines avg</div><p>Physical through application layer, TCP, routing, SDN, security, cloud networking.</p><div class="topics"><span>TCP/IP</span><span>routing</span><span>SDN</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/operating-systems/index.html">Operating Systems</a></h3><div class="meta">18 chapters &middot; 500+ lines avg</div><p>Processes, CPU scheduling, threads, synchronization, memory, file systems, Linux kernel, virtualization.</p><div class="topics"><span>processes</span><span>memory</span><span>Linux</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/system-design/index.html">System Design</a></h3><div class="meta">24 chapters &middot; 600+ lines avg</div><p>Scalability, caching, databases, microservices, design patterns, case studies (Netflix, Uber, WhatsApp, Twitter, Dropbox).</p><div class="topics"><span>HLD</span><span>LLD</span><span>case studies</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/software-engineering/index.html">Software Engineering</a></h3><div class="meta">16 chapters &middot; 660+ lines avg</div><p>Process models, requirements, UML, architecture, SOLID, GoF, testing, CMMI, DevOps, security, metrics.</p><div class="topics"><span>process</span><span>UML</span><span>metrics</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/compiler-design/index.html">Compiler Design</a></h3><div class="meta">15 chapters &middot; 800+ lines avg</div><p>Lexical analysis, LL/LR parsing, SDT, IR, type checking, code gen, optimization, JIT/SSA.</p><div class="topics"><span>parsing</span><span>optimization</span><span>JIT</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/digital-logic/index.html">Digital Logic</a></h3><div class="meta">15 chapters &middot; 660+ lines avg</div><p>Boolean algebra, K-maps, gates, flip-flops, state machines, memory, HDL, DAC/ADC, timing.</p><div class="topics"><span>gates</span><span>FSM</span><span>HDL</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/discrete-mathematics/index.html">Discrete Mathematics</a></h3><div class="meta">15 chapters &middot; 670+ lines avg</div><p>Sets, logic, proofs, combinatorics, graph theory, trees, Boolean algebra, number theory.</p><div class="topics"><span>logic</span><span>combinatorics</span><span>graphs</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/theory-of-computation/index.html">Theory of Computation</a></h3><div class="meta">16 chapters &middot; 620+ lines avg</div><p>DFA, NFA, regex, CFG, PDA, Turing machines, decidability, complexity, applications.</p><div class="topics"><span>automata</span><span>Turing</span><span>complexity</span></div></div>
+  </div>
+
+  <div class="category-label">AI &amp; Machine Learning</div>
+  <div class="course-grid">
+    <div class="course-card"><h3><a href="docs/courses/machine-learning/index.html">Machine Learning</a></h3><div class="meta">10 chapters &middot; 850+ lines avg</div><p>Linear/logistic regression, decision trees, ensemble, SVM, neural nets, K-means, PCA, evaluation.</p><div class="topics"><span>regression</span><span>neural nets</span><span>clustering</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/artificial-intelligence/index.html">Artificial Intelligence</a></h3><div class="meta">18 chapters &middot; 500+ lines avg</div><p>Search, CSP, game playing, FOL, planning, uncertainty, ML, NLP, CV, robotics, ethics.</p><div class="topics"><span>search</span><span>logic</span><span>planning</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/applied-ai/index.html">Applied AI</a></h3><div class="meta">4 chapters &middot; 500+ lines avg</div><p>LangChain, OpenCV, generative AI, real-world integrations.</p><div class="topics"><span>LangChain</span><span>GenAI</span><span>OpenCV</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/loop-engineering/index.html">Loop Engineering</a></h3><div class="meta">11 chapters &middot; 830+ lines avg</div><p>Agent loops, HITL, feedback loops, self-improvement, production safety, multi-agent, capstone.</p><div class="topics"><span>agents</span><span>loops</span><span>safety</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/ai-agent-engineer/index.html">AI Agent Engineer</a></h3><div class="meta">14 chapters &middot; 820+ lines avg</div><p>FastAPI, LLM/RAG, LangGraph, MCP, production hardening, portfolio, job search, system design.</p><div class="topics"><span>agents</span><span>RAG</span><span>MCP</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/learning-how-to-learn/index.html">Learning How to Learn</a></h3><div class="meta">14 chapters &middot; 1650+ lines avg</div><p>Active recall, spaced repetition, Pomodoro, Feynman technique, memory systems, meta-learning, AI-assisted.</p><div class="topics"><span>study skills</span><span>memory</span><span>meta-learning</span></div></div>
+  </div>
+
+  <div class="category-label">Infrastructure &amp; Security</div>
+  <div class="course-grid">
+    <div class="course-card"><h3><a href="docs/courses/devops/index.html">DevOps</a></h3><div class="meta">27 chapters &middot; 730+ lines avg</div><p>Linux, Git, Docker, K8s, CI/CD, IaC, monitoring, DevSecOps, SRE, capstone. TypeScript implementations.</p><div class="topics"><span>Docker</span><span>K8s</span><span>CI/CD</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/cloud-computing/index.html">Cloud Computing</a></h3><div class="meta">10 chapters &middot; 790+ lines avg</div><p>Virtualization, compute, storage, databases, networking, security, serverless, containers, architecture.</p><div class="topics"><span>AWS</span><span>serverless</span><span>architecture</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/blockchain/index.html">Blockchain</a></h3><div class="meta">10 chapters &middot; 750+ lines avg</div><p>UTXO, PoW, HD wallets, Nakamoto consensus, Bitcoin Script, Ethereum, Solidity, DeFi, Hyperledger, security.</p><div class="topics"><span>Bitcoin</span><span>Ethereum</span><span>Solidity</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/cyber-security/index.html">Cyber Security</a></h3><div class="meta">10 chapters &middot; 500+ lines avg</div><p>Cryptography, network security, web security, IAM, forensics, GRC, pentesting.</p><div class="topics"><span>crypto</span><span>web sec</span><span>pentesting</span></div></div>
+  </div>
+
+  <div class="category-label">Career &amp; Exam Prep</div>
+  <div class="course-grid">
+    <div class="course-card"><h3><a href="docs/courses/gate-cs-preparation/index.html">GATE CS Preparation</a></h3><div class="meta">20+ chapters &middot; 500+ lines avg</div><p>Comprehensive GATE CS coverage: all core subjects, mock tests, strategy guides.</p><div class="topics"><span>GATE</span><span>CS</span><span>mock tests</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/placement-preparation/index.html">Placement Preparation</a></h3><div class="meta">7 chapters &middot; 600+ lines avg</div><p>Resume, DSA problem bank, SQL, company-specific prep, HR/GD, placement strategy.</p><div class="topics"><span>interviews</span><span>resume</span><span>HR</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/general-aptitude/index.html">General Aptitude</a></h3><div class="meta">6 chapters &middot; 690+ lines avg</div><p>Quantitative, logical reasoning, verbal ability, data interpretation, non-verbal, advanced reasoning.</p><div class="topics"><span>quant</span><span>logical</span><span>verbal</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/engineering-mathematics/index.html">Engineering Mathematics</a></h3><div class="meta">10 chapters &middot; 650+ lines avg</div><p>Linear algebra, calculus, diff eq, transforms, vector calculus, optimization, numerical methods.</p><div class="topics"><span>calculus</span><span>algebra</span><span>optimization</span></div></div>
+    <div class="course-card"><h3><a href="docs/courses/big-data/index.html">Big Data</a></h3><div class="meta">5 chapters &middot; 790+ lines avg</div><p>Hadoop, MapReduce, Spark, NoSQL, ecosystem tools. TypeScript-driven examples.</p><div class="topics"><span>Hadoop</span><span>Spark</span><span>NoSQL</span></div></div>
+  </div>
+</div>
+</section>
+
+<section id="how">
+<div class="container">
+  <h2>How This Works</h2>
+  <p class="sub">Every chapter follows the same structure so you always know what to expect.</p>
+  <ol>
+    <li><strong>Read</strong> — Each chapter begins with clear Learning Objectives and Theory, building from first principles.</li>
+    <li><strong>See</strong> — Worked Examples and Mermaid diagrams show how concepts connect at the architecture level.</li>
+    <li><strong>Practice</strong> — Every chapter ends with a 5-question Chapter Quiz and hands-on Exercises to test understanding.</li>
+    <li><strong>Apply</strong> — TypeScript implementations are embedded throughout, demonstrating real code alongside the theory.</li>
+    <li><strong>Review</strong> — A Summary and Practical Takeaways section reinforces what you just learned before moving on.</li>
+  </ol>
+</div>
+</section>
+
+<footer>
+<div class="container">
+  <div class="links">
+    <a href="#courses">Courses</a>
+    <a href="ai-ml-study.html">Study Portal</a>
+    <a href="#about">About</a>
+    <a href="https://github.com/Raushan666java/ai-engineering-journey">GitHub</a>
+  </div>
+  <p>&copy; 2026 Raushan Kumar &middot; MIT License &middot; Built with &lt;code&gt; &amp; open source</p>
+</div>
+</footer>
+
+</body>
+</html>

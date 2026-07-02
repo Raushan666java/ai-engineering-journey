@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI &amp; ML Study Portal — your command center for Artificial Intelligence, Machine Learning, and AI Engineering curriculum across 20 phases and 500+ lessons." />
     <title>AI & ML Study Portal</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=VT323&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" crossorigin
     />
     <style>
       :root {
@@ -27,6 +28,22 @@
         --paper-rule: rgba(26, 26, 26, 0.08);
         --status-done: #2d6a4f;
         --status-progress: #bc6c25;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #121212;
+          --bg-surface: #1e1e1e;
+          --bg-hover: #2a2a2a;
+          --ink: #e0e0e0;
+          --ink-soft: #a0a0a0;
+          --ink-mute: #707070;
+          --rule: #e0e0e0;
+          --rule-soft: rgba(224, 224, 224, 0.16);
+          --paper-rule: rgba(224, 224, 224, 0.08);
+          --status-done: #52b788;
+          --status-progress: #e9c46a;
+        }
+        .site-header { background: rgba(18, 18, 18, 0.94); }
       }
       * {
         margin: 0;

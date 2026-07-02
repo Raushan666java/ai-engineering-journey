@@ -1,5 +1,29 @@
 import React, { useState } from "react";
 
+/* ===== Theme ===== */
+const lightVars = {
+  bg: "#F5F7FB", surface: "#FFFFFF", text: "#1E293B",
+  textSecondary: "#64748B", textTertiary: "#94A3B8",
+  accent: "#F97316", accentLight: "#FFF7ED", accentGreen: "#22C55E",
+  border: "rgba(226,232,240,0.7)", divider: "#F1F5F9",
+  shadow: "0 4px 12px rgba(0,0,0,0.06)",
+};
+const darkVars: typeof lightVars = {
+  bg: "#0F172A", surface: "#1E293B", text: "#F1F5F9",
+  textSecondary: "#94A3B8", textTertiary: "#64748B",
+  accent: "#FB923C", accentLight: "rgba(249,115,22,0.12)", accentGreen: "#4ADE80",
+  border: "rgba(51,65,85,0.8)", divider: "#1E293B",
+  shadow: "0 4px 12px rgba(0,0,0,0.3)",
+};
+const vars = (d: boolean) => d ? darkVars : lightVars;
+
+const ThemeScript = ({ dark }: { dark: boolean }) => {
+  const v = vars(dark);
+  return (
+    <style>{`:root { --sd-bg:${v.bg};--sd-surface:${v.surface};--sd-text:${v.text};--sd-text-secondary:${v.textSecondary};--sd-text-tertiary:${v.textTertiary};--sd-accent:${v.accent};--sd-accent-light:${v.accentLight};--sd-accent-green:${v.accentGreen};--sd-border:${v.border};--sd-divider:${v.divider};--sd-shadow:${v.shadow}; }`}</style>
+  );
+};
+
 /* ===== Types ===== */
 interface Chapter {
   id: string;
@@ -81,7 +105,7 @@ const Sidebar = () => (
       gap: 8,
     }}
   >
-    <div style={{ fontSize: 18, fontWeight: 700, color: "#1E293B", padding: "0 12px", marginBottom: 24 }}>
+    <div style={{ fontSize: 18, fontWeight: 700, color: "var(--sd-text)", padding: "0 12px", marginBottom: 24 }}>
       StudyFocus
     </div>
     <nav style={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -103,7 +127,7 @@ const Sidebar = () => (
             borderRadius: 8,
             fontSize: 14,
             fontWeight: item.active ? 600 : 500,
-            color: item.active ? "#F97316" : "#64748B",
+            color: item.active ? "#F97316" : "var(--sd-text-secondary)",
             background: item.active ? "#FFF7ED" : "transparent",
             textDecoration: "none",
             transition: "all 0.15s",
@@ -122,7 +146,7 @@ const Sidebar = () => (
         fontWeight: 600,
         letterSpacing: "0.6px",
         textTransform: "uppercase",
-        color: "#94A3B8",
+        color: "var(--sd-text-tertiary)",
       }}
     >
       Subjects
@@ -144,7 +168,7 @@ const Sidebar = () => (
             borderRadius: 8,
             fontSize: 14,
             fontWeight: 500,
-            color: "#64748B",
+            color: "var(--sd-text-secondary)",
             textDecoration: "none",
           }}
         >
@@ -182,10 +206,10 @@ const StatCard = ({
       padding: "20px 24px",
     }}
   >
-    <div style={{ fontSize: 26, fontWeight: 700, color: "#1E293B", letterSpacing: "-0.5px" }}>
+    <div style={{ fontSize: 26, fontWeight: 700, color: "var(--sd-text)", letterSpacing: "-0.5px" }}>
       {value}
     </div>
-    <div style={{ fontSize: 13, color: "#64748B", marginTop: 2 }}>{label}</div>
+    <div style={{ fontSize: 13, color: "var(--sd-text-secondary)", marginTop: 2 }}>{label}</div>
     <div style={{ fontSize: 12, fontWeight: 600, color: "#22C55E", marginTop: 4 }}>
       {trend}
     </div>
@@ -239,7 +263,7 @@ const QuizOption = ({
         />
       )}
     </div>
-    <span style={{ fontSize: 14, color: "#1E293B" }}>{text}</span>
+    <span style={{ fontSize: 14, color: "var(--sd-text)" }}>{text}</span>
   </div>
 );
 
@@ -248,6 +272,7 @@ const QuizOption = ({
 const StudyDashboard = () => {
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [showAnswer, setShowAnswer] = useState(false);
+  const [dark, setDark] = useState(false);
 
   const handleQuizSelect = (idx: number) => {
     setSelectedOption(idx);
@@ -255,7 +280,9 @@ const StudyDashboard = () => {
   };
 
   return (
-    <div style={{ display: "flex", minHeight: "100vh", background: "#F5F7FB" }}>
+    <>
+      <ThemeScript dark={dark} />
+      <div style={{ display: "flex", minHeight: "100vh", background: "var(--sd-bg)" }}>
       <Sidebar />
 
       <main
@@ -277,11 +304,26 @@ const StudyDashboard = () => {
             borderBottom: "1px solid #F1F5F9",
           }}
         >
-          <div style={{ fontSize: 13, color: "#64748B" }}>
-            Dashboard / <span style={{ color: "#1E293B", fontWeight: 500 }}>{chapter.title}</span>
+          <div style={{ fontSize: 13, color: "var(--sd-text-secondary)" }}>
+            Dashboard / <span style={{ color: "var(--sd-text)", fontWeight: 500 }}>{chapter.title}</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-            <span style={{ fontSize: 13, color: "#64748B" }}>73% complete</span>
+            <button
+              onClick={() => setDark((d) => !d)}
+              style={{
+                background: "none",
+                border: "1px solid var(--sd-border)",
+                borderRadius: 8,
+                padding: "4px 12px",
+                fontSize: 12,
+                fontWeight: 600,
+                color: "var(--sd-text-secondary)",
+                cursor: "pointer",
+              }}
+            >
+              {dark ? "☀" : "🌙"}
+            </button>
+            <span style={{ fontSize: 13, color: "var(--sd-text-secondary)" }}>73% complete</span>
             <div
               style={{
                 width: 140,
@@ -304,12 +346,12 @@ const StudyDashboard = () => {
         </div>
 
         {/* Title */}
-        <h1 style={{ fontSize: 28, fontWeight: 700, letterSpacing: "-0.5px", color: "#1E293B", marginBottom: 8 }}>
+        <h1 style={{ fontSize: 28, fontWeight: 700, letterSpacing: "-0.5px", color: "var(--sd-text)", marginBottom: 8 }}>
           {chapter.title}
         </h1>
         <p
           style={{
-            color: "#64748B",
+            color: "var(--sd-text-secondary)",
             fontSize: 14,
             marginBottom: 24,
             maxWidth: "70ch",
@@ -346,10 +388,10 @@ const StudyDashboard = () => {
         >
           <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 20 }}>
             <div>
-              <div style={{ fontSize: 16, fontWeight: 600, color: "#1E293B" }}>
+              <div style={{ fontSize: 16, fontWeight: 600, color: "var(--sd-text)" }}>
                 Learning Objectives
               </div>
-              <div style={{ fontSize: 13, color: "#64748B", marginTop: 2 }}>
+              <div style={{ fontSize: 13, color: "var(--sd-text-secondary)", marginTop: 2 }}>
                 What you will master
               </div>
             </div>
@@ -359,8 +401,8 @@ const StudyDashboard = () => {
                 borderRadius: 20,
                 fontSize: 12,
                 fontWeight: 500,
-                background: "#F5F7FB",
-                color: "#64748B",
+                background: "var(--sd-bg)",
+                color: "var(--sd-text-secondary)",
               }}
             >
               Arrays
@@ -376,7 +418,7 @@ const StudyDashboard = () => {
                   gap: 10,
                   padding: "8px 0",
                   fontSize: 15,
-                  color: "#1E293B",
+                  color: "var(--sd-text)",
                 }}
               >
                 <span
@@ -425,7 +467,7 @@ const StudyDashboard = () => {
                 key={tc.label}
                 style={{
                   fontSize: 14,
-                  color: "#1E293B",
+                  color: "var(--sd-text)",
                   marginBottom: 4,
                 }}
               >
@@ -441,10 +483,10 @@ const StudyDashboard = () => {
               borderRadius: "0 8px 8px 0",
             }}
           >
-            <strong style={{ fontSize: 14, color: "#1E293B" }}>
+            <strong style={{ fontSize: 14, color: "var(--sd-text)" }}>
               Key Insight
             </strong>
-            <p style={{ fontSize: 14, color: "#1E293B", margin: "4px 0 0", lineHeight: 1.7 }}>
+            <p style={{ fontSize: 14, color: "var(--sd-text)", margin: "4px 0 0", lineHeight: 1.7 }}>
               Contiguity enables CPU cache prefetching, making array traversal
               faster than linked-list traversal in practice.
             </p>
@@ -456,7 +498,7 @@ const StudyDashboard = () => {
           style={{
             fontSize: 22,
             fontWeight: 600,
-            color: "#1E293B",
+            color: "var(--sd-text)",
             marginBottom: 12,
           }}
         >
@@ -472,7 +514,7 @@ const StudyDashboard = () => {
             fontFamily: "'JetBrains Mono', monospace",
             fontSize: 14,
             lineHeight: 1.7,
-            color: "#1E293B",
+            color: "var(--sd-text)",
             marginBottom: 24,
             whiteSpace: "pre",
           }}
@@ -485,7 +527,7 @@ const StudyDashboard = () => {
           style={{
             fontSize: 22,
             fontWeight: 600,
-            color: "#1E293B",
+            color: "var(--sd-text)",
             marginBottom: 12,
           }}
         >
@@ -501,10 +543,10 @@ const StudyDashboard = () => {
             marginBottom: 24,
           }}
         >
-          <div style={{ fontSize: 17, fontWeight: 600, color: "#1E293B", marginBottom: 4 }}>
+          <div style={{ fontSize: 17, fontWeight: 600, color: "var(--sd-text)", marginBottom: 4 }}>
             What is the time complexity of inserting an element at index 0 in an array of size n?
           </div>
-          <div style={{ fontSize: 13, color: "#94A3B8", marginBottom: 16 }}>
+          <div style={{ fontSize: 13, color: "var(--sd-text-tertiary)", marginBottom: 16 }}>
             Think about what happens to the existing elements
           </div>
           <div
@@ -513,7 +555,7 @@ const StudyDashboard = () => {
               background: "#FFF7ED",
               borderRadius: 8,
               fontSize: 15,
-              color: "#1E293B",
+              color: "var(--sd-text)",
               borderLeft: "3px solid #F97316",
               textAlign: "left",
             }}
@@ -527,7 +569,7 @@ const StudyDashboard = () => {
           style={{
             fontSize: 22,
             fontWeight: 600,
-            color: "#1E293B",
+            color: "var(--sd-text)",
             marginBottom: 16,
           }}
         >
@@ -537,7 +579,7 @@ const StudyDashboard = () => {
           style={{
             fontWeight: 600,
             fontSize: 15,
-            color: "#1E293B",
+            color: "var(--sd-text)",
             marginBottom: 12,
           }}
         >
@@ -558,14 +600,14 @@ const StudyDashboard = () => {
             style={{
               marginTop: 16,
               padding: "16px 20px",
-              background: "#F5F7FB",
+              background: "var(--sd-bg)",
               borderRadius: 8,
               borderLeft: "3px solid #F97316",
               fontSize: 14,
-              color: "#64748B",
+              color: "var(--sd-text-secondary)",
             }}
           >
-            <strong style={{ color: "#1E293B" }}>Answer: </strong>
+            <strong style={{ color: "var(--sd-text)" }}>Answer: </strong>
             Option {chapter.quiz.answer + 1} — O(n), all elements must shift right.
           </div>
         )}
@@ -584,7 +626,7 @@ const StudyDashboard = () => {
           style={{
             fontSize: 22,
             fontWeight: 600,
-            color: "#1E293B",
+            color: "var(--sd-text)",
             marginBottom: 16,
           }}
         >
@@ -606,7 +648,7 @@ const StudyDashboard = () => {
                   paddingLeft: 28,
                   position: "relative",
                   fontSize: 15,
-                  color: "#1E293B",
+                  color: "var(--sd-text)",
                   lineHeight: 1.7,
                   counterIncrement: "ex",
                   marginBottom: 8,
@@ -635,13 +677,14 @@ const StudyDashboard = () => {
           style={{
             marginTop: 24,
             fontSize: 13,
-            color: "#94A3B8",
+            color: "var(--sd-text-tertiary)",
           }}
         >
           Next topic: Linked Lists — node-based structures and dynamic memory.
         </p>
       </main>
     </div>
+    </>
   );
 };
 

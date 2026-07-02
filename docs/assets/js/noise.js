@@ -19,9 +19,10 @@
   ].join(';');
 
   var canvas = document.createElement('canvas');
-  canvas.style.cssText = 'width:100%;height:100%';
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.style.cssText = 'width:100%;height:100%;image-rendering:pixelated';
+  var scale = 4;
+  canvas.width = Math.ceil(window.innerWidth / scale);
+  canvas.height = Math.ceil(window.innerHeight / scale);
   overlay.appendChild(canvas);
   document.body.appendChild(overlay);
 
@@ -30,7 +31,8 @@
   function generateNoise(ctx, w, h) {
     var imageData = ctx.createImageData(w, h);
     var data = imageData.data;
-    for (var i = 0; i < data.length; i += 4) {
+    var len = data.length;
+    for (var i = 0; i < len; i += 4) {
       var val = Math.random() * 255;
       data[i] = val;
       data[i+1] = val;
@@ -52,7 +54,6 @@
       generateNoise(ctx, canvas.width, canvas.height);
       requestAnimationFrame(animateNoise);
     } else {
-      // Fade out
       overlay.style.opacity = '0';
       setTimeout(function() {
         overlay.style.display = 'none';
@@ -63,7 +64,7 @@
 
   // Resize handler
   window.addEventListener('resize', function() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = Math.ceil(window.innerWidth / scale);
+    canvas.height = Math.ceil(window.innerHeight / scale);
   });
 })();

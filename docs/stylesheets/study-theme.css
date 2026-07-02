@@ -902,34 +902,41 @@ body {
 
 /* ---------- BACK TO TOP ---------- */
 .md-top {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  padding: 0 !important;
   background: var(--st-accent) !important;
   color: white !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  border-radius: 8px !important;
-  box-shadow: var(--st-shadow-md) !important;
+  font-size: 0 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 8px rgba(53,83,255,0.3) !important;
   transition: all 0.25s ease !important;
-  padding: 6px 14px !important;
   right: 24px !important;
   bottom: 24px !important;
-  min-width: auto !important;
-  width: auto !important;
-  max-width: max-content !important;
   backdrop-filter: blur(8px);
-  line-height: 1.4 !important;
+  z-index: 99 !important;
+  cursor: pointer;
 }
 .md-top:hover {
   transform: translateY(-3px);
-  box-shadow: var(--st-shadow-lg), var(--st-accent-glow);
+  box-shadow: 0 4px 16px rgba(53,83,255,0.4) !important;
 }
 .md-top .md-icon {
-  margin-right: 4px;
-  width: 14px !important;
-  height: 14px !important;
+  margin: 0 !important;
+  width: 20px !important;
+  height: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 .md-top .md-icon svg {
-  width: 14px !important;
-  height: 14px !important;
+  width: 20px !important;
+  height: 20px !important;
+  fill: white !important;
 }
 
 /* ---------- ANNOUNCEMENT BANNER ---------- */

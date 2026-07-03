@@ -83,6 +83,7 @@ extra_css:
   - assets/css/tabs-scroll.css
   - stylesheets/extra.css
   - stylesheets/study-theme.css
+  - assets/css/study-ui-redesign.css
 
 extra_javascript:
   - assets/js/noise.js

@@ -7,7 +7,7 @@
 <header class="{{ class }}" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
     <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
-      {% include "partials/logo.html" %}
+      <div class="md-logo-icon" style="width:28px;height:28px;background:#40a944;color:#fff;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:700;flex-shrink:0;">AI</div>
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       {% set icon = config.theme.icon.menu or "material/menu" %}
@@ -17,7 +17,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            AI Engineering Journey
+            <span style="color:#e6edf3;font-weight:700;">Engineering <span style="color:#40a944;">Journey</span></span>
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">

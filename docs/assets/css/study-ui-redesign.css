@@ -1,18 +1,19 @@
 /* ============================================================
-   STUDY UI REDESIGN v2 — Landing Page Aesthetic for Docs
+   STUDY UI REDESIGN v3 — Landing Page Aesthetic for Docs
    Glassmorphism header, modern sidebar, green accent system.
    Loaded after study-theme.css to override.
    ============================================================ */
 
-/* ---------- TOP BAR (Landing Page Style) ---------- */
-.md-header::before {
-  display: none;
-}
+/* ---------- HEADER (Premium glassmorphism) ---------- */
 .md-header {
   background: #2d3436 !important;
   border-bottom: 3px solid #40a944 !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
+  transition: box-shadow 0.3s, background 0.3s !important;
+}
+.md-header--shadow {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
 }
 .md-header__inner {
   padding: 0.3rem 1rem !important;
@@ -21,28 +22,55 @@
   color: #e6edf3 !important;
   font-weight: 700 !important;
   font-size: 14px !important;
+  letter-spacing: -0.2px !important;
 }
 .md-header__button {
   color: #8b949e !important;
+  transition: color 0.2s !important;
 }
 .md-header__button:hover {
   color: #40a944 !important;
-  transform: none !important;
+}
+.md-header__button.md-logo {
+  padding: 0.3rem !important;
+}
+.md-logo-icon {
+  width: 28px !important;
+  height: 28px !important;
 }
 .md-source {
   color: #8b949e !important;
+  transition: color 0.2s !important;
 }
 .md-source:hover {
   color: #40a944 !important;
 }
+
+/* ---------- COLOR PALETTE TOGGLE ---------- */
+[data-md-component="palette"] .md-header__button {
+  color: #8b949e !important;
+  transition: color 0.2s !important;
+}
+[data-md-component="palette"] .md-header__button:hover {
+  color: #40a944 !important;
+}
+[data-md-component="palette"] .md-header__button svg {
+  transition: transform 0.3s !important;
+}
+[data-md-component="palette"] .md-header__button:hover svg {
+  transform: rotate(15deg) !important;
+}
+
+/* ---------- SEARCH (Polished) ---------- */
 .md-search__form {
   background: #1e272e !important;
   border: 1px solid #4a5568 !important;
-  border-radius: 6px !important;
+  border-radius: 8px !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
 }
 .md-search__form:hover {
   border-color: #40a944 !important;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px rgba(64,169,68,0.1) !important;
 }
 .md-search__form:focus-within {
   border-color: #40a944 !important;
@@ -58,14 +86,38 @@
 .md-search__icon {
   color: #636e72 !important;
 }
+.md-search__overlay {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.3) !important;
+}
+.md-search-result__meta {
+  background: #1e272e !important;
+  color: #8b949e !important;
+  font-size: 11px !important;
+}
+.md-search-result__link {
+  border-bottom: 1px solid #30363d !important;
+  transition: background 0.15s !important;
+}
+.md-search-result__link:hover {
+  background: rgba(64,169,68,0.06) !important;
+}
+.md-search-result__article {
+  color: #e6edf3 !important;
+}
+.md-search-result__title {
+  font-weight: 600 !important;
+}
+.md-search-result__teaser {
+  color: #8b949e !important;
+}
 
-/* ---------- TABS (Lightweight, modern) ---------- */
+/* ---------- TABS (Modern underline) ---------- */
 .md-tabs {
   background: #1e272e !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
   border-bottom: 1px solid #30363d !important;
-  box-shadow: none !important;
+  transition: box-shadow 0.3s !important;
 }
 .md-tabs__list {
   gap: 0 !important;
@@ -81,17 +133,17 @@
   color: #8b949e !important;
   font-size: 11.5px !important;
   font-weight: 500 !important;
-  padding: 6px 10px !important;
-  border-bottom: 2px solid transparent !important;
+  padding: 7px 12px !important;
+  border-bottom: 2.5px solid transparent !important;
   margin-bottom: -1px;
   border-radius: 0 !important;
   white-space: nowrap;
-  transition: color 0.15s, border-color 0.15s !important;
+  transition: color 0.2s, border-color 0.2s !important;
 }
 .md-tabs__link:hover {
   color: #40a944 !important;
   background: transparent !important;
-  border-bottom-color: #40a944 !important;
+  border-bottom-color: rgba(64,169,68,0.4) !important;
 }
 .md-tabs__link--active {
   color: #40a944 !important;
@@ -100,41 +152,52 @@
   background: transparent !important;
 }
 
-/* ---------- SIDEBAR (Modern, card-like) ---------- */
+/* ---------- SIDEBAR PRIMARY (Premium navigation) ---------- */
 .md-sidebar--primary .md-sidebar__scrollwrap {
   background: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
   border-right: 1px solid var(--st-border) !important;
 }
-.md-sidebar--secondary {
-  border-left: 1px solid var(--st-border) !important;
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--st-text-tertiary) transparent !important;
 }
+
+/* Nav title (section header) */
 .md-nav__title {
   color: var(--st-text-tertiary) !important;
   font-size: 10px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.8px !important;
-  padding: 10px 12px 4px !important;
+  padding: 12px 12px 6px !important;
 }
+
+/* Nav link — default */
 .md-nav__link {
   color: var(--st-text-secondary) !important;
   font-size: 13px !important;
   font-weight: 500 !important;
-  padding: 5px 10px !important;
-  margin: 1px 6px !important;
+  padding: 6px 12px !important;
+  margin: 1px 8px !important;
   border-radius: 6px !important;
+  border-left: 3px solid transparent !important;
   transition: all 0.15s ease !important;
 }
 .md-nav__link:hover {
   color: #40a944 !important;
   background: rgba(64,169,68,0.08) !important;
+  border-left-color: rgba(64,169,68,0.3) !important;
 }
+.md-nav__link:active {
+  transform: scale(0.98) !important;
+}
+
+/* Active nav link — green left accent */
 .md-nav__link--active {
   color: #40a944 !important;
   font-weight: 600 !important;
   background: rgba(64,169,68,0.1) !important;
+  border-left-color: #40a944 !important;
 }
 .md-nav__link--active .md-ellipsis {
   box-shadow: none !important;
@@ -142,10 +205,18 @@
 .md-nav__item--active > .md-nav__link--active::before {
   display: none;
 }
+
+/* Active ancestor — subtle highlight */
+.md-nav__item--active > .md-nav__link {
+  color: var(--st-text-primary) !important;
+  font-weight: 600 !important;
+}
+
+/* Section divider in sidebar */
 .md-nav__item--section {
   border-top: 1px solid var(--st-divider);
-  margin-top: 6px;
-  padding-top: 2px;
+  margin-top: 8px;
+  padding-top: 4px;
 }
 .md-nav__item--section:first-child {
   border-top: none;
@@ -158,38 +229,71 @@
   font-weight: 700 !important;
   letter-spacing: 0.8px !important;
   text-transform: uppercase !important;
-  padding: 6px 10px 2px !important;
-  margin: 0 6px !important;
+  padding: 6px 12px 2px !important;
+  margin: 0 8px !important;
+  border-left: none !important;
+  background: none !important;
+}
+.md-nav__item--section > .md-nav__link:hover {
+  color: #40a944 !important;
+  background: none !important;
+  border-left-color: transparent !important;
 }
 
-/* Deep nav nesting */
+/* Nested nav indentation */
 .md-nav__item .md-nav__item .md-nav__link {
-  padding-left: 18px !important;
+  padding-left: 20px !important;
   font-size: 12.5px !important;
 }
 .md-nav__item .md-nav__item .md-nav__item .md-nav__link {
-  padding-left: 26px !important;
+  padding-left: 28px !important;
   font-size: 12px !important;
+}
+.md-nav__item .md-nav__item .md-nav__item .md-nav__item .md-nav__link {
+  padding-left: 36px !important;
+  font-size: 11.5px !important;
+}
+
+/* Nav toggle icons */
+.md-nav__button {
+  color: var(--st-text-tertiary) !important;
+}
+.md-nav__button:hover {
+  color: #40a944 !important;
 }
 
 /* ---------- TABLE OF CONTENTS (Right sidebar) ---------- */
+.md-sidebar--secondary {
+  border-left: 1px solid var(--st-border) !important;
+}
 .md-nav--secondary .md-nav__title {
   font-size: 9.5px !important;
-  padding: 6px 10px 2px !important;
+  padding: 8px 12px 4px !important;
   letter-spacing: 0.8px !important;
   font-weight: 700 !important;
   color: var(--st-text-tertiary) !important;
 }
 .md-nav--secondary .md-nav__link {
   font-size: 12px !important;
-  padding: 3px 10px !important;
-  margin: 1px 6px !important;
+  padding: 4px 12px !important;
+  margin: 1px 8px !important;
   line-height: 1.4 !important;
+  border-left: 2px solid transparent !important;
+  transition: all 0.15s !important;
+}
+.md-nav--secondary .md-nav__link:hover {
+  color: #40a944 !important;
+  border-left-color: rgba(64,169,68,0.3) !important;
+  background: rgba(64,169,68,0.04) !important;
 }
 .md-nav--secondary .md-nav__link--active {
   color: #40a944 !important;
   border-left: 2px solid #40a944 !important;
   background: rgba(64,169,68,0.06) !important;
+}
+.md-nav--secondary .md-nav__item--active > .md-nav__link {
+  color: #40a944 !important;
+  font-weight: 600 !important;
 }
 
 /* ---------- CONTENT AREA (Clean, spacious) ---------- */
@@ -262,11 +366,12 @@
 .md-typeset a:hover {
   color: #2e7d32 !important;
 }
+/* ---------- INLINE CODE ---------- */
 .md-typeset code {
   background: #e8f5e9 !important;
   color: #2e7d32 !important;
   font-size: 0.85em !important;
-  padding: 0.15em 0.4em !important;
+  padding: 0.18em 0.45em !important;
   border-radius: 4px !important;
   border: none !important;
   font-weight: 500;
@@ -275,60 +380,136 @@
   background: #1b3d1b !important;
   color: #66bb6a !important;
 }
+
+/* ---------- CODE BLOCKS (Modern macOS style) ---------- */
 .md-typeset pre {
   border-radius: 10px !important;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important;
   border: 1px solid #30363d !important;
   background: #0d1117 !important;
-  padding-top: 36px !important;
+  padding-top: 40px !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
+/* macOS traffic-light dots */
 .md-typeset pre::before {
-  top: 12px;
+  content: '' !important;
+  position: absolute;
+  top: 13px;
   left: 14px;
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   background: #EF4444;
   border-radius: 50%;
-  box-shadow: 16px 0 0 #FBBF24, 32px 0 0 #22C55E;
+  box-shadow: 17px 0 0 #FBBF24, 34px 0 0 #22C55E;
+  z-index: 2;
 }
-[data-md-color-scheme="slate"] .md-typeset pre {
-  background: #0d1117 !important;
-}
-.md-typeset pre code {
+/* Code block title bar */
+.md-typeset pre > code {
   background: transparent !important;
   border: none !important;
   color: #e6edf3 !important;
   font-size: 13px !important;
+  line-height: 1.55 !important;
+}
+/* Code block with filename header */
+.md-typeset .highlighttable {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important;
+}
+.md-typeset .highlighttable .filename {
+  background: #161b22 !important;
+  color: #8b949e !important;
+  font-size: 11.5px !important;
+  font-weight: 500 !important;
+  padding: 8px 16px !important;
+  border-bottom: 1px solid #30363d !important;
+  border-radius: 10px 10px 0 0 !important;
+  font-family: var(--st-font-mono) !important;
+}
+.md-typeset .highlighttable .filename::before {
+  content: '📄 ';
+  opacity: 0.6;
+}
+.md-typeset .highlighttable pre {
+  border-radius: 0 0 10px 10px !important;
+  box-shadow: none !important;
+  border-top: none !important;
+  padding-top: 16px !important;
+}
+.md-typeset .highlighttable pre::before {
+  display: none !important;
+}
+/* Code block copy button styling */
+.md-clipboard {
+  color: var(--st-text-tertiary) !important;
+  transition: color 0.2s, transform 0.2s !important;
+}
+.md-clipboard:hover {
+  color: #40a944 !important;
+  transform: scale(1.1) !important;
+}
+.md-clipboard:focus {
+  color: #40a944 !important;
+}
+/* Line numbers */
+.md-typeset .linenos {
+  background: #0d1117 !important;
+  color: #4a5568 !important;
+  font-size: 11.5px !important;
+  padding: 16px 8px !important;
+  border-right: 1px solid #21262d !important;
+  user-select: none !important;
+}
+.md-typeset .linenos a {
+  color: #4a5568 !important;
+}
+.md-typeset .linenos a:hover {
+  color: #8b949e !important;
 }
 
-/* ---------- TABLES ---------- */
+/* ---------- TABLES (Clean, premium) ---------- */
 .md-typeset table:not(.md-typeset__scrollwrap) {
   border: 1px solid var(--st-border) !important;
-  border-radius: 8px !important;
+  border-radius: 10px !important;
   overflow: hidden !important;
   font-size: 14px !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04) !important;
 }
 .md-typeset table th {
   background: #40a944 !important;
   color: #fff !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   font-size: 12px !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 10px 16px !important;
+  padding: 12px 16px !important;
+  border-bottom: 2px solid #2e7d32 !important;
 }
 .md-typeset table td {
-  padding: 10px 16px !important;
+  padding: 11px 16px !important;
   border-bottom: 1px solid var(--st-divider) !important;
+  transition: background 0.15s !important;
+}
+.md-typeset table tr:last-child td {
+  border-bottom: none !important;
 }
 .md-typeset table tr:nth-child(even) td {
-  background: rgba(0,0,0,0.02);
+  background: rgba(0,0,0,0.015);
 }
 .md-typeset table tr:hover td {
-  background: rgba(64,169,68,0.04) !important;
+  background: rgba(64,169,68,0.05) !important;
 }
 [data-md-color-scheme="slate"] .md-typeset table th {
   background: #2e7d32 !important;
+  border-bottom-color: #1b4d1b !important;
+}
+[data-md-color-scheme="slate"] .md-typeset table tr:nth-child(even) td {
+  background: rgba(255,255,255,0.02);
+}
+[data-md-color-scheme="slate"] .md-typeset table tr:hover td {
+  background: rgba(64,169,68,0.1) !important;
 }
 
 /* ---------- ADMONITIONS (Clean, minimal) ---------- */
@@ -570,6 +751,81 @@
   display: none !important;
 }
 
+/* ---------- IMAGES (Bordered, refined) ---------- */
+.md-typeset img {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
+  border: 1px solid var(--st-border) !important;
+  transition: box-shadow 0.2s, transform 0.2s !important;
+}
+.md-typeset img:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important;
+}
+.md-typeset img[align] {
+  border-radius: 8px !important;
+}
+.md-typeset .twemoji {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* ---------- BREADCRUMBS ---------- */
+.md-path {
+  font-size: 12px !important;
+  padding: 8px 0 !important;
+}
+.md-path__link {
+  color: var(--st-text-tertiary) !important;
+  transition: color 0.15s !important;
+}
+.md-path__link:hover {
+  color: #40a944 !important;
+}
+
+/* ---------- KEYBOARD SHORTCUTS ---------- */
+.md-typeset kbd {
+  background: var(--st-surface) !important;
+  border: 1px solid var(--st-border) !important;
+  border-bottom: 3px solid var(--st-border) !important;
+  border-radius: 4px !important;
+  font-size: 0.75em !important;
+  padding: 0.15em 0.5em !important;
+  color: var(--st-text-primary) !important;
+  box-shadow: none !important;
+}
+
+/* ---------- TASK LISTS ---------- */
+.md-typeset [type="checkbox"]:checked + .task-list-indicator::before {
+  background: #40a944 !important;
+}
+.md-typeset .task-list-control [type="checkbox"]:enabled + .task-list-indicator:hover::before {
+  border-color: #40a944 !important;
+}
+
+/* ---------- DEFINITION LISTS ---------- */
+.md-typeset dt {
+  font-weight: 700 !important;
+  color: #40a944 !important;
+}
+.md-typeset dd {
+  margin-left: 1.5rem !important;
+  color: var(--st-text-secondary) !important;
+}
+
+/* ---------- MD-ICONS / ANNOTATION ---------- */
+.md-icon {
+  color: var(--st-text-tertiary) !important;
+}
+.md-annotation__index {
+  background: rgba(64,169,68,0.15) !important;
+  color: #40a944 !important;
+  border-color: #40a944 !important;
+}
+.md-annotation__index:hover {
+  background: #40a944 !important;
+  color: #fff !important;
+}
+
 /* ---------- HOMEPAGE HERO OVERRIDE (for mkdocs index pages) ---------- */
 .home-hero h1 {
   background: linear-gradient(135deg, #0F172A 0%, #0F172A 55%, #40a944 100%) !important;
@@ -629,13 +885,6 @@
   font-size: 11px;
 }
 
-/* ---------- SEARCH ---------- */
-.md-search__overlay {
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  background: rgba(0,0,0,0.3) !important;
-}
-
 /* ---------- SCROLLBAR ---------- */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
@@ -647,6 +896,43 @@
 ::selection {
   background: rgba(64,169,68,0.2);
   color: var(--st-text-primary);
+}
+
+/* ---------- MOBILE DRAWER ---------- */
+@media screen and (max-width: 1219px) {
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    background: var(--st-bg) !important;
+  }
+  .md-nav--primary .md-nav__title {
+    background: #2d3436 !important;
+    color: #e6edf3 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    padding: 14px 16px !important;
+    border-bottom: 2px solid #40a944 !important;
+  }
+  .md-nav--primary .md-nav__title .md-nav__button {
+    color: #8b949e !important;
+  }
+  .md-nav--primary .md-nav__title .md-nav__button:hover {
+    color: #40a944 !important;
+  }
+  .md-nav--primary .md-nav__link {
+    font-size: 14px !important;
+    padding: 10px 16px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--st-divider) !important;
+  }
+  .md-nav--primary .md-nav__link--active {
+    border-left: 3px solid #40a944 !important;
+  }
+  .md-nav--primary .md-nav__item--active > .md-nav__link {
+    font-weight: 600 !important;
+  }
+  .md-overlay {
+    background: rgba(0,0,0,0.4) !important;
+  }
 }
 
 /* ---------- RESPONSIVE ---------- */

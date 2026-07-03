@@ -22,7 +22,7 @@
   gap: 16px;
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid #00d4aa;
+  border-bottom: 2px solid #40a944;
 }
 
 .resume-header h1 {
@@ -70,7 +70,7 @@
   color: var(--st-accent);
   margin-bottom: 12px;
   padding-bottom: 6px;
-  border-bottom: 2px solid #00d4aa;
+  border-bottom: 2px solid #40a944;
 }
 
 .resume-entry {
@@ -109,7 +109,7 @@ nav .md-nav__link .priority-badge {
   font-size: 0.6rem;
   padding: 1px 6px;
   border-radius: 3px;
-  background: #00d4aa;
+  background: #40a944;
   color: #000;
   font-weight: 700;
   margin-left: 4px;
@@ -223,7 +223,7 @@ nav .md-nav__link .priority-badge {
 /* Current focus banner */
 .current-focus-banner {
   background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
-  border: 1px solid #00d4aa;
+  border: 1px solid #40a944;
   border-radius: 12px;
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
@@ -234,7 +234,7 @@ nav .md-nav__link .priority-badge {
 }
 
 .current-focus-banner strong {
-  color: #00d4aa;
+  color: #40a944;
 }
 
 /* ════════════════════════════════════════════════════
@@ -435,8 +435,8 @@ nav .md-nav__link .priority-badge {
   font-size: 0.85rem;
 }
 
-.tier-foundation { background: #3553ff10; }
-.tier-core { background: #00d4aa10; }
+.tier-foundation { background: #40a94410; }
+.tier-core { background: #40a94410; }
 .tier-advanced { background: #ff8a0010; }
 .tier-expert { background: #a855f710; }
 
@@ -450,8 +450,8 @@ nav .md-nav__link .priority-badge {
   letter-spacing: 0.04em;
 }
 
-.tier-foundation .tier-badge { background: #3553ff; color: #fff; }
-.tier-core .tier-badge { background: #00d4aa; color: #000; }
+.tier-foundation .tier-badge { background: #40a944; color: #fff; }
+.tier-core .tier-badge { background: #40a944; color: #000; }
 .tier-advanced .tier-badge { background: #ff8a00; color: #fff; }
 .tier-expert .tier-badge { background: #a855f7; color: #fff; }
 
@@ -491,7 +491,7 @@ nav .md-nav__link .priority-badge {
   font-size: 0.78rem;
   font-weight: 800;
   color: #fff;
-  background: var(--phase-clr, #3553ff);
+  background: var(--phase-clr, #40a944);
   flex-shrink: 0;
 }
 

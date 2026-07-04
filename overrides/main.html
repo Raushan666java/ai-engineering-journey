@@ -14,3 +14,46 @@
 <meta name="twitter:description" content="500+ free lessons across 30+ courses — AI Engineering, CS fundamentals, full-stack development, system design, and placement prep.">
 <meta name="twitter:image" content="https://raushan666java.github.io/ai-engineering-journey/assets/images/og-image.svg">
 {% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script>
+document.addEventListener('click', function(e) {
+  var target = e.target.closest('.mermaid, .md-content img');
+  if (!target) return;
+  if (target.classList.contains('mermaid')) {
+    var svg = target.querySelector('svg');
+    if (svg && svg.requestFullscreen) {
+      svg.requestFullscreen();
+      e.preventDefault();
+    }
+  }
+});
+</script>
+<style>
+.mermaid {
+  cursor: zoom-in !important;
+  border-radius: 6px !important;
+  border: 1px solid var(--tp-border) !important;
+  padding: 1rem !important;
+  background: #fff !important;
+  box-shadow: var(--tp-shadow) !important;
+  margin: 1.2rem 0 !important;
+  transition: box-shadow 0.2s !important;
+  overflow: auto !important;
+}
+.mermaid:hover {
+  box-shadow: var(--tp-shadow-lg) !important;
+}
+.mermaid svg {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+pre {
+  border-radius: 6px !important;
+  border: 1px solid var(--tp-border) !important;
+}
+</style>
+{% endblock %}

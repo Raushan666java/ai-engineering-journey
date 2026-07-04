@@ -10,7 +10,6 @@ edit_uri: edit/main/docs/
 theme:
   favicon: assets/images/favicon.svg
   name: material
-  custom_dir: overrides
   language: en
   palette:
     - scheme: default
@@ -48,7 +47,7 @@ theme:
 
 plugins:
   - search
-  - glightbox
+
 
 markdown_extensions:
   - admonition
@@ -78,18 +77,6 @@ markdown_extensions:
   - toc:
       permalink: true
 
-extra_css:
-  - assets/css/blueprint.css
-  - assets/css/tabs-scroll.css
-  - stylesheets/extra.css
-  - stylesheets/study-theme.css
-
-extra_javascript:
-  - assets/js/noise.js
-  - assets/js/blueprint.js
-  - assets/js/study-timer.js
-  - assets/js/glightbox-zoom.js
-
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -108,7 +95,6 @@ nav:
   - "👤 About": about.md
   - "🚀 Projects": projects.md
   - "📄 Resume": resume.md
-  - "📚 AI/ML Study Portal": ai-ml-study.html
   - "🗺️ Roadmap": roadmap.md
   - "🔥 Trending": trending.md
   - "🤖 AI Agent Engineer":

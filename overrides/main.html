@@ -18,17 +18,48 @@
 {% block scripts %}
 {{ super() }}
 <script>
-document.addEventListener('click', function(e) {
-  var target = e.target.closest('.mermaid, .md-content img');
-  if (!target) return;
-  if (target.classList.contains('mermaid')) {
-    var svg = target.querySelector('svg');
-    if (svg && svg.requestFullscreen) {
-      svg.requestFullscreen();
+(function() {
+  // Lightbox
+  var overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.addEventListener('click', function() {
+    overlay.classList.remove('active');
+    overlay.innerHTML = '';
+  });
+  document.body.appendChild(overlay);
+
+  // Fullscreen for Mermaid SVGs
+  document.addEventListener('click', function(e) {
+    var mermaid = e.target.closest('.mermaid');
+    if (mermaid) {
+      var svg = mermaid.querySelector('svg');
+      if (svg && svg.requestFullscreen) {
+        svg.requestFullscreen();
+        e.preventDefault();
+        return;
+      }
+    }
+
+    // Lightbox for images (PNG, JPG, GIF, WebP, SVG in img tags)
+    var img = e.target.closest('.md-content img');
+    if (img) {
+      var clone = img.cloneNode();
+      clone.style.cssText = '';
+      overlay.innerHTML = '';
+      overlay.appendChild(clone);
+      overlay.classList.add('active');
       e.preventDefault();
     }
-  }
-});
+  });
+
+  // Close lightbox on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) {
+      overlay.classList.remove('active');
+      overlay.innerHTML = '';
+    }
+  });
+})();
 </script>
 <style>
 .mermaid {

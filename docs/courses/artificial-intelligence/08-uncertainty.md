@@ -16,28 +16,28 @@
 
 ## Why Uncertainty Matters in AI
 
-### Real-World Analogy â€” Weather Forecast
+### Real-World Analogy → Weather Forecast
 
-Imagine planning a picnic. The weather forecast says "70% chance of rain." You cannot know for certain whether it will rain, but you must decide: bring an umbrella or cancel the picnic. This is **reasoning under uncertainty** â€” you have partial information and must act anyway.
+Imagine planning a picnic. The weather forecast says "70% chance of rain." You cannot know for certain whether it will rain, but you must decide: bring an umbrella or cancel the picnic. This is **reasoning under uncertainty** → you have partial information and must act anyway.
 
-In AI, agents face the same dilemma. A self-driving car cannot know with 100% certainty whether the dark shape ahead is a pedestrian or a shadow. A medical diagnosis system cannot be sure the patient has a disease â€” only that symptoms suggest it. Just as you weigh the forecast against the cost of a ruined picnic, AI agents must quantify uncertainty and take optimal actions.
+In AI, agents face the same dilemma. A self-driving car cannot know with 100% certainty whether the dark shape ahead is a pedestrian or a shadow. A medical diagnosis system cannot be sure the patient has a disease → only that symptoms suggest it. Just as you weigh the forecast against the cost of a ruined picnic, AI agents must quantify uncertainty and take optimal actions.
 
 ---
 
-## Probability vs Logic â€” Comparison Table
+## Probability vs Logic → Comparison Table
 
 | Aspect | Logic | Probability |
 |--------|-------|-------------|
 | **Truth Value** | True / False / Unknown | Continuous [0, 1] |
 | **Belief Update** | Deductive (certain inference) | Bayesian update (belief revision) |
-| **Handles Noise** | No â€” assumes perfect knowledge | Yes â€” models noise explicitly |
-| **Handles Missing Data** | Poor â€” breaks without complete info | Naturally integrates partial evidence |
+| **Handles Noise** | No → assumes perfect knowledge | Yes → models noise explicitly |
+| **Handles Missing Data** | Poor → breaks without complete info | Naturally integrates partial evidence |
 | **Uncertainty Representation** | Cannot express degree of belief | Degree of belief via probability |
-| **Monotonic** | Yes â€” adding facts never retracts conclusions | No â€” new evidence can change beliefs |
+| **Monotonic** | Yes → adding facts never retracts conclusions | No → new evidence can change beliefs |
 | **Computational Cost** | Low (SAT, resolution) | High (sum over variables) |
 | **Real-World Suitability** | Toy domains, formal verification | Medical diagnosis, NLP, robotics |
 
-> **Key Insight:** Logic excels when the world is fully known and deterministic. Probability excels in the real world â€” noisy sensors, missing data, stochastic outcomes.
+> **Key Insight:** Logic excels when the world is fully known and deterministic. Probability excels in the real world → noisy sensors, missing data, stochastic outcomes.
 
 ---
 
@@ -79,9 +79,9 @@ In real-world environments, agents rarely have access to the complete state of t
 
 ---
 
-## Topic 1 â€” Probability Basics
+## Topic 1 → Probability Basics
 
-### Real-World Analogy â€” Rolling Dice
+### Real-World Analogy → Rolling Dice
 
 When you roll a fair six-sided die, you know the possible outcomes {1,2,3,4,5,6} but not which will occur. Probability quantifies this uncertainty: P(Roll=3) = 1/6 â‰ˆ 0.167. Over many rolls, the relative frequency of each face approaches 1/6. This is the **frequentist interpretation**. In AI, we also use the **Bayesian interpretation**: probability as degree of belief.
 
@@ -94,9 +94,9 @@ Every AI system makes decisions under uncertainty. Probability gives us the lang
 - **Random Variable**: A variable whose value is subject to variations due to chance. Example: $Weather \in \{Sunny, Rainy\}$.
 - **Probability Distribution**: Maps each outcome to its probability. Sum of all probabilities = 1.
 - **Joint Probability Distribution**: Specifies the probability of every possible combination of values for a set of random variables. For 3 boolean variables, the full joint has 2Â³ = 8 entries.
-- **Marginal Probability**: $P(A)$ â€” the probability of A regardless of other variables.
+- **Marginal Probability**: $P(A)$ → the probability of A regardless of other variables.
 
-### Algorithm â€” Computing Marginal from Joint
+### Algorithm → Computing Marginal from Joint
 
 **Input:** Joint distribution table P(X, Y), target variable X
 **Output:** P(X)
@@ -119,7 +119,7 @@ function MARGINALIZE(Joint P(X,Y), variable X):
     return result
 ```
 
-**Dry Run â€” Marginal from Joint Table:**
+**Dry Run → Marginal from Joint Table:**
 
 We have two variables: Weather (W) âˆˆ {Sunny, Rainy} and Mood (M) âˆˆ {Happy, Sad}. Joint distribution P(W, M):
 
@@ -168,7 +168,7 @@ print("P(Weather):", p_weather)
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| **Space (full joint)** | O(dâ¿) for n variables each with d values | Every combination must be stored â€” exponential explosion |
+| **Space (full joint)** | O(dâ¿) for n variables each with d values | Every combination must be stored → exponential explosion |
 | **Time (marginalize)** | O(dâ¿) | Must sum over all other dimensions |
 | **CPT representation (BN)** | O(n Ã— dáµ) where k = max parents | Only local parents; k << n in sparse graphs |
 
@@ -186,15 +186,15 @@ The full joint distribution is **impractical** beyond ~20 boolean variables (2Â
 ### Edge Cases
 
 1. **Zero Probabilities**: If P(e) = 0 (observed impossible evidence), Bayes' rule divides by zero. Solution: use probability density for continuous vars; check for zero in code.
-2. **Extremely Rare Events**: Prior probability near zero â†’ posterior stays near zero even with strong evidence. This is the **rare disease problem** (see Bayes' rule example).
+2. **Extremely Rare Events**: Prior probability near zero → posterior stays near zero even with strong evidence. This is the **rare disease problem** (see Bayes' rule example).
 3. **Conflicting Evidence**: Two pieces of evidence pointing opposite directions. Probability naturally balances them via Bayesian update.
 4. **Continuous Variables**: Infinite outcomes. Use Probability Density Functions (PDFs) and integration instead of summation.
 
 ---
 
-## Topic 2 â€” Conditional Probability
+## Topic 2 → Conditional Probability
 
-### Real-World Analogy â€” Medical Test
+### Real-World Analogy → Medical Test
 
 A COVID test is 95% accurate. If you test positive, what is the probability you actually have COVID? It depends on the **base rate** (prevalence) in your area. If only 1% of people have COVID, a positive test is more likely to be a false positive than a true positive. Conditional probability captures this: P(COVID | Positive) depends on P(Positive | COVID), P(COVID), and P(Positive).
 
@@ -204,7 +204,7 @@ Conditional probability $P(A|B)$ is the probability of event A given that event 
 
 $$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
 
-### Algorithm â€” Computing Conditional Probability
+### Algorithm → Computing Conditional Probability
 
 **Input:** Joint distribution P(X, Y), values x, y
 **Output:** P(X=x | Y=y)
@@ -227,7 +227,7 @@ function CONDITIONAL_PROB(joint, x_val, y_val, x_idx, y_idx):
     return joint_prob / prob_y
 ```
 
-**Dry Run â€” Conditional from Joint:**
+**Dry Run → Conditional from Joint:**
 
 Using the same Weather-Mood table:
 
@@ -291,9 +291,9 @@ print(f"P(Rainy | Sad) = {p_rainy_given_sad:.3f}")
 
 ---
 
-## Topic 3 â€” Bayes' Rule
+## Topic 3 → Bayes' Rule
 
-### Real-World Analogy â€” Spam Filtering
+### Real-World Analogy → Spam Filtering
 
 Your email provider flags a message containing "FREE MONEY!!!". What is the probability it's spam? Historically, 60% of all emails are spam, and "FREE MONEY!!!" appears in 80% of spam but only 5% of legitimate emails. Bayes' Rule tells us:
 
@@ -301,7 +301,7 @@ P(spam | "FREE MONEY!!!") = P("FREE MONEY!!!" | spam) Ã— P(spam) / P("FREE MO
 
 = (0.80 Ã— 0.60) / (0.80 Ã— 0.60 + 0.05 Ã— 0.40) = 0.48 / 0.50 = 0.96
 
-96% chance it's spam â€” move to spam folder!
+96% chance it's spam → move to spam folder!
 
 ### Definition
 
@@ -315,7 +315,7 @@ Where:
 - **P(B)** = Marginal likelihood (normalizing constant)
 - **P(A|B)** = Posterior probability (updated belief after evidence)
 
-### Algorithm â€” Bayesian Belief Update
+### Algorithm → Bayesian Belief Update
 
 **Input:** Prior P(A), likelihood P(B|A), evidence B
 **Output:** Posterior P(A|B)
@@ -325,7 +325,7 @@ Where:
 2. Determine the prior P(A)
 3. Determine P(not A) = 1 - P(A)
 4. Determine the likelihood P(B|A)
-5. Determine P(B|not A) â€” false positive rate
+5. Determine P(B|not A) → false positive rate
 6. Compute marginal P(B) = P(B|A)P(A) + P(B|not A)P(not A)
 7. Compute posterior: P(A|B) = P(B|A) Ã— P(A) / P(B)
 8. Return posterior
@@ -341,11 +341,11 @@ function BAYES_RULE(prior, likelihood_given_true, likelihood_given_false):
     return posterior
 ```
 
-**Dry Run â€” Medical Diagnosis:**
+**Dry Run → Medical Diagnosis:**
 
 | Variable | Value | Source |
 |----------|-------|--------|
-| P(Disease) | 0.01 | Prior â€” 1% population has disease |
+| P(Disease) | 0.01 | Prior → 1% population has disease |
 | P(Positive | Disease) | 0.95 | True positive rate (sensitivity) |
 | P(Positive | Healthy) | 0.05 | False positive rate |
 | Evidence | Test Positive | Patient result |
@@ -357,7 +357,7 @@ function BAYES_RULE(prior, likelihood_given_true, likelihood_given_false):
 4. P(Positive) = (0.95 Ã— 0.01) + (0.05 Ã— 0.99) = 0.0095 + 0.0495 = 0.059
 5. P(Disease | Positive) = 0.0095 / 0.059 â‰ˆ 0.161
 
-**Trace Table â€” Each step:**
+**Trace Table → Each step:**
 
 | Step | Calculation | Result |
 |------|-------------|--------|
@@ -403,7 +403,7 @@ print(f"P(Disease | Second Positive) = {p2:.3f}")
 | **Multiple hypotheses** | O(n) for n hypotheses | Must compute and normalize over all n |
 | **Continuous variables** | O(integration) | Requires numerical integration over continuous domains |
 
-Bayes' Rule is constant-time for a single binary hypothesis. Its power is not computational efficiency but **epistemic efficiency** â€” it gives the principled way to incorporate evidence.
+Bayes' Rule is constant-time for a single binary hypothesis. Its power is not computational efficiency but **epistemic efficiency** → it gives the principled way to incorporate evidence.
 
 ### Advantages & Disadvantages
 
@@ -411,29 +411,29 @@ Bayes' Rule is constant-time for a single binary hypothesis. Its power is not co
 |------------|---------------|
 | Optimal belief update (mathematically proven) | Requires accurate likelihood estimates |
 | Handles sequential evidence naturally | Prior choice can bias results |
-| Interpretable â€” posterior has clear meaning | Computationally expensive for large hypothesis spaces |
+| Interpretable → posterior has clear meaning | Computationally expensive for large hypothesis spaces |
 | Foundation for Bayesian ML (Bayesian NNs, GPs) | Integration over continuous vars is hard |
 
 ### Edge Cases
 
 1. **Zero Prior**: If P(A) = 0, posterior stays 0 regardless of evidence. The prior completely rules out the hypothesis.
-2. **Perfect Likelihood**: If P(B|A) = 1 and P(B|not A) = 0, then posterior = 1 â€” certainty.
+2. **Perfect Likelihood**: If P(B|A) = 1 and P(B|not A) = 0, then posterior = 1 → certainty.
 3. **Non-informative Prior**: When P(A) = 0.5, the posterior depends entirely on the likelihood ratio.
 4. **Multiple Evidence**: P(A|B1, B2) requires either P(B1, B2 | A) or the Naive Bayes assumption P(B1, B2 | A) = P(B1|A)P(B2|A).
 
 ---
 
-## Topic 4 â€” Bayesian Networks
+## Topic 4 → Bayesian Networks
 
-### Real-World Analogy â€” Car Won't Start
+### Real-World Analogy → Car Won't Start
 
-Your car won't start. Possible causes: dead battery, empty fuel tank, or faulty starter. These causes interact: a dead battery also makes headlights dim; an empty tank doesn't. We can model this as a network: Battery â†’ Starts, Fuel â†’ Starts, Battery â†’ Headlights. Each node's probability depends on its direct causes (parents). This structure makes reasoning efficient: we don't need to consider all 2âµ = 32 combinations independently.
+Your car won't start. Possible causes: dead battery, empty fuel tank, or faulty starter. These causes interact: a dead battery also makes headlights dim; an empty tank doesn't. We can model this as a network: Battery → Starts, Fuel → Starts, Battery → Headlights. Each node's probability depends on its direct causes (parents). This structure makes reasoning efficient: we don't need to consider all 2âµ = 32 combinations independently.
 
 ### Definition
 
 A **Bayesian Network** (BN) is a Directed Acyclic Graph (DAG) where:
 - **Nodes** = random variables
-- **Edges** = direct probabilistic influence (parent â†’ child)
+- **Edges** = direct probabilistic influence (parent → child)
 - Each node has a **Conditional Probability Table (CPT)** quantifying the influence of its parents
 
 ### Bayesian Network Properties
@@ -445,11 +445,11 @@ A **Bayesian Network** (BN) is a Directed Acyclic Graph (DAG) where:
 | **CPT Representation** | Each node stores P(node | parents) | Compact conditional distributions |
 | **Conditional Independence** | Node independent of non-descendants given parents | Enables efficient inference |
 | **D-Separation** | Graph-theoretic criterion for independence | Determines which variables are independent given evidence |
-| **Markov Blanket** | Parents + Children + Children's other parents | Sufficient for local inference â€” node independent of rest given blanket |
+| **Markov Blanket** | Parents + Children + Children's other parents | Sufficient for local inference → node independent of rest given blanket |
 | **Modularity** | Adding/removing edges affects only local CPTs | Easy to extend; local changes don't require full recomputation |
 | **Interpretability** | Human-readable graph structure | Domain experts can validate and refine the model |
 
-### Algorithm â€” Constructing a Bayesian Network
+### Algorithm → Constructing a Bayesian Network
 
 **Input:** Set of random variables, domain knowledge or data
 **Output:** BN structure (DAG) + CPTs
@@ -476,7 +476,7 @@ function CONSTRUCT_BN(variables, domain_knowledge):
     return BN(graph, CPT)
 ```
 
-**Dry Run â€” Burglary Alarm Network:**
+**Dry Run → Burglary Alarm Network:**
 
 Variables: Burglary (B), Earthquake (E), Alarm (A), JohnCalls (J), MaryCalls (M)
 
@@ -518,7 +518,7 @@ Variables: Burglary (B), Earthquake (E), Alarm (A), JohnCalls (J), MaryCalls (M)
 | Full Joint | 2âµ - 1 = 31 |
 | BN (this network) | 1 + 1 + 4 + 2 + 2 = 10 |
 
-The BN uses **68% fewer parameters** â€” and the gap widens as the network grows.
+The BN uses **68% fewer parameters** → and the gap widens as the network grows.
 
 **Python Implementation:**
 ```python
@@ -588,7 +588,7 @@ The key insight: if the graph is sparse (each node has few parents), the BN is e
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Visually interpretable â€” graph shows causal structure | Structure learning is NP-hard |
+| Visually interpretable → graph shows causal structure | Structure learning is NP-hard |
 | Compact representation | Exact inference is NP-hard (treewidth-dependent) |
 | Handles missing data naturally | CPTs grow exponentially with parent count |
 | Encodes causal relationships | Sensitive to ordering |
@@ -599,17 +599,17 @@ The key insight: if the graph is sparse (each node has few parents), the BN is e
 1. **Network with Many Parents**: CPT size explodes. Solution: use canonical models like noisy-OR (each parent independently causes child; probabilities combine via P(child=True) = 1 - âˆ(1 - páµ¢)).
 2. **Continuous Variables**: Use Gaussian BNs (linear Gaussian dependencies) or discretize.
 3. **Sparse Data for CPT**: Use Dirichlet priors for smoothing; Bayesian estimation instead of ML.
-4. **Cyclic Dependencies**: Temporal modeling via Dynamic Bayesian Networks (DBNs) â€” unroll over time slices.
+4. **Cyclic Dependencies**: Temporal modeling via Dynamic Bayesian Networks (DBNs) → unroll over time slices.
 
 ---
 
-## Topic 5 â€” Inference in Bayesian Networks
+## Topic 5 → Inference in Bayesian Networks
 
-### Real-World Analogy â€” Fire Department
+### Real-World Analogy → Fire Department
 
-When a fire station receives an alarm, they need to infer the most likely cause: Is it a real fire, a prank, or a system malfunction? They might call neighbors to ask (observing JohnCalls or MaryCalls). Gradually, they narrow down the cause. This is **inference** â€” computing P(query | evidence) using the BN's structure and CPTs.
+When a fire station receives an alarm, they need to infer the most likely cause: Is it a real fire, a prank, or a system malfunction? They might call neighbors to ask (observing JohnCalls or MaryCalls). Gradually, they narrow down the cause. This is **inference** → computing P(query | evidence) using the BN's structure and CPTs.
 
-### Algorithm â€” Variable Elimination
+### Algorithm → Variable Elimination
 
 **Input:** BN, query variable Q, evidence variables E, elimination ordering
 **Output:** P(Q | E)
@@ -638,11 +638,11 @@ function VARIABLE_ELIMINATION(BN, query, evidence, order):
     return NORMALIZE(result)
 ```
 
-**Dry Run â€” Inference in Burglary Alarm:**
+**Dry Run → Inference in Burglary Alarm:**
 
 **Query:** P(Burglary | MaryCalls=true)
 
-**Variables:** B, E, A, J, M â€” **Evidence:** M=true â€” **Query:** B â€” **Elimination order:** J, A, E
+**Variables:** B, E, A, J, M → **Evidence:** M=true → **Query:** B → **Elimination order:** J, A, E
 
 **Factors (CPTs):**
 - fâ‚(B): P(B)
@@ -651,13 +651,13 @@ function VARIABLE_ELIMINATION(BN, query, evidence, order):
 - fâ‚„(J, A): P(J | A)
 - fâ‚…(M, A): P(M | A)
 
-**Step 1 â€” Restrict evidence M=true:**
-- fâ‚…(M=true, A): A=F â†’ 0.01, A=T â†’ 0.70
+**Step 1 → Restrict evidence M=true:**
+- fâ‚…(M=true, A): A=F → 0.01, A=T → 0.70
 
-**Step 2 â€” Eliminate J:**
+**Step 2 → Eliminate J:**
 - Sum out J: P(J|A) summed over J = 1.0. Factor disappears.
 
-**Step 3 â€” Multiply fâ‚ƒ Ã— fâ‚…:**
+**Step 3 → Multiply fâ‚ƒ Ã— fâ‚…:**
 - fâ‚†(B, E, A) = fâ‚ƒ(A, B, E) Ã— fâ‚…(M=true, A)
 
 | B | E | A=F | A=T |
@@ -667,23 +667,23 @@ function VARIABLE_ELIMINATION(BN, query, evidence, order):
 | T | F | 0.060Ã—0.01=0.00060 | 0.940Ã—0.70=0.65800 |
 | T | T | 0.050Ã—0.01=0.00050 | 0.950Ã—0.70=0.66500 |
 
-**Step 4 â€” Eliminate A (sum over A):**
+**Step 4 → Eliminate A (sum over A):**
 - fâ‚‡(B=F, E=F) = 0.00999 + 0.00070 = 0.01069
 - fâ‚‡(B=F, E=T) = 0.00710 + 0.20300 = 0.21010
 - fâ‚‡(B=T, E=F) = 0.00060 + 0.65800 = 0.65860
 - fâ‚‡(B=T, E=T) = 0.00050 + 0.66500 = 0.66550
 
-**Step 5 â€” Multiply fâ‚ Ã— fâ‚‚ Ã— fâ‚‡:**
+**Step 5 → Multiply fâ‚ Ã— fâ‚‚ Ã— fâ‚‡:**
 - fâ‚ˆ(B=F, E=F) = 0.999 Ã— 0.998 Ã— 0.01069 = 0.010654
 - fâ‚ˆ(B=F, E=T) = 0.999 Ã— 0.002 Ã— 0.21010 = 0.000420
 - fâ‚ˆ(B=T, E=F) = 0.001 Ã— 0.998 Ã— 0.65860 = 0.000657
 - fâ‚ˆ(B=T, E=T) = 0.001 Ã— 0.002 Ã— 0.66550 = 0.000001
 
-**Step 6 â€” Eliminate E:**
+**Step 6 → Eliminate E:**
 - fâ‚‰(B=F) = 0.010654 + 0.000420 = 0.011074
 - fâ‚‰(B=T) = 0.000657 + 0.000001 = 0.000658
 
-**Step 7 â€” Normalize:**
+**Step 7 → Normalize:**
 - P(B=T | M=true) = 0.000658 / (0.011074 + 0.000658) = **0.0561**
 - P(B=F | M=true) = 0.011074 / 0.011732 = **0.9439**
 
@@ -780,7 +780,7 @@ for assignment, prob in result.items():
 | **Likelihood Weighting** | O(N Ã— n) for N samples | No exponential blowup, but approximate |
 | **Gibbs Sampling** | O(N Ã— n) per iteration | Mixing time can be exponential for pathological BNs |
 
-Treewidth is the critical metric. A **polytree** (each node has at most one undirected path to any other) has treewidth equal to its maximum node degree â€” inference is polynomial. A fully connected BN has treewidth = n â€” inference is exponential.
+Treewidth is the critical metric. A **polytree** (each node has at most one undirected path to any other) has treewidth equal to its maximum node degree → inference is polynomial. A fully connected BN has treewidth = n → inference is exponential.
 
 ### Advantages & Disadvantages of Inference Methods
 
@@ -793,7 +793,7 @@ Treewidth is the critical metric. A **polytree** (each node has at most one undi
 
 ### Edge Cases in Inference
 
-1. **Zero Probabilities in Evidence**: If P(evidence) = 0 in the BN, inference divides by zero. The network is inconsistent with the evidence â€” check CPTs.
+1. **Zero Probabilities in Evidence**: If P(evidence) = 0 in the BN, inference divides by zero. The network is inconsistent with the evidence → check CPTs.
 2. **Very Rare Evidence**: Rejection sampling may reject 99.99% of samples. Use likelihood weighting instead.
 3. **Nearly Deterministic CPTs**: Rows like P(A|B) = [0.999, 0.001] cause numerical instability. Use log-space computation.
 4. **Large Treewidth**: VE becomes intractable. Use approximate inference (sampling) or simplify the network.
@@ -801,7 +801,7 @@ Treewidth is the critical metric. A **polytree** (each node has at most one undi
 
 ---
 
-## Concept Comparison â€” Inference Methods
+## Concept Comparison → Inference Methods
 
 | Inference Method | Type | Exact? | Complexity | Best For | Trade-off |
 |-----------------|:---:|:---:|:---:|---------|-----------|
@@ -824,11 +824,11 @@ $$P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)}$$
 
 ### Q2: Why is Naive Bayes "naive"? How does it work?
 
-"It assumes all features are conditionally independent given the class label â€” a 'naive' assumption rarely true in practice."
+"It assumes all features are conditionally independent given the class label → a 'naive' assumption rarely true in practice."
 
 $$P(Y | X_1, ..., X_n) \propto P(Y) \prod_{i=1}^n P(X_i | Y)$$
 
-**Why it still works:** Decision boundary can be correct even if probabilities are miscalibrated; requires much less data; handles high-dimensional feature spaces; extremely fast â€” O(n) per prediction.
+**Why it still works:** Decision boundary can be correct even if probabilities are miscalibrated; requires much less data; handles high-dimensional feature spaces; extremely fast → O(n) per prediction.
 
 ### Q3: How would you learn the structure of a Bayesian Network from data?
 
@@ -842,9 +842,9 @@ Three approaches:
 ### Q4: What is d-separation and why does it matter?
 
 d-separation determines whether two variables are conditionally independent given observed variables. A path is blocked if:
-- **Chain** A â†’ B â†’ C with B observed
-- **Fork** A â† B â†’ C with B observed
-- **Collider** A â†’ B â† C with B or descendant NOT observed
+- **Chain** A → B → C with B observed
+- **Fork** A â† B → C with B observed
+- **Collider** A → B â† C with B or descendant NOT observed
 
 If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 
@@ -855,7 +855,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 | Accuracy | Exact | Converges with more samples |
 | Worst-case | Exponential in treewidth | Fixed running time (N samples) |
 | Evidence handling | Always correct | Struggles with rare evidence |
-| Implementation | Complex â€” factor management | Simple â€” just sample and count |
+| Implementation | Complex → factor management | Simple → just sample and count |
 | Continuous vars | Heavy integration | Straightforward (sample from proposal) |
 
 ---
@@ -880,26 +880,26 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 
 **System:** ASR systems (Siri, Google Speech, Whisper)
 **How:** HMMs are Bayesian Networks with hidden states (phonemes) and observed outputs (audio features). Viterbi algorithm computes most likely phoneme sequence.
-**Why Bayes:** Speech is ambiguous â€” "recognize" vs "wreck a nice" sound similar. Probabilistic reasoning disambiguates using language models.
+**Why Bayes:** Speech is ambiguous → "recognize" vs "wreck a nice" sound similar. Probabilistic reasoning disambiguates using language models.
 **Impact:** Word error rates dropped from ~30% (2000) to <5% (modern systems).
 
 ### 4. Fault Diagnosis (Bayesian Networks)
 
 **System:** Aircraft engine diagnostics, network failure diagnosis
-**How:** BN models component failures â†’ observable symptoms. Given sensor readings, P(fault | symptoms) recommends most likely faulty component.
+**How:** BN models component failures → observable symptoms. Given sensor readings, P(fault | symptoms) recommends most likely faulty component.
 **Why Bayes:** Multiple faults interact; symptoms have multiple causes. BN's causal structure mirrors system architecture.
 **Impact:** Reduced diagnostic time by 60-80% in aerospace applications.
 
-### 5. Robotics (Bayes Filters â€” Kalman / Particle Filters)
+### 5. Robotics (Bayes Filters → Kalman / Particle Filters)
 
 **System:** Localization, mapping, tracking
-**How:** Robot maintains belief P(state | sensor_data, controls) using Bayes' Rule recursively (predict â†’ update).
+**How:** Robot maintains belief P(state | sensor_data, controls) using Bayes' Rule recursively (predict → update).
 **Why Bayes:** Unifies sensor noise, motion uncertainty, map uncertainty into a single belief distribution.
 **Impact:** Enables autonomous driving (localization at <10cm), drone navigation, warehouse robotics.
 
 ---
 
-## Quick Reference â€” Probability Rules
+## Quick Reference → Probability Rules
 
 | Rule | Formula | Use Case |
 |------|---------|----------|
@@ -931,7 +931,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 - C) Inductive reasoning
 - D) Abductive reasoning
 
-<details><summary>Answer</summary>B) Bayes' Rule computes P(cause|effect) from P(effect|cause) â€” diagnostic reasoning from evidence back to cause.</details>
+<details><summary>Answer</summary>B) Bayes' Rule computes P(cause|effect) from P(effect|cause) → diagnostic reasoning from evidence back to cause.</details>
 
 **Q2:** What does the chain rule for Bayesian Networks state?
 - A) P(Xâ‚â€¦Xâ‚™) = âˆ P(Xáµ¢ | Parents(Xáµ¢))
@@ -947,7 +947,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 - C) Number of evidence variables
 - D) Number of CPT entries
 
-<details><summary>Answer</summary>B) Complexity is exponential in the treewidth â€” the size of the largest intermediate factor during elimination.</details>
+<details><summary>Answer</summary>B) Complexity is exponential in the treewidth → the size of the largest intermediate factor during elimination.</details>
 
 **Q4:** Why does Naive Bayes work well for spam filtering despite its "naive" assumption?
 - A) It uses deep learning
@@ -963,11 +963,11 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 - C) They don't need probability values
 - D) They never need inference
 
-<details><summary>Answer</summary>B) BNs factorize the joint distribution into local CPTs, requiring O(n Ã— 2áµ) parameters instead of O(2â¿) â€” a massive saving when each node has few parents.</details>
+<details><summary>Answer</summary>B) BNs factorize the joint distribution into local CPTs, requiring O(n Ã— 2áµ) parameters instead of O(2â¿) → a massive saving when each node has few parents.</details>
 
 ---
 
-> **ðŸ’¡ Pro Tip:** When modeling real-world problems with Bayesian networks, focus on getting the qualitative structure (DAG) right â€” conditional independence assumptions matter far more than precise probability numbers. Use noisy-OR/MAX for efficient parameterization of causal relationships.
+> **ðŸ’¡ Pro Tip:** When modeling real-world problems with Bayesian networks, focus on getting the qualitative structure (DAG) right → conditional independence assumptions matter far more than precise probability numbers. Use noisy-OR/MAX for efficient parameterization of causal relationships.
 
 ---
 

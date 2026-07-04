@@ -104,7 +104,7 @@ spec:
   ports:
     - port: 80
       targetPort: 8080
-  type: ClusterIP  # Internal â€” only accessible within the cluster
+  type: ClusterIP  # Internal → only accessible within the cluster
 ---
 # â”€â”€ ConfigMap for non-sensitive config â”€â”€
 
@@ -217,7 +217,7 @@ Kubernetes replaces Eureka for service discovery (DNS resolution), replaces Conf
 
 ```java
 // â”€â”€ Rolling update (Kubernetes default) â”€â”€
-// Updates pods gradually â€” old pods keep serving until new ones are healthy
+// Updates pods gradually → old pods keep serving until new ones are healthy
 apiVersion: apps/v1
 kind: Deployment
 spec:
@@ -513,7 +513,7 @@ class UserServiceClientTest {
 }
 ```
 
-Spring Cloud Contract automatically verifies that the consumer's client code works against the producer's contract. If the producer changes a response field, the consumer build breaks before deployment â€” not in production.
+Spring Cloud Contract automatically verifies that the consumer's client code works against the producer's contract. If the producer changes a response field, the consumer build breaks before deployment → not in production.
 
 Contract testing replaces brittle end-to-end tests for cross-service integration. Combined with consumer-driven contracts, it prevents breaking changes from reaching production.
 
@@ -523,14 +523,14 @@ Contract testing replaces brittle end-to-end tests for cross-service integration
 
 **Answer:**
 
-Each microservice owns its database â€” no other service accesses it directly. Data that spans services is shared through events or API calls.
+Each microservice owns its database → no other service accesses it directly. Data that spans services is shared through events or API calls.
 
 ```java
 // â”€â”€ Anti-pattern: direct database access â”€â”€
-// order-service calls user-service's database directly â€” WRONG
+// order-service calls user-service's database directly → WRONG
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    // order-service should NOT have this â€” it violates service boundaries
+    // order-service should NOT have this → it violates service boundaries
 }
 
 // â”€â”€ Correct: API-based data sharing â”€â”€
@@ -548,7 +548,7 @@ public class UserService {
     @Transactional
     public void updateShippingAddress(Long userId, Address newAddress) {
         userRepo.updateAddress(userId, newAddress);
-        // Publish event â€” order-service consumes and updates its local cache
+        // Publish event → order-service consumes and updates its local cache
         eventPublisher.publish(new AddressChangedEvent(userId, newAddress));
     }
 }
@@ -580,9 +580,9 @@ Strategies for cross-service data:
 1. **API calls**: Best for real-time data (get user details when creating an order)
 2. **Event replication**: Best for reference data (cache user address locally, update via events)
 3. **API composition**: Best for complex read models (API gateway aggregates responses)
-4. **Shared kernel**: Rare â€” share only extremely stable data (country codes, tax rates) as a library
+4. **Shared kernel**: Rare → share only extremely stable data (country codes, tax rates) as a library
 
-Never share databases between services. If two services need the same table, they are not independent â€” merge them into one service.
+Never share databases between services. If two services need the same table, they are not independent → merge them into one service.
 
 ---
 
@@ -648,7 +648,7 @@ public class ApiGatewayController {
         OrderDto order = orderClient.getOrder(orderId);
         UserDto user = userClient.getUser(order.userId());
         ProductDto product = productClient.getProduct(order.productId());
-        // Gateway is now doing orchestration â€” it should just route
+        // Gateway is now doing orchestration → it should just route
     }
 }
 // Fix: Create a dedicated order-aggregation-service for API composition.
@@ -662,7 +662,7 @@ Golden rule: If splitting a service doesn't give you independent deployability, 
 
 **Answer:**
 
-Testing microservices uses a pyramid: unit tests (many) â†’ integration tests (fewer) â†’ contract tests (per pair) â†’ end-to-end tests (few).
+Testing microservices uses a pyramid: unit tests (many) → integration tests (fewer) → contract tests (per pair) → end-to-end tests (few).
 
 ```java
 // â”€â”€ Layer 1: Unit tests (fast, isolated, mock external calls) â”€â”€

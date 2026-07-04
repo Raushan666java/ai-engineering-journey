@@ -14,15 +14,15 @@
 
 ## Why Linked Lists Matter
 
-Imagine a train. Each car carries cargo (data) and is coupled to the next car via a single coupler (pointer). The engine is the **head**. To add a new car at the front, you just unhook the coupler, attach the new car, and hook it back â€” **O(1)**. To reach the last car, the conductor must walk from the engine all the way to the end â€” **O(n)**.
+Imagine a train. Each car carries cargo (data) and is coupled to the next car via a single coupler (pointer). The engine is the **head**. To add a new car at the front, you just unhook the coupler, attach the new car, and hook it back → **O(1)**. To reach the last car, the conductor must walk from the engine all the way to the end → **O(n)**.
 
 An **array** is like a fixed parking lot: every slot has a numbered address you can jump to instantly (**O(1)** random access), but inserting a new car at the front means shuffling every other car down one spot (**O(n)**).
 
-Linked lists trade random-access speed for **constant-time insertions and deletions at known positions** â€” a trade-off that makes them indispensable in memory allocators, hash-table collision chains, undo/redo stacks, and file-system indexing.
+Linked lists trade random-access speed for **constant-time insertions and deletions at known positions** → a trade-off that makes them indispensable in memory allocators, hash-table collision chains, undo/redo stacks, and file-system indexing.
 
 ```
 Train (Linked List) analogy:
-   Engine â†’ [Car A] â†’ [Car B] â†’ [Car C] â†’ nullptr
+   Engine → [Car A] → [Car B] → [Car C] → nullptr
    head      data|next  data|next  data|next
 ```
 
@@ -33,7 +33,7 @@ Train (Linked List) analogy:
 | Node Structure | Each node holds data + pointer to next | Use `struct Node` with `data` and `next` fields |
 | Head Insertion | O(1) since no elements need shifting | Use `pushFront` for LIFO / stack behaviour |
 | Tail Insertion | O(1) with tail pointer, O(n) without | Always maintain a tail pointer for efficiency |
-| Iterative Reversal | Three pointers rewire links in one pass | O(n) time, O(1) space â€” no recursion overhead |
+| Iterative Reversal | Three pointers rewire links in one pass | O(n) time, O(1) space → no recursion overhead |
 | Recursive Reversal | Implicit stack; elegant but risky | O(n) space due to call stack; avoid for long lists |
 | Cycle Detection | Floyd Tortoise and Hare algorithm | Slow + fast pointer meet if cycle exists; O(n) time, O(1) space |
 | Sentinel / Dummy Node | Placeholder node eliminates edge cases | Simplifies insertion/deletion code significantly |
@@ -69,38 +69,38 @@ A singly linked list node has exactly two fields:
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
-- **Data** â€” the actual value stored (int, char, object, etc.).
-- **Next** â€” a reference/pointer to the next node in the sequence; `nullptr` (or `None`) marks the end.
+- **Data** → the actual value stored (int, char, object, etc.).
+- **Next** → a reference/pointer to the next node in the sequence; `nullptr` (or `None`) marks the end.
 
-The list itself is identified solely by a **head** pointer â€” the first node. If `head == nullptr`, the list is empty.
+The list itself is identified solely by a **head** pointer → the first node. If `head == nullptr`, the list is empty.
 
 ```
-head â†’ [10|â—] â†’ [20|â—] â†’ [30|â—] â†’ nullptr
+head → [10|â—] → [20|â—] → [30|â—] → nullptr
 ```
 
 ### Why Not Always Use Arrays?
 
 | Operation | Singly Linked List | Dynamic Array | Winner |
 |-----------|-------------------|---------------|--------|
-| Access by index | O(n) â€” must walk | O(1) â€” direct index | **Array** |
-| Insert at head | O(1) â€” rewired pointer | O(n) â€” shift all | **Linked List** |
+| Access by index | O(n) → must walk | O(1) → direct index | **Array** |
+| Insert at head | O(1) → rewired pointer | O(n) → shift all | **Linked List** |
 | Insert at tail | O(1) with tail ptr / O(n) without | O(1) amortised | **Linked List** (with tail ptr) |
 | Delete at head | O(1) | O(n) | **Linked List** |
 | Memory overhead | 1 pointer per element | 0 overhead (contiguous) | **Array** |
-| Cache locality | Poor â€” nodes scattered | Excellent â€” contiguous block | **Array** |
+| Cache locality | Poor → nodes scattered | Excellent → contiguous block | **Array** |
 | Dynamic size | Naturally grows | Needs resize + copy | **Linked List** |
 
 ---
 
-## Operations â€” In Depth
+## Operations → In Depth
 
-Every operation below follows the same template: *Real-World Analogy â†’ Algorithm Steps â†’ Pseudocode â†’ Dry Run (trace table) â†’ C++ Implementation â†’ Python Implementation â†’ Java Implementation â†’ Complexity (WHY) â†’ Advantages & Disadvantages â†’ Edge Cases.*
+Every operation below follows the same template: *Real-World Analogy → Algorithm Steps → Pseudocode → Dry Run (trace table) → C++ Implementation → Python Implementation → Java Implementation → Complexity (WHY) → Advantages & Disadvantages → Edge Cases.*
 
 ---
 
 ### 1. Insert at Head (pushFront)
 
-**Real-World Analogy** â€” Adding a new car at the very front of a train. The engine's coupler is disconnected, the new car is placed in front, and its coupler is attached to the old first car.
+**Real-World Analogy** → Adding a new car at the very front of a train. The engine's coupler is disconnected, the new car is placed in front, and its coupler is attached to the old first car.
 
 **Algorithm Steps:**
 
@@ -122,15 +122,15 @@ function insertAtHead(value):
     size = size + 1
 ```
 
-**Dry Run (trace table) â€” Insert 5 at head of [10, 20, 30]:**
+**Dry Run (trace table) → Insert 5 at head of [10, 20, 30]:**
 
 | Step | Action | head ptr | newNode ptr | newNode.next | tail ptr | List State |
 |------|--------|----------|-------------|--------------|----------|------------|
-| 0 | Initial | â†’10 | null | â€” | â†’30 | 10â†’20â†’30 |
-| 1 | Create node(5) | â†’10 | â†’5 | null | â†’30 | 10â†’20â†’30 |
-| 2 | newNode.next = head | â†’10 | â†’5 | â†’10 | â†’30 | 5â†’10â†’20â†’30 |
-| 3 | head = newNode | â†’5 | â†’5 | â†’10 | â†’30 | 5â†’10â†’20â†’30 |
-| 4 | size++ | â†’5 | â€” | â€” | â†’30 | 5â†’10â†’20â†’30 |
+| 0 | Initial | →10 | null | → | →30 | 10→20→30 |
+| 1 | Create node(5) | →10 | →5 | null | →30 | 10→20→30 |
+| 2 | newNode.next = head | →10 | →5 | →10 | →30 | 5→10→20→30 |
+| 3 | head = newNode | →5 | →5 | →10 | →30 | 5→10→20→30 |
+| 4 | size++ | →5 | → | → | →30 | 5→10→20→30 |
 
 **C++ Implementation:**
 
@@ -172,14 +172,14 @@ public void pushFront(T value) {
 
 | Metric | Value | Why? |
 |--------|-------|------|
-| Time | O(1) | Only pointer assignments â€” no traversal, no shifting. The number of operations is constant regardless of list size. |
+| Time | O(1) | Only pointer assignments → no traversal, no shifting. The number of operations is constant regardless of list size. |
 | Space | O(1) | One new node is allocated; no auxiliary data structures or recursion. |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Fastest possible insertion â€” constant time | Loses reference to old head if overwritten carelessly |
+| Fastest possible insertion → constant time | Loses reference to old head if overwritten carelessly |
 | No shifting of elements | Requires updating tail pointer when inserting into empty list |
 | Simple implementation | Every insert allocates heap memory (potential fragmentation) |
 
@@ -189,13 +189,13 @@ public void pushFront(T value) {
 |------|-----------|
 | **Empty list** (`head == null`) | New node becomes both head and tail. Works correctly because `if (!tail)` catches it. |
 | **Single node list** | New node becomes head; old head (now second) is linked correctly. |
-| **Very large list** | Performance unaffected â€” O(1) always. |
+| **Very large list** | Performance unaffected → O(1) always. |
 
 ---
 
 ### 2. Insert at Tail (pushBack)
 
-**Real-World Analogy** â€” Adding a new car at the end of a train. Using a tail pointer is like the conductor already standing at the last car; without one, the conductor must walk the entire train to find the end.
+**Real-World Analogy** → Adding a new car at the end of a train. Using a tail pointer is like the conductor already standing at the last car; without one, the conductor must walk the entire train to find the end.
 
 **Algorithm Steps (with tail pointer):**
 
@@ -217,15 +217,15 @@ function insertAtTail(value):
     size = size + 1
 ```
 
-**Dry Run (trace table) â€” Insert 40 at tail of [10, 20, 30]:**
+**Dry Run (trace table) → Insert 40 at tail of [10, 20, 30]:**
 
 | Step | Action | head ptr | tail ptr | tail.next | List State |
 |------|--------|----------|----------|-----------|------------|
-| 0 | Initial | â†’10 | â†’30 | null | 10â†’20â†’30â†’null |
-| 1 | Create node(40) | â†’10 | â†’30 | null | 10â†’20â†’30â†’null |
-| 2 | tail.next = newNode | â†’10 | â†’30 | â†’40 | 10â†’20â†’30â†’40 |
-| 3 | tail = newNode | â†’10 | â†’40 | â†’40 | 10â†’20â†’30â†’40 |
-| 4 | size++ | â†’10 | â†’40 | â€” | 10â†’20â†’30â†’40 |
+| 0 | Initial | →10 | →30 | null | 10→20→30→null |
+| 1 | Create node(40) | →10 | →30 | null | 10→20→30→null |
+| 2 | tail.next = newNode | →10 | →30 | →40 | 10→20→30→40 |
+| 3 | tail = newNode | →10 | →40 | →40 | 10→20→30→40 |
+| 4 | size++ | →10 | →40 | → | 10→20→30→40 |
 
 **C++ Implementation:**
 
@@ -281,7 +281,7 @@ public void pushBack(T value) {
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| O(1) if tail pointer is maintained (most practical implementations) | Without tail pointer, degrades to O(n) â€” a common pitfall |
+| O(1) if tail pointer is maintained (most practical implementations) | Without tail pointer, degrades to O(n) → a common pitfall |
 | Natural for FIFO / queue behaviour (pushBack + popFront) | Tail pointer must be updated on every mutation (delete, insert) |
 | Simple logic | Extra memory for the tail pointer variable |
 
@@ -304,13 +304,13 @@ void pushBackNoTail(const T& value) {
     current->next = newNode;
 }
 ```
-**Warning:** Every call traverses the entire list â€” O(n).
+**Warning:** Every call traverses the entire list → O(n).
 
 ---
 
 ### 3. Insert at Position (insertAt)
 
-**Real-World Analogy** â€” Inserting a carriage at a specific position in a train. The conductor walks from the engine counting cars, then uncouples at the desired spot and inserts the new car.
+**Real-World Analogy** → Inserting a carriage at a specific position in a train. The conductor walks from the engine counting cars, then uncouples at the desired spot and inserts the new car.
 
 **Algorithm Steps:**
 
@@ -338,19 +338,19 @@ function insertAt(index, value):
     size = size + 1
 ```
 
-**Dry Run (trace table) â€” Insert 15 at position 2 in [10, 20, 30, 40]:**
+**Dry Run (trace table) → Insert 15 at position 2 in [10, 20, 30, 40]:**
 
-Initial: 10â†’20â†’30â†’40â†’null (positions 0,1,2,3)
+Initial: 10→20→30→40→null (positions 0,1,2,3)
 
 | Step | Action | current ptr | current.data | newNode.next | current.next | List State |
 |------|--------|-------------|-------------|--------------|--------------|------------|
-| 0 | Initial | â†’10 | 10 | null | â†’20 | 10â†’20â†’30â†’40â†’null |
-| 1 | current = head; i=0â†’1 | â†’10 | 10 | null | â†’20 | 10â†’20â†’30â†’40â†’null |
-| 2 | current = current.next (i=0 to index-2=0, once) | â†’20 | 20 | null | â†’30 | 10â†’20â†’30â†’40â†’null |
-| 3 | Create node(15) | â†’20 | 20 | â†’15 | â†’30 | 10â†’20â†’30â†’40â†’null |
-| 4 | newNode.next = current.next | â†’20 | 20 | â†’30 | â†’30 | 10â†’20â†’15â†’30â†’40 |
-| 5 | current.next = newNode | â†’20 | 20 | â†’30 | â†’15 | 10â†’20â†’15â†’30â†’40 |
-| 6 | size++ (now 5) | â€” | â€” | â€” | â€” | 10â†’20â†’15â†’30â†’40â†’null |
+| 0 | Initial | →10 | 10 | null | →20 | 10→20→30→40→null |
+| 1 | current = head; i=0→1 | →10 | 10 | null | →20 | 10→20→30→40→null |
+| 2 | current = current.next (i=0 to index-2=0, once) | →20 | 20 | null | →30 | 10→20→30→40→null |
+| 3 | Create node(15) | →20 | 20 | →15 | →30 | 10→20→30→40→null |
+| 4 | newNode.next = current.next | →20 | 20 | →30 | →30 | 10→20→15→30→40 |
+| 5 | current.next = newNode | →20 | 20 | →30 | →15 | 10→20→15→30→40 |
+| 6 | size++ (now 5) | → | → | → | → | 10→20→15→30→40→null |
 
 **C++ Implementation:**
 
@@ -414,32 +414,32 @@ public void insertAt(int index, T value) {
 
 | Metric | Value | Why? |
 |--------|-------|------|
-| Time | O(n) | Must traverse from head to `index-1` â€” worst case is tail insertion (walk n nodes). |
+| Time | O(n) | Must traverse from head to `index-1` → worst case is tail insertion (walk n nodes). |
 | Space | O(1) | Single node allocated, no recursion. |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| No shifting of elements (unlike array O(n) shift) | Must still traverse to find position â€” O(n) |
-| Uniform approach â€” works at any valid index | Index bounds must be validated |
+| No shifting of elements (unlike array O(n) shift) | Must still traverse to find position → O(n) |
+| Uniform approach → works at any valid index | Index bounds must be validated |
 | Works with both head and tail delegates | Double pointer rewiring can be confusing for beginners |
 
 **Edge Cases:**
 
 | Case | Behaviour |
 |------|-----------|
-| **index == 0** | Delegates to `pushFront` â€” O(1). |
-| **index == count** | Delegates to `pushBack` â€” O(1) with tail ptr. |
+| **index == 0** | Delegates to `pushFront` → O(1). |
+| **index == count** | Delegates to `pushBack` → O(1) with tail ptr. |
 | **Empty list, index 0** | Delegated to `pushFront`, which handles empty list. |
-| **index < 0 or index > count** | Returns immediately â€” no operation. |
+| **index < 0 or index > count** | Returns immediately → no operation. |
 | **Single node, index 1** | Delegated to `pushBack`; tail pointer updated. |
 
 ---
 
 ### 4. Delete from Head (popFront)
 
-**Real-World Analogy** â€” Unhooking and removing the first car of a train. The engine (head) is disconnected from the first car, and the next car becomes the new first car.
+**Real-World Analogy** → Unhooking and removing the first car of a train. The engine (head) is disconnected from the first car, and the next car becomes the new first car.
 
 **Algorithm Steps:**
 
@@ -463,15 +463,15 @@ function deleteHead():
     size = size - 1
 ```
 
-**Dry Run (trace table) â€” Delete head from [10, 20, 30]:**
+**Dry Run (trace table) → Delete head from [10, 20, 30]:**
 
 | Step | Action | head ptr | temp ptr | head after | tail ptr | List State |
 |------|--------|----------|----------|------------|----------|------------|
-| 0 | Initial | â†’10 | null | â†’10 | â†’30 | 10â†’20â†’30 |
-| 1 | temp = head | â†’10 | â†’10 | â†’10 | â†’30 | 10â†’20â†’30 |
-| 2 | head = head.next | â†’20 | â†’10 | â†’20 | â†’30 | 10â†’20â†’30 |
-| 3 | delete temp | â†’20 | (freed) | â†’20 | â†’30 | 20â†’30 |
-| 4 | count-- (now 2) | â†’20 | â€” | â†’20 | â†’30 | 20â†’30 |
+| 0 | Initial | →10 | null | →10 | →30 | 10→20→30 |
+| 1 | temp = head | →10 | →10 | →10 | →30 | 10→20→30 |
+| 2 | head = head.next | →20 | →10 | →20 | →30 | 10→20→30 |
+| 3 | delete temp | →20 | (freed) | →20 | →30 | 20→30 |
+| 4 | count-- (now 2) | →20 | → | →20 | →30 | 20→30 |
 
 **C++ Implementation:**
 
@@ -517,14 +517,14 @@ public void popFront() {
 
 | Metric | Value | Why? |
 |--------|-------|------|
-| Time | O(1) | Only pointer reassignment â€” no traversal. The head is directly accessible. |
+| Time | O(1) | Only pointer reassignment → no traversal. The head is directly accessible. |
 | Space | O(1) | No new allocations; only a temporary pointer. |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Fastest deletion â€” O(1) | Loses reference to original head (must save before moving) |
+| Fastest deletion → O(1) | Loses reference to original head (must save before moving) |
 | Enables FIFO queue (popFront + pushBack) | Tail pointer must be checked (list may become empty) |
 | Simple two-line logic | Memory leak if old node not freed (C++) |
 
@@ -532,7 +532,7 @@ public void popFront() {
 
 | Case | Behaviour |
 |------|-----------|
-| **Empty list** | Returns immediately â€” no crash. |
+| **Empty list** | Returns immediately → no crash. |
 | **Single node** | head becomes null; tail catch `if (!head)` sets tail = null. List becomes empty. |
 | **Two+ nodes** | Standard path; tail unaffected. |
 
@@ -540,7 +540,7 @@ public void popFront() {
 
 ### 5. Delete at Position / Delete by Value
 
-**Real-World Analogy** â€” Removing a specific car from the middle of a train. The conductor walks to the car just before the target, uncouples it from the target, and couples it directly to the car after the target, bypassing the removed car.
+**Real-World Analogy** → Removing a specific car from the middle of a train. The conductor walks to the car just before the target, uncouples it from the target, and couples it directly to the car after the target, bypassing the removed car.
 
 **Algorithm Steps (by position):**
 
@@ -571,17 +571,17 @@ function deleteAt(index):
     size = size - 1
 ```
 
-**Dry Run (trace table) â€” Delete at position 2 from [10, 20, 30, 40]:**
+**Dry Run (trace table) → Delete at position 2 from [10, 20, 30, 40]:**
 
 | Step | Action | current ptr | current.data | target ptr | current.next | List State |
 |------|--------|-------------|-------------|------------|--------------|------------|
-| 0 | Initial | â†’10 | 10 | null | â†’20 | 10â†’20â†’30â†’40 |
-| 1 | Traverse i=0 to 0 (once), currentâ†’20 | â†’20 | 20 | null | â†’30 | 10â†’20â†’30â†’40 |
-| 2 | target = current.next | â†’20 | 20 | â†’30 | â†’30 | 10â†’20â†’30â†’40 |
-| 3 | current.next = target.next | â†’20 | 20 | â†’30 | â†’40 | 10â†’20â†’40â†’null |
-| 4 | target != tail (tailâ†’40) | â†’20 | 20 | â†’30 | â†’40 | 10â†’20â†’40â†’null |
-| 5 | delete target | â†’20 | 20 | (freed)| â†’40 | 10â†’20â†’40â†’null |
-| 6 | count-- (now 3) | â€” | â€” | â€” | â€” | 10â†’20â†’40â†’null |
+| 0 | Initial | →10 | 10 | null | →20 | 10→20→30→40 |
+| 1 | Traverse i=0 to 0 (once), current→20 | →20 | 20 | null | →30 | 10→20→30→40 |
+| 2 | target = current.next | →20 | 20 | →30 | →30 | 10→20→30→40 |
+| 3 | current.next = target.next | →20 | 20 | →30 | →40 | 10→20→40→null |
+| 4 | target != tail (tail→40) | →20 | 20 | →30 | →40 | 10→20→40→null |
+| 5 | delete target | →20 | 20 | (freed)| →40 | 10→20→40→null |
+| 6 | count-- (now 3) | → | → | → | → | 10→20→40→null |
 
 **C++ Implementation:**
 
@@ -690,7 +690,7 @@ public boolean removeValue(T value) {
 
 | Metric | Value | Why? |
 |--------|-------|------|
-| Time (removeAt) | O(n) | Must traverse to `index-1` â€” worst case is deleting the last node. Each step is a pointer dereference. |
+| Time (removeAt) | O(n) | Must traverse to `index-1` → worst case is deleting the last node. Each step is a pointer dereference. |
 | Time (removeValue) | O(n) | Linear scan to find the value; worst case is value at the end (or absent). |
 | Space | O(1) | One temporary pointer; no recursion or auxiliary structures. |
 
@@ -708,7 +708,7 @@ public boolean removeValue(T value) {
 |------|-----------|
 | **Empty list** | Returns immediately. |
 | **index == 0 (head)** | Delegates to `popFront`. |
-| **Remove last node (tail)** | `current.next` becomes null â†’ `if (!current.next)` catches and updates tail. |
+| **Remove last node (tail)** | `current.next` becomes null → `if (!current.next)` catches and updates tail. |
 | **Single node, remove index 0** | Delegates to `popFront` which sets head=tail=null. |
 | **Value not found** | `removeValue` returns false; list unchanged. |
 
@@ -716,14 +716,14 @@ public boolean removeValue(T value) {
 
 ### 6. Search (Linear Search)
 
-**Real-World Analogy** â€” A train conductor walking from the engine to the caboose, peeking into each car, looking for a specific passenger.
+**Real-World Analogy** → A train conductor walking from the engine to the caboose, peeking into each car, looking for a specific passenger.
 
 **Algorithm Steps:**
 
 1. Start at `head`.
 2. Walk through each node comparing `current.data` with the target.
 3. If match found, return the index (or the node pointer).
-4. If the end is reached (null), return -1 (or null) â€” value not found.
+4. If the end is reached (null), return -1 (or null) → value not found.
 
 **Pseudocode:**
 
@@ -739,13 +739,13 @@ function search(value):
     return -1
 ```
 
-**Dry Run (trace table) â€” Search for 30 in [10, 20, 30, 40]:**
+**Dry Run (trace table) → Search for 30 in [10, 20, 30, 40]:**
 
 | Iteration | current ptr | current.data | target | Match? | index | Next ptr |
 |-----------|-------------|-------------|--------|--------|-------|----------|
-| 0 (init) | â†’10 | 10 | 30 | No | 0 | â†’20 |
-| 1 | â†’20 | 20 | 30 | No | 1 | â†’30 |
-| 2 | â†’30 | 30 | 30 | **Yes** | 2 | Return 2 |
+| 0 (init) | →10 | 10 | 30 | No | 0 | →20 |
+| 1 | →20 | 20 | 30 | No | 1 | →30 |
+| 2 | →30 | 30 | 30 | **Yes** | 2 | Return 2 |
 
 **C++ Implementation:**
 
@@ -817,16 +817,16 @@ public Node<T> find(T value) {
 | Metric | Value | Why? |
 |--------|-------|------|
 | Time (worst) | O(n) | Must scan every node when value is at the end or not present. Each comparison is O(1), but there are n nodes. |
-| Time (best) | O(1) | Value is at head â€” match on first comparison. |
+| Time (best) | O(1) | Value is at head → match on first comparison. |
 | Time (average) | O(n/2) = O(n) | Uniform distribution: on average, check n/2 nodes. |
-| Space | O(1) | Single current pointer â€” no recursion, no stack, no hash table. |
+| Space | O(1) | Single current pointer → no recursion, no stack, no hash table. |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|--------------|
 | Simple, intuitive logic | No binary search possible (no random access) |
-| No extra space | O(n) for every lookup â€” arrays share this cost |
+| No extra space | O(n) for every lookup → arrays share this cost |
 | Returns position or pointer | Value comparison may require `equals()` in Java (object semantics) |
 
 **Edge Cases:**
@@ -834,8 +834,8 @@ public Node<T> find(T value) {
 | Case | Behaviour |
 |------|-----------|
 | **Empty list** | Loop never enters; returns -1. |
-| **Value at head** | Returns 0 immediately â€” O(1). |
-| **Value at tail** | Traverses entire list â€” O(n). |
+| **Value at head** | Returns 0 immediately → O(1). |
+| **Value at tail** | Traverses entire list → O(n). |
 | **Value not present** | Traverses entire list, returns -1. |
 | **Duplicate values** | Returns index of first occurrence only. |
 
@@ -843,7 +843,7 @@ public Node<T> find(T value) {
 
 ### 7. Reverse (Iterative)
 
-**Real-World Analogy** â€” Flipping the direction of every coupler on a train. Each car that was pointing to the next car now points to the previous one. The engine ends up at the back; the caboose becomes the new engine.
+**Real-World Analogy** → Flipping the direction of every coupler on a train. Each car that was pointing to the next car now points to the previous one. The engine ends up at the back; the caboose becomes the new engine.
 
 **Algorithm Steps (3-pointer technique):**
 
@@ -871,16 +871,16 @@ function reverse():
     head = prev
 ```
 
-**Dry Run (trace table) â€” Reverse [10, 20, 30]:**
+**Dry Run (trace table) → Reverse [10, 20, 30]:**
 
 | Step | prev ptr | current ptr | next ptr | current.next (after) | List State (logical) |
 |------|----------|-------------|----------|---------------------|----------------------|
-| 0 | null | â†’10 | null | â€” | 10â†’20â†’30â†’null |
-| 1 | null | â†’10 | â†’20 | null | 10/â†’null; 20â†’30â†’null |
-| 2 | â†’10 | â†’20 | â†’30 | â†’10 | 10â†’null; 20â†’10; 30â†’null |
-| 3 | â†’20 | â†’30 | null | â†’20 | 10â†’null; 20â†’10; 30â†’20 |
-| 4 | â†’30 | null | â€” | â€” | **30â†’20â†’10â†’null** |
-| 5 head=prev(=â†’30) | â€” | â€” | â€” | â€” | **head=30** |
+| 0 | null | →10 | null | → | 10→20→30→null |
+| 1 | null | →10 | →20 | null | 10/→null; 20→30→null |
+| 2 | →10 | →20 | →30 | →10 | 10→null; 20→10; 30→null |
+| 3 | →20 | →30 | null | →20 | 10→null; 20→10; 30→20 |
+| 4 | →30 | null | → | → | **30→20→10→null** |
+| 5 head=prev(=→30) | → | → | → | → | **head=30** |
 
 **C++ Implementation:**
 
@@ -936,16 +936,16 @@ public void reverse() {
 | Metric | Value | Why? |
 |--------|-------|------|
 | Time | O(n) | Exactly one pass through all n nodes. Each node's pointer is rewired exactly once. |
-| Space | O(1) | Three pointers (prev, current, next) â€” no recursion, no call stack, no auxiliary array. This is the optimal space. |
+| Space | O(1) | Three pointers (prev, current, next) → no recursion, no call stack, no auxiliary array. This is the optimal space. |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| O(n) time, O(1) space â€” optimal | Modifies the list in-place (destructive to original order) |
-| No recursion â€” no stack overflow risk | Cannot reverse a portion only without extra logic |
+| O(n) time, O(1) space → optimal | Modifies the list in-place (destructive to original order) |
+| No recursion → no stack overflow risk | Cannot reverse a portion only without extra logic |
 | Simple, stable three-pointer loop | Must update `tail` separately |
-| Easily extended to reverse in groups | â€” |
+| Easily extended to reverse in groups | → |
 
 **Edge Cases:**
 
@@ -953,7 +953,7 @@ public void reverse() {
 |------|-----------|
 | **Empty list** | `current = null` initially; loop doesn't run; `head = prev = null`. |
 | **Single node** | `next = null`, `current.next = null`; prev becomes the node; head points to same node. List unchanged (reversal of one is identity). |
-| **Two nodes** | Single iteration: Aâ†’B becomes Bâ†’A. |
+| **Two nodes** | Single iteration: A→B becomes B→A. |
 | **List with cycle** | **Danger:** Loop never terminates because `next` never becomes null. Always check for cycles before reversing. |
 
 **Recursive Reverse (for reference):**
@@ -976,7 +976,7 @@ Node<T>* reverseRecursive(Node<T>* node) {
 
 ### 8. Detect Cycle (Floyd's Tortoise & Hare)
 
-**Real-World Analogy** â€” Two runners on a circular track. The fast runner (hare) runs twice as fast as the slow runner (tortoise). If the track is a straight line, the hare finishes first and stops. If the track has a loop, the hare will eventually lap the tortoise â€” they will meet.
+**Real-World Analogy** → Two runners on a circular track. The fast runner (hare) runs twice as fast as the slow runner (tortoise). If the track is a straight line, the hare finishes first and stops. If the track has a loop, the hare will eventually lap the tortoise → they will meet.
 
 **Algorithm Steps:**
 
@@ -984,8 +984,8 @@ Node<T>* reverseRecursive(Node<T>* node) {
 2. While `fast` and `fast.next` are not null:
    a. Move `slow` one step: `slow = slow.next`.
    b. Move `fast` two steps: `fast = fast.next.next`.
-   c. If `slow == fast`, a cycle exists â€” return true.
-3. If loop exits (fast reached null), no cycle â€” return false.
+   c. If `slow == fast`, a cycle exists → return true.
+3. If loop exits (fast reached null), no cycle → return false.
 
 **Pseudocode:**
 
@@ -1002,14 +1002,14 @@ function hasCycle():
     return false
 ```
 
-**Dry Run (trace table) â€” Cycle at node(30) in [10â†’20â†’30â†’40â†’30 (cycle)]:**
+**Dry Run (trace table) → Cycle at node(30) in [10→20→30→40→30 (cycle)]:**
 
 | Step | slow ptr | fast ptr | Condition | Notes |
 |------|----------|----------|-----------|-------|
-| 0 | â†’10 | â†’10 | â€” | Initialise both at head |
-| 1 | â†’20 | â†’30 | slowâ‰ fast | fast moves 2Ã— |
-| 2 | â†’30 | â†’50 (â†’30) | slowâ‰ fast | fast wraps around |
-| 3 | â†’40 | â†’40 | **slow==fast** | **Cycle detected!** |
+| 0 | →10 | →10 | → | Initialise both at head |
+| 1 | →20 | →30 | slowâ‰ fast | fast moves 2Ã— |
+| 2 | →30 | →50 (→30) | slowâ‰ fast | fast wraps around |
+| 3 | →40 | →40 | **slow==fast** | **Cycle detected!** |
 
 **C++ Implementation:**
 
@@ -1121,7 +1121,7 @@ public Node<T> detectCycleStart() {
 | Metric | Value | Why? |
 |--------|-------|------|
 | Time | O(n) | In the worst case, fast traverses the entire list (and possibly the cycle). The meeting occurs within O(n) steps. Floyd proved that if a cycle exists, slow and fast meet in at most the length of the list. |
-| Space | O(1) | Only two pointer variables â€” no hash set, no marking, no recursion. This is the key advantage over hash-based detection (which is O(n) space). |
+| Space | O(1) | Only two pointer variables → no hash set, no marking, no recursion. This is the key advantage over hash-based detection (which is O(n) space). |
 
 **Why It Works (mathematical intuition):**
 When slow enters the cycle, fast is already inside it. The relative speed is 1 (fast gains 1 node per step), so fast will catch slow within the cycle length.
@@ -1130,7 +1130,7 @@ When slow enters the cycle, fast is already inside it. The relative speed is 1 (
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| O(1) space â€” no hash table needed | Modifies nothing, but cannot detect *which* node is the problem without extra step |
+| O(1) space → no hash table needed | Modifies nothing, but cannot detect *which* node is the problem without extra step |
 | Works on read-only lists | Does not work on lists with partial corruption (non-circular broken links) |
 | Simple, well-understood, interview favourite | Cannot detect cycle length without second phase |
 
@@ -1141,14 +1141,14 @@ When slow enters the cycle, fast is already inside it. The relative speed is 1 (
 | **Empty list** | Returns false immediately. |
 | **Single node, no cycle** | `fast.next` is null; loop condition fails; returns false. |
 | **Single node pointing to itself** | `fast == fast.next` (after one step); slow == fast; returns true. |
-| **Full cycle (lastâ†’head)** | Detected correctly â€” both eventually meet. |
+| **Full cycle (last→head)** | Detected correctly → both eventually meet. |
 | **No cycle, large list** | Fast reaches null; returns false. **Crucially, fast must check both `fast` and `fast.next` to avoid null pointer dereference.** |
 
 ---
 
 ### 9. Find Middle (Slow & Fast Pointer)
 
-**Real-World Analogy** â€” Two people walking the train from the engine. One walks one car per minute, the other walks two cars per minute. When the fast walker reaches the end, the slow walker is exactly at the middle.
+**Real-World Analogy** → Two people walking the train from the engine. One walks one car per minute, the other walks two cars per minute. When the fast walker reaches the end, the slow walker is exactly at the middle.
 
 **Algorithm Steps:**
 
@@ -1156,7 +1156,7 @@ When slow enters the cycle, fast is already inside it. The relative speed is 1 (
 2. While `fast` and `fast.next` are not null:
    a. Move `slow` one step.
    b. Move `fast` two steps.
-3. Return `slow` â€” it points to the middle node.
+3. Return `slow` → it points to the middle node.
 
 **Note:** For even-length lists (e.g., 4 nodes), this returns the second middle node (node at index 2). To get the first middle, stop when `fast.next` is null instead.
 
@@ -1173,23 +1173,23 @@ function findMiddle():
     return slow
 ```
 
-**Dry Run (trace table) â€” Find middle in [10, 20, 30, 40, 50]:**
+**Dry Run (trace table) → Find middle in [10, 20, 30, 40, 50]:**
 
 | Step | slow ptr | fast ptr | Condition |
 |------|----------|----------|-----------|
-| 0 | â†’10 | â†’10 | â€” |
-| 1 | â†’20 | â†’30 | fastâ‰ null, fast.nextâ‰ null |
-| 2 | â†’30 | â†’50 (end) | fast.next=null â†’ stop |
-| Result: **slowâ†’30 (middle)** |
+| 0 | →10 | →10 | → |
+| 1 | →20 | →30 | fastâ‰ null, fast.nextâ‰ null |
+| 2 | →30 | →50 (end) | fast.next=null → stop |
+| Result: **slow→30 (middle)** |
 
 Even-length example [10, 20, 30, 40]:
 
 | Step | slow ptr | fast ptr |
 |------|----------|----------|
-| 0 | â†’10 | â†’10 |
-| 1 | â†’20 | â†’30 |
-| 2 | â†’30 | null (fast = 40.next) â†’ stop |
-| Result: **slowâ†’30** (second middle) |
+| 0 | →10 | →10 |
+| 1 | →20 | →30 |
+| 2 | →30 | null (fast = 40.next) → stop |
+| Result: **slow→30** (second middle) |
 
 **C++ Implementation:**
 
@@ -1259,7 +1259,7 @@ public Node<T> findMiddle() {
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Single pass â€” efficient | Even vs odd middle ambiguity can cause bugs |
+| Single pass → efficient | Even vs odd middle ambiguity can cause bugs |
 | O(1) space | Not applicable for circular lists without cycle check |
 | Foundation for palindrome check, binary search on LL | Slightly harder to reason about than two-pass |
 
@@ -1269,14 +1269,14 @@ public Node<T> findMiddle() {
 |------|-----------|
 | **Empty list** | Returns null. |
 | **Single node** | Loop never enters; returns the only node. |
-| **Two nodes** | `slow â†’ node2` (second node) â€” for `findMiddleFirst`, returns node1. |
+| **Two nodes** | `slow → node2` (second node) → for `findMiddleFirst`, returns node1. |
 | **List with cycle** | **Infinite loop!** Fast never reaches null. Always check for cycles first. |
 
 ---
 
 ### 10. Merge Two Sorted Lists
 
-**Real-World Analogy** â€” Two sorted train lines merging into a single track. At each junction, the dispatcher picks the smaller front car from either line and moves it onto the merged track.
+**Real-World Analogy** → Two sorted train lines merging into a single track. At each junction, the dispatcher picks the smaller front car from either line and moves it onto the merged track.
 
 **Algorithm Steps (iterative with dummy node):**
 
@@ -1308,17 +1308,17 @@ function mergeSorted(l1, l2):
     return dummy.next
 ```
 
-**Dry Run (trace table) â€” Merge [10, 30, 50] and [20, 40, 60]:**
+**Dry Run (trace table) → Merge [10, 30, 50] and [20, 40, 60]:**
 
 | Step | l1 ptr | l2 ptr | tail ptr | tail.next | Merged List So Far |
 |------|--------|--------|----------|-----------|-------------------|
-| 0 | â†’10 | â†’20 | dummy | null | (empty) |
-| 1 | â†’30 | â†’20 | â†’10 | â†’10 | 10 |
-| 2 | â†’30 | â†’40 | â†’20 | â†’20 | 10â†’20 |
-| 3 | â†’50 | â†’40 | â†’30 | â†’30 | 10â†’20â†’30 |
-| 4 | â†’50 | â†’60 | â†’40 | â†’40 | 10â†’20â†’30â†’40 |
-| 5 | null | â†’60 | â†’50 | â†’50 | 10â†’20â†’30â†’40â†’50 |
-| 6 | null | â†’60 | â†’60 | â†’60 | 10â†’20â†’30â†’40â†’50â†’60 |
+| 0 | →10 | →20 | dummy | null | (empty) |
+| 1 | →30 | →20 | →10 | →10 | 10 |
+| 2 | →30 | →40 | →20 | →20 | 10→20 |
+| 3 | →50 | →40 | →30 | →30 | 10→20→30 |
+| 4 | →50 | →60 | →40 | →40 | 10→20→30→40 |
+| 5 | null | →60 | →50 | →50 | 10→20→30→40→50 |
+| 6 | null | →60 | →60 | →60 | 10→20→30→40→50→60 |
 
 **C++ Implementation:**
 
@@ -1400,16 +1400,16 @@ public static <T extends Comparable<T>> Node<T> mergeSorted(Node<T> l1, Node<T> 
 | Metric | Value | Why? |
 |--------|-------|------|
 | Time | O(n + m) | Through each node of both lists exactly once. |
-| Space (iterative) | O(1) | Only the dummy and tail pointers â€” no new nodes allocated, just pointer rewiring. |
+| Space (iterative) | O(1) | Only the dummy and tail pointers → no new nodes allocated, just pointer rewiring. |
 | Space (recursive) | O(n + m) | Call stack depth equals total merged nodes. |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| In-place â€” no new node allocations | Destructive: original lists are consumed/modified |
+| In-place → no new node allocations | Destructive: original lists are consumed/modified |
 | O(1) space (iterative) | Dummy node requires cleanup |
-| Linear time â€” optimal | Only works on pre-sorted lists |
+| Linear time → optimal | Only works on pre-sorted lists |
 
 **Edge Cases:**
 
@@ -1417,14 +1417,14 @@ public static <T extends Comparable<T>> Node<T> mergeSorted(Node<T> l1, Node<T> 
 |------|-----------|
 | **Both empty** | `l1 && l2` fails; `tail.next = null` (since both null); returns null. |
 | **One empty** | `while` loop skipped; `tail.next = non-empty list`; returns that list's head. |
-| **Duplicate values** | `<=` ensures stability â€” left list's duplicate comes first. |
+| **Duplicate values** | `<=` ensures stability → left list's duplicate comes first. |
 | **Single node each** | Single comparison, then one tail attach. |
 
 ---
 
 ### 11. Find Intersection of Two Lists
 
-**Real-World Analogy** â€” Two train lines that merge into a single track at some point (e.g., two branches of a metro system converging). Before the merge, the lines are completely separate; after the merge, they share the same cars.
+**Real-World Analogy** → Two train lines that merge into a single track at some point (e.g., two branches of a metro system converging). Before the merge, the lines are completely separate; after the merge, they share the same cars.
 
 **Algorithm Steps (two-pointer technique):**
 
@@ -1545,7 +1545,7 @@ public static <T> Node<T> getIntersectionNode(Node<T> l1, Node<T> l2) {
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| O(1) space | Two-pass â€” reads each list twice |
+| O(1) space | Two-pass → reads each list twice |
 | Works on read-only lists | Requires lists to be acyclic (cycles break length logic) |
 | Pointer comparison is O(1) | Only finds first intersection, not all shared nodes |
 
@@ -1554,7 +1554,7 @@ public static <T> Node<T> getIntersectionNode(Node<T> l1, Node<T> l2) {
 | Case | Behaviour |
 |------|-----------|
 | **No intersection** | Pointers reach null simultaneously (if equal length) or after diff; returns null. |
-| **One list empty** | Returns null â€” cannot intersect. |
+| **One list empty** | Returns null → cannot intersect. |
 | **Identical lists** | Intersection is the head of both. `ptr1 == ptr2` at first comparison. |
 | **Intersection at head of both** | Caught immediately. |
 
@@ -1580,7 +1580,7 @@ public static <T> Node<T> getIntersectionNode(Node<T> l1, Node<T> l2) {
 |----------|-------------|------|
 | Stack or simple queue | Singly | Lower memory, simpler code |
 | LRU cache | Doubly | O(1) delete from any position |
-| Round-robin scheduler | Circular | No null tail â€” wraps naturally |
+| Round-robin scheduler | Circular | No null tail → wraps naturally |
 | Hash-table chaining | Singly | Head insertion is O(1) |
 | Text editor undo/redo | Doubly | Need bidirectional navigation |
 | Browser back/forward | Doubly | Natural stack of visited pages |
@@ -1671,7 +1671,7 @@ Node<T>* reverseKGroup(Node<T>* head, int k) {
 
 ### 3. Palindrome Check
 
-**Problem:** Check if a singly linked list is a palindrome (e.g., `1â†’2â†’3â†’2â†’1`).
+**Problem:** Check if a singly linked list is a palindrome (e.g., `1→2→3→2→1`).
 
 **Key Insight:** Find the middle, reverse the second half, compare with the first half, then restore (optional).
 
@@ -1836,13 +1836,13 @@ public:
 ## Applications in Real Systems
 
 ### Browser History
-Modern browsers use a singly linked list to implement the back-button history. Each page visited is a node; clicking "Back" moves to the previous node (which requires a "previous" link â€” handled via the browser's doubly-linked navigation stack in practice, but the forward-only traversal pattern of singly linked lists maps to forward/back navigation when combined).
+Modern browsers use a singly linked list to implement the back-button history. Each page visited is a node; clicking "Back" moves to the previous node (which requires a "previous" link → handled via the browser's doubly-linked navigation stack in practice, but the forward-only traversal pattern of singly linked lists maps to forward/back navigation when combined).
 
 ### Undo / Redo in Editors
 Text editors (Vim, VS Code, Photoshop) use a linked list of edit states. Each edit creates a new node appended to the "current" state. Undo moves to the previous node; redo moves forward. Head insertion for new actions is O(1); the singly linked structure works naturally for linear undo (though doubly linked provides the full undo/redo stack).
 
 ### Memory Management (Free Lists)
-Operating system kernels (Linux slab allocator, buddy allocator) maintain **free lists** of available memory blocks as singly linked lists. Allocating a block = `popFront()` â€” O(1). Deallocating = `pushFront()` â€” O(1). The low memory overhead (one pointer per block) is critical in kernel space.
+Operating system kernels (Linux slab allocator, buddy allocator) maintain **free lists** of available memory blocks as singly linked lists. Allocating a block = `popFront()` → O(1). Deallocating = `pushFront()` → O(1). The low memory overhead (one pointer per block) is critical in kernel space.
 
 ### Hash Table Chaining
 In separate chaining (C++ `std::unordered_map`, Java `HashMap`), each bucket is a singly linked list of key-value pairs. Collisions are resolved by inserting new entries at the head of the bucket's list (O(1)). Searching a bucket is O(n/k) on average where k is the number of buckets. Singly linked is preferred over doubly because buckets rarely need tail deletion.
@@ -1857,15 +1857,15 @@ A music player's "Play Next" and "Add to Queue" operations map to head and tail 
 Some file systems use linked allocation where each file block points to the next block. Though largely replaced by extents and indexed allocation, linked allocation's simplicity is still used in educational OS designs and embedded file systems.
 
 ### Adjacency Lists for Graphs
-Graph representations use an array of singly linked lists â€” one list per vertex storing its neighbours. Adding an edge is O(1) head insertion; listing neighbours is O(degree). This is the standard representation for sparse graphs.
+Graph representations use an array of singly linked lists → one list per vertex storing its neighbours. Adding an edge is O(1) head insertion; listing neighbours is O(degree). This is the standard representation for sparse graphs.
 
 ---
 
 ## Pro Tips
 
-> **Remember:** Always draw the pointer changes before coding linked list operations â€” a quick diagram prevents the most common pointer-mangling bugs.
+> **Remember:** Always draw the pointer changes before coding linked list operations → a quick diagram prevents the most common pointer-mangling bugs.
 
-- **Iterative reversal is cleaner than recursive**: Three pointers (prev, curr, next) in a while loop â€” no call stack overhead, no risk of stack overflow for long lists.
+- **Iterative reversal is cleaner than recursive**: Three pointers (prev, curr, next) in a while loop → no call stack overhead, no risk of stack overflow for long lists.
 - **Always consider the empty list edge case**: Every linked list function must handle `head == nullptr`. A surprising number of bugs come from forgetting this.
 - **Floyd's cycle detection is your debugger**: If your linked code hangs, implement Tortoise and Hare. If it never terminates, there's a cycle. This catches 90% of linked-list bugs.
 - **Sentinel/dummy nodes simplify edge cases**: A dummy head node eliminates special-case code for empty lists and single-element lists in insertion and deletion functions.
@@ -1913,7 +1913,7 @@ Graph representations use an array of singly linked lists â€” one list per 
 | Find middle | Slow + fast (fast 2Ã—) | O(n), O(1) |
 | Remove nth from end | Two pointers, offset by n | O(n), O(1) |
 | Merge sorted lists | Dummy head + compare | O(n+m), O(1) |
-| Palindrome check | Find middle â†’ reverse second half â†’ compare | O(n), O(1) |
+| Palindrome check | Find middle → reverse second half → compare | O(n), O(1) |
 | Intersection point | Compute lengths, align, walk in tandem | O(n+m), O(1) |
 | Reverse in groups | Reverse k nodes, chain groups via prevGroupEnd | O(n), O(1) |
 
@@ -1924,7 +1924,7 @@ Graph representations use an array of singly linked lists â€” one list per 
 | Application | Why Linked List |
 |-------------|----------------|
 | Undo/redo editor | Insert/delete at cursor is O(1); linear traversal for undo steps |
-| Hash table chaining | Head insertion for collision buckets â€” O(1) add, O(n/k) search |
+| Hash table chaining | Head insertion for collision buckets → O(1) add, O(n/k) search |
 | Polynomial arithmetic | Terms of varying degree; frequent insertion without shifting |
 | Memory allocator free list | Fast allocate (popFront) / deallocate (pushFront) from head |
 | Music playlist | Add/remove songs at any position; skip is pointer traversal |
@@ -1992,7 +1992,7 @@ Graph representations use an array of singly linked lists â€” one list per 
 
 - Singly linked lists excel at head insertions and deletions (O(1)) but pay O(n) for indexed access.
 - Maintaining a tail pointer makes `pushBack` O(1); omitting it makes it O(n).
-- Iterative reversal rewires three pointers in a single pass â€” prefer it over recursive.
+- Iterative reversal rewires three pointers in a single pass → prefer it over recursive.
 - Floyd's cycle detection provides O(1)-space cycle detection using two pointers.
 - The dummy/sentinel node pattern dramatically reduces edge-case branches.
 - Singly lists are the foundation for hash-table chaining, free lists, graph adjacency lists, and polynomial arithmetic.
@@ -2020,12 +2020,12 @@ Graph representations use an array of singly linked lists â€” one list per 
 
 ### Challenge Problem
 
-11. Given a singly linked list, group all odd-indexed nodes together followed by even-indexed nodes in O(n) time and O(1) space. Example: `1â†’2â†’3â†’4â†’5` becomes `1â†’3â†’5â†’2â†’4`.
+11. Given a singly linked list, group all odd-indexed nodes together followed by even-indexed nodes in O(n) time and O(1) space. Example: `1→2→3→4→5` becomes `1→3→5→2→4`.
 
-12. **Reverse in Groups of K:** Given a linked list `1â†’2â†’3â†’4â†’5` and `k=3`, reverse groups of 3: `3â†’2â†’1â†’4â†’5`. Implement this in O(n) time and O(1) space.
+12. **Reverse in Groups of K:** Given a linked list `1→2→3→4→5` and `k=3`, reverse groups of 3: `3→2→1→4→5`. Implement this in O(n) time and O(1) space.
 
 13. **Flatten a Multilevel Linked List:** Given a linked list where nodes can have a `child` pointer that points to another linked list, flatten the entire structure into a single-level linked list.
 
-14. **Rotate List:** Given a linked list, rotate the list to the right by k places. For `1â†’2â†’3â†’4â†’5` and `k=2`, result is `4â†’5â†’1â†’2â†’3`. Implement in O(n) time and O(1) space.
+14. **Rotate List:** Given a linked list, rotate the list to the right by k places. For `1→2→3→4→5` and `k=2`, result is `4→5→1→2→3`. Implement in O(n) time and O(1) space.
 
 15. **LRU Cache:** Implement an LRU cache with O(1) get and put operations using a doubly linked list and a hash map. Discuss why a singly linked list would not work for this use case.

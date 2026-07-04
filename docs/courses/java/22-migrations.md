@@ -1461,7 +1461,7 @@ src/main/resources/db/
 
 <details>
 <summary>Answer</summary>
-**B) Create a new migration that repairs the state.** Never modify an existing migration â€” create a compensating migration that fixes the issue.
+**B) Create a new migration that repairs the state.** Never modify an existing migration → create a compensating migration that fixes the issue.
 </details>
 
 ---

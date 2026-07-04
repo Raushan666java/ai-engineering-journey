@@ -169,7 +169,7 @@ console.log('Equivalent state pairs:', [...equiv]);
 
 ### 1.1 What is a Finite Automaton?
 
-A finite automaton is a simplest computational model with **finite memory**. It reads an input string one symbol at a time, moves through a sequence of states, and decides whether to accept or reject the string. The memory is limited â€” the automaton cannot store arbitrary amounts of data; only its current state matters.
+A finite automaton is a simplest computational model with **finite memory**. It reads an input string one symbol at a time, moves through a sequence of states, and decides whether to accept or reject the string. The memory is limited → the automaton cannot store arbitrary amounts of data; only its current state matters.
 
 > **One-Sentence Takeaway:** The formal 5-tuple definition provides a precise mathematical framework for describing deterministic computation.
 
@@ -183,7 +183,7 @@ A **deterministic finite automaton (DFA)** is a 5-tuple (Q, Î£, Î´, qâ‚�
 
 - **Q** is a finite set of **states**.
 - **Î£** is a finite **input alphabet**.
-- **Î´: Q Ã— Î£ â†’ Q** is the **transition function**.
+- **Î´: Q Ã— Î£ → Q** is the **transition function**.
 - **qâ‚€ âˆˆ Q** is the **start state**.
 - **F âŠ† Q** is the set of **accepting (final) states**.
 
@@ -214,7 +214,7 @@ q2 --0--> q0, q2 --1--> q1
 Transition Table:
 | State | 0 | 1 |
 |-------|---|---|
-| â†’qâ‚€   | qâ‚€ | qâ‚ |
+| →qâ‚€   | qâ‚€ | qâ‚ |
 | qâ‚    | qâ‚‚ | qâ‚ |
 | *qâ‚‚   | qâ‚€ | qâ‚ |
 
@@ -222,7 +222,7 @@ Transition Table:
 
 ### 1.4 Language of a DFA
 
-The **extended transition function** Î´Ì‚: Q Ã— Î£* â†’ Q generalizes Î´ to strings:
+The **extended transition function** Î´Ì‚: Q Ã— Î£* → Q generalizes Î´ to strings:
 - Î´Ì‚(q, Îµ) = q
 - Î´Ì‚(q, wa) = Î´(Î´Ì‚(q, w), a) for string w and symbol a
 
@@ -341,14 +341,14 @@ Design a DFA over Î£ = {0, 1} that accepts strings that begin with 0.
 We need to remember whether we have seen the first symbol and whether it was 0.
 
 - qâ‚€: Start state, haven't read any symbol yet.
-- qâ‚: First symbol was 0 (good â€” maybe accept).
-- qâ‚‚: First symbol was 1 (bad â€” will never accept).
+- qâ‚: First symbol was 0 (good → maybe accept).
+- qâ‚‚: First symbol was 1 (bad → will never accept).
 - qâ‚ƒ: Dead state for strings that already failed.
 
 Transition Table:
 | State | 0 | 1 |
 |-------|---|---|
-| â†’qâ‚€   | qâ‚ | qâ‚‚ |
+| →qâ‚€   | qâ‚ | qâ‚‚ |
 | *qâ‚   | qâ‚ | qâ‚ |
 | qâ‚‚    | qâ‚ƒ | qâ‚ƒ |
 | qâ‚ƒ    | qâ‚ƒ | qâ‚ƒ |
@@ -371,7 +371,7 @@ We count the number of 1s seen, up to 3 where we stop caring (beyond 2 is alread
 Transitions:
 | State | 0 | 1 |
 |-------|---|---|
-| â†’qâ‚€   | qâ‚€ | qâ‚ |
+| →qâ‚€   | qâ‚€ | qâ‚ |
 | qâ‚    | qâ‚ | qâ‚‚ |
 | *qâ‚‚   | qâ‚‚ | qâ‚ƒ |
 | qâ‚ƒ    | qâ‚ƒ | qâ‚ƒ |
@@ -397,18 +397,18 @@ Design a DFA over Î£ = {0, 1} that accepts binary strings representing numbers
 
 When we read a binary string left to right, we can track the remainder modulo 3. If the current remainder is r and we read bit b, the new remainder is (2r + b) mod 3.
 
-- qâ‚€: remainder 0 (start, accept â€” empty string represents 0).
+- qâ‚€: remainder 0 (start, accept → empty string represents 0).
 - qâ‚: remainder 1.
 - qâ‚‚: remainder 2.
 
 Transitions (from remainder r with bit b to (2r + b) mod 3):
 | State | 0 | 1 |
 |-------|---|---|
-| *â†’qâ‚€  | qâ‚€ | qâ‚ |
+| *→qâ‚€  | qâ‚€ | qâ‚ |
 | qâ‚    | qâ‚‚ | qâ‚€ |
 | qâ‚‚    | qâ‚ | qâ‚‚ |
 
-Check: On input "110" (binary for 6): qâ‚€ â†’ qâ‚ (1) â†’ qâ‚€ (1) â†’ qâ‚€ (0). Accept. On input "100" (binary for 4): qâ‚€ â†’ qâ‚ (1) â†’ qâ‚‚ (0) â†’ qâ‚ (0). Reject.
+Check: On input "110" (binary for 6): qâ‚€ → qâ‚ (1) → qâ‚€ (1) → qâ‚€ (0). Accept. On input "100" (binary for 4): qâ‚€ → qâ‚ (1) → qâ‚‚ (0) → qâ‚ (0). Reject.
 
 
 ## Concept Comparison Table

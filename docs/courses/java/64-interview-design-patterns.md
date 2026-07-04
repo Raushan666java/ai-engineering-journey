@@ -1,4 +1,4 @@
-# 64. Design Patterns â€” Interview Q&A
+# 64. Design Patterns → Interview Q&A
 
 > **Previous:** [Tools &amp; DevOps Interview Q&amp;A](./63-interview-tools.md) | **Next:** [System Design Interview Q&amp;A](./65-interview-system-design.md)
 
@@ -33,11 +33,11 @@ flowchart LR
 
 **Answer:** The Gang of Four (GoF) book categorizes 23 design patterns into three groups:
 
-1. **Creational patterns** â€” deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. Examples: Singleton, Factory Method, Abstract Factory, Builder, Prototype.
+1. **Creational patterns** → deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. Examples: Singleton, Factory Method, Abstract Factory, Builder, Prototype.
 
-2. **Structural patterns** â€” deal with object composition, identifying simple ways to realize relationships between entities. Examples: Adapter, Decorator, Proxy, Facade, Composite, Bridge, Flyweight.
+2. **Structural patterns** → deal with object composition, identifying simple ways to realize relationships between entities. Examples: Adapter, Decorator, Proxy, Facade, Composite, Bridge, Flyweight.
 
-3. **Behavioral patterns** â€” deal with communication between objects, identifying patterns of communication. Examples: Strategy, Observer, Template Method, Command, Chain of Responsibility, State, Visitor, Mediator, Iterator, Memento, Interpreter.
+3. **Behavioral patterns** → deal with communication between objects, identifying patterns of communication. Examples: Strategy, Observer, Template Method, Command, Chain of Responsibility, State, Visitor, Mediator, Iterator, Memento, Interpreter.
 
 ---
 
@@ -130,7 +130,7 @@ public abstract class PaymentService {
         return processor.process(request);
     }
 
-    // Factory method â€” subclasses implement this
+    // Factory method → subclasses implement this
     protected abstract PaymentProcessor createProcessor(String method);
 }
 
@@ -235,7 +235,7 @@ public class Order {
         this.deliveryInstructions = builder.deliveryInstructions;
     }
 
-    // Getters (no setters â€” immutable)
+    // Getters (no setters → immutable)
 
     public static class Builder {
         private String orderId;
@@ -546,7 +546,7 @@ public class OrderFacade {
 }
 ```
 
-**In Spring Boot:** `JdbcTemplate`, `RestTemplate`, `KafkaTemplate`, `RedisTemplate` â€” all facades over complex underlying APIs.
+**In Spring Boot:** `JdbcTemplate`, `RestTemplate`, `KafkaTemplate`, `RedisTemplate` → all facades over complex underlying APIs.
 
 ---
 
@@ -671,7 +671,7 @@ public class InventoryUpdateListener implements EventListener {
 }
 ```
 
-**Alternative â€” Guava EventBus:**
+**Alternative → Guava EventBus:**
 
 ```java
 @Component
@@ -727,7 +727,7 @@ public class EmailService {
 
 ```java
 public abstract class DataExporter {
-    // Template method â€” defines the algorithm skeleton
+    // Template method → defines the algorithm skeleton
     public final File export(DataRequest request) {
         validate(request);
         List<Data> data = fetchData(request);
@@ -745,11 +745,11 @@ public abstract class DataExporter {
     protected abstract String format(List<Data> data);
 
     protected File writeToFile(String content) {
-        // Common implementation â€” write to temp file
+        // Common implementation → write to temp file
     }
 
     protected void postProcess(File file) {
-        // Hook method â€” subclasses can override, default does nothing
+        // Hook method → subclasses can override, default does nothing
     }
 }
 
@@ -1036,7 +1036,7 @@ menu.render();  // Renders entire menu tree
 **Answer:** Flyweight minimizes memory usage by sharing as much data as possible with similar objects. It's useful when a large number of nearly identical objects are needed.
 
 ```java
-// Flyweight â€” intrinsic state (shared)
+// Flyweight → intrinsic state (shared)
 public class FontStyle {
     private final String fontFamily;
     private final int fontSize;
@@ -1064,7 +1064,7 @@ public class FontStyleFactory {
     }
 }
 
-// Client â€” extrinsic state (unique per character)
+// Client → extrinsic state (unique per character)
 public class Character {
     private final char ch;
     private final int position;
@@ -1119,7 +1119,7 @@ public class OrderService {
 
 When the class doesn't implement an interface, Spring uses CGLIB to create a subclass proxy.
 
-**Important caveat â€” self-invocation doesn't work:**
+**Important caveat → self-invocation doesn't work:**
 
 ```java
 @Service
@@ -1127,7 +1127,7 @@ public class OrderService {
     @Transactional
     public void createOrder(OrderRequest req) {
         saveOrder(req);
-        // Direct call â€” no transactional behavior!
+        // Direct call → no transactional behavior!
         updateInventory(req.items());
     }
 
@@ -1476,7 +1476,7 @@ public class OrderService {
 
     @EventListener
     public void handle(OrderFailedEvent event) {
-        // Compensate â€” cancel order
+        // Compensate → cancel order
     }
 }
 
@@ -1631,7 +1631,7 @@ public class OrderService {
 try {
     paymentService.charge(order);
 } catch (Exception e) {
-    // Swallowing the exception â€” completely silent failure
+    // Swallowing the exception → completely silent failure
 }
 
 // âœ… Better
@@ -1835,7 +1835,7 @@ public class JdbcOrderDao implements OrderDao {
 **Answer:** DTO is an object that carries data between processes (usually between the API layer and the client). It prevents exposing internal entities and allows control over what data is sent over the wire.
 
 ```java
-// Entity (internal â€” never expose directly)
+// Entity (internal → never expose directly)
 @Entity
 public class User {
     @Id private Long id;
@@ -1941,7 +1941,7 @@ public class ExpensiveResource {
 
 | Pattern | Where Spring Uses It |
 |---------|---------------------|
-| **Singleton** | Default bean scope â€” one instance per container |
+| **Singleton** | Default bean scope → one instance per container |
 | **Factory Method** | `@Bean` methods in `@Configuration` classes, `BeanFactory` |
 | **Abstract Factory** | `FactoryBean` implementations, `PlatformTransactionManager` |
 | **Builder** | `UriComponentsBuilder`, `RestClient.builder()`, `SecurityFilterChain` DSL |
@@ -1970,7 +1970,7 @@ public class ExpensiveResource {
 | **Who changes** | Client selects which strategy to use | State transitions are internal |
 | **When to use** | Multiple ways to do the same thing | Object behavior changes with internal state |
 | **State management** | No state transitions | State transitions are core to the pattern |
-| **Example** | Pricing strategies, encryption algorithms | Order status workflow (pending â†’ confirmed â†’ shipped) |
+| **Example** | Pricing strategies, encryption algorithms | Order status workflow (pending → confirmed → shipped) |
 
 ---
 
@@ -1982,7 +1982,7 @@ public class ExpensiveResource {
 |--------|---------------|------------------|
 | **Scope** | Creates one product | Creates families of related products |
 | **Method** | Single method in a class | Multiple factory methods in a class |
-| **Inheritance** | Subclasses decide which class to instantiate | Composition â€” factory is injected |
+| **Inheritance** | Subclasses decide which class to instantiate | Composition → factory is injected |
 | **Product variety** | One product type | Multiple related product types |
 | **Example** | `createPaymentProcessor()` | `createButton()` + `createTextField()` + `createCheckbox()` |
 
@@ -2006,8 +2006,8 @@ public class ExpensiveResource {
 
 **Answer:** Use **Template Method** when you have a fixed algorithm skeleton but want subclasses to override specific steps. Use **Strategy** when you want to completely swap out an algorithm.
 
-**Template Method:** "Here's the recipe â€” you just choose the toppings."
-**Strategy:** "Just give me the cooking algorithm â€” I don't care how you do it."
+**Template Method:** "Here's the recipe → you just choose the toppings."
+**Strategy:** "Just give me the cooking algorithm → I don't care how you do it."
 
 Template Method uses inheritance (base class defines algorithm, subclasses implement steps). Strategy uses composition (context delegates to strategy object).
 
@@ -2039,7 +2039,7 @@ In Spring: `JdbcTemplate` uses Template Method. `PasswordEncoder` uses Strategy.
 |--------|---------|----------|
 | **Purpose** | Encapsulate a request as an object | Encapsulate an algorithm |
 | **State** | Has state (parameters of the request) | Typically stateless |
-| **Undo support** | Yes â€” `undo()` method | Not applicable |
+| **Undo support** | Yes → `undo()` method | Not applicable |
 | **Queuing** | Can be queued and logged | No queuing |
 | **When to use** | Operations with undo, transaction logging | Interchangeable algorithms |
 
@@ -2196,19 +2196,19 @@ public class PercentageDiscount implements DiscountPolicy {
     }
 }
 
-// Null Object â€” implements the interface with no-op behavior
+// Null Object → implements the interface with no-op behavior
 public class NoDiscount implements DiscountPolicy {
     public BigDecimal applyDiscount(BigDecimal amount) {
         return amount;  // No discount applied
     }
 }
 
-// Usage â€” no null check needed
+// Usage → no null check needed
 @Service
 public class OrderService {
     public BigDecimal calculateTotal(Order order) {
         DiscountPolicy discount = findDiscountPolicy(order);
-        // No null check â€” NoDiscount handles the "no discount" case
+        // No null check → NoDiscount handles the "no discount" case
         return discount.applyDiscount(order.getTotal());
     }
 
@@ -2243,7 +2243,7 @@ public final class OrderRequest {
         this.shippingAddress = builder.shippingAddress;
     }
 
-    // Getters only â€” no setters
+    // Getters only → no setters
 }
 ```
 
@@ -2293,7 +2293,7 @@ public class OrderService {
 **IoC:** "Don't call us, we'll call you." (The framework calls your code.)
 **DI:** "I'll give you what you need." (Dependencies are injected.)
 
-Spring Framework implements IoC through the Container (controls bean lifecycle, calls methods). DI is the mechanism â€” dependencies are injected via constructor, setter, or field injection.
+Spring Framework implements IoC through the Container (controls bean lifecycle, calls methods). DI is the mechanism → dependencies are injected via constructor, setter, or field injection.
 
 ```java
 // Without DI: object creates its own dependencies
@@ -2310,7 +2310,7 @@ public class OrderService {
     private final EmailService emailService;
 
     public OrderService(PaymentGateway paymentGateway, EmailService emailService) {
-        this.paymentGateway = paymentGateway;  // Injected â€” easy to mock, swap
+        this.paymentGateway = paymentGateway;  // Injected → easy to mock, swap
         this.emailService = emailService;
     }
 }
@@ -2361,7 +2361,7 @@ Benefits: reduced coupling, easier refactoring, more maintainable code. Costs: m
 | Aspect | Inheritance | Composition |
 |--------|-------------|-------------|
 | **Relationship** | "is-a" (Car extends Vehicle) | "has-a" (Car has Engine) |
-| **Coupling** | Tight â€” child depends on parent implementation | Loose â€” components are interchangeable |
+| **Coupling** | Tight → child depends on parent implementation | Loose → components are interchangeable |
 | **Reuse** | Code is reused via subclassing | Code is reused by delegating to components |
 | **Flexibility** | Change impacts subclasses | Components can be swapped at runtime |
 | **Override** | Can override parent behavior | Can wrap/extend behavior via delegation |
@@ -2392,14 +2392,14 @@ public class OrderService {
 **Answer:** A marker interface is an interface with no methods or fields. It serves as metadata for the JVM or compiler to signal that a class has a certain property.
 
 Built-in examples:
-- `Serializable` â€” class can be serialized
-- `Cloneable` â€” class can be cloned via `Object.clone()`
-- `RandomAccess` â€” List supports fast random access
+- `Serializable` → class can be serialized
+- `Cloneable` → class can be cloned via `Object.clone()`
+- `RandomAccess` → List supports fast random access
 
 ```java
 // Custom marker interface
 public interface Auditable {
-    // No methods â€” marks entities for audit logging
+    // No methods → marks entities for audit logging
 }
 
 // Usage
@@ -2445,7 +2445,7 @@ public class InsufficientFundsException extends Exception {
     }
 }
 
-// Caller can recover â€” offer to use alternative payment method
+// Caller can recover → offer to use alternative payment method
 public void processPayment(Order order) throws InsufficientFundsException {
     // ...
 }
@@ -2521,10 +2521,10 @@ public @interface TrackExecutionTime {}
 ```
 
 **Common AOP use cases in Spring:**
-- `@Transactional` â€” transaction management
-- `@Cacheable` â€” caching
-- `@Async` â€” asynchronous execution
-- `@Secured` / `@PreAuthorize` â€” security checks
+- `@Transactional` → transaction management
+- `@Cacheable` → caching
+- `@Async` → asynchronous execution
+- `@Secured` / `@PreAuthorize` → security checks
 - Custom: logging, audit, performance monitoring, rate limiting
 
 ---
@@ -2541,10 +2541,10 @@ public @interface TrackExecutionTime {}
 | **Example** | Apache Commons Lang, Guava | Spring Boot, Jakarta EE |
 | **Inversion** | No IoC | Inversion of Control |
 
-**Library:** "Here are useful utilities â€” call them when needed."
-**Framework:** "Here's the structure â€” fill in the blanks."
+**Library:** "Here are useful utilities → call them when needed."
+**Framework:** "Here's the structure → fill in the blanks."
 
-Spring Boot is a framework: it calls your `@Controller` methods, your `@Service` beans, your `@EventListener` handlers. You don't control the main loop â€” the framework does.
+Spring Boot is a framework: it calls your `@Controller` methods, your `@Service` beans, your `@EventListener` handlers. You don't control the main loop → the framework does.
 
 ---
 
@@ -2582,7 +2582,7 @@ public class OrderService {
     // Single responsibility: order processing
     @Transactional
     public Order placeOrder(OrderRequest request) {
-        // Business logic only â€” not data access, not email
+        // Business logic only → not data access, not email
     }
 }
 ```
@@ -2594,7 +2594,7 @@ public class OrderService {
 **Answer:** DRY states that every piece of knowledge must have a single, unambiguous representation within a system. Avoid duplication in code through abstraction, but don't force premature abstraction.
 
 ```java
-// âŒ Violates DRY â€” repeated validation logic
+// âŒ Violates DRY → repeated validation logic
 @PostMapping("/orders")
 public ResponseEntity<Order> createOrder(@RequestBody @Valid OrderRequest request) {
     if (request.getUserId() == null) {
@@ -2611,7 +2611,7 @@ public ResponseEntity<Draft> saveDraft(@RequestBody @Valid OrderRequest request)
     // ...
 }
 
-// âœ… DRY â€” extract validation
+// âœ… DRY → extract validation
 public class OrderValidator {
     public void validate(OrderRequest request) {
         if (request.getUserId() == null) {
@@ -2631,7 +2631,7 @@ public class OrderValidator {
 **Answer:** YAGNI states that you should not add functionality until it's actually needed. Premature abstraction and over-engineering are wastes of time.
 
 ```java
-// âŒ YAGNI violation â€” building for hypothetical future needs
+// âŒ YAGNI violation → building for hypothetical future needs
 public interface OrderRepository extends
     JpaRepository<Order, Long>,
     JpaSpecificationExecutor<Order>,
@@ -2652,10 +2652,10 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
 **Answer:** A God Class is a class that has too many responsibilities. Refactoring steps:
 
-1. **Identify responsibilities** â€” list everything the class does
-2. **Extract classes** â€” create focused classes for each responsibility
-3. **Use Facade** â€” optionally keep the original class as a facade delegating to smaller classes
-4. **Remove dependencies** â€” each new class should have minimal dependencies
+1. **Identify responsibilities** → list everything the class does
+2. **Extract classes** → create focused classes for each responsibility
+3. **Use Facade** → optionally keep the original class as a facade delegating to smaller classes
+4. **Remove dependencies** → each new class should have minimal dependencies
 
 ```java
 // âŒ Before: God Class
@@ -2714,7 +2714,7 @@ class OrderServiceTest {
 
 **2. Repository Pattern**
 
-Data access is abstracted behind interfaces â€” easily mockable in tests.
+Data access is abstracted behind interfaces → easily mockable in tests.
 
 **3. Strategy Pattern**
 
@@ -2742,7 +2742,7 @@ Isolates your domain from external dependencies (third-party APIs, legacy system
 
 **Answer:**
 
-**1. Event Sourcing** â€” Store state changes as a sequence of events. The current state is derived by replaying events.
+**1. Event Sourcing** → Store state changes as a sequence of events. The current state is derived by replaying events.
 
 ```java
 public class OrderEventSourcing {
@@ -2767,7 +2767,7 @@ public class OrderEventSourcing {
 }
 ```
 
-**2. CQRS (Command Query Responsibility Segregation)** â€” Separate read models from write models. Commands change state, queries read state.
+**2. CQRS (Command Query Responsibility Segregation)** → Separate read models from write models. Commands change state, queries read state.
 
 ```java
 // Command side (write)
@@ -2779,7 +2779,7 @@ public class CreateOrderCommand implements OrderCommand {
     // Full validation, business logic
 }
 
-// Query side (read â€” separate optimized data model)
+// Query side (read → separate optimized data model)
 @RestController
 public class OrderQueryController {
     @GetMapping("/orders/{id}")
@@ -2802,7 +2802,7 @@ public class OrderConsumer {
 }
 ```
 
-**4. SAGA Pattern** â€” Distributed transaction management via events (covered in Q25).
+**4. SAGA Pattern** → Distributed transaction management via events (covered in Q25).
 
 ---
 
@@ -2810,7 +2810,7 @@ public class OrderConsumer {
 
 **Answer:**
 
-**1. Strangler Fig Pattern** â€” Gradually replace a monolithic system by creating new microservices alongside it, routing traffic to the new services incrementally.
+**1. Strangler Fig Pattern** → Gradually replace a monolithic system by creating new microservices alongside it, routing traffic to the new services incrementally.
 
 ```java
 @Configuration
@@ -2828,23 +2828,23 @@ public class RoutingConfig {
 }
 ```
 
-**2. API Gateway Pattern** â€” Single entry point for all services, handling routing, aggregation, authentication, rate limiting.
+**2. API Gateway Pattern** → Single entry point for all services, handling routing, aggregation, authentication, rate limiting.
 
-**3. Backend for Frontend (BFF)** â€” Dedicated backend per client type (mobile, web, third-party).
+**3. Backend for Frontend (BFF)** → Dedicated backend per client type (mobile, web, third-party).
 
-**4. Database per Service** â€” Each service owns its data. No shared databases.
+**4. Database per Service** → Each service owns its data. No shared databases.
 
-**5. Saga Pattern** â€” Distributed transactions via events (Q25).
+**5. Saga Pattern** → Distributed transactions via events (Q25).
 
-**6. CQRS** â€” Separate read and write models (Q57).
+**6. CQRS** → Separate read and write models (Q57).
 
-**7. Event Sourcing** â€” State as event stream (Q57).
+**7. Event Sourcing** → State as event stream (Q57).
 
-**8. Sidecar Pattern** â€” Deploy helper components (logging agent, proxy) alongside the main service.
+**8. Sidecar Pattern** → Deploy helper components (logging agent, proxy) alongside the main service.
 
-**9. Circuit Breaker** â€” Prevents cascading failures (Q42 in chapter 63).
+**9. Circuit Breaker** → Prevents cascading failures (Q42 in chapter 63).
 
-**10. Bulkhead** â€” Isolates resources per service (Q44).
+**10. Bulkhead** → Isolates resources per service (Q44).
 
 ---
 
@@ -2895,7 +2895,7 @@ module inventory {
 **Answer:** Hexagonal architecture (Alistair Cockburn) isolates the core business logic from external concerns (database, web, messaging). The core communicates through **ports** (interfaces) and **adapters** (implementations).
 
 ```java
-// Core domain â€” no external dependencies
+// Core domain → no external dependencies
 public class Order {
     private String id;
     private List<OrderItem> items;
@@ -2920,7 +2920,7 @@ public interface PaymentGateway {
     PaymentResult charge(String token, Money amount);
 }
 
-// Adapter (in infrastructure package) â€” implements port
+// Adapter (in infrastructure package) → implements port
 @Repository
 public class JpaOrderRepository implements OrderRepository {
     // JPA-specific implementation
@@ -2944,7 +2944,7 @@ public class OrderService {
     }
 
     public Order createOrder(CreateOrderRequest request) {
-        // Pure business logic â€” no infrastructure concern
+        // Pure business logic → no infrastructure concern
     }
 }
 ```
@@ -2972,7 +2972,7 @@ public class OrderService {
 **Anemic domain model (anti-pattern):**
 
 ```java
-// Just data â€” no behavior
+// Just data → no behavior
 @Entity
 public class Order {
     private Long id;
@@ -3046,10 +3046,10 @@ public class OrderApplicationService {
 
 ### Q62: What is the difference between an Aggregate and an Aggregate Root in DDD?
 
-**Answer:** An **Aggregate** is a cluster of domain objects that can be treated as a single unit. An **Aggregate Root** is the root entity within an aggregate â€” the only object accessible from outside.
+**Answer:** An **Aggregate** is a cluster of domain objects that can be treated as a single unit. An **Aggregate Root** is the root entity within an aggregate → the only object accessible from outside.
 
 ```java
-// Aggregate Root â€” Order is the only entry point to this aggregate
+// Aggregate Root → Order is the only entry point to this aggregate
 @Entity
 public class Order {
     @Id private Long id;
@@ -3071,14 +3071,14 @@ public class Order {
     }
 }
 
-// Part of the aggregate â€” not accessible from outside
+// Part of the aggregate → not accessible from outside
 @Embeddable
 public class OrderItem {
     private String productId;
     private int quantity;
     private Money price;
 
-    // package-private constructor â€” only the aggregate root creates these
+    // package-private constructor → only the aggregate root creates these
     OrderItem(Order order, Product product, int quantity) {
         this.productId = product.getId();
         this.quantity = quantity;
@@ -3088,7 +3088,7 @@ public class OrderItem {
 
 // Repository only for the aggregate root, not for OrderItem
 public interface OrderRepository extends JpaRepository<Order, Long> {
-    // No OrderItemRepository â€” items are accessed through Order
+    // No OrderItemRepository → items are accessed through Order
 }
 ```
 
@@ -3137,11 +3137,11 @@ public class PaymentAcl {
     }
 
     private ExternalPaymentRequest toExternalRequest(Money amount, PaymentMethod method) {
-        // Domain â†’ external translation
+        // Domain → external translation
     }
 
     private PaymentResult toDomainResult(ExternalPaymentResponse response) {
-        // External â†’ domain translation
+        // External → domain translation
         return new PaymentResult(
             response.getTransactionId(),
             switch (response.getCode()) {
@@ -3227,7 +3227,7 @@ public class OrderService {
 **Answer:** A value object is an immutable object defined by its attributes, not its identity. Two value objects with the same attributes are considered equal.
 
 ```java
-// Value object â€” immutable, no identity
+// Value object → immutable, no identity
 @Embeddable
 public record Money(BigDecimal amount, Currency currency) {
 
@@ -3314,13 +3314,13 @@ public class DispatcherServlet extends HttpServlet {
 }
 ```
 
-**3. Transfer Object Assembler** â€” Combines data from multiple sources into a single DTO.
+**3. Transfer Object Assembler** → Combines data from multiple sources into a single DTO.
 
-**4. Business Delegate** â€” Reduces coupling between presentation and business tiers.
+**4. Business Delegate** → Reduces coupling between presentation and business tiers.
 
-**5. Session Facade** â€” Wraps business-tier components in a coarse-grained facade.
+**5. Session Facade** → Wraps business-tier components in a coarse-grained facade.
 
-**6. Context Object Pattern** â€” `RequestContextHolder`, `SecurityContextHolder`.
+**6. Context Object Pattern** → `RequestContextHolder`, `SecurityContextHolder`.
 
 ```java
 @Component
@@ -3351,7 +3351,7 @@ public class RequestContextFilter implements Filter {
 
 **Application patterns** are design choices you make in your code (Repository, Service Layer, DTO, Strategy for business rules).
 
-Framework patterns are usually invisible â€” you benefit from them without implementing them. Application patterns are structural decisions that shape your codebase.
+Framework patterns are usually invisible → you benefit from them without implementing them. Application patterns are structural decisions that shape your codebase.
 
 ---
 
@@ -3382,9 +3382,9 @@ An **anti-pattern** is a commonly used but ineffective solution that creates mor
 
 **Answer:**
 
-**1. Flyweight Pattern** â€” Share common objects to reduce memory.
+**1. Flyweight Pattern** → Share common objects to reduce memory.
 
-**2. Proxy Pattern (Lazy Loading)** â€” Delay expensive object creation.
+**2. Proxy Pattern (Lazy Loading)** → Delay expensive object creation.
 
 ```java
 @Component
@@ -3394,7 +3394,7 @@ public class ExpensiveService {
 }
 ```
 
-**3. Object Pool Pattern** â€” Reuse expensive objects (database connections, threads).
+**3. Object Pool Pattern** → Reuse expensive objects (database connections, threads).
 
 **4. Cache-Aside Pattern**
 
@@ -3406,7 +3406,7 @@ public Order getOrder(Long id) {
 }
 ```
 
-**5. Read-Write Lock Pattern** â€” Allow concurrent reads with exclusive writes.
+**5. Read-Write Lock Pattern** → Allow concurrent reads with exclusive writes.
 
 **6. Batch Processing Pattern**
 
@@ -3428,7 +3428,7 @@ public void processOrders(List<Order> orders) {
 Page<Order> page = repository.findAll(PageRequest.of(0, 20, Sort.by("createdAt").descending()));
 ```
 
-**8. Write-Behind / Write-Through Cache** â€” Defer or batch database writes.
+**8. Write-Behind / Write-Through Cache** → Defer or batch database writes.
 
 ---
 

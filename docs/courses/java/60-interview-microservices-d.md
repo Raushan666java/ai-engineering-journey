@@ -40,13 +40,13 @@ public class OrderService {
 }
 
 // â”€â”€ With Istio: circuit breaker moves to infrastructure â”€â”€
-// application code is clean â€” no Resilience4j annotations needed
+// application code is clean → no Resilience4j annotations needed
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
 
     public UserDto getUser(Long id) {
-        return userClient.getUser(id);  // No circuit breaker â€” Istio handles it
+        return userClient.getUser(id);  // No circuit breaker → Istio handles it
     }
 }
 ```
@@ -132,12 +132,12 @@ spec:
 ```
 
 Service mesh provides:
-- Traffic management (canary, circuit breaker, retries, timeouts â€” no code changes)
+- Traffic management (canary, circuit breaker, retries, timeouts → no code changes)
 - Security (mTLS, authorization, authentication at the proxy level)
 - Observability (automatic metrics, traces, access logs per request)
 - Resilience (timeouts, retries, circuit breaking, outlier detection)
 
-Use a service mesh when you have 10+ services and can't add cross-cutting code to each one. Do not use a service mesh for small deployments (3-5 services) â€” the complexity of managing sidecars and control plane is not worth it.
+Use a service mesh when you have 10+ services and can't add cross-cutting code to each one. Do not use a service mesh for small deployments (3-5 services) → the complexity of managing sidecars and control plane is not worth it.
 
 ---
 
@@ -237,8 +237,8 @@ public class MdcFilter implements WebFilter {
 
 Best practices:
 - Every log entry includes `traceId`, `service`, `level`, and `timestamp`
-- Structured JSON means no regex parsing â€” just query fields
-- Never log sensitive data (PII, passwords, tokens) â€” even in structured logs
+- Structured JSON means no regex parsing → just query fields
+- Never log sensitive data (PII, passwords, tokens) → even in structured logs
 - Correlation ID (traceId) connects logs across services during a single request flow
 - Use Loki + Grafana for Kubernetes-native log aggregation (no Elasticsearch cluster needed)
 
@@ -436,12 +436,12 @@ public class IdempotentConsumer {
 // ON CONFLICT (idempotency_key) DO NOTHING
 // RETURNING idempotency_key;
 //
-// If the INSERT returns the key, this is the first call â€” process normally.
-// If it returns nothing, another request already started processing â€” return cached result.
+// If the INSERT returns the key, this is the first call → process normally.
+// If it returns nothing, another request already started processing → return cached result.
 
 ```
 
-Idempotency is not optional in microservices â€” network retries guarantee duplicate requests. Every write endpoint should accept an idempotency key. Every async consumer should deduplicate by event ID.
+Idempotency is not optional in microservices → network retries guarantee duplicate requests. Every write endpoint should accept an idempotency key. Every async consumer should deduplicate by event ID.
 
 ---
 
@@ -469,7 +469,7 @@ public class ProductService {
             return cached;
         }
 
-        // Cache miss â€” load from database
+        // Cache miss → load from database
         Product product = productRepo.findById(id)
             .orElseThrow(() -> new ProductNotFoundException(id));
         ProductDto dto = ProductDto.from(product);
@@ -587,7 +587,7 @@ public class ProductService {
             }
         }
 
-        // Lock not acquired â€” wait briefly and retry
+        // Lock not acquired → wait briefly and retry
         Thread.sleep(100);
         return redis.opsForValue().get(key);  // Should be populated by now
     }

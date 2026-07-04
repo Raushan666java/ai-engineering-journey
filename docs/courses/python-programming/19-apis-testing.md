@@ -107,7 +107,7 @@ with requests.Session() as session:
         print(response.json()["description"])
 ```
 
-### 19.1.3 httpx â€” Async HTTP
+### 19.1.3 httpx → Async HTTP
 
 ```python
 import httpx
@@ -248,7 +248,7 @@ except Exception as e:
     # 3 validation errors: name (blank), email (invalid), age (too large)
 ```
 
-Pydantic integrates seamlessly with FastAPI â€” route parameters are automatically validated and documented in OpenAPI/Swagger.
+Pydantic integrates seamlessly with FastAPI → route parameters are automatically validated and documented in OpenAPI/Swagger.
 
 ## 19.4 Testing with unittest
 
@@ -319,7 +319,7 @@ def test_add():
 
 ### 19.5.1 Assertions
 
-pytest uses plain `assert` â€” no need for `self.assertEqual`:
+pytest uses plain `assert` → no need for `self.assertEqual`:
 
 ```python
 def test_strings():

@@ -44,7 +44,7 @@ flowchart LR
 
 ### Q1: What are the key entities in a real estate platform data model, and how do they relate?
 
-A typical real estate platform revolves around a core `Property` entity â€” the physical asset (land, house, condo, commercial unit). A `Property` has one or more `Listing` records over time (each representing a period when it's on the market). `Agent` (or `Broker`) represents the licensed professional. `Client` generalizes buyers, sellers, and renters. `Showing` links an agent or client to a property tour. `Offer` represents a purchase or lease proposal tied to a listing.
+A typical real estate platform revolves around a core `Property` entity → the physical asset (land, house, condo, commercial unit). A `Property` has one or more `Listing` records over time (each representing a period when it's on the market). `Agent` (or `Broker`) represents the licensed professional. `Client` generalizes buyers, sellers, and renters. `Showing` links an agent or client to a property tour. `Offer` represents a purchase or lease proposal tied to a listing.
 
 The relationships form a hub-and-spoke:
 
@@ -91,7 +91,7 @@ Impact on system design:
 - **Field mapping**: A normalization layer must map MLS-specific fields to your canonical `properties` and `listings` tables. An MLS might call `ListPrice` while yours stores `price`.
 - **Update frequency**: Most MLSs provide incremental updates (add/changed/deleted). You need a `MlsSyncLog` table to track the last sync timestamp and process deltas in batches.
 - **Data ownership**: MLS data is typically licensed. You may not be allowed to cache indefinitely, or you must attribute the source. Some MLSs require a "data feed agreement" and audit logging.
-- **Deduplication**: A property may be listed on multiple MLSs. You need a dedup strategy â€” often using `parcel_id` + `address` fingerprinting.
+- **Deduplication**: A property may be listed on multiple MLSs. You need a dedup strategy → often using `parcel_id` + `address` fingerprinting.
 
 ```php
 // Example MLS sync job
@@ -125,14 +125,14 @@ class SyncMlsFeedJob implements ShouldQueue
 
 Property statuses follow a well-defined lifecycle. Common statuses include:
 
-- **Coming Soon** â€” Pre-market, not yet publicly available
-- **Active** â€” On the market, accepting showings
-- **Under Contract** â€” An offer has been accepted, but the deal hasn't closed
-- **Pending** â€” Contingencies (inspection, financing) are being satisfied
-- **Closed** â€” Sale completed
-- **Expired** â€” Listing agreement ended without a sale
-- **Withdrawn** â€” Removed from market before expiration
-- **Off Market** â€” Not currently listed
+- **Coming Soon** → Pre-market, not yet publicly available
+- **Active** → On the market, accepting showings
+- **Under Contract** → An offer has been accepted, but the deal hasn't closed
+- **Pending** → Contingencies (inspection, financing) are being satisfied
+- **Closed** → Sale completed
+- **Expired** → Listing agreement ended without a sale
+- **Withdrawn** → Removed from market before expiration
+- **Off Market** → Not currently listed
 
 In Laravel, model this with a state machine pattern. Laravel offers several approaches:
 
@@ -198,7 +198,7 @@ These three concepts are central to real estate closings and must be modeled in 
 
 - **Escrow**: A neutral third-party arrangement where funds and documents are held until all conditions of the sale are met. In SaaS platforms, escrow tracking monitors deposit amounts, contingencies (inspection, financing, appraisal), and milestone dates. An `Escrow` model might track deposit amount, holder info, contingency deadlines, and release conditions.
 
-- **Title**: Legal proof of ownership. Title companies search public records for liens, encumbrances, or ownership disputes before closing. A platform should record the title company, policy number, and issue date. Title defects are a common reason deals fall through â€” systems may track `TitleIssue` records with resolution status.
+- **Title**: Legal proof of ownership. Title companies search public records for liens, encumbrances, or ownership disputes before closing. A platform should record the title company, policy number, and issue date. Title defects are a common reason deals fall through → systems may track `TitleIssue` records with resolution status.
 
 ```php
 class Transaction extends Model
@@ -230,10 +230,10 @@ class Transaction extends Model
 
 A CMA estimates a property's value by comparing it to recently sold, similar properties in the same area. Automation requires:
 
-1. **Identify comparables** â€” Query recently sold properties (last 6 months) within a radius (0.5â€“1 mile) with similar attributes (Â±20% square footage, Â±1 bedroom/bathroom, same property type).
-2. **Adjust for differences** â€” Apply $/sqft adjustments, feature premiums (pool, garage, renovated kitchen), and location factors.
-3. **Weight comparables** â€” More recent and geographically closer sales get higher weight.
-4. **Generate price range** â€” Output low/average/high estimates with confidence.
+1. **Identify comparables** → Query recently sold properties (last 6 months) within a radius (0.5â€“1 mile) with similar attributes (Â±20% square footage, Â±1 bedroom/bathroom, same property type).
+2. **Adjust for differences** → Apply $/sqft adjustments, feature premiums (pool, garage, renovated kitchen), and location factors.
+3. **Weight comparables** → More recent and geographically closer sales get higher weight.
+4. **Generate price range** → Output low/average/high estimates with confidence.
 
 ```php
 class ValuationService
@@ -449,7 +449,7 @@ The key design decision is keeping the AI as an *adjustment layer* on top of a d
 
 ### Q8: How would you build a TourSchedulingAgent that automates property showing coordination?
 
-A tour scheduling agent must handle the full lifecycle: availability lookup â†’ slot proposal â†’ confirmation â†’ reminder â†’ feedback:
+A tour scheduling agent must handle the full lifecycle: availability lookup → slot proposal → confirmation → reminder → feedback:
 
 ```php
 class TourSchedulingAgent
@@ -466,7 +466,7 @@ class TourSchedulingAgent
         $slots = $this->getAvailableSlots($agent, $preferredDate);
 
         if (empty($slots)) {
-            // Agent is fully booked â€” suggest next 3 available dates
+            // Agent is fully booked → suggest next 3 available dates
             $alternatives = $this->findNextAvailableDates($agent, $preferredDate, 3);
 
             return SchedulingResult::unavailable($alternatives);
@@ -483,7 +483,7 @@ class TourSchedulingAgent
             }
         }
 
-        // 3. No match â€” offer best slots
+        // 3. No match → offer best slots
         return SchedulingResult::options(
             slots: $slots,
             message: 'Please select a time from the available slots below.',
@@ -848,15 +848,15 @@ class MarketAnalysisAgent
 
         $months = $inventory['months_of_inventory'];
         if ($months < 4) {
-            $insights[] = "Low inventory ({$months} months) favors sellers â€” expect multiple offers.";
+            $insights[] = "Low inventory ({$months} months) favors sellers → expect multiple offers.";
         } elseif ($months > 6) {
             $insights[] = "Buyers have leverage with {$months} months of inventory available.";
         }
 
         if ($trends['price_trend_percentage'] > 5) {
-            $insights[] = "Prices rising {$trends['price_trend_percentage']}% â€” values appreciating faster than market average.";
+            $insights[] = "Prices rising {$trends['price_trend_percentage']}% → values appreciating faster than market average.";
         } elseif ($trends['price_trend_percentage'] < -5) {
-            $insights[] = "Prices declining â€” consider adjusting listing strategy for faster sale.";
+            $insights[] = "Prices declining → consider adjusting listing strategy for faster sale.";
         }
 
         return $insights;
@@ -1147,18 +1147,18 @@ A production real estate platform typically follows a layered architecture:
 â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
 â”‚                 Infrastructure Layer                 â”‚
 â”‚  Database (PostgreSQL + PostGIS)                    â”‚
-â”‚  Cache (Redis â€” listings, search, session)          â”‚
+â”‚  Cache (Redis → listings, search, session)          â”‚
 â”‚  Search (Meilisearch/Algolia for full-text search)  â”‚
-â”‚  Queue (Redis/SQS â€” MLS sync, notifications)         â”‚
-â”‚  Storage (S3 â€” images, documents, virtual tours)    â”‚
+â”‚  Queue (Redis/SQS → MLS sync, notifications)         â”‚
+â”‚  Storage (S3 → images, documents, virtual tours)    â”‚
 â”‚  AI SDK (Anthropic/OpenAI for agents)               â”‚
-â”‚  Mapping (Mapbox/Google Maps â€” geocoding, search)   â”‚
+â”‚  Mapping (Mapbox/Google Maps → geocoding, search)   â”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 Key architectural decisions:
 
-- **Search layer**: Use a dedicated search engine (Meilisearch, Typesense, Algolia) for property search â€” never query the DB directly for user-facing search. Sync via Laravel Scout.
+- **Search layer**: Use a dedicated search engine (Meilisearch, Typesense, Algolia) for property search → never query the DB directly for user-facing search. Sync via Laravel Scout.
 - **MLS sync**: Separate ingestion pipeline using queued jobs. Process incremental updates, not full re-imports. Version MLS data with a hash of all fields to detect actual changes.
 - **Image pipeline**: Accept uploads via direct-to-S3 presigned URLs. Generate multiple variants (thumbnail, medium, large) via queued job. Use WebP format with AVIF fallback.
 - **Caching strategy**: Cache listing detail pages (cache keys by listing ID, invalidate on update). Cache neighborhood market reports (TTL: 1 day). Never cache search result counts or availability.
@@ -1321,7 +1321,7 @@ $nearby = Property::query()
 
 **Map integration considerations:**
 
-- **Frontend**: Use Mapbox GL JS (preferred for real estate â€” better styling, 3D buildings) or Google Maps. Display properties as clustered markers at zoom levels < 14, switching to individual markers at higher zoom.
+- **Frontend**: Use Mapbox GL JS (preferred for real estate → better styling, 3D buildings) or Google Maps. Display properties as clustered markers at zoom levels < 14, switching to individual markers at higher zoom.
 - **Image overlays**: Support parcel boundaries, school district maps, flood zones, and walkability scores as vector tile layers.
 - **Drive time polygons**: Use Mapbox Isochrone API to show "15-minute drive radius" from a property, useful for commute-based searches.
 - **Street view**: Embed Google Street View or Mapbox 360 imagery on listing detail pages. Generate automatically from the property's coordinates.
@@ -1424,7 +1424,7 @@ class PropertyPhotoController extends Controller
     {
         $file = $request->file('photo');
 
-        // Validate â€” real estate photos need high resolution
+        // Validate → real estate photos need high resolution
         $request->validate([
             'photo' => [
                 'required', 'image', 'mimes:jpeg,webp',
@@ -1494,7 +1494,7 @@ For virtual tours, store Matterport or Kuula embed URLs directly on the property
 
 **Step 1: Understand the core workflow**
 
-The platform connects buyers/renters with properties via agents. The primary flow: search â†’ discover â†’ inquire â†’ tour â†’ offer â†’ close. For agents: list properties â†’ manage leads â†’ schedule tours â†’ process documents â†’ close deals.
+The platform connects buyers/renters with properties via agents. The primary flow: search → discover → inquire → tour → offer → close. For agents: list properties → manage leads → schedule tours → process documents → close deals.
 
 **Step 2: Identify AI augmentation points**
 
@@ -1511,11 +1511,11 @@ Map AI agents to each workflow step:
 
 **Step 3: Architecture decisions**
 
-- **Monolith first** â€” Real estate platforms have deeply interconnected data. A modular monolith with clear bounded contexts (Listings, Agents, Clients, Transactions) is the right starting point.
-- **PostgreSQL with PostGIS** â€” Spatial queries, JSON columns for flexible MLS fields, full-text search fallback.
+- **Monolith first** → Real estate platforms have deeply interconnected data. A modular monolith with clear bounded contexts (Listings, Agents, Clients, Transactions) is the right starting point.
+- **PostgreSQL with PostGIS** → Spatial queries, JSON columns for flexible MLS fields, full-text search fallback.
 - **Scout + Meilisearch** for the primary search experience.
-- **Queue-backed agents** â€” All AI operations run asynchronously. A listing's description is generated after creation, not blocking the create request.
-- **Event-driven sync** â€” When a property changes status, fire events that cascade through caches, search indexes, and notifications.
+- **Queue-backed agents** → All AI operations run asynchronously. A listing's description is generated after creation, not blocking the create request.
+- **Event-driven sync** → When a property changes status, fire events that cascade through caches, search indexes, and notifications.
 
 **Step 4: Data model foundation**
 
@@ -1528,7 +1528,7 @@ clients             -- Buyers, sellers, renters (polymorphic via client_type)
 showing             -- Tour events (property, client, agent, time, status)
 offer               -- Purchase/lease proposals
 transaction         -- Closed deals
-document            -- Uploaded files (polymorphic â€” attachable to any entity)
+document            -- Uploaded files (polymorphic → attachable to any entity)
 communication       -- Email, SMS, call logs (polymorphic)
 ```
 
@@ -1569,7 +1569,7 @@ Property recommendations need to balance user preferences, behavioral signals, a
 
 **Approach 1: Collaborative Filtering (User-based)**
 
-"Users who viewed this property also viewed..." â€” compute similarity from viewing patterns:
+"Users who viewed this property also viewed..." → compute similarity from viewing patterns:
 
 ```php
 class PropertyRecommendationEngine
@@ -1645,7 +1645,7 @@ public function getPersonalizedRecommendations(Client $client): Collection
             'saved_searches' => $client->savedSearches()->toArray(),
             'budget' => $client->budget_range,
         ],
-        criteria: 'Relevance for this specific buyer â€” consider their
+        criteria: 'Relevance for this specific buyer → consider their
             viewing history, saved searches, and stated preferences.
             De-prioritize properties they have already dismissed.
             Boost recently listed and price-reduced properties.',
@@ -1773,10 +1773,10 @@ Most likely issues: full table scans on unindexed columns, N+1 queries on listin
 
 Check Laravel Telescope or Pulse for slow queries. Common culprits:
 
-- `ORDER BY RAND()` for featured listings â€” switch to a pre-cached random order
-- `COUNT(*)` on the full result set for pagination â€” use approximate counts or cache them
-- `WHERE city LIKE '%query%'` causing full scans â€” use full-text indexes or Meilisearch
-- Loading all relations on every result â€” use `->with()` only when rendering
+- `ORDER BY RAND()` for featured listings → switch to a pre-cached random order
+- `COUNT(*)` on the full result set for pagination → use approximate counts or cache them
+- `WHERE city LIKE '%query%'` causing full scans → use full-text indexes or Meilisearch
+- Loading all relations on every result → use `->with()` only when rendering
 
 **Step 3: Immediate fixes**
 
@@ -1803,7 +1803,7 @@ Property::search($query)
 
 **Step 4: Long-term solution**
 
-Move property search to Meilisearch or Typesense â€” dedicated search engines handle filtering, faceting, and sorting at scale without database overhead. Use Laravel Scout for the integration:
+Move property search to Meilisearch or Typesense → dedicated search engines handle filtering, faceting, and sorting at scale without database overhead. Use Laravel Scout for the integration:
 
 ```php
 // config/scout.php
@@ -1979,7 +1979,7 @@ public function shouldNotify(float $oldPrice, float $newPrice): bool
 // - Daily digest
 // - Weekly summary
 
-// 5. Queue for performance â€” don't block the price update
+// 5. Queue for performance → don't block the price update
 class PriceChangedListener
 {
     public function handle(PriceChanged $event): void
@@ -2054,7 +2054,7 @@ class SmartPropertySearch
 }
 ```
 
-For performance, cache the NLâ†’filter mapping for common queries. For ambiguous queries ("downtown"), prompt the user for clarification or use a geographic hierarchy (neighborhood â†’ city â†’ county) with the most specific match winning.
+For performance, cache the NL→filter mapping for common queries. For ambiguous queries ("downtown"), prompt the user for clarification or use a geographic hierarchy (neighborhood → city → county) with the most specific match winning.
 
 ---
 
@@ -2363,7 +2363,7 @@ For performance, cache the NLâ†’filter mapping for common queries. For ambi
 This chapter covered interview questions specific to Laravel developer roles in real estate and property technology. Key themes:
 
 - **Domain fluency**: Understanding MLS systems, property status lifecycles, CMAs, escrow, and title processes demonstrates industry knowledge that sets you apart from generic Laravel developers.
-- **Agent architecture**: Real estate is a natural fit for AI agents â€” every workflow step (listing, valuation, tour scheduling, document processing, lead qualification, market analysis, rental management, CRM) can be augmented with AI. Show that you know where AI adds value and where deterministic logic is safer.
+- **Agent architecture**: Real estate is a natural fit for AI agents → every workflow step (listing, valuation, tour scheduling, document processing, lead qualification, market analysis, rental management, CRM) can be augmented with AI. Show that you know where AI adds value and where deterministic logic is safer.
 - **Spatial awareness**: Geolocation, proximity search, and mapping are non-negotiable in real estate. Know PostGIS, geocoding pipelines, and map visualization trade-offs.
 - **Scale considerations**: Property platforms serve large datasets with complex filtering. Know when to use a dedicated search engine over database queries, how to design incremental MLS sync pipelines, and how to handle image/media pipelines at scale.
 - **Accuracy over flash**: AI hallucinations in real estate carry legal risk. Demonstrate that you prioritize validation, fact-checking, and human review over AI automation for high-stakes content.

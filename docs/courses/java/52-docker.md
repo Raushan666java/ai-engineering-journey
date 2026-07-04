@@ -36,7 +36,7 @@ By the end of this chapter, you will be able to:
 ---
 
 ## 1. Why Containerize Spring Boot?
-> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -45,15 +45,15 @@ By the end of this chapter, you will be able to:
 
 Containers provide consistent, isolated environments for running applications. For Spring Boot developers, containerization solves:
 
-- **Environment parity** â€” same image runs identically on a dev laptop, CI server, and production
-- **Dependency encapsulation** â€” JDK version, OS libraries, and application code ship as one unit
-- **Resource isolation** â€” CPU and memory limits prevent noisy-neighbor problems
-- **Scaling** â€” containers are the unit of scaling in Kubernetes, Nomad, and other orchestrators
+- **Environment parity** → same image runs identically on a dev laptop, CI server, and production
+- **Dependency encapsulation** → JDK version, OS libraries, and application code ship as one unit
+- **Resource isolation** → CPU and memory limits prevent noisy-neighbor problems
+- **Scaling** → containers are the unit of scaling in Kubernetes, Nomad, and other orchestrators
 
 A typical Spring Boot Docker workflow:
 
 ```
-Developer â†’ Build JAR â†’ Build Image â†’ Push to Registry â†’ Deploy to Orchestrator
+Developer → Build JAR → Build Image → Push to Registry → Deploy to Orchestrator
 ```
 
 ---
@@ -139,7 +139,7 @@ FROM gcr.io/distroless/java17-debian12
 | libc | glibc |
 | Shell | None |
 
-**Pros:** Minimal attack surface â€” no shell, no package manager, no utilities.  
+**Pros:** Minimal attack surface → no shell, no package manager, no utilities.  
 **Cons:** Debugging requires `kubectl exec` or ephermeral debug containers.
 
 ### 3.3 Full JDK (For Development)
@@ -156,16 +156,16 @@ Only use for development images where you need `jmap`, `jstack`, `jcmd`, etc.
 # Decision matrix:
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
-# Production runtime   â†’ eclipse-temurin:17-jre-alpine or distroless/java17
+# Production runtime   → eclipse-temurin:17-jre-alpine or distroless/java17
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
-# CI/CD builder stage  â†’ eclipse-temurin:17-jdk-alpine
+# CI/CD builder stage  → eclipse-temurin:17-jdk-alpine
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
-# Dev/debug image      â†’ eclipse-temurin:17-jdk
+# Dev/debug image      → eclipse-temurin:17-jdk
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
-# Native image (Graal) â†’ ubuntu:22.04 or distroless/java-base
+# Native image (Graal) → ubuntu:22.04 or distroless/java-base
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 ```
@@ -209,7 +209,7 @@ Each excluded file means a smaller build context, faster sends to the Docker dae
 FROM eclipse-temurin:17-jdk-alpine AS builder
 WORKDIR /build
 
-# Copy only dependency descriptors first â€” maximizes cache reuse
+# Copy only dependency descriptors first → maximizes cache reuse
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY pom.xml .
@@ -288,23 +288,23 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 Each Dockerfile instruction creates a layer. Docker caches each layer and reuses it if nothing changed:
 
 ```dockerfile
-# Layer 1: Base image â€” cached unless base changes
+# Layer 1: Base image → cached unless base changes
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 FROM eclipse-temurin:17-jre-alpine
 
-# Layer 2: OS packages â€” cached unless this line changes
+# Layer 2: OS packages → cached unless this line changes
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 RUN apk add --no-cache curl
 
-# Layer 3: Dependencies â€” cached unless pom.xml changes
+# Layer 3: Dependencies → cached unless pom.xml changes
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY pom.xml .
 RUN ./mvnw dependency:go-offline
 
-# Layer 4: Application â€” INVALIDATED on every src change
+# Layer 4: Application → INVALIDATED on every src change
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY src src
@@ -407,7 +407,7 @@ FROM eclipse-temurin:17-jre-alpine
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app
 
-# Copy layers in dependency order â€” maximizes cache reuse
+# Copy layers in dependency order → maximizes cache reuse
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY --from=builder /extracted/dependencies/ ./
@@ -529,7 +529,7 @@ volumes:
 ### 7.2 Docker Compose with Multiple Profiles
 
 ```yaml
-# docker-compose.override.yml â€” loaded automatically for dev overrides
+# docker-compose.override.yml → loaded automatically for dev overrides
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 version: "3.9"
@@ -545,7 +545,7 @@ services:
 ```
 
 ```yaml
-# docker-compose.prod.yml â€” for production-like environments
+# docker-compose.prod.yml → for production-like environments
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 version: "3.9"
@@ -1239,7 +1239,7 @@ kubectl apply -f k8s-manifests/
 
 ```bash
 #!/bin/bash
-# build.sh â€” Build Docker images with proper tags
+# build.sh → Build Docker images with proper tags
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 
@@ -1324,7 +1324,7 @@ USER appuser
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 
-# 3. Don't run as PID 1 â€” use tini for signal handling
+# 3. Don't run as PID 1 → use tini for signal handling
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 RUN apk add --no-cache tini
@@ -1381,7 +1381,7 @@ CMD ["java", "-jar", "/app/app.jar"]
 | Multi-stage build | ~200 MB (avoids JDK in runtime) | Medium |
 | Layer optimization | Build speed (not size) | Medium |
 | Spring Boot layered JAR | Build speed (not size) | Medium |
-| GraalVM native image | ~200-300 MB â†’ ~50 MB | High |
+| GraalVM native image | ~200-300 MB → ~50 MB | High |
 | CDS archive | Startup speed (not size) | Medium |
 
 ---
@@ -1439,7 +1439,7 @@ CMD ["java", "-jar", "/app/app.jar"]
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â€” it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer</summary>

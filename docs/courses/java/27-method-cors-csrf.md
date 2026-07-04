@@ -29,9 +29,9 @@ By the end of this chapter you should be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Method Security â€” `@PreAuthorize`, `@PostAuthorize`, `@Secured` annotations | Use Spring Expression Language (SpEL) for fine-grained rules |
-| CORS â€” cross-origin resource sharing for browser security | Configure allowed origins, methods, and headers via `CorsConfigurationSource` |
-| CSRF â€” cross-site request forgery protection | State-changing requests from authenticated users must include a token |
+| Method Security → `@PreAuthorize`, `@PostAuthorize`, `@Secured` annotations | Use Spring Expression Language (SpEL) for fine-grained rules |
+| CORS → cross-origin resource sharing for browser security | Configure allowed origins, methods, and headers via `CorsConfigurationSource` |
+| CSRF → cross-site request forgery protection | State-changing requests from authenticated users must include a token |
 
 ---
 ## Chapter Roadmap
@@ -84,7 +84,7 @@ flowchart TD
 
 1. Which annotation allows SpEL-based access control before method execution? **Answer:** `@PreAuthorize`
 2. What bean must be defined to customize CORS in Spring Security? **Answer:** `CorsConfigurationSource`
-3. Should CSRF protection be enabled for a stateless REST API? **Answer:** No â€” CSRF protection requires browser sessions
+3. Should CSRF protection be enabled for a stateless REST API? **Answer:** No → CSRF protection requires browser sessions
 
 ---
 
@@ -2278,7 +2278,7 @@ public class WebSecurityConfig {
 ```
 
 > [!NOTE]
-> If your service is a REST API using stateless auth (JWT/OAuth2), CSRF protection should be disabled â€” there is no browser session to protect.
+> If your service is a REST API using stateless auth (JWT/OAuth2), CSRF protection should be disabled → there is no browser session to protect.
 
 ---
 

@@ -16,8 +16,8 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Stack (LIFO) | Last-In-First-Out data structure | Push adds to top; pop removes from top â€” both O(1) |
-| Queue (FIFO) | First-In-First-Out data structure | Enqueue adds to rear; dequeue removes from front â€” both O(1) |
+| Stack (LIFO) | Last-In-First-Out data structure | Push adds to top; pop removes from top → both O(1) |
+| Queue (FIFO) | First-In-First-Out data structure | Enqueue adds to rear; dequeue removes from front → both O(1) |
 | Array Implementation | Use an index pointer for the top/front | Circular queue reuses vacated slots via modulo |
 | Linked List Implementation | Push/pop at head for stack; enqueue at tail, dequeue at head | Dynamic sizing, no fixed capacity limit |
 | Applications | Expression evaluation, BFS, undo/redo, print spooling | Choose LIFO for nesting/reversal; FIFO for ordering |
@@ -35,7 +35,7 @@ flowchart LR
 
 ## 16.1 The Stack Abstract Data Type (LIFO)
 
-### 16.1.0 Real-World Analogy â€” A Plate Stack
+### 16.1.0 Real-World Analogy → A Plate Stack
 
 Imagine a stack of plates in a cafeteria:
 
@@ -43,7 +43,7 @@ Imagine a stack of plates in a cafeteria:
 - **Pop:** You grab a plate from the **top** of the stack.
 - **Peek:** You glance at the top plate without picking it up.
 
-You **cannot** pull a plate from the middle or bottom without first removing everything above it. This is the **Last-In, First-Out (LIFO)** principle â€” the last plate you put on is the first one you take off.
+You **cannot** pull a plate from the middle or bottom without first removing everything above it. This is the **Last-In, First-Out (LIFO)** principle → the last plate you put on is the first one you take off.
 
 ```
     TOP
@@ -61,7 +61,7 @@ You **cannot** pull a plate from the middle or bottom without first removing eve
    BOTTOM
 ```
 
-### 16.1.1 The Stack ADT â€” Formal Definition
+### 16.1.1 The Stack ADT → Formal Definition
 
 A stack is an ordered collection of elements that supports these fundamental operations:
 
@@ -74,7 +74,7 @@ A stack is an ordered collection of elements that supports these fundamental ope
 | `size` | `int size()` | Return count of elements |
 | `is_full` | `bool is_full()` | (Array impl only) True if capacity reached |
 
-### 16.1.2 Numbered Steps â€” Stack Push Operation
+### 16.1.2 Numbered Steps → Stack Push Operation
 
 1. **Check overflow:** If array-based, verify `top < capacity - 1`. If full, return error.
 2. **Increment top:** Advance `top` by 1 to point at the next empty slot.
@@ -93,9 +93,9 @@ ALGORITHM push(stack, value)
 END ALGORITHM
 ```
 
-### 16.1.3 Numbered Steps â€” Stack Pop Operation
+### 16.1.3 Numbered Steps → Stack Pop Operation
 
-1. **Check underflow:** If `top == -1`, stack is empty â€” return error.
+1. **Check underflow:** If `top == -1`, stack is empty → return error.
 2. **Save value:** Retrieve element at `data[top]`.
 3. **Decrement top:** Reduce `top` by 1 to "remove" the element logically.
 4. **Return saved value.**
@@ -112,9 +112,9 @@ ALGORITHM pop(stack)
 END ALGORITHM
 ```
 
-### 16.1.4 Numbered Steps â€” Stack Peek Operation
+### 16.1.4 Numbered Steps → Stack Peek Operation
 
-1. **Check underflow:** If `top == -1`, stack is empty â€” return error.
+1. **Check underflow:** If `top == -1`, stack is empty → return error.
 2. **Return top value:** Return `data[top]` without modifying `top`.
 
 **Pseudocode:**
@@ -127,7 +127,7 @@ ALGORITHM peek(stack)
 END ALGORITHM
 ```
 
-### 16.1.5 Dry Run â€” Stack Push and Pop Trace
+### 16.1.5 Dry Run → Stack Push and Pop Trace
 
 Initial state: empty stack with `capacity = 5`, `top = -1`.
 
@@ -142,7 +142,7 @@ Initial state: empty stack with `capacity = 5`, `top = -1`.
 | 7 | `push(40)` | 40 | 0 | 1 | [10, 40, _, _, _] |
 | 8 | `pop()` | 40 | 1 | 0 | [10, 40, _, _, _] |
 | 9 | `pop()` | 10 | 0 | -1 | [10, _, _, _, _] (empty) |
-| 10 | `pop()` | underflow | -1 | -1 | (error â€” stack empty) |
+| 10 | `pop()` | underflow | -1 | -1 | (error → stack empty) |
 
 ### 16.1.6 Edge Cases for Stack
 
@@ -157,9 +157,9 @@ Initial state: empty stack with `capacity = 5`, `top = -1`.
 
 ---
 
-## 16.2 Stack â€” Array-Based Implementation
+## 16.2 Stack → Array-Based Implementation
 
-### 16.2.0 Analogy â€” Fixed-Size Plate Rack
+### 16.2.0 Analogy → Fixed-Size Plate Rack
 
 A fixed-size plate rack holds at most N plates. If the rack is full (N plates), you cannot add another without removing one first. An array-based stack works the same way: once the array is full, `push()` fails until `pop()` frees a slot.
 
@@ -185,7 +185,7 @@ Stack struct
 +------------------+
 ```
 
-### 16.2.2 C Code â€” Array-Based Stack (Full Implementation)
+### 16.2.2 C Code → Array-Based Stack (Full Implementation)
 
 ```c
 #include <stdio.h>
@@ -330,7 +330,7 @@ Stack Underflow: cannot pop from empty stack
 |-----------|----------------|-----------------|------|
 | `push` | **O(1)** | O(1) per element | Direct array write at known index; no shifting |
 | `pop` | **O(1)** | O(1) | Decrement pointer only; no physical removal |
-| `peek` | **O(1)** | O(1) | Read array at index `top` â€” constant time |
+| `peek` | **O(1)** | O(1) | Read array at index `top` → constant time |
 | `is_empty` | **O(1)** | O(1) | Single comparison `top == -1` |
 | `is_full` | **O(1)** | O(1) | Single comparison `top == capacity - 1` |
 | `size` | **O(1)** | O(1) | Returns `top + 1` directly |
@@ -343,20 +343,20 @@ Stack Underflow: cannot pop from empty stack
 
 | Aspect | Array-Based Stack |
 |--------|-------------------|
-| Cache locality | Excellent â€” contiguous memory, hardware prefetcher friendly |
-| Time per operation | Minimal â€” no malloc/free overhead per push/pop |
-| Memory overhead | Low â€” only `top` and `capacity` integers |
-| Fixed capacity | Disadvantage â€” must know max size in advance |
+| Cache locality | Excellent → contiguous memory, hardware prefetcher friendly |
+| Time per operation | Minimal → no malloc/free overhead per push/pop |
+| Memory overhead | Low → only `top` and `capacity` integers |
+| Fixed capacity | Disadvantage → must know max size in advance |
 | Wasted space | May waste memory if capacity >> actual elements |
 | Resizing cost | If dynamic resizing added, occasional O(N) resize cost |
 
 ---
 
-## 16.3 Stack â€” Linked-List-Based Implementation
+## 16.3 Stack → Linked-List-Based Implementation
 
-### 16.3.0 Analogy â€” Growing Tower of Blocks
+### 16.3.0 Analogy → Growing Tower of Blocks
 
-You stack blocks one on top of another. Each new block sits on top of the previous one. To remove a block, you grab the top one. Unlike the fixed rack, there is no limit â€” you can keep adding blocks until you run out of blocks (memory). Each block is separate but linked by gravity (pointers).
+You stack blocks one on top of another. Each new block sits on top of the previous one. To remove a block, you grab the top one. Unlike the fixed rack, there is no limit → you can keep adding blocks until you run out of blocks (memory). Each block is separate but linked by gravity (pointers).
 
 ### 16.3.1 Structure Definition
 
@@ -384,7 +384,7 @@ Stack
                  TOP                MIDDLE              BOTTOM
 ```
 
-### 16.3.2 C Code â€” Linked-List-Based Stack (Full Implementation)
+### 16.3.2 C Code → Linked-List-Based Stack (Full Implementation)
 
 ```c
 #include <stdio.h>
@@ -544,23 +544,23 @@ Popped: 100  Stack [bottom <- ... <- top]:   (size=0)
 Size after emptying: 0
 ```
 
-### 16.3.3 Dry Run â€” Linked-List Stack Trace
+### 16.3.3 Dry Run → Linked-List Stack Trace
 
 | Step | Operation | New node addr | `top` before | `top` after | Node chain |
 |------|-----------|--------------|-------------|-------------|------------|
 | 1 | push(100) | 0xA0 | NULL | 0xA0 | 0xA0[100|NULL] |
-| 2 | push(200) | 0xB0 | 0xA0 | 0xB0 | 0xB0[200|â†’0xA0] â†’ 0xA0[100|NULL] |
-| 3 | push(300) | 0xC0 | 0xB0 | 0xC0 | 0xC0[300|â†’0xB0] â†’ 0xB0[200|â†’0xA0] â†’ 0xA0[100|NULL] |
-| 4 | pop() | â€” | 0xC0 | 0xB0 | Returns 300; 0xC0 freed; 0xB0[200|â†’0xA0] â†’ 0xA0[100|NULL] |
-| 5 | pop() | â€” | 0xB0 | 0xA0 | Returns 200; 0xB0 freed; 0xA0[100|NULL] |
-| 6 | push(400) | 0xD0 | 0xA0 | 0xD0 | 0xD0[400|â†’0xA0] â†’ 0xA0[100|NULL] |
+| 2 | push(200) | 0xB0 | 0xA0 | 0xB0 | 0xB0[200|→0xA0] → 0xA0[100|NULL] |
+| 3 | push(300) | 0xC0 | 0xB0 | 0xC0 | 0xC0[300|→0xB0] → 0xB0[200|→0xA0] → 0xA0[100|NULL] |
+| 4 | pop() | → | 0xC0 | 0xB0 | Returns 300; 0xC0 freed; 0xB0[200|→0xA0] → 0xA0[100|NULL] |
+| 5 | pop() | → | 0xB0 | 0xA0 | Returns 200; 0xB0 freed; 0xA0[100|NULL] |
+| 6 | push(400) | 0xD0 | 0xA0 | 0xD0 | 0xD0[400|→0xA0] → 0xA0[100|NULL] |
 
 ### 16.3.4 Complexity Analysis
 
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|-----------------|------|
-| `push` | **O(1)** | O(1) per node | Insert at head â€” constant pointer updates |
-| `pop` | **O(1)** | O(1) | Remove head â€” constant pointer + free |
+| `push` | **O(1)** | O(1) per node | Insert at head → constant pointer updates |
+| `pop` | **O(1)** | O(1) | Remove head → constant pointer + free |
 | `peek` | **O(1)** | O(1) | Read `top->data` |
 | `is_empty` | **O(1)** | O(1) | Compare `top == NULL` |
 | `size` | **O(1)** | O(1) | Maintained as counter |
@@ -572,14 +572,14 @@ Size after emptying: 0
 
 | Aspect | Linked-List Stack |
 |--------|-------------------|
-| Dynamic sizing | Grows and shrinks per element â€” no wasted capacity |
+| Dynamic sizing | Grows and shrinks per element → no wasted capacity |
 | No overflow | Only limited by heap memory |
-| Per-operation cost | Each push/pop calls malloc/free â€” slower than array |
-| Cache locality | Poor â€” nodes scattered across heap |
-| Memory overhead | ~16â€”24 bytes per element (data + pointer + allocator metadata) |
+| Per-operation cost | Each push/pop calls malloc/free → slower than array |
+| Cache locality | Poor → nodes scattered across heap |
+| Memory overhead | ~16→24 bytes per element (data + pointer + allocator metadata) |
 | destroy cost | O(N) due to per-node freeing |
 
-### 16.3.6 Edge Cases â€” Linked Stack
+### 16.3.6 Edge Cases → Linked Stack
 
 | Edge Case | What happens | Why it matters |
 |-----------|-------------|----------------|
@@ -590,7 +590,7 @@ Size after emptying: 0
 
 ---
 
-## 16.4 Stack â€” Array vs Linked-List Comparison
+## 16.4 Stack → Array vs Linked-List Comparison
 
 | Criterion | Array-Based | Linked-List-Based |
 |-----------|-------------|-------------------|
@@ -606,19 +606,19 @@ Size after emptying: 0
 
 ### 16.5.1 Balanced Parentheses
 
-**Real-world analogy:** Consider nested HTML tags â€” `<div><p><b>text</b></p></div>`. The last opening tag (`<b>`) must be the first closing tag (`</b>`). This nested structure is exactly LIFO.
+**Real-world analogy:** Consider nested HTML tags → `<div><p><b>text</b></p></div>`. The last opening tag (`<b>`) must be the first closing tag (`</b>`). This nested structure is exactly LIFO.
 
 **Problem:** Given a string containing `(`, `)`, `{`, `}`, `[`, `]`, determine if brackets are balanced (every opening bracket has a matching closing bracket in the correct nested order).
 
 **Algorithm:**
 1. Scan the expression left to right.
-2. If an **opening** bracket `(`, `{`, `[` â†’ `push` onto stack.
+2. If an **opening** bracket `(`, `{`, `[` → `push` onto stack.
 3. If a **closing** bracket `)`, `}`, `]`:
-   a. If stack is empty â†’ **unbalanced** (no matching opener).
+   a. If stack is empty → **unbalanced** (no matching opener).
    b. `pop` the top and check if it matches the current closing bracket.
-   c. If mismatch â†’ **unbalanced**.
-4. After scanning, if stack is **not empty** â†’ unbalanced (unclosed openers).
-5. Otherwise â†’ **balanced**.
+   c. If mismatch → **unbalanced**.
+4. After scanning, if stack is **not empty** → unbalanced (unclosed openers).
+5. Otherwise → **balanced**.
 
 **Pseudocode:**
 ```
@@ -638,55 +638,55 @@ ALGORITHM is_balanced(expr)
     RETURN stack.is_empty()
 ```
 
-**Dry Run â€” `"({[]})"`:**
+**Dry Run → `"({[]})"`:**
 
 | Step | Char | Stack before | Action | Stack after |
 |------|------|-------------|--------|-------------|
 | 1 | `(` | [] | push `(` | [`(`] |
 | 2 | `{` | [`(`] | push `{` | [`(`, `{`] |
 | 3 | `[` | [`(`, `{`] | push `[` | [`(`, `{`, `[`] |
-| 4 | `]` | [`(`, `{`, `[`] | pop â†’ `[`, matches `]` | [`(`, `{`] |
-| 5 | `}` | [`(`, `{`] | pop â†’ `{`, matches `}` | [`(`] |
-| 6 | `)` | [`(`] | pop â†’ `(`, matches `)` | [] |
+| 4 | `]` | [`(`, `{`, `[`] | pop → `[`, matches `]` | [`(`, `{`] |
+| 5 | `}` | [`(`, `{`] | pop → `{`, matches `}` | [`(`] |
+| 6 | `)` | [`(`] | pop → `(`, matches `)` | [] |
 
-Final stack empty â†’ **Balanced.**
+Final stack empty → **Balanced.**
 
-**Dry Run â€” `"({)}"`:**
+**Dry Run → `"({)}"`:**
 
 | Step | Char | Stack before | Action | Stack after |
 |------|------|-------------|--------|-------------|
 | 1 | `(` | [] | push `(` | [`(`] |
 | 2 | `{` | [`(`] | push `{` | [`(`, `{`] |
-| 3 | `)` | [`(`, `{`] | pop â†’ `{`; `{` â‰  `(` â†’ **mismatch** | â€” |
+| 3 | `)` | [`(`, `{`] | pop → `{`; `{` â‰  `(` → **mismatch** | → |
 
-**Unbalanced â€”** `{` does not match `)`.
+**Unbalanced →** `{` does not match `)`.
 
-**Dry Run â€” `"((())"`:**
-
-| Step | Char | Stack before | Action | Stack after |
-|------|------|-------------|--------|-------------|
-| 1 | `(` | [] | push `(` | [`(`] |
-| 2 | `(` | [`(`] | push `(` | [`(`, `(`] |
-| 3 | `(` | [`(`, `(`] | push `(` | [`(`, `(`, `(`] |
-| 4 | `)` | [`(`, `(`, `(`] | pop â†’ `(` matches `)` | [`(`, `(`] |
-| 5 | `)` | [`(`, `(`] | pop â†’ `(` matches `)` | [`(`] |
-| 6 | `)` | [`(`] | pop â†’ `(` matches `)` | [] |
-
-Stack empty after scan? **Yes.** Wait â€” that IS balanced! Let me reconsider: `((())` is `( ( ( ) )` â€” 3 opens, 3 closes. Yes it IS balanced!
-
-Let me redo: `"((())"` has 3 `(` and 3 `)`. That's actually balanced! Let me use `"((())"` as originally in the existing code â€” but actually the existing code says that's unbalanced? Let me check: `((())` â€” characters: `(`, `(`, `(`, `)`, `)`. That's 3 `(` and 2 `)`. So it's unbalanced with 1 leftover. My trace was wrong. Let me re-trace:
-
-`((())` â†’ `(`, `(`, `(`, `)`, `)`
+**Dry Run → `"((())"`:**
 
 | Step | Char | Stack before | Action | Stack after |
 |------|------|-------------|--------|-------------|
 | 1 | `(` | [] | push `(` | [`(`] |
 | 2 | `(` | [`(`] | push `(` | [`(`, `(`] |
 | 3 | `(` | [`(`, `(`] | push `(` | [`(`, `(`, `(`] |
-| 4 | `)` | [`(`, `(`, `(`] | pop â†’ `(` matches `)` | [`(`, `(`] |
-| 5 | `)` | [`(`, `(`] | pop â†’ `(` matches `)` | [`(`] |
+| 4 | `)` | [`(`, `(`, `(`] | pop → `(` matches `)` | [`(`, `(`] |
+| 5 | `)` | [`(`, `(`] | pop → `(` matches `)` | [`(`] |
+| 6 | `)` | [`(`] | pop → `(` matches `)` | [] |
 
-After scan, stack has 1 element â†’ **Unbalanced.**
+Stack empty after scan? **Yes.** Wait → that IS balanced! Let me reconsider: `((())` is `( ( ( ) )` → 3 opens, 3 closes. Yes it IS balanced!
+
+Let me redo: `"((())"` has 3 `(` and 3 `)`. That's actually balanced! Let me use `"((())"` as originally in the existing code → but actually the existing code says that's unbalanced? Let me check: `((())` → characters: `(`, `(`, `(`, `)`, `)`. That's 3 `(` and 2 `)`. So it's unbalanced with 1 leftover. My trace was wrong. Let me re-trace:
+
+`((())` → `(`, `(`, `(`, `)`, `)`
+
+| Step | Char | Stack before | Action | Stack after |
+|------|------|-------------|--------|-------------|
+| 1 | `(` | [] | push `(` | [`(`] |
+| 2 | `(` | [`(`] | push `(` | [`(`, `(`] |
+| 3 | `(` | [`(`, `(`] | push `(` | [`(`, `(`, `(`] |
+| 4 | `)` | [`(`, `(`, `(`] | pop → `(` matches `)` | [`(`, `(`] |
+| 5 | `)` | [`(`, `(`] | pop → `(` matches `)` | [`(`] |
+
+After scan, stack has 1 element → **Unbalanced.**
 
 **C Code:**
 ```c
@@ -760,30 +760,30 @@ Expression   Result
 ```
 
 **Complexity:**
-- **Time:** O(N) â€” single pass through expression.
-- **Space:** O(N) â€” stack stores at most N opening brackets.
+- **Time:** O(N) → single pass through expression.
+- **Space:** O(N) → stack stores at most N opening brackets.
 
 ---
 
 ### 16.5.2 Infix to Postfix Conversion (Shunting-Yard Algorithm)
 
-**Real-world analogy:** You read a math expression like `A + B * C`. Your brain applies order of operations (BODMAS/PEMDAS â€” multiplication before addition). A computer is simpler: it evaluates left-to-right using postfix where operators follow operands â€” `A B C * +`. The shunting-yard algorithm rearranges infix to postfix using a stack to hold operators while respecting precedence.
+**Real-world analogy:** You read a math expression like `A + B * C`. Your brain applies order of operations (BODMAS/PEMDAS → multiplication before addition). A computer is simpler: it evaluates left-to-right using postfix where operators follow operands → `A B C * +`. The shunting-yard algorithm rearranges infix to postfix using a stack to hold operators while respecting precedence.
 
 **Precedence Table:**
 
 | Operator | Symbol | Precedence | Associativity |
 |----------|--------|-----------|--------------|
-| Parentheses | `(`, `)` | highest | â€” |
+| Parentheses | `(`, `)` | highest | → |
 | Exponentiation | `^` | 3 | Right-to-left |
 | Multiplication, Division | `*`, `/` | 2 | Left-to-right |
 | Addition, Subtraction | `+`, `-` | 1 | Left-to-right |
 
 **Algorithm:**
 1. Scan infix expression left to right.
-2. If **operand** (letter/digit) â†’ append to postfix output.
-3. If `(` â†’ push onto stack.
-4. If `)` â†’ pop and output until `(` is encountered; discard `(`.
-5. If **operator** â†’ while stack not empty AND top has â‰¥ precedence, pop to output; then push current operator.
+2. If **operand** (letter/digit) → append to postfix output.
+3. If `(` → push onto stack.
+4. If `)` → pop and output until `(` is encountered; discard `(`.
+5. If **operator** → while stack not empty AND top has â‰¥ precedence, pop to output; then push current operator.
 6. After scan, pop all remaining operators to output.
 
 **Pseudocode:**
@@ -809,48 +809,48 @@ ALGORITHM infix_to_postfix(infix)
     RETURN postfix
 ```
 
-**Dry Run â€” `"A+B*C"` â†’ postfix `"ABC*+"`**
+**Dry Run → `"A+B*C"` → postfix `"ABC*+"`**
 
 | Step | Char | Stack before | Action | Stack after | Output |
 |------|------|-------------|--------|-------------|--------|
-| 1 | A | [] | Operand â†’ output | [] | A |
-| 2 | + | [] | Stack empty â†’ push `+` | [+] | A |
-| 3 | B | [+] | Operand â†’ output | [+] | AB |
-| 4 | * | [+] | `*` has higher precedence (2) than `+` (1) â†’ push | [+, *] | AB |
-| 5 | C | [+, *] | Operand â†’ output | [+, *] | ABC |
-| End | â€” | [+, *] | Pop all â†’ `*`, then `+` | [] | ABC*+ |
+| 1 | A | [] | Operand → output | [] | A |
+| 2 | + | [] | Stack empty → push `+` | [+] | A |
+| 3 | B | [+] | Operand → output | [+] | AB |
+| 4 | * | [+] | `*` has higher precedence (2) than `+` (1) → push | [+, *] | AB |
+| 5 | C | [+, *] | Operand → output | [+, *] | ABC |
+| End | → | [+, *] | Pop all → `*`, then `+` | [] | ABC*+ |
 
-**Dry Run â€” `"(A+B)*C"` â†’ postfix `"AB+C*"`**
+**Dry Run → `"(A+B)*C"` → postfix `"AB+C*"`**
 
 | Step | Char | Stack before | Action | Stack after | Output |
 |------|------|-------------|--------|-------------|--------|
 | 1 | `(` | [] | Push `(` | [(] | |
-| 2 | A | [(] | Operand â†’ output | [(] | A |
+| 2 | A | [(] | Operand → output | [(] | A |
 | 3 | + | [(] | Push `+` | [(, +] | A |
-| 4 | B | [(, +] | Operand â†’ output | [(, +] | AB |
-| 5 | `)` | [(, +] | Pop to output until `(` â†’ output `+`; discard `(` | [] | AB+ |
+| 4 | B | [(, +] | Operand → output | [(, +] | AB |
+| 5 | `)` | [(, +] | Pop to output until `(` → output `+`; discard `(` | [] | AB+ |
 | 6 | * | [] | Push `*` | [*] | AB+ |
-| 7 | C | [*] | Operand â†’ output | [*] | AB+C |
-| End | â€” | [*] | Pop all â†’ `*` | [] | AB+C* |
+| 7 | C | [*] | Operand → output | [*] | AB+C |
+| End | → | [*] | Pop all → `*` | [] | AB+C* |
 
-**Dry Run â€” `"A*(B+C-D)/E"` â†’ postfix `"ABC+D-*E/"`**
+**Dry Run → `"A*(B+C-D)/E"` → postfix `"ABC+D-*E/"`**
 
 | Step | Char | Stack before | Action | Stack after | Output |
 |------|------|-------------|--------|-------------|--------|
-| 1 | A | [] | Operand â†’ output | [] | A |
+| 1 | A | [] | Operand → output | [] | A |
 | 2 | * | [] | Push `*` | [*] | A |
 | 3 | `(` | [*] | Push `(` | [*, (] | A |
-| 4 | B | [*, (] | Operand â†’ output | [*, (] | AB |
-| 5 | + | [*, (] | Top is `(` â†’ push `+` | [*, (, +] | AB |
-| 6 | C | [*, (, +] | Operand â†’ output | [*, (, +] | ABC |
-| 7 | - | [*, (, +] | `+` has same precedence (1) as `-` â†’ pop `+`, then push `-` | [*, (, -] | ABC+ |
-| 8 | D | [*, (, -] | Operand â†’ output | [*, (, -] | ABC+D |
-| 9 | `)` | [*, (, -] | Pop to output until `(` â†’ output `-`; discard `(` | [*] | ABC+D- |
-| 10 | / | [*] | `*` has higher precedence (2) than `/` (2) â†’ pop `*`, then push `/` | [/] | ABC+D-* |
-| 11 | E | [/] | Operand â†’ output | [/] | ABC+D-*E |
-| End | â€” | [/] | Pop all â†’ `/` | [] | ABC+D-*E/ |
+| 4 | B | [*, (] | Operand → output | [*, (] | AB |
+| 5 | + | [*, (] | Top is `(` → push `+` | [*, (, +] | AB |
+| 6 | C | [*, (, +] | Operand → output | [*, (, +] | ABC |
+| 7 | - | [*, (, +] | `+` has same precedence (1) as `-` → pop `+`, then push `-` | [*, (, -] | ABC+ |
+| 8 | D | [*, (, -] | Operand → output | [*, (, -] | ABC+D |
+| 9 | `)` | [*, (, -] | Pop to output until `(` → output `-`; discard `(` | [*] | ABC+D- |
+| 10 | / | [*] | `*` has higher precedence (2) than `/` (2) → pop `*`, then push `/` | [/] | ABC+D-* |
+| 11 | E | [/] | Operand → output | [/] | ABC+D-*E |
+| End | → | [/] | Pop all → `/` | [] | ABC+D-*E/ |
 
-**C Code â€” Infix to Postfix:**
+**C Code → Infix to Postfix:**
 
 ```c
 #include <stdio.h>
@@ -949,22 +949,22 @@ A+B-C*D/E            AB+CD*E/-
 ```
 
 **Complexity:**
-- **Time:** O(N) â€” each character processed once; each operator pushed/popped once.
-- **Space:** O(N) â€” stack holds at most N operators; output array of size N.
+- **Time:** O(N) → each character processed once; each operator pushed/popped once.
+- **Space:** O(N) → stack holds at most N operators; output array of size N.
 
 ---
 
 ### 16.5.3 Postfix Expression Evaluation
 
-**Real-world analogy:** A pocket calculator using Reverse Polish Notation (RPN) â€” you type operands first, then the operator. HP calculators famously use this. `3 4 +` means `3 + 4`. No parentheses needed.
+**Real-world analogy:** A pocket calculator using Reverse Polish Notation (RPN) → you type operands first, then the operator. HP calculators famously use this. `3 4 +` means `3 + 4`. No parentheses needed.
 
 **Algorithm:**
 1. Scan postfix expression left to right.
-2. If **operand** (digit) â†’ convert to integer and `push` onto stack.
-3. If **operator** â†’ `pop` two operands (right operand first, then left), apply operator, `push` result back.
-4. After scan, stack contains exactly one value â€” the result.
+2. If **operand** (digit) → convert to integer and `push` onto stack.
+3. If **operator** → `pop` two operands (right operand first, then left), apply operator, `push` result back.
+4. After scan, stack contains exactly one value → the result.
 
-**Dry Run â€” Postfix `"23*54*+"` (infix: `2*3 + 5*4 = 26`)**
+**Dry Run → Postfix `"23*54*+"` (infix: `2*3 + 5*4 = 26`)**
 
 | Step | Token | Stack before | Action | Stack after |
 |------|-------|-------------|--------|-------------|
@@ -978,7 +978,7 @@ A+B-C*D/E            AB+CD*E/-
 
 **Result:** 26
 
-**Dry Run â€” Postfix `"23+5*"` (infix: `(2+3)*5 = 25`)**
+**Dry Run → Postfix `"23+5*"` (infix: `(2+3)*5 = 25`)**
 
 | Step | Token | Stack before | Action | Stack after |
 |------|-------|-------------|--------|-------------|
@@ -990,7 +990,7 @@ A+B-C*D/E            AB+CD*E/-
 
 **Result:** 25
 
-**C Code â€” Postfix Evaluation:**
+**C Code → Postfix Evaluation:**
 
 ```c
 #include <stdio.h>
@@ -1052,7 +1052,7 @@ int main(void) {
     printf("------------ -------------------- ------\n");
     for (int i = 0; i < n; i++) {
         printf("%-12s ", exprs[i]);
-        printf("%-20s ", "â€”");       // infix form omitted for brevity
+        printf("%-20s ", "→");       // infix form omitted for brevity
         printf("%d\n", evaluate_postfix(exprs[i]));
     }
     return 0;
@@ -1063,22 +1063,22 @@ int main(void) {
 ```
 Postfix      Equivalent Infix      Result
 ------------ -------------------- ------
-23*54*+      â€”                     26
-23+5*        â€”                     25
-53+          â€”                     8
-92-          â€”                     7
-42/          â€”                     2
-23^          â€”                     8
+23*54*+      →                     26
+23+5*        →                     25
+53+          →                     8
+92-          →                     7
+42/          →                     2
+23^          →                     8
 ```
 
 **Complexity:**
-- **Time:** O(N) â€” single scan, each token processed once.
-- **Space:** O(N) â€” stack holds at most N/2 operands.
+- **Time:** O(N) → single scan, each token processed once.
+- **Space:** O(N) → stack holds at most N/2 operands.
 
 **Edge cases:**
-- Division by zero â€” check `right == 0` before `/`.
-- Single operand â€” `"5"` should push and pop as result.
-- Multi-digit operands â€” not handled by single-digit parser; need delimiter or multi-digit accumulation.
+- Division by zero → check `right == 0` before `/`.
+- Single operand → `"5"` should push and pop as result.
+- Multi-digit operands → not handled by single-digit parser; need delimiter or multi-digit accumulation.
 
 ---
 
@@ -1093,9 +1093,9 @@ Postfix      Equivalent Infix      Result
 | **DFS (Depth-First Search)** | Use stack (explicit or recursion) for graph traversal |
 | **Maze solving** | Push current position; backtrack by popping when dead-end |
 | **Tree traversals** | Iterative preorder/inorder/postorder use explicit stack |
-| **String reversal** | Push characters, then pop â€” yields reversed order |
+| **String reversal** | Push characters, then pop → yields reversed order |
 
-### 16.5.5 Infix to Postfix â€” Additional Notes
+### 16.5.5 Infix to Postfix → Additional Notes
 
 **Why right-to-left associativity for `^` matters:**
 `A^B^C` in standard math means `A^(B^C)` (right-associative). Our algorithm with `>=` in precedence comparison will pop equal precedence left-to-right. For `^`, we should use `>` instead of `>=` to leave the higher-precedence-rightmost operator on the stack. The basic implementation above with `>=` evaluates `A^B^C` as `(A^B)^C`. To fix for right-associative `^`:
@@ -1109,7 +1109,7 @@ while (!is_empty(&s) && precedence(peek(&s)) > precedence(c)) {
 Change `>=` to `>` for right-associative operators.
 ## 16.6 The Queue Abstract Data Type (FIFO)
 
-### 16.6.0 Real-World Analogy â€” A Waiting Line
+### 16.6.0 Real-World Analogy → A Waiting Line
 
 Imagine a queue at a ticket counter:
 
@@ -1127,7 +1127,7 @@ The first person in line is served first. This is **First-In, First-Out (FIFO)**
               (oldest)                 (newest)
 ```
 
-### 16.6.1 The Queue ADT â€” Formal Definition
+### 16.6.1 The Queue ADT → Formal Definition
 
 | Operation | Signature | Description |
 |-----------|-----------|-------------|
@@ -1147,21 +1147,21 @@ A simple linear queue uses front and rear pointers:
 - Enqueue: increment `rear`, write at `data[rear]`.
 - Dequeue: read `data[front]`, increment `front`.
 
-**The false-full problem:** After enqueuing 5 elements and dequeuing 3, `front = 3`, `rear = 4`. The queue has 2 elements but `rear == capacity - 1` â€” you cannot enqueue more even though indices 0, 1, 2 are empty!
+**The false-full problem:** After enqueuing 5 elements and dequeuing 3, `front = 3`, `rear = 4`. The queue has 2 elements but `rear == capacity - 1` → you cannot enqueue more even though indices 0, 1, 2 are empty!
 
 ```
 After 5 enqueues:     [0:a] [1:b] [2:c] [3:d] [4:e]   front=0, rear=4
 After 3 dequeues:     [0:_] [1:_] [2:_] [3:d] [4:e]   front=3, rear=4
-â†’ rear is at capacity-1, CANNOT enqueue, but 3 slots are free!
+→ rear is at capacity-1, CANNOT enqueue, but 3 slots are free!
 ```
 
 **Solution:** The circular queue (ring buffer) wraps `front` and `rear` using modulo arithmetic so vacated slots are reused.
 
 ---
 
-## 16.7 Queue â€” Circular Array Implementation
+## 16.7 Queue → Circular Array Implementation
 
-### 16.7.0 Analogy â€” Round Robin Carousel
+### 16.7.0 Analogy → Round Robin Carousel
 
 Think of a circular sushi bar or a round carousel with N numbered plates. A chef places new dishes at the next empty plate. Customers take from the current serving plate. When you reach plate N, you wrap back to plate 0. As long as there is at least one empty plate, the system keeps working.
 
@@ -1177,11 +1177,11 @@ typedef struct {
 } CircularQueue;
 ```
 
-**Why track `size` separately?** In a circular queue, `front == rear` can mean both "empty" and "full" depending on context. We disambiguate by maintaining an explicit `size` counter. (Alternative: waste one slot â€” never fill to capacity.)
+**Why track `size` separately?** In a circular queue, `front == rear` can mean both "empty" and "full" depending on context. We disambiguate by maintaining an explicit `size` counter. (Alternative: waste one slot → never fill to capacity.)
 
-### 16.7.2 Numbered Steps â€” Circular Queue Enqueue
+### 16.7.2 Numbered Steps → Circular Queue Enqueue
 
-1. **Check overflow:** If `size == capacity`, queue is full â€” return error.
+1. **Check overflow:** If `size == capacity`, queue is full → return error.
 2. **Advance rear:** `rear = (rear + 1) % capacity`.
 3. **Insert value:** `data[rear] = value`.
 4. **Increment size:** `size++`.
@@ -1199,9 +1199,9 @@ ALGORITHM enqueue(queue, value)
 END ALGORITHM
 ```
 
-### 16.7.3 Numbered Steps â€” Circular Queue Dequeue
+### 16.7.3 Numbered Steps → Circular Queue Dequeue
 
-1. **Check underflow:** If `size == 0`, queue is empty â€” return error.
+1. **Check underflow:** If `size == 0`, queue is empty → return error.
 2. **Save value:** `value = data[front]`.
 3. **Advance front:** `front = (front + 1) % capacity`.
 4. **Decrement size:** `size--`.
@@ -1220,13 +1220,13 @@ ALGORITHM dequeue(queue)
 END ALGORITHM
 ```
 
-### 16.7.4 Dry Run â€” Circular Queue Trace
+### 16.7.4 Dry Run → Circular Queue Trace
 
 Initial: `capacity = 5`, `front = 0`, `rear = -1`, `size = 0`.
 
 | Step | Operation | Value | `front` | `rear` | `size` | `data[]` |
 |------|-----------|-------|---------|--------|--------|----------|
-| 0 | Initial | â€” | 0 | -1 | 0 | [_, _, _, _, _] |
+| 0 | Initial | → | 0 | -1 | 0 | [_, _, _, _, _] |
 | 1 | enqueue(10) | 10 | 0 | 0 | 1 | [10, _, _, _, _] |
 | 2 | enqueue(20) | 20 | 0 | 1 | 2 | [10, 20, _, _, _] |
 | 3 | enqueue(30) | 30 | 0 | 2 | 3 | [10, 20, 30, _, _] |
@@ -1236,17 +1236,17 @@ Initial: `capacity = 5`, `front = 0`, `rear = -1`, `size = 0`.
 | 7 | enqueue(50) | 50 | 2 | 4 | 3 | [10, 20, 30, 40, 50] |
 | 8 | enqueue(60) | 60 | 2 | 0 | 4 | [60, 20, 30, 40, 50] â† rear wraps to 0! |
 | 9 | enqueue(70) | 70 | 2 | 1 | 5 | [60, 70, 30, 40, 50] â† rear wraps to 1 |
-| 10 | enqueue(80) | â€” | 2 | 1 | 5 | Overflow! (size == capacity) |
+| 10 | enqueue(80) | → | 2 | 1 | 5 | Overflow! (size == capacity) |
 | 11 | dequeue() | 30 | 3 | 1 | 4 | [60, 70, 30, 40, 50] |
 | 12 | dequeue() | 40 | 4 | 1 | 3 | [60, 70, 30, 40, 50] |
 | 13 | dequeue() | 50 | 0 | 1 | 2 | [60, 70, 30, 40, 50] â† front wraps to 0! |
 | 14 | dequeue() | 60 | 1 | 1 | 1 | [60, 70, 30, 40, 50] |
 | 15 | dequeue() | 70 | 2 | 1 | 0 | [60, 70, 30, 40, 50] |
-| 16 | dequeue() | â€” | 2 | 1 | 0 | Underflow! (size == 0) |
+| 16 | dequeue() | → | 2 | 1 | 0 | Underflow! (size == 0) |
 
 **Key insight:** At step 8, `rear` wraps from 4 to 0 via `(4 + 1) % 5 = 0`. At step 13, `front` wraps from 4 to 0 via `(4 + 1) % 5 = 0`. This is the circular reuse that distinguishes this from a linear queue.
 
-### 16.7.5 C Code â€” Circular Queue (Full Implementation)
+### 16.7.5 C Code → Circular Queue (Full Implementation)
 
 ```c
 #include <stdio.h>
@@ -1430,7 +1430,7 @@ Try dequeue on empty queue:
 Queue Underflow: cannot dequeue
 ```
 
-### 16.7.6 Complexity Analysis â€” Circular Queue
+### 16.7.6 Complexity Analysis → Circular Queue
 
 | Operation | Time | Space | Why? |
 |-----------|------|-------|------|
@@ -1446,11 +1446,11 @@ Queue Underflow: cannot dequeue
 | Aspect | Circular Array Queue |
 |--------|---------------------|
 | Memory reuse | Full reuse of vacated slots via wrap-around |
-| Cache locality | Excellent â€” contiguous array |
+| Cache locality | Excellent → contiguous array |
 | Speed | No malloc/free per operation |
 | Fixed capacity | Must know max size; overflow possible |
 | Empty vs full | Must track size explicitly (or waste 1 slot) |
-| Resize | Complex â€” must remap elements after wrap-around |
+| Resize | Complex → must remap elements after wrap-around |
 
 ### 16.7.8 Circular Queue Edge Cases
 
@@ -1464,11 +1464,11 @@ Queue Underflow: cannot dequeue
 
 ---
 
-## 16.8 Queue â€” Linked-List-Based Implementation
+## 16.8 Queue → Linked-List-Based Implementation
 
-### 16.8.0 Analogy â€” Conveyor Belt
+### 16.8.0 Analogy → Conveyor Belt
 
-Items move along a conveyor belt. New items are placed at the start of the belt; items are removed at the end. The belt has no fixed length â€” it stretches as needed (like dynamic memory allocation).
+Items move along a conveyor belt. New items are placed at the start of the belt; items are removed at the end. The belt has no fixed length → it stretches as needed (like dynamic memory allocation).
 
 ### 16.8.1 Structure Definition
 
@@ -1495,7 +1495,7 @@ Queue
 +-------+              FRONT                                      REAR
 ```
 
-### 16.8.2 Numbered Steps â€” Linked-List Queue Enqueue
+### 16.8.2 Numbered Steps → Linked-List Queue Enqueue
 
 1. **Allocate node:** Create new node with given value, `next = NULL`.
 2. **If empty:** Set both `front` and `rear` to new node.
@@ -1518,9 +1518,9 @@ ALGORITHM enqueue(queue, value)
 END ALGORITHM
 ```
 
-### 16.8.3 Numbered Steps â€” Linked-List Queue Dequeue
+### 16.8.3 Numbered Steps → Linked-List Queue Dequeue
 
-1. **Check underflow:** If `front == NULL`, queue empty â€” return error.
+1. **Check underflow:** If `front == NULL`, queue empty → return error.
 2. **Save:** `temp = front`, `value = temp->data`.
 3. **Advance front:** `front = front->next`.
 4. **If front becomes NULL:** Set `rear = NULL` (queue now empty).
@@ -1543,7 +1543,7 @@ ALGORITHM dequeue(queue)
 END ALGORITHM
 ```
 
-### 16.8.4 C Code â€” Linked-List Queue (Full Implementation)
+### 16.8.4 C Code → Linked-List Queue (Full Implementation)
 
 ```c
 #include <stdio.h>
@@ -1620,7 +1620,7 @@ int queue_dequeue(Queue *q) {
     q->size--;
 
     if (q->front == NULL) {
-        q->rear = NULL;      // queue is now empty â€” both pointers to NULL
+        q->rear = NULL;      // queue is now empty → both pointers to NULL
     }
     return value;
 }
@@ -1721,18 +1721,18 @@ Dequeued: 40  Queue [front -> ... -> rear]: 50   (size=1)
 Dequeued: 50  Queue [front -> ... -> rear]:   (size=0)
 ```
 
-### 16.8.5 Dry Run â€” Linked-List Queue Trace
+### 16.8.5 Dry Run → Linked-List Queue Trace
 
 | Step | Operation | Node addr | `front` | `rear` | Node chain |
 |------|-----------|-----------|---------|--------|------------|
 | 1 | enq(10) | 0xA0 | 0xA0 | 0xA0 | 0xA0[10|NULL] |
-| 2 | enq(20) | 0xB0 | 0xA0 | 0xB0 | 0xA0[10|â†’0xB0] â†’ 0xB0[20|NULL] |
-| 3 | enq(30) | 0xC0 | 0xA0 | 0xC0 | 0xA0[10|â†’0xB0] â†’ 0xB0[20|â†’0xC0] â†’ 0xC0[30|NULL] |
-| 4 | deq() | â€” | 0xB0 | 0xC0 | Returns 10; 0xA0 freed |
-| 5 | deq() | â€” | 0xC0 | 0xC0 | Returns 20; 0xB0 freed; single node left |
-| 6 | enq(40) | 0xD0 | 0xC0 | 0xD0 | 0xC0[30|â†’0xD0] â†’ 0xD0[40|NULL] |
+| 2 | enq(20) | 0xB0 | 0xA0 | 0xB0 | 0xA0[10|→0xB0] → 0xB0[20|NULL] |
+| 3 | enq(30) | 0xC0 | 0xA0 | 0xC0 | 0xA0[10|→0xB0] → 0xB0[20|→0xC0] → 0xC0[30|NULL] |
+| 4 | deq() | → | 0xB0 | 0xC0 | Returns 10; 0xA0 freed |
+| 5 | deq() | → | 0xC0 | 0xC0 | Returns 20; 0xB0 freed; single node left |
+| 6 | enq(40) | 0xD0 | 0xC0 | 0xD0 | 0xC0[30|→0xD0] → 0xD0[40|NULL] |
 
-### 16.8.6 Complexity Analysis â€” Linked-List Queue
+### 16.8.6 Complexity Analysis → Linked-List Queue
 
 | Operation | Time | Space | Why? |
 |-----------|------|-------|------|
@@ -1743,18 +1743,18 @@ Dequeued: 50  Queue [front -> ... -> rear]:   (size=0)
 | `is_empty` | **O(1)** | O(1) | Compare `front == NULL` |
 | `destroy` | **O(N)** | O(1) | Must walk and free every node |
 
-### 16.8.7 Linked-List Queue â€” Edge Cases
+### 16.8.7 Linked-List Queue → Edge Cases
 
 | Edge Case | What happens | Why it matters |
 |-----------|-------------|----------------|
 | **dequeue on empty** | Prints error, exits | Guard before `front->data` |
 | **Single node dequeue** | `front = NULL`, `rear = NULL` | Must set BOTH to NULL |
-| **enqueue after empty** | `front = rear = new_node` | Special case needed â€” no `rear->next` to set |
+| **enqueue after empty** | `front = rear = new_node` | Special case needed → no `rear->next` to set |
 | **malloc failure** | Returns silently with warning | Always check malloc return |
 
 ---
 
-## 16.9 Queue â€” Array vs Linked-List Comparison
+## 16.9 Queue → Array vs Linked-List Comparison
 
 | Criterion | Circular Array Queue | Linked-List Queue |
 |-----------|---------------------|-------------------|
@@ -1773,7 +1773,7 @@ Dequeued: 50  Queue [front -> ... -> rear]:   (size=0)
 
 ### 16.10.0 Overview
 
-A **deque** (pronounced "deck") allows insertion and deletion at **both** ends â€” it's a stack and queue combined.
+A **deque** (pronounced "deck") allows insertion and deletion at **both** ends → it's a stack and queue combined.
 
 ### 16.10.1 Operations
 
@@ -1786,7 +1786,7 @@ A **deque** (pronounced "deck") allows insertion and deletion at **both** ends �
 | `front` | Peek front | `data[front]` | `head->data` |
 | `back` | Peek rear | `data[rear]` | `tail->data` |
 
-### 16.10.2 C Code â€” Deque Using Doubly Linked List
+### 16.10.2 C Code → Deque Using Doubly Linked List
 
 ```c
 #include <stdio.h>
@@ -1949,7 +1949,7 @@ Deque [front ... rear]: 10 20   (size=2)
 
 ### 16.11.0 Overview
 
-A priority queue processes elements by **priority** (highest first), not insertion order. In C, a common implementation is a **binary heap** (covered in Chapter 19 â€” Trees), but a simple sorted array or unsorted array approach works for small datasets.
+A priority queue processes elements by **priority** (highest first), not insertion order. In C, a common implementation is a **binary heap** (covered in Chapter 19 → Trees), but a simple sorted array or unsorted array approach works for small datasets.
 
 ### 16.11.1 Operations
 
@@ -1961,7 +1961,7 @@ A priority queue processes elements by **priority** (highest first), not inserti
 
 Priority queues are used in Dijkstra's shortest path, Huffman coding, OS task scheduling, and A* search.
 
-### 16.11.2 C Code â€” Simple Unsorted Priority Queue (Array)
+### 16.11.2 C Code → Simple Unsorted Priority Queue (Array)
 
 ```c
 #include <stdio.h>
@@ -2051,7 +2051,7 @@ Dequeue order: 200 300 100
 ```
 
 **Note:** For production, use a binary heap (Chapter 19) for O(log N) operations.
-## 16.12 Stack vs Queue â€” Comprehensive Comparison
+## 16.12 Stack vs Queue → Comprehensive Comparison
 
 | Dimension | Stack | Queue |
 |-----------|-------|-------|
@@ -2060,7 +2060,7 @@ Dequeue order: 200 300 100
 | **Analogy** | Plate stack in a cafeteria | Ticket counter line |
 | **Insert operation** | `push` at top | `enqueue` at rear |
 | **Delete operation** | `pop` from top | `dequeue` from front |
-| **Peek operation** | `top()` â€” top element | `front()` â€” front element |
+| **Peek operation** | `top()` → top element | `front()` → front element |
 | **Examined element** | Most recently inserted | Least recently inserted |
 | **Undo semantics** | Undo reverses last action | Undo would reverse first action (wrong) |
 | **Graph traversal** | DFS (Depth-First Search) | BFS (Breadth-First Search) |
@@ -2110,7 +2110,7 @@ Documents sent to a printer are queued. The first document sent is the first doc
 
 ```
 Printer Queue:
-[Job1(DocA)] â†’ [Job2(DocB)] â†’ [Job3(DocC)]
+[Job1(DocA)] → [Job2(DocB)] → [Job3(DocC)]
     â†‘printing            â†‘waiting        â†‘waiting
 ```
 
@@ -2120,9 +2120,9 @@ The OS maintains a ready queue of processes. Each process gets a fixed time slic
 
 ```
 Ready Queue:
-[P1] â†’ [P2] â†’ [P3] â†’ [P4]   (each gets 10ms)
+[P1] → [P2] → [P3] → [P4]   (each gets 10ms)
         â†“
-P1 runs 10ms â†’ if unfinished, re-enqueue at rear
+P1 runs 10ms → if unfinished, re-enqueue at rear
 ```
 
 ### 16.13.4 IO Buffering
@@ -2213,7 +2213,7 @@ These problems are frequently asked in coding interviews at companies like Googl
 
 **Approach:**
 - Stack `s1` handles enqueue (push onto s1).
-- Stack `s2` handles dequeue (if s2 is empty, transfer all from s1 to s2 â€” this reverses order, achieving FIFO).
+- Stack `s2` handles dequeue (if s2 is empty, transfer all from s1 to s2 → this reverses order, achieving FIFO).
 
 ```c
 #include <stdio.h>
@@ -2309,19 +2309,19 @@ Dequeue all: 30 40 50
 ```
 
 **Complexity:**
-- `enqueue`: O(1) â€” push onto s1.
-- `dequeue`: **Amortized O(1)** â€” each element is pushed onto s1 once, moved to s2 once, popped from s2 once. The transfer from s1 to s2 happens at most once per element.
+- `enqueue`: O(1) → push onto s1.
+- `dequeue`: **Amortized O(1)** → each element is pushed onto s1 once, moved to s2 once, popped from s2 once. The transfer from s1 to s2 happens at most once per element.
 
-**Dry run â€” Two-stack queue:**
+**Dry run → Two-stack queue:**
 | Action | s1 | s2 | Queue order |
 |--------|----|----|-------------|
 | enq(10) | [10] | [] | 10 |
 | enq(20) | [10, 20] | [] | 10, 20 |
 | enq(30) | [10, 20, 30] | [] | 10, 20, 30 |
-| deq() | [] | [30, 20, 10] â†’ pop 10 | 10 returned |
-| deq() | [] | [30, 20] â†’ pop 20 | 20 returned |
+| deq() | [] | [30, 20, 10] → pop 10 | 10 returned |
+| deq() | [] | [30, 20] → pop 20 | 20 returned |
 | enq(40) | [40] | [30] | 30, 40 |
-| deq() | [40] | [] â†’ transfer [40] â†’ [40] pop 30 | 30 returned |
+| deq() | [40] | [] → transfer [40] → [40] pop 30 | 30 returned |
 
 ### 16.15.2 Implement a Stack Using Two Queues
 
@@ -2459,21 +2459,21 @@ Pop: 10
 ```
 
 **Complexity (expensive-push):**
-- `push`: O(N) â€” move N elements between queues.
+- `push`: O(N) → move N elements between queues.
 - `pop`: O(1).
 
 **Complexity (expensive-pop):**
-- `push`: O(1) â€” just enqueue.
-- `pop`: O(N) â€” move N-1 elements.
+- `push`: O(1) → just enqueue.
+- `pop`: O(N) → move N-1 elements.
 
 ### 16.15.3 Circular Buffer Advantages
 
 | Advantage | Why It Matters |
 |-----------|----------------|
-| **No memory fragmentation** | Single contiguous allocation â€” no per-element heap churn |
+| **No memory fragmentation** | Single contiguous allocation → no per-element heap churn |
 | **O(1) enqueue/dequeue** | Modulo arithmetic is fast; no shifting |
 | **Cache-friendly** | Sequential access pattern, hardware prefetcher works well |
-| **Fixed latency** | No malloc/free pauses â€” critical for real-time systems |
+| **Fixed latency** | No malloc/free pauses → critical for real-time systems |
 | **Simple memory management** | One allocation, one deallocation |
 | **Producer-consumer friendly** | Front and rear move independently; atomic index updates suffice for single P/C |
 
@@ -2587,8 +2587,8 @@ madam                          -> palindrome
 
 | Operation | Stack (LIFO) | Queue (FIFO) | Deque | Priority Queue |
 |-----------|--------------|--------------|-------|----------------|
-| Insert | `push(x)` â€” at top | `enqueue(x)` â€” at rear | `push_front/push_back` | `enqueue(x, pri)` |
-| Remove | `pop()` â€” from top | `dequeue()` â€” from front | `pop_front/pop_back` | `dequeue()` â€” highest priority |
+| Insert | `push(x)` → at top | `enqueue(x)` → at rear | `push_front/push_back` | `enqueue(x, pri)` |
+| Remove | `pop()` → from top | `dequeue()` → from front | `pop_front/pop_back` | `dequeue()` → highest priority |
 | Peek | `top()` | `front()` | `front/back` | `peek()` |
 | Empty check | `is_empty()` | `is_empty()` | `is_empty()` | `is_empty()` |
 | Complexity (array) | O(1) all | O(1) all | O(1) all | O(N) insert / O(N) extract (unsorted) |
@@ -2626,7 +2626,7 @@ madam                          -> palindrome
 
 4. **BFS data structure:** Which data structure is most appropriate for breadth-first search?
    A) Stack   B) Queue   C) Array   D) Linked list
-   <details><summary>Answer</summary>**B)** BFS explores nodes level by level â€” queue provides the FIFO ordering needed.</details>
+   <details><summary>Answer</summary>**B)** BFS explores nodes level by level → queue provides the FIFO ordering needed.</details>
 
 5. **Circular queue fix:** What problem does a circular queue solve compared to a linear queue?
    A) Slower access   B) The false-full problem   C) Memory waste   D) Complex implementation
@@ -2642,11 +2642,11 @@ madam                          -> palindrome
 
 8. **Two-stack queue:** What is the amortized time complexity of dequeue in a two-stack queue implementation?
    A) O(1)   B) O(N)   C) O(log N)   D) O(NÂ²)
-   <details><summary>Answer</summary>**A)** Amortized O(1) â€” each element is moved between stacks at most once.</details>
+   <details><summary>Answer</summary>**A)** Amortized O(1) → each element is moved between stacks at most once.</details>
 
 9. **Deque full form:** What does "deque" stand for?
    A) Double-Ended Queue   B) Deleted Queue   C) Double Queue   D) Dual-End Queue
-   <details><summary>Answer</summary>**A)** Double-Ended Queue â€” insertion and deletion at both ends.</details>
+   <details><summary>Answer</summary>**A)** Double-Ended Queue → insertion and deletion at both ends.</details>
 
 10. **Stack application:** Which of these is NOT a typical stack application?
     A) Undo in editor   B) Browser back button   C) Print spooling   D) Function call stack
@@ -2658,11 +2658,11 @@ madam                          -> palindrome
 
 - A **stack** follows LIFO: `push` and `pop` operate at the top. Both array and linked-list implementations offer O(1) push/pop.
 - Array-based stacks have fixed capacity; linked stacks grow dynamically.
-- Stacks are used for **expression evaluation** (infixâ†’postfixâ†’evaluation), **parenthesis matching**, **undo/redo**, **browser history**, and **function call management**.
+- Stacks are used for **expression evaluation** (infix→postfix→evaluation), **parenthesis matching**, **undo/redo**, **browser history**, and **function call management**.
 - A **queue** follows FIFO: `enqueue` at the rear, `dequeue` from the front.
 - A **circular queue** wraps indices using modulo to reuse vacated slots, solving the false-full problem.
 - A **linked-list queue** grows dynamically without capacity limits.
-- A **deque** supports insertion and deletion at both ends â€” it combines stack and queue capabilities.
+- A **deque** supports insertion and deletion at both ends → it combines stack and queue capabilities.
 - A **priority queue** processes elements by priority rather than insertion order.
 - Queues are used for **BFS**, **CPU scheduling**, **print spooling**, and **IO buffering**.
 - Interview problems often combine these structures: queue using two stacks, stack using two queues, circular buffer design.
@@ -2681,7 +2681,7 @@ madam                          -> palindrome
 
 ### Application Problems
 
-1. **Evaluate postfix:** Complete the postfix evaluation to handle multi-digit numbers (use space as delimiter). For example: `"23 45 +"` â†’ 68.
+1. **Evaluate postfix:** Complete the postfix evaluation to handle multi-digit numbers (use space as delimiter). For example: `"23 45 +"` → 68.
 
 2. **Deque from scratch:** Implement a deque using a **circular array** (not linked list). Provide `push_front`, `push_back`, `pop_front`, `pop_back`, `front`, `back`, `is_empty`, `is_full`.
 
@@ -2694,8 +2694,8 @@ madam                          -> palindrome
 ### Challenge Problem: LRU Cache
 
 Implement an **LRU (Least Recently Used) cache** using a doubly linked list and a hash map. The cache has a fixed capacity. When an item is accessed:
-- If in cache â†’ move it to front (most recently used).
-- If not in cache and cache full â†’ evict the least recently used (at rear), insert at front.
+- If in cache → move it to front (most recently used).
+- If not in cache and cache full → evict the least recently used (at rear), insert at front.
 
 ```c
 typedef struct lru_node {

@@ -1,4 +1,4 @@
-# Chapter 1 â€” HTML5
+# Chapter 1 → HTML5
 
 > **Next:** [02-css](./02-css.md)
 
@@ -62,13 +62,13 @@ HTML5 introduced a set of landmark elements that replace the generic `<div>`-bas
 
 The primary semantic landmarks are:
 
-- `<header>` â€” Introductory content, navigation links, branding, or heading group for a page or section.
-- `<nav>` â€” A block of navigation links. Documents may contain multiple `<nav>` elements (e.g., primary nav, table of contents, breadcrumbs).
-- `<main>` â€” The dominant content of the `<body>`. A document must have exactly one `<main>` element, visible and not hidden via `display: none` or `aria-hidden`.
-- `<section>` â€” A thematic grouping of content, typically introduced with a heading. Not a generic container; use `<div>` when no semantic relationship exists.
-- `<article>` â€” A self-contained composition that is independently distributable or reusable (forum post, news story, blog entry, comment).
-- `<aside>` â€” Content tangentially related to the surrounding content, such as sidebars, pull quotes, or advertising.
-- `<footer>` â€” Footer for its nearest ancestor sectioning content; typically contains author info, copyright, or related links.
+- `<header>` → Introductory content, navigation links, branding, or heading group for a page or section.
+- `<nav>` → A block of navigation links. Documents may contain multiple `<nav>` elements (e.g., primary nav, table of contents, breadcrumbs).
+- `<main>` → The dominant content of the `<body>`. A document must have exactly one `<main>` element, visible and not hidden via `display: none` or `aria-hidden`.
+- `<section>` → A thematic grouping of content, typically introduced with a heading. Not a generic container; use `<div>` when no semantic relationship exists.
+- `<article>` → A self-contained composition that is independently distributable or reusable (forum post, news story, blog entry, comment).
+- `<aside>` → Content tangentially related to the surrounding content, such as sidebars, pull quotes, or advertising.
+- `<footer>` → Footer for its nearest ancestor sectioning content; typically contains author info, copyright, or related links.
 
 A typical document skeleton:
 
@@ -188,7 +188,7 @@ HTML5 provides native elements for embedding media without third-party plugins.
 </video>
 ```
 
-The `<track>` element supports `kind` values of `captions`, `subtitles`, `descriptions`, `chapters`, and `metadata` â€” essential for accessibility and internationalization.
+The `<track>` element supports `kind` values of `captions`, `subtitles`, `descriptions`, `chapters`, and `metadata` → essential for accessibility and internationalization.
 
 **Canvas:**
 

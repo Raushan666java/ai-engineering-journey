@@ -86,29 +86,29 @@ Capacity estimation grounds architecture decisions in numbers rather than intuit
 
 **Traffic Estimation**
 
-10 million orders per year yields roughly 27,400 orders per day, or about 0.3 orders per second at the daily average. However, e-commerce traffic is bursty: Black Friday can produce 10Ã¢â‚¬â€œ20Ãƒâ€” the daily average. We size for 10Ãƒâ€” peak.
+10 million orders per year yields roughly 27,400 orders per day, or about 0.3 orders per second at the daily average. However, e-commerce traffic is bursty: Black Friday can produce 10Ã¢â‚¬â€œ20Ãƒ→ the daily average. We size for 10Ãƒ→ peak.
 
 ```
 Daily orders avg = 10,000,000 / 365 Ã¢â€°Ë† 27,397
 Orders per second avg = 27,397 / 86,400 Ã¢â€°Ë† 0.32
-Orders per second peak (10Ãƒâ€”) Ã¢â€°Ë† 3.2
+Orders per second peak (10Ãƒ→) Ã¢â€°Ë† 3.2
 
 Checkout involves ~10 database writes per order (order, items, payment, inventory, etc.)
-Write QPS peak Ã¢â€°Ë† 3.2 Ãƒâ€” 10 = 32 Ã¢â€ â€™ round to 50 for headroom
+Write QPS peak Ã¢â€°Ë† 3.2 Ãƒ→ 10 = 32 Ã¢â€ â€™ round to 50 for headroom
 
 Browsing-to-purchase ratio is typically 50:1 to 100:1
-Read QPS peak Ã¢â€°Ë† 32 Ãƒâ€” 6 = 192 Ã¢â€ â€™ round to 200
+Read QPS peak Ã¢â€°Ë† 32 Ãƒ→ 6 = 192 Ã¢â€ â€™ round to 200
 ```
 
 **Storage Estimation**
 
 ```
-Product records: 100,000 stores Ãƒâ€” 100 products avg = 10M products
+Product records: 100,000 stores Ãƒ→ 100 products avg = 10M products
 Each product record Ã¢â€°Ë† 2 KB Ã¢â€ â€™ 20 GB
-Product images: 10M products Ãƒâ€” 3 images avg Ãƒâ€” 500 KB = 15 TB
+Product images: 10M products Ãƒ→ 3 images avg Ãƒ→ 500 KB = 15 TB
   Ã¢â€ â€™ But we offload images to S3/CDN, database stores only URLs (~200 bytes) Ã¢â€ â€™ 2 GB
 
-Order records: 10M orders/year Ãƒâ€” 2 KB + 3 items/order Ãƒâ€” 500 bytes = 20 GB/year + 15 GB/year
+Order records: 10M orders/year Ãƒ→ 2 KB + 3 items/order Ãƒ→ 500 bytes = 20 GB/year + 15 GB/year
 Order growth at 10M/year Ã¢â€ â€™ 35 GB/year
 
 Media (polymorphic): banners, logos, category images Ã¢â€ â€™ estimate 500 GB/year stored on S3
@@ -122,13 +122,13 @@ TOTAL external storage (S3 + CDN) Ã¢â€ â€™ ~5 TB/year
 
 ```
 Hot products: Pareto principle Ã¢â‚¬â€ 20% of products get 80% of views.
-2M hot products Ãƒâ€” 2 KB each Ã¢â€ â€™ 4 GB
+2M hot products Ãƒ→ 2 KB each Ã¢â€ â€™ 4 GB
 
 Active carts: Assume 5% of 1M users have active carts at any time
-50,000 carts Ãƒâ€” 5 KB each Ã¢â€ â€™ 250 MB
+50,000 carts Ãƒ→ 5 KB each Ã¢â€ â€™ 250 MB
 
 Session data: 1M users, assume 10% active sessions
-100,000 sessions Ãƒâ€” 1 KB Ã¢â€ â€™ 100 MB
+100,000 sessions Ãƒ→ 1 KB Ã¢â€ â€™ 100 MB
 
 Full-text search index: ~50 GB (Meilisearch stores inverted indexes in memory)
 Total cache + search memory Ã¢â€°Ë† 50 GB Ã¢â€ â€™ justifies a dedicated Redis cluster + dedicated Meilisearch instance

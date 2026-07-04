@@ -75,7 +75,7 @@ Let TM M be described as (Q, Î£, Î“, Î´, qâ‚€, q_accept, q_reject). 
 3. Encode transitions as tuples: (state, symbol, new_state, new_symbol, direction).
 4. Concatenate all parts with separators.
 
-The encoded TM is denoted âŸ¨MâŸ©. This encoding allows a TM to examine other TMs as data â€” a crucial capability.
+The encoded TM is denoted âŸ¨MâŸ©. This encoding allows a TM to examine other TMs as data → a crucial capability.
 
 ### 9.4 The Universal Turing Machine
 
@@ -94,8 +94,8 @@ U uses a *multitape* architecture (simulatable on a single tape):
    a. Read symbol under M's head on Tape 2.
    b. Search Tape 1 for a transition matching current state and symbol.
    c. If found: update state on Tape 3, write symbol on Tape 2, move head.
-   d. If M is in q_accept â†’ accept. If in q_reject â†’ reject.
-   e. If no matching transition â†’ reject.
+   d. If M is in q_accept → accept. If in q_reject → reject.
+   e. If no matching transition → reject.
 
 **Significance:** The UTM is the theoretical basis for stored-program computers. A single machine can simulate any other machine by reading its program. This is exactly what happens when you run a program on your computer.
 
@@ -103,7 +103,7 @@ U uses a *multitape* architecture (simulatable on a single tape):
 
 **Church-Turing Thesis:** Everything that is intuitively computable can be computed by a Turing machine.
 
-This is not a theorem (it cannot be proved) but a **thesis** â€” a claim about the nature of computation that is universally accepted because:
+This is not a theorem (it cannot be proved) but a **thesis** → a claim about the nature of computation that is universally accepted because:
 - Every proposed model of computation (Î»-calculus, general recursive functions, Post systems, RAM machines, cellular automata) has been shown equivalent to Turing machines.
 - No one has found a computation that humans would call "effective" but that cannot be simulated by a TM.
 - The thesis has held for 90+ years despite intensive investigation.
@@ -120,7 +120,7 @@ An **oracle Turing machine** is a TM with an additional "oracle tape" and a spec
 
 Oracle machines allow us to:
 - **Classify problems relative to oracles.** For example, Pá´¬ and NPá´¬ are classes relativized to A.
-- **Prove relativization results.** There exist oracles A and B such that Pá´¬ = NPá´¬ and Pá´® â‰  NPá´®. This shows that any proof resolving P vs NP must be "non-relativizing" â€” it cannot work for all possible oracles.
+- **Prove relativization results.** There exist oracles A and B such that Pá´¬ = NPá´¬ and Pá´® â‰  NPá´®. This shows that any proof resolving P vs NP must be "non-relativizing" → it cannot work for all possible oracles.
 - **Understand the limits of diagonalization.** Since relativizing proofs apply to all oracles, and P vs NP has contradicting relativizations, any correct proof must be non-relativizing. This rules out many standard proof techniques.
 
 ### 9.7 The Arithmetic Hierarchy
@@ -188,7 +188,7 @@ Each type is a proper subset of the next: Regular ? CFL ? CSL ? RE.
 
 ## Examples
 
-### Example 9.1: RE but Not Recursive â€” The Halting Problem (Preview)
+### Example 9.1: RE but Not Recursive → The Halting Problem (Preview)
 
 HALT_TM = { âŸ¨M, wâŸ© | M halts on input w }.
 
@@ -203,13 +203,13 @@ Consider L = { âŸ¨Mâ‚, Mâ‚‚âŸ© | L(Mâ‚) = L(Mâ‚‚) } (e
 
 ### Example 9.3: Many-One Reductions
 
-To show a language A is not recursive, we can reduce a known non-recursive language (like HALT_TM) to A. If A were recursive, then HALT_TM would be recursive too â€” contradiction.
+To show a language A is not recursive, we can reduce a known non-recursive language (like HALT_TM) to A. If A were recursive, then HALT_TM would be recursive too → contradiction.
 
 For language EMPTY_TM = { âŸ¨MâŸ© | L(M) = âˆ… }:
 - We can reduce HALT_TM to EMPTY_TM.
 - Given âŸ¨M, wâŸ©, construct M': on input x, M' simulates M on w; if M accepts w, M' accepts x; otherwise M' loops.
 - Then: if M halts on w, L(M') = Î£* â‰  âˆ…. If M doesn't halt on w, L(M') = âˆ….
-- So âŸ¨M, wâŸ© âˆˆ HALT_TM iff âŸ¨M'âŸ© âˆ‰ EMPTY_TM. A decider for EMPTY_TM would give a decider for HALT_TM â€” impossible.
+- So âŸ¨M, wâŸ© âˆˆ HALT_TM iff âŸ¨M'âŸ© âˆ‰ EMPTY_TM. A decider for EMPTY_TM would give a decider for HALT_TM → impossible.
 
 ### Example 9.4: UTMs as Stored-Program Computers
 

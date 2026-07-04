@@ -1,4 +1,4 @@
-# GATE CS Mock Test 6 â€” Full-Length Practice Paper
+# GATE CS Mock Test 6 → Full-Length Practice Paper
 
 
 ## Chapter at a Glance
@@ -237,7 +237,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q18 (1 Mark):** Evaluate lim_{xâ†’0} (eË£ âˆ’ 1 âˆ’ x) / xÂ².
+**Q18 (1 Mark):** Evaluate lim_{x→0} (eË£ âˆ’ 1 âˆ’ x) / xÂ².
 
 (A) 0
 (B) 1/2
@@ -518,7 +518,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q49 (2 Marks) [DBMS]:** R(A, B, C, D, E) with functional dependencies: AB â†’ C, C â†’ D, D â†’ B, D â†’ E. The candidate keys are:
+**Q49 (2 Marks) [DBMS]:** R(A, B, C, D, E) with functional dependencies: AB → C, C → D, D → B, D → E. The candidate keys are:
 
 (A) AB only
 (B) AB and AC only
@@ -527,7 +527,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q50 (2 Marks) [TOC]:** How many steps are needed in a leftmost derivation of the string "aabb" from grammar S â†’ aSb | Îµ?
+**Q50 (2 Marks) [TOC]:** How many steps are needed in a leftmost derivation of the string "aabb" from grammar S → aSb | Îµ?
 
 (A) 2
 (B) 3
@@ -613,15 +613,15 @@ Which conclusion(s) logically follow(s)?
 
 **Q6:** The sequence consists of squares of consecutive odd numbers: 1Â² = 1, 3Â² = 9, 5Â² = 25, 7Â² = 49, 9Â² = 81, 11Â² = 121.
 
-**Q7:** Each letter is shifted backward by 3 positions in the alphabet: Tâ†’Q, Iâ†’F, Gâ†’D, Eâ†’B, Râ†’O (Caesar cipher with shift âˆ’3). Applying the same to LION: Lâ†’I, Iâ†’F, Oâ†’L, Nâ†’K, giving IFLK.
+**Q7:** Each letter is shifted backward by 3 positions in the alphabet: T→Q, I→F, G→D, E→B, R→O (Caesar cipher with shift âˆ’3). Applying the same to LION: L→I, I→F, O→L, N→K, giving IFLK.
 
 **Q8:** Net east-west displacement = 10 âˆ’ 2 = 8 km east. North displacement = 6 km. Distance from start = âˆš(8Â² + 6Â²) = âˆš(64 + 36) = âˆš100 = 10 km.
 
 **Q9:** Comparing codes 1 and 2, "well" appears in both with code "ne". In code 2, "well done" = "ne ka", so "done" = "ka". Code 3 is a distractor.
 
-**Q10:** Unit digits: 239â†’9, 347â†’7, 456â†’6, 578â†’8. 9Ã—7=63 (unit 3), 3Ã—6=18 (unit 8), 8Ã—8=64 (unit 4). The unit digit of the product is 4.
+**Q10:** Unit digits: 239→9, 347→7, 456→6, 578→8. 9Ã—7=63 (unit 3), 3Ã—6=18 (unit 8), 8Ã—8=64 (unit 4). The unit digit of the product is 4.
 
-**Q11:** Let ages be 7x and 2x. After 5 years: (7x+5)/(2x+5) = 8/3. Cross-multiply: 3(7x+5) = 8(2x+5) â†’ 21x+15 = 16x+40 â†’ 5x = 25 â†’ x = 5. Father's age = 7Ã—5 = 35 years.
+**Q11:** Let ages be 7x and 2x. After 5 years: (7x+5)/(2x+5) = 8/3. Cross-multiply: 3(7x+5) = 8(2x+5) → 21x+15 = 16x+40 → 5x = 25 → x = 5. Father's age = 7Ã—5 = 35 years.
 
 **Q12:** Pipe fills at rate 1/12 per hour. Leak empties at rate 1/20 per hour. Net fill rate = 1/12 âˆ’ 1/20 = (5âˆ’3)/60 = 2/60 = 1/30 per hour. Time to fill = 30 hours.
 
@@ -639,9 +639,9 @@ Which conclusion(s) logically follow(s)?
 
 **Q19:** For independent events, P(Aâˆ©B) = P(A)Ã—P(B) = 0.6 Ã— 0.3 = 0.18.
 
-**Q20:** The converse of implication Pâ†’Q is Qâ†’P. Given P = "it rains", Q = "ground is wet", the converse is "If the ground is wet, then it rains."
+**Q20:** The converse of implication P→Q is Q→P. Given P = "it rains", Q = "ground is wet", the converse is "If the ground is wet, then it rains."
 
-**Q21:** For divisibility by 5, last digit must be 0 or 5. Case 1 (last digit 0): arrange first 4 digits from {1,2,3,4,5} â†’ 5Ã—4Ã—3Ã—2 = 120. Case 2 (last digit 5): first digit cannot be 0 â†’ choices = 4Ã—4Ã—3Ã—2 = 96. Total = 120+96 = 216.
+**Q21:** For divisibility by 5, last digit must be 0 or 5. Case 1 (last digit 0): arrange first 4 digits from {1,2,3,4,5} → 5Ã—4Ã—3Ã—2 = 120. Case 2 (last digit 5): first digit cannot be 0 → choices = 4Ã—4Ã—3Ã—2 = 96. Total = 120+96 = 216.
 
 **Q22:** Matrix is upper triangular. Sum of eigenvalues = trace = 1+4+6 = 11.
 
@@ -693,13 +693,13 @@ Which conclusion(s) logically follow(s)?
 
 **Q46:** A full binary tree with height h has all levels filled: 2â°+2Â¹+...+2Ê° = 2^{h+1}âˆ’1 = 2â¶âˆ’1 = 63 nodes.
 
-**Q47:** Need = Max âˆ’ Allocation: P0=(7,4,3), P1=(1,2,2), P2=(6,0,0), P3=(0,1,0). With Avail=(3,3,2): P1 fits â†’ P1 releases (2,0,0), Avail=(5,3,2). P3 fits â†’ releases (2,1,1), Avail=(7,4,3). P0 fits â†’ releases (0,1,0), Avail=(7,5,3). P2 fits. Safe sequence: P1, P3, P0, P2.
+**Q47:** Need = Max âˆ’ Allocation: P0=(7,4,3), P1=(1,2,2), P2=(6,0,0), P3=(0,1,0). With Avail=(3,3,2): P1 fits → P1 releases (2,0,0), Avail=(5,3,2). P3 fits → releases (2,1,1), Avail=(7,4,3). P0 fits → releases (0,1,0), Avail=(7,5,3). P2 fits. Safe sequence: P1, P3, P0, P2.
 
 **Q48:** Generator polynomial xÂ³+x+1 = 1011. Append 3 zeros to dataword: 110101000. Binary polynomial division: XOR remainder = 001. Codeword = 110101001.
 
-**Q49:** ABâº = ABCDE (ABâ†’C, Câ†’D, Dâ†’B already present, Dâ†’E). ACâº = ACDEB (Câ†’D, Dâ†’B, Dâ†’E). ADâº = ADBCE (Dâ†’B gives AB, then ABâ†’C, then Dâ†’E). Since A alone gives A, B alone gives B, D alone gives DEAB but not C, the minimal superkeys are AB, AC, and AD.
+**Q49:** ABâº = ABCDE (AB→C, C→D, D→B already present, D→E). ACâº = ACDEB (C→D, D→B, D→E). ADâº = ADBCE (D→B gives AB, then AB→C, then D→E). Since A alone gives A, B alone gives B, D alone gives DEAB but not C, the minimal superkeys are AB, AC, and AD.
 
-**Q50:** S â†’ aSb â†’ aaSbb â†’ aaÎµbb = aabb. The leftmost derivation takes exactly 3 steps.
+**Q50:** S → aSb → aaSbb → aaÎµbb = aabb. The leftmost derivation takes exactly 3 steps.
 
 **Q51:** The DFA has 4 states: qâ‚€ (no match), qâ‚ (ends in "a"), qâ‚‚ (ends in "aa"), qâ‚ƒ (accepting, ends in "abb"). Transitions: from qâ‚ƒ on 'a' go to qâ‚, on 'b' go to qâ‚‚.
 
@@ -709,4 +709,4 @@ Which conclusion(s) logically follow(s)?
 
 **Q54:** From postorder (last element A is root), split inorder into left (D,B,E) and right (F,C,G). From postorder, left subtree root is B (DEB), right subtree root is C (FGC). Recursively: A's left child B with inorder D,B,E gives D left of B, E right of B. A's right child C with inorder F,C,G gives F left of C, G right of C. Preorder: A,B,D,E,C,F,G.
 
-**Q55:** LRU with 3 frames: 7(mâ†’[7]),0(mâ†’[7,0]),1(mâ†’[7,0,1]),2(mâ†’[0,1,2],evict7),0(hit),3(mâ†’[1,2,3],evict1),0(hitâ†’[2,3,0]),4(mâ†’[3,0,4],evict2),2(mâ†’[0,4,2],evict3),3(mâ†’[4,2,3],evict0),0(mâ†’[2,3,0],evict4),3(hit),2(hit),1(mâ†’[3,2,1],evict0),2(hit),0(mâ†’[2,1,0],evict3),1(hit),7(mâ†’[1,0,7],evict2),0(hit),1(hit). Total = 12 faults.
+**Q55:** LRU with 3 frames: 7(m→[7]),0(m→[7,0]),1(m→[7,0,1]),2(m→[0,1,2],evict7),0(hit),3(m→[1,2,3],evict1),0(hit→[2,3,0]),4(m→[3,0,4],evict2),2(m→[0,4,2],evict3),3(m→[4,2,3],evict0),0(m→[2,3,0],evict4),3(hit),2(hit),1(m→[3,2,1],evict0),2(hit),0(m→[2,1,0],evict3),1(hit),7(m→[1,0,7],evict2),0(hit),1(hit). Total = 12 faults.

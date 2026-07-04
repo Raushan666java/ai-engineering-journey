@@ -2,7 +2,7 @@
 
 > **Previous:** [Security Interview Q&amp;A](./61-interview-security.md) | **Next:** [Tools &amp; DevOps Interview Q&amp;A](./63-interview-tools.md)
 
-This chapter covers everything you need to know about testing Java and Spring Boot applications for technical interviews. From the testing pyramid and JUnit 5 features to Mockito mocking, Spring Boot testing slices, Testcontainers for integration testing, performance testing with JMH and Gatling, and code coverage with JaCoCo and Pitest â€” each question provides detailed explanations with complete, working code examples. A strong testing strategy is the hallmark of a professional software engineer. Understanding these patterns will help you build reliable, maintainable, and well-tested applications.
+This chapter covers everything you need to know about testing Java and Spring Boot applications for technical interviews. From the testing pyramid and JUnit 5 features to Mockito mocking, Spring Boot testing slices, Testcontainers for integration testing, performance testing with JMH and Gatling, and code coverage with JaCoCo and Pitest → each question provides detailed explanations with complete, working code examples. A strong testing strategy is the hallmark of a professional software engineer. Understanding these patterns will help you build reliable, maintainable, and well-tested applications.
 
 ![Testing Interview Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/62-interview-testing.png)
 
@@ -33,7 +33,7 @@ flowchart LR
 
 The testing pyramid is a conceptual model that describes the ideal distribution of tests across different levels of granularity. The pyramid has three layers: Unit Tests (base, largest), Integration Tests (middle), and End-to-End Tests (top, smallest).
 
-**Unit Tests** form the base of the pyramid â€” they should be the most numerous, fastest, and cheapest to write and maintain. Unit tests verify individual components in isolation, mocking all external dependencies. They test business logic, edge cases, validation rules, and calculations.
+**Unit Tests** form the base of the pyramid → they should be the most numerous, fastest, and cheapest to write and maintain. Unit tests verify individual components in isolation, mocking all external dependencies. They test business logic, edge cases, validation rules, and calculations.
 
 ```java
 @ExtendWith(MockitoExtension.class)
@@ -80,7 +80,7 @@ class OrderServiceTest {
 }
 ```
 
-**Integration Tests** form the middle layer. They verify that components work together correctly â€” database access, API endpoints, message queues, and external service clients. These tests use real infrastructure where practical (real database, test containers) and mock only external services.
+**Integration Tests** form the middle layer. They verify that components work together correctly → database access, API endpoints, message queues, and external service clients. These tests use real infrastructure where practical (real database, test containers) and mock only external services.
 
 ```java
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -117,7 +117,7 @@ class OrderControllerIntegrationTest {
 }
 ```
 
-**End-to-End Tests** form the top of the pyramid â€” they are the fewest, slowest, and most expensive. E2E tests simulate real user flows across the entire system, including the frontend, backend, and external integrations.
+**End-to-End Tests** form the top of the pyramid → they are the fewest, slowest, and most expensive. E2E tests simulate real user flows across the entire system, including the frontend, backend, and external integrations.
 
 ```java
 @Tag("e2e")
@@ -267,7 +267,7 @@ class JUnit5AnnotationsTest {
 
     // Disabled test
     @Test
-    @Disabled("Until we fix the caching layer â€” see JIRA-1234")
+    @Disabled("Until we fix the caching layer → see JIRA-1234")
     void testDisabledUntilFix() {
         // Will be skipped
     }
@@ -279,7 +279,7 @@ class JUnit5AnnotationsTest {
 ```java
 @Test
 void advancedAssertions() {
-    // Grouped assertions â€” all are executed, failures are reported together
+    // Grouped assertions → all are executed, failures are reported together
     Order order = new Order("cust-1", List.of(new OrderItem("SKU-1", 2)));
 
     assertAll("order verification",
@@ -288,7 +288,7 @@ void advancedAssertions() {
         () -> assertThat(order.getStatus()).isEqualTo(OrderStatus.PENDING)
     );
 
-    // Assumptions â€” skip test if condition fails
+    // Assumptions → skip test if condition fails
     assumeTrue(env.isProduction(), "This test only runs in production");
     assumeFalse(env.isDevelopment());
 
@@ -304,8 +304,8 @@ void advancedAssertions() {
 
 Mockito is a mocking framework that creates test doubles to isolate the system under test. It supports two types of test doubles:
 
-- **Mock** â€” creates a complete fake object with no real behavior. All methods return default values (null, 0, false) unless stubbed.
-- **Spy** â€” wraps a real object. By default, methods execute real behavior, but specific methods can be stubbed.
+- **Mock** → creates a complete fake object with no real behavior. All methods return default values (null, 0, false) unless stubbed.
+- **Spy** → wraps a real object. By default, methods execute real behavior, but specific methods can be stubbed.
 
 ```java
 @ExtendWith(MockitoExtension.class)
@@ -323,13 +323,13 @@ class MockitoExamplesTest {
 
     @Test
     void mockVsSpy() {
-        // Mock â€” default behavior
+        // Mock → default behavior
         Order mockOrder = mock(Order.class);
         when(mockOrder.getStatus()).thenReturn(OrderStatus.CONFIRMED);
         System.out.println(mockOrder.getStatus()); // CONFIRMED
         System.out.println(mockOrder.getCustomerId()); // null
 
-        // Spy â€” real behavior by default
+        // Spy → real behavior by default
         Order realOrder = new Order("cust-1");
         Order spyOrder = spy(realOrder);
         when(spyOrder.getCustomerId()).thenReturn("overridden");
@@ -459,7 +459,7 @@ class MockitoExamplesTest {
 
 **@InjectMocks rules:**
 
-1. Mockito tries constructor injection first â€” uses the largest constructor.
+1. Mockito tries constructor injection first → uses the largest constructor.
 2. If constructor injection fails, it falls back to setter injection.
 3. If setter injection fails, it falls back to field injection.
 4. If Mockito cannot inject a mock, it leaves the field as null.
@@ -531,7 +531,7 @@ class BddStyleTest {
 
 Spring Boot testing slices load only a subset of the application context, making tests faster and more focused. Each slice loads specific beans relevant to the layer being tested.
 
-**@WebMvcTest** â€” Tests the web layer only. Loads controllers, filters, and MVC infrastructure but not services or repositories.
+**@WebMvcTest** → Tests the web layer only. Loads controllers, filters, and MVC infrastructure but not services or repositories.
 
 ```java
 @WebMvcTest(controllers = OrderController.class)
@@ -599,7 +599,7 @@ class OrderControllerTest {
 }
 ```
 
-**@DataJpaTest** â€” Tests JPA repositories. Loads only JPA-related beans (EntityManager, DataSource, repositories) and uses an in-memory database by default.
+**@DataJpaTest** → Tests JPA repositories. Loads only JPA-related beans (EntityManager, DataSource, repositories) and uses an in-memory database by default.
 
 ```java
 @DataJpaTest
@@ -666,7 +666,7 @@ class OrderRepositoryTest {
 }
 ```
 
-**@JsonTest** â€” Tests JSON serialization and deserialization.
+**@JsonTest** → Tests JSON serialization and deserialization.
 
 ```java
 @JsonTest
@@ -719,7 +719,7 @@ class OrderJsonTest {
 }
 ```
 
-**@RestClientTest** â€” Tests REST clients.
+**@RestClientTest** → Tests REST clients.
 
 ```java
 @RestClientTest(OrderServiceClient.class)
@@ -1057,7 +1057,7 @@ class OrderServiceIntegrationTest {
     @Rollback(false)  // Keep the data for debugging
     @Tag("debug")
     void debugTransaction() {
-        // Useful for debugging â€” data persists after test
+        // Useful for debugging → data persists after test
     }
 
     @Test
@@ -1233,16 +1233,16 @@ class OrderFullIntegrationTest {
 
 The F.I.R.S.T. principles are a set of guidelines for writing effective unit tests:
 
-- **F**ast â€” Tests should run quickly. Slow tests discourage frequent execution.
-- **I**solated â€” Tests should not depend on each other. Each test should run independently, in any order.
-- **R**epeatable â€” Tests should produce the same result every time, regardless of environment.
-- **S**elf-validating â€” Tests should have a boolean outcome (pass/fail) without manual inspection.
-- **T**imely â€” Tests should be written at the right time (preferably before the code).
+- **F**ast → Tests should run quickly. Slow tests discourage frequent execution.
+- **I**solated → Tests should not depend on each other. Each test should run independently, in any order.
+- **R**epeatable → Tests should produce the same result every time, regardless of environment.
+- **S**elf-validating → Tests should have a boolean outcome (pass/fail) without manual inspection.
+- **T**imely → Tests should be written at the right time (preferably before the code).
 
 **Fast:**
 
 ```java
-// BAD: Slow test â€” hits the database
+// BAD: Slow test → hits the database
 @Test
 void slowOrderTest() {
     Order order = new Order();
@@ -1251,7 +1251,7 @@ void slowOrderTest() {
     assertThat(found.getCustomerId()).isEqualTo("cust-1");
 }
 
-// GOOD: Fast test â€” uses mocks
+// GOOD: Fast test → uses mocks
 @Test
 void fastOrderTest() {
     when(orderRepository.findById(1L))
@@ -1277,7 +1277,7 @@ void test1() {
 
 @Test
 void test2() {
-    // FAILS if test1 ran first â€” sharedOrder is CONFIRMED
+    // FAILS if test1 ran first → sharedOrder is CONFIRMED
     assertThat(sharedOrder.getStatus()).isEqualTo(OrderStatus.PENDING);
 }
 
@@ -1299,7 +1299,7 @@ void isolatedTest2() {
 **Repeatable:**
 
 ```java
-// BAD: Non-repeatable â€” depends on current time
+// BAD: Non-repeatable → depends on current time
 @Test
 void badDateTest() {
     Order order = new Order();
@@ -1308,7 +1308,7 @@ void badDateTest() {
     // This test passes only on certain dates
 }
 
-// GOOD: Repeatable â€” controls the time
+// GOOD: Repeatable → controls the time
 @Test
 void goodDateTest() {
     Clock clock = Clock.fixed(
@@ -1352,11 +1352,11 @@ Write tests before (TDD) or immediately after writing production code. Tests wri
 
 Code coverage measures the percentage of code executed during automated tests. JaCoCo (Java Code Coverage) is the most popular coverage tool for Java projects. It measures several types of coverage:
 
-- **Instruction coverage** â€” percentage of bytecode instructions executed
-- **Branch coverage** â€” percentage of branches (if/else, switch) executed
-- **Line coverage** â€” percentage of source lines executed
-- **Method coverage** â€” percentage of methods called
-- **Class coverage** â€” percentage of classes loaded
+- **Instruction coverage** → percentage of bytecode instructions executed
+- **Branch coverage** → percentage of branches (if/else, switch) executed
+- **Line coverage** → percentage of source lines executed
+- **Method coverage** → percentage of methods called
+- **Class coverage** → percentage of classes loaded
 
 **Maven configuration with JaCoCo and coverage thresholds:**
 
@@ -1668,7 +1668,7 @@ class DiscountCalculatorTest {
 }
 ```
 
-Pitest will mutate the condition `> 0` to `>= 0`. If the tests pass (they would â€” we test the boundary), the mutation survives. We need to add:
+Pitest will mutate the condition `> 0` to `>= 0`. If the tests pass (they would → we test the boundary), the mutation survives. We need to add:
 
 ```java
 @Test
@@ -1686,7 +1686,7 @@ void ordersOver100BoundaryTest() {
 
 **Interpreting Pitest results:**
 
-- **Survived mutation (RED)**: Tests did not catch the change â€” need better tests.
+- **Survived mutation (RED)**: Tests did not catch the change → need better tests.
 - **Killed mutation (GREEN)**: Tests caught the change.
 - **Timed out**: Mutation caused infinite loop.
 - **Non-viable**: Mutation produced uncompilable code.
@@ -1702,7 +1702,7 @@ Pitest also generates a HTML report in `target/pit-reports/` showing exactly whi
 ```java
 class ParameterizedTestExamples {
 
-    // @ValueSource â€” simplest, for single primitive parameters
+    // @ValueSource → simplest, for single primitive parameters
     @ParameterizedTest
     @ValueSource(strings = {"racecar", "radar", "level", "madam"})
     void palindromesAreDetected(String candidate) {
@@ -1715,7 +1715,7 @@ class ParameterizedTestExamples {
         assertThat(number).isPositive();
     }
 
-    // @CsvSource â€” for multiple parameters
+    // @CsvSource → for multiple parameters
     @ParameterizedTest
     @CsvSource({
         "1, 1, 2",
@@ -1738,7 +1738,7 @@ class ParameterizedTestExamples {
         assertThat(net).isEqualByComparingTo(expected);
     }
 
-    // @CsvFileSource â€” loads from classpath CSV file
+    // @CsvFileSource → loads from classpath CSV file
     @ParameterizedTest
     @CsvFileSource(resources = "/test-data/orders.csv", numLinesToSkip = 1)
     void orderValidation(String customerId, int itemCount, String expectedStatus) {
@@ -1750,7 +1750,7 @@ class ParameterizedTestExamples {
         assertThat(result.getStatus().name()).isEqualTo(expectedStatus);
     }
 
-    // @EnumSource â€” for enum parameters
+    // @EnumSource → for enum parameters
     @ParameterizedTest
     @EnumSource(value = OrderStatus.class, names = {"CONFIRMED", "SHIPPED"}, mode = EnumSource.Mode.INCLUDE)
     void activeStatusesAreNotPending(OrderStatus status) {
@@ -1763,7 +1763,7 @@ class ParameterizedTestExamples {
         assertThat(status.getDisplayName()).isNotBlank();
     }
 
-    // @MethodSource â€” most flexible, for complex types
+    // @MethodSource → most flexible, for complex types
     @ParameterizedTest
     @MethodSource("provideOrdersForDiscount")
     void discountCalculation(Order order, BigDecimal expectedDiscount) {
@@ -1780,7 +1780,7 @@ class ParameterizedTestExamples {
         );
     }
 
-    // @ArgumentsSource â€” custom ArgumentsProvider
+    // @ArgumentsSource → custom ArgumentsProvider
     @ParameterizedTest
     @ArgumentsSource(OrderArgumentsProvider.class)
     void customProviderTest(Order order) {
@@ -2419,7 +2419,7 @@ Test-Driven Development (TDD) is a software development approach where tests are
 
 **TDD example: Building an order discount calculator**
 
-Step 1 â€” Red (write failing test):
+Step 1 → Red (write failing test):
 
 ```java
 class DiscountCalculatorTest {
@@ -2434,9 +2434,9 @@ class DiscountCalculatorTest {
 }
 ```
 
-Test fails â€” `DiscountCalculator` does not exist yet.
+Test fails → `DiscountCalculator` does not exist yet.
 
-Step 2 â€” Green (write minimal code):
+Step 2 → Green (write minimal code):
 
 ```java
 public class DiscountCalculator {
@@ -2456,7 +2456,7 @@ public class DiscountCalculator {
 }
 ```
 
-Step 3 â€” Refactor:
+Step 3 → Refactor:
 
 ```java
 public class DiscountCalculator {
@@ -2499,7 +2499,7 @@ void ordersExactly100GetNoDiscount() {
 
 **TDD in a Spring Boot service:**
 
-Step 1 â€” Red:
+Step 1 → Red:
 
 ```java
 @ExtendWith(MockitoExtension.class)
@@ -2527,7 +2527,7 @@ class OrderServiceTest {
 }
 ```
 
-Step 2 â€” Green:
+Step 2 → Green:
 
 ```java
 @Service
@@ -2542,7 +2542,7 @@ public class OrderService {
 }
 ```
 
-Step 3 â€” Refactor:
+Step 3 → Refactor:
 
 ```java
 @Service
@@ -2990,7 +2990,7 @@ class LiquibaseMigrationTest {
 
 **Answer:**
 
-Test naming and structure directly impact maintainability. Good test names serve as documentation â€” they describe what the system does in what scenario.
+Test naming and structure directly impact maintainability. Good test names serve as documentation → they describe what the system does in what scenario.
 
 **Method naming conventions:**
 

@@ -54,9 +54,9 @@ Spring Boot applications have access to a rich ecosystem of logging frameworks:
 
 | Framework | Description |
 |-----------|-------------|
-| **SLF4J** | Simple Logging Facade for Java â€” the API facade |
+| **SLF4J** | Simple Logging Facade for Java → the API facade |
 | **Logback** | Native SLF4J implementation, Spring Boot's default |
-| **Log4j2** | Apache Log4j 2 â€” asynchronous, high-performance alternative |
+| **Log4j2** | Apache Log4j 2 → asynchronous, high-performance alternative |
 | **java.util.logging** | JDK built-in, rarely used directly in Spring Boot |
 
 Spring Boot uses SLF4J + Logback by default. All internal Spring logging goes through SLF4J, and Logback is the default implementation.
@@ -115,10 +115,10 @@ ROOT
 SLF4J supports parameterized messages with `{}` placeholders:
 
 ```java
-// Good â€” parameterized (avoids string concatenation when disabled)
+// Good → parameterized (avoids string concatenation when disabled)
 log.info("User {} placed order {} worth ${}", userId, orderId, amount);
 
-// Bad â€” string concatenation (evaluated even when level is disabled)
+// Bad → string concatenation (evaluated even when level is disabled)
 log.info("User " + userId + " placed order " + orderId);
 
 // Multiple parameters
@@ -281,10 +281,10 @@ Logback supports several rolling policies:
 <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
     <fileNamePattern>logs/app.%d{yyyy-MM-dd}.log</fileNamePolicy>
     <!-- More patterns:
-         .%d{yyyy-MM-dd}           â†’ daily
-         .%d{yyyy-MM-dd_HH}        â†’ hourly
-         .%d{yyyy-ww}              â†’ weekly
-         .%d{yyyy-MM}              â†’ monthly
+         .%d{yyyy-MM-dd}           → daily
+         .%d{yyyy-MM-dd_HH}        → hourly
+         .%d{yyyy-ww}              → weekly
+         .%d{yyyy-MM}              → monthly
     -->
     <maxHistory>30</maxHistory>
     <cleanHistoryOnStart>true</cleanHistoryOnStart>
@@ -314,7 +314,7 @@ Logback supports several rolling policies:
 
 Filters control which log events reach an appender.
 
-**ThresholdFilter** â€” only events above a threshold:
+**ThresholdFilter** → only events above a threshold:
 
 ```xml
 <appender name="ERROR_FILE" class="ch.qos.logback.core.FileAppender">
@@ -324,7 +324,7 @@ Filters control which log events reach an appender.
 </appender>
 ```
 
-**LevelFilter** â€” exact match:
+**LevelFilter** → exact match:
 
 ```xml
 <appender name="WARN_FILE" class="ch.qos.logback.core.FileAppender">
@@ -336,7 +336,7 @@ Filters control which log events reach an appender.
 </appender>
 ```
 
-**EvaluatorFilter** â€” custom conditions:
+**EvaluatorFilter** → custom conditions:
 
 ```xml
 <appender name="SLOW_SQL" class="ch.qos.logback.core.FileAppender">
@@ -349,7 +349,7 @@ Filters control which log events reach an appender.
 </appender>
 ```
 
-#### 1.3.5 MDC â€” Mapped Diagnostic Context
+#### 1.3.5 MDC → Mapped Diagnostic Context
 
 MDC allows you to add contextual information to log messages:
 
@@ -1318,7 +1318,7 @@ public class I18nConfig {
 
 #### 1.9.2 LocaleResolver Strategies
 
-**AcceptHeaderLocaleResolver** â€” uses the `Accept-Language` HTTP header:
+**AcceptHeaderLocaleResolver** → uses the `Accept-Language` HTTP header:
 
 ```java
 @Bean
@@ -1338,7 +1338,7 @@ public LocaleResolver localeResolver() {
 }
 ```
 
-**SessionLocaleResolver** â€” stores locale in the HTTP session:
+**SessionLocaleResolver** → stores locale in the HTTP session:
 
 ```java
 @Bean
@@ -1350,7 +1350,7 @@ public LocaleResolver localeResolver() {
 }
 ```
 
-**CookieLocaleResolver** â€” stores locale in a cookie (persists across sessions):
+**CookieLocaleResolver** → stores locale in a cookie (persists across sessions):
 
 ```java
 @Bean
@@ -1372,7 +1372,7 @@ public LocaleResolver localeResolver() {
 }
 ```
 
-**Custom LocaleResolver** â€” for database-backed locale persistence:
+**Custom LocaleResolver** → for database-backed locale persistence:
 
 ```java
 package com.example.i18n.config;
@@ -1434,7 +1434,7 @@ public class UserPreferenceLocaleResolver extends AbstractLocaleResolver {
 
 #### 1.9.3 Message Bundles
 
-**src/main/resources/messages/messages.properties** (default â€” English):
+**src/main/resources/messages/messages.properties** (default → English):
 
 ```properties
 # General
@@ -2274,7 +2274,7 @@ public class LoggingAspect {
             MDC.put("class", className);
             MDC.put("method", methodName);
 
-            log.info("â†’ {}.{}({})", className, methodName,
+            log.info("→ {}.{}({})", className, methodName,
                     Arrays.stream(args)
                             .map(a -> a != null ? a.toString() : "null")
                             .collect(Collectors.joining(", ")));
@@ -2558,7 +2558,7 @@ Add the Logstash encoder and configure:
 1. A JSON file appender with daily rotation and gzip compression
 2. Custom fields for application name and environment
 3. MDC inclusion in JSON output
-4. Custom field name mappings (timestamp â†’ @timestamp, level â†’ severity)
+4. Custom field name mappings (timestamp → @timestamp, level → severity)
 5. Redaction of sensitive fields (password, secret, creditCard)
 
 Write a test that logs an order creation event and verifies the JSON output structure.
@@ -2579,13 +2579,13 @@ Include the trace ID in all log messages. Verify with a test controller.
 
 Build a `GlobalExceptionHandler` with `@RestControllerAdvice` that handles:
 
-1. `MethodArgumentNotValidException` â€” returns field-level validation errors
-2. `ConstraintViolationException` â€” returns constraint violation messages
-3. `MissingServletRequestParameterException` â€” returns missing parameter info
-4. `MethodArgumentTypeMismatchException` â€” returns type mismatch details
-5. `HttpMessageNotReadableException` â€” returns malformed request body error
-6. `AccessDeniedException` â€” returns 403 with a message
-7. Any other `Exception` â€” returns 500 with a generic message
+1. `MethodArgumentNotValidException` → returns field-level validation errors
+2. `ConstraintViolationException` → returns constraint violation messages
+3. `MissingServletRequestParameterException` → returns missing parameter info
+4. `MethodArgumentTypeMismatchException` → returns type mismatch details
+5. `HttpMessageNotReadableException` → returns malformed request body error
+6. `AccessDeniedException` → returns 403 with a message
+7. Any other `Exception` → returns 500 with a generic message
 
 Format all responses as RFC 7807 Problem Details with timestamps and trace IDs.
 
@@ -2621,9 +2621,9 @@ Create bundles for English and French with at least 20 message keys each coverin
 
 Implement three different `LocaleResolver` strategies:
 
-1. `AcceptHeaderLocaleResolver` â€” for REST API clients
-2. `CookieLocaleResolver` â€” for web applications with persistence
-3. `SessionLocaleResolver` â€” for session-based web apps
+1. `AcceptHeaderLocaleResolver` → for REST API clients
+2. `CookieLocaleResolver` → for web applications with persistence
+3. `SessionLocaleResolver` → for session-based web apps
 
 Add a `LocaleChangeInterceptor` and a controller endpoint that:
 - Returns the current locale with language, country, and display name

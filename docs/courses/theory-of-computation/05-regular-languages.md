@@ -42,7 +42,7 @@ flowchart LR
 
 ### 4.1 The Pumping Lemma for Regular Languages
 
-The pumping lemma is a powerful tool for proving that certain languages are **not regular**. It captures a fundamental property: any sufficiently long string in a regular language can be "pumped" â€” a middle section can be repeated any number of times â€” and the resulting string remains in the language.
+The pumping lemma is a powerful tool for proving that certain languages are **not regular**. It captures a fundamental property: any sufficiently long string in a regular language can be "pumped" → a middle section can be repeated any number of times → and the resulting string remains in the language.
 
 **Pumping Lemma (for Regular Languages):**
 
@@ -89,7 +89,7 @@ The Myhill-Nerode theorem characterizes the regular languages in terms of an equ
 Define an equivalence relation â‰¡â‚— on strings over Î£:
 x â‰¡â‚— y iff for all z âˆˆ Î£*, xz âˆˆ L â‡” yz âˆˆ L
 
-Two strings are equivalent if they have the same "future" with respect to L â€” appending any suffix z to both either keeps both in L or both out of L.
+Two strings are equivalent if they have the same "future" with respect to L → appending any suffix z to both either keeps both in L or both out of L.
 
 **Myhill-Nerode Theorem:**
 The following three statements are equivalent:
@@ -129,7 +129,7 @@ These problems are decidable for regular languages:
 
 ## Examples
 
-### Example 4.1: Pumping Lemma â€” Prove L = {0â¿1â¿ | n â‰¥ 0} is Not Regular
+### Example 4.1: Pumping Lemma → Prove L = {0â¿1â¿ | n â‰¥ 0} is Not Regular
 
 **Proof:** Assume L is regular. Let p be the pumping length. Choose s = 0áµ–1áµ–. Since |s| â‰¥ p, s = xyz with |y| â‰¥ 1 and |xy| â‰¤ p.
 
@@ -137,7 +137,7 @@ Since |xy| â‰¤ p, y consists only of 0s (the first p characters are all 0). 
 
 Now pump: xyÂ²z = 0áµ–âºáµ1áµ–. This string has more 0s than 1s, so it is not in L. Contradiction. Therefore, L is not regular.
 
-### Example 4.2: Pumping Lemma â€” Prove L = { w âˆˆ {a,b}* | w = wÊ€ (palindromes) } is Not Regular
+### Example 4.2: Pumping Lemma → Prove L = { w âˆˆ {a,b}* | w = wÊ€ (palindromes) } is Not Regular
 
 **Proof:** Assume L is regular with pumping length p. Choose s = aáµ– b aáµ– âˆˆ L. Since |xy| â‰¤ p, y contains only a's from the first block. So y = aáµ for some k â‰¥ 1. Then xyÂ²z = aáµ–âºáµ b aáµ–. This is not a palindrome (the first half has more a's than the second half). Contradiction.
 
@@ -161,13 +161,13 @@ Consider strings 0â± and 0Ê² with i â‰  j. Let z = 1â±. Then 0â
 
 Consider a DFA over {a,b} with:
 - States: A (start, accept), B, C, D (accept), E
-- Î´: A-aâ†’B, A-bâ†’C; B-aâ†’A, B-bâ†’D; C-aâ†’E, C-bâ†’D; D-aâ†’E, D-bâ†’C; E-aâ†’E, E-bâ†’E
+- Î´: A-a→B, A-b→C; B-a→A, B-b→D; C-a→E, C-b→D; D-a→E, D-b→C; E-a→E, E-b→E
 
-**Step 1:** Remove unreachable states â€” all reachable from A.
+**Step 1:** Remove unreachable states → all reachable from A.
 
 **Step 2:** Initial marking: accept (A, D) vs non-accept (B, C, E). Mark: (A,B), (A,C), (A,E), (D,B), (D,C), (D,E).
 
-**Step 3:** Iterate. Consider (B,C): Î´(B,a)=A, Î´(C,a)=E â€” (A,E) is unmarked, so don't mark yet. Î´(B,b)=D, Î´(C,b)=D â€” same. So (B,C) stays unmarked.
+**Step 3:** Iterate. Consider (B,C): Î´(B,a)=A, Î´(C,a)=E → (A,E) is unmarked, so don't mark yet. Î´(B,b)=D, Î´(C,b)=D → same. So (B,C) stays unmarked.
 
 Continue until stable. Unmarked pairs indicate equivalent states.
 
@@ -886,7 +886,7 @@ export { Processor, Task }
 11. Prove the Myhill-Nerode theorem: L is regular iff â‰¡â‚— has finite index.
 12. Design an algorithm to check whether two regular expressions denote the same language. What is its complexity?
 13. Let Lâ‚ = { aâ¿báµ | n â‰  m } and Lâ‚‚ = { aâ¿bÂ²â¿ | n â‰¥ 0 }. Prove Lâ‚ is regular (construct a DFA) and Lâ‚‚ is not regular.
-14. Prove that the language L = { aâ¿ | n is prime } is not regular using the pumping lemma. (Hint: use properties of prime numbers â€” if y = aáµ, then xyâ±á¨Â¹z has length p + (i-1)k. Choose i appropriately to get a composite number.)
+14. Prove that the language L = { aâ¿ | n is prime } is not regular using the pumping lemma. (Hint: use properties of prime numbers → if y = aáµ, then xyâ±á¨Â¹z has length p + (i-1)k. Choose i appropriately to get a composite number.)
 15. Implement the table-filling algorithm for a DFA with up to 100 states. Show that the algorithm runs in O(|Q|Â² |Î£|) time.
 16. Write a TypeScript function that implements the adversarial game formulation of the pumping lemma. Given a language L described as a TypeScript predicate, determine (as far as possible) whether L is non-regular.
 17. Prove that the language L = { ww | w ? {0,1}* } is not regular using both (a) the pumping lemma and (b) the Myhill-Nerode theorem.

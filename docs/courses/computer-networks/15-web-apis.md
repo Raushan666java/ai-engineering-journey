@@ -35,7 +35,7 @@ A library catalog is a perfect analogy for REST:
 | 2 | Stateless | Each request contains all information needed; no server-side session | Patron shows library card each visit; librarian doesn't remember past visits |
 | 3 | Cacheable | Responses must declare cacheability to eliminate unnecessary requests | Popular books kept at front desk (cache) rather than fetched from storage each time |
 | 4 | Uniform Interface | Resources identified in requests, representation manipulation through representations, self-descriptive messages, HATEOAS | All books have ISBNs, all follow same checkout procedure, catalog cards link to related sections |
-| 5 | Layered System | Client cannot tell if directly connected to end server or intermediary | Patron talks to front desk, which retrieves from stacks â€” patron unaware of the layers |
+| 5 | Layered System | Client cannot tell if directly connected to end server or intermediary | Patron talks to front desk, which retrieves from stacks → patron unaware of the layers |
 | 6 | Code on Demand (optional) | Server can extend client functionality by transferring executable code (e.g., JavaScript) | Library provides a self-checkout kiosk app (code) to run at home |
 
 **Numbered Steps: REST API Call Flow**
@@ -98,11 +98,11 @@ FUNCTION handleRequest(request):
 
 | Step | Client Action | Server State | Cache State | Status Code | Description |
 |------|--------------|-------------|-------------|-------------|-------------|
-| 1 | `GET /books` | Requests list | Empty | â€” | Client wants all books |
+| 1 | `GET /books` | Requests list | Empty | → | Client wants all books |
 | 2 | Validate auth token | `user=alice, role=reader` | Empty | 200 | Token valid, authorized |
-| 3 | Execute `SELECT * FROM books` | 1200 books found | Empty | â€” | Query returns results |
-| 4 | Serialize as JSON | 1200 items | Empty | â€” | Format response |
-| 5 | Add HATEOAS links | `rel: "self"` URLs per book | Empty | â€” | Self-referencing links |
+| 3 | Execute `SELECT * FROM books` | 1200 books found | Empty | → | Query returns results |
+| 4 | Serialize as JSON | 1200 items | Empty | → | Format response |
+| 5 | Add HATEOAS links | `rel: "self"` URLs per book | Empty | → | Self-referencing links |
 | 6 | Set `Cache-Control: max-age=300` | Headers set | Populated | 200 OK | Cached for 5 min |
 | 7 | Return response | Complete | `{data, cache: 300s}` | 200 | Client receives and caches |
 
@@ -112,7 +112,7 @@ FUNCTION handleRequest(request):
 |--------|-----------|-----|
 | Request validation | O(1) | Fixed set of checks (auth token parse, URI pattern match) |
 | Resource lookup (indexed) | O(log n) | Database index seek for primary key query |
-| Resource lookup (unindexed) | O(n) | Full table scan â€” always index your API query fields |
+| Resource lookup (unindexed) | O(n) | Full table scan → always index your API query fields |
 | Response serialization | O(k) | k = number of fields in resource; linear in object size |
 | HATEOAS link generation | O(1) | Fixed number of relationship links per resource type |
 | Rate limit check | O(1) | Redis/Token bucket counter increment |
@@ -144,7 +144,7 @@ A library organizes books by:
 **Numbered Steps: Designing a Resource Hierarchy**
 
 1. Identify domain entities: User, Order, Product, Category
-2. Establish ownership relationships: User â†’ Order â†’ OrderItem, Category â†’ Product
+2. Establish ownership relationships: User → Order → OrderItem, Category → Product
 3. Map entities to URL paths reflecting ownership
 4. Choose collection names (plural, lowercase, kebab-case)
 5. Add query parameters for filtering, sorting, pagination
@@ -202,7 +202,7 @@ HTTP methods (verbs) define the operation to perform on a resource.
 
 **Method Semantics:**
 
-**GET â€” Retrieve a resource**
+**GET → Retrieve a resource**
 - Safe: yes (no side effects)
 - Idempotent: yes (repeating returns same result)
 - Payload: body optional in request, body in response
@@ -223,7 +223,7 @@ ETag: "abc123"
 {"isbn":"9780141036144","title":"1984","author":"George Orwell","year":1949}
 ```
 
-**POST â€” Create a resource or submit data**
+**POST → Create a resource or submit data**
 - Safe: no (creates resources)
 - Idempotent: no (multiple POSTs create multiple resources)
 - Payload: body in request, body in response (created resource)
@@ -244,7 +244,7 @@ Content-Type: application/json
 {"isbn":"9780451524935","title":"1984","author":"George Orwell","year":1949,"id":"new-uuid-123"}
 ```
 
-**PUT â€” Replace a resource entirely**
+**PUT → Replace a resource entirely**
 - Safe: no (modifies state)
 - Idempotent: yes (same PUT N times = same state as 1 PUT)
 - Payload: full resource body in request, body in response
@@ -263,7 +263,7 @@ ETag: "def456"
 {"isbn":"9780451524935","title":"Nineteen Eighty-Four","author":"George Orwell","year":1949}
 ```
 
-**PATCH â€” Partially update a resource**
+**PATCH → Partially update a resource**
 - Safe: no (modifies state)
 - Idempotent: no (by default; depends on patch format)
 - Payload: partial resource body (or patch instructions) in request, body in response
@@ -282,7 +282,7 @@ ETag: "ghi789"
 {"isbn":"9780451524935","title":"Nineteen Eighty-Four","author":"George Orwell","year":1950}
 ```
 
-**DELETE â€” Remove a resource**
+**DELETE → Remove a resource**
 - Safe: no (destructive)
 - Idempotent: yes (DELETE of deleted resource returns same status)
 - Payload: no body in request, no body in response typically
@@ -300,16 +300,16 @@ HTTP/1.1 204 No Content
 
 | Operation | Request | Database State Before | Database State After | Status |
 |-----------|---------|----------------------|---------------------|--------|
-| GET /books/1 | â€” | `{id:1, title:"A"}` | `{id:1, title:"A"}` | 200 OK |
-| GET /books/1 (repeat) | â€” | `{id:1, title:"A"}` | `{id:1, title:"A"}` | 200 OK (same) |
+| GET /books/1 | → | `{id:1, title:"A"}` | `{id:1, title:"A"}` | 200 OK |
+| GET /books/1 (repeat) | → | `{id:1, title:"A"}` | `{id:1, title:"A"}` | 200 OK (same) |
 | POST /books body={title:"B"} | `{title:"B"}` | 1 book (A) | 2 books (A, B) | 201 Created, new id |
 | POST /books body={title:"B"}(repeat) | `{title:"B"}` | 2 books (A, B) | 3 books (A, B, B2) | 201 Created, different id |
 | PUT /books/1 body={title:"C",...} | Full resource | `{id:1, title:"A"}` | `{id:1, title:"C"}` | 200 OK |
 | PUT /books/1 (repeat, same body) | Same body | `{id:1, title:"C"}` | `{id:1, title:"C"}` | 200 OK (same state) |
 | PATCH /books/1 `{"year":2000}` | Partial | `{id:1, title:"C", year:1950}` | `{id:1, title:"C", year:2000}` | 200 OK |
 | PATCH /books/1 `{"year":2000}` (repeat) | Same patch | `{id:1, title:"C", year:2000}` | `{id:1, title:"C", year:2000}` | 200 OK (same because value same) |
-| DELETE /books/1 | â€” | `{id:1, title:"C"}` | Empty | 204 No Content |
-| DELETE /books/1 (repeat) | â€” | Empty | Empty | 404 Not Found |
+| DELETE /books/1 | → | `{id:1, title:"C"}` | Empty | 204 No Content |
+| DELETE /books/1 (repeat) | → | Empty | Empty | 404 Not Found |
 
 **HTTP Methods Comparison Table:**
 
@@ -377,11 +377,11 @@ CRUD (Create, Read, Update, Delete) maps naturally to HTTP methods.
 | CRUD Operation | HTTP Method | URL Pattern | Request Body | Response | Status Code |
 |---------------|-------------|-------------|-------------|----------|-------------|
 | Create | POST | `/resources` | Resource data (no id) | Created resource with id | 201 Created |
-| Read (all) | GET | `/resources` | â€” | Array of resources | 200 OK |
-| Read (one) | GET | `/resources/{id}` | â€” | Single resource | 200 OK |
+| Read (all) | GET | `/resources` | → | Array of resources | 200 OK |
+| Read (one) | GET | `/resources/{id}` | → | Single resource | 200 OK |
 | Update (full) | PUT | `/resources/{id}` | Full resource data | Updated resource | 200 OK |
 | Update (partial) | PATCH | `/resources/{id}` | Partial data/patch ops | Updated resource | 200 OK |
-| Delete | DELETE | `/resources/{id}` | â€” | Empty body | 204 No Content |
+| Delete | DELETE | `/resources/{id}` | → | Empty body | 204 No Content |
 
 **Important: REST â‰  CRUD.** REST is about resources and their state transfers, not just database operations. A `cancel` action on an order could be `POST /orders/{id}/cancel` instead of `PATCH /orders/{id}` `{status:"cancelled"}`. Design resources around business actions, not table rows.
 
@@ -439,7 +439,7 @@ FUNCTION deleteUser(userId):
 | Duplicate create | POST same data twice | Second creates different resource (POST not idempotent) | 201 (different URI) |
 | Idempotent update | PUT same data N times | Same final state after each call | 200 (same response) |
 | Partial update race | Two concurrent PATCHes | Last write wins; possible data loss | 200 (may need optimistic locking) |
-| Delete non-existent | DELETE on already deleted | No error â€” DELETE is idempotent | 204 or 404 |
+| Delete non-existent | DELETE on already deleted | No error → DELETE is idempotent | 204 or 404 |
 | Missing resource | GET/PUT/PATCH/DELETE on nonexistent id | Returns error | 404 |
 | Validation failure | POST with missing required field | Returns validation details | 422 |
 
@@ -457,17 +457,17 @@ Statelessness means each request from client to server must contain all informat
 **Numbered Steps: Stateless Authentication Flow**
 
 1. Client sends credentials (username + password or API key) with every request
-2. Server validates credentials independently â€” no session lookup needed
+2. Server validates credentials independently → no session lookup needed
 3. Server processes request and returns response
-4. Client receives response â€” no session cookie is set
+4. Client receives response → no session cookie is set
 5. Client sends next request with same credentials (typically via JWT in Authorization header)
-6. Server re-validates â€” no memory of step 2
+6. Server re-validates → no memory of step 2
 
 **Stateless vs. Stateful Comparison:**
 
 | Aspect | Stateless (REST) | Stateful (Session-based) |
 |--------|-----------------|------------------------|
-| Scalability | Linear â€” any server handles any request | Complex â€” session affinity (sticky sessions) needed |
+| Scalability | Linear → any server handles any request | Complex → session affinity (sticky sessions) needed |
 | Visibility | Each request is self-describing | Server state hidden from client |
 | Reliability | No single point of failure for session data | Session server failure breaks all active sessions |
 | Performance | Larger per-request payload (auth + context) | Smaller payload but session lookup overhead |
@@ -495,7 +495,7 @@ Hypermedia as the Engine of Application State (HATEOAS) means API responses cont
 
 **Real-World Analogy: Library Catalog Cards**
 
-A library catalog card doesn't just give you the book title â€” it includes links to:
+A library catalog card doesn't just give you the book title → it includes links to:
 - The author's other works (`rel: "author"`)
 - Related subjects (`rel: "subject"`)
 - Where the book is shelved (`rel: "location"`)
@@ -575,7 +575,7 @@ FUNCTION generateLinks(resource, userRole):
 |-----------|---------|----------|
 | Expired links | Link target resource deleted | Return 404 with link to parent collection |
 | Permission change | Link visible but user loses permission mid-session | Link shown, but 403 on actual request |
-| Circular references | Orderâ†’Customerâ†’Order | Limit link depth; show top-level only |
+| Circular references | Order→Customer→Order | Limit link depth; show top-level only |
 | Version mismatch | Links point to different API version | Base URLs respect version prefix |
 
 ### 15.1.8 Caching (ETag, Cache-Control)
@@ -620,14 +620,14 @@ ETag is a hash-based validator. The server computes an ETag for each resource. T
 
 | Step | Client State | Request | Cache State | Server State | Result |
 |------|-------------|---------|-------------|-------------|--------|
-| 1 | No cache | `GET /books/1` | Empty | fresh data | â€” |
-| 2 | â€” | Request sent | Empty | â€” | â€” |
-| 3 | Wait for response | â€” | Empty | Computes ETag "abc" | â€” |
-| 4 | Receive: `200 OK, ETag: "abc", max-age=300` | Done | Stores `{data, etag: "abc", expires: T+300}` | â€” | Cache populated |
-| 5 | (Before expiry) | `GET /books/1` | Fresh (T+50 < T+300) | â€” | Cache HIT: return cached |
+| 1 | No cache | `GET /books/1` | Empty | fresh data | → |
+| 2 | → | Request sent | Empty | → | → |
+| 3 | Wait for response | → | Empty | Computes ETag "abc" | → |
+| 4 | Receive: `200 OK, ETag: "abc", max-age=300` | Done | Stores `{data, etag: "abc", expires: T+300}` | → | Cache populated |
+| 5 | (Before expiry) | `GET /books/1` | Fresh (T+50 < T+300) | → | Cache HIT: return cached |
 | 6 | (After expiry) | `GET /books/1 If-None-Match: "abc"` | Stale (T+310 > T+300) | Compares ETag | Conditional request |
 | 7 | Receive: `304 Not Modified` | Done | Refreshes to T+300 | Unchanged | Cache refreshed |
-| 8 | (Later) | `GET /books/1 If-None-Match: "abc"` | Stale | Data changed, ETag="def" | â€” |
+| 8 | (Later) | `GET /books/1 If-None-Match: "abc"` | Stale | Data changed, ETag="def" | → |
 | 9 | Receive: `200 OK, ETag: "def", max-age=300` | Done | Updates `{data, etag: "def", expires: T+300}` | Updated | Cache updated |
 
 **C++ Caching Middleware Implementation:**
@@ -696,10 +696,10 @@ public:
                 return {200, entry.data, entry.etag, true};
             }
 
-            // Stale â€” conditional request
+            // Stale → conditional request
             std::cout << "[CACHE] Stale, revalidating: " << url << std::endl;
             if (!ifNoneMatch.empty() && ifNoneMatch == entry.etag) {
-                // Client sent If-None-Match â€” use it
+                // Client sent If-None-Match → use it
                 Response serverResp = upstream();
                 if (serverResp.statusCode == 304) {
                     entry.expiresAt = std::chrono::steady_clock::now()
@@ -715,7 +715,7 @@ public:
             }
         }
 
-        // Cache miss â€” fetch from upstream
+        // Cache miss → fetch from upstream
         std::cout << "[CACHE MISS] " << url << std::endl;
         Response serverResp = upstream();
         if (serverResp.statusCode == 200 && !serverResp.etag.empty()) {
@@ -799,7 +799,7 @@ class CachingMiddleware:
                 return {"status": 200, "body": entry.data,
                         "etag": entry.etag, "from_cache": True}
 
-            # Stale â€” try conditional request
+            # Stale → try conditional request
             if if_none_match and if_none_match == entry.etag:
                 resp = upstream()
                 if resp.get("status") == 304:
@@ -994,19 +994,19 @@ for i in range(15):
 
 | Time (s) | Request # | Bucket State (tokens) | Refill | Consumed | Allowed? |
 |----------|-----------|----------------------|--------|----------|----------|
-| 0.0 | 1 | 10 | â€” | 9 | Yes |
-| 0.1 | 2 | 9 | â€” | 8 | Yes |
-| 0.2 | 3 | 8 | â€” | 7 | Yes |
-| 0.3 | 4 | 7 | â€” | 6 | Yes |
-| 0.4 | 5 | 6 | â€” | 5 | Yes |
-| 0.5 | 6 | 5 | â€” | 4 | Yes |
-| 0.6 | 7 | 4 | â€” | 3 | Yes |
-| 0.7 | 8 | 3 | â€” | 2 | Yes |
-| 0.8 | 9 | 2 | â€” | 1 | Yes |
-| 0.9 | 10 | 1 | â€” | 0 | Yes (last token) |
-| 1.0 | 11 | 0 | +1 (1s elapsed * 1/sec) | 0 â†’ after refill: consumed | Yes |
-| 1.1 | 12 | 0 | â€” | 0 | No (429) |
-| 2.0 | 12 (retry) | 0 | +1 (1 more second elapsed) | 0 â†’ consumed | Yes |
+| 0.0 | 1 | 10 | → | 9 | Yes |
+| 0.1 | 2 | 9 | → | 8 | Yes |
+| 0.2 | 3 | 8 | → | 7 | Yes |
+| 0.3 | 4 | 7 | → | 6 | Yes |
+| 0.4 | 5 | 6 | → | 5 | Yes |
+| 0.5 | 6 | 5 | → | 4 | Yes |
+| 0.6 | 7 | 4 | → | 3 | Yes |
+| 0.7 | 8 | 3 | → | 2 | Yes |
+| 0.8 | 9 | 2 | → | 1 | Yes |
+| 0.9 | 10 | 1 | → | 0 | Yes (last token) |
+| 1.0 | 11 | 0 | +1 (1s elapsed * 1/sec) | 0 → after refill: consumed | Yes |
+| 1.1 | 12 | 0 | → | 0 | No (429) |
+| 2.0 | 12 (retry) | 0 | +1 (1 more second elapsed) | 0 → consumed | Yes |
 
 **Complexity Analysis:**
 
@@ -1192,9 +1192,9 @@ OpenAPI (formerly Swagger) is a specification for describing REST APIs using a s
 
 **Real-World Analogy: Library Subject Index**
 
-A library subject index card doesn't just list the book â€” it describes:
+A library subject index card doesn't just list the book → it describes:
 - Where to find it (endpoints)
-- What format it's in (paperback, hardcover â†’ request/response formats)
+- What format it's in (paperback, hardcover → request/response formats)
 - Who can check it out (authentication)
 - Related topics (links to other endpoints)
 
@@ -1760,10 +1760,10 @@ PUT replaces the entire resource. PATCH applies a partial update. PUT is idempot
 
 ```
 PUT /users/42  {"name":"Alice","email":"a@b.com","age":30}
-  â†’ Entire resource replaced. Repeating the same PUT yields the same state.
+  → Entire resource replaced. Repeating the same PUT yields the same state.
 
 PATCH /users/42  {"age": 31}
-  â†’ Only the age field changes. Repeating JSON Merge Patch with {"age":31}
+  → Only the age field changes. Repeating JSON Merge Patch with {"age":31}
     is idempotent. But PATCH with {"op":"increment","path":"/age","value":1}
     is NOT idempotent (age increases each time).
 ```
@@ -1787,7 +1787,7 @@ HATEOAS (Hypermedia as the Engine of Application State) means API responses incl
 
 **Q5: URI versioning vs header versioning vs query versioning: which is best?**
 
-URI versioning (`/v1/resource`) is most common â€” visible in URLs, cache-friendly, easy to route. Header versioning keeps URLs clean but is opaque. Query versioning (`?version=1`) is simple but pollutes URLs and breaks caching. For public APIs, URI versioning is recommended; for internal APIs, header versioning can be acceptable.
+URI versioning (`/v1/resource`) is most common → visible in URLs, cache-friendly, easy to route. Header versioning keeps URLs clean but is opaque. Query versioning (`?version=1`) is simple but pollutes URLs and breaks caching. For public APIs, URI versioning is recommended; for internal APIs, header versioning can be acceptable.
 
 **Q6: How does REST handle state if it's stateless?**
 
@@ -1810,11 +1810,11 @@ Most public APIs operate at Level 2. Achieving Level 3 is rare but is "true REST
 
 GitHub's API is a textbook REST implementation:
 ```
-GET /repos/:owner/:repo          â†’ Repository details
-GET /repos/:owner/:repo/issues   â†’ List issues
-POST /repos/:owner/:repo/issues  â†’ Create issue
-PATCH /repos/:owner/:repo/issues/:number  â†’ Update issue
-GET /repos/:owner/:repo/pulls    â†’ List pull requests
+GET /repos/:owner/:repo          → Repository details
+GET /repos/:owner/:repo/issues   → List issues
+POST /repos/:owner/:repo/issues  → Create issue
+PATCH /repos/:owner/:repo/issues/:number  → Update issue
+GET /repos/:owner/:repo/pulls    → List pull requests
 ```
 
 Key practices:
@@ -1828,11 +1828,11 @@ Key practices:
 
 Stripe's API demonstrates resource-oriented design:
 ```
-POST /v1/customers            â†’ Create customer
-GET /v1/customers/:id         â†’ Retrieve customer
-POST /v1/charges              â†’ Create charge (payment)
-POST /v1/refunds              â†’ Refund a charge
-GET /v1/balance               â†’ Retrieve account balance
+POST /v1/customers            → Create customer
+GET /v1/customers/:id         → Retrieve customer
+POST /v1/charges              → Create charge (payment)
+POST /v1/refunds              → Refund a charge
+GET /v1/balance               → Retrieve account balance
 ```
 
 Key practices:
@@ -1845,9 +1845,9 @@ Key practices:
 
 AWS services expose REST APIs with signature-based authentication:
 ```
-GET /?Action=DescribeInstances&Version=2016-11-15  â†’ List EC2 instances
-PUT /{bucket}/{key}                                 â†’ Upload S3 object
-GET /{bucket}/{key}                                 â†’ Download S3 object
+GET /?Action=DescribeInstances&Version=2016-11-15  → List EC2 instances
+PUT /{bucket}/{key}                                 → Upload S3 object
+GET /{bucket}/{key}                                 → Download S3 object
 ```
 
 Key practices:
@@ -1977,7 +1977,7 @@ data: {"message": "World"}
 \n\n
 ```
 
-SSE is simpler than WebSockets (HTTP only, unidirectional serverâ†’client, automatic reconnection) but suitable for notifications, live feeds, and status updates.
+SSE is simpler than WebSockets (HTTP only, unidirectional server→client, automatic reconnection) but suitable for notifications, live feeds, and status updates.
 
 ## 15.6 WebRTC
 
@@ -2030,7 +2030,7 @@ Common API gateways: Kong, NGINX, AWS API Gateway, Envoy, Traefik.
 | WebSocket | TCP (upgraded) | Binary/Text | Full-duplex | Chat, live updates, gaming |
 | gRPC | HTTP/2 | Protocol Buffers | Unary/Server/Client/Bidi | Microservices, real-time |
 | GraphQL | HTTP | JSON (query string) | No (subscriptions via WS) | Flexible data fetching |
-| SSE | HTTP | Text/event-stream | Serverâ†’Client | Notifications, feeds |
+| SSE | HTTP | Text/event-stream | Server→Client | Notifications, feeds |
 | WebRTC | UDP (DTLS) | Binary (media/data) | Peer-to-peer | Voice, video, file sharing |
 
 ## Quick Reference: RESTful API Design Cheat Sheet
@@ -2052,7 +2052,7 @@ Common API gateways: Kong, NGINX, AWS API Gateway, Envoy, Traefik.
 | Real-time chat | WebSocket | Low latency, full-duplex |
 | Internal microservices | gRPC | Fast binary serialization, streaming |
 | Mobile app with flexible UI | GraphQL | Client-specified fields, reduce payload |
-| Server â†’ browser notifications | SSE | Simple, auto-reconnect, HTTP-only |
+| Server → browser notifications | SSE | Simple, auto-reconnect, HTTP-only |
 | P2P video conference | WebRTC | Direct browser-to-browser media |
 
 ## Chapter Quiz

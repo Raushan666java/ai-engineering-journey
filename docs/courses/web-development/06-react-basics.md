@@ -1,4 +1,4 @@
-# Chapter 6 â€” React Basics
+# Chapter 6 → React Basics
 
 > **Previous:** [05-es6-plus](./05-es6-plus.md) | **Next:** [07-react-advanced](./07-react-advanced.md)
 
@@ -108,7 +108,7 @@ function Welcome({ name, age }) {
 }
 ```
 
-**Class components** (legacy â€” maintained for historical context):
+**Class components** (legacy → maintained for historical context):
 
 ```jsx
 class Welcome extends React.Component {
@@ -170,7 +170,7 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    setCount((prev) => prev + 1); // Functional update â€” safe in concurrent mode
+    setCount((prev) => prev + 1); // Functional update → safe in concurrent mode
   };
 
   const reset = () => setCount(0);
@@ -186,8 +186,8 @@ function Counter() {
 ```
 
 **State rules:**
-- Do not mutate state directly â€” always use the setter function.
-- State updates are asynchronous â€” reading state immediately after `setState` yields the old value.
+- Do not mutate state directly → always use the setter function.
+- State updates are asynchronous → reading state immediately after `setState` yields the old value.
 - For objects and arrays, create new references:
 
 ```jsx
@@ -245,7 +245,7 @@ function UserList() {
     fetchUsers();
 
     return () => {
-      cancelled = true; // Cleanup â€” prevents state updates on unmounted component
+      cancelled = true; // Cleanup → prevents state updates on unmounted component
     };
   }, []); // Empty dependency array = run once on mount
 
@@ -324,7 +324,7 @@ function TodoList({ items }) {
 **Key rules:**
 - Use stable IDs from data (`item.id`), never array index unless the list is static and will not be reordered.
 - Keys must be unique among siblings, not globally.
-- Keys are not passed as props â€” use a separate prop if the child needs the original ID.
+- Keys are not passed as props → use a separate prop if the child needs the original ID.
 
 ### 6.8 Forms
 

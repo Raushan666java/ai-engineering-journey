@@ -1,4 +1,4 @@
-# Chapter 60: Microservices Interview Q&A (Part A â€” Q1â€“Q8)
+# Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)
 
 > **Previous:** [Microservices Interview Q&amp;A](./60-interview-microservices.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md)
 
@@ -90,7 +90,7 @@ Start monolithic. Split into microservices only when you need independent scalin
 
 **Answer:**
 
-Decomposition follows Domain-Driven Design â€” identify bounded contexts and aggregate boundaries. Use the Strangler Fig pattern to migrate incrementally.
+Decomposition follows Domain-Driven Design → identify bounded contexts and aggregate boundaries. Use the Strangler Fig pattern to migrate incrementally.
 
 ```java
 // â”€â”€ Phase 1: Identify bounded contexts through domain analysis â”€â”€
@@ -128,12 +128,12 @@ public interface UserServiceClient {
 @Table(name = "orders")
 public class Order {
     @Id @GeneratedValue private Long id;
-    private Long userId;                // FK reference â€” no User entity
+    private Long userId;                // FK reference → no User entity
     private BigDecimal total;
     private String status;
 }
 
-// â”€â”€ Phase 4: Strangler Fig â€” route traffic gradually â”€â”€
+// â”€â”€ Phase 4: Strangler Fig → route traffic gradually â”€â”€
 // API gateway routes /users/* to user-service, /orders/* to order-service
 // Both services can still share the old database during migration
 @Bean
@@ -147,7 +147,7 @@ public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
 }
 ```
 
-Extraction order: start with the bounded context that changes most frequently, has the simplest data, or requires independent scaling. Never extract services that share a database transaction â€” they belong in the same service.
+Extraction order: start with the bounded context that changes most frequently, has the simplest data, or requires independent scaling. Never extract services that share a database transaction → they belong in the same service.
 
 ---
 
@@ -185,7 +185,7 @@ public class OrderEventProducer {
 
     public void createOrderAsync(OrderRequest request) {
         Order order = orderRepo.save(new Order(request));
-        // Fire-and-forget event â€” inventory-service consumes asynchronously
+        // Fire-and-forget event → inventory-service consumes asynchronously
         kafka.send("order.created", new OrderCreatedEvent(order.getId(), request));
     }
 }
@@ -314,7 +314,7 @@ public class JwtAuthFilter implements GatewayFilterFactory<Object> {
 }
 ```
 
-API Gateway responsibilities: routing, authentication, rate limiting, request/response transformation, circuit breaking, logging, and aggregation. Do NOT put business logic in the gateway â€” it's a routing layer, not an orchestration layer.
+API Gateway responsibilities: routing, authentication, rate limiting, request/response transformation, circuit breaking, logging, and aggregation. Do NOT put business logic in the gateway → it's a routing layer, not an orchestration layer.
 
 ---
 
@@ -396,7 +396,7 @@ public class OrderService {
     private RestTemplate restTemplate;  // automatically load-balanced via Eureka
 
     public String getUserEmail(Long userId) {
-        // Just use the service name â€” Ribbon/Ribbon resolves via Eureka
+        // Just use the service name → Ribbon/Ribbon resolves via Eureka
         return restTemplate.getForObject(
             "http://user-service/users/" + userId + "/email",
             String.class);
@@ -406,7 +406,7 @@ public class OrderService {
 
 Eureka provides client-side load balancing. Each client maintains a local registry of available instances and rotates through them (round-robin by default). If a service instance fails to send a heartbeat within 3 lease periods, Eureka evicts it.
 
-For production, run at least 2 Eureka servers in a multi-DC setup. Eureka is AP (availability + partition tolerance) â€” sacrifices consistency, which is fine for service discovery.
+For production, run at least 2 Eureka servers in a multi-DC setup. Eureka is AP (availability + partition tolerance) → sacrifices consistency, which is fine for service discovery.
 
 ---
 
@@ -504,7 +504,7 @@ public class ConfigRefreshController {
 // Broadcasts refresh to all instances of order-service via RabbitMQ
 ```
 
-Config server enables centralized management, version history (through Git), and environment-specific overrides. Never store secrets in plain text â€” use `{cipher}` encrypted values with a symmetric key or Vault backend.
+Config server enables centralized management, version history (through Git), and environment-specific overrides. Never store secrets in plain text → use `{cipher}` encrypted values with a symmetric key or Vault backend.
 
 ---
 
@@ -579,7 +579,7 @@ public class TracingConfig {
 
 // â”€â”€ View traces in Zipkin â”€â”€
 // docker run -d -p 9411:9411 openzipkin/zipkin
-// Then visit http://localhost:9411 â€” search by trace ID or service
+// Then visit http://localhost:9411 → search by trace ID or service
 
 // â”€â”€ Tag annotation with @SpanTag â”€â”€
 @Component
@@ -607,7 +607,7 @@ The Saga pattern manages distributed transactions across microservices by breaki
 
 ```java
 // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-// CHOREOGRAPHY SAGA â€” services react to each other's events
+// CHOREOGRAPHY SAGA → services react to each other's events
 // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 // Step 1: Order Service creates order and emits event
@@ -622,7 +622,7 @@ public class OrderSagaService {
         order.setStatus("PENDING");
         order = orderRepo.save(order);
 
-        // Emit event â€” inventory service consumes this
+        // Emit event → inventory service consumes this
         kafka.send("saga.order-created", new OrderCreatedEvent(order.getId(), req));
         return order;
     }
@@ -682,7 +682,7 @@ public class PaymentSagaService {
 }
 
 // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-// ORCHESTRATION SAGA â€” a coordinator manages the flow
+// ORCHESTRATION SAGA → a coordinator manages the flow
 // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 // Saga Orchestrator
@@ -709,7 +709,7 @@ public class OrderSagaOrchestrator {
                     kafka.send("saga.commands", new ProcessPaymentCmd(event.orderId()));
                 } else if (event instanceof InventoryFailedEvent) {
                     state.fail(event.reason());
-                    // Saga complete â€” order already marked PENDING, no action needed
+                    // Saga complete → order already marked PENDING, no action needed
                 }
             }
             case "INVENTORY_RESERVED" -> {
@@ -729,7 +729,7 @@ public class OrderSagaOrchestrator {
 }
 ```
 
-Saga handles long-running transactions without locking resources. Choreography works when the flow is simple (3-4 services). Orchestration is better for complex workflows with branching and compensations. Never use XA/2PC transactions across services â€” that defeats the purpose of microservices.
+Saga handles long-running transactions without locking resources. Choreography works when the flow is simple (3-4 services). Orchestration is better for complex workflows with branching and compensations. Never use XA/2PC transactions across services → that defeats the purpose of microservices.
 
 ## Concept Comparison Table
 

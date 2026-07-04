@@ -132,9 +132,9 @@ public class OrderEventConsumer {
 }
 ```
 
-CQRS adds significant complexity (eventual consistency, duplicate data, two models to maintain). Use it only when reads and writes have fundamentally different shapes â€” for example, writes are simple INSERT/UPDATE but reads need complex aggregations, joins, or full-text search.
+CQRS adds significant complexity (eventual consistency, duplicate data, two models to maintain). Use it only when reads and writes have fundamentally different shapes → for example, writes are simple INSERT/UPDATE but reads need complex aggregations, joins, or full-text search.
 
-Apply CQRS to individual bounded contexts, not the entire system. Most services do not need CQRS â€” a well-designed JPA model with DTO projections is sufficient.
+Apply CQRS to individual bounded contexts, not the entire system. Most services do not need CQRS → a well-designed JPA model with DTO projections is sufficient.
 
 ---
 
@@ -160,7 +160,7 @@ Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and t
 //         - java.io.IOException
 //         - org.springframework.web.client.HttpServerErrorException
 //       ignore-exceptions:
-//         - org.springframework.web.client.HttpClientErrorException  (4xx â€” not a circuit failure)
+//         - org.springframework.web.client.HttpClientErrorException  (4xx → not a circuit failure)
 
 // â”€â”€ Registration â”€â”€
 @Configuration
@@ -245,7 +245,7 @@ public class CircuitBreakerMonitor {
 }
 ```
 
-Circuit breaker states: CLOSED (normal, pass through) â†’ OPEN (fail fast, no calls) â†’ HALF_OPEN (allow limited probe calls) â†’ back to CLOSED or OPEN. Use it on every cross-service call. Without circuit breakers, a cascading failure in one service can take down the entire system.
+Circuit breaker states: CLOSED (normal, pass through) → OPEN (fail fast, no calls) → HALF_OPEN (allow limited probe calls) → back to CLOSED or OPEN. Use it on every cross-service call. Without circuit breakers, a cascading failure in one service can take down the entire system.
 
 ---
 
@@ -264,7 +264,7 @@ public class AuthServerConfig {
     public RegisteredClientRepository registeredClientRepository() {
         RegisteredClient orderService = RegisteredClient.withId(UUID.randomUUID().toString())
             .clientId("order-service")
-            .clientSecret("{noop}order-secret")  // noop = plain text â€” use BCrypt in prod
+            .clientSecret("{noop}order-secret")  // noop = plain text → use BCrypt in prod
             .authorizationGrantType(ClientCredentialsGrant.INSTANCE)
             .scope("order:read")
             .scope("order:write")
@@ -345,7 +345,7 @@ public class OrderController {
 }
 ```
 
-JWT is stateless â€” the resource server only needs the public key (JWKS) to verify tokens, no database call. Token expiry is short (15-30 minutes for access tokens). Use refresh tokens for user-facing flows; client credentials flow generates new tokens directly.
+JWT is stateless → the resource server only needs the public key (JWKS) to verify tokens, no database call. Token expiry is short (15-30 minutes for access tokens). Use refresh tokens for user-facing flows; client credentials flow generates new tokens directly.
 
 Never embed sensitive data in JWT claims (they are base64-encoded, not encrypted). For fine-grained authorization, use OAuth2 scopes combined with custom claims or a dedicated authorization service.
 
@@ -464,7 +464,7 @@ public class InventoryEventConsumer {
                 new InventoryFailedEvent(event.orderId(), e.getMessage()));
             acknowledgment.acknowledge();
         } catch (Exception e) {
-            // Do not commit â€” message will be re-delivered
+            // Do not commit → message will be re-delivered
             log.error("Failed to process order {}, will retry", event.orderId(), e);
             throw new RetryableException("Retry later");
         }

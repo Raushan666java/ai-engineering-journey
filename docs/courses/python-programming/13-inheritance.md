@@ -142,7 +142,7 @@ print(D.__mro__)
 # (<class 'D'>, <class 'B'>, <class 'C'>, <class 'A'>, <class 'object'>)
 ```
 
-The MRO for `D(B, C)` is computed as: D â†’ B â†’ C â†’ A â†’ object. Python uses `mro()` to inspect:
+The MRO for `D(B, C)` is computed as: D → B → C → A → object. Python uses `mro()` to inspect:
 
 ```python
 for cls in D.__mro__:
@@ -280,7 +280,7 @@ class Rectangle(Shape):
     def perimeter(self) -> float:
         return 2 * (self.width + self.height)
 
-# shape = Shape()  # TypeError â€” can't instantiate abstract class
+# shape = Shape()  # TypeError → can't instantiate abstract class
 circle = Circle(5)
 print(circle.description())  # Circle (area=78.54)
 ```
@@ -390,7 +390,7 @@ class Person:
 print(isinstance(Person(), Named))  # True
 ```
 
-Protocols enable duck typing with static safety â€” objects satisfy a protocol if they have the right methods, regardless of inheritance.
+Protocols enable duck typing with static safety → objects satisfy a protocol if they have the right methods, regardless of inheritance.
 
 ## 13.9 Composition over Inheritance
 
@@ -1005,7 +1005,7 @@ console.log(csvProc.process()); // ["A_PROCESSED", "B_PROCESSED", "C_PROCESSED"]
 
 ### Application Problems
 
-1. Create a class hierarchy for geometric solids: `Shape3D` (abstract) â†’ `Sphere`, `Cuboid`, `Cylinder`. Each must implement `volume()` and `surface_area()`. Use `super().__init__()` for common attributes.
+1. Create a class hierarchy for geometric solids: `Shape3D` (abstract) → `Sphere`, `Cuboid`, `Cylinder`. Each must implement `volume()` and `surface_area()`. Use `super().__init__()` for common attributes.
 2. Implement mixins `TimestampMixin` (adds `created_at` and `updated_at` timestamps) and `SerializableMixin` (adds `to_dict`/`from_dict`). Use them with a `Note` class.
 3. Define a `Playable` Protocol with a `play()` method. Create classes `MusicTrack` and `VideoClip` that satisfy it. Write a function `play_all(playables: list[Playable])` and test it.
 

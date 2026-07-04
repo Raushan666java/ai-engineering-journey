@@ -1,4 +1,4 @@
-# Chapter 60: Microservices Interview Q&A (Part A â€” Q1â€“Q8)
+# Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 
@@ -90,7 +90,7 @@ Start monolithic. Split into microservices only when you need independent scalin
 
 **Answer:**
 
-Decomposition follows Domain-Driven Design â€” identify bounded contexts and aggregate boundaries. Use the Strangler Fig pattern to migrate incrementally.
+Decomposition follows Domain-Driven Design → identify bounded contexts and aggregate boundaries. Use the Strangler Fig pattern to migrate incrementally.
 
 ```java
 // â”€â”€ Phase 1: Identify bounded contexts through domain analysis â”€â”€
@@ -128,12 +128,12 @@ public interface UserServiceClient {
 @Table(name = "orders")
 public class Order {
     @Id @GeneratedValue private Long id;
-    private Long userId;                // FK reference â€” no User entity
+    private Long userId;                // FK reference → no User entity
     private BigDecimal total;
     private String status;
 }
 
-// â”€â”€ Phase 4: Strangler Fig â€” route traffic gradually â”€â”€
+// â”€â”€ Phase 4: Strangler Fig → route traffic gradually â”€â”€
 // API gateway routes /users/* to user-service, /orders/* to order-service
 // Both services can still share the old database during migration
 @Bean
@@ -147,7 +147,7 @@ public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
 }
 ```
 
-Extraction order: start with the bounded context that changes most frequently, has the simplest data, or requires independent scaling. Never extract services that share a database transaction â€” they belong in the same service.
+Extraction order: start with the bounded context that changes most frequently, has the simplest data, or requires independent scaling. Never extract services that share a database transaction → they belong in the same service.
 
 ---
 
@@ -185,7 +185,7 @@ public class OrderEventProducer {
 
     public void createOrderAsync(OrderRequest request) {
         Order order = orderRepo.save(new Order(request));
-        // Fire-and-forget event â€” inventory-service consumes asynchronously
+        // Fire-and-forget event → inventory-service consumes asynchronously
         kafka.send("order.created", new OrderCreatedEvent(order.getId(), request));
     }
 }
@@ -314,7 +314,7 @@ public class JwtAuthFilter implements GatewayFilterFactory<Object> {
 }
 ```
 
-API Gateway responsibilities: routing, authentication, rate limiting, request/response transformation, circuit breaking, logging, and aggregation. Do NOT put business logic in the gateway â€” it's a routing layer, not an orchestration layer.
+API Gateway responsibilities: routing, authentication, rate limiting, request/response transformation, circuit breaking, logging, and aggregation. Do NOT put business logic in the gateway → it's a routing layer, not an orchestration layer.
 
 ---
 
@@ -396,7 +396,7 @@ public class OrderService {
     private RestTemplate restTemplate;  // automatically load-balanced via Eureka
 
     public String getUserEmail(Long userId) {
-        // Just use the service name â€” Ribbon/Ribbon resolves via Eureka
+        // Just use the service name → Ribbon/Ribbon resolves via Eureka
         return restTemplate.getForObject(
             "http://user-service/users/" + userId + "/email",
             String.class);
@@ -406,7 +406,7 @@ public class OrderService {
 
 Eureka provides client-side load balancing. Each client maintains a local registry of available instances and rotates through them (round-robin by default). If a service instance fails to send a heartbeat within 3 lease periods, Eureka evicts it.
 
-For production, run at least 2 Eureka servers in a multi-DC setup. Eureka is AP (availability + partition tolerance) â€” sacrifices consistency, which is fine for service discovery.
+For production, run at least 2 Eureka servers in a multi-DC setup. Eureka is AP (availability + partition tolerance) → sacrifices consistency, which is fine for service discovery.
 
 ---
 
@@ -504,7 +504,7 @@ public class ConfigRefreshController {
 // Broadcasts refresh to all instances of order-service via RabbitMQ
 ```
 
-Config server enables centralized management, version history (through Git), and environment-specific overrides. Never store secrets in plain text â€” use `{cipher}` encrypted values with a symmetric key or Vault backend.
+Config server enables centralized management, version history (through Git), and environment-specific overrides. Never store secrets in plain text → use `{cipher}` encrypted values with a symmetric key or Vault backend.
 
 ---
 
@@ -579,7 +579,7 @@ public class TracingConfig {
 
 // â”€â”€ View traces in Zipkin â”€â”€
 // docker run -d -p 9411:9411 openzipkin/zipkin
-// Then visit http://localhost:9411 â€” search by trace ID or service
+// Then visit http://localhost:9411 → search by trace ID or service
 
 // â”€â”€ Tag annotation with @SpanTag â”€â”€
 @Component
@@ -607,7 +607,7 @@ The Saga pattern manages distributed transactions across microservices by breaki
 
 ```java
 // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-// CHOREOGRAPHY SAGA â€” services react to each other's events
+// CHOREOGRAPHY SAGA → services react to each other's events
 // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 // Step 1: Order Service creates order and emits event
@@ -622,7 +622,7 @@ public class OrderSagaService {
         order.setStatus("PENDING");
         order = orderRepo.save(order);
 
-        // Emit event â€” inventory service consumes this
+        // Emit event → inventory service consumes this
         kafka.send("saga.order-created", new OrderCreatedEvent(order.getId(), req));
         return order;
     }
@@ -682,7 +682,7 @@ public class PaymentSagaService {
 }
 
 // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-// ORCHESTRATION SAGA â€” a coordinator manages the flow
+// ORCHESTRATION SAGA → a coordinator manages the flow
 // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 // Saga Orchestrator
@@ -709,7 +709,7 @@ public class OrderSagaOrchestrator {
                     kafka.send("saga.commands", new ProcessPaymentCmd(event.orderId()));
                 } else if (event instanceof InventoryFailedEvent) {
                     state.fail(event.reason());
-                    // Saga complete â€” order already marked PENDING, no action needed
+                    // Saga complete → order already marked PENDING, no action needed
                 }
             }
             case "INVENTORY_RESERVED" -> {
@@ -729,7 +729,7 @@ public class OrderSagaOrchestrator {
 }
 ```
 
-Saga handles long-running transactions without locking resources. Choreography works when the flow is simple (3-4 services). Orchestration is better for complex workflows with branching and compensations. Never use XA/2PC transactions across services â€” that defeats the purpose of microservices.
+Saga handles long-running transactions without locking resources. Choreography works when the flow is simple (3-4 services). Orchestration is better for complex workflows with branching and compensations. Never use XA/2PC transactions across services → that defeats the purpose of microservices.
 
 
 ### Q9: What is CQRS and how do you implement it?
@@ -843,9 +843,9 @@ public class OrderEventConsumer {
 }
 ```
 
-CQRS adds significant complexity (eventual consistency, duplicate data, two models to maintain). Use it only when reads and writes have fundamentally different shapes â€” for example, writes are simple INSERT/UPDATE but reads need complex aggregations, joins, or full-text search.
+CQRS adds significant complexity (eventual consistency, duplicate data, two models to maintain). Use it only when reads and writes have fundamentally different shapes → for example, writes are simple INSERT/UPDATE but reads need complex aggregations, joins, or full-text search.
 
-Apply CQRS to individual bounded contexts, not the entire system. Most services do not need CQRS â€” a well-designed JPA model with DTO projections is sufficient.
+Apply CQRS to individual bounded contexts, not the entire system. Most services do not need CQRS → a well-designed JPA model with DTO projections is sufficient.
 
 ---
 
@@ -871,7 +871,7 @@ Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and t
 //         - java.io.IOException
 //         - org.springframework.web.client.HttpServerErrorException
 //       ignore-exceptions:
-//         - org.springframework.web.client.HttpClientErrorException  (4xx â€” not a circuit failure)
+//         - org.springframework.web.client.HttpClientErrorException  (4xx → not a circuit failure)
 
 // â”€â”€ Registration â”€â”€
 @Configuration
@@ -956,7 +956,7 @@ public class CircuitBreakerMonitor {
 }
 ```
 
-Circuit breaker states: CLOSED (normal, pass through) â†’ OPEN (fail fast, no calls) â†’ HALF_OPEN (allow limited probe calls) â†’ back to CLOSED or OPEN. Use it on every cross-service call. Without circuit breakers, a cascading failure in one service can take down the entire system.
+Circuit breaker states: CLOSED (normal, pass through) → OPEN (fail fast, no calls) → HALF_OPEN (allow limited probe calls) → back to CLOSED or OPEN. Use it on every cross-service call. Without circuit breakers, a cascading failure in one service can take down the entire system.
 
 ---
 
@@ -975,7 +975,7 @@ public class AuthServerConfig {
     public RegisteredClientRepository registeredClientRepository() {
         RegisteredClient orderService = RegisteredClient.withId(UUID.randomUUID().toString())
             .clientId("order-service")
-            .clientSecret("{noop}order-secret")  // noop = plain text â€” use BCrypt in prod
+            .clientSecret("{noop}order-secret")  // noop = plain text → use BCrypt in prod
             .authorizationGrantType(ClientCredentialsGrant.INSTANCE)
             .scope("order:read")
             .scope("order:write")
@@ -1056,7 +1056,7 @@ public class OrderController {
 }
 ```
 
-JWT is stateless â€” the resource server only needs the public key (JWKS) to verify tokens, no database call. Token expiry is short (15-30 minutes for access tokens). Use refresh tokens for user-facing flows; client credentials flow generates new tokens directly.
+JWT is stateless → the resource server only needs the public key (JWKS) to verify tokens, no database call. Token expiry is short (15-30 minutes for access tokens). Use refresh tokens for user-facing flows; client credentials flow generates new tokens directly.
 
 Never embed sensitive data in JWT claims (they are base64-encoded, not encrypted). For fine-grained authorization, use OAuth2 scopes combined with custom claims or a dedicated authorization service.
 
@@ -1175,7 +1175,7 @@ public class InventoryEventConsumer {
                 new InventoryFailedEvent(event.orderId(), e.getMessage()));
             acknowledgment.acknowledge();
         } catch (Exception e) {
-            // Do not commit â€” message will be re-delivered
+            // Do not commit → message will be re-delivered
             log.error("Failed to process order {}, will retry", event.orderId(), e);
             throw new RetryableException("Retry later");
         }
@@ -1435,7 +1435,7 @@ spec:
   ports:
     - port: 80
       targetPort: 8080
-  type: ClusterIP  # Internal â€” only accessible within the cluster
+  type: ClusterIP  # Internal → only accessible within the cluster
 ---
 # â”€â”€ ConfigMap for non-sensitive config â”€â”€
 
@@ -1548,7 +1548,7 @@ Kubernetes replaces Eureka for service discovery (DNS resolution), replaces Conf
 
 ```java
 // â”€â”€ Rolling update (Kubernetes default) â”€â”€
-// Updates pods gradually â€” old pods keep serving until new ones are healthy
+// Updates pods gradually → old pods keep serving until new ones are healthy
 apiVersion: apps/v1
 kind: Deployment
 spec:
@@ -1844,7 +1844,7 @@ class UserServiceClientTest {
 }
 ```
 
-Spring Cloud Contract automatically verifies that the consumer's client code works against the producer's contract. If the producer changes a response field, the consumer build breaks before deployment â€” not in production.
+Spring Cloud Contract automatically verifies that the consumer's client code works against the producer's contract. If the producer changes a response field, the consumer build breaks before deployment → not in production.
 
 Contract testing replaces brittle end-to-end tests for cross-service integration. Combined with consumer-driven contracts, it prevents breaking changes from reaching production.
 
@@ -1854,14 +1854,14 @@ Contract testing replaces brittle end-to-end tests for cross-service integration
 
 **Answer:**
 
-Each microservice owns its database â€” no other service accesses it directly. Data that spans services is shared through events or API calls.
+Each microservice owns its database → no other service accesses it directly. Data that spans services is shared through events or API calls.
 
 ```java
 // â”€â”€ Anti-pattern: direct database access â”€â”€
-// order-service calls user-service's database directly â€” WRONG
+// order-service calls user-service's database directly → WRONG
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    // order-service should NOT have this â€” it violates service boundaries
+    // order-service should NOT have this → it violates service boundaries
 }
 
 // â”€â”€ Correct: API-based data sharing â”€â”€
@@ -1879,7 +1879,7 @@ public class UserService {
     @Transactional
     public void updateShippingAddress(Long userId, Address newAddress) {
         userRepo.updateAddress(userId, newAddress);
-        // Publish event â€” order-service consumes and updates its local cache
+        // Publish event → order-service consumes and updates its local cache
         eventPublisher.publish(new AddressChangedEvent(userId, newAddress));
     }
 }
@@ -1911,9 +1911,9 @@ Strategies for cross-service data:
 1. **API calls**: Best for real-time data (get user details when creating an order)
 2. **Event replication**: Best for reference data (cache user address locally, update via events)
 3. **API composition**: Best for complex read models (API gateway aggregates responses)
-4. **Shared kernel**: Rare â€” share only extremely stable data (country codes, tax rates) as a library
+4. **Shared kernel**: Rare → share only extremely stable data (country codes, tax rates) as a library
 
-Never share databases between services. If two services need the same table, they are not independent â€” merge them into one service.
+Never share databases between services. If two services need the same table, they are not independent → merge them into one service.
 
 ---
 
@@ -1979,7 +1979,7 @@ public class ApiGatewayController {
         OrderDto order = orderClient.getOrder(orderId);
         UserDto user = userClient.getUser(order.userId());
         ProductDto product = productClient.getProduct(order.productId());
-        // Gateway is now doing orchestration â€” it should just route
+        // Gateway is now doing orchestration → it should just route
     }
 }
 // Fix: Create a dedicated order-aggregation-service for API composition.
@@ -1993,7 +1993,7 @@ Golden rule: If splitting a service doesn't give you independent deployability, 
 
 **Answer:**
 
-Testing microservices uses a pyramid: unit tests (many) â†’ integration tests (fewer) â†’ contract tests (per pair) â†’ end-to-end tests (few).
+Testing microservices uses a pyramid: unit tests (many) → integration tests (fewer) → contract tests (per pair) → end-to-end tests (few).
 
 ```java
 // â”€â”€ Layer 1: Unit tests (fast, isolated, mock external calls) â”€â”€
@@ -2142,13 +2142,13 @@ public class OrderService {
 }
 
 // â”€â”€ With Istio: circuit breaker moves to infrastructure â”€â”€
-// application code is clean â€” no Resilience4j annotations needed
+// application code is clean → no Resilience4j annotations needed
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
 
     public UserDto getUser(Long id) {
-        return userClient.getUser(id);  // No circuit breaker â€” Istio handles it
+        return userClient.getUser(id);  // No circuit breaker → Istio handles it
     }
 }
 ```
@@ -2234,12 +2234,12 @@ spec:
 ```
 
 Service mesh provides:
-- Traffic management (canary, circuit breaker, retries, timeouts â€” no code changes)
+- Traffic management (canary, circuit breaker, retries, timeouts → no code changes)
 - Security (mTLS, authorization, authentication at the proxy level)
 - Observability (automatic metrics, traces, access logs per request)
 - Resilience (timeouts, retries, circuit breaking, outlier detection)
 
-Use a service mesh when you have 10+ services and can't add cross-cutting code to each one. Do not use a service mesh for small deployments (3-5 services) â€” the complexity of managing sidecars and control plane is not worth it.
+Use a service mesh when you have 10+ services and can't add cross-cutting code to each one. Do not use a service mesh for small deployments (3-5 services) → the complexity of managing sidecars and control plane is not worth it.
 
 ---
 
@@ -2339,8 +2339,8 @@ public class MdcFilter implements WebFilter {
 
 Best practices:
 - Every log entry includes `traceId`, `service`, `level`, and `timestamp`
-- Structured JSON means no regex parsing â€” just query fields
-- Never log sensitive data (PII, passwords, tokens) â€” even in structured logs
+- Structured JSON means no regex parsing → just query fields
+- Never log sensitive data (PII, passwords, tokens) → even in structured logs
 - Correlation ID (traceId) connects logs across services during a single request flow
 - Use Loki + Grafana for Kubernetes-native log aggregation (no Elasticsearch cluster needed)
 
@@ -2538,12 +2538,12 @@ public class IdempotentConsumer {
 // ON CONFLICT (idempotency_key) DO NOTHING
 // RETURNING idempotency_key;
 //
-// If the INSERT returns the key, this is the first call â€” process normally.
-// If it returns nothing, another request already started processing â€” return cached result.
+// If the INSERT returns the key, this is the first call → process normally.
+// If it returns nothing, another request already started processing → return cached result.
 
 ```
 
-Idempotency is not optional in microservices â€” network retries guarantee duplicate requests. Every write endpoint should accept an idempotency key. Every async consumer should deduplicate by event ID.
+Idempotency is not optional in microservices → network retries guarantee duplicate requests. Every write endpoint should accept an idempotency key. Every async consumer should deduplicate by event ID.
 
 ---
 
@@ -2571,7 +2571,7 @@ public class ProductService {
             return cached;
         }
 
-        // Cache miss â€” load from database
+        // Cache miss → load from database
         Product product = productRepo.findById(id)
             .orElseThrow(() -> new ProductNotFoundException(id));
         ProductDto dto = ProductDto.from(product);
@@ -2689,7 +2689,7 @@ public class ProductService {
             }
         }
 
-        // Lock not acquired â€” wait briefly and retry
+        // Lock not acquired → wait briefly and retry
         Thread.sleep(100);
         return redis.opsForValue().get(key);  // Should be populated by now
     }

@@ -1,4 +1,4 @@
-# Chapter 12: Laravel AI SDK â€” Agents, Prompting & Structured Output
+# Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output
 > **Previous:** [Caching, Performance & Octane](./11-caching-performance) | **Next:** [Laravel AI SDK -- Tools, MCP Tools & Provider Tools](./13-ai-sdk-tools)
 
 ---
@@ -232,7 +232,7 @@ class CoachingController extends Controller
 }
 ```
 
-The `PendingAgentRequest` is configurable â€” override the provider, model, max tokens, and timeout:
+The `PendingAgentRequest` is configurable → override the provider, model, max tokens, and timeout:
 
 ```php
 <?php
@@ -873,7 +873,7 @@ class QuickController extends Controller
 
 ### Application Problems
 
-1. Create a `CodeReviewer` agent class that analyzes submitted PHP code and returns structured output containing an array of `issues` â€” each with a `severity` enum (error, warning, suggestion), a `line` number, and a `message`. Use `HasStructuredOutput` with a nested object inside an array.
+1. Create a `CodeReviewer` agent class that analyzes submitted PHP code and returns structured output containing an array of `issues` → each with a `severity` enum (error, warning, suggestion), a `line` number, and a `message`. Use `HasStructuredOutput` with a nested object inside an array.
 
 2. Implement a controller endpoint that accepts a conversation ID and a message, continues an existing conversation with a support agent, streams the response using the Vercel AI SDK protocol, and broadcasts each chunk to a Pusher channel named `chat.{conversation_id}`.
 

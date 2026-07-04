@@ -1776,7 +1776,7 @@ class AgentProgressUpdated implements ShouldBroadcast
 - Three specialized AI agents handle content production: Writer (generates articles from briefs with structured JSON output), Editor (reviews for grammar, style, and factual consistency), and Researcher (performs web search and returns fact-checked citations).
 - Agent chaining creates a production pipeline: Researcher Ã¢â€ â€™ Writer Ã¢â€ â€™ Editor. Each step broadcasts progress via Reverb so the UI provides real-time feedback.
 - The vector store is partitioned by `content_type` (article, comment, metadata) with separate HNSW indexes. A periodic `embeddings:reindex` artisan command handles stale embeddings.
-- Hybrid search combines pgvector cosine similarity (vector_score) with PostgreSQL full-text search (fts_score) using a weighted formula: `hybrid_score = vector_score Ãƒâ€” 0.7 + fts_score Ãƒâ€” 0.3`.
+- Hybrid search combines pgvector cosine similarity (vector_score) with PostgreSQL full-text search (fts_score) using a weighted formula: `hybrid_score = vector_score Ãƒ→ 0.7 + fts_score Ãƒ→ 0.3`.
 - MCP tools (search_documents, generate_content, analyze_sentiment) expose platform capabilities to external AI clients through a JSON-RPC interface.
 - Content moderation runs asynchronously: submitted documents and images pass through AI analysis queues. Text is scored for toxicity and NSFW content; images are analyzed via vision model.
 - A multi-layer caching strategy reduces API costs: embedding cache (24h, content-addressed), search result cache (5-60 min), AI response cache (1h), and moderation cache (24h).

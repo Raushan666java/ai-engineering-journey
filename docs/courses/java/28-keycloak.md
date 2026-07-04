@@ -26,9 +26,9 @@ By the end of this chapter you should be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Keycloak â€” open-source identity and access management | Self-hosted IdP with OAuth2/OIDC support |
-| Realm, Client, User â€” core Keycloak data model | Each realm is a tenant isolation boundary |
-| Spring Boot Adapter â€” secure apps via Keycloak integration | Use keycloak-spring-boot-starter or OIDC configuration |
+| Keycloak → open-source identity and access management | Self-hosted IdP with OAuth2/OIDC support |
+| Realm, Client, User → core Keycloak data model | Each realm is a tenant isolation boundary |
+| Spring Boot Adapter → secure apps via Keycloak integration | Use keycloak-spring-boot-starter or OIDC configuration |
 
 ---
 ## Chapter Roadmap
@@ -80,7 +80,7 @@ flowchart TD
 
 1. What is the tenant isolation unit in Keycloak? **Answer:** Realm
 2. Which annotation maps roles from Keycloak to Spring Security authorities? **Answer:** `@KeycloakConfiguration` handles role mapping automatically
-3. Is the Keycloak Spring Boot adapter recommended for new projects? **Answer:** No â€” use the standard OIDC resource server configuration
+3. Is the Keycloak Spring Boot adapter recommended for new projects? **Answer:** No → use the standard OIDC resource server configuration
 
 ---
 
@@ -550,7 +550,7 @@ public class KeycloakAdminClient {
 ```
 
 > [!TIP]
-> For new projects, prefer the standard Spring Security OIDC configuration over the Keycloak adapter â€” it is more portable and actively maintained.
+> For new projects, prefer the standard Spring Security OIDC configuration over the Keycloak adapter → it is more portable and actively maintained.
 
 > [!WARNING]
 > Never commit Keycloak client secrets to version control. Use environment variables or a secret manager.
@@ -882,7 +882,7 @@ Token exchange allows one client or user to exchange a token for another token t
 
 ```
 Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â         Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â         Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-Ã¢â€â€š  Client A Ã¢â€â€šÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬JWTÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¶Ã¢â€â€š Keycloak Ã¢â€â€šÃ¢â€”â‚¬Ã¢â€â‚¬Ã¢â€â‚¬JWTÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â€š  Client B Ã¢â€â€š
+Ã¢â€â€š  Client A Ã¢â€â€šÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬JWTÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¶Ã¢â€â€š Keycloak Ã¢â€â€šÃ¢→â‚¬Ã¢â€â‚¬Ã¢â€â‚¬JWTÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â€š  Client B Ã¢â€â€š
 Ã¢â€â€š(Frontend) Ã¢â€â€š         Ã¢â€â€š          Ã¢â€â€š         Ã¢â€â€š (Backend) Ã¢â€â€š
 Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ         Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ         Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
                           Ã¢â€â€š
@@ -2849,7 +2849,7 @@ public class UmaDocumentController {
 ```
 
 > [!NOTE]
-> Each realm is fully isolated â€” users, roles, and clients in one realm cannot access another realm without explicit federation.
+> Each realm is fully isolated → users, roles, and clients in one realm cannot access another realm without explicit federation.
 
 ---
 

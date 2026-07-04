@@ -1,4 +1,4 @@
-# Chapter 4 â€” JavaScript and the DOM
+# Chapter 4 → JavaScript and the DOM
 
 > **Previous:** [03-js-basics](./03-js-basics.md) | **Next:** [05-es6-plus](./05-es6-plus.md)
 
@@ -124,7 +124,7 @@ parent.insertBefore(div, referenceChild);   // Before reference child
 reference.after(div);                       // Inserts after reference
 reference.before(div);                      // Inserts before reference
 
-// HTML injection (use with caution â€” XSS risk)
+// HTML injection (use with caution → XSS risk)
 element.innerHTML = '<strong>Bold text</strong>';
 
 // Safer alternative
@@ -207,9 +207,9 @@ element.addEventListener('click', handler, {
 
 When a DOM event fires, it travels in three phases:
 
-1. **Capture phase** â€” Event travels from `document` down to the target element.
-2. **Target phase** â€” Event reaches the target element.
-3. **Bubble phase** â€” Event travels from target back up to `document`.
+1. **Capture phase** → Event travels from `document` down to the target element.
+2. **Target phase** → Event reaches the target element.
+3. **Bubble phase** → Event travels from target back up to `document`.
 
 ```javascript
 document.addEventListener('click', () => console.log('capture: document'), true);
@@ -303,7 +303,7 @@ form.addEventListener('submit', (event) => {
 
 ### 4.6 IntersectionObserver
 
-`IntersectionObserver` asynchronously observes visibility changes of elements relative to a parent or the viewport â€” essential for lazy loading, infinite scroll, and animation triggers.
+`IntersectionObserver` asynchronously observes visibility changes of elements relative to a parent or the viewport → essential for lazy loading, infinite scroll, and animation triggers.
 
 ```javascript
 const observer = new IntersectionObserver(

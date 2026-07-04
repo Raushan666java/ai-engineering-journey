@@ -202,7 +202,7 @@ Broadcasting performs operations on arrays of different shapes:
 ```python
 # Scalar broadcasting
 arr = np.array([1, 2, 3])
-print(arr * 10)  # [10 20 30] â€” scalar stretched to match shape
+print(arr * 10)  # [10 20 30] → scalar stretched to match shape
 
 # Vector broadcasting
 matrix = np.array([[1, 2, 3], [4, 5, 6]])
@@ -297,7 +297,7 @@ eigvals, eigvecs = np.linalg.eig(a)
 A = np.array([[3, 1], [1, 2]])
 b = np.array([9, 8])
 x = np.linalg.solve(A, b)
-print(x)  # [2. 3.] â€” solution to 3x + y = 9, x + 2y = 8
+print(x)  # [2. 3.] → solution to 3x + y = 9, x + 2y = 8
 
 # Norms
 vector = np.array([3, 4])

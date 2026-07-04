@@ -21,14 +21,14 @@
 
 **Real-World Analogy: Legal Reasoning in a Courtroom**
 
-Imagine a courtroom. The prosecution presents evidence (facts), and the judge applies legal statutes (rules) to reach a verdict (conclusion). The process is not arbitrary â€” every conclusion must follow logically from the evidence and the law.
+Imagine a courtroom. The prosecution presents evidence (facts), and the judge applies legal statutes (rules) to reach a verdict (conclusion). The process is not arbitrary → every conclusion must follow logically from the evidence and the law.
 
 A lawyer reasons like a logical agent:
 - **Facts**: "The defendant was at the crime scene" (P), "The defendant owns a weapon matching the murder weapon" (Q).
 - **Rules**: "If someone was at the crime scene and owns the murder weapon, they are a suspect" (P âˆ§ Q â‡’ R).
 - **Inference**: Using Modus Ponens, from P âˆ§ Q and P âˆ§ Q â‡’ R, deduce R (the defendant is a suspect).
 
-This is exactly how a **knowledge-based agent** works in AI. The agent stores facts in a Knowledge Base (KB), applies rules of inference, and derives new conclusions. Just as a judge cannot invent facts, a logical agent can only derive what follows from what it knows â€” making its reasoning **sound**, **transparent**, and **verifiable**.
+This is exactly how a **knowledge-based agent** works in AI. The agent stores facts in a Knowledge Base (KB), applies rules of inference, and derives new conclusions. Just as a judge cannot invent facts, a logical agent can only derive what follows from what it knows → making its reasoning **sound**, **transparent**, and **verifiable**.
 
 Why this matters for AI:
 - **Explainability**: Every conclusion has a traceable proof chain.
@@ -89,14 +89,14 @@ flowchart LR
 
 **Real-World Analogy: The Librarian**
 
-A librarian manages a library catalog. When new books arrive, the librarian **TELLs** the catalog by adding entries. When a patron asks a question, the librarian **ASKs** the catalog â€” not by reading every book, but by using the catalog's structure to infer where the answer can be found. If the catalog says "All computer science books are in section 006.3" and a patron asks for an AI book, the librarian infers the correct location.
+A librarian manages a library catalog. When new books arrive, the librarian **TELLs** the catalog by adding entries. When a patron asks a question, the librarian **ASKs** the catalog → not by reading every book, but by using the catalog's structure to infer where the answer can be found. If the catalog says "All computer science books are in section 006.3" and a patron asks for an AI book, the librarian infers the correct location.
 
-A **knowledge-based agent** works exactly this way. It maintains a **Knowledge Base (KB)** â€” a structured set of sentences in a formal language â€” and interacts through two operations:
+A **knowledge-based agent** works exactly this way. It maintains a **Knowledge Base (KB)** → a structured set of sentences in a formal language → and interacts through two operations:
 - **TELL**: Adds new sentences to the KB (like adding a book to the catalog).
 - **ASK**: Queries the KB to determine what follows (like asking the catalog a question).
 
 The agent's reasoning cycle:
-1. **Perceive** the environment â†’ get a percept.
+1. **Perceive** the environment → get a percept.
 2. **TELL** the KB what was perceived.
 3. **ASK** the KB what action is best.
 4. **Execute** the action.
@@ -125,7 +125,7 @@ function KB_AGENT(percept)
     return action
 ```
 
-#### Step-by-Step Dry Run â€” Wumpus World
+#### Step-by-Step Dry Run → Wumpus World
 
 The agent is in a 4Ã—4 grid with pits and a Wumpus. Percepts: Stench (Wumpus nearby), Breeze (pit nearby), Glitter (gold).
 
@@ -175,15 +175,15 @@ print(kb.ask("Q"))     # True (Q can be derived)
 | ASK (direct) | O(1) | Set membership test |
 | ASK (resolution) | EXP | Resolution is exponential in worst case |
 
-The TELL operation is always fast. ASK complexity depends entirely on the inference algorithm used â€” from constant-time fact lookup to exponential full resolution.
+The TELL operation is always fast. ASK complexity depends entirely on the inference algorithm used → from constant-time fact lookup to exponential full resolution.
 
 #### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Modular â€” new facts don't break existing logic | Inefficient for large KBs without indexing |
-| Full transparency â€” every conclusion traceable | Cannot handle uncertainty (use probabilistic reasoning) |
-| Sound by construction when using valid inference rules | Requires perfect knowledge â€” no "partial" truth |
+| Modular → new facts don't break existing logic | Inefficient for large KBs without indexing |
+| Full transparency → every conclusion traceable | Cannot handle uncertainty (use probabilistic reasoning) |
+| Sound by construction when using valid inference rules | Requires perfect knowledge → no "partial" truth |
 | Separation of knowledge and reasoning | Knowledge acquisition bottleneck |
 
 #### Edge Cases
@@ -236,11 +236,11 @@ A computer circuit is built from logic gates connected by wires. Each wire carri
 PL uses:
 - **Atomic symbols**: P, Q, R, Pâ‚, Pâ‚‚, ... (represent propositions)
 - **Connectives**:
-  - Â¬ (Negation/Not) â€” unary operator
-  - âˆ§ (Conjunction/And) â€” binary operator
-  - âˆ¨ (Disjunction/Or) â€” binary operator
-  - â‡’ (Implication) â€” binary operator
-  - â‡” (Biconditional/Iff) â€” binary operator
+  - Â¬ (Negation/Not) → unary operator
+  - âˆ§ (Conjunction/And) → binary operator
+  - âˆ¨ (Disjunction/Or) → binary operator
+  - â‡’ (Implication) → binary operator
+  - â‡” (Biconditional/Iff) → binary operator
 - **Parentheses**: ( and ) for grouping
 
 Every **well-formed formula (WFF)** is:
@@ -254,7 +254,7 @@ Formula := Atom | Â¬Formula | Formula âˆ§ Formula | Formula âˆ¨ Formula
          | Formula â‡’ Formula | Formula â‡” Formula | (Formula)
 ```
 
-#### Semantics â€” Truth Table Conditions
+#### Semantics → Truth Table Conditions
 
 | Connective | True When |
 |------------|-----------|
@@ -294,7 +294,7 @@ function TT_CHECK_ALL(KB, alpha, symbols, model) returns boolean
         if PL_TRUE(KB, model) then
             return PL_TRUE(alpha, model)
         else
-            return True   // KB false â†’ entailment vacuously holds
+            return True   // KB false → entailment vacuously holds
     else
         P â† Pop(symbols)
         rest â† symbols
@@ -302,7 +302,7 @@ function TT_CHECK_ALL(KB, alpha, symbols, model) returns boolean
            AND TT_CHECK_ALL(KB, alpha, rest, model âˆª {P=False})
 ```
 
-#### Step-by-Step Dry Run â€” Truth Table Entailment
+#### Step-by-Step Dry Run → Truth Table Entailment
 
 **Problem**: Does KB = {A âˆ¨ B, Â¬B} entail Î± = A?
 
@@ -356,7 +356,7 @@ def tt_entails(kb: set, alpha: str, symbols: list[str]) -> bool:
         if not symbols:
             kb_true = all(pl_true(s, model) for s in kb)
             if not kb_true:
-                return True  # KB false â†’ entailment holds vacuously
+                return True  # KB false → entailment holds vacuously
             return pl_true(alpha, model)
         sym = symbols[0]
         rest = symbols[1:]
@@ -385,7 +385,7 @@ The exponential growth makes truth tables impractical for more than 20-30 symbol
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Guaranteed correct (sound and complete) | O(2â¿) â€” impractical for large n |
+| Guaranteed correct (sound and complete) | O(2â¿) → impractical for large n |
 | Intuitive and easy to understand | Only works for propositional logic |
 | Every conclusion has a clear proof trace | Cannot handle functions, quantifiers, or relations |
 | Foundation for all other logical methods | No support for uncertainty or probabilities |
@@ -395,8 +395,8 @@ The exponential growth makes truth tables impractical for more than 20-30 symbol
 - **Tautology in KB**: Adding P âˆ¨ Â¬P to KB doesn't change entailment (it's always true).
 - **Contradictory KB**: KB with P and Â¬P entails every possible sentence (explosion).
 - **Empty KB**: Only tautologies are entailed (sentences true in all models).
-- **Single symbol**: KB={P}, query=Q â†’ false (no relation between P and Q).
-- **Cyclic definition**: P â‡’ Q and Q â‡’ P with only P in KB â†’ Q is entailed (using Modus Ponens twice).
+- **Single symbol**: KB={P}, query=Q → false (no relation between P and Q).
+- **Cyclic definition**: P â‡’ Q and Q â‡’ P with only P in KB → Q is entailed (using Modus Ponens twice).
 
 ---
 
@@ -404,7 +404,7 @@ The exponential growth makes truth tables impractical for more than 20-30 symbol
 
 **Real-World Analogy: Legal Inference Patterns**
 
-In law, certain reasoning patterns are standard. If a statute says "If a person is driving over the speed limit, they are speeding" (P â‡’ Q) and evidence shows "The person was driving at 90 mph in a 50 mph zone" (P), the court concludes "The person is speeding" (Q). This is Modus Ponens â€” the most fundamental rule of inference.
+In law, certain reasoning patterns are standard. If a statute says "If a person is driving over the speed limit, they are speeding" (P â‡’ Q) and evidence shows "The person was driving at 90 mph in a 50 mph zone" (P), the court concludes "The person is speeding" (Q). This is Modus Ponens → the most fundamental rule of inference.
 
 #### Modus Ponens
 
@@ -482,21 +482,21 @@ The two premises share a complementary literal (P and Â¬P). Resolution cancels
 
 **Real-World Analogy: Process of Elimination in a Whodunit**
 
-A detective has a list of suspects. Clues eliminate possibilities one by one. "The murderer is left-handed OR the murderer is tall." Then: "The murderer is not left-handed." Resolution eliminates "left-handed" and concludes "The murderer is tall." Keep eliminating until only one suspect remains â€” or until you've eliminated everyone (contradiction = empty clause), meaning your assumptions were inconsistent.
+A detective has a list of suspects. Clues eliminate possibilities one by one. "The murderer is left-handed OR the murderer is tall." Then: "The murderer is not left-handed." Resolution eliminates "left-handed" and concludes "The murderer is tall." Keep eliminating until only one suspect remains → or until you've eliminated everyone (contradiction = empty clause), meaning your assumptions were inconsistent.
 
 Resolution proves KB âŠ¨ Î± by **refutation**: show that KB âˆ§ Â¬Î± is unsatisfiable by deriving the empty clause.
 
 #### Step 1: Convert to Conjunctive Normal Form (CNF)
 
-Every propositional formula can be converted to CNF â€” a conjunction of clauses where each clause is a disjunction of literals.
+Every propositional formula can be converted to CNF → a conjunction of clauses where each clause is a disjunction of literals.
 
 Example CNF: (A âˆ¨ Â¬B) âˆ§ (B âˆ¨ C âˆ¨ Â¬D) âˆ§ (Â¬A)
 
 **Conversion Algorithm**:
 1. **Eliminate â‡”**: Replace P â‡” Q with (P â‡’ Q) âˆ§ (Q â‡’ P)
 2. **Eliminate â‡’**: Replace P â‡’ Q with Â¬P âˆ¨ Q
-3. **Push Â¬ inward** (De Morgan's): Â¬(P âˆ§ Q) â†’ Â¬P âˆ¨ Â¬Q, Â¬(P âˆ¨ Q) â†’ Â¬P âˆ§ Â¬Q, Â¬Â¬P â†’ P
-4. **Distribute âˆ¨ over âˆ§**: (P âˆ¨ (Q âˆ§ R)) â†’ (P âˆ¨ Q) âˆ§ (P âˆ¨ R)
+3. **Push Â¬ inward** (De Morgan's): Â¬(P âˆ§ Q) → Â¬P âˆ¨ Â¬Q, Â¬(P âˆ¨ Q) → Â¬P âˆ§ Â¬Q, Â¬Â¬P → P
+4. **Distribute âˆ¨ over âˆ§**: (P âˆ¨ (Q âˆ§ R)) → (P âˆ¨ Q) âˆ§ (P âˆ¨ R)
 
 **Example**: Convert (P â‡’ Q) âˆ§ (Q â‡’ P) to CNF
 1. Eliminate â‡’: (Â¬P âˆ¨ Q) âˆ§ (Â¬Q âˆ¨ P)
@@ -546,11 +546,11 @@ function PL_RESOLVE(Ci, Cj) returns set of clauses
     return resolvents
 ```
 
-#### Step-by-Step Dry Run â€” Resolution Proof
+#### Step-by-Step Dry Run → Resolution Proof
 
 **Problem**: KB = {A â‡’ B, B â‡’ C, A}. Prove: C
 
-**Step 1 â€” Convert KB âˆ§ Â¬C to CNF**:
+**Step 1 → Convert KB âˆ§ Â¬C to CNF**:
 
 | Sentence | CNF |
 |----------|:---:|
@@ -561,13 +561,13 @@ function PL_RESOLVE(Ci, Cj) returns set of clauses
 
 Clauses: {Â¬A âˆ¨ B, Â¬B âˆ¨ C, A, Â¬C}
 
-**Step 2 â€” Apply resolution**:
+**Step 2 → Apply resolution**:
 
 | Step | Clause 1 | Clause 2 | Resolvent | Reason |
 |:----:|:--------:|:--------:|:---------:|:------:|
 | 1 | Â¬A âˆ¨ B | A | B | A and Â¬A cancel |
 | 2 | Â¬B âˆ¨ C | B | C | B and Â¬B cancel |
-| 3 | Â¬C | C | **Empty (â˜)** | C and Â¬C cancel â€” contradiction! |
+| 3 | Â¬C | C | **Empty (â˜)** | C and Â¬C cancel → contradiction! |
 
 **Result**: The empty clause is derived, proving KB âˆ§ Â¬C is unsatisfiable, therefore KB âŠ¨ C.
 
@@ -575,11 +575,11 @@ Clauses: {Â¬A âˆ¨ B, Â¬B âˆ¨ C, A, Â¬C}
 
 | Iteration | Clauses Set | New Clauses Derived |
 |:---------:|:-----------:|:------------------:|
-| Initial | {Â¬Aâˆ¨B, Â¬Bâˆ¨C, A, Â¬C} | â€” |
+| Initial | {Â¬Aâˆ¨B, Â¬Bâˆ¨C, A, Â¬C} | → |
 | After pair 1 | + {B} | Resolve(Â¬Aâˆ¨B, A) |
 | After pair 2 | + {C} | Resolve(Â¬Bâˆ¨C, B) |
 | After pair 3 | + {â˜} | Resolve(Â¬C, C) |
-| Done | â˜ derived â†’ KB âŠ¨ C | â€” |
+| Done | â˜ derived → KB âŠ¨ C | → |
 
 #### Python Implementation
 
@@ -625,7 +625,7 @@ def pl_resolution(kb: list[str], alpha: str) -> bool:
                 new_clauses |= resolvents
 
         if new_clauses.issubset(clauses):
-            return False  # No new clauses â€” no entailment
+            return False  # No new clauses → no entailment
         clauses |= new_clauses
 
 # Example
@@ -658,9 +658,9 @@ In practice, resolution works well for problems with small clause sets and is th
 
 #### Edge Cases
 
-- **Empty KB resolution**: KB={}, proving P â†’ resolution of Â¬P alone â†’ no clauses to resolve â†’ false (not entailed). Unless P is a tautology.
-- **Contradictory KB**: KB={P, Â¬P} â€” resolution immediately finds empty clause from P and Â¬P, trivially entailing everything.
-- **Tautological clauses**: (P âˆ¨ Â¬P) adds no information â€” it never resolves to produce anything new.
+- **Empty KB resolution**: KB={}, proving P → resolution of Â¬P alone → no clauses to resolve → false (not entailed). Unless P is a tautology.
+- **Contradictory KB**: KB={P, Â¬P} → resolution immediately finds empty clause from P and Â¬P, trivially entailing everything.
+- **Tautological clauses**: (P âˆ¨ Â¬P) adds no information → it never resolves to produce anything new.
 - **Pure literals**: If a literal appears only positively or only negatively across all clauses, it cannot contribute to finding the empty clause.
 - **Unit propagation**: When a clause has only one literal (unit clause), it immediately forces assignments.
 
@@ -670,14 +670,14 @@ In practice, resolution works well for problems with small clause sets and is th
 
 **Real-World Analogy: Spreading Activation in a Social Network**
 
-When news spreads through a social network, one person tells their friends, who tell their friends, and so on â€” the information flows forward from what is known. Forward chaining works the same way: starting from known facts, it applies rules to derive new facts, which then trigger more rules.
+When news spreads through a social network, one person tells their friends, who tell their friends, and so on → the information flows forward from what is known. Forward chaining works the same way: starting from known facts, it applies rules to derive new facts, which then trigger more rules.
 
 Forward chaining is **data-driven**: it starts with what you know and derives everything possible.
 
 #### Algorithm: Forward Chaining
 
-Works on **Horn clauses** â€” clauses with at most one positive literal:
-- Rule: (P âˆ§ Q âˆ§ R) â‡’ S (premises â†’ single conclusion)
+Works on **Horn clauses** → clauses with at most one positive literal:
+- Rule: (P âˆ§ Q âˆ§ R) â‡’ S (premises → single conclusion)
 - Fact: P (a clause with no negative literals)
 - Goal: Query a fact
 
@@ -704,7 +704,7 @@ Algorithm: Forward-Chain(KB, rules)
 ```
 function FORWARD_CHAINING(KB, rules) returns all derivable facts
     agenda â† KB.facts                                // facts to process
-    inferred â† empty dictionary                       // fact â†’ True/False
+    inferred â† empty dictionary                       // fact → True/False
     
     // Initialize premise counts for each rule
     for each rule in rules:
@@ -724,7 +724,7 @@ function FORWARD_CHAINING(KB, rules) returns all derivable facts
     return inferred
 ```
 
-#### Step-by-Step Dry Run â€” Forward Chaining
+#### Step-by-Step Dry Run → Forward Chaining
 
 **Knowledge Base**:
 - Facts: {A, B}
@@ -737,11 +737,11 @@ function FORWARD_CHAINING(KB, rules) returns all derivable facts
 
 | Step | Fact Processed | Inferred Set | Rules Triggered | Agenda |
 |:----:|:-------------:|:------------:|:---------------:|:------:|
-| Start | â€” | {} | â€” | [A, B] |
-| 1 | A | {A} | Rule 1 count: 2â†’1, Rule 3 count: 1â†’0 â†’ D | [B, D] |
-| 2 | B | {A, B} | Rule 1 count: 1â†’0 â†’ C | [D, C] |
-| 3 | D | {A, B, D} | Rule 2 count: 2â†’1 | [C] |
-| 4 | C | {A, B, D, C} | Rule 2 count: 1â†’0 â†’ E | [E] |
+| Start | → | {} | → | [A, B] |
+| 1 | A | {A} | Rule 1 count: 2→1, Rule 3 count: 1→0 → D | [B, D] |
+| 2 | B | {A, B} | Rule 1 count: 1→0 → C | [D, C] |
+| 3 | D | {A, B, D} | Rule 2 count: 2→1 | [C] |
+| 4 | C | {A, B, D, C} | Rule 2 count: 1→0 → E | [E] |
 | 5 | E | {A, B, D, C, E} | None | [] |
 
 **Result**: Derived facts = {A, B, D, C, E}. All derivable facts have been found.
@@ -796,18 +796,18 @@ Forward chaining is **linear** in the number of rules when the KB size is bounde
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Efficient â€” linear for Horn clauses | Derives many irrelevant facts |
-| Data-driven â€” good for monitoring/alerting | Requires all data before starting |
+| Efficient → linear for Horn clauses | Derives many irrelevant facts |
+| Data-driven → good for monitoring/alerting | Requires all data before starting |
 | Simple to implement and understand | Limited to Horn clause logic |
 | Optimal for problems with many goals shared across rules | Can generate large working memory |
-| Each fact derived exactly once | No goal-direction â€” computes all possibilities |
+| Each fact derived exactly once | No goal-direction → computes all possibilities |
 
 #### Edge Cases
 
 - **No initial facts**: Forward chaining produces no new facts (no triggers).
-- **Cyclic rules**: A â‡’ B, B â‡’ A with fact {A} â†’ derives B, then stops (A and B already inferred).
+- **Cyclic rules**: A â‡’ B, B â‡’ A with fact {A} → derives B, then stops (A and B already inferred).
 - **Disconnected rules**: Rules sharing no premises with facts never fire.
-- **Contradictory rules**: A â‡’ B and A â‡’ Â¬B with fact {A} â†’ derives both B and Â¬B, making KB inconsistent.
+- **Contradictory rules**: A â‡’ B and A â‡’ Â¬B with fact {A} → derives both B and Â¬B, making KB inconsistent.
 - **Multiple conclusions from same rule**: Not possible in Horn (each rule has exactly one consequent).
 
 ---
@@ -851,14 +851,14 @@ function BACKWARD_CHAINING(KB, goal, inferred) returns boolean
         for each premise in rule.premises:
             if not BACKWARD_CHAINING(KB, premise, inferred):
                 all_premises_true â† False
-                break                     // one premise fails â†’ this rule fails
+                break                     // one premise fails → this rule fails
         if all_premises_true:
             return True                   // found a working rule
     
     return False                         // no rule can prove the goal
 ```
 
-#### Step-by-Step Dry Run â€” Backward Chaining
+#### Step-by-Step Dry Run → Backward Chaining
 
 **KB**:
 - Facts: {A, B}
@@ -875,11 +875,11 @@ function BACKWARD_CHAINING(KB, goal, inferred) returns boolean
 | 2 | C | [E, C] | Rule 1: A âˆ§ B â‡’ C | Need A and B |
 | 3 | A | [E, C, A] | Direct fact | **True** (A is known) |
 | 4 | B | [E, C, B] | Direct fact | **True** (B is known) |
-| 5 | â€” | [E, C] | All premises satisfied | C = True |
+| 5 | → | [E, C] | All premises satisfied | C = True |
 | 6 | D | [E, D] | Rule 3: A â‡’ D | Need A |
 | 7 | A | [E, D, A] | Direct fact | **True** (A is known) |
-| 8 | â€” | [E, D] | All premises satisfied | D = True |
-| 9 | â€” | [E] | All premises satisfied | **E = True!** |
+| 8 | → | [E, D] | All premises satisfied | D = True |
+| 9 | → | [E] | All premises satisfied | **E = True!** |
 
 **Result**: E is proven. The proof tree (AND-OR tree) shows:
 ```
@@ -935,7 +935,7 @@ print(f"KB entails F? {backward_chaining(kb, rules, 'F', set())}")  # False
 | Aspect | Value | Why |
 |--------|:-----:|-----|
 | Time (worst) | O(b Ã— n) | b=branching factor (rules per goal), n=depth of proof tree |
-| Time (best) | O(d) | d=proof depth â€” directly finds supporting facts |
+| Time (best) | O(d) | d=proof depth → directly finds supporting facts |
 | Space | O(n) | Recursion depth equals proof tree depth |
 
 Backward chaining only explores rules relevant to the goal, making it much more efficient than forward chaining for single-query scenarios. However, worst-case behavior when the goal cannot be proven requires exploring all possible rules.
@@ -944,7 +944,7 @@ Backward chaining only explores rules relevant to the goal, making it much more 
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Goal-directed â€” only explores relevant rules | May miss derivations that exist (if KB not Horn) |
+| Goal-directed → only explores relevant rules | May miss derivations that exist (if KB not Horn) |
 | Efficient for single queries | Does not work with non-Horn clauses (disjunctions in conclusions) |
 | Natural for question-answering | Can get stuck in infinite recursion without cycle detection |
 | Produces explanation (proof tree) | Repeated subgoals may be recomputed without memoization |
@@ -956,7 +956,7 @@ Backward chaining only explores rules relevant to the goal, making it much more 
 - **Cyclic rules**: A â‡’ B, B â‡’ A, query A. Backward chaining with cycle detection prevents infinite loop.
 - **Multiple rules for same goal**: Tries each in order; first success returns true.
 - **Fact is also a rule conclusion**: Direct fact check succeeds before trying rules.
-- **Unreachable goal**: Goal with rules that rely on missing premises â†’ returns false.
+- **Unreachable goal**: Goal with rules that rely on missing premises → returns false.
 
 ---
 
@@ -965,7 +965,7 @@ Backward chaining only explores rules relevant to the goal, making it much more 
 | Feature | Propositional Logic (PL) | First-Order Logic (FOL) |
 |---------|:------------------------:|:----------------------:|
 | **Atomic unit** | Proposition symbols (P, Q) | Predicates with objects (Loves(John, Mary)) |
-| **Objects** | None â€” only boolean variables | Constants, variables, functions |
+| **Objects** | None → only boolean variables | Constants, variables, functions |
 | **Quantifiers** | None | âˆ€ (for all), âˆƒ (there exists) |
 | **Expressiveness** | Fixed facts only | Relations between objects, generalizations |
 | **Example** | "It is raining" = R | "All humans are mortal" = âˆ€x Human(x) â‡’ Mortal(x) |
@@ -974,11 +974,11 @@ Backward chaining only explores rules relevant to the goal, making it much more 
 | **Typical use** | Circuit verification, SAT solving | Knowledge graphs, theorem proving |
 | **Truth table** | Works (2â¿ rows) | Impossible (infinite models) |
 
-> **Key Insight**: PL is decidable â€” there is always an answer (SAT or UNSAT). FOL is only semi-decidable â€” if a sentence is true, a proof will eventually be found, but if it's false, the prover may run forever.
+> **Key Insight**: PL is decidable → there is always an answer (SAT or UNSAT). FOL is only semi-decidable → if a sentence is true, a proof will eventually be found, but if it's false, the prover may run forever.
 
 ---
 
-### Inference Methods â€” Comparison Table
+### Inference Methods → Comparison Table
 
 | Method | Sound? | Complete? | Complexity | KB Type | Best For |
 |--------|:------:|:---------:|:----------:|:-------:|:--------:|
@@ -995,7 +995,7 @@ Backward chaining only explores rules relevant to the goal, making it much more 
 
 **Real-World Analogy: Puzzle Pieces**
 
-A valid sentence is like a puzzle piece that fits everywhere â€” no matter how you rotate it, it always fits. A satisfiable sentence fits somewhere, in some configuration. An unsatisfiable sentence fits nowhere â€” it's inherently contradictory.
+A valid sentence is like a puzzle piece that fits everywhere → no matter how you rotate it, it always fits. A satisfiable sentence fits somewhere, in some configuration. An unsatisfiable sentence fits nowhere → it's inherently contradictory.
 
 #### Definitions
 
@@ -1033,7 +1033,7 @@ Algorithm: DPLL(clauses, model)
 
 ```python
 def dpll(clauses: list, model: dict) -> bool:
-    """DPLL SAT solver â€” returns True if formula is satisfiable."""
+    """DPLL SAT solver → returns True if formula is satisfiable."""
     # Unit propagation
     changed = True
     while changed:
@@ -1088,8 +1088,8 @@ print(f"SAT? {dpll(clauses, {})}")  # False (unsatisfiable)
 
 #### Edge Cases
 
-- **Tautology P âˆ¨ Â¬P**: Always satisfiable â€” every model satisfies it.
-- **Unsatisfiable P âˆ§ Â¬P**: No model exists â€” DPLL immediately finds empty clause.
+- **Tautology P âˆ¨ Â¬P**: Always satisfiable → every model satisfies it.
+- **Unsatisfiable P âˆ§ Â¬P**: No model exists → DPLL immediately finds empty clause.
 - **Mixed**: (P âˆ¨ Q) âˆ§ (Â¬P âˆ¨ Â¬Q) is satisfiable (model: {P=T, Q=F} or {P=F, Q=T}).
 - **Empty clause set**: Vacuously satisfiable (no constraints).
 - **Single clause {P}**: Trivially satisfiable with P=True.
@@ -1106,7 +1106,7 @@ print(f"SAT? {dpll(clauses, {})}")  # False (unsatisfiable)
 | Forward Chaining | âœ… | âœ… (Horn) | Linear | Data-driven reasoning |
 | Backward Chaining | âœ… | âœ… (Horn) | Linear | Goal-directed reasoning |
 
-## Quick Reference â€” Logical Connectives
+## Quick Reference → Logical Connectives
 
 | Name | Operator | Read As | True When |
 |------|:-------:|---------|:---------:|
@@ -1137,9 +1137,9 @@ print(f"SAT? {dpll(clauses, {})}")  # False (unsatisfiable)
 
 **Solution**:
 
-Step 1 â€” Convert to CNF: {Â¬A âˆ¨ B, Â¬B âˆ¨ C, Â¬C âˆ¨ D, A}
-Step 2 â€” Negate goal: Â¬D
-Step 3 â€” Resolution chain:
+Step 1 → Convert to CNF: {Â¬A âˆ¨ B, Â¬B âˆ¨ C, Â¬C âˆ¨ D, A}
+Step 2 → Negate goal: Â¬D
+Step 3 → Resolution chain:
 
 | Step | Resolve | Result |
 |:----:|:-------:|:------:|
@@ -1173,10 +1173,10 @@ Step 3 â€” Resolution chain:
 **Key techniques**:
 
 1. **Unit Propagation**: If a clause has only one unassigned literal, that literal must be true for the clause to be satisfied.
-   - Example: Clause {P} â†’ P must be true. Clause {P âˆ¨ Q} when P is false â†’ Q must be true.
+   - Example: Clause {P} → P must be true. Clause {P âˆ¨ Q} when P is false → Q must be true.
 
 2. **Pure Literal Elimination**: If a literal appears with only one polarity across all clauses, assign it to make those clauses true.
-   - Example: P appears only as Â¬P everywhere â†’ set P = False to satisfy all those Â¬P.
+   - Example: P appears only as Â¬P everywhere → set P = False to satisfy all those Â¬P.
 
 3. **Early Termination**: If all clauses are satisfied, stop (SAT). If any clause has all false literals, stop (UNSAT).
 
@@ -1210,7 +1210,7 @@ Automated theorem provers use resolution and superposition to prove mathematical
   - Program synthesis
   - Security analysis (binary decompilation)
 
-**Example â€” Z3 usage**:
+**Example → Z3 usage**:
 ```python
 # pip install z3-solver
 from z3 import *
@@ -1232,7 +1232,7 @@ Prolog (Programming in Logic) uses backward chaining on Horn clauses as its exec
 mortal(X) :- human(X).
 human(socrates).
 
-% Query: ?- mortal(socrates).  â†’  Yes
+% Query: ?- mortal(socrates).  →  Yes
 ```
 
 - Prolog programs are sets of Horn clauses.
@@ -1250,7 +1250,7 @@ Propositional logic is the mathematical foundation of digital circuit design and
 **Example**: Verify (A âˆ§ B) âˆ¨ C â‰¡ (A âˆ¨ C) âˆ§ (B âˆ¨ C) using a SAT solver:
 ```
 Formula: ((A âˆ§ B) âˆ¨ C) â‡” ((A âˆ¨ C) âˆ§ (B âˆ¨ C))
-If UNSAT â†’ equivalence holds (no counterexample)
+If UNSAT → equivalence holds (no counterexample)
 ```
 
 ### 4. Planning Systems
@@ -1289,7 +1289,7 @@ Determine if (P â‡’ Q) â‡” (Â¬P âˆ¨ Q) is valid.
 | F | T | T | T | T | Yes |
 | F | F | T | T | T | Yes |
 
-**Conclusion**: (P â‡’ Q) â‡” (Â¬P âˆ¨ Q) is **valid** â€” the two formulas are logically equivalent. This shows that implication can be rewritten as a disjunction.
+**Conclusion**: (P â‡’ Q) â‡” (Â¬P âˆ¨ Q) is **valid** → the two formulas are logically equivalent. This shows that implication can be rewritten as a disjunction.
 
 ### Example 2: The Wumpus World
 
@@ -1322,9 +1322,9 @@ The agent concludes that both adjacent squares (1,2) and (2,1) are safe (no pits
 
 **Resolution proof**:
 1. Convert to CNF: {Â¬P âˆ¨ Q, Â¬Q âˆ¨ R, P, Â¬R (negated goal)}
-2. Resolve Â¬P âˆ¨ Q with P â†’ Q
-3. Resolve Â¬Q âˆ¨ R with Q â†’ R
-4. Resolve R with Â¬R â†’ â˜ (empty clause)
+2. Resolve Â¬P âˆ¨ Q with P → Q
+3. Resolve Â¬Q âˆ¨ R with Q → R
+4. Resolve R with Â¬R → â˜ (empty clause)
 5. KB âŠ¨ R âœ“
 
 ---
@@ -1337,7 +1337,7 @@ The agent concludes that both adjacent squares (1,2) and (2,1) are safe (no pits
 - C) Î± is consistent with KB
 - D) KB and Î± have no common models
 
-<details><summary>Answer</summary>B) Entailment KB âŠ¨ Î± means Î± is true in all models of KB â€” a semantic relationship.</details>
+<details><summary>Answer</summary>B) Entailment KB âŠ¨ Î± means Î± is true in all models of KB → a semantic relationship.</details>
 
 **Q2:** Resolution is the only inference rule needed for refutation-complete proof in PL. What is refutation-completeness?
 - A) It can prove any valid sentence
@@ -1380,8 +1380,8 @@ The agent concludes that both adjacent squares (1,2) and (2,1) are safe (no pits
 - Propositional logic uses boolean variables and connectives to build formulas.
 - Truth tables provide a sound and complete (but exponential) method for checking entailment.
 - Resolution is a powerful inference rule that forms the basis of many automated theorem provers.
-- Forward chaining is data-driven â€” it derives all facts that follow from the KB.
-- Backward chaining is goal-driven â€” it works backward from a query to find supporting facts.
+- Forward chaining is data-driven → it derives all facts that follow from the KB.
+- Backward chaining is goal-driven → it works backward from a query to find supporting facts.
 - DPLL/CDCL are practical SAT algorithms that far outperform brute-force truth tables.
 - SAT solvers are highly optimized tools for finding models that satisfy propositional formulas.
 - Logic is the foundation of theorem provers, Prolog, circuit verification, and expert systems.
@@ -1406,5 +1406,5 @@ The agent concludes that both adjacent squares (1,2) and (2,1) are safe (no pits
 
 ### Challenge Problem
 1. The **DPLL algorithm** is used for solving SAT problems. Explain how it improves upon simple truth table enumeration using techniques like unit propagation and pure literal elimination.
-2. Show that the sentence $(P \vee Q) \wedge (\neg P \vee \neg Q)$ is satisfiable but not valid by finding two models â€” one where it's true and one where it's false.
+2. Show that the sentence $(P \vee Q) \wedge (\neg P \vee \neg Q)$ is satisfiable but not valid by finding two models → one where it's true and one where it's false.
 3. Convert the following into Horn clauses and explain why or why not it's possible: "Either the battery is dead or the fuel tank is empty."

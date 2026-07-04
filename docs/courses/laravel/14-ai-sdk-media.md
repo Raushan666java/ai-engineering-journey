@@ -1,4 +1,4 @@
-# Chapter 14: Laravel AI SDK â€” Images, Audio, Transcriptions & Embeddings
+# Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings
 > **Previous:** [Laravel AI SDK -- Tools, MCP Tools & Provider Tools](./13-ai-sdk-tools) | **Next:** [Laravel MCP -- Model Context Protocol](./15-mcp)
 
 ---
@@ -281,7 +281,7 @@ class IndexDocuments extends Command
 
 #### 14.4.2 The `Embeddings` Class
 
-For batch operations, use `Embeddings` â€” it sends all texts in a single API request:
+For batch operations, use `Embeddings` → it sends all texts in a single API request:
 
 ```php
 <?php

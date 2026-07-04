@@ -91,7 +91,7 @@ When a module is imported, Python executes all of its code. Subsequent imports u
 
 ```python
 import mymodule  # prints "mymodule loaded"
-import mymodule  # no output â€” already cached
+import mymodule  # no output → already cached
 ```
 
 ## 11.2 Import Mechanisms
@@ -156,7 +156,7 @@ def subtract(a, b):
     return a - b
 
 if __name__ == "__main__":
-    # Test code â€” runs only when executed directly
+    # Test code → runs only when executed directly
     print(add(2, 3))       # 5
     print(subtract(10, 4)) # 6
 ```
@@ -245,9 +245,9 @@ from .. import parent_module      # parent package
 from ..other import something     # sibling of parent
 ```
 
-- `.` â€” current package
-- `..` â€” parent package
-- `...` â€” grandparent package
+- `.` → current package
+- `..` → parent package
+- `...` → grandparent package
 
 Relative imports cannot be used in scripts executed directly (only in modules within a package).
 
@@ -278,7 +278,7 @@ sys.path.append("/path/to/my/modules")
 import mymodule  # now found
 ```
 
-This is fragile â€” prefer installing modules properly or using `PYTHONPATH`.
+This is fragile → prefer installing modules properly or using `PYTHONPATH`.
 
 ## 11.7 Third-Party Packages with pip
 
@@ -331,7 +331,7 @@ python -m build
 
 This creates both `dist/mypackage-1.0.0.tar.gz` and `dist/mypackage-1.0.0-py3-none-any.whl`.
 
-Prioritise wheel packages â€” they install faster and avoid build-time dependency issues.
+Prioritise wheel packages → they install faster and avoid build-time dependency issues.
 
 ## 11.9 Creating a Distributable Package
 
@@ -409,7 +409,7 @@ def get_x():
 
 3. Use a shared third module for common dependencies.
 
-Lazy imports are a workaround, not a design â€” restructure to eliminate cycles.
+Lazy imports are a workaround, not a design → restructure to eliminate cycles.
 
 
 ## Concept Comparison Table

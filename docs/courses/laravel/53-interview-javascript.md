@@ -47,7 +47,7 @@ flowchart LR
 typeof "hello";     // "string"
 typeof 42;          // "number"
 typeof true;        // "boolean"
-typeof null;        // "object"  â€” historical bug
+typeof null;        // "object"  → historical bug
 typeof undefined;   // "undefined"
 typeof Symbol();    // "symbol"
 typeof 42n;         // "bigint"
@@ -67,7 +67,7 @@ null === undefined; // false
 ```
 
 ### Q3: What is the difference between `==` and `===`?
-**Answer:** `==` compares values after type coercion. `===` compares both value and type without coercion â€” it is the strict equality operator. Always prefer `===` to avoid subtle bugs.
+**Answer:** `==` compares values after type coercion. `===` compares both value and type without coercion → it is the strict equality operator. Always prefer `===` to avoid subtle bugs.
 
 ```js
 1 == "1";   // true  (coerced)
@@ -93,7 +93,7 @@ inc(); // 2
 ```
 
 ### Q5: Explain hoisting with `var`, `let`, and `const`.
-**Answer:** Function declarations and `var` declarations are hoisted to the top of their scope. `var` is initialized as `undefined`. `let` and `const` are hoisted but not initialized â€” accessing them before declaration throws a `ReferenceError` (temporal dead zone).
+**Answer:** Function declarations and `var` declarations are hoisted to the top of their scope. `var` is initialized as `undefined`. `let` and `const` are hoisted but not initialized → accessing them before declaration throws a `ReferenceError` (temporal dead zone).
 
 ```js
 console.log(a); // undefined
@@ -102,7 +102,7 @@ var a = 1;
 console.log(b); // ReferenceError
 let b = 2;
 
-foo(); // works â€” function declaration hoisted
+foo(); // works → function declaration hoisted
 function foo() {}
 ```
 
@@ -126,12 +126,12 @@ obj.arrow();   // undefined (window in browser)
 const parent = { greet: () => "hello" };
 const child = Object.create(parent);
 child.name = "Bob";
-console.log(child.name);  // "Bob" â€” own
-console.log(child.greet); // "hello" â€” prototype
+console.log(child.name);  // "Bob" → own
+console.log(child.greet); // "hello" → prototype
 ```
 
 ### Q8: How does prototypal inheritance differ from classical inheritance?
-**Answer:** Classical inheritance (Java, C++) uses classes as blueprints with a copy-based model. JavaScript uses prototypal inheritance â€” objects link to other objects. ES6 `class` is syntactic sugar over the prototype chain; methods live on `.prototype`, not on instances.
+**Answer:** Classical inheritance (Java, C++) uses classes as blueprints with a copy-based model. JavaScript uses prototypal inheritance → objects link to other objects. ES6 `class` is syntactic sugar over the prototype chain; methods live on `.prototype`, not on instances.
 
 ```js
 class Animal {
@@ -171,7 +171,7 @@ bound();                        // "Hey, Alice"
 ```
 
 ### Q11: What is the difference between `null` and `undefined`?
-**Answer:** `undefined` means a variable has been declared but not assigned a value. `null` is an intentional absence of an object value â€” it must be explicitly assigned. `undefined` is a type; `null` is an object (typeof bug).
+**Answer:** `undefined` means a variable has been declared but not assigned a value. `null` is an intentional absence of an object value → it must be explicitly assigned. `undefined` is a type; `null` is an object (typeof bug).
 
 ```js
 let a;           // undefined
@@ -208,7 +208,7 @@ p.say(); // "I am Alice"
 ```
 
 ### Q14: What is the event loop?
-**Answer:** The event loop is JavaScript's concurrency model. It continuously checks the call stack and task queues. Synchronous code runs on the call stack. Macrotasks (setTimeout, I/O) and microtasks (Promise.then, queueMicrotask) are queued and processed in phases â€” all microtasks are drained before the next macrotask.
+**Answer:** The event loop is JavaScript's concurrency model. It continuously checks the call stack and task queues. Synchronous code runs on the call stack. Macrotasks (setTimeout, I/O) and microtasks (Promise.then, queueMicrotask) are queued and processed in phases → all microtasks are drained before the next macrotask.
 
 ```js
 console.log(1);
@@ -225,12 +225,12 @@ console.log(4);
 const original = { a: 1, b: { c: 2 } };
 const shallow = { ...original };
 shallow.b.c = 99;
-console.log(original.b.c); // 99 â€” shared
+console.log(original.b.c); // 99 → shared
 
 const deep = JSON.parse(JSON.stringify(original));
 // Or: structuredClone(original)
 deep.b.c = 42;
-console.log(original.b.c); // 99 â€” independent
+console.log(original.b.c); // 99 → independent
 ```
 
 ### Q16: What are getters and setters?
@@ -266,7 +266,7 @@ console.log(shared === same); // true
 ```
 
 ### Q18: How does garbage collection work?
-**Answer:** JavaScript engines use mark-and-sweep garbage collection. The GC roots traverse the object graph, marking reachable objects. Unreachable objects (no references from any root or other reachable object) are swept â€” their memory reclaimed. Weak references (`WeakMap`, `WeakSet`) do not prevent collection.
+**Answer:** JavaScript engines use mark-and-sweep garbage collection. The GC roots traverse the object graph, marking reachable objects. Unreachable objects (no references from any root or other reachable object) are swept → their memory reclaimed. Weak references (`WeakMap`, `WeakSet`) do not prevent collection.
 
 ```js
 const wm = new WeakMap();
@@ -425,7 +425,7 @@ function greet(name = "Guest", prefix = "Hello") {
 greet();            // "Hello, Guest"
 greet("Alice");     // "Hello, Alice"
 greet("Bob", "Hi"); // "Hi, Bob"
-greet(null);        // "Hello, null" â€” null is not undefined
+greet(null);        // "Hello, null" → null is not undefined
 ```
 
 ### Q29: Explain `Object.entries`, `Object.values`, `Object.keys`.
@@ -508,7 +508,7 @@ results.forEach(r => {
 ```
 
 ### Q35: Explain the `globalThis` property.
-**Answer:** `globalThis` provides a standard way to access the global object across environments â€” `window` in browsers, `global` in Node.js, `self` in Web Workers. It eliminates environment-specific branching.
+**Answer:** `globalThis` provides a standard way to access the global object across environments → `window` in browsers, `global` in Node.js, `self` in Web Workers. It eliminates environment-specific branching.
 
 ```js
 console.log(globalThis === window); // browser: true
@@ -618,7 +618,7 @@ try {
 ```
 
 ### Q43: Explain `Promise.any` and `Promise.allSettled`.
-**Answer:** `Promise.any` fulfills with the first fulfilled promise; it rejects with an `AggregateError` only if all reject. `Promise.allSettled` never short-circuits â€” it waits for every promise to settle and returns results with status.
+**Answer:** `Promise.any` fulfills with the first fulfilled promise; it rejects with an `AggregateError` only if all reject. `Promise.allSettled` never short-circuits → it waits for every promise to settle and returns results with status.
 
 ```js
 const p1 = Promise.reject("err");
@@ -650,7 +650,7 @@ async function demo() {
 setTimeout(() => console.log("a"), 0);
 setTimeout(() => console.log("b"), 0);
 
-// Parallel (Web Worker â€” separate thread)
+// Parallel (Web Worker → separate thread)
 const worker = new Worker("worker.js");
 worker.postMessage("heavy computation");
 ```
@@ -675,7 +675,7 @@ self.onmessage = e => {
 **Answer:** The task queue (macrotask queue) holds callbacks from `setTimeout`, `setInterval`, `I/O`, and UI events. The event loop picks one macrotask per iteration, executes it, then drains all microtasks before the next macrotask or render cycle.
 
 ```js
-// Execution order: synchronous â†’ microtasks â†’ macrotask
+// Execution order: synchronous → microtasks → macrotask
 console.log("sync");
 setTimeout(() => console.log("macrotask"), 0);
 Promise.resolve().then(() => console.log("microtask"));
@@ -753,7 +753,7 @@ el.style.backgroundColor = "#f0f0f0";
 ```
 
 ### Q52: What is event propagation (capturing vs bubbling)?
-**Answer:** Events propagate in three phases: capturing (window â†’ target), target, and bubbling (target â†’ window). `addEventListener`'s third parameter (`capture: true`) listens in the capturing phase. By default, listeners fire during bubbling.
+**Answer:** Events propagate in three phases: capturing (window → target), target, and bubbling (target → window). `addEventListener`'s third parameter (`capture: true`) listens in the capturing phase. By default, listeners fire during bubbling.
 
 ```js
 parent.addEventListener("click", () => console.log("parent"), true);   // capture
@@ -792,7 +792,7 @@ document.addEventListener("user-changed", e => {
 ```
 
 ### Q55: Explain `data-*` attributes and `dataset`.
-**Answer:** `data-*` attributes store custom metadata in HTML. The `dataset` property provides camelCase access â€” `data-user-id` becomes `element.dataset.userId`. They are used for state, configuration, and identifying elements.
+**Answer:** `data-*` attributes store custom metadata in HTML. The `dataset` property provides camelCase access → `data-user-id` becomes `element.dataset.userId`. They are used for state, configuration, and identifying elements.
 
 ```js
 <div id="card" data-user-id="42" data-role="admin"></div>
@@ -857,7 +857,7 @@ document.querySelectorAll("img[data-src]").forEach(img => observer.observe(img))
 ```
 
 ### Q60: Explain `window.postMessage` and cross-origin communication.
-**Answer:** `postMessage` enables secure cross-origin communication between windows, iframes, and workers. The sender specifies the target origin. The receiver checks `event.origin` before processing data â€” never trust unverified origins.
+**Answer:** `postMessage` enables secure cross-origin communication between windows, iframes, and workers. The sender specifies the target origin. The receiver checks `event.origin` before processing data → never trust unverified origins.
 
 ```js
 // Parent page
@@ -919,7 +919,7 @@ async function createUser(data) {
 ```
 
 ### Q64: How do you upload files with FormData?
-**Answer:** Use `FormData` to construct a multipart/form-data body. Do not set `Content-Type` manually â€” the browser sets the correct boundary automatically. Append files from `<input type="file">` or a `File` object.
+**Answer:** Use `FormData` to construct a multipart/form-data body. Do not set `Content-Type` manually → the browser sets the correct boundary automatically. Append files from `<input type="file">` or a `File` object.
 
 ```js
 async function uploadFile(file) {
@@ -964,7 +964,7 @@ try {
 **Answer:** CORS (Cross-Origin Resource Sharing) errors occur when a browser blocks cross-origin requests without proper server headers. The server must include `Access-Control-Allow-Origin`. For credentials, set `credentials: "include"` and the server responds with `Access-Control-Allow-Credentials`.
 
 ```js
-// Client side â€” limited control; server must cooperate
+// Client side → limited control; server must cooperate
 fetch("https://api.example.com/data", {
     mode: "cors", // default
     credentials: "include",
@@ -977,13 +977,13 @@ fetch("https://api.example.com/data", {
 ```
 
 ### Q67: What is the difference between Fetch API and XMLHttpRequest?
-**Answer:** Fetch is Promise-based, cleaner, and integrated with service workers and the Cache API. `XMLHttpRequest` supports progress events and synchronous requests (deprecated). Fetch does not reject on HTTP errors (4xx/5xx) and has no native upload progress â€” use `XMLHttpRequest` or `axios` if progress is needed.
+**Answer:** Fetch is Promise-based, cleaner, and integrated with service workers and the Cache API. `XMLHttpRequest` supports progress events and synchronous requests (deprecated). Fetch does not reject on HTTP errors (4xx/5xx) and has no native upload progress → use `XMLHttpRequest` or `axios` if progress is needed.
 
 ```js
-// Fetch â€” simpler, Promise-based
+// Fetch → simpler, Promise-based
 fetch("/api/data").then(r => r.json());
 
-// XHR â€” verbose, but supports progress
+// XHR → verbose, but supports progress
 const xhr = new XMLHttpRequest();
 xhr.open("GET", "/api/data");
 xhr.onprogress = e => console.log(`${e.loaded} / ${e.total}`);
@@ -1032,7 +1032,7 @@ async function streamResponse(url) {
 ```
 
 ### Q70: How do you handle HTTP errors with the Fetch API?
-**Answer:** Fetch only rejects on network errors. HTTP 4xx/5xx responses are not rejected â€” check `response.ok` or `response.status` explicitly. Unified error handling catches both network and application errors.
+**Answer:** Fetch only rejects on network errors. HTTP 4xx/5xx responses are not rejected → check `response.ok` or `response.status` explicitly. Unified error handling catches both network and application errors.
 
 ```js
 async function apiRequest(url, options = {}) {
@@ -1160,7 +1160,7 @@ const mockResponse = new Response(JSON.stringify({ ok: true }), {
 ```
 
 ### Q78: How does `x-show` differ from `x-if`?
-**Answer:** `x-show` toggles `display: none` â€” the element remains in the DOM. `x-if` removes/re-adds the element from the DOM entirely (requires `<template>`). `x-show` is faster for frequent toggles; `x-if` avoids rendering hidden heavy content.
+**Answer:** `x-show` toggles `display: none` → the element remains in the DOM. `x-if` removes/re-adds the element from the DOM entirely (requires `<template>`). `x-show` is faster for frequent toggles; `x-if` avoids rendering hidden heavy content.
 
 ```html
 <div x-data="{ show: false, render: false }">
@@ -1454,12 +1454,12 @@ npm run test  # runs vitest
 
 ## Key Takeaways
 
-- **Core JavaScript fundamentals** â€” types, closures, prototype, event loop â€” are the foundation every interviewer probes first.
+- **Core JavaScript fundamentals** → types, closures, prototype, event loop → are the foundation every interviewer probes first.
 - **ES6+ features** like destructuring, modules, and arrow functions are expected daily usage, not advanced topics.
-- **Asynchronous patterns** â€” Promises, `async/await`, and microtasks â€” dominate modern JavaScript interview questions.
+- **Asynchronous patterns** → Promises, `async/await`, and microtasks → dominate modern JavaScript interview questions.
 - **DOM and Fetch API** skills are essential for any Laravel developer writing frontend code, even with Livewire or Alpine.
-- **Alpine.js** is Laravel's default lightweight reactive framework â€” understanding its core directives separates productive developers from those fighting the framework.
-- **JavaScript in Laravel** ties together Vite, Echo, and the build pipeline â€” demonstrate you understand the full stack, not just backend PHP.
+- **Alpine.js** is Laravel's default lightweight reactive framework → understanding its core directives separates productive developers from those fighting the framework.
+- **JavaScript in Laravel** ties together Vite, Echo, and the build pipeline → demonstrate you understand the full stack, not just backend PHP.
 ---
 
 ## Concept Comparison

@@ -2199,7 +2199,7 @@ The Geolocation API provides access to the user's geographical location (with th
                     coordsEl.innerHTML = `Latitude: <strong>${lat}</strong><br>Longitude: <strong>${lng}</strong><br>Accuracy: <strong>${accuracy.toFixed(0)} meters</strong>`;
 
                     const mapsUrl = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}&zoom=14`;
-                    mapLinkEl.innerHTML = `<a href="${mapsUrl}" target="_blank" rel="noopener noreferrer">View on OpenStreetMap Ã¢â€ â€”</a>`;
+                    mapLinkEl.innerHTML = `<a href="${mapsUrl}" target="_blank" rel="noopener noreferrer">View on OpenStreetMap Ã¢â€ →</a>`;
 
                     btn.disabled = false;
                 },

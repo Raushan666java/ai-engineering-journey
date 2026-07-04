@@ -1,6 +1,6 @@
-# Chapter 10: The Application Layer â€” Complete Reference
+# Chapter 10: The Application Layer → Complete Reference
 
-> **GFG/Javatpoint Depth â€” Comprehensive Coverage of Application Layer Protocols, Architectures, Implementations, and Interview Corner**
+> **GFG/Javatpoint Depth → Comprehensive Coverage of Application Layer Protocols, Architectures, Implementations, and Interview Corner**
 
 ## Learning Objectives
 
@@ -18,13 +18,13 @@
 ## Table of Contents
 
 1. [Application Layer Architecture](#101-application-layer-architecture)
-2. [HTTP â€” Hypertext Transfer Protocol](#102-http)
-3. [DNS â€” Domain Name System](#103-dns)
+2. [HTTP → Hypertext Transfer Protocol](#102-http)
+3. [DNS → Domain Name System](#103-dns)
 4. [Email Protocols](#104-email-protocols)
-5. [FTP â€” File Transfer Protocol](#105-ftp)
-6. [SSH â€” Secure Shell](#106-ssh)
-7. [DHCP â€” Dynamic Host Configuration Protocol](#107-dhcp)
-8. [SNMP â€” Simple Network Management Protocol](#108-snmp)
+5. [FTP → File Transfer Protocol](#105-ftp)
+6. [SSH → Secure Shell](#106-ssh)
+7. [DHCP → Dynamic Host Configuration Protocol](#107-dhcp)
+8. [SNMP → Simple Network Management Protocol](#108-snmp)
 9. [WebSocket](#109-websocket)
 10. [gRPC](#1010-grpc)
 11. [HTTP Versions Comparison](#1011-http-versions-comparison)
@@ -52,9 +52,9 @@ The application layer is Layer 7 of the OSI model and the top of the TCP/IP mode
 - Clients are intermittently connected and may have dynamic IPs.
 - Scales vertically (buy a bigger server) or horizontally (add load-balanced replicas).
 
-**Example:** A bank's central database server â€” all ATM machines connect to it. No ATM talks directly to another ATM.
+**Example:** A bank's central database server → all ATM machines connect to it. No ATM talks directly to another ATM.
 
-**Numbered Steps â€” Client-Server Request Flow:**
+**Numbered Steps → Client-Server Request Flow:**
 1. Client resolves server hostname to IP via DNS.
 2. Client opens TCP connection to server IP:port.
 3. Client sends request (HTTP GET /api/data).
@@ -63,7 +63,7 @@ The application layer is Layer 7 of the OSI model and the top of the TCP/IP mode
 6. Client receives and renders response.
 7. Connection may persist for further requests or close.
 
-**Pseudocode â€” Client-Server (HTTP-like):**
+**Pseudocode → Client-Server (HTTP-like):**
 ```
 CLIENT:
   addr â† DNS.resolve("api.example.com")
@@ -87,7 +87,7 @@ SERVER:
 
 ### 10.1.2 Peer-to-Peer (P2P) Architecture
 
-**Real-World Analogy:** A potluck dinner â€” every guest brings a dish. If you want food, you can get it from anyone. There is no central kitchen. The more guests arrive, the more food there is (self-scaling).
+**Real-World Analogy:** A potluck dinner → every guest brings a dish. If you want food, you can get it from anyone. There is no central kitchen. The more guests arrive, the more food there is (self-scaling).
 
 **Characteristics:**
 - No always-on server. Peers are both clients and servers ("servents").
@@ -98,7 +98,7 @@ SERVER:
 
 **Challenges:** Security (trusting peers), discoverability, ISP-unfriendly traffic patterns.
 
-**Numbered Steps â€” P2P File Download (BitTorrent-like):**
+**Numbered Steps → P2P File Download (BitTorrent-like):**
 1. User opens a .torrent file or magnet link pointing to a tracker.
 2. Client contacts tracker to get a list of peer IPs with the file.
 3. Client connects to multiple peers simultaneously.
@@ -106,7 +106,7 @@ SERVER:
 5. Client downloads pieces and uploads pieces it already has.
 6. Entire file is assembled from pieces; client continues seeding.
 
-**Pseudocode â€” P2P Download:**
+**Pseudocode → P2P Download:**
 ```
 CLIENT:
   peers â† TRACKER.get_peers(info_hash)
@@ -137,7 +137,7 @@ TRACKER:
 | Scalability | Server-bound (O(N) server load) | Self-scaling (O(1) per peer) |
 | Cost | High server/infra cost | Low (peers contribute resources) |
 | Reliability | Single point of failure | Resilient (peers replace each other) |
-| Security | Central control, easier | Harder â€” trust, Sybil attacks |
+| Security | Central control, easier | Harder → trust, Sybil attacks |
 | Maintenance | Professional admin | User-managed |
 | IP requirement | Fixed, well-known | Dynamic, discovered |
 | Examples | Web, Email, DNS | BitTorrent, Bitcoin, IPFS |
@@ -170,7 +170,7 @@ TRACKER:
 | P2P (tracker) | O(1) per peer (constant) | O(N) tracker state | Tracker only maintains peer list; data transfer is P2P |
 | P2P (DHT) | O(log N) lookup | O(log N) per peer | Distributed hash table requires log N hops to find data |
 
-**Why it matters:** In client-server, the server handles all N clients, so CPU/memory grows linearly with the user base. In P2P, each new peer contributes resources, so total system capacity grows with demand â€” this is called "self-scaling." However, P2P has higher lookup overhead (DHT is O(log N) per lookup).
+**Why it matters:** In client-server, the server handles all N clients, so CPU/memory grows linearly with the user base. In P2P, each new peer contributes resources, so total system capacity grows with demand → this is called "self-scaling." However, P2P has higher lookup overhead (DHT is O(log N) per lookup).
 
 ### 10.1.6 Edge Cases
 
@@ -182,7 +182,7 @@ TRACKER:
 
 ---
 
-## 10.2 HTTP â€” Hypertext Transfer Protocol
+## 10.2 HTTP → Hypertext Transfer Protocol
 
 HTTP is the foundation of data communication on the Web. It is a stateless, application-layer protocol operating over TCP (HTTP/1.x, HTTP/2) or QUIC (HTTP/3).
 
@@ -204,18 +204,18 @@ HTTP is the foundation of data communication on the Web. It is a stateless, appl
 - Additional methods: PUT, DELETE, OPTIONS, PATCH.
 - Cache control headers.
 
-**Numbered Steps â€” HTTP/1.1 Request-Response Cycle:**
+**Numbered Steps → HTTP/1.1 Request-Response Cycle:**
 1. Browser extracts hostname from URL (www.example.com).
 2. Browser obtains IP via DNS resolution.
 3. Browser opens TCP connection to IP on port 80 (or 443 for HTTPS).
 4. Browser sends HTTP request line + headers (e.g., GET /index.html HTTP/1.1).
-5. Server processes request â€” maps URL to file or handler.
+5. Server processes request → maps URL to file or handler.
 6. Server sends HTTP status line + headers + optional body.
 7. Browser parses response; if HTML, parses and fetches embedded resources.
 8. Connection stays open for next request (persistent).
 9. Connection closes after timeout or when client sends Connection: close.
 
-**Pseudocode â€” HTTP Client:**
+**Pseudocode → HTTP Client:**
 ```
 FUNCTION http_get(url):
   host, path â† PARSE_URL(url)
@@ -232,7 +232,7 @@ FUNCTION http_get(url):
   RETURN response
 ```
 
-**Pseudocode â€” HTTP Server:**
+**Pseudocode → HTTP Server:**
 ```
 FUNCTION http_server(port):
   server â† TCP.bind(port)
@@ -254,13 +254,13 @@ FUNCTION http_server(port):
     client.close()
 ```
 
-**Dry Run Trace Table â€” HTTP/1.1 Request:**
+**Dry Run Trace Table → HTTP/1.1 Request:**
 
 | Step | Actor | Action | Message | State |
 |------|-------|--------|---------|-------|
 | 1 | Browser | Parse URL | URL: http://example.com/index.html | URL parsed |
-| 2 | DNS | Resolve host | example.com â†’ 93.184.216.34 | IP obtained |
-| 3 | TCP | Connect | SYN â†’ 93.184.216.34:80 | TCP handshake |
+| 2 | DNS | Resolve host | example.com → 93.184.216.34 | IP obtained |
+| 3 | TCP | Connect | SYN → 93.184.216.34:80 | TCP handshake |
 | 4 | Browser | Send request | GET /index.html HTTP/1.1\r\nHost: example.com | Request sent |
 | 5 | Server | Receive | Parse method=GET, path=/index.html | Parsed |
 | 6 | Server | Read file | /var/www/index.html exists | File loaded |
@@ -269,7 +269,7 @@ FUNCTION http_server(port):
 | 9 | Client | Parse body | Content-Length: 512, read 512 bytes | Body parsed |
 | 10 | TCP | Close | FIN | Connection closed |
 
-**C++ Implementation â€” HTTP Client (using Boost.Asio):**
+**C++ Implementation → HTTP Client (using Boost.Asio):**
 ```cpp
 #include <iostream>
 #include <string>
@@ -309,7 +309,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” HTTP Client:**
+**Python Implementation → HTTP Client:**
 ```python
 import socket
 
@@ -340,7 +340,7 @@ if __name__ == "__main__":
     print(http_get("example.com", "/")[:300])
 ```
 
-**C++ Implementation â€” Simple HTTP Server:**
+**C++ Implementation → Simple HTTP Server:**
 ```cpp
 #include <iostream>
 #include <string>
@@ -394,7 +394,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” Simple HTTP Server:**
+**Python Implementation → Simple HTTP Server:**
 ```python
 import socket
 
@@ -440,7 +440,7 @@ if __name__ == "__main__":
     main()
 ```
 
-**Complexity Analysis â€” HTTP/1.1:**
+**Complexity Analysis → HTTP/1.1:**
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|----------------|-----------------|-----|
 | Request parsing | O(n) where n = header length | O(n) | Linear scan of headers for \r\n delimiters |
@@ -457,11 +457,11 @@ if __name__ == "__main__":
 | Simple text-based protocol (human-readable) | Text parsing is slower than binary |
 | Persistent connections reduce overhead | Head-of-line blocking at application layer |
 | Widely supported everywhere | Large header overhead per request |
-| Caching infrastructure (ETag, Cache-Control) | No multiplexing â€” one response at a time |
+| Caching infrastructure (ETag, Cache-Control) | No multiplexing → one response at a time |
 | Proxy and gateway support | Pipelining rarely works in practice |
-| Stateless â€” easy to scale horizontally | No server push â€” client must poll |
+| Stateless → easy to scale horizontally | No server push → client must poll |
 
-**Edge Cases â€” HTTP/1.1:**
+**Edge Cases → HTTP/1.1:**
 - **Pipelining HOL blocking:** If request 2 takes 2 seconds to generate a response, all subsequent pipelined responses are delayed even if they could be served instantly. Solution: HTTP/2 multiplexing.
 - **Chunked encoding with incomplete chunks:** Partial chunk received before closing delimiter. Receiver must buffer and wait for final 0\r\n\r\n.
 - **Content-Length mismatch:** If Content-Length says 500 but body is 450 bytes, receiver hangs waiting for 50 more bytes. Always check actual bytes read.
@@ -470,7 +470,7 @@ if __name__ == "__main__":
 
 ### 10.2.2 HTTP/2
 
-**Real-World Analogy:** HTTP/2 is like a multi-lane highway in a single tunnel (one TCP connection). HTTP/1.1 is like a single-lane road â€” only one car at a time. HTTP/2 allows multiple cars (streams) to travel simultaneously in the same tunnel.
+**Real-World Analogy:** HTTP/2 is like a multi-lane highway in a single tunnel (one TCP connection). HTTP/1.1 is like a single-lane road → only one car at a time. HTTP/2 allows multiple cars (streams) to travel simultaneously in the same tunnel.
 
 **Key Features:**
 - **Binary framing layer:** Messages are split into binary frames (HEADERS, DATA, SETTINGS, PRIORITY, etc.).
@@ -480,7 +480,7 @@ if __name__ == "__main__":
 - **Stream prioritization:** Client can assign weight and dependency to streams.
 - **Flow control:** Per-stream and per-connection window-based.
 
-**Numbered Steps â€” HTTP/2 Connection Establishment:**
+**Numbered Steps → HTTP/2 Connection Establishment:**
 1. Client opens TCP connection to server (or uses TLS ALPN negotiation).
 2. Client sends PRIORITY frame (magic: PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n) or TLS ALPN extension indicates h2.
 3. Both endpoints exchange SETTINGS frames (max concurrent streams, initial window size, etc.).
@@ -489,7 +489,7 @@ if __name__ == "__main__":
 6. Multiple streams interleave frames on the same connection.
 7. Connection closes when GOAWAY frame is sent and all streams complete.
 
-**Pseudocode â€” HTTP/2 Stream Multiplexing:**
+**Pseudocode → HTTP/2 Stream Multiplexing:**
 ```
 CLIENT:
   sock â† TLS.connect(host, 443, alpn="h2")
@@ -510,7 +510,7 @@ CLIENT:
       process_responses[frame.stream_id]
 ```
 
-**Dry Run â€” HTTP/2 Multiplexing (3 resources on 1 TCP connection):**
+**Dry Run → HTTP/2 Multiplexing (3 resources on 1 TCP connection):**
 
 | Frame # | Stream ID | Type | Flags | Payload | Action |
 |---------|-----------|------|-------|---------|--------|
@@ -526,7 +526,7 @@ CLIENT:
 
 Note: Frames from streams 1, 3, and 5 interleave on the same TCP connection. Stream 3's CSS response does not wait for stream 1's full body.
 
-**C++ Implementation â€” HTTP/2 Frame Parsing (skeleton):**
+**C++ Implementation → HTTP/2 Frame Parsing (skeleton):**
 ```cpp
 #include <cstdint>
 #include <vector>
@@ -599,7 +599,7 @@ private:
 };
 ```
 
-**Python Implementation â€” HTTP/2 Frame Building:**
+**Python Implementation → HTTP/2 Frame Building:**
 ```python
 import struct
 from typing import List, Dict
@@ -679,7 +679,7 @@ def build_get_request_frame(stream_id: int, path: str) -> Http2Frame:
     return Http2Frame(0x01, 0x05, stream_id, payload)
 ```
 
-**Complexity Analysis â€” HTTP/2:**
+**Complexity Analysis → HTTP/2:**
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Binary frame parsing | O(1) per frame | O(frame size) | Fixed 9-byte header; no text scanning |
@@ -699,34 +699,34 @@ def build_get_request_frame(stream_id: int, path: str) -> Http2Frame:
 | Stream prioritization | Priority implementation varies by browser |
 | Binary framing = efficient parsing | Not human-readable (debugging harder) |
 
-**Edge Cases â€” HTTP/2:**
+**Edge Cases → HTTP/2:**
 - **TCP-level HOL blocking:** If a TCP packet is lost, ALL streams on that connection stall until retransmission. HTTP/3 solves this with QUIC.
-- **HPACK dynamic table OOM:** Attacker fills table with large entries â€” server must enforce SETTINGS_HEADER_TABLE_SIZE.
+- **HPACK dynamic table OOM:** Attacker fills table with large entries → server must enforce SETTINGS_HEADER_TABLE_SIZE.
 - **Server push waste:** 99% of server-pushed resources go unused (browser already has cached). Chrome deprecated server push in 2022.
 - **Stream dependency cycles:** Client creates circular dependency tree. Server must detect and break cycles.
 - **GOAWAY race condition:** Client sends requests after server sends GOAWAY. Server processes or rejects based on last-stream-id.
 
 ### 10.2.3 HTTP/3
 
-**Real-World Analogy:** HTTP/3 is like having a separate tunnel for each package delivery. If one tunnel collapses, only the package inside it is delayed. HTTP/2 is like putting all packages in one tunnel â€” if the tunnel collapses, everything stops.
+**Real-World Analogy:** HTTP/3 is like having a separate tunnel for each package delivery. If one tunnel collapses, only the package inside it is delayed. HTTP/2 is like putting all packages in one tunnel → if the tunnel collapses, everything stops.
 
 **Key Features:**
 - Operates over QUIC (RFC 9000) instead of TCP.
 - UDP-based transport with integrated TLS 1.3.
 - Zero-RTT connection establishment (in many cases).
-- No TCP-level HOL blocking â€” each stream is independent.
+- No TCP-level HOL blocking → each stream is independent.
 - QPACK header compression (adapted for out-of-order delivery).
-- Connection migration â€” survives IP address changes (mobile handoff).
+- Connection migration → survives IP address changes (mobile handoff).
 
-**Numbered Steps â€” HTTP/3 Connection:**
+**Numbered Steps → HTTP/3 Connection:**
 1. Client sends QUIC Initial packet (UDP to port 443) with TLS 1.3 ClientHello.
 2. Server responds with QUIC Handshake + TLS 1.3 ServerHello + SETTINGS frame.
-3. Client completes handshake â€” 1-RTT (or 0-RTT if cached).
+3. Client completes handshake → 1-RTT (or 0-RTT if cached).
 4. Client sends HTTP/3 HEADERS and DATA frames over QUIC streams.
-5. Each stream is independent â€” loss on stream 1 does not affect stream 2.
+5. Each stream is independent → loss on stream 1 does not affect stream 2.
 6. Server push via PUSH_PROMISE (similar to HTTP/2).
 
-**C++ Implementation â€” QUIC Connection (skeleton):**
+**C++ Implementation → QUIC Connection (skeleton):**
 ```cpp
 #include <iostream>
 #include <cstring>
@@ -743,7 +743,7 @@ public:
         memcpy(&server_addr_.sin_addr, he->h_addr_list[0], he->h_length);
 
         // QUIC Initial packet with TLS 1.3 ClientHello
-        // (Simplified â€” real QUIC uses crypto frame)
+        // (Simplified → real QUIC uses crypto frame)
         sendto(socket_, initial_packet_, initial_len_, 0,
                (struct sockaddr*)&server_addr_, sizeof(server_addr_));
     }
@@ -755,7 +755,7 @@ public:
     }
 
     void sendData(uint64_t stream_id, const uint8_t* data, size_t len) {
-        // QUIC STREAM frame â€” loss here does not block other streams
+        // QUIC STREAM frame → loss here does not block other streams
     }
 
 private:
@@ -767,7 +767,7 @@ private:
 };
 ```
 
-**Python Implementation â€” HTTP/3 Client (conceptual):**
+**Python Implementation → HTTP/3 Client (conceptual):**
 ```python
 import asyncio
 from typing import Optional
@@ -784,14 +784,14 @@ class Http3Client:
     async def get(self, path: str) -> str:
         self.stream_id += 4
         # HEADERS frame sent as QUIC STREAM frame
-        # Each stream is independent â€” no HOL blocking
+        # Each stream is independent → no HOL blocking
         return f"HTTP/3 response for {path}"
 
     async def close(self):
         pass
 ```
 
-**Complexity â€” HTTP/3 vs HTTP/2:**
+**Complexity → HTTP/3 vs HTTP/2:**
 | Metric | HTTP/2 | HTTP/3 | Why |
 |--------|--------|--------|-----|
 | Connection RTT | 2 (TCP) + 1 (TLS) = 3 | 1 (QUIC+TLS) | QUIC bakes TLS into handshake |
@@ -800,7 +800,7 @@ class Http3Client:
 | Connection migration | No (IP change = reconnect) | Yes | QUIC connection ID independent of IP |
 | Header compression | HPACK (in-order) | QPACK (out-of-order) | QPACK decoder instructions separate |
 
-**Edge Cases â€” HTTP/3:**
+**Edge Cases → HTTP/3:**
 - **0-RTT replay attacks:** Client sends data in 0-RTT that may be replayed. Idempotent methods only in 0-RTT.
 - **NAT rebinding:** Client IP changes mid-connection. QUIC uses connection ID to survive.
 - **UDP throttling:** Some middleboxes drop UDP. Fallback to HTTP/2/1.1 required.
@@ -808,9 +808,9 @@ class Http3Client:
 
 ---
 
-## 10.3 DNS â€” Domain Name System
+## 10.3 DNS → Domain Name System
 
-**Real-World Analogy:** DNS is the phonebook of the internet. You know the person's name (domain), but you need their phone number (IP address) to call them. The phonebook is distributed â€” each region (TLD) has its own volume.
+**Real-World Analogy:** DNS is the phonebook of the internet. You know the person's name (domain), but you need their phone number (IP address) to call them. The phonebook is distributed → each region (TLD) has its own volume.
 
 ### 10.3.1 DNS Architecture
 
@@ -846,15 +846,15 @@ Root (.)
 
 | Type | Full Name | Description | Example |
 |------|-----------|-------------|---------|
-| A | Address | Maps domain to IPv4 address | example.com â†’ 93.184.216.34 |
-| AAAA | IPv6 Address | Maps domain to IPv6 address | example.com â†’ 2606:2800:220:1:248:1893:25c8:1946 |
-| CNAME | Canonical Name | Alias of one domain to another | www â†’ example.com |
+| A | Address | Maps domain to IPv4 address | example.com → 93.184.216.34 |
+| AAAA | IPv6 Address | Maps domain to IPv6 address | example.com → 2606:2800:220:1:248:1893:25c8:1946 |
+| CNAME | Canonical Name | Alias of one domain to another | www → example.com |
 | MX | Mail Exchange | Mail server priority + hostname | 10 mail.example.com |
 | NS | Name Server | Delegates a zone to a name server | ns1.example.com |
 | TXT | Text Record | Arbitrary text (SPF, DKIM, verification) | "v=spf1 mx ~all" |
-| PTR | Pointer | Reverse lookup (IP â†’ domain) | 34.216.184.93 â†’ www.example.com |
+| PTR | Pointer | Reverse lookup (IP → domain) | 34.216.184.93 → www.example.com |
 | SOA | Start of Authority | Administrative info about the zone | Primary NS, admin email, serial |
-| SRV | Service Record | Service location (hostname + port) | _sip._tcp.example.com â†’ 5060 sip.example.com |
+| SRV | Service Record | Service location (hostname + port) | _sip._tcp.example.com → 5060 sip.example.com |
 | CAA | Certification Authority | Which CAs can issue certs for domain | 0 issue "letsencrypt.org" |
 | DNAME | Delegation Name | Redirect entire subtree (not single name) | Similar to CNAME but for subdomains |
 
@@ -862,7 +862,7 @@ Root (.)
 
 **Real-World Analogy:** You ask a receptionist (local resolver) to find someone in a large office building. The receptionist calls building reception (root), who says "floor 3 handles .com." Then floor 3's reception (TLD) says "room 305 handles example.com." Room 305 (authoritative) gives the answer. The receptionist writes it down for next time (caching).
 
-**Iterative Resolution â€” Numbered Steps:**
+**Iterative Resolution → Numbered Steps:**
 1. Client browser asks local DNS resolver (stub resolver): "What is the IP for www.example.com?"
 2. Local resolver checks its cache. Cache miss.
 3. Local resolver queries a root server (e.g., 198.41.0.4): "Where is www.example.com?"
@@ -875,7 +875,7 @@ Root (.)
 
 **Recursive Resolution:** The root/TLD/authoritative chain is handled by the resolver itself. Client asks one resolver, which does all the work.
 
-**Dry Run â€” DNS Iterative Resolution for www.example.com:**
+**Dry Run → DNS Iterative Resolution for www.example.com:**
 
 | Step | Querying Server | Query | Responding Server | Response | Cache Updated? |
 |------|----------------|-------|-------------------|----------|---------------|
@@ -888,19 +888,19 @@ Root (.)
 **DNS Packet Structure:**
 ```
 +---------------------+
-| Header (12 bytes)   |  â†’ ID, flags (QR/AA/RD/RA), counts
+| Header (12 bytes)   |  → ID, flags (QR/AA/RD/RA), counts
 +---------------------+
-| Question Section    |  â†’ QNAME (encoded labels), QTYPE, QCLASS
+| Question Section    |  → QNAME (encoded labels), QTYPE, QCLASS
 +---------------------+
-| Answer Section      |  â†’ NAME, TYPE, CLASS, TTL, RDLENGTH, RDATA
+| Answer Section      |  → NAME, TYPE, CLASS, TTL, RDLENGTH, RDATA
 +---------------------+
-| Authority Section   |  â†’ NS records for referrals
+| Authority Section   |  → NS records for referrals
 +---------------------+
-| Additional Section  |  â†’ A records for glue (NS IP addresses)
+| Additional Section  |  → A records for glue (NS IP addresses)
 +---------------------+
 ```
 
-**Pseudocode â€” DNS Resolver (Iterative):**
+**Pseudocode → DNS Resolver (Iterative):**
 ```
 FUNCTION dns_resolve(domain, type="A"):
   IF cache[domain + type] exists AND TTL not expired:
@@ -926,7 +926,7 @@ FUNCTION dns_resolve(domain, type="A"):
 - **DNS Tunneling:** Data encoded in DNS queries for covert communication or C2. Detection: entropy analysis, volume monitoring.
 - **DNSSEC:** Adds digital signatures (RRSIG, DNSKEY, DS records). Chain of trust from root to domain.
 
-**C++ Implementation â€” DNS Query (raw UDP):**
+**C++ Implementation → DNS Query (raw UDP):**
 ```cpp
 #include <iostream>
 #include <cstring>
@@ -1014,7 +1014,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” DNS Resolver:**
+**Python Implementation → DNS Resolver:**
 ```python
 import socket
 import struct
@@ -1086,29 +1086,29 @@ if __name__ == "__main__":
         print(f"{rtype}: {ip} (TTL={ttl})")
 ```
 
-**Complexity Analysis â€” DNS:**
+**Complexity Analysis → DNS:**
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| Name resolution (iterative) | O(h) where h = hierarchy depth (~5) | O(1) | Fixed number of queries: root â†’ TLD â†’ auth |
+| Name resolution (iterative) | O(h) where h = hierarchy depth (~5) | O(1) | Fixed number of queries: root → TLD → auth |
 | Name resolution (recursive) | O(h) + O(cache) | O(1) | Resolver does the work; same depth |
 | Cache lookup | O(log n) or O(1) with hash | O(n) records | Hash table for O(1); balanced tree for prefix |
 | Cache eviction | O(1) per entry | O(n) | LRU or TTL-based expiry |
 | Zone transfer (AXFR) | O(z) where z = zone size | O(z) | Entire zone serialized over TCP |
 | Update (DDNS) | O(1) | O(1) | Single record update on authoritative server |
 
-**Why complexity matters:** DNS resolution is O(h) where h is typically 3-5 (root, TLD, authoritative). This is extremely efficient â€” you never need more than ~5 round trips to resolve any domain. Caching makes repeated lookups O(1). Zone transfers are O(z) because the entire zone must be serialized, but these happen infrequently.
+**Why complexity matters:** DNS resolution is O(h) where h is typically 3-5 (root, TLD, authoritative). This is extremely efficient → you never need more than ~5 round trips to resolve any domain. Caching makes repeated lookups O(1). Zone transfers are O(z) because the entire zone must be serialized, but these happen infrequently.
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |-----------|---------------|
-| Distributed â€” no single point of failure | Cache poisoning vulnerabilities |
-| Hierarchical â€” efficient delegation | TTL trade-off (freshness vs performance) |
+| Distributed → no single point of failure | Cache poisoning vulnerabilities |
+| Hierarchical → efficient delegation | TTL trade-off (freshness vs performance) |
 | Caching reduces latency | UDP 512-byte limit (EDNS0 extension) |
 | Supports multiple record types | Amplification attack vector (DRDoS) |
 | Critical for internet operation | Complex DNSSEC deployment |
 
-**Edge Cases â€” DNS:**
+**Edge Cases → DNS:**
 - **Cache poisoning (Kaminsky attack):** Attacker floods resolver with forged responses for a domain the resolver is querying. 65,536 TXIDs needed for success. Source port randomization makes it harder.
 - **CNAME at zone apex:** RFC forbids CNAME at the naked domain (example.com) alongside other records. Use ALIAS or A record instead.
 - **DNS over HTTPS (DoH):** Browsers can bypass system resolver. Enterprise filtering must account for DoH.
@@ -1117,16 +1117,16 @@ if __name__ == "__main__":
 
 ## 10.4 Email Protocols
 
-### 10.4.1 SMTP â€” Simple Mail Transfer Protocol
+### 10.4.1 SMTP → Simple Mail Transfer Protocol
 
 **Real-World Analogy:** SMTP is the postal service for email. You drop a letter at your local post office (SMTP client), which sends it to the recipient's post office (SMTP server), which holds it until the recipient picks it up (POP3/IMAP). The message may pass through multiple sorting facilities (MTAs) along the way (store-and-forward).
 
 **Message Flow:**
 ```
-User â†’ MUA (Outlook) â†’ MSA (Submission:587) â†’ MTA (Relay) â†’ MTA (Delivery:25) â†’ MDA â†’ Mailbox â†’ MUA (POP3/IMAP)
+User → MUA (Outlook) → MSA (Submission:587) → MTA (Relay) → MTA (Delivery:25) → MDA → Mailbox → MUA (POP3/IMAP)
 ```
 
-**Numbered Steps â€” SMTP Conversation:**
+**Numbered Steps → SMTP Conversation:**
 1. Client opens TCP to server on port 25 (or 587 for submission).
 2. Server sends greeting: `220 mail.example.com ESMTP Postfix`
 3. Client identifies itself: `EHLO client.example.com`
@@ -1142,27 +1142,27 @@ User â†’ MUA (Outlook) â†’ MSA (Submission:587) â†’ MTA (Relay) �
 13. Client closes: `QUIT`
 14. Server responds: `221 Bye`
 
-**Dry Run â€” SMTP Message Delivery:**
+**Dry Run → SMTP Message Delivery:**
 
 | Step | Direction | Message | Server State | Buffer |
 |------|-----------|---------|-------------|--------|
-| 1 | Câ†’S | TCP SYN on port 25 | LISTEN | - |
-| 2 | Sâ†’C | TCP SYN-ACK | CONNECTED | - |
-| 3 | Sâ†’C | 220 mail.other.org ESMTP Ready | CONNECTED | - |
-| 4 | Câ†’S | EHLO client.example.com | Read EHLO | EHLO received |
-| 5 | Sâ†’C | 250-SIZE 52428800 | EHLO done | - |
-| 6 | Sâ†’C | 250-PIPELINING | Extensions listed | - |
-| 7 | Sâ†’C | 250-AUTH PLAIN LOGIN | - | - |
-| 8 | Câ†’S | MAIL FROM:<alice@example.com> | FROM set | From: alice@example.com |
-| 9 | Sâ†’C | 250 OK | FROM verified | - |
-| 10 | Câ†’S | RCPT TO:<bob@other.org> | RCPT received | To: bob@other.org |
-| 11 | Sâ†’C | 250 OK | RCPT accepted | - |
-| 12 | Câ†’S | DATA | Enter DATA | - |
-| 13 | Sâ†’C | 354 End data with . | Ready for body | - |
-| 14 | Câ†’S | From: Alice\r\nTo: Bob\r\nSubject: Hello\r\n\r\nBody text.\r\n. | Receiving | Full message |
-| 15 | Sâ†’C | 250 OK | Message stored | Buffer cleared |
-| 16 | Câ†’S | QUIT | Quit received | - |
-| 17 | Sâ†’C | 221 Bye | Closing | - |
+| 1 | C→S | TCP SYN on port 25 | LISTEN | - |
+| 2 | S→C | TCP SYN-ACK | CONNECTED | - |
+| 3 | S→C | 220 mail.other.org ESMTP Ready | CONNECTED | - |
+| 4 | C→S | EHLO client.example.com | Read EHLO | EHLO received |
+| 5 | S→C | 250-SIZE 52428800 | EHLO done | - |
+| 6 | S→C | 250-PIPELINING | Extensions listed | - |
+| 7 | S→C | 250-AUTH PLAIN LOGIN | - | - |
+| 8 | C→S | MAIL FROM:<alice@example.com> | FROM set | From: alice@example.com |
+| 9 | S→C | 250 OK | FROM verified | - |
+| 10 | C→S | RCPT TO:<bob@other.org> | RCPT received | To: bob@other.org |
+| 11 | S→C | 250 OK | RCPT accepted | - |
+| 12 | C→S | DATA | Enter DATA | - |
+| 13 | S→C | 354 End data with . | Ready for body | - |
+| 14 | C→S | From: Alice\r\nTo: Bob\r\nSubject: Hello\r\n\r\nBody text.\r\n. | Receiving | Full message |
+| 15 | S→C | 250 OK | Message stored | Buffer cleared |
+| 16 | C→S | QUIT | Quit received | - |
+| 17 | S→C | 221 Bye | Closing | - |
 
 **SMTP Status Codes:**
 
@@ -1186,7 +1186,7 @@ User â†’ MUA (Outlook) â†’ MSA (Submission:587) â†’ MTA (Relay) �
 | 553 | Mailbox name not allowed | Invalid format |
 | 554 | Transaction failed | Generic failure |
 
-**Pseudocode â€” SMTP Client:**
+**Pseudocode → SMTP Client:**
 ```
 FUNCTION send_email(sender, recipient, message, server, port=587):
   sock â† TCP.connect(server, port)
@@ -1213,7 +1213,7 @@ FUNCTION send_email(sender, recipient, message, server, port=587):
   sock.close()
 ```
 
-**C++ Implementation â€” SMTP Client:**
+**C++ Implementation → SMTP Client:**
 ```cpp
 #include <iostream>
 #include <string>
@@ -1281,7 +1281,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” SMTP Client:**
+**Python Implementation → SMTP Client:**
 ```python
 import socket
 
@@ -1329,7 +1329,7 @@ if __name__ == "__main__":
                    "mail.example.com", 25)
 ```
 
-**Complexity Analysis â€” SMTP:**
+**Complexity Analysis → SMTP:**
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Connection + handshake | O(1) | O(1) | Fixed 3-message EHLO exchange |
@@ -1345,16 +1345,16 @@ if __name__ == "__main__":
 |-----------|---------------|
 | Simple text-based protocol | No built-in encryption (STARTTLS added) |
 | Store-and-forward (resilient) | No authentication by default (AUTH extension) |
-| Reliable delivery with retries | ASCII-only â€” MIME needed for binary |
+| Reliable delivery with retries | ASCII-only → MIME needed for binary |
 | MX records for failover | Open relay abuse (spam) |
 
-**Edge Cases â€” SMTP:**
+**Edge Cases → SMTP:**
 - **Email spoofing:** SMTP has no built-in sender verification. SPF (TXT record listing authorized servers), DKIM (digital signature), and DMARC (policy) mitigate this.
 - **Open relay:** SMTP server that forwards mail from anyone to anywhere. Classic spam vector. Modern servers restrict relay to authenticated users or authorized networks.
 - **Bounce handling:** Undeliverable mail generates bounce (DSN). Misconfigured bounces can cause backscatter spam.
 - **Message size limits:** SMTP servers enforce message size limits. Large attachments use split delivery or external links.
 
-### 10.4.2 POP3 â€” Post Office Protocol v3
+### 10.4.2 POP3 → Post Office Protocol v3
 
 **Real-World Analogy:** POP3 is like checking your PO box, taking everything, and leaving the box empty. You have the mail on your device, and the server has nothing.
 
@@ -1388,7 +1388,7 @@ C: QUIT
 S: +OK Bye
 ```
 
-**Pseudocode â€” POP3 Client:**
+**Pseudocode → POP3 Client:**
 ```
 FUNCTION pop3_retrieve(server, port, user, password):
   sock â† TCP.connect(server, port)
@@ -1410,7 +1410,7 @@ FUNCTION pop3_retrieve(server, port, user, password):
   RETURN messages
 ```
 
-### 10.4.3 IMAP â€” Internet Message Access Protocol
+### 10.4.3 IMAP → Internet Message Access Protocol
 
 **Real-World Analogy:** IMAP is like having your filing cabinet in the cloud. You open a drawer, look at file names, open the one you want, leave it there. Changes sync across all devices.
 
@@ -1445,7 +1445,7 @@ S: * BYE Logging out
 S: a005 OK LOGOUT completed
 ```
 
-**Pseudocode â€” IMAP Client:**
+**Pseudocode → IMAP Client:**
 ```
 FUNCTION imap_fetch_inbox(server, port, user, password):
   sock â† TCP.connect(server, port)
@@ -1466,7 +1466,7 @@ FUNCTION imap_fetch_inbox(server, port, user, password):
 | Feature | SMTP | POP3 | IMAP |
 |---------|------|------|------|
 | Primary use | Sending/relaying mail | Retrieving mail | Retrieving + managing mail |
-| Direction | Push (client â†’ server) | Pull (server â†’ client) | Pull (server â†’ client) |
+| Direction | Push (client → server) | Pull (server → client) | Pull (server → client) |
 | Message location | Server (relay) | Client (downloaded) | Server (cached) |
 | Multi-device access | N/A | Poor | Excellent |
 | Server-side folders | No | No | Yes |
@@ -1481,7 +1481,7 @@ FUNCTION imap_fetch_inbox(server, port, user, password):
 
 ---
 
-## 10.5 FTP â€” File Transfer Protocol
+## 10.5 FTP → File Transfer Protocol
 
 **Real-World Analogy:** FTP is like a warehouse with two doors. Door 1 (control) is the office where you place orders and get confirmations. Door 2 (data) is the loading dock where actual goods move in and out.
 
@@ -1515,7 +1515,7 @@ FTP (RFC 959) uses two separate connections:
 1. Client opens control connection to server port 21.
 2. Client sends PORT command with its IP and a listening port.
 3. Server connects FROM port 20 TO client's specified port.
-4. Problem: Client behind NAT â€” server cannot connect.
+4. Problem: Client behind NAT → server cannot connect.
 
 **Passive Mode:**
 1. Client opens control connection to server port 21.
@@ -1528,15 +1528,15 @@ FTP (RFC 959) uses two separate connections:
 
 | Feature | Active Mode | Passive Mode |
 |---------|-------------|-------------|
-| Control connection | Clientâ†’Server (21) | Clientâ†’Server (21) |
-| Data connection | Serverâ†’Client (20â†’client port) | Clientâ†’Server (clientâ†’server port) |
+| Control connection | Client→Server (21) | Client→Server (21) |
+| Data connection | Server→Client (20→client port) | Client→Server (client→server port) |
 | NAT-friendly | No (server connects to client) | Yes (client initiates both) |
 | Firewall-friendly | No (incoming connection) | Yes (outgoing only) |
 | Default in browser | Not supported | Yes (PASV) |
 | Server config | PORT range must allow incoming | PORT range must allow many ports |
 | Security | Server must know client IP | Server must open many ports |
 
-**Numbered Steps â€” FTP Passive Download:**
+**Numbered Steps → FTP Passive Download:**
 1. Client connects to server on TCP port 21.
 2. Server sends: `220 FTP server ready`.
 3. Client sends: `USER anonymous`.
@@ -1552,26 +1552,26 @@ FTP (RFC 959) uses two separate connections:
 12. Transfer complete; data connection closes.
 13. Client sends: `QUIT` over control connection.
 
-**Dry Run â€” FTP Passive Mode File Transfer:**
+**Dry Run → FTP Passive Mode File Transfer:**
 
 | Step | Connection | Direction | Message | Comment |
 |------|-----------|-----------|---------|---------|
-| 1 | Control | Câ†’S | TCP SYN to port 21 | Connection setup |
-| 2 | Control | Sâ†’C | 220 Ready | Server ready |
-| 3 | Control | Câ†’S | USER anonymous | Login attempt |
-| 4 | Control | Sâ†’C | 230 Login OK | Authenticated |
-| 5 | Control | Câ†’S | PASV | Request passive mode |
-| 6 | Control | Sâ†’C | 227 Entering Passive Mode (192,168,1,1,4,5) | Port = 4x256+5 = 1029 |
-| 7 | Data | Câ†’S | TCP SYN to 192.168.1.1:1029 | Data connection |
-| 8 | Control | Câ†’S | RETR file.txt | Request file |
-| 9 | Data | Sâ†’C | [file data stream] | Transfer begins |
+| 1 | Control | C→S | TCP SYN to port 21 | Connection setup |
+| 2 | Control | S→C | 220 Ready | Server ready |
+| 3 | Control | C→S | USER anonymous | Login attempt |
+| 4 | Control | S→C | 230 Login OK | Authenticated |
+| 5 | Control | C→S | PASV | Request passive mode |
+| 6 | Control | S→C | 227 Entering Passive Mode (192,168,1,1,4,5) | Port = 4x256+5 = 1029 |
+| 7 | Data | C→S | TCP SYN to 192.168.1.1:1029 | Data connection |
+| 8 | Control | C→S | RETR file.txt | Request file |
+| 9 | Data | S→C | [file data stream] | Transfer begins |
 | 10 | Data | C | ACK every segment | Flow control |
-| 11 | Data | Sâ†’C | [last byte + TCP FIN] | Transfer complete |
-| 12 | Control | Sâ†’C | 226 Transfer complete | Confirmation |
-| 13 | Control | Câ†’S | QUIT | Clean close |
-| 14 | Control | Sâ†’C | 221 Bye | Server goodbye |
+| 11 | Data | S→C | [last byte + TCP FIN] | Transfer complete |
+| 12 | Control | S→C | 226 Transfer complete | Confirmation |
+| 13 | Control | C→S | QUIT | Clean close |
+| 14 | Control | S→C | 221 Bye | Server goodbye |
 
-**Pseudocode â€” FTP Client (Passive Mode):**
+**Pseudocode → FTP Client (Passive Mode):**
 ```
 FUNCTION ftp_get(host, user, password, remote_file, local_path):
   ctrl â† TCP.connect(host, 21)
@@ -1598,7 +1598,7 @@ FUNCTION ftp_get(host, user, password, remote_file, local_path):
   ctrl.close()
 ```
 
-**C++ Implementation â€” FTP Client (passive mode):**
+**C++ Implementation → FTP Client (passive mode):**
 ```cpp
 #include <iostream>
 #include <string>
@@ -1697,7 +1697,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” FTP Client:**
+**Python Implementation → FTP Client:**
 ```python
 import socket
 import re
@@ -1767,7 +1767,7 @@ if __name__ == "__main__":
         ftp.quit()
 ```
 
-**Complexity Analysis â€” FTP:**
+**Complexity Analysis → FTP:**
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Control channel | O(1) per command | O(1) | Fixed-size commands |
@@ -1788,14 +1788,14 @@ if __name__ == "__main__":
 | Batch file operations | Server must manage dynamic port ranges (PASV) |
 | Anonymous access option | FTP(S) and SFTP confusion |
 
-**Edge Cases â€” FTP:**
+**Edge Cases → FTP:**
 - **Passive mode port range exhaustion:** Server must configure a range of ports (e.g., 50000-51000) for PASV. Exhaustion blocks transfers.
 - **ASCII vs Binary mode:** Transferring binary files in ASCII mode corrupts them (newline conversion). Always use TYPE I (binary) for non-text files.
 - **Hidden file names:** Files starting with `.` may or may not appear in LIST output depending on server implementation.
 - **Firewall state tracking:** Some firewalls track FTP control to dynamically allow data connections (ALG). Misconfiguration blocks PASV.
 - **Active mode with NAT:** Client behind NAT sends private IP in PORT command. Server fails to connect. Solution: EPSV (extended passive) or FTP with NAT-aware client.
 
-## 10.6 SSH â€” Secure Shell
+## 10.6 SSH → Secure Shell
 
 **Real-World Analogy:** SSH is a secure, armored tunnel into a building. Unlike Telnet (a clear glass tunnel where everyone can see you), SSH encrypts everything so no one can eavesdrop.
 
@@ -1803,22 +1803,22 @@ if __name__ == "__main__":
 - Encrypted remote terminal access (replaces Telnet).
 - TCP port 22.
 - Public-key cryptography for authentication.
-- Port forwarding (tunneling) â€” encrypt other protocols.
+- Port forwarding (tunneling) → encrypt other protocols.
 - SCP/SFTP for secure file transfer.
 - Protocol versions: SSH-1 (deprecated), SSH-2 (current).
 
-**Numbered Steps â€” SSH Connection:**
+**Numbered Steps → SSH Connection:**
 1. Client opens TCP to server port 22.
 2. Server sends identification string: `SSH-2.0-OpenSSH_9.1`.
 3. Client responds with its identification string.
 4. Key exchange (Diffie-Hellman): establish shared secret and session key.
 5. Server authentication: client verifies server host key (stored in ~/.ssh/known_hosts).
 6. Client authentication: password or public key (RSA/ECDSA/Ed25519).
-7. Session encryption established â€” all subsequent traffic encrypted.
+7. Session encryption established → all subsequent traffic encrypted.
 8. Client requests shell, exec, or subsystem (sftp).
 9. Data flows bidirectionally in encrypted channels.
 
-**Pseudocode â€” SSH Connection:**
+**Pseudocode → SSH Connection:**
 ```
 FUNCTION ssh_connect(host, user, password):
   sock â† TCP.connect(host, 22)
@@ -1826,7 +1826,7 @@ FUNCTION ssh_connect(host, user, password):
   sock.send("SSH-2.0-Client")
   // Key exchange (Diffie-Hellman)
   shared_secret â† dh_key_exchange(sock)
-  // Server authentication â€” verify host key
+  // Server authentication → verify host key
   IF !verify_host_key(sock): RETURN ERROR
   // Client authentication
   sock.send(AUTH_REQUEST(user, password))
@@ -1840,7 +1840,7 @@ FUNCTION ssh_connect(host, user, password):
   RETURN output
 ```
 
-**C++ Implementation â€” SSH Client (using libssh):**
+**C++ Implementation → SSH Client (using libssh):**
 ```cpp
 #include <iostream>
 #include <string>
@@ -1902,7 +1902,7 @@ private:
 };
 ```
 
-**Python Implementation â€” SSH Client:**
+**Python Implementation → SSH Client:**
 ```python
 import paramiko
 
@@ -1945,7 +1945,7 @@ if __name__ == "__main__":
         ssh.close()
 ```
 
-**Complexity Analysis â€” SSH:**
+**Complexity Analysis → SSH:**
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Key exchange (DH) | O(log p) exponentiations | O(1) | Modular exponentiation O(log p) |
@@ -1955,13 +1955,13 @@ if __name__ == "__main__":
 
 ---
 
-## 10.7 DHCP â€” Dynamic Host Configuration Protocol
+## 10.7 DHCP → Dynamic Host Configuration Protocol
 
 **Real-World Analogy:** DHCP is like a hotel front desk. When a guest (device) checks in, the front desk assigns them a room number (IP address), tells them the hotel rules (subnet mask), where the exit is (gateway), and where the concierge is (DNS server). The room is rented for a limited time (lease).
 
 ### 10.7.1 DORA Process
 
-**Numbered Steps â€” DHCP DORA:**
+**Numbered Steps → DHCP DORA:**
 1. **D**iscover (client broadcast): DHCPDISCOVER sent to 255.255.255.255:67 (UDP). Source IP = 0.0.0.0. "Is there a DHCP server out there?"
 2. **O**ffer (server unicast/broadcast): DHCPOFFER with offered IP, subnet mask, gateway, DNS server, lease time, server identifier.
 3. **R**equest (client broadcast): DHCPREQUEST. "I accept the offer from server X for IP Y."
@@ -1996,7 +1996,7 @@ if __name__ == "__main__":
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ```
 
-**Dry Run â€” DHCP DORA Process:**
+**Dry Run → DHCP DORA Process:**
 
 | Step | Packet Type | Source | Dest | yiaddr | Options | Server State |
 |------|-------------|--------|------|--------|---------|-------------|
@@ -2011,7 +2011,7 @@ if __name__ == "__main__":
 - If no response by 87.5%: client broadcasts DHCPREQUEST to any server.
 - If lease expires: client must stop using IP and start DORA again.
 
-**Pseudocode â€” DHCP Client:**
+**Pseudocode → DHCP Client:**
 ```
 FUNCTION dhcp_acquire():
   sock â† UDP.bind(0.0.0.0, 68)
@@ -2043,7 +2043,7 @@ FUNCTION dhcp_acquire():
     TIMEOUT *= 2
 ```
 
-**Python Implementation â€” DHCP Client (conceptual):**
+**Python Implementation → DHCP Client (conceptual):**
 ```python
 import socket
 import struct
@@ -2119,7 +2119,7 @@ if __name__ == "__main__":
     print(f"Acquired IP: {result['ip']} from {result['server']}")
 ```
 
-**Complexity Analysis â€” DHCP:**
+**Complexity Analysis → DHCP:**
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | DORA cycle | O(1) | O(1) | Fixed 4-message exchange |
@@ -2137,7 +2137,7 @@ if __name__ == "__main__":
 | Prevents IP conflicts | DHCP starvation attacks possible |
 | Flexible options (DNS, NTP, etc.) | Relay required across subnets |
 
-**Edge Cases â€” DHCP:**
+**Edge Cases → DHCP:**
 - **DHCP starvation:** Attacker floods DISCOVER messages with fake MACs, exhausting the IP pool. Mitigation: DHCP snooping on switches, port security.
 - **Rogue DHCP server:** Unauthorized server gives malicious IP config. Mitigation: DHCP snooping (trusted/untrusted ports).
 - **IP conflict:** Two devices get same IP. DHCP server should ping before offer. Client sends ARP probe.
@@ -2146,7 +2146,7 @@ if __name__ == "__main__":
 
 ---
 
-## 10.8 SNMP â€” Simple Network Management Protocol
+## 10.8 SNMP → Simple Network Management Protocol
 
 **Real-World Analogy:** SNMP is like a building management system. The manager (central console) periodically checks temperature sensors in every room (polling). If a fire alarm goes off (trap), the sensors immediately alert the manager.
 
@@ -2180,7 +2180,7 @@ if __name__ == "__main__":
 | 1.3.6.1.2.1.2.2.1.16 | ifOutOctets | Bytes sent on interface |
 | 1.3.6.1.2.1.4.20.1.1 | ipAdEntAddr | IP address of interface |
 
-**Pseudocode â€” SNMP Manager Polling:**
+**Pseudocode → SNMP Manager Polling:**
 ```
 FUNCTION snmp_get(host, community, oid):
   request â† BUILD_GET_REQUEST(community=community, oid=oid, request_id=random)
@@ -2201,7 +2201,7 @@ FUNCTION snmp_walk(host, community, base_oid):
   RETURN results
 ```
 
-**Python Implementation â€” SNMP GET (using pysnmp):**
+**Python Implementation → SNMP GET (using pysnmp):**
 ```python
 from pysnmp.hlapi import *
 
@@ -2263,13 +2263,13 @@ if __name__ == "__main__":
         print(f"{oid}: {desc}")
 ```
 
-**Complexity Analysis â€” SNMP:**
+**Complexity Analysis → SNMP:**
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | GET | O(1) | O(1) | Single OID lookup in MIB |
 | GETNEXT | O(log n) | O(1) | Tree traversal to next leaf |
 | GETBULK | O(k) where k = rows | O(k) | Retrieve multiple rows in one operation |
-| TRAP | O(1) | O(message) | Asynchronous â€” no polling overhead |
+| TRAP | O(1) | O(message) | Asynchronous → no polling overhead |
 | MIB compilation | O(n) where n = objects | O(n) | Load entire MIB tree |
 
 **Advantages & Disadvantages:**
@@ -2278,11 +2278,11 @@ if __name__ == "__main__":
 |-----------|---------------|
 | Universal (all network devices support) | v1/v2c insecure (plaintext community) |
 | Standardized MIB structure | Complex OID management |
-| Polling + trap architecture | UDP-based â€” unreliable delivery |
+| Polling + trap architecture | UDP-based → unreliable delivery |
 | Low overhead | Setup complexity for v3 |
 | Extensible (enterprise MIBs) | Bulk data transfer slow |
 
-**Edge Cases â€” SNMP:**
+**Edge Cases → SNMP:**
 - **Community string exposure:** SNMPv2c sends community string in plaintext. Attacker can reconfigure devices. Use SNMPv3 with USM.
 - **MIB compilation errors:** Vendor MIBs may conflict or be malformed. Use strict MIB compiler.
 - **TRAP storms:** Device sends hundreds of traps per second (link flapping). Trap throttling and de-duplication needed.
@@ -2292,17 +2292,17 @@ if __name__ == "__main__":
 
 ## 10.9 WebSocket
 
-**Real-World Analogy:** HTTP is like writing a letter for each message â€” full address, envelope, postage. WebSocket is like a phone call â€” once connected, you just talk. No addressing overhead for each message.
+**Real-World Analogy:** HTTP is like writing a letter for each message → full address, envelope, postage. WebSocket is like a phone call → once connected, you just talk. No addressing overhead for each message.
 
 **Key Concepts:**
 - Full-duplex communication over a single TCP connection.
 - Initiated via HTTP upgrade (101 Switching Protocols).
 - Text and binary frames.
 - Low overhead (2-14 bytes per message vs HTTP headers ~800 bytes).
-- No reconnection overhead â€” connection persists.
+- No reconnection overhead → connection persists.
 - Uses ws:// (port 80) and wss:// (port 443 for TLS).
 
-**Numbered Steps â€” WebSocket Handshake:**
+**Numbered Steps → WebSocket Handshake:**
 1. Client sends HTTP GET with Upgrade headers.
 2. Server responds with 101 Switching Protocols.
 3. Connection upgrades from HTTP to WebSocket.
@@ -2345,7 +2345,7 @@ Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ```
 
-**C++ Implementation â€” WebSocket Server (using Boost.Beast):**
+**C++ Implementation → WebSocket Server (using Boost.Beast):**
 ```cpp
 #include <iostream>
 #include <string>
@@ -2399,7 +2399,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” WebSocket Server:**
+**Python Implementation → WebSocket Server:**
 ```python
 import asyncio
 import websockets
@@ -2440,7 +2440,7 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-**Complexity Analysis â€” WebSocket:**
+**Complexity Analysis → WebSocket:**
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Handshake (upgrade) | O(1) | O(h) | Single HTTP request + response |
@@ -2458,7 +2458,7 @@ if __name__ == "__main__":
 | Binary and text frames | Not suitable for request-response |
 | Standardized (RFC 6455) | No native multiplexing |
 
-**Edge Cases â€” WebSocket:**
+**Edge Cases → WebSocket:**
 - **Proxy timeouts:** Proxies close idle connections. Implement heartbeat/ping-pong.
 - **Connection limit:** Each WebSocket uses a TCP connection. 10,000 clients = 10,000 open FDs.
 - **Cross-origin hijacking:** Check Origin header server-side.
@@ -2498,7 +2498,7 @@ message HelloReply {
 }
 ```
 
-**Numbered Steps â€” gRPC Unary Call:**
+**Numbered Steps → gRPC Unary Call:**
 1. Server starts, listens on port 50051 over HTTP/2.
 2. Client opens HTTP/2 connection to server.
 3. Client serializes request using protobuf.
@@ -2509,7 +2509,7 @@ message HelloReply {
 8. Server sends HTTP/2 DATA frame (protobuf-encoded response).
 9. Stream closes.
 
-**Python Implementation â€” gRPC Server:**
+**Python Implementation → gRPC Server:**
 ```python
 import grpc
 from concurrent import futures
@@ -2545,7 +2545,7 @@ if __name__ == "__main__":
     serve()
 ```
 
-**Python Implementation â€” gRPC Client:**
+**Python Implementation → gRPC Client:**
 ```python
 import grpc
 
@@ -2566,7 +2566,7 @@ if __name__ == "__main__":
     run()
 ```
 
-**C++ Implementation â€” gRPC Server:**
+**C++ Implementation → gRPC Server:**
 ```cpp
 #include <iostream>
 #include <memory>
@@ -2621,7 +2621,7 @@ int main() {
 }
 ```
 
-**Complexity Analysis â€” gRPC:**
+**Complexity Analysis → gRPC:**
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Protobuf serialization | O(n) | O(n) | Linear encoding of fields |
@@ -2643,10 +2643,10 @@ int main() {
 | Built-in load balancing | Large dependency footprint |
 | Deadline/timeout propagation | Versioning requires protobuf discipline |
 
-**Edge Cases â€” gRPC:**
+**Edge Cases → gRPC:**
 - **Deadline exceeded:** Client sets deadline; server should check context->IsCancelled().
 - **Large message handling:** Default 4MB limit. Configure with max_send/receive_message_length.
-- **Connection reuse:** HTTP/2 multiplexing â€” one connection handles many RPCs.
+- **Connection reuse:** HTTP/2 multiplexing → one connection handles many RPCs.
 - **Load balancing:** Stickiness vs round-robin. Use grpc-lb-policy header.
 - **Protobuf backward compatibility:** Never change field numbers. Use reserved keyword.
 
@@ -2768,15 +2768,15 @@ HTTP/3 (QUIC):
 | Aspect | Recursive | Iterative |
 |--------|-----------|-----------|
 | Who does the work | The resolver (e.g., 8.8.8.8) does all queries | The resolver queries each server, which refers to next |
-| Client burden | Minimal â€” client sends one query | More â€” client must follow referrals |
+| Client burden | Minimal → client sends one query | More → client must follow referrals |
 | Caching | At resolver | At client/resolver |
 | Load | High on resolver | Spread across servers |
 | Usage | ISP/Public resolvers (8.8.8.8) | Root/TLD servers communicate with resolvers |
 | Error handling | Resolver handles retries | Client handles retries |
 | Query count | 1 from client | 1 from client (user sees one) |
-| Actual queries | ~4-5 (root â†’ TLD â†’ auth) | ~4-5 (same chain) |
+| Actual queries | ~4-5 (root → TLD → auth) | ~4-5 (same chain) |
 
-**Answer:** In recursive resolution, the client asks a resolver to find the answer completely; the resolver does all the work and returns only the final answer. In iterative resolution, the resolver queries each server in the hierarchy, and each server either answers or refers the resolver to the next server down the chain. Root and TLD servers only do iterative â€” they never perform recursion for clients.
+**Answer:** In recursive resolution, the client asks a resolver to find the answer completely; the resolver does all the work and returns only the final answer. In iterative resolution, the resolver queries each server in the hierarchy, and each server either answers or refers the resolver to the next server down the chain. Root and TLD servers only do iterative → they never perform recursion for clients.
 
 ### Q2: Difference between HTTP Persistent and Non-Persistent Connections?
 
@@ -2804,7 +2804,7 @@ HTTP/3 (QUIC):
 | State | Stateless per message | Stateless |
 | Ports | 25 (MTA), 587 (submission) | 80 (HTTP), 443 (HTTPS) |
 
-**Answer:** SMTP is a **push** protocol â€” the sender initiates the connection and pushes the message toward the receiver. The message may pass through multiple relay servers (store-and-forward). HTTP is a **pull** protocol â€” the client initiates a connection and pulls data from the server. SMTP also has different message structure (RFC 5322: headers + blank line + body) and handles binary data differently (MIME encoding).
+**Answer:** SMTP is a **push** protocol → the sender initiates the connection and pushes the message toward the receiver. The message may pass through multiple relay servers (store-and-forward). HTTP is a **pull** protocol → the client initiates a connection and pulls data from the server. SMTP also has different message structure (RFC 5322: headers + blank line + body) and handles binary data differently (MIME encoding).
 
 ### Q4: Difference between WebSocket and HTTP?
 
@@ -2818,7 +2818,7 @@ HTTP/3 (QUIC):
 | Data format | Text/binary (self-describing) | Text/binary frames |
 | Use case | REST APIs, web pages | Real-time: chat, gaming, live data |
 | Caching | Built-in | Not supported |
-| Streaming | SSE (serverâ†’client only) | Both directions |
+| Streaming | SSE (server→client only) | Both directions |
 | Protocol overhead | High per message | Low per message |
 
 **Answer:** WebSocket provides full-duplex communication over a single persistent connection with minimal framing overhead (2-14 bytes). HTTP is request-response with much higher overhead (~800 bytes of headers per request). WebSocket starts as an HTTP upgrade request (101 Switching Protocols), then switches to its own frame-based protocol. Use HTTP for REST APIs, resource fetching, and caching-friendly operations. Use WebSocket for real-time applications like chat, gaming, live updates, and streaming.
@@ -2891,7 +2891,7 @@ Chrome was the first major browser to enable HTTP/3 by default (2020). Implement
 | Feature | Sendmail | Postfix |
 |---------|----------|---------|
 | Architecture | Monolithic (single binary, suid root) | Modular (multiple processes, least privilege) |
-| Configuration | Complex M4 macros â†’ sendmail.cf | Main.cf (key = value) |
+| Configuration | Complex M4 macros → sendmail.cf | Main.cf (key = value) |
 | Security history | Many vulnerabilities | Fewer (designed defensively) |
 | Performance | Adequate | Better (queue management, rate limiting) |
 | Mail queue | Single queue directory | Active/deferred queue hierarchy |
@@ -2902,7 +2902,7 @@ Chrome was the first major browser to enable HTTP/3 by default (2020). Implement
 ```
 Sendmail (MUA)
   â†“
-pickup â†’ cleanup â†’ qmgr â†’ smtp â†’ Network
+pickup → cleanup → qmgr → smtp → Network
          â†‘              â†“
      trivial-rewrite   bounce/defer
 ```
@@ -2912,7 +2912,7 @@ pickup â†’ cleanup â†’ qmgr â†’ smtp â†’ Network
 ## ðŸ’¡ Pro Tips
 
 - **Check your TTLs on slow DNS:** Stale DNS cache is a common cause of intermittent failures. Use `dig +trace` to see the full resolution path and cache behavior at each hop. A record TTL of 60 seconds is too short for production; 300-3600 is typical.
-- **Use passive FTP for NAT traversal:** Active FTP requires the server to connect back to the client's port 20. This fails behind NAT. Always use passive (PASV) mode â€” the client initiates both control and data connections.
+- **Use passive FTP for NAT traversal:** Active FTP requires the server to connect back to the client's port 20. This fails behind NAT. Always use passive (PASV) mode → the client initiates both control and data connections.
 - **IMAP vs POP3 decision:** If users access email from multiple devices or need server-side folder search, use IMAP. POP3 is acceptable only if messages are read on a single device and server storage is a concern.
 - **DHCP lease times matter:** Short leases (minutes) allow rapid IP recovery but increase DHCP traffic. Long leases (days/weeks) reduce overhead but delay IP recycling. Reserve short leases for guest networks.
 - **HTTP/3 fallback:** Not all networks allow UDP on port 443. Always support HTTP/2 fallback when deploying HTTP/3.
@@ -3035,8 +3035,8 @@ The application layer provides network services directly to end-user application
 
 **HTTP** has evolved significantly:
 - **HTTP/1.1:** Text-based, persistent connections, pipelining with application-layer HOL blocking.
-- **HTTP/2:** Binary framing, multiplexed streams, HPACK compression â€” eliminates application-layer HOL but retains TCP-level HOL.
-- **HTTP/3:** Runs over QUIC (UDP), independent streams, 0-RTT, connection migration â€” no HOL blocking at any layer.
+- **HTTP/2:** Binary framing, multiplexed streams, HPACK compression → eliminates application-layer HOL but retains TCP-level HOL.
+- **HTTP/3:** Runs over QUIC (UDP), independent streams, 0-RTT, connection migration → no HOL blocking at any layer.
 
 **DNS** translates domain names to IP addresses through a distributed hierarchy of root, TLD, and authoritative servers. Resolution can be iterative (resolver follows referrals) or recursive (resolver does all work). DNSSEC adds cryptographic verification.
 

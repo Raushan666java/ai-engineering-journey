@@ -26,9 +26,9 @@ By the end of this chapter you should be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Authentication â€” verifying identity via `SecurityFilterChain` and `AuthenticationProvider` | Use `DaoAuthenticationProvider` with `BCryptPasswordEncoder` for production DB auth |
-| Authorization â€” deciding access via `AccessDecisionManager` and voters | Annotate endpoints with `hasRole()` and methods with `@PreAuthorize` |
-| Session Management â€” policies, fixation, concurrent control | Set `sessionCreationPolicy = STATELESS` for REST APIs |
+| Authentication → verifying identity via `SecurityFilterChain` and `AuthenticationProvider` | Use `DaoAuthenticationProvider` with `BCryptPasswordEncoder` for production DB auth |
+| Authorization → deciding access via `AccessDecisionManager` and voters | Annotate endpoints with `hasRole()` and methods with `@PreAuthorize` |
+| Session Management → policies, fixation, concurrent control | Set `sessionCreationPolicy = STATELESS` for REST APIs |
 
 ---
 ## Chapter Roadmap
@@ -432,7 +432,7 @@ public class RequestLoggingFilter extends OncePerRequestFilter {
 ```
 
 > [!TIP]
-> Always order custom filters explicitly using `addFilterBefore` or `addFilterAfter` â€” never rely on bean ordering alone.
+> Always order custom filters explicitly using `addFilterBefore` or `addFilterAfter` → never rely on bean ordering alone.
 
 ---
 
@@ -1680,7 +1680,7 @@ public class SessionAdminService {
 ```
 
 > [!NOTE]
-> For REST APIs, always set `sessionCreationPolicy(STATELESS)` â€” Spring Security will never create an `HttpSession` and will never use one to obtain the `SecurityContext`.
+> For REST APIs, always set `sessionCreationPolicy(STATELESS)` → Spring Security will never create an `HttpSession` and will never use one to obtain the `SecurityContext`.
 
 ---
 

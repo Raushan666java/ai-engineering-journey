@@ -1,4 +1,4 @@
-# Operating Systems â€” GATE CS Complete Guide
+# Operating Systems → GATE CS Complete Guide
 
 > Also known as: OS, System Software, Kernel internals
 > GATE weightage: 8â€“12 marks (approx 10â€“14% of CS paper)
@@ -86,7 +86,7 @@ flowchart LR
 
 ---
 
-## Formula Cheat Sheet â€” Quick Reference
+## Formula Cheat Sheet → Quick Reference
 
 ### CPU Scheduling Formulas
 
@@ -100,7 +100,7 @@ flowchart LR
 | CPU Utilization | (Total CPU time) / (Total elapsed time) Ã— 100% |
 | Throughput | Processes completed / Time unit |
 
-### Page Replacement â€” Fault Count
+### Page Replacement → Fault Count
 
 | Algorithm | Characteristics | Belady's Anomaly? |
 |-----------|----------------|-------------------|
@@ -109,28 +109,28 @@ flowchart LR
 | Optimal | Page used farthest in future | No (but unimplementable in practice) |
 | Clock (NRU) | Approximates LRU with reference bit | No |
 
-### Deadlock â€” Necessary Conditions (must hold simultaneously)
+### Deadlock → Necessary Conditions (must hold simultaneously)
 
-1. **Mutual Exclusion** â€” at least one resource is non-sharable
-2. **Hold and Wait** â€” process holding a resource waits for another
-3. **No Preemption** â€” resources cannot be forcibly taken
-4. **Circular Wait** â€” circular chain of processes, each holding a resource needed by the next
+1. **Mutual Exclusion** → at least one resource is non-sharable
+2. **Hold and Wait** → process holding a resource waits for another
+3. **No Preemption** → resources cannot be forcibly taken
+4. **Circular Wait** → circular chain of processes, each holding a resource needed by the next
 
-### Disk Scheduling â€” Which is optimal for what?
+### Disk Scheduling → Which is optimal for what?
 
 | Algorithm | Direction | Starvation? | Best for |
 |-----------|-----------|-------------|----------|
 | FCFS | None | No | Fairness |
-| SSTF | â€” | Yes (inner tracks) | Minimize seek time (greedy) |
+| SSTF | → | Yes (inner tracks) | Minimize seek time (greedy) |
 | SCAN (Elevator) | One direction | No | Moderate load |
 | C-SCAN | One direction, wrap | No | Uniform wait time |
 | LOOK | One direction, stop | No | Better than SCAN |
 | C-LOOK | One direction, stop, wrap | No | Best throughput |
 
-### Semaphore â€” Key Invariants
+### Semaphore → Key Invariants
 
-- `Wait(S)` or `P(S)` â€” if S > 0 then S-- else block
-- `Signal(S)` or `V(S)` â€” if processes blocked then wake else S++
+- `Wait(S)` or `P(S)` → if S > 0 then S-- else block
+- `Signal(S)` or `V(S)` → if processes blocked then wake else S++
 - Binary semaphore: S âˆˆ {0, 1}
 - Counting semaphore: S â‰¥ 0
 - **Mutex** = binary semaphore used for mutual exclusion
@@ -158,22 +158,22 @@ Each process has a PCB containing:
 ### Process States
 
 ```
-NEW â†’ READY â†’ RUNNING â†’ WAITING â†’ TERMINATED
+NEW → READY → RUNNING → WAITING → TERMINATED
           â†•              â†‘
       (scheduler)    (I/O completion)
 ```
 
-- **NEW** â€” process being created
-- **READY** â€” in main memory, waiting for CPU
-- **RUNNING** â€” currently executing on CPU
-- **WAITING** â€” waiting for I/O or event
-- **TERMINATED** â€” finished execution
+- **NEW** → process being created
+- **READY** → in main memory, waiting for CPU
+- **RUNNING** → currently executing on CPU
+- **WAITING** → waiting for I/O or event
+- **TERMINATED** → finished execution
 
 ### Context Switch
 
-The OS saves the state of the current process and loads the saved state of another. **Context switch time** is overhead â€” pure waste. GATE often asks: "What is NOT saved during context switch?" Answer: Memory contents are usually not saved (page tables remain).
+The OS saves the state of the current process and loads the saved state of another. **Context switch time** is overhead → pure waste. GATE often asks: "What is NOT saved during context switch?" Answer: Memory contents are usually not saved (page tables remain).
 
-### Process Creation â€” fork() and exec()
+### Process Creation → fork() and exec()
 
 | Call | Effect |
 |------|--------|
@@ -185,11 +185,11 @@ The OS saves the state of the current process and loads the saved state of anoth
 **Zombie process:** Child terminated, but parent has not called `wait()`. PCB still exists.
 **Orphan process:** Parent terminated before child. init (PID 1) adopts the child.
 
-### Process Scheduling â€” Queues
+### Process Scheduling → Queues
 
-- **Job Queue** â€” all processes in system
-- **Ready Queue** â€” processes in main memory, ready to run
-- **Device Queue** â€” processes waiting for I/O device
+- **Job Queue** → all processes in system
+- **Ready Queue** → processes in main memory, ready to run
+- **Device Queue** → processes waiting for I/O device
 
 ### Schedulers
 
@@ -205,11 +205,11 @@ The OS saves the state of the current process and loads the saved state of anoth
 
 ### GATE-Ready Scheduling Criteria
 
-- **CPU utilization** â€” keep CPU busy
-- **Throughput** â€” processes completed per unit time
-- **Turnaround time** â€” total time from submission to completion
-- **Waiting time** â€” total time in ready queue
-- **Response time** â€” time from submission to first response
+- **CPU utilization** → keep CPU busy
+- **Throughput** → processes completed per unit time
+- **Turnaround time** → total time from submission to completion
+- **Waiting time** → total time in ready queue
+- **Response time** → time from submission to first response
 
 ### FCFS (First-Come, First-Served)
 
@@ -219,14 +219,14 @@ The OS saves the state of the current process and loads the saved state of anoth
 ### SJF (Shortest Job First)
 
 - Can be preemptive (SRTF) or non-preemptive
-- **Minimum average waiting time** â€” provably optimal
+- **Minimum average waiting time** → provably optimal
 - Problem: starvation of long jobs, requires future knowledge
 
 ### Round Robin
 
 - Preemptive, time quantum q
-- If q â†’ âˆž, behaves like FCFS
-- If q â†’ 0, too many context switches
+- If q → âˆž, behaves like FCFS
+- If q → 0, too many context switches
 - Typical q = 10â€“100 ms
 - **Turnaround time depends heavily on q**
 
@@ -234,7 +234,7 @@ The OS saves the state of the current process and loads the saved state of anoth
 
 - Preemptive or non-preemptive
 - Can lead to **starvation** (low priority processes never run)
-- **Aging** â€” gradually increase priority of waiting processes
+- **Aging** → gradually increase priority of waiting processes
 
 ### Multilevel Queue
 
@@ -256,9 +256,9 @@ The OS saves the state of the current process and loads the saved state of anoth
 ### Critical Section Problem
 
 A section of code where shared variables are accessed. Requirements:
-1. **Mutual Exclusion** â€” only one process in critical section
-2. **Progress** â€” if no process in CS, a process requesting entry must be able to enter in finite time
-3. **Bounded Waiting** â€” bound on number of times others can enter after a process requests entry
+1. **Mutual Exclusion** → only one process in critical section
+2. **Progress** → if no process in CS, a process requesting entry must be able to enter in finite time
+3. **Bounded Waiting** → bound on number of times others can enter after a process requests entry
 
 ### Peterson's Solution
 
@@ -342,7 +342,7 @@ do {
 - High-level synchronization construct
 - Only one process can be active in the monitor at a time
 - `condition` variables with `wait()` and `signal()` operations
-- **Mesa vs Hoare semantics** â€” Hoare: signaler immediately transfers control; Mesa: signaler continues, signaled process rechecks
+- **Mesa vs Hoare semantics** → Hoare: signaler immediately transfers control; Mesa: signaler continues, signaled process rechecks
 
 ---
 
@@ -357,8 +357,8 @@ do {
 
 ### Resource Allocation Graph (RAG)
 
-- Process â†’ Resource: request edge
-- Resource â†’ Process: assignment edge
+- Process → Resource: request edge
+- Resource → Process: assignment edge
 - **Cycle in RAG + single instance per resource type â‡’ deadlock**
 - **Cycle in RAG + multiple instances â‡’ possible deadlock** (need further check)
 
@@ -373,12 +373,12 @@ Eliminate at least one necessary condition:
 | No Preemption | Preempt resources if holding process blocked |
 | Circular Wait | Impose total ordering on resource types |
 
-### Deadlock Avoidance â€” Banker's Algorithm
+### Deadlock Avoidance → Banker's Algorithm
 
 Data structures:
-- `Available[m]` â€” available instances of each resource type
-- `Max[n][m]` â€” maximum demand of each process
-- `Allocation[n][m]` â€” currently allocated
+- `Available[m]` → available instances of each resource type
+- `Max[n][m]` → maximum demand of each process
+- `Allocation[n][m]` → currently allocated
 - `Need[n][m]` = `Max - Allocation`
 
 **Safety Algorithm:**
@@ -403,21 +403,21 @@ Data structures:
 
 ### Logical vs Physical Address
 
-- **Logical/virtual address** â€” generated by CPU
-- **Physical address** â€” actual memory location
-- **MMU** â€” hardware that maps virtual to physical addresses
+- **Logical/virtual address** → generated by CPU
+- **Physical address** → actual memory location
+- **MMU** → hardware that maps virtual to physical addresses
 
 ### Contiguous Allocation
 
 - Fixed partition: internal fragmentation
 - Dynamic partition: external fragmentation
-- **Compaction** â€” rearrange memory to eliminate external fragmentation
+- **Compaction** → rearrange memory to eliminate external fragmentation
 
 ### Paging
 
 - Physical memory divided into **frames**
 - Logical memory divided into **pages**
-- Page table maps page â†’ frame
+- Page table maps page → frame
 - Internal fragmentation only (last page average half-page waste)
 
 **Page table entry:** frame number + valid/invalid bit + protection bits + dirty bit + reference bit
@@ -453,7 +453,7 @@ Allows execution of processes not entirely in memory.
 ### Demand Paging
 
 - Page loaded only when accessed
-- **Page fault** â€” trap to OS; load page from disk
+- **Page fault** → trap to OS; load page from disk
 - Pure demand paging: start with no pages in memory
 
 ### Page Replacement Algorithms
@@ -477,9 +477,9 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 - Excessive paging activity
 - Cause: insufficient frames per process
-- **Working set model** â€” maintain set of pages currently being used
+- **Working set model** → maintain set of pages currently being used
 - âˆ‘ working set sizes > available frames â‡’ thrashing
-- **Page Fault Frequency** control â€” allocate more frames if fault rate too high, take away if too low
+- **Page Fault Frequency** control → allocate more frames if fault rate too high, take away if too low
 
 ### Frame Allocation
 
@@ -493,15 +493,15 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### File Concepts
 
-- **File** â€” named collection of related information
+- **File** → named collection of related information
 - **File attributes:** name, identifier, type, location, size, protection, timestamps
 - **File operations:** create, open, read, write, close, delete, truncate
 
 ### File Access Methods
 
 - Sequential
-- Direct (random) â€” based on block number
-- Indexed â€” index block contains pointers to data blocks
+- Direct (random) → based on block number
+- Indexed → index block contains pointers to data blocks
 
 ### Directory Structure
 
@@ -525,26 +525,26 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### Free Space Management
 
-- **Bit vector** (bitmap) â€” efficient, compact
-- **Linked list** â€” not efficient for contiguous allocation
-- **Grouping** â€” stores pointers to free blocks
-- **Counting** â€” tracks (first free block, count of contiguous free blocks)
+- **Bit vector** (bitmap) → efficient, compact
+- **Linked list** → not efficient for contiguous allocation
+- **Grouping** → stores pointers to free blocks
+- **Counting** → tracks (first free block, count of contiguous free blocks)
 
 ### Disk Structure
 
 - Platters, tracks, sectors, cylinders
-- **Seek time** â€” time to move arm to cylinder
-- **Rotational latency** â€” time for sector to rotate under head
-- **Transfer time** â€” time to read/write data
+- **Seek time** → time to move arm to cylinder
+- **Rotational latency** → time for sector to rotate under head
+- **Transfer time** → time to read/write data
 
 ### Disk Scheduling Algorithms
 
-**FCFS** â€” First come, first served
-**SSTF** â€” Shortest seek time first (may starve)
-**SCAN (Elevator)** â€” Move in one direction, service all, reverse
-**C-SCAN** â€” Service requests in one direction only, wrap to start
-**LOOK** â€” Only go as far as the last request in current direction
-**C-LOOK** â€” Wrap after last request in one direction
+**FCFS** → First come, first served
+**SSTF** → Shortest seek time first (may starve)
+**SCAN (Elevator)** → Move in one direction, service all, reverse
+**C-SCAN** → Service requests in one direction only, wrap to start
+**LOOK** → Only go as far as the last request in current direction
+**C-LOOK** → Wrap after last request in one direction
 
 ### RAID Levels
 
@@ -568,21 +568,21 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### I/O Techniques
 
-1. **Programmed I/O** â€” CPU busy-waits. Poor CPU utilization.
-2. **Interrupt-driven I/O** â€” device interrupts CPU when ready. Better.
-3. **DMA (Direct Memory Access)** â€” transfers data without CPU intervention. Best for bulk transfers.
+1. **Programmed I/O** → CPU busy-waits. Poor CPU utilization.
+2. **Interrupt-driven I/O** → device interrupts CPU when ready. Better.
+3. **DMA (Direct Memory Access)** → transfers data without CPU intervention. Best for bulk transfers.
 
 ### DMA Modes
 
-- **Burst mode** â€” DMA controls bus for entire transfer; blocks CPU
-- **Cycle stealing** â€” DMA takes one bus cycle at a time
-- **Transparent mode** â€” DMA transfers only when CPU not using bus
+- **Burst mode** → DMA controls bus for entire transfer; blocks CPU
+- **Cycle stealing** → DMA takes one bus cycle at a time
+- **Transparent mode** → DMA transfers only when CPU not using bus
 
 ### Buffering
 
-- **Single buffer** â€” OS reads into buffer, then copies to user space
-- **Double buffering** â€” while one buffer is being processed, another is being filled
-- **Circular buffer** â€” multiple buffers in ring
+- **Single buffer** → OS reads into buffer, then copies to user space
+- **Double buffering** → while one buffer is being processed, another is being filled
+- **Circular buffer** → multiple buffers in ring
 
 ### Spooling
 
@@ -598,27 +598,27 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 - Managed without kernel support
 - Thread library (POSIX Pthreads, Java threads) in user space
-- **Faster creation and switching** â€” no system calls
-- **Blocking problem** â€” if one thread blocks, entire process blocks
+- **Faster creation and switching** → no system calls
+- **Blocking problem** → if one thread blocks, entire process blocks
 
 ### Kernel-Level Threads
 
 - Managed directly by OS
-- **Slower creation/switch** â€” need system call
-- **Blocking is fine** â€” kernel schedules other threads in same process
+- **Slower creation/switch** → need system call
+- **Blocking is fine** → kernel schedules other threads in same process
 
 ### Multithreading Models
 
 | Model | User : Kernel | Pros | Cons |
 |-------|--------------|------|------|
-| Many-to-One | Many U â†’ 1 K | Fast context switch | Blocking blocks all |
-| One-to-One | 1 U â†’ 1 K | True parallelism | Overhead of kernel threads |
-| Many-to-Many | Many U â†’ Many K | Both benefits | Complex to implement |
+| Many-to-One | Many U → 1 K | Fast context switch | Blocking blocks all |
+| One-to-One | 1 U → 1 K | True parallelism | Overhead of kernel threads |
+| Many-to-Many | Many U → Many K | Both benefits | Complex to implement |
 
 ### Thread Libraries
 
-- **POSIX Pthreads** â€” `pthread_create`, `pthread_join`, `pthread_mutex_lock`
-- **Java threads** â€” JVM threads (typically one-to-one on modern JVMs)
+- **POSIX Pthreads** → `pthread_create`, `pthread_join`, `pthread_mutex_lock`
+- **Java threads** → JVM threads (typically one-to-one on modern JVMs)
 
 ---
 
@@ -626,19 +626,19 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 
 ### System Calls
 
-- `fork()` â€” create child process
-- `exec()` â€” replace process image
-- `wait()` / `waitpid()` â€” wait for child
-- `exit()` â€” terminate process
-- `open()`, `read()`, `write()`, `close()` â€” file I/O
-- `pipe()` â€” inter-process communication
-- `signal()` â€” register signal handler
+- `fork()` → create child process
+- `exec()` → replace process image
+- `wait()` / `waitpid()` → wait for child
+- `exit()` → terminate process
+- `open()`, `read()`, `write()`, `close()` → file I/O
+- `pipe()` → inter-process communication
+- `signal()` → register signal handler
 
 ### Process in Unix
 
 ```
-fork() â†’ child continues with PC after fork
-       â†’ parent gets child PID, child gets 0
+fork() → child continues with PC after fork
+       → parent gets child PID, child gets 0
 ```
 
 ```c
@@ -657,15 +657,15 @@ int main() {
 ### Signals
 
 - Software interrupts: `SIGINT` (Ctrl+C), `SIGKILL` (cannot be caught), `SIGSEGV` (segmentation fault)
-- `signal(SIGINT, handler)` â€” register handler
-- `kill(pid, SIGTERM)` â€” send signal
+- `signal(SIGINT, handler)` → register handler
+- `kill(pid, SIGTERM)` → send signal
 
 ### Inter-process Communication (IPC)
 
-- **Shared memory** â€” fastest (no kernel mediation)
-- **Message passing** â€” `send()` / `receive()` (system calls)
-- **Pipes** â€” `pipe(int fd[2])`; `fd[0]` for read, `fd[1]` for write
-- **Named pipes (FIFO)** â€” persist beyond process lifetime
+- **Shared memory** → fastest (no kernel mediation)
+- **Message passing** → `send()` / `receive()` (system calls)
+- **Pipes** → `pipe(int fd[2])`; `fd[0]` for read, `fd[1]` for write
+- **Named pipes (FIFO)** → persist beyond process lifetime
 
 ---
 
@@ -676,13 +676,13 @@ int main() {
 ### G1: Process States [GATE 2010, 1M, Process Management]
 
 One of the following transitions is NOT possible for a process:
-**(A)** Running â†’ Ready  
-**(B)** Waiting â†’ Running  
-**(C)** Ready â†’ Running  
-**(D)** Running â†’ Waiting  
+**(A)** Running → Ready  
+**(B)** Waiting → Running  
+**(C)** Ready → Running  
+**(D)** Running → Waiting  
 
 **Answer: (B)**  
-**Explanation:** A process in Waiting (Blocked) state must first transition to Ready (when I/O completes) before it can be scheduled to Running. Direct Waiting â†’ Running is impossible.
+**Explanation:** A process in Waiting (Blocked) state must first transition to Ready (when I/O completes) before it can be scheduled to Running. Direct Waiting → Running is impossible.
 
 ---
 
@@ -743,8 +743,8 @@ Is the system in a safe state?
 **Answer: Yes, safe sequence exists.**  
 **Explanation:** Available = 12 - (5+2+2) = 3.  
 Need = Max - Allocation: P0=5, P1=2, P2=7.  
-P1 can finish (Need 2 â‰¤ Avail 3) â†’ release 2 â†’ Avail=5.  
-P0 can finish (Need 5 â‰¤ Avail 5) â†’ release 5 â†’ Avail=10.  
+P1 can finish (Need 2 â‰¤ Avail 3) → release 2 → Avail=5.  
+P0 can finish (Need 5 â‰¤ Avail 5) → release 5 → Avail=10.  
 P2 can finish (Need 7 â‰¤ Avail 10). Safe sequence: P1, P0, P2.
 
 ---
@@ -769,18 +769,18 @@ Consider reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 3 frames. How
 **Answer: 9 faults**  
 **Explanation:**
 ```
-1 â†’ fault (1, -, -)
-2 â†’ fault (1, 2, -)
-3 â†’ fault (1, 2, 3)
-4 â†’ fault (4, 2, 3)  replace 1
-1 â†’ fault (4, 1, 3)  replace 2
-2 â†’ fault (4, 1, 2)  replace 3
-5 â†’ fault (5, 1, 2)  replace 4
-1 â†’ hit
-2 â†’ hit
-3 â†’ fault (5, 3, 2)  replace 1
-4 â†’ fault (5, 3, 4)  replace 2
-5 â†’ hit
+1 → fault (1, -, -)
+2 → fault (1, 2, -)
+3 → fault (1, 2, 3)
+4 → fault (4, 2, 3)  replace 1
+1 → fault (4, 1, 3)  replace 2
+2 → fault (4, 1, 2)  replace 3
+5 → fault (5, 1, 2)  replace 4
+1 → hit
+2 → hit
+3 → fault (5, 3, 2)  replace 1
+4 → fault (5, 3, 4)  replace 2
+5 → hit
 ```
 Total = 9 faults
 
@@ -816,7 +816,7 @@ In the dining philosophers problem, if all philosophers pick up their left chops
 **(D)** Race condition  
 
 **Answer: (B)**  
-**Explanation:** All pick up left chopstick â†’ each waits for right chopstick held by neighbor â†’ circular wait â†’ deadlock.
+**Explanation:** All pick up left chopstick → each waits for right chopstick held by neighbor → circular wait → deadlock.
 
 ---
 
@@ -827,7 +827,7 @@ Consider a system with 3-level page table: outer page table (PT1), page middle d
 **Answer: 18 bits**  
 **Explanation:** 48 bits total: 10 (PT1) + 10 (PT2) + 10 (PT3) + offset. Offset = 48 - 30 = 18 bits. But page size is 4 KB = 2^12. Conflict? GATE: the offset must match page size. So offset = 12 bits, and total = 10 + 10 + 10 + 12 = 42 bits, leaving 6 bits unused -- this is a trick to check understanding. Actually offset = 12 (from 4 KB page), so address split: 10 + 10 + 10 + 12 = 42; remaining 6 bits may be used for one more level or unused.
 
-[GATE clarification question â€” designed to trap students who blindly compute remaining bits.]
+[GATE clarification question → designed to trap students who blindly compute remaining bits.]
 
 ---
 
@@ -838,26 +838,26 @@ Consider reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7,
 **Answer: 12 faults**  
 **Explanation:** Work through carefully:
 ```
-7 â†’ fault (7, -, -)
-0 â†’ fault (7, 0, -)
-1 â†’ fault (7, 0, 1)
-2 â†’ fault (2, 0, 1) LRU=7 out
-0 â†’ hit (2, 0, 1)
-3 â†’ fault (2, 0, 3) LRU=1 out
-0 â†’ hit
-4 â†’ fault (4, 0, 3) LRU=2 out
-2 â†’ fault (4, 0, 2) LRU=3 out
-3 â†’ fault (4, 3, 2) LRU=0 out
-0 â†’ fault (4, 3, 0) LRU=2 out
-3 â†’ hit
-2 â†’ fault (2, 3, 0) LRU=4 out
-1 â†’ fault (2, 3, 1) LRU=0 out
-2 â†’ hit
-0 â†’ fault (0, 3, 1) LRU=2 out
-1 â†’ hit
-7 â†’ fault (0, 3, 7) LRU=1 out
-0 â†’ hit
-1 â†’ fault (0, 1, 7) LRU=3 out
+7 → fault (7, -, -)
+0 → fault (7, 0, -)
+1 → fault (7, 0, 1)
+2 → fault (2, 0, 1) LRU=7 out
+0 → hit (2, 0, 1)
+3 → fault (2, 0, 3) LRU=1 out
+0 → hit
+4 → fault (4, 0, 3) LRU=2 out
+2 → fault (4, 0, 2) LRU=3 out
+3 → fault (4, 3, 2) LRU=0 out
+0 → fault (4, 3, 0) LRU=2 out
+3 → hit
+2 → fault (2, 3, 0) LRU=4 out
+1 → fault (2, 3, 1) LRU=0 out
+2 → hit
+0 → fault (0, 3, 1) LRU=2 out
+1 → hit
+7 → fault (0, 3, 7) LRU=1 out
+0 → hit
+1 → fault (0, 1, 7) LRU=3 out
 ```
 Total = 12 faults.
 
@@ -949,8 +949,8 @@ Is the system in a safe state?
 Need = Max - Allocation:  
 P0=(7,4,3), P1=(1,2,2), P2=(6,0,0), P3=(0,1,1), P4=(4,3,1).  
 
-Safe sequence: P1 (Need â‰¤ Avail) â†’ Avail = (5,3,2)  
-â†’ P3 â†’ Avail = (7,4,3) â†’ P4 â†’ Avail = (7,4,5) â†’ P2 â†’ Avail = (10,4,7) â†’ P0 â†’ Avail = (10,5,7).  
+Safe sequence: P1 (Need â‰¤ Avail) → Avail = (5,3,2)  
+→ P3 → Avail = (7,4,3) → P4 → Avail = (7,4,5) → P2 → Avail = (10,4,7) → P0 → Avail = (10,5,7).  
 Safe: P1, P3, P4, P2, P0.
 
 ---
@@ -975,12 +975,12 @@ How many times is "GATE" printed?
 
 ### G20: Logical to Physical Address [GATE 2015, 2M, Memory Management]
 
-A system has page size = 1 KB. Page table (for process) has entries: 0â†’5, 1â†’8, 2â†’10, 3â†’15. What physical address corresponds to logical address 2500?
+A system has page size = 1 KB. Page table (for process) has entries: 0→5, 1→8, 2→10, 3→15. What physical address corresponds to logical address 2500?
 
 **Answer: 11236** (decimal)  
 **Explanation:** Logical address 2500. Page number = 2500 / 1024 = 2. Offset = 2500 % 1024 = 452. Frame number from page table = 10. Physical address = 10 Ã— 1024 + 452 = 10240 + 452 = 10692.
 
-Wait â€” let me recalculate: 10 * 1024 = 10240, + 452 = 10692.
+Wait → let me recalculate: 10 * 1024 = 10240, + 452 = 10692.
 
 **Answer: 10692**
 
@@ -994,7 +994,7 @@ Which of the following is sufficient to guarantee no deadlock?
 **(C)** No preemption is violated  
 **(D)** Circular wait is violated  
 
-**Answer: Any one of the four (but the question asks which SINGLE condition being violated guarantees no deadlock â€” all four are individually sufficient as breaking any one condition prevents deadlock). The most commonly violated condition in practical systems is Circular Wait, but the answer is technically any of them. GATE expected: **(D)** Circular wait, because it's the one most prevention strategies target (resource ordering).
+**Answer: Any one of the four (but the question asks which SINGLE condition being violated guarantees no deadlock → all four are individually sufficient as breaking any one condition prevents deadlock). The most commonly violated condition in practical systems is Circular Wait, but the answer is technically any of them. GATE expected: **(D)** Circular wait, because it's the one most prevention strategies target (resource ordering).
 
 **Explanation:** If any one of the four necessary conditions is absent, deadlock cannot occur.
 
@@ -1007,32 +1007,32 @@ Reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 4 frames. How many pag
 **Answer: 6 faults**  
 **Explanation:**
 ```
-1 â†’ fault (1, -, -, -)
-2 â†’ fault (1, 2, -, -)
-3 â†’ fault (1, 2, 3, -)
-4 â†’ fault (1, 2, 3, 4)
-1 â†’ hit
-2 â†’ hit
-5 â†’ fault (5, 2, 3, 4) replace 1 (used at 7, far)
-1 â†’ hit (waitâ€”1 is already replaced. Let me re-check.)
+1 → fault (1, -, -, -)
+2 → fault (1, 2, -, -)
+3 → fault (1, 2, 3, -)
+4 → fault (1, 2, 3, 4)
+1 → hit
+2 → hit
+5 → fault (5, 2, 3, 4) replace 1 (used at 7, far)
+1 → hit (wait→1 is already replaced. Let me re-check.)
 
 ```
 Let me redo carefully:
 ```
 Ref: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5
 
-1 â†’ fault [1]
-2 â†’ fault [1,2]
-3 â†’ fault [1,2,3]
-4 â†’ fault [1,2,3,4]
-1 â†’ hit
-2 â†’ hit
-5 â†’ fault [5,2,3,4] â€” replace 1 (next use of 1 is at 8, of 2 at 9, of 3 at 10, of 4 at 11; 1 is used farthest in future)
-1 â†’ fault [5,1,3,4] â€” replace 2 (next use of 2 is at 9; of 3 at 10; of 4 at 11; of 5 never again â†’ replace 5)
-2 â†’ fault [5,1,2,4] â€” replace 3 (3 used at 10, 4 at 11, 5 never, so replace 3)
-3 â†’ fault [5,1,2,3] â€” replace 4
-4 â†’ fault [4,1,2,3] â€” replace 5
-5 â†’ hit
+1 → fault [1]
+2 → fault [1,2]
+3 → fault [1,2,3]
+4 → fault [1,2,3,4]
+1 → hit
+2 → hit
+5 → fault [5,2,3,4] → replace 1 (next use of 1 is at 8, of 2 at 9, of 3 at 10, of 4 at 11; 1 is used farthest in future)
+1 → fault [5,1,3,4] → replace 2 (next use of 2 is at 9; of 3 at 10; of 4 at 11; of 5 never again → replace 5)
+2 → fault [5,1,2,4] → replace 3 (3 used at 10, 4 at 11, 5 never, so replace 3)
+3 → fault [5,1,2,3] → replace 4
+4 → fault [4,1,2,3] → replace 5
+5 → hit
 ```
 Total = 8 faults... Let me recheck. Actually this is a well-known reference string. Let me reconsider with 4 frames.
 
@@ -1041,18 +1041,18 @@ Actually the string is: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 4 frames using O
 Ref: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5
 
 Let me trace again:
-1 â†’ fault: [1]
-2 â†’ fault: [1,2]
-3 â†’ fault: [1,2,3]
-4 â†’ fault: [1,2,3,4]
-1 â†’ hit: [1,2,3,4]
-2 â†’ hit: [1,2,3,4]
-5 â†’ fault: [1,2,3,4] â†’ need to evict. Next use: 1 at 8, 2 at 9, 3 at 10, 4 at 11. 4 is farthest. Replace 4. [1,2,3,5]
-1 â†’ hit: [1,2,3,5]
-2 â†’ hit: [1,2,3,5]
-3 â†’ hit: [1,2,3,5]
-4 â†’ fault: Need to evict. Next use: 5 at 12, 1 never, 2 never, 3 never after this. So 1,2,3 all never used again. Pick any. Replace 1. [4,2,3,5]
-5 â†’ hit: [4,2,3,5]
+1 → fault: [1]
+2 → fault: [1,2]
+3 → fault: [1,2,3]
+4 → fault: [1,2,3,4]
+1 → hit: [1,2,3,4]
+2 → hit: [1,2,3,4]
+5 → fault: [1,2,3,4] → need to evict. Next use: 1 at 8, 2 at 9, 3 at 10, 4 at 11. 4 is farthest. Replace 4. [1,2,3,5]
+1 → hit: [1,2,3,5]
+2 → hit: [1,2,3,5]
+3 → hit: [1,2,3,5]
+4 → fault: Need to evict. Next use: 5 at 12, 1 never, 2 never, 3 never after this. So 1,2,3 all never used again. Pick any. Replace 1. [4,2,3,5]
+5 → hit: [4,2,3,5]
 
 Total = 6 faults. âœ“
 
@@ -1133,7 +1133,7 @@ Three processes share a semaphore S initialized to 2. Each process executes P(S)
 Disk with 200 cylinders (0â€“199). Head at 50, moving towards 199. Queue: 82, 170, 43, 140, 24, 16, 190. Total head movement using C-SCAN?
 
 **Answer: 391 cylinders**  
-**Explanation:** C-SCAN goes from 50â†’199 servicing 82, 140, 170, 190. Then wraps to 0 and services 16, 24, 43.  
+**Explanation:** C-SCAN goes from 50→199 servicing 82, 140, 170, 190. Then wraps to 0 and services 16, 24, 43.  
 Total = (199-50) + (199-0) + (43-0) = 149 + 199 + 43 = 391
 
 ---
@@ -1169,7 +1169,7 @@ If P and Q run concurrently, what is the maximum possible value of s after execu
 **Explanation:** P does: P,V,P,V = net 0 on s. Q does: V,P,V,P = net 0 on s.  
 Initial s = 0.  
 Maximum occurs if Q's first V runs first: s = 1. Then Q's P: s = 0. Q's V: s = 1. Q's P: s = 0.  
-If interleaving allows: Q Vâ†’1, P Pâ†’0, Q V(â†’1), P waits... Actually let me trace systematically.
+If interleaving allows: Q V→1, P P→0, Q V(→1), P waits... Actually let me trace systematically.
 
 Let me trace optimal for max:
 Q V: s=1
@@ -1224,7 +1224,7 @@ Which of the following is NOT a function of the loader?
 
 ---
 
-### G35: File Allocation â€” Indexed [GATE 2017, 2M, File Systems]
+### G35: File Allocation → Indexed [GATE 2017, 2M, File Systems]
 
 A file system uses indexed allocation with an index block of 4 KB. Each block pointer is 4 bytes. Maximum file size?
 
@@ -1288,19 +1288,19 @@ RR q=2, order: P1, P2, P3, P4, P1, P2, P1
 
 P1: 0-2 (remaining 8)
 P2: 2-4 (remaining 3)
-P3: 4-6 (remaining 0) â†’ CT=6
-P4: 6-7 (remaining 0) â†’ CT=7
+P3: 4-6 (remaining 0) → CT=6
+P4: 6-7 (remaining 0) → CT=7
 P1: 7-9 (remaining 6)
 P2: 9-10 (remaining 1)... actually q=2 so P2 runs 9-11 but only needs 1.
-P2: 9-10 (remaining 0) â†’ CT=10
+P2: 9-10 (remaining 0) → CT=10
 Wait no... After P4 at 7:
 Ready queue: P1(8), P2(3)
 
 P1: 7-9 (remaining 6)
-P2: 9-11 (remaining 1) â†’ 9-11 but only needs 1 more. So 9-10 â†’ CT=10.
+P2: 9-11 (remaining 1) → 9-11 but only needs 1 more. So 9-10 → CT=10.
 P1: 10-12 (remaining 4)
 P1: 12-14 (remaining 2)
-P1: 14-16 (remaining 0) â†’ CT=16
+P1: 14-16 (remaining 0) → CT=16
 
 Wait that's wrong. Let me be more careful.
 
@@ -1327,11 +1327,11 @@ Avg TAT = (18+12+6+7)/4 = 43/4 = 10.75
 Hmm, let me double-check. After P1 at time 7-9 (remaining 6):
 Queue: P2, P1
 
-Time 9: P2 runs. Remaining: P2=3. q=2 â†’ P2 runs 9-11. Remaining: P2=1. Queue: P1, P2
-Time 11: P1 runs. Remaining: P1=6. q=2 â†’ P1 runs 11-13. Remaining: P1=4. Queue: P2, P1
-Time 13: P2 runs. Remaining: P2=1. q=2 â†’ P2 runs 13-14. CT(P2)=14. Queue: P1
-Time 14: P1 runs. Remaining: P1=4. q=2 â†’ P1 runs 14-16. Remaining: P1=2. Queue: P1
-Time 16: P1 runs. Remaining: P1=2. q=2 â†’ P1 runs 16-18. CT(P1)=18.
+Time 9: P2 runs. Remaining: P2=3. q=2 → P2 runs 9-11. Remaining: P2=1. Queue: P1, P2
+Time 11: P1 runs. Remaining: P1=6. q=2 → P1 runs 11-13. Remaining: P1=4. Queue: P2, P1
+Time 13: P2 runs. Remaining: P2=1. q=2 → P2 runs 13-14. CT(P2)=14. Queue: P1
+Time 14: P1 runs. Remaining: P1=4. q=2 → P1 runs 14-16. Remaining: P1=2. Queue: P1
+Time 16: P1 runs. Remaining: P1=2. q=2 → P1 runs 16-18. CT(P1)=18.
 
 TAT: P1=18, P2=14, P3=6, P4=7.
 Avg = (18+14+6+7)/4 = 45/4 = 11.25
@@ -1405,14 +1405,14 @@ Double buffering is used to:
 ### G43: RAG Cycle [GATE 2020, 2M, Deadlock]
 
 Consider the following resource allocation graph with single-instance resources R1, R2, R3 and processes P1, P2, P3:
-- P1 â†’ R1 (request), R1 â†’ P2 (assignment)
-- P2 â†’ R2 (request), R2 â†’ P3 (assignment)
-- P3 â†’ R3 (request), R3 â†’ P1 (assignment)
+- P1 → R1 (request), R1 → P2 (assignment)
+- P2 → R2 (request), R2 → P3 (assignment)
+- P3 → R3 (request), R3 → P1 (assignment)
 
 Is there a deadlock?
 
 **Answer: Yes**  
-**Explanation:** Cycle: P1 requests R1 (held by P2) â†’ P2 requests R2 (held by P3) â†’ P3 requests R3 (held by P1). Circular wait. With single-instance resources, a cycle â‡’ deadlock.
+**Explanation:** Cycle: P1 requests R1 (held by P2) → P2 requests R2 (held by P3) → P3 requests R3 (held by P1). Circular wait. With single-instance resources, a cycle â‡’ deadlock.
 
 ---
 
@@ -1489,20 +1489,20 @@ In preemptive priority scheduling, a lower number indicates higher priority.
 
 What is the average waiting time?
 
-**Answer: 8.5 ms (approx â€” needs careful Gantt chart)**  
+**Answer: 8.5 ms (approx → needs careful Gantt chart)**  
 
 Trace:
 ```
 t=0: P1 runs (priority 3)
-t=1: P2 arrives (priority 1 > 3) â†’ P1 preempted, P2 runs
+t=1: P2 arrives (priority 1 > 3) → P1 preempted, P2 runs
 t=5: P2 completes. Ready: P1(7), P3(9)
-     P3 priority 2 > P1 priority 3 â†’ P3 runs
+     P3 priority 2 > P1 priority 3 → P3 runs
 t=14: P3 complete. P1 runs.
 t=21: P1 complete. P4 runs.
 t=26: P4 complete.
 
 WT:
-P1: 1 (preempted at t=1) + (14-1)=13 â†’ total wait = 1+13 = 14? No.
+P1: 1 (preempted at t=1) + (14-1)=13 → total wait = 1+13 = 14? No.
 P1: ran 0-1 (1ms), then 14-21 (7ms). Waiting = 1+13 = 14? No, P1 waited from t=1 to t=14 = 13ms, plus didn't wait before. So WT = 13.
 P2: WT = 0 (starts at t=1, arrived at t=1)
 P3: arrived t=2, starts t=5. WT = 3.
@@ -1594,18 +1594,18 @@ Reference string: 0, 2, 1, 6, 4, 0, 1, 0, 2, 1, 2, 6 with 3 frames. Using Optima
 **Answer: 7 faults**  
 **Explanation:**
 ```
-0 â†’ fault [0]
-2 â†’ fault [0,2]
-1 â†’ fault [0,2,1]
-6 â†’ fault [0,2,6] replace 1 (next use at 7; 0 at 6, 2 at 9, 6 never)
-4 â†’ fault [4,2,6] replace 0 (next use at 6; 2 at 9, 4 never, 6 never â†’ tie, pick 0)
-0 â†’ fault [4,2,0] replace 6 (never used again; 0 at 8, 2 at 9, 4 never)
-1 â†’ fault [4,1,0] replace 2 (next use at 9; 4 never, 0 at 8, 1 at 7)
-0 â†’ hit
-2 â†’ fault [4,1,2] replace 0 (next use never)
-1 â†’ hit
-2 â†’ hit
-6 â†’ fault [6,1,2] replace 4
+0 → fault [0]
+2 → fault [0,2]
+1 → fault [0,2,1]
+6 → fault [0,2,6] replace 1 (next use at 7; 0 at 6, 2 at 9, 6 never)
+4 → fault [4,2,6] replace 0 (next use at 6; 2 at 9, 4 never, 6 never → tie, pick 0)
+0 → fault [4,2,0] replace 6 (never used again; 0 at 8, 2 at 9, 4 never)
+1 → fault [4,1,0] replace 2 (next use at 9; 4 never, 0 at 8, 1 at 7)
+0 → hit
+2 → fault [4,1,2] replace 0 (next use never)
+1 → hit
+2 → hit
+6 → fault [6,1,2] replace 4
 ```
 Total = 7 faults.
 
@@ -1625,18 +1625,18 @@ A system has 5 processes and 3 resource types (A: 10, B: 5, C: 7). At time T0:
 
 What is the safe sequence?
 
-**Answer: P1 â†’ P3 â†’ P4 â†’ P0 â†’ P2**  
+**Answer: P1 → P3 → P4 → P0 → P2**  
 **Explanation:** Available = (10,5,7) - (7,2,5) = (3,3,2).  
 Need:
 P0=(7,4,3), P1=(1,2,2), P2=(6,0,0), P3=(0,1,1), P4=(4,3,1)
 
-P1: (1,2,2) â‰¤ (3,3,2) âœ“ â†’ Available = (5,3,2)
-P3: (0,1,1) â‰¤ (5,3,2) âœ“ â†’ Available = (7,4,3)
-P4: (4,3,1) â‰¤ (7,4,3) âœ“ â†’ Available = (7,4,5)
-P0: (7,4,3) â‰¤ (7,4,5) âœ“ â†’ Available = (7,5,5)
-P2: (6,0,0) â‰¤ (7,5,5) âœ“ â†’ Available = (10,5,7)
+P1: (1,2,2) â‰¤ (3,3,2) âœ“ → Available = (5,3,2)
+P3: (0,1,1) â‰¤ (5,3,2) âœ“ → Available = (7,4,3)
+P4: (4,3,1) â‰¤ (7,4,3) âœ“ → Available = (7,4,5)
+P0: (7,4,3) â‰¤ (7,4,5) âœ“ → Available = (7,5,5)
+P2: (6,0,0) â‰¤ (7,5,5) âœ“ → Available = (10,5,7)
 
-Safe: P1 â†’ P3 â†’ P4 â†’ P0 â†’ P2
+Safe: P1 → P3 → P4 → P0 → P2
 
 ---
 
@@ -1662,18 +1662,18 @@ How many times is "OS" printed?
 
 Let me trace:
 P creates C1 via first fork.
-- P (pid > 0): skips the if body, calls fork() â†’ creates C3. P and C3 print.
-- C1 (pid == 0): enters if, calls fork() â†’ creates C2. Then C1 and C2 both call fork(). C1 creates C4, C2 creates C5.
+- P (pid > 0): skips the if body, calls fork() → creates C3. P and C3 print.
+- C1 (pid == 0): enters if, calls fork() → creates C2. Then C1 and C2 both call fork(). C1 creates C4, C2 creates C5.
 
 Wait let me be more careful:
 
 ```
 Process P (original)
-â”œâ”€ fork() â†’ child C1 (if fork() == 0 is true in C1)
-â”‚  in C1: fork() â†’ child C2
-â”‚  then C1 calls fork() â†’ child C3
-â”‚  and C2 calls fork() â†’ child C4
-â”‚  then P also calls fork() (after the if block) â†’ child C5
+â”œâ”€ fork() → child C1 (if fork() == 0 is true in C1)
+â”‚  in C1: fork() → child C2
+â”‚  then C1 calls fork() → child C3
+â”‚  and C2 calls fork() → child C4
+â”‚  then P also calls fork() (after the if block) → child C5
 ```
 
 Actually let me trace step by step:
@@ -1691,14 +1691,14 @@ Line A: P fork()s. Creates C1.
 - In P: fork() returns PID of C1 (non-zero). Skip if body. Go to Line C.
 - In C1: fork() returns 0. Enter if body.
 
-In C1: execute Line B â†’ fork(). Creates C2.
+In C1: execute Line B → fork(). Creates C2.
 - C1 continues. Exits if. Goes to Line C.
 - C2 starts. Exits if. Goes to Line C.
 
 Now at Line C (fork()):
-- P calls fork() â†’ creates C3. P and C3 at printf.
-- C1 calls fork() â†’ creates C4. C1 and C4 at printf.
-- C2 calls fork() â†’ creates C5. C2 and C5 at printf.
+- P calls fork() → creates C3. P and C3 at printf.
+- C1 calls fork() → creates C4. C1 and C4 at printf.
+- C2 calls fork() → creates C5. C2 and C5 at printf.
 
 Total processes at printf: P, C1, C2, C3, C4, C5 = 6 processes.
 "OS" printed 6 times.
@@ -1814,7 +1814,7 @@ Avg = (0 + 12 + 4 + 6)/4 = 22/4 = 5.5
 
 Hmm, let me re-check.
 
-t=0: P1 arrives. Only process â†’ P1 runs for 6.
+t=0: P1 arrives. Only process → P1 runs for 6.
 t=1,2,3: P2(1), P3(2), P4(3) arrive but P1 is running (non-preemptive).
 t=6: P1 completes. Ready queue: P2(8), P3(3), P4(4). SJF: P3 has shortest burst.
 t=6 to t=9: P3 runs. P3 completes at t=9.
@@ -1824,10 +1824,10 @@ t=13: Ready: P2(8). P2 runs.
 t=13 to t=21: P2 runs. P2 completes at t=21.
 
 WT:
-P1: starts at 0, arrival 0 â†’ WT = 0
-P2: starts at 13, arrival 1 â†’ WT = 12
-P3: starts at 6, arrival 2 â†’ WT = 4
-P4: starts at 9, arrival 3 â†’ WT = 6
+P1: starts at 0, arrival 0 → WT = 0
+P2: starts at 13, arrival 1 → WT = 12
+P3: starts at 6, arrival 2 → WT = 4
+P4: starts at 9, arrival 3 → WT = 6
 
 Avg WT = (0+12+4+6)/4 = 22/4 = 5.5
 
@@ -1856,8 +1856,8 @@ Which memory management scheme suffers ONLY from internal fragmentation?
 **(C)** Fixed partitioning  
 **(D)** Dynamic partitioning  
 
-**Answer: (B) â€” Paging**  
-**Explanation:** Paging has internal fragmentation (last page of each process). Segmentation has external fragmentation. Fixed partitioning has internal fragmentation. Dynamic partitioning has external fragmentation. **Trap:** Both paging and fixed partitioning have internal fragmentation â€” but paging is given as the answer because it's the only scheme listed that exclusively has internal fragmentation (no external frag).
+**Answer: (B) → Paging**  
+**Explanation:** Paging has internal fragmentation (last page of each process). Segmentation has external fragmentation. Fixed partitioning has internal fragmentation. Dynamic partitioning has external fragmentation. **Trap:** Both paging and fixed partitioning have internal fragmentation → but paging is given as the answer because it's the only scheme listed that exclusively has internal fragmentation (no external frag).
 
 ---
 
@@ -1874,7 +1874,7 @@ In the memory hierarchy, virtual memory is primarily used for:
 
 ---
 
-### G69: Deadlock â€” Cycle with Multiple Instances [GATE 2025, 2M, Deadlock]
+### G69: Deadlock → Cycle with Multiple Instances [GATE 2025, 2M, Deadlock]
 
 A resource allocation graph has a cycle. If resource types have multiple instances:
 **(A)** Deadlock definitely exists  
@@ -1917,7 +1917,7 @@ In the first readers-writers problem, which of the following is true?
 
 ---
 
-## 12. Quick Revision â€” One-Liners
+## 12. Quick Revision → One-Liners
 
 | Concept | One-Liner |
 |---------|-----------|
@@ -1948,17 +1948,17 @@ In the first readers-writers problem, which of the following is true?
 
 ## 13. GATE Exam Strategy for OS
 
-1. **Memory Management** â€” Always prepare page replacement tracing. Practice till you can trace FIFO/LRU/Optimal in under 30 seconds. GATE typically asks 1 numerical.
+1. **Memory Management** → Always prepare page replacement tracing. Practice till you can trace FIFO/LRU/Optimal in under 30 seconds. GATE typically asks 1 numerical.
 
-2. **CPU Scheduling** â€” Gantt chart practice is essential. Know FCFS, SJF(preemptive and non), RR, Priority. Most scheduling questions are 2-mark numericals.
+2. **CPU Scheduling** → Gantt chart practice is essential. Know FCFS, SJF(preemptive and non), RR, Priority. Most scheduling questions are 2-mark numericals.
 
-3. **Deadlocks** â€” Banker's algorithm is the highest probability GATE question in this topic. Practice safety algorithm until it's automatic.
+3. **Deadlocks** → Banker's algorithm is the highest probability GATE question in this topic. Practice safety algorithm until it's automatic.
 
-4. **Synchronization** â€” Understand why order of P/V operations matters. Semaphore counting questions are common 1-mark questions.
+4. **Synchronization** → Understand why order of P/V operations matters. Semaphore counting questions are common 1-mark questions.
 
-5. **Disk Scheduling** â€” Know which algorithm minimizes which metric. C-SCAN â†’ uniform wait time. SSTF â†’ minimum seek time (but starves).
+5. **Disk Scheduling** → Know which algorithm minimizes which metric. C-SCAN → uniform wait time. SSTF → minimum seek time (but starves).
 
-6. **File Systems** â€” Inode-based calculations (max file size from direct/indirect blocks) appear regularly.
+6. **File Systems** → Inode-based calculations (max file size from direct/indirect blocks) appear regularly.
 
 7. **Common traps:**
    - Non-preemptive vs preemptive scheduling
@@ -1966,8 +1966,8 @@ In the first readers-writers problem, which of the following is true?
    - FIFO â‰  SCAN
    - Belady's anomaly only for FIFO (not Clock, not LRU)
    - Binary semaphore â‰  mutex (semaphore can signal from any thread; mutex must be unlocked by same thread)
-   - In a cycle in RAG: single-instance â†’ deadlock; multi-instance â†’ check further
+   - In a cycle in RAG: single-instance → deadlock; multi-instance → check further
 
 ---
 
-> **Pro Tip:** OS is one of the most scoring subjects in GATE CS. The questions are predictable â€” formulas and algorithms repeat. If you can solve the 70 questions above confidently, you have covered ~90% of what GATE will ask.
+> **Pro Tip:** OS is one of the most scoring subjects in GATE CS. The questions are predictable → formulas and algorithms repeat. If you can solve the 70 questions above confidently, you have covered ~90% of what GATE will ask.

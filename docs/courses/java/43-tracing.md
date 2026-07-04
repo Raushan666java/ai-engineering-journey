@@ -33,7 +33,7 @@ By the end of this chapter, you will be able to:
 - Implement OpenTelemetry SDK with automatic and manual instrumentation
 
 ## Theory
-> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -1670,7 +1670,7 @@ class TracingIntegrationTest {
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â€” it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer</summary>

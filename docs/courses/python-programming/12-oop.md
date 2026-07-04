@@ -65,7 +65,7 @@ class Dog:
     species = "Canis familiaris"  # class attribute
     
     def __init__(self, name: str, age: int):
-        """Constructor â€” initialises instance attributes."""
+        """Constructor → initialises instance attributes."""
         self.name = name
         self.age = age
     
@@ -110,7 +110,7 @@ Counter.count = 10
 print(c2.count)       # 10
 ```
 
-Attribute lookup order: instance â†’ class â†’ parent classes.
+Attribute lookup order: instance → class → parent classes.
 
 ## 12.3 @classmethod and @staticmethod
 
@@ -130,13 +130,13 @@ class Date:
     
     @classmethod
     def from_string(cls, date_str: str) -> "Date":
-        """Alternative constructor â€” parses 'YYYY-MM-DD'."""
+        """Alternative constructor → parses 'YYYY-MM-DD'."""
         year, month, day = map(int, date_str.split("-"))
         return cls(year, month, day)
     
     @classmethod
     def today(cls) -> "Date":
-        """Alternative constructor â€” returns today's date."""
+        """Alternative constructor → returns today's date."""
         from datetime import date
         d = date.today()
         return cls(d.year, d.month, d.day)
@@ -172,12 +172,12 @@ class Circle:
     
     @property
     def radius(self) -> float:
-        """Getter â€” called when accessing circle.radius."""
+        """Getter → called when accessing circle.radius."""
         return self._radius
     
     @radius.setter
     def radius(self, value: float):
-        """Setter â€” called when assigning to circle.radius."""
+        """Setter → called when assigning to circle.radius."""
         if value < 0:
             raise ValueError("Radius cannot be negative")
         self._radius = value
@@ -284,7 +284,7 @@ print(obj2.get_secret())        # 42 (from parent)
 print(obj2._SubClass__secret)   # 99
 ```
 
-Single underscore (`_secret`) is a convention meaning "internal use" â€” no language enforcement.
+Single underscore (`_secret`) is a convention meaning "internal use" → no language enforcement.
 
 ## 12.7 @dataclass
 
@@ -361,7 +361,7 @@ Fields from the parent come first, then child fields.
 > **One-Sentence Takeaway:** undefined
 
 
-A class is callable â€” calling it creates a new instance:
+A class is callable → calling it creates a new instance:
 
 ```python
 class Vector:

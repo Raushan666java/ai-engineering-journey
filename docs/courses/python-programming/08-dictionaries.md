@@ -86,8 +86,8 @@ print(zipped)   # {'x': 10, 'y': 20}
 d = {"a": 1, "b": 2, "c": 3}
 
 # Access
-print(d["a"])            # 1 â€” raises KeyError if missing
-print(d.get("x", 0))     # 0 â€” safe access with default
+print(d["a"])            # 1 → raises KeyError if missing
+print(d.get("x", 0))     # 0 → safe access with default
 print(d.get("a"))        # 1
 
 # Modification
@@ -102,7 +102,7 @@ d.pop("x", None)         # safe pop with default
 last = d.popitem()       # removes and returns (key, value) in LIFO order
 
 # Membership
-print("a" in d)          # True â€” checks keys only
+print("a" in d)          # True → checks keys only
 print(1 in d)            # False
 
 # Length
@@ -170,7 +170,7 @@ print(with_tax)
 ```python
 from collections import defaultdict
 
-# List factory â€” group items
+# List factory → group items
 words = ["apple", "banana", "apricot", "blueberry", "cherry"]
 by_first = defaultdict(list)
 for word in words:
@@ -178,14 +178,14 @@ for word in words:
 print(dict(by_first))
 # {'a': ['apple', 'apricot'], 'b': ['banana', 'blueberry'], 'c': ['cherry']}
 
-# Int factory â€” counting
+# Int factory → counting
 counter = defaultdict(int)
 for c in "hello world":
     counter[c] += 1
 print(dict(counter))
 # {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
 
-# Set factory â€” collecting unique values
+# Set factory → collecting unique values
 adjacency = defaultdict(set)
 edges = [(1, 2), (1, 3), (2, 3), (2, 4)]
 for a, b in edges:
@@ -344,7 +344,7 @@ JSON keys must be strings. Python dict keys are automatically converted:
 
 ```python
 d = {1: "one", True: "true"}
-print(json.dumps(d))   # {"1": "true"}  â€” True is a subclass of int
+print(json.dumps(d))   # {"1": "true"}  → True is a subclass of int
 ```
 
 ## 8.11 Memory and Performance

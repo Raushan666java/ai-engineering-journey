@@ -38,7 +38,7 @@ By the end of this chapter, you will be able to:
 ---
 
 ## 1. Kubernetes Architecture
-> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -85,7 +85,7 @@ By the end of this chapter, you will be able to:
 | **Controller Manager** | Runs controllers (Deployment, ReplicaSet, etc.) |
 | **kubelet** | Node agent that manages Pods |
 | **kube-proxy** | Network proxy for Services |
-| **Pod** | Smallest deployable unit â€” one or more containers |
+| **Pod** | Smallest deployable unit → one or more containers |
 | **Service** | Stable network endpoint for a set of Pods |
 
 ---
@@ -257,7 +257,7 @@ spec:
 ### 2.4 Pod Lifecycle
 
 ```
-Pending â†’ ContainerCreating â†’ Running â†’ Succeeded/Failed
+Pending → ContainerCreating → Running → Succeeded/Failed
                 â”‚                              â”‚
                 â–¼                              â–¼
            Pod scheduled               Container terminated
@@ -340,7 +340,7 @@ spec:
 | **BestEffort** | No requests or limits set |
 
 ```yaml
-# Guaranteed QoS â€” highest priority, never OOMKilled unless exceeds limits
+# Guaranteed QoS → highest priority, never OOMKilled unless exceeds limits
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 resources:
@@ -356,7 +356,7 @@ resources:
 
 ## 3. Services
 
-### 3.1 ClusterIP (Default â€” Internal Only)
+### 3.1 ClusterIP (Default → Internal Only)
 
 ```yaml
 apiVersion: v1
@@ -645,7 +645,7 @@ Immutable ConfigMaps improve performance because the API server doesn't need to 
 ### 4.5 Spring Boot Externalized Config with ConfigMap
 
 ```properties
-# application-k8s.properties â€” mounted from ConfigMap
+# application-k8s.properties → mounted from ConfigMap
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 spring.config.import=configmap:app-config
@@ -1178,8 +1178,8 @@ management:
 
 When configured, Spring Boot exposes:
 
-- `/actuator/health/liveness` â€” returns `{"status": "UP"}` when the application is alive
-- `/actuator/health/readiness` â€” returns `{"status": "UP"}` when the application is ready to accept traffic
+- `/actuator/health/liveness` → returns `{"status": "UP"}` when the application is alive
+- `/actuator/health/readiness` → returns `{"status": "UP"}` when the application is ready to accept traffic
 
 ### 7.5 Customizing Liveness and Readiness State
 
@@ -1685,7 +1685,7 @@ dependencies:
 ```
 
 ```yaml
-# values.yaml â€” controlling conditions
+# values.yaml → controlling conditions
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 postgresql:
@@ -1698,7 +1698,7 @@ redis:
 ```
 
 ```yaml
-# templates/deployment.yaml â€” conditionally include elements
+# templates/deployment.yaml → conditionally include elements
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 {{- if .Values.ingress.enabled }}
@@ -2605,7 +2605,7 @@ spec:
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â€” it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer</summary>
@@ -2614,11 +2614,11 @@ spec:
 
 ## Summary
 
-- **Pods** are the smallest deployable unit â€” use multi-container Pods for sidecars and init containers for setup tasks
+- **Pods** are the smallest deployable unit → use multi-container Pods for sidecars and init containers for setup tasks
 - **Services** provide stable networking (ClusterIP internal, NodePort external, LoadBalancer cloud LB, Ingress for HTTP routing)
-- **ConfigMaps** and **Secrets** externalize configuration â€” prefer volume mounts for auto-refresh
+- **ConfigMaps** and **Secrets** externalize configuration → prefer volume mounts for auto-refresh
 - **Deployments** manage rollouts with configurable strategies (RollingUpdate, Recreate)
-- **Probes** (liveness, readiness, startup) keep applications healthy â€” integrate with Spring Boot Actuator
+- **Probes** (liveness, readiness, startup) keep applications healthy → integrate with Spring Boot Actuator
 - **Helm charts** package Kubernetes manifests with parameterized templates, helpers, hooks, and conditions
 - **Spring Boot on Kubernetes** uses native service discovery (DNS), ConfigMaps for externalized config, and health probes
 - **Auto-scaling** with HPA (replicas) and VPA (resources) adapts to load

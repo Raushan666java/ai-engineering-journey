@@ -597,7 +597,7 @@ Average growth rate = (27,500/200,000) Ã— 100% = 13.75% per year
 
 ---
 
-### Quantitative Aptitude â€” Practice Problems
+### Quantitative Aptitude → Practice Problems
 
 **Practice 1:** Find the greatest 4-digit number divisible by 12, 18, and 27.
 
@@ -648,9 +648,9 @@ Average growth rate = (27,500/200,000) Ã— 100% = 13.75% per year
 **Q45: A is the brother of B. B is the daughter of C. D is the father of C. How is A related to D?**
 
 **Solution:**
-- A is brother of B â†’ A and B are siblings
-- B is daughter of C â†’ C is parent of B (and therefore of A)
-- D is father of C â†’ D is grandparent of A
+- A is brother of B → A and B are siblings
+- B is daughter of C → C is parent of B (and therefore of A)
+- D is father of C → D is grandparent of A
 
 Therefore, A is D's **grandson**.
 
@@ -670,8 +670,8 @@ The man is the woman's **son**.
 **Q47: If P + Q means P is the mother of Q; P - Q means P is the brother of Q; P Ã— Q means P is the father of Q; P Ã· Q means P is the sister of Q. Then how is A related to C in A + B - C?**
 
 **Solution:**
-A + B â†’ A is mother of B
-B - C â†’ B is brother of C
+A + B → A is mother of B
+B - C → B is brother of C
 
 Since B is brother of C, and A is mother of B, A is also mother of C.
 A is the **mother** of C.
@@ -681,10 +681,10 @@ A is the **mother** of C.
 **Q48: A family has 7 members: A, B, C, D, E, F, G. A and B are married. A is the mother of C and D. E is the only son of C. F is the sister of E. G is the father of B. How is G related to F?**
 
 **Solution:**
-- A and B are married, A is mother of C and D â†’ B is father of C and D
-- E is son of C â†’ C is parent of E
-- F is sister of E â†’ F is also child of C
-- G is father of B â†’ G is grandfather of C and D
+- A and B are married, A is mother of C and D → B is father of C and D
+- E is son of C → C is parent of E
+- F is sister of E → F is also child of C
+- G is father of B → G is grandfather of C and D
 
 So G is **great-grandfather** of F (or F is great-grandchild of G).
 
@@ -696,10 +696,10 @@ So G is **great-grandfather** of F (or F is great-grandchild of G).
 
 **Solution:**
 Track the movement:
-- Start (0,0) â†’ East 5 km â†’ (5, 0)
-- Right (South) 4 km â†’ (5, -4)
-- Right (West) 10 km â†’ (-5, -4)
-- Left (South) 4 km â†’ (-5, -8)
+- Start (0,0) → East 5 km → (5, 0)
+- Right (South) 4 km → (5, -4)
+- Right (West) 10 km → (-5, -4)
+- Left (South) 4 km → (-5, -8)
 
 Distance from start = âˆš((-5)Â² + (-8)Â²) = âˆš(25 + 64) = âˆš89 â‰ˆ 9.43 km
 
@@ -714,7 +714,7 @@ C = (5, 10)
 D = (5, 2)
 E = (-2, 2)
 
-E relative to B: 2 m West, 2 m North â†’ **North-West** of B.
+E relative to B: 2 m West, 2 m North → **North-West** of B.
 
 ---
 
@@ -787,7 +787,7 @@ From "B sits immediate right of E": E B are together.
 Let's try positions 1 through 6:
 If A is at position 1:
 - For C _ D: C at 2, D at 4 or C at 3, D at 5 or C at 4, D at 6
-- If C=2, D=4: remaining positions 3,5,6 for B,E,F with E B adjacent â†’ (5,6) or (3,2-no) or (6--)
+- If C=2, D=4: remaining positions 3,5,6 for B,E,F with E B adjacent → (5,6) or (3,2-no) or (6--)
 
 We need E B together and F not adjacent to E.
 Try: C=3, D=5:
@@ -803,10 +803,10 @@ No, this doesn't work.
 
 Let's try C=1, D=3:
 Remaining: 2,4,5,6
-E B adjacent â†’ (4,5) or (5,6)
+E B adjacent → (4,5) or (5,6)
 A at extreme = position 6
 
-If E B at (4,5), remaining 2 goes to F. Check: F adjacent to E? E at 4, F at 2 â†’ not adjacent âœ“
+If E B at (4,5), remaining 2 goes to F. Check: F adjacent to E? E at 4, F at 2 → not adjacent âœ“
 Full: C, F, D, E, B, A
 Check: C second left of D âœ“ (C=1, D=3). B immediate right of E âœ“ (E=4, B=5). A at extreme âœ“. F not adjacent to E âœ“ (F=2, E=4).
 
@@ -826,10 +826,10 @@ Find the arrangement.
 
 **Solution:**
 Let's place B at position 1 (top).
-A is second to right of B â†’ A at position 3.
-G sits between H and A â†’ G is between H and A along the circle.
+A is second to right of B → A at position 3.
+G sits between H and A → G is between H and A along the circle.
 Since A is at 3, G adjacent to A means G at 2 or 4.
-If G at 2, then H must be adjacent to G on the other side â†’ H at 1 (B's position â€” conflict) or H at 3 (A's â€” conflict).
+If G at 2, then H must be adjacent to G on the other side → H at 1 (B's position → conflict) or H at 3 (A's → conflict).
 So G at 4, H at 5.
 
 E opposite F: positions sum to difference of 4 in an 8-position circle.
@@ -846,13 +846,13 @@ H not adjacent to C, so C cannot be at 6 or 4.
 
 Try E at 2, F at 6 (opposite).
 Remaining: 7, 8 for C, D
-C third left of D: Let's try D=7, third left of 7 = 4 (position 4 is G â€” no). D=8, third left of 8 = 5 (H â€” no).
+C third left of D: Let's try D=7, third left of 7 = 4 (position 4 is G → no). D=8, third left of 8 = 5 (H → no).
 
 Try E at 7, F at 3 (but 3 is A).
 E at 8, F at 4 (4 is G).
 E at 6, F at 2.
 Remaining: 7, 8 for C, D
-D at 7, third left of 7 = 4 (G â€” no). D at 8, third left of 8 = 5 (H â€” no).
+D at 7, third left of 7 = 4 (G → no). D at 8, third left of 8 = 5 (H → no).
 
 So E at 1, F at 5 (but 5 is H).
 E at 5, F at 1 (5 is H).
@@ -863,7 +863,7 @@ Place B at position 1 (say top of circle).
 Let's try E at 2, F at 6.
 Positions: 1:B, 2:E, 3:A, 4:G, 5:H, 6:F, remaining: 7, 8 for C, D
 H not adjacent to C: C â‰  4, C â‰  6. C at 7 or 8.
-C third left of D: If C=7, D must be at 2 (no), 7+3=10â†’2 mod 8, no. If C=8, D at 3 (no, A).
+C third left of D: If C=7, D must be at 2 (no), 7+3=10→2 mod 8, no. If C=8, D at 3 (no, A).
 
 Let's try E at 7, F at 3 (no, A).
 
@@ -871,21 +871,21 @@ E at 1, F at 5 (1 is B, 5 is H). No.
 
 Let me try B at a different position. Let B = 1, but now E at 4, F at 8.
 Positions: 1:B, 2:?, 3:A, 4:E, 5:?, 6:?, 7:G(?), 8:F
-G between H and A: A=3. G adjacent to A â†’ G at 2 or 4. 4 is E. So G at 2, H at 1 (no, B). 
+G between H and A: A=3. G adjacent to A → G at 2 or 4. 4 is E. So G at 2, H at 1 (no, B). 
 
 Let's try G=4, H=5 originally but we already explored that. The issue might be with my initial assumption.
 
 Let me restart: Place B at position 8.
-A second right of B â†’ A at position 2.
-G between H and A, adjacent to A â†’ G at 1 or 3.
+A second right of B → A at position 2.
+G between H and A, adjacent to A → G at 1 or 3.
 If G at 3, H at 4.
-E opposite F â†’ positions that differ by 4.
+E opposite F → positions that differ by 4.
 
 Positions: 1:?, 2:A, 3:G, 4:H, 5:?, 6:?, 7:?, 8:B
-H not adjacent to C â†’ C â‰  3, C â‰  5.
+H not adjacent to C → C â‰  3, C â‰  5.
 
 Remaining: 1, 5, 6, 7 for C, D, E, F
-E opposite F: (1,5), (2,6â†’no 2 is A), (3,7), (4,8â†’no)
+E opposite F: (1,5), (2,6→no 2 is A), (3,7), (4,8→no)
 So E,F at (1,5) or (3,7) or (5,1) or (7,3)
 
 Case 1: E=1, F=5. Remaining: 6,7 for C, D.
@@ -934,20 +934,20 @@ Code: 6-12-15-23-5-18
 **Q58: If MANGO is coded as ODQJQ, how is APPLE coded?**
 
 **Solution:**
-M â†’ O (+2)
-A â†’ D (+3)
-N â†’ Q (+3)
-G â†’ J (+3)
-O â†’ Q (+2)
+M → O (+2)
+A → D (+3)
+N → Q (+3)
+G → J (+3)
+O → Q (+2)
 
 Pattern: +2, +3, +3, +3, +2
 
 APPLE:
-A â†’ C (+2)
-P â†’ S (+3)
-P â†’ S (+3)
-L â†’ O (+3)
-E â†’ G (+2)
+A → C (+2)
+P → S (+3)
+P → S (+3)
+L → O (+3)
+E → G (+2)
 
 Code: CSSOG
 
@@ -960,9 +960,9 @@ Code: CSSOG
 259 = "blue looks pretty"
 631 = "sky looks dark"
 
-"blue" appears in first two â†’ common digit in 526 and 259 = 5, 2
-"sky" appears in first and third â†’ common digit in 526 and 631 = 6
-"looks" appears in second and third â†’ common digit in 259 and 631 = 9
+"blue" appears in first two → common digit in 526 and 259 = 5, 2
+"sky" appears in first and third → common digit in 526 and 631 = 6
+"looks" appears in second and third → common digit in 259 and 631 = 9
 
 From 631 = "sky(6) looks(9) dark(?)", the remaining digit 1 = "dark"
 
@@ -1028,7 +1028,7 @@ Which conclusion(s) follow?
 
 ### 2.8 Statement-Assumption
 
-**Q65: Statement: "If you want to succeed in the competitive exam, join ABC Coaching Center." â€” An advertisement.**
+**Q65: Statement: "If you want to succeed in the competitive exam, join ABC Coaching Center." → An advertisement.**
 
 **Assumptions:**
 1. ABC Coaching Center provides good coaching.
@@ -1038,7 +1038,7 @@ Which are valid assumptions?
 
 **Answer:**
 - Assumption 1: Implicit. The advertisement implies ABC provides quality coaching that leads to success.
-- Assumption 2: Implicit. The advertisement targets students who want to succeed â€” otherwise the message is irrelevant.
+- Assumption 2: Implicit. The advertisement targets students who want to succeed → otherwise the message is irrelevant.
 
 **Both are valid assumptions.**
 
@@ -1058,7 +1058,7 @@ Which are valid assumptions?
 
 ---
 
-### Logical Reasoning â€” Practice Problems
+### Logical Reasoning → Practice Problems
 
 **Practice 11:** A is the father of B. B is the sister of C. D is the mother of C. E is the brother of D. How is A related to E?
 
@@ -1078,7 +1078,7 @@ Which are valid assumptions?
 
 **Practice 15:** Seven friends A-G sit in a row. A sits at one end. B is third to the right of A. C sits second to the left of D. E sits immediately right of D. F is not at any extreme. Find arrangement.
 
-**Answer:** A, F, C, B, D, E, G (or A, C, B, D, E, F, G depending on constraints â€” verify all conditions)
+**Answer:** A, F, C, B, D, E, G (or A, C, B, D, E, F, G depending on constraints → verify all conditions)
 
 **Practice 16:** If GOOD is coded as HPPE, how is TREE coded?
 
@@ -1088,7 +1088,7 @@ Which are valid assumptions?
 
 ## Section 3: Verbal Ability
 
-### 3.1 Vocabulary â€” Synonyms and Antonyms
+### 3.1 Vocabulary → Synonyms and Antonyms
 
 **Q67: Find the synonym of "UBIQUITOUS".**
 
@@ -1175,7 +1175,7 @@ Which are valid assumptions?
 
 ---
 
-### 3.3 Grammar â€” Subject-Verb Agreement
+### 3.3 Grammar → Subject-Verb Agreement
 
 **Q76: Choose the correct option: "Neither the teacher nor the students ___ (is/are) present."**
 
@@ -1211,7 +1211,7 @@ If the members act individually: "The committee have disagreed on several points
 
 ---
 
-### 3.4 Grammar â€” Tenses
+### 3.4 Grammar → Tenses
 
 **Q80: "She ___ (work) here since 2015." Fill with correct tense.**
 
@@ -1237,7 +1237,7 @@ If the members act individually: "The committee have disagreed on several points
 
 ---
 
-### 3.5 Grammar â€” Articles
+### 3.5 Grammar → Articles
 
 **Q83: Fill the blanks: "___ elephant is ___ largest land animal."**
 
@@ -1259,7 +1259,7 @@ If the members act individually: "The committee have disagreed on several points
 
 **Answer:** an
 
-**Rule:** "Honest" begins with a silent 'h' â€” the sound is /É’nÉªst/ (vowel sound), so use "an".
+**Rule:** "Honest" begins with a silent 'h' → the sound is /É’nÉªst/ (vowel sound), so use "an".
 
 ---
 
@@ -1404,25 +1404,25 @@ D continues with another example (mass conservation).
 
 ---
 
-### Verbal Ability â€” Practice Problems
+### Verbal Ability → Practice Problems
 
-**Practice 17:** Synonym of "PERFIDIOUS" â€” Answer: Treacherous
+**Practice 17:** Synonym of "PERFIDIOUS" → Answer: Treacherous
 
-**Practice 18:** Antonym of "BENEVOLENT" â€” Answer: Malevolent
+**Practice 18:** Antonym of "BENEVOLENT" → Answer: Malevolent
 
-**Practice 19:** "Neither the manager nor his assistants ___ (is/are) coming to the meeting." â€” Answer: are
+**Practice 19:** "Neither the manager nor his assistants ___ (is/are) coming to the meeting." → Answer: are
 
-**Practice 20:** One-word for "A government by the wealthy" â€” Answer: Plutocracy
+**Practice 20:** One-word for "A government by the wealthy" → Answer: Plutocracy
 
-**Practice 21:** "She would have passed if she ___ (study) harder." â€” Answer: had studied
+**Practice 21:** "She would have passed if she ___ (study) harder." → Answer: had studied
 
-**Practice 22:** The politician's speech was full of ___ that sounded meaningful but said nothing. â€” Answer: platitudes / rhetoric
+**Practice 22:** The politician's speech was full of ___ that sounded meaningful but said nothing. → Answer: platitudes / rhetoric
 
-**Practice 23:** Arrange: A. This creates a food safety risk. B. Consuming expired products can cause illness. C. Many consumers ignore expiration dates on packaged foods. D. Manufacturers print dates to ensure quality and safety. â€” Answer: C - D - A - B
+**Practice 23:** Arrange: A. This creates a food safety risk. B. Consuming expired products can cause illness. C. Many consumers ignore expiration dates on packaged foods. D. Manufacturers print dates to ensure quality and safety. → Answer: C - D - A - B
 
-**Practice 24:** Antonym of "AMELIORATE" â€” Answer: Worsen / Aggravate
+**Practice 24:** Antonym of "AMELIORATE" → Answer: Worsen / Aggravate
 
-**Practice 25:** Choose correctly: "The data ___ (is/are) being analyzed by the research team." â€” Answer: are (data is plural of datum)
+**Practice 25:** Choose correctly: "The data ___ (is/are) being analyzed by the research team." → Answer: are (data is plural of datum)
 
 ---
 
@@ -1486,7 +1486,7 @@ Total triangles = 4 + 2 + 1 = 7
 **Q100: A cube is painted on all faces and cut into 125 smaller cubes of equal size. How many smaller cubes have exactly 2 faces painted?**
 
 **Solution:**
-The cube is cut into 125 cubes â†’ 5 Ã— 5 Ã— 5 grid (n = 5).
+The cube is cut into 125 cubes → 5 Ã— 5 Ã— 5 grid (n = 5).
 
 Cubes with exactly 2 faces painted = cubes on edges excluding corners.
 Number of edges = 12
@@ -1548,16 +1548,16 @@ Mirror time = 12:00 - 3:45 = 8:15
 
 **Answer:** When a mirror is placed on the right, the image appears laterally inverted.
 
-G â†’ flipped horizontally â†’ (looks like reverse C)
-A â†’ A (symmetrical vertically)
-T â†’ T (flipped horizontally â€” T stays same)
-E â†’ (flipped horizontally â€” reverse E)
+G → flipped horizontally → (looks like reverse C)
+A → A (symmetrical vertically)
+T → T (flipped horizontally → T stays same)
+E → (flipped horizontally → reverse E)
 
 The mirror image would read as: ðž”TÎ›â…ƒ (the actual reversed visual representation).
 
 For exam purposes: The letters that look the same in a vertical mirror (left-right inversion) are: A, H, I, M, O, T, U, V, W, X, Y. Others are reversed.
 
-So GATE â†’ ðž”TÎ›â…ƒ (reading right to left from original).
+So GATE → ðž”TÎ›â…ƒ (reading right to left from original).
 
 ---
 
@@ -1582,7 +1582,7 @@ The number of holes = 2^(number of folds) when the folds are simple halves and t
 
 Where will the holes appear?
 
-**Answer:** After step 1, the paper has 2 layers. After step 2, it has 4 layers. Punching at the center of the quad-folded paper will create 4 symmetrical holes when unfolded â€” one in each quadrant. If the original paper has dimensions L Ã— W, the holes will be at (L/4, W/4), (3L/4, W/4), (L/4, 3W/4), (3L/4, 3W/4).
+**Answer:** After step 1, the paper has 2 layers. After step 2, it has 4 layers. Punching at the center of the quad-folded paper will create 4 symmetrical holes when unfolded → one in each quadrant. If the original paper has dimensions L Ã— W, the holes will be at (L/4, W/4), (3L/4, W/4), (L/4, 3W/4), (3L/4, 3W/4).
 
 ---
 
@@ -1622,7 +1622,7 @@ Or: n(n+1): 1Ã—2, 2Ã—3, 3Ã—4, 4Ã—5, 5Ã—6, 6Ã—7 = 42
 
 ---
 
-### Spatial & Analytical Reasoning â€” Practice Problems
+### Spatial & Analytical Reasoning → Practice Problems
 
 **Practice 26:** A 3 Ã— 3 Ã— 3 cube is painted red and cut into unit cubes. How many cubes have exactly 1 face painted?
 
@@ -1646,7 +1646,7 @@ Or: n(n+1): 1Ã—2, 2Ã—3, 3Ã—4, 4Ã—5, 5Ã—6, 6Ã—7 = 42
 
 ---
 
-## Answer Key â€” All Practice Problems
+## Answer Key → All Practice Problems
 
 | # | Answer | Topic |
 |---|--------|-------|
@@ -1731,7 +1731,7 @@ Or: n(n+1): 1Ã—2, 2Ã—3, 3Ã—4, 4Ã—5, 5Ã—6, 6Ã—7 = 42
 
 ---
 
-*This chapter covers the complete General Aptitude syllabus for GATE CS. Practice all problem types, time yourself on mock tests, and revisit weak areas. General Aptitude is the easiest section to score full marks â€” it requires consistent practice rather than advanced concepts.*
+*This chapter covers the complete General Aptitude syllabus for GATE CS. Practice all problem types, time yourself on mock tests, and revisit weak areas. General Aptitude is the easiest section to score full marks → it requires consistent practice rather than advanced concepts.*
 
 ---
 
@@ -1739,9 +1739,9 @@ Or: n(n+1): 1Ã—2, 2Ã—3, 3Ã—4, 4Ã—5, 5Ã—6, 6Ã—7 = 42
 
 ### Quantitative Aptitude (20 Problems)
 
-**Cross-Reference:** R.S. Aggarwal â€” Quantitative Aptitude, Chapters: Time & Work (Ch. 15), Probability (Ch. 31), Profit & Loss (Ch. 10), Number Systems (Ch. 1-2), Pipes & Cisterns (Ch. 16), Permutations (Ch. 30), Ratio (Ch. 8), Averages (Ch. 6), Interest (Ch. 11-12), Speed/Distance (Ch. 17), Mixture (Ch. 20), Set Theory (Ch. 13), Data Interpretation (Ch. 35-38). Also see Arun Sharma â€” Quantitative Aptitude, Chapters 7-14.
+**Cross-Reference:** R.S. Aggarwal → Quantitative Aptitude, Chapters: Time & Work (Ch. 15), Probability (Ch. 31), Profit & Loss (Ch. 10), Number Systems (Ch. 1-2), Pipes & Cisterns (Ch. 16), Permutations (Ch. 30), Ratio (Ch. 8), Averages (Ch. 6), Interest (Ch. 11-12), Speed/Distance (Ch. 17), Mixture (Ch. 20), Set Theory (Ch. 13), Data Interpretation (Ch. 35-38). Also see Arun Sharma → Quantitative Aptitude, Chapters 7-14.
 
-### PYQ-1 (GATE 2019) â€” Time & Work
+### PYQ-1 (GATE 2019) → Time & Work
 
 A can complete a work in 12 days, B in 18 days. They work together for 4 days, then A leaves. How many more days will B take to finish the remaining work?
 
@@ -1759,7 +1759,7 @@ Time for B alone = (4/9) / (1/18) = (4/9) Ã— 18 = 8 days
 
 **Answer: 8 days**
 
-### PYQ-2 (GATE 2020) â€” Probability
+### PYQ-2 (GATE 2020) → Probability
 
 A bag contains 4 red, 5 green, and 6 blue balls. Three balls are drawn at random. What is the probability that all three are of different colors?
 
@@ -1775,7 +1775,7 @@ Probability = 120/455 = 24/91
 
 **Answer: 24/91**
 
-### PYQ-3 (GATE 2021) â€” Profit & Loss
+### PYQ-3 (GATE 2021) → Profit & Loss
 
 A shopkeeper marks goods 30% above the cost price and gives a 10% discount on the marked price. Find his profit percentage.
 
@@ -1795,7 +1795,7 @@ Profit % = (17/100) Ã— 100% = 17%
 
 **Answer: 17%**
 
-### PYQ-4 (GATE 2022) â€” Number Systems
+### PYQ-4 (GATE 2022) → Number Systems
 
 Find the remainder when 2â¸â° is divided by 17.
 
@@ -1809,7 +1809,7 @@ By Fermat's Little Theorem: a^(p-1) â‰¡ 1 (mod p) when p is prime and gcd(a,
 
 **Answer: 1**
 
-### PYQ-5 (GATE 2019) â€” Pipes & Cisterns
+### PYQ-5 (GATE 2019) → Pipes & Cisterns
 
 Two pipes A and B fill a tank in 15 and 20 hours respectively. A third pipe C empties the tank in 30 hours. All three are opened together for 5 hours, then C is closed. How many more hours are needed to fill the tank completely?
 
@@ -1833,7 +1833,7 @@ Time needed = (7/12) / (7/60) = (7/12) Ã— (60/7) = 5 hours
 
 **Answer: 5 hours**
 
-### PYQ-6 (GATE 2023) â€” Permutations
+### PYQ-6 (GATE 2023) → Permutations
 
 How many 4-digit numbers greater than 5000 can be formed using the digits 3, 5, 6, 7, 8 without repetition?
 
@@ -1849,7 +1849,7 @@ Total = 4 Ã— 24 = 96
 
 **Answer: 96**
 
-### PYQ-7 (GATE 2024) â€” Ratio & Proportion
+### PYQ-7 (GATE 2024) → Ratio & Proportion
 
 The ratio of the ages of A and B is 3:5. After 6 years, the ratio becomes 2:3. Find A's present age.
 
@@ -1869,7 +1869,7 @@ A's present age = 3 Ã— 6 = 18 years
 
 **Answer: 18 years**
 
-### PYQ-8 (GATE 2020) â€” Averages
+### PYQ-8 (GATE 2020) → Averages
 
 The average weight of 8 people increases by 2.5 kg when a new person replaces one weighing 65 kg. Find the weight of the new person.
 
@@ -1883,7 +1883,7 @@ New person's weight = 65 + 20 = 85 kg
 
 **Answer: 85 kg**
 
-### PYQ-9 (GATE 2022) â€” Simple Interest
+### PYQ-9 (GATE 2022) → Simple Interest
 
 A sum of money doubles itself in 5 years at simple interest. In how many years will it become 4 times at the same rate?
 
@@ -1891,7 +1891,7 @@ A sum of money doubles itself in 5 years at simple interest. In how many years w
 
 For doubling: SI = Principal = P
 
-P = (P Ã— R Ã— 5) / 100 â†’ R = 20%
+P = (P Ã— R Ã— 5) / 100 → R = 20%
 
 For quadrupling: Amount = 4P, so SI = 3P
 
@@ -1901,7 +1901,7 @@ T = (3P Ã— 100) / (P Ã— 20) = 15 years
 
 **Answer: 15 years**
 
-### PYQ-10 (GATE 2021) â€” Time, Speed & Distance
+### PYQ-10 (GATE 2021) → Time, Speed & Distance
 
 A train passes a standing man in 12 seconds and a 240-meter-long platform in 36 seconds. Find the length and speed of the train.
 
@@ -1909,7 +1909,7 @@ A train passes a standing man in 12 seconds and a 240-meter-long platform in 36 
 
 Let length = L meters, speed = v m/s
 
-Passing man: L/v = 12 â†’ L = 12v
+Passing man: L/v = 12 → L = 12v
 
 Passing platform: (L + 240) / v = 36
 
@@ -1927,7 +1927,7 @@ L = 12 Ã— 10 = 120 m
 
 **Answer: Length = 120 m, Speed = 36 km/h**
 
-### PYQ-11 (GATE 2023) â€” Mixtures & Alligations
+### PYQ-11 (GATE 2023) → Mixtures & Alligations
 
 A 20-liter mixture contains milk and water in the ratio 3:2. How much milk should be added to make the ratio 4:1?
 
@@ -1947,7 +1947,7 @@ x = 20 L
 
 **Answer: 20 liters**
 
-### PYQ-12 (GATE 2019) â€” Set Theory
+### PYQ-12 (GATE 2019) → Set Theory
 
 In a class, 60% of students like Cricket, 50% like Football, and 30% like both. What percentage of students like at least one sport?
 
@@ -1959,7 +1959,7 @@ n(C âˆª F) = n(C) + n(F) - n(C âˆ© F)
 
 **Answer: 80%**
 
-### PYQ-13 (GATE 2024) â€” Probability
+### PYQ-13 (GATE 2024) → Probability
 
 A fair die is rolled twice. What is the probability that the sum of the two numbers obtained is divisible by 3?
 
@@ -1969,13 +1969,13 @@ Total outcomes = 6 Ã— 6 = 36
 
 Sums divisible by 3: 3, 6, 9, 12
 
-Sum=3: (1,2), (2,1) â†’ 2 ways
+Sum=3: (1,2), (2,1) → 2 ways
 
-Sum=6: (1,5), (2,4), (3,3), (4,2), (5,1) â†’ 5 ways
+Sum=6: (1,5), (2,4), (3,3), (4,2), (5,1) → 5 ways
 
-Sum=9: (3,6), (4,5), (5,4), (6,3) â†’ 4 ways
+Sum=9: (3,6), (4,5), (5,4), (6,3) → 4 ways
 
-Sum=12: (6,6) â†’ 1 way
+Sum=12: (6,6) → 1 way
 
 Total favorable = 2 + 5 + 4 + 1 = 12
 
@@ -1983,7 +1983,7 @@ Probability = 12/36 = 1/3
 
 **Answer: 1/3**
 
-### PYQ-14 (GATE 2025) â€” Percentages
+### PYQ-14 (GATE 2025) → Percentages
 
 In an examination, a student scores 35% of the maximum marks and fails by 15 marks. Another student scores 45% and gets 25 marks more than the passing marks. Find the maximum marks and the passing marks.
 
@@ -1995,13 +1995,13 @@ Student 1: 0.35M = P - 15
 
 Student 2: 0.45M = P + 25
 
-Subtracting: 0.10M = 40 â†’ M = 400
+Subtracting: 0.10M = 40 → M = 400
 
-From first equation: 0.35 Ã— 400 = P - 15 â†’ 140 = P - 15 â†’ P = 155
+From first equation: 0.35 Ã— 400 = P - 15 → 140 = P - 15 → P = 155
 
 **Answer: Maximum marks = 400, Passing marks = 155**
 
-### PYQ-15 (GATE 2025) â€” Time & Work
+### PYQ-15 (GATE 2025) → Time & Work
 
 20 men can complete a work in 15 days. After working for 5 days, 5 more men join them. How many total days are needed to complete the work?
 
@@ -2021,7 +2021,7 @@ Total days = 5 + 8 = 13 days
 
 **Answer: 13 days**
 
-### PYQ-16 (GATE 2020) â€” Number Systems
+### PYQ-16 (GATE 2020) → Number Systems
 
 What is the smallest 4-digit number that is divisible by 6, 8, and 15?
 
@@ -2045,7 +2045,7 @@ Next multiple: 9 Ã— 120 = 1080
 
 **Answer: 1080**
 
-### PYQ-17 (GATE 2021) â€” Permutations
+### PYQ-17 (GATE 2021) → Permutations
 
 In how many ways can the letters of the word "MISSISSIPPI" be arranged?
 
@@ -2065,7 +2065,7 @@ Number of distinct arrangements = 11! / (4! Ã— 4! Ã— 2! Ã— 1!)
 
 **Answer: 34650**
 
-### PYQ-18 (GATE 2023) â€” Data Interpretation
+### PYQ-18 (GATE 2023) → Data Interpretation
 
 A company's revenue (in â‚¹crore) for 2019-2022: 2019=200, 2020=250, 2021=300, 2022=360. Find the Compound Annual Growth Rate (CAGR) from 2019 to 2022.
 
@@ -2083,7 +2083,7 @@ CAGR = (End Value / Start Value)^(1/n) - 1
 
 **Answer: 21.64%**
 
-### PYQ-19 (GATE 2024) â€” Averages
+### PYQ-19 (GATE 2024) → Averages
 
 The average of 5 numbers is 24. If one number is excluded, the average of the remaining 4 numbers becomes 20. Find the excluded number.
 
@@ -2097,7 +2097,7 @@ Excluded number = 120 - 80 = 40
 
 **Answer: 40**
 
-### PYQ-20 (GATE 2025) â€” Profit & Loss
+### PYQ-20 (GATE 2025) → Profit & Loss
 
 A fruit vendor sells oranges at â‚¹120 per dozen and gains 20%. How many oranges did he buy for â‚¹100?
 
@@ -2115,24 +2115,24 @@ For â‚¹100: Number of oranges = 100 / (25/3) = 100 Ã— 3/25 = 12
 
 ### Logical Reasoning (15 Problems)
 
-**Cross-Reference:** R.S. Aggarwal â€” Logical Reasoning, Chapters: Blood Relations (Ch. 4), Direction Sense (Ch. 5), Syllogisms (Ch. 6), Coding-Decoding (Ch. 2), Seating Arrangements (Ch. 8-9), Analogies (Ch. 1). See also Arun Sharma â€” Logical Reasoning, Chapters 1-6.
+**Cross-Reference:** R.S. Aggarwal → Logical Reasoning, Chapters: Blood Relations (Ch. 4), Direction Sense (Ch. 5), Syllogisms (Ch. 6), Coding-Decoding (Ch. 2), Seating Arrangements (Ch. 8-9), Analogies (Ch. 1). See also Arun Sharma → Logical Reasoning, Chapters 1-6.
 
-### PYQ-21 (GATE 2019) â€” Blood Relations
+### PYQ-21 (GATE 2019) → Blood Relations
 
 A is the mother of B. B is the sister of C. D is the son of C. E is the brother of D. How is A related to E?
 
 **Solution:**
 
-- A is mother of B â†’ A is parent
-- B is sister of C â†’ C is also child of A (since B and C are siblings)
-- D is son of C â†’ D is grandchild of A
-- E is brother of D â†’ E is also child of C â†’ E is also grandchild of A
+- A is mother of B → A is parent
+- B is sister of C → C is also child of A (since B and C are siblings)
+- D is son of C → D is grandchild of A
+- E is brother of D → E is also child of C → E is also grandchild of A
 
 A is E's **grandmother**.
 
 **Answer: Grandmother**
 
-### PYQ-22 (GATE 2020) â€” Direction Sense
+### PYQ-22 (GATE 2020) → Direction Sense
 
 A person walks 10 m towards East, then turns right and walks 15 m, then turns left and walks 20 m, then turns left and walks 15 m. How far is he from the starting point and in which direction?
 
@@ -2140,13 +2140,13 @@ A person walks 10 m towards East, then turns right and walks 15 m, then turns le
 
 Using coordinates with start at (0,0):
 
-East 10 â†’ (10, 0)
+East 10 → (10, 0)
 
-Right (South) 15 â†’ (10, -15)
+Right (South) 15 → (10, -15)
 
-Left (East) 20 â†’ (30, -15)
+Left (East) 20 → (30, -15)
 
-Left (North) 15 â†’ (30, 0)
+Left (North) 15 → (30, 0)
 
 Distance = âˆš((30)Â² + 0Â²) = 30 m
 
@@ -2154,7 +2154,7 @@ Direction: East
 
 **Answer: 30 m towards East**
 
-### PYQ-23 (GATE 2021) â€” Syllogisms
+### PYQ-23 (GATE 2021) → Syllogisms
 
 Statements:
 1. All squares are rectangles.
@@ -2176,7 +2176,7 @@ II. Some polygons are squares: TRUE (since all squares are polygons, there exist
 
 **Answer: Both I and II follow**
 
-### PYQ-24 (GATE 2022) â€” Coding-Decoding
+### PYQ-24 (GATE 2022) → Coding-Decoding
 
 In a certain code, "CRICKET" is coded as "DSJDLFU". How is "FOOTBALL" coded?
 
@@ -2184,29 +2184,29 @@ In a certain code, "CRICKET" is coded as "DSJDLFU". How is "FOOTBALL" coded?
 
 Analyze the pattern:
 
-C â†’ D (+1)
+C → D (+1)
 
-R â†’ S (+1)
+R → S (+1)
 
-I â†’ J (+1)
+I → J (+1)
 
-C â†’ D (+1)
+C → D (+1)
 
-K â†’ L (+1)
+K → L (+1)
 
-E â†’ F (+1)
+E → F (+1)
 
-T â†’ U (+1)
+T → U (+1)
 
 Each letter is replaced by the next letter in the alphabet (+1).
 
 FOOTBALL:
 
-F â†’ G, O â†’ P, O â†’ P, T â†’ U, B â†’ C, A â†’ B, L â†’ M, L â†’ M
+F → G, O → P, O → P, T → U, B → C, A → B, L → M, L → M
 
 **Answer: GPPUCBCM**
 
-### PYQ-25 (GATE 2023) â€” Seating Arrangement (Linear)
+### PYQ-25 (GATE 2023) → Seating Arrangement (Linear)
 
 Five friends P, Q, R, S, T sit in a row facing North. Q sits to the immediate left of R. S sits between P and T. T sits at one of the extreme ends. P is not adjacent to Q. Find the arrangement.
 
@@ -2214,29 +2214,29 @@ Five friends P, Q, R, S, T sit in a row facing North. Q sits to the immediate le
 
 T at extreme end. Let's try T at position 1 (leftmost).
 
-S sits between P and T â†’ with T at 1, S must be at 2, and P at 3.
+S sits between P and T → with T at 1, S must be at 2, and P at 3.
 
 Remaining positions: 4, 5 for Q and R.
 
-Q sits immediate left of R â†’ Q at 4, R at 5.
+Q sits immediate left of R → Q at 4, R at 5.
 
-Check: P not adjacent to Q? P at 3, Q at 4 â†’ adjacent! This violates the condition.
+Check: P not adjacent to Q? P at 3, Q at 4 → adjacent! This violates the condition.
 
 Now try T at position 5 (rightmost).
 
-S between P and T â†’ with T at 5, S at 4, P at 3.
+S between P and T → with T at 5, S at 4, P at 3.
 
 Remaining: 1, 2 for Q and R.
 
-Q immediate left of R â†’ Q at 1, R at 2.
+Q immediate left of R → Q at 1, R at 2.
 
-Check: P not adjacent to Q? P at 3, Q at 1 â†’ not adjacent âœ“
+Check: P not adjacent to Q? P at 3, Q at 1 → not adjacent âœ“
 
 Final arrangement (left to right): Q, R, P, S, T
 
 **Answer: Q, R, P, S, T**
 
-### PYQ-26 (GATE 2019) â€” Statement-Conclusion
+### PYQ-26 (GATE 2019) → Statement-Conclusion
 
 Statement: Some birds are flying creatures. All flying creatures have wings.
 
@@ -2254,7 +2254,7 @@ II. Some flying creatures are birds: Follows. Since some birds are flying creatu
 
 **Answer: Only II follows**
 
-### PYQ-27 (GATE 2024) â€” Analogies
+### PYQ-27 (GATE 2024) → Analogies
 
 Select the pair that has the same relationship as "Gravity : Pull"
 
@@ -2272,17 +2272,17 @@ D) Heat : Cold
 
 Gravity causes a pulling effect. The relationship is "phenomenon : its primary effect."
 
-A) Magnetism causes attraction â†’ matches
+A) Magnetism causes attraction → matches
 
-B) Friction opposes sliding, doesn't cause it â†’ opposite
+B) Friction opposes sliding, doesn't cause it → opposite
 
-C) Light is opposite of dark â†’ antonym
+C) Light is opposite of dark → antonym
 
-D) Heat is opposite of cold â†’ antonym
+D) Heat is opposite of cold → antonym
 
 **Answer: A) Magnetism : Attract**
 
-### PYQ-28 (GATE 2021) â€” Direction Sense
+### PYQ-28 (GATE 2021) → Direction Sense
 
 A man starts from his house and walks 6 km towards South. He turns right and walks 4 km. Then he turns right again and walks 12 km. Then he turns left and walks 4 km. How far is he from his house?
 
@@ -2290,19 +2290,19 @@ A man starts from his house and walks 6 km towards South. He turns right and wal
 
 House at (0, 0). South is negative y.
 
-South 6 â†’ (0, -6)
+South 6 → (0, -6)
 
-Right (West) 4 â†’ (-4, -6)
+Right (West) 4 → (-4, -6)
 
-Right (North) 12 â†’ (-4, 6)
+Right (North) 12 → (-4, 6)
 
-Left (West) 4 â†’ (-8, 6)
+Left (West) 4 → (-8, 6)
 
 Distance from (0,0): âˆš((-8)Â² + 6Â²) = âˆš(64 + 36) = âˆš100 = 10 km
 
 **Answer: 10 km**
 
-### PYQ-29 (GATE 2025) â€” Blood Relations
+### PYQ-29 (GATE 2025) → Blood Relations
 
 A + B means A is the father of B. A - B means A is the mother of B. A Ã— B means A is the brother of B. A Ã· B means A is the sister of B.
 
@@ -2310,11 +2310,11 @@ In the expression P + Q Ã— R - S, how is P related to S?
 
 **Solution:**
 
-P + Q â†’ P is father of Q
+P + Q → P is father of Q
 
-Q Ã— R â†’ Q is brother of R (so Q and R are siblings)
+Q Ã— R → Q is brother of R (so Q and R are siblings)
 
-R - S â†’ R is mother of S
+R - S → R is mother of S
 
 Therefore: P is father of Q, Q is brother of R, R is mother of S.
 
@@ -2322,7 +2322,7 @@ P is grandparent of S (specifically, P is S's **maternal grandfather**).
 
 **Answer: Maternal grandfather**
 
-### PYQ-30 (GATE 2020) â€” Seating Arrangement (Circular)
+### PYQ-30 (GATE 2020) → Seating Arrangement (Circular)
 
 Six persons A, B, C, D, E, F sit around a circular table facing the center. A sits second to the right of B. C sits between D and E. F is not adjacent to B. If D is opposite to A, find the arrangement (clockwise starting from A).
 
@@ -2330,11 +2330,11 @@ Six persons A, B, C, D, E, F sit around a circular table facing the center. A si
 
 Place A at position 1.
 
-D opposite A â†’ D at position 4 (in a 6-person circle).
+D opposite A → D at position 4 (in a 6-person circle).
 
 A second right of B: Counting 2 positions clockwise from B gives A. So B is at position 5 (2 steps counterclockwise from A, or A is 2 steps clockwise from B so B is 2 steps counterclockwise from A = position 5).
 
-F not adjacent to B â†’ F â‰  4, 6. So F at 2 or 3.
+F not adjacent to B → F â‰  4, 6. So F at 2 or 3.
 
 C between D and E: D at 4. Adjacent to D are positions 3 and 5. Position 5 is B. So C and E must be at 3 and 5.
 
@@ -2346,7 +2346,7 @@ If C at 3, E at 2 or 4. 4 is D. So E at 2. C at 3, E at 2.
 
 Remaining: F at 6.
 
-Check: F not adjacent to B? B at 5, F at 6 â†’ adjacent! Violation.
+Check: F not adjacent to B? B at 5, F at 6 → adjacent! Violation.
 
 Try: C at 5 (but 5 is B).
 
@@ -2366,7 +2366,7 @@ If C at 3, E at 2:
 
 Positions: 1:A, 2:E, 3:C, 4:D, 5:B, 6:F
 
-F not adjacent to B: B at 5, adjacent are 4(D) and 6(F). F at 6 â†’ adjacent! âœ—
+F not adjacent to B: B at 5, adjacent are 4(D) and 6(F). F at 6 → adjacent! âœ—
 
 If C at 5 (but 5 is B).
 
@@ -2386,7 +2386,7 @@ C at 5, then E should be at 6 or 4. D is at 6. So E at 4.
 
 Positions: 1:B, 2:?, 3:A, 4:E, 5:C, 6:D
 
-F not adjacent to B â†’ F â‰  2, 6 (D).
+F not adjacent to B → F â‰  2, 6 (D).
 
 F at position 2.
 
@@ -2394,7 +2394,7 @@ Clockwise from A (position 3): A, E(4), C(5), D(6), B(1), F(2)
 
 **Answer: A, E, C, D, B, F (clockwise)**
 
-### PYQ-31 (GATE 2024) â€” Coding-Decoding
+### PYQ-31 (GATE 2024) → Coding-Decoding
 
 If 682 = "gate exam ready", 285 = "exam is tough", 861 = "gate is open", find the code for "open".
 
@@ -2406,11 +2406,11 @@ If 682 = "gate exam ready", 285 = "exam is tough", 861 = "gate is open", find th
 
 861: gate is open
 
-"gate" appears in 682 and 861 â†’ common digit: 6 and 8... wait 682 and 861 share digit 8 and 6. Actually 682 = {6,8,2}, 861 = {8,6,1}. Common: 6, 8.
+"gate" appears in 682 and 861 → common digit: 6 and 8... wait 682 and 861 share digit 8 and 6. Actually 682 = {6,8,2}, 861 = {8,6,1}. Common: 6, 8.
 
-"exam" appears in 682 and 285 â†’ common digit in 682 and 285: 8, 2 â†’ 2 and 8.
+"exam" appears in 682 and 285 → common digit in 682 and 285: 8, 2 → 2 and 8.
 
-"is" appears in 285 and 861 â†’ common digit: 8, 5 and 8, 6, 1 â†’ common: 8.
+"is" appears in 285 and 861 → common digit: 8, 5 and 8, 6, 1 → common: 8.
 
 Actually let me reconsider.
 
@@ -2436,7 +2436,7 @@ Words in 285: exam, is, tough
 
 Words in 861: gate, is, open
 
-Common words: "gate" in (682, 861) â†’ digits common to {6,8,2} and {8,6,1} = {6,8}. "exam" in (682, 285) â†’ digits common to {6,8,2} and {2,8,5} = {2,8}. "is" in (285, 861) â†’ digits common to {2,8,5} and {8,6,1} = {8}.
+Common words: "gate" in (682, 861) → digits common to {6,8,2} and {8,6,1} = {6,8}. "exam" in (682, 285) → digits common to {6,8,2} and {2,8,5} = {2,8}. "is" in (285, 861) → digits common to {2,8,5} and {8,6,1} = {8}.
 
 So 8 must be "is" (appears in all three).
 
@@ -2448,7 +2448,7 @@ From 682: 6 = "gate" or "ready", 2 = "exam" or "ready".
 
 From 285: 2 = "exam" or "tough", 5 = "exam" or "tough".
 
-So 2 is in 682 and 285 â†’ "exam" is in both, so 2 = "exam".
+So 2 is in 682 and 285 → "exam" is in both, so 2 = "exam".
 
 Then from 682: gate, ready = 6, 8. 8 = "is", so 6 = "gate" or "ready".
 
@@ -2479,15 +2479,15 @@ Hmm, actually in this coding scheme, each digit represents exactly one word. So 
 
 So maybe my assumption that each digit maps uniquely is wrong... but that's how these puzzles work. Let me re-read: "682 = gate exam ready, 285 = exam is tough, 861 = gate is open".
 
-682: digits 6, 8, 2 â†’ 3 words: gate, exam, ready
-285: digits 2, 8, 5 â†’ 3 words: exam, is, tough
-861: digits 8, 6, 1 â†’ 3 words: gate, is, open
+682: digits 6, 8, 2 → 3 words: gate, exam, ready
+285: digits 2, 8, 5 → 3 words: exam, is, tough
+861: digits 8, 6, 1 → 3 words: gate, is, open
 
 "gate" appears in 682 and 861. Digits in common: 6 or 8.
 "exam" appears in 682 and 285. Digits in common: 2 or 8.
 "is" appears in 285 and 861. Digits in common: 5 or 8...
 
-Wait: 285 = {2,8,5}, 861 = {8,6,1}. Common: {8}. So "is" â†’ 8.
+Wait: 285 = {2,8,5}, 861 = {8,6,1}. Common: {8}. So "is" → 8.
 
 If "is" = 8, then:
 
@@ -2505,7 +2505,7 @@ Then: open = 1 (from 861: gate(6), is(8), open(1)).
 
 **Answer: Code for "open" is 1**
 
-### PYQ-32 (GATE 2022) â€” Syllogisms
+### PYQ-32 (GATE 2022) → Syllogisms
 
 Statements:
 1. No stone is metal.
@@ -2519,7 +2519,7 @@ Which conclusion(s) follow(s)?
 
 **Solution:**
 
-I. No gold is stone: Does NOT follow. Gold is a subset of metals (some metals are gold). We know no stones are metals, so gold (being a metal subset) cannot be a stone. Wait â€” this actually does follow!
+I. No gold is stone: Does NOT follow. Gold is a subset of metals (some metals are gold). We know no stones are metals, so gold (being a metal subset) cannot be a stone. Wait → this actually does follow!
 
 If some metals are gold, then gold âŠ† metal. No stones = metals, so no stones = gold. So no gold is stone. âœ“
 
@@ -2527,7 +2527,7 @@ II. Some stones are gold: Does NOT follow as established above. âœ—
 
 **Answer: Only I follows**
 
-### PYQ-33 (GATE 2025) â€” Analogies
+### PYQ-33 (GATE 2025) → Analogies
 
 Tree : Forest :: ___ : ___
 
@@ -2547,7 +2547,7 @@ D) Brick : Wall
 
 A tree is a constituent element of a forest. Similarly:
 
-B) A star is a constituent element of a galaxy â†’ matches
+B) A star is a constituent element of a galaxy → matches
 
 A) A flower is in a garden (but garden is not composed entirely of flowers)
 
@@ -2559,7 +2559,7 @@ The best analogy is Star : Galaxy (individual constituent of a collection).
 
 **Answer: B) Star : Galaxy**
 
-### PYQ-34 (GATE 2023) â€” Statement-Assumption
+### PYQ-34 (GATE 2023) → Statement-Assumption
 
 Statement: "The government has decided to make toilet building a priority in rural areas."
 
@@ -2577,7 +2577,7 @@ II. Implicit. The purpose of building toilets is to improve sanitation. The gove
 
 **Answer: Both I and II are implicit**
 
-### PYQ-35 (GATE 2019) â€” Circular Arrangement
+### PYQ-35 (GATE 2019) → Circular Arrangement
 
 Seven people A, B, C, D, E, F, G sit around a circular table. C sits second to the right of A. B sits third to the left of D. E sits between F and G. A is adjacent to G. If D sits opposite C, find the positions.
 
@@ -2587,7 +2587,7 @@ Place A at position 1.
 
 C second right of A: C at position 3 (in a 7-person circle).
 
-D opposite C: In a 7-person circle, opposite doesn't exist perfectly (odd number). "Opposite" means directly across (3 steps away in a 7-circle): D at position 6 (3 steps from C at 3: 3â†’4â†’5â†’6).
+D opposite C: In a 7-person circle, opposite doesn't exist perfectly (odd number). "Opposite" means directly across (3 steps away in a 7-circle): D at position 6 (3 steps from C at 3: 3→4→5→6).
 
 A adjacent to G: G at position 2 or 7.
 
@@ -2616,10 +2616,10 @@ Positions: 1:A, 2:?, 3:C, 4:?, 5:?, 6:D, 7:?
 
 C second right of A âœ“
 D opposite C (at distance 3) âœ“
-A adjacent to G â†’ G at 2 or 7
+A adjacent to G → G at 2 or 7
 
 If G at 2:
-E between F and G â†’ E is adjacent to both F and G.
+E between F and G → E is adjacent to both F and G.
 G at 2, adjacent positions: 1(A), 3(C). E next to G at position... 1 or 3 are taken. So this doesn't work.
 
 If G at 7:
@@ -2629,14 +2629,14 @@ E between F and G: E adjacent to G at position 6 (D) or 1(A). Both taken. Doesn'
 Try D at 7:
 Positions: 1:A, 2:?, 3:C, 4:?, 5:?, 6:?, 7:D
 
-A adjacent to G â†’ G at 2 or 7. 7 is D. So G at 2.
+A adjacent to G → G at 2 or 7. 7 is D. So G at 2.
 
 E between F and G:
 G at 2, adjacent: 1(A), 3(C). Both taken. Doesn't work.
 
 Hmm, the adjacency constraint is tight. Let me try placing B third left of D.
 
-B third left of D: D at 7, B at 4 (3 steps counterclockwise: 7â†’6â†’5â†’4).
+B third left of D: D at 7, B at 4 (3 steps counterclockwise: 7→6→5→4).
 
 So position 4 = B.
 
@@ -2649,7 +2649,7 @@ C second right of A: C at position 4.
 D opposite C: D at position 7 (or D at position 1).
 
 Try D at 1:
-B third left of D: B at position 5 (3 steps counterclockwise: 1â†’7â†’6â†’5).
+B third left of D: B at position 5 (3 steps counterclockwise: 1→7→6→5).
 
 So: 1:D, 2:A, 3:?, 4:C, 5:B, 6:?, 7:?
 
@@ -2659,7 +2659,7 @@ E between F and G: G at 3. Adjacent to G: 2(A), 4(C). Both taken. âœ—
 
 Try D at 7:
 A at 2, C at 4, D at 7.
-B third left of D: B at 4 (go 3 steps counterclockwise: 7â†’6â†’5â†’4). But 4 is C.
+B third left of D: B at 4 (go 3 steps counterclockwise: 7→6→5→4). But 4 is C.
 
 Try different placement for A.
 
@@ -2667,14 +2667,14 @@ A at 1, C at 3.
 D opposite C: D at 6 or 7 (distance 3 in a 7-circle).
 B third left of D:
 
-If D at 6: B at 3 (counterclockwise 3: 6â†’5â†’4â†’3). C is at 3.
+If D at 6: B at 3 (counterclockwise 3: 6→5→4→3). C is at 3.
 
-If D at 7: B at 4 (7â†’6â†’5â†’4).
+If D at 7: B at 4 (7→6→5→4).
 
 OK let's go with D at 7, B at 4:
 1:A, 2:?, 3:C, 4:B, 5:?, 6:?, 7:D
 
-A adjacent to G â†’ G at 2 or 7(no). G at 2.
+A adjacent to G → G at 2 or 7(no). G at 2.
 
 E between F and G: G at 2. Adjacent: 1(A), 3(C). Both taken. âœ—
 
@@ -2688,9 +2688,9 @@ The method: Fix one person, place relative positions, then check constraints.
 
 ### Verbal Ability (10 Problems)
 
-**Cross-Reference:** R.S. Aggarwal â€” Verbal Reasoning, Chapters: Synonyms/Antonyms (Ch. 3), Sentence Completion (Ch. 7-8), Para-jumbles (Ch. 11), Reading Comprehension (Ch. 12), Grammar (Ch. 15-16). Also see Arun Sharma â€” Verbal Ability, Chapters 1-5.
+**Cross-Reference:** R.S. Aggarwal → Verbal Reasoning, Chapters: Synonyms/Antonyms (Ch. 3), Sentence Completion (Ch. 7-8), Para-jumbles (Ch. 11), Reading Comprehension (Ch. 12), Grammar (Ch. 15-16). Also see Arun Sharma → Verbal Ability, Chapters 1-5.
 
-### PYQ-36 (GATE 2020) â€” Synonyms
+### PYQ-36 (GATE 2020) → Synonyms
 
 Choose the synonym of "PERSPICACIOUS".
 
@@ -2708,17 +2708,17 @@ D) Careless
 
 "Perspicacious" means having a ready insight into things; mentally sharp or keen.
 
-A) Dull â†’ opposite (antonym)
+A) Dull → opposite (antonym)
 
-B) Perceptive â†’ matches the meaning âœ“
+B) Perceptive → matches the meaning âœ“
 
-C) Stubborn â†’ unrelated
+C) Stubborn → unrelated
 
-D) Careless â†’ opposite
+D) Careless → opposite
 
 **Answer: B) Perceptive**
 
-### PYQ-37 (GATE 2021) â€” Antonyms
+### PYQ-37 (GATE 2021) → Antonyms
 
 Choose the antonym of "LACONIC".
 
@@ -2736,17 +2736,17 @@ D) Silent
 
 "Laconic" means using very few words; concise to the point of being terse.
 
-A) Verbose â†’ using more words than needed; opposite of concise âœ“
+A) Verbose → using more words than needed; opposite of concise âœ“
 
-B) Quiet â†’ related but not an antonym
+B) Quiet → related but not an antonym
 
-C) Brief â†’ similar (synonym)
+C) Brief → similar (synonym)
 
-D) Silent â†’ related but not an antonym
+D) Silent → related but not an antonym
 
 **Answer: A) Verbose**
 
-### PYQ-38 (GATE 2022) â€” Sentence Completion
+### PYQ-38 (GATE 2022) → Sentence Completion
 
 Despite the ___ evidence, the jury remained ___ of the defendant's guilt.
 
@@ -2764,17 +2764,17 @@ D) Sparse, unsure
 
 The word "despite" indicates a contrast. The first blank should describe strong evidence, and the second blank should describe the jury's continued doubt despite that evidence.
 
-A) "Convincing evidence, convinced" â†’ no contrast (they agree) âœ—
+A) "Convincing evidence, convinced" → no contrast (they agree) âœ—
 
-B) "Overwhelming evidence, unconvinced" â†’ contrast âœ“ (despite strong evidence, still unconvinced)
+B) "Overwhelming evidence, unconvinced" → contrast âœ“ (despite strong evidence, still unconvinced)
 
-C) "Circumstantial evidence, certain" â†’ weak evidence + certainty doesn't create the right contrast
+C) "Circumstantial evidence, certain" → weak evidence + certainty doesn't create the right contrast
 
-D) "Sparse evidence, unsure" â†’ no contrast (sparse evidence logically leads to being unsure)
+D) "Sparse evidence, unsure" → no contrast (sparse evidence logically leads to being unsure)
 
 **Answer: B) Overwhelming, unconvinced**
 
-### PYQ-39 (GATE 2023) â€” Para-jumbles
+### PYQ-39 (GATE 2023) → Para-jumbles
 
 Arrange the following sentences into a coherent paragraph:
 
@@ -2792,7 +2792,7 @@ D summarizes the revolutionary nature of the shift.
 
 **Answer: B - C - A - D**
 
-### PYQ-40 (GATE 2019) â€” Subject-Verb Agreement
+### PYQ-40 (GATE 2019) → Subject-Verb Agreement
 
 Choose the correct option:
 
@@ -2808,7 +2808,7 @@ Therefore: **are**
 
 **Answer: are**
 
-### PYQ-41 (GATE 2024) â€” Reading Comprehension
+### PYQ-41 (GATE 2024) → Reading Comprehension
 
 Passage: "Machine learning models are only as good as the data they are trained on. Biased training data leads to biased models, which can perpetuate and amplify existing societal inequalities. This has been demonstrated in hiring algorithms, facial recognition systems, and predictive policing tools. Addressing this requires not just technical solutions but also diverse teams, ethical guidelines, and regulatory oversight."
 
@@ -2826,19 +2826,19 @@ D) Technical solutions alone can fix algorithmic bias.
 
 **Solution:**
 
-The passage states that biased data â†’ biased models, and lists examples. The final sentence emphasizes that solutions require technical fixes, diverse teams, ethics, and regulation â€” a multi-faceted approach.
+The passage states that biased data → biased models, and lists examples. The final sentence emphasizes that solutions require technical fixes, diverse teams, ethics, and regulation → a multi-faceted approach.
 
-A) Overstates â€” the passage says models can inherit bias, not that ML is inherently biased.
+A) Overstates → the passage says models can inherit bias, not that ML is inherently biased.
 
-B) Correct â€” captures both the cause (data quality) and the solution (multiple approaches). âœ“
+B) Correct → captures both the cause (data quality) and the solution (multiple approaches). âœ“
 
-C) Too narrow â€” facial recognition is just one example.
+C) Too narrow → facial recognition is just one example.
 
 D) Contradicts the passage, which says "not just technical solutions."
 
 **Answer: B) Data quality determines model fairness, and addressing bias requires multiple approaches.**
 
-### PYQ-42 (GATE 2020) â€” One-Word Substitution
+### PYQ-42 (GATE 2020) → One-Word Substitution
 
 What is the one-word substitute for "a person who is motivated by a desire to help others without personal gain"?
 
@@ -2854,17 +2854,17 @@ D) Hedonist
 
 **Solution:**
 
-A) Altruist â†’ a person who selflessly helps others âœ“
+A) Altruist → a person who selflessly helps others âœ“
 
-B) Egoist â†’ a person who is self-centered
+B) Egoist → a person who is self-centered
 
-C) Fatalist â†’ one who believes events are predetermined
+C) Fatalist → one who believes events are predetermined
 
-D) Hedonist â†’ one who pursues pleasure as the highest good
+D) Hedonist → one who pursues pleasure as the highest good
 
 **Answer: A) Altruist**
 
-### PYQ-43 (GATE 2025) â€” Critical Reasoning
+### PYQ-43 (GATE 2025) → Critical Reasoning
 
 Argument: "All successful startups in the past decade have used cloud computing. Therefore, any new startup must use cloud computing to be successful."
 
@@ -2886,13 +2886,13 @@ The argument assumes that because ALL past successful startups used cloud comput
 
 This is: just because something was true in all observed cases doesn't mean it's a necessary condition.
 
-A) Hasty generalization â†’ generalizing from insufficient examples (there have been many startups, but the sample might not represent all types) â€” partially applicable
+A) Hasty generalization → generalizing from insufficient examples (there have been many startups, but the sample might not represent all types) → partially applicable
 
-C) Appeal to popularity â†’ "everyone did it, so you must too" â€” the argument suggests that because success correlates with cloud use, it's a requirement. This is closest to:
+C) Appeal to popularity → "everyone did it, so you must too" → the argument suggests that because success correlates with cloud use, it's a requirement. This is closest to:
 
 **Answer: C) Appeal to popularity (argumentum ad populum)**
 
-### PYQ-44 (GATE 2022) â€” Tenses
+### PYQ-44 (GATE 2022) → Tenses
 
 Fill in the blank with the correct tense:
 
@@ -2916,7 +2916,7 @@ D) had completed
 
 **Answer: C) will have completed**
 
-### PYQ-45 (GATE 2021) â€” Sentence Completion
+### PYQ-45 (GATE 2021) → Sentence Completion
 
 The professor's remarks were so ___ that even his colleagues found them hard to decipher.
 
@@ -2934,17 +2934,17 @@ D) Superficial
 
 "Hard to decipher" = difficult to understand.
 
-A) Lucid â†’ clear, easy to understand (opposite)
+A) Lucid → clear, easy to understand (opposite)
 
-B) Obscure â†’ unclear, difficult to understand âœ“
+B) Obscure → unclear, difficult to understand âœ“
 
-C) Eloquent â†’ fluent and persuasive (not related to clarity)
+C) Eloquent → fluent and persuasive (not related to clarity)
 
-D) Superficial â†’ shallow (not related to clarity/difficulty)
+D) Superficial → shallow (not related to clarity/difficulty)
 
 **Answer: B) Obscure**
 
-### PYQ-46 (GATE 2025) â€” Idioms
+### PYQ-46 (GATE 2025) → Idioms
 
 Choose the correct meaning of the idiom "To burn the midnight oil."
 
@@ -2964,7 +2964,7 @@ D) To spend money recklessly
 
 **Answer: B) To work or study late into the night**
 
-### PYQ-47 (GATE 2023) â€” Grammar â€” Prepositions
+### PYQ-47 (GATE 2023) → Grammar → Prepositions
 
 Fill in the blank: "She is proficient ___ multiple programming languages."
 
@@ -2986,9 +2986,9 @@ The correct preposition with "proficient" is "in."
 
 **Answer: B) in**
 
-### PYQ-48 (GATE 2019) â€” Reading Comprehension (Short)
+### PYQ-48 (GATE 2019) → Reading Comprehension (Short)
 
-Passage: "Economics is not a science of wealth but a science of human welfare. It studies how people make choices under conditions of scarcity. Every choice involves a trade-off â€” choosing one thing means giving up another. The value of the next best alternative foregone is called opportunity cost."
+Passage: "Economics is not a science of wealth but a science of human welfare. It studies how people make choices under conditions of scarcity. Every choice involves a trade-off → choosing one thing means giving up another. The value of the next best alternative foregone is called opportunity cost."
 
 What is opportunity cost according to the passage?
 
@@ -2998,7 +2998,7 @@ The passage explicitly defines it: "The value of the next best alternative foreg
 
 **Answer: The value of the next best alternative that is given up when a choice is made.**
 
-### PYQ-49 (GATE 2024) â€” Error Detection
+### PYQ-49 (GATE 2024) → Error Detection
 
 Identify the error in the sentence:
 
@@ -3018,13 +3018,13 @@ D) on time
 
 "Each" is singular and requires a singular verb. "Each of the students" should take "has" not "have."
 
-Error: B) "have submitted" â†’ should be "has submitted"
+Error: B) "have submitted" → should be "has submitted"
 
 Also, "their" with "each" can be debated, but in modern usage, "their" with "each" is acceptable. The definite error is the verb.
 
 **Answer: B) have submitted (should be "has submitted")**
 
-### PYQ-50 (GATE 2025) â€” Para-jumbles
+### PYQ-50 (GATE 2025) → Para-jumbles
 
 A. This process is called photosynthesis.
 
@@ -3048,9 +3048,9 @@ A names the process.
 
 ### Spatial / Analytical Reasoning (5 Problems)
 
-**Cross-Reference:** R.S. Aggarwal â€” Analytical Reasoning, Chapters: Dice & Cubes (Ch. 10), Mirror Images (Ch. 11-12), Paper Folding (Ch. 13), Pattern Recognition (Ch. 14-15). Also see Arun Sharma â€” Logical Reasoning, Chapter 7 (Spatial).
+**Cross-Reference:** R.S. Aggarwal → Analytical Reasoning, Chapters: Dice & Cubes (Ch. 10), Mirror Images (Ch. 11-12), Paper Folding (Ch. 13), Pattern Recognition (Ch. 14-15). Also see Arun Sharma → Logical Reasoning, Chapter 7 (Spatial).
 
-### PYQ-51 (GATE 2019) â€” Cube Painting
+### PYQ-51 (GATE 2019) → Cube Painting
 
 A 4 Ã— 4 Ã— 4 cube is painted entirely red on all six faces and then cut into 64 unit cubes. How many unit cubes have exactly one face painted?
 
@@ -3070,7 +3070,7 @@ Formula verification: 6(n-2)Â² = 6(2)Â² = 24 âœ“
 
 **Answer: 24 cubes**
 
-### PYQ-52 (GATE 2020) â€” Pattern Recognition
+### PYQ-52 (GATE 2020) → Pattern Recognition
 
 Find the next term in the series: 3, 12, 27, 48, 75, ?
 
@@ -3092,7 +3092,7 @@ Next term = 3 Ã— 6Â² = 3 Ã— 36 = 108
 
 **Answer: 108**
 
-### PYQ-53 (GATE 2022) â€” Mirror Image
+### PYQ-53 (GATE 2022) → Mirror Image
 
 If the time on an analog clock shows 7:20, what approximate time will be seen in a mirror placed vertically?
 
@@ -3106,7 +3106,7 @@ Verification: In a mirror, the hour hand between 7 and 8 appears between 4 and 5
 
 **Answer: 4:40**
 
-### PYQ-54 (GATE 2023) â€” Dice
+### PYQ-54 (GATE 2023) → Dice
 
 Two positions of the same dice are shown:
 
@@ -3239,15 +3239,15 @@ From Position 2, 5 is visible and 3 is hidden. Doesn't tell us.
 
 Hmm. Let me use the adjacency constraints differently.
 
-In Position 1: 3 is front, 6 is right, 2 is top. In a cube where 2 is top and 3 is front, 6 is right. This means going clockwise from front, we have right, back, left. So 3 (front) â†’ 6 (right) â†’ opposite(3) â†’ opposite(6) â†’ back to 3.
+In Position 1: 3 is front, 6 is right, 2 is top. In a cube where 2 is top and 3 is front, 6 is right. This means going clockwise from front, we have right, back, left. So 3 (front) → 6 (right) → opposite(3) → opposite(6) → back to 3.
 
-In Position 2: 1 is front, 2 is right, 5 is top. So 1 (front) â†’ 2 (right) â†’ opposite(1) â†’ opposite(2) â†’ back to 1.
+In Position 2: 1 is front, 2 is right, 5 is top. So 1 (front) → 2 (right) → opposite(1) → opposite(2) → back to 1.
 
 Now, from Position 1, the four lateral faces (front, right, back, left) are: 3 (front), 6 (right), opposite(3) (back), opposite(6) (left).
 
 From Position 2, the four lateral faces are: 1 (front), 2 (right), opposite(1) (back), opposite(2) (left) = 1, 2, opposite(1), 4.
 
-The top face changes between positions (2â†’5), so the cube was tilted.
+The top face changes between positions (2→5), so the cube was tilted.
 
 Let me just solve this combinatorially. The six faces are 1-6. We know 2 opposite 4. The remaining are {1,3,5,6}. We need to pair them.
 
@@ -3303,7 +3303,7 @@ In many dice, 3 is opposite to 5. Let me go with that.
 
 **Answer: 5** (3 is opposite to 5)
 
-### PYQ-55 (GATE 2024) â€” Paper Folding / Spatial Visualization
+### PYQ-55 (GATE 2024) → Paper Folding / Spatial Visualization
 
 A rectangular sheet of paper is folded as follows:
 1. Fold the bottom edge to the top edge (fold in half horizontally).
@@ -3321,7 +3321,7 @@ After step 2 (vertical fold): 4 layers (2 Ã— 2).
 
 The center of the folded paper corresponds to 4 different locations on the original paper (one in each quadrant).
 
-When the hole is punched through all 4 layers and the paper is unfolded, 4 holes appear â€” one at the center of each quadrant.
+When the hole is punched through all 4 layers and the paper is unfolded, 4 holes appear → one at the center of each quadrant.
 
 If the original paper has coordinates (0,0) at bottom-left and (W,H) at top-right, the holes will be at:
 
@@ -3335,7 +3335,7 @@ These form a symmetric pattern in a 2Ã—2 grid.
 
 ## Recommended Books & Resources
 
-### 1. R.S. Aggarwal â€” Quantitative Aptitude for Competitive Examinations
+### 1. R.S. Aggarwal → Quantitative Aptitude for Competitive Examinations
 
 | Chapter | Pages | Topics Covered | GATE Relevance |
 |---------|-------|----------------|----------------|
@@ -3352,7 +3352,7 @@ These form a symmetric pattern in a 2Ã—2 grid.
 | 31 | 569-602 | Probability | PYQ-2, PYQ-13 |
 | 35-38 | 649-730 | Data Interpretation / Charts | PYQ-18 |
 
-### 2. R.S. Aggarwal â€” A Modern Approach to Verbal & Non-Verbal Reasoning
+### 2. R.S. Aggarwal → A Modern Approach to Verbal & Non-Verbal Reasoning
 
 | Chapter | Pages | Topics Covered | GATE Relevance |
 |---------|-------|----------------|----------------|
@@ -3369,7 +3369,7 @@ These form a symmetric pattern in a 2Ã—2 grid.
 | 13 | 341-368 | Paper Folding & Cutting | PYQ-55 |
 | 14-15 | 369-420 | Pattern Recognition | PYQ-52 |
 
-### 3. Arun Sharma â€” How to Prepare for Quantitative Aptitude
+### 3. Arun Sharma → How to Prepare for Quantitative Aptitude
 
 | Chapter | Pages | Topics |
 |---------|-------|--------|
@@ -3380,7 +3380,7 @@ These form a symmetric pattern in a 2Ã—2 grid.
 | 13-15 | 461-580 | Permutations, Probability, Sets |
 | 16-20 | 581-750 | Data Interpretation, Charts, Graphs |
 
-### 4. Arun Sharma â€” How to Prepare for Verbal Ability & Reading Comprehension
+### 4. Arun Sharma → How to Prepare for Verbal Ability & Reading Comprehension
 
 | Chapter | Pages | Topics |
 |---------|-------|--------|
@@ -3428,34 +3428,34 @@ These form a symmetric pattern in a 2Ã—2 grid.
 
 | GATE Topic | R.S. Aggarwal (Quant) | R.S. Aggarwal (Reasoning) | Arun Sharma (Quant) |
 |------------|----------------------|--------------------------|---------------------|
-| Number System | Ch. 1-2, pp. 1-48 | â€” | Ch. 1-2, pp. 1-60 |
-| Percentages | Ch. 7, pp. 145-164 | â€” | Ch. 6, pp. 120-140 |
-| Profit & Loss | Ch. 10, pp. 211-240 | â€” | Ch. 7, pp. 181-210 |
-| Simple/Compound Interest | Ch. 11-12, pp. 241-286 | â€” | Ch. 8, pp. 211-250 |
-| Ratio & Proportion | Ch. 8, pp. 165-190 | â€” | Ch. 9, pp. 251-290 |
-| Time & Work | Ch. 15, pp. 325-362 | â€” | Ch. 10, pp. 321-365 |
-| Time, Speed & Distance | Ch. 17, pp. 389-430 | â€” | Ch. 11, pp. 366-420 |
-| Pipes & Cisterns | Ch. 16, pp. 363-388 | â€” | Ch. 12, pp. 421-455 |
-| Mixtures & Alligations | Ch. 20, pp. 457-480 | â€” | Ch. 14, pp. 510-540 |
-| Permutations & Combinations | Ch. 30, pp. 541-568 | â€” | Ch. 13, pp. 461-509 |
-| Probability | Ch. 31, pp. 569-602 | â€” | Ch. 14, pp. 541-580 |
-| Data Interpretation | Ch. 35-38, pp. 649-730 | â€” | Ch. 16-20, pp. 581-750 |
-| Averages | Ch. 6, pp. 121-144 | â€” | Ch. 5, pp. 101-119 |
-| Blood Relations | â€” | Ch. 4, pp. 81-108 | â€” |
-| Direction Sense | â€” | Ch. 5, pp. 109-134 | â€” |
-| Syllogisms | â€” | Ch. 6, pp. 135-164 | â€” |
-| Coding-Decoding | â€” | Ch. 2, pp. 25-52 | â€” |
-| Seating Arrangements | â€” | Ch. 8-9, pp. 219-268 | â€” |
-| Analogies | â€” | Ch. 1, pp. 1-24 | â€” |
-| Statement-Conclusion | â€” | Ch. 7, pp. 165-194 | â€” |
-| Dice & Cubes | â€” | Ch. 10, pp. 269-298 | â€” |
-| Mirror Images | â€” | Ch. 11, pp. 299-320 | â€” |
-| Paper Folding | â€” | Ch. 13, pp. 341-368 | â€” |
-| Pattern Recognition | â€” | Ch. 14-15, pp. 369-420 | â€” |
-| Synonyms / Antonyms | â€” | Ch. 3, pp. 53-80 | â€” |
-| Grammar | â€” | Ch. 15-16, pp. 421-480 | â€” |
-| Reading Comprehension | â€” | Ch. 12, pp. 341-368 | â€” |
-| Para-jumbles | â€” | Ch. 11, pp. 321-340 | â€” |
+| Number System | Ch. 1-2, pp. 1-48 | → | Ch. 1-2, pp. 1-60 |
+| Percentages | Ch. 7, pp. 145-164 | → | Ch. 6, pp. 120-140 |
+| Profit & Loss | Ch. 10, pp. 211-240 | → | Ch. 7, pp. 181-210 |
+| Simple/Compound Interest | Ch. 11-12, pp. 241-286 | → | Ch. 8, pp. 211-250 |
+| Ratio & Proportion | Ch. 8, pp. 165-190 | → | Ch. 9, pp. 251-290 |
+| Time & Work | Ch. 15, pp. 325-362 | → | Ch. 10, pp. 321-365 |
+| Time, Speed & Distance | Ch. 17, pp. 389-430 | → | Ch. 11, pp. 366-420 |
+| Pipes & Cisterns | Ch. 16, pp. 363-388 | → | Ch. 12, pp. 421-455 |
+| Mixtures & Alligations | Ch. 20, pp. 457-480 | → | Ch. 14, pp. 510-540 |
+| Permutations & Combinations | Ch. 30, pp. 541-568 | → | Ch. 13, pp. 461-509 |
+| Probability | Ch. 31, pp. 569-602 | → | Ch. 14, pp. 541-580 |
+| Data Interpretation | Ch. 35-38, pp. 649-730 | → | Ch. 16-20, pp. 581-750 |
+| Averages | Ch. 6, pp. 121-144 | → | Ch. 5, pp. 101-119 |
+| Blood Relations | → | Ch. 4, pp. 81-108 | → |
+| Direction Sense | → | Ch. 5, pp. 109-134 | → |
+| Syllogisms | → | Ch. 6, pp. 135-164 | → |
+| Coding-Decoding | → | Ch. 2, pp. 25-52 | → |
+| Seating Arrangements | → | Ch. 8-9, pp. 219-268 | → |
+| Analogies | → | Ch. 1, pp. 1-24 | → |
+| Statement-Conclusion | → | Ch. 7, pp. 165-194 | → |
+| Dice & Cubes | → | Ch. 10, pp. 269-298 | → |
+| Mirror Images | → | Ch. 11, pp. 299-320 | → |
+| Paper Folding | → | Ch. 13, pp. 341-368 | → |
+| Pattern Recognition | → | Ch. 14-15, pp. 369-420 | → |
+| Synonyms / Antonyms | → | Ch. 3, pp. 53-80 | → |
+| Grammar | → | Ch. 15-16, pp. 421-480 | → |
+| Reading Comprehension | → | Ch. 12, pp. 341-368 | → |
+| Para-jumbles | → | Ch. 11, pp. 321-340 | → |
 
 ---
 
@@ -3474,7 +3474,7 @@ A shopkeeper allows a discount of 10% on the marked price of an item but still m
 
 **Answer:**
 Marked Price = â‚¹500. Discount = 10%, so Selling Price = 500 Ã— 0.9 = â‚¹450.
-Profit = 20%, so SP = CP Ã— 1.2 â†’ CP = 450 / 1.2 = â‚¹375.
+Profit = 20%, so SP = CP Ã— 1.2 → CP = 450 / 1.2 = â‚¹375.
 
 **Answer: â‚¹375**
 
@@ -3517,8 +3517,8 @@ logâ‚â‚€ 5 = logâ‚â‚€ (10/2) = logâ‚â‚€ 10 âˆ’
 What is the unit digit of 7Â³âµ?
 
 **Answer:**
-Cyclicity of 7: 7Â¹â†’7, 7Â²â†’9, 7Â³â†’3, 7â´â†’1, then repeats every 4.
-35 Ã· 4 = 8 remainder 3. So unit digit = 7Â³ = 343 â†’ unit digit 3.
+Cyclicity of 7: 7Â¹→7, 7Â²→9, 7Â³→3, 7â´→1, then repeats every 4.
+35 Ã· 4 = 8 remainder 3. So unit digit = 7Â³ = 343 → unit digit 3.
 
 **Answer: 3**
 
@@ -3589,7 +3589,7 @@ A man's age is 125% of what it was 10 years ago. What is his present age?
 
 **Answer:**
 Let present age = x. 10 years ago age = x âˆ’ 10.
-x = 1.25(x âˆ’ 10) â†’ x = 1.25x âˆ’ 12.5 â†’ 0.25x = 12.5 â†’ x = 50.
+x = 1.25(x âˆ’ 10) → x = 1.25x âˆ’ 12.5 → 0.25x = 12.5 → x = 50.
 
 **Answer: 50 years**
 
@@ -3601,10 +3601,10 @@ A number when divided by 7 leaves remainder 3. What is the remainder when the sa
 **Answer:**
 The number can be written as 7k + 3. When divided by 49:
 We cannot uniquely determine the remainder because k is unknown.
-For k = 1: 10 Ã· 49 â†’ remainder 10; k = 2: 17 Ã· 49 â†’ remainder 17.
-The question as stated is incomplete (multiple possible remainders). In GATE context, they typically intend: "A number when divided by 7 leaves remainder 3, and when divided by 49 leaves remainder ___"â€”which is ambiguous. If the number is of form 7k+3, dividing by 49 gives remainder 7r+3 where r = k mod 7. Minimum remainder = 3.
+For k = 1: 10 Ã· 49 → remainder 10; k = 2: 17 Ã· 49 → remainder 17.
+The question as stated is incomplete (multiple possible remainders). In GATE context, they typically intend: "A number when divided by 7 leaves remainder 3, and when divided by 49 leaves remainder ___"→which is ambiguous. If the number is of form 7k+3, dividing by 49 gives remainder 7r+3 where r = k mod 7. Minimum remainder = 3.
 
-**NOTE:** This shows a common trap â€” always check if sufficient information is given.
+**NOTE:** This shows a common trap → always check if sufficient information is given.
 
 **Answer: Cannot be uniquely determined (insufficient data)**
 
@@ -3628,7 +3628,7 @@ A sum of money doubles itself in 8 years at simple interest. What is the rate of
 
 **Answer:**
 Let principal = P. Amount = 2P, so SI = P.
-SI = P Ã— R Ã— 8 / 100. So P = P Ã— R Ã— 8 / 100 â†’ R = 100/8 = 12.5%.
+SI = P Ã— R Ã— 8 / 100. So P = P Ã— R Ã— 8 / 100 → R = 100/8 = 12.5%.
 
 **Answer: 12.5%**
 
@@ -3653,8 +3653,8 @@ The ratio of incomes of A and B is 3:4. The ratio of their expenditures is 5:7. 
 **Answer:**
 Let incomes: A = 3x, B = 4x. Expenditures: A = 5y, B = 7y.
 Savings: 3x âˆ’ 5y = 5000 and 4x âˆ’ 7y = 5000.
-Subtracting: (4xâˆ’7y) âˆ’ (3xâˆ’5y) = 0 â†’ x âˆ’ 2y = 0 â†’ x = 2y.
-Substitute: 3(2y) âˆ’ 5y = 5000 â†’ 6y âˆ’ 5y = 5000 â†’ y = 5000, x = 10000.
+Subtracting: (4xâˆ’7y) âˆ’ (3xâˆ’5y) = 0 → x âˆ’ 2y = 0 → x = 2y.
+Substitute: 3(2y) âˆ’ 5y = 5000 → 6y âˆ’ 5y = 5000 → y = 5000, x = 10000.
 A's income = 3 Ã— 10000 = â‚¹30,000.
 
 **Answer: â‚¹30,000**
@@ -3665,7 +3665,7 @@ A's income = 3 Ã— 10000 = â‚¹30,000.
 What is the remainder when 2Â²â° is divided by 5?
 
 **Answer:**
-Cyclicity of 2â¿ mod 5: 2Â¹â†’2, 2Â²â†’4, 2Â³â†’3, 2â´â†’1 (repeats every 4).
+Cyclicity of 2â¿ mod 5: 2Â¹→2, 2Â²→4, 2Â³→3, 2â´→1 (repeats every 4).
 20 Ã· 4 = 5, remainder 0. So 2Â²â° â‰¡ 2â´ â‰¡ 1 (mod 5).
 
 **Answer: 1**
@@ -3708,7 +3708,7 @@ After removing 10L mixture: Milk removed = 7L, Water removed = 3L.
 After adding 10L milk: New milk = (7x/10 âˆ’ 7 + 10) = (7x/10 + 3). New water = (3x/10 âˆ’ 3).
 New ratio: (7x/10 + 3) / (3x/10 âˆ’ 3) = 3/1.
 Cross multiply: 7x/10 + 3 = 3(3x/10 âˆ’ 3) = 9x/10 âˆ’ 9.
-Bring terms: 7x/10 âˆ’ 9x/10 = âˆ’9 âˆ’ 3 â†’ âˆ’2x/10 = âˆ’12 â†’ 2x/10 = 12 â†’ x/5 = 12 â†’ x = 60.
+Bring terms: 7x/10 âˆ’ 9x/10 = âˆ’9 âˆ’ 3 → âˆ’2x/10 = âˆ’12 → 2x/10 = 12 → x/5 = 12 → x = 60.
 
 **Answer: 60 liters**
 
@@ -3720,10 +3720,10 @@ Bring terms: 7x/10 âˆ’ 9x/10 = âˆ’9 âˆ’ 3 â†’ âˆ’2x/10 = â
 If CLOCK is coded as 36153 and WATCH is coded as 52148, how is CLOTH coded?
 
 **Answer:**
-Analyzing the code: Câ†’3, Lâ†’6, Oâ†’1, Câ†’5, Kâ†’3. No clear one-to-one mapping. Re-evaluating: C=3, L=6, O=1, Câ†’(repeated? but mapped to 5 this time), K=3.
+Analyzing the code: C→3, L→6, O→1, C→5, K→3. No clear one-to-one mapping. Re-evaluating: C=3, L=6, O=1, C→(repeated? but mapped to 5 this time), K=3.
 Actually: Look at WATCH: W=5, A=2, T=1, C=4, H=8.
 Mapping letters to positions: C=3, L=6, O=1, T=4, H=8, K=3, W=5, A=2.
-CLOTH: C=3, L=6, O=1, T=4, H=8 â†’ 36148.
+CLOTH: C=3, L=6, O=1, T=4, H=8 → 36148.
 
 **Answer: 36148**
 
@@ -3746,21 +3746,21 @@ In a certain language, if "means" is coded as 6623, how is "gates" coded?
 
 **Answer:**
 Let's map positions: m=13, e=5, a=1, n=14, s=19. No direct mapping to 6623.
-Using alphabetical positions with sum of digits: m=13â†’1+3=4, but code has 6.
-Using reverse alphabetical: m(13)â†’z-a: 27-13=14â†’1+4=5.
-It seems each letter maps to a number. Given mâ†’6, eâ†’6, aâ†’2, nâ†’3, sâ†’? 
-Actually we only have "means" â†’ 6623 (5 letters to 4 digits) so grouping or sum.
+Using alphabetical positions with sum of digits: m=13→1+3=4, but code has 6.
+Using reverse alphabetical: m(13)→z-a: 27-13=14→1+4=5.
+It seems each letter maps to a number. Given m→6, e→6, a→2, n→3, s→? 
+Actually we only have "means" → 6623 (5 letters to 4 digits) so grouping or sum.
 Let me reconsider: perhaps it's the number of strokes or something simpler.
-"If MEANS is 6623" â€” m=13th letter, e=5th, a=1st, n=14th, s=19th.
+"If MEANS is 6623" → m=13th letter, e=5th, a=1st, n=14th, s=19th.
 Summing: 13+5+1+14+19 = 52. Not 6623.
-Perhaps: position of letter in the word? 1stâ†’6, 2ndâ†’6, 3rdâ†’2, 4thâ†’3. Not.
+Perhaps: position of letter in the word? 1st→6, 2nd→6, 3rd→2, 4th→3. Not.
 Most likely: Each letter maps to its position in the alphabet but with some offset:
-M(13)â†’6 (13-7), E(5)â†’6 (5+1), A(1)â†’2 (1+1), N(14)â†’3 (14-11), S(19). 
-Hmm, no consistent pattern. Let me try: M(13) â†’ 1+3=4, not 6.
+M(13)→6 (13-7), E(5)→6 (5+1), A(1)→2 (1+1), N(14)→3 (14-11), S(19). 
+Hmm, no consistent pattern. Let me try: M(13) → 1+3=4, not 6.
 Probably the simplest GATE coding: Each letter's position in alphabet is used, and we take unit digit.
-M=13â†’3, E=5â†’5, A=1â†’1, N=14â†’4, S=19â†’9. Gives 35149. Not 6623.
+M=13→3, E=5→5, A=1→1, N=14→4, S=19→9. Gives 35149. Not 6623.
 Actually: m=13 (1+3=4, doubled=8?). Let's try reverse: a=26, b=25, ...
-m=14â†’1+4=5, e=22â†’2+2=4, a=26â†’2+6=8, n=13â†’1+3=4, s=8â†’8. 54848. No.
+m=14→1+4=5, e=22→2+2=4, a=26→2+6=8, n=13→1+3=4, s=8→8. 54848. No.
 Given the ambiguity, let me use a different well-known GATE problem:
 
 **Q73. [GATE 2011]**
@@ -3810,7 +3810,7 @@ Which conclusion(s) follow(s)?
 
 **Answer:**
 All roses are flowers. Some flowers are red.
-The set of roses is a subset of flowers. Some flowers are red â€” these red flowers may or may not include roses. Neither "some roses are red" nor "no rose is red" can be definitively concluded. Both are possible but neither is certain.
+The set of roses is a subset of flowers. Some flowers are red → these red flowers may or may not include roses. Neither "some roses are red" nor "no rose is red" can be definitively concluded. Both are possible but neither is certain.
 
 **Answer: Neither I nor II follows**
 
@@ -3820,8 +3820,8 @@ The set of roses is a subset of flowers. Some flowers are red â€” these red
 A is the father of B. B is the sister of C. C is the mother of D. How is D related to A?
 
 **Answer:**
-A is father of B. B is sister of C â†’ A is also father of C (or parent, same).
-C is mother of D â†’ D is child of C.
+A is father of B. B is sister of C → A is also father of C (or parent, same).
+C is mother of D → D is child of C.
 So A is the grandfather of D.
 
 **Answer: Grandfather**
@@ -3832,9 +3832,9 @@ So A is the grandfather of D.
 A man walks 5 km East, turns right and walks 3 km, turns right again and walks 5 km. How far is he from the starting point?
 
 **Answer:**
-Start at (0,0). Walk 5 km East â†’ (5,0).
-Turn right (South), walk 3 km â†’ (5,âˆ’3).
-Turn right (West), walk 5 km â†’ (0,âˆ’3).
+Start at (0,0). Walk 5 km East → (5,0).
+Turn right (South), walk 3 km → (5,âˆ’3).
+Turn right (West), walk 5 km → (0,âˆ’3).
 Distance from start = âˆš[(0âˆ’0)Â² + (âˆ’3âˆ’0)Â²] = 3 km.
 
 **Answer: 3 km**
@@ -3857,28 +3857,28 @@ Also: 1Ã—2=2, 2Ã—3=6, 3Ã—4=12, 4Ã—5=20, 5Ã—6=30, 6Ã—7=42.
 If FRIEND is coded as 69453 and TREND is coded as 84532, what is the code for DRIVE?
 
 **Answer:**
-Fâ†’6, Râ†’9, Iâ†’4, Eâ†’5, Nâ†’3, Dâ†’2 (from FRIEND = 69453).
+F→6, R→9, I→4, E→5, N→3, D→2 (from FRIEND = 69453).
 Wait: FRIEND has 6 letters, code has 6 digits: 6,9,4,5,3,2.
 TREND = 84532 has 5 digits for 5 letters: T, R, E, N, D.
-Râ†’9 (from FRIEND) or 4 (from TREND)? Inconsistent.
+R→9 (from FRIEND) or 4 (from TREND)? Inconsistent.
 R in FRIEND is 9, R in TREND is 4. Contradiction.
 Let me re-examine: TREND code 84532: T=8, R=4, E=5, N=3, D=2.
 FRIEND code 69453: F=6, R=9, I=4, E=5, N=3. But D should be last digit.
 FRIEND = 69453 has only 5 digits for 6 letters. So maybe FRI=694, END=53?
-Actually: Fâ†’6, Râ†’9, Iâ†’4, Eâ†’5, Nâ†’3. But then D is missing.
-Hmm, perhaps FRIENDâ†’69453 means F=6,R=9,I=4,E=5,N=3 and D is extra / code length is 5.
-TRENDâ†’84532: T=8,R=4,E=5,N=3,D=2.
+Actually: F→6, R→9, I→4, E→5, N→3. But then D is missing.
+Hmm, perhaps FRIEND→69453 means F=6,R=9,I=4,E=5,N=3 and D is extra / code length is 5.
+TREND→84532: T=8,R=4,E=5,N=3,D=2.
 Mismatch on R (9 vs 4). Let me use positional coding:
 A=1,B=2,... but R=18â‰ 9 or 4.
 Maybe each letter is coded as its position in reverse alphabetical:
-Z=1,Y=2,... R=9, F=21â†’... Actually R is 9th from end: Z(1),Y(2),X(3),W(4),V(5),U(6),T(7),S(8),R(9). Yes! R=9.
+Z=1,Y=2,... R=9, F=21→... Actually R is 9th from end: Z(1),Y(2),X(3),W(4),V(5),U(6),T(7),S(8),R(9). Yes! R=9.
 F: Z(1),Y(2),X(3),W(4),V(5),U(6),T(7),S(8),R(9),Q(10),P(11),O(12),N(13),M(14),L(15),K(16),J(17),I(18),H(19),G(20),F(21). F=21? But code shows 6.
 This doesn't work either. Let me just state a clean answer:
 
 Given the inconsistency in the original problem as stated, let me present a standard coding-decoding question:
 
 **Q80. [GATE 2015]**
-If in a code, A=1, B=2, ..., Z=26, and the code for CAT is 24 (C=3, A=1, T=20 â†’ sum=24), what is the code for DOG?
+If in a code, A=1, B=2, ..., Z=26, and the code for CAT is 24 (C=3, A=1, T=20 → sum=24), what is the code for DOG?
 
 **Answer:**
 D=4, O=15, G=7. Sum = 4+15+7 = 26.
@@ -3895,7 +3895,7 @@ Arrangement: A between B and C (so order BAC or CAB around circle). D opposite A
 If going clockwise: B-A-C-?-D-?. E is right of D. In circle, "right" depends on orientation. Assuming clockwise = right:
 Arrangement: B-A-C-F-D-E (where F is the 6th person).
 Left of D means counterclockwise neighbor. Going from D counterclockwise is C.
-Wait: If order is (clockwise) Bâ†’Aâ†’Câ†’Eâ†’Dâ†’Fâ†’B, then D opposite A âœ“. E is right of D (clockwise from D is E âœ“). Left of D (counterclockwise from D) is F.
+Wait: If order is (clockwise) B→A→C→E→D→F→B, then D opposite A âœ“. E is right of D (clockwise from D is E âœ“). Left of D (counterclockwise from D) is F.
 Actually without knowing the 6th person's name, we can say the person opposite C (i.e., the person between E and B).
 
 Let me simplify: B-A-C-X-D-E. X is the remaining person. So the person to the left of D would be the person sitting before D in counterclockwise order = X. We don't know who X is, but we know there are exactly 6 people and X is the one not named among A,B,C,D,E.
@@ -3923,9 +3923,9 @@ Neither conclusion is definitively true.
 Find the next term in: A2Z, D4X, G6V, J8T, ?
 
 **Answer:**
-Letters: Aâ†’Dâ†’Gâ†’J (each +3). So next letter = M.
-Numbers: 2â†’4â†’6â†’8 (each +2). Next = 10.
-Last letters: Zâ†’Xâ†’Vâ†’T (each âˆ’2). Next = R.
+Letters: A→D→G→J (each +3). So next letter = M.
+Numbers: 2→4→6→8 (each +2). Next = 10.
+Last letters: Z→X→V→T (each âˆ’2). Next = R.
 So next term = M10R.
 
 **Answer: M10R**
@@ -4024,7 +4024,7 @@ Read the sentence and identify the grammatical error:
 **Answer:**
 "Committee" is a collective noun. In American English, it's singular: "The committee has decided." So "have" is incorrect.
 
-**Answer: (B) have decided â†’ has decided**
+**Answer: (B) have decided → has decided**
 
 ---
 
@@ -4073,7 +4073,7 @@ Arrange the following sentences to form a coherent paragraph:
 4. Conservation efforts are underway to protect them.
 
 **Answer:**
-Logical order: Introduce topic (2) â†’ Present problem (1) â†’ Explain cause (3) â†’ Describe response (4).
+Logical order: Introduce topic (2) → Present problem (1) → Explain cause (3) → Describe response (4).
 So: 2, 1, 3, 4.
 
 **Answer: 2, 1, 3, 4**
@@ -4129,7 +4129,7 @@ A cube has 6 faces. Each face shares an edge with 4 other faces (opposite face i
 A transparent square sheet with a diagonal line drawn from top-left to bottom-right is folded along its vertical center line. What does the resulting figure look like?
 
 **Answer approach:**
-When a diagonal exists from top-left to bottom-right (\) and we fold along the vertical center line (left half over right half), each point on the left half maps to a corresponding point on the right half. The diagonal on the left half (from top-left to center-top) will coincide with a line from center-top to... actually folding reflects the line. After folding, you'll see two diagonal segments meeting at the center fold â€” one from the original (visible on right half) and the reflected one from the left half now overlaid on the right half. The resulting visible lines depend on whether the sheet is transparent. If transparent, both the original diagonal on the right half and the reflected diagonal from the left half are visible, creating an X pattern in the right half of the sheet.
+When a diagonal exists from top-left to bottom-right (\) and we fold along the vertical center line (left half over right half), each point on the left half maps to a corresponding point on the right half. The diagonal on the left half (from top-left to center-top) will coincide with a line from center-top to... actually folding reflects the line. After folding, you'll see two diagonal segments meeting at the center fold → one from the original (visible on right half) and the reflected one from the left half now overlaid on the right half. The resulting visible lines depend on whether the sheet is transparent. If transparent, both the original diagonal on the right half and the reflected diagonal from the left half are visible, creating an X pattern in the right half of the sheet.
 
 **General Principle:** Trace each point's position relative to the fold line, reflect coordinates, and visualize the combined image.
 
@@ -4157,13 +4157,13 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 #### Trap 4: Successive Percentage Change
 **Trap:** Adding percentages directly instead of compounding.
 **Example:** Price increases by 10%, then 20%. Total increase is NOT 30%.
-**Correct:** 1.10 Ã— 1.20 = 1.32 â†’ 32% increase.
+**Correct:** 1.10 Ã— 1.20 = 1.32 → 32% increase.
 **Formula:** Net % change = a + b + (ab/100).
 
 #### Trap 5: Time-Speed-Distance Unit Conversion
 **Trap:** Mixing m/s and km/h without conversion.
 **Example:** Speed = 20 m/s. Student writes 20 km/h. **Correct:** 20 Ã— (18/5) = 72 km/h.
-**Rule:** m/s â†’ km/h: multiply by 18/5. km/h â†’ m/s: multiply by 5/18.
+**Rule:** m/s → km/h: multiply by 18/5. km/h → m/s: multiply by 5/18.
 
 #### Trap 6: Average Speed â‰  Arithmetic Mean
 **Trap:** Taking (a+b)/2 as average speed when distances differ.
@@ -4171,14 +4171,14 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 **Correct:** Total distance = 60 km. Time = 30/60 + 30/30 = 0.5 + 1 = 1.5 h. Avg = 60/1.5 = 40 km/h.
 **Rule:** Average speed = Total Distance / Total Time. Never simple mean unless time is equal.
 
-#### Trap 7: Ratio Mistake â€” "Part to Total" Confusion
+#### Trap 7: Ratio Mistake → "Part to Total" Confusion
 **Trap:** Interpreting ratio shares incorrectly.
 **Example:** A:B = 3:5. Student says A has 3/5 of total. **Correct:** A = 3/8 of total.
 **Rule:** If ratio a:b, then first part = a/(a+b) of the whole, second = b/(a+b).
 
 #### Trap 8: Work "Negative Work" in Pipes
 **Trap:** Forgetting to make an emptying pipe's rate negative.
-**Example:** Pipe A fills in 10 min, Pipe B empties in 15 min. Student adds: 1/10 + 1/15 = 1/6 â†’ 6 min. **Correct:** Net rate = 1/10 âˆ’ 1/15 = (3âˆ’2)/30 = 1/30 â†’ 30 min.
+**Example:** Pipe A fills in 10 min, Pipe B empties in 15 min. Student adds: 1/10 + 1/15 = 1/6 → 6 min. **Correct:** Net rate = 1/10 âˆ’ 1/15 = (3âˆ’2)/30 = 1/30 → 30 min.
 
 #### Trap 9: Simple vs Compound Interest
 **Trap:** Forgetting that SI is linear and CI is exponential.
@@ -4192,16 +4192,16 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 **Trap:** Adding probabilities without checking overlap.
 **Example:** P(A) = 0.4, P(B) = 0.3, P(Aâˆ©B) = 0.1. Student says P(AâˆªB) = 0.7. **Correct:** 0.4 + 0.3 âˆ’ 0.1 = 0.6.
 
-#### Trap 12: "Successive Discounts" â€” Not Additive
+#### Trap 12: "Successive Discounts" → Not Additive
 **Trap:** Adding successive discounts.
-**Example:** Two discounts: 20% and 10%. Wrong: 30% off. **Correct:** Net price = MP Ã— 0.8 Ã— 0.9 = 0.72MP â†’ 28% discount.
+**Example:** Two discounts: 20% and 10%. Wrong: 30% off. **Correct:** Net price = MP Ã— 0.8 Ã— 0.9 = 0.72MP → 28% discount.
 **Formula:** Effective discount = a + b âˆ’ ab/100.
 
 #### Trap 13: "Mixing Percentages and Absolute Values"
 **Trap:** Applying a percentage to the wrong base.
 **Example:** Salary was â‚¹50,000, now â‚¹60,000. My friend says I got a 10% hike. **Correct:** (10000/50000) Ã— 100 = 20%.
 
-#### Trap 14: Ages â€” Past/Future Confusion
+#### Trap 14: Ages → Past/Future Confusion
 **Trap:** Misreading "x years ago" vs "x years hence."
 **Example:** "5 years ago, father was 3 times son's age. 5 years hence, father will be twice son's age." Students forget to add/subtract correctly from both ages.
 
@@ -4209,20 +4209,20 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 **Trap:** Assuming "Some A are B" implies "Some A are not B."
 **Correct:** "Some" in logic means "at least one." It does NOT exclude "All." When A is a subset of B, "Some A are B" is true even if ALL A are B.
 
-#### Trap 16: Clock Angle â€” Hour Hand Movement
+#### Trap 16: Clock Angle → Hour Hand Movement
 **Trap:** Forgetting the hour hand moves continuously.
 **Example:** At 3:30, student says angle = 0Â° (both point to 6 and 3). **Correct:** Minute hand at 6 (180Â°), hour hand at 3 + 30/60 Ã— 30Â° = 105Â°. Angle = |180 âˆ’ 105| = 75Â°.
 
-#### Trap 17: Calendar â€” Odd Days Count
+#### Trap 17: Calendar → Odd Days Count
 **Trap:** Not accounting for leap years correctly.
 **Rule:** Every year divisible by 4 is a leap year EXCEPT century years not divisible by 400. Year 1900: not a leap year. Year 2000: leap year.
 
 #### Trap 18: Permutation vs Combination
 **Trap:** Using permutation when order doesn't matter.
 **Example:** Selecting 3 students from 10. Wrong: Â¹â°Pâ‚ƒ = 720. **Correct:** Â¹â°Câ‚ƒ = 120.
-**Rule:** Permutation â†’ arrangement (order matters). Combination â†’ selection (order doesn't).
+**Rule:** Permutation → arrangement (order matters). Combination → selection (order doesn't).
 
-#### Trap 19: Data Interpretation â€” Axis Scale
+#### Trap 19: Data Interpretation → Axis Scale
 **Trap:** Not checking if the graph axis starts at 0.
 **Example:** A bar chart showing revenue growth looks dramatic, but the y-axis starts at 90% instead of 0%. Always check axis origin before concluding trends.
 
@@ -4236,15 +4236,15 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Number System
 - **Unit Digit Cyclicity:** Every digit has a cycle of length 1, 2, or 4 for its powers.
-  - 0,1,5,6 â†’ same digit always
-  - 2 â†’ 2,4,8,6 (cycle 4)
-  - 3 â†’ 3,9,7,1 (cycle 4)
-  - 4 â†’ 4,6 (cycle 2)
-  - 7 â†’ 7,9,3,1 (cycle 4)
-  - 8 â†’ 8,4,2,6 (cycle 4)
-  - 9 â†’ 9,1 (cycle 2)
+  - 0,1,5,6 → same digit always
+  - 2 → 2,4,8,6 (cycle 4)
+  - 3 → 3,9,7,1 (cycle 4)
+  - 4 → 4,6 (cycle 2)
+  - 7 → 7,9,3,1 (cycle 4)
+  - 8 → 8,4,2,6 (cycle 4)
+  - 9 → 9,1 (cycle 2)
 - **Digital Root (Sum of Digits):** If a number is divisible by 9, its digital root is 9. Check divisibility fast.
-- **Remainder by 9:** Sum of digits mod 9 = remainder when divided by 9 (except 9â†’0).
+- **Remainder by 9:** Sum of digits mod 9 = remainder when divided by 9 (except 9→0).
 
 #### Percentage
 - **Fraction Equivalents:**
@@ -4255,12 +4255,12 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 #### Profit & Loss
 - **SP = CP Ã— (1 Â± P%/100)** where + for profit, âˆ’ for loss.
-- **Two items sold at same SP â€” one with x% profit, other with x% loss: Overall = net loss of xÂ²/100%.**
-- **Marked Price â†’ Discount â†’ SP â†’ Profit: Chain backwards: CP = MP Ã— (1âˆ’d%) / (1+p%).**
+- **Two items sold at same SP → one with x% profit, other with x% loss: Overall = net loss of xÂ²/100%.**
+- **Marked Price → Discount → SP → Profit: Chain backwards: CP = MP Ã— (1âˆ’d%) / (1+p%).**
 
 #### Ratio & Proportion
 - **Componendo-Dividendo:** If a/b = c/d, then (a+b)/(aâˆ’b) = (c+d)/(câˆ’d).
-- **Inverse Ratio:** a:b â†’ b:a.
+- **Inverse Ratio:** a:b → b:a.
 - **Duplicate Ratio:** aÂ²:bÂ².
 - **Triplicate Ratio:** aÂ³:bÂ³.
 
@@ -4326,7 +4326,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 | | Amount (CI) = P(1 + R/100)áµ€ | CI formula |
 | | CI half-yearly = P(1 + R/200)Â²áµ€ | Semi-annual compounding |
 | **Ratio** | a:b = a/b | Ratio representation |
-| | a:b = c:d â†’ ad = bc | Cross multiplication |
+| | a:b = c:d → ad = bc | Cross multiplication |
 | | a:b and c:d compounded = ac:bd | Compound ratio |
 | | If a:b = c:d, then (aÂ±b):b = (cÂ±d):d | Componendo-Dividendo |
 | **Time & Work** | A+B together = ab/(a+b) | A takes a days, B takes b days |
@@ -4336,8 +4336,8 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 | | Avg speed = Total D / Total T | Not arithmetic mean |
 | | Relative speed (toward) = vâ‚ + vâ‚‚ | Opposite direction |
 | | Relative speed (same) = |vâ‚ âˆ’ vâ‚‚| | Same direction |
-| | m/s â†’ km/h: multiply by 18/5 | |
-| | km/h â†’ m/s: multiply by 5/18 | |
+| | m/s → km/h: multiply by 18/5 | |
+| | km/h → m/s: multiply by 5/18 | |
 | **Pipes** | A+B fill = ab/(a+b) | A fills in a min, B in b min |
 | | Net rate = fill rates âˆ’ empty rates | Empty pipe = negative |
 | **Alligation** | (Qtyâ‚)/(Qtyâ‚‚) = (Pâ‚‚ âˆ’ M)/(M âˆ’ Pâ‚) | Cross rule for mixtures |
@@ -4372,7 +4372,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 | | Hour hand speed = 0.5Â°/min | |
 | **Calendar** | Odd days in a year = 1 (365 = 52Ã—7 + 1) | |
 | | Leap year odd days = 2 | 366 = 52Ã—7 + 2 |
-| | Century has 5 odd days (100yrs) | 100 mod 7 = 2, but leap â†’ 5 |
+| | Century has 5 odd days (100yrs) | 100 mod 7 = 2, but leap → 5 |
 | | 400 years have 0 odd days | Monday repeats every 400yrs |
 | **Cubes** | Cubes with paint on: 0 faces = (nâˆ’2)Â³ | nÃ—nÃ—n cube |
 | | 1 face = 6(nâˆ’2)Â² | |
@@ -4401,7 +4401,7 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 **Question-Specific Tips:**
 - **Data Interpretation:** Always read the axis labels and units first. Often the calculation is simple once you identify what's being asked.
 - **Syllogisms:** Draw Venn diagrams. Never rely on intuition. Four standard cases: All=subset, Some=intersection, No=disjoint, Some Not=non-empty difference.
-- **Blood Relations:** Draw a family tree. Use = for marriage, â†’ for parent-child. Solid for male, hollow for female.
+- **Blood Relations:** Draw a family tree. Use = for marriage, → for parent-child. Solid for male, hollow for female.
 - **Clocks & Calendars:** For clocks, always compute the exact hour hand position (it moves with minutes!). For calendars, compute odd days methodically.
 - **Probability:** Check if events are independent/mutually exclusive/exhaustive before applying formulas.
 - **Profit/Loss:** Write CP, MP, SP clearly and note which is given. One variable at a time.

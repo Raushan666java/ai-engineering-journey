@@ -1103,7 +1103,7 @@ Same as set: `insert()` does not invalidate existing iterators; `erase()` invali
 
 #### Real-World Analogy
 
-A physical dictionary (word â†’ definition). Words are organized alphabetically. You can look up any word in O(log n) time using the book's index (binary search through dictionary pages). Adding a new word requires inserting it in the correct alphabetical position. Iterating through the dictionary gives words in alphabetical order.
+A physical dictionary (word → definition). Words are organized alphabetically. You can look up any word in O(log n) time using the book's index (binary search through dictionary pages). Adding a new word requires inserting it in the correct alphabetical position. Iterating through the dictionary gives words in alphabetical order.
 
 #### Internal Implementation
 
@@ -2731,7 +2731,7 @@ v.push_back(50);
 
 1. **Check capacity:** `size == capacity` (4 == 4), so growth is needed.
 
-2. **Allocate new block:** Allocate new memory of size `capacity * growth_factor` elements. GCC uses 2x â†’ new capacity = 8 â†’ `8 * sizeof(int) = 32 bytes` allocated via `operator new`.
+2. **Allocate new block:** Allocate new memory of size `capacity * growth_factor` elements. GCC uses 2x → new capacity = 8 → `8 * sizeof(int) = 32 bytes` allocated via `operator new`.
 
 3. **Move (or copy) elements:** Move each existing element from old block to new block.
    - For `int` (trivially copyable): single `memcpy` or `memmove` call copies all 4 ints.
@@ -2741,7 +2741,7 @@ v.push_back(50);
 
 5. **Deallocate old block:** `operator delete` on the old memory.
 
-6. **Update pointers:** `_start` â†’ new block start, `_finish` â†’ new block start + old_size + 1, `_end_of_storage` â†’ new block start + new_capacity.
+6. **Update pointers:** `_start` → new block start, `_finish` → new block start + old_size + 1, `_end_of_storage` → new block start + new_capacity.
 
 7. **Construct new element:** Construct argument in-place at `_finish - 1`.
 

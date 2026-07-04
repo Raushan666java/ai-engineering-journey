@@ -44,12 +44,12 @@ flowchart LR
 
 A problem (language) is **decidable** if there exists an algorithm (Turing machine that always halts) that correctly answers yes/no for every instance. Otherwise, it is **undecidable**.
 
-**Decidable problems** â€” the golden age of automata theory:
+**Decidable problems** → the golden age of automata theory:
 - All problems about DFAs (membership, emptiness, finiteness, equivalence) are decidable.
 - All problems about CFGs (membership, emptiness) are decidable.
 - Many problems about TMs (membership in specific cases) are decidable.
 
-**Undecidable problems** â€” the frontier:
+**Undecidable problems** → the frontier:
 - The halting problem for Turing machines.
 - The equivalence problem for CFGs.
 - Hilbert's tenth problem (solving Diophantine equations).
@@ -80,7 +80,7 @@ Now ask: what does D do on input âŸ¨DâŸ©?
 
 Thus H cannot exist. HALT_TM is undecidable.
 
-**Intuition:** The halting problem asks a TM to predict its own behavior â€” a task that leads to paradox, much like the self-referential "This statement is false."
+**Intuition:** The halting problem asks a TM to predict its own behavior → a task that leads to paradox, much like the self-referential "This statement is false."
 
 ### 10.3 The Diagonalization Language
 
@@ -220,7 +220,7 @@ Rice's theorem is a powerful generalization: any non-trivial property of the lan
 
 **Examples of decidable properties (trivial or syntactic):**
 - Does M have exactly 10 states? (Syntactic, not about the language.)
-- Is L(M) = âˆ… where M is a DFA? (Not about TMs â€” Rice's theorem applies to TMs only.)
+- Is L(M) = âˆ… where M is a DFA? (Not about TMs → Rice's theorem applies to TMs only.)
 
 ## Examples
 
@@ -236,7 +236,7 @@ Show that EMPTY_TM = { âŸ¨MâŸ© | L(M) = âˆ… } is undecidable.
 Thus: M halts on w âŸ¹ L(M_w) â‰  âˆ…. M loops on w âŸ¹ L(M_w) = âˆ….
 Therefore, HALT_TM â‰¤_m EMPTY_TM.
 
-If EMPTY_TM were decidable, we could decide HALT_TM â€” contradiction. So EMPTY_TM is undecidable.
+If EMPTY_TM were decidable, we could decide HALT_TM → contradiction. So EMPTY_TM is undecidable.
 
 ### Example 10.2: Reducing A_TM to REGULAR_TM
 
@@ -249,7 +249,7 @@ Show REGULAR_TM = { âŸ¨MâŸ© | L(M) is regular } is undecidable.
 
 Thus: âŸ¨M, wâŸ© âˆˆ A_TM âŸ¹ L(M') is non-regular. âŸ¨M, wâŸ© âˆ‰ A_TM âŸ¹ L(M') is regular (empty).
 
-A decider for REGULAR_TM would decide A_TM â€” contradiction.
+A decider for REGULAR_TM would decide A_TM → contradiction.
 
 ### Example 10.3: Applying Rice's Theorem
 
@@ -261,7 +261,7 @@ This is non-trivial:
 
 By Rice's theorem, { âŸ¨MâŸ© | "hello" âˆˆ L(M) } is undecidable.
 
-### Example 10.4: Decidable Problems â€” DFA Emptiness
+### Example 10.4: Decidable Problems → DFA Emptiness
 
 **Algorithm** for EMPTY_DFA = { âŸ¨MâŸ© | M is a DFA and L(M) = âˆ… }:
 1. Mark the start state.
@@ -269,7 +269,7 @@ By Rice's theorem, { âŸ¨MâŸ© | "hello" âˆˆ L(M) } is undecidable.
 3. If no accepting state is marked, accept (L(M) = âˆ…). Otherwise reject.
 This is essentially graph reachability, runtime O(|Q| + |E|).
 
-### Example 10.5: Decidable Problems â€” CFG Membership
+### Example 10.5: Decidable Problems → CFG Membership
 
 **Algorithm** for A_CFG = { âŸ¨G, wâŸ© | G generates w }:
 1. Convert G to CNF.

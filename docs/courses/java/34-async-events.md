@@ -19,9 +19,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Async in Spring â€” `@Async`, `@EnableAsync`, and `TaskExecutor` | Decouple method execution from caller thread |
-| Spring Events â€” `ApplicationEventPublisher` and `@EventListener` | In-process pub/sub for loose coupling |
-| Transaction-Bound Events â€” `@TransactionalEventListener` | React to events after transaction commit or rollback |
+| Async in Spring → `@Async`, `@EnableAsync`, and `TaskExecutor` | Decouple method execution from caller thread |
+| Spring Events → `ApplicationEventPublisher` and `@EventListener` | In-process pub/sub for loose coupling |
+| Transaction-Bound Events → `@TransactionalEventListener` | React to events after transaction commit or rollback |
 
 ---
 ## Chapter Roadmap
@@ -72,7 +72,7 @@ flowchart TD
 ## Chapter Quiz
 
 1. Which annotation enables async processing in Spring? **Answer:** `@EnableAsync` on a `@Configuration` class
-2. What is the default behavior of `ApplicationEventPublisher.publishEvent()`? **Answer:** Synchronous â€” the publisher blocks until all listeners finish
+2. What is the default behavior of `ApplicationEventPublisher.publishEvent()`? **Answer:** Synchronous → the publisher blocks until all listeners finish
 3. Which event listener annotation reacts only after a successful transaction? **Answer:** `@TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)`
 
 ## Theory
@@ -1412,7 +1412,7 @@ public class AdvancedExecutorConfig {
 ```
 
 > [!TIP]
-> Always configure a custom `TaskExecutor` bean â€” the default `SimpleAsyncTaskExecutor` creates a new thread per invocation with no pool.
+> Always configure a custom `TaskExecutor` bean → the default `SimpleAsyncTaskExecutor` creates a new thread per invocation with no pool.
 
 > [!WARNING]
 > Async listeners can lose events on application shutdown. Consider using an outbox pattern for critical events.

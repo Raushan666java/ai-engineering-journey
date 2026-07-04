@@ -1,4 +1,4 @@
-# GATE CS Mock Test 7 â€” Full-Length Practice Paper
+# GATE CS Mock Test 7 → Full-Length Practice Paper
 
 
 ## Chapter at a Glance
@@ -410,10 +410,10 @@ flowchart LR
 
 **Q37 (1 Mark) [DBMS]:** Which of the following is a lossless and dependency-preserving decomposition?
 
-(A) R(ABCD) â†’ R1(AB), R2(CD) with FDs ABâ†’C, Câ†’D
-(B) R(ABCD) â†’ R1(ABC), R2(ACD) with FDs Aâ†’B, Câ†’D
-(C) R(ABCDE) â†’ R1(ABC), R2(ADE) with FDs Aâ†’BC, Dâ†’E
-(D) R(ABCD) â†’ R1(ABD), R2(BCD) with FDs Aâ†’D, Bâ†’C
+(A) R(ABCD) → R1(AB), R2(CD) with FDs AB→C, C→D
+(B) R(ABCD) → R1(ABC), R2(ACD) with FDs A→B, C→D
+(C) R(ABCDE) → R1(ABC), R2(ADE) with FDs A→BC, D→E
+(D) R(ABCD) → R1(ABD), R2(BCD) with FDs A→D, B→C
 
 ---
 
@@ -426,7 +426,7 @@ flowchart LR
 
 ---
 
-**Q39 (1 Mark) [CD]:** The value 5 in the grammar rule expr â†’ expr + term {$$ = $1 + $3;} represents:
+**Q39 (1 Mark) [CD]:** The value 5 in the grammar rule expr → expr + term {$$ = $1 + $3;} represents:
 
 (A) Synthesized attribute
 (B) Inherited attribute
@@ -534,7 +534,7 @@ flowchart LR
 
 ---
 
-**Q51 (2 Marks) [CD]:** For grammar S â†’ aS | bA, A â†’ cA | Îµ, what is FIRST(S)?
+**Q51 (2 Marks) [CD]:** For grammar S → aS | bA, A → cA | Îµ, what is FIRST(S)?
 
 (A) {a, b}
 (B) {a, b, c}
@@ -615,7 +615,7 @@ print(x, y)
 
 **Q3:** When "neither...nor" connects two subjects, the verb agrees with the closer subject. "friends" is plural, so "are" is correct. Option C uses past tense "were" but the present tense context calls for "are coming."
 
-**Q4:** Each letter is shifted forward by 2 positions: H+2=J, A+2=C, R+2=T, D+2=F. Similarly Sâ†’U, Oâ†’Q, Fâ†’H, Tâ†’V. Applying to EASY: E+2=G, A+2=C, S+2=U, Y+2=A, giving GCUA.
+**Q4:** Each letter is shifted forward by 2 positions: H+2=J, A+2=C, R+2=T, D+2=F. Similarly S→U, O→Q, F→H, T→V. Applying to EASY: E+2=G, A+2=C, S+2=U, Y+2=A, giving GCUA.
 
 **Q5:** Since all squares are rectangles, and some rectangles are not polygons, it does not guarantee any square is in that subset. But we know no squares overlap circles, meaning no square is inside any circle. Therefore, some circles (any circle) are definitely not squares. Option C is guaranteed true.
 

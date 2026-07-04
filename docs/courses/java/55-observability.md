@@ -36,7 +36,7 @@ By the end of this chapter, you will be able to:
 ---
 
 ## 1. The Observability Stack
-> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -73,9 +73,9 @@ By the end of this chapter, you will be able to:
 
 | Pillar | Tool | Purpose |
 |--------|------|---------|
-| **Metrics** | Micrometer â†’ Prometheus â†’ Grafana | Numerical measurements over time |
-| **Logging** | Logback â†’ ELK/Loki â†’ Grafana | Discrete events with context |
-| **Tracing** | Micrometer Tracing â†’ Jaeger/Tempo | Request flow across services |
+| **Metrics** | Micrometer → Prometheus → Grafana | Numerical measurements over time |
+| **Logging** | Logback → ELK/Loki → Grafana | Discrete events with context |
+| **Tracing** | Micrometer Tracing → Jaeger/Tempo | Request flow across services |
 
 This chapter covers **Metrics** and **Logging**. Tracing is covered in a dedicated chapter.
 
@@ -485,7 +485,7 @@ public class OrderService {
 
     @Counted(value = "orders.created.counted", extraTags = {"source", "web"})
     public Order createOrder(OrderRequest request) {
-        // Creates an order â€” counter incremented automatically
+        // Creates an order → counter incremented automatically
         return processOrderCreation(request);
     }
 
@@ -499,7 +499,7 @@ public class OrderService {
     @Timed(value = "orders.fulfillment.timed", longTask = true,
            description = "Time to fulfill an order")
     public void fulfillOrder(String orderId) {
-        // Long-running task â€” shows active tasks count
+        // Long-running task → shows active tasks count
         executeFulfillment(orderId);
     }
 
@@ -2088,7 +2088,7 @@ public class StructuredLogger {
 
 ## 7. ELK/Loki Log Aggregation
 
-### 7.1 ELK Stack (Filebeat â†’ Logstash â†’ Elasticsearch â†’ Kibana)
+### 7.1 ELK Stack (Filebeat → Logstash → Elasticsearch → Kibana)
 
 ```yaml
 # docker-compose.elk.yml
@@ -2241,7 +2241,7 @@ output {
 }
 ```
 
-### 7.4 Loki Stack (Promtail â†’ Loki â†’ Grafana)
+### 7.4 Loki Stack (Promtail → Loki → Grafana)
 
 ```yaml
 # docker-compose.loki.yml
@@ -2526,7 +2526,7 @@ public class ServiceLevelIndicators {
 ### 8.3 SLO Burn Rate Alert
 
 ```yaml
-# prometheus-alerts.yml â€” SLO-based alerting
+# prometheus-alerts.yml → SLO-based alerting
 
 > **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 groups:
@@ -2970,7 +2970,7 @@ receivers:
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â€” it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer</summary>

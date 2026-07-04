@@ -1,6 +1,6 @@
-# 07 â€” Company-Wise Previous Year Questions
+# 07 → Company-Wise Previous Year Questions
 
-> **Previous:** [06 â€” HR Interview, GD & Soft Skills](06-hr-gd-soft-skills.md)  
+> **Previous:** [06 → HR Interview, GD & Soft Skills](06-hr-gd-soft-skills.md)  
 > **Next:** None (Last Chapter)
 
 ## Chapter at a Glance
@@ -506,7 +506,7 @@ public class WordLadder {
 ```
 **Time:** O(M^2 * N) where M is word length, N is wordList size | **Space:** O(M * N)
 
-### Problem 11: Two Sum II â€” Input Array is Sorted (Amazon, 2024)
+### Problem 11: Two Sum II → Input Array is Sorted (Amazon, 2024)
 **Difficulty:** Medium
 
 **Problem Statement:** Given a 1-indexed array of integers sorted in non-decreasing order, find two numbers that add up to a specific target. Return the indices as a 1-indexed array.
@@ -541,7 +541,7 @@ public class TwoSumSorted {
 
 ---
 
-### Problem 12: Sliding Window Maximum â€” Variation (Amazon, 2024)
+### Problem 12: Sliding Window Maximum → Variation (Amazon, 2024)
 **Difficulty:** Hard
 
 **Problem Statement:** Given an array of integers and a sliding window of size k, return an array of the maximum element for each window position. Additionally, return the minimum of these maximum values across all windows.
@@ -760,7 +760,7 @@ public class NaryCodecDemo {
 
 ---
 
-### Amazon Leadership Principles â€” Behavioral Questions
+### Amazon Leadership Principles → Behavioral Questions
 
 #### Q1: Tell me about a time you took ownership of a problem outside your scope. (Ownership)
 **STAR Answer:**
@@ -801,7 +801,7 @@ public class NaryCodecDemo {
 
 ## Google
 
-### Problem 1: Two Sum â€” Sorted Input (Google, 2024)
+### Problem 1: Two Sum → Sorted Input (Google, 2024)
 **Difficulty:** Medium
 
 **Problem Statement:** Given a 1-indexed array of integers sorted in non-decreasing order, find two numbers that add up to a specific target number. Return the indices as a 1-indexed array.
@@ -1348,13 +1348,13 @@ public class GoogleRandomPickDemo {
 
 ---
 
-### Googleyness â€” Behavioral Questions
+### Googleyness → Behavioral Questions
 
 #### Q1: Tell me about a time you had to lead a team without formal authority.
 **Answer:** During a university project, I noticed our team was falling behind on a database migration task. I organized a quick knowledge-sharing session on the migration approach, volunteered to write the core migration script, and set up daily stand-up check-ins. By demonstrating expertise and initiative rather than demanding authority, the team naturally followed. We completed the migration two days ahead of schedule.
 
 #### Q2: Describe a time you failed and what you learned from it.
-**Answer:** In my sophomore year, I attempted to build a full-stack application without proper requirements gathering. I spent two weeks building features the user never needed. The failure taught me to validate assumptions early â€” write user stories, create wireframes, and get user feedback before writing code. I now apply this approach to every project, starting with a simple prototype or MVP.
+**Answer:** In my sophomore year, I attempted to build a full-stack application without proper requirements gathering. I spent two weeks building features the user never needed. The failure taught me to validate assumptions early → write user stories, create wireframes, and get user feedback before writing code. I now apply this approach to every project, starting with a simple prototype or MVP.
 
 #### Q3: How do you handle ambiguity when there are no clear requirements?
 **Answer:** I break the problem into smaller pieces and research analogous solutions. For example, during an internship, I was asked to "improve API response times" without specific targets. I first instrumented the API to gather latency data, identified the slowest endpoints, benchmarked against industry standards for each operation type, and set concrete targets (p95 < 200ms for reads). I then iterated on optimizations, measuring at each step.
@@ -1780,10 +1780,10 @@ public class BasicCalculatorII {
 
 ---
 
-### Microsoft ASK (Ability, Skills, Knowledge) â€” Behavioral
+### Microsoft ASK (Ability, Skills, Knowledge) → Behavioral
 
 #### Q1: Tell me about a time you had to quickly learn a new technology to complete a project.
-**Answer:** For a college project, I needed to implement real-time WebSocket communication for a chat app, but I only knew REST APIs. I spent 48 hours learning WebSocket protocol fundamentals, reading Spring WebSocket documentation, and building a prototype. I successfully integrated the feature and later taught the concept to my teammates. This experience taught me that structured learning â€” starting with fundamentals, then building a minimal working example â€” is more effective than diving into advanced tutorials.
+**Answer:** For a college project, I needed to implement real-time WebSocket communication for a chat app, but I only knew REST APIs. I spent 48 hours learning WebSocket protocol fundamentals, reading Spring WebSocket documentation, and building a prototype. I successfully integrated the feature and later taught the concept to my teammates. This experience taught me that structured learning → starting with fundamentals, then building a minimal working example → is more effective than diving into advanced tutorials.
 
 #### Q2: Describe a situation where you had to convince others to adopt your approach.
 **Answer:** During a hackathon, I proposed using Kotlin instead of Java for Android development to leverage null safety features. Teammates were hesitant since nobody had used Kotlin before. I built a small feature in both languages, showing that Kotlin reduced boilerplate by 40% and prevented NPEs at compile time. The team agreed, and we delivered a crash-free app that won "Best Technical Implementation."
@@ -1803,7 +1803,7 @@ public class BasicCalculatorII {
 - **Scale-out:** Workers are stateless and horizontally scalable
 
 #### Q2: Design an Online Code Evaluation Platform
-- **Architecture:** API Gateway â†’ Submission Service â†’ Sandbox (Docker containers per language)
+- **Architecture:** API Gateway → Submission Service → Sandbox (Docker containers per language)
 - **Isolation:** Each code submission runs in a resource-constrained Docker container with 256MB RAM limit and 5s timeout
 - **Queue:** Kafka for submission queue, with consumer workers pulling from the queue
 - **Results:** Stored in database, pushed to client via WebSocket
@@ -2100,7 +2100,7 @@ public class RandomPickDemo {
 
 ---
 
-### Problem 7: Range Sum Query â€” Immutable (Meta, 2024)
+### Problem 7: Range Sum Query → Immutable (Meta, 2024)
 **Difficulty:** Easy
 
 **Problem Statement:** Given an integer array nums, implement a class that supports sumRange(left, right) which returns the sum of elements from index left to right inclusive. Optimize for frequent sum queries.
@@ -2276,7 +2276,7 @@ public class VerticalOrderTraversal {
 ### Meta Behavioral Questions
 
 #### Q1: Tell me about a time you moved fast and broke things. How did you handle it?
-**Answer:** During a college hackathon, I deployed an API endpoint without adding input validation, resulting in a production crash. I immediately rolled back, implemented proper validation using a JSR-380 annotated DTO, and wrote unit tests covering edge cases. I learned that "move fast" requires automated guardrails â€” tests, validation, and CI checks â€” not sacrificing quality.
+**Answer:** During a college hackathon, I deployed an API endpoint without adding input validation, resulting in a production crash. I immediately rolled back, implemented proper validation using a JSR-380 annotated DTO, and wrote unit tests covering edge cases. I learned that "move fast" requires automated guardrails → tests, validation, and CI checks → not sacrificing quality.
 
 #### Q2: Describe a conflict you had within your team and how you resolved it.
 **Answer:** Two team members disagreed on using microservices vs. a monolith for our project. I suggested a compromise: start with a modular monolith with clear package boundaries, with the option to extract services later if needed. We agreed on the approach, and the modular design actually made future extraction trivial. The project was delivered on time.
@@ -2959,7 +2959,7 @@ public class RestaurantRecommender {
 ### Problem 2: Analyze Delivery Time Outliers (Zomato Data Problem, 2024)
 **Difficulty:** Medium
 
-**Problem Statement:** Given an array of delivery times in minutes, find all outliers â€” values that are more than 1.5 * IQR above Q3 or below Q1.
+**Problem Statement:** Given an array of delivery times in minutes, find all outliers → values that are more than 1.5 * IQR above Q3 or below Q1.
 
 ```java
 import java.util.*;
@@ -3694,7 +3694,7 @@ d) Cannot be determined
 #### Q3: Coding-Decoding
 **Question:** In a certain code, "HELLO" is coded as "IFMMP". What is "WORLD" coded as?
 
-**Answer:** Each letter is shifted by +1. Wâ†’X, Oâ†’P, Râ†’S, Lâ†’M, Dâ†’E. Code: "XPSME".
+**Answer:** Each letter is shifted by +1. W→X, O→P, R→S, L→M, D→E. Code: "XPSME".
 
 #### Q4: Clock and Calendar
 **Question:** How many times do the hour and minute hands overlap in a 12-hour period?
@@ -3908,7 +3908,7 @@ public class RemoveVowels {
 #### Q2: Simple Interest
 **Question:** At what rate of simple interest will a sum of money double in 10 years?
 
-**Answer:** SI = P * R * T / 100. For doubling, SI = P. So P = P * R * 10 / 100 â†’ R = 10%.
+**Answer:** SI = P * R * T / 100. For doubling, SI = P. So P = P * R * 10 / 100 → R = 10%.
 
 #### Q3: Ratio and Proportion
 **Question:** If a:b = 2:3 and b:c = 4:5, find a:b:c.
@@ -3918,12 +3918,12 @@ public class RemoveVowels {
 #### Q4: Age Problem
 **Question:** Five years ago, father's age was four times his son's age. Five years later, father's age will be three times his son's age. Find their present ages.
 
-**Answer:** Let son = x, father = y. 5 years ago: y - 5 = 4(x - 5). 5 years later: y + 5 = 3(x + 5). Solving: y = 4x - 15 and y = 3x + 10. 4x - 15 = 3x + 10 â†’ x = 25, y = 85. Son = 25, Father = 85.
+**Answer:** Let son = x, father = y. 5 years ago: y - 5 = 4(x - 5). 5 years later: y + 5 = 3(x + 5). Solving: y = 4x - 15 and y = 3x + 10. 4x - 15 = 3x + 10 → x = 25, y = 85. Son = 25, Father = 85.
 
 #### Q5: Area and Perimeter
 **Question:** The length of a rectangle is twice its width. If the perimeter is 60m, find the area.
 
-**Answer:** Let width = w, length = 2w. Perimeter = 2(2w + w) = 6w = 60 â†’ w = 10. Length = 20. Area = 20 * 10 = 200 sq m.
+**Answer:** Let width = w, length = 2w. Perimeter = 2(2w + w) = 6w = 60 → w = 10. Length = 20. Area = 20 * 10 = 200 sq m.
 
 ---
 
@@ -4012,7 +4012,7 @@ public class VowelConsonantCount {
 #### Q6: Percentage
 **Question:** If 30% of a number is 45, what is 60% of the number?
 
-**Answer:** Let number = x. 0.3x = 45 â†’ x = 150. 60% of 150 = 0.6 * 150 = 90.
+**Answer:** Let number = x. 0.3x = 45 → x = 150. 60% of 150 = 0.6 * 150 = 90.
 
 #### Q7: Probability
 **Question:** A dice is rolled twice. What is the probability of getting a sum of 7?
@@ -4343,7 +4343,7 @@ public class CharFrequency {
 
 ---
 
-## Quick Reference â€” Common Patterns by Company
+## Quick Reference → Common Patterns by Company
 
 | Company | Common Patterns | Focus Area |
 |---------|----------------|------------|
@@ -4369,7 +4369,7 @@ public class CharFrequency {
 ## Netflix
 
 ### Interview Process Overview
-Netflix interviews focus on system design, problem solving, and cultural fit. The process typically includes: Recruiter Screen â†’ Technical Phone Screen (coding + system design) â†’ Onsite (3-4 rounds: coding, system design, behavioral/culture) â†’ Final debrief. Netflix emphasizes its unique culture of "Freedom and Responsibility."
+Netflix interviews focus on system design, problem solving, and cultural fit. The process typically includes: Recruiter Screen → Technical Phone Screen (coding + system design) → Onsite (3-4 rounds: coding, system design, behavioral/culture) → Final debrief. Netflix emphasizes its unique culture of "Freedom and Responsibility."
 
 ---
 
@@ -4547,7 +4547,7 @@ public class ContentFilterDemo {
 
 ---
 
-### Problem 3: Watch History Patterns â€” Most Watched Genre (Netflix, 2023)
+### Problem 3: Watch History Patterns → Most Watched Genre (Netflix, 2023)
 **Difficulty:** Medium
 
 **Problem Statement:** Given a user's watch history as a list of (timestamp, movie) pairs and a mapping of movies to genres, find the most-watched genre in the last N days.
@@ -4689,12 +4689,12 @@ public class StreamingOptimizerDemo {
 
 ---
 
-### Netflix Culture Deck â€” Behavioral Questions
+### Netflix Culture Deck → Behavioral Questions
 
 #### Q1: What does "Freedom and Responsibility" mean to you in a work context? (Netflix Culture)
 **Answer:** Freedom and Responsibility means having full ownership of your work without micromanagement, but being held accountable for outcomes. In practice, I would take initiative on projects I believe add value, communicate transparently about progress and challenges, and accept full responsibility for both successes and failures. For example, during a group project, I identified a critical performance bottleneck and took ownership of fixing it without waiting for a manager to assign the task. I communicated my approach to the team, delivered the fix, and the application's response time improved by 60%.
 
-#### Q2: Tell me about a time you delivered a high-impact result with minimal resources. (Netflix â€” Impact)
+#### Q2: Tell me about a time you delivered a high-impact result with minimal resources. (Netflix → Impact)
 **Answer:** As a college placement coordinator, I was tasked with building a portal to manage 500+ student registrations for campus recruitment drives with zero budget and a two-week deadline. I used open-source technologies (React + Firebase), implemented an automated email notification system, and built the entire platform myself. The portal handled all 500+ registrations without issues on day one, reduced manual data entry by 90%, and was subsequently adopted by three other departments. This taught me that high impact comes from focus and resourcefulness, not large teams or budgets.
 
 ---
@@ -4702,11 +4702,11 @@ public class StreamingOptimizerDemo {
 ## Adobe
 
 ### Interview Process Overview
-Adobe's interview process includes: Online Assessment (coding + aptitude) â†’ Technical Phone Screen â†’ Onsite (4-5 rounds): Data Structures & Algorithms, System Design, Problem Solving, Managerial Round, and HR. Adobe values innovation, creativity, and technical depth. Expect questions on OOP design patterns, multithreading, and product-specific technologies.
+Adobe's interview process includes: Online Assessment (coding + aptitude) → Technical Phone Screen → Onsite (4-5 rounds): Data Structures & Algorithms, System Design, Problem Solving, Managerial Round, and HR. Adobe values innovation, creativity, and technical depth. Expect questions on OOP design patterns, multithreading, and product-specific technologies.
 
 ---
 
-### Problem 1: Design a Photo Editor Filter â€” Brightness Adjustment (Adobe, 2024)
+### Problem 1: Design a Photo Editor Filter → Brightness Adjustment (Adobe, 2024)
 **Difficulty:** Medium
 
 **Problem Statement:** Given an image represented as a 2D array of pixels (each pixel has RGB values 0-255), implement a brightness adjustment filter. The adjustment value can be positive (brighten) or negative (darken), clamped to [0, 255].
@@ -4865,7 +4865,7 @@ public class FindPeakElement {
 ## Goldman Sachs
 
 ### Interview Process Overview
-Goldman Sachs follows a structured recruitment process: Online Assessment (HackerRank â€” 2 coding problems + 1 SQL + aptitude) â†’ Superday (4-5 back-to-back interviews): Technical rounds covering data structures, algorithms, probability/puzzles, system design, and behavioral. GS values technical excellence, risk awareness, and collaboration. Expect questions on arrays, hash maps, trees, and dynamic programming with a focus on clean, production-quality code.
+Goldman Sachs follows a structured recruitment process: Online Assessment (HackerRank → 2 coding problems + 1 SQL + aptitude) → Superday (4-5 back-to-back interviews): Technical rounds covering data structures, algorithms, probability/puzzles, system design, and behavioral. GS values technical excellence, risk awareness, and collaboration. Expect questions on arrays, hash maps, trees, and dynamic programming with a focus on clean, production-quality code.
 
 ---
 
@@ -5036,7 +5036,7 @@ public class MinPathSum {
 
     public static void main(String[] args) {
         int[][] grid = {{1,3,1},{1,5,1},{4,2,1}};
-        System.out.println("Min path sum: " + minPathSum(grid)); // 7 (1â†’3â†’1â†’1â†’1)
+        System.out.println("Min path sum: " + minPathSum(grid)); // 7 (1→3→1→1→1)
     }
 }
 ```
@@ -5057,7 +5057,7 @@ public class MinPathSum {
 ## Apple
 
 ### Interview Process Overview
-Apple's interview process is rigorous and values craftsmanship. It typically includes: Recruiter Screen â†’ Technical Phone Screen (1-2 LeetCode Medium/Hard problems) â†’ On-site (6-7 rounds: coding, system design, hiring manager, behavioral). Apple engineers code in Swift, Objective-C, Java, and C++. They value product passion, attention to detail, and cross-functional thinking. Privacy and user experience are central themes.
+Apple's interview process is rigorous and values craftsmanship. It typically includes: Recruiter Screen → Technical Phone Screen (1-2 LeetCode Medium/Hard problems) → On-site (6-7 rounds: coding, system design, hiring manager, behavioral). Apple engineers code in Swift, Objective-C, Java, and C++. They value product passion, attention to detail, and cross-functional thinking. Privacy and user experience are central themes.
 
 ---
 
@@ -5264,7 +5264,7 @@ public class WordBreak {
 ## LinkedIn
 
 ### Interview Process Overview
-LinkedIn's interview process: Recruiter Call â†’ Technical Phone Screen (coding + system design basics) â†’ On-site (4-5 rounds: 2 coding, 1 system design, 1 behavioral/values, 1 hiring manager). LinkedIn values transformation, data-driven thinking, and graph algorithm expertise. Their engineering blog is an excellent preparation resource.
+LinkedIn's interview process: Recruiter Call → Technical Phone Screen (coding + system design basics) → On-site (4-5 rounds: 2 coding, 1 system design, 1 behavioral/values, 1 hiring manager). LinkedIn values transformation, data-driven thinking, and graph algorithm expertise. Their engineering blog is an excellent preparation resource.
 
 ---
 
@@ -5419,7 +5419,7 @@ public class ShortestWordDistance {
 ## Salesforce
 
 ### Interview Process Overview
-Salesforce's process: Recruiter Call â†’ HackerRank/CodeSignal OA â†’ Technical Phone Screen â†’ On-site (4-5 rounds: DS/Algo, system design, architecture, manager, HR) â†’ Leadership round. Salesforce values Ohana culture, multi-tenant architecture knowledge, and platform thinking. Trailhead certifications are a significant advantage.
+Salesforce's process: Recruiter Call → HackerRank/CodeSignal OA → Technical Phone Screen → On-site (4-5 rounds: DS/Algo, system design, architecture, manager, HR) → Leadership round. Salesforce values Ohana culture, multi-tenant architecture knowledge, and platform thinking. Trailhead certifications are a significant advantage.
 
 ---
 
@@ -5490,7 +5490,7 @@ public class MergeKSortedLists {
         ListNode l2 = new ListNode(1); l2.next = new ListNode(3); l2.next.next = new ListNode(4);
         ListNode l3 = new ListNode(2); l3.next = new ListNode(6);
         ListNode merged = mergeKLists(new ListNode[]{l1, l2, l3});
-        // Output: 1â†’1â†’2â†’3â†’4â†’4â†’5â†’6
+        // Output: 1→1→2→3→4→4→5→6
     }
 }
 ```
@@ -5572,7 +5572,7 @@ public class CloneGraph {
 ## Oracle
 
 ### Interview Process Overview
-Oracle's process: Recruiter Screen â†’ Online Coding Test â†’ Technical Phone Screen â†’ On-site (4-5 rounds: DS/Algo, system design, database internals, manager, HR) â†’ Team match. Oracle values deep systems knowledge (OS, JVM, memory management), database expertise, and Java mastery. For OCI roles, cloud architecture is central.
+Oracle's process: Recruiter Screen → Online Coding Test → Technical Phone Screen → On-site (4-5 rounds: DS/Algo, system design, database internals, manager, HR) → Team match. Oracle values deep systems knowledge (OS, JVM, memory management), database expertise, and Java mastery. For OCI roles, cloud architecture is central.
 
 ---
 
@@ -5675,7 +5675,7 @@ public class ZigzagConversion {
 ## Atlassian
 
 ### Interview Process Overview
-Atlassian's process: Recruiter Screen â†’ Codility/CodeSignal OA â†’ Technical Phone Screen â†’ On-site (4-5 rounds: coding, system design, values interview, manager round). Atlassian values "Open Company, No Bullshit" culture, teamwork, and product thinking. System design questions often involve collaboration tools and workflow engines.
+Atlassian's process: Recruiter Screen → Codility/CodeSignal OA → Technical Phone Screen → On-site (4-5 rounds: coding, system design, values interview, manager round). Atlassian values "Open Company, No Bullshit" culture, teamwork, and product thinking. System design questions often involve collaboration tools and workflow engines.
 
 ---
 
@@ -5748,7 +5748,7 @@ public class FileSystem {
 ### Problem 2: Most Popular Video Creator (Atlassian, 2024)
 **Difficulty:** Medium
 
-**Problem Statement:** Given two arrays creators and ids (parallel) and an array views where views[i] is the view count of video ids[i] by creator creators[i], find the most popular creator(s) â€” the one(s) with the highest total views. For each most popular creator, return their name and the video with the most views (smallest lexicographical id in case of tie).
+**Problem Statement:** Given two arrays creators and ids (parallel) and an array views where views[i] is the view count of video ids[i] by creator creators[i], find the most popular creator(s) → the one(s) with the highest total views. For each most popular creator, return their name and the video with the most views (smallest lexicographical id in case of tie).
 
 ```java
 import java.util.*;
@@ -5787,7 +5787,7 @@ public class MostPopularCreator {
         String[] ids = {"one", "two", "three", "four"};
         int[] views = {5, 2, 3, 1};
         System.out.println(mostPopularCreator(creators, ids, views));
-        // [[alice, one]] â€” alice has 8 total, top video "one" with 5 views
+        // [[alice, one]] → alice has 8 total, top video "one" with 5 views
     }
 }
 ```

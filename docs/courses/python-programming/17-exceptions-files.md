@@ -133,7 +133,7 @@ def safe_divide(a: float, b: float) -> float:
         print(f"Division successful")
         return result
     finally:
-        # Always runs â€” even if there's a return in try/except
+        # Always runs → even if there's a return in try/except
         print("Cleanup complete")
 
 print(safe_divide(10, 2))  # Division successful, Cleanup complete, 5.0
@@ -250,7 +250,7 @@ print(calculate_discount(100, 0.2))  # 80.0
 # calculate_discount(-50, 0.2)  # AssertionError: Price must be positive
 ```
 
-Assertions can be disabled with `-O` (optimize) flag: `python -O script.py`. Do not use assertions for input validation in production code â€” use proper error handling.
+Assertions can be disabled with `-O` (optimize) flag: `python -O script.py`. Do not use assertions for input validation in production code → use proper error handling.
 
 ## 17.5 File Operations
 
@@ -417,7 +417,7 @@ with open("data.pkl", "rb") as f:
 print(loaded)  # {'key': [1, 2, 3], 'nested': {'a': 1}}
 ```
 
-Security warning: never `pickle.load()` untrusted data â€” it can execute arbitrary code during deserialization. Prefer JSON for cross-language or untrusted data.
+Security warning: never `pickle.load()` untrusted data → it can execute arbitrary code during deserialization. Prefer JSON for cross-language or untrusted data.
 
 ## 17.9 pathlib
 
@@ -982,7 +982,7 @@ console.log(boundary.hasErrors()); // false
 
 1. Write a program that reads a CSV file of student scores, computes averages, and writes a new CSV with summary statistics. Handle `FileNotFoundError`, `PermissionError`, and malformed rows.
 2. Implement a recursive directory listing tool using `pathlib` that prints a tree structure like the Unix `tree` command. Indent subdirectories and files. Skip hidden files.
-3. Write a custom `ConfigError(Exception)` hierarchy: `ConfigError` â†’ `ConfigParseError`, `ConfigValidationError`, `ConfigMissingError`. Write a config parser that raises these appropriately when parsing a simple INI-style file.
+3. Write a custom `ConfigError(Exception)` hierarchy: `ConfigError` → `ConfigParseError`, `ConfigValidationError`, `ConfigMissingError`. Write a config parser that raises these appropriately when parsing a simple INI-style file.
 
 ### Challenge Problem
 

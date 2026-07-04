@@ -232,7 +232,7 @@ Two employees write cell phone numbers on the same form. Employee A writes "555-
 **Numbered Steps:**
 
 1. T1 writes A ? 100 (uncommitted)
-2. T2 writes A ? 200 (uncommitted) â€” overwrites T1's uncommitted write
+2. T2 writes A ? 200 (uncommitted) → overwrites T1's uncommitted write
 3. T1 commits ? A = 100? 
 4. T2 commits ? A = 200?
 

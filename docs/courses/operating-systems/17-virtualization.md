@@ -49,22 +49,22 @@ flowchart LR
 
 ---
 
-# 1. Virtualization â€” Definition & Core Concepts
+# 1. Virtualization → Definition & Core Concepts
 
 ## 1.1 What is Virtualization?
 
-**Virtualization** is the technique of creating a virtual (rather than physical) version of a computing resource â€” CPU, memory, storage, network â€” by inserting a software abstraction layer (the **hypervisor** or **Virtual Machine Monitor, VMM**) between hardware and the operating system. This enables multiple isolated operating systems (guest OSes) to run concurrently on a single physical machine.
+**Virtualization** is the technique of creating a virtual (rather than physical) version of a computing resource → CPU, memory, storage, network → by inserting a software abstraction layer (the **hypervisor** or **Virtual Machine Monitor, VMM**) between hardware and the operating system. This enables multiple isolated operating systems (guest OSes) to run concurrently on a single physical machine.
 
 ### Real-World Analogy: Office Building Tenants
 
 Think of a physical server as an **office building**. The hypervisor is the **building manager** who divides the building into separate **office suites** (VMs). Each tenant (guest OS) gets:
 
 - Their own **keys** (CPU registers, page tables)
-- Their own **locked rooms** (memory regions â€” cannot access other suites)
+- Their own **locked rooms** (memory regions → cannot access other suites)
 - Their own **mailbox and phone line** (virtualized I/O devices)
 - The **illusion** they have the entire building to themselves
 
-If tenants in Suite 201 try to open Suite 202's door, the **building manager (hypervisor)** intercepts them â€” analogous to a **VM exit** when a guest tries to access hardware it shouldn't.
+If tenants in Suite 201 try to open Suite 202's door, the **building manager (hypervisor)** intercepts them → analogous to a **VM exit** when a guest tries to access hardware it shouldn't.
 
 An **apartment building** = Type 1 hypervisor (manager owns the building). A **hotel** = Type 2 hypervisor (hotel management = host OS, rents rooms = VMs as guests).
 
@@ -73,10 +73,10 @@ An **apartment building** = Type 1 hypervisor (manager owns the building). A **h
 ```
 Virtualization satisfies three properties (Popek & Goldberg, 1974):
 
-  [Fidelity]  â€” Software running under the VMM behaves identically
+  [Fidelity]  → Software running under the VMM behaves identically
                  to running on bare hardware (except timing)
-  [Safety]    â€” VMM has complete control of hardware resources
-  [Efficiency]â€” Most guest instructions execute directly without VMM intervention
+  [Safety]    → VMM has complete control of hardware resources
+  [Efficiency]→ Most guest instructions execute directly without VMM intervention
 ```
 
 ### Key Terminology
@@ -106,43 +106,43 @@ These three approaches form a spectrum from pure software simulation to near-nat
 
 ```
 Emulation:
-  Guest Code â†’ CPU Emulator (decode every instr) â†’ Slow
-  [Every instruction interpreted in software â€” 100x-10000x slowdown]
+  Guest Code → CPU Emulator (decode every instr) → Slow
+  [Every instruction interpreted in software → 100x-10000x slowdown]
 
 Full Virtualization:
-  Guest Code â†’ CPU (most instr run directly) â†’ Hypervisor on sensitive instr â†’ Guest
+  Guest Code → CPU (most instr run directly) → Hypervisor on sensitive instr → Guest
   [Sensitive instructions trap to VMM; non-sensitive run at native speed]
 
 Paravirtualization:
-  Guest Code (modified) â†’ Explicit hypercall â†’ Hypervisor
-  [No traps for known-sensitive operations â€” conscious cooperation]
+  Guest Code (modified) → Explicit hypercall → Hypervisor
+  [No traps for known-sensitive operations → conscious cooperation]
 ```
 
 ## 1.3 Popek & Goldberg Virtualization Requirements
 
 Popek and Goldberg (1974) formalized the necessary CPU properties for efficient virtualization. A CPU instruction set is **classically virtualizable** if:
 
-1. **Privileged instructions** â€” trap when executed in user mode
-2. **Sensitive instructions** â€” alter or depend on hardware state
+1. **Privileged instructions** → trap when executed in user mode
+2. **Sensitive instructions** → alter or depend on hardware state
 3. **All sensitive instructions are a subset of privileged instructions** (the critical condition)
 
 ### The x86 Problem
 
-Older x86 CPUs FAILED the Popek & Goldberg criterion because several sensitive instructions (e.g., `popf`, `sgdt`, `sldt`, `smsw`) did NOT trap when executed in a lower privilege ring. They **silently succeeded** â€” the guest could read or modify real hardware state without the hypervisor knowing.
+Older x86 CPUs FAILED the Popek & Goldberg criterion because several sensitive instructions (e.g., `popf`, `sgdt`, `sldt`, `smsw`) did NOT trap when executed in a lower privilege ring. They **silently succeeded** → the guest could read or modify real hardware state without the hypervisor knowing.
 
 ```
 popf instruction (pop flags):
-  - In Ring 0: modifies EFLAGS.IF (interrupt flag) â€” normal
-  - In Ring 3: silently IGNORES the IF change â€” no trap!
+  - In Ring 0: modifies EFLAGS.IF (interrupt flag) → normal
+  - In Ring 3: silently IGNORES the IF change → no trap!
   - Result: Guest OS thinks it disabled interrupts, but actually didn't
-           â†’ No hypervisor interception â†’ Race condition in guest kernel
+           → No hypervisor interception → Race condition in guest kernel
 ```
 
 ### Solutions to the x86 Problem
 
 | Era | Solution | How It Works |
 |-----|----------|-------------|
-| Pre-2005 | **Binary Translation** (VMware) | Rewrite sensitive instructions on-the-fly: `popf` â†’ trap+emulate sequence |
+| Pre-2005 | **Binary Translation** (VMware) | Rewrite sensitive instructions on-the-fly: `popf` → trap+emulate sequence |
 | 2005+ | **Intel VT-x / AMD-V** | New CPU modes where ALL sensitive instructions automatically VM-exit |
 | Xen approach | **Paravirtualization** | Modify guest to never use non-virtualizable instructions; use hypercalls |
 
@@ -301,7 +301,7 @@ struct vCPU {
 struct VM {
     uint64_t vm_id;
     std::vector<vCPU*> vcpus;
-    std::unordered_map<uint64_t, uint8_t> guest_phys_memory;  // GPA â†’ data
+    std::unordered_map<uint64_t, uint8_t> guest_phys_memory;  // GPA → data
     uint64_t mem_size;
     
     VM(uint64_t id, uint64_t mem) : vm_id(id), mem_size(mem) {}
@@ -334,7 +334,7 @@ struct EmulatedDevice {
 
 // Memory Manager
 struct MemoryManager {
-    std::unordered_map<uint64_t, uint64_t> gpa_to_hpa_map;  // GPA â†’ HPA
+    std::unordered_map<uint64_t, uint64_t> gpa_to_hpa_map;  // GPA → HPA
     
     void mapPage(uint64_t gpa, uint64_t hpa) {
         gpa_to_hpa_map[gpa] = hpa;
@@ -345,7 +345,7 @@ struct MemoryManager {
         if (it != gpa_to_hpa_map.end()) {
             return (it->second) | (gpa & 0xFFFULL);
         }
-        return UINT64_MAX;  // Not mapped â†’ EPT violation
+        return UINT64_MAX;  // Not mapped → EPT violation
     }
 };
 
@@ -531,10 +531,10 @@ private:
             return EXIT_CPUID;
         }
         
-        // Normal instruction â€” in real HW this never returns to VMM
+        // Normal instruction → in real HW this never returns to VMM
         // Skip past it for simulation
         vcpu->regs.rip += getInstructionLength(code_ptr);
-        return 0;  // No exit â€” continue execution
+        return 0;  // No exit → continue execution
     }
     
     uint32_t getInstructionLength(uint8_t* code) {
@@ -569,7 +569,7 @@ private:
                 *ebx = 0x00100800;
                 *ecx = 0x7FFAFBBF;  // Feature flags
                 *edx = 0xBFEBFBFF;
-                // Clear VMX bit (bit 5 of ECX) â€” hide VT-x from guest
+                // Clear VMX bit (bit 5 of ECX) → hide VT-x from guest
                 *ecx &= ~(1 << 5);
                 break;
             default:
@@ -588,7 +588,7 @@ private:
                       << std::hex << (gpa & ~0xFFFULL) << std::endl;
         } else {
             std::cout << "[EPT] Resolved GPA 0x" << std::hex << gpa 
-                      << " â†’ HPA 0x" << hpa << std::endl;
+                      << " → HPA 0x" << hpa << std::endl;
         }
     }
 };
@@ -699,7 +699,7 @@ class EmulatedDevice:
 
 
 class MemoryManager:
-    """Manages GPA â†’ HPA translations (simulates EPT/NPT)."""
+    """Manages GPA → HPA translations (simulates EPT/NPT)."""
     
     def __init__(self):
         self.gpa_to_hpa: Dict[int, int] = {}
@@ -741,7 +741,7 @@ class MemoryManager:
 
 
 class VCPU:
-    """Virtual CPU â€” represents a hardware thread inside a VM."""
+    """Virtual CPU → represents a hardware thread inside a VM."""
     
     def __init__(self, vcpu_id: int, vm: 'VirtualMachine'):
         self.id = vcpu_id
@@ -757,7 +757,7 @@ class VCPU:
 
 
 class VirtualMachine:
-    """A virtual machine â€” isolated guest environment."""
+    """A virtual machine → isolated guest environment."""
     
     def __init__(self, vm_id: int, name: str, memory_size: int):
         self.vm_id = vm_id
@@ -777,7 +777,7 @@ class VirtualMachine:
 
 class Hypervisor:
     """
-    Virtual Machine Monitor (VMM) â€” the core of virtualization.
+    Virtual Machine Monitor (VMM) → the core of virtualization.
     Manages VMs, handles VM exits, emulates devices, and controls hardware access.
     """
     
@@ -810,7 +810,7 @@ class Hypervisor:
         """
         code_byte = self.mem_mgr.read_byte(vcpu.regs.rip)
         
-        # I/O instructions â€” always cause VM-exit
+        # I/O instructions → always cause VM-exit
         if code_byte == 0xE4:         # IN AL, imm8
             port = self.mem_mgr.read_byte(vcpu.regs.rip + 1)
             qual = IOExitQualification(port=port, size=1, is_input=True)
@@ -839,19 +839,19 @@ class Hypervisor:
             vcpu.exit_qual = qual
             return VMExitReason.IO_OUT
         
-        # CPUID â€” must be intercepted to hide virtualization features
+        # CPUID → must be intercepted to hide virtualization features
         elif code_byte == 0x0F:
             next_byte = self.mem_mgr.read_byte(vcpu.regs.rip + 1)
             if next_byte == 0xA2:    # CPUID
                 vcpu.regs.rip += 2
                 return VMExitReason.CPUID
         
-        # HLT â€” halt the vCPU until interrupt
+        # HLT → halt the vCPU until interrupt
         elif code_byte == 0xF4:       # HLT
             vcpu.regs.rip += 1
             return VMExitReason.HLT
         
-        # Simple ALU and data movement (no exit â€” run natively)
+        # Simple ALU and data movement (no exit → run natively)
         elif code_byte == 0xB0:       # MOV AL, imm8
             imm = self.mem_mgr.read_byte(vcpu.regs.rip + 1)
             vcpu.regs.rax = (vcpu.regs.rax & 0xFFFFFF00) | imm
@@ -872,14 +872,14 @@ class Hypervisor:
             return VMExitReason.SHUTDOWN
             
         else:
-            # Unknown or complex instruction â€” advance by 1 (simplified)
+            # Unknown or complex instruction → advance by 1 (simplified)
             print(f"  [WARN] Unhandled opcode 0x{code_byte:02x} at RIP=0x{vcpu.regs.rip:x}")
             vcpu.regs.rip += 1
         
         return None
     
     def _handle_cpuid(self, vcpu: VCPU) -> None:
-        """Emulate CPUID instruction â€” mask VMX bit from guest."""
+        """Emulate CPUID instruction → mask VMX bit from guest."""
         leaf = vcpu.regs.rax & 0xFFFFFFFF
         
         # Standard CPUID leaves
@@ -887,7 +887,7 @@ class Hypervisor:
         features_ecx = 0x7FFAFBBF
         features_edx = 0xBFEBFBFF
         
-        # Mask VMX bit (bit 5 of ECX) â€” hide hypervisor from guest
+        # Mask VMX bit (bit 5 of ECX) → hide hypervisor from guest
         features_ecx &= ~(1 << 5)
         
         vcpu.regs.rax = 1              # Max leaf
@@ -901,7 +901,7 @@ class Hypervisor:
             vcpu.regs.rdx = features_edx
     
     def _handle_exit(self, vcpu: VCPU) -> None:
-        """Handle a VM exit â€” the core of the VMM's work."""
+        """Handle a VM exit → the core of the VMM's work."""
         reason = vcpu.exit_reason
         self.total_exits += 1
         
@@ -909,7 +909,7 @@ class Hypervisor:
             qual: IOExitQualification = vcpu.exit_qual
             data = self.devices.port_read(qual.port)
             vcpu.regs.rax = (vcpu.regs.rax & ~0xFF) | data
-            print(f"  [VM-Exit] I/O IN  port=0x{qual.port:04x} â†’ 0x{data:02x}")
+            print(f"  [VM-Exit] I/O IN  port=0x{qual.port:04x} → 0x{data:02x}")
             
         elif reason == VMExitReason.IO_OUT:
             qual: IOExitQualification = vcpu.exit_qual
@@ -923,16 +923,16 @@ class Hypervisor:
             
         elif reason == VMExitReason.HLT:
             vcpu.halted = True
-            print(f"  [VM-Exit] HLT â€” vCPU[{vcpu.id}] halted")
+            print(f"  [VM-Exit] HLT → vCPU[{vcpu.id}] halted")
             
         elif reason == VMExitReason.SHUTDOWN:
-            print(f"  [VM-Exit] SHUTDOWN â€” VM terminating")
+            print(f"  [VM-Exit] SHUTDOWN → VM terminating")
             vcpu.vm.state = "SHUTDOWN"
     
     def run_vm(self, vm: VirtualMachine, max_instructions: int = 100) -> None:
         """
         Main VM run loop.
-        In real hardware: VMLAUNCH â†’ guest runs natively â†’ VM-exit â†’ handle â†’ VMRESUME
+        In real hardware: VMLAUNCH → guest runs natively → VM-exit → handle → VMRESUME
         """
         print(f"\n{'='*60}")
         print(f"[VMM] Starting VM '{vm.name}'")
@@ -950,7 +950,7 @@ class Hypervisor:
                 reason = self._simulate_instruction(vcpu)
                 
                 if reason is not None:
-                    # Step 8-10: VM-exit occurred â€” hypervisor handles it
+                    # Step 8-10: VM-exit occurred → hypervisor handles it
                     vcpu.exit_reason = reason
                     self._handle_exit(vcpu)
                     exit_count += 1
@@ -971,7 +971,7 @@ class Hypervisor:
         print(f"\n[VMM STATS] Total VMs:  {len(self.vms)}")
         print(f"[VMM STATS] Total exits: {self.total_exits}")
         for vm_id, vm in self.vms.items():
-            print(f"[VMM STATS]   VM {vm_id}: '{vm.name}' â€” {vm.state}")
+            print(f"[VMM STATS]   VM {vm_id}: '{vm.name}' → {vm.state}")
 
 
 # ============================================================
@@ -1023,12 +1023,12 @@ def demo_cpuid_masking():
     
     print(f"After CPUID leaf=0: Vendor = 0x{vcpu.regs.rbx:08x}:0x{vcpu.regs.rdx:08x}:0x{vcpu.regs.rcx:08x}")
     print(f"After CPUID leaf=1: Features ECX = 0x{vcpu.regs.rcx:08x}")
-    print(f"VMX bit (bit 5) is {'SET' if (vcpu.regs.rcx >> 5) & 1 else 'CLEAR'} â€” masked by VMM")
+    print(f"VMX bit (bit 5) is {'SET' if (vcpu.regs.rcx >> 5) & 1 else 'CLEAR'} → masked by VMM")
 
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("VMM SIMULATOR â€” Virtualization Concepts Demo")
+    print("VMM SIMULATOR → Virtualization Concepts Demo")
     print("=" * 60)
     
     demo_basic_vm()
@@ -1041,12 +1041,12 @@ if __name__ == "__main__":
 | Operation | Time Complexity | Space Complexity | WHY |
 |-----------|----------------|-----------------|-----|
 | VM creation | O(m) | O(n + m) | Must allocate `m` pages (O(m)); VMCS/VMCB allocated once (O(1)); page tables for `n` entries |
-| VM entry (VMLAUNCH) | O(1) | O(1) | Hardware operation â€” loads guest state from VMCS, transitions mode |
-| VM exit (hardware) | O(1) | O(1) | CPU saves guest state, loads host state â€” fixed microcode path |
+| VM entry (VMLAUNCH) | O(1) | O(1) | Hardware operation → loads guest state from VMCS, transitions mode |
+| VM exit (hardware) | O(1) | O(1) | CPU saves guest state, loads host state → fixed microcode path |
 | VM exit handling (I/O) | O(d) | O(1) | Dispatcher overhead is O(1); device emulation depends on device complexity `d` |
-| VM exit handling (EPT violation) | O(log p) | O(p) | Page walk resolved by hardware; VMM may need to allocate page â€” tree lookup O(log p) for `p` pages |
+| VM exit handling (EPT violation) | O(log p) | O(p) | Page walk resolved by hardware; VMM may need to allocate page → tree lookup O(log p) for `p` pages |
 | Shadow page table sync | O(n) | O(n) | Each guest PT modification (n entries) requires VM exit + hypervisor update |
-| Nested page walk (EPT) | O(l) amortized | O(p) | 2D page walk: guest walks `l` levels, then EPT walks `l` levels â€” hardware cached in TLBs |
+| Nested page walk (EPT) | O(l) amortized | O(p) | 2D page walk: guest walks `l` levels, then EPT walks `l` levels → hardware cached in TLBs |
 | Memory ballooning | O(1) | O(b) | Balloon driver allocates or frees `b` pages via hypercall |
 
 ### A&D: Virtualization Approaches
@@ -1062,12 +1062,12 @@ if __name__ == "__main__":
 
 **1. VM Escape (CVE-2019-2446, CVE-2021-22555)**
 
-The most severe virtualization vulnerability â€” a guest OS breaks out of the hypervisor to execute code on the host.
+The most severe virtualization vulnerability → a guest OS breaks out of the hypervisor to execute code on the host.
 
 ```
 Attack Vectors:
   - Exploiting hypervisor bugs in VM exit handling
-  - CVE-2021-22555: Netfilter heap overflow in Linux â†’ host kernel compromise
+  - CVE-2021-22555: Netfilter heap overflow in Linux → host kernel compromise
   - CVE-2019-2446: Intel VT-x VMCS caching issue
   - Virtio driver vulnerabilities (buffer overflow in shared ring)
   
@@ -1089,7 +1089,7 @@ Memory Overcommit:
   VM1:  16 GB
   VM2:  16 GB
   VM3:  16 GB
-  Total: 48 GB virtual â†’ 32 GB physical â†’ 150% overcommit
+  Total: 48 GB virtual → 32 GB physical → 150% overcommit
 
 Risks:
   - Balloon driver contention (VMs fight for memory)
@@ -1099,7 +1099,7 @@ Risks:
   
 Solutions:
   - Memory ballooning (cooperative memory reclaim)
-  - Transparent page sharing (KSM â€” Kernel Same-page Merging)
+  - Transparent page sharing (KSM → Kernel Same-page Merging)
   - Hot-add memory (dynamically add memory to VMs)
   - Admission control (reserve minimum guarantees)
   
@@ -1108,7 +1108,7 @@ CPU Overcommit:
   VM1:   4 vCPUs
   VM2:   4 vCPUs
   VM3:   4 vCPUs
-  Total: 12 vCPUs â†’ 8 logical cores â†’ 150% overcommit
+  Total: 12 vCPUs → 8 logical cores → 150% overcommit
 
 Risks:
   - CPU ready time (vCPU waits for physical CPU)
@@ -1139,7 +1139,7 @@ NUMA Node 0              NUMA Node 1
    â”‚ Remote: ~180ns         â”‚ Remote: ~180ns
 
 VM with 4 vCPUs pinned to Node 0, but memory allocated on Node 1:
-  â†’ 80% performance penalty for memory accesses!
+  → 80% performance penalty for memory accesses!
 
 Best practice: pin VM vCPUs and memory to same NUMA node.
 Use numactl to check:  numactl --hardware
@@ -1153,8 +1153,8 @@ Guest OS expects a monotonically increasing time source. Virtualization breaks t
 ```
 Problem:
   - Guest reads TSC (Time Stamp Counter)
-  - VM exit occurs â†’ guest paused
-  - VM entry resumes â†’ guest reads TSC again
+  - VM exit occurs → guest paused
+  - VM entry resumes → guest reads TSC again
   - TSC may go BACKWARDS (if migrated or on different pCPU)
   - Result: Kernel panic ("time went backwards")
 
@@ -1180,7 +1180,7 @@ Pre-copy Migration Algorithm:
   Step 1: Transfer all memory pages to target host
   Step 2: VM continues running on source; dirtied pages tracked
   Step 3: Iteratively transfer only dirty pages (convergence)
-  Step 4: When dirty rate < threshold â†’ stop VM
+  Step 4: When dirty rate < threshold → stop VM
   Step 5: Transfer final CPU state and last dirty pages
   Step 6: Resume VM on target host
   Total downtime: typically 20-100ms for production workloads
@@ -1188,7 +1188,7 @@ Pre-copy Migration Algorithm:
 
 ---
 
-# 2. Hypervisor Types â€” Type 1 vs Type 2
+# 2. Hypervisor Types → Type 1 vs Type 2
 
 ## 2.1 Definition and Architecture
 
@@ -1196,7 +1196,7 @@ A **hypervisor** (or **Virtual Machine Monitor, VMM**) is the software layer tha
 
 ### Real-World Analogy: Apartment Building vs Hotel
 
-**Type 1 Hypervisor â†’ Apartment Building**
+**Type 1 Hypervisor → Apartment Building**
 
 You (the hypervisor) **own** the entire building. You directly manage:
 - Water and electricity (hardware resources)
@@ -1204,7 +1204,7 @@ You (the hypervisor) **own** the entire building. You directly manage:
 - Common areas (shared caches, memory bus)
 - Security (no landlord above you)
 
-**Type 2 Hypervisor â†’ Hotel**
+**Type 2 Hypervisor → Hotel**
 
 The hotel management company = **host OS**. You (the hypervisor) are just one **department** within the hotel:
 - Hotel management controls the building (host OS controls hardware)
@@ -1278,16 +1278,16 @@ The hypervisor INSTALLS DIRECTLY onto the hardware. It acts as a lightweight OS 
 
 Since there is NO host OS, the hypervisor must include:
 
-1. **Device drivers** â€” Native drivers for NICs, HBAs, GPUs, storage controllers
-2. **CPU scheduler** â€” Schedules vCPUs across physical CPUs (typically a modified lottery or CFS scheduler)
-3. **Memory manager** â€” Allocates and reclaims guest memory; handles NUMA
-4. **I/O stack** â€” Virtual switch (vSwitch), storage stack, network stack
-5. **Management interface** â€” CLI, REST API, or GUI for VM lifecycle
+1. **Device drivers** → Native drivers for NICs, HBAs, GPUs, storage controllers
+2. **CPU scheduler** → Schedules vCPUs across physical CPUs (typically a modified lottery or CFS scheduler)
+3. **Memory manager** → Allocates and reclaims guest memory; handles NUMA
+4. **I/O stack** → Virtual switch (vSwitch), storage stack, network stack
+5. **Management interface** → CLI, REST API, or GUI for VM lifecycle
 
 ### Steps to Create a VM on Type 1 Hypervisor (VMware ESXi)
 
 ```
-Step 1:  Physical server boots â†’ BIOS/UEFI â†’ Boot loader loads ESXi kernel
+Step 1:  Physical server boots → BIOS/UEFI → Boot loader loads ESXi kernel
 Step 2:  ESXi kernel initializes hardware (enumerate PCI devices, load drivers)
 Step 3:  ESXi vmkernel creates VMkernel (the "OS" of the hypervisor)
 Step 4:  VMkernel starts management services (hostd, vpxa)
@@ -1296,7 +1296,7 @@ Step 6:  Admin defines VM spec: vCPUs (quantity and cores), memory (GB), disks (
 Step 7:  VMkernel allocates memory, creates VMCS structures, initializes vCPU contexts
 Step 8:  VMkernel creates virtual devices (VMXNET3 NIC, LSI Logic SAS controller)
 Step 9:  VMkernel locates ISO or PXE boot image
-Step 10: VMkernel issues VMLAUNCH â†’ Guest OS boots inside VM
+Step 10: VMkernel issues VMLAUNCH → Guest OS boots inside VM
 ```
 
 ### Examples of Type 1 Hypervisors
@@ -1313,9 +1313,9 @@ Step 10: VMkernel issues VMLAUNCH â†’ Guest OS boots inside VM
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
-| **Performance** | Direct hardware access â€” near-native (95-99%) | Must include own device drivers (driver compatibility matrix) |
+| **Performance** | Direct hardware access → near-native (95-99%) | Must include own device drivers (driver compatibility matrix) |
 | **Isolation** | Each VM has its own kernel; no host OS to compromise | Hypervisor is the single point of failure |
-| **Resource** | No host OS overhead (Linux: ~256MB, Windows: ~2GB â€” wasted) | Physical hardware fully dedicated to VMs; no desktop use while VM runs |
+| **Resource** | No host OS overhead (Linux: ~256MB, Windows: ~2GB → wasted) | Physical hardware fully dedicated to VMs; no desktop use while VM runs |
 | **Management** | Enterprise features (live migration, HA, DRS) | Requires separate management server; higher complexity |
 | **Security** | Smaller attack surface (VMkernel ~200MB vs Linux millions of lines) | Fewer security tools available; specialized expertise required |
 | **Cost** | For data centers: better TCO (consolidation ratios 10:1 to 50:1) | Licensing can be expensive (vSphere); specialized hardware needed |
@@ -1357,14 +1357,14 @@ The hypervisor runs as an APPLICATION inside a full operating system. The host O
 Since the host OS owns all hardware, Type 2 hypervisors face a critical challenge:
 
 ```
-App â†’ Host OS (syscall) â†’ Host Kernel â†’ Driver â†’ Hardware
+App → Host OS (syscall) → Host Kernel → Driver → Hardware
 
-VM â†’ Type2 Hypervisor (emulate) â†’ Host OS (syscall) â†’ Host Kernel â†’ Driver â†’ Hardware
+VM → Type2 Hypervisor (emulate) → Host OS (syscall) → Host Kernel → Driver → Hardware
 
 Two layers of scheduling:
   1. Host OS schedules hypervisor process (like any other app)
   2. Hypervisor schedules guest vCPUs
-  â†’ Double scheduling overhead! 
+  → Double scheduling overhead! 
 ```
 
 ### Steps to Create a VM on Type 2 Hypervisor (VirtualBox)
@@ -1373,12 +1373,12 @@ Two layers of scheduling:
 Step 1:  Host OS boots normally (Windows/Linux/macOS)
 Step 2:  User launches VirtualBox application
 Step 3:  VirtualBox loads VMM driver (can be kernel module for acceleration)
-Step 4:  User clicks "New" â†’ fills in VM name, OS type, memory size, disk size
+Step 4:  User clicks "New" → fills in VM name, OS type, memory size, disk size
 Step 5:  VirtualBox creates VM configuration file (.vbox) and virtual disk (.vdi)
 Step 6:  VirtualBox allocates guest memory (host memory for VM)
 Step 7:  VirtualBox opens pass-through to host kernel for VT-x (if available)
-Step 8:  User clicks "Start" â†’ VirtualBox executes VMLAUNCH (or emulates if no VT-x)
-Step 9:  Guest OS boots; every sensitive instruction â†’ VM-exit â†’ VirtualBox handles â†’ VMRESUME
+Step 8:  User clicks "Start" → VirtualBox executes VMLAUNCH (or emulates if no VT-x)
+Step 9:  Guest OS boots; every sensitive instruction → VM-exit → VirtualBox handles → VMRESUME
 Step 10: User sees VM window; interacts through GUI integration
 ```
 
@@ -1398,7 +1398,7 @@ Step 10: User sees VM window; interacts through GUI integration
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
 | **Usability** | Easy installation (like any app); GUI for VM management | Cannot use VM while host is off; shares desktop resources |
-| **Hardware support** | All host OS devices automatically available; no driver issues | Device access goes through host OS â†’ double overhead |
+| **Hardware support** | All host OS devices automatically available; no driver issues | Device access goes through host OS → double overhead |
 | **Flexibility** | Run VMs alongside regular applications; snapshots are user-friendly | Not suitable for production servers (5-20% overhead vs Type 1) |
 | **Cost** | Free options (VirtualBox); no dedicated hardware needed | Licensing cost + host OS license (if Windows) |
 | **Development** | Ideal for dev/test: quick VM creation, snapshots, revert | Performance constraints limit it to lightweight workloads |
@@ -1441,7 +1441,7 @@ Emulation (QEMU):      â”â”â”                           800 req/s
 Why the gap?
   - Type 2 must go through host OS for EVERY operation
   - Double scheduling: host process scheduler + guest vCPU scheduler
-  - I/O path: Guest â†’ Hypervisor â†’ Host OS â†’ Driver â†’ Hardware
+  - I/O path: Guest → Hypervisor → Host OS → Driver → Hardware
   - Cache pollution: competing with host applications
 ```
 
@@ -1593,7 +1593,7 @@ class HypervisorScheduler:
 
 
 class VMM:
-    """Virtual Machine Manager â€” the main hypervisor abstraction."""
+    """Virtual Machine Manager → the main hypervisor abstraction."""
     
     def __init__(self, name, htype=HypervisorType.TYPE1, num_cores=4):
         self.name = name
@@ -1639,13 +1639,13 @@ def simulate_comparison():
     print("TYPE 1 vs TYPE 2 HYPERVISOR SIMULATION")
     print("=" * 60)
     
-    # Type 1 â€” bare-metal
+    # Type 1 → bare-metal
     vmm_type1 = VMM("ESXi", HypervisorType.TYPE1, num_cores=4)
     vmm_type1.create_vm("WebServer", vcpus=2, tasks_per_vcpu=4)
     vmm_type1.create_vm("Database", vcpus=2, tasks_per_vcpu=4)
     stats1 = vmm_type1.run(ticks=100)
     
-    # Type 2 â€” hosted (same workload)
+    # Type 2 → hosted (same workload)
     vmm_type2 = VMM("VirtualBox", HypervisorType.TYPE2, num_cores=4)
     vmm_type2.create_vm("WebServer", vcpus=2, tasks_per_vcpu=4)
     vmm_type2.create_vm("Database", vcpus=2, tasks_per_vcpu=4)
@@ -1662,8 +1662,8 @@ def simulate_comparison():
     print(f"{'Scheduling overhead':<30} {'Minimal':<18} {'~30% extra':<18}")
     
     pct = (1 - stats2['avg_completion_time'] / stats1['avg_completion_time']) * 100
-    print(f"\nâ†’ Type 2 is {abs(pct):.0f}% slower than Type 1 for equivalent workload")
-    print(f"â†’ Due to: double scheduling + host OS overhead + cache interference")
+    print(f"\n→ Type 2 is {abs(pct):.0f}% slower than Type 1 for equivalent workload")
+    print(f"→ Due to: double scheduling + host OS overhead + cache interference")
 
 
 if __name__ == "__main__":
@@ -2386,31 +2386,31 @@ if __name__ == "__main__":
 
 ## 6. Memory Virtualization
 
-Memory virtualization is the most performance-critical subsystem in a VMM. The VMM must give each guest its own contiguous physical address space starting at zero while preventing any guest from reading or writing another guest's memory â€” or the VMM's own memory.
+Memory virtualization is the most performance-critical subsystem in a VMM. The VMM must give each guest its own contiguous physical address space starting at zero while preventing any guest from reading or writing another guest's memory → or the VMM's own memory.
 
 ### 6.1 The Address Space Problem
 
 In a non-virtualized system, the OS manages three address spaces:
 
-- **Virtual Address (VA)** â€” what user processes see
-- **Linear Address (LA)** â€” what paging sees (x86-64 collapses VA â†’ LA)
-- **Physical Address (PA)** â€” what the hardware bus sees
+- **Virtual Address (VA)** → what user processes see
+- **Linear Address (LA)** → what paging sees (x86-64 collapses VA → LA)
+- **Physical Address (PA)** → what the hardware bus sees
 
 In a virtualized system, the VMM introduces a fourth layer:
 
-- **Guest Physical Address (GPA)** â€” what the guest OS *thinks* is physical memory
-- **Machine Physical Address (MPA)** â€” what is *actually* physical memory (also called Host Physical Address, HPA)
+- **Guest Physical Address (GPA)** → what the guest OS *thinks* is physical memory
+- **Machine Physical Address (MPA)** → what is *actually* physical memory (also called Host Physical Address, HPA)
 
 Now every guest memory access must go through a two-stage translation:
 ```
-Guest VA  â†’ Guest PA (guest page tables)  â†’ Machine PA (VMM page tables)
+Guest VA  → Guest PA (guest page tables)  → Machine PA (VMM page tables)
 ```
 
 ### 6.2 Shadow Page Tables (Software Approach)
 
-**Concept:** The VMM maintains shadow copies of each guest's page tables that map Guest VA directly to Machine PA â€” bypassing the GPA layer entirely. The guest's own page tables are write-protected; any attempt by the guest OS to modify them traps to the VMM, which updates the shadow tables accordingly.
+**Concept:** The VMM maintains shadow copies of each guest's page tables that map Guest VA directly to Machine PA → bypassing the GPA layer entirely. The guest's own page tables are write-protected; any attempt by the guest OS to modify them traps to the VMM, which updates the shadow tables accordingly.
 
-**Analogy â€” Diplomatic Interpreter:**
+**Analogy → Diplomatic Interpreter:**
 Imagine a diplomat speaking French to a Chinese official. An interpreter stands in the middle, translating each sentence. Every time the diplomat speaks, the interpreter must listen, translate, and relay. The diplomat thinks he is speaking directly; in reality, every word passes through the interpreter.
 
 ```
@@ -2422,7 +2422,7 @@ Guest OS          VMM              Hardware
   |                |--- loads   -----|----> CR3
   |                |   shadow PT     |      |
   |--- VA access --|-----------------|-----> page walk on
-  |                |                 |      shadow PT â†’ MPA
+  |                |                 |      shadow PT → MPA
 ```
 
 **Implementation Steps:**
@@ -2432,12 +2432,12 @@ Guest OS          VMM              Hardware
 | 1 | Guest OS | Writes to CR3 to activate new page table |
 | 2 | CPU | Traps to VMM (CR3 access is privileged) |
 | 3 | VMM | Allocates a new shadow page table |
-| 4 | VMM | Walks guest page tables, translates GPAâ†’MPA for each entry |
+| 4 | VMM | Walks guest page tables, translates GPA→MPA for each entry |
 | 5 | VMM | Writes MPA directly into shadow page table |
 | 6 | VMM | Writes shadow PT physical address into real CR3 |
-| 7 | Guest | Resumes â€” page walks now use shadow PT, never trap |
+| 7 | Guest | Resumes → page walks now use shadow PT, never trap |
 | 8 | VMM | Write-protects guest PT pages |
-| 9 | Guest | Tries to update guest PT â†’ page fault â†’ trap to VMM |
+| 9 | Guest | Tries to update guest PT → page fault → trap to VMM |
 | 10 | VMM | Recalculates shadow entry for the modified guest PTE |
 
 **Pseudocode:**
@@ -2452,27 +2452,27 @@ function handle_cr3_write(guest_cr3_value):
     write_protect(guest_pagetable)
 ```
 
-**Dry-Run Trace â€” Guest Page Fault on PT Update:**
+**Dry-Run Trace → Guest Page Fault on PT Update:**
 
 ```
 Guest code:  page_table[0x100] = new_pfn  // add a new mapping
 
 #1  Guest writes to PT page at GPA 0x8000
-#2  CPU: page fault â†’ #PF handler = VMM
+#2  CPU: page fault → #PF handler = VMM
 #3  VMM reads fault address: GPA 0x8000 + offset 0x800 (= entry for 0x100)
 #4  VMM reads the new value the guest tried to write
 #5  VMM walks shadow_pt to find shadow entry for 0x100
 #6  VMM updates shadow entry: MPA = new_pfn mapped to MPA | guest flags
 #7  VMM marks page dirty in dirty bitmap
 #8  VMM resumes guest
-#9  Guest retries instruction â€” succeeds because shadow PT now has correct mapping
+#9  Guest retries instruction → succeeds because shadow PT now has correct mapping
 ```
 
 **C++ Implementation Skeleton:**
 ```cpp
 class ShadowPageTable {
-    std::unordered_map<uint64_t, uint64_t> shadow_entries; // VA â†’ MPA
-    std::unordered_map<uint64_t, uint64_t> guest_entries;  // VA â†’ GPA
+    std::unordered_map<uint64_t, uint64_t> shadow_entries; // VA → MPA
+    std::unordered_map<uint64_t, uint64_t> guest_entries;  // VA → GPA
     const MemoryMapper& mapper;
 
 public:
@@ -2527,20 +2527,20 @@ class ShadowPageTable:
 Intel's **Extended Page Tables (EPT)** and AMD's **Nested Page Tables (NPT)** eliminate shadow page tables by adding a second level of paging in hardware.
 
 **How it works:**
-1. Guest OS manages its own page tables (VA â†’ GPA) normally â€” no traps
-2. The VMM sets up a separate EPT/NPT structure that maps GPA â†’ MPA
+1. Guest OS manages its own page tables (VA → GPA) normally → no traps
+2. The VMM sets up a separate EPT/NPT structure that maps GPA → MPA
 3. The hardware automatically walks BOTH page tables on every memory access
-4. The result is combined: VA â†’ GPA (guest PT) â†’ MPA (EPT)
+4. The result is combined: VA → GPA (guest PT) → MPA (EPT)
 
-**Analogy â€” Bilingual Signage:**
-Think of a bilingual airport: signs are written in both English and the local language. A traveler reads only the English part (VAâ†’GPA), and the airport's signs simultaneously provide the local-language equivalent (EPT mapping GPAâ†’MPA). No interpreter needed â€” both translations are pre-written.
+**Analogy → Bilingual Signage:**
+Think of a bilingual airport: signs are written in both English and the local language. A traveler reads only the English part (VA→GPA), and the airport's signs simultaneously provide the local-language equivalent (EPT mapping GPA→MPA). No interpreter needed → both translations are pre-written.
 
 **The Two-Dimensional Page Walk:**
 
 Every memory access requires up to **24 memory references** on x86-64 with 4-level paging + EPT:
-- Guest page walk: 4 memory reads (PML4 â†’ PDPT â†’ PD â†’ PT)
+- Guest page walk: 4 memory reads (PML4 → PDPT → PD → PT)
 - EPT page walk: 4 memory reads for *each* guest walk level = 16 memory reads
-- Total: 4 + 16 = 20â€”24 memory references per access
+- Total: 4 + 16 = 20→24 memory references per access
 
 ```
 VA translation using 4-level paging + EPT:
@@ -2557,7 +2557,7 @@ Guest walk (4 levels):         EPT walks (4Ã—4 = 16 levels):
 When EPT doesn't have a mapping for a GPA, a VM-exit occurs (EPT violation). The VMM must:
 1. Read the faulting GPA from VMCS
 2. Allocate a new machine page
-3. Install an EPT entry mapping GPA â†’ MPA
+3. Install an EPT entry mapping GPA → MPA
 4. Resume the guest (VM-entry)
 
 **C++ Skeleton for EPT Handler:**
@@ -2590,7 +2590,7 @@ public:
 };
 ```
 
-**Python Implementation â€” EPT Lifecycle:**
+**Python Implementation → EPT Lifecycle:**
 ```python
 class EPT:
     def __init__(self, host_memory):
@@ -2631,7 +2631,7 @@ class EPT:
 | Aspect | Shadow Page Tables | EPT/NPT |
 |--------|-------------------|---------|
 | **Hardware support** | None (works on any CPU) | Requires VT-x/AMD-V with EPT/NPT |
-| **Guest PT modifications** | Always trap to VMM | No traps â€” guest manages freely |
+| **Guest PT modifications** | Always trap to VMM | No traps → guest manages freely |
 | **Page walk cost** | 4 memory references | 20-24 memory references |
 | **Memory overhead** | One shadow PT per guest PT | One EPT structure per VM |
 | **TLB pressure** | Less (single walk) | More (TLB covers both walks) |
@@ -2645,16 +2645,16 @@ class EPT:
 | Operation | Shadow PT | EPT |
 |-----------|-----------|-----|
 | Guest page table walk | 4 memory refs (trap + walk + install) | 24 memory refs (full 2D walk) |
-| EPT violation handler | N/A | O(1) â€” allocate page + install entry |
-| Guest CR3 write | O(512) â€” rebuild shadow table | O(1) â€” no action |
-| Guest PT modification | O(1) â€” update single shadow entry | O(1) â€” no action |
-| Memory overcommit (balloon) | O(n) â€” rebuild affected shadows | O(1) â€” update single EPT entry |
+| EPT violation handler | N/A | O(1) → allocate page + install entry |
+| Guest CR3 write | O(512) → rebuild shadow table | O(1) → no action |
+| Guest PT modification | O(1) → update single shadow entry | O(1) → no action |
+| Memory overcommit (balloon) | O(n) → rebuild affected shadows | O(1) → update single EPT entry |
 
 ### 6.6 Edge Cases in Memory Virtualization
 
 | Edge Case | Description | Mitigation |
 |-----------|-------------|------------|
-| **TLB shootdown** | Guest OS invalidates TLB on one vCPU â€” need cross-vCPU coordination | VMM must send IPI to all pCPUs running that VM |
+| **TLB shootdown** | Guest OS invalidates TLB on one vCPU → need cross-vCPU coordination | VMM must send IPI to all pCPUs running that VM |
 | **Page table aliasing** | Two guest PTs map same guest PFN through different shadow PTs | VMM deduplicates shadow entries |
 | **Memory overcommit** | Total guest memory > host physical memory | Balloon driver inflates to reclaim pages |
 | **NUMA migration** | Guest memory migrates between NUMA nodes | EPT entries must be updated; TLB flush required |
@@ -2670,8 +2670,8 @@ I/O virtualization gives each guest its own view of devices (disk, NIC, GPU) whi
 
 **Concept:** The VMM presents a software-emulated device that mimics real hardware. The guest OS loads its native driver for that device, and every MMIO/PIO access traps to the VMM, which simulates the device behavior.
 
-**Analogy â€” Phone Interpreter:**
-Two people who don't speak the same language communicate through a human interpreter. Each sentence must be translated back and forth. It works, but it's slow â€” every word goes through the bottleneck.
+**Analogy → Phone Interpreter:**
+Two people who don't speak the same language communicate through a human interpreter. Each sentence must be translated back and forth. It works, but it's slow → every word goes through the bottleneck.
 
 **How It Works:**
 1. Guest driver writes to a device register (e.g., NIC MMIO region)
@@ -2763,8 +2763,8 @@ class EmulatedDisk:
 
 **Concept:** The guest and VMM agree on a shared ring buffer (virtqueue) in guest memory. The guest places I/O requests directly into the ring; the VMM polls the ring and processes requests asynchronously. This eliminates MMIO traps for each I/O operation.
 
-**Analogy â€” Dropbox Shared Folder:**
-Instead of calling a translator for each sentence, both people write to a shared notebook. One writes a request, the other reads it later and writes back the result. Neither needs to interrupt the other â€” they check the notebook when convenient.
+**Analogy → Dropbox Shared Folder:**
+Instead of calling a translator for each sentence, both people write to a shared notebook. One writes a request, the other reads it later and writes back the result. Neither needs to interrupt the other → they check the notebook when convenient.
 
 **Virtio Ring Layout:**
 ```
@@ -2908,9 +2908,9 @@ class VirtioBlock:
 
 ### 7.3 Direct I/O Assignment (SR-IOV)
 
-**Concept:** A physical device presents itself as multiple Virtual Functions (VFs) via Single Root I/O Virtualization (SR-IOV). Each VF can be assigned directly to a guest â€” the guest driver talks to real hardware with zero VMM involvement on the data path.
+**Concept:** A physical device presents itself as multiple Virtual Functions (VFs) via Single Root I/O Virtualization (SR-IOV). Each VF can be assigned directly to a guest → the guest driver talks to real hardware with zero VMM involvement on the data path.
 
-**Analogy â€” Apartment Mailbox:**
+**Analogy → Apartment Mailbox:**
 Instead of all mail going through a front desk (emulated) or a shared bin (virtio), each resident gets their own private mailbox. The mail carrier puts mail directly into each box. The management only sets up the boxes once.
 
 **SR-IOV Architecture:**
@@ -2962,7 +2962,7 @@ VMM involvement    Every op    Batch poll  Setup only
 
 Containers virtualize the OS rather than the hardware. Multiple containers share the same host kernel but get isolated views of the filesystem, process tree, network stack, and resource limits.
 
-### 8.1 Namespaces â€” What Containers *See*
+### 8.1 Namespaces → What Containers *See*
 
 Namespaces restrict what a process can see. Each namespace wraps a global OS resource in an abstraction that makes the process think it has its own private instance.
 
@@ -2977,7 +2977,7 @@ Namespaces restrict what a process can see. Each namespace wraps a global OS res
 | **Cgroup** | Cgroup root directory | 4.6 | `clone(CLONE_NEWCGROUP)` |
 | **Time** | Time (CLOCK_MONOTONIC, CLOCK_BOOTTIME) | 5.6 | `clone(CLONE_NEWTIME)` |
 
-**Analogy â€” Cubicles in an Office:**
+**Analogy → Cubicles in an Office:**
 Each engineer in a cubicle has their own desk, phone, filing cabinet, and name plate. They can't see their neighbor's desk or papers. But they all share the same building, electricity, and plumbing. If you walk through the office, each cubicle looks like its own mini-office.
 
 **C++ Namespace Creation (Linux syscall):**
@@ -3042,7 +3042,7 @@ def run_in_new_namespaces():
 # Usage: run_in_new_namespaces() creates isolated process
 ```
 
-### 8.2 Cgroups â€” What Containers *Use*
+### 8.2 Cgroups → What Containers *Use*
 
 Cgroups (control groups) limit, account for, and isolate resource usage (CPU, memory, disk I/O, network). While namespaces dictate visibility, cgroups enforce boundaries.
 
@@ -3057,8 +3057,8 @@ Cgroups (control groups) limit, account for, and isolate resource usage (CPU, me
 | **freezer** | Suspend/resume processes | `freezer.state` |
 | **hugetlb** | Huge page usage | `hugetlb.2MB.limit_in_bytes` |
 
-**Analogy â€” Cafeteria Meal Plan:**
-A university cafeteria gives each student a meal card with daily limits: $20 spending cap, 3 meal entries max, no more than 2 desserts. The student can choose what to eat within those limits. Cgroups are the meal card limits â€” they set the boundaries, not the content.
+**Analogy → Cafeteria Meal Plan:**
+A university cafeteria gives each student a meal card with daily limits: $20 spending cap, 3 meal entries max, no more than 2 desserts. The student can choose what to eat within those limits. Cgroups are the meal card limits → they set the boundaries, not the content.
 
 **C++ Skeleton for Cgroup Setup:**
 ```cpp
@@ -3148,7 +3148,7 @@ Docker uses Linux namespaces + cgroups + union filesystems (overlay2) to package
 |    v                                                                 |
 |  Docker Daemon (dockerd)                                             |
 |    â”œâ”€â”€ containerd  (container lifecycle management)                  |
-|    â”‚   â””â”€â”€ runc     (OCI runtime â€” creates namespaces + cgroups)     |
+|    â”‚   â””â”€â”€ runc     (OCI runtime → creates namespaces + cgroups)     |
 |    â”œâ”€â”€ image management (layered storage)                            |
 |    â””â”€â”€ network management (CNI plugins)                              |
 +---------------------------------------------------------------------+
@@ -3239,7 +3239,7 @@ private:
     }
 
     void setup_namespaces() {
-        // Only needed for parent â€” children inherit automatically
+        // Only needed for parent → children inherit automatically
     }
 };
 ```
@@ -3292,9 +3292,9 @@ class Container:
                 os.kill(int(pid_str.strip()), 9)
 ```
 
-### 8.5 Firecracker â€” MicroVM Approach
+### 8.5 Firecracker → MicroVM Approach
 
-AWS Firecracker is a VMM designed specifically for serverless workloads (Lambda, Fargate). It uses KVM with a minimized device model â€” no PCI bus, BIOS, or ACPI â€” giving container-like density with VM-level isolation.
+AWS Firecracker is a VMM designed specifically for serverless workloads (Lambda, Fargate). It uses KVM with a minimized device model → no PCI bus, BIOS, or ACPI → giving container-like density with VM-level isolation.
 
 **Key Design Points:**
 - Single process, ~50K LOC in Rust
@@ -3309,10 +3309,10 @@ AWS Firecracker is a VMM designed specifically for serverless workloads (Lambda,
 2. Create VM fd (KVM_CREATE_VM)
 3. Create vCPU fd (KVM_CREATE_VCPU)
 4. Set up guest memory (KVM_SET_USER_MEMORY_REGION)
-5. Load Linux kernel (direct boot â€” no GRUB)
+5. Load Linux kernel (direct boot → no GRUB)
 6. Load initrd with minimal bootstrap
 7. Set up virtio-mmio devices
-8. Run vCPU (KVM_RUN) â†’ guest boots in ~50-125ms
+8. Run vCPU (KVM_RUN) → guest boots in ~50-125ms
 ```
 
 **Firecracker vs Docker vs QEMU:**
@@ -3330,7 +3330,7 @@ Guest OS    Linux only     Same kernel    Any OS
 
 ### Q1: What is the difference between VT-x and AMD-V?
 
-Intel VT-x and AMD-V are CPU extensions that enable hardware-assisted virtualization. They achieve the same goal â€” reducing the VMM's complexity and improving performance â€” but differ in implementation details.
+Intel VT-x and AMD-V are CPU extensions that enable hardware-assisted virtualization. They achieve the same goal → reducing the VMM's complexity and improving performance → but differ in implementation details.
 
 | Feature | Intel VT-x | AMD-V |
 |---------|-----------|-------|
@@ -3346,7 +3346,7 @@ Intel VT-x and AMD-V are CPU extensions that enable hardware-assisted virtualiza
 
 ### Q2: What is nested virtualization? How does it work?
 
-Nested virtualization is running a VMM *inside* a VM â€” for example, running KVM inside a VMware VM on AWS. The inner VMM must handle VMX instructions that the outer VMM normally handles.
+Nested virtualization is running a VMM *inside* a VM → for example, running KVM inside a VMware VM on AWS. The inner VMM must handle VMX instructions that the outer VMM normally handles.
 
 **Challenge:** When the inner VMM executes `VMXON`, the outer VMM intercepts it (it's a VM-exit). The outer VMM must:
 1. Recognize that the guest is trying to start a hypervisor
@@ -3366,7 +3366,7 @@ Nested virtualization is running a VMM *inside* a VM â€” for example, runni
 
 ### Q3: Can paravirtualization be combined with hardware virtualization?
 
-Yes â€” this is the dominant architecture today. KVM uses VT-x/AMD-V for CPU virtualization (hardware-assisted) AND virtio for I/O (paravirtualized). This gives the best of both:
+Yes → this is the dominant architecture today. KVM uses VT-x/AMD-V for CPU virtualization (hardware-assisted) AND virtio for I/O (paravirtualized). This gives the best of both:
 - VT-x handles CPU and memory with minimal traps
 - Virtio handles I/O with efficient ring buffers
 
@@ -3395,7 +3395,7 @@ Downtime target: < 100ms for most workloads.
 
 ### Q6: Why did KVM remove shadow page table support in 2015?
 
-By 2015, EPT hardware was universally available on server-class CPUs. Shadow page tables required a VM-exit on every guest CR3 write and every page table modification â€” significantly hurting performance for workloads with frequent context switches or page table activity (e.g., database workloads with large working sets). EPT removed this overhead completely.
+By 2015, EPT hardware was universally available on server-class CPUs. Shadow page tables required a VM-exit on every guest CR3 write and every page table modification → significantly hurting performance for workloads with frequent context switches or page table activity (e.g., database workloads with large working sets). EPT removed this overhead completely.
 
 ### Q7: What is the cause of "VM-Exit storm"?
 
@@ -3409,11 +3409,11 @@ A VM-Exit storm occurs when the VMM resumes the guest and it immediately exits a
 ### Q8: How does timekeeping work in a VM?
 
 Guest OS uses time sources that are virtualized:
-- **TSC (Time Stamp Counter)**: Must be stable across vCPU migration â€” use TSC scaling + TSC offsetting (VT-x) or constant TSC + invariant TSC
+- **TSC (Time Stamp Counter)**: Must be stable across vCPU migration → use TSC scaling + TSC offsetting (VT-x) or constant TSC + invariant TSC
 - **KVM-clock (paravirtualized)**: Guest reads time from a shared memory page updated by the host
 - **PIT/HPET (emulated)**: Interrupt-driven, slower but compatible with unmodified guests
 
-Without invariant TSC, a guest migrated between different-speed CPUs could see time jump backward â€” breaking applications.
+Without invariant TSC, a guest migrated between different-speed CPUs could see time jump backward → breaking applications.
 
 ## 10. Applications in Real Systems
 
@@ -3435,8 +3435,8 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 | Aspect | Detail |
 |--------|--------|
 | **Type** | Type 1 (bare-metal hypervisor) |
-| **CPU virt** | PV (paravirtualized) â†’ HVM (hardware-assisted) |
-| **Memory virt** | Shadow PT (original) â†’ EPT (later) |
+| **CPU virt** | PV (paravirtualized) → HVM (hardware-assisted) |
+| **Memory virt** | Shadow PT (original) → EPT (later) |
 | **I/O virt** | Split drivers (dom0 â†” domU), PV drivers |
 | **Management** | xl, XAPI, Xen Orchestra |
 | **Guest support** | Linux, Windows (HVM), NetBSD |
@@ -3449,7 +3449,7 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 |--------|--------|
 | **Type** | Type 1 (bare-metal / "hypervisor" in VMware terms) |
 | **CPU virt** | Binary translation (pre-VT-x) + HW-assisted (VT-x/AMD-V) |
-| **Memory virt** | Shadow PT (legacy) â†’ EPT/NPT |
+| **Memory virt** | Shadow PT (legacy) → EPT/NPT |
 | **I/O virt** | VMXNET (paravirtualized NIC), PVSCSI, SR-IOV |
 | **Management** | vCenter, vSphere, ESXCLI |
 | **Guest support** | 100+ OS types in compatibility matrix |
@@ -3486,7 +3486,7 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 
 | Aspect | Detail |
 |--------|--------|
-| **Type** | MicroVM (VMM) â€” KVM-based |
+| **Type** | MicroVM (VMM) → KVM-based |
 | **CPU virt** | KVM + VT-x |
 | **Memory virt** | EPT with 5-level page table support |
 | **I/O virt** | Virtio-mmio (block + net only) |
@@ -3532,10 +3532,10 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 
 - **Virtualization** abstracts hardware resources so multiple OS instances share a single physical machine.
 - **Hypervisors** come in Type 1 (bare-metal: KVM, ESXi, Hyper-V, Xen) and Type 2 (hosted: VirtualBox, VMware Workstation).
-- **CPU virtualization** evolved from binary translation (VMware) â†’ paravirtualization (Xen PV) â†’ hardware-assisted (VT-x/AMD-V).
-- **Memory virtualization** evolved from shadow page tables â†’ EPT/NPT, eliminating costly VM-exits on guest page table operations.
+- **CPU virtualization** evolved from binary translation (VMware) → paravirtualization (Xen PV) → hardware-assisted (VT-x/AMD-V).
+- **Memory virtualization** evolved from shadow page tables → EPT/NPT, eliminating costly VM-exits on guest page table operations.
 - **I/O virtualization** has three tiers: emulated (slow, compatible), virtio (balanced, efficient), SR-IOV (fast, no migration).
-- **Containerization** uses namespaces for isolation and cgroups for resource limits â€” all sharing the host kernel.
+- **Containerization** uses namespaces for isolation and cgroups for resource limits → all sharing the host kernel.
 - **Performance hierarchy**: Containers > SR-IOV > Virtio > Shadow PT > Emulated I/O.
 - **Key trade-offs**: Isolation vs density, migration support vs performance, compatibility vs efficiency.
 
@@ -3557,6 +3557,6 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 
 8. **SR-IOV capacity planning**: A host has one 100GbE NIC with 128 VFs. Each VM needs 10Gbps. How many VMs can you assign VFs to? What happens if a VM needs 40Gbps?
 
-9. **Nested virtualization performance**: If a nested VM (KVM â†’ QEMU â†’ KVM â†’ guest) takes a VM-exit, how many exits actually occur on the physical CPU? Trace the exit path.
+9. **Nested virtualization performance**: If a nested VM (KVM → QEMU → KVM → guest) takes a VM-exit, how many exits actually occur on the physical CPU? Trace the exit path.
 
 10. **Design a hypervisor comparison matrix**: Create a table comparing KVM, Xen, ESXi, and Hyper-V across: CPU virt method, memory virt method, I/O method, management interface, guest OS support, maximum vCPUs per VM, maximum RAM per VM, live migration support, and fault tolerance.

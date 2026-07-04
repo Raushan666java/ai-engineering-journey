@@ -19,9 +19,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Service Discovery â€” locate service instances dynamically | Client-side vs server-side discovery patterns |
-| Eureka â€” Netflix OSS service registry | `@EnableEurekaServer` for registry; `@EnableEurekaClient` for registration |
-| Health Checks â€” detect unhealthy instances | Eureka heartbeat mechanism; custom health indicators |
+| Service Discovery → locate service instances dynamically | Client-side vs server-side discovery patterns |
+| Eureka → Netflix OSS service registry | `@EnableEurekaServer` for registry; `@EnableEurekaClient` for registration |
+| Health Checks → detect unhealthy instances | Eureka heartbeat mechanism; custom health indicators |
 
 ---
 ## Chapter Roadmap
@@ -45,9 +45,9 @@ flowchart TD
 
 | Concept | Description | Key Difference |
 |---------|-------------|----------------|
-| Eureka | Client-side discovery (REST) | AP in CAP theorem â€” prioritizes availability |
-| Consul | Client-side + server-side (DNS/HTTP) | CP â€” prioritizes consistency with Raft |
-| ZooKeeper | Server-side discovery | CP â€” strong consistency for distributed coordination |
+| Eureka | Client-side discovery (REST) | AP in CAP theorem → prioritizes availability |
+| Consul | Client-side + server-side (DNS/HTTP) | CP → prioritizes consistency with Raft |
+| ZooKeeper | Server-side discovery | CP → strong consistency for distributed coordination |
 | Kubernetes DNS | Server-side via DNS SRV records | Native to K8s, no extra infra needed |
 
 ---
@@ -74,7 +74,7 @@ flowchart TD
 
 1. What is the difference between client-side and server-side discovery? **Answer:** Client-side: the client queries the registry directly. Server-side: a load balancer queries the registry for the client.
 2. Which Eureka CAP property does it prioritize? **Answer:** AP (Availability and Partition tolerance), not consistency
-3. How does Eureka detect unhealthy instances? **Answer:** Heartbeat â€” instances send renew requests every 30 seconds; 3 missed = evicted
+3. How does Eureka detect unhealthy instances? **Answer:** Heartbeat → instances send renew requests every 30 seconds; 3 missed = evicted
 
 ## Theory
 
@@ -112,7 +112,7 @@ Spring Cloud LoadBalancer is the replacement for Netflix Ribbon. It provides:
 - Custom load balancers via `ReactorServiceInstanceLoadBalancer`
 
 > [!TIP]
-> Use Feign client with Eureka â€” Feign automatically resolves service names to instances via the registry.
+> Use Feign client with Eureka → Feign automatically resolves service names to instances via the registry.
 
 > [!WARNING]
 > Eureka self-preservation mode prevents mass eviction during network partitions. In development, disable it with `eureka.server.enableSelfPreservation=false`.

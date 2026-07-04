@@ -34,9 +34,9 @@ By the end of this chapter you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| JUnit 5 â€” modular test framework with Platform + Jupiter + Vintage | Jupiter API for new tests, Vintage for JUnit 4 backwards compatibility |
-| Annotations â€” `@Test`, `@ParameterizedTest`, `@DisplayName`, `@Nested` | Rich lifecycle hooks: `@BeforeAll`, `@AfterEach` |
-| Assertions and Assumptions â€” comprehensive assertion library | `assertAll()` for grouped assertions, `assumeTrue()` for conditional test execution |
+| JUnit 5 → modular test framework with Platform + Jupiter + Vintage | Jupiter API for new tests, Vintage for JUnit 4 backwards compatibility |
+| Annotations → `@Test`, `@ParameterizedTest`, `@DisplayName`, `@Nested` | Rich lifecycle hooks: `@BeforeAll`, `@AfterEach` |
+| Assertions and Assumptions → comprehensive assertion library | `assertAll()` for grouped assertions, `assumeTrue()` for conditional test execution |
 
 ---
 ## Chapter Roadmap
@@ -60,8 +60,8 @@ flowchart TD
 
 | Concept | Description | Key Difference |
 |---------|-------------|----------------|
-| JUnit 4 | Legacy framework | `@Test`, `@BeforeClass` â€” single jar |
-| JUnit 5 Jupiter | New annotation model | `@Test`, `@BeforeAll`, `@DisplayName` â€” `junit-jupiter-api` |
+| JUnit 4 | Legacy framework | `@Test`, `@BeforeClass` → single jar |
+| JUnit 5 Jupiter | New annotation model | `@Test`, `@BeforeAll`, `@DisplayName` → `junit-jupiter-api` |
 | JUnit 5 Vintage | Runs JUnit 4 tests on Platform | `junit-vintage-engine` |
 | `assertAll()` | Groups multiple assertions | Reports all failures, not just first |
 
@@ -971,7 +971,7 @@ class AssumptionDemo {
 ```
 
 > [!WARNING]
-> Always use `assertEquals(expected, actual)` â€” the argument order matters for clear failure messages.
+> Always use `assertEquals(expected, actual)` → the argument order matters for clear failure messages.
 
 ---
 

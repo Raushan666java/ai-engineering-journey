@@ -1,4 +1,4 @@
-# GATE CS Mock Test 5 â€” Full-Length Practice Paper
+# GATE CS Mock Test 5 → Full-Length Practice Paper
 
 
 ## Chapter at a Glance
@@ -207,10 +207,10 @@ All questions are MCQs with one correct answer.
 
 **Q15 (2 Marks):** Find the odd one out: Arithmetic, Geometric, Harmonic, Exponential. Explain.
 
-(A) Arithmetic â€” it is a sequence, others are means  
-(B) Geometric â€” it is a sequence, others are means  
-(C) Harmonic â€” it is a sequence, others are means  
-(D) Exponential â€” it is a progression, others are means
+(A) Arithmetic → it is a sequence, others are means  
+(B) Geometric → it is a sequence, others are means  
+(C) Harmonic → it is a sequence, others are means  
+(D) Exponential → it is a progression, others are means
 
 ---
 
@@ -252,11 +252,11 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q20 (1 Mark):** Which proposition is the contrapositive of P â†’ Q?
+**Q20 (1 Mark):** Which proposition is the contrapositive of P → Q?
 
-(A) Â¬Q â†’ Â¬P  
-(B) Â¬P â†’ Â¬Q  
-(C) Q â†’ P  
+(A) Â¬Q → Â¬P  
+(B) Â¬P → Â¬Q  
+(C) Q → P  
 (D) Â¬P âˆ¨ Q
 
 ---
@@ -515,7 +515,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q49 (2 Marks) [DBMS]:** R(A, B, C, D) with FDs: A â†’ B, C â†’ D. The highest normal form is:
+**Q49 (2 Marks) [DBMS]:** R(A, B, C, D) with FDs: A → B, C → D. The highest normal form is:
 
 (A) 1NF  
 (B) 2NF  
@@ -600,29 +600,29 @@ All questions are MCQs with one correct answer.
 
 **Q1:** Recondite means difficult to understand / abstruse. Opposite: Superficial (shallow, lacking depth).
 
-**Q2:** Let original price = P, consumption = C. Expenditure = PÃ—C. New price = 1.2P. To keep expenditure same: 1.2P Ã— C' = P Ã— C â†’ C' = C/1.2 = 0.833C. Reduction = (1 âˆ’ 0.833) Ã— 100% = 16.67%.
+**Q2:** Let original price = P, consumption = C. Expenditure = PÃ—C. New price = 1.2P. To keep expenditure same: 1.2P Ã— C' = P Ã— C → C' = C/1.2 = 0.833C. Reduction = (1 âˆ’ 0.833) Ã— 100% = 16.67%.
 
 **Q3:** The correct punctuation has the question mark inside the closing quotation mark, followed by a comma outside: "Can you please help me," she asked. Answer A.
 
 **Q4:** Sum of student weights = 30Ã—45 = 1350. Sum including teacher = 31Ã—46 = 1426. Teacher's weight = 1426 âˆ’ 1350 = 76 kg.
 
-**Q5:** All politicians are public speakers (P âŠ† PS). Some public speakers are charismatic (PS âˆ© C â‰  âˆ…). This does not imply P âˆ© C â‰  âˆ… (conclusion I fails). Conclusion II is the converse of "some public speakers are charismatic" â€” valid. Only II follows.
+**Q5:** All politicians are public speakers (P âŠ† PS). Some public speakers are charismatic (PS âˆ© C â‰  âˆ…). This does not imply P âˆ© C â‰  âˆ… (conclusion I fails). Conclusion II is the converse of "some public speakers are charismatic" → valid. Only II follows.
 
 **Q6:** Pattern: nÃ—(n+1). 1Ã—2=2, 2Ã—3=6, 3Ã—4=12, 4Ã—5=20, 5Ã—6=30, 6Ã—7=42.
 
-**Q7:** Each letter is encoded by its alphabetical position (A=1,...,Z=26). H=8, A=1, R=18, D=4 â†’ 815184. S=19, O=15, F=6, T=20 â†’ 1915620. E=5, A=1, S=19, Y=25 â†’ 511925.
+**Q7:** Each letter is encoded by its alphabetical position (A=1,...,Z=26). H=8, A=1, R=18, D=4 → 815184. S=19, O=15, F=6, T=20 → 1915620. E=5, A=1, S=19, Y=25 → 511925.
 
-**Q8:** Ravi is 12th from left â†’ 11 persons to his left. Total = 40. Persons to his right = 40 âˆ’ 12 = 28.
+**Q8:** Ravi is 12th from left → 11 persons to his left. Total = 40. Persons to his right = 40 âˆ’ 12 = 28.
 
 **Q9:** North 3 âˆ’ South 3 = 0 net north-south. East 4. Distance = 4 km.
 
 **Q10:** 13 mod 7 = 6. 6Â² mod 7 = 36 mod 7 = 1. So 6^100 = (6Â²)âµâ° = 1âµâ° = 1 mod 7. Remainder = 1.
 
-**Q11:** SI: Amount = P + (PÃ—rÃ—t)/100. For doubling: 2P = P + (PÃ—rÃ—8)/100 â†’ P = (PÃ—rÃ—8)/100 â†’ r = 12.5%. For quadrupling: 4P = P + (PÃ—12.5Ã—t)/100 â†’ 3P = (PÃ—12.5Ã—t)/100 â†’ t = 300/12.5 = 24 years.
+**Q11:** SI: Amount = P + (PÃ—rÃ—t)/100. For doubling: 2P = P + (PÃ—rÃ—8)/100 → P = (PÃ—rÃ—8)/100 → r = 12.5%. For quadrupling: 4P = P + (PÃ—12.5Ã—t)/100 → 3P = (PÃ—12.5Ã—t)/100 → t = 300/12.5 = 24 years.
 
 Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8Ã—2 = 16 years at compound interest, but at simple interest, additional 8 years adds another P: 3P takes 16 years, 4P takes 24 years.
 
-**Q12:** A and B together in 5 min: 5Ã—(1/20 + 1/30) = 5Ã—1/12 = 5/12. Remaining: 7/12. If A was closed: B needs (7/12)/(1/30) = 17.5 min more â†’ total 22.5 min. If B was closed: A needs (7/12)/(1/20) â‰ˆ 11.67 min more â†’ total 16.67 min. Since total is given as 22.5 min, A was closed.
+**Q12:** A and B together in 5 min: 5Ã—(1/20 + 1/30) = 5Ã—1/12 = 5/12. Remaining: 7/12. If A was closed: B needs (7/12)/(1/30) = 17.5 min more → total 22.5 min. If B was closed: A needs (7/12)/(1/20) â‰ˆ 11.67 min more → total 16.67 min. Since total is given as 22.5 min, A was closed.
 
 **Q13:** Total ways = C(10,4) = 210. 0 women: C(5,4)Ã—C(5,0) = 5. 1 woman: C(5,3)Ã—C(5,1) = 10Ã—5 = 50. P(at least 2) = 1 âˆ’ (5+50)/210 = 1 âˆ’ 55/210 = 155/210 = 31/42.
 
@@ -638,7 +638,7 @@ Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8Ã—2
 
 **Q19:** P(A|B) = P(Aâˆ©B)/P(B) = 0.2/0.5 = 0.4.
 
-**Q20:** Contrapositive of Pâ†’Q is Â¬Q â†’ Â¬P. It is logically equivalent to the original statement.
+**Q20:** Contrapositive of P→Q is Â¬Q → Â¬P. It is logically equivalent to the original statement.
 
 **Q21:** âˆ«â‚€Â¹âˆ«â‚€Â¹ xy dx dy = âˆ«â‚€Â¹ x dx Ã— âˆ«â‚€Â¹ y dy = (1/2)(1/2) = 1/4.
 
@@ -648,9 +648,9 @@ Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8Ã—2
 
 **Q24:** Primes from 1 to 100: 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97 = 25 primes. 25/100 = 0.25.
 
-**Q25:** T(n) = T(n/2) + 2T(n/4) + n. Using recursion tree: at level 0: n. Level 1: n/2 + 2(n/4) = n/2 + n/2 = n. Level 2: n/4 + 2(n/8) + 2(n/8) + 4(n/16) = n/4 + n/4 + n/4 + n/4 = n. Each level sums to n. Number of levels: the smallest subproblem is n/4áµ = 1 â†’ k = logâ‚„ n. So total = n Ã— logâ‚„ n = O(n log n).
+**Q25:** T(n) = T(n/2) + 2T(n/4) + n. Using recursion tree: at level 0: n. Level 1: n/2 + 2(n/4) = n/2 + n/2 = n. Level 2: n/4 + 2(n/8) + 2(n/8) + 4(n/16) = n/4 + n/4 + n/4 + n/4 = n. Each level sums to n. Number of levels: the smallest subproblem is n/4áµ = 1 → k = logâ‚„ n. So total = n Ã— logâ‚„ n = O(n log n).
 
-**Q26:** Queue: FIFO structure. Insert at rear (enqueue) and delete from front (dequeue) â€” both O(1) in array/linked list implementation.
+**Q26:** Queue: FIFO structure. Insert at rear (enqueue) and delete from front (dequeue) → both O(1) in array/linked list implementation.
 
 **Q27:** Preemptive Priority scheduling may cause starvation: a low-priority process may never execute if higher-priority processes keep arriving.
 
@@ -658,15 +658,15 @@ Alternatively, doubling in 8 years means quadrupling (doubling twice) in 8Ã—2
 
 **Q29:** In B+ trees, all data records are stored in leaf nodes. Internal nodes contain only key values and pointers for navigation.
 
-**Q30:** {aâ¿bâ¿ | n â‰¥ 0} is context-free (generated by S â†’ aSb | Îµ) but provably not regular by the pumping lemma. aâ¿báµ is regular. Even-length a's is regular. Primes is context-sensitive.
+**Q30:** {aâ¿bâ¿ | n â‰¥ 0} is context-free (generated by S → aSb | Îµ) but provably not regular by the pumping lemma. aâ¿báµ is regular. Even-length a's is regular. Primes is context-sensitive.
 
 **Q31:** A constant's value is known at compile time (e.g., const int x = 5;). The compiler uses this for constant folding optimization.
 
-**Q32:** NAND is a universal gate â€” any Boolean function can be implemented using only NAND gates. NOR is also universal.
+**Q32:** NAND is a universal gate → any Boolean function can be implemented using only NAND gates. NOR is also universal.
 
 **Q33:** Cache memory sits between CPU and main memory, providing faster access to frequently used data.
 
-**Q34:** h(50) = 50 mod 7 = 1 â†’ index 1. h(72) = 72 mod 7 = 2 â†’ index 2. h(89) = 89 mod 7 = 5 â†’ index 5. h(35) = 35 mod 7 = 0 â†’ index 0. h(63) = 63 mod 7 = 0. Index 0 occupied by 35. Linear probe: index 1 (occupied by 50), index 2 (occupied by 72), index 3 (free). 63 â†’ index 3.
+**Q34:** h(50) = 50 mod 7 = 1 → index 1. h(72) = 72 mod 7 = 2 → index 2. h(89) = 89 mod 7 = 5 → index 5. h(35) = 35 mod 7 = 0 → index 0. h(63) = 63 mod 7 = 0. Index 0 occupied by 35. Linear probe: index 1 (occupied by 50), index 2 (occupied by 72), index 3 (free). 63 → index 3.
 
 **Q35:** LRU (Least Recently Used) is a page replacement algorithm. SSTF and SCAN are disk scheduling. Banker's is deadlock avoidance.
 
@@ -696,7 +696,7 @@ I'll change the question: Bandwidth = 4 kHz, number of signal levels = 8. Nyquis
 
 **Q43:** The critical section is a segment of code where a process accesses shared resources. It requires synchronization mechanisms to prevent race conditions.
 
-**Q44:** 3NF eliminates transitive dependencies (non-prime attribute â†’ non-prime attribute). 2NF eliminates partial dependencies. BCNF requires every determinant to be a superkey.
+**Q44:** 3NF eliminates transitive dependencies (non-prime attribute → non-prime attribute). 2NF eliminates partial dependencies. BCNF requires every determinant to be a superkey.
 
 **Q45:** SMTP (Simple Mail Transfer Protocol) is used for sending email from client to server and between servers. POP3/IMAP are for receiving.
 
@@ -706,15 +706,15 @@ I'll change the question: Bandwidth = 4 kHz, number of signal levels = 8. Nyquis
 Sequence: P1(0-4, rem=4), P2(4-8, rem=0 done at 8), P3(8-12, rem=5), P1(12-16, rem=0 done at 16), P3(16-21, rem=0 done at 21).
 Waiting = Turnaround âˆ’ Burst. P1: wait = 16âˆ’8 = 8. P2: wait = 8âˆ’4 = 4. P3: wait = 21âˆ’9 = 12. Average = (8+4+12)/3 = 24/3 = 8.0 ms.
 
-**Q48:** Total payload = 4000 âˆ’ 20 = 3980 bytes. MTU = 1500 bytes, payload per fragment = 1500 âˆ’ 20 = 1480 bytes. 3980/1480 = 2.689 â†’ 3 fragments. Fragments: first two with 1480 bytes each, third with 3980 âˆ’ 2Ã—1480 = 1020 bytes.
+**Q48:** Total payload = 4000 âˆ’ 20 = 3980 bytes. MTU = 1500 bytes, payload per fragment = 1500 âˆ’ 20 = 1480 bytes. 3980/1480 = 2.689 → 3 fragments. Fragments: first two with 1480 bytes each, third with 3980 âˆ’ 2Ã—1480 = 1020 bytes.
 
-**Q49:** Candidate key = ACD or... hmm. R(A,B,C,D) with Aâ†’B, Câ†’D. The only way to get all attributes is to start with AC (ACâº = ACBD = ABCD). So candidate key is AC. B is determined by A (a proper subset of the key) â†’ partial dependency. So R is in 1NF only.
+**Q49:** Candidate key = ACD or... hmm. R(A,B,C,D) with A→B, C→D. The only way to get all attributes is to start with AC (ACâº = ACBD = ABCD). So candidate key is AC. B is determined by A (a proper subset of the key) → partial dependency. So R is in 1NF only.
 
 **Q50:** Emptiness problem for PDA (whether a PDA's language is empty) is decidable. Equivalence of PDAs, ambiguity of CFGs, and universality of PDAs are undecidable.
 
 **Q51:** Kâ‚† has C(6,2) = 15 edges. A tree with 6 vertices has 5 edges. Edges to remove = 15 âˆ’ 5 = 10.
 
-**Q52:** Cache = 32 KB = 2Â¹âµ bytes. Block = 64 = 2â¶ bytes. Blocks = 2Â¹âµ/2â¶ = 2â¹. 2-way set associative â†’ sets = 2â¹/2 = 2â¸. Index = 8 bits. Offset = 6 bits. Tag = 32 âˆ’ 8 âˆ’ 6 = 18 bits.
+**Q52:** Cache = 32 KB = 2Â¹âµ bytes. Block = 64 = 2â¶ bytes. Blocks = 2Â¹âµ/2â¶ = 2â¹. 2-way set associative → sets = 2â¹/2 = 2â¸. Index = 8 bits. Offset = 6 bits. Tag = 32 âˆ’ 8 âˆ’ 6 = 18 bits.
 
 **Q53:** Three-address code for (a + b) * c âˆ’ (d / e) * f:
 t1 = a + b
@@ -728,16 +728,16 @@ t5 = t2 âˆ’ t4
 
 **Q55:** FIFO page replacement with 3 frames:
 Reference: 1,2,3,4,1,2,5,1,2,3,4,5
-Step 1 (1): miss â†’ [1]. f=1
-Step 2 (2): miss â†’ [1,2]. f=2
-Step 3 (3): miss â†’ [1,2,3]. f=3
-Step 4 (4): miss, evict 1 (oldest) â†’ [2,3,4]. f=4
-Step 5 (1): miss, evict 2 â†’ [3,4,1]. f=5
-Step 6 (2): miss, evict 3 â†’ [4,1,2]. f=6
-Step 7 (5): miss, evict 4 â†’ [1,2,5]. f=7
-Step 8 (1): hit â†’ [1,2,5]
-Step 9 (2): hit â†’ [1,2,5]
-Step 10 (3): miss, evict 1 â†’ [2,5,3]. f=8
-Step 11 (4): miss, evict 2 â†’ [5,3,4]. f=9
-Step 12 (5): hit â†’ [5,3,4]
+Step 1 (1): miss → [1]. f=1
+Step 2 (2): miss → [1,2]. f=2
+Step 3 (3): miss → [1,2,3]. f=3
+Step 4 (4): miss, evict 1 (oldest) → [2,3,4]. f=4
+Step 5 (1): miss, evict 2 → [3,4,1]. f=5
+Step 6 (2): miss, evict 3 → [4,1,2]. f=6
+Step 7 (5): miss, evict 4 → [1,2,5]. f=7
+Step 8 (1): hit → [1,2,5]
+Step 9 (2): hit → [1,2,5]
+Step 10 (3): miss, evict 1 → [2,5,3]. f=8
+Step 11 (4): miss, evict 2 → [5,3,4]. f=9
+Step 12 (5): hit → [5,3,4]
 Total page faults = 9.

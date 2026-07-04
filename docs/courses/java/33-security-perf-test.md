@@ -20,9 +20,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Security Testing â€” verify auth and authorization controls | Use `@WithMockUser`, `@WithAnonymousUser`, and request post-processors |
-| Performance Testing â€” measure throughput, latency, and resource usage | Java Microbenchmark Harness (JMH) for micro-benchmarks |
-| Load Testing â€” simulate concurrent users with Gatling | Scenario-based DSL for HTTP, WebSocket, and JMS load tests |
+| Security Testing → verify auth and authorization controls | Use `@WithMockUser`, `@WithAnonymousUser`, and request post-processors |
+| Performance Testing → measure throughput, latency, and resource usage | Java Microbenchmark Harness (JMH) for micro-benchmarks |
+| Load Testing → simulate concurrent users with Gatling | Scenario-based DSL for HTTP, WebSocket, and JMS load tests |
 
 ---
 ## Chapter Roadmap
@@ -74,7 +74,7 @@ flowchart TD
 ## Chapter Quiz
 
 1. Which annotation creates a test user with specific roles without contacting the auth provider? **Answer:** `@WithMockUser`
-2. What is JMH? **Answer:** Java Microbenchmark Harness â€” for accurate method-level performance measurement
+2. What is JMH? **Answer:** Java Microbenchmark Harness → for accurate method-level performance measurement
 3. What tool uses a Scala-based DSL for HTTP load testing? **Answer:** Gatling
 
 ---
@@ -1449,7 +1449,7 @@ curl localhost:8080/actuator/metrics/jvm.memory.used
 ```
 
 > [!NOTE]
-> Always run load tests against a staging environment that mirrors production â€” results from a developer laptop are not meaningful.
+> Always run load tests against a staging environment that mirrors production → results from a developer laptop are not meaningful.
 
 ---
 

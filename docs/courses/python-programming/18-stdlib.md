@@ -74,7 +74,7 @@ flowchart LR
     S12 --> S13
     S13 --> S14
 ```
-## 18.1 os â€” Operating System Interface
+## 18.1 os → Operating System Interface
 
 ```python
 import os
@@ -90,7 +90,7 @@ print(entries[:5])
 print(os.environ.get("HOME"))
 print(os.environ.get("PATH")[:50])
 
-# Path operations (legacy â€” prefer pathlib)
+# Path operations (legacy → prefer pathlib)
 print(os.path.join("dir", "subdir", "file.txt"))
 print(os.path.expanduser("~/documents"))
 print(os.path.exists("test.txt"))
@@ -112,7 +112,7 @@ for root, dirs, files in os.walk("."):
             print(os.path.join(root, file))
 ```
 
-## 18.2 sys â€” System-Specific Parameters
+## 18.2 sys → System-Specific Parameters
 
 ```python
 import sys
@@ -137,9 +137,9 @@ sys.stdout.write("Using stdout directly\n")
 sys.exit(0)  # 0 = success, non-zero = error
 ```
 
-## 18.3 pathlib â€” Object-Oriented Filesystem
+## 18.3 pathlib → Object-Oriented Filesystem
 
-Already covered in depth in Chapter 17 â€” here is a quick reference:
+Already covered in depth in Chapter 17 → here is a quick reference:
 
 ```python
 from pathlib import Path
@@ -153,7 +153,7 @@ for py_file in Path(".").rglob("*.py"):
     pass
 ```
 
-## 18.4 shutil â€” High-Level File Operations
+## 18.4 shutil → High-Level File Operations
 
 ```python
 import shutil
@@ -181,7 +181,7 @@ shutil.make_archive("backup", "zip", "my_project")
 shutil.unpack_archive("backup.zip", "extracted")
 ```
 
-## 18.5 datetime â€” Dates and Times
+## 18.5 datetime → Dates and Times
 
 ```python
 from datetime import datetime, date, time, timedelta, timezone
@@ -220,7 +220,7 @@ utc_now = datetime.now(timezone.utc)
 print(utc_now)
 ```
 
-## 18.6 time â€” Low-Level Time Access
+## 18.6 time → Low-Level Time Access
 
 ```python
 import time
@@ -241,7 +241,7 @@ elapsed = time.perf_counter() - start
 print(f"Took {elapsed:.4f}s")
 ```
 
-## 18.7 re â€” Regular Expressions
+## 18.7 re → Regular Expressions
 
 ```python
 import re
@@ -305,7 +305,7 @@ r"<[^>]+>"
 > **One-Sentence Takeaway:** undefined
 
 
-Already covered in Chapter 17 â€” quick reference:
+Already covered in Chapter 17 → quick reference:
 
 ```python
 import json
@@ -332,15 +332,15 @@ with open("data.csv", newline="") as f:
 ```python
 from collections import defaultdict, Counter, OrderedDict, deque, ChainMap
 
-# defaultdict â€” already covered
+# defaultdict → already covered
 d = defaultdict(list)
 d["key"].append(1)
 
-# Counter â€” already covered
+# Counter → already covered
 c = Counter("mississippi")
 print(c.most_common(2))  # [('i', 4), ('s', 4)]
 
-# deque â€” double-ended queue
+# deque → double-ended queue
 queue = deque([1, 2, 3])
 queue.append(4)          # [1, 2, 3, 4]
 queue.appendleft(0)      # [0, 1, 2, 3, 4]
@@ -348,7 +348,7 @@ queue.pop()              # 4
 queue.popleft()          # 0
 print(queue)             # [1, 2, 3]
 
-# ChainMap â€” combine multiple dictionaries
+# ChainMap → combine multiple dictionaries
 defaults = {"theme": "light", "font": "Arial"}
 user_settings = {"theme": "dark"}
 settings = ChainMap(user_settings, defaults)
@@ -361,7 +361,7 @@ print(settings["font"])   # Arial
 > **One-Sentence Takeaway:** undefined
 
 
-Already covered in Chapter 16 â€” quick reference:
+Already covered in Chapter 16 → quick reference:
 
 ```python
 from itertools import count, cycle, permutations, combinations, product, chain, groupby
@@ -375,16 +375,16 @@ from itertools import count, cycle, permutations, combinations, product, chain, 
 ```python
 from functools import partial, reduce, lru_cache, singledispatch
 
-# partial â€” already covered
+# partial → already covered
 def multiply(a, b): return a * b
 double = partial(multiply, 2)
 
-# lru_cache â€” least recently used cache
+# lru_cache → least recently used cache
 @lru_cache(maxsize=128)
 def expensive(n: int) -> int:
     return n ** n
 
-# singledispatch â€” function overloading by type
+# singledispatch → function overloading by type
 @singledispatch
 def format_item(item):
     return str(item)
@@ -455,7 +455,7 @@ def process(items: list[int]) -> dict[str, int]:
 # Optional
 def find_user(user_id: int) -> Optional[str]:
     db = {1: "Alice", 2: "Bob"}
-    return db.get(user_id)  # Optional[str] â†’ str or None
+    return db.get(user_id)  # Optional[str] → str or None
 
 # Union (or | in 3.10+)
 def parse(value: Union[int, str]) -> int | str:
@@ -476,7 +476,7 @@ def first(items: list[T]) -> T | None:
 print(first([1, 2, 3]))  # 1
 ```
 
-## 18.14 argparse â€” Command-Line Arguments
+## 18.14 argparse → Command-Line Arguments
 
 ```python
 import argparse

@@ -126,7 +126,7 @@ def append_to(element, target=[]):
     return target
 
 print(append_to(1))   # [1]
-print(append_to(2))   # [1, 2]  â€” the default list is shared!
+print(append_to(2))   # [1, 2]  → the default list is shared!
 
 # CORRECT pattern
 def append_to(element, target=None):
@@ -139,7 +139,7 @@ print(append_to(1))   # [1]
 print(append_to(2))   # [2]
 ```
 
-### 9.2.4 *args â€” Variable Positional Arguments
+### 9.2.4 *args → Variable Positional Arguments
 
 `*args` captures extra positional arguments as a tuple:
 
@@ -160,7 +160,7 @@ log("INFO", "Starting", "Processing", "Done")
 # [INFO] Done
 ```
 
-### 9.2.5 **kwargs â€” Variable Keyword Arguments
+### 9.2.5 **kwargs → Variable Keyword Arguments
 
 `**kwargs` captures extra keyword arguments as a dictionary:
 
@@ -292,10 +292,10 @@ help(fibonacci)  # prints the docstring
 
 Python resolves variable names following the LEGB order:
 
-1. **L**ocal â€” function scope
-2. **E**nclosing â€” outer function scope (for nested functions)
-3. **G**lobal â€” module level
-4. **B**uilt-in â€” Python's built-in namespace
+1. **L**ocal → function scope
+2. **E**nclosing → outer function scope (for nested functions)
+3. **G**lobal → module level
+4. **B**uilt-in → Python's built-in namespace
 
 ```python
 x = "global"         # G
@@ -425,7 +425,7 @@ def make_functions():
     return funcs
 
 for f in make_functions():
-    print(f(), end=" ")   # 4 4 4 4 4  â€” all see i=4
+    print(f(), end=" ")   # 4 4 4 4 4  → all see i=4
 
 # Fix: capture the current value
 def make_functions_fixed():
@@ -443,7 +443,7 @@ for f in make_functions_fixed():
 > **One-Sentence Takeaway:** undefined
 
 
-Functions are first-class objects â€” they can be assigned, passed, and returned:
+Functions are first-class objects → they can be assigned, passed, and returned:
 
 ```python
 def square(x):

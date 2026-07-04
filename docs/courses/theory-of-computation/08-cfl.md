@@ -43,7 +43,7 @@ flowchart LR
 
 ### 7.1 Pumping Lemma for Context-Free Languages
 
-Just as regular languages have a pumping lemma, context-free languages have one too â€” but it's more complex because derivation trees provide two pumpable subtrees.
+Just as regular languages have a pumping lemma, context-free languages have one too → but it's more complex because derivation trees provide two pumpable subtrees.
 
 **Pumping Lemma for CFLs:**
 
@@ -70,9 +70,9 @@ Context-free languages are closed under:
 
 | Operation | Closure? | Construction |
 |-----------|----------|-------------|
-| Union | Yes | S â†’ Sâ‚ | Sâ‚‚ |
-| Concatenation | Yes | S â†’ Sâ‚Sâ‚‚ |
-| Kleene star | Yes | S â†’ Sâ‚S | Îµ |
+| Union | Yes | S → Sâ‚ | Sâ‚‚ |
+| Concatenation | Yes | S → Sâ‚Sâ‚‚ |
+| Kleene star | Yes | S → Sâ‚S | Îµ |
 | Reversal | Yes | Reverse each RHS |
 | Homomorphism | Yes | Replace terminals in productions |
 | Intersection with regular language | Yes | PDA Ã— DFA product |
@@ -88,25 +88,25 @@ CFLs are **NOT** closed under:
 ### 7.4 Chomsky Normal Form (CNF)
 
 A CFG is in **Chomsky Normal Form** if every production is of the form:
-- A â†’ BC (two non-terminals)
-- A â†’ a (terminal)
-- S â†’ Îµ (only allowed for the start variable)
+- A → BC (two non-terminals)
+- A → a (terminal)
+- S → Îµ (only allowed for the start variable)
 
 **Conversion to CNF:**
 
-1. **Add new start variable** Sâ‚€ â†’ S.
+1. **Add new start variable** Sâ‚€ → S.
 2. **Eliminate Îµ-productions:** Remove nullable variables (those deriving Îµ).
-3. **Eliminate unit productions:** Remove A â†’ B productions.
-4. **Convert long productions:** Replace A â†’ Bâ‚Bâ‚‚â€¦Bâ‚– (k â‰¥ 3) with A â†’ Bâ‚Câ‚, Câ‚ â†’ Bâ‚‚Câ‚‚, â€¦, C_{k-2} â†’ B_{k-1}Bâ‚–.
-5. **Replace terminals in mixed productions:** For A â†’ bC, create new variable B with B â†’ b, then A â†’ BC.
+3. **Eliminate unit productions:** Remove A → B productions.
+4. **Convert long productions:** Replace A → Bâ‚Bâ‚‚â€¦Bâ‚– (k â‰¥ 3) with A → Bâ‚Câ‚, Câ‚ → Bâ‚‚Câ‚‚, â€¦, C_{k-2} → B_{k-1}Bâ‚–.
+5. **Replace terminals in mixed productions:** For A → bC, create new variable B with B → b, then A → BC.
 
 Every CFG can be converted to an equivalent grammar in CNF. The parse trees in CNF are binary trees, which is useful for the CYK algorithm.
 
 ### 7.5 Greibach Normal Form (GNF)
 
 A CFG is in **Greibach Normal Form** if every production is of the form:
-- A â†’ aÎ± (a terminal followed by a string of variables)
-- S â†’ Îµ (allowed)
+- A → aÎ± (a terminal followed by a string of variables)
+- S → Îµ (allowed)
 
 **Conversion to GNF:**
 1. Eliminate left recursion.
@@ -124,12 +124,12 @@ Input: CFG G in CNF, string w = wâ‚wâ‚‚â€¦wâ‚™.
 Output: Whether w âˆˆ L(G).
 
 1. Create a table T[i,j] = set of variables that can derive wáµ¢â€¦wâ±¼.
-2. For each i: T[i,i] = { A | A â†’ wáµ¢ is a production }.
+2. For each i: T[i,i] = { A | A → wáµ¢ is a production }.
 3. For length = 2 to n:
    For i = 1 to n-length+1:
      j = i + length - 1
      For k = i to j-1:
-       T[i,j] âˆª= { A | A â†’ BC, B âˆˆ T[i,k], C âˆˆ T[k+1,j] }
+       T[i,j] âˆª= { A | A → BC, B âˆˆ T[i,k], C âˆˆ T[k+1,j] }
 4. Accept if S âˆˆ T[1,n].
 
 ### 7.7 Decision Properties of CFLs
@@ -146,7 +146,7 @@ Output: Whether w âˆˆ L(G).
 
 ## Examples
 
-### Example 7.1: Pumping Lemma â€” Prove L = { aâ¿bâ¿câ¿ | n â‰¥ 0 } is Not Context-Free
+### Example 7.1: Pumping Lemma → Prove L = { aâ¿bâ¿câ¿ | n â‰¥ 0 } is Not Context-Free
 
 **Proof:** Assume L is a CFL with pumping length p. Choose s = aáµ–báµ–cáµ– âˆˆ L. By the pumping lemma, s = uvxyz with |vxy| â‰¤ p and |vy| â‰¥ 1.
 
@@ -157,61 +157,61 @@ Since |vxy| â‰¤ p, vxy can contain at most two distinct symbols (it can't st
 
 Either way, uvÂ²xyÂ²z âˆ‰ L. Contradiction. Therefore L is not context-free.
 
-### Example 7.2: Pumping Lemma â€” Prove L = { aâ¿bâ¿cáµdáµ | n, m â‰¥ 0 } is Not Context-Free
+### Example 7.2: Pumping Lemma → Prove L = { aâ¿bâ¿cáµdáµ | n, m â‰¥ 0 } is Not Context-Free
 
-Actually, this IS context-free: S â†’ AB, A â†’ aAb | Îµ, B â†’ cBd | Îµ.
+Actually, this IS context-free: S → AB, A → aAb | Îµ, B → cBd | Îµ.
 
 But L = { aâ¿bâ¿câ¿dâ¿ | n â‰¥ 0 } is not context-free. Proof similar to Example 7.1: choose s = aáµ–báµ–cáµ–dáµ–. The pumpable part cannot cover all four symbols.
 
 ### Example 7.3: Converting to Chomsky Normal Form
 
-Convert G: S â†’ aSb | Îµ to CNF.
+Convert G: S → aSb | Îµ to CNF.
 
-**Step 1:** Add Sâ‚€ â†’ S.
+**Step 1:** Add Sâ‚€ → S.
 
-**Step 2:** Eliminate Îµ-productions. S â†’ Îµ is the only one (S is nullable).
+**Step 2:** Eliminate Îµ-productions. S → Îµ is the only one (S is nullable).
 - For each production containing S on RHS, add variants without S:
-  - S â†’ aSb becomes S â†’ aSb | ab
-  - Sâ‚€ â†’ S becomes Sâ‚€ â†’ S | Îµ
+  - S → aSb becomes S → aSb | ab
+  - Sâ‚€ → S becomes Sâ‚€ → S | Îµ
 
-Grammar after: Sâ‚€ â†’ S | Îµ, S â†’ aSb | ab.
+Grammar after: Sâ‚€ → S | Îµ, S → aSb | ab.
 
-**Step 3:** Eliminate unit productions: Sâ‚€ â†’ S (replace with Sâ‚€ â†’ aSb | ab | Îµ).
+**Step 3:** Eliminate unit productions: Sâ‚€ → S (replace with Sâ‚€ → aSb | ab | Îµ).
 
-**Step 4:** Convert to CNF. Introduce A â†’ a, B â†’ b.
-- Sâ‚€ â†’ ASB | AB | Îµ
-- S â†’ ASB | AB
-- A â†’ a
-- B â†’ b
+**Step 4:** Convert to CNF. Introduce A → a, B → b.
+- Sâ‚€ → ASB | AB | Îµ
+- S → ASB | AB
+- A → a
+- B → b
 
 Now replace ASB (three variables): introduce C.
-- Sâ‚€ â†’ A C | AB | Îµ
-- S â†’ A C | AB
-- C â†’ SB
-- A â†’ a
-- B â†’ b
+- Sâ‚€ → A C | AB | Îµ
+- S → A C | AB
+- C → SB
+- A → a
+- B → b
 
 Final CNF grammar.
 
 ### Example 7.4: CYK Algorithm
 
 Test if "aabb" is generated by:
-- S â†’ AB | BC
-- A â†’ BA | a
-- B â†’ CC | b
-- C â†’ AB | a
+- S → AB | BC
+- A → BA | a
+- B → CC | b
+- C → AB | a
 
 **Table T:**
 
 | Cell | Content | How |
 |------|---------|-----|
-| T[1,1] | {A, C} | A â†’ a, C â†’ a |
-| T[2,2] | {B} | B â†’ b |
-| T[3,3] | {B} | B â†’ b |
-| T[4,4] | {A, C} | A â†’ a, C â†’ a |
-| T[1,2] | {S} | S â†’ AB with AâˆˆT[1,1], BâˆˆT[2,2] |
-| T[2,3] | {A} | A â†’ BA with BâˆˆT[2,2], AâˆˆT[3,3]... actually no. Let's compute: A â†’ BA, BâˆˆT[2,2]={B}, AâˆˆT[3,3]={B} â€” Bâˆ‰{B} so no. S â†’ BC: BâˆˆT[2,2]={B}, CâˆˆT[3,3]={B} â€” no. S â†’ AB: AâˆˆT[2,2]={B}, BâˆˆT[3,3]={B} â€” no. So T[2,3] = âˆ…. Actually wait, we need to check all productions. Let me re-examine: |
-| T[3,4] | {S} | S â†’ AB, AâˆˆT[3,3]={B}... Bâˆ‰{B}? No, Aâˆ‰{B}. T[3,4] with k=3: {B}Ã—{A,C} â€” no match for any production. Hmm. Let me just show the concept without getting into the weeds. |
+| T[1,1] | {A, C} | A → a, C → a |
+| T[2,2] | {B} | B → b |
+| T[3,3] | {B} | B → b |
+| T[4,4] | {A, C} | A → a, C → a |
+| T[1,2] | {S} | S → AB with AâˆˆT[1,1], BâˆˆT[2,2] |
+| T[2,3] | {A} | A → BA with BâˆˆT[2,2], AâˆˆT[3,3]... actually no. Let's compute: A → BA, BâˆˆT[2,2]={B}, AâˆˆT[3,3]={B} → Bâˆ‰{B} so no. S → BC: BâˆˆT[2,2]={B}, CâˆˆT[3,3]={B} → no. S → AB: AâˆˆT[2,2]={B}, BâˆˆT[3,3]={B} → no. So T[2,3] = âˆ…. Actually wait, we need to check all productions. Let me re-examine: |
+| T[3,4] | {S} | S → AB, AâˆˆT[3,3]={B}... Bâˆ‰{B}? No, Aâˆ‰{B}. T[3,4] with k=3: {B}Ã—{A,C} → no match for any production. Hmm. Let me just show the concept without getting into the weeds. |
 
 This demonstrates why CYK is O(nÂ³): we need to try all k between i and j-1 for each cell.
 
@@ -645,18 +645,18 @@ export { Processor, Task }
 ### Basic
 
 1. Prove that { aâ¿bâ¿aâ¿bâ¿ | n â‰¥ 0 } is not context-free.
-2. Convert S â†’ aS | Sb | Îµ to CNF.
-3. Convert S â†’ AB, A â†’ aAb | Îµ, B â†’ cBd | Îµ to GNF.
-4. Use CYK to determine if "baaba" is generated by S â†’ AB, A â†’ a | BA, B â†’ b | BC, C â†’ a | AB.
+2. Convert S → aS | Sb | Îµ to CNF.
+3. Convert S → AB, A → aAb | Îµ, B → cBd | Îµ to GNF.
+4. Use CYK to determine if "baaba" is generated by S → AB, A → a | BA, B → b | BC, C → a | AB.
 5. Prove that the regular language { a,b }* is context-free by giving a CFG.
 
 ### Intermediate
 
 6. Prove that L = { aâ¿báµcâ¿dáµ | n, m â‰¥ 0 } is context-free by giving a grammar. Then prove { aâ¿bâ¿câ¿dâ¿ | n â‰¥ 0 } is not context-free.
-7. Use Ogden's lemma to prove { aâ¿báµcáµ | n, m, k â‰¥ 0, n = m or n = k } is not context-free (note: this language IS context-free â€” find the flaw in this proof attempt, or find the actual non-CFL to test Ogden's on).
+7. Use Ogden's lemma to prove { aâ¿báµcáµ | n, m, k â‰¥ 0, n = m or n = k } is not context-free (note: this language IS context-free → find the flaw in this proof attempt, or find the actual non-CFL to test Ogden's on).
 8. Show that CFLs are closed under reversal by constructing a new CFG.
 9. Show that the language { w âˆˆ {a,b,c}* | |w|â‚ = |w|_b = |w|_c } is not context-free.
-10. Convert the expression grammar E â†’ E+T | T, T â†’ T*F | F, F â†’ (E) | i to CNF.
+10. Convert the expression grammar E → E+T | T, T → T*F | F, F → (E) | i to CNF.
 
 ### Advanced
 

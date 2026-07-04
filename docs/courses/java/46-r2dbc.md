@@ -36,7 +36,7 @@ After completing this chapter, you will be able to:
 - Build a complete reactive data layer for a realistic application
 
 ## 1. What Is R2DBC?
-> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -48,7 +48,7 @@ After completing this chapter, you will be able to:
 JDBC (Java Database Connectivity) is inherently blocking. Every `ResultSet.next()`, `PreparedStatement.executeQuery()`, and `Connection.commit()` blocks the calling thread until the database responds. In a reactive application, blocking an event-loop thread defeats the purpose of non-blocking I/O.
 
 ```java
-// JDBC â€” blocks the calling thread
+// JDBC → blocks the calling thread
 ResultSet rs = stmt.executeQuery("SELECT * FROM products");
 while (rs.next()) {               // Blocking
     String name = rs.getString("name");  // Blocking
@@ -472,7 +472,7 @@ public class Order implements Persistable<UUID> {
     @Transient
     private boolean isNew = false;
 
-    // Transient â€” not persisted, populated by query
+    // Transient → not persisted, populated by query
     @Transient
     private Customer customer;
 
@@ -1024,7 +1024,7 @@ public class OrderService {
         this.transactionalOperator = transactionalOperator;
     }
 
-    // Declarative transaction â€” whole method is transactional
+    // Declarative transaction → whole method is transactional
     @Transactional
     public Mono<Order> createOrder(UUID customerId, java.util.List<OrderItemRequest> items) {
         return customerRepository.findById(customerId)
@@ -1063,7 +1063,7 @@ public class OrderService {
             });
     }
 
-    // TransactionalOperator â€” programmatic transaction boundaries
+    // TransactionalOperator → programmatic transaction boundaries
     public Mono<Order> createOrderProgrammatic(UUID customerId,
                                                 java.util.List<OrderItemRequest> items) {
         return transactionalOperator.execute(status ->
@@ -2135,7 +2135,7 @@ logging:
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â€” it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer</summary>
@@ -2150,7 +2150,7 @@ This chapter covered Spring Data R2DBC and reactive data access comprehensively:
 
 2. **Spring Data R2DBC** builds on R2DBC with `R2dbcRepository`, derived query methods, `@Query` annotations, and DTO projections.
 
-3. **Entity mapping** in R2DBC is simpler than JPA â€” no lazy loading, no persistence context, no automatic relationship mapping. You write explicit queries for joins and aggregates.
+3. **Entity mapping** in R2DBC is simpler than JPA → no lazy loading, no persistence context, no automatic relationship mapping. You write explicit queries for joins and aggregates.
 
 4. **DatabaseClient** provides lower-level SQL access with bind parameters and custom row mapping for complex queries, batch operations, and pagination.
 
@@ -2198,7 +2198,7 @@ This chapter covered Spring Data R2DBC and reactive data access comprehensively:
    - Product catalog with categories, tags, and variants
    - Customer profiles with addresses and preferences
    - Shopping cart with merge on login
-   - Order processing with Saga pattern (inventory â†’ payment â†’ shipping)
+   - Order processing with Saga pattern (inventory → payment → shipping)
    - Review and rating system with aggregation
    - Admin dashboards with real-time metrics
    - All endpoints exposed via WebFlux controllers

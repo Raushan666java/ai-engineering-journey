@@ -56,47 +56,47 @@ p { color: red !important; }
 **Answer:** Specificity is a four-part value `(a, b, c, d)` computed as: inline styles = 1 for `a`, each ID selector = 1 for `b`, each class/attribute/pseudo-class = 1 for `c`, each element/pseudo-element = 1 for `d`. The larger the tuple lexicographically, the higher the specificity.
 
 ```css
-/* specificity (0, 0, 0, 1) â€” one element */
+/* specificity (0, 0, 0, 1) → one element */
 p { color: blue; }
 
-/* specificity (0, 1, 0, 0) â€” one ID */
+/* specificity (0, 1, 0, 0) → one ID */
 #sidebar { color: green; }
 
-/* specificity (0, 0, 1, 0) â€” one class */
+/* specificity (0, 0, 1, 0) → one class */
 .highlight { color: yellow; }
 
-/* specificity (0, 0, 1, 1) â€” one class + one element */
+/* specificity (0, 0, 1, 1) → one class + one element */
 p.highlight { color: orange; }
 ```
 
 ### Q3: What is the difference between a pseudo-class and a pseudo-element?
-**Answer:** A pseudo-class (`:hover`, `:nth-child`) selects elements in a particular *state* â€” it uses a single colon. A pseudo-element (`::before`, `::first-line`) selects a *part* of an element â€” CSS3 uses double colons. Pseudo-classes add to the specificity `c` column; pseudo-elements add to the `d` column.
+**Answer:** A pseudo-class (`:hover`, `:nth-child`) selects elements in a particular *state* → it uses a single colon. A pseudo-element (`::before`, `::first-line`) selects a *part* of an element → CSS3 uses double colons. Pseudo-classes add to the specificity `c` column; pseudo-elements add to the `d` column.
 
 ```css
-/* pseudo-class â€” state-based */
+/* pseudo-class → state-based */
 button:hover { background: #0056b3; }
 li:nth-child(odd) { background: #f5f5f5; }
 
-/* pseudo-element â€” part-based */
+/* pseudo-element → part-based */
 blockquote::first-letter { font-size: 3em; float: left; }
 .card::before { content: "â˜…"; color: gold; }
 ```
 
 ### Q4: How does `:is()` and `:where()` affect specificity?
-**Answer:** `:is()` takes the specificity of its *most specific argument* â€” it never lowers specificity. `:where()` always contributes *zero* specificity, regardless of its arguments. Use `:is()` to group selectors without losing weight; use `:where()` for reset/theme defaults you want to be easily overridable.
+**Answer:** `:is()` takes the specificity of its *most specific argument* → it never lowers specificity. `:where()` always contributes *zero* specificity, regardless of its arguments. Use `:is()` to group selectors without losing weight; use `:where()` for reset/theme defaults you want to be easily overridable.
 
 ```css
-/* :is() takes highest specificity inside â€” here (0, 1, 0) from #nav */
+/* :is() takes highest specificity inside → here (0, 1, 0) from #nav */
 :is(nav, #nav, .menu) a { color: blue; }
 
-/* :where() always yields zero specificity â€” easy to override */
+/* :where() always yields zero specificity → easy to override */
 :where(nav, #nav, .menu) a { color: gray; }
 /* this single element selector beats the :where() rule above */
 a { color: black; }
 ```
 
 ### Q5: What is the `:has()` pseudo-class and how is it used?
-**Answer:** `:has()` is a relational pseudo-class â€” it selects an element based on its *descendants* or *siblings*. Often called "the parent selector." It checks if the element *has* a matching child, descendant, or subsequent sibling. Supported in all modern browsers as of 2024.
+**Answer:** `:has()` is a relational pseudo-class → it selects an element based on its *descendants* or *siblings*. Often called "the parent selector." It checks if the element *has* a matching child, descendant, or subsequent sibling. Supported in all modern browsers as of 2024.
 
 ```css
 /* style a card that contains an image */
@@ -144,7 +144,7 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q9: How do you select an element that contains a specific class in a space-separated list?
-**Answer:** Use the attribute selector `[class~="value"]` or simply `.value`. The class selector `.value` is equivalent to `[class~="value"]` â€” both match when `value` appears as a whole word in the class attribute.
+**Answer:** Use the attribute selector `[class~="value"]` or simply `.value`. The class selector `.value` is equivalent to `[class~="value"]` → both match when `value` appears as a whole word in the class attribute.
 
 ```css
 /* equivalent selectors */
@@ -153,7 +153,7 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q10: What is the difference between the cascade, specificity, and inheritance?
-**Answer:** The cascade resolves conflicts between declarations targeting the same element using origin + specificity + order. Specificity is one component of the cascade â€” a four-part weight based on selector types. Inheritance is separate: certain properties (color, font-family) are automatically inherited from parent to child unless overridden. The `inherit`, `initial`, `unset`, and `revert` keywords explicitly control this.
+**Answer:** The cascade resolves conflicts between declarations targeting the same element using origin + specificity + order. Specificity is one component of the cascade → a four-part weight based on selector types. Inheritance is separate: certain properties (color, font-family) are automatically inherited from parent to child unless overridden. The `inherit`, `initial`, `unset`, and `revert` keywords explicitly control this.
 
 ```css
 .parent { color: red; font-size: 16px; border: 1px solid black; }
@@ -169,7 +169,7 @@ div p:nth-of-type(2) { color: blue; }
 **Answer:** Every element is a rectangular box composed of four layers from inside-out: content, padding, border, and margin. The total width of an element in the standard box model is `content + padding + border + margin`. With `box-sizing: border-box`, the `width` property includes content + padding + border, making layout math predictable.
 
 ```css
-/* standard box model â€” width applies to content only */
+/* standard box model → width applies to content only */
 .standard {
   box-sizing: content-box;
   width: 200px;
@@ -178,7 +178,7 @@ div p:nth-of-type(2) { color: blue; }
   /* total width = 200 + 40 + 10 = 250px */
 }
 
-/* border-box â€” width includes padding and border */
+/* border-box → width includes padding and border */
 .better {
   box-sizing: border-box;
   width: 200px;
@@ -189,7 +189,7 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q12: What is the difference between `display: none` and `visibility: hidden`?
-**Answer:** `display: none` removes the element from the document flow entirely â€” it takes no space and is not rendered. `visibility: hidden` hides the element visually but preserves its space in the layout. `display: none` affects accessibility (screen readers skip it); `visibility: hidden` may still be read.
+**Answer:** `display: none` removes the element from the document flow entirely → it takes no space and is not rendered. `visibility: hidden` hides the element visually but preserves its space in the layout. `display: none` affects accessibility (screen readers skip it); `visibility: hidden` may still be read.
 
 ```css
 .hidden-element { display: none; }       /* invisible, no box, no space */
@@ -197,7 +197,7 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q13: Explain the `position` property values.
-**Answer:** `static` â€” default, follows normal flow, `top`/`left` ignored. `relative` â€” offset from its normal position without affecting other elements. `absolute` â€” removed from flow, positioned relative to the nearest positioned ancestor. `fixed` â€” removed from flow, positioned relative to the viewport. `sticky` â€” toggles between relative and fixed based on scroll threshold.
+**Answer:** `static` → default, follows normal flow, `top`/`left` ignored. `relative` → offset from its normal position without affecting other elements. `absolute` → removed from flow, positioned relative to the nearest positioned ancestor. `fixed` → removed from flow, positioned relative to the viewport. `sticky` → toggles between relative and fixed based on scroll threshold.
 
 ```css
 .relative-box {
@@ -248,7 +248,7 @@ div p:nth-of-type(2) { color: blue; }
 **Answer:** `float` pushes an element to the left or right, allowing content to wrap around it. Floated elements are removed from normal flow. Parents of floated elements collapse because they don't account for the floated children. Clearing methods: `clear: both` on a following element, the "clearfix" hack on the parent, or `display: flow-root` on the parent.
 
 ```css
-/* modern clearfix â€” no hack needed */
+/* modern clearfix → no hack needed */
 .container {
   display: flow-root;
 }
@@ -296,7 +296,7 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q18: What is margin collapsing and when does it happen?
-**Answer:** Vertical margins of adjacent block-level elements collapse â€” the larger margin wins instead of adding together. Margins also collapse between parent and first/last child when there's no padding, border, or inline content separating them. Flex and grid items do NOT collapse margins.
+**Answer:** Vertical margins of adjacent block-level elements collapse → the larger margin wins instead of adding together. Margins also collapse between parent and first/last child when there's no padding, border, or inline content separating them. Flex and grid items do NOT collapse margins.
 
 ```css
 /* margins collapse: space between boxes is 30px, not 50px */
@@ -314,7 +314,7 @@ div p:nth-of-type(2) { color: blue; }
 **Answer:** `display: flow-root` creates a new Block Formatting Context (BFC) without hacks. It contains floats, prevents margin collapsing with children, and isolates the element from external floats. It's the cleanest way to contain children that use floats or to prevent margin collapse.
 
 ```css
-/* classic clearfix hack â€” not needed anymore */
+/* classic clearfix hack → not needed anymore */
 .clearfix::after {
   content: "";
   display: table;
@@ -328,11 +328,11 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q20: What is the difference between `inline`, `block`, and `inline-block`?
-**Answer:** `block` elements take full width, start on new lines, respect all box properties. `inline` elements flow within text, ignore width/height, and only respect horizontal margin/padding. `inline-block` flows inline but behaves like a block for the box model â€” it respects width, height, and all margins/padding.
+**Answer:** `block` elements take full width, start on new lines, respect all box properties. `inline` elements flow within text, ignore width/height, and only respect horizontal margin/padding. `inline-block` flows inline but behaves like a block for the box model → it respects width, height, and all margins/padding.
 
 ```css
 span {
-  display: inline; /* default for span â€” width/height ignored */
+  display: inline; /* default for span → width/height ignored */
 }
 
 span.button {
@@ -348,17 +348,17 @@ span.button {
 ## Flexbox & Grid
 
 ### Q21: What is the difference between Flexbox and CSS Grid?
-**Answer:** Flexbox is one-dimensional â€” it distributes items along a single axis (row *or* column). Grid is two-dimensional â€” it controls rows *and* columns simultaneously. Use Flexbox for component-level layout (nav bars, centering, inline form elements). Use Grid for page-level layout (overall page structure, gallery grids, dashboard panels).
+**Answer:** Flexbox is one-dimensional → it distributes items along a single axis (row *or* column). Grid is two-dimensional → it controls rows *and* columns simultaneously. Use Flexbox for component-level layout (nav bars, centering, inline form elements). Use Grid for page-level layout (overall page structure, gallery grids, dashboard panels).
 
 ```css
-/* flexbox â€” one-dimensional row */
+/* flexbox → one-dimensional row */
 .nav {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
 }
 
-/* grid â€” two-dimensional layout */
+/* grid → two-dimensional layout */
 .page-layout {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -371,7 +371,7 @@ span.button {
 ```
 
 ### Q22: Explain `flex-grow`, `flex-shrink`, and `flex-basis`.
-**Answer:** These three properties control how flex items size within a container. `flex-grow` (default 0) â€” proportion of remaining space the item should absorb. `flex-shrink` (default 1) â€” how much the item shrinks when space is tight. `flex-basis` (default `auto`) â€” the initial main-size of the item before space is distributed. The shorthand `flex: 1` means `flex: 1 1 0`.
+**Answer:** These three properties control how flex items size within a container. `flex-grow` (default 0) → proportion of remaining space the item should absorb. `flex-shrink` (default 1) → how much the item shrinks when space is tight. `flex-basis` (default `auto`) → the initial main-size of the item before space is distributed. The shorthand `flex: 1` means `flex: 1 1 0`.
 
 ```css
 .flex-container {
@@ -401,7 +401,7 @@ span.button {
   align-items: stretch;        /* cross axis: stretch to fill height */
 }
 
-/* center both axes â€” the classic centering trick */
+/* center both axes → the classic centering trick */
 .centered {
   display: flex;
   justify-content: center;
@@ -439,7 +439,7 @@ span.button {
 ```
 
 ### Q26: What is `fr` unit in CSS Grid?
-**Answer:** `fr` stands for "fraction" â€” it distributes available space proportionally after fixed-size tracks are accounted for. `1fr` means one fraction of the remaining space. Unlike `%`, `fr` does not include `gap` in its calculation, making it more predictable.
+**Answer:** `fr` stands for "fraction" → it distributes available space proportionally after fixed-size tracks are accounted for. `1fr` means one fraction of the remaining space. Unlike `%`, `fr` does not include `gap` in its calculation, making it more predictable.
 
 ```css
 .sidebar-layout {
@@ -467,15 +467,15 @@ span.button {
 ```
 
 ### Q28: What is the difference between `auto-fill` and `auto-fit` in Grid?
-**Answer:** Both automatically generate as many tracks as fit in the container. `auto-fill` keeps the column track placeholders even if they're empty â€” preserving the grid structure. `auto-fit` collapses empty tracks to `0`, allowing items to stretch to fill the entire row. Use `auto-fit` for responsive galleries where you want items to expand.
+**Answer:** Both automatically generate as many tracks as fit in the container. `auto-fill` keeps the column track placeholders even if they're empty → preserving the grid structure. `auto-fit` collapses empty tracks to `0`, allowing items to stretch to fill the entire row. Use `auto-fit` for responsive galleries where you want items to expand.
 
 ```css
-/* auto-fill â€” keeps empty column placeholders */
+/* auto-fill → keeps empty column placeholders */
 .grid-fill {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
-/* auto-fit â€” collapses empty tracks, items stretch */
+/* auto-fit → collapses empty tracks, items stretch */
 .grid-fit {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
@@ -504,7 +504,7 @@ body {
 ```
 
 ### Q30: What is the `order` property in Flexbox?
-**Answer:** `order` (default 0) changes the visual order of flex items without affecting the source order. Items are laid out in ascending `order` value. Items with the same `order` keep their source order. Use sparingly â€” it can confuse keyboard navigation and screen readers since tab order follows source order.
+**Answer:** `order` (default 0) changes the visual order of flex items without affecting the source order. Items are laid out in ascending `order` value. Items with the same `order` keep their source order. Use sparingly → it can confuse keyboard navigation and screen readers since tab order follows source order.
 
 ```css
 .flex-container {
@@ -550,19 +550,19 @@ body {
 ```
 
 ### Q33: How does `flex: 0 0 auto` differ from `flex: 1 1 auto`?
-**Answer:** `flex: 0 0 auto` â€” item starts at content width, never grows, can shrink if needed. `flex: 1 1 auto` â€” item starts at content width, can grow to fill space, can shrink. The `flex-basis: auto` means the initial size is the content's intrinsic size. `flex: 0 0 auto` is the default shorthand (equivalent to `flex: initial`).
+**Answer:** `flex: 0 0 auto` → item starts at content width, never grows, can shrink if needed. `flex: 1 1 auto` → item starts at content width, can grow to fill space, can shrink. The `flex-basis: auto` means the initial size is the content's intrinsic size. `flex: 0 0 auto` is the default shorthand (equivalent to `flex: initial`).
 
 ```css
 .no-grow {
-  flex: 0 0 auto; /* flex: initial â€” content sized, won't grow */
+  flex: 0 0 auto; /* flex: initial → content sized, won't grow */
 }
 
 .grow-if-space {
-  flex: 1 1 auto; /* flex: auto â€” content sized, grows to fill */
+  flex: 1 1 auto; /* flex: auto → content sized, grows to fill */
 }
 
 .even-split {
-  flex: 1;        /* flex: 1 1 0 â€” no basis, all items split equally */
+  flex: 1;        /* flex: 1 1 0 → no basis, all items split equally */
 }
 ```
 
@@ -611,10 +611,10 @@ footer { grid-area: footer; }
 ## Responsive Design
 
 ### Q36: What is a media query and what are common breakpoints?
-**Answer:** A media query applies CSS conditionally based on device characteristics (usually viewport width). Common breakpoints: 480px (mobile), 768px (tablet), 1024px (desktop), 1280px+ (wide). However, prefer content-based breakpoints â€” add a breakpoint where the design breaks, not at arbitrary device widths.
+**Answer:** A media query applies CSS conditionally based on device characteristics (usually viewport width). Common breakpoints: 480px (mobile), 768px (tablet), 1024px (desktop), 1280px+ (wide). However, prefer content-based breakpoints → add a breakpoint where the design breaks, not at arbitrary device widths.
 
 ```css
-/* mobile-first approach â€” base styles for mobile */
+/* mobile-first approach → base styles for mobile */
 .grid { display: flex; flex-direction: column; }
 
 /* tablet */
@@ -629,14 +629,14 @@ footer { grid-area: footer; }
 ```
 
 ### Q37: What is the difference between `em` and `rem`?
-**Answer:** `em` is relative to the *parent element's* font-size. `rem` (root em) is relative to the *root element's* (`html`) font-size. `rem` avoids compounding â€” nested elements with `em` multiply each level. Use `rem` for most spacing and sizing; use `em` when you want a value to scale with a component's own font-size.
+**Answer:** `em` is relative to the *parent element's* font-size. `rem` (root em) is relative to the *root element's* (`html`) font-size. `rem` avoids compounding → nested elements with `em` multiply each level. Use `rem` for most spacing and sizing; use `em` when you want a value to scale with a component's own font-size.
 
 ```css
 html { font-size: 16px; }
 
 .parent { font-size: 1.25em; }  /* = 20px */
-.child-em { font-size: 1.5em; } /* = 30px (20 * 1.5) â€” compounded */
-.child-rem { font-size: 1.5rem; } /* = 24px (16 * 1.5) â€” no compounding */
+.child-em { font-size: 1.5em; } /* = 30px (20 * 1.5) → compounded */
+.child-rem { font-size: 1.5rem; } /* = 24px (16 * 1.5) → no compounding */
 
 .consistent-spacing {
   margin: 1rem;     /* always relative to root */
@@ -648,7 +648,7 @@ html { font-size: 16px; }
 **Answer:** Mobile-first means writing base CSS for the smallest screen first, then using `min-width` media queries to enhance for larger screens. This ensures the mobile experience is lean and performant, and large-screen enhancements layer on top. The alternative (desktop-first with `max-width`) loads heavier styles on mobile.
 
 ```css
-/* mobile-first â€” base is mobile */
+/* mobile-first → base is mobile */
 .card {
   width: 100%;
   padding: 1rem;
@@ -684,7 +684,7 @@ img {
 ```
 
 ```html
-<!-- art direction â€” different crops -->
+<!-- art direction → different crops -->
 <picture>
   <source media="(min-width: 1024px)" srcset="hero-wide.webp">
   <source media="(min-width: 768px)" srcset="hero-tablet.webp">
@@ -727,12 +727,12 @@ img {
 ```
 
 ### Q41: What is the difference between `vw`, `vh`, `vmin`, and `vmax`?
-**Answer:** `1vw = 1%` of viewport width. `1vh = 1%` of viewport height. `vmin` = the smaller of `vw` and `vh`. `vmax` = the larger of `vw` and `vh`. These are useful for full-screen layouts, but `100vh` can cause issues on mobile browsers with dynamic toolbars â€” use `100dvh` (dynamic viewport height) for mobile.
+**Answer:** `1vw = 1%` of viewport width. `1vh = 1%` of viewport height. `vmin` = the smaller of `vw` and `vh`. `vmax` = the larger of `vw` and `vh`. These are useful for full-screen layouts, but `100vh` can cause issues on mobile browsers with dynamic toolbars → use `100dvh` (dynamic viewport height) for mobile.
 
 ```css
 .hero {
-  height: 100vh;       /* classic full-screen â€” may overflow on mobile */
-  height: 100dvh;      /* dynamic viewport height â€” better for mobile */
+  height: 100vh;       /* classic full-screen → may overflow on mobile */
+  height: 100dvh;      /* dynamic viewport height → better for mobile */
 }
 
 .full-width {
@@ -749,7 +749,7 @@ img {
 **Answer:** These comparison functions enable responsive sizing without media queries. `min(a, b)` = the smaller value. `max(a, b)` = the larger value. `clamp(min, preferred, max)` = a value that's never below `min` or above `max`, ideally `preferred`. Use `clamp()` for fluid typography and spacing.
 
 ```css
-/* fluid typography â€” scales between 1rem and 3rem based on viewport */
+/* fluid typography → scales between 1rem and 3rem based on viewport */
 .fluid-text {
   font-size: clamp(1rem, 2.5vw + 0.5rem, 3rem);
 }
@@ -833,10 +833,10 @@ body {
 ## Animations & Transitions
 
 ### Q46: What is the difference between CSS transitions and animations?
-**Answer:** Transitions (`transition`) animate *between* two states â€” they need a trigger (like `:hover`) and only define start/end. Animations (`@keyframes`) can have multiple keyframe stops, run automatically, loop, reverse, and pause. Use transitions for simple state changes; use animations for complex multi-step or continuous motion.
+**Answer:** Transitions (`transition`) animate *between* two states → they need a trigger (like `:hover`) and only define start/end. Animations (`@keyframes`) can have multiple keyframe stops, run automatically, loop, reverse, and pause. Use transitions for simple state changes; use animations for complex multi-step or continuous motion.
 
 ```css
-/* transition â€” hover in/out */
+/* transition → hover in/out */
 .button {
   background: blue;
   color: white;
@@ -846,7 +846,7 @@ body {
   background: darkblue;
 }
 
-/* animation â€” multi-step, auto-running */
+/* animation → multi-step, auto-running */
 @keyframes pulse {
   0%   { transform: scale(1); opacity: 0.7; }
   50%  { transform: scale(1.05); opacity: 1; }
@@ -861,7 +861,7 @@ body {
 **Answer:** Only `transform` and `opacity` are GPU-accelerated and don't trigger layout or paint on each frame. Animating `width`, `height`, `top`, `left`, `margin`, or `padding` triggers layout recalculations and repaints, causing jank. Use `transform: translate()` instead of `top`/`left` for positioning animations.
 
 ```css
-/* BAD â€” triggers layout on every frame */
+/* BAD → triggers layout on every frame */
 .bad-animation {
   animation: move-bad 0.3s ease;
 }
@@ -870,7 +870,7 @@ body {
   to   { left: 100px; }
 }
 
-/* GOOD â€” GPU-accelerated */
+/* GOOD → GPU-accelerated */
 .good-animation {
   animation: move-good 0.3s ease;
 }
@@ -884,7 +884,7 @@ body {
 **Answer:** Common transform functions: `translate()`, `rotate()`, `scale()`, `skew()`, and `matrix()`. Multiple functions are applied right-to-left (last function applied first). For individual control, use `translate`, `rotate`, and `scale` as separate properties in modern CSS.
 
 ```css
-/* multiple transforms â€” applied right to left */
+/* multiple transforms → applied right to left */
 .composed {
   transform: translateX(50px) rotate(45deg) scale(1.2);
   /* 1. scale to 1.2x, 2. rotate 45Â°, 3. move 50px right */
@@ -902,7 +902,7 @@ body {
 **Answer:** CSS cannot transition `height: auto` directly. Use `max-height` transition by setting a max value larger than the actual content, or use `grid-template-rows: 0fr` to `1fr` for a clean CSS-only solution without JavaScript.
 
 ```css
-/* max-height trick â€” close enough */
+/* max-height trick → close enough */
 .accordion-content {
   max-height: 0;
   overflow: hidden;
@@ -912,7 +912,7 @@ body {
   max-height: 500px; /* larger than any content */
 }
 
-/* modern grid trick â€” exact */
+/* modern grid trick → exact */
 .accordion-content {
   display: grid;
   grid-template-rows: 0fr;
@@ -938,7 +938,7 @@ body {
 ```
 
 ### Q51: What is the difference between `ease`, `linear`, `ease-in`, `ease-out`, and `cubic-bezier`?
-**Answer:** These are timing functions that control the rate of change during an animation. `linear` â€” constant speed. `ease` â€” slow start, fast middle, slow end (default). `ease-in` â€” slow start, fast end. `ease-out` â€” fast start, slow end. `cubic-bezier(x1, y1, x2, y2)` â€” custom curve. `ease-out` is generally best for UI transitions (feels responsive).
+**Answer:** These are timing functions that control the rate of change during an animation. `linear` → constant speed. `ease` → slow start, fast middle, slow end (default). `ease-in` → slow start, fast end. `ease-out` → fast start, slow end. `cubic-bezier(x1, y1, x2, y2)` → custom curve. `ease-out` is generally best for UI transitions (feels responsive).
 
 ```css
 .button {
@@ -958,7 +958,7 @@ body {
 ```
 
 ### Q52: How do you pause and resume a CSS animation?
-**Answer:** Set `animation-play-state: paused` or `running`. This can be toggled via a class or JavaScript. The animation picks up from where it paused â€” no snapping.
+**Answer:** Set `animation-play-state: paused` or `running`. This can be toggled via a class or JavaScript. The animation picks up from where it paused → no snapping.
 
 ```css
 .spinner {
@@ -975,7 +975,7 @@ body {
 ```
 
 ### Q53: How do you animate on scroll without JavaScript?
-**Answer:** Use `animation-timeline: scroll()` (Chrome 115+) to drive an animation based on scroll position. Combine with `animation-range` to control when the animation starts and ends. This is a newer feature â€” check browser support for your target audience.
+**Answer:** Use `animation-timeline: scroll()` (Chrome 115+) to drive an animation based on scroll position. Combine with `animation-range` to control when the animation starts and ends. This is a newer feature → check browser support for your target audience.
 
 ```css
 @keyframes fade-in {
@@ -1015,7 +1015,7 @@ body {
 **Answer:** `@apply` inlines utility classes into a custom CSS class using `@layer components`. Use it sparingly for abstracting repeated utility patterns into reusable component classes. Overusing `@apply` defeats the purpose of utility-first by recreating the same abstraction problems as semantic CSS.
 
 ```css
-/* use @apply sparingly â€” only for highly repeated patterns */
+/* use @apply sparingly → only for highly repeated patterns */
 @layer components {
   .btn-primary {
     @apply inline-flex items-center px-4 py-2 bg-blue-600 text-white
@@ -1027,7 +1027,7 @@ body {
 ```
 
 ### Q56: How does Tailwind purge unused styles?
-**Answer:** Tailwind scans your source files for class names, then removes any CSS not found in those files. It uses regular expressions to find complete class names â€” dynamic class names built via string concatenation can be purged accidentally. Use the `safelist` option in the config for classes you need to keep but can't statically detect.
+**Answer:** Tailwind scans your source files for class names, then removes any CSS not found in those files. It uses regular expressions to find complete class names → dynamic class names built via string concatenation can be purged accidentally. Use the `safelist` option in the config for classes you need to keep but can't statically detect.
 
 ```js
 // tailwind.config.js
@@ -1089,15 +1089,15 @@ module.exports = {
 **Answer:** Bootstrap provides pre-built components (buttons, modals, navbars) with opinionated styles. Tailwind provides low-level utilities to build custom designs without fighting pre-built styles. Bootstrap uses semantic classes with component-specific CSS; Tailwind uses utility classes composed in HTML. Bootstrap is faster for quick prototypes; Tailwind produces more unique, custom-looking results.
 
 ```html
-<!-- Bootstrap â€” pre-built component -->
+<!-- Bootstrap → pre-built component -->
 <button class="btn btn-primary btn-lg">Click Me</button>
 
-<!-- Tailwind â€” compose from utilities -->
+<!-- Tailwind → compose from utilities -->
 <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">Click Me</button>
 ```
 
 ### Q60: How do you handle dark mode in Tailwind?
-**Answer:** Tailwind has a `dark:` variant that applies styles when the user's system is in dark mode. Configure `darkMode: 'class'` in `tailwind.config.js` to toggle based on a class instead of system preference â€” useful for manual theme toggles.
+**Answer:** Tailwind has a `dark:` variant that applies styles when the user's system is in dark mode. Configure `darkMode: 'class'` in `tailwind.config.js` to toggle based on a class instead of system preference → useful for manual theme toggles.
 
 ```js
 // tailwind.config.js
@@ -1112,14 +1112,14 @@ module.exports = {
   <h1 class="text-2xl font-bold">Title</h1>
 </div>
 
-<!-- class-based â€” toggle with JavaScript -->
+<!-- class-based → toggle with JavaScript -->
 <html class="dark">
   ...
 </html>
 ```
 
 ### Q61: What is CSS Layers (`@layer`) and how does it help framework integration?
-**Answer:** `@layer` lets you explicitly control the cascade order of groups of styles, overriding specificity. Layer order wins over specificity â€” a rule in a later layer beats a rule in an earlier layer even if the earlier rule has higher specificity. Tailwind itself uses layers to ensure utilities always override base and component styles.
+**Answer:** `@layer` lets you explicitly control the cascade order of groups of styles, overriding specificity. Layer order wins over specificity → a rule in a later layer beats a rule in an earlier layer even if the earlier rule has higher specificity. Tailwind itself uses layers to ensure utilities always override base and component styles.
 
 ```css
 /* layer order determines priority: base < components < utilities */
@@ -1205,7 +1205,7 @@ export default {
 **Answer:** Pass an array of entry points to the `input` option in `vite.config.js`. Each entry point generates its own compiled file. Add each to the `@vite()` directive if you need them on every page, or use `@vite()` on specific pages for page-specific CSS/JS bundles.
 
 ```js
-// vite.config.js â€” multiple entry points
+// vite.config.js → multiple entry points
 export default defineConfig({
   plugins: [
     laravel({
@@ -1222,7 +1222,7 @@ export default defineConfig({
 ```
 
 ```blade
-<!-- global â€” on every page -->
+<!-- global → on every page -->
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 <!-- admin layout only -->
@@ -1272,7 +1272,7 @@ $sizes = [
 **Answer:** Use Blade components (`x-` components) or `@apply` in CSS for truly repetitive patterns. For theme values, define them in `tailwind.config.js` under `extend`. For dynamic conditional classes, use the `Illuminate\Support\Facades\Blade` directive or the `@class` directive in Blade.
 
 ```blade
-{{-- @class directive â€” conditional classes --}}
+{{-- @class directive → conditional classes --}}
 <div @class([
     'p-4 rounded-lg',
     'bg-green-100 text-green-800' => $status === 'success',
@@ -1284,18 +1284,18 @@ $sizes = [
 ```
 
 ### Q68: How does hot module replacement work in Laravel with Vite?
-**Answer:** Run `npm run dev` to start the Vite dev server. Vite watches your source files and pushes updates to the browser via WebSocket on change â€” CSS updates are instant without page reload; JS updates via HMR preserve state. The `@vite()` Blade directive automatically detects the dev server and loads from it. Set `APP_URL` correctly in `.env` for proper asset URLs.
+**Answer:** Run `npm run dev` to start the Vite dev server. Vite watches your source files and pushes updates to the browser via WebSocket on change → CSS updates are instant without page reload; JS updates via HMR preserve state. The `@vite()` Blade directive automatically detects the dev server and loads from it. Set `APP_URL` correctly in `.env` for proper asset URLs.
 
 ```bash
-# terminal 1 â€” Vite dev server with HMR
+# terminal 1 → Vite dev server with HMR
 npm run dev
 
-# terminal 2 â€” Laravel dev server
+# terminal 2 → Laravel dev server
 php artisan serve
 ```
 
 ```env
-# .env â€” ensure APP_URL matches your dev server
+# .env → ensure APP_URL matches your dev server
 APP_URL=http://localhost:8000
 ```
 
@@ -1303,7 +1303,7 @@ APP_URL=http://localhost:8000
 **Answer:** Vite automatically handles cache busting through content hashing in filenames. When you run `npm run build`, Vite appends a content hash to the output filename (e.g., `app-abc123.css`). The `@vite()` directive reads the `build/manifest.json` generated by Vite and resolves the hashed filename automatically. No manual versioning needed.
 
 ```bash
-# production build â€” generates hashed filenames
+# production build → generates hashed filenames
 npm run build
 
 # output in public/build/

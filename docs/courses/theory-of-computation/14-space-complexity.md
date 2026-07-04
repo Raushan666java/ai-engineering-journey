@@ -190,7 +190,7 @@ Given an NTM that uses s(n) = n space, show the equivalent DTM uses O(nÂ²) spa
 
 The NTM has at most 2^{O(n)} configurations. The DTM uses recursion:
 - REACH(câ‚, câ‚‚, i): can we go from câ‚ to câ‚‚ in â‰¤ 2â± steps?
-  - If i = 0: check if câ‚ = câ‚‚ or câ‚ â†’ câ‚‚ in one step.
+  - If i = 0: check if câ‚ = câ‚‚ or câ‚ → câ‚‚ in one step.
   - Otherwise: for each configuration câ‚˜ (O(n) space):
     - If REACH(câ‚, câ‚˜, i-1) and REACH(câ‚˜, câ‚‚, i-1), return true.
   - Return false.
@@ -206,7 +206,7 @@ A QBF formula: âˆƒxâ‚ âˆ€xâ‚‚ âˆƒxâ‚ƒ â€¦ Ï†(xâ�
 - If Ï† = âˆƒx Ïˆ(x, â€¦): return True if Ïˆ(0) or Ïˆ(1) is true.
 - If Ï† = âˆ€x Ïˆ(x, â€¦): return True if both Ïˆ(0) and Ïˆ(1) are true.
 
-The recursion depth is O(n), and each level stores partial variable assignments. Total space: O(nÂ²) â€” polynomial.
+The recursion depth is O(n), and each level stores partial variable assignments. Total space: O(nÂ²) → polynomial.
 
 **PSPACE-hardness:** Given any PSPACE machine M and input w, construct a QBF formula that is true iff M accepts w. This is similar to Cook-Levin, but the quantifiers âˆ€ and âˆƒ handle the alternation between universal and existential configurations in the nondeterministic computation.
 

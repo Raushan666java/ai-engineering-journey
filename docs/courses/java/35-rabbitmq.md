@@ -20,9 +20,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| RabbitMQ â€” AMQP-compliant message broker | Exchange types: Direct, Topic, Fanout, Headers |
-| Producer-Consumer â€” send and receive messages via `RabbitTemplate` | `@RabbitListener` for message consumption |
-| Advanced Patterns â€” dead letter queues, retry, and idempotency | DLQ handles poison messages; manual ack for retry control |
+| RabbitMQ → AMQP-compliant message broker | Exchange types: Direct, Topic, Fanout, Headers |
+| Producer-Consumer → send and receive messages via `RabbitTemplate` | `@RabbitListener` for message consumption |
+| Advanced Patterns → dead letter queues, retry, and idempotency | DLQ handles poison messages; manual ack for retry control |
 
 ---
 ## Chapter Roadmap
@@ -1463,13 +1463,13 @@ class RabbitListenerTest {
 ```
 
 > [!TIP]
-> Always use `CorrelationId` message property for end-to-end tracing â€” it helps track messages across producer, broker, and consumer.
+> Always use `CorrelationId` message property for end-to-end tracing → it helps track messages across producer, broker, and consumer.
 
 > [!WARNING]
-> Idempotent consumers are essential â€” messages can be redelivered after consumer failure or connection loss.
+> Idempotent consumers are essential → messages can be redelivered after consumer failure or connection loss.
 
 > [!NOTE]
-> Configure a DLQ with a TTL-based retry queue for handling transient failures â€” the message returns to the original queue after TTL expires.
+> Configure a DLQ with a TTL-based retry queue for handling transient failures → the message returns to the original queue after TTL expires.
 
 ## Summary
 

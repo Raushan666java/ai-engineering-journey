@@ -1,5 +1,5 @@
 # SQL Problem Bank
-`n> **Previous:** [Chapter 2: DSA Problem Bank](./02-dsa-problem-bank.md) | **Next:** [Chapter 4: Company-Specific Preparation](./04-company-specific.md) â€” Placement Interview Preparation
+`n> **Previous:** [Chapter 2: DSA Problem Bank](./02-dsa-problem-bank.md) | **Next:** [Chapter 4: Company-Specific Preparation](./04-company-specific.md) → Placement Interview Preparation
 
 > 50 curated SQL problems organized by category. Each problem includes the question, schema, sample data, tested SQL solution, expected output, and step-by-step explanation.
 >
@@ -263,7 +263,7 @@ ORDER BY e.dept_id, e.salary DESC;
 
 **Problem:** Find the employee(s) with the second highest salary. Show three different approaches.
 
-**Solution â€” Method 1: LIMIT with OFFSET (MySQL / PostgreSQL)**
+**Solution → Method 1: LIMIT with OFFSET (MySQL / PostgreSQL)**
 
 ```sql
 SELECT DISTINCT salary
@@ -278,7 +278,7 @@ LIMIT 1 OFFSET 1;
 | 110000.00|
 ```
 
-**Solution â€” Method 2: Subquery with MAX and inequality**
+**Solution → Method 2: Subquery with MAX and inequality**
 
 ```sql
 SELECT MAX(salary) AS second_highest
@@ -292,7 +292,7 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 | 110000.00      |
 ```
 
-**Solution â€” Method 3: DENSE_RANK window function**
+**Solution → Method 3: DENSE_RANK window function**
 
 ```sql
 WITH ranked AS (
@@ -376,7 +376,7 @@ HAVING COUNT(*) > 1;
 | Alice | 1           |
 ```
 
-*(No actual duplicates in sample data â€” modify to test:)*
+*(No actual duplicates in sample data → modify to test:)*
 
 ```sql
 -- To see it in action, insert a duplicate:
@@ -523,7 +523,7 @@ HAVING COUNT(*) > 1;
 **Expected Output (after deletion, verification query):**
 
 ```
-(no rows returned â€” no duplicates remain)
+(no rows returned → no duplicates remain)
 ```
 
 **Explanation:**
@@ -562,7 +562,7 @@ WHERE manager_id IS NULL;
 **Explanation:**
 1. `IS NULL` is the correct operator to check for NULL. Using `= NULL` always evaluates to `UNKNOWN` and returns no rows.
 2. The `CASE` expression translates the NULL check into a readable label.
-3. `NULL` means "unknown" or "not applicable" â€” it is not zero or an empty string.
+3. `NULL` means "unknown" or "not applicable" → it is not zero or an empty string.
 
 ---
 
@@ -645,7 +645,7 @@ ORDER BY headcount DESC;
 
 **Explanation:**
 1. `LEFT JOIN` keeps all rows from the left table (`departments`) regardless of matches in `employees`.
-2. `COUNT(e.id)` counts only non-NULL employee IDs. If a department has no employees, the count is 0 â€” not 1.
+2. `COUNT(e.id)` counts only non-NULL employee IDs. If a department has no employees, the count is 0 → not 1.
 3. Using `COUNT(*)` would incorrectly count the department row itself as 1.
 
 ---
@@ -674,7 +674,7 @@ WHERE e.salary > m.salary;
 | Bob           | 95000.00        | Alice        | 120000.00      |
 ```
 
-*(Bob's salary is 95000, Alice (manager) is 120000 â€” actually Bob does NOT earn more. No rows if data is as given. Let us adjust the logic:)*
+*(Bob's salary is 95000, Alice (manager) is 120000 → actually Bob does NOT earn more. No rows if data is as given. Let us adjust the logic:)*
 
 ```sql
 -- Insert a scenario: Karl has salary 105000 but manager Alice has 120000.
@@ -752,7 +752,7 @@ ORDER BY e.name, d.name;
 ```
 
 **Explanation:**
-1. `CROSS JOIN` produces the Cartesian product â€” every row from `employees` paired with every row from `departments`.
+1. `CROSS JOIN` produces the Cartesian product → every row from `employees` paired with every row from `departments`.
 2. If `employees` has 15 rows and `departments` has 6, the result is 90 rows.
 3. Use cases: generating combinations, default permission tables, calendar date series.
 
@@ -780,7 +780,7 @@ RIGHT JOIN departments d ON e.dept_id = d.id
 WHERE e.id IS NULL;
 ```
 
-**Expected Output (with sample data â€” no orphans exist):**
+**Expected Output (with sample data → no orphans exist):**
 
 ```
 | employee_name | department_name |
@@ -912,7 +912,7 @@ ORDER BY ABS(e1.salary - e2.salary);
 
 **Explanation:**
 1. `e1.id < e2.id` is a non-equi condition that prevents duplicate pairs and self-pairing.
-2. `ABS(e1.salary - e2.salary) <= 10000` is the non-equi range condition â€” salaries within $10K.
+2. `ABS(e1.salary - e2.salary) <= 10000` is the non-equi range condition → salaries within $10K.
 3. `e1.dept_id <> e2.dept_id` ensures different departments.
 4. Non-equi joins use operators like `<`, `>`, `BETWEEN`, `<=` instead of `=`.
 
@@ -948,8 +948,8 @@ INNER JOIN departments d ON e.dept_id = d.id;
 ```
 
 **Explanation:**
-1. `NATURAL JOIN` automatically joins on all columns with matching names. Since both tables have `id` and `name`, it creates an implicit join on `e.id = d.id AND e.name = d.name` â€” which produces incorrect results or no matches at all.
-2. **Important:** `NATURAL JOIN` is dangerous because it silently picks all matching column names. In our schema, both tables share `id` and `name`, so the natural join condition becomes `e.id = d.id AND e.name = d.name` â€” probably not what you want.
+1. `NATURAL JOIN` automatically joins on all columns with matching names. Since both tables have `id` and `name`, it creates an implicit join on `e.id = d.id AND e.name = d.name` → which produces incorrect results or no matches at all.
+2. **Important:** `NATURAL JOIN` is dangerous because it silently picks all matching column names. In our schema, both tables share `id` and `name`, so the natural join condition becomes `e.id = d.id AND e.name = d.name` → probably not what you want.
 3. Always prefer explicit `INNER JOIN` with an `ON` clause for clarity and correctness.
 
 ---
@@ -1323,9 +1323,9 @@ WHERE EXISTS (
 
 **Explanation:**
 1. **`IN`** evaluates the subquery first, collects the result set, then checks membership. Best when the subquery result is small.
-2. **`EXISTS`** uses a **semi-join** â€” for each outer row, the database checks if the subquery returns any row. It short-circuits on the first match.
+2. **`EXISTS`** uses a **semi-join** → for each outer row, the database checks if the subquery returns any row. It short-circuits on the first match.
 3. `EXISTS` is generally faster with large result sets because it does not materialize the entire subquery.
-4. `SELECT 1` in EXISTS is convention â€” the actual column does not matter since only row existence is checked.
+4. `SELECT 1` in EXISTS is convention → the actual column does not matter since only row existence is checked.
 
 ---
 
@@ -1362,7 +1362,7 @@ ORDER BY e.dept_id, e.salary DESC;
 ```
 
 **Explanation:**
-1. The inner query references `e.dept_id` from the outer query â€” this is what makes it **correlated**.
+1. The inner query references `e.dept_id` from the outer query → this is what makes it **correlated**.
 2. The inner query runs **once per employee row** (or per unique `dept_id`, depending on optimizer).
 3. Compared to Q1 (which used a derived table), this approach is simpler to write but can be slower on large tables because the subquery executes repeatedly.
 
@@ -1403,7 +1403,7 @@ WHERE c.id NOT IN (
 ```
 
 **Explanation:**
-1. `NOT EXISTS` uses an **anti-semi-join** â€” it short-circuits on finding a match and is generally faster.
+1. `NOT EXISTS` uses an **anti-semi-join** → it short-circuits on finding a match and is generally faster.
 2. `NOT IN` has a critical NULL trap: if the subquery result contains even one NULL, the entire `NOT IN` returns an empty set. `IN (1, 2, NULL)` evaluates to `TRUE` for matching values; `NOT IN (1, 2, NULL)` evaluates to `FALSE` for everything because `x <> NULL` is `UNKNOWN`.
 3. **Always prefer `NOT EXISTS`** for anti-joins in production code.
 
@@ -1518,7 +1518,7 @@ ORDER BY total_revenue DESC;
 
 **Explanation:**
 1. First CTE (`product_revenue`) computes revenue per product by joining `products` and `order_items`.
-2. Second CTE (`ranked_products`) applies `DENSE_RANK()` â€” if there were ties, both would appear and the next rank would be 2.
+2. Second CTE (`ranked_products`) applies `DENSE_RANK()` → if there were ties, both would appear and the next rank would be 2.
 3. Breaking the query into CTEs makes each step independently testable and understandable.
 
 ---
@@ -1561,7 +1561,7 @@ WHERE dept_avg.avg_salary = (
 1. **Innermost subquery** `all_dept_avgs` computes the average salary for each department.
 2. **Middle subquery** finds the maximum of those averages.
 3. **Outer query** joins departments with the average calculation and filters to match the maximum.
-4. Nested subqueries are harder to read than CTEs â€” this is a good candidate to refactor with `WITH`.
+4. Nested subqueries are harder to read than CTEs → this is a good candidate to refactor with `WITH`.
 
 ---
 
@@ -1666,7 +1666,7 @@ ORDER BY department, rnk;
 **Explanation:**
 1. `DENSE_RANK()` ensures that if there were ties, we would not lose rows due to rank skipping.
 2. The CTE assigns ranks within each department partition.
-3. The outer query filters `rnk <= 3` â€” if a department has fewer than 3 employees, all are shown.
+3. The outer query filters `rnk <= 3` → if a department has fewer than 3 employees, all are shown.
 
 ---
 
@@ -1779,7 +1779,7 @@ ORDER BY dept_id, salary DESC;
 ```
 
 **Explanation:**
-1. `FIRST_VALUE(salary)` returns the first value in the window frame â€” the highest salary since we order by `salary DESC`.
+1. `FIRST_VALUE(salary)` returns the first value in the window frame → the highest salary since we order by `salary DESC`.
 2. `LAST_VALUE(salary)` returns the last value in the window frame.
 3. The **frame clause** `ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING` is critical: without it, the default frame ends at `CURRENT ROW`, and `LAST_VALUE` would return the current row's salary instead of the department minimum.
 
@@ -1970,7 +1970,7 @@ ORDER BY customer_id, order_date;
 
 **Explanation:**
 1. `LAG(amount, 1)` fetches the previous order amount for the same customer.
-2. `amount - LAG(...)` computes the difference â€” positive means spending increased; negative means it decreased.
+2. `amount - LAG(...)` computes the difference → positive means spending increased; negative means it decreased.
 3. `NULL` for the first order per customer since there is no previous row.
 
 ---
@@ -2014,7 +2014,7 @@ LIMIT 6;
 **Explanation:**
 1. `YEAR()`, `MONTH()`, `QUARTER()` are MySQL date extraction functions.
 2. `MONTHNAME()` returns the full month name.
-3. `DATE_FORMAT()` is the most flexible â€” `'%W'` gives the weekday name. See MySQL docs for the full format string reference.
+3. `DATE_FORMAT()` is the most flexible → `'%W'` gives the weekday name. See MySQL docs for the full format string reference.
 4. For PostgreSQL, use `EXTRACT(YEAR FROM order_date)`, `TO_CHAR(order_date, 'Month')`.
 
 ---
@@ -2163,7 +2163,7 @@ WHERE status LIKE 'S______';
 
 **Explanation:**
 1. `LIKE '%'` is a wildcard: `%` matches any sequence of characters; `_` matches exactly one character.
-2. `LIKE 'S______'` matches 'Shipped' (S plus 6 characters = 7 total â€” but 'Shipped' has 7 letters, so 6 underscores after S).
+2. `LIKE 'S______'` matches 'Shipped' (S plus 6 characters = 7 total → but 'Shipped' has 7 letters, so 6 underscores after S).
 3. `REGEXP` (or `RLIKE`) supports full regular expressions: `'e.*e'` matches strings containing two 'e' characters with anything in between.
 4. In PostgreSQL, use `~` for regex: `name ~ 'e.*e'`.
 
@@ -2240,7 +2240,7 @@ WHERE name REGEXP 'corp';
 ```
 
 **Explanation:**
-1. `LOWER(name) LIKE '%corp%'` is the most portable approach â€” convert both sides to the same case.
+1. `LOWER(name) LIKE '%corp%'` is the most portable approach → convert both sides to the same case.
 2. `COLLATE utf8mb4_general_ci` uses a case-insensitive collation. `_ci` = case insensitive, `_cs` = case sensitive.
 3. MySQL's `REGEXP` is case-insensitive by default for non-binary strings.
 4. In PostgreSQL, use `ILIKE` for case-insensitive matching: `name ILIKE '%corp%'`.
@@ -2280,7 +2280,7 @@ ORDER BY name;
 
 **Explanation:**
 1. `CASE WHEN subject = 'Math' THEN marks END` puts the marks value in the Math column when subject matches, `NULL` otherwise.
-2. `MAX()` (or `MIN()`) collapses the group so each student has one row â€” since only one non-NULL value exists per subject per student, the aggregate returns that value.
+2. `MAX()` (or `MIN()`) collapses the group so each student has one row → since only one non-NULL value exists per subject per student, the aggregate returns that value.
 3. This is a manual pivot. MySQL 8+ also has `GROUP_CONCAT` + JSON for dynamic pivoting.
 4. In PostgreSQL, use the `crosstab()` function from the `tablefunc` extension for more complex pivots.
 
@@ -2377,10 +2377,10 @@ WHERE n NOT IN (SELECT id FROM orders)
 ORDER BY n;
 ```
 
-**Expected Output (with sample data â€” no gaps):**
+**Expected Output (with sample data → no gaps):**
 
 ```
-(no rows returned â€” IDs 1-12 are contiguous)
+(no rows returned → IDs 1-12 are contiguous)
 ```
 
 **Demonstration with gaps:**
@@ -2463,7 +2463,7 @@ ORDER BY dept_id, hire_date;
 
 *(Adjust the threshold based on actual gaps. Many departments have gaps > 90 days in the sample data.)*
 
-**Alternate â€” Find employees hired on the same day:**
+**Alternate → Find employees hired on the same day:**
 
 ```sql
 SELECT e1.name AS emp1,
@@ -2578,7 +2578,7 @@ ORDER BY n;
 **Explanation:**
 1. The recursive CTE generates numbers 1 through 100, one row per iteration.
 2. `n % 15 = 0` catches multiples of both 3 and 5 (since LCM of 3 and 5 is 15).
-3. The `CASE` expression evaluates conditions in order â€” if `n % 15 = 0` matches first, it returns 'FizzBuzz' without checking the other conditions.
+3. The `CASE` expression evaluates conditions in order → if `n % 15 = 0` matches first, it returns 'FizzBuzz' without checking the other conditions.
 4. Order matters: check the combined condition first, then individual conditions.
 5. `ELSE CAST(n AS CHAR)` converts the number to a string type to match the other result types.
 
@@ -2646,7 +2646,7 @@ ORDER BY n;
 
 ---
 
-## Section 8: NoSQL â€” MongoDB (Q51â€“Q57)
+## Section 8: NoSQL → MongoDB (Q51â€“Q57)
 
 MongoDB is a document-oriented NoSQL database. Problems below use MongoDB shell (`mongosh`) syntax.
 
@@ -2656,7 +2656,7 @@ MongoDB is a document-oriented NoSQL database. Problems below use MongoDB shell 
 
 **Schema:**
 ```javascript
-// products collection (NoSQL â€” no schema enforcement, but convention shown)
+// products collection (NoSQL → no schema enforcement, but convention shown)
 {
   _id: ObjectId,
   name: String,
@@ -2687,20 +2687,20 @@ db.products.insertMany([
 // Find all products
 db.products.find();
 
-// Find with filter â€” electronics under $20
+// Find with filter → electronics under $20
 db.products.find({ category: "Electronics", price: { $lt: 20 } });
 
-// Update â€” increase price of all stationery by 10%
+// Update → increase price of all stationery by 10%
 db.products.updateMany(
   { category: "Stationery" },
   { $mul: { price: 1.10 } }
 );
 
-// Delete â€” remove out-of-stock products
+// Delete → remove out-of-stock products
 db.products.deleteMany({ inStock: false });
 ```
 
-**Explanation:** MongoDB CRUD mirrors SQL but uses JSON-like documents. `insertOne/insertMany` replaces `INSERT INTO`. `find()` with filter objects replaces `SELECT ... WHERE`. `updateMany` with update operators replaces `UPDATE`. `deleteMany` replaces `DELETE`. MongoDB is schema-flexible â€” documents in the same collection can have different fields.
+**Explanation:** MongoDB CRUD mirrors SQL but uses JSON-like documents. `insertOne/insertMany` replaces `INSERT INTO`. `find()` with filter objects replaces `SELECT ... WHERE`. `updateMany` with update operators replaces `UPDATE`. `deleteMany` replaces `DELETE`. MongoDB is schema-flexible → documents in the same collection can have different fields.
 
 ---
 
@@ -2758,7 +2758,7 @@ db.orders.aggregate([
 
 ---
 
-### Q53: $lookup â€” MongoDB Equivalent of JOIN
+### Q53: $lookup → MongoDB Equivalent of JOIN
 
 **Problem:** You have `orders` and `customers` collections. Write a query that returns each order with the customer's name and email.
 
@@ -2801,7 +2801,7 @@ db.orders.aggregate([
 
 ---
 
-### Q54: Array Operations â€” Tag System with $unwind, $push, $addToSet
+### Q54: Array Operations → Tag System with $unwind, $push, $addToSet
 
 **Problem:** A `blogPosts` collection has a `tags` array. Find the most used tags and list all unique tags per category.
 
@@ -2847,7 +2847,7 @@ db.blogPosts.aggregate([
 ]);
 ```
 
-**Explanation:** `$unwind` deconstructs arrays for per-element processing. `$addToSet` collects unique values (like `DISTINCT` aggregation). `$push` collects all values including duplicates (like `GROUP_CONCAT` or `ARRAY_AGG`). The pattern â€” `$unwind` then `$group` â€” is MongoDB's way of pivoting between document-level and element-level analysis.
+**Explanation:** `$unwind` deconstructs arrays for per-element processing. `$addToSet` collects unique values (like `DISTINCT` aggregation). `$push` collects all values including duplicates (like `GROUP_CONCAT` or `ARRAY_AGG`). The pattern → `$unwind` then `$group` → is MongoDB's way of pivoting between document-level and element-level analysis.
 
 ---
 
@@ -2880,7 +2880,7 @@ db.articles.createIndex(
   { author: 1, publishedDate: -1 }
 );
 
-// Text search â€” find articles about "database optimization"
+// Text search → find articles about "database optimization"
 db.articles.find(
   { $text: { $search: "database optimization" } },
   { score: { $meta: "textScore" } }
@@ -2957,7 +2957,7 @@ db.restaurants.find({
   }
 });
 
-// Aggregation with geospatial â€” average rating by cuisine in area
+// Aggregation with geospatial → average rating by cuisine in area
 db.restaurants.aggregate([
   {
     $match: {
@@ -2977,7 +2977,7 @@ db.restaurants.aggregate([
 
 ---
 
-### Q57: Update Operators â€” $set, $inc, $push with Positional Operator
+### Q57: Update Operators → $set, $inc, $push with Positional Operator
 
 **Problem:** Manage a `tasks` collection where each task has an assignee list. Update a specific assignee's status and increment a counter.
 
@@ -2996,19 +2996,19 @@ db.restaurants.aggregate([
 
 **Answer:**
 ```javascript
-// $set â€” update top-level fields
+// $set → update top-level fields
 db.tasks.updateOne(
   { _id: ObjectId("507f1f77bcf86cd799439011") },
   { $set: { title: "Updated Task Title" } }
 );
 
-// $inc â€” increment counters atomically
+// $inc → increment counters atomically
 db.tasks.updateOne(
   { _id: ObjectId("507f1f77bcf86cd799439011") },
   { $inc: { commentCount: 1 } }
 );
 
-// $push â€” add a new assignee
+// $push → add a new assignee
 db.tasks.updateOne(
   { _id: ObjectId("507f1f77bcf86cd799439011") },
   {
@@ -3018,13 +3018,13 @@ db.tasks.updateOne(
   }
 );
 
-// Positional operator $ â€” update specific array element
+// Positional operator $ → update specific array element
 db.tasks.updateOne(
   { _id: ObjectId("507f1f77bcf86cd799439011"), "assignees.userId": ObjectId("507f191e810c19729de860ea") },
   { $set: { "assignees.$.status": "in-progress", "assignees.$.hoursWorked": 5 } }
 );
 
-// $pull â€” remove an assignee from the array
+// $pull → remove an assignee from the array
 db.tasks.updateOne(
   { _id: ObjectId("507f1f77bcf86cd799439011") },
   { $pull: { assignees: { userId: ObjectId("507f191e810c19729de860ea") } } }
@@ -3040,15 +3040,15 @@ db.tasks.updateOne(
 );
 ```
 
-**Explanation:** MongoDB update operators modify specific parts of documents without fetching them first. `$set` replaces field values. `$inc` atomically increments numeric fields (safe for concurrent updates). The positional operator `$` identifies the matching array element in the query filter. `$push` appends to arrays, `$pull` removes. Using multiple operators in one call is atomic â€” either all succeed or none.
+**Explanation:** MongoDB update operators modify specific parts of documents without fetching them first. `$set` replaces field values. `$inc` atomically increments numeric fields (safe for concurrent updates). The positional operator `$` identifies the matching array element in the query filter. `$push` appends to arrays, `$pull` removes. Using multiple operators in one call is atomic → either all succeed or none.
 
 ---
 
-## Section 9: NoSQL â€” Redis (Q58â€“Q62)
+## Section 9: NoSQL → Redis (Q58â€“Q62)
 
 Redis is an in-memory key-value store used for caching, messaging, and real-time data. All commands below run in `redis-cli`.
 
-### Q58: String Operations â€” Caching Pattern
+### Q58: String Operations → Caching Pattern
 
 **Problem:** Simulate a cache-aside pattern: check cache, if miss, set cache with expiration and return value.
 
@@ -3056,7 +3056,7 @@ Redis is an in-memory key-value store used for caching, messaging, and real-time
 ```bash
 # Check if key exists in cache
 EXISTS user:profile:42
-# (integer) 0 â€” cache miss
+# (integer) 0 → cache miss
 
 # Set a string value with 3600 second TTL (1 hour)
 SET user:profile:42 '{"name":"Alice","email":"alice@example.com","role":"admin"}'
@@ -3064,7 +3064,7 @@ OK
 
 # Set expiration separately
 EXPIRE user:profile:42 3600
-# (integer) 1 â€” TTL set
+# (integer) 1 → TTL set
 
 # Check remaining time-to-live
 TTL user:profile:42
@@ -3080,24 +3080,24 @@ OK
 
 # Set only if key does not exist (for cache stampede prevention)
 SET user:profile:42 '{"name":"Alice"}' NX EX 3600
-# (integer) 0 â€” key already exists, not set
+# (integer) 0 → key already exists, not set
 
 # Delete key (explicit cache invalidation)
 DEL user:profile:42
 # (integer) 1
 ```
 
-**Explanation:** Redis strings are byte-safe up to 512MB. `SET ... EX` with `NX` prevents cache stampede (only one client sets the cache). `SETEX` is atomic â€” key and TTL set together. `EXPIRE`/`TTL` manage time-based eviction. The cache-aside pattern: app checks `GET` first; on miss, queries DB, then `SET` with TTL. Redis auto-evicts expired keys, but explicit `DEL` handles invalidation on data updates.
+**Explanation:** Redis strings are byte-safe up to 512MB. `SET ... EX` with `NX` prevents cache stampede (only one client sets the cache). `SETEX` is atomic → key and TTL set together. `EXPIRE`/`TTL` manage time-based eviction. The cache-aside pattern: app checks `GET` first; on miss, queries DB, then `SET` with TTL. Redis auto-evicts expired keys, but explicit `DEL` handles invalidation on data updates.
 
 ---
 
-### Q59: List Operations â€” Message Queue
+### Q59: List Operations → Message Queue
 
 **Problem:** Simulate a simple message queue where producers push tasks and workers consume them.
 
 **Answer:**
 ```bash
-# Producer â€” push tasks to the queue
+# Producer → push tasks to the queue
 LPUSH task:queue "send-email:user42"
 # (integer) 1
 LPUSH task:queue "generate-report:Q3"
@@ -3115,16 +3115,16 @@ LRANGE task:queue 0 -1
 # 2) "generate-report:Q3"
 # 3) "send-email:user42"
 
-# Worker â€” blocking right-pop (waits up to 30 seconds for data)
+# Worker → blocking right-pop (waits up to 30 seconds for data)
 BRPOP task:queue 30
 # 1) "task:queue"
 # 2) "send-email:user42"
 
-# Worker pool pattern â€” multiple workers using BRPOP
+# Worker pool pattern → multiple workers using BRPOP
 # Each worker runs this in a loop:
 BRPOP task:queue 0   # 0 = wait indefinitely
 
-# Priority queue pattern â€” check high priority first
+# Priority queue pattern → check high priority first
 LPUSH priority:queue "urgent:server-down"
 LPUSH task:queue "routine:clean-logs"
 BRPOP priority:queue task:queue 0   # priority queue consumed first
@@ -3134,11 +3134,11 @@ LTRIM task:queue 0 999
 OK
 ```
 
-**Explanation:** Redis lists are linked lists â€” `LPUSH` adds to head, `RPOP` removes from tail (FIFO). `BRPOP` blocks when empty, avoiding busy-waiting. This makes Redis suitable for simple job queues. For priority, check a high-priority list first. `LLEN` monitors backlog depth. Unlike Kafka, Redis lists don't persist to disk by default and messages are lost on crash without AOF persistence.
+**Explanation:** Redis lists are linked lists → `LPUSH` adds to head, `RPOP` removes from tail (FIFO). `BRPOP` blocks when empty, avoiding busy-waiting. This makes Redis suitable for simple job queues. For priority, check a high-priority list first. `LLEN` monitors backlog depth. Unlike Kafka, Redis lists don't persist to disk by default and messages are lost on crash without AOF persistence.
 
 ---
 
-### Q60: Set Operations â€” Mutual Friends
+### Q60: Set Operations → Mutual Friends
 
 **Problem:** Given friend sets for users, find mutual friends, union of friends, and friend count.
 
@@ -3157,7 +3157,7 @@ SINTER user:1:friends user:2:friends
 # 1) "bob"
 # 2) "diana"
 
-# Union â€” all friends across user 1 and user 2
+# Union → all friends across user 1 and user 2
 SUNION user:1:friends user:2:friends
 # 1) "alice"
 # 2) "bob"
@@ -3170,7 +3170,7 @@ SUNION user:1:friends user:2:friends
 SCARD user:1:friends
 # (integer) 4
 
-# Friend suggestions â€” friends of user 1's friends not already connected
+# Friend suggestions → friends of user 1's friends not already connected
 # (difference between user 2's friends and user 1's friends)
 SDIFF user:2:friends user:1:friends
 # 1) "eve"
@@ -3187,11 +3187,11 @@ SINTERSTORE mutual:1:2 user:1:friends user:2:friends
 # (integer) 2
 ```
 
-**Explanation:** Redis sets are unordered collections of unique strings. `SINTER` computes set intersection (mutual friends) in O(N*M) time. `SUNION` combines sets. `SDIFF` finds elements in one set not in another (friend suggestions). `SCARD` is O(1). Redis set operations are performed server-side â€” no data transfer between calls â€” making them extremely fast for social-graph queries.
+**Explanation:** Redis sets are unordered collections of unique strings. `SINTER` computes set intersection (mutual friends) in O(N*M) time. `SUNION` combines sets. `SDIFF` finds elements in one set not in another (friend suggestions). `SCARD` is O(1). Redis set operations are performed server-side → no data transfer between calls → making them extremely fast for social-graph queries.
 
 ---
 
-### Q61: Sorted Set â€” Leaderboard
+### Q61: Sorted Set → Leaderboard
 
 **Problem:** Implement a real-time game leaderboard with scores and rankings.
 
@@ -3226,7 +3226,7 @@ ZREVRANK leaderboard:game1 "player_charlie"
 ZSCORE leaderboard:game1 "player_alice"
 # "1500"
 
-# Increment score (atomic â€” safe for concurrent play)
+# Increment score (atomic → safe for concurrent play)
 ZINCRBY leaderboard:game1 50 "player_alice"
 # "1550"
 
@@ -3250,11 +3250,11 @@ ZUNIONSTORE leaderboard:overall 2 leaderboard:weekly leaderboard:monthly WEIGHTS
 # (integer) 5
 ```
 
-**Explanation:** Redis sorted sets store unique members with floating-point scores, maintaining order by score. `ZADD` inserts/updates. `ZREVRANGE` returns highest-to-lowest (for descending leaderboard). `ZREVRANK` gives position. `ZINCRBY` atomically updates scores â€” no read-modify-write race conditions. `ZUNIONSTORE` combines multiple leaderboards. All operations are O(log N), making sorted sets ideal for real-time rankings.
+**Explanation:** Redis sorted sets store unique members with floating-point scores, maintaining order by score. `ZADD` inserts/updates. `ZREVRANGE` returns highest-to-lowest (for descending leaderboard). `ZREVRANK` gives position. `ZINCRBY` atomically updates scores → no read-modify-write race conditions. `ZUNIONSTORE` combines multiple leaderboards. All operations are O(log N), making sorted sets ideal for real-time rankings.
 
 ---
 
-### Q62: Hash Operations â€” Session Store
+### Q62: Hash Operations → Session Store
 
 **Problem:** Store and manage web session data using Redis hashes.
 
@@ -3262,7 +3262,7 @@ ZUNIONSTORE leaderboard:overall 2 leaderboard:weekly leaderboard:monthly WEIGHTS
 ```bash
 # Create a session hash with multiple fields
 HSET session:abc123 user_id 42 username "alice" role "admin" login_time "2024-01-15T10:30:00Z"
-# (integer) 4 â€” fields added
+# (integer) 4 → fields added
 
 # Get a single field
 HGET session:abc123 username
@@ -3323,7 +3323,7 @@ EXPIRE session:abc123 1800
 # (integer) 1
 ```
 
-**Explanation:** Redis hashes store multiple field-value pairs under one key â€” perfect for objects like sessions. `HSET` creates or updates fields. `HGETALL` retrieves the entire object with a single round-trip. `HINCRBY` atomically increments counters within the hash. Unlike storing a JSON string (Q58), hashes allow partial reads/writes without deserialization overhead. Combine with `EXPIRE` for automatic session timeout.
+**Explanation:** Redis hashes store multiple field-value pairs under one key → perfect for objects like sessions. `HSET` creates or updates fields. `HGETALL` retrieves the entire object with a single round-trip. `HINCRBY` atomically increments counters within the hash. Unlike storing a JSON string (Q58), hashes allow partial reads/writes without deserialization overhead. Combine with `EXPIRE` for automatic session timeout.
 
 ---
 
@@ -3331,7 +3331,7 @@ EXPIRE session:abc123 1800
 
 Understanding query plans is essential for database performance tuning. Problems below use PostgreSQL syntax.
 
-### Q63: EXPLAIN ANALYZE â€” Identifying Sequential Scans
+### Q63: EXPLAIN ANALYZE → Identifying Sequential Scans
 
 **Problem:** Given the following query plan output, identify the performance problem and suggest a fix.
 
@@ -3370,7 +3370,7 @@ Planning Time: 0.080 ms
 Execution Time: 98.450 ms
 ```
 
-**Analysis:** The plan shows a **Sequential Scan** â€” PostgreSQL reads all 1M rows and filters. Key signals: `Seq Scan` (no index used), high `actual time` (85ms), and many `Rows Removed by Filter` (671K).
+**Analysis:** The plan shows a **Sequential Scan** → PostgreSQL reads all 1M rows and filters. Key signals: `Seq Scan` (no index used), high `actual time` (85ms), and many `Rows Removed by Filter` (671K).
 
 **Fix:**
 ```sql
@@ -3394,7 +3394,7 @@ Execution Time: 18.230 ms
 
 ---
 
-### Q64: Index Selection â€” B-tree vs Hash vs GiST vs GIN
+### Q64: Index Selection → B-tree vs Hash vs GiST vs GIN
 
 **Problem:** Choose the right index type for different query patterns.
 
@@ -3402,10 +3402,10 @@ Execution Time: 18.230 ms
 
 | Index Type | Best For | Example Query | Internal Structure |
 |---|---|---|---|
-| **B-tree** (default) | Equality, range,æŽ’åº, `ORDER BY` | `WHERE price > 100` `WHERE id = 5` | Balanced tree â€” log(N) lookup |
-| **Hash** | Equality only | `WHERE status = 'active'` | Hash table â€” O(1) lookup, no ordering |
+| **B-tree** (default) | Equality, range,æŽ’åº, `ORDER BY` | `WHERE price > 100` `WHERE id = 5` | Balanced tree → log(N) lookup |
+| **Hash** | Equality only | `WHERE status = 'active'` | Hash table → O(1) lookup, no ordering |
 | **GiST** | Geospatial, full-text, range overlap | `WHERE location <@ box` `WHERE period && '[2024-01,2024-06]'` | Generalized Search Tree |
-| **GIN** | Composite values (arrays, JSONB, tsvector) | `WHERE tags @> ARRAY['sql']` `WHERE data @> '{"key":"val"}'` | Inverted index â€” maps values to rows |
+| **GIN** | Composite values (arrays, JSONB, tsvector) | `WHERE tags @> ARRAY['sql']` `WHERE data @> '{"key":"val"}'` | Inverted index → maps values to rows |
 
 **Examples:**
 ```sql
@@ -3434,11 +3434,11 @@ CREATE INDEX idx_fts ON documents USING gin (to_tsvector('english', body));
 SELECT * FROM documents WHERE to_tsvector('english', body) @@ to_tsquery('optimization & index');
 ```
 
-**Explanation:** B-tree is the default for a reason â€” it handles 90% of use cases. Hash indexes are smaller but only support `=` lookups; they rarely beat B-tree in practice. GiST enables "nearest neighbor" and overlap queries (geospatial, range types). GIN is specialized for "element contains" queries on arrays, JSONB, and full-text search vectors. Choosing the wrong index type wastes memory and may not be used at all.
+**Explanation:** B-tree is the default for a reason → it handles 90% of use cases. Hash indexes are smaller but only support `=` lookups; they rarely beat B-tree in practice. GiST enables "nearest neighbor" and overlap queries (geospatial, range types). GIN is specialized for "element contains" queries on arrays, JSONB, and full-text search vectors. Choosing the wrong index type wastes memory and may not be used at all.
 
 ---
 
-### Q65: Composite Index Column Order â€” Leftmost Prefix Rule
+### Q65: Composite Index Column Order → Leftmost Prefix Rule
 
 **Problem:** Given a composite index, which queries can use it efficiently?
 
@@ -3461,11 +3461,11 @@ CREATE INDEX idx_emp_dept_hiredate ON employees (department, hire_date);
 ```sql
 -- âœ… Index used: matches leftmost prefix
 SELECT * FROM employees WHERE department = 'Engineering';
--- Uses index â€” query on leading column only
+-- Uses index → query on leading column only
 
 -- âœ… Index used: both columns match (most efficient)
 SELECT * FROM employees WHERE department = 'Engineering' AND hire_date > '2023-01-01';
--- Uses index â€” can filter both columns
+-- Uses index → can filter both columns
 
 -- âœ… Index used: equality on first column + range on second
 SELECT * FROM employees
@@ -3475,11 +3475,11 @@ WHERE department = 'Engineering'
 
 -- âŒ Index NOT used (or partially used): skipping leading column
 SELECT * FROM employees WHERE hire_date > '2023-01-01';
--- Cannot use index â€” department is missing from WHERE
+-- Cannot use index → department is missing from WHERE
 
 -- âŒ Index NOT used: equality on second column only
 SELECT * FROM employees WHERE department = 'Engineering' AND salary > 100000;
--- Index covers department but not salary â€” OK for department filter,
+-- Index covers department but not salary → OK for department filter,
 -- but salary filter requires a table scan of matching rows
 
 -- âš ï¸ Order matters: put high-selectivity column first
@@ -3543,21 +3543,21 @@ Index Only Scan using idx_users_include on users
   Heap Fetches: 0
 ```
 
-**Explanation:** Both enable an **Index Only Scan** â€” the query reads entirely from the index without touching the heap (table). This is the fastest possible read path. The difference:
+**Explanation:** Both enable an **Index Only Scan** → the query reads entirely from the index without touching the heap (table). This is the fastest possible read path. The difference:
 
 | Aspect | Covering Index | Include Index |
 |---|---|---|
 | Columns in | `(last_login, email, username, is_active)` | `(last_login)` with included columns |
-| Affects sort order | Yes â€” added columns change B-tree order | No â€” included columns don't affect tree |
+| Affects sort order | Yes → added columns change B-tree order | No → included columns don't affect tree |
 | Index size | Larger (all columns in each node) | Smaller (included columns only in leaves) |
-| UPDATE cost | Higher â€” updates to any column reorder tree | Lower â€” included columns don't affect tree structure |
+| UPDATE cost | Higher → updates to any column reorder tree | Lower → included columns don't affect tree structure |
 | Best for | Columns used in WHERE/ORDER BY | Payload columns in SELECT only |
 
 **Rule:** Put filter/join/order columns in the index body. Put SELECT-only payload columns in `INCLUDE` to keep the index tree smaller and faster.
 
 ---
 
-### Q67: Query Rewrite â€” Correlated Subquery to JOIN
+### Q67: Query Rewrite → Correlated Subquery to JOIN
 
 **Problem:** Rewrite a slow correlated subquery as a JOIN and compare performance.
 
@@ -3743,7 +3743,7 @@ Finalize Aggregate  (cost=8500.00..8500.01 rows=1 width=8)
 | Scanned Rows | 10,000,000 | ~833,333 (1 month) |
 | Partitions Scanned | All (1 partition) | 1 of 4 partitions |
 
-**Explanation:** Partition pruning means the query planner scans only relevant partitions. The unpartitioned table reads all 10M rows and filters. The partitioned table's `WHERE` clause maps to `logs_2024_01` only â€” PostgreSQL prunes the other partitions at planning time. Benefits scale with data volume: with 12 monthly partitions, a single-month query scans 1/12 the data. Partitioning also enables faster `DROP` (drop entire partition instead of `DELETE` millions of rows) and easier archival.
+**Explanation:** Partition pruning means the query planner scans only relevant partitions. The unpartitioned table reads all 10M rows and filters. The partitioned table's `WHERE` clause maps to `logs_2024_01` only → PostgreSQL prunes the other partitions at planning time. Benefits scale with data volume: with 12 monthly partitions, a single-month query scans 1/12 the data. Partitioning also enables faster `DROP` (drop entire partition instead of `DELETE` millions of rows) and easier archival.
 
 **Key requirements:**
 - Partition key must appear in the `WHERE` clause for pruning
@@ -3757,7 +3757,7 @@ Finalize Aggregate  (cost=8500.00..8500.01 rows=1 width=8)
 
 Understanding transaction isolation prevents concurrency anomalies. Examples use PostgreSQL 14+ (default: READ COMMITTED).
 
-### Q69: Dirty Read â€” READ UNCOMMITTED vs READ COMMITTED
+### Q69: Dirty Read → READ UNCOMMITTED vs READ COMMITTED
 
 **Problem:** Demonstrate a dirty read scenario and show how READ COMMITTED prevents it.
 
@@ -3786,7 +3786,7 @@ SELECT balance FROM accounts WHERE id = 1;
 
 -- In MySQL with InnoDB READ UNCOMMITTED:
 -- SELECT balance FROM accounts WHERE id = 1;
--- Would return 800 (uncommitted change) â€” this is a DIRTY READ
+-- Would return 800 (uncommitted change) → this is a DIRTY READ
 
 ROLLBACK;  -- Session B
 
@@ -3796,13 +3796,13 @@ ROLLBACK;
 -- Final state: balance is back to 1000.00
 ```
 
-**Explanation:** A **dirty read** occurs when a transaction reads uncommitted changes from another transaction. PostgreSQL doesn't support dirty reads at any isolation level â€” even `READ UNCOMMITTED` behaves like `READ COMMITTED`. MySQL/InnoDB allows dirty reads at `READ UNCOMMITTED`. Dirty reads are dangerous because the uncommitted data might be rolled back, leaving the reader with invalid data. `READ COMMITTED` (PostgreSQL default) prevents this by reading only committed data.
+**Explanation:** A **dirty read** occurs when a transaction reads uncommitted changes from another transaction. PostgreSQL doesn't support dirty reads at any isolation level → even `READ UNCOMMITTED` behaves like `READ COMMITTED`. MySQL/InnoDB allows dirty reads at `READ UNCOMMITTED`. Dirty reads are dangerous because the uncommitted data might be rolled back, leaving the reader with invalid data. `READ COMMITTED` (PostgreSQL default) prevents this by reading only committed data.
 
 **Real-world impact:** A reporting query that reads uncommitted withdrawals might show a negative balance that never actually materializes, leading to incorrect business decisions.
 
 ---
 
-### Q70: Non-Repeatable Read â€” How REPEATABLE READ Prevents It
+### Q70: Non-Repeatable Read → How REPEATABLE READ Prevents It
 
 **Problem:** Show a non-repeatable read and how REPEATABLE READ prevents it.
 
@@ -3827,7 +3827,7 @@ COMMIT;
 
 -- Session A: reads same row again (same transaction)
 SELECT quantity FROM inventory WHERE id = 1;
--- Returns 5 â€” NON-REPEATABLE READ!
+-- Returns 5 → NON-REPEATABLE READ!
 -- Same query, same transaction, different value
 
 COMMIT;  -- Session A ends
@@ -3847,7 +3847,7 @@ COMMIT;
 
 -- Session C: reads again
 SELECT quantity FROM inventory WHERE id = 1;
--- Still returns 10 â€” REPEATABLE READ prevents the anomaly
+-- Still returns 10 → REPEATABLE READ prevents the anomaly
 -- PostgreSQL uses MVCC snapshot: sees the data as of transaction start
 
 COMMIT;  -- Session C ends
@@ -3857,13 +3857,13 @@ SELECT quantity FROM inventory WHERE id = 1;
 -- Returns 3
 ```
 
-**Explanation:** A **non-repeatable read** occurs when a transaction reads the same row twice and gets different values because another transaction modified and committed between the reads. `REPEATABLE READ` prevents this by using a **snapshot isolation** model â€” the transaction sees a consistent snapshot of data as of the first query. In PostgreSQL, `REPEATABLE READ` uses a single snapshot for the entire transaction, ensuring repeatable reads.
+**Explanation:** A **non-repeatable read** occurs when a transaction reads the same row twice and gets different values because another transaction modified and committed between the reads. `REPEATABLE READ` prevents this by using a **snapshot isolation** model → the transaction sees a consistent snapshot of data as of the first query. In PostgreSQL, `REPEATABLE READ` uses a single snapshot for the entire transaction, ensuring repeatable reads.
 
 **Key difference:** `REPEATABLE READ` provides statement-level consistency in `READ COMMITTED` (each query sees latest committed data) but transaction-level consistency in `REPEATABLE READ` (all queries see snapshot at transaction start).
 
 ---
 
-### Q71: Phantom Read â€” How SERIALIZABLE Prevents It
+### Q71: Phantom Read → How SERIALIZABLE Prevents It
 
 **Problem:** Show a phantom read and how SERIALIZABLE prevents it.
 
@@ -3900,7 +3900,7 @@ COMMIT;
 -- Session A: counts again
 SELECT COUNT(*) FROM reservations
 WHERE check_in BETWEEN '2024-07-01' AND '2024-07-31';
--- Still returns 2 â€” REPEATABLE READ prevents this too in PostgreSQL!
+-- Still returns 2 → REPEATABLE READ prevents this too in PostgreSQL!
 -- (PostgreSQL REPEATABLE READ uses snapshot isolation, which prevents phantoms
 -- for most practical purposes, but not against INSERT that would affect
 -- the result of an aggregate query in theory)
@@ -3944,13 +3944,13 @@ INSERT INTO reservations VALUES (6, 201, 'Frank', '2024-08-07', '2024-08-12');
 COMMIT;
 ```
 
-**Explanation:** A **phantom read** occurs when a transaction executes the same range query twice and sees different sets of rows because another transaction inserted/deleted rows that match the predicate. PostgreSQL's `REPEATABLE READ` (snapshot isolation) prevents phantoms for reads â€” the snapshot ensures consistent visibility. However, write conflicts may still surface. `SERIALIZABLE` goes further by detecting serialization conflicts using predicate locking (SIREAD locks on index pages), aborting one conflicting transaction with a serialization error. The application must retry.
+**Explanation:** A **phantom read** occurs when a transaction executes the same range query twice and sees different sets of rows because another transaction inserted/deleted rows that match the predicate. PostgreSQL's `REPEATABLE READ` (snapshot isolation) prevents phantoms for reads → the snapshot ensures consistent visibility. However, write conflicts may still surface. `SERIALIZABLE` goes further by detecting serialization conflicts using predicate locking (SIREAD locks on index pages), aborting one conflicting transaction with a serialization error. The application must retry.
 
-**Note:** In standard SQL, `REPEATABLE READ` allows phantoms but not non-repeatable reads. PostgreSQL's implementation is stricter â€” its `REPEATABLE READ` prevents both. Only `SERIALIZABLE` guarantees complete freedom from all anomalies.
+**Note:** In standard SQL, `REPEATABLE READ` allows phantoms but not non-repeatable reads. PostgreSQL's implementation is stricter → its `REPEATABLE READ` prevents both. Only `SERIALIZABLE` guarantees complete freedom from all anomalies.
 
 ---
 
-### Q72: Lost Update â€” Optimistic Locking with Version Column
+### Q72: Lost Update → Optimistic Locking with Version Column
 
 **Problem:** Demonstrate a lost update and fix it with optimistic locking.
 
@@ -3983,14 +3983,14 @@ SELECT stock, version FROM products WHERE id = 1;
 UPDATE products
 SET stock = 90, version = version + 1
 WHERE id = 1 AND version = 1;
--- Affected rows: 1 â€” success
+-- Affected rows: 1 → success
 COMMIT;
 
 -- Bob updates (sells 20, based on stale version)
 UPDATE products
 SET stock = 80, version = version + 1
 WHERE id = 1 AND version = 1;
--- Affected rows: 0 â€” FAIL! Version mismatch
+-- Affected rows: 0 → FAIL! Version mismatch
 -- Bob's update affected 0 rows because version is now 2
 
 -- Bob must re-read and retry
@@ -4006,7 +4006,7 @@ COMMIT;
 -- Final stock: 70 (100 - 10 - 20), both updates preserved
 ```
 
-**Explanation:** A **lost update** occurs when two transactions read the same value, modify it independently, and the second overwrites the first. **Optimistic locking** uses a version column: each update checks that the version hasn't changed and increments it. If the version doesn't match, the update affects zero rows â€” the application detects this and retries. This avoids pessimistic locking (SELECT ... FOR UPDATE) which reduces concurrency.
+**Explanation:** A **lost update** occurs when two transactions read the same value, modify it independently, and the second overwrites the first. **Optimistic locking** uses a version column: each update checks that the version hasn't changed and increments it. If the version doesn't match, the update affects zero rows → the application detects this and retries. This avoids pessimistic locking (SELECT ... FOR UPDATE) which reduces concurrency.
 
 **Comparison:**
 
@@ -4017,7 +4017,7 @@ COMMIT;
 
 ---
 
-### Q73: Deadlock â€” Scenario and Resolution
+### Q73: Deadlock → Scenario and Resolution
 
 **Problem:** Create a deadlock scenario and explain how the database resolves it.
 
@@ -4076,14 +4076,14 @@ COMMIT;
 **Explanation:** A **deadlock** occurs when two or more transactions hold locks that the other needs, creating a circular wait. PostgreSQL's deadlock detector runs a background process that checks for wait cycles. When detected, it chooses the transaction that can be rolled back at the lowest cost (typically the one with the least work done). The rolled-back transaction must be retried by the application.
 
 **Deadlock prevention strategies:**
-1. **Consistent locking order** â€” always lock resources in the same sequence
-2. **Lock timeouts** â€” fail fast instead of waiting indefinitely
-3. **Minimize transaction duration** â€” shorter transactions reduce lock contention
-4. **Use lower isolation levels** â€” `READ COMMITTED` holds locks for less time than `REPEATABLE READ`
+1. **Consistent locking order** → always lock resources in the same sequence
+2. **Lock timeouts** → fail fast instead of waiting indefinitely
+3. **Minimize transaction duration** → shorter transactions reduce lock contention
+4. **Use lower isolation levels** → `READ COMMITTED` holds locks for less time than `REPEATABLE READ`
 
 ---
 
-### Q74: Snapshot Isolation â€” MVCC with PostgreSQL
+### Q74: Snapshot Isolation → MVCC with PostgreSQL
 
 **Problem:** Explain MVCC (Multi-Version Concurrency Control) and how PostgreSQL implements snapshot isolation.
 
@@ -4117,7 +4117,7 @@ UPDATE mvcc_demo SET value = 'Version 2' WHERE id = 1;
 BEGIN;
 SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 SELECT value FROM mvcc_demo WHERE id = 1;
--- Returns 'Version 1' â€” sees snapshot as of transaction start
+-- Returns 'Version 1' → sees snapshot as of transaction start
 
 -- Transaction A commits
 COMMIT;  -- A commits
@@ -4129,11 +4129,11 @@ SELECT value FROM mvcc_demo WHERE id = 1;
 -- Transaction C: started after A committed, in READ COMMITTED
 BEGIN;
 SELECT value FROM mvcc_demo WHERE id = 1;
--- Returns 'Version 2' â€” sees latest committed version
+-- Returns 'Version 2' → sees latest committed version
 
 -- Vacuum removes dead row versions
 -- VACUUM mvcc_demo;
--- After vacuum, (0,1) is removed â€” no transaction needs it anymore
+-- After vacuum, (0,1) is removed → no transaction needs it anymore
 
 COMMIT;
 ```
@@ -4142,16 +4142,16 @@ COMMIT;
 
 | Condition | Visible? |
 |---|---|
-| `xmin` is committed and `xmin` < current transaction ID | Yes â€” row existed before transaction |
-| `xmin` is in-progress | No â€” row created by concurrent transaction |
-| `xmax` is committed and `xmax` < current transaction ID | No â€” row was deleted before this transaction |
-| `xmax` is in-progress | Yes â€” row still active |
+| `xmin` is committed and `xmin` < current transaction ID | Yes → row existed before transaction |
+| `xmin` is in-progress | No → row created by concurrent transaction |
+| `xmax` is committed and `xmax` < current transaction ID | No → row was deleted before this transaction |
+| `xmax` is in-progress | Yes → row still active |
 
 **Benefits of MVCC:**
-- **Readers never block writers** â€” a `SELECT` never waits for an `UPDATE`
-- **Writers never block readers** â€” an `UPDATE` doesn't block `SELECT`
-- **Consistent snapshots** â€” each transaction sees a point-in-time view
-- **No read locks needed** â€” read operations acquire no locks
+- **Readers never block writers** → a `SELECT` never waits for an `UPDATE`
+- **Writers never block readers** → an `UPDATE` doesn't block `SELECT`
+- **Consistent snapshots** → each transaction sees a point-in-time view
+- **No read locks needed** → read operations acquire no locks
 
 **Trade-offs:**
 - Dead row versions consume storage (solved by `VACUUM`)
@@ -4187,7 +4187,7 @@ COMMIT;
 | **REPEATABLE READ** | âœ… Prevented | âœ… Prevented | âœ… Prevented** | Possible | âœ… Prevented |
 | **SERIALIZABLE** | âœ… Prevented | âœ… Prevented | âœ… Prevented | âœ… Prevented | âœ… Prevented |
 
-*\* PostgreSQL doesn't allow dirty reads â€” READ UNCOMMITTED behaves like READ COMMITTED.*
+*\* PostgreSQL doesn't allow dirty reads → READ UNCOMMITTED behaves like READ COMMITTED.*
 *\*\* PostgreSQL REPEATABLE READ prevents phantoms via snapshot isolation (stricter than SQL standard).*
 
 **Detailed Comparison Table:**
@@ -4224,7 +4224,7 @@ Lost Update          = Two transactions overwrite each other's changes
 Serialization Anomaly = Outcome not equivalent to any serial execution order
 ```
 
-**Key Recommendation:** Use the weakest isolation level that meets your correctness requirements. `READ COMMITTED` is sufficient for 90% of applications. Upgrade only when specific anomalies cause real business logic bugs â€” higher isolation costs performance and increases deadlock probability.
+**Key Recommendation:** Use the weakest isolation level that meets your correctness requirements. `READ COMMITTED` is sufficient for 90% of applications. Upgrade only when specific anomalies cause real business logic bugs → higher isolation costs performance and increases deadlock probability.
 
 ---
 
@@ -4299,4 +4299,4 @@ A **correlated subquery references columns from the outer query** and is re-eval
 
 ---
 
-> **Pro Tip:** NoSQL databases (MongoDB, Redis) are increasingly common in interview questions. Focus on understanding the *trade-offs* between SQL and NoSQL â€” when to use each, and how consistency models differ. For query optimization, practice reading `EXPLAIN ANALYZE` plans daily. For transactions, know both the theoretical anomalies (dirty reads, phantoms) and concrete SQL scenarios. Real senior-level interviews ask you to *diagnose a performance problem from a query plan* or *fix a concurrency bug by choosing the right isolation level*.
+> **Pro Tip:** NoSQL databases (MongoDB, Redis) are increasingly common in interview questions. Focus on understanding the *trade-offs* between SQL and NoSQL → when to use each, and how consistency models differ. For query optimization, practice reading `EXPLAIN ANALYZE` plans daily. For transactions, know both the theoretical anomalies (dirty reads, phantoms) and concrete SQL scenarios. Real senior-level interviews ask you to *diagnose a performance problem from a query plan* or *fix a concurrency bug by choosing the right isolation level*.

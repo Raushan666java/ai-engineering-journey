@@ -50,7 +50,7 @@ flowchart LR
     H --> I[Spring Boot Integration]
 ```
 
-> **Pro Tip:** Always use `register` (lazy task creation) instead of `create` â€” it avoids configuring tasks that may never execute, which significantly improves build time in large projects.
+> **Pro Tip:** Always use `register` (lazy task creation) instead of `create` → it avoids configuring tasks that may never execute, which significantly improves build time in large projects.
 
 ---
 

@@ -286,9 +286,9 @@ The deployment script:
   - Resource utilization (CPU, memory)
 - Configure Loki for log aggregation with Promtail
 - Set up alert rules:
-  - High error rate (>1% for 5 minutes) â†’ PagerDuty
-  - High latency (p95 > 500ms for 5 minutes) â†’ Slack notification
-  - Pod crash loop â†’ PagerDuty
+  - High error rate (>1% for 5 minutes) → PagerDuty
+  - High latency (p95 > 500ms for 5 minutes) → Slack notification
+  - Pod crash loop → PagerDuty
 
 ### 8. Security Scanning
 
@@ -314,12 +314,12 @@ Integrate the following security tools in the pipeline:
 
 Submit the following:
 
-1. **GitHub Repository** â€” Complete source code with all configurations
-2. **README.md** â€” Architecture overview, setup instructions, deployment guide
-3. **Pipeline Documentation** â€” Description of each stage, triggers, and gates
-4. **Architecture Diagram** â€” System architecture including network, deployment, and data flow
-5. **Runbook** â€” Operational procedures for deployment, rollback, incident response, and recovery
-6. **Presentation** â€” 10-minute recorded walkthrough of the pipeline
+1. **GitHub Repository** → Complete source code with all configurations
+2. **README.md** → Architecture overview, setup instructions, deployment guide
+3. **Pipeline Documentation** → Description of each stage, triggers, and gates
+4. **Architecture Diagram** → System architecture including network, deployment, and data flow
+5. **Runbook** → Operational procedures for deployment, rollback, incident response, and recovery
+6. **Presentation** → 10-minute recorded walkthrough of the pipeline
 
 ## Evaluation Criteria
 

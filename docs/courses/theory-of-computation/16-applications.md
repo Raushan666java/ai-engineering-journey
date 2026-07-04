@@ -56,14 +56,14 @@ The most widespread application of finite automata is **lexical analysis** (lexi
 
 **Example:** A lexer for simple arithmetic:
 ```
-DIGIT    â†’ [0-9]
-NUMBER   â†’ DIGIT+ (\. DIGIT+)?
-PLUS     â†’ +
-MINUS    â†’ -
-TIMES    â†’ *
-DIVIDE   â†’ /
-LPAREN   â†’ (
-RPAREN   â†’ )
+DIGIT    → [0-9]
+NUMBER   → DIGIT+ (\. DIGIT+)?
+PLUS     → +
+MINUS    → -
+TIMES    → *
+DIVIDE   → /
+LPAREN   → (
+RPAREN   → )
 ```
 Each rule compiles to a DFA. The lexer simulates them in parallel, picking the longest matching token.
 
@@ -82,7 +82,7 @@ Each rule compiles to a DFA. The lexer simulates them in parallel, picking the l
 2. **Bottom-up (LR) parsing:**
    - Build the parse tree from the leaves upward.
    - Shift symbols onto a stack until a production's RHS is matched, then reduce.
-   - More general than LL â€” can handle more grammars.
+   - More general than LL → can handle more grammars.
    - Used in: yacc, bison, and most parser generators.
 
 **Parser generators:** yacc/bison (LALR(1)), ANTLR (LL(*)), CUP (LALR), Happy (Haskell).
@@ -104,7 +104,7 @@ Each rule compiles to a DFA. The lexer simulates them in parallel, picking the l
 1. Model the system as a finite automaton (a Kripke structure) M.
 2. Convert the specification (in LTL or CTL) to an automaton A that accepts violating behaviors.
 3. Compute the product automaton M Ã— A.
-4. Check if the product has any accepting path â€” if so, the specification is violated.
+4. Check if the product has any accepting path → if so, the specification is violated.
 
 **Applications:**
 - Hardware verification (Intel, AMD use model checking for CPU designs).
@@ -120,7 +120,7 @@ Complexity theory provides the foundation for modern cryptography. In particular
 
 **Key complexity-theoretic concepts in cryptography:**
 - **One-way functions:** f(x) is easy to compute, but given y = f(x), finding any x' with f(x') = y is hard (requires super-polynomial time).
-- **Trapdoor functions:** One-way functions with a "back door" â€” with the secret key, inversion is easy (used in public-key cryptography).
+- **Trapdoor functions:** One-way functions with a "back door" → with the secret key, inversion is easy (used in public-key cryptography).
 - **Zero-knowledge proofs:** An interactive proof reveals nothing beyond the validity of the statement. ZK proofs exist for all NP languages under cryptographic assumptions.
 
 **Computational hardness assumptions:**
@@ -132,7 +132,7 @@ Complexity theory provides the foundation for modern cryptography. In particular
 ### 15.5 Automata in Natural Language Processing
 
 **Finite-state methods** are extensively used in NLP:
-- **Morphological analysis:** Finite-state transducers model word formation (e.g., "running" â†’ run + ing).
+- **Morphological analysis:** Finite-state transducers model word formation (e.g., "running" → run + ing).
 - **Phonology:** Finite-state machines model sound changes in language.
 - **Part-of-speech tagging:** Hidden Markov Models (probabilistic finite automata) assign POS tags to words.
 - **Speech recognition:** Viterbi algorithm (DP on a weighted automaton) finds the most likely word sequence.
@@ -189,7 +189,7 @@ Understanding undecidability helps engineers recognize what **cannot** be automa
 **Practical consequences:**
 - Static analysis tools (like linters) use conservative approximations (sound but incomplete, or complete but unsound).
 - Type systems balance expressiveness with decidability.
-- Testing cannot prove correctness â€” it can only find bugs.
+- Testing cannot prove correctness → it can only find bugs.
 
 ### 15.10 Quantum Computing and Complexity
 
@@ -480,21 +480,21 @@ The property is expressed in LTL as: G Â¬(in_csâ‚ âˆ§ in_csâ‚‚).
 
 Model checking constructs the product of M and the automaton for the negation of the property. If any accepting cycle exists, the system model violates mutual exclusion and a counterexample path is produced.
 
-### Example 15.3: Undecidability in Practice â€” Static Analysis
+### Example 15.3: Undecidability in Practice → Static Analysis
 
 A static analyzer for null pointer dereferences:
 - Cannot decide exactly which pointers are null (undecidable in general).
 - Instead, uses **conservative approximation**: may report false positives but never misses a real bug.
 - Example: assume any pointer assigned from a function return might be null unless proven otherwise.
 
-This is the practical consequence of Rice's theorem â€” static analysis tools must trade off precision for decidability.
+This is the practical consequence of Rice's theorem → static analysis tools must trade off precision for decidability.
 
 ### Example 15.4: RNA Secondary Structure Prediction with CFGs
 
 RNA bases {A, C, G, U} pair: A-U, C-G, G-U (wobble). Secondary structure prediction using Nussinov algorithm (DP, O(nÂ³)):
 
 **Grammar for RNA structure:**
-S â†’ Îµ | a S | a S u | c S g | g S u | c S c | u S a | g S c | S S
+S → Îµ | a S | a S u | c S g | g S u | c S c | u S a | g S c | S S
 
 Each production corresponds to a structural element:
 - Îµ: empty structure.

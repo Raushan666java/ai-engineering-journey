@@ -23,7 +23,7 @@ Think of a **file** as a **library book**:
 | `fopen("file.txt", "r")` | Check out a book to **read** it |
 | `fopen("file.txt", "w")` | Buy a **new notebook** (erase everything first) |
 | `fopen("file.txt", "a")` | Open a journal to **add** pages at the end |
-| `FILE *fp` | Your **library card** â€” the handle to the book |
+| `FILE *fp` | Your **library card** → the handle to the book |
 | `fgetc(fp)` | Read **one word** at your current spot |
 | `fputc('A', fp)` | Write **one word** at your current spot |
 | `fseek(fp, n, SEEK_SET)` | Flip to **page n** |
@@ -67,7 +67,7 @@ The `FILE*` pointer is like your **library card + bookmark**. You hand it to the
 2. **Open** the file with `fopen`: `fp = fopen("data.txt", "r");`
 3. **Check** if `fp` is `NULL` (the file might not exist)
 4. **Read or write** using file I/O functions
-5. **Close** with `fclose(fp)` â€” this flushes buffers and frees the handle
+5. **Close** with `fclose(fp)` → this flushes buffers and frees the handle
 
 ### Pseudocode
 
@@ -108,9 +108,9 @@ Assume `example.txt` exists:
 
 | Step | Code | fp Value | File State |
 |------|------|----------|------------|
-| 1 | `FILE *fp;` | uninitialized | â€” |
+| 1 | `FILE *fp;` | uninitialized | → |
 | 2 | `fopen("example.txt", "r")` | returns address of FILE struct | File opened, position = 0 |
-| 3 | `if (fp == NULL)` | NOT NULL | â€” |
+| 3 | `if (fp == NULL)` | NOT NULL | → |
 | 4 | `fclose(fp)` | still valid until closed | File closed, buffers flushed |
 
 ### Complexity Analysis
@@ -141,7 +141,7 @@ Assume `example.txt` exists:
 
 ---
 
-## 12.2 Opening Files â€” fopen Modes
+## 12.2 Opening Files → fopen Modes
 
 ### Prototype
 
@@ -160,7 +160,7 @@ Opening a file with different modes is like checking out a library book under di
 - **a+** = "I want to read the whole journal and add at the end"
 - **b** suffix = "Treat it as a photo album (don't translate newlines)"
 
-### fopen Modes â€” Complete Reference Table
+### fopen Modes → Complete Reference Table
 
 | Mode | Read | Write | Append | Create? | Truncate? | Position Start | Notes |
 |------|------|-------|--------|---------|-----------|----------------|-------|
@@ -180,13 +180,13 @@ Opening a file with different modes is like checking out a library book under di
 ### Critical Detail: Text vs Binary on Windows
 
 On Windows, text mode (`"r"`, `"w"`, `"a"`, etc.) translates:
-- `\n` (LF) â†’ `\r\n` (CRLF) on **write**
-- `\r\n` â†’ `\n` on **read**
+- `\n` (LF) → `\r\n` (CRLF) on **write**
+- `\r\n` → `\n` on **read**
 - `Ctrl+Z` (0x1A) signals EOF in text mode
 
 Binary mode (`"rb"`, `"wb"`, `"ab"`) performs **no translation**.
 
-On Linux/macOS, text and binary modes are identical â€” no translation occurs.
+On Linux/macOS, text and binary modes are identical → no translation occurs.
 
 ### Steps to Open a File
 
@@ -209,7 +209,7 @@ FUNCTION openFile(name, mode)
 END FUNCTION
 ```
 
-### Code Example â€” All Modes Demonstrated
+### Code Example → All Modes Demonstrated
 
 ```c
 #include <stdio.h>
@@ -218,21 +218,21 @@ int main(void)
 {
     FILE *fp;
 
-    /* "w" â€” write mode, creates or truncates */
+    /* "w" → write mode, creates or truncates */
     fp = fopen("test_w.txt", "w");
     if (fp) { fprintf(fp, "Write mode\n"); fclose(fp); }
 
-    /* "a" â€” append mode, writes at end */
+    /* "a" → append mode, writes at end */
     fp = fopen("test_a.txt", "a");
     if (fp) { fprintf(fp, "Appended line\n"); fclose(fp); }
 
-    /* "r" â€” read mode, file must exist */
+    /* "r" → read mode, file must exist */
     fp = fopen("nonexistent.txt", "r");
     if (fp == NULL) {
         perror("r mode failed (expected)");
     }
 
-    /* "r+" â€” read and write, no truncate */
+    /* "r+" → read and write, no truncate */
     fp = fopen("test_rplus.txt", "w+");
     if (fp) {
         fprintf(fp, "Hello ");
@@ -243,7 +243,7 @@ int main(void)
         fclose(fp);
     }
 
-    /* "wb" â€” binary write */
+    /* "wb" → binary write */
     fp = fopen("test.bin", "wb");
     if (fp) {
         int data = 12345;
@@ -255,14 +255,14 @@ int main(void)
 }
 ```
 
-### Dry Run Trace â€” fopen("data.txt", "r+")
+### Dry Run Trace → fopen("data.txt", "r+")
 
 | Step | Code | File on Disk | fp | Position |
 |------|------|-------------|----|----------|
 | 1 | `fopen("data.txt", "r+")` | data.txt exists, 100 bytes | FILE* handle | 0 |
-| 2 | fp == NULL? | â€” | NOT NULL | â€” |
+| 2 | fp == NULL? | → | NOT NULL | → |
 | 3 | `fgetc(fp)` | data.txt | same | 1 |
-| 4 | `fclose(fp)` | data.txt | invalidated | â€” |
+| 4 | `fclose(fp)` | data.txt | invalidated | → |
 
 ### Complexity Analysis
 
@@ -293,7 +293,7 @@ int main(void)
 
 ---
 
-## 12.3 Closing a File â€” fclose
+## 12.3 Closing a File → fclose
 
 ### Prototype
 
@@ -319,7 +319,7 @@ Closing a file is like **returning a library book**. If you don't return it, the
 
 1. Ensure all pending writes are done (fclose does this automatically)
 2. Call `fclose(fp)`
-3. **Do NOT** use `fp` after fclose â€” it is a dangling pointer
+3. **Do NOT** use `fp` after fclose → it is a dangling pointer
 
 ### Pseudocode
 
@@ -354,7 +354,7 @@ int main(void)
         perror("fclose failed");
         return 1;
     }
-    /* fp is now a dangling pointer â€” do not use it */
+    /* fp is now a dangling pointer → do not use it */
     return 0;
 }
 ```
@@ -397,7 +397,7 @@ int main(void)
 
 ## 12.4 Reading from Files
 
-### 12.4.1 Character Reading â€” fgetc
+### 12.4.1 Character Reading → fgetc
 
 ### Prototype
 
@@ -418,7 +418,7 @@ Reading a file character by character is like **reading a scroll one letter at a
 ### Steps
 
 1. Call `int c = fgetc(fp);`
-2. Check if `c == EOF` â€” if so, use `feof(fp)` or `ferror(fp)` to determine why
+2. Check if `c == EOF` → if so, use `feof(fp)` or `ferror(fp)` to determine why
 3. Otherwise, `c` holds the character read
 4. Repeat until EOF
 
@@ -475,7 +475,7 @@ byte  2: 'C' (0x43)
 byte 25: 'Z' (0x5A)
 ```
 
-### Dry Run Trace â€” fgetc Loop on "ABC"
+### Dry Run Trace → fgetc Loop on "ABC"
 
 Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 
@@ -485,7 +485,7 @@ Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 | 2 | reads byte 1 | 'B' (66) | 2 | Yes |
 | 3 | reads byte 2 | 'C' (67) | 3 | Yes |
 | 4 | reads byte 3 | '\n' (10) | 4 | Yes |
-| 5 | reads byte 4 | EOF (-1) | 4 (unchanged) | No â€” loop exits |
+| 5 | reads byte 4 | EOF (-1) | 4 (unchanged) | No → loop exits |
 
 ### Complexity Analysis
 
@@ -514,7 +514,7 @@ Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 
 ---
 
-### 12.4.2 Line Reading â€” fgets
+### 12.4.2 Line Reading → fgets
 
 ### Prototype
 
@@ -526,7 +526,7 @@ Returns `s` on success, `NULL` on EOF or error.
 
 ### Real-World Analogy
 
-Reading a line with `fgets` is like **tearing off a receipt** from a machine: you get everything up to the newline (the tear point), but no more than the paper width (buffer size). If the receipt is too long, you only get the first `size-1` characters â€” the rest stays in the machine for the next read.
+Reading a line with `fgets` is like **tearing off a receipt** from a machine: you get everything up to the newline (the tear point), but no more than the paper width (buffer size). If the receipt is too long, you only get the first `size-1` characters → the rest stays in the machine for the next read.
 
 ### Key Behaviors
 
@@ -594,7 +594,7 @@ Line 2 (15 chars): "Line 2: World"
 Line 3 (21 chars): "Line 3: C Programming"
 ```
 
-### Dry Run Trace â€” fgets with buffer size 8
+### Dry Run Trace → fgets with buffer size 8
 
 File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 
@@ -604,7 +604,7 @@ File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 | 2 | `"orld!\n"` | non-NULL | 14 | Newline encountered, included |
 | 3 | `"Next Li"` | non-NULL | 21 | Buffer filled |
 | 4 | `"ne\n"` | non-NULL | 25 | Final line with newline |
-| 5 | (unchanged) | NULL | 25 | EOF â€” returns NULL |
+| 5 | (unchanged) | NULL | 25 | EOF → returns NULL |
 
 ### Complexity Analysis
 
@@ -634,7 +634,7 @@ File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 
 ---
 
-### 12.4.3 Formatted Reading â€” fscanf
+### 12.4.3 Formatted Reading → fscanf
 
 ### Prototype
 
@@ -651,7 +651,7 @@ Returns number of input items successfully matched and assigned, or EOF on input
 ### Steps
 
 1. Call `fscanf(fp, format, &var1, &var2, ...)`
-2. Check the return value â€” compare against expected number of items
+2. Check the return value → compare against expected number of items
 3. If return < expected, check `feof` or `ferror`
 
 ### Pseudocode
@@ -712,15 +712,15 @@ Record 3: 103, Carol, 3.90
 Total: 3 records read successfully
 ```
 
-### Dry Run Trace â€” fscanf Malformed Input
+### Dry Run Trace → fscanf Malformed Input
 
 File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 
 | Iteration | Format | Reads | Return | Position After |
 |-----------|--------|-------|--------|----------------|
 | 1 | `%d %s %f` | id=101, name="Alice", gpa=3.8 | 3 | After "3.8" |
-| 2 | `%d %s %f` | id=102, name="Bob", gpa=â€” (BAD) | 2 | Stuck at "BAD" |
-| 3 | `%d %s %f` | Fails â€” "BAD" doesn't match %d | 0 | Stuck at "BAD" forever |
+| 2 | `%d %s %f` | id=102, name="Bob", gpa=→ (BAD) | 2 | Stuck at "BAD" |
+| 3 | `%d %s %f` | Fails → "BAD" doesn't match %d | 0 | Stuck at "BAD" forever |
 
 **Problem:** `fscanf` consumes no input on match failure, leading to infinite loop. Always check return value and break on unexpected.
 
@@ -746,13 +746,13 @@ File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 |------|----------|
 | Format mismatch mid-record | Returns count of matches so far; stream position at failure point |
 | Leading whitespace | Most specifiers (except %c, %[, %n) skip whitespace automatically |
-| Numeric overflow | Undefined behavior (use `%d` with INT_MAX+1 â†’ UB) |
-| %s overflow (no width) | Buffer overflow â€” CRITICAL: always use `%Ns` with width |
+| Numeric overflow | Undefined behavior (use `%d` with INT_MAX+1 → UB) |
+| %s overflow (no width) | Buffer overflow → CRITICAL: always use `%Ns` with width |
 | EOF mid-record | Returns EOF if no items matched, or count of partially matched items |
 
 ---
 
-### 12.4.4 Binary Reading â€” fread
+### 12.4.4 Binary Reading → fread
 
 ### Prototype
 
@@ -764,7 +764,7 @@ Returns the number of complete elements successfully read (may be less than `cou
 
 ### Real-World Analogy
 
-Reading binary data is like **photocopying pages** from a book: you specify the number of pages (`count`) and the page size (`element_size`), and `fread` copies the exact raw bytes into your memory. No translation, no formatting â€” just raw bits.
+Reading binary data is like **photocopying pages** from a book: you specify the number of pages (`count`) and the page size (`element_size`), and `fread` copies the exact raw bytes into your memory. No translation, no formatting → just raw bits.
 
 ### Steps
 
@@ -838,7 +838,7 @@ Emp 4: Dave ($68000)
 Read 4 employees
 ```
 
-### Dry Run Trace â€” fread with sizeof(Employee) = 40
+### Dry Run Trace → fread with sizeof(Employee) = 40
 
 File: `employees.bin` (160 bytes = 4 Ã— 40)
 
@@ -887,7 +887,7 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 | `fscanf` | Formatted | Whitespace/format | Items matched or EOF | No | Only with width specifier | Structured text parsing |
 | `fread` | Binary blocks | End of file or count | Items read | N/A | Yes (sizeÃ—count) | Binary data, structs |
 
-### Read Functions â€” Complexity Comparison
+### Read Functions → Complexity Comparison
 
 | Function | Time Complexity | Space Complexity | Why |
 |----------|----------------|-----------------|-----|
@@ -898,7 +898,7 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ## 12.5 Writing to Files
 
-### 12.5.1 Character Writing â€” fputc
+### 12.5.1 Character Writing → fputc
 
 ### Prototype
 
@@ -972,7 +972,7 @@ int main(void)
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 ```
 
-### Dry Run Trace â€” fputc Writing "Hi\n"
+### Dry Run Trace → fputc Writing "Hi\n"
 
 File initially empty. Buffer size = 512 (typical default). All writes are buffered initially.
 
@@ -981,7 +981,7 @@ File initially empty. Buffer size = 512 (typical default). All writes are buffer
 | fputc('H', fp) | 'H' | 'H' (72) | Buffer: "H" | Empty (buffered) |
 | fputc('i', fp) | 'i' | 'i' (105) | Buffer: "Hi" | Empty |
 | fputc('\n', fp) | '\n' | '\n' (10) | Buffer: "Hi\n" | Empty |
-| fclose(fp) | â€” | 0 | Flushed | Disk: "Hi\n" |
+| fclose(fp) | → | 0 | Flushed | Disk: "Hi\n" |
 
 ### Complexity Analysis
 
@@ -1004,13 +1004,13 @@ File initially empty. Buffer size = 512 (typical default). All writes are buffer
 |------|----------|
 | Write to read-only file | Returns EOF, ferror set |
 | Disk full | Returns EOF, errno = ENOSPC |
-| fputc(EOF, fp) | UB (EOF = -1, cast to unsigned char â†’ 0xFF, written as byte) |
+| fputc(EOF, fp) | UB (EOF = -1, cast to unsigned char → 0xFF, written as byte) |
 | NULL fp | Undefined behavior |
 | Unbuffered stream | Immediate syscall; performance penalty |
 
 ---
 
-### 12.5.2 String Writing â€” fputs
+### 12.5.2 String Writing → fputs
 
 ### Prototype
 
@@ -1022,7 +1022,7 @@ Writes the string `s` to the file. Does **not** append a newline. Returns non-ne
 
 ### Real-World Analogy
 
-Writing with `fputs` is like **pasting a pre-written paragraph** into a document. The paragraph goes exactly as-is â€” no extra line break, no formatting. You get exactly what you put in.
+Writing with `fputs` is like **pasting a pre-written paragraph** into a document. The paragraph goes exactly as-is → no extra line break, no formatting. You get exactly what you put in.
 
 ### Steps
 
@@ -1116,7 +1116,7 @@ Eggs
 
 ---
 
-### 12.5.3 Formatted Writing â€” fprintf
+### 12.5.3 Formatted Writing → fprintf
 
 ### Prototype
 
@@ -1251,7 +1251,7 @@ ID     Name          Score  Grade
 
 ---
 
-### 12.5.4 Binary Writing â€” fwrite
+### 12.5.4 Binary Writing → fwrite
 
 ### Prototype
 
@@ -1263,7 +1263,7 @@ Writes `count` elements, each `element_size` bytes, from `ptr` to the file. Retu
 
 ### Real-World Analogy
 
-Writing with `fwrite` is like **pouring a mold** of your data structure directly onto the page. Every byte of the struct â€” including padding holes â€” is cast exactly as it exists in memory. What you see in memory is what you get on disk.
+Writing with `fwrite` is like **pouring a mold** of your data structure directly onto the page. Every byte of the struct → including padding holes → is cast exactly as it exists in memory. What you see in memory is what you get on disk.
 
 ### Important: Endianness and Portability
 
@@ -1302,7 +1302,7 @@ END FUNCTION
 #include <stdint.h>   /* for fixed-width types */
 
 typedef struct {
-    uint32_t magic;    /* 4 bytes â€” fixed size */
+    uint32_t magic;    /* 4 bytes → fixed size */
     uint16_t version;  /* 2 bytes */
     uint8_t  flags;    /* 1 byte */
     char     reserved; /* 1 byte padding */
@@ -1360,7 +1360,7 @@ data[2] = 3.0
 data[3] = 4.0
 ```
 
-### Dry Run Trace â€” fwrite Array of 3 Integers
+### Dry Run Trace → fwrite Array of 3 Integers
 
 Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
@@ -1392,7 +1392,7 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 | count = 0 | Returns 0 |
 | Disk full during write | Returns less than count; ferror set |
 | Write NULL ptr | Undefined behavior |
-| Writing struct with pointers | Pointers written as addresses â€” meaningless when reloaded |
+| Writing struct with pointers | Pointers written as addresses → meaningless when reloaded |
 
 ---
 
@@ -1405,7 +1405,7 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 | `fprintf` | Formatted | Manual (\n) | Partial (match format) | Full printf-style | Reports, logs, CSV |
 | `fwrite` | Raw bytes | N/A | No (void*) | None | Binary data, structs |
 
-### Write Functions â€” Complexity Comparison
+### Write Functions → Complexity Comparison
 
 | Function | Time Complexity | Space Complexity | Syscalls (typical) |
 |----------|----------------|-----------------|-------------------|
@@ -1416,7 +1416,7 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 ---
 
-## 12.6 EOF Detection â€” feof
+## 12.6 EOF Detection → feof
 
 ### Prototype
 
@@ -1433,7 +1433,7 @@ Returns non-zero if the end-of-file indicator for the stream is set, 0 otherwise
 ### Critical: feof is NOT a Lookahead
 
 ```c
-/* WRONG â€” don't do this */
+/* WRONG → don't do this */
 FILE *fp = fopen("file.txt", "r");
 while (!feof(fp)) {           /* <--- BUG */
     fgets(buf, sizeof(buf), fp);
@@ -1442,10 +1442,10 @@ while (!feof(fp)) {           /* <--- BUG */
 ```
 
 **Why this is wrong:**
-1. `feof(fp)` is 0 (EOF not set) â€” enters loop
+1. `feof(fp)` is 0 (EOF not set) → enters loop
 2. `fgets` reads the last line successfully, advances position to EOF
 3. `feof(fp)` is still 0 (EOF flag not set until a read **fails**)
-4. `fgets` attempts to read â€” fails (returns NULL), sets EOF flag
+4. `fgets` attempts to read → fails (returns NULL), sets EOF flag
 5. But we already printed the stale buffer!
 
 ### Correct Pattern: Check Return Value
@@ -1528,7 +1528,7 @@ Read: 5
 EOF reached after 5 numbers
 ```
 
-### Dry Run Trace â€” Correct feof Usage
+### Dry Run Trace → Correct feof Usage
 
 File: `"10\n20\n30\n"` (9 bytes)
 
@@ -1538,7 +1538,7 @@ File: `"10\n20\n30\n"` (9 bytes)
 | 2 | 1 | 20 | 0 | 0 | Print "Read: 20" |
 | 3 | 1 | 30 | 0 | 0 | Print "Read: 30" |
 | 4 | EOF (-1) | 30 | 1 | 0 | Exit loop |
-| After | â€” | â€” | 1 | 0 | Print "EOF reached after 3" |
+| After | → | → | 1 | 0 | Print "EOF reached after 3" |
 
 ### Complexity Analysis
 
@@ -1566,7 +1566,7 @@ File: `"10\n20\n30\n"` (9 bytes)
 
 ---
 
-## 12.7 Error Handling â€” ferror, perror, clearerr
+## 12.7 Error Handling → ferror, perror, clearerr
 
 ### Prototypes
 
@@ -1578,7 +1578,7 @@ void perror(const char *s); /* prints "s: system error message" to stderr */
 
 ### Real-World Analogy
 
-**ferror** is like a **"DAMAGED" sticker** on a library book â€” once a page is torn, the sticker stays until a librarian (clearerr) removes it.
+**ferror** is like a **"DAMAGED" sticker** on a library book → once a page is torn, the sticker stays until a librarian (clearerr) removes it.
 
 **perror** is like the librarian **explaining** exactly what went wrong: "The book has a torn page" (errno message).
 
@@ -1614,7 +1614,7 @@ void perror(const char *s); /* prints "s: system error message" to stderr */
                                              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
-### Code Example â€” Comprehensive Error Handling
+### Code Example → Comprehensive Error Handling
 
 ```c
 #include <stdio.h>
@@ -1625,10 +1625,10 @@ int main(void)
 {
     FILE *fp = fopen("config.txt", "r");
     if (fp == NULL) {
-        /* Method 1: perror â€” simple, includes your prefix */
+        /* Method 1: perror → simple, includes your prefix */
         perror("fopen");
 
-        /* Method 2: strerror + errno â€” more control */
+        /* Method 2: strerror + errno → more control */
         fprintf(stderr, "Failed to open: %s (errno=%d)\n",
                 strerror(errno), errno);
 
@@ -1653,16 +1653,16 @@ int main(void)
 }
 ```
 
-### Dry Run Trace â€” File Opens But Read Fails (e.g., USB removed)
+### Dry Run Trace → File Opens But Read Fails (e.g., USB removed)
 
 | Step | Operation | Return | ferror() | errno | Action |
 |------|-----------|--------|----------|-------|--------|
 | 1 | fopen("config.txt", "r") | FILE* | 0 | 0 | OK |
 | 2 | fgets(buf, 256, fp) | NULL | 1 | 5 (EIO) | Device error |
-| 3 | feof(fp) | 0 | 1 | â€” | Not EOF |
-| 4 | ferror(fp) | 1 | 1 | â€” | Error confirmed |
-| 5 | perror("Read") | â€” | 1 | 5 | Prints "Read: Input/output error" |
-| 6 | clearerr(fp) | void | 0 | â€” | Flags cleared, can retry |
+| 3 | feof(fp) | 0 | 1 | → | Not EOF |
+| 4 | ferror(fp) | 1 | 1 | → | Error confirmed |
+| 5 | perror("Read") | → | 1 | 5 | Prints "Read: Input/output error" |
+| 6 | clearerr(fp) | void | 0 | → | Flags cleared, can retry |
 
 ### Complexity Analysis
 
@@ -1686,7 +1686,7 @@ int main(void)
 | Case | Behavior |
 |------|----------|
 | ferror after failed fopen | Undefined (fp is NULL; cannot dereference) |
-| errno after success | errno is not cleared by successful operations â€” always check return first |
+| errno after success | errno is not cleared by successful operations → always check return first |
 | perror with custom message | Prints "custom: actual error\n" to stderr |
 | clearerr on closed file | Undefined behavior |
 | Multiple errors | ferror returns non-zero as long as ANY error flag is set |
@@ -1818,21 +1818,21 @@ Last record: 5, Eve, $5000.00
 Current position: 200 (end of file = 200)
 ```
 
-### Dry Run Trace â€” fseek/ftell on 200-byte File
+### Dry Run Trace → fseek/ftell on 200-byte File
 
 | Call | whence | offset | Position Before | Position After | ftell Returns |
 |------|--------|--------|-----------------|----------------|---------------|
 | fseek(fp, 0, SEEK_SET) | SEEK_SET | 0 | 200 | 0 | 0 |
 | fseek(fp, 80, SEEK_SET) | SEEK_SET | 80 | 0 | 80 | 80 |
-| fread(&r, 40, 1, fp) | â€” | â€” | 80 | 120 | 120 |
+| fread(&r, 40, 1, fp) | → | → | 80 | 120 | 120 |
 | fseek(fp, -40, SEEK_END) | SEEK_END | -40 | 120 | 160 | 160 |
-| ftell(fp) | â€” | â€” | 160 | 160 | 160 |
+| ftell(fp) | → | → | 160 | 160 | 160 |
 
 ### Complexity Analysis
 
 | Operation | Time | Why |
 |-----------|------|-----|
-| fseek (buffered stream) | O(1) typical | Just adjusts the buffer position indicator; may flush if switching readâ†’write |
+| fseek (buffered stream) | O(1) typical | Just adjusts the buffer position indicator; may flush if switching read→write |
 | fseek (unbuffered) | O(1) | Single lseek system call |
 | ftell | O(1) | Returns cached position (adjusted for buffer) |
 | fseek beyond EOF | Implementation-defined | On POSIX, allows creating a sparse file |
@@ -1922,7 +1922,7 @@ int fsetpos(FILE *fp, const fpos_t *pos);
 
 | Limitation of ftell/fseek | Solution with fgetpos/fsetpos |
 |--------------------------|-------------------------------|
-| `long` is 32-bit on many platforms â†’ max 2GB file | `fpos_t` can be 64-bit or larger |
+| `long` is 32-bit on many platforms → max 2GB file | `fpos_t` can be 64-bit or larger |
 | ftell return value cannot distinguish error from position -1 | fgetpos returns 0/-1, stores position in fpos_t |
 | Not all implementations support SEEK_END properly on binary streams | Works reliably on all standard-conforming implementations |
 
@@ -1979,7 +1979,7 @@ Position restored, reading...
 Value: 0
 ```
 
-### Complexity Analysis â€” All Positioning Functions
+### Complexity Analysis → All Positioning Functions
 
 | Function | Time | Space | Notes |
 |----------|------|-------|-------|
@@ -1987,7 +1987,7 @@ Value: 0
 | ftell | O(1) | O(1) | Returns cached value |
 | rewind | O(1) | O(1) | Also clears flags |
 | fgetpos | O(1) | sizeof(fpos_t) | Stores opaque position |
-| fsetpos | O(1) | â€” | Restores from fpos_t |
+| fsetpos | O(1) | → | Restores from fpos_t |
 
 ### Positioning Functions Comparison Table
 
@@ -2006,7 +2006,7 @@ Value: 0
 ### Real-World Analogy
 
 - **Text file** = A handwritten letter. You can read it, it has lines and paragraphs, and it uses special characters (newlines) to separate sections. On Windows, the mailroom converts `\n` (your line break) to `\r\n` (the standard "end of line" for letters).
-- **Binary file** = A computer's raw memory dump. Every byte is pristine and untranslated. There are no "lines" â€” just a sequence of bytes that some program knows how to interpret.
+- **Binary file** = A computer's raw memory dump. Every byte is pristine and untranslated. There are no "lines" → just a sequence of bytes that some program knows how to interpret.
 
 ### Key Differences
 
@@ -2020,7 +2020,7 @@ Value: 0
 | Human-readable | Yes | No |
 | Appropriate for | Source code, text data, config files, HTML | Images, executables, serialized structs, compressed data |
 
-### Text vs Binary â€” Comparison Table
+### Text vs Binary → Comparison Table
 
 | Criterion | Text | Binary |
 |-----------|------|--------|
@@ -2033,7 +2033,7 @@ Value: 0
 | Size overhead | Moderate (formatting characters) | Minimal (raw bytes) |
 | Performance | Slower (conversion, scanning) | Faster (bulk copy) |
 
-### Code Example â€” Demonstrating Text vs Binary on Windows
+### Code Example → Demonstrating Text vs Binary on Windows
 
 ```c
 #include <stdio.h>
@@ -2066,7 +2066,7 @@ int main(void)
     fclose(ft);
 
     printf("Binary size: %ld bytes (no translation)\n", bin_size);
-    printf("Text size:   %ld bytes (LFâ†’CRLF if Windows)\n", txt_size);
+    printf("Text size:   %ld bytes (LF→CRLF if Windows)\n", txt_size);
 
     return 0;
 }
@@ -2075,7 +2075,7 @@ int main(void)
 **Output on Windows:**
 ```
 Binary size: 10 bytes (no translation)
-Text size:   11 bytes (LFâ†’CRLF if Windows)
+Text size:   11 bytes (LF→CRLF if Windows)
 ```
 
 **Output on Linux/macOS:**
@@ -2103,7 +2103,7 @@ Text size:   10 bytes (no translation on Linux)
 
 **Common patterns:**
 ```c
-/* Sequential read â€” works on any stream */
+/* Sequential read → works on any stream */
 char buf[256];
 while (fgets(buf, sizeof(buf), stdin)) {
     process(buf);
@@ -2134,7 +2134,7 @@ fseek(fp, pos, SEEK_SET);
 fprintf(fp, "UPDATED");  /* Overwrite specific bytes */
 ```
 
-### Sequential vs Random Access â€” Comparison Table
+### Sequential vs Random Access → Comparison Table
 
 | Aspect | Sequential | Random |
 |--------|-----------|--------|
@@ -2156,7 +2156,7 @@ fprintf(fp, "UPDATED");  /* Overwrite specific bytes */
 | Buffering | Full buffer used | Buffer invalidated frequently |
 | Disk seek overhead | None (contiguous reads) | Significant (HDD especially) |
 
-### Code Example â€” Sequential vs Random Performance Demo
+### Code Example → Sequential vs Random Performance Demo
 
 ```c
 #include <stdio.h>
@@ -2288,12 +2288,12 @@ Primes from temp file: 2 3 5 7 11 13 17 19
 char *tmpnam(char *s);
 ```
 
-Generates a unique filename. **Warning:** There is a race condition between `tmpnam` returning the name and your program opening the file â€” another process could create a file with that name first (TOCTOU vulnerability).
+Generates a unique filename. **Warning:** There is a race condition between `tmpnam` returning the name and your program opening the file → another process could create a file with that name first (TOCTOU vulnerability).
 
 ### Safer Alternative: mkstemp (POSIX)
 
 ```c
-/* POSIX only â€” not in C standard */
+/* POSIX only → not in C standard */
 char template[] = "/tmp/myapp_XXXXXX";
 int fd = mkstemp(template);
 if (fd == -1) { perror("mkstemp"); return 1; }
@@ -2310,7 +2310,7 @@ remove(template);  /* manual cleanup needed */
 | `tmpfile()` | C89+ | âœ“ | No (temp name) | Safe | Short-lived scratch data |
 | `tmpnam()` | C89+ | âœ— | Yes | UNSAFE (TOCTOU) | **Avoid** |
 | `mkstemp()` | POSIX | âœ— | Yes (template) | Safe | POSIX systems |
-| Manual naming | â€” | âœ— | Yes | Depends on precautions | When you need a named temp file |
+| Manual naming | → | âœ— | Yes | Depends on precautions | When you need a named temp file |
 
 ### Complexity Analysis
 
@@ -2377,7 +2377,7 @@ int main(void)
     printf("Before fclose: data may not be on disk yet\n");
     fclose(fp);
 
-    /* Unbuffered write â€” every write goes to disk immediately */
+    /* Unbuffered write → every write goes to disk immediately */
     fp = fopen("unbuffered.txt", "w");
     setvbuf(fp, NULL, _IONBF, 0);  /* no buffering */
     fprintf(fp, "This is written immediately\n");
@@ -2403,7 +2403,7 @@ int main(void)
 }
 ```
 
-### Dry Run Trace â€” Default Buffered Write (BUFSIZ=4096)
+### Dry Run Trace → Default Buffered Write (BUFSIZ=4096)
 
 File: 100 bytes of output.
 
@@ -2412,9 +2412,9 @@ File: 100 bytes of output.
 | fprintf 20 bytes | 20 | Buffer: [20 bytes] | Empty |
 | fprintf 30 bytes | 50 | Buffer: [50 bytes] | Empty |
 | fprintf 40 bytes | 90 | Buffer: [90 bytes] | Empty |
-| fclose | â€” | Flushed | Disk: [100 bytes] |
+| fclose | → | Flushed | Disk: [100 bytes] |
 
-With unbuffered (`_IONBF`), each write would go to disk immediately â€” 3 syscalls instead of 1.
+With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscalls instead of 1.
 
 ### Buffer Size Trade-off
 
@@ -2451,7 +2451,7 @@ With unbuffered (`_IONBF`), each write would go to disk immediately â€” 3 s
 | fflush then crash | Data in buffer is lost (use unbuffered or fflush frequently) |
 | setbuf(fp, NULL) | Makes stream unbuffered |
 
-### Stream Buffering â€” Mode Comparison Table
+### Stream Buffering → Mode Comparison Table
 
 | Property | `_IOFBF` (Full) | `_IOLBF` (Line) | `_IONBF` (None) |
 |----------|----------------|-----------------|-----------------|
@@ -2466,8 +2466,8 @@ With unbuffered (`_IONBF`), each write would go to disk immediately â€” 3 s
 
 | Function | Header | Mode | Input/Output | Format | Returns | Error Return | Best For |
 |----------|--------|------|-------------|--------|---------|-------------|----------|
-| `fopen` | stdio.h | â€” | â€” | â€” | `FILE *` | NULL | Opening files |
-| `fclose` | stdio.h | â€” | â€” | â€” | int | EOF | Closing files |
+| `fopen` | stdio.h | → | → | → | `FILE *` | NULL | Opening files |
+| `fclose` | stdio.h | → | → | → | int | EOF | Closing files |
 | `fgetc` | stdio.h | Text/Bin | Input | Character | int | EOF | Char-by-char read |
 | `fputc` | stdio.h | Text/Bin | Output | Character | int | EOF | Char-by-char write |
 | `fgets` | stdio.h | Text | Input | Line (string) | char * | NULL | Line-oriented read |
@@ -2476,25 +2476,25 @@ With unbuffered (`_IONBF`), each write would go to disk immediately â€” 3 s
 | `fscanf` | stdio.h | Text | Input | Formatted | int | EOF | Parsed read |
 | `fread` | stdio.h | Binary | Input | Raw bytes | size_t | < count | Binary bulk read |
 | `fwrite` | stdio.h | Binary | Output | Raw bytes | size_t | < count | Binary bulk write |
-| `fseek` | stdio.h | â€” | â€” | Offset + whence | int | -1 | Random access |
-| `ftell` | stdio.h | â€” | â€” | â€” | long | -1L | Get position |
-| `rewind` | stdio.h | â€” | â€” | â€” | void | â€” | Reset to start |
-| `fgetpos` | stdio.h | â€” | â€” | â€” | int | non-zero | Save position (large) |
-| `fsetpos` | stdio.h | â€” | â€” | fpos_t* | int | non-zero | Restore position |
-| `feof` | stdio.h | â€” | â€” | â€” | int | N/A | EOF test |
-| `ferror` | stdio.h | â€” | â€” | â€” | int | N/A | Error test |
-| `clearerr` | stdio.h | â€” | â€” | â€” | void | â€” | Clear flags |
-| `perror` | stdio.h | â€” | â€” | String | void | â€” | Print error message |
-| `tmpfile` | stdio.h | w+b | â€” | â€” | FILE * | NULL | Temp auto-delete |
-| `remove` | stdio.h | â€” | â€” | Filename | int | non-zero | Delete file |
-| `rename` | stdio.h | â€” | â€” | Old/new name | int | non-zero | Rename file |
-| `fflush` | stdio.h | â€” | â€” | â€” | int | EOF | Force buffer flush |
-| `setvbuf` | stdio.h | â€” | â€” | Mode + size | int | non-zero | Set buffering |
-| `setbuf` | stdio.h | â€” | â€” | Buffer | void | â€” | Set/remove buffer |
+| `fseek` | stdio.h | → | → | Offset + whence | int | -1 | Random access |
+| `ftell` | stdio.h | → | → | → | long | -1L | Get position |
+| `rewind` | stdio.h | → | → | → | void | → | Reset to start |
+| `fgetpos` | stdio.h | → | → | → | int | non-zero | Save position (large) |
+| `fsetpos` | stdio.h | → | → | fpos_t* | int | non-zero | Restore position |
+| `feof` | stdio.h | → | → | → | int | N/A | EOF test |
+| `ferror` | stdio.h | → | → | → | int | N/A | Error test |
+| `clearerr` | stdio.h | → | → | → | void | → | Clear flags |
+| `perror` | stdio.h | → | → | String | void | → | Print error message |
+| `tmpfile` | stdio.h | w+b | → | → | FILE * | NULL | Temp auto-delete |
+| `remove` | stdio.h | → | → | Filename | int | non-zero | Delete file |
+| `rename` | stdio.h | → | → | Old/new name | int | non-zero | Rename file |
+| `fflush` | stdio.h | → | → | → | int | EOF | Force buffer flush |
+| `setvbuf` | stdio.h | → | → | Mode + size | int | non-zero | Set buffering |
+| `setbuf` | stdio.h | → | → | Buffer | void | → | Set/remove buffer |
 
 ---
 
-## Quick Reference â€” Common File Operations
+## Quick Reference → Common File Operations
 
 | Task | Code |
 |------|------|
@@ -2579,7 +2579,7 @@ printf("feof: %d\n", feof(fp));  /* 0 */
 To distinguish EOF (-1, typically) from the 256 possible byte values (0â€“255). If `fgetc` returned `unsigned char`, it could never signal EOF. If it returned `char`, byte 0xFF (255) would be indistinguishable from -1 (EOF) on platforms where char is signed.
 
 ```c
-/* WRONG â€” loses ability to distinguish EOF from 0xFF */
+/* WRONG → loses ability to distinguish EOF from 0xFF */
 char c;
 while ((c = fgetc(fp)) != EOF) { /* never true if byte == 0xFF */ }
 
@@ -2590,17 +2590,17 @@ while ((c = fgetc(fp)) != EOF) { /* works for all 256 byte values */ }
 
 ### Q4: What happens in binary mode vs text mode on Windows?
 
-- **Text mode**: `\n` (LF, 0x0A) written â†’ translated to `\r\n` (CRLF, 0x0D 0x0A). On read, `\r\n` â†’ `\n`. Also, byte 0x1A (Ctrl+Z) is treated as EOF on read.
+- **Text mode**: `\n` (LF, 0x0A) written → translated to `\r\n` (CRLF, 0x0D 0x0A). On read, `\r\n` → `\n`. Also, byte 0x1A (Ctrl+Z) is treated as EOF on read.
 - **Binary mode**: No translation. All bytes read/written verbatim.
 - **Linux/macOS**: No difference between text and binary modes.
 
 ```c
-/* Windows text mode â€” file size grows */
+/* Windows text mode → file size grows */
 FILE *fp = fopen("text.txt", "w");
 fputc('\n', fp);  /* writes 2 bytes: 0x0D 0x0A */
 fclose(fp);
 
-/* Windows binary mode â€” file size exact */
+/* Windows binary mode → file size exact */
 fp = fopen("binary.bin", "wb");
 fputc('\n', fp);  /* writes 1 byte: 0x0A */
 fclose(fp);
@@ -2608,9 +2608,9 @@ fclose(fp);
 
 ### Q5: What are the limitations of fseek and ftell?
 
-1. **32-bit long**: On 32-bit systems, `long` is 4 bytes â†’ max file size of 2GB. Use `fgetpos`/`fsetpos` for larger files.
+1. **32-bit long**: On 32-bit systems, `long` is 4 bytes → max file size of 2GB. Use `fgetpos`/`fsetpos` for larger files.
 2. **Text streams**: `ftell` returns values that may not correspond to byte offsets due to `\r\n` translation. Only valid for seeking with `fseek(fp, offset, SEEK_SET)` where `offset` came from a previous `ftell`.
-3. **Non-seekable streams**: Pipes, sockets, and stdin are not seekable â€” `fseek` returns -1.
+3. **Non-seekable streams**: Pipes, sockets, and stdin are not seekable → `fseek` returns -1.
 4. **Binary streams with trailing `\r\n` on Windows**: `ftell` may give positions that don't match byte offsets for `fseek`.
 
 ### Q6: Should I use feof in loop conditions?
@@ -3131,14 +3131,14 @@ int main(int argc, char *argv[])
 ### Key Rules
 
 1. Always check `fopen` return value for NULL
-2. Never use `feof` as a loop condition â€” check the read function's return value
+2. Never use `feof` as a loop condition → check the read function's return value
 3. Always close files with `fclose`
 4. Use binary mode (`"rb"`, `"wb"`) for non-text data, especially on Windows
 5. Use `fgets` instead of `fscanf` for robust line parsing
 6. Specify maximum width with `fscanf` `%s` to prevent buffer overflow
 7. Call `fflush` or `fseek` when switching between read and write on `r+`/`w+`
-8. `stderr` is unbuffered â€” use it for error messages
-9. `fgetc` returns `int`, not `char` â€” store in `int` variable
+8. `stderr` is unbuffered → use it for error messages
+9. `fgetc` returns `int`, not `char` → store in `int` variable
 10. Binary data written with `fwrite` may not be portable across platforms
 
 ---

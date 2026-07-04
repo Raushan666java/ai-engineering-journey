@@ -1,6 +1,6 @@
 # Chapter 1: Introduction to Computer Networks
 
-> **Prerequisites:** None | **Next:** [Chapter 2: Physical Layer](./02-physical-layer.md) â€” From network models to transmission media
+> **Prerequisites:** None | **Next:** [Chapter 2: Physical Layer](./02-physical-layer.md) → From network models to transmission media
 
 ## Learning Objectives
 
@@ -20,8 +20,8 @@
 | Protocol Layering | Layers provide services to the layer above using protocols at the same layer | Encapsulation (adding headers at each layer) is the core mechanism of layered communication |
 | OSI Model | 7-layer conceptual model: Physical through Application | Useful as pedagogical framework; TCP/IP is the deployed reality |
 | TCP/IP Model | 4-layer model: Link, Internet, Transport, Application | The architecture of the actual Internet; minimalist and implementation-driven |
-| Encapsulation | Each layer adds its header to the payload before passing down | Trace headers to debug network issues â€” look at the right layer for the right problem |
-| Network Topologies | Bus, star, ring, mesh, tree, hybrid â€” each with trade-offs in cost, reliability, scalability | Star is dominant in LANs; mesh in WAN backbones for fault tolerance |
+| Encapsulation | Each layer adds its header to the payload before passing down | Trace headers to debug network issues → look at the right layer for the right problem |
+| Network Topologies | Bus, star, ring, mesh, tree, hybrid → each with trade-offs in cost, reliability, scalability | Star is dominant in LANs; mesh in WAN backbones for fault tolerance |
 | Standardization | IETF, IEEE, ITU-T, ISO develop open standards | RFCs are the definitive specification for Internet protocols |
 
 ### Chapter Roadmap
@@ -52,7 +52,7 @@ flowchart LR
 A **computer network** is an interconnected collection of autonomous computers that exchange data and share resources. Two computers are said to be *interconnected* if they can exchange information. The connection can be via copper wire, fiber optic cable, radio waves, or satellite links.
 
 **Key characteristics:**
-- **Autonomous:** Each device can operate independently â€” no device has absolute control over another.
+- **Autonomous:** Each device can operate independently → no device has absolute control over another.
 - **Interconnected:** Physical or wireless medium exists for data transfer.
 - **Shared resources:** Printers, files, storage, processing power, and bandwidth.
 - **Rules (protocols):** Agreed-upon formats and procedures govern communication.
@@ -70,8 +70,8 @@ A **computer network** is an interconnected collection of autonomous computers t
 | Physical layer | Truck, airplane, or bicycle moving the letter |
 | Protocol | Rule: envelope must have stamp, address format |
 | Error detection | Return-to-sender if address is invalid |
-| Connection-oriented (TCP) | Registered mail â€” tracking, confirmation, retransmission if lost |
-| Connectionless (UDP) | Regular postcard â€” no tracking, no guarantee |
+| Connection-oriented (TCP) | Registered mail → tracking, confirmation, retransmission if lost |
+| Connectionless (UDP) | Regular postcard → no tracking, no guarantee |
 
 Just as the postal system hides the complexity of transportation (you don't need to know how your letter moves between cities), network layers hide the complexity of data transmission.
 
@@ -236,9 +236,9 @@ if __name__ == "__main__":
 ```
 
 **Complexity analysis:**
-- **Time complexity (per hop):** O(1) â€” constant-time enqueue/dequeue and forwarding.
-- **Time complexity (end-to-end):** O(N) where N = number of hops â€” each intermediate node processes once.
-- **Space complexity:** O(B) where B = buffer size â€” packets wait in queue until processed.
+- **Time complexity (per hop):** O(1) → constant-time enqueue/dequeue and forwarding.
+- **Time complexity (end-to-end):** O(N) where N = number of hops → each intermediate node processes once.
+- **Space complexity:** O(B) where B = buffer size → packets wait in queue until processed.
 - **Why O(N) for end-to-end?** Each hop processing time is constant, but the number of hops scales linearly with network path length. In the worst case, a packet traverses N routers between source and destination.
 
 ### Advantages of Computer Networks
@@ -318,15 +318,15 @@ Networks are classified by geographical span, transmission technology, and switc
 - **Propagation delay:** 10â€“200 ms (cross-continent)
 - **Topology:** Mesh (routers interconnected for redundancy)
 - **Ownership:** Multiple organizations, telecom carriers
-- **Example:** The Internet itself â€” the largest WAN in existence
+- **Example:** The Internet itself → the largest WAN in existence
 
 ### Real-World Analogy: Transportation Network
 
 | Network Scale | Transportation Equivalent |
 |:-------------|:-------------------------|
 | PAN | Person walking between two rooms in the same house |
-| LAN | Cars within a neighborhood â€” local streets |
-| MAN | City bus system â€” covers the metro area |
+| LAN | Cars within a neighborhood → local streets |
+| MAN | City bus system → covers the metro area |
 | WAN | Interstate highway system connecting cities nationwide |
 | Internet | Global airline network connecting every country |
 
@@ -482,8 +482,8 @@ if __name__ == "__main__":
 ```
 
 **Complexity analysis of simulation:**
-- **Time per message:** O(1) â€” constant arithmetic for transfer time calculation.
-- **Space:** O(1) â€” no additional memory scales with input.
+- **Time per message:** O(1) → constant arithmetic for transfer time calculation.
+- **Space:** O(1) → no additional memory scales with input.
 - **Why constant?** The simulation is analytical, not packet-level. We compute theoretical transfer time from bandwidth, latency, and message size using a closed-form formula.
 
 ### Edge Cases for Network Types
@@ -515,15 +515,15 @@ A **network topology** describes the physical or logical arrangement of links an
 All nodes connect to a single shared cable (the *bus* / *backbone*). Only one node can transmit at a time; collisions occur when two transmit simultaneously.
 
 **Advantages:**
-- Simple to install â€” single cable runs past all nodes
-- Low cable cost â€” N nodes need N+1 connections
-- Easy to extend â€” tap into the backbone
+- Simple to install → single cable runs past all nodes
+- Low cable cost → N nodes need N+1 connections
+- Easy to extend → tap into the backbone
 
 **Disadvantages:**
-- Single point of failure â€” backbone break brings down entire network
-- Limited length â€” signal degrades after ~500 m (10Base2)
-- Performance collapses under load â€” collisions increase exponentially
-- Troubleshooting is difficult â€” fault isolation requires checking the entire cable
+- Single point of failure → backbone break brings down entire network
+- Limited length → signal degrades after ~500 m (10Base2)
+- Performance collapses under load → collisions increase exponentially
+- Troubleshooting is difficult → fault isolation requires checking the entire cable
 
 **Data transmission steps (numbered):**
 1. Node A has data to send; it listens for carrier signal on the bus.
@@ -533,7 +533,7 @@ All nodes connect to a single shared cable (the *bus* / *backbone*). Only one no
 5. If two nodes transmit simultaneously, a collision occurs.
 6. Nodes detect collision, emit jam signal, wait random backoff time (CSMA/CD), retry.
 
-**Trace table â€” Bus transmission (Node A â†’ Node C):**
+**Trace table → Bus transmission (Node A → Node C):**
 
 | Time | Event | Bus State | Nodes Sensing |
 |------|-------|-----------|---------------|
@@ -549,18 +549,18 @@ All nodes connect to a single shared cable (the *bus* / *backbone*). Only one no
 All nodes connect to a central device (switch or hub). The central device manages all communication.
 
 **Advantages:**
-- Easy to install and manage â€” cables run point-to-point
-- Fault isolation â€” one broken cable affects only one node
-- Scalable â€” add nodes by connecting to the central device
-- High performance â€” switches give each node dedicated bandwidth
-- Centralized monitoring â€” all traffic visible at the switch
+- Easy to install and manage → cables run point-to-point
+- Fault isolation → one broken cable affects only one node
+- Scalable → add nodes by connecting to the central device
+- High performance → switches give each node dedicated bandwidth
+- Centralized monitoring → all traffic visible at the switch
 
 **Disadvantages:**
-- Central point of failure â€” switch failure disconnects all nodes
-- Higher cable cost â€” each node needs its own cable run
-- Switch port limit â€” maximum nodes limited by port count (expandable via stacking)
+- Central point of failure → switch failure disconnects all nodes
+- Higher cable cost → each node needs its own cable run
+- Switch port limit → maximum nodes limited by port count (expandable via stacking)
 
-**Data transmission steps (numbered) â€” Star with switch:**
+**Data transmission steps (numbered) → Star with switch:**
 1. Node A sends a frame to the switch addressed to Node C.
 2. Switch reads the destination MAC address from the frame header.
 3. Switch looks up MAC address in its forwarding table (CAM table).
@@ -568,27 +568,27 @@ All nodes connect to a central device (switch or hub). The central device manage
 5. If not found, switch *floods* the frame to all ports (except source).
 6. Node C receives the frame; other ports are unaffected.
 
-**Trace table â€” Star transmission with MAC learning:**
+**Trace table → Star transmission with MAC learning:**
 
 | Time | Event | Switch CAM Table | Ports Used |
 |------|-------|-----------------|------------|
-| T0 | Switch powers on | empty | â€” |
-| T1 | Node A sends frame to switch | MAC_A â†’ Port 1 (learned) | Port 1 receives |
-| T2 | Switch checks CAM for Node C | MAC_A â†’ Port 1 | Not found (flood) |
-| T3 | Switch floods frame to Ports 2,3,4 | MAC_A â†’ Port 1 | Ports 2,3,4 transmit |
-| T4 | Node C replies to Node A via switch | MAC_A â†’ Port 1, MAC_C â†’ Port 3 (learned) | Port 3 receives |
-| T5 | Switch looks up MAC_A â†’ found at Port 1 | MAC_A â†’ Port 1, MAC_C â†’ Port 3 | Port 1 only (unicast) |
-| T6 | Node A receives reply | MAC_A â†’ Port 1, MAC_C â†’ Port 3 | Port 1 |
+| T0 | Switch powers on | empty | → |
+| T1 | Node A sends frame to switch | MAC_A → Port 1 (learned) | Port 1 receives |
+| T2 | Switch checks CAM for Node C | MAC_A → Port 1 | Not found (flood) |
+| T3 | Switch floods frame to Ports 2,3,4 | MAC_A → Port 1 | Ports 2,3,4 transmit |
+| T4 | Node C replies to Node A via switch | MAC_A → Port 1, MAC_C → Port 3 (learned) | Port 3 receives |
+| T5 | Switch looks up MAC_A → found at Port 1 | MAC_A → Port 1, MAC_C → Port 3 | Port 1 only (unicast) |
+| T6 | Node A receives reply | MAC_A → Port 1, MAC_C → Port 3 | Port 1 |
 
 ### 1.3.3 Ring Topology
 
 Each node connects to exactly two neighbors, forming a closed loop. Data travels in one direction (unidirectional ring) or both (bidirectional ring). Token Ring (IEEE 802.5) and Fiber Distributed Data Interface (FDDI) use ring topology.
 
 **Advantages:**
-- Ordered access â€” no collisions (token-passing)
-- Predictable performance â€” each node gets deterministic access
+- Ordered access → no collisions (token-passing)
+- Predictable performance → each node gets deterministic access
 - Handles heavy load better than bus
-- Simple routing â€” data flows in fixed direction
+- Simple routing → data flows in fixed direction
 
 **Disadvantages:**
 - Single node failure breaks the ring (unless dual-ring)
@@ -596,39 +596,39 @@ Each node connects to exactly two neighbors, forming a closed loop. Data travels
 - Latency grows with number of nodes
 - Troubleshooting requires checking each node
 
-**Data transmission steps â€” Token Ring:**
+**Data transmission steps → Token Ring:**
 1. A special frame called a *token* circulates the ring.
 2. Node C, wanting to transmit, seizes the token when it arrives.
 3. Node C changes the token to a data frame, adds destination A.
-4. Frame circulates: C â†’ D â†’ A.
+4. Frame circulates: C → D → A.
 5. Node A copies the frame, sets the *acknowledgment* bit.
 6. Frame continues around back to C. C examines acknowledgment bit.
 7. C releases a new token, removing its data frame.
 
-**Trace table â€” Token Ring (C â†’ A):**
+**Trace table → Token Ring (C → A):**
 
 | Time | Event | Ring Position | Token/Data |
 |------|-------|---------------|------------|
 | T0 | Token circulating | Reaches C | FREE |
-| T1 | C seizes token, sends data to A | C â†’ D | DATA (Câ†’A) |
-| T2 | D receives, forwards | D â†’ A | DATA (Câ†’A) |
-| T3 | A copies data, sets ACK bit, forwards | A â†’ B | DATA (ACK) |
-| T4 | B receives, forwards | B â†’ C | DATA (ACK) |
-| T5 | C sees ACK, removes frame, releases new token | C â†’ D | FREE |
-| T6 | Token passes to D | D â†’ A | FREE |
+| T1 | C seizes token, sends data to A | C → D | DATA (C→A) |
+| T2 | D receives, forwards | D → A | DATA (C→A) |
+| T3 | A copies data, sets ACK bit, forwards | A → B | DATA (ACK) |
+| T4 | B receives, forwards | B → C | DATA (ACK) |
+| T5 | C sees ACK, removes frame, releases new token | C → D | FREE |
+| T6 | Token passes to D | D → A | FREE |
 
 ### 1.3.4 Mesh Topology
 
 Every node has a dedicated point-to-point link to every other node. Full mesh (every node to every other) or partial mesh (selective connections).
 
 **Advantages:**
-- Maximum reliability â€” redundant paths; single link failure has no effect
-- No traffic contention â€” each link carries only one conversation
-- Privacy â€” data travels on dedicated links, not broadcast
-- Fault tolerance â€” routing protocols automatically reroute around failures
+- Maximum reliability → redundant paths; single link failure has no effect
+- No traffic contention → each link carries only one conversation
+- Privacy → data travels on dedicated links, not broadcast
+- Fault tolerance → routing protocols automatically reroute around failures
 
 **Disadvantages:**
-- Extremely high cabling cost â€” N nodes need NÃ—(Nâˆ’1)/2 links
+- Extremely high cabling cost → N nodes need NÃ—(Nâˆ’1)/2 links
 - Complex installation and management
 - Each node needs Nâˆ’1 I/O ports
 - Not practical beyond ~8â€“10 nodes for full mesh
@@ -651,32 +651,32 @@ Every node has a dedicated point-to-point link to every other node. Full mesh (e
 A hierarchical structure combining multiple star topologies connected to a central root bus. Common in large enterprise networks (spanning tree protocol organizes Ethernet into a tree).
 
 **Advantages:**
-- Scalable â€” add leaf nodes without affecting upper levels
-- Hierarchical management â€” each branch can be administered separately
+- Scalable → add leaf nodes without affecting upper levels
+- Hierarchical management → each branch can be administered separately
 - Point-to-point wiring for individual segments
-- Easy to extend â€” new branches attach to existing backbone
+- Easy to extend → new branches attach to existing backbone
 
 **Disadvantages:**
 - Root failure brings down entire network
 - Heavier traffic at higher levels (root bottleneck)
 - Configuration complexity increases with depth
-- Backbone cable is critical â€” failure splits the tree
+- Backbone cable is critical → failure splits the tree
 
-**Data transmission steps â€” Tree:**
+**Data transmission steps → Tree:**
 1. Node in Leaf-1A sends data to Node in Leaf-2B.
-2. Frame travels Leaf-1A â†’ Branch-1 Switch â†’ Root Switch.
+2. Frame travels Leaf-1A → Branch-1 Switch → Root Switch.
 3. Root Switch forwards to Branch-2 Switch.
 4. Branch-2 Switch forwards to Leaf-2 Switch.
 5. Leaf-2 Switch delivers to destination node.
 
-**Dry run â€” Tree topology (Leaf-1A â†’ Leaf-2B, 5 KB data):**
+**Dry run → Tree topology (Leaf-1A → Leaf-2B, 5 KB data):**
 
 | Step | Component | Action | Data |
 |------|-----------|--------|------|
 | 1 | Leaf-1A | Encapsulate frame addressed to Leaf-2B | [L2 Hdr | Payload] |
-| 2 | Leaf-1 Switch | Lookup Leaf-2B MAC â†’ forward to Branch-1 | Forwarded to root port |
+| 2 | Leaf-1 Switch | Lookup Leaf-2B MAC → forward to Branch-1 | Forwarded to root port |
 | 3 | Branch-1 Switch | Forward to Root | Upstream |
-| 4 | Root Switch | Lookup â†’ forward to Branch-2 | Downstream |
+| 4 | Root Switch | Lookup → forward to Branch-2 | Downstream |
 | 5 | Branch-2 Switch | Forward to Leaf-2 | Downstream |
 | 6 | Leaf-2 Switch | Deliver to Leaf-2B | Frame received |
 
@@ -685,9 +685,9 @@ A hierarchical structure combining multiple star topologies connected to a centr
 Combination of two or more basic topologies. Example: a star-bus hybrid where several star networks connect via a bus backbone.
 
 **Advantages:**
-- Flexible â€” tailor topology to specific needs
-- Reliable â€” one segment failure doesn't affect others
-- Scalable â€” grow in modular fashion
+- Flexible → tailor topology to specific needs
+- Reliable → one segment failure doesn't affect others
+- Scalable → grow in modular fashion
 - Common in real-world deployments
 
 **Disadvantages:**
@@ -916,7 +916,7 @@ if __name__ == "__main__":
 | **Single node fail** | No impact (nodes passive) | Affects only that node | Breaks ring -> total failure | No impact | No impact |
 | **Link failure** | Backbone cut = total fail | Node cable cut = 1 node | Related node failure | Reroutes via alternate | Branch link = sub-tree fail |
 | **Central device fail** | N/A | Total network down | N/A | N/A | Root switch = total fail |
-| **Cable cut** | Entire segment down | Single node isolated | Ring broken â†’ spanning tree | Reroutes | Sub-tree isolated |
+| **Cable cut** | Entire segment down | Single node isolated | Ring broken → spanning tree | Reroutes | Sub-tree isolated |
 | **Overload** | Collision storm | Switch backpressure | Token hold time exceeded | Localized to link | Root bottleneck |
 
 ### Topology Selection Decision Matrix
@@ -1033,26 +1033,26 @@ procedure client():
 
 **Scenario:** Web browser sends "GET /index.html" to a web server.
 
-**Step 1 â€” Application layer (HTTP):**
+**Step 1 → Application layer (HTTP):**
 - Browser creates an HTTP GET request message.
 - PDU: `[HTTP GET /index.html HTTP/1.1\r\nHost: example.com\r\n\r\n]`
 
-**Step 2 â€” Transport layer (TCP):**
+**Step 2 → Transport layer (TCP):**
 - TCP receives the HTTP message as payload.
 - TCP adds its header containing: source port (49152), destination port (80), sequence number (1000), acknowledgment number (0), checksum.
-- PDU: `[TCP Hdr | HTTP GET ...]` â€” called a **segment**.
+- PDU: `[TCP Hdr | HTTP GET ...]` → called a **segment**.
 
-**Step 3 â€” Network layer (IP):**
+**Step 3 → Network layer (IP):**
 - IP receives the TCP segment as payload.
 - IP adds its header containing: source IP (192.168.1.10), destination IP (93.184.216.34), TTL (64), protocol field (6=TCP).
-- PDU: `[IP Hdr | TCP Hdr | HTTP GET ...]` â€” called a **packet**.
+- PDU: `[IP Hdr | TCP Hdr | HTTP GET ...]` → called a **packet**.
 
-**Step 4 â€” Data Link layer (Ethernet):**
+**Step 4 → Data Link layer (Ethernet):**
 - Ethernet receives the IP packet as payload.
 - Ethernet adds: destination MAC (AA:BB:CC:DD:EE:FF), source MAC (11:22:33:44:55:66), EtherType (0x0800 = IPv4), and a 4-byte CRC trailer.
-- PDU: `[Ethernet Hdr | IP Hdr | TCP Hdr | HTTP GET ... | CRC]` â€” called a **frame**.
+- PDU: `[Ethernet Hdr | IP Hdr | TCP Hdr | HTTP GET ... | CRC]` → called a **frame**.
 
-**Step 5 â€” Physical layer:**
+**Step 5 → Physical layer:**
 - The frame is converted to bits and transmitted over the physical medium (e.g., electrical signals on Cat-6 cable).
 
 ### Dry Run Trace: Full Encapsulation and De-encapsulation
@@ -1080,12 +1080,12 @@ Physical:     10110110 11010101 ...
 Physical:     10110110 11010101 ...
                                  â†‘  â†‘ (NIC reconstructs frame)
 Data Link:    [DstMAC:AA:BB:CC:DD:EE:FF | SrcMAC... | Type:0x0800 | ... | CRC32]
-                â†“  â†“ CRC verified OK, EtherType=0x0800 â†’ pass to IP
+                â†“  â†“ CRC verified OK, EtherType=0x0800 → pass to IP
 Network:      [SrcIP:192.168.1.10 | DstIP:93.184.216.34 | Proto:6 | 
                 SrcPort:49152 | DstPort:80 | Seq:1000 | GET /index.html]
-                â†“  â†“ DstIP matches, Proto=6 â†’ pass to TCP
+                â†“  â†“ DstIP matches, Proto=6 → pass to TCP
 Transport:    [SrcPort:49152 | DstPort:80 | Seq:1000 | GET /index.html]
-                â†“  â†“ Port 80 â†’ deliver to listening web server
+                â†“  â†“ Port 80 → deliver to listening web server
 Application:  [GET /index.html]
 ```
 
@@ -1282,7 +1282,7 @@ if __name__ == "__main__":
 ```
 
 **Complexity analysis of encapsulation:**
-- **Time:** O(L) where L = number of layers â€” constant overhead per layer, each adding O(1) header processing. L is fixed at 5 (application through physical).
+- **Time:** O(L) where L = number of layers → constant overhead per layer, each adding O(1) header processing. L is fixed at 5 (application through physical).
 - **Space:** O(H + D) where H = total header size (~40-60 bytes for TCP/IP/Ethernet) and D = application data size. Headers are constant size per layer.
 - **Why O(L) not O(1)?** Each layer must process (read, modify, prepend) the PDU. While L is a small constant, the *act* of processing at each layer involves separate protocol logic.
 
@@ -1290,30 +1290,30 @@ if __name__ == "__main__":
 
 ## 1.6 The OSI Reference Model
 
-The Open Systems Interconnection (OSI) model, developed by ISO in 1984, partitions network functionality into seven layers. It is a *conceptual* framework â€” the actual Internet uses TCP/IP, not OSI.
+The Open Systems Interconnection (OSI) model, developed by ISO in 1984, partitions network functionality into seven layers. It is a *conceptual* framework → the actual Internet uses TCP/IP, not OSI.
 
 ### Real-World Analogy: International Postal System
 
 | OSI Layer | Postal Equivalent | Operation |
 |-----------|-------------------|-----------|
-| 7 â€” Application | Person writing a letter | Creates content |
-| 6 â€” Presentation | Translator converting language | Encoding, encryption |
-| 5 â€” Session | Choosing mail class (express vs regular) | Dialogue control |
-| 4 â€” Transport | Post office sorting by city | End-to-end delivery |
-| 3 â€” Network | Sorting facility routing by ZIP code | Finding path |
-| 2 â€” Data Link | Mail carrier on local route | Delivery within neighborhood |
-| 1 â€” Physical | Truck, plane moving the letter | Raw transportation |
+| 7 → Application | Person writing a letter | Creates content |
+| 6 → Presentation | Translator converting language | Encoding, encryption |
+| 5 → Session | Choosing mail class (express vs regular) | Dialogue control |
+| 4 → Transport | Post office sorting by city | End-to-end delivery |
+| 3 → Network | Sorting facility routing by ZIP code | Finding path |
+| 2 → Data Link | Mail carrier on local route | Delivery within neighborhood |
+| 1 → Physical | Truck, plane moving the letter | Raw transportation |
 
 ### The Seven Layers in Detail
 
-**Layer 1 â€” Physical Layer**
+**Layer 1 → Physical Layer**
 - **Function:** Transmits raw bits over a communication channel.
 - **Concerns:** Voltage levels, timing of voltage changes, data rates, maximum transmission distances, physical connectors (RJ-45, LC fiber connector).
 - **Hardware:** Repeaters, hubs, modems, network interface cards (NIC), transceivers.
 - **Standards:** RS-232, V.35, 1000BASE-T, 10GBASE-SR.
 - **Data unit:** Bits.
 
-**Layer 2 â€” Data Link Layer**
+**Layer 2 → Data Link Layer**
 - **Function:** Reliable transmission of frames between two directly connected nodes. Detects and optionally corrects physical-layer errors.
 - **Sub-layers:** LLC (Logical Link Control) + MAC (Media Access Control).
 - **Concerns:** Framing (adding start/end markers), physical addressing (MAC addresses), error detection (CRC), flow control, medium access (CSMA/CD for Ethernet).
@@ -1321,32 +1321,32 @@ The Open Systems Interconnection (OSI) model, developed by ISO in 1984, partitio
 - **Standards:** IEEE 802.3 (Ethernet), 802.11 (WiFi), 802.15 (Bluetooth), PPP.
 - **Data unit:** Frame.
 
-**Layer 3 â€” Network Layer**
+**Layer 3 → Network Layer**
 - **Function:** Routes packets from source to destination across multiple networks. Handles logical addressing, fragmentation, and congestion control.
 - **Concerns:** Routing algorithms (OSPF, BGP), logical addresses (IP addresses), packet fragmentation/reassembly, TTL, quality of service.
 - **Hardware:** Routers, Layer 3 switches.
 - **Standards:** IPv4, IPv6, ICMP, IPsec, ARP.
 - **Data unit:** Packet.
 
-**Layer 4 â€” Transport Layer**
+**Layer 4 → Transport Layer**
 - **Function:** End-to-end delivery of data between processes on different machines. Provides reliable or unreliable service.
 - **Concerns:** Segmentation/reassembly, multiplexing/demultiplexing (port numbers), connection management, flow control (sliding window), error recovery (retransmission).
 - **Key protocols:** TCP (reliable, connection-oriented), UDP (unreliable, connectionless), SCTP.
 - **Data unit:** Segment (TCP), Datagram (UDP).
 
-**Layer 5 â€” Session Layer**
+**Layer 5 → Session Layer**
 - **Function:** Manages sessions (dialogues) between applications. Provides synchronization checkpoints, graceful close, and activity management.
 - **Concerns:** Session establishment, maintenance, and termination; dialog control (half-duplex vs full-duplex); checkpoint insertion for recovery.
 - **Examples:** NetBIOS, RPC (Remote Procedure Call), PPTP.
 - **Data unit:** Message.
 
-**Layer 6 â€” Presentation Layer**
+**Layer 6 → Presentation Layer**
 - **Function:** Translates between application data format and network format. Handles data encoding, encryption, and compression.
-- **Concerns:** Character encoding (ASCII vs EBCDIC vs UTF-8), data compression (zip), encryption (TLS handshake â€” though TLS lives at the session/presentation boundary in practice).
+- **Concerns:** Character encoding (ASCII vs EBCDIC vs UTF-8), data compression (zip), encryption (TLS handshake → though TLS lives at the session/presentation boundary in practice).
 - **Examples:** SSL/TLS (conceptually), MIME encoding, JPEG/MPEG.
 - **Data unit:** Message.
 
-**Layer 7 â€” Application Layer**
+**Layer 7 → Application Layer**
 - **Function:** Provides network services to user applications. This is what the user interacts with.
 - **Concerns:** Resource sharing, remote file access, directory services, email, web browsing.
 - **Protocols:** HTTP, FTP, SMTP, POP3, IMAP, DNS, SSH, Telnet, DHCP, SNMP.
@@ -1354,8 +1354,8 @@ The Open Systems Interconnection (OSI) model, developed by ISO in 1984, partitio
 
 ### Data Flow Through OSI Layers (Numbered Steps)
 
-**Send path (top â†’ bottom):**
-1. Application (L7) creates data â€” e.g., "Hello".
+**Send path (top → bottom):**
+1. Application (L7) creates data → e.g., "Hello".
 2. Presentation (L6) may encrypt or compress the data.
 3. Session (L5) inserts synchronization checkpoints.
 4. Transport (L4) segments data, adds port numbers, sequence numbers.
@@ -1363,7 +1363,7 @@ The Open Systems Interconnection (OSI) model, developed by ISO in 1984, partitio
 6. Data Link (L2) adds MAC addresses, CRC trailer, performs media access.
 7. Physical (L1) converts frame to bits, transmits on wire.
 
-**Receive path (bottom â†’ top):**
+**Receive path (bottom → top):**
 8. Physical (L1) receives bits, reconstructs frame.
 9. Data Link (L2) verifies CRC, checks MAC address, strips header.
 10. Network (L3) checks destination IP, strips header, reassembles if fragmented.
@@ -1539,20 +1539,20 @@ if __name__ == "__main__":
 | Aspect | Analysis | Why |
 |--------|----------|-----|
 | **Conceptual complexity** | O(L) where L=7 | Each layer adds a well-defined abstraction; number of layers is fixed |
-| **Implementation overhead** | High | 7 layers mean 7 headers, 7 processing stages â€” more CPU cycles |
+| **Implementation overhead** | High | 7 layers mean 7 headers, 7 processing stages → more CPU cycles |
 | **Protocol data overhead** | ~50-200 bytes per PDU | Each layer's header adds to total transmission size |
 | **Flexibility** | High | Layers can be independently modified or replaced |
 | **Learning curve** | Moderate-to-steep | 7 layers with abstract boundaries (session/presentation are fuzzy) |
 
-**Why 7 layers?** ISO chose 7 because it was large enough to separate distinct concerns but small enough to be comprehensible. In practice, layers 5 and 6 are rarely implemented as separate entities â€” TCP/IP collapses them into the application layer.
+**Why 7 layers?** ISO chose 7 because it was large enough to separate distinct concerns but small enough to be comprehensible. In practice, layers 5 and 6 are rarely implemented as separate entities → TCP/IP collapses them into the application layer.
 
 ### A&D of the OSI Model
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| Clear separation of concerns | Never fully implemented â€” session/presentation layers unused |
+| Clear separation of concerns | Never fully implemented → session/presentation layers unused |
 | Excellent teaching framework | Standards developed before implementations (design without validation) |
-| Module replacement without cascade | Heavyweight â€” 7 headers add overhead for simple operations |
+| Module replacement without cascade | Heavyweight → 7 headers add overhead for simple operations |
 | International standard (ISO 7498) | TCP/IP won in the marketplace despite being "less elegant" |
 | Each layer can use multiple protocols at adjacent layers | No clear boundary between session and transport in practice |
 
@@ -1560,7 +1560,7 @@ if __name__ == "__main__":
 
 | Edge Case | What Happens | Why It Matters |
 |-----------|-------------|----------------|
-| **Cross-layer optimization** | WiFi uses signal strength (L1) to decide link rate (L2) | Strict layering violated for performance â€” real systems cheat |
+| **Cross-layer optimization** | WiFi uses signal strength (L1) to decide link rate (L2) | Strict layering violated for performance → real systems cheat |
 | **Encryption at multiple layers** | TLS (L5/6) + IPsec (L3) = double encryption | Redundant, wastes CPU, but some orgs do it for compliance |
 | **Layer violation by firewalls** | Firewall inspects L7 (HTTP) even though it's a L3/L4 device | Deep packet inspection breaks strict layering abstraction |
 | **Missing session layer** | HTTP/1.1 uses TCP for session; HTTP/2 has its own multiplexing | Session functionality absorbed into adjacent layers |
@@ -1581,13 +1581,13 @@ The TCP/IP model, developed by the U.S. Department of Defense through ARPANET re
 
 | OSI Model | TCP/IP Model | Notes |
 |-----------|-------------|-------|
-| 7 â€” Application | 4 â€” Application | TCP/IP collapses presentation and session into application |
-| 6 â€” Presentation | 4 â€” Application | Encryption (TLS) is implemented in the application layer |
-| 5 â€” Session | 4 â€” Application | Session state is managed by the application itself |
-| 4 â€” Transport | 3 â€” Transport | Direct mapping: TCP â‰ˆ OSI L4 service |
-| 3 â€” Network | 2 â€” Internet | Direct mapping: IP â‰ˆ OSI L3 service |
-| 2 â€” Data Link | 1 â€” Link | TCP/IP does not distinguish LLC from MAC |
-| 1 â€” Physical | 1 â€” Link | Physical medium details left unspecified |
+| 7 → Application | 4 → Application | TCP/IP collapses presentation and session into application |
+| 6 → Presentation | 4 → Application | Encryption (TLS) is implemented in the application layer |
+| 5 → Session | 4 → Application | Session state is managed by the application itself |
+| 4 → Transport | 3 → Transport | Direct mapping: TCP â‰ˆ OSI L4 service |
+| 3 → Network | 2 → Internet | Direct mapping: IP â‰ˆ OSI L3 service |
+| 2 → Data Link | 1 → Link | TCP/IP does not distinguish LLC from MAC |
+| 1 → Physical | 1 → Link | Physical medium details left unspecified |
 
 ### OSI vs TCP/IP: Detailed Comparison
 
@@ -1595,7 +1595,7 @@ The TCP/IP model, developed by the U.S. Department of Defense through ARPANET re
 |---------|-----------|-------------|
 | **Number of layers** | 7 | 4 |
 | **Year developed** | 1977 (published 1984) | 1974 (DARPA) |
-| **Design approach** | Top-down (standard â†’ implementation) | Bottom-up (implementation â†’ standard) |
+| **Design approach** | Top-down (standard → implementation) | Bottom-up (implementation → standard) |
 | **Key philosophy** | "What layers could be" | "What layers needed to be" |
 | **Session/Presentation** | Separate layers | Absorbed into Application layer |
 | **Physical/Data Link** | Two distinct layers | Collapsed into Link layer |
@@ -1616,7 +1616,7 @@ The TCP/IP model, developed by the U.S. Department of Defense through ARPANET re
 
 ### OSI vs TCP/IP: Quotation
 
-> "The OSI model taught us what layers *could* be; TCP/IP showed us what layers *needed* to be â€” and the gap between them explains why one is a textbook reference and the other runs the Internet."
+> "The OSI model taught us what layers *could* be; TCP/IP showed us what layers *needed* to be → and the gap between them explains why one is a textbook reference and the other runs the Internet."
 
 ### Dry Run: TCP/IP Encapsulation
 
@@ -1643,14 +1643,14 @@ A **protocol** is an agreed-upon format and sequence of messages between two ent
 | Application | FTP | File transfer (control + data connections) | 21 (control), 20 (data) |
 | Application | SMTP | Email transmission (Simple Mail Transfer Protocol) | 25 |
 | Application | POP3 / IMAP | Email retrieval (Post Office Protocol / Internet Message Access Protocol) | 110 / 143 |
-| Application | DNS | Domain name â†’ IP address resolution (Domain Name System) | 53 |
+| Application | DNS | Domain name → IP address resolution (Domain Name System) | 53 |
 | Application | DHCP | Dynamic IP address assignment (Dynamic Host Configuration Protocol) | 67 / 68 |
 | Application | SSH | Secure remote shell access (Secure Shell) | 22 |
 | Transport | TCP | Reliable, connection-oriented, ordered delivery | Variable |
 | Transport | UDP | Unreliable, connectionless, low-overhead | Variable |
-| Internet | IP | Packet forwarding and addressing (Internet Protocol) | â€” |
-| Internet | ICMP | Error reporting and diagnostics (ping, traceroute) | â€” |
-| Internet | ARP | IP â†’ MAC address resolution (Address Resolution Protocol) | â€” |
+| Internet | IP | Packet forwarding and addressing (Internet Protocol) | → |
+| Internet | ICMP | Error reporting and diagnostics (ping, traceroute) | → |
+| Internet | ARP | IP → MAC address resolution (Address Resolution Protocol) | → |
 
 ### 1.8.2 Protocol vs Interface
 
@@ -1668,14 +1668,14 @@ A **protocol** is an agreed-upon format and sequence of messages between two ent
 
 **Demultiplexing** (receiver): The transport layer receives a segment, reads the destination port number, and delivers the data to the correct application.
 
-**Numbered steps â€” Multiplexing at sender:**
+**Numbered steps → Multiplexing at sender:**
 1. Application A (port 49152) sends data via TCP.
 2. Application B (port 49153) sends data via UDP.
 3. Transport layer takes both, encapsulates each with its own port numbers.
 4. Both segments pass to the IP layer.
 5. IP encapsulates both into IP packets and sends them over the same network interface.
 
-**Numbered steps â€” Demultiplexing at receiver:**
+**Numbered steps → Demultiplexing at receiver:**
 1. IP layer receives a packet, strips header, examines protocol field (6=TCP, 17=UDP).
 2. Passes payload to TCP or UDP handler.
 3. TCP/UDP reads destination port number.
@@ -1689,13 +1689,13 @@ Sender (multiplexing):            Receiver (demultiplexing):
        â”‚                                â”‚
        â–¼                                â–²
 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Transport   â”‚  â† demux â†’      â”‚  Transport   â”‚
+â”‚  Transport   â”‚  â† demux →      â”‚  Transport   â”‚
 â”‚  (TCP/UDP)   â”‚                 â”‚  (TCP/UDP)   â”‚
 â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜                 â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
        â”‚                                â”‚
        â–¼                                â–²
 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Internet    â”‚  â† IP â†’         â”‚  Internet    â”‚
+â”‚  Internet    â”‚  â† IP →         â”‚  Internet    â”‚
 â”‚  (IP/ICMP)   â”‚                 â”‚  (IP/ICMP)   â”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
@@ -1739,17 +1739,17 @@ PROCEDURE sendData(data, destIP, protocol):
 
 ### Q1: Why does the OSI model have 7 layers while TCP/IP has only 4?
 
-**Answer:** OSI was designed as a comprehensive framework anticipating every possible networking need. Layers 5 (Session) and 6 (Presentation) were kept separate because ISO believed each function deserved its own abstraction boundary. TCP/IP, developed by practitioners who needed working code *now*, combined layers pragmatically â€” session management is handled by the application, and encryption (TLS) is implemented in the application layer rather than a separate presentation layer. The TCP/IP Link layer combines Physical and Data Link because the boundary between them was irrelevant for early Internet implementers.
+**Answer:** OSI was designed as a comprehensive framework anticipating every possible networking need. Layers 5 (Session) and 6 (Presentation) were kept separate because ISO believed each function deserved its own abstraction boundary. TCP/IP, developed by practitioners who needed working code *now*, combined layers pragmatically → session management is handled by the application, and encryption (TLS) is implemented in the application layer rather than a separate presentation layer. The TCP/IP Link layer combines Physical and Data Link because the boundary between them was irrelevant for early Internet implementers.
 
 ### Q2: Why are network layers useful? Wouldn't direct communication be simpler?
 
-**Answer:** Layers are essential because they manage *complexity*. Direct communication between every pair of network components would create O(NÂ²) protocol implementations â€” every application would need to handle routing, error detection, retransmission, and flow control. With layering, the network layer handles routing for all applications, the transport layer handles reliability for all applications, and applications only worry about their own data. This is the **separation of concerns** principle applied to networking.
+**Answer:** Layers are essential because they manage *complexity*. Direct communication between every pair of network components would create O(NÂ²) protocol implementations → every application would need to handle routing, error detection, retransmission, and flow control. With layering, the network layer handles routing for all applications, the transport layer handles reliability for all applications, and applications only worry about their own data. This is the **separation of concerns** principle applied to networking.
 
 | Without layers | With layers |
 |---------------|-------------|
 | Every app implements retransmission | Transport handles it once for all apps |
 | Every app implements routing | Network handles it once for all apps |
-| Change physical medium â†’ rewrite every app | Change only the data link layer |
+| Change physical medium → rewrite every app | Change only the data link layer |
 
 ### Q3: What is the difference between a protocol and an interface?
 
@@ -1763,7 +1763,7 @@ PROCEDURE sendData(data, destIP, protocol):
 
 ### Q4: Explain multiplexing in computer networks.
 
-**Answer:** **Multiplexing** is combining multiple data streams from different applications into a single channel (protocol). **Demultiplexing** is the reverse â€” separating a single channel into its constituent application streams at the receiver.
+**Answer:** **Multiplexing** is combining multiple data streams from different applications into a single channel (protocol). **Demultiplexing** is the reverse → separating a single channel into its constituent application streams at the receiver.
 
 **Types of multiplexing:**
 1. **Frequency Division (FDM):** Each signal occupies a different frequency band. Used in radio, TV, fiber optics (WDM).
@@ -1776,7 +1776,7 @@ PROCEDURE sendData(data, destIP, protocol):
 
 | Device | Layer | Function | Intelligence |
 |--------|-------|----------|-------------|
-| Hub | Physical (L1) | Repeats electrical signal to all ports | None â€” dumb repeater |
+| Hub | Physical (L1) | Repeats electrical signal to all ports | None → dumb repeater |
 | Switch | Data Link (L2) | Forwards frames based on MAC address | Learns MAC-port mappings |
 | Router | Network (L3) | Forwards packets based on IP address | Runs routing protocols (OSPF, BGP) |
 
@@ -1785,7 +1785,7 @@ PROCEDURE sendData(data, destIP, protocol):
 **Answer:** Fragmentation occurs.
 1. The 1 GB data is segmented by TCP into segments (typically ~1460 bytes each to fit within 1500 byte MTU).
 2. Total segments = 1 GB / 1460 bytes â‰ˆ 731,000 segments.
-3. Each segment gets a TCP header, IP header, and Ethernet header â€” adding ~920 million bytes of header overhead.
+3. Each segment gets a TCP header, IP header, and Ethernet header → adding ~920 million bytes of header overhead.
 4. Each segment is transmitted independently; if any is lost, only that segment is retransmitted (not the entire 1 GB).
 
 ---
@@ -1796,7 +1796,7 @@ PROCEDURE sendData(data, destIP, protocol):
 
 The global Internet is built entirely on the TCP/IP protocol suite:
 - **Web browsing:** HTTP/HTTPS over TCP over IP over Ethernet/WiFi.
-- **Email:** SMTP for sending, POP3/IMAP for receiving â€” all over TCP/IP.
+- **Email:** SMTP for sending, POP3/IMAP for receiving → all over TCP/IP.
 - **DNS:** Uses UDP (sometimes TCP) over IP. Translates domain names to IP addresses.
 - **Video streaming:** Netflix, YouTube use HTTPS over TCP (and some QUIC/UDP).
 - **VoIP / Video calls:** Zoom, Skype use UDP (tolerate loss, need low latency).
@@ -1806,7 +1806,7 @@ The global Internet is built entirely on the TCP/IP protocol suite:
 
 The OSI model is primarily used as a **pedagogical tool**:
 - **University courses:** OSI is taught first (in ~2 weeks), then TCP/IP for the rest of the semester. The contrast helps students understand *why* TCP/IP made the design choices it did.
-- **Troubleshooting frameworks:** The "OSI layer approach" to network troubleshooting â€” start at Physical, work up â€” is the standard methodology for network engineers.
+- **Troubleshooting frameworks:** The "OSI layer approach" to network troubleshooting → start at Physical, work up → is the standard methodology for network engineers.
 - **Security analysis:** Security analysts use the OSI model to categorize threats: jamming (L1), MAC spoofing (L2), IP spoofing (L3), port scanning (L4), session hijacking (L5), downgrade attacks (L6), and SQL injection (L7).
 - **Documentation frameworks:** Network architecture diagrams often reference OSI layers to clarify which device handles which function.
 
@@ -1833,7 +1833,7 @@ Internet standards are developed through an open, consensus-based process manage
 
 **The Institute of Electrical and Electronics Engineers (IEEE)** develops lower-layer standards through the 802 committee, which produced Ethernet (802.3), WiFi (802.11), and Bluetooth (802.15).
 
-**The International Telecommunication Union â€” Telecommunication Standardization Sector (ITU-T)** publishes standards for telecommunication systems including optical networking (SONET/SDH) and telephone signaling (SS7).
+**The International Telecommunication Union → Telecommunication Standardization Sector (ITU-T)** publishes standards for telecommunication systems including optical networking (SONET/SDH) and telephone signaling (SS7).
 
 **The International Organization for Standardization (ISO)** co-developed the OSI model and maintains standards for networking, security, and coding.
 
@@ -1863,16 +1863,16 @@ Internet standards are developed through an open, consensus-based process manage
 
 | Category | Key Points |
 |----------|------------|
-| **Network Scale** | PAN (~10m) â†’ LAN (<1km) â†’ MAN (5â€“50km) â†’ WAN (unlimited) |
-| **OSI Layers (7â†’1)** | Application â†’ Presentation â†’ Session â†’ Transport â†’ Network â†’ Data Link â†’ Physical |
-| **TCP/IP Layers (4â†’1)** | Application â†’ Transport â†’ Internet â†’ Link |
-| **Key OSI Mnemonic** | "Please Do Not Throw Sausage Pizza Away" (bottom-up: Physical â†’ Application) |
-| **Key TCP/IP Mnemonic** | "LITA" (Link, Internet, Transport, Application) â€” bottom-up |
-| **Service Types** | Connection-oriented (TCP â€” reliable, ordered) vs Connectionless (UDP â€” best-effort) |
+| **Network Scale** | PAN (~10m) → LAN (<1km) → MAN (5â€“50km) → WAN (unlimited) |
+| **OSI Layers (7→1)** | Application → Presentation → Session → Transport → Network → Data Link → Physical |
+| **TCP/IP Layers (4→1)** | Application → Transport → Internet → Link |
+| **Key OSI Mnemonic** | "Please Do Not Throw Sausage Pizza Away" (bottom-up: Physical → Application) |
+| **Key TCP/IP Mnemonic** | "LITA" (Link, Internet, Transport, Application) → bottom-up |
+| **Service Types** | Connection-oriented (TCP → reliable, ordered) vs Connectionless (UDP → best-effort) |
 | **Topologies** | Bus (shared), Star (central), Ring (loop), Mesh (all-pairs), Tree (hierarchical) |
 | **Standards Bodies** | IETF (RFCs, Internet protocols), IEEE (802.x physical/link), ITU-T (telecom), ISO (general) |
 | **PDU Names** | Message (L5-L7), Segment (L4), Packet (L3), Frame (L2), Bits (L1) |
-| **Encapsulation Flow** | Data â†’ [TCP Hdr | Data] â†’ [IP Hdr | TCP | Data] â†’ [Eth Hdr | IP | TCP | Data | CRC] |
+| **Encapsulation Flow** | Data → [TCP Hdr | Data] → [IP Hdr | TCP | Data] → [Eth Hdr | IP | TCP | Data | CRC] |
 
 ### Cross-Application Matrix
 
@@ -1898,7 +1898,7 @@ Internet standards are developed through an open, consensus-based process manage
 
 <details>
 <summary>Answer</summary>
-B) Network â€” Layer 3 handles routing and logical addressing (IP).
+B) Network → Layer 3 handles routing and logical addressing (IP).
 </details>
 
 **Q2.** What is the primary reason the OSI model failed in practice while TCP/IP succeeded?
@@ -1934,7 +1934,7 @@ B) The transport-layer header remains as payload for the network layer, which ad
 
 <details>
 <summary>Answer</summary>
-C) LAN â€” Local-area networks cover a single building or campus under 1 km.
+C) LAN → Local-area networks cover a single building or campus under 1 km.
 </details>
 
 **Q5.** In a star topology, what happens if the central switch fails?
@@ -1946,7 +1946,7 @@ C) LAN â€” Local-area networks cover a single building or campus under 1 km
 
 <details>
 <summary>Answer</summary>
-B) Star topology has a central point of failure â€” the switch failure isolates all connected nodes.
+B) Star topology has a central point of failure → the switch failure isolates all connected nodes.
 </details>
 
 **Q6.** Which TCP/IP layer corresponds to the combination of OSI Physical and Data Link layers?
@@ -1958,7 +1958,7 @@ B) Star topology has a central point of failure â€” the switch failure isol
 
 <details>
 <summary>Answer</summary>
-D) Link â€” The TCP/IP Link layer encompasses both physical transmission and data framing.
+D) Link → The TCP/IP Link layer encompasses both physical transmission and data framing.
 </details>
 
 **Q7.** What is the primary difference between a protocol and an interface?
@@ -1982,14 +1982,14 @@ B) A protocol defines horizontal communication between peers on different machin
 
 <details>
 <summary>Answer</summary>
-C) Full mesh requires each node to connect to every other node â€” NÃ—(Nâˆ’1)/2 total links.
+C) Full mesh requires each node to connect to every other node → NÃ—(Nâˆ’1)/2 total links.
 </details>
 
 ---
 
 ## Summary
 
-Computer networks enable communication among autonomous computers through layered protocol stacks. PANs, LANs, MANs, and WANs differ in scale, topology, and transmission technology. Network topologies (bus, star, ring, mesh, tree, hybrid) each offer distinct trade-offs in cost, reliability, scalability, and fault tolerance. Protocol layering provides abstraction and modularity â€” each layer hides complexity from the layer above and provides a well-defined service. Encapsulation, where each layer adds its own header, is the core mechanism of layered communication. The OSI model offers a seven-layer conceptual framework ideal for teaching and reference, while the TCP/IP model â€” with its four pragmatic layers â€” governs the actual Internet. Key protocols (HTTP, TCP, UDP, IP, DNS) operate at their respective layers, interfacing through well-defined APIs. Standards organizations including the IETF, IEEE, and ITU-T ensure interoperability through open, consensus-driven processes.
+Computer networks enable communication among autonomous computers through layered protocol stacks. PANs, LANs, MANs, and WANs differ in scale, topology, and transmission technology. Network topologies (bus, star, ring, mesh, tree, hybrid) each offer distinct trade-offs in cost, reliability, scalability, and fault tolerance. Protocol layering provides abstraction and modularity → each layer hides complexity from the layer above and provides a well-defined service. Encapsulation, where each layer adds its own header, is the core mechanism of layered communication. The OSI model offers a seven-layer conceptual framework ideal for teaching and reference, while the TCP/IP model → with its four pragmatic layers → governs the actual Internet. Key protocols (HTTP, TCP, UDP, IP, DNS) operate at their respective layers, interfacing through well-defined APIs. Standards organizations including the IETF, IEEE, and ITU-T ensure interoperability through open, consensus-driven processes.
 
 ## Exercises
 
@@ -2033,7 +2033,7 @@ Computer networks enable communication among autonomous computers through layere
     - (c) What is the total overhead percentage (headers / total transmitted)?
 
 19. **Real-world analysis.** Use `tcpdump` or Wireshark to capture a single HTTP request to a website of your choice. Identify:
-    - (a) The Ethernet header â€” source and destination MAC addresses.
-    - (b) The IP header â€” source and destination IP, TTL, protocol field.
-    - (c) The TCP header â€” source and destination ports, sequence number, flags.
+    - (a) The Ethernet header → source and destination MAC addresses.
+    - (b) The IP header → source and destination IP, TTL, protocol field.
+    - (c) The TCP header → source and destination ports, sequence number, flags.
     - (d) The HTTP request line.

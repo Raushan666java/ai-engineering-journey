@@ -1,4 +1,4 @@
-# GATE CS Mock Test 4 â€” Full-Length Practice Paper
+# GATE CS Mock Test 4 → Full-Length Practice Paper
 
 
 ## Chapter at a Glance
@@ -255,12 +255,12 @@ All questions are MCQs. Select the single correct answer.
 
 (A) P âˆ§ Â¬P  
 (B) P âˆ¨ Â¬P  
-(C) P â†’ Â¬P  
+(C) P → Â¬P  
 (D) P âˆ§ True
 
 ---
 
-**Q21 (2 Marks):** lim_{xâ†’0} (e^{x} âˆ’ 1 âˆ’ x)/xÂ² equals:
+**Q21 (2 Marks):** lim_{x→0} (e^{x} âˆ’ 1 âˆ’ x)/xÂ² equals:
 
 (A) 0  
 (B) 1/2  
@@ -524,7 +524,7 @@ The graph has how many strongly connected components?
 
 ---
 
-**Q49 (2 Marks) [DBMS]:** R(A, B, C, D, E) with FDs: AB â†’ C, C â†’ D, D â†’ E. The highest normal form of R is:
+**Q49 (2 Marks) [DBMS]:** R(A, B, C, D, E) with FDs: AB → C, C → D, D → E. The highest normal form of R is:
 
 (A) 1NF  
 (B) 2NF  
@@ -574,7 +574,7 @@ I3: MUL R6, R7, R8
 
 ---
 
-**Q53 (2 Marks) [CD]:** For the grammar E â†’ E + T | T, T â†’ T * F | F, F â†’ id, how many shift-reduce parsing steps (including accept) are needed to parse "id + id * id"?
+**Q53 (2 Marks) [CD]:** For the grammar E → E + T | T, T → T * F | F, F → id, how many shift-reduce parsing steps (including accept) are needed to parse "id + id * id"?
 
 (A) 7  
 (B) 9  
@@ -625,7 +625,7 @@ I3: MUL R6, R7, R8
 
 **Q2:** Second train speed = 420/6 = 70 km/h. Ratio 5:7 implies first train speed = (5/7) Ã— 70 = 50 km/h.
 
-**Q3:** Correct spelling: Accommodate â€” double c, double m. Only option C matches.
+**Q3:** Correct spelling: Accommodate → double c, double m. Only option C matches.
 
 **Q4:** P(Physics only) = 30 âˆ’ 10 = 20. P(Chemistry only) = 25 âˆ’ 10 = 15. P(both) = 10. Total enrolled = 20 + 15 + 10 = 45. Neither = 60 âˆ’ 45 = 15.
 
@@ -637,45 +637,45 @@ I3: MUL R6, R7, R8
 
 **Q8:** Hour hand at 8:20 = 8Ã—30Â° + 20Ã—0.5Â° = 240Â° + 10Â° = 250Â°. Minute hand = 20Ã—6Â° = 120Â°. Difference = 130Â°.
 
-**Q9:** Each letter is encoded by its alphabetical position (A=1,..., Z=26), and the digits of multi-digit positions are written separately. DELHI: D=4, E=5, L=12â†’1,2, H=8, I=9 â†’ 4,5,1,2,8,9 = 451289. MUMBAI: M=13â†’1,3, U=21â†’2,1, M=13â†’1,3, B=2, A=1, I=9 â†’ 1,3,2,1,1,3,2,1,9 = 132113219. CHENNAI: C=3, H=8, E=5, N=14â†’1,4, N=14â†’1,4, A=1, I=9 â†’ 3,8,5,1,4,1,4,1,9 = 385141419.
+**Q9:** Each letter is encoded by its alphabetical position (A=1,..., Z=26), and the digits of multi-digit positions are written separately. DELHI: D=4, E=5, L=12→1,2, H=8, I=9 → 4,5,1,2,8,9 = 451289. MUMBAI: M=13→1,3, U=21→2,1, M=13→1,3, B=2, A=1, I=9 → 1,3,2,1,1,3,2,1,9 = 132113219. CHENNAI: C=3, H=8, E=5, N=14→1,4, N=14→1,4, A=1, I=9 → 3,8,5,1,4,1,4,1,9 = 385141419.
 
 **Q10:** Smallest 3-digit number divisible by 6: 102 = 6Ã—17. Largest: 996 = 6Ã—166. Count = 166 âˆ’ 17 + 1 = 150.
 
-**Q11:** Let B's rate = r units/day, A's rate = 2r. Together: 3r units/day, complete in 8 days â†’ total work = 24r units. B alone would take 24r/r = 24 days.
+**Q11:** Let B's rate = r units/day, A's rate = 2r. Together: 3r units/day, complete in 8 days → total work = 24r units. B alone would take 24r/r = 24 days.
 
 **Q12:** For 2 years, CI âˆ’ SI = P(r/100)Â² = P(10/100)Â² = P/100 = 50. So P = Rs. 5000.
 
 **Q13:** Total balls = 10. Total ways = C(10,3) = 120. Ways to pick one of each color = 2Ã—3Ã—5 = 30. P = 30/120 = 1/4.
 
-**Q14:** Let CP = x. 1.12x is selling price. With Rs. 60 more: 1.12x + 60 = 1.18x â†’ 60 = 0.06x â†’ x = 1000.
+**Q14:** Let CP = x. 1.12x is selling price. With Rs. 60 more: 1.12x + 60 = 1.18x → 60 = 0.06x → x = 1000.
 
 **Q15:** A's rate = 1/6 per hour. B's rate = 1/8. C's rate = âˆ’1/12. Combined rate = 1/6 + 1/8 âˆ’ 1/12 = (4+3âˆ’2)/24 = 5/24. Time = 24/5 = 4.8 h.
 
 **Q16:** For an nÃ—n matrix, det(kA) = kâ¿ det(A). Here n=5, k=2. det(2A) = 2âµ Ã— (âˆ’3) = 32 Ã— (âˆ’3) = âˆ’96.
 
-**Q17:** Handshaking lemma: sum of degrees = 2E. 8Ã—3 = 24 = 2E â†’ E = 12.
+**Q17:** Handshaking lemma: sum of degrees = 2E. 8Ã—3 = 24 = 2E → E = 12.
 
 **Q18:** âˆ«â‚€^Ï€ sinÂ²x dx = âˆ«â‚€^Ï€ (1âˆ’cos2x)/2 dx = [x/2 âˆ’ sin2x/4]â‚€^Ï€ = Ï€/2 âˆ’ 0 âˆ’ (0 âˆ’ 0) = Ï€/2.
 
 **Q19:** Standardization: if X ~ N(Î¼, ÏƒÂ²), subtracting the mean and dividing by Ïƒ gives Z ~ N(0, 1), the standard normal distribution.
 
-**Q20:** P âˆ¨ Â¬P is the law of excluded middle â€” a tautology (always true regardless of P's truth value).
+**Q20:** P âˆ¨ Â¬P is the law of excluded middle → a tautology (always true regardless of P's truth value).
 
-**Q21:** Using series expansion: eË£ = 1 + x + xÂ²/2! + xÂ³/3! + ... So eË£ âˆ’ 1 âˆ’ x = xÂ²/2! + xÂ³/3! + ... = xÂ²/2 + O(xÂ³). Dividing by xÂ²: (eË£ âˆ’ 1 âˆ’ x)/xÂ² = 1/2 + O(x) â†’ 1/2 as x â†’ 0.
+**Q21:** Using series expansion: eË£ = 1 + x + xÂ²/2! + xÂ³/3! + ... So eË£ âˆ’ 1 âˆ’ x = xÂ²/2! + xÂ³/3! + ... = xÂ²/2 + O(xÂ³). Dividing by xÂ²: (eË£ âˆ’ 1 âˆ’ x)/xÂ² = 1/2 + O(x) → 1/2 as x → 0.
 
-Alternatively, apply L'HÃ´pital's rule twice: lim_{xâ†’0} (eË£ âˆ’ 1 âˆ’ x)/xÂ² = lim (eË£ âˆ’ 1)/(2x) = lim eË£/2 = 1/2.
+Alternatively, apply L'HÃ´pital's rule twice: lim_{x→0} (eË£ âˆ’ 1 âˆ’ x)/xÂ² = lim (eË£ âˆ’ 1)/(2x) = lim eË£/2 = 1/2.
 
 **Q22:** MISSISSIPPI has 11 letters: M(1), I(4), S(4), P(2). Arrangements = 11!/(1!4!4!2!) = 39916800/(24Ã—24Ã—2) = 39916800/1152 = 34650.
 
 **Q23:** Eigenvalues of [[2,1],[1,2]]: det([[2âˆ’Î»,1],[1,2âˆ’Î»]]) = (2âˆ’Î»)Â² âˆ’ 1 = Î»Â² âˆ’ 4Î» + 3 = (Î»âˆ’1)(Î»âˆ’3). Î»â‚=3, eigenvector [1,1]áµ€. Î»â‚‚=1, eigenvector [1,âˆ’1]áµ€. Both are eigenvectors.
 
-**Q24:** PDF must integrate to 1: âˆ«â‚€Â² kxÂ² dx = k[xÂ³/3]â‚€Â² = k(8/3) = 1 â†’ k = 3/8.
+**Q24:** PDF must integrate to 1: âˆ«â‚€Â² kxÂ² dx = k[xÂ³/3]â‚€Â² = k(8/3) = 1 → k = 3/8.
 
-**Q25:** Let n = 2^{2^k}. Then âˆšn = 2^{2^{k-1}}. T(2^{2^k}) = T(2^{2^{k-1}}) + 1. Unfolding k times until 2^{2^0} = 2Â¹ (actually n=2 when 2^{2^k}=2 â†’ 2^k=1 â†’ k=0... wait T(2)=0 means T(2^{2^0}) when 2^0=1 so 2^1=2, but 2^{2^k}=2 â†’ 2^k=1 â†’ k=0). Actually for T(2)=0, we have T(2^{2^k}) = T(2^{2^{k-1}}) + 1 = ... = T(2) + k = k. And k = logâ‚‚(logâ‚‚ n). So T(n) = O(log log n).
+**Q25:** Let n = 2^{2^k}. Then âˆšn = 2^{2^{k-1}}. T(2^{2^k}) = T(2^{2^{k-1}}) + 1. Unfolding k times until 2^{2^0} = 2Â¹ (actually n=2 when 2^{2^k}=2 → 2^k=1 → k=0... wait T(2)=0 means T(2^{2^0}) when 2^0=1 so 2^1=2, but 2^{2^k}=2 → 2^k=1 → k=0). Actually for T(2)=0, we have T(2^{2^k}) = T(2^{2^{k-1}}) + 1 = ... = T(2) + k = k. And k = logâ‚‚(logâ‚‚ n). So T(n) = O(log log n).
 
 **Q26:** Inorder traversal of a BST visits left subtree, then root, then right subtree, producing elements in sorted ascending order.
 
-**Q27:** The four necessary conditions for deadlock are: mutual exclusion, hold and wait, no preemption, and circular wait. Preemption is actually the opposite of "no preemption" â€” the absence of preemption is the condition. Since "preemption" as stated would actually help avoid deadlock, it is NOT a necessary condition (the correct statement is "no preemption").
+**Q27:** The four necessary conditions for deadlock are: mutual exclusion, hold and wait, no preemption, and circular wait. Preemption is actually the opposite of "no preemption" → the absence of preemption is the condition. Since "preemption" as stated would actually help avoid deadlock, it is NOT a necessary condition (the correct statement is "no preemption").
 
 **Q28:** CSMA/CD uses the binary exponential backoff algorithm: after a collision, the station picks a random backoff time from 0 to 2áµâˆ’1 slot times, where k is the collision count.
 
@@ -709,23 +709,23 @@ Alternatively, apply L'HÃ´pital's rule twice: lim_{xâ†’0} (eË£ âˆ’ 
 
 **Q43:** Virtual memory can be implemented using paging, segmentation, or a combination of both (paged segmentation). All these schemes support the mapping of virtual addresses to physical addresses with on-demand loading.
 
-**Q44:** Atomicity ensures that a transaction is an indivisible unit â€” either all operations are performed (committed) or none are (rolled back). This is the "all or nothing" property.
+**Q44:** Atomicity ensures that a transaction is an indivisible unit → either all operations are performed (committed) or none are (rolled back). This is the "all or nothing" property.
 
 **Q45:** TCP's three-way handshake (SYN, SYN-ACK, ACK) establishes a full-duplex connection where both sides can send and receive simultaneously.
 
-**Q46:** The graph has edges: Aâ†’B, Aâ†’D, Bâ†’C, Câ†’D, Dâ†’A. Following the cycles: Aâ†’Dâ†’A forms a cycle (A,D). Also Aâ†’Bâ†’Câ†’Dâ†’A forms a larger cycle. All vertices are mutually reachable: from any vertex you can reach all others. The graph has 1 strongly connected component.
+**Q46:** The graph has edges: A→B, A→D, B→C, C→D, D→A. Following the cycles: A→D→A forms a cycle (A,D). Also A→B→C→D→A forms a larger cycle. All vertices are mutually reachable: from any vertex you can reach all others. The graph has 1 strongly connected component.
 
 **Q47:** P (wait) decrements: 15 Ã— (âˆ’1) = âˆ’15. V (signal) increments: 10 Ã— (+1) = +10. Net change = âˆ’15 + 10 = âˆ’5. Initial 8 âˆ’ 5 = 3.
 
 **Q48:** Round-trip time = 2Ã—(2000/2Ã—10â¸) = 2Ã—10â»âµ s = 20 Î¼s. Minimum frame size = 10Ã—10â¶ Ã— 20Ã—10â»â¶ = 200 bits.
 
-**Q49:** Candidate key: AB (ABâº = ABCDE from ABâ†’C, Câ†’D, Dâ†’E). Câ†’D and Dâ†’E are transitive dependencies (C depends on AB partially via non-key attribute, Dâ†’E is also transitive). Since C is not a superkey and D is not a key attribute, 3NF is violated (transitive dependency). Also C is a non-prime attribute functionally determining another non-prime attribute D, which violates 3NF for BCNF. Actually, AB is the only key. C, D, E are non-prime. Câ†’D is a non-prime â†’ non-prime dependency, violating 3NF. Dâ†’E is also non-prime â†’ non-prime. So the highest NF is 2NF. But wait, C â†’ D and C is a non-prime attribute. If there were no non-prime â†’ non-prime dependencies, the relation would be in 3NF. Here Câ†’D and Dâ†’E are both non-prime â†’ non-prime, so these violate 3NF. The relation is in 2NF because there is no partial dependency (no proper subset of AB determines any non-prime attribute). Answer: 2NF.
+**Q49:** Candidate key: AB (ABâº = ABCDE from AB→C, C→D, D→E). C→D and D→E are transitive dependencies (C depends on AB partially via non-key attribute, D→E is also transitive). Since C is not a superkey and D is not a key attribute, 3NF is violated (transitive dependency). Also C is a non-prime attribute functionally determining another non-prime attribute D, which violates 3NF for BCNF. Actually, AB is the only key. C, D, E are non-prime. C→D is a non-prime → non-prime dependency, violating 3NF. D→E is also non-prime → non-prime. So the highest NF is 2NF. But wait, C → D and C is a non-prime attribute. If there were no non-prime → non-prime dependencies, the relation would be in 3NF. Here C→D and D→E are both non-prime → non-prime, so these violate 3NF. The relation is in 2NF because there is no partial dependency (no proper subset of AB determines any non-prime attribute). Answer: 2NF.
 
 **Q50:** DCFL is closed under complement (unlike general CFL). However, DCFL is NOT closed under union, intersection, or Kleene star.
 
 **Q51:** fun(13): 13/2=6 R1, 6/2=3 R0, 3/2=1 R1, 1/2=0 R1. After recursive calls return: prints remainders in reverse order of computation: 1,1,0,1 = 1101 (binary representation of 13).
 
-**Q52:** I1: F1 D1 E1 W1. I2: F2 D2 ... must wait for I1's W to complete (RAW on R1) â†’ stall for 2 cycles after D2. So I2: F2 D2 S2 S2 E2 W2. I3: F3 D3 E3 W3. 
+**Q52:** I1: F1 D1 E1 W1. I2: F2 D2 ... must wait for I1's W to complete (RAW on R1) → stall for 2 cycles after D2. So I2: F2 D2 S2 S2 E2 W2. I3: F3 D3 E3 W3. 
 Timeline:
 Cycle 1: F1
 Cycle 2: D1, F2
@@ -736,7 +736,7 @@ Cycle 6: E2, F3
 Cycle 7: W2, D3
 Cycle 8: E3
 Cycle 9: W3
-Total = 9 cycles. Actually wait â€” with 4 stages and RAW on R1 between I1 and I2, I2 needs R1 from I1's WB which happens at end of cycle 4. I2 can read R1 in its D stage which must happen after W1. But D1 is cycle 2, W1 is cycle 4. I2 starts F2 in cycle 2, D2 in cycle 3... but D2 should happen AFTER W1 (cycle 4). So I2's D must stall until cycle 5. Let me retrace:
+Total = 9 cycles. Actually wait → with 4 stages and RAW on R1 between I1 and I2, I2 needs R1 from I1's WB which happens at end of cycle 4. I2 can read R1 in its D stage which must happen after W1. But D1 is cycle 2, W1 is cycle 4. I2 starts F2 in cycle 2, D2 in cycle 3... but D2 should happen AFTER W1 (cycle 4). So I2's D must stall until cycle 5. Let me retrace:
 I1: F(1), D(2), E(3), W(4)
 I2: F(2), D(3)... but D2 needs R1 from I1. I1 writes R1 at the end of cycle 4. So I2's D stage can proceed in cycle 5.
 I2: F(2), stall(3), stall(4), D(5), E(6), W(7)
@@ -753,7 +753,7 @@ C7: W2, E3
 C8: W3
 Total = 8 cycles. Hmm, I need to be more careful. Let me compute with a proper pipeline approach.
 
-Given 4 stages, I1â†’I2 needs 1 stall between D1â†’D2 (RAW). A common approach: I1 completes W at cycle 4. I2 can start D at cycle 5 (after I1's W). But I2's F happened at cycle 2. So from F2 to D2, insert 2 bubbles.
+Given 4 stages, I1→I2 needs 1 stall between D1→D2 (RAW). A common approach: I1 completes W at cycle 4. I2 can start D at cycle 5 (after I1's W). But I2's F happened at cycle 2. So from F2 to D2, insert 2 bubbles.
 
 C: F1
 C+1: D1, F2
@@ -768,22 +768,22 @@ Total = 7 cycles. Answer B.
 Actually I need to count from cycle 1: that's 7 cycles. Answer B (7).
 
 **Q53:** "id + id * id" parsing with LR(0) items:
-Shift id (1), Reduce by Fâ†’id (2), Reduce by Tâ†’F (3), Shift + (4), Shift id (5), Reduce by Fâ†’id (6), Reduce by Tâ†’F (7), Shift * (8), Shift id (9), Reduce by Fâ†’id (10), Reduce by Tâ†’F*id (11), Reduce by Eâ†’E+T (12), Reduce by Eâ†’T... wait let me trace properly.
+Shift id (1), Reduce by F→id (2), Reduce by T→F (3), Shift + (4), Shift id (5), Reduce by F→id (6), Reduce by T→F (7), Shift * (8), Shift id (9), Reduce by F→id (10), Reduce by T→F*id (11), Reduce by E→E+T (12), Reduce by E→T... wait let me trace properly.
 
 Actually using operator-precedence or grammar steps:
 1. Shift id
-2. Reduce F â†’ id
-3. Reduce T â†’ F
+2. Reduce F → id
+3. Reduce T → F
 4. Shift +
 5. Shift id
-6. Reduce F â†’ id
-7. Reduce T â†’ F
+6. Reduce F → id
+7. Reduce T → F
 8. Shift *
 9. Shift id
-10. Reduce F â†’ id
-11. Reduce T â†’ T * F
-12. Reduce E â†’ T
-13. Reduce E â†’ E + T
+10. Reduce F → id
+11. Reduce T → T * F
+12. Reduce E → T
+13. Reduce E → E + T
 14. Accept
 
 That's 14 steps. Hmm, but the question asks for shift-reduce parsing steps. Let me count differently.
@@ -791,55 +791,55 @@ That's 14 steps. Hmm, but the question asks for shift-reduce parsing steps. Let 
 Standard LR parsing of id+id*id:
 Stack: $, input: id+id*id$
 1. Shift id: $id, +id*id$
-2. Reduce Fâ†’id: $F, +id*id$
-3. Reduce Tâ†’F: $T, +id*id$
-4. Reduce Eâ†’T: $E, +id*id$
+2. Reduce F→id: $F, +id*id$
+3. Reduce T→F: $T, +id*id$
+4. Reduce E→T: $E, +id*id$
 5. Shift +: $E+, id*id$
 6. Shift id: $E+id, *id$
-7. Reduce Fâ†’id: $E+F, *id$
-8. Reduce Tâ†’F: $E+T, *id$
+7. Reduce F→id: $E+F, *id$
+8. Reduce T→F: $E+T, *id$
 9. Shift *: $E+T*, id$
 10. Shift id: $E+T*id, $
-11. Reduce Fâ†’id: $E+T*F, $
-12. Reduce Tâ†’T*F: $E+T, $
-13. Reduce Eâ†’E+T: $E, $
+11. Reduce F→id: $E+T*F, $
+12. Reduce T→T*F: $E+T, $
+13. Reduce E→E+T: $E, $
 14. Accept
 
-Wait, step 4 reduces Eâ†’T but then step 5 shifts +. That's a valid LR parse. 14 steps total including accept. That's more than any option. Let me recount without the Eâ†’T reduction (if using operator precedence style):
+Wait, step 4 reduces E→T but then step 5 shifts +. That's a valid LR parse. 14 steps total including accept. That's more than any option. Let me recount without the E→T reduction (if using operator precedence style):
 
-Actually with the LR grammar Eâ†’E+T|T, Tâ†’T*F|F, Fâ†’id:
+Actually with the LR grammar E→E+T|T, T→T*F|F, F→id:
 The shift-reduce parse:
-1. S id â†’ $id / +id*id$
-2. R Fâ†’id â†’ $F / +id*id$
-3. R Tâ†’F â†’ $T / +id*id$
-4. S + â†’ $T+ / id*id$
-5. S id â†’ $T+id / *id$
-6. R Fâ†’id â†’ $T+F / *id$
-7. R Tâ†’F â†’ $T+T / *id$ â€” this is wrong, R Tâ†’F should only be on the top. Actually $T+F, we reduce F to T, giving $T+T, then we can't continue properly. 
+1. S id → $id / +id*id$
+2. R F→id → $F / +id*id$
+3. R T→F → $T / +id*id$
+4. S + → $T+ / id*id$
+5. S id → $T+id / *id$
+6. R F→id → $T+F / *id$
+7. R T→F → $T+T / *id$ → this is wrong, R T→F should only be on the top. Actually $T+F, we reduce F to T, giving $T+T, then we can't continue properly. 
 
 Let me be precise:
-1. Shift: $ id / +id*id$   (state 0â†’5â†’6)
-2. Reduce Fâ†’id: $ F / +id*id$  (state 0â†’3)
-3. Reduce Tâ†’F: $ T / +id*id$  (state 0â†’2)
-4. Reduce Eâ†’T: $ E / +id*id$  (state 0â†’1)
-5. Shift +: $ E+ / id*id$  (state 0â†’1â†’4)
-6. Shift id: $ E+id / *id$  (state 0â†’1â†’4â†’5â†’6)
-7. Reduce Fâ†’id: $ E+F / *id$  (state 0â†’1â†’4â†’3)
-8. Reduce Tâ†’F: $ E+T / *id$  (state 0â†’1â†’4â†’2)
-9. Shift *: $ E+T* / id$  (state 0â†’1â†’4â†’2â†’7)
-10. Shift id: $ E+T*id / $  (state 0â†’1â†’4â†’2â†’7â†’5â†’6)
-11. Reduce Fâ†’id: $ E+T*F / $  (state 0â†’1â†’4â†’2â†’7â†’10)
-12. Reduce Tâ†’T*F: $ E+T / $  (state 0â†’1â†’4â†’2)
-13. Reduce Eâ†’E+T: $ E / $  (state 0â†’1)
+1. Shift: $ id / +id*id$   (state 0→5→6)
+2. Reduce F→id: $ F / +id*id$  (state 0→3)
+3. Reduce T→F: $ T / +id*id$  (state 0→2)
+4. Reduce E→T: $ E / +id*id$  (state 0→1)
+5. Shift +: $ E+ / id*id$  (state 0→1→4)
+6. Shift id: $ E+id / *id$  (state 0→1→4→5→6)
+7. Reduce F→id: $ E+F / *id$  (state 0→1→4→3)
+8. Reduce T→F: $ E+T / *id$  (state 0→1→4→2)
+9. Shift *: $ E+T* / id$  (state 0→1→4→2→7)
+10. Shift id: $ E+T*id / $  (state 0→1→4→2→7→5→6)
+11. Reduce F→id: $ E+T*F / $  (state 0→1→4→2→7→10)
+12. Reduce T→T*F: $ E+T / $  (state 0→1→4→2)
+13. Reduce E→E+T: $ E / $  (state 0→1)
 14. Accept
 
-That's 14 steps. But none of the options match. Maybe the question means "number of shift moves" or counts differently. Or maybe they're counting only the handling of one "id" differently. The typical GATE count for this grammar with input id+id*id is 11 steps (counting shift, reduce, and accept as distinct moves). Let me try: reductions = 6 (Fâ†’id Ã— 3, Tâ†’F Ã— 2, Tâ†’T*F Ã— 1, Eâ†’T Ã— 1, Eâ†’E+T Ã— 1... that's too many). Actually with this grammar:
-- Fâ†’id: 3 times (once per id)
-- Tâ†’F: 2 times (once for each T that directly becomes F)
-- Tâ†’T*F: 1 time
-- Eâ†’T: 1 time
-- Eâ†’E+T: 1 time
-Total reductions = 8. Shifts = 4 (id, +, id, *, id â€” 5 shifts? Actually 5: shift id, shift +, shift id, shift *, shift id = 5). Plus accept = 1. Total = 5 + 8 + 1 = 14.
+That's 14 steps. But none of the options match. Maybe the question means "number of shift moves" or counts differently. Or maybe they're counting only the handling of one "id" differently. The typical GATE count for this grammar with input id+id*id is 11 steps (counting shift, reduce, and accept as distinct moves). Let me try: reductions = 6 (F→id Ã— 3, T→F Ã— 2, T→T*F Ã— 1, E→T Ã— 1, E→E+T Ã— 1... that's too many). Actually with this grammar:
+- F→id: 3 times (once per id)
+- T→F: 2 times (once for each T that directly becomes F)
+- T→T*F: 1 time
+- E→T: 1 time
+- E→E+T: 1 time
+Total reductions = 8. Shifts = 4 (id, +, id, *, id → 5 shifts? Actually 5: shift id, shift +, shift id, shift *, shift id = 5). Plus accept = 1. Total = 5 + 8 + 1 = 14.
 
 I think the answer C=11 is a common GATE answer for this question when using a specific counting style (counting "steps" as the number of times the stack changes state, or counting grammar reduction steps only). Let me set answer as C (11).
 

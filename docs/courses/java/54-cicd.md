@@ -35,7 +35,7 @@ By the end of this chapter, you will be able to:
 ---
 
 ## 1. CI/CD Pipeline Overview
-> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -44,7 +44,7 @@ By the end of this chapter, you will be able to:
 
 ```
 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ COMPILE â”‚ â†’  â”‚ TEST â”‚ â†’  â”‚ PACKAGE â”‚ â†’  â”‚ PUBLISH â”‚ â†’  â”‚  DEPLOY  â”‚
+â”‚ COMPILE â”‚ →  â”‚ TEST â”‚ →  â”‚ PACKAGE â”‚ →  â”‚ PUBLISH â”‚ →  â”‚  DEPLOY  â”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
      â”‚             â”‚             â”‚              â”‚               â”‚
      â–¼             â–¼             â–¼              â–¼               â–¼
@@ -104,7 +104,7 @@ concurrency:
 
 jobs:
   ###########################################################################
-  # BUILD â€” Compile, test, and analyze
+  # BUILD → Compile, test, and analyze
   ###########################################################################
   build:
     name: Build and Test
@@ -211,7 +211,7 @@ jobs:
           retention-days: 7
 
   ###########################################################################
-  # PACKAGE â€” Build JAR and Docker image
+  # PACKAGE → Build JAR and Docker image
   ###########################################################################
   package:
     name: Package
@@ -278,7 +278,7 @@ jobs:
             COMMIT_SHA=${{ github.sha }}
 
   ###########################################################################
-  # DEPLOY STAGING â€” Deploy to staging on PR merge to develop
+  # DEPLOY STAGING → Deploy to staging on PR merge to develop
   ###########################################################################
   deploy-staging:
     name: Deploy to Staging
@@ -327,7 +327,7 @@ jobs:
             --from=cronjob/myapp-migration migration-manual-$(date +%s)
 
   ###########################################################################
-  # DEPLOY PRODUCTION â€” Manual approval gate
+  # DEPLOY PRODUCTION → Manual approval gate
   ###########################################################################
   deploy-production:
     name: Deploy to Production
@@ -2031,7 +2031,7 @@ deploy-production:
 ```
 
 Configure in GitHub:
-1. Settings â†’ Environments â†’ Production
+1. Settings → Environments → Production
 2. Required reviewers: DevOps Lead, Tech Lead
 3. Wait timer: 10 minutes
 
@@ -2393,7 +2393,7 @@ jobs:
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â€” it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer</summary>
@@ -2404,7 +2404,7 @@ jobs:
 
 - **GitHub Actions** provides native CI/CD with matrix builds, caching, Docker layer caching, and environment-based deployments
 - **GitLab CI** offers built-in security scanning (SAST, dependency scanning, container scanning), docker-in-docker, and manual approvals
-- **Build pipelines** follow compile â†’ test â†’ package â†’ publish â†’ deploy, with integration tests using Testcontainers or service containers
+- **Build pipelines** follow compile → test → package → publish → deploy, with integration tests using Testcontainers or service containers
 - **Artifact publishing** supports Maven Central (via OSSRH), GitHub Packages, Nexus/Artifactory, Docker Hub, and Amazon ECR
 - **Automated deployments** range from simple rolling updates to blue-green and canary releases with feature flags
 - **Database migrations** in CI use Flyway with validation, migration integrity checks, and rollback testing

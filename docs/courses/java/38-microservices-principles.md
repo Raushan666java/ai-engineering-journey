@@ -17,9 +17,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Microservices â€” independently deployable, loosely coupled services | Bounded contexts, autonomous teams, polyglot persistence |
-| Communication â€” synchronous (REST/gRPC) vs async (events/messaging) | Choose sync for queries, async for commands and events |
-| Observability â€” logging, metrics, and distributed tracing | Centralized logging (ELK), metrics (Prometheus + Grafana), tracing (Jaeger/Zipkin) |
+| Microservices → independently deployable, loosely coupled services | Bounded contexts, autonomous teams, polyglot persistence |
+| Communication → synchronous (REST/gRPC) vs async (events/messaging) | Choose sync for queries, async for commands and events |
+| Observability → logging, metrics, and distributed tracing | Centralized logging (ELK), metrics (Prometheus + Grafana), tracing (Jaeger/Zipkin) |
 
 ---
 ## Chapter Roadmap
@@ -72,7 +72,7 @@ flowchart TD
 
 1. What is a bounded context in Domain-Driven Design? **Answer:** A logical boundary where a particular domain model applies, with its own ubiquitous language
 2. What are the three pillars of observability? **Answer:** Logging, Metrics, Distributed Tracing
-3. Why prefer async communication over sync in microservices? **Answer:** Loose coupling â€” services do not need to be available simultaneously
+3. Why prefer async communication over sync in microservices? **Answer:** Loose coupling → services do not need to be available simultaneously
 
 ## Theory
 
@@ -123,13 +123,13 @@ A service mesh manages inter-service communication through a dedicated infrastru
 - **Security**: mTLS between sidecars, fine-grained access policies
 
 > [!TIP]
-> Start with a monolith. Extract microservices only when you understand the domain boundaries â€” premature decomposition adds complexity without benefit.
+> Start with a monolith. Extract microservices only when you understand the domain boundaries → premature decomposition adds complexity without benefit.
 
 > [!WARNING]
 > Synchronous calls between services (REST/gRPC) create runtime coupling. Use circuit breakers and timeouts to prevent cascading failures.
 
 > [!NOTE]
-> Every service must expose health, metrics, and distributed tracing â€” without observability, a microservices architecture is unmanageable.
+> Every service must expose health, metrics, and distributed tracing → without observability, a microservices architecture is unmanageable.
 
 ## Complete Code Examples
 

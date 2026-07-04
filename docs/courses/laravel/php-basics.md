@@ -115,10 +115,10 @@ By the end of this chapter, students will be able to:
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
 
 ![PHP Basics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/php-basics.png)
 

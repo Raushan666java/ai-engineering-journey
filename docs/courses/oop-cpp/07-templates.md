@@ -20,10 +20,10 @@ After studying this chapter, students will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | **Function Templates** | Type-parameterized function blueprints | Write once, use with any type supporting the operations |
-| **Class Templates** | Type-parameterized class blueprints | `std::vector<T>` â€” the canonical example |
+| **Class Templates** | Type-parameterized class blueprints | `std::vector<T>` → the canonical example |
 | **Template Instantiation** | Compiler stamping out concrete code per type | Each instantiation is a distinct type with unique address |
-| **Template Specialization** | Providing type-specific implementations | Full, partial, and explicit â€” each serves a different purpose |
-| **Non-Type Parameters** | Compile-time constants as template arguments | `std::array<T, N>` â€” bounds checked at compile time |
+| **Template Specialization** | Providing type-specific implementations | Full, partial, and explicit → each serves a different purpose |
+| **Non-Type Parameters** | Compile-time constants as template arguments | `std::array<T, N>` → bounds checked at compile time |
 | **Variadic Templates** | Accept arbitrary number of type parameters | Foundation of tuples, perfect forwarding, fold expressions |
 | **SFINAE** | Substitution Failure Is Not An Error | Compile-time type introspection without runtime cost |
 | **Template Template Parameters** | Templates accepting other templates | Policy-based design and container adaptors |
@@ -42,28 +42,28 @@ flowchart LR
     G --> H[CRTP & Policy Design]
 ```
 
-## 7.1 Motivation â€” The Problem Templates Solve
+## 7.1 Motivation → The Problem Templates Solve
 
 ### Real-World Analogy: The Cookie Cutter
 
-Imagine a bakery that makes three types of cookies: chocolate chip, gingerbread, and sugar. Without a cookie cutter, the baker hand-shapes each cookie individually â€” exact same labor for every batch. With a single cookie cutter (the **template**), the baker stamps out any dough type in seconds. The cutter is the **blueprint**; each stamped cookie is an **instantiation**.
+Imagine a bakery that makes three types of cookies: chocolate chip, gingerbread, and sugar. Without a cookie cutter, the baker hand-shapes each cookie individually → exact same labor for every batch. With a single cookie cutter (the **template**), the baker stamps out any dough type in seconds. The cutter is the **blueprint**; each stamped cookie is an **instantiation**.
 
 ```
-Dough (type)            â†’  Cookie Cutter (template)  â†’  Baked Cookie (instantiation)
-chocolate chip          â†’  shape<T>                   â†’  shape<chocolate_chip>
-gingerbread             â†’  shape<T>                   â†’  shape<gingerbread>
-sugar                   â†’  shape<T>                   â†’  shape<sugar>
+Dough (type)            →  Cookie Cutter (template)  →  Baked Cookie (instantiation)
+chocolate chip          →  shape<T>                   →  shape<chocolate_chip>
+gingerbread             →  shape<T>                   →  shape<gingerbread>
+sugar                   →  shape<T>                   →  shape<sugar>
 ```
 
-The cutter never changes â€” only the dough. This is exactly what templates do: the algorithm structure stays fixed; the type parameter changes.
+The cutter never changes → only the dough. This is exactly what templates do: the algorithm structure stays fixed; the type parameter changes.
 
 ### Analogy: Blueprint and Buildings
 
 A house blueprint describes a structure without specifying the exact materials. The same blueprint can produce a brick house, a wooden house, or a concrete house. The blueprint is the **template**; each constructed house is an **instantiation**.
 
 ```
-Blueprint (template)    â†’  material = type parameter
-Blueprint for house<T>  â†’  house<brick>, house<wood>, house<concrete>
+Blueprint (template)    →  material = type parameter
+Blueprint for house<T>  →  house<brick>, house<wood>, house<concrete>
 ```
 
 ### The Problem: Code Duplication Without Templates
@@ -103,7 +103,7 @@ Step 2: Use the template with a concrete type (e.g., int)
 Step 3: Compiler sees the call max_of(3, 7)
 Step 4: Compiler deduces T = int from arguments
 Step 5: Compiler generates int max_of(int, int) concretely
-Step 6: Result is a regular function â€” same as hand-written
+Step 6: Result is a regular function → same as hand-written
 Step 7: Linker resolves calls to the generated function
 ```
 
@@ -126,9 +126,9 @@ FUNCTION max_of_double(a: double, b: double) -> double:
 
 | Approach | Lines of Code | Maintenance Cost | Runtime Overhead | Type Safety |
 |----------|--------------|-----------------|------------------|-------------|
-| Manual overloading | O(N) types Ã— body | High â€” fix every copy | None | Full |
-| Templates | O(1) | Low â€” fix once | None (zero-cost) | Full |
-| Macros (#define) | O(1) | Medium â€” debug nightmare | None | None |
+| Manual overloading | O(N) types Ã— body | High → fix every copy | None | Full |
+| Templates | O(1) | Low → fix once | None (zero-cost) | Full |
+| Macros (#define) | O(1) | Medium → debug nightmare | None | None |
 | void* + casts | O(1) | High | Cast overhead | Lost |
 
 **Key insight:** Templates provide the same runtime performance as hand-written overloads (zero-cost abstraction) with the maintenance of a single definition.
@@ -200,7 +200,7 @@ int main() {
 orange
 ```
 
-### 7.2.3 Template Instantiation Process â€” Detailed Dry Run
+### 7.2.3 Template Instantiation Process → Detailed Dry Run
 
 When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 
@@ -215,10 +215,10 @@ When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 â”‚ 3     â”‚ Name lookup for max_of           â”‚ Found template max_of<T>              â”‚
 â”‚ 4     â”‚ Deduce T from argument types     â”‚ T = int (both args are int)           â”‚
 â”‚ 5     â”‚ Check template parameter count   â”‚ 1 parameter, 1 provided âœ“             â”‚
-â”‚ 6     â”‚ Substitute T â†’ int in signature  â”‚ int max_of(int a, int b)              â”‚
+â”‚ 6     â”‚ Substitute T → int in signature  â”‚ int max_of(int a, int b)              â”‚
 â”‚ 7     â”‚ Check constraint (if any)        â”‚ No concepts, unconditional âœ“          â”‚
-â”‚ 8     â”‚ Substitute T â†’ int in body       â”‚ return (a > b) ? a : b;               â”‚
-â”‚ 9     â”‚ Type-check the body with T=int   â”‚ int > int â†’ bool, OK âœ“               â”‚
+â”‚ 8     â”‚ Substitute T → int in body       â”‚ return (a > b) ? a : b;               â”‚
+â”‚ 9     â”‚ Type-check the body with T=int   â”‚ int > int → bool, OK âœ“               â”‚
 â”‚ 10    â”‚ Generate object code             â”‚ Machine instructions emitted          â”‚
 â”‚ 11    â”‚ Store in object file             â”‚ Symbol: int max_of(int, int)          â”‚
 â”‚ 12    â”‚ (Link time) Merge duplicates     â”‚ COMDAT folding if multiple TUs        â”‚
@@ -233,10 +233,10 @@ When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
 â”‚ Call         â”‚ T       â”‚ Return   â”‚ Body after substitution â”‚ Code generated?    â”‚
 â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ max_of(3,7)  â”‚ int     â”‚ int      â”‚ (a > b) ? a : b         â”‚ Yes â€” int version  â”‚
-â”‚ max_of(3.14, â”‚ double  â”‚ double   â”‚ (a > b) ? a : b         â”‚ Yes â€” double vers. â”‚
+â”‚ max_of(3,7)  â”‚ int     â”‚ int      â”‚ (a > b) ? a : b         â”‚ Yes → int version  â”‚
+â”‚ max_of(3.14, â”‚ double  â”‚ double   â”‚ (a > b) ? a : b         â”‚ Yes → double vers. â”‚
 â”‚  2.72)       â”‚         â”‚          â”‚                         â”‚                     â”‚
-â”‚ max_of(s1,s2)â”‚ string  â”‚ string   â”‚ (a > b) ? a : b         â”‚ Yes â€” string vers. â”‚
+â”‚ max_of(s1,s2)â”‚ string  â”‚ string   â”‚ (a > b) ? a : b         â”‚ Yes → string vers. â”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
                                                â”‚                                   â”‚
                          Each call generates a SEPARATE function with SEPARATE    â”‚
@@ -257,7 +257,7 @@ When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 |--------|-----------|-------------|
 | **Template definition** | O(1) | One definition serves N types |
 | **Compile-time cost** | O(N Ã— S) | N = number of types, S = size of template |
-| **Runtime performance** | O(1) â€” optimal | Generated code = hand-written quality |
+| **Runtime performance** | O(1) → optimal | Generated code = hand-written quality |
 | **Binary size (code bloat)** | O(N) | Each type gets its own function |
 | **Deduplication (linker)** | O(N) worst, often O(1) | COMDAT folding merges identical machine code |
 | **Maintenance** | O(1) per fix | One definition to modify |
@@ -272,7 +272,7 @@ When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 
 Multiple function templates (or a template and a non-template function) can coexist for the same name. Overload resolution follows a strict priority:
 
-1. **Exact match** â€” non-template function wins over template
+1. **Exact match** → non-template function wins over template
 2. **Template with exact deduction**
 3. **Promotion/conversion**
 
@@ -306,7 +306,7 @@ Non-template (C-string): beta
 Template: 3.14
 ```
 
-**Why the non-template wins for `const char*`:** The non-template is an exact match. The template would deduce `T = const char*` and compare pointers (memory addresses), not string content. The non-template overload uses `strcmp` for lexicographic comparison â€” semantically correct.
+**Why the non-template wins for `const char*`:** The non-template is an exact match. The template would deduce `T = const char*` and compare pointers (memory addresses), not string content. The non-template overload uses `strcmp` for lexicographic comparison → semantically correct.
 
 ### 7.2.5 Function Template with Multiple Type Parameters
 
@@ -394,11 +394,11 @@ int main() {
 â”‚ Step   â”‚ Action                          â”‚ Result                        â”‚
 â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
 â”‚ 1      â”‚ Parse FixedArray<int, 5>        â”‚ T = int, N = 5                â”‚
-â”‚ 2      â”‚ Substitute T â†’ int in body      â”‚ int data_[5];                 â”‚
-â”‚ 3      â”‚ Substitute N â†’ 5 in body        â”‚ size() returns 5              â”‚
+â”‚ 2      â”‚ Substitute T → int in body      â”‚ int data_[5];                 â”‚
+â”‚ 3      â”‚ Substitute N → 5 in body        â”‚ size() returns 5              â”‚
 â”‚ 4      â”‚ Generate class layout           â”‚ sizeof = 5 * sizeof(int) = 20 â”‚
 â”‚ 5      â”‚ Verify N > 0 (implicit)         â”‚ 5 > 0 âœ“                       â”‚
-â”‚ 6      â”‚ Instantiate constructor         â”‚ FixedArray() â€” default init   â”‚
+â”‚ 6      â”‚ Instantiate constructor         â”‚ FixedArray() → default init   â”‚
 â”‚ 7      â”‚ Instantiate size()              â”‚ returns 5 (constexpr)         â”‚
 â”‚ 8      â”‚ Instantiate fill()              â”‚ loops 5 times                 â”‚
 â”‚ 9      â”‚ Instantiate operator[]          â”‚ bounds check? only if asked   â”‚
@@ -406,10 +406,10 @@ int main() {
 ```
 
 **Complexity Analysis:**
-- **Memory:** sizeof(T) Ã— N â€” deterministic and known at compile time
-- **Access:** O(1) â€” direct indexing, same as raw array
-- **Safety:** Array bounds checked at compile time for constant indices â€” zero-cost
-- **Compare to `std::vector`:** `FixedArray` allocates on stack (no heap), has no dynamic resizing overhead, and N is part of the type â€” `FixedArray<int, 5>` and `FixedArray<int, 10>` are different types.
+- **Memory:** sizeof(T) Ã— N → deterministic and known at compile time
+- **Access:** O(1) → direct indexing, same as raw array
+- **Safety:** Array bounds checked at compile time for constant indices → zero-cost
+- **Compare to `std::vector`:** `FixedArray` allocates on stack (no heap), has no dynamic resizing overhead, and N is part of the type → `FixedArray<int, 5>` and `FixedArray<int, 10>` are different types.
 
 **Why N is part of the type:**
 
@@ -506,7 +506,7 @@ size_t Stack<T>::size() const {
 
 **Why `Stack<T>::` and not just `Stack::`:** Without `<T>`, the compiler would look for a concrete class named `Stack` (not a class template), which does not exist.
 
-### 7.3.3 Class Template Instantiation â€” Detailed Dry Run
+### 7.3.3 Class Template Instantiation → Detailed Dry Run
 
 ```cpp
 int main() {
@@ -534,7 +534,7 @@ int main() {
 â”‚ 6      â”‚ push template instantiated       â”‚ void push(const int&) code gen â”‚
 â”‚ 7      â”‚ Check push body validity         â”‚ vector<int>::push_back(int) âœ“  â”‚
 â”‚ 8      â”‚ empty(), size(), top()           â”‚ NOT instantiated (lazy)        â”‚
-â”‚        â”‚ not called                       â”‚ â€” no code generated            â”‚
+â”‚        â”‚ not called                       â”‚ → no code generated            â”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
@@ -556,13 +556,13 @@ int main() {
 **Key insight: Lazy instantiation.** The compiler only generates member functions that are actually used. If you never call `Stack<int>::top()`, no code is generated for it. This saves compile time and binary size.
 
 **Complexity Analysis:**
-- **push_back:** Amortized O(1) â€” `std::vector` grows geometrically
-- **pop:** O(1) â€” simply decrements size
-- **top:** O(1) â€” direct reference to back element
+- **push_back:** Amortized O(1) → `std::vector` grows geometrically
+- **pop:** O(1) → simply decrements size
+- **top:** O(1) → direct reference to back element
 - **Space:** O(N) where N is number of elements pushed
 - **Compile-time cost:** Proportional to number of member functions actually used
 
-### 7.3.4 Class Template with Non-Type Parameters â€” Ring Buffer
+### 7.3.4 Class Template with Non-Type Parameters → Ring Buffer
 
 ```cpp
 #include <iostream>
@@ -691,7 +691,7 @@ class Adapter { /* ... */ };
 ```
 
 **Complexity Analysis:**
-- **Flexibility cost:** Compile-time only â€” no runtime cost
+- **Flexibility cost:** Compile-time only → no runtime cost
 - **Binary size:** O(N Ã— M) where N = types used, M = containers used
 - **Maintenance:** One implementation works with any compatible container
 
@@ -711,7 +711,7 @@ When a name in a template depends on a template parameter, the compiler cannot d
 template <typename T>
 class Example {
 public:
-    // T::value_type depends on T â€” could be a type or a static member
+    // T::value_type depends on T → could be a type or a static member
     // Without typename, compiler assumes it's a value (variable/function)
     using Type = typename T::value_type;  // typename required
 
@@ -743,7 +743,7 @@ The C++ standard requires `typename` to resolve the ambiguity.
 
 ## 7.4 Template Specialization
 
-### 7.4.1 Full (Explicit) Specialization â€” Deep Dive
+### 7.4.1 Full (Explicit) Specialization → Deep Dive
 
 Full specialization provides a completely different implementation for a specific template argument combination:
 
@@ -880,10 +880,10 @@ Function templates support overloading, which subsumes partial specialization. O
 
 // Use overloading (LEGAL and preferred):
 template <typename T> void foo(T value);    // base
-template <typename T> void foo(T* ptr);     // overload â€” not a specialization
+template <typename T> void foo(T* ptr);     // overload → not a specialization
 ```
 
-### 7.4.3 Explicit vs Partial vs Full Specialization â€” Comparison Table
+### 7.4.3 Explicit vs Partial vs Full Specialization → Comparison Table
 
 | Aspect | Full (Explicit) Specialization | Partial Specialization | Explicit Instantiation |
 |--------|-------------------------------|----------------------|----------------------|
@@ -896,7 +896,7 @@ template <typename T> void foo(T* ptr);     // overload â€” not a specializ
 | **Example** | `vector<bool>` | `is_pointer<T*>` | Template code in .cpp |
 | **Use case** | Type-specific optimization | Category optimization | Hide definitions, reduce compile time |
 
-### 7.4.4 Full Specialization of Class Templates â€” Example
+### 7.4.4 Full Specialization of Class Templates → Example
 
 ```cpp
 #include <iostream>
@@ -970,12 +970,12 @@ void print(const T& val) {
     std::cout << "Generic: " << val << "\n";
 }
 
-// Overload â€” works for const char*
+// Overload → works for const char*
 void print(const char* val) {
     std::cout << "C-string: " << val << "\n";
 }
 
-// Specialization â€” works but fragile
+// Specialization → works but fragile
 template <>
 void print<int>(const int& val) {
     std::cout << "Specialized int: " << val << "\n";
@@ -988,7 +988,7 @@ int main() {
 }
 ```
 
-**Why overloading beats specialization:** Overload resolution is more intuitive. Specialization interacts badly with overloading â€” if new overloads are added, specializations may be silently ignored. Overloads participate in name lookup; specializations do not.
+**Why overloading beats specialization:** Overload resolution is more intuitive. Specialization interacts badly with overloading → if new overloads are added, specializations may be silently ignored. Overloads participate in name lookup; specializations do not.
 
 ### 7.4.6 Real-World Specialization: `std::vector<bool>`
 
@@ -1026,7 +1026,7 @@ namespace std {
 }
 ```
 
-`vector<bool>` packs 8 booleans into each byte, saving 87.5% memory. But `operator[]` returns a proxy object (not a `bool&`) because individual bits are not addressable â€” a notorious design tradeoff.
+`vector<bool>` packs 8 booleans into each byte, saving 87.5% memory. But `operator[]` returns a proxy object (not a `bool&`) because individual bits are not addressable → a notorious design tradeoff.
 
 ## 7.5 Variadic Templates (C++11)
 
@@ -1072,7 +1072,7 @@ Before fold expressions (C++17), variadic templates required recursion:
 ```cpp
 #include <iostream>
 
-// Base case â€” no arguments: terminates recursion
+// Base case → no arguments: terminates recursion
 void print_all() {
     std::cout << "\n";
 }
@@ -1102,27 +1102,27 @@ int main() {
 â”‚ 2          â”‚ (3.14, "hello", 'c')       â”‚ 3.14   â”‚ "3.14 "  â”‚ ("hello", 'c')     â”‚
 â”‚ 3          â”‚ ("hello", 'c')             â”‚ "hello"â”‚ "hello " â”‚ ('c')              â”‚
 â”‚ 4          â”‚ ('c')                      â”‚ 'c'    â”‚ "c "     â”‚ ()                 â”‚
-â”‚ 5          â”‚ ()                         â”‚ â€”      â”‚ "\n"     â”‚ â€” base case        â”‚
+â”‚ 5          â”‚ ()                         â”‚ →      â”‚ "\n"     â”‚ → base case        â”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Instantiation tree for `print_all(1, 3.14, "hello", 'c')`:**
 
 ```
-print_all(int, double, const char*, char)           â€” uses cout << int
-  â””â”€ print_all(double, const char*, char)           â€” uses cout << double
-       â””â”€ print_all(const char*, char)               â€” uses cout << const char*
-            â””â”€ print_all(char)                       â€” uses cout << char
-                 â””â”€ print_all()                      â€” base case
+print_all(int, double, const char*, char)           → uses cout << int
+  â””â”€ print_all(double, const char*, char)           → uses cout << double
+       â””â”€ print_all(const char*, char)               → uses cout << const char*
+            â””â”€ print_all(char)                       → uses cout << char
+                 â””â”€ print_all()                      → base case
 ```
 
 Each level is a separate function template instantiation with a different signature. The compiler generates 5 distinct functions.
 
 **Complexity Analysis:**
-- **Compile-time depth:** O(N) â€” one template instantiation per argument
-- **Runtime depth:** O(N) â€” one function call per argument (tail recursion not guaranteed â€” there is work after the recursive call: printing the newline when the base case returns)
-- **Code bloat:** O(N) â€” N distinct function instantiations
-- **Alternative (fold expressions):** O(1) instantiation â€” vastly better
+- **Compile-time depth:** O(N) → one template instantiation per argument
+- **Runtime depth:** O(N) → one function call per argument (tail recursion not guaranteed → there is work after the recursive call: printing the newline when the base case returns)
+- **Code bloat:** O(N) → N distinct function instantiations
+- **Alternative (fold expressions):** O(1) instantiation → vastly better
 
 ### 7.5.3 Fold Expressions (C++17)
 
@@ -1286,14 +1286,14 @@ Modified 0: 100
 This is a classic **recursive inheritance** pattern. The `get<2>` call resolves via:
 
 ```
-get<2>(t) â†’ GetHelper<2, int, double, string>::get(t)
-          â†’ GetHelper<1, double, string>::get(t.tail())
-          â†’ GetHelper<0, string>::get(t.tail().tail())
-          â†’ t.tail().tail().head()
-          â†’ the string member
+get<2>(t) → GetHelper<2, int, double, string>::get(t)
+          → GetHelper<1, double, string>::get(t.tail())
+          → GetHelper<0, string>::get(t.tail().tail())
+          → t.tail().tail().head()
+          → the string member
 ```
 
-## 7.6 SFINAE â€” Substitution Failure Is Not An Error
+## 7.6 SFINAE → Substitution Failure Is Not An Error
 
 ### 7.6.1 Core Principle
 
@@ -1311,13 +1311,13 @@ SFINAE is a C++ rule: when the compiler substitutes template arguments into a fu
               Other candidates       Other candidates
               still considered       still considered
                     â”‚                    â”‚
-              Only if ALL fail â†’     Only if ALL fail â†’
+              Only if ALL fail →     Only if ALL fail →
               Compilation Error     Compilation Error
 ```
 
-**Key rule:** SFINAE applies ONLY to the **immediate context** of a function template declaration (template parameters, function parameter types, return type). Errors in the function body are NOT SFINAE â€” they are hard errors.
+**Key rule:** SFINAE applies ONLY to the **immediate context** of a function template declaration (template parameters, function parameter types, return type). Errors in the function body are NOT SFINAE → they are hard errors.
 
-### 7.6.2 `std::enable_if` â€” The Classic SFINAE Tool
+### 7.6.2 `std::enable_if` → The Classic SFINAE Tool
 
 ```cpp
 #include <iostream>
@@ -1381,9 +1381,9 @@ using enable_if_t = typename enable_if<B, T>::type;
 â”‚ 2. condition â”‚ is_integral<int> = true  â”‚ is_floating_point<int> = falseâ”‚
 â”‚ 3. enable_if â”‚ enable_if<true, bool>    â”‚ enable_if<false, bool>        â”‚
 â”‚ 4. ::type    â”‚ ::type = bool âœ“          â”‚ ::type does not EXIST âœ—       â”‚
-â”‚ 5. SFINAE?   â”‚ No â€” valid substitution  â”‚ YES â€” removed from overload   â”‚
+â”‚ 5. SFINAE?   â”‚ No → valid substitution  â”‚ YES → removed from overload   â”‚
 â”‚              â”‚                          â”‚ set                           â”‚
-â”‚ 6. RESULT    â”‚ Template 1 selected      â”‚ â€”                             â”‚
+â”‚ 6. RESULT    â”‚ Template 1 selected      â”‚ →                             â”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
@@ -1398,8 +1398,8 @@ using enable_if_t = typename enable_if<B, T>::type;
 â”‚              â”‚ = false                  â”‚ = false                       â”‚
 â”‚ 3. enable_if â”‚ enable_if<false, bool>   â”‚ enable_if<false, bool>        â”‚
 â”‚ 4. ::type    â”‚ ::type does not EXIST âœ—  â”‚ ::type does not EXIST âœ—       â”‚
-â”‚ 5. SFINAE?   â”‚ YES â€” removed            â”‚ YES â€” removed                 â”‚
-â”‚ 6. RESULT    â”‚ No viable candidates     â”‚ â€” compilation ERROR           â”‚
+â”‚ 5. SFINAE?   â”‚ YES → removed            â”‚ YES → removed                 â”‚
+â”‚ 6. RESULT    â”‚ No viable candidates     â”‚ → compilation ERROR           â”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
@@ -1414,7 +1414,7 @@ A powerful SFINAE pattern for detecting whether a type has a specific member:
 #include <string>
 #include <utility>
 
-// void_t maps any type to void â€” used to trigger SFINAE
+// void_t maps any type to void → used to trigger SFINAE
 template <typename...>
 using void_t = void;
 
@@ -1462,17 +1462,17 @@ OtherType:      0
 **Step-by-step SFINAE resolution for `has_size<int>`:**
 
 ```
-  Step 1: has_size<int> â€” no second argument, defaults to void
-          â†’ Evaluate primary template: has_size<int, void>
-          â†’ Inherits std::false_type
+  Step 1: has_size<int> → no second argument, defaults to void
+          → Evaluate primary template: has_size<int, void>
+          → Inherits std::false_type
 
   Step 2: Consider partial specialization:
           has_size<int, void_t<decltype(std::declval<int>().size())>>
-          â†’ Substitute T = int into the partial spec expression:
-          â†’ void_t<decltype( int().size() )>
-          â†’ int().size() is INVALID (int has no size() member)
-          â†’ decltype fails â†’ substitution failure
-          â†’ SFINAE removes this candidate
+          → Substitute T = int into the partial spec expression:
+          → void_t<decltype( int().size() )>
+          → int().size() is INVALID (int has no size() member)
+          → decltype fails → substitution failure
+          → SFINAE removes this candidate
 
   Step 3: Only primary template remains: value = false
 ```
@@ -1480,22 +1480,22 @@ OtherType:      0
 **Step-by-step for `has_size<std::vector<int>>`:**
 
 ```
-  Step 1: Primary: has_size<vector<int>, void> â†’ false_type
+  Step 1: Primary: has_size<vector<int>, void> → false_type
 
   Step 2: Partial specialisation:
           has_size<vector<int>, void_t<decltype(declval<vector<int>>().size())>>
-          â†’ vector<int>().size() is VALID (returns size_t)
-          â†’ decltype(size_t) = size_t
-          â†’ void_t<size_t> = void
-          â†’ Matches: has_size<vector<int>, void>
+          → vector<int>().size() is VALID (returns size_t)
+          → decltype(size_t) = size_t
+          → void_t<size_t> = void
+          → Matches: has_size<vector<int>, void>
 
-  Step 3: Partial specialization is more specialized than primary â†’ selected
-          â†’ value = true
+  Step 3: Partial specialization is more specialized than primary → selected
+          → value = true
 ```
 
 **`void_t` explanation:** `void_t` converts any type(s) to `void`. Its purpose is to be used as a default template argument that is replaced by the SFINAE-checked expression. If the expression is valid, `void_t<...>` = `void` = the default, so the specialization matches. If invalid, substitution fails and SFINAE removes the specialization.
 
-### 7.6.4 `if constexpr` â€” The C++17 Alternative
+### 7.6.4 `if constexpr` → The C++17 Alternative
 
 For many SFINAE use cases, `if constexpr` provides a cleaner alternative:
 
@@ -1528,16 +1528,16 @@ int main() {
 2.5
 ```
 
-**`if constexpr` vs SFINAE â€” Comparison:**
+**`if constexpr` vs SFINAE → Comparison:**
 
 | Aspect | SFINAE (enable_if) | if constexpr |
 |--------|-------------------|--------------|
-| **Readability** | Poor â€” nested template syntax | Excellent â€” natural control flow |
-| **Error messages** | Inscrutable â€” pages of template backtrace | Clean â€” points to failing branch |
+| **Readability** | Poor → nested template syntax | Excellent → natural control flow |
+| **Error messages** | Inscrutable → pages of template backtrace | Clean → points to failing branch |
 | **When available** | C++98/11 | C++17 |
 | **Can disable return types** | Yes (via ::type) | No (function must compile) |
-| **Multiple overloads** | Yes â€” each SFINAE guard = separate function | Single function with branches |
-| **Debugging** | Extremely hard â€” silent candidate removal | Straightforward â€” debugger steps through |
+| **Multiple overloads** | Yes → each SFINAE guard = separate function | Single function with branches |
+| **Debugging** | Extremely hard → silent candidate removal | Straightforward → debugger steps through |
 | **Type-level detection** | Yes (void_t idiom) | No (cannot make types disappear) |
 
 ### 7.6.5 SFINAE vs Concepts (C++20)
@@ -1572,16 +1572,16 @@ int main() {
 }
 ```
 
-**Concepts vs SFINAE â€” Comparison:**
+**Concepts vs SFINAE → Comparison:**
 
 | Aspect | Concepts (C++20) | SFINAE (C++11/17) |
 |--------|-----------------|-------------------|
 | **Syntax** | `template <Integral T>` | `template <typename T, enable_if_t<...>>` |
-| **Error messages** | Clear â€” "T does not satisfy Integral" | Cryptic â€” template backtrace |
-| **Readability** | High â€” self-documenting | Low â€” nested boilerplate |
-| **Type constraints** | Direct â€” concepts are named requirements | Indirect â€” enable_if on return/param |
+| **Error messages** | Clear → "T does not satisfy Integral" | Cryptic → template backtrace |
+| **Readability** | High → self-documenting | Low → nested boilerplate |
+| **Type constraints** | Direct → concepts are named requirements | Indirect → enable_if on return/param |
 | **Overload resolution** | Constraint-based ordering | Enable_if boolean trick |
-| **Composability** | `concept C = A && B` â€” natural | Manual template nesting |
+| **Composability** | `concept C = A && B` → natural | Manual template nesting |
 | **Availability** | C++20 only | C++98 onward |
 
 ## 7.7 Template Compilation Model
@@ -1591,7 +1591,7 @@ int main() {
 Templates must be visible at the point of instantiation. The compiler needs the full template definition to generate code for each concrete type. This is called the **inclusion model** or **header-only model**:
 
 ```cpp
-// my_template.h â€” header file
+// my_template.h → header file
 #ifndef MY_TEMPLATE_H
 #define MY_TEMPLATE_H
 
@@ -1610,7 +1610,7 @@ private:
 ```
 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
 â”‚ my_main.cpp â”‚ #includeâ”‚my_template.h â”‚         â”‚ Compiler  â”‚
-â”‚ (T = int)   â”‚â”€â”€â”€â”€â”€â”€â”€â”€â†’â”‚ template def â”‚â”€â”€â”€â”€â”€â”€â”€â”€â†’â”‚ generates â”‚
+â”‚ (T = int)   â”‚â”€â”€â”€â”€â”€â”€â”€â”€→â”‚ template def â”‚â”€â”€â”€â”€â”€â”€â”€â”€→â”‚ generates â”‚
 â”‚             â”‚         â”‚              â”‚         â”‚ MyTemplateâ”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜         â”‚ <int> codeâ”‚
                                                  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
@@ -1648,7 +1648,7 @@ void func_b() {
 â”‚ c.cpp    â”‚    â”‚ (no MyTemplate use)   â”‚  â”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
                                            â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                                           â”œâ”€â”€â†’â”‚  Linker  â”‚â”€â”€â†’ One copy retained
+                                           â”œâ”€â”€→â”‚  Linker  â”‚â”€â”€→ One copy retained
                                            â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
                                            â”‚
                                            â”‚  Other copies discarded
@@ -1660,12 +1660,12 @@ The linker deduplicates identical template instantiations via:
 
 This is why templates do NOT increase binary size proportionally to the number of translation units.
 
-### 7.7.3 Explicit Instantiation â€” Hiding Template Definitions
+### 7.7.3 Explicit Instantiation → Hiding Template Definitions
 
 You can keep template definitions in .cpp files by explicitly instantiating the types you need:
 
 ```cpp
-// my_template.cpp â€” contains both declaration and definition
+// my_template.cpp → contains both declaration and definition
 template <typename T>
 class MyTemplate {
 public:
@@ -1675,11 +1675,11 @@ private:
     T value_;
 };
 
-// Explicit instantiations â€” only these types will be available for linking
+// Explicit instantiations → only these types will be available for linking
 template class MyTemplate<int>;
 template class MyTemplate<double>;
 
-// my_template.h â€” just the declaration
+// my_template.h → just the declaration
 template <typename T>
 class MyTemplate {
 public:
@@ -1695,26 +1695,26 @@ private:
 #include "my_template.h"
 
 int main() {
-    MyTemplate<int> obj;    // OK â€” linked to explicit instantiation in .cpp
+    MyTemplate<int> obj;    // OK → linked to explicit instantiation in .cpp
     obj.set(42);
 
-    // MyTemplate<char> obj2;  // LINKER ERROR â€” never explicitly instantiated
+    // MyTemplate<char> obj2;  // LINKER ERROR → never explicitly instantiated
     return 0;
 }
 ```
 
 **When to use explicit instantiation:**
 1. **Library code** that only needs to work with a known set of types
-2. **Reducing compile time** â€” precompile template instantiations for common types
-3. **Hiding implementation** â€” distribute headers with declarations only
-4. **Controlling binary size** â€” prevent template bloat from user-defined types
+2. **Reducing compile time** → precompile template instantiations for common types
+3. **Hiding implementation** → distribute headers with declarations only
+4. **Controlling binary size** → prevent template bloat from user-defined types
 
 ### 7.7.4 The `export` Keyword (Historical)
 
 C++98 introduced `export` to allow template definitions in separate files. It was removed in C++11 because compilers universally failed to implement it correctly. Only one compiler (Comeau C++) ever shipped a working implementation.
 
 ```cpp
-// Historical curiosity â€” never use this
+// Historical curiosity → never use this
 export template <typename T>
 T max_of(T a, T b) {
     return (a > b) ? a : b;
@@ -1723,7 +1723,7 @@ T max_of(T a, T b) {
 
 **Lesson:** The inclusion model is the only practical compilation model for templates. Always define templates in headers.
 
-### 7.7.5 Template Compilation Model â€” Comparison Table
+### 7.7.5 Template Compilation Model → Comparison Table
 
 | Aspect | Inclusion Model | Explicit Instantiation | Separate Model (export) |
 |--------|----------------|----------------------|------------------------|
@@ -1734,13 +1734,13 @@ T max_of(T a, T b) {
 | **Implementation hiding** | No (full source visible) | Yes | Yes |
 | **Status** | Universal standard | Used for library stability | Removed from standard |
 
-## 7.8 `typename` vs `class` â€” Detailed Comparison
+## 7.8 `typename` vs `class` → Detailed Comparison
 
 In template parameter declarations, `typename` and `class` are interchangeable:
 
 ```cpp
 template <typename T> void func(T);    // âœ“
-template <class T> void func(T);       // âœ“ â€” identical meaning
+template <class T> void func(T);       // âœ“ → identical meaning
 ```
 
 ### The Historical Distinction
@@ -1751,15 +1751,15 @@ When templates were first introduced to C++, only `class` was available:
 template <class T> void func(T);       // Original C++ syntax (1990s)
 ```
 
-Later, the committee recognized that template parameters need not be class types â€” they can be `int`, `double`, `enum`, or any type. The `typename` keyword was added (in C++98 itself, as part of the standard) to reflect this more accurately.
+Later, the committee recognized that template parameters need not be class types → they can be `int`, `double`, `enum`, or any type. The `typename` keyword was added (in C++98 itself, as part of the standard) to reflect this more accurately.
 
 ### The Practical Difference
 
-**There is none â€” for template parameter declarations.** Both declare a type parameter:
+**There is none → for template parameter declarations.** Both declare a type parameter:
 
 ```cpp
 template <class T>     // T is ANY type (int, double, class, struct, union, etc.)
-template <typename T>  // T is ANY type â€” identical meaning
+template <typename T>  // T is ANY type → identical meaning
 ```
 
 ### When `typename` Is Mandatory
@@ -1769,7 +1769,7 @@ template <typename T>  // T is ANY type â€” identical meaning
 ```cpp
 template <typename T>
 void func() {
-    typename T::iterator it;   // "iterator is a type" â€” typename REQUIRED
+    typename T::iterator it;   // "iterator is a type" → typename REQUIRED
     // T::iterator* it;        // Without typename: parsed as multiplication
 
     typename std::vector<T>::const_iterator cit; // typename required (dependent)
@@ -1800,13 +1800,13 @@ Modern style guides (C++ Core Guidelines, Google Style, LLVM) prefer `typename` 
 - The parameter is expected to be a user-defined class type (as documentation hint)
 - Working with template template parameters in pre-C++17 code
 
-## 7.9 Function Template vs Class Template â€” Comprehensive Comparison
+## 7.9 Function Template vs Class Template → Comprehensive Comparison
 
 | Aspect | Function Template | Class Template |
 |--------|-------------------|----------------|
 | **Syntax** | `template <T> T max(T a, T b)` | `template <T> class Stack { ... };` |
 | **Instantiation trigger** | Called with arguments | Object declaration |
-| **Type deduction** | Yes â€” T deduced from arguments | No â€” T must be explicitly specified |
+| **Type deduction** | Yes → T deduced from arguments | No → T must be explicitly specified |
 | **Lazy instantiation** | Whole function body (all or nothing) | Per-member (only used members) |
 | **Partial specialization** | NOT allowed (use overloading) | Allowed |
 | **Template template params** | Allowed | Allowed |
@@ -1816,11 +1816,11 @@ Modern style guides (C++ Core Guidelines, Google Style, LLVM) prefer `typename` 
 | **Metaprogramming** | Limited (no partial spec) | Primary vehicle for TMP |
 | **Example in STL** | `std::sort`, `std::find_if` | `std::vector`, `std::array` |
 | **When to use** | Algorithms operating on types | Data structures holding types |
-| **Specialization** | Only full (avoid â€” use overload instead) | Full and partial |
+| **Specialization** | Only full (avoid → use overload instead) | Full and partial |
 
 ## 7.10 Applications in Real Systems
 
-### 7.10.1 STL Containers â€” Template Architecture
+### 7.10.1 STL Containers → Template Architecture
 
 Every STL container is a class template. The container adaptors use template template parameters:
 
@@ -1851,7 +1851,7 @@ namespace std {
 }
 ```
 
-### 7.10.2 `std::enable_if` and Type Traits â€” Memcpy Optimization
+### 7.10.2 `std::enable_if` and Type Traits → Memcpy Optimization
 
 ```cpp
 #include <iostream>
@@ -1891,7 +1891,7 @@ struct NonTrivial {
 
 int main() {
     Trivial t1[100], t2[100];
-    fast_copy(t1, t2, 100);  // memcpy path â€” trivially copyable
+    fast_copy(t1, t2, 100);  // memcpy path → trivially copyable
 
     NonTrivial nt1[100], nt2[100];
     fast_copy(nt1, nt2, 100);  // element-wise path
@@ -1905,18 +1905,18 @@ element-wise path (100 elements)
 ```
 
 **Complexity Analysis:**
-- **Trivially copyable path:** O(N) but memcpy uses SIMD/vectorized instructions â€” ~10-100x faster than element-wise for large arrays
-- **Non-trivially copyable path:** O(N) â€” operator= per element, preserves deep-copy semantics
-- **Selection cost:** Zero at runtime â€” entirely compile-time dispatch via SFINAE
+- **Trivially copyable path:** O(N) but memcpy uses SIMD/vectorized instructions → ~10-100x faster than element-wise for large arrays
+- **Non-trivially copyable path:** O(N) → operator= per element, preserves deep-copy semantics
+- **Selection cost:** Zero at runtime → entirely compile-time dispatch via SFINAE
 
-### 7.10.3 CRTP â€” Curiously Recurring Template Pattern
+### 7.10.3 CRTP → Curiously Recurring Template Pattern
 
 CRTP is a technique where a class template accepts a derived class as its template argument, enabling static polymorphism:
 
 ```cpp
 #include <iostream>
 
-// Base template â€” accepts Derived as template parameter
+// Base template → accepts Derived as template parameter
 template <typename Derived>
 class Shape {
 public:
@@ -1973,19 +1973,19 @@ Rectangle area: 12
 | Aspect | CRTP (Static Polymorphism) | Virtual Functions (Dynamic Polymorphism) |
 |--------|---------------------------|----------------------------------------|
 | **Dispatch mechanism** | Compile-time via static_cast | Runtime via vtable |
-| **Overhead** | Zero â€” inlined | vtable pointer + indirection |
-| **Type erasure** | No â€” each T is a different type | Yes â€” base pointer to any derived |
-| **Container friendly** | No â€” must know T at compile time | Yes â€” store base* in heterogenous container |
-| **Code bloat** | O(N) instantiations (N types) | O(1) â€” single vtable |
+| **Overhead** | Zero → inlined | vtable pointer + indirection |
+| **Type erasure** | No → each T is a different type | Yes → base pointer to any derived |
+| **Container friendly** | No → must know T at compile time | Yes → store base* in heterogenous container |
+| **Code bloat** | O(N) instantiations (N types) | O(1) → single vtable |
 | **Virtual destructor** | Not needed | Required |
 | **Use case** | Templates, compile-time dispatch | Runtime polymorphism, plugins |
 
 **Real-world CRTP examples:**
-- `std::enable_shared_from_this<T>` â€” adds `shared_from_this()` to a class
-- `std::iterator` (deprecated) â€” base for custom iterators
-- Boost.Operators â€” generates operator overloads from minimal set
-- Eigen â€” matrix expression templates for zero-cost abstractions
-- Microsoft ATL/WTL â€” window class hierarchies
+- `std::enable_shared_from_this<T>` → adds `shared_from_this()` to a class
+- `std::iterator` (deprecated) → base for custom iterators
+- Boost.Operators → generates operator overloads from minimal set
+- Eigen → matrix expression templates for zero-cost abstractions
+- Microsoft ATL/WTL → window class hierarchies
 
 ### 7.10.4 Policy-Based Design
 
@@ -2069,9 +2069,9 @@ int main() {
 ```
 
 **Complexity Analysis:**
-- **Runtime overhead:** Zero â€” policy functions are inlined at compile time
+- **Runtime overhead:** Zero → policy functions are inlined at compile time
 - **Compile-time cost:** O(P Ã— M) where P = policies, M = methods
-- **Binary size:** Each policy combination creates a separate type â†’ O(N Ã— P)
+- **Binary size:** Each policy combination creates a separate type → O(N Ã— P)
 - **Flexibility:** N types Ã— M threading Ã— L logging = NÃ—MÃ—L combinations with zero runtime cost
 
 ### 7.10.5 Type Traits Library
@@ -2116,7 +2116,7 @@ int main() {
 }
 ```
 
-### 7.10.6 `std::enable_shared_from_this` â€” CRTP in the Standard Library
+### 7.10.6 `std::enable_shared_from_this` → CRTP in the Standard Library
 
 ```cpp
 #include <iostream>
@@ -2190,12 +2190,12 @@ FixedArray<int, N> arr;  // OK: N is compile-time constant
 
 ### Best Practice Checklist
 
-1. **Define templates in headers** â€” inclusion model is the only portable approach
+1. **Define templates in headers** → inclusion model is the only portable approach
 2. **Prefer `typename` over `class`** for type parameters (C++ Core Guidelines)
 3. **Prefer overloading over specialization** for function templates
 4. **Use `if constexpr`** instead of SFINAE when possible (C++17)
 5. **Use Concepts** instead of SFINAE when possible (C++20)
-6. **Be aware of lazy instantiation** â€” don't put type-dependent code in unused branches
+6. **Be aware of lazy instantiation** → don't put type-dependent code in unused branches
 7. **Use `static_assert`** for better error messages on invalid template arguments
 8. **CRTP for static polymorphism** when virtual dispatch is too expensive
 9. **Policy-based design** for compile-time customization of behavior
@@ -2213,7 +2213,7 @@ FixedArray<int, N> arr;  // OK: N is compile-time constant
 | **Who does it** | Compiler automatically | Programmer explicitly |
 | **When** | When the template is used with a new type | When the generic version is insufficient |
 | **Syntax** | Automatic (no extra code) | `template <> struct C<int> { ... };` |
-| **Example** | `vector<int>` â€” instantiated from `vector<T>` | `vector<bool>` â€” full specialization |
+| **Example** | `vector<int>` → instantiated from `vector<T>` | `vector<bool>` → full specialization |
 
 **Key insight:** Instantiation = automatic code generation per type. Specialization = programmer-provided override for specific types.
 
@@ -2223,12 +2223,12 @@ FixedArray<int, N> arr;  // OK: N is compile-time constant
 
 ```cpp
 // Overloading gives the same effect as partial specialization would:
-template <typename T> void foo(T);       // #1 â€” generic
-template <typename T> void foo(T*);      // #2 â€” overload for pointers
-template <typename T> void foo(const T*); // #3 â€” overload for const pointers
+template <typename T> void foo(T);       // #1 → generic
+template <typename T> void foo(T*);      // #2 → overload for pointers
+template <typename T> void foo(const T*); // #3 → overload for const pointers
 ```
 
-Overload resolution selects the most specialized viable overload â€” the same behavior partial specialization would provide. Adding partial specialization to function templates would create confusing interactions with existing overload resolution rules.
+Overload resolution selects the most specialized viable overload → the same behavior partial specialization would provide. Adding partial specialization to function templates would create confusing interactions with existing overload resolution rules.
 
 For class templates, there is no overloading mechanism, so partial specialization fills a genuine need.
 
@@ -2238,8 +2238,8 @@ For class templates, there is no overloading mechanism, so partial specializatio
 
 **Use cases:**
 1. **Enable/disable function overloads** based on type properties (`enable_if`)
-2. **Detect type capabilities** â€” does it have `.size()`? Does it have a nested `iterator`?
-3. **Select optimal implementation** â€” memcpy for trivially copyable, element-wise otherwise
+2. **Detect type capabilities** → does it have `.size()`? Does it have a nested `iterator`?
+3. **Select optimal implementation** → memcpy for trivially copyable, element-wise otherwise
 4. **Conditional compilation** of class members via partial specialization
 
 **Canonical example:**
@@ -2271,10 +2271,10 @@ class Derived : public Base<Derived> {
 ```
 
 **Benefits:**
-1. **Static polymorphism** â€” same interface, zero virtual dispatch overhead
-2. **Code reuse** â€” inject behavior without virtual functions
-3. **Compile-time dispatch** â€” can be fully inlined, unlike virtual calls
-4. **No vtable overhead** â€” no memory or performance cost for polymorphism
+1. **Static polymorphism** → same interface, zero virtual dispatch overhead
+2. **Code reuse** → inject behavior without virtual functions
+3. **Compile-time dispatch** → can be fully inlined, unlike virtual calls
+4. **No vtable overhead** → no memory or performance cost for polymorphism
 
 **Real-world uses:** `std::enable_shared_from_this`, Eigen expression templates, Boost.Operators, ATL/WTL, CRTP-based mixins.
 
@@ -2288,13 +2288,13 @@ template <typename T> void func(T);  // OK
 template <class T> void func(T);     // identical meaning
 ```
 
-`class` was the original keyword (from early C++). `typename` was added to emphasize that template parameters can be any type (int, double, enum â€” not just user-defined classes).
+`class` was the original keyword (from early C++). `typename` was added to emphasize that template parameters can be any type (int, double, enum → not just user-defined classes).
 
 The **practical difference** is that `typename` has a second mandatory role: disambiguating dependent names:
 ```cpp
 template <typename T>
 void func() {
-    typename T::iterator it;  // "iterator is a type" â€” typename REQUIRED
+    typename T::iterator it;  // "iterator is a type" → typename REQUIRED
 }
 ```
 
@@ -2302,14 +2302,14 @@ void func() {
 
 ### Q6: How does `std::vector<bool>` specialization work and why is it controversial?
 
-**Answer:** `std::vector<bool>` is a full specialization of `std::vector<T>` that stores bits instead of bools â€” packing 8 booleans per byte.
+**Answer:** `std::vector<bool>` is a full specialization of `std::vector<T>` that stores bits instead of bools → packing 8 booleans per byte.
 
 ```cpp
 template <>
 class vector<bool> {
     unsigned char* bits_;  // 1 byte stores 8 bools
 public:
-    class reference {     // Proxy â€” not bool&
+    class reference {     // Proxy → not bool&
         unsigned char* byte_ptr_;
         int bit_index_;
     public:
@@ -2336,7 +2336,7 @@ public:
 
 int main() {
     Example<int> ex;
-    ex.valid();          // OK â€” only valid() is instantiated
+    ex.valid();          // OK → only valid() is instantiated
     // ex.invalid();     // If called: compilation error
 }
 ```
@@ -2344,7 +2344,7 @@ int main() {
 **Impact on design:**
 - You can write templates with type-specific member functions that only work for certain types, as long as they are never called with incompatible types
 - Unused template members do not increase compile time or binary size
-- Errors in unused functions are never reported â€” only errors in used functions surface
+- Errors in unused functions are never reported → only errors in used functions surface
 
 ## 7.13 Summary
 
@@ -2380,22 +2380,22 @@ The template system is Turing-complete at compile time, enabling arbitrary compi
 
 ### Code Problems
 
-1. **Function template â€” `find_max`:**
+1. **Function template → `find_max`:**
    Write a function template `find_max` that accepts a `std::vector<T>` and returns the maximum element. Test with `int`, `double`, and `std::string` vectors. What complexity does your solution have?
 
-2. **Class template â€” `RingBuffer<T, N>`:**
+2. **Class template → `RingBuffer<T, N>`:**
    Implement a fixed-size circular buffer using `std::array<T, N>`. Provide `push`, `pop`, `front`, `back`, `size`, `empty`, and `full`. Ensure it works with non-default-constructible types. Use a dry run table to trace three push operations followed by two pops.
 
-3. **Variadic â€” `apply_all`:**
+3. **Variadic → `apply_all`:**
    Write a variadic function template `apply_all` that accepts a callable and a parameter pack, then applies the callable to each argument. Use fold expressions (C++17).
 
-4. **SFINAE â€” `is_container`:**
+4. **SFINAE → `is_container`:**
    Write a type trait `is_container<T>` that detects whether `T` has `begin()` and `end()` member functions returning iterators. Test with `std::vector<int>`, `std::string`, `int`, and `int[5]`.
 
-5. **CRTP â€” `Comparable<T>`:**
+5. **CRTP → `Comparable<T>`:**
    Implement a CRTP base that provides `!=`, `<=`, `>`, `>=` operators from just `==` and `<`. Explain why this avoids virtual functions.
 
-6. **Policy-based â€” `Serializer<T, Policy>`:**
+6. **Policy-based → `Serializer<T, Policy>`:**
    Write a JSON serialization policy and a binary serialization policy for a class template `Serializer<T, Policy>`. Demonstrate both.
 
 ### Challenge Problem

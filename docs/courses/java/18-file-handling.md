@@ -46,7 +46,7 @@ flowchart LR
     G --> H[Progress Tracking]
 ```
 
-> **Pro Tip:** Always validate file types by reading the first bytes (magic numbers) rather than relying on file extensions â€” attackers can easily rename a malicious file to appear legitimate.
+> **Pro Tip:** Always validate file types by reading the first bytes (magic numbers) rather than relying on file extensions → attackers can easily rename a malicious file to appear legitimate.
 
 ## Theory
 

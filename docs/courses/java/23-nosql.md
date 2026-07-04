@@ -46,7 +46,7 @@ flowchart LR
     F --> G[Multi-Model Patterns]
 ```
 
-> **Pro Tip:** Use Redis for caching and session storage, MongoDB for persistent documents, and Elasticsearch for full-text search. Each database excels in its own domain â€” choose the right tool for each job.
+> **Pro Tip:** Use Redis for caching and session storage, MongoDB for persistent documents, and Elasticsearch for full-text search. Each database excels in its own domain → choose the right tool for each job.
 
 ## MongoDB with Spring Data
 
@@ -2947,7 +2947,7 @@ ummary
    - Handles bulk session invalidation for a user
 
 3. **Analytics Dashboard**: Build MongoDB aggregation pipelines that produce:
-   - Top 10 products by revenue (quantity Ãƒâ€” price)
+   - Top 10 products by revenue (quantity Ãƒ→ price)
    - Product count by category with average rating
    - Monthly sales trends with running totals
    - Supplier performance metrics (total products, average price, stock levels)

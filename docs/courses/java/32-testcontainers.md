@@ -24,9 +24,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Testcontainers â€” disposable containers for integration tests | PostgreSQL, Redis, Kafka, and more as throwaway containers |
-| Container Lifecycle â€” automatic start/stop with JUnit 5 | `@Container` annotation manages container lifecycle |
-| Dynamic Properties â€” inject container connection details | `DynamicPropertySource` to override `application.properties` |
+| Testcontainers → disposable containers for integration tests | PostgreSQL, Redis, Kafka, and more as throwaway containers |
+| Container Lifecycle → automatic start/stop with JUnit 5 | `@Container` annotation manages container lifecycle |
+| Dynamic Properties → inject container connection details | `DynamicPropertySource` to override `application.properties` |
 
 ---
 ## Chapter Roadmap
@@ -161,7 +161,7 @@ System.out.println("Docker available: " + dockerAvailable);
 ```
 
 > [!TIP]
-> Container reuse (`withReuse(true)`) dramatically speeds up local development â€” containers stay running between test runs.
+> Container reuse (`withReuse(true)`) dramatically speeds up local development → containers stay running between test runs.
 
 > [!WARNING]
 > Testcontainers requires a Docker runtime. CI environments must have Docker installed and configured.

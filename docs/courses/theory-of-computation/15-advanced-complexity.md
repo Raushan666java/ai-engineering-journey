@@ -144,11 +144,11 @@ An **interactive proof system** consists of a prover (P, unbounded computational
 **Class IP:** Languages with interactive proof systems.
 
 **Important results:**
-- **IP = PSPACE** (Shamir's theorem, 1990). This is a landmark result showing that interactive proofs are enormously powerful â€” equivalent to polynomial space.
+- **IP = PSPACE** (Shamir's theorem, 1990). This is a landmark result showing that interactive proofs are enormously powerful → equivalent to polynomial space.
 - co-NP âŠ† IP (since co-NP âŠ† PSPACE = IP). This means tautologies have interactive proofs.
 - **Graph Non-Isomorphism** âˆˆ IP (actually in AM, a related class).
 
-**Significance:** Interactive proofs show that a computationally bounded verifier can be convinced of the truth of statements far beyond what they could verify deterministically â€” if interaction and randomization are allowed.
+**Significance:** Interactive proofs show that a computationally bounded verifier can be convinced of the truth of statements far beyond what they could verify deterministically → if interaction and randomization are allowed.
 
 ### 14.8 Probabilistic Complexity (BPP)
 
@@ -221,7 +221,7 @@ To check if C âˆˆ MIN-CIRCUIT: For every smaller circuit C' (âˆ€), there 
 
 Or: There exists no smaller equivalent circuit. Actually the logical formulation:
 - C is minimal iff âˆ€C' (|C'| < |C|) â‡’ âˆƒx (C(x) â‰  C'(x)).
-- This is âˆ€C' âˆƒx (|C'| < |C| â‡’ C(x) â‰  C'(x)) â€” a âˆ€âˆƒ pattern = Î â‚‚.
+- This is âˆ€C' âˆƒx (|C'| < |C| â‡’ C(x) â‰  C'(x)) → a âˆ€âˆƒ pattern = Î â‚‚.
 - Equivalent: the complement (âˆƒC') is in Î£â‚‚.
 
 ### Example 14.2: Graph Non-Isomorphism âˆˆ IP
@@ -251,7 +251,7 @@ For MAX-3SAT (find an assignment satisfying the maximum number of clauses):
 
 Razborov and Rudich showed that any "natural" proof that P â‰  NP (a proof that uses a combinatorial property of Boolean functions that is both constructive and large) would imply that certain cryptographic pseudorandom generators don't exist. Since most experts believe such generators do exist, natural proofs cannot work.
 
-This explains why progress on circuit lower bounds has been slow â€” the tools that would traditionally work are blocked by this barrier.
+This explains why progress on circuit lower bounds has been slow → the tools that would traditionally work are blocked by this barrier.
 
 
 

@@ -71,7 +71,7 @@ public class Student {
 ```
 
 Rules:
-- Use `@ManyToMany` only when the relationship truly has no attributes â€” tags, categories, simple many-to-many labels
+- Use `@ManyToMany` only when the relationship truly has no attributes → tags, categories, simple many-to-many labels
 - Use a join entity whenever the relationship carries metadata (timestamps, roles, quantities, status)
 - A join entity also makes it easier to query the relationship itself: `SELECT e FROM Enrollment e WHERE e.grade = 'A'`
 
@@ -83,7 +83,7 @@ Rules:
 
 JPA provides three inheritance strategies, each mapped via `@Inheritance`:
 
-**1. SINGLE_TABLE** (default) â€” one table for the entire hierarchy, with a discriminator column:
+**1. SINGLE_TABLE** (default) → one table for the entire hierarchy, with a discriminator column:
 ```java
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
@@ -108,7 +108,7 @@ public class Truck extends Vehicle {
 // Result: single "vehicle" table with columns: id, manufacturer, doors, payload_capacity, vehicle_type
 ```
 
-**2. JOINED** â€” one table per class, with foreign keys to the parent:
+**2. JOINED** → one table per class, with foreign keys to the parent:
 ```java
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -126,7 +126,7 @@ public class CreditCardPayment extends Payment {
 // Result: payment(id, amount), credit_card_payment(id, card_number, card_holder)
 ```
 
-**3. TABLE_PER_CLASS** â€” one complete table per concrete class:
+**3. TABLE_PER_CLASS** → one complete table per concrete class:
 ```java
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
@@ -149,7 +149,7 @@ public class Dog extends Animal {
 | JOINED | Polymorphic queries need joins | Best (normalized) | Full FK support |
 | TABLE_PER_CLASS | Worst (UNION queries) | Moderate | No polymorphic FK |
 
-Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when subclasses have many distinct columns. Avoid TABLE_PER_CLASS unless you have specific reasons â€” most databases struggle with polymorphic UNION queries at scale.
+Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when subclasses have many distinct columns. Avoid TABLE_PER_CLASS unless you have specific reasons → most databases struggle with polymorphic UNION queries at scale.
 
 ---
 
@@ -178,11 +178,11 @@ List<UserDto> findActiveUserDtos();
 ```
 
 Why use projections over entities:
-1. **Performance**: Select only needed columns â€” avoids fetching large TEXT/BLOB columns
-2. **Read-only**: No dirty checking overhead â€” Hibernate tracks changes only on managed entities
+1. **Performance**: Select only needed columns → avoids fetching large TEXT/BLOB columns
+2. **Read-only**: No dirty checking overhead → Hibernate tracks changes only on managed entities
 3. **Join efficiency**: DTOs can aggregate data from multiple entities without loading them
-4. **Safety**: No lazy-loading exceptions outside transactions â€” DTOs are plain objects
-5. **API boundary**: Expose only intended fields to REST clients â€” never accidentally serialize lazy proxies
+4. **Safety**: No lazy-loading exceptions outside transactions → DTOs are plain objects
+5. **API boundary**: Expose only intended fields to REST clients → never accidentally serialize lazy proxies
 
 EntityGraph can help with partial entity loading, but DTO projections give you the most control and the least overhead.
 
@@ -194,7 +194,7 @@ EntityGraph can help with partial entity loading, but DTO projections give you t
 
 Flyway manages schema changes as versioned SQL scripts. Spring Boot auto-configures Flyway when it finds `flyway-core` on the classpath.
 
-Step 1 â€” Add dependency:
+Step 1 → Add dependency:
 ```xml
 <dependency>
     <groupId>org.flywaydb</groupId>
@@ -202,7 +202,7 @@ Step 1 â€” Add dependency:
 </dependency>
 ```
 
-Step 2 â€” Create migration scripts in `src/main/resources/db/migration/`:
+Step 2 → Create migration scripts in `src/main/resources/db/migration/`:
 ```sql
 -- V1__create_users_table.sql
 CREATE TABLE users (
@@ -228,7 +228,7 @@ CREATE TABLE orders (
 CREATE INDEX idx_orders_user_id ON orders(user_id);
 ```
 
-Step 3 â€” Configure (minimal â€” Spring Boot auto-configures):
+Step 3 → Configure (minimal → Spring Boot auto-configures):
 ```yaml
 spring:
   flyway:
@@ -243,7 +243,7 @@ Naming convention: `V{version}__{description}.sql`
 - Versions can be integers (V1) or dotted (V1_2_3)
 - Repeatable migrations: `R__{description}.sql` (re-run if checksum changes)
 
-Flyway tracks applied migrations in a `flyway_schema_history` table. Never modify an already-applied migration â€” create a new one instead.
+Flyway tracks applied migrations in a `flyway_schema_history` table. Never modify an already-applied migration → create a new one instead.
 
 ---
 
@@ -273,7 +273,7 @@ public class InventoryService {
         }
         item.setQuantity(item.getQuantity() - quantity);
         // Hibernate increments version on flush/commit
-        // If another transaction modified the row, version mismatch â†’ OptimisticLockException
+        // If another transaction modified the row, version mismatch → OptimisticLockException
     }
 }
 ```
@@ -288,7 +288,7 @@ Optional<InventoryItem> findByIdForUpdate(@Param("id") Long id);
 @Transactional
 public void deductStockPessimistic(Long itemId, int quantity) {
     InventoryItem item = repo.findByIdForUpdate(itemId).orElseThrow();
-    // Database row is locked â€” other transactions wait
+    // Database row is locked → other transactions wait
     item.setQuantity(item.getQuantity() - quantity);
 }
 ```
@@ -300,7 +300,7 @@ For counters and atomic updates, use a single UPDATE statement to avoid the read
 @Query("UPDATE InventoryItem i SET i.quantity = i.quantity - :qty WHERE i.id = :id AND i.quantity >= :qty")
 int deductStockAtomic(@Param("id") Long id, @Param("qty") int qty);
 
-// Returns 0 if row didn't exist or quantity was insufficient â€” no race condition
+// Returns 0 if row didn't exist or quantity was insufficient → no race condition
 ```
 
 The single-UPDATE approach is the most performant for high-contention counters because it avoids the round-trip for reading.
@@ -374,28 +374,28 @@ Add `@Testcontainers` + static `@Container` for a shared container across tests 
 - `JOIN FETCH`: A JPA-specific directive that tells Hibernate to **eagerly load** the association in the same query. Unlike plain `JOIN`, it populates the entity's persistence state so that lazy loading is not triggered later.
 
 ```java
-// INNER JOIN â€” only posts with at least one comment
-// Result: List<Object[]> â€” [Post, Comment] pairs
+// INNER JOIN → only posts with at least one comment
+// Result: List<Object[]> → [Post, Comment] pairs
 @Query("SELECT p, c FROM Post p JOIN p.comments c")
 List<Object[]> findPostsWithComments();
 
-// LEFT JOIN â€” all posts, comments may be null
+// LEFT JOIN → all posts, comments may be null
 @Query("SELECT p, c FROM Post p LEFT JOIN p.comments c")
 List<Object[]> findAllPostsAndComments();
 
-// JOIN FETCH â€” eagerly loads comments, returns Post entities with comments populated
+// JOIN FETCH → eagerly loads comments, returns Post entities with comments populated
 @Query("SELECT p FROM Post p LEFT JOIN FETCH p.comments")
 List<Post> findAllPostsWithComments();
 ```
 
-The critical difference: plain `JOIN` adds a WHERE/HAVING filter â€” it doesn't change how the entity is loaded. `JOIN FETCH` actually populates the entity's collection field, preventing N+1 queries for that association.
+The critical difference: plain `JOIN` adds a WHERE/HAVING filter → it doesn't change how the entity is loaded. `JOIN FETCH` actually populates the entity's collection field, preventing N+1 queries for that association.
 
 ```java
-// âŒ Plain LEFT JOIN â€” comments are still lazy
+// âŒ Plain LEFT JOIN → comments are still lazy
 @Query("SELECT p FROM Post p LEFT JOIN p.comments c WHERE c.approved = true")
 List<Post> findApprovedCommentPosts(); // p.getComments() will still trigger lazy load!
 
-// âœ… JOIN FETCH â€” comments are loaded
+// âœ… JOIN FETCH → comments are loaded
 @Query("SELECT p FROM Post p LEFT JOIN FETCH p.comments")
 List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 ```

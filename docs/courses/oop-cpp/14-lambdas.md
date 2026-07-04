@@ -1571,7 +1571,7 @@ f2(5): 5
 
 ### Real-World Analogy
 
-Lambdas with STL algorithms are like **interchangeable tool bits for a power drill**. The drill (STL algorithm) provides the motor and mechanism; the bit (lambda) determines the exact shape and cut. You can swap bits to drill, screw, grind, or polish â€” all using the same drill.
+Lambdas with STL algorithms are like **interchangeable tool bits for a power drill**. The drill (STL algorithm) provides the motor and mechanism; the bit (lambda) determines the exact shape and cut. You can swap bits to drill, screw, grind, or polish → all using the same drill.
 
 ### Common Patterns Matrix
 
@@ -1689,7 +1689,7 @@ int main() {
     std::cout << "Any >= 95:  " << (any_excellent ? "yes" : "no") << "\n";
     std::cout << "None 100:   " << (none_perfect ? "yes" : "no") << "\n";
 
-    // remove_if with erase â€” erase-remove idiom
+    // remove_if with erase → erase-remove idiom
     scores.erase(
         std::remove_if(scores.begin(), scores.end(),
             [](int s) { return s < 60; }),

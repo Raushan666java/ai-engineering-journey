@@ -294,7 +294,7 @@ Response::macro('api', function (mixed $data, string $message = '', int $status 
 ### Pagination for APIs
 
 ```php
-Post::paginate(20);       // LengthAwarePaginator â€” knows total pages
+Post::paginate(20);       // LengthAwarePaginator → knows total pages
 Post::simplePaginate(20); // Only "next" and "prev"
 Post::cursorPaginate(20); // Cursor-based for large datasets
 ```

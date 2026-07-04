@@ -120,8 +120,8 @@ $this->app->afterResolving(PaymentGateway::class, function ($gateway, $app) { /*
 
 Providers bootstrap all framework components through two phases:
 
-1. **`register()`** â€” Only container bindings. Never use events, routes, or middleware here.
-2. **`boot()`** â€” Runs after all providers are registered. Safe to use registered services.
+1. **`register()`** → Only container bindings. Never use events, routes, or middleware here.
+2. **`boot()`** → Runs after all providers are registered. Safe to use registered services.
 
 ```php
 class PaymentServiceProvider extends ServiceProvider
@@ -631,7 +631,7 @@ $schedule->command('report:daily --email=admin@example.com')
 
 ### Application Problems
 
-1. **Contextual Payment Resolution**: Configure `InvoiceController` â†’ Stripe, `RefundController` â†’ Braintree, `PayoutController` â†’ PayPal through the same `PaymentGateway` interface, with `extend()` adding logging to all calls.
+1. **Contextual Payment Resolution**: Configure `InvoiceController` → Stripe, `RefundController` → Braintree, `PayoutController` → PayPal through the same `PaymentGateway` interface, with `extend()` adding logging to all calls.
 
 2. **Feature Flag Package**: Create a package with config, migration, facade, Artisan command to toggle flags, and Blade directive to check them. Use automatic provider discovery.
 

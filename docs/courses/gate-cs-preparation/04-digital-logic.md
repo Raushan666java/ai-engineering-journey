@@ -123,16 +123,16 @@ Group right-to-left by 3: 001 101 011 011
 **Fractional part conversion:**
 ```
 Example: 0.625â‚â‚€ to binary
-0.625 Ã— 2 = 1.250 â†’ 1
-0.250 Ã— 2 = 0.500 â†’ 0
-0.500 Ã— 2 = 1.000 â†’ 1
+0.625 Ã— 2 = 1.250 → 1
+0.250 Ã— 2 = 0.500 → 0
+0.500 Ã— 2 = 1.000 → 1
 
 0.625â‚â‚€ = 0.101â‚‚
 ```
 
 ### 1.2 Complements
 
-**1's complement:** Invert all bits (0â†’1, 1â†’0).
+**1's complement:** Invert all bits (0→1, 1→0).
 
 **2's complement:** 1's complement + 1.
 
@@ -221,7 +221,7 @@ SOP: F = A'B'C + A'BC + AB'C + ABC'
 POS: F = (A+B+C)(A+B'+C)(A'+B+C)(A'+B'+C')
 ```
 
-### 1.5 GATE Practice Problems â€” Number Systems & Boolean Algebra
+### 1.5 GATE Practice Problems → Number Systems & Boolean Algebra
 
 **Problem 1:** Convert (0.375)â‚â‚€ to binary.
 ```
@@ -229,10 +229,10 @@ POS: F = (A+B+C)(A+B'+C)(A'+B+C)(A'+B'+C')
 ```
 *Solution:*
 ```
-0.375 Ã— 2 = 0.750 â†’ 0
-0.750 Ã— 2 = 1.500 â†’ 1
-0.500 Ã— 2 = 1.000 â†’ 1
-Answer: 0.011â‚‚ â†’ (A)
+0.375 Ã— 2 = 0.750 → 0
+0.750 Ã— 2 = 1.500 → 1
+0.500 Ã— 2 = 1.000 → 1
+Answer: 0.011â‚‚ → (A)
 ```
 
 **Problem 2:** The 8-bit 2's complement representation of -73 is:
@@ -243,7 +243,7 @@ Answer: 0.011â‚‚ â†’ (A)
 ```
 +73 = 01001001
 1's complement: 10110110
-2's complement: 10110111 â†’ (A)
+2's complement: 10110111 → (A)
 ```
 
 **Problem 3:** Simplify using Boolean algebra: F = A'B'C + A'BC + AB'C + ABC'
@@ -299,7 +299,7 @@ Answer: (C)
 657â‚ˆ = 110 101 111â‚‚ = 110101111â‚‚
 Group by 4: 0001 1010 1111
            1    A    F
-Answer: 1AFâ‚â‚† â†’ (A)
+Answer: 1AFâ‚â‚† → (A)
 ```
 
 **Problem 7:** (GATE 2021) The minimum number of NAND gates required to implement F = A + AB' + A'BC is:
@@ -321,7 +321,7 @@ In terms of NAND:
   A + BC = (A')' + (BC)''
   = (A'(BC)')'   [by De Morgan's]
   
-  BC = ((BC)')' â€” one NAND for BC, then one NAND to combine with A'.
+  BC = ((BC)')' → one NAND for BC, then one NAND to combine with A'.
   Actually A + BC = (A' Â· (BC)')'
   Needs 2 NAND gates.
 Answer: (C)
@@ -331,7 +331,7 @@ Answer: (C)
 
 ## 2. Logic Gates & Combinational Circuits
 
-### 2.1 Basic Logic Gates â€” Truth Tables
+### 2.1 Basic Logic Gates → Truth Tables
 
 **AND gate:** Output = 1 only when ALL inputs are 1.
 ```
@@ -404,7 +404,7 @@ AND:      AB = (A NAND B)' = (A NAND B) NAND (A NAND B)
 OR:       A + B = (A' NAND B')' = (A NAND A) NAND (B NAND B)
 ```
 
-**ASCII circuit â€” NAND as NOT:**
+**ASCII circuit → NAND as NOT:**
 ```
     +------+
 A---|      |--- A'
@@ -413,7 +413,7 @@ A---|      |
     +------+
 ```
 
-**ASCII circuit â€” NAND as AND:**
+**ASCII circuit → NAND as AND:**
 ```
     +------+
 A---|      |
@@ -455,7 +455,7 @@ S = A âŠ• B
 C = A Â· B
 ```
 
-**ASCII circuit â€” Half Adder:**
+**ASCII circuit → Half Adder:**
 ```
 A------+----|>1 |--- S
        |    |XOR|
@@ -485,7 +485,7 @@ S = A âŠ• B âŠ• Cin
 Cout = AB + ACin + BCin = AB + Cin(A âŠ• B)
 ```
 
-**ASCII circuit â€” Full Adder from 2 Half Adders:**
+**ASCII circuit → Full Adder from 2 Half Adders:**
 ```
           +------+
 A---------| HA1  |
@@ -545,7 +545,7 @@ S | Y
 Y = S'Â·Iâ‚€ + SÂ·Iâ‚
 ```
 
-**ASCII circuit â€” 2:1 MUX:**
+**ASCII circuit → 2:1 MUX:**
 ```
 Iâ‚€ -----+
          \
@@ -579,10 +579,10 @@ To implement an n-variable function using a 2â¿â»Â¹:1 MUX, use n-1 var
 Example: F(A,B,C) = Î£m(1,3,5,6) using 4:1 MUX
 
 Select Sâ‚=A, Sâ‚€=B
-Iâ‚€ = C          (for AB=00, F=C â†’ rows 1,3 â†’ C=1)
-Iâ‚ = 0          (for AB=01, C doesn't matter but check: A'BC=010â†’0)
-Iâ‚‚ = C'         (for AB=10, F=C' â†’ row 6: 110â†’1, C'=1)  
-Iâ‚ƒ = C          (for AB=11, F=C â†’ row 7 doesn't exist... check carefully)
+Iâ‚€ = C          (for AB=00, F=C → rows 1,3 → C=1)
+Iâ‚ = 0          (for AB=01, C doesn't matter but check: A'BC=010→0)
+Iâ‚‚ = C'         (for AB=10, F=C' → row 6: 110→1, C'=1)  
+Iâ‚ƒ = C          (for AB=11, F=C → row 7 doesn't exist... check carefully)
 ```
 
 ### 2.5 Demultiplexers (DEMUX)
@@ -619,7 +619,7 @@ Sâ‚ Sâ‚€ | Yâ‚ƒ Yâ‚‚ Yâ‚ Yâ‚€
 
 An n-to-2â¿ decoder activates exactly one of 2â¿ outputs based on the n-bit input.
 
-**3:8 Decoder â€” truth table:**
+**3:8 Decoder → truth table:**
 ```
  Aâ‚‚ Aâ‚ Aâ‚€ | Yâ‚‡ Yâ‚† Yâ‚… Yâ‚„ Yâ‚ƒ Yâ‚‚ Yâ‚ Yâ‚€
 ----------+-------------------------
@@ -699,7 +699,7 @@ AB 00 |m0  |m1  |m3  |m2  |
 4. Each group corresponds to a product term where the variable that changes within the group is eliminated.
 5. Goal: minimum number of groups with maximum size (prime implicants).
 
-**Example â€” 4-variable minimization:**
+**Example → 4-variable minimization:**
 ```
 F(A,B,C,D) = Î£m(0,1,2,5,8,9,10)
 
@@ -716,9 +716,9 @@ AB 00 | 1 | 1 | 0 | 1 |
    10 | 1 | 1 | 0 | 1 |
    +----+---+---+---+
 
-Group 1: m0,m1,m8,m9 â†’ B'C'   (A and D eliminated, wrap-around)
-Group 2: m0,m2,m8,m10 â†’ B'D'  (A and C eliminated)
-Group 3: m5 â†’ A'BC'D   (single cell, isolated)
+Group 1: m0,m1,m8,m9 → B'C'   (A and D eliminated, wrap-around)
+Group 2: m0,m2,m8,m10 → B'D'  (A and C eliminated)
+Group 3: m5 → A'BC'D   (single cell, isolated)
 
 F = B'C' + B'D' + A'BC'D
 ```
@@ -741,7 +741,7 @@ AB 00 | 1 | X | 1 | 0 |
    +----+---+---+---+
 
 Group with X as 1:
-  Group 1: m0,m1,m4,m5 â†’ A'  (wrap-around row)
+  Group 1: m0,m1,m4,m5 → A'  (wrap-around row)
   F = A'
 ```
 
@@ -799,20 +799,20 @@ Group 3 (3 ones): 1110 (14)
 Group 4 (4 ones): 1111 (15)
 
 Pass 1:
-0000 & 0001 â†’ 000-
-0000 & 0100 â†’ 0-00
-0001 & 0101 â†’ 0-01
-0001 & 1001 â†’ -001
-0100 & 0101 â†’ 010-
-1001 & 1011 â†’ 10-1
-1011 & 1111 â†’ -111
-1110 & 1111 â†’ 111-
+0000 & 0001 → 000-
+0000 & 0100 → 0-00
+0001 & 0101 → 0-01
+0001 & 1001 → -001
+0100 & 0101 → 010-
+1001 & 1011 → 10-1
+1011 & 1111 → -111
+1110 & 1111 → 111-
 
 Pass 2:
-000- & 0-00 â†’ no match
-0-01 & -001 â†’ no match
-000- & 010- â†’ 0-0-  (from 000- and 010-)
-0-01 & 10-1 â†’ no match
+000- & 0-00 → no match
+0-01 & -001 → no match
+000- & 010- → 0-0-  (from 000- and 010-)
+0-01 & 10-1 → no match
 ...
 
 Prime implicants: A'C' (0-0-), B'C'D (000- if uncombined)... etc.
@@ -832,8 +832,8 @@ Prime implicants: A'C' (0-0-), B'C'D (000- if uncombined)... etc.
 **Basic 1-bit ALU with 3 control lines (M, S1, S0):**
 
 ```
-M = 0 â†’ Logic operations
-M = 1 â†’ Arithmetic operations
+M = 0 → Logic operations
+M = 1 → Arithmetic operations
 
 Function table:
  M S1 S0 | Operation
@@ -848,7 +848,7 @@ Function table:
  1  1  1 | A - 1 (DECREMENT)
 ```
 
-### 2.12 GATE Practice Problems â€” Combinational Circuits
+### 2.12 GATE Practice Problems → Combinational Circuits
 
 **Problem 8:** (GATE 2023) How many 4:1 multiplexers are needed to implement an 8:1 multiplexer?
 ```
@@ -879,7 +879,7 @@ AB 00 | 0 | 0 | 0 | 0 |
    10 | 0 | 0 | 0 | 0 |
    +----+---+---+---+
 
-F = A (A is 1 for rows AB=01 and 11). Answer: None listed â€” the closest is A. Let me recheck...
+F = A (A is 1 for rows AB=01 and 11). Answer: None listed → the closest is A. Let me recheck...
 F = A. Since that's not listed, maybe I misread. Let me reconsider.
 
 Hmm, A is correct answer though not listed. Actually this is just illustrative.
@@ -950,7 +950,7 @@ Characteristic table:
 Q(t+1) = S + R'Â·Q(t)
 ```
 
-**ASCII circuit â€” SR Latch:**
+**ASCII circuit → SR Latch:**
 ```
         +---+
 S ------|NOR|--- Q
@@ -1087,10 +1087,10 @@ Each bit stored in a D flip-flop with clock enable.
 
 ```
 Mode Control Sâ‚ Sâ‚€:
-  0 0 â†’ Hold (no change)
-  0 1 â†’ Shift Right
-  1 0 â†’ Shift Left
-  1 1 â†’ Parallel Load
+  0 0 → Hold (no change)
+  0 1 → Shift Right
+  1 0 → Shift Left
+  1 1 → Parallel Load
 ```
 
 ### 3.4 Counters
@@ -1189,11 +1189,11 @@ Output = f(current_state)
 Output = f(current_state, input)
 ```
 
-**State diagram example â€” Sequence detector (101): Moore machine**
+**State diagram example → Sequence detector (101): Moore machine**
 
 ```
       0              1              0              1
-  S0 ----â†’ S1 ----â†’ S2 ----â†’ S3 ----â†’ S4
+  S0 ----→ S1 ----→ S2 ----→ S3 ----→ S4
   ^   |      ^   |      ^   |      ^   |      ^   |
   |   |      |   |      |   |      |   |      |   |
   +---+      +---+      +---+      +---+      +---+
@@ -1244,7 +1244,7 @@ where t_combo = worst-case combinational logic delay
 
 **Solution to race-around:** Master-slave configuration or edge-triggering.
 
-### 3.7 GATE Practice Problems â€” Sequential Circuits
+### 3.7 GATE Practice Problems → Sequential Circuits
 
 **Problem 13:** (GATE 2023) For a JK flip-flop, if J=1, K=1, and Q(t)=0, what is Q(t+1)?
 ```
@@ -1272,14 +1272,14 @@ Answer: (C) 0011
 ```
 (A) 5   (B) 10   (C) 25   (D) 32
 ```
-*Solution:* Ring counter modulus = n (number of flip-flops). 5-bit â†’ modulus 5. Answer: (A) 5
+*Solution:* Ring counter modulus = n (number of flip-flops). 5-bit → modulus 5. Answer: (A) 5
 
 **Problem 16:** A 4-bit ripple counter uses T flip-flops with t_cq = 10ns. The minimum clock period for reliable operation is:
 ```
 (A) 10ns   (B) 20ns   (C) 40ns   (D) 80ns
 ```
 *Solution:* Ripple counter: clock must wait for all FFs to settle.
-Worst case: Q0 toggles â†’ Q1 toggles â†’ Q2 toggles â†’ Q3 toggles.
+Worst case: Q0 toggles → Q1 toggles → Q2 toggles → Q3 toggles.
 Delay = 4 Ã— 10ns = 40ns. Answer: (C) 40ns
 
 **Problem 17:** In a Mealy machine, the output is a function of:
@@ -1389,10 +1389,10 @@ Example: 4K Ã— 8 memory = 4096 words Ã— 8 bits = 32,768 bits
 ```
 For a 64K memory system with four 16K Ã— 8 chips:
 
-Chip 0: A15 A14 = 0 0 â†’ addresses 0000H - 3FFFH
-Chip 1: A15 A14 = 0 1 â†’ addresses 4000H - 7FFFH
-Chip 2: A15 A14 = 1 0 â†’ addresses 8000H - BFFFH
-Chip 3: A15 A14 = 1 1 â†’ addresses C000H - FFFFH
+Chip 0: A15 A14 = 0 0 → addresses 0000H - 3FFFH
+Chip 1: A15 A14 = 0 1 → addresses 4000H - 7FFFH
+Chip 2: A15 A14 = 1 0 → addresses 8000H - BFFFH
+Chip 3: A15 A14 = 1 1 → addresses C000H - FFFFH
 
 CSâ‚€ = A15' Â· A14'
 CSâ‚ = A15' Â· A14
@@ -1409,7 +1409,7 @@ CSâ‚ƒ = A15 Â· A14
 - OR array combines product terms into outputs
 - Flexible but slower than PAL
 
-**ASCII â€” PLA structure:**
+**ASCII → PLA structure:**
 ```
                  AND Array (programmable)
               +---+---+---+---+
@@ -1464,7 +1464,7 @@ SW  = Switch Matrix (programmable interconnect)
 
 **Look-Up Table (LUT):** Basic building block in FPGA. An n-input LUT acts as an n-input function generator (essentially a 2â¿:1 MUX implementing a truth table).
 
-### 4.4 GATE Practice Problems â€” Memory & Programmable Logic
+### 4.4 GATE Practice Problems → Memory & Programmable Logic
 
 **Problem 21:** A memory system has 16 address lines and 8 data lines. What is its capacity?
 ```
@@ -1613,9 +1613,9 @@ Answer: (B) 16
 
 8. **State machines:** Mealy generally uses fewer states than Moore for the same sequence detection, since output is associated with transitions rather than states.
 
-9. **Timing:** Setup violations â†’ wrong data captured. Hold violations â†’ can't fix by slowing clock (must fix circuit).
+9. **Timing:** Setup violations → wrong data captured. Hold violations → can't fix by slowing clock (must fix circuit).
 
-10. **Practice approach:** Solve all GATE PYQs from 2016 onwards. Digital Logic questions repeat patterns â€” the same K-map structure, counter problems, and MUX implementation questions appear in rotation.
+10. **Practice approach:** Solve all GATE PYQs from 2016 onwards. Digital Logic questions repeat patterns → the same K-map structure, counter problems, and MUX implementation questions appear in rotation.
 
 ---
 
@@ -1651,7 +1651,7 @@ Answer: (A) AB + BC + CA
 **Solution:**
 ```
 A2â‚â‚† = 1010 0010â‚‚
-Number of 1s: positions 7, 1 â†’ 2 ones.
+Number of 1s: positions 7, 1 → 2 ones.
 Wait: A = 1010 (two 1s), 2 = 0010 (one 1). Total = 3.
 
 Answer: (A) 3
@@ -1663,8 +1663,8 @@ Answer: (A) 3
 ```
 **Solution:**
 ```
-MSB=1 â†’ negative. Magnitude = 2's complement of 1101:
-1101 â†’ 0010 + 1 = 0011 = 3. X = -3.
+MSB=1 → negative. Magnitude = 2's complement of 1101:
+1101 → 0010 + 1 = 0011 = 3. X = -3.
 
 Answer: (A) -3
 ```
@@ -1676,7 +1676,7 @@ Answer: (A) -3
 **Solution:**
 ```
 By consensus theorem: AB + A'C + BC = AB + A'C (BC is redundant).
-If B=C=1, then either AB=1 (A=1) or A'C=1 (A=0) â†’ the term BC adds nothing.
+If B=C=1, then either AB=1 (A=1) or A'C=1 (A=0) → the term BC adds nothing.
 
 Answer: (A) AB + A'C
 ```
@@ -1742,7 +1742,7 @@ Answer: (A) AC
 **Solution:**
 ```
 Duality: swap + with Â· and 0 with 1, complements unchanged.
-A + BC â†’ A Â· (B + C) = A(B + C)
+A + BC → A Â· (B + C) = A(B + C)
 
 Answer: (A) A(B + C)
 ```
@@ -1754,7 +1754,7 @@ Answer: (A) A(B + C)
 **Solution:**
 ```
 Negative numbers in 2's complement have MSB = 1.
-0111 has MSB=0 â†’ represents +7 (positive).
+0111 has MSB=0 → represents +7 (positive).
 1000 = -8, 1111 = -1, 1010 = -6 are all negative.
 
 Answer: (D) 0111
@@ -1778,7 +1778,7 @@ G3 = (B NAND G1) = (B(AB)')' = B' + A
 G4 = (G2 NAND G3) = ((A'+B)(B'+A))' = (AB + A'B')' = AâŠ•B
 G4 output = AâŠ•B = S.
 
-For C = AB = (G1 NAND G1) = G1 NAND G1 â€” one more NAND (G5).
+For C = AB = (G1 NAND G1) = G1 NAND G1 → one more NAND (G5).
 So S from G4 (4 NANDs) and C from G5 (sharing G1). Total = 5 NAND gates.
 
 Answer: (C) 5
@@ -1805,7 +1805,7 @@ Answer: (B) Sâ‚'Sâ‚€ + Sâ‚Sâ‚€' + Sâ‚Sâ‚€Â·C
 **Solution:**
 ```
 Decoder outputs Yáµ¢ = 1 when input = i.
-F = Yâ‚ + Yâ‚‚ + Yâ‚… + Yâ‚‡ â†’ needs 4-input OR gate.
+F = Yâ‚ + Yâ‚‚ + Yâ‚… + Yâ‚‡ → needs 4-input OR gate.
 
 Answer: (A) Decoder + 4-input OR
 ```
@@ -1818,7 +1818,7 @@ Answer: (A) Decoder + 4-input OR
 **Solution:**
 ```
 A > B when: (MSB of A > MSB of B) OR (MSBs equal AND LSB of A > LSB of B).
-Aâ‚Bâ‚' = Aâ‚=1, Bâ‚=0 â†’ MSB of A > MSB of B.
+Aâ‚Bâ‚' = Aâ‚=1, Bâ‚=0 → MSB of A > MSB of B.
 (Aâ‚âŠ•Bâ‚)' = XNOR = 1 when Aâ‚=Bâ‚.
 Aâ‚€Bâ‚€' = LSB of A > LSB of B.
 
@@ -1858,7 +1858,7 @@ Answer: (B) 8
 ```
 **Solution:**
 ```
-Iâ‚ƒ=1 â†’ highest priority active. Output = binary of 3 = 11.
+Iâ‚ƒ=1 → highest priority active. Output = binary of 3 = 11.
 Note that Iâ‚=1 too, but Iâ‚ƒ has higher priority.
 
 Answer: (D) 11
@@ -1901,7 +1901,7 @@ Answer: (B) 5
 ```
 **Solution:**
 ```
-M=1 â†’ arithmetic operations (M=0 â†’ logic).
+M=1 → arithmetic operations (M=0 → logic).
 A+B corresponds to Sâ‚=0, Sâ‚€=0 in most ALU designs.
 
 Answer: (C) M=1, Sâ‚=0, Sâ‚€=0
@@ -1914,7 +1914,7 @@ Answer: (C) M=1, Sâ‚=0, Sâ‚€=0
 **Solution:**
 ```
 1:4 DEMUX: Sâ‚Sâ‚€ selects which output receives D.
-Sâ‚Sâ‚€ = 10â‚‚ = 2 â†’ Yâ‚‚ = D, all others = 0.
+Sâ‚Sâ‚€ = 10â‚‚ = 2 → Yâ‚‚ = D, all others = 0.
 
 Answer: (C) Yâ‚‚
 ```
@@ -1944,7 +1944,7 @@ Answer: (A) Full adder
 **Solution:**
 ```
 When D = Q', the flip-flop toggles every clock cycle (on each negative edge).
-Output changes once per clock period â†’ f_out = f_clk / 2.
+Output changes once per clock period → f_out = f_clk / 2.
 This is a divide-by-2 circuit.
 
 Answer: (B) Half
@@ -1981,13 +1981,13 @@ After S3, on next '1' go to S1 (overlap: last '0' can't start new "110" but '1' 
 Answer: (B) 4
 ```
 
-**Problem 51 (GATE 2022):** NOR-based SR latch: S=1, R=0, then Sâ†’0. Q, Q' are:
+**Problem 51 (GATE 2022):** NOR-based SR latch: S=1, R=0, then S→0. Q, Q' are:
 ```
 (A) Q=1, Q'=0    (B) Q=0, Q'=1    (C) Q=1, Q'=1    (D) Q=0, Q'=0
 ```
 **Solution:**
 ```
-S=1,R=0 â†’ Q=1, Q'=0 (Set). When Sâ†’0,R=0 â†’ Hold: Q retains 1, Q' retains 0.
+S=1,R=0 → Q=1, Q'=0 (Set). When S→0,R=0 → Hold: Q retains 1, Q' retains 0.
 
 Answer: (A) Q=1, Q'=0
 ```
@@ -1998,7 +1998,7 @@ Answer: (A) Q=1, Q'=0
 ```
 **Solution:**
 ```
-Mealy outputs are associated with transitions, not states. For sequence detection, Mealy typically has 1 fewer state than Moore. But this is not universal â€” some problems have same state count.
+Mealy outputs are associated with transitions, not states. For sequence detection, Mealy typically has 1 fewer state than Moore. But this is not universal → some problems have same state count.
 
 Answer: (D) Sometimes fewer
 ```
@@ -2013,9 +2013,9 @@ S0: reset
 S1: got '1'
 S2: got '10'
 S3: got '101' (output=1)
-Overlap: after "101" and next bit '1' â†’ we have last '1' which starts new "101" â†’ go to S1.
-After "101" and next '0' â†’ we have last '0'... "10" starts with "10" â†’ go to S2.
-So S3â†’S1 on '1', S3â†’S2 on '0'. 4 states.
+Overlap: after "101" and next bit '1' → we have last '1' which starts new "101" → go to S1.
+After "101" and next '0' → we have last '0'... "10" starts with "10" → go to S2.
+So S3→S1 on '1', S3→S2 on '0'. 4 states.
 
 Answer: (B) 4
 ```
@@ -2026,7 +2026,7 @@ Answer: (B) 4
 ```
 **Solution:**
 ```
-Excitation table: Q 1â†’0 requires J=x, K=1.
+Excitation table: Q 1→0 requires J=x, K=1.
 From options: J=0, K=1 works (K=1 resets).
 
 Answer: (A) J=0, K=1
@@ -2039,7 +2039,7 @@ Answer: (A) J=0, K=1
 ```
 **Solution:**
 ```
-With J=K=1, the FF should toggle. If clock pulse width > FF propagation delay, the output oscillates multiple times during one clock period â€” race-around condition.
+With J=K=1, the FF should toggle. If clock pulse width > FF propagation delay, the output oscillates multiple times during one clock period → race-around condition.
 
 Answer: (D) J=K=1 and clock pulse > delay
 ```
@@ -2050,8 +2050,8 @@ Answer: (D) J=K=1 and clock pulse > delay
 ```
 **Solution:**
 ```
-Sequence: 00000â†’10000â†’11000â†’11100â†’11110â†’11111â†’01111â†’00111â†’00011â†’00001â†’00000
-CLK 7 â†’ 00111
+Sequence: 00000→10000→11000→11100→11110→11111→01111→00111→00011→00001→00000
+CLK 7 → 00111
 
 Answer: (C) 00111
 ```
@@ -2092,7 +2092,7 @@ Answer: (A) 25 MHz
 LSB first: send bit 0 (1), bit 1 (0), bit 2 (1), bit 3 (1).
 After 4 clocks, register contains the 4 bits in order received.
 Actually: bit 0 enters Qâ‚ƒ first, shifts right.
-Wait â€” in a standard right-shift SIPO, the first bit received appears at Qâ‚€.
+Wait → in a standard right-shift SIPO, the first bit received appears at Qâ‚€.
 CLK 1: Qâ‚ƒQâ‚‚Qâ‚Qâ‚€ = 0001  (input 1, LSB)
 CLK 2: 0011  (input 1, bit 1)
 CLK 3: 0110  (input 0, bit 2)
@@ -2102,7 +2102,7 @@ Parallel output after 4 clocks: 1101 (MSB at Qâ‚ƒ).
 Answer: (B) 1101
 ```
 
-**Problem 60 (GATE 2024):** FSM with Sâ‚€â†’Sâ‚â†’Sâ‚‚â†’Sâ‚ƒâ†’Sâ‚€ unconditionally is:
+**Problem 60 (GATE 2024):** FSM with Sâ‚€→Sâ‚→Sâ‚‚→Sâ‚ƒ→Sâ‚€ unconditionally is:
 ```
 (A) Ring counter   (B) Johnson counter   (C) Mod-4 counter   (D) Sequence detector
 ```
@@ -2121,8 +2121,8 @@ Answer: (C) Mod-4 counter
 ```
 D FF: Q(t+1) = D. JK: Q(t+1) = JQ' + K'Q.
 For equality: JQ' + K'Q = D.
-When D=0: JÂ·Q' + K'Â·Q = 0 â†’ needs J=0, K=1 (reset).
-When D=1: JÂ·Q' + K'Â·Q = 1 â†’ needs J=1, K=0 (set).
+When D=0: JÂ·Q' + K'Â·Q = 0 → needs J=0, K=1 (reset).
+When D=1: JÂ·Q' + K'Â·Q = 1 → needs J=1, K=0 (set).
 So J = D, K = D'.
 
 Answer: (B) J=D, K=D'
@@ -2146,7 +2146,7 @@ Answer: (A) 71.4 MHz
 ```
 **Solution:**
 ```
-J=K=1 â†’ toggle mode. Q(t+1) = Q(t)' = 0.
+J=K=1 → toggle mode. Q(t+1) = Q(t)' = 0.
 
 Answer: (C) 0, Toggle
 ```
@@ -2174,8 +2174,8 @@ AB 00 | 1 | 0 | 0 | 1 |
     10 | 1 | 0 | 0 | 1 |
     +----+---+---+---+
 
-Group 1: m0,m2,m8,m10 â†’ B'D' (columns 00,10; rows 00,10)
-Group 2: m5,m7,m13,m15 â†’ BD (columns 01,11; rows 01,11)
+Group 1: m0,m2,m8,m10 → B'D' (columns 00,10; rows 00,10)
+Group 2: m5,m7,m13,m15 → BD (columns 01,11; rows 01,11)
 F = B'D' + BD
 
 Answer: (A) B'D' + BD
@@ -2200,8 +2200,8 @@ AB 00 | 0 | 1 | 1 | 0 |
     10 | 0 | 1 | 1 | 0 |
     +----+---+---+---+
 
-Group 1: m1,m3,m9,m11 â†’ B'D (columns 01,11; rows 00,10)
-Group 2: m4,m6,m12,m14 â†’ BD' (columns 00,10; rows 01,11)
+Group 1: m1,m3,m9,m11 → B'D (columns 01,11; rows 00,10)
+Group 2: m4,m6,m12,m14 → BD' (columns 00,10; rows 01,11)
 F = B'D + BD' = B âŠ• D
 
 Answer: (A) B'D + BD' (equivalently BâŠ•D)
@@ -2254,29 +2254,29 @@ AB 00 | 1 | 0 | 0 | 0 |
     +----+---+---+---+
 
 Prime implicants:
-P1: m0,m4 â†’ A'C'D' (covers m0,m4). Check: m0=0000, m4=0100 â†’ both A'C'D'.
-P2: m4,m5 â†’ A'BC' (covers m4,m5). m4=0100, m5=0101 â†’ A'BC'.
-P3: m10,m11 â†’ AB'C (covers m10,m11). m10=1010, m11=1011 â†’ AB'C.
-P4: m13,m15 â†’ ABD (covers m13,m15). m13=1101, m15=1111 â†’ ABD.
-P5: m5,m13 â†’ ... wait, m5=0101, m13=1101 â†’ BD (A eliminated). So P5: BD covers m5,m13,m7,m15? Let me check: BD covers all cells where B=1,D=1. m5=0101, m7=0111, m13=1101, m15=1111.
+P1: m0,m4 → A'C'D' (covers m0,m4). Check: m0=0000, m4=0100 → both A'C'D'.
+P2: m4,m5 → A'BC' (covers m4,m5). m4=0100, m5=0101 → A'BC'.
+P3: m10,m11 → AB'C (covers m10,m11). m10=1010, m11=1011 → AB'C.
+P4: m13,m15 → ABD (covers m13,m15). m13=1101, m15=1111 → ABD.
+P5: m5,m13 → ... wait, m5=0101, m13=1101 → BD (A eliminated). So P5: BD covers m5,m13,m7,m15? Let me check: BD covers all cells where B=1,D=1. m5=0101, m7=0111, m13=1101, m15=1111.
 But m7 is not a minterm! So BD doesn't fully help.
 
 Let me redo more carefully.
 Minimization:
-P1: m0,m4 â†’ A'C'D' (m0=0000, m4=0100)
-P2: m4,m5 â†’ A'BC' (m4=0100, m5=0101)
-P3: m10,m11 â†’ AB'C (m10=1010, m11=1011)
-P4: m13,m15 â†’ ABD (m13=1101, m15=1111)
-P5: m5,m13 â†’ A'BC'D + ABC'D â†’ wait, m5=0101, m13=1101 â†’ need B=1, D=1 â†’ BD. So P5: BD covers m5,m7,m13,m15 but m7 not in set.
+P1: m0,m4 → A'C'D' (m0=0000, m4=0100)
+P2: m4,m5 → A'BC' (m4=0100, m5=0101)
+P3: m10,m11 → AB'C (m10=1010, m11=1011)
+P4: m13,m15 → ABD (m13=1101, m15=1111)
+P5: m5,m13 → A'BC'D + ABC'D → wait, m5=0101, m13=1101 → need B=1, D=1 → BD. So P5: BD covers m5,m7,m13,m15 but m7 not in set.
 
 Essential PIs:
-- m0 is only covered by P1 â†’ P1 essential.
-- m10 is only covered by P3 â†’ P3 essential.
+- m0 is only covered by P1 → P1 essential.
+- m10 is only covered by P3 → P3 essential.
 - m15 is only covered by P4... m13 also covered by P4. Let me check if m15 is only in P4. m15 also in BD(P5) but m7 is not a minterm so BD(P5) = BD actually covers m5,m7,m13,m15. But m7 not a minterm, so BD covers m5 and m13 and m15. So m15 is in P4 and P5.
-- m11 is only in P3 â†’ already covered.
-- m13 is in P4 and P5 â†’ not unique.
-- m5 is in P2 and P5 â†’ not unique.
-- m4 is in P1 and P2 â†’ not unique.
+- m11 is only in P3 → already covered.
+- m13 is in P4 and P5 → not unique.
+- m5 is in P2 and P5 → not unique.
+- m4 is in P1 and P2 → not unique.
 
 Essential PIs: P1 (A'C'D'), P3 (AB'C). That's 2.
 
@@ -2303,22 +2303,22 @@ AB 00 | 0 | X | 1 | X |
     +----+---+---+---+
 
 Groups using don't cares where beneficial:
-G1: m1(X),m3,m5,m7,m9,m11(X),m13,m15 â†’ treat X as 1 â†’ D  (all rows with D=1, independent of ABC)
+G1: m1(X),m3,m5,m7,m9,m11(X),m13,m15 → treat X as 1 → D  (all rows with D=1, independent of ABC)
 Actually wait: D=1 spans m1,3,5,7,9,11,13,15 in this K-map (CD columns 01,11). With X at 1 and 11 treated as 1:
-G1 = D (covers minterms 3,5,7,9,13,15 and don't cares 1,11) â€” 8 cells total.
+G1 = D (covers minterms 3,5,7,9,13,15 and don't cares 1,11) → 8 cells total.
 
-G2: m4,m5 â†’ A'BC'  (covers m4=0100, m5=0101)
+G2: m4,m5 → A'BC'  (covers m4=0100, m5=0101)
 Actually m5 already covered by D. Let me see what's left uncovered by D: m4.
-m4=0100 â†’ D=0, not covered by D. Need a group for m4.
+m4=0100 → D=0, not covered by D. Need a group for m4.
 G2: m4 with m5 (already covered) or m4 with d(1) or d(2). Treat X at 2 as 1:
-m4(0100) + m2(0010,X) â†’ doesn't combine (differs in 2 bits).
-Better: treat X at 1 as 1: m4(0100) + m1(0001,X) â†’ ??? They differ in 3 bits.
+m4(0100) + m2(0010,X) → doesn't combine (differs in 2 bits).
+Better: treat X at 1 as 1: m4(0100) + m1(0001,X) → ??? They differ in 3 bits.
 
-Actually: m4 = 0100. With X at 2(0010): A'B'CD' â€” differs in A,B. Not adjacent.
+Actually: m4 = 0100. With X at 2(0010): A'B'CD' → differs in A,B. Not adjacent.
 With X at 12(1100): not a don't care.
 
-The best group for m4 is with m12(1100) â€” but m12 is 0 (not in set, not don't care).
-Or with m5(0101) â†’ A'BC'. That's already the best option.
+The best group for m4 is with m12(1100) → but m12 is 0 (not in set, not don't care).
+Or with m5(0101) → A'BC'. That's already the best option.
 
 OK but the question is about minimal product terms count. With D covering most and a small group for m4, m14,m15, and m9...
 
@@ -2326,19 +2326,19 @@ Actually let me reconsider. D as the big group covers: m3(0011), m5(0101), m7(01
 
 Uncovered: m4(0100), m14(1110). Also m1,m2,m11 are don't cares so they don't need covering.
 
-G2: m4 â†’ need to find a group. m4(0100) with d(1)(0001)? Not adjacent.
+G2: m4 → need to find a group. m4(0100) with d(1)(0001)? Not adjacent.
 m4(0100) with d(2)(0010)? No.
-m4(0100) with m5(0101) â†’ A'BC'. This covers m4,m5.
+m4(0100) with m5(0101) → A'BC'. This covers m4,m5.
 But m5 already covered by D. So G2 = A'BC' covering just m4, m5.
 
 G3: m14(1110) needs coverage.
-m14(1110) with m13(1101)? No. m14(1110) with m15(1111)? â†’ ABD'... wait, m14=1110, m15=1111 â†’ ABD'? No: m14=AB'CD'? No: m14=1110=A B C D'. m15=1111=A B C D. So A,B,C eliminate â†’... m14 and m15 share AÂ·BÂ·C but differ in D. So ABD'(D'=0) doesn't work. They share AB... no:
-m14 = AÂ·BÂ·CÂ·D' = ABCD', m15 = ABCD. Together: ABC covers both. But ABC = 1 when A=B=C=1. m14=1110 (ABC=1, D=0). m15=1111 (ABC=1, D=1). So m14+m15 = ABC. But m9=1001 has A=1 but B=0,C=0 â€” ABC is 0.
+m14(1110) with m13(1101)? No. m14(1110) with m15(1111)? → ABD'... wait, m14=1110, m15=1111 → ABD'? No: m14=AB'CD'? No: m14=1110=A B C D'. m15=1111=A B C D. So A,B,C eliminate →... m14 and m15 share AÂ·BÂ·C but differ in D. So ABD'(D'=0) doesn't work. They share AB... no:
+m14 = AÂ·BÂ·CÂ·D' = ABCD', m15 = ABCD. Together: ABC covers both. But ABC = 1 when A=B=C=1. m14=1110 (ABC=1, D=0). m15=1111 (ABC=1, D=1). So m14+m15 = ABC. But m9=1001 has A=1 but B=0,C=0 → ABC is 0.
 
 Hmm wait, m14 = 1110. Let me be careful about variable order: F(A,B,C,D) with A=MSB, D=LSB.
 m14 = 1110 = AÂ·BÂ·CÂ·D'
 m15 = 1111 = AÂ·BÂ·CÂ·D
-So m14 and m15 share AÂ·BÂ·C. But m13=1101 has AÂ·BÂ·C'Â·D â€” ABC would not cover m13. So G3 = AÂ·BÂ·C covers m14,m15.
+So m14 and m15 share AÂ·BÂ·C. But m13=1101 has AÂ·BÂ·C'Â·D → ABC would not cover m13. So G3 = AÂ·BÂ·C covers m14,m15.
 
 So: F = D (G1) + A'BC' (G2) + ABC (G3) = 3 product terms.
 
@@ -2366,7 +2366,7 @@ AB 00 | 1 | 0 | 0 | 1 |
     10 | 1 | 0 | 0 | 1 |
     +----+---+---+---+
 
-This is simply D' (all rows where D=0 â†’ columns 00,10).
+This is simply D' (all rows where D=0 → columns 00,10).
 F = D'
 
 Answer: (A) D'
@@ -2387,9 +2387,9 @@ A=0 | 1 | 0 | 0 | 1 |
 A=1 | 1 | 0 | 1 | 1 |
     +----+---+---+---+
 
-Group 1: m0,m2,m4,m6 â†’ C' (A and B eliminated, C=0 spans all)
-Group 2: m6,m7 â†’ AB (note m6 already covered by C' but m7 needs coverage)
-Actually m7=111. m6=110, m7=111 â†’ AB(C' + C) = AB.
+Group 1: m0,m2,m4,m6 → C' (A and B eliminated, C=0 spans all)
+Group 2: m6,m7 → AB (note m6 already covered by C' but m7 needs coverage)
+Actually m7=111. m6=110, m7=111 → AB(C' + C) = AB.
 So F = C' + AB
 
 Answer: (A) C' + AB
@@ -2463,7 +2463,7 @@ Answer: (B) DRAM
 
 ---
 
-### Answer Key â€” Previous Year Questions (Problems 26-75)
+### Answer Key → Previous Year Questions (Problems 26-75)
 
 | Problem | Year | Answer | Topic |
 |---------|------|--------|-------|
@@ -2522,7 +2522,7 @@ Answer: (B) DRAM
 
 ## Additional Previous Year Questions (GATE 2010-2018)
 
-This section extends the PYQ bank with 50 problems from **GATE 2010-2018**, organized by topic. These cover the classic GATE pattern before the 2019 syllabus revision â€” heavier on sequential circuit analysis, state machines, and memory interleaving.
+This section extends the PYQ bank with 50 problems from **GATE 2010-2018**, organized by topic. These cover the classic GATE pattern before the 2019 syllabus revision → heavier on sequential circuit analysis, state machines, and memory interleaving.
 
 ### Category A: Number Systems & Boolean Algebra (10 Problems)
 
@@ -2545,7 +2545,7 @@ Answer: (C) Both A and B
 **Solution:**
 ```
 657â‚ˆ = 6Ã—8Â² + 5Ã—8Â¹ + 7Ã—8â° = 384 + 40 + 7 = 431â‚â‚€
-431 Ã· 16 = 26 R 15 (F); 26 Ã· 16 = 1 R 10 (A); 1 Ã· 16 = 0 R 1 â†’ 1AFâ‚â‚†
+431 Ã· 16 = 26 R 15 (F); 26 Ã· 16 = 1 R 10 (A); 1 Ã· 16 = 0 R 1 → 1AFâ‚â‚†
 
 Answer: (A) 1AFâ‚â‚†
 ```
@@ -2556,7 +2556,7 @@ Answer: (A) 1AFâ‚â‚†
 ```
 **Solution:**
 ```
-3-var K-map: m0(000) and m2(010) â†’ A'C'; m3(011) and m7(111) â†’ BC.
+3-var K-map: m0(000) and m2(010) → A'C'; m3(011) and m7(111) → BC.
 F = A'C' + BC.
 
 Answer: (D) A'C' + BC
@@ -2570,8 +2570,8 @@ Answer: (D) A'C' + BC
 **Solution:**
 ```
 0110 = +6, 1011 = -5 (2's comp: 0100+1=0101=5). Sum = +1.
-0110 + 1011 = 10001 â†’ truncate to 4 bits: 0001.
-Carry into sign = 1+0 â†’ carry 0 (bit3 result=0). Carry out = 1.
+0110 + 1011 = 10001 → truncate to 4 bits: 0001.
+Carry into sign = 1+0 → carry 0 (bit3 result=0). Carry out = 1.
 Overflow = carry_in âŠ• carry_out = 0 âŠ• 1 = 1. Overflow exists.
 
 Answer: (A) 0001 with overflow
@@ -2586,7 +2586,7 @@ Answer: (A) 0001 with overflow
 F = AB + (AB)'C = AB + C  [by X + X'Y = X + Y]
 With complements available: G1 = A NAND B = (AB)'; 
 G2 = C NAND C = C'; G3 = G1 NAND G2 = (AB + C')' = (AB)'C; 
-Wait â€” simpler: F = AB + C. In NAND logic:
+Wait → simpler: F = AB + C. In NAND logic:
 F = ((AB + C)')' = ((AB)'Â·C')' = ((A NAND B) NAND (C NAND C)).
 G1 = A NAND B = (AB)'; G2 = C NAND C = C'; 
 G3 = G1 NAND G2 = ((AB)'Â·C')' = AB + C.
@@ -2613,7 +2613,7 @@ Answer: (D) 65536
 ```
 **Solution:**
 ```
-X = 1110â‚‚ â†’ MSB=1 (negative). Magnitude: 0010 = 2. X = -2.
+X = 1110â‚‚ → MSB=1 (negative). Magnitude: 0010 = 2. X = -2.
 2X = -4 (-8 to +7 range is sufficient). -4 in 2's comp: 1100.
 
 Answer: (A) -4
@@ -2626,7 +2626,7 @@ Answer: (A) -4
 **Solution:**
 ```
 By consensus theorem: XZ + X'Y + YZ = XZ + X'Y.
-Here AB(A) + A'C(A') + BC â†’ consensus term BC is redundant.
+Here AB(A) + A'C(A') + BC → consensus term BC is redundant.
 F = AB + A'C.
 
 Answer: (A) AB + A'C
@@ -2639,7 +2639,7 @@ Answer: (A) AB + A'C
 **Solution:**
 ```
 Duality: swap + with Â·, 0 with 1, complements unchanged.
-(A + B)(A + C)(B + C) â†’ (AÂ·B) + (AÂ·C) + (BÂ·C) = AB + AC + BC.
+(A + B)(A + C)(B + C) → (AÂ·B) + (AÂ·C) + (BÂ·C) = AB + AC + BC.
 This is SOP form: the dual of POS (A+B)(A+C)(B+C) is SOP AB + AC + BC.
 
 Answer: (A) AB + AC + BC
@@ -2693,7 +2693,7 @@ Answer: (C) Sâ‚'Sâ‚€'V + Sâ‚'Sâ‚€V' + Sâ‚Sâ‚€
 ```
 **Solution:**
 ```
-Decoder outputs Yáµ¢ = 1 for minterm i. F = Yâ‚‚ + Yâ‚„ + Yâ‚† + Yâ‚‡ â†’ 4-input OR.
+Decoder outputs Yáµ¢ = 1 for minterm i. F = Yâ‚‚ + Yâ‚„ + Yâ‚† + Yâ‚‡ → 4-input OR.
 
 Answer: (B) 4-input OR
 ```
@@ -2706,7 +2706,7 @@ Answer: (B) 4-input OR
 ```
 Full adder S = A âŠ• B âŠ• Cáµ¢. Use HA1: sum1 = AâŠ•B, carry1 = AB.
 HA2: sum2 = sum1 âŠ• Cáµ¢ = AâŠ•BâŠ•Cáµ¢ (final S), carry2 = sum1Â·Cáµ¢ = (AâŠ•B)Cáµ¢.
-Final carry = carry1 + carry2 = AB + (AâŠ•B)Cáµ¢ â†’ needs OR gate.
+Final carry = carry1 + carry2 = AB + (AâŠ•B)Cáµ¢ → needs OR gate.
 2 half adders + 1 OR gate.
 
 Answer: (B) 2
@@ -2720,7 +2720,7 @@ Answer: (B) 2
 **Solution:**
 ```
 F = Î£m(1,3,5,7) means F=1 when LSB=1 (odd minterms only, assuming Aâ‚‚Aâ‚Aâ‚€).
-With Sâ‚€ connected to LSB: any input odd index â†’ 1, even â†’ 0.
+With Sâ‚€ connected to LSB: any input odd index → 1, even → 0.
 Odd inputs Iâ‚,Iâ‚ƒ,Iâ‚…,Iâ‚‡ = 1, even inputs Iâ‚€,Iâ‚‚,Iâ‚„,Iâ‚† = 0.
 
 Answer: (A) Iâ‚€=Iâ‚‚=Iâ‚„=Iâ‚†=0, Iâ‚=Iâ‚ƒ=Iâ‚…=Iâ‚‡=1
@@ -2765,8 +2765,8 @@ Closest option: (C) 11 if we count that each stage sum is T_sum=3 but carry to n
 Actually some textbooks count: first sum = 3, then each stage adds 2 for carry, last sum adds 3 = 3+2Ã—3 = 9.
 Others: each stage adds max(carry_delay, sum_delay) = 3. Then 4Ã—3 = 12. If it's 2+2+2+3 = 9... hmm.
 
-Given options, 8, 11, 14 â€” the closest standard answer for n=4 is 3+2Ã—3 = 9.
-Perhaps they count differently: first stage sum: 2 (carry delay), stages 1-2: 2+2 = 4, last sum: 3 more â†’ 2+2+2+3 = 9.
+Given options, 8, 11, 14 → the closest standard answer for n=4 is 3+2Ã—3 = 9.
+Perhaps they count differently: first stage sum: 2 (carry delay), stages 1-2: 2+2 = 4, last sum: 3 more → 2+2+2+3 = 9.
 Or: first carry 2, plus 3 intermediate carries Ã— 2 = 6, plus final sum 3 = 11 if first sum is also counted.
 Let me take the consensus: some textbooks count 2+(n-1)Ã—2+3 = 2n+3... no.
 Ripple carry delay = T_setup + (n-1)Ã—T_carry + T_sum = 2 + 3Ã—2 + 3 = 11 if setup time for first stage is included.
@@ -2806,7 +2806,7 @@ Answer: (A) A âŠ• B âŠ• Cáµ¢
 **Solution:**
 ```
 4-bit priority encoder: Dâ‚ƒ highest, Dâ‚‚ next, Dâ‚, Dâ‚€ lowest.
-Dâ‚ƒ=0, Dâ‚‚=1 â†’ Dâ‚‚ has highest active input. Dâ‚‚ encodes to 10â‚‚ (Aâ‚=1, Aâ‚€=0).
+Dâ‚ƒ=0, Dâ‚‚=1 → Dâ‚‚ has highest active input. Dâ‚‚ encodes to 10â‚‚ (Aâ‚=1, Aâ‚€=0).
 V=1 (valid output, at least one input active).
 
 Answer: (A) Aâ‚=1, Aâ‚€=0, V=1
@@ -2875,54 +2875,54 @@ Answer: (B) 2
 ```
 NOR-based SR latch: Q = (R + Q')', Q' = (S + Q)'.
 State S=1,R=0: Q=1 (set) regardless of previous state.
-Then S=0,R=0: hold state â†’ Q stays 1 (latches previous value).
+Then S=0,R=0: hold state → Q stays 1 (latches previous value).
 
 Answer: (B) 1
 ```
 
 **Q76 (GATE 2015):** A 3-bit synchronous counter using D flip-flops. The next state logic: Dâ‚‚=Qâ‚‚âŠ•Qâ‚, Dâ‚=Qâ‚âŠ•Qâ‚€, Dâ‚€=Qâ‚€'. The count sequence (starting 000) is:
 ```
-(A) 0â†’1â†’2â†’3â†’4â†’5â†’6â†’7â†’0    (B) 0â†’1â†’3â†’2â†’6â†’7â†’5â†’4â†’0
-(C) 0â†’7â†’1â†’6â†’2â†’5â†’3â†’4â†’0    (D) 0â†’3â†’5â†’7â†’1â†’2â†’4â†’6â†’0
+(A) 0→1→2→3→4→5→6→7→0    (B) 0→1→3→2→6→7→5→4→0
+(C) 0→7→1→6→2→5→3→4→0    (D) 0→3→5→7→1→2→4→6→0
 ```
 **Solution:**
 ```
-Start 000: Dâ‚‚=0âŠ•0=0, Dâ‚=0âŠ•0=0, Dâ‚€=0'=1 â†’ next=001
-001: Dâ‚‚=0âŠ•0=0, Dâ‚=0âŠ•1=1, Dâ‚€=1'=0 â†’ next=010
-010: Dâ‚‚=0âŠ•1=1, Dâ‚=1âŠ•0=1, Dâ‚€=0'=1 â†’ next=101
+Start 000: Dâ‚‚=0âŠ•0=0, Dâ‚=0âŠ•0=0, Dâ‚€=0'=1 → next=001
+001: Dâ‚‚=0âŠ•0=0, Dâ‚=0âŠ•1=1, Dâ‚€=1'=0 → next=010
+010: Dâ‚‚=0âŠ•1=1, Dâ‚=1âŠ•0=1, Dâ‚€=0'=1 → next=101
 011... wait let me trace more carefully.
-Qâ‚‚Qâ‚Qâ‚€ = 000: Dâ‚‚=0âŠ•0=0, Dâ‚=0âŠ•0=0, Dâ‚€=1 â†’ 001
-Qâ‚‚Qâ‚Qâ‚€ = 001: Dâ‚‚=0âŠ•0=0, Dâ‚=0âŠ•1=1, Dâ‚€=0 â†’ 010
-Qâ‚‚Qâ‚Qâ‚€ = 010: Dâ‚‚=0âŠ•1=1, Dâ‚=1âŠ•0=1, Dâ‚€=1 â†’ 110... no wait, 1 1 0... Dâ‚‚=1, Dâ‚=1, Dâ‚€=1 â†’ 111? No Dâ‚€=Qâ‚€'=0'=1. So Dâ‚‚=1, Dâ‚=1, Dâ‚€=1 â†’ 111.
-Qâ‚‚Qâ‚Qâ‚€=111: Dâ‚‚=1âŠ•1=0, Dâ‚=1âŠ•1=0, Dâ‚€=1'=0 â†’ 000
-Qâ‚‚Qâ‚Qâ‚€=110: Dâ‚‚=1âŠ•1=0, Dâ‚=1âŠ•0=1, Dâ‚€=0'=1 â†’ 011... wait 0 1 1... yes 011.
+Qâ‚‚Qâ‚Qâ‚€ = 000: Dâ‚‚=0âŠ•0=0, Dâ‚=0âŠ•0=0, Dâ‚€=1 → 001
+Qâ‚‚Qâ‚Qâ‚€ = 001: Dâ‚‚=0âŠ•0=0, Dâ‚=0âŠ•1=1, Dâ‚€=0 → 010
+Qâ‚‚Qâ‚Qâ‚€ = 010: Dâ‚‚=0âŠ•1=1, Dâ‚=1âŠ•0=1, Dâ‚€=1 → 110... no wait, 1 1 0... Dâ‚‚=1, Dâ‚=1, Dâ‚€=1 → 111? No Dâ‚€=Qâ‚€'=0'=1. So Dâ‚‚=1, Dâ‚=1, Dâ‚€=1 → 111.
+Qâ‚‚Qâ‚Qâ‚€=111: Dâ‚‚=1âŠ•1=0, Dâ‚=1âŠ•1=0, Dâ‚€=1'=0 → 000
+Qâ‚‚Qâ‚Qâ‚€=110: Dâ‚‚=1âŠ•1=0, Dâ‚=1âŠ•0=1, Dâ‚€=0'=1 → 011... wait 0 1 1... yes 011.
 Hmm this is getting messy with tracing. Let me be systematic:
 State Qâ‚‚Qâ‚Qâ‚€: Dâ‚‚=Qâ‚‚âŠ•Qâ‚, Dâ‚=Qâ‚âŠ•Qâ‚€, Dâ‚€=Qâ‚€'
-000 â†’ Dâ‚‚=0,Dâ‚=0,Dâ‚€=1 â†’ 001
-001 â†’ Dâ‚‚=0,Dâ‚=1,Dâ‚€=0 â†’ 010
-010 â†’ Dâ‚‚=1,Dâ‚=1,Dâ‚€=1 â†’ 111
-111 â†’ Dâ‚‚=0,Dâ‚=0,Dâ‚€=0 â†’ 000
-So 000â†’001â†’010â†’111â†’000. This doesn't match any option.
+000 → Dâ‚‚=0,Dâ‚=0,Dâ‚€=1 → 001
+001 → Dâ‚‚=0,Dâ‚=1,Dâ‚€=0 → 010
+010 → Dâ‚‚=1,Dâ‚=1,Dâ‚€=1 → 111
+111 → Dâ‚‚=0,Dâ‚=0,Dâ‚€=0 → 000
+So 000→001→010→111→000. This doesn't match any option.
 
 Let me re-examine: Dâ‚‚=Qâ‚‚âŠ•Qâ‚, Dâ‚=Qâ‚âŠ•Qâ‚€, Dâ‚€=Qâ‚€'
-001 â†’ Dâ‚‚=0âŠ•0=0, Dâ‚=0âŠ•1=1, Dâ‚€=0 â†’ 010
-010 â†’ Dâ‚‚=0âŠ•1=1, Dâ‚=1âŠ•0=1, Dâ‚€=1 â†’ 111
-111 â†’ Dâ‚‚=1âŠ•1=0, Dâ‚=1âŠ•1=0, Dâ‚€=0 â†’ 000
-000 â†’ 001 â†’ 010 â†’ 111 â†’ 000 (4-state cycle). Not matching options... Let me try other states:
-011 â†’ Dâ‚‚=0âŠ•1=1, Dâ‚=1âŠ•1=0, Dâ‚€=0 â†’ 101... no wait Dâ‚€=Qâ‚€'=1'=0. 1 0 0? No Dâ‚‚=1, Dâ‚=0, Dâ‚€=0 â†’ 100.
-100 â†’ Dâ‚‚=1âŠ•0=1, Dâ‚=0âŠ•0=0, Dâ‚€=1 â†’ 101
-101 â†’ Dâ‚‚=1âŠ•0=1... wait Qâ‚‚=1,Qâ‚=0: Dâ‚‚=1âŠ•0=1. Dâ‚=0âŠ•1=1. Dâ‚€=1'=0. â†’ 110
-110 â†’ Dâ‚‚=1âŠ•1=0, Dâ‚=1âŠ•0=1, Dâ‚€=0'=1 â†’ 011
-So 011â†’100â†’101â†’110â†’011 (another 4-state cycle).
+001 → Dâ‚‚=0âŠ•0=0, Dâ‚=0âŠ•1=1, Dâ‚€=0 → 010
+010 → Dâ‚‚=0âŠ•1=1, Dâ‚=1âŠ•0=1, Dâ‚€=1 → 111
+111 → Dâ‚‚=1âŠ•1=0, Dâ‚=1âŠ•1=0, Dâ‚€=0 → 000
+000 → 001 → 010 → 111 → 000 (4-state cycle). Not matching options... Let me try other states:
+011 → Dâ‚‚=0âŠ•1=1, Dâ‚=1âŠ•1=0, Dâ‚€=0 → 101... no wait Dâ‚€=Qâ‚€'=1'=0. 1 0 0? No Dâ‚‚=1, Dâ‚=0, Dâ‚€=0 → 100.
+100 → Dâ‚‚=1âŠ•0=1, Dâ‚=0âŠ•0=0, Dâ‚€=1 → 101
+101 → Dâ‚‚=1âŠ•0=1... wait Qâ‚‚=1,Qâ‚=0: Dâ‚‚=1âŠ•0=1. Dâ‚=0âŠ•1=1. Dâ‚€=1'=0. → 110
+110 → Dâ‚‚=1âŠ•1=0, Dâ‚=1âŠ•0=1, Dâ‚€=0'=1 → 011
+So 011→100→101→110→011 (another 4-state cycle).
 So this counter has two 4-state cycles, not 8 states. That's a valid counter behavior.
 
-The 4-state cycle starting at 000 is 000â†’001â†’010â†’111â†’000. None of the options match this.
+The 4-state cycle starting at 000 is 000→001→010→111→000. None of the options match this.
 Let me reconsider: maybe the FF order is different, or I'm misreading the equations.
-Options show patterns like 0â†’1â†’2â†’etc in decimal. 
+Options show patterns like 0→1→2→etc in decimal. 
 
 Given the complexity, let me just use a simpler known counter question.
 
-Answer: (B) 0â†’1â†’3â†’2â†’6â†’7â†’5â†’4â†’0 [Pattern: Gray code sequence]
+Answer: (B) 0→1→3→2→6→7→5→4→0 [Pattern: Gray code sequence]
 ```
 
 **Q77 (GATE 2014):** A 4-bit ring counter with initial state 1000. After 5 clock pulses, the state is:
@@ -2932,7 +2932,7 @@ Answer: (B) 0â†’1â†’3â†’2â†’6â†’7â†’5â†’4â�
 **Solution:**
 ```
 Ring counter: single 1 shifts right each clock.
-1000 â†’ 0100 â†’ 0010 â†’ 0001 â†’ 1000 â†’ 0100 (after 5 clocks).
+1000 → 0100 → 0010 → 0001 → 1000 → 0100 (after 5 clocks).
 After n clocks for n-bit ring: state = initial shifted right by (n mod 5).
 Clock 5: 0100.
 
@@ -2946,7 +2946,7 @@ Answer: (B) 0100
 **Solution:**
 ```
 Johnson counter: shift register with Q'â‚ƒ fed to Dâ‚€.
-0000 â†’ 1000 â†’ 1100 â†’ 1110 (shifts in 1s from left).
+0000 → 1000 → 1100 → 1110 (shifts in 1s from left).
 
 Answer: (D) 1110
 ```
@@ -2972,7 +2972,7 @@ Answer: (B) 50 MHz
 ```
 NAND-based SR latch: Q = (SÂ·Q')', Q' = (RÂ·Q)'.
 S=0,R=0: Q = (0Â·Q')' = 1, Q' = (0Â·Q)' = 1.
-Both outputs = 1 â†’ invalid state (contradicts Q' = complement of Q).
+Both outputs = 1 → invalid state (contradicts Q' = complement of Q).
 
 Answer: (A) Q=1, Q'=1 (invalid)
 ```
@@ -2995,7 +2995,7 @@ Answer: (B) 3
 **Solution:**
 ```
 Ripple counter: each stage divides by 2.
-Clock â†’ Qâ‚€ Ã·2 â†’ Qâ‚ Ã·2 â†’ Qâ‚‚ Ã·2.
+Clock → Qâ‚€ Ã·2 → Qâ‚ Ã·2 → Qâ‚‚ Ã·2.
 Frequency at Qâ‚‚ = 4 kHz / 8 = 500 Hz.
 
 Answer: (A) 500 Hz
@@ -3008,7 +3008,7 @@ Answer: (A) 500 Hz
 **Solution:**
 ```
 Mod-12 counter: counts 0 to 11 (12 states). Need n FFs where 2â¿ â‰¥ 12.
-n=4 â†’ 2â´=16 â‰¥ 12. n=3 â†’ 2Â³=8 < 12. Minimum = 4.
+n=4 → 2â´=16 â‰¥ 12. n=3 → 2Â³=8 < 12. Minimum = 4.
 
 Answer: (B) 4
 ```
@@ -3021,7 +3021,7 @@ Solution:**
 ```
 Sequence 1011, overlapping allowed.
 Mealy FSM: states represent longest matching prefix.
-Prefix states: "", "1", "10", "101" â†’ 4 states.
+Prefix states: "", "1", "10", "101" → 4 states.
 Mealy output on last bit transition: 4 states suffice.
 
 Answer: (B) 4
@@ -3047,8 +3047,8 @@ Answer: (B) JK flip-flop with level-triggered clock
 ```
 **Solution:**
 ```
-State 00: Dâ‚=0âŠ•0=0, Dâ‚‚=0'+0'=1+1=1 â†’ next=01
-State 01: Dâ‚=0âŠ•1=1, Dâ‚‚=0'+1'=1+0=1 â†’ next=11
+State 00: Dâ‚=0âŠ•0=0, Dâ‚‚=0'+0'=1+1=1 → next=01
+State 01: Dâ‚=0âŠ•1=1, Dâ‚‚=0'+1'=1+0=1 → next=11
 After 2 clocks: Qâ‚Qâ‚‚=11.
 
 Answer: (A) 11
@@ -3088,8 +3088,8 @@ AB   00 01 11 10
 10   0  0  0  0   (m8,m9,m11,m10)
 
 Groups:
-- Column CD=00 (all rows 00,01,11): C'D' â†’ but only where ABâ‰ 10. Actually m0,m4,m12 â†’ B'D'? No.
-Actually CD=00: AB=00,01,11 â†’ 1,1,1 â†’ that's A'B'C'D' + A'BC'D' + ABC'D' = C'D'(A'B'+A'B+AB) = C'D'(A'+B) â€” no that's not one group.
+- Column CD=00 (all rows 00,01,11): C'D' → but only where ABâ‰ 10. Actually m0,m4,m12 → B'D'? No.
+Actually CD=00: AB=00,01,11 → 1,1,1 → that's A'B'C'D' + A'BC'D' + ABC'D' = C'D'(A'B'+A'B+AB) = C'D'(A'+B) → no that's not one group.
 Let me read the K-map more carefully:
     C'D' C'D CD CD'
 A'B' 1    1   1  0
@@ -3101,23 +3101,23 @@ So all minterms with A=0 or B=1 AND C=0 or D=0... this isn't clean.
 Groups:
 - Row A'B' and A'B (AB=0x) in CD=00,01,11: A' (covers 0,1,3,4,5,7) = A' in C'D' + C'D + CD columns.
   Actually A' covers: m0(A'B'C'D') m1(A'B'C'D) m3(A'B'CD) m4(A'BC'D') m5(A'BC'D) m7(A'BCD) = A'. Check: A' regardless of B,C,D.
-- Row AB in CD=00,01,11: m12,m13,m15 â†’ AC? No: ABÂ·C'D' + ABÂ·C'D + ABÂ·CD = AB(C'D'+C'D+CD) = AB(C'+D) â€” hmm.
+- Row AB in CD=00,01,11: m12,m13,m15 → AC? No: ABÂ·C'D' + ABÂ·C'D + ABÂ·CD = AB(C'D'+C'D+CD) = AB(C'+D) → hmm.
   Actually the 3 cells in AB row: (m12)ABC'D' + (m13)ABC'D + (m15)ABCD = AB(C'D' + C'D + CD) = AB(C' + D)
   This = ABC' + ABD = AB(C'+D).
 
 Hmm, this isn't a clean grouping. Let me use quads instead:
-Quad: A'B' and A'B in C'D' (00), C'D (01), CD (11) â€” that's 6 cells. Not a power of 2.
-Quad: AB=00 in C'D', C'D, CD â†’ A'B'(C' + D)? No.
+Quad: A'B' and A'B in C'D' (00), C'D (01), CD (11) → that's 6 cells. Not a power of 2.
+Quad: AB=00 in C'D', C'D, CD → A'B'(C' + D)? No.
 Actually the pattern m0,m1,m3,m4,m5,m7,m12,m13,m15:
-Group 1: All cells where C=0 â†’ C' (covers m0,m1,m4,m5,m8,m9... but m8,m9 are 0).
+Group 1: All cells where C=0 → C' (covers m0,m1,m4,m5,m8,m9... but m8,m9 are 0).
 Just checking: m0(A'B'C'D'), m1(A'B'C'D), m4(A'BC'D'), m5(A'BC'D), m12(ABC'D'), m13(ABC'D). 
 These are C' (where C=0): but m8,m9 (AB'C'D', AB'C'D) are 0. So C' alone doesn't work.
 These where ABâ‰ 10 and C=0: (A'+B)C' =... no.
 
-Group: m3(A'B'CD), m7(A'BCD), m15(ABCD) â†’ BD. Check: A'B'CD + A'BCD + ABCD = BD(A'C + AC) â€” no that's not standard. 
+Group: m3(A'B'CD), m7(A'BCD), m15(ABCD) → BD. Check: A'B'CD + A'BCD + ABCD = BD(A'C + AC) → no that's not standard. 
 BD: where B=1,D=1: m3(B=0)... No. m3 has B=0. So can't be BD.
 Let me check m3: A'B'CD, m7: A'BCD, m15: ABCD. Common: CD? No m15 doesn't have CD uniquely.
-m3(A'B'CD) + m7(A'BCD) = A'CD, m15(ABCD) â€” doesn't group simply.
+m3(A'B'CD) + m7(A'BCD) = A'CD, m15(ABCD) → doesn't group simply.
 
 Let me use a different approach. Since this is getting complex, let me pick a simpler K-map question from the real GATE papers.
 
@@ -3189,7 +3189,7 @@ F = Î M(0,2,5,7,8,10,13,15) means F' = Î£M(0,2,5,7,8,10,13,15) = those same 
 The maxterms are at positions: 0,2,5,7,8,10,13,15. With DCs at 1,4,9,14.
 1s are complement positions: 3,6,11,12 plus DCs.
 This is the XOR pattern: F = AâŠ•BâŠ•CâŠ•D? No, checking pattern:
-Binary: 0=0000, 2=0010 (even parity), 5=0101 (even), 7=0111 (odd? 3 ones â†’ odd).
+Binary: 0=0000, 2=0010 (even parity), 5=0101 (even), 7=0111 (odd? 3 ones → odd).
 Actually: 0(0000)=even, 2(0010)=odd(1 one â‰  even). Hmm this isn't pure parity.
 
 Given the DC pattern: the minimal form = BâŠ•D.
@@ -3203,7 +3203,7 @@ Answer: (B) BâŠ•D
 (C) A'C'D + ABC + AC'D   (D) A'C'D + ABC + ACD
 **Solution:**
 ```
-4-var K-map (A,B â€” rows; C,D â€” columns):
+4-var K-map (A,B → rows; C,D → columns):
      C'D' C'D CD CD'
 A'B'  0    1   0  0     (m0,m1,m3,m2)
 A'B   0    1   1  1     (m4,m5,m7,m6)
@@ -3211,21 +3211,21 @@ AB    1    1   1  0     (m12,m13,m15,m14)
 AB'   0    0   1  0     (m8,m9,m11,m10)
 
 Groups:
-- A'B in CD, CD' â†’ A'B(D) â€” no, m5(A'BC'D) m7(A'BCD) = A'BD... 
+- A'B in CD, CD' → A'B(D) → no, m5(A'BC'D) m7(A'BCD) = A'BD... 
   Actually m5(0101): A'BC'D, m7(0111): A'BCD = A'BD
-  And m6(0110): A'BCD' = A'BC D'. Together: m5+m6+m7 = A'B(C'D + CD + CD') = A'B(D + C) â€” no.
-  Full group of 4: m5,m6,m7 â†’ none (m4 is also in A'B row C'D'=0? No m4=0100=0).
-  Actually A'B row: C'D=1(m5), CD=1(m7), CD'=1(m6) â€” three 1s, not a power of 2 group.
-Group m6,m14 â†’ BCD'? No, m6(0110)+m14(1110) â†’ A differs: it's BCD' (where B=1,C=1,D'=1 but A varies).
-Group m5,m13 â†’ AC'D? m5=0101, m13=1101. A differs: AC'D... no. When A varies, B=1,C'=1,D=1: that's BC'D? No C'D doesn't match m5(C'=0,D=1) and m13(C'=1,D=0)... wait.
+  And m6(0110): A'BCD' = A'BC D'. Together: m5+m6+m7 = A'B(C'D + CD + CD') = A'B(D + C) → no.
+  Full group of 4: m5,m6,m7 → none (m4 is also in A'B row C'D'=0? No m4=0100=0).
+  Actually A'B row: C'D=1(m5), CD=1(m7), CD'=1(m6) → three 1s, not a power of 2 group.
+Group m6,m14 → BCD'? No, m6(0110)+m14(1110) → A differs: it's BCD' (where B=1,C=1,D'=1 but A varies).
+Group m5,m13 → AC'D? m5=0101, m13=1101. A differs: AC'D... no. When A varies, B=1,C'=1,D=1: that's BC'D? No C'D doesn't match m5(C'=0,D=1) and m13(C'=1,D=0)... wait.
 m5=0101: A=0,B=1,C=0,D=1. m13=1101: A=1,B=1,C=0,D=1. Common: B=1,C'=1,D=1. So it's BC'D. 
-Group m12,m13 â†’ ABC'? m12=1100, m13=1101: ABC' (covers both).
-Group m7,m15 â†’ BCD? m7=0111, m15=1111: BCD.
-Group m1(0001) â†’ A'C'D? m1 is isolated? m1(0001) = A'B'C'D. 
-m1+m9 = B'C'D where A varies: m1=0001, m9=1001. B'=1, C'=1, D=1 â†’ B'C'D.
-Group m11: 1011 â†’ AB'CD? No, m11=1011: AB'CD. But m11(1011) is isolated in its column.
-Actually m11(1011) and m15(1111): ACD? No, m11=AB'CD, m15=ABCD â€” common: ACD.
-Hmm, m11 is AB'CD, m15 is ABCD â†’ common ACD. 
+Group m12,m13 → ABC'? m12=1100, m13=1101: ABC' (covers both).
+Group m7,m15 → BCD? m7=0111, m15=1111: BCD.
+Group m1(0001) → A'C'D? m1 is isolated? m1(0001) = A'B'C'D. 
+m1+m9 = B'C'D where A varies: m1=0001, m9=1001. B'=1, C'=1, D=1 → B'C'D.
+Group m11: 1011 → AB'CD? No, m11=1011: AB'CD. But m11(1011) is isolated in its column.
+Actually m11(1011) and m15(1111): ACD? No, m11=AB'CD, m15=ABCD → common: ACD.
+Hmm, m11 is AB'CD, m15 is ABCD → common ACD. 
 
 So prime implicants:
 - ABC' (covers m12,m13)
@@ -3333,20 +3333,20 @@ Answer: (B) DRAM
 
 **Trap 2: K-map Grouping Must Be Power of 2**
 - **Error:** Grouping 3, 5, or 6 adjacent cells.
-- **Reality:** Groups must be 1, 2, 4, 8, or 16 cells. A group of 3 is illegal â€” split into overlapping pairs.
+- **Reality:** Groups must be 1, 2, 4, 8, or 16 cells. A group of 3 is illegal → split into overlapping pairs.
 - **GATE fix:** Always verify group size = 2â¿. Overlapping groups are allowed (redundancy OK).
 
-**Trap 3: Don't-Care Handling â€” Using or Not Using**
+**Trap 3: Don't-Care Handling → Using or Not Using**
 - **Error:** Assuming don't-cares must be covered.
-- **Reality:** Don't-cares can be used as 0 OR 1 â€” whichever gives larger groups. They need NOT be covered.
+- **Reality:** Don't-cares can be used as 0 OR 1 → whichever gives larger groups. They need NOT be covered.
 - **GATE fix:** Circle DCs only if they help form larger groups. Never force-cover a don't-care.
 
-**Trap 4: MUX Implementation â€” Select Lines Order**
+**Trap 4: MUX Implementation → Select Lines Order**
 - **Error:** Connecting variables to select lines in wrong order.
 - **Reality:** MUX select lines map to specific positions in the minterm index. Swapping Sâ‚,Sâ‚€ changes the function.
 - **GATE fix:** Draw the MUX with labeled select lines and write the minterm index explicitly.
 
-**Trap 5: Binary to Gray Code â€” MSB Handling**
+**Trap 5: Binary to Gray Code → MSB Handling**
 - **Error:** Applying XOR rule to MSB.
 - **Reality:** MSB of Gray = MSB of binary unchanged. XOR is only for lower bits: Gáµ¢ = Báµ¢ âŠ• Báµ¢â‚Šâ‚.
 - **GATE fix:** MSB stays same. No XOR on the highest bit.
@@ -3376,15 +3376,15 @@ Answer: (B) DRAM
 - **Reality:** Ripple: total delay = n Ã— t_pd (cumulative). Synchronous: total delay = t_pd + t_su (single stage).
 - **GATE fix:** Ripple counters are slower for large n. Synchronous counters limited by routing.
 
-**Trap 11: State Diagram â€” Mealy vs Moore Output Timing**
+**Trap 11: State Diagram → Mealy vs Moore Output Timing**
 - **Error:** Output same timing in both.
 - **Reality:** Mealy: output on transition (depends on input + state). Moore: output in state (input-independent).
 - **GATE fix:** Mealy produces output immediately on input change; Moore waits for clock edge.
 
 **Trap 12: NAND Gate Count for AND-OR Expression**
 - **Error:** Counting one NAND per product term.
-- **Reality:** Convert F to NAND: double-complement and push. F = Î£(product terms) â†’ F = (Î (product terms)')'. Each product term needs one NAND, plus one final NAND.
-- **GATE fix:** Two-level NAND = invert inputs (if needed) + NAND each term + NAND all outputs. For AND-OR with complements available: n terms â†’ n+1 NANDs.
+- **Reality:** Convert F to NAND: double-complement and push. F = Î£(product terms) → F = (Î (product terms)')'. Each product term needs one NAND, plus one final NAND.
+- **GATE fix:** Two-level NAND = invert inputs (if needed) + NAND each term + NAND all outputs. For AND-OR with complements available: n terms → n+1 NANDs.
 
 **Trap 13: Memory Word vs Bit Organization**
 - **Error:** Confusing Ã—8 (byte-wide) with Ã—1 (bit-wide) chips.
@@ -3394,7 +3394,7 @@ Answer: (B) DRAM
 **Trap 14: Setup and Hold Time Violations**
 - **Error:** Only considering propagation delay.
 - **Reality:** F_max = 1/(t_cQ + t_combo + t_su). Hold time: t_cQ(min) + t_combo(min) â‰¥ t_h.
-- **GATE fix:** Clock period must satisfy setup. Hold is independent of clock period â€” check minimum delays.
+- **GATE fix:** Clock period must satisfy setup. Hold is independent of clock period → check minimum delays.
 
 **Trap 15: Decoder Active-High vs Active-Low Outputs**
 - **Error:** Same interpretation for both.
@@ -3427,7 +3427,7 @@ A + A'B = A + B    A(A' + B) = AB
 | Step | Action |
 |------|--------|
 | 1 | List minterms by number of 1s (groups 0 to n) |
-| 2 | Compare adjacent groups: combine terms differing by 1 bit â†’ mark used |
+| 2 | Compare adjacent groups: combine terms differing by 1 bit → mark used |
 | 3 | Repeat until no more combinations possible |
 | 4 | Remaining unchecked terms = prime implicants |
 | 5 | Build prime implicant chart: PIs vs minterms |
@@ -3445,10 +3445,10 @@ Group 4: 1111 (15)
 
 Tabular format for PI generation:
 ```
-0,1 â†’ 000- (1 bit)
-0,2 â†’ 00-0
-0,4 â†’ 0-00
-0,8 â†’ -000
+0,1 → 000- (1 bit)
+0,2 → 00-0
+0,4 → 0-00
+0,8 → -000
 ...etc
 ```
 
@@ -3463,8 +3463,8 @@ A      00  01  11  10
 0      m0  m1  m3  m2
 1      m4  m5  m7  m6
 ```
-- Horizontal pairs: B variable changes â†’ eliminates B (e.g., m0+m2: A'C')
-- Vertical pairs: A variable changes â†’ eliminates A (e.g., m0+m4: B'C')
+- Horizontal pairs: B variable changes → eliminates B (e.g., m0+m2: A'C')
+- Vertical pairs: A variable changes → eliminates A (e.g., m0+m4: B'C')
 - 4-cell rectangles: two variables eliminated (e.g., entire BC=00 column: B'C')
 - Toroidal: edges connect (m0+m2+m4+m6 = C')
 
@@ -3481,9 +3481,9 @@ AB     00  01  11  10
 - Groups of 4: eliminates 2 variables
 - Groups of 8: eliminates 3 variables
 - Corner group: m0+m2+m8+m10 = B'D'
-- Edge wrap: m0+m1+m8+m9 = A'C'? No â€” m0,m1 A'B'C'D' + A'B'C'D = A'B'C'. m8,m9 AB'C'D' + AB'C'D = AB'C'. Combined: B'C'.
+- Edge wrap: m0+m1+m8+m9 = A'C'? No → m0,m1 A'B'C'D' + A'B'C'D = A'B'C'. m8,m9 AB'C'D' + AB'C'D = AB'C'. Combined: B'C'.
 - Center 4: m5+m6+m9+m10 = ... wait, m5(0101), m6(0110), m9(1001), m10(1010). These are the XOR pattern (AâŠ•B)(CâŠ•D) or A'B'CD + ... No, m5+m6 = A'BC', m9+m10 = AB'C. Combined = B'C+BC' = BâŠ•C? No.
-  Actually m5=0101, m6=0110, m9=1001, m10=1010 â†’ these are where A+B+C+D sums to odd but... never mind.
+  Actually m5=0101, m6=0110, m9=1001, m10=1010 → these are where A+B+C+D sums to odd but... never mind.
 
 **5-Variable K-Map (A, B, C, D, E):**
 ```
@@ -3521,10 +3521,10 @@ T flip-flop:    Qâº = T âŠ• Q
 
 **Flip-Flop Conversion Guide:**
 ```
-JK â†’ D:   J = D, K = D'        (J and K are complements)
-JK â†’ T:   J = T, K = T         (both equal)
-D â†’ JK:   D = JQ' + K'Q        (use combinational logic)
-D â†’ T:    D = T âŠ• Q
+JK → D:   J = D, K = D'        (J and K are complements)
+JK → T:   J = T, K = T         (both equal)
+D → JK:   D = JQ' + K'Q        (use combinational logic)
+D → T:    D = T âŠ• Q
 ```
 
 ---
@@ -3533,7 +3533,7 @@ D â†’ T:    D = T âŠ• Q
 
 **Step 1: Determine Flip-Flop Count**
 ```
-n FFs â†’ mod up to 2â¿. For mod-M: 2â¿â»Â¹ < M â‰¤ 2â¿.
+n FFs → mod up to 2â¿. For mod-M: 2â¿â»Â¹ < M â‰¤ 2â¿.
 E.g., mod-10 (BCD): n=4 because 2Â³=8 < 10 â‰¤ 16=2â´.
 ```
 
@@ -3546,14 +3546,14 @@ D FF:  Most predictable, matches state directly.
 
 **Step 3: State Transition Table**
 ```
-Present State â†’ Next State for each FF.
-E.g., BCD counter: 0000â†’0001â†’0010â†’...â†’1001â†’0000.
+Present State → Next State for each FF.
+E.g., BCD counter: 0000→0001→0010→...→1001→0000.
 ```
 
 **Step 4: Derive Excitation Inputs**
 ```
 For each FF, use excitation table to find required inputs.
-E.g., Q=0â†’Qâº=1, JK FF: J=1, K=X.
+E.g., Q=0→Qâº=1, JK FF: J=1, K=X.
 ```
 
 **Step 5: Minimize Logic**
@@ -3564,7 +3564,7 @@ Results give minimal combinational logic for each FF input.
 
 **Step 6: Draw Circuit**
 ```
-Connect FF outputs to combinational logic â†’ FF inputs.
+Connect FF outputs to combinational logic → FF inputs.
 All FFs share common clock. For synchronous: single clock line.
 For ripple: clock source connects to FF0 only.
 ```
@@ -3607,10 +3607,10 @@ Sâ‚ƒ    | 1      | Sâ‚ƒ         | Sâ‚€
 **Sequence Detector State Assignment (Mealy, overlapping):**
 ```
 For "1011":
-Sâ‚€: "" (no match)         â†’ Sâ‚ on '1'
-Sâ‚: "1"                   â†’ Sâ‚‚ on '0' (got "10")
-Sâ‚‚: "10"                  â†’ Sâ‚ƒ on '1' (got "101")
-Sâ‚ƒ: "101" (detect on 1)   â†’ Sâ‚ on '1' (overlap: last "1" starts new match)
+Sâ‚€: "" (no match)         → Sâ‚ on '1'
+Sâ‚: "1"                   → Sâ‚‚ on '0' (got "10")
+Sâ‚‚: "10"                  → Sâ‚ƒ on '1' (got "101")
+Sâ‚ƒ: "101" (detect on 1)   → Sâ‚ on '1' (overlap: last "1" starts new match)
 ```
 
 **State Reduction Checklist:**
@@ -3645,7 +3645,7 @@ Hold time constraint:   t_cQ(min) + t_combo(min) â‰¥ t_h
 1. Identify critical path (longest combinational delay between FFs)
 2. Compute T_clk_min = t_cQ + t_combo_max + t_su
 3. Verify hold: t_cQ(min) + t_combo(min) â‰¥ t_h
-   If violated â†’ race condition (add buffer delay)
+   If violated → race condition (add buffer delay)
 4. For ripple counters: multiply by number of stages
 5. For synchronous: single stage delay dominates
 ```
@@ -3660,9 +3660,9 @@ Hold time constraint:   t_cQ(min) + t_combo(min) â‰¥ t_h
 
 **Memory Timing:**
 ```
-Access time (t_AC): address â†’ valid data on output
-Chip select time (t_CS): CS active â†’ data valid
-Output enable time (t_OE): OE â†’ data bus driven
+Access time (t_AC): address → valid data on output
+Chip select time (t_CS): CS active → data valid
+Output enable time (t_OE): OE → data bus driven
 Cycle time: minimum time between two consecutive memory operations
 ```
 
@@ -3670,45 +3670,45 @@ Cycle time: minimum time between two consecutive memory operations
 
 ### Standard Textbooks
 
-**1. Digital Logic and Computer Design â€” M. Morris Mano**
+**1. Digital Logic and Computer Design → M. Morris Mano**
 
 The classic introductory text covering all core Digital Logic topics for GATE.
 
 | Chapter | Topic | GATE Relevance |
 |---------|-------|---------------|
-| 1 | Binary Systems, Number Bases, Complements | High â€” direct questions |
-| 2 | Boolean Algebra & Logic Gates | High â€” every paper |
-| 3 | Gate-Level Minimization (K-map, QM) | High â€” K-map questions yearly |
-| 4 | Combinational Logic (MUX, Decoder, Adder) | High â€” MUX/adder problems |
-| 5 | Sequential Circuits (FFs, Counters) | Very High â€” 30% of Digital Logic |
-| 6 | Registers & Counters (Ring, Johnson) | High â€” counter problems |
-| 7 | Memory & Programmable Logic | Medium â€” 1 question/year |
-| 8 | Register Transfer Logic | Low â€” rarely tested |
+| 1 | Binary Systems, Number Bases, Complements | High → direct questions |
+| 2 | Boolean Algebra & Logic Gates | High → every paper |
+| 3 | Gate-Level Minimization (K-map, QM) | High → K-map questions yearly |
+| 4 | Combinational Logic (MUX, Decoder, Adder) | High → MUX/adder problems |
+| 5 | Sequential Circuits (FFs, Counters) | Very High → 30% of Digital Logic |
+| 6 | Registers & Counters (Ring, Johnson) | High → counter problems |
+| 7 | Memory & Programmable Logic | Medium → 1 question/year |
+| 8 | Register Transfer Logic | Low → rarely tested |
 
 **How to use:** Chapters 1-6 cover 90% of GATE syllabus. Solve ALL end-of-chapter problems.
 
 ---
 
-**2. Digital Design â€” M. Morris Mano & Michael D. Ciletti**
+**2. Digital Design → M. Morris Mano & Michael D. Ciletti**
 
 Advanced treatment with more modern perspectives and Verilog/VHDL.
 
 | Chapter | Topic | GATE Relevance |
 |---------|-------|---------------|
 | 1 | Digital Systems & Binary Numbers | Medium (review) |
-| 2 | Boolean Algebra & Logic Gates | High â€” fundamentals |
-| 3 | K-map Minimization | High â€” essential |
-| 4 | Combinational Logic | High â€” MUX, decoder, adder |
-| 5 | Synchronous Sequential Logic | Very High â€” state machines, FF |
-| 6 | Registers & Counters | High â€” all counter types |
-| 7 | Memory & PLD | Medium â€” RAM/ROM/PLA |
-| 8-12 | HDL, Advanced Topics | Low â€” beyond GATE scope |
+| 2 | Boolean Algebra & Logic Gates | High → fundamentals |
+| 3 | K-map Minimization | High → essential |
+| 4 | Combinational Logic | High → MUX, decoder, adder |
+| 5 | Synchronous Sequential Logic | Very High → state machines, FF |
+| 6 | Registers & Counters | High → all counter types |
+| 7 | Memory & PLD | Medium → RAM/ROM/PLA |
+| 8-12 | HDL, Advanced Topics | Low → beyond GATE scope |
 
 **Key difference from Mano's older book:** More examples, newer problems, includes HDL. Use for deeper understanding of timing analysis and state machine design.
 
 ---
 
-**3. Switching and Finite Automata Theory â€” Zvi Kohavi**
+**3. Switching and Finite Automata Theory → Zvi Kohavi**
 
 Theoretical treatment. For GATE: only needed for state minimization and equivalence concepts.
 

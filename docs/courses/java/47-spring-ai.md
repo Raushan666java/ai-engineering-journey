@@ -37,7 +37,7 @@ By the end of this chapter, you will be able to:
 ---
 
 ## 1. Spring AI Overview
-> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -213,7 +213,7 @@ server:
 
 ---
 
-## 2. ChatClient â€” Prompt, Call, Stream, Messages
+## 2. ChatClient → Prompt, Call, Stream, Messages
 
 ChatClient is the central abstraction for interacting with LLMs. It supports synchronous calls, streaming responses, and multi-message conversations with system, user, and assistant message roles.
 
@@ -253,7 +253,7 @@ public class ChatClientConfig {
 }
 ```
 
-### 2.2 ChatService â€” Sync, Stream, Multi-Turn
+### 2.2 ChatService → Sync, Stream, Multi-Turn
 
 ```java
 package com.aiengineering.course.service;
@@ -3062,7 +3062,7 @@ public class AdvisorController {
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â€” it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer</summary>

@@ -379,7 +379,7 @@ class Database:
         print("Database instance created")
 
 db1 = Database()  # Database instance created
-db2 = Database()  # no output â€” reuses instance
+db2 = Database()  # no output → reuses instance
 print(db1 is db2)  # True
 ```
 

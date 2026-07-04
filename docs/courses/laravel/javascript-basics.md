@@ -116,10 +116,10 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
 
 ![JavaScript Basics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/javascript-basics.png)
 

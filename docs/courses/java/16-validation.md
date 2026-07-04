@@ -77,7 +77,7 @@ Persistence (@Column constraints, DB constraints)
 
 Validation should happen at **every boundary** where external data enters the system. The controller is the first and most important boundary.
 
-### 1.2 Jakarta Bean Validation â€” The JSR-380 Standard
+### 1.2 Jakarta Bean Validation → The JSR-380 Standard
 
 Spring Boot 4.x uses **Jakarta Bean Validation 3.0+** (formerly JSR-380 / Bean Validation 2.0). The reference implementation is **Hibernate Validator** 8+, which is automatically included when you add `spring-boot-starter-web`.
 
@@ -89,7 +89,7 @@ Spring Boot 4.x uses **Jakarta Bean Validation 3.0+** (formerly JSR-380 / Bean V
 <!-- Validation is already included as a transitive dependency -->
 ```
 
-Hibernate Validator implements all standard constraints and provides additional ones. You never need to add the validation starter separately â€” Spring Boot's web starter includes it.
+Hibernate Validator implements all standard constraints and provides additional ones. You never need to add the validation starter separately → Spring Boot's web starter includes it.
 
 #### 1.2.1 Core Constraint Annotations
 
@@ -629,7 +629,7 @@ public class UserRegistrationRequest {
 
 #### 1.5.2 Class-Level (Cross-Field) Validation
 
-Sometimes validation spans multiple fields â€” e.g., `startDate` must be before `endDate`, or `password` and `confirmPassword` must match.
+Sometimes validation spans multiple fields → e.g., `startDate` must be before `endDate`, or `password` and `confirmPassword` must match.
 
 ```java
 import jakarta.validation.Constraint;
@@ -732,7 +732,7 @@ public class EventRequest {
 
 #### 1.5.3 Fields Match Validator
 
-Another common cross-field validator â€” password confirmation:
+Another common cross-field validator → password confirmation:
 
 ```java
 import jakarta.validation.Constraint;
@@ -1586,7 +1586,7 @@ public class ProductWithBindingResultController {
             return ResponseEntity.badRequest().body(errorResponse);
         }
 
-        // No validation errors â€” proceed
+        // No validation errors → proceed
         ProductResponse response = new ProductResponse(
             "PROD-001",
             request.getName(),
@@ -1605,7 +1605,7 @@ public ResponseEntity<?> create(
         @Valid @RequestBody ProductRequest request,
         BindingResult bindingResult) { ... }
 
-// WRONG â€” BindingResult is not immediately after the validated parameter
+// WRONG → BindingResult is not immediately after the validated parameter
 public ResponseEntity<?> create(
         @Valid @RequestBody ProductRequest request,
         @RequestParam String tenant,
@@ -1726,7 +1726,7 @@ public class ServiceValidationController {
 
 ### 1.10 Message Interpolation
 
-Bean Validation supports message interpolation â€” replacing `{parameters}` in constraint messages with actual values.
+Bean Validation supports message interpolation → replacing `{parameters}` in constraint messages with actual values.
 
 #### 1.10.1 Default Interpolation
 
@@ -1849,7 +1849,7 @@ public class CustomMessageInterpolator implements MessageInterpolator {
 
         String interpolated = defaultInterpolator.interpolate(messageTemplate, context, locale);
 
-        log.debug("Interpolated '{}' â†’ '{}' for locale {}", messageTemplate, interpolated, locale);
+        log.debug("Interpolated '{}' → '{}' for locale {}", messageTemplate, interpolated, locale);
 
         return interpolated;
     }
@@ -2011,7 +2011,7 @@ ValidationUtils.invokeValidator(nestedValidator, nestedTarget, errors);
 **Never** use entities as request or response objects:
 
 ```java
-// WRONG â€” Using entity directly as request body
+// WRONG → Using entity directly as request body
 @PostMapping("/products")
 public ResponseEntity<Product> create(@Valid @RequestBody Product product) {
     // Security: exposes all fields, mass assignment risk
@@ -2023,7 +2023,7 @@ public ResponseEntity<Product> create(@Valid @RequestBody Product product) {
 **Always** use separate DTOs:
 
 ```java
-// CORRECT â€” Separate request DTO
+// CORRECT → Separate request DTO
 @PostMapping("/products")
 public ResponseEntity<ProductResponse> create(@Valid @RequestBody ProductCreateRequest request) {
     Product product = productMapper.toEntity(request);
@@ -2035,7 +2035,7 @@ public ResponseEntity<ProductResponse> create(@Valid @RequestBody ProductCreateR
 #### 1.12.2 Complete DTO Example
 
 ```java
-// ProductCreateRequest.java â€” Input validation
+// ProductCreateRequest.java → Input validation
 import jakarta.validation.constraints.*;
 
 public class ProductCreateRequest {
@@ -2073,7 +2073,7 @@ public class ProductCreateRequest {
 ```
 
 ```java
-// ProductResponse.java â€” Output shaping
+// ProductResponse.java → Output shaping
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.math.BigDecimal;
@@ -2100,7 +2100,7 @@ public class ProductResponse {
     @JsonProperty("category")
     private CategoryResponse category;
 
-    private String internalNotes; // Excluded from JSON â€” no getter
+    private String internalNotes; // Excluded from JSON → no getter
 
     public ProductResponse() {}
 
@@ -2134,7 +2134,7 @@ public class ProductResponse {
 ```
 
 ```java
-// CategoryResponse.java â€” Nested response DTO
+// CategoryResponse.java → Nested response DTO
 public class CategoryResponse {
 
     private String code;
@@ -2157,7 +2157,7 @@ public class CategoryResponse {
 
 #### 1.12.3 MapStruct for DTO Conversion
 
-MapStruct generates mapper implementations at compile time â€” no runtime reflection, no boilerplate:
+MapStruct generates mapper implementations at compile time → no runtime reflection, no boilerplate:
 
 ```xml
 <!-- pom.xml -->
@@ -2925,7 +2925,7 @@ Implement a `ProductUpdateRequest` with these groups:
 
 Create three endpoints that use different group combinations and verify that the correct constraints are applied in each case.
 
-### Exercise 4: Custom Constraint â€” ISBN
+### Exercise 4: Custom Constraint → ISBN
 
 Create a custom `@Isbn` constraint that validates ISBN-10 and ISBN-13 formats:
 
@@ -2951,15 +2951,15 @@ Implement the validator and write tests for all three rules.
 
 Build a comprehensive `@RestControllerAdvice` called `ApiExceptionHandler` that handles:
 
-1. `MethodArgumentNotValidException` â€” structured field errors
-2. `ConstraintViolationException` â€” parameter violations
-3. `HttpMessageNotReadableException` â€” malformed JSON body
-4. `MissingServletRequestParameterException` â€” missing required params
-5. `MethodArgumentTypeMismatchException` â€” type conversion failures
-6. `AccessDeniedException` â€” 403 with message
-7. `HttpRequestMethodNotSupportedException` â€” 405 with supported methods
-8. `NoHandlerFoundException` â€” 404 with requested path
-9. Any unhandled `Exception` â€” 500 with correlation ID
+1. `MethodArgumentNotValidException` → structured field errors
+2. `ConstraintViolationException` → parameter violations
+3. `HttpMessageNotReadableException` → malformed JSON body
+4. `MissingServletRequestParameterException` → missing required params
+5. `MethodArgumentTypeMismatchException` → type conversion failures
+6. `AccessDeniedException` → 403 with message
+7. `HttpRequestMethodNotSupportedException` → 405 with supported methods
+8. `NoHandlerFoundException` → 404 with requested path
+9. Any unhandled `Exception` → 500 with correlation ID
 
 Format all responses as a consistent `ApiError` DTO with: `status`, `code`, `message`, `timestamp`, `path`, `fieldErrors`, and `correlationId`. Generate a unique correlation ID per request using a `@Component` request-scoped bean.
 

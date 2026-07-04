@@ -13,11 +13,11 @@
 
 ## Why Heaps Matter
 
-**Real-World Analogy (Hospital ER Triage):** In a hospital emergency room, patients arrive with different severity levels. A heart attack patient needs immediate attention even if 20 people with minor cuts arrived first. A queue (FIFO) would be disastrous â€” you'd treat in arrival order, letting critical cases wait. A priority queue (heap) solves this: the most critical patient is always treated next, regardless of arrival order. This is exactly what heaps do â€” they maintain items in a way that the "most important" (highest/lowest priority) is always immediately accessible.
+**Real-World Analogy (Hospital ER Triage):** In a hospital emergency room, patients arrive with different severity levels. A heart attack patient needs immediate attention even if 20 people with minor cuts arrived first. A queue (FIFO) would be disastrous → you'd treat in arrival order, letting critical cases wait. A priority queue (heap) solves this: the most critical patient is always treated next, regardless of arrival order. This is exactly what heaps do → they maintain items in a way that the "most important" (highest/lowest priority) is always immediately accessible.
 
 **Real-World Analogy (OS Task Scheduler):** Your operating system manages hundreds of processes. A background disk cleanup should never starve the interactive game you're playing. The OS uses a priority queue (backed by a heap) to ensure high-priority tasks always run before low-priority ones, preempting when necessary. Without heaps, modern multitasking would be impossible.
 
-**The Core Insight:** Heaps combine the speed of array indexing with the structure of binary trees â€” a complete binary tree stored in a flat array with pointer-free navigation via simple math.
+**The Core Insight:** Heaps combine the speed of array indexing with the structure of binary trees → a complete binary tree stored in a flat array with pointer-free navigation via simple math.
 
 ## Chapter at a Glance
 
@@ -88,7 +88,7 @@ Tree:                    [A]  [B]  [C]  [D]  [E]  [F]  [G]
 
 ### Max-Heap / Min-Heap
 
-**Real-World Analogy (Company Hierarchy):** In a well-run company, the CEO (root) is the highest paid. Every manager is paid more than their direct reports. This is a max-heap property: parent >= children. A non-profit might invert this â€” the lowest-paid intern decides policy â€” that is a min-heap: parent <= children.
+**Real-World Analogy (Company Hierarchy):** In a well-run company, the CEO (root) is the highest paid. Every manager is paid more than their direct reports. This is a max-heap property: parent >= children. A non-profit might invert this → the lowest-paid intern decides policy → that is a min-heap: parent <= children.
 
 **Definition:**
 - **Max-Heap:** For every node i (except root), A[parent(i)] >= A[i]. The root holds the maximum value.
@@ -118,9 +118,9 @@ Array: [10, 20, 15, 30, 40, 25]
    30   40  25
 ```
 
-### Heapify (Sift Down) â€” Restoring Order at One Node
+### Heapify (Sift Down) → Restoring Order at One Node
 
-**Real-World Analogy (Boss Reassignment):** Your company reorganizes and promotes a junior employee to CEO. They're terrible at the job (violate the heap property). The board looks at the CEO and their two direct VPs. If either VP is more competent, they swap. Then the demoted CEO is evaluated against their new subordinates. This continues until everyone is at the right level â€” that is heapify/sift-down.
+**Real-World Analogy (Boss Reassignment):** Your company reorganizes and promotes a junior employee to CEO. They're terrible at the job (violate the heap property). The board looks at the CEO and their two direct VPs. If either VP is more competent, they swap. Then the demoted CEO is evaluated against their new subordinates. This continues until everyone is at the right level → that is heapify/sift-down.
 
 **Definition:** Heapify ensures the subtree rooted at index i satisfies the heap property, assuming both children are already valid heaps. It compares the node with its children and swaps downward until the property is restored.
 
@@ -152,7 +152,7 @@ function maxHeapify(A, n, i):
         maxHeapify(A, n, largest)
 ```
 
-**Step-by-Step Dry Run â€” Max-Heapify at Index 0, Array: [4, 10, 3, 5, 1, 7, 9, 2, 8, 6] (n=10)**
+**Step-by-Step Dry Run → Max-Heapify at Index 0, Array: [4, 10, 3, 5, 1, 7, 9, 2, 8, 6] (n=10)**
 
 | Step | i | A[i] | Left Child (val) | Right Child (val) | largest | Swap? | Array After Swap |
 |------|---|------|-----------------|------------------|---------|-------|-----------------|
@@ -236,7 +236,7 @@ public static void maxHeapify(int[] arr, int n, int i) {
 | Advantages | Disadvantages |
 |------------|---------------|
 | Restores heap property in logarithmic time | Recursive version has O(log n) stack space |
-| Simple, elegant recursive formulation | Not cache-optimal â€” large trees jump through array |
+| Simple, elegant recursive formulation | Not cache-optimal → large trees jump through array |
 | Works in-place on the array | Only fixes one node's violation per call |
 | Both children must already be valid heaps | |
 
@@ -248,9 +248,9 @@ public static void maxHeapify(int[] arr, int n, int i) {
 - **All equal values:** largest == i always, no swaps. O(1).
 - **Floating point comparison with NaN:** NaN comparisons always return false, which can break heapify. Use `isNaN()` checks or replace NaN with sentinel values.
 
-### Build Heap â€” Transform Array into Heap in O(n)
+### Build Heap → Transform Array into Heap in O(n)
 
-**Real-World Analogy (Organizing a Department by Seniority):** Instead of hiring one person at a time and re-ranking everyone (O(n log n)), HR sorts all employees once bottom-up. They start with the lowest managers and ensure each team is properly ordered before moving up. By the time they reach the CEO, the whole department is correct â€” and it took linear time because lower-level teams were already fixed when higher-level re-ranking happened.
+**Real-World Analogy (Organizing a Department by Seniority):** Instead of hiring one person at a time and re-ranking everyone (O(n log n)), HR sorts all employees once bottom-up. They start with the lowest managers and ensure each team is properly ordered before moving up. By the time they reach the CEO, the whole department is correct → and it took linear time because lower-level teams were already fixed when higher-level re-ranking happened.
 
 **Definition:** Build Heap transforms an arbitrary array into a valid heap by applying heapify to all non-leaf nodes in reverse level order (bottom-up).
 
@@ -269,7 +269,7 @@ function buildMaxHeap(A, n):
         maxHeapify(A, n, i)
 ```
 
-**Step-by-Step Dry Run â€” Build Max-Heap from [4, 10, 3, 5, 1, 7, 9, 2, 8, 6] (n=10)**
+**Step-by-Step Dry Run → Build Max-Heap from [4, 10, 3, 5, 1, 7, 9, 2, 8, 6] (n=10)**
 
 n=10, start = 10/2 - 1 = 4
 
@@ -330,7 +330,7 @@ public static void buildMaxHeap(int[] arr) {
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| Time | O(n) | Mathematical proof below â€” surprisingly not O(n log n) |
+| Time | O(n) | Mathematical proof below → surprisingly not O(n log n) |
 | Space | O(log n) | Recursive heapify call stack (can be O(1) iterative) |
 
 **Why O(n) and not O(n log n)?** This is the most famous proof in heap theory.
@@ -358,9 +358,9 @@ public static void buildMaxHeap(int[] arr) {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| O(n) time â€” faster than inserting n elements (O(n log n)) | In-place on original array (destructive) |
+| O(n) time → faster than inserting n elements (O(n log n)) | In-place on original array (destructive) |
 | Simple 3-line loop | Only works if heapify has O(log n) per call |
-| Used internally by heap sort and priority queue construction | Sequential access pattern â€” not cache-optimal for large arrays |
+| Used internally by heap sort and priority queue construction | Sequential access pattern → not cache-optimal for large arrays |
 
 **Edge Cases:**
 - **Empty array:** n/2 - 1 = -1, loop doesn't execute. No-op.
@@ -393,7 +393,7 @@ function maxHeapInsert(A, n, value):
         i = parent(i)
 ```
 
-**Step-by-Step Dry Run â€” Insert 12 into Heap [10, 8, 9, 5, 6, 7, 3, 4, 2, 1]**
+**Step-by-Step Dry Run → Insert 12 into Heap [10, 8, 9, 5, 6, 7, 3, 4, 2, 1]**
 
 | Step | i | A[i] | Parent | A[parent] | Swap? | Array After |
 |------|---|------|--------|-----------|-------|-------------|
@@ -463,7 +463,7 @@ public void insert(int value) {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Maintains heap shape â€” adds at the only valid position for completeness | O(log n) â€” slower than stack/queue push which are O(1) |
+| Maintains heap shape → adds at the only valid position for completeness | O(log n) → slower than stack/queue push which are O(1) |
 | Simple while loop with clean termination | Array may need to resize (amortized O(1) for vector growth) |
 | Works with any comparable type | Does not support bulk insertion (use buildHeap for that) |
 
@@ -472,13 +472,13 @@ public void insert(int value) {
 - **Single element:** Added at index 1, parent = 0, compare once. O(1).
 - **Inserting max value repeatedly:** Each insertion bubbles all the way up. O(log n) each.
 - **Inserting min value:** No bubbles. O(1).
-- **Duplicate values:** If A[parent] < A[i] is strict, stable behavior. If â‰¤, boundary case â€” duplicates may swap unnecessarily.
+- **Duplicate values:** If A[parent] < A[i] is strict, stable behavior. If â‰¤, boundary case → duplicates may swap unnecessarily.
 - **Very large values causing integer overflow:** Parent index computation uses integer arithmetic. For n > 2^31, index overflow is possible.
 - **Floating point NaN:** NaN comparisons are false, so NaN will sit at leaf level and never bubble up.
 
-### Extract Max (Extract Min) â€” Remove and Return Root
+### Extract Max (Extract Min) → Remove and Return Root
 
-**Real-World Analogy (Promoting the Best Performer):** When the CEO resigns, the company needs a replacement. They take the most junior person (last hire) and temporarily put them in the CEO role. If their subordinates are stronger, they swap the weakest up. The strongest rises to CEO â€” and the former CEO is gone.
+**Real-World Analogy (Promoting the Best Performer):** When the CEO resigns, the company needs a replacement. They take the most junior person (last hire) and temporarily put them in the CEO role. If their subordinates are stronger, they swap the weakest up. The strongest rises to CEO → and the former CEO is gone.
 
 **Definition:** Extract Max removes and returns the root (maximum element), replaces it with the last element, and sifts down to restore the heap property.
 
@@ -501,7 +501,7 @@ function extractMax(A, n):
     return maxVal
 ```
 
-**Step-by-Step Dry Run â€” Extract Max from [12, 10, 9, 5, 8, 7, 3, 4, 2, 1, 6]**
+**Step-by-Step Dry Run → Extract Max from [12, 10, 9, 5, 8, 7, 3, 4, 2, 1, 6]**
 
 | Step | Action | Array |
 |------|--------|-------|
@@ -509,9 +509,9 @@ function extractMax(A, n):
 | 1 | Save maxVal = 12 | [12, 10, 9, 5, 8, 7, 3, 4, 2, 1, 6] |
 | 2 | Replace root with last | [6, 10, 9, 5, 8, 7, 3, 4, 2, 1, 12] |
 | 3 | Pop last | [6, 10, 9, 5, 8, 7, 3, 4, 2, 1] |
-| 4 | Heapify at 0: 6 vs 10,9 â†’ swap 6â†”10 | [10, 6, 9, 5, 8, 7, 3, 4, 2, 1] |
-| 5 | Heapify at 1: 6 vs 5,8 â†’ swap 6â†”8 | [10, 8, 9, 5, 6, 7, 3, 4, 2, 1] |
-| 6 | Heapify at 4: 6 vs 2,1 â†’ no swap | [10, 8, 9, 5, 6, 7, 3, 4, 2, 1] |
+| 4 | Heapify at 0: 6 vs 10,9 → swap 6â†”10 | [10, 6, 9, 5, 8, 7, 3, 4, 2, 1] |
+| 5 | Heapify at 1: 6 vs 5,8 → swap 6â†”8 | [10, 8, 9, 5, 6, 7, 3, 4, 2, 1] |
+| 6 | Heapify at 4: 6 vs 2,1 → no swap | [10, 8, 9, 5, 6, 7, 3, 4, 2, 1] |
 
 **Return:** 12
 **Final Heap:** [10, 8, 9, 5, 6, 7, 3, 4, 2, 1]
@@ -575,7 +575,7 @@ public int extractMax() {
 - **All elements equal:** Heapify compares and may swap unnecessarily (depending on strictness). Still O(log n).
 - **After many extracts:** Heap shrinks. Array may release memory or may not (vector capacity).
 
-### Decrease Key â€” Change Priority of Arbitrary Element
+### Decrease Key → Change Priority of Arbitrary Element
 
 **Real-World Analogy (Patient Condition Changes):** In the ER triage, a patient initially classified as "stable" suddenly crashes. Their priority must increase (in a min-heap where lower number = higher priority). The system must find the patient and bubble them up to receive immediate care.
 
@@ -605,7 +605,7 @@ function decreaseKey(A, posMap, i, newValue):
         i = parent(i)
 ```
 
-**Step-by-Step Dry Run â€” Decrease Key at index 7 in Min-Heap [1, 3, 2, 7, 6, 4, 5, 15, 9, 8] from 15 to 0**
+**Step-by-Step Dry Run → Decrease Key at index 7 in Min-Heap [1, 3, 2, 7, 6, 4, 5, 15, 9, 8] from 15 to 0**
 
 This is a min-heap. Decreasing 15 to 0 at index 7.
 
@@ -665,7 +665,7 @@ public void decreaseKey(int i, int newVal) {
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| Time | O(log n) | Bubble up from arbitrary position â€” at most tree height swaps. |
+| Time | O(log n) | Bubble up from arbitrary position → at most tree height swaps. |
 | Space | O(1) | In-place swaps. |
 | Index map update | O(1) | Hash map or array for position tracking. |
 
@@ -673,7 +673,7 @@ public void decreaseKey(int i, int newVal) {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Enables Dijkstra/Prim O((V+E) log V) | Requires position map â€” extra O(n) space |
+| Enables Dijkstra/Prim O((V+E) log V) | Requires position map → extra O(n) space |
 | Reuses bubble-up logic | Position map must stay in sync on every swap |
 | Single-pass bubble up | Standard library heaps don't support it |
 
@@ -684,7 +684,7 @@ public void decreaseKey(int i, int newVal) {
 - **New value becomes extreme (new global max/min):** Bubbles all the way to root. O(log n).
 - **Position map synchronization:** Every swap in sift-up AND sift-down must update positions.
 
-### Heap Sort â€” Sorting with a Binary Heap
+### Heap Sort → Sorting with a Binary Heap
 
 **Real-World Analogy (Flipping Tournament Rankings):** In a knockout tournament, the winner (root) is removed. The last-placed player fills in, and a mini-tournament (heapify) determines the new winner. Recording winners in reverse order gives the sorted ranking.
 
@@ -706,16 +706,16 @@ function heapSort(A, n):
         maxHeapify(A, i, 0)
 ```
 
-**Step-by-Step Dry Run â€” Heap Sort on [4, 10, 3, 5, 1]**
+**Step-by-Step Dry Run → Heap Sort on [4, 10, 3, 5, 1]**
 
 **Phase 1: Build Max-Heap**
 
 | Step | i | Action | Array |
 |------|---|--------|-------|
 | Init | - | Starting array | [4, 10, 3, 5, 1] |
-| 1 | 1 | Heapify idx 1: 10 > 5,1 â†’ no swap | [4, 10, 3, 5, 1] |
-| 2 | 0 | Heapify idx 0: 4 < 10 â†’ swap 4â†”10 | [10, 4, 3, 5, 1] |
-| 3 | 1 | Heapify idx 1: 4 < 5 â†’ swap 4â†”5 | [10, 5, 3, 4, 1] |
+| 1 | 1 | Heapify idx 1: 10 > 5,1 → no swap | [4, 10, 3, 5, 1] |
+| 2 | 0 | Heapify idx 0: 4 < 10 → swap 4â†”10 | [10, 4, 3, 5, 1] |
+| 3 | 1 | Heapify idx 1: 4 < 5 → swap 4â†”5 | [10, 5, 3, 4, 1] |
 
 **Max-Heap:** [10, 5, 3, 4, 1]
 
@@ -724,10 +724,10 @@ function heapSort(A, n):
 | Step | i | Swap | Heapify at 0 | Array |
 |------|---|------|-------------|-------|
 | Init | - | - | - | [10, 5, 3, 4, 1] |
-| 1 | 4 | 10â†”1 | 1 vs 5,3 â†’ 1â†”5 | [5, 4, 3, 1, \| 10] |
-| 2 | 3 | 5â†”1 | 1 vs 4,3 â†’ 1â†”4 | [4, 1, 3, \| 5, 10] |
-| 3 | 2 | 4â†”3 | 3 vs 1 â†’ no swap | [3, 1, \| 4, 5, 10] |
-| 4 | 1 | 3â†”1 | 1 â†’ no children | [1, \| 3, 4, 5, 10] |
+| 1 | 4 | 10â†”1 | 1 vs 5,3 → 1â†”5 | [5, 4, 3, 1, \| 10] |
+| 2 | 3 | 5â†”1 | 1 vs 4,3 → 1â†”4 | [4, 1, 3, \| 5, 10] |
+| 3 | 2 | 4â†”3 | 3 vs 1 → no swap | [3, 1, \| 4, 5, 10] |
+| 4 | 1 | 3â†”1 | 1 → no children | [1, \| 3, 4, 5, 10] |
 
 **Sorted:** [1, 3, 4, 5, 10]
 
@@ -785,10 +785,10 @@ public static void heapSort(int[] arr) {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| O(n log n) worst-case guaranteed | Not stable â€” equal elements may reorder |
-| In-place â€” O(1) extra space | Cache performance is poor (jumping through array) |
+| O(n log n) worst-case guaranteed | Not stable → equal elements may reorder |
+| In-place → O(1) extra space | Cache performance is poor (jumping through array) |
 | No worst-case degeneration like quicksort | Slower in practice than quicksort for most data |
-| Simple and predictable | Not adaptive â€” doesn't exploit partially sorted data |
+| Simple and predictable | Not adaptive → doesn't exploit partially sorted data |
 
 **Edge Cases:**
 - **Empty array:** Build heap and extraction loops don't execute. No-op.
@@ -800,16 +800,16 @@ public static void heapSort(int[] arr) {
 
 ### Heap as a Priority Queue
 
-**Real-World Analogy (Airport Boarding):** First class boards before economy. Passengers with disabilities board first. Military personnel board next. This is a priority queue â€” each passenger has a priority, and the highest-priority group is served regardless of when they arrived at the gate.
+**Real-World Analogy (Airport Boarding):** First class boards before economy. Passengers with disabilities board first. Military personnel board next. This is a priority queue → each passenger has a priority, and the highest-priority group is served regardless of when they arrived at the gate.
 
 **Definition:** A priority queue is an abstract data type where each element has a priority. The element with the highest (or lowest) priority is always dequeued first. A binary heap is the classic implementation.
 
 **Core Interface:**
-- `push(element)` â€” Insert with priority. O(log n)
-- `pop()` â€” Remove highest-priority element. O(log n)
-- `top()` â€” Peek at highest-priority element. O(1)
-- `empty()` â€” Check if empty. O(1)
-- `size()` â€” Number of elements. O(1)
+- `push(element)` → Insert with priority. O(log n)
+- `pop()` → Remove highest-priority element. O(log n)
+- `top()` → Peek at highest-priority element. O(1)
+- `empty()` → Check if empty. O(1)
+- `size()` → Number of elements. O(1)
 
 **C++ (using STL):**
 ```cpp
@@ -878,7 +878,7 @@ System.out.println(maxPQ.peek());  // 30
 |------------|---------------|
 | Simple array-based, no pointers | Doesn't support merge (O(n) to merge two heaps) |
 | O(1) min/max access | No decreaseKey without auxiliary structures |
-| Space efficient â€” no per-node overhead | Not thread-safe without locks |
+| Space efficient → no per-node overhead | Not thread-safe without locks |
 | Built into all standard libraries | Cannot search for arbitrary elements efficiently |
 
 **Edge Cases:**
@@ -904,9 +904,9 @@ System.out.println(maxPQ.peek());  // 30
 
 | Operation | Formula | Example (n=7, 0-based) |
 |-----------|---------|----------------------|
-| Parent of i | (i-1)/2 | i=5 â†’ parent=2 |
-| Left child of i | 2i+1 | i=1 â†’ left=3 |
-| Right child of i | 2i+2 | i=1 â†’ right=4 |
+| Parent of i | (i-1)/2 | i=5 → parent=2 |
+| Left child of i | 2i+1 | i=1 → left=3 |
+| Right child of i | 2i+2 | i=1 → right=4 |
 | Leaf range | n/2 to n-1 | 3 to 6 |
 | Last non-leaf | n/2 - 1 | 2 |
 
@@ -933,7 +933,7 @@ System.out.println(maxPQ.peek());  // 30
 |-----------|----------|-------------------|
 | Dijkstra's shortest path | Extract min, decreaseKey | O((V+E) log V) with binary heap |
 | Prim's MST | Extract min, decreaseKey | O((V+E) log V) with binary heap |
-| Heap sort | Build â†’ extract all | O(n log n) |
+| Heap sort | Build → extract all | O(n log n) |
 | K-way merge | Build heap of k elements | O(k + n log k) |
 | Median finder | Max-heap + min-heap | O(log n) per insert |
 
@@ -1090,7 +1090,7 @@ int findKthLargest(std::vector<int>& nums, int k) {
 **Algorithm:**
 1. Build a min-heap with the first k+1 elements
 2. For i = 0 to n-1:
-   a. Extract min from heap â†’ place at arr[i]
+   a. Extract min from heap → place at arr[i]
    b. If there's a next element (i + k + 1 < n), push it into heap
 
 **Complexity:** O(n log k) time, O(k) space. When k is small (like 1 or 2), this is nearly O(n).
@@ -1152,7 +1152,7 @@ void sortNearlySorted(std::vector<int>& arr, int k) {
 - **Building a heap is O(n), not O(n log n):** The trick is percolate-down (heapify) starting from the last non-leaf node. Percolate-up from each element would be O(n log n). Always use bottom-up construction.
 - **Heap sort is in-place but not stable:** The relative order of equal elements is not preserved. Use merge sort if stability is required.
 - **Median finder with two heaps:** Maintain a max-heap for the lower half and a min-heap for the upper half. Insert in O(log n); the median is the max-heap's root (or average of both roots) in O(1).
-- **decreaseKey in Dijkstra:** To implement Dijkstra's algorithm efficiently, you need a priority queue that supports priority updates. A binary heap with an index array mapping vertex â†’ heap position enables O(log n) decreaseKey.
+- **decreaseKey in Dijkstra:** To implement Dijkstra's algorithm efficiently, you need a priority queue that supports priority updates. A binary heap with an index array mapping vertex → heap position enables O(log n) decreaseKey.
 - **Fibonacci heap trade-off:** O(1) amortized decreaseKey and insert, but high constant factors and complex implementation. Binary heap is preferred in practice.
 - **Python's heapq is a min-heap:** For max-heap, negate values. For custom objects, store (âˆ’priority, object) tuples.
 - **Java's PriorityQueue is a min-heap by default:** Use `Collections.reverseOrder()` for max-heap.
@@ -1239,6 +1239,6 @@ void sortNearlySorted(std::vector<int>& arr, int k) {
 ### Challenge Problems
 
 11. Implement a **Median Finder** data structure that supports O(log n) insertion and O(1) median retrieval. Use two heaps: a max-heap for the lower half and a min-heap for the upper half.
-12. Implement the **Sliding Window Maximum** algorithm using a heap (or deque) â€” given an array and window size k, find the maximum in each sliding window.
+12. Implement the **Sliding Window Maximum** algorithm using a heap (or deque) → given an array and window size k, find the maximum in each sliding window.
 13. Implement **k-way merge** for k sorted arrays and prove it runs in O(n log k) where n is the total number of elements.
-14. **Design a data structure** that supports insert, delete, and getRandom in O(1) AND getMedian in O(log n) â€” combine a heap with a hash map and dynamic array.
+14. **Design a data structure** that supports insert, delete, and getRandom in O(1) AND getMedian in O(log n) → combine a heap with a hash map and dynamic array.

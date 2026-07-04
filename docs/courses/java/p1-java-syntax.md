@@ -75,9 +75,9 @@ JDK (Java Development Kit)
  â””â”€â”€ Development Tools (javac, jar, javadoc, etc.)
 ```
 
-- **JVM (Java Virtual Machine)** â€” The abstract machine that executes Java bytecode. Each operating system has its own JVM implementation. The JVM loads `.class` files, verifies bytecode, interprets and JIT-compiles it to native code, and manages memory via garbage collection.
-- **JRE (Java Runtime Environment)** â€” Contains the JVM plus the core class libraries (`rt.jar`, `charsets.jar`, etc.). End users need the JRE to run Java applications, but they cannot compile new programs with it.
-- **JDK (Java Development Kit)** â€” Contains the JRE plus development tools: the Java compiler (`javac`), the archiver (`jar`), the documentation generator (`javadoc`), and the module system tools (`jlink`, `jmod`). Developers always download the JDK.
+- **JVM (Java Virtual Machine)** → The abstract machine that executes Java bytecode. Each operating system has its own JVM implementation. The JVM loads `.class` files, verifies bytecode, interprets and JIT-compiles it to native code, and manages memory via garbage collection.
+- **JRE (Java Runtime Environment)** → Contains the JVM plus the core class libraries (`rt.jar`, `charsets.jar`, etc.). End users need the JRE to run Java applications, but they cannot compile new programs with it.
+- **JDK (Java Development Kit)** → Contains the JRE plus development tools: the Java compiler (`javac`), the archiver (`jar`), the documentation generator (`javadoc`), and the module system tools (`jlink`, `jmod`). Developers always download the JDK.
 
 > **Note:** Since Java 9, Oracle no longer ships a separate JRE. The `jlink` tool creates custom runtime images that contain only the modules your application needs.
 
@@ -86,9 +86,9 @@ JDK (Java Development Kit)
 Every Java program goes through the following lifecycle:
 
 ```java
-// Step 1: Write source code  â†’  HelloWorld.java
-// Step 2: Compile            â†’  javac HelloWorld.java â†’ HelloWorld.class (bytecode)
-// Step 3: Execute            â†’  java HelloWorld       â†’ JVM interprets/runs bytecode
+// Step 1: Write source code  →  HelloWorld.java
+// Step 2: Compile            →  javac HelloWorld.java → HelloWorld.class (bytecode)
+// Step 3: Execute            →  java HelloWorld       → JVM interprets/runs bytecode
 
 public class HelloWorld {
     public static void main(String[] args) {
@@ -104,7 +104,7 @@ Run time:      java HelloWorld              JVM loads, verifies, executes byteco
 
 The JVM's **Just-In-Time (JIT) compiler** identifies hot methods (executed frequently) and compiles them to native machine code at runtime, giving Java near-native performance.
 
-### 1.4 Compiling and Running â€” Command-Line Reference
+### 1.4 Compiling and Running → Command-Line Reference
 
 ```bash
 # Compile a single source file
@@ -143,7 +143,7 @@ Java has **eight primitive types**. Everything else in Java is an object (refere
 | `float` | 32-bit | Â±1.4e-45 | Â±3.4e+38 | 0.0f | `float f = 3.14f;` |
 | `double` | 64-bit | Â±4.9e-324 | Â±1.8e+308 | 0.0d | `double d = 3.14159265358979;` |
 | `char` | 16-bit | 0 | 65,535 (Unicode) | '\u0000' | `char c = 'A';` |
-| `boolean` | JVM-dependent | â€” | â€” | false | `boolean flag = true;` |
+| `boolean` | JVM-dependent | → | → | false | `boolean flag = true;` |
 
 ```java
 public class PrimitiveTypesDemo {
@@ -201,7 +201,7 @@ Java supports both **widening** (implicit, automatic) and **narrowing** (explici
 
 **Widening conversion path** (no data loss):
 ```
-byte â†’ short â†’ int â†’ long â†’ float â†’ double
+byte → short → int → long → float → double
                  â†‘
                 char
 ```
@@ -211,23 +211,23 @@ public class TypeConversionDemo {
     public static void main(String[] args) {
         // --- Widening (implicit) conversions ---
         byte   b = 42;
-        short  s = b;      // byte â†’ short: OK
-        int    i = s;      // short â†’ int: OK
-        long   l = i;      // int â†’ long: OK
-        float  f = l;      // long â†’ float: possible precision loss, but no cast required
-        double d = f;      // float â†’ double: OK
+        short  s = b;      // byte → short: OK
+        int    i = s;      // short → int: OK
+        long   l = i;      // int → long: OK
+        float  f = l;      // long → float: possible precision loss, but no cast required
+        double d = f;      // float → double: OK
 
         // char can widen to int
         char   c = 'Z';
         int    charToInt = c;   // 90 (Unicode value of 'Z')
 
-        System.out.println("byte " + b + " â†’ short " + s + " â†’ int " + i
-                         + " â†’ long " + l + " â†’ float " + f + " â†’ double " + d);
+        System.out.println("byte " + b + " → short " + s + " → int " + i
+                         + " → long " + l + " → float " + f + " → double " + d);
         System.out.println("char '" + c + "' widens to int " + charToInt);
 
         // --- Narrowing (explicit) conversions ---
         double pi = 3.14159;
-        int truncated = (int) pi;          // truncates fractional part â†’ 3
+        int truncated = (int) pi;          // truncates fractional part → 3
         byte narrowed = (byte) truncated;  // int to byte, safe here
 
         int large = 300;
@@ -252,7 +252,7 @@ public class TypeConversionDemo {
         int total = 0;
         total = total + 5;                 // works
         total += 5;                        // works, equivalent
-        // total = total + 5L;             // compile error: long + int â†’ long, can't assign to int
+        // total = total + 5L;             // compile error: long + int → long, can't assign to int
         total += 5L;                       // OK! compound assignments include implicit cast
         System.out.println("total after compound ops: " + total);
     }
@@ -280,29 +280,29 @@ import java.util.List;
 
 public class AutoboxingDemo {
     public static void main(String[] args) {
-        // --- Autoboxing: primitive â†’ wrapper ---
-        Integer boxed = 42;                // autoboxing: int â†’ Integer
-        Double  dBox  = 3.14;              // autoboxing: double â†’ Double
-        Boolean bBox  = true;              // autoboxing: boolean â†’ Boolean
-        Character cBox = 'X';              // autoboxing: char â†’ Character
+        // --- Autoboxing: primitive → wrapper ---
+        Integer boxed = 42;                // autoboxing: int → Integer
+        Double  dBox  = 3.14;              // autoboxing: double → Double
+        Boolean bBox  = true;              // autoboxing: boolean → Boolean
+        Character cBox = 'X';              // autoboxing: char → Character
 
         System.out.println("Boxed Integer: " + boxed);
         System.out.println("Boxed Double:  " + dBox);
         System.out.println("Boxed Boolean: " + bBox);
         System.out.println("Boxed Char:    " + cBox);
 
-        // --- Unboxing: wrapper â†’ primitive ---
+        // --- Unboxing: wrapper → primitive ---
         Integer wrapped = Integer.valueOf(100);
-        int    value    = wrapped;          // unboxing: Integer â†’ int
+        int    value    = wrapped;          // unboxing: Integer → int
 
         System.out.println("Unboxed value: " + value);
 
         // --- Autoboxing in collections ---
         List<Integer> numbers = new ArrayList<>();
-        numbers.add(10);                    // autoboxing: int â†’ Integer
+        numbers.add(10);                    // autoboxing: int → Integer
         numbers.add(20);
         numbers.add(30);
-        int first = numbers.get(0);         // unboxing: Integer â†’ int
+        int first = numbers.get(0);         // unboxing: Integer → int
         System.out.println("First in list: " + first);
 
         // --- Pitfall: null unboxing ---
@@ -519,23 +519,23 @@ public class InstanceofTernaryDemo {
         System.out.println("obj instanceof Object:  " + (obj instanceof Object));   // true
         System.out.println("obj instanceof CharSequence: " + (obj instanceof CharSequence));  // true
 
-        // null instanceof anything â†’ false
+        // null instanceof anything → false
         Object nothing = null;
         System.out.println("null instanceof String: " + (nothing instanceof String));  // false
 
         // --- Ternary operator ( ? : ) ---
         int age = 20;
         String status = age >= 18 ? "Adult" : "Minor";
-        System.out.println("Age " + age + " â†’ " + status);
+        System.out.println("Age " + age + " → " + status);
 
-        // Nested ternary (use sparingly â€” readability matters)
+        // Nested ternary (use sparingly → readability matters)
         int score = 85;
         String grade = score >= 90 ? "A"
                      : score >= 80 ? "B"
                      : score >= 70 ? "C"
                      : score >= 60 ? "D"
                      : "F";
-        System.out.println("Score " + score + " â†’ Grade " + grade);
+        System.out.println("Score " + score + " → Grade " + grade);
 
         // Ternary with method calls
         int x = 5;
@@ -644,7 +644,7 @@ public class SwitchExpressionDemo {
                 yield "F";
             }
         };
-        System.out.println("Score " + score + " â†’ Letter grade: " + letterGrade);
+        System.out.println("Score " + score + " → Letter grade: " + letterGrade);
 
         // --- Switch with enum (exhaustive, no default needed) ---
         enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }
@@ -723,7 +723,7 @@ public class LoopDemo {
         } while (value < 3);
         System.out.println();
 
-        // --- Infinite loops â€” be careful ---
+        // --- Infinite loops → be careful ---
         // for (;;) { ... }         // infinite for loop
         // while (true) { ... }     // infinite while loop
 
@@ -907,7 +907,7 @@ public class MultiDimArrayDemo {
         System.out.println("Rectangular 3x4 matrix:");
         printMatrix(matrix);
 
-        // --- Ragged (jagged) array â€” each row can have different length ---
+        // --- Ragged (jagged) array → each row can have different length ---
         int[][] triangle = new int[5][];
         for (int row = 0; row < triangle.length; row++) {
             triangle[row] = new int[row + 1];
@@ -966,7 +966,7 @@ public class ArraysUtilityDemo {
         System.out.println("Original: " + Arrays.toString(numbers));
         System.out.println("Sorted:   " + Arrays.toString(sorted));
 
-        // --- binarySearch() â€” array MUST be sorted first ---
+        // --- binarySearch() → array MUST be sorted first ---
         int index = Arrays.binarySearch(sorted, 19);
         System.out.println("Index of 19 in sorted array: " + index);  // 2
         System.out.println("Index of 99 (not found):     " + Arrays.binarySearch(sorted, 99));  // negative
@@ -997,7 +997,7 @@ public class ArraysUtilityDemo {
         System.out.println("compare(a, b): " + Arrays.compare(a, b));   // negative (3 < 5 at index 2)
         System.out.println("mismatch(a, b): " + Arrays.mismatch(a, b)); // 2 (first differing index)
 
-        // --- parallelSort() â€” uses ForkJoinPool for large arrays ---
+        // --- parallelSort() → uses ForkJoinPool for large arrays ---
         int[] large = new int[10_000];
         for (int i = 0; i < large.length; i++) {
             large[i] = (int) (Math.random() * 100_000);
@@ -1033,7 +1033,7 @@ public class ArraysUtilityDemo {
 
 ## 6. Strings
 
-Strings in Java are **immutable** â€” once created, their internal character array cannot be modified. All methods that appear to modify a String actually return a **new** String object.
+Strings in Java are **immutable** → once created, their internal character array cannot be modified. All methods that appear to modify a String actually return a **new** String object.
 
 ### 6.1 String Immutability and the String Pool
 
@@ -1047,7 +1047,7 @@ public class StringBasicsDemo {
         System.out.println("Upper:    " + upper); // "HELLO"
 
         // --- String pool ---
-        String a = "hello";          // string literal â†’ goes into the pool
+        String a = "hello";          // string literal → goes into the pool
         String b = "hello";          // reuses the same pool entry
         String c = new String("hello");  // explicitly creates a NEW object on the heap
 
@@ -1055,7 +1055,7 @@ public class StringBasicsDemo {
         System.out.println("a == c:        " + (a == c));   // false (c is a distinct object)
         System.out.println("a.equals(c):   " + a.equals(c)); // true (same value)
 
-        // --- intern() â€” manually add to pool ---
+        // --- intern() → manually add to pool ---
         String d = c.intern();        // returns the pooled version
         System.out.println("a == d:        " + (a == d));   // true (both pointing to pool)
 
@@ -1436,7 +1436,7 @@ public class VarKeywordDemo {
 ### 8.1 Basic Records
 
 ```java
-// A simple record â€” the entire class in one line
+// A simple record → the entire class in one line
 record Point(int x, int y) {}
 
 // A record with multiple components
@@ -1485,7 +1485,7 @@ public class BasicRecordDemo {
 ```java
 record Range(int start, int end) {
 
-    // --- Compact constructor (no parameter list â€” components are implicitly available) ---
+    // --- Compact constructor (no parameter list → components are implicitly available) ---
     public Range {
         if (start > end) {
             throw new IllegalArgumentException("Start (" + start + ") must be <= end (" + end + ")");
@@ -1493,7 +1493,7 @@ record Range(int start, int end) {
         // The compiler assigns this.start = start; this.end = end; automatically
     }
 
-    // --- Canonical constructor (explicit parameter list â€” must assign all fields) ---
+    // --- Canonical constructor (explicit parameter list → must assign all fields) ---
     // public Range(int start, int end) {
     //     if (start > end) throw new IllegalArgumentException(...);
     //     this.start = start;
@@ -1552,7 +1552,7 @@ public class CustomRecordDemo {
 ```java
 record Pair<A, B>(A first, B second) {
 
-    // Compact constructor â€” can add validation
+    // Compact constructor → can add validation
     public Pair {
         if (first == null || second == null) {
             throw new IllegalArgumentException("Neither component may be null");
@@ -1730,7 +1730,7 @@ public class ExhaustiveSwitchDemo {
             case ACTIVE    -> "Account is active";
             case SUSPENDED -> "Account suspended";
             case CLOSED    -> "Account closed";
-            // No default needed â€” all cases covered
+            // No default needed → all cases covered
         };
         System.out.println("Status: " + label);
     }
@@ -1754,15 +1754,15 @@ public class SwitchEverywhereDemo {
     public static void main(String[] args) {
         // --- Switch as a method return ---
         DayOfWeek today = LocalDate.now().getDayOfWeek();
-        System.out.println("Today is " + today + " â€” " + businessImpact(today));
+        System.out.println("Today is " + today + " → " + businessImpact(today));
         System.out.println("Work hours: " + workHours(today));
     }
 
     static String businessImpact(DayOfWeek day) {
         return switch (day) {
-            case SATURDAY, SUNDAY -> "Weekend â€” reduced operations";
-            case FRIDAY           -> "End of week â€” deployments discouraged";
-            case MONDAY           -> "Start of week â€” high traffic expected";
+            case SATURDAY, SUNDAY -> "Weekend → reduced operations";
+            case FRIDAY           -> "End of week → deployments discouraged";
+            case MONDAY           -> "Start of week → high traffic expected";
             case TUESDAY, WEDNESDAY, THURSDAY -> "Standard business day";
         };
     }
@@ -2095,7 +2095,7 @@ public class TextBlockIndentationDemo {
                 Line 1: indented 16 spaces
                     Line 2: indented 20 spaces
                 Line 3: back to 16 spaces
-            """;  // closing """ at 12 spaces â†’ common indent is 12
+            """;  // closing """ at 12 spaces → common indent is 12
 
         for (String line : example.split("\n")) {
             System.out.println("'" + line + "'");
@@ -2235,7 +2235,7 @@ Java 21 introduces **unnamed classes** and **instance main methods**, allowing a
 //   javac --release 21 --enable-preview HelloModern.java
 //   java --enable-preview HelloModern
 
-// Unnamed class â€” no explicit class declaration
+// Unnamed class → no explicit class declaration
 
 void main() {
     System.out.println("Hello from the modern main method!");
@@ -2275,9 +2275,9 @@ public class MainStyles {
         // --- The three pillars of the modern main ---
         System.out.println("""
             The three changes (JEP 445):
-            1. Instance main â€” no 'static' required
-            2. Simplified signature â€” no 'public' required
-            3. Unnamed classes â€” no enclosing class declaration
+            1. Instance main → no 'static' required
+            2. Simplified signature → no 'public' required
+            3. Unnamed classes → no enclosing class declaration
             """);
     }
 
@@ -2340,7 +2340,7 @@ This chapter covered the foundational syntax and features of Java 21 that every 
 
 ---
 
-> **Pro Tip:** Type every code example yourself â€” muscle memory for Java syntax is built through active practice, not passive reading.
+> **Pro Tip:** Type every code example yourself → muscle memory for Java syntax is built through active practice, not passive reading.
 
 > **Remember:** Understanding the "why" behind Java language features is more important than memorizing syntax.
 
@@ -2488,9 +2488,9 @@ This chapter covered the foundational syntax and features of Java 21 that every 
    ```
 
    Expected query behavior:
-   - `"course.title"` â†’ `JsonString("Java & Spring Boot")`
-   - `"course.students.0.name"` â†’ `JsonString("Alice")`
-   - `"course.students.1.grade"` â†’ `JsonNumber(78.0)`
+   - `"course.title"` → `JsonString("Java & Spring Boot")`
+   - `"course.students.0.name"` → `JsonString("Alice")`
+   - `"course.students.1.grade"` → `JsonNumber(78.0)`
 
 2. **Expression Evaluator with Variables**: Extend the expression evaluator from the chapter to support variables and simplification.
 
@@ -2499,10 +2499,10 @@ This chapter covered the foundational syntax and features of Java 21 that every 
    - `Variable` stores a `String name`
    - Implement `evaluate(Expr expr, Map<String, Integer> vars)` that resolves variables from the map
    - Implement `simplify(Expr expr)` that applies constant folding:
-     - `Add(Const(3), Const(4))` â†’ `Const(7)`
-     - `Multiply(Const(1), x)` â†’ `x`
-     - `Add(Const(0), x)` â†’ `x`
-     - `Multiply(Const(0), x)` â†’ `Const(0)`
+     - `Add(Const(3), Const(4))` → `Const(7)`
+     - `Multiply(Const(1), x)` → `x`
+     - `Add(Const(0), x)` → `x`
+     - `Multiply(Const(0), x)` → `Const(0)`
    - Implement `toPrettyString(Expr expr)` returning human-readable form
    - Implement `derivative(Expr expr, String variable)` returning the derivative as a new expression
    - Use pattern matching with switch expressions throughout
@@ -2515,12 +2515,12 @@ This chapter covered the foundational syntax and features of Java 21 that every 
    - Define `record Node<T>(T value)` that implements `Comparable` based on `toString()` for sorting
    - Define `record Edge<T>(Node<T> source, Node<T> target, int weight)`
    - Implement methods:
-     - `addNode(T value)` â€” adds a node, returns it
-     - `addEdge(T from, T to, int weight)` â€” adds a weighted edge
-     - `List<Node<T>> shortestPath(T from, T to)` â€” Dijkstra's algorithm
-     - `boolean hasCycle()` â€” cycle detection in directed graph
-     - `Graph<T> subgraph(Set<T> keepValues)` â€” filter to a subset of nodes
-     - `String toDOT()` â€” export to Graphviz DOT format using a text block template
+     - `addNode(T value)` → adds a node, returns it
+     - `addEdge(T from, T to, int weight)` → adds a weighted edge
+     - `List<Node<T>> shortestPath(T from, T to)` → Dijkstra's algorithm
+     - `boolean hasCycle()` → cycle detection in directed graph
+     - `Graph<T> subgraph(Set<T> keepValues)` → filter to a subset of nodes
+     - `String toDOT()` → export to Graphviz DOT format using a text block template
    - Use records with compact constructors for validation (no negative weights)
    - Use pattern matching in any conditional logic
    - The `shortestPath` method must use a `record DistAndPath(int distance, List<Node<T>> path)` as an intermediate structure

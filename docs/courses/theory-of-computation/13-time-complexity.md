@@ -55,7 +55,7 @@ flowchart LR
 
 ### 12.1 Time Complexity
 
-The **time complexity** of a Turing machine M is the function t: â„• â†’ â„• where t(n) is the maximum number of steps M takes on any input of length n.
+The **time complexity** of a Turing machine M is the function t: â„• → â„• where t(n) is the maximum number of steps M takes on any input of length n.
 
 For a **multitape TM**, the time complexity is defined similarly, but one step may involve all heads simultaneously.
 
@@ -120,7 +120,7 @@ NP is the class of languages decidable in polynomial time on a **nondeterministi
 
 **P vs NP:** The most famous open problem in computer science. Does P = NP?
 - If P = NP: all efficiently verifiable problems are efficiently solvable.
-- If P â‰  NP: some problems are inherently hard â€” their solutions can be verified quickly but not found quickly.
+- If P â‰  NP: some problems are inherently hard → their solutions can be verified quickly but not found quickly.
 
 Most researchers believe P â‰  NP.
 
@@ -232,7 +232,7 @@ If P = NP, the entire polynomial hierarchy collapses to P at the first level. Th
 
 ## Examples
 
-### Example 12.1: Proving a Problem is in NP â€” CLIQUE
+### Example 12.1: Proving a Problem is in NP → CLIQUE
 
 CLIQUE = { âŸ¨G, KâŸ© | G has a K-clique }.
 
@@ -241,7 +241,7 @@ CLIQUE = { âŸ¨G, KâŸ© | G has a K-clique }.
 - Verify that for every pair u, v âˆˆ V', (u, v) is an edge in G.
 - If all checks pass, accept; otherwise reject.
 
-Runtime: O(KÂ²) âŠ† O(|V|Â²) â€” polynomial. So CLIQUE âˆˆ NP.
+Runtime: O(KÂ²) âŠ† O(|V|Â²) → polynomial. So CLIQUE âˆˆ NP.
 
 ### Example 12.2: 3SAT â‰¤_P CLIQUE
 
@@ -252,7 +252,7 @@ Given a 3CNF formula Ï† with k clauses, construct graph G:
 
 **Correctness:** Ï† is satisfiable iff there is a k-clique in G. A clique of size k picks one literal from each clause, all of which can be simultaneously true.
 
-Construction: O(kÂ²Â·3Â²) = O(kÂ²) â€” polynomial.
+Construction: O(kÂ²Â·3Â²) = O(kÂ²) → polynomial.
 
 ### Example 12.3: VERTEX-COVER â‰¤_P CLIQUE (via complement)
 
@@ -773,7 +773,7 @@ export { Processor, Task }
 2. Show that COMPOSITE (is n composite?) is in NP.
 3. Show that P is closed under union, intersection, and complement.
 4. Explain why a polynomial-time reduction from A to B combined with B âˆˆ P implies A âˆˆ P.
-5. Classify: Sorting, TSP, Matrix multiplication, Graph connectivity â€” which are in P and which are in NP?
+5. Classify: Sorting, TSP, Matrix multiplication, Graph connectivity → which are in P and which are in NP?
 
 ### Intermediate
 

@@ -18,9 +18,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Event-Driven Architecture â€” services communicate via events, not direct calls | Loose coupling, eventual consistency, event sourcing |
-| Saga Pattern â€” manage distributed transactions across services | Choreography (event-based) vs Orchestration (central coordinator) |
-| Compensation â€” undo actions when a saga step fails | Each step defines a compensating action for rollback |
+| Event-Driven Architecture → services communicate via events, not direct calls | Loose coupling, eventual consistency, event sourcing |
+| Saga Pattern → manage distributed transactions across services | Choreography (event-based) vs Orchestration (central coordinator) |
+| Compensation → undo actions when a saga step fails | Each step defines a compensating action for rollback |
 
 ---
 ## Chapter Roadmap
@@ -64,9 +64,9 @@ flowchart TD
 
 | Domain | Application | Use Case |
 |--------|-------------|----------|
-| E-Commerce Order Flow | Orchestrated Saga | Create order â†’ reserve inventory â†’ process payment â†’ ship |
-| Account Transfer | Choreographed Saga | Debit source â†’ credit destination (compensate if credit fails) |
-| Travel Booking | Orchestrated Saga | Book flight â†’ hotel â†’ car (cancel all if any fails) |
+| E-Commerce Order Flow | Orchestrated Saga | Create order → reserve inventory → process payment → ship |
+| Account Transfer | Choreographed Saga | Debit source → credit destination (compensate if credit fails) |
+| Travel Booking | Orchestrated Saga | Book flight → hotel → car (cancel all if any fails) |
 
 ---
 ## Chapter Quiz
@@ -2232,7 +2232,7 @@ public class SagaCompletedEvent {
 > Sagas provide eventual consistency, not ACID. Design your system to tolerate temporary inconsistencies.
 
 > [!NOTE]
-> An orchestrator is not a monolith â€” it orchestrates, not implements. Each step delegates to the appropriate service.
+> An orchestrator is not a monolith → it orchestrates, not implements. Each step delegates to the appropriate service.
 
 ## Summary
 

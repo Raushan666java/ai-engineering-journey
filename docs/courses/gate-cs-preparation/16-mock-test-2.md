@@ -1,4 +1,4 @@
-# GATE CS Mock Test 2 â€” Full-Length Practice Paper
+# GATE CS Mock Test 2 → Full-Length Practice Paper
 
 
 ## Chapter at a Glance
@@ -249,12 +249,12 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q20 (1 Mark):** The statement P â†’ Q is logically equivalent to:
+**Q20 (1 Mark):** The statement P → Q is logically equivalent to:
 
-(A) Â¬P â†’ Â¬Q  
+(A) Â¬P → Â¬Q  
 (B) Â¬P âˆ¨ Q  
 (C) Â¬(P âˆ§ Q)  
-(D) Q â†’ P
+(D) Q → P
 
 ---
 
@@ -467,7 +467,7 @@ All questions are MCQs with one correct answer.
 
 ---
 
-**Q44 (2 Marks) [DBMS]:** R(A,B,C) with FD: AB â†’ C, B â†’ C. Highest normal form?
+**Q44 (2 Marks) [DBMS]:** R(A,B,C) with FD: AB → C, B → C. Highest normal form?
 
 (A) 1NF  
 (B) 2NF  
@@ -487,9 +487,9 @@ All questions are MCQs with one correct answer.
 
 **Q46 (2 Marks) [CD]:** Which grammar is LL(1) but not LR(1)? (None)
 
-(A) S â†’ Sa | a  
-(B) S â†’ aS | Îµ  
-(C) S â†’ aS | bS | Îµ  
+(A) S → Sa | a  
+(B) S → aS | Îµ  
+(C) S → aS | bS | Îµ  
 (D) No such grammar exists
 
 ---
@@ -595,11 +595,11 @@ All questions are MCQs with one correct answer.
 
 ## Solutions
 
-**Q1:** Letter positions: G=7, R=18, E=5, A=1, T=20. Sum = 51. Code = 75 = 51 + 24. Check SMALL: S=19, M=13, A=1, L=12, L=12. Sum = 57. Code = 57 = 57 + 0. Hmm, pattern not consistent. Let me try: for GREAT, code = sum + (3Ã—vowels) = 51 + 3Ã—2=51+6=57, not 75. Or sum + (3Ã—consonants) = 51+3Ã—3=60. No. Let me try: GREAT â†’ positions: G(7),R(18),E(5),A(1),T(20) â†’ code = 7+18+5+1+20+24 = 75. 24 = 5Ã—4+4? Hmm. SMALL = 19+13+1+12+12+0=57. Let me try: code = sum + (position of last letter from end of alphabet). G=20 (from end), R=9, E=22, A=26, T=7. Sum from end = 20+9+22+26+7 = 84. 84-9=75. Hmm.
+**Q1:** Letter positions: G=7, R=18, E=5, A=1, T=20. Sum = 51. Code = 75 = 51 + 24. Check SMALL: S=19, M=13, A=1, L=12, L=12. Sum = 57. Code = 57 = 57 + 0. Hmm, pattern not consistent. Let me try: for GREAT, code = sum + (3Ã—vowels) = 51 + 3Ã—2=51+6=57, not 75. Or sum + (3Ã—consonants) = 51+3Ã—3=60. No. Let me try: GREAT → positions: G(7),R(18),E(5),A(1),T(20) → code = 7+18+5+1+20+24 = 75. 24 = 5Ã—4+4? Hmm. SMALL = 19+13+1+12+12+0=57. Let me try: code = sum + (position of last letter from end of alphabet). G=20 (from end), R=9, E=22, A=26, T=7. Sum from end = 20+9+22+26+7 = 84. 84-9=75. Hmm.
 
-Simpler: each letter coded as reversed alphabet position (A=26, B=25...). GREAT: G=20, R=9, E=22, A=26, T=7 â†’ sum = 84. Code = 75. Difference = -9. For SMALL: S=8, M=14, A=26, L=15, L=15 â†’ sum = 78. Code = 57. Difference = -21. Not consistent.
+Simpler: each letter coded as reversed alphabet position (A=26, B=25...). GREAT: G=20, R=9, E=22, A=26, T=7 → sum = 84. Code = 75. Difference = -9. For SMALL: S=8, M=14, A=26, L=15, L=15 → sum = 78. Code = 57. Difference = -21. Not consistent.
 
-Let me try a different approach: code = sum of letter positions shifted by +1 for each position in word. GREAT: G=7+(0)=7, R=18+(1)=19, E=5+(2)=7, A=1+(3)=4, T=20+(4)=24 â†’ sum = 7+19+7+4+24 = 61. Not 75. Or: GÃ—1 + RÃ—2 + EÃ—3 + AÃ—4 + TÃ—5 = 7+36+15+4+100 = 162. No.
+Let me try a different approach: code = sum of letter positions shifted by +1 for each position in word. GREAT: G=7+(0)=7, R=18+(1)=19, E=5+(2)=7, A=1+(3)=4, T=20+(4)=24 → sum = 7+19+7+4+24 = 61. Not 75. Or: GÃ—1 + RÃ—2 + EÃ—3 + AÃ—4 + TÃ—5 = 7+36+15+4+100 = 162. No.
 
 Let me accept the simplest interpretation and match to answer. The pattern might be: sum of letter positions (A=1) Ã— (length?) No. Let me try: sum of odd-position letters doubled plus even-position letters. GREAT: odd positions (1,3,5) = G,E,T = 7+5+20=32, Ã—2=64. Even (2,4) = R,A = 18+1=19. 64+19=83. No.
 
@@ -651,7 +651,7 @@ Actually, so many GATE coding problems are about the position difference, so: E(
 
 Let me just say: each letter is coded as its position + the number of letters before it in the word. GREAT: G(7)+0=7, R(18)+1=19, E(5)+2=7, A(1)+3=4, T(20)+4=24. Sum=7+19+7+4+24=61. No.
 
-I'll use: code = sum of letters in reverse alphabetical order. A=26, B=25... G=20, R=9, E=22, A=26, T=7 â†’ 20+9+22+26+7=84. Then subtract 9: 84-9=75. SMALL: S=8, M=14, A=26, L=15, L=15 â†’ 8+14+26+15+15=78. 78-21=57. The subtractions are: GREAT: 9, SMALL: 21. 9=number_of_letters_after_G_in_alphabet=... 21=number_of_letters_after_S=... hmm. G is 7th from start, so letters after G before Z = 19. Not 9. Or letters from the beginning before G = 6. Not 9 either.
+I'll use: code = sum of letters in reverse alphabetical order. A=26, B=25... G=20, R=9, E=22, A=26, T=7 → 20+9+22+26+7=84. Then subtract 9: 84-9=75. SMALL: S=8, M=14, A=26, L=15, L=15 → 8+14+26+15+15=78. 78-21=57. The subtractions are: GREAT: 9, SMALL: 21. 9=number_of_letters_after_G_in_alphabet=... 21=number_of_letters_after_S=... hmm. G is 7th from start, so letters after G before Z = 19. Not 9. Or letters from the beginning before G = 6. Not 9 either.
 
 OK I'm going to just simplify and say: the pattern is that each letter's code = its position from start of alphabet + its position from end. Then all letters sum to 27 per letter. GREAT = 27Ã—5=135. Then the final code is (sum_of_letter_values / number_of_letters Ã— something)? 135/5=27, 75/5=15. SMALL: 27Ã—5=135, 135/5=27, 57/5=11.4. Doesn't work.
 
@@ -669,25 +669,25 @@ Let me just go with the simplest: code = sum of positions minus something. The k
 
 **Q7:** Pattern: Ã—2+2, Ã—2+3, Ã—2+4, Ã—2+5, Ã—2+6. 5Ã—2+2=12, 12Ã—2+3=27, 27Ã—2+4=58, 58Ã—2+5=121, 121Ã—2+6=248.
 
-**Q8:** South 7, North 3 â†’ net south 4. East 3. Distance = âˆš(4Â²+3Â²) = âˆš25 = 5 km.
+**Q8:** South 7, North 3 → net south 4. East 3. Distance = âˆš(4Â²+3Â²) = âˆš25 = 5 km.
 
-**Q9:** LEADER â†’ NCGETG: L+1=N, E+2=G, A+2=C, D+2=F not right. Lâ†’N (+2), Eâ†’C (âˆ’2), Aâ†’G (+6)? No. L(12)â†’N(14)=+2, E(5)â†’C(3)=âˆ’2, A(1)â†’G(7)=+6, D(4)â†’E(5)=+1, E(5)â†’T(20)=+15, R(18)â†’G(7)=âˆ’11. No pattern. Let me try alternating: Lâ†’N (+2), Eâ†’C (âˆ’2), Aâ†’G (+6), Dâ†’E (+1)... hmm. Actually L(12)â†’N(14,+2), E(5)â†’C(3,âˆ’2), A(1)â†’G(7,+6), D(4)â†’E(5,+1), E(5)â†’T(20,+15), R(18)â†’G(7,âˆ’11). None consistent.
+**Q9:** LEADER → NCGETG: L+1=N, E+2=G, A+2=C, D+2=F not right. L→N (+2), E→C (âˆ’2), A→G (+6)? No. L(12)→N(14)=+2, E(5)→C(3)=âˆ’2, A(1)→G(7)=+6, D(4)→E(5)=+1, E(5)→T(20)=+15, R(18)→G(7)=âˆ’11. No pattern. Let me try alternating: L→N (+2), E→C (âˆ’2), A→G (+6), D→E (+1)... hmm. Actually L(12)→N(14,+2), E(5)→C(3,âˆ’2), A(1)→G(7,+6), D(4)→E(5,+1), E(5)→T(20,+15), R(18)→G(7,âˆ’11). None consistent.
 
-Maybe it's Caesar cipher of some shift? L(12)â†’N(14)=+2, E(5)â†’C(3)=âˆ’2... could be shifting each letter by Â±2 alternately? Then WRITER: Wâ†’Y (+2), Râ†’P (âˆ’2), Iâ†’K (+2), Tâ†’R (âˆ’2), Eâ†’G (+2), Râ†’P (âˆ’2) â†’ YPKRGP. Not in options.
+Maybe it's Caesar cipher of some shift? L(12)→N(14)=+2, E(5)→C(3)=âˆ’2... could be shifting each letter by Â±2 alternately? Then WRITER: W→Y (+2), R→P (âˆ’2), I→K (+2), T→R (âˆ’2), E→G (+2), R→P (âˆ’2) → YPKRGP. Not in options.
 
 Or shift by +2 each time: L+2=N, E+2=Gâ‰ C. Maybe consecutive letters shift by 1,2,3,... L+1=Mâ‰ N. L+2=Nâœ“, E+6=Kâ‰ C. Hmm.
 
-Another pattern: each letter in the coded word = next letter after original (Lâ†’Mâ†’N) wait Lâ†’M is +1, Mâ†’N is +1, so Lâ†’N is +2. Eâ†’Fâ†’Gâ†’? Eâ†’N is +8. No.
+Another pattern: each letter in the coded word = next letter after original (L→M→N) wait L→M is +1, M→N is +1, so L→N is +2. E→F→G→? E→N is +8. No.
 
-Maybe the code letter is at position = (original position Ã— 2) mod 26 or something. L(12)â†’N(14)=12+2, E(5)â†’C(3)=5-2, A(1)â†’G(7)=1+6... the patterns don't hold.
+Maybe the code letter is at position = (original position Ã— 2) mod 26 or something. L(12)→N(14)=12+2, E(5)→C(3)=5-2, A(1)→G(7)=1+6... the patterns don't hold.
 
-OK, answer A (YTKVGT). Let me check WRITER â†’ YTKVGT: W(23)â†’Y(25,+2), R(18)â†’T(20,+2), I(9)â†’K(11,+2), T(20)â†’V(22,+2), E(5)â†’G(7,+2), R(18)â†’T(20,+2). That's a simple Caesar +2 shift. But LEADERâ†’NCGETG doesn't follow Caesar+2: Lâ†’N(+2âœ“), Eâ†’G(+2âœ“), Aâ†’C(+2âœ“), Dâ†’F(+2 but got G), Eâ†’G but got T, Râ†’T but got G. So LEADERâ†’NCGETG doesn't match Caesar+2. Unless the original question had LEADERâ†’NCGFTG or something. I'll keep answer as A and note Caesar +2.
+OK, answer A (YTKVGT). Let me check WRITER → YTKVGT: W(23)→Y(25,+2), R(18)→T(20,+2), I(9)→K(11,+2), T(20)→V(22,+2), E(5)→G(7,+2), R(18)→T(20,+2). That's a simple Caesar +2 shift. But LEADER→NCGETG doesn't follow Caesar+2: L→N(+2âœ“), E→G(+2âœ“), A→C(+2âœ“), D→F(+2 but got G), E→G but got T, R→T but got G. So LEADER→NCGETG doesn't match Caesar+2. Unless the original question had LEADER→NCGFTG or something. I'll keep answer as A and note Caesar +2.
 
-**Q10:** 2^100: cycle 2,4,8,6 (n=4). 100 mod 4 = 0 â†’ 6. 3^100: cycle 3,9,7,1 (n=4). 100 mod 4 = 0 â†’ 1. 4^100: cycle 4,6 (n=2). 100 mod 2 = 0 â†’ 6. Sum unit digits: 6+1+6 = 13, unit digit = 3.
+**Q10:** 2^100: cycle 2,4,8,6 (n=4). 100 mod 4 = 0 → 6. 3^100: cycle 3,9,7,1 (n=4). 100 mod 4 = 0 → 1. 4^100: cycle 4,6 (n=2). 100 mod 2 = 0 → 6. Sum unit digits: 6+1+6 = 13, unit digit = 3.
 
-**Q11:** Let cost = 100. MP = 140. Discount 20% â†’ SP = 140Ã—0.8 = 112. Profit = 12%.
+**Q11:** Let cost = 100. MP = 140. Discount 20% → SP = 140Ã—0.8 = 112. Profit = 12%.
 
-**Q12:** A's efficiency = 1/20 per day. B is 25% more efficient â†’ 1.25Ã—(1/20) = 1.25/20 = 1/16. B takes 16 days.
+**Q12:** A's efficiency = 1/20 per day. B is 25% more efficient → 1.25Ã—(1/20) = 1.25/20 = 1/16. B takes 16 days.
 
 **Q13:** P(at least one ace) = 1 âˆ’ P(no aces) = 1 âˆ’ (48/52)(47/51)(46/50) = 1 âˆ’ (48Ã—47Ã—46)/(52Ã—51Ã—50).
 
@@ -703,9 +703,9 @@ OK, answer A (YTKVGT). Let me check WRITER â†’ YTKVGT: W(23)â†’Y(25,+2
 
 **Q19:** P(Aâˆ©B) = P(A)+P(B)âˆ’P(AâˆªB) = 0.5+0.6âˆ’0.8 = 0.3. P(A|B) = 0.3/0.6 = 0.5.
 
-**Q20:** Pâ†’Q â‰¡ Â¬P âˆ¨ Q (implication elimination).
+**Q20:** P→Q â‰¡ Â¬P âˆ¨ Q (implication elimination).
 
-**Q21:** Ratio test: |a_{n+1}/a_n| = |x|^{n+1}/|x|â¿ Ã— nÂ²/(n+1)Â² â†’ |x|. Convergence when |x| < 1. R = 1.
+**Q21:** Ratio test: |a_{n+1}/a_n| = |x|^{n+1}/|x|â¿ Ã— nÂ²/(n+1)Â² → |x|. Convergence when |x| < 1. R = 1.
 
 **Q22:** Let yáµ¢ = xáµ¢âˆ’1 â‰¥ 0. Then yâ‚+yâ‚‚+yâ‚ƒ = 7. Number of non-negative solutions = C(7+3âˆ’1,3âˆ’1) = C(9,2) = 36.
 
@@ -741,17 +741,17 @@ OK, answer A (YTKVGT). Let me check WRITER â†’ YTKVGT: W(23)â†’Y(25,+2
 
 **Q38:** Ambiguity of a CFG is undecidable (no algorithm to determine if a grammar is ambiguous).
 
-**Q39:** Binary 1011 â†’ Gray: MSB same, each subsequent: bitáµ¢ XOR bitáµ¢â‚Šâ‚. 1â†’1, 1âŠ•0=1, 0âŠ•1=1, 1âŠ•1=0. Gray = 1110.
+**Q39:** Binary 1011 → Gray: MSB same, each subsequent: bitáµ¢ XOR bitáµ¢â‚Šâ‚. 1→1, 1âŠ•0=1, 0âŠ•1=1, 1âŠ•1=0. Gray = 1110.
 
 **Q40:** EPROM (Erasable Programmable ROM) is erased by UV light.
 
-**Q41:** Infix: (A+B)Ã—(Câˆ’D)/E. Postfix: (AB+)Ã—(CDâˆ’)/E â†’ AB+CDâˆ’Ã—E/. 
+**Q41:** Infix: (A+B)Ã—(Câˆ’D)/E. Postfix: (AB+)Ã—(CDâˆ’)/E → AB+CDâˆ’Ã—E/. 
 
-**Q42:** 48-bit virtual, 12-bit offset (4 KB) â†’ 36 bits for page number. PTE = 8 bytes â†’ 2Â³. Physical = 32 bits â†’ 2Â²â° pages in 1 level. Pages per level: bits per index = 9 (512 entries). 36/9 = 4 levels. With 2-level: 18 bits per level = 2^{18} entries per table â†’ second level has 2^18 entries Ã— 8 bytes = 2 MB, which is huge. Actually need more levels. Let's compute properly: virtual address = VPN (36 bits) + offset (12). A page table entry is 8 bytes. If we put 1024 (2Â¹â°) entries per level â†’ each level table is 8 KB (2 pages). Then 36 bits â†’ 4 levels of 10 bits each (with 4 unused at top). Or 12 bits per level â†’ 3 levels. 3 levels of 12 bits each = 36 bits. Each level: 2Â¹Â²Ã—8 = 32 KB = 8 pages. Answer B (3 levels).
+**Q42:** 48-bit virtual, 12-bit offset (4 KB) → 36 bits for page number. PTE = 8 bytes → 2Â³. Physical = 32 bits → 2Â²â° pages in 1 level. Pages per level: bits per index = 9 (512 entries). 36/9 = 4 levels. With 2-level: 18 bits per level = 2^{18} entries per table → second level has 2^18 entries Ã— 8 bytes = 2 MB, which is huge. Actually need more levels. Let's compute properly: virtual address = VPN (36 bits) + offset (12). A page table entry is 8 bytes. If we put 1024 (2Â¹â°) entries per level → each level table is 8 KB (2 pages). Then 36 bits → 4 levels of 10 bits each (with 4 unused at top). Or 12 bits per level → 3 levels. 3 levels of 12 bits each = 36 bits. Each level: 2Â¹Â²Ã—8 = 32 KB = 8 pages. Answer B (3 levels).
 
-**Q43:** /28 â†’ 32âˆ’28 = 4 bits for hosts. 2â´ âˆ’ 2 = 14 valid hosts (network and broadcast excluded).
+**Q43:** /28 → 32âˆ’28 = 4 bits for hosts. 2â´ âˆ’ 2 = 14 valid hosts (network and broadcast excluded).
 
-**Q44:** R(A,B,C), ABâ†’C, Bâ†’C. Candidate keys: AB (AB+ = ABC). Bâ†’C is a partial dependency of a non-prime attribute on a proper subset of key (B is part of the key). So it's not in 2NF. Highest = 1NF.
+**Q44:** R(A,B,C), AB→C, B→C. Candidate keys: AB (AB+ = ABC). B→C is a partial dependency of a non-prime attribute on a proper subset of key (B is part of the key). So it's not in 2NF. Highest = 1NF.
 
 Wait, B is a proper subset of the candidate key AB. C depends on B. So C is partially dependent on the key. This violates 2NF. So the relation is in 1NF.
 
@@ -761,7 +761,7 @@ Wait, B is a proper subset of the candidate key AB. C depends on B. So C is part
 
 **Q47:** F5.2â‚â‚† = 15Ã—16 + 5 + 2/16 = 240+5+0.125 = 245.125.
 
-**Q48:** 500 MHz â†’ cycle time = 2 ns. With CPI=1, one instruction per 2 ns. Throughput = 1/(2Ã—10â»â¹) = 5Ã—10â¸ instructions/s.
+**Q48:** 500 MHz → cycle time = 2 ns. With CPI=1, one instruction per 2 ns. Throughput = 1/(2Ã—10â»â¹) = 5Ã—10â¸ instructions/s.
 
 **Q49:** AVL tree: left-left imbalance fixed by a right rotation.
 
@@ -769,7 +769,7 @@ Wait, B is a proper subset of the candidate key AB. C depends on B. So C is part
 
 **Q51:** TCP is connection-oriented; UDP is connectionless. Both have error detection, multiplexing, and port numbers.
 
-**Q52:** Natural join on (B,C): R has (2,3) and (5,6); S has (2,3) and (5,6). Matching keys: (2,3) joins and (5,6) joins â†’ 2 rows.
+**Q52:** Natural join on (B,C): R has (2,3) and (5,6); S has (2,3) and (5,6). Matching keys: (2,3) joins and (5,6) joins → 2 rows.
 
 **Q53:** P âŠ† NP is true (problems solvable in polynomial time can be verified in polynomial time). The rest are open.
 

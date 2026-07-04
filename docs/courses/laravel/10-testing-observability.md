@@ -94,8 +94,8 @@ Laravel ships with PHPUnit as its default testing framework. PHPUnit's configura
 
 The `tests/` directory is organized into:
 
-- **`tests/Unit/`** â€” Tests that focus on a single class in isolation. No database, no HTTP request cycle. Fast execution.
-- **`tests/Feature/`** â€” Tests that exercise a full request/response cycle. These typically touch the database, middleware, routing, and controllers.
+- **`tests/Unit/`** → Tests that focus on a single class in isolation. No database, no HTTP request cycle. Fast execution.
+- **`tests/Feature/`** → Tests that exercise a full request/response cycle. These typically touch the database, middleware, routing, and controllers.
 
 ```
 tests/
@@ -177,7 +177,7 @@ class CalculatorTest extends TestCase
 
 Laravel provides three traits for managing database state between tests:
 
-**RefreshDatabase** â€” Migrates the database before the first test and wraps every test in a database transaction that is rolled back after each test. Best for SQLite in-memory and PostgreSQL.
+**RefreshDatabase** → Migrates the database before the first test and wraps every test in a database transaction that is rolled back after each test. Best for SQLite in-memory and PostgreSQL.
 
 ```php
 <?php
@@ -204,9 +204,9 @@ class UserControllerTest extends TestCase
 }
 ```
 
-**DatabaseMigrations** â€” Runs `php artisan migrate:fresh` before each test. Slower than `RefreshDatabase` but useful for databases that do not support transactional rollback (some cloud DBAAS setups).
+**DatabaseMigrations** → Runs `php artisan migrate:fresh` before each test. Slower than `RefreshDatabase` but useful for databases that do not support transactional rollback (some cloud DBAAS setups).
 
-**DatabaseTruncation** â€” Truncates all tables before each test. Faster than `DatabaseMigrations` but slower than `RefreshDatabase`. Specify tables to exclude via `$except` property.
+**DatabaseTruncation** → Truncates all tables before each test. Faster than `DatabaseMigrations` but slower than `RefreshDatabase`. Specify tables to exclude via `$except` property.
 
 ```php
 use Illuminate\Foundation\Testing\DatabaseTruncation;
@@ -237,21 +237,21 @@ PEST is a test framework built on top of PHPUnit that provides a more expressive
 use App\Models\User;
 use function Pest\Laravel\get;
 
-// it() â€” describe what the test does
+// it() → describe what the test does
 it('has a welcome page', function () {
     $response = get('/');
 
     $response->assertStatus(200);
 });
 
-// test() â€” alias for it()
+// test() → alias for it()
 test('guests are redirected to login', function () {
     $response = get('/dashboard');
 
     $response->assertRedirect('/login');
 });
 
-// describe() â€” groups related tests
+// describe() → groups related tests
 describe('authentication', function () {
     it('requires an email', function () {
         // ...
@@ -607,7 +607,7 @@ it('prevents unauthenticated creation', function () {
 | Scope | Full request/response cycle, middleware, routing, controller, database | Single class or method in isolation |
 | Speed | Slower (boot app, hit database, run middleware) | Fast (milliseconds) |
 | Database | Yes, typically with RefreshDatabase | No (mock/stub dependencies) |
-| Confidence | High â€” tests the system as a user would | Moderate â€” verifies unit logic |
+| Confidence | High → tests the system as a user would | Moderate → verifies unit logic |
 | Typical targets | Controllers, API endpoints, full workflows | Services, helpers, value objects, formatters |
 
 #### Decision Guide
@@ -627,7 +627,7 @@ Use **Unit tests** when:
 ```php
 <?php
 
-// Unit Test â€” pure logic, no Laravel boot
+// Unit Test → pure logic, no Laravel boot
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
@@ -858,7 +858,7 @@ it('asserts exact requests were sent', function () {
 
 > **One-Sentence Takeaway:** Dusk provides browser-level testing with element interaction, page objects, and component objects driven by a real Chrome instance.
 
-Laravel Dusk provides browser testing using a real Chrome instance. It does not require JDK or Selenium â€” just Chrome and the ChromeDriver.
+Laravel Dusk provides browser testing using a real Chrome instance. It does not require JDK or Selenium → just Chrome and the ChromeDriver.
 
 #### Installation
 
@@ -1059,19 +1059,19 @@ Access Telescope at `/telescope`.
 
 #### Dashboard Tabs
 
-- **Requests** â€” Every HTTP request with status, duration, SQL queries, view data
-- **Commands** â€” Artisan commands with arguments, output, timing
-- **Scheduled Tasks** â€” Cron task execution details
-- **Jobs** â€” Queued job lifecycle (dispatched, processing, failed)
-- **Exceptions** â€” Stack traces, request context, user context
-- **Logs** â€” Log channel output, searchable and filterable
-- **Dumps** â€” Captures `dump()` output for later review
-- **Queries** â€” Slow query warnings, N+1 detection, full SQL bindings
-- **Models** â€” Model hydration counts, watched model events
-- **Mail** â€” Rendered mail preview, attachments, headers
-- **Notifications** â€” Notification delivery and content
-- **Cache** â€” Cache hits/misses, keys, TTL
-- **Redis** â€” Redis command monitoring
+- **Requests** → Every HTTP request with status, duration, SQL queries, view data
+- **Commands** → Artisan commands with arguments, output, timing
+- **Scheduled Tasks** → Cron task execution details
+- **Jobs** → Queued job lifecycle (dispatched, processing, failed)
+- **Exceptions** → Stack traces, request context, user context
+- **Logs** → Log channel output, searchable and filterable
+- **Dumps** → Captures `dump()` output for later review
+- **Queries** → Slow query warnings, N+1 detection, full SQL bindings
+- **Models** → Model hydration counts, watched model events
+- **Mail** → Rendered mail preview, attachments, headers
+- **Notifications** → Notification delivery and content
+- **Cache** → Cache hits/misses, keys, TTL
+- **Redis** → Redis command monitoring
 
 #### Filtering
 
@@ -1151,14 +1151,14 @@ Access Pulse at `/pulse`.
 
 #### Dashboard Cards
 
-- **Servers** â€” CPU, memory, disk, network usage
-- **Application Health** â€” Application uptime and health check results
-- **Slow Queries** â€” Top queries by execution time
-- **Slow Jobs** â€” Queued jobs exceeding thresholds
-- **Slow Requests** â€” Slowest HTTP requests
-- **Usage** â€” Top users, routes, countries
-- **Exceptions** â€” Exception frequency grouped by class
-- **Cache** â€” Cache hit/miss ratio
+- **Servers** → CPU, memory, disk, network usage
+- **Application Health** → Application uptime and health check results
+- **Slow Queries** → Top queries by execution time
+- **Slow Jobs** → Queued jobs exceeding thresholds
+- **Slow Requests** → Slowest HTTP requests
+- **Usage** → Top users, routes, countries
+- **Exceptions** → Exception frequency grouped by class
+- **Cache** → Cache hit/miss ratio
 
 #### Custom Cards
 
@@ -1210,13 +1210,13 @@ Pulse::record('user_signups', $count)
 #### dd() vs dump()
 
 ```php
-// Dump and die â€” halts execution
+// Dump and die → halts execution
 dd($user, $request->all(), 'debug point');
 
-// Dump â€” continues execution
+// Dump → continues execution
 dump($user);
 
-// Multi-user debugging â€” only dumps for specific users
+// Multi-user debugging → only dumps for specific users
 dd()->where(auth()->user());
 dd()->where(request()->ip() === '192.168.1.1');
 ```

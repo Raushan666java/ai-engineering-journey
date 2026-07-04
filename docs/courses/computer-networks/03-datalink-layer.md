@@ -1,6 +1,6 @@
 # Chapter 3: The Data Link Layer
 
-> **Prerequisites:** [Chapter 2: Physical Layer](./02-physical-layer.md) â€” Bits and transmission media | **Next:** [Chapter 4: Medium Access Control](./04-mac.md) â€” From framing to channel sharing
+> **Prerequisites:** [Chapter 2: Physical Layer](./02-physical-layer.md) → Bits and transmission media | **Next:** [Chapter 4: Medium Access Control](./04-mac.md) → From framing to channel sharing
 
 ## Learning Objectives
 
@@ -60,9 +60,9 @@ Think of the data link layer as a postal sorting facility between two neighborin
 | Packet (Network layer) | Letter inside an envelope |
 | Frame (Data link layer) | Letter placed into a larger protective mailer with tracking barcode |
 | Framing | Drawing the border around the mailer so the sorter knows where one ends and next begins |
-| Error detection | Tamper-evident seal â€” if broken, the receiver knows the contents may be damaged |
+| Error detection | Tamper-evident seal → if broken, the receiver knows the contents may be damaged |
 | Flow control | Slowing down the truck if the receiving dock's bins are full |
-| ARQ (retransmission) | "Please resend â€” your last package arrived with a torn seal" |
+| ARQ (retransmission) | "Please resend → your last package arrived with a torn seal" |
 | ACK | "Package received in good condition" |
 | Timeout | "If no confirmation in 3 days, assume the package is lost and resend" |
 
@@ -70,18 +70,18 @@ Think of the data link layer as a postal sorting facility between two neighborin
 
 **1. Framing.** The data link layer divides the bit stream into discrete frames. The receiver must detect frame boundaries to extract each frame correctly. Without framing, the receiver cannot distinguish where one packet ends and the next begins.
 
-**2. Error detection and correction.** Bits may be corrupted by electrical noise, crosstalk, or signal attenuation. The data link layer adds redundant bits (checksum, CRC, parity) to detect or correct errors. The receiver recomputes the redundancy and compares it â€” a mismatch signals corruption.
+**2. Error detection and correction.** Bits may be corrupted by electrical noise, crosstalk, or signal attenuation. The data link layer adds redundant bits (checksum, CRC, parity) to detect or correct errors. The receiver recomputes the redundancy and compares it → a mismatch signals corruption.
 
 **3. Flow control.** If a sender transmits frames faster than a receiver can process them, buffers overflow and frames are dropped. Flow control uses feedback (ACK/NAK) or windowing to regulate the sender's rate.
 
 **4. Medium access control (Chapter 4).** On shared media (Ethernet, Wi-Fi), the data link layer coordinates frame transmission among multiple stations to avoid collisions.
 
-**5. Reliability (ARQ).** Some data link protocols provide automatic repeat request (ARQ) â€” retransmission of lost or corrupted frames. The sender starts a timer after transmitting; if no ACK arrives before timeout, the frame is sent again.
+**5. Reliability (ARQ).** Some data link protocols provide automatic repeat request (ARQ) → retransmission of lost or corrupted frames. The sender starts a timer after transmitting; if no ACK arrives before timeout, the frame is sent again.
 
 ### 3.1.3 Pseudocode: DLL Service Interface
 
 ```
-// Sender side: network layer packet â†’ data link layer frame
+// Sender side: network layer packet → data link layer frame
 PROCEDURE send_frame(packet P, address dest)
   frame F = new frame
   F.header.dest = dest
@@ -93,7 +93,7 @@ PROCEDURE send_frame(packet P, address dest)
   PHY_transmit(F)
 END
 
-// Receiver side: data link layer frame â†’ network layer packet
+// Receiver side: data link layer frame → network layer packet
 PROCEDURE receive_frame()
   raw = PHY_receive()               // get raw bit stream from physical layer
   while not end_of_stream
@@ -125,7 +125,7 @@ Consider a network-layer packet `[0x48, 0x65, 0x6C, 0x6C, 0x6F]` ("Hello") being
 | 6 | Physical layer | Transmits bits over wire | Raw bit stream sent |
 | 7 | Receiver PHY | Receives bits, reassembles bytes | Raw bytes delivered to DLL |
 | 8 | Receiver DLL | Detects flag 0x7E, extracts payload | Extracts `[0x48,0x65,0x6C,0x6C,0x6F]` + CRC |
-| 9 | Receiver DLL | Computes CRC and compares | Match â†’ no error detected |
+| 9 | Receiver DLL | Computes CRC and compares | Match → no error detected |
 | 10 | Receiver DLL | Delivers payload to network layer | `"Hello"` delivered successfully |
 
 ### 3.1.5 Complexity Analysis
@@ -142,7 +142,7 @@ Consider a network-layer packet `[0x48, 0x65, 0x6C, 0x6C, 0x6F]` ("Hello") being
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
 | Framing | Enables packet delineation on stream media | Adds per-frame overhead (flags, headers, trailers) |
-| Error detection | Catches real-world noise patterns | Cannot correct â€” only detect (without FEC) |
+| Error detection | Catches real-world noise patterns | Cannot correct → only detect (without FEC) |
 | Flow control | Prevents receiver buffer overflow | Adds latency (waiting for feedback) |
 | ARQ | Guarantees delivery despite errors | Reduces throughput on noisy links due to retransmissions |
 
@@ -154,7 +154,7 @@ Consider a network-layer packet `[0x48, 0x65, 0x6C, 0x6C, 0x6F]` ("Hello") being
 | Link down | Physical layer signals carrier loss; DLL reports "link unavailable" to network layer |
 | Bit errors in header | CRC covers entire frame; if header is corrupted, frame is discarded |
 | Receiver buffer full | Flow control: receiver sends RNR (Receive Not Ready) or window advertisement of 0 |
-| Frame too short | Minimum frame size enforced (Ethernet: 64 bytes) â€” frames below minimum are discarded |
+| Frame too short | Minimum frame size enforced (Ethernet: 64 bytes) → frames below minimum are discarded |
 
 ---
 
@@ -181,12 +181,12 @@ A train conductor announces: "Car 1: 10 passengers, Car 2: 15 passengers, Car 3:
 
 #### Detailed Example
 
-Frame 1: 5 bytes of data â†’ length = 5 + 1 (count byte) = 6 â†’ transmitted as `[0x06][D1][D2][D3][D4][D5]`
-Frame 2: 9 bytes of data â†’ length = 9 + 1 = 10 â†’ transmitted as `[0x0A][d1][d2][d3][d4][d5][d6][d7][d8][d9]`
+Frame 1: 5 bytes of data → length = 5 + 1 (count byte) = 6 → transmitted as `[0x06][D1][D2][D3][D4][D5]`
+Frame 2: 9 bytes of data → length = 9 + 1 = 10 → transmitted as `[0x0A][d1][d2][d3][d4][d5][d6][d7][d8][d9]`
 
 Raw bit stream at receiver: `[0x06][D1][D2][D3][D4][D5][0x0A][d1][d2][d3][d4][d5][d6][d7][d8][d9]`
 
-The receiver reads 0x06 â†’ extracts 5 payload bytes â†’ reads 0x0A â†’ extracts 9 payload bytes.
+The receiver reads 0x06 → extracts 5 payload bytes → reads 0x0A → extracts 9 payload bytes.
 
 #### Pseudocode
 
@@ -201,7 +201,7 @@ END
 PROCEDURE character_count_receive()
   while true
     count = PHY_read_byte()            // read length byte
-    if count == 0 â†’ error              // zero-length frame is invalid
+    if count == 0 → error              // zero-length frame is invalid
     payload = PHY_read_bytes(count - 1) // read that many bytes
     deliver(payload)
   end
@@ -214,17 +214,17 @@ Sender sends three frames with data "AB", "CDE", and "FGHI".
 
 | Step | Sender Action | Transmitted Bytes | Receiver Action |
 |------|--------------|-------------------|-----------------|
-| 1 | Frame1 len=2+1=3 â†’ `[0x03][A][B]` | `03 41 42` | Reads 0x03 â†’ extracts 2 bytes: [A,B] |
-| 2 | Frame2 len=3+1=4 â†’ `[0x04][C][D][E]` | `04 43 44 45` | Reads 0x04 â†’ extracts 3 bytes: [C,D,E] |
-| 3 | Frame3 len=4+1=5 â†’ `[0x05][F][G][H][I]` | `05 46 47 48 49` | Reads 0x05 â†’ extracts 4 bytes: [F,G,H,I] |
+| 1 | Frame1 len=2+1=3 → `[0x03][A][B]` | `03 41 42` | Reads 0x03 → extracts 2 bytes: [A,B] |
+| 2 | Frame2 len=3+1=4 → `[0x04][C][D][E]` | `04 43 44 45` | Reads 0x04 → extracts 3 bytes: [C,D,E] |
+| 3 | Frame3 len=4+1=5 → `[0x05][F][G][H][I]` | `05 46 47 48 49` | Reads 0x05 → extracts 4 bytes: [F,G,H,I] |
 
-Now simulate a single-bit error: Frame2's length 0x04 becomes 0x07 (bit 2 flipped: 00000100 â†’ 00000111).
+Now simulate a single-bit error: Frame2's length 0x04 becomes 0x07 (bit 2 flipped: 00000100 → 00000111).
 
 | Step | Sender Action | Transmitted | Receiver Action |
 |------|--------------|-------------|-----------------|
-| 1 | Same as above | `03 41 42` | Reads 0x03 â†’ [A,B] (correct) |
-| 2 | Same as above | `04 43 44 45` | **Reads 0x07** (corrupted) â†’ extracts 6 bytes: [C,D,E, 0x05, 0x46, 0x47] |
-| 3 | Same as above | `05 46 47 48 49` | Frame3's length consumed as data! Receiver sees next byte 0x48 as "length" â†’ 72 bytes â†’ reads garbage. **Permanent desynchronization.** |
+| 1 | Same as above | `03 41 42` | Reads 0x03 → [A,B] (correct) |
+| 2 | Same as above | `04 43 44 45` | **Reads 0x07** (corrupted) → extracts 6 bytes: [C,D,E, 0x05, 0x46, 0x47] |
+| 3 | Same as above | `05 46 47 48 49` | Frame3's length consumed as data! Receiver sees next byte 0x48 as "length" → 72 bytes → reads garbage. **Permanent desynchronization.** |
 
 This illustrates why character count is fragile: a single bit error in any length field causes the receiver to lose all subsequent frame boundaries.
 
@@ -232,8 +232,8 @@ This illustrates why character count is fragile: a single bit error in any lengt
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| Sender | O(1) | O(1) | Prepends a fixed-size count â€” no scanning needed |
-| Receiver | O(1) per frame | O(1) | Reads count, then reads N bytes â€” pointer arithmetic only |
+| Sender | O(1) | O(1) | Prepends a fixed-size count → no scanning needed |
+| Receiver | O(1) per frame | O(1) | Reads count, then reads N bytes → pointer arithmetic only |
 
 #### A&D Table
 
@@ -248,16 +248,16 @@ This illustrates why character count is fragile: a single bit error in any lengt
 
 | Edge Case | Behavior |
 |-----------|----------|
-| Count byte corrupted to larger value | Receiver reads garbage bytes as next frame's count â†’ desync |
-| Count byte corrupted to 0 | Receiver reads next N bytes as "0-length" â†’ inconsistent |
-| Count byte corrupted to 0x01 | Receiver claims 0 data bytes â†’ may skip frame entirely |
+| Count byte corrupted to larger value | Receiver reads garbage bytes as next frame's count → desync |
+| Count byte corrupted to 0 | Receiver reads next N bytes as "0-length" → inconsistent |
+| Count byte corrupted to 0x01 | Receiver claims 0 data bytes → may skip frame entirely |
 | Burst error wipes multiple frames | No way to re-synchronize until external reset |
 
 ### 3.2.2 Byte Stuffing
 
 #### Real-World Analogy
 
-A text message that contains the word "END" needs to be distinguished from the protocol command "END". The sender replaces every literal "END" with "ENDEND" â€” the receiver knows that "ENDEND" means a literal "END" and a single "END" is the protocol boundary. This is the same idea as escaping quotation marks inside a quoted string in programming (e.g., `"He said \"hello\""`).
+A text message that contains the word "END" needs to be distinguished from the protocol command "END". The sender replaces every literal "END" with "ENDEND" → the receiver knows that "ENDEND" means a literal "END" and a single "END" is the protocol boundary. This is the same idea as escaping quotation marks inside a quoted string in programming (e.g., `"He said \"hello\""`).
 
 #### How It Works (Numbered Steps)
 
@@ -277,8 +277,8 @@ Transmitted frame (after stuffing):
 `[0x7E] [0x41] [0x7D] [0x5E] [0x42] [0x7D] [0x5D] [0x43] [0x7E]`
 
 Explanation:
-- 0x7E (flag) in payload â†’ stuffed as 0x7D 0x5E (escape, then flag XOR 0x20)
-- 0x7D (escape) in payload â†’ stuffed as 0x7D 0x5D (escape, then escape XOR 0x20)
+- 0x7E (flag) in payload → stuffed as 0x7D 0x5E (escape, then flag XOR 0x20)
+- 0x7D (escape) in payload → stuffed as 0x7D 0x5D (escape, then escape XOR 0x20)
 - Original flag 0x7E at boundaries remains un-stuffed
 
 #### Pseudocode
@@ -327,14 +327,14 @@ Payload: `AB\x7ECD\x7DEF` (bytes: 0x41, 0x42, 0x7E, 0x43, 0x44, 0x7D, 0x45, 0x46
 | Step | Sender Buffer (after stuffing each byte) | Explanation |
 |------|------------------------------------------|-------------|
 | 0 | `[7E]` | Start flag |
-| 1 | `[7E] [41]` | 'A' â€” plain copy |
-| 2 | `[7E] [41] [42]` | 'B' â€” plain copy |
-| 3 | `[7E] [41] [42] [7D] [5E]` | 0x7E (flag) â†’ escape 0x7D + 0x5E (0x7E XOR 0x20) |
-| 4 | `[7E] [41] [42] [7D] [5E] [43]` | 'C' â€” plain copy |
-| 5 | `[7E] [41] [42] [7D] [5E] [43] [44]` | 'D' â€” plain copy |
-| 6 | `[7E] [41] [42] [7D] [5E] [43] [44] [7D] [5D]` | 0x7D (escape) â†’ escape 0x7D + 0x5D (0x7D XOR 0x20) |
-| 7 | `[7E] [41] [42] [7D] [5E] [43] [44] [7D] [5D] [45]` | 'E' â€” plain copy |
-| 8 | `[7E] [41] [42] [7D] [5E] [43] [44] [7D] [5D] [45] [46]` | 'F' â€” plain copy |
+| 1 | `[7E] [41]` | 'A' → plain copy |
+| 2 | `[7E] [41] [42]` | 'B' → plain copy |
+| 3 | `[7E] [41] [42] [7D] [5E]` | 0x7E (flag) → escape 0x7D + 0x5E (0x7E XOR 0x20) |
+| 4 | `[7E] [41] [42] [7D] [5E] [43]` | 'C' → plain copy |
+| 5 | `[7E] [41] [42] [7D] [5E] [43] [44]` | 'D' → plain copy |
+| 6 | `[7E] [41] [42] [7D] [5E] [43] [44] [7D] [5D]` | 0x7D (escape) → escape 0x7D + 0x5D (0x7D XOR 0x20) |
+| 7 | `[7E] [41] [42] [7D] [5E] [43] [44] [7D] [5D] [45]` | 'E' → plain copy |
+| 8 | `[7E] [41] [42] [7D] [5E] [43] [44] [7D] [5D] [45] [46]` | 'F' → plain copy |
 | 9 | `[7E] [41] [42] [7D] [5E] [43] [44] [7D] [5D] [45] [46] [7E]` | End flag |
 
 Receiver processing:
@@ -345,14 +345,14 @@ Receiver processing:
 | 2 | 0x41 | Normal byte, append | `[41]` |
 | 3 | 0x42 | Normal byte, append | `[41, 42]` |
 | 4 | 0x7D | Escape detected | `[41, 42]` |
-| 5 | 0x5E | XOR with 0x20 â†’ 0x7E, append | `[41, 42, 7E]` |
+| 5 | 0x5E | XOR with 0x20 → 0x7E, append | `[41, 42, 7E]` |
 | 6 | 0x43 | Normal byte, append | `[41, 42, 7E, 43]` |
 | 7 | 0x44 | Normal byte, append | `[41, 42, 7E, 43, 44]` |
 | 8 | 0x7D | Escape detected | `[41, 42, 7E, 43, 44]` |
-| 9 | 0x5D | XOR with 0x20 â†’ 0x7D, append | `[41, 42, 7E, 43, 44, 7D]` |
+| 9 | 0x5D | XOR with 0x20 → 0x7D, append | `[41, 42, 7E, 43, 44, 7D]` |
 | 10 | 0x45 | Normal byte, append | `[41, 42, 7E, 43, 44, 7D, 45]` |
 | 11 | 0x46 | Normal byte, append | `[41, 42, 7E, 43, 44, 7D, 45, 46]` |
-| 12 | 0x7E | End flag â†’ deliver payload | `[41,42,7E,43,44,7D,45,46]` âœ“ |
+| 12 | 0x7E | End flag → deliver payload | `[41,42,7E,43,44,7D,45,46]` âœ“ |
 
 #### Complexity Analysis
 
@@ -360,26 +360,26 @@ Receiver processing:
 |-----------|------|-------|-----|
 | Sender stuffing | O(n) | O(n) worst-case output | Scans every byte; worst-case every byte is flag/escape doubles output |
 | Receiver unstuffing | O(n) | O(n) output | Single pass; each input byte produces at most one output byte |
-| Overhead ratio | Variable | â€” | Worst case: 100% (payload is all flags); best case: 0% (no flags) |
+| Overhead ratio | Variable | → | Worst case: 100% (payload is all flags); best case: 0% (no flags) |
 
 #### A&D Table
 
 | Aspect | Detail |
 |--------|--------|
-| Advantage | Self-synchronizing â€” receiver can find the next flag after any error |
+| Advantage | Self-synchronizing → receiver can find the next flag after any error |
 | Advantage | Byte-aligned; simple to implement in software |
-| Disadvantage | Variable overhead â€” worst case 100% blowup (payload of all 0x7E bytes) |
+| Disadvantage | Variable overhead → worst case 100% blowup (payload of all 0x7E bytes) |
 | Disadvantage | Bit-level efficiency lower than bit stuffing on random data |
 
 #### Edge Cases
 
 | Edge Case | Behavior |
 |-----------|----------|
-| Corrupted escape byte | Next byte treated as data â†’ receiver may miss end flag or misinterpret data |
-| Flag in payload | Properly escaped via 0x7D 0x5E â€” no ambiguity |
-| Escape + flag in payload | Double escape: 0x7D â†’ 0x7D 0x5D, 0x7E â†’ 0x7D 0x5E |
+| Corrupted escape byte | Next byte treated as data → receiver may miss end flag or misinterpret data |
+| Flag in payload | Properly escaped via 0x7D 0x5E → no ambiguity |
+| Escape + flag in payload | Double escape: 0x7D → 0x7D 0x5D, 0x7E → 0x7D 0x5E |
 | Consecutive flags in payload | Each gets escaped independently |
-| Missing end flag | Receiver reads until next flag in stream â†’ may consume subsequent frame's data |
+| Missing end flag | Receiver reads until next flag in stream → may consume subsequent frame's data |
 | Corrupted flag byte | Frame never terminated; same as missing end flag |
 
 ### 3.2.3 Bit Stuffing
@@ -393,12 +393,12 @@ A radio protocol says "raise your hand if you hear 5 consecutive beeps." The tra
 1. A unique **flag pattern** (typically `01111110` = 0x7E) marks frame boundaries.
 2. The sender monitors the bit stream during transmission.
 3. After any sequence of **five consecutive 1s**, the sender inserts a `0` bit (stuff bit).
-4. This guarantees that no payload data ever contains `01111110` â€” the flag pattern.
+4. This guarantees that no payload data ever contains `01111110` → the flag pattern.
 5. The sender transmits: `[FLAG] [STUFFED PAYLOAD] [FLAG]`
 6. The receiver finds the flag to synchronize.
 7. After receiving five consecutive 1s, the receiver checks the next bit:
    - If `0`: unstuff (remove this 0) and continue.
-   - If `1`: check the 7th bit. If `0` â†’ `01111110` = flag found. If `1` â†’ error (8+ consecutive 1s = abort sequence in HDLC).
+   - If `1`: check the 7th bit. If `0` → `01111110` = flag found. If `1` → error (8+ consecutive 1s = abort sequence in HDLC).
 
 #### Detailed Example
 
@@ -411,10 +411,10 @@ Sender processing (bit by bit):
 | 1-5 | `11111` | Sent bits 1-5. Five consecutive 1s! Insert stuffed 0. |
 | 6 | `111110` | The stuffed 0. |
 | 7 | `1111100` | Data bit 0 |
-| 8-12 | `11111001 1111` | Data bits 1111 â†’ now we have `11111` again â†’ insert stuffed 0 |
+| 8-12 | `11111001 1111` | Data bits 1111 → now we have `11111` again → insert stuffed 0 |
 | 13 | `1111100111110` | Stuffed 0 |
 | 14-16 | `111110011111011` | Data bits 11 |
-| 17-21 | `111110011111011111` | Data bits 11111 â†’ five 1s â†’ insert stuffed 0 |
+| 17-21 | `111110011111011111` | Data bits 11111 → five 1s → insert stuffed 0 |
 | 22 | `1111100111110111110` | Stuffed 0 |
 | 23-24 | `111110011111011111010` | Data bits 10 |
 
@@ -453,17 +453,17 @@ PROCEDURE bit_stuff_receive()
         if ones_count == 5
           next = PHY_read_bit()
           if next == 0
-            // Stuffed bit â€” discard
+            // Stuffed bit → discard
             ones_count = 0
           else
             // Next bit determines: flag vs error
             next2 = PHY_read_bit()
             if next2 == 0
-              // 01111110 â†’ flag found
+              // 01111110 → flag found
               deliver(payload)
               break
             else
-              // 01111111 â†’ abort (8+ ones)
+              // 01111111 → abort (8+ ones)
               error("Abort sequence detected")
             end
           end
@@ -486,7 +486,7 @@ Payload: 5 bits `11111` followed by 6 bits `011111` followed by 5 bits `11110`
 
 | Step | Bit Sent | Action | Sender's Ones Counter | Transmitted Bitstream |
 |------|---------|--------|----------------------|----------------------|
-| 0 | â€” | Start flag | 0 | `01111110` |
+| 0 | → | Start flag | 0 | `01111110` |
 | 1 | 1 | Data | 1 | `01111110 1` |
 | 2 | 1 | Data | 2 | `01111110 11` |
 | 3 | 1 | Data | 3 | `01111110 111` |
@@ -508,14 +508,14 @@ Payload: 5 bits `11111` followed by 6 bits `011111` followed by 5 bits `11110`
 | 19 | **0** | **Stuff bit** | 0 | `01111110 11111001 11110 111110` |
 | 20 | 1 | Data | 1 | `01111110 11111001 11110 1111101` |
 | 21 | 0 | Data | 0 | `01111110 11111001 11110 11111010` |
-| 22 | â€” | End flag | 0 | `01111110 11111001 11110 11111010 01111110` |
+| 22 | → | End flag | 0 | `01111110 11111001 11110 11111010 01111110` |
 
 Receiver unstuffing:
 
 | Step | Read Bits | Payload Accumulated | Ones Counter | Action |
 |------|-----------|-------------------|--------------|--------|
-| 1 | 0 | â€” | 0 | Waiting for flag |
-| 2 | 111110 | â€” | â€” | Flag `01111110` detected â†’ start |
+| 1 | 0 | → | 0 | Waiting for flag |
+| 2 | 111110 | → | → | Flag `01111110` detected → start |
 | 3 | 1 | [1] | 1 | Data |
 | 4 | 1 | [11] | 2 | Data |
 | 5 | 1 | [111] | 3 | Data |
@@ -537,36 +537,36 @@ Receiver unstuffing:
 | 21 | **0** | [111110111111111] | 0 | **Unstuff:** discard this 0 |
 | 22 | 1 | [1111101111111111] | 1 | Data |
 | 23 | 0 | [11111011111111110] | 0 | Data |
-| 24 | 0 | â€” | â€” | Flag `01111110` detected â†’ end |
+| 24 | 0 | → | → | Flag `01111110` detected → end |
 
-Final extracted payload: `11111011111111110` â€” matches original input exactly.
+Final extracted payload: `11111011111111110` → matches original input exactly.
 
 #### Complexity Analysis
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| Sender stuffing | O(n) | O(n) worst-case | Single pass; worst case adds 1 bit per 5 â†’ 25% overhead |
+| Sender stuffing | O(n) | O(n) worst-case | Single pass; worst case adds 1 bit per 5 → 25% overhead |
 | Receiver unstuffing | O(n) | O(1) | Single pass; discard stuff bits on the fly |
-| Overhead ratio | Bounded | â€” | Max 16.7% (1 stuff bit per 6 transmitted bits) on worst-case payload (all 1s) |
+| Overhead ratio | Bounded | → | Max 16.7% (1 stuff bit per 6 transmitted bits) on worst-case payload (all 1s) |
 
 #### A&D Table
 
 | Aspect | Detail |
 |--------|--------|
-| Advantage | Bounded overhead â€” at most 1 bit per 5 data bits (20% expansion worst case) |
-| Advantage | Content-independent â€” overhead does NOT depend on payload patterns |
-| Advantage | Self-synchronizing after error â€” receiver finds next flag |
-| Disadvantage | Bit-level processing â€” harder in software than byte stuffing |
+| Advantage | Bounded overhead → at most 1 bit per 5 data bits (20% expansion worst case) |
+| Advantage | Content-independent → overhead does NOT depend on payload patterns |
+| Advantage | Self-synchronizing after error → receiver finds next flag |
+| Disadvantage | Bit-level processing → harder in software than byte stuffing |
 | Disadvantage | Slightly more complex state machine (5-bit counter + flag detection) |
 
 #### Edge Cases
 
 | Edge Case | Behavior |
 |-----------|----------|
-| All-1s payload | Every 5 bits gets a stuffed 0 â†’ 20% overhead, receiver correctly unstuffs all |
-| Abort sequence (01111111) | HDLC: 7+ consecutive 1s = abort â€” receiver discards frame |
-| Idle sequence (01111110) | Continuous flags sent when link idle â†’ receiver stays synchronized |
-| Bit error in stuffed bit | Receiver sees 5 ones + 1 (corrupted 0 to 1) â†’ interprets next 2 bits as flag/abort check |
+| All-1s payload | Every 5 bits gets a stuffed 0 → 20% overhead, receiver correctly unstuffs all |
+| Abort sequence (01111111) | HDLC: 7+ consecutive 1s = abort → receiver discards frame |
+| Idle sequence (01111110) | Continuous flags sent when link idle → receiver stays synchronized |
+| Bit error in stuffed bit | Receiver sees 5 ones + 1 (corrupted 0 to 1) → interprets next 2 bits as flag/abort check |
 | Flag appears across frame boundary | Impossible by construction (stuffing prevents 01111110 in payload) |
 
 ---
@@ -576,20 +576,20 @@ Final extracted payload: `11111011111111110` â€” matches original input exa
 | Criterion | Character Count | Byte Stuffing | Bit Stuffing |
 |-----------|----------------|---------------|--------------|
 | **Overhead** | 1 byte per frame (fixed) | Variable: 0-100% depending on payload | Bounded: max 20% (1 bit per 5 data bits) |
-| **Error recovery** | Impossible â€” single error desyncs permanently | Self-synchronizing â€” next flag resyncs | Self-synchronizing â€” next flag resyncs |
+| **Error recovery** | Impossible → single error desyncs permanently | Self-synchronizing → next flag resyncs | Self-synchronizing → next flag resyncs |
 | **Processing** | Byte-granular, O(1) | Byte-granular, O(n) | Bit-granular, O(n) |
 | **Worst-case expansion** | None | 2Ã— (payload all 0x7E) | 1.2Ã— (payload all 1s) |
 | **Complexity** | Simplest | Moderate | Most complex (bit manipulation) |
 | **Used in** | Legacy Bisync | PPP, SLIP | HDLC, SDLC, USB |
 | **Protocol examples** | IBM Bisync (1960s) | PPP (RFC 1661) | HDLC (ISO 13239) |
 
-**Pro Tip:** Bit stuffing is the preferred method for modern link protocols because (1) overhead is predictable and bounded regardless of payload content and (2) it self-synchronizes after any error â€” the receiver simply scans for the next `01111110` flag. Byte stuffing is simpler to implement (byte-aligned) but its overhead can spike to 100% if the payload contains many flag bytes (common in binary protocols carrying raw 0x7E bytes like JPEG or encrypted streams).
+**Pro Tip:** Bit stuffing is the preferred method for modern link protocols because (1) overhead is predictable and bounded regardless of payload content and (2) it self-synchronizes after any error → the receiver simply scans for the next `01111110` flag. Byte stuffing is simpler to implement (byte-aligned) but its overhead can spike to 100% if the payload contains many flag bytes (common in binary protocols carrying raw 0x7E bytes like JPEG or encrypted streams).
 
 ---
 
 ## 3.3 Error Detection
 
-Error detection codes add redundant bits to each frame so the receiver can verify integrity. The three main approaches â€” parity, checksum, and CRC â€” trade off strength, complexity, and overhead.
+Error detection codes add redundant bits to each frame so the receiver can verify integrity. The three main approaches → parity, checksum, and CRC → trade off strength, complexity, and overhead.
 
 ### 3.3.1 Parity
 
@@ -610,17 +610,17 @@ A single parity bit is appended to a data block such that the total number of 1 
 2. For even parity: if count is even, set parity = 0; if odd, set parity = 1.
 3. Append or prepend the parity bit to the data.
 4. Receiver counts 1s in received data + parity bit.
-5. If even parity was used and count is odd â†’ error detected.
+5. If even parity was used and count is odd → error detected.
 
 #### Example
 
 Data: `1011011` (five 1s)
 Even parity: parity = 1 (makes total 1s = 6, even)
 Transmitted: `10110111`
-Receiver: counts 1s â†’ 6 (even) â†’ no error detected
+Receiver: counts 1s → 6 (even) → no error detected
 
 If single-bit error: `10110101` (bit 6 flipped)
-Receiver: counts 1s â†’ 5 (odd) â†’ error detected
+Receiver: counts 1s → 5 (odd) → error detected
 
 #### Pseudocode
 
@@ -648,10 +648,10 @@ END
 |------|---------|-------------|-------------|-------------|-------------|-----------|
 | 0000000 | 0 | 0 | 00000000 | 00001000 | 1 | Yes |
 | 1010101 | 4 | 0 | 10101010 | 10101000 | 3 | Yes |
-| 1111111 | 7 | 1 | 11111111 | 11111101 | 7 | No (even â†’ missed!) |
+| 1111111 | 7 | 1 | 11111111 | 11111101 | 7 | No (even → missed!) |
 | 1100110 | 4 | 0 | 11001100 | 11001100 | 4 | No (no error) |
 
-Note: 1111111 with two errors â†’ 11110111 (4 ones) â†’ even â†’ error NOT detected!
+Note: 1111111 with two errors → 11110111 (4 ones) → even → error NOT detected!
 
 #### Two-Dimensional Parity
 
@@ -675,7 +675,7 @@ A single-bit error at position (2,3) flips that bit. Row 2 parity check fails; c
 |-----------|------|-------|-----|
 | Single-bit parity | O(n) | O(1) | Must scan all bits once |
 | 2D parity | O(n) | O(âˆšn) | Row and column parity buffers |
-| Detection strength | 50% of error patterns | â€” | Odd-count errors caught; even-count errors missed |
+| Detection strength | 50% of error patterns | → | Odd-count errors caught; even-count errors missed |
 
 #### A&D Table
 
@@ -683,16 +683,16 @@ A single-bit error at position (2,3) flips that bit. Row 2 parity check fails; c
 |--------|--------|
 | Advantage | Minimal overhead (1 bit per frame); simplest error detection scheme |
 | Advantage | 2D parity can correct single-bit errors |
-| Disadvantage | **Misses all even-count errors** â€” including all 2-bit errors |
+| Disadvantage | **Misses all even-count errors** → including all 2-bit errors |
 | Disadvantage | No burst error detection capability |
 
 #### Edge Cases
 
 | Edge Case | Behavior |
 |-----------|----------|
-| Two-bit error (both in same row, different columns) | Row parity correct (even # flips per row), two column parity fails â†’ detected |
+| Two-bit error (both in same row, different columns) | Row parity correct (even # flips per row), two column parity fails → detected |
 | Two-bit error (both in same row AND column) | Impossible (two bits can't occupy same position) |
-| Four-bit error forming rectangle | All rows and columns have even number of flips â†’ **undetected** |
+| Four-bit error forming rectangle | All rows and columns have even number of flips → **undetected** |
 | Burst error (odd count) | Always detected by single-bit parity |
 | Burst error (even count) | Always missed by single-bit parity |
 
@@ -700,7 +700,7 @@ A single-bit error at position (2,3) flips that bit. Row 2 parity check fails; c
 
 #### Real-World Analogy
 
-An invoice lists line items and a "sum total" at the bottom. The recipient adds up all line items independently. If the total doesn't match the stated sum, someone made an error. The Internet checksum is essentially this â€” but using 16-bit words and one's complement arithmetic to catch transpositions and reorderings that a simple sum would miss.
+An invoice lists line items and a "sum total" at the bottom. The recipient adds up all line items independently. If the total doesn't match the stated sum, someone made an error. The Internet checksum is essentially this → but using 16-bit words and one's complement arithmetic to catch transpositions and reorderings that a simple sum would miss.
 
 #### Internet Checksum (Used in TCP/UDP/IP)
 
@@ -708,7 +708,7 @@ An invoice lists line items and a "sum total" at the bottom. The recipient adds 
 
 1. Divide the data into 16-bit words.
 2. Sum all words using one's complement arithmetic (add with carry; if carry out, add the carry back in).
-3. Take the one's complement of the result (invert all bits) â†’ this is the checksum.
+3. Take the one's complement of the result (invert all bits) → this is the checksum.
 4. Transmitter sends data + checksum.
 5. Receiver performs the same sum over data + checksum.
 6. If the result is all 1s (0xFFFF in one's complement), no error detected.
@@ -722,7 +722,7 @@ Data (4 words): `0x1234, 0x5678, 0x9ABC, 0xDEF0`
 | 1 | Initialize sum | 0x0000 |
 | 2 | Add 0x1234 | 0x1234 |
 | 3 | Add 0x5678 | 0x68AC |
-| 4 | Add 0x9ABC | 0x1 0348 â†’ wrap: 0x0348 + 0x0001 = 0x0349 |
+| 4 | Add 0x9ABC | 0x1 0348 → wrap: 0x0348 + 0x0001 = 0x0349 |
 | 5 | Add 0xDEF0 | 0xE239 |
 | 6 | One's complement | ~0xE239 = 0x1DC6 |
 | 7 | Checksum = 0x1DC6 | Transmitted with data |
@@ -733,7 +733,7 @@ Receiver verification:
 |------|-----------|--------|
 | 1 | Sum data + checksum: 0x1234 + 0x5678 + 0x9ABC + 0xDEF0 + 0x1DC6 | 0x2 FFFD |
 | 2 | Wrap carry: 0xFFFD + 0x0002 | 0xFFFF |
-| 3 | Complement: ~0xFFFF = 0x0000 | All zeros â†’ no error |
+| 3 | Complement: ~0xFFFF = 0x0000 | All zeros → no error |
 
 #### Pseudocode
 
@@ -773,7 +773,7 @@ Data (8 bytes): 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08
 | 0x0506 | 0x0506 | 0x090C |
 | 0x0708 | 0x0708 | 0x1014 |
 | Complement | ~0x1014 = 0xEFEB | Checksum = 0xEFEB |
-| Verification sum: 0x0102 + 0x0304 + 0x0506 + 0x0708 + 0xEFEB | | 0x1 0000 â†’ wrap: 0x0000 + 0x0001 = 0xFFFF âœ“ |
+| Verification sum: 0x0102 + 0x0304 + 0x0506 + 0x0708 + 0xEFEB | | 0x1 0000 → wrap: 0x0000 + 0x0001 = 0xFFFF âœ“ |
 
 #### Complexity Analysis
 
@@ -781,7 +781,7 @@ Data (8 bytes): 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08
 |-----------|------|-------|-----|
 | Checksum computation | O(n) | O(1) | Sequential 16-bit adds; constant register space |
 | Checksum verification | O(n) | O(1) | Same as computation |
-| Detection strength | Strong for odd-bit errors | â€” | One's complement catches transpositions better than simple sum |
+| Detection strength | Strong for odd-bit errors | → | One's complement catches transpositions better than simple sum |
 
 #### A&D Table
 
@@ -790,8 +790,8 @@ Data (8 bytes): 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08
 | Advantage | Simple to compute in software (16-bit addition) |
 | Advantage | Catches all odd-count bit errors and most systematic even-count errors |
 | Advantage | Very low overhead (2 bytes per packet for TCP/UDP) |
-| Disadvantage | Weaker than CRC for burst errors â€” does NOT guarantee detection of all 2-bit errors |
-| Disadvantage | Byte order dependent â€” requires network byte order convention |
+| Disadvantage | Weaker than CRC for burst errors → does NOT guarantee detection of all 2-bit errors |
+| Disadvantage | Byte order dependent → requires network byte order convention |
 | Disadvantage | Not suitable for link-layer use over noisy channels (Ethernet uses CRC-32) |
 
 #### Edge Cases
@@ -800,8 +800,8 @@ Data (8 bytes): 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08
 |-----------|----------|
 | Word alignment | Data must be padded to 16-bit boundary (pseudo-header adds extra bytes) |
 | All-zero data | Checksum = 0xFFFF (complement of sum = 0x0000); special case: checksum = 0 means "no checksum" |
-| Checksum field itself corrupted | Receiver's sum won't be 0xFFFF â†’ error detected |
-| Specific bit cancellation | Rare: two bit errors at positions that cancel in addition â†’ undetected |
+| Checksum field itself corrupted | Receiver's sum won't be 0xFFFF → error detected |
+| Specific bit cancellation | Rare: two bit errors at positions that cancel in addition → undetected |
 
 ### 3.3.3 Cyclic Redundancy Check (CRC)
 
@@ -817,11 +817,11 @@ Imagine you and a friend agree on a secret divisor number (e.g., 7). You have a 
 4. Divide $D(x) \cdot x^k$ by $G(x)$ using binary polynomial division (XOR, no carry).
 5. The remainder $R(x)$ (degree < k) is the CRC checksum.
 6. Transmit the original data followed by the remainder: $D(x) \cdot x^k + R(x)$.
-7. Receiver divides the received polynomial by $G(x)$. Non-zero remainder â†’ error detected.
+7. Receiver divides the received polynomial by $G(x)$. Non-zero remainder → error detected.
 
 #### Worked Example: CRC-3 with G(x) = xÂ³ + x + 1 (binary 1011)
 
-Data: `1101` (binary) â†’ $D(x) = x^3 + x^2 + 1$
+Data: `1101` (binary) → $D(x) = x^3 + x^2 + 1$
 
 **Step 1: Append k=3 zeros**
 Data with zeros: `1101000`
@@ -866,10 +866,10 @@ We divide `1101000` by `1011`:
         1011
         1011
         ----
-         0000  â† zero remainder â†’ accepted
+         0000  â† zero remainder → accepted
 ```
 
-**Error scenario:** Bit 3 flips â†’ received = `1111101`
+**Error scenario:** Bit 3 flips → received = `1111101`
 
 ```
       1101
@@ -882,7 +882,7 @@ We divide `1101000` by `1011`:
          010
          000
          ---
-          101 â† non-zero remainder â†’ error detected!
+          101 â† non-zero remainder → error detected!
 ```
 
 #### Pseudocode
@@ -1045,7 +1045,7 @@ print(f"Error detected: {crc != crc2}")
 | CRC hardware implementation | O(n/k) | O(k) registers | Parallel CRC computation in 1 clock per word |
 | Detection strength | O(1) check | O(1) | Single polynomial division |
 
-**Why CRC is fast in hardware:** The shift register XOR feedback can be implemented with k flip-flops and a few XOR gates. Each bit clocks through in one cycle â€” the entire check takes n cycles for n bits, matching the line rate.
+**Why CRC is fast in hardware:** The shift register XOR feedback can be implemented with k flip-flops and a few XOR gates. Each bit clocks through in one cycle → the entire check takes n cycles for n bits, matching the line rate.
 
 #### A&D Table
 
@@ -1054,7 +1054,7 @@ print(f"Error detected: {crc != crc2}")
 | Advantage | Detects ALL bursts of length â‰¤ k (where k = degree of generator) |
 | Advantage | Detects all single-bit errors, all double-bit errors (if G(x) is primitive) |
 | Advantage | Detects all odd-count errors |
-| Advantage | Extremely efficient in hardware â€” simple shift register implementation |
+| Advantage | Extremely efficient in hardware → simple shift register implementation |
 | Disadvantage | More complex in software than checksum (requires bit manipulation) |
 | Disadvantage | Finite probability of undetected error for bursts > k: $1/2^{k}$ |
 
@@ -1062,7 +1062,7 @@ print(f"Error detected: {crc != crc2}")
 
 | Edge Case | Behavior |
 |-----------|----------|
-| CRC collision | Probability of undetected error: $1/2^{32}$ for CRC-32 â€” extremely low |
+| CRC collision | Probability of undetected error: $1/2^{32}$ for CRC-32 → extremely low |
 | Burst error > k bits | Detection probability: $1 - 1/2^{k}$ for long bursts; $1 - 1/2^{k-1}$ for bursts starting with 1 |
 | Generator polynomial selection | Must be primitive to guarantee 2-bit detection; some standard polys are suboptimal |
 | CRC of all-zero data | Non-zero (0x00000000 only if initial value was 0 and no final XOR) |
@@ -1084,7 +1084,7 @@ print(f"Error detected: {crc != crc2}")
 | **Hardware cost** | 1 XOR gate | Adder + complement | Shift register + XOR gates |
 | **Used where** | UART, low-cost links | TCP/UDP/IP headers | Ethernet, Wi-Fi, storage |
 
-**Pro Tip:** CRC-32 is the gold standard for link-layer error detection. The Internet checksum is deliberately weaker â€” it was designed to be computed in software on 1970s CPUs (a 16-bit add is one instruction). Never use a checksum where CRC is feasible. The $1/2^{32}$ undetected-error probability of CRC-32 means a 10 Gbps link running at full capacity would see an undetected error roughly once every 30 years â€” acceptable for virtually all applications.
+**Pro Tip:** CRC-32 is the gold standard for link-layer error detection. The Internet checksum is deliberately weaker → it was designed to be computed in software on 1970s CPUs (a 16-bit add is one instruction). Never use a checksum where CRC is feasible. The $1/2^{32}$ undetected-error probability of CRC-32 means a 10 Gbps link running at full capacity would see an undetected error roughly once every 30 years → acceptable for virtually all applications.
 
 ---
 
@@ -1092,7 +1092,7 @@ print(f"Error detected: {crc != crc2}")
 
 ### Real-World Analogy
 
-A teacher reads an answer aloud, and each student writes it down. Instead of one "check digit," the teacher adds multiple strategically placed check digits â€” each "covering" a different overlapping subset of answer positions. If a student hears one wrong letter, the pattern of broken checks tells the teacher exactly which position was garbled, and the student corrects it on the spot.
+A teacher reads an answer aloud, and each student writes it down. Instead of one "check digit," the teacher adds multiple strategically placed check digits → each "covering" a different overlapping subset of answer positions. If a student hears one wrong letter, the pattern of broken checks tells the teacher exactly which position was garbled, and the student corrects it on the spot.
 
 ### How It Works (Numbered Steps)
 
@@ -1102,7 +1102,7 @@ A teacher reads an answer aloud, and each student writes it down. Instead of one
 4. Set each parity bit to make the XOR (or parity) of its covered positions even.
 5. Transmit the codeword (data + parity bits).
 6. Receiver recomputes parity for each group.
-7. The pattern of failed parity checks, read as a binary number (syndrome), gives the position of the error â€” flip that bit to correct.
+7. The pattern of failed parity checks, read as a binary number (syndrome), gives the position of the error → flip that bit to correct.
 
 ### Example: (7,4) Hamming Code
 
@@ -1122,20 +1122,20 @@ Given data bits D3=1, D5=0, D6=1, D7=0:
 | Value | ? | ? | 1 | ? | 0 | 1 | 0 |
 
 Compute parity:
-- p1 covers {1,3,5,7}: p1 âŠ• 1 âŠ• 0 âŠ• 0 = 0 â†’ p1 = 1
-- p2 covers {2,3,6,7}: p2 âŠ• 1 âŠ• 1 âŠ• 0 = 0 â†’ p2 = 0
-- p4 covers {4,5,6,7}: p4 âŠ• 0 âŠ• 1 âŠ• 0 = 0 â†’ p4 = 1
+- p1 covers {1,3,5,7}: p1 âŠ• 1 âŠ• 0 âŠ• 0 = 0 → p1 = 1
+- p2 covers {2,3,6,7}: p2 âŠ• 1 âŠ• 1 âŠ• 0 = 0 → p2 = 0
+- p4 covers {4,5,6,7}: p4 âŠ• 0 âŠ• 1 âŠ• 0 = 0 → p4 = 1
 
 Transmitted codeword: `1 0 1 1 0 1 0` (positions 1-7)
 
-If position 5 flips (0 â†’ 1), received = `1 0 1 1 1 1 0`
+If position 5 flips (0 → 1), received = `1 0 1 1 1 1 0`
 
 **Syndrome calculation:**
-- p1 check: 1 âŠ• 1 âŠ• 1 âŠ• 0 = 1 â†’ fails (syndrome bit 0 = 1)
-- p2 check: 0 âŠ• 1 âŠ• 1 âŠ• 0 = 0 â†’ passes (syndrome bit 1 = 0)
-- p4 check: 1 âŠ• 1 âŠ• 1 âŠ• 0 = 1 â†’ fails (syndrome bit 2 = 1)
+- p1 check: 1 âŠ• 1 âŠ• 1 âŠ• 0 = 1 → fails (syndrome bit 0 = 1)
+- p2 check: 0 âŠ• 1 âŠ• 1 âŠ• 0 = 0 → passes (syndrome bit 1 = 0)
+- p4 check: 1 âŠ• 1 âŠ• 1 âŠ• 0 = 1 → fails (syndrome bit 2 = 1)
 
-Syndrome = `101` binary = 5 â†’ position 5 is the error! Flip it back to 0.
+Syndrome = `101` binary = 5 → position 5 is the error! Flip it back to 0.
 
 ### Pseudocode
 
@@ -1317,7 +1317,7 @@ class HammingCode:
                 syndrome |= (1 << i)
 
         if syndrome != 0 and syndrome <= self.n:
-            print(f"  Syndrome = {syndrome} â†’ correcting bit {syndrome}")
+            print(f"  Syndrome = {syndrome} → correcting bit {syndrome}")
             received[syndrome] ^= 1
 
         data = []
@@ -1351,7 +1351,7 @@ decoded2 = h.decode(code2)  # syndrome may be incorrect
 print(f"\nDouble-bit error test:")
 print(f"  With 2 errors: {code2[1:]}")
 print(f"  Decoded:       {decoded2}")
-print(f"  Correct?       {decoded2 == data} (likely wrong â€” Hamming corrects only 1)")
+print(f"  Correct?       {decoded2 == data} (likely wrong → Hamming corrects only 1)")
 ```
 
 #### Complexity Analysis
@@ -1361,16 +1361,16 @@ print(f"  Correct?       {decoded2 == data} (likely wrong â€” Hamming corre
 | Encoding | O(rÂ·n) = O(log n Â· n) | O(n) | For each parity bit r, scan all n positions |
 | Syndrome calculation | O(rÂ·n) = O(log n Â· n) | O(1) | Recompute parity for each of r groups |
 | Decoding + correction | O(n) | O(n) | After syndrome, single flip at known position |
-| Lookup-table decode | O(1) | O(2^n) | Syndrome â†’ position map; exponential space |
+| Lookup-table decode | O(1) | O(2^n) | Syndrome → position map; exponential space |
 
-**Why O(rÂ·n):** Each of the $r \approx \log_2 n$ parity groups covers roughly half the codeword. So each group requires scanning $n/2$ positions on average â†’ total $O(r \cdot n/2) = O(n \log n)$. For (7,4): r=3, n=7 â†’ 21 parity checks total.
+**Why O(rÂ·n):** Each of the $r \approx \log_2 n$ parity groups covers roughly half the codeword. So each group requires scanning $n/2$ positions on average → total $O(r \cdot n/2) = O(n \log n)$. For (7,4): r=3, n=7 → 21 parity checks total.
 
 #### A&D Table
 
 | Aspect | Detail |
 |--------|--------|
 | Advantage | Corrects single-bit errors without retransmission |
-| Advantage | Detects double-bit errors (with extra parity bit â€” extended Hamming) |
+| Advantage | Detects double-bit errors (with extra parity bit → extended Hamming) |
 | Advantage | Minimal redundancy: $2^r \ge m + r + 1$ |
 | Disadvantage | Only corrects single-bit errors; multi-bit errors may be miscorrected |
 | Disadvantage | Higher overhead than CRC when retransmission is feasible |
@@ -1381,12 +1381,12 @@ print(f"  Correct?       {decoded2 == data} (likely wrong â€” Hamming corre
 | Edge Case | Behavior |
 |-----------|----------|
 | Single-bit error at parity bit position | Syndrome identifies the parity bit's position; flipping it corrects (no data corruption) |
-| Two-bit error | Syndrome = XOR of two positions; correction "fixes" wrong bit â†’ third error introduced |
-| Three-bit error | Can appear as a single-bit error (syndrome matches a real position) â†’ miscorrection |
-| Error at position 0 (doesn't exist) | Syndrome = 0 â†’ no correction attempted; but error still present in data |
-| Burst error > 1 bit | Hamming cannot correct â€” use CRC for detection + ARQ for retransmission |
+| Two-bit error | Syndrome = XOR of two positions; correction "fixes" wrong bit → third error introduced |
+| Three-bit error | Can appear as a single-bit error (syndrome matches a real position) → miscorrection |
+| Error at position 0 (doesn't exist) | Syndrome = 0 → no correction attempted; but error still present in data |
+| Burst error > 1 bit | Hamming cannot correct → use CRC for detection + ARQ for retransmission |
 
-**Pro Tip:** Hamming codes are rarely used in networking (CRC + retransmission is simpler for link-layer errors). Their primary application is ECC memory (DDR4/5 uses SECDED â€” Single Error Correction, Double Error Detection â€” which is an extended Hamming code with an extra parity bit). In memory, retransmission is impossible, so on-the-fly correction is essential.
+**Pro Tip:** Hamming codes are rarely used in networking (CRC + retransmission is simpler for link-layer errors). Their primary application is ECC memory (DDR4/5 uses SECDED → Single Error Correction, Double Error Detection → which is an extended Hamming code with an extra parity bit). In memory, retransmission is impossible, so on-the-fly correction is essential.
 
 
 ## 3.5 Flow Control
@@ -1397,7 +1397,7 @@ Flow control prevents a fast sender from overwhelming a slow receiver. The recei
 
 #### Real-World Analogy
 
-A student sends a letter to a pen pal and waits for a reply before sending the next letter. If the pen pal is on vacation, the student doesn't keep sending â€” they wait. This is simple but means the postal system is idle half the time.
+A student sends a letter to a pen pal and waits for a reply before sending the next letter. If the pen pal is on vacation, the student doesn't keep sending → they wait. This is simple but means the postal system is idle half the time.
 
 #### How It Works (Numbered Steps)
 
@@ -1435,9 +1435,9 @@ Instead of one letter at a time, the student sends up to 5 letters before waitin
 
 #### How It Works (Numbered Steps)
 
-1. The sender maintains a **send window** of size $W$ â€” the maximum number of outstanding (unacknowledged) frames.
+1. The sender maintains a **send window** of size $W$ → the maximum number of outstanding (unacknowledged) frames.
 2. The sender transmits frames as long as the number of outstanding frames < $W$.
-3. The receiver maintains a **receive window** â€” frames it is willing to accept.
+3. The receiver maintains a **receive window** → frames it is willing to accept.
 4. When an ACK arrives, the sender's window slides forward, allowing new frames to be sent.
 5. The receiver's window also slides as frames are delivered to the network layer.
 
@@ -1495,7 +1495,7 @@ PROCEDURE sliding_window_receive()
   while true
     frame = receive()
     if frame.seq > LFR and frame.seq <= LFR + RWS
-      // Within window â€” accept
+      // Within window → accept
       buffer[frame.seq] = frame
       send_ACK(frame.seq)
       // Deliver consecutive frames
@@ -1504,7 +1504,7 @@ PROCEDURE sliding_window_receive()
         LFR++
       end
     else
-      // Outside window â€” discard
+      // Outside window → discard
     end
   end
 END
@@ -1524,7 +1524,7 @@ In full-duplex communication, ACK information can be carried in the header of a 
 
 **How it works:** When station A sends data to B, it includes the ACK for the last frame received from B. If no data frame is ready when an ACK needs to be sent, a standalone ACK frame is used.
 
-**Trade-off:** Piggybacking improves efficiency on bidirectional links but introduces a **piggyback delay** â€” the sender may delay sending the ACK to wait for a data frame, increasing round-trip time.
+**Trade-off:** Piggybacking improves efficiency on bidirectional links but introduces a **piggyback delay** → the sender may delay sending the ACK to wait for a data frame, increasing round-trip time.
 
 ---
 
@@ -1547,7 +1547,7 @@ You radio a friend on a walkie-talkie: "Message 1, over." You release the button
 1. Sender gets frame from network layer, wraps it with sequence number (0 or 1).
 2. Sender transmits the frame, starts a timer.
 3. Two possibilities:
-   - **ACK received:** Sender knows frame arrived intact. Flips seq number (0â†’1 or 1â†’0). Gets next frame.
+   - **ACK received:** Sender knows frame arrived intact. Flips seq number (0→1 or 1→0). Gets next frame.
    - **Timeout:** No ACK within T_out. Sender retransmits the same frame (same seq number).
 4. Receiver checks CRC. If OK, sends ACK with the received seq number. If corrupted, discards.
 5. Receiver checks seq number: if it matches the expected seq, deliver to network layer; if it's a duplicate (same seq as last delivered), discard and re-ACK.
@@ -1586,7 +1586,7 @@ PROCEDURE sw_receiver()
     else if frame.crc_ok and frame.seq != expected_seq
       send_ACK(1 - expected_seq)  // ACK for the frame we already have (duplicate)
     else
-      // CRC failed â€” discard
+      // CRC failed → discard
     end
   end
 END
@@ -1607,7 +1607,7 @@ END
 | Step | Sender Action | Frame Sent | Receiver Action | ACK |
 |------|-------------|-----------|----------------|-----|
 | 1 | Send frame 0, start timer | 0 | CRC OK, deliver | 0 |
-| 2 | Timer expires, no ACK | â€” | â€” | â€” |
+| 2 | Timer expires, no ACK | → | → | → |
 | 3 | Retransmit frame 0 | 0 (dup) | CRC OK (duplicate seq), re-ACK, discard data | 0 |
 | 4 | Receive ACK 0, send frame 1 | 1 | CRC OK, deliver | 1 |
 
@@ -1616,7 +1616,7 @@ END
 | Step | Sender Action | Frame Sent | Receiver Action | ACK |
 |------|-------------|-----------|----------------|-----|
 | 1 | Send frame 0 | 0 | CRC OK, deliver | 0 (lost!) |
-| 2 | Timer expires, no ACK | â€” | â€” | â€” |
+| 2 | Timer expires, no ACK | → | → | → |
 | 3 | Retransmit frame 0 | 0 (dup) | CRC OK (duplicate seq), re-ACK, discard data | 0 |
 | 4 | Receive ACK 0 (belatedly), send frame 1 | 1 | CRC OK, deliver | 1 |
 
@@ -1626,8 +1626,8 @@ Note: Step 3's re-ACK prevents timeout on the second copy of the ACK. The receiv
 
 | Step | Sender Action | Frame Sent | Receiver Action | ACK |
 |------|-------------|-----------|----------------|-----|
-| 1 | Send frame 0 | 0 | CRC FAIL â†’ discard | Nothing |
-| 2 | Timer expires | â€” | â€” | â€” |
+| 1 | Send frame 0 | 0 | CRC FAIL → discard | Nothing |
+| 2 | Timer expires | → | → | → |
 | 3 | Retransmit frame 0 | 0 | CRC OK, deliver | 0 |
 
 #### Stop-and-Wait ARQ: C++ Implementation
@@ -1750,7 +1750,7 @@ class StopWaitARQ:
         self.TIMEOUT = 0.2  # seconds
 
     def send_frame(self, seq_num: int) -> bool:
-        """Simulate sending a frame â€” may be lost."""
+        """Simulate sending a frame → may be lost."""
         print(f"[SENDER] Sending frame {seq_num}... ", end="")
         if self.sim_loss and random.random() < 0.2:
             print("LOST!")
@@ -1759,7 +1759,7 @@ class StopWaitARQ:
         return True
 
     def receive_ack(self) -> int:
-        """Simulate receiving an ACK â€” may be lost."""
+        """Simulate receiving an ACK → may be lost."""
         time.sleep(0.05)
         with self.ack_lock:
             if self.sim_ack_loss and random.random() < 0.25:
@@ -1826,8 +1826,8 @@ if __name__ == "__main__":
 |-----------|------|-------|-----|
 | Sender per frame | O(1) | O(1) | One frame buffer, one timer |
 | Receiver per frame | O(n) for CRC | O(1) | CRC O(n), but no buffering needed |
-| Utilization | O(1/W) | â€” | Inverse of window size; W=1 at a time |
-| Total time per frame | RTT + T_trans | â€” | Must wait for ACK before next frame |
+| Utilization | O(1/W) | → | Inverse of window size; W=1 at a time |
+| Total time per frame | RTT + T_trans | → | Must wait for ACK before next frame |
 
 #### A&D Table
 
@@ -1837,7 +1837,7 @@ if __name__ == "__main__":
 | Advantage | Minimal buffer required (1 frame each at sender and receiver) |
 | Advantage | Duplicate detection with 1-bit sequence number is trivial |
 | Disadvantage | **Extremely inefficient** on high-delay paths (utilization < 0.1% typical) |
-| Disadvantage | Only one frame in flight â€” wastes available bandwidth |
+| Disadvantage | Only one frame in flight → wastes available bandwidth |
 
 #### Edge Cases
 
@@ -1845,16 +1845,16 @@ if __name__ == "__main__":
 |-----------|----------|
 | Lost frame | Timeout triggers retransmission with same seq number |
 | Lost ACK | Timeout triggers retransmission; receiver sees duplicate, re-ACKs |
-| Delayed ACK | Arrives after timeout â†’ duplicate ACK. Sender accepts first ACK, discards second |
-| Premature timeout | Timer shorter than RTT â†’ unnecessary retransmissions |
-| CRC error in ACK | ACK discarded â†’ treated as lost ACK â†’ timeout â†’ retransmission |
+| Delayed ACK | Arrives after timeout → duplicate ACK. Sender accepts first ACK, discards second |
+| Premature timeout | Timer shorter than RTT → unnecessary retransmissions |
+| CRC error in ACK | ACK discarded → treated as lost ACK → timeout → retransmission |
 | Duplicate frame | Receiver discards duplicate data, sends duplicate ACK |
 
 ### 3.6.2 Go-Back-N ARQ
 
 #### Real-World Analogy
 
-A teacher dictates 10 sentences to the class. If a student misses sentence 5, they shout "Stop! From sentence 5!" The teacher goes back to sentence 5 and re-dictates everything from there â€” even sentences 6-10 that some students already have. Simple for the teacher, but wasteful because correctly received sentences are re-sent.
+A teacher dictates 10 sentences to the class. If a student misses sentence 5, they shout "Stop! From sentence 5!" The teacher goes back to sentence 5 and re-dictates everything from there → even sentences 6-10 that some students already have. Simple for the teacher, but wasteful because correctly received sentences are re-sent.
 
 #### How It Works (Numbered Steps)
 
@@ -1874,7 +1874,7 @@ Why minus 1? Without the constraint, the following ambiguity arises:
 - Sender sends frames 0 through $2^k-1$ (window full).
 - All ACKs are lost.
 - After timeout, sender retransmits frame 0.
-- Receiver has already advanced its window past 0 â€” it accepts frame 0 as a **new** frame.
+- Receiver has already advanced its window past 0 → it accepts frame 0 as a **new** frame.
 
 With the $-1$ constraint, the window is small enough that the receiver's window can never overlap with old frames.
 
@@ -1892,7 +1892,7 @@ PROCEDURE gbn_sender()
     while LFS - LAR < SWS
       frames[LFS % N] = make_frame(next_packet(), LFS)
       send(frames[LFS % N])
-      if LAR == LFS       // first frame in window â†’ start timer
+      if LAR == LFS       // first frame in window → start timer
         start_timer()
       LFS++
     end
@@ -1924,7 +1924,7 @@ PROCEDURE gbn_receiver()
       send_ACK(expected_seq)
       expected_seq++
     else
-      // Out of order â†’ must discard
+      // Out of order → must discard
       // Receiver sends ACK for the last in-order frame
       send_ACK(expected_seq - 1)
     end
@@ -1936,22 +1936,22 @@ END
 
 | Time | Sender Action | Sender Window [LAR..LFS] | Receiver Action | ACK |
 |------|-------------|-------------------------|----------------|-----|
-| 0 | Send 0 | [0..0] | â€” | â€” |
+| 0 | Send 0 | [0..0] | → | → |
 | 1 | Send 1 | [0..1] | Recv 0, deliver | ACK 0 |
 | 2 | Send 2 | [0..2] | Recv 1, deliver | ACK 1 |
-| 3 | Send 3 | [0..3] | **Frame 2 LOST** | â€” |
-| 4 | Recv ACK 0 | [0..3] | â€” | â€” |
-| 5 | Recv ACK 1 | [1..3] | â€” | â€” |
-| 6 | â€” | [1..3] | Recv 3, **discard** (out of order) | ACK 1 (cumulative) |
-| 7 | Timer expires (oldest = frame 1) | [1..3] | â€” | â€” |
+| 3 | Send 3 | [0..3] | **Frame 2 LOST** | → |
+| 4 | Recv ACK 0 | [0..3] | → | → |
+| 5 | Recv ACK 1 | [1..3] | → | → |
+| 6 | → | [1..3] | Recv 3, **discard** (out of order) | ACK 1 (cumulative) |
+| 7 | Timer expires (oldest = frame 1) | [1..3] | → | → |
 | 8 | **Retransmit 1, 2, 3** | [1..3] | Recv 1 (already delivered: dup ACK, discard data) | ACK 1 |
-| 9 | â€” | [1..3] | Recv 2, deliver | ACK 2 |
-| 10 | Recv ACK 1 | [1..3] | â€” | â€” |
+| 9 | → | [1..3] | Recv 2, deliver | ACK 2 |
+| 10 | Recv ACK 1 | [1..3] | → | → |
 | 11 | Recv ACK 2 | [2..3] | Recv 3, deliver | ACK 3 |
-| 12 | Send 4 | [2..4] | â€” | â€” |
+| 12 | Send 4 | [2..4] | → | → |
 | 13 | Recv ACK 3 | [3..4] | Recv 4, deliver | ACK 4 |
 
-Key observation: Frame 2 was lost. Even though frame 3 was received correctly, the receiver discarded it because it was out of order. After timeout, the sender retransmitted frames 1, 2, 3 â€” including frame 1 which the receiver already had. This wastes bandwidth.
+Key observation: Frame 2 was lost. Even though frame 3 was received correctly, the receiver discarded it because it was out of order. After timeout, the sender retransmitted frames 1, 2, 3 → including frame 1 which the receiver already had. This wastes bandwidth.
 
 #### Complexity Analysis
 
@@ -1960,16 +1960,16 @@ Key observation: Frame 2 was lost. Even though frame 3 was received correctly, t
 | Sender per frame | O(1) | O(N) | Window buffer of N frames |
 | Sender on timeout | O(N) | O(1) | Retransmits up to N frames |
 | Receiver per frame | O(1) | O(1) | No out-of-order buffering |
-| Bandwidth wasted per error | O(NÂ·L) | â€” | Retransmits N frames Ã— L bits each |
+| Bandwidth wasted per error | O(NÂ·L) | → | Retransmits N frames Ã— L bits each |
 
 #### A&D Table
 
 | Aspect | Detail |
 |--------|--------|
-| Advantage | Simple receiver â€” minimal buffering, no reordering logic |
-| Advantage | Supports continuous transmission â†’ high utilization when error-free |
+| Advantage | Simple receiver → minimal buffering, no reordering logic |
+| Advantage | Supports continuous transmission → high utilization when error-free |
 | Advantage | Cumulative ACKs reduce signaling overhead |
-| Disadvantage | **Wasteful on error-prone links** â€” retransmits many correct frames |
+| Disadvantage | **Wasteful on error-prone links** → retransmits many correct frames |
 | Disadvantage | Receiver discards out-of-order frames (even if no error) |
 | Disadvantage | Window size constraint ($2^k - 1$) wastes one sequence number |
 
@@ -1981,14 +1981,14 @@ Key observation: Frame 2 was lost. Even though frame 3 was received correctly, t
 | Lost ACK | Cumulative ACK from next frame covers it |
 | Burst of losses | Multiple timeout-driven retransmissions |
 | Duplicate ACK | Discarded by sender (only cares about cumulative ack) |
-| ACK corruption | Treated as lost â†’ triggers timeout |
+| ACK corruption | Treated as lost → triggers timeout |
 | Window full | Sender stops transmitting until ACK arrives |
 
 ### 3.6.3 Selective Repeat ARQ
 
 #### Real-World Analogy
 
-A teacher dictates 10 sentences. If a student missed sentence 5, they say "I need sentence 5 again." The teacher sends only sentence 5 â€” students who already have sentences 6-10 keep them. This is more efficient but requires the receiver to have a reorder buffer and the teacher to track which specific sentence each student needs.
+A teacher dictates 10 sentences. If a student missed sentence 5, they say "I need sentence 5 again." The teacher sends only sentence 5 → students who already have sentences 6-10 keep them. This is more efficient but requires the receiver to have a reorder buffer and the teacher to track which specific sentence each student needs.
 
 #### How It Works (Numbered Steps)
 
@@ -2010,7 +2010,7 @@ Why this constraint? Without it, the sender's window and receiver's window could
 - Sender sends frames 0-4. All ACKs are lost.
 - Receiver advances window to 5. Now receiver expects frames 5, 6, 7, 0, 1.
 - Sender times out and retransmits frames 0-4.
-- Receiver accepts frame 0 as a **new** frame â€” data corruption!
+- Receiver accepts frame 0 as a **new** frame → data corruption!
 
 With $SWS + RWS \le 2^k$, this ambiguity cannot occur.
 
@@ -2076,7 +2076,7 @@ PROCEDURE sr_receiver()
         LAF++
       end
     else
-      // Outside window â€” discard
+      // Outside window → discard
       // ACK anyway (for frames below window) to prevent unnecessary timeout
       if frame.seq < LFR
         send_ACK(frame.seq)
@@ -2089,19 +2089,19 @@ END
 
 | Time | Sender Window | Sender Action | Receiver Action | ACK/NAK |
 |------|-------------|-------------|----------------|---------|
-| 0 | [0..3] | Send 0,1,2,3 | â€” | â€” |
-| 1 | [0..3] | â€” | Recv 0, deliver | ACK 0 |
-| 2 | [0..3] | â€” | Recv 1, deliver | ACK 1 |
-| 3 | [0..3] | â€” | **Frame 2 LOST** | â€” |
-| 4 | [0..3] | â€” | Recv 3, **buffer** (out of order) | ACK 3 |
-| 5 | [0..3] | Recv ACK 0 | â€” | â€” |
-| 6 | [0..3] | Recv ACK 1 | â€” | â€” |
-| 7 | [0..3] | Recv ACK 3 | â€” | â€” |
-| 8 | [1..4] | Timer for frame 2 expires | â€” | â€” |
-| 9 | [1..4] | **Retransmit only frame 2** | â€” | â€” |
-| 10 | [1..4] | â€” | Recv 2, deliver buffered 2,3 | ACK 2 |
-| 11 | [1..4] | Recv ACK 2 | Window slides to [4..7] | â€” |
-| 12 | [4..7] | Send 4,5,6,7 | â€” | â€” |
+| 0 | [0..3] | Send 0,1,2,3 | → | → |
+| 1 | [0..3] | → | Recv 0, deliver | ACK 0 |
+| 2 | [0..3] | → | Recv 1, deliver | ACK 1 |
+| 3 | [0..3] | → | **Frame 2 LOST** | → |
+| 4 | [0..3] | → | Recv 3, **buffer** (out of order) | ACK 3 |
+| 5 | [0..3] | Recv ACK 0 | → | → |
+| 6 | [0..3] | Recv ACK 1 | → | → |
+| 7 | [0..3] | Recv ACK 3 | → | → |
+| 8 | [1..4] | Timer for frame 2 expires | → | → |
+| 9 | [1..4] | **Retransmit only frame 2** | → | → |
+| 10 | [1..4] | → | Recv 2, deliver buffered 2,3 | ACK 2 |
+| 11 | [1..4] | Recv ACK 2 | Window slides to [4..7] | → |
+| 12 | [4..7] | Send 4,5,6,7 | → | → |
 
 Key advantage: only frame 2 was retransmitted (not frames 2 and 3 as in Go-Back-N). The buffered frame 3 was delivered without re-receiving.
 
@@ -2113,19 +2113,19 @@ Key advantage: only frame 2 was retransmitted (not frames 2 and 3 as in Go-Back-
 | Sender on timeout | O(1) | O(1) | Only one frame retransmitted |
 | Receiver per frame | O(1) | O(N) | Reorder buffer of size RWS |
 | Receiver on gap fill | O(N) worst | O(1) | May deliver many frames at once |
-| Bandwidth wasted per error | O(L) | â€” | Only L bits of the lost frame |
+| Bandwidth wasted per error | O(L) | → | Only L bits of the lost frame |
 | Timer management | O(log N) | O(N) | Priority queue for N timers |
 
 #### A&D Table
 
 | Aspect | Detail |
 |--------|--------|
-| Advantage | Most bandwidth-efficient ARQ â€” only lost frames are retransmitted |
-| Advantage | Receiver buffers allow out-of-order acceptance â†’ no wasted delivery |
+| Advantage | Most bandwidth-efficient ARQ → only lost frames are retransmitted |
+| Advantage | Receiver buffers allow out-of-order acceptance → no wasted delivery |
 | Advantage | NAK can speed recovery (negative acknowledgment triggers fast retransmit) |
 | Disadvantage | Complex buffer management at both sender and receiver |
 | Disadvantage | Per-frame timers require more OS resources |
-| Disadvantage | Sequence number wastage ($SWS + RWS \le 2^k$ â€” only $2^{k-1}$ usable) |
+| Disadvantage | Sequence number wastage ($SWS + RWS \le 2^k$ → only $2^{k-1}$ usable) |
 
 #### Edge Cases
 
@@ -2164,24 +2164,24 @@ Key advantage: only frame 2 was retransmitted (not frames 2 and 3 as in Go-Back-
 
 | Time (ms) | Event | LAR | LFS | Send Window | ACK Buffer |
 |-----------|-------|-----|-----|-------------|------------|
-| 0 | Send 0 | -1 | 0 | [0,1,2,3] | â€” |
-| 10 | Send 1 | -1 | 1 | [0,1,2,3] | â€” |
-| 20 | Send 2 | -1 | 2 | [0,1,2,3] | â€” |
-| 30 | Send 3 | -1 | 3 | [0,1,2,3] | â€” |
-| 40 | Window full â€” STOP | 0 | 3 | [0,1,2,3] | â€” |
+| 0 | Send 0 | -1 | 0 | [0,1,2,3] | → |
+| 10 | Send 1 | -1 | 1 | [0,1,2,3] | → |
+| 20 | Send 2 | -1 | 2 | [0,1,2,3] | → |
+| 30 | Send 3 | -1 | 3 | [0,1,2,3] | → |
+| 40 | Window full → STOP | 0 | 3 | [0,1,2,3] | → |
 | 100 | Recv ACK 0 | 0 | 3 | [0,1,2,3] | Deliver 0 |
 | 110 | Recv ACK 1 | 1 | 3 | [1,2,3] | Deliver 1 |
 | 120 | Recv ACK 2 | 2 | 3 | [2,3] | Deliver 2 |
 | 130 | Recv ACK 3 | 3 | 3 | [3] | Deliver 3 |
-| 140 | Window slides: send 4 | 3 | 4 | [4] | â€” |
-| 150 | Send 5 | 3 | 5 | [4,5] | â€” |
-| 160 | Send 6 | 3 | 6 | [4,5,6] | â€” |
-| 170 | Send 7 | 3 | 7 | [4,5,6,7] | â€” |
-| 180 | Window full | 3 | 7 | [4,5,6,7] | â€” |
+| 140 | Window slides: send 4 | 3 | 4 | [4] | → |
+| 150 | Send 5 | 3 | 5 | [4,5] | → |
+| 160 | Send 6 | 3 | 6 | [4,5,6] | → |
+| 170 | Send 7 | 3 | 7 | [4,5,6,7] | → |
+| 180 | Window full | 3 | 7 | [4,5,6,7] | → |
 
 Total throughput over 180 ms: 8 frames. Ideal throughput (no errors): $8 / 0.18 \approx 44.4$ fps.
 
-With $T_{\text{trans}} = 10$ ms, max possible at 100% utilization = 10 fps. We are sending 4 parallel frames per 10 ms slot = 40 fps effective â€” close to the ideal.
+With $T_{\text{trans}} = 10$ ms, max possible at 100% utilization = 10 fps. We are sending 4 parallel frames per 10 ms slot = 40 fps effective → close to the ideal.
 
 ---
 
@@ -2227,7 +2227,7 @@ Bit:  1     2-4    5     6-8
 
 - Bit 1 = 0 identifies I-frame
 - N(S): send sequence number (3 bits)
-- N(R): receive sequence number (3 bits) â€” piggybacked ACK
+- N(R): receive sequence number (3 bits) → piggybacked ACK
 - P/F: Poll (primary) / Final (secondary) bit
 
 **2. S-frames (Supervisory):** Flow control and error recovery. No data.
@@ -2244,7 +2244,7 @@ Bit:  1-2    3-4     5     6-8
 | REJ | 10 | Reject (Go-Back-N) | Frame N(R) missing; retransmit from here |
 | SREJ | 11 | Selective Reject | Selective Repeat: retransmit only frame N(R) |
 
-**3. U-frames (Unnumbered):** Link management â€” setup, disconnect, mode setting.
+**3. U-frames (Unnumbered):** Link management → setup, disconnect, mode setting.
 
 | Type | Code | Command | Response |
 |------|------|---------|----------|
@@ -2279,7 +2279,7 @@ Bit:  1-2    3-4     5     6-8
 | Advantage | Comprehensive: covers framing, error control, flow control, link management |
 | Advantage | Bit stuffing gives content-independent bounded overhead |
 | Advantage | Multiple modes support different network topologies |
-| Disadvantage | Complex â€” many options and frame types |
+| Disadvantage | Complex → many options and frame types |
 | Disadvantage | NRM mode is centralized (single point of failure) |
 | Disadvantage | 3-bit sequence numbers limit window to 7 |
 | Disadvantage | No built-in security (no encryption, weak authentication) |
@@ -2297,9 +2297,9 @@ PPP (RFC 1661) provides encapsulation, authentication, and link configuration ov
 | Field | Flag | Address | Control | Protocol | Information | Padding | FCS | Flag |
 |-------|------|---------|---------|----------|-------------|---------|-----|------|
 | Size | 1 B | 1 B | 1 B | 1-2 B | Variable | Variable | 2 B | 1 B |
-| Value | 0x7E | 0xFF | 0x03 | 0x0021 (IP) | Payload | â€” | CRC-16 | 0x7E |
+| Value | 0x7E | 0xFF | 0x03 | 0x0021 (IP) | Payload | → | CRC-16 | 0x7E |
 
-Byte stuffing is used: 0x7E â†’ 0x7D 0x5E, 0x7D â†’ 0x7D 0x5D.
+Byte stuffing is used: 0x7E → 0x7D 0x5E, 0x7D → 0x7D 0x5D.
 
 ### PPP Protocol Stack
 
@@ -2346,18 +2346,18 @@ LCP is responsible for establishing, configuring, and testing the data-link conn
 
 ### Authentication Protocols
 
-**PAP (Password Authentication Protocol) â€” RFC 1334:**
+**PAP (Password Authentication Protocol) → RFC 1334:**
 - Plaintext username/password in a single exchange.
 - Insecure: passwords are sent in the clear.
 - Two packets: Authenticate-Request, Authenticate-Ack/NAK.
 
-**CHAP (Challenge Handshake Authentication Protocol) â€” RFC 1994:**
-- Three-way handshake: challenge â†’ response (MD5 hash) â†’ accept/reject.
+**CHAP (Challenge Handshake Authentication Protocol) → RFC 1994:**
+- Three-way handshake: challenge → response (MD5 hash) → accept/reject.
 - Passwords never sent in clear.
 - Periodic re-authentication prevents session hijacking.
 - More secure than PAP but still vulnerable to dictionary attacks on weak passwords.
 
-**EAP (Extensible Authentication Protocol) â€” RFC 3748:**
+**EAP (Extensible Authentication Protocol) → RFC 3748:**
 - Framework supporting multiple authentication methods: tokens, certificates, smart cards.
 - Used in PPPoE and 802.1X (Wi-Fi).
 - Methods: EAP-MD5, EAP-TLS (certificates), EAP-TTLS, PEAP.
@@ -2366,7 +2366,7 @@ LCP is responsible for establishing, configuring, and testing the data-link conn
 
 NCP configures and negotiates network-layer protocol parameters.
 
-**IPCP (IP Control Protocol) â€” RFC 1332:**
+**IPCP (IP Control Protocol) → RFC 1332:**
 - Negotiates IP addresses (often dynamic assignment by ISP).
 - Negotiates Van Jacobson TCP/IP header compression.
 - Frames: Configure-Request containing IP-Address option (0x03).
@@ -2376,7 +2376,7 @@ NCP configures and negotiates network-layer protocol parameters.
 PPPoE (RFC 2516) encapsulates PPP frames inside Ethernet frames, enabling PPP authentication and session management over broadband connections (DSL, fiber).
 
 **PPPoE stages:**
-1. **Discovery:** Host broadcasts PADI â†’ Access Concentrator responds with PADO â†’ Host sends PADR â†’ AC responds with PADS (assigned session ID).
+1. **Discovery:** Host broadcasts PADI → Access Concentrator responds with PADO → Host sends PADR → AC responds with PADS (assigned session ID).
 2. **Session:** PPP frames (LCP, authentication, NCP, data) inside PPPoE headers.
 3. **Termination:** PADT frame tears down the session.
 
@@ -2384,7 +2384,7 @@ PPPoE (RFC 2516) encapsulates PPP frames inside Ethernet frames, enabling PPP au
 
 | Aspect | Detail |
 |--------|--------|
-| Advantage | Protocol-agnostic â€” transports any network layer (IP, IPX, IPv6, AppleTalk) |
+| Advantage | Protocol-agnostic → transports any network layer (IP, IPX, IPv6, AppleTalk) |
 | Advantage | Link configuration via LCP negotiation (MRU, auth, magic numbers) |
 | Advantage | Multiple authentication options (PAP, CHAP, EAP) |
 | Advantage | Loop detection via magic numbers (if both ends use the same magic = loop) |
@@ -2397,7 +2397,7 @@ PPPoE (RFC 2516) encapsulates PPP frames inside Ethernet frames, enabling PPP au
 
 | Edge Case | Behavior |
 |-----------|----------|
-| Loopback link | Magic number detection â€” if Configure-Request returns own magic, loop detected |
+| Loopback link | Magic number detection → if Configure-Request returns own magic, loop detected |
 | MTU mismatch | LCP Configure-Nak suggests lower MRU; both sides agree |
 | Authentication failure | LCP terminates link (Terminate-Request) |
 | Protocol mismatch | Protocol-Reject sent; connection continues for other protocols |
@@ -2407,9 +2407,9 @@ PPPoE (RFC 2516) encapsulates PPP frames inside Ethernet frames, enabling PPP au
 
 ## 3.9 Interview Corner
 
-### Q1: CRC vs Checksum â€” Which is better for link-layer error detection?
+### Q1: CRC vs Checksum → Which is better for link-layer error detection?
 
-CRC is always better for link-layer error detection. CRC-32 detects: (a) all single-bit errors, (b) all double-bit errors when the generator is primitive, (c) any odd number of errors, (d) any burst â‰¤ 32 bits, and (e) 99.99999998% of longer bursts. The Internet checksum used in TCP/UDP is weaker â€” it was designed for 1970s CPUs where a 16-bit add was one instruction but CRC bit manipulation was slow. On modern hardware, CRC-32 in hardware (or with a lookup table) takes a few cycles per byte. **Never use a checksum where CRC is available.**
+CRC is always better for link-layer error detection. CRC-32 detects: (a) all single-bit errors, (b) all double-bit errors when the generator is primitive, (c) any odd number of errors, (d) any burst â‰¤ 32 bits, and (e) 99.99999998% of longer bursts. The Internet checksum used in TCP/UDP is weaker → it was designed for 1970s CPUs where a 16-bit add was one instruction but CRC bit manipulation was slow. On modern hardware, CRC-32 in hardware (or with a lookup table) takes a few cycles per byte. **Never use a checksum where CRC is available.**
 
 ### Q2: How do you calculate the optimal sliding window size?
 
@@ -2424,7 +2424,7 @@ $$W = \frac{0.05 \cdot 10^{10}}{1500 \cdot 8} = \frac{500,000,000}{12,000} \appr
 
 If window is smaller than BDP, the link is underutilized. If larger than BDP and $2^k - 1$, you need more sequence bits.
 
-### Q3: Go-Back-N vs Selective Repeat â€” When to use which?
+### Q3: Go-Back-N vs Selective Repeat → When to use which?
 
 | Condition | Choose |
 |-----------|--------|
@@ -2436,7 +2436,7 @@ If window is smaller than BDP, the link is underutilized. If larger than BDP and
 
 The crossover point is roughly when retransmission cost (N Ã— frame size) exceeds buffer cost (N Ã— frame buffer at receiver).
 
-### Q4: HDLC vs PPP â€” What are the key differences?
+### Q4: HDLC vs PPP → What are the key differences?
 
 | Aspect | HDLC | PPP |
 |--------|------|-----|
@@ -2451,7 +2451,7 @@ The crossover point is roughly when retransmission cost (N Ã— frame size) exc
 
 ### Q5: Why does Ethernet use CRC-32 instead of a checksum?
 
-Ethernet operates over noisy copper cables (originally coaxial). A weak detection code would cause undetected corruption â€” catastrophic for local area networking where frames get forwarded through bridges/switches. CRC-32 has a $1/2^{32}$ undetected-error probability, meaning a 1 Gbps link would see one undetected error roughly every 30-50 years. The Internet checksum's stronger correlation with data patterns makes it less suitable. Additionally, CRC-32 is trivially implemented in hardware (32 flip-flops + XOR gates) at wire speed.
+Ethernet operates over noisy copper cables (originally coaxial). A weak detection code would cause undetected corruption → catastrophic for local area networking where frames get forwarded through bridges/switches. CRC-32 has a $1/2^{32}$ undetected-error probability, meaning a 1 Gbps link would see one undetected error roughly every 30-50 years. The Internet checksum's stronger correlation with data patterns makes it less suitable. Additionally, CRC-32 is trivially implemented in hardware (32 flip-flops + XOR gates) at wire speed.
 
 ### Q6: How many bits does a (7,4) Hamming code need to correct two errors?
 
@@ -2459,11 +2459,11 @@ A (7,4) Hamming code has minimum Hamming distance $d_{\min} = 3$. To correct up 
 
 ### Q7: Why 2Â³Â¹ - 1 maximum window for Go-Back-N but 2Â³â° for Selective Repeat?
 
-For Go-Back-N with 31-bit sequence numbers ($2^{31} - 1$), the receiver's window is 1 (only accepts in-order). The constraint is $W_s \le 2^k - 1$ â€” the spare sequence number prevents old retransmissions from being mistaken for new frames. For Selective Repeat, both sender and receiver windows are non-trivial ($SWS = RWS = W$). The constraint $2W \le 2^k$ (i.e., $W \le 2^{k-1}$) prevents the windows from overlapping after sequence number wrap-around.
+For Go-Back-N with 31-bit sequence numbers ($2^{31} - 1$), the receiver's window is 1 (only accepts in-order). The constraint is $W_s \le 2^k - 1$ → the spare sequence number prevents old retransmissions from being mistaken for new frames. For Selective Repeat, both sender and receiver windows are non-trivial ($SWS = RWS = W$). The constraint $2W \le 2^k$ (i.e., $W \le 2^{k-1}$) prevents the windows from overlapping after sequence number wrap-around.
 
 ### Q8: What happens if both data and its ACK are lost in Stop-and-Wait?
 
-The sender times out and retransmits the frame. The receiver sees a duplicate frame (same sequence number), discards the data, and sends a duplicate ACK. If the ACK is also lost, the sender times out again and retransmits again. This cycle repeats until an ACK survives. With a maximum retry count (e.g., 3 in HDLC), the sender eventually reports "link failure" to the network layer. This is why sequence numbers are essential â€” without them, the receiver could not distinguish a retransmitted frame from a new one.
+The sender times out and retransmits the frame. The receiver sees a duplicate frame (same sequence number), discards the data, and sends a duplicate ACK. If the ACK is also lost, the sender times out again and retransmits again. This cycle repeats until an ACK survives. With a maximum retry count (e.g., 3 in HDLC), the sender eventually reports "link failure" to the network layer. This is why sequence numbers are essential → without them, the receiver could not distinguish a retransmitted frame from a new one.
 
 ---
 
@@ -2478,7 +2478,7 @@ Ethernet frames include a 4-byte Frame Check Sequence (FCS) computed with CRC-32
 | 7B       | 1B  | 6B       | 6B      | 2B       | 46-1500B| Variable | 4B           |
 ```
 
-The CRC covers the destination MAC through payload (not preamble/SFD). Every Ethernet NIC computes CRC in hardware at wire speed. This is why Ethernet is trusted as a reliable delivery mechanism within a single LAN segment â€” corrupted frames are discarded at the NIC before the OS ever sees them.
+The CRC covers the destination MAC through payload (not preamble/SFD). Every Ethernet NIC computes CRC in hardware at wire speed. This is why Ethernet is trusted as a reliable delivery mechanism within a single LAN segment → corrupted frames are discarded at the NIC before the OS ever sees them.
 
 ### HDLC in PPP
 
@@ -2494,7 +2494,7 @@ Wi-Fi operates over the inherently unreliable radio medium. The 802.11 MAC uses 
 
 Additional 802.11 ARQ features:
 - **RTS/CTS:** Optional handshake (Request to Send / Clear to Send) reserves the channel before data transmission. Mitigates the hidden terminal problem.
-- **Fragmentation:** Large frames are fragmented into smaller pieces, each acknowledged individually â€” improves success probability on noisy channels.
+- **Fragmentation:** Large frames are fragmented into smaller pieces, each acknowledged individually → improves success probability on noisy channels.
 - **Block ACK (802.11e/n):** Aggregates multiple ACKs into one frame (similar to cumulative ACK in Go-Back-N) for efficiency.
 - **Retry limit:** After a maximum number of retries (typically 7 for short frames, 4 for long), the frame is discarded and reported to higher layers.
 
@@ -2504,11 +2504,11 @@ USB (Universal Serial Bus) uses bit stuffing with a flag condition of 6 consecut
 
 ### Memory ECC Uses Hamming Code
 
-DRAM (DDR4, DDR5) modules use Error-Correcting Code (ECC) memory based on Hamming codes â€” typically the Extended Hamming (SEC-DED) code that corrects single-bit errors and detects double-bit errors. With memory densities in the billions of bits, single-bit errors from cosmic rays (soft errors) are common. A 64-bit ECC DIMM uses 8 extra bits per 64-bit word (72-bit total) for SECDED. This is why server/workstation memory typically costs more than desktop memory.
+DRAM (DDR4, DDR5) modules use Error-Correcting Code (ECC) memory based on Hamming codes → typically the Extended Hamming (SEC-DED) code that corrects single-bit errors and detects double-bit errors. With memory densities in the billions of bits, single-bit errors from cosmic rays (soft errors) are common. A 64-bit ECC DIMM uses 8 extra bits per 64-bit word (72-bit total) for SECDED. This is why server/workstation memory typically costs more than desktop memory.
 
 ### Bluetooth Uses CRC-16 + ARQ
 
-Bluetooth's Baseband layer uses CRC-16 (CRC-CCITT polynomial $x^{16} + x^{12} + x^5 + 1$) for error detection on data packets. Corrupted packets trigger ARQ retransmission. The header is protected by an 8-bit header error check (HEC â€” also derived from CRC-8). Bluetooth's SCO (Synchronous Connection Oriented) links use forward error correction instead of ARQ for real-time audio where retransmission delay is unacceptable.
+Bluetooth's Baseband layer uses CRC-16 (CRC-CCITT polynomial $x^{16} + x^{12} + x^5 + 1$) for error detection on data packets. Corrupted packets trigger ARQ retransmission. The header is protected by an 8-bit header error check (HEC → also derived from CRC-8). Bluetooth's SCO (Synchronous Connection Oriented) links use forward error correction instead of ARQ for real-time audio where retransmission delay is unacceptable.
 
 ### Real-World Protocol Summary
 
@@ -2529,7 +2529,7 @@ Bluetooth's Baseband layer uses CRC-16 (CRC-CCITT polynomial $x^{16} + x^{12} + 
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| Character Count Framing | Length field in header | Fragile â€” single-bit error desyncs receiver | Legacy Bisync protocol |
+| Character Count Framing | Length field in header | Fragile → single-bit error desyncs receiver | Legacy Bisync protocol |
 | Byte Stuffing | Flag bytes with escape insertion | Variable overhead depending on payload | PPP over serial links |
 | Bit Stuffing | Insert 0 after five consecutive 1s | Bounded overhead (max 20%) | HDLC, modern link protocols |
 | CRC-32 | Polynomial division remainder | Detects all bursts â‰¤ 32 bits | Ethernet, Wi-Fi |
@@ -2552,7 +2552,7 @@ Bluetooth's Baseband layer uses CRC-16 (CRC-CCITT polynomial $x^{16} + x^{12} + 
 | **ARQ Comparison** | Stop-and-Wait: $U = T_t/(T_t + 2T_p)$; GBN: wasteful on errors; SR: efficient but complex |
 | **Efficiency Rule** | Window â‰¥ BDP in frames to achieve 100% link utilization |
 | **HDLC Frame Types** | I-frames (data with seq), S-frames (RR/RNR/REJ/SREJ), U-frames (SABM/DISC/UA) |
-| **PPP Stack** | LCP (link setup) â†’ Auth (PAP/CHAP) â†’ NCP (IPCP) â†’ Data |
+| **PPP Stack** | LCP (link setup) → Auth (PAP/CHAP) → NCP (IPCP) → Data |
 | **Sequence Constraints** | GBN: $W \le 2^k - 1$; SR: $W \le 2^{k-1}$ (when SWS=RWS) |
 
 ### Cross-Application Matrix
@@ -2593,7 +2593,7 @@ B) PPP uses byte stuffing with flag byte 0x7E and escape byte 0x7D.
 
 <details>
 <summary>Answer</summary>
-B) 36.8% ($1/e$) â€” double that of pure ALOHA (18.4%).
+B) 36.8% ($1/e$) → double that of pure ALOHA (18.4%).
 </details>
 
 **Q3.** A CRC with generator polynomial $x^3 + x + 1$ receives the bit sequence 1101101. The remainder after division is 101. Was an error detected?
@@ -2605,7 +2605,7 @@ B) 36.8% ($1/e$) â€” double that of pure ALOHA (18.4%).
 
 <details>
 <summary>Answer</summary>
-B) No â€” a zero remainder indicates no detected error; CRC with non-zero remainder = error detected.
+B) No → a zero remainder indicates no detected error; CRC with non-zero remainder = error detected.
 </details>
 
 **Q4.** In Go-Back-N with a 4-bit sequence number, what is the maximum send window size?
@@ -2617,7 +2617,7 @@ B) No â€” a zero remainder indicates no detected error; CRC with non-zero r
 
 <details>
 <summary>Answer</summary>
-B) 15 â€” Go-Back-N requires $W \le 2^k - 1$ to avoid ambiguity (Selective Repeat requires $W \le 2^{k-1}$).
+B) 15 → Go-Back-N requires $W \le 2^k - 1$ to avoid ambiguity (Selective Repeat requires $W \le 2^{k-1}$).
 </details>
 
 **Q5.** Which ARQ protocol would you choose for a high-delay satellite link with frequent errors?
@@ -2629,7 +2629,7 @@ B) 15 â€” Go-Back-N requires $W \le 2^k - 1$ to avoid ambiguity (Selective 
 
 <details>
 <summary>Answer</summary>
-C) Selective Repeat â€” retransmits only lost frames, critical when RTT is high and errors are frequent. Go-Back-N would waste entire windows on each error, and Stop-and-Wait would waste the bandwidth-delay product.
+C) Selective Repeat → retransmits only lost frames, critical when RTT is high and errors are frequent. Go-Back-N would waste entire windows on each error, and Stop-and-Wait would waste the bandwidth-delay product.
 </details>
 
 **Q6.** A (7,4) Hamming code receiver computes syndrome 101 (binary). What does this indicate?
@@ -2641,7 +2641,7 @@ C) Selective Repeat â€” retransmits only lost frames, critical when RTT is 
 
 <details>
 <summary>Answer</summary>
-C) Syndrome 101 = 5 in decimal â†’ error at position 5. The sender's check bits are recomputed; the binary number formed by failed parity checks gives the exact bit position.
+C) Syndrome 101 = 5 in decimal → error at position 5. The sender's check bits are recomputed; the binary number formed by failed parity checks gives the exact bit position.
 </details>
 
 **Q7.** In PPP, what is the purpose of the magic number in LCP?
@@ -2653,7 +2653,7 @@ C) Syndrome 101 = 5 in decimal â†’ error at position 5. The sender's check 
 
 <details>
 <summary>Answer</summary>
-B) Magic numbers detect loopback links â€” if a Configure-Request arrives with the same magic number as the sender's own, a loop is detected and the link is terminated.
+B) Magic numbers detect loopback links → if a Configure-Request arrives with the same magic number as the sender's own, a loop is detected and the link is terminated.
 </details>
 
 ---
@@ -2703,4 +2703,4 @@ CRC-32 (Ethernet), Stop-and-Wait ARQ (Wi-Fi), and byte stuffing (PPP) are deploy
 
 ---
 
-*This chapter was significantly expanded with worked examples, implementations in C++ and Python, dry-run trace tables, and interview-focused content. The core analytical framework â€” framing, error control, flow control, and ARQ â€” remains the foundation of modern networking from Ethernet to satellite communications.*
+*This chapter was significantly expanded with worked examples, implementations in C++ and Python, dry-run trace tables, and interview-focused content. The core analytical framework → framing, error control, flow control, and ARQ → remains the foundation of modern networking from Ethernet to satellite communications.*

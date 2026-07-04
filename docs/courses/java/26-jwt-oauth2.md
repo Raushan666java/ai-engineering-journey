@@ -25,9 +25,9 @@ By the end of this chapter you should be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| JWT â€” compact, self-contained token format for claims | Sign with RS256; never expose secrets in the payload |
-| OAuth2 â€” authorization framework with multiple grant types | Use Authorization Code + PKCE for public clients |
-| OpenID Connect â€” identity layer atop OAuth2 | ID Token (JWT) carries user identity; UserInfo endpoint provides additional claims |
+| JWT → compact, self-contained token format for claims | Sign with RS256; never expose secrets in the payload |
+| OAuth2 → authorization framework with multiple grant types | Use Authorization Code + PKCE for public clients |
+| OpenID Connect → identity layer atop OAuth2 | ID Token (JWT) carries user identity; UserInfo endpoint provides additional claims |
 
 ---
 ## Chapter Roadmap
@@ -1907,7 +1907,7 @@ public class CustomOidcUserService extends OidcUserService {
 ```
 
 > [!NOTE]
-> OIDC is not OAuth2 â€” it adds user authentication on top of OAuth2 delegation. An ID Token proves who the user is, not what they can access.
+> OIDC is not OAuth2 → it adds user authentication on top of OAuth2 delegation. An ID Token proves who the user is, not what they can access.
 
 ---
 

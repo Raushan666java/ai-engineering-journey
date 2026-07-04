@@ -2,7 +2,7 @@
 
 > **Previous:** [Java NIO & Networking](./03-nio-networking.md) | **Next:** [Functional Programming in Practice](./05-functional-deep.md)
 
-Java's module systemâ€”formally **Java Platform Module System (JPMS)**â€”was introduced in Java 9 as part of Project Jigsaw. It is the largest structural change to the Java language since its inception. Before JPMS, Java had only packages as a namespacing mechanism, with no concept of declared dependencies, no enforced encapsulation at the JAR level, and no reliable way to reason about what a library required or exposed. The result was classpath hell: conflicting versions, missing classes at runtime, and a `public` keyword that was all-or-nothing.
+Java's module system→formally **Java Platform Module System (JPMS)**→was introduced in Java 9 as part of Project Jigsaw. It is the largest structural change to the Java language since its inception. Before JPMS, Java had only packages as a namespacing mechanism, with no concept of declared dependencies, no enforced encapsulation at the JAR level, and no reliable way to reason about what a library required or exposed. The result was classpath hell: conflicting versions, missing classes at runtime, and a `public` keyword that was all-or-nothing.
 
 JPMS introduces **modules** as a new level of abstraction above packages. A module is a self-describing collection of code and data that explicitly declares its dependencies and its exported API. This chapter covers the full module system: from motivation and basic `module-info.java` declarations through advanced topics like ServiceLoader, `jlink` for custom runtime images, `jpackage` for native installers, multi-module project architecture, migration strategies for existing codebases, and how Spring Boot interacts with the module system.
 
@@ -60,7 +60,7 @@ Java's package system, while useful for namespacing, had fundamental flaws that 
 
 ### 1.1 JAR Hell
 
-The classpath is a flat list of JAR files. When two JARs contain the same class (same fully qualified name), the first one found winsâ€”silently. There is no mechanism to express that library A requires version 2 of library B, or to ensure that two versions of the same library do not coexist.
+The classpath is a flat list of JAR files. When two JARs contain the same class (same fully qualified name), the first one found wins→silently. There is no mechanism to express that library A requires version 2 of library B, or to ensure that two versions of the same library do not coexist.
 
 ```java
 // Suppose classpath contains both log4j-core-2.17.0.jar
@@ -147,7 +147,7 @@ The simplest possible module declaration:
 ```java
 // src/main/java/module-info.java
 module com.example.demo {
-    // No dependencies, no exports â€” this module is self-contained
+    // No dependencies, no exports → this module is self-contained
 }
 ```
 
@@ -189,7 +189,7 @@ module com.example.database {
     exports com.example.database.api;
 }
 
-// com.example.app module â€” by requiring com.example.database,
+// com.example.app module → by requiring com.example.database,
 // it implicitly also reads java.sql
 module com.example.app {
     requires com.example.database;  // Implicitly gets java.sql too
@@ -221,7 +221,7 @@ If a consumer of `com.example.database` calls `getConnection()` and receives a `
 module com.example.orm {
     requires transitive java.sql;       // Exposed in return types
     requires transitive jakarta.persistence;  // Exposed in entity annotations
-    requires java.logging;              // Internal use only â€” don't use transitive
+    requires java.logging;              // Internal use only → don't use transitive
     exports com.example.orm.api;
 }
 ```
@@ -251,7 +251,7 @@ module com.example.library {
     exports com.example.library.api;
     exports com.example.library.dto;
 
-    // These packages are NOT exported â€” they are internal
+    // These packages are NOT exported → they are internal
     // com.example.library.internal is invisible to other modules
 }
 ```
@@ -301,7 +301,7 @@ public class User {
     private String name;
 
     // Hibernate needs reflective access to the private fields
-    // and the no-arg constructor â€” only works if the package is opened
+    // and the no-arg constructor → only works if the package is opened
     public User() {}
 
     // getters and setters
@@ -339,7 +339,7 @@ open module com.example.model {
     exports com.example.model.api;
     exports com.example.model.dto;
 
-    // entities, internal â€” not exported, but still open for reflection
+    // entities, internal → not exported, but still open for reflection
 }
 ```
 
@@ -519,7 +519,7 @@ An **automatic module** is a regular JAR file (without `module-info.class`) plac
 // Automatic-Module-Name: org.apache.logging.log4j
 //
 // If this entry is absent, the module name is derived from the filename:
-// log4j-core-2.17.0.jar â†’ module name "log4j.core" (dots replace non-alphanumeric)
+// log4j-core-2.17.0.jar → module name "log4j.core" (dots replace non-alphanumeric)
 ```
 
 Characteristics of automatic modules:
@@ -584,7 +584,7 @@ At startup, the module system resolves dependencies as follows:
     â€¢ All required modules are readable
         â”‚
         â–¼
-[Phase  â€” ready to run]
+[Phase  → ready to run]
 
 // This is what a resolution failure looks like:
 // Error occurred during initialization of boot layer
@@ -601,16 +601,16 @@ The module graph is a **directed acyclic graph (DAG)**:
 
 ```java
 // com.example.app
-//   â”œâ”€â”€ requires â†’ com.example.service
-//   â”‚               â”œâ”€â”€ requires transitive â†’ com.example.data
-//   â”‚               â”‚                        â””â”€â”€ requires â†’ java.sql
-//   â”‚               â””â”€â”€ requires â†’ java.logging
-//   â””â”€â”€ requires â†’ com.example.config
-//                   â””â”€â”€ requires â†’ com.example.data (shared!)
+//   â”œâ”€â”€ requires → com.example.service
+//   â”‚               â”œâ”€â”€ requires transitive → com.example.data
+//   â”‚               â”‚                        â””â”€â”€ requires → java.sql
+//   â”‚               â””â”€â”€ requires → java.logging
+//   â””â”€â”€ requires → com.example.config
+//                   â””â”€â”€ requires → com.example.data (shared!)
 //
 // The graph has a diamond: com.example.app requires both
 // com.example.service and com.example.config, which both require
-// com.example.data. This is fine â€” data is resolved once.
+// com.example.data. This is fine → data is resolved once.
 // The graph remains acyclic. No version conflict for data.
 ```
 
@@ -633,9 +633,9 @@ jlink \
     --output myapp-runtime
 
 # The resulting myapp-runtime/ directory contains:
-#   bin/        â€” java launcher and other executables
-#   conf/       â€” configuration files
-#   lib/        â€” runtime libraries (modules, jli, etc.)
+#   bin/        → java launcher and other executables
+#   conf/       → configuration files
+#   lib/        → runtime libraries (modules, jli, etc.)
 # Total size: ~40 MB (vs ~300 MB JDK)
 ```
 
@@ -691,7 +691,7 @@ jlink \
 
 ```bash
 #!/bin/bash
-# build.sh â€” Full jlink build pipeline
+# build.sh → Full jlink build pipeline
 
 set -euo pipefail
 
@@ -1042,7 +1042,7 @@ java {
 A **split package** occurs when the same Java package exists in two different modules on the module path. This is illegal in JPMS and causes a resolution error.
 
 ```java
-// WRONG â€” will crash:
+// WRONG → will crash:
 // lib-core.jar contains: com.example.util.Strings
 // lib-extra.jar contains: com.example.util.Dates
 // Both are in the "com.example.util" package.
@@ -1071,7 +1071,7 @@ A **split package** occurs when the same Java package exists in two different mo
 JPMS does **not** allow circular dependencies between modules at compile time or runtime.
 
 ```java
-// ILLEGAL â€” circular dependency:
+// ILLEGAL → circular dependency:
 // module com.example.a { requires com.example.b; }
 // module com.example.b { requires com.example.a; }
 //
@@ -1156,7 +1156,7 @@ For JARs you control but cannot yet fully modularize, add an `Automatic-Module-N
 
 ```java
 // In your build tool:
-// Maven â€” maven-jar-plugin:
+// Maven → maven-jar-plugin:
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-jar-plugin</artifactId>
@@ -1169,7 +1169,7 @@ For JARs you control but cannot yet fully modularize, add an `Automatic-Module-N
     </configuration>
 </plugin>
 
-// Gradle â€” jar task:
+// Gradle → jar task:
 jar {
     manifest {
         attributes 'Automatic-Module-Name': 'com.example.legacy'
@@ -1377,7 +1377,7 @@ public class User {
         this.displayName = displayName;
     }
 
-    // Getters and setters â€” Hibernate uses reflection to set fields
+    // Getters and setters → Hibernate uses reflection to set fields
     // even without setters if FieldAccessType.FIELD is configured
     public Long getId() { return id; }
     public String getEmail() { return email; }
@@ -1453,7 +1453,7 @@ module com.example.monitoring.starter {
 The simplest migration path for Spring Boot applications is often an `open module` declaration:
 
 ```java
-// Open module â€” all packages are open for reflection
+// Open module → all packages are open for reflection
 // Export only what other modules need at compile time
 open module com.example.myapp {
     requires spring.boot;
@@ -1482,7 +1482,7 @@ This is the recommended starting point for Spring Boot applications migrating to
 Spring Boot's `SpringFactoriesLoader` (and its successor `AutoConfiguration.imports`) provides similar functionality to `ServiceLoader` but is classpath-based rather than module-path-based.
 
 ```java
-// Spring's approach â€” META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports:
+// Spring's approach → META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports:
 // com.example.monitoring.starter.autoconfigure.MonitoringAutoConfiguration
 
 // This file is loaded by SpringFactoriesLoader, which scans the classpath
@@ -1557,7 +1557,7 @@ banking-app/
         â””â”€â”€ ReportExporter.java
 ```
 
-### 9.2 banking-api â€” Public API
+### 9.2 banking-api → Public API
 
 ```java
 // banking-api/src/main/java/com/example/banking/api/Account.java
@@ -1620,7 +1620,7 @@ module com.example.banking.api {
 }
 ```
 
-### 9.3 banking-spi â€” Service Provider Interface
+### 9.3 banking-spi → Service Provider Interface
 
 ```java
 // banking-spi/src/main/java/com/example/banking/spi/ReportExporter.java
@@ -1646,7 +1646,7 @@ module com.example.banking.spi {
 }
 ```
 
-### 9.4 banking-persistence â€” Data Access
+### 9.4 banking-persistence → Data Access
 
 ```java
 // banking-persistence/src/main/java/com/example/banking/persistence/AccountEntity.java
@@ -1736,7 +1736,7 @@ module com.example.banking.persistence {
 }
 ```
 
-### 9.5 banking-impl â€” Implementation
+### 9.5 banking-impl → Implementation
 
 ```java
 // banking-impl/src/main/java/com/example/banking/impl/InternalValidator.java
@@ -1744,7 +1744,7 @@ package com.example.banking.impl;
 
 import java.math.BigDecimal;
 
-// This class is intentionally NOT exported â€” it is internal implementation
+// This class is intentionally NOT exported → it is internal implementation
 class InternalValidator {
     static void validateAmount(BigDecimal amount) {
         if (amount == null) {
@@ -1869,7 +1869,7 @@ module com.example.banking.impl {
 }
 ```
 
-### 9.6 banking-reporting â€” ServiceLoader Provider
+### 9.6 banking-reporting → ServiceLoader Provider
 
 ```java
 // banking-reporting/src/main/java/com/example/banking/reporting/ReportGenerator.java
@@ -1952,7 +1952,7 @@ module com.example.banking.reporting {
 }
 ```
 
-### 9.7 banking-app â€” Main Application
+### 9.7 banking-app → Main Application
 
 ```java
 // banking-app/src/main/java/com/example/banking/app/Main.java
@@ -1975,9 +1975,9 @@ public class Main {
         Account alice = service.createAccount("Alice");
         Account bob = service.createAccount("Bob");
 
-        System.out.printf("Created: %s (%s) â€” balance: $%.2f%n",
+        System.out.printf("Created: %s (%s) → balance: $%.2f%n",
             alice.getId(), alice.getOwner(), alice.getBalance());
-        System.out.printf("Created: %s (%s) â€” balance: $%.2f%n",
+        System.out.printf("Created: %s (%s) → balance: $%.2f%n",
             bob.getId(), bob.getOwner(), bob.getBalance());
 
         // Deposit
@@ -2017,7 +2017,7 @@ module com.example.banking.app {
     requires com.example.banking.reporting;
     requires com.example.banking.spi;
 
-    // Main class is internal â€” no exports needed
+    // Main class is internal → no exports needed
 }
 ```
 
@@ -2025,7 +2025,7 @@ module com.example.banking.app {
 
 ```bash
 #!/bin/bash
-# build.sh â€” Compile and run the banking application
+# build.sh → Compile and run the banking application
 set -euo pipefail
 
 SRC="src"
@@ -2078,7 +2078,7 @@ module com.example.framework {
         com.example.framework.impl,
         com.example.framework.ext;
 
-    // Secret experimental API â€” only our test module
+    // Secret experimental API → only our test module
     exports com.example.framework.experimental to
         com.example.framework.test;
 }
@@ -2329,9 +2329,9 @@ JPMS is not an all-or-nothing proposition. You can migrate incrementally, starti
 11. **jlink pipeline**: Write a complete bash script that compiles a modular application named `com.example.tool` (main class `com.example.tool.Cli`), creates a custom runtime image with compression and debug stripping, generates a launcher named `tool`, and creates a Linux DEB package. Assume the module depends on `java.base` and `java.sql` only.
 
 12. **ServiceLoader contract**: Create three modules:
-    - `com.example.search.spi` â€” defines `SearchEngine` interface with method `List<Result> search(String query)`
-    - `com.example.search.simple` â€” provides a simple `SimpleSearchEngine` implementation
-    - `com.example.search.app` â€” uses ServiceLoader to discover and invoke all `SearchEngine` providers
+    - `com.example.search.spi` → defines `SearchEngine` interface with method `List<Result> search(String query)`
+    - `com.example.search.simple` → provides a simple `SimpleSearchEngine` implementation
+    - `com.example.search.app` → uses ServiceLoader to discover and invoke all `SearchEngine` providers
     Write all `module-info.java` files and the ServiceLoader iteration code.
 
 13. **Multi-module graph**: You have modules `A`, `B`, `C`, `D`, `E` with the following dependencies:
@@ -2360,10 +2360,10 @@ JPMS is not an all-or-nothing proposition. You can migrate incrementally, starti
 16. **Gradual migration refactoring**: You have a monolithic JAR with these packages:
     - `com.example.app.main` (entry point)
     - `com.example.app.api` (public interfaces)
-    - `com.example.app.impl` (implementations â€” depends on api)
+    - `com.example.app.impl` (implementations → depends on api)
     - `com.example.app.model` (data classes)
-    - `com.example.app.dao` (database access â€” depends on model)
-    - `com.example.app.util` (utilities â€” depends on nothing)
+    - `com.example.app.dao` (database access → depends on model)
+    - `com.example.app.util` (utilities → depends on nothing)
 
     Design a refactoring plan that splits this into four JPMS modules (`api`, `model`, `dao`, `app`) while maintaining compilability at each intermediate step. Show the `module-info.java` for each final module and describe the order of extraction.
 
@@ -2384,10 +2384,10 @@ JPMS is not an all-or-nothing proposition. You can migrate incrementally, starti
 
 - [JSR 376: Java Platform Module System](https://jcp.org/en/jsr/detail?id=376)
 - [OpenJDK Project Jigsaw](https://openjdk.org/projects/jigsaw/)
-- [Java Language Specification â€” Chapter 7 (Modules)](https://docs.oracle.com/javase/specs/jls/se21/html/jls-7.html)
-- [Java Module System â€” Nicolai Parlog (O'Reilly)](https://www.amazon.com/Java-Module-System-Nicolai-Parlog/dp/1617294284)
-- [JDK 21: JEP 261 â€” Module System](https://openjdk.org/jeps/261)
+- [Java Language Specification → Chapter 7 (Modules)](https://docs.oracle.com/javase/specs/jls/se21/html/jls-7.html)
+- [Java Module System → Nicolai Parlog (O'Reilly)](https://www.amazon.com/Java-Module-System-Nicolai-Parlog/dp/1617294284)
+- [JDK 21: JEP 261 → Module System](https://openjdk.org/jeps/261)
 - [JDK 21: jlink Reference](https://docs.oracle.com/en/java/javase/21/docs/specs/man/jlink.html)
 - [JDK 21: jpackage Reference](https://docs.oracle.com/en/java/javase/21/docs/specs/man/jpackage.html)
-- [Spring Boot Reference â€” Modular Applications](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#appendix.dependency-versions.modules)
-- [Baeldung â€” Java 9 Modularity Guide](https://www.baeldung.com/java-9-modularity)
+- [Spring Boot Reference → Modular Applications](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#appendix.dependency-versions.modules)
+- [Baeldung → Java 9 Modularity Guide](https://www.baeldung.com/java-9-modularity)

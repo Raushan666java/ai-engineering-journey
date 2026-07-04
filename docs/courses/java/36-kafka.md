@@ -19,9 +19,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Kafka â€” distributed event streaming platform | Topics, partitions, and consumer groups for horizontal scaling |
-| Producers â€” publish records with keys, headers, and acks | `KafkaTemplate.send()` with partitioning strategies |
-| Consumers â€” subscribe with `@KafkaListener` and consumer groups | Offset management, rebalancing, and exactly-once semantics |
+| Kafka → distributed event streaming platform | Topics, partitions, and consumer groups for horizontal scaling |
+| Producers → publish records with keys, headers, and acks | `KafkaTemplate.send()` with partitioning strategies |
+| Consumers → subscribe with `@KafkaListener` and consumer groups | Offset management, rebalancing, and exactly-once semantics |
 
 ---
 ## Chapter Roadmap
@@ -74,7 +74,7 @@ flowchart TD
 ---
 ## Chapter Quiz
 
-1. What is the smallest unit of parallelism in Kafka? **Answer:** Partition â€” each partition is consumed by one consumer in a group
+1. What is the smallest unit of parallelism in Kafka? **Answer:** Partition → each partition is consumed by one consumer in a group
 2. Which annotation subscribes a method to Kafka messages? **Answer:** `@KafkaListener`
 3. What configuration enables exactly-once semantics for a Kafka producer? **Answer:** `enable.idempotence=true` and `acks=all`
 
@@ -1641,13 +1641,13 @@ class KafkaConsumerTest {
 ```
 
 > [!TIP]
-> Use a meaningful message key for partitioning â€” all messages with the same key go to the same partition, preserving order.
+> Use a meaningful message key for partitioning → all messages with the same key go to the same partition, preserving order.
 
 > [!WARNING]
 > Consumer rebalancing stops all consumption in the group. Set `session.timeout.ms` appropriately to avoid unnecessary rebalances.
 
 > [!NOTE]
-> `@KafkaHandler` on multiple methods within a single `@KafkaListener` dispatches messages by payload type â€” like a visitor pattern.
+> `@KafkaHandler` on multiple methods within a single `@KafkaListener` dispatches messages by payload type → like a visitor pattern.
 
 ## Summary
 

@@ -36,9 +36,9 @@ By the end of this chapter you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Spring Boot Testing â€” full integration test support | `@SpringBootTest` loads the full application context |
-| Test Slices â€” focused test contexts for specific layers | `@WebMvcTest`, `@DataJpaTest`, `@JsonTest` |
-| TestConfiguration â€” override beans for testing | `@TestConfiguration` + `@Bean` for test-specific wiring |
+| Spring Boot Testing → full integration test support | `@SpringBootTest` loads the full application context |
+| Test Slices → focused test contexts for specific layers | `@WebMvcTest`, `@DataJpaTest`, `@JsonTest` |
+| TestConfiguration → override beans for testing | `@TestConfiguration` + `@Bean` for test-specific wiring |
 
 ---
 ## Chapter Roadmap
@@ -90,7 +90,7 @@ flowchart TD
 ## Chapter Quiz
 
 1. Which annotation loads the full application context for integration tests? **Answer:** `@SpringBootTest`
-2. What is the fastest Spring Boot test slice? **Answer:** `@JsonTest` â€” only tests JSON serialization
+2. What is the fastest Spring Boot test slice? **Answer:** `@JsonTest` → only tests JSON serialization
 3. How do you make `MockMvc` available in a `@WebMvcTest`? **Answer:** It is auto-configured; inject via `@Autowired`
 
 ---
@@ -290,7 +290,7 @@ class DirtyContextTest {
 > Use test slices like `@WebMvcTest` and `@DataJpaTest` instead of `@SpringBootTest` for faster, more focused tests.
 
 > [!WARNING]
-> Avoid `@SpringBootTest` in unit tests â€” it starts the full context and dramatically slows down your test suite.
+> Avoid `@SpringBootTest` in unit tests → it starts the full context and dramatically slows down your test suite.
 
 ---
 

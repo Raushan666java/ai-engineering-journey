@@ -1,4 +1,4 @@
-# Chapter 3 â€” JavaScript Basics
+# Chapter 3 → JavaScript Basics
 
 > **Previous:** [02-css](./02-css.md) | **Next:** [04-js-dom](./04-js-dom.md)
 
@@ -61,21 +61,21 @@ graph TD
 JavaScript provides three variable declaration keywords, each with distinct scoping rules.
 
 ```javascript
-// var â€” function-scoped, hoisted, can be redeclared
+// var → function-scoped, hoisted, can be redeclared
 var x = 10;
 if (true) {
-  var x = 20; // Same variable â€” leaks out of block
+  var x = 20; // Same variable → leaks out of block
 }
 console.log(x); // 20
 
-// let â€” block-scoped, hoisted but not initialized (TDZ)
+// let → block-scoped, hoisted but not initialized (TDZ)
 let y = 10;
 if (true) {
-  let y = 20; // Different variable â€” block-scoped
+  let y = 20; // Different variable → block-scoped
 }
 console.log(y); // 10
 
-// const â€” block-scoped, must be initialized, cannot be reassigned
+// const → block-scoped, must be initialized, cannot be reassigned
 const z = 30;
 // z = 40; // TypeError: Assignment to constant variable
 
@@ -199,7 +199,7 @@ if (score >= 90) {
   grade = 'C';
 }
 
-// switch â€” strict comparison
+// switch → strict comparison
 switch (grade) {
   case 'A':
     console.log('Excellent');

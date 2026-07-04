@@ -1,4 +1,4 @@
-# Chapter 2 â€” CSS3
+# Chapter 2 → CSS3
 
 > **Previous:** [01-html](./01-html.md) | **Next:** [03-js-basics](./03-js-basics.md)
 
@@ -131,12 +131,12 @@ By default, `width` and `height` apply only to the **content box**. Setting `box
 
 **Display values** control how boxes participate in the layout:
 
-- `block` â€” Fills available width, respects `width`/`height`, forces new line.
-- `inline` â€” Shrinks to content, ignores `width`/`height`, flows with text.
-- `inline-block` â€” Shrinks to content but respects `width`/`height`.
-- `flex` â€” Establishes a flex formatting context for children.
-- `grid` â€” Establishes a grid formatting context for children.
-- `none` â€” Removes element from the layout tree entirely.
+- `block` → Fills available width, respects `width`/`height`, forces new line.
+- `inline` → Shrinks to content, ignores `width`/`height`, flows with text.
+- `inline-block` → Shrinks to content but respects `width`/`height`.
+- `flex` → Establishes a flex formatting context for children.
+- `grid` → Establishes a grid formatting context for children.
+- `none` → Removes element from the layout tree entirely.
 
 ### 2.3 Flexbox
 
@@ -251,12 +251,12 @@ Responsive design ensures content renders well on any device width.
 
 **Relative units:**
 
-- `%` â€” Relative to parent
-- `em` â€” Relative to element's font-size
-- `rem` â€” Relative to root font-size (typically 16px)
-- `vw` / `vh` â€” Percentage of viewport width/height
-- `dvw` / `dvh` â€” Dynamic viewport units (account for mobile toolbars)
-- `clamp(min, preferred, max)` â€” Fluid value between bounds
+- `%` → Relative to parent
+- `em` → Relative to element's font-size
+- `rem` → Relative to root font-size (typically 16px)
+- `vw` / `vh` → Percentage of viewport width/height
+- `dvw` / `dvh` → Dynamic viewport units (account for mobile toolbars)
+- `clamp(min, preferred, max)` → Fluid value between bounds
 
 **Media queries:**
 

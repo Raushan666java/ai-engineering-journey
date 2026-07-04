@@ -1,4 +1,4 @@
-# Chapter 37: Enterprise Capstone â€” Multi-Agent Platform
+# Chapter 37: Enterprise Capstone → Multi-Agent Platform
 
 > **Previous:** [Manufacturing & Industrial — AI-Powered Factory Agents](./36-manufacturing.md) | **Next:** [Laravel General Interview Q&A](./38-interview-general.md)
 
@@ -128,7 +128,7 @@ flowchart LR
 
 ### 37.1 Platform Overview & Architecture
 
-The Enterprise Multi-Agent Platform (EMAP) is a cross-industry system where specialized AI agents from different domains â€” healthcare, finance, education, logistics, HR, customer service, legal, real estate, manufacturing, and marketing â€” coexist, communicate, and collaborate within a single unified runtime. Organizations deploy the platform as a multi-tenant SaaS instance, with each tenant running isolated agent instances.
+The Enterprise Multi-Agent Platform (EMAP) is a cross-industry system where specialized AI agents from different domains → healthcare, finance, education, logistics, HR, customer service, legal, real estate, manufacturing, and marketing → coexist, communicate, and collaborate within a single unified runtime. Organizations deploy the platform as a multi-tenant SaaS instance, with each tenant running isolated agent instances.
 
 #### Platform Specification
 
@@ -812,7 +812,7 @@ class AgentBusServiceProvider extends ServiceProvider
 
 ### 37.4 Shared Memory & Knowledge Base
 
-Every agent in the platform can read from and write to a centralized shared memory. This enables cross-sector knowledge sharing â€” a finance agent's fraud analysis can inform a customer service agent's triage decision. The knowledge base stores structured data, conversation context, and vector embeddings for semantic retrieval.
+Every agent in the platform can read from and write to a centralized shared memory. This enables cross-sector knowledge sharing → a finance agent's fraud analysis can inform a customer service agent's triage decision. The knowledge base stores structured data, conversation context, and vector embeddings for semantic retrieval.
 
 #### Shared Memory Model
 
@@ -2626,7 +2626,7 @@ class CrossSectorWorkflowRunner
             'assigned_sector' => 'finance',
         ]);
 
-        // â”€â”€ Step 3: Bus routes triage.completed â†’ billing.resolve â”€â”€
+        // â”€â”€ Step 3: Bus routes triage.completed → billing.resolve â”€â”€
         $this->bus->publish('triage.completed', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2664,7 +2664,7 @@ class CrossSectorWorkflowRunner
 
         Log::info('Step 4: Billing resolved', $resolution);
 
-        // â”€â”€ Step 5: Bus routes billing.resolved â†’ survey.dispatch â”€â”€
+        // â”€â”€ Step 5: Bus routes billing.resolved → survey.dispatch â”€â”€
         $this->bus->publish('billing.resolved', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -3219,7 +3219,7 @@ The workflow must:
 2. Route dynamically: based on the triage agent's classification, publish to **one, two, or three** sector agents simultaneously
 3. Use `fan-out` parallel dispatch for multi-sector incidents (e.g., a financial compliance issue routes to both Finance and Legal)
 4. Aggregate all sector responses into a single `IncidentResolution` stored in shared memory
-5. Implement a `CircuitBreaker` per sector â€” if any sector agent fails twice consecutively, log the failure and continue without blocking other sectors
+5. Implement a `CircuitBreaker` per sector → if any sector agent fails twice consecutively, log the failure and continue without blocking other sectors
 6. Return a resolution report with per-sector findings and an overall status (`resolved`, `partial`, `escalated`)
 
 Write the complete implementation including:

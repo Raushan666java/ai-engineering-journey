@@ -21,7 +21,7 @@ Network security encompasses the policies and mechanisms that protect the confid
 
 **Eavesdropping (sniffing).** An adversary captures packets traversing a network segment. On shared media (wireless, Ethernet hubs), any station on the segment can capture all traffic. On switched networks, ARP spoofing or port mirroring enables packet capture.
 
-**Traffic analysis.** Even if packets are encrypted, an adversary can observe communication patterns â€” who talks to whom, at what times, and in what volumes â€” to infer sensitive information.
+**Traffic analysis.** Even if packets are encrypted, an adversary can observe communication patterns → who talks to whom, at what times, and in what volumes → to infer sensitive information.
 
 **Real-world analogy.** Eavesdropping is like a postal worker opening envelopes, reading the letters inside, resealing them, and delivering them. The sender and receiver never know the letter was read.
 
@@ -583,7 +583,7 @@ iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 ```
 
-Packet filters are stateless â€” each packet is evaluated independently. They cannot detect attacks spread across multiple packets.
+Packet filters are stateless → each packet is evaluated independently. They cannot detect attacks spread across multiple packets.
 
 **Real-world analogy.** A packet filter is like a bouncer at a club who checks only the ID (source address) and what the person is wearing (port number). They let people in or out based on these simple visible traits without remembering anyone.
 
@@ -741,9 +741,9 @@ for t in tests:
 
 | Packet | Src IP | Dst IP | Port | Rule 1 (10.0.0.0/8:22) | Rule 2 (any:22 DROP) | Rule 3 (:80 ACCEPT) | Result |
 |--------|--------|--------|------|-------------------------|----------------------|---------------------|--------|
-| P1 | 10.0.0.5 | 192.168.1.1 | 22 | MATCH â†’ ACCEPT | (skipped) | (skipped) | ACCEPT |
-| P2 | 203.0.113.5 | 192.168.1.1 | 22 | No match (src != 10.x) | MATCH â†’ DROP | (skipped) | DROP |
-| P3 | 10.0.0.5 | 192.168.1.1 | 80 | No match (port != 22) | No match (port != 22) | MATCH â†’ ACCEPT | ACCEPT |
+| P1 | 10.0.0.5 | 192.168.1.1 | 22 | MATCH → ACCEPT | (skipped) | (skipped) | ACCEPT |
+| P2 | 203.0.113.5 | 192.168.1.1 | 22 | No match (src != 10.x) | MATCH → DROP | (skipped) | DROP |
+| P3 | 10.0.0.5 | 192.168.1.1 | 80 | No match (port != 22) | No match (port != 22) | MATCH → ACCEPT | ACCEPT |
 | P4 | 10.0.0.5 | 192.168.1.1 | 443 | No match | No match | No match (port != 80) | DROP (default) |
 
 **Complexity analysis of firewall rule evaluation.**
@@ -969,14 +969,14 @@ TLS (Transport Layer Security) operates at the transport layer between TCP and t
 
 | Step | Direction | Content | Key Material |
 |------|-----------|---------|--------------|
-| 1 | Câ†’S | ClientHello: TLS 1.2, suites=[TLS_ECDHE_RSA_AES128_GCM, ...], nonce=Rc | -- |
-| 2 | Sâ†’C | ServerHello: TLS 1.2, TLS_ECDHE_RSA_AES128_GCM, nonce=Rs | -- |
-| 3 | Sâ†’C | Certificate: server.pem chain | Server's RSA pub key |
-| 4 | Sâ†’C | ServerKeyExchange: ECDHE params (curve, g^x, signature) | g^x, Sig(RSA, H(g^x)) |
-| 5 | Câ†’S | ClientKeyExchange: g^y | -- |
+| 1 | C→S | ClientHello: TLS 1.2, suites=[TLS_ECDHE_RSA_AES128_GCM, ...], nonce=Rc | -- |
+| 2 | S→C | ServerHello: TLS 1.2, TLS_ECDHE_RSA_AES128_GCM, nonce=Rs | -- |
+| 3 | S→C | Certificate: server.pem chain | Server's RSA pub key |
+| 4 | S→C | ServerKeyExchange: ECDHE params (curve, g^x, signature) | g^x, Sig(RSA, H(g^x)) |
+| 5 | C→S | ClientKeyExchange: g^y | -- |
 | 6 | Both | -- | PMS = ECDHE(g^xy); MS = PRF(PMS, Rc, Rs); Keys = PRF(MS, "key expansion") |
-| 7 | Câ†’S | ChangeCipherSpec, Finished (H(handshake_messages, keys)) | First msg with session keys |
-| 8 | Sâ†’C | ChangeCipherSpec, Finished | Verify integrity |
+| 7 | C→S | ChangeCipherSpec, Finished (H(handshake_messages, keys)) | First msg with session keys |
+| 8 | S→C | ChangeCipherSpec, Finished | Verify integrity |
 | 9 | â†” | Application data encrypted with AES-128-GCM | Session keys |
 
 **Pseudocode: TLS client handshake.**
@@ -1149,7 +1149,7 @@ An attacker performing a TLS MITM must either (a) present a certificate signed b
 
 **Edge case: Certificate revocation check failure.**
 
-If the OCSP responder is unreachable, most clients (browsers) use "soft-fail" â€” they proceed without revocation status (soft-fail = connection allowed, warning optional). Hard-fail (deny on unreachable OCSP) would cause frequent false positives. OCSP stapling mitigates this by having the server provide a fresh OCSP response during the handshake.
+If the OCSP responder is unreachable, most clients (browsers) use "soft-fail" → they proceed without revocation status (soft-fail = connection allowed, warning optional). Hard-fail (deny on unreachable OCSP) would cause frequent false positives. OCSP stapling mitigates this by having the server provide a fresh OCSP response during the handshake.
 
 ## 11.7 IDS/IPS
 
@@ -1286,7 +1286,7 @@ END
 802.1X is a port-based network access control (PNAC) standard. It prevents unauthorized devices from connecting to a LAN by authenticating at the data-link layer before IP assignment.
 
 **Authentication steps:**
-1. **Supplicant (client)** connects to **Authenticator (switch/AP)**. Port is in unauthorized state â€” only EAP traffic allowed.
+1. **Supplicant (client)** connects to **Authenticator (switch/AP)**. Port is in unauthorized state → only EAP traffic allowed.
 2. **Authenticator** sends EAP-Request Identity. Supplicant responds with EAP-Response Identity.
 3. **Authenticator** encapsulates EAP in RADIUS and forwards to **Authentication Server (RADIUS)**.
 4. **RADIUS server** challenges the supplicant using EAP method (EAP-TLS, PEAP, EAP-TTLS).
@@ -1342,11 +1342,11 @@ DNSSEC (DNS Security Extensions, RFC 4033-4035) provides data origin authenticat
 ## 11.12 Interview Corner
 
 ### Q1: Explain the TLS handshake steps.
-**A.** The TLS 1.2 handshake has 4 phases: (1) ClientHello â€” client sends supported versions, cipher suites, random nonce. (2) ServerHello + Certificate + ServerKeyExchange â€” server selects cipher suite, sends certificate chain and DH params. (3) ClientKeyExchange + ChangeCipherSpec + Finished â€” client sends DH share, both derive session keys, client sends encrypted verification. (4) Server ChangeCipherSpec + Finished â€” server sends encrypted verification. Application data follows encrypted with symmetric keys.
+**A.** The TLS 1.2 handshake has 4 phases: (1) ClientHello → client sends supported versions, cipher suites, random nonce. (2) ServerHello + Certificate + ServerKeyExchange → server selects cipher suite, sends certificate chain and DH params. (3) ClientKeyExchange + ChangeCipherSpec + Finished → client sends DH share, both derive session keys, client sends encrypted verification. (4) Server ChangeCipherSpec + Finished → server sends encrypted verification. Application data follows encrypted with symmetric keys.
 **TLS 1.3** reduces this to 1 RTT: ClientHello includes key_share; ServerHello includes its key_share; both compute shared secret immediately.
 
 ### Q2: Where should a firewall be placed in a network?
-**A.** Firewalls deploy at these chokepoints: (1) **Internet edge** â€” between WAN router and internal network (perimeter firewall). (2) **DMZ** â€” between internet and DMZ (external firewall) and between DMZ and internal network (internal firewall). (3) **Internal segments** â€” between different security zones (finance, HR, engineering). (4) **Data center edge** â€” at the data center aggregation layer. (5) **Cloud** â€” cloud firewalls (AWS Security Groups, Azure NSGs) at VPC/subnet boundaries.
+**A.** Firewalls deploy at these chokepoints: (1) **Internet edge** → between WAN router and internal network (perimeter firewall). (2) **DMZ** → between internet and DMZ (external firewall) and between DMZ and internal network (internal firewall). (3) **Internal segments** → between different security zones (finance, HR, engineering). (4) **Data center edge** → at the data center aggregation layer. (5) **Cloud** → cloud firewalls (AWS Security Groups, Azure NSGs) at VPC/subnet boundaries.
 
 ### Q3: Compare VPN vs MPLS.
 **A.** VPN (IPSec/SSL) encrypts traffic over an untrusted network (typically the internet). It is cheaper (no dedicated circuits) but performance depends on ISP and encryption overhead. MPLS is a private WAN technology with traffic engineering (QoS), SLAs, and no encryption by default. MPLS is more expensive, provides better performance guarantees, but requires dedicated circuits. Modern approach: use SD-WAN over VPN with MPLS as a backup.
@@ -1505,7 +1505,7 @@ Cloudflare operates one of the largest anycast networks. Their DDoS mitigation s
 
 ## Summary
 
-Network security relies on cryptography for confidentiality (AES), integrity (SHA-256, HMAC), and authentication (digital signatures, certificates). Symmetric encryption provides fast bulk encryption but requires secure key distribution. Asymmetric encryption (RSA, ECC) enables key exchange and digital signatures. PKI binds public keys to identities through CA-signed X.509 certificates. Firewalls enforce access control at the packet, state, or application level â€” NGFWs combine all three with DPI. VPNs (IPSec, TLS, WireGuard) protect communication over untrusted networks. IDS/IPS detect and block malicious traffic using signatures, anomaly detection, and behavioral analysis. DDoS mitigation requires multi-layer defense from edge routing to application-level filtering. 802.1X authenticates devices at the port level before network access. WPA3 replaces WPA2's PSK with SAE, providing forward secrecy and resistance to offline dictionary attacks. DNSSEC validates DNS response integrity through digital signatures.
+Network security relies on cryptography for confidentiality (AES), integrity (SHA-256, HMAC), and authentication (digital signatures, certificates). Symmetric encryption provides fast bulk encryption but requires secure key distribution. Asymmetric encryption (RSA, ECC) enables key exchange and digital signatures. PKI binds public keys to identities through CA-signed X.509 certificates. Firewalls enforce access control at the packet, state, or application level → NGFWs combine all three with DPI. VPNs (IPSec, TLS, WireGuard) protect communication over untrusted networks. IDS/IPS detect and block malicious traffic using signatures, anomaly detection, and behavioral analysis. DDoS mitigation requires multi-layer defense from edge routing to application-level filtering. 802.1X authenticates devices at the port level before network access. WPA3 replaces WPA2's PSK with SAE, providing forward secrecy and resistance to offline dictionary attacks. DNSSEC validates DNS response integrity through digital signatures.
 
 ## Exercises
 

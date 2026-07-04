@@ -113,10 +113,10 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
 
 ![AI and ML Fundamentals](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/ai-ml-fundamentals.png)
 
@@ -215,7 +215,7 @@ The goal is to find the sweet spot where both bias and variance are low. Increas
 | Accuracy | (TP + TN) / (TP + TN + FP + FN) | Balanced classes |
 | Precision | TP / (TP + FP) | Minimize false positives (spam detection) |
 | Recall | TP / (TP + FN) | Minimize false negatives (cancer screening) |
-| F1 Score | 2 Ãƒâ€” (Precision Ãƒâ€” Recall) / (Precision + Recall) | Imbalanced classes |
+| F1 Score | 2 Ãƒ→ (Precision Ãƒ→ Recall) / (Precision + Recall) | Imbalanced classes |
 
 ```php
 use Phpml\Metric\ClassificationReport;

@@ -44,7 +44,7 @@ flowchart LR
 
 ### 8.1 The Turing Machine Model
 
-Alan Turing introduced the Turing machine in 1936 as a model of "computation by a human clerk." It is the most powerful model of computation we have â€” anything computable by any mechanical process can be computed by a Turing machine (the Church-Turing thesis).
+Alan Turing introduced the Turing machine in 1936 as a model of "computation by a human clerk." It is the most powerful model of computation we have → anything computable by any mechanical process can be computed by a Turing machine (the Church-Turing thesis).
 
 A Turing machine consists of:
 - An **infinite tape** divided into cells, each containing a symbol from a finite alphabet.
@@ -60,7 +60,7 @@ A **Turing machine** is a 7-tuple (Q, Î£, Î“, Î´, qâ‚€, q_accept, q_
 - **Q** is a finite set of states.
 - **Î£** is the input alphabet (does not contain the blank symbol).
 - **Î“** is the tape alphabet (Î£ âŠ‚ Î“, includes blank symbol â£).
-- **Î´: Q Ã— Î“ â†’ Q Ã— Î“ Ã— {L, R}** is the transition function.
+- **Î´: Q Ã— Î“ → Q Ã— Î“ Ã— {L, R}** is the transition function.
 - **qâ‚€ âˆˆ Q** is the start state.
 - **q_accept âˆˆ Q** is the accepting state.
 - **q_reject âˆˆ Q** is the rejecting state (q_reject â‰  q_accept).
@@ -161,7 +161,7 @@ This trace shows the algorithm's pattern: each pass removes one a, one b, and on
 
 A **k-tape Turing machine** has k independent tapes, each with its own read/write head. The transition function becomes:
 
-Î´: Q Ã— Î“áµ â†’ Q Ã— Î“áµ Ã— {L, R}áµ
+Î´: Q Ã— Î“áµ → Q Ã— Î“áµ Ã— {L, R}áµ
 
 The machine reads all k heads simultaneously, writes to all k tapes, and moves all k heads.
 
@@ -186,7 +186,7 @@ flowchart LR
 
 A **nondeterministic Turing machine (NTM)** has a transition function:
 
-Î´: Q Ã— Î“ â†’ P(Q Ã— Î“ Ã— {L, R})
+Î´: Q Ã— Î“ → P(Q Ã— Î“ Ã— {L, R})
 
 At each step, the NTM may have multiple choices. It accepts if **any** branch leads to q_accept.
 
@@ -217,9 +217,9 @@ Strategy: Scan left to right, marking one a, one b, and one c each pass. Repeat 
 Detailed transitions:
 
 1. **Initial setup:** Read first symbol.
-   - If blank â†’ accept (empty string).
-   - If a â†’ mark it as X, move right to find b.
-   - If b or c â†’ reject (wrong order).
+   - If blank → accept (empty string).
+   - If a → mark it as X, move right to find b.
+   - If b or c → reject (wrong order).
 
 2. **Mark a, b, c cycle:**
    - From marked a, move right past all a's and Y's to find first b, mark as Y.
@@ -231,11 +231,11 @@ Detailed transitions:
    - If so, accept.
 
 State design:
-- qâ‚€: Initial â€” find first a, mark as X, go to qâ‚
-- qâ‚: Finding b â€” scan right over a, Y; mark first b as Y, go to qâ‚‚
-- qâ‚‚: Finding c â€” scan right over b, Z; mark first c as Z, go to qâ‚ƒ
-- qâ‚ƒ: Return left â€” scan left over X, Y, Z, a, b, c to leftmost; go to qâ‚€
-- qâ‚„: Verification â€” check all symbols are X, Y, Z
+- qâ‚€: Initial → find first a, mark as X, go to qâ‚
+- qâ‚: Finding b → scan right over a, Y; mark first b as Y, go to qâ‚‚
+- qâ‚‚: Finding c → scan right over b, Z; mark first c as Z, go to qâ‚ƒ
+- qâ‚ƒ: Return left → scan left over X, Y, Z, a, b, c to leftmost; go to qâ‚€
+- qâ‚„: Verification → check all symbols are X, Y, Z
 - q_accept, q_reject
 
 ### Example 8.2: TM for Binary Increment
@@ -251,9 +251,9 @@ State qâ‚€: move right to end of input
   Î´(qâ‚€, â£) = (qâ‚, â£, L)  -- reached end, start incrementing
 
 State qâ‚: increment current digit
-  Î´(qâ‚, 0) = (qâ‚‚, 1, L)  -- 0â†’1, done
-  Î´(qâ‚, 1) = (qâ‚, 0, L)  -- 1â†’0, carry
-  Î´(qâ‚, â£) = (qâ‚‚, 1, L)  -- overflow: 1000... â†’ 1000...1
+  Î´(qâ‚, 0) = (qâ‚‚, 1, L)  -- 0→1, done
+  Î´(qâ‚, 1) = (qâ‚, 0, L)  -- 1→0, carry
+  Î´(qâ‚, â£) = (qâ‚‚, 1, L)  -- overflow: 1000... → 1000...1
 
 State qâ‚‚: move to start and halt
   Î´(qâ‚‚, 0) = (qâ‚‚, 0, L)
@@ -261,21 +261,21 @@ State qâ‚‚: move to start and halt
   Î´(qâ‚‚, â£) = (q_accept, â£, R)
 ```
 
-Trace for "1011" (11): qâ‚€1011 â†’ * â†’ 1011 qâ‚ (at â£) â†’ 101 qâ‚ 1 â†’ 10 qâ‚ 01 â†’ 1 qâ‚ 001 â†’ qâ‚‚ 1100 â†’ * â†’ q_accept 1100 (12).
+Trace for "1011" (11): qâ‚€1011 → * → 1011 qâ‚ (at â£) → 101 qâ‚ 1 → 10 qâ‚ 01 → 1 qâ‚ 001 → qâ‚‚ 1100 → * → q_accept 1100 (12).
 
 ### Example 8.3: TM for Palindrome Recognition
 
 Language: L = { w âˆˆ {0,1}* | w = wÊ€ }.
 
 **Strategy:**
-1. Compare first and last symbols â€” if they match, erase both and repeat.
+1. Compare first and last symbols → if they match, erase both and repeat.
 2. If only Îµ or one symbol remains, accept.
 
 Transitions (sketch):
-- qâ‚€: Read first symbol. If 0 â†’ replace with X, go to qâ‚ (looking for 0 at end). If 1 â†’ replace with X, go to qâ‚‚. If blank â†’ accept.
-- qâ‚: Scan right to end, ignoring 0,1. At blank, move left. If 0 â†’ replace with X, go to qâ‚ƒ. If 1 or X â†’ reject.
+- qâ‚€: Read first symbol. If 0 → replace with X, go to qâ‚ (looking for 0 at end). If 1 → replace with X, go to qâ‚‚. If blank → accept.
+- qâ‚: Scan right to end, ignoring 0,1. At blank, move left. If 0 → replace with X, go to qâ‚ƒ. If 1 or X → reject.
 - qâ‚‚: Symmetric to qâ‚ for 1.
-- qâ‚ƒ: Scan left to beginning (past X's, 0's, 1's). At X â†’ move right to next unprocessed symbol, go to qâ‚€.
+- qâ‚ƒ: Scan left to beginning (past X's, 0's, 1's). At X → move right to next unprocessed symbol, go to qâ‚€.
 
 ### Example 8.4: Simulating a Multitape TM on a Single Tape
 

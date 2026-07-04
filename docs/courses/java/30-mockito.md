@@ -44,9 +44,9 @@ By the end of this chapter you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Mockito â€” mocking framework for unit tests | Create mocks with `@Mock`, inject with `@InjectMocks` |
-| Stubbing â€” define mock behavior with `when().thenReturn()` | Support for exceptions, answers, and callbacks |
-| Verification â€” assert interactions with `verify()` | Check invocation count, order, timeout, and argument matching |
+| Mockito → mocking framework for unit tests | Create mocks with `@Mock`, inject with `@InjectMocks` |
+| Stubbing → define mock behavior with `when().thenReturn()` | Support for exceptions, answers, and callbacks |
+| Verification → assert interactions with `verify()` | Check invocation count, order, timeout, and argument matching |
 
 ---
 ## Chapter Roadmap
@@ -299,7 +299,7 @@ class ManualInitTest {
 ```
 
 > [!TIP]
-> Use `@ExtendWith(MockitoExtension.class)` to enable Mockito annotations â€” this replaces the legacy `MockitoJUnitRunner`.
+> Use `@ExtendWith(MockitoExtension.class)` to enable Mockito annotations → this replaces the legacy `MockitoJUnitRunner`.
 
 ---
 
@@ -798,7 +798,7 @@ interface CalculatorService {
 ```
 
 > [!WARNING]
-> Do not over-stub. Only stub methods that will actually be called by the code under test â€” unnecessary stubbing makes tests brittle.
+> Do not over-stub. Only stub methods that will actually be called by the code under test → unnecessary stubbing makes tests brittle.
 
 ---
 
@@ -1061,7 +1061,7 @@ interface AsyncCallback {
 ```
 
 > [!NOTE]
-> Verification is optional â€” only verify interactions when proving a side effect occurred. Testing return values is usually sufficient.
+> Verification is optional → only verify interactions when proving a side effect occurred. Testing return values is usually sufficient.
 
 ---
 

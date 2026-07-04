@@ -81,8 +81,8 @@ public class TwoSum {
 }
 ```
 
-- **Time:** O(n) â€” single pass with hashmap
-- **Space:** O(n) â€” map stores up to n elements
+- **Time:** O(n) → single pass with hashmap
+- **Space:** O(n) → map stores up to n elements
 
 ---
 
@@ -119,7 +119,7 @@ public class BestTimeToBuyAndSellStock {
 }
 ```
 
-- **Time:** O(n) â€” single pass
+- **Time:** O(n) → single pass
 - **Space:** O(1)
 
 ---
@@ -229,7 +229,7 @@ public class FindMinimumInRotatedSortedArray {
 }
 ```
 
-- **Time:** O(log n) â€” binary search
+- **Time:** O(log n) → binary search
 - **Space:** O(1)
 
 ---
@@ -267,7 +267,7 @@ public class ContainerWithMostWater {
 }
 ```
 
-- **Time:** O(n) â€” two-pointer sweep
+- **Time:** O(n) → two-pointer sweep
 - **Space:** O(1)
 
 ---
@@ -359,7 +359,7 @@ public class MergeIntervals {
 }
 ```
 
-- **Time:** O(n log n) â€” dominated by sorting
+- **Time:** O(n log n) → dominated by sorting
 - **Space:** O(n) for output
 
 ---
@@ -453,7 +453,7 @@ public class SortColors {
 }
 ```
 
-- **Time:** O(n) â€” one pass
+- **Time:** O(n) → one pass
 - **Space:** O(1)
 
 ---
@@ -575,7 +575,7 @@ public class LongestSubstringWithoutRepeating {
 ```
 
 - **Time:** O(n)
-- **Space:** O(min(m, n)) â€” m = charset size
+- **Space:** O(min(m, n)) → m = charset size
 
 ---
 
@@ -613,7 +613,7 @@ public class ValidAnagram {
 ```
 
 - **Time:** O(n)
-- **Space:** O(1) â€” fixed 26-size array
+- **Space:** O(1) → fixed 26-size array
 
 ---
 
@@ -658,7 +658,7 @@ public class LongestPalindromicSubstring {
 }
 ```
 
-- **Time:** O(nÂ²) â€” expands from each center
+- **Time:** O(nÂ²) → expands from each center
 - **Space:** O(1)
 
 ---
@@ -695,7 +695,7 @@ public class GroupAnagrams {
 }
 ```
 
-- **Time:** O(n Â· k log k) â€” n = words, k = avg word length
+- **Time:** O(n Â· k log k) → n = words, k = avg word length
 - **Space:** O(n Â· k)
 
 ---
@@ -778,7 +778,7 @@ public class CountAndSay {
 }
 ```
 
-- **Time:** O(2â¿) â€” length grows exponentially
+- **Time:** O(2â¿) → length grows exponentially
 - **Space:** O(2â¿)
 
 ---
@@ -1847,7 +1847,7 @@ public class CoinChange {
 }
 ```
 
-- **Time:** O(amount Ã— n) â€” n = number of coin types
+- **Time:** O(amount Ã— n) → n = number of coin types
 - **Space:** O(amount)
 
 ---
@@ -1884,7 +1884,7 @@ public class LongestIncreasingSubsequence {
 }
 ```
 
-- **Time:** O(n log n) â€” binary search on tails
+- **Time:** O(n log n) → binary search on tails
 - **Space:** O(n)
 
 ---
@@ -1962,7 +1962,7 @@ public class Knapsack01 {
 ```
 
 - **Time:** O(n Â· W)
-- **Space:** O(n Â· W) â€” can be optimized to O(W)
+- **Space:** O(n Â· W) → can be optimized to O(W)
 
 ---
 
@@ -2002,7 +2002,7 @@ public class EditDistance {
 ```
 
 - **Time:** O(mÂ·n)
-- **Space:** O(mÂ·n) â€” can be optimized to O(min(m,n))
+- **Space:** O(mÂ·n) → can be optimized to O(min(m,n))
 
 ---
 
@@ -2115,7 +2115,7 @@ public class WordBreak {
 }
 ```
 
-- **Time:** O(nÂ³) â€” substring is O(n)
+- **Time:** O(nÂ³) → substring is O(n)
 - **Space:** O(n)
 
 ---
@@ -2191,7 +2191,7 @@ public class UniquePaths {
 ```
 
 - **Time:** O(mÂ·n)
-- **Space:** O(mÂ·n) â€” can be O(n)
+- **Space:** O(mÂ·n) → can be O(n)
 
 ---
 
@@ -2490,7 +2490,7 @@ public class WordLadder {
 }
 ```
 
-- **Time:** O(MÂ² Â· N) â€” M = word length, N = dictionary size
+- **Time:** O(MÂ² Â· N) → M = word length, N = dictionary size
 - **Space:** O(M Â· N)
 
 ---
@@ -2620,8 +2620,8 @@ public class AlienDictionary {
 }
 ```
 
-- **Time:** O(C) â€” C = total characters
-- **Space:** O(1) â€” max 26 letters
+- **Time:** O(C) → C = total characters
+- **Space:** O(1) → max 26 letters
 
 ---
 
@@ -2806,7 +2806,7 @@ public class KthLargestElement {
 ```
 
 - **Time:** O(n log k)
-- **Space:** O(k) â€” heap size
+- **Space:** O(k) → heap size
 
 ---
 
@@ -3231,7 +3231,7 @@ public class RomanToInteger {
 
 ### Q72: Excel Sheet Column Number
 
-**Problem:** Given a string `columnTitle` (like "A", "AB", "ZY"), return its corresponding column number. A â†’ 1, B â†’ 2, ..., Z â†’ 26, AA â†’ 27, AB â†’ 28.
+**Problem:** Given a string `columnTitle` (like "A", "AB", "ZY"), return its corresponding column number. A → 1, B → 2, ..., Z → 26, AA → 27, AB → 28.
 
 **Difficulty:** Easy
 
@@ -3296,7 +3296,7 @@ public class HappyNumber {
 }
 ```
 
-- **Time:** O(log n) â€” digit count shrinks fast
+- **Time:** O(log n) → digit count shrinks fast
 - **Space:** O(log n)
 
 ---
@@ -3438,7 +3438,7 @@ public class FindAllDuplicates {
 }
 ```
 
-- **Time:** O(n) â€” single pass with index marking
+- **Time:** O(n) → single pass with index marking
 - **Space:** O(1) excluding output
 
 ---
@@ -3480,8 +3480,8 @@ public class LongestConsecutiveSequence {
 }
 ```
 
-- **Time:** O(n) â€” each element visited at most twice
-- **Space:** O(n) â€” set storage
+- **Time:** O(n) → each element visited at most twice
+- **Space:** O(n) → set storage
 
 ---
 
@@ -3539,7 +3539,7 @@ public class MaxAreaOfIsland {
 }
 ```
 
-- **Time:** O(m Ã— n) â€” each cell visited once
+- **Time:** O(m Ã— n) → each cell visited once
 - **Space:** O(m Ã— n) worst-case recursion stack
 
 ---
@@ -3574,7 +3574,7 @@ public class JumpGameII {
 }
 ```
 
-- **Time:** O(n) â€” greedy BFS
+- **Time:** O(n) → greedy BFS
 - **Space:** O(1)
 
 ---
@@ -3620,8 +3620,8 @@ public class CombinationSum {
 }
 ```
 
-- **Time:** O(2^{target/min}) â€” branching factor
-- **Space:** O(target/min) â€” recursion depth
+- **Time:** O(2^{target/min}) → branching factor
+- **Space:** O(target/min) → recursion depth
 
 ---
 
@@ -3669,8 +3669,8 @@ public class Permutations {
 }
 ```
 
-- **Time:** O(n Ã— n!) â€” n! permutations, O(n) to copy each
-- **Space:** O(n) â€” recursion stack and used array
+- **Time:** O(n Ã— n!) → n! permutations, O(n) to copy each
+- **Space:** O(n) → recursion stack and used array
 
 ---
 
@@ -3866,8 +3866,8 @@ public class WordSearch {
 }
 ```
 
-- **Time:** O(m Ã— n Ã— 4^L) â€” L = word length
-- **Space:** O(L) â€” recursion stack
+- **Time:** O(m Ã— n Ã— 4^L) → L = word length
+- **Space:** O(L) → recursion stack
 ---
 
 ### Q86: Construct Binary Tree from Preorder and Inorder Traversal
@@ -3928,7 +3928,7 @@ public class ConstructBinaryTree {
 ```
 
 - **Time:** O(n)
-- **Space:** O(n) â€” map and recursion stack
+- **Space:** O(n) → map and recursion stack
 
 ---
 
@@ -3975,7 +3975,7 @@ public class KthSmallestBST {
 ```
 
 - **Time:** O(n) worst-case, O(h + k) average
-- **Space:** O(h) â€” stack height
+- **Space:** O(h) → stack height
 
 ---
 
@@ -4026,7 +4026,7 @@ public class ZigzagLevelOrder {
 ```
 
 - **Time:** O(n)
-- **Space:** O(n) â€” queue holds up to n nodes
+- **Space:** O(n) → queue holds up to n nodes
 
 ---
 
@@ -4183,14 +4183,14 @@ public class PalindromePartitioning {
 }
 ```
 
-- **Time:** O(n Ã— 2^n) â€” worst-case exponential
-- **Space:** O(n) â€” recursion depth
+- **Time:** O(n Ã— 2^n) → worst-case exponential
+- **Space:** O(n) → recursion depth
 
 ---
 
 ### Q92: Decode Ways
 
-**Problem:** A message containing letters A-Z is encoded as '1'â†’'A', '2'â†’'B', ..., '26'â†’'Z'. Given a string `s` containing only digits, return the number of ways to decode it.
+**Problem:** A message containing letters A-Z is encoded as '1'→'A', '2'→'B', ..., '26'→'Z'. Given a string `s` containing only digits, return the number of ways to decode it.
 
 **Difficulty:** Medium
 
@@ -4223,7 +4223,7 @@ public class DecodeWays {
 ```
 
 - **Time:** O(n)
-- **Space:** O(n) â€” can be optimized to O(1)
+- **Space:** O(n) → can be optimized to O(1)
 
 ---
 
@@ -4304,7 +4304,7 @@ public class Candy {
 }
 ```
 
-- **Time:** O(n) â€” two passes
+- **Time:** O(n) → two passes
 - **Space:** O(n)
 
 ---
@@ -4385,7 +4385,7 @@ public class FindDuplicateNumber {
 }
 ```
 
-- **Time:** O(n) â€” Floyd's cycle detection
+- **Time:** O(n) → Floyd's cycle detection
 - **Space:** O(1)
 
 ---
@@ -4427,7 +4427,7 @@ public class LongestSubstringKDistinct {
 ```
 
 - **Time:** O(n)
-- **Space:** O(k) â€” map size
+- **Space:** O(k) → map size
 
 ---
 
@@ -4473,8 +4473,8 @@ public class MinimumWindowSubstring {
 }
 ```
 
-- **Time:** O(m + n) â€” m = s length, n = t length
-- **Space:** O(1) â€” fixed array of 128
+- **Time:** O(m + n) → m = s length, n = t length
+- **Space:** O(1) → fixed array of 128
 
 ---
 
@@ -4531,8 +4531,8 @@ public class AlienDictionary {
 }
 ```
 
-- **Time:** O(C) â€” C is total characters across all words
-- **Space:** O(1) â€” at most 26 nodes
+- **Time:** O(C) → C is total characters across all words
+- **Space:** O(1) → at most 26 nodes
 
 ---
 
@@ -4627,7 +4627,7 @@ public class WordLadderII {
 }
 ```
 
-- **Time:** O(N Ã— LÂ²) â€” N = wordList size, L = word length
+- **Time:** O(N Ã— LÂ²) → N = wordList size, L = word length
 - **Space:** O(N Ã— L)
 
 ---
@@ -5023,7 +5023,7 @@ class Trie {
 
 ---
 
-> **How to use this sheet:** Read a problem â†’ identify the pattern â†’ apply the template â†’ adapt. With practice, the mapping from problem to pattern becomes automatic. Most hard problems combine two patterns (e.g., BFS + Topological Sort, Sliding Window + HashMap, Two Pointers + Greedy).
+> **How to use this sheet:** Read a problem → identify the pattern → apply the template → adapt. With practice, the mapping from problem to pattern becomes automatic. Most hard problems combine two patterns (e.g., BFS + Topological Sort, Sliding Window + HashMap, Two Pointers + Greedy).
 
 
 ---

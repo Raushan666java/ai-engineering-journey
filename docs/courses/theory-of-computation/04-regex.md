@@ -43,7 +43,7 @@ flowchart LR
 
 ### 3.1 What is a Regular Expression?
 
-A **regular expression** is a algebraic notation for describing a pattern â€” a set of strings. Regular expressions are used extensively in text processing, lexical analysis, and input validation.
+A **regular expression** is a algebraic notation for describing a pattern → a set of strings. Regular expressions are used extensively in text processing, lexical analysis, and input validation.
 
 A regular expression **r** denotes a language **L(r)**, which is a set of strings over some alphabet Î£.
 
@@ -57,10 +57,10 @@ A regular expression **r** denotes a language **L(r)**, which is a set of string
 **Inductive Step:**
 Let r and s be regular expressions denoting languages L(r) and L(s). Then:
 
-1. **(r + s)** or **(r | s)**: union/alternation â€” L(r + s) = L(r) âˆª L(s).
-2. **(r Â· s)** or **(rs)**: concatenation â€” L(rs) = L(r)L(s) = { xy | x âˆˆ L(r), y âˆˆ L(s) }.
-3. **(r\*)**: Kleene star â€” L(r*) = âˆª_{i â‰¥ 0} L(r)â± where L(r)â° = {Îµ} and L(r)â±âºÂ¹ = L(r)â±L(r).
-4. **(r)**: parentheses for grouping â€” L((r)) = L(r).
+1. **(r + s)** or **(r | s)**: union/alternation → L(r + s) = L(r) âˆª L(s).
+2. **(r Â· s)** or **(rs)**: concatenation → L(rs) = L(r)L(s) = { xy | x âˆˆ L(r), y âˆˆ L(s) }.
+3. **(r\*)**: Kleene star → L(r*) = âˆª_{i â‰¥ 0} L(r)â± where L(r)â° = {Îµ} and L(r)â±âºÂ¹ = L(r)â±L(r).
+4. **(r)**: parentheses for grouping → L((r)) = L(r).
 
 Additional derived operators:
 - **râº** = rr* (one or more repetitions).
@@ -70,9 +70,9 @@ Additional derived operators:
 ### 3.3 Operator Precedence
 
 When interpreting regular expressions without explicit parentheses, the order is:
-1. **Kleene star** (*) â€” highest precedence (binds tightest).
+1. **Kleene star** (*) → highest precedence (binds tightest).
 2. **Concatenation** (Â·).
-3. **Union** (+ or |) â€” lowest precedence.
+3. **Union** (+ or |) → lowest precedence.
 
 So `ab*c` means `a(b*)c`, not `(ab)*c` or `ab(*c)`.
 
@@ -105,7 +105,7 @@ Regular expressions satisfy algebraic laws that can be used to simplify and mani
 
 This theorem has two directions:
 
-**Direction 1 (RE â†’ FA):** Every regular expression can be converted to an NFA-Îµ.
+**Direction 1 (RE → FA):** Every regular expression can be converted to an NFA-Îµ.
 
 The conversion follows the structural induction of the regular expression definition. Each subexpression is converted to an NFA-Îµ with:
 - Exactly one start state (no incoming transitions).
@@ -123,7 +123,7 @@ Let Nâ‚ and Nâ‚‚ be the NFAs for r and s with start states sâ‚, s
 - **Concatenation** (rs): aâ‚ (of Nâ‚) --Îµ--> sâ‚‚ (of Nâ‚‚); aâ‚ becomes non-accepting; aâ‚‚ is the accept state.
 - **Star** (r*): New start sâ‚€ --Îµ--> new accept aâ‚€ (for Îµ); sâ‚€ --Îµ--> sâ‚; aâ‚ --Îµ--> sâ‚ (for loop) and aâ‚ --Îµ--> aâ‚€.
 
-**Direction 2 (FA â†’ RE):** Every DFA can be converted to a regular expression using one of:
+**Direction 2 (FA → RE):** Every DFA can be converted to a regular expression using one of:
 - **State elimination method:** Remove states one by one, updating transitions with regular expressions.
 - **Arden's lemma** (see Section 3.6): Solve a system of linear equations over languages.
 
@@ -179,14 +179,14 @@ This can be simplified further during construction.
 ### Example 3.3: Convert DFA to Regular Expression (State Elimination)
 
 Given DFA for strings with an even number of 0s over {0,1}:
-- qâ‚€ (start, accept): on 0 â†’ qâ‚, on 1 â†’ qâ‚€
-- qâ‚: on 0 â†’ qâ‚€, on 1 â†’ qâ‚
+- qâ‚€ (start, accept): on 0 → qâ‚, on 1 → qâ‚€
+- qâ‚: on 0 → qâ‚€, on 1 → qâ‚
 
-**Step 1:** Add a new start s with Îµ â†’ qâ‚€ and new accept a with Îµ from qâ‚€.
+**Step 1:** Add a new start s with Îµ → qâ‚€ and new accept a with Îµ from qâ‚€.
 
 **Step 2:** Eliminate qâ‚:
-- qâ‚€ â†’ qâ‚ â†’ qâ‚€: path qâ‚€ --0--> qâ‚ --0--> qâ‚€ adds label 00
-- qâ‚ â†’ qâ‚: loop 1
+- qâ‚€ → qâ‚ → qâ‚€: path qâ‚€ --0--> qâ‚ --0--> qâ‚€ adds label 00
+- qâ‚ → qâ‚: loop 1
 - So new transition qâ‚€ --0Â·(1)*Â·0--> qâ‚€
 - Plus existing qâ‚€ --1--> qâ‚€
 
@@ -210,7 +210,7 @@ Where Lâ‚€, Lâ‚, Lâ‚‚ are the languages accepted from states qâ�
 **Step 3:** Substitute into Lâ‚€:
 Lâ‚€ = 0Â·(1Â·Lâ‚€) + 1Â·(0Â·1Â·Lâ‚€) + Îµ = (01 + 101)Â·Lâ‚€ + Îµ
 
-**Step 4:** Apply Arden's lemma (X = AX + B â†’ X = A*B):
+**Step 4:** Apply Arden's lemma (X = AX + B → X = A*B):
 Lâ‚€ = (01 + 101)*Â·Îµ = (01 + 101)*
 
 

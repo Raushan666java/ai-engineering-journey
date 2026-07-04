@@ -43,7 +43,7 @@ flowchart LR
 
 ### 11.1 Mapping Reductions (Many-One Reductions)
 
-A **mapping reduction** from language A to language B (written A â‰¤_m B) is a computable function f: Î£* â†’ Î£* such that w âˆˆ A iff f(w) âˆˆ B.
+A **mapping reduction** from language A to language B (written A â‰¤_m B) is a computable function f: Î£* → Î£* such that w âˆˆ A iff f(w) âˆˆ B.
 
 **Key properties:**
 - If A â‰¤_m B and B is decidable, then A is decidable.
@@ -103,7 +103,7 @@ A **Turing reduction** from A to B (written A â‰¤_T B) means there is an ora
 3. Add "copy" dominoes to propagate unchanged portions of the configuration.
 4. Add "cleanup" dominoes to handle the accepting state.
 
-The undecidability of PCP is significant because PCP is a purely combinatorial problem â€” no TMs involved â€” showing that undecidability is not limited to questions about programs.
+The undecidability of PCP is significant because PCP is a purely combinatorial problem → no TMs involved → showing that undecidability is not limited to questions about programs.
 
 ### 11.5 Undecidable Problems in Formal Language Theory
 
@@ -128,9 +128,9 @@ Using PCP and other reductions, we can prove undecidability of:
 
 A problem is **RE-complete** if it is in RE and every RE problem reduces to it.
 
-**A_TM** is RE-complete (by definition of RE â€” each RE language corresponds to a TM).
+**A_TM** is RE-complete (by definition of RE → each RE language corresponds to a TM).
 
-**HALT_TM** is RE-complete: HALT_TM âˆˆ RE and A_TM â‰¤_m HALT_TM (given âŸ¨M,wâŸ©, output âŸ¨M,wâŸ© â€” if M accepts w, M certainly halts on w; if M doesn't accept, either M halts rejecting or loops, and we want halting in the HALT_TM case. Actually, the mapping is: given âŸ¨M,wâŸ©, construct M' that halts iff M accepts. More precisely: A_TM â‰¤_m HALT_TM by mapping âŸ¨M,wâŸ© to âŸ¨M', wâŸ© where M' simulates M and halts when M accepts, loops when M rejects.)
+**HALT_TM** is RE-complete: HALT_TM âˆˆ RE and A_TM â‰¤_m HALT_TM (given âŸ¨M,wâŸ©, output âŸ¨M,wâŸ© → if M accepts w, M certainly halts on w; if M doesn't accept, either M halts rejecting or loops, and we want halting in the HALT_TM case. Actually, the mapping is: given âŸ¨M,wâŸ©, construct M' that halts iff M accepts. More precisely: A_TM â‰¤_m HALT_TM by mapping âŸ¨M,wâŸ© to âŸ¨M', wâŸ© where M' simulates M and halts when M accepts, loops when M rejects.)
 
 **PCP** is also RE-complete: PCP is RE (we can nondeterministically try sequences) and A_TM â‰¤_m PCP.
 
@@ -236,7 +236,7 @@ The **busy beaver function** BB(n) = maximum number of steps a halting n-state T
 - BB(n) is not computable (otherwise we could solve the halting problem).
 - BB(1) = 1, BB(2) = 6, BB(3) = 21, BB(4) = 107, BB(5) â‰¥ 47,176,870, BB(6) is astronomically large.
 
-The busy beaver problem is an elegant example of a non-computable function â€” one that grows faster than any computable function.
+The busy beaver problem is an elegant example of a non-computable function → one that grows faster than any computable function.
 
 ## Examples
 
@@ -259,7 +259,7 @@ Can we find a match? Try: [ab/a][b/ba] = top: abb, bottom: aba. Not matching.
 
 Try: [ab/a][b/ba][a/ab] = top: abba, bottom: abaab. No.
 
-This demonstrates that finding solutions is nontrivial â€” and the problem is undecidable in general.
+This demonstrates that finding solutions is nontrivial → and the problem is undecidable in general.
 
 ### Example 11.3: Valid Mapping Reduction Proof
 
@@ -276,9 +276,9 @@ So: âŸ¨M, wâŸ© âˆ‰ A_TM iff âŸ¨M'âŸ© âˆˆ EMPTY_TM.
 
 Since co-A_TM is not RE, and EMPTY_TM is RE (we can simulate a TM and check if it accepts any string), this shows that the reduction goes the right way to prove EMPTY_TM is not RE.
 
-Wait â€” actually we need co-A_TM â‰¤_m EMPTY_TM. Since co-A_TM is not RE, this would show EMPTY_TM is not RE either. But EMPTY_TM is known to be not RE (we can prove this).
+Wait → actually we need co-A_TM â‰¤_m EMPTY_TM. Since co-A_TM is not RE, this would show EMPTY_TM is not RE either. But EMPTY_TM is known to be not RE (we can prove this).
 
-### Example 11.4: Rice's Theorem â€” Is L(M) Infinite?
+### Example 11.4: Rice's Theorem → Is L(M) Infinite?
 
 Property P = { L | L is infinite }. P is non-trivial:
 - Some RE languages are infinite (e.g., Î£*).
@@ -302,12 +302,12 @@ We reduce PCP to CFG ambiguity. Given PCP instance D = {(t1,b1), ..., (t?,b?)}:
 ### Example 11.6: Mapping Reduction for CFG Ambiguity
 
 Given PCP instance with dominoes (tâ‚,bâ‚), â€¦, (tâ‚–,bâ‚–), construct CFG:
-- S â†’ T | B
-- T â†’ tâ‚T | tâ‚Tâ‚ | tâ‚‚T | tâ‚‚Tâ‚‚ | â€¦ | tâ‚–T | tâ‚–Tâ‚–
-- B â†’ bâ‚B | bâ‚Bâ‚ | bâ‚‚B | bâ‚‚Bâ‚‚ | â€¦ | bâ‚–B | bâ‚–Bâ‚–
+- S → T | B
+- T → tâ‚T | tâ‚Tâ‚ | tâ‚‚T | tâ‚‚Tâ‚‚ | â€¦ | tâ‚–T | tâ‚–Tâ‚–
+- B → bâ‚B | bâ‚Bâ‚ | bâ‚‚B | bâ‚‚Bâ‚‚ | â€¦ | bâ‚–B | bâ‚–Bâ‚–
 Where Táµ¢ and Báµ¢ are "marker" variables.
 
-The idea: T generates sequences of top strings; B generates sequences of bottom strings. The grammar is ambiguous for some string iff the same sequence of dominoes (indices) can generate it from both T and B â€” i.e., there's a PCP solution.
+The idea: T generates sequences of top strings; B generates sequences of bottom strings. The grammar is ambiguous for some string iff the same sequence of dominoes (indices) can generate it from both T and B → i.e., there's a PCP solution.
 
 
 

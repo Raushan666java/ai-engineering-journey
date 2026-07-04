@@ -1,4 +1,4 @@
-# Chapter 10: Data Structures & Algorithms â€” GATE CS Preparation
+# Chapter 10: Data Structures & Algorithms → GATE CS Preparation
 
 ---
 
@@ -121,10 +121,10 @@ O(1) < O(log log n) < O(log n) < O((log n)Â²) < O(âˆšn) < O(n) < O(n log n)
 | T(n) = T(nâˆ’1) + n | Selection sort | Î˜(nÂ²) |
 | T(n) = 2T(nâˆ’1) + 1 | Tower of Hanoi | Î˜(2â¿) |
 | T(n) = T(n/2) + 1 | Binary search | Î˜(log n) |
-| T(n) = T(n/2) + n | â€” | Î˜(n) |
+| T(n) = T(n/2) + n | → | Î˜(n) |
 | T(n) = 2T(n/2) + n | Merge sort | Î˜(n log n) |
 | T(n) = 2T(n/2) + 1 | Tree traversal | Î˜(n) |
-| T(n) = 2T(n/2) + nÂ² | â€” | Î˜(nÂ²) |
+| T(n) = 2T(n/2) + nÂ² | → | Î˜(nÂ²) |
 | T(n) = 7T(n/2) + nÂ² | Strassen's MM | Î˜(n^{logâ‚‚7}) â‰ˆ Î˜(n^{2.81}) |
 
 ### 1.3 Amortized Analysis
@@ -135,7 +135,7 @@ O(1) < O(log log n) < O(log n) < O((log n)Â²) < O(âˆšn) < O(n) < O(n log n)
 
 **Potential Method:** Define potential function Î¦(Dáµ¢). Amortized cost = actual cost + Î¦(Dáµ¢) âˆ’ Î¦(D_{iâˆ’1}).
 
-**Example â€” Dynamic Array (table doubling):**
+**Example → Dynamic Array (table doubling):**
 - Actual cost of push: O(1) (most), O(n) (when resizing)
 - Amortized cost: O(1) per push
 - Aggregate: n pushes cost O(n), so amortized = O(1)
@@ -199,7 +199,7 @@ row_ptr   = [0, 2, 3, 5]
 |------|---------------|--------|-----------|
 | Singly | data + next | O(n) | Forward only |
 | Doubly | prev + data + next | O(2n) | Both directions |
-| Circular (Singly) | data + next (last â†’ head) | O(n) | Continuous |
+| Circular (Singly) | data + next (last → head) | O(n) | Continuous |
 | Circular (Doubly) | prev + data + next (circular) | O(2n) | Both, continuous |
 | XOR List | data + (prev âŠ• next) | O(n) (compressed) | Both (XOR trick) |
 
@@ -228,7 +228,7 @@ function hasCycle(head):
 **To find start of cycle:**
 1. Detect meeting point p
 2. Move slow to head, keep fast at p
-3. Both move 1 step at a time â†’ meet at cycle start
+3. Both move 1 step at a time → meet at cycle start
 
 **Proof:** Let cycle length = L, head-to-cycle-start = k. When slow enters cycle, fast is k ahead. They meet at distance (L âˆ’ k mod L) from cycle start. Resetting one pointer to head and moving both at speed 1 gives meeting at cycle start after exactly k steps.
 
@@ -255,7 +255,7 @@ function hasCycle(head):
 
 **Circular Queue:** rear = (rear + 1) mod SIZE; front = (front + 1) mod SIZE
 
-**Two-stack queue:** enqueue = push to s1; dequeue = if s2 empty, pop all s1â†’s2, then pop s2.
+**Two-stack queue:** enqueue = push to s1; dequeue = if s2 empty, pop all s1→s2, then pop s2.
 
 ### 4.3 Applications
 
@@ -270,9 +270,9 @@ function isValid(s):
 ```
 
 **Infix to Postfix (Shunting Yard):**
-- Operands â†’ output directly
+- Operands → output directly
 - Operators: pop while stack top has â‰¥ precedence (left-assoc) or > (right-assoc), then push
-- '(' â†’ push; ')' â†’ pop until '('
+- '(' → push; ')' → pop until '('
 
 **Postfix Evaluation:**
 ```
@@ -312,12 +312,12 @@ return pop()
 
 | Traversal | Order | Use Case |
 |-----------|-------|----------|
-| Preorder | Root â†’ Left â†’ Right | Copy tree, serialize |
-| Inorder | Left â†’ Root â†’ Right | BST sort |
-| Postorder | Left â†’ Right â†’ Root | Delete tree, expression eval |
+| Preorder | Root → Left → Right | Copy tree, serialize |
+| Inorder | Left → Root → Right | BST sort |
+| Postorder | Left → Right → Root | Delete tree, expression eval |
 | Level-order | BFS by level | Min height, shortest path |
 
-**From traversals:** Inorder + (preorder/postorder) â†’ unique tree. Only inorder alone â†’ no.
+**From traversals:** Inorder + (preorder/postorder) → unique tree. Only inorder alone → no.
 
 **Morris Traversal (Threaded, O(1) space):**
 ```
@@ -499,7 +499,7 @@ function heapSort(arr):
 **Complexity:** O(n log n)
 **Space:** O(1) in-place
 **Stability:** NOT stable
-**Not adaptive** â€” always O(n log n)
+**Not adaptive** → always O(n log n)
 
 ### 6.4 Priority Queue
 
@@ -522,8 +522,8 @@ function heapSort(arr):
 | Edge List | O(E) | O(E) | O(E) | O(1) |
 
 **When to use what:**
-- Dense graph (E â‰ˆ VÂ²) â†’ Adjacency Matrix
-- Sparse graph (E << VÂ²) â†’ Adjacency List
+- Dense graph (E â‰ˆ VÂ²) → Adjacency Matrix
+- Sparse graph (E << VÂ²) → Adjacency List
 
 ### 7.2 BFS (Breadth-First Search)
 
@@ -570,13 +570,13 @@ function dfs(start):
 | Cross | None of the above |
 
 **Applications:**
-- Cycle detection (back edge exists) â€” O(V + E)
+- Cycle detection (back edge exists) → O(V + E)
 - Topological sort (reverse of finish times)
 - Strongly connected components
 
 ### 7.4 Topological Sort
 
-**Definition:** Linear ordering of DAG vertices such that for every edge uâ†’v, u appears before v.
+**Definition:** Linear ordering of DAG vertices such that for every edge u→v, u appears before v.
 
 **Kahn's algorithm (BFS-based):**
 ```
@@ -713,7 +713,7 @@ class UnionFind:
 
 ## 8. Sorting
 
-### 8.1 Comparison Sorts â€” Complexity Summary
+### 8.1 Comparison Sorts → Complexity Summary
 
 | Algorithm | Best | Average | Worst | Space | Stable | In-place | Adaptive |
 |-----------|------|---------|-------|-------|--------|----------|----------|
@@ -726,7 +726,7 @@ class UnionFind:
 | Shell | O(n log n) | O(n^{4/3}) | O(n^{3/2}) | O(1) | No | Yes | Yes |
 | Timsort | O(n) | O(n log n) | O(n log n) | O(n) | Yes | Yes | Yes |
 
-**Comparison-based sort lower bound:** Î©(n log n) â€” proven by decision tree with n! leaves.
+**Comparison-based sort lower bound:** Î©(n log n) → proven by decision tree with n! leaves.
 
 ### 8.2 Quick Sort Details
 
@@ -796,13 +796,13 @@ function mergeSort(arr, left, right):
 
 | Sorting | Stable? | In-Place? | GATE Trap |
 |---------|---------|-----------|-----------|
-| Bubble | Yes | Yes | â€” |
-| Insertion | Yes | Yes | â€” |
+| Bubble | Yes | Yes | → |
+| Insertion | Yes | Yes | → |
 | Selection | No | Yes | Often asked: not stable |
 | Merge | Yes | No (needs O(n) aux) | In-place variant is O(n logÂ² n) |
 | Quick | No | Yes (recursive stack) | Lomuto not stable; Hoare also not stable |
-| Heap | No | Yes | â€” |
-| Counting | Yes | No (needs O(k)) | â€” |
+| Heap | No | Yes | → |
+| Counting | Yes | No (needs O(k)) | → |
 | Radix | Yes | No | Stable inner sort is critical |
 
 ---
@@ -852,7 +852,7 @@ function interpolationSearch(arr, target):
 ### 9.4 Ternary Search
 
 - Divide array into 3 parts, compare target with two midpoints
-- Complexity: O(logâ‚ƒ n) â€” same as binary search asymptotically (worse constant)
+- Complexity: O(logâ‚ƒ n) → same as binary search asymptotically (worse constant)
 - Used for unimodal functions (finding maximum/minimum of a bitonic sequence)
 
 ---
@@ -864,7 +864,7 @@ function interpolationSearch(arr, target):
 Good hash function properties: deterministic, uniform distribution, fast computation.
 
 **Common hash functions:**
-- Division method: h(k) = k mod m (avoid m = 2áµ– â€” use prime)
+- Division method: h(k) = k mod m (avoid m = 2áµ– → use prime)
 - Multiplication method: h(k) = âŒŠmÂ·(kÂ·A mod 1)âŒ‹ where A â‰ˆ (âˆš5âˆ’1)/2
 - Universal hashing: h(k) = ((aÂ·k + b) mod p) mod m
 
@@ -927,7 +927,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) O(1) (B) O(log n) (C) O(n) (D) O(nÂ²)
 
-**Answer:** C. Without tail pointer, we traverse to end â€” O(n).
+**Answer:** C. Without tail pointer, we traverse to end → O(n).
 
 **A4** [GATE 2018, 2 marks, Linked Lists] Floyd's cycle detection algorithm uses two pointers moving at speeds 1 and 2. If the list has a cycle, they will always meet. What is the minimum number of steps before meeting?
 
@@ -959,13 +959,13 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) 2 (B) 3 (C) 4 (D) 5
 
-**Answer:** B. Number of elements = (rear âˆ’ front + size) mod size = (4 âˆ’ 2 + 5) mod 5 = 2. Wait: actually 3: positions 2, 3, 4 â†’ rear âˆ’ front + 1 = 3.
+**Answer:** B. Number of elements = (rear âˆ’ front + size) mod size = (4 âˆ’ 2 + 5) mod 5 = 2. Wait: actually 3: positions 2, 3, 4 → rear âˆ’ front + 1 = 3.
 
 **A9** [GATE 2017, 2 marks, Stacks] Evaluate postfix: 2 3 4 Ã— + 5 âˆ’. Result:
 
 - (A) 5 (B) 9 (C) 11 (D) 15
 
-**Answer:** B. Stack: push 2, push 3, push 4 â†’ pop 4, pop 3 â†’ 3Ã—4=12 push â†’ pop 12, pop 2 â†’ 2+12=14 push â†’ push 5 â†’ pop 5, pop 14 â†’ 14âˆ’5=9.
+**Answer:** B. Stack: push 2, push 3, push 4 → pop 4, pop 3 → 3Ã—4=12 push → pop 12, pop 2 → 2+12=14 push → push 5 → pop 5, pop 14 → 14âˆ’5=9.
 
 ### Trees
 
@@ -980,7 +980,7 @@ When load factor exceeds threshold (typically 0.75):
 - (A) 20, 40, 30, 60, 80, 70, 50 (B) 20, 40, 30, 60, 80, 70, 50
 - (C) 20, 40, 30, 60, 80, 70, 50 (D) 80, 60, 40, 20, 30, 50, 70
 
-**Answer:** A. BST: root=50. Left subtree has 30 as root with 20 left, 40 right. Right subtree has 70 as root with 60 left, 80 right. Postorder: LRN â†’ 20, 40, 30, 60, 80, 70, 50.
+**Answer:** A. BST: root=50. Left subtree has 30 as root with 20 left, 40 right. Right subtree has 70 as root with 60 left, 80 right. Postorder: LRN → 20, 40, 30, 60, 80, 70, 50.
 
 **A12** [GATE 2017, 2 marks, AVL] Insert 43, 55, 67, 83, 94, 71 into empty AVL tree. How many rotations needed for 94?
 
@@ -1024,7 +1024,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) O(1) (B) O(log n) (C) O(n) (D) O(n log n)
 
-**Answer:** A. The 7th smallest is at one of the first 7 positions (depth â‰¤ 2). Extract min 7 times â†’ O(7 log n) but the question asks about finding â€” the element is guaranteed within first 7 positions.
+**Answer:** A. The 7th smallest is at one of the first 7 positions (depth â‰¤ 2). Extract min 7 times → O(7 log n) but the question asks about finding → the element is guaranteed within first 7 positions.
 
 **A19** [GATE 2017, 2 marks, Heaps] Array [12, 10, 15, 8, 9, 14, 13, 6, 7]. Is this a max-heap?
 
@@ -1070,7 +1070,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) O(VÂ²) (B) O(VÂ³) (C) O(VE) (D) O(E log V)
 
-**Answer:** B. Three nested loops â†’ O(VÂ³).
+**Answer:** B. Three nested loops → O(VÂ³).
 
 **A26** [GATE 2021, 2 marks, Bellman-Ford] Bellman-Ford for V vertices, E edges. Number of relaxations:
 
@@ -1088,7 +1088,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) O(VÂ²) (B) O(E log V) (C) O(V log V) (D) O(VE)
 
-**Answer:** A. With adjacency matrix, each extract-min scans V vertices â†’ O(VÂ²).
+**Answer:** A. With adjacency matrix, each extract-min scans V vertices → O(VÂ²).
 
 ### Sorting
 
@@ -1096,7 +1096,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) Merge sort (B) Heap sort (C) Quick sort (D) Insertion sort
 
-**Answer:** D. Insertion sort is adaptive â€” O(n) when input is already sorted.
+**Answer:** D. Insertion sort is adaptive → O(n) when input is already sorted.
 
 **A30** [GATE 2016, 2 marks, Sorting] Which of the following is O(n log n) in worst case?
 
@@ -1147,7 +1147,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) 2 (B) 3 (C) 4 (D) 5
 
-**Answer:** C. 12 â†’ slot 2. 22 â†’ slot 2 (collision) â†’ slot 3. 32 â†’ slot 2 (collision) â†’ slot 3 (collision) â†’ slot 4. 42 â†’ ... â†’ slot 5. 52 â†’ ... â†’ slot 6. Total collisions = 4.
+**Answer:** C. 12 → slot 2. 22 → slot 2 (collision) → slot 3. 32 → slot 2 (collision) → slot 3 (collision) → slot 4. 42 → ... → slot 5. 52 → ... → slot 6. Total collisions = 4.
 
 **A38** [GATE 2018, 2 marks, Hashing] Load factor Î± = 0.75. Expected probes in successful search with linear probing:
 
@@ -1167,7 +1167,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) Î˜(n) (B) Î˜(n log n) (C) Î˜(nÂ²) (D) Î˜(log n)
 
-**Answer:** B. Master theorem case 2: a=2, b=2, log_b a = 1, f(n)=n = nÂ¹Â·logâ° n â†’ T(n) = Î˜(n log n).
+**Answer:** B. Master theorem case 2: a=2, b=2, log_b a = 1, f(n)=n = nÂ¹Â·logâ° n → T(n) = Î˜(n log n).
 
 **A41** [GATE 2016, 1 mark, Recurrence] T(n) = T(nâˆ’1) + n. T(1) = 1. T(n) = ?
 
@@ -1230,7 +1230,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) Î˜(log n) (B) Î˜(logÂ² n) (C) Î˜(âˆšn) (D) Î˜(log nÂ·log log n)
 
-**Answer:** B. Let n = 2áµ. T(2áµ) = 2T(2^{m/2}) + m. S(m) = T(2áµ). S(m) = 2S(m/2) + m â†’ Î˜(m log m) = Î˜(log nÂ·log log n). Wait: Master theorem: a=2, b=2, S(m) = 2S(m/2) + m â†’ Case 2: Î˜(m log m) = Î˜(log nÂ·log log n).
+**Answer:** B. Let n = 2áµ. T(2áµ) = 2T(2^{m/2}) + m. S(m) = T(2áµ). S(m) = 2S(m/2) + m → Î˜(m log m) = Î˜(log nÂ·log log n). Wait: Master theorem: a=2, b=2, S(m) = 2S(m/2) + m → Case 2: Î˜(m log m) = Î˜(log nÂ·log log n).
 
 **A51** [GATE 2025, 2 marks, Graph] Which graph algorithm uses a stack as its primary data structure?
 
@@ -1270,11 +1270,11 @@ When load factor exceeds threshold (typically 0.75):
 **Examples:**
 | Recurrence | Trap | Correct |
 |------------|------|---------|
-| T(n) = 2T(n/2) + n | Think O(n) | O(n log n) â€” Master case 2 |
-| T(n) = T(n/2) + n | Think O(log n) | O(n) â€” Master case 3 |
+| T(n) = 2T(n/2) + n | Think O(n) | O(n log n) → Master case 2 |
+| T(n) = T(n/2) + n | Think O(log n) | O(n) → Master case 3 |
 | T(n) = 2T(âˆšn) + log n | Try n directly | Let n=2áµ, get Î˜(log nÂ·log log n) |
-| T(n) = 3T(n/3) + n/2 | Think O(n) | O(n log n) â€” Master case 2 |
-| T(n) = T(nâˆ’1) + 1/n | Think O(n) | O(log n) â€” Harmonic series |
+| T(n) = 3T(n/3) + n/2 | Think O(n) | O(n log n) → Master case 2 |
+| T(n) = T(nâˆ’1) + 1/n | Think O(n) | O(log n) → Harmonic series |
 
 ### Trap 2: BST Deletion
 
@@ -1295,12 +1295,12 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Trap 4: Hash Table Probing Sequences
 
-- **Linear probing:** Primary clustering â†’ long runs of occupied slots
-- **Quadratic probing:** Secondary clustering â†’ keys with same initial hash follow same probe sequence
-- **Double hashing:** Best â€” two independent hash functions
+- **Linear probing:** Primary clustering → long runs of occupied slots
+- **Quadratic probing:** Secondary clustering → keys with same initial hash follow same probe sequence
+- **Double hashing:** Best → two independent hash functions
 - **GATE trick:** Calculate probe sequence for a given key; determine if insertion succeeds
 
-**Common question pattern:** "Key x cannot be inserted due to infinite loop" â€” check if probe sequence covers all slots (depends on m being prime for quadratic probing).
+**Common question pattern:** "Key x cannot be inserted due to infinite loop" → check if probe sequence covers all slots (depends on m being prime for quadratic probing).
 
 ### Trap 5: Sorting Stability and In-Place
 
@@ -1315,8 +1315,8 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Trap 6: MST Edge Weights
 
-- **Unique MST:** If all edge weights are distinct â†’ MST is unique
-- **Non-unique MST:** If edges have equal weights â†’ multiple MSTs possible
+- **Unique MST:** If all edge weights are distinct → MST is unique
+- **Non-unique MST:** If edges have equal weights → multiple MSTs possible
 - **Lightest edge:** Not necessarily in every MST (if it creates a cycle with lighter alternatives)
 - **Heaviest edge in a cycle:** Never in any MST (cycle property)
 
@@ -1325,7 +1325,7 @@ When load factor exceeds threshold (typically 0.75):
 - n^{log n} vs 2^{âˆšn}: Take log of both: (log n)Â² vs âˆšnÂ·log 2. Since (log n)Â² = o(âˆšn), we get n^{log n} = o(2^{âˆšn})
 - (log n)^{log n} vs n/log n: Take log: log log n Â· log n vs log n âˆ’ log log n. First = Î˜(log nÂ·log log n), second = Î˜(log n). So (log n)^{log n} = Ï‰(n/log n)
 - log(n!) = Î˜(n log n) via Stirling's approximation
-- n^{1/n} â†’ 1 as n â†’ âˆž
+- n^{1/n} → 1 as n → âˆž
 
 ---
 
@@ -1380,22 +1380,22 @@ When load factor exceeds threshold (typically 0.75):
 
 ## 14. Recurrence Relation Quick Reference
 
-### 14.1 Master Theorem â€” Detailed Cases
+### 14.1 Master Theorem → Detailed Cases
 
 Given T(n) = aÂ·T(n/b) + f(n), compare f(n) with n^{log_b a}:
 
 **Case 1 (Leaf-heavy):** f(n) = O(n^{log_b a âˆ’ Îµ})
 - T(n) = Î˜(n^{log_b a})
-- Example: T(n) = 2T(n/2) + 1 â†’ Î˜(n)
+- Example: T(n) = 2T(n/2) + 1 → Î˜(n)
 
 **Case 2 (Equal):** f(n) = Î˜(n^{log_b a}Â·log^k n)
 - T(n) = Î˜(n^{log_b a}Â·log^{k+1} n)
-- Example: T(n) = 2T(n/2) + n â†’ Î˜(n log n)
-- Example: T(n) = 2T(n/2) + n log n â†’ Î˜(n logÂ² n)
+- Example: T(n) = 2T(n/2) + n → Î˜(n log n)
+- Example: T(n) = 2T(n/2) + n log n → Î˜(n logÂ² n)
 
 **Case 3 (Root-heavy):** f(n) = Î©(n^{log_b a + Îµ}) + regularity
 - T(n) = Î˜(f(n))
-- Example: T(n) = T(n/2) + n â†’ Î˜(n)
+- Example: T(n) = T(n/2) + n → Î˜(n)
 
 ### 14.2 Extended Master Theorem
 
@@ -1429,23 +1429,23 @@ For T(n) = Î£ a_iÂ·T(b_iÂ·n + h_i(n)) + g(n):
 Fibonacci: F(n) = F(nâˆ’1) + F(nâˆ’2)
 - Characteristic: xÂ² âˆ’ x âˆ’ 1 = 0
 - Roots: Ï† = (1 + âˆš5)/2, Ïˆ = (1 âˆ’ âˆš5)/2
-- Closed form: F(n) = (Ï†â¿ âˆ’ Ïˆâ¿)/âˆš5 â†’ exponential growth O(Ï†â¿)
+- Closed form: F(n) = (Ï†â¿ âˆ’ Ïˆâ¿)/âˆš5 → exponential growth O(Ï†â¿)
 
 ---
 
 ## 15. GATE Exam Strategy for DSA
 
 **Priority order by weight:**
-1. **Graphs** (6â€“10 marks) â€” BFS/DFS, MST algorithms, shortest paths, topological sort
-2. **Trees** (5â€“8 marks) â€” BST operations, AVL rotations, B/B+ tree properties, traversals
-3. **Sorting** (3â€“5 marks) â€” Complexity, stability, in-place, non-comparison sorts
-4. **Complexity Analysis** (3â€“5 marks) â€” Master theorem, recurrence solving, asymptotic notations
-5. **Hashing** (2â€“4 marks) â€” Probing sequences, load factor, rehashing
-6. **Stacks & Queues** (2â€“4 marks) â€” Expression evaluation, postfix/prefix/infix conversion
-7. **Heaps** (2â€“4 marks) â€” Heapify, heap sort, priority queue
-8. **Arrays** (2â€“4 marks) â€” Address calculation, sparse matrices
-9. **Linked Lists** (1â€“3 marks) â€” Operations, cycle detection
-10. **Searching** (1â€“2 marks) â€” Binary search, interpolation search
+1. **Graphs** (6â€“10 marks) → BFS/DFS, MST algorithms, shortest paths, topological sort
+2. **Trees** (5â€“8 marks) → BST operations, AVL rotations, B/B+ tree properties, traversals
+3. **Sorting** (3â€“5 marks) → Complexity, stability, in-place, non-comparison sorts
+4. **Complexity Analysis** (3â€“5 marks) → Master theorem, recurrence solving, asymptotic notations
+5. **Hashing** (2â€“4 marks) → Probing sequences, load factor, rehashing
+6. **Stacks & Queues** (2â€“4 marks) → Expression evaluation, postfix/prefix/infix conversion
+7. **Heaps** (2â€“4 marks) → Heapify, heap sort, priority queue
+8. **Arrays** (2â€“4 marks) → Address calculation, sparse matrices
+9. **Linked Lists** (1â€“3 marks) → Operations, cycle detection
+10. **Searching** (1â€“2 marks) → Binary search, interpolation search
 
 **Key formulas to memorize:**
 - Catalan number: Câ‚™ = (2n)!/((n+1)!n!)
@@ -1464,4 +1464,4 @@ Fibonacci: F(n) = F(nâˆ’1) + F(nâˆ’2)
 
 ---
 
-*End of Chapter 10 â€” Data Structures & Algorithms for GATE CS. Target: 1200â€“2000 lines covering all GATE-relevant DSA topics with 50+ PYQs (2010â€“2025), complexity cheat sheet, recurrence reference, and trap analysis.*
+*End of Chapter 10 → Data Structures & Algorithms for GATE CS. Target: 1200â€“2000 lines covering all GATE-relevant DSA topics with 50+ PYQs (2010â€“2025), complexity cheat sheet, recurrence reference, and trap analysis.*

@@ -1,6 +1,6 @@
 # Generics, Annotations & Reflection
 
-Java's type system extends far beyond the simple class-and-interface hierarchy. Three powerful mechanismsâ€”**generics**, **annotations**, and **reflection**â€”give developers the ability to write type-safe, self-describing, and introspectable code. Generics enable compile-time type checking for collections and algorithms. Annotations attach metadata to code elements without changing their behavior. Reflection opens the runtime structure of classes for frameworks and tools. Together, they form the foundation of every major Java framework, including Spring Boot, JPA/Hibernate, and Jackson.
+Java's type system extends far beyond the simple class-and-interface hierarchy. Three powerful mechanisms→**generics**, **annotations**, and **reflection**→give developers the ability to write type-safe, self-describing, and introspectable code. Generics enable compile-time type checking for collections and algorithms. Annotations attach metadata to code elements without changing their behavior. Reflection opens the runtime structure of classes for frameworks and tools. Together, they form the foundation of every major Java framework, including Spring Boot, JPA/Hibernate, and Jackson.
 
 This chapter explores each mechanism in depth, from the type-parameter syntax of generic classes through the runtime introspection of the Reflection API, and concludes with a look at how Spring Boot leverages these features to build its auto-configuration and dependency-injection machinery.
 
@@ -229,7 +229,7 @@ public class RawTypeDemo {
 
     public static void main(String[] args) {
         @SuppressWarnings("rawtypes")
-        Box rawBox = new Box("raw");               // raw type â€” compiler warning
+        Box rawBox = new Box("raw");               // raw type → compiler warning
         rawBox.setValue(42);                        // no type safety
 
         Box<String> safeBox = rawBox;               // unchecked assignment warning
@@ -447,10 +447,10 @@ import java.util.*;
 public class DiamondOperatorDemo {
 
     public static void main(String[] args) {
-        // Before Java 7 â€” redundant type on both sides
+        // Before Java 7 → redundant type on both sides
         Map<String, List<Integer>> oldWay = new HashMap<String, List<Integer>>();
 
-        // Java 7+ â€” diamond operator infers the type
+        // Java 7+ → diamond operator infers the type
         Map<String, List<Integer>> diamond = new HashMap<>();
 
         // Works in assignment contexts
@@ -512,7 +512,7 @@ public class TypeInferenceDemo {
 
 ## Wildcards
 
-Wildcards (`?`) introduce **usage-site variance**â€”the ability to specify how a generic type parameter may vary at the point of use, rather than at the point of declaration.
+Wildcards (`?`) introduce **usage-site variance**→the ability to specify how a generic type parameter may vary at the point of use, rather than at the point of declaration.
 
 ### Unbounded Wildcard (`?`)
 
@@ -680,7 +680,7 @@ With `List<? super Integer>`, you can safely **add** `Integer` instances, but wh
 
 - If a parameter **produces** values (you read from it), use `? extends T`.
 - If a parameter **consumes** values (you write to it), use `? super T`.
-- If both, don't use wildcardsâ€”use a plain type parameter.
+- If both, don't use wildcards→use a plain type parameter.
 
 ```java
 import java.util.List;
@@ -689,8 +689,8 @@ import java.util.ArrayList;
 
 public class PECSDemo {
 
-    // Producer: copy reads from source â†’ ? extends T
-    // Consumer: copy writes to dest â†’ ? super T
+    // Producer: copy reads from source → ? extends T
+    // Consumer: copy writes to dest → ? super T
     public static <T> void copy(
             List<? extends T> source,
             List<? super T> dest) {
@@ -736,8 +736,8 @@ public class PECSDemo {
         List<Integer> ints = List.of(1, 4, 2, 8, 5, 7);
         List<Number> nums = new ArrayList<>();
 
-        // Producer: ints (? extends Integer) â†’ produces Integers (read)
-        // Consumer: nums (? super Number) â†’ consumes Numbers (write)
+        // Producer: ints (? extends Integer) → produces Integers (read)
+        // Consumer: nums (? super Number) → consumes Numbers (write)
         copy(ints, nums);
         System.out.println("Copied: " + nums);
 
@@ -818,7 +818,7 @@ public class TypeErasureDemo {
 
 ### Bridge Methods
 
-When erasure causes a type conflict in a subclass, the compiler generates a **bridge method**â€”a synthetic method with erased signatures that delegates to the typed method.
+When erasure causes a type conflict in a subclass, the compiler generates a **bridge method**→a synthetic method with erased signatures that delegates to the typed method.
 
 ```java
 import java.util.Objects;
@@ -880,7 +880,7 @@ public class BridgeMethodDemo {
         // Direct typed call
         stringNode.setData("hello");
 
-        // Call via erased type â€” invokes bridge method
+        // Call via erased type → invokes bridge method
         Node<String> node = stringNode;
         node.setData("world");
 
@@ -913,7 +913,7 @@ public class HeapPollutionDemo {
 
         // This line throws ClassCastException at runtime
         try {
-            String s = arrayOfLists[0].get(0);           // Integer â†’ String cast
+            String s = arrayOfLists[0].get(0);           // Integer → String cast
             System.out.println(s);
         } catch (ClassCastException e) {
             System.err.println("Heap pollution detected: " + e.getMessage());
@@ -955,7 +955,7 @@ public class SafeVarargsDemo {
         }
     }
 
-    // NOT @SafeVarargs â€” this method is unsafe!
+    // NOT @SafeVarargs → this method is unsafe!
     @SuppressWarnings("unchecked")
     public static <T> T[] toArray(List<T> list, T[] template) {
         List<?>[] arr = new List<?>[1];   // generic array creation
@@ -1011,17 +1011,17 @@ public class ReifiableTypesDemo {
         // instanceof works for reifiable types only
         Object obj = "hello";
 
-        System.out.println(obj instanceof String);          // OK â€” reifiable
-        System.out.println(obj instanceof List);            // OK â€” raw type
-        System.out.println(obj instanceof List<?>);         // OK â€” unbounded wildcard
+        System.out.println(obj instanceof String);          // OK → reifiable
+        System.out.println(obj instanceof List);            // OK → raw type
+        System.out.println(obj instanceof List<?>);         // OK → unbounded wildcard
 
         // These do NOT compile:
-        // System.out.println(obj instanceof List<String>);   // Error â€” non-reifiable
-        // System.out.println(obj instanceof List<? extends Number>); // Error â€” non-reifiable
+        // System.out.println(obj instanceof List<String>);   // Error → non-reifiable
+        // System.out.println(obj instanceof List<? extends Number>); // Error → non-reifiable
 
-        // Generic array creation â€” only for reifiable types
+        // Generic array creation → only for reifiable types
         String[] strings = new String[10];                   // OK
-        List<?>[] lists = new List<?>[10];                   // OK â€” unbounded wildcard
+        List<?>[] lists = new List<?>[10];                   // OK → unbounded wildcard
 
         // This does NOT compile:
         // List<String>[] arrayOfLists = new List<String>[10]; // Error
@@ -1055,10 +1055,10 @@ public class GenericsLimitationsDemo {
         // System.out.println(obj instanceof ArrayList<String>); // Compile error
 
         // 4. Cannot use primitive type arguments
-        // List<int> primitiveList; // Compile error â€” use List<Integer>
+        // List<int> primitiveList; // Compile error → use List<Integer>
 
         // 5. Cannot overload methods with same erasure
-        // See the overloaded methods below â€” only one compiles
+        // See the overloaded methods below → only one compiles
 
         // 6. Cannot catch or throw generic types
         // try { } catch (T e) { } // Compile error
@@ -1069,7 +1069,7 @@ public class GenericsLimitationsDemo {
         System.out.println(ints.getClass() == strings.getClass()); // true
     }
 
-    // These two methods have the same erasure â€” only one can exist:
+    // These two methods have the same erasure → only one can exist:
     // public void process(List<String> items) { }
     // public void process(List<Integer> items) { } // Error: same erasure
 
@@ -1116,12 +1116,12 @@ Meta-annotations annotate other annotations. The key meta-annotations in `java.l
 ```java
 import java.lang.annotation.*;
 
-// @Retention â€” how long the annotation is retained
+// @Retention → how long the annotation is retained
 @Retention(RetentionPolicy.RUNTIME)   // Available at runtime via reflection
 // @Retention(RetentionPolicy.CLASS)  // Stored in .class file but not at runtime (default)
 // @Retention(RetentionPolicy.SOURCE) // Discarded by compiler
 
-// @Target â€” what program elements can be annotated
+// @Target → what program elements can be annotated
 @Target({
     ElementType.TYPE,                  // Classes, interfaces, enums, records
     ElementType.FIELD,                 // Fields
@@ -1148,7 +1148,7 @@ public @interface MetaAnnotationDemo {
 
 }
 
-// @Documented â€” includes this annotation in generated Javadoc
+// @Documented → includes this annotation in generated Javadoc
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
@@ -1156,7 +1156,7 @@ public @interface DocumentedAnnotation {
     String value();
 }
 
-// @Inherited â€” annotation is inherited by subclasses
+// @Inherited → annotation is inherited by subclasses
 @Inherited
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
@@ -1164,7 +1164,7 @@ public @interface Inheritable {
     boolean enabled() default true;
 }
 
-// @Repeatable â€” allows multiple instances on the same element (Java 8+)
+// @Repeatable → allows multiple instances on the same element (Java 8+)
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Repeatable(Schedules.class)
@@ -1614,7 +1614,7 @@ public class ReflectionInvocationDemo {
             Transactional tx = method.getAnnotation(Transactional.class);
             if (tx != null) {
                 System.out.println(method.getName()
-                        + " â€” propagation: " + tx.propagation()
+                        + " → propagation: " + tx.propagation()
                         + ", readOnly: " + tx.readOnly());
             }
         }
@@ -1671,7 +1671,7 @@ public class RuntimeAnnotationAccessDemo {
                 columnMappings.put(field.getName(), column.name());
                 System.out.println("@" + Column.class.getSimpleName()
                         + " on " + field.getName()
-                        + " â†’ column '" + column.name() + "'"
+                        + " → column '" + column.name() + "'"
                         + " (nullable: " + column.nullable()
                         + ", length: " + column.length()
                         + ", unique: " + column.unique() + ")");
@@ -2106,7 +2106,7 @@ Spring Boot makes extensive use of annotations for configuration, dependency inj
 ### Stereotype Annotations
 
 ```java
-// @Component â€” generic stereotype for any Spring-managed bean
+// @Component → generic stereotype for any Spring-managed bean
 @Component
 public class GenericComponent {
 
@@ -2116,7 +2116,7 @@ public class GenericComponent {
 
 }
 
-// @Service â€” specialization of @Component for service-layer classes
+// @Service → specialization of @Component for service-layer classes
 @Service
 public class UserService {
 
@@ -2126,7 +2126,7 @@ public class UserService {
 
 }
 
-// @Repository â€” specialization for persistence-layer classes
+// @Repository → specialization for persistence-layer classes
 // Adds automatic persistence exception translation
 @Repository
 public class JdbcUserRepository {
@@ -2138,7 +2138,7 @@ public class JdbcUserRepository {
 
 }
 
-// @Controller â€” specialization for web-layer classes (MVC)
+// @Controller → specialization for web-layer classes (MVC)
 @Controller
 public class UserController {
 
@@ -2149,7 +2149,7 @@ public class UserController {
 
 }
 
-// @RestController â€” convenience combination of @Controller + @ResponseBody
+// @RestController → convenience combination of @Controller + @ResponseBody
 // @RestController
 // public class ApiUserController {
 //
@@ -2175,7 +2175,7 @@ public class AutowiredDemoService {
     @Autowired
     private UserRepository userRepository;
 
-    // Constructor injection â€” preferred approach in modern Spring
+    // Constructor injection → preferred approach in modern Spring
     private final NotificationService notificationService;
 
     public AutowiredDemoService(NotificationService notificationService) {
@@ -2210,7 +2210,7 @@ public class AutowiredDemoService {
 
 ### Meta-Annotations and Composed Annotations
 
-Spring heavily uses **meta-annotations**â€”annotations that are themselves annotated with other annotations. This enables **composed annotations** where a single annotation encapsulates multiple behaviors.
+Spring heavily uses **meta-annotations**→annotations that are themselves annotated with other annotations. This enables **composed annotations** where a single annotation encapsulates multiple behaviors.
 
 ```java
 import org.springframework.stereotype.Component;
@@ -2335,7 +2335,7 @@ Java 9 introduced the **Java Platform Module System** (JPMS), which adds strong 
 A module must explicitly allow runtime access with the `opens` directive:
 
 ```java
-// module-info.java â€” module declaration
+// module-info.java → module declaration
 
 module com.example.myapp {
     // Opens specific packages for reflection
@@ -2379,7 +2379,7 @@ public class ModuleReflectionDemo {
         System.out.println("String module: " + stringModule.getName());
         System.out.println("String module is named: " + stringModule.isNamed());
 
-        // Open module â€” all packages are fully accessible via reflection
+        // Open module → all packages are fully accessible via reflection
         // @SuppressWarnings("unchecked")
         // Class<OpenModuleClass> clazz = (Class<OpenModuleClass>)
         //         Class.forName("com.example.openmodule.OpenModuleClass");
@@ -2387,7 +2387,7 @@ public class ModuleReflectionDemo {
         //     method.setAccessible(true); // Works because module is open
         // }
 
-        // Non-open module â€” reflection is restricted
+        // Non-open module → reflection is restricted
         Class<?> systemClass = Class.forName("java.lang.reflect.Proxy");
         try {
             // This will throw InaccessibleObjectException in recent JDKs
@@ -2497,7 +2497,7 @@ public class SuperTypeTokenDemo {
         Map<Integer, String> map = get(new TypeReference<Map<Integer, String>>() {});
         System.out.println("Map: " + map);
 
-        // These are distinct types â€” won't conflict
+        // These are distinct types → won't conflict
         register(new TypeReference<List<Integer>>() {}, List.of(1, 2, 3));
         List<Integer> ints = get(new TypeReference<List<Integer>>() {});
         System.out.println("Integers: " + ints);
@@ -2542,13 +2542,13 @@ public class JacksonTypeReferenceDemo {
                 ]
                 """;
 
-        // Without TypeReference â€” returns List<Map> (raw types)
+        // Without TypeReference → returns List<Map> (raw types)
         List<Map<String, Object>> raw = mapper.readValue(
                 json, List.class
         );
         System.out.println("Raw type: " + raw.getClass());
 
-        // With TypeReference â€” preserves generic type
+        // With TypeReference → preserves generic type
         List<User> users = mapper.readValue(
                 json,
                 new TypeReference<List<User>>() {}
@@ -2655,7 +2655,7 @@ public abstract class GenericDao<T, ID> {
 
 This chapter covered three deeply interconnected mechanisms that define advanced Java programming.
 
-**Generics** provide compile-time type safety for collections, algorithms, and data structures. Type parameters (`T`, `E`, `K`, `V`) allow classes and methods to operate on types specified by the caller. Bounded type parameters (`<T extends Comparable<T>>`) and multiple bounds (`<T extends A & B>`) constrain the types that can be used. Wildcards introduce usage-site variance: `? extends T` for producers, `? super T` for consumersâ€”the fundamental PECS principle. Type erasure removes generic information at compile time, inserting casts and generating bridge methods as needed. This erasure imposes limitations: no generic array creation, no `instanceof` with parameterized types, and potential heap pollution, which `@SafeVarargs` helps mitigate.
+**Generics** provide compile-time type safety for collections, algorithms, and data structures. Type parameters (`T`, `E`, `K`, `V`) allow classes and methods to operate on types specified by the caller. Bounded type parameters (`<T extends Comparable<T>>`) and multiple bounds (`<T extends A & B>`) constrain the types that can be used. Wildcards introduce usage-site variance: `? extends T` for producers, `? super T` for consumers→the fundamental PECS principle. Type erasure removes generic information at compile time, inserting casts and generating bridge methods as needed. This erasure imposes limitations: no generic array creation, no `instanceof` with parameterized types, and potential heap pollution, which `@SafeVarargs` helps mitigate.
 
 **Annotations** attach metadata to Java code elements. Custom annotations are defined with `@interface` and controlled by meta-annotations: `@Retention` (when available), `@Target` (where applicable), `@Documented` (Javadoc inclusion), `@Inherited` (subclass propagation), and `@Repeatable` (multiple instances). Annotation processing can occur at compile time via APT (JSR 269) or at runtime via reflection.
 
@@ -2667,7 +2667,7 @@ Together, generics, annotations, and reflection form a triad that enables the fr
 
 ---
 
-> **Pro Tip:** Type every code example yourself â€” muscle memory for Java syntax is built through active practice, not passive reading.
+> **Pro Tip:** Type every code example yourself → muscle memory for Java syntax is built through active practice, not passive reading.
 
 > **Remember:** Understanding the "why" behind Java language features is more important than memorizing syntax.
 

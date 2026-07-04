@@ -39,7 +39,7 @@ flowchart LR
     F --> G[Performance Tuning]
 ```
 
-> **Warning:** N+1 query problem is the most common Hibernate performance issue. Always verify generated SQL â€” look for unexpected SELECT statements in logs.
+> **Warning:** N+1 query problem is the most common Hibernate performance issue. Always verify generated SQL → look for unexpected SELECT statements in logs.
 
 ## 1. Entity Mapping Fundamentals
 

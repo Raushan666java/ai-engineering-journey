@@ -61,7 +61,7 @@ Security threats are actions or events that compromise the confidentiality, inte
 
 ### Real-World Analogy
 
-> **Apartment Building Security**: Just as an apartment building has multiple layers (front door lock, mailbox lock, apartment door lock, safe), an OS has layered security. A "threat" is anyone trying to bypass these layers â€” a burglar picking the front lock, a thief stealing mail, a neighbor entering your apartment.
+> **Apartment Building Security**: Just as an apartment building has multiple layers (front door lock, mailbox lock, apartment door lock, safe), an OS has layered security. A "threat" is anyone trying to bypass these layers → a burglar picking the front lock, a thief stealing mail, a neighbor entering your apartment.
 
 ### Threat Classification
 
@@ -78,14 +78,14 @@ Security threats are actions or events that compromise the confidentiality, inte
 ### Malware Attack Chain (Numbered Steps)
 
 ```
-Step 1: Delivery â€” Attacker delivers payload via email, exploit, or USB
-Step 2: Execution â€” User opens file or exploit triggers code execution
-Step 3: Persistence â€” Malware installs itself (registry keys, cron jobs, services)
-Step 4: Privilege Escalation â€” Malware escalates to SYSTEM/root
-Step 5: Defense Evasion â€” Malware disables AV, hides processes, clears logs
-Step 6: Credential Access â€” Malware steals passwords, tokens, hashes
-Step 7: Lateral Movement â€” Malware spreads to other systems on the network
-Step 8: Exfiltration/Impact â€” Data stolen or system encrypted/destroyed
+Step 1: Delivery → Attacker delivers payload via email, exploit, or USB
+Step 2: Execution → User opens file or exploit triggers code execution
+Step 3: Persistence → Malware installs itself (registry keys, cron jobs, services)
+Step 4: Privilege Escalation → Malware escalates to SYSTEM/root
+Step 5: Defense Evasion → Malware disables AV, hides processes, clears logs
+Step 6: Credential Access → Malware steals passwords, tokens, hashes
+Step 7: Lateral Movement → Malware spreads to other systems on the network
+Step 8: Exfiltration/Impact → Data stolen or system encrypted/destroyed
 ```
 
 ### Pseudocode: Basic Malware Scanner
@@ -333,12 +333,12 @@ FUNCTION authenticateUser(username, password):
 | Step | Input | Action | State | Output |
 |------|-------|--------|-------|--------|
 | 1 | "alice", "pass123" | Query DB for user | Found: salt=0xAB12, hash=0x7D3F | OK |
-| 2 | â€” | Hash password with salt | hash("pass123" + "AB12") = ? | Calculate |
-| 3 | â€” | Slow hash: bcrypt with cost=12 | ~250ms computation | Result: 0x7D3F |
-| 4 | â€” | Compare computed vs stored | 0x7D3F == 0x7D3F | Match |
-| 5 | â€” | Generate session token | UUID v4: "a1b2c3..." | Token |
-| 6 | â€” | Store session in DB | key:token, value:alice, TTL:3600s | Stored |
-| 7 | â€” | Return success | â€” | "SUCCESS: a1b2c3..." |
+| 2 | → | Hash password with salt | hash("pass123" + "AB12") = ? | Calculate |
+| 3 | → | Slow hash: bcrypt with cost=12 | ~250ms computation | Result: 0x7D3F |
+| 4 | → | Compare computed vs stored | 0x7D3F == 0x7D3F | Match |
+| 5 | → | Generate session token | UUID v4: "a1b2c3..." | Token |
+| 6 | → | Store session in DB | key:token, value:alice, TTL:3600s | Stored |
+| 7 | → | Return success | → | "SUCCESS: a1b2c3..." |
 
 ### C++: Password Hashing with Salt
 
@@ -709,7 +709,7 @@ Access control models define how subjects (users, processes) can interact with o
 
 ### Real-World Analogy
 
-> **Library Access Systems**: DAC = a book owner decides who borrows their book. MAC = the library has a classified section; no one below Top Secret clearance can enter. RBAC = "Librarians" can check books in/out; "Patrons" can browse and borrow; "Managers" can order new books â€” permissions go with the role, not the person.
+> **Library Access Systems**: DAC = a book owner decides who borrows their book. MAC = the library has a classified section; no one below Top Secret clearance can enter. RBAC = "Librarians" can check books in/out; "Patrons" can browse and borrow; "Managers" can order new books → permissions go with the role, not the person.
 
 ### Discretionary Access Control (DAC)
 
@@ -875,7 +875,7 @@ Cryptography provides the mathematical foundation for confidentiality, integrity
 
 ### Real-World Analogy
 
-> **Locked Diary + Sealed Envelope**: Symmetric encryption is like a locked diary â€” you use the same key to lock and unlock it. Asymmetric encryption is like a mailbox with a slot â€” anyone can drop mail in (public key encrypts), but only the owner with the private key can open it. Hashing is like a fingerprint â€” unique to the document, but you cannot reconstruct the person from the fingerprint.
+> **Locked Diary + Sealed Envelope**: Symmetric encryption is like a locked diary → you use the same key to lock and unlock it. Asymmetric encryption is like a mailbox with a slot → anyone can drop mail in (public key encrypts), but only the owner with the private key can open it. Hashing is like a fingerprint → unique to the document, but you cannot reconstruct the person from the fingerprint.
 
 ### Symmetric vs Asymmetric Cryptography Comparison
 
@@ -1134,7 +1134,7 @@ A buffer overflow occurs when a program writes more data to a buffer than it can
 
 ### Real-World Analogy
 
-> **Water Glass Overflow**: You have a glass that holds 250ml (buffer). You pour 500ml into it. The extra 250ml spills onto the table. In a buffer overflow, the extra data spills into adjacent memory â€” typically the return address â€” and the attacker redirects program execution to their malicious code.
+> **Water Glass Overflow**: You have a glass that holds 250ml (buffer). You pour 500ml into it. The extra 250ml spills onto the table. In a buffer overflow, the extra data spills into adjacent memory → typically the return address → and the attacker redirects program execution to their malicious code.
 
 ### Stack Layout Diagram
 

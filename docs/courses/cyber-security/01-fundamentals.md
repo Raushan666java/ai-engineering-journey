@@ -403,11 +403,11 @@ SECURE:
 
 ## 4. Threat Modeling Frameworks
 
-Threat modeling is a structured approach to identifying, enumerating, and prioritizing threats to a system. It shifts security left â€” finding issues in design rather than in production.
+Threat modeling is a structured approach to identifying, enumerating, and prioritizing threats to a system. It shifts security left → finding issues in design rather than in production.
 
 ### 4.1 Real-World Analogy: Architectural Blueprint Review
 
-Before building a house, an architect reviews the blueprints for structural weaknesses. A threat model is the security equivalent â€” reviewing system architecture diagrams for security weaknesses before writing code.
+Before building a house, an architect reviews the blueprints for structural weaknesses. A threat model is the security equivalent → reviewing system architecture diagrams for security weaknesses before writing code.
 
 ### 4.2 STRIDE (Microsoft)
 
@@ -442,7 +442,7 @@ Developed by Microsoft in 1999. Six threat categories mapped to security propert
 | Data Flow | Y | Y | Y | Y | N | N |
 | Data Store | N | Y | Y | Y | N | N |
 
-**Dry Run â€” STRIDE Analysis of a Banking Web App:**
+**Dry Run → STRIDE Analysis of a Banking Web App:**
 
 | Component | Threat | Category | Impact | Mitigation |
 |-----------|--------|----------|--------|------------|
@@ -469,7 +469,7 @@ Created by Tony UcedaVÃ©lez (VerSprite). Seven-stage risk-centric methodology.
 | 6 | Attack Modeling | Simulate attack paths, compute exploitability | Attack tree + attack surface |
 | 7 | Risk & Impact Analysis | Quantify residual risk, recommend mitigations | Risk treatment report |
 
-**PASTA Stage 1 â€” Define Objectives (Dry Run for E-Commerce App):**
+**PASTA Stage 1 → Define Objectives (Dry Run for E-Commerce App):**
 ```
 Business Objective: Process 100,000 orders per day with < 0.01% fraud rate.
 Compliance:          PCI DSS Level 1, GDPR for EU customers.
@@ -477,21 +477,21 @@ Risk Appetite:       Low for financial breach, medium for availability downtime 
 Key Assets:         Credit card data, customer PII, order history, inventory database.
 ```
 
-**PASTA Stage 4 â€” Threat Analysis (Threat Agent Enumeration):**
+**PASTA Stage 4 → Threat Analysis (Threat Agent Enumeration):**
 ```
 Threat Agent Profile: External Cybercriminal
-  â€” Skill Level: Advanced
-  â€” Motivation: Financial gain
-  â€” Target: Credit card data (PCI scope)
-  â€” TTPs: SQL injection, credential stuffing, Magecart (client-side skimmer)
-  â€” Detection Difficulty: Hard (uses encrypted C2, valid credentials after exfiltration)
+  → Skill Level: Advanced
+  → Motivation: Financial gain
+  → Target: Credit card data (PCI scope)
+  → TTPs: SQL injection, credential stuffing, Magecart (client-side skimmer)
+  → Detection Difficulty: Hard (uses encrypted C2, valid credentials after exfiltration)
 
 Threat Agent Profile: Insider (Disgruntled Employee)
-  â€” Skill Level: Moderate
-  â€” Motivation: Revenge, data sale
-  â€” Target: Customer PII, intellectual property
-  â€” TTPs: Legitimate credentials, after-hours access, large data downloads
-  â€” Detection Difficulty: Medium (looks like normal traffic)
+  → Skill Level: Moderate
+  → Motivation: Revenge, data sale
+  → Target: Customer PII, intellectual property
+  → TTPs: Legitimate credentials, after-hours access, large data downloads
+  → Detection Difficulty: Medium (looks like normal traffic)
 ```
 
 **PASTA vs STRIDE:**
@@ -505,9 +505,9 @@ Threat Agent Profile: Insider (Disgruntled Employee)
 | Best for | Early design phase | Complex application security programs |
 | Business alignment | Low | High (starts with business objectives) |
 
-### 4.4 LINDDUN â€” Privacy Threat Modeling
+### 4.4 LINDDUN → Privacy Threat Modeling
 
-LINDDUN focuses specifically on privacy threats â€” an evolution of STRIDE for the privacy domain. Developed by DistriNet Research Group, KU Leuven.
+LINDDUN focuses specifically on privacy threats → an evolution of STRIDE for the privacy domain. Developed by DistriNet Research Group, KU Leuven.
 
 **Seven Privacy Threat Categories:**
 
@@ -531,16 +531,16 @@ LINDDUN focuses specifically on privacy threats â€” an evolution of STRIDE 
 6. VERIFY compliance with applicable regulations (GDPR, CCPA, HIPAA).
 ```
 
-**LINDDUN Dry Run â€” Healthcare Appointment App:**
+**LINDDUN Dry Run → Healthcare Appointment App:**
 
 | Data Element | DFD Element | LINDDUN Threat | Mitigation |
 |-------------|-------------|----------------|------------|
-| Patient email + appointment time | Data Flow (browser to server) | Linkability â€” attacker correlates email with health condition | Use anonymous session tokens, not patient identifiers, in URL |
-| Search history for specialists | Data Store (search log) | Identifiability â€” search queries reveal health issues | Anonymize logs after 24 hours; differential privacy on analytics |
-| Doctor name visited | Data Store (appointment records) | Non-repudiation â€” patient cannot deny visiting a specialist | Allow patients to delete their visit history (right to erasure) |
-| Prescription details in notifications | Data Flow (server to push notification) | Disclosure â€” notification preview seen by others on lock screen | Disable notification previews for health data |
-| Insurance group ID | Data Flow (API call) | Unawareness â€” patient doesn't know insurance is tracked | Clear consent form + privacy notice before data collection |
-| Data retention policy | Configuration | Non-compliance â€” retains data beyond GDPR limit | Auto-delete records after legal retention period |
+| Patient email + appointment time | Data Flow (browser to server) | Linkability → attacker correlates email with health condition | Use anonymous session tokens, not patient identifiers, in URL |
+| Search history for specialists | Data Store (search log) | Identifiability → search queries reveal health issues | Anonymize logs after 24 hours; differential privacy on analytics |
+| Doctor name visited | Data Store (appointment records) | Non-repudiation → patient cannot deny visiting a specialist | Allow patients to delete their visit history (right to erasure) |
+| Prescription details in notifications | Data Flow (server to push notification) | Disclosure → notification preview seen by others on lock screen | Disable notification previews for health data |
+| Insurance group ID | Data Flow (API call) | Unawareness → patient doesn't know insurance is tracked | Clear consent form + privacy notice before data collection |
+| Data retention policy | Configuration | Non-compliance → retains data beyond GDPR limit | Auto-delete records after legal retention period |
 
 ### 4.5 Attack Trees
 
@@ -553,7 +553,7 @@ Root node: Attacker's ultimate goal
         +-- Leaf nodes: Concrete attack actions (measurable)
 ```
 
-**Attack Tree â€” Database Exfiltration:**
+**Attack Tree → Database Exfiltration:**
 ```
 Goal: [Exfiltrate Customer Database]
 +-- OR
@@ -571,7 +571,7 @@ Goal: [Exfiltrate Customer Database]
         +-- [Clone unencrypted backup tape]
 ```
 
-**Attack Tree â€” Quantified Version:**
+**Attack Tree → Quantified Version:**
 
 | Leaf Node | Skill Required | Cost | Probability | Detectable? |
 |-----------|---------------|------|-------------|-------------|
@@ -691,7 +691,7 @@ Uses monetary values, statistical probabilities, and actuarial math.
 | ALE | SLE x ARO | Annual Loss Expectancy | $160,000 |
 | ROSI | (ALE_old - ALE_new) - Cost | Return on Security Investment | $114,000 |
 
-**Quantitative Risk Assessment â€” Dry Run:**
+**Quantitative Risk Assessment → Dry Run:**
 ```
 Scenario: Ransomware attack on hospital patient records
 
@@ -703,19 +703,19 @@ ALE (without controls):    $800,000 x 0.2 = $160,000/year
 
 Proposed Controls: Offline immutable backups + EDR + employee training
 Control Cost:              $30,000/year (licensing + maintenance)
-New EF:                    0.02 (2% â€” backups mean only data since last backup lost)
+New EF:                    0.02 (2% → backups mean only data since last backup lost)
 New ALE:                   $800,000 x 0.02 = $16,000/year
 
 Risk Reduction:            $160,000 - $16,000 = $144,000/year
 ROSI:                      $144,000 - $30,000 = $114,000/year (380% ROI)
 
-Decision:                  IMPLEMENT â€” positive ROSI + critical asset protection
+Decision:                  IMPLEMENT → positive ROSI + critical asset protection
 ```
 
 **Limitations of Quantitative Analysis:**
 - Requires accurate historical data (often unavailable for rare events)
 - Difficult to quantify intangible assets (reputation, customer trust)
-- False precision â€” numbers look exact but rely on estimates
+- False precision → numbers look exact but rely on estimates
 - Does not account for cascading failures or systemic risk
 
 ### 5.5 NIST Risk Management Framework (RMF)
@@ -761,7 +761,7 @@ Date:             [Date]
 Assessor:         [Name]
 
 FINDINGS:
-1. [Risk ID] â€” [Title]
+1. [Risk ID] → [Title]
    Threat:               []
    Vulnerability:        []
    Likelihood:           [VL/L/M/H/VH]
@@ -810,27 +810,27 @@ Security policies exist at multiple levels of abstraction, from strategic to imp
 ### 6.3 Policy Key Elements Template:
 
 ```
-1. PURPOSE â€” Why this policy exists.
-2. SCOPE â€” Who and what it applies to.
-3. POLICY â€” The actual rules (mandatory, use "shall" / "must").
-4. ROLES & RESPONSIBILITIES â€” Who enforces, who complies, who audits.
-5. COMPLIANCE â€” Consequences of violation.
-6. EXCEPTIONS â€” How to request an exception and who approves.
-7. REVIEW CYCLE â€” How often the policy is reviewed and updated.
-8. RELATED DOCUMENTS â€” Other policies, standards, guidelines referenced.
+1. PURPOSE → Why this policy exists.
+2. SCOPE → Who and what it applies to.
+3. POLICY → The actual rules (mandatory, use "shall" / "must").
+4. ROLES & RESPONSIBILITIES → Who enforces, who complies, who audits.
+5. COMPLIANCE → Consequences of violation.
+6. EXCEPTIONS → How to request an exception and who approves.
+7. REVIEW CYCLE → How often the policy is reviewed and updated.
+8. RELATED DOCUMENTS → Other policies, standards, guidelines referenced.
 ```
 
 ### 6.4 Policy Lifecycle
 
 ```
-1. IDENTIFY NEED â€” Triggered by: new regulation, post-incident lesson, audit finding, technology change.
-2. DRAFT â€” Write policy with input from stakeholders (legal, IT, business, HR).
-3. REVIEW â€” Legal review for regulatory compliance, technical review for feasibility.
-4. APPROVE â€” Executive sign-off (CISO, CEO, Board of Directors).
-5. COMMUNICATE â€” Training sessions, email announcement, intranet posting, signed acknowledgment.
-6. ENFORCE â€” Technical controls implement the policy (GPO, MDM, DLP, IAM policies).
-7. AUDIT â€” Periodic review to verify compliance and effectiveness.
-8. UPDATE â€” Revise based on changing threat landscape, new technology, regulatory updates.
+1. IDENTIFY NEED → Triggered by: new regulation, post-incident lesson, audit finding, technology change.
+2. DRAFT → Write policy with input from stakeholders (legal, IT, business, HR).
+3. REVIEW → Legal review for regulatory compliance, technical review for feasibility.
+4. APPROVE → Executive sign-off (CISO, CEO, Board of Directors).
+5. COMMUNICATE → Training sessions, email announcement, intranet posting, signed acknowledgment.
+6. ENFORCE → Technical controls implement the policy (GPO, MDM, DLP, IAM policies).
+7. AUDIT → Periodic review to verify compliance and effectiveness.
+8. UPDATE → Revise based on changing threat landscape, new technology, regulatory updates.
 ```
 
 ---
@@ -867,7 +867,7 @@ Usability |           /
 | Session timeout | 1 minute inactivity = logout | 15 minutes = lock screen | Never expires |
 | Account lockout | 1 failed attempt = permanent lock | 5 attempts = 15-min lock | No lockout (brute-forcable) |
 
-### 7.3 Achieving Balance â€” Strategies
+### 7.3 Achieving Balance → Strategies
 
 | Strategy | How It Works | Example |
 |----------|-------------|---------|
@@ -890,11 +890,11 @@ Usability |           /
 
 ---
 
-## 8. Practical Examples â€” Hands-On Security Tools
+## 8. Practical Examples → Hands-On Security Tools
 
 All examples assume a Linux environment (Kali, Ubuntu, or similar). Adapt paths and package names for your distribution.
 
-### 8.1 OSSEC / Wazuh Agent â€” Host Intrusion Detection
+### 8.1 OSSEC / Wazuh Agent → Host Intrusion Detection
 
 **What it does:** File integrity monitoring (FIM), log analysis, rootkit detection, and real-time alerting. Wazuh is the modern fork of OSSEC with additional features (agent enrollment, centralized management, SIEM integration).
 
@@ -932,17 +932,17 @@ systemctl enable wazuh-agent
 | Active Response | Auto-execute blocking scripts on alert | Offending IP auto-blocked via iptables for N minutes |
 | PCI DSS Compliance | Pre-built rule set for PCI Requirement 11.5 | Automated FIM reporting for audit evidence |
 
-### 8.2 Nmap â€” Network Scanning and Discovery
+### 8.2 Nmap → Network Scanning and Discovery
 
 **What it does:** Discovers live hosts, open ports, running services, operating systems, and potential vulnerabilities across a network.
 
 **Common Scan Types:**
 
 ```bash
-# 1. Ping sweep â€” discover which hosts are alive
+# 1. Ping sweep → discover which hosts are alive
 nmap -sn 192.168.1.0/24
 
-# 2. SYN scan (stealth, default) â€” scan top 1000 ports
+# 2. SYN scan (stealth, default) → scan top 1000 ports
 nmap -sS 192.168.1.1-254
 
 # 3. Service version detection
@@ -976,7 +976,7 @@ nmap -oA network_scan 192.168.1.0/24
 | **closed** | Port reachable but no application listening (RST response to SYN) |
 | **unfiltered** | Port reachable but state unknown (ACK scan only) |
 
-**Dry Run â€” Scanning Local Web Server:**
+**Dry Run → Scanning Local Web Server:**
 
 ```bash
 $ nmap -sV -p 22,80,443,8080 192.168.1.10
@@ -991,16 +991,16 @@ PORT     STATE  SERVICE    VERSION
 Service detection performed.
 
 Analysis:
-  - SSH (port 22): OpenSSH 8.2p1 â€” check CVE-2020-15778 (scp command injection)
-  - HTTP (port 80): Apache 2.4.41 â€” known vulnerabilities in older 2.4.x
-  - HTTPS (port 443): Same Apache â€” check TLS config for weak ciphers
+  - SSH (port 22): OpenSSH 8.2p1 → check CVE-2020-15778 (scp command injection)
+  - HTTP (port 80): Apache 2.4.41 → known vulnerabilities in older 2.4.x
+  - HTTPS (port 443): Same Apache → check TLS config for weak ciphers
   - Recommendations: 
     1. Restrict SSH to management IPs only (firewall rule)
     2. Upgrade Apache to latest 2.4.x
     3. Enable HSTS and disable weak TLS ciphers
 ```
 
-### 8.3 Wireshark â€” Packet Capture and Protocol Analysis
+### 8.3 Wireshark → Packet Capture and Protocol Analysis
 
 **What it does:** Capture and inspect network packets in real-time or from saved pcap files. Essential for network forensics and protocol debugging.
 
@@ -1017,7 +1017,7 @@ Analysis:
 | `!arp && !icmp && !dns` | Remove noisy background protocols |
 | `tls.handshake.type == 1` | Show TLS Client Hello messages |
 
-**Step-by-Step â€” Capture and Analyze HTTP Login:**
+**Step-by-Step → Capture and Analyze HTTP Login:**
 
 ```bash
 # Terminal 1: Start capture on interface eth0, filter for port 80
@@ -1051,7 +1051,7 @@ tshark -r /tmp/http_capture.pcap -Y "http.request.method == POST" \
 | Plaintext credentials | `http contains "password"` | POST bodies with pass=, pwd=, auth= parameters in the clear |
 | TLS version issues | `tls.handshake.version` | Version < 1.2 indicates weak/outdated TLS |
 
-### 8.4 John the Ripper and hashcat â€” Password Cracking
+### 8.4 John the Ripper and hashcat → Password Cracking
 
 **What it does:** Recover plaintext passwords from stored hashes using dictionary, brute-force, and rule-based attacks. Essential for assessing password policy strength.
 
@@ -1067,7 +1067,7 @@ tshark -r /tmp/http_capture.pcap -Y "http.request.method == POST" \
 | PBKDF2-HMAC-SHA256 | `$pbkdf2-sha256$...` | Apple, Bitwarden, WPA2 |
 | Argon2 | `$argon2id$v=19$...` | Modern password hashing (OWASP recommended) |
 
-**John the Ripper â€” Basic Usage:**
+**John the Ripper → Basic Usage:**
 
 ```bash
 # Step 1: Combine passwd and shadow files (Linux)
@@ -1079,17 +1079,17 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
 # Step 3: View cracked passwords
 john --show hashes.txt
 
-# Step 4: Incremental (brute-force) mode â€” exhaustive search
+# Step 4: Incremental (brute-force) mode → exhaustive search
 john --incremental hashes.txt
 
-# Step 5: Rule-based mode â€” apply mangling rules to wordlist
+# Step 5: Rule-based mode → apply mangling rules to wordlist
 john --wordlist=words.txt --rules=best64 hashes.txt
 
 # Step 6: Specific hash format
 john --format=bcrypt --wordlist=rockyou.txt bcrypt_hashes.txt
 ```
 
-**hashcat â€” GPU-Accelerated Cracking:**
+**hashcat → GPU-Accelerated Cracking:**
 
 ```bash
 # MD5 with rockyou (mode 0 = MD5)
@@ -1127,7 +1127,7 @@ hashcat -m 0 --show hashes.txt
 | bcrypt (cost 14) | 3 KH/s | 92 hours | Very High |
 | Argon2id (t=3, m=64MB) | 500 H/s | 23 days | Extremely High |
 
-### 8.5 Lynis â€” System Security Auditing
+### 8.5 Lynis → System Security Auditing
 
 **What it does:** Automated security audit for Linux/Unix systems. Scans for misconfigurations, outdated software, weak permissions, and compliance gaps.
 
@@ -1154,17 +1154,17 @@ lynis audit system --tests-from malware,file_integrity
 
 | Section | What It Checks | Example Finding |
 |---------|----------------|-----------------|
-| General | OS details, uptime, kernel version | "Kernel 5.4.0 â€” 26 known CVEs since last patch" |
-| Boot Services | GRUB configuration, bootloader password | "No GRUB password set â€” physical access allows single-user mode" |
-| Kernel | sysctl parameters, kernel hardening | "net.ipv4.conf.all.rp_filter = 0 â€” [RECOMMENDATION: enable]" |
+| General | OS details, uptime, kernel version | "Kernel 5.4.0 → 26 known CVEs since last patch" |
+| Boot Services | GRUB configuration, bootloader password | "No GRUB password set → physical access allows single-user mode" |
+| Kernel | sysctl parameters, kernel hardening | "net.ipv4.conf.all.rp_filter = 0 → [RECOMMENDATION: enable]" |
 | Memory & Processes | ASLR, running services, open ports | "KASLR not enabled in kernel config" |
-| Users & Groups | Password aging, empty passwords, sudoers | "User 'test' has no password set â€” [CRITICAL]" |
+| Users & Groups | Password aging, empty passwords, sudoers | "User 'test' has no password set → [CRITICAL]" |
 | Authentication | PAM configuration, pwquality | "Password minimum length not configured in pam_pwquality" |
-| Shell | Shell configurations, history files | "/root/.bash_history: world-readable â€” [RECOMMENDATION: chmod 600]" |
-| File Systems | Mount options, /tmp security, ACLs | "/tmp not mounted with noexec â€” [MEDIUM RISK]" |
-| Software | Installed packages, versions, EOL | "OpenSSL 1.1.1 â€” EOL, upgrade to 1.1.1k+" |
-| Firewall | iptables/nftables rules, status | "No firewall rules loaded â€” [CRITICAL]" |
-| Logging | rsyslog, auditd, logrotate | "auditd not running â€” no system call auditing" |
+| Shell | Shell configurations, history files | "/root/.bash_history: world-readable → [RECOMMENDATION: chmod 600]" |
+| File Systems | Mount options, /tmp security, ACLs | "/tmp not mounted with noexec → [MEDIUM RISK]" |
+| Software | Installed packages, versions, EOL | "OpenSSL 1.1.1 → EOL, upgrade to 1.1.1k+" |
+| Firewall | iptables/nftables rules, status | "No firewall rules loaded → [CRITICAL]" |
+| Logging | rsyslog, auditd, logrotate | "auditd not running → no system call auditing" |
 
 **Lynis Hardening Index:**
 
@@ -1181,20 +1181,20 @@ Example output:
   -------------------------------------------------
 
 Interpretation:
-  0-40:  Poor â€” immediate attention needed
-  41-60: Below average â€” significant improvements exist
-  61-80: Good â€” basic hardening in place
-  81-90: Excellent â€” comprehensive security posture
-  91-100: Hardened â€” exceptional, production-ready configuration
+  0-40:  Poor → immediate attention needed
+  41-60: Below average → significant improvements exist
+  61-80: Good → basic hardening in place
+  81-90: Excellent → comprehensive security posture
+  91-100: Hardened → exceptional, production-ready configuration
 ```
 
 ---
 
 ---
 
-## 9. Case Studies â€” Real Breach Anatomy
+## 9. Case Studies → Real Breach Anatomy
 
-### 9.1 Equifax 2017 â€” The $1.4 Billion Patch Failure
+### 9.1 Equifax 2017 → The $1.4 Billion Patch Failure
 
 **Overview:**
 - **Date:** May-July 2017 (detected July 29, disclosed September 7)
@@ -1211,7 +1211,7 @@ Interpretation:
 | **Mar 8** | US-CERT issues emergency alert about active exploitation in the wild | Equifax security team notified internally |
 | **Mar 9** | Equifax's internal vulnerability scans identify vulnerable instances | Detection succeeded at this point |
 | **Late Mar** | Equifax patching team instructed to apply patch to affected servers | Process initiated |
-| **Apr-May** | Manual verification failed â€” the specific vulnerable server was missed | PATCH MANAGEMENT FAILURE: No verification step in patching process |
+| **Apr-May** | Manual verification failed → the specific vulnerable server was missed | PATCH MANAGEMENT FAILURE: No verification step in patching process |
 | **May 13** | Attacker begins scanning for vulnerable Struts instances on the internet | Reconnaissance in progress |
 | **May 13-19** | Attacker identifies Equifax's unpatched dispute resolution portal server | NO WAF blocking known CVE payloads |
 | **May 19** | Attacker sends crafted HTTP request exploiting CVE-2017-5638, gains shell access | INITIAL COMPROMISE via known vulnerability |
@@ -1264,16 +1264,16 @@ Interpretation:
 | Availability | None | Systems remained operational |
 
 **Key Lessons:**
-1. Patch management must include a verification step â€” seeing is not believing.
+1. Patch management must include a verification step → seeing is not believing.
 2. Defense in Depth requires EVERY layer to function; one missed patch shouldn't equal national-level breach.
-3. Network segmentation is non-negotiable â€” a web server should never directly reach 50+ databases.
-4. Egress monitoring detects exfiltration â€” 76 days of data leaving the network should trigger alerts.
-5. Certificate management is security-critical â€” expired monitoring certs blind your SOC.
-6. Incident disclosure timing matters â€” insider trading allegations compound the damage.
+3. Network segmentation is non-negotiable → a web server should never directly reach 50+ databases.
+4. Egress monitoring detects exfiltration → 76 days of data leaving the network should trigger alerts.
+5. Certificate management is security-critical → expired monitoring certs blind your SOC.
+6. Incident disclosure timing matters → insider trading allegations compound the damage.
 
 ---
 
-### 9.2 Target 2013 â€” The HVAC Vendor That Cost $202M
+### 9.2 Target 2013 → The HVAC Vendor That Cost $202M
 
 **Overview:**
 - **Date:** Nov 27 - Dec 15, 2013 (detected Dec 12, disclosed Dec 19)
@@ -1290,7 +1290,7 @@ Target's HVAC vendor: Fazio Mechanical Services (based in Sharpsburg, PA)
 Fazio had remote access to Target's network for HVAC monitoring and billing
 Attack vector: Phishing email sent to Fazio employees
 Result: Attacker captures Fazio network credentials
-FAILURE: Least Privilege â€” HVAC vendor should NOT have network access reaching POS systems
+FAILURE: Least Privilege → HVAC vendor should NOT have network access reaching POS systems
 
 PHASE 2: INITIAL ACCESS (Nov 15)
 ----------------------------------
@@ -1304,14 +1304,14 @@ PHASE 3: INTERNAL RECONNAISSANCE (Nov 15-30)
 Attacker enumerates internal systems from the vendor gateway
 Target's Bangalore SOC received 18+ security alerts about suspicious activity
 Result: Attacker maps Target's internal network and identifies POS systems
-FAILURE: Alerts were generated but not escalated â€” SOC was overwhelmed by false positives
+FAILURE: Alerts were generated but not escalated → SOC was overwhelmed by false positives
 
 PHASE 4: POS SYSTEM COMPROMISE (Nov 30)
 -----------------------------------------
 Attacker deploys "Kaptoxa" memory scraper malware on POS terminals
 Kaptoxa scrapes track 1 + track 2 data from POS RAM during transaction processing
 Track 2 data contains card number + expiration + CVV (emboldened magnetic stripe)
-FAILURE: Flat network â€” POS systems reachable from vendor gateway (PCI DSS Requirement 1 violation)
+FAILURE: Flat network → POS systems reachable from vendor gateway (PCI DSS Requirement 1 violation)
 
 PHASE 5: DATA STAGING AND EXFILTRATION (Dec 2-15)
 ---------------------------------------------------
@@ -1324,7 +1324,7 @@ PHASE 6: EXTERNAL DETECTION (Dec 12)
 --------------------------------------
 US Department of Justice contacts Target about suspicious MasterCard transactions
 Pattern: Fraud transactions traced back to cards used at Target stores
-FAILURE: Target did NOT detect the breach internally â€” external notification from DOJ
+FAILURE: Target did NOT detect the breach internally → external notification from DOJ
 
 PHASE 7: CONTAINMENT AND DISCLOSURE (Dec 15-19)
 -------------------------------------------------
@@ -1337,7 +1337,7 @@ CEO Gregg Steinhart resigns in May 2014
 
 | Violation | What Happened | PCI DSS Requirement | Correct Implementation |
 |-----------|--------------|---------------------|-----------------------|
-| Scope of vendor access | HVAC vendor could reach POS network | Requirement 1: Isolate cardholder data from other networks | Vendor VPN â†’ jump host â†’ HVAC subnet only (no POS access) |
+| Scope of vendor access | HVAC vendor could reach POS network | Requirement 1: Isolate cardholder data from other networks | Vendor VPN → jump host → HVAC subnet only (no POS access) |
 | No network segmentation | Flat network; any device could reach POS | Requirement 1.3: Prohibit direct access between CDE and other networks | DMZ + firewall rules separating POS from all other segments |
 | No MFA on vendor access | Single password = full access | Requirement 8.3: Two-factor authentication for remote access | MFA required for ALL remote vendor access |
 | Overprivileged accounts | Vendor accounts had access beyond HVAC | Requirement 7: Restrict access to need-to-know | RBAC: HVAC devices and billing only |
@@ -1351,16 +1351,16 @@ CEO Gregg Steinhart resigns in May 2014
 | Availability | None | POS systems remained operational |
 
 **Key Lessons:**
-1. Least privilege extends to third parties â€” a vendor's access must be scoped to THEIR systems only.
-2. Network segmentation is non-negotiable â€” PCI DSS Requirement 1 exists for exactly this reason.
-3. SOC alerts must be triaged and actionable â€” 18 missed alerts = systemic SOC failure.
+1. Least privilege extends to third parties → a vendor's access must be scoped to THEIR systems only.
+2. Network segmentation is non-negotiable → PCI DSS Requirement 1 exists for exactly this reason.
+3. SOC alerts must be triaged and actionable → 18 missed alerts = systemic SOC failure.
 4. Third-party risk management must include continuous monitoring of vendor behavior.
-5. Detect and respond before law enforcement tells you â€” self-detection is a security maturity metric.
+5. Detect and respond before law enforcement tells you → self-detection is a security maturity metric.
 6. POS malware detection needs behavioral analysis (memory scraping), not just signature-based.
 
 ---
 
-### 9.3 Capital One 2019 â€” SSRF + IAM Misconfiguration = 106M Records
+### 9.3 Capital One 2019 → SSRF + IAM Misconfiguration = 106M Records
 
 **Overview:**
 - **Date:** March 22-23, 2019 (detected July 17, disclosed July 29)
@@ -1375,7 +1375,7 @@ CEO Gregg Steinhart resigns in May 2014
 STEP 1: SSRF VULNERABILITY IDENTIFICATION
 ------------------------------------------
 Capital One hosted a web application on AWS (US East region)
-The application had a WAF â€” but it was NOT configured to block SSRF attacks
+The application had a WAF → but it was NOT configured to block SSRF attacks
 The app made server-side HTTP requests based on user-supplied URLs
 FAILURE: No WAF rules for SSRF; no URL allowlist; no IMDSv2 enforcement
 
@@ -1430,9 +1430,9 @@ FBI recovered cryptocurrency mining and other AWS compromise activities
 Sentenced to time served with 5 years supervised release
 ```
 
-**SSRF Deep Dive â€” The Metadata Service Attack:**
+**SSRF Deep Dive → The Metadata Service Attack:**
 
-The AWS EC2 metadata service at `http://169.254.169.254/latest/meta-data/` provides instance metadata to running EC2 instances. Crucially, it requires no authentication from within the instance â€” any process running on the server can access it.
+The AWS EC2 metadata service at `http://169.254.169.254/latest/meta-data/` provides instance metadata to running EC2 instances. Crucially, it requires no authentication from within the instance → any process running on the server can access it.
 
 ```python
 # VULNERABLE CODE PATTERN:
@@ -1463,7 +1463,7 @@ def fetch():
 | Network-level SSRF prevention (NAT/proxy) | Blocks internal network scanning | NOT IMPLEMENTED |
 | Disable metadata service on non-critical instances | Removes attack surface entirely | NOT IMPLEMENTED |
 
-**The IAM Role â€” Least Privilege Failure:**
+**The IAM Role → Least Privilege Failure:**
 
 The IAM role attached to the vulnerable EC2 instance had these permissions:
 ```json
@@ -1484,10 +1484,10 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 ```
 
 **What was wrong:**
-1. `s3:List` on `Resource: "*"` â€” allowed listing ALL S3 buckets in the account
-2. `s3:GetObject` on `Resource: "*"` â€” allowed reading ANY object from ANY bucket
-3. `s3:PutObject` on `Resource: "*"` â€” allowed writing to ANY bucket (not needed by web server)
-4. No `Condition` block â€” permissions had no IP restriction, MFA requirement, or time window
+1. `s3:List` on `Resource: "*"` → allowed listing ALL S3 buckets in the account
+2. `s3:GetObject` on `Resource: "*"` → allowed reading ANY object from ANY bucket
+3. `s3:PutObject` on `Resource: "*"` → allowed writing to ANY bucket (not needed by web server)
+4. No `Condition` block → permissions had no IP restriction, MFA requirement, or time window
 5. Useful lifecycle: Role was likely created with minimal permissions then expanded without review
 
 **What it SHOULD have been:**
@@ -1516,13 +1516,13 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 | Availability | None | Systems remained operational |
 
 **Key Lessons:**
-1. **SSRF is the cloud's #1 threat** â€” always block 169.254.169.254 at the OS and WAF level.
-2. **IMDSv2 should be mandatory** â€” it introduces a session token handshake that simple SSRF can't perform.
-3. **Least privilege in cloud IAM is non-negotiable** â€” a web server should never have `s3:List` on `Resource: "*"`.
+1. **SSRF is the cloud's #1 threat** → always block 169.254.169.254 at the OS and WAF level.
+2. **IMDSv2 should be mandatory** → it introduces a session token handshake that simple SSRF can't perform.
+3. **Least privilege in cloud IAM is non-negotiable** → a web server should never have `s3:List` on `Resource: "*"`.
 4. **S3 access logging + CloudTrail data events** would have shown the `ListBuckets` and `GetObject` calls immediately.
-5. **External attack surface monitoring** â€” GitHub scanning, dark web monitoring, and public Slack monitoring could have detected sooner.
-6. **Segregation of environments** â€” production data should not be accessible from a public web application's IAM role.
-7. **WAF must evolve** â€” SSRF attack rules are not part of default WAF configurations; they must be explicitly added.
+5. **External attack surface monitoring** → GitHub scanning, dark web monitoring, and public Slack monitoring could have detected sooner.
+6. **Segregation of environments** → production data should not be accessible from a public web application's IAM role.
+7. **WAF must evolve** → SSRF attack rules are not part of default WAF configurations; they must be explicitly added.
 
 ---
 
@@ -1582,27 +1582,27 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 ---
 
-## 11. Interview Corner â€” 15+ Q&A on Security Fundamentals
+## 11. Interview Corner → 15+ Q&A on Security Fundamentals
 
 ### Q1: What is the CIA triad and why is it the foundation of information security?
 
-**Answer:** The CIA triad is Confidentiality, Integrity, and Availability â€” the three pillars that define information security goals. Confidentiality ensures data is accessible only to authorized parties (via encryption, access controls). Integrity ensures data is accurate and unmodified (via hashing, digital signatures). Availability ensures systems are accessible when needed (via redundancy, load balancing). Every security control maps to at least one CIA element. A breach in any one element is a security incident.
+**Answer:** The CIA triad is Confidentiality, Integrity, and Availability → the three pillars that define information security goals. Confidentiality ensures data is accessible only to authorized parties (via encryption, access controls). Integrity ensures data is accurate and unmodified (via hashing, digital signatures). Availability ensures systems are accessible when needed (via redundancy, load balancing). Every security control maps to at least one CIA element. A breach in any one element is a security incident.
 
 ### Q2: Explain the difference between authentication and authorization.
 
-**Answer:** Authentication answers "Who are you?" â€” proving identity via something you know (password), have (token), or are (biometric). Authorization answers "What can you do?" â€” determining permissions after identity is proven. Example: Presenting your passport at airport security is authentication. The gate agent checking your boarding pass for the correct flight is authorization. In systems, authentication happens first (login), then authorization is checked for every subsequent action.
+**Answer:** Authentication answers "Who are you?" → proving identity via something you know (password), have (token), or are (biometric). Authorization answers "What can you do?" → determining permissions after identity is proven. Example: Presenting your passport at airport security is authentication. The gate agent checking your boarding pass for the correct flight is authorization. In systems, authentication happens first (login), then authorization is checked for every subsequent action.
 
 ### Q3: What is the principle of least privilege and why is it important?
 
-**Answer:** Least privilege means every entity (user, process, service) should have only the minimum permissions necessary to perform its function. It limits blast radius â€” if an account is compromised, the attacker can only do what that account can do. Target's 2013 breach is a textbook violation: HVAC vendor accounts had network access reaching POS systems. Implementation: start with zero permissions, add only what's needed, review quarterly, revoke stale permissions immediately.
+**Answer:** Least privilege means every entity (user, process, service) should have only the minimum permissions necessary to perform its function. It limits blast radius → if an account is compromised, the attacker can only do what that account can do. Target's 2013 breach is a textbook violation: HVAC vendor accounts had network access reaching POS systems. Implementation: start with zero permissions, add only what's needed, review quarterly, revoke stale permissions immediately.
 
 ### Q4: How would you implement defense in depth for a web application?
 
-**Answer:** Defense in depth means multiple independent security layers so that if one fails, another catches the threat. For a web application: Layer 1 â€” Firewall (block all ports except 80/443). Layer 2 â€” WAF (detect SQLi, XSS, CSRF). Layer 3 â€” Rate limiting (prevent brute force). Layer 4 â€” MFA authentication. Layer 5 â€” RBAC authorization. Layer 6 â€” Input validation + prepared statements. Layer 7 â€” TLS 1.3 in transit, AES-256 at rest. Layer 8 â€” SIEM monitoring with real-time alerting. Layer 9 â€” Backups with 3-2-1 rule. Each control must be from an independent failure domain.
+**Answer:** Defense in depth means multiple independent security layers so that if one fails, another catches the threat. For a web application: Layer 1 → Firewall (block all ports except 80/443). Layer 2 → WAF (detect SQLi, XSS, CSRF). Layer 3 → Rate limiting (prevent brute force). Layer 4 → MFA authentication. Layer 5 → RBAC authorization. Layer 6 → Input validation + prepared statements. Layer 7 → TLS 1.3 in transit, AES-256 at rest. Layer 8 → SIEM monitoring with real-time alerting. Layer 9 → Backups with 3-2-1 rule. Each control must be from an independent failure domain.
 
 ### Q5: Walk me through a STRIDE threat model for an e-commerce checkout system.
 
-**Answer:** I decompose the system into DFD elements: External entity (customer), process (checkout handler), data store (orders database), data flow (payment info over HTTPS). STRIDE per element: Spoofing â€” attacker impersonates customer via stolen session cookie (mitigation: session tokens + HTTPS). Tampering â€” attacker modifies order total via man-in-the-middle (mitigation: TLS + HMAC signature on payload). Repudiation â€” customer claims they didn't place the order (mitigation: immutable audit log). Information Disclosure â€” attacker views other orders via IDOR (mitigation: user-scoped authorization). DoS â€” attacker floods checkout endpoint (mitigation: rate limiting + CDN). Elevation of Privilege â€” attacker escalates from customer to admin (mitigation: strict RBAC + input validation).
+**Answer:** I decompose the system into DFD elements: External entity (customer), process (checkout handler), data store (orders database), data flow (payment info over HTTPS). STRIDE per element: Spoofing → attacker impersonates customer via stolen session cookie (mitigation: session tokens + HTTPS). Tampering → attacker modifies order total via man-in-the-middle (mitigation: TLS + HMAC signature on payload). Repudiation → customer claims they didn't place the order (mitigation: immutable audit log). Information Disclosure → attacker views other orders via IDOR (mitigation: user-scoped authorization). DoS → attacker floods checkout endpoint (mitigation: rate limiting + CDN). Elevation of Privilege → attacker escalates from customer to admin (mitigation: strict RBAC + input validation).
 
 ### Q6: What's the difference between qualitative and quantitative risk assessment?
 
@@ -1614,23 +1614,23 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 ### Q8: How would you handle the security vs usability trade-off in a corporate environment?
 
-**Answer:** Three strategies: (1) Risk-based authentication â€” enforce MFA only when behavior is anomalous (new device, new location), not on every login. (2) SSO â€” reduce password fatigue by having one authentication point for all applications. (3) Passwordless â€” implement FIDO2/WebAuthn with biometrics; users prefer Face ID over typing complex passwords. The goal is to find the minimal friction that achieves acceptable risk. Measure user friction (support tickets, login time) and adjust controls accordingly.
+**Answer:** Three strategies: (1) Risk-based authentication → enforce MFA only when behavior is anomalous (new device, new location), not on every login. (2) SSO → reduce password fatigue by having one authentication point for all applications. (3) Passwordless → implement FIDO2/WebAuthn with biometrics; users prefer Face ID over typing complex passwords. The goal is to find the minimal friction that achieves acceptable risk. Measure user friction (support tickets, login time) and adjust controls accordingly.
 
 ### Q9: What is the most important lesson from the Equifax breach?
 
-**Answer:** That a single missed patch should not lead to a national-scale breach. Equifax had all the right tools (vulnerability scanner, security team, patch process) but failed because: (1) They didn't verify the patch was actually applied. (2) They had no defense in depth â€” once the web server was compromised, the attacker could reach databases with no segmentation. (3) They had no egress monitoring for 76 days of exfiltration. The lesson is that patch management is not just "deploy the patch" but "verify deployment and assume the patch will fail in some cases."
+**Answer:** That a single missed patch should not lead to a national-scale breach. Equifax had all the right tools (vulnerability scanner, security team, patch process) but failed because: (1) They didn't verify the patch was actually applied. (2) They had no defense in depth → once the web server was compromised, the attacker could reach databases with no segmentation. (3) They had no egress monitoring for 76 days of exfiltration. The lesson is that patch management is not just "deploy the patch" but "verify deployment and assume the patch will fail in some cases."
 
 ### Q10: Describe the complete mediation principle.
 
-**Answer:** Complete mediation means every access to every object must be checked for authority every single time â€” not cached, not assumed. Violations lead to TOCTOU (Time of Check, Time of Use) vulnerabilities. Example: A user requests file access; system checks permissions and approves; but between check and use, the user replaces the file with a symlink to /etc/passwd. The fix is to make the permission check and the file access an atomic operation (open syscall checks permissions at the moment of access, not before).
+**Answer:** Complete mediation means every access to every object must be checked for authority every single time → not cached, not assumed. Violations lead to TOCTOU (Time of Check, Time of Use) vulnerabilities. Example: A user requests file access; system checks permissions and approves; but between check and use, the user replaces the file with a symlink to /etc/passwd. The fix is to make the permission check and the file access an atomic operation (open syscall checks permissions at the moment of access, not before).
 
 ### Q11: How does open design differ from security through obscurity?
 
-**Answer:** Open design means the security of a system depends on the secrecy of its keys, not the secrecy of its design. AES, RSA, TLS are all published, peer-reviewed standards â€” they work because keys are secret, not because the algorithm is hidden. Security through obscurity (hiding the algorithm, using non-standard ports, custom encryption) provides no real security â€” once the design is discovered (and it will be), the system is completely vulnerable. Kerckhoffs's Principle (1883): "A cryptosystem should be secure even if everything about the system, except the key, is public knowledge."
+**Answer:** Open design means the security of a system depends on the secrecy of its keys, not the secrecy of its design. AES, RSA, TLS are all published, peer-reviewed standards → they work because keys are secret, not because the algorithm is hidden. Security through obscurity (hiding the algorithm, using non-standard ports, custom encryption) provides no real security → once the design is discovered (and it will be), the system is completely vulnerable. Kerckhoffs's Principle (1883): "A cryptosystem should be secure even if everything about the system, except the key, is public knowledge."
 
 ### Q12: Walk through the NIST Risk Management Framework steps.
 
-**Answer:** The NIST RMF has seven steps: (1) Prepare â€” establish risk management roles, risk tolerance, and strategy. (2) Categorize â€” classify the system as Low/Moderate/High impact using FIPS 199. (3) Select â€” choose security controls from NIST SP 800-53 baseline for the categorization level. (4) Implement â€” deploy the controls in system design and configuration. (5) Assess â€” evaluate whether controls are effectively implemented (testing, documentation review). (6) Authorize â€” a designated authorizing official accepts residual risk and issues an Authority to Operate (ATO). (7) Monitor â€” continuous monitoring, periodic reassessment, and change management.
+**Answer:** The NIST RMF has seven steps: (1) Prepare → establish risk management roles, risk tolerance, and strategy. (2) Categorize → classify the system as Low/Moderate/High impact using FIPS 199. (3) Select → choose security controls from NIST SP 800-53 baseline for the categorization level. (4) Implement → deploy the controls in system design and configuration. (5) Assess → evaluate whether controls are effectively implemented (testing, documentation review). (6) Authorize → a designated authorizing official accepts residual risk and issues an Authority to Operate (ATO). (7) Monitor → continuous monitoring, periodic reassessment, and change management.
 
 ### Q13: What's the difference between a vulnerability, a threat, and a risk?
 
@@ -1642,7 +1642,7 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 ### Q15: Compare STRIDE and PASTA threat modeling approaches. When would you use each?
 
-**Answer:** STRIDE is a threat-centric approach from Microsoft â€” six categories (Spoofing, Tampering, Repudiation, Info Disclosure, DoS, Elevation of Privilege). Fast, lightweight, good for design-phase threat identification. Best for early-stage projects with limited time. PASTA is a risk-centric approach from VerSprite â€” seven stages starting with business objectives and ending with quantified risk. Comprehensive but resource-intensive (weeks vs hours). Best for complex enterprise applications where security investment needs business justification. Use STRIDE for sprint-level threat modeling; use PASTA for annual application security assessments.
+**Answer:** STRIDE is a threat-centric approach from Microsoft → six categories (Spoofing, Tampering, Repudiation, Info Disclosure, DoS, Elevation of Privilege). Fast, lightweight, good for design-phase threat identification. Best for early-stage projects with limited time. PASTA is a risk-centric approach from VerSprite → seven stages starting with business objectives and ending with quantified risk. Comprehensive but resource-intensive (weeks vs hours). Best for complex enterprise applications where security investment needs business justification. Use STRIDE for sprint-level threat modeling; use PASTA for annual application security assessments.
 
 ---
 
@@ -1650,10 +1650,10 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 - **CIA Triad** (Confidentiality, Integrity, Availability) defines the three primary goals of information security. Every control serves at least one.
 - **AAA** (Authentication, Authorization, Accounting) governs who can access what and tracks their actions.
-- **Seven Security Principles** â€” Least Privilege, Defense in Depth, Economy of Mechanism, Fail-Safe Defaults, Complete Mediation, Open Design, Separation of Duties â€” form the foundation of secure system design.
+- **Seven Security Principles** → Least Privilege, Defense in Depth, Economy of Mechanism, Fail-Safe Defaults, Complete Mediation, Open Design, Separation of Duties → form the foundation of secure system design.
 - **Threat Modeling** frameworks (STRIDE, PASTA, LINDDUN, Attack Trees) provide systematic approaches to identifying threats before they materialize.
 - **Risk Management** (qualitative, quantitative, NIST RMF) provides structure for prioritizing security investments under uncertainty.
-- **Case Studies** (Equifax, Target, Capital One) demonstrate that security failures are almost never technical â€” they are process failures: missed patches, overprivileged accounts, collapsed defense layers.
+- **Case Studies** (Equifax, Target, Capital One) demonstrate that security failures are almost never technical → they are process failures: missed patches, overprivileged accounts, collapsed defense layers.
 - **Practical Tools** (Wazuh, nmap, Wireshark, John/hashcat, Lynis) are essential hands-on skills for security practitioners.
 
 ---
@@ -1752,13 +1752,13 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
 
 ---
 
-> **Next: Chapter 2 â€” Cryptography & TLS.** Encryption, hashing, PKI, digital signatures, TLS handshake, certificate management, and common crypto attacks.
+> **Next: Chapter 2 → Cryptography & TLS.** Encryption, hashing, PKI, digital signatures, TLS handshake, certificate management, and common crypto attacks.
 
 ---
 
-## 14. Supplementary Depth â€” Extended Topics
+## 14. Supplementary Depth → Extended Topics
 
-### 14.1 CIA Triad â€” Detailed Control Mapping
+### 14.1 CIA Triad → Detailed Control Mapping
 
 Every security control maps to one or more CIA elements. Understanding which CIA element a control serves helps prioritize investment.
 
@@ -1779,7 +1779,7 @@ Every security control maps to one or more CIA elements. Understanding which CIA
 | Audit Logging | âŒ | âœ… Non-repudiation | âŒ | auditd, Windows Event Log, SIEM |
 | Data Masking | âœ… Primary | âŒ | âŒ | Dynamic masking, Tokenization |
 
-### 14.2 CIA Attacks â€” Detailed Breakdown by Attack Type
+### 14.2 CIA Attacks → Detailed Breakdown by Attack Type
 
 | Attack Type | CIA Element | How It Works | Real-World Example |
 |-------------|:-----------:|--------------|-------------------|
@@ -1796,7 +1796,7 @@ Every security control maps to one or more CIA elements. Understanding which CIA
 | Social Engineering | C + A | Manipulating humans to reveal information | CEO fraud, spear phishing |
 | Password Spraying | C | Trying common passwords across many accounts | Testing "Spring2024!" against 10K accounts |
 
-### 14.3 AAA Protocols â€” Detailed Comparison
+### 14.3 AAA Protocols → Detailed Comparison
 
 | Feature | RADIUS | TACACS+ | Kerberos | LDAP |
 |---------|--------|---------|----------|------|
@@ -1841,17 +1841,17 @@ Supplicant        NAS/AP           RADIUS Server       PKI/CA
    |                |                   |                 |
 ```
 
-### 14.4 Security Principles â€” Extended Edge Cases
+### 14.4 Security Principles → Extended Edge Cases
 
 | Principle | Edge Case | Resolution |
 |-----------|-----------|------------|
 | Least Privilege | Service account needs to read /etc/shadow for authentication | Use PAM with dedicated auth service; do not give web app direct shadow access |
-| Defense in Depth | All layers use the same vendor/technology | Independent failure domains â€” different vendors, different admin teams, different failure modes |
+| Defense in Depth | All layers use the same vendor/technology | Independent failure domains → different vendors, different admin teams, different failure modes |
 | Economy of Mechanism | Simple password check vs complex SSO federation | SSO is more complex but reduces total auth points; evaluate net complexity |
 | Fail-Safe Defaults | Hospital fire door vs security door | Fire door fails open (life safety); security door fails closed (asset protection). Define "safe" per context |
 | Complete Mediation | Kernel checks permissions on open() but not on read() | Ensure every syscall checks; Linux does this correctly via the VFS layer |
 | Open Design | Company wants to use proprietary encryption to "hide" algorithms | Cannot rely on obscurity. Use standard algorithms (AES, ChaCha20). Keys are secret, not algorithms |
-| Separation of Duties | Startup with 3-person team â€” one person must wear multiple hats | Use compensating controls: mandatory PR review, break-glass procedures with audit, quarterly access reviews |
+| Separation of Duties | Startup with 3-person team → one person must wear multiple hats | Use compensating controls: mandatory PR review, break-glass procedures with audit, quarterly access reviews |
 
 ### 14.5 Security Design Patterns
 
@@ -1905,9 +1905,9 @@ Supplicant        NAS/AP           RADIUS Server       PKI/CA
 | Privileged Account Count | Number of users with admin access | Minimal (< total users) | Blast radius measure |
 | Patching Coverage | % of systems with latest critical patches | > 99% | Measures patch deployment completeness |
 
-### 14.9 Threat Modeling â€” Attack Tree Security Controls Integration
+### 14.9 Threat Modeling → Attack Tree Security Controls Integration
 
-**Practical Approach â€” Integrating Attack Trees with Controls:**
+**Practical Approach → Integrating Attack Trees with Controls:**
 
 ```
 Attack Tree Node                            Control / Mitigation
@@ -1939,7 +1939,7 @@ Physical data center access      $50K               High (guards)        $200K (
 Priority ranking: Mitigate what can be exploited for least cost AND is cheapest to fix.
 ```
 
-### 14.10 Password Cracking â€” Defense Strategies
+### 14.10 Password Cracking → Defense Strategies
 
 **How Password Hashes Are Stolen:**
 1. SQL injection extracting database tables
@@ -1952,7 +1952,7 @@ Priority ranking: Mitigate what can be exploited for least cost AND is cheapest 
 
 | Strategy | How It Helps | Implementation |
 |----------|-------------|----------------|
-| **Use strong hashing algorithms** | bcrypt, Argon2id, scrypt are memory-hard and slow â€” thousands of years to crack | OWASP recommends Argon2id, fallback bcrypt (cost >= 10) |
+| **Use strong hashing algorithms** | bcrypt, Argon2id, scrypt are memory-hard and slow → thousands of years to crack | OWASP recommends Argon2id, fallback bcrypt (cost >= 10) |
 | **Add salt** | Prevents rainbow table attacks; each hash must be cracked individually | Salt = random per-password, stored alongside hash |
 | **Add pepper** | Server-side secret; attacker needs both DB and server compromise | Store pepper in secure vault (HSM, AWS Secrets Manager) |
 | **Enforce password complexity** | Increases keyspace; passphrases > complex gibberish | 12+ characters, no dictionary words minimum |
@@ -1960,13 +1960,13 @@ Priority ranking: Mitigate what can be exploited for least cost AND is cheapest 
 | **MFA** | Password alone is insufficient for access | TOTP, FIDO2 WebAuthn, push notifications |
 | **Passwordless authentication** | Eliminates the password attack surface entirely | Passkeys (FIDO2/WebAuthn), biometric authentication |
 
-### 14.11 Defense in Depth â€” Failure Mode Analysis
+### 14.11 Defense in Depth → Failure Mode Analysis
 
 For each layer in a defense-in-depth strategy, define:
 1. How can this layer fail?
 2. What does the next layer do when this one fails?
 
-**Web Application â€” Layer Failure Cascade:**
+**Web Application → Layer Failure Cascade:**
 
 | Layer | Control | How It Can Fail | Next Layer Catches |
 |-------|---------|----------------|-------------------|
@@ -1976,11 +1976,11 @@ For each layer in a defense-in-depth strategy, define:
 | 4 | Authentication | MFA implementation bug allows bypass | Authorization checks still limit what attacker can do |
 | 5 | Authorization | RBAC model has privilege escalation bug | Audit log captures blamable evidence |
 | 6 | Input Validation | Validation logic has bypass (e.g., alternate encoding) | Parameterized queries prevent SQL injection regardless |
-| 7 | Encryption | TLS certificate expires or cipher broken | Data stored encrypted at rest â€” decryption key is separate |
-| 8 | Logging & Monitoring | SIEM ingestion pipeline fails | Backups still exist â€” data can be restored |
+| 7 | Encryption | TLS certificate expires or cipher broken | Data stored encrypted at rest → decryption key is separate |
+| 8 | Logging & Monitoring | SIEM ingestion pipeline fails | Backups still exist → data can be restored |
 | 9 | Backups | Backup corrupted or encrypted by ransomware | Immutable/offline backups (3-2-1 rule) survive |
 
-### 14.12 Risk Management â€” Advanced ROSI Calculation
+### 14.12 Risk Management → Advanced ROSI Calculation
 
 **Multi-Control ROSI Example:**
 
@@ -2000,7 +2000,7 @@ Controls Implemented:
   C. Security awareness training:  $15,000/year (reduces ARO by 30%)
   D. Incident response retainer:   $30,000/year (reduces SLE by 40%)
 
-Combined effect (not additive â€” controls interact):
+Combined effect (not additive → controls interact):
   New ARO: 0.02 (90% reduction from combination of A + C)
   New EF:  0.12 (80% reduction from B, 40% reduction from D = 0.6 x 0.2 x 0.6 = 0.072)
   New SLE: $5,000,000 x 0.072 = $360,000
@@ -2013,7 +2013,7 @@ ROSI:                         ($592,800 - $110,000) / $110,000 = 439% ROI
 Conclusion: Strong positive ROI. Every $1 spent on security saves $4.39 in expected loss.
 ```
 
-### 14.13 Qualitative Risk Assessment â€” Detailed Walkthrough
+### 14.13 Qualitative Risk Assessment → Detailed Walkthrough
 
 **Scenario: Assess risk of ransomware for a small law firm.**
 
@@ -2088,7 +2088,7 @@ The managing partner accepts residual risk of Low-Medium after controls are impl
 
 ---
 
-## 16. Quick Reference â€” Key Formulas and Acronyms
+## 16. Quick Reference → Key Formulas and Acronyms
 
 | Acronym | Stands For | Category |
 |---------|-----------|----------|
@@ -2158,23 +2158,23 @@ The managing partner accepts residual risk of Low-Medium after controls are impl
 
 ## References and Further Reading
 
-1. Saltzer, J.H. and Schroeder, M.D. (1975). "The Protection of Information in Computer Systems." â€” The original seven security principles.
-2. Microsoft Corporation. (1999). "The STRIDE Threat Model." â€” Original STRIDE documentation.
-3. UcedaVÃ©lez, T. and Morana, M.M. (2015). "Risk Centric Threat Modeling: Process for Attack Simulation and Threat Analysis." â€” PASTA methodology book.
-4. Deng, M. et al. (2011). "A Privacy Threat Analysis Framework: LINDDUN." â€” Original LINDDUN paper.
-5. Schneier, B. (1999). "Attack Trees." Dr. Dobb's Journal. â€” Attack tree methodology.
+1. Saltzer, J.H. and Schroeder, M.D. (1975). "The Protection of Information in Computer Systems." → The original seven security principles.
+2. Microsoft Corporation. (1999). "The STRIDE Threat Model." → Original STRIDE documentation.
+3. UcedaVÃ©lez, T. and Morana, M.M. (2015). "Risk Centric Threat Modeling: Process for Attack Simulation and Threat Analysis." → PASTA methodology book.
+4. Deng, M. et al. (2011). "A Privacy Threat Analysis Framework: LINDDUN." → Original LINDDUN paper.
+5. Schneier, B. (1999). "Attack Trees." Dr. Dobb's Journal. → Attack tree methodology.
 6. NIST SP 800-37 Rev. 2. (2018). "Risk Management Framework for Information Systems and Organizations."
 7. NIST SP 800-53 Rev. 5. (2020). "Security and Privacy Controls for Information Systems and Organizations."
 8. NIST CSF 2.0. (2024). "Cybersecurity Framework."
-9. OWASP. (2024). "Password Storage Cheat Sheet." â€” Password hashing recommendations.
+9. OWASP. (2024). "Password Storage Cheat Sheet." → Password hashing recommendations.
 10. PCI Security Standards Council. (2022). "PCI DSS v4.0."
-11. US Senate Committee on Banking, Housing, and Urban Affairs. (2014). "Target Data Breach Hearing." â€” Congressional testimony on the Target breach.
-12. US House Committee on Oversight and Government Reform. (2018). "Equifax Data Breach Hearing." â€” Congressional testimony on the Equifax breach.
-13. US Department of Justice. (2020). "United States v. Paige Thompson." â€” Capital One breach criminal case.
+11. US Senate Committee on Banking, Housing, and Urban Affairs. (2014). "Target Data Breach Hearing." → Congressional testimony on the Target breach.
+12. US House Committee on Oversight and Government Reform. (2018). "Equifax Data Breach Hearing." → Congressional testimony on the Equifax breach.
+13. US Department of Justice. (2020). "United States v. Paige Thompson." → Capital One breach criminal case.
 
 ---
 
-## 17. Security Tools Ecosystem â€” Extended Reference
+## 17. Security Tools Ecosystem → Extended Reference
 
 ### 17.1 Tool Classification by Security Domain
 
@@ -2195,7 +2195,7 @@ The managing partner accepts residual risk of Low-Medium after controls are impl
 | **Threat Intelligence** | MISP, OpenCTI, TheHive, YARA, STIX/TAXII | Threat intel platform, IOC management |
 | **Compliance** | Lynis, OpenSCAP, Inspec, Chef Compliance, Wazuh | Security auditing, compliance checking |
 
-### 17.2 NMAP Scripting Engine (NSE) â€” Advanced Usage
+### 17.2 NMAP Scripting Engine (NSE) → Advanced Usage
 
 **NSE Script Categories:**
 
@@ -2281,7 +2281,7 @@ end
 | Multiple targets | `nmap -iL targets.txt -A` | Scan from target list file |
 | Output all formats | `nmap -oA scan_output 192.168.1.0/24` | Output in .nmap, .gnmap, .xml |
 
-### 17.5 John the Ripper â€” Modes Deep Dive
+### 17.5 John the Ripper → Modes Deep Dive
 
 | Mode | Flag | Description | Speed | Crack Rate |
 |------|------|-------------|-------|------------|
@@ -2343,7 +2343,7 @@ hashcat -m 0 -a 3 -1 ?l?d hashes.txt ?1?1?1?1?1?1?1?1
 
 ---
 
-## 18. Extended Lab Exercises â€” Step-by-Step Walkthroughs
+## 18. Extended Lab Exercises → Step-by-Step Walkthroughs
 
 ### Lab 1: Build a Defense-in-Depth Home Lab
 
@@ -2359,7 +2359,7 @@ hashcat -m 0 -a 3 -1 ?l?d hashes.txt ?1?1?1?1?1?1?1?1
 # Step 1: Set up the base VM
 # Install Ubuntu Server 22.04 with SSH server
 
-# Step 2: Layer 1 â€” Host-based Firewall (iptables/nftables)
+# Step 2: Layer 1 → Host-based Firewall (iptables/nftables)
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
@@ -2368,7 +2368,7 @@ sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 sudo ufw status verbose
 
-# Step 3: Layer 2 â€” Fail2ban (brute-force protection)
+# Step 3: Layer 2 → Fail2ban (brute-force protection)
 sudo apt install fail2ban -y
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 sudo systemctl start fail2ban
@@ -2377,7 +2377,7 @@ sudo systemctl enable fail2ban
 # Verify:
 sudo fail2ban-client status sshd
 
-# Step 4: Layer 3 â€” File Integrity Monitoring (AIDE)
+# Step 4: Layer 3 → File Integrity Monitoring (AIDE)
 sudo apt install aide -y
 sudo aideinit   # Initialize database (takes several minutes)
 sudo mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db
@@ -2385,7 +2385,7 @@ sudo mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db
 # Check integrity:
 sudo aide --check
 
-# Step 5: Layer 4 â€” Audit logging
+# Step 5: Layer 4 → Audit logging
 sudo apt install auditd audispd-plugins -y
 sudo systemctl start auditd
 sudo systemctl enable auditd
@@ -2394,22 +2394,22 @@ sudo systemctl enable auditd
 echo "-w /etc/passwd -p wa -k passwd_changes" | sudo tee -a /etc/audit/rules.d/audit.rules
 sudo systemctl restart auditd
 
-# Step 6: Layer 5 â€” Intrusion Detection with Wazuh agent
+# Step 6: Layer 5 → Intrusion Detection with Wazuh agent
 # (See Section 8.1 for installation)
 
-# Step 7: Layer 6 â€” Regular backups
+# Step 7: Layer 6 → Regular backups
 sudo apt install rsync -y
 # Daily backup script:
 echo '#!/bin/bash
 rsync -avz --delete /home/ user@backup-server:/backups/' | sudo tee /etc/cron.daily/backup
 sudo chmod +x /etc/cron.daily/backup
 
-# Step 8: Layer 7 â€” Lynis audit
+# Step 8: Layer 7 → Lynis audit
 sudo apt install lynis -y
 sudo lynis audit system
 ```
 
-### Lab 2: Password Policy Enforcement â€” Crack Your Own Passwords
+### Lab 2: Password Policy Enforcement → Crack Your Own Passwords
 
 **Objective:** Understand password strength by cracking hashes of known passwords. NEVER crack passwords you don't own.
 
@@ -2441,7 +2441,7 @@ time john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hashes_md
 # j8#mK2pL9qR!vX5n     : NOT cracked (random, 16 chars, all 4 char types)
 ```
 
-### Lab 3: Forensic Analysis with Wireshark â€” Detect Credential Theft
+### Lab 3: Forensic Analysis with Wireshark → Detect Credential Theft
 
 **Objective:** Capture HTTP traffic and identify cleartext credentials.
 
@@ -2485,7 +2485,7 @@ With TLS, the POST body would be encrypted.
 The username and password would not be visible in the capture."
 ```
 
-### Lab 4: Risk Assessment â€” Small Business Case Study
+### Lab 4: Risk Assessment → Small Business Case Study
 
 **Scenario:** You are hired to perform a risk assessment for "BookNest," a small independent bookstore with:
 - 1 Windows Server (files, inventory)
@@ -2518,7 +2518,7 @@ curl -I https://booknest.com
 ```
 ASSET: Linux web server (192.168.1.10)
   Scanner: Nikto
-  Finding: WordPress 5.8.3 â€” 47 known vulnerabilities
+  Finding: WordPress 5.8.3 → 47 known vulnerabilities
   Risk: HIGH (CVE-2022-21661 SQL injection in WP_Query)
   Recommendation: Update WordPress to latest version immediately
   Owner: Store Manager
@@ -2526,7 +2526,7 @@ ASSET: Linux web server (192.168.1.10)
 
 ASSET: Router (192.168.1.1)
   Scanner: Nmap
-  Finding: Telnet (port 23) open â€” no encryption on admin interface
+  Finding: Telnet (port 23) open → no encryption on admin interface
   Risk: CRITICAL (credentials transmitted in cleartext)
   Recommendation: Disable Telnet, use SSH. Change default admin password.
   Owner: Store Manager
@@ -2540,7 +2540,7 @@ ASSET: POS Terminal
   Due: 30 days
 ```
 
-### Lab 5: Complete Security Audit with Lynis â€” Remediation Walkthrough
+### Lab 5: Complete Security Audit with Lynis → Remediation Walkthrough
 
 ```bash
 # Step 1: Run initial audit

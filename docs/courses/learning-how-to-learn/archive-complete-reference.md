@@ -1,17 +1,17 @@
 # Learning How to Learn
 
-> **Universal meta-skill â€” accelerate learning across all 27 courses in this repository.**
+> **Universal meta-skill → accelerate learning across all 27 courses in this repository.**
 > Every technique is demonstrated with worked examples from actual course content.
 
 ---
 
-## Part 1: Foundations â€” How Your Brain Actually Learns
+## Part 1: Foundations → How Your Brain Actually Learns
 
 ### Q1: What are focused and diffuse modes of thinking, and when should you use each?
 
 **Answer:** Focused mode is concentrated, attentive thinking on a specific problem using well-worn neural pathways. Diffuse mode is a relaxed, big-picture state where your brain makes remote associations. You need both.
 
-When you sit down to solve a subnetting problem from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md) â€” say, finding the network address for `192.168.15.42/27` â€” you engage focused mode. You apply the formula: `/27` means 255.255.255.224, block size = 32, network address = `192.168.15.32`. Your brain fires precise, practiced circuits.
+When you sit down to solve a subnetting problem from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md) → say, finding the network address for `192.168.15.42/27` → you engage focused mode. You apply the formula: `/27` means 255.255.255.224, block size = 32, network address = `192.168.15.32`. Your brain fires precise, practiced circuits.
 
 But if you stare at the problem for 20 minutes and still can't figure out why the broadcast address is `192.168.15.63`, you need diffuse mode. Get up. Walk. Shower. Your brain's default mode network continues working subconsciously, making remote connections. Many students report the answer arrives while brushing their teeth.
 
@@ -39,7 +39,7 @@ public class SubnetCalculator {
 
 ### Q2: How do you know when to switch between focused and diffuse modes?
 
-**Answer:** The signal is **frustration**. If you've been working on a problem for 15-20 minutes and feel stuck, confused, or annoyed â€” that's your cue to switch to diffuse mode.
+**Answer:** The signal is **frustration**. If you've been working on a problem for 15-20 minutes and feel stuck, confused, or annoyed → that's your cue to switch to diffuse mode.
 
 In [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), Q37 asks you to find the median of two sorted arrays in O(log(min(n,m))). This is a hard problem. If you've sketched three approaches (merge-and-find, two-pointer, binary search on the smaller array) and all have flaws, continuing to stare at the screen yields diminishing returns. Your mental "chalkboard" is full.
 
@@ -53,13 +53,13 @@ Stop. Take a walk. Let your brain's diffuse networks re-organize what you've lea
 
 **Answer:** Working memory can hold roughly 4 discrete chunks of information simultaneously (the "magic number 4"). Each chunk is a package of related concepts. To learn complex material, you must compress information into larger chunks.
 
-Look at the Java course structure in [`docs/courses/java/index.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/java/index.md). The course has 13 parts with 66+ chapters. If you tried to hold "Part III: Spring Boot Fundamentals" as 6 separate chapters (DI, auto-configuration, properties, Actuator, logging, testing), that's 6 items â€” over the limit. Instead, chunk it:
+Look at the Java course structure in [`docs/courses/java/index.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/java/index.md). The course has 13 parts with 66+ chapters. If you tried to hold "Part III: Spring Boot Fundamentals" as 6 separate chapters (DI, auto-configuration, properties, Actuator, logging, testing), that's 6 items → over the limit. Instead, chunk it:
 
 1. **Spring Boot Core** (DI, auto-config, properties, profiles)
 2. **Actuator & Observability** (Actuator, logging, metrics)
 3. **Testing** (unit, integration, security tests)
 
-Now it's 3 chunks. Each chunk is a rich neural pattern containing sub-knowledge, but your conscious mind sees just 3 items â€” well within limits.
+Now it's 3 chunks. Each chunk is a rich neural pattern containing sub-knowledge, but your conscious mind sees just 3 items → well within limits.
 
 ```java
 public class ChunkExample {
@@ -68,7 +68,7 @@ public class ChunkExample {
     @ComponentScan
     public class FragmentedApp { }
 
-    // After: 1 chunk â€” "@SpringBootApplication does it all"
+    // After: 1 chunk → "@SpringBootApplication does it all"
     @SpringBootApplication  // = @Config + @EnableAutoConfig + @ComponentScan
     public class ChunkedApp { }
 }
@@ -84,9 +84,9 @@ public class ChunkExample {
 
 Take "Binary Search Tree" from [`docs/courses/data-structures/09-bst.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/09-bst.md). Here's how to chunk it:
 
-**Step 1 â€” Focus:** Read the BST property: left subtree < node < right subtree. Write it down.
-**Step 2 â€” Understand:** Trace through insert(50), insert(30), insert(80), insert(20), insert(40). Draw each step. Why does 20 go left of 30? Why does 40 go right of 30? Understand the recursive structure.
-**Step 3 â€” Context:** When do you use a BST vs a hash table? BST gives ordered traversal (sorted order), floor/ceiling, range queries. Hash table gives O(1) lookup but no order.
+**Step 1 → Focus:** Read the BST property: left subtree < node < right subtree. Write it down.
+**Step 2 → Understand:** Trace through insert(50), insert(30), insert(80), insert(20), insert(40). Draw each step. Why does 20 go left of 30? Why does 40 go right of 30? Understand the recursive structure.
+**Step 3 → Context:** When do you use a BST vs a hash table? BST gives ordered traversal (sorted order), floor/ceiling, range queries. Hash table gives O(1) lookup but no order.
 
 ```java
 class BST {
@@ -112,10 +112,10 @@ class BST {
 
 The OSI 7-layer model from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md) (section 1) is a classic example. Instead of memorizing 7 separate layers, compress them into 4 functional groups:
 
-1. **Media layers** (Physical + Data Link) â€” getting bits from A to B on the same wire
-2. **Network layer** â€” routing across different networks (IP)
-3. **Transport layer** â€” reliable end-to-end delivery (TCP)
-4. **Application layers** (Session + Presentation + Application) â€” what the user sees
+1. **Media layers** (Physical + Data Link) → getting bits from A to B on the same wire
+2. **Network layer** → routing across different networks (IP)
+3. **Transport layer** → reliable end-to-end delivery (TCP)
+4. **Application layers** (Session + Presentation + Application) → what the user sees
 
 Now your brain holds 4 chunks instead of 7. Each chunk can expand when needed. If a GATE question asks about "which layer handles encryption," you zoom into the Application chunk and recall: Presentation layer (Layer 6).
 
@@ -127,7 +127,7 @@ public enum OsiLayer {
     APPLICATION(7, "Data");
 
     // Chunk: "Please Do Not Throw Sausage Pizza Away"
-    // Better chunk: Media(1-2) â†’ Net(3) â†’ Transport(4) â†’ App(5-7)
+    // Better chunk: Media(1-2) → Net(3) → Transport(4) → App(5-7)
 }
 ```
 
@@ -137,7 +137,7 @@ public enum OsiLayer {
 
 ### Q6: What's the difference between procedural and declarative knowledge, and why does it matter?
 
-**Answer:** Declarative knowledge is "knowing *that*" â€” facts, concepts, theories. Procedural knowledge is "knowing *how*" â€” the ability to execute a process. Learning requires both, but they live in different memory systems.
+**Answer:** Declarative knowledge is "knowing *that*" → facts, concepts, theories. Procedural knowledge is "knowing *how*" → the ability to execute a process. Learning requires both, but they live in different memory systems.
 
 From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md): you can **declare** that recursion has a base case and a recursive case (declarative). But **procedurally** writing a recursive DFS on a tree requires practice:
 
@@ -152,7 +152,7 @@ void dfs(TreeNode node) {
 }
 ```
 
-Many students read the code and think "I understand" â€” that's declarative. But ask them to write it from memory and they freeze. The illusion of competence (Q9) comes from confusing declarative and procedural knowledge. You only truly know something when you can *do* it.
+Many students read the code and think "I understand" → that's declarative. But ask them to write it from memory and they freeze. The illusion of competence (Q9) comes from confusing declarative and procedural knowledge. You only truly know something when you can *do* it.
 
 **Try This:** Read the explanation of BFS in [`docs/courses/data-structures/12-graph-traversals.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/12-graph-traversals.md) (declarative). Then close the file and implement BFS from memory (procedural). Open it again and compare. Repeat until you can write it perfectly.
 
@@ -160,7 +160,7 @@ Many students read the code and think "I understand" â€” that's declarative
 
 ### Q7: How does sleep affect memory consolidation?
 
-**Answer:** Sleep is when your brain moves information from short-term (hippocampus) to long-term (neocortex) memory. Without adequate sleep, learning that happened during the day is not consolidated â€” it's like saving a file without clicking "Save."
+**Answer:** Sleep is when your brain moves information from short-term (hippocampus) to long-term (neocortex) memory. Without adequate sleep, learning that happened during the day is not consolidated → it's like saving a file without clicking "Save."
 
 Before a GATE exam, many students pull all-nighters studying [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md). This is counterproductive. The formulas for CPU scheduling (TAT, WT, RT from the Cheat Sheet) need sleep to consolidate. If you study them at 10 PM and sleep 8 hours, you'll recall them better at 9 AM than if you studied until 4 AM.
 
@@ -189,13 +189,13 @@ public class MemoryConsolidation {
 
 ### Q8: What is deliberate practice, and how do you apply it?
 
-**Answer:** Deliberate practice is focused, structured practice at the edge of your current ability â€” not doing what you're already good at, but working on the next thing you can barely do.
+**Answer:** Deliberate practice is focused, structured practice at the edge of your current ability → not doing what you're already good at, but working on the next thing you can barely do.
 
-From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), Q37 (Median of Two Sorted Arrays) â€” difficulty **Hard**, tagged for Google and Meta. If you can comfortably solve Easy and Medium problems, deliberate practice means tackling this hard problem now, not solving 10 more Easy ones.
+From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), Q37 (Median of Two Sorted Arrays) → difficulty **Hard**, tagged for Google and Meta. If you can comfortably solve Easy and Medium problems, deliberate practice means tackling this hard problem now, not solving 10 more Easy ones.
 
 The protocol:
 1. Attempt the problem for 30 minutes without any help
-2. If stuck, read the first few lines of the solution â€” just the approach hint
+2. If stuck, read the first few lines of the solution → just the approach hint
 3. Try to implement from the hint alone
 4. After solving, analyze *why* the partition-based approach works
 5. Solve a similar hard problem (e.g., Q41: Merge k Sorted Lists)
@@ -222,21 +222,21 @@ public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
 ### Q9: What are illusions of competence, and how do you avoid them?
 
-**Answer:** The #1 learning trap: **rereading** feels productive but isn't. When you re-read a chapter, your brain recognizes the content â€” and recognition feels like knowing. But recognition â‰  recall, and exams test recall.
+**Answer:** The #1 learning trap: **rereading** feels productive but isn't. When you re-read a chapter, your brain recognizes the content → and recognition feels like knowing. But recognition â‰  recall, and exams test recall.
 
 A student opens [`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md) and reads the Normal Form Summary table: 1NF, 2NF, 3NF, BCNF, 4NF, 5NF. They read it twice. "I know this," they think. But when a GATE question asks:
 
-> *R(A,B,C,D) with FDs: ABâ†’C, Câ†’D, Dâ†’A. Which normal form?*
+> *R(A,B,C,D) with FDs: AB→C, C→D, D→A. Which normal form?*
 
-They can't answer because they only recognized the table â€” they never tested whether they could *apply* the definitions.
+They can't answer because they only recognized the table → they never tested whether they could *apply* the definitions.
 
 ```java
 // Recognition â‰  Recall
 public class CompetenceIllusion {
-    // Reading: "I know this, it's easy" â€” illusion
+    // Reading: "I know this, it's easy" → illusion
     void readPassively(String chapter) { /* feels good, does nothing */ }
 
-    // Testing: "Wait, I can't actually do it" â€” reality
+    // Testing: "Wait, I can't actually do it" → reality
     void recallFromMemory(String chapter) {
         // This is painful. That's how you know it's working.
     }
@@ -289,10 +289,10 @@ public class RecallTest {
 
 From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), consider Q11: Container With Most Water (Amazon, Google, Meta). A novice sees two heights and immediately thinks: "Find the maximum height, then compute area with every other line." That's O(nÂ²). They chase this approach for 20 minutes.
 
-The optimal solution uses two pointers moving inward â€” O(n). But the Einstellung effect (fixation on "find tallest first") blocks the two-pointer insight. The solution is to deliberately step back and ask: "Are there other ways to frame this problem?"
+The optimal solution uses two pointers moving inward → O(n). But the Einstellung effect (fixation on "find tallest first") blocks the two-pointer insight. The solution is to deliberately step back and ask: "Are there other ways to frame this problem?"
 
 ```java
-// Einstellung: "I must find the max first" â€” O(nÂ²)
+// Einstellung: "I must find the max first" → O(nÂ²)
 public int maxAreaStuck(int[] height) {
     int max = 0;
     for (int i = 0; i < height.length; i++)        // â† stuck thinking
@@ -301,7 +301,7 @@ public int maxAreaStuck(int[] height) {
     return max;
 }
 
-// Breakthrough: two pointers â€” O(n)
+// Breakthrough: two pointers → O(n)
 public int maxArea(int[] height) {
     int l = 0, r = height.length - 1, max = 0;
     while (l < r) {
@@ -330,7 +330,7 @@ If you learned Eloquent ORM from [`docs/courses/laravel/04-eloquent-database.md`
 | Eager loading | `User::with('posts')->get()` | `@EntityGraph(attributePaths="posts")` |
 
 ```java
-// Knowledge transfer: Eloquent "with" â†’ JPA @EntityGraph
+// Knowledge transfer: Eloquent "with" → JPA @EntityGraph
 @Entity
 public class User {
     @Id private Long id;
@@ -347,9 +347,9 @@ public class User {
 
 ### Q13: What is attention residue, and why does multitasking hurt learning?
 
-**Answer:** Attention residue is the partial focus that remains on Task A when you switch to Task B. Your brain doesn't switch instantly â€” it carries a "residue" of the previous task that degrades performance on the current one.
+**Answer:** Attention residue is the partial focus that remains on Task A when you switch to Task B. Your brain doesn't switch instantly → it carries a "residue" of the previous task that degrades performance on the current one.
 
-If you're studying [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (page replacement algorithms: FIFO, LRU, Optimal), and you check a notification about placement interview prep from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), your brain now has two contexts partially loaded. When you return to FIFO vs LRU, you're not at full capacity â€” your brain is still processing where you left off in the DSA problem.
+If you're studying [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (page replacement algorithms: FIFO, LRU, Optimal), and you check a notification about placement interview prep from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), your brain now has two contexts partially loaded. When you return to FIFO vs LRU, you're not at full capacity → your brain is still processing where you left off in the DSA problem.
 
 Research shows it takes **23 minutes** to fully re-engage after an interruption. If you interrupt yourself 3 times per hour, you're losing over an hour of productive focus.
 
@@ -360,7 +360,7 @@ public class AttentionResidue {
         double residue = interruptions * 23;  // minutes lost to residue
         return Math.max(0, totalMinutes - residue);
     }
-    // 2 interruptions in 60 min â†’ only 14 min of real learning
+    // 2 interruptions in 60 min → only 14 min of real learning
 }
 ```
 
@@ -372,7 +372,7 @@ public class AttentionResidue {
 
 **Answer:** The Yerkes-Dodson law states that performance increases with arousal (stress, pressure) up to an optimal point, after which it decreases. The optimal arousal level depends on task difficulty.
 
-Simple tasks (e.g., recalling TCP port numbers from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md): HTTP=80, HTTPS=443, DNS=53) benefit from higher arousal. But complex tasks (e.g., solving a GATE question about TCP congestion control: slow start â†’ congestion avoidance â†’ fast retransmit) suffer from too much arousal.
+Simple tasks (e.g., recalling TCP port numbers from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md): HTTP=80, HTTPS=443, DNS=53) benefit from higher arousal. But complex tasks (e.g., solving a GATE question about TCP congestion control: slow start → congestion avoidance → fast retransmit) suffer from too much arousal.
 
 ```java
 public class YerkesDodson {
@@ -392,7 +392,7 @@ During a GATE mock test (from [`docs/courses/gate-cs-preparation/index.md`](http
 
 ### Q15: How does stress affect learning, and what can you do about it?
 
-**Answer:** Chronic stress elevates cortisol, which impairs hippocampal function â€” the brain region responsible for forming new memories. Acute stress before a test can block recall entirely.
+**Answer:** Chronic stress elevates cortisol, which impairs hippocampal function → the brain region responsible for forming new memories. Acute stress before a test can block recall entirely.
 
 Placement interview anxiety is real. You've studied [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md) for weeks. You can solve Q37 (Median of Two Sorted Arrays) at home. But in the interview, your mind goes blank. That's stress blocking hippocampal retrieval.
 
@@ -400,8 +400,8 @@ The antidote is **stress inoculation**: practice under conditions similar to the
 
 ```java
 public class StressInoculation {
-    // Before inoculation: high stress â†’ low performance
-    // After inoculation: same stress â†’ high performance
+    // Before inoculation: high stress → low performance
+    // After inoculation: same stress → high performance
 
     void practiceUnderPressure(int problemNumber, int minutes) {
         long start = System.currentTimeMillis();
@@ -409,7 +409,7 @@ public class StressInoculation {
         long elapsed = System.currentTimeMillis() - start;
         if (elapsed > minutes * 60_000L && !solved) {
             // This simulates interview pressure
-            System.out.println("Tick tock â€” keep going");
+            System.out.println("Tick tock → keep going");
         }
     }
 }
@@ -455,7 +455,7 @@ public class GrowthMindset {
 
 ### Q17: What is neuroplasticity, and how does learning Laravel change your brain?
 
-**Answer:** Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections throughout life. Every time you learn something, your brain physically changes â€” dendrites grow, synapses strengthen, and myelin sheaths thicken around frequently used pathways.
+**Answer:** Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections throughout life. Every time you learn something, your brain physically changes → dendrites grow, synapses strengthen, and myelin sheaths thicken around frequently used pathways.
 
 When you first studied [`docs/courses/laravel/04-eloquent-database.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/laravel/04-eloquent-database.md), Eloquent's fluent syntax felt foreign: `User::where('active', true)->orderBy('name')->get()`. After practice, this syntax becomes automatic. Your brain has physically rewired: the neural pathways for method chaining, ActiveRecord patterns, and query building have been myelinated.
 
@@ -467,7 +467,7 @@ Now when you approach Java's Stream API from [`docs/courses/java/p6-lambdas-stre
 
 ### Q18: Is the 10,000-hour rule real? How long does it take to become competent?
 
-**Answer:** The 10,000-hour rule (popularized by Gladwell from Ericsson's research) applies to world-class expertise in competitive fields â€” Olympic athletes, concert violinists. For *initial competence* in a technical skill, Josh Kaufman's research suggests **20 hours** of deliberate practice.
+**Answer:** The 10,000-hour rule (popularized by Gladwell from Ericsson's research) applies to world-class expertise in competitive fields → Olympic athletes, concert violinists. For *initial competence* in a technical skill, Josh Kaufman's research suggests **20 hours** of deliberate practice.
 
 You don't need 10,000 hours to build a CRUD app with Laravel. Following the Laravel course ([`docs/courses/laravel/index.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/laravel/index.md), Chapters 1-6), you can build a working application in about 20 hours of focused practice:
 
@@ -475,7 +475,7 @@ You don't need 10,000 hours to build a CRUD app with Laravel. Following the Lara
 - Hours 5-8: Eloquent models, migrations, relationships (Ch 4)
 - Hours 9-12: Authentication, forms, validation (Ch 5)
 - Hours 13-16: API development, testing (Ch 7, 10)
-- Hours 17-20: Deployment, debugging â€” working app
+- Hours 17-20: Deployment, debugging → working app
 
 ```java
 // 20 hours to competence: decompose into 4 chunks of 5 hours each
@@ -502,13 +502,13 @@ If you approach [`docs/courses/gate-cs-preparation/07-operating-systems.md`](htt
 ```java
 // Self-fulfilling prophecy in code
 public class Pygmalion {
-    // Low expectation â†’ low effort â†’ low results
+    // Low expectation → low effort → low results
     double lowExpectationOutcome() {
         double effort = 0.2;  // "why bother"
         return effort * 100;   // 20% understanding
     }
 
-    // High expectation â†’ high effort â†’ high results
+    // High expectation → high effort → high results
     double highExpectationOutcome() {
         double effort = 1.0;  // "I can do this"
         return effort * 100;   // 80-100% understanding
@@ -524,9 +524,9 @@ public class Pygmalion {
 
 **Answer:** Your brain is a biological organ. Its performance depends on blood flow, glucose, oxygen, and neurotransmitter balance. Neglecting brain health sabotages even the best study techniques.
 
-- **Exercise**: 20 minutes of cardio increases BDNF (Brain-Derived Neurotrophic Factor), which supports neuron growth and synaptic plasticity. Study [`docs/courses/data-structures/09-bst.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/09-bst.md) after a run â€” your brain forms chunks faster.
+- **Exercise**: 20 minutes of cardio increases BDNF (Brain-Derived Neurotrophic Factor), which supports neuron growth and synaptic plasticity. Study [`docs/courses/data-structures/09-bst.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/09-bst.md) after a run → your brain forms chunks faster.
 - **Nutrition**: Glucose is the brain's primary fuel. A steady supply (complex carbs, protein) outperforms sugar spikes. The Mediterranean diet correlates with better memory.
-- **Caffeine**: 100-200mg improves focus and memory consolidation â€” if timed right. Caffeine has a 5-6 hour half-life. Drinking coffee at 4 PM means half is still in your system at 10 PM, disrupting sleep quality and the memory consolidation you need from Q7.
+- **Caffeine**: 100-200mg improves focus and memory consolidation → if timed right. Caffeine has a 5-6 hour half-life. Drinking coffee at 4 PM means half is still in your system at 10 PM, disrupting sleep quality and the memory consolidation you need from Q7.
 
 ```java
 public class BrainOptimization {
@@ -564,13 +564,13 @@ public class ActiveRecall {
     // Retrieval practice: the real learning happens BETWEEN study sessions
     String[] recallChapter3_CPU_Scheduling() {
         return new String[]{
-            "FCFS â€” First Come First Served",
-            "SJF â€” Shortest Job First",
-            "SRTF â€” Shortest Remaining Time First",
-            "Round Robin â€” time quantum",
+            "FCFS → First Come First Served",
+            "SJF → Shortest Job First",
+            "SRTF → Shortest Remaining Time First",
+            "Round Robin → time quantum",
             "Priority Scheduling",
             "Multilevel Queue / Feedback Queue"
-        };  // â†’ compare with actual list in OS/index.md
+        };  // → compare with actual list in OS/index.md
     }
 }
 ```
@@ -609,7 +609,7 @@ public class ReadRecallVerify {
 
 ### Q23: What is the Blank Page Method, and how does it surface your knowledge gaps?
 
-**Answer:** Before studying a topic, take a blank page and write down everything you already know about it â€” from memory, without any references. This surfaces what you actually know (vs. what you think you know) and primes your brain to fill the gaps.
+**Answer:** Before studying a topic, take a blank page and write down everything you already know about it → from memory, without any references. This surfaces what you actually know (vs. what you think you know) and primes your brain to fill the gaps.
 
 Before opening [`docs/courses/computer-networks/08-transport-layer.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/computer-networks/08-transport-layer.md), write everything you know about TCP:
 
@@ -637,8 +637,8 @@ From [`docs/courses/gate-cs-preparation/08-database-management-systems.md`](http
   - Even if you're unsure, "BCNF" looks familiar. You might guess correctly.
 
 - **Recall**: "Write the definition of BCNF and give an example of a relation that is in 3NF but not BCNF."
-  - You must generate: "BCNF: For every non-trivial FD Xâ†’Y, X must be a superkey."
-  - Example: R(A,B,C) with FD Aâ†’B, Aâ†’C, and BCâ†’A. CK = {A, BC}. Aâ†’B has LHS = A which is a CK, but BCâ†’A has LHS = BC which is a CK. Wait â€” actually this *is* BCNF. Let me try R(A,B,C) with FDs ABâ†’C, Câ†’B. CK = {AB, AC}. Câ†’B has LHS = C which is not a superkey. So R is 3NF but not BCNF.
+  - You must generate: "BCNF: For every non-trivial FD X→Y, X must be a superkey."
+  - Example: R(A,B,C) with FD A→B, A→C, and BC→A. CK = {A, BC}. A→B has LHS = A which is a CK, but BC→A has LHS = BC which is a CK. Wait → actually this *is* BCNF. Let me try R(A,B,C) with FDs AB→C, C→B. CK = {AB, AC}. C→B has LHS = C which is not a superkey. So R is 3NF but not BCNF.
 
 The recall version forces you to construct knowledge, which strengthens the memory trace much more than choosing from options.
 
@@ -666,9 +666,9 @@ public class RecallVersusRecognition {
 
 Explain BFS (Breadth-First Search) from [`docs/courses/data-structures/12-graph-traversals.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/12-graph-traversals.md) to an imaginary classmate:
 
-> "BFS visits a graph level by level. You start at a source node, visit all its neighbors first, then the neighbors' neighbors. You use a queue: enqueue the source, then while the queue isn't empty, dequeue a node, visit it, and enqueue all its unvisited neighbors. That's why BFS finds the shortest path in an unweighted graph â€” the first time you reach a node, it's via the fewest edges."
+> "BFS visits a graph level by level. You start at a source node, visit all its neighbors first, then the neighbors' neighbors. You use a queue: enqueue the source, then while the queue isn't empty, dequeue a node, visit it, and enqueue all its unvisited neighbors. That's why BFS finds the shortest path in an unweighted graph → the first time you reach a node, it's via the fewest edges."
 
-If you stumble on "why a queue specifically?" â€” that reveals you're not clear on FIFO vs LIFO for level-order traversal. That's your gap.
+If you stumble on "why a queue specifically?" → that reveals you're not clear on FIFO vs LIFO for level-order traversal. That's your gap.
 
 ```java
 // Teaching BFS: if you can write this from memory, you know it
@@ -696,7 +696,7 @@ void bfs(Map<Integer, List<Integer>> graph, int start) {
 
 ### Q26: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?
 
-**Answer:** Ebbinghaus discovered that memory decays exponentially: you lose ~50% within an hour, ~70% within 24 hours, and ~90% within a week â€” unless you actively recall. Spaced repetition schedules reviews just before the forgetting curve would erase the memory, strengthening the neural trace each time.
+**Answer:** Ebbinghaus discovered that memory decays exponentially: you lose ~50% within an hour, ~70% within 24 hours, and ~90% within a week → unless you actively recall. Spaced repetition schedules reviews just before the forgetting curve would erase the memory, strengthening the neural trace each time.
 
 Take the GATE formula for CPU Turnaround Time from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md):
 
@@ -731,18 +731,18 @@ public class ForgettingCurve {
 
 **Answer:** Anki is a spaced repetition flashcard app. Here's how to set it up for the courses in this repo.
 
-**Step 1 â€” Install**: Download Anki from https://apps.ankiweb.net. Create an account.
+**Step 1 → Install**: Download Anki from https://apps.ankiweb.net. Create an account.
 
-**Step 2 â€” Create a deck**: "GATE CS" for `docs/courses/gate-cs-preparation/` materials.
+**Step 2 → Create a deck**: "GATE CS" for `docs/courses/gate-cs-preparation/` materials.
 
-**Step 3 â€” Add your first card** using the Sorting algorithms from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md):
+**Step 3 → Add your first card** using the Sorting algorithms from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md):
 
 > **Front:** What is the worst-case time complexity of QuickSort?
-> **Back:** O(nÂ²) â€” occurs when the pivot is always the smallest or largest element (already sorted or reverse sorted array without randomized pivot).
+> **Back:** O(nÂ²) → occurs when the pivot is always the smallest or largest element (already sorted or reverse sorted array without randomized pivot).
 >
 > **Extra:** Best case: O(n log n). Average: O(n log n). Space: O(log n) in-place.
 
-**Step 4 â€” Add a card for the OS cheat sheet:**
+**Step 4 → Add a card for the OS cheat sheet:**
 
 > **Front:** What is the Belady's Anomaly?
 > **Back:** In FIFO page replacement, increasing the number of frames can increase page faults. Only FIFO exhibits this. LRU and Optimal do not.
@@ -803,15 +803,15 @@ public class ReviewSchedule {
 > **Front:** What are the properties of ACID?
 > **Back:** Atomicity, Consistency, Isolation, Durability. Atomicity means all or nothing. Consistency means...
 
-This card is too broad. Your brain will pattern-match "ACID â†’ A, C, I, D" without understanding each one.
+This card is too broad. Your brain will pattern-match "ACID → A, C, I, D" without understanding each one.
 
 **Good cards** (test each concept individually):
 
-> **Card 1 â€” Front:** Which ACID property ensures that a transaction executes completely or not at all?
-> **Back:** Atomicity â€” enforced by the recovery manager via undo log.
+> **Card 1 → Front:** Which ACID property ensures that a transaction executes completely or not at all?
+> **Back:** Atomicity → enforced by the recovery manager via undo log.
 
-> **Card 2 â€” Front:** Which ACID property ensures that concurrent execution of transactions results in a state that is equivalent to some serial execution?
-> **Back:** Isolation â€” enforced by the concurrency control manager (locking, MVCC).
+> **Card 2 → Front:** Which ACID property ensures that concurrent execution of transactions results in a state that is equivalent to some serial execution?
+> **Back:** Isolation → enforced by the concurrency control manager (locking, MVCC).
 
 Reference: [`docs/courses/database-management-systems/09-transactions.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/database-management-systems/09-transactions.md).
 
@@ -834,7 +834,7 @@ Sample daily schedule using content from this repo:
 | 9:50 | Create 5 new Anki cards from today's material | 10 min |
 | 10:00 | Done | |
 
-The key insight: Anki is not *extra* work â€” it replaces re-reading. Those 15 minutes of card review accomplish more than 60 minutes of re-reading the same chapters.
+The key insight: Anki is not *extra* work → it replaces re-reading. Those 15 minutes of card review accomplish more than 60 minutes of re-reading the same chapters.
 
 **Try This:** Tomorrow, start your study session with Anki, not with opening a textbook. Review cards from the past week's material. Note how quickly you recall topics you studied days ago.
 
@@ -842,15 +842,15 @@ The key insight: Anki is not *extra* work â€” it replaces re-reading. Those
 
 ### Q31: How does the standard Pomodoro technique work for theory subjects?
 
-**Answer:** The standard Pomodoro: 25 minutes of focused work, 5-minute break. Each Pomodoro is indivisible â€” if interrupted, start over.
+**Answer:** The standard Pomodoro: 25 minutes of focused work, 5-minute break. Each Pomodoro is indivisible → if interrupted, start over.
 
 Applied to [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md):
 
-**Pomodoro 1 (25 min)**: Study subnetting â€” read the formulas, understand CIDR notation, work through examples in section 6 (Network Layer).
+**Pomodoro 1 (25 min)**: Study subnetting → read the formulas, understand CIDR notation, work through examples in section 6 (Network Layer).
 
 **Break (5 min)**: Stand up, stretch, drink water. Do NOT check social media.
 
-**Pomodoro 2 (25 min)**: Active recall â€” close the book. Write down the subnetting process from memory. Calculate network addresses for /16, /24, /28.
+**Pomodoro 2 (25 min)**: Active recall → close the book. Write down the subnetting process from memory. Calculate network addresses for /16, /24, /28.
 
 **Break (5 min)**: Walk around.
 
@@ -880,7 +880,7 @@ public class Pomodoro {
 
 **Answer:** Coding problems need longer focus blocks because building mental context for a complex algorithm takes 10-15 minutes. Use 50-minute sessions with 10-minute breaks for DSA practice.
 
-From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), Q78 (LRU Cache â€” tagged Google, Amazon, Microsoft, Meta):
+From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), Q78 (LRU Cache → tagged Google, Amazon, Microsoft, Meta):
 
 **Extended Pomodoro 1 (50 min)**:
 - 0-10 min: Understand the problem, draw examples
@@ -895,7 +895,7 @@ From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://githu
 - Check against solution in problem bank
 
 ```java
-// LRU Cache â€” requires sustained 50-min focus to implement
+// LRU Cache → requires sustained 50-min focus to implement
 class LRUCache {
     class Node { int key, val; Node prev, next; }
     Map<Integer, Node> map = new HashMap<>();
@@ -931,7 +931,7 @@ class LRUCache {
 }
 ```
 
-**Try This:** Pick a Medium problem from `02-dsa-problem-bank.md`. Set a 50-minute timer. Work without interruption. Take a 10-minute break. Then review your solution. Compare with a 25-minute Pomodoro tomorrow â€” which produced better code?
+**Try This:** Pick a Medium problem from `02-dsa-problem-bank.md`. Set a 50-minute timer. Work without interruption. Take a 10-minute break. Then review your solution. Compare with a 25-minute Pomodoro tomorrow → which produced better code?
 
 ---
 
@@ -939,7 +939,7 @@ class LRUCache {
 
 **Answer:** Interruptions break the Pomodoro. The rule: if the interruption is external (Slack, email, someone talking), note it down on a "distraction list" and return to focus. If the interruption is internal (a thought about something else), write it down and let it go.
 
-During Pomodoro 2 of studying [`docs/courses/operating-systems/02-processes.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/operating-systems/02-processes.md), your phone buzzes â€” a teammate's message about deployment. Don't answer. Write on your distraction list: "Check deployment issue after Pomodoro." Resume focus.
+During Pomodoro 2 of studying [`docs/courses/operating-systems/02-processes.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/operating-systems/02-processes.md), your phone buzzes → a teammate's message about deployment. Don't answer. Write on your distraction list: "Check deployment issue after Pomodoro." Resume focus.
 
 After the 5-minute break, address items on the distraction list. You'll find most of them weren't urgent. The ones that are urgent get 2 minutes of focused response.
 
@@ -977,7 +977,7 @@ From [`docs/courses/theory-of-computation/08-turing.md`](https://github.com/Raus
 
 Each Pomodoro has a concrete deliverable. Abstract theory becomes tangible when you produce something (a diagram, a solution, a summary) in every session.
 
-**Try This:** Open [`docs/courses/theory-of-computation/08-turing.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/theory-of-computation/08-turing.md). Break it into 3-4 Pomodoro-sized sections. Do one Pomodoro now. Write one concrete output (not just "I read it") â€” draw a TM, write a transition table, or answer an exercise.
+**Try This:** Open [`docs/courses/theory-of-computation/08-turing.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/theory-of-computation/08-turing.md). Break it into 3-4 Pomodoro-sized sections. Do one Pomodoro now. Write one concrete output (not just "I read it") → draw a TM, write a transition table, or answer an exercise.
 
 ---
 
@@ -987,20 +987,20 @@ Each Pomodoro has a concrete deliverable. Abstract theory becomes tangible when 
 
 From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md):
 
-**Pomodoro 1 â€” Solve (25 min)**: Q25: House Robber (DP, Easy)
+**Pomodoro 1 → Solve (25 min)**: Q25: House Robber (DP, Easy)
 - Understand: "Adjacent houses trigger alarm, maximize loot"
 - Approach: `dp[i] = max(dp[i-1], dp[i-2] + nums[i])`
 - Implement from scratch
 
-**Pomodoro 2 â€” Solve (25 min)**: Q26: House Robber II (DP, Medium)
+**Pomodoro 2 → Solve (25 min)**: Q26: House Robber II (DP, Medium)
 - Variation: houses are circular
 - Approach: rob range [0, n-2] or [1, n-1], take max
 - Modify previous solution
 
-**Pomodoro 3 â€” Review (25 min)**: Compare both solutions, write complexity analysis, note the pattern
+**Pomodoro 3 → Review (25 min)**: Compare both solutions, write complexity analysis, note the pattern
 
 ```java
-// House Robber â€” one Pomodoro produces this
+// House Robber → one Pomodoro produces this
 public int rob(int[] nums) {
     int prev = 0, curr = 0;
     for (int n : nums) {
@@ -1010,7 +1010,7 @@ public int rob(int[] nums) {
     }
     return curr;
 }
-// House Robber II â€” second Pomodoro adds circular handling
+// House Robber II → second Pomodoro adds circular handling
 public int robCircular(int[] nums) {
     if (nums.length == 1) return nums[0];
     return Math.max(robRange(nums, 0, nums.length-2),
@@ -1018,13 +1018,13 @@ public int robCircular(int[] nums) {
 }
 ```
 
-**Try This:** Set 3 consecutive Pomodoros: solve one problem, solve its variation, review both. Pick Q25-Q26 from `02-dsa-problem-bank.md` (House Robber). Track the pattern â€” the variation is easier because you already chunked the base solution.
+**Try This:** Set 3 consecutive Pomodoros: solve one problem, solve its variation, review both. Pick Q25-Q26 from `02-dsa-problem-bank.md` (House Robber). Track the pattern → the variation is easier because you already chunked the base solution.
 
 ---
 
 ### Q36: Why does interleaving (mixing topics) improve learning more than blocking?
 
-**Answer:** Blocking (practicing 10 of the same type of problem in a row) feels productive because you quickly get the right answer. But your brain memorizes the procedure, not the *discrimination* â€” the skill of recognizing *which* procedure to apply.
+**Answer:** Blocking (practicing 10 of the same type of problem in a row) feels productive because you quickly get the right answer. But your brain memorizes the procedure, not the *discrimination* → the skill of recognizing *which* procedure to apply.
 
 Interleaving forces your brain to do the harder work: matching a problem type to a solution strategy. Every time you switch topics, you exercise this matching skill.
 
@@ -1038,8 +1038,8 @@ From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://githu
 By the third problem in each block, you're on autopilot. Little learning happens.
 
 **Interleaved practice (more effective)**:
-- Q1 (Array - Two Sum) â†’ Q15 (Tree - Max Depth) â†’ Q25 (DP - House Robber)
-- Q2 (Array - Stock) â†’ Q16 (Tree - Invert) â†’ Q26 (DP - House Robber II)
+- Q1 (Array - Two Sum) → Q15 (Tree - Max Depth) → Q25 (DP - House Robber)
+- Q2 (Array - Stock) → Q16 (Tree - Invert) → Q26 (DP - House Robber II)
 
 Now every problem requires fresh analysis. Which technique fits? Your brain practices the crucial skill of problem-type diagnosis.
 
@@ -1063,9 +1063,9 @@ Weekly rotation across GATE subjects from `docs/courses/gate-cs-preparation/`:
 | Sat | Mock test (any) | Review errors |
 | Sun | Rest / light Anki | |
 
-Notice Friday: mixed PYQs across all 4 subjects within a single session. That's the most powerful interleaving â€” every 10 minutes, a different subject demands a different mental model.
+Notice Friday: mixed PYQs across all 4 subjects within a single session. That's the most powerful interleaving → every 10 minutes, a different subject demands a different mental model.
 
-**Try This:** Plan your next 7 days using the table above. Each day, switch subjects between blocks. On Friday, solve one OS problem, then one DBMS problem, then one CN problem, repeating. Track your confusion â€” that's learning.
+**Try This:** Plan your next 7 days using the table above. Each day, switch subjects between blocks. On Friday, solve one OS problem, then one DBMS problem, then one CN problem, repeating. Track your confusion → that's learning.
 
 ---
 
@@ -1073,9 +1073,9 @@ Notice Friday: mixed PYQs across all 4 subjects within a single session. That's 
 
 **Answer:** Blocked practice = same topic, many examples. Mixed practice = different topics, fewer examples each. Use blocked practice when you're first building a chunk. Switch to mixed practice once the chunk is formed.
 
-**Phase 1 â€” Blocked (learning):** First time studying B+ trees from [`docs/courses/database-management-systems/12-indexing.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/database-management-systems/12-indexing.md). Solve 5 consecutive B+ tree problems (insertion, deletion, order calculation, height, block accesses). Build the chunk.
+**Phase 1 → Blocked (learning):** First time studying B+ trees from [`docs/courses/database-management-systems/12-indexing.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/database-management-systems/12-indexing.md). Solve 5 consecutive B+ tree problems (insertion, deletion, order calculation, height, block accesses). Build the chunk.
 
-**Phase 2 â€” Mixed (retrieval):** After you understand B+ trees, mix them with other DBMS topics:
+**Phase 2 → Mixed (retrieval):** After you understand B+ trees, mix them with other DBMS topics:
 
 - Problem 1: B+ tree order calculation
 - Problem 2: Transaction serializability (from Ch 09)
@@ -1104,7 +1104,7 @@ public class PracticeMode {
 
 ### Q39: How do you interleave GATE preparation across subjects?
 
-**Answer:** Rotate OS, DBMS, CN, and DSA across days and within sessions. The GATE exam itself interleaves subjects randomly â€” you must be ready to context-switch instantly.
+**Answer:** Rotate OS, DBMS, CN, and DSA across days and within sessions. The GATE exam itself interleaves subjects randomly → you must be ready to context-switch instantly.
 
 From `docs/courses/gate-cs-preparation/`:
 
@@ -1114,9 +1114,9 @@ From `docs/courses/gate-cs-preparation/`:
 - By week 3, OS material is mostly forgotten
 
 **Interleaved approach (better retention)**:
-- Monday: OS processes (1 hr) â†’ DBMS ER model (1 hr)
-- Tuesday: CN subnetting (1 hr) â†’ DSA sorting (1 hr)
-- Wednesday: OS sync problems â†’ DBMS normalization â†’ compare with CN flow control
+- Monday: OS processes (1 hr) → DBMS ER model (1 hr)
+- Tuesday: CN subnetting (1 hr) → DSA sorting (1 hr)
+- Wednesday: OS sync problems → DBMS normalization → compare with CN flow control
 - Thursday: Mixed GATE PYQs from all 4 subjects
 
 ```java
@@ -1135,7 +1135,7 @@ public class GateInterleaving {
 }
 ```
 
-**Try This:** Pick 2 questions from each GATE chapter (07, 08, 09, 10). Shuffle them into a stack of 8. Solve them in shuffled order. Time yourself. The context-switching cost is real â€” but that's exactly what the real exam demands.
+**Try This:** Pick 2 questions from each GATE chapter (07, 08, 09, 10). Shuffle them into a stack of 8. Solve them in shuffled order. Time yourself. The context-switching cost is real → but that's exactly what the real exam demands.
 
 ---
 
@@ -1153,7 +1153,7 @@ From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://githu
 | 2 | Q2: Stock | Q11: Longest Substr | Q16: Invert Tree | Q26: Robber II |
 | 3 | Q3: Product Array | Q12: Palindrome | Q17: Same Tree | Q27: Coin Change |
 
-Each cycle spans ~2 hours (30 min per problem). In one session, you've practiced 4 different problem-solving muscles. The first problem in each cycle is hardest â€” that's the interleaving difficulty working.
+Each cycle spans ~2 hours (30 min per problem). In one session, you've practiced 4 different problem-solving muscles. The first problem in each cycle is hardest → that's the interleaving difficulty working.
 
 ```java
 // Your brain must now identify the pattern fresh each time
@@ -1169,7 +1169,7 @@ public class ProblemCycle {
 }
 ```
 
-**Try This:** From `02-dsa-problem-bank.md`, solve 4 problems in this order: Arrays (Easy), Strings (Easy), Tree (Easy), DP (Medium). Note which transition felt hardest. The DP transition after tree is usually the most jarring â€” that's interleaving at work.
+**Try This:** From `02-dsa-problem-bank.md`, solve 4 problems in this order: Arrays (Easy), Strings (Easy), Tree (Easy), DP (Medium). Note which transition felt hardest. The DP transition after tree is usually the most jarring → that's interleaving at work.
 
 ---
 
@@ -1179,7 +1179,7 @@ public class ProblemCycle {
 
 Apply to "Normalization" from [`docs/courses/database-management-systems/07-normalization.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/database-management-systems/07-normalization.md):
 
-**Step 2 â€” Explain like I'm 12:**
+**Step 2 → Explain like I'm 12:**
 
 > "Normalization is like organizing your closet. Instead of throwing everything into one giant box (one big table), you split things into smaller boxes (tables) where each box holds one type of thing.
 >
@@ -1188,7 +1188,7 @@ Apply to "Normalization" from [`docs/courses/database-management-systems/07-norm
 > 3NF: Don't put things in a box that belong in another box (transitive dependency).
 > BCNF: Every time you put something in a box, the label on the box (the key) must determine everything in the box."
 
-**Step 3 â€” Gap:** I didn't explain *why* transitive dependencies are bad. I just said "don't put things in the wrong box." Let me revisit: A transitive dependency (Aâ†’Bâ†’C) means C depends on A through B. If B is removed, we lose Câ†’A relationship. That causes update anomalies.
+**Step 3 → Gap:** I didn't explain *why* transitive dependencies are bad. I just said "don't put things in the wrong box." Let me revisit: A transitive dependency (A→B→C) means C depends on A through B. If B is removed, we lose C→A relationship. That causes update anomalies.
 
 ```java
 // Feynman: the ultimate gap detector
@@ -1218,7 +1218,7 @@ Record yourself explaining the CAP Theorem from [`docs/courses/system-design/06-
 
 **Gaps in this explanation:**
 1. "Consistency in CAP means *linearizability* (all nodes see the same data at the same time), not Eventual Consistency"
-2. "PACELC extension â€” even without partitions, you choose between latency and consistency"
+2. "PACELC extension → even without partitions, you choose between latency and consistency"
 3. "I didn't mention which databases fall into each category (CP: HBase, AP: Cassandra)"
 
 Each gap is a specific thing to study. Record again after filling the gaps.
@@ -1255,7 +1255,7 @@ public class RubberDuck {
 }
 ```
 
-**Try This:** Pick Q19 (Middle of the Linked List) from `02-dsa-problem-bank.md`. Attempt to solve it. When stuck, take any object and explain your approach aloud. Don't look for hints â€” just talk it through. Most of the time, you'll spot the issue mid-sentence.
+**Try This:** Pick Q19 (Middle of the Linked List) from `02-dsa-problem-bank.md`. Attempt to solve it. When stuck, take any object and explain your approach aloud. Don't look for hints → just talk it through. Most of the time, you'll spot the issue mid-sentence.
 
 ---
 
@@ -1267,7 +1267,7 @@ After studying [`docs/courses/operating-systems/09-virtual-memory.md`](https://g
 
 **Write a 1-page summary from memory:**
 
-> "Virtual memory gives each process its own address space, mapped to physical memory via page tables. Demand paging loads pages only when needed. When a page isn't in memory, a page fault occurs. The OS then loads the page from disk. If memory is full, a page must be evicted â€” chosen by a replacement algorithm (FIFO, LRU, Optimal). LRU approximates best but is hard to implement; the Clock algorithm (Second Chance) approximates LRU efficiently. Thrashing occurs when a process doesn't have enough frames for its working set. The working-set model prevents thrashing by monitoring the set of pages a process is actively using."
+> "Virtual memory gives each process its own address space, mapped to physical memory via page tables. Demand paging loads pages only when needed. When a page isn't in memory, a page fault occurs. The OS then loads the page from disk. If memory is full, a page must be evicted → chosen by a replacement algorithm (FIFO, LRU, Optimal). LRU approximates best but is hard to implement; the Clock algorithm (Second Chance) approximates LRU efficiently. Thrashing occurs when a process doesn't have enough frames for its working set. The working-set model prevents thrashing by monitoring the set of pages a process is actively using."
 
 Now check: did I mention the difference between FIFO and LRU? Did I explain Belady's Anomaly? Did I cover the page table structure (hierarchical, hashed, inverted)? The gaps between my summary and the chapter are my learning targets.
 
@@ -1281,13 +1281,13 @@ Now check: did I mention the difference between FIFO and LRU? Did I explain Bela
 
 From [`docs/courses/placement-preparation/03-sql-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/03-sql-problem-bank.md), find a study buddy and use this protocol:
 
-**Round 1 â€” You teach (10 min):** Explain the solution to Q5 (Find employees earning more than their manager) to your buddy:
+**Round 1 → You teach (10 min):** Explain the solution to Q5 (Find employees earning more than their manager) to your buddy:
 
 > "We need self-join: SELECT e.name FROM employees e JOIN employees m ON e.manager_id = m.id WHERE e.salary > m.salary."
 
-**Round 2 â€” Buddy challenges (5 min):** "What if a manager earns less than multiple reports? Does this handle ties? What if a row has no manager (manager_id is NULL)?"
+**Round 2 → Buddy challenges (5 min):** "What if a manager earns less than multiple reports? Does this handle ties? What if a row has no manager (manager_id is NULL)?"
 
-**Round 3 â€” You refine (5 min):** "Good catch. Self-join with INNER JOIN excludes NULL managers â€” that's correct because an employee with no manager can't earn more than their non-existent manager. For ties, we use > not >=, so equal salaries are excluded."
+**Round 3 → You refine (5 min):** "Good catch. Self-join with INNER JOIN excludes NULL managers → that's correct because an employee with no manager can't earn more than their non-existent manager. For ties, we use > not >=, so equal salaries are excluded."
 
 ```sql
 -- Peer teaching: the simplest way to learn SQL joins
@@ -1304,20 +1304,20 @@ The peer's questions force you to think about edge cases, justify design decisio
 
 ---
 
-## Part 3: Memory Systems â€” Never Forget Anything
+## Part 3: Memory Systems → Never Forget Anything
 
-### Q46: Method of Loci â€” Can I Really Store the OSI Model in My Kitchen?
+### Q46: Method of Loci → Can I Really Store the OSI Model in My Kitchen?
 
-**Answer:** Yes â€” the Method of Loci (memory palace) uses spatial memory to encode abstract information by associating each item with a familiar physical location. Your brain evolved to remember places, not protocol stacks. Hijack that hardware.
+**Answer:** Yes → the Method of Loci (memory palace) uses spatial memory to encode abstract information by associating each item with a familiar physical location. Your brain evolved to remember places, not protocol stacks. Hijack that hardware.
 
 Walk through your home and assign one room per OSI layer:
-- **Kitchen** â†’ Physical Layer (cables are like spaghetti, signals like microwave beeps)
-- **Living Room** â†’ Data Link Layer (frames on the wall, MAC address on the TV)
-- **Hallway** â†’ Network Layer (routing visitors to different rooms)
-- **Home Office** â†’ Transport Layer (TCP handshake = shaking hands with a client)
-- **Bedroom** â†’ Session Layer (starting/ending your day)
-- **Bathroom** â†’ Presentation Layer (encryption = locked medicine cabinet)
-- **Front Door** â†’ Application Layer (the interface to the outside world)
+- **Kitchen** → Physical Layer (cables are like spaghetti, signals like microwave beeps)
+- **Living Room** → Data Link Layer (frames on the wall, MAC address on the TV)
+- **Hallway** → Network Layer (routing visitors to different rooms)
+- **Home Office** → Transport Layer (TCP handshake = shaking hands with a client)
+- **Bedroom** → Session Layer (starting/ending your day)
+- **Bathroom** → Presentation Layer (encryption = locked medicine cabinet)
+- **Front Door** → Application Layer (the interface to the outside world)
 
 Reference: The full OSI model table with 7 layers, PDUs, and devices is documented in [`docs/courses/computer-networks/01-introduction.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/computer-networks/01-introduction.md) and the GATE-specific breakdown in [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md) (lines 22-34), which lists Application (Data, Gateway) through Physical (Bits, Hub/Repeater). Open that file, read the table once, then walk the rooms. After 3 walks, you'll have it forever.
 
@@ -1335,35 +1335,35 @@ public enum OsiLayer {
 }
 ```
 
-> **Try This:** Walk your actual home right now. Kitchen â†’ Living Room â†’ Hallway â†’ Office â†’ Bedroom â†’ Bathroom â†’ Front Door. At each stop, say the layer name and one fact from the CN GATE file (e.g., at Kitchen: "Physical â€” bits, hubs, signals"). Do this 3 times today.
+> **Try This:** Walk your actual home right now. Kitchen → Living Room → Hallway → Office → Bedroom → Bathroom → Front Door. At each stop, say the layer name and one fact from the CN GATE file (e.g., at Kitchen: "Physical → bits, hubs, signals"). Do this 3 times today.
 
 ---
 
-### Q47: Building Your First Palace â€” How Do I Store 10 Sorting Algorithms in My Room?
+### Q47: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?
 
 **Answer:** Pick 10 distinct locations in your current room. Each location stores one sorting algorithm from the GATE DSA question bank (see [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md)).
 
 Mapping:
-1. **Door** â†’ Bubble Sort (heavy breathing at the entrance, bubbles pushing up)
-2. **Window** â†’ Selection Sort (picking the best view)
-3. **Bed** â†’ Insertion Sort (inserting yourself under the covers)
-4. **Desk** â†’ Merge Sort (splitting papers into two piles)
-5. **Bookshelf** â†’ Quick Sort (pivot = the book you pull out)
-6. **Lamp** â†’ Heap Sort (light at the top of a pyramid)
-7. **Chair** â†’ Counting Sort (counting people sitting)
-8. **Cupboard** â†’ Bucket Sort (items into drawers)
-9. **Laptop** â†’ Radix Sort (sorting by last digit first, like file versions)
-10. **Poster** â†’ Shell Sort (gap reduction = zooming in on details)
+1. **Door** → Bubble Sort (heavy breathing at the entrance, bubbles pushing up)
+2. **Window** → Selection Sort (picking the best view)
+3. **Bed** → Insertion Sort (inserting yourself under the covers)
+4. **Desk** → Merge Sort (splitting papers into two piles)
+5. **Bookshelf** → Quick Sort (pivot = the book you pull out)
+6. **Lamp** → Heap Sort (light at the top of a pyramid)
+7. **Chair** → Counting Sort (counting people sitting)
+8. **Cupboard** → Bucket Sort (items into drawers)
+9. **Laptop** → Radix Sort (sorting by last digit first, like file versions)
+10. **Poster** → Shell Sort (gap reduction = zooming in on details)
 
 Reference the complexity table in [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md), which covers all major sorting algorithms with their time/space complexities. For each algorithm, include its big-O in the image. For Quick Sort, picture an O(n log n) tag on the bookshelf.
 
 ```java
 public class SortingPalace {
     enum Algorithm {
-        BUBBLE("O(nÂ²)", "Door â€” bubbles rising"),
-        QUICK("O(n log n)", "Bookshelf â€” pivot book"),
-        MERGE("O(n log n)", "Desk â€” split papers"),
-        HEAP("O(n log n)", "Lamp â€” pyramid light");
+        BUBBLE("O(nÂ²)", "Door → bubbles rising"),
+        QUICK("O(n log n)", "Bookshelf → pivot book"),
+        MERGE("O(n log n)", "Desk → split papers"),
+        HEAP("O(n log n)", "Lamp → pyramid light");
         // 10 total in your room
     }
 }
@@ -1373,7 +1373,7 @@ public class SortingPalace {
 
 ---
 
-### Q48: Visual Mnemonics â€” How Do I Picture the CAP Theorem?
+### Q48: Visual Mnemonics → How Do I Picture the CAP Theorem?
 
 **Answer:** The CAP theorem (Consistency, Availability, Partition Tolerance) is defined in [`docs/courses/system-design/06-distributed-consistency.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/system-design/06-distributed-consistency.md) (lines 17-43) with Gilbert and Lynch's formal proof. Visual mnemonics make the trade-off unforgettable:
 
@@ -1381,56 +1381,56 @@ public class SortingPalace {
 - **Availability** = An open door. Anyone walks through anytime, gets an answer. But the door doesn't check if what's inside is the latest version.
 - **Partition Tolerance** = A stretchy rubber band. When the network breaks (band snaps), the system keeps going. The band connecting two servers stretches but doesn't break.
 
-Now visualize: During a network partition (band snapped), the tightrope walker (Consistency) must stop â€” she can't balance without both ends. The open door (Availability) stays open â€” but people get different answers depending on which side they enter. This is the exact Gilbert-Lynch proof: during a partition, you pick C or A, not both.
+Now visualize: During a network partition (band snapped), the tightrope walker (Consistency) must stop → she can't balance without both ends. The open door (Availability) stays open → but people get different answers depending on which side they enter. This is the exact Gilbert-Lynch proof: during a partition, you pick C or A, not both.
 
 ```java
 public enum CapTradeoff {
     CP("Wait for consistency, sacrifice availability during partition"),
     AP("Always respond, accept stale reads during partition"),
-    CA("Both consistent and available â€” but no partition tolerance");
+    CA("Both consistent and available → but no partition tolerance");
 }
 ```
 
-> **Try This:** Draw a 3-frame comic: (1) Two servers connected by a rubber band with tightrope and door. (2) Rubber band snaps. (3) Tightrope falls (C dies) OR door stays open but shows different data (C sacrificed). The PACELC extension in the same file (line 57-59) adds the "Else (normal operation) â€” pick Latency or Consistency" dimension. Re-draw with that.
+> **Try This:** Draw a 3-frame comic: (1) Two servers connected by a rubber band with tightrope and door. (2) Rubber band snaps. (3) Tightrope falls (C dies) OR door stays open but shows different data (C sacrificed). The PACELC extension in the same file (line 57-59) adds the "Else (normal operation) → pick Latency or Consistency" dimension. Re-draw with that.
 
 ---
 
-### Q49: Chaining Mnemonics â€” ACID Properties in One Story
+### Q49: Chaining Mnemonics → ACID Properties in One Story
 
 **Answer:** Chain mnemonics link each item into a story where one thing leads to the next. ACID (Atomicity, Consistency, Isolation, Durability) from [`docs/courses/database-management-systems/09-transactions.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/database-management-systems/09-transactions.md) (lines 34-42) is perfect for this.
 
-Story: "An **atom bomb** (Atomicity) hits a database. Everything must either survive completely or be gone â€” no half-destroyed records. A soldier with a giant **ruler** (Consistency) measures every piece of data to make sure the books still balance. The ruler is so strict that you must sit on a separate **island** (Isolation) â€” no one sees your work until it's done. When you finish, you lock the result in a **steel safe** (Durability) so that even a tsunami can't wash it away."
+Story: "An **atom bomb** (Atomicity) hits a database. Everything must either survive completely or be gone → no half-destroyed records. A soldier with a giant **ruler** (Consistency) measures every piece of data to make sure the books still balance. The ruler is so strict that you must sit on a separate **island** (Isolation) → no one sees your work until it's done. When you finish, you lock the result in a **steel safe** (Durability) so that even a tsunami can't wash it away."
 
 ```java
 public enum AcidProperty {
-    ATOMICITY("atom bomb â€” all or nothing"),
-    CONSISTENCY("ruler â€” constraints preserved"),
-    ISOLATION("island â€” concurrent txns don't interfere"),
-    DURABILITY("steel safe â€” committed data survives crashes");
+    ATOMICITY("atom bomb → all or nothing"),
+    CONSISTENCY("ruler → constraints preserved"),
+    ISOLATION("island → concurrent txns don't interfere"),
+    DURABILITY("steel safe → committed data survives crashes");
 }
 ```
 
-The GATE DBMS PYQ file ([`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md)) dedicates a full table (lines 41-48) to ACID with each property's enforcer: Atomicity â†’ undo log, Consistency â†’ application + constraints, Isolation â†’ concurrency control, Durability â†’ redo log. Add the enforcer to each image: the atom bomb has an "undo log" label, the steel safe has a "redo log" label.
+The GATE DBMS PYQ file ([`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md)) dedicates a full table (lines 41-48) to ACID with each property's enforcer: Atomicity → undo log, Consistency → application + constraints, Isolation → concurrency control, Durability → redo log. Add the enforcer to each image: the atom bomb has an "undo log" label, the steel safe has a "redo log" label.
 
-> **Try This:** Close your eyes. Tell the ACID story out loud in under 30 seconds: bomb â†’ ruler â†’ island â†’ safe. Then recite the enforcers from the DBMS GATE file (undo log, constraints, locking, redo log). If you can do both, you own ACID.
+> **Try This:** Close your eyes. Tell the ACID story out loud in under 30 seconds: bomb → ruler → island → safe. Then recite the enforcers from the DBMS GATE file (undo log, constraints, locking, redo log). If you can do both, you own ACID.
 
 ---
 
-### Q50: Peg System â€” 1-Bun, 2-Shoe, 3-Tree for UNIX Commands
+### Q50: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands
 
 **Answer:** The peg system maps numbers 1-10 to rhyming images: 1-bun, 2-shoe, 3-tree, 4-door, 5-hive, 6-sticks, 7-heaven, 8-gate, 9-line, 10-hen. Each peg hooks a piece of data.
 
 Use it for UNIX commands from [`docs/courses/operating-systems/15-shell-scripting.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/operating-systems/15-shell-scripting.md):
-1. **Bun** â†’ `ls` (a bun lists its ingredients)
-2. **Shoe** â†’ `cd` (a shoe changes direction)
-3. **Tree** â†’ `grep` (a tree searches through leaves)
-4. **Door** â†’ `find` (open door to find what's behind)
-5. **Hive** â†’ `ps` (busy bee processes)
-6. **Sticks** â†’ `kill` (hitting with sticks stops processes)
-7. **Heaven** â†’ `chmod` (angel assigns permissions)
-8. **Gate** â†’ `tar` (gate that bundles and compresses)
-9. **Line** â†’ `ssh` (fishing line connects to remote)
-10. **Hen** â†’ `scp` (hen copies eggs across the yard)
+1. **Bun** → `ls` (a bun lists its ingredients)
+2. **Shoe** → `cd` (a shoe changes direction)
+3. **Tree** → `grep` (a tree searches through leaves)
+4. **Door** → `find` (open door to find what's behind)
+5. **Hive** → `ps` (busy bee processes)
+6. **Sticks** → `kill` (hitting with sticks stops processes)
+7. **Heaven** → `chmod` (angel assigns permissions)
+8. **Gate** → `tar` (gate that bundles and compresses)
+9. **Line** → `ssh` (fishing line connects to remote)
+10. **Hen** → `scp` (hen copies eggs across the yard)
 
 ```java
 public class PegSystem {
@@ -1448,22 +1448,22 @@ public class PegSystem {
 
 ---
 
-### Q51: Memory Compression â€” Can I Compress Quicksort into 3 Words?
+### Q51: Memory Compression → Can I Compress Quicksort into 3 Words?
 
-**Answer:** Memory compression reduces a complex idea to its essence â€” the minimum information needed to reconstruct the whole. Think GZIP for your brain.
+**Answer:** Memory compression reduces a complex idea to its essence → the minimum information needed to reconstruct the whole. Think GZIP for your brain.
 
-Quicksort in 3 words: **pivot â†’ partition â†’ recurse**
+Quicksort in 3 words: **pivot → partition → recurse**
 
-From that, reconstruct: pick a pivot element â†’ arrange array so smaller elements go left, larger go right â†’ recursively sort each partition. Add 3 more words for the full picture: **O(n log n) worst O(nÂ²)**.
+From that, reconstruct: pick a pivot element → arrange array so smaller elements go left, larger go right → recursively sort each partition. Add 3 more words for the full picture: **O(n log n) worst O(nÂ²)**.
 
 Apply compression to the 0/1 Knapsack recurrence from [`docs/courses/algorithms/08-dp-knapsack.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/algorithms/08-dp-knapsack.md) (lines 16-54):
-- **item â†’ capacity â†’ max(include, exclude)** â€” 4 words encode the entire DP recurrence.
+- **item → capacity → max(include, exclude)** → 4 words encode the entire DP recurrence.
 
-The full recurrence `dp[i][c] = max(dp[i-1][c], v[i] + dp[i-1][c - w[i]])` compresses to 4 words. From those words, you can reconstruct the 2D table, the base case (i=0 or c=0 â†’ 0), and the capacity loop direction.
+The full recurrence `dp[i][c] = max(dp[i-1][c], v[i] + dp[i-1][c - w[i]])` compresses to 4 words. From those words, you can reconstruct the 2D table, the base case (i=0 or c=0 → 0), and the capacity loop direction.
 
 ```java
 public class MemoryCompression {
-    // Compression: "item â†’ capacity â†’ max(include, exclude)"
+    // Compression: "item → capacity → max(include, exclude)"
     static int knapsack(int[] w, int[] v, int W) {
         int n = w.length;
         int[] dp = new int[W + 1];
@@ -1479,28 +1479,28 @@ public class MemoryCompression {
 
 ---
 
-### Q52: The Memory Palace for GATE â€” One Palace per Subject
+### Q52: The Memory Palace for GATE → One Palace per Subject
 
 **Answer:** Building one palace per GATE subject prevents cross-contamination. Your brain stores spatial memories separately for different environments, so use different buildings.
 
 **OS Palace** (files [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md)): Use a **library**. Each bookshelf is a topic:
-- Shelf 1 (left wall) â†’ CPU Scheduling (FCFS, SJF, Round Robin books)
-- Shelf 2 (center) â†’ Process Synchronization (semaphore, mutex books)
-- Shelf 3 (right) â†’ Deadlocks (Banker, RAG books)
-- Front desk â†’ Memory Management (paging, segmentation)
-- Reading area â†’ File Systems (disk scheduling, inodes)
+- Shelf 1 (left wall) → CPU Scheduling (FCFS, SJF, Round Robin books)
+- Shelf 2 (center) → Process Synchronization (semaphore, mutex books)
+- Shelf 3 (right) → Deadlocks (Banker, RAG books)
+- Front desk → Memory Management (paging, segmentation)
+- Reading area → File Systems (disk scheduling, inodes)
 
 **DBMS Palace** (file [`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md)): Use a **bank vault**.
-- Vault door â†’ ACID properties (4 locks)
-- Teller counter â†’ Normalization (1NF-5NF forms)
-- Manager office â†’ Transactions (serializability, schedules)
-- Safe deposit boxes â†’ SQL queries (each box = one query type)
+- Vault door → ACID properties (4 locks)
+- Teller counter → Normalization (1NF-5NF forms)
+- Manager office → Transactions (serializability, schedules)
+- Safe deposit boxes → SQL queries (each box = one query type)
 
 **CN Palace** (file [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md)): Use a **post office**.
-- Loading dock â†’ Physical Layer
-- Sorting room â†’ Data Link Layer
-- Truck fleet â†’ Network Layer
-- Customer counter â†’ Transport/Application Layers
+- Loading dock → Physical Layer
+- Sorting room → Data Link Layer
+- Truck fleet → Network Layer
+- Customer counter → Transport/Application Layers
 
 ```java
 public class GatePalace {
@@ -1518,30 +1518,30 @@ public class GatePalace {
 }
 ```
 
-> **Try This:** Pick one palace (OS â†’ library). Walk through it 3 times today associating each shelf/location with 2-3 PYQs from the GATE file. Tomorrow switch to DBMS (bank vault). By day 5 you'll have 5 palaces.
+> **Try This:** Pick one palace (OS → library). Walk through it 3 times today associating each shelf/location with 2-3 PYQs from the GATE file. Tomorrow switch to DBMS (bank vault). By day 5 you'll have 5 palaces.
 
 ---
 
-### Q53: Encoding Specificity â€” Why Should I Study in a Mock-Test Environment?
+### Q53: Encoding Specificity → Why Should I Study in a Mock-Test Environment?
 
 **Answer:** Encoding specificity means you recall better when the retrieval context matches the encoding context. If you study GATE OS scheduling while sitting at a desk under time pressure (mimicking exam conditions), you'll recall it better during the actual exam.
 
-The 8 GATE mock tests in `docs/courses/gate-cs-preparation/` (files `15-mock-test-1.md` through `22-mock-test-8.md`) are designed for this. Take them in a quiet room with a timer, no phone, no notes â€” exactly like the real exam. But the technique works at the study stage too: when learning the OS CPU scheduling formulas from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (lines 26-37), sit at the same desk, use the same chair, dim the same lights you'll have on exam day.
+The 8 GATE mock tests in `docs/courses/gate-cs-preparation/` (files `15-mock-test-1.md` through `22-mock-test-8.md`) are designed for this. Take them in a quiet room with a timer, no phone, no notes → exactly like the real exam. But the technique works at the study stage too: when learning the OS CPU scheduling formulas from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (lines 26-37), sit at the same desk, use the same chair, dim the same lights you'll have on exam day.
 
 Three practical implementations:
 1. **Desk setup:** Same chair, same lighting, same water bottle position
 2. **Time pressure:** Use a countdown timer for each topic (20 min per OS topic, matching GATE per-question pace)
-3. **Silence:** No music or background noise during study â€” exactly like exam hall
+3. **Silence:** No music or background noise during study → exactly like exam hall
 
 > **Try This:** Right now, adjust your study environment to match your exam environment. If your exam bans calculators, put yours away. If it provides scratch paper, use the same. Study the next OS PYQ from the GATE file under these conditions.
 
 ---
 
-### Q54: State-Dependent Memory â€” Does Chewing Gum Help Me Ace GATE?
+### Q54: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?
 
 **Answer:** State-dependent memory means your internal physiological state (mood, caffeine level, chewing gum, standing vs sitting) becomes part of the memory trace. If you chew mint gum while studying DBMS normalization from [`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md) (lines 30-39), chewing the same gum during the exam acts as a retrieval cue.
 
-Research shows a 30-50% improvement in recall when internal state matches, because the hippocampus encodes contextual information alongside the target material. The gum flavor, the caffeine buzz, even slight hunger â€” all become linked to the 1NFâ†’2NFâ†’3NFâ†’BCNFâ†’4NFâ†’5NF progression.
+Research shows a 30-50% improvement in recall when internal state matches, because the hippocampus encodes contextual information alongside the target material. The gum flavor, the caffeine buzz, even slight hunger → all become linked to the 1NF→2NF→3NF→BCNF→4NF→5NF progression.
 
 ```java
 public class StateDependentLearning {
@@ -1563,7 +1563,7 @@ public class StateDependentLearning {
 
 ---
 
-### Q55: Context-Dependent Recall â€” Should I Only Study CN in the Library?
+### Q55: Context-Dependent Recall → Should I Only Study CN in the Library?
 
 **Answer:** Context-dependent recall is the environmental version of encoding specificity. If you studied the Network Layer (from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md) lines 60+) sitting in a library's quiet section, you'll recall it better when sitting in that same spot.
 
@@ -1575,26 +1575,26 @@ For GATE, where the exam happens in one room on one day, context-dependent recal
 
 The 54 DSA PYQs in [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md) cover complexity analysis, sorting, trees, graphs. If you study graph algorithms (6-10 marks per GATE) in your exam spot, you lock that spatial context to the graph recall.
 
-> **Try This:** Pick one fixed study spot. For the next week, study every GATE DSA PYQ (from [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md)) only in that spot. On day 7, test recall of graph algorithms in a different room â€” notice the drop, then go back to your spot and feel the lift.
+> **Try This:** Pick one fixed study spot. For the next week, study every GATE DSA PYQ (from [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md)) only in that spot. On day 7, test recall of graph algorithms in a different room → notice the drop, then go back to your spot and feel the lift.
 
 ---
 
-### Q56: The Generation Effect â€” Why Do I Remember My Own Examples Better?
+### Q56: The Generation Effect → Why Do I Remember My Own Examples Better?
 
 **Answer:** The generation effect (Slamecka & Graf, 1978) shows that self-generated information is remembered 30-50% better than read information. When you generate your own example for a formula, your brain allocates more cognitive resources to it, strengthening encoding.
 
 For GATE formulas like the Master Theorem from [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md) (lines 49-55):
 ```
 T(n) = aÂ·T(n/b) + f(n)
-Case 1: f(n) = O(n^{log_b a - Îµ}) â†’ T(n) = Î˜(n^{log_b a})
-Case 2: f(n) = Î˜(n^{log_b a}Â·log^k n) â†’ T(n) = Î˜(n^{log_b a}Â·log^{k+1} n)
-Case 3: f(n) = Î©(n^{log_b a + Îµ}) â†’ T(n) = Î˜(f(n))
+Case 1: f(n) = O(n^{log_b a - Îµ}) → T(n) = Î˜(n^{log_b a})
+Case 2: f(n) = Î˜(n^{log_b a}Â·log^k n) → T(n) = Î˜(n^{log_b a}Â·log^{k+1} n)
+Case 3: f(n) = Î©(n^{log_b a + Îµ}) → T(n) = Î˜(f(n))
 ```
 
 **Instead of re-reading:** generate your own examples.
-- For T(n) = 2T(n/2) + n: "a=2, b=2, log_2 2 = 1, f(n)=n = n^1 â†’ Case 2 with k=0 â†’ Î˜(n log n). This is Merge Sort!"
-- For T(n) = 4T(n/2) + n: "a=4, b=2, log_2 4 = 2, f(n)=n = n^{2-Îµ} where Îµ=1 â†’ Case 1 â†’ Î˜(nÂ²)"
-- For T(n) = 2T(n/2) + nÂ²: "a=2, b=2, log_2 2 = 1, f(n)=nÂ² = Î©(n^{1+Îµ}) â†’ Check regularity: 2Â·(n/2)Â² / nÂ² = 0.5 < 1 â†’ Case 3 â†’ Î˜(nÂ²)"
+- For T(n) = 2T(n/2) + n: "a=2, b=2, log_2 2 = 1, f(n)=n = n^1 → Case 2 with k=0 → Î˜(n log n). This is Merge Sort!"
+- For T(n) = 4T(n/2) + n: "a=4, b=2, log_2 4 = 2, f(n)=n = n^{2-Îµ} where Îµ=1 → Case 1 → Î˜(nÂ²)"
+- For T(n) = 2T(n/2) + nÂ²: "a=2, b=2, log_2 2 = 1, f(n)=nÂ² = Î©(n^{1+Îµ}) → Check regularity: 2Â·(n/2)Â² / nÂ² = 0.5 < 1 → Case 3 → Î˜(nÂ²)"
 
 Each self-generated example is encoded more strongly than any textbook. Reference the complete DSA PYQ file for the actual recurrences tested in GATE.
 
@@ -1603,7 +1603,7 @@ public class GenerationEffect {
     // Generate your own example for each formula
     static String generateCase(int a, int b, String f, String name) {
         double logBA = Math.log(a) / Math.log(b);
-        return String.format("%s: T(n)=%dT(n/%d)+%s â†’ Î˜(n^%.2f)", 
+        return String.format("%s: T(n)=%dT(n/%d)+%s → Î˜(n^%.2f)", 
                name, a, b, f, logBA);
     }
     public static void main(String[] args) {
@@ -1616,11 +1616,11 @@ public class GenerationEffect {
 
 ---
 
-### Q57: The Testing Effect â€” Why Is Self-Testing 50% Better Than Re-Reading?
+### Q57: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?
 
 **Answer:** The testing effect (Roediger & Karpicke, 2006) is one of learning science's most robust findings: each self-test improves long-term retention by approximately 50% compared to re-reading the same material. Testing forces retrieval, which strengthens the neural pathways used during recall.
 
-Your repo contains built-in testing material. The GATE PYQ files â€” [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (70 PYQs), `08-database-management-systems.md` (75 PYQs), `09-computer-networks.md` (60 PYQs), `10-data-structures-algorithms.md` (54 PYQs), and `11-computer-architecture.md` (60 PYQs) â€” are designed for this exact purpose.
+Your repo contains built-in testing material. The GATE PYQ files → [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (70 PYQs), `08-database-management-systems.md` (75 PYQs), `09-computer-networks.md` (60 PYQs), `10-data-structures-algorithms.md` (54 PYQs), and `11-computer-architecture.md` (60 PYQs) → are designed for this exact purpose.
 
 **The wrong way:** Read OS PYQ G1 (page replacement), look at the answer, nod, move to G2.
 
@@ -1649,15 +1649,15 @@ public class TestingEffect {
 
 ---
 
-### Q58: Desirable Difficulties â€” Why Should I Close the Solution Before Solving?
+### Q58: Desirable Difficulties → Why Should I Close the Solution Before Solving?
 
-**Answer:** Desirable difficulties (Bjork, 1994) are challenges that slow initial learning but dramatically strengthen long-term retention. The most powerful is **generation before retrieval** â€” attempting a problem without looking at the solution first.
+**Answer:** Desirable difficulties (Bjork, 1994) are challenges that slow initial learning but dramatically strengthen long-term retention. The most powerful is **generation before retrieval** → attempting a problem without looking at the solution first.
 
 The DSA problem bank at [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md) contains 125 problems with compilable Java solutions. The instinct is to read the solution, understand it, then move on. That's the trap.
 
 **Hard mode (desirable difficulty):** Close the solution. Type the solution from scratch based on what you remember. Only peek when stuck for >5 minutes.
 
-For Q1 (Two Sum, line 17-41): Close the file. Write the HashMap solution. If you get the `complement = target - nums[i]` logic right, you've encoded it deeply. If you write the brute-force O(nÂ²) version instead, you've discovered *why* the HashMap solution matters â€” a deeper understanding.
+For Q1 (Two Sum, line 17-41): Close the file. Write the HashMap solution. If you get the `complement = target - nums[i]` logic right, you've encoded it deeply. If you write the brute-force O(nÂ²) version instead, you've discovered *why* the HashMap solution matters → a deeper understanding.
 
 ```java
 public class DesirableDifficulties {
@@ -1675,9 +1675,9 @@ public class DesirableDifficulties {
 
 ---
 
-### Q59: Overlearning â€” How Do I Know When I've Studied Enough?
+### Q59: Overlearning → How Do I Know When I've Studied Enough?
 
-**Answer:** Overlearning is continuing to study after you've achieved perfect recall. It has diminishing returns â€” once you can teach a topic, stop. Move to the next PYQ.
+**Answer:** Overlearning is continuing to study after you've achieved perfect recall. It has diminishing returns → once you can teach a topic, stop. Move to the next PYQ.
 
 The GATE PYQ files follow a progression. In [`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md), the questions go from D1 (basic ER model) to D75 (advanced recovery). The signal to move on is the **teach-back test**:
 
@@ -1687,8 +1687,8 @@ The GATE PYQ files follow a progression. In [`docs/courses/gate-cs-preparation/0
 public class OverlearningCheck {
     static boolean canTeach(String topic) {
         // Record yourself explaining the topic for 2 minutes
-        // If clear, coherent, and correct â†’ stop studying
-        // If rambling, hesitating, or wrong â†’ continue
+        // If clear, coherent, and correct → stop studying
+        // If rambling, hesitating, or wrong → continue
         return recordingIsCoherent();
     }
 }
@@ -1696,24 +1696,24 @@ public class OverlearningCheck {
 
 This directly applies to the [`docs/courses/placement-preparation/03-sql-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/03-sql-problem-bank.md) (75 SQL/NoSQL problems). Once you can teach SQL problem S15 (correlated subquery) without notes, you've overlearned it. Move to S16.
 
-> **Try This:** Pick one topic from your current study. Record a 2-minute audio explaining it to an imaginary friend. Play it back. If it's clear and correct, you've reached the overlearning point â€” move on. If not, study 10 more minutes and re-record.
+> **Try This:** Pick one topic from your current study. Record a 2-minute audio explaining it to an imaginary friend. Play it back. If it's clear and correct, you've reached the overlearning point → move on. If not, study 10 more minutes and re-record.
 
 ---
 
-### Q60: Mnemonic Cheat Sheet â€” 10 Patterns I Can Apply to Any Course
+### Q60: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course
 
 **Answer:** These 10 mnemonic patterns work across any subject. Each is shown with an example from this repo's courses.
 
 | # | Pattern | How It Works | Example from Repo |
 |---|---------|-------------|-------------------|
 | 1 | **Acronym** | First letters form a word | OSI layers: **A**ll **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing (from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md) line 51) |
-| 2 | **Acrostic** | First letters form a sentence | Deadlock conditions: **M**utual Exclusion, **H**old & Wait, **N**o Preemption, **C**ircular Wait â†’ "**M**y **H**orse **N**eeds **C**arrots" (from `07-operating-systems.md` lines 48-53) |
+| 2 | **Acrostic** | First letters form a sentence | Deadlock conditions: **M**utual Exclusion, **H**old & Wait, **N**o Preemption, **C**ircular Wait → "**M**y **H**orse **N**eeds **C**arrots" (from `07-operating-systems.md` lines 48-53) |
 | 3 | **Rhyme** | Number rhymes with image | 1-bun, 2-shoe (peg system) for memorizing the 7 layers |
-| 4 | **Story Chain** | Items linked in narrative | ACID: bomb â†’ ruler â†’ island â†’ safe (from Q49 above) |
+| 4 | **Story Chain** | Items linked in narrative | ACID: bomb → ruler → island → safe (from Q49 above) |
 | 5 | **Method of Loci** | Spatial locations | OS topics in library shelves (from Q52) |
-| 6 | **Visual Metaphor** | Abstract â†’ concrete image | CAP theorem: tightrope, door, rubber band (from Q48) |
-| 7 | **Peg System** | Numbers â†’ pegs | 10 CPU scheduling algorithms on 10 peg images |
-| 8 | **Compression** | 3-5 word essence | "pivot â†’ partition â†’ recurse" for quicksort |
+| 6 | **Visual Metaphor** | Abstract → concrete image | CAP theorem: tightrope, door, rubber band (from Q48) |
+| 7 | **Peg System** | Numbers → pegs | 10 CPU scheduling algorithms on 10 peg images |
+| 8 | **Compression** | 3-5 word essence | "pivot → partition → recurse" for quicksort |
 | 9 | **Chunking** | Group into 3-5 items | Normal forms: 1NF/2NF = baby, 3NF/BCNF = teen, 4NF/5NF = adult |
 | 10 | **Musical Rhythm** | Set to a tune | Sing the 7 OSI layers to "Twinkle Twinkle Little Star" |
 
@@ -1721,11 +1721,11 @@ Combine multiple patterns for the strongest effect. The ACID chain (pattern 4) i
 
 > **Try This:** Pick a topic you're struggling with from any file. Apply 3 patterns from this table to encode it. For example, if stuck on B+ tree parameters from [`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md): (1) compress to "order-leaf-internal-height", (2) put it in a story about ordering pizza, (3) assign to a location in your palace.
 
-## Part 4: Procrastination & Deep Work â€” Become Unstoppable (Q61-Q80)
+## Part 4: Procrastination & Deep Work → Become Unstoppable (Q61-Q80)
 
-### Q61: Why We Procrastinate â€” Why Can't I Start the Hard DP Problem?
+### Q61: Why We Procrastinate → Why Can't I Start the Hard DP Problem?
 
-**Answer:** Procrastination isn't laziness â€” it's emotional regulation. Your brain's amygdala perceives a difficult task (like solving a 0/1 Knapsack DP problem from [`docs/courses/algorithms/08-dp-knapsack.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/algorithms/08-dp-knapsack.md)) as a threat. The discomfort triggers an escape response â†’ dopamine hit from YouTube/Twitter â†’ relief. This reinforces the procrastination loop.
+**Answer:** Procrastination isn't laziness → it's emotional regulation. Your brain's amygdala perceives a difficult task (like solving a 0/1 Knapsack DP problem from [`docs/courses/algorithms/08-dp-knapsack.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/algorithms/08-dp-knapsack.md)) as a threat. The discomfort triggers an escape response → dopamine hit from YouTube/Twitter → relief. This reinforces the procrastination loop.
 
 The 0/1 Knapsack recurrence is genuinely hard: `dp[i][c] = max(dp[i-1][c], v[i] + dp[i-1][c - w[i]])`. Your brain sees the O(nW) table and wants to flee. The fix is to name the emotion: "I am not avoiding this problem because I'm lazy. I'm avoiding it because the 2D DP table feels overwhelming."
 
@@ -1740,13 +1740,13 @@ public class ProcrastinationAwareness {
 }
 ```
 
-The DSA problem bank ([`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md)) has 125 problems. The hardest ones (DP, graphs) trigger the most procrastination â€” and therefore give the biggest ROI when you push through the first 2 minutes.
+The DSA problem bank ([`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md)) has 125 problems. The hardest ones (DP, graphs) trigger the most procrastination → and therefore give the biggest ROI when you push through the first 2 minutes.
 
 > **Try This:** Identify the problem you've been avoiding longest from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md). Say out loud: "I feel resistance because X." Then open the file and read just the problem statement. Nothing more. The resistance drops by 50% after step 1.
 
 ---
 
-### Q62: The Procrastination Loop â€” Cue, Routine, Reward â€” How Do I Break It?
+### Q62: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?
 
 **Answer:** Procrastination follows a 3-part loop (from Charles Duhigg's *The Power of Habit*):
 - **Cue:** You see a hard SQL problem from [`docs/courses/placement-preparation/03-sql-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/03-sql-problem-bank.md)
@@ -1758,15 +1758,15 @@ To break it, keep the cue and reward but swap the routine:
 - **New Routine:** Open the file, read just the schema, write one `SELECT` statement
 - **Reward:** Check it off your list (the relief is stronger than YouTube's)
 
-The SQL bank has 75 problems. S22-S30 involve advanced joins, correlated subqueries, and window functions. These trigger strong avoidance because they require multi-step reasoning. Your new loop: cue (see the problem) â†’ routine (write the first keyword `SELECT`) â†’ reward (progress bar moves).
+The SQL bank has 75 problems. S22-S30 involve advanced joins, correlated subqueries, and window functions. These trigger strong avoidance because they require multi-step reasoning. Your new loop: cue (see the problem) → routine (write the first keyword `SELECT`) → reward (progress bar moves).
 
-> **Try This:** Open [`docs/courses/placement-preparation/03-sql-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/03-sql-problem-bank.md) right now. Find S22. Don't solve it â€” just type the first 3 lines of the query (`SELECT ... FROM ... WHERE`). Close the file. You've broken the loop.
+> **Try This:** Open [`docs/courses/placement-preparation/03-sql-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/03-sql-problem-bank.md) right now. Find S22. Don't solve it → just type the first 3 lines of the query (`SELECT ... FROM ... WHERE`). Close the file. You've broken the loop.
 
 ---
 
-### Q63: The 2-Minute Rule â€” What's the Smallest Commit I Can Make?
+### Q63: The 2-Minute Rule → What's the Smallest Commit I Can Make?
 
-**Answer:** The 2-Minute Rule (from James Clear's *Atomic Habits*) states: "When you start a new habit, it should take less than two minutes to do." The goal isn't to finish the task â€” it's to start it. Momentum does the rest.
+**Answer:** The 2-Minute Rule (from James Clear's *Atomic Habits*) states: "When you start a new habit, it should take less than two minutes to do." The goal isn't to finish the task → it's to start it. Momentum does the rest.
 
 Applied to this repo's courses:
 - "Open [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) and read 1 line" (done in 5 seconds)
@@ -1783,7 +1783,7 @@ public class TwoMinuteRule {
         long start = System.currentTimeMillis();
         openGateFile("07-operating-systems.md");
         if (System.currentTimeMillis() - start > 120_000) {
-            // You can stop guilt-free â€” but you won't want to
+            // You can stop guilt-free → but you won't want to
         }
     }
 }
@@ -1793,7 +1793,7 @@ public class TwoMinuteRule {
 
 ---
 
-### Q64: Implementation Intentions â€” How Do I Stop Saying "I'll Study Later"?
+### Q64: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?
 
 **Answer:** Implementation intentions use a specific formula: **"At [TIME] in [LOCATION], I will [ACTION]."** This turns a vague intention into a concrete plan that fires automatically when the conditions are met.
 
@@ -1824,7 +1824,7 @@ public class ImplementationIntention {
 
 ---
 
-### Q65: Temptation Bundling â€” How Do I Make DSA Problems Less Painful?
+### Q65: Temptation Bundling → How Do I Make DSA Problems Less Painful?
 
 **Answer:** Temptation bundling pairs a behavior you *want* to do (enjoyable) with a behavior you *need* to do (difficult). The enjoyable activity becomes the reward for doing the hard one.
 
@@ -1843,11 +1843,11 @@ For GATE prep, bundle:
 
 ---
 
-### Q66: Zeigarnik Effect â€” Why Should I Leave a Problem Half-Solved?
+### Q66: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?
 
-**Answer:** The Zeigarnik Effect (Bluma Zeigarnik, 1920s) states that interrupted tasks are remembered better than completed ones. Your brain keeps working on unfinished tasks subconsciously â€” what she called "tension toward completion."
+**Answer:** The Zeigarnik Effect (Bluma Zeigarnik, 1920s) states that interrupted tasks are remembered better than completed ones. Your brain keeps working on unfinished tasks subconsciously → what she called "tension toward completion."
 
-**Strategy:** When studying the 70 OS PYQs from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md), stop mid-way through a problem â€” not at a natural break. Start problem G23 (Banker's algorithm), work out the `Available` vector, then stop for the night. Your brain will continue processing the deadlock avoidance logic while you sleep.
+**Strategy:** When studying the 70 OS PYQs from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md), stop mid-way through a problem → not at a natural break. Start problem G23 (Banker's algorithm), work out the `Available` vector, then stop for the night. Your brain will continue processing the deadlock avoidance logic while you sleep.
 
 ```java
 public class ZeigarnikEffect {
@@ -1856,29 +1856,29 @@ public class ZeigarnikEffect {
         // Solve 90% of PYQ[index], leave last step undone
         System.out.println("Solved " + pyqs[index] + " to 90%");
         System.out.println("Final step: check if system is in safe state");
-        // Walk away â€” brain will work on it
+        // Walk away → brain will work on it
     }
 }
 ```
 
-Next morning, the first thing you want to do is finish that `Need` vs `Allocation` comparison. The unresolved tension pulls you back to study â€” no willpower required.
+Next morning, the first thing you want to do is finish that `Need` vs `Allocation` comparison. The unresolved tension pulls you back to study → no willpower required.
 
 > **Try This:** Right now, pick a problem from any course file. Solve it to 80-90% completion. Leave the final step undone. Check: do you think about it during your next break? Tomorrow morning, how fast do you return to finish it?
 
 ---
 
-### Q67: The 20-Second Rule â€” How Much Friction Do I Need?
+### Q67: The 20-Second Rule → How Much Friction Do I Need?
 
-**Answer:** The 20-Second Rule (Shawn Achor, *The Happiness Advantage*) states that increasing friction for bad habits by 20 seconds dramatically reduces their frequency â€” and decreasing friction for good habits by 20 seconds increases theirs.
+**Answer:** The 20-Second Rule (Shawn Achor, *The Happiness Advantage*) states that increasing friction for bad habits by 20 seconds dramatically reduces their frequency → and decreasing friction for good habits by 20 seconds increases theirs.
 
 **Bad habit friction:** Put your phone in another room (20 seconds to retrieve). That's enough friction to break the Instagram-checking impulse during study.
 
-**Good habit removal of friction:** Place the DSA problem bank file [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md) as your browser's default new tab. Mark the exact line of the next unsolved problem. When you open your laptop, Q46 (Edit Distance) is already in front of you â€” zero seconds of friction.
+**Good habit removal of friction:** Place the DSA problem bank file [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md) as your browser's default new tab. Mark the exact line of the next unsolved problem. When you open your laptop, Q46 (Edit Distance) is already in front of you → zero seconds of friction.
 
 ```java
 public class TwentySecondRule {
-    // Bad habit: phone on desk (0 seconds friction â†’ always check)
-    // Fix: phone in other room (20 seconds friction â†’ rarely check)
+    // Bad habit: phone on desk (0 seconds friction → always check)
+    // Fix: phone in other room (20 seconds friction → rarely check)
     
     // Good habit: opening study file takes 30 seconds of clicking
     // Fix: pin the file, leave cursor on the right line (0 seconds friction)
@@ -1891,25 +1891,25 @@ public class TwentySecondRule {
 }
 ```
 
-For the 8 GATE mock tests ([`docs/courses/gate-cs-preparation/15-mock-test-1.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/15-mock-test-1.md) through `22-mock-test-8.md`), print the first one and put it on your desk. The friction of opening a PDF â†’ finding the printer â†’ printing is replaced by: the paper is already there.
+For the 8 GATE mock tests ([`docs/courses/gate-cs-preparation/15-mock-test-1.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/15-mock-test-1.md) through `22-mock-test-8.md`), print the first one and put it on your desk. The friction of opening a PDF → finding the printer → printing is replaced by: the paper is already there.
 
 > **Try This:** Identify your highest-friction good habit. Reduce friction by 20 seconds (bookmark, pinned tab, printed sheet, open editor). Identify your highest-access bad habit. Increase friction by 20 seconds (phone in bag, apps blocked, WiFi toggle off).
 
 ---
 
-### Q68: Habit Stacking â€” How Do I Chain Study to Something I Already Do?
+### Q68: Habit Stacking → How Do I Chain Study to Something I Already Do?
 
 **Answer:** Habit stacking (James Clear) uses the formula: **"After [CURRENT HABIT], I will [NEW HABIT]."** You piggyback the new behavior on an existing automatic one.
 
 "After I finish dinner, I will solve 1 DSA problem from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md) and mark a streak on my calendar."
 
-The stack: Dinner â†’ Wash plate â†’ Open laptop â†’ Solve Q from DSA bank â†’ Mark calendar â†’ Done.
+The stack: Dinner → Wash plate → Open laptop → Solve Q from DSA bank → Mark calendar → Done.
 
 Each reinforcement cycle builds automaticity. The 125-problem DSA bank goes from Q1 (Two Sum) to Q125. At 1 problem/day, that's 4 months of stacked habit. After 66 days (the median habit formation time), opening the DSA file after dinner becomes as automatic as washing the plate.
 
 ```java
 public class HabitStack {
-    // Stack: After {CURRENT} â†’ {NEW}
+    // Stack: After {CURRENT} → {NEW}
     static void executeStack(String current, String newHabit, String file) {
         System.out.println("After " + current + "...");
         System.out.println("...I will " + newHabit + " from " + file);
@@ -1927,18 +1927,18 @@ public class HabitStack {
 
 ---
 
-### Q69: Keystone Habits â€” Which ONE Habit Changes Everything?
+### Q69: Keystone Habits → Which ONE Habit Changes Everything?
 
 **Answer:** A keystone habit is a single behavior that triggers a cascade of positive changes across unrelated areas. The DSA practice habit from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md) is a keystone habit for placement prep.
 
 **The cascade:**
 1. You solve 1 DSA problem after work
-2. You feel accomplished â†’ you sleep better
-3. Better sleep â†’ better focus the next day
-4. Better focus â†’ you solve the problem faster
-5. Faster solving â†’ you have time for GATE prep too
-6. Momentum â†’ you stop ordering junk food (why ruin the good streak?)
-7. Streak â†’ you study on weekends = 50+ hours/month
+2. You feel accomplished → you sleep better
+3. Better sleep → better focus the next day
+4. Better focus → you solve the problem faster
+5. Faster solving → you have time for GATE prep too
+6. Momentum → you stop ordering junk food (why ruin the good streak?)
+7. Streak → you study on weekends = 50+ hours/month
 
 The one habit: "Open the DSA problem bank file and solve 1 problem." Everything else follows. The [`docs/courses/placement-preparation/04-company-specific.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/04-company-specific.md) file shows that FAANG companies test DSA heavily. The keystone habit of daily DSA practice directly addresses the highest-leverage interview skill.
 
@@ -1949,11 +1949,11 @@ public class KeystoneHabit {
     
     static String[] cascade() {
         return new String[]{
-            "1 problem solved â†’ accomplishment",
-            "accomplishment â†’ better sleep",
-            "better sleep â†’ more focus",
-            "more focus â†’ faster problem-solving",
-            "momentum â†’ study other courses too"
+            "1 problem solved → accomplishment",
+            "accomplishment → better sleep",
+            "better sleep → more focus",
+            "more focus → faster problem-solving",
+            "momentum → study other courses too"
         };
     }
 }
@@ -1963,9 +1963,9 @@ public class KeystoneHabit {
 
 ---
 
-### Q70: Willpower Depletion â€” Why Can't I Study Hard Theory at Night?
+### Q70: Willpower Depletion → Why Can't I Study Hard Theory at Night?
 
-**Answer:** Willpower is a finite resource that depletes throughout the day (Baumeister, 1998). Ego depletion means every decision â€” what to eat, which email to answer, whether to check your phone â€” drains from the same pool. By 10 PM, your reserves are empty.
+**Answer:** Willpower is a finite resource that depletes throughout the day (Baumeister, 1998). Ego depletion means every decision → what to eat, which email to answer, whether to check your phone → drains from the same pool. By 10 PM, your reserves are empty.
 
 GATE theory topics require high cognitive load:
 - **Memory Management** (page replacement, TLB) from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (2-4 marks per GATE)
@@ -1980,10 +1980,10 @@ These should be morning tasks. Save low-willpower activities for evening:
 public class WillpowerSchedule {
     static void schedule(String timeOfDay) {
         if (timeOfDay.equals("morning")) {
-            // High willpower â†’ new, hard topics
+            // High willpower → new, hard topics
             studyFile("10-data-structures-algorithms.md"); // DSA PYQs
         } else {
-            // Low willpower â†’ review only
+            // Low willpower → review only
             reviewFlashcards("07-operating-systems.md");
         }
     }
@@ -1994,7 +1994,7 @@ public class WillpowerSchedule {
 
 ---
 
-### Q71: Deep Work Definition â€” What Counts as Deep Work for GATE Prep?
+### Q71: Deep Work Definition → What Counts as Deep Work for GATE Prep?
 
 **Answer:** Deep Work (Cal Newport) is "professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit." For this repo, deep work means:
 
@@ -2025,13 +2025,13 @@ public class DeepWork {
 
 ---
 
-### Q72: The 4 Disciplines of Execution â€” How Do I Actually Execute My GATE Plan?
+### Q72: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?
 
 **Answer:** The 4DX framework (Chris McChesney) bridges the gap between goals and execution:
 
-1. **Focus on the Wildly Important:** Your wildly important goal is "Crack GATE CS." The lead measure is not "study 8 hours" â€” it's "solve 10 unsolved PYQs from the GATE files."
+1. **Focus on the Wildly Important:** Your wildly important goal is "Crack GATE CS." The lead measure is not "study 8 hours" → it's "solve 10 unsolved PYQs from the GATE files."
 
-2. **Act on Lead Measures:** Open [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) and solve PYQ G25-G34 (deadlock problems). These are lead measures â€” activities that drive the lag measure (GATE score).
+2. **Act on Lead Measures:** Open [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) and solve PYQ G25-G34 (deadlock problems). These are lead measures → activities that drive the lag measure (GATE score).
 
 3. **Keep a Compelling Scoreboard:** Create a simple streak tracker. Each solved PYQ gets a mark. A visual streak is more motivating than a vague "making progress" feeling.
 
@@ -2055,36 +2055,36 @@ public class FourDisciplines {
 
 ---
 
-### Q73: Deep Work for Working Devs â€” When Should a PHP/Laravel Developer Study?
+### Q73: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?
 
-**Answer:** Working developers face the toughest schedule â€” full-time job, family commitments, then study. The solution is to protect a specific deep work window every day.
+**Answer:** Working developers face the toughest schedule → full-time job, family commitments, then study. The solution is to protect a specific deep work window every day.
 
-**Option A: Early morning (7:30-9:00 AM)** â€” before work, when your willpower is full and no work emails have arrived. Study the Laravel architecture patterns from [`docs/courses/laravel/19-architecture-patterns.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/laravel/19-architecture-patterns.md) or the MCP integration in [`docs/courses/laravel/15-mcp.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/laravel/15-mcp.md).
+**Option A: Early morning (7:30-9:00 AM)** → before work, when your willpower is full and no work emails have arrived. Study the Laravel architecture patterns from [`docs/courses/laravel/19-architecture-patterns.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/laravel/19-architecture-patterns.md) or the MCP integration in [`docs/courses/laravel/15-mcp.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/laravel/15-mcp.md).
 
-**Option B: Late evening (9:00-10:30 PM)** â€” after the household has settled. Study system design from `docs/courses/system-design/` or the Laravel queue/notifications from `06-queues-notifications.md`.
+**Option B: Late evening (9:00-10:30 PM)** → after the household has settled. Study system design from `docs/courses/system-design/` or the Laravel queue/notifications from `06-queues-notifications.md`.
 
 The Laravel course is 49 interview-focused files (from `01-introduction.md` through `54-interview-ai-ml.md`). For a PHP/Laravel dev preparing for senior roles:
-- Morning: Laravel architecture + service container (`09-container-packages.md`) â€” requires deep focus
-- Evening: System design case studies ([`docs/courses/system-design/18-case-studies-classic.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/system-design/18-case-studies-classic.md) through `23-case-study-dropbox.md`) â€” engaging enough to overcome evening fatigue
+- Morning: Laravel architecture + service container (`09-container-packages.md`) → requires deep focus
+- Evening: System design case studies ([`docs/courses/system-design/18-case-studies-classic.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/system-design/18-case-studies-classic.md) through `23-case-study-dropbox.md`) → engaging enough to overcome evening fatigue
 
 ```java
 public class WorkingDevSchedule {
     static String timeBlock(String role, String period) {
         if (role.equals("PHP/Laravel Developer")) {
             return period.equals("morning") 
-                ? "laravel/19-architecture-patterns.md â€” deep work"
-                : "system-design/18-case-studies-classic.md â€” case studies";
+                ? "laravel/19-architecture-patterns.md → deep work"
+                : "system-design/18-case-studies-classic.md → case studies";
         }
         return "Adjust based on your tech stack";
     }
 }
 ```
 
-> **Try This:** Identify your most consistent 90-minute window. Write it on your calendar as "Deep Work â€” [FILE NAME]" â€” recurring, protected, non-negotiable. Start tomorrow. If work intrudes, reschedule within 24 hours, never cancel.
+> **Try This:** Identify your most consistent 90-minute window. Write it on your calendar as "Deep Work → [FILE NAME]" → recurring, protected, non-negotiable. Start tomorrow. If work intrudes, reschedule within 24 hours, never cancel.
 
 ---
 
-### Q74: Attention Residue â€” Why Should I Journal Between Topics?
+### Q74: Attention Residue → Why Should I Journal Between Topics?
 
 **Answer:** Attention residue (Sophie Leroy, 2009) is the cognitive carryover from one task to the next. When you switch from studying OS deadlocks ([`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) lines 48-53: Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait) to DBMS normalization (`08-database-management-systems.md` lines 30-39), part of your brain still processes deadlock conditions.
 
@@ -2103,7 +2103,7 @@ This 60-second ritual clears the residue. Studies show it improves performance o
 
 ---
 
-### Q75: The Grand Central Station Error â€” Why Can't I Study in Coffee Shops?
+### Q75: The Grand Central Station Error → Why Can't I Study in Coffee Shops?
 
 **Answer:** The Grand Central Station Error is studying in an environment with constant unpredictable interruptions. Each interruption fragments attention and costs 23 minutes (on average) to regain deep focus.
 
@@ -2112,7 +2112,7 @@ Avoid for deep work:
 - Open-plan offices where people walk by
 - Studying with TV on in the background
 
-The DSA problem bank ([`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md)) contains problems that require sustained concentration. Q67 (Word Break II â€” backtracking with memoization) requires keeping the recursion tree, memoization table, and string splitting logic in working memory simultaneously. A single interruption collapses this mental model.
+The DSA problem bank ([`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md)) contains problems that require sustained concentration. Q67 (Word Break II → backtracking with memoization) requires keeping the recursion tree, memoization table, and string splitting logic in working memory simultaneously. A single interruption collapses this mental model.
 
 ```java
 public class EnvironmentCheck {
@@ -2132,7 +2132,7 @@ Good environments for the 8 GATE mock tests ([`docs/courses/gate-cs-preparation/
 
 ---
 
-### Q76: Weekly Review â€” What Should I Review Every Sunday?
+### Q76: Weekly Review → What Should I Review Every Sunday?
 
 **Answer:** A weekly review (30 minutes, every Sunday) is the meta-habit that keeps all other habits on track. It prevents drift and ensures you're working on what matters.
 
@@ -2171,7 +2171,7 @@ public class WeeklyReview {
 
 ---
 
-### Q77: Monthly Retrospective â€” What Questions Should I Ask Myself?
+### Q77: Monthly Retrospective → What Questions Should I Ask Myself?
 
 **Answer:** A monthly retrospective goes deeper than the weekly review. It measures not just *what* you studied but *how well* your system is working.
 
@@ -2182,7 +2182,7 @@ public class WeeklyReview {
    - "Active recall from the GATE PYQ files doubled my retention"
 
 2. **What didn't work?** (Stop doing)
-   - "Studying CN after 10 PM â€” retention was terrible"
+   - "Studying CN after 10 PM → retention was terrible"
    - "Reading the SQL solutions instead of writing them"
 
 3. **What will I change next month?** (Start doing)
@@ -2198,9 +2198,9 @@ Reference the 16 case studies in [`docs/courses/system-design/18-case-studies-cl
 
 ---
 
-### Q78: Tracking Progress â€” How Do I Build a GitHub-Style Study Streak Tracker?
+### Q78: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?
 
-**Answer:** A visual streak tracker turns abstract progress into concrete motivation. The GitHub contribution graph works because it makes *absence* visible â€” blank squares are uncomfortable.
+**Answer:** A visual streak tracker turns abstract progress into concrete motivation. The GitHub contribution graph works because it makes *absence* visible → blank squares are uncomfortable.
 
 Build a simple CSV-based tracker:
 
@@ -2238,15 +2238,15 @@ public class StreakTracker {
 }
 ```
 
-> **Try This:** Create a simple table (paper or spreadsheet). Columns: Date, File studied, Minutes, Problems solved. Fill it every day this week. After 7 days, look at the pattern â€” which days are gaps? What can you change to fill them?
+> **Try This:** Create a simple table (paper or spreadsheet). Columns: Date, File studied, Minutes, Problems solved. Fill it every day this week. After 7 days, look at the pattern → which days are gaps? What can you change to fill them?
 
 ---
 
-### Q79: Dealing with Slumps â€” Is a 3-Day Break Catastrophic?
+### Q79: Dealing with Slumps → Is a 3-Day Break Catastrophic?
 
-**Answer:** No â€” slumps are part of any long-term learning journey. The key is distinguishing between a *strategic reset* (1-3 days) and *abandonment* (1+ weeks of zero activity).
+**Answer:** No → slumps are part of any long-term learning journey. The key is distinguishing between a *strategic reset* (1-3 days) and *abandonment* (1+ weeks of zero activity).
 
-**The 3-day break rule:** If you miss 1 day, that's fine. 2 days, you're in a micro-slump. 3 days, it's a real break â€” take it guilt-free, but mark a hard stop. On day 4, do exactly **1 Pomodoro** (25 minutes). Not a full session â€” just one Pomodoro.
+**The 3-day break rule:** If you miss 1 day, that's fine. 2 days, you're in a micro-slump. 3 days, it's a real break → take it guilt-free, but mark a hard stop. On day 4, do exactly **1 Pomodoro** (25 minutes). Not a full session → just one Pomodoro.
 
 The 125-problem DSA bank ([`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md)) is designed for this: you can always solve one easy problem (Q1: Two Sum, Q4: Contains Duplicate) in 25 minutes. That single Pomodoro resets the neural pathways and re-establishes the habit loop.
 
@@ -2256,18 +2256,18 @@ public class SlumpBuster {
         // Day 4 after a break: 1 Pomodoro only
         System.out.println("25 min timer starting...");
         System.out.println("Open: 02-dsa-problem-bank.md");
-        System.out.println("Solve: Q1 (Two Sum) â€” easiest problem");
+        System.out.println("Solve: Q1 (Two Sum) → easiest problem");
         // After 25 min: close laptop. Done.
         // Tomorrow: 2 Pomodoros.
     }
 }
 ```
 
-> **Try This:** If you're in a slump right now, set a 25-minute timer. Open [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md). Solve Q1 (Two Sum â€” the easiest problem). When the timer rings, stop. You've broken the slump. Tomorrow, do 25 more minutes.
+> **Try This:** If you're in a slump right now, set a 25-minute timer. Open [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md). Solve Q1 (Two Sum → the easiest problem). When the timer rings, stop. You've broken the slump. Tomorrow, do 25 more minutes.
 
 ---
 
-### Q80: The Compound Effect â€” Can 1 Hour/Day Really Make Me an Expert?
+### Q80: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?
 
 **Answer:** The compound effect (Darren Hardy) is the principle that small, consistent actions produce extraordinary results over time. 1 hour per day Ã— 365 days = 365 hours. That's enough time to complete any 2 full courses from this repo.
 
@@ -2298,18 +2298,18 @@ public class CompoundEffect {
 }
 ```
 
-**The hidden superpower:** This is not just about hours â€” it's about compound *knowledge*. When you learn DP from `08-dp-knapsack.md`, that knowledge makes learning graph algorithms (`11-graph-shortest.md`) faster. The second course takes less time than the first because concepts transfer. By year 2, you're learning 2-3x faster than when you started.
+**The hidden superpower:** This is not just about hours → it's about compound *knowledge*. When you learn DP from `08-dp-knapsack.md`, that knowledge makes learning graph algorithms (`11-graph-shortest.md`) faster. The second course takes less time than the first because concepts transfer. By year 2, you're learning 2-3x faster than when you started.
 
 > **Try This:** Calculate: what could you master in 1 year at 1 hour/day? Pick 2 courses from this repo that interest you most. Write down: "By this date next year, I will have completed [Course 1] and [Course 2] at 1 hour/day." Start that 1 hour today.
 ```
 
 ```
 
-## Part 5: Domain-Specific â€” Coding & DSA (Q81-Q95)
+## Part 5: Domain-Specific → Coding & DSA (Q81-Q95)
 
 ### Q81: What is the 3-pass method for LeetCode practice?
 
-**Answer:** The 3-pass method is Solve â†’ Optimize â†’ Teach Aloud. First pass: solve brute force within 30 minutes. Second pass: optimize time/space complexity using the solution bank. Third pass: explain the solution aloud as if interviewing, covering trade-offs, edge cases, and alternative approaches.
+**Answer:** The 3-pass method is Solve → Optimize → Teach Aloud. First pass: solve brute force within 30 minutes. Second pass: optimize time/space complexity using the solution bank. Third pass: explain the solution aloud as if interviewing, covering trade-offs, edge cases, and alternative approaches.
 
 Reference the DSA problem bank ([`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md)) which has 125 problems with Java solutions. For example, Q1 (Two Sum) starts with the hashmap O(n) solution:
 
@@ -2327,7 +2327,7 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 
-Pass 1: solve with nested loops (O(nÂ²)). Pass 2: find the hashmap solution (O(n)). Pass 3: teach aloud â€” "HashMap stores previously seen values so we can check complement in O(1). Edge cases: duplicates, no solution, negative numbers."
+Pass 1: solve with nested loops (O(nÂ²)). Pass 2: find the hashmap solution (O(n)). Pass 3: teach aloud → "HashMap stores previously seen values so we can check complement in O(1). Edge cases: duplicates, no solution, negative numbers."
 
 ### Q82: How should I classify DSA problems by pattern?
 
@@ -2346,23 +2346,23 @@ For each new problem, ask: "Which of the 125 existing DSA bank problems does thi
 
 Three example cards:
 
-**Card 1 â€” Front:** "Input is a sorted array and we need O(log n)" **Back:** Binary search. See DSA bank Q5 (Find Minimum in Rotated Sorted Array), Q10 (Search in Rotated Array). `left = 0, right = n-1; while (left < right) { int mid = left + (right - left) / 2; ... }`
+**Card 1 → Front:** "Input is a sorted array and we need O(log n)" **Back:** Binary search. See DSA bank Q5 (Find Minimum in Rotated Sorted Array), Q10 (Search in Rotated Array). `left = 0, right = n-1; while (left < right) { int mid = left + (right - left) / 2; ... }`
 
-**Card 2 â€” Front:** "Need min/max cost with sequential choices and overlapping subproblems" **Back:** Dynamic programming. See DSA bank Q39 (Climbing Stairs), Q40 (Coin Change), Q44 (Edit Distance). Start with memoization (top-down), convert to tabulation (bottom-up).
+**Card 2 → Front:** "Need min/max cost with sequential choices and overlapping subproblems" **Back:** Dynamic programming. See DSA bank Q39 (Climbing Stairs), Q40 (Coin Change), Q44 (Edit Distance). Start with memoization (top-down), convert to tabulation (bottom-up).
 
-**Card 3 â€” Front:** "Two pointers moving toward each other on sorted array" **Back:** Two-pointer technique. See DSA bank Q6 (Container With Most Water): `int left = 0, right = n-1; while (left < right) { area = Math.min(height[left], height[right]) * (right - left); if (height[left] < height[right]) left++; else right--; }`
+**Card 3 → Front:** "Two pointers moving toward each other on sorted array" **Back:** Two-pointer technique. See DSA bank Q6 (Container With Most Water): `int left = 0, right = n-1; while (left < right) { area = Math.min(height[left], height[right]) * (right - left); if (height[left] < height[right]) left++; else right--; }`
 
 ### Q84: How do I solve a DP problem using the DSA bank step by step?
 
-**Answer:** Walk through Q24 from the DSA bank. Wait â€” Q24 is "Remove Nth Node From End" (Linked List). Let's use a real DP problem: Q40 (Coin Change).
+**Answer:** Walk through Q24 from the DSA bank. Wait → Q24 is "Remove Nth Node From End" (Linked List). Let's use a real DP problem: Q40 (Coin Change).
 
-**Step 1 â€” Define state:** `dp[i] = minimum coins to make amount i`.
+**Step 1 → Define state:** `dp[i] = minimum coins to make amount i`.
 
-**Step 2 â€” Recurrence:** `dp[i] = min(dp[i], dp[i - coin] + 1)` for each coin â‰¤ i.
+**Step 2 → Recurrence:** `dp[i] = min(dp[i], dp[i - coin] + 1)` for each coin â‰¤ i.
 
-**Step 3 â€” Base case:** `dp[0] = 0`.
+**Step 3 → Base case:** `dp[0] = 0`.
 
-**Step 4 â€” Code from DSA bank:**
+**Step 4 → Code from DSA bank:**
 
 ```java
 public int coinChange(int[] coins, int amount) {
@@ -2380,9 +2380,9 @@ public int coinChange(int[] coins, int amount) {
 }
 ```
 
-**Step 5 â€” Test:** `coins = [1, 2, 5], amount = 11`. dp[11] = min(dp[10]+1, dp[9]+1, dp[6]+1) = 3 (5+5+1).
+**Step 5 → Test:** `coins = [1, 2, 5], amount = 11`. dp[11] = min(dp[10]+1, dp[9]+1, dp[6]+1) = 3 (5+5+1).
 
-**Step 6 â€” Complexity:** O(amount Ã— n) time, O(amount) space.
+**Step 6 → Complexity:** O(amount Ã— n) time, O(amount) space.
 
 ### Q85: How do I use the DSA bank solutions effectively?
 
@@ -2403,10 +2403,10 @@ public int maxSubArray(int[] nums) {
 ```
 
 Workflow:
-1. Read the problem statement â€” cover the solution code.
-2. Attempt for 30 min â€” write your own Java class with `main()`.
-3. Uncover the solution â€” compare approach, not line-by-line.
-4. Understand the insight â€” here: "reset to nums[i] if it's larger than accumulating."
+1. Read the problem statement → cover the solution code.
+2. Attempt for 30 min → write your own Java class with `main()`.
+3. Uncover the solution → compare approach, not line-by-line.
+4. Understand the insight → here: "reset to nums[i] if it's larger than accumulating."
 5. Close the file and re-implement from memory.
 6. Run the provided `main()` test case to verify.
 
@@ -2416,28 +2416,28 @@ Workflow:
 
 | Complexity | Pattern | DSA Bank Example |
 |---|---|---|
-| **O(1)** | Hashmap lookup, array indexing by index | Q1 Two Sum â€” hashmap `.get()` is O(1) average |
+| **O(1)** | Hashmap lookup, array indexing by index | Q1 Two Sum → hashmap `.get()` is O(1) average |
 | **O(log n)** | Binary search, balanced BST | Q5 Find Minimum in Rotated Sorted Array |
 | **O(n)** | Single pass, two pointers | Q2 Best Time to Buy and Sell Stock |
-| **O(n log n)** | Sorting, divide & conquer, heap ops | Q3 Product of Array Except Self (no sort â€” but merge sort for Q58) |
+| **O(n log n)** | Sorting, divide & conquer, heap ops | Q3 Product of Array Except Self (no sort → but merge sort for Q58) |
 | **O(nÂ²)** | Nested loops, DP over pairs | Q6 Container With Most Water (surprisingly O(n)!) |
 
 Java example showing the difference:
 
 ```java
-// O(1) â€” direct access
+// O(1) → direct access
 int getFirst(int[] arr) { return arr[0]; }
 
-// O(log n) â€” binary search
+// O(log n) → binary search
 int binarySearch(int[] arr, int target) { /* halve each iteration */ }
 
-// O(n) â€” single loop
+// O(n) → single loop
 int sum(int[] arr) { int s = 0; for (int x : arr) s += x; return s; }
 
-// O(n log n) â€” sort + scan
+// O(n log n) → sort + scan
 int closestPair(int[] arr) { Arrays.sort(arr); /* O(n log n) */ ... }
 
-// O(nÂ²) â€” nested loops
+// O(nÂ²) → nested loops
 boolean hasDuplicate(int[] arr) { for (int i = 0; i < n; i++) for (int j = i+1; j < n; j++) if (arr[i] == arr[j]) return true; return false; }
 ```
 
@@ -2447,7 +2447,7 @@ Train your eye: Any loop over n inside another loop over n is O(nÂ²). Any loop
 
 **Answer:** The DSA bank DP problems (Q39-Q57) show the memoization vs tabulation tradeoff. Take Q47 (Word Break):
 
-**Top-down (memoization):** Recursive with cache â€” easier to reason about, risks stack overflow.
+**Top-down (memoization):** Recursive with cache → easier to reason about, risks stack overflow.
 
 ```java
 Map<String, Boolean> memo = new HashMap<>();
@@ -2484,7 +2484,7 @@ public boolean wordBreak(String s, List<String> wordDict) {
 }
 ```
 
-Tradeoff: Memoization uses O(2â¿) stack space worst-case, tabulation uses O(n) array. But memoization only computes reachable states â€” better when the state space is sparse. For interviews, start with memoization (easier to write correctly) then optimize to tabulation.
+Tradeoff: Memoization uses O(2â¿) stack space worst-case, tabulation uses O(n) array. But memoization only computes reachable states → better when the state space is sparse. For interviews, start with memoization (easier to write correctly) then optimize to tabulation.
 
 ### Q88: How do I learn SQL from the SQL problem bank?
 
@@ -2520,11 +2520,11 @@ For the caching pattern, the Redis `SET` + `GET` with TTL is the most common int
 # Cache-aside pattern
 # Application checks cache first
 GET user:profile:123
-# (nil) â€” cache miss
+# (nil) → cache miss
 SET user:profile:123 '{"name":"Alice","role":"Engineer"}' EX 3600
-# TTL of 1 hour â€” automatic invalidation
+# TTL of 1 hour → automatic invalidation
 GET user:profile:123
-# Returns cached JSON â€” cache hit
+# Returns cached JSON → cache hit
 
 # For rate limiting (common interview question):
 INCR rate_limit:user:123
@@ -2546,13 +2546,13 @@ Compare with the SQL bank's relational approach: JOIN-based queries vs Redis's k
 
 ### Q90: How do I learn system design from the repo?
 
-**Protocol:** Read the system-design course chapter â†’ draw the architecture on paper (or whiteboard) from memory â†’ explain it aloud as if teaching a peer.
+**Protocol:** Read the system-design course chapter → draw the architecture on paper (or whiteboard) from memory → explain it aloud as if teaching a peer.
 
 The system design course ([`docs/courses/system-design/index.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/system-design/index.md)) is structured in 4 parts with 22 chapters. For example, Chapter 3 covers caching strategies (cache-aside, read-through, write-through, write-behind). The company-specific file (`04-company-specific.md`) adds Google's CACH framework: Clarify, Assumptions, Components, High-level.
 
 Learning workflow for "Design URL Shortener":
 1. Read the case study chapter 18. Note the key generation service, base-62 encoding, redirection logic.
-2. Draw: Client â†’ API Gateway â†’ KeyGen Service â†’ DB â†’ Cache â†’ Redirect.
+2. Draw: Client → API Gateway → KeyGen Service → DB → Cache → Redirect.
 3. Explain aloud: "The key gen service pre-generates IDs and stores them. On create request, we grab one, encode to base-62, store mapping, return short URL. On redirect, we look up the key, increment click count, return 302 with original URL."
 4. Identify gaps: What about collisions? What about custom aliases? What about analytics?
 
@@ -2606,7 +2606,7 @@ Review these patterns by reading the LLD section of the DSA bank (Q101-Q115) whi
 
 **Answer:** Read the Java/Spring examples from chapter 57 (`57-interview-spring.md`) and ask "what would I change?" before reading the author's explanation.
 
-Take Q1 from the Spring chapter â€” dependency injection types. The chapter shows constructor, setter, and field injection:
+Take Q1 from the Spring chapter → dependency injection types. The chapter shows constructor, setter, and field injection:
 
 ```java
 // Constructor injection (recommended)
@@ -2620,11 +2620,11 @@ class UserService {
 }
 ```
 
-Before checking the explanation, ask yourself: Why is field injection discouraged? (Testability â€” can't mock in constructor. Immutability â€” can't use final. Hidden dependencies â€” hard to see what a class needs.)
+Before checking the explanation, ask yourself: Why is field injection discouraged? (Testability → can't mock in constructor. Immutability → can't use final. Hidden dependencies → hard to see what a class needs.)
 
 Code review checklist from the DSA bank solutions:
-- Are variable names meaningful? (DSA bank uses `nums`, `target`, `minPrice` â€” good)
-- Is there error handling? (DSA bank often skips this â€” what would you add?)
+- Are variable names meaningful? (DSA bank uses `nums`, `target`, `minPrice` → good)
+- Is there error handling? (DSA bank often skips this → what would you add?)
 - Is the `main()` method a reasonable test? (Every DSA bank problem has one)
 - Can you spot the space-time tradeoff? (HashMap for speed vs extra memory)
 
@@ -2666,8 +2666,8 @@ Each LLD problem in Q101-Q115 builds on the same OOP patterns: inheritance for s
 Workflow: Compare Q117 (low-level wait/notify) with Q118 (BlockingQueue) for the same pattern. The BlockingQueue version is dramatically simpler:
 
 ```java
-// Q117: Low-level â€” 150+ lines with synchronized, wait, notifyAll, circular buffer
-// Q118: High-level â€” just wrap ArrayBlockingQueue
+// Q117: Low-level → 150+ lines with synchronized, wait, notifyAll, circular buffer
+// Q118: High-level → just wrap ArrayBlockingQueue
 public class ProducerConsumerBlockingQueue {
     public static void main(String[] args) {
         BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(5);
@@ -2691,23 +2691,23 @@ Lesson: Always prefer `java.util.concurrent` high-level constructs (`BlockingQue
 
 ### Q95: What is the full interview preparation workflow using this repo?
 
-**Answer:** The pipeline is: DSA bank â†’ SQL bank â†’ system design â†’ company-specific â†’ mock tests.
+**Answer:** The pipeline is: DSA bank → SQL bank → system design → company-specific → mock tests.
 
-**Phase 1 â€” DSA foundation (Weeks 1-4):** Solve 3-5 problems daily from `02-dsa-problem-bank.md` (Q1-Q125). Start with Arrays (Q1-Q19), then Trees (Q29-Q38), then DP (Q39-Q57). Each problem has a compilable Java solution â€” always run it to verify.
+**Phase 1 → DSA foundation (Weeks 1-4):** Solve 3-5 problems daily from `02-dsa-problem-bank.md` (Q1-Q125). Start with Arrays (Q1-Q19), then Trees (Q29-Q38), then DP (Q39-Q57). Each problem has a compilable Java solution → always run it to verify.
 
-**Phase 2 â€” SQL & system design (Weeks 5-6):** Solve Q1-Q50 from `03-sql-problem-bank.md`. Read system design chapters 1-22. Draw architecture diagrams from memory.
+**Phase 2 → SQL & system design (Weeks 5-6):** Solve Q1-Q50 from `03-sql-problem-bank.md`. Read system design chapters 1-22. Draw architecture diagrams from memory.
 
-**Phase 3 â€” Company-specific (Week 7):** Read `04-company-specific.md`. Google needs CRACK approach. Amazon needs 16 LPs answered in STAR format. The company-wise PYQ file (`07-company-wise-pyqs.md`) has actual solved problems from each company.
+**Phase 3 → Company-specific (Week 7):** Read `04-company-specific.md`. Google needs CRACK approach. Amazon needs 16 LPs answered in STAR format. The company-wise PYQ file (`07-company-wise-pyqs.md`) has actual solved problems from each company.
 
-**Phase 4 â€” Mock tests (Weeks 8-9):** Simulate interviews from the DSA bank by covering the solution and explaining aloud. Record yourself. Check against solutions.
+**Phase 4 → Mock tests (Weeks 8-9):** Simulate interviews from the DSA bank by covering the solution and explaining aloud. Record yourself. Check against solutions.
 
-**Phase 5 â€” Java/Spring depth (Ongoing):** Chapters 56-60 from the Java course cover interviews for Java, Spring, REST, databases, and microservices. The Spring chapter (`57-interview-spring.md`) alone has 50 Q&As with 8670 lines of content.
+**Phase 5 → Java/Spring depth (Ongoing):** Chapters 56-60 from the Java course cover interviews for Java, Spring, REST, databases, and microservices. The Spring chapter (`57-interview-spring.md`) alone has 50 Q&As with 8670 lines of content.
 
 ```java
 // Your interview day workflow:
 // 1. Listen to problem
 // 2. Clarify constraints (DSA bank shows edge case thinking)
-// 3. Propose brute force â†’ optimize (3-pass method)
+// 3. Propose brute force → optimize (3-pass method)
 // 4. Write clean Java with meaningful names
 // 5. Test with example (DSA bank main() methods show how)
 // 6. State time/space complexity
@@ -2715,13 +2715,13 @@ Lesson: Always prefer `java.util.concurrent` high-level constructs (`BlockingQue
 
 ---
 
-## Part 6: Domain-Specific â€” GATE & Theory Subjects (Q96-Q110)
+## Part 6: Domain-Specific → GATE & Theory Subjects (Q96-Q110)
 
 ### Q96: How does theory learning differ from coding practice?
 
 **Answer:** GATE preparation needs recall speed + formula accuracy, not the open-ended problem-solving depth that placement coding does. Placement interviews explore how you think; GATE tests whether you know the exact answer in 2 minutes.
 
-From the OS chapter (`07-operating-systems.md`), CPU scheduling questions require Gantt chart drawing speed â€” a placement question might ask "design a scheduler", but a GATE question asks "given these processes and Round Robin with TQ=4, what is the average waiting time?"
+From the OS chapter (`07-operating-systems.md`), CPU scheduling questions require Gantt chart drawing speed → a placement question might ask "design a scheduler", but a GATE question asks "given these processes and Round Robin with TQ=4, what is the average waiting time?"
 
 ```java
 // Placement style: implement Round Robin scheduler
@@ -2736,11 +2736,11 @@ DSA theory (from `10-data-structures-algorithms.md`) asks for recurrence solutio
 
 ```
 T(n) = aÂ·T(n/b) + f(n)
-Case 1: f(n) = O(n^{log_b a - Îµ}) â†’ T(n) = Î˜(n^{log_b a})
-Case 2: f(n) = Î˜(n^{log_b a}Â·log^k n) â†’ T(n) = Î˜(n^{log_b a}Â·log^{k+1} n)
+Case 1: f(n) = O(n^{log_b a - Îµ}) → T(n) = Î˜(n^{log_b a})
+Case 2: f(n) = Î˜(n^{log_b a}Â·log^k n) → T(n) = Î˜(n^{log_b a}Â·log^{k+1} n)
 ```
 
-You don't code this in GATE â€” you apply it to find the complexity class. Study accordingly.
+You don't code this in GATE → you apply it to find the complexity class. Study accordingly.
 
 ### Q97: How do I create formula cheat sheets from GATE chapters?
 
@@ -2766,19 +2766,19 @@ From the DBMS chapter (`08-database-management-systems.md:30-39`), the normal fo
 | **3NF** | 2NF + no transitive dependency |
 | **BCNF** | Every non-trivial FD's LHS is a superkey |
 
-Create flashcards for each table. The ROIC for memorizing these is enormous â€” they apply to 40%+ of GATE marks across OS, DBMS, CN, and COA.
+Create flashcards for each table. The ROIC for memorizing these is enormous → they apply to 40%+ of GATE marks across OS, DBMS, CN, and COA.
 
 ### Q98: How do GATE subjects interlink with each other?
 
-**Answer:** The GATE chapters form a dependency graph. Knowledge flows: OS â†’ COA â†’ CN â†’ System Design.
+**Answer:** The GATE chapters form a dependency graph. Knowledge flows: OS → COA → CN → System Design.
 
-**OS â†’ COA:** CPU scheduling (OS) requires understanding pipeline hazards (COA). Memory paging (OS) requires TLB and cache mapping (COA). The OS chapter covers page replacement algorithms (LRU, FIFO, Optimal); the COA chapter (`11-computer-architecture.md`) covers cache mapping (direct, set-associative, fully-associative) which determine effective access time.
+**OS → COA:** CPU scheduling (OS) requires understanding pipeline hazards (COA). Memory paging (OS) requires TLB and cache mapping (COA). The OS chapter covers page replacement algorithms (LRU, FIFO, Optimal); the COA chapter (`11-computer-architecture.md`) covers cache mapping (direct, set-associative, fully-associative) which determine effective access time.
 
-**OS â†’ DBMS:** Concurrency control in DBMS (2PL, timestamp ordering) mirrors process synchronization in OS (semaphores, monitors). The DBMS chapter covers serializability (conflict, view) which requires understanding concurrent execution â€” same mental model as OS process synchronization.
+**OS → DBMS:** Concurrency control in DBMS (2PL, timestamp ordering) mirrors process synchronization in OS (semaphores, monitors). The DBMS chapter covers serializability (conflict, view) which requires understanding concurrent execution → same mental model as OS process synchronization.
 
-**CN â†’ System Design:** Network protocols (CN) map to system design components. CDN (system design chapter 3) relies on DNS hierarchy and routing (CN chapter 9). Load balancers (system design chapter 2) operate at OSI layers 4 and 7 (CN chapter 1).
+**CN → System Design:** Network protocols (CN) map to system design components. CDN (system design chapter 3) relies on DNS hierarchy and routing (CN chapter 9). Load balancers (system design chapter 2) operate at OSI layers 4 and 7 (CN chapter 1).
 
-**DSA â†’ Everything:** Recurrence relations from `10-data-structures-algorithms.md` apply to analyzing sorting algorithms, tree traversals, graph algorithms. QuickSort's O(n log n) average case requires solving `T(n) = 2T(n/2) + O(n)`.
+**DSA → Everything:** Recurrence relations from `10-data-structures-algorithms.md` apply to analyzing sorting algorithms, tree traversals, graph algorithms. QuickSort's O(n log n) average case requires solving `T(n) = 2T(n/2) + O(n)`.
 
 When studying a GATE subject, always ask: "Where else in the syllabus does this concept appear?" The interlinks reduce total learning time by ~30%.
 
@@ -2788,9 +2788,9 @@ When studying a GATE subject, always ask: "Where else in the syllabus does this 
 
 Protocol:
 1. Set a timer for 2 minutes per 1-mark question, 4 minutes per 2-mark question.
-2. Solve on paper first â€” no skipping to solutions.
+2. Solve on paper first → no skipping to solutions.
 3. If stuck past the timer, mark it and move on (exam discipline).
-4. After the batch, review every answer â€” correct and incorrect.
+4. After the batch, review every answer → correct and incorrect.
 5. For wrong answers, identify why: formula error? misread question? calculation mistake?
 
 Workflow for OS G1 from `07-operating-systems.md`:
@@ -2809,23 +2809,23 @@ Review: "I got this right because I drew the Gantt chart before computing. Mista
 
 ### Q100: How does the 3-pass method apply to theory subjects?
 
-**Answer:** Read â†’ Recall â†’ Apply to PYQ. This mirrors the coding 3-pass method but adapted for fact-heavy subjects.
+**Answer:** Read → Recall → Apply to PYQ. This mirrors the coding 3-pass method but adapted for fact-heavy subjects.
 
-**Pass 1 â€” Read:** Read the OS CPU scheduling section covering the formula table for TAT, WT, RT, CPU utilization, and throughput.
+**Pass 1 → Read:** Read the OS CPU scheduling section covering the formula table for TAT, WT, RT, CPU utilization, and throughput.
 
-**Pass 2 â€” Recall:** Close the chapter. On a blank sheet, reproduce from memory:
+**Pass 2 → Recall:** Close the chapter. On a blank sheet, reproduce from memory:
 - All scheduling algorithms (FCFS, SJF, SRTF, RR, Priority, MLFQ)
 - Formulas for TAT = CT - AT, WT = TAT - BT
 - The Gantt chart drawing method
 
-**Pass 3 â€” Apply:** Solve GATE PYQs G1-G10 from the OS chapter with a timer. For each, draw the Gantt chart, compute the metric, and check against the solution.
+**Pass 3 → Apply:** Solve GATE PYQs G1-G10 from the OS chapter with a timer. For each, draw the Gantt chart, compute the metric, and check against the solution.
 
 For OS G5 (Round Robin with TQ=4):
 
 ```
 Processes: P1(10), P2(5), P3(8), AT=0 for all, TQ=4
 
-Pass 1: Read Round Robin formula â€” each process gets TQ time in circular order.
+Pass 1: Read Round Robin formula → each process gets TQ time in circular order.
 Pass 2: Recall Gantt: P1(0-4), P2(4-8), P3(8-12), P1(12-18), P2(18-19), P3(19-23)
         CompT: P1=18, P2=19, P3=23
         TAT: P1=18, P2=19, P3=23
@@ -2841,13 +2841,13 @@ Pass 3: Solve PYQ and verify.
 From the CN chapter (`09-computer-networks.md:24-34`), draw the OSI model:
 
 ```
-7 â€” Application  (HTTP, FTP, SMTP)
-6 â€” Presentation (Encryption, compression)
-5 â€” Session      (Session management)
-4 â€” Transport    (TCP, UDP) â€” Segment
-3 â€” Network      (IP, ICMP) â€” Packet
-2 â€” Data Link    (Ethernet, PPP) â€” Frame
-1 â€” Physical     (Bits, signals) â€” Bits
+7 → Application  (HTTP, FTP, SMTP)
+6 → Presentation (Encryption, compression)
+5 → Session      (Session management)
+4 → Transport    (TCP, UDP) → Segment
+3 → Network      (IP, ICMP) → Packet
+2 → Data Link    (Ethernet, PPP) → Frame
+1 → Physical     (Bits, signals) → Bits
 ```
 
 From DBMS (`08-database-management-systems.md:30-39`), draw the ER diagram for the employees database:
@@ -2865,10 +2865,10 @@ From DBMS (`08-database-management-systems.md:30-39`), draw the ER diagram for t
 From COA (`11-computer-architecture.md:24-43`), draw the von Neumann architecture:
 
 ```text
-  CPU â†Address Busâ†’ Memory (unified)
-  CPU â†Data Busâ†’    Memory
-  CPU â†Control Busâ†’ Memory
-  [Fetch: PCâ†’MARâ†’Memoryâ†’MDRâ†’IR]
+  CPU â†Address Bus→ Memory (unified)
+  CPU â†Data Bus→    Memory
+  CPU â†Control Bus→ Memory
+  [Fetch: PC→MAR→Memory→MDR→IR]
   [Decode: Control unit decodes IR]
   [Execute: ALU operates, result to memory/register]
 ```
@@ -2880,16 +2880,16 @@ Draw each diagram from memory until it's perfect. Then add the formulas next to 
 **Answer:** The discrete mathematics course (`docs/courses/discrete-mathematics/`) covers the math requirements for GATE: set theory, combinatorics, graph theory, logic, probability, and linear algebra.
 
 Priority ordering for GATE math:
-1. **Probability & Statistics** â€” appears in almost every GATE paper (expectation, variance, Bayes theorem, distributions)
-2. **Discrete Mathematics** â€” graph theory (trees, matchings, planarity), combinatorics (permutations/combinations, recurrence relations), propositional logic
-3. **Engineering Mathematics** â€” linear algebra (matrices, eigenvalues), calculus (maxima/minima, integration)
+1. **Probability & Statistics** → appears in almost every GATE paper (expectation, variance, Bayes theorem, distributions)
+2. **Discrete Mathematics** → graph theory (trees, matchings, planarity), combinatorics (permutations/combinations, recurrence relations), propositional logic
+3. **Engineering Mathematics** → linear algebra (matrices, eigenvalues), calculus (maxima/minima, integration)
 
 The GATE DSA chapter (`10-data-structures-algorithms.md`) already includes Master Theorem and recurrence analysis, which is the overlap zone between math and CS:
 
 ```
-Common recurrence: T(n) = 2T(n/2) + n â†’ Merge Sort â†’ O(n log n)
-Common recurrence: T(n) = T(n-1) + n â†’ Selection Sort â†’ O(nÂ²)
-Common recurrence: T(n) = 2T(n-1) + 1 â†’ Tower of Hanoi â†’ O(2â¿)
+Common recurrence: T(n) = 2T(n/2) + n → Merge Sort → O(n log n)
+Common recurrence: T(n) = T(n-1) + n → Selection Sort → O(nÂ²)
+Common recurrence: T(n) = 2T(n-1) + 1 → Tower of Hanoi → O(2â¿)
 ```
 
 Study approach: Solve the math PYQs first. They follow predictable patterns. Only then study theory in depth.
@@ -2901,7 +2901,7 @@ Study approach: Solve the math PYQs first. They follow predictable patterns. Onl
 | Rank | Subject | Avg Marks | Weight | Why |
 |------|---------|-----------|--------|-----|
 | 1 | Operating Systems | 8-12 | 10-14% | Consistent pattern, formula-driven |
-| 2 | Database Management | 8-12 | 10-14% | Predictable â€” normalization, SQL, B+ tree |
+| 2 | Database Management | 8-12 | 10-14% | Predictable → normalization, SQL, B+ tree |
 | 3 | Computer Networks | 8-10 | 10-12% | High marks in subnetting, TCP, CRC |
 | 4 | Computer Architecture | 8-10 | 10-12% | Cache, pipeline, data representation |
 | 5 | Data Structures & Algorithms | 8-12 | 10-14% | Recurrences, tree/graph questions |
@@ -2910,7 +2910,7 @@ Study approach: Solve the math PYQs first. They follow predictable patterns. Onl
 | 8 | Digital Logic | 3-5 | 4-6% | Boolean algebra, KMaps, counters |
 | 9 | Engineering Math | 10-15 | 12-18% | Highest raw marks but broad syllabus |
 
-Strategy: Master OS + DBMS + CN + COA first (ROI rank 1-4) â€” they account for 40-50% of total marks with predictable patterns. Then DSA + TOC (ROI rank 5-6). Leave Digital Logic and Compiler Design for last unless they're your strength.
+Strategy: Master OS + DBMS + CN + COA first (ROI rank 1-4) → they account for 40-50% of total marks with predictable patterns. Then DSA + TOC (ROI rank 5-6). Leave Digital Logic and Compiler Design for last unless they're your strength.
 
 ### Q104: How do I manage time in GATE exams?
 
@@ -2933,27 +2933,27 @@ The difference between a 65 and a 75 in GATE is often time management, not knowl
 
 ### Q105: How do I analyze and fix common GATE mistakes?
 
-**Answer:** Track every wrong PYQ answer by error type. The GATE chapters include solutions â€” use them to categorize your mistakes.
+**Answer:** Track every wrong PYQ answer by error type. The GATE chapters include solutions → use them to categorize your mistakes.
 
 From `07-operating-systems.md`, common error categories:
 
-**Category 1 â€” Formula confusion (30% of errors):** Confusing TAT (completion - arrival) with WT (TAT - burst). Fix: Write formulas on a sticky note next to your practice desk.
+**Category 1 → Formula confusion (30% of errors):** Confusing TAT (completion - arrival) with WT (TAT - burst). Fix: Write formulas on a sticky note next to your practice desk.
 
-**Category 2 â€” Calculation errors (25%):** Arithmetic errors in average computations or missing a process. Fix: Use a Gantt chart for every scheduling problem â€” don't compute formulas mentally.
+**Category 2 → Calculation errors (25%):** Arithmetic errors in average computations or missing a process. Fix: Use a Gantt chart for every scheduling problem → don't compute formulas mentally.
 
-**Category 3 â€” Misreading the question (20%):** The classic: "Which is NOT true about XYZ?" when you answered for "Which is true." Fix: Circle keywords (NOT, always, never, except) before solving.
+**Category 3 → Misreading the question (20%):** The classic: "Which is NOT true about XYZ?" when you answered for "Which is true." Fix: Circle keywords (NOT, always, never, except) before solving.
 
-**Category 4 â€” Wrong technique (15%):** Using LRU when they asked for Optimal page replacement. Fix: Read the algorithm name twice before applying.
+**Category 4 → Wrong technique (15%):** Using LRU when they asked for Optimal page replacement. Fix: Read the algorithm name twice before applying.
 
-**Category 5 â€” Concept gaps (10%):** Completely blank on the topic. Fix: Re-study that section and create an Anki card.
+**Category 5 → Concept gaps (10%):** Completely blank on the topic. Fix: Re-study that section and create an Anki card.
 
 Analysis template (create one per mock test):
 
 ```
-Mock #16 â€” Wrong answers breakdown:
-Q3: Formula â€” used FCFS instead of SJF
-Q7: Calculation â€” Gantt chart error on P3 start time
-Q12: Misread â€” "except" meant which is NOT serializable
+Mock #16 → Wrong answers breakdown:
+Q3: Formula → used FCFS instead of SJF
+Q7: Calculation → Gantt chart error on P3 start time
+Q12: Misread → "except" meant which is NOT serializable
 Corrective action: Re-do Gantt chart practice on 10 scheduling problems.
 ```
 
@@ -2963,17 +2963,17 @@ Corrective action: Re-do Gantt chart practice on 10 scheduling problems.
 
 Process states (from the OS chapter `07-operating-systems.md`):
 
-**Room 1 â€” Kitchen (NEW):** The process is being created, just like preparing ingredients.
-**Transition NEWâ†’READY (Cook â†’ Counter):** Process is admitted and ready to cook.
-**Room 2 â€” Counter (READY):** All ingredients prepped, waiting for the cook (CPU).
-**Transition READYâ†’RUNNING (Counter â†’ Stove):** The scheduler picks the next item to cook.
-**Room 3 â€” Stove (RUNNING):** The process is executing â€” food is cooking.
-**Transition RUNNINGâ†’WAITING (Stove â†’ Fridge):** Process needs I/O (needs more ingredients).
-**Room 4 â€” Fridge (WAITING/BLOCKED):** Waiting for I/O completion (ingredient retrieval).
-**Transition RUNNINGâ†’READY (Stove â†’ Counter):** Timer interrupt â€” time slice expired.
-**Room 5 â€” Dining Table (TERMINATED):** Process finished, result is served.
+**Room 1 → Kitchen (NEW):** The process is being created, just like preparing ingredients.
+**Transition NEW→READY (Cook → Counter):** Process is admitted and ready to cook.
+**Room 2 → Counter (READY):** All ingredients prepped, waiting for the cook (CPU).
+**Transition READY→RUNNING (Counter → Stove):** The scheduler picks the next item to cook.
+**Room 3 → Stove (RUNNING):** The process is executing → food is cooking.
+**Transition RUNNING→WAITING (Stove → Fridge):** Process needs I/O (needs more ingredients).
+**Room 4 → Fridge (WAITING/BLOCKED):** Waiting for I/O completion (ingredient retrieval).
+**Transition RUNNING→READY (Stove → Counter):** Timer interrupt → time slice expired.
+**Room 5 → Dining Table (TERMINATED):** Process finished, result is served.
 
-The transitions: NEWâ†’READY (admit), READYâ†’RUNNING (dispatch), RUNNINGâ†’READY (timeout), RUNNINGâ†’WAITING (block), WAITINGâ†’READY (wake), RUNNINGâ†’TERMINATED (exit).
+The transitions: NEW→READY (admit), READY→RUNNING (dispatch), RUNNING→READY (timeout), RUNNING→WAITING (block), WAITING→READY (wake), RUNNING→TERMINATED (exit).
 
 Walk through your house mentally. Each room triggers state recall. This turns an abstract state machine into a spatial memory.
 
@@ -2982,21 +2982,21 @@ Walk through your house mentally. Each room triggers state recall. This turns an
 **Answer:** Divide your day: morning for GATE theory (recall-heavy), evening for placement coding (problem-solving heavy).
 
 **Morning session (3 hours, theory):**
-- 08:00-09:00 â€” Read one GATE chapter section (OS scheduling, DBMS normalization)
-- 09:00-10:00 â€” Solve 10 PYQs from that chapter with timer
-- 10:00-11:00 â€” Review wrong answers, update formula cheat sheet, create Anki cards
+- 08:00-09:00 → Read one GATE chapter section (OS scheduling, DBMS normalization)
+- 09:00-10:00 → Solve 10 PYQs from that chapter with timer
+- 10:00-11:00 → Review wrong answers, update formula cheat sheet, create Anki cards
 
 **Evening session (3 hours, coding):**
-- 17:00-18:00 â€” Solve 2-3 DSA problems from `02-dsa-problem-bank.md` (alternate arrays, trees, DP)
-- 18:00-19:00 â€” System design reading + architecture drawing (from `system-design/index.md`)
-- 19:00-20:00 â€” Company-specific prep from `04-company-specific.md` (Google CRACK on Monday, Amazon LPs on Tuesday)
+- 17:00-18:00 → Solve 2-3 DSA problems from `02-dsa-problem-bank.md` (alternate arrays, trees, DP)
+- 18:00-19:00 → System design reading + architecture drawing (from `system-design/index.md`)
+- 19:00-20:00 → Company-specific prep from `04-company-specific.md` (Google CRACK on Monday, Amazon LPs on Tuesday)
 
 **Synergies:**
-- OS concurrency (semaphores) â†’ DSA concurrency (Q116-Q125, Producer-Consumer)
-- DBMS normalization â†’ SQL problem bank Q1-Q50 (writing normalized queries)
-- CN TCP/IP â†’ system design chapters (load balancers, CDN)
+- OS concurrency (semaphores) → DSA concurrency (Q116-Q125, Producer-Consumer)
+- DBMS normalization → SQL problem bank Q1-Q50 (writing normalized queries)
+- CN TCP/IP → system design chapters (load balancers, CDN)
 
-Overlap between the tracks reduces total study time. The same concept in OS (process scheduling) appears in system design (load balancing) â€” learn it once, apply in both.
+Overlap between the tracks reduces total study time. The same concept in OS (process scheduling) appears in system design (load balancing) → learn it once, apply in both.
 
 ### Q108: How do I use the cheat sheets at the end of each GATE chapter?
 
@@ -3029,18 +3029,18 @@ By exam week, you should be able to mentally visualize every formula table. This
 Mock test analysis template:
 
 ```
-Mock #17 â€” Score: 52/100 â€” Target: 65+
+Mock #17 → Score: 52/100 → Target: 65+
 
 By Subject:
-  OS:  6/12 marks (50%) â€” Missed: page replacement numerical (wrong algorithm)
-  DBMS: 8/10 marks (80%) â€” Strong
-  CN:   6/14 marks (43%) â€” Weak: subnetting calculation (need CIDR practice)
-  COA:  4/8 marks  (50%) â€” Missed: pipeline hazard (read chapter section again)
-  DSA:  10/12 marks (83%) â€” Strong
-  TOC:  6/10 marks (60%) â€” Missed: PDA construction (review CFGâ†’PDA conversion)
-  CD:   4/8 marks  (50%) â€” Missed: LR parsing table (practice SLR parsing)
-  Math: 8/16 marks (50%) â€” Weak: probability (need Bayes theorem practice)
-  DL:   0/10 marks (0%) â€” Skipped entirely (consider dropping)
+  OS:  6/12 marks (50%) → Missed: page replacement numerical (wrong algorithm)
+  DBMS: 8/10 marks (80%) → Strong
+  CN:   6/14 marks (43%) → Weak: subnetting calculation (need CIDR practice)
+  COA:  4/8 marks  (50%) → Missed: pipeline hazard (read chapter section again)
+  DSA:  10/12 marks (83%) → Strong
+  TOC:  6/10 marks (60%) → Missed: PDA construction (review CFG→PDA conversion)
+  CD:   4/8 marks  (50%) → Missed: LR parsing table (practice SLR parsing)
+  Math: 8/16 marks (50%) → Weak: probability (need Bayes theorem practice)
+  DL:   0/10 marks (0%) → Skipped entirely (consider dropping)
 
 Action Items:
   1. Practice CIDR subnetting with 10 problems from CN chapter N20-N30.
@@ -3055,66 +3055,66 @@ This analysis reveals which sections to re-study and which to skip. Don't waste 
 
 **Answer:** A phased 30-day plan using all GATE chapters + 8 mock tests.
 
-**Days 1-10 â€” Foundation consolidation:**
-- Day 1-2: OS â€” solve G1-G20, cheat sheet memorized
-- Day 3-4: DBMS â€” solve D1-D25, normalization + B+ tree
-- Day 5-6: CN â€” solve N1-N25, subnetting + TCP congestion
-- Day 7-8: COA â€” solve C1-C25, cache + pipeline
-- Day 9-10: DSA â€” solve A1-A25, recurrence + tree/graph
+**Days 1-10 → Foundation consolidation:**
+- Day 1-2: OS → solve G1-G20, cheat sheet memorized
+- Day 3-4: DBMS → solve D1-D25, normalization + B+ tree
+- Day 5-6: CN → solve N1-N25, subnetting + TCP congestion
+- Day 7-8: COA → solve C1-C25, cache + pipeline
+- Day 9-10: DSA → solve A1-A25, recurrence + tree/graph
 
-**Days 11-20 â€” PYQ mastery:**
+**Days 11-20 → PYQ mastery:**
 - Days 11-14: Complete remaining PYQs from all chapters (G21-G70, D26-D75, etc.)
 - Days 15-16: Mock #15-16 (simulated conditions, 3 hours each)
 - Days 17-18: Analyze mocks, patch weak areas
 - Days 19-20: Mock #17-18, same analysis cycle
 
-**Days 21-30 â€” Speed + revision:**
+**Days 21-30 → Speed + revision:**
 - Days 21-25: Mock #19-22 (alternate days), review every night
 - Days 26-27: Cheat sheet-only revision (8 chapters Ã— 30 min each)
 - Days 28-29: Re-solve all previously wrong PYQs
-- Day 30: Rest + mental rehearsal â€” visualize exam day
+- Day 30: Rest + mental rehearsal → visualize exam day
 
 During this phase, use the company-specific chapter (`04-company-specific.md`) only for placement-track candidates. For pure GATE, focus exclusively on the GATE chapters.
 
 ---
 
-## Part 7: Domain-Specific â€” Learning New Frameworks (Q111-Q120)
+## Part 7: Domain-Specific → Learning New Frameworks (Q111-Q120)
 
 ### Q111: What is the universal framework learning blueprint?
 
-**Answer:** Five phases: Docs â†’ Tutorial â†’ Build â†’ Refactor â†’ Teach.
+**Answer:** Five phases: Docs → Tutorial → Build → Refactor → Teach.
 
-**Phase 1 â€” Docs (2-3 days):** Read the official documentation's "Getting Started" and "Core Concepts" sections. Not the whole docs â€” just what you need to understand the mental model. From the Java course index (`java/index.md`), each chapter has Learning Objectives at the top â€” use those as a filter.
+**Phase 1 → Docs (2-3 days):** Read the official documentation's "Getting Started" and "Core Concepts" sections. Not the whole docs → just what you need to understand the mental model. From the Java course index (`java/index.md`), each chapter has Learning Objectives at the top → use those as a filter.
 
-**Phase 2 â€” Tutorial (3-5 days):** Follow one complete tutorial end-to-end. Don't modify yet â€” just understand the flow. The Spring chapter (`57-interview-spring.md`) includes compilable examples that function as mini-tutorials for DI, MVC, data access.
+**Phase 2 → Tutorial (3-5 days):** Follow one complete tutorial end-to-end. Don't modify yet → just understand the flow. The Spring chapter (`57-interview-spring.md`) includes compilable examples that function as mini-tutorials for DI, MVC, data access.
 
-**Phase 3 â€” Build (1-2 weeks):** Build the Minimal Viable Project (next question). This is where learning accelerates because you encounter real problems.
+**Phase 3 → Build (1-2 weeks):** Build the Minimal Viable Project (next question). This is where learning accelerates because you encounter real problems.
 
-**Phase 4 â€” Refactor (1 week):** Go back and improve your MVP. Add error handling, tests, logging. The DevOps course (`devops/index.md`) shows how to add CI/CD at this stage.
+**Phase 4 → Refactor (1 week):** Go back and improve your MVP. Add error handling, tests, logging. The DevOps course (`devops/index.md`) shows how to add CI/CD at this stage.
 
-**Phase 5 â€” Teach (ongoing):** Write a short guide, give a brown-bag talk, or solve a real problem publicly. Teaching reveals gaps instantly.
+**Phase 5 → Teach (ongoing):** Write a short guide, give a brown-bag talk, or solve a real problem publicly. Teaching reveals gaps instantly.
 
 The 27 courses in this repo follow this blueprint: each starts with learning objectives (Docs), progresses through examples (Tutorial), and ends with exercises (Build).
 
 ### Q112: How do I learn Java from this repo?
 
-**Path:** `java/index.md` â†’ Chapters P1-P6 (foundations) â†’ Chapters 1-6 (core Java) â†’ Chapter 57 (Spring interview) â†’ Chapter 60 (microservices).
+**Path:** `java/index.md` → Chapters P1-P6 (foundations) → Chapters 1-6 (core Java) → Chapter 57 (Spring interview) → Chapter 60 (microservices).
 
 The Java course (`java/index.md`) is organized into 13 parts with 66 chapters:
 
-- **Part 0 (P1-P6):** Java foundations â€” syntax, OOP, collections, I/O, generics, lambdas
+- **Part 0 (P1-P6):** Java foundations → syntax, OOP, collections, I/O, generics, lambdas
 - **Part I (1-6):** JVM internals, concurrency, NIO, modules, functional deep, performance
-- **Part III (9-14):** Spring Boot â€” DI, auto-config, Actuator, logging
-- **Part IV (15-18):** Spring Web â€” REST APIs, validation, documentation, file handling
-- **Part XIII (56-66):** Interview prep â€” Java, Spring, REST, databases, microservices, security, testing, patterns, system design
+- **Part III (9-14):** Spring Boot → DI, auto-config, Actuator, logging
+- **Part IV (15-18):** Spring Web → REST APIs, validation, documentation, file handling
+- **Part XIII (56-66):** Interview prep → Java, Spring, REST, databases, microservices, security, testing, patterns, system design
 
 If you're new to Java:
-1. Start with Part 0 (P1-P6) â€” one chapter per day for 6 days. Each has exercises at the end.
-2. Move to Part I, Chapter 1 (JVM Architecture, `01-jvm-memory.md`) â€” understand how Java runs.
-3. For placement, jump to chapters 56-57 after foundations. The Spring chapter (`57-interview-spring.md`) is 8670 lines with 50 Q&As â€” it covers DI, beans, AOP, security, caching, Actuator, and everything you need.
+1. Start with Part 0 (P1-P6) → one chapter per day for 6 days. Each has exercises at the end.
+2. Move to Part I, Chapter 1 (JVM Architecture, `01-jvm-memory.md`) → understand how Java runs.
+3. For placement, jump to chapters 56-57 after foundations. The Spring chapter (`57-interview-spring.md`) is 8670 lines with 50 Q&As → it covers DI, beans, AOP, security, caching, Actuator, and everything you need.
 
 ```java
-// From Spring chapter Q1 â€” the first thing to learn:
+// From Spring chapter Q1 → the first thing to learn:
 @Service
 class UserService {
     private final UserRepository userRepository;
@@ -3126,17 +3126,17 @@ class UserService {
 
 ### Q113: How do I learn Python from this repo?
 
-**Path:** `python-programming/` â†’ `machine-learning/` â†’ `applied-ai/`.
+**Path:** `python-programming/` → `machine-learning/` → `applied-ai/`.
 
 The Python programming course covers fundamentals (variables, control flow, functions, OOP, data structures). After mastering those:
 
-1. Read the machine-learning course â€” builds on Python with NumPy, Pandas, scikit-learn.
-2. Move to applied-ai â€” practical ML applications, model deployment, MLOps basics.
+1. Read the machine-learning course → builds on Python with NumPy, Pandas, scikit-learn.
+2. Move to applied-ai → practical ML applications, model deployment, MLOps basics.
 
 For each Python topic, there's a parallel Java topic in the Java course. Map concepts to leverage existing knowledge:
 
 ```python
-# Python â€” list comprehension
+# Python → list comprehension
 squares = [x**2 for x in range(10)]
 
 # Java equivalent (Java 16+ Stream API)
@@ -3162,7 +3162,7 @@ def two_sum(nums, target):
 
 ### Q114: How do I learn DevOps from this repo?
 
-**Path:** `devops/` â†’ `cloud-computing/` â†’ apply to deploy this repo.
+**Path:** `devops/` → `cloud-computing/` → apply to deploy this repo.
 
 The DevOps course (`devops/index.md`) has 18 chapters covering the full lifecycle:
 
@@ -3176,10 +3176,10 @@ The DevOps course (`devops/index.md`) has 18 chapters covering the full lifecycl
 Learning workflow for each chapter:
 1. Read the learning objectives and theory.
 2. Run the examples locally (e.g., set up Docker for chapter 5, write a basic Dockerfile).
-3. Deploy something real â€” the simplest deploy for this repo is using GitHub Pages or Vercel.
+3. Deploy something real → the simplest deploy for this repo is using GitHub Pages or Vercel.
 
 ```dockerfile
-# From chapter 5 â€” basic Dockerfile for this repo (static site)
+# From chapter 5 → basic Dockerfile for this repo (static site)
 FROM nginx:alpine
 COPY . /usr/share/nginx/html
 EXPOSE 80
@@ -3192,9 +3192,9 @@ After Docker, learn Docker Compose (multi-container), then Kubernetes (chapter 6
 **Path:** The Laravel course (`laravel/index.md`) has 54 chapters across 10 parts.
 
 Learning sequence for a new framework:
-1. **Part 0 (P1-P6):** PHP, MySQL, HTML, CSS, JS, AI/ML foundations â€” skip if you know these.
-2. **Part I (1-6):** Laravel fundamentals â€” routing, Eloquent ORM, Blade, auth, queues
-3. **Build a CRUD app:** Users, Posts, Comments â€” the same three models for every framework.
+1. **Part 0 (P1-P6):** PHP, MySQL, HTML, CSS, JS, AI/ML foundations → skip if you know these.
+2. **Part I (1-6):** Laravel fundamentals → routing, Eloquent ORM, Blade, auth, queues
+3. **Build a CRUD app:** Users, Posts, Comments → the same three models for every framework.
 
 Example Laravel CRUD route from the course:
 
@@ -3217,20 +3217,20 @@ class PostController extends Controller {
 }
 ```
 
-After CRUD, add authentication (chapter 5 â€” Breeze/Jetstream), then API endpoints (chapter 7), then queues (chapter 6). Each builds on the previous.
+After CRUD, add authentication (chapter 5 → Breeze/Jetstream), then API endpoints (chapter 7), then queues (chapter 6). Each builds on the previous.
 
 ### Q116: Why shouldn't I learn two new frameworks at once?
 
-**Answer:** Learning a new framework rewires your mental model of how applications work. Two simultaneous models cause interference â€” you'll confuse Laravel's service container with Spring's DI container, or Eloquent's active record with JPA's entity manager.
+**Answer:** Learning a new framework rewires your mental model of how applications work. Two simultaneous models cause interference → you'll confuse Laravel's service container with Spring's DI container, or Eloquent's active record with JPA's entity manager.
 
 The 27 courses in this repo span Java, Python, PHP, JavaScript/TypeScript, and DevOps tools. If you're studying Java for placement and Laravel for a side project:
 
 **Wrong approach:** "I'll do Java in the morning and Laravel in the evening."
-- Morning: Spring DI â€” `@Autowired`, `@Bean`, `@Configuration`
-- Evening: Laravel service container â€” `$app->bind()`, `$app->make()`
-- Next morning: "Wait, does Laravel have `@Autowired`?" â€” mental interference.
+- Morning: Spring DI → `@Autowired`, `@Bean`, `@Configuration`
+- Evening: Laravel service container → `$app->bind()`, `$app->make()`
+- Next morning: "Wait, does Laravel have `@Autowired`?" → mental interference.
 
-**Right approach:** Phase them â€” master Java/Spring first (it's your interview target), then learn Laravel afterward. The transfer is actually faster once you deeply understand one framework: you recognize the patterns (DI, ORM, middleware, routing) in the new framework.
+**Right approach:** Phase them → master Java/Spring first (it's your interview target), then learn Laravel afterward. The transfer is actually faster once you deeply understand one framework: you recognize the patterns (DI, ORM, middleware, routing) in the new framework.
 
 Evidence: After mastering the Spring chapter (57), learning Laravel's service container takes 2 days instead of 2 weeks because you already understand IoC, DI, and service providers conceptually.
 
@@ -3275,7 +3275,7 @@ Route::resource('posts', PostController::class);
 // Equal in ~15 lines with php artisan make:model Post -mcr
 ```
 
-DevOps version (deploy it â€” from DevOps chapter 9):
+DevOps version (deploy it → from DevOps chapter 9):
 
 ```yaml
 # .github/workflows/deploy.yml
@@ -3293,7 +3293,7 @@ Build this one project in the new framework. Skip everything else until the CRUD
 
 ### Q118: How do I read documentation effectively vs tutorials?
 
-**Answer:** Documentation tells you what's possible. Tutorials tell you one path. You need both â€” but extract different things from each.
+**Answer:** Documentation tells you what's possible. Tutorials tell you one path. You need both → but extract different things from each.
 
 From the Spring chapter (`57-interview-spring.md`), the pattern for reading Spring docs:
 
@@ -3301,10 +3301,10 @@ From the Spring chapter (`57-interview-spring.md`), the pattern for reading Spri
 - Core mental model (e.g., Spring = container that manages beans with DI)
 - Key annotations and their lifecycle (`@Component`, `@Service`, `@Repository`, `@Bean`)
 - Configuration options (application.properties common keys)
-- The "why" â€” why does this framework exist? (Spring: to simplify enterprise Java)
+- The "why" → why does this framework exist? (Spring: to simplify enterprise Java)
 
 **What to extract from tutorials (90% focus):**
-- Complete working setup â€” pom.xml, application class, one controller, one service
+- Complete working setup → pom.xml, application class, one controller, one service
 - The exact import statements and class paths
 - Error messages and how to debug them
 - The deployment workflow
@@ -3323,7 +3323,7 @@ The doc tells you *why* (immutability, testability). The code tells you *how*. R
 
 ### Q119: How do I debug using StackOverflow and systematic methods?
 
-**Answer:** Reproduce â†’ Isolate â†’ Search â†’ Understand root cause. Never paste code without understanding it.
+**Answer:** Reproduce → Isolate → Search → Understand root cause. Never paste code without understanding it.
 
 From the repo's Java/Spring examples, a common error:
 
@@ -3343,7 +3343,7 @@ class UserService {
 Step-by-step debugging protocol:
 1. **Reproduce:** Run the code, confirm the NPE. Get the exact stack trace line number.
 2. **Isolate:** Is `userRepository` null? Add a breakpoint or `System.out.println(userRepository == null)`.
-3. **Search:** Google "NullPointerException @Autowired Spring" â†’ StackOverflow. Most common cause: the class isn't managed by Spring (missing `@Service`, or instantiated with `new` instead of injected).
+3. **Search:** Google "NullPointerException @Autowired Spring" → StackOverflow. Most common cause: the class isn't managed by Spring (missing `@Service`, or instantiated with `new` instead of injected).
 4. **Understand root cause:** Spring DI only works for beans in the Spring context. If you do `new UserService()`, no DI happens. Fix by injecting `UserService` into the class that uses it.
 
 General search pattern: `[framework] [error type] [operation]`. Examples:
@@ -3351,24 +3351,24 @@ General search pattern: `[framework] [error type] [operation]`. Examples:
 - "Laravel Eloquent N+1 query"
 - "Docker container exit code 137"
 
-Always look for the *accepted* answer with the most upvotes. Read the explanation, not just the code fix. Understanding the root cause prevents the same error â€” copying the fix only solves it once.
+Always look for the *accepted* answer with the most upvotes. Read the explanation, not just the code fix. Understanding the root cause prevents the same error → copying the fix only solves it once.
 
 ### Q120: How does "Building in Public" accelerate learning?
 
-**Answer:** Building in public means sharing your work as you learn â€” open-source contributions, blog posts, or solving problems from this repo publicly.
+**Answer:** Building in public means sharing your work as you learn → open-source contributions, blog posts, or solving problems from this repo publicly.
 
 The learning accelerator:
 - **Motivation:** Public commits create accountability. The GitHub contribution graph is visible to everyone.
-- **Networking:** People discover your work through PRs and issues. The company-specific chapter (`04-company-specific.md`) lists referral networks â€” open-source contributions are a path to referrals.
+- **Networking:** People discover your work through PRs and issues. The company-specific chapter (`04-company-specific.md`) lists referral networks → open-source contributions are a path to referrals.
 - **Deep understanding:** To explain something publicly, you need to understand it well. A StackOverflow answer or a PR comment forces clarity.
 
 How to contribute to this repo:
-1. Find a problem in the DSA bank (Q1-Q125) â€” attempt it yourself.
+1. Find a problem in the DSA bank (Q1-Q125) → attempt it yourself.
 2. If your solution is better (cleaner code, better complexity, additional edge cases), open a PR.
-3. The Spring chapter (`57-interview-spring.md`) has 50 Q&As â€” add one more with a new compilable example.
-4. The SQL bank (`03-sql-problem-bank.md`) has 75 problems â€” propose new queries.
+3. The Spring chapter (`57-interview-spring.md`) has 50 Q&As → add one more with a new compilable example.
+4. The SQL bank (`03-sql-problem-bank.md`) has 75 problems → propose new queries.
 
-Contributing workflow: fork â†’ clone â†’ branch â†’ commit â†’ PR. Even fixing a typo in documentation is valid public building. The compound effect: each contribution deepens understanding of that topic permanently.
+Contributing workflow: fork → clone → branch → commit → PR. Even fixing a typo in documentation is valid public building. The compound effect: each contribution deepens understanding of that topic permanently.
 
 ---
 
@@ -3376,32 +3376,32 @@ Contributing workflow: fork â†’ clone â†’ branch â†’ commit â†
 
 ### Q121: What is meta-learning and why does it matter?
 
-**Answer:** Meta-learning is learning about learning. You're already doing it by reading this chapter â€” instead of just cramming facts, you're studying how to structure the learning process itself.
+**Answer:** Meta-learning is learning about learning. You're already doing it by reading this chapter → instead of just cramming facts, you're studying how to structure the learning process itself.
 
 The 27 courses in this repo are organized using meta-learning principles:
 - Each course starts with Learning Objectives (priming your brain for what to expect)
-- Chapters build progressively (scaffolding â€” each new concept rests on previous ones)
+- Chapters build progressively (scaffolding → each new concept rests on previous ones)
 - Exercises progress from recall to application to creation (Bloom's Taxonomy)
 
 ```text
 Bloom's Taxonomy (applied to this repo):
-Create   â†’ Write new DSA solutions, add to the problem bank
-Evaluate â†’ Code review the Spring chapter examples, find improvements
-Analyze  â†’ Compare OS scheduling algorithms side by side
-Apply    â†’ Solve PYQs from GATE chapters
-Understand â†’ Read chapter explanations and trace code execution
-Remember â†’ Anki flashcards for formulas and patterns
+Create   → Write new DSA solutions, add to the problem bank
+Evaluate → Code review the Spring chapter examples, find improvements
+Analyze  → Compare OS scheduling algorithms side by side
+Apply    → Solve PYQs from GATE chapters
+Understand → Read chapter explanations and trace code execution
+Remember → Anki flashcards for formulas and patterns
 ```
 
-The most effective learners in this repo aren't necessarily the ones with the highest IQ â€” they're the ones who deliberately manage their learning process: spacing reviews, testing recall, interleaving topics, and teaching others. Meta-learning compounds. Each chapter you study makes you better at studying the next one.
+The most effective learners in this repo aren't necessarily the ones with the highest IQ → they're the ones who deliberately manage their learning process: spacing reviews, testing recall, interleaving topics, and teaching others. Meta-learning compounds. Each chapter you study makes you better at studying the next one.
 
 ### Q122: What are Josh Waitzkin's 3 stages of learning?
 
 **Answer:** Josh Waitzkin (chess prodigy, martial arts champion) describes three stages: Investment, Integration, Innovation.
 
-**Stage 1 â€” Investment (choosing a domain):** You commit to a field and build the fundamentals. In this repo, this is choosing your track (placement preparation, GATE, or both) and investing the initial time to learn Java, Python, or another language. The 27 courses represent investment domains â€” pick one and go deep.
+**Stage 1 → Investment (choosing a domain):** You commit to a field and build the fundamentals. In this repo, this is choosing your track (placement preparation, GATE, or both) and investing the initial time to learn Java, Python, or another language. The 27 courses represent investment domains → pick one and go deep.
 
-**Stage 2 â€” Integration (deep practice):** You internalize the fundamentals until they become second nature. This is solving Q1-Q125 from the DSA bank repeatedly. The first time you solve Q1 (Two Sum), it's conscious effort. After 20 variations of the hashmap pattern, it's automatic.
+**Stage 2 → Integration (deep practice):** You internalize the fundamentals until they become second nature. This is solving Q1-Q125 from the DSA bank repeatedly. The first time you solve Q1 (Two Sum), it's conscious effort. After 20 variations of the hashmap pattern, it's automatic.
 
 ```java
 // First time: struggle with HashMap API
@@ -3417,9 +3417,9 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 
-**Stage 3 â€” Innovation (creating):** Once fundamentals are automatic, you can be creative. This is contributing new solutions to the DSA bank, designing system architectures from scratch, or writing new Q&As for the Spring chapter.
+**Stage 3 → Innovation (creating):** Once fundamentals are automatic, you can be creative. This is contributing new solutions to the DSA bank, designing system architectures from scratch, or writing new Q&As for the Spring chapter.
 
-Each of the 27 courses follows this arc. The Interview chapters (56-66 in the Java course) are Stage 3 â€” they synthesize everything into interview-ready responses.
+Each of the 27 courses follows this arc. The Interview chapters (56-66 in the Java course) are Stage 3 → they synthesize everything into interview-ready responses.
 
 ### Q123: What is the 80/20 rule for CS interview preparation?
 
@@ -3434,9 +3434,9 @@ Each of the 27 courses follows this arc. The Interview chapters (56-66 in the Ja
 The DSA bank confirms this: of 125 problems, arrays (Q1-Q19), trees (Q29-Q38), and DP (Q39-Q57) account for 48% of the content. Focusing on these three categories first gives the most interview coverage per hour studied.
 
 For system design (from `system-design/index.md`), the 20% high-RC topics are:
-1. Caching (chapter 3) â€” 80% of designs need a cache layer
-2. Database scaling (chapter 5) â€” sharding, replication
-3. Load balancing (chapter 2) â€” horizontal scaling fundamentals
+1. Caching (chapter 3) → 80% of designs need a cache layer
+2. Database scaling (chapter 5) → sharding, replication
+3. Load balancing (chapter 2) → horizontal scaling fundamentals
 
 Identify your personal 20%: which 5 of the 27 courses matter most for your target role? For Java backend interviews: Java course (chapters P1-66), DSA bank (125 problems), Spring chapter (57), system design (22 chapters), company-specific (FAANG strategies).
 
@@ -3473,19 +3473,19 @@ ROOT: Programming Fundamentals
     â””â”€â”€ Case studies: WhatsApp, Netflix, Uber (18-20)
 ```
 
-Each node represents a measurable skill. Complete a node when you can solve related problems from the repo without help. A tree like this prevents the "I know a little of everything" trap â€” you can see exactly which prerequisites are missing.
+Each node represents a measurable skill. Complete a node when you can solve related problems from the repo without help. A tree like this prevents the "I know a little of everything" trap → you can see exactly which prerequisites are missing.
 
 ### Q125: Where do I fall on the Dunning-Kruger curve for each skill?
 
 **Answer:** The Dunning-Kruger effect means beginners overestimate their ability, and experts underestimate it. Self-assess honestly across the 27 courses.
 
-**Phase 1 â€” "Mount Stupid" (Week 1):** After reading the DSA bank table of contents, you think you know algorithms. Reality: you haven't solved a single problem.
+**Phase 1 → "Mount Stupid" (Week 1):** After reading the DSA bank table of contents, you think you know algorithms. Reality: you haven't solved a single problem.
 
-**Phase 2 â€” "Valley of Despair" (Week 2-3):** You attempt Q10 (Search in Rotated Array) and can't solve it. This is good â€” it means you now understand the gap. Most people stop here. Don't.
+**Phase 2 → "Valley of Despair" (Week 2-3):** You attempt Q10 (Search in Rotated Array) and can't solve it. This is good → it means you now understand the gap. Most people stop here. Don't.
 
-**Phase 3 â€” "Slope of Enlightenment" (Weeks 4-8):** After solving Q1-Q50, patterns start emerging. You solve Q5 (Find Minimum in Rotated Sorted Array) in 15 minutes because it's just binary search with a twist.
+**Phase 3 → "Slope of Enlightenment" (Weeks 4-8):** After solving Q1-Q50, patterns start emerging. You solve Q5 (Find Minimum in Rotated Sorted Array) in 15 minutes because it's just binary search with a twist.
 
-**Phase 4 â€” "Plateau of Mastery" (Month 3+):** You look at the DSA bank and can categorize every problem by pattern before reading the solution.
+**Phase 4 → "Plateau of Mastery" (Month 3+):** You look at the DSA bank and can categorize every problem by pattern before reading the solution.
 
 Self-assessment exercise:
 
@@ -3496,23 +3496,23 @@ Self-assessment exercise:
 | Spring | Mount Stupid | Valley of Despair | Start chapter 57 this week |
 | System Design | Valley of Despair | Slope of Enlightenment | Draw 3 architecture diagrams |
 
-Update this table every month. The Dunning-Kruger curve is a map, not a judgment â€” knowing where you are tells you what to do next.
+Update this table every month. The Dunning-Kruger curve is a map, not a judgment → knowing where you are tells you what to do next.
 
 ### Q126: How do I handle imposter syndrome when learning new tech?
 
-**Answer:** Your existing experience doesn't disappear when you learn something new. Your 2 years of Java experience is real skill â€” learning Python doesn't erase it.
+**Answer:** Your existing experience doesn't disappear when you learn something new. Your 2 years of Java experience is real skill → learning Python doesn't erase it.
 
 From the Java course (`java/index.md`), a senior Java developer learning Laravel for the first time might feel like a beginner again. But the transferable skills are enormous:
 
 **Transfer from Java/Spring to Laravel:**
-- DI pattern: `@Autowired` â†’ `$app->make()`. Same concept, different syntax.
-- ORM: JPA/Hibernate â†’ Eloquent. Both map objects to relational tables.
-- MVC: Spring MVC controllers â†’ Laravel controllers. Same request â†’ controller â†’ response flow.
-- Middleware: Spring Filter/Interceptor â†’ Laravel Middleware. Same request pipeline concept.
-- REST: Spring `@RestController` â†’ Laravel route with controller. Same HTTP methods.
+- DI pattern: `@Autowired` → `$app->make()`. Same concept, different syntax.
+- ORM: JPA/Hibernate → Eloquent. Both map objects to relational tables.
+- MVC: Spring MVC controllers → Laravel controllers. Same request → controller → response flow.
+- Middleware: Spring Filter/Interceptor → Laravel Middleware. Same request pipeline concept.
+- REST: Spring `@RestController` → Laravel route with controller. Same HTTP methods.
 
 ```java
-// Spring â€” you already know this
+// Spring → you already know this
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -3522,7 +3522,7 @@ public class UserController {
 ```
 
 ```php
-// Laravel â€” new syntax, same concept
+// Laravel → new syntax, same concept
 Route::get('/users', [UserController::class, 'index']);
 // UserController has the same structure
 ```
@@ -3547,65 +3547,65 @@ You're not starting from zero. You're starting from a different platform with tr
 | Python | Machine Learning | Python is the primary ML language |
 | SQL | MongoDB/NoSQL | Query concepts transfer |
 
-**Example chain:** Study `java/index.md` Part 0 â†’ Spring in `57-interview-spring.md` is 40% faster because DI, beans, and annotations build directly on Java OOP. Study Spring â†’ microservices in chapter 60 is 30% faster because Spring Boot auto-configuration, Actuator, and embedded containers are already familiar.
+**Example chain:** Study `java/index.md` Part 0 → Spring in `57-interview-spring.md` is 40% faster because DI, beans, and annotations build directly on Java OOP. Study Spring → microservices in chapter 60 is 30% faster because Spring Boot auto-configuration, Actuator, and embedded containers are already familiar.
 
-The total time to study all 27 courses is not the sum of individual times â€” it's closer to 60% of the sum because of compounding. The first course is the hardest (no transfer), the tenth is significantly easier (nine courses of transfer).
+The total time to study all 27 courses is not the sum of individual times → it's closer to 60% of the sum because of compounding. The first course is the hardest (no transfer), the tenth is significantly easier (nine courses of transfer).
 
 ### Q128: How do I build a Second Brain across 27 courses?
 
 **Answer:** A Second Brain is an external knowledge system. The 27 courses are your input; your notes are your output. The system needs four components:
 
-**1. Capture â€” Progressive Summarization (from the GATE chapters):**
+**1. Capture → Progressive Summarization (from the GATE chapters):**
 - Layer 1: One-line summary per chapter section (e.g., "OS CPU Scheduling: FCFS, SJF, RR, Priority")
 - Layer 2: Bold the key formulas (e.g., **TAT = CT - AT**)
 - Layer 3: Highlight the most important takeaway (e.g., "Draw Gantt chart first, compute formulas second")
 - Layer 4: Remix into cheat sheets (see Q97)
 
-**2. Connect â€” Interlinking (from Q98):**
-Link concepts across chapters: "Page replacement (OS chapter) â† â†’ Cache mapping (COA chapter) â†’ Effective access time formula"
+**2. Connect → Interlinking (from Q98):**
+Link concepts across chapters: "Page replacement (OS chapter) â† → Cache mapping (COA chapter) → Effective access time formula"
 
-**3. Create â€” Atomic notes:**
+**3. Create → Atomic notes:**
 Each course section becomes one note with a clear title:
 - `OS/CPU-Scheduling/Gantt-Charts.md`
 - `DBMS/Normalization/3NF-Decomposition.md`
 - `CN/Subnetting/CIDR-Calculation.md`
 
-**4. Review â€” Spaced repetition:**
+**4. Review → Spaced repetition:**
 Create Anki cards from each note. The DSA bank pattern cards (Q83) follow this model. Schedule reviews using SM-2 algorithm (1 day, 3 days, 7 days, 21 days, 90 days).
 
 For this repo, the simplest Second Brain is a folder structure mirroring the courses with markdown summaries of each chapter, links between related concepts, and Anki export for spaced repetition.
 
 ### Q129: What is your post-interview roadmap?
 
-**Answer:** After interviews, the learning continues. The roadmap builds toward mastery: Java mastery â†’ Spring depth â†’ microservices â†’ system design deep dive.
+**Answer:** After interviews, the learning continues. The roadmap builds toward mastery: Java mastery → Spring depth → microservices → system design deep dive.
 
-**Months 1-3 â€” Java Mastery:**
+**Months 1-3 → Java Mastery:**
 - Complete all 66 chapters of the Java course (`java/index.md`)
 - Focus on chapters 1-6 (JVM, concurrency, NIO, performance), not just interview prep
 - Write a production-grade Java app using virtual threads (chapter 2), NIO (chapter 3), and proper profiling (chapter 6)
 
-**Months 4-6 â€” Spring Ecosystem:**
-- Chapter 57 (Spring interview) already covered â€” now build real apps
+**Months 4-6 → Spring Ecosystem:**
+- Chapter 57 (Spring interview) already covered → now build real apps
 - Implement a complete authentication flow using Spring Security + JWT (chapters 25-28)
 - Add message queues with RabbitMQ/Kafka (chapters 34-37)
 - Implement proper testing with Testcontainers (chapter 32)
 
-**Months 7-9 â€” Microservices & Cloud:**
+**Months 7-9 → Microservices & Cloud:**
 - Spring Cloud chapters 38-43 (service discovery, gateway, resilience, tracing)
 - Reactive programming with WebFlux (chapters 44-46)
 - Docker + Kubernetes from the DevOps course (chapters 5-6)
 - Deploy a microservices app to the cloud
 
-**Months 10-12 â€” System Design Deep Dive:**
+**Months 10-12 → System Design Deep Dive:**
 - All 22 system design chapters
 - Complete the capstone (chapter 18 of DevOps + system design case studies 18-22)
 - Write new case studies based on your experience
 
 The 27 courses are not just for interviews. They form a complete CS education path. The interview is a milestone, not the destination.
 
-### Q130: What is the final stage â€” teaching others?
+### Q130: What is the final stage → teaching others?
 
-**Answer:** Teaching is the ultimate learning accelerator. The final stage is contributing back to this repo â€” writing examples, solving problems, opening PRs, and helping others learn.
+**Answer:** Teaching is the ultimate learning accelerator. The final stage is contributing back to this repo → writing examples, solving problems, opening PRs, and helping others learn.
 
 **How to teach from this repo:**
 1. **Solve a problem publicly:** Take Q24 (or any problem) from the DSA bank, solve it, and explain your approach in a blog post or PR comment.
@@ -3619,10 +3619,10 @@ The 27 courses are not just for interviews. They form a complete CS education pa
 // Problem: Design a Task Scheduler with priority, dependencies, and concurrency
 // Companies: Google Â· Amazon Â· Microsoft
 public class TaskScheduler {
-    // Your contribution here â€” complete with main() and complexity analysis
+    // Your contribution here → complete with main() and complexity analysis
 }
 ```
 
-Teaching forces clarity. To explain why an algorithm works, you must understand it at the fundamental level. Every PR you submit is reviewed by someone, and every review teaches you something. This repo is yours to contribute to â€” it grows smarter with every contribution.
+Teaching forces clarity. To explain why an algorithm works, you must understand it at the fundamental level. Every PR you submit is reviewed by someone, and every review teaches you something. This repo is yours to contribute to → it grows smarter with every contribution.
 
 The Feynman Technique applies here better than anywhere: "If you can't explain it simply, you don't understand it well enough." Teaching through this repo is the final verification that you've mastered the material.

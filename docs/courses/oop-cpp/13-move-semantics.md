@@ -11,7 +11,7 @@ After studying this chapter, students will be able to:
 - Explain what std::move actually does (cast, not move) and use it correctly
 - Apply std::forward and perfect forwarding in template code
 - Understand forwarding references (T&& in deduced context) vs rvalue references (T&& in concrete context)
-- Apply reference collapsing rules (T& & â†’ T&, T&& && â†’ T&&, etc.)
+- Apply reference collapsing rules (T& & → T&, T&& && → T&&, etc.)
 - Implement the Rule of Five for classes that manage resources
 - Explain why noexcept enables move optimizations in std::vector reallocation
 - Analyze move-vs-copy performance with complexity guarantees
@@ -31,14 +31,14 @@ Before studying this chapter, students should be familiar with:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | **Value Categories** | lvalue = has identity; prvalue = no identity, pure temporary; xvalue = has identity but expiring | Knowing the category tells you whether a move is legal |
-| **Rvalue References (&&)** | Type&& binds only to rvalues (prvalues and xvalues) | Foundation of move semantics â€” enables resource pilfering |
+| **Rvalue References (&&)** | Type&& binds only to rvalues (prvalues and xvalues) | Foundation of move semantics → enables resource pilfering |
 | **Move Constructor** | Pilfers resources from an expiring source object | Source left in valid-but-unspecified state (typically empty/null) |
 | **Move Assignment** | Releases current resources, then pilfers from source | Must handle self-assignment and exception safety |
 | **noexcept** | noexcept enables move-based reallocation in std::vector | Always mark move ops as noexcept or vector will copy instead |
-| **std::move** | Unconditional cast to rvalue reference | Does NOT move anything â€” it just enables the move |
-| **std::forward** | Conditional cast â€” rvalue only if original was rvalue | Preserves value category through template forwarding |
+| **std::move** | Unconditional cast to rvalue reference | Does NOT move anything → it just enables the move |
+| **std::forward** | Conditional cast → rvalue only if original was rvalue | Preserves value category through template forwarding |
 | **Forwarding Reference** | T&& in deduced context; binds to both lvalues and rvalues | Must use std::forward, not std::move |
-| **Reference Collapsing** | T& & â†’ T&, T&& && â†’ T&&, T& && â†’ T& | Explains why T&& works for both categories in templates |
+| **Reference Collapsing** | T& & → T&, T&& && → T&&, T& && → T& | Explains why T&& works for both categories in templates |
 | **Rule of Five** | Add move ctor + move assign to Rule of Three | If you manage resources, implement all five or =delete |
 
 ## Chapter Roadmap
@@ -69,7 +69,7 @@ Before diving into C++ syntax, consider this real-world analogy for move semanti
 
 **An rvalue is like a newspaper in the recycling bin.** It has no permanent home. Once someone picks it up, it will be destroyed.
 
-**Copying** means photocopying every page of a book â€” expensive in time and memory.
+**Copying** means photocopying every page of a book → expensive in time and memory.
 
 **Moving** means transferring ownership. If you know a book is about to be thrown away, instead of photocopying it, you just take the pages. The original becomes empty (valid but unspecified).
 
@@ -82,7 +82,7 @@ MOVE:    [Book A: 500 pages] --steal pages--> [Book B: 500 pages]
          Cost: O(1) pointer swap, zero allocation
 ```
 
-**std::move** is like putting a "FREE" sticker on a library book â€” it doesn't move the book, it just declares that the book is available for taking.
+**std::move** is like putting a "FREE" sticker on a library book → it doesn't move the book, it just declares that the book is available for taking.
 
 **std::forward** is like an automated sorting machine: if a package arrives as priority, it stays priority; if it arrives as standard, it stays standard. The machine preserves the original shipping category.
 
@@ -113,8 +113,8 @@ Every expression in C++ belongs to exactly one of five value categories:
 | **lvalue** | locator value | Yes | No | An expression that has an identity (addressable). Represents a named object, function, or dereferenced pointer. |
 | **prvalue** | pure rvalue | No | Yes | An expression that has no identity. Used to initialize objects. Temporaries and literals. |
 | **xvalue** | expiring value | Yes | Yes | An expression that has an identity but whose resources can be reused because it is about to expire. |
-| **glvalue** | generalized lvalue | Yes | â€” | Union of lvalue and xvalue. Any expression that has identity. |
-| **rvalue** | â€” | No | Yes | Union of prvalue and xvalue. Any expression whose resources can be reused. |
+| **glvalue** | generalized lvalue | Yes | → | Union of lvalue and xvalue. Any expression that has identity. |
+| **rvalue** | → | No | Yes | Union of prvalue and xvalue. Any expression whose resources can be reused. |
 
 ### 13.1.4 Examples of Each Category
 
@@ -174,9 +174,9 @@ void foo(int&& x) { std::cout << "rvalue\n"; }
 
 int main() {
     int a = 10;
-    foo(a);              // lvalue â†’ calls foo(int&)
-    foo(20);             // prvalue â†’ calls foo(int&&)
-    foo(std::move(a));   // xvalue â†’ calls foo(int&&)
+    foo(a);              // lvalue → calls foo(int&)
+    foo(20);             // prvalue → calls foo(int&&)
+    foo(std::move(a));   // xvalue → calls foo(int&&)
 
     // const matters:
     const int b = 30;
@@ -221,9 +221,9 @@ std::string make_string() { return "temporary"; }
 
 int main() {
     std::string s = "hello";   // "hello" is lvalue (string literal)
-    std::string t = s;         // s is lvalue â†’ copy construction
-    std::string u = make_string(); // make_string() is prvalue â†’ move construction
-    std::string v = std::move(s); // std::move(s) is xvalue â†’ move construction
+    std::string t = s;         // s is lvalue → copy construction
+    std::string u = make_string(); // make_string() is prvalue → move construction
+    std::string v = std::move(s); // std::move(s) is xvalue → move construction
 }
 ```
 
@@ -256,7 +256,7 @@ Once an rvalue reference has a name, it is an lvalue inside its scope. This prev
 
 ```cpp
 void process(int&& x) {
-    // x is a named rvalue reference â†’ x is an lvalue here
+    // x is a named rvalue reference → x is an lvalue here
     consume(x);              // calls lvalue version! (x is not moved)
     consume(std::move(x));   // calls rvalue version (explicit cast)
 }
@@ -287,7 +287,7 @@ int main() {
 
 ### 13.2.4 Lifetime Extension
 
-Binding a temporary to an rvalue reference extends its lifetime to match the reference's scope â€” similar to const lvalue references but with move semantics available.
+Binding a temporary to an rvalue reference extends its lifetime to match the reference's scope → similar to const lvalue references but with move semantics available.
 
 ```cpp
 #include <iostream>
@@ -300,7 +300,7 @@ std::string make() {
 int main() {
     // Temporary string's lifetime extended
     std::string&& ref = make();
-    std::cout << ref.size() << '\n';  // 1000 â€” still alive
+    std::cout << ref.size() << '\n';  // 1000 → still alive
     // ref goes out of scope; temporary destroyed here
 }
 ```
@@ -311,7 +311,7 @@ int main() {
 |----------|------------------|------------------------------|-------------------|
 | lvalue int | âœ“ (exact) | âœ“ (conversion) | âœ— |
 | const lvalue | âœ— | âœ“ | âœ— |
-| rvalue int | âœ— | âœ“ (conversion â€” binds!) | âœ“ (exact â€” preferred) |
+| rvalue int | âœ— | âœ“ (conversion → binds!) | âœ“ (exact → preferred) |
 
 The compiler prefers int&& for rvalues over const int&, enabling move semantics.
 
@@ -455,7 +455,7 @@ struct Container {
     std::string name;
     std::vector<int> data;
     // Compiler generates: Container(Container&&) = default;
-    // Calls std::move on string and vector â€” both have real move ctors
+    // Calls std::move on string and vector → both have real move ctors
 };
 ```
 
@@ -492,7 +492,7 @@ public:
     Manager(Manager&& other) noexcept
         : name_(std::move(other.name_))
         , buffer_(std::move(other.buffer_))
-        , id_(other.id_)  // int â€” trivial move (just copy)
+        , id_(other.id_)  // int → trivial move (just copy)
     {
         other.id_ = -1;  // mark source as invalid
     }
@@ -571,16 +571,16 @@ buf2 = std::move(buf1);
 
 | Step | Code | buf1 state | buf2 state |
 |------|------|------------|------------|
-| Start | â€” | data_=0x1000, size=1000 | data_=0x2000, size=500 |
-| 1 | `if (this != &other)` â†’ true (0x2000 != 0x1000) | â€” | â€” |
-| 2 | `delete[] data_` (releases buf2's old buffer at 0x2000) | â€” | data_=0x2000 (freed!) |
-| 3 | `data_ = other.data_` | â€” | data_=0x1000 |
+| Start | → | data_=0x1000, size=1000 | data_=0x2000, size=500 |
+| 1 | `if (this != &other)` → true (0x2000 != 0x1000) | → | → |
+| 2 | `delete[] data_` (releases buf2's old buffer at 0x2000) | → | data_=0x2000 (freed!) |
+| 3 | `data_ = other.data_` | → | data_=0x1000 |
 | 4 | `size_ = other.size_` | size_=1000 | size_=1000 |
-| 5 | `other.data_ = nullptr` | data_=nullptr | â€” |
-| 6 | `other.size_ = 0` | size_=0 | â€” |
-| End | â€” | data_=nullptr, size=0 | data_=0x1000, size=1000 |
+| 5 | `other.data_ = nullptr` | data_=nullptr | → |
+| 6 | `other.size_ = 0` | size_=0 | → |
+| End | → | data_=nullptr, size=0 | data_=0x1000, size=1000 |
 
-**Complexity:** O(1) â€” constant time regardless of buffer size.
+**Complexity:** O(1) → constant time regardless of buffer size.
 
 ---
 
@@ -594,7 +594,7 @@ The `noexcept` specifier on move operations tells both the compiler and the stan
 
 When `std::vector` grows beyond its capacity, it must:
 
-1. Allocate new memory (may throw std::bad_alloc â€” unavoidable)
+1. Allocate new memory (may throw std::bad_alloc → unavoidable)
 2. **Move or copy** existing elements to new memory
 3. Destroy old elements
 4. Deallocate old memory
@@ -610,12 +610,12 @@ v.push_back(MyClass{}); // capacity exceeded! Must reallocate
 ```
 
 **If move constructor is noexcept:**
-- Vector moves elements â†’ fast O(1) pointer swaps
-- If a move throws mid-reallocation, the source elements are already modified â†’ data loss!
+- Vector moves elements → fast O(1) pointer swaps
+- If a move throws mid-reallocation, the source elements are already modified → data loss!
 
 **If move constructor is NOT noexcept:**
-- Vector copies elements instead â†’ slow O(n) deep copies
-- If copy throws, old memory is intact â†’ strong exception guarantee preserved
+- Vector copies elements instead → slow O(n) deep copies
+- If copy throws, old memory is intact → strong exception guarantee preserved
 
 ### 13.5.3 std::move_if_noexcept
 
@@ -677,13 +677,13 @@ int main() {
     tv.reserve(1);
     tv.emplace_back();
     std::cout << "ThrowMove reallocation:\n";
-    tv.emplace_back();  // reallocation â†’ copies! (move not noexcept)
+    tv.emplace_back();  // reallocation → copies! (move not noexcept)
 
     std::vector<SafeMove> sv;
     sv.reserve(1);
     sv.emplace_back();
     std::cout << "SafeMove reallocation:\n";
-    sv.emplace_back();  // reallocation â†’ moves (noexcept)
+    sv.emplace_back();  // reallocation → moves (noexcept)
 }
 ```
 
@@ -707,7 +707,7 @@ Exceptionally, do not mark move operations noexcept if:
 
 ---
 
-## 13.6 std::move â€” The Unconditional Cast
+## 13.6 std::move → The Unconditional Cast
 
 ### 13.6.1 What std::move Actually Does
 
@@ -757,11 +757,11 @@ int main() {
 
 | Misconception | Truth |
 |--------------|-------|
-| "std::move moves the object" | No â€” it only casts to &&. The move happens in the move constructor/assignment. |
-| "After std::move, the object is empty" | Not guaranteed â€” the object is in a valid-but-unspecified state. Typically it's empty, but the class decides. |
-| "You must use std::move on return values" | No â€” the compiler applies RVO and implicit move automatically for local variables returned by value. |
-| "std::move destroys the object" | No â€” the destructor still runs when the object goes out of scope. |
-| "std::move is always beneficial" | No â€” for trivially copyable types (int, double), copying is as fast as moving. |
+| "std::move moves the object" | No → it only casts to &&. The move happens in the move constructor/assignment. |
+| "After std::move, the object is empty" | Not guaranteed → the object is in a valid-but-unspecified state. Typically it's empty, but the class decides. |
+| "You must use std::move on return values" | No → the compiler applies RVO and implicit move automatically for local variables returned by value. |
+| "std::move destroys the object" | No → the destructor still runs when the object goes out of scope. |
+| "std::move is always beneficial" | No → for trivially copyable types (int, double), copying is as fast as moving. |
 
 ### 13.6.5 When NOT to Use std::move
 
@@ -778,7 +778,7 @@ std::string dest = std::move(cs);  // calls copy ctor, not move!
 
 // BAD: On trivially copyable types
 int x = 42;
-int y = std::move(x);  // same as int y = x; â€” no benefit
+int y = std::move(x);  // same as int y = x; → no benefit
 ```
 
 ### 13.6.6 std::move vs Return Value Optimization
@@ -787,19 +787,19 @@ int y = std::move(x);  // same as int y = x; â€” no benefit
 #include <iostream>
 #include <string>
 
-// Case 1: Return local variable â€” RVO/NRVO applies
+// Case 1: Return local variable → RVO/NRVO applies
 std::string make_string_rvo() {
     std::string s = "very long string";
     return s;  // NRVO: constructs directly in caller's storage
 }
 
-// Case 2: Explicit std::move â€” PREVENTS NRVO!
+// Case 2: Explicit std::move → PREVENTS NRVO!
 std::string make_string_move() {
     std::string s = "very long string";
     return std::move(s);  // forces move, but NRVO would have been better!
 }
 
-// Case 3: Return from different branches â€” implicit move
+// Case 3: Return from different branches → implicit move
 std::string make_string_conditional(bool flag) {
     std::string a = "first option";
     std::string b = "second option";
@@ -808,15 +808,15 @@ std::string make_string_conditional(bool flag) {
 }
 ```
 
-**Guideline:** Do NOT use `return std::move(local)` â€” it inhibits copy elision. Just use `return local;` and the compiler applies RVO, or at minimum an implicit move.
+**Guideline:** Do NOT use `return std::move(local)` → it inhibits copy elision. Just use `return local;` and the compiler applies RVO, or at minimum an implicit move.
 
 ---
 
-## 13.7 std::forward â€” The Conditional Cast
+## 13.7 std::forward → The Conditional Cast
 
 ### 13.7.1 Purpose
 
-`std::forward` conditionally casts its argument to an rvalue reference â€” only if the argument was originally an rvalue. It "forwards" the value category of the argument through a template function.
+`std::forward` conditionally casts its argument to an rvalue reference → only if the argument was originally an rvalue. It "forwards" the value category of the argument through a template function.
 
 ### 13.7.2 Reference Implementation
 
@@ -825,8 +825,8 @@ std::string make_string_conditional(bool flag) {
 template <typename T>
 constexpr T&& forward(typename std::remove_reference<T>::type& t) noexcept {
     return static_cast<T&&>(t);
-    // If T = int&:  int& && â†’ int& (reference collapsing)
-    // If T = int&&: int&& && â†’ int&&
+    // If T = int&:  int& && → int& (reference collapsing)
+    // If T = int&&: int&& && → int&&
 }
 
 /// Overload 2: For rvalue references
@@ -842,8 +842,8 @@ constexpr T&& forward(typename std::remove_reference<T>::type&& t) noexcept {
 
 The key to understanding `std::forward` is that it has two overloads:
 
-1. **Lvalue overload** (takes `Type&`): When the original argument was an lvalue, T deduces as `T&`, and `T& &&` collapses to `T&` â€” returns lvalue reference.
-2. **Rvalue overload** (takes `Type&&`): When the original argument was an rvalue, T deduces as `T`, and `T&&` stays `T&&` â€” returns rvalue reference.
+1. **Lvalue overload** (takes `Type&`): When the original argument was an lvalue, T deduces as `T&`, and `T& &&` collapses to `T&` → returns lvalue reference.
+2. **Rvalue overload** (takes `Type&&`): When the original argument was an rvalue, T deduces as `T`, and `T&&` stays `T&&` → returns rvalue reference.
 
 ### 13.7.4 How Forward Preserves Category
 
@@ -861,9 +861,9 @@ void outer(T&& x) {
 
 int main() {
     int a = 10;
-    outer(a);          // T = int& â†’ std::forward<int&>(a) â†’ lvalue
-    outer(20);         // T = int  â†’ std::forward<int>(a) â†’ rvalue
-    outer(std::move(a)); // T = int  â†’ std::forward<int>(a) â†’ rvalue
+    outer(a);          // T = int& → std::forward<int&>(a) → lvalue
+    outer(20);         // T = int  → std::forward<int>(a) → rvalue
+    outer(std::move(a)); // T = int  → std::forward<int>(a) → rvalue
 }
 ```
 
@@ -906,16 +906,16 @@ A **forwarding reference** (originally called "universal reference" by Scott Mey
 ```cpp
 // FORWARDING REFERENCE: T&& in deduced context
 template <typename T>
-void f(T&& x);   // T is deduced â†’ forwarding reference
+void f(T&& x);   // T is deduced → forwarding reference
 
 // RVALUE REFERENCE: T&& in non-deduced context
 template <typename T>
 class Wrapper {
-    void g(T&& x);  // T is known (from class) â†’ rvalue reference
+    void g(T&& x);  // T is known (from class) → rvalue reference
 };
 
 // Also rvalue reference (no template deduction):
-void h(int&& x);   // concrete type â†’ rvalue reference
+void h(int&& x);   // concrete type → rvalue reference
 auto&& ref = 42;   // auto&& is a forwarding reference (auto is deduced)
 ```
 
@@ -929,8 +929,8 @@ int main() {
     int x = 10;
 
     // auto&& is a forwarding reference
-    auto&& r1 = x;         // auto = int& â†’ int& && collapses to int&
-    auto&& r2 = 20;        // auto = int â†’ int&&
+    auto&& r1 = x;         // auto = int& → int& && collapses to int&
+    auto&& r2 = 20;        // auto = int → int&&
 
     // Practical use: range-based for with forwarding reference
     std::vector<std::string> words = {"hello", "world"};
@@ -1008,13 +1008,13 @@ Reference collapsing determines what happens when a reference to a reference app
 Rule: & wins over &&
 
 Original Type        Collapsed To
-T&  &               T&            (lvalue ref to lvalue ref â†’ lvalue ref)
-T&  &&              T&            (rvalue ref to lvalue ref â†’ lvalue ref)
-T&& &               T&            (lvalue ref to rvalue ref â†’ lvalue ref)
-T&& &&              T&&           (rvalue ref to rvalue ref â†’ rvalue ref)
+T&  &               T&            (lvalue ref to lvalue ref → lvalue ref)
+T&  &&              T&            (rvalue ref to lvalue ref → lvalue ref)
+T&& &               T&            (lvalue ref to rvalue ref → lvalue ref)
+T&& &&              T&&           (rvalue ref to rvalue ref → rvalue ref)
 ```
 
-**Memory aid:** "& squashes && â€” if either is &, the result is &."
+**Memory aid:** "& squashes && → if either is &, the result is &."
 
 ### 13.9.2 Reference Collapsing Table
 
@@ -1038,7 +1038,7 @@ int main() {
 
     // T = int& (deduced from lvalue)
     // f<int&> instantiation: void f(int& && x);
-    // Collapsing: int& && â†’ int&
+    // Collapsing: int& && → int&
     // Result: void f(int& x);
     f(a);
 
@@ -1057,12 +1057,12 @@ int main() {
     using LRef = int&;   // lvalue reference to int
 
     // Reference collapsing with nested typedefs:
-    using LRef2 = LRef&;   // int& & â†’ int& (collapsed)
-    using RRef2 = LRef&&;  // int& && â†’ int& (collapsed)
+    using LRef2 = LRef&;   // int& & → int& (collapsed)
+    using RRef2 = LRef&&;  // int& && → int& (collapsed)
 
     // With auto&& (forwarding reference):
     int i = 10;
-    auto&& r1 = i;   // int& && â†’ int& (lvalue reference)
+    auto&& r1 = i;   // int& && → int& (lvalue reference)
     auto&& r2 = 20;  // int&& (rvalue reference)
 }
 ```
@@ -1078,9 +1078,9 @@ decltype((b)) y;  // int& (b is already int&)
 decltype(std::move(a)) z; // int&& (std::move returns int&&)
 
 // Reference collapsing in decltype context:
-using T1 = decltype(x)&;   // int& & â†’ int&
-using T2 = decltype(z)&;   // int&& & â†’ int&
-using T3 = decltype(z)&&;  // int&& && â†’ int&&
+using T1 = decltype(x)&;   // int& & → int&
+using T2 = decltype(z)&;   // int&& & → int&
+using T3 = decltype(z)&&;  // int&& && → int&&
 ```
 
 ### 13.9.6 Why Reference Collapsing Enables Perfect Forwarding
@@ -1096,14 +1096,14 @@ void wrapper(T&& arg) {
 
 When `wrapper(a)` is called with an lvalue `a`:
 1. T deduces as `int&`
-2. Parameter type: `int& &&` â†’ collapses to `int&`
-3. `std::forward<int&>(arg)` â†’ `static_cast<int&>(arg)` â€” returns lvalue reference
+2. Parameter type: `int& &&` → collapses to `int&`
+3. `std::forward<int&>(arg)` → `static_cast<int&>(arg)` → returns lvalue reference
 4. `foo` receives an lvalue
 
 When `wrapper(42)` is called with an rvalue `42`:
 1. T deduces as `int`
 2. Parameter type: `int&&` (no collapsing needed)
-3. `std::forward<int>(arg)` â†’ `static_cast<int&&>(arg)` â€” returns rvalue reference
+3. `std::forward<int>(arg)` → `static_cast<int&&>(arg)` → returns rvalue reference
 4. `foo` receives an rvalue
 
 ---
@@ -1136,14 +1136,14 @@ void bad_wrapper(T arg) {
     sink(arg);  // arg is always an lvalue (named parameter)
 }
 
-// WORSE: Explicit && means rvalue only â€” can't accept lvalues!
+// WORSE: Explicit && means rvalue only → can't accept lvalues!
 void worse_wrapper(std::string&& arg) {
     sink(std::move(arg));  // forces rvalue, but only accepts rvalues
 }
 
 int main() {
     std::string s = "hello";
-    bad_wrapper(s);               // lvalue â†’ copy then pass lvalue
+    bad_wrapper(s);               // lvalue → copy then pass lvalue
     bad_wrapper(std::move(s));    // also copied into function!
 }
 ```
@@ -1166,9 +1166,9 @@ void perfect_wrapper(T&& arg) {
 
 int main() {
     std::string s = "hello";
-    perfect_wrapper(s);              // T = string& â†’ forward<string&> â†’ lvalue
-    perfect_wrapper(std::move(s));   // T = string â†’ forward<string> â†’ rvalue
-    perfect_wrapper(std::string("direct")); // prvalue â†’ rvalue
+    perfect_wrapper(s);              // T = string& → forward<string&> → lvalue
+    perfect_wrapper(std::move(s));   // T = string → forward<string> → rvalue
+    perfect_wrapper(std::string("direct")); // prvalue → rvalue
 }
 ```
 
@@ -1247,7 +1247,7 @@ int main() {
     auto p = make_shared<std::vector<int>>(10, 5);
     std::cout << "Vector size: " << p->size() << '\n';
 
-    // Tuple factory â€” lvalue and rvalue mixed
+    // Tuple factory → lvalue and rvalue mixed
     std::string name = "Alice";
     auto t = make_tuple(name, 30, std::string("extra"));
 
@@ -1283,7 +1283,7 @@ f(nullptr); // T = std::nullptr_t (correct)
 void g(int);
 void g(double);
 // f(g);  // ERROR: which overload?
-f(static_cast<void(*)(int)>(g));  // OK â€” disambiguate
+f(static_cast<void(*)(int)>(g));  // OK → disambiguate
 ```
 
 ---
@@ -1301,7 +1301,7 @@ C++11 adds two more: move constructor and move assignment operator, making the *
 ```cpp
 class Resource {
 public:
-    // 1. Default Constructor (optional â€” not always needed)
+    // 1. Default Constructor (optional → not always needed)
     Resource() = default;
 
     // 2. Destructor
@@ -1468,7 +1468,7 @@ public:
 | **Behavior with rvalue** | Always returns `T&&` | Returns `T&&` |
 | **Use case** | "I know this object can be moved" | "Preserve the caller's intent (value category)" |
 | **Typical context** | Move constructor body, passing to sink | Template functions forwarding arguments |
-| **Without template** | `s = std::move(t)` â€” fine | `std::forward<T>(t)` â€” requires T |
+| **Without template** | `s = std::move(t)` → fine | `std::forward<T>(t)` → requires T |
 | **Misuse risk** | Casts const objects to && (ignored) | Forgets template argument (compile error) |
 
 ### 13.12.2 Concrete Behavioral Difference
@@ -1525,7 +1525,7 @@ rvalue
 rvalue
 ```
 
-**Key insight:** Using `std::move` in a forwarding function always discards the lvalue-ness of the original argument â€” the caller's lvalue will be inadvertently moved from. This is WRONG. Use `std::forward` to preserve category.
+**Key insight:** Using `std::move` in a forwarding function always discards the lvalue-ness of the original argument → the caller's lvalue will be inadvertently moved from. This is WRONG. Use `std::forward` to preserve category.
 
 ---
 
@@ -1611,9 +1611,9 @@ std::string b;
 
 | Step | a (source) | b (dest) | Heap Operations |
 |------|-----------|---------|-----------------|
-| 1 | ptr=0x1000, cap=64, len=52 | ptr=0x0, cap=0, len=0 | â€” |
-| 2 | â€” | Allocate new buffer | malloc(64) |
-| 3 | â€” | Copy 52 bytes to new buffer | memcpy(b.ptr, a.ptr, 52) |
+| 1 | ptr=0x1000, cap=64, len=52 | ptr=0x0, cap=0, len=0 | → |
+| 2 | → | Allocate new buffer | malloc(64) |
+| 3 | → | Copy 52 bytes to new buffer | memcpy(b.ptr, a.ptr, 52) |
 | End | ptr=0x1000, cap=64, len=52 | ptr=0x2000, cap=64, len=52 | 1 malloc, 1 memcpy (52 bytes) |
 
 **Total: 1 heap allocation + 52-byte memcpy**
@@ -1622,14 +1622,14 @@ std::string b;
 
 | Step | a (source) | b (dest) | Heap Operations |
 |------|-----------|---------|-----------------|
-| 1 | ptr=0x1000, cap=64, len=52 | ptr=0x0, cap=0, len=0 | â€” |
+| 1 | ptr=0x1000, cap=64, len=52 | ptr=0x0, cap=0, len=0 | → |
 | 2 | ptr=0x1000, cap=64, len=52 | ptr=0x1000, cap=64, len=52 | Steal pointer (no alloc) |
-| 3 | ptr=nullptr, cap=0, len=0 | â€” | Null source |
+| 3 | ptr=nullptr, cap=0, len=0 | → | Null source |
 | End | ptr=nullptr, cap=0, len=0 | ptr=0x1000, cap=64, len=52 | 0 allocations |
 
-**Total: 0 heap allocations, 0 memcpy â€” just 3 pointer assignments**
+**Total: 0 heap allocations, 0 memcpy → just 3 pointer assignments**
 
-### 13.13.4 Move Semantics Benefits â€” Performance Comparison
+### 13.13.4 Move Semantics Benefits → Performance Comparison
 
 | Scenario | Copy | Move | Benefit |
 |----------|------|------|---------|
@@ -1637,7 +1637,7 @@ std::string b;
 | `std::string` assignment (100KB) | 1 alloc + 100KB memcpy | 3 pointer assignments | ~20,000x faster |
 | `unique_ptr` passing | Not allowed | 1 pointer copy | Enables ownership transfer |
 | `thread` creation | Not allowed | 1 handle copy | Enables async execution |
-| `swap(a, b)` for large vector | 3 deep copies â†’ 3 allocs | 3 pointer swaps | O(n) â†’ O(1) |
+| `swap(a, b)` for large vector | 3 deep copies → 3 allocs | 3 pointer swaps | O(n) → O(1) |
 
 ---
 
@@ -1739,11 +1739,11 @@ int main() {
 
 ```cpp
 int x = 42;
-int y = std::move(x);  // Same as int y = x; â€” no benefit
+int y = std::move(x);  // Same as int y = x; → no benefit
 // x is still 42 (no state change)
 ```
 
-**Rule:** For trivially copyable types (int, double, char, pointers, POD structs), moving is identical to copying. The move constructor is never generated â€” copying is the fastest possible operation.
+**Rule:** For trivially copyable types (int, double, char, pointers, POD structs), moving is identical to copying. The move constructor is never generated → copying is the fastest possible operation.
 
 ### 13.14.5 std::move on auto&& Return
 
@@ -1753,7 +1753,7 @@ int y = std::move(x);  // Same as int y = x; â€” no benefit
 // BAD: use std::forward, not std::move!
 template <typename T>
 auto bad_return(T&& x) -> decltype(std::move(x)) {
-    return std::move(x);  // Always returns && â€” steals from lvalues!
+    return std::move(x);  // Always returns && → steals from lvalues!
 }
 
 // GOOD: preserve category
@@ -1829,23 +1829,23 @@ Move-only types can be moved but not copied. They typically represent unique own
 #include <fstream>
 
 int main() {
-    // std::unique_ptr â€” exclusive ownership
+    // std::unique_ptr → exclusive ownership
     auto p = std::make_unique<int>(42);
     // auto q = p;  // ERROR: copy deleted
     auto q = std::move(p);  // OK: move transfers ownership
 
-    // std::thread â€” OS thread handle
+    // std::thread → OS thread handle
     std::thread t1([]{ std::cout << "Hello\n"; });
     // std::thread t2 = t1;  // ERROR: copy deleted
     std::thread t3 = std::move(t1);
     t3.join();
 
-    // std::fstream â€” file handle
+    // std::fstream → file handle
     std::ifstream file("test.txt");
     // std::ifstream file2 = file;  // ERROR: copy deleted
     std::ifstream file3 = std::move(file);
 
-    // std::future â€” asynchronous result
+    // std::future → asynchronous result
     auto fut = std::async(std::launch::async, []{ return 42; });
     // auto fut2 = fut;  // ERROR: copy deleted
     auto fut3 = std::move(fut);
@@ -1926,7 +1926,7 @@ int main() {
     std::vector<std::string> words;
     words.reserve(1);
     words.emplace_back("hello");
-    words.emplace_back("world");  // may reallocate â†’ uses noexcept move
+    words.emplace_back("world");  // may reallocate → uses noexcept move
 
     // std::map: move nodes instead of copying
     std::map<int, std::string> m;
@@ -1944,7 +1944,7 @@ int main() {
     std::string s = "very long string";
     v.push_back(s);              // copy
     v.push_back(std::move(s));   // move
-    v.emplace_back("direct");    // constructs in-place â€” zero copies!
+    v.emplace_back("direct");    // constructs in-place → zero copies!
 }
 ```
 
@@ -2068,7 +2068,7 @@ private:
 #include <vector>
 #include <memory>
 
-// Abstract Syntax Tree node â€” move-heavy for efficiency
+// Abstract Syntax Tree node → move-heavy for efficiency
 class ASTNode {
 public:
     explicit ASTNode(std::string type) : type_(std::move(type)) {}
@@ -2160,13 +2160,13 @@ private:
 | Property | lvalue | prvalue | xvalue | glvalue | rvalue |
 |----------|--------|---------|--------|---------|--------|
 | Has identity | âœ“ | âœ— | âœ“ | âœ“ | âœ— |
-| Movable from | âœ— | âœ“ | âœ“ | â€” | âœ“ |
+| Movable from | âœ— | âœ“ | âœ“ | → | âœ“ |
 | Can take address | âœ“ | âœ— | âœ“ | âœ“ | âœ— |
 | Example | `int x; x` | `42` | `std::move(x)` | `x`, `std::move(x)` | `42`, `std::move(x)` |
-| Binds to T& | âœ“ | âœ— | âœ— | â€” | âœ— |
-| Binds to const T& | âœ“ | âœ“ | âœ“ | â€” | âœ“ |
-| Binds to T&& | âœ— | âœ“ | âœ“ | â€” | âœ“ |
-| Polymorphic | type known | dynamic type | type known | â€” | â€” |
+| Binds to T& | âœ“ | âœ— | âœ— | → | âœ— |
+| Binds to const T& | âœ“ | âœ“ | âœ“ | → | âœ“ |
+| Binds to T&& | âœ— | âœ“ | âœ“ | → | âœ“ |
+| Polymorphic | type known | dynamic type | type known | → | → |
 
 ### 13.17.2 std::move vs std::forward Detailed Table
 
@@ -2182,13 +2182,13 @@ private:
 | Can be used on const | Yes, but no-op (copy fallback) | Same |
 | Implemented as | `static_cast<remove_reference_t<T>&&>(t)` | `static_cast<T&&>(t)` |
 
-### 13.17.3 Rule of Five â€” Member Function Summary
+### 13.17.3 Rule of Five → Member Function Summary
 
 | Function | Signature | When Called | noexcept? |
 |----------|-----------|------------|-----------|
 | Destructor | `~T()` | Object goes out of scope | implicit |
-| Copy constructor | `T(const T&)` | `T b = a;` (a is lvalue) | â€” |
-| Copy assignment | `T& operator=(const T&)` | `a = b;` (b is lvalue) | â€” |
+| Copy constructor | `T(const T&)` | `T b = a;` (a is lvalue) | → |
+| Copy assignment | `T& operator=(const T&)` | `a = b;` (b is lvalue) | → |
 | Move constructor | `T(T&&)` | `T b = std::move(a);` | **yes** |
 | Move assignment | `T& operator=(T&&)` | `a = std::move(b);` | **yes** |
 
@@ -2201,9 +2201,9 @@ private:
 | `T&&` | `&` | `T&` | lvalue ref to rvalue ref â‡’ lvalue ref |
 | `T&&` | `&&` | `T&&` | rvalue ref to rvalue ref â‡’ rvalue ref |
 
-**Rule:** "& wins" â€” if either reference is `&`, the result is `&`.
+**Rule:** "& wins" → if either reference is `&`, the result is `&`.
 
-### 13.17.5 Move Semantics Benefits â€” Performance Comparison
+### 13.17.5 Move Semantics Benefits → Performance Comparison
 
 | Scenario | Copy | Move | Benefit |
 |----------|------|------|---------|
@@ -2211,7 +2211,7 @@ private:
 | `std::string` assignment (100KB) | 1 alloc + 100KB memcpy | 3 pointer assignments | ~20,000x faster |
 | `unique_ptr` passing | Not allowed | 1 pointer copy | Enables ownership transfer |
 | `thread` creation | Not allowed | 1 handle copy | Enables async execution |
-| `swap(a, b)` for large vector | 3 deep copies â†’ 3 allocs | 3 pointer swaps | O(n) â†’ O(1) |
+| `swap(a, b)` for large vector | 3 deep copies → 3 allocs | 3 pointer swaps | O(n) → O(1) |
 
 ---
 
@@ -2237,7 +2237,7 @@ std::string t = std::move(s);
 // ^ std::move casts s to string&&, but the actual move is the move constructor
 ```
 
-After `std::move`, the source object is in a valid but unspecified state â€” it must still be destructible and assignable.
+After `std::move`, the source object is in a valid but unspecified state → it must still be destructible and assignable.
 
 ### Q2: Explain perfect forwarding. Why do we need std::forward instead of std::move?
 
@@ -2248,7 +2248,7 @@ Perfect forwarding preserves the value category (lvalue vs rvalue) of arguments 
 ```cpp
 template <typename T>
 void wrapper(T&& arg) {
-    // WRONG: std::move always casts to && â€” destroys lvalues
+    // WRONG: std::move always casts to && → destroys lvalues
     // sink(std::move(arg));
 
     // CORRECT: std::forward<T> preserves original category
@@ -2260,12 +2260,12 @@ void sink(int&& x) { /* rvalue */ }
 
 int main() {
     int a = 10;
-    wrapper(a);          // Should stay lvalue â†’ forward preserves it
-    wrapper(20);         // Should stay rvalue â†’ forward preserves it
+    wrapper(a);          // Should stay lvalue → forward preserves it
+    wrapper(20);         // Should stay rvalue → forward preserves it
 }
 ```
 
-The mechanism: when `T = int&` (lvalue argument), `std::forward<int&>` returns `int&` (via reference collapsing `int& && â†’ int&`). When `T = int` (rvalue argument), `std::forward<int>` returns `int&&`.
+The mechanism: when `T = int&` (lvalue argument), `std::forward<int&>` returns `int&` (via reference collapsing `int& && → int&`). When `T = int` (rvalue argument), `std::forward<int>` returns `int&&`.
 
 ### Q3: What is the difference between T&& in template context and non-template context?
 
@@ -2297,7 +2297,7 @@ int main() {
 
 Also: `auto&&` is always a forwarding reference because `auto` is deduced:
 ```cpp
-auto&& r1 = x;   // int& && â†’ int& (lvalue reference)
+auto&& r1 = x;   // int& && → int& (lvalue reference)
 auto&& r2 = 20;  // int&& (rvalue reference)
 ```
 
@@ -2307,8 +2307,8 @@ auto&& r2 = 20;  // int&& (rvalue reference)
 
 Move constructors should be `noexcept` primarily for `std::vector` reallocation. When `std::vector` grows its capacity, it needs to transfer existing elements to new memory. It checks `std::is_nothrow_move_constructible<T>::value`:
 
-- If `T` has a noexcept move constructor â†’ vector **moves** elements (fast, O(1))
-- If `T` has a potentially-throwing move constructor â†’ vector **copies** elements instead (slow, O(n))
+- If `T` has a noexcept move constructor → vector **moves** elements (fast, O(1))
+- If `T` has a potentially-throwing move constructor → vector **copies** elements instead (slow, O(n))
 
 The copy fallback maintains the strong exception guarantee: if a copy throws mid-reallocation, the original elements are intact. If a move throws mid-reallocation, the source elements are already modified, resulting in data loss.
 
@@ -2341,7 +2341,7 @@ The reference collapsing rules determine what type results when a reference to a
 
 **Memory aid:** "If either is `&`, the result is `&`."
 
-**Why they matter:** Reference collapsing is the mechanism that makes forwarding references work. When you call `f(x)` with an lvalue, `T` deduces as `int&`, and the parameter type `int& &&` collapses to `int&` â€” an lvalue reference. This allows the same `T&&` syntax to bind to both lvalue and rvalue arguments.
+**Why they matter:** Reference collapsing is the mechanism that makes forwarding references work. When you call `f(x)` with an lvalue, `T` deduces as `int&`, and the parameter type `int& &&` collapses to `int&` → an lvalue reference. This allows the same `T&&` syntax to bind to both lvalue and rvalue arguments.
 
 ### Q6: What is the difference between a prvalue and an xvalue?
 
@@ -2372,7 +2372,7 @@ The Rule of Five states that if you define (or =delete) any of the five special 
 4. Move constructor
 5. Move assignment operator
 
-You should apply the Rule of Five when your class manages a resource directly (raw pointer to heap memory, file handle, OS resource, etc.). If your class uses RAII wrappers like `std::string`, `std::vector`, or `std::unique_ptr`, follow the **Rule of Zero** instead â€” let the compiler generate all five.
+You should apply the Rule of Five when your class manages a resource directly (raw pointer to heap memory, file handle, OS resource, etc.). If your class uses RAII wrappers like `std::string`, `std::vector`, or `std::unique_ptr`, follow the **Rule of Zero** instead → let the compiler generate all five.
 
 ```cpp
 // Rule of Zero: uses RAII wrappers
@@ -2428,23 +2428,23 @@ lvalue rvalue lvalue
 
 **Explanation for `bar(20)`:**
 - T deduces as `int` (rvalue argument)
-- `x` is a named parameter â†’ lvalue â†’ `foo(x)` prints "lvalue" ... wait, that's wrong.
+- `x` is a named parameter → lvalue → `foo(x)` prints "lvalue" ... wait, that's wrong.
 
 Actually, let me trace carefully:
 
 For `bar(20)`:
 - T = `int` (rvalue argument)
-- `x` has type `int&&` but has a name â†’ `x` is an lvalue expression
-- `foo(x)` â†’ lvalue â†’ prints "lvalue"
-- `foo(std::move(x))` â†’ rvalue â†’ prints "rvalue"
-- `foo(std::forward<int>(x))` â†’ rvalue (forward from rvalue) â†’ prints "rvalue"
+- `x` has type `int&&` but has a name → `x` is an lvalue expression
+- `foo(x)` → lvalue → prints "lvalue"
+- `foo(std::move(x))` → rvalue → prints "rvalue"
+- `foo(std::forward<int>(x))` → rvalue (forward from rvalue) → prints "rvalue"
 
 For `bar(a)`:
 - T = `int&` (lvalue argument)
-- `x` has type `int&` (collapsed) â†’ `x` is an lvalue expression
-- `foo(x)` â†’ lvalue â†’ prints "lvalue"
-- `foo(std::move(x))` â†’ rvalue â†’ prints "rvalue"
-- `foo(std::forward<int&>(x))` â†’ lvalue (forward from lvalue) â†’ prints "lvalue"
+- `x` has type `int&` (collapsed) → `x` is an lvalue expression
+- `foo(x)` → lvalue → prints "lvalue"
+- `foo(std::move(x))` → rvalue → prints "rvalue"
+- `foo(std::forward<int&>(x))` → lvalue (forward from lvalue) → prints "lvalue"
 
 **Output:**
 ```
@@ -2463,14 +2463,14 @@ lvalue rvalue lvalue
    B) Casts its argument to an rvalue reference
    C) Creates a deep copy of the object
    D) Destroys the original object
-   <details><summary>Answer</summary>**B)** `std::move` unconditionally casts its argument to an rvalue reference. It does not move anything â€” the move happens in the move constructor or move assignment operator that receives the rvalue reference.</details>
+   <details><summary>Answer</summary>**B)** `std::move` unconditionally casts its argument to an rvalue reference. It does not move anything → the move happens in the move constructor or move assignment operator that receives the rvalue reference.</details>
 
 2. After a move operation, the source object should be:
    A) In its original state (unchanged)
    B) In a valid but unspecified state
    C) Completely destroyed
    D) In a null state
-   <details><summary>Answer</summary>**B)** The source object is left in a valid but unspecified state â€” it must be destructible and assignable, but its exact value is unspecified (typically empty/null).</details>
+   <details><summary>Answer</summary>**B)** The source object is left in a valid but unspecified state → it must be destructible and assignable, but its exact value is unspecified (typically empty/null).</details>
 
 3. Why should move constructors be marked noexcept?
    A) It is required by the C++ standard
@@ -2498,7 +2498,7 @@ lvalue rvalue lvalue
    B) `int&`
    C) `int`
    D) `const int&`
-   <details><summary>Answer</summary>**B)** When T is `int&`, `std::forward<int&>(arg)` returns `int&` (via reference collapsing: `int& &&` â†’ `int&`). This preserves the original lvalue category.</details>
+   <details><summary>Answer</summary>**B)** When T is `int&`, `std::forward<int&>(arg)` returns `int&` (via reference collapsing: `int& &&` → `int&`). This preserves the original lvalue category.</details>
 
 7. What is an xvalue?
    A) An expression with no identity that cannot be moved
@@ -2508,10 +2508,10 @@ lvalue rvalue lvalue
    <details><summary>Answer</summary>**B)** An xvalue (expiring value) has identity but its resources can be reused because it is about to expire. Examples: `std::move(x)`, `static_cast<T&&>(x)`.</details>
 
 8. Which of the following is NOT a valid reference collapsing rule?
-   A) `T& & â†’ T&`
-   B) `T& && â†’ T&`
-   C) `T&& & â†’ T&&`
-   D) `T&& && â†’ T&&`
+   A) `T& & → T&`
+   B) `T& && → T&`
+   C) `T&& & → T&&`
+   D) `T&& && → T&&`
    <details><summary>Answer</summary>**C)** `T&& &` collapses to `T&` (not `T&&`). The rule is: if either reference is `&`, the result is `&`.</details>
 
 9. What happens if you call `std::move` on a const object?
@@ -2559,13 +2559,13 @@ Move semantics, introduced in C++11, fundamentally transformed how C++ programs 
 
 3. **Move constructors and move assignment operators** transfer ownership of resources from a source object (left in valid-but-unspecified state) to a destination, typically in O(1) time via pointer swaps rather than O(n) deep copies.
 
-4. **`noexcept` on move operations** is critical for standard library optimizations â€” particularly `std::vector` reallocation, which uses moves only when the move constructor is noexcept.
+4. **`noexcept` on move operations** is critical for standard library optimizations → particularly `std::vector` reallocation, which uses moves only when the move constructor is noexcept.
 
-5. **`std::move`** is an unconditional cast to rvalue reference â€” it enables but does not perform the move.
+5. **`std::move`** is an unconditional cast to rvalue reference → it enables but does not perform the move.
 
 6. **`std::forward<T>`** is a conditional cast that preserves the original value category through template functions, enabling the perfect forwarding pattern.
 
-7. **Forwarding references (`T&&` in deduced context)** bind to both lvalues and rvalues through the mechanism of **reference collapsing** (`T& & â†’ T&`, `T& && â†’ T&`, `T&& & â†’ T&`, `T&& && â†’ T&&`).
+7. **Forwarding references (`T&&` in deduced context)** bind to both lvalues and rvalues through the mechanism of **reference collapsing** (`T& & → T&`, `T& && → T&`, `T&& & → T&`, `T&& && → T&&`).
 
 8. **The Rule of Five** extends the Rule of Three to include move constructor and move assignment operator. However, the **Rule of Zero** (relying on RAII wrappers like string, vector, unique_ptr) is the preferred modern approach.
 
@@ -2658,5 +2658,5 @@ Move semantics, introduced in C++11, fundamentally transformed how C++ programs 
 
 ## End of Chapter 13
 
-**Next:** [14-lambdas](./14-lambdas.md) â€” lambda expressions, captures, generic lambdas, and functional programming in C++.
+**Next:** [14-lambdas](./14-lambdas.md) → lambda expressions, captures, generic lambdas, and functional programming in C++.
 

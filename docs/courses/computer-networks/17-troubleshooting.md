@@ -369,7 +369,7 @@ if __name__ == "__main__":
 
 ### Complexity Analysis for Data Link Diagnostics
 
-Duplex mismatch detection: O(1) â€” counters are hardware registers. MAC flood detection: O(m) where m = MAC entries. Space: O(m).
+Duplex mismatch detection: O(1) → counters are hardware registers. MAC flood detection: O(m) where m = MAC entries. Space: O(m).
 
 ### Edge Cases for Data Link
 
@@ -514,7 +514,7 @@ if __name__ == "__main__":
 
 ### Complexity Analysis
 
-Ping: O(h*c). Traceroute: O(h*p). MTU discovery: O(log n) binary search. Loop detection: O(h) linear scan. Binary search for MTU is critical â€” each probe requires network RTT wait.
+Ping: O(h*c). Traceroute: O(h*p). MTU discovery: O(log n) binary search. Loop detection: O(h) linear scan. Binary search for MTU is critical → each probe requires network RTT wait.
 
 ### Edge Cases
 
@@ -825,9 +825,9 @@ TLS: O(c) chain length. HTTP: O(1). DNS: O(d) delegation depth.
 4. HSTS preload: no HTTP fallback.
 5. HTTP/2 coalescing: one crash affects all on shared connection.
 
-## 17.7 Troubleshooting Tools â€” Deep Dive
+## 17.7 Troubleshooting Tools → Deep Dive
 
-### 17.7.1 ping â€” ICMP Echo
+### 17.7.1 ping → ICMP Echo
 
 **Purpose:** Test basic IP connectivity, measure RTT, detect packet loss.
 
@@ -926,7 +926,7 @@ tcpdump [options] [filter]
   -r file.pcap  Read                    -e   MAC headers
 ```
 
-### tcpdump Filter Syntax â€” Quick Reference
+### tcpdump Filter Syntax → Quick Reference
 
 | Expression | Meaning |
 |-----------|---------|
@@ -971,20 +971,20 @@ tcpdump -i eth0 -nn 'tcp[13] & 2 != 0 and tcp[13] & 16 == 0'
 tcpdump -i eth0 -nn -X host 10.0.0.50 and host 10.0.0.100
 ```
 
-### 17.7.6 Wireshark â€” Capture Workflow
+### 17.7.6 Wireshark → Capture Workflow
 
-**Phase 1 â€” Capture Planning**
+**Phase 1 → Capture Planning**
 1. Define scope: what traffic, between which hosts, on which interface?
 2. Set capture filter: host 10.0.0.50 and port 443 to reduce noise.
 3. Choose mode: full packet (protocol analysis) or header-only (performance).
 4. Start capture, reproduce problem, stop capture.
 
-**Phase 2 â€” Initial Analysis**
+**Phase 2 → Initial Analysis**
 1. Check Expert Info: retransmissions, duplicate ACKs, zero window, checksum errors.
 2. Protocol Hierarchy Statistics: which protocols dominate.
 3. Conversations: top talkers by bytes/packets.
 
-**Phase 3 â€” Focused Analysis**
+**Phase 3 → Focused Analysis**
 1. Display filter: ip.addr == 10.0.0.50.
 2. Follow TCP Stream: see application conversation.
 3. Time between SYN and SYN-ACK = server processing delay.
@@ -994,7 +994,7 @@ tcpdump -i eth0 -nn -X host 10.0.0.50 and host 10.0.0.100
 7. Filter: tcp.analysis.fast_retransmission for dup ACKs.
 8. Check window scale in SYN packets.
 
-**Phase 4 â€” Performance Analysis**
+**Phase 4 → Performance Analysis**
 1. I/O Graph (Statistics > I/O Graph): visualize throughput over time.
 2. TCP Stream Graph > Time-Sequence Graph: see congestion window behavior.
 3. TCP Stream Graph > Round Trip Time: RTT trends over session.
@@ -1035,11 +1035,11 @@ iperf3 -c server -R -t 30      # Reverse (server -> client)
 iperf3 -c server --bidir       # Bidirectional test
 ```
 
-**Interpret TCP results:** Throughput near link speed = good. Throughput = (MSS * 8) / RTT * sqrt(3/4 * loss_rate) â€” Mathis equation. Compare expected vs actual throughput. Low throughput can mean congestion, bufferbloat, or application bottleneck.
+**Interpret TCP results:** Throughput near link speed = good. Throughput = (MSS * 8) / RTT * sqrt(3/4 * loss_rate) → Mathis equation. Compare expected vs actual throughput. Low throughput can mean congestion, bufferbloat, or application bottleneck.
 
 **UDP results:** Reports jitter (inter-packet delay variation) and packet loss percentage. Jitter < 1ms is excellent for VoIP. Loss > 1% degrades voice quality.
 
-## 17.8 Common Issues per Layer â€” Summary Table
+## 17.8 Common Issues per Layer → Summary Table
 
 | Layer | Common Issue | Symptom | Diagnostic Tool | Likely Fix |
 |-------|-------------|---------|----------------|------------|
@@ -1088,11 +1088,11 @@ iperf3 -c server --bidir       # Bidirectional test
 
 ### Q1: When ping fails but the application works, what is happening?
 
-Ping uses ICMP Echo Request/Reply. Many firewalls and security groups block ICMP while allowing TCP traffic for applications. This is a security best practice â€” ICMP offers no encryption and can be used for reconnaissance. ICMP blocking does not indicate a network problem. Always use a TCP-based connectivity test (telnet, nc, curl) to verify actual application reachability.
+Ping uses ICMP Echo Request/Reply. Many firewalls and security groups block ICMP while allowing TCP traffic for applications. This is a security best practice → ICMP offers no encryption and can be used for reconnaissance. ICMP blocking does not indicate a network problem. Always use a TCP-based connectivity test (telnet, nc, curl) to verify actual application reachability.
 
 ### Q2: How does traceroute work, and what does it mean when a hop shows asterisks?
 
-Traceroute sends packets with increasing TTL values. Hop 1 gets TTL=1, Hop 2 gets TTL=2, etc. Each router decrements TTL; when TTL reaches 0, the router sends an ICMP Time Exceeded message back. Asterisks (* * *) for a hop mean no response was received â€” the router may be configured not to send ICMP Time Exceeded, or the response is filtered. Three asterisks in a row mean the hop is not responding, but packets may still pass through it. If all subsequent hops also show asterisks, the path is likely broken at that point.
+Traceroute sends packets with increasing TTL values. Hop 1 gets TTL=1, Hop 2 gets TTL=2, etc. Each router decrements TTL; when TTL reaches 0, the router sends an ICMP Time Exceeded message back. Asterisks (* * *) for a hop mean no response was received → the router may be configured not to send ICMP Time Exceeded, or the response is filtered. Three asterisks in a row mean the hop is not responding, but packets may still pass through it. If all subsequent hops also show asterisks, the path is likely broken at that point.
 
 ### Q3: What is the difference between "port unreachable," "connection refused," and "timeout"?
 
@@ -1114,19 +1114,19 @@ Fixes: (1) Enable tcp_tw_reuse (allows reuse of TIME_WAIT sockets for new connec
 
 ### Q6: How do you identify a routing loop from a traceroute?
 
-A routing loop appears as a repeating pattern of the same IP addresses across multiple hops. Classic 2-hop loop: Hop A -> B -> A -> B -> A -> B (continues until TTL expires). Single-hop loop: same IP appears on consecutive hops. The TTL decreases by 1 each hop but never reaches the destination â€” the trace terminates at hop 30 (or the max TTL) with "destination not reached."
+A routing loop appears as a repeating pattern of the same IP addresses across multiple hops. Classic 2-hop loop: Hop A -> B -> A -> B -> A -> B (continues until TTL expires). Single-hop loop: same IP appears on consecutive hops. The TTL decreases by 1 each hop but never reaches the destination → the trace terminates at hop 30 (or the max TTL) with "destination not reached."
 
 ### Q7: What does "Connection refused" versus "No route to host" mean?
 
-"Connection refused" (ECONNREFUSED) means the TCP SYN reached the destination host but that host sent back a RST because nothing is listening on the port. "No route to host" (EHOSTUNREACH) means the IP stack could not find a route to the destination â€” there is no matching entry in the routing table and no default gateway, or the gateway is unreachable at Layer 2.
+"Connection refused" (ECONNREFUSED) means the TCP SYN reached the destination host but that host sent back a RST because nothing is listening on the port. "No route to host" (EHOSTUNREACH) means the IP stack could not find a route to the destination → there is no matching entry in the routing table and no default gateway, or the gateway is unreachable at Layer 2.
 
 ### Q8: How do you test if a firewall is blocking a specific port?
 
-Test from outside the firewall: (1) nc -zv <host> <port> â€” if timeout, the port is filtered (firewall is actively blocking). (2) Use tcpdump on the server to see if SYN packets arrive. If tcpdump shows the SYN arriving but no SYN-ACK being sent, the firewall on the server is blocking. If tcpdump shows no SYNs at all, the firewall on the network path or client is blocking.
+Test from outside the firewall: (1) nc -zv <host> <port> → if timeout, the port is filtered (firewall is actively blocking). (2) Use tcpdump on the server to see if SYN packets arrive. If tcpdump shows the SYN arriving but no SYN-ACK being sent, the firewall on the server is blocking. If tcpdump shows no SYNs at all, the firewall on the network path or client is blocking.
 
 ### Q9: What is asymmetric routing and how does it affect troubleshooting?
 
-Asymmetric routing occurs when packets take a different path from A to B than from B to A. This is common in networks with ECMP or multiple connections. Traceroute only shows the forward path â€” packet loss on the return path is invisible. This means a high-loss traceroute may not show where loss is actually occurring. MTR shows both directions only if run from both endpoints.
+Asymmetric routing occurs when packets take a different path from A to B than from B to A. This is common in networks with ECMP or multiple connections. Traceroute only shows the forward path → packet loss on the return path is invisible. This means a high-loss traceroute may not show where loss is actually occurring. MTR shows both directions only if run from both endpoints.
 
 ### Q10: How does path MTU discovery work and why does it fail?
 
@@ -1141,11 +1141,11 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 **Initial scope:** Affected all users worldwide. Only the checkout flow was affected, static content loaded normally.
 
 **Diagnostic steps:**
-1. Checked server CPU/memory â€” no exhaustion.
-2. Ran traceroute during peak â€” no routing changes.
-3. Checked MTR for 10 minutes â€” 3% packet loss at the CDN edge hop.
-4. Analyzed tcpdump â€” TCP retransmissions at 5% of total segments.
-5. Checked the CDN provider's status page â€” announced edge capacity issues.
+1. Checked server CPU/memory → no exhaustion.
+2. Ran traceroute during peak → no routing changes.
+3. Checked MTR for 10 minutes → 3% packet loss at the CDN edge hop.
+4. Analyzed tcpdump → TCP retransmissions at 5% of total segments.
+5. Checked the CDN provider's status page → announced edge capacity issues.
 6. Conclusion: CDN edge node was overloaded during US lunchtime traffic spike.
 
 **Fix:** Configured a second CDN provider as fallback and implemented origin pull traffic shaping. Page load times returned to 1.2s.
@@ -1157,9 +1157,9 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 **Initial hypothesis:** Network issue between services.
 
 **Diagnostic steps:**
-1. Checked ss -s on the affected service â€” 32,000 connections in TIME_WAIT.
+1. Checked ss -s on the affected service → 32,000 connections in TIME_WAIT.
 2. Application was using a connection pool of 50 connections but creating new connections on every request and not closing them properly. The pool was exhausted.
-3. Checked application code â€” missing db.close() in error handler paths.
+3. Checked application code → missing db.close() in error handler paths.
 4. Once sockets hit TIME_WAIT (~28K), new connections failed.
 
 **Fix:** Fixed the connection leak in application code, set tcp_tw_reuse=1 on the host, and increased the connection pool to 100. Service stability restored.
@@ -1181,8 +1181,8 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 **Symptom:** Guest laptops reported "duplicate IP address" warnings. Some guests could not access the internet. Others were redirected to phishing pages.
 
 **Diagnostic:**
-1. Checked ARP table on a guest machine â€” multiple IPs mapped to the same MAC address.
-2. Checked switch MAC table â€” one port had 200+ MAC addresses with diverse OUIs (MAC flooding).
+1. Checked ARP table on a guest machine → multiple IPs mapped to the same MAC address.
+2. Checked switch MAC table → one port had 200+ MAC addresses with diverse OUIs (MAC flooding).
 3. The attacker's machine was connected to the public guest VLAN, running an ARP spoofing tool.
 4. Once the switch CAM table overflowed, the switch fell back to flooding all traffic on the VLAN (hub mode). The attacker could sniff all traffic.
 
@@ -1193,8 +1193,8 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 **Symptom:** A mobile app could not log in. Web users were unaffected. API requests from the mobile app returned 403 Forbidden.
 
 **Diagnostic:**
-1. curl -v from the mobile emulator â€” HTTP 403 Forbidden.
-2. Checked the WAF logs â€” rule ID 942100 (SQL injection) was triggering on the login request.
+1. curl -v from the mobile emulator → HTTP 403 Forbidden.
+2. Checked the WAF logs → rule ID 942100 (SQL injection) was triggering on the login request.
 3. The mobile app was sending a JSON payload with Content-Type: application/json. The WAF was scanning the JSON body and a password containing "SELECT" was triggering the SQL injection rule.
 4. False positive: the password "S3LECT*pass" contained "SELECT" as a substring.
 
@@ -1203,7 +1203,7 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 ## Pro Tips (Expanded)
 
 - **Use ss not netstat:** On modern Linux, ss is faster and shows more information. Netstat is deprecated in many distributions.
-- **Wireshark "Follow TCP Stream":** Right-click a TCP packet, Follow > TCP Stream. Wireshark reassembles the entire application-layer conversation â€” perfect for HTTP, SMTP, or any text-based protocol.
+- **Wireshark "Follow TCP Stream":** Right-click a TCP packet, Follow > TCP Stream. Wireshark reassembles the entire application-layer conversation → perfect for HTTP, SMTP, or any text-based protocol.
 - **ICMP blocking bluff:** If ping fails but web browsing works, ICMP is blocked. Use tcping or curl to test TCP connectivity.
 - **MTR for intermittent issues:** A single traceroute or ping snapshot misses transient problems. Run MTR for 5-10 minutes.
 - **Binary search MTU:** Find path MTU in O(log n) probes rather than linear scanning. Start with 1500, then 750, then split difference.
@@ -1222,7 +1222,7 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 - ss shows socket statistics: listening, established, and connection states.
 - iperf measures TCP/UDP throughput between two endpoints.
 - A systematic layer-by-layer approach isolates the root cause efficiently.
-- 80% of problems are at Layers 1-2 â€” start with physical checks.
+- 80% of problems are at Layers 1-2 → start with physical checks.
 - Duplex mismatches cause CRC errors and late collisions.
 - TIME_WAIT exhaustion is the most common TCP state issue.
 - ICMP blocking is a security feature, not a network failure.

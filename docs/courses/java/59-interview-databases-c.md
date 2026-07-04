@@ -93,20 +93,20 @@ public class Document {
 
 **Answer:**
 
-OSIV keeps the Hibernate session open throughout the entire HTTP request, including during view rendering. This means lazy loading works in your templates â€” which sounds convenient â€” but it causes serious production problems.
+OSIV keeps the Hibernate session open throughout the entire HTTP request, including during view rendering. This means lazy loading works in your templates → which sounds convenient → but it causes serious production problems.
 
 ```yaml
-# Spring Boot default (enabled) â€” causes the anti-pattern:
+# Spring Boot default (enabled) → causes the anti-pattern:
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-b.md) | **Next:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md)
 spring:
   jpa:
-    open-in-view: true   # default is true â€” BAD for production
+    open-in-view: true   # default is true → BAD for production
 ```
 
 Problems with OSIV:
 1. **Connection pool exhaustion**: The database connection is held for the entire request, including slow view rendering or network I/O. Each connection is unavailable for other requests.
-2. **Lazy loading in unexpected places**: Templates trigger N+1 queries silently â€” developers don't notice until production load.
+2. **Lazy loading in unexpected places**: Templates trigger N+1 queries silently → developers don't notice until production load.
 3. **Transaction boundary confusion**: Developers think a transaction is open because entities are still accessible, but the transaction may have already committed.
 4. **Hard-to-debug performance issues**: A page that renders fine locally with 10 entities triggers 100 queries in production with real data.
 
@@ -128,7 +128,7 @@ public class OrderService {
         Order order = orderRepo.findByIdWithItemsAndCustomer(orderId);
         // All lazy associations are loaded inside the transaction
         // After this method returns, the session is closed
-        return OrderDto.from(order);  // DTO â€” no lazy loading during serialization
+        return OrderDto.from(order);  // DTO → no lazy loading during serialization
     }
 }
 ```
@@ -268,7 +268,7 @@ Use Specifications over `@Query` when:
 
 Multi-tenancy separates data across tenants (customers/organizations). Three approaches:
 
-**1. Separate Database** â€” each tenant has its own database:
+**1. Separate Database** → each tenant has its own database:
 ```yaml
 # application.yml
 
@@ -297,7 +297,7 @@ public class TenantConnectionProvider
 }
 ```
 
-**2. Separate Schema** â€” same database, different schemas per tenant:
+**2. Separate Schema** → same database, different schemas per tenant:
 ```java
 public class TenantSchemaResolver implements CurrentTenantIdentifierResolver {
     @Override
@@ -309,7 +309,7 @@ public class TenantSchemaResolver implements CurrentTenantIdentifierResolver {
 }
 ```
 
-**3. Discriminator Column** â€” same table, a `tenant_id` column on every row:
+**3. Discriminator Column** → same table, a `tenant_id` column on every row:
 ```java
 @Entity
 @Where(clause = "tenant_id = current_tenant_id()")
@@ -331,7 +331,7 @@ public List<Document> getDocuments() {
 }
 ```
 
-Separate database is strongest isolation (best for compliance). Schema per tenant is a good middle ground. Discriminator column is simplest but riskiest â€” one bug can leak data between tenants. Never use discriminator-column tenancy for regulated data (HIPAA, GDPR financial).
+Separate database is strongest isolation (best for compliance). Schema per tenant is a good middle ground. Discriminator column is simplest but riskiest → one bug can leak data between tenants. Never use discriminator-column tenancy for regulated data (HIPAA, GDPR financial).
 
 ---
 
@@ -379,7 +379,7 @@ public List<User> searchCriteria(String name, String email, Boolean active) {
 }
 ```
 
-Use NativeQuery for database-specific features (window functions, `ILike`, full-text search). Use JPQL for 80% of queries â€” it is expressive and portable. Use CriteriaQuery only when building dynamic queries with a combinatorial number of optional filters (but even then, Specifications are usually cleaner).
+Use NativeQuery for database-specific features (window functions, `ILike`, full-text search). Use JPQL for 80% of queries → it is expressive and portable. Use CriteriaQuery only when building dynamic queries with a combinatorial number of optional filters (but even then, Specifications are usually cleaner).
 
 ---
 
@@ -429,9 +429,9 @@ public interface OrderRepository extends MongoRepository<Order, String> {
 ```
 
 Key differences from JPA:
-- No joins â€” embed related data or reference by ID
+- No joins → embed related data or reference by ID
 - No schema enforcement (unless you use schema validation)
-- Atomic operations on single documents only â€” no cross-document transactions (unless using replica sets)
+- Atomic operations on single documents only → no cross-document transactions (unless using replica sets)
 - Indexes defined via `@Indexed`, `@CompoundIndex`, or programmatically
 
 ```java
@@ -443,7 +443,7 @@ public class Order {
     @Indexed
     private String customerId;
 
-    @Indexed(expireAfterSeconds = 7776000)  // TTL index â€” auto-delete after 90 days
+    @Indexed(expireAfterSeconds = 7776000)  // TTL index → auto-delete after 90 days
     private LocalDateTime createdAt;
 }
 ```
@@ -458,7 +458,7 @@ Use MongoDB when your data is document-shaped (JSON-like, nested, varying schema
 
 Connection pooling reuses database connections instead of creating a new TCP connection for every request. Creating a connection is expensive (TCP handshake, SSL negotiation, authentication takes 10-100 ms). A pool maintains a set of open connections that are borrowed and returned.
 
-Spring Boot uses HikariCP by default â€” the fastest connection pool in the Java ecosystem.
+Spring Boot uses HikariCP by default → the fastest connection pool in the Java ecosystem.
 
 ```yaml
 spring:
@@ -480,8 +480,8 @@ spring:
 Picking `maximum-pool-size`:
 - Formula: `(core_count * 2) + effective_spindle_count`
 - For a typical 8-core server: `(8 * 2) + 1 = 17`, rounded to 20
-- More connections do not mean more throughput â€” PostgreSQL (and most databases) scales poorly beyond 50-100 connections
-- Monitor `pool.Wait` time â€” if connections are waiting, increase the pool size gradually
+- More connections do not mean more throughput → PostgreSQL (and most databases) scales poorly beyond 50-100 connections
+- Monitor `pool.Wait` time → if connections are waiting, increase the pool size gradually
 
 ```java
 // Programmatic configuration (if needed):
@@ -556,7 +556,7 @@ public class ProductService {
     @CachePut(value = "products", key = "#product.id")
     public Product updateProduct(Product product) {
         return productRepo.save(product);
-        // Updates the cache â€” next read gets fresh data
+        // Updates the cache → next read gets fresh data
     }
 
     @CacheEvict(value = "products", key = "#id")

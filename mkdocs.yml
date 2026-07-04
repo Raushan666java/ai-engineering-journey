@@ -10,6 +10,7 @@ edit_uri: edit/main/docs/
 theme:
   favicon: assets/images/favicon.svg
   name: material
+  custom_dir: overrides
   language: en
   palette:
     - scheme: default
@@ -25,7 +26,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   font:
-    text: Source Serif 4
+    text: Inter
     code: JetBrains Mono
   features:
     - navigation.tabs
@@ -45,9 +46,11 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+extra_css:
+  - stylesheets/extra.css
+
 plugins:
   - search
-
 
 markdown_extensions:
   - admonition

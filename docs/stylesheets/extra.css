@@ -54,6 +54,28 @@
 .md-tabs {
   background: var(--tp-surface) !important;
   border-bottom: 1px solid var(--tp-border) !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--tp-border) transparent !important;
+}
+
+.md-tabs::-webkit-scrollbar {
+  height: 3px !important;
+}
+
+.md-tabs::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.md-tabs::-webkit-scrollbar-thumb {
+  background: var(--tp-border) !important;
+  border-radius: 3px !important;
+}
+
+.md-tabs__list {
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
 }
 
 .md-tabs__link {

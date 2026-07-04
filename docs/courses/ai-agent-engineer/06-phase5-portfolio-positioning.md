@@ -42,10 +42,10 @@ A recruiter or technical lead opens your README. They spend **60 seconds** decid
 
 ## Demo
 [Link to live demo](https://rag-demo.apexpillar.tech)
-![Demo Screenshot](demo.png)
+<!-- Demo Screenshot (placeholder) -->
 
 ## Architecture
-![Architecture Diagram](architecture.png)
+<!-- Architecture Diagram (placeholder) -->
 
 ## Quick Start
 ```

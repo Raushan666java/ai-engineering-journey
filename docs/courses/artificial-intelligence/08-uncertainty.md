@@ -1,6 +1,6 @@
 # Chapter 8: Uncertainty and Probabilistic Reasoning
 
-**Previous:** [Chapter 7: Logical Reasoning and Inference](07-logical-reasoning.md) | **Next:** [Chapter 9: Planning](09-planning.md)
+**Previous:** [Chapter 7: Logical Reasoning and Inference](07-logical-reasoning.md) | **Next:** [Chapter 9: Machine Learning](09-machine-learning.md)
 
 ---
 

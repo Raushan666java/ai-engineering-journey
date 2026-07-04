@@ -1,6 +1,6 @@
 # Chapter 9: Reasoning Under Uncertainty
 
-**Previous:** [Chapter 8: Planning](08-planning.md) | **Next:** [Chapter 10: Machine Learning](10-machine-learning.md)
+**Previous:** [Chapter 8: Planning](08-planning.md) | **Next:** [Chapter 10: Probabilistic Reasoning](10-probabilistic-reasoning.md)
 
 ## Learning Objectives
 

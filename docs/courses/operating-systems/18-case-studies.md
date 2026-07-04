@@ -3012,5 +3012,5 @@ Tesla vehicles run **Linux** (specifically Ubuntu-based Yocto/Buildroot) for the
     - Hyper-V (VCC, verified hypervisor)
     - For each: what properties are proven, what is the TCB size, how much of the kernel is verified, and what are the practical limitations of the approach?
 
-**Next Chapter: [Capstone Project: Build a Mini-OS](./19-capstone.md) >>**
+**Next Chapter: [Back to Overview](./index.md) >>**
 

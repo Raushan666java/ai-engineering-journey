@@ -756,21 +756,21 @@ nav:
     - Applications: courses/discrete-mathematics/15-applications.md
   - "🔲 Digital Logic":
     - Overview: courses/digital-logic/index.md
-    - Number Systems: courses/digital-logic/01-number-systems.md
+    - Introduction: courses/digital-logic/01-introduction.md
     - Boolean Algebra: courses/digital-logic/02-boolean-algebra.md
-    - Gates: courses/digital-logic/03-gates.md
-    - Combinational Circuits: courses/digital-logic/04-combinational-circuits.md
-    - Flipflops: courses/digital-logic/05-flipflops.md
+    - Logic Gates: courses/digital-logic/03-logic-gates.md
+    - Karnaugh Maps: courses/digital-logic/04-karnaugh-maps.md
+    - Combinational Circuits: courses/digital-logic/05-combinational-circuits.md
     - Sequential Circuits: courses/digital-logic/06-sequential-circuits.md
-    - Memory: courses/digital-logic/07-memory.md
-    - Computer Architecture: courses/digital-logic/08-computer-architecture.md
-    - Datapath: courses/digital-logic/09-datapath.md
-    - Control Unit: courses/digital-logic/10-control-unit.md
-    - Isa: courses/digital-logic/11-isa.md
-    - Pipelining: courses/digital-logic/12-pipelining.md
-    - Memory Hierarchy: courses/digital-logic/13-memory-hierarchy.md
-    - Io: courses/digital-logic/14-io.md
-    - Modern Arch: courses/digital-logic/15-modern-arch.md
+    - State Machines: courses/digital-logic/07-state-machines.md
+    - Registers & Counters: courses/digital-logic/08-registers-counters.md
+    - Memory: courses/digital-logic/09-memory.md
+    - PLA & PAL: courses/digital-logic/10-pla-pal.md
+    - Arithmetic Circuits: courses/digital-logic/11-arithmetic-circuits.md
+    - HDL: courses/digital-logic/12-hdl.md
+    - DAC & ADC: courses/digital-logic/13-dac-adc.md
+    - Timing Analysis: courses/digital-logic/14-timing-analysis.md
+    - Advanced Topics: courses/digital-logic/15-advanced-topics.md
   - "🗃️ Data Structures":
     - Overview: courses/data-structures/index.md
     - Complexity: courses/data-structures/01-complexity.md
@@ -894,21 +894,22 @@ nav:
 
   - "⚛️ Theory of Computation":
     - Overview: courses/theory-of-computation/index.md
-    - Dfa: courses/theory-of-computation/01-dfa.md
-    - Nfa: courses/theory-of-computation/02-nfa.md
-    - Regex: courses/theory-of-computation/03-regex.md
-    - Regular Languages: courses/theory-of-computation/04-regular-languages.md
-    - Cfg: courses/theory-of-computation/05-cfg.md
-    - Pda: courses/theory-of-computation/06-pda.md
-    - Cfl: courses/theory-of-computation/07-cfl.md
-    - Turing: courses/theory-of-computation/08-turing.md
-    - Turing Extensions: courses/theory-of-computation/09-turing-extensions.md
-    - Decidability: courses/theory-of-computation/10-decidability.md
-    - Reducibility: courses/theory-of-computation/11-reducibility.md
-    - Time Complexity: courses/theory-of-computation/12-time-complexity.md
-    - Space Complexity: courses/theory-of-computation/13-space-complexity.md
-    - Advanced Complexity: courses/theory-of-computation/14-advanced-complexity.md
-    - Applications: courses/theory-of-computation/15-applications.md
+    - Introduction: courses/theory-of-computation/01-introduction.md
+    - DFA: courses/theory-of-computation/02-dfa.md
+    - NFA: courses/theory-of-computation/03-nfa.md
+    - Regex: courses/theory-of-computation/04-regex.md
+    - Regular Languages: courses/theory-of-computation/05-regular-languages.md
+    - CFG: courses/theory-of-computation/06-cfg.md
+    - PDA: courses/theory-of-computation/07-pda.md
+    - CFL: courses/theory-of-computation/08-cfl.md
+    - Turing Machines: courses/theory-of-computation/09-turing.md
+    - Turing Extensions: courses/theory-of-computation/10-turing-extensions.md
+    - Decidability: courses/theory-of-computation/11-decidability.md
+    - Reducibility: courses/theory-of-computation/12-reducibility.md
+    - Time Complexity: courses/theory-of-computation/13-time-complexity.md
+    - Space Complexity: courses/theory-of-computation/14-space-complexity.md
+    - Advanced Complexity: courses/theory-of-computation/15-advanced-complexity.md
+    - Applications: courses/theory-of-computation/16-applications.md
   - "🔄 Compiler Design":
     - Overview: courses/compiler-design/index.md
     - Introduction: courses/compiler-design/01-introduction.md
@@ -1143,7 +1144,6 @@ nav:
     - Reasoning Under Uncertainty: courses/artificial-intelligence/08-uncertainty.md
     - Machine Learning: courses/artificial-intelligence/09-machine-learning.md
     - Advanced Uncertainty: courses/artificial-intelligence/09-uncertainty.md
-    - Deep Learning: courses/artificial-intelligence/10-deep-learning.md
     - Probabilistic Reasoning: courses/artificial-intelligence/10-probabilistic-reasoning.md
     - Reinforcement Learning: courses/artificial-intelligence/11-reinforcement-learning.md
     - Nlp: courses/artificial-intelligence/12-nlp.md

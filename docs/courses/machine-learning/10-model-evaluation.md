@@ -1,6 +1,6 @@
 # Chapter 10: Model Selection and Evaluation
 
-> **Previous:** [Dimensionality Reduction](../09-dimensionality-reduction.md) | **Next:** None (Last Chapter)
+> **Previous:** [Dimensionality Reduction](./09-dimensionality-reduction.md) | **Next:** None (Last Chapter)
 
 ---
 

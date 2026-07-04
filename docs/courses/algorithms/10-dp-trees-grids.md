@@ -1,6 +1,6 @@
 # Chapter 10: Trees, Grids & Dynamic Programming
 
-> **Prerequisites:** [Chapter 9: Dynamic Programming — Sequences](./09-dp-sequences.md) — DP recurrences for chain structures | **Next:** [Chapter 11: Shortest Paths & MST](./11-shortest-paths-mst.md) — Graph algorithms with DP foundations
+> **Prerequisites:** [Chapter 9: Dynamic Programming — Sequences](./09-dp-sequences.md) — DP recurrences for chain structures | **Next:** [Chapter 11: Shortest Paths & MST](./11-graph-shortest.md) — Graph algorithms with DP foundations
 
 ## Learning Objectives
 

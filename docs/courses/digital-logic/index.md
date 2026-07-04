@@ -1,8 +1,8 @@
-# Digital Logic & Computer Architecture — Course Overview
+# Digital Logic — Course Overview
 
 ## Course Description
 
-This textbook presents a comprehensive treatment of digital logic design and computer architecture, progressing from fundamental number systems through modern multi-core and GPU architectures. The material is suitable for undergraduate students in computer engineering, electrical engineering, and computer science. Each chapter builds systematically upon prior concepts, establishing both theoretical foundations and practical design skills.
+This textbook presents a comprehensive treatment of digital logic design, progressing from fundamental number systems through advanced topics like HDL, DAC/ADC, and timing analysis. The material is suitable for undergraduate students in computer engineering, electrical engineering, and computer science. Each chapter builds systematically upon prior concepts, establishing both theoretical foundations and practical design skills.
 
 ## Prerequisites
 
@@ -11,37 +11,37 @@ This textbook presents a comprehensive treatment of digital logic design and com
 
 ## Course Structure
 
-The textbook is organised into sixteen chapters spanning three thematic units:
+The textbook is organised into fifteen chapters spanning three thematic units:
 
-### Unit I: Digital Logic Foundations (Chapters 1–4)
-
-| Chapter | Title | Topics |
-|---------|-------|--------|
-| 1 | Number Systems | Decimal, binary, octal, hexadecimal; base conversions; signed number representations; BCD; Gray code |
-| 2 | Boolean Algebra | Postulates and theorems; De Morgan's laws; SOP/POS forms; Karnaugh maps; Quine-McCluskey minimisation |
-| 3 | Logic Gates | AND, OR, NOT, NAND, NOR, XOR, XNOR; universal gates; TTL and CMOS logic families |
-| 4 | Combinational Circuits | Adders, subtractors, multiplexers, demultiplexers, encoders, decoders, comparators, ALU design |
-
-### Unit II: Sequential Logic and Memory (Chapters 5–7)
+### Unit I: Digital Logic Foundations (Chapters 1–5)
 
 | Chapter | Title | Topics |
 |---------|-------|--------|
-| 5 | Flip-Flops | SR, JK, D, T flip-flops; edge triggering; characteristic and excitation tables |
-| 6 | Sequential Circuits | State diagrams and tables; Mealy vs Moore machines; registers; counters; sequence detectors |
-| 7 | Memory Systems | SRAM, DRAM, ROM, PROM, EPROM, EEPROM, Flash; address decoding; memory organisation |
+| 1 | Introduction | Number systems, binary arithmetic, signed representations, BCD, Gray code |
+| 2 | Boolean Algebra | Postulates, theorems, De Morgan's laws, SOP/POS forms, minimisation |
+| 3 | Logic Gates | AND, OR, NOT, NAND, NOR, XOR, XNOR; universal gates; logic families |
+| 4 | Karnaugh Maps | 2-5 variable K-maps, don't-care conditions, Quine-McCluskey algorithm |
+| 5 | Combinational Circuits | Adders, subtractors, multiplexers, demultiplexers, encoders, decoders, comparators |
 
-### Unit III: Computer Architecture (Chapters 8–16)
+### Unit II: Sequential Logic (Chapters 6–9)
 
 | Chapter | Title | Topics |
 |---------|-------|--------|
-| 8 | Computer Architecture | Von Neumann and Harvard models; CPU components; instruction cycle; RISC vs CISC |
-| 9 | Datapath Design | ALU integration; register file; data path; control signals; single-cycle implementation |
-| 10 | Control Unit | Hardwired and microprogrammed control; control logic; micro-instruction sequencing |
-| 11 | Instruction Set Architecture | Instruction formats; addressing modes; MIPS ISA reference |
-| 12 | Pipelining | Pipeline stages; structural, data, and control hazards; forwarding; branch prediction |
-| 13 | Memory Hierarchy | Cache organisation; direct, associative, set-associative mappings; write policies; virtual memory; TLB |
-| 14 | Input/Output | Programmed I/O; interrupt-driven I/O; DMA; I/O buses; I/O processors |
-| 15 | Modern Architectures | Superscalar; VLIW; multi-core; GPU architecture; vector processing; speculative execution |
+| 6 | Sequential Circuits | Latches, flip-flops, state diagrams, Mealy vs Moore machines |
+| 7 | State Machines | FSM design, state encoding, sequence detectors, algorithmic state machines |
+| 8 | Registers & Counters | Shift registers, synchronous/asynchronous counters, ring counters, applications |
+| 9 | Memory Systems | SRAM, DRAM, ROM, PROM, EPROM, EEPROM, Flash; address decoding; memory organisation |
+
+### Unit III: Advanced Topics (Chapters 10–15)
+
+| Chapter | Title | Topics |
+|---------|-------|--------|
+| 10 | PLA & PAL | Programmable logic arrays, PAL, ROM-based logic design, CPLD architecture |
+| 11 | Arithmetic Circuits | Ripple-carry adders, carry-lookahead, multipliers, division, floating-point |
+| 12 | HDL | Verilog/VHDL basics, structural/dataflow/behavioural modelling, simulation |
+| 13 | DAC & ADC | Sampling theorem, DAC architectures, ADC types, resolution, accuracy |
+| 14 | Timing Analysis | Propagation delay, setup/hold constraints, critical path, clock skew, metastability |
+| 15 | Advanced Topics | Low-power design, FPGA architecture, asynchronous design, testability |
 
 ## Learning Approach
 
@@ -72,32 +72,32 @@ Students are encouraged to consult the following supplementary resources:
 
 ---
 
-[Chapter 1: Number Systems](01-number-systems.md)
+[Chapter 1: Introduction](01-introduction.md)
 
 [Chapter 2: Boolean Algebra](02-boolean-algebra.md)
 
-[Chapter 3: Logic Gates](03-gates.md)
+[Chapter 3: Logic Gates](03-logic-gates.md)
 
-[Chapter 4: Combinational Circuits](04-combinational-circuits.md)
+[Chapter 4: Karnaugh Maps](04-karnaugh-maps.md)
 
-[Chapter 5: Flip-Flops](05-flipflops.md)
+[Chapter 5: Combinational Circuits](05-combinational-circuits.md)
 
 [Chapter 6: Sequential Circuits](06-sequential-circuits.md)
 
-[Chapter 7: Memory Systems](07-memory.md)
+[Chapter 7: State Machines](07-state-machines.md)
 
-[Chapter 8: Computer Architecture](08-computer-architecture.md)
+[Chapter 8: Registers & Counters](08-registers-counters.md)
 
-[Chapter 9: Datapath Design](09-datapath.md)
+[Chapter 9: Memory Systems](09-memory.md)
 
-[Chapter 10: Control Unit](10-control-unit.md)
+[Chapter 10: PLA & PAL](10-pla-pal.md)
 
-[Chapter 11: Instruction Set Architecture](11-isa.md)
+[Chapter 11: Arithmetic Circuits](11-arithmetic-circuits.md)
 
-[Chapter 12: Pipelining](12-pipelining.md)
+[Chapter 12: HDL](12-hdl.md)
 
-[Chapter 13: Memory Hierarchy](13-memory-hierarchy.md)
+[Chapter 13: DAC & ADC](13-dac-adc.md)
 
-[Chapter 14: Input/Output](14-io.md)
+[Chapter 14: Timing Analysis](14-timing-analysis.md)
 
-[Chapter 15: Modern Architectures](15-modern-arch.md)
+[Chapter 15: Advanced Topics](15-advanced-topics.md)

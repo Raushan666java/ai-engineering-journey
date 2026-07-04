@@ -1,6 +1,6 @@
 # Chapter 9: Dimensionality Reduction
 
-> **Previous:** [Unsupervised Learning](../08-unsupervised-learning.md) | **Next:** [Model Evaluation](../10-model-evaluation.md)
+> **Previous:** [Unsupervised Learning](./08-unsupervised-learning.md) | **Next:** [Model Evaluation](./10-model-evaluation.md)
 
 ---
 

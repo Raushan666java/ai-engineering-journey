@@ -1,6 +1,6 @@
 # Chapter 8: Unsupervised Learning
 
-> **Previous:** [Neural Networks](../07-neural-networks.md) | **Next:** [Dimensionality Reduction](../09-dimensionality-reduction.md)
+> **Previous:** [Neural Networks](./07-neural-networks.md) | **Next:** [Dimensionality Reduction](./09-dimensionality-reduction.md)
 
 ---
 

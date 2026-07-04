@@ -15,7 +15,7 @@ Students will progress from classical symbolic AI—agents, search, logic, const
 
 ## Study Path
 
-The course follows the classic arc from symbolic to statistical AI. Chapters 1–2 establish the agent paradigm. Chapters 3–5 cover search-based problem solving in deterministic and adversarial settings. Chapters 6–7 introduce logical reasoning. Chapter 8 handles uncertainty with probability. Chapters 9–10 move into machine learning and deep neural networks. Each chapter builds on the last; completion in sequence is strongly recommended.
+The course follows the classic arc from symbolic to statistical AI. Chapters 1–2 establish the agent paradigm. Chapters 3–5 cover search-based problem solving in deterministic and adversarial settings. Chapters 6–7 introduce logical reasoning. Chapter 8 handles uncertainty with probability. Chapter 9 covers machine learning from examples, and Chapter 10 introduces probabilistic reasoning. Each chapter builds on the last; completion in sequence is strongly recommended.
 
 ## Chapter Listing
 
@@ -30,7 +30,7 @@ The course follows the classic arc from symbolic to statistical AI. Chapters 1�
 | 07 | [First-Order Logic and Inference](07-fol.md) | FOL syntax and semantics, quantifiers and scope, Unification, Generalized Modus Ponens, Forward and Backward Chaining, Resolution |
 | 08 | [Uncertainty and Probabilistic Reasoning](08-uncertainty.md) | Probability foundations, Bayes' Rule, Bayesian networks, conditional independence, Variable Elimination, approximate inference |
 | 09 | [Machine Learning: Learning from Examples](09-machine-learning.md) | Supervised vs. unsupervised learning, Decision Trees, Information Gain, inductive bias, Bias-Variance Tradeoff, model evaluation and validation |
-| 10 | [Neural Networks and Deep Learning](10-deep-learning.md) | Perceptron model, Multi-Layer Perceptrons, Backpropagation, activation functions (ReLU, Sigmoid, Tanh), deep learning advantages and applications |
+| 10 | [Probabilistic Reasoning](10-probabilistic-reasoning.md) | Bayesian networks, d-separation, variable elimination, approximate inference (Gibbs sampling, likelihood weighting), structure learning |
 
 ## Supplementary Resources
 

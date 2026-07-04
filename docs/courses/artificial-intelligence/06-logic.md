@@ -1,6 +1,6 @@
 # Chapter 6: Logical Agents and Propositional Logic
 
-**Previous:** [Chapter 5: Game Playing and Adversarial Search](05-game-playing.md) | **Next:** [Chapter 7: Knowledge Representation](07-knowledge-representation.md)
+**Previous:** [Chapter 5: Constraint Satisfaction Problems](05-csp.md) | **Next:** [Chapter 7: First-Order Logic and Inference](07-fol.md)
 
 ---
 

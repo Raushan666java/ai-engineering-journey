@@ -1,6 +1,6 @@
 # Chapter 7: Logical Reasoning and Inference
 
-**Previous:** [Chapter 6: First-Order Logic and Inference](06-fol.md) | **Next:** [Chapter 8: Uncertainty in AI](08-uncertainty.md)
+**Previous:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md) | **Next:** [Chapter 8: Uncertainty in AI](08-uncertainty.md)
 
 ## Learning Objectives
 

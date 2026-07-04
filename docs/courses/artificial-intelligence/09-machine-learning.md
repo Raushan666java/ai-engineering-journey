@@ -1,6 +1,6 @@
 # Chapter 9: Machine Learning: Learning from Examples
 
-**Previous:** [Chapter 9: Reasoning Under Uncertainty](09-uncertainty.md) | **Next:** [Chapter 10: Neural Networks and Deep Learning](10-deep-learning.md)
+**Previous:** [Chapter 9: Reasoning Under Uncertainty](09-uncertainty.md) | **Next:** [Chapter 10: Probabilistic Reasoning](10-probabilistic-reasoning.md)
 
 ---
 

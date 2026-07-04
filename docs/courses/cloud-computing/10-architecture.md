@@ -1,6 +1,6 @@
 # Chapter 10: Cloud Architecture Design Patterns
 
-> **Previous:** [Chapter 9: Containerization](./09-containerization.md) | **Next:** [Course Capstone](./00-capstone.md)
+> **Previous:** [Chapter 9: Containerization](./09-containerization.md)
 
 ## Learning Objectives
 

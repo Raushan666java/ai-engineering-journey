@@ -1,6 +1,6 @@
 # Chapter 7: Neural Networks
 
-> **Previous:** [Support Vector Machines](../06-support-vector-machines.md) | **Next:** [Unsupervised Learning](../08-unsupervised-learning.md)
+> **Previous:** [Support Vector Machines](./06-support-vector-machines.md) | **Next:** [Unsupervised Learning](./08-unsupervised-learning.md)
 
 ---
 

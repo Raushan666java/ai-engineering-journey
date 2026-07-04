@@ -83,7 +83,6 @@ extra_css:
   - assets/css/tabs-scroll.css
   - stylesheets/extra.css
   - stylesheets/study-theme.css
-  - assets/css/study-ui-redesign.css
 
 extra_javascript:
   - assets/js/noise.js
@@ -1351,4 +1350,5 @@ nav:
     - "Ch 8 — Multi-Agent Loops": courses/loop-engineering/ch08-multi-agent-loops.md
     - "Ch 9 — Loop Tooling": courses/loop-engineering/ch09-loop-tooling.md
     - "Ch 10 — Capstone: Build a Coding Agent": courses/loop-engineering/ch10-capstone.md
+
 

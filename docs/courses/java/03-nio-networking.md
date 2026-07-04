@@ -368,15 +368,15 @@ A `Channel` represents an open connection to an I/O source or sink. Channels are
 
 ```
 Channel (interface)
-â”œâ”€â”€ ReadableByteChannel
-â”‚   â””â”€â”€ ScatteringByteChannel
-â”œâ”€â”€ WritableByteChannel
-â”‚   â””â”€â”€ GatheringByteChannel
-â”œâ”€â”€ InterruptibleChannel
-â”œâ”€â”€ FileChannel
-â”œâ”€â”€ SocketChannel
-â”œâ”€â”€ ServerSocketChannel
-â””â”€â”€ DatagramChannel
+├── ReadableByteChannel
+│   └── ScatteringByteChannel
+├── WritableByteChannel
+│   └── GatheringByteChannel
+├── InterruptibleChannel
+├── FileChannel
+├── SocketChannel
+├── ServerSocketChannel
+└── DatagramChannel
 ```
 
 ### 3.2 FileChannel

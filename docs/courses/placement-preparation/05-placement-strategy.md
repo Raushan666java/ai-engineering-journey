@@ -1174,97 +1174,97 @@ Placement season is a mental health minefield. Students experience:
 
 ```
 MONTH 1 (February) → Foundation Phase
-â”œâ”€â”€ Week 1: Arrays + Strings → solve 30 problems
-â”œâ”€â”€ Week 2: Linked Lists + Stacks/Queues → solve 20 problems
-â”œâ”€â”€ Week 3: Trees → solve 25 problems
-â”œâ”€â”€ Week 4: Graphs → solve 20 problems
-â””â”€â”€ Goal: 100 problems solved
+├── Week 1: Arrays + Strings → solve 30 problems
+├── Week 2: Linked Lists + Stacks/Queues → solve 20 problems
+├── Week 3: Trees → solve 25 problems
+├── Week 4: Graphs → solve 20 problems
+└── Goal: 100 problems solved
 
 MONTH 2 (March) → Deep DSA Phase
-â”œâ”€â”€ Week 1: Dynamic Programming → solve 25 problems
-â”œâ”€â”€ Week 2: Greedy + Backtracking → solve 15 problems
-â”œâ”€â”€ Week 3: Recursion + Hashing → solve 15 problems
-â”œâ”€â”€ Week 4: Revision of topics covered → solve 25 mixed problems
-â””â”€â”€ Goal: 180 problems solved
+├── Week 1: Dynamic Programming → solve 25 problems
+├── Week 2: Greedy + Backtracking → solve 15 problems
+├── Week 3: Recursion + Hashing → solve 15 problems
+├── Week 4: Revision of topics covered → solve 25 mixed problems
+└── Goal: 180 problems solved
 
 MONTH 3 (April) → CS Fundamentals + Resume
-â”œâ”€â”€ Week 1: Operating Systems → read Galvin chapters, solve 50 MCQs
-â”œâ”€â”€ Week 2: DBMS → normalization, indexing, queries → solve 30 SQL queries
-â”œâ”€â”€ Week 3: Computer Networks → OSI, TCP/IP, HTTP → solve 50 MCQs
-â”œâ”€â”€ Week 4: OOP Concepts + Design Patterns → implement 5 patterns
-â””â”€â”€ Goal: Resume finalized, reviewed by 3 people
+├── Week 1: Operating Systems → read Galvin chapters, solve 50 MCQs
+├── Week 2: DBMS → normalization, indexing, queries → solve 30 SQL queries
+├── Week 3: Computer Networks → OSI, TCP/IP, HTTP → solve 50 MCQs
+├── Week 4: OOP Concepts + Design Patterns → implement 5 patterns
+└── Goal: Resume finalized, reviewed by 3 people
 
 MONTH 4 (May) → Company-Specific Prep
-â”œâ”€â”€ Week 1: Target sheet of 20 companies created
-â”œâ”€â”€ Week 2: Amazon-specific → solve 20 company-tagged questions
-â”œâ”€â”€ Week 3: Google/Microsoft-specific → solve 20 company-tagged questions
-â”œâ”€â”€ Week 4: Dream company mix → solve topic-specific problems
-â””â”€â”€ Goal: Company shortlist ready, solving tagged questions
+├── Week 1: Target sheet of 20 companies created
+├── Week 2: Amazon-specific → solve 20 company-tagged questions
+├── Week 3: Google/Microsoft-specific → solve 20 company-tagged questions
+├── Week 4: Dream company mix → solve topic-specific problems
+└── Goal: Company shortlist ready, solving tagged questions
 
 MONTH 5 (June) → Mock Interview + Aptitude
-â”œâ”€â”€ Week 1: 5 full-length aptitude tests (timed)
-â”œâ”€â”€ Week 2: 3 DSA mock interviews with seniors
-â”œâ”€â”€ Week 3: 2 CS fundamentals mock interviews
-â”œâ”€â”€ Week 4: 2 system design mocks (for dream/super dream)
-â””â”€â”€ Goal: 10 mocks done, confidence improving
+├── Week 1: 5 full-length aptitude tests (timed)
+├── Week 2: 3 DSA mock interviews with seniors
+├── Week 3: 2 CS fundamentals mock interviews
+├── Week 4: 2 system design mocks (for dream/super dream)
+└── Goal: 10 mocks done, confidence improving
 
 MONTH 6 (July) → PLACEMENT SEASON BEGINS
-â”œâ”€â”€ Week 1: Final revision + document preparation
-â”œâ”€â”€ Week 2: Attend first company assessments
-â”œâ”€â”€ Week 3: Interview calls start → give your best
-â”œâ”€â”€ Week 4: Multiple interviews → stay calm, sleep well
-â””â”€â”€ Goal: At least 1 offer in hand
+├── Week 1: Final revision + document preparation
+├── Week 2: Attend first company assessments
+├── Week 3: Interview calls start → give your best
+├── Week 4: Multiple interviews → stay calm, sleep well
+└── Goal: At least 1 offer in hand
 ```
 
 ### Sample Week During Peak Season
 
 ```
 Monday
-â”œâ”€â”€ 7:00 AM → Wake up, exercise, breakfast
-â”œâ”€â”€ 9:00 AM â€“ 12:00 PM → Company assessment (if scheduled)
-â”œâ”€â”€ 12:00 PM â€“ 1:00 PM → Lunch + break
-â”œâ”€â”€ 1:00 PM â€“ 4:00 PM → Interview preparation (DSA + revise CS fundamentals)
-â”œâ”€â”€ 4:00 PM â€“ 5:00 PM → Rest, listen to music
-â”œâ”€â”€ 5:00 PM â€“ 7:00 PM → Mock interview with peer group
-â”œâ”€â”€ 7:00 PM â€“ 8:00 PM → Dinner, family time
-â”œâ”€â”€ 8:00 PM â€“ 10:00 PM → Light revision + plan for tomorrow
-â”œâ”€â”€ 10:00 PM → Phone away, read or meditate
-â”œâ”€â”€ 11:00 PM → Sleep
+├── 7:00 AM → Wake up, exercise, breakfast
+├── 9:00 AM â€“ 12:00 PM → Company assessment (if scheduled)
+├── 12:00 PM â€“ 1:00 PM → Lunch + break
+├── 1:00 PM â€“ 4:00 PM → Interview preparation (DSA + revise CS fundamentals)
+├── 4:00 PM â€“ 5:00 PM → Rest, listen to music
+├── 5:00 PM â€“ 7:00 PM → Mock interview with peer group
+├── 7:00 PM â€“ 8:00 PM → Dinner, family time
+├── 8:00 PM â€“ 10:00 PM → Light revision + plan for tomorrow
+├── 10:00 PM → Phone away, read or meditate
+├── 11:00 PM → Sleep
 ```
 
 ### Documents Checklist (Printable)
 
 ```
 ALL DOCUMENTS → PRINT 3 SETS
-â–¡ Resume (latest, 1 page, 5 copies)
-â–¡ 10th marksheet
-â–¡ 12th marksheet
-â–¡ All semester mark sheets (print both sides if possible)
-â–¡ CGPA certificate (signed by college)
-â–¡ College ID card (original + photocopy)
-â–¡ Government ID (Aadhar / PAN / Passport)
-â–¡ Passport-size photos (8-10 recent)
-â–¡ Category certificate (SC/ST/OBC → if applicable)
-â–¡ Gap certificate (if applicable)
-â–¡ Internship offer letter (if any)
-â–¡ Previous work experience letter (if any)
-â–¡ LOR (if applying off-campus)
+□ Resume (latest, 1 page, 5 copies)
+□ 10th marksheet
+□ 12th marksheet
+□ All semester mark sheets (print both sides if possible)
+□ CGPA certificate (signed by college)
+□ College ID card (original + photocopy)
+□ Government ID (Aadhar / PAN / Passport)
+□ Passport-size photos (8-10 recent)
+□ Category certificate (SC/ST/OBC → if applicable)
+□ Gap certificate (if applicable)
+□ Internship offer letter (if any)
+□ Previous work experience letter (if any)
+□ LOR (if applying off-campus)
 
 DIGITAL FOLDER
-â–¡ All documents scanned as PDF (named clearly)
-â–¡ Resume PDF (named: YourName_Resume.pdf)
-â–¡ Resume DOCX (for editing if needed)
-â–¡ Portfolio website link (if applicable)
-â–¡ GitHub profile link
-â–¡ LeetCode / HackerRank profile links
+□ All documents scanned as PDF (named clearly)
+□ Resume PDF (named: YourName_Resume.pdf)
+□ Resume DOCX (for editing if needed)
+□ Portfolio website link (if applicable)
+□ GitHub profile link
+□ LeetCode / HackerRank profile links
 
 ONLINE PROFILES → UPDATED
-â–¡ LinkedIn (headline, about, experience, skills, recommendations)
-â–¡ GitHub (README for all projects, pinned repos)
-â–¡ LeetCode (public profile with recent activity)
-â–¡ HackerRank (skill certifications)
-â–¡ CodeChef / Codeforces (if applicable)
-â–¡ Portfolio (if applicable)
+□ LinkedIn (headline, about, experience, skills, recommendations)
+□ GitHub (README for all projects, pinned repos)
+□ LeetCode (public profile with recent activity)
+□ HackerRank (skill certifications)
+□ CodeChef / Codeforces (if applicable)
+□ Portfolio (if applicable)
 ```
 
 ---
@@ -1273,38 +1273,38 @@ ONLINE PROFILES → UPDATED
 
 ```
 NIGHT BEFORE:
-â–¡ Clothes ironed and ready (formals, clean shoes)
-â–¡ ID card and documents in bag
-â–¡ Water bottle filled
-â–¡ Phone charged
-â–¡ Alarm set (main + backup)
-â–¡ Interview time confirmed
-â–¡ Link / room number noted
+□ Clothes ironed and ready (formals, clean shoes)
+□ ID card and documents in bag
+□ Water bottle filled
+□ Phone charged
+□ Alarm set (main + backup)
+□ Interview time confirmed
+□ Link / room number noted
 
 MORNING OF:
-â–¡ Shower, fresh, dressed in formals
-â–¡ Breakfast eaten (not heavy, not skipped)
-â–¡ 10 minutes deep breathing / meditation
-â–¡ 1 quick glance at cheat sheet
-â–¡ Documents bag checked
-â–¡ Reach venue / log in 10 minutes early
+□ Shower, fresh, dressed in formals
+□ Breakfast eaten (not heavy, not skipped)
+□ 10 minutes deep breathing / meditation
+□ 1 quick glance at cheat sheet
+□ Documents bag checked
+□ Reach venue / log in 10 minutes early
 
 DURING THE INTERVIEW:
-â–¡ Greet interviewer with a smile
-â–¡ "May I take notes?" → always ask
-â–¡ Think out loud → never go silent
-â–¡ Ask clarifying questions before coding
-â–¡ Write clean code with proper variable names
-â–¡ Discuss test cases and edge cases
-â–¡ At the end: ask 2 thoughtful questions
-â–¡ Thank the interviewer for their time
+□ Greet interviewer with a smile
+□ "May I take notes?" → always ask
+□ Think out loud → never go silent
+□ Ask clarifying questions before coding
+□ Write clean code with proper variable names
+□ Discuss test cases and edge cases
+□ At the end: ask 2 thoughtful questions
+□ Thank the interviewer for their time
 
 AFTER THE INTERVIEW:
-â–¡ Note down questions you were asked
-â–¡ Note what went well, what did not
-â–¡ Rest for 30 minutes
-â–¡ Prepare for the next interview if scheduled
-â–¡ Result does not matter now → it is out of your hands
+□ Note down questions you were asked
+□ Note what went well, what did not
+□ Rest for 30 minutes
+□ Prepare for the next interview if scheduled
+□ Result does not matter now → it is out of your hands
 ```
 
 ---

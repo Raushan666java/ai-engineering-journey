@@ -28,7 +28,7 @@ flowchart LR
 Sharding (horizontal partitioning) splits a table across multiple database instances. Each shard holds a subset of rows based on a shard key. The application routes queries to the correct shard.
 
 ```java
-// â”€â”€ Shard key routing with AbstractRoutingDataSource â”€â”€
+// ── Shard key routing with AbstractRoutingDataSource ──
 public class ShardRouter {
     private final Map<String, DataSource> shards = Map.of(
         "shard-0", createDataSource("jdbc:postgresql://shard0.example.com:5432/db"),
@@ -42,7 +42,7 @@ public class ShardRouter {
     }
 }
 
-// â”€â”€ Spring AbstractRoutingDataSource â”€â”€
+// ── Spring AbstractRoutingDataSource ──
 public class TenantAwareRoutingSource extends AbstractRoutingDataSource {
     @Override
     protected Object determineCurrentLookupKey() {
@@ -69,7 +69,7 @@ Sharding is the most complex scaling strategy. Exhaust read replicas, vertical s
 Use `@Transactional(readOnly = true)` to route read operations to a replica datasource. Implement this with `AbstractRoutingDataSource` and a `@Transactional` interceptor.
 
 ```java
-// â”€â”€ Multi-datasource configuration â”€â”€
+// ── Multi-datasource configuration ──
 @Configuration
 public class DataSourceConfig {
 
@@ -97,7 +97,7 @@ public class DataSourceConfig {
     }
 }
 
-// â”€â”€ Routing datasource â”€â”€
+// ── Routing datasource ──
 public class RoutingDataSource extends AbstractRoutingDataSource {
     @Override
     protected Object determineCurrentLookupKey() {
@@ -106,7 +106,7 @@ public class RoutingDataSource extends AbstractRoutingDataSource {
     }
 }
 
-// â”€â”€ Usage â”€â”€
+// ── Usage ──
 @Service
 public class UserService {
     @Transactional(readOnly = true)  // routes to REPLICA
@@ -137,27 +137,27 @@ public class Author {
     @Id @GeneratedValue private Long id;
     private String name;
 
-    // â”€â”€ ALL: persist, merge, remove, refresh, detach â”€â”€
+    // ── ALL: persist, merge, remove, refresh, detach ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
     private List<Book> books;
 
-    // â”€â”€ PERSIST: saving Author saves Books â”€â”€
+    // ── PERSIST: saving Author saves Books ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.PERSIST)
     private List<Article> articles;
 
-    // â”€â”€ MERGE: updating Author updates Books â”€â”€
+    // ── MERGE: updating Author updates Books ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.MERGE)
     private List<Book> editedBooks;
 
-    // â”€â”€ REMOVE: deleting Author deletes Books â”€â”€
+    // ── REMOVE: deleting Author deletes Books ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.REMOVE)
     private List<Book> coAuthoredBooks;
 
-    // â”€â”€ DETACH: detaching Author detaches Books â”€â”€
+    // ── DETACH: detaching Author detaches Books ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.DETACH)
     private List<Book> reviewedBooks;
 
-    // â”€â”€ REFRESH: refreshing Author refreshes Books â”€â”€
+    // ── REFRESH: refreshing Author refreshes Books ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.REFRESH)
     private List<Book> proofreadBooks;
 }
@@ -195,7 +195,7 @@ Use `CascadeType.ALL` only when the child entity has no independent lifecycle. N
 `@Embedded` maps the fields of an embeddable class directly into the parent table (flat schema). `@OneToOne` creates a separate table with a foreign key relationship.
 
 ```java
-// â”€â”€ @Embedded → fields in the same table â”€â”€
+// ── @Embedded → fields in the same table ──
 @Embeddable
 public class Address {
     private String street;
@@ -215,7 +215,7 @@ public class User {
 
 // Result: single table "users" with columns: id, name, street, city, zip_code, country
 
-// â”€â”€ @OneToOne → separate table with FK â”€â”€
+// ── @OneToOne → separate table with FK ──
 @Entity
 public class Profile {
     @Id private Long id;
@@ -259,7 +259,7 @@ private Address homeAddress;
 Batch processing inserts or updates thousands of rows efficiently by batching JDBC statements and flushing periodically.
 
 ```java
-// â”€â”€ Configuration â”€â”€
+// ── Configuration ──
 spring:
   jpa:
     properties:
@@ -270,7 +270,7 @@ spring:
         order_updates: true
         batch_versioned_data: true
 
-// â”€â”€ Batch insert service â”€â”€
+// ── Batch insert service ──
 @Service
 public class BatchImportService {
 
@@ -444,7 +444,7 @@ Database rollbacks are more complex than code rollbacks because the schema chang
 Every migration must have a corresponding "down" migration that reverses the change.
 
 ```java
-// â”€â”€ Flyway with callback for rollback support â”€â”€
+// ── Flyway with callback for rollback support ──
 public class FlywayRollbackService {
     public void undoLastMigration() {
         Flyway flyway = Flyway.configure()

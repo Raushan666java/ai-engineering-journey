@@ -2988,13 +2988,13 @@ class ExecutorConfig {
 
 // === Cron expression reference ===
 /*
- â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ second (0-59)
- â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ minute (0-59)
- â”‚ â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ hour (0-23)
- â”‚ â”‚ â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ day of month (1-31)
- â”‚ â”‚ â”‚ â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ month (1-12 or JAN-DEC)
- â”‚ â”‚ â”‚ â”‚ â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ day of week (0-7 or SUN-SAT, 0 and 7 = SUN)
- â”‚ â”‚ â”‚ â”‚ â”‚ â”‚
+ ┌───────── second (0-59)
+ │ ┌───────── minute (0-59)
+ │ │ ┌───────── hour (0-23)
+ │ │ │ ┌───────── day of month (1-31)
+ │ │ │ │ ┌───────── month (1-12 or JAN-DEC)
+ │ │ │ │ │ ┌───────── day of week (0-7 or SUN-SAT, 0 and 7 = SUN)
+ │ │ │ │ │ │
  * * * * * *
  0 0 * * * *     → every hour
  0 */5 * * * *   → every 5 minutes
@@ -6468,7 +6468,7 @@ class ServiceInspector {
 // === Service mesh comparison ===
 /*
 Feature          Eureka            Kubernetes          Consul
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────────────
 Registration     Auto via client   Pod registration    Agent-based
 Health check     Configurable      Liveness/Readiness   Script/TTL
 Self-healing     Client eviction   Pod restart         Deregister
@@ -7109,7 +7109,7 @@ class WebClientConfig {
 // === Migration guide ===
 /*
 Concept              RestTemplate                WebClient
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────────────────
 Request method       getForObject()              .get().retrieve()
 POST body            postForObject()             .post().bodyValue()
 URI params           Object... args              uri(..., args)
@@ -7499,7 +7499,7 @@ class RedisDirectOperations {
 @Cacheable(value = "products", sync = true)  // Locks per key
 
 Feature           Redis            Caffeine         Hazelcast
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+───────────────────────────────────────────────────────────────
 Architecture      External server  In-process        Distributed
 Speed             1-5ms (network)  <1ms              <1ms (local)
 Persistence       Yes              No                Yes
@@ -7665,7 +7665,7 @@ class OrderService {
 // === MongoDB vs RDBMS ===
 /*
 Concept         RDBMS               MongoDB
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────
 Table           table               collection
 Row             row                 document
 Column          column              field
@@ -8029,7 +8029,7 @@ management:
 // === Built-in endpoints ===
 /*
 Endpoint         ID              Exposed  Description
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────
 Health           health          Yes      App + dependency health
 Info             info            Yes      App metadata
 Metrics          metrics         Yes      Micrometer metrics
@@ -8173,7 +8173,7 @@ class MethodLoggingAspect {
 // === Comparison ===
 /*
 Feature         Filter            Interceptor          AOP
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────────
 Level           Servlet           Spring MVC           Method (bean)
 Access to       Request/Response  Request/Response +   Method params,
                                     Handler + Model      annotations
@@ -8192,7 +8192,7 @@ Use cases:
 // === Spring Boot auto-configured filters ===
 /*
 Filter                  Class                    Purpose
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────
 CharacterEncodingFilter CharacterEncodingFilter  Request encoding
 HiddenHttpMethodFilter  HiddenHttpMethodFilter   _method override
 FormContentFilter       FormContentFilter        PUT/DELETE form data
@@ -8314,7 +8314,7 @@ class ProblemDetailsExceptionHandler {
 // === 8. Dependency versions ===
 /*
 Dependency         SB 2.7.x        SB 3.2.x
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────
 Java               8/11/17         17
 Spring Framework   5.3.x           6.1.x
 Jakarta EE         8 (javax.*)     10 (jakarta.*)
@@ -8450,7 +8450,7 @@ class ConfigurableContextExample {
 // === Comparison ===
 /*
 Feature              BeanFactory                        ApplicationContext
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+─────────────────────────────────────────────────────────────────────────────
 Initialization       Lazy (on getBean)                  Eager (on refresh)
 Annotation support   No                                 Yes (@Autowired, etc.)
 AOP support          No                                 Yes (auto-proxying)
@@ -8709,7 +8709,7 @@ class OrderHandler {
 // === Comparison ===
 /*
 Feature         Spring MVC          WebFlux              WebMvc.fn
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+─────────────────────────────────────────────────────────────────────
 I/O model       Blocking            Non-blocking         Blocking
 Thread model    Thread-per-request  Event loop           Thread-per-request
 Server          Tomcat/Jetty        Netty                Tomcat/Jetty

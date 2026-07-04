@@ -129,10 +129,10 @@ IPv6 packets are encapsulated inside IPv4 packets for transport across IPv4-only
 **Pseudocode → 6to4 Encapsulation:**
 ```
 FUNCTION encapsulate_6to4(ipv6_packet):
-    src_ipv4 â† GET_PUBLIC_IPV4()
+    src_ipv4 ← GET_PUBLIC_IPV4()
     # Extract embedded IPv4 from 2002:V4ADDR::/48
-    dst_ipv4 â† EXTRACT_IPV4(ipv6_packet.destination)
-    ipv4_header â† IPv4_HEADER(
+    dst_ipv4 ← EXTRACT_IPV4(ipv6_packet.destination)
+    ipv4_header ← IPv4_HEADER(
         src = src_ipv4,
         dst = dst_ipv4,
         protocol = 41  # IPv6 encapsulation
@@ -237,34 +237,34 @@ The Internet of Things (IoT) connects billions of constrained devices → sensor
 ```
 FUNCTION compress_ipv6(ipv6_packet, context):
     # IPHC encoding bits
-    compressed â† 0x60  # IPHC dispatch byte
+    compressed ← 0x60  # IPHC dispatch byte
     # Check if source/dest addresses are link-local (compressible)
     IF ipv6_packet.src PREFIX_MATCHES fe80::/10:
-        compressed.SAC â† 0  # Stateless compression
-        compressed.SAM â† 11   # 64 bits derived from MAC
+        compressed.SAC ← 0  # Stateless compression
+        compressed.SAM ← 11   # 64 bits derived from MAC
         compressed <<= 4
     IF ipv6_packet.dst PREFIX_MATCHES fe80::/10:
-        compressed.DAC â† 0
-        compressed.DAM â† 11
+        compressed.DAC ← 0
+        compressed.DAM ← 11
         compressed <<= 4
     # Compress Next Header (UDP → NHC encoding)
     IF ipv6_packet.next_header == 17:  # UDP
-        compressed.NHC â† 0xF0  # UDP compressed
+        compressed.NHC ← 0xF0  # UDP compressed
         compressed += compress_udp(ipv6_packet.udp)
     # Return compressed header + payload
     RETURN compressed + ipv6_packet.payload
 
 FUNCTION decompress_ipv6(compressed, context):
-    ipv6 â† IPv6()
-    ipv6.version â† 6
+    ipv6 ← IPv6()
+    ipv6.version ← 6
     IF compressed & 0x80:  # Source address compressed
-        ipv6.src â† MAC_TO_IPV6(radio_src_mac)
+        ipv6.src ← MAC_TO_IPV6(radio_src_mac)
     IF compressed & 0x40:  # Dest address compressed
-        ipv6.dst â† MAC_TO_IPV6(radio_dst_mac)
-    ipv6.next_header â† decode_nhc(compressed.NHC)
+        ipv6.dst ← MAC_TO_IPV6(radio_dst_mac)
+    ipv6.next_header ← decode_nhc(compressed.NHC)
     IF ipv6.next_header == 17:  # UDP
-        ipv6.udp â† decompress_udp()
-    ipv6.payload â† compressed.payload
+        ipv6.udp ← decompress_udp()
+    ipv6.payload ← compressed.payload
     RETURN ipv6
 ```
 
@@ -1192,31 +1192,31 @@ The only mature quantum networking technology. QKD allows two parties to share a
 
 ```
 ALICE:
-  bits â† RANDOM_BITS(n)
-  bases â† RANDOM_BASES(n)  # + or Ã—
-  qubits â† ENCODE(bits, bases)
+  bits ← RANDOM_BITS(n)
+  bases ← RANDOM_BASES(n)  # + or Ã—
+  qubits ← ENCODE(bits, bases)
   SEND(qubits, quantum_channel)
 
 BOB:
-  measured_bases â† RANDOM_BASES(n)
-  measured_bits â† MEASURE(qubits, measured_bases)
+  measured_bases ← RANDOM_BASES(n)
+  measured_bits ← MEASURE(qubits, measured_bases)
   SEND(measured_bases, public_channel)  # which bases used
 
 ALICE:
-  matching â† (bases == measured_bases)
-  raw_key â† bits[matching]
+  matching ← (bases == measured_bases)
+  raw_key ← bits[matching]
   # Reveal test subset
-  test_indices â† RANDOM_CHOOSE(matching_indices, m)
+  test_indices ← RANDOM_CHOOSE(matching_indices, m)
   SEND(test_indices + raw_key[test_indices], public_channel)
 
 BOB:
-  their_test_bits â† measured_bits[test_indices]
-  qber â† COUNT_DIFF(raw_key[test_indexes], their_test_bits) / m
+  their_test_bits ← measured_bits[test_indices]
+  qber ← COUNT_DIFF(raw_key[test_indexes], their_test_bits) / m
   IF qber > 0.11:
     ABORT("Eavesdropper detected!")
   ELSE:
-    final_key â† ERROR_CORRECT(raw_key)  # Cascade, BCH code
-    final_key â† PRIVACY_AMPLIFY(final_key)  # Universal hashing
+    final_key ← ERROR_CORRECT(raw_key)  # Cascade, BCH code
+    final_key ← PRIVACY_AMPLIFY(final_key)  # Universal hashing
 ```
 
 ### 18.10.2 Quantum Repeaters
@@ -1445,7 +1445,7 @@ with tracer.start_as_current_span("backend-service") as span:
 
 | Criterion | Dual-Stack | 6to4 Tunnel | Teredo | NAT64/DNS64 |
 |-----------|-----------|-------------|--------|-------------|
-| Architecture | Both IP versions | IPv6-in-IPv4 | IPv6-in-UDP-in-IPv4 | IPv6â†”IPv4 translator |
+| Architecture | Both IP versions | IPv6-in-IPv4 | IPv6-in-UDP-in-IPv4 | IPv6↔IPv4 translator |
 | NAT traversal | Yes (native both) | No (protocol 41 blocked) | Yes (UDP) | Yes (stateful) |
 | Client config | 2 stacks | Auto-configured | Auto (NAT traversal) | DNS64 on resolver |
 | Server/network config | Both A+AAAA records | 6to4 relay anycast | Teredo relay/server | NAT64 gateway |

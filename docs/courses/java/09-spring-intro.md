@@ -158,21 +158,21 @@ Spring is not a single framework. It is a **family of projects** built on top of
 Spring Ecosystem Map (simplified)
 ======================================
 Spring Framework (core: IoC, AOP, MVC, Data Access)
-â”‚
-â”œâ”€â”€ Spring Boot        → Opinionated auto-configuration, embedded servers, starters
-â”œâ”€â”€ Spring Cloud       → Distributed systems (discovery, gateway, config, circuit breakers)
-â”œâ”€â”€ Spring Data        → Unified data access (JPA, MongoDB, Redis, Elasticsearch, etc.)
-â”œâ”€â”€ Spring Security    → Authentication, authorization, OAuth2/OIDC, LDAP
-â”œâ”€â”€ Spring Batch       → High-volume batch processing, job orchestration
-â”œâ”€â”€ Spring Integration → Enterprise Integration Patterns (EIP), messaging adapters
-â”œâ”€â”€ Spring Kafka       → Apache Kafka native support
-â”œâ”€â”€ Spring Modulith    → Modular monoliths, structured module boundaries
-â”œâ”€â”€ Spring AI          → AI SDK integration, vector stores, LLM agents, RAG
-â”œâ”€â”€ Spring GraphQL     → GraphQL server, DataLoader, subscription support
-â”œâ”€â”€ Spring Session     → Distributed session management (Redis, JDBC, Hazelcast)
-â”œâ”€â”€ Spring HATEOAS     → Hypermedia-driven REST APIs
-â”œâ”€â”€ Spring Shell       → Interactive CLI applications
-â””â”€â”€ Spring Mobile      → Device detection, mobile views (maintenance mode)
+│
+├── Spring Boot        → Opinionated auto-configuration, embedded servers, starters
+├── Spring Cloud       → Distributed systems (discovery, gateway, config, circuit breakers)
+├── Spring Data        → Unified data access (JPA, MongoDB, Redis, Elasticsearch, etc.)
+├── Spring Security    → Authentication, authorization, OAuth2/OIDC, LDAP
+├── Spring Batch       → High-volume batch processing, job orchestration
+├── Spring Integration → Enterprise Integration Patterns (EIP), messaging adapters
+├── Spring Kafka       → Apache Kafka native support
+├── Spring Modulith    → Modular monoliths, structured module boundaries
+├── Spring AI          → AI SDK integration, vector stores, LLM agents, RAG
+├── Spring GraphQL     → GraphQL server, DataLoader, subscription support
+├── Spring Session     → Distributed session management (Redis, JDBC, Hazelcast)
+├── Spring HATEOAS     → Hypermedia-driven REST APIs
+├── Spring Shell       → Interactive CLI applications
+└── Spring Mobile      → Device detection, mobile views (maintenance mode)
 ```
 
 Each project follows the same philosophy: **POJO-centric, annotation-driven, convention over configuration**.
@@ -532,43 +532,43 @@ public class RequestBuilder { ... }
 
 ```text
                          SpringApplication.run()
-                                  â”‚
-                                  â–¼
-                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                     â”‚   ClassPathScanner   â”‚
-                     â”‚   (@ComponentScan)   â”‚
-                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                               â”‚
+                                  │
+                                  ▼
+                     ┌─────────────────────┐
+                     │   ClassPathScanner   │
+                     │   (@ComponentScan)   │
+                     └─────────┬───────────┘
+                               │
                  Scanned classes found
-                               â”‚
-                               â–¼
-                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                     â”‚   BeanDefinition     â”‚
-                     â”‚   Registry           â”‚
-                     â”‚   (all @Component,   â”‚
-                     â”‚    @Bean methods,    â”‚
-                     â”‚    XML <bean>)       â”‚
-                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                               â”‚
+                               │
+                               ▼
+                     ┌─────────────────────┐
+                     │   BeanDefinition     │
+                     │   Registry           │
+                     │   (all @Component,   │
+                     │    @Bean methods,    │
+                     │    XML <bean>)       │
+                     └─────────┬───────────┘
+                               │
                      dependency graph built
-                               â”‚
-                               â–¼
-                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                     â”‚   BeanFactory        â”‚
-                     â”‚   (instantiation &   â”‚
-                     â”‚    injection)        â”‚
-                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                               â”‚
+                               │
+                               ▼
+                     ┌─────────────────────┐
+                     │   BeanFactory        │
+                     │   (instantiation &   │
+                     │    injection)        │
+                     └─────────┬───────────┘
+                               │
                     Singletons created, 
                     @PostConstruct called
-                               â”‚
-                               â–¼
-                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                     â”‚ Ready Application    â”‚
-                     â”‚ Context              â”‚
-                     â”‚ (all beans wired,    â”‚
-                     â”‚  embedded server up) â”‚
-                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                               │
+                               ▼
+                     ┌─────────────────────┐
+                     │ Ready Application    │
+                     │ Context              │
+                     │ (all beans wired,    │
+                     │  embedded server up) │
+                     └─────────────────────┘
 ```
 
 ---
@@ -782,14 +782,14 @@ Packaging:        Jar  |  War
 Java:             21  |  17  |  11
 
 Dependencies:
-  â”Œâ”€ Spring Web         (spring-boot-starter-web)
-  â”œâ”€ Spring Data JPA    (spring-boot-starter-data-jpa)
-  â”œâ”€ Spring Security    (spring-boot-starter-security)
-  â”œâ”€ Spring Boot Actuator (spring-boot-starter-actuator)
-  â”œâ”€ PostgreSQL Driver  (postgresql)
-  â”œâ”€ Lombok             (lombok)
-  â”œâ”€ Spring Boot DevTools (spring-boot-devtools)
-  â””â”€ Validation         (spring-boot-starter-validation)
+  ┌─ Spring Web         (spring-boot-starter-web)
+  ├─ Spring Data JPA    (spring-boot-starter-data-jpa)
+  ├─ Spring Security    (spring-boot-starter-security)
+  ├─ Spring Boot Actuator (spring-boot-starter-actuator)
+  ├─ PostgreSQL Driver  (postgresql)
+  ├─ Lombok             (lombok)
+  ├─ Spring Boot DevTools (spring-boot-devtools)
+  └─ Validation         (spring-boot-starter-validation)
 ```
 
 Click **Generate** to download a ZIP with the full project skeleton.
@@ -800,20 +800,20 @@ IntelliJ IDEA Ultimate has built-in Spring Initializr integration:
 
 ```text
 File → New → Project...
-  â”œâ”€â”€ New Project → Spring Boot
-  â”‚   â”œâ”€â”€ Language: Java
-  â”‚   â”œâ”€â”€ Type: Maven  |  Gradle
-  â”‚   â”œâ”€â”€ JDK: 21
-  â”‚   â”œâ”€â”€ Java: 21
-  â”‚   â””â”€â”€ Spring Boot: 3.4.0
-  â”‚
-  â”œâ”€â”€ Project Metadata
-  â”‚   â”œâ”€â”€ Group: com.example
-  â”‚   â”œâ”€â”€ Artifact: my-app
-  â”‚   â”œâ”€â”€ Package: com.example.myapp
-  â”‚   â””â”€â”€ Dependencies → Add: Spring Web, Spring Data JPA, etc.
-  â”‚
-  â””â”€â”€ Finish
+  ├── New Project → Spring Boot
+  │   ├── Language: Java
+  │   ├── Type: Maven  |  Gradle
+  │   ├── JDK: 21
+  │   ├── Java: 21
+  │   └── Spring Boot: 3.4.0
+  │
+  ├── Project Metadata
+  │   ├── Group: com.example
+  │   ├── Artifact: my-app
+  │   ├── Package: com.example.myapp
+  │   └── Dependencies → Add: Spring Web, Spring Data JPA, etc.
+  │
+  └── Finish
 ```
 
 IntelliJ downloads the same Initializr template and opens it as a ready-to-run project. Community Edition does NOT have Spring Boot Initializr → use start.spring.io.
@@ -968,58 +968,58 @@ Every Spring Boot project follows a standard layout:
 
 ```text
 my-app/
-â”‚
-â”œâ”€â”€ pom.xml                              # Maven build file (or build.gradle for Gradle)
-â”‚
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ main/
-â”‚   â”‚   â”œâ”€â”€ java/                        # Java source files
-â”‚   â”‚   â”‚   â””â”€â”€ com/example/myapp/
-â”‚   â”‚   â”‚       â”œâ”€â”€ MyAppApplication.java       # Main class (@SpringBootApplication)
-â”‚   â”‚   â”‚       â”œâ”€â”€ controller/                 # REST controllers
-â”‚   â”‚   â”‚       â”œâ”€â”€ service/                    # Business logic
-â”‚   â”‚   â”‚       â”œâ”€â”€ repository/                 # Data access (JPA repositories)
-â”‚   â”‚   â”‚       â”œâ”€â”€ model/                      # Entities / DTOs
-â”‚   â”‚   â”‚       â”œâ”€â”€ config/                     # @Configuration classes
-â”‚   â”‚   â”‚       â”œâ”€â”€ dto/                        # Data Transfer Objects
-â”‚   â”‚   â”‚       â”œâ”€â”€ exception/                  # Custom exceptions / handlers
-â”‚   â”‚   â”‚       â””â”€â”€ util/                       # Utility classes
-â”‚   â”‚   â”‚
-â”‚   â”‚   â””â”€â”€ resources/                   # Application resources
-â”‚   â”‚       â”œâ”€â”€ application.properties   # Primary configuration (or application.yml)
-â”‚   â”‚       â”œâ”€â”€ application-dev.yml      # Profile-specific config (development)
-â”‚   â”‚       â”œâ”€â”€ application-prod.yml     # Profile-specific config (production)
-â”‚   â”‚       â”œâ”€â”€ static/                  # Static resources (CSS, JS, images)
-â”‚   â”‚       â”‚   â”œâ”€â”€ css/
-â”‚   â”‚       â”‚   â”œâ”€â”€ js/
-â”‚   â”‚       â”‚   â””â”€â”€ images/
-â”‚   â”‚       â”œâ”€â”€ templates/               # Server-side templates (Thymeleaf, Freemarker)
-â”‚   â”‚       â”œâ”€â”€ messages.properties      # i18n message bundles
-â”‚   â”‚       â”œâ”€â”€ messages_es.properties
-â”‚   â”‚       â”œâ”€â”€ messages_fr.properties
-â”‚   â”‚       â”œâ”€â”€ banner.txt               # Custom ASCII art banner
-â”‚   â”‚       â”œâ”€â”€ logback-spring.xml       # Logging configuration (optional)
-â”‚   â”‚       â””â”€â”€ db/migration/            # Flyway/Liquibase migration scripts
-â”‚   â”‚           â”œâ”€â”€ V1__init_schema.sql
-â”‚   â”‚           â””â”€â”€ V2__add_indexes.sql
-â”‚   â”‚
-â”‚   â””â”€â”€ test/
-â”‚       â””â”€â”€ java/                        # Test source files
-â”‚           â””â”€â”€ com/example/myapp/
-â”‚               â”œâ”€â”€ MyAppApplicationTests.java       # Context load test
-â”‚               â”œâ”€â”€ controller/
-â”‚               â”‚   â””â”€â”€ HelloControllerTest.java
-â”‚               â””â”€â”€ service/
-â”‚                   â””â”€â”€ UserServiceTest.java
-â”‚
-â”œâ”€â”€ .gitignore
-â”œâ”€â”€ README.md
-â”œâ”€â”€ HELP.md                              # Spring Initializr-generated help
-â”œâ”€â”€ mvnw                                 # Maven Wrapper (Unix)
-â”œâ”€â”€ mvnw.cmd                             # Maven Wrapper (Windows)
-â””â”€â”€ .mvn/
-    â””â”€â”€ wrapper/
-        â””â”€â”€ maven-wrapper.properties
+│
+├── pom.xml                              # Maven build file (or build.gradle for Gradle)
+│
+├── src/
+│   ├── main/
+│   │   ├── java/                        # Java source files
+│   │   │   └── com/example/myapp/
+│   │   │       ├── MyAppApplication.java       # Main class (@SpringBootApplication)
+│   │   │       ├── controller/                 # REST controllers
+│   │   │       ├── service/                    # Business logic
+│   │   │       ├── repository/                 # Data access (JPA repositories)
+│   │   │       ├── model/                      # Entities / DTOs
+│   │   │       ├── config/                     # @Configuration classes
+│   │   │       ├── dto/                        # Data Transfer Objects
+│   │   │       ├── exception/                  # Custom exceptions / handlers
+│   │   │       └── util/                       # Utility classes
+│   │   │
+│   │   └── resources/                   # Application resources
+│   │       ├── application.properties   # Primary configuration (or application.yml)
+│   │       ├── application-dev.yml      # Profile-specific config (development)
+│   │       ├── application-prod.yml     # Profile-specific config (production)
+│   │       ├── static/                  # Static resources (CSS, JS, images)
+│   │       │   ├── css/
+│   │       │   ├── js/
+│   │       │   └── images/
+│   │       ├── templates/               # Server-side templates (Thymeleaf, Freemarker)
+│   │       ├── messages.properties      # i18n message bundles
+│   │       ├── messages_es.properties
+│   │       ├── messages_fr.properties
+│   │       ├── banner.txt               # Custom ASCII art banner
+│   │       ├── logback-spring.xml       # Logging configuration (optional)
+│   │       └── db/migration/            # Flyway/Liquibase migration scripts
+│   │           ├── V1__init_schema.sql
+│   │           └── V2__add_indexes.sql
+│   │
+│   └── test/
+│       └── java/                        # Test source files
+│           └── com/example/myapp/
+│               ├── MyAppApplicationTests.java       # Context load test
+│               ├── controller/
+│               │   └── HelloControllerTest.java
+│               └── service/
+│                   └── UserServiceTest.java
+│
+├── .gitignore
+├── README.md
+├── HELP.md                              # Spring Initializr-generated help
+├── mvnw                                 # Maven Wrapper (Unix)
+├── mvnw.cmd                             # Maven Wrapper (Windows)
+└── .mvn/
+    └── wrapper/
+        └── maven-wrapper.properties
 ```
 
 ### 5.2 The main/java Directory
@@ -1028,20 +1028,20 @@ This is where all application source code lives. Package structure typically fol
 
 ```text
 com.example.myapp/
-  â”œâ”€â”€ MyAppApplication.java          # Application entry point
-  â”œâ”€â”€ controller/                    # REST API endpoints
-  â”‚   â”œâ”€â”€ GreetingController.java
-  â”‚   â””â”€â”€ UserController.java
-  â”œâ”€â”€ service/                       # Business logic
-  â”‚   â”œâ”€â”€ GreetingService.java
-  â”‚   â””â”€â”€ UserService.java
-  â”œâ”€â”€ repository/                    # Database access
-  â”‚   â””â”€â”€ UserRepository.java
-  â”œâ”€â”€ model/                         # JPA entities
-  â”‚   â””â”€â”€ User.java
-  â””â”€â”€ config/                        # Configuration classes
-      â”œâ”€â”€ SecurityConfig.java
-      â””â”€â”€ AppConfig.java
+  ├── MyAppApplication.java          # Application entry point
+  ├── controller/                    # REST API endpoints
+  │   ├── GreetingController.java
+  │   └── UserController.java
+  ├── service/                       # Business logic
+  │   ├── GreetingService.java
+  │   └── UserService.java
+  ├── repository/                    # Database access
+  │   └── UserRepository.java
+  ├── model/                         # JPA entities
+  │   └── User.java
+  └── config/                        # Configuration classes
+      ├── SecurityConfig.java
+      └── AppConfig.java
 ```
 
 ### 5.3 The main/resources Directory
@@ -1123,15 +1123,15 @@ For non-dynamic web resources served without server-side processing:
 
 ```text
 static/
-  â”œâ”€â”€ index.html              # Served at /
-  â”œâ”€â”€ css/
-  â”‚   â””â”€â”€ styles.css
-  â”œâ”€â”€ js/
-  â”‚   â””â”€â”€ app.js
-  â”œâ”€â”€ images/
-  â”‚   â”œâ”€â”€ logo.png
-  â”‚   â””â”€â”€ banner.jpg
-  â””â”€â”€ favicon.ico             # Auto-detected by Spring Boot
+  ├── index.html              # Served at /
+  ├── css/
+  │   └── styles.css
+  ├── js/
+  │   └── app.js
+  ├── images/
+  │   ├── logo.png
+  │   └── banner.jpg
+  └── favicon.ico             # Auto-detected by Spring Boot
 ```
 
 ### 5.5 The templates/ Directory
@@ -1667,21 +1667,21 @@ The repackaged JAR structure:
 
 ```text
 my-app-0.0.1-SNAPSHOT.jar
-â”œâ”€â”€ META-INF/
-â”‚   â””â”€â”€ MANIFEST.MF         # Main-Class: org.springframework.boot.loader.JarLauncher
-â”œâ”€â”€ org/springframework/boot/loader/
-â”‚   â”œâ”€â”€ JarLauncher.class   # Spring Boot custom class loader
-â”‚   â”œâ”€â”€ Launcher.class
-â”‚   â””â”€â”€ ...
-â”œâ”€â”€ BOOT-INF/
-â”‚   â”œâ”€â”€ classes/            # Your compiled classes
-â”‚   â”‚   â””â”€â”€ com/example/myapp/
-â”‚   â”œâ”€â”€ lib/                # All dependency JARs
-â”‚   â”‚   â”œâ”€â”€ spring-core-6.2.0.jar
-â”‚   â”‚   â”œâ”€â”€ spring-webmvc-6.2.0.jar
-â”‚   â”‚   â””â”€â”€ ...
-â”‚   â””â”€â”€ classpath.idx       # Classpath index for fast startup
-â””â”€â”€ ...
+├── META-INF/
+│   └── MANIFEST.MF         # Main-Class: org.springframework.boot.loader.JarLauncher
+├── org/springframework/boot/loader/
+│   ├── JarLauncher.class   # Spring Boot custom class loader
+│   ├── Launcher.class
+│   └── ...
+├── BOOT-INF/
+│   ├── classes/            # Your compiled classes
+│   │   └── com/example/myapp/
+│   ├── lib/                # All dependency JARs
+│   │   ├── spring-core-6.2.0.jar
+│   │   ├── spring-webmvc-6.2.0.jar
+│   │   └── ...
+│   └── classpath.idx       # Classpath index for fast startup
+└── ...
 ```
 
 ### 7.7 Gradle Equivalent
@@ -1807,21 +1807,21 @@ The auto-configuration process:
 
 ```text
 @EnableAutoConfiguration
-        â”‚
-        â–¼
+        │
+        ▼
 META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
-        â”‚
-        â”œâ”€â”€ org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration
-        â”œâ”€â”€ org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration
-        â”œâ”€â”€ org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
-        â”œâ”€â”€ org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
-        â”œâ”€â”€ org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
-        â””â”€â”€ (130+ auto-configuration class names listed)
-        â”‚
-        â–¼
+        │
+        ├── org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration
+        ├── org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration
+        ├── org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+        ├── org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+        ├── org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+        └── (130+ auto-configuration class names listed)
+        │
+        ▼
 Each class is evaluated against its @Conditional annotations
-        â”‚
-        â–¼
+        │
+        ▼
 Applicable auto-configurations are applied in order
 ```
 
@@ -2471,23 +2471,23 @@ tree /F
 
 # Output:
 # hello-world/
-# â”œâ”€â”€ HELP.md
-# â”œâ”€â”€ mvnw
-# â”œâ”€â”€ mvnw.cmd
-# â”œâ”€â”€ pom.xml
-# â””â”€â”€ src/
-#     â”œâ”€â”€ main/
-#     â”‚   â”œâ”€â”€ java/
-#     â”‚   â”‚   â””â”€â”€ com/example/helloworld/
-#     â”‚   â”‚       â””â”€â”€ HelloWorldApplication.java
-#     â”‚   â””â”€â”€ resources/
-#     â”‚       â”œâ”€â”€ application.properties
-#     â”‚       â”œâ”€â”€ static/
-#     â”‚       â””â”€â”€ templates/
-#     â””â”€â”€ test/
-#         â””â”€â”€ java/
-#             â””â”€â”€ com/example/helloworld/
-#                 â””â”€â”€ HelloWorldApplicationTests.java
+# ├── HELP.md
+# ├── mvnw
+# ├── mvnw.cmd
+# ├── pom.xml
+# └── src/
+#     ├── main/
+#     │   ├── java/
+#     │   │   └── com/example/helloworld/
+#     │   │       └── HelloWorldApplication.java
+#     │   └── resources/
+#     │       ├── application.properties
+#     │       ├── static/
+#     │       └── templates/
+#     └── test/
+#         └── java/
+#             └── com/example/helloworld/
+#                 └── HelloWorldApplicationTests.java
 ```
 
 **pom.xml:**
@@ -2760,28 +2760,28 @@ curl http://localhost:8080/actuator/info
 
 ```text
 hello-world/
-â”œâ”€â”€ pom.xml
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ main/
-â”‚   â”‚   â”œâ”€â”€ java/
-â”‚   â”‚   â”‚   â””â”€â”€ com/example/helloworld/
-â”‚   â”‚   â”‚       â”œâ”€â”€ HelloWorldApplication.java
-â”‚   â”‚   â”‚       â””â”€â”€ controller/
-â”‚   â”‚   â”‚           â””â”€â”€ GreetingController.java
-â”‚   â”‚   â””â”€â”€ resources/
-â”‚   â”‚       â”œâ”€â”€ application.yml
-â”‚   â”‚       â”œâ”€â”€ banner.txt
-â”‚   â”‚       â”œâ”€â”€ static/
-â”‚   â”‚       â”‚   â””â”€â”€ index.html
-â”‚   â”‚       â””â”€â”€ templates/
-â”‚   â””â”€â”€ test/
-â”‚       â””â”€â”€ java/
-â”‚           â””â”€â”€ com/example/helloworld/
-â”‚               â””â”€â”€ HelloWorldApplicationTests.java
-â”œâ”€â”€ .gitignore
-â”œâ”€â”€ HELP.md
-â”œâ”€â”€ mvnw
-â””â”€â”€ mvnw.cmd
+├── pom.xml
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/example/helloworld/
+│   │   │       ├── HelloWorldApplication.java
+│   │   │       └── controller/
+│   │   │           └── GreetingController.java
+│   │   └── resources/
+│   │       ├── application.yml
+│   │       ├── banner.txt
+│   │       ├── static/
+│   │       │   └── index.html
+│   │       └── templates/
+│   └── test/
+│       └── java/
+│           └── com/example/helloworld/
+│               └── HelloWorldApplicationTests.java
+├── .gitignore
+├── HELP.md
+├── mvnw
+└── mvnw.cmd
 ```
 
 ### 11.9 Adding a Static Welcome Page

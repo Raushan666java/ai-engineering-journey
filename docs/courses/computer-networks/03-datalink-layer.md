@@ -831,12 +831,12 @@ Data with zeros: `1101000`
 We divide `1101000` by `1011`:
 
 ```
-      1101  â† quotient (not transmitted)
+      1101  ← quotient (not transmitted)
 1011 ) 1101000
-      1011    â† XOR
+      1011    ← XOR
       ----
        0110
-       0000   â† bring down
+       0000   ← bring down
        ----
         1100
         1011
@@ -847,7 +847,7 @@ We divide `1101000` by `1011`:
           1110
           1011
           ----
-           101 â† remainder (CRC)
+           101 ← remainder (CRC)
 ```
 
 **Step 3: Transmit**
@@ -866,7 +866,7 @@ We divide `1101000` by `1011`:
         1011
         1011
         ----
-         0000  â† zero remainder → accepted
+         0000  ← zero remainder → accepted
 ```
 
 **Error scenario:** Bit 3 flips → received = `1111101`
@@ -882,7 +882,7 @@ We divide `1101000` by `1011`:
          010
          000
          ---
-          101 â† non-zero remainder → error detected!
+          101 ← non-zero remainder → error detected!
 ```
 
 #### Pseudocode

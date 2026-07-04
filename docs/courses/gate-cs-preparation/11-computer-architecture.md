@@ -98,7 +98,7 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 ```
 
 **Execution cycle (Fetch-Decode-Execute):**
-1. **Fetch:** PC → MAR → memory → MDR → IR, PC â† PC + 1
+1. **Fetch:** PC → MAR → memory → MDR → IR, PC ← PC + 1
 2. **Decode:** Control unit decodes instruction in IR
 3. **Execute:** ALU performs operation, results written back
 
@@ -183,8 +183,8 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 | Base-displacement | EA = base + offset | `LW R1, 4(R2)` | Stack/struct access |
 | Indexed | EA = base + index | `LW R1, array(R2)` | Array access |
 | PC-relative | EA = PC + offset | `BEQ R1, R2, label` | Branches |
-| Autoincrement | EA = R; R â† R + 1 | `LW R1, (R2)+` | String ops |
-| Autodecrement | R â† R âˆ’ 1; EA = R | `LW R1, âˆ’(R2)` | Stack push |
+| Autoincrement | EA = R; R ← R + 1 | `LW R1, (R2)+` | String ops |
+| Autodecrement | R ← R âˆ’ 1; EA = R | `LW R1, âˆ’(R2)` | Stack push |
 | Scaled indexed | EA = base + (index Ã— scale) | `LW R1, arr(R2Ã—4)` | Word arrays |
 
 **GATE tip:** Always check the direction of autoincrement (post-increment) vs autodecrement (pre-decrement).
@@ -196,15 +196,15 @@ The von Neumann architecture (stored-program concept) uses a single shared memor
 - Stack top is always the implied operand
 
 **One-address (Accumulator machine):**
-- `ADD X` → ACC â† ACC + M[X]
+- `ADD X` → ACC ← ACC + M[X]
 - Second operand is always accumulator
 
 **Two-address (CISC):**
-- `ADD R1, R2` → R1 â† R1 + R2 (destructive)
-- `MOV R1, R2` → R1 â† R2
+- `ADD R1, R2` → R1 ← R1 + R2 (destructive)
+- `MOV R1, R2` → R1 ← R2
 
 **Three-address (RISC):**
-- `ADD R1, R2, R3` → R1 â† R2 + R3 (non-destructive)
+- `ADD R1, R2, R3` → R1 ← R2 + R3 (non-destructive)
 - Maximum flexibility, longer instruction length
 
 ### 2.4 Endianness
@@ -242,7 +242,7 @@ Value:    0x78 0x56 0x34 0x12
 - Decimal → Binary: repeated division by 2
 - Binary → Hex: group 4 bits from binary point
 - Hex → Binary: expand each hex digit to 4 bits
-- Octal â†” Binary: group 3 bits
+- Octal ↔ Binary: group 3 bits
 
 ### 3.2 Signed Integer Representations
 

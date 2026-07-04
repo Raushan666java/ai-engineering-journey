@@ -87,7 +87,7 @@ The class of regular languages is closed under the following operations. If Lâ�
 The Myhill-Nerode theorem characterizes the regular languages in terms of an equivalence relation on strings and provides a method to find the minimal DFA.
 
 Define an equivalence relation â‰¡â‚— on strings over Î£:
-x â‰¡â‚— y iff for all z âˆˆ Î£*, xz âˆˆ L â‡” yz âˆˆ L
+x â‰¡â‚— y iff for all z âˆˆ Î£*, xz âˆˆ L ⇔ yz âˆˆ L
 
 Two strings are equivalent if they have the same "future" with respect to L → appending any suffix z to both either keeps both in L or both out of L.
 

@@ -658,7 +658,7 @@ Bob       87
 | Criterion | Text Mode | Binary Mode |
 |-----------|-----------|-------------|
 | **Flag** | Default (no flag needed) | `std::ios::binary` |
-| **Newline Handling** | Translates `\n` â†” `\r\n` on Windows | No translation |
+| **Newline Handling** | Translates `\n` ↔ `\r\n` on Windows | No translation |
 | **EOF Marker** | `Ctrl+Z` (0x1A) treated as EOF on some systems | Every byte is data |
 | **Data Representation** | Characters (ASCII/UTF-8) | Raw memory bytes |
 | **Human Readable** | Yes | No |
@@ -2427,7 +2427,7 @@ private:
 
 5. **What does `ios::binary` mode prevent on Windows?**
    A) Opening the file
-   B) Newline translation (CRLF â†” LF)
+   B) Newline translation (CRLF ↔ LF)
    C) Writing to the file
    D) Reading from the file
    <details><summary>Answer</summary>**B)** Binary mode disables newline translation between `\n` and `\r\n`, which is essential for non-text data.</details>

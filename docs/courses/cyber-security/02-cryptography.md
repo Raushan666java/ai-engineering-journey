@@ -745,11 +745,11 @@ Public parameters (known to all):
 Alice:                              Bob:
 1.  Choose private a (random)       1.  Choose private b (random)
 2.  Compute A = g^a mod p           2.  Compute B = g^b mod p
-3.  Send A to Bob  â”€â”€â”€â”€â”€â”€Aâ”€â”€â”€â”€â”€â”€>   3.  Send B to Alice  <â”€â”€â”€â”€â”€â”€Bâ”€â”€â”€â”€â”€â”€
+3.  Send A to Bob  ──────A──────>   3.  Send B to Alice  <──────B──────
 4.  Compute s = B^a mod p           4.  Compute s = A^b mod p
 
 Result: s = B^a = (g^b)^a = g^(ab) = (g^a)^b = A^b mod p
-        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Shared secret s â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+        └────────────────────── Shared secret s ──────────────────────┘
 ```
 
 #### Dry Run: Diffie-Hellman with Toy Numbers
@@ -762,7 +762,7 @@ Public: p = 23, g = 5
 |------|-------|-------|-----|-------|
 | 1 | Choose a | a = 6 | Choose b | b = 15 |
 | 2 | Compute A | A = 5â¶ mod 23 = 15625 mod 23 = 8 | Compute B | B = 5Â¹âµ mod 23 = 30517578125 mod 23 = 19 |
-| 3 | Send A | → 8 → | Send B | â† 19 â† |
+| 3 | Send A | → 8 → | Send B | ← 19 ← |
 | 4 | Compute s | s = 19â¶ mod 23 = 47045881 mod 23 = 2 | Compute s | s = 8Â¹âµ mod 23 = 35184372088832 mod 23 = 2 |
 
 **Shared secret s = 2.** Alice and Bob both computed 2. Eve, who only sees p=23, g=5, A=8, B=19, cannot compute s without solving the discrete log.
@@ -1255,10 +1255,10 @@ Certificate:
 
 ```
 Root CA (self-signed)
-  â””â”€â”€ Intermediate CA 1 (signed by Root)
-        â””â”€â”€ Intermediate CA 2 (signed by Interm. 1)
-              â””â”€â”€ End-entity certificate (signed by Interm. 2)
-                    â””â”€â”€ www.example.com
+  └── Intermediate CA 1 (signed by Root)
+        └── Intermediate CA 2 (signed by Interm. 1)
+              └── End-entity certificate (signed by Interm. 2)
+                    └── www.example.com
 ```
 
 **Why hierarchy?**
@@ -1359,31 +1359,31 @@ TLS (Transport Layer Security) is the most widely deployed cryptographic protoco
 
 ```
 Client (Browser)                   Server (Website)
-â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€                        â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€
+──────┴─────                        ──────┴─────
   ClientHello
   - Protocol version: TLS 1.3
-  - Key share (ECDHE): g^x        â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€>
+  - Key share (ECDHE): g^x        ──────────────>
   - Supported cipher suites
   - Supported groups (X25519, P-256)
   - Extensions (SNI, ALPN)
                                      ServerHello
                                    - Protocol version: TLS 1.3
-                                   - Key share (ECDHE): g^y  <â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+                                   - Key share (ECDHE): g^y  <──────────────
                                    - Cipher suite decision
                                     
                                      EncryptedExtensions
-                                   - Certificate request (optional)  <â”€â”€â”€â”€â”€â”€
+                                   - Certificate request (optional)  <──────
                                     
                                      Certificate
                                    - Server's X.509 cert chain
                                    - OCSP staple (optional)
                                    - CertificateVerify (signature)
-                                   - Finished (MAC of handshake)  <â”€â”€â”€â”€â”€â”€â”€â”€
+                                   - Finished (MAC of handshake)  <────────
   
   CertificateVerify (if mTLS)
-  Finished (MAC of handshake)     â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€>
+  Finished (MAC of handshake)     ──────────────>
   
-  Application Data (encrypted)    <â•â•â•â•â•â•â•â•â•â•â•â•>  Application Data (encrypted)
+  Application Data (encrypted)    <════════════>  Application Data (encrypted)
 ```
 
 **Step-by-step walkthrough:**
@@ -1919,7 +1919,7 @@ Normal heartbeat:
     Server: reads 4 bytes, sends back "BEEF"
 
 Exploited heartbeat:
-    Client: "BEEF" (4 bytes), length = 65535  â† LIES about length
+    Client: "BEEF" (4 bytes), length = 65535  ← LIES about length
     Server: reads 65535 bytes starting from the "BEEF" buffer
             returns 4 real bytes + 65531 bytes of memory garbage
 ```
@@ -1929,9 +1929,9 @@ Exploited heartbeat:
 ```c
 // Vulnerable code (simplified)
 unsigned char *p = &s->s3->rrec.data[0];
-unsigned int payload_length = *p++;   // â† attacker-controlled
+unsigned int payload_length = *p++;   // ← attacker-controlled
 // ... no check that payload_length <= actual data length
-memcpy(bp, pl, payload_length);       // â† reads beyond input buffer
+memcpy(bp, pl, payload_length);       // ← reads beyond input buffer
 ```
 
 **What could be leaked:**
@@ -1947,7 +1947,7 @@ memcpy(bp, pl, payload_length);       // â† reads beyond input buffer
 unsigned int payload_length;
 unsigned char *p = &s->s3->rrec.data[0];
 payload_length = *p++;
-if (1 + 2 + payload_length + 16 > s->s3->rrec.length)  // â† bounds check
+if (1 + 2 + payload_length + 16 > s->s3->rrec.length)  // ← bounds check
     goto silently_ignore;
 ```
 

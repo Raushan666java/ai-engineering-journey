@@ -67,16 +67,16 @@ The architecture follows this flow:
 
 ```
 AI Agent (Claude, Cursor, etc.)
-    â”‚
-    â–¼
+    │
+    ▼
 MCP Client (dispatches requests)
-    â”‚
-    â–¼
+    │
+    ▼
 MCP Server (Laravel class)
-    â”‚
-    â”œâ”€ Tools â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º Command-like actions with JSON schemas
-    â”œâ”€ Resources â”€â”€â”€â”€â”€â”€â–º Readable data at URIs
-    â””â”€ Prompts â”€â”€â”€â”€â”€â”€â”€â”€â–º Structured interaction templates
+    │
+    ├─ Tools ──────────► Command-like actions with JSON schemas
+    ├─ Resources ──────► Readable data at URIs
+    └─ Prompts ────────► Structured interaction templates
 ```
 
 A single server class declares its capabilities declaratively via PHP attributes and arrays, then Laravel MCP handles all the JSON-RPC wire protocol automatically.

@@ -177,9 +177,9 @@ NP = PCP(log n, 1)
 
 ```
 EXPSPACE
-    â†‘
+    ↑
    PSPACE  = IP
-    â†‘
+    ↑
    PH (Polynomial Hierarchy)
   /  \
  Î£â‚‚   Î â‚‚
@@ -220,8 +220,8 @@ MIN-CIRCUIT = { âŸ¨CâŸ© | C is a Boolean circuit with no smaller equivalen
 To check if C âˆˆ MIN-CIRCUIT: For every smaller circuit C' (âˆ€), there exists an input x such that C(x) â‰  C'(x). This is âˆ€âˆƒ = Î â‚‚ formulation.
 
 Or: There exists no smaller equivalent circuit. Actually the logical formulation:
-- C is minimal iff âˆ€C' (|C'| < |C|) â‡’ âˆƒx (C(x) â‰  C'(x)).
-- This is âˆ€C' âˆƒx (|C'| < |C| â‡’ C(x) â‰  C'(x)) → a âˆ€âˆƒ pattern = Î â‚‚.
+- C is minimal iff âˆ€C' (|C'| < |C|) ⇒ âˆƒx (C(x) â‰  C'(x)).
+- This is âˆ€C' âˆƒx (|C'| < |C| ⇒ C(x) â‰  C'(x)) → a âˆ€âˆƒ pattern = Î â‚‚.
 - Equivalent: the complement (âˆƒC') is in Î£â‚‚.
 
 ### Example 14.2: Graph Non-Isomorphism âˆˆ IP

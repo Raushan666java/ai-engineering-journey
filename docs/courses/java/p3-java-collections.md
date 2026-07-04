@@ -48,15 +48,15 @@ The framework is built around two top-level interfaces: `Collection` and `Map`.
 
 ```
 Iterable (java.lang)
-  â””â”€â”€ Collection (modifiable, optional operations)
-        â”œâ”€â”€ List (ordered, indexed, allows duplicates)
-        â”œâ”€â”€ Set (no duplicates)
-        â”‚     â””â”€â”€ SortedSet → NavigableSet
-        â””â”€â”€ Queue (FIFO typically)
-              â””â”€â”€ Deque (double-ended)
+  └── Collection (modifiable, optional operations)
+        ├── List (ordered, indexed, allows duplicates)
+        ├── Set (no duplicates)
+        │     └── SortedSet → NavigableSet
+        └── Queue (FIFO typically)
+              └── Deque (double-ended)
 
 Map (separate hierarchy, not a Collection)
-  â””â”€â”€ SortedMap → NavigableMap
+  └── SortedMap → NavigableMap
 ```
 
 `Iterable<E>` is in `java.lang` and is the root of the entire framework. It provides the enhanced for-each loop:

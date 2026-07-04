@@ -151,13 +151,13 @@ The template parameter `T` acts as a placeholder for a concrete type. The compil
 **Syntax breakdown:**
 
 ```
-template  â† keyword indicating a template declaration
-    <typename T>  â† template parameter list
-        typename â† keyword indicating T is a type parameter
-        T        â† the template parameter name
-    T max_of(T a, T b)  â† function signature using T
-        T        â† return type parameterized by T
-        T a, T b â† parameter types parameterized by T
+template  ← keyword indicating a template declaration
+    <typename T>  ← template parameter list
+        typename ← keyword indicating T is a type parameter
+        T        ← the template parameter name
+    T max_of(T a, T b)  ← function signature using T
+        T        ← return type parameterized by T
+        T a, T b ← parameter types parameterized by T
 ```
 
 ### 7.2.2 Type Deduction vs Explicit Specification
@@ -205,50 +205,50 @@ orange
 When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                    INSTANTIATION DRY RUN: max_of(3, 7)                          â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Step  â”‚ Action                           â”‚ State                                 â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ 1     â”‚ Parse call expression            â”‚ max_of(3, 7)                          â”‚
-â”‚ 2     â”‚ Check argument types             â”‚ 3: int, 7: int                        â”‚
-â”‚ 3     â”‚ Name lookup for max_of           â”‚ Found template max_of<T>              â”‚
-â”‚ 4     â”‚ Deduce T from argument types     â”‚ T = int (both args are int)           â”‚
-â”‚ 5     â”‚ Check template parameter count   â”‚ 1 parameter, 1 provided âœ“             â”‚
-â”‚ 6     â”‚ Substitute T → int in signature  â”‚ int max_of(int a, int b)              â”‚
-â”‚ 7     â”‚ Check constraint (if any)        â”‚ No concepts, unconditional âœ“          â”‚
-â”‚ 8     â”‚ Substitute T → int in body       â”‚ return (a > b) ? a : b;               â”‚
-â”‚ 9     â”‚ Type-check the body with T=int   â”‚ int > int → bool, OK âœ“               â”‚
-â”‚ 10    â”‚ Generate object code             â”‚ Machine instructions emitted          â”‚
-â”‚ 11    â”‚ Store in object file             â”‚ Symbol: int max_of(int, int)          â”‚
-â”‚ 12    â”‚ (Link time) Merge duplicates     â”‚ COMDAT folding if multiple TUs        â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                    INSTANTIATION DRY RUN: max_of(3, 7)                          │
+├───────┬──────────────────────────────────┬───────────────────────────────────────┤
+│ Step  │ Action                           │ State                                 │
+├───────┼──────────────────────────────────┼───────────────────────────────────────┤
+│ 1     │ Parse call expression            │ max_of(3, 7)                          │
+│ 2     │ Check argument types             │ 3: int, 7: int                        │
+│ 3     │ Name lookup for max_of           │ Found template max_of<T>              │
+│ 4     │ Deduce T from argument types     │ T = int (both args are int)           │
+│ 5     │ Check template parameter count   │ 1 parameter, 1 provided âœ“             │
+│ 6     │ Substitute T → int in signature  │ int max_of(int a, int b)              │
+│ 7     │ Check constraint (if any)        │ No concepts, unconditional âœ“          │
+│ 8     │ Substitute T → int in body       │ return (a > b) ? a : b;               │
+│ 9     │ Type-check the body with T=int   │ int > int → bool, OK âœ“               │
+│ 10    │ Generate object code             │ Machine instructions emitted          │
+│ 11    │ Store in object file             │ Symbol: int max_of(int, int)          │
+│ 12    │ (Link time) Merge duplicates     │ COMDAT folding if multiple TUs        │
+└───────┴──────────────────────────────────┴───────────────────────────────────────┘
 ```
 
 ### Dry Run: Multiple Instantiations
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚               INSTANTIATION DRY RUN: max_of with 3 types                        â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Call         â”‚ T       â”‚ Return   â”‚ Body after substitution â”‚ Code generated?    â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ max_of(3,7)  â”‚ int     â”‚ int      â”‚ (a > b) ? a : b         â”‚ Yes → int version  â”‚
-â”‚ max_of(3.14, â”‚ double  â”‚ double   â”‚ (a > b) ? a : b         â”‚ Yes → double vers. â”‚
-â”‚  2.72)       â”‚         â”‚          â”‚                         â”‚                     â”‚
-â”‚ max_of(s1,s2)â”‚ string  â”‚ string   â”‚ (a > b) ? a : b         â”‚ Yes → string vers. â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-                                               â”‚                                   â”‚
-                         Each call generates a SEPARATE function with SEPARATE    â”‚
-                         machine code. They share NO code at runtime.             â”‚
-                         However, all three functions are IDENTICAL in structure  â”‚
-                         at the source level.                                     â”‚
-                         â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”‚
-                         Binary size impact: ~3Ã— a single function                 â”‚
-                         Optimization potential: linker may deduplicate identical â”‚
-                         machine code if the types produce identical instructions â”‚
-                         (e.g., int and long on many platforms)                   â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│               INSTANTIATION DRY RUN: max_of with 3 types                        │
+├──────────────┬─────────┬──────────┬──────────┬──────────┬───────────────────────┤
+│ Call         │ T       │ Return   │ Body after substitution │ Code generated?    │
+├──────────────┼─────────┼──────────┼─────────────────────────┼────────────────────┤
+│ max_of(3,7)  │ int     │ int      │ (a > b) ? a : b         │ Yes → int version  │
+│ max_of(3.14, │ double  │ double   │ (a > b) ? a : b         │ Yes → double vers. │
+│  2.72)       │         │          │                         │                     │
+│ max_of(s1,s2)│ string  │ string   │ (a > b) ? a : b         │ Yes → string vers. │
+└──────────────┴─────────┴──────────┴──────────┬──────────────┴────────────────────┤
+                                               │                                   │
+                         Each call generates a SEPARATE function with SEPARATE    │
+                         machine code. They share NO code at runtime.             │
+                         However, all three functions are IDENTICAL in structure  │
+                         at the source level.                                     │
+                         ─────────────────────────────────────────────────────────│
+                         Binary size impact: ~3Ã— a single function                 │
+                         Optimization potential: linker may deduplicate identical │
+                         machine code if the types produce identical instructions │
+                         (e.g., int and long on many platforms)                   │
+└─────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ### Complexity Analysis of Template Instantiation
@@ -388,21 +388,21 @@ int main() {
 **Dry Run: FixedArray<int, 5> Instantiation**
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚               INSTANTIATION DRY RUN: FixedArray<int, 5>                  â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Step   â”‚ Action                          â”‚ Result                        â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ 1      â”‚ Parse FixedArray<int, 5>        â”‚ T = int, N = 5                â”‚
-â”‚ 2      â”‚ Substitute T → int in body      â”‚ int data_[5];                 â”‚
-â”‚ 3      â”‚ Substitute N → 5 in body        â”‚ size() returns 5              â”‚
-â”‚ 4      â”‚ Generate class layout           â”‚ sizeof = 5 * sizeof(int) = 20 â”‚
-â”‚ 5      â”‚ Verify N > 0 (implicit)         â”‚ 5 > 0 âœ“                       â”‚
-â”‚ 6      â”‚ Instantiate constructor         â”‚ FixedArray() → default init   â”‚
-â”‚ 7      â”‚ Instantiate size()              â”‚ returns 5 (constexpr)         â”‚
-â”‚ 8      â”‚ Instantiate fill()              â”‚ loops 5 times                 â”‚
-â”‚ 9      â”‚ Instantiate operator[]          â”‚ bounds check? only if asked   â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────────────────────────────────────────────────────────────────────┐
+│               INSTANTIATION DRY RUN: FixedArray<int, 5>                  │
+├────────┬─────────────────────────────────┬───────────────────────────────┤
+│ Step   │ Action                          │ Result                        │
+├────────┼─────────────────────────────────┼───────────────────────────────┤
+│ 1      │ Parse FixedArray<int, 5>        │ T = int, N = 5                │
+│ 2      │ Substitute T → int in body      │ int data_[5];                 │
+│ 3      │ Substitute N → 5 in body        │ size() returns 5              │
+│ 4      │ Generate class layout           │ sizeof = 5 * sizeof(int) = 20 │
+│ 5      │ Verify N > 0 (implicit)         │ 5 > 0 âœ“                       │
+│ 6      │ Instantiate constructor         │ FixedArray() → default init   │
+│ 7      │ Instantiate size()              │ returns 5 (constexpr)         │
+│ 8      │ Instantiate fill()              │ loops 5 times                 │
+│ 9      │ Instantiate operator[]          │ bounds check? only if asked   │
+└────────┴─────────────────────────────────┴───────────────────────────────┘
 ```
 
 **Complexity Analysis:**
@@ -521,36 +521,36 @@ int main() {
 ```
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚               INSTANTIATION DRY RUN: Stack<int>                           â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Step   â”‚ Action                           â”‚ Result                         â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ 1      â”‚ Parse Stack<int>                 â”‚ T = int                        â”‚
-â”‚ 2      â”‚ Substitute int for T in body     â”‚ std::vector<int> data_;        â”‚
-â”‚ 3      â”‚ Calculate class layout           â”‚ sizeof(Stack<int>) resolved    â”‚
-â”‚ 4      â”‚ Constructor generated            â”‚ Stack<int>::Stack()            â”‚
-â”‚ 5      â”‚ push(42) called                  â”‚ push(const int&) needed        â”‚
-â”‚ 6      â”‚ push template instantiated       â”‚ void push(const int&) code gen â”‚
-â”‚ 7      â”‚ Check push body validity         â”‚ vector<int>::push_back(int) âœ“  â”‚
-â”‚ 8      â”‚ empty(), size(), top()           â”‚ NOT instantiated (lazy)        â”‚
-â”‚        â”‚ not called                       â”‚ → no code generated            â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌────────────────────────────────────────────────────────────────────────────┐
+│               INSTANTIATION DRY RUN: Stack<int>                           │
+├────────┬──────────────────────────────────┬────────────────────────────────┤
+│ Step   │ Action                           │ Result                         │
+├────────┼──────────────────────────────────┼────────────────────────────────┤
+│ 1      │ Parse Stack<int>                 │ T = int                        │
+│ 2      │ Substitute int for T in body     │ std::vector<int> data_;        │
+│ 3      │ Calculate class layout           │ sizeof(Stack<int>) resolved    │
+│ 4      │ Constructor generated            │ Stack<int>::Stack()            │
+│ 5      │ push(42) called                  │ push(const int&) needed        │
+│ 6      │ push template instantiated       │ void push(const int&) code gen │
+│ 7      │ Check push body validity         │ vector<int>::push_back(int) âœ“  │
+│ 8      │ empty(), size(), top()           │ NOT instantiated (lazy)        │
+│        │ not called                       │ → no code generated            │
+└────────┴──────────────────────────────────┴────────────────────────────────┘
 ```
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚               INSTANTIATION DRY RUN: Stack<std::string>                   â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Step   â”‚ Action                           â”‚ Result                         â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ 1      â”‚ Parse Stack<std::string>         â”‚ T = std::string                â”‚
-â”‚ 2      â”‚ Substitute string for T          â”‚ std::vector<std::string> data_;â”‚
-â”‚ 3      â”‚ Layout                           â”‚ sizeof(Stack<string>) resolved â”‚
-â”‚ 4      â”‚ push("hello") instantiated       â”‚ void push(const string&) code  â”‚
-â”‚ 5      â”‚ copy semantics                   â”‚ string copy constructor called â”‚
-â”‚ 6      â”‚ empty, size, top                 â”‚ NOT instantiated               â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌────────────────────────────────────────────────────────────────────────────┐
+│               INSTANTIATION DRY RUN: Stack<std::string>                   │
+├────────┬──────────────────────────────────┬────────────────────────────────┤
+│ Step   │ Action                           │ Result                         │
+├────────┼──────────────────────────────────┼────────────────────────────────┤
+│ 1      │ Parse Stack<std::string>         │ T = std::string                │
+│ 2      │ Substitute string for T          │ std::vector<std::string> data_;│
+│ 3      │ Layout                           │ sizeof(Stack<string>) resolved │
+│ 4      │ push("hello") instantiated       │ void push(const string&) code  │
+│ 5      │ copy semantics                   │ string copy constructor called │
+│ 6      │ empty, size, top                 │ NOT instantiated               │
+└────────┴──────────────────────────────────┴────────────────────────────────┘
 ```
 
 **Key insight: Lazy instantiation.** The compiler only generates member functions that are actually used. If you never call `Stack<int>::top()`, no code is generated for it. This saves compile time and binary size.
@@ -677,7 +677,7 @@ int main() {
 
 ```
 template <typename T, template <typename, typename> class Container>
-         â†‘                                    â†‘
+         ↑                                    ↑
        type param                      template template param
 ```
 
@@ -787,25 +787,25 @@ hello
 **Dry Run: Full Specialization Selection**
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚            FULL SPECIALIZATION RESOLUTION DRY RUN                        â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Call                 â”‚ Candidates                     â”‚ Result            â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ describe(42)         â”‚ primary<T> with T=int          â”‚ generic available â”‚
-â”‚                      â”‚ full spec for int              â”‚ FULL match âœ“     â”‚
-â”‚                      â”‚ Full spec wins                 â”‚ "Integer type"   â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ describe(3.14)       â”‚ primary<T> with T=double       â”‚ only option      â”‚
-â”‚                      â”‚ (no spec for double)           â”‚ "Unknown type"   â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ describe("hello")    â”‚ primary<T> with T=const char*  â”‚ primary used     â”‚
-â”‚                      â”‚ (no spec for const char*)      â”‚ "Unknown type"   â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ describe(string)     â”‚ primary<T> with T=string       â”‚ generic availableâ”‚
-â”‚                      â”‚ full spec for string            â”‚ FULL match âœ“    â”‚
-â”‚                      â”‚ Full spec wins                 â”‚ "hello"          â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────────────────────────────────────────────────────────────────────┐
+│            FULL SPECIALIZATION RESOLUTION DRY RUN                        │
+├──────────────────────┬────────────────────────────────┬──────────────────┤
+│ Call                 │ Candidates                     │ Result            │
+├──────────────────────┼────────────────────────────────┼──────────────────┤
+│ describe(42)         │ primary<T> with T=int          │ generic available │
+│                      │ full spec for int              │ FULL match âœ“     │
+│                      │ Full spec wins                 │ "Integer type"   │
+├──────────────────────┼────────────────────────────────┼──────────────────┤
+│ describe(3.14)       │ primary<T> with T=double       │ only option      │
+│                      │ (no spec for double)           │ "Unknown type"   │
+├──────────────────────┼────────────────────────────────┼──────────────────┤
+│ describe("hello")    │ primary<T> with T=const char*  │ primary used     │
+│                      │ (no spec for const char*)      │ "Unknown type"   │
+├──────────────────────┼────────────────────────────────┼──────────────────┤
+│ describe(string)     │ primary<T> with T=string       │ generic available│
+│                      │ full spec for string            │ FULL match âœ“    │
+│                      │ Full spec wins                 │ "hello"          │
+└──────────────────────┴────────────────────────────────┴──────────────────┘
 ```
 
 ### 7.4.2 Partial Specialization
@@ -854,20 +854,20 @@ int**:     1
 **Dry Run: Partial Specialization Matching**
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚             PARTIAL SPECIALIZATION MATCHING DRY RUN                     â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Type             â”‚ Primary â”‚ Partial<T*>   â”‚ Partial<const T*>â”‚ Selected  â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ int              â”‚ âœ“       â”‚ âœ—             â”‚ âœ—                 â”‚ Primary   â”‚
-â”‚ int*             â”‚ âœ“       â”‚ âœ“ (T=int)    â”‚ âœ—                 â”‚ Part: T*  â”‚
-â”‚ const int*       â”‚ âœ“       â”‚ âœ—             â”‚ âœ“ (T=int)         â”‚ Part: c T*â”‚
-â”‚ int&             â”‚ âœ“       â”‚ âœ—             â”‚ âœ—                 â”‚ Primary   â”‚
-â”‚ int**            â”‚ âœ“       â”‚ âœ“ (T=int*)   â”‚ âœ—                 â”‚ Part: T*  â”‚
-â”‚ int***           â”‚ âœ“       â”‚ âœ“ (T=int**)  â”‚ âœ—                 â”‚ Part: T*  â”‚
-â”‚ vector<int>*     â”‚ âœ“       â”‚ âœ“ (T=vector) â”‚ âœ—                 â”‚ Part: T*  â”‚
-â”‚ const char*      â”‚ âœ“       â”‚ âœ—             â”‚ âœ“ (T=char)        â”‚ Part: c T*â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────────────────────────────────────────────────────────────────────┐
+│             PARTIAL SPECIALIZATION MATCHING DRY RUN                     │
+├──────────────────┬─────────┬──────────────┬──────────────────┬───────────┤
+│ Type             │ Primary │ Partial<T*>   │ Partial<const T*>│ Selected  │
+├──────────────────┼─────────┼──────────────┼──────────────────┼───────────┤
+│ int              │ âœ“       │ âœ—             │ âœ—                 │ Primary   │
+│ int*             │ âœ“       │ âœ“ (T=int)    │ âœ—                 │ Part: T*  │
+│ const int*       │ âœ“       │ âœ—             │ âœ“ (T=int)         │ Part: c T*│
+│ int&             │ âœ“       │ âœ—             │ âœ—                 │ Primary   │
+│ int**            │ âœ“       │ âœ“ (T=int*)   │ âœ—                 │ Part: T*  │
+│ int***           │ âœ“       │ âœ“ (T=int**)  │ âœ—                 │ Part: T*  │
+│ vector<int>*     │ âœ“       │ âœ“ (T=vector) │ âœ—                 │ Part: T*  │
+│ const char*      │ âœ“       │ âœ—             │ âœ“ (T=char)        │ Part: c T*│
+└──────────────────┴─────────┴──────────────┴──────────────────┴───────────┘
 ```
 
 **Why partial specialization is NOT allowed for function templates:**
@@ -1093,27 +1093,27 @@ int main() {
 **Dry Run: `print_all(1, 3.14, "hello", 'c')`**
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚            VARIADIC RECURSION DRY RUN                                        â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Call Level â”‚ Args Pack                  â”‚ First  â”‚ Output   â”‚ Recurse With  â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ 1          â”‚ (1, 3.14, "hello", 'c')    â”‚ 1      â”‚ "1 "     â”‚ (3.14,"hello",'c') â”‚
-â”‚ 2          â”‚ (3.14, "hello", 'c')       â”‚ 3.14   â”‚ "3.14 "  â”‚ ("hello", 'c')     â”‚
-â”‚ 3          â”‚ ("hello", 'c')             â”‚ "hello"â”‚ "hello " â”‚ ('c')              â”‚
-â”‚ 4          â”‚ ('c')                      â”‚ 'c'    â”‚ "c "     â”‚ ()                 â”‚
-â”‚ 5          â”‚ ()                         â”‚ →      â”‚ "\n"     â”‚ → base case        â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────────────────────────────┐
+│            VARIADIC RECURSION DRY RUN                                        │
+├────────────┬────────────────────────────┬────────┬──────────┬───────────────┤
+│ Call Level │ Args Pack                  │ First  │ Output   │ Recurse With  │
+├────────────┼────────────────────────────┼────────┼──────────┼───────────────┤
+│ 1          │ (1, 3.14, "hello", 'c')    │ 1      │ "1 "     │ (3.14,"hello",'c') │
+│ 2          │ (3.14, "hello", 'c')       │ 3.14   │ "3.14 "  │ ("hello", 'c')     │
+│ 3          │ ("hello", 'c')             │ "hello"│ "hello " │ ('c')              │
+│ 4          │ ('c')                      │ 'c'    │ "c "     │ ()                 │
+│ 5          │ ()                         │ →      │ "\n"     │ → base case        │
+└────────────┴────────────────────────────┴────────┴──────────┴──────────────────────┘
 ```
 
 **Instantiation tree for `print_all(1, 3.14, "hello", 'c')`:**
 
 ```
 print_all(int, double, const char*, char)           → uses cout << int
-  â””â”€ print_all(double, const char*, char)           → uses cout << double
-       â””â”€ print_all(const char*, char)               → uses cout << const char*
-            â””â”€ print_all(char)                       → uses cout << char
-                 â””â”€ print_all()                      → base case
+  └─ print_all(double, const char*, char)           → uses cout << double
+       └─ print_all(const char*, char)               → uses cout << const char*
+            └─ print_all(char)                       → uses cout << char
+                 └─ print_all()                      → base case
 ```
 
 Each level is a separate function template instantiation with a different signature. The compiler generates 5 distinct functions.
@@ -1272,15 +1272,15 @@ Modified 0: 100
 **Memory layout of Tuple<int, double, string>:**
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Tuple<int, double, string>                   â”‚
-â”‚ â”œâ”€â”€ int head_                               â”‚
-â”‚ â””â”€â”€ Tuple<double, string> (base)            â”‚
-â”‚      â”œâ”€â”€ double head_                       â”‚
-â”‚      â””â”€â”€ Tuple<string> (base)               â”‚
-â”‚           â”œâ”€â”€ string head_                  â”‚
-â”‚           â””â”€â”€ Tuple<> (empty base)          â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────┐
+│ Tuple<int, double, string>                   │
+│ ├── int head_                               │
+│ └── Tuple<double, string> (base)            │
+│      ├── double head_                       │
+│      └── Tuple<string> (base)               │
+│           ├── string head_                  │
+│           └── Tuple<> (empty base)          │
+└─────────────────────────────────────────────┘
 ```
 
 This is a classic **recursive inheritance** pattern. The `get<2>` call resolves via:
@@ -1301,16 +1301,16 @@ SFINAE is a C++ rule: when the compiler substitutes template arguments into a fu
 
 ```
                       Overload Resolution
-                              â”‚
-                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                    â”‚                    â”‚
+                              │
+                    ┌─────────┴──────────┐
+                    │                    │
               Substitution Succeeds   Substitution Fails
-                    â”‚                    â”‚
+                    │                    │
             Candidate Included     Candidate Removed (SFINAE)
-                    â”‚                    â”‚
+                    │                    │
               Other candidates       Other candidates
               still considered       still considered
-                    â”‚                    â”‚
+                    │                    │
               Only if ALL fail →     Only if ALL fail →
               Compilation Error     Compilation Error
 ```
@@ -1372,35 +1372,35 @@ using enable_if_t = typename enable_if<B, T>::type;
 **Dry Run: `is_odd(5)`**
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                  SFINAE RESOLUTION DRY RUN                              â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Step         â”‚ Template 1 (integral)     â”‚ Template 2 (floating)        â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ 1. T deduced â”‚ T = int                  â”‚ T = int (also considered)     â”‚
-â”‚ 2. condition â”‚ is_integral<int> = true  â”‚ is_floating_point<int> = falseâ”‚
-â”‚ 3. enable_if â”‚ enable_if<true, bool>    â”‚ enable_if<false, bool>        â”‚
-â”‚ 4. ::type    â”‚ ::type = bool âœ“          â”‚ ::type does not EXIST âœ—       â”‚
-â”‚ 5. SFINAE?   â”‚ No → valid substitution  â”‚ YES → removed from overload   â”‚
-â”‚              â”‚                          â”‚ set                           â”‚
-â”‚ 6. RESULT    â”‚ Template 1 selected      â”‚ →                             â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────────────────────────────────────────────────────────────────────┐
+│                  SFINAE RESOLUTION DRY RUN                              │
+├──────────────┬──────────────────────────┬───────────────────────────────┤
+│ Step         │ Template 1 (integral)     │ Template 2 (floating)        │
+├──────────────┼──────────────────────────┼───────────────────────────────┤
+│ 1. T deduced │ T = int                  │ T = int (also considered)     │
+│ 2. condition │ is_integral<int> = true  │ is_floating_point<int> = false│
+│ 3. enable_if │ enable_if<true, bool>    │ enable_if<false, bool>        │
+│ 4. ::type    │ ::type = bool âœ“          │ ::type does not EXIST âœ—       │
+│ 5. SFINAE?   │ No → valid substitution  │ YES → removed from overload   │
+│              │                          │ set                           │
+│ 6. RESULT    │ Template 1 selected      │ →                             │
+└──────────────┴──────────────────────────┴───────────────────────────────┘
 ```
 
 **Dry Run: `is_odd("hello")`**
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Step         â”‚ Template 1 (integral)     â”‚ Template 2 (floating)        â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ 1. T deduced â”‚ T = const char*          â”‚ T = const char*               â”‚
-â”‚ 2. condition â”‚ is_integral<const char*> â”‚ is_floating_point<const char*>â”‚
-â”‚              â”‚ = false                  â”‚ = false                       â”‚
-â”‚ 3. enable_if â”‚ enable_if<false, bool>   â”‚ enable_if<false, bool>        â”‚
-â”‚ 4. ::type    â”‚ ::type does not EXIST âœ—  â”‚ ::type does not EXIST âœ—       â”‚
-â”‚ 5. SFINAE?   â”‚ YES → removed            â”‚ YES → removed                 â”‚
-â”‚ 6. RESULT    â”‚ No viable candidates     â”‚ → compilation ERROR           â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────────┬──────────────────────────┬───────────────────────────────┐
+│ Step         │ Template 1 (integral)     │ Template 2 (floating)        │
+├──────────────┼──────────────────────────┼───────────────────────────────┤
+│ 1. T deduced │ T = const char*          │ T = const char*               │
+│ 2. condition │ is_integral<const char*> │ is_floating_point<const char*>│
+│              │ = false                  │ = false                       │
+│ 3. enable_if │ enable_if<false, bool>   │ enable_if<false, bool>        │
+│ 4. ::type    │ ::type does not EXIST âœ—  │ ::type does not EXIST âœ—       │
+│ 5. SFINAE?   │ YES → removed            │ YES → removed                 │
+│ 6. RESULT    │ No viable candidates     │ → compilation ERROR           │
+└──────────────┴──────────────────────────┴───────────────────────────────┘
 ```
 
 ### 7.6.3 `void_t` Detection Idiom
@@ -1608,12 +1608,12 @@ private:
 ```
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ my_main.cpp â”‚ #includeâ”‚my_template.h â”‚         â”‚ Compiler  â”‚
-â”‚ (T = int)   â”‚â”€â”€â”€â”€â”€â”€â”€â”€→â”‚ template def â”‚â”€â”€â”€â”€â”€â”€â”€â”€→â”‚ generates â”‚
-â”‚             â”‚         â”‚              â”‚         â”‚ MyTemplateâ”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜         â”‚ <int> codeâ”‚
-                                                 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────┐         ┌──────────────┐         ┌───────────┐
+│ my_main.cpp │ #include│my_template.h │         │ Compiler  │
+│ (T = int)   │────────→│ template def │────────→│ generates │
+│             │         │              │         │ MyTemplate│
+└─────────────┘         └──────────────┘         │ <int> code│
+                                                 └───────────┘
 ```
 
 **Why templates are defined in headers:**
@@ -1642,16 +1642,16 @@ void func_b() {
 **How duplicate instantiations are handled:**
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ a.cpp    â”‚    â”‚ MyTemplate<int> code  â”‚â”€â”€â”
-â”‚ b.cpp    â”‚    â”‚ MyTemplate<int> code  â”‚â”€â”€â”¤
-â”‚ c.cpp    â”‚    â”‚ (no MyTemplate use)   â”‚  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-                                           â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                                           â”œâ”€â”€→â”‚  Linker  â”‚â”€â”€→ One copy retained
-                                           â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                           â”‚
-                                           â”‚  Other copies discarded
+┌──────────┐    ┌───────────────────────┐
+│ a.cpp    │    │ MyTemplate<int> code  │──┐
+│ b.cpp    │    │ MyTemplate<int> code  │──┤
+│ c.cpp    │    │ (no MyTemplate use)   │  │
+└──────────┘    └───────────────────────┘  │
+                                           │  ┌──────────┐
+                                           ├──→│  Linker  │──→ One copy retained
+                                           │  └──────────┘
+                                           │
+                                           │  Other copies discarded
 ```
 
 The linker deduplicates identical template instantiations via:

@@ -90,9 +90,9 @@ flowchart LR
 | **Ï‰(g(n))** | { f(n) \| âˆ€ c > 0, âˆƒ nâ‚€ > 0 such that 0 â‰¤ cÂ·g(n) < f(n) âˆ€ n â‰¥ nâ‚€ } | Loose lower |
 
 **Properties:**
-- Transitive: f(n) = O(g(n)) and g(n) = O(h(n)) â‡’ f(n) = O(h(n))
+- Transitive: f(n) = O(g(n)) and g(n) = O(h(n)) ⇒ f(n) = O(h(n))
 - Reflexive: f(n) = O(f(n))
-- Symmetric for Î˜ only: f(n) = Î˜(g(n)) â‡” g(n) = Î˜(f(n))
+- Symmetric for Î˜ only: f(n) = Î˜(g(n)) ⇔ g(n) = Î˜(f(n))
 - Addition: fâ‚(n) + fâ‚‚(n) = O(max(fâ‚(n), fâ‚‚(n)))
 - Multiplication: fâ‚(n) Â· fâ‚‚(n) = O(fâ‚(n) Â· fâ‚‚(n))
 

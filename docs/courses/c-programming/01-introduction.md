@@ -157,30 +157,30 @@ A C program is like a house blueprint:
 ### Anatomy of a C Program
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  /* File: program.c                                             â”‚  â† Comments (annotations)
-â”‚   * Purpose: Demonstrate C program structure                    â”‚
-â”‚   */                                                            â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚  #include <stdio.h>    /* Standard I/O header */                â”‚  â† Preprocessor Directives
-â”‚  #include <stdlib.h>   /* Standard library header */            â”‚     (permits & materials)
-â”‚  #define PI 3.14159    /* Macro constant */                     â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚  double area_of_circle(double radius);  /* Function prototype */â”‚  â† Global Declarations
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚  int main(void)                                                 â”‚  â† main() —” entry point
-â”‚  {                                                              â”‚     (front door)
-â”‚      double r = 5.0;                                            â”‚
-â”‚      double a = area_of_circle(r);                              â”‚
-â”‚      printf("Area: %.2f\n", a);                                 â”‚
-â”‚      return 0;                                                  â”‚
-â”‚  }                                                              â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚  double area_of_circle(double radius)  /* Function definition */â”‚  â† Other Functions
-â”‚  {                                                              â”‚     (rooms)
-â”‚      return PI * radius * radius;                               â”‚
-â”‚  }                                                              â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────────────────┐
+│  /* File: program.c                                             │  ← Comments (annotations)
+│   * Purpose: Demonstrate C program structure                    │
+│   */                                                            │
+├─────────────────────────────────────────────────────────────────┤
+│  #include <stdio.h>    /* Standard I/O header */                │  ← Preprocessor Directives
+│  #include <stdlib.h>   /* Standard library header */            │     (permits & materials)
+│  #define PI 3.14159    /* Macro constant */                     │
+├─────────────────────────────────────────────────────────────────┤
+│  double area_of_circle(double radius);  /* Function prototype */│  ← Global Declarations
+├─────────────────────────────────────────────────────────────────┤
+│  int main(void)                                                 │  ← main() —” entry point
+│  {                                                              │     (front door)
+│      double r = 5.0;                                            │
+│      double a = area_of_circle(r);                              │
+│      printf("Area: %.2f\n", a);                                 │
+│      return 0;                                                  │
+│  }                                                              │
+├─────────────────────────────────────────────────────────────────┤
+│  double area_of_circle(double radius)  /* Function definition */│  ← Other Functions
+│  {                                                              │     (rooms)
+│      return PI * radius * radius;                               │
+│  }                                                              │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ### Complete Example
@@ -292,7 +292,7 @@ int main(void)          // Line 3: Entry point. 'int' = returns integer. 'void' 
 ```c
 int main(void)
 {
-    printf("Hello, World!\n")  // â† missing semicolon!
+    printf("Hello, World!\n")  // ← missing semicolon!
     return 0;
 }
 ```
@@ -315,7 +315,7 @@ int main(void)
 
 **Edge Case 3: Wrong parameter list**
 ```c
-int main()          // â† '()' means "unspecified parameters" in C, NOT "no parameters"
+int main()          // ← '()' means "unspecified parameters" in C, NOT "no parameters"
 {
     return 0;
 }
@@ -649,10 +649,10 @@ int x /* counter */ = 5;
 #define MAX(a, b) /* find max */ ((a) > (b) ? (a) : (b))
 
 /* INVALID: nested comments */
-/* outer /* inner */ â† this */  /* â† ERROR: this "ends" a comment that wasn't opened */
+/* outer /* inner */ ← this */  /* ← ERROR: this "ends" a comment that wasn't opened */
 
 /* Tricky: trigraph issue (C89 only —” removed in C23) */
-// ??/    â† trigraph for backslash, continues comment to next line!
+// ??/    ← trigraph for backslash, continues comment to next line!
 
 /* The single-line comment // can contain multi-line comment delimiters: */
 // /* this is just text inside a single-line comment */
@@ -690,21 +690,21 @@ A **token** is the smallest individual element of a C program that has meaning t
 ### Classification of Tokens
 
 ```
-                          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                          â”‚       TOKENS             â”‚
-                          â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                   â”‚
-            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-            â”‚              â”‚               â”‚              â”‚
-     â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”´â”€â”€â”€â”€â”
-     â”‚  Keywords   â”‚ â”‚ Identifiersâ”‚ â”‚  Constants   â”‚ â”‚String  â”‚
-     â”‚ (32 total)  â”‚ â”‚ (names)    â”‚ â”‚  (literals)  â”‚ â”‚Literalsâ”‚
-     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-            â”‚
-     â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
-     â”‚  Operators  â”‚
-     â”‚ (45+ total) â”‚
-     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                          ┌─────────────────────────┐
+                          │       TOKENS             │
+                          └─────────────────────────┘
+                                   │
+            ┌──────────────────────┼──────────────────────┐
+            │              │               │              │
+     ┌──────┴──────┐ ┌─────┴──────┐ ┌──────┴───────┐ ┌───┴────┐
+     │  Keywords   │ │ Identifiers│ │  Constants   │ │String  │
+     │ (32 total)  │ │ (names)    │ │  (literals)  │ │Literals│
+     └─────────────┘ └────────────┘ └──────────────┘ └────────┘
+            │
+     ┌──────┴──────┐
+     │  Operators  │
+     │ (45+ total) │
+     └─────────────┘
 ```
 
 ### Example: Tokenizing a Line of Code
@@ -905,22 +905,22 @@ A **constant** is a fixed value that does not change during program execution.
 ### Types of Constants
 
 ```
-                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                    â”‚     CONSTANTS          â”‚
-                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                           â”‚
-         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-         â”‚                 â”‚                 â”‚
-   â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
-   â”‚  Numeric  â”‚   â”‚ Character  â”‚   â”‚  Symbolic   â”‚
-   â”‚ Constants â”‚   â”‚ Constants  â”‚   â”‚  Constants  â”‚
-   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-         â”‚                â”‚
-   â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
-   â”‚ Integer   â”‚    â”‚ Single     â”‚
-   â”‚ Constants â”‚    â”‚ Character  â”‚
-   â”‚ Float/Dbl â”‚    â”‚ String     â”‚
-   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                    ┌──────────────────────┐
+                    │     CONSTANTS          │
+                    └──────────────────────┘
+                           │
+         ┌─────────────────┼─────────────────┐
+         │                 │                 │
+   ┌─────┴─────┐   ┌──────┴──────┐   ┌──────┴──────┐
+   │  Numeric  │   │ Character  │   │  Symbolic   │
+   │ Constants │   │ Constants  │   │  Constants  │
+   └───────────┘   └────────────┘   └─────────────┘
+         │                │
+   ┌─────┴─────┐    ┌─────┴──────┐
+   │ Integer   │    │ Single     │
+   │ Constants │    │ Character  │
+   │ Float/Dbl │    │ String     │
+   └───────────┘    └────────────┘
 ```
 
 ### 1.11.1 Integer Constants

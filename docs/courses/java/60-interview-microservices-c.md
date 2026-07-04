@@ -28,7 +28,7 @@ flowchart LR
 Kubernetes orchestrates containerized microservices with deployments, services, config maps, and ingress controllers.
 
 ```yaml
-# â”€â”€ Deployment for a microservice â”€â”€
+# ── Deployment for a microservice ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: apps/v1
@@ -91,7 +91,7 @@ spec:
               memory: "512Mi"
               cpu: "500m"
 ---
-# â”€â”€ Service (stable network endpoint) â”€â”€
+# ── Service (stable network endpoint) ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: v1
@@ -106,7 +106,7 @@ spec:
       targetPort: 8080
   type: ClusterIP  # Internal → only accessible within the cluster
 ---
-# â”€â”€ ConfigMap for non-sensitive config â”€â”€
+# ── ConfigMap for non-sensitive config ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: v1
@@ -119,7 +119,7 @@ data:
       order-timeout: 30s
       max-batch-size: 100
 ---
-# â”€â”€ HPA (auto-scaling) â”€â”€
+# ── HPA (auto-scaling) ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: autoscaling/v2
@@ -141,7 +141,7 @@ spec:
           type: Utilization
           averageUtilization: 70
 ---
-# â”€â”€ Ingress (external traffic routing) â”€â”€
+# ── Ingress (external traffic routing) ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: networking.k8s.io/v1
@@ -216,7 +216,7 @@ Kubernetes replaces Eureka for service discovery (DNS resolution), replaces Conf
 **Answer:**
 
 ```java
-// â”€â”€ Rolling update (Kubernetes default) â”€â”€
+// ── Rolling update (Kubernetes default) ──
 // Updates pods gradually → old pods keep serving until new ones are healthy
 apiVersion: apps/v1
 kind: Deployment
@@ -227,7 +227,7 @@ spec:
       maxSurge: 1        // One extra pod during update
       maxUnavailable: 0  // Zero downtime: only create new pods before removing old ones
 
-// â”€â”€ Blue/Green deployment â”€â”€
+// ── Blue/Green deployment ──
 // Two identical environments: Blue (current), Green (new)
 apiVersion: apps/v1
 kind: Service
@@ -236,7 +236,7 @@ metadata:
 spec:
   selector:
     app: order-service
-    version: green   # â† Flip this from "blue" to "green" to switch traffic
+    version: green   # ← Flip this from "blue" to "green" to switch traffic
 ---
 # Deploy green:
 
@@ -260,7 +260,7 @@ spec:
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 
-// â”€â”€ Canary deployment (traffic splitting) â”€â”€
+// ── Canary deployment (traffic splitting) ──
 // Route 5% of traffic to the new version, monitor, then gradually increase
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
@@ -321,11 +321,11 @@ Start with rolling (built into Kubernetes, zero configuration). Move to blue/gre
 Spring Boot Actuator exposes metrics in Prometheus format. Prometheus scrapes them. Grafana visualizes dashboards.
 
 ```java
-// â”€â”€ Dependencies â”€â”€
+// ── Dependencies ──
 // implementation 'org.springframework.boot:spring-boot-starter-actuator'
 // implementation 'io.micrometer:micrometer-registry-prometheus'
 
-// â”€â”€ Configuration â”€â”€
+// ── Configuration ──
 // application.yml:
 // management:
 //   endpoints:
@@ -339,7 +339,7 @@ Spring Boot Actuator exposes metrics in Prometheus format. Prometheus scrapes th
 //       prometheus:
 //         enabled: true
 
-// â”€â”€ Custom metrics â”€â”€
+// ── Custom metrics ──
 @Service
 public class OrderMetricsService {
     private final Counter orderCounter;
@@ -374,7 +374,7 @@ public class OrderMetricsService {
     }
 }
 
-// â”€â”€ Micrometer annotations â”€â”€
+// ── Micrometer annotations ──
 @Component
 public class PaymentProcessor {
     @Timed(value = "payment.processing", percentiles = {0.5, 0.95, 0.99})
@@ -388,7 +388,7 @@ public class PaymentProcessor {
 ```
 
 ```yaml
-# â”€â”€ Prometheus config (prometheus.yml) â”€â”€
+# ── Prometheus config (prometheus.yml) ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 scrape_configs:
@@ -410,7 +410,7 @@ scrape_configs:
 ```
 
 ```yaml
-# â”€â”€ Kubernetes PodMonitor (operator-based scraping) â”€â”€
+# ── Kubernetes PodMonitor (operator-based scraping) ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: monitoring.coreos.com/v1
@@ -446,7 +446,7 @@ Alert on: p99 latency > 1s, error rate > 1%, circuit breaker OPEN, heap usage > 
 Contract testing verifies that a producer's API matches what the consumer expects, without end-to-end integration tests. Spring Cloud Contract generates tests and stubs from Groovy or YAML contracts.
 
 ```groovy
-// â”€â”€ Producer contract (user-service) â”€â”€
+// ── Producer contract (user-service) ──
 // File: contracts/shouldReturnUser.groovy
 Contract.make {
     description "should return user by ID"
@@ -472,7 +472,7 @@ Contract.make {
 ```
 
 ```java
-// â”€â”€ Producer-side base test (Spring Cloud Contract generates tests) â”€â”€
+// ── Producer-side base test (Spring Cloud Contract generates tests) ──
 // File: src/test/java/.../BaseContractTest.java
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @AutoConfigureMockMvc
@@ -493,7 +493,7 @@ public abstract class BaseContractTest {
 ```
 
 ```java
-// â”€â”€ Consumer-side (order-service uses stubs to test its client) â”€â”€
+// ── Consumer-side (order-service uses stubs to test its client) ──
 @SpringBootTest
 @AutoConfigureStubRunner(
     stubsMode = StubRunnerProperties.StubsMode.LOCAL,
@@ -526,14 +526,14 @@ Contract testing replaces brittle end-to-end tests for cross-service integration
 Each microservice owns its database → no other service accesses it directly. Data that spans services is shared through events or API calls.
 
 ```java
-// â”€â”€ Anti-pattern: direct database access â”€â”€
+// ── Anti-pattern: direct database access ──
 // order-service calls user-service's database directly → WRONG
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
     // order-service should NOT have this → it violates service boundaries
 }
 
-// â”€â”€ Correct: API-based data sharing â”€â”€
+// ── Correct: API-based data sharing ──
 // order-service calls user-service's REST API
 @FeignClient(name = "user-service")
 public interface UserServiceClient {
@@ -541,7 +541,7 @@ public interface UserServiceClient {
     AddressDto getShippingAddress(@PathVariable Long id);
 }
 
-// â”€â”€ Correct: Event-based data sharing â”€â”€
+// ── Correct: Event-based data sharing ──
 // When user changes their shipping address, user-service publishes an event
 @Service
 public class UserService {
@@ -591,18 +591,18 @@ Never share databases between services. If two services need the same table, the
 **Answer:**
 
 ```java
-// â”€â”€ Anti-pattern 1: Distributed Monolith â”€â”€
+// ── Anti-pattern 1: Distributed Monolith ──
 // Services are split but share a database and cannot deploy independently
 @Entity
 @Table(name = "orders")
 public class Order {
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;  // â† Order-service needs User entity from user-service's DB
+    private User user;  // ← Order-service needs User entity from user-service's DB
 }
 // Fix: Each service owns its data. Order-service stores only user_id as a value.
 
-// â”€â”€ Anti-pattern 2: Chatty Communication â”€â”€
+// ── Anti-pattern 2: Chatty Communication ──
 // Multiple API calls to complete one operation
 @Service
 public class OrderService {
@@ -614,24 +614,24 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Anti-pattern 3: Shared Libraries for Domain Logic â”€â”€
+// ── Anti-pattern 3: Shared Libraries for Domain Logic ──
 // A shared JAR that contains business logic used by multiple services
 public class OrderValidationUtils {
     // Any change to this requires rebuilding ALL services
     // Fix: duplicate validation logic per service or make it a separate microservice
 }
 
-// â”€â”€ Anti-pattern 4: Golden Hammer (everything must be a microservice) â”€â”€
+// ── Anti-pattern 4: Golden Hammer (everything must be a microservice) ──
 @SpringBootApplication
 public class EmailSendingService { }  // Could be a simple function + queue
 // Fix: Use serverless functions for simple tasks. Not everything needs a full service.
 
-// â”€â”€ Anti-pattern 5: No Monitoring or Observability â”€â”€
+// ── Anti-pattern 5: No Monitoring or Observability ──
 // Services communicate without tracing, logging correlation, or metrics
 // Fix: Always include distributed tracing (Micrometer + Zipkin),
 // structured logging (trace ID in every log), and Prometheus metrics.
 
-// â”€â”€ Anti-pattern 6: Leaky Abstractions â”€â”€
+// ── Anti-pattern 6: Leaky Abstractions ──
 // Internal implementation details leak through service boundaries
 @FeignClient(name = "user-service")
 public interface UserServiceClient {
@@ -640,7 +640,7 @@ public interface UserServiceClient {
 }
 // Fix: Each service has its own API contract with DTOs, not exposed entities.
 
-// â”€â”€ Anti-pattern 7: Orchestration in the API Gateway â”€â”€
+// ── Anti-pattern 7: Orchestration in the API Gateway ──
 @RestController
 public class ApiGatewayController {
     @GetMapping("/order-details/{orderId}")
@@ -665,7 +665,7 @@ Golden rule: If splitting a service doesn't give you independent deployability, 
 Testing microservices uses a pyramid: unit tests (many) → integration tests (fewer) → contract tests (per pair) → end-to-end tests (few).
 
 ```java
-// â”€â”€ Layer 1: Unit tests (fast, isolated, mock external calls) â”€â”€
+// ── Layer 1: Unit tests (fast, isolated, mock external calls) ──
 @ExtendWith(MockitoExtension.class)
 class OrderServiceUnitTest {
     @Mock private OrderRepository orderRepo;
@@ -684,7 +684,7 @@ class OrderServiceUnitTest {
     }
 }
 
-// â”€â”€ Layer 2: Integration tests with TestContainers â”€â”€
+// ── Layer 2: Integration tests with TestContainers ──
 @SpringBootTest
 @Testcontainers
 class OrderServiceIntegrationTest {
@@ -714,7 +714,7 @@ class OrderServiceIntegrationTest {
     }
 }
 
-// â”€â”€ Layer 3: Contract tests (Spring Cloud Contract or Pact) â”€â”€
+// ── Layer 3: Contract tests (Spring Cloud Contract or Pact) ──
 @SpringBootTest
 @AutoConfigureStubRunner(
     stubsMode = StubRunnerProperties.StubsMode.LOCAL,
@@ -730,7 +730,7 @@ class OrderServiceContractTest {
     }
 }
 
-// â”€â”€ Layer 4: End-to-end tests (few, smoke-test critical paths) â”€â”€
+// ── Layer 4: End-to-end tests (few, smoke-test critical paths) ──
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @Testcontainers
 class OrderE2ETest {
@@ -769,7 +769,7 @@ class OrderE2ETest {
     }
 }
 
-// â”€â”€ WireMock for external service simulation â”€â”€
+// ── WireMock for external service simulation ──
 @SpringBootTest
 @WireMockTest(httpPort = 9090)
 class OrderServiceWireMockTest {

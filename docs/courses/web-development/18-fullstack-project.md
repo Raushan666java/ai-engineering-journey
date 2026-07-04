@@ -82,14 +82,14 @@ The monorepo structure:
 
 ```
 taskflow/
-â”œâ”€â”€ apps/
-â”‚   â”œâ”€â”€ web/          # Next.js frontend
-â”‚   â””â”€â”€ api/          # Express backend
-â”œâ”€â”€ packages/
-â”‚   â””â”€â”€ shared/       # Shared TypeScript types
-â”œâ”€â”€ docker-compose.yml
-â”œâ”€â”€ package.json
-â””â”€â”€ tsconfig.json
+├── apps/
+│   ├── web/          # Next.js frontend
+│   └── api/          # Express backend
+├── packages/
+│   └── shared/       # Shared TypeScript types
+├── docker-compose.yml
+├── package.json
+└── tsconfig.json
 ```
 
 ## 18.2 Setting Up the Monorepo

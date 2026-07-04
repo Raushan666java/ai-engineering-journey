@@ -1775,7 +1775,7 @@ Example: N=3, W=2, R=2 → Strong consistency (2+2=4 > 3)
 
 **Consistency Model Spectrum**:
 ```
-Stronger â† -----------------------------------------------------------------→ Weaker
+Stronger ← -----------------------------------------------------------------→ Weaker
          Linearizability → Sequential → Causal → PRAM → Read-Your-Writes → Eventual
          (hardest)                                                       (easiest)
 ```

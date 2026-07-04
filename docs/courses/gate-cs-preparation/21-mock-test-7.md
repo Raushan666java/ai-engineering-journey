@@ -661,7 +661,7 @@ Wait, Catalan(7) = 429. Catalan(6) = 132. So with 7 nodes, answer is 429. Let me
 
 And Q25: Chromatic number of Câ‚… = 3 (odd cycle needs 3 colors, at least and at most 3 colors). Answer B âœ“.
 
-Let me fix all the errors now.<ï½œendâ–ofâ–thinkingï½œ>
+Let me fix all the errors now.<ï½œend▁of▁thinkingï½œ>
 
 <ï½œï½œDSMLï½œï½œtool_calls>
 <ï½œï½œDSMLï½œï½œinvoke name="read">

@@ -1055,25 +1055,25 @@ This design achieves ~200Î¼s per reading for threshold checks and ~800Î¼s fo
 The system uses a layered architecture bridging IT (Laravel) with OT (factory floor):
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                  IT Layer                        â”‚
-â”‚  Laravel App (AI Agents, Dashboards, APIs)      â”‚
-â”‚  PostgreSQL (relational), Redis (streams/cache)  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                       â”‚ MCP + REST + MQTT
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚              OT Bridge Layer                     â”‚
-â”‚  MQTT Broker (Mosquitto/EMQX)                   â”‚
-â”‚  OPC UA Gateway (converts OPC UA → MQTT JSON)   â”‚
-â”‚  Modbus TCP Gateway (serial → TCP tunnel)        â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                       â”‚ OPC UA / Modbus / Profinet
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                  OT Layer                        â”‚
-â”‚  PLCs (Siemens S7, Allen-Bradley ControlLogix)  â”‚
-â”‚  SCADA (Wonderware, Ignition)                    â”‚
-â”‚  Sensors, actuators, conveyors, robots           â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────┐
+│                  IT Layer                        │
+│  Laravel App (AI Agents, Dashboards, APIs)      │
+│  PostgreSQL (relational), Redis (streams/cache)  │
+└──────────────────────┬──────────────────────────┘
+                       │ MCP + REST + MQTT
+┌──────────────────────┴──────────────────────────┐
+│              OT Bridge Layer                     │
+│  MQTT Broker (Mosquitto/EMQX)                   │
+│  OPC UA Gateway (converts OPC UA → MQTT JSON)   │
+│  Modbus TCP Gateway (serial → TCP tunnel)        │
+└──────────────────────┬──────────────────────────┘
+                       │ OPC UA / Modbus / Profinet
+┌──────────────────────┴──────────────────────────┐
+│                  OT Layer                        │
+│  PLCs (Siemens S7, Allen-Bradley ControlLogix)  │
+│  SCADA (Wonderware, Ignition)                    │
+│  Sensors, actuators, conveyors, robots           │
+└─────────────────────────────────────────────────┘
 ```
 
 **Key integration patterns**:

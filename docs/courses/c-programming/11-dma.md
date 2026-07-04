@@ -405,10 +405,10 @@ A running C program's memory is divided into five segments. Understanding this l
 ```
 High address (0xFFFFFFFF on 32-bit / 0x7FFFFFFF on Linux x86-64)
 +------------------+
-|      Stack       |  â† grows downward (local variables, function frames)
-|        â†“         |
+|      Stack       |  ← grows downward (local variables, function frames)
+|        ↓         |
 |                  |
-|        â†‘         |
+|        ↑         |
 |      Heap        |  → grows upward (dynamic allocations)
 +------------------+
 |      BSS         |  Uninitialized static variables (zero-filled at load)
@@ -1340,12 +1340,12 @@ When you call `free(ptr)`, the heap manager:
 ### Memory Header Layout
 
 ```
-  Pointer returned to caller →â–º +----------+
+  Pointer returned to caller →► +----------+
                                 |  user     |
                                 |  data     |
                                 |  ...      |
-   Block start →â–º +----------+  +----------+
-                  |  size    |  â† metadata (4â€“16 bytes)
+   Block start →► +----------+  +----------+
+                  |  size    |  ← metadata (4â€“16 bytes)
                   |  flags   |
                   |  prev/next| (for freelist linking)
                   +----------+
@@ -1467,13 +1467,13 @@ void memory_leak(void) {
 
 ```
 Need dynamic memory?
-â”œâ”€â”€ Need zero-initialization?
-â”‚   â”œâ”€â”€ Yes → calloc
-â”‚   â””â”€â”€ No  → malloc
-â”œâ”€â”€ Resizing existing block?
-â”‚   â””â”€â”€ Yes → realloc
-â””â”€â”€ Size unknown at compile time?
-    â””â”€â”€ Yes → malloc or calloc
+├── Need zero-initialization?
+│   ├── Yes → calloc
+│   └── No  → malloc
+├── Resizing existing block?
+│   └── Yes → realloc
+└── Size unknown at compile time?
+    └── Yes → malloc or calloc
 ```
 
 ### Code: Three Functions Side by Side
@@ -1898,7 +1898,7 @@ Each malloc'd block has a metadata header (typically 8â€“16 bytes) just bef
 ```
 Memory before free:
   [HEADER: size=32, flags=in_use, prev_size, next] [USER DATA: 32 bytes]
-                                                          â–²
+                                                          ▲
                                                       returned pointer
 
 If user writes past 32 bytes:

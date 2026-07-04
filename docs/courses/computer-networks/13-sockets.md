@@ -1706,7 +1706,7 @@ kqueue vs epoll differences:
 Unix domain sockets (AF_UNIX) allow IPC between processes on the **same host**. They use the **file system** as the address namespace instead of IP:port.
 
 ```text
-Process A  â†→  [ /tmp/app.sock ]  â†→  Process B
+Process A  ←→  [ /tmp/app.sock ]  ←→  Process B
           stream / datagram              |
                                     Same kernel → no network stack
 ```
@@ -2296,16 +2296,16 @@ Node.js uses **libuv**, a cross-platform async I/O library:
 
 ```
 Node.js Event Loop:
-                   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                   â”‚   timers        â”‚ â† setTimeout, setInterval
-                   â”‚   pending cb    â”‚ â† I/O callbacks
-                   â”‚   idle/prepare  â”‚ â† internal
-            â”€â”€â”€â”€â”€â”€ â”‚   poll          â”‚ â† epoll_wait / kqueue / IOCP
-           â”‚       â”‚   check         â”‚ â† setImmediate
-           â”‚       â”‚   close cb      â”‚ â† close events
-           â”‚       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-           â”‚               â”‚
-           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ (loop forever)
+                   ┌─────────────────┐
+                   │   timers        │ ← setTimeout, setInterval
+                   │   pending cb    │ ← I/O callbacks
+                   │   idle/prepare  │ ← internal
+            ────── │   poll          │ ← epoll_wait / kqueue / IOCP
+           │       │   check         │ ← setImmediate
+           │       │   close cb      │ ← close events
+           │       └─────────────────┘
+           │               │
+           └───────────────┘ (loop forever)
 ```
 
 ### HAProxy (epoll, kqueue, splice)
@@ -2384,14 +2384,14 @@ while (1) {
 ```
 TCP Server:
 CLOSED → socket() → bind() → listen() → LISTEN → accept() → ESTABLISHED
-                                                              â†“
+                                                              ↓
                                                         recv/send loop
-                                                              â†“
+                                                              ↓
                                                         close() → TIME_WAIT → CLOSED
 
 TCP Client:
 CLOSED → socket() → connect() → SYN_SENT → ESTABLISHED → recv/send loop → FIN_WAIT
-                                                                           â†“
+                                                                           ↓
                                                                      TIME_WAIT → CLOSED
 ```
 

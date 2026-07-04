@@ -49,11 +49,11 @@ A typical real estate platform revolves around a core `Property` entity → the 
 The relationships form a hub-and-spoke:
 
 ```
-Property 1â”€â”€* Listing 1â”€â”€* Offer
-                Listing 1â”€â”€* Showing (Agent + Client)
-Agent    1â”€â”€* Listing
-Agent    1â”€â”€* Client (relationship table)
-Client   1â”€â”€* Showing
+Property 1──* Listing 1──* Offer
+                Listing 1──* Showing (Agent + Client)
+Agent    1──* Listing
+Agent    1──* Client (relationship table)
+Client   1──* Showing
 ```
 
 In Laravel, you'd model these with `HasMany` and `BelongsToMany`:
@@ -1129,31 +1129,31 @@ Integrate this agent into agent dashboards. Cache health scores and update them 
 A production real estate platform typically follows a layered architecture:
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                  Presentation Layer                  â”‚
-â”‚  Web (Blade/Inertia)  â”‚  Mobile API  â”‚  Public API  â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚                   Application Layer                  â”‚
-â”‚  Agents (Listing, Valuation, Tour, Document, Leadâ€¦) â”‚
-â”‚  Services (Valuation, Search, MLS Sync, Pricing)    â”‚
-â”‚  Jobs (Sync MLS, Generate Reports, Send Reminders)  â”‚
-â”‚  Events (ListingCreated, OfferAccepted, ShowingBooked)â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚                    Domain Layer                      â”‚
-â”‚  Models (Property, Listing, Agent, Client, Showing)  â”‚
-â”‚  Enums (PropertyType, ListingStatus, LeadScore)      â”‚
-â”‚  Value Objects (Address, Price, GeoLocation)         â”‚
-â”‚  Domain Events & Listeners                          â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚                 Infrastructure Layer                 â”‚
-â”‚  Database (PostgreSQL + PostGIS)                    â”‚
-â”‚  Cache (Redis → listings, search, session)          â”‚
-â”‚  Search (Meilisearch/Algolia for full-text search)  â”‚
-â”‚  Queue (Redis/SQS → MLS sync, notifications)         â”‚
-â”‚  Storage (S3 → images, documents, virtual tours)    â”‚
-â”‚  AI SDK (Anthropic/OpenAI for agents)               â”‚
-â”‚  Mapping (Mapbox/Google Maps → geocoding, search)   â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────┐
+│                  Presentation Layer                  │
+│  Web (Blade/Inertia)  │  Mobile API  │  Public API  │
+├─────────────────────────────────────────────────────┤
+│                   Application Layer                  │
+│  Agents (Listing, Valuation, Tour, Document, Leadâ€¦) │
+│  Services (Valuation, Search, MLS Sync, Pricing)    │
+│  Jobs (Sync MLS, Generate Reports, Send Reminders)  │
+│  Events (ListingCreated, OfferAccepted, ShowingBooked)│
+├─────────────────────────────────────────────────────┤
+│                    Domain Layer                      │
+│  Models (Property, Listing, Agent, Client, Showing)  │
+│  Enums (PropertyType, ListingStatus, LeadScore)      │
+│  Value Objects (Address, Price, GeoLocation)         │
+│  Domain Events & Listeners                          │
+├─────────────────────────────────────────────────────┤
+│                 Infrastructure Layer                 │
+│  Database (PostgreSQL + PostGIS)                    │
+│  Cache (Redis → listings, search, session)          │
+│  Search (Meilisearch/Algolia for full-text search)  │
+│  Queue (Redis/SQS → MLS sync, notifications)         │
+│  Storage (S3 → images, documents, virtual tours)    │
+│  AI SDK (Anthropic/OpenAI for agents)               │
+│  Mapping (Mapbox/Google Maps → geocoding, search)   │
+└─────────────────────────────────────────────────────┘
 ```
 
 Key architectural decisions:

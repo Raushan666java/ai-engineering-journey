@@ -140,7 +140,7 @@ Example: 0.625â‚â‚€ to binary
 Example: 8-bit representation of -42
 +42 = 00101010
 1's complement: 11010101
-2's complement: 11010110  â† -42 in 2's complement
+2's complement: 11010110  ← -42 in 2's complement
 ```
 
 **Sign extension:** For signed numbers, extend the sign bit (MSB) to maintain value.

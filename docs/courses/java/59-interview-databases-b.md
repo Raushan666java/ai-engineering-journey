@@ -28,7 +28,7 @@ flowchart LR
 `@ManyToMany` creates an implicit join table with only two columns (the foreign keys). You cannot add attributes to the relationship (like `createdAt`, `role`, `quantity`). A join entity (also called an association entity) creates an explicit third entity mapped to the join table, allowing you to add columns to the relationship itself.
 
 ```java
-// â”€â”€ @ManyToMany (simple, no extra columns) â”€â”€
+// ── @ManyToMany (simple, no extra columns) ──
 @Entity
 public class Student {
     @Id private Long id;
@@ -48,7 +48,7 @@ public class Course {
     private Set<Student> students;
 }
 
-// â”€â”€ Join entity (extra columns possible) â”€â”€
+// ── Join entity (extra columns possible) ──
 @Entity
 public class Enrollment {
     @Id private Long id;
@@ -160,7 +160,7 @@ Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when sub
 A projection is a subset of entity fields fetched instead of the full entity. DTO projections fetch only the columns you need, avoiding the overhead of loading large columns (BLOBs, TEXT) or eagerly-fetched associations.
 
 ```java
-// â”€â”€ Interface-based projection â”€â”€
+// ── Interface-based projection ──
 public interface UserSummary {
     String getName();
     String getEmail();
@@ -169,7 +169,7 @@ public interface UserSummary {
 @Query("SELECT u.name AS name, u.email AS email FROM User u WHERE u.active = true")
 List<UserSummary> findActiveUserSummaries();
 
-// â”€â”€ Class-based DTO projection â”€â”€
+// ── Class-based DTO projection ──
 public record UserDto(String name, String email, int orderCount) {}
 
 @Query("SELECT new com.example.UserDto(u.name, u.email, SIZE(u.orders)) " +

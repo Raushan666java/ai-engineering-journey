@@ -28,7 +28,7 @@ flowchart LR
 A service mesh manages service-to-service communication at the infrastructure layer using sidecar proxies. Istio injects an Envoy proxy alongside each pod, handling traffic management, security, and observability without changing application code.
 
 ```java
-// â”€â”€ Without service mesh: circuit breaker in application code â”€â”€
+// ── Without service mesh: circuit breaker in application code ──
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
@@ -39,7 +39,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ With Istio: circuit breaker moves to infrastructure â”€â”€
+// ── With Istio: circuit breaker moves to infrastructure ──
 // application code is clean → no Resilience4j annotations needed
 @Service
 public class OrderService {
@@ -52,7 +52,7 @@ public class OrderService {
 ```
 
 ```yaml
-# â”€â”€ Istio DestinationRule (circuit breaker at mesh level) â”€â”€
+# ── Istio DestinationRule (circuit breaker at mesh level) ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md) | **Next:** [Security Interview Q&amp;A](./61-interview-security.md)
 apiVersion: networking.istio.io/v1beta1
@@ -74,7 +74,7 @@ spec:
       baseEjectionTime: 30s
       maxEjectionPercent: 50
 ---
-# â”€â”€ Istio VirtualService (traffic splitting for canary) â”€â”€
+# ── Istio VirtualService (traffic splitting for canary) ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md) | **Next:** [Security Interview Q&amp;A](./61-interview-security.md)
 apiVersion: networking.istio.io/v1beta1
@@ -99,7 +99,7 @@ spec:
         attempts: 3
         perTryTimeout: 1s
 ---
-# â”€â”€ Istio PeerAuthentication (mTLS between services) â”€â”€
+# ── Istio PeerAuthentication (mTLS between services) ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md) | **Next:** [Security Interview Q&amp;A](./61-interview-security.md)
 apiVersion: security.istio.io/v1beta1
@@ -111,7 +111,7 @@ spec:
   mtls:
     mode: STRICT  # All inter-service traffic must use mTLS
 ---
-# â”€â”€ Istio AuthorizationPolicy â”€â”€
+# ── Istio AuthorizationPolicy ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md) | **Next:** [Security Interview Q&amp;A](./61-interview-security.md)
 apiVersion: security.istio.io/v1beta1
@@ -148,7 +148,7 @@ Use a service mesh when you have 10+ services and can't add cross-cutting code t
 Structured logging outputs JSON with consistent fields (service name, trace ID, level, message, timestamp). ELK or Loki aggregates logs from all services into a searchable store.
 
 ```java
-// â”€â”€ Logback configuration for structured JSON logging â”€â”€
+// ── Logback configuration for structured JSON logging ──
 // resources/logback-spring.xml
 <configuration>
     <appender name="JSON" class="ch.qos.logback.core.ConsoleAppender">
@@ -163,10 +163,10 @@ Structured logging outputs JSON with consistent fields (service name, trace ID, 
     </root>
 </configuration>
 
-// â”€â”€ Dependencies â”€â”€
+// ── Dependencies ──
 // implementation 'net.logstash.logback:logstash-logback-encoder:7.4'
 
-// â”€â”€ Structured logging in application code â”€â”€
+// ── Structured logging in application code ──
 @Service
 public class OrderService {
     private static final Logger log = LoggerFactory.getLogger(OrderService.class);
@@ -197,7 +197,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ JSON output (single log entry) â”€â”€
+// ── JSON output (single log entry) ──
 // {
 //   "@timestamp": "2026-06-16T12:30:00.000+00:00",
 //   "level": "INFO",
@@ -215,11 +215,11 @@ public class OrderService {
 //   "thread_name": "http-nio-8080-exec-3"
 // }
 
-// â”€â”€ Loki log query â”€â”€
+// ── Loki log query ──
 // {service="order-service", level="ERROR"} |= "traceId=abc123def456"
 // {service=~"user-service|order-service", level="ERROR"} | json | line_format "{{.message}}"
 
-// â”€â”€ Logback MDC with auto-cleanup via Filter â”€â”€
+// ── Logback MDC with auto-cleanup via Filter ──
 @Component
 public class MdcFilter implements WebFilter {
     @Override
@@ -251,7 +251,7 @@ Best practices:
 Each microservice manages its own database migrations independently. Migrations are versioned, sequential, and tested in CI.
 
 ```java
-// â”€â”€ Each service has its own Flyway configuration â”€â”€
+// ── Each service has its own Flyway configuration ──
 // order-service/src/main/resources/application.yml:
 // spring:
 //   flyway:
@@ -266,7 +266,7 @@ Each microservice manages its own database migrations independently. Migrations 
 //   flyway:
 //     locations: classpath:db/migration/user
 
-// â”€â”€ Migration files are prefixed by version: V{version}__{description}.sql â”€â”€
+// ── Migration files are prefixed by version: V{version}__{description}.sql ──
 // order-service:
 //   db/migration/order/V1__create_orders_table.sql
 //   db/migration/order/V2__add_status_column.sql
@@ -276,7 +276,7 @@ Each microservice manages its own database migrations independently. Migrations 
 //   db/migration/user/V1__create_users_table.sql
 //   db/migration/user/V2__add_email_verification.sql
 
-// â”€â”€ V3__add_indexes.sql for order-service â”€â”€
+// ── V3__add_indexes.sql for order-service ──
 -- Create indexes for common queries
 CREATE INDEX idx_orders_user_id ON orders(user_id);
 CREATE INDEX idx_orders_status ON orders(status) WHERE status IN ('PENDING', 'PROCESSING');
@@ -285,7 +285,7 @@ CREATE INDEX idx_orders_created_at ON orders(created_at DESC);
 -- Backfill existing data if needed
 -- UPDATE orders SET status = 'PENDING' WHERE status IS NULL;
 
-// â”€â”€ Advanced: multi-service migration coordination â”€â”€
+// ── Advanced: multi-service migration coordination ──
 @Service
 public class CoordinatedMigrationService {
     @Autowired private Map<String, DataSource> dataSources;
@@ -303,7 +303,7 @@ public class CoordinatedMigrationService {
     }
 }
 
-// â”€â”€ Backward compatibility: expand-contract for cross-service migrations â”€â”€
+// ── Backward compatibility: expand-contract for cross-service migrations ──
 // Phase 1: Add new column (expand)
 -- V1__add_phone_column.sql
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -345,7 +345,7 @@ Each service's migration is independent. Never share migration files across serv
 Idempotency ensures that processing the same request multiple times produces the same result. For asynchronous processing, this means deduplication at the consumer.
 
 ```java
-// â”€â”€ Idempotency key pattern (for REST endpoints) â”€â”€
+// ── Idempotency key pattern (for REST endpoints) ──
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -377,7 +377,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Idempotency registry (using database for persistence) â”€â”€
+// ── Idempotency registry (using database for persistence) ──
 @Entity
 @Table(name = "idempotency_keys")
 public class IdempotencyRecord {
@@ -402,7 +402,7 @@ public interface IdempotencyRegistry extends JpaRepository<IdempotencyRecord, St
     void purgeOlderThan(@Param("cutoff") Instant cutoff);
 }
 
-// â”€â”€ Idempotent Kafka consumer â”€â”€
+// ── Idempotent Kafka consumer ──
 @Service
 public class IdempotentConsumer {
     @Autowired private ProcessedEventRepository processedRepo;
@@ -427,7 +427,7 @@ public class IdempotentConsumer {
     }
 }
 
-// â”€â”€ Guarantee: atomic check-then-process with database constraint â”€â”€
+// ── Guarantee: atomic check-then-process with database constraint ──
 // PostgreSQL:
 // CREATE UNIQUE INDEX idx_idempotency ON idempotency_keys(idempotency_key);
 //
@@ -452,7 +452,7 @@ Idempotency is not optional in microservices → network retries guarantee dupli
 Distributed caching (Redis) reduces latency and database load. Two primary patterns: cache-aside (read-through) and write-through.
 
 ```java
-// â”€â”€ Cache-aside: read from cache, miss -> load from DB -> populate cache â”€â”€
+// ── Cache-aside: read from cache, miss -> load from DB -> populate cache ──
 @Service
 public class ProductService {
     @Autowired private RedisTemplate<String, ProductDto> redis;
@@ -479,7 +479,7 @@ public class ProductService {
         return dto;
     }
 
-    // â”€â”€ Invalidate cache on write â”€â”€
+    // ── Invalidate cache on write ──
     @Transactional
     public ProductDto updateProduct(Long id, UpdateProductRequest req) {
         Product product = productRepo.findById(id).orElseThrow();
@@ -494,7 +494,7 @@ public class ProductService {
     }
 }
 
-// â”€â”€ Spring Cache abstraction â”€â”€
+// ── Spring Cache abstraction ──
 @Service
 public class ProductService {
     @Cacheable(value = "products", key = "#id", unless = "#result == null")
@@ -520,7 +520,7 @@ public class ProductService {
     }
 }
 
-// â”€â”€ Redis configuration for distributed caching â”€â”€
+// ── Redis configuration for distributed caching ──
 @Configuration
 @EnableCaching
 public class CacheConfig {
@@ -550,7 +550,7 @@ public class CacheConfig {
     }
 }
 
-// â”€â”€ Cache stampede prevention â”€â”€
+// ── Cache stampede prevention ──
 @Service
 public class ProductService {
     // Without protection: 100 concurrent cache misses all hit the database
@@ -593,7 +593,7 @@ public class ProductService {
     }
 }
 
-// â”€â”€ Cache strategy comparison â”€â”€
+// ── Cache strategy comparison ──
 // 1. Cache-aside (lazy): Most common. Cache miss = DB hit + cache populate.
 //    Pros: Simple, resilient (cache loss just means slower reads).
 //    Cons: Cache stampede on first request.

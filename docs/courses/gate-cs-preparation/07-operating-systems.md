@@ -159,7 +159,7 @@ Each process has a PCB containing:
 
 ```
 NEW → READY → RUNNING → WAITING → TERMINATED
-          â†•              â†‘
+          ↕              ↑
       (scheduler)    (I/O completion)
 ```
 
@@ -359,8 +359,8 @@ do {
 
 - Process → Resource: request edge
 - Resource → Process: assignment edge
-- **Cycle in RAG + single instance per resource type â‡’ deadlock**
-- **Cycle in RAG + multiple instances â‡’ possible deadlock** (need further check)
+- **Cycle in RAG + single instance per resource type ⇒ deadlock**
+- **Cycle in RAG + multiple instances ⇒ possible deadlock** (need further check)
 
 ### Deadlock Prevention
 
@@ -389,7 +389,7 @@ Data structures:
 
 ### Deadlock Detection
 
-- Single instance: wait-for graph (cycle â‡’ deadlock)
+- Single instance: wait-for graph (cycle ⇒ deadlock)
 - Multiple instances: detection algorithm (like Banker's but with Request matrix)
 
 ### Deadlock Recovery
@@ -478,7 +478,7 @@ Replace page not used for longest time. Approximated by **aging** or **counter**
 - Excessive paging activity
 - Cause: insufficient frames per process
 - **Working set model** → maintain set of pages currently being used
-- âˆ‘ working set sizes > available frames â‡’ thrashing
+- âˆ‘ working set sizes > available frames ⇒ thrashing
 - **Page Fault Frequency** control → allocate more frames if fault rate too high, take away if too low
 
 ### Frame Allocation
@@ -1412,7 +1412,7 @@ Consider the following resource allocation graph with single-instance resources 
 Is there a deadlock?
 
 **Answer: Yes**  
-**Explanation:** Cycle: P1 requests R1 (held by P2) → P2 requests R2 (held by P3) → P3 requests R3 (held by P1). Circular wait. With single-instance resources, a cycle â‡’ deadlock.
+**Explanation:** Cycle: P1 requests R1 (held by P2) → P2 requests R2 (held by P3) → P3 requests R3 (held by P1). Circular wait. With single-instance resources, a cycle ⇒ deadlock.
 
 ---
 
@@ -1669,11 +1669,11 @@ Wait let me be more careful:
 
 ```
 Process P (original)
-â”œâ”€ fork() → child C1 (if fork() == 0 is true in C1)
-â”‚  in C1: fork() → child C2
-â”‚  then C1 calls fork() → child C3
-â”‚  and C2 calls fork() → child C4
-â”‚  then P also calls fork() (after the if block) → child C5
+├─ fork() → child C1 (if fork() == 0 is true in C1)
+│  in C1: fork() → child C2
+│  then C1 calls fork() → child C3
+│  and C2 calls fork() → child C4
+│  then P also calls fork() (after the if block) → child C5
 ```
 
 Actually let me trace step by step:
@@ -1883,7 +1883,7 @@ A resource allocation graph has a cycle. If resource types have multiple instanc
 **(D)** System is in unsafe state  
 
 **Answer: (C)**  
-**Explanation:** With single-instance resources, a cycle â‡’ deadlock. With multiple-instance resources, a cycle â‡’ possible deadlock (need to check with detection algorithm).
+**Explanation:** With single-instance resources, a cycle ⇒ deadlock. With multiple-instance resources, a cycle ⇒ possible deadlock (need to check with detection algorithm).
 
 ---
 

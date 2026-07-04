@@ -28,7 +28,7 @@ flowchart LR
 CQRS (Command Query Responsibility Segregation) separates write models (commands) from read models (queries). Each model has its own database schema, optimized for its operation.
 
 ```java
-// â”€â”€ Command side: focused on writes â”€â”€
+// ── Command side: focused on writes ──
 @RestController
 @RequestMapping("/orders/commands")
 public class OrderCommandController {
@@ -70,7 +70,7 @@ public class OrderCommandService {
 @Repository
 public interface OrderCommandRepository extends JpaRepository<OrderWriteModel, UUID> {}
 
-// â”€â”€ Query side: optimized for reads â”€â”€
+// ── Query side: optimized for reads ──
 @RestController
 @RequestMapping("/orders/queries")
 public class OrderQueryController {
@@ -145,7 +145,7 @@ Apply CQRS to individual bounded contexts, not the entire system. Most services 
 Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and time limiters. The circuit breaker prevents cascading failures by failing fast when a downstream service is unhealthy.
 
 ```java
-// â”€â”€ Configuration â”€â”€
+// ── Configuration ──
 // application.yml:
 // resilience4j.circuitbreaker:
 //   instances:
@@ -162,7 +162,7 @@ Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and t
 //       ignore-exceptions:
 //         - org.springframework.web.client.HttpClientErrorException  (4xx → not a circuit failure)
 
-// â”€â”€ Registration â”€â”€
+// ── Registration ──
 @Configuration
 public class Resilience4jConfig {
     @Bean
@@ -181,7 +181,7 @@ public class Resilience4jConfig {
     }
 }
 
-// â”€â”€ Usage with @CircuitBreaker annotation â”€â”€
+// ── Usage with @CircuitBreaker annotation ──
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
@@ -201,7 +201,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Manual circuit breaker usage â”€â”€
+// ── Manual circuit breaker usage ──
 @Service
 public class PaymentService {
     private final CircuitBreaker circuitBreaker;
@@ -228,7 +228,7 @@ public class PaymentService {
     }
 }
 
-// â”€â”€ Monitoring circuit breaker state â”€â”€
+// ── Monitoring circuit breaker state ──
 @Component
 public class CircuitBreakerMonitor {
     public CircuitBreakerMonitor(CircuitBreakerRegistry registry) {
@@ -256,7 +256,7 @@ Circuit breaker states: CLOSED (normal, pass through) → OPEN (fail fast, no ca
 OAuth2 with JWT provides token-based authentication. The client credentials grant is the standard pattern for service-to-service communication.
 
 ```java
-// â”€â”€ Authorization Server config (Spring Authorization Server) â”€â”€
+// ── Authorization Server config (Spring Authorization Server) ──
 @Configuration
 @EnableAuthorizationServer
 public class AuthServerConfig {
@@ -273,7 +273,7 @@ public class AuthServerConfig {
     }
 }
 
-// â”€â”€ Resource Server config (each microservice validates tokens) â”€â”€
+// ── Resource Server config (each microservice validates tokens) ──
 // application.yml:
 // spring.security.oauth2.resourceserver.jwt:
 //   issuer-uri: http://localhost:9000
@@ -296,7 +296,7 @@ public class ResourceServerConfig {
     }
 }
 
-// â”€â”€ Client credentials flow (service calls another service) â”€â”€
+// ── Client credentials flow (service calls another service) ──
 @Service
 public class ServiceClient {
     @Autowired
@@ -330,7 +330,7 @@ public class ServiceClient {
     }
 }
 
-// â”€â”€ Extract user context from JWT â”€â”€
+// ── Extract user context from JWT ──
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -358,7 +358,7 @@ Never embed sensitive data in JWT claims (they are base64-encoded, not encrypted
 Apache Kafka provides a distributed commit log for asynchronous event streaming between services. Each service publishes events to topics; other services consume from those topics independently.
 
 ```java
-// â”€â”€ Producer configuration â”€â”€
+// ── Producer configuration ──
 @Configuration
 public class KafkaProducerConfig {
     @Bean
@@ -381,7 +381,7 @@ public class KafkaProducerConfig {
     }
 }
 
-// â”€â”€ Event publisher â”€â”€
+// ── Event publisher ──
 @Service
 public class OrderEventPublisher {
     @Autowired
@@ -401,7 +401,7 @@ public class OrderEventPublisher {
         );
     }
 
-    // â”€â”€ Transactional outbox pattern â”€â”€
+    // ── Transactional outbox pattern ──
     @Transactional
     public void createOrderAndPublishEvent(OrderRequest request) {
         // 1. Save order in the database
@@ -419,7 +419,7 @@ public class OrderEventPublisher {
     }
 }
 
-// â”€â”€ Consumer configuration â”€â”€
+// ── Consumer configuration ──
 @Configuration
 public class KafkaConsumerConfig {
     @Bean
@@ -439,7 +439,7 @@ public class KafkaConsumerConfig {
     }
 }
 
-// â”€â”€ Event consumer â”€â”€
+// ── Event consumer ──
 @Component
 public class InventoryEventConsumer {
     @Autowired
@@ -471,7 +471,7 @@ public class InventoryEventConsumer {
     }
 }
 
-// â”€â”€ Idempotent consumer (same event may be delivered twice) â”€â”€
+// ── Idempotent consumer (same event may be delivered twice) ──
 @Service
 public class IdempotentConsumerService {
     @Autowired
@@ -507,7 +507,7 @@ Use one topic per event type or per bounded context. Partition count should be e
 Each microservice gets a Docker image with multi-stage builds for minimal size. Spring Boot 3.x provides layered JARs for efficient Docker builds.
 
 ```dockerfile
-# â”€â”€ Multi-stage Dockerfile for a Spring Boot microservice â”€â”€
+# ── Multi-stage Dockerfile for a Spring Boot microservice ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md)
 
@@ -566,7 +566,7 @@ ENTRYPOINT ["java", "org.springframework.boot.loader.launch.JarLauncher"]
 ```
 
 ```yaml
-# â”€â”€ docker-compose.yml for local development â”€â”€
+# ── docker-compose.yml for local development ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md)
 version: '3.8'

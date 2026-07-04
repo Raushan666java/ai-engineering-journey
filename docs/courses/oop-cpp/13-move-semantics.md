@@ -1021,9 +1021,9 @@ T&& &&              T&&           (rvalue ref to rvalue ref → rvalue ref)
 | Type 1 | Type 2 | Combined | Collapsed | Explanation |
 |--------|--------|----------|-----------|-------------|
 | `int&` | `&` | `int& &` | `int&` | Double lvalue reference |
-| `int&` | `&&` | `int& &&` | `int&` | Rvalue ref to lvalue ref â‡’ lvalue reference |
-| `int&&` | `&` | `int&& &` | `int&` | Lvalue ref to rvalue ref â‡’ lvalue reference |
-| `int&&` | `&&` | `int&& &&` | `int&&` | Double rvalue reference â‡’ rvalue reference |
+| `int&` | `&&` | `int& &&` | `int&` | Rvalue ref to lvalue ref ⇒ lvalue reference |
+| `int&&` | `&` | `int&& &` | `int&` | Lvalue ref to rvalue ref ⇒ lvalue reference |
+| `int&&` | `&&` | `int&& &&` | `int&&` | Double rvalue reference ⇒ rvalue reference |
 
 ### 13.9.3 Where Reference Collapsing Happens
 
@@ -2197,9 +2197,9 @@ private:
 | Original A | Original B | Collapsed | Name |
 |------------|------------|-----------|------|
 | `T&` | `&` | `T&` | lvalue ref to lvalue ref |
-| `T&` | `&&` | `T&` | rvalue ref to lvalue ref â‡’ lvalue ref |
-| `T&&` | `&` | `T&` | lvalue ref to rvalue ref â‡’ lvalue ref |
-| `T&&` | `&&` | `T&&` | rvalue ref to rvalue ref â‡’ rvalue ref |
+| `T&` | `&&` | `T&` | rvalue ref to lvalue ref ⇒ lvalue ref |
+| `T&&` | `&` | `T&` | lvalue ref to rvalue ref ⇒ lvalue ref |
+| `T&&` | `&&` | `T&&` | rvalue ref to rvalue ref ⇒ rvalue ref |
 
 **Rule:** "& wins" → if either reference is `&`, the result is `&`.
 

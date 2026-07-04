@@ -1282,7 +1282,7 @@ FUNCTION logical_independence_test():
     
     // After schema change
     new_view = catalog.get_view("employee_basics")
-    new_columns = new_view.allowed_columns    // [id, name, email, salary] â† unchanged!
+    new_columns = new_view.allowed_columns    // [id, name, email, salary] ← unchanged!
     
     ASSERT old_columns == new_columns          // View definition preserved
     PRINT "Logical independence verified: schema changed, view unchanged"

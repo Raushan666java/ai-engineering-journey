@@ -76,25 +76,25 @@ The Gang of Four (Gamma, Helm, Johnson, Vlissides, 1994) catalogued 23 patterns 
 ### Relationships Between Patterns
 
 ```
-  Factory Method â”€â”€specialisesâ”€â”€> Abstract Factory
-  Abstract Factory â”€â”€usesâ”€â”€> Singleton (for factory instances)
-  Builder â”€â”€usesâ”€â”€> Composite (build tree structures)
-  Prototype â”€â”€alternativeâ”€â”€> Factory Method (clone vs create)
-  Adapter â”€â”€similarâ”€â”€> Bridge (different intent)
-  Composite â”€â”€works withâ”€â”€> Iterator, Visitor
-  Decorator â”€â”€alternativeâ”€â”€> Adapter (adds vs converts)
-  Facade â”€â”€simplifiesâ”€â”€> any subsystem pattern
-  Flyweight â”€â”€rendersâ”€â”€> Composite (shared leaf nodes)
-  Proxy â”€â”€similarâ”€â”€> Decorator (controls vs adds)
-  Chain of Resp. â”€â”€usesâ”€â”€> Composite (handler tree)
-  Command â”€â”€stored inâ”€â”€> Memento (undo history)
-  Iterator â”€â”€traversesâ”€â”€> Composite
-  Mediator â”€â”€centralisesâ”€â”€> Observer (colleagues â†” mediator)
-  Memento â”€â”€used byâ”€â”€> Command (undo)
-  Observer â”€â”€alternativeâ”€â”€> Mediator (broadcast vs hub)
-  State â”€â”€likeâ”€â”€> Strategy (same structure, different intent)
-  Template Method â”€â”€relatedâ”€â”€> Strategy (inheritance vs composition)
-  Visitor â”€â”€traversesâ”€â”€> Composite
+  Factory Method ──specialises──> Abstract Factory
+  Abstract Factory ──uses──> Singleton (for factory instances)
+  Builder ──uses──> Composite (build tree structures)
+  Prototype ──alternative──> Factory Method (clone vs create)
+  Adapter ──similar──> Bridge (different intent)
+  Composite ──works with──> Iterator, Visitor
+  Decorator ──alternative──> Adapter (adds vs converts)
+  Facade ──simplifies──> any subsystem pattern
+  Flyweight ──renders──> Composite (shared leaf nodes)
+  Proxy ──similar──> Decorator (controls vs adds)
+  Chain of Resp. ──uses──> Composite (handler tree)
+  Command ──stored in──> Memento (undo history)
+  Iterator ──traverses──> Composite
+  Mediator ──centralises──> Observer (colleagues ↔ mediator)
+  Memento ──used by──> Command (undo)
+  Observer ──alternative──> Mediator (broadcast vs hub)
+  State ──like──> Strategy (same structure, different intent)
+  Template Method ──related──> Strategy (inheritance vs composition)
+  Visitor ──traverses──> Composite
 ```
 
 ## 16.2 Design Principles
@@ -4131,10 +4131,10 @@ int main() {
         std::cout << "Found: " << *it << "\n";
 
     // Iterator categories map to container capabilities
-    // Input/Output  â† istream_iterator / ostream_iterator
-    // Forward       â† forward_list
-    // Bidirectional â† list, set, map
-    // Random Access â† vector, deque, array
+    // Input/Output  ← istream_iterator / ostream_iterator
+    // Forward       ← forward_list
+    // Bidirectional ← list, set, map
+    // Random Access ← vector, deque, array
 }
 ```
 
@@ -4304,22 +4304,22 @@ shared_ptr<T>:
 **Answer:** A thread pool uses multiple patterns:
 
 ```
-Worker Threads â”€â”€ Singleton (ThreadPool class)
-  â”‚
-  â”œâ”€â”€ ThreadPool (Singleton)
-  â”‚     â”œâ”€â”€ stores queue of Tasks
-  â”‚     â”œâ”€â”€ manages worker threads
-  â”‚     â””â”€â”€ provides submit() interface
-  â”‚
-  â”œâ”€â”€ Task â”€â”€ Command pattern
-  â”‚     â”œâ”€â”€ encapsulates function + arguments
-  â”‚     â”œâ”€â”€ stored in std::queue<std::packaged_task<>>
-  â”‚     â””â”€â”€ returns std::future for result retrieval
-  â”‚
-  â””â”€â”€ Task Queue â”€â”€ Producer-Consumer (Adapter pattern)
-        â”œâ”€â”€ std::mutex + std::condition_variable
-        â”œâ”€â”€ producer threads submit tasks
-        â””â”€â”€ consumer (worker) threads execute tasks
+Worker Threads ── Singleton (ThreadPool class)
+  │
+  ├── ThreadPool (Singleton)
+  │     ├── stores queue of Tasks
+  │     ├── manages worker threads
+  │     └── provides submit() interface
+  │
+  ├── Task ── Command pattern
+  │     ├── encapsulates function + arguments
+  │     ├── stored in std::queue<std::packaged_task<>>
+  │     └── returns std::future for result retrieval
+  │
+  └── Task Queue ── Producer-Consumer (Adapter pattern)
+        ├── std::mutex + std::condition_variable
+        ├── producer threads submit tasks
+        └── consumer (worker) threads execute tasks
 ```
 
 **Pattern mapping:**

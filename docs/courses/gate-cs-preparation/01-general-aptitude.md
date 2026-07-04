@@ -1434,7 +1434,7 @@ D continues with another example (mass conservation).
 
 ```
 [ ] [ ] [ ]    [ ] [ ] [ ]    [ ] [ ] [ ]    [?] [?] [?]
-[â– ] [ ] [ ]    [ ] [â– ] [ ]    [ ] [ ] [â– ]    [?] [?] [?]
+[■] [ ] [ ]    [ ] [■] [ ]    [ ] [ ] [■]    [?] [?] [?]
 [ ] [ ] [ ]    [ ] [ ] [ ]    [ ] [ ] [ ]    [?] [?] [?]
 ```
 
@@ -1443,7 +1443,7 @@ D continues with another example (mass conservation).
 ```
 [ ] [ ] [ ]
 [ ] [ ] [ ]
-[ ] [ ] [â– ]
+[ ] [ ] [■]
 ```
 
 ---
@@ -1451,12 +1451,12 @@ D continues with another example (mass conservation).
 **Q98: Identify the missing figure in the analogy:**
 
 ```
-â–³ â—‹ â–¡ : â–³ â—‹ â–¡ :: â—‡ â˜† â™¡ : ?
+△ ○ □ : △ ○ □ :: ◇ â˜† â™¡ : ?
 ```
 
-**Answer:** The first set shows three basic shapes in a sequence. The second set should follow the same pattern but with different shapes. Since the first is a row of three distinct shapes, the answer should be a row of three distinct shapes: `â—‡ â˜† â™¡` (no transformation, just the same sequence since the relationship is identity).
+**Answer:** The first set shows three basic shapes in a sequence. The second set should follow the same pattern but with different shapes. Since the first is a row of three distinct shapes, the answer should be a row of three distinct shapes: `◇ â˜† â™¡` (no transformation, just the same sequence since the relationship is identity).
 
-If the analogy was about rotation or transformation, we'd need more context. In the simplest form, the missing figure is `â—‡ â˜† â™¡`.
+If the analogy was about rotation or transformation, we'd need more context. In the simplest form, the missing figure is `◇ â˜† â™¡`.
 
 ---
 

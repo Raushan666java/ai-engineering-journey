@@ -70,9 +70,9 @@ These three acronyms are often confused. Here is the exact hierarchy:
 
 ```
 JDK (Java Development Kit)
- â”œâ”€â”€ JRE (Java Runtime Environment)
- â”‚    â””â”€â”€ JVM (Java Virtual Machine)
- â””â”€â”€ Development Tools (javac, jar, javadoc, etc.)
+ ├── JRE (Java Runtime Environment)
+ │    └── JVM (Java Virtual Machine)
+ └── Development Tools (javac, jar, javadoc, etc.)
 ```
 
 - **JVM (Java Virtual Machine)** → The abstract machine that executes Java bytecode. Each operating system has its own JVM implementation. The JVM loads `.class` files, verifies bytecode, interprets and JIT-compiles it to native code, and manages memory via garbage collection.
@@ -202,7 +202,7 @@ Java supports both **widening** (implicit, automatic) and **narrowing** (explici
 **Widening conversion path** (no data loss):
 ```
 byte → short → int → long → float → double
-                 â†‘
+                 ↑
                 char
 ```
 

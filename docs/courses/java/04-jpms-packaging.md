@@ -562,28 +562,28 @@ At startup, the module system resolves dependencies as follows:
 
 ```
 [Java launcher reads --module-path and --add-modules]
-        â”‚
-        â–¼
+        │
+        ▼
 [Identifies root modules]
     â€¢ The main application module (--module/-m)
     â€¢ Modules listed in --add-modules
     â€¢ java.base (always a root)
-        â”‚
-        â–¼
+        │
+        ▼
 [Resolution phase: reads module-info.class from each JAR]
     â€¢ Builds a directed graph where nodes are modules
     â€¢ Edges are "requires" relationships
     â€¢ Checks for cycles (JPMS does NOT allow module-level cycles)
     â€¢ Checks that each "requires" target exists
     â€¢ For each required module, recursively resolves its dependencies
-        â”‚
-        â–¼
+        │
+        ▼
 [Validation phase]
     â€¢ Exactly one version of each module must be present
     â€¢ No split packages (same package in multiple modules)
     â€¢ All required modules are readable
-        â”‚
-        â–¼
+        │
+        ▼
 [Phase  → ready to run]
 
 // This is what a resolution failure looks like:
@@ -601,12 +601,12 @@ The module graph is a **directed acyclic graph (DAG)**:
 
 ```java
 // com.example.app
-//   â”œâ”€â”€ requires → com.example.service
-//   â”‚               â”œâ”€â”€ requires transitive → com.example.data
-//   â”‚               â”‚                        â””â”€â”€ requires → java.sql
-//   â”‚               â””â”€â”€ requires → java.logging
-//   â””â”€â”€ requires → com.example.config
-//                   â””â”€â”€ requires → com.example.data (shared!)
+//   ├── requires → com.example.service
+//   │               ├── requires transitive → com.example.data
+//   │               │                        └── requires → java.sql
+//   │               └── requires → java.logging
+//   └── requires → com.example.config
+//                   └── requires → com.example.data (shared!)
 //
 // The graph has a diamond: com.example.app requires both
 // com.example.service and com.example.config, which both require
@@ -878,36 +878,36 @@ Real applications are composed of multiple modules. Both Maven and Gradle can co
 
 ```
 my-app/
-â”œâ”€â”€ pom.xml                         (parent POM)
-â”œâ”€â”€ common/
-â”‚   â”œâ”€â”€ pom.xml
-â”‚   â””â”€â”€ src/main/java/
-â”‚       â”œâ”€â”€ module-info.java        (module com.example.common)
-â”‚       â””â”€â”€ com/example/common/
-â”‚           â””â”€â”€ util/
-â”‚               â”œâ”€â”€ Strings.java
-â”‚               â””â”€â”€ Validation.java
-â”œâ”€â”€ domain/
-â”‚   â”œâ”€â”€ pom.xml
-â”‚   â””â”€â”€ src/main/java/
-â”‚       â”œâ”€â”€ module-info.java        (module com.example.domain)
-â”‚       â””â”€â”€ com/example/domain/
-â”‚           â”œâ”€â”€ model/
-â”‚           â”‚   â””â”€â”€ User.java
-â”‚           â””â”€â”€ repository/
-â”‚               â””â”€â”€ UserRepository.java
-â”œâ”€â”€ service/
-â”‚   â”œâ”€â”€ pom.xml
-â”‚   â””â”€â”€ src/main/java/
-â”‚       â”œâ”€â”€ module-info.java        (module com.example.service)
-â”‚       â””â”€â”€ com/example/service/
-â”‚           â””â”€â”€ UserService.java
-â””â”€â”€ application/
-    â”œâ”€â”€ pom.xml
-    â””â”€â”€ src/main/java/
-        â”œâ”€â”€ module-info.java        (module com.example.application)
-        â””â”€â”€ com/example/app/
-            â””â”€â”€ Main.java
+├── pom.xml                         (parent POM)
+├── common/
+│   ├── pom.xml
+│   └── src/main/java/
+│       ├── module-info.java        (module com.example.common)
+│       └── com/example/common/
+│           └── util/
+│               ├── Strings.java
+│               └── Validation.java
+├── domain/
+│   ├── pom.xml
+│   └── src/main/java/
+│       ├── module-info.java        (module com.example.domain)
+│       └── com/example/domain/
+│           ├── model/
+│           │   └── User.java
+│           └── repository/
+│               └── UserRepository.java
+├── service/
+│   ├── pom.xml
+│   └── src/main/java/
+│       ├── module-info.java        (module com.example.service)
+│       └── com/example/service/
+│           └── UserService.java
+└── application/
+    ├── pom.xml
+    └── src/main/java/
+        ├── module-info.java        (module com.example.application)
+        └── com/example/app/
+            └── Main.java
 ```
 
 **Parent POM (`pom.xml`):**
@@ -1113,15 +1113,15 @@ jdeps --module-path build --module com.example.application
 
 # Output:
 # com.example.application
-# â”œ-> java.base
-# â”œ-> com.example.common
-# â”œ-> com.example.domain
-# |   â””-> com.example.common
-# |   â””-> java.sql
-# â””-> com.example.service
-#     â”œ-> com.example.common
-#     â””-> com.example.domain
-#         â””-> ...
+# ├-> java.base
+# ├-> com.example.common
+# ├-> com.example.domain
+# |   └-> com.example.common
+# |   └-> java.sql
+# └-> com.example.service
+#     ├-> com.example.common
+#     └-> com.example.domain
+#         └-> ...
 ```
 
 ---
@@ -1525,36 +1525,36 @@ This section presents a complete, compilable multi-module project that demonstra
 
 ```
 banking-app/
-â”œâ”€â”€ build.sh                           # Compilation script
-â”œâ”€â”€ banking-api/
-â”‚   â”œâ”€â”€ module-info.java               # com.example.banking.api
-â”‚   â””â”€â”€ com/example/banking/api/
-â”‚       â”œâ”€â”€ AccountService.java
-â”‚       â””â”€â”€ Account.java
-â”œâ”€â”€ banking-impl/
-â”‚   â”œâ”€â”€ module-info.java               # com.example.banking.impl
-â”‚   â””â”€â”€ com/example/banking/impl/
-â”‚       â”œâ”€â”€ AccountServiceImpl.java
-â”‚       â”œâ”€â”€ InMemoryAccountRepository.java
-â”‚       â””â”€â”€ InternalValidator.java
-â”œâ”€â”€ banking-persistence/
-â”‚   â”œâ”€â”€ module-info.java               # com.example.banking.persistence
-â”‚   â””â”€â”€ com/example/banking/persistence/
-â”‚       â”œâ”€â”€ JpaAccountRepository.java
-â”‚       â””â”€â”€ AccountEntity.java
-â”œâ”€â”€ banking-reporting/
-â”‚   â”œâ”€â”€ module-info.java               # com.example.banking.reporting
-â”‚   â””â”€â”€ com/example/banking/reporting/
-â”‚       â”œâ”€â”€ CsvReportExporter.java
-â”‚       â””â”€â”€ ReportGenerator.java
-â”œâ”€â”€ banking-app/
-â”‚   â”œâ”€â”€ module-info.java               # com.example.banking.app
-â”‚   â””â”€â”€ com/example/banking/app/
-â”‚       â””â”€â”€ Main.java
-â””â”€â”€ banking-spi/
-    â”œâ”€â”€ module-info.java               # com.example.banking.spi
-    â””â”€â”€ com/example/banking/spi/
-        â””â”€â”€ ReportExporter.java
+├── build.sh                           # Compilation script
+├── banking-api/
+│   ├── module-info.java               # com.example.banking.api
+│   └── com/example/banking/api/
+│       ├── AccountService.java
+│       └── Account.java
+├── banking-impl/
+│   ├── module-info.java               # com.example.banking.impl
+│   └── com/example/banking/impl/
+│       ├── AccountServiceImpl.java
+│       ├── InMemoryAccountRepository.java
+│       └── InternalValidator.java
+├── banking-persistence/
+│   ├── module-info.java               # com.example.banking.persistence
+│   └── com/example/banking/persistence/
+│       ├── JpaAccountRepository.java
+│       └── AccountEntity.java
+├── banking-reporting/
+│   ├── module-info.java               # com.example.banking.reporting
+│   └── com/example/banking/reporting/
+│       ├── CsvReportExporter.java
+│       └── ReportGenerator.java
+├── banking-app/
+│   ├── module-info.java               # com.example.banking.app
+│   └── com/example/banking/app/
+│       └── Main.java
+└── banking-spi/
+    ├── module-info.java               # com.example.banking.spi
+    └── com/example/banking/spi/
+        └── ReportExporter.java
 ```
 
 ### 9.2 banking-api → Public API
@@ -2090,16 +2090,16 @@ Multi-release JARs (MRJARs) can include a `module-info.class` in the Java 9+ ver
 
 ```
 my-lib.jar
-â”œâ”€â”€ META-INF/
-â”‚   â”œâ”€â”€ MANIFEST.MF
-â”‚   â””â”€â”€ versions/
-â”‚       â””â”€â”€ 9/
-â”‚           â””â”€â”€ module-info.class    â† JPMS descriptor for Java 9+
-â”œâ”€â”€ com/
-â”‚   â””â”€â”€ example/
-â”‚       â””â”€â”€ lib/
-â”‚           â””â”€â”€ Util.class
-â””â”€â”€ module-info.class                â† Fallback (Java 9, same content)
+├── META-INF/
+│   ├── MANIFEST.MF
+│   └── versions/
+│       └── 9/
+│           └── module-info.class    ← JPMS descriptor for Java 9+
+├── com/
+│   └── example/
+│       └── lib/
+│           └── Util.class
+└── module-info.class                ← Fallback (Java 9, same content)
 ```
 
 ```java

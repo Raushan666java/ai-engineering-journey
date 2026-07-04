@@ -54,9 +54,9 @@ Imagine four cars arrive simultaneously at a four-way stop, each wanting to turn
 
 ```
         Car A (wants to go straight)
-            â†‘
-    Car D â† âœš → Car B (wants to turn left)
-            â†“
+            ↑
+    Car D ← âœš → Car B (wants to turn left)
+            ↓
         Car C (wants to turn left)
 ```
 
@@ -70,7 +70,7 @@ Each car holds one resource (its lane) and waits for another. Nobody moves. **De
 #### Formal Definition
 
 ```
-Deadlock â‡” âˆ€ Páµ¢ âˆˆ DeadlockSet: Páµ¢ is waiting for a resource held by Pâ±¼ âˆˆ DeadlockSet
+Deadlock ⇔ âˆ€ Páµ¢ âˆˆ DeadlockSet: Páµ¢ is waiting for a resource held by Pâ±¼ âˆˆ DeadlockSet
          âˆ§ âˆ€ Páµ¢ âˆˆ DeadlockSet: Páµ¢ will never release its held resources
          âˆ§ The set is non-empty
 ```
@@ -184,7 +184,7 @@ With Mutual Exclusion:
 ```
 P0: holds(R1) + wait(R2)
 P1: holds(R2) + wait(R1)
-     â†‘ Both hold something AND wait for something → hold-and-wait satisfied
+     ↑ Both hold something AND wait for something → hold-and-wait satisfied
 ```
 
 #### Condition 3: No Preemption in Detail
@@ -216,7 +216,7 @@ Circular wait exists iff there is a cycle in the wait-for graph:
 #### Necessary Conditions: Formal Proof Sketch
 
 ```
-Theorem: Deadlock â‡’ (Mutual Exclusion âˆ§ Hold-and-Wait âˆ§ No Preemption âˆ§ Circular Wait)
+Theorem: Deadlock ⇒ (Mutual Exclusion âˆ§ Hold-and-Wait âˆ§ No Preemption âˆ§ Circular Wait)
 Proof:
   - If no mutual exclusion: all resources sharable → no process ever blocks → no deadlock
   - If no hold-and-wait: process either has no resources or requests nothing → no circular dependency
@@ -247,14 +247,14 @@ A **Resource-Allocation Graph (RAG)** is a directed graph that models the system
 #### RAG Example: Deadlock State
 
 ```
-      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-      â”‚                 â”‚
-      â–¼                 â”‚
-     R1 â”€â”€â–º P2 â”€â”€â–º R2 â”€â”€â”¤â”€â”€â–º P3
-      â–²         â”‚        â”‚      â–²
-      â”‚         â””â”€â”€â”€â”€R3â”€â”€â”˜      â”‚
-      â”‚                         â”‚
-      P1 â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+      ┌─────────────────┐
+      │                 │
+      ▼                 │
+     R1 ──► P2 ──► R2 ──┤──► P3
+      ▲         │        │      ▲
+      │         └────R3──┘      │
+      │                         │
+      P1 ◄──────────────────────┘
 ```
 
 **Resource types:** R1 (1 instance), R2 (1 instance), R3 (1 instance)
@@ -267,7 +267,7 @@ A **Resource-Allocation Graph (RAG)** is a directed graph that models the system
 - P3 → R3 (request), R3 → P3 (assigned): P3 holds R3
 - P3 → R1 (request): P3 wants R1
 
-**Cycle:** P1 → R2 → P2 → R3 → P3 → R1 → P1 â† **DEADLOCK**
+**Cycle:** P1 → R2 → P2 → R3 → P3 → R1 → P1 ← **DEADLOCK**
 
 #### Cycles vs Deadlock: The Complete Analysis
 
@@ -282,11 +282,11 @@ A **Resource-Allocation Graph (RAG)** is a directed graph that models the system
 ```
 Resources: R1 (2 instances), R2 (2 instances)
 
-     R1 (2 dots: â—â—)
-      â†™  â†˜
+     R1 (2 dots: ●●)
+      ↙  ↘
     P1    P2
-     â†˜  â†™
-     R2 (2 dots: â—â—)
+     ↘  ↙
+     R2 (2 dots: ●●)
 ```
 
 **State:**
@@ -610,11 +610,11 @@ A banker has limited funds (â‚¹10,000). Several businesses need loans:
 
 ```
 Banker (OS) with â‚¹10,000 capital (available resources)
-  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-  â”‚  Biz A: max â‚¹7K, already owes â‚¹2K   â”‚  Needs up to â‚¹5K more
-  â”‚  Biz B: max â‚¹3K, already owes â‚¹1K   â”‚  Needs up to â‚¹2K more  
-  â”‚  Biz C: max â‚¹9K, already owes â‚¹5K   â”‚  Needs up to â‚¹4K more
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+  ┌─────────────────────────────────────┐
+  │  Biz A: max â‚¹7K, already owes â‚¹2K   │  Needs up to â‚¹5K more
+  │  Biz B: max â‚¹3K, already owes â‚¹1K   │  Needs up to â‚¹2K more  
+  │  Biz C: max â‚¹9K, already owes â‚¹5K   │  Needs up to â‚¹4K more
+  └─────────────────────────────────────┘
            Cash on hand: â‚¹2K
 
 The banker asks: "If I grant Biz B's request for â‚¹1K more, can all businesses
@@ -627,36 +627,36 @@ A state is **safe** if there exists a sequence of process executions that allows
 
 ```
 Safe State:
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚ Available = 3 units                â”‚
-    â”‚                                    â”‚
-    â”‚ P2 needs 2, has 2 → can finish     â”‚
-    â”‚ After P2: available = 5            â”‚
-    â”‚ P1 needs 5, has 2 → can finish     â”‚
-    â”‚ After P1: available = 7            â”‚
-    â”‚ P0 needs 7, has 0 → can finish âœ“   â”‚
-    â”‚                                    â”‚
-    â”‚ Safe sequence: <P2, P1, P0>        â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+    ┌─────────────────────────────────────┐
+    │ Available = 3 units                │
+    │                                    │
+    │ P2 needs 2, has 2 → can finish     │
+    │ After P2: available = 5            │
+    │ P1 needs 5, has 2 → can finish     │
+    │ After P1: available = 7            │
+    │ P0 needs 7, has 0 → can finish âœ“   │
+    │                                    │
+    │ Safe sequence: <P2, P1, P0>        │
+    └─────────────────────────────────────┘
 
 Unsafe State (but not deadlock):
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚ Available = 1 unit                 â”‚
-    â”‚                                    â”‚
-    â”‚ No process has Need â‰¤ Available    â”‚
-    â”‚ All processes could still progress  â”‚
-    â”‚ if they release resources          â”‚
-    â”‚ But we can't guarantee it          â”‚
-    â”‚ → UNSAFE (future deadlock possible) â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+    ┌─────────────────────────────────────┐
+    │ Available = 1 unit                 │
+    │                                    │
+    │ No process has Need â‰¤ Available    │
+    │ All processes could still progress  │
+    │ if they release resources          │
+    │ But we can't guarantee it          │
+    │ → UNSAFE (future deadlock possible) │
+    └─────────────────────────────────────┘
 
 Deadlock:
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚ Available = 0 units                â”‚
-    â”‚ All processes blocked, waiting     â”‚
-    â”‚ None can release resources         â”‚
-    â”‚ → DEADLOCK                         â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+    ┌─────────────────────────────────────┐
+    │ Available = 0 units                │
+    │ All processes blocked, waiting     │
+    │ None can release resources         │
+    │ → DEADLOCK                         │
+    └─────────────────────────────────────┘
 ```
 
 #### Banker's Algorithm Data Structures
@@ -708,7 +708,7 @@ FUNCTION isSafe(Available, Allocation, Need, n, m):
     RETURN true                 // Safe state
     
     // Note: â‰¤ operator on vectors means all elements satisfy â‰¤ individually
-    // Need[i] â‰¤ Work â‡” âˆ€ j: Need[i][j] â‰¤ Work[j]
+    // Need[i] â‰¤ Work ⇔ âˆ€ j: Need[i][j] â‰¤ Work[j]
 ```
 
 #### Resource-Request Algorithm
@@ -2171,20 +2171,20 @@ How lockdep works:
 InnoDB Deadlock Detection System:
   
   Architecture:
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚  Transaction Manager                       â”‚
-    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-    â”‚  â”‚ Lock System  â”‚  â”‚ Deadlock Detector   â”‚  â”‚
-    â”‚  â”‚ - row locks  â”‚  â”‚ - wait-for graph    â”‚  â”‚
-    â”‚  â”‚ - gap locks  â”‚  â”‚ - cycle detection   â”‚  â”‚
-    â”‚  â”‚ - table locksâ”‚  â”‚ - victim selection  â”‚  â”‚
-    â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-    â”‚         â”‚                    â”‚               â”‚
-    â”‚         â–¼                    â–¼               â”‚
-    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”‚
-    â”‚  â”‚ Rollback Engine (undo log)          â”‚    â”‚
-    â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+    ┌─────────────────────────────────────────────┐
+    │  Transaction Manager                       │
+    │  ┌─────────────┐  ┌─────────────────────┐  │
+    │  │ Lock System  │  │ Deadlock Detector   │  │
+    │  │ - row locks  │  │ - wait-for graph    │  │
+    │  │ - gap locks  │  │ - cycle detection   │  │
+    │  │ - table locks│  │ - victim selection  │  │
+    │  └─────────────┘  └─────────────────────┘  │
+    │         │                    │               │
+    │         ▼                    ▼               │
+    │  ┌─────────────────────────────────────┐    │
+    │  │ Rollback Engine (undo log)          │    │
+    │  └─────────────────────────────────────┘    │
+    └─────────────────────────────────────────────┘
 
   Detection trigger: Every time a transaction waits for a lock
   

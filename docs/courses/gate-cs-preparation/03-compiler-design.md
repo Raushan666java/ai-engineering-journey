@@ -274,7 +274,7 @@ T → T * F | F
 F → (E) | id
 ```
 
-**Derivation:** A sequence of replacements `S â‡’ Î±1 â‡’ Î±2 â‡’ ... â‡’ w` (string of terminals).
+**Derivation:** A sequence of replacements `S ⇒ Î±1 ⇒ Î±2 ⇒ ... ⇒ w` (string of terminals).
 - **Leftmost derivation:** Replace leftmost non-terminal first.
 - **Rightmost derivation:** Replace rightmost non-terminal first.
 
@@ -525,7 +525,7 @@ B → c | d
 - `FIRST(A) = {c, Îµ}`
 - `FIRST(B) = {c, d}`
 - `FOLLOW(S) = {$}`
-- `FOLLOW(A) = {$}` (only S â‡’ aA, no symbols follow A in any derivation)
+- `FOLLOW(A) = {$}` (only S ⇒ aA, no symbols follow A in any derivation)
 - `FOLLOW(B) = {$}`
 
 ---
@@ -662,8 +662,8 @@ T → id     { print(id.name) }
 #### Type Checking Rules
 
 ```
-E → E1 + E2 â‡’ if E1.type = int and E2.type = int then int else error
-E → E1 == E2 â‡’ if E1.type = E2.type then boolean else error
+E → E1 + E2 ⇒ if E1.type = int and E2.type = int then int else error
+E → E1 == E2 ⇒ if E1.type = E2.type then boolean else error
 ```
 
 **Type coercion:** Implicit conversion (`int → float` in `float + int`).
@@ -1192,17 +1192,17 @@ c = t1 * t1
 
 ```
 Source Program
-    â†“
+    ↓
 Lexical Analysis (token stream)
-    â†“
+    ↓
 Syntax Analysis (parse tree)
-    â†“
+    ↓
 Semantic Analysis (annotated tree)
-    â†“
+    ↓
 Intermediate Code Generation (TAC)
-    â†“
+    ↓
 Code Optimization
-    â†“
+    ↓
 Code Generation (target code)
 ```
 
@@ -1371,9 +1371,9 @@ A) `{a, b, c}`   B) `{a, b, c, Îµ}`   C) `{a, Îµ}`   D) `{a}`
 
 A) `id` (first)   B) `E+E`   C) `E*E`   D) `id` (third)
 
-**Solution:** Rightmost derivation: `E â‡’ E+E â‡’ E+E*E â‡’ E+E*id â‡’ E+id*id â‡’ id+id*id`. Handles: `id` (third id), `E*E`, `id` (second id), `E+E`, `id` (first id). The handle `E+E` appears as the final reduction. **Answer: B (E+E is the last handle, but it IS a handle —” all are handles in this derivation).** Actually the question asks which is NOT a handle. In this ambiguous grammar, the handle at each step: step 1: third `id`, step 2: `E*E`, step 3: second `id`, step 4: `E+E`, step 5: first `id`. All are handles. So none? But if we choose standard rightmost: The very first reduction is `id`→`E`, so all occurrences of `id` are handles. `E*E` and `E+E` are also handles. The question likely expects us to identify that `E+E` reduces before `E*E` is ever a handle in a rightmost derivation... Actually all are handles in the sequence. Let me re-read: in a rightmost derivation, handles are: `id`, `E*E`, `id`, `E+E`, `id`. Wait —” the derivation `E â‡’ E+E â‡’ E+E*E` —” that's not rightmost. Rightmost means we replace the rightmost non-terminal first. `E â‡’ E+E â‡’ E+E*E` —” from E+E, rightmost non-terminal is the second E, so `Eâ‡’E*E` gives `E+E*E`. Then rightmost is the third E, `Eâ‡’id` → `E+E*id`. Then rightmost is the middle E, `Eâ‡’id` → `E+id*id`. Then `Eâ‡’id` → `id+id*id`. So handles in order of reduction: third `id`, `E*E`, second `id` (as `E`), `E+E`, first `id` (as `E`). All ARE handles. **The problem as stated needs a different answer.** Let me restructure:
+**Solution:** Rightmost derivation: `E ⇒ E+E ⇒ E+E*E ⇒ E+E*id ⇒ E+id*id ⇒ id+id*id`. Handles: `id` (third id), `E*E`, `id` (second id), `E+E`, `id` (first id). The handle `E+E` appears as the final reduction. **Answer: B (E+E is the last handle, but it IS a handle —” all are handles in this derivation).** Actually the question asks which is NOT a handle. In this ambiguous grammar, the handle at each step: step 1: third `id`, step 2: `E*E`, step 3: second `id`, step 4: `E+E`, step 5: first `id`. All are handles. So none? But if we choose standard rightmost: The very first reduction is `id`→`E`, so all occurrences of `id` are handles. `E*E` and `E+E` are also handles. The question likely expects us to identify that `E+E` reduces before `E*E` is ever a handle in a rightmost derivation... Actually all are handles in the sequence. Let me re-read: in a rightmost derivation, handles are: `id`, `E*E`, `id`, `E+E`, `id`. Wait —” the derivation `E ⇒ E+E ⇒ E+E*E` —” that's not rightmost. Rightmost means we replace the rightmost non-terminal first. `E ⇒ E+E ⇒ E+E*E` —” from E+E, rightmost non-terminal is the second E, so `E⇒E*E` gives `E+E*E`. Then rightmost is the third E, `E⇒id` → `E+E*id`. Then rightmost is the middle E, `E⇒id` → `E+id*id`. Then `E⇒id` → `id+id*id`. So handles in order of reduction: third `id`, `E*E`, second `id` (as `E`), `E+E`, first `id` (as `E`). All ARE handles. **The problem as stated needs a different answer.** Let me restructure:
 
-**Solution:** Rightmost derivation: `E â‡’ E+E â‡’ E+E*E â‡’ E+E*id â‡’ E+id*id â‡’ id+id*id`. Handles (in reduction order): third `id`, then `E*E`, then second `id`, then `E+E`, then first `id`. All listed options are handles. The intended answer is that in a different parse (if we use the unambiguous grammar), the handle set changes. Let me revise the problem.
+**Solution:** Rightmost derivation: `E ⇒ E+E ⇒ E+E*E ⇒ E+E*id ⇒ E+id*id ⇒ id+id*id`. Handles (in reduction order): third `id`, then `E*E`, then second `id`, then `E+E`, then first `id`. All listed options are handles. The intended answer is that in a different parse (if we use the unambiguous grammar), the handle set changes. Let me revise the problem.
 
 Actually, let me just make the problem cleaner:
 
@@ -1381,7 +1381,7 @@ Actually, let me just make the problem cleaner:
 
 A) the first `id`   B) the second `id`   C) the third `id`   D) `E+E`
 
-**Solution:** In a rightmost derivation, the rightmost non-terminal is reduced first. Derivation: `E â‡’ E+E â‡’ E+E*E â‡’ E+E*id â‡’ E+id*id â‡’ id+id*id`. The first handle (rightmost, deepest in parse tree) is the third `id`. **Answer: C.**
+**Solution:** In a rightmost derivation, the rightmost non-terminal is reduced first. Derivation: `E ⇒ E+E ⇒ E+E*E ⇒ E+E*id ⇒ E+id*id ⇒ id+id*id`. The first handle (rightmost, deepest in parse tree) is the third `id`. **Answer: C.**
 
 ---
 
@@ -1425,7 +1425,7 @@ A) P-ii, Q-i, R-iii   B) P-i, Q-ii, R-iii   C) P-iii, Q-ii, R-i   D) P-ii, Q-iii
 
 A) `{), ,}`   B) `{), $}`   C) `{ ,}`   D) `{), ,, $}`
 
-**Solution:** From `S → (L)`: `)` follows L. From `L → L,S`: `,` follows L (after L in production). Also, L can appear at end of sentential form: `S â‡’ (L) â‡’ (L,S) â‡’ (S,S) â‡’ (a,S) â‡’ (a,a)`. Here, L is followed by `)` after reduction. FOLLOW(L) = `{), ,}`. **Answer: A.**
+**Solution:** From `S → (L)`: `)` follows L. From `L → L,S`: `,` follows L (after L in production). Also, L can appear at end of sentential form: `S ⇒ (L) ⇒ (L,S) ⇒ (S,S) ⇒ (a,S) ⇒ (a,a)`. Here, L is followed by `)` after reduction. FOLLOW(L) = `{), ,}`. **Answer: A.**
 
 ---
 
@@ -1979,7 +1979,7 @@ A) 0   B) 1   C) 2   D) 3
 ### Online Reference Sheet —” Keep Handy During Revision
 
 ```
-â”€â”€â”€ FAST REFERENCE: COMPILER DESIGN FOR GATE â”€â”€â”€
+─── FAST REFERENCE: COMPILER DESIGN FOR GATE ───
 
 FIRST(Î±):  terminals that begin strings from Î±
 FOLLOW(A): terminals that can follow A in any sentential form
@@ -2221,7 +2221,7 @@ The issue: FIRST(S) contains Îµ. For S→aS, FIRST(aS) = {a}. For S→bS, FIRS
 
 Actually wait —” the issue might be that FIRST(S) = {a, b, Îµ}, and for prediction: S → aS contributes to M[S, a]; S → bS contributes to M[S, b]; S → Îµ contributes to M[S, $] AND also to M[S, a] and M[S, b] because—¦ no, that's wrong. Only FOLLOW entries.
 
-Hmm, the standard GATE 2012 answer key says 2 conflicts for this grammar. Let me reconsider: maybe the first set for S→aS also includes Îµ? No. Oh wait —” the issue might be left recursion. S → aS | bS | Îµ —” is there left recursion? No. But S is nullable (S â‡’* Îµ). When computing LL(1) table: for S → aS, FIRST(aS) = {a} since a is terminal. For S → bS, FIRST(bS) = {b}. For S → Îµ, we place in FOLLOW(S) entries. FOLLOW(S) = {$, a, b} because S is start symbol ($), and in S → aS, after S we have whatever follows the S on RHS... actually FOLLOW(S): S → aS means FOLLOW(S) âŠ† FOLLOW(S) (same). S → bS similarly. No. Actually FOLLOW(S): $ âˆˆ FOLLOW(S). The RHS S appears at end of aS and bS, so FOLLOW(S) âŠ† FOLLOW(S) (trivially). FOLLOW(S) = {$, a, b} because... hmm, actually let me reconsider. In S → aS, the S is at the end, so everything in FOLLOW(S) is also in FOLLOW(S). No new info. So FOLLOW(S) = {$}.
+Hmm, the standard GATE 2012 answer key says 2 conflicts for this grammar. Let me reconsider: maybe the first set for S→aS also includes Îµ? No. Oh wait —” the issue might be left recursion. S → aS | bS | Îµ —” is there left recursion? No. But S is nullable (S ⇒* Îµ). When computing LL(1) table: for S → aS, FIRST(aS) = {a} since a is terminal. For S → bS, FIRST(bS) = {b}. For S → Îµ, we place in FOLLOW(S) entries. FOLLOW(S) = {$, a, b} because S is start symbol ($), and in S → aS, after S we have whatever follows the S on RHS... actually FOLLOW(S): S → aS means FOLLOW(S) âŠ† FOLLOW(S) (same). S → bS similarly. No. Actually FOLLOW(S): $ âˆˆ FOLLOW(S). The RHS S appears at end of aS and bS, so FOLLOW(S) âŠ† FOLLOW(S) (trivially). FOLLOW(S) = {$, a, b} because... hmm, actually let me reconsider. In S → aS, the S is at the end, so everything in FOLLOW(S) is also in FOLLOW(S). No new info. So FOLLOW(S) = {$}.
 
 But then the FIRST of S→aS also needs to consider that after a, S can derive Îµ. FIRST(aS) = {a} since a is terminal and is first. No, FIRST(aS) starts with a, so it's {a}. FIRST(bS) = {b}. No conflicts.
 
@@ -2265,7 +2265,7 @@ Which of the following is TRUE?
 **Answer:** (B) FOLLOW(A) = {a, b, $}
 
 *Solution:* FIRST(A) = {a, Îµ}. FIRST(B) = {b, Îµ}. FIRST(C) = {a, Îµ}. FIRST(S) = FIRST(AB) âˆª FIRST(C) = {a, b, Îµ} âˆª {a, Îµ} = {a, b, Îµ}.
-So (A) is false (missing b). FIRST(B) = {b, Îµ} —” (C) is true. Let me check (B): FOLLOW(A): from S → AB, everything in FIRST(B) except Îµ goes to FOLLOW(A) = {b}. Since B is nullable, everything in FOLLOW(S) = {$} also goes to FOLLOW(A). Also from A → aA, the RHS A has FOLLOW(A) âŠ† FOLLOW(A). So FOLLOW(A) = {b, $}. Not {a, b, $}. So (B) is false. (D) FOLLOW(C): from S → C, everything in FOLLOW(S) = {$} goes to FOLLOW(C). Also from C → aCb, b âˆˆ FOLLOW(C). So FOLLOW(C) = {b, $}. (D) is true. Both (C) and (D) seem true? Let me recheck: FIRST(B) = {b} âˆª (Îµ ? nullable → yes, Îµ first, so {b, Îµ}). Correct. And FOLLOW(C) = {b, $} from S→C gives $, C→aCb gives b. So both true. But GATE 2013 says only (B) is true. Let me re-examine (B): A → aA, so FOLLOW(A) from A on RHS of A → aA: the RHS A contributes FOLLOW(A) to FOLLOW(A) —” no new info. S → AB: everything in FIRST(B) \ {Îµ} = {b} → FOLLOW(A). Since B â‡’* Îµ, everything in FOLLOW(S) = {$} → FOLLOW(A). So FOLLOW(A) = {b, $}. This is NOT {a, b, $}. 
+So (A) is false (missing b). FIRST(B) = {b, Îµ} —” (C) is true. Let me check (B): FOLLOW(A): from S → AB, everything in FIRST(B) except Îµ goes to FOLLOW(A) = {b}. Since B is nullable, everything in FOLLOW(S) = {$} also goes to FOLLOW(A). Also from A → aA, the RHS A has FOLLOW(A) âŠ† FOLLOW(A). So FOLLOW(A) = {b, $}. Not {a, b, $}. So (B) is false. (D) FOLLOW(C): from S → C, everything in FOLLOW(S) = {$} goes to FOLLOW(C). Also from C → aCb, b âˆˆ FOLLOW(C). So FOLLOW(C) = {b, $}. (D) is true. Both (C) and (D) seem true? Let me recheck: FIRST(B) = {b} âˆª (Îµ ? nullable → yes, Îµ first, so {b, Îµ}). Correct. And FOLLOW(C) = {b, $} from S→C gives $, C→aCb gives b. So both true. But GATE 2013 says only (B) is true. Let me re-examine (B): A → aA, so FOLLOW(A) from A on RHS of A → aA: the RHS A contributes FOLLOW(A) to FOLLOW(A) —” no new info. S → AB: everything in FIRST(B) \ {Îµ} = {b} → FOLLOW(A). Since B ⇒* Îµ, everything in FOLLOW(S) = {$} → FOLLOW(A). So FOLLOW(A) = {b, $}. This is NOT {a, b, $}. 
 
 But wait —” maybe the grammar is augmented and we need to consider all possible uses of A. Actually, I think the official answer has (B) as correct, and I'm making an error. Let me reconsider: from A → aA, the RHS A: since the production is A → aA, what follows the RHS A is whatever follows A in this context. But FOLLOW(A) on LHS = FOLLOW of A from context where A appears on RHS of other productions. A appears on RHS only in A → aA (where what follows A on RHS is Îµ). So FOLLOW(A) on the inside is the same as FOLLOW(A) outside. Plus from S → AB, FOLLOW(A) gets FIRST(B)\{Îµ} âˆª (if nullable) FOLLOW(S). So {b} âˆª {$} = {b, $}. 
 
@@ -2909,7 +2909,7 @@ How many instructions can peephole optimization potentially eliminate?
 **Trap 1: FIRST/FOLLOW —” Including Îµ in the wrong place**
 For `A → Î± | Î²`, when computing FIRST(A), include Îµ ONLY if ALL of Î± and Î² can derive Îµ independently. Students often skip this check.
 
-*Fix:* FIRST(A) contains Îµ iff A â‡’* Îµ. For A → X Y Z, Îµ âˆˆ FIRST(A) only if Îµ âˆˆ FIRST(X), Îµ âˆˆ FIRST(Y), AND Îµ âˆˆ FIRST(Z).
+*Fix:* FIRST(A) contains Îµ iff A ⇒* Îµ. For A → X Y Z, Îµ âˆˆ FIRST(A) only if Îµ âˆˆ FIRST(X), Îµ âˆˆ FIRST(Y), AND Îµ âˆˆ FIRST(Z).
 
 ---
 
@@ -2923,7 +2923,7 @@ FOLLOW(S) always contains `$` for the start symbol S. Students forget this in 50
 **Trap 3: FOLLOW —” adding left-recursive contributions**
 Many students add FOLLOW(A) to FOLLOW(A) when A appears on the RHS of A's own productions. This is a tautology and adds nothing.
 
-*Fix:* For `A → Î± B Î²`, add FIRST(Î²)\{Îµ} to FOLLOW(B). If Î² â‡’* Îµ, add FOLLOW(A) to FOLLOW(B). Never add FOLLOW(B) to itself from its own productions.
+*Fix:* For `A → Î± B Î²`, add FIRST(Î²)\{Îµ} to FOLLOW(B). If Î² ⇒* Îµ, add FOLLOW(A) to FOLLOW(B). Never add FOLLOW(B) to itself from its own productions.
 
 ---
 
@@ -3038,7 +3038,7 @@ FOLLOW(S) = {$}  (S = start symbol)
 repeat until no changes:
     for each production A → Î± B Î²:
         add FIRST(Î²)\{Îµ} to FOLLOW(B)
-        if Î² â‡’* Îµ (Î² is nullable), add FOLLOW(A) to FOLLOW(B)
+        if Î² ⇒* Îµ (Î² is nullable), add FOLLOW(A) to FOLLOW(B)
     for each production A → Î± B:
         add FOLLOW(A) to FOLLOW(B)
 ```

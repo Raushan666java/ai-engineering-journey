@@ -450,20 +450,20 @@ Level 2: fun(3), fun(2), fun(2), fun(1) → 4 calls  (wait, let me track careful
 Actually let's build the call tree:
 
 fun(5)
-â”œâ”€â”€ fun(4)
-â”‚   â”œâ”€â”€ fun(3)
-â”‚   â”‚   â”œâ”€â”€ fun(2)
-â”‚   â”‚   â”‚   â”œâ”€â”€ fun(1)  â† base case
-â”‚   â”‚   â”‚   â””â”€â”€ fun(0)  â† base case
-â”‚   â”‚   â””â”€â”€ fun(1)      â† base case
-â”‚   â””â”€â”€ fun(2)
-â”‚       â”œâ”€â”€ fun(1)      â† base case
-â”‚       â””â”€â”€ fun(0)      â† base case
-â””â”€â”€ fun(3)
-    â”œâ”€â”€ fun(2)
-    â”‚   â”œâ”€â”€ fun(1)      â† base case
-    â”‚   â””â”€â”€ fun(0)      â† base case
-    â””â”€â”€ fun(1)          â† base case
+├── fun(4)
+│   ├── fun(3)
+│   │   ├── fun(2)
+│   │   │   ├── fun(1)  ← base case
+│   │   │   └── fun(0)  ← base case
+│   │   └── fun(1)      ← base case
+│   └── fun(2)
+│       ├── fun(1)      ← base case
+│       └── fun(0)      ← base case
+└── fun(3)
+    ├── fun(2)
+    │   ├── fun(1)      ← base case
+    │   └── fun(0)      ← base case
+    └── fun(1)          ← base case
 
 Counting all calls (including initial):
 fun(5), fun(4), fun(3), fun(2), fun(1), fun(0)
@@ -1093,7 +1093,7 @@ enable decoder. Always include the top-level decoder.
 Create compact formula sheets like this for each subject:
 
 ```
-â•â•â• OPERATING SYSTEMS → QUICK FORMULAS â•â•â•
+═══ OPERATING SYSTEMS → QUICK FORMULAS ═══
 
 SCHEDULING:
   Turnaround Time = Completion Time - Arrival Time
@@ -1115,7 +1115,7 @@ DISK SCHEDULING:
   Seek time = head movement Ã— seek_cost
   FCFS → SSTF → SCAN (elevator) → C-SCAN → LOOK → C-LOOK
 
-â•â•â• COMPUTER NETWORKS → QUICK FORMULAS â•â•â•
+═══ COMPUTER NETWORKS → QUICK FORMULAS ═══
 
   Throughput (CSMA/CD) = 1 / (1 + 6.44a) where a = Tp/Tt
   Minimum frame size = 2 Ã— Tp Ã— Bandwidth
@@ -1126,7 +1126,7 @@ DISK SCHEDULING:
   Efficiency of Stop-and-Wait = 1 / (1 + 2a)
   Sliding window efficiency = N / (1 + 2a) where N = window size
 
-â•â•â• COMPUTER ORGANIZATION → QUICK FORMULAS â•â•â•
+═══ COMPUTER ORGANIZATION → QUICK FORMULAS ═══
 
   Speedup (Pipeline) = Non-pipelined_time / Pipelined_time_per_instruction
   Speedup = n / (1 + (n-1) Ã— stall_probability)
@@ -2295,26 +2295,26 @@ Data with zeros: 101101000
 
 Step 2: Binary division (XOR, no carry):
         110101
-    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    ──────────
 1101 | 101101000
        1101
-       â”€â”€â”€â”€
+       ────
         1100
         1101
-        â”€â”€â”€â”€
+        ────
          0110
          0000
-         â”€â”€â”€â”€
+         ────
           1100
           1101
-          â”€â”€â”€â”€
+          ────
            0100
            0000
-           â”€â”€â”€â”€
+           ────
             1000
             1101
-            â”€â”€â”€â”€
-             101  â† remainder (CRC)
+            ────
+             101  ← remainder (CRC)
 
 Step 3: Transmitted codeword = data + CRC
 = 101101 + 101 = 101101101
@@ -2806,14 +2806,14 @@ The grammar is left-recursive, which is fine for LR parsing.
 
 Step 2: Parse tree (bottom-up evaluation):
 E → E + T (the topmost +)
-â”œâ”€â”€ E → E + T  (the first +)
-â”‚   â”œâ”€â”€ E → T → 3 {T.val = 3, E.val = 3}
-â”‚   â”œâ”€â”€ +
-â”‚   â””â”€â”€ T → 5 {T.val = 5}
-â”‚   â””â”€â”€ E.val = 3 + 5 = 8
-â”œâ”€â”€ +
-â””â”€â”€ T → 2 {T.val = 2}
-â””â”€â”€ E.val = 8 + 2 = 10
+├── E → E + T  (the first +)
+│   ├── E → T → 3 {T.val = 3, E.val = 3}
+│   ├── +
+│   └── T → 5 {T.val = 5}
+│   └── E.val = 3 + 5 = 8
+├── +
+└── T → 2 {T.val = 2}
+└── E.val = 8 + 2 = 10
 
 Step 3: Evaluation proceeds bottom-up:
 First: 3+5 is evaluated → 8
@@ -2904,7 +2904,7 @@ E' → Îµ or + T E' (zero or more + T groups)
 E → T E' → T, T + T, T + T + T, etc. âœ“
 
 Step 4: Check options:
-(A) E → T E'; E' → + T E' | Îµ â† matches âœ“
+(A) E → T E'; E' → + T E' | Îµ ← matches âœ“
 
 Answer: (A)
 
@@ -3779,12 +3779,12 @@ Progressive targets:
 ```
 After each mock test, fill this template:
 
-â•â•â• MOCK ANALYSIS â•â•â•
+═══ MOCK ANALYSIS ═══
 Mock #: ___   Score: ___/100   Time: ___ minutes
 
 SUBJECT BREAKDOWN:
 Subject          | Attempted | Correct | Wrong | Score
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€|â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€|â”€â”€â”€â”€â”€â”€â”€â”€â”€|â”€â”€â”€â”€â”€â”€â”€|â”€â”€â”€â”€â”€â”€â”€
+─────────────────|───────────|─────────|───────|───────
 General Aptitude |           |         |       |
 DSA              |           |         |       |
 OS               |           |         |       |

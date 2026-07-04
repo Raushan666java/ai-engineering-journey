@@ -2042,7 +2042,7 @@ x + y + 4z = 6
 | 6 | **Conditional probability reversal** | `P(A|B) â‰  P(B|A)`. Bayes' theorem is needed to relate them. Never assume symmetry. |
 | 7 | **Variance of linear combination** | `Var(aX + bY) = aÂ²Var(X) + bÂ²Var(Y) + 2abÂ·Cov(X,Y)` ONLY if independent can you drop the covariance term. |
 | 8 | **L'Hopital without checking form** | Only valid for `0/0` or `âˆž/âˆž` indeterminate forms. Applying it to limits like `1^âˆž` or `0Â·âˆž` directly is wrong → convert first. |
-| 9 | **Differentiability â‰  continuity reverse** | Differentiable â‡’ continuous. But continuous does NOT imply differentiable (e.g., `|x|` at `x=0`). |
+| 9 | **Differentiability â‰  continuity reverse** | Differentiable ⇒ continuous. But continuous does NOT imply differentiable (e.g., `|x|` at `x=0`). |
 | 10 | **Integration constant** | For indefinite integrals, NEVER forget `+C`. For definite integrals, changing limits with substitution is mandatory. |
 | 11 | **Graph: Eulerian vs Hamiltonian** | Eulerian circuit = visits **every edge** exactly once (all even degrees). Hamiltonian cycle = visits **every vertex** exactly once (NP-complete to check). |
 | 12 | **Bisection vs Newton convergence** | Bisection: linear convergence (order 1), always converges if sign change exists. Newton: quadratic (order 2), but may diverge if initial guess is poor. |
@@ -2084,7 +2084,7 @@ x + y + 4z = 6
 - `rank(A) â‰¤ min(m, n)` for `m Ã— n` matrix
 - `rank(A+B) â‰¤ rank(A) + rank(B)`
 - `rank(AB) â‰¤ min(rank(A), rank(B))`
-- `rank(A) = r` â‡’ nullity = `n - r` (rank-nullity theorem)
+- `rank(A) = r` ⇒ nullity = `n - r` (rank-nullity theorem)
 
 ---
 

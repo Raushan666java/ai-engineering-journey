@@ -957,7 +957,7 @@ Probability = `120/455 = 24/91`
 
 **Shortcuts for solving:**
 - Draw a family tree top-down (oldest on top)
-- Use + for male, - for female, â†” for marriage, → for children
+- Use + for male, - for female, ↔ for marriage, → for children
 - Replace pronouns with actual names
 - Work backwards from the question to find the relationship
 
@@ -1850,25 +1850,25 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 **Pattern Recognition / Series Completion (Q1-Q25)**
 
 1. Find the next figure in series: Circle, Square, Triangle, Circle, Square, ?
-2. Identify the odd one: â—‹, â–³, â–¡, â˜†, â—‡
-3. Complete pattern: (â†‘â†“), (â†→), (â†•â†”), (â†‘â†“), (â†→), ?
-4. In a sequence of shapes, each shape rotates 90Â° clockwise. If current shape is â–², what is next?
-5. Pattern: â– , â–¡, â– â– , â–¡â–¡, â– â– â– , ?
+2. Identify the odd one: ○, △, □, â˜†, ◇
+3. Complete pattern: (↑↓), (←→), (↕↔), (↑↓), (←→), ?
+4. In a sequence of shapes, each shape rotates 90Â° clockwise. If current shape is ▲, what is next?
+5. Pattern: ■, □, ■■, □□, ■■■, ?
 6. Find next: 0, 1, 1, 2, 3, 5, 8, ?
 7. Find missing term: 1, 4, 9, 16, ?, 36
 8. Shape pattern: Triangle has 3 lines, Square has 4, Pentagon has 5, Hexagon has ?
 9. Pattern: Z, Y, X, W, V, ?
 10. Find next: 1A, 2B, 3C, 4D, ?
 11. Series: â˜…, â˜…â˜…, â˜…â˜…â˜…, ?, â˜…â˜…â˜…â˜…â˜…
-12. Which figure completes the matrix? [â—, â—‘, â—’] [â—“, ?, â—]
-13. Pattern: (â†—), (â†˜), (â†™), (â†–), (â†—), ?
+12. Which figure completes the matrix? [◐, ◑, ◒] [◓, ?, ◐]
+13. Pattern: (↗), (↘), (↙), (↖), (↗), ?
 14. Find the odd image out: Red circle, Blue square, Green triangle, Red square → all same size. Which is different?
 15. Complete: 2, 6, 18, 54, ?
-16. Pattern: â–ˆ, â–“, â–’, â–‘, â–ˆ, ?
+16. Pattern: █, ▓, ▒, ░, █, ?
 17. Identify the missing shape in a 3Ã—3 grid where first row has circles, second row has squares, third row has ?
-18. Series: â— â—‹ â—‹ â— â— â—‹ â—‹ â—‹ â— â— â—. What comes next?
+18. Series: ● ○ ○ ● ● ○ ○ ○ ● ● ●. What comes next?
 19. Pattern: All figures have 4 sides except one. Which is the exception?
-20. Next pattern: â–¡ â–£ â–£ â–¡ â–¡ â–£ â–£ â–£ â–£ â–¡ â–¡ â–¡ ?
+20. Next pattern: □ ▣ ▣ □ □ ▣ ▣ ▣ ▣ □ □ □ ?
 21. Find the missing domino: [3|4], [2|5], [6|1], [4|?]
 22. Complete the sequence: âˆŽ, âˆŽâˆŽ, âˆŽâˆŽâˆŽ, âˆŽâˆŽâˆŽâˆŽ, ?
 23. Pattern: 1, 2, 2, 4, 8, 32, ?
@@ -1907,11 +1907,11 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 
 | Q# | Answer | Q# | Answer | Q# | Answer | Q# | Answer |
 |----|--------|----|--------|----|--------|----|--------|
-| 1 | Triangle | 2 | â˜† (non-geometric shape) | 3 | (â†•â†”) | 4 | â–¼ (rotated) |
-| 5 | â–¡â–¡â–¡ | 6 | 13 | 7 | 25 | 8 | 6 |
-| 9 | U | 10 | 5E | 11 | â˜…â˜…â˜…â˜… | 12 | â—’ |
-| 13 | (â†˜) | 14 | Red square (color-shape mismatch) | 15 | 162 | 16 | â–“ |
-| 17 | Triangles | 18 | â—‹ (count of circles increasing) | 19 | Triangle (3 sides) | 20 | â–£ (pattern follows Fibonacci) |
+| 1 | Triangle | 2 | â˜† (non-geometric shape) | 3 | (↕↔) | 4 | ▼ (rotated) |
+| 5 | □□□ | 6 | 13 | 7 | 25 | 8 | 6 |
+| 9 | U | 10 | 5E | 11 | â˜…â˜…â˜…â˜… | 12 | ◒ |
+| 13 | (↘) | 14 | Red square (color-shape mismatch) | 15 | 162 | 16 | ▓ |
+| 17 | Triangles | 18 | ○ (count of circles increasing) | 19 | Triangle (3 sides) | 20 | ▣ (pattern follows Fibonacci) |
 | 21 | 3 (sum = 7) | 22 | âˆŽâˆŽâˆŽâˆŽâˆŽ | 23 | 256 | 24 | 6 |
 | 25 | Cylinder | 26 | d (reverse) | 27 | q | 28 | 3Æ†Ð˜Aâ…ƒUá—ºMA |
 | 29 | 9:00 | 30 | (B) → (Æ†) | 31 | hOShO | 32 | Depends on configuration |

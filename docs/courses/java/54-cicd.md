@@ -43,11 +43,11 @@ By the end of this chapter, you will be able to:
 ![CI/CD - GitHub Actions, GitLab CI, Deployment Strategies](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/54-cicd.png)
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ COMPILE â”‚ →  â”‚ TEST â”‚ →  â”‚ PACKAGE â”‚ →  â”‚ PUBLISH â”‚ →  â”‚  DEPLOY  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-     â”‚             â”‚             â”‚              â”‚               â”‚
-     â–¼             â–¼             â–¼              â–¼               â–¼
+┌─────────┐    ┌──────┐    ┌─────────┐    ┌─────────┐    ┌──────────┐
+│ COMPILE │ →  │ TEST │ →  │ PACKAGE │ →  │ PUBLISH │ →  │  DEPLOY  │
+└─────────┘    └──────┘    └─────────┘    └─────────┘    └──────────┘
+     │             │             │              │               │
+     ▼             ▼             ▼              ▼               ▼
   javac        unit tests    mvn package     docker push    kubectl apply
   mvn compile  int tests     bootBuildImage  mvn deploy    helm upgrade
   gradle build  security scan jar shadow      to registry   terraform apply

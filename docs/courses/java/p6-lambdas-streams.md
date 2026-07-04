@@ -632,16 +632,16 @@ public class MethodRefSummary {
 
     public static void main(String[] args) {
         System.out.println("""
-            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-            â”‚ Kind                         â”‚ Lambda                 â”‚ Method Reference          â”‚
-            â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-            â”‚ Static method                â”‚ s -> Integer.parseInt  â”‚ Integer::parseInt         â”‚
-            â”‚ Bound instance method        â”‚ () -> greeting.trim()  â”‚ greeting::trim            â”‚
-            â”‚ Unbound instance method      â”‚ s -> s.toUpperCase()   â”‚ String::toUpperCase       â”‚
-            â”‚ Constructor (no-arg)         â”‚ () -> new Person()     â”‚ Person::new               â”‚
-            â”‚ Constructor (one-arg)        â”‚ n -> new Person(n)     â”‚ Person::new               â”‚
-            â”‚ Array constructor            â”‚ n -> new String[n]     â”‚ String[]::new             â”‚
-            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+            ┌──────────────────────────────┬────────────────────────┬──────────────────────────┐
+            │ Kind                         │ Lambda                 │ Method Reference          │
+            ├──────────────────────────────┼────────────────────────┼──────────────────────────┤
+            │ Static method                │ s -> Integer.parseInt  │ Integer::parseInt         │
+            │ Bound instance method        │ () -> greeting.trim()  │ greeting::trim            │
+            │ Unbound instance method      │ s -> s.toUpperCase()   │ String::toUpperCase       │
+            │ Constructor (no-arg)         │ () -> new Person()     │ Person::new               │
+            │ Constructor (one-arg)        │ n -> new Person(n)     │ Person::new               │
+            │ Array constructor            │ n -> new String[n]     │ String[]::new             │
+            └──────────────────────────────┴────────────────────────┴──────────────────────────┘
         """);
     }
 }

@@ -64,14 +64,14 @@ Spring Boot provides a layered validation architecture:
 
 ```
 HTTP Request
-    â”‚
-    â–¼
+    │
+    ▼
 Controller (@Valid / @Validated)
-    â”‚
-    â–¼
+    │
+    ▼
 Service layer (programmatic validation)
-    â”‚
-    â–¼
+    │
+    ▼
 Persistence (@Column constraints, DB constraints)
 ```
 

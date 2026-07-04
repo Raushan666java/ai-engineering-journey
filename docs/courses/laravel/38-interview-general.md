@@ -1162,11 +1162,11 @@ class ApproveRefundJob implements ShouldQueue
 
 ```
 Load Balancer → App Servers (Ã—N behind ALB)
-    â”œâ”€â”€ Redis Cluster (sessions, cache, queues, locks)
-    â”œâ”€â”€ PostgreSQL Primary + Read Replicas
-    â”œâ”€â”€ CDN (assets, media)
-    â”œâ”€â”€ Horizon (queue workers Ã—M)
-    â””â”€â”€ Reverb (WebSocket cluster)
+    ├── Redis Cluster (sessions, cache, queues, locks)
+    ├── PostgreSQL Primary + Read Replicas
+    ├── CDN (assets, media)
+    ├── Horizon (queue workers Ã—M)
+    └── Reverb (WebSocket cluster)
 ```
 
 ### Q66: Explain multi-tenancy strategies in Laravel.
@@ -1243,19 +1243,19 @@ class OrderService
 **Answer:** Deploy Laravel application servers in each region behind a regional load balancer. Use a global DNS service (Route53, Cloudflare) for latency-based routing. Database writes go to a primary region, with cross-region read replicas. Use Redis Global Datastore or CRDT-based replication for distributed caching. Queue workers run per-region, processing region-specific queues. Stateless application design ensures any region can handle any request.
 
 ```
-â”Œâ”€â”€ US-East â”€â”€â”     â”Œâ”€â”€ EU-West â”€â”€â”
-â”‚ App Ã—N       â”‚     â”‚ App Ã—N       â”‚
-â”‚ Redis Replicaâ”‚     â”‚ Redis Replicaâ”‚
-â”‚ Queue Workersâ”‚     â”‚ Queue Workersâ”‚
-â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-       â”‚                    â”‚
-       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                  â”‚
-        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-        â”‚  PostgreSQL       â”‚
-        â”‚  Primary (US)     â”‚
-        â”‚  Replica (EU)     â”‚
-        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌── US-East ──┐     ┌── EU-West ──┐
+│ App Ã—N       │     │ App Ã—N       │
+│ Redis Replica│     │ Redis Replica│
+│ Queue Workers│     │ Queue Workers│
+└──────┬───────┘     └──────┬───────┘
+       │                    │
+       └──────────┬─────────┘
+                  │
+        ┌─────────▼─────────┐
+        │  PostgreSQL       │
+        │  Primary (US)     │
+        │  Replica (EU)     │
+        └───────────────────┘
 ```
 
 ### Q70: How do you handle database sharding in Laravel?

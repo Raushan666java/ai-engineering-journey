@@ -57,22 +57,22 @@ Magnetic hard disk drives (HDDs) consist of:
 - **Read/Write Head**: One per surface, mounted on actuator arm
 
 ```
-                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                    â”‚   Spindle       â”‚
-                    â”‚    â”Œâ”€â”€â”         â”‚
-                    â”‚  â”Œâ”€â”´â”€â”€â”´â”€â”       â”‚
-                    â”‚  â”‚Platterâ”‚       â”‚
-                    â”‚  â”‚ 0     â”‚       â”‚
-                    â”‚  â”œâ”€â”€â”€â”€â”€â”€â”¤       â”‚
-                   â”Œâ”¼â”€â”¤Platterâ”‚       â”‚
-                   â”‚â””â”â”‚ 1     â”‚       â”‚
-                   â””â”€â”˜â”œâ”€â”€â”€â”€â”€â”€â”¤       â”‚
-                    â”‚  â”‚Platterâ”‚       â”‚
-                    â”‚  â”‚ 2     â”‚       â”‚
-                    â”‚  â””â”€â”€â”€â”€â”€â”€â”˜       â”‚
-                    â”‚  Read/Write     â”‚
-                    â”‚  Heads (arm)    â”‚
-                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                    ┌─────────────────┐
+                    │   Spindle       │
+                    │    ┌──┐         │
+                    │  ┌─┴──┴─┐       │
+                    │  │Platter│       │
+                    │  │ 0     │       │
+                    │  ├──────┤       │
+                   ┌┼─┤Platter│       │
+                   │└┐│ 1     │       │
+                   └─┘├──────┤       │
+                    │  │Platter│       │
+                    │  │ 2     │       │
+                    │  └──────┘       │
+                    │  Read/Write     │
+                    │  Heads (arm)    │
+                    └─────────────────┘
 ```
 
 ### 1.2 Disk Geometry Terms
@@ -162,10 +162,10 @@ All examples: `[98, 183, 37, 122, 14, 124, 65, 67]`, head=53, disk 0â€“199.
 **Pseudocode:**
 ```
 FUNCTION FCFS(queue, head):
-    total â† 0; current â† head
+    total ← 0; current ← head
     FOR each request IN queue:
         total += |current âˆ’ request|
-        current â† request
+        current ← request
     RETURN total
 ```
 
@@ -250,11 +250,11 @@ fcfs(requests, 53)
 **Pseudocode:**
 ```
 FUNCTION SSTF(queue, head):
-    total â† 0; current â† head; pending â† copy(queue)
+    total ← 0; current ← head; pending ← copy(queue)
     WHILE pending NOT EMPTY:
-        nearest â† argmin over pending of |current âˆ’ r|
+        nearest ← argmin over pending of |current âˆ’ r|
         total += |current âˆ’ nearest|
-        current â† nearest
+        current ← nearest
         REMOVE nearest FROM pending
     RETURN total
 ```
@@ -349,12 +349,12 @@ sstf([98, 183, 37, 122, 14, 124, 65, 67], 53)
 **Pseudocode:**
 ```
 FUNCTION SCAN(queue, head, disk_size, toward_zero):
-    sorted â† SORT(queue); left â† [r< head]; right â† [r â‰¥ head]
-    total â† 0; current â† head
+    sorted ← SORT(queue); left ← [r< head]; right ← [r â‰¥ head]
+    total ← 0; current ← head
     IF toward_zero:
-        FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur â† r
-        total += cur; cur â† 0
-        FOR r IN right: total += |cur âˆ’ r|; cur â† r
+        FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur ← r
+        total += cur; cur ← 0
+        FOR r IN right: total += |cur âˆ’ r|; cur ← r
     RETURN total
 ```
 
@@ -453,12 +453,12 @@ scan([98, 183, 37, 122, 14, 124, 65, 67], 53, 200, True)
 **Pseudocode:**
 ```
 FUNCTION CSCAN(queue, head, disk_size):
-    sorted â† SORT(queue); left â† [r< head]; right â† [r â‰¥ head]
-    total â† 0; cur â† head
-    FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur â† r
-    total += cur; cur â† 0
-    total += (disk_size âˆ’ 1); cur â† disk_size âˆ’ 1
-    FOR r IN REVERSE(right): total += |cur âˆ’ r|; cur â† r
+    sorted ← SORT(queue); left ← [r< head]; right ← [r â‰¥ head]
+    total ← 0; cur ← head
+    FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur ← r
+    total += cur; cur ← 0
+    total += (disk_size âˆ’ 1); cur ← disk_size âˆ’ 1
+    FOR r IN REVERSE(right): total += |cur âˆ’ r|; cur ← r
     RETURN total
 ```
 
@@ -553,10 +553,10 @@ cscan([98, 183, 37, 122, 14, 124, 65, 67], 53, 200)
 **Pseudocode:**
 ```
 FUNCTION LOOK(queue, head):
-    sorted â† SORT(queue); left â† [r< head]; right â† [r â‰¥ head]
-    total â† 0; cur â† head
-    FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur â† r
-    FOR r IN right: total += |cur âˆ’ r|; cur â† r
+    sorted ← SORT(queue); left ← [r< head]; right ← [r â‰¥ head]
+    total ← 0; cur ← head
+    FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur ← r
+    FOR r IN right: total += |cur âˆ’ r|; cur ← r
     RETURN total
 ```
 
@@ -642,11 +642,11 @@ look([98, 183, 37, 122, 14, 124, 65, 67], 53)
 **Pseudocode:**
 ```
 FUNCTION CLOOK(queue, head):
-    sorted â† SORT(queue); left â† [r< head]; right â† [r â‰¥ head]
-    total â† 0; cur â† head
-    FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur â† r
-    total += |cur âˆ’ right[last]|; cur â† right[last]
-    FOR r IN REVERSE(right): total += |cur âˆ’ r|; cur â† r
+    sorted ← SORT(queue); left ← [r< head]; right ← [r â‰¥ head]
+    total ← 0; cur ← head
+    FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur ← r
+    total += |cur âˆ’ right[last]|; cur ← right[last]
+    FOR r IN REVERSE(right): total += |cur âˆ’ r|; cur ← r
     RETURN total
 ```
 
@@ -785,13 +785,13 @@ SSTF O(nÂ²) becomes prohibitive at scale (10K req → ~50M distance calcs).
 
 ```
 Disk Layout:
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Partition 1 â”‚ Partition 2 â”‚ Partition 3 â”‚ Partition 4 â”‚
-â”‚ (ext4)      â”‚ (NTFS)      â”‚ (swap)      â”‚ (XFS)       â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ GPT Header (LBA 1)       â”‚ Partition entries (LBA 2â€“33) â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────┬─────────────┬─────────────┬─────────────┐
+│ Partition 1 │ Partition 2 │ Partition 3 │ Partition 4 │
+│ (ext4)      │ (NTFS)      │ (swap)      │ (XFS)       │
+└─────────────┴─────────────┴─────────────┴─────────────┘
+┌───────────────────────────────────────────────────────┐
+│ GPT Header (LBA 1)       │ Partition entries (LBA 2â€“33) │
+└───────────────────────────────────────────────────────┘
 ```
 
 ### 3.2 Boot Block
@@ -909,9 +909,9 @@ Mirror pairs (RAID 1) striped together (RAID 0).
 
 ```
             RAID 0
-       â”Œâ”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+       ┌──────┬──────┐
      RAID 1  RAID 1  RAID 1
-    â”Œâ”€â”€â”€â”   â”Œâ”€â”€â”€â”   â”Œâ”€â”€â”€â”
+    ┌───┐   ┌───┐   ┌───┐
    D0  D1  D2  D3  D4  D5
 ```
 
@@ -1638,7 +1638,7 @@ for _ in range(5):
     results = {name: algo(req, head) for name, algo in algorithms.items()}
     best = min(results, key=results.get)
     for name, seek in sorted(results.items(), key=lambda x: x[1]):
-        print(f"  {name:8s}: {seek:4d} cylinders {' â† best' if name == best else ''}")
+        print(f"  {name:8s}: {seek:4d} cylinders {' ← best' if name == best else ''}")
 ```
 
 ---

@@ -99,18 +99,18 @@ The `tests/` directory is organized into:
 
 ```
 tests/
-â”œâ”€â”€ Feature/
-â”‚   â”œâ”€â”€ Auth/
-â”‚   â”‚   â””â”€â”€ AuthenticationTest.php
-â”‚   â”œâ”€â”€ Api/
-â”‚   â”‚   â””â”€â”€ PostControllerTest.php
-â”‚   â””â”€â”€ ExampleTest.php
-â”œâ”€â”€ Unit/
-â”‚   â”œâ”€â”€ Services/
-â”‚   â”‚   â””â”€â”€ PaymentGatewayTest.php
-â”‚   â””â”€â”€ ExampleTest.php
-â””â”€â”€ TestCase.php
-        â””â”€â”€ DuskTestCase.php
+├── Feature/
+│   ├── Auth/
+│   │   └── AuthenticationTest.php
+│   ├── Api/
+│   │   └── PostControllerTest.php
+│   └── ExampleTest.php
+├── Unit/
+│   ├── Services/
+│   │   └── PaymentGatewayTest.php
+│   └── ExampleTest.php
+└── TestCase.php
+        └── DuskTestCase.php
 ```
 
 #### The Artisan Test Runner
@@ -1288,7 +1288,7 @@ use function Pest\Laravel\deleteJson;
 
 uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
 
-// â”€â”€â”€ List Posts â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── List Posts ───────────────────────────────────────────────
 
 describe('GET /api/posts', function () {
     it('returns paginated posts', function () {
@@ -1318,7 +1318,7 @@ describe('GET /api/posts', function () {
     });
 });
 
-// â”€â”€â”€ Create Post â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Create Post ──────────────────────────────────────────────
 
 describe('POST /api/posts', function () {
     it('creates a post when authenticated', function () {
@@ -1365,7 +1365,7 @@ describe('POST /api/posts', function () {
     });
 });
 
-// â”€â”€â”€ Show Post â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Show Post ────────────────────────────────────────────────
 
 describe('GET /api/posts/{post}', function () {
     it('returns a single post with comments', function () {
@@ -1388,7 +1388,7 @@ describe('GET /api/posts/{post}', function () {
     });
 });
 
-// â”€â”€â”€ Update Post â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Update Post ──────────────────────────────────────────────
 
 describe('PUT /api/posts/{post}', function () {
     it('updates own post', function () {
@@ -1421,7 +1421,7 @@ describe('PUT /api/posts/{post}', function () {
     });
 });
 
-// â”€â”€â”€ Delete Post â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Delete Post ──────────────────────────────────────────────
 
 describe('DELETE /api/posts/{post}', function () {
     it('deletes own post', function () {
@@ -1445,7 +1445,7 @@ describe('DELETE /api/posts/{post}', function () {
     });
 });
 
-// â”€â”€â”€ Arch rules â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Arch rules ───────────────────────────────────────────────
 
 arch('debug functions')
     ->expect(['dd', 'dump', 'var_dump', 'ray'])

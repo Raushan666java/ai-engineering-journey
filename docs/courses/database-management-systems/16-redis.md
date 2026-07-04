@@ -1893,7 +1893,7 @@ aof-use-rdb-preamble yes     # Hybrid mode (default in Redis 6.2+)
 **AOF+RDB hybrid file structure:**
 ```
 [RDB preamble: full dataset snapshot]
-[INCR user:1:counter ...]          â† incremental commands after snapshot
+[INCR user:1:counter ...]          ← incremental commands after snapshot
 [SET user:2:name "Bob" ...]
 [...more AOF entries...]
 ```

@@ -295,7 +295,7 @@ The optimal solution uses two pointers moving inward → O(n). But the Einstellu
 // Einstellung: "I must find the max first" → O(nÂ²)
 public int maxAreaStuck(int[] height) {
     int max = 0;
-    for (int i = 0; i < height.length; i++)        // â† stuck thinking
+    for (int i = 0; i < height.length; i++)        // ← stuck thinking
         for (int j = i + 1; j < height.length; j++) //    "nested loops"
             max = Math.max(max, Math.min(height[i], height[j]) * (j - i));
     return max;
@@ -2865,9 +2865,9 @@ From DBMS (`08-database-management-systems.md:30-39`), draw the ER diagram for t
 From COA (`11-computer-architecture.md:24-43`), draw the von Neumann architecture:
 
 ```text
-  CPU â†Address Bus→ Memory (unified)
-  CPU â†Data Bus→    Memory
-  CPU â†Control Bus→ Memory
+  CPU ←Address Bus→ Memory (unified)
+  CPU ←Data Bus→    Memory
+  CPU ←Control Bus→ Memory
   [Fetch: PC→MAR→Memory→MDR→IR]
   [Decode: Control unit decodes IR]
   [Execute: ALU operates, result to memory/register]
@@ -3448,29 +3448,29 @@ Your skill tree based on the 27 courses in this repo:
 
 ```text
 ROOT: Programming Fundamentals
-â”œâ”€â”€ Java Track
-â”‚   â”œâ”€â”€ Java Syntax & OOP (java/index.md P1-P2)
-â”‚   â”œâ”€â”€ Collections & Streams (P3, P6)
-â”‚   â”œâ”€â”€ JVM & Concurrency (01, 02)
-â”‚   â”œâ”€â”€ Spring Boot DI (09-14)
-â”‚   â”‚   â”œâ”€â”€ Spring Web MVC (15-18)
-â”‚   â”‚   â”‚   â”œâ”€â”€ REST APIs (chapter 57)
-â”‚   â”‚   â”‚   â”œâ”€â”€ Spring Security (25-28)
-â”‚   â”‚   â”‚   â””â”€â”€ Microservices (38-43)
-â”‚   â”‚   â””â”€â”€ Spring Data (19-24)
-â”‚   â””â”€â”€ DSA (02-dsa-problem-bank.md Q1-Q125)
-â”œâ”€â”€ DevOps Track
-â”‚   â”œâ”€â”€ Linux & Git (devops 01-03)
-â”‚   â”œâ”€â”€ CI/CD (devops 04, 09)
-â”‚   â”œâ”€â”€ Docker & K8s (devops 05-06)
-â”‚   â””â”€â”€ Cloud (devops 11)
-â”œâ”€â”€ Database Track
-â”‚   â”œâ”€â”€ SQL (03-sql-problem-bank.md Q1-Q50)
-â”‚   â”œâ”€â”€ DBMS Theory (08-database-management-systems.md)
-â”‚   â””â”€â”€ NoSQL (03-sql-problem-bank.md Q51-Q62)
-â””â”€â”€ System Design
-    â”œâ”€â”€ Caching, DB scaling, LB (system-design 02-05)
-    â””â”€â”€ Case studies: WhatsApp, Netflix, Uber (18-20)
+├── Java Track
+│   ├── Java Syntax & OOP (java/index.md P1-P2)
+│   ├── Collections & Streams (P3, P6)
+│   ├── JVM & Concurrency (01, 02)
+│   ├── Spring Boot DI (09-14)
+│   │   ├── Spring Web MVC (15-18)
+│   │   │   ├── REST APIs (chapter 57)
+│   │   │   ├── Spring Security (25-28)
+│   │   │   └── Microservices (38-43)
+│   │   └── Spring Data (19-24)
+│   └── DSA (02-dsa-problem-bank.md Q1-Q125)
+├── DevOps Track
+│   ├── Linux & Git (devops 01-03)
+│   ├── CI/CD (devops 04, 09)
+│   ├── Docker & K8s (devops 05-06)
+│   └── Cloud (devops 11)
+├── Database Track
+│   ├── SQL (03-sql-problem-bank.md Q1-Q50)
+│   ├── DBMS Theory (08-database-management-systems.md)
+│   └── NoSQL (03-sql-problem-bank.md Q51-Q62)
+└── System Design
+    ├── Caching, DB scaling, LB (system-design 02-05)
+    └── Case studies: WhatsApp, Netflix, Uber (18-20)
 ```
 
 Each node represents a measurable skill. Complete a node when you can solve related problems from the repo without help. A tree like this prevents the "I know a little of everything" trap → you can see exactly which prerequisites are missing.
@@ -3562,7 +3562,7 @@ The total time to study all 27 courses is not the sum of individual times → it
 - Layer 4: Remix into cheat sheets (see Q97)
 
 **2. Connect → Interlinking (from Q98):**
-Link concepts across chapters: "Page replacement (OS chapter) â† → Cache mapping (COA chapter) → Effective access time formula"
+Link concepts across chapters: "Page replacement (OS chapter) ← → Cache mapping (COA chapter) → Effective access time formula"
 
 **3. Create → Atomic notes:**
 Each course section becomes one note with a clear title:

@@ -351,7 +351,7 @@ Shows every autostart location:
 ```
 High Address
 +------------------+
-|      Stack       |  â† grows downward (toward lower addresses)
+|      Stack       |  ← grows downward (toward lower addresses)
 | (local vars,     |
 |  return addrs)   |
 |------------------|
@@ -360,12 +360,12 @@ High Address
 |        ^         |
 |        |         |
 |------------------|
-|      Heap        |  â† grows upward (toward higher addresses)
+|      Heap        |  ← grows upward (toward higher addresses)
 | (malloc/new)     |
 |------------------|
-|  Data Segment    |  â† global/static variables
+|  Data Segment    |  ← global/static variables
 |------------------|
-|  Text Segment    |  â† machine code (read-only)
+|  Text Segment    |  ← machine code (read-only)
 +------------------+
 Low Address
 ```
@@ -423,17 +423,17 @@ When `vulnerable()` is called, the stack looks like:
 Before strcpy:
 High Address
 +---------------------------+
-| argv, argc (caller args)   | â† main's stack frame
+| argv, argc (caller args)   | ← main's stack frame
 +---------------------------+
-| return address (to main)  | â† 4 bytes → where vulnerable returns
+| return address (to main)  | ← 4 bytes → where vulnerable returns
 +---------------------------+
-| saved EBP (frame pointer) | â† 4 bytes
+| saved EBP (frame pointer) | ← 4 bytes
 +---------------------------+
-| buffer[64]                | â† 64 bytes (local array)
+| buffer[64]                | ← 64 bytes (local array)
 |  [0..15] [16..31]         |
 |  [32..47] [48..63]        |
 +---------------------------+
-Low Address  â† ESP points here
+Low Address  ← ESP points here
 ```
 
 After overflow with 72+ bytes:
@@ -442,13 +442,13 @@ After overflow with 72+ bytes:
 After strcpy with 80 bytes:
 High Address
 +---------------------------+
-| AAAAAAAA (bytes 72-79)    | â† overwrites argv/argc area
+| AAAAAAAA (bytes 72-79)    | ← overwrites argv/argc area
 +---------------------------+
-| AAAAAAAA (bytes 64-71)    | â† overwrites return address
+| AAAAAAAA (bytes 64-71)    | ← overwrites return address
 +---------------------------+
-| AAAAAAAA (bytes 56-63)    | â† overwrites saved EBP
+| AAAAAAAA (bytes 56-63)    | ← overwrites saved EBP
 +---------------------------+
-| AAAAAAAA (bytes 0-55)     | â† fills buffer
+| AAAAAAAA (bytes 0-55)     | ← fills buffer
 +---------------------------+
 Low Address
 ```
@@ -580,12 +580,12 @@ The 16-byte `buffer` chunk (at 0x804a018) overflows into the adjacent `secret` c
 ```
 Before overflow:
 +------------+------------+
-| secret[16] | buffer[16] |  â† metadata between chunks
+| secret[16] | buffer[16] |  ← metadata between chunks
 +------------+------------+
 
 After overflow with 32+ bytes:
 +------------+------------+
-| secret[16] | AAAAAAA... |  â† secret's content overwritten
+| secret[16] | AAAAAAA... |  ← secret's content overwritten
 +------------+------------+
 ```
 
@@ -1930,13 +1930,13 @@ int main() {
 ```
 High Address
 +---------------------------+
-| function arguments        | â† caller pushes right-to-left
+| function arguments        | ← caller pushes right-to-left
 +---------------------------+
-| return address            | â† pushed by CALL instruction
+| return address            | ← pushed by CALL instruction
 +---------------------------+
-| saved base pointer (EBP)  | â† pushed by function prologue
+| saved base pointer (EBP)  | ← pushed by function prologue
 +---------------------------+
-| local variables (buffer)  | â† allocated by `sub esp, N`
+| local variables (buffer)  | ← allocated by `sub esp, N`
 +---------------------------+
 Low Address (ESP points here)
 ```
@@ -2049,7 +2049,7 @@ The Morris Worm (1988) is the classic example of a worm: it propagated via finge
 **Exploitation:**
 ```
 $ ./vuln "AAAA%x.%x.%x.%x"
-AAAAffffd500.f7f5f5c0.8048426.41414141    â† AAAA = 0x41414141 leaked from stack
+AAAAffffd500.f7f5f5c0.8048426.41414141    ← AAAA = 0x41414141 leaked from stack
 ```
 
 `%n` can overwrite GOT entries (e.g., redirect `printf` to `system`) or overwrite the return address.
@@ -3514,21 +3514,21 @@ Stage 3: Decompose → Login Component
   Assets: User credentials, session tokens, authentication database
 
 Stage 4: Threat Analysis
-  â””â”€â”€ Login Bypass
-      â”œâ”€â”€ SQL injection on username field
-      â”œâ”€â”€ Session token prediction
-      â”œâ”€â”€ Credential stuffing via API rate (no rate limit)
-      â””â”€â”€ MFA bypass via backup code brute-force
+  └── Login Bypass
+      ├── SQL injection on username field
+      ├── Session token prediction
+      ├── Credential stuffing via API rate (no rate limit)
+      └── MFA bypass via backup code brute-force
 
 Stage 6: Attack Modeling
   Attack Tree: SQL Injection on Login
-  â””â”€â”€ OR
-      â”œâ”€â”€ Username field with ' OR 1=1 --
-      â”‚   â”œâ”€â”€ Parameterized query? → Blocked
-      â”‚   â””â”€â”€ String concatenation? → Vulnerability!
-      â””â”€â”€ Password field with admin' --
-          â”œâ”€â”€ Input validation? → Blocked
-          â””â”€â”€ No validation? → Vulnerability!
+  └── OR
+      ├── Username field with ' OR 1=1 --
+      │   ├── Parameterized query? → Blocked
+      │   └── String concatenation? → Vulnerability!
+      └── Password field with admin' --
+          ├── Input validation? → Blocked
+          └── No validation? → Vulnerability!
 
 Stage 7: Risk Scoring
   [SQL Injection on Login] Damage=10 Ã— Reproducibility=10 Ã— Exploitability=8
@@ -3760,8 +3760,8 @@ void func(char *input) {
 Address (relative to EBP)   Content                 Size
 +----------------------------+----------------------+--------
 EBP + 8                      input pointer          4 bytes
-EBP + 4                      return address         4 bytes  â† TARGET
-EBP + 0                      saved EBP              4 bytes  â† TARGET
+EBP + 4                      return address         4 bytes  ← TARGET
+EBP + 0                      saved EBP              4 bytes  ← TARGET
 EBP - 4                      safety = 0x0000DEAD    4 bytes
 EBP - 8                      i                      4 bytes
 EBP - 12                     (padding)              12 bytes

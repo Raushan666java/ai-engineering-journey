@@ -43,22 +43,22 @@ Java exceptions are objects representing abnormal conditions. The root class is 
 
 ```
 Throwable
-â”œâ”€â”€ Error         (unchecked → JVM-level failures)
-â”‚   â”œâ”€â”€ OutOfMemoryError
-â”‚   â”œâ”€â”€ StackOverflowError
-â”‚   â”œâ”€â”€ NoClassDefFoundError
-â”‚   â””â”€â”€ ...
-â””â”€â”€ Exception     (program-level conditions)
-    â”œâ”€â”€ RuntimeException   (unchecked → programming bugs)
-    â”‚   â”œâ”€â”€ NullPointerException
-    â”‚   â”œâ”€â”€ IllegalArgumentException
-    â”‚   â”œâ”€â”€ IndexOutOfBoundsException
-    â”‚   â””â”€â”€ ...
-    â””â”€â”€ (checked exceptions)
-        â”œâ”€â”€ IOException
-        â”œâ”€â”€ SQLException
-        â”œâ”€â”€ ClassNotFoundException
-        â””â”€â”€ ...
+├── Error         (unchecked → JVM-level failures)
+│   ├── OutOfMemoryError
+│   ├── StackOverflowError
+│   ├── NoClassDefFoundError
+│   └── ...
+└── Exception     (program-level conditions)
+    ├── RuntimeException   (unchecked → programming bugs)
+    │   ├── NullPointerException
+    │   ├── IllegalArgumentException
+    │   ├── IndexOutOfBoundsException
+    │   └── ...
+    └── (checked exceptions)
+        ├── IOException
+        ├── SQLException
+        ├── ClassNotFoundException
+        └── ...
 ```
 
 **Error** → serious JVM-level problems that applications should not attempt to catch.

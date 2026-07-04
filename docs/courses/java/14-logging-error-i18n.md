@@ -94,10 +94,10 @@ A logger inherits its level from its nearest ancestor that has a configured leve
 
 ```
 ROOT
- â””â”€â”€ com
-      â””â”€â”€ com.example
-           â””â”€â”€ com.example.service
-                â””â”€â”€ com.example.service.OrderService
+ └── com
+      └── com.example
+           └── com.example.service
+                └── com.example.service.OrderService
 ```
 
 #### 1.2.2 Log Levels (in order of severity)
@@ -2284,9 +2284,9 @@ public class LoggingAspect {
             long duration = System.currentTimeMillis() - start;
 
             if (duration > 1000) {
-                log.warn("â† {}.{} completed in {}ms (SLOW)", className, methodName, duration);
+                log.warn("← {}.{} completed in {}ms (SLOW)", className, methodName, duration);
             } else {
-                log.info("â† {}.{} completed in {}ms", className, methodName, duration);
+                log.info("← {}.{} completed in {}ms", className, methodName, duration);
             }
 
             return result;

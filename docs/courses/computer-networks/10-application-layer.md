@@ -66,18 +66,18 @@ The application layer is Layer 7 of the OSI model and the top of the TCP/IP mode
 **Pseudocode → Client-Server (HTTP-like):**
 ```
 CLIENT:
-  addr â† DNS.resolve("api.example.com")
-  sock â† TCP.connect(addr, 80)
+  addr ← DNS.resolve("api.example.com")
+  sock ← TCP.connect(addr, 80)
   sock.send("GET /data HTTP/1.1\r\nHost: api.example.com\r\n\r\n")
-  response â† sock.recv()
+  response ← sock.recv()
   PRINT response.body
   sock.close()
 
 SERVER:
-  sock â† TCP.bind(80)
+  sock ← TCP.bind(80)
   LOOP:
-    client â† sock.accept()
-    request â† client.recv()
+    client ← sock.accept()
+    request ← client.recv()
     IF request contains "GET /data":
       client.send("HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n{\"key\":\"value\"}")
     ELSE:
@@ -109,20 +109,20 @@ SERVER:
 **Pseudocode → P2P Download:**
 ```
 CLIENT:
-  peers â† TRACKER.get_peers(info_hash)
+  peers ← TRACKER.get_peers(info_hash)
   FOR each peer IN peers:
-    sock â† TCP.connect(peer.ip, peer.port)
+    sock ← TCP.connect(peer.ip, peer.port)
     sock.send(REQUEST_PIECE(piece_index))
-    data â† sock.recv()
+    data ← sock.recv()
     FILE.write_at(piece_index, data)
     REPORT_Have(piece_index, tracker)
   IF all pieces assembled:
     FILE.assemble()
 
 TRACKER:
-  peers â† {}
+  peers ← {}
   LOOP:
-    msg â† sock.recv()
+    msg ← sock.recv()
     IF msg IS REGISTER:
       peers.add(msg.ip, msg.port, msg.file)
     IF msg IS QUERY:
@@ -218,14 +218,14 @@ HTTP is the foundation of data communication on the Web. It is a stateless, appl
 **Pseudocode → HTTP Client:**
 ```
 FUNCTION http_get(url):
-  host, path â† PARSE_URL(url)
-  ip â† DNS.resolve(host)
-  sock â† TCP.connect(ip, 80)
+  host, path ← PARSE_URL(url)
+  ip ← DNS.resolve(host)
+  sock ← TCP.connect(ip, 80)
   request = "GET " + path + " HTTP/1.1\r\n"
   request += "Host: " + host + "\r\n"
   request += "Connection: close\r\n\r\n"
   sock.send(request)
-  response â† ""
+  response ← ""
   WHILE sock.has_data():
     response += sock.recv(4096)
   sock.close()
@@ -235,12 +235,12 @@ FUNCTION http_get(url):
 **Pseudocode → HTTP Server:**
 ```
 FUNCTION http_server(port):
-  server â† TCP.bind(port)
+  server ← TCP.bind(port)
   LOOP:
-    client â† server.accept()
-    request â† client.recv(8192)
-    method, path, version â† PARSE_REQUEST_LINE(request)
-    headers â† PARSE_HEADERS(request)
+    client ← server.accept()
+    request ← client.recv(8192)
+    method, path, version ← PARSE_REQUEST_LINE(request)
+    headers ← PARSE_HEADERS(request)
     IF path == "/":
       body = "<h1>Hello World</h1>"
       status = "200 OK"
@@ -492,16 +492,16 @@ if __name__ == "__main__":
 **Pseudocode → HTTP/2 Stream Multiplexing:**
 ```
 CLIENT:
-  sock â† TLS.connect(host, 443, alpn="h2")
+  sock ← TLS.connect(host, 443, alpn="h2")
   sock.send(CONNECTION_PREFACE)
   sock.send(SETTINGS(max_streams=100, initial_window=65535))
-  stream_id â† 1
+  stream_id ← 1
   FOR each resource IN resources:
     stream_id += 2
     sock.send(HEADERS(stream_id, END_HEADERS, ":method=GET", ":path=" + resource))
-  responses â† {}
+  responses ← {}
   LOOP:
-    frame â† sock.recv_frame()
+    frame ← sock.recv_frame()
     IF frame.type == HEADERS:
       responses[frame.stream_id].headers = frame.headers
     IF frame.type == DATA:
@@ -819,21 +819,21 @@ DNS is a hierarchical, distributed database that maps domain names to IP address
 **Name Space Hierarchy:**
 ```
 Root (.)
-â”œâ”€â”€ .com
-â”‚   â”œâ”€â”€ example.com
-â”‚   â”‚   â”œâ”€â”€ www.example.com (A: 93.184.216.34)
-â”‚   â”‚   â””â”€â”€ mail.example.com (MX: 10 mail.example.com)
-â”‚   â”œâ”€â”€ google.com
-â”‚   â””â”€â”€ amazon.com
-â”œâ”€â”€ .org
-â”‚   â”œâ”€â”€ wikipedia.org
-â”‚   â””â”€â”€ ...
-â”œâ”€â”€ .net
-â”œâ”€â”€ .edu
-â”œâ”€â”€ .uk (ccTLD)
-â”‚   â”œâ”€â”€ co.uk
-â”‚   â””â”€â”€ ac.uk
-â””â”€â”€ ... (1500+ TLDs)
+├── .com
+│   ├── example.com
+│   │   ├── www.example.com (A: 93.184.216.34)
+│   │   └── mail.example.com (MX: 10 mail.example.com)
+│   ├── google.com
+│   └── amazon.com
+├── .org
+│   ├── wikipedia.org
+│   └── ...
+├── .net
+├── .edu
+├── .uk (ccTLD)
+│   ├── co.uk
+│   └── ac.uk
+└── ... (1500+ TLDs)
 ```
 
 **Server Types:**
@@ -906,18 +906,18 @@ FUNCTION dns_resolve(domain, type="A"):
   IF cache[domain + type] exists AND TTL not expired:
     RETURN cache[domain + type]
 
-  ns â† root_servers
+  ns ← root_servers
   WHILE True:
-    response â† udp_query(ns, domain, type)
+    response ← udp_query(ns, domain, type)
     IF response.answer_count > 0:
-      record â† response.answers[0]
+      record ← response.answers[0]
       cache[domain + type] = (record.data, record.ttl)
       RETURN record.data
     IF response.authority_count > 0 AND response.additional_count > 0:
-      ns â† response.additional[0].data
+      ns ← response.additional[0].data
     ELSE:
-      ns_name â† response.authority[0].name
-      ns â† dns_resolve(ns_name, "A")
+      ns_name ← response.authority[0].name
+      ns ← dns_resolve(ns_name, "A")
 ```
 
 ### 10.3.3 DNS Security
@@ -1189,10 +1189,10 @@ User → MUA (Outlook) → MSA (Submission:587) → MTA (Relay) → MTA (Deliver
 **Pseudocode → SMTP Client:**
 ```
 FUNCTION send_email(sender, recipient, message, server, port=587):
-  sock â† TCP.connect(server, port)
-  greeting â† sock.recv()
+  sock ← TCP.connect(server, port)
+  greeting ← sock.recv()
   sock.send("EHLO " + my_hostname)
-  extensions â† sock.recv()
+  extensions ← sock.recv()
   IF AUTH required:
     sock.send("AUTH LOGIN")
     sock.recv()
@@ -1391,19 +1391,19 @@ S: +OK Bye
 **Pseudocode → POP3 Client:**
 ```
 FUNCTION pop3_retrieve(server, port, user, password):
-  sock â† TCP.connect(server, port)
+  sock ← TCP.connect(server, port)
   sock.recv()                          // +OK ready
   sock.send("USER " + user)
   sock.recv()                          // +OK
   sock.send("PASS " + password)
   sock.recv()                          // +OK
   sock.send("STAT")
-  response â† sock.recv()               // +OK count size
+  response ← sock.recv()               // +OK count size
   sock.send("LIST")
   sock.recv()                          // message list
   FOR each message:
     sock.send("RETR " + msg_id)
-    data â† sock.recv_until(".\r\n")
+    data ← sock.recv_until(".\r\n")
     messages.append(data)
   sock.send("QUIT")
   sock.close()
@@ -1448,14 +1448,14 @@ S: a005 OK LOGOUT completed
 **Pseudocode → IMAP Client:**
 ```
 FUNCTION imap_fetch_inbox(server, port, user, password):
-  sock â† TCP.connect(server, port)
+  sock ← TCP.connect(server, port)
   sock.recv()                          // * OK ready
   sock.send("a001 LOGIN " + user + " " + password)
   sock.recv()                          // a001 OK
   sock.send("a002 SELECT INBOX")
   sock.recv()                          // * EXISTS, a002 OK
   sock.send("a003 FETCH 1:* (BODY[HEADER.FIELDS (SUBJECT FROM)])")
-  summaries â† sock.recv()              // message summaries
+  summaries ← sock.recv()              // message summaries
   sock.send("a004 LOGOUT")
   sock.close()
   RETURN summaries
@@ -1574,22 +1574,22 @@ FTP (RFC 959) uses two separate connections:
 **Pseudocode → FTP Client (Passive Mode):**
 ```
 FUNCTION ftp_get(host, user, password, remote_file, local_path):
-  ctrl â† TCP.connect(host, 21)
+  ctrl ← TCP.connect(host, 21)
   ctrl.recv()
   ctrl.send("USER " + user)
   ctrl.recv()
   ctrl.send("PASS " + password)
   ctrl.recv()
   ctrl.send("PASV")
-  response â† ctrl.recv()
-  ip, port â† PARSE_PASV(response)
-  data â† TCP.connect(ip, port)
+  response ← ctrl.recv()
+  ip, port ← PARSE_PASV(response)
+  data ← TCP.connect(ip, port)
   ctrl.send("TYPE I")
   ctrl.recv()
   ctrl.send("RETR " + remote_file)
-  file â† OPEN(local_path, "wb")
+  file ← OPEN(local_path, "wb")
   WHILE data.has_data():
-    chunk â† data.recv(8192)
+    chunk ← data.recv(8192)
     file.write(chunk)
   file.close()
   data.close()
@@ -1821,21 +1821,21 @@ if __name__ == "__main__":
 **Pseudocode → SSH Connection:**
 ```
 FUNCTION ssh_connect(host, user, password):
-  sock â† TCP.connect(host, 22)
+  sock ← TCP.connect(host, 22)
   sock.recv()                               // SSH-2.0-...
   sock.send("SSH-2.0-Client")
   // Key exchange (Diffie-Hellman)
-  shared_secret â† dh_key_exchange(sock)
+  shared_secret ← dh_key_exchange(sock)
   // Server authentication → verify host key
   IF !verify_host_key(sock): RETURN ERROR
   // Client authentication
   sock.send(AUTH_REQUEST(user, password))
-  response â† sock.recv()
+  response ← sock.recv()
   IF response != AUTH_SUCCESS: RETURN ERROR
   // Open session channel
   sock.send(CHANNEL_OPEN("session"))
   sock.send(EXEC("ls -la"))
-  output â† sock.recv_all()
+  output ← sock.recv_all()
   sock.close()
   RETURN output
 ```
@@ -2014,25 +2014,25 @@ if __name__ == "__main__":
 **Pseudocode → DHCP Client:**
 ```
 FUNCTION dhcp_acquire():
-  sock â† UDP.bind(0.0.0.0, 68)
+  sock ← UDP.bind(0.0.0.0, 68)
   sock.set_broadcast(True)
 
-  discover â† BUILD_MSG(OP=1, HTYPE=1, HLEN=6, XID=random, CHADDR=my_mac)
+  discover ← BUILD_MSG(OP=1, HTYPE=1, HLEN=6, XID=random, CHADDR=my_mac)
   discover.options = [DHCP_DISCOVER, PARAM_REQUEST_LIST]
   sock.sendto(discover, "255.255.255.255", 67)
   TIMEOUT = 4, RETRIES = 0
 
   WHILE True:
     IF sock.poll(TIMEOUT):
-      msg â† sock.recv()
+      msg ← sock.recv()
       IF msg.options contains DHCP_OFFER:
         offered_ip = msg.yiaddr
-        request â† BUILD_MSG(OP=1, XID=new_random, CHADDR=my_mac)
+        request ← BUILD_MSG(OP=1, XID=new_random, CHADDR=my_mac)
         request.options = [DHCP_REQUEST, REQUESTED_IP=offered_ip]
         sock.sendto(request, "255.255.255.255", 67)
 
         IF sock.poll(TIMEOUT):
-          ack â† sock.recv()
+          ack ← sock.recv()
           IF ack.options contains DHCP_ACK:
             CONFIGURE_INTERFACE(ack.yiaddr, ack.options[SUBNET_MASK],
                               ack.options[ROUTER], ack.options[DNS])
@@ -2183,21 +2183,21 @@ if __name__ == "__main__":
 **Pseudocode → SNMP Manager Polling:**
 ```
 FUNCTION snmp_get(host, community, oid):
-  request â† BUILD_GET_REQUEST(community=community, oid=oid, request_id=random)
-  sock â† UDP.sendto(request, host, 161)
-  response â† sock.recv(8192)
-  value â† PARSE_RESPONSE(response)
+  request ← BUILD_GET_REQUEST(community=community, oid=oid, request_id=random)
+  sock ← UDP.sendto(request, host, 161)
+  response ← sock.recv(8192)
+  value ← PARSE_RESPONSE(response)
   RETURN value
 
 FUNCTION snmp_walk(host, community, base_oid):
-  results â† []
-  current_oid â† base_oid
+  results ← []
+  current_oid ← base_oid
   WHILE True:
-    response â† snmp_getnext(host, community, current_oid)
+    response ← snmp_getnext(host, community, current_oid)
     IF response.oid does not start with base_oid:
       BREAK
     results.append((response.oid, response.value))
-    current_oid â† response.oid
+    current_oid ← response.oid
   RETURN results
 ```
 
@@ -2675,19 +2675,19 @@ int main() {
 
 ```
 HTTP/1.1 Pipelining:
-  Req A â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ WAIT â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ Resp A â–ˆâ–ˆ
-  Req B â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆWAIT â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ Resp B
-                    â†‘ Resp A blocked by B's request processing
+  Req A ████████ WAIT ██████████████ Resp A ██
+  Req B ──────────────████████████WAIT ██████████ Resp B
+                    ↑ Resp A blocked by B's request processing
 
 HTTP/2 (TCP):
-  Stream A: â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ Response A â–ˆâ–ˆâ–ˆâ–ˆ
-  Stream B: â–ˆâ–ˆâ–ˆâ–ˆ Response B â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ
-                    â†‘ TCP packet loss blocks BOTH streams
+  Stream A: ████████████████ Response A ████
+  Stream B: ████ Response B ████████████████
+                    ↑ TCP packet loss blocks BOTH streams
 
 HTTP/3 (QUIC):
-  Stream A: â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ Response A â–ˆâ–ˆâ–ˆâ–ˆ
-  Stream B: â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ
-                    â†‘ Loss on Stream A doesn't affect Stream B
+  Stream A: ████████████████ Response A ████
+  Stream B: ██████████████████████████████████████
+                    ↑ Loss on Stream A doesn't affect Stream B
 ```
 
 ---
@@ -2901,9 +2901,9 @@ Chrome was the first major browser to enable HTTP/3 by default (2020). Implement
 **Postfix architecture:**
 ```
 Sendmail (MUA)
-  â†“
+  ↓
 pickup → cleanup → qmgr → smtp → Network
-         â†‘              â†“
+         ↑              ↓
      trivial-rewrite   bounce/defer
 ```
 

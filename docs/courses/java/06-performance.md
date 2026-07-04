@@ -980,7 +980,7 @@ Manual thread dump analysis is tedious. Online analyzers parse and summarize dum
 //
 // THREAD COUNT BY STATE:
 //   RUNNABLE:      23
-//   BLOCKED:        4   â† high contention!
+//   BLOCKED:        4   ← high contention!
 //   WAITING:        7
 //   TIMED_WAITING:  3
 //
@@ -1093,13 +1093,13 @@ A sample GC log entry (G1GC):
 // What GCeasy reports for the GC log above:
 
 // KEY METRICS
-// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─────────────────────────────────────────
 // Total Pause Time:           3.42 sec
 // Avg Pause Time:             85.5 ms
-// Max Pause Time:             420 ms     â† spike!
+// Max Pause Time:             420 ms     ← spike!
 // Throughput:                 98.3%
 // GC Count:                   40
-// Allocation Rate:            245 MB/sec â† high
+// Allocation Rate:            245 MB/sec ← high
 // Promotion Rate:             12 MB/sec
 // Avg Live Heap After GC:     85 MB
 // Survivor Ratio:             6.25%
@@ -1112,9 +1112,9 @@ A sample GC log entry (G1GC):
 //   - Consider ZGC if pause times must stay < 10ms
 
 // KEY GC PHASES PAUSE BREAKDOWN:
-//   1. Object Copy:    55.7 ms (65%)  â† moving objects between regions
-//   2. Update RS:      12.4 ms (15%)  â† updating remembered sets
-//   3. Scan RS:         8.1 ms (9%)   â† scanning remembered sets
+//   1. Object Copy:    55.7 ms (65%)  ← moving objects between regions
+//   2. Update RS:      12.4 ms (15%)  ← updating remembered sets
+//   3. Scan RS:         8.1 ms (9%)   ← scanning remembered sets
 //   4. Ext Root Scanning: 3.2 ms (4%)
 //   5. Termination:     4.8 ms (6%)
 ```

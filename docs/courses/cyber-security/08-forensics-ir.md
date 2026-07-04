@@ -398,10 +398,10 @@ Chain of custody (CoC) is a formal document that tracks the seizure, custody, co
 ### Sample Chain of Custody Form (Text Format)
 
 ```
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘              CHAIN OF CUSTODY FORM                          â•‘
-â•‘              Case #: IR-2024-001                            â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔══════════════════════════════════════════════════════════════╗
+║              CHAIN OF CUSTODY FORM                          ║
+║              Case #: IR-2024-001                            ║
+╚══════════════════════════════════════════════════════════════╝
 
 ITEM DESCRIPTION:
 -----------------
@@ -1380,9 +1380,9 @@ tshark -r capture.pcap -z follow,tcp,raw,45 -q | tail -n +6 | xxd -r -p > extrac
 tshark -r capture.pcap -T fields -e ip.dst -e tcp.dstport | sort | uniq -c | sort -rn
 
 # Example output:
-# 245 185.234.72.18 443   â† 245 connections to C2 server
-# 120 13.107.4.52   443   â† Windows Update (normal)
-# 89  8.8.8.8       53    â† DNS queries (normal)
+# 245 185.234.72.18 443   ← 245 connections to C2 server
+# 120 13.107.4.52   443   ← Windows Update (normal)
+# 89  8.8.8.8       53    ← DNS queries (normal)
 
 # Analyze connection timing (jitter analysis)
 tshark -r capture.pcap -Y "ip.dst == 185.234.72.18" -T fields -e frame.time_epoch > timestamps.txt
@@ -2878,117 +2878,117 @@ MFTECmd.exe -f "C:\evidence\$MFT" --csv "C:\evidence\mft_output.csv" --fn "beaco
 **Ransomware Playbook:**
 
 ```
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘          RANSOMWARE INCIDENT RESPONSE PLAYBOOK            â•‘
-â•‘                Version 1.0 | IR-PB-001                    â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔════════════════════════════════════════════════════════════╗
+║          RANSOMWARE INCIDENT RESPONSE PLAYBOOK            ║
+║                Version 1.0 | IR-PB-001                    ║
+╚════════════════════════════════════════════════════════════╝
 
 1. DETECTION
-   â–¡ Alert: Files being renamed to .encrypted, .locked, .crypted
-   â–¡ Alert: Ransom note files (README.txt, HOW_TO_RECOVER.txt)
-   â–¡ Alert: Mass file modification events (Sysmon ID 11)
-   â–¡ Alert: User reporting "files won't open"
+   □ Alert: Files being renamed to .encrypted, .locked, .crypted
+   □ Alert: Ransom note files (README.txt, HOW_TO_RECOVER.txt)
+   □ Alert: Mass file modification events (Sysmon ID 11)
+   □ Alert: User reporting "files won't open"
 
 2. TRIAGE (within 5 minutes)
-   â–¡ Confirm ransomware variant (note text, extension)
-   â–¡ Identify affected systems count
-   â–¡ Check if encryption is still in progress
-   â–¡ Check if backups are affected
-   â–¡ Determine data criticality
+   □ Confirm ransomware variant (note text, extension)
+   □ Identify affected systems count
+   □ Check if encryption is still in progress
+   □ Check if backups are affected
+   □ Determine data criticality
 
 3. CONTAINMENT (within 15 minutes)
-   â–¡ Isolate affected systems from network (pull cable, disable NIC)
-   â–¡ Disable Active Directory accounts of affected users
-   â–¡ Block ransomware C2 IPs at firewall
-   â–¡ If ransomware is spreading via SMB: block SMB at switches
-   â–¡ Disable any network shares that may propagate
-   â–¡ Capture memory dumps from affected systems
-   â–¡ Image affected hard drives (before reboot)
+   □ Isolate affected systems from network (pull cable, disable NIC)
+   □ Disable Active Directory accounts of affected users
+   □ Block ransomware C2 IPs at firewall
+   □ If ransomware is spreading via SMB: block SMB at switches
+   □ Disable any network shares that may propagate
+   □ Capture memory dumps from affected systems
+   □ Image affected hard drives (before reboot)
 
 4. ERADICATION (within 1 hour)
-   â–¡ Identify patient-zero system
-   â–¡ Determine infection vector (phish, RDP, VPN, etc.)
-   â–¡ Remove ransomware from systems (safe mode scan, removal tool)
-   â–¡ Or reimage affected systems from known-clean image
-   â–¡ Change all domain passwords
-   â–¡ Rotate all service account credentials
-   â–¡ Apply necessary patches
+   □ Identify patient-zero system
+   □ Determine infection vector (phish, RDP, VPN, etc.)
+   □ Remove ransomware from systems (safe mode scan, removal tool)
+   □ Or reimage affected systems from known-clean image
+   □ Change all domain passwords
+   □ Rotate all service account credentials
+   □ Apply necessary patches
 
 5. RECOVERY (within 24 hours)
-   â–¡ Validate clean backups exist (not encrypted)
-   â–¡ Restore critical systems from backup first
-   â–¡ Scan restored files for malware before reconnecting
-   â–¡ Restore less critical systems in phases
-   â–¡ Monitor restored systems for signs of re-infection
+   □ Validate clean backups exist (not encrypted)
+   □ Restore critical systems from backup first
+   □ Scan restored files for malware before reconnecting
+   □ Restore less critical systems in phases
+   □ Monitor restored systems for signs of re-infection
 
 6. POST-INCIDENT (within 1 week)
-   â–¡ Conduct root cause analysis
-   â–¡ Update detection rules (YARA, SIEM)
-   â–¡ Improve email filtering and web filtering
-   â–¡ Implement AppLocker/Software Restriction Policies
-   â–¡ Update backup strategy (immutable backups)
+   □ Conduct root cause analysis
+   □ Update detection rules (YARA, SIEM)
+   □ Improve email filtering and web filtering
+   □ Implement AppLocker/Software Restriction Policies
+   □ Update backup strategy (immutable backups)
 
 SEVERITY: 
-   â–¡ 1 system affected → P3
-   â–¡ 2-10 systems affected → P2
-   â–¡ 10+ systems or critical server → P1
-   â–¡ Data exfiltration detected → P1 + Legal
+   □ 1 system affected → P3
+   □ 2-10 systems affected → P2
+   □ 10+ systems or critical server → P1
+   □ Data exfiltration detected → P1 + Legal
 
 DECISION POINTS:
-   â–¡ Pay ransom? Yes / No (needs CEO + Board + Legal)
-   â–¡ Contact law enforcement? Yes / No
-   â–¡ Public disclosure? Yes / No
+   □ Pay ransom? Yes / No (needs CEO + Board + Legal)
+   □ Contact law enforcement? Yes / No
+   □ Public disclosure? Yes / No
 ```
 
 **Phishing Incident Playbook:**
 
 ```
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘         PHISHING INCIDENT RESPONSE PLAYBOOK               â•‘
-â•‘                Version 1.0 | IR-PB-002                    â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔════════════════════════════════════════════════════════════╗
+║         PHISHING INCIDENT RESPONSE PLAYBOOK               ║
+║                Version 1.0 | IR-PB-002                    ║
+╚════════════════════════════════════════════════════════════╝
 
 1. USER REPORTING
-   â–¡ User reports suspicious email to security@company.com
-   â–¡ User forwards email to phishing mailbox
-   â–¡ User reports via PhishAlarm button
+   □ User reports suspicious email to security@company.com
+   □ User forwards email to phishing mailbox
+   □ User reports via PhishAlarm button
 
 2. TRIAGE (within 5 minutes)
-   â–¡ Extract email headers (Received, SPF, DKIM, DMARC)
-   â–¡ Identify links and attachments in email
-   â–¡ Extract sender domain and IP
-   â–¡ Check if similar phishes reported by others
-   â–¡ Determine phishing type (credential, malware, BEC)
+   □ Extract email headers (Received, SPF, DKIM, DMARC)
+   □ Identify links and attachments in email
+   □ Extract sender domain and IP
+   □ Check if similar phishes reported by others
+   □ Determine phishing type (credential, malware, BEC)
 
 3. ANALYSIS (within 15 minutes)
-   â–¡ Submit URL to URL scanner (VirusTotal, urlscan.io)
-   â–¡ Submit attachment to sandbox (any.run, Joe Sandbox)
-   â–¡ Analyze email headers for spoofing indicators
-   â–¡ Check if any user clicked the link
-   â–¡ Check if any user entered credentials
+   □ Submit URL to URL scanner (VirusTotal, urlscan.io)
+   □ Submit attachment to sandbox (any.run, Joe Sandbox)
+   □ Analyze email headers for spoofing indicators
+   □ Check if any user clicked the link
+   □ Check if any user entered credentials
 
 4. CONTAINMENT (within 15 minutes if users compromised)
-   â–¡ If credentials stolen: force password reset for all recipients
-   â–¡ Enable MFA if not already enabled
-   â–¡ Remove malicious emails from all inboxes:
+   □ If credentials stolen: force password reset for all recipients
+   □ Enable MFA if not already enabled
+   □ Remove malicious emails from all inboxes:
      Get-ComplianceSearch -Name "Phish-Removal" | 
        New-ComplianceSearchAction -Purge -PurgeType HardDelete
-   â–¡ Block sender domain at email gateway
-   â–¡ Block malicious URLs at web proxy
+   □ Block sender domain at email gateway
+   □ Block malicious URLs at web proxy
 
 5. ERADICATION
-   â–¡ If malware: scan affected endpoints
-   â–¡ If credential phishing: verify no other accounts compromised
-   â–¡ Check for mailbox rules created by attacker (forwarding)
+   □ If malware: scan affected endpoints
+   □ If credential phishing: verify no other accounts compromised
+   □ Check for mailbox rules created by attacker (forwarding)
 
 6. RECOVERY
-   â–¡ Remove blocked sender after threat expired
-   â–¡ Restore any deleted legitimate emails caught in purge
+   □ Remove blocked sender after threat expired
+   □ Restore any deleted legitimate emails caught in purge
 
 7. POST-INCIDENT
-   â–¡ Add email template to phishing training
-   â–¡ Update email gateway rules
-   â–¡ Brief users on this specific phish
+   □ Add email template to phishing training
+   □ Update email gateway rules
+   □ Brief users on this specific phish
 ```
 
 ### 10.9 Incident Severity Classification
@@ -3140,14 +3140,14 @@ tsk_recover -o 2048 -e /evidence/case-001/hr-01.dd /evidence/case-001/recovered/
 # 2. Create New Case → Case Name: IR-2024-001
 # 3. Add Data Source → Disk Image → hr-01.dd
 # 4. Select ingest modules:
-#    â–¡ Recent Activity
-#    â–¡ Hash Lookup (NSRL)
-#    â–¡ File Type Identification
-#    â–¡ Extension Mismatch Detection
+#    □ Recent Activity
+#    □ Hash Lookup (NSRL)
+#    □ File Type Identification
+#    □ Extension Mismatch Detection
 #    â˜‘ Email Parser
 #    â˜‘ Interesting Files Identifier
-#    â–¡ Keyword Search (add: "password", "admin", "185.234.72")
-#    â–¡ Timeline
+#    □ Keyword Search (add: "password", "admin", "185.234.72")
+#    □ Timeline
 # 5. Run Ingest (may take 30-60 min for 500 GB)
 # 6. Results view:
 #    - Deleted Files → recovered beacon.dll, update_service.exe
@@ -3263,9 +3263,9 @@ tshark -r evidence/capture.pcap -z io,phs -q
 tshark -r evidence/capture.pcap -T fields -e ip.src -e ip.dst | sort | uniq -c | sort -rn | head -20
 
 # Output:
-# 245000 192.168.1.105,185.234.72.18  â† heavy traffic to C2
-# 120000 192.168.1.105,13.107.4.52    â† Windows Update
-# 89000  192.168.1.105,192.168.1.50   â† Internal server (lateral movement)
+# 245000 192.168.1.105,185.234.72.18  ← heavy traffic to C2
+# 120000 192.168.1.105,13.107.4.52    ← Windows Update
+# 89000  192.168.1.105,192.168.1.50   ← Internal server (lateral movement)
 
 # Step 3: Extract HTTP objects (files transferred over HTTP)
 tshark -r evidence/capture.pcap --export-objects http,/evidence/extracted_http/
@@ -3874,26 +3874,26 @@ Lessons Learned (industry-transforming):
 A typical enterprise SOC integrates multiple tools and processes for forensics and IR:
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                      SIEM (Splunk/ELK/Sentinel)              â”‚
-â”‚  Log Aggregation → Correlation → Alerting → Dashboard       â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚                    SOAR (XSOAR/Splunk SOAR)                  â”‚
-â”‚  Alert Enrichment → Playbook Execution → Ticket Creation    â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚   EDR/XDR (CrowdStrike/SentinelOne) â”‚ NDR (Darktrace/Zeek)  â”‚
-â”‚   Endpoint Detection & Response     â”‚ Network Detection     â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚                   Forensics Workbench                        â”‚
-â”‚   Memory Analysis    â”‚  Disk Analysis   â”‚  Timeline          â”‚
-â”‚   Volatility + rekallâ”‚  Autopsy/EnCase  â”‚  Plaso/Timesketch  â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚               Threat Intelligence Platform                   â”‚
-â”‚  MISP → IOC feeds → IOCs pushed to SIEM + EDR               â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚               Incident Response Platform                     â”‚
-â”‚  TheHive/Cortex → Case Management → Playbook Automation     â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────────────┐
+│                      SIEM (Splunk/ELK/Sentinel)              │
+│  Log Aggregation → Correlation → Alerting → Dashboard       │
+├─────────────────────────────────────────────────────────────┤
+│                    SOAR (XSOAR/Splunk SOAR)                  │
+│  Alert Enrichment → Playbook Execution → Ticket Creation    │
+├─────────────────────────────────────────────────────────────┤
+│   EDR/XDR (CrowdStrike/SentinelOne) │ NDR (Darktrace/Zeek)  │
+│   Endpoint Detection & Response     │ Network Detection     │
+├─────────────────────────────────────────────────────────────┤
+│                   Forensics Workbench                        │
+│   Memory Analysis    │  Disk Analysis   │  Timeline          │
+│   Volatility + rekall│  Autopsy/EnCase  │  Plaso/Timesketch  │
+├─────────────────────────────────────────────────────────────┤
+│               Threat Intelligence Platform                   │
+│  MISP → IOC feeds → IOCs pushed to SIEM + EDR               │
+├─────────────────────────────────────────────────────────────┤
+│               Incident Response Platform                     │
+│  TheHive/Cortex → Case Management → Playbook Automation     │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ### Forensics in Cloud-Native Environments

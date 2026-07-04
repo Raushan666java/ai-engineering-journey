@@ -63,9 +63,9 @@ WebFlux uses an event-loop threading model. For N CPU cores, Netty creates 2N ev
 
 ```
 Request → EventLoop → Controller → Service → Repository
-           â†“               â†“           â†“           â†“
+           ↓               ↓           ↓           ↓
         non-blocking   non-blocking  non-blocking  non-blocking
-                             â†“
+                             ↓
                     Never block an event-loop thread!
 ```
 

@@ -32,7 +32,7 @@ flowchart LR
 Microservice architecture decomposes an application into small, independently deployable services that each own a specific business capability. A monolithic architecture packages all functionality into a single deployable unit.
 
 ```java
-// â”€â”€ Monolithic: everything in one service â”€â”€
+// ── Monolithic: everything in one service ──
 @RestController
 @RequestMapping("/api")
 public class MonolithController {
@@ -42,7 +42,7 @@ public class MonolithController {
     @Autowired private NotificationService notificationService;
 }
 
-// â”€â”€ Microservice: separate services, each with its own API â”€â”€
+// ── Microservice: separate services, each with its own API ──
 // Service 1: user-service
 @SpringBootApplication
 @EnableEurekaClient
@@ -93,7 +93,7 @@ Start monolithic. Split into microservices only when you need independent scalin
 Decomposition follows Domain-Driven Design → identify bounded contexts and aggregate boundaries. Use the Strangler Fig pattern to migrate incrementally.
 
 ```java
-// â”€â”€ Phase 1: Identify bounded contexts through domain analysis â”€â”€
+// ── Phase 1: Identify bounded contexts through domain analysis ──
 // Original monolith entities often blur domain boundaries:
 @Entity
 public class User {
@@ -105,7 +105,7 @@ public class User {
     private List<Order> orders;         // belongs to order context
 }
 
-// â”€â”€ Phase 2: Extract the first bounded context â”€â”€
+// ── Phase 2: Extract the first bounded context ──
 // New user-service keeps only user data
 @Entity
 @Table(name = "users")
@@ -115,7 +115,7 @@ public class User {
     private String email;
 }
 
-// â”€â”€ Phase 3: Create API contract between services â”€â”€
+// ── Phase 3: Create API contract between services ──
 // user-service exposes what order-service needs via a client
 @FeignClient(name = "user-service")
 public interface UserServiceClient {
@@ -133,7 +133,7 @@ public class Order {
     private String status;
 }
 
-// â”€â”€ Phase 4: Strangler Fig → route traffic gradually â”€â”€
+// ── Phase 4: Strangler Fig → route traffic gradually ──
 // API gateway routes /users/* to user-service, /orders/* to order-service
 // Both services can still share the old database during migration
 @Bean
@@ -158,7 +158,7 @@ Extraction order: start with the bounded context that changes most frequently, h
 Synchronous (HTTP/gRPC) gives immediate responses but couples services in time. Asynchronous (messaging) decouples services but adds eventual consistency and complexity.
 
 ```java
-// â”€â”€ Synchronous: HTTP via Feign Client â”€â”€
+// ── Synchronous: HTTP via Feign Client ──
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
@@ -178,7 +178,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Asynchronous: Event-driven via Kafka â”€â”€
+// ── Asynchronous: Event-driven via Kafka ──
 @Service
 public class OrderEventProducer {
     @Autowired private KafkaTemplate<String, OrderEvent> kafka;
@@ -232,7 +232,7 @@ Use synchronous for reads and commands where immediate response is required. Use
 Spring Cloud Gateway provides routing, filtering, rate limiting, and cross-cutting concerns at a single entry point.
 
 ```java
-// â”€â”€ Main application â”€â”€
+// ── Main application ──
 @SpringBootApplication
 public class ApiGatewayApplication {
     public static void main(String[] args) {
@@ -240,7 +240,7 @@ public class ApiGatewayApplication {
     }
 }
 
-// â”€â”€ Route configuration with filters â”€â”€
+// ── Route configuration with filters ──
 @Configuration
 public class GatewayConfig {
 
@@ -269,14 +269,14 @@ public class GatewayConfig {
             .build();
     }
 
-    // â”€â”€ Redis-based rate limiter â”€â”€
+    // ── Redis-based rate limiter ──
     @Bean
     public RedisRateLimiter redisRateLimiter() {
         return new RedisRateLimiter(10, 20, 1);  // 10 requests/sec, burst 20
     }
 }
 
-// â”€â”€ Global filters (applied to every route) â”€â”€
+// ── Global filters (applied to every route) ──
 @Component
 public class GlobalLoggingFilter implements GlobalFilter, Ordered {
     @Override
@@ -292,7 +292,7 @@ public class GlobalLoggingFilter implements GlobalFilter, Ordered {
     }
 }
 
-// â”€â”€ Security: validate JWT at the gateway â”€â”€
+// ── Security: validate JWT at the gateway ──
 @Component
 public class JwtAuthFilter implements GatewayFilterFactory<Object> {
     @Override
@@ -325,7 +325,7 @@ API Gateway responsibilities: routing, authentication, rate limiting, request/re
 Service discovery lets services find each other without hardcoded URLs. Each service registers itself with Eureka on startup and sends heartbeats to maintain its lease.
 
 ```java
-// â”€â”€ Eureka Server (the registry) â”€â”€
+// ── Eureka Server (the registry) ──
 @SpringBootApplication
 @EnableEurekaServer
 public class EurekaServerApplication {
@@ -339,7 +339,7 @@ public class EurekaServerApplication {
 // eureka.client.register-with-eureka: false
 // eureka.client.fetch-registry: false
 
-// â”€â”€ Eureka Client (every microservice) â”€â”€
+// ── Eureka Client (every microservice) ──
 @SpringBootApplication
 @EnableEurekaClient
 public class OrderServiceApplication {
@@ -355,7 +355,7 @@ public class OrderServiceApplication {
 // eureka.instance.lease-renewal-interval-in-seconds: 10
 // eureka.instance.lease-expiration-duration-in-seconds: 30
 
-// â”€â”€ Using discovery to call another service â”€â”€
+// ── Using discovery to call another service ──
 @Service
 public class OrderService {
 
@@ -380,7 +380,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Load-balanced with @LoadBalanced â”€â”€
+// ── Load-balanced with @LoadBalanced ──
 @Configuration
 public class ClientConfig {
     @Bean
@@ -417,7 +417,7 @@ For production, run at least 2 Eureka servers in a multi-DC setup. Eureka is AP 
 Spring Cloud Config Server serves configuration from a Git backend. Config clients fetch their configuration on startup and can refresh it at runtime.
 
 ```java
-// â”€â”€ Config Server â”€â”€
+// ── Config Server ──
 @SpringBootApplication
 @EnableConfigServer
 public class ConfigServerApplication {
@@ -432,7 +432,7 @@ public class ConfigServerApplication {
 // spring.cloud.config.server.git.searchPaths: '{application}'
 // spring.cloud.config.server.git.default-label: main
 
-// â”€â”€ Git-backed config repository structure â”€â”€
+// ── Git-backed config repository structure ──
 // config-repo/
 //   order-service.yml          (shared for all profiles)
 //   order-service-dev.yml      (dev profile)
@@ -451,7 +451,7 @@ public class ConfigServerApplication {
 //   order-timeout: 30s
 //   max-batch-size: 100
 
-// â”€â”€ Config Client â”€â”€
+// ── Config Client ──
 @SpringBootApplication
 public class OrderServiceApplication {
     public static void main(String[] args) {
@@ -466,7 +466,7 @@ public class OrderServiceApplication {
 // spring.cloud.config.retry.initial-interval: 1000
 // spring.cloud.config.retry.max-attempts: 5
 
-// â”€â”€ Using config values â”€â”€
+// ── Using config values ──
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -485,7 +485,7 @@ public class OrderController {
     }
 }
 
-// â”€â”€ Trigger refresh â”€â”€
+// ── Trigger refresh ──
 @RestController
 public class ConfigRefreshController {
     @Autowired
@@ -499,7 +499,7 @@ public class ConfigRefreshController {
 // POST http://order-service/actuator/refresh
 // Response: ["order-service.discount-rate"]
 
-// â”€â”€ For automatic broadcast, use Spring Cloud Bus â”€â”€
+// ── For automatic broadcast, use Spring Cloud Bus ──
 // POST http://config-server/actuator/busrefresh/order-service:**
 // Broadcasts refresh to all instances of order-service via RabbitMQ
 ```
@@ -515,12 +515,12 @@ Config server enables centralized management, version history (through Git), and
 Distributed tracing traces a request across multiple microservices using trace IDs and span IDs. Spring Cloud Sleuth (now Micrometer Tracing) integrates with Zipkin for visualization.
 
 ```java
-// â”€â”€ Dependencies (Spring Boot 3.x) â”€â”€
+// ── Dependencies (Spring Boot 3.x) ──
 // implementation 'io.micrometer:micrometer-tracing-bridge-brave'
 // implementation 'io.zipkin.reporter2:zipkin-reporter-brave'
 // implementation 'io.micrometer:micrometer-tracing'
 
-// â”€â”€ Application configuration â”€â”€
+// ── Application configuration ──
 @SpringBootApplication
 public class OrderServiceApplication {
     public static void main(String[] args) {
@@ -534,7 +534,7 @@ public class OrderServiceApplication {
 // Actually with Micrometer Tracing:
 // management.zipkin.tracing.endpoint: http://localhost:9411/api/v2/spans
 
-// â”€â”€ Manual tracing in code â”€â”€
+// ── Manual tracing in code ──
 @Service
 public class OrderService {
 
@@ -564,7 +564,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Trace propagation via RestTemplate â”€â”€
+// ── Trace propagation via RestTemplate ──
 @Configuration
 public class TracingConfig {
     @Bean
@@ -577,11 +577,11 @@ public class TracingConfig {
     // No manual header propagation needed with brave instrumentation
 }
 
-// â”€â”€ View traces in Zipkin â”€â”€
+// ── View traces in Zipkin ──
 // docker run -d -p 9411:9411 openzipkin/zipkin
 // Then visit http://localhost:9411 → search by trace ID or service
 
-// â”€â”€ Tag annotation with @SpanTag â”€â”€
+// ── Tag annotation with @SpanTag ──
 @Component
 public class PaymentProcessor {
     @NewSpan(name = "process-payment")
@@ -606,9 +606,9 @@ With 100% sampling in dev (1.0) and 1-10% in prod, tracing adds negligible overh
 The Saga pattern manages distributed transactions across microservices by breaking them into a sequence of local transactions with compensating actions for rollback. Two implementations: choreography (each service emits/reacts to events) and orchestration (a coordinator drives the flow).
 
 ```java
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════════════════════════
 // CHOREOGRAPHY SAGA → services react to each other's events
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════════════════════════
 
 // Step 1: Order Service creates order and emits event
 @Service
@@ -681,9 +681,9 @@ public class PaymentSagaService {
     }
 }
 
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════════════════════════
 // ORCHESTRATION SAGA → a coordinator manages the flow
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════════════════════════
 
 // Saga Orchestrator
 @Component

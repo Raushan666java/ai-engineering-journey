@@ -983,21 +983,21 @@ A service is formally defined by a set of **primitives** (operations) that the l
 ```
 // Server side
 procedure server():
-    addr â† BIND(port=80)          // Reserve port
+    addr ← BIND(port=80)          // Reserve port
     LISTEN(addr)                   // Wait for client
-    conn â† ACCEPT()                // Accept connection
+    conn ← ACCEPT()                // Accept connection
     while TRUE:
-        data â† RECEIVE(conn)       // Receive data
+        data ← RECEIVE(conn)       // Receive data
         if data = EOF: break
         PROCESS(data)
     DISCONNECT(conn)
 
 // Client side
 procedure client():
-    addr â† RESOLVE("example.com")
-    conn â† CONNECT(addr, port=80)  // Three-way handshake
+    addr ← RESOLVE("example.com")
+    conn ← CONNECT(addr, port=80)  // Three-way handshake
     SEND(conn, "GET /index.html")
-    data â† RECEIVE(conn)
+    data ← RECEIVE(conn)
     DISCONNECT(conn)
 ```
 
@@ -1061,16 +1061,16 @@ procedure client():
 
 ```
 Application:  [GET /index.html]
-                                 â†“  â†“ (TCP adds header)
+                                 ↓  ↓ (TCP adds header)
 Transport:    [SrcPort:49152 | DstPort:80 | Seq:1000 | GET /index.html]
-                                 â†“  â†“ (IP adds header)
+                                 ↓  ↓ (IP adds header)
 Network:      [SrcIP:192.168.1.10 | DstIP:93.184.216.34 | Proto:6 | 
                 SrcPort:49152 | DstPort:80 | Seq:1000 | GET /index.html]
-                                 â†“  â†“ (Ethernet adds header + trailer)
+                                 ↓  ↓ (Ethernet adds header + trailer)
 Data Link:    [DstMAC:AA:BB:CC:DD:EE:FF | SrcMAC:11:22:33:44:55:66 | Type:0x0800 |
                 SrcIP:192.168.1.10 | DstIP:93.184.216.34 | Proto:6 |
                 SrcPort:49152 | DstPort:80 | Seq:1000 | GET /index.html | CRC32]
-                                 â†“  â†“ (bits on wire)
+                                 ↓  ↓ (bits on wire)
 Physical:     10110110 11010101 ...
 ```
 
@@ -1078,14 +1078,14 @@ Physical:     10110110 11010101 ...
 
 ```
 Physical:     10110110 11010101 ...
-                                 â†‘  â†‘ (NIC reconstructs frame)
+                                 ↑  ↑ (NIC reconstructs frame)
 Data Link:    [DstMAC:AA:BB:CC:DD:EE:FF | SrcMAC... | Type:0x0800 | ... | CRC32]
-                â†“  â†“ CRC verified OK, EtherType=0x0800 → pass to IP
+                ↓  ↓ CRC verified OK, EtherType=0x0800 → pass to IP
 Network:      [SrcIP:192.168.1.10 | DstIP:93.184.216.34 | Proto:6 | 
                 SrcPort:49152 | DstPort:80 | Seq:1000 | GET /index.html]
-                â†“  â†“ DstIP matches, Proto=6 → pass to TCP
+                ↓  ↓ DstIP matches, Proto=6 → pass to TCP
 Transport:    [SrcPort:49152 | DstPort:80 | Seq:1000 | GET /index.html]
-                â†“  â†“ Port 80 → deliver to listening web server
+                ↓  ↓ Port 80 → deliver to listening web server
 Application:  [GET /index.html]
 ```
 
@@ -1683,21 +1683,21 @@ A **protocol** is an agreed-upon format and sequence of messages between two ent
 
 ```
 Sender (multiplexing):            Receiver (demultiplexing):
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ App A (port) â”‚ App B (port)    â”‚ App A (port) â”‚ App B (port)
-â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜                 â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-       â”‚                                â”‚
-       â–¼                                â–²
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Transport   â”‚  â† demux →      â”‚  Transport   â”‚
-â”‚  (TCP/UDP)   â”‚                 â”‚  (TCP/UDP)   â”‚
-â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜                 â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-       â”‚                                â”‚
-       â–¼                                â–²
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Internet    â”‚  â† IP →         â”‚  Internet    â”‚
-â”‚  (IP/ICMP)   â”‚                 â”‚  (IP/ICMP)   â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────────┐                 ┌──────────────┐
+│ App A (port) │ App B (port)    │ App A (port) │ App B (port)
+└──────┬───────┘                 └──────┬───────┘
+       │                                │
+       ▼                                ▲
+┌──────────────┐                 ┌──────────────┐
+│  Transport   │  ← demux →      │  Transport   │
+│  (TCP/UDP)   │                 │  (TCP/UDP)   │
+└──────┬───────┘                 └──────┬───────┘
+       │                                │
+       ▼                                ▲
+┌──────────────┐                 ┌──────────────┐
+│  Internet    │  ← IP →         │  Internet    │
+│  (IP/ICMP)   │                 │  (IP/ICMP)   │
+└──────────────┘                 └──────────────┘
 ```
 
 ### 1.8.4 Protocol Classification
@@ -1715,18 +1715,18 @@ Sender (multiplexing):            Receiver (demultiplexing):
 ```
 PROCEDURE sendData(data, destIP, protocol):
     IF protocol = "HTTP":
-        request â† "GET " + data + " HTTP/1.1"
+        request ← "GET " + data + " HTTP/1.1"
         
     IF protocol = "TCP":
-        segment â† CREATE_TCP_SEGMENT(request, srcPort, dstPort)
+        segment ← CREATE_TCP_SEGMENT(request, srcPort, dstPort)
         // Add sequence number, checksum
         
     IF protocol = "IP":
-        packet â† CREATE_IP_PACKET(segment, srcIP, destIP, TTL=64)
+        packet ← CREATE_IP_PACKET(segment, srcIP, destIP, TTL=64)
         // Fragment if > MTU
         
     IF protocol = "Ethernet":
-        frame â† CREATE_ETHERNET_FRAME(packet, srcMAC, destMAC)
+        frame ← CREATE_ETHERNET_FRAME(packet, srcMAC, destMAC)
         // Append CRC
         
     TRANSMIT(frame, medium)

@@ -977,7 +977,7 @@ TLS (Transport Layer Security) operates at the transport layer between TCP and t
 | 6 | Both | -- | PMS = ECDHE(g^xy); MS = PRF(PMS, Rc, Rs); Keys = PRF(MS, "key expansion") |
 | 7 | C→S | ChangeCipherSpec, Finished (H(handshake_messages, keys)) | First msg with session keys |
 | 8 | S→C | ChangeCipherSpec, Finished | Verify integrity |
-| 9 | â†” | Application data encrypted with AES-128-GCM | Session keys |
+| 9 | ↔ | Application data encrypted with AES-128-GCM | Session keys |
 
 **Pseudocode: TLS client handshake.**
 

@@ -601,10 +601,10 @@ snort -T -c /etc/snort/snort.conf
 
 ```
 Do you need to block attacks in real time?
-â”œâ”€â”€ Yes → Can your rules handle false positives?
-â”‚   â”œâ”€â”€ Yes → Deploy IPS (inline)
-â”‚   â””â”€â”€ No → Deploy IDS first, tune rules, then IPS
-â””â”€â”€ No → Deploy IDS (passive monitoring)
+├── Yes → Can your rules handle false positives?
+│   ├── Yes → Deploy IPS (inline)
+│   └── No → Deploy IDS first, tune rules, then IPS
+└── No → Deploy IDS (passive monitoring)
 ```
 
 ### 3.6 HIDS vs NIDS
@@ -1250,7 +1250,7 @@ airodump-ng wlan0
 # Expected output:
 # BSSID              PWR  Beacons    #Data, CH  MB   ENC  CIPHER AUTH ESSID
 # 00:11:22:33:44:55 -45   120        532    6   54e  WPA2 CCMP   PSK   Corporate-WiFi
-# AA:BB:CC:DD:EE:FF -30  5          0      11  54e  WPA2 CCMP   PSK   !FREE_WIFI!   â† ROUGE (stronger signal, unknown ESSID)
+# AA:BB:CC:DD:EE:FF -30  5          0      11  54e  WPA2 CCMP   PSK   !FREE_WIFI!   ← ROUGE (stronger signal, unknown ESSID)
 # 66:77:88:99:AA:BB -65   45         0      1   54e  WPA2 CCMP   PSK   â‹¯
 
 # 2. Check for APs with same SSID but different BSSID (evil twin)
@@ -1502,7 +1502,7 @@ Always-on detection + on-demand mitigation:
 
 ```
 User → Device Check → Identity Authentication → Context Evaluation → App Access
-                        â†“                          â†“
+                        ↓                          ↓
                 (OS patch, disk encrypted)    (geo, time, data sensitivity)
 
 No VPN required:
@@ -2180,7 +2180,7 @@ sudo bettercap -eval "set arp.spoof.targets 192.168.1.100; arp.spoof on; net.sni
 # 1. Check ARP cache
 arp -a
 # Expected:
-# 192.168.1.1 at 00:11:22:33:44:55 [ether] on eth0  â† gateway MAC
+# 192.168.1.1 at 00:11:22:33:44:55 [ether] on eth0  ← gateway MAC
 # 
 # ARP spoofing indicator (two entries for same IP):
 # ? (192.168.1.1) at AA:BB:CC:DD:EE:FF on eth0
@@ -2347,7 +2347,7 @@ At edge:
 
 ```
 User → Device Check → Identity Provider → Context Policy → App Access
-   â†“                     â†“
+   ↓                     ↓
   Workspace ONE      Azure AD Conditional Access
   (device compliance) (MFA, risk score)
 
@@ -2531,10 +2531,10 @@ Linux netfilter provides five hook points in the kernel networking stack:
 
 ```
          LOCAL_IN → INPUT chain
-            â†‘
+            ↑
 [NF_INET_PRE_ROUTING] → FORWARD → [NF_INET_POST_ROUTING]
-            â†“                              â†‘
-           LOCAL_OUT â† OUTPUT chain
+            ↓                              ↑
+           LOCAL_OUT ← OUTPUT chain
 ```
 
 **Hook Points:**
@@ -2593,20 +2593,20 @@ struct nf_conn {
 
 ```
 Client (10.0.0.5:50000)          Server (93.184.216.34:80)
-         â”‚                              â”‚
-         â”‚ â”€â”€ SYN (seq=1000) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€→â”‚  NEW (timeout=120s)
-         â”‚                              â”‚
-         â”‚ â†â”€ SYN-ACK (seq=2000, ack=1001) â”€â”€â”€â”‚  ESTABLISHED (timeout=432000s)
-         â”‚                              â”‚
-         â”‚ â”€â”€ ACK (seq=1001, ack=2001) â”€→â”‚  ESTABLISHED, ASSURED
-         â”‚                              â”‚
-         â”‚ â”€â”€ HTTP GET / â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€→â”‚  ESTABLISHED
-         â”‚                              â”‚
-         â”‚ â†â”€ HTTP 200 OK (data) â”€â”€â”€â”€â”€â”€â”€â”‚  ESTABLISHED
-         â”‚                              â”‚
-         â”‚ â”€â”€ FIN (seq=2001) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€→â”‚  CLOSE_WAIT (timeout=120s)
-         â”‚ â†â”€ FIN-ACK â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”‚  LAST_ACK
-         â”‚ â”€â”€ ACK â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€→â”‚  TIME_WAIT (2MSL) → removed
+         │                              │
+         │ ── SYN (seq=1000) ──────────→│  NEW (timeout=120s)
+         │                              │
+         │ ←─ SYN-ACK (seq=2000, ack=1001) ───│  ESTABLISHED (timeout=432000s)
+         │                              │
+         │ ── ACK (seq=1001, ack=2001) ─→│  ESTABLISHED, ASSURED
+         │                              │
+         │ ── HTTP GET / ──────────────→│  ESTABLISHED
+         │                              │
+         │ ←─ HTTP 200 OK (data) ───────│  ESTABLISHED
+         │                              │
+         │ ── FIN (seq=2001) ──────────→│  CLOSE_WAIT (timeout=120s)
+         │ ←─ FIN-ACK ─────────────────│  LAST_ACK
+         │ ── ACK ─────────────────────→│  TIME_WAIT (2MSL) → removed
 ```
 
 ### 17.3 BPF-based Firewalls (eBPF/XDP)
@@ -2650,7 +2650,7 @@ Suricata uses a "runmode" packet processing pipeline:
 
 ```
 [Packet Capture] → [Decode] → [Stream TCP] → [Detect] → [Output]
-                                        â†‘
+                                        ↑
                                   [App Layer Parser]
                                   (HTTP, DNS, TLS, SMB, etc.)
 ```
@@ -2811,12 +2811,12 @@ PSKsecrets = /etc/stunnel/psk.txt
 
 ```
 Attacker (spoofs victim IP: 1.2.3.4)
-  â”‚
-  â”‚ DNS query ("ANY isc.org") with src=1.2.3.4
-  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€→ Open DNS Resolver
-  â”‚                       â†‘
-  â”‚ DNS response (~3500 bytes) to 1.2.3.4
-  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€→ Victim (1.2.3.4)
+  │
+  │ DNS query ("ANY isc.org") with src=1.2.3.4
+  ├────────────────────→ Open DNS Resolver
+  │                       ↑
+  │ DNS response (~3500 bytes) to 1.2.3.4
+  ├────────────────────→ Victim (1.2.3.4)
   
 Amplification factor: ~50x-70x
   Input:  60 bytes (DNS query)
@@ -2859,47 +2859,47 @@ sysctl -w net.ipv4.conf.default.rp_filter=1
 ### 21.1 802.1X Full Deployment Topology
 
 ```
-                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                 â”‚  FreeRADIUS  â”‚
-                 â”‚  (auth + acct)â”‚
-                 â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-                        â”‚ RADIUS (UDP 1812/1813)
-         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-         â”‚              â”‚              â”‚
-    â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”
-    â”‚  AP-01  â”‚   â”‚  AP-02  â”‚   â”‚  AP-03  â”‚
-    â”‚(Authz)  â”‚   â”‚(Authz)  â”‚   â”‚(Authz)  â”‚
-    â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜
-         â”‚              â”‚              â”‚
-    â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”
-    â”‚       802.1Q Trunk (VLAN pool)         â”‚
-    â”‚  VLAN 10=Corp, VLAN 20=Guest, VLAN 30=IoT â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                 ┌──────────────┐
+                 │  FreeRADIUS  │
+                 │  (auth + acct)│
+                 └──────┬───────┘
+                        │ RADIUS (UDP 1812/1813)
+         ┌──────────────┼──────────────┐
+         │              │              │
+    ┌────▼────┐   ┌────▼────┐   ┌────▼────┐
+    │  AP-01  │   │  AP-02  │   │  AP-03  │
+    │(Authz)  │   │(Authz)  │   │(Authz)  │
+    └────┬────┘   └────┬────┘   └────┬────┘
+         │              │              │
+    ┌────▼──────────────▼──────────────▼────┐
+    │       802.1Q Trunk (VLAN pool)         │
+    │  VLAN 10=Corp, VLAN 20=Guest, VLAN 30=IoT │
+    └────────────────────────────────────────┘
 ```
 
 **EAP-TLS Full Authentication Flow:**
 
 ```
 Supplicant                     AP (Authz)              RADIUS Server
-    â”‚                             â”‚                         â”‚
-    â”‚---- EAPOL-Start ----------→â”‚                         â”‚
-    â”‚â†--- EAP-Request/Identity ---â”‚                         â”‚
-    â”‚---- EAP-Response/Identity →â”‚---- RADIUS Access-Request (EAP-Response) →â”‚
-    â”‚                             â”‚                         â”‚
-    â”‚                             â”‚                         â”‚ RADIUS validates EAP type
-    â”‚                             â”‚                         â”‚
-    â”‚â†--- EAP-Request (EAP-TLS: Server Hello + Cert) ------â”‚
-    â”‚                             â”‚                         â”‚
-    â”‚---- EAP-Response (EAP-TLS: Client Cert, pre-master) →â”‚
-    â”‚                             â”‚                         â”‚ Validates client cert
-    â”‚                             â”‚                         â”‚ Computes master key
-    â”‚                             â”‚                         â”‚
-    â”‚â†--- EAP-Success + RADIUS Accept (session key) -------â”‚
-    â”‚                             â”‚                         â”‚
-    â”‚       4-Way Handshake (derived from MSK from RADIUS) â”‚
-    â”‚â†--- PTK derivation --------→â”‚                         â”‚
-    â”‚                             â”‚                         â”‚
-    â”‚       802.11 Data (encrypted with PTK)               â”‚
+    │                             │                         │
+    │---- EAPOL-Start ----------→│                         │
+    │←--- EAP-Request/Identity ---│                         │
+    │---- EAP-Response/Identity →│---- RADIUS Access-Request (EAP-Response) →│
+    │                             │                         │
+    │                             │                         │ RADIUS validates EAP type
+    │                             │                         │
+    │←--- EAP-Request (EAP-TLS: Server Hello + Cert) ------│
+    │                             │                         │
+    │---- EAP-Response (EAP-TLS: Client Cert, pre-master) →│
+    │                             │                         │ Validates client cert
+    │                             │                         │ Computes master key
+    │                             │                         │
+    │←--- EAP-Success + RADIUS Accept (session key) -------│
+    │                             │                         │
+    │       4-Way Handshake (derived from MSK from RADIUS) │
+    │←--- PTK derivation --------→│                         │
+    │                             │                         │
+    │       802.11 Data (encrypted with PTK)               │
 ```
 
 ### 21.2 RADIUS Server Logs
@@ -2918,7 +2918,7 @@ tail -f /var/log/freeradius/radius.log
 # (1) Sent Access-Accept Id 215 from 192.168.1.10:1812 to 192.168.1.30:54789
 # (1)   Tunnel-Type = VLAN
 # (1)   Tunnel-Medium-Type = IEEE-802
-# (1)   Tunnel-Private-Group-Id = "30"  â† assigned to IoT VLAN
+# (1)   Tunnel-Private-Group-Id = "30"  ← assigned to IoT VLAN
 ```
 
 ---
@@ -3142,21 +3142,21 @@ interface GigabitEthernet0/1
 
 ```
 [Network TAP / Mirror Port]
-        â”‚
-        â–¼
+        │
+        ▼
 [Packet Broker] (filter, aggregate, load balance)
-        â”‚
-        â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-        â–¼            â–¼            â–¼             â–¼
+        │
+        ├────────────┬────────────┬─────────────┐
+        ▼            ▼            ▼             ▼
 [Suricata IDS]  [Zeek NSM]   [tcpdump]    [NetFlow/IPFIX]
    (alerts)    (logs/events) (full PCAP)  (flow records)
-        â”‚            â”‚            â”‚             â”‚
-        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                        â”‚
-                        â–¼
+        │            │            │             │
+        └────────────┴────────────┴─────────────┘
+                        │
+                        ▼
           [Data Lake: Elasticsearch / S3]
-                        â”‚
-                        â–¼
+                        │
+                        ▼
           [Kibana / Grafana / Jupyter]
 ```
 
@@ -3210,13 +3210,13 @@ sudo so-pcap -d 'host 10.0.0.5 and port 443'
 Transport mode packet:
 ```
 [IP Header (original)] [ESP Header] [TCP Header] [Payload] [ESP Trailer] [Auth]
-                              â† encrypted →
+                              ← encrypted →
 ```
 
 Tunnel mode packet:
 ```
 [IP Header (new)] [ESP Header] [IP Header (original)] [TCP] [Payload] [ESP Trailer] [Auth]
-                                          â† encrypted →
+                                          ← encrypted →
 ```
 
 ### Q17: What is the difference between a reverse proxy and a forward proxy in network security?
@@ -3229,14 +3229,14 @@ Tunnel mode packet:
 
 ```
 Client                          Server
-  â”‚                                â”‚
-  â”‚â”€â”€ ClientHello (key_share) â”€â”€â”€â”€→â”‚
-  â”‚                                â”‚ Server derives session key
-  â”‚â†â”€ ServerHello + Cert + Finish â”€â”‚
-  â”‚ (server handshake encrypted)    â”‚
-  â”‚ Client derives session key      â”‚
-  â”‚â”€â”€ Client Finish (encrypted) â”€â”€→â”‚
-  â”‚â†â”€â”€ Application Data (HTTP/2) â”€â”€â”‚
+  │                                │
+  │── ClientHello (key_share) ────→│
+  │                                │ Server derives session key
+  │←─ ServerHello + Cert + Finish ─│
+  │ (server handshake encrypted)    │
+  │ Client derives session key      │
+  │── Client Finish (encrypted) ──→│
+  │←── Application Data (HTTP/2) ──│
 
 Total: 1 round trip (vs 2 in TLS 1.2)
 ```
@@ -3357,10 +3357,10 @@ Options (partial list):
 
 ```bash
 # Test lab architecture:
-# Kali (attacker) â”€â”€eth0â”€â”€ switch â”€â”€eth0â”€â”€ Ubuntu Server (target)
+# Kali (attacker) ──eth0── switch ──eth0── Ubuntu Server (target)
 # 192.168.1.100           |          192.168.1.1
 #                   eth0
-#                        â”€â”€ Internet (simulated via iptables NAT)
+#                        ── Internet (simulated via iptables NAT)
 
 # 1. Reconnaissance
 nmap -sS -sV -O -A 192.168.1.1

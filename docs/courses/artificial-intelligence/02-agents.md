@@ -72,14 +72,14 @@ An **agent** is anything that can be viewed as perceiving its **environment** th
 
 ```text
 FUNCTION Agent(percept):
-    agent_function â† MAP percept_sequence → action
+    agent_function ← MAP percept_sequence → action
     RETURN agent_function(percept)
 END FUNCTION
 
 MAIN LOOP:
     WHILE TRUE:
-        percept â† SENSE(environment)
-        action â† Agent(percept)
+        percept ← SENSE(environment)
+        action ← Agent(percept)
         EXECUTE(action, environment)
     END WHILE
 END MAIN LOOP
@@ -213,15 +213,15 @@ A **rational agent** is one that acts so as to achieve the best outcome or, when
 
 ```text
 FUNCTION RationalAgent(percept):
-    state â† UPDATE_STATE(state, action, percept, model)
-    best_action â† NULL
-    best_value â† -INFINITY
+    state ← UPDATE_STATE(state, action, percept, model)
+    best_action ← NULL
+    best_value ← -INFINITY
     FOR EACH possible_action IN ACTIONS(state):
-        predicted_state â† SIMULATE(state, possible_action, model)
-        expected_value â† EXPECTED_UTILITY(predicted_state, performance_measure)
+        predicted_state ← SIMULATE(state, possible_action, model)
+        expected_value ← EXPECTED_UTILITY(predicted_state, performance_measure)
         IF expected_value > best_value THEN:
-            best_value â† expected_value
-            best_action â† possible_action
+            best_value ← expected_value
+            best_action ← possible_action
     RETURN best_action
 END FUNCTION
 ```
@@ -342,11 +342,11 @@ To design an agent, we must specify the **PEAS** for the task environment:
 
 ```text
 FUNCTION DesignAgent(task_description):
-    PEAS â† {}
-    PEAS.performance â† IDENTIFY_PERFORMANCE_METRICS(task_description)
-    PEAS.environment â† IDENTIFY_ENVIRONMENT_ENTITIES(task_description)
-    PEAS.actuators â† IDENTIFY_ACTUATORS(task_description)
-    PEAS.sensors â† IDENTIFY_SENSORS(task_description)
+    PEAS ← {}
+    PEAS.performance ← IDENTIFY_PERFORMANCE_METRICS(task_description)
+    PEAS.environment ← IDENTIFY_ENVIRONMENT_ENTITIES(task_description)
+    PEAS.actuators ← IDENTIFY_ACTUATORS(task_description)
+    PEAS.sensors ← IDENTIFY_SENSORS(task_description)
     RETURN PEAS
 END FUNCTION
 
@@ -447,13 +447,13 @@ Environments are characterized by six key dimensions. Understanding these proper
 
 ```text
 FUNCTION ClassifyEnvironment(environment_description):
-    properties â† {}
-    properties.observability â† CHECK_IF_FULLY_OBSERVABLE(environment_description)
-    properties.determinism â† CHECK_IF_DETERMINISTIC(environment_description)
-    properties.episodicity â† CHECK_IF_EPISODIC(environment_description)
-    properties.dynamics â† CHECK_IF_STATIC(environment_description)
-    properties.discreteness â† CHECK_IF_DISCRETE(environment_description)
-    properties.agent_count â† COUNT_AGENTS(environment_description)
+    properties ← {}
+    properties.observability ← CHECK_IF_FULLY_OBSERVABLE(environment_description)
+    properties.determinism ← CHECK_IF_DETERMINISTIC(environment_description)
+    properties.episodicity ← CHECK_IF_EPISODIC(environment_description)
+    properties.dynamics ← CHECK_IF_STATIC(environment_description)
+    properties.discreteness ← CHECK_IF_DISCRETE(environment_description)
+    properties.agent_count ← COUNT_AGENTS(environment_description)
     RETURN properties
 END FUNCTION
 
@@ -693,9 +693,9 @@ Maintains an **internal state** that tracks the parts of the environment not vis
 
 ```text
 FUNCTION ModelBasedReflexAgent(percept):
-    state â† UPDATE_STATE(state, action, percept, model)
-    rule â† RULE_MATCH(state, condition_action_rules)
-    action â† rule.action
+    state ← UPDATE_STATE(state, action, percept, model)
+    rule ← RULE_MATCH(state, condition_action_rules)
+    action ← rule.action
     RETURN action
 END FUNCTION
 ```
@@ -800,13 +800,13 @@ Extends model-based agents by adding **goal information**. The agent considers f
 
 ```text
 FUNCTION GoalBasedAgent(percept):
-    state â† UPDATE_STATE(state, action, percept, model)
+    state ← UPDATE_STATE(state, action, percept, model)
     IF state == goal THEN:
         RETURN NoOp
-    goal_test â† IS_GOAL(state, goal)
+    goal_test ← IS_GOAL(state, goal)
     IF NOT goal_test:
-        actions â† SEARCH(state, model, goal)
-        action â† FIRST(actions)
+        actions ← SEARCH(state, model, goal)
+        action ← FIRST(actions)
     RETURN action
 END FUNCTION
 ```
@@ -925,16 +925,16 @@ Generalizes goal-based agents by using a **utility function** that maps a state 
 
 ```text
 FUNCTION UtilityBasedAgent(percept):
-    state â† UPDATE_STATE(state, action, percept, model)
-    actions â† GENERATE_ACTIONS(state)
-    best_utility â† -INFINITY
-    best_action â† NoOp
+    state ← UPDATE_STATE(state, action, percept, model)
+    actions ← GENERATE_ACTIONS(state)
+    best_utility ← -INFINITY
+    best_action ← NoOp
     FOR EACH action IN actions:
-        predicted_state â† PREDICT(state, action, model)
-        utility â† UTILITY(predicted_state)
+        predicted_state ← PREDICT(state, action, model)
+        utility ← UTILITY(predicted_state)
         IF utility > best_utility THEN:
-            best_utility â† utility
-            best_action â† action
+            best_utility ← utility
+            best_action ← action
     RETURN best_action
 END FUNCTION
 ```

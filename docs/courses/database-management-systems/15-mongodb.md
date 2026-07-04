@@ -1337,7 +1337,7 @@ db.orders.find(
     { customer_id: "user1" },
     { customer_id: 1, created_at: 1, _id: 0 }
 ).sort({ created_at: -1 })
-// "totalDocsExamined": 0  â† FETCH stage might be skipped!
+// "totalDocsExamined": 0  ← FETCH stage might be skipped!
 ```
 
 #### 15.4.4 Multikey Index
@@ -1360,8 +1360,8 @@ db.users.find({ interests: "hiking" })
 // B-tree lookup for "hiking" → finds RID1 (Alice), RID5 (Eve)
 
 // Compound multikey: only ONE field can be an array
-// OK: db.articles.createIndex({ author: 1, tags: 1 })  â† tags is array, author is not
-// Error: db.articles.createIndex({ tags: 1, categories: 1 })  â† both arrays
+// OK: db.articles.createIndex({ author: 1, tags: 1 })  ← tags is array, author is not
+// Error: db.articles.createIndex({ tags: 1, categories: 1 })  ← both arrays
 // "Cannot create index with parallel arrays [tags] [categories]"
 ```
 
@@ -1572,15 +1572,15 @@ Trace of B-tree traversal (conceptual):
 Index entries sorted lexicographically by (customer_id, status, created_at):
 
 Leaf Node Layout:
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ ("user0","pending",Mar20) → RID7                                    â”‚
-â”‚ ("user1","delivered",Mar15) → RID1                                  â”‚
-â”‚ ("user1","pending",Mar25) → RID3                                    â”‚
-â”‚ ("user1","shipped",Mar22) → RID2      â† exact match found here      â”‚
-â”‚ ("user2","cancelled",Mar10) → RID4                                   â”‚
-â”‚ ("user2","shipped",Mar18) → RID5                                    â”‚
-â”‚ ("user3","shipped",Mar12) → RID6                                    â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────────────────────┐
+│ ("user0","pending",Mar20) → RID7                                    │
+│ ("user1","delivered",Mar15) → RID1                                  │
+│ ("user1","pending",Mar25) → RID3                                    │
+│ ("user1","shipped",Mar22) → RID2      ← exact match found here      │
+│ ("user2","cancelled",Mar10) → RID4                                   │
+│ ("user2","shipped",Mar18) → RID5                                    │
+│ ("user3","shipped",Mar12) → RID6                                    │
+└─────────────────────────────────────────────────────────────────────┘
 
 Execution Trace:
 +--------+----------------------------------------------+------------------+
@@ -1597,7 +1597,7 @@ Execution Trace:
 | 5      | B-tree traversal:                              |                   |
 | 5a     | Root node: find "user1" range                 | [u0-u5] range    |
 | 5b     | Internal node: narrow by "user1"+"shipped"    | Exact prefix     |
-| 5c     | Leaf node: scan backwards for -1 sort         | â† backward scan  |
+| 5c     | Leaf node: scan backwards for -1 sort         | ← backward scan  |
 | 6      | Found: ("user1","shipped",Mar22) → RID2       | 1 key examined   |
 | 7      | Fetch document at RID2                        | 1 doc fetched    |
 | 8      | Apply projection (none specified)             | Full doc         |
@@ -2618,32 +2618,32 @@ A **replica set** is a group of MongoDB servers that maintain the same data set,
 ```
 Replica Set Architecture (3-node):
 
-                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                     â”‚      Client Application       â”‚
-                     â”‚  Write: primary only          â”‚
-                     â”‚  Read: configurable pref      â”‚
-                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                              â”‚
-                    writes â”€â”€â”€â”¤ reads (optional)
-                              â”‚
-                â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                â”‚       PRIMARY (mongod)          â”‚
-                â”‚  State: PRIMARY                 â”‚
-                â”‚  Priority: 2                    â”‚
-                â”‚  Oplog: last 24h or 10% disk    â”‚
-                â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                           â”‚ oplog replication
-               â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-               â”‚           â”‚               â”‚
-               â–¼           â–¼               â–¼
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚  SECONDARY 1     â”‚ â”‚  SECONDARY 2     â”‚ â”‚  ARBITER         â”‚
-    â”‚  State: SECONDARYâ”‚ â”‚  State: SECONDARYâ”‚ â”‚  State: ARBITER  â”‚
-    â”‚  Priority: 1     â”‚ â”‚  Priority: 1     â”‚ â”‚  Priority: 0     â”‚
-    â”‚  Votes: 1        â”‚ â”‚  Votes: 1        â”‚ â”‚  Votes: 1        â”‚
-    â”‚  Hidden: false   â”‚ â”‚  Hidden: true    â”‚ â”‚  Data: none      â”‚
-    â”‚  Reads: allowed  â”‚ â”‚  Reads: no       â”‚ â”‚  Reads: no       â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     ┌──────────────────────────────┐
+                     │      Client Application       │
+                     │  Write: primary only          │
+                     │  Read: configurable pref      │
+                     └────────┬─────────────────────┘
+                              │
+                    writes ───┤ reads (optional)
+                              │
+                ┌─────────────▼──────────────────┐
+                │       PRIMARY (mongod)          │
+                │  State: PRIMARY                 │
+                │  Priority: 2                    │
+                │  Oplog: last 24h or 10% disk    │
+                └──────────┬──────────────────────┘
+                           │ oplog replication
+               ┌───────────┼───────────────┐
+               │           │               │
+               ▼           ▼               ▼
+    ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐
+    │  SECONDARY 1     │ │  SECONDARY 2     │ │  ARBITER         │
+    │  State: SECONDARY│ │  State: SECONDARY│ │  State: ARBITER  │
+    │  Priority: 1     │ │  Priority: 1     │ │  Priority: 0     │
+    │  Votes: 1        │ │  Votes: 1        │ │  Votes: 1        │
+    │  Hidden: false   │ │  Hidden: true    │ │  Data: none      │
+    │  Reads: allowed  │ │  Reads: no       │ │  Reads: no       │
+    └──────────────────┘ └──────────────────┘ └──────────────────┘
 ```
 
 #### 15.6.2 Replica Set Components
@@ -2720,30 +2720,30 @@ STEP 8: SPLIT BRAIN PREVENTION
 
 ```
 Time 0: Normal operation
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 | Node   | State    | Details                                  |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 | P1     | PRIMARY  | Accepts writes. Oplog: term 1, last opt=100|
 | S1     | SECONDARY| Replicating from P1. Oplog term 1, opt=100|
 | S2     | SECONDARY| Replicating from P1. Oplog term 1, opt=100|
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 
 Time 5s: Network partition → P1 can't reach S1, S2
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 | P1     | PRIMARY  | Still primary (no heartbeat response)    |
 | S1     | SECONDARY| Heartbeat to P1: TIMEOUT (2s elapsed)   |
 | S2     | SECONDARY| Heartbeat to P1: TIMEOUT                 |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 
 Time 10s: Election timeout reached
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 | P1     | PRIMARY  | Still accepting writes (isolated)        |
 | S1     | CANDIDATE| electionTimeoutMillis=10s elapsed        |
 | S2     | CANDIDATE| Also detecting absence and starting       |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 
 Time 10.5s: Vote exchange
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 | S1     | CANDIDATE| Sends voteRequest to S2                  |
 | S2     | CANDIDATE| Receives S1's request. Check:             |
 |        |          | - Can't see P1? YES (vote YES)           |
@@ -2751,10 +2751,10 @@ Time 10.5s: Vote exchange
 |        |          | - Already voted this term? NO             |
 |        |          | → Votes YES for S1                        |
 |        |          | Sends own voteRequest to S1               |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 
 Time 11s: Vote count
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 | S1     | PRIMARY  | Votes: S1 (self) = 1, S2 = 1 = 2 votes  |
 |        |          | Majority needed: floor(3/2)+1 = 2         |
 |        |          | Has 2 → ELECTED! Name: "rs0:27018"        |
@@ -2762,17 +2762,17 @@ Time 11s: Vote count
 |        |          | Starts replicating from S1 (now primary)   |
 | P1     | PRIMARY  | Still isolated, still accepting writes    |
 |        |          | (writes will be rolled back on reconnect)  |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 
 Time 30s: Partition heals
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 | P1     |          | Detects S1 as PRIMARY with higher term    |
 |        | ROLLBACK | P1 was term 1, S1 is term 2              |
 |        |          | P1 must roll back any writes not in S1's  |
 |        |          | oplog (opt > 100 if any writes happened)   |
 |        | SECONDARY| Rollback complete. Becomes SECONDARY.     |
 |        |          | Starts replicating from S1                 |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++────────+──────────+──────────────────────────────────────────+
 ```
 
 #### 15.6.5 Numbered Steps: Oplog Replication
@@ -3024,39 +3024,39 @@ if __name__ == "__main__":
 ```
 Sharded Cluster Architecture:
 
-                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                     â”‚       Client Application      â”‚
-                     â”‚  Connects to mongos router    â”‚
-                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-                           â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”
-                           â”‚    mongos (x2)  â”‚
-                           â”‚  Query Router   â”‚
-                           â”‚  Routes queries â”‚
-                           â”‚  to correct shardâ”‚
-                           â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-              â”‚                     â”‚                      â”‚
-              â–¼                     â–¼                      â–¼
-     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-     â”‚   Shard A     â”‚   â”‚   Shard B     â”‚    â”‚   Shard C     â”‚
-     â”‚  (ReplicaSet) â”‚   â”‚  (ReplicaSet) â”‚    â”‚  (ReplicaSet) â”‚
-     â”‚  P â”€â”€ S1      â”‚   â”‚  P â”€â”€ S1      â”‚    â”‚  P â”€â”€ S1      â”‚
-     â”‚  â””â”€â”€ S2       â”‚   â”‚  â””â”€â”€ S2       â”‚    â”‚  â””â”€â”€ S2       â”‚
-     â”‚  chunks:      â”‚   â”‚  chunks:      â”‚    â”‚  chunks:      â”‚
-     â”‚  user_0000-   â”‚   â”‚  user_1M-2M   â”‚    â”‚  user_2M-3M   â”‚
-     â”‚  1M           â”‚   â”‚               â”‚    â”‚               â”‚
-     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-              â”‚                     â”‚                      â”‚
-              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-                           â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”
-                           â”‚ Config Server   â”‚
-                           â”‚ (ReplicaSet)    â”‚
-                           â”‚ Metadata store  â”‚
-                           â”‚ routing info    â”‚
-                           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     ┌──────────────────────────────┐
+                     │       Client Application      │
+                     │  Connects to mongos router    │
+                     └──────────────┬───────────────┘
+                                    │
+                           ┌────────▼────────┐
+                           │    mongos (x2)  │
+                           │  Query Router   │
+                           │  Routes queries │
+                           │  to correct shard│
+                           └────────┬────────┘
+                                    │
+              ┌─────────────────────┼─────────────────────┐
+              │                     │                      │
+              ▼                     ▼                      ▼
+     ┌───────────────┐   ┌───────────────┐    ┌───────────────┐
+     │   Shard A     │   │   Shard B     │    │   Shard C     │
+     │  (ReplicaSet) │   │  (ReplicaSet) │    │  (ReplicaSet) │
+     │  P ── S1      │   │  P ── S1      │    │  P ── S1      │
+     │  └── S2       │   │  └── S2       │    │  └── S2       │
+     │  chunks:      │   │  chunks:      │    │  chunks:      │
+     │  user_0000-   │   │  user_1M-2M   │    │  user_2M-3M   │
+     │  1M           │   │               │    │               │
+     └───────────────┘   └───────────────┘    └───────────────┘
+              │                     │                      │
+              └─────────────────────┼──────────────────────┘
+                                    │
+                           ┌────────▼────────┐
+                           │ Config Server   │
+                           │ (ReplicaSet)    │
+                           │ Metadata store  │
+                           │ routing info    │
+                           └─────────────────┘
 ```
 
 #### 15.7.2 Shard Key Selection → Detailed Analysis
@@ -3161,7 +3161,7 @@ STEP 9: mongos returns final results to client
 **Scatter-gather query (no shard key in filter):**
 ```
 STEP 1: Client sends: db.orders.find({ status: "active" })
-                                          â†‘ no shard key in filter!
+                                          ↑ no shard key in filter!
 
 STEP 2: mongos determines this is a scatter-gather query
         (cannot route to a single shard)
@@ -3198,7 +3198,7 @@ Chunk metadata (on config server):
 | Chunk ID    | Range                         | Shard        | Size      |
 +-------------+------------------------------+--------------+-----------+
 | C001        | {"AF",Min}→{"IN",Max}        | Shard A      | 512MB     |
-| C002        | {"IN",Min}→{"US",Max}        | Shard A      | 800MB  â†  |
+| C002        | {"IN",Min}→{"US",Max}        | Shard A      | 800MB  ←  |
 | C003        | {"US",Min}→{"ZW",Max}        | Shard B      | 256MB     |
 | C004        | {"ZW",Min}→{MaxKey,Max}      | Shard B      | 200MB     |
 +-------------+------------------------------+--------------+-----------+
@@ -3827,7 +3827,7 @@ function getDisplayName(user) {
 // Query: db.orders.find({ status: "shipped", total: { $gte: 100 } })
 //                 .sort({ created_at: -1 })
 // Index: { status: 1, created_at: -1, total: 1 }
-//         â†‘E         â†‘S               â†‘R
+//         ↑E         ↑S               ↑R
 ```
 
 This order lets MongoDB find the exact equality value in the B-tree, then iterate in sort order, applying the range filter without needing an in-memory sort.

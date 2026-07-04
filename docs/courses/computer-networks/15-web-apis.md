@@ -1999,7 +1999,7 @@ An API gateway is a reverse proxy that sits between clients and backend services
 - Rate limiting (token bucket, leaky bucket per client)
 - Caching (response cache for idempotent requests)
 - Load balancing across service instances
-- Request/response transformation (XMLâ†”JSON)
+- Request/response transformation (XML↔JSON)
 - Monitoring and analytics (latency, error rates)
 
 Common API gateways: Kong, NGINX, AWS API Gateway, Envoy, Traefik.

@@ -3621,8 +3621,8 @@ The `ExceptionTranslationFilter` is the filter that catches authentication and a
 
 ```
 ExceptionTranslationFilter
-â”œâ”€â”€ AuthenticationException → AuthenticationEntryPoint
-â””â”€â”€ AccessDeniedException  → AccessDeniedHandler
+├── AuthenticationException → AuthenticationEntryPoint
+└── AccessDeniedException  → AccessDeniedHandler
 ```
 
 For form-based login, the default `AuthenticationEntryPoint` redirects to the login page. For REST APIs, you should use a custom entry point that returns 401 with a JSON body.
@@ -3824,7 +3824,7 @@ Microservices security requires a defense-in-depth approach across multiple laye
 
 ```
 Client → API Gateway → Service A → Service B
-                â†“            â†“           â†“
+                ↓            ↓           ↓
           Auth Server    Database    Message Queue
 ```
 

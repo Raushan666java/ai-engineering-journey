@@ -168,9 +168,9 @@ public class UrlController {
 
 ```
 Client (WebSocket) → Load Balancer → Chat Service (WebSocket handler)
-                                          â†“
+                                          ↓
                                 Message Queue (Kafka)
-                                          â†“
+                                          ↓
                                 Message Store (Cassandra)
 ```
 
@@ -428,11 +428,11 @@ public class Inventory {
 
 ```
 Service → Notification API → Message Queue (Kafka)
-                                  â†“
-       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-       â†“                          â†“                          â†“
+                                  ↓
+       ┌──────────────────────────┼──────────────────────────┐
+       ↓                          ↓                          ↓
  Email Worker              SMS Worker                 Push Worker
-       â†“                          â†“                          â†“
+       ↓                          ↓                          ↓
  SendGrid/Twilio           Twilio/SNS                  Firebase/APNs
 ```
 
@@ -1078,13 +1078,13 @@ public List<String> suggest(@RequestParam String prefix) {
 
 ```
 Application (stdout JSON logs) → Fluentd/Logstash (agent)
-                                       â†“
+                                       ↓
                                Kafka (buffer)
-                                       â†“
-                           â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                           â†“                       â†“
+                                       ↓
+                           ┌───────────┴───────────┐
+                           ↓                       ↓
                       Elasticsearch             S3 (archive)
-                           â†“
+                           ↓
                        Kibana/Grafana
 ```
 
@@ -1510,7 +1510,7 @@ public class OrderEtlJobConfig {
 
 ```
 API → Redis Queue → Worker Pods
-        â†“
+        ↓
    Redis (status)
 ```
 
@@ -2192,11 +2192,11 @@ spring:
 
 ```
 config-repo/
-â”œâ”€â”€ order-service.yml          (shared config)
-â”œâ”€â”€ order-service-dev.yml      (dev overrides)
-â”œâ”€â”€ order-service-prod.yml     (prod overrides)
-â”œâ”€â”€ product-service.yml
-â””â”€â”€ application.yml            (shared across all services)
+├── order-service.yml          (shared config)
+├── order-service-dev.yml      (dev overrides)
+├── order-service-prod.yml     (prod overrides)
+├── product-service.yml
+└── application.yml            (shared across all services)
 ```
 
 **3. Config Client:**
@@ -2801,7 +2801,7 @@ public class ConsistentReadService {
 
 ```
 Application → Prometheus (scrape metrics) → AlertManager → Slack/PagerDuty
-                                              â†“
+                                              ↓
                                           Grafana (dashboards)
 ```
 

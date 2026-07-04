@@ -118,13 +118,13 @@ In deep learning frameworks, images are represented as tensors:
 **Pseudocode:**
 ```
 FUNCTION load_image(path):
-    img â† read_file(path)
-    pixels â† decode_to_matrix(img)
-    height, width, channels â† pixels.shape
+    img ← read_file(path)
+    pixels ← decode_to_matrix(img)
+    height, width, channels ← pixels.shape
     PRINT "Image size:", width, "Ã—", height, ", channels:", channels
-    pixel_val â† pixels[y, x]        // Access pixel at (x, y)
-    gray â† rgb_to_grayscale(pixels) // Weighted sum: 0.299R + 0.587G + 0.114B
-    normalized â† gray / 255.0       // Scale to [0, 1]
+    pixel_val ← pixels[y, x]        // Access pixel at (x, y)
+    gray ← rgb_to_grayscale(pixels) // Weighted sum: 0.299R + 0.587G + 0.114B
+    normalized ← gray / 255.0       // Scale to [0, 1]
     RETURN normalized
 END FUNCTION
 ```
@@ -222,19 +222,19 @@ where $a = \lfloor k/2 \rfloor$ and $b = \lfloor k/2 \rfloor$.
 **Pseudocode:**
 ```
 FUNCTION convolve2d(image[1..H][1..W], kernel[1..k][1..k]):
-    pad â† floor(k / 2)
-    padded â† ZERO_PAD(image, pad)     // Add border of zeros
-    output â† new_array[H][W]
+    pad ← floor(k / 2)
+    padded ← ZERO_PAD(image, pad)     // Add border of zeros
+    output ← new_array[H][W]
 
-    FOR y â† 1 TO H:
-        FOR x â† 1 TO W:
-            sum â† 0
-            FOR i â† 1 TO k:
-                FOR j â† 1 TO k:
-                    sum â† sum + padded[y + i - 1][x + j - 1] * kernel[i][j]
+    FOR y ← 1 TO H:
+        FOR x ← 1 TO W:
+            sum ← 0
+            FOR i ← 1 TO k:
+                FOR j ← 1 TO k:
+                    sum ← sum + padded[y + i - 1][x + j - 1] * kernel[i][j]
                 END FOR
             END FOR
-            output[y][x] â† sum
+            output[y][x] ← sum
         END FOR
     END FOR
 
@@ -371,35 +371,35 @@ The Canny detector (1986) remains the gold standard for edge detection. It is a 
 ```
 FUNCTION canny_edge(image, sigma, T_low, T_high):
     // Step 1: Smooth
-    blurred â† gaussian_blur(image, sigma)
+    blurred ← gaussian_blur(image, sigma)
 
     // Step 2: Compute gradients
-    Gx â† sobel_x(blurred)
-    Gy â† sobel_y(blurred)
+    Gx ← sobel_x(blurred)
+    Gy ← sobel_y(blurred)
 
     // Step 3: Magnitude and direction
-    M â† sqrt(Gx^2 + Gy^2)
-    theta â† atan2(Gy, Gx)
-    theta â† QUANTIZE(theta)              // Round to 0Â°, 45Â°, 90Â°, 135Â°
+    M ← sqrt(Gx^2 + Gy^2)
+    theta ← atan2(Gy, Gx)
+    theta ← QUANTIZE(theta)              // Round to 0Â°, 45Â°, 90Â°, 135Â°
 
     // Step 4: Non-maximum suppression
-    suppressed â† ZEROS_LIKE(M)
+    suppressed ← ZEROS_LIKE(M)
     FOR each pixel (y, x):
-        neighbors â† GET_NEIGHBORS_ALONG_GRADIENT(M, y, x, theta[y][x])
+        neighbors ← GET_NEIGHBORS_ALONG_GRADIENT(M, y, x, theta[y][x])
         IF M[y][x] â‰¥ max(neighbors):
-            suppressed[y][x] â† M[y][x]
+            suppressed[y][x] ← M[y][x]
         END IF
     END FOR
 
     // Step 5: Double threshold
-    strong â† suppressed > T_high
-    weak â† (suppressed > T_low) AND (suppressed â‰¤ T_high)
+    strong ← suppressed > T_high
+    weak ← (suppressed > T_low) AND (suppressed â‰¤ T_high)
 
     // Step 6: Edge tracking by hysteresis
-    edges â† strong
+    edges ← strong
     FOR each weak pixel:
         IF any neighbor in 3Ã—3 is strong:
-            edges[y][x] â† True
+            edges[y][x] ← True
         END IF
     END FOR
 
@@ -543,52 +543,52 @@ SIFT (Lowe, 2004) detects keypoints that are invariant to scale, rotation, and p
 ```
 FUNCTION sift_keypoints(image):
     // Step 1-2: Build DoG pyramid
-    pyramid â† []
-    FOR octave â† 1 TO num_octaves:
-        scale_img â† RESIZE(image, 1/2^(octave-1))
-        dog_images â† []
-        FOR s â† 1 TO num_scales:
-            blurred â† gaussian_blur(scale_img, sigma * k^(s-1))
+    pyramid ← []
+    FOR octave ← 1 TO num_octaves:
+        scale_img ← RESIZE(image, 1/2^(octave-1))
+        dog_images ← []
+        FOR s ← 1 TO num_scales:
+            blurred ← gaussian_blur(scale_img, sigma * k^(s-1))
             IF s > 1:
-                dog â† blurred - prev_blurred
+                dog ← blurred - prev_blurred
                 APPEND dog TO dog_images
-            prev_blurred â† blurred
+            prev_blurred ← blurred
         APPEND dog_images TO pyramid
 
     // Step 3: Find extrema
-    keypoints â† []
+    keypoints ← []
     FOR each dog in pyramid:
         FOR each pixel (y, x):
             IF pixel is max OR min among 26 neighbors:
                 APPEND {x, y, scale, octave} TO keypoints
 
     // Step 4: Refine → sub-pixel, remove low contrast / edges
-    keypoints â† SUB_PIXEL_REFINE(keypoints)
-    keypoints â† FILTER_CONTRAST(keypoints, min_contrast)
-    keypoints â† FILTER_EDGE(keypoints, max_ratio)
+    keypoints ← SUB_PIXEL_REFINE(keypoints)
+    keypoints ← FILTER_CONTRAST(keypoints, min_contrast)
+    keypoints ← FILTER_EDGE(keypoints, max_ratio)
 
     // Step 5: Assign orientation
     FOR each kp in keypoints:
-        hist â† [0...35]    // 36 bins, each = 10Â°
+        hist ← [0...35]    // 36 bins, each = 10Â°
         FOR each pixel in 4.5Ïƒ neighborhood:
-            weight â† magnitude * gaussian_weight(distance)
-            bin â† FLOOR(angle / 10)
-            hist[bin] â† hist[bin] + weight
-        kp.orientation â† MAX_BIN(hist)
+            weight ← magnitude * gaussian_weight(distance)
+            bin ← FLOOR(angle / 10)
+            hist[bin] ← hist[bin] + weight
+        kp.orientation ← MAX_BIN(hist)
 
     // Step 6: Build descriptor (128-d vector)
     FOR each kp in keypoints:
-        desc â† []
+        desc ← []
         FOR each 4Ã—4 sub-block in 16Ã—16 window:
-            hist_8bin â† [0...7]
+            hist_8bin ← [0...7]
             FOR each pixel in sub-block:
-                bin â† FLOOR(angle / 45)    // 45Â° per bin
-                hist_8bin[bin] â† hist_8bin[bin] + magnitude
+                bin ← FLOOR(angle / 45)    // 45Â° per bin
+                hist_8bin[bin] ← hist_8bin[bin] + magnitude
             APPEND hist_8bin TO desc
         NORMALIZE(desc)
         CLIP(desc, max_val=0.2)     // Reduce illumination effects
         NORMALIZE(desc)
-        kp.descriptor â† desc
+        kp.descriptor ← desc
 
     RETURN keypoints, descriptors   // 128-dimensional per keypoint
 END FUNCTION
@@ -731,22 +731,22 @@ $$W_{\text{out}} = \left\lfloor \frac{W_{\text{in}} - k + 2p}{s} \right\rfloor +
 **Pseudocode:**
 ```
 FUNCTION cnn_forward(X, layers):
-    current â† X
+    current ← X
 
     FOR each conv_layer in layers:
         // 2D convolution with learned weights W and bias b
-        Z â† convolve2d(current, conv_layer.W) + conv_layer.b
-        A â† relu(Z)
-        current â† max_pool(A, pool_size=2, stride=2)
+        Z ← convolve2d(current, conv_layer.W) + conv_layer.b
+        A ← relu(Z)
+        current ← max_pool(A, pool_size=2, stride=2)
 
-    flat â† FLATTEN(current)
+    flat ← FLATTEN(current)
 
     FOR each fc_layer in layers.fc:
-        Z â† flat @ fc_layer.W + fc_layer.b
-        A â† relu(Z)                    // Or softmax for the last layer
-        flat â† A
+        Z ← flat @ fc_layer.W + fc_layer.b
+        A ← relu(Z)                    // Or softmax for the last layer
+        flat ← A
 
-    probs â† softmax(flat)
+    probs ← softmax(flat)
 
     RETURN probs                       // Shape: (1, 1000)
 END FUNCTION
@@ -913,18 +913,18 @@ A prediction is a **true positive** if IoU â‰¥ threshold (typically 0.5) AND
 ```
 FUNCTION faster_rcnn_infer(image, backbone, rpn, roi_head):
     // Backbone feature extraction
-    feature_map â† backbone(image)          // (1, 1024, H/16, W/16)
+    feature_map ← backbone(image)          // (1, 1024, H/16, W/16)
 
     // RPN: generate proposals
-    objectness, box_deltas â† rpn(feature_map)
-    proposals â† DECODE_ANCHORS(box_deltas, objectness)
-    proposals â† NMS(proposals, iou_thresh=0.7)
-    proposals â† TOP_K(proposals, k=300)
+    objectness, box_deltas ← rpn(feature_map)
+    proposals ← DECODE_ANCHORS(box_deltas, objectness)
+    proposals ← NMS(proposals, iou_thresh=0.7)
+    proposals ← TOP_K(proposals, k=300)
 
     // RoI head: classify and refine
-    roi_features â† roi_pool(feature_map, proposals)       // Fixed-size (7Ã—7)
-    class_scores, final_boxes â† roi_head(roi_features)
-    final_boxes â† NMS(final_boxes, iou_thresh=0.5)
+    roi_features ← roi_pool(feature_map, proposals)       // Fixed-size (7Ã—7)
+    class_scores, final_boxes ← roi_head(roi_features)
+    final_boxes ← NMS(final_boxes, iou_thresh=0.5)
 
     RETURN final_boxes, class_scores
 END FUNCTION
@@ -960,25 +960,25 @@ YOLO (You Only Look Once) treats detection as a single regression problem → on
 ```
 FUNCTION yolo_infer(image, model, S, B, C):
     // Single forward pass
-    raw_output â† model(image)                   // (1, S, S, B*5 + C)
-    predictions â† []
+    raw_output ← model(image)                   // (1, S, S, B*5 + C)
+    predictions ← []
 
     FOR each cell (i, j):
         FOR each box b in 1..B:
-            confidence â† sigmoid(raw_output[i][j][b*5])
+            confidence ← sigmoid(raw_output[i][j][b*5])
             if confidence < threshold: SKIP
 
-            x â† sigmoid(raw_output[i][j][b*5 + 1]) + i     // Center x (grid-relative)
-            y â† sigmoid(raw_output[i][j][b*5 + 2]) + j     // Center y
-            w â† exp(raw_output[i][j][b*5 + 3]) * anchor_w  // Width
-            h â† exp(raw_output[i][j][b*5 + 4]) * anchor_h  // Height
-            class_probs â† softmax(raw_output[i][j][B*5 : B*5 + C])
-            class_id â† ARGMAX(class_probs)
-            score â† confidence * class_probs[class_id]
+            x ← sigmoid(raw_output[i][j][b*5 + 1]) + i     // Center x (grid-relative)
+            y ← sigmoid(raw_output[i][j][b*5 + 2]) + j     // Center y
+            w ← exp(raw_output[i][j][b*5 + 3]) * anchor_w  // Width
+            h ← exp(raw_output[i][j][b*5 + 4]) * anchor_h  // Height
+            class_probs ← softmax(raw_output[i][j][B*5 : B*5 + C])
+            class_id ← ARGMAX(class_probs)
+            score ← confidence * class_probs[class_id]
 
             APPEND {x, y, w, h, class_id, score} TO predictions
 
-    predictions â† NMS(predictions, iou_thresh=0.5)
+    predictions ← NMS(predictions, iou_thresh=0.5)
 
     RETURN predictions
 END FUNCTION
@@ -1118,41 +1118,41 @@ Assigns a class label $c \in \{1, \dots, K\}$ to every pixel. Output: $H \times 
 ```
 FUNCTION unet_forward(image):
     // Encoder
-    e1 â† conv_relu(conv_relu(image, 64))
-    p1 â† max_pool(e1)                     // H/2 Ã— W/2 Ã— 64
+    e1 ← conv_relu(conv_relu(image, 64))
+    p1 ← max_pool(e1)                     // H/2 Ã— W/2 Ã— 64
 
-    e2 â† conv_relu(conv_relu(p1, 128))
-    p2 â† max_pool(e2)                     // H/4 Ã— W/4 Ã— 128
+    e2 ← conv_relu(conv_relu(p1, 128))
+    p2 ← max_pool(e2)                     // H/4 Ã— W/4 Ã— 128
 
-    e3 â† conv_relu(conv_relu(p2, 256))
-    p3 â† max_pool(e3)                     // H/8 Ã— W/8 Ã— 256
+    e3 ← conv_relu(conv_relu(p2, 256))
+    p3 ← max_pool(e3)                     // H/8 Ã— W/8 Ã— 256
 
-    e4 â† conv_relu(conv_relu(p3, 512))
-    p4 â† max_pool(e4)                     // H/16 Ã— W/16 Ã— 512
+    e4 ← conv_relu(conv_relu(p3, 512))
+    p4 ← max_pool(e4)                     // H/16 Ã— W/16 Ã— 512
 
     // Bottleneck
-    b â† conv_relu(conv_relu(p4, 1024))
+    b ← conv_relu(conv_relu(p4, 1024))
 
     // Decoder with skip connections
-    d4 â† up_conv(b, 512)
-    d4 â† concat(d4, e4)
-    d4 â† conv_relu(conv_relu(d4, 512))
+    d4 ← up_conv(b, 512)
+    d4 ← concat(d4, e4)
+    d4 ← conv_relu(conv_relu(d4, 512))
 
-    d3 â† up_conv(d4, 256)
-    d3 â† concat(d3, e3)
-    d3 â† conv_relu(conv_relu(d3, 256))
+    d3 ← up_conv(d4, 256)
+    d3 ← concat(d3, e3)
+    d3 ← conv_relu(conv_relu(d3, 256))
 
-    d2 â† up_conv(d3, 128)
-    d2 â† concat(d2, e2)
-    d2 â† conv_relu(conv_relu(d2, 128))
+    d2 ← up_conv(d3, 128)
+    d2 ← concat(d2, e2)
+    d2 ← conv_relu(conv_relu(d2, 128))
 
-    d1 â† up_conv(d2, 64)
-    d1 â† concat(d1, e1)
-    d1 â† conv_relu(conv_relu(d1, 64))
+    d1 ← up_conv(d2, 64)
+    d1 ← concat(d1, e1)
+    d1 ← conv_relu(conv_relu(d1, 64))
 
     // Output
-    logits â† conv_1x1(d1, num_classes)
-    probs â† softmax(logits)
+    logits ← conv_1x1(d1, num_classes)
+    probs ← softmax(logits)
     RETURN probs                            // H Ã— W Ã— num_classes
 END FUNCTION
 ```
@@ -1470,30 +1470,30 @@ By the end of VGG-16, each neuron in the final feature map "sees" a $404 \times 
 ```
 FUNCTION transfer_learn(pretrained_model, new_dataset, mode):
     // Remove old classifier head
-    backbone â† pretrained_model.features
-    num_features â† backbone.output_channels
+    backbone ← pretrained_model.features
+    num_features ← backbone.output_channels
 
     // Add new classifier
-    new_head â† Sequential(
+    new_head ← Sequential(
         AdaptiveAvgPool2d(1),
         Flatten(),
         Dropout(0.5),
         Linear(num_features, num_classes_new)
     )
-    model â† Sequential(backbone, new_head)
+    model ← Sequential(backbone, new_head)
 
     IF mode == "feature_extractor":
         FREEZE(backbone)              // No gradient updates
-        optimizer â† Adam(new_head.parameters, lr=1e-3)
+        optimizer ← Adam(new_head.parameters, lr=1e-3)
 
     ELSE IF mode == "fine_tune":
         UNFREEZE_ALL()
-        optimizer â† Adam(model.parameters, lr=1e-4)   // 10Ã— smaller than scratch
+        optimizer ← Adam(model.parameters, lr=1e-4)   // 10Ã— smaller than scratch
 
     // Train as usual
     FOR epoch in 1..num_epochs:
         FOR batch in new_dataset:
-            loss â† cross_entropy(model(batch.images), batch.labels)
+            loss ← cross_entropy(model(batch.images), batch.labels)
             loss.backward()
             optimizer.step()
 
@@ -1551,20 +1551,20 @@ The "1" term ensures the gradient never vanishes → even if $\partial F/\partia
 **Pseudocode:**
 ```
 FUNCTION nms(boxes, scores, iou_threshold):
-    indices â† ARGSORT(scores, descending=True)
-    keep â† []
+    indices ← ARGSORT(scores, descending=True)
+    keep ← []
 
     WHILE length(indices) > 0:
-        current â† indices[0]
+        current ← indices[0]
         APPEND current TO keep
 
-        ious â† compute_iou(boxes[current], boxes[indices[1:]])
-        remaining â† []
+        ious ← compute_iou(boxes[current], boxes[indices[1:]])
+        remaining ← []
         FOR i, idx IN ENUMERATE(indices[1:]):
             IF ious[i] â‰¤ iou_threshold:
                 APPEND idx TO remaining
 
-        indices â† remaining
+        indices ← remaining
 
     RETURN keep
 END FUNCTION
@@ -1604,9 +1604,9 @@ Just as humans rely on vision for 80%+ of daily tasks (driving, reading faces, n
 
 **Architecture → FaceNet with Triplet Loss:**
 ```
-Anchor (Face A)  â”€â”€→ CNN â”€â”€→ Embedding: [0.23, 0.87, ..., 0.12]
-Positive (Face A) â”€â”€→ CNN â”€â”€→ Embedding: [0.25, 0.85, ..., 0.15]
-Negative (Face B) â”€â”€→ CNN â”€â”€→ Embedding: [0.91, 0.23, ..., 0.88]
+Anchor (Face A)  ──→ CNN ──→ Embedding: [0.23, 0.87, ..., 0.12]
+Positive (Face A) ──→ CNN ──→ Embedding: [0.25, 0.85, ..., 0.15]
+Negative (Face B) ──→ CNN ──→ Embedding: [0.91, 0.23, ..., 0.88]
 
 Triplet Loss: max(d(anchor, positive) - d(anchor, negative) + margin, 0)
 ```
@@ -1762,29 +1762,29 @@ The Vision Transformer (Dosovitskiy et al., 2021) applies the transformer archit
 **Pseudocode:**
 ```
 FUNCTION vit_forward(image, model):
-    patches â† EXTRACT_PATCHES(image, patch_size=16)   // 196 Ã— 768
-    embeddings â† LINEAR_PROJECTION(patches)            // 196 Ã— 768
+    patches ← EXTRACT_PATCHES(image, patch_size=16)   // 196 Ã— 768
+    embeddings ← LINEAR_PROJECTION(patches)            // 196 Ã— 768
 
     // Prepend [CLS] token
-    cls_token â† model.cls_embedding                    // 1 Ã— 768
-    sequence â† CONCAT(cls_token, embeddings)           // 197 Ã— 768
+    cls_token ← model.cls_embedding                    // 1 Ã— 768
+    sequence ← CONCAT(cls_token, embeddings)           // 197 Ã— 768
 
     // Add positional embeddings
-    sequence â† sequence + model.pos_embedding          // 197 Ã— 768
+    sequence ← sequence + model.pos_embedding          // 197 Ã— 768
 
     // Transformer encoder blocks
     FOR each block in model.blocks:
-        norm1 â† LAYERNORM(sequence)
-        attn â† MULTIHEAD_ATTENTION(norm1)
-        sequence â† sequence + attn                      // Residual
-        norm2 â† LAYERNORM(sequence)
-        mlp â† MLP(norm2)
-        sequence â† sequence + mlp                       // Residual
+        norm1 ← LAYERNORM(sequence)
+        attn ← MULTIHEAD_ATTENTION(norm1)
+        sequence ← sequence + attn                      // Residual
+        norm2 ← LAYERNORM(sequence)
+        mlp ← MLP(norm2)
+        sequence ← sequence + mlp                       // Residual
 
     // Classify
-    cls_out â† sequence[0]                               // [CLS] token only
-    logits â† model.classifier(cls_out)
-    probs â† softmax(logits)
+    cls_out ← sequence[0]                               // [CLS] token only
+    logits ← model.classifier(cls_out)
+    probs ← softmax(logits)
     RETURN probs
 END FUNCTION
 ```
@@ -1843,22 +1843,22 @@ FUNCTION train_gan(generator, discriminator, data, epochs):
     FOR epoch IN 1..epochs:
         FOR batch IN data:
             // Real images
-            real â† sample_batch(data)             // (B, 3, 64, 64)
+            real ← sample_batch(data)             // (B, 3, 64, 64)
 
             // Generate fake images
-            z â† sample_noise(B, latent_dim=100)   // (B, 100)
-            fake â† generator(z)                   // (B, 3, 64, 64)
+            z ← sample_noise(B, latent_dim=100)   // (B, 100)
+            fake ← generator(z)                   // (B, 3, 64, 64)
 
             // Train discriminator (maximize log D(x) + log(1 - D(G(z))))
-            d_real â† discriminator(real)
-            d_fake â† discriminator(fake.detach()) // Stop gradient to generator
-            d_loss â† -(log(d_real).mean() + log(1 - d_fake).mean())
+            d_real ← discriminator(real)
+            d_fake ← discriminator(fake.detach()) // Stop gradient to generator
+            d_loss ← -(log(d_real).mean() + log(1 - d_fake).mean())
             d_loss.backward()
             d_optimizer.step()
 
             // Train generator (minimize log(1 - D(G(z))) OR maximize log D(G(z)))
-            d_fake_again â† discriminator(fake)
-            g_loss â† -log(d_fake_again).mean()    // Generator wants discriminator to be wrong
+            d_fake_again ← discriminator(fake)
+            g_loss ← -log(d_fake_again).mean()    // Generator wants discriminator to be wrong
             g_loss.backward()
             g_optimizer.step()
 
@@ -1898,20 +1898,20 @@ The network simply predicts the noise $\epsilon$ that was added. At inference, n
 **Algorithm → DDPM Sampling:**
 ```
 FUNCTION sample_diffusion(model, num_steps=1000):
-    x_T â† randn(3, 64, 64)                  // Pure Gaussian noise
+    x_T ← randn(3, 64, 64)                  // Pure Gaussian noise
 
-    FOR t â† num_steps DOWNTO 1:
-        z â† 0 IF t == 1 ELSE randn_like(x)  // Random noise (except last step)
+    FOR t ← num_steps DOWNTO 1:
+        z ← 0 IF t == 1 ELSE randn_like(x)  // Random noise (except last step)
 
         // Predict noise at step t
-        predicted_noise â† model(x_t, t)
+        predicted_noise ← model(x_t, t)
 
         // Compute x_{t-1} from x_t
-        alpha_bar â† PRODUCT(sqrt(1 - beta_s) FOR s = 1..t)
-        sigma â† sqrt((1 - alpha_bar_{t-1}) * beta_t / (1 - alpha_bar_t))
+        alpha_bar ← PRODUCT(sqrt(1 - beta_s) FOR s = 1..t)
+        sigma ← sqrt((1 - alpha_bar_{t-1}) * beta_t / (1 - alpha_bar_t))
 
-        x_{t-1} â† 1/sqrt(1 - beta_t) * (x_t - beta_t/sqrt(1 - alpha_bar_t) * predicted_noise)
-        x_{t-1} â† x_{t-1} + sigma * z      // Add stochastic noise
+        x_{t-1} ← 1/sqrt(1 - beta_t) * (x_t - beta_t/sqrt(1 - alpha_bar_t) * predicted_noise)
+        x_{t-1} ← x_{t-1} + sigma * z      // Add stochastic noise
 
     RETURN x_0                              // Generated image
 END FUNCTION

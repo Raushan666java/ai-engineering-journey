@@ -38,7 +38,7 @@ JDBC (Java Database Connectivity) is a low-level API that lets you execute raw S
 Use JDBC when you need fine-grained control over SQL, are doing bulk operations where ORM overhead hurts, or are interacting with database-specific features. Use JPA when you want to reduce boilerplate, need automatic dirty checking, lazy loading, or a unit-of-work pattern, and your queries are reasonably standard.
 
 ```java
-// â”€â”€ JDBC approach â”€â”€
+// ── JDBC approach ──
 public User findUserByIdJdbc(long id) {
     String sql = "SELECT id, name, email FROM users WHERE id = ?";
     try (Connection conn = dataSource.getConnection();
@@ -59,7 +59,7 @@ public User findUserByIdJdbc(long id) {
     return null;
 }
 
-// â”€â”€ JPA approach â”€â”€
+// ── JPA approach ──
 @Repository
 public class UserRepository {
     @PersistenceContext
@@ -259,7 +259,7 @@ Use optimistic for read-heavy workloads with rare writes. Use pessimistic for fi
 `@Transactional` is declarative transaction management. Spring wraps the method in a proxy that begins a transaction before the method and commits (or rolls back) after it. Manual management uses `TransactionTemplate` or `PlatformTransactionManager` directly.
 
 ```java
-// â”€â”€ Declarative with @Transactional â”€â”€
+// ── Declarative with @Transactional ──
 @Service
 public class OrderService {
     @Transactional
@@ -270,7 +270,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Manual with TransactionTemplate â”€â”€
+// ── Manual with TransactionTemplate ──
 @Service
 public class OrderService {
     private final TransactionTemplate txTemplate;

@@ -48,7 +48,7 @@ You **cannot** pull a plate from the middle or bottom without first removing eve
 ```
     TOP
     +-----+
-    |  5  |  â† last pushed (first popped)
+    |  5  |  ← last pushed (first popped)
     +-----+
     |  4  |
     +-----+
@@ -56,7 +56,7 @@ You **cannot** pull a plate from the middle or bottom without first removing eve
     +-----+
     |  2  |
     +-----+
-    |  1  |  â† first pushed (last popped)
+    |  1  |  ← first pushed (last popped)
     +-----+
    BOTTOM
 ```
@@ -87,8 +87,8 @@ ALGORITHM push(stack, value)
     IF stack.top == stack.capacity - 1 THEN
         PRINT "Stack Overflow"
         RETURN FALSE
-    stack.top â† stack.top + 1
-    stack.data[stack.top] â† value
+    stack.top ← stack.top + 1
+    stack.data[stack.top] ← value
     RETURN TRUE
 END ALGORITHM
 ```
@@ -106,8 +106,8 @@ ALGORITHM pop(stack)
     IF stack.top == -1 THEN
         PRINT "Stack Underflow"
         EXIT
-    value â† stack.data[stack.top]
-    stack.top â† stack.top - 1
+    value ← stack.data[stack.top]
+    stack.top ← stack.top - 1
     RETURN value
 END ALGORITHM
 ```
@@ -180,7 +180,7 @@ typedef struct {
 Stack struct
 +------------------+
 | data   -------+-------> [0] [1] [2] ... [N-1]
-| top           |          â†‘
+| top           |          ↑
 | capacity = N  |        top points here
 +------------------+
 ```
@@ -623,14 +623,14 @@ Size after emptying: 0
 **Pseudocode:**
 ```
 ALGORITHM is_balanced(expr)
-    stack â† empty stack
+    stack ← empty stack
     FOR each char c IN expr:
         IF c IN {'(', '{', '['}:
             stack.push(c)
         ELSE IF c IN {')', '}', ']'}:
             IF stack.is_empty():
                 RETURN FALSE
-            top â† stack.pop()
+            top ← stack.pop()
             IF (c == ')' AND top != '(') OR
                (c == '}' AND top != '{') OR
                (c == ']' AND top != '['):
@@ -789,23 +789,23 @@ Expression   Result
 **Pseudocode:**
 ```
 ALGORITHM infix_to_postfix(infix)
-    stack â† empty stack
-    postfix â† ""
+    stack ← empty stack
+    postfix ← ""
     FOR each char c IN infix:
         IF c IS operand:
-            postfix â† postfix + c
+            postfix ← postfix + c
         ELSE IF c == '(':
             stack.push(c)
         ELSE IF c == ')':
             WHILE stack NOT empty AND stack.top() != '(':
-                postfix â† postfix + stack.pop()
+                postfix ← postfix + stack.pop()
             stack.pop()    // discard '('
         ELSE:   // operator
             WHILE stack NOT empty AND precedence(stack.top()) >= precedence(c):
-                postfix â† postfix + stack.pop()
+                postfix ← postfix + stack.pop()
             stack.push(c)
     WHILE stack NOT empty:
-        postfix â† postfix + stack.pop()
+        postfix ← postfix + stack.pop()
     RETURN postfix
 ```
 
@@ -1120,7 +1120,7 @@ Imagine a queue at a ticket counter:
 The first person in line is served first. This is **First-In, First-Out (FIFO)**.
 
 ```
-   DEQUEUE â† [FRONT]                   [REAR] â† ENQUEUE
+   DEQUEUE ← [FRONT]                   [REAR] ← ENQUEUE
               +-----+-----+-----+-----+-----+
               |  1  |  2  |  3  |  4  |  5  |
               +-----+-----+-----+-----+-----+
@@ -1192,9 +1192,9 @@ ALGORITHM enqueue(queue, value)
     IF queue.size == queue.capacity THEN
         PRINT "Queue Overflow"
         RETURN FALSE
-    queue.rear â† (queue.rear + 1) MOD queue.capacity
-    queue.data[queue.rear] â† value
-    queue.size â† queue.size + 1
+    queue.rear ← (queue.rear + 1) MOD queue.capacity
+    queue.data[queue.rear] ← value
+    queue.size ← queue.size + 1
     RETURN TRUE
 END ALGORITHM
 ```
@@ -1213,9 +1213,9 @@ ALGORITHM dequeue(queue)
     IF queue.size == 0 THEN
         PRINT "Queue Underflow"
         EXIT
-    value â† queue.data[queue.front]
-    queue.front â† (queue.front + 1) MOD queue.capacity
-    queue.size â† queue.size - 1
+    value ← queue.data[queue.front]
+    queue.front ← (queue.front + 1) MOD queue.capacity
+    queue.size ← queue.size - 1
     RETURN value
 END ALGORITHM
 ```
@@ -1234,12 +1234,12 @@ Initial: `capacity = 5`, `front = 0`, `rear = -1`, `size = 0`.
 | 5 | dequeue() | 20 | 2 | 2 | 1 | [10, 20, 30, _, _] |
 | 6 | enqueue(40) | 40 | 2 | 3 | 2 | [10, 20, 30, 40, _] |
 | 7 | enqueue(50) | 50 | 2 | 4 | 3 | [10, 20, 30, 40, 50] |
-| 8 | enqueue(60) | 60 | 2 | 0 | 4 | [60, 20, 30, 40, 50] â† rear wraps to 0! |
-| 9 | enqueue(70) | 70 | 2 | 1 | 5 | [60, 70, 30, 40, 50] â† rear wraps to 1 |
+| 8 | enqueue(60) | 60 | 2 | 0 | 4 | [60, 20, 30, 40, 50] ← rear wraps to 0! |
+| 9 | enqueue(70) | 70 | 2 | 1 | 5 | [60, 70, 30, 40, 50] ← rear wraps to 1 |
 | 10 | enqueue(80) | → | 2 | 1 | 5 | Overflow! (size == capacity) |
 | 11 | dequeue() | 30 | 3 | 1 | 4 | [60, 70, 30, 40, 50] |
 | 12 | dequeue() | 40 | 4 | 1 | 3 | [60, 70, 30, 40, 50] |
-| 13 | dequeue() | 50 | 0 | 1 | 2 | [60, 70, 30, 40, 50] â† front wraps to 0! |
+| 13 | dequeue() | 50 | 0 | 1 | 2 | [60, 70, 30, 40, 50] ← front wraps to 0! |
 | 14 | dequeue() | 60 | 1 | 1 | 1 | [60, 70, 30, 40, 50] |
 | 15 | dequeue() | 70 | 2 | 1 | 0 | [60, 70, 30, 40, 50] |
 | 16 | dequeue() | → | 2 | 1 | 0 | Underflow! (size == 0) |
@@ -1505,16 +1505,16 @@ Queue
 **Pseudocode:**
 ```
 ALGORITHM enqueue(queue, value)
-    new_node â† ALLOCATE Node
-    new_node.data â† value
-    new_node.next â† NULL
+    new_node ← ALLOCATE Node
+    new_node.data ← value
+    new_node.next ← NULL
     IF queue.rear == NULL THEN
-        queue.front â† new_node
-        queue.rear â† new_node
+        queue.front ← new_node
+        queue.rear ← new_node
     ELSE
-        queue.rear.next â† new_node
-        queue.rear â† new_node
-    queue.size â† queue.size + 1
+        queue.rear.next ← new_node
+        queue.rear ← new_node
+    queue.size ← queue.size + 1
 END ALGORITHM
 ```
 
@@ -1532,13 +1532,13 @@ ALGORITHM dequeue(queue)
     IF queue.front == NULL THEN
         PRINT "Queue Underflow"
         EXIT
-    temp â† queue.front
-    value â† temp.data
-    queue.front â† queue.front.next
+    temp ← queue.front
+    value ← temp.data
+    queue.front ← queue.front.next
     IF queue.front == NULL THEN
-        queue.rear â† NULL
+        queue.rear ← NULL
     FREE(temp)
-    queue.size â† queue.size - 1
+    queue.size ← queue.size - 1
     RETURN value
 END ALGORITHM
 ```
@@ -2091,16 +2091,16 @@ BFS explores a graph level by level. It uses a queue to track nodes to visit nex
 
 ```
 Algorithm BFS(graph, start):
-    queue â† empty queue
-    visited â† boolean array (all false)
-    visited[start] â† true
+    queue ← empty queue
+    visited ← boolean array (all false)
+    visited[start] ← true
     queue.enqueue(start)
     WHILE queue NOT empty:
-        node â† queue.dequeue()
+        node ← queue.dequeue()
         PROCESS(node)
         FOR each neighbor OF node:
             IF NOT visited[neighbor]:
-                visited[neighbor] â† true
+                visited[neighbor] ← true
                 queue.enqueue(neighbor)
 ```
 
@@ -2111,7 +2111,7 @@ Documents sent to a printer are queued. The first document sent is the first doc
 ```
 Printer Queue:
 [Job1(DocA)] → [Job2(DocB)] → [Job3(DocC)]
-    â†‘printing            â†‘waiting        â†‘waiting
+    ↑printing            ↑waiting        ↑waiting
 ```
 
 ### 16.13.3 CPU Scheduling (Round Robin)
@@ -2121,7 +2121,7 @@ The OS maintains a ready queue of processes. Each process gets a fixed time slic
 ```
 Ready Queue:
 [P1] → [P2] → [P3] → [P4]   (each gets 10ms)
-        â†“
+        ↓
 P1 runs 10ms → if unfinished, re-enqueue at rear
 ```
 

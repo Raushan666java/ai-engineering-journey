@@ -486,7 +486,7 @@ Decomposition preserves dependencies if the union of FDs projected on each decom
 
 ```
 Active → Partially Committed → Committed
-   â†“                                  â†‘
+   ↓                                  ↑
 Failed → Aborted
 ```
 
@@ -2140,7 +2140,7 @@ Which of the following is not a DDL command?
 
 2. **Normalization**: Memorize the normal form table. Know the difference: BCNF = every FD LHS is superkey; 3NF allows non-superkey LHS if RHS is prime.
 
-3. **Serializability**: Draw the precedence graph. A single cycle = not conflict serializable. Remember: conflict â‡’ view, but not vice versa.
+3. **Serializability**: Draw the precedence graph. A single cycle = not conflict serializable. Remember: conflict ⇒ view, but not vice versa.
 
 4. **B+ Tree**: Pay attention to how GATE defines "order" → different years use different definitions (max children vs. max keys). Read the question carefully.
 

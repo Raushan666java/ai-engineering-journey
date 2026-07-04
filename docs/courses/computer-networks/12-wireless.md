@@ -70,7 +70,7 @@ Imagine a large room where people are trying to have conversations:
 
 **ESS (Extended Service Set)**: Multiple BSSes connected via a distribution system. All BSSes share the same SSID (network name). A station can roam between BSSes within the same ESS. The DS is typically Ethernet but can be any backbone technology.
 
-**AP (Access Point)**: Acts as a bridge between wireless and wired domains. Performs: beacon generation, station association/authentication, frame translation (802.11 â†” 802.3), power management coordination, and QoS scheduling.
+**AP (Access Point)**: Acts as a bridge between wireless and wired domains. Performs: beacon generation, station association/authentication, frame translation (802.11 ↔ 802.3), power management coordination, and QoS scheduling.
 
 **STA (Station)**: Any device with an 802.11 interface. STA states: Unauthenticated, Authenticated but unassociated, Associated, and Authenticated + Associated (fully connected).
 

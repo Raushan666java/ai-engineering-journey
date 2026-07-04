@@ -38,7 +38,7 @@ JDBC (Java Database Connectivity) is a low-level API that lets you execute raw S
 Use JDBC when you need fine-grained control over SQL, are doing bulk operations where ORM overhead hurts, or are interacting with database-specific features. Use JPA when you want to reduce boilerplate, need automatic dirty checking, lazy loading, or a unit-of-work pattern, and your queries are reasonably standard.
 
 ```java
-// â”€â”€ JDBC approach â”€â”€
+// ── JDBC approach ──
 public User findUserByIdJdbc(long id) {
     String sql = "SELECT id, name, email FROM users WHERE id = ?";
     try (Connection conn = dataSource.getConnection();
@@ -59,7 +59,7 @@ public User findUserByIdJdbc(long id) {
     return null;
 }
 
-// â”€â”€ JPA approach â”€â”€
+// ── JPA approach ──
 @Repository
 public class UserRepository {
     @PersistenceContext
@@ -259,7 +259,7 @@ Use optimistic for read-heavy workloads with rare writes. Use pessimistic for fi
 `@Transactional` is declarative transaction management. Spring wraps the method in a proxy that begins a transaction before the method and commits (or rolls back) after it. Manual management uses `TransactionTemplate` or `PlatformTransactionManager` directly.
 
 ```java
-// â”€â”€ Declarative with @Transactional â”€â”€
+// ── Declarative with @Transactional ──
 @Service
 public class OrderService {
     @Transactional
@@ -270,7 +270,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Manual with TransactionTemplate â”€â”€
+// ── Manual with TransactionTemplate ──
 @Service
 public class OrderService {
     private final TransactionTemplate txTemplate;
@@ -423,7 +423,7 @@ List<User> findActiveUsersByEmailDomain(@Param("domain") String domain);
 `@ManyToMany` creates an implicit join table with only two columns (the foreign keys). You cannot add attributes to the relationship (like `createdAt`, `role`, `quantity`). A join entity (also called an association entity) creates an explicit third entity mapped to the join table, allowing you to add columns to the relationship itself.
 
 ```java
-// â”€â”€ @ManyToMany (simple, no extra columns) â”€â”€
+// ── @ManyToMany (simple, no extra columns) ──
 @Entity
 public class Student {
     @Id private Long id;
@@ -443,7 +443,7 @@ public class Course {
     private Set<Student> students;
 }
 
-// â”€â”€ Join entity (extra columns possible) â”€â”€
+// ── Join entity (extra columns possible) ──
 @Entity
 public class Enrollment {
     @Id private Long id;
@@ -555,7 +555,7 @@ Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when sub
 A projection is a subset of entity fields fetched instead of the full entity. DTO projections fetch only the columns you need, avoiding the overhead of loading large columns (BLOBs, TEXT) or eagerly-fetched associations.
 
 ```java
-// â”€â”€ Interface-based projection â”€â”€
+// ── Interface-based projection ──
 public interface UserSummary {
     String getName();
     String getEmail();
@@ -564,7 +564,7 @@ public interface UserSummary {
 @Query("SELECT u.name AS name, u.email AS email FROM User u WHERE u.active = true")
 List<UserSummary> findActiveUserSummaries();
 
-// â”€â”€ Class-based DTO projection â”€â”€
+// ── Class-based DTO projection ──
 public record UserDto(String name, String email, int orderCount) {}
 
 @Query("SELECT new com.example.UserDto(u.name, u.email, SIZE(u.orders)) " +
@@ -805,7 +805,7 @@ List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 Spring Data JPA provides `@CreatedDate`, `@LastModifiedDate`, `@CreatedBy`, and `@LastModifiedBy` annotations. Enable auditing with `@EnableJpaAuditing` and an `AuditorAware` bean.
 
 ```java
-// â”€â”€ Enable auditing â”€â”€
+// ── Enable auditing ──
 @Configuration
 @EnableJpaAuditing(auditorAwareRef = "auditorProvider")
 public class JpaConfig {
@@ -819,7 +819,7 @@ public class JpaConfig {
     }
 }
 
-// â”€â”€ Base entity â”€â”€
+// ── Base entity ──
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public abstract class BaseEntity {
@@ -839,7 +839,7 @@ public abstract class BaseEntity {
     private String lastModifiedBy;
 }
 
-// â”€â”€ Usage â”€â”€
+// ── Usage ──
 @Entity
 public class Product extends BaseEntity {
     @Id @GeneratedValue private Long id;
@@ -925,7 +925,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findByActiveTrue(Sort sort);
 }
 
-// â”€â”€ Usage in service â”€â”€
+// ── Usage in service ──
 @Service
 public class ProductService {
     public Page<ProductDto> getProductsByCategory(String category, int page, int size) {
@@ -939,7 +939,7 @@ public class ProductService {
     }
 }
 
-// â”€â”€ REST controller with Spring MVC pagination â”€â”€
+// ── REST controller with Spring MVC pagination ──
 @GetMapping("/products")
 public ResponseEntity<Page<ProductDto>> getProducts(
         @RequestParam(defaultValue = "0") int page,
@@ -974,12 +974,12 @@ Always set a maximum page size to prevent abuse: `@PageableDefault(size = 20, ma
 Specifications let you build dynamic, type-safe queries programmatically by composing `Specification` objects with logical operators. They are the JPA equivalent of the Query Object pattern.
 
 ```java
-// â”€â”€ Step 1: Have your repository extend JpaSpecificationExecutor â”€â”€
+// ── Step 1: Have your repository extend JpaSpecificationExecutor ──
 public interface UserRepository extends JpaRepository<User, Long>,
         JpaSpecificationExecutor<User> {
 }
 
-// â”€â”€ Step 2: Create specification factory methods â”€â”€
+// ── Step 2: Create specification factory methods ──
 public class UserSpecifications {
 
     public static Specification<User> hasName(String name) {
@@ -1011,7 +1011,7 @@ public class UserSpecifications {
     }
 }
 
-// â”€â”€ Step 3: Compose specifications â”€â”€
+// ── Step 3: Compose specifications ──
 @Service
 public class UserSearchService {
 
@@ -1126,7 +1126,7 @@ Separate database is strongest isolation (best for compliance). Schema per tenan
 | Complexity | Simple | Moderate | Higher |
 
 ```java
-// â”€â”€ NativeQuery: raw SQL, returns Object[] â”€â”€
+// ── NativeQuery: raw SQL, returns Object[] ──
 @Query(value = "SELECT id, name, COUNT(*) OVER() as total " +
        "FROM users WHERE name ILIKE %:query% ORDER BY name " +
        "OFFSET :offset LIMIT :limit", nativeQuery = true)
@@ -1134,11 +1134,11 @@ List<Object[]> searchNative(@Param("query") String q,
                             @Param("offset") int offset,
                             @Param("limit") int limit);
 
-// â”€â”€ JPQL: entity-based â”€â”€
+// ── JPQL: entity-based ──
 @Query("SELECT u FROM User u WHERE u.name LIKE %:query% ORDER BY u.name")
 List<User> searchJpql(@Param("query") String q, Pageable pageable);
 
-// â”€â”€ CriteriaQuery: programmatic, type-safe â”€â”€
+// ── CriteriaQuery: programmatic, type-safe ──
 public List<User> searchCriteria(String name, String email, Boolean active) {
     CriteriaBuilder cb = em.getCriteriaBuilder();
     CriteriaQuery<User> cq = cb.createQuery(User.class);
@@ -1174,7 +1174,7 @@ Spring Data MongoDB follows the same repository pattern as JPA but maps document
 ```
 
 ```java
-// â”€â”€ Document mapping â”€â”€
+// ── Document mapping ──
 @Document(collection = "orders")
 public class Order {
     @Id private String id;
@@ -1185,7 +1185,7 @@ public class Order {
     private Address shippingAddress;
 }
 
-// â”€â”€ Repository â”€â”€
+// ── Repository ──
 public interface OrderRepository extends MongoRepository<Order, String> {
     List<Order> findByCustomerId(String customerId);
     List<Order> findByStatusOrderByOrderDateDesc(String status);
@@ -1300,7 +1300,7 @@ Spring Boot's caching abstraction works with Redis as the backing store. Configu
 ```
 
 ```java
-// â”€â”€ Configuration â”€â”€
+// ── Configuration ──
 @Configuration
 @EnableCaching
 public class CacheConfig {
@@ -1319,7 +1319,7 @@ public class CacheConfig {
     }
 }
 
-// â”€â”€ Usage â”€â”€
+// ── Usage ──
 @Service
 public class ProductService {
 
@@ -1484,7 +1484,7 @@ The most impactful single change: **enable slow query logging in both Hibernate 
 Sharding (horizontal partitioning) splits a table across multiple database instances. Each shard holds a subset of rows based on a shard key. The application routes queries to the correct shard.
 
 ```java
-// â”€â”€ Shard key routing with AbstractRoutingDataSource â”€â”€
+// ── Shard key routing with AbstractRoutingDataSource ──
 public class ShardRouter {
     private final Map<String, DataSource> shards = Map.of(
         "shard-0", createDataSource("jdbc:postgresql://shard0.example.com:5432/db"),
@@ -1498,7 +1498,7 @@ public class ShardRouter {
     }
 }
 
-// â”€â”€ Spring AbstractRoutingDataSource â”€â”€
+// ── Spring AbstractRoutingDataSource ──
 public class TenantAwareRoutingSource extends AbstractRoutingDataSource {
     @Override
     protected Object determineCurrentLookupKey() {
@@ -1525,7 +1525,7 @@ Sharding is the most complex scaling strategy. Exhaust read replicas, vertical s
 Use `@Transactional(readOnly = true)` to route read operations to a replica datasource. Implement this with `AbstractRoutingDataSource` and a `@Transactional` interceptor.
 
 ```java
-// â”€â”€ Multi-datasource configuration â”€â”€
+// ── Multi-datasource configuration ──
 @Configuration
 public class DataSourceConfig {
 
@@ -1553,7 +1553,7 @@ public class DataSourceConfig {
     }
 }
 
-// â”€â”€ Routing datasource â”€â”€
+// ── Routing datasource ──
 public class RoutingDataSource extends AbstractRoutingDataSource {
     @Override
     protected Object determineCurrentLookupKey() {
@@ -1562,7 +1562,7 @@ public class RoutingDataSource extends AbstractRoutingDataSource {
     }
 }
 
-// â”€â”€ Usage â”€â”€
+// ── Usage ──
 @Service
 public class UserService {
     @Transactional(readOnly = true)  // routes to REPLICA
@@ -1593,27 +1593,27 @@ public class Author {
     @Id @GeneratedValue private Long id;
     private String name;
 
-    // â”€â”€ ALL: persist, merge, remove, refresh, detach â”€â”€
+    // ── ALL: persist, merge, remove, refresh, detach ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
     private List<Book> books;
 
-    // â”€â”€ PERSIST: saving Author saves Books â”€â”€
+    // ── PERSIST: saving Author saves Books ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.PERSIST)
     private List<Article> articles;
 
-    // â”€â”€ MERGE: updating Author updates Books â”€â”€
+    // ── MERGE: updating Author updates Books ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.MERGE)
     private List<Book> editedBooks;
 
-    // â”€â”€ REMOVE: deleting Author deletes Books â”€â”€
+    // ── REMOVE: deleting Author deletes Books ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.REMOVE)
     private List<Book> coAuthoredBooks;
 
-    // â”€â”€ DETACH: detaching Author detaches Books â”€â”€
+    // ── DETACH: detaching Author detaches Books ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.DETACH)
     private List<Book> reviewedBooks;
 
-    // â”€â”€ REFRESH: refreshing Author refreshes Books â”€â”€
+    // ── REFRESH: refreshing Author refreshes Books ──
     @OneToMany(mappedBy = "author", cascade = CascadeType.REFRESH)
     private List<Book> proofreadBooks;
 }
@@ -1651,7 +1651,7 @@ Use `CascadeType.ALL` only when the child entity has no independent lifecycle. N
 `@Embedded` maps the fields of an embeddable class directly into the parent table (flat schema). `@OneToOne` creates a separate table with a foreign key relationship.
 
 ```java
-// â”€â”€ @Embedded → fields in the same table â”€â”€
+// ── @Embedded → fields in the same table ──
 @Embeddable
 public class Address {
     private String street;
@@ -1671,7 +1671,7 @@ public class User {
 
 // Result: single table "users" with columns: id, name, street, city, zip_code, country
 
-// â”€â”€ @OneToOne → separate table with FK â”€â”€
+// ── @OneToOne → separate table with FK ──
 @Entity
 public class Profile {
     @Id private Long id;
@@ -1715,7 +1715,7 @@ private Address homeAddress;
 Batch processing inserts or updates thousands of rows efficiently by batching JDBC statements and flushing periodically.
 
 ```java
-// â”€â”€ Configuration â”€â”€
+// ── Configuration ──
 spring:
   jpa:
     properties:
@@ -1726,7 +1726,7 @@ spring:
         order_updates: true
         batch_versioned_data: true
 
-// â”€â”€ Batch insert service â”€â”€
+// ── Batch insert service ──
 @Service
 public class BatchImportService {
 
@@ -1900,7 +1900,7 @@ Database rollbacks are more complex than code rollbacks because the schema chang
 Every migration must have a corresponding "down" migration that reverses the change.
 
 ```java
-// â”€â”€ Flyway with callback for rollback support â”€â”€
+// ── Flyway with callback for rollback support ──
 public class FlywayRollbackService {
     public void undoLastMigration() {
         Flyway flyway = Flyway.configure()

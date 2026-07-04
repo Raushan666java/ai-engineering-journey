@@ -865,11 +865,11 @@ class SupplyChainVisibilityAgent extends Agent
 A real-time tracking system needs to ingest carrier updates, push status changes to customers, and handle high throughput. Here's the architecture:
 
 ```
-Carrier APIs â”€â”€â–º Polling Agent â”€â”€â–º Tracking Event Store â”€â”€â–º Laravel Reverb â”€â”€â–º Customer Dashboard
-                       â”‚                                                  â”‚
-                       â””â”€â”€â–º Exception Detector â”€â”€â–º Notification Queue â”€â”€â–º Email/SMS/Push
-                                   â”‚
-                                   â””â”€â”€â–º Escalation Agent â”€â”€â–º Slack Alert
+Carrier APIs ──► Polling Agent ──► Tracking Event Store ──► Laravel Reverb ──► Customer Dashboard
+                       │                                                  │
+                       └──► Exception Detector ──► Notification Queue ──► Email/SMS/Push
+                                   │
+                                   └──► Escalation Agent ──► Slack Alert
 ```
 
 **Key components:**
@@ -964,13 +964,13 @@ public function reserveQuick(string $sku, int $qty): bool
 Logistics IoT sensors (GPS trackers, temperature loggers, vibration sensors, door sensors) generate high-frequency telemetry that must be ingested, processed, and stored reliably.
 
 ```
-Sensors â”€â”€â–º MQTT Broker â”€â”€â–º Laravel MQTT Client â”€â”€â–º Ingestion Job â”€â”€â–º InfluxDB/TimescaleDB
-                              â”‚                           â”‚
-                              â–¼                           â–¼
-                          Stream Processor â”€â”€â–º Alert Engine â”€â”€â–º Notification
-                              â”‚
-                              â–¼
-                          Aggregate Writer â”€â”€â–º PostgreSQL (summaries)
+Sensors ──► MQTT Broker ──► Laravel MQTT Client ──► Ingestion Job ──► InfluxDB/TimescaleDB
+                              │                           │
+                              ▼                           ▼
+                          Stream Processor ──► Alert Engine ──► Notification
+                              │
+                              ▼
+                          Aggregate Writer ──► PostgreSQL (summaries)
 ```
 
 **Ingestion endpoint (Laravel):**
@@ -1138,21 +1138,21 @@ The `idempotency_key` is stored in the database with a unique index, ensuring ev
 A rate shopping system queries multiple carriers in parallel and returns the best option:
 
 ```
-Request â”€â”€â–º RateShoppingController â”€â”€â–º RateShoppingService
-                                              â”‚
-                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                    â–¼                         â–¼                        â–¼
+Request ──► RateShoppingController ──► RateShoppingService
+                                              │
+                    ┌─────────────────────────┼────────────────────────┐
+                    ▼                         ▼                        ▼
             FedExClient              UPSClient                DHLClient
-                    â”‚                         â”‚                        â”‚
-                    â–¼                         â–¼                        â–¼
+                    │                         │                        │
+                    ▼                         ▼                        ▼
               FedEx API                 UPS API                  DHL API
-                    â”‚                         â”‚                        â”‚
-                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                              â–¼
+                    │                         │                        │
+                    └─────────────────────────┼────────────────────────┘
+                                              ▼
                                       Aggregator
                                       (sort, filter, cache)
-                                              â”‚
-                                              â–¼
+                                              │
+                                              ▼
                                       Response
 ```
 
@@ -1315,29 +1315,29 @@ class InventoryPredictionService
 **Architecture:**
 
 ```
-Tenant A â”€â”€â–º            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-Tenant B â”€â”€â–º            â”‚   API Gateway        â”‚
-Tenant C â”€â”€â–º            â”‚   (Rate Limiting,    â”‚
-                         â”‚    Auth, Throttling) â”‚
-                         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                   â–¼
-                         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                         â”‚  Laravel Application â”‚
-                         â”‚  (Modules as Services)â”‚
-                         â””â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜
-                            â–¼      â–¼      â–¼
-                    â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”
-                    â”‚PostgreSQLâ”‚ â”‚ Redis â”‚ â”‚Queue  â”‚
-                    â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜
-                            â”‚
-                            â–¼
-                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                    â”‚  AI Agent Layer      â”‚
-                    â”‚  (Laravel AI SDK)    â”‚
-                    â”‚  - Forecasting       â”‚
-                    â”‚  - Optimization      â”‚
-                    â”‚  - Anomaly Detectionâ”‚
-                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+Tenant A ──►            ┌─────────────────────┐
+Tenant B ──►            │   API Gateway        │
+Tenant C ──►            │   (Rate Limiting,    │
+                         │    Auth, Throttling) │
+                         └─────────┬───────────┘
+                                   ▼
+                         ┌─────────────────────┐
+                         │  Laravel Application │
+                         │  (Modules as Services)│
+                         └──┬──────┬──────┬────┘
+                            ▼      ▼      ▼
+                    ┌──────┐ ┌──────┐ ┌──────┐
+                    │PostgreSQL│ │ Redis │ │Queue  │
+                    └──────┘ └──────┘ └──────┘
+                            │
+                            ▼
+                    ┌─────────────────────┐
+                    │  AI Agent Layer      │
+                    │  (Laravel AI SDK)    │
+                    │  - Forecasting       │
+                    │  - Optimization      │
+                    │  - Anomaly Detection│
+                    └─────────────────────┘
 ```
 
 **Multi-Tenancy:**
@@ -1476,11 +1476,11 @@ $shipment->update(['routing_rule' => 'qc_inspection']);
 **Phase 3 → Cutover by Module (4â€“8 weeks):**
 
 ```
-Week 4: Receiving â”€â”€â–º Laravel
-Week 5: Putaway    â”€â”€â–º Laravel
-Week 6: Picking    â”€â”€â–º Laravel
-Week 7: Packing    â”€â”€â–º Laravel
-Week 8: Shipping   â”€â”€â–º Laravel
+Week 4: Receiving ──► Laravel
+Week 5: Putaway    ──► Laravel
+Week 6: Picking    ──► Laravel
+Week 7: Packing    ──► Laravel
+Week 8: Shipping   ──► Laravel
 ```
 
 Each module cutover is gated by a 3-day observation period with manual verification.

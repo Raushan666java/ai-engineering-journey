@@ -176,7 +176,7 @@ Rarely used in modern REST APIs (more common in web apps).
 // === REST constraint violations ===
 /*
 Violation                      Example                      Fix
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────────────────
 Not stateless                 Storing auth in session      Use JWT tokens
 Not uniform interface         /api/getOrder?id=123         GET /api/orders/123
 Not cacheable                 No Cache-Control headers     Add caching headers
@@ -302,7 +302,7 @@ Content-Type: application/json-patch+json
 // === Summary ===
 /*
 Method   Idempotent  Safe   Use Case                Response
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+──────────────────────────────────────────────────────────────
 GET      Yes         Yes    Retrieve resource       200 OK
 POST     No          No     Create (unknown URL)    201 Created
 PUT      Yes         No     Replace entire resource 200 OK / 201
@@ -518,22 +518,22 @@ public ResponseEntity<ProblemDetail> handleUnexpected(Exception ex) {
 // === Status code decision flow ===
 /*
 Request received
-â”œâ”€ Parse error?                         → 400 Bad Request
-â”œâ”€ Authentication missing/invalid?       → 401 Unauthorized
-â”œâ”€ Authenticated but forbidden?          → 403 Forbidden
-â”œâ”€ Resource doesn't exist?               → 404 Not Found
-â”œâ”€ Method not allowed?                   → 405 Method Not Allowed
-â”œâ”€ Content-Type unsupported?             → 415 Unsupported Media Type
-â”œâ”€ Validation error (semantic)?          → 422 Unprocessable Entity
-â”œâ”€ Concurrent modification?              → 409 Conflict
-â”œâ”€ Rate limited?                         → 429 Too Many Requests
-â”œâ”€ Request succeeds
-â”‚  â”œâ”€ GET / HEAD → 200 OK
-â”‚  â”œâ”€ POST (created) → 201 Created
-â”‚  â”œâ”€ PUT / PATCH (updated) → 200 OK
-â”‚  â”œâ”€ DELETE (no body) → 204 No Content
-â”‚  â””â”€ Async accepted → 202 Accepted
-â””â”€ Server error?                         → 500 Internal Server Error
+├─ Parse error?                         → 400 Bad Request
+├─ Authentication missing/invalid?       → 401 Unauthorized
+├─ Authenticated but forbidden?          → 403 Forbidden
+├─ Resource doesn't exist?               → 404 Not Found
+├─ Method not allowed?                   → 405 Method Not Allowed
+├─ Content-Type unsupported?             → 415 Unsupported Media Type
+├─ Validation error (semantic)?          → 422 Unprocessable Entity
+├─ Concurrent modification?              → 409 Conflict
+├─ Rate limited?                         → 429 Too Many Requests
+├─ Request succeeds
+│  ├─ GET / HEAD → 200 OK
+│  ├─ POST (created) → 201 Created
+│  ├─ PUT / PATCH (updated) → 200 OK
+│  ├─ DELETE (no body) → 204 No Content
+│  └─ Async accepted → 202 Accepted
+└─ Server error?                         → 500 Internal Server Error
 */
 ```
 
@@ -647,7 +647,7 @@ class OrderApiController {
 // === Naming conventions ===
 /*
 Concept             Good                  Bad
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────
 Collection          /api/orders           /api/OrdersList
 Single resource     /api/orders/123       /api/order?id=123
 Sub-resource        /api/orders/123/items /api/getOrderItems?orderId=123
@@ -774,7 +774,7 @@ public List<OrderV2> listOrdersV2() {
 // === Versioning strategy comparison ===
 /*
 Strategy           URI Path     Query Param   Custom Header   Accept Header
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+───────────────────────────────────────────────────────────────────────────────
 Caching            Good         Poor          Good            Good
 Browser testing    Easy         Easy          Hard            Hard
 RESTful purity     Low          Low           Medium          High
@@ -1077,7 +1077,7 @@ class OrderSearchCriteria {
 // === 4. Pagination types comparison ===
 /*
 Feature            Offset-based           Cursor-based
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+─────────────────────────────────────────────────────────
 Performance        O(n) for large OFFSET  O(1) always
 Consistency        Page numbers shift     Stable (items don't move)
                     when new items added
@@ -1344,7 +1344,7 @@ void testValidationReturnsFieldErrors() throws Exception {
 // === Common error response formats compared ===
 /*
 Format               Example                                RFC
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+──────────────────────────────────────────────────────────────────
 Problem Details      {type, title, status, detail,          RFC 7807
 (RFC 7807)            instance, properties}
 
@@ -2951,14 +2951,14 @@ Server controls the possible transitions.
 
 // === Summary comparison ===
 /*
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Level   â”‚ What You Do                         â”‚ Adoption       â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ L0 (POX)â”‚ Single URL, all POST, RPC-style     â”‚ Legacy/SOAP    â”‚
-â”‚ L1 (Res)â”‚ Multiple resource URLs, still POST  â”‚ Rare, legacy   â”‚
-â”‚ L2 (Ver)â”‚ Resources + HTTP verbs + status     â”‚ 95% of APIs    â”‚
-â”‚ L3 (Hyp)â”‚ L2 + hypermedia links in responses  â”‚ <5% of APIs    â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────┬─────────────────────────────────────┬────────────────┐
+│ Level   │ What You Do                         │ Adoption       │
+├─────────┼─────────────────────────────────────┼────────────────┤
+│ L0 (POX)│ Single URL, all POST, RPC-style     │ Legacy/SOAP    │
+│ L1 (Res)│ Multiple resource URLs, still POST  │ Rare, legacy   │
+│ L2 (Ver)│ Resources + HTTP verbs + status     │ 95% of APIs    │
+│ L3 (Hyp)│ L2 + hypermedia links in responses  │ <5% of APIs    │
+└─────────┴─────────────────────────────────────┴────────────────┘
 */
 
 // === Identifying RMM level ===
@@ -3218,7 +3218,7 @@ class OrderGrpcClient {
 // === 4. Decision framework ===
 /*
                      REST           GraphQL          gRPC
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+───────────────────────────────────────────────────────────
 Transport           HTTP/1.1       HTTP/1.1+       HTTP/2
 Data format         JSON (XML)     JSON            Protobuf
 Caching             Native (304)   Custom          Not built-in
@@ -6899,7 +6899,7 @@ void testBulkCreate() {
 // === 10. Test summary ===
 /*
 Testing Layer        Tool                What it tests
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+─────────────────────────────────────────────────────────
 Unit (Controller)   MockMvc             Logic, status codes, response body,
                                         validation, error handling
 Unit (Service)      JUnit + Mockito     Business logic, exception handling
@@ -7225,28 +7225,28 @@ void testIfModifiedSince() throws Exception {
 // === 7. Conditional request decision flow ===
 /*
 GET /resource
-â”œâ”€ Has If-None-Match?
-â”‚  â”œâ”€ Yes → ETag matches? → Yes → 304 (cached)
-â”‚  â”‚                       → No  → 200 (fresh data)
-â”‚  â””â”€ No → Has If-Modified-Since?
-â”‚          â”œâ”€ Yes → Not modified since? → Yes → 304
-â”‚          â”‚                           → No → 200
-â”‚          â””â”€ No → 200 (always serve)
+├─ Has If-None-Match?
+│  ├─ Yes → ETag matches? → Yes → 304 (cached)
+│  │                       → No  → 200 (fresh data)
+│  └─ No → Has If-Modified-Since?
+│          ├─ Yes → Not modified since? → Yes → 304
+│          │                           → No → 200
+│          └─ No → 200 (always serve)
 
 PUT /resource
-â”œâ”€ Has If-Match?
-â”‚  â”œâ”€ Yes → ETag matches? → Yes → 200 (update)
-â”‚  â”‚                       → No → 412 (conflict)
-â”‚  â””â”€ No → Has If-Unmodified-Since?
-â”‚          â”œâ”€ Yes → Not modified since? → Yes → 200
-â”‚          â”‚                           → No → 412
-â”‚          â””â”€ No → 200 (last-writer-wins, no locking)
+├─ Has If-Match?
+│  ├─ Yes → ETag matches? → Yes → 200 (update)
+│  │                       → No → 412 (conflict)
+│  └─ No → Has If-Unmodified-Since?
+│          ├─ Yes → Not modified since? → Yes → 200
+│          │                           → No → 412
+│          └─ No → 200 (last-writer-wins, no locking)
 
 DELETE /resource
-â”œâ”€ Has If-Match?
-â”‚  â”œâ”€ Yes → ETag matches? → Yes → 204 (deleted)
-â”‚  â”‚                       → No → 412 (conflict)
-â”‚  â””â”€ No → 204 (no locking)
+├─ Has If-Match?
+│  ├─ Yes → ETag matches? → Yes → 204 (deleted)
+│  │                       → No → 412 (conflict)
+│  └─ No → 204 (no locking)
 */
 ```
 

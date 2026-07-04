@@ -1523,10 +1523,10 @@ public:
 
 ```
 Is it a true subtype?
-    â”œâ”€â”€ Yes → Public inheritance (IS-A)
-    â””â”€â”€ No  → Does the class just need functionality?
-              â”œâ”€â”€ Yes → Composition (HAS-A)
-              â””â”€â”€ No  → Neither; unrelated
+    ├── Yes → Public inheritance (IS-A)
+    └── No  → Does the class just need functionality?
+              ├── Yes → Composition (HAS-A)
+              └── No  → Neither; unrelated
 ```
 
 ### 4.7.7 IS-A vs HAS-A Code Comparison

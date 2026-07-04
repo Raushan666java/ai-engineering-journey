@@ -843,8 +843,8 @@ Three approaches:
 
 d-separation determines whether two variables are conditionally independent given observed variables. A path is blocked if:
 - **Chain** A → B → C with B observed
-- **Fork** A â† B → C with B observed
-- **Collider** A → B â† C with B or descendant NOT observed
+- **Fork** A ← B → C with B observed
+- **Collider** A → B ← C with B or descendant NOT observed
 
 If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 

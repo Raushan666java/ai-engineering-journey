@@ -1784,13 +1784,13 @@ Use **std::mutex** when:
 **Decision flowchart:**
 
 ```
-Single variable + simple operation? â”€â”€â”€→ std::atomic
-         â†“ No
-Multiple variables must be consistent? â”€→ std::mutex
-         â†“ No
-Performance-critical hot path? â”€â”€â”€â”€â”€â”€â”€â”€→ std::atomic
-         â†“ No
-Default choice â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€→ std::mutex
+Single variable + simple operation? ───→ std::atomic
+         ↓ No
+Multiple variables must be consistent? ─→ std::mutex
+         ↓ No
+Performance-critical hot path? ────────→ std::atomic
+         ↓ No
+Default choice ────────────────────────→ std::mutex
 ```
 
 ### Q3: Explain the difference between std::lock_guard, std::unique_lock, and std::scoped_lock.

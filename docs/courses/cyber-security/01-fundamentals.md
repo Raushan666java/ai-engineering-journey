@@ -664,13 +664,13 @@ Uses descriptive scales (Low, Medium, High) rather than monetary values. Best wh
               IMPACT
               1     2     3     4     5
               VL    L     M     H     VH
-LIKELIHOOD  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-5 (VH)      â”‚  M    H     H     C     C   â”‚
-4 (H)       â”‚  L    M     H     H     C   â”‚
-3 (M)       â”‚  L    M     M     H     H   â”‚
-2 (L)       â”‚ VL    L     M     M     H   â”‚
-1 (VL)      â”‚ VL    VL    L     L     M   â”‚
-            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+LIKELIHOOD  ┌─────────────────────────────┐
+5 (VH)      │  M    H     H     C     C   │
+4 (H)       │  L    M     H     H     C   │
+3 (M)       │  L    M     M     H     H   │
+2 (L)       │ VL    L     M     M     H   │
+1 (VL)      │ VL    VL    L     L     M   │
+            └─────────────────────────────┘
 
 VL = Very Low (1-2)    L = Low (3-5)    M = Medium (6-10)
 H = High (12-16)       C = Critical (16-25)
@@ -1911,7 +1911,7 @@ Supplicant        NAS/AP           RADIUS Server       PKI/CA
 
 ```
 Attack Tree Node                            Control / Mitigation
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€              â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+──────────────────────────────              ─────────────────────────────────
 Goal: Exfiltrate Customer DB                
 +-- OR                                       
     +-- AND [SQL Injection]                 Prepared statements + ORM
@@ -1930,7 +1930,7 @@ Goal: Exfiltrate Customer DB
 
 ```
 Leaf Node                  Cost to Exploit   Detection Difficulty   Cost to Mitigate   Priority
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”€â”€â”€â”€â”€â”€â”€â”€
+─────────────────────────  ────────────────  ────────────────────  ─────────────────  ────────
 SQL inject vulnerable input      $0                 Low (WAF)            $5K (WAF)       HIGH
 Read unencrypted config          $0                 Low (FIM)            $2K (Vault)      HIGH
 Phish DBA credentials            $500               Low (awareness)      $20K (training)  MEDIUM

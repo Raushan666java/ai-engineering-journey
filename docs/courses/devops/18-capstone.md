@@ -141,17 +141,17 @@ The pipeline must automate build, test, security scan, deploy, monitor, and roll
 - Create a GitHub repository with the following directory structure:
 ```
 /
-â”œâ”€â”€ frontend/          # React application
-â”œâ”€â”€ api/               # Node.js or Go API service
-â”œâ”€â”€ infra/             # Terraform configurations
-â”œâ”€â”€ k8s/               # Kubernetes manifests
-â”œâ”€â”€ scripts/           # Automation scripts
-â”œâ”€â”€ .github/           # CI/CD workflows
-â”‚   â””â”€â”€ workflows/
-â”œâ”€â”€ docs/              # Documentation
-â”œâ”€â”€ docker-compose.yml # Local development
-â”œâ”€â”€ Makefile           # Development helpers
-â””â”€â”€ README.md
+├── frontend/          # React application
+├── api/               # Node.js or Go API service
+├── infra/             # Terraform configurations
+├── k8s/               # Kubernetes manifests
+├── scripts/           # Automation scripts
+├── .github/           # CI/CD workflows
+│   └── workflows/
+├── docs/              # Documentation
+├── docker-compose.yml # Local development
+├── Makefile           # Development helpers
+└── README.md
 ```
 
 - Use trunk-based development with short-lived feature branches

@@ -63,10 +63,10 @@ flowchart LR
 A singly linked list node has exactly two fields:
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚   Data   â”‚   Next   â”‚
-â”‚  (value) â”‚ (pointer)â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────┬──────────┐
+│   Data   │   Next   │
+│  (value) │ (pointer)│
+└──────────┴──────────┘
 ```
 
 - **Data** → the actual value stored (int, char, object, etc.).
@@ -75,7 +75,7 @@ A singly linked list node has exactly two fields:
 The list itself is identified solely by a **head** pointer → the first node. If `head == nullptr`, the list is empty.
 
 ```
-head → [10|â—] → [20|â—] → [30|â—] → nullptr
+head → [10|●] → [20|●] → [30|●] → nullptr
 ```
 
 ### Why Not Always Use Arrays?

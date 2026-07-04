@@ -66,19 +66,19 @@ The term "context-free" means that a variable can be replaced by its production 
 
 If G has a production A → Î³, then we can replace A by Î³ in any string containing A.
 
-**Definition:** For strings u, v âˆˆ (V âˆª Î£)*, we write u â‡’ v (u derives v in one step) if:
+**Definition:** For strings u, v âˆˆ (V âˆª Î£)*, we write u ⇒ v (u derives v in one step) if:
 - u = Î±AÎ² and v = Î±Î³Î² for some production A → Î³ âˆˆ R.
 
-We write u â‡’* v if v can be obtained from u by zero or more derivation steps.
+We write u ⇒* v if v can be obtained from u by zero or more derivation steps.
 
 The **language generated** by G is:
-L(G) = { w âˆˆ Î£* | S â‡’* w }
+L(G) = { w âˆˆ Î£* | S ⇒* w }
 
 ### 5.4 Leftmost and Rightmost Derivations
 
-A derivation is **leftmost** if at each step the leftmost remaining variable is replaced. Denoted â‡’â‚—.
+A derivation is **leftmost** if at each step the leftmost remaining variable is replaced. Denoted ⇒â‚—.
 
-A derivation is **rightmost** if at each step the rightmost remaining variable is replaced. Denoted â‡’áµ£.
+A derivation is **rightmost** if at each step the rightmost remaining variable is replaced. Denoted ⇒áµ£.
 
 For any parse tree, there is exactly one leftmost derivation and exactly one rightmost derivation.
 
@@ -101,7 +101,7 @@ For programming languages, ambiguity is unacceptable → every program must have
 
 ### 5.7 Left Recursion
 
-A grammar is **left-recursive** if it has a variable A such that A â‡’âº AÎ± for some Î±. This causes problems for top-down parsers (they may loop infinitely).
+A grammar is **left-recursive** if it has a variable A such that A ⇒âº AÎ± for some Î±. This causes problems for top-down parsers (they may loop infinitely).
 
 **Immediate left recursion:** A → AÎ± | Î² (can be eliminated)
 
@@ -130,7 +130,7 @@ Construct a CFG for PAL = { w âˆˆ {a,b}* | w = wÊ€ }.
 - S → aSa | bSb | Îµ | a | b
 
 **Derivation** of "abba":
-S â‡’ aSa â‡’ abSba â‡’ abbÎµba = abba
+S ⇒ aSa ⇒ abSba ⇒ abbÎµba = abba
 
 **Parse tree** (text description):
 ```
@@ -159,7 +159,7 @@ This grammar encodes precedence: + is lower than *, which is lower than ().
 **Derivation** of "i + i * i":
 
 Leftmost:
-E â‡’ E + T â‡’ T + T â‡’ F + T â‡’ i + T â‡’ i + T * F â‡’ i + F * F â‡’ i + i * F â‡’ i + i * i
+E ⇒ E + T ⇒ T + T ⇒ F + T ⇒ i + T ⇒ i + T * F ⇒ i + F * F ⇒ i + i * F ⇒ i + i * i
 
 **Parse tree** (text):
 ```
@@ -223,7 +223,7 @@ F  → (E) | i
 ```
 
 Now the grammar is suitable for recursive-descent or LL parsing. Derivation of "i + i":
-E â‡’ T E' â‡’ F T' E' â‡’ i T' E' â‡’ i Îµ E' â‡’ i + T E' â‡’ i + F T' E' â‡’ i + i T' E' â‡’ i + i Îµ Îµ = i + i
+E ⇒ T E' ⇒ F T' E' ⇒ i T' E' ⇒ i Îµ E' ⇒ i + T E' ⇒ i + F T' E' ⇒ i + i T' E' ⇒ i + i Îµ Îµ = i + i
 
 ### Example 5.5: CFG for a Simple Programming Language Fragment
 

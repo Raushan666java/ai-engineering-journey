@@ -32,7 +32,7 @@ flowchart LR
 Microservice architecture decomposes an application into small, independently deployable services that each own a specific business capability. A monolithic architecture packages all functionality into a single deployable unit.
 
 ```java
-// â”€â”€ Monolithic: everything in one service â”€â”€
+// ── Monolithic: everything in one service ──
 @RestController
 @RequestMapping("/api")
 public class MonolithController {
@@ -42,7 +42,7 @@ public class MonolithController {
     @Autowired private NotificationService notificationService;
 }
 
-// â”€â”€ Microservice: separate services, each with its own API â”€â”€
+// ── Microservice: separate services, each with its own API ──
 // Service 1: user-service
 @SpringBootApplication
 @EnableEurekaClient
@@ -93,7 +93,7 @@ Start monolithic. Split into microservices only when you need independent scalin
 Decomposition follows Domain-Driven Design → identify bounded contexts and aggregate boundaries. Use the Strangler Fig pattern to migrate incrementally.
 
 ```java
-// â”€â”€ Phase 1: Identify bounded contexts through domain analysis â”€â”€
+// ── Phase 1: Identify bounded contexts through domain analysis ──
 // Original monolith entities often blur domain boundaries:
 @Entity
 public class User {
@@ -105,7 +105,7 @@ public class User {
     private List<Order> orders;         // belongs to order context
 }
 
-// â”€â”€ Phase 2: Extract the first bounded context â”€â”€
+// ── Phase 2: Extract the first bounded context ──
 // New user-service keeps only user data
 @Entity
 @Table(name = "users")
@@ -115,7 +115,7 @@ public class User {
     private String email;
 }
 
-// â”€â”€ Phase 3: Create API contract between services â”€â”€
+// ── Phase 3: Create API contract between services ──
 // user-service exposes what order-service needs via a client
 @FeignClient(name = "user-service")
 public interface UserServiceClient {
@@ -133,7 +133,7 @@ public class Order {
     private String status;
 }
 
-// â”€â”€ Phase 4: Strangler Fig → route traffic gradually â”€â”€
+// ── Phase 4: Strangler Fig → route traffic gradually ──
 // API gateway routes /users/* to user-service, /orders/* to order-service
 // Both services can still share the old database during migration
 @Bean
@@ -158,7 +158,7 @@ Extraction order: start with the bounded context that changes most frequently, h
 Synchronous (HTTP/gRPC) gives immediate responses but couples services in time. Asynchronous (messaging) decouples services but adds eventual consistency and complexity.
 
 ```java
-// â”€â”€ Synchronous: HTTP via Feign Client â”€â”€
+// ── Synchronous: HTTP via Feign Client ──
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
@@ -178,7 +178,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Asynchronous: Event-driven via Kafka â”€â”€
+// ── Asynchronous: Event-driven via Kafka ──
 @Service
 public class OrderEventProducer {
     @Autowired private KafkaTemplate<String, OrderEvent> kafka;
@@ -232,7 +232,7 @@ Use synchronous for reads and commands where immediate response is required. Use
 Spring Cloud Gateway provides routing, filtering, rate limiting, and cross-cutting concerns at a single entry point.
 
 ```java
-// â”€â”€ Main application â”€â”€
+// ── Main application ──
 @SpringBootApplication
 public class ApiGatewayApplication {
     public static void main(String[] args) {
@@ -240,7 +240,7 @@ public class ApiGatewayApplication {
     }
 }
 
-// â”€â”€ Route configuration with filters â”€â”€
+// ── Route configuration with filters ──
 @Configuration
 public class GatewayConfig {
 
@@ -269,14 +269,14 @@ public class GatewayConfig {
             .build();
     }
 
-    // â”€â”€ Redis-based rate limiter â”€â”€
+    // ── Redis-based rate limiter ──
     @Bean
     public RedisRateLimiter redisRateLimiter() {
         return new RedisRateLimiter(10, 20, 1);  // 10 requests/sec, burst 20
     }
 }
 
-// â”€â”€ Global filters (applied to every route) â”€â”€
+// ── Global filters (applied to every route) ──
 @Component
 public class GlobalLoggingFilter implements GlobalFilter, Ordered {
     @Override
@@ -292,7 +292,7 @@ public class GlobalLoggingFilter implements GlobalFilter, Ordered {
     }
 }
 
-// â”€â”€ Security: validate JWT at the gateway â”€â”€
+// ── Security: validate JWT at the gateway ──
 @Component
 public class JwtAuthFilter implements GatewayFilterFactory<Object> {
     @Override
@@ -325,7 +325,7 @@ API Gateway responsibilities: routing, authentication, rate limiting, request/re
 Service discovery lets services find each other without hardcoded URLs. Each service registers itself with Eureka on startup and sends heartbeats to maintain its lease.
 
 ```java
-// â”€â”€ Eureka Server (the registry) â”€â”€
+// ── Eureka Server (the registry) ──
 @SpringBootApplication
 @EnableEurekaServer
 public class EurekaServerApplication {
@@ -339,7 +339,7 @@ public class EurekaServerApplication {
 // eureka.client.register-with-eureka: false
 // eureka.client.fetch-registry: false
 
-// â”€â”€ Eureka Client (every microservice) â”€â”€
+// ── Eureka Client (every microservice) ──
 @SpringBootApplication
 @EnableEurekaClient
 public class OrderServiceApplication {
@@ -355,7 +355,7 @@ public class OrderServiceApplication {
 // eureka.instance.lease-renewal-interval-in-seconds: 10
 // eureka.instance.lease-expiration-duration-in-seconds: 30
 
-// â”€â”€ Using discovery to call another service â”€â”€
+// ── Using discovery to call another service ──
 @Service
 public class OrderService {
 
@@ -380,7 +380,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Load-balanced with @LoadBalanced â”€â”€
+// ── Load-balanced with @LoadBalanced ──
 @Configuration
 public class ClientConfig {
     @Bean
@@ -417,7 +417,7 @@ For production, run at least 2 Eureka servers in a multi-DC setup. Eureka is AP 
 Spring Cloud Config Server serves configuration from a Git backend. Config clients fetch their configuration on startup and can refresh it at runtime.
 
 ```java
-// â”€â”€ Config Server â”€â”€
+// ── Config Server ──
 @SpringBootApplication
 @EnableConfigServer
 public class ConfigServerApplication {
@@ -432,7 +432,7 @@ public class ConfigServerApplication {
 // spring.cloud.config.server.git.searchPaths: '{application}'
 // spring.cloud.config.server.git.default-label: main
 
-// â”€â”€ Git-backed config repository structure â”€â”€
+// ── Git-backed config repository structure ──
 // config-repo/
 //   order-service.yml          (shared for all profiles)
 //   order-service-dev.yml      (dev profile)
@@ -451,7 +451,7 @@ public class ConfigServerApplication {
 //   order-timeout: 30s
 //   max-batch-size: 100
 
-// â”€â”€ Config Client â”€â”€
+// ── Config Client ──
 @SpringBootApplication
 public class OrderServiceApplication {
     public static void main(String[] args) {
@@ -466,7 +466,7 @@ public class OrderServiceApplication {
 // spring.cloud.config.retry.initial-interval: 1000
 // spring.cloud.config.retry.max-attempts: 5
 
-// â”€â”€ Using config values â”€â”€
+// ── Using config values ──
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -485,7 +485,7 @@ public class OrderController {
     }
 }
 
-// â”€â”€ Trigger refresh â”€â”€
+// ── Trigger refresh ──
 @RestController
 public class ConfigRefreshController {
     @Autowired
@@ -499,7 +499,7 @@ public class ConfigRefreshController {
 // POST http://order-service/actuator/refresh
 // Response: ["order-service.discount-rate"]
 
-// â”€â”€ For automatic broadcast, use Spring Cloud Bus â”€â”€
+// ── For automatic broadcast, use Spring Cloud Bus ──
 // POST http://config-server/actuator/busrefresh/order-service:**
 // Broadcasts refresh to all instances of order-service via RabbitMQ
 ```
@@ -515,12 +515,12 @@ Config server enables centralized management, version history (through Git), and
 Distributed tracing traces a request across multiple microservices using trace IDs and span IDs. Spring Cloud Sleuth (now Micrometer Tracing) integrates with Zipkin for visualization.
 
 ```java
-// â”€â”€ Dependencies (Spring Boot 3.x) â”€â”€
+// ── Dependencies (Spring Boot 3.x) ──
 // implementation 'io.micrometer:micrometer-tracing-bridge-brave'
 // implementation 'io.zipkin.reporter2:zipkin-reporter-brave'
 // implementation 'io.micrometer:micrometer-tracing'
 
-// â”€â”€ Application configuration â”€â”€
+// ── Application configuration ──
 @SpringBootApplication
 public class OrderServiceApplication {
     public static void main(String[] args) {
@@ -534,7 +534,7 @@ public class OrderServiceApplication {
 // Actually with Micrometer Tracing:
 // management.zipkin.tracing.endpoint: http://localhost:9411/api/v2/spans
 
-// â”€â”€ Manual tracing in code â”€â”€
+// ── Manual tracing in code ──
 @Service
 public class OrderService {
 
@@ -564,7 +564,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Trace propagation via RestTemplate â”€â”€
+// ── Trace propagation via RestTemplate ──
 @Configuration
 public class TracingConfig {
     @Bean
@@ -577,11 +577,11 @@ public class TracingConfig {
     // No manual header propagation needed with brave instrumentation
 }
 
-// â”€â”€ View traces in Zipkin â”€â”€
+// ── View traces in Zipkin ──
 // docker run -d -p 9411:9411 openzipkin/zipkin
 // Then visit http://localhost:9411 → search by trace ID or service
 
-// â”€â”€ Tag annotation with @SpanTag â”€â”€
+// ── Tag annotation with @SpanTag ──
 @Component
 public class PaymentProcessor {
     @NewSpan(name = "process-payment")
@@ -606,9 +606,9 @@ With 100% sampling in dev (1.0) and 1-10% in prod, tracing adds negligible overh
 The Saga pattern manages distributed transactions across microservices by breaking them into a sequence of local transactions with compensating actions for rollback. Two implementations: choreography (each service emits/reacts to events) and orchestration (a coordinator drives the flow).
 
 ```java
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════════════════════════
 // CHOREOGRAPHY SAGA → services react to each other's events
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════════════════════════
 
 // Step 1: Order Service creates order and emits event
 @Service
@@ -681,9 +681,9 @@ public class PaymentSagaService {
     }
 }
 
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════════════════════════
 // ORCHESTRATION SAGA → a coordinator manages the flow
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════════════════════════
 
 // Saga Orchestrator
 @Component
@@ -739,7 +739,7 @@ Saga handles long-running transactions without locking resources. Choreography w
 CQRS (Command Query Responsibility Segregation) separates write models (commands) from read models (queries). Each model has its own database schema, optimized for its operation.
 
 ```java
-// â”€â”€ Command side: focused on writes â”€â”€
+// ── Command side: focused on writes ──
 @RestController
 @RequestMapping("/orders/commands")
 public class OrderCommandController {
@@ -781,7 +781,7 @@ public class OrderCommandService {
 @Repository
 public interface OrderCommandRepository extends JpaRepository<OrderWriteModel, UUID> {}
 
-// â”€â”€ Query side: optimized for reads â”€â”€
+// ── Query side: optimized for reads ──
 @RestController
 @RequestMapping("/orders/queries")
 public class OrderQueryController {
@@ -856,7 +856,7 @@ Apply CQRS to individual bounded contexts, not the entire system. Most services 
 Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and time limiters. The circuit breaker prevents cascading failures by failing fast when a downstream service is unhealthy.
 
 ```java
-// â”€â”€ Configuration â”€â”€
+// ── Configuration ──
 // application.yml:
 // resilience4j.circuitbreaker:
 //   instances:
@@ -873,7 +873,7 @@ Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and t
 //       ignore-exceptions:
 //         - org.springframework.web.client.HttpClientErrorException  (4xx → not a circuit failure)
 
-// â”€â”€ Registration â”€â”€
+// ── Registration ──
 @Configuration
 public class Resilience4jConfig {
     @Bean
@@ -892,7 +892,7 @@ public class Resilience4jConfig {
     }
 }
 
-// â”€â”€ Usage with @CircuitBreaker annotation â”€â”€
+// ── Usage with @CircuitBreaker annotation ──
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
@@ -912,7 +912,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Manual circuit breaker usage â”€â”€
+// ── Manual circuit breaker usage ──
 @Service
 public class PaymentService {
     private final CircuitBreaker circuitBreaker;
@@ -939,7 +939,7 @@ public class PaymentService {
     }
 }
 
-// â”€â”€ Monitoring circuit breaker state â”€â”€
+// ── Monitoring circuit breaker state ──
 @Component
 public class CircuitBreakerMonitor {
     public CircuitBreakerMonitor(CircuitBreakerRegistry registry) {
@@ -967,7 +967,7 @@ Circuit breaker states: CLOSED (normal, pass through) → OPEN (fail fast, no ca
 OAuth2 with JWT provides token-based authentication. The client credentials grant is the standard pattern for service-to-service communication.
 
 ```java
-// â”€â”€ Authorization Server config (Spring Authorization Server) â”€â”€
+// ── Authorization Server config (Spring Authorization Server) ──
 @Configuration
 @EnableAuthorizationServer
 public class AuthServerConfig {
@@ -984,7 +984,7 @@ public class AuthServerConfig {
     }
 }
 
-// â”€â”€ Resource Server config (each microservice validates tokens) â”€â”€
+// ── Resource Server config (each microservice validates tokens) ──
 // application.yml:
 // spring.security.oauth2.resourceserver.jwt:
 //   issuer-uri: http://localhost:9000
@@ -1007,7 +1007,7 @@ public class ResourceServerConfig {
     }
 }
 
-// â”€â”€ Client credentials flow (service calls another service) â”€â”€
+// ── Client credentials flow (service calls another service) ──
 @Service
 public class ServiceClient {
     @Autowired
@@ -1041,7 +1041,7 @@ public class ServiceClient {
     }
 }
 
-// â”€â”€ Extract user context from JWT â”€â”€
+// ── Extract user context from JWT ──
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -1069,7 +1069,7 @@ Never embed sensitive data in JWT claims (they are base64-encoded, not encrypted
 Apache Kafka provides a distributed commit log for asynchronous event streaming between services. Each service publishes events to topics; other services consume from those topics independently.
 
 ```java
-// â”€â”€ Producer configuration â”€â”€
+// ── Producer configuration ──
 @Configuration
 public class KafkaProducerConfig {
     @Bean
@@ -1092,7 +1092,7 @@ public class KafkaProducerConfig {
     }
 }
 
-// â”€â”€ Event publisher â”€â”€
+// ── Event publisher ──
 @Service
 public class OrderEventPublisher {
     @Autowired
@@ -1112,7 +1112,7 @@ public class OrderEventPublisher {
         );
     }
 
-    // â”€â”€ Transactional outbox pattern â”€â”€
+    // ── Transactional outbox pattern ──
     @Transactional
     public void createOrderAndPublishEvent(OrderRequest request) {
         // 1. Save order in the database
@@ -1130,7 +1130,7 @@ public class OrderEventPublisher {
     }
 }
 
-// â”€â”€ Consumer configuration â”€â”€
+// ── Consumer configuration ──
 @Configuration
 public class KafkaConsumerConfig {
     @Bean
@@ -1150,7 +1150,7 @@ public class KafkaConsumerConfig {
     }
 }
 
-// â”€â”€ Event consumer â”€â”€
+// ── Event consumer ──
 @Component
 public class InventoryEventConsumer {
     @Autowired
@@ -1182,7 +1182,7 @@ public class InventoryEventConsumer {
     }
 }
 
-// â”€â”€ Idempotent consumer (same event may be delivered twice) â”€â”€
+// ── Idempotent consumer (same event may be delivered twice) ──
 @Service
 public class IdempotentConsumerService {
     @Autowired
@@ -1218,7 +1218,7 @@ Use one topic per event type or per bounded context. Partition count should be e
 Each microservice gets a Docker image with multi-stage builds for minimal size. Spring Boot 3.x provides layered JARs for efficient Docker builds.
 
 ```dockerfile
-# â”€â”€ Multi-stage Dockerfile for a Spring Boot microservice â”€â”€
+# ── Multi-stage Dockerfile for a Spring Boot microservice ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 
@@ -1277,7 +1277,7 @@ ENTRYPOINT ["java", "org.springframework.boot.loader.launch.JarLauncher"]
 ```
 
 ```yaml
-# â”€â”€ docker-compose.yml for local development â”€â”€
+# ── docker-compose.yml for local development ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 version: '3.8'
@@ -1359,7 +1359,7 @@ Key Docker best practices:
 Kubernetes orchestrates containerized microservices with deployments, services, config maps, and ingress controllers.
 
 ```yaml
-# â”€â”€ Deployment for a microservice â”€â”€
+# ── Deployment for a microservice ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 apiVersion: apps/v1
@@ -1422,7 +1422,7 @@ spec:
               memory: "512Mi"
               cpu: "500m"
 ---
-# â”€â”€ Service (stable network endpoint) â”€â”€
+# ── Service (stable network endpoint) ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 apiVersion: v1
@@ -1437,7 +1437,7 @@ spec:
       targetPort: 8080
   type: ClusterIP  # Internal → only accessible within the cluster
 ---
-# â”€â”€ ConfigMap for non-sensitive config â”€â”€
+# ── ConfigMap for non-sensitive config ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 apiVersion: v1
@@ -1450,7 +1450,7 @@ data:
       order-timeout: 30s
       max-batch-size: 100
 ---
-# â”€â”€ HPA (auto-scaling) â”€â”€
+# ── HPA (auto-scaling) ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 apiVersion: autoscaling/v2
@@ -1472,7 +1472,7 @@ spec:
           type: Utilization
           averageUtilization: 70
 ---
-# â”€â”€ Ingress (external traffic routing) â”€â”€
+# ── Ingress (external traffic routing) ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 apiVersion: networking.k8s.io/v1
@@ -1547,7 +1547,7 @@ Kubernetes replaces Eureka for service discovery (DNS resolution), replaces Conf
 **Answer:**
 
 ```java
-// â”€â”€ Rolling update (Kubernetes default) â”€â”€
+// ── Rolling update (Kubernetes default) ──
 // Updates pods gradually → old pods keep serving until new ones are healthy
 apiVersion: apps/v1
 kind: Deployment
@@ -1558,7 +1558,7 @@ spec:
       maxSurge: 1        // One extra pod during update
       maxUnavailable: 0  // Zero downtime: only create new pods before removing old ones
 
-// â”€â”€ Blue/Green deployment â”€â”€
+// ── Blue/Green deployment ──
 // Two identical environments: Blue (current), Green (new)
 apiVersion: apps/v1
 kind: Service
@@ -1567,7 +1567,7 @@ metadata:
 spec:
   selector:
     app: order-service
-    version: green   # â† Flip this from "blue" to "green" to switch traffic
+    version: green   # ← Flip this from "blue" to "green" to switch traffic
 ---
 # Deploy green:
 
@@ -1591,7 +1591,7 @@ spec:
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 
-// â”€â”€ Canary deployment (traffic splitting) â”€â”€
+// ── Canary deployment (traffic splitting) ──
 // Route 5% of traffic to the new version, monitor, then gradually increase
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
@@ -1652,11 +1652,11 @@ Start with rolling (built into Kubernetes, zero configuration). Move to blue/gre
 Spring Boot Actuator exposes metrics in Prometheus format. Prometheus scrapes them. Grafana visualizes dashboards.
 
 ```java
-// â”€â”€ Dependencies â”€â”€
+// ── Dependencies ──
 // implementation 'org.springframework.boot:spring-boot-starter-actuator'
 // implementation 'io.micrometer:micrometer-registry-prometheus'
 
-// â”€â”€ Configuration â”€â”€
+// ── Configuration ──
 // application.yml:
 // management:
 //   endpoints:
@@ -1670,7 +1670,7 @@ Spring Boot Actuator exposes metrics in Prometheus format. Prometheus scrapes th
 //       prometheus:
 //         enabled: true
 
-// â”€â”€ Custom metrics â”€â”€
+// ── Custom metrics ──
 @Service
 public class OrderMetricsService {
     private final Counter orderCounter;
@@ -1705,7 +1705,7 @@ public class OrderMetricsService {
     }
 }
 
-// â”€â”€ Micrometer annotations â”€â”€
+// ── Micrometer annotations ──
 @Component
 public class PaymentProcessor {
     @Timed(value = "payment.processing", percentiles = {0.5, 0.95, 0.99})
@@ -1719,7 +1719,7 @@ public class PaymentProcessor {
 ```
 
 ```yaml
-# â”€â”€ Prometheus config (prometheus.yml) â”€â”€
+# ── Prometheus config (prometheus.yml) ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 scrape_configs:
@@ -1741,7 +1741,7 @@ scrape_configs:
 ```
 
 ```yaml
-# â”€â”€ Kubernetes PodMonitor (operator-based scraping) â”€â”€
+# ── Kubernetes PodMonitor (operator-based scraping) ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 apiVersion: monitoring.coreos.com/v1
@@ -1777,7 +1777,7 @@ Alert on: p99 latency > 1s, error rate > 1%, circuit breaker OPEN, heap usage > 
 Contract testing verifies that a producer's API matches what the consumer expects, without end-to-end integration tests. Spring Cloud Contract generates tests and stubs from Groovy or YAML contracts.
 
 ```groovy
-// â”€â”€ Producer contract (user-service) â”€â”€
+// ── Producer contract (user-service) ──
 // File: contracts/shouldReturnUser.groovy
 Contract.make {
     description "should return user by ID"
@@ -1803,7 +1803,7 @@ Contract.make {
 ```
 
 ```java
-// â”€â”€ Producer-side base test (Spring Cloud Contract generates tests) â”€â”€
+// ── Producer-side base test (Spring Cloud Contract generates tests) ──
 // File: src/test/java/.../BaseContractTest.java
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @AutoConfigureMockMvc
@@ -1824,7 +1824,7 @@ public abstract class BaseContractTest {
 ```
 
 ```java
-// â”€â”€ Consumer-side (order-service uses stubs to test its client) â”€â”€
+// ── Consumer-side (order-service uses stubs to test its client) ──
 @SpringBootTest
 @AutoConfigureStubRunner(
     stubsMode = StubRunnerProperties.StubsMode.LOCAL,
@@ -1857,14 +1857,14 @@ Contract testing replaces brittle end-to-end tests for cross-service integration
 Each microservice owns its database → no other service accesses it directly. Data that spans services is shared through events or API calls.
 
 ```java
-// â”€â”€ Anti-pattern: direct database access â”€â”€
+// ── Anti-pattern: direct database access ──
 // order-service calls user-service's database directly → WRONG
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
     // order-service should NOT have this → it violates service boundaries
 }
 
-// â”€â”€ Correct: API-based data sharing â”€â”€
+// ── Correct: API-based data sharing ──
 // order-service calls user-service's REST API
 @FeignClient(name = "user-service")
 public interface UserServiceClient {
@@ -1872,7 +1872,7 @@ public interface UserServiceClient {
     AddressDto getShippingAddress(@PathVariable Long id);
 }
 
-// â”€â”€ Correct: Event-based data sharing â”€â”€
+// ── Correct: Event-based data sharing ──
 // When user changes their shipping address, user-service publishes an event
 @Service
 public class UserService {
@@ -1922,18 +1922,18 @@ Never share databases between services. If two services need the same table, the
 **Answer:**
 
 ```java
-// â”€â”€ Anti-pattern 1: Distributed Monolith â”€â”€
+// ── Anti-pattern 1: Distributed Monolith ──
 // Services are split but share a database and cannot deploy independently
 @Entity
 @Table(name = "orders")
 public class Order {
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;  // â† Order-service needs User entity from user-service's DB
+    private User user;  // ← Order-service needs User entity from user-service's DB
 }
 // Fix: Each service owns its data. Order-service stores only user_id as a value.
 
-// â”€â”€ Anti-pattern 2: Chatty Communication â”€â”€
+// ── Anti-pattern 2: Chatty Communication ──
 // Multiple API calls to complete one operation
 @Service
 public class OrderService {
@@ -1945,24 +1945,24 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Anti-pattern 3: Shared Libraries for Domain Logic â”€â”€
+// ── Anti-pattern 3: Shared Libraries for Domain Logic ──
 // A shared JAR that contains business logic used by multiple services
 public class OrderValidationUtils {
     // Any change to this requires rebuilding ALL services
     // Fix: duplicate validation logic per service or make it a separate microservice
 }
 
-// â”€â”€ Anti-pattern 4: Golden Hammer (everything must be a microservice) â”€â”€
+// ── Anti-pattern 4: Golden Hammer (everything must be a microservice) ──
 @SpringBootApplication
 public class EmailSendingService { }  // Could be a simple function + queue
 // Fix: Use serverless functions for simple tasks. Not everything needs a full service.
 
-// â”€â”€ Anti-pattern 5: No Monitoring or Observability â”€â”€
+// ── Anti-pattern 5: No Monitoring or Observability ──
 // Services communicate without tracing, logging correlation, or metrics
 // Fix: Always include distributed tracing (Micrometer + Zipkin),
 // structured logging (trace ID in every log), and Prometheus metrics.
 
-// â”€â”€ Anti-pattern 6: Leaky Abstractions â”€â”€
+// ── Anti-pattern 6: Leaky Abstractions ──
 // Internal implementation details leak through service boundaries
 @FeignClient(name = "user-service")
 public interface UserServiceClient {
@@ -1971,7 +1971,7 @@ public interface UserServiceClient {
 }
 // Fix: Each service has its own API contract with DTOs, not exposed entities.
 
-// â”€â”€ Anti-pattern 7: Orchestration in the API Gateway â”€â”€
+// ── Anti-pattern 7: Orchestration in the API Gateway ──
 @RestController
 public class ApiGatewayController {
     @GetMapping("/order-details/{orderId}")
@@ -1996,7 +1996,7 @@ Golden rule: If splitting a service doesn't give you independent deployability, 
 Testing microservices uses a pyramid: unit tests (many) → integration tests (fewer) → contract tests (per pair) → end-to-end tests (few).
 
 ```java
-// â”€â”€ Layer 1: Unit tests (fast, isolated, mock external calls) â”€â”€
+// ── Layer 1: Unit tests (fast, isolated, mock external calls) ──
 @ExtendWith(MockitoExtension.class)
 class OrderServiceUnitTest {
     @Mock private OrderRepository orderRepo;
@@ -2015,7 +2015,7 @@ class OrderServiceUnitTest {
     }
 }
 
-// â”€â”€ Layer 2: Integration tests with TestContainers â”€â”€
+// ── Layer 2: Integration tests with TestContainers ──
 @SpringBootTest
 @Testcontainers
 class OrderServiceIntegrationTest {
@@ -2045,7 +2045,7 @@ class OrderServiceIntegrationTest {
     }
 }
 
-// â”€â”€ Layer 3: Contract tests (Spring Cloud Contract or Pact) â”€â”€
+// ── Layer 3: Contract tests (Spring Cloud Contract or Pact) ──
 @SpringBootTest
 @AutoConfigureStubRunner(
     stubsMode = StubRunnerProperties.StubsMode.LOCAL,
@@ -2061,7 +2061,7 @@ class OrderServiceContractTest {
     }
 }
 
-// â”€â”€ Layer 4: End-to-end tests (few, smoke-test critical paths) â”€â”€
+// ── Layer 4: End-to-end tests (few, smoke-test critical paths) ──
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @Testcontainers
 class OrderE2ETest {
@@ -2100,7 +2100,7 @@ class OrderE2ETest {
     }
 }
 
-// â”€â”€ WireMock for external service simulation â”€â”€
+// ── WireMock for external service simulation ──
 @SpringBootTest
 @WireMockTest(httpPort = 9090)
 class OrderServiceWireMockTest {
@@ -2130,7 +2130,7 @@ End-to-end tests are slow and flaky. Keep them to 3-5 critical paths per service
 A service mesh manages service-to-service communication at the infrastructure layer using sidecar proxies. Istio injects an Envoy proxy alongside each pod, handling traffic management, security, and observability without changing application code.
 
 ```java
-// â”€â”€ Without service mesh: circuit breaker in application code â”€â”€
+// ── Without service mesh: circuit breaker in application code ──
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
@@ -2141,7 +2141,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ With Istio: circuit breaker moves to infrastructure â”€â”€
+// ── With Istio: circuit breaker moves to infrastructure ──
 // application code is clean → no Resilience4j annotations needed
 @Service
 public class OrderService {
@@ -2154,7 +2154,7 @@ public class OrderService {
 ```
 
 ```yaml
-# â”€â”€ Istio DestinationRule (circuit breaker at mesh level) â”€â”€
+# ── Istio DestinationRule (circuit breaker at mesh level) ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 apiVersion: networking.istio.io/v1beta1
@@ -2176,7 +2176,7 @@ spec:
       baseEjectionTime: 30s
       maxEjectionPercent: 50
 ---
-# â”€â”€ Istio VirtualService (traffic splitting for canary) â”€â”€
+# ── Istio VirtualService (traffic splitting for canary) ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 apiVersion: networking.istio.io/v1beta1
@@ -2201,7 +2201,7 @@ spec:
         attempts: 3
         perTryTimeout: 1s
 ---
-# â”€â”€ Istio PeerAuthentication (mTLS between services) â”€â”€
+# ── Istio PeerAuthentication (mTLS between services) ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 apiVersion: security.istio.io/v1beta1
@@ -2213,7 +2213,7 @@ spec:
   mtls:
     mode: STRICT  # All inter-service traffic must use mTLS
 ---
-# â”€â”€ Istio AuthorizationPolicy â”€â”€
+# ── Istio AuthorizationPolicy ──
 
 > **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md)
 apiVersion: security.istio.io/v1beta1
@@ -2250,7 +2250,7 @@ Use a service mesh when you have 10+ services and can't add cross-cutting code t
 Structured logging outputs JSON with consistent fields (service name, trace ID, level, message, timestamp). ELK or Loki aggregates logs from all services into a searchable store.
 
 ```java
-// â”€â”€ Logback configuration for structured JSON logging â”€â”€
+// ── Logback configuration for structured JSON logging ──
 // resources/logback-spring.xml
 <configuration>
     <appender name="JSON" class="ch.qos.logback.core.ConsoleAppender">
@@ -2265,10 +2265,10 @@ Structured logging outputs JSON with consistent fields (service name, trace ID, 
     </root>
 </configuration>
 
-// â”€â”€ Dependencies â”€â”€
+// ── Dependencies ──
 // implementation 'net.logstash.logback:logstash-logback-encoder:7.4'
 
-// â”€â”€ Structured logging in application code â”€â”€
+// ── Structured logging in application code ──
 @Service
 public class OrderService {
     private static final Logger log = LoggerFactory.getLogger(OrderService.class);
@@ -2299,7 +2299,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ JSON output (single log entry) â”€â”€
+// ── JSON output (single log entry) ──
 // {
 //   "@timestamp": "2026-06-16T12:30:00.000+00:00",
 //   "level": "INFO",
@@ -2317,11 +2317,11 @@ public class OrderService {
 //   "thread_name": "http-nio-8080-exec-3"
 // }
 
-// â”€â”€ Loki log query â”€â”€
+// ── Loki log query ──
 // {service="order-service", level="ERROR"} |= "traceId=abc123def456"
 // {service=~"user-service|order-service", level="ERROR"} | json | line_format "{{.message}}"
 
-// â”€â”€ Logback MDC with auto-cleanup via Filter â”€â”€
+// ── Logback MDC with auto-cleanup via Filter ──
 @Component
 public class MdcFilter implements WebFilter {
     @Override
@@ -2353,7 +2353,7 @@ Best practices:
 Each microservice manages its own database migrations independently. Migrations are versioned, sequential, and tested in CI.
 
 ```java
-// â”€â”€ Each service has its own Flyway configuration â”€â”€
+// ── Each service has its own Flyway configuration ──
 // order-service/src/main/resources/application.yml:
 // spring:
 //   flyway:
@@ -2368,7 +2368,7 @@ Each microservice manages its own database migrations independently. Migrations 
 //   flyway:
 //     locations: classpath:db/migration/user
 
-// â”€â”€ Migration files are prefixed by version: V{version}__{description}.sql â”€â”€
+// ── Migration files are prefixed by version: V{version}__{description}.sql ──
 // order-service:
 //   db/migration/order/V1__create_orders_table.sql
 //   db/migration/order/V2__add_status_column.sql
@@ -2378,7 +2378,7 @@ Each microservice manages its own database migrations independently. Migrations 
 //   db/migration/user/V1__create_users_table.sql
 //   db/migration/user/V2__add_email_verification.sql
 
-// â”€â”€ V3__add_indexes.sql for order-service â”€â”€
+// ── V3__add_indexes.sql for order-service ──
 -- Create indexes for common queries
 CREATE INDEX idx_orders_user_id ON orders(user_id);
 CREATE INDEX idx_orders_status ON orders(status) WHERE status IN ('PENDING', 'PROCESSING');
@@ -2387,7 +2387,7 @@ CREATE INDEX idx_orders_created_at ON orders(created_at DESC);
 -- Backfill existing data if needed
 -- UPDATE orders SET status = 'PENDING' WHERE status IS NULL;
 
-// â”€â”€ Advanced: multi-service migration coordination â”€â”€
+// ── Advanced: multi-service migration coordination ──
 @Service
 public class CoordinatedMigrationService {
     @Autowired private Map<String, DataSource> dataSources;
@@ -2405,7 +2405,7 @@ public class CoordinatedMigrationService {
     }
 }
 
-// â”€â”€ Backward compatibility: expand-contract for cross-service migrations â”€â”€
+// ── Backward compatibility: expand-contract for cross-service migrations ──
 // Phase 1: Add new column (expand)
 -- V1__add_phone_column.sql
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -2447,7 +2447,7 @@ Each service's migration is independent. Never share migration files across serv
 Idempotency ensures that processing the same request multiple times produces the same result. For asynchronous processing, this means deduplication at the consumer.
 
 ```java
-// â”€â”€ Idempotency key pattern (for REST endpoints) â”€â”€
+// ── Idempotency key pattern (for REST endpoints) ──
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -2479,7 +2479,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Idempotency registry (using database for persistence) â”€â”€
+// ── Idempotency registry (using database for persistence) ──
 @Entity
 @Table(name = "idempotency_keys")
 public class IdempotencyRecord {
@@ -2504,7 +2504,7 @@ public interface IdempotencyRegistry extends JpaRepository<IdempotencyRecord, St
     void purgeOlderThan(@Param("cutoff") Instant cutoff);
 }
 
-// â”€â”€ Idempotent Kafka consumer â”€â”€
+// ── Idempotent Kafka consumer ──
 @Service
 public class IdempotentConsumer {
     @Autowired private ProcessedEventRepository processedRepo;
@@ -2529,7 +2529,7 @@ public class IdempotentConsumer {
     }
 }
 
-// â”€â”€ Guarantee: atomic check-then-process with database constraint â”€â”€
+// ── Guarantee: atomic check-then-process with database constraint ──
 // PostgreSQL:
 // CREATE UNIQUE INDEX idx_idempotency ON idempotency_keys(idempotency_key);
 //
@@ -2554,7 +2554,7 @@ Idempotency is not optional in microservices → network retries guarantee dupli
 Distributed caching (Redis) reduces latency and database load. Two primary patterns: cache-aside (read-through) and write-through.
 
 ```java
-// â”€â”€ Cache-aside: read from cache, miss -> load from DB -> populate cache â”€â”€
+// ── Cache-aside: read from cache, miss -> load from DB -> populate cache ──
 @Service
 public class ProductService {
     @Autowired private RedisTemplate<String, ProductDto> redis;
@@ -2581,7 +2581,7 @@ public class ProductService {
         return dto;
     }
 
-    // â”€â”€ Invalidate cache on write â”€â”€
+    // ── Invalidate cache on write ──
     @Transactional
     public ProductDto updateProduct(Long id, UpdateProductRequest req) {
         Product product = productRepo.findById(id).orElseThrow();
@@ -2596,7 +2596,7 @@ public class ProductService {
     }
 }
 
-// â”€â”€ Spring Cache abstraction â”€â”€
+// ── Spring Cache abstraction ──
 @Service
 public class ProductService {
     @Cacheable(value = "products", key = "#id", unless = "#result == null")
@@ -2622,7 +2622,7 @@ public class ProductService {
     }
 }
 
-// â”€â”€ Redis configuration for distributed caching â”€â”€
+// ── Redis configuration for distributed caching ──
 @Configuration
 @EnableCaching
 public class CacheConfig {
@@ -2652,7 +2652,7 @@ public class CacheConfig {
     }
 }
 
-// â”€â”€ Cache stampede prevention â”€â”€
+// ── Cache stampede prevention ──
 @Service
 public class ProductService {
     // Without protection: 100 concurrent cache misses all hit the database
@@ -2695,7 +2695,7 @@ public class ProductService {
     }
 }
 
-// â”€â”€ Cache strategy comparison â”€â”€
+// ── Cache strategy comparison ──
 // 1. Cache-aside (lazy): Most common. Cache miss = DB hit + cache populate.
 //    Pros: Simple, resilient (cache loss just means slower reads).
 //    Cons: Cache stampede on first request.

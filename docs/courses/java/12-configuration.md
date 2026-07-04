@@ -1043,10 +1043,10 @@ Kubernetes ConfigMaps can be mounted as volumes where each key becomes a file:
 
 ```
 /etc/config/
-â”œâ”€â”€ app.cache.enabled
-â”œâ”€â”€ app.cache.provider
-â”œâ”€â”€ app.database.max-pool-size
-â””â”€â”€ app.database.url
+├── app.cache.enabled
+├── app.cache.provider
+├── app.database.max-pool-size
+└── app.database.url
 ```
 
 Spring Boot's config tree support reads these files and maps the file path to property keys:
@@ -1737,15 +1737,15 @@ For microservices or multi-module projects, organize configuration as:
 
 ```
 config/
-â”œâ”€â”€ application.yml                  # shared base config
-â”œâ”€â”€ application-dev.yml              # shared dev overrides
-â”œâ”€â”€ application-prod.yml             # shared prod overrides
-â”œâ”€â”€ service-order/
-â”‚   â”œâ”€â”€ application.yml              # order-service defaults
-â”‚   â””â”€â”€ application-prod.yml         # order-service prod overrides
-â””â”€â”€ service-payment/
-    â”œâ”€â”€ application.yml              # payment-service defaults
-    â””â”€â”€ application-prod.yml         # payment-service prod overrides
+├── application.yml                  # shared base config
+├── application-dev.yml              # shared dev overrides
+├── application-prod.yml             # shared prod overrides
+├── service-order/
+│   ├── application.yml              # order-service defaults
+│   └── application-prod.yml         # order-service prod overrides
+└── service-payment/
+    ├── application.yml              # payment-service defaults
+    └── application-prod.yml         # payment-service prod overrides
 ```
 
 Launch with:

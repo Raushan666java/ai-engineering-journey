@@ -145,29 +145,29 @@ The Enterprise Multi-Agent Platform (EMAP) is a cross-industry system where spec
 #### High-Level Architecture
 
 ```
-                         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                         â”‚      API Gateway (REST)      â”‚
-                         â”‚   Rate Limit Â· Auth Â· Route  â”‚
-                         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-                         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                         â”‚   Enterprise Orchestrator    â”‚
-                         â”‚ Supervisor Â· Workflow Engine â”‚
-                         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-          â”‚                         â”‚                         â”‚
- â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”
- â”‚  Agent Registry  â”‚   â”‚  Agent Message Bus    â”‚   â”‚  Shared Memory    â”‚
- â”‚  discover/call   â”‚   â”‚  pub/sub Â· events     â”‚   â”‚  Knowledge Base   â”‚
- â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-          â”‚                         â”‚                         â”‚
- â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”
- â”‚                        Agent Pool (10 sectors)                       â”‚
- â”‚  â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”   â”‚
- â”‚  â”‚Healthâ”‚ â”‚Finan.â”‚ â”‚Educ. â”‚ â”‚Logis.â”‚ â”‚  HR  â”‚ â”‚Cust. â”‚ â”‚Legal â”‚...â”‚
- â”‚  â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜   â”‚
- â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                         ┌─────────────────────────────┐
+                         │      API Gateway (REST)      │
+                         │   Rate Limit Â· Auth Â· Route  │
+                         └──────────┬──────────────────┘
+                                    │
+                         ┌──────────▼──────────────────┐
+                         │   Enterprise Orchestrator    │
+                         │ Supervisor Â· Workflow Engine │
+                         └──────────┬──────────────────┘
+                                    │
+          ┌─────────────────────────┼─────────────────────────┐
+          │                         │                         │
+ ┌────────▼────────┐   ┌───────────▼───────────┐   ┌─────────▼────────┐
+ │  Agent Registry  │   │  Agent Message Bus    │   │  Shared Memory    │
+ │  discover/call   │   │  pub/sub Â· events     │   │  Knowledge Base   │
+ └────────┬────────┘   └───────────┬───────────┘   └─────────┬────────┘
+          │                         │                         │
+ ┌────────▼─────────────────────────▼─────────────────────────▼────────┐
+ │                        Agent Pool (10 sectors)                       │
+ │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐   │
+ │  │Health│ │Finan.│ │Educ. │ │Logis.│ │  HR  │ │Cust. │ │Legal │...│
+ │  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘   │
+ └────────────────────────────────────────────────────────────────────┘
 ```
 
 #### Service Provider Bootstrapping
@@ -2589,7 +2589,7 @@ class CrossSectorWorkflowRunner
             'customer_id' => $customerId,
         ]);
 
-        // â”€â”€ Step 1: Submit ticket to shared memory â”€â”€
+        // ── Step 1: Submit ticket to shared memory ──
         $this->memory->remember("ticket:{$ticketId}:submission", [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2600,7 +2600,7 @@ class CrossSectorWorkflowRunner
             'correlation_id' => $correlationId,
         ]);
 
-        // â”€â”€ Step 2: Triage agent classifies the ticket â”€â”€
+        // ── Step 2: Triage agent classifies the ticket ──
         $triageResult = $this->bus->publish('ticket.created', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2626,7 +2626,7 @@ class CrossSectorWorkflowRunner
             'assigned_sector' => 'finance',
         ]);
 
-        // â”€â”€ Step 3: Bus routes triage.completed → billing.resolve â”€â”€
+        // ── Step 3: Bus routes triage.completed → billing.resolve ──
         $this->bus->publish('triage.completed', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2637,7 +2637,7 @@ class CrossSectorWorkflowRunner
             'workflow_id' => "wf-{$ticketId}",
         ]);
 
-        // â”€â”€ Step 4: Finance billing agent resolves the issue â”€â”€
+        // ── Step 4: Finance billing agent resolves the issue ──
         $billingResult = $this->bus->publish('billing.resolve', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2664,7 +2664,7 @@ class CrossSectorWorkflowRunner
 
         Log::info('Step 4: Billing resolved', $resolution);
 
-        // â”€â”€ Step 5: Bus routes billing.resolved → survey.dispatch â”€â”€
+        // ── Step 5: Bus routes billing.resolved → survey.dispatch ──
         $this->bus->publish('billing.resolved', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2674,7 +2674,7 @@ class CrossSectorWorkflowRunner
             'workflow_id' => "wf-{$ticketId}",
         ]);
 
-        // â”€â”€ Step 6: Satisfaction agent dispatches survey â”€â”€
+        // ── Step 6: Satisfaction agent dispatches survey ──
         $surveyResult = $this->bus->publish('survey.dispatch', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2697,7 +2697,7 @@ class CrossSectorWorkflowRunner
 
         Log::info('Step 6: Survey dispatched');
 
-        // â”€â”€ Final: Compile full workflow output from shared memory â”€â”€
+        // ── Final: Compile full workflow output from shared memory ──
         $fullContext = $this->memory->recallAll('tickets', [
             'namespace' => 'tickets',
         ]);

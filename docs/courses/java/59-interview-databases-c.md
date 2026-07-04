@@ -28,7 +28,7 @@ flowchart LR
 Spring Data JPA provides `@CreatedDate`, `@LastModifiedDate`, `@CreatedBy`, and `@LastModifiedBy` annotations. Enable auditing with `@EnableJpaAuditing` and an `AuditorAware` bean.
 
 ```java
-// â”€â”€ Enable auditing â”€â”€
+// ── Enable auditing ──
 @Configuration
 @EnableJpaAuditing(auditorAwareRef = "auditorProvider")
 public class JpaConfig {
@@ -42,7 +42,7 @@ public class JpaConfig {
     }
 }
 
-// â”€â”€ Base entity â”€â”€
+// ── Base entity ──
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public abstract class BaseEntity {
@@ -62,7 +62,7 @@ public abstract class BaseEntity {
     private String lastModifiedBy;
 }
 
-// â”€â”€ Usage â”€â”€
+// ── Usage ──
 @Entity
 public class Product extends BaseEntity {
     @Id @GeneratedValue private Long id;
@@ -148,7 +148,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findByActiveTrue(Sort sort);
 }
 
-// â”€â”€ Usage in service â”€â”€
+// ── Usage in service ──
 @Service
 public class ProductService {
     public Page<ProductDto> getProductsByCategory(String category, int page, int size) {
@@ -162,7 +162,7 @@ public class ProductService {
     }
 }
 
-// â”€â”€ REST controller with Spring MVC pagination â”€â”€
+// ── REST controller with Spring MVC pagination ──
 @GetMapping("/products")
 public ResponseEntity<Page<ProductDto>> getProducts(
         @RequestParam(defaultValue = "0") int page,
@@ -197,12 +197,12 @@ Always set a maximum page size to prevent abuse: `@PageableDefault(size = 20, ma
 Specifications let you build dynamic, type-safe queries programmatically by composing `Specification` objects with logical operators. They are the JPA equivalent of the Query Object pattern.
 
 ```java
-// â”€â”€ Step 1: Have your repository extend JpaSpecificationExecutor â”€â”€
+// ── Step 1: Have your repository extend JpaSpecificationExecutor ──
 public interface UserRepository extends JpaRepository<User, Long>,
         JpaSpecificationExecutor<User> {
 }
 
-// â”€â”€ Step 2: Create specification factory methods â”€â”€
+// ── Step 2: Create specification factory methods ──
 public class UserSpecifications {
 
     public static Specification<User> hasName(String name) {
@@ -234,7 +234,7 @@ public class UserSpecifications {
     }
 }
 
-// â”€â”€ Step 3: Compose specifications â”€â”€
+// ── Step 3: Compose specifications ──
 @Service
 public class UserSearchService {
 
@@ -349,7 +349,7 @@ Separate database is strongest isolation (best for compliance). Schema per tenan
 | Complexity | Simple | Moderate | Higher |
 
 ```java
-// â”€â”€ NativeQuery: raw SQL, returns Object[] â”€â”€
+// ── NativeQuery: raw SQL, returns Object[] ──
 @Query(value = "SELECT id, name, COUNT(*) OVER() as total " +
        "FROM users WHERE name ILIKE %:query% ORDER BY name " +
        "OFFSET :offset LIMIT :limit", nativeQuery = true)
@@ -357,11 +357,11 @@ List<Object[]> searchNative(@Param("query") String q,
                             @Param("offset") int offset,
                             @Param("limit") int limit);
 
-// â”€â”€ JPQL: entity-based â”€â”€
+// ── JPQL: entity-based ──
 @Query("SELECT u FROM User u WHERE u.name LIKE %:query% ORDER BY u.name")
 List<User> searchJpql(@Param("query") String q, Pageable pageable);
 
-// â”€â”€ CriteriaQuery: programmatic, type-safe â”€â”€
+// ── CriteriaQuery: programmatic, type-safe ──
 public List<User> searchCriteria(String name, String email, Boolean active) {
     CriteriaBuilder cb = em.getCriteriaBuilder();
     CriteriaQuery<User> cq = cb.createQuery(User.class);
@@ -397,7 +397,7 @@ Spring Data MongoDB follows the same repository pattern as JPA but maps document
 ```
 
 ```java
-// â”€â”€ Document mapping â”€â”€
+// ── Document mapping ──
 @Document(collection = "orders")
 public class Order {
     @Id private String id;
@@ -408,7 +408,7 @@ public class Order {
     private Address shippingAddress;
 }
 
-// â”€â”€ Repository â”€â”€
+// ── Repository ──
 public interface OrderRepository extends MongoRepository<Order, String> {
     List<Order> findByCustomerId(String customerId);
     List<Order> findByStatusOrderByOrderDateDesc(String status);
@@ -523,7 +523,7 @@ Spring Boot's caching abstraction works with Redis as the backing store. Configu
 ```
 
 ```java
-// â”€â”€ Configuration â”€â”€
+// ── Configuration ──
 @Configuration
 @EnableCaching
 public class CacheConfig {
@@ -542,7 +542,7 @@ public class CacheConfig {
     }
 }
 
-// â”€â”€ Usage â”€â”€
+// ── Usage ──
 @Service
 public class ProductService {
 

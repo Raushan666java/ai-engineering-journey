@@ -239,17 +239,17 @@ Given a regex, build an Îµ-NFA compositionally:
 
 ```
 Step 1: N(a|b)
-    â”€â”€Îµâ”€â”€→ N(a) â”€â”€Îµâ”€â”€→
-  â†—                   â†˜
-S â”¤                     â”œ F
-  â†˜â”€â”€Îµâ”€â”€→ N(b) â”€â”€Îµâ”€â”€→â†—
+    ──Îµ──→ N(a) ──Îµ──→
+  ↗                   ↘
+S ┤                     ├ F
+  ↘──Îµ──→ N(b) ──Îµ──→↗
 
 Step 2: N((a|b)*)
-  â”Œâ†â”€â”€â”€â”€â”€â”€â”€ Îµ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-  â”‚    â”Œâ†â”€â”€ Îµ â”€â”€â”            â”‚
-  â†“    â†—         â†˜           â”‚
- S â”€â”€Îµâ”€â”€→ N(a|b) â”€â”€Îµâ”€â”€→ F â”€â”€â”˜
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€ Îµ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+  ┌←─────── Îµ ──────────────┐
+  │    ┌←── Îµ ──┐            │
+  ↓    ↗         ↘           │
+ S ──Îµ──→ N(a|b) ──Îµ──→ F ──┘
+  └───────── Îµ ─────────────┘
 
 Step 3: N((a|b)*abb) → chain the * NFA with N(a), N(b), N(b)
 ```
@@ -345,7 +345,7 @@ Therefore L is not regular.
 #### Example: Prove `L = {aâ¿bâ¿ | n â‰¥ 0}` not regular using Myhill-Nerode
 
 ```
-Define equivalence: x â‰¡ y if for all z, xz âˆˆ L â‡” yz âˆˆ L.
+Define equivalence: x â‰¡ y if for all z, xz âˆˆ L ⇔ yz âˆˆ L.
 Consider strings aâ± and aÊ² for i â‰  j.
 For z = bâ±: aâ±bâ± âˆˆ L but aÊ²bâ± âˆ‰ L.
 So aâ± → aÊ². Infinitely many equivalence classes → L not regular.
@@ -467,7 +467,7 @@ P:
   F → (E) | id
 
 Derivation of id * id + id:
-  E â‡’ T + T â‡’ T * F + T â‡’ F * F + T â‡’ id * F + T â‡’ id * id + T â‡’ id * id + F â‡’ id * id + id
+  E ⇒ T + T ⇒ T * F + T ⇒ F * F + T ⇒ id * F + T ⇒ id * id + T ⇒ id * id + F ⇒ id * id + id
 ```
 
 ### 2.2 Parse Trees
@@ -499,12 +499,12 @@ A CFG is **ambiguous** if there exists a string with multiple distinct leftmost 
 
 ```
 E → E + E | E * E | id  (ambiguous)
-Derivation 1: E â‡’ E + E â‡’ id + E â‡’ id + id
-Derivation 2: E â‡’ E + E â‡’ E + id â‡’ id + id  (different parse tree → same string, same structure)
+Derivation 1: E ⇒ E + E ⇒ id + E ⇒ id + id
+Derivation 2: E ⇒ E + E ⇒ E + id ⇒ id + id  (different parse tree → same string, same structure)
 
 Actually for id + id * id:
-Leftmost 1: E â‡’ E + E â‡’ id + E â‡’ id + E * E â‡’ id + id * E â‡’ id + id * id
-Leftmost 2: E â‡’ E * E â‡’ E + E * E â‡’ id + E * E â‡’ id + id * E â‡’ id + id * id
+Leftmost 1: E ⇒ E + E ⇒ id + E ⇒ id + E * E ⇒ id + id * E ⇒ id + id * id
+Leftmost 2: E ⇒ E * E ⇒ E + E * E ⇒ id + E * E ⇒ id + id * E ⇒ id + id * id
 
 These produce different parse trees (addition vs multiplication at root), making the grammar ambiguous.
 ```
@@ -921,7 +921,7 @@ Reduce Halting to Empty-String Acceptance (ESA):
       2. Run M on w.
       3. If M halts, accept.
 
-  M' accepts Îµ â‡” M halts on w.
+  M' accepts Îµ ⇔ M halts on w.
   If ESA were decidable, we would decide Halting.
   Therefore ESA is undecidable.
 ```
@@ -1154,7 +1154,7 @@ Subset Sum is NP-complete but "weakly" → it has a pseudopolynomial O(nT) DP so
 
 ### 4.5 Polynomial-Time Reductions
 
-A reduction from A to B is a polynomial-time computable function f such that `x âˆˆ A â‡” f(x) âˆˆ B`.
+A reduction from A to B is a polynomial-time computable function f such that `x âˆˆ A ⇔ f(x) âˆˆ B`.
 
 **Transitivity:** If A â‰¤â‚š B and B â‰¤â‚š C, then A â‰¤â‚š C.
 
@@ -1162,13 +1162,13 @@ A reduction from A to B is a polynomial-time computable function f such that `x 
 
 ```
 SAT
- â†“
+ ↓
 3-SAT
- â†“
-Vertex Cover â† Independent Set â† Clique
- â†“
+ ↓
+Vertex Cover ← Independent Set ← Clique
+ ↓
 Hamiltonian Cycle → TSP
- â†“
+ ↓
 Subset Sum → Knapsack
 ```
 
@@ -1634,7 +1634,7 @@ This is context-free. Grammar: S → aSd | A, A → bAc | Îµ. The grammar gene
 **Answer: (D)**
 
 **Solution:**
-(A) Classic ambiguous grammar for arithmetic expressions (no precedence). (B) Generates {w âˆˆ {a,b}* | #a = #b} with ambiguity → multiple derivations for strings like "ab". (C) Generates a*b a* with ambiguity → `S â‡’ aS â‡’ aSa â‡’ ...` allows multiple leftmost derivations. (D) Unambiguous: A generates exactly {aâ¿bâ¿} in one way, B generates {cáµdáµ} in one way, and S concatenates them. Each string has exactly one parse tree.
+(A) Classic ambiguous grammar for arithmetic expressions (no precedence). (B) Generates {w âˆˆ {a,b}* | #a = #b} with ambiguity → multiple derivations for strings like "ab". (C) Generates a*b a* with ambiguity → `S ⇒ aS ⇒ aSa ⇒ ...` allows multiple leftmost derivations. (D) Unambiguous: A generates exactly {aâ¿bâ¿} in one way, B generates {cáµdáµ} in one way, and S concatenates them. Each string has exactly one parse tree.
 
 ---
 
@@ -1712,8 +1712,8 @@ L = {aâ¿báµcáµ– | n â‰¤ m â‰¤ p} requires tracking three ine
 **Solution:**
 Grammar: S → aSb (adds matching a and b), S → aS (adds extra a), S → Îµ.
 For "aab":
-Derivation 1: S â‡’ aS â‡’ aaSb â‡’ aaÎµb = aab
-Derivation 2: S â‡’ aSb â‡’ a aS b â‡’ aaÎµb = aab
+Derivation 1: S ⇒ aS ⇒ aaSb ⇒ aaÎµb = aab
+Derivation 2: S ⇒ aSb ⇒ a aS b ⇒ aaÎµb = aab
 These are structurally different → Derivation 1 uses aS first, Derivation 2 uses aSb first. The parse trees differ in how the b is attached. Two distinct parse trees → ambiguous for this string.
 
 ---
@@ -2016,7 +2016,7 @@ Recursive languages are closed under all Boolean operations (union, intersection
 **Answer: (A)**
 
 **Solution:**
-(A) RE languages are closed under union. L is recursive â‡’ L is RE. L' is RE. So L âˆª L' is RE (union of two RE languages). (B) Not necessarily recursive → L' may not be recursive, and intersecting with a recursive language may not make it recursive. (C) L' âˆ’ L = L' âˆ© LÌ…. LÌ… is recursive (R closed under complement). Intersection of RE and R is RE, so L' âˆ’ L is RE (not "not RE"). (D) L' could be RE but not recursive (e.g., the halting problem).
+(A) RE languages are closed under union. L is recursive ⇒ L is RE. L' is RE. So L âˆª L' is RE (union of two RE languages). (B) Not necessarily recursive → L' may not be recursive, and intersecting with a recursive language may not make it recursive. (C) L' âˆ’ L = L' âˆ© LÌ…. LÌ… is recursive (R closed under complement). Intersection of RE and R is RE, so L' âˆ’ L is RE (not "not RE"). (D) L' could be RE but not recursive (e.g., the halting problem).
 
 ---
 
@@ -2361,7 +2361,7 @@ r = a(a+b)*b generates strings starting with a and ending with b with any middle
 **Answer: (C)**
 
 **Solution:**
-The Myhill-Nerode theorem states: L is regular iff the equivalence relation ~ (defined as x ~ y iff for all z âˆˆ Î£*, xz âˆˆ L â‡” yz âˆˆ L) has finitely many equivalence classes. Both directions hold: regularity implies finite index, and finite index implies regularity. The number of equivalence classes equals the minimum number of states in a DFA accepting L.
+The Myhill-Nerode theorem states: L is regular iff the equivalence relation ~ (defined as x ~ y iff for all z âˆˆ Î£*, xz âˆˆ L ⇔ yz âˆˆ L) has finitely many equivalence classes. Both directions hold: regularity implies finite index, and finite index implies regularity. The number of equivalence classes equals the minimum number of states in a DFA accepting L.
 
 ---
 
@@ -2824,7 +2824,7 @@ Ambiguity of a CFG is undecidable → there is no algorithm determining if a CFG
 **Answer: (A)**
 
 **Solution:**
-Many-one reduction A â‰¤â‚˜ B means there exists a computable f such that w âˆˆ A â‡” f(w) âˆˆ B. If B is decidable, we decide A by computing f(w) and testing membership in B. (B) is the contrapositive and also valid, but the GATE answer focuses on (A) as the direct reduction property. (C) is false → A and B could be different but equally hard. (D) is false → A would be RE (not necessarily recursive).
+Many-one reduction A â‰¤â‚˜ B means there exists a computable f such that w âˆˆ A ⇔ f(w) âˆˆ B. If B is decidable, we decide A by computing f(w) and testing membership in B. (B) is the contrapositive and also valid, but the GATE answer focuses on (A) as the direct reduction property. (C) is false → A and B could be different but equally hard. (D) is false → A would be RE (not necessarily recursive).
 
 ---
 

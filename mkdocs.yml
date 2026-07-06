@@ -111,6 +111,61 @@ nav:
   - "📄 Resume": resume.md
   - "🗺️ Roadmap": roadmap.md
   - "🔥 Trending": trending.md
+  - "📋 Government Exams":
+    - Overview: courses/government-exams/index.md
+    - 📘 English Language:
+      - Overview: courses/english-language/index.md
+      - Reading Comprehension: courses/english-language/01-reading-comprehension.md
+      - Grammar Essentials: courses/english-language/02-grammar-essentials.md
+      - Vocabulary & Word Usage: courses/english-language/03-vocabulary-word-usage.md
+      - Verbal Ability: courses/english-language/04-verbal-ability.md
+      - Descriptive English: courses/english-language/05-descriptive-english.md
+    - 🧩 Reasoning Ability:
+      - Overview: courses/reasoning-ability/index.md
+      - Puzzles: courses/reasoning-ability/01-puzzles.md
+      - Seating Arrangements: courses/reasoning-ability/02-seating-arrangements.md
+      - Syllogism & Coding-Decoding: courses/reasoning-ability/03-syllogism-coding-decoding.md
+      - Inequalities & Data Sufficiency: courses/reasoning-ability/04-inequalities-data-sufficiency.md
+      - Blood Relations & Direction Sense: courses/reasoning-ability/05-blood-relations-direction-sense.md
+      - Logical Reasoning & Input-Output: courses/reasoning-ability/06-logical-reasoning-input-output.md
+    - 🔢 Quantitative Aptitude:
+      - Overview: courses/quantitative-aptitude/index.md
+      - Arithmetic Foundation: courses/quantitative-aptitude/01-arithmetic-foundation.md
+      - Advanced Arithmetic: courses/quantitative-aptitude/02-advanced-arithmetic.md
+      - Data Interpretation: courses/quantitative-aptitude/03-data-interpretation.md
+      - Number Series: courses/quantitative-aptitude/04-number-series.md
+      - Quadratic Equations & Simplification: courses/quantitative-aptitude/05-quadratic-equations-simplification.md
+      - Permutation, Combination & Probability: courses/quantitative-aptitude/06-permutation-combination-probability.md
+    - 💾 Professional Knowledge Recap:
+      - Overview: courses/professional-knowledge/index.md
+      - DBMS: courses/professional-knowledge/01-dbms.md
+      - Computer Networks: courses/professional-knowledge/02-computer-networks.md
+      - Operating Systems: courses/professional-knowledge/03-operating-systems.md
+      - Data Structures: courses/professional-knowledge/04-data-structures.md
+      - OOPs Concepts: courses/professional-knowledge/05-oops-concepts.md
+      - Software Engineering: courses/professional-knowledge/06-software-engineering.md
+      - Web Technologies: courses/professional-knowledge/07-web-technologies.md
+      - Cloud Computing: courses/professional-knowledge/08-cloud-computing.md
+      - Information Security: courses/professional-knowledge/09-information-security.md
+      - Computer Architecture: courses/professional-knowledge/10-computer-architecture.md
+    - 🏦 Banking Technology:
+      - Overview: courses/banking-technology/index.md
+      - Core Banking Solutions: courses/banking-technology/01-core-banking-solutions.md
+      - Digital Payment Systems: courses/banking-technology/02-digital-payment-systems.md
+      - Banking Security & RBI Guidelines: courses/banking-technology/03-banking-security-guidelines.md
+      - Fintech & Emerging Trends: courses/banking-technology/04-fintech-emerging-trends.md
+    - 🔐 Information Security:
+      - Cryptography Fundamentals: courses/information-security/01-cryptography-fundamentals.md
+      - Network Security: courses/information-security/02-network-security.md
+      - Cyber Threats & Attacks: courses/information-security/03-cyber-threats-attacks.md
+      - Digital Signatures & PKI: courses/information-security/04-digital-signatures-pki.md
+      - Banking & Payment Security: courses/information-security/05-banking-payment-security.md
+    - ⚙️ Computer Architecture:
+      - Number Systems & Boolean Algebra: courses/computer-architecture/01-number-systems.md
+      - CPU Organization: courses/computer-architecture/02-cpu-organization.md
+      - Memory Hierarchy & Cache: courses/computer-architecture/03-memory-hierarchy.md
+      - Pipelining & Hazards: courses/computer-architecture/04-pipelining-hazards.md
+      - IO Organization & DMA: courses/computer-architecture/05-io-organization.md
   - "🤖 AI Agent Engineer":
     - Overview: courses/ai-agent-engineer/00-index.md
     - Phase 0 - Backend Hardening: courses/ai-agent-engineer/01-phase0-backend-hardening.md

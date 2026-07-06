@@ -12,16 +12,16 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 <p class="hero-tagline">Laravel developer → AI Automation Engineer. 500+ lessons across 20 phases, one documented transition at a time.</p>
 
 <div class="hero-stats">
-  <span class="hero-stat"><strong>28&lt;/strong&gt; Courses&lt;/span&gt;
-  <span class="hero-stat"><strong>500+</strong> Lessons&lt;/span&gt;
-  <span class="hero-stat"><strong>20&lt;/strong&gt; Phases&lt;/span&gt;
-  <span class="hero-stat"><strong>570&lt;/strong&gt; Diagrams&lt;/span&gt;
+  <span class="hero-stat"><strong>28</strong> Courses</span>
+  <span class="hero-stat"><strong>500+</strong> Lessons</span>
+  <span class="hero-stat"><strong>20</strong> Phases</span>
+  <span class="hero-stat"><strong>570</strong> Diagrams</span>
 </div>
 
 <div class="hero-ctas">
-  <a href="#course-catalog" class="hero-btn hero-btn-primary">Browse Courses&lt;/a>
-  <a href="ai-engineering-from-scratch/phases/00-setup-and-tooling/" class="hero-btn hero-btn-secondary">Start Learning&lt;/a>
-  <a href="about/" class="hero-btn hero-btn-ghost">About Me&lt;/a>
+  <a href="#course-catalog" class="hero-btn hero-btn-primary">Browse Courses</a>
+  <a href="ai-engineering-from-scratch/phases/00-setup-and-tooling/" class="hero-btn hero-btn-secondary">Start Learning</a>
+  <a href="about/" class="hero-btn hero-btn-ghost">About Me</a>
 </div>
 
 </div>
@@ -74,7 +74,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 ---
 
-<h2 id="course-catalog">CS Foundations — Course Catalog&lt;/h2&gt;
+<h2 id="course-catalog">CS Foundations — Course Catalog</h2>
 
 <p class="section-subtitle">28 university-level courses across programming, CS theory, AI, infrastructure, and career preparation — each with Mermaid diagrams.</p>
 
@@ -82,12 +82,12 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="course-grid" markdown>
 
--   <span class="course-icon">⚙️</span> __[C Programming](courses/c-programming/)__ <span class="course-chaps">18 ch&lt;/span&gt;
--   <span class="course-icon">🧩</span> __[OOP C++](courses/oop-cpp/)__ <span class="course-chaps">16 ch&lt;/span&gt;
--   <span class="course-icon">🐍</span> __[Python Programming](courses/python-programming/)__ <span class="course-chaps">21 ch&lt;/span&gt;
--   <span class="course-icon">🌍</span> __[Web Development](courses/web-development/)__ <span class="course-chaps">18 ch&lt;/span&gt;
--   <span class="course-icon">⚡</span> __[Laravel](courses/laravel/)__ <span class="course-chaps">61 ch&lt;/span&gt;
--   <span class="course-icon">☕</span> __[Java & Spring Boot](courses/java/)__ <span class="course-chaps">65 ch&lt;/span&gt;
+-   <span class="course-icon">⚙️</span> __[C Programming](courses/c-programming/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">🧩</span> __[OOP C++](courses/oop-cpp/)__ <span class="course-chaps">16 ch</span>
+-   <span class="course-icon">🐍</span> __[Python Programming](courses/python-programming/)__ <span class="course-chaps">21 ch</span>
+-   <span class="course-icon">🌍</span> __[Web Development](courses/web-development/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">⚡</span> __[Laravel](courses/laravel/)__ <span class="course-chaps">61 ch</span>
+-   <span class="course-icon">☕</span> __[Java & Spring Boot](courses/java/)__ <span class="course-chaps">65 ch</span>
 
 </div>
 
@@ -95,16 +95,16 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="course-grid" markdown>
 
--   <span class="course-icon">∑</span> __[Discrete Mathematics](courses/discrete-mathematics/)__ <span class="course-chaps">15 ch&lt;/span&gt;
--   <span class="course-icon">🔲</span> __[Digital Logic](courses/digital-logic/)__ <span class="course-chaps">15 ch&lt;/span&gt;
--   <span class="course-icon">🗃️</span> __[Data Structures](courses/data-structures/)__ <span class="course-chaps">18 ch&lt;/span&gt;
--   <span class="course-icon">⚡</span> __[Algorithms](courses/algorithms/)__ <span class="course-chaps">18 ch&lt;/span&gt;
--   <span class="course-icon">💻</span> __[Operating Systems](courses/operating-systems/)__ <span class="course-chaps">18 ch&lt;/span&gt;
--   <span class="course-icon">🗄️</span> __[DBMS](courses/database-management-systems/)__ <span class="course-chaps">19 ch&lt;/span&gt;
--   <span class="course-icon">🌐</span> __[Computer Networks](courses/computer-networks/)__ <span class="course-chaps">18 ch&lt;/span&gt;
--   <span class="course-icon">⚛️</span> __[Theory of Computation](courses/theory-of-computation/)__ <span class="course-chaps">15 ch&lt;/span&gt;
--   <span class="course-icon">🔄</span> __[Compiler Design](courses/compiler-design/)__ <span class="course-chaps">15 ch&lt;/span&gt;
--   <span class="course-icon">📋</span> __[Software Engineering](courses/software-engineering/)__ <span class="course-chaps">16 ch&lt;/span&gt;
+-   <span class="course-icon">∑</span> __[Discrete Mathematics](courses/discrete-mathematics/)__ <span class="course-chaps">15 ch</span>
+-   <span class="course-icon">🔲</span> __[Digital Logic](courses/digital-logic/)__ <span class="course-chaps">15 ch</span>
+-   <span class="course-icon">🗃️</span> __[Data Structures](courses/data-structures/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">⚡</span> __[Algorithms](courses/algorithms/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">💻</span> __[Operating Systems](courses/operating-systems/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">🗄️</span> __[DBMS](courses/database-management-systems/)__ <span class="course-chaps">19 ch</span>
+-   <span class="course-icon">🌐</span> __[Computer Networks](courses/computer-networks/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">⚛️</span> __[Theory of Computation](courses/theory-of-computation/)__ <span class="course-chaps">15 ch</span>
+-   <span class="course-icon">🔄</span> __[Compiler Design](courses/compiler-design/)__ <span class="course-chaps">15 ch</span>
+-   <span class="course-icon">📋</span> __[Software Engineering](courses/software-engineering/)__ <span class="course-chaps">16 ch</span>
 
 </div>
 
@@ -112,10 +112,10 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="course-grid" markdown>
 
--   <span class="course-icon">🤖</span> __[Artificial Intelligence](courses/artificial-intelligence/)__ <span class="course-chaps">18 ch&lt;/span&gt;
--   <span class="course-icon">📊</span> __[Machine Learning](courses/machine-learning/)__ <span class="course-chaps">10 ch&lt;/span&gt;
--   <span class="course-icon">🧠</span> __[Applied AI](courses/applied-ai/)__ <span class="course-chaps">4 ch&lt;/span&gt;
--   <span class="course-icon">🏗️</span> __[System Design](courses/system-design/)__ <span class="course-chaps">24 ch&lt;/span&gt;
+-   <span class="course-icon">🤖</span> __[Artificial Intelligence](courses/artificial-intelligence/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">📊</span> __[Machine Learning](courses/machine-learning/)__ <span class="course-chaps">10 ch</span>
+-   <span class="course-icon">🧠</span> __[Applied AI](courses/applied-ai/)__ <span class="course-chaps">4 ch</span>
+-   <span class="course-icon">🏗️</span> __[System Design](courses/system-design/)__ <span class="course-chaps">24 ch</span>
 
 </div>
 
@@ -123,11 +123,11 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="course-grid" markdown>
 
--   <span class="course-icon">☁️</span> __[Cloud Computing](courses/cloud-computing/)__ <span class="course-chaps">10 ch&lt;/span&gt;
--   <span class="course-icon">🔧</span> __[DevOps](courses/devops/)__ <span class="course-chaps">18 ch&lt;/span&gt;
--   <span class="course-icon">🔒</span> __[Cyber Security](courses/cyber-security/)__ <span class="course-chaps">10 ch&lt;/span&gt;
--   <span class="course-icon">⛓️</span> __[Blockchain](courses/blockchain/)__ <span class="course-chaps">10 ch&lt;/span&gt;
--   <span class="course-icon">📊</span> __[Big Data](courses/big-data/)__ <span class="course-chaps">5 ch&lt;/span&gt;
+-   <span class="course-icon">☁️</span> __[Cloud Computing](courses/cloud-computing/)__ <span class="course-chaps">10 ch</span>
+-   <span class="course-icon">🔧</span> __[DevOps](courses/devops/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">🔒</span> __[Cyber Security](courses/cyber-security/)__ <span class="course-chaps">10 ch</span>
+-   <span class="course-icon">⛓️</span> __[Blockchain](courses/blockchain/)__ <span class="course-chaps">10 ch</span>
+-   <span class="course-icon">📊</span> __[Big Data](courses/big-data/)__ <span class="course-chaps">5 ch</span>
 
 </div>
 
@@ -135,9 +135,10 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="course-grid" markdown>
 
--   <span class="course-icon">🎯</span> __[GATE CS Preparation](courses/gate-cs-preparation/)__ <span class="course-chaps">19 ch&lt;/span&gt;
--   <span class="course-icon">💼</span> __[Placement Preparation](courses/placement-preparation/)__ <span class="course-chaps">7 ch&lt;/span&gt;
--   <span class="course-icon">🧠</span> __[Learning How to Learn](courses/learning-how-to-learn/)__ <span class="course-chaps">14 ch&lt;/span&gt;
+-   <span class="course-icon">🎯</span> __[GATE CS Preparation](courses/gate-cs-preparation/)__ <span class="course-chaps">19 ch</span>
+-   <span class="course-icon">💼</span> __[Placement Preparation](courses/placement-preparation/)__ <span class="course-chaps">7 ch</span>
+-   <span class="course-icon">🧠</span> __[Learning How to Learn](courses/learning-how-to-learn/)__ <span class="course-chaps">14 ch</span>
+-   <span class="course-icon">📋</span> __[Government Exams](courses/government-exams/)__ <span class="course-chaps">21 sub</span>
 
 </div>
 
@@ -174,7 +175,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 </div>
 
 <div style="text-align:center;margin:1rem 0;">
-  <a href="projects/" class="hero-btn hero-btn-primary">View All Projects&lt;/a>
+  <a href="projects/" class="hero-btn hero-btn-primary">View All Projects</a>
 </div>
 
 ---
@@ -193,8 +194,8 @@ Every algorithm here is written from scratch. Every project is deployed. Every m
 ---
 
 <div class="cta-row">
-  <a href="about/" class="cta-primary">👤 About Me&lt;/a>
-  <a href="resume/" class="cta-primary">📄 View Resume&lt;/a>
-  <a href="https://github.com/Raushan666java" class="cta-secondary">💻 GitHub&lt;/a>
-  <a href="https://linkedin.com/in/raushan-kumar-477465250" class="cta-secondary">💼 LinkedIn&lt;/a>
+  <a href="about/" class="cta-primary">👤 About Me</a>
+  <a href="resume/" class="cta-primary">📄 View Resume</a>
+  <a href="https://github.com/Raushan666java" class="cta-secondary">💻 GitHub</a>
+  <a href="https://linkedin.com/in/raushan-kumar-477465250" class="cta-secondary">💼 LinkedIn</a>
 </div>

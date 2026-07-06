@@ -186,6 +186,43 @@ nav:
       - Group Discussion & Case Study: courses/job-preparation/04-group-discussion-case-study.md
       - Offer Negotiation & Career Growth: courses/job-preparation/05-offer-negotiation-career-growth.md
       - Govt Job Portal & Notification Tracker: courses/job-preparation/06-govt-job-portal-notification-tracker.md
+    - 🌍 General Awareness & Current Affairs:
+      - Overview: courses/general-awareness/index.md
+      - Indian Polity & Constitution: courses/general-awareness/01-indian-polity.md
+      - Indian Geography & Environment: courses/general-awareness/02-indian-geography.md
+      - Indian History & Culture: courses/general-awareness/03-indian-history.md
+      - Indian Economy & Planning: courses/general-awareness/04-indian-economy.md
+      - General Science & Technology: courses/general-awareness/05-general-science.md
+      - Current Affairs 2024: courses/general-awareness/06-current-affairs-2024.md
+      - Current Affairs 2025–2026: courses/general-awareness/07-current-affairs-2025-2026.md
+      - Sports, Awards & International Organizations: courses/general-awareness/08-sports-awards-international.md
+    - 🏦 Banking & Financial Awareness:
+      - Overview: courses/banking-financial-awareness/index.md
+      - RBI & Monetary Policy: courses/banking-financial-awareness/01-rbi-monetary-policy.md
+      - Banking System & Regulations: courses/banking-financial-awareness/02-banking-system-regulations.md
+      - Financial Markets & Instruments: courses/banking-financial-awareness/03-financial-markets-instruments.md
+      - Govt Schemes & Budget: courses/banking-financial-awareness/04-government-schemes-budget.md
+      - Banking Terminology & Acts: courses/banking-financial-awareness/05-banking-terminology-acts.md
+    - 🔤 Hindi Language:
+      - Overview: courses/hindi-language/index.md
+      - हिंदी व्याकरण (Grammar): courses/hindi-language/01-hindi-grammar.md
+      - अपठित गद्यांश (Comprehension): courses/hindi-language/02-hindi-comprehension.md
+      - शब्दावली (Vocabulary): courses/hindi-language/03-hindi-vocabulary.md
+      - लेखन कौशल (Writing): courses/hindi-language/04-hindi-writing.md
+      - अनुवाद (Translation): courses/hindi-language/05-hindi-translation.md
+    - 📊 Marketing Aptitude:
+      - Overview: courses/marketing-aptitude/index.md
+      - Marketing Concepts: courses/marketing-aptitude/01-marketing-concepts.md
+      - Sales & Distribution: courses/marketing-aptitude/02-sales-distribution.md
+      - Brand Management & Digital Marketing: courses/marketing-aptitude/03-brand-management-digital.md
+      - Banking Marketing: courses/marketing-aptitude/04-banking-marketing.md
+    - 📈 Data Analysis & Interpretation:
+      - Overview: courses/data-analysis-interpretation/index.md
+      - Advanced Data Interpretation: courses/data-analysis-interpretation/01-advanced-data-interpretation.md
+      - Missing Data & Caselet DI: courses/data-analysis-interpretation/02-missing-data-caselet-di.md
+      - Data Sufficiency: courses/data-analysis-interpretation/03-data-sufficiency.md
+      - Graph & Chart Analysis: courses/data-analysis-interpretation/04-graph-chart-analysis.md
+      - Mixed Data Interpretation: courses/data-analysis-interpretation/05-mixed-data-interpretation.md
   - "🤖 AI Agent Engineer":
     - Overview: courses/ai-agent-engineer/00-index.md
     - Phase 0 - Backend Hardening: courses/ai-agent-engineer/01-phase0-backend-hardening.md

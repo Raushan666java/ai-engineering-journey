@@ -1,0 +1,615 @@
+﻿# Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)
+
+## Learning Objectives
+
+By the end of this chapter, you will be able to:
+- Write formal and informal letters (à¤ªà¤¤à¥à¤°) in the correct Hindi format
+- Draft applications (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°) and business correspondence
+- Structure essays (à¤¨à¤¿à¤¬à¤‚à¤§) on common exam topics
+- Write reports, summaries, and dialogues in Hindi
+- Use official Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€) terminology for government documentation
+
+---
+
+## Theory
+
+### 4.1 Importance of Hindi Writing in Competitive Exams
+
+Hindi writing is a high-scoring section in many government exams:
+- SSC CGL Tier 2: Essay writing (250-300 words)
+- UPSC Mains: Hindi compulsory paper includes essay, letter, and precis
+- IBPS SO/PO: Descriptive Hindi paper
+- State PCS: Hindi writing section
+- CTET: Hindi pedagogy includes writing skills
+
+### 4.2 Letter Writing (à¤ªà¤¤à¥à¤° à¤²à¥‡à¤–à¤¨)
+
+```mermaid
+flowchart TD
+    A[Patra Lekhan] --> B[Aupcharik Patra Formal]
+    A --> C[Anaupcharik Patra Informal]
+    B --> D[Karyalayi Patra]
+    B --> E[Pratna Patra Application]
+    B --> F[Vyavsayik Patra Business]
+    C --> G[Pariwar ko patra]
+    C --> H[Mitra ko patra]
+    D --> D1[Prabandhak ko shikayat]
+    D --> D2[Adhikari ko suchna]
+    E --> E1[Chatri pratna patra]
+    E --> E2[Naukri hetu pratna patra]
+    F --> F1[Vyavsya sandesh]
+    F --> F2[Maal ki maang]
+```
+
+#### A. à¤”à¤ªà¤šà¤¾à¤°à¤¿à¤• à¤ªà¤¤à¥à¤° (Formal Letter) Format
+
+```
+à¤¸à¥‡à¤µà¤¾ à¤®à¥‡à¤‚,
+à¤¶à¥à¤°à¥€à¤®à¤¾à¤¨ _______________ (à¤ªà¤¦à¤¨à¤¾à¤®/à¤¸à¤‚à¤¸à¥à¤¥à¤¾ à¤•à¤¾ à¤¨à¤¾à¤®)
+_______________ (à¤ªà¤¤à¤¾)
+_______________ (à¤¶à¤¹à¤°, à¤ªà¤¿à¤¨ à¤•à¥‹à¤¡)
+
+à¤¦à¤¿à¤¨à¤¾à¤‚à¤•: ____/____/_______
+
+à¤µà¤¿à¤·à¤¯: _______________
+
+à¤®à¤¹à¥‹à¤¦à¤¯/à¤®à¤¹à¥‹à¤¦à¤¯à¤¾,
+
+[à¤ªà¤¤à¥à¤° à¤•à¤¾ à¤®à¥à¤–à¥à¤¯ à¤­à¤¾à¤— â€” 3-4 à¤ªà¥ˆà¤°à¤¾à¤—à¥à¤°à¤¾à¤«]
+1. à¤ªà¤°à¤¿à¤šà¤¯ à¤”à¤° à¤µà¤¿à¤·à¤¯ à¤•à¤¾ à¤‰à¤²à¥à¤²à¥‡à¤–
+2. à¤¸à¤®à¤¸à¥à¤¯à¤¾/à¤…à¤¨à¥à¤°à¥‹à¤§ à¤•à¤¾ à¤µà¤¿à¤µà¤°à¤£
+3. à¤¸à¤®à¤¾à¤§à¤¾à¤¨/à¤•à¤¾à¤°à¥à¤°à¤µà¤¾à¤ˆ à¤•à¤¾ à¤…à¤¨à¥à¤°à¥‹à¤§
+4. à¤§à¤¨à¥à¤¯à¤µà¤¾à¤¦
+
+à¤­à¤µà¤¦à¥€à¤¯,
+_______________ (à¤¹à¤¸à¥à¤¤à¤¾à¤•à¥à¤·à¤°)
+_______________ (à¤¨à¤¾à¤®)
+_______________ (à¤ªà¤¤à¤¾)
+_______________ (à¤¸à¤‚à¤ªà¤°à¥à¤•)
+```
+
+#### B. à¤…à¤¨à¥Œà¤ªà¤šà¤¾à¤°à¤¿à¤• à¤ªà¤¤à¥à¤° (Informal Letter) Format
+
+```
+à¤ªà¤¤à¤¾: _______________
+à¤¦à¤¿à¤¨à¤¾à¤‚à¤•: ____/____/_______
+
+à¤ªà¥à¤°à¤¿à¤¯ _______________,
+
+[à¤ªà¤¤à¥à¤° à¤•à¤¾ à¤®à¥à¤–à¥à¤¯ à¤­à¤¾à¤—]
+1. à¤•à¥à¤¶à¤²à¤•à¥à¤·à¥‡à¤®
+2. à¤¸à¤®à¤¾à¤šà¤¾à¤° à¤”à¤° à¤˜à¤Ÿà¤¨à¤¾à¤à¤
+3. à¤­à¤¾à¤µà¤¨à¤¾à¤à¤ à¤”à¤° à¤…à¤¨à¥à¤­à¤µ
+4. à¤†à¤—à¤¾à¤®à¥€ à¤¯à¥‹à¤œà¤¨à¤¾à¤à¤
+
+à¤†à¤ªà¤•à¤¾ à¤…à¤ªà¤¨à¤¾,
+_______________
+```
+
+### 4.3 Application Writing (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°)
+
+| Type | Recipient | Purpose |
+|------|-----------|---------|
+| Chhutti hetu | Pradhanacharya | Leave application |
+| Scholarship hetu | Adhikari | Scholarship request |
+| Naukri hetu | Prabandhak | Job application |
+| Fees maafi hetu | Pradhanacharya | Fee concession |
+| Library card hetu | Pustakalayadhyaksh | Library card request |
+
+**Example Format:**
+
+```
+à¤¸à¥‡à¤µà¤¾ à¤®à¥‡à¤‚,
+à¤¶à¥à¤°à¥€à¤®à¤¾à¤¨ à¤ªà¥à¤°à¤§à¤¾à¤¨à¤¾à¤šà¤¾à¤°à¥à¤¯,
+____________________ (à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤²à¤¯ à¤•à¤¾ à¤¨à¤¾à¤®)
+____________________ (à¤ªà¤¤à¤¾)
+
+à¤¦à¤¿à¤¨à¤¾à¤‚à¤•: 15/08/2026
+
+à¤µà¤¿à¤·à¤¯: à¤¦à¥‹ à¤¦à¤¿à¤¨ à¤•à¥€ à¤›à¥à¤Ÿà¥à¤Ÿà¥€ à¤¹à¥‡à¤¤à¥ à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°
+
+à¤®à¤¹à¥‹à¤¦à¤¯,
+
+à¤¸à¤µà¤¿à¤¨à¤¯ à¤¨à¤¿à¤µà¥‡à¤¦à¤¨ à¤¹à¥ˆ à¤•à¤¿ à¤®à¥ˆà¤‚ à¤•à¤•à¥à¤·à¤¾ __ à¤•à¤¾ à¤›à¤¾à¤¤à¥à¤°/à¤›à¤¾à¤¤à¥à¤°à¤¾ ____ à¤¹à¥‚à¤à¥¤ à¤•à¤² à¤¦à¤¿à¤¨à¤¾à¤‚à¤• 16/08/2026 à¤•à¥‹ à¤®à¥‡à¤°à¥‡ à¤¬à¤¡à¤¼à¥‡ à¤­à¤¾à¤ˆ à¤•à¤¾ à¤µà¤¿à¤µà¤¾à¤¹ à¤¹à¥ˆà¥¤ à¤‡à¤¸ à¤•à¤¾à¤°à¤£ à¤®à¥ˆà¤‚ à¤¦à¤¿à¤¨à¤¾à¤‚à¤• 16/08/2026 à¤¸à¥‡ 17/08/2026 à¤¤à¤• à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤²à¤¯ à¤®à¥‡à¤‚ à¤‰à¤ªà¤¸à¥à¤¥à¤¿à¤¤ à¤¨à¤¹à¥€à¤‚ à¤¹à¥‹ à¤ªà¤¾à¤Šà¤à¤—à¤¾/à¤¹à¥‚à¤à¤—à¥€à¥¤
+
+à¤…à¤¤à¤ƒ à¤†à¤ªà¤¸à¥‡ à¤µà¤¿à¤¨à¤®à¥à¤° à¤¨à¤¿à¤µà¥‡à¤¦à¤¨ à¤¹à¥ˆ à¤•à¤¿ à¤®à¥à¤à¥‡ à¤¦à¥‹ à¤¦à¤¿à¤¨ à¤•à¥€ à¤›à¥à¤Ÿà¥à¤Ÿà¥€ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¤¨à¥‡ à¤•à¥€ à¤•à¥ƒà¤ªà¤¾ à¤•à¤°à¥‡à¤‚à¥¤
+
+à¤§à¤¨à¥à¤¯à¤µà¤¾à¤¦ à¤¸à¤¹à¤¿à¤¤,
+à¤†à¤ªà¤•à¤¾ à¤†à¤œà¥à¤žà¤¾à¤•à¤¾à¤°à¥€ à¤›à¤¾à¤¤à¥à¤°,
+_______________
+à¤•à¤•à¥à¤·à¤¾: ___
+à¤…à¤¨à¥à¤•à¥à¤°à¤®à¤¾à¤‚à¤•: ___
+```
+
+### 4.4 Essay Writing (à¤¨à¤¿à¤¬à¤‚à¤§ à¤²à¥‡à¤–à¤¨)
+
+```mermaid
+mindmap
+  root((Nibandh Lekhan))
+    Structure
+      Bhumika Intr
+      Sharir Vishay-vistar
+      Upasanghar Summary
+    Prakar
+      Varnatmak Descriptive
+      Vicharatmak Analytical
+      Kalpanik Imaginative
+    Vishay
+      Samajik Muddhe
+      Vyanigayik Yojnaye
+      Sahitya Sanskriti
+      Vigyan Takniki
+      Paryavaran
+    Tips
+      Rekha-ankit karein
+      Udaharan dein
+      Sandarbh sahit likhein
+      Saral bhasha upyog karein
+      Samay prabandhan karein
+```
+
+**Essay Structure:**
+
+| Section | Content | % of Essay |
+|---------|---------|-----------|
+| Bhumika (Introduction) | Topic definition, context, importance | 15% |
+| Vistar (Body) | Analysis with examples, data, arguments | 70% |
+| Upasanghar (Conclusion) | Summary, suggestion, future outlook | 15% |
+
+**Common Essay Topics:**
+1. Digital India: Journey and Impact
+2. Climate Change and Its Effects on India
+3. Nari Sashaktikaran (Women Empowerment)
+4. Bharat ki Sanskritik Vividhta (Cultural Diversity)
+5. Yuvaon ka Desh Nirman Mein Yogdan
+6. Jal Sanrakshan ki Aavashyakta
+7. Swachh Bharat Abhiyan: Safalta aur Chunautiyan
+8. Vigyan aur Prodyogiki: Vardan ya Abhishap
+9. Bhartiya Arthvyavastha mein Digital Payment ki Bhumika
+10. Shiksha ka Adhikar: Labh aur Chunautiyan
+
+**Sample Essay Paragraph:**
+
+```
+Vishay: Paryavaran Sanrakshan
+
+Bhumika: Paryavaran sanrakshan aaj ki sabase badi chunauti hai. Badhti hui jansankhya
+aur audyogikaran ke karan paryavaran par gahra prabhav pada hai. Jal, vayu aur mitti
+pradushan se jeven sankat mein hai.
+
+Sharir: Paryavaran pradushan ke pramukh karan: audhyogik yantron se dhuwan, motar
+gadiyon ka pradushan, rasayanik khadon ka upyog, vanon ki kati. Iske parinam:
+global warming, asaman varsha, rogo ki vriddhi. Paryavaran sanrakshan ke upay:
+vanaropan, rasayanik khadon ka kam upyog, solar urja ka upyog, jansanchar ke
+madhyam se jagrukta.
+
+Upasanghar: Paryavaran sanrakshan har nagrik ka kartavy hai. "Prakriti ki raksha,
+kal ki suraksha" â€” is mantr ke saath hamein paryavaran ki suraksha ke liye age
+aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
+```
+
+### 4.5 Report Writing (à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤²à¥‡à¤–à¤¨)
+
+**Report Components:**
+1. Shikashak (Heading) â€” Title
+2. Sthan aur Tarikh (Place & Date)
+3. Pranamika (Salutation / Address to authority)
+4. Ghatna ka Vivran (Details of event)
+5. Siddhi aur Chunautiyan (Achievements & Challenges)
+6. Suggestion (Recommendations)
+7. Hastaakshan (Signature with designation)
+
+**Sample Report Start:**
+
+```
+à¤ªà¥à¤°à¤¤à¤¿à¤µà¥‡à¤¦à¤¨ / à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ
+
+à¤µà¤¿à¤·à¤¯: à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤²à¤¯ à¤®à¥‡à¤‚ à¤®à¤¨à¤¾à¤ à¤—à¤ "à¤¹à¤¿à¤‚à¤¦à¥€ à¤¦à¤¿à¤µà¤¸" à¤•à¤¾ à¤ªà¥à¤°à¤¤à¤¿à¤µà¥‡à¤¦à¤¨
+
+à¤¦à¤¿à¤¨à¤¾à¤‚à¤•: 15 à¤¸à¤¿à¤¤à¤‚à¤¬à¤° 2026
+
+à¤®à¤¹à¥‹à¤¦à¤¯,
+
+à¤¨à¤¿à¤µà¥‡à¤¦à¤¨ à¤¹à¥ˆ à¤•à¤¿ à¤¦à¤¿à¤¨à¤¾à¤‚à¤• 14 à¤¸à¤¿à¤¤à¤‚à¤¬à¤° 2026 à¤•à¥‹ à¤¹à¤®à¤¾à¤°à¥‡ à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤²à¤¯ à¤®à¥‡à¤‚ à¤¹à¤¿à¤‚à¤¦à¥€ à¤¦à¤¿à¤µà¤¸ à¤¬à¤¡à¤¼à¥‡
+à¤¹à¤°à¥à¤·à¥‹à¤²à¥à¤²à¤¾à¤¸ à¤•à¥‡ à¤¸à¤¾à¤¥ à¤®à¤¨à¤¾à¤¯à¤¾ à¤—à¤¯à¤¾à¥¤ à¤‡à¤¸ à¤…à¤µà¤¸à¤° à¤ªà¤° à¤¨à¤¿à¤®à¥à¤¨à¤²à¤¿à¤–à¤¿à¤¤ à¤•à¤¾à¤°à¥à¤¯à¤•à¥à¤°à¤® à¤†à¤¯à¥‹à¤œà¤¿à¤¤ à¤•à¤¿à¤ à¤—à¤:
+
+1. à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤¸à¤­à¤¾ à¤®à¥‡à¤‚ à¤¹à¤¿à¤‚à¤¦à¥€ à¤¦à¤¿à¤µà¤¸ à¤•à¤¾ à¤®à¤¹à¤¤à¥à¤µ à¤¬à¤¤à¤¾à¤¯à¤¾ à¤—à¤¯à¤¾à¥¤
+2. à¤¨à¤¿à¤¬à¤‚à¤§ à¤ªà¥à¤°à¤¤à¤¿à¤¯à¥‹à¤—à¤¿à¤¤à¤¾, à¤µà¤¾à¤¦-à¤µà¤¿à¤µà¤¾à¤¦ à¤ªà¥à¤°à¤¤à¤¿à¤¯à¥‹à¤—à¤¿à¤¤à¤¾ à¤”à¤° à¤•à¤µà¤¿à¤¤à¤¾ à¤ªà¤¾à¤  à¤•à¤¾ à¤†à¤¯à¥‹à¤œà¤¨ à¤¹à¥à¤†à¥¤
+3. à¤ªà¥à¤°à¤¾à¤šà¤¾à¤°à¥à¤¯ à¤®à¤¹à¥‹à¤¦à¤¯ à¤¨à¥‡ à¤¹à¤¿à¤‚à¤¦à¥€ à¤­à¤¾à¤·à¤¾ à¤•à¥‡ à¤‡à¤¤à¤¿à¤¹à¤¾à¤¸ à¤ªà¤° à¤ªà¥à¤°à¤•à¤¾à¤¶ à¤¡à¤¾à¤²à¤¾à¥¤
+4. à¤µà¤¿à¤œà¥‡à¤¤à¤¾à¤“à¤‚ à¤•à¥‹ à¤ªà¥à¤°à¤¸à¥à¤•à¤¾à¤° à¤µà¤¿à¤¤à¤°à¤¿à¤¤ à¤•à¤¿à¤ à¤—à¤à¥¤
+
+à¤¯à¤¹ à¤ªà¥à¤°à¤¤à¤¿à¤µà¥‡à¤¦à¤¨ à¤†à¤ªà¤•à¥€ à¤œà¤¾à¤¨à¤•à¤¾à¤°à¥€ à¤®à¥‡à¤‚ à¤ªà¥à¤°à¤¸à¥à¤¤à¥à¤¤ à¤•à¤¿à¤¯à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤
+
+à¤†à¤ªà¤•à¤¾ à¤†à¤œà¥à¤žà¤¾à¤•à¤¾à¤°à¥€,
+à¤¸à¤šà¤¿à¤µ / à¤•à¤¾à¤°à¥à¤¯à¤•à¥à¤°à¤® à¤¸à¤‚à¤¯à¥‹à¤œà¤•
+```
+
+### 4.6 Summary Writing (à¤¸à¤¾à¤°à¤¾à¤‚à¤¶ à¤²à¥‡à¤–à¤¨)
+
+**Rules:** Write in 1/3 of original text, only main ideas, in your own words.
+
+| Step | Action |
+|------|--------|
+| 1 | Pure gadyansh ko 2 baar dhyan se padhein |
+| 2 | Mukhya binduon ko underline karein |
+| 3 | Apne shabdon mein saransh likhein |
+| 4 | Mool gadyansh ka 1/3 se adhik na ho |
+| 5 | Kisi bhi vyaktigat rai ko na jodein |
+
+### 4.7 Dialogue Writing (à¤¸à¤‚à¤µà¤¾à¤¦ à¤²à¥‡à¤–à¤¨)
+
+**Guidelines:**
+- Bhasha sahitiyik aur svabhavik ho
+- Patron ke anuroop bhasha ho (buddhiman, anpadh, bachcha, vidwan)
+- Vaky chhote aur spasht hone chahiye
+- Bhavon ko vyakt karne ka avsar mile
+
+### 4.8 Office Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€)
+
+| English Term | Hindi Equivalent |
+|-------------|------------------|
+| Office Order | Karyalaya Aadesh |
+| Memorandum | Smriti Patra (Geet-Patra) |
+| Circular | Paripatra |
+| Notification | Adhisuchna |
+| Notice | Suchna |
+| File | Mistak (File) |
+| Section | Khand |
+| Reference | Sandarbh/Sankhya |
+| Endorsement | Anumanjuri |
+| D.O. Letter | Sandesh Patra |
+| Cipher | Guptalekh |
+| Pension | Vetan ki sampatti |
+| Leave | Chhutti |
+| Pay Scale | Vetan Sreni |
+| Designation | Padnam |
+| Under Consideration | Vicharadheen |
+| With Reference to | Sandarbh mein |
+| Kindly refer to | Kripa dekhein |
+| For necessary action | Avashyak karyvahi hetu |
+
+**Office Drafting Tips:**
+1. Bhasha saral aur spasht ho
+2. Samasya ka mul karan batayein
+3. Nirdesh vicharon se do-chaar karein
+4. Sachchai aur satyata ka sada dhyaan rakhein
+5. Atyadhik takniki shabdon se bachein
+
+### 4.9 Precis Writing (Precis / Saransh)
+
+| Element | Description |
+|---------|-------------|
+| Title | Saransh ke anukul shikshak |
+| Length | Mool path ka 1/3 |
+| Language | Saral, spasht aur mool bhav ke anusar |
+| Points | Keval mukhya bindu |
+| Avoid | Udaharan, aankde, vyaktigat mat |
+
+**Steps:**
+1. Gadyansh ko 2-3 baar samajh kar padhein
+2. Mukhya binduon ko alag karein
+3. Mool gadyansh ke bhav ko banaaye rakhein
+4. Saransh ko vyavsthith roop se likhein
+5. Shikshak avashyak hai
+
+---
+
+## Examples
+
+### Example 1: TypeScript â€” Letter Format Validator
+
+```typescript
+interface Letter {
+  type: "formal" | "informal";
+  to: string;
+  subject: string;
+  body: string;
+  date: string;
+  signature: string;
+}
+
+function validateLetter(letter: Letter): string[] {
+  const errors: string[] = [];
+  if (!letter.to) errors.push("à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤à¤•à¤°à¥à¤¤à¤¾ (to) à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆ");
+  if (!letter.subject && letter.type === "formal") errors.push("à¤µà¤¿à¤·à¤¯ à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆ");
+  if (!letter.body || letter.body.length < 20) errors.push("à¤ªà¤¤à¥à¤° à¤•à¤¾ à¤®à¥à¤–à¥à¤¯ à¤­à¤¾à¤— à¤¬à¤¹à¥à¤¤ à¤›à¥‹à¤Ÿà¤¾ à¤¹à¥ˆ");
+  if (!letter.signature) errors.push("à¤¹à¤¸à¥à¤¤à¤¾à¤•à¥à¤·à¤° à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆ");
+  if (!letter.date) errors.push("à¤¦à¤¿à¤¨à¤¾à¤‚à¤• à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆ");
+  if (letter.type === "formal" && !letter.body.includes("à¤­à¤µà¤¦à¥€à¤¯")) errors.push("'à¤­à¤µà¤¦à¥€à¤¯' à¤•à¤¾ à¤ªà¥à¤°à¤¯à¥‹à¤— à¤†à¤µà¤¶à¥à¤¯à¤• à¤¹à¥ˆ");
+  return errors;
+}
+
+const sampleLetter: Letter = {
+  type: "formal",
+  to: "Pradhanacharya Mahoday",
+  subject: "Chhutti hetu pratna patra",
+  body: "Sewamein, main aapko soochit karana chahta hoon...",
+  date: "15/08/2026",
+  signature: "Ram Sharma, K. 12"
+};
+
+console.log(validateLetter(sampleLetter));
+```
+
+### Example 2: TypeScript â€” Essay Outliner
+
+```typescript
+interface EssayOutline {
+  title: string;
+  intro: string;
+  bodyPoints: string[];
+  conclusion: string;
+  wordCount: number;
+}
+
+function createEssayOutline(title: string, keywords: string[]): EssayOutline {
+  return {
+    title,
+    intro: `${title}: ${title} aaj ke samay ka ek mahatvapurn vishay hai...`,
+    bodyPoints: keywords.map(k => `${k} ka vishleshan aur uske prabhav`),
+    conclusion: `Upasanghar: ${title} ke mahatva ko samajhte hue ise apnana hoga.`,
+    wordCount: 300
+  };
+}
+
+const outline = createEssayOutline("Paryavaran Sanrakshan",
+  ["Karan", "Prabhav", "Samadhan", "Sarkari yojnaye"]);
+console.log("Essay outline ready:", outline.title);
+outline.bodyPoints.forEach(bp => console.log("Point:", bp));
+```
+
+### Example 3: TypeScript â€” Official Letter Generator
+
+```typescript
+function generateApplication(
+  name: string, class_: string, rollNo: string,
+  purpose: string, leaveDays: number, fromDate: string,
+  toDate: string
+): string {
+  const body = `Sewamein, main ${class_} ka chatra ${name} (Anukramank: ${rollNo}) hoon.
+Mujhe ${purpose} ke karan dinank ${fromDate} se ${toDate} tak (${leaveDays} din) school
+aana sambhav nahin hoga. Aapse nivedan hai ki mujhe ${leaveDays} din ki chhutti
+pradan karne ki kripa karein.
+
+Dhanyavad sahit,
+Apna aagyakari chatra,
+${name}
+Kaksha: ${class_}
+Anukramank: ${rollNo}`;
+  return body;
+}
+
+const app = generateApplication("Ravi", "10th", "101", "Bade bhai ke vivah", 2, "16/08/26", "17/08/26");
+console.log(app);
+```
+
+### Example 4: TypeScript â€” Report Generator
+
+```typescript
+interface ReportEvent {
+  eventName: string;
+  date: string;
+  venue: string;
+  activities: string[];
+  participants: number;
+  winner: string;
+  suggestions: string[];
+}
+
+function generateReport(event: ReportEvent): string {
+  let report = `à¤µà¤¿à¤·à¤¯: ${event.eventName} à¤•à¤¾ à¤ªà¥à¤°à¤¤à¤¿à¤µà¥‡à¤¦à¤¨\n\n`;
+  report += `à¤¦à¤¿à¤¨à¤¾à¤‚à¤•: ${event.date}\nà¤¸à¥à¤¥à¤¾à¤¨: ${event.venue}\n\n`;
+  report += `à¤•à¤¾à¤°à¥à¤¯à¤•à¥à¤°à¤® à¤µà¤¿à¤µà¤°à¤£:\n`;
+  event.activities.forEach((a, i) => report += `${i+1}. ${a}\n`);
+  report += `\nà¤ªà¥à¤°à¤¤à¤¿à¤­à¤¾à¤—à¥€: ${event.participants}\n`;
+  report += `à¤µà¤¿à¤œà¥‡à¤¤à¤¾: ${event.winner}\n\n`;
+  report += `à¤¸à¥à¤à¤¾à¤µ:\n`;
+  event.suggestions.forEach(s => report += `- ${s}\n`);
+  return report;
+}
+
+const report = generateReport({
+  eventName: "Hind Diwash Samaroh",
+  date: "14 September 2026",
+  venue: "School Parishar",
+  activities: ["Prathna sabha", "Nibandh spardha", "Kavita path", "Puraskar vitaran"],
+  participants: 250,
+  winner: "Priya Verma (Kaksha 12)",
+  suggestions: ["Aur adhik karyakram hone chahiye", "Samay prabandhan behtar karein"]
+});
+console.log(report);
+```
+
+### Example 5-20: Solved MCQs
+
+<details>
+<summary>View 16 solved MCQs on Hindi Writing</summary>
+
+**Q1.** Aupcharik patra mein kin cheezon ka hona anivarya hai?
+a) Vishesh shikshak, sewa mein, dinank, vishay, bhavdeey
+b) Sewa mein, vishay, date, aapka, vishvas
+c) Aadar, dinank, gehrai, lekhak
+d) Sewa mein, vishay, dinank, bhavdeey
+**Answer:** d) Sewa mein, vishay, dinank, bhavdeey
+
+**Q2.** Nibandh lekhan mein sabse lambe bhag kaun sa hota hai?
+a) Bhumika b) Sharir c) Upasanghar d) Shikshak
+**Answer:** b) Sharir (Body â€” 70% of essay)
+
+**Q3.** Saransh lekhan mein mool gadyansh ka kitne bhag ka saransh likhna chahiye?
+a) Aadha b) 1/3 c) 1/4 d) 1/5
+**Answer:** b) 1/3 (Ek-tihai)
+
+**Q4.** Karyalayi Hindi mein "Memorandum" ka kya Hindi shabd hai?
+a) Smriti patra b) Karyalay adesh c) Paripatra d) Adhisoochana
+**Answer:** a) Smriti patra (Geet-patra)
+
+**Q5.** Anaupcharik patra mein "Sewa mein" ka upyog kahan kiya jata hai?
+a) Hamesha b) Kabhi nahi c) Keval formal mein d) Kuch logo ke saath
+**Answer:** b) Kabhi nahi â€” Anaupcharik patra mein "Sewa mein" nahi likha jaata
+
+**Q6.** Prarthana patra mein "Vishay" ke baad kya aata hai?
+a) Sewa mein b) Mahoday c) Patra ka mukhya bhag d) Dinank
+**Answer:** b) Mahoday / Mahodaya (aadar shabd)
+
+**Q7.** Nibandh mein kitne bhag hote hain?
+a) 2 b) 3 c) 4 d) 5
+**Answer:** b) 3 (Bhumika, Sharir, Upasanghar)
+
+**Q8.** Karyalayi Hindi mein "Circular" ka kya shabd hai?
+a) Adesh b) Geet patra c) Paripatra d) Gutalekh
+**Answer:** c) Paripatra
+
+**Q9.** Report lekhan mein kin cheezon ka ullakh avashyak hai?
+a) Sthan, dinank, ghatna, vivran b) Kavita, kahani c) Khoj, shod, nibandh d) Samachar, patr
+**Answer:** a) Sthan, dinank, ghatna, vivran
+
+**Q10.** Sanwad lekhan mein kya mahatvapurna hai?
+a) Kavita b) Patron ke anuroop bhasha c) Khand d) Shikshak
+**Answer:** b) Patron ke anuroop bhasha honi chahiye
+
+**Q11.** "D.O. Letter" ka Hindi kya hai?
+a) Karyalay patra b) Sandesh patra c) Prartna patra d) Vyavsayik patra
+**Answer:** b) Sandesh patra
+
+**Q12.** Nibandh ke sharir mein pramukh roop se kya hota hai?
+a) Nishkarsh b) Udaharan aur vishleshan c) Parichay d) Aahvan
+**Answer:** b) Udaharan aur vishleshan
+
+**Q13.** Prarup (format) ke anusaar patra kitne prakar ke hote hain?
+a) 2 b) 3 c) 4 d) 5
+**Answer:** a) 2 (Aupcharik aur Anaupcharik)
+
+**Q14.** Karyalayi Hindi mein "Pension" ka kya shabd hai?
+a) Vetan b) Sampatti c) Chhutti d) Bhata
+**Answer:** b) Sampatti
+
+**Q15.** Saransh lekhan mein kitne pratishat tak shabd rakha jaata hai?
+a) 25% b) 33% c) 40% d) 50%
+**Answer:** b) 33% (1/3)
+
+**Q16.** Hindi mein nibandh ki shuruaat kis bhag se hoti hai?
+a) Sharir b) Shikshak c) Bhumika d) Upasanghar
+**Answer:** c) Bhumika (Introduction)
+
+</details>
+
+---
+
+## Summary
+
+**Hindi Saransh:**
+- Patra lekhan do prakar ka hota hai: Aupcharik aur Anaupcharik. Dono ke alag-alag format hote hain.
+- Aupcharik patra mein "Sewa mein", vishay aur bhavdeey anivarya hain.
+- Nibandh ke teen bhag hote hain: Bhumika, Sharir (sabse bada), Upasanghar.
+- Report mein ghatna ka vivran, sthan, dinank aur sujhao anivarya hain.
+- Saransh mool gadyansh ka 1/3 aur apne shabdon mein likhna chahiye.
+- Karyalayi Hindi mein angrezi shabdon ke liye Hindi shabdon ko yaad karna avashyak hai.
+
+**English Summary:**
+- Letter writing has two types: Formal (Aupcharik) and Informal (Anaupcharik) with different formats.
+- Formal letters require "Sewa mein", subject (vishay), and "Bhavdeey" as essential elements.
+- Essays have three parts: Introduction (Bhumika), Body (Sharir â€” 70%), Conclusion (Upasanghar).
+- Reports must include event details, place, date, and recommendations.
+- Summaries should be 1/3 of original text written in one's own words.
+- Office Hindi requires knowledge of Hindi equivalents for English administrative terms.
+
+## Practical Takeaways
+
+1. For letters: Memorize the format structure â€” "Sewa mein" and "Bhavdeey" are non-negotiable for formal letters.
+2. For essays: Use the 15-70-15 rule â€” 15% intro, 70% body (with 3-4 arguments), 15% conclusion.
+3. For reports: Include the 5 Ws â€” Kya (what), Kahan (where), Kab (when), Kaun (who), Kyun (why).
+4. For office drafting: Keep sentences under 20 words; use active voice; avoid Persian/Arabic synonyms where Hindi wording exists.
+5. For competitive exams: Practice writing on current topics within a 30-minute time limit for essays.
+
+## Chapter Quiz
+
+**Q1.** Nibandh ke kis bhag mein visheshan aur udaharan die jaate hain?
+a) Bhumika b) Sharir c) Upasanghar d) Shikshak
+<details><summary>Answer</summary>b) Sharir â€” Body mein vishleshan aur udaharan hote hain.</details>
+
+**Q2.** "Sewa mein" ka upyog kis patra mein hota hai?
+a) Anaupcharik b) Aupcharik c) Dono mein d) Kisi mein nahi
+<details><summary>Answer</summary>b) Aupcharik formal patra mein</details>
+
+**Q3.** Saransh mool gadyansh se kitna chhota hona chahiye?
+a) 1/2 b) 1/3 c) 1/4 d) 3/4
+<details><summary>Answer</summary>b) 1/3 (33% of original)</details>
+
+**Q4.** Hindi mein "Office Order" ka kya shabd hai?
+a) Smriti patra b) Karyalay adesh c) Paripatra d) Guptalekh
+<details><summary>Answer</summary>b) Karyalay adesh</details>
+
+**Q5.** Anaupcharik patra kis bhasha mein likha jaata hai?
+a) Kathan bhasha b) Atyadhik aupcharik c) Kashtpurn d) Kavita-maya
+<details><summary>Answer</summary>a) Kathan bhasha (normal conversational Hindi)</details>
+
+---
+
+## Exercises
+
+### Letter Writing (Q1-Q5)
+1. Apne pradhanacharya ko 3 din ki chhutti ke liye prarthna patra likhein.
+2. Apne mitra ko janmdin ki badhai ka patra likhein.
+3. Prakashan vibhag ko kitaab maangne ka vyavsayik patra likhein.
+4. Nagar nigam adhikari ko gali ki safai ke liye patra likhein.
+5. Apne pita ko pariksha parinam ke vishay mein batate hue patra likhein.
+
+### Essay Writing (Q6-Q10)
+Outline the structure for these topics:
+6. Bharat mein digital shiksha ka vikas
+7. Jal sanrakshan ki avashyakta aur upay
+8. Yuva pidhi aur desh nirman
+9. Mahila sashaktikaran: Chunautiyan aur samadhan
+10. Swachh Bharat Abhiyan: Ek safalta ki kahani
+
+### Report Writing (Q11-Q15)
+Write short reports on:
+11. Vidyalay mein van mahotsav karyakram
+12. Grameen kshetra mein swachhta abhiyan
+13. School sports day ka prativendan
+14. Vigyan pradarshani ka aayojan
+15. Nukkar natak ke madhyam se jagrukta abhiyan
+
+### Summary Writing (Q16-Q20)
+Write a 1/3 summary of:
+16. "Jal hi jeevan hai â€” jal sanrakshan ka mahtva..."
+17. "Bharatiya sanskriti vishwa ki sabase prachin sanskritiyon mein se ek hai..."
+18. "Digital India ne bharat ke arthik paridrishya ko badal diya hai..."
+19. "Shaikshik kshetra mein prodyogiki ke naye prayog..."
+20. "Paryavaran pradushan ek gahan samasya..."
+
+### Dialogue Writing (Q21-Q25)
+21. Teacher aur student ke beech pariksha ki taiyari par sanwad (8 lines)
+22. Doctor aur patient ke beech sanwad (6 lines)
+23. Do mitron ke beech paryatan yojana par baat-cheet (10 lines)
+24. Pustakalayadhyaksh aur chatra ke beech library card ke liye sanwad
+25. Mata aur putri ke beech ghar ki safai par sanwad
+
+### Office Hindi (Q26-Q30)
+Translate to Hindi:
+26. "This is to inform you that..."
+27. With reference to your letter dated...
+28. For necessary action please
+29. Under consideration
+30. Endorsement and approval required
+
+### Answer Key
+(Answers: See theory sections above for formats and terminology)
+
+**Letters (Q1-Q5):** Follow the formal/informal letter formats given in 4.2.
+
+**Essays (Q6-Q10):** Each should have Bhumika (2-3 lines), Sharir (8-10 lines with 3-4 points), Upasanghar (2-3 lines).
+
+**Reports (Q11-Q15):** Must include â€” Shikshak, Sthan, Dinank, Ghatna vivran, Siddhiyan, Sujhao.
+
+**Summary (Q16-Q20):** Original text ka 1/3, kewal mukhya bindu, apne shabdon mein.
+
+**Dialogue (Q21-Q25):** Patron ke anuroop bhasha, chhote vaky, bhavon ka pradarshan.
+
+**Office Hindi (Q26-Q30):**
+26. Aapko soochit kiya jata hai ki...
+27. Aapke patra dinank... ke sandarbh mein
+28. Avashyak karyvahi hetu kripa karein
+29. Vicharadheen
+30. Anumanjuri aur swikriti avashyak

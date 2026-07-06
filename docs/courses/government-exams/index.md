@@ -56,6 +56,11 @@ mindmap
 | 14 | **Digital Logic** | ✅ Existing | [Start](../digital-logic/) |
 | 15 | **Banking Technology & Digital Banking** | ✅ New | [Start](../banking-technology/) |
 | 16 | **Professional Knowledge (PK) Recap** | ✅ New | [Start](../professional-knowledge/) |
+| 17 | **General Awareness & Current Affairs** | ✅ New | [Start](../general-awareness/) |
+| 18 | **Banking & Financial Awareness** | ✅ New | [Start](../banking-financial-awareness/) |
+| 19 | **Hindi Language** | ✅ New | [Start](../hindi-language/) |
+| 20 | **Marketing Aptitude** | ✅ New | [Start](../marketing-aptitude/) |
+| 21 | **Data Analysis & Interpretation** | ✅ New | [Start](../data-analysis-interpretation/) |
 
 ---
 

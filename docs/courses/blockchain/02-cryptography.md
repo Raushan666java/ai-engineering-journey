@@ -404,7 +404,7 @@ function verifySignature(
    - D) Avalanche effect
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Collision resistance.** Collision resistance guarantees it is computationally infeasible to find two different inputs that hash to the same output. This prevents attackers from substituting one transaction for another while maintaining the same hash.
 </details>
 
@@ -415,7 +415,7 @@ function verifySignature(
    - D) By removing old transactions
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) By providing a logarithmic-sized proof that a transaction is included in a block.** An SPV wallet only needs to download block headers and a Merkle proof (log2(n) hashes) to verify a transaction, instead of downloading all transactions.
 </details>
 
@@ -426,7 +426,7 @@ function verifySignature(
    - D) The private key and the signature
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) The public key, the message, and the signature.** Anyone can verify a signature using the signer's public key, the original message, and the signature itself. The private key is never needed for verification.
 </details>
 
@@ -437,7 +437,7 @@ function verifySignature(
    - D) It eliminates the need for padding
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It allows hashing arbitrary-length inputs using a fixed-size compression function.** The Merkle-Damgård construction pads the input to a multiple of the block size and processes it through iterative applications of the compression function.
 </details>
 
@@ -448,7 +448,7 @@ function verifySignature(
    - D) They are older and more tested
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) They support signature aggregation.** Schnorr signatures allow multiple signatures from different participants to be combined into a single signature, reducing transaction size and improving privacy. This was a key feature of the Bitcoin Taproot upgrade.
 </details>
 
@@ -792,11 +792,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -804,7 +804,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

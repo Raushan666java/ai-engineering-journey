@@ -1342,28 +1342,28 @@ The full system follows a layered, horizontally scalable topology.
    - B) Tenant_id foreign key on all tables with global scopes
    - C) Separate application instance per tenant
    - D) API gateway routing
-   <details><summary>Answer</summary>**B)** Every table has a tenant_id column and models use global scopes for automatic filtering.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Every table has a tenant_id column and models use global scopes for automatic filtering.</details>
 
 2. What search engine powers product search?
    - A) Elasticsearch
    - B) Algolia
    - C) Meilisearch
    - D) Typesense
-   <details><summary>Answer</summary>**C)** Meilisearch is used with Laravel Scout for real-time full-text search.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Meilisearch is used with Laravel Scout for real-time full-text search.</details>
 
 3. Why is idempotency important in payment processing?
    - A) To reduce code complexity
    - B) To prevent double charges on job retry
    - C) To improve database performance
    - D) To simplify the data model
-   <details><summary>Answer</summary>**B)** Job retries can re-execute payment logic; idempotency ensures customers are charged only once.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Job retries can re-execute payment logic; idempotency ensures customers are charged only once.</details>
 
 4. How are cache keys scoped per tenant?
    - A) Separate Redis databases
    - B) Tenant_id prefix on cache keys
    - C) Query string parameter
    - D) Separate cache servers
-   <details><summary>Answer</summary>**B)** Cache keys are prefixed by tenant_id to prevent data leakage between tenants.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Cache keys are prefixed by tenant_id to prevent data leakage between tenants.</details>
 
 ## Summary
 

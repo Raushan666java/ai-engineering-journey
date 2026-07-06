@@ -44,7 +44,7 @@ A `for` loop is like running laps around a track: you know exactly how many laps
 | Step | Track Analogy | Code Equivalent |
 |------|--------------|-----------------|
 | 1 | Start at lap counter = 0 | `int lap = 0;` |
-| 2 | Check if lap count < 5 | `lap < 5` |
+| 2 | Check if lap count &lt; 5 | `lap < 5` |
 | 3 | Run one lap | `printf("Lap %d\n", lap);` |
 | 4 | Increment lap counter | `lap++` |
 | 5 | Go back to step 2 | (automatic in for loop) |
@@ -708,7 +708,7 @@ for (int i = 1; i <= 5; i++) {
 | 3         | 3               | false       | Print "3 " | 4 |
 | 4         | 4               | **true**    | continue | 5 |
 | 5         | 5               | false       | Print "5 " | 6 |
-| (exit)    | 6               | false (6 <= 5 false) | — | — |
+| (exit)    | 6               | false (6 &lt;= 5 false) | — | — |
 
 **Final output:** `1 3 5 `
 
@@ -898,7 +898,7 @@ for (int i = 1; i <= 3; i++) {
 | 3       | j = 1       | true (enter)    | true             | (3,1) | j = 2             | — |
 | 3       | —           | —               | true             | (3,2) | j = 3             | — |
 | 3       | —           | —               | **false** (exit inner) | — | — | i = 4 |
-| (exit)  | —           | **false** (i=4, 4 <= 3 false) | — | — | — | — |
+| (exit)  | —           | **false** (i=4, 4 &lt;= 3 false) | — | — | — | — |
 
 **Output:**
 ```
@@ -1044,7 +1044,7 @@ The constant factor (×½) doesn't change the complexity class. For n = 1000, n�
 | Edge Case | Behavior |
 |-----------|----------|
 | Empty outer loop body | Inner loop never runs (outer condition false from start) |
-| Empty inner loop bound | Inner loop never runs (e.g., j < 0) |
+| Empty inner loop bound | Inner loop never runs (e.g., j &lt; 0) |
 | Break inside inner | Exits only inner; outer continues unaffected |
 | Continue inside inner | Skips to next inner iteration (not outer) |
 | Outer i, inner uses i | Inner loop depends on outer value — dynamic bound |
@@ -1786,7 +1786,7 @@ while (i < n) {
    C) Infinite
    D) Compiler error
 
-<details><summary>Answer</summary>**A)** The condition `i < 0` is false immediately, so the body never executes (entry-controlled).</details>
+<details><summary>Answer&lt;/summary&gt;**A)** The condition `i < 0` is false immediately, so the body never executes (entry-controlled).</details>
 
 2. What does `while (1) { break; }` do?
    A) Runs forever
@@ -1794,7 +1794,7 @@ while (i < n) {
    C) Compiler error
    D) Undefined behavior
 
-<details><summary>Answer</summary>**B)** The `while (1)` creates an infinite loop, but `break` immediately exits on the first iteration.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The `while (1)` creates an infinite loop, but `break` immediately exits on the first iteration.</details>
 
 3. Which loop guarantees at least one execution of the body?
    A) `for`
@@ -1802,7 +1802,7 @@ while (i < n) {
    C) `do-while`
    D) All of the above
 
-<details><summary>Answer</summary>**C)** `do-while` checks the condition after the body runs, guaranteeing at least one execution. `for` and `while` are entry-controlled (may execute 0 times).</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `do-while` checks the condition after the body runs, guaranteeing at least one execution. `for` and `while` are entry-controlled (may execute 0 times).</details>
 
 4. What does the following code print?
    ```c
@@ -1817,7 +1817,7 @@ while (i < n) {
    C) 012234
    D) 012345
 
-<details><summary>Answer</summary>**C)** i=0: j=0→0, j=1→1. i=1: j=0→1, j=1→2. i=2: j=0→2, j=1→3. Output: "0 1 1 2 2 3" = 012234.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** i=0: j=0→0, j=1→1. i=1: j=0→1, j=1→2. i=2: j=0→2, j=1→3. Output: "0 1 1 2 2 3" = 012234.</details>
 
 5. Which of these is NOT an entry-controlled loop?
    A) `for`
@@ -1825,7 +1825,7 @@ while (i < n) {
    C) `do-while`
    D) Both A and B
 
-<details><summary>Answer</summary>**C)** `do-while` is exit-controlled — the condition is checked after the body executes.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `do-while` is exit-controlled — the condition is checked after the body executes.</details>
 
 6. What is the time complexity of this code?
    ```c
@@ -1838,7 +1838,7 @@ while (i < n) {
    C) O(log n)
    D) O(1)
 
-<details><summary>Answer</summary>**B)** O(n²) — the inner loop runs n times for each of the n outer iterations, giving n × n = n² total iterations.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** O(n²) — the inner loop runs n times for each of the n outer iterations, giving n × n = n² total iterations.</details>
 
 7. How do you write an infinite loop in C?
    A) `while (1)`
@@ -1846,7 +1846,7 @@ while (i < n) {
    C) Both A and B
    D) Neither
 
-<details><summary>Answer</summary>**C)** Both `while (1)` and `for (;;)` create infinite loops. `while (1)` is more idiomatic for event loops.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Both `while (1)` and `for (;;)` create infinite loops. `while (1)` is more idiomatic for event loops.</details>
 
 8. What happens when `continue` executes inside a `for` loop?
    A) The loop terminates immediately
@@ -1854,7 +1854,7 @@ while (i < n) {
    C) The loop body restarts from the top without running the update
    D) Undefined behavior
 
-<details><summary>Answer</summary>**B)** In a `for` loop, `continue` jumps to the update statement, then the condition is checked. In a `while` loop, it jumps directly to the condition check (hence why update must appear before `continue` in `while` loops).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** In a `for` loop, `continue` jumps to the update statement, then the condition is checked. In a `while` loop, it jumps directly to the condition check (hence why update must appear before `continue` in `while` loops).</details>
 
 9. What is wrong with this code?
    ```c
@@ -1870,7 +1870,7 @@ while (i < n) {
    C) Variable should be declared in loop
    D) Nothing, it works correctly
 
-<details><summary>Answer</summary>**B)** The semicolon after `while (i < 10);` creates an empty loop body. The block with `printf` and `i++` is outside the loop, which runs forever because i never changes.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The semicolon after `while (i < 10);` creates an empty loop body. The block with `printf` and `i++` is outside the loop, which runs forever because i never changes.</details>
 
 10. Which loop construct is best for a menu-driven program that must display the menu at least once?
     A) `for`
@@ -1878,7 +1878,7 @@ while (i < n) {
     C) `do-while`
     D) `goto`
 
-<details><summary>Answer</summary>**C)** `do-while` guarantees the menu is displayed at least once before checking if the user wants to quit.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `do-while` guarantees the menu is displayed at least once before checking if the user wants to quit.</details>
 
 ---
 

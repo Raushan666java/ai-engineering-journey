@@ -633,7 +633,7 @@ class LanguageTypeChecker {
   // RHS length = LHS length (non-contracting), and LHS may have context.
   // For simplicity, we check |lhs| = |rhs|.
   isContextSensitive(): boolean {
-    return this.productions.every(p => p.lhs.length <= p.rhs.length);
+    return this.productions.every(p => p.lhs.length &lt;= p.rhs.length);
   }
 
   // Check if grammar satisfies Type-0 (unrestricted):
@@ -859,11 +859,11 @@ The Theory of Computation provides the mathematical foundations for understandin
 
 ```typescript
 interface DFA {
-  states: Set<string>;
-  alphabet: Set<string>;
-  transition: Map<string, Map<string, string>>;
+  states: Set&lt;string&gt;;
+  alphabet: Set&lt;string&gt;;
+  transition: Map&lt;string, Map<string, string&gt;>;
   start: string;
-  accept: Set<string>;
+  accept: Set&lt;string&gt;;
 }
 
 function runDFA(dfa: DFA, input: string): boolean {

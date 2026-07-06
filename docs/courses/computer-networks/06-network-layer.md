@@ -320,8 +320,8 @@ for key, val in parsed.items():
 
 ### Edge Cases
 
-- **IHL < 5**: Malformed packet, should be discarded.
-- **Total Length < 20**: Impossible header, discard.
+- **IHL &lt; 5**: Malformed packet, should be discarded.
+- **Total Length &lt; 20**: Impossible header, discard.
 - **Total Length > 65535**: Exceeds 16-bit field; fragment or discard.
 - **Version != 4**: Not IPv4; could be IPv6 (version field is same position).
 
@@ -519,7 +519,7 @@ print(f"Reassembled payload size: {len(reassemble(frags))} (expected: 3980)")
 - **Fragmentation Overlap Attack**: Attacker sends overlapping fragment offsets to bypass firewall rules. Defense: firewalls reassemble before inspection or reject overlapping fragments.
 - **Fragmentation Flood**: Attacker sends first fragment of many datagrams without last fragments, exhausting reassembly buffers. Defense: limit concurrent reassembly contexts (e.g., Linux `net.ipv4.ipfrag_max_dist`).
 - **Missing Fragment**: Reassembly times out after 60 seconds. Receiver drops all fragments for that datagram. Sender retransmits (handled by TCP).
-- **MTU < 68**: Minimum IPv4 datagram is 68 bytes (20 header + minimum 48 bytes payload). A link with MTU < 68 cannot carry IP.
+- **MTU &lt; 68**: Minimum IPv4 datagram is 68 bytes (20 header + minimum 48 bytes payload). A link with MTU < 68 cannot carry IP.
 
 ---
 
@@ -550,7 +550,7 @@ Classful addressing is like assigning every building a block of 100 mailboxes ev
 1. **Determine Requirements**: N subnets, each with at least H hosts.
 2. **Calculate Host Bits**: `h = ceil(log2(H + 2))` (2 reserved: network + broadcast).
 3. **Calculate Subnet Bits**: `s = ceil(log2(N))`.
-4. **Ensure s + h <= available host bits** (32 - original prefix).
+4. **Ensure s + h &lt;= available host bits** (32 - original prefix).
 5. **New Prefix Length**: original_prefix + s.
 6. **Subnet Size**: `2^(32 - new_prefix)` addresses per subnet.
 7. **Usable Hosts**: subnet_size - 2.
@@ -588,7 +588,7 @@ function calculate_subnets(base_network, prefix_len, num_subnets, min_hosts):
 - Available host bits: 32 - 24 = 8.
 - Needed host bits: ceil(log2(50 + 2)) = ceil(log2(52)) = 6 bits (64 addresses, 62 usable).
 - Needed subnet bits: ceil(log2(4)) = 2 bits.
-- Check: 6 + 2 = 8 <= 8. OK.
+- Check: 6 + 2 = 8 &lt;= 8. OK.
 - New prefix: 24 + 2 = /26.
 - Subnet size: 2^(32-26) = 64 addresses. Usable: 62.
 
@@ -1727,7 +1727,7 @@ function ice_connectivity_check(local_candidates, remote_candidates):
 
 | Attack | Detection | Prevention |
 |--------|-----------|------------|
-| Tiny fragment | Fragment size < protocol header | `ip fw frag-check` on routers |
+| Tiny fragment | Fragment size &lt; protocol header | `ip fw frag-check` on routers |
 | Overlap | Negative/overlapping offsets | `net.ipv4.conf.all.secure_redirects = 1` |
 | Fragment flood | Reassembly buffer utilization | `net.ipv4.ipfrag_max_dist = 128` |
 | Atomic | Non-zero offset, MF=0, DF=0 | Ensure firewall inspects ALL fragments |
@@ -1984,7 +1984,7 @@ When troubleshooting network layer issues, follow this systematic approach:
 - D) Multicast routing
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) CIDR eliminates fixed class boundaries, enabling subnetting of any size through variable prefix lengths and route aggregation.
 </details>
 
@@ -1996,7 +1996,7 @@ B) CIDR eliminates fixed class boundaries, enabling subnetting of any size throu
 - D) IPv6 uses encryption instead
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) L2 (CRC) and L4 (TCP/UDP checksum) already provide integrity; the IP header checksum was redundant overhead.
 </details>
 
@@ -2008,7 +2008,7 @@ B) L2 (CRC) and L4 (TCP/UDP checksum) already provide integrity; the IP header c
 - D) 62 usable
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 A) 2^(32-28) = 16 total, minus network and broadcast = 14 usable.
 </details>
 
@@ -2020,7 +2020,7 @@ A) 2^(32-28) = 16 total, minus network and broadcast = 14 usable.
 - D) Checksum
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 A) TTL (Hop Limit) — each router decrements TTL and sends ICMP TTL Exceeded when it hits 0.
 </details>
 
@@ -2032,7 +2032,7 @@ A) TTL (Hop Limit) — each router decrements TTL and sends ICMP TTL Exceeded wh
 - D) Packet reordering
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) NAT maps private IPs to a single public IP; unsolicited inbound packets cannot reach the correct internal host without port forwarding.
 </details>
 
@@ -2044,7 +2044,7 @@ B) NAT maps private IPs to a single public IP; unsolicited inbound packets canno
 - D) Both A and B
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 D) The client may not have an IP yet (A), and broadcasting the REJECT to non-selected servers (B) lets them return their offered IP to the pool.
 </details>
 
@@ -2056,7 +2056,7 @@ D) The client may not have an IP yet (A), and broadcasting the REJECT to non-sel
 - D) Longer ARP timeouts
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) DAI on managed switches validates ARP packets against the DHCP snooping binding table, dropping forged replies.
 </details>
 
@@ -2068,7 +2068,7 @@ B) DAI on managed switches validates ARP packets against the DHCP snooping bindi
 - D) 5
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) 3980 bytes payload / 1480 per fragment = 2 full + 1 partial = 3 fragments.
 </details>
 

@@ -30,9 +30,9 @@ After completing this chapter, you will be able to:
 |-----------|---------|------------------|--------------|------------|
 | **CPU** | Queries slower under load, high process list | %CPU > 80%, high context switches | Missing indexes causing full scans, heavy sorts, complex joins | Add indexes, rewrite queries, increase parallel workers |
 | **I/O** | Disk queue grows, queries wait on data | iowait > 20%, avg read latency > 10ms | Full table scans on large tables, insufficient `shared_buffers`, checkpoint spikes | Add indexes, increase `shared_buffers`, tune checkpoint intervals |
-| **Memory** | Page faults, swapping, OOM kills | Available RAM < 10%, swap usage > 0 | `work_mem` too high per connection (multiplies by connections), leaky queries | Lower `work_mem`, use connection pooling, profile memory per query |
+| **Memory** | Page faults, swapping, OOM kills | Available RAM &lt; 10%, swap usage &gt; 0 | `work_mem` too high per connection (multiplies by connections), leaky queries | Lower `work_mem`, use connection pooling, profile memory per query |
 | **Lock** | Queries stuck in "waiting" state | Lock wait > 1s, deadlocks in logs | Long-running transactions, DDL blocking DML, row-lock contention | Use NOWAIT/SKIP LOCKED, reduce transaction duration, partition hot rows |
-| **Network** | High latency, slow data transfer | TCP retransmits > 0.1%, throughput < expected | Fetching too many rows, chatty queries (N+1), insufficient bandwidth | Use LIMIT, batch operations, move computation to database, compress |
+| **Network** | High latency, slow data transfer | TCP retransmits > 0.1%, throughput &lt; expected | Fetching too many rows, chatty queries (N+1), insufficient bandwidth | Use LIMIT, batch operations, move computation to database, compress |
 
 ## Optimization Techniques Comparison
 
@@ -42,7 +42,7 @@ After completing this chapter, you will be able to:
 | **Query Rewrite** | Low | Medium | Single slow query, anti-patterns (function wrap, OR, NOT IN) | Already optimal queries, hardware-bound cases |
 | **Schema Redesign** | High | Very High | Frequent JOINs across large tables, repetitive calculations | Stable system with no performance SLA breach |
 | **Config Tuning** | Low | Medium | Out-of-box defaults, obvious resource imbalance | Already tuned, bottleneck is query logic |
-| **Partitioning** | High | High | Tables > 100 GB, time-range queries, old-data cleanup | Tables < 10 GB, no natural partition key |
+| **Partitioning** | High | High | Tables > 100 GB, time-range queries, old-data cleanup | Tables &lt; 10 GB, no natural partition key |
 | **Materialized Views** | Medium | High | Expensive aggregations, dashboards, reporting | Real-time requirements, frequently updated base data |
 | **Caching** | Medium | Very High | Read-heavy workloads, repeated identical queries | Write-heavy, cache invalidation complexity |
 
@@ -299,7 +299,7 @@ int main() {
 ```
 
 **Complexity Analysis:**
-- **Time:** O(N) where N = number of plan nodes (typically < 50). Each node is processed once.
+- **Time:** O(N) where N = number of plan nodes (typically &lt; 50). Each node is processed once.
 - **Space:** O(N) to store plan tree. Each node stores cost, row estimates, buffer stats.
 - **WHY:** Plan tree depth is bounded by query complexity. A 50-JOIN query produces ~100 nodes maximum. Linear scan is optimal since each node needs exactly one pass for analysis.
 
@@ -407,7 +407,7 @@ print(logger.generate_report())
 ```
 
 **Complexity Analysis:**
-- **Time:** O(L Ã— P) where L = log lines, P = pattern count. Each line is matched against all patterns. Typically L < 10000, P < 10 → fine for batch analysis.
+- **Time:** O(L Ã— P) where L = log lines, P = pattern count. Each line is matched against all patterns. Typically L &lt; 10000, P < 10 → fine for batch analysis.
 - **Space:** O(Q) where Q = slow queries stored. Each query stores ~500 bytes of metadata.
 - **WHY:** Pattern-matching is the fastest general approach for log parsing; regex engines are optimized with DFA compilation. For production at scale, stream the parser instead of storing all queries.
 
@@ -711,9 +711,9 @@ for issue in issues:
 ```
 
 **Complexity Analysis:**
-- **Time:** O(NÂ²) for overlap detection where N = index count. Each index compared with every other. For typical systems (N < 50), this is fast.
+- **Time:** O(NÂ²) for overlap detection where N = index count. Each index compared with every other. For typical systems (N &lt; 50), this is fast.
 - **Space:** O(N) for index metadata.
-- **WHY:** Overlap detection is inherently pairwise; no hash structure can avoid the comparison since column overlap is a set-intersection problem. N < 50 makes NÂ² acceptable (2500 comparisons < 1ms).
+- **WHY:** Overlap detection is inherently pairwise; no hash structure can avoid the comparison since column overlap is a set-intersection problem. N &lt; 50 makes NÂ² acceptable (2500 comparisons < 1ms).
 
 ### Edge Cases in Index Optimization
 
@@ -1674,7 +1674,7 @@ int main() {
 ```
 
 **Complexity Analysis:**
-- **Time:** O(P) where P = partition count. Each partition checked once for range overlap. Typically P < 1000.
+- **Time:** O(P) where P = partition count. Each partition checked once for range overlap. Typically P &lt; 1000.
 - **Space:** O(P) for partition metadata.
 - **WHY:** Partition pruning is a linear scan over partitions because each partition has a non-overlapping range. Binary search could improve to O(log P) but the overhead of maintaining sorted partitions and the small P count makes O(P) simpler and fast enough.
 
@@ -1814,7 +1814,7 @@ if found:
 **Complexity Analysis:**
 - **Time:** O(P) for find_partition (linear scan). O(1) for add_partition. O(F) for suggest_new_partitions where F = future months.
 - **Space:** O(P) for partition list.
-- **WHY:** Linear scan is acceptable for find_partition because P is small (typically < 365 for daily partitions, < 100 for monthly). The database's actual partition pruning uses hash-based or binary-search lookups, but the manager's linear scan is simpler and sufficient for management tasks.
+- **WHY:** Linear scan is acceptable for find_partition because P is small (typically &lt; 365 for daily partitions, < 100 for monthly). The database's actual partition pruning uses hash-based or binary-search lookups, but the manager's linear scan is simpler and sufficient for management tasks.
 
 ## 19.9 Materialized Views
 
@@ -2014,7 +2014,7 @@ int main() {
 ```
 
 **Complexity Analysis:**
-- **Time:** O(N) for full refresh where N = base table rows scanned. O(U) for incremental refresh where U = changed rows since last refresh. Typically U << N, making incremental 10-100x faster.
+- **Time:** O(N) for full refresh where N = base table rows scanned. O(U) for incremental refresh where U = changed rows since last refresh. Typically U &lt;< N, making incremental 10-100x faster.
 - **Space:** O(R) for stored result set where R = materialized view row count. Indexes on the MV add additional space.
 - **WHY:** Full refresh re-runs the entire query (must scan base tables). Concurrent refresh needs a unique index to create a diff. Incremental refresh (via materialized view logs) only scans changes but requires trigger-based capture.
 
@@ -3209,9 +3209,9 @@ COMMIT;
 
 | Index Type | Size vs. B-tree | Best For | Supported Operations |
 |-----------|----------------|----------|---------------------|
-| **B-tree** | Baseline | General purpose | <, <=, =, >=, >, BETWEEN, LIKE (prefix) |
+| **B-tree** | Baseline | General purpose | <, &lt;=, =, &gt;=, >, BETWEEN, LIKE (prefix) |
 | **BRIN** | 100-1000Ã— smaller | Time-series, naturally ordered data | Range queries on correlated physical order |
-| **GiST** | Larger | Geospatial, full-text search, ranges | Geometric operators, @>, <-> |
+| **GiST** | Larger | Geospatial, full-text search, ranges | Geometric operators, @>, &lt;-> |
 | **GIN** | Larger | JSONB, full-text search, arrays | @>, ?, ?|, ?&, @@ |
 | **SP-GiST** | Moderate | Tree structures, prefix search, GIS | Quad-tree, k-d tree, radix tree operations |
 | **Hash** | Smaller | Equality lookups | = only |
@@ -3224,7 +3224,7 @@ COMMIT;
 | **Index bloat** | Large index, same row count | Deletes/updates without cleanup | REINDEX CONCURRENTLY |
 | **Slow reporting** | Full table scans on large tables | Missing materialized view | Create materialized view + refresh schedule |
 | **Connection exhaustion** | Queries stuck waiting for connection | Pool too small or connection leak | Increase pool size, fix leaks |
-| **Cache trashing** | Buffer hit ratio < 90% | shared_buffers too small | Increase shared_buffers, add indexes |
+| **Cache trashing** | Buffer hit ratio &lt; 90% | shared_buffers too small | Increase shared_buffers, add indexes |
 
 ## Quick Reference
 

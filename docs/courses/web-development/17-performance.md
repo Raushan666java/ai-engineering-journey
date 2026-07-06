@@ -517,7 +517,7 @@ const pool = new Pool({
 
 | Topic | Key Points |
 |-------|-----------|
-|Web Vital Thresholds|LCP < 2.5s, FID < 100ms, CLS < 0.1, FCP < 1.8s, TTFB < 800ms|
+|Web Vital Thresholds|LCP &lt; 2.5s, FID < 100ms, CLS < 0.1, FCP < 1.8s, TTFB < 800ms|
 |Lazy Loading|`React.lazy(() => import('./Comp'))`, `next/dynamic`, `loading='lazy'` on images|
 |Cache Strategies|`CacheFirst`, `NetworkFirst`, `StaleWhileRevalidate`, `NetworkOnly`|
 |Image Formats|AVIF (best), WebP (good fallback), JPEG/PNG (universal fallback)|
@@ -539,12 +539,12 @@ Test your understanding with these quick questions.
 
 **Q1. What is the recommended LCP (Largest Contentful Paint) threshold?**
 
-- A) < 1.0s
-- B) < 2.5s
-- C) < 4.0s
-- D) < 5.0s
+- A) &lt; 1.0s
+- B) &lt; 2.5s
+- C) &lt; 4.0s
+- D) &lt; 5.0s
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Google recommends LCP under 2.5 seconds. LCP measures when the largest content element (image, video, text block) becomes visible.**
 
@@ -557,7 +557,7 @@ Test your understanding with these quick questions.
 - C) NetworkFirst only caches images
 - D) There is no difference
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **A) `CacheFirst` serves cached content immediately (falling back to network), ideal for static assets. `NetworkFirst` tries the network first (falling back to cache), ideal for API responses where freshness matters.**
 
@@ -570,7 +570,7 @@ Test your understanding with these quick questions.
 - C) For all function definitions
 - D) Never — it is deprecated
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `useMemo` adds memory and complexity overhead. Only use it when profiling identifies a computation that is expensive enough to impact frame rate or render time.**
 
@@ -583,7 +583,7 @@ Test your understanding with these quick questions.
 - C) AVIF is easier to encode
 - D) AVIF supports animation
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) AVIF (AV1 Image Format) offers significantly better compression than JPEG — typically 50% smaller file sizes at equivalent quality, reducing bandwidth and improving load times.**
 
@@ -816,11 +816,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -828,7 +828,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

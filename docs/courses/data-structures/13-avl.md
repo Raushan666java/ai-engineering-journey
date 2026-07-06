@@ -27,7 +27,7 @@ The **AVL tree** (named after inventors Adelson-Velsky and Landis, 1962) is the 
 | Rotations | LL, RR (single), LR, RL (double) | Four patterns that restore balance after modifications |
 | Insertion | Insert as BST, then rebalance | At most one rotation needed |
 | Deletion | Remove as BST, then rebalance up the path | May require cascading rotations to root |
-| Height bound | \(h < 1.44 \log n\) | Guarantees logarithmic worst-case search |
+| Height bound | \(h &lt; 1.44 \log n\) | Guarantees logarithmic worst-case search |
 | AVL vs Red-Black | Tighter balance → faster search | Choose AVL for search-heavy workloads |
 
 ## Chapter Roadmap
@@ -67,7 +67,7 @@ The AVL invariant requires \( \text{balance} \in \{-1, 0, 1\} \) for every node.
 
 ### Height Guarantee
 
-The height of an AVL tree is bounded by \( h < 2 \log_2 (n+1) \). This guarantees \( O(\log n) \) search, insert, and delete.
+The height of an AVL tree is bounded by \( h &lt; 2 \log_2 (n+1) \). This guarantees \( O(\log n) \) search, insert, and delete.
 
 ### Rotations Overview
 
@@ -219,7 +219,7 @@ public void updateHeight(AVLNode node) {
 | Computing balance factor | O(1) | Subtracts two precomputed values |
 | Updating heights along path | O(log n) | At most h ≤ 1.44 log₂ n ancestors |
 
-**Why O(log n) is guaranteed:** In an AVL tree of height h, the minimum node count follows n(h) = n(h-1) + n(h-2) + 1 (Fibonacci-like recurrence). This gives h < 1.44 log₂(n+2). Unlike ordinary BST where h can equal n, AVL provably stays logarithmic.
+**Why O(log n) is guaranteed:** In an AVL tree of height h, the minimum node count follows n(h) = n(h-1) + n(h-2) + 1 (Fibonacci-like recurrence). This gives h &lt; 1.44 log₂(n+2). Unlike ordinary BST where h can equal n, AVL provably stays logarithmic.
 
 ### Advantages & Disadvantages
 
@@ -775,10 +775,10 @@ public AVLNode rightLeftRotate(AVLNode z) {
 2. **Update Height:** Walk back up, recomputing height at each ancestor.
 3. **Check Balance:** Compute bf at each ancestor.
 4. **Rebalance if |bf| > 1:**
-   - bf > 1 AND value < node.left.data → **LL**: rightRotate(node)
-   - bf < -1 AND value > node.right.data → **RR**: leftRotate(node)
+   - bf > 1 AND value &lt; node.left.data → **LL**: rightRotate(node)
+   - bf &lt; -1 AND value &gt; node.right.data → **RR**: leftRotate(node)
    - bf > 1 AND value > node.left.data → **LR**: leftRotate(node.left) then rightRotate(node)
-   - bf < -1 AND value < node.right.data → **RL**: rightRotate(node.right) then leftRotate(node)
+   - bf &lt; -1 AND value < node.right.data → **RL**: rightRotate(node.right) then leftRotate(node)
 5. Return (possibly new) subtree root.
 
 ### Pseudocode
@@ -1123,9 +1123,9 @@ Removing a **support pillar from a building** — the floors above may settle un
 3. **Check Balance:** Compute bf at each ancestor.
 4. **Rebalance if |bf| > 1** (using child's bf to distinguish):
    - bf > 1 AND bf(left child) ≥ 0 → **LL**: rightRotate(node)
-   - bf > 1 AND bf(left child) < 0 → **LR**: leftRotate(left) then rightRotate(node)
-   - bf < -1 AND bf(right child) ≤ 0 → **RR**: leftRotate(node)
-   - bf < -1 AND bf(right child) > 0 → **RL**: rightRotate(right) then leftRotate(node)
+   - bf > 1 AND bf(left child) &lt; 0 → **LR**: leftRotate(left) then rightRotate(node)
+   - bf &lt; -1 AND bf(right child) ≤ 0 → **RR**: leftRotate(node)
+   - bf &lt; -1 AND bf(right child) &gt; 0 → **RL**: rightRotate(right) then leftRotate(node)
 5. **Repeat** for EVERY ancestor up to root (deletion may cascade—unlike insertion).
 6. Return the (possibly new) subtree root.
 

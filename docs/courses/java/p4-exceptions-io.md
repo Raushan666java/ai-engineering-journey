@@ -3438,7 +3438,7 @@ public class FallbackPatternDemo {
    - D) char
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) string.** String is a reference type (java.lang.String), not a primitive.
 </details>
 
@@ -3449,7 +3449,7 @@ public class FallbackPatternDemo {
    - D) undefined
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) false.** Class fields are initialized to default values.
 </details>
 
@@ -3460,7 +3460,7 @@ public class FallbackPatternDemo {
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>
 

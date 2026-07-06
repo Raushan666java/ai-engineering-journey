@@ -110,7 +110,7 @@ A **binary tree** is a hierarchical data structure where each node has at most t
 | **Complete** | All levels filled except possibly last, filled left to right |
 | **Perfect** | All internal nodes have 2 children and all leaves at same level |
 | **Degenerate** (skewed) | Each node has at most 1 child — effectively a linked list |
-| **Balanced** | Height difference between subtrees <= 1 for all nodes |
+| **Balanced** | Height difference between subtrees &lt;= 1 for all nodes |
 
 ## Inorder Traversal
 
@@ -1562,7 +1562,7 @@ Binary tree problems are among the most frequently asked in technical interviews
 | **Diameter of Binary Tree** | Postorder + global variable | Compute height and update max diameter simultaneously |
 | **Lowest Common Ancestor** | Recursive divide and conquer | LCA is first node where p and q split to different subtrees |
 | **Maximum Path Sum** | Postorder + global variable | Return max branch; update global with root+both children path |
-| **Vertical Order Traversal** | Level-order + column map | Use map<int, vector<int>> for column -> nodes; BFS with column tracking |
+| **Vertical Order Traversal** | Level-order + column map | Use map&lt;int, vector<int&gt;> for column -> nodes; BFS with column tracking |
 | **Symmetric Tree** | Mirror check recursion | isMirror(a.left, b.right) && isMirror(a.right, b.left) |
 | **Right Side View** | Level-order BFS | Push rightmost node of each level |
 | **Binary Tree from Inorder and Preorder** | Recursive construction | First in preorder is root; split inorder around it |

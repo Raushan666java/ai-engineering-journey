@@ -73,7 +73,7 @@ The Ethernet frame is the fundamental unit of data transfer on Ethernet networks
 | **Destination MAC** | 6 bytes | Recipient's 48-bit MAC address. If the first bit (I/G) = 0, it is unicast; = 1, multicast/broadcast (FF:FF:FF:FF:FF:FF). |
 | **Source MAC** | 6 bytes | Sender's 48-bit MAC address. First bit always 0 (source cannot be multicast). |
 | **Length/Type** | 2 bytes | If value â‰¤ 1500 (0x05DC): indicates payload length in bytes (IEEE 802.3). If value â‰¥ 1536 (0x0600): indicates EtherType (DIX Ethernet). Common EtherTypes: 0x0800 (IPv4), 0x0806 (ARP), 0x86DD (IPv6), 0x8100 (802.1Q VLAN tag). |
-| **Payload + Pad** | 46â€“1500 bytes | Network-layer PDU (e.g., IP packet). If payload < 46 bytes, padding zeros are added to meet the 64-byte minimum frame size. |
+| **Payload + Pad** | 46â€“1500 bytes | Network-layer PDU (e.g., IP packet). If payload &lt; 46 bytes, padding zeros are added to meet the 64-byte minimum frame size. |
 | **FCS** | 4 bytes | Frame Check Sequence → CRC-32 computed over dest MAC, source MAC, length/type, payload, and pad. The receiver recomputes CRC; mismatch indicates corruption. |
 
 ### 5.1.3 Real-World Analogy
@@ -413,7 +413,7 @@ if __name__ == "__main__":
 | MAC address comparison | O(1) | O(1) | 6-byte fixed-length comparison; hardware-comparable in single instruction |
 | Padding removal | O(1) | O(1) | Truncate payload to length field value; pointer arithmetic only |
 
-*\* Where k = number of known EtherTypes (typically < 50)*
+*\* Where k = number of known EtherTypes (typically &lt; 50)*
 
 ### 5.1.10 Advantages and Disadvantages
 
@@ -429,7 +429,7 @@ if __name__ == "__main__":
 
 | Edge Case | Description | Mitigation |
 |-----------|-------------|------------|
-| Runt frame | Frame < 64 bytes due to collision or TX underrun | Discarded by receiver; CSMA/CD enforces minimum size |
+| Runt frame | Frame &lt; 64 bytes due to collision or TX underrun | Discarded by receiver; CSMA/CD enforces minimum size |
 | Giant frame | Frame > 1518 bytes (non-jumbo) | Discarded; switch may support jumbo frames up to 9216 bytes |
 | CRC error | Bit flips during transmission cause FCS mismatch | Frame dropped; upper layers (TCP) retransmit |
 | Jabber | Transmitter sends abnormally long frame (> 1518) | Switch detects jabber and disables port (errdisable) |
@@ -505,7 +505,7 @@ A **bridge** operates at the data link layer, connecting two or more LAN segment
 
 **Store-and-forward switching.** The switch receives the entire frame, checks the FCS for errors, and then forwards. This ensures no corrupted frames propagate but adds latency proportional to frame size. Latency = frame_size / link_speed. For a 1500-byte frame on 1 Gbps: 1500Ã—8/1e9 = 12 Âµs.
 
-**Cut-through switching.** The switch begins forwarding before the complete frame arrives → typically after reading only the destination MAC address (first 6 bytes of the frame, 14 bytes from preamble start). Latency is typically < 10 Âµs regardless of frame size, but damaged frames are forwarded. Two variants: fast-forward (forwards after dst MAC) and fragment-free (forwards after first 64 bytes).
+**Cut-through switching.** The switch begins forwarding before the complete frame arrives → typically after reading only the destination MAC address (first 6 bytes of the frame, 14 bytes from preamble start). Latency is typically &lt; 10 Âµs regardless of frame size, but damaged frames are forwarded. Two variants: fast-forward (forwards after dst MAC) and fragment-free (forwards after first 64 bytes).
 
 **Fragment-free switching.** The switch reads the first 64 bytes before forwarding (the collision window). This rejects runt frames (collision fragments) while keeping latency low. It is a compromise between store-and-forward and cut-through.
 
@@ -2260,7 +2260,7 @@ if __name__ == "__main__":
 
 | Feature | STP (802.1D) | RSTP (802.1w) |
 |---------|-------------|---------------|
-| Convergence time | 30-50 seconds | 1-3 seconds (typically < 2s) |
+| Convergence time | 30-50 seconds | 1-3 seconds (typically &lt; 2s) |
 | Port states | 5 (blocking, listening, learning, forwarding, disabled) | 3 (discarding, learning, forwarding) |
 | Port roles | 3 (root, designated, alternate/blocked) | 5 (root, designated, alternate, backup, edge) |
 | Topology change | TCN BPDU → root BPDU → all bridges (slow) | Propagated immediately via BPDU flags |
@@ -2731,7 +2731,7 @@ Link Aggregation Control Protocol (LACP, IEEE 802.1AX) combines multiple physica
 ### 5.7.2 Benefits
 
 - **Increased bandwidth:** Up to 8 physical links combine into one logical link (some vendors support 16).
-- **Redundancy:** If a member link fails, traffic is redistributed across remaining links (failover < 1 second).
+- **Redundancy:** If a member link fails, traffic is redistributed across remaining links (failover &lt; 1 second).
 - **Load balancing:** Traffic is distributed across links using a hash of L2/L3/L4 header fields.
 - **Cost:** Uses existing hardware → no need for faster (and more expensive) individual links.
 
@@ -3044,7 +3044,7 @@ ovs-appctl fdb/show ovs-br0
 
 | Frame Type | Payload (bytes) | Total Frame (bytes) | Use Case |
 |------------|----------------|-------------------|----------|
-| Minimum (802.3) | 46 | 64 | Required for CSMA/CD; padding added if payload < 46 |
+| Minimum (802.3) | 46 | 64 | Required for CSMA/CD; padding added if payload &lt; 46 |
 | Standard maximum | 1500 | 1518 | Universal default MTU for all Ethernet |
 | 802.1Q tagged | 1500 | 1522 | With 4-byte VLAN tag |
 | Jumbo (standard) | 9000 | 9018 | Data center, storage (NFS, iSCSI) |
@@ -3111,7 +3111,7 @@ ovs-appctl fdb/show ovs-br0
 - D) 512 bytes → matches slot time
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) 46 bytes → the total frame (excluding preamble) must be at least 64 bytes for CSMA/CD to detect collisions across max network diameter.
 </details>
 
@@ -3123,7 +3123,7 @@ B) 46 bytes → the total frame (excluding preamble) must be at least 64 bytes f
 - D) All of the above
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Cut-through begins forwarding after reading only the destination MAC address, before error checking.
 </details>
 
@@ -3135,7 +3135,7 @@ B) Cut-through begins forwarding after reading only the destination MAC address,
 - D) 2 minutes
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) 30-50 seconds → RSTP reduces this to 1-3 seconds.
 </details>
 
@@ -3147,7 +3147,7 @@ C) 30-50 seconds → RSTP reduces this to 1-3 seconds.
 - D) 65535 VLANs
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) 4094 usable VLANs (1-4094; 0 and 4095 reserved).
 </details>
 
@@ -3159,7 +3159,7 @@ C) 4094 usable VLANs (1-4094; 0 and 4095 reserved).
 - D) Flooded to all ports
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Filtered → the destination is on the same LAN segment, so no forwarding is needed.
 </details>
 
@@ -3171,7 +3171,7 @@ C) Filtered → the destination is on the same LAN segment, so no forwarding is 
 - D) 12 bytes
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) 4 bytes → TPID (2B) + TCI (2B) = 4 bytes total.
 </details>
 
@@ -3183,7 +3183,7 @@ B) 4 bytes → TPID (2B) + TCI (2B) = 4 bytes total.
 - D) Store-and-forward switching
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) STP (or RSTP) blocks redundant ports to eliminate loops, preventing broadcast storms.
 </details>
 
@@ -3195,7 +3195,7 @@ B) STP (or RSTP) blocks redundant ports to eliminate loops, preventing broadcast
 - D) Least-utilized link
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Hash of header fields (src/dst MAC, IP, port) ensures all frames in the same flow hash to the same link, preventing reordering.
 </details>
 
@@ -3207,7 +3207,7 @@ C) Hash of header fields (src/dst MAC, IP, port) ensures all frames in the same 
 - D) Verify frame integrity
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The 7-byte pattern of alternating 1s and 0s synchronizes the receiver's PLL to the sender's clock rate.
 </details>
 
@@ -3219,7 +3219,7 @@ B) The 7-byte pattern of alternating 1s and 0s synchronizes the receiver's PLL t
 - D) Sending ARP requests to map all switch ports
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 A) The attacker fills the switch's MAC table with fake entries so it falls back to flooding unknown-unicast traffic, allowing eavesdropping.
 </details>
 

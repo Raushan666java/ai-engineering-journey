@@ -35,7 +35,8 @@ By the end of this chapter, you will be able to:
 
 ---
 
-## 1. The Observability Stack
+## 1. The Observability Stack
+
 > **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
@@ -2445,7 +2446,7 @@ sum by (level) (count_over_time({job="myapp"}[1h]))
 | Term | Definition | Example |
 |------|-----------|---------|
 | **SLI** (Service Level Indicator) | A quantifiable metric of service performance | Request latency, error rate, throughput |
-| **SLO** (Service Level Objective) | Target value/range for an SLI | 99.9% of requests complete in < 200ms |
+| **SLO** (Service Level Objective) | Target value/range for an SLI | 99.9% of requests complete in &lt; 200ms |
 | **SLA** (Service Level Agreement) | Contractual commitment to SLOs | 99.95% uptime, with financial penalties |
 
 ### 8.2 SLI Implementation with Micrometer
@@ -2951,7 +2952,7 @@ receivers:
    - D) All of the above
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.
 </details>
 
@@ -2962,7 +2963,7 @@ receivers:
    - D) Whatever the team knows best
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.
 </details>
 
@@ -2973,7 +2974,7 @@ receivers:
    - D) Never → it is outdated
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.
 </details>
 

@@ -829,15 +829,15 @@ console.log('\n## Recommendation\n', ranked[0].platform, '-', ranked[0].bestFor)
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is the primary purpose of container orchestration?</summary>**A)** Building container images<br>**B)** Automating deployment, scaling, and management of containers<br>**C)** Storing container images<br>**D)** Writing Dockerfiles<br><br>**Answer: B)** Automating deployment, scaling, and management of containers</details>
+<details><summary>Question 1: What is the primary purpose of container orchestration?</summary>**A)** Building container images<br>**B)** Automating deployment, scaling, and management of containers<br>**C)** Storing container images<br>**D)** Writing Dockerfiles<br><br>**Answer: B)** Automating deployment, scaling, and management of containers&lt;/details&gt;
 
-<details><summary>Question 2: Which orchestration platform is the industry standard for complex microservices?</summary>**A)** Docker Swarm<br>**B)** Kubernetes<br>**C)** Nomad<br>**D)** ECS<br><br>**Answer: B)** Kubernetes</details>
+<details><summary>Question 2: Which orchestration platform is the industry standard for complex microservices?</summary>**A)** Docker Swarm<br>**B)** Kubernetes<br>**C)** Nomad<br>**D)** ECS<br><br>**Answer: B)** Kubernetes&lt;/details&gt;
 
-<details><summary>Question 3: What does a liveness probe do?</summary>**A)** Checks if the application is ready to serve traffic<br>**B)** Checks if the container is still alive and restarts it if not<br>**C)** Checks disk space<br>**D)** Checks network connectivity<br><br>**Answer: B)** Checks if the container is still alive and restarts it if not</details>
+<details><summary>Question 3: What does a liveness probe do?</summary>**A)** Checks if the application is ready to serve traffic<br>**B)** Checks if the container is still alive and restarts it if not<br>**C)** Checks disk space<br>**D)** Checks network connectivity<br><br>**Answer: B)** Checks if the container is still alive and restarts it if not&lt;/details&gt;
 
-<details><summary>Question 4: What is the purpose of `maxSurge` in a rolling update?</summary>**A)** Maximum number of pods that can be unavailable<br>**B)** Maximum number of extra pods during update<br>**C)** Maximum number of updates per second<br>**D)** Maximum time for the update<br><br>**Answer: B)** Maximum number of extra pods during update</details>
+<details><summary>Question 4: What is the purpose of `maxSurge` in a rolling update?</summary>**A)** Maximum number of pods that can be unavailable<br>**B)** Maximum number of extra pods during update<br>**C)** Maximum number of updates per second<br>**D)** Maximum time for the update<br><br>**Answer: B)** Maximum number of extra pods during update&lt;/details&gt;
 
-<details><summary>Question 5: How do pods typically discover service endpoints?</summary>**A)** Hardcoded IPs<br>**B)** DNS-based service discovery<br>**C)** Manual configuration<br>**D)** Broadcast messages<br><br>**Answer: B)** DNS-based service discovery</details>
+<details><summary>Question 5: How do pods typically discover service endpoints?</summary>**A)** Hardcoded IPs<br>**B)** DNS-based service discovery<br>**C)** Manual configuration<br>**D)** Broadcast messages<br><br>**Answer: B)** DNS-based service discovery&lt;/details&gt;
 
 ---
 
@@ -850,11 +850,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -862,7 +862,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

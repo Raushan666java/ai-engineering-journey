@@ -2811,7 +2811,7 @@ int main() {
 | Feature | Programmed I/O | Interrupt-Driven | DMA |
 |---------|--------------|----------------|-----|
 | CPU Role | Polls device until ready | Starts I/O, gets interrupt | Initiates, DMA does rest |
-| Data Path | CPU each byte | CPU each byte | Device <-> Memory directly |
+| Data Path | CPU each byte | CPU each byte | Device &lt;-> Memory directly |
 | Per-byte Overhead | Very high (busy-waits) | Moderate (ISR per byte) | Zero during transfer |
 | Per-transfer Overhead | O(N) | O(N) | O(1) (setup + one IRQ) |
 | Parallelism | None | Process runs between IRQs | CPU + DMA concurrent |

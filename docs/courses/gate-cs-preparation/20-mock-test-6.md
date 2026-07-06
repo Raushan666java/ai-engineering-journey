@@ -649,7 +649,7 @@ Which conclusion(s) logically follow(s)?
 
 **Q24:** Number of Hamiltonian cycles in Kâ‚™ (undirected) = (nâˆ’1)!/2. For n = 7: 6!/2 = 720/2 = 360.
 
-**Q25:** By the Master Theorem: a=3, b=3, f(n)=nÂ². log_b a = 1. f(n) = nÂ² = Î©(n^{1+Îµ}) for Îµ=1. Check regularity: af(n/b) = 3(n/3)Â² = nÂ²/3 â‰¤ cnÂ² for c=1/3 < 1. Case 3 applies, so T(n) = Î˜(nÂ²).
+**Q25:** By the Master Theorem: a=3, b=3, f(n)=nÂ². log_b a = 1. f(n) = nÂ² = Î©(n^{1+Îµ}) for Îµ=1. Check regularity: af(n/b) = 3(n/3)Â² = nÂ²/3 â‰¤ cnÂ² for c=1/3 &lt; 1. Case 3 applies, so T(n) = Î˜(nÂ²).
 
 **Q26:** A doubly linked list allows O(1) insertion and deletion at both ends, making it ideal for deque implementation.
 

@@ -3008,7 +3008,7 @@ Answer: (A) 500 Hz
 **Solution:**
 ```
 Mod-12 counter: counts 0 to 11 (12 states). Need n FFs where 2â¿ â‰¥ 12.
-n=4 → 2â´=16 â‰¥ 12. n=3 → 2Â³=8 < 12. Minimum = 4.
+n=4 → 2â´=16 â‰¥ 12. n=3 → 2Â³=8 &lt; 12. Minimum = 4.
 
 Answer: (B) 4
 ```

@@ -2704,7 +2704,7 @@ Together, generics, annotations, and reflection form a triad that enables the fr
    - D) char
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) string.** String is a reference type (java.lang.String), not a primitive.
 </details>
 
@@ -2715,7 +2715,7 @@ Together, generics, annotations, and reflection form a triad that enables the fr
    - D) undefined
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) false.** Class fields are initialized to default values.
 </details>
 
@@ -2726,7 +2726,7 @@ Together, generics, annotations, and reflection form a triad that enables the fr
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>
 

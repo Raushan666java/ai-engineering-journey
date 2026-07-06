@@ -125,10 +125,10 @@ class ArrayStack:
 ### C++ Implementation
 
 `cpp
-#include <iostream>
-#include <stdexcept>
+#include &lt;iostream&gt;
+#include &lt;stdexcept&gt;
 
-template <typename T>
+template &lt;typename T&gt;
 class ArrayStack {
 private:
     T* data;
@@ -138,7 +138,7 @@ private:
     void resize() {
         int newCap = capacity * 2;
         T* newData = new T[newCap];
-        for (int i = 0; i < capacity; ++i) newData[i] = data[i];
+        for (int i = 0; i &lt; capacity; ++i) newData[i] = data[i];
         delete[] data;
         data = newData;
         capacity = newCap;
@@ -171,14 +171,14 @@ public:
 };
 
 int main() {
-    ArrayStack<int> stack;
+    ArrayStack&lt;int&gt; stack;
     stack.push(10);
     stack.push(20);
     stack.push(30);
-    std::cout << "Top: " << stack.top() << "\n";
-    std::cout << "Size: " << stack.size() << "\n";
+    std::cout &lt;< "Top: " << stack.top() << "\n";
+    std::cout &lt;< "Size: " << stack.size() << "\n";
     while (!stack.isEmpty())
-        std::cout << "Pop: " << stack.pop() << "\n";
+        std::cout &lt;< "Pop: " << stack.pop() << "\n";
     return 0;
 }
 `
@@ -236,7 +236,7 @@ while not stack.isEmpty():
 `java
 import java.util.EmptyStackException;
 
-public class ArrayStack<T> {
+public class ArrayStack&lt;T> {
     private T[] data;
     private int capacity;
     private int topIndex;
@@ -254,7 +254,7 @@ public class ArrayStack<T> {
         int newCap = capacity * 2;
         @SuppressWarnings("unchecked")
         T[] newData = (T[]) new Object[newCap];
-        for (int i = 0; i < capacity; i++)
+        for (int i = 0; i &lt; capacity; i++)
             newData[i] = data[i];
         data = newData;
         capacity = newCap;
@@ -279,7 +279,7 @@ public class ArrayStack<T> {
     public int size() { return topIndex + 1; }
 
     public static void main(String[] args) {
-        ArrayStack<Integer> stack = new ArrayStack<>();
+        ArrayStack&lt;Integer&gt; stack = new ArrayStack&lt;>();
         stack.push(10);
         stack.push(20);
         stack.push(30);
@@ -974,7 +974,7 @@ Postfix: abcd-*e/+
 - **Time:** O(n) - each character is pushed and popped at most once.
 - **Space:** O(n) - the operator stack holds at most n operators in worst case (e.g., `a+b+c+d+...`).
 
-**Why O(n)?** Each token is processed once. Push/pop on stack is O(1). The inner `while` loop pops operators, but each operator is pushed exactly once, so total pops across the entire run is <= n.
+**Why O(n)?** Each token is processed once. Push/pop on stack is O(1). The inner `while` loop pops operators, but each operator is pushed exactly once, so total pops across the entire run is &lt;= n.
 
 ### Advantages & Disadvantages
 
@@ -1216,7 +1216,7 @@ class MinStack:
 | 1 | push(5) | 5 | 5 | --- |
 | 2 | push(2) | 2, 5 | 2, 5 | --- |
 | 3 | push(7) | 7, 2, 5 | 2, 5 (7 > 2, no push) | --- |
-| 4 | push(2) | 2, 7, 2, 5 | 2, 2, 5 (2 <= 2, push) | --- |
+| 4 | push(2) | 2, 7, 2, 5 | 2, 2, 5 (2 &lt;= 2, push) | --- |
 | 5 | pop() | 7, 2, 5 | 2, 5 (popped 2 == min top 2) | --- |
 | 6 | getMin() | 7, 2, 5 | 2, 5 | **2** |
 
@@ -1358,7 +1358,7 @@ class MinStack {
 | pop() | O(1) | One main pop + conditional min pop |
 | top() | O(1) | Direct stack peek |
 | getMin() | O(1) | Direct minStack peek - the key advantage |
-| Space | O(n) | Two stacks, but minStack <= mainStack always |
+| Space | O(n) | Two stacks, but minStack &lt;= mainStack always |
 
 **Why not O(1) without an aux stack?** If we stored min in a single variable, a pop that removes the current minimum would require scanning the remaining stack to find the new min - O(n). The auxiliary stack trades O(n) extra space for O(1) getMin.
 

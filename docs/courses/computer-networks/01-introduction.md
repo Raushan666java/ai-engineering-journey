@@ -290,7 +290,7 @@ Networks are classified by geographical span, transmission technology, and switc
 
 ### 1.2.2 Local-Area Network (LAN)
 
-- **Range:** Single building/campus, < 1 km
+- **Range:** Single building/campus, &lt; 1 km
 - **Purpose:** Connect computers within an organization
 - **Technology:** Ethernet (IEEE 802.3), WiFi (IEEE 802.11)
 - **Data rate:** 100 Mbps to 100 Gbps
@@ -1897,7 +1897,7 @@ Internet standards are developed through an open, consensus-based process manage
 - D) Session
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Network → Layer 3 handles routing and logical addressing (IP).
 </details>
 
@@ -1909,7 +1909,7 @@ B) Network → Layer 3 handles routing and logical addressing (IP).
 - D) TCP/IP is faster
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) OSI defined standards before implementation validation; TCP/IP built working code first, then standardized.
 </details>
 
@@ -1921,7 +1921,7 @@ B) OSI defined standards before implementation validation; TCP/IP built working 
 - D) It is converted to a trailer
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The transport-layer header remains as payload for the network layer, which adds its own header before passing down.
 </details>
 
@@ -1933,7 +1933,7 @@ B) The transport-layer header remains as payload for the network layer, which ad
 - D) PAN
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) LAN → Local-area networks cover a single building or campus under 1 km.
 </details>
 
@@ -1945,7 +1945,7 @@ C) LAN → Local-area networks cover a single building or campus under 1 km.
 - D) The network becomes a bus topology
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Star topology has a central point of failure → the switch failure isolates all connected nodes.
 </details>
 
@@ -1957,7 +1957,7 @@ B) Star topology has a central point of failure → the switch failure isolates 
 - D) Link
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 D) Link → The TCP/IP Link layer encompasses both physical transmission and data framing.
 </details>
 
@@ -1969,7 +1969,7 @@ D) Link → The TCP/IP Link layer encompasses both physical transmission and dat
 - D) Protocols are always connection-oriented
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) A protocol defines horizontal communication between peers on different machines; an interface defines vertical communication between adjacent layers on the same machine.
 </details>
 
@@ -1981,7 +1981,7 @@ B) A protocol defines horizontal communication between peers on different machin
 - D) Tree
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Full mesh requires each node to connect to every other node → NÃ—(Nâˆ’1)/2 total links.
 </details>
 

@@ -470,7 +470,7 @@ Now for the dry run with *optimal move ordering*:
 D (value=3) is evaluated first. Then E (value=6) but gets pruned.
 Better ordering: process best moves first. If E was evaluated before D:
 - E: α=-∞, β=+∞, v = max(6) = 6. B's β = min(+∞, 6) = 6.
-- D: α=-∞, β=6, v = max(3, 5) = 3. No pruning (3 < 6).
+- D: α=-∞, β=6, v = max(3, 5) = 3. No pruning (3 &lt; 6).
 - B = min(6, 3) = 3.
 
 Hmm, with this ordering we get 3 leaf evaluations vs 4 before. Not a huge difference for this tiny tree.
@@ -1242,7 +1242,7 @@ Game-playing algorithms provide a framework for adversarial decision-making. Min
 - C) MCTS guarantees optimality
 - D) MCTS does not need evaluation functions
 
-<details><summary>Answer</summary>B) MCTS handles large branching factors through selective sampling guided by UCT, making it suitable for games like Go where alpha-beta is infeasible.</details>
+<details><summary>Answer&lt;/summary&gt;B) MCTS handles large branching factors through selective sampling guided by UCT, making it suitable for games like Go where alpha-beta is infeasible.</details>
 
 **Q2:** The UCT selection formula balances what two factors?
 
@@ -1251,7 +1251,7 @@ Game-playing algorithms provide a framework for adversarial decision-making. Min
 - C) Tree depth and node count
 - D) Win rate and time remaining
 
-<details><summary>Answer</summary>B) UCT balances exploitation (win rate w_i/n_i) with exploration (c√(ln N/n_i)) through its two-term formula.</details>
+<details><summary>Answer&lt;/summary&gt;B) UCT balances exploitation (win rate w_i/n_i) with exploration (c√(ln N/n_i)) through its two-term formula.</details>
 
 **Q3:** How does expectiminimax differ from minimax?
 
@@ -1260,7 +1260,7 @@ Game-playing algorithms provide a framework for adversarial decision-making. Min
 - C) It only works for perfect information games
 - D) It prunes more aggressively
 
-<details><summary>Answer</summary>A) Expectiminimax adds chance nodes where the value is the weighted sum (expectation) over probabilistic outcomes.</details>
+<details><summary>Answer&lt;/summary&gt;A) Expectiminimax adds chance nodes where the value is the weighted sum (expectation) over probabilistic outcomes.</details>
 
 **Q4:** In alpha-beta pruning, when does pruning occur at a MAX node?
 
@@ -1269,7 +1269,7 @@ Game-playing algorithms provide a framework for adversarial decision-making. Min
 - C) When evaluation function returns 0
 - D) When depth limit is reached
 
-<details><summary>Answer</summary>B) At a MAX node, pruning occurs when v ≥ β — because MIN would never allow the game to reach this branch since it already has a better option (β) elsewhere.</details>
+<details><summary>Answer&lt;/summary&gt;B) At a MAX node, pruning occurs when v ≥ β — because MIN would never allow the game to reach this branch since it already has a better option (β) elsewhere.</details>
 
 **Q5:** Which game's AI primarily uses Counterfactual Regret Minimization (CFR)?
 
@@ -1278,7 +1278,7 @@ Game-playing algorithms provide a framework for adversarial decision-making. Min
 - C) Poker
 - D) Backgammon
 
-<details><summary>Answer</summary>C) Poker. CFR is designed for imperfect-information games where players don't see each other's hidden cards. Chess and Go are perfect-information. Backgammon uses expectiminimax.</details>
+<details><summary>Answer&lt;/summary&gt;C) Poker. CFR is designed for imperfect-information games where players don't see each other's hidden cards. Chess and Go are perfect-information. Backgammon uses expectiminimax.</details>
 
 ## Exercises
 

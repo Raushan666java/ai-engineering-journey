@@ -1019,7 +1019,7 @@ if __name__ == "__main__":
 
 **1. Memory overflow:** If the input data contains records larger than the buffer, the sort must read less per run. Some DBMS handle this by spilling individual records.
 
-**2. Data fits in memory:** If N <= B, the sort completes in one pass (just in-memory sort, no merge needed) with I/O = 2N (read once, write once).
+**2. Data fits in memory:** If N &lt;= B, the sort completes in one pass (just in-memory sort, no merge needed) with I/O = 2N (read once, write once).
 
 **3. Key duplication:** External merge sort is stable if the merge step maintains input order for equal keys. Most DBMS sort implementations are not stable by default.
 
@@ -1037,7 +1037,7 @@ Join operations combine rows from two tables based on a related column. They are
 
 | Algorithm | I/O Complexity | Requires Index | Requires Sort | Best For |
 |-----------|---------------|---------------|---------------|----------|
-| Nested Loop Join (NLJ) | O(|R| * |S|) pages | No | No | Small tables (one side < 100 pages) |
+| Nested Loop Join (NLJ) | O(|R| * |S|) pages | No | No | Small tables (one side &lt; 100 pages) |
 | Block Nested Loop Join (BNLJ) | O(|R| * ceil(|S|/B)) pages | No | No | Medium tables, no indexes |
 | Indexed Nested Loop Join (INLJ) | O(|R| * cost_per_index_probe) | Yes (inner) | No | Small outer + indexed inner |
 | Sort-Merge Join (SMJ) | O(N log N + M log M + N + M) | No | Yes | Large sorted data, ORDER BY already needed |

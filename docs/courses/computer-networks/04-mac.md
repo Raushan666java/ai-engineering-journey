@@ -580,7 +580,7 @@ CSMA/CD extends CSMA by **detecting collisions during transmission** -- the send
    c. Increment collision counter i.
    d. Choose k uniformly from [0, 2^i - 1].
    e. Wait k * tau time (tau = 512 bit-times for 10 Mbps Ethernet).
-   f. If i < 16, go to step 1. Otherwise, **discard** the frame.
+   f. If i &lt; 16, go to step 1. Otherwise, **discard** the frame.
 
 ##### Pseudocode
 
@@ -1543,7 +1543,7 @@ Bluetooth uses a **polling-based** approach: the master polls each slave, and th
 - D) 100%
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) 18.4% (1/2e) -- the vulnerable period is twice the frame time.
 </details>
 
@@ -1555,7 +1555,7 @@ C) 18.4% (1/2e) -- the vulnerable period is twice the frame time.
 - D) Backoff is disabled
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) All stations waiting for the channel transmit as soon as it becomes idle, causing guaranteed collisions.
 </details>
 
@@ -1567,7 +1567,7 @@ B) All stations waiting for the channel transmit as soon as it becomes idle, cau
 - D) Improve CRC strength
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The frame must be long enough that the sender is still transmitting when the farthest collision signal returns.
 </details>
 
@@ -1579,7 +1579,7 @@ B) The frame must be long enough that the sender is still transmitting when the 
 - D) Anycast
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Broadcast -- all 48 bits set to 1, delivering to all stations on the LAN.
 </details>
 
@@ -1591,7 +1591,7 @@ C) Broadcast -- all 48 bits set to 1, delivering to all stations on the LAN.
 - D) Depends on G
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Slotted ALOHA achieves 36.8% vs Pure ALOHA's 18.4%. Halving the vulnerable period doubles throughput.
 </details>
 
@@ -1603,7 +1603,7 @@ B) Slotted ALOHA achieves 36.8% vs Pure ALOHA's 18.4%. Halving the vulnerable pe
 - D) CSMA/CD is patented
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) A radio's transmitted signal drowns out received signals, making collision detection impossible during transmission.
 </details>
 
@@ -1615,7 +1615,7 @@ B) A radio's transmitted signal drowns out received signals, making collision de
 - D) [0, 63]
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) After the 4th collision (i=4), window = [0, 2^4 - 1] = [0, 15].
 </details>
 
@@ -1627,7 +1627,7 @@ B) After the 4th collision (i=4), window = [0, 2^4 - 1] = [0, 15].
 - D) Neither
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Each switch port is a separate collision domain, but all ports share one broadcast domain (unless VLANs are used).
 </details>
 
@@ -1639,7 +1639,7 @@ B) Each switch port is a separate collision domain, but all ports share one broa
 - D) Request retransmission
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) The 48-bit jam signal ensures all stations on the segment recognize the collision, even if their own collision detection hardware didn't trigger.
 </details>
 
@@ -1651,7 +1651,7 @@ C) The 48-bit jam signal ensures all stations on the segment recognize the colli
 - D) The ring switches to CSMA/CD mode
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Token ring protocols include a monitoring station that detects token loss via timer expiration and regenerates a new token.
 </details>
 
@@ -1663,7 +1663,7 @@ B) Token ring protocols include a monitoring station that detects token loss via
 - D) They must be prime numbers
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Spreading codes must be orthogonal (their dot product = 0) so the receiver can extract the desired signal while treating others as noise.
 </details>
 
@@ -1675,7 +1675,7 @@ B) Spreading codes must be orthogonal (their dot product = 0) so the receiver ca
 - D) Repeater
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Routers do not forward broadcast frames, so each router interface is a separate broadcast domain.
 </details>
 
@@ -1723,7 +1723,7 @@ Ethernet, the dominant LAN technology, uses CSMA/CD with a 48-bit MAC address sp
 13. Pure ALOHA operates with a frame time of 10 ms. If the aggregate load is 0.4 frames per frame time, what is the throughput? What fraction of frames experience collision on their first transmission?
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 S = G * e^(-2G) = 0.4 * e^(-0.8) = 0.4 * 0.4493 = 0.1797
 Throughput = 0.1797 frames per frame time.
 Fraction that succeed: e^(-2G) = e^(-0.8) = 0.4493 (44.93%)
@@ -1733,7 +1733,7 @@ Fraction that collide: 1 - 0.4493 = 0.5507 (55.07%)
 14. In p-persistent CSMA, there are 10 stations each with probability p = 0.1 of having a frame ready in each slot. What is the probability that exactly one station transmits in a given slot? What is the probability of an idle slot?
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 The number of transmitting stations follows Binomial(10, 0.1).
 P(exactly 1) = C(10,1) * (0.1)^1 * (0.9)^9 = 10 * 0.1 * 0.3874 = 0.3874
 P(idle) = (0.9)^10 = 0.3487
@@ -1742,7 +1742,7 @@ P(idle) = (0.9)^10 = 0.3487
 15. An Ethernet segment has 20 stations. The maximum propagation delay between any two stations is 25 microseconds. The data rate is 10 Mbps. What is the minimum frame size required for reliable collision detection? Verify that the 512-bit slot time is adequate.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 Minimum frame size = 2 * propagation_delay * data_rate
 = 2 * 25 * 10^(-6) * 10 * 10^6 = 2 * 25 * 10 = 500 bits
 
@@ -1753,7 +1753,7 @@ The 512-bit slot time (512 bit-times = 51.2 us) exceeds the required 500 bits, p
 16. In a CSMA/CD network with 100 stations, what is the probability that after the 3rd collision, a station chooses a backoff of 0 slots? What is the maximum possible backoff?
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 After the 3rd collision (i=3), window = [0, 2^3 - 1] = [0, 7].
 P(backoff = 0) = 1/8 = 0.125
 Maximum backoff = 7 slots = 7 * 51.2 us = 358.4 us
@@ -1762,15 +1762,15 @@ Maximum backoff = 7 slots = 7 * 51.2 us = 358.4 us
 17. A WiFi network has an RTS threshold of 500 bytes. If a station transmits a 100-byte acknowledgment packet, does it use RTS/CTS? What about a 1500-byte data frame?
 
 <details>
-<summary>Solution</summary>
-100-byte packet: RTS threshold is 500 bytes, so 100 < 500 -> no RTS/CTS. Small frames skip RTS to reduce overhead.
+<summary>Solution&lt;/summary&gt;
+100-byte packet: RTS threshold is 500 bytes, so 100 &lt; 500 -&gt; no RTS/CTS. Small frames skip RTS to reduce overhead.
 1500-byte frame: 1500 > 500 -> RTS/CTS is used. Hidden terminal protection for large frames outweighs RTS overhead.
 </details>
 
 18. In a slotted ALOHA system with G = 0.8, what is the throughput? How many slots are idle, successful, and collided per 100 slots?
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 S = G * e^(-G) = 0.8 * e^(-0.8) = 0.8 * 0.4493 = 0.3595
 Per 100 slots:
   Idle: e^(-G) * 100 = 0.4493 * 100 = 44.93 ~ 45 idle slots
@@ -1781,7 +1781,7 @@ Per 100 slots:
 19. Design an ALOHA throughput simulation in Python that compares pure and slotted ALOHA for G values from 0.1 to 3.0. Plot the throughput curve.
 
 <details>
-<summary>Python code</summary>
+<summary>Python code&lt;/summary&gt;
 
 ```python
 import math
@@ -1806,7 +1806,7 @@ Peak: Pure at G=0.5 (18.4%), Slotted at G=1.0 (36.8%).
 20. **Design a hybrid MAC protocol.** Consider a wireless network with 50 stations where traffic is a mixture of real-time voice (constant bit rate, low latency requirement) and bursty data (variable bit rate, tolerant to delay). Design a MAC protocol that satisfies: (a) voice calls experience bounded access delay under 10 ms, (b) data throughput is at least 60% of channel capacity, and (c) the protocol works without infrastructure (ad hoc). Provide pseudocode for your protocol, compute its throughput under mixed load, and explain how the hidden terminal problem is addressed.
 
 <details>
-<summary>Sample Solution Approach</summary>
+<summary>Sample Solution Approach&lt;/summary&gt;
 
 **Protocol name:** Hybrid TDMA/CSMA (HTC-MAC)
 
@@ -1815,7 +1815,7 @@ Peak: Pure at G=0.5 (18.4%), Slotted at G=1.0 (36.8%).
 - Phase 1 (Controlled -- TDMA, 10 ms): 50 mini-slots, one per station. Stations with voice traffic transmit in their reserved slot. Bounded delay: max 20 ms (one superframe).
 - Phase 2 (Contention -- CSMA/CA, 10 ms): Remaining stations compete using CSMA/CA with RTS/CTS for DATA.
 
-**Voice guarantee:** Each voice station gets a dedicated TDMA slot every 20 ms, ensuring < 10 ms access delay.
+**Voice guarantee:** Each voice station gets a dedicated TDMA slot every 20 ms, ensuring &lt; 10 ms access delay.
 **Data throughput:** The contention phase uses 50% of time, but with 60% efficiency (typical CSMA/CA), data achieves 30% of total capacity. Fix: Use adaptive boundary -- if voice slots are unused, data transmits in the TDMA phase too (residual capacity).
 
 **Hidden terminal:** RTS/CTS in the contention phase. During the TDMA phase, voice transmissions use the reservation mechanism -- no hidden terminal issue since slots are pre-assigned.

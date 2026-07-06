@@ -141,7 +141,7 @@ Netflix streams over 100 million hours of content daily across 190+ countries. T
 - 260M profiles × thousands of titles = 10^12 potential user-title pairs
 - Model training: terabytes of watch history data
 - Feature vectors: 10,000+ dimensions per user and per title
-- Real-time inference: <500ms per personalized page load
+- Real-time inference: &lt;500ms per personalized page load
 
 ### High-Level Design Phase
 
@@ -402,7 +402,7 @@ Core principles of chaos engineering at Netflix:
 
 The lifecycle of a chaos experiment at Netflix:
 
-1. **Design**: The engineer defines the experiment parameters: which service, what failure type (instance termination, latency injection, DNS failure), duration (typically 15-30 minutes), and the steady state hypothesis (error rate < 0.1%, P99 latency < 500ms).
+1. **Design**: The engineer defines the experiment parameters: which service, what failure type (instance termination, latency injection, DNS failure), duration (typically 15-30 minutes), and the steady state hypothesis (error rate &lt; 0.1%, P99 latency < 500ms).
 
 2. **Schedule**: The experiment is scheduled via the Chaos Platform (FIT — Failure Injection Testing). The platform checks that no other experiments are running in the same service, no production incidents are active, and it is within business hours.
 
@@ -489,7 +489,7 @@ These features are per-user data served with low latency:
 
 - **Cassandra schema**: `(user_id, profile_id) ? {watch_history: list<viewing_event>, my_list: set<title_id>, resume_points: map<title_id, position>}`
 - **EVCache**: Hot data cached in memory with TTL. Cache-aside pattern: read from cache, populate on miss from Cassandra.
-- **Resume playback**: The last-played position is stored on every pause/stop event. Read on playback start. The goal is <1 second from "resume" click to playback at the saved position.
+- **Resume playback**: The last-played position is stored on every pause/stop event. Read on playback start. The goal is &lt;1 second from "resume" click to playback at the saved position.
 
 ---
 
@@ -569,11 +569,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -581,7 +581,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -607,7 +607,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -625,23 +625,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'system-design demo')
   const log = new Logger()
@@ -745,7 +745,7 @@ A critical quality issue: subtitles that render differently on different devices
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 **Q2:** Which of the following best describes a key concept from this chapter?
 - A) Option A description
@@ -753,7 +753,7 @@ A critical quality issue: subtitles that render differently on different devices
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 **Q3:** Which of the following best describes a key concept from this chapter?
 - A) Option A description
@@ -761,7 +761,7 @@ A critical quality issue: subtitles that render differently on different devices
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -798,7 +798,7 @@ A critical quality issue: subtitles that render differently on different devices
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 **Q2:** Which concept is most fundamental to the topic of Chapter 20
 - A) Option A
@@ -806,7 +806,7 @@ A critical quality issue: subtitles that render differently on different devices
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Review the core sections</details>
+<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
 
 **Q3:** How does this chapter's main concept apply to real-world systems?
 - A) Option A
@@ -814,7 +814,7 @@ A critical quality issue: subtitles that render differently on different devices
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>See the Real-World Systems section</details>
+<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
 
 ---
 
@@ -944,13 +944,13 @@ class ChaosMonkey {
 
 Netflix has entered live events (Chris Rock special, NFL Christmas games, awards shows). Live streaming introduces fundamentally different constraints from on-demand:
 - No retransmission of missed data (must be real-time)
-- Encoding must run with <30 seconds of latency (vs hours for on-demand)
+- Encoding must run with &lt;30 seconds of latency (vs hours for on-demand)
 - No pre-population of CDN (content is generated in real-time)
 - Peak concurrency increases 10x for live events (200M+ concurrent viewers)
 - Failure during a live event is visible to all viewers simultaneously
 
 Design a live streaming architecture for Netflix that:
-1. **Ingest and encode**: 8K source from the venue ? ingest at regional edge ? encode into the full encoding ladder (235p to 4K HDR) with <30 seconds total glass-to-glass latency. How do you parallelize encoding without introducing latency? At what chunk duration do you operate (2s, 4s, 10s)?
+1. **Ingest and encode**: 8K source from the venue ? ingest at regional edge ? encode into the full encoding ladder (235p to 4K HDR) with &lt;30 seconds total glass-to-glass latency. How do you parallelize encoding without introducing latency? At what chunk duration do you operate (2s, 4s, 10s)?
 2. **CDN delivery**: Open Connect is pre-populated for on-demand content. How does it handle live content that cannot be pre-populated? Design a "live cascade" where content propagates from the venue to regional OCAs to ISP OCAs. What is the time to first byte for a viewer in Australia watching a live event originating in the US?
 3. **Failover**: The venue's internet connection drops 15 minutes into a live event. Design a failover strategy. Do you switch to a secondary ingest path? Do you degrade quality? Do you show a "technical difficulties" screen? At what point do you cancel the stream?
 4. **Time-shifted viewing**: Viewers join 30 minutes late and want to watch from the beginning. How do you simultaneously serve live and time-shifted streams from the same pipeline? How do you manage the transition from "live" to "available on-demand" after the event ends?

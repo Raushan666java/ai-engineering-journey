@@ -18,7 +18,7 @@
 | 7 | FastAPI DI (`Depends`) | 2.5 | Can write `get_current_user` + DB-session dependencies |
 | 8 | FastAPI middleware | 1.5 | Can add custom request-duration logging middleware |
 | 9 | Background tasks vs external queue | 1.5 | Can explain why BackgroundTasks aren't durable across restarts |
-| 10 | Pydantic v2: `BaseModel`, `Field`, validators | 3 | Can write model-level validator (start_date < end_date) |
+| 10 | Pydantic v2: `BaseModel`, `Field`, validators | 3 | Can write model-level validator (start_date &lt; end_date) |
 | 11 | Pydantic settings (`pydantic-settings`) | 1 | Load typed config from `.env` instead of scattered `os.environ` |
 | 12 | AsyncIO fundamentals | 2.5 | Explain `await` in terms of Node's event loop |
 | 13 | `asyncio.gather` vs sequential awaits | 2 | Rewrite 3 sequential calls as concurrent, measure speedup |
@@ -416,7 +416,7 @@ class BookingCreate(BaseModel):
 
 ### Exercise
 
-Add a custom field validator (phone number format) and a model-level validator (start_date < end_date) to your project's booking schema.
+Add a custom field validator (phone number format) and a model-level validator (start_date &lt; end_date) to your project's booking schema.
 
 ---
 
@@ -866,7 +866,7 @@ Add a `phone_number` column to your bookings table. Create a migration with `--a
 ---
 
 
-interface Document { id: string; content: string; metadata: Record<string,unknown>; embedding?: number[] }
+interface Document { id: string; content: string; metadata: Record&lt;string,unknown&gt;; embedding?: number[] }
 interface Chunk { text: string; tokens: number }
 class Chunker { constructor(private maxTokens: number = 512) {}
   chunk(text: string): Chunk[] { const words = text.split(/\s+/); const chunks: Chunk[] = []; let current: string[] = []
@@ -876,7 +876,7 @@ class Chunker { constructor(private maxTokens: number = 512) {}
   }
 }
 class VectorStore {
-  private store: Map<string,number[]> = new Map()
+  private store: Map&lt;string,number[]&gt; = new Map()
   add(id: string, embedding: number[]): void { this.store.set(id, embedding) }
   search(query: number[], k: number): string[] {
     const scores: [string,number][] = []
@@ -890,16 +890,16 @@ function cosineSimilarity(a: number[], b: number[]): number {
   return dot/(na*nb)
 }
 class RAGPipeline {
-  constructor(private chunker: Chunker, private store: VectorStore, private llm: (prompt:string) => Promise<string>) {}
-  async ingest(doc: Document): Promise<void> {
+  constructor(private chunker: Chunker, private store: VectorStore, private llm: (prompt:string) => Promise&lt;string&gt;) {}
+  async ingest(doc: Document): Promise&lt;void&gt; {
     const chunks = this.chunker.chunk(doc.content)
-    for(let i=0;i<chunks.length;i++) { const emb = await this.embed(chunks[i].text); this.store.add(`${doc.id}:${i}`, emb) }
+    for(let i=0;i&lt;chunks.length;i++) { const emb = await this.embed(chunks[i].text); this.store.add(`${doc.id}:${i}`, emb) }
   }
-  async query(q: string): Promise<string> {
+  async query(q: string): Promise&lt;string&gt; {
     const qEmb = await this.embed(q); const ids = this.store.search(qEmb, 3)
     const ctx = ids.join("\n"); return this.llm(`Context:\n${ctx}\n\nQuestion: ${q}`)
   }
-  private async embed(text: string): Promise<number[]> { return text.split("").map(c => c.charCodeAt(0)/255) }
+  private async embed(text: string): Promise&lt;number[]&gt; { return text.split("").map(c => c.charCodeAt(0)/255) }
 }
 export { Chunker, VectorStore, RAGPipeline, cosineSimilarity }
 ## Phase 1 Done Checkpoint
@@ -912,7 +912,7 @@ Before moving to Phase 2, you should be able to:
 - [ ] Wire `Depends(get_current_user)` and `Depends(get_db)` on 3 endpoints
 - [ ] Explain why `time.sleep()` in an async function is wrong and what happens instead
 - [ ] Use `asyncio.gather` to speed up 3 concurrent API calls
-- [ ] Add a Pydantic model-level validator (start_date < end_date)
+- [ ] Add a Pydantic model-level validator (start_date &lt; end_date)
 - [ ] Load typed settings from `.env` via `pydantic-settings`
 - [ ] Write 3 FastAPI tests with mocked dependencies that all pass
 - [ ] Create an Alembic migration from scratch, apply and roll back

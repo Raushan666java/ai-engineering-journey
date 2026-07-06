@@ -2006,7 +2006,7 @@ min-replicas-max-lag 10          # Max replica lag (seconds)
 | T3 | BGSAVE done, RDB ready | Waiting | ~15 seconds for 4GB on SSD |
 | T4 | Sends RDB (4GB) | Receives and loads | Network transfer time (~40s on 1Gbps) |
 | T5 | Sends buffered writes | Replays buffer | Catch-up phase |
-| T6 | Steady state: streams commands | Replays in real-time | Lag < 1 second |
+| T6 | Steady state: streams commands | Replays in real-time | Lag &lt; 1 second |
 | T7 | PING every 10s | Responds PONG | Health check |
 
 **C++ → Minimal Replication Check:**

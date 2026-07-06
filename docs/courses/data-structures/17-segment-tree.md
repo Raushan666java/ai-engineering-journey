@@ -329,7 +329,7 @@ Value: 36   9  27   4   5  16  11   1   3   -   -   7   9
 | 8 | 2 | combine | left=3, right=5 | Return **8** |
 | 9 | 3 | [3,5] | Partial | mid=4, recurse left (6) and right (7) |
 | 10 | 6 | [3,4] | Full [3,4] ⊆ [1,4] | Return tree[6] = **16** |
-| 11 | 7 | [5,5] | ql=1 > r=5? No. qr=4 < l=5 → **None** | Return 0 |
+| 11 | 7 | [5,5] | ql=1 > r=5? No. qr=4 &lt; l=5 → **None** | Return 0 |
 | 12 | 3 | combine | left=16, right=0 | Return **16** |
 | 13 | 1 | combine | left=8, right=16 | **Return 24** |
 
@@ -698,7 +698,7 @@ Visual structure:
 | 5 | 2 | combine | tree[2]=tree[4]+tree[5]=1+12=13 | tree[2]=13 | — |
 | 6 | 3 | [2,4] | Partial, mid=3, push(3) | — | — |
 | 7 | 6 | [2,3] | Full [2,3] ⊆ [1,3] → apply: tree[6]+=(3-2+1)×10=+20 | tree[6]=27 | lazy[6]+=10 |
-| 8 | 7 | [4,4] | ql=1 > r=4? No. qr=3 < l=4 → No overlap | return | — |
+| 8 | 7 | [4,4] | ql=1 > r=4? No. qr=3 &lt; l=4 → No overlap | return | — |
 | 9 | 3 | combine | tree[3]=tree[6]+tree[7]=27+5=32 | tree[3]=32 | — |
 | 10 | 1 | combine | tree[1]=tree[2]+tree[3]=13+32=45 | tree[1]=45 | — |
 
@@ -1332,7 +1332,7 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 - D) n²
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** 4n is the safe upper bound. The exact size is `2 * 2^⌈log₂n⌉ - 1`, which never exceeds 4n.
 </details>
 
@@ -1344,7 +1344,7 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 - D) Smaller memory footprint
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Lazy propagation defers the actual update of child nodes, marking them as "pending" and only pushing changes when needed. This keeps range updates at O(log n) instead of O(n).
 </details>
 
@@ -1356,7 +1356,7 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 - D) Range GCD
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** BIT natively supports prefix sums. It does not directly support range min, max, or GCD (though range min can be approximated with a segment tree variant of BIT).
 </details>
 
@@ -1368,7 +1368,7 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 - D) √n
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** BIT uses exactly n + 1 space (1-indexed array of size n+1), making it much more memory-efficient than a segment tree's 4n.
 </details>
 
@@ -1380,7 +1380,7 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 - D) When you need range update support
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Sparse tables offer O(1) range queries but O(n log n) build time and no update support. They are ideal for static data with many queries, like in preprocessing for RMQ.
 </details>
 
@@ -1392,7 +1392,7 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 - D) -1
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A)** 0 is the identity for GCD because gcd(0, x) = x for any x.
 </details>
 
@@ -1404,7 +1404,7 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 - D) O(√n)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** At most 4 × log₂n nodes. At each level, at most 2 nodes are partially overlapping (boundary nodes) and any fully covered nodes between them return immediately.
 </details>
 
@@ -1416,7 +1416,7 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 - D) The program crashes
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** The `push` operation at each partial-overlap node propagates lazy values to children before recursing, ensuring the leaf has the correct value when reached.
 </details>
 

@@ -403,8 +403,8 @@ class NetworkArchitect {
     return issues;
   }
 
-  generateRouteTable(): Record<string, string> {
-    const routes: Record<string, string> = {};
+  generateRouteTable(): Record&lt;string, string&gt; {
+    const routes: Record&lt;string, string&gt; = {};
     for (const subnet of this.subnets) {
       routes[subnet.name] = subnet.isPublic ? "igw-xxx" : "nat-xxx";
     }
@@ -492,7 +492,7 @@ console.log("NAT Gateways:", architect.generateNatGateway(2));
    - D) There is no difference
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) SGs are stateful and allow-only; NACLs are stateless with allow/deny.** Security Groups automatically allow return traffic; NACLs require explicit rules for both directions. SGs support only allow rules; NACLs support both allow and deny with numbered evaluation.
 </details>
 
@@ -503,7 +503,7 @@ console.log("NAT Gateways:", architect.generateNatGateway(2));
    - D) Classic Load Balancer
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Network Load Balancer.** NLB operates at the transport layer (L4) and is designed for high-throughput TCP/UDP traffic requiring static IP addresses.
 </details>
 
@@ -514,7 +514,7 @@ console.log("NAT Gateways:", architect.generateNatGateway(2));
    - D) VPN does not encrypt traffic
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Direct Connect provides consistent low latency and higher bandwidth.** Direct Connect uses a dedicated private line, offering consistent performance from 50 Mbps to 100 Gbps. VPN uses the public internet with variable performance and lower bandwidth limits.
 </details>
 
@@ -525,7 +525,7 @@ console.log("NAT Gateways:", architect.generateNatGateway(2));
    - D) It only works between accounts in the same organization
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It is non-transitive ? traffic cannot route through an intermediate VPC.** If VPC A is peered with B and B with C, A cannot reach C through B. For hub-and-spoke routing, use Transit Gateway.
 </details>
 
@@ -536,7 +536,7 @@ console.log("NAT Gateways:", architect.generateNatGateway(2));
    - D) Geolocation routing
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Latency-based routing.** Latency-based routing directs traffic to the region that provides the lowest latency for the user. Geolocation routing routes based on the user's physical location, which is not the same as latency.
 </details>
 

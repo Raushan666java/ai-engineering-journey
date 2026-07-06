@@ -2283,7 +2283,7 @@ AAAAffffd500.f7f5f5c0.8048426.41414141    ← AAAA = 0x41414141 leaked from stac
     - D) Metasploit
 
 <details>
-<summary>Answers</summary>
+<summary>Answers&lt;/summary&gt;
 1. B, 2. B, 3. B, 4. C, 5. B, 6. B, 7. C, 8. B, 9. A, 10. B
 </details>
 

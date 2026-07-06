@@ -363,7 +363,7 @@ The key insight: **undecidability doesn't make problems go away** — it forces 
 - D) Onto
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A)** A mapping reduction is any computable function such that w ? A iff f(w) ? B.
 </details>
 
@@ -374,7 +374,7 @@ The key insight: **undecidability doesn't make problems go away** — it forces 
 - D) B is recursive
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A)** Mapping reductions preserve RE: if B is recognizable, so is A.
 </details>
 
@@ -385,7 +385,7 @@ The key insight: **undecidability doesn't make problems go away** — it forces 
 - D) Only trivial properties
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Any non-trivial semantic property (about L(M)) is undecidable. Syntactic properties may be decidable.
 </details>
 
@@ -396,7 +396,7 @@ The key insight: **undecidability doesn't make problems go away** — it forces 
 - D) About DFAs
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** PCP is undecidable but purely combinatorial — no TMs in its statement.
 </details>
 
@@ -407,7 +407,7 @@ The key insight: **undecidability doesn't make problems go away** — it forces 
 - D) Linear
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** BB(n) grows faster than any computable function — computing it would solve the halting problem.
 </details>
 
@@ -480,7 +480,7 @@ The **Turing degrees** form a partial order of equivalence classes of languages 
 | **0''''** | FIN_TM | Complete for \(\Sigma_3\) |
 
 **Key properties of the Turing degrees:**
-- The degrees are dense: for any non-recursive degree a < b, there exists c with a < c < b.
+- The degrees are dense: for any non-recursive degree a &lt; b, there exists c with a < c < b.
 - Every countable partial order can be embedded into the Turing degrees.
 - There exist incomparable degrees (A and B such that neither =? the other).
 - The jump operator (') takes a degree to a strictly larger one.
@@ -744,7 +744,7 @@ class ReductionVerifier {
   // Check if the reduction preserves membership direction
   static checkMembershipPreservation(
     f: (x: string) => string,
-    testCases: Array<{ input: string; expectedInA: boolean; expectedInB: boolean }>
+    testCases: Array&lt;{ input: string; expectedInA: boolean; expectedInB: boolean }&gt;
   ): string[] {
     const output: string[] = [];
     output.push("Mapping Reduction Verification");

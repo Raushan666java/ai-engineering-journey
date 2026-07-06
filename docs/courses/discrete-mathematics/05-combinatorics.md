@@ -165,7 +165,7 @@ $$\binom{n + r - 1}{r}$$
 ### 5.8 Inclusion-Exclusion Principle (General)
 
 For $n$ finite sets $A_1, A_2, \ldots, A_n$:
-$$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
+$$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i&lt;j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
 
 **Example (Derangements).** A derangement is a permutation where no element appears in its original position. The number of derangements of $n$ elements is:
 $$!n = n! \sum_{i=0}^{n} \frac{(-1)^i}{i!}$$
@@ -283,35 +283,35 @@ console.log(generateParentheses(3)); // ["((()))", "(()())", "(())()", "()(())",
    - B) 120
    - C) 60
    - D) 360
-   <details><summary>Answer</summary>**C)** 60 ? $\frac{6!}{3!\,2!\,1!} = \frac{720}{6 \times 2} = 60$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** 60 ? $\frac{6!}{3!\,2!\,1!} = \frac{720}{6 \times 2} = 60$.</details>
 
 2. In a group of 23 people, what is the approximate probability that at least two share a birthday?
    - A) Less than 25%
    - B) About 50%
    - C) About 75%
    - D) Over 90%
-   <details><summary>Answer</summary>**B)** About 50% ? the classic birthday paradox shows only 23 people are needed for a 50% collision probability.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** About 50% ? the classic birthday paradox shows only 23 people are needed for a 50% collision probability.</details>
 
 3. How many nonnegative integer solutions does $x_1 + x_2 + x_3 + x_4 = 8$ have?
    - A) $\binom{11}{3}$
    - B) $\binom{8}{3}$
    - C) $\binom{12}{4}$
    - D) $\binom{11}{4}$
-   <details><summary>Answer</summary>**A)** $\binom{11}{3}$ ? stars and bars with $n=4$ types and $r=8$ items gives $\binom{8+4-1}{4-1} = \binom{11}{3}$.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** $\binom{11}{3}$ ? stars and bars with $n=4$ types and $r=8$ items gives $\binom{8+4-1}{4-1} = \binom{11}{3}$.</details>
 
 4. Vandermonde's identity generalizes which combinatorial operation?
    - A) Summing binomial coefficients to get $2^n$
    - B) Splitting a combination across two disjoint sets
    - C) Distributing stars into bars
    - D) Counting derangements by inclusion-exclusion
-   <details><summary>Answer</summary>**B)** $\binom{m+n}{r} = \sum \binom{m}{k}\binom{n}{r-k}$ splits a combination across two disjoint sets.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $\binom{m+n}{r} = \sum \binom{m}{k}\binom{n}{r-k}$ splits a combination across two disjoint sets.</details>
 
 5. The number of derangements of 4 elements ($!4$) is:
    - A) 24
    - B) 12
    - C) 9
    - D) 15
-   <details><summary>Answer</summary>**C)** 9 ? $4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 24(1 - 1 + 1/2 - 1/6 + 1/24) = 24(12/24) = 9$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** 9 ? $4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 24(1 - 1 + 1/2 - 1/6 + 1/24) = 24(12/24) = 9$.</details>
 
 ## Examples
 
@@ -472,7 +472,7 @@ Catalan numbers count at least 20 distinct combinatorial structures, including:
 ### 5.8 Inclusion-Exclusion Principle
 
 **Theorem 5.4 (Inclusion-Exclusion).**
-$$\left|\bigcup_{i=1}^n A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
+$$\left|\bigcup_{i=1}^n A_i\right| = \sum_{i} |A_i| - \sum_{i&lt;j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
 
 ```typescript
 function inclusionExclusion<T>(sets: Set<T>[]): number {
@@ -738,11 +738,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -750,7 +750,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -776,7 +776,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -794,23 +794,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()

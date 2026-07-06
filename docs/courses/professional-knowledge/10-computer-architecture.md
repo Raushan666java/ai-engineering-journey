@@ -394,6 +394,527 @@ Let me change the question to match the answer.
 
 ---
 
+---
+
+## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
+
+### Cache Mapping Calculator — TypeScript
+
+```typescript
+interface CacheConfig {
+  cacheSize: number;   // bytes
+  blockSize: number;   // bytes
+  associativity: number; // 1=direct, N=N-way, 0=fully associative
+  addressBits: number;
+}
+
+interface CacheAnalysis {
+  numBlocks: number;
+  numSets: number;
+  offsetBits: number;
+  indexBits: number;
+  tagBits: number;
+  tagSize: number;      // total tag storage in bits
+}
+
+function analyzeCache(config: CacheConfig): CacheAnalysis {
+  const numBlocks = config.cacheSize / config.blockSize;
+  const numSets = config.associativity === 0 ? 1 : numBlocks / config.associativity;
+  const offsetBits = Math.log2(config.blockSize);
+  const indexBits = Math.log2(numSets);
+  const tagBits = config.addressBits - offsetBits - (config.associativity === 0 ? 0 : indexBits);
+  const tagSize = numBlocks * tagBits; // total tag storage
+
+  return {
+    numBlocks,
+    numSets,
+    offsetBits,
+    indexBits,
+    tagBits,
+    tagSize,
+  };
+}
+
+// Example: 64KB cache, 16B blocks, 32-bit address
+// Direct mapped: numSets=4096, offset=4, index=12, tag=16
+// 4-way: numSets=1024, offset=4, index=10, tag=18
+console.log(analyzeCache({ cacheSize: 65536, blockSize: 16, associativity: 4, addressBits: 32 }));
+
+function calculateAMAT(
+  l1: { hitTime: number; missRate: number },
+  l2?: { hitTime: number; missRate: number; missPenalty: number }
+): number {
+  if (!l2) {
+    return l1.hitTime + l1.missRate * l2?.missPenalty ?? 100;
+  }
+  const l2Penalty = l2.hitTime + l2.missRate * l2.missPenalty;
+  return l1.hitTime + l1.missRate * l2Penalty;
+}
+
+// Memory hierarchy access patterns
+function simulateCacheAccess(
+  addresses: number[],
+  config: CacheConfig
+): { hits: number; misses: number; hitRate: number } {
+  const cache = new Map<number, { tag: number; valid: boolean }[]>();
+  const numSets = config.associativity === 0 ? 1 : (config.cacheSize / config.blockSize) / config.associativity;
+  const offsetBits = Math.log2(config.blockSize);
+  const indexBits = Math.log2(numSets);
+  
+  for (let i = 0; i < numSets; i++) {
+    cache.set(i, Array.from({ length: config.associativity || config.cacheSize / config.blockSize }, () => ({ tag: -1, valid: false })));
+  }
+
+  let hits = 0;
+  const nWay = config.associativity || config.cacheSize / config.blockSize;
+
+  for (const addr of addresses) {
+    const blockAddr = addr >> offsetBits;
+    const setIdx = numSets > 1 ? blockAddr % numSets : 0;
+    const tag = blockAddr >> (indexBits || 0);
+    const set = cache.get(setIdx)!;
+    
+    const hitIdx = set.findIndex(entry => entry.valid && entry.tag === tag);
+    if (hitIdx >= 0) {
+      hits++;
+      // LRU: move to front
+      const hit = set.splice(hitIdx, 1)[0];
+      set.unshift(hit);
+    } else {
+      // Miss — replace LRU (last entry)
+      set.pop();
+      set.unshift({ tag, valid: true });
+    }
+  }
+
+  return {
+    hits,
+    misses: addresses.length - hits,
+    hitRate: hits / addresses.length,
+  };
+}
+```
+
+### Pipeline Hazard Detector — TypeScript
+
+```typescript
+type Instruction = {
+  op: string;
+  rd: number;   // destination register
+  rs1: number;  // source register 1
+  rs2: number;  // source register 2
+};
+
+enum HazardType { NONE, STRUCTURAL, DATA_RAW, DATA_WAR, DATA_WAW, CONTROL }
+
+interface HazardInfo {
+  type: HazardType;
+  instr1Index: number;
+  instr2Index: number;
+  description: string;
+  solution: string;
+}
+
+class PipelineHazardDetector {
+  detect(instructions: Instruction[]): HazardInfo[] {
+    const hazards: HazardInfo[] = [];
+
+    for (let i = 0; i < instructions.length; i++) {
+      for (let j = i + 1; j < Math.min(i + 3, instructions.length); j++) {
+        const instr1 = instructions[i];
+        const instr2 = instructions[j];
+
+        // RAW hazard: instr2 reads register that instr1 writes
+        if (instr1.rd !== 0 && (instr2.rs1 === instr1.rd || instr2.rs2 === instr1.rd)) {
+          const gap = j - i;
+          if (gap === 1) {
+            hazards.push({
+              type: HazardType.DATA_RAW,
+              instr1Index: i,
+              instr2Index: j,
+              description: `RAW: Instr${i} writes R${instr1.rd}, Instr${j+1} reads R${instr1.rd}`,
+              solution: 'Forwarding (EX→EX) and 1 stall for load-use',
+            });
+          } else if (gap === 2) {
+            hazards.push({
+              type: HazardType.DATA_RAW,
+              instr1Index: i,
+              instr2Index: j,
+              description: `RAW: Instr${i} writes R${instr1.rd}, Instr${j+1} reads R${instr1.rd} (2 instr apart)`,
+              solution: 'Forwarding (MEM→EX) — no stall needed',
+            });
+          }
+        }
+
+        // WAW hazard: both write same register
+        if (instr1.rd !== 0 && instr2.rd === instr1.rd && j < instructions.length) {
+          hazards.push({
+            type: HazardType.DATA_WAW,
+            instr1Index: i,
+            instr2Index: j,
+            description: `WAW: Both Instr${i} and Instr${j+1} write R${instr1.rd}`,
+            solution: 'Register renaming (out-of-order execution)',
+          });
+        }
+      }
+    }
+
+    // Control hazard: branch instruction
+    for (let i = 0; i < instructions.length; i++) {
+      if (['BEQ', 'BNE', 'BLT', 'BGT', 'JAL', 'JALR'].includes(instructions[i].op)) {
+        hazards.push({
+          type: HazardType.CONTROL,
+          instr1Index: i,
+          instr2Index: i + 1,
+          description: `Control hazard: ${instructions[i].op} at Instr${i}`,
+          solution: 'Branch prediction + branch target buffer (BTB)',
+        });
+      }
+    }
+
+    return hazards;
+  }
+}
+
+// Example pipeline stages
+enum Stage { IF, ID, EX, MEM, WB }
+
+class PipelineSimulator {
+  simulate(instructions: Instruction[]): { stages: Stage[][]; cycles: number } {
+    const stages: Stage[][] = [];
+    let n = instructions.length;
+    
+    for (let cycle = 0; cycle < n + 4; cycle++) {
+      const cycleStages: Stage[] = [];
+      for (let i = 0; i < n; i++) {
+        const progress = cycle - i;
+        if (progress < 0) continue; // not started
+        if (progress >= 5) continue; // completed
+        cycleStages.push([Stage.IF, Stage.ID, Stage.EX, Stage.MEM, Stage.WB][progress]);
+      }
+      if (cycleStages.length > 0) stages.push(cycleStages);
+    }
+    return { stages, cycles: n + 4 };
+  }
+}
+```
+
+### Number System Converter — TypeScript
+
+```typescript
+class NumberConverter {
+  static toBinary(decimal: number): string {
+    if (decimal === 0) return '0';
+    let bits = '';
+    let n = Math.abs(decimal);
+    while (n > 0) {
+      bits = (n % 2) + bits;
+      n = Math.floor(n / 2);
+    }
+    return decimal < 0 ? '-' + bits : bits;
+  }
+
+  static toOctal(decimal: number): string {
+    if (decimal === 0) return '0';
+    let digits = '';
+    let n = decimal;
+    while (n > 0) {
+      digits = (n % 8) + digits;
+      n = Math.floor(n / 8);
+    }
+    return digits;
+  }
+
+  static toHex(decimal: number): string {
+    const hexChars = '0123456789ABCDEF';
+    if (decimal === 0) return '0';
+    let digits = '';
+    let n = decimal;
+    while (n > 0) {
+      digits = hexChars[n % 16] + digits;
+      n = Math.floor(n / 16);
+    }
+    return digits;
+  }
+
+  static twosComplement(decimal: number, bits: number): string {
+    if (decimal >= 0) {
+      return this.toBinary(decimal).padStart(bits, '0');
+    }
+    const positive = Math.pow(2, bits) + decimal;
+    return this.toBinary(positive).padStart(bits, '0');
+  }
+
+  static fromTwosComplement(binary: string): number {
+    const bits = binary.length;
+    const val = parseInt(binary, 2);
+    if (binary[0] === '1') {
+      return val - Math.pow(2, bits);
+    }
+    return val;
+  }
+
+  static fromBinary(binary: string): number {
+    return parseInt(binary, 2);
+  }
+
+  static fromHex(hex: string): number {
+    return parseInt(hex, 16);
+  }
+
+  static fromOctal(octal: string): number {
+    return parseInt(octal, 8);
+  }
+
+  static binaryAddition(a: string, b: string): { sum: string; carry: string } {
+    const maxLen = Math.max(a.length, b.length);
+    const padA = a.padStart(maxLen, '0');
+    const padB = b.padStart(maxLen, '0');
+    let carry = 0;
+    let result = '';
+
+    for (let i = maxLen - 1; i >= 0; i--) {
+      const bitA = parseInt(padA[i]);
+      const bitB = parseInt(padB[i]);
+      const sum = bitA + bitB + carry;
+      result = (sum % 2) + result;
+      carry = Math.floor(sum / 2);
+    }
+    return { sum: result, carry: carry.toString() };
+  }
+}
+
+// Examples
+console.log(NumberConverter.toBinary(42));       // 101010
+console.log(NumberConverter.toHex(255));          // FF
+console.log(NumberConverter.twosComplement(-42, 8)); // 11010110
+console.log(NumberConverter.fromTwosComplement('11010110')); // -42
+```
+
+### Floating Point Representation — IEEE 754
+
+```typescript
+class IEEE754Converter {
+  static toSinglePrecision(decimal: number): string {
+    const buffer = new ArrayBuffer(4);
+    const floatView = new Float32Array(buffer);
+    const intView = new Uint32Array(buffer);
+    floatView[0] = decimal;
+    return intView[0].toString(2).padStart(32, '0');
+  }
+
+  static fromSinglePrecision(binary: string): number {
+    const intVal = parseInt(binary, 2);
+    const buffer = new ArrayBuffer(4);
+    const intView = new Uint32Array(buffer);
+    const floatView = new Float32Array(buffer);
+    intView[0] = intVal;
+    return floatView[0];
+  }
+
+  static analyze(binary: string): { sign: number; exponent: number; mantissa: string; value: number } {
+    const signBit = parseInt(binary[0]);
+    const exponentBits = binary.substring(1, 9);
+    const mantissaBits = binary.substring(9);
+    const exponent = parseInt(exponentBits, 2) - 127; // bias for single precision
+    const value = this.fromSinglePrecision(binary);
+    return { sign: signBit, exponent, mantissa: mantissaBits, value };
+  }
+}
+// IEEE754Converter.analyze('01000000010000000000000000000000') = sign:0, exp:2, mantissa:1.0, value:10
+```
+
+### Number System — Advanced Problems
+
+> **PYQ 2024:** Convert (11101.101)₂ to decimal.
+
+**Answer:** 1×2⁴ + 1×2³ + 1×2² + 0×2¹ + 1×2⁰ + 1×2⁻¹ + 0×2⁻² + 1×2⁻³ = 16+8+4+0+1 + 0.5+0+0.125 = 29.625
+
+> **PYQ 2025:** The hexadecimal number (A3F)₁₆ is equivalent to which octal number?
+
+**Solution:** A=1010, 3=0011, F=1111 → binary = 1010 0011 1111. Group 3 bits: 101 000 111 111 = 5 0 7 7 = (5077)₈
+
+## 📝 Solved Examples (20 MCQs)
+
+<details>
+<summary>Q1: The 2's complement of -15 in 8-bit is:</summary>
+(a) 11110001 (b) 11110000 (c) 00001111 (d) 10001111
+**Answer:** (a) 11110001. +15 = 00001111. 1's complement = 11110000. Add 1 = 11110001.
+</details>
+
+<details>
+<summary>Q2: A 16-way set-associative cache has 64 KB size, 64 B blocks, 32-bit address. How many tag bits?</summary>
+(a) 16 (b) 18 (c) 20 (d) 22
+**Answer:** (c) 20. Blocks = 64KB/64B = 1024. Sets = 1024/16 = 64. Index bits = log₂(64) = 6. Offset bits = log₂(64) = 6. Tag = 32 − 6 − 6 = 20.
+</details>
+
+<details>
+<summary>Q3: In a 5-stage pipeline, how many cycles to execute 100 instructions (no hazards)?</summary>
+(a) 100 (b) 104 (c) 105 (d) 200
+**Answer:** (b) 104. First instruction takes 5 cycles. Remaining 99 complete one per cycle. Total = 5 + 99 = 104.
+</details>
+
+<details>
+<summary>Q4: Which addressing mode is used in `MOV R1, #50`?</summary>
+(a) Register (b) Immediate (c) Direct (d) Indexed
+**Answer:** (b) Immediate. The operand value (50) is embedded in the instruction itself, not a memory address.
+</details>
+
+<details>
+<summary>Q5: Boolean expression A + (B · C) = (A + B) · (A + C) is which law?</summary>
+(a) Commutative (b) Associative (c) Distributive (d) De Morgan's
+**Answer:** (c) Distributive. A + (B·C) = (A+B)·(A+C) is the distributive law in Boolean algebra (unlike regular algebra where A+BC doesn't factor).
+</details>
+
+<details>
+<summary>Q6: In DMA, which mode has the least impact on CPU performance?</summary>
+(a) Burst (b) Cycle stealing (c) Transparent (d) Block
+**Answer:** (c) Transparent mode. DMA transfers only when CPU doesn't need the bus. Slowest but no CPU slowdown.
+</details>
+
+<details>
+<summary>Q7: What is the range of signed integers in 8-bit 2's complement?</summary>
+(a) -127 to +127 (b) -128 to +127 (c) 0 to 255 (d) -255 to +255
+**Answer:** (b) -128 to +127. 2^(n-1) to +(2^(n-1)-1). For n=8: -128 to +127.
+</details>
+
+<details>
+<summary>Q8: Which pipeline hazard requires stalling even with forwarding?</summary>
+(a) ALU-ALU dependency (b) Load-use hazard (c) WAW hazard (d) Structural hazard
+**Answer:** (b) Load-use hazard. Load instruction's result is available only after MEM stage. Even with forwarding, dependent instruction must stall one cycle.
+</details>
+
+<details>
+<summary>Q9: RAID 5 uses which technique for fault tolerance?</summary>
+(a) Mirroring (b) Striping with parity (c) Striping only (d) Double parity
+**Answer:** (b) Striping with distributed parity. RAID 5 stripes data and parity across all disks. Can tolerate 1 disk failure. RAID 6 = double parity.
+</details>
+
+<details>
+<summary>Q10: Which CPU register holds the address of the next instruction to execute?</summary>
+(a) IR (b) MAR (c) PC (d) ACC
+**Answer:** (c) PC (Program Counter). Also called Instruction Pointer. IR holds current instruction, MAR holds memory address.
+</details>
+
+<details>
+<summary>Q11: The hexadecimal number 1A3F in binary is:</summary>
+(a) 0001 1010 0011 1111 (b) 1010 0011 1111 0001 (c) 1111 0011 1010 0001 (d) 0001 1010 1111 0011
+**Answer:** (a) 0001 1010 0011 1111. 1=0001, A=1010, 3=0011, F=1111.
+</details>
+
+<details>
+<summary>Q12: Which Boolean algebra law states (A+B)' = A'·B'?</summary>
+(a) Distributive (b) De Morgan's (c) Absorption (d) Complement
+**Answer:** (b) De Morgan's. (A+B)' = A'·B' and (A·B)' = A'+B'. Used extensively in digital logic simplification.
+</details>
+
+<details>
+<summary>Q13: The AMAT with L1 hit=1ns, L1 miss=10%, L2 hit=10ns, L2 miss=5%, main memory=100ns is:</summary>
+(a) 1.5 ns (b) 2.5 ns (c) 3.5 ns (d) 4.5 ns
+**Answer:** (b) 2.5 ns. L2 penalty = 10 + 0.05×100 = 15ns. AMAT = 1 + 0.10×15 = 2.5 ns.
+</details>
+
+<details>
+<summary>Q14: Which CPU component performs arithmetic and logic operations?</summary>
+(a) Control Unit (b) ALU (c) Register file (d) Cache
+**Answer:** (b) ALU (Arithmetic Logic Unit). Performs add, subtract, AND, OR, XOR, shift operations.
+</details>
+
+<details>
+<summary>Q15: In the instruction cycle, what happens during the Decode stage?</summary>
+(a) Instruction fetched from memory (b) CU interprets opcode and generates control signals (c) ALU performs operation (d) Result written to register
+**Answer:** (b) CU interprets opcode and generates control signals. Fetch = get instruction, Execute = ALU, Write-back = store result.
+</details>
+
+<details>
+<summary>Q16: A RISC processor typically has:</summary>
+(a) Variable-length instructions (b) Many addressing modes (c) Few registers (d) Hardwired control unit
+**Answer:** (d) Hardwired control unit. RISC: fixed-length instructions, few addressing modes, many registers, hardwired control.
+</details>
+
+<details>
+<summary>Q17: How many bits are needed to address 16 GB of memory with byte-addressable storage?</summary>
+(a) 32 (b) 34 (c) 36 (d) 38
+**Answer:** (b) 34. 16 GB = 2^34 bytes. So 34 address bits. 4 GB = 2^32 (32 bits), so 16 GB = 2^34 (34 bits).
+</details>
+
+<details>
+<summary>Q18: Which cache mapping technique has the lowest hardware cost?</summary>
+(a) Direct mapped (b) Set-associative (c) Fully associative (d) All same cost
+**Answer:** (a) Direct mapped. Only one comparator needed (compare tag). Set-associative needs N comparators. Fully associative needs comparators for all blocks.
+</details>
+
+<details>
+<summary>Q19: The boolean expression A·(A+B) simplifies to:</summary>
+(a) A (b) B (c) A+B (d) A·B
+**Answer:** (a) A. Absorption law: A·(A+B) = A. Also A + (A·B) = A.
+</details>
+
+<details>
+<summary>Q20: Which flag is set when an arithmetic operation result exceeds the signed range?</summary>
+(a) Zero (b) Carry (c) Overflow (d) Sign
+**Answer:** (c) Overflow (V flag). Set when signed overflow occurs (sign bit changes incorrectly). Carry = unsigned overflow.
+</details>
+
+## 📖 Exercise Bank (30 Questions)
+
+1. Convert the following to decimal: (101101)₂, (3A7)₁₆, (723)₈
+2. Find the 2's complement of -25 in 8-bit and 16-bit representation.
+3. For a 128 KB cache with 32 B blocks and 32-bit address, calculate tag/index/offset bits for direct-mapped, 4-way, and fully associative.
+4. Show the pipeline stages (IF, ID, EX, MEM, WB) for 5 instructions. Identify all hazards.
+5. Simplify the Boolean expression: A'B'C + A'BC + AB'C + ABC
+6. Implement a TypeScript function that performs IEEE 754 single-precision encoding for a given decimal.
+7. Calculate AMAT: L1 hit=2ns, L1 miss=8%, L2 hit=12ns, L2 miss=4%, main memory=120ns.
+8. An 8-way set-associative cache has 32 KB and 64 B blocks with 32-bit address. Find tag bits and total tag storage.
+9. Convert (25.625)₁₀ to binary, octal, and hexadecimal.
+10. Write TypeScript code implementing a 4-bit ripple carry adder simulation.
+11. For the instruction sequence: ADD R1,R2,R3; SUB R4,R1,R5; LW R6,0(R4); BEQ R6,R7,label. Identify all hazards and solutions.
+12. Compare hardwired vs microprogrammed control unit: speed, flexibility, complexity.
+13. Explain the difference between RISC and CISC with 5 comparison points and examples.
+14. Design a 2-bit multiplier using Boolean algebra and logic gates (simulate in TypeScript).
+15. For direct-mapped cache with 16 blocks, show the mapping of memory blocks 0-31 and calculate conflict misses.
+16. Write TypeScript code for a K-Map simplifier (2, 3, and 4 variable).
+17. Calculate the number of address bits for: 4 GB, 64 GB, 256 TB of byte-addressable memory.
+18. Explain the concept of branch prediction with a 2-bit saturating counter implementation.
+19. For hexadecimal (FACE)₁₆, convert to binary, octal, and decimal.
+20. Write TypeScript code implementing the Tomasulo algorithm for out-of-order execution.
+21. Calculate the miss penalty for a system with L1 (2ns, 95%), L2 (8ns, 90%), L3 (30ns, 97%), main memory (150ns).
+22. Design a 4-bit ALU that performs ADD, SUB, AND, OR, XOR, SLT.
+23. For a pipelined processor, calculate the speedup over a non-pipelined processor for 1000 instructions with 15% branch penalty (2 cycles per branch).
+24. Write TypeScript code to simulate a 4-stage pipeline (Fetch, Decode, Execute, Write-back) with hazard detection.
+25. Convert (-37.75)₁₀ to IEEE 754 single-precision format.
+26. Explain the difference between Von Neumann and Harvard architecture.
+27. Implement a TypeScript function to calculate the performance (CPI) for a given instruction mix and cycle counts.
+28. For RAID 10 with 6 disks of 2 TB each, calculate usable capacity, read speed, write speed, and fault tolerance.
+29. Write TypeScript code simulating a cache coherence protocol (MESI) for two processors.
+30. Calculate the address lines, data lines, and chip count needed to build 64 MB memory using 8M×8 chips.
+
+**Answer Key:**
+
+1. (101101)₂ = 45. (3A7)₁₆ = 3×256 + 10×16 + 7 = 768+160+7 = 935. (723)₈ = 7×64 + 2×8 + 3 = 448+16+3 = 467
+2. 8-bit: +25=00011001 → 1's=11100110 → +1=11100111. 16-bit: 1111111111100111
+3. Direct: blocks=4096, offset=5, index=12, tag=15. 4-way: sets=1024, index=10, tag=17. Full: tag=27
+4. Pipeline stages: I1: IF ID EX MEM WB. I2: IF ID EX MEM WB (...). Detect RAW between I1/I2 (add → sub), load-use between LW and dependent
+5. C(A'B'+A'B+AB'+AB) = C((A'+A)(B'+B)) = C(1·1) = C
+7. AMAT = 2 + 0.08×(12 + 0.04×120) = 2 + 0.08×(12+4.8) = 2 + 0.08×16.8 = 2 + 1.344 = 3.344 ns
+8. Blocks=32768/64=512. Sets=512/8=64. Offset=6, index=6, tag=32-6-6=20. Tag storage = 512×20 = 10240 bits = 1280 bytes
+9. Binary: 25=11001, 0.625=0.101 → 11001.101. Octal: 11001.101 → 011 001 . 101 = 31.5₈. Hex: 11001.101 → 0001 1001 . 1010 = 19.A₁₆
+10. Full adder: sum=a⊕b⊕cin, cout=(a&b)|(cin&(a⊕b)). Chain 4 full adders
+11. RAW: ADD→SUB (R1), SUB→LW (R4), control: BEQ depends on LW result. Solutions: forwarding for ALU-ALU, stalling for load-use, branch prediction for BEQ
+13. RISC: fixed 4-byte, load/store, 32+ regs, hardwired. CISC: variable, memory ops, few regs, microcode
+15. Block i maps to cache line i mod 16. Blocks 0 and 16 conflict. Conflict misses when alternating between blocks 0 and 16
+17. 4GB=2^32 → 32 bits. 64GB=2^36 → 36 bits. 256TB=2^48 → 48 bits
+18. 2-bit saturating counter: 00=strong NT, 01=weak NT, 10=weak T, 11=strong T. Update on actual outcome
+19. FACE₁₆ = 1111 1010 1100 1110₂ = 175316₈ = 1111×16³ + 1010×16² + 1100×16¹ + 1110 = 64206₁₀
+21. Effective MP: L1→L2: miss rate 5%. L2→L3: miss rate 10%. L3→MM: miss rate 3%. L2 penalty = 8+0.1×(30+0.03×150) = 8+0.1×34.5 = 11.45. L1 penalty = 2+0.05×11.45 = 2.5725 ns
+23. Non-pipelined CPI = 1 + (pipeline overhead) ≈ 5 (avg). Pipelined CPI ≈ 1 + 0.15×2 = 1.3. Speedup = 5/1.3 ≈ 3.85
+25. Sign=1 (negative). 37.75 → 100101.11 = 1.0010111×2^5 → exponent 5+127=132=10000100. Mantissa=001011100... → 1 10000100 00101110000000000000000
+27. CPI = Σ(instruction_fraction × cycle_count). Example: 40% ALU (1), 30% mem (2), 20% branch (3), 10% other (2) → CPI = 0.4×1+0.3×2+0.2×3+0.1×2 = 1.8
+28. RAID 10: usable = n/2 × size = 3×2TB = 6TB. Read: all disks, Write: half disks. Fault tolerance: 1 per mirror pair (max 3 disk failures if in different mirrors)
+30. Need: 64MB / 8M×8 = 64×1024×1024 / (8×1024×1024×8/8) = 64MB / 8MB = 8 chips. Address lines: log₂(64M) = 26. Data lines: 64 bits (8 chips × 8 bits)
+
+---
+
 ## Summary
 - **Number systems:** Bin (base 2), Oct (8), Dec (10), Hex (16). 2's complement for signed.
 - **Boolean algebra:** De Morgan's, SOP/POS, minterms/maxterms

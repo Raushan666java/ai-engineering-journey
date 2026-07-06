@@ -1337,7 +1337,7 @@ The agent concludes that both adjacent squares (1,2) and (2,1) are safe (no pits
 - C) Î± is consistent with KB
 - D) KB and Î± have no common models
 
-<details><summary>Answer</summary>B) Entailment KB âŠ¨ Î± means Î± is true in all models of KB → a semantic relationship.</details>
+<details><summary>Answer&lt;/summary&gt;B) Entailment KB âŠ¨ Î± means Î± is true in all models of KB → a semantic relationship.</details>
 
 **Q2:** Resolution is the only inference rule needed for refutation-complete proof in PL. What is refutation-completeness?
 - A) It can prove any valid sentence
@@ -1345,7 +1345,7 @@ The agent concludes that both adjacent squares (1,2) and (2,1) are safe (no pits
 - C) It works only for Horn clauses
 - D) It never produces false positives
 
-<details><summary>Answer</summary>B) Refutation-completeness means the unsatisfiability of KB âˆ§ Â¬Î± can be proven by deriving the empty clause.</details>
+<details><summary>Answer&lt;/summary&gt;B) Refutation-completeness means the unsatisfiability of KB âˆ§ Â¬Î± can be proven by deriving the empty clause.</details>
 
 **Q3:** A sentence is valid if and only if:
 - A) It is true in at least one model
@@ -1353,7 +1353,7 @@ The agent concludes that both adjacent squares (1,2) and (2,1) are safe (no pits
 - C) It is true in all models
 - D) Its negation is satisfiable
 
-<details><summary>Answer</summary>C) A valid sentence (tautology) is true in all possible interpretations.</details>
+<details><summary>Answer&lt;/summary&gt;C) A valid sentence (tautology) is true in all possible interpretations.</details>
 
 **Q4:** Forward chaining is best suited for:
 - A) Goal-directed query answering
@@ -1361,7 +1361,7 @@ The agent concludes that both adjacent squares (1,2) and (2,1) are safe (no pits
 - C) Proof by contradiction
 - D) Converting formulas to CNF
 
-<details><summary>Answer</summary>B) Forward chaining starts from known facts and derives new facts, making it ideal for data-driven scenarios like monitoring systems.</details>
+<details><summary>Answer&lt;/summary&gt;B) Forward chaining starts from known facts and derives new facts, making it ideal for data-driven scenarios like monitoring systems.</details>
 
 **Q5:** Which of the following is NOT a valid inference rule?
 - A) Modus Ponens
@@ -1369,7 +1369,7 @@ The agent concludes that both adjacent squares (1,2) and (2,1) are safe (no pits
 - C) Modus Eliminans
 - D) AND Elimination
 
-<details><summary>Answer</summary>C) "Modus Eliminans" is not a standard inference rule. The correct rules are Modus Ponens, Resolution, and AND Elimination.</details>
+<details><summary>Answer&lt;/summary&gt;C) "Modus Eliminans" is not a standard inference rule. The correct rules are Modus Ponens, Resolution, and AND Elimination.</details>
 
 ---
 

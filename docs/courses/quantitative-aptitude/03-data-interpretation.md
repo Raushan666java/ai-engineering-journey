@@ -515,6 +515,584 @@ flowchart LR
     F --> G["Answer questions"]
 ```
 
+## TypeScript Implementation: DI Chart Generator & Calculator
+
+```typescript
+// di-chart-generator.ts — Data Interpretation tools for Chapter 3
+
+interface TableRow {
+  label: string;
+  values: number[];
+}
+
+interface PieSector {
+  label: string;
+  value: number;
+  percentage?: number;
+  angle?: number;
+}
+
+interface BarData {
+  category: string;
+  value: number;
+}
+
+class DICalculator {
+  static tableTotal(data: TableRow[]): number[] {
+    const cols = data[0].values.length;
+    const totals: number[] = new Array(cols).fill(0);
+    for (const row of data) {
+      for (let i = 0; i < row.values.length; i++) {
+        totals[i] += row.values[i];
+      }
+    }
+    return totals;
+  }
+
+  static tableAverage(data: TableRow[]): number[] {
+    const totals = this.tableTotal(data);
+    return totals.map((t) => t / data.length);
+  }
+
+  static percentageShare(part: number, total: number): number {
+    return (part / total) * 100;
+  }
+
+  static ratio(a: number, b: number): string {
+    const gcd = (x: number, y: number): number => (y === 0 ? x : gcd(y, x % y));
+    const g = gcd(a, b);
+    return `${a / g}:${b / g}`;
+  }
+
+  static growthRate(initial: number, final: number): number {
+    return ((final - initial) / initial) * 100;
+  }
+
+  static cagr(initial: number, final: number, years: number): number {
+    return (Math.pow(final / initial, 1 / years) - 1) * 100;
+  }
+}
+
+class PieChartProcessor {
+  static fromValues(data: PieSector[], total: number): PieSector[] {
+    return data.map((s) => ({
+      ...s,
+      percentage: (s.value / total) * 100,
+      angle: (s.value / total) * 360,
+    }));
+  }
+
+  static fromPercentages(data: PieSector[]): PieSector[] {
+    return data.map((s) => ({
+      ...s,
+      angle: (s.percentage! / 100) * 360,
+    }));
+  }
+
+  static fromAngles(data: PieSector[], total: number): PieSector[] {
+    return data.map((s) => ({
+      ...s,
+      value: (s.angle! / 360) * total,
+      percentage: (s.angle! / 360) * 100,
+    }));
+  }
+
+  static findSectorByLabel(sectors: PieSector[], label: string): PieSector {
+    const found = sectors.find((s) => s.label === label);
+    if (!found) throw new Error(`Sector "${label}" not found`);
+    return found;
+  }
+
+  static difference(sectors: PieSector[], labelA: string, labelB: string): number {
+    const a = this.findSectorByLabel(sectors, labelA);
+    const b = this.findSectorByLabel(sectors, labelB);
+    return Math.abs((a.value || 0) - (b.value || 0));
+  }
+
+  static generateChartConfig(sectors: PieSector[]): string {
+    // Generate a Mermaid pie chart from data
+    let chart = "```mermaid\npie title Distribution\n";
+    for (const s of sectors) {
+      chart += `    "${s.label}" : ${s.value}\n`;
+    }
+    chart += "```\n";
+    return chart;
+  }
+}
+
+class CaseletSolver {
+  static fromParagraph(extracted: Record<string, number>): {
+    findValue: (label: string) => number;
+    findPercentage: (label: string, base: string) => number;
+  } {
+    return {
+      findValue: (label: string) => extracted[label],
+      findPercentage: (label: string, base: string) =>
+        ((extracted[label] || 0) / (extracted[base] || 1)) * 100,
+    };
+  }
+}
+
+class MixedChartAnalyzer {
+  static combine(
+    absoluteData: BarData[],
+    percentageData: { category: string; rate: number }[]
+  ): { category: string; absolute: number; rate: number; derived: number }[] {
+    return absoluteData.map((ad) => {
+      const pData = percentageData.find((p) => p.category === ad.category);
+      return {
+        category: ad.category,
+        absolute: ad.value,
+        rate: pData?.rate || 0,
+        derived: (ad.value * (pData?.rate || 0)) / 100,
+      };
+    });
+  }
+}
+
+// Example usage
+const employees = [
+  { label: "HR", values: [76] },
+  { label: "IT", values: [96] },
+  { label: "Finance", values: [68] },
+];
+
+const tableData: TableRow[] = [
+  { label: "A", values: [85, 90, 75, 80] },
+  { label: "B", values: [78, 82, 88, 72] },
+  { label: "C", values: [92, 80, 70, 85] },
+];
+console.log(`Totals per subject: ${DICalculator.tableTotal(tableData)}`);
+console.log(`Average per student: ${DICalculator.tableAverage(tableData)}`);
+
+const investmentPie: PieSector[] = [
+  { label: "Stocks", value: 108000 },
+  { label: "Bonds", value: 72000 },
+  { label: "Gold", value: 54000 },
+  { label: "Real Estate", value: 72000 },
+];
+const processed = PieChartProcessor.fromValues(investmentPie, 306000);
+console.log(
+  `Stocks angle: ${processed[0].angle}°, Gold angle: ${processed[2].angle}°`
+);
+
+// Generate Mermaid pie chart config
+console.log(PieChartProcessor.generateChartConfig(investmentPie));
+
+// CAGR example
+console.log(`CAGR: ${DICalculator.cagr(10, 72, 5).toFixed(1)}%`);
+```
+
+## 📝 Solved Examples (20 MCQs)
+
+### DI Set 1: Table DI (Questions 1–5)
+
+**Question:** The table below shows the number of units produced and sold by a company over 5 years.
+
+| Year | Production (units) | Sales (units) |
+|------|-------------------|---------------|
+| 2020 | 5000 | 4500 |
+| 2021 | 6000 | 5100 |
+| 2022 | 7500 | 6750 |
+| 2023 | 8000 | 7200 |
+| 2024 | 9000 | 8550 |
+
+**Q1:** What is the total production over the 5 years?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Sum = Σ each value
+
+Total = 5000 + 6000 + 7500 + 8000 + 9000 = 35,500 units
+
+**Answer:** 35,500 units
+</details>
+
+**Q2:** In which year was the highest percentage of units sold?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** % Sold = (Sales/Production) × 100
+
+2020: (4500/5000)×100 = 90%
+2021: (5100/6000)×100 = 85%
+2022: (6750/7500)×100 = 90%
+2023: (7200/8000)×100 = 90%
+2024: (8550/9000)×100 = 95%
+Highest = 2024 at 95%
+
+**Answer:** 2024
+</details>
+
+**Q3:** Find the ratio of production in 2024 to that in 2020.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Ratio = Value₁ : Value₂ (simplified)
+
+Ratio = 9000:5000 = 9:5
+
+**Answer:** 9:5
+</details>
+
+**Q4:** What is the average annual production?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Average = Total / Count
+
+Average = 35500/5 = 7,100 units
+
+**Answer:** 7,100 units
+</details>
+
+**Q5:** What is the total unsold stock over the 5 years?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Unsold = Production − Sales
+
+2020: 5000−4500 = 500
+2021: 6000−5100 = 900
+2022: 7500−6750 = 750
+2023: 8000−7200 = 800
+2024: 9000−8550 = 450
+Total = 500+900+750+800+450 = 3,400 units
+
+**Answer:** 3,400 units
+</details>
+
+### DI Set 2: Bar Chart (Questions 6–10)
+
+**Question:** The bar chart shows monthly expenses (₹'000) of a family across 6 categories.
+
+| Category | Food | Rent | Education | Transport | Health | Savings |
+|----------|------|------|-----------|-----------|--------|---------|
+| Expense (₹'000) | 12 | 8 | 6 | 4 | 3 | 7 |
+
+**Q6:** What is the total monthly expense?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Sum all values
+
+Total = 12 + 8 + 6 + 4 + 3 + 7 = ₹40,000
+
+**Answer:** ₹40,000
+</details>
+
+**Q7:** What percentage of total is spent on Rent?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** % = (Category/Total) × 100
+
+% Rent = (8/40) × 100 = 20%
+
+**Answer:** 20%
+</details>
+
+**Q8:** Find the ratio of Food expense to Education expense.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Ratio = a:b (simplified)
+
+Ratio = 12:6 = 2:1
+
+**Answer:** 2:1
+</details>
+
+**Q9:** How much more is spent on Food than on Transport?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Difference = Value₁ − Value₂
+
+Difference = 12000 − 4000 = ₹8,000
+
+**Answer:** ₹8,000
+</details>
+
+**Q10:** Find the average monthly expense per category.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Average = Total / Count
+
+Average = 40000/6 = ₹6,666.67
+
+**Answer:** ₹6,666.67
+</details>
+
+### DI Set 3: Pie Chart (Questions 11–15)
+
+**Question:** The pie chart shows the distribution of ₹4,80,000 among 5 investment options with the following angles:
+
+| Option | Angle |
+|--------|-------|
+| Stocks | 144° |
+| Bonds | 72° |
+| Gold | 54° |
+| Real Estate | 54° |
+| Cash | 36° |
+
+**Q11:** How much is invested in Stocks?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Value = (Angle/360) × Total
+
+Stocks = (144/360) × 480000 = 0.4 × 480000 = ₹1,92,000
+
+**Answer:** ₹1,92,000
+</details>
+
+**Q12:** What percentage is invested in Bonds?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** % = (Angle/360) × 100
+
+Bonds % = (72/360) × 100 = 20%
+
+**Answer:** 20%
+</details>
+
+**Q13:** Find the ratio of Gold to Real Estate investment.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Ratio = Value₁:Value₂
+
+Both have 54° each, so ratio = 1:1
+
+**Answer:** 1:1
+</details>
+
+**Q14:** What is the difference between Stocks and Cash investments?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Difference = (θ₁−θ₂)/360 × Total
+
+Angle difference = 144 − 36 = 108°
+Difference = (108/360) × 480000 = 0.3 × 480000 = ₹1,44,000
+
+**Answer:** ₹1,44,000
+</details>
+
+**Q15:** Find the angle for an option that contributes 15% of the total.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Angle = % × 3.6 (since 1% = 3.6°)
+
+Angle = 15 × 3.6 = 54°
+
+**Answer:** 54°
+</details>
+
+### DI Set 4: Caselet DI (Questions 16–20)
+
+**Question:** In a company of 600 employees, 45% are in the IT department. Among the IT employees, 60% are men. The HR department has 30% fewer employees than IT. The remaining employees are in Finance. In Finance, 40% are women.
+
+**Q16:** How many employees are in IT?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Part = (%/100) × Total
+
+IT = (45/100) × 600 = 270 employees
+
+**Answer:** 270
+</details>
+
+**Q17:** How many men are in IT?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Men in IT = 60% of IT employees
+
+Men in IT = (60/100) × 270 = 162
+
+**Answer:** 162
+</details>
+
+**Q18:** How many employees are in HR?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** HR = IT − 30% of IT = 70% of IT
+
+HR = 0.7 × 270 = 189 employees
+
+**Answer:** 189
+</details>
+
+**Q19:** How many employees are in Finance?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Finance = Total − IT − HR
+
+Finance = 600 − 270 − 189 = 141 employees
+
+**Answer:** 141
+</details>
+
+**Q20:** How many women are in Finance?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Women in Finance = 40% of Finance employees
+
+Women = (40/100) × 141 = 56.4 ≈ 56 women (rounding down)
+
+**Answer:** 56 women
+</details>
+
+## 📖 Exercise Bank (30 Questions)
+
+### Set 1: Table DI (Exercises 1–5)
+
+The table shows the marks (out of 100) of 5 students in 4 subjects.
+
+| Student | Physics | Chemistry | Maths | Biology |
+|---------|---------|-----------|-------|---------|
+| P | 78 | 85 | 92 | 70 |
+| Q | 88 | 72 | 80 | 85 |
+| R | 65 | 90 | 75 | 80 |
+| S | 92 | 78 | 88 | 75 |
+| T | 76 | 82 | 70 | 90 |
+
+**1.** Who scored the highest total marks?
+**2.** Find the average marks of Chemistry across all students.
+**3.** What is the ratio of P's Maths marks to Q's Biology marks?
+**4.** How many students scored above 80 in Physics?
+**5.** Find the overall average percentage across all students and subjects.
+
+### Set 2: Bar Chart (Exercises 6–8)
+
+Sales (in ₹lakhs) for a company across 4 quarters: Q1=45, Q2=60, Q3=55, Q4=80.
+
+**6.** Find total annual sales.
+**7.** Find the percentage increase from Q1 to Q4.
+**8.** Find the average quarterly sales.
+
+### Set 3: Pie Chart (Exercises 9–11)
+
+A total of ₹3,60,000 is distributed: Food 30%, Rent 25%, Education 15%, Transport 10%, Medical 10%, Savings 10%.
+
+**9.** Find the amount spent on Education.
+**10.** Find the angle for the Savings sector.
+**11.** How much more is spent on Rent than on Transport?
+
+### Set 4: Line Chart (Exercises 12–14)
+
+Monthly profit (₹'000): Jan=25, Feb=30, Mar=22, Apr=35, May=40, Jun=38.
+
+**12.** Find the total profit for the first quarter (Jan−Mar).
+**13.** In which month was the highest growth rate over the previous month?
+**14.** Find the average monthly profit.
+
+### Set 5: Caselet DI (Exercises 15–19)
+
+In a college of 900 students, 55% are boys. Among boys, 60% are in Science stream. Among girls, 50% are in Commerce stream. The remaining students are in Arts.
+
+**15.** Find the number of boys.
+**16.** Find the number of boys in Science.
+**17.** How many girls are in Commerce?
+**18.** How many students are in Arts?
+**19.** What percentage of total students are in Science?
+
+### Set 6: Mixed Graph (Exercises 20–24)
+
+A bar chart shows production (units): 2019=2000, 2020=2500, 2021=3000, 2022=3500, 2023=4000.
+A line chart shows % exported: 2019=40%, 2020=45%, 2021=50%, 2022=55%, 2023=60%.
+
+**20.** How many units were exported in 2021?
+**21.** In which year was the maximum export?
+**22.** Find total exported units over 5 years.
+**23.** Find the year-on-year growth rate of production for 2020-21.
+**24.** In which year was the growth rate of production the highest?
+
+### Set 7: Comprehensive DI (Exercises 25–30)
+
+| City | Population | Male % | Literate % | Graduate % of Literates |
+|------|-----------|--------|------------|-------------------------|
+| A | 50,000 | 52 | 80 | 25 |
+| B | 80,000 | 48 | 75 | 30 |
+| C | 60,000 | 55 | 85 | 20 |
+| D | 70,000 | 50 | 70 | 35 |
+| E | 40,000 | 45 | 90 | 40 |
+
+**25.** Find the literate population of City C.
+**26.** Find the number of male literates in City B (assume literacy is equally distributed).
+**27.** Which city has the highest number of graduates?
+**28.** Find the total graduate population across all cities.
+**29.** Find the ratio of literate males to literate females in City D.
+**30.** Find the city with the highest literacy rate.
+
+**Answer Key:**
+1. Q (325) 2. 81.4 3. 92:85 4. 3 (Q, R, S) 5. 80.3% 6. ₹240L 7. 77.78% 8. ₹60L 9. ₹54,000 10. 36° 11. ₹54,000 12. ₹77,000 13. Mar-Apr (59.1%) 14. ₹31,667 15. 495 16. 297 17. 202 18. 401 19. 33% 20. 1500 21. 2023 (2400) 22. 8,250 23. 20% 24. 2019-20 (25%) 25. 51,000 26. 28,800 27. D (17,150) 28. 72,600 29. 1:1 30. E (90%)
+
+## Mermaid Diagram: DI Set — Table Reading Strategy
+
+```mermaid
+flowchart TD
+    A["Read the Question first"] --> B["Identify which data needed"]
+    B --> C["Scan Table for Row/Column"]
+    C --> D{"Is data directly available?"}
+    D -->|"Yes"| E["Extract and calculate"]
+    D -->|"No"| F["Derive using formula"]
+    F --> G["Sum / Average / % / Ratio"]
+    E --> G
+    G --> H["Match with answer options"]
+```
+
+## Mermaid Diagram: Pie Chart — Data Flow
+
+```mermaid
+flowchart LR
+    A["Raw Values"] --> B["% = (Value/Total)×100"]
+    A --> C["Angle = (Value/Total)×360°"]
+    D["Given %"] --> E["Value = (%/100)×Total"]
+    D --> F["Angle = % × 3.6°"]
+    G["Given Angle θ"] --> H["% = (θ/360)×100"]
+    G --> I["Value = (θ/360)×Total"]
+```
+
+## Mermaid Diagram: Caselet DI — Extraction Flow
+
+```mermaid
+flowchart TD
+    A["Caselet Paragraph"] --> B["Read carefully 2×"]
+    B --> C["Note all numbers and relationships"]
+    C --> D{"Relationship type?"}
+    D -->|"% of total"| E["Calculate absolute numbers"]
+    D -->|"Ratio"| F["Set variables with common factor"]
+    D -->|"More/Less by"| G["Add/Subtract to find values"]
+    E --> H["Cross-verify totals"]
+    F --> H
+    G --> H
+    H --> I["Answer questions"]
+```
+
+## Formula Reference Table for DI
+
+| Calculation | Formula | Notes |
+|------------|---------|-------|
+| Percentage of total | (Part/Total)×100 | Common across all DI types |
+| Sector angle | (Value/Total)×360° | For pie charts only |
+| Value from angle | (Angle/360)×Total | For pie charts |
+| Growth rate | ((New−Old)/Old)×100 | For line charts |
+| CAGR | ((Final/Initial)^(1/n)−1)×100 | n = years |
+| Ratio | a:b = a/g : b/g | g = gcd(a,b) |
+| Weighted average | Σ(wᵢxᵢ)/Σwᵢ | When groups have unequal sizes |
+| Percentage point change | New% − Old% | Not same as % change |
+| Index number | (Current/Base)×100 | Base year = 100 |
+
 ## Summary
 
 - **Data Interpretation** is the most scoring section in IBPS SO Prelims if you practice speed and accuracy

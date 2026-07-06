@@ -585,7 +585,7 @@ record Person(String name, int age) {}
 `EnumSet<E extends Enum<E>>` is a **highly optimized** bit-vector implementation for enum types. It is one of the most performant collection types in Java.
 
 **Key characteristics**:
-- Backed by a `long[]` (RegularEnumSet uses a single long for <64 values, JumboEnumSet for >64)
+- Backed by a `long[]` (RegularEnumSet uses a single long for &lt;64 values, JumboEnumSet for &gt;64)
 - All operations are bitwise → extremely fast
 - Iteration order follows enum declaration order
 - Cannot have `null` elements
@@ -3015,7 +3015,7 @@ The Java Collections Framework provides a cohesive set of interfaces and impleme
    - D) char
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) string.** String is a reference type (java.lang.String), not a primitive.
 </details>
 
@@ -3026,7 +3026,7 @@ The Java Collections Framework provides a cohesive set of interfaces and impleme
    - D) undefined
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) false.** Class fields are initialized to default values.
 </details>
 
@@ -3037,7 +3037,7 @@ The Java Collections Framework provides a cohesive set of interfaces and impleme
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>
 

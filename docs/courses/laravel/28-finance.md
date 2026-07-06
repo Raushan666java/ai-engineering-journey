@@ -2921,28 +2921,28 @@ class ReconciliationRecord extends Model
    - B) Only ML models
    - C) Rules engine alongside ML models
    - D) Manual review only
-   <details><summary>Answer</summary>**C)** Rules engine for deterministic rules and ML models for probabilistic detection work best together.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Rules engine for deterministic rules and ML models for probabilistic detection work best together.</details>
 
 2. What must AML agents check against?
    - A) Internal database only
    - B) Updated global watchlists and sanction lists
    - C) Social media
    - D) Credit reports
-   <details><summary>Answer</summary>**B)** AML agents must screen against current global watchlists and sanction lists.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** AML agents must screen against current global watchlists and sanction lists.</details>
 
 3. What risk control must trading agents implement?
    - A) Unlimited trading
    - B) Position limits and circuit breakers
    - C) Manual all trades
    - D) No risk controls
-   <details><summary>Answer</summary>**B)** Trading agents must respect position limits and circuit breakers for risk management.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Trading agents must respect position limits and circuit breakers for risk management.</details>
 
 4. Why must KYC agents verify identity documents?
    - A) Marketing purposes
    - B) Regulatory compliance and fraud prevention
    - C) Customer convenience
    - D) Performance metrics
-   <details><summary>Answer</summary>**B)** KYC verification is required for regulatory compliance and fraud prevention.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** KYC verification is required for regulatory compliance and fraud prevention.</details>
 
 ## Summary
 

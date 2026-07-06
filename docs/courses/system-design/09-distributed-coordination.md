@@ -126,7 +126,7 @@ Follower B -> ack(leader)
 Leader: majority (2/3) -> commit
 ```
 
-Zab's key insight: it guarantees **primary order** -- if a leader commits proposal p with zxid z, then any future leader must have all proposals with zxid < z committed before it can accept new proposals.
+Zab's key insight: it guarantees **primary order** -- if a leader commits proposal p with zxid z, then any future leader must have all proposals with zxid &lt; z committed before it can accept new proposals.
 
 #### Znodes
 
@@ -471,7 +471,7 @@ Kubernetes State stored in Etcd:
   /registry/configmaps/my-config -> configuration data
 ```
 
-**Etcd leader election in Kubernetes:** If the Etcd leader fails, the remaining nodes hold a Raft election. During the election (typically < 1 second), the Kubernetes API Server cannot write to Etcd.
+**Etcd leader election in Kubernetes:** If the Etcd leader fails, the remaining nodes hold a Raft election. During the election (typically &lt; 1 second), the Kubernetes API Server cannot write to Etcd.
 
 ```
 Kubernetes etcd cluster (3 nodes):
@@ -635,7 +635,7 @@ sequenceDiagram
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 **Q2:** Which concept is most critical for distributed systems?
 - A) Option A
@@ -643,7 +643,7 @@ sequenceDiagram
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 **Q3:** How does this topic apply to FAANG-level system design?
 - A) Option A
@@ -651,7 +651,7 @@ sequenceDiagram
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 ---
 
@@ -807,11 +807,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -819,7 +819,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -845,7 +845,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -863,23 +863,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'system-design demo')
   const log = new Logger()
@@ -928,7 +928,7 @@ export { Cache, Logger, computeHash, CacheEntry }
    
    Trace AppendEntries for S3 and S4 when the leader replicates index 5. Show nextIndex after each round.
 
-3. **Phi-accrual threshold tuning:** Mean heartbeat interval = 100ms, std = 20ms (normal). Detect failures within 500ms with < 1% false positives. Calculate the appropriate phi threshold.
+3. **Phi-accrual threshold tuning:** Mean heartbeat interval = 100ms, std = 20ms (normal). Detect failures within 500ms with &lt; 1% false positives. Calculate the appropriate phi threshold.
 
 ### Challenge Problem
 

@@ -3594,7 +3594,7 @@ class RealEstateCrmAgent
 - C) Random selection
 - D) Alphabetical sorting
 
-<details><summary>Answer</summary>B) Vector embeddings + preference scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) Vector embeddings + preference scoring&lt;/details&gt;
 
 **Q2:** What technique does the ValuationAgent use for price estimation?
 - A) Random guess
@@ -3602,7 +3602,7 @@ class RealEstateCrmAgent
 - C) Fixed pricing per square foot
 - D) User-provided price
 
-<details><summary>Answer</summary>B) Regression models + market data analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) Regression models + market data analysis&lt;/details&gt;
 
 **Q3:** What does the TourSchedulingAgent coordinate?
 - A) Only property showings
@@ -3610,7 +3610,7 @@ class RealEstateCrmAgent
 - C) Open house events only
 - D) Inspector appointments only
 
-<details><summary>Answer</summary>B) Multi-party schedule coordination between agents, buyers, and sellers</details>
+<details><summary>Answer&lt;/summary&gt;B) Multi-party schedule coordination between agents, buyers, and sellers&lt;/details&gt;
 
 **Q4:** What signals does the LeadScoringAgent use?
 - A) Only email opens
@@ -3618,7 +3618,7 @@ class RealEstateCrmAgent
 - C) Only phone calls
 - D) Only website visits
 
-<details><summary>Answer</summary>B) Engagement tracking + intent prediction</details>
+<details><summary>Answer&lt;/summary&gt;B) Engagement tracking + intent prediction&lt;/details&gt;
 
 ---
 
@@ -3669,7 +3669,7 @@ class RealEstateCrmAgent
 - C) Random selection
 - D) Alphabetical sorting
 
-<details><summary>Answer</summary>B) Vector embeddings + preference scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) Vector embeddings + preference scoring&lt;/details&gt;
 
 **Q2:** What technique does the ValuationAgent use for price estimation?
 - A) Random guess
@@ -3677,7 +3677,7 @@ class RealEstateCrmAgent
 - C) Fixed pricing per square foot
 - D) User-provided price
 
-<details><summary>Answer</summary>B) Regression models + market data analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) Regression models + market data analysis&lt;/details&gt;
 
 **Q3:** What does the TourSchedulingAgent coordinate?
 - A) Only property showings
@@ -3685,7 +3685,7 @@ class RealEstateCrmAgent
 - C) Open house events only
 - D) Inspector appointments only
 
-<details><summary>Answer</summary>B) Multi-party schedule coordination between agents, buyers, and sellers</details>
+<details><summary>Answer&lt;/summary&gt;B) Multi-party schedule coordination between agents, buyers, and sellers&lt;/details&gt;
 
 **Q4:** What signals does the LeadScoringAgent use?
 - A) Only email opens
@@ -3693,7 +3693,7 @@ class RealEstateCrmAgent
 - C) Only phone calls
 - D) Only website visits
 
-<details><summary>Answer</summary>B) Engagement tracking + intent prediction</details>
+<details><summary>Answer&lt;/summary&gt;B) Engagement tracking + intent prediction&lt;/details&gt;
 
 ---
 
@@ -3744,7 +3744,7 @@ class RealEstateCrmAgent
 - C) Random selection
 - D) Alphabetical sorting
 
-<details><summary>Answer</summary>B) Vector embeddings + preference scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) Vector embeddings + preference scoring&lt;/details&gt;
 
 **Q2:** What technique does the ValuationAgent use for price estimation?
 - A) Random guess
@@ -3752,7 +3752,7 @@ class RealEstateCrmAgent
 - C) Fixed pricing per square foot
 - D) User-provided price
 
-<details><summary>Answer</summary>B) Regression models + market data analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) Regression models + market data analysis&lt;/details&gt;
 
 **Q3:** What does the TourSchedulingAgent coordinate?
 - A) Only property showings
@@ -3760,7 +3760,7 @@ class RealEstateCrmAgent
 - C) Open house events only
 - D) Inspector appointments only
 
-<details><summary>Answer</summary>B) Multi-party schedule coordination between agents, buyers, and sellers</details>
+<details><summary>Answer&lt;/summary&gt;B) Multi-party schedule coordination between agents, buyers, and sellers&lt;/details&gt;
 
 **Q4:** What signals does the LeadScoringAgent use?
 - A) Only email opens
@@ -3768,7 +3768,7 @@ class RealEstateCrmAgent
 - C) Only phone calls
 - D) Only website visits
 
-<details><summary>Answer</summary>B) Engagement tracking + intent prediction</details>
+<details><summary>Answer&lt;/summary&gt;B) Engagement tracking + intent prediction&lt;/details&gt;
 
 ---
 
@@ -3819,7 +3819,7 @@ class RealEstateCrmAgent
 - C) Random selection
 - D) Alphabetical sorting
 
-<details><summary>Answer</summary>B) Vector embeddings + preference scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) Vector embeddings + preference scoring&lt;/details&gt;
 
 **Q2:** What technique does the ValuationAgent use for price estimation?
 - A) Random guess
@@ -3827,7 +3827,7 @@ class RealEstateCrmAgent
 - C) Fixed pricing per square foot
 - D) User-provided price
 
-<details><summary>Answer</summary>B) Regression models + market data analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) Regression models + market data analysis&lt;/details&gt;
 
 **Q3:** What does the TourSchedulingAgent coordinate?
 - A) Only property showings
@@ -3835,7 +3835,7 @@ class RealEstateCrmAgent
 - C) Open house events only
 - D) Inspector appointments only
 
-<details><summary>Answer</summary>B) Multi-party schedule coordination between agents, buyers, and sellers</details>
+<details><summary>Answer&lt;/summary&gt;B) Multi-party schedule coordination between agents, buyers, and sellers&lt;/details&gt;
 
 **Q4:** What signals does the LeadScoringAgent use?
 - A) Only email opens
@@ -3843,7 +3843,7 @@ class RealEstateCrmAgent
 - C) Only phone calls
 - D) Only website visits
 
-<details><summary>Answer</summary>B) Engagement tracking + intent prediction</details>
+<details><summary>Answer&lt;/summary&gt;B) Engagement tracking + intent prediction&lt;/details&gt;
 
 ## Summary
 

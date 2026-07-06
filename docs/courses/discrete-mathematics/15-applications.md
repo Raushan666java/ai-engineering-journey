@@ -514,35 +514,35 @@ console.log(knapsack(
    - B) Bipartite matching
    - C) Graph coloring
    - D) Error correction
-   <details><summary>Answer</summary>**B)** Hall's theorem gives necessary and sufficient conditions for a matching covering all vertices of $X$ in a bipartite graph.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Hall's theorem gives necessary and sufficient conditions for a matching covering all vertices of $X$ in a bipartite graph.</details>
 
 2. A code with minimum Hamming distance 5 can correct:
    - A) 0 errors
    - B) 1 error
    - C) 2 errors
    - D) 3 errors
-   <details><summary>Answer</summary>**C)** $d_{\min} \geq 2t + 1 \implies 5 \geq 2t + 1 \implies t \leq 2$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $d_{\min} \geq 2t + 1 \implies 5 \geq 2t + 1 \implies t \leq 2$.</details>
 
 3. The Four Color Theorem applies to:
    - A) Complete graphs
    - B) Planar graphs
    - C) Bipartite graphs
    - D) Trees
-   <details><summary>Answer</summary>**B)** The Four Color Theorem states that every planar graph is 4-colorable.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The Four Color Theorem states that every planar graph is 4-colorable.</details>
 
 4. Regular languages are precisely those recognized by:
    - A) Turing machines
    - B) Pushdown automata
    - C) Finite automata
    - D) Linear-bounded automata
-   <details><summary>Answer</summary>**C)** Regular languages are recognized by finite automata (DFA/NFA).</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Regular languages are recognized by finite automata (DFA/NFA).</details>
 
 5. The Max-Flow Min-Cut Theorem states:
    - A) Maximum flow equals maximum cut
    - B) Maximum flow equals minimum cut
    - C) Flow is always positive
    - D) Cuts are unique
-   <details><summary>Answer</summary>**B)** The maximum flow from source to sink equals the minimum capacity of an $s$-$t$ cut.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The maximum flow from source to sink equals the minimum capacity of an $s$-$t$ cut.</details>
 
 ## Examples
 
@@ -804,11 +804,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -816,7 +816,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -842,7 +842,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -860,23 +860,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()

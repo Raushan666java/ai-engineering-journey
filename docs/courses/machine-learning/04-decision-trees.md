@@ -155,7 +155,7 @@ Classification and Regression Trees (Breiman et al., 1984) improves on ID3:
 - Includes built-in cost-complexity pruning
 - Forms the basis of Random Forests
 
-**Numerical feature splitting**: For a numerical feature $x_j$ with unique values $v_1 < v_2 < \dots < v_m$, CART evaluates all midpoints $(v_k + v_{k+1})/2$ as candidate thresholds and selects the one that minimizes the weighted impurity of the two children.
+**Numerical feature splitting**: For a numerical feature $x_j$ with unique values $v_1 &lt; v_2 < \dots < v_m$, CART evaluates all midpoints $(v_k + v_{k+1})/2$ as candidate thresholds and selects the one that minimizes the weighted impurity of the two children.
 
 ### Splitting for Regression Trees
 
@@ -611,7 +611,7 @@ console.log(`Parent Entropy: ${parentE.toFixed(4)}`);
    C) Mean Squared Error
    D) R-squared
 
-<details><summary>Answer</summary>**B)** Entropy quantifies the disorder in a dataset; lower entropy means purer subsets.
+<details><summary>Answer&lt;/summary&gt;**B)** Entropy quantifies the disorder in a dataset; lower entropy means purer subsets.
 </details>
 
 2. What is the main advantage of Gini Impurity over Entropy for decision tree splitting?
@@ -620,7 +620,7 @@ console.log(`Parent Entropy: ${parentE.toFixed(4)}`);
    C) Gini supports regression tasks
    D) Gini requires less training data
 
-<details><summary>Answer</summary>**B)** Gini Impurity avoids logarithmic calculations, making it faster while producing similar results to entropy.
+<details><summary>Answer&lt;/summary&gt;**B)** Gini Impurity avoids logarithmic calculations, making it faster while producing similar results to entropy.
 </details>
 
 3. Which hyperparameter directly prevents a decision tree from growing too deep and overfitting?
@@ -629,7 +629,7 @@ console.log(`Parent Entropy: ${parentE.toFixed(4)}`);
    C) max_depth
    D) C (regularization strength)
 
-<details><summary>Answer</summary>**C)** max_depth limits how deep the tree can grow, directly controlling model complexity and reducing overfitting.
+<details><summary>Answer&lt;/summary&gt;**C)** max_depth limits how deep the tree can grow, directly controlling model complexity and reducing overfitting.
 </details>
 
 4. Why is a single decision tree considered a high-variance model?
@@ -638,7 +638,7 @@ console.log(`Parent Entropy: ${parentE.toFixed(4)}`);
    C) It makes many assumptions about the data distribution
    D) It can only fit linear decision boundaries
 
-<details><summary>Answer</summary>**B)** Decision trees are unstable ? a small change in training data, especially near the root, cascades through the entire tree structure.
+<details><summary>Answer&lt;/summary&gt;**B)** Decision trees are unstable ? a small change in training data, especially near the root, cascades through the entire tree structure.
 </details>
 
 5. In CART regression trees, what value does a leaf node predict?
@@ -647,7 +647,7 @@ console.log(`Parent Entropy: ${parentE.toFixed(4)}`);
    C) The mode of training targets in that leaf
    D) A random value from the training targets in that leaf
 
-<details><summary>Answer</summary>**B)** CART regression trees predict the mean of the target values in each leaf node, minimizing the MSE within the leaf.
+<details><summary>Answer&lt;/summary&gt;**B)** CART regression trees predict the mean of the target values in each leaf node, minimizing the MSE within the leaf.
 </details>
 
 ---
@@ -827,11 +827,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -839,7 +839,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -865,7 +865,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -883,23 +883,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'ml-algorithms demo')
   const log = new Logger()

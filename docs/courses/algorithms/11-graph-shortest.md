@@ -589,12 +589,12 @@ public class FloydWarshall {
 | **Negative cycle** | `dist[i][i]` becomes negative; check diagonal after completion |
 | **Single node** | dist = [[0]]; trivially correct |
 | **Disconnected graph** | ∞ entries remain for unreachable pairs |
-| **Self-loop** | dist[i][i] initialized to 0; a negative self-loop would make it < 0 |
+| **Self-loop** | dist[i][i] initialized to 0; a negative self-loop would make it &lt; 0 |
 | **Dense graph** | Floyd-Warshall excels here — same Θ(V³) regardless of density |
 
 > **Pro Tip:** Floyd-Warshall's key insight is the k-loop ordering — k must be the outermost loop because d^{(k)} depends on d^{(k-1)}. The in-place update works because values only improve.
 >
-> **Remember:** Floyd-Warshall works for negative edges but not negative cycles. Check diagonal dist[i][i] < 0 afterward to detect cycles.
+> **Remember:** Floyd-Warshall works for negative edges but not negative cycles. Check diagonal dist[i][i] &lt; 0 afterward to detect cycles.
 
 **One-Sentence Takeaway:** Floyd-Warshall computes all-pairs shortest paths in O(V³) using DP over intermediate vertices.
 
@@ -1046,7 +1046,7 @@ public class AStar {
 | Need to detect negative cycles | **Bellman-Ford** |
 | Routing protocol (distributed computation) | **Bellman-Ford** (used in RIP) |
 | Game character pathfinding on grid | **A\*** with Manhattan distance |
-| Very small graph (V < 100) | Any; Floyd-Warshall simplest to code |
+| Very small graph (V &lt; 100) | Any; Floyd-Warshall simplest to code |
 
 ---
 
@@ -1191,7 +1191,7 @@ LinkedIn's "People You May Know" and Facebook's friend recommendation use shorte
 - D) Prim's algorithm
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Bellman-Ford handles negative weights and detects negative cycles. Dijkstra fails with negative weights.
 </details>
 
@@ -1203,7 +1203,7 @@ B) Bellman-Ford handles negative weights and detects negative cycles. Dijkstra f
 - D) O(E log V)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Θ(V³) — triple nested loop over all vertices for the intermediate k and pairs (i,j).
 </details>
 
@@ -1215,7 +1215,7 @@ C) Θ(V³) — triple nested loop over all vertices for the intermediate k and p
 - D) Dominant
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) An admissible heuristic never overestimates the true cost to the goal, guaranteeing A* finds the optimal path.
 </details>
 
@@ -1227,7 +1227,7 @@ B) An admissible heuristic never overestimates the true cost to the goal, guaran
 - D) To detect negative cycles earlier
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) d^{(k)}[i][j] depends on d^{(k-1)}[i][j], d^{(k-1)}[i][k], and d^{(k-1)}[k][j]. Using previous layer values ensures correctness.
 </details>
 
@@ -1239,7 +1239,7 @@ C) d^{(k)}[i][j] depends on d^{(k-1)}[i][j], d^{(k-1)}[i][k], and d^{(k-1)}[k][j
 - D) Whether the graph is connected
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) If any edge can still be relaxed in the Vth pass, a negative cycle is reachable from the source.
 </details>
 

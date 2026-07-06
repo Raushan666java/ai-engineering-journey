@@ -467,7 +467,7 @@ console.log(xorCircuit.evaluate([true, true]));   // false
 - D) NP = co-NP
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** If P = NP, the entire polynomial hierarchy collapses to P.
 </details>
 
@@ -478,7 +478,7 @@ console.log(xorCircuit.evaluate([true, true]));   // false
 - D) BPP = P
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Interactive proofs characterize PSPACE — a landmark result from 1990.
 </details>
 
@@ -489,7 +489,7 @@ console.log(xorCircuit.evaluate([true, true]));   // false
 - D) log n
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** NP = PCP(log n, 1) — proofs verifiable with O(log n) random bits and constant queries.
 </details>
 
@@ -500,7 +500,7 @@ console.log(xorCircuit.evaluate([true, true]));   // false
 - D) Cryptography is impossible
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Razborov-Rudich: any "natural" circuit lower bound proof would imply cryptographic PRGs don't exist.
 </details>
 
@@ -511,7 +511,7 @@ console.log(xorCircuit.evaluate([true, true]));   // false
 - D) Quantum algorithms
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** BPP = probabilistic polynomial time with error = 1/3 on every input.
 </details>
 
@@ -660,14 +660,14 @@ class CookLevinHelper {
     const varName = (t: number, i: number, s: string) => `X${t}_${i}_${s}`;
 
     // Each cell contains exactly one symbol
-    for (let t = 0; t < tmStates; t++) {
-      for (let i = 0; i < tapeLength; i++) {
+    for (let t = 0; t &lt; tmStates; t++) {
+      for (let i = 0; i &lt; tapeLength; i++) {
         const symbols = inputSymbols;
         // At least one symbol
         clauses.push(`(${symbols.map(s => varName(t, i, s)).join(" ? ")})`);
         // At most one symbol (pairwise)
-        for (let a = 0; a < symbols.length; a++) {
-          for (let b = a + 1; b < symbols.length; b++) {
+        for (let a = 0; a &lt; symbols.length; a++) {
+          for (let b = a + 1; b &lt; symbols.length; b++) {
             clauses.push(`(¬${varName(t, i, symbols[a])} ? ¬${varName(t, i, symbols[b])})`);
           }
         }
@@ -676,7 +676,7 @@ class CookLevinHelper {
 
     // Initial configuration
     clauses.push(`(${varName(0, 0, "q0_initial")})`);
-    for (let i = 0; i < tapeLength; i++) {
+    for (let i = 0; i &lt; tapeLength; i++) {
       clauses.push(`(${varName(0, i, inputSymbols[i] || "blank")})`);
     }
 
@@ -877,7 +877,7 @@ class QBF {
     public clauses: Clause[]
   ) {}
 
-  evaluate(assignment: Map<Variable, boolean>): boolean {
+  evaluate(assignment: Map&lt;Variable, boolean&gt;): boolean {
     return this.clauses.every(clause =>
       clause.some(lit => {
         const val = assignment.get(lit.var) || false;
@@ -896,7 +896,7 @@ class QBF {
   private solveRecursive(
     vars: Variable[],
     idx: number,
-    assign: Map<Variable, boolean>
+    assign: Map&lt;Variable, boolean&gt;
   ): boolean {
     if (idx >= vars.length) return this.evaluate(assign);
 

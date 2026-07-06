@@ -118,8 +118,8 @@ $$z - f(a,b) = f_x(a,b)(x - a) + f_y(a,b)(y - b)$$
 
 Define the discriminant $D = f_{xx} f_{yy} - (f_{xy})^2$:
 - If $D > 0$ and $f_{xx} > 0$: local minimum
-- If $D > 0$ and $f_{xx} < 0$: local maximum
-- If $D < 0$: saddle point
+- If $D > 0$ and $f_{xx} &lt; 0$: local maximum
+- If $D &lt; 0$: saddle point
 - If $D = 0$: test is inconclusive
 
 **Hessian Matrix:** $H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{pmatrix}$
@@ -204,7 +204,7 @@ $$\mathbf{F}(x,y,z) = P(x,y,z)\,\mathbf{i} + Q(x,y,z)\,\mathbf{j} + R(x,y,z)\,\m
 $$\nabla \cdot \mathbf{F} = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}$$
 
 - $\nabla \cdot \mathbf{F} > 0$: source (fluid expanding)
-- $\nabla \cdot \mathbf{F} < 0$: sink (fluid contracting)
+- $\nabla \cdot \mathbf{F} &lt; 0$: sink (fluid contracting)
 - $\nabla \cdot \mathbf{F} = 0$: incompressible
 
 **Curl:** A vector measuring rotation at a point:
@@ -541,11 +541,11 @@ function doubleIntegral(
 ): number {
   const dx = (xMax - xMin) / nx;
   let total = 0;
-  for (let i = 0; i < nx; i++) {
+  for (let i = 0; i &lt; nx; i++) {
     const x = xMin + (i + 0.5) * dx;
     const yLow = yMin(x), yHigh = yMax(x);
     const dy = (yHigh - yLow) / ny;
-    for (let j = 0; j < ny; j++) total += f(x, yLow + (j + 0.5) * dy) * dx * dy;
+    for (let j = 0; j &lt; ny; j++) total += f(x, yLow + (j + 0.5) * dy) * dx * dy;
   }
   return total;
 }
@@ -568,13 +568,13 @@ function tripleIntegral(
 ): number {
   const dx = (xMax - xMin) / nx;
   let total = 0;
-  for (let i = 0; i < nx; i++) {
+  for (let i = 0; i &lt; nx; i++) {
     const x = xMin + (i + 0.5) * dx;
     const yl = yMin(x), yh = yMax(x); const dy = (yh - yl) / ny;
-    for (let j = 0; j < ny; j++) {
+    for (let j = 0; j &lt; ny; j++) {
       const y = yl + (j + 0.5) * dy;
       const zl = zMin(x, y), zh = zMax(x, y); const dz = (zh - zl) / nz;
-      for (let k = 0; k < nz; k++) total += f(x, y, zl + (k + 0.5) * dz) * dx * dy * dz;
+      for (let k = 0; k &lt; nz; k++) total += f(x, y, zl + (k + 0.5) * dz) * dx * dy * dz;
     }
   }
   return total;
@@ -711,11 +711,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -723,7 +723,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -749,7 +749,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -767,23 +767,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'engineering-math demo')
   const log = new Logger()

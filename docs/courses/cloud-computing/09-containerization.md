@@ -318,7 +318,7 @@ interface ContainerImage {
 }
 
 class ImageScanner {
-  async scan(imageName: string): Promise<ContainerImage> {
+  async scan(imageName: string): Promise&lt;ContainerImage&gt; {
     return {
       name: imageName,
       tag: "latest",
@@ -340,7 +340,7 @@ class ImageScanner {
   }
 }
 
-async function checkImage(): Promise<void> {
+async function checkImage(): Promise&lt;void&gt; {
   const scanner = new ImageScanner();
   const result = await scanner.scan("web-app:latest");
   console.log("Deployable:", scanner.isDeployable(result));
@@ -479,7 +479,7 @@ volumes:
    - D) Automatic deployment to Kubernetes
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Smaller final image by separating build and runtime dependencies.** Multi-stage builds use one stage with all build tools to compile the application, then copy only the compiled artifacts to a minimal runtime stage ? reducing image size by 5-10x.
 </details>
 
@@ -490,7 +490,7 @@ volumes:
    - D) Ingress
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Service.** Services provide a stable DNS name and IP address for a set of pods, which can change as pods are created and destroyed. Ingress is for HTTP routing; Deployments manage pod lifecycle.
 </details>
 
@@ -501,7 +501,7 @@ volumes:
    - D) There is no difference
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) ECS is AWS-native; EKS uses standard Kubernetes.** ECS uses AWS-proprietary scheduling while EKS runs standard Kubernetes, making workloads portable across clouds and on-premises K8s clusters.
 </details>
 
@@ -512,7 +512,7 @@ volumes:
    - D) The pod is not scheduled
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It can consume all CPU and memory on the node, starving other pods.** Without limits, a container can use unbounded resources. Always set both resource requests (for scheduling) and limits (to prevent resource starvation).
 </details>
 
@@ -523,7 +523,7 @@ volumes:
    - D) Secret
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) NetworkPolicy.** NetworkPolicy controls which pods can communicate with each other at the network level. RBAC controls API access; Pod Security Standards control pod capabilities.
 </details>
 

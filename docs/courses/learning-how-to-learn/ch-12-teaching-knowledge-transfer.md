@@ -1482,7 +1482,7 @@ d) Teaching is not a daily activity — it's weekly at best
 - D) The material was too easy for the student
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Teaching forces active recall, gap detection, reorganization, and elaboration. The teacher engages in multiple encoding processes that the listener doesn't.
 </details>
@@ -1494,7 +1494,7 @@ d) Teaching is not a daily activity — it's weekly at best
 - D) None — analogies are not part of the Feynman technique
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** A — Level 1 uses everyday language and real-world analogies to build a bridge from known to unknown without any technical jargon.
 </details>
@@ -1506,7 +1506,7 @@ d) Teaching is not a daily activity — it's weekly at best
 - D) "Nit: spacing" (style)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Teaching-oriented comments explain the principle behind the fix, helping the author understand WHY, not just WHAT to change. This builds transferable knowledge.
 </details>
@@ -1518,7 +1518,7 @@ d) Teaching is not a daily activity — it's weekly at best
 - D) Give their best guess
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Acknowledging the gap honestly, researching within 24 hours, and following up turns the gap into a permanent learning moment for the mentor.
 </details>
@@ -1530,7 +1530,7 @@ d) Teaching is not a daily activity — it's weekly at best
 - D) Only teach when someone asks you a question
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — A sustainable practice starts at 5 minutes per day (explain one concept to a duck, write one flashcard). Consistency beats intensity, and the habit grows organically from the micro-foundation.
 </details>

@@ -639,12 +639,12 @@ console.log("Percentile:", PercentileCalc.rank([23, 45, 56, 67, 78, 89], 67), "%
 
 class SeriesPatternMatcher {
   static detect(series: number[]): { pattern: string; next: number; formula: string } {
-    if (series.length < 3) return { pattern: "Insufficient terms", next: NaN, formula: "" };
+    if (series.length &lt; 3) return { pattern: "Insufficient terms", next: NaN, formula: "" };
 
     // Check arithmetic progression: a, a+d, a+2d, ...
     const d1 = series[1] - series[0];
     const d2 = series[2] - series[1];
-    if (Math.abs(d1 - d2) < 1e-9 && series.slice(1).every((v, i) => Math.abs(v - series[i] - d1) < 1e-9)) {
+    if (Math.abs(d1 - d2) &lt; 1e-9 && series.slice(1).every((v, i) =&gt; Math.abs(v - series[i] - d1) &lt; 1e-9)) {
       return { pattern: "Arithmetic Progression", next: series[series.length - 1] + d1, formula: `a_n = ${series[0]} + (n-1)?${d1}` };
     }
 
@@ -652,14 +652,14 @@ class SeriesPatternMatcher {
     if (series[0] !== 0) {
       const r1 = series[1] / series[0];
       const r2 = series[2] / series[1];
-      if (Math.abs(r1 - r2) < 1e-9 && series.slice(1).every((v, i) => Math.abs(v / series[i] - r1) < 1e-9)) {
+      if (Math.abs(r1 - r2) &lt; 1e-9 && series.slice(1).every((v, i) =&gt; Math.abs(v / series[i] - r1) &lt; 1e-9)) {
         return { pattern: "Geometric Progression", next: series[series.length - 1] * r1, formula: `a_n = ${series[0]} ? ${r1}^(n-1)` };
       }
     }
 
     // Check Fibonacci-like: each term = sum of previous two
     let fibLike = true;
-    for (let i = 2; i < series.length; i++) {
+    for (let i = 2; i &lt; series.length; i++) {
       if (Math.abs(series[i] - (series[i - 1] + series[i - 2])) > 1e-9) { fibLike = false; break; }
     }
     if (fibLike) {
@@ -678,10 +678,10 @@ class SeriesPatternMatcher {
     if (evenIdx.length >= 3) {
       const ed = evenIdx[1] - evenIdx[0];
       const ed2 = evenIdx[2] - evenIdx[1];
-      if (Math.abs(ed - ed2) < 1e-9) {
+      if (Math.abs(ed - ed2) &lt; 1e-9) {
         const od = oddIdx[1] - oddIdx[0];
         const od2 = oddIdx[2] - oddIdx[1];
-        if (Math.abs(od - od2) < 1e-9) {
+        if (Math.abs(od - od2) &lt; 1e-9) {
           return { pattern: "Alternating (two APs)", next: series.length % 2 === 0 ? evenIdx[evenIdx.length - 1] + ed : oddIdx[oddIdx.length - 1] + od, formula: "Two interleaved arithmetic sequences" };
         }
       }
@@ -692,10 +692,10 @@ class SeriesPatternMatcher {
 
   static differenceTable(series: number[]): number[][] {
     const table: number[][] = [series];
-    for (let level = 1; level < series.length; level++) {
+    for (let level = 1; level &lt; series.length; level++) {
       const prev = table[level - 1];
       const row: number[] = [];
-      for (let i = 0; i < prev.length - 1; i++) row.push(prev[i + 1] - prev[i]);
+      for (let i = 0; i &lt; prev.length - 1; i++) row.push(prev[i + 1] - prev[i]);
       table.push(row);
       if (row.every(v => v === row[0])) break;
     }
@@ -737,7 +737,7 @@ class ProfitLossCalc {
 // -----------------------------------------------------
 
 class ProbabilityCalc {
-  static factorial(n: number): number { return n <= 1 ? 1 : n * this.factorial(n - 1); }
+  static factorial(n: number): number { return n &lt;= 1 ? 1 : n * this.factorial(n - 1); }
   static nPr(n: number, r: number): number { return this.factorial(n) / this.factorial(n - r); }
   static nCr(n: number, r: number): number { return this.factorial(n) / (this.factorial(r) * this.factorial(n - r)); }
 
@@ -755,7 +755,7 @@ class ProbabilityCalc {
     let favorable = 0;
     const count = (d: number, t: number) => {
       if (d === 0) { if (t === 0) favorable++; return; }
-      for (let i = 1; i <= 6; i++) count(d - 1, t - i);
+      for (let i = 1; i &lt;= 6; i++) count(d - 1, t - i);
     };
     count(dice, target);
     return favorable / total;

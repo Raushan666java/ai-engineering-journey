@@ -443,7 +443,7 @@ Positions: 0=10, 1=20, 2=30, want to insert BEFORE position 2 (i.e., between 20 
 | Step | i | current addr | current->data | current->next | Action |
 |------|---|-------------|---------------|---------------|--------|
 | Init | — | 0x1000 | 10 | 0x2000 | start |
-| Loop | 0 | 0x2000 | 20 | 0x3000 | advance (i < 1) |
+| Loop | 0 | 0x2000 | 20 | 0x3000 | advance (i &lt; 1) |
 | Loop done | — | 0x2000 | 20 | 0x3000 | stop at position-1=1 |
 | Insert | — | — | — | — | new_node->next=0x3000; current->next=new_node |
 
@@ -1518,7 +1518,7 @@ DNode *insert_beginning(DNode *head, int value)
 }
 ```
 
-**Dry run**: Insert 5 at beginning of [10 <-> 20 <-> NULL]
+**Dry run**: Insert 5 at beginning of [10 &lt;-> 20 <-&gt; NULL]
 
 | Step | Pointer | Value | Action |
 |------|---------|-------|--------|
@@ -1527,7 +1527,7 @@ DNode *insert_beginning(DNode *head, int value)
 | 3 | head->prev | 0x4000 (n's addr) | head was 0x1000 (10) |
 | 4 | head returned | 0x4000 | new head = n |
 
-Result: [5 <-> 10 <-> 20 <-> NULL]
+Result: [5 &lt;-> 10 <-&gt; 20 &lt;-> NULL]
 
 #### Complexity
 
@@ -1597,7 +1597,7 @@ DELETE(head, value):
     return head
 ```
 
-#### Dry Run: Delete 30 from [10 <-> 20 <-> 30 <-> 40 <-> NULL]
+#### Dry Run: Delete 30 from [10 &lt;-> 20 <-&gt; 30 &lt;-> 40 <-&gt; NULL]
 
 | Step | cur addr | cur->data | Action |
 |------|-----------|-----------|--------|
@@ -2617,7 +2617,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    C) O(n)
    D) O(n²)
 
-<details><summary>Answer</summary>**C)** Search requires traversing from the head, potentially visiting all n nodes. There's no random access.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Search requires traversing from the head, potentially visiting all n nodes. There's no random access.</details>
 
 2. What advantage does a doubly linked list have over a singly linked list in deletion?
    A) Less memory
@@ -2625,7 +2625,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    C) Faster search
    D) Smaller code
 
-<details><summary>Answer</summary>**B)** With a pointer to the node, the previous node is accessible via `prev`, enabling O(1) deletion without finding the predecessor.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** With a pointer to the node, the previous node is accessible via `prev`, enabling O(1) deletion without finding the predecessor.</details>
 
 3. How does a circular linked list know when traversal is complete?
    A) It never completes
@@ -2633,7 +2633,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    C) When `current->next == NULL`
    D) It uses a counter
 
-<details><summary>Answer</summary>**B)** Traversal completes when the current pointer returns to the head node after the first pass.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Traversal completes when the current pointer returns to the head node after the first pass.</details>
 
 4. Why does Floyd's cycle detection algorithm use a slow and fast pointer?
    A) To find the length of the list
@@ -2641,7 +2641,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    C) To reverse the list in O(n)
    D) To find the maximum element
 
-<details><summary>Answer</summary>**B)** The fast pointer (2 steps/iter) will eventually catch up to the slow pointer (1 step/iter) if there is a cycle, proving its existence. The distance between them decreases by 1 each iteration modulo the cycle length.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The fast pointer (2 steps/iter) will eventually catch up to the slow pointer (1 step/iter) if there is a cycle, proving its existence. The distance between them decreases by 1 each iteration modulo the cycle length.</details>
 
 5. What is the space complexity of iterative list reversal?
    A) O(1)
@@ -2649,7 +2649,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    C) O(n)
    D) O(n²)
 
-<details><summary>Answer</summary>**A)** Iterative reversal uses only three pointer variables (`prev`, `current`, `next`), regardless of list size. O(1) space.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** Iterative reversal uses only three pointer variables (`prev`, `current`, `next`), regardless of list size. O(1) space.</details>
 
 6. Which operation is O(1) in a singly linked list but O(n) in an array?
    A) Access by index
@@ -2657,7 +2657,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    C) Search for a value
    D) Sort
 
-<details><summary>Answer</summary>**B)** Inserting at the beginning of a linked list requires only updating the head pointer. An array must shift all elements — O(n).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Inserting at the beginning of a linked list requires only updating the head pointer. An array must shift all elements — O(n).</details>
 
 7. What does the slow/fast pointer technique find besides the middle?
    A) The maximum value
@@ -2665,7 +2665,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    C) The length of the list
    D) The minimum value
 
-<details><summary>Answer</summary>**B)** The same technique (Floyd's algorithm) detects cycles. Slow moves 1 step, fast moves 2 steps. If they meet, a cycle exists.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The same technique (Floyd's algorithm) detects cycles. Slow moves 1 step, fast moves 2 steps. If they meet, a cycle exists.</details>
 
 8. How much extra memory does a singly linked list node use compared to an array element (64-bit)?
    A) 0 bytes
@@ -2673,7 +2673,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    C) 8 bytes (the next pointer)
    D) 16 bytes
 
-<details><summary>Answer</summary>**C)** On a 64-bit system, the next pointer is 8 bytes. Add padding and the struct is typically 16 bytes total (4 for data + 4 padding + 8 for pointer).</details>
+<details><summary>Answer&lt;/summary&gt;**C)** On a 64-bit system, the next pointer is 8 bytes. Add padding and the struct is typically 16 bytes total (4 for data + 4 padding + 8 for pointer).</details>
 
 ---
 

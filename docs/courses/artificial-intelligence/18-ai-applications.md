@@ -190,7 +190,7 @@ for f in result['findings']:
 
 ### Edge Cases
 
-- **Rare pathologies:** Diseases with <100 training examples are poorly detected → solution: few-shot learning with prototypical networks
+- **Rare pathologies:** Diseases with &lt;100 training examples are poorly detected → solution: few-shot learning with prototypical networks
 - **Domain shift:** X-rays from portable machines look different from fixed machines → monitor input distribution with OOD detectors
 - **Artifact confusion:** Patient motion, jewelry, or implant artifacts misclassified as pathology → solution: artifact detection preprocessor
 - **Multi-morbidity:** Patients with multiple simultaneous conditions confuse single-label classifiers → solution: multi-label architecture
@@ -444,7 +444,7 @@ for obj in result["objects"][:5]:
 
 | Metric | Traditional | AI-Powered | Improvement |
 |--------|-------------|------------|-------------|
-| Traffic fatalities (US annual) | ~40,000 | Target: <1,000 (AV) | 97% reduction potential |
+| Traffic fatalities (US annual) | ~40,000 | Target: &lt;1,000 (AV) | 97% reduction potential |
 | Traffic flow efficiency | 55 mph avg | 70+ mph (coordinated) | +27% throughput |
 | Parking space utilization | 60% | 90% (AI-guided) | +30% |
 | Last-mile delivery cost | $5.50/package | $1.20 (autonomous) | 78% reduction |
@@ -1315,7 +1315,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 |-----------|-------------------|-----------------------|
 | Data | Fixed, curated dataset | Streaming, noisy, missing labels |
 | Metric | Single accuracy/AUC | Business metrics (conversion, retention, cost saved) |
-| Latency | Unbounded | P99 < 200ms |
+| Latency | Unbounded | P99 &lt; 200ms |
 | Throughput | Batch, single-threaded | Thousands of QPS, auto-scaling |
 | Explainability | Optional | Required for compliance and debugging |
 | Monitoring | None | Data drift, concept drift, model degradation |
@@ -1355,7 +1355,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 **Answer:**
 
 1. **Problem Framing:** Convert business problem to ML problem. "Detect fraud" → "Binary classifier on transaction sequences with temporal features."
-2. **Feasibility Study:** Check data availability, minimum viable performance, and success/failure criteria. If random baseline outperforms heuristics by <5%, it may not be worth the MLOps cost.
+2. **Feasibility Study:** Check data availability, minimum viable performance, and success/failure criteria. If random baseline outperforms heuristics by &lt;5%, it may not be worth the MLOps cost.
 3. **Data Pipeline:** Build reliable data ingestion, validation, labeling (human + automated), versioning, and feature store. Typically 60-80% of project time.
 4. **Model Development:** Feature engineering, baseline model, iterative improvement with cross-validation, hyperparameter tuning, ensemble exploration.
 5. **Offline Evaluation:** Evaluate on held-out test set, perform error analysis, slice-based evaluation (performance per segment), calibration check, fairness audit.
@@ -1441,7 +1441,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 - **Suggestion ranking:** Multi-objective optimization over correctness (must be right), helpfulness (user acceptance rate), and intrusiveness (don't suggest on every word)
 
 **Production challenges:**
-- Latency: P99 < 300ms for entire pipeline including rendering suggestions inline
+- Latency: P99 &lt; 300ms for entire pipeline including rendering suggestions inline
 - Privacy: Enterprise deployments require on-premise model variants with zero data leaving corporate network
 - Scale: Process 3+ trillion suggestions annually across 30M+ daily active users
 - Language: Supports English dialects (US, UK, AU, CA) and expanding to other languages via multilingual transformers
@@ -1459,7 +1459,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 - **Security scanner:** Real-time vulnerability detection for OWASP Top-10 patterns → blocks high-risk suggestions for API keys, SQL injection, command injection.
 
 **Production challenges:**
-- **Latency:** Suggestions must appear before the next keystroke → target < 500ms for first token, < 2s for full multi-line suggestion
+- **Latency:** Suggestions must appear before the next keystroke → target &lt; 500ms for first token, < 2s for full multi-line suggestion
 - **Context window:** The entire repository is too large for context → learned retrieval picks the most relevant snippets
 - **Fairness:** Models perform better on popular languages (JS, Python, TS) than niche ones (Haskell, Racket) → adaptive context and specialized fine-tuning per language tier
 - **Security:** 30-40% of generated code may contain vulnerabilities (suggestions are not vetted for security) → integrated security scanner and user responsibility disclaimer
@@ -1517,7 +1517,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 - C) Agriculture → no regulatory oversight
 - D) Education → every curriculum must be government-approved
 
-<details><summary>Answer</summary>B) Healthcare AI faces the highest regulatory bar → FDA approval requires prospective clinical trials, demonstrated safety and efficacy, and post-market surveillance. The average FDA clearance for AI medical devices takes 3-7 years.</details>
+<details><summary>Answer&lt;/summary&gt;B) Healthcare AI faces the highest regulatory bar → FDA approval requires prospective clinical trials, demonstrated safety and efficacy, and post-market surveillance. The average FDA clearance for AI medical devices takes 3-7 years.</details>
 
 **Q2:** In fraud detection, why is adversarial dynamics considered the primary challenge?
 - A) The data is encrypted and unreadable
@@ -1525,7 +1525,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 - C) Banks refuse to share transaction data
 - D) Regulatory compliance forbids automated blocking
 
-<details><summary>Answer</summary>B) Fraud detection is an adversarial game → fraudsters run probe transactions to discover decision boundaries, then adapt their patterns. This creates a constant arms race requiring daily retraining, adversarial feature engineering, and ensemble models that are hard to probe.</details>
+<details><summary>Answer&lt;/summary&gt;B) Fraud detection is an adversarial game → fraudsters run probe transactions to discover decision boundaries, then adapt their patterns. This creates a constant arms race requiring daily retraining, adversarial feature engineering, and ensemble models that are hard to probe.</details>
 
 **Q3:** AlphaFold's primary impact on drug discovery is best described as:
 - A) Replacing all wet-lab experiments with simulations
@@ -1533,7 +1533,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 - C) Automating clinical trial patient recruitment
 - D) Generating new drug molecules from scratch
 
-<details><summary>Answer</summary>B) AlphaFold predicts protein 3D structure → the folded shape determines protein function and drug-binding sites. By reducing structure determination from years to minutes, it enables rapid identification of druggable pockets, virtual screening, and rational drug design.</details>
+<details><summary>Answer&lt;/summary&gt;B) AlphaFold predicts protein 3D structure → the folded shape determines protein function and drug-binding sites. By reducing structure determination from years to minutes, it enables rapid identification of druggable pockets, virtual screening, and rational drug design.</details>
 
 **Q4:** What is the "last mile problem" in AI deployment?
 - A) The final training epoch before convergence
@@ -1541,7 +1541,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 - C) Edge devices with poor connectivity
 - D) The final 5% of accuracy improvement
 
-<details><summary>Answer</summary>B) The algorithm/ model is only ~10% of the effort for a production AI system. The remaining 90% involves building data pipelines, feature engineering, model serving infrastructure, monitoring, CI/CD, testing, documentation, compliance, and maintenance → the "last mile" to production.</details>
+<details><summary>Answer&lt;/summary&gt;B) The algorithm/ model is only ~10% of the effort for a production AI system. The remaining 90% involves building data pipelines, feature engineering, model serving infrastructure, monitoring, CI/CD, testing, documentation, compliance, and maintenance → the "last mile" to production.</details>
 
 **Q5:** Waymo's autonomous driving architecture handles uncertainty through:
 - A) Single best-guess planning with conservative driving
@@ -1549,7 +1549,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 - C) Complete reliance on HD maps with no real-time perception
 - D) Human remote operators for every decision
 
-<details><summary>Answer</summary>B) Waymo's system handles uncertainty by predicting multiple possible futures for each agent (multi-modal trajectory prediction), planning over probability-weighted outcomes, and maintaining a redundant safety monitor that can execute minimal risk maneuvers independently of the primary planner.</details>
+<details><summary>Answer&lt;/summary&gt;B) Waymo's system handles uncertainty by predicting multiple possible futures for each agent (multi-modal trajectory prediction), planning over probability-weighted outcomes, and maintaining a redundant safety monitor that can execute minimal risk maneuvers independently of the primary planner.</details>
 
 **Q6:** When deploying AI in high-stakes domains, the recommended approach is:
 - A) Fully autonomous AI with no human involvement
@@ -1557,7 +1557,7 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 - C) AI-generated suggestions with zero human review
 - D) Rule-based systems only
 
-<details><summary>Answer</summary>B) High-stakes AI should use a graduated confidence approach: low-confidence predictions → flag for human review; medium-confidence → preview with human confirmation; high-confidence → auto-approve with audit trail. Ensemble models reduce variance, and OOD detection catches inputs the model cannot handle.</details>
+<details><summary>Answer&lt;/summary&gt;B) High-stakes AI should use a graduated confidence approach: low-confidence predictions → flag for human review; medium-confidence → preview with human confirmation; high-confidence → auto-approve with audit trail. Ensemble models reduce variance, and OOD detection catches inputs the model cannot handle.</details>
 
 ## Chapter Summary
 

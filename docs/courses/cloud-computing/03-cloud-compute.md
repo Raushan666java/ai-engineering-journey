@@ -531,7 +531,7 @@ export { launchInstances, configureScaling, createLoadBalancer };
    - D) Dedicated Hosts
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Spot/Preemptible Instances.** These use spare cloud capacity at up to 90% discount but can be reclaimed by the provider with minimal notice (30 seconds to 2 minutes). They're ideal for fault-tolerant, stateless workloads.
 </details>
 
@@ -542,7 +542,7 @@ export { launchInstances, configureScaling, createLoadBalancer };
    - D) L7 only works with AWS
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) L7 inspects HTTP headers for intelligent routing; L4 routes by IP and port only.** L7 load balancers can route based on URL path, host header, cookies, and HTTP methods. L4 load balancers offer lower latency and are protocol-agnostic.
 </details>
 
@@ -553,7 +553,7 @@ export { launchInstances, configureScaling, createLoadBalancer };
    - D) RAM disk
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Persistent Block Storage.** Instance store data is lost when the VM stops or terminates. Persistent block storage survives VM lifecycle events and supports snapshots, replication, and independent resizing ? essential for databases.
 </details>
 
@@ -564,7 +564,7 @@ export { launchInstances, configureScaling, createLoadBalancer };
    - D) Predictive Scaling
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Scheduled Scaling.** Scheduled scaling allows you to set specific times to increase or decrease capacity, making it ideal for predictable traffic patterns like morning rush.
 </details>
 
@@ -575,7 +575,7 @@ export { launchInstances, configureScaling, createLoadBalancer };
    - D) Unlimited
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) 7.** Spread placement groups are limited to 7 running instances per Availability Zone because each instance runs on distinct hardware, ensuring maximum fault isolation.
 </details>
 

@@ -1357,7 +1357,7 @@ public class GoogleRandomPickDemo {
 **Answer:** In my sophomore year, I attempted to build a full-stack application without proper requirements gathering. I spent two weeks building features the user never needed. The failure taught me to validate assumptions early → write user stories, create wireframes, and get user feedback before writing code. I now apply this approach to every project, starting with a simple prototype or MVP.
 
 #### Q3: How do you handle ambiguity when there are no clear requirements?
-**Answer:** I break the problem into smaller pieces and research analogous solutions. For example, during an internship, I was asked to "improve API response times" without specific targets. I first instrumented the API to gather latency data, identified the slowest endpoints, benchmarked against industry standards for each operation type, and set concrete targets (p95 < 200ms for reads). I then iterated on optimizations, measuring at each step.
+**Answer:** I break the problem into smaller pieces and research analogous solutions. For example, during an internship, I was asked to "improve API response times" without specific targets. I first instrumented the API to gather latency data, identified the slowest endpoints, benchmarked against industry standards for each operation type, and set concrete targets (p95 &lt; 200ms for reads). I then iterated on optimizations, measuring at each step.
 
 ---
 
@@ -1705,7 +1705,7 @@ public class RemoveDuplicatesII {
 ### Problem 9: Find All Duplicates in an Array (Microsoft, 2024)
 **Difficulty:** Medium
 
-**Problem Statement:** Given an integer array where 1 <= nums[i] <= n (n is array size), some elements appear twice and others once. Find all elements that appear twice without using extra space.
+**Problem Statement:** Given an integer array where 1 &lt;= nums[i] <= n (n is array size), some elements appear twice and others once. Find all elements that appear twice without using extra space.
 
 ```java
 import java.util.ArrayList;
@@ -2520,7 +2520,7 @@ public class FindCelebrity {
 ### Problem 7: Stock Span Problem (Flipkart, 2024)
 **Difficulty:** Medium
 
-**Problem Statement:** Given an array of stock prices, calculate the span for each day. Span is the maximum number of consecutive days (ending today) where price was <= current price.
+**Problem Statement:** Given an array of stock prices, calculate the span for each day. Span is the maximum number of consecutive days (ending today) where price was &lt;= current price.
 
 ```java
 import java.util.Arrays;
@@ -2591,7 +2591,7 @@ public class GroupShiftedStrings {
 ### Problem 2: Time-Based Key-Value Store (Uber, 2024)
 **Difficulty:** Medium
 
-**Problem Statement:** Design a time-based key-value store that supports `set(key, value, timestamp)` and `get(key, timestamp)` which returns the value with the greatest timestamp <= given timestamp.
+**Problem Statement:** Design a time-based key-value store that supports `set(key, value, timestamp)` and `get(key, timestamp)` which returns the value with the greatest timestamp &lt;= given timestamp.
 
 ```java
 import java.util.*;
@@ -3288,7 +3288,7 @@ public class RideMatcher {
 ### Problem 2: Find All Duplicates in an Array (Paytm, 2024)
 **Difficulty:** Medium
 
-**Problem Statement:** Given an integer array where 1 <= a[i] <= n (n is array size), some elements appear twice and others once. Find all elements that appear twice without extra space.
+**Problem Statement:** Given an integer array where 1 &lt;= a[i] <= n (n is array size), some elements appear twice and others once. Find all elements that appear twice without extra space.
 
 ```java
 import java.util.ArrayList;
@@ -4796,7 +4796,7 @@ public class LongestIncreasingSubsequence {
 ### Problem 3: Design a Version Comparison System (Adobe, 2023)
 **Difficulty:** Medium
 
-**Problem Statement:** Compare two version strings (e.g., "1.2.3" and "1.10.1"). Return 1 if version1 > version2, -1 if version1 < version2, and 0 if equal.
+**Problem Statement:** Compare two version strings (e.g., "1.2.3" and "1.10.1"). Return 1 if version1 > version2, -1 if version1 &lt; version2, and 0 if equal.
 
 ```java
 public class VersionCompare {
@@ -5870,7 +5870,7 @@ public class NumberOfIslands {
 - C) Google
 - D) Wipro
 
-<details><summary><b>Answer</b></summary>C) Google â€“ FAANG companies frequently test system design even at intern level.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;C) Google â€“ FAANG companies frequently test system design even at intern level.</details>
 
 **Q2:** What is the most common data structure asked across all company types?
 
@@ -5879,7 +5879,7 @@ public class NumberOfIslands {
 - C) Segment Tree
 - D) Red-Black Tree
 
-<details><summary><b>Answer</b></summary>B) Arrays and Strings â€“ they form the foundation of almost every coding interview across all company tiers.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;B) Arrays and Strings â€“ they form the foundation of almost every coding interview across all company tiers.</details>
 
 **Q3:** Which service-based company has the most rigorous aptitude section?
 
@@ -5888,7 +5888,7 @@ public class NumberOfIslands {
 - C) Wipro
 - D) Infosys
 
-<details><summary><b>Answer</b></summary>B) TCS NQT â€“ the TCS National Qualifier Test has one of the most comprehensive aptitude sections among service-based companies.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;B) TCS NQT â€“ the TCS National Qualifier Test has one of the most comprehensive aptitude sections among service-based companies.</details>
 
 **Q4:** What percentage of top product company interviews include at least one medium-difficulty DP problem?
 
@@ -5897,7 +5897,7 @@ public class NumberOfIslands {
 - C) About 50%
 - D) Over 75%
 
-<details><summary><b>Answer</b></summary>C) About 50% â€“ DP is one of the most frequently tested patterns in product company interviews.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;C) About 50% â€“ DP is one of the most frequently tested patterns in product company interviews.</details>
 
 ## One-Sentence Takeaway
 

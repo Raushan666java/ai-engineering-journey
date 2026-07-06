@@ -1418,7 +1418,7 @@ data[-1] is out of bounds!
 
 | Operation | Time | Why |
 |-----------|------|-----|
-| Bound check with wrapper | O(1) | Two comparisons: index < 0 OR index >= size |
+| Bound check with wrapper | O(1) | Two comparisons: index &lt; 0 OR index &gt;= size |
 | Unchecked access | O(1) | Raw pointer arithmetic — fastest but dangerous |
 
 ### 6.10.5 Historical Impact
@@ -1980,7 +1980,7 @@ Rotation² (should be identity except first two rows negated):
    C) 30
    D) Compiler error
 
-<details><summary>Answer</summary>**A)** Partially initialized elements are zero-filled.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** Partially initialized elements are zero-filled.</details>
 
 2. Why does `void f(int a[]) { printf("%zu", sizeof(a)); }` print the wrong size?
    A) Compiler bug
@@ -1988,7 +1988,7 @@ Rotation² (should be identity except first two rows negated):
    C) `sizeof` is out of scope
    D) Array must be global
 
-<details><summary>Answer</summary>**B)** Array parameters decay to pointers; `sizeof(a)` returns the pointer size (4 or 8 bytes), not the array size.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Array parameters decay to pointers; `sizeof(a)` returns the pointer size (4 or 8 bytes), not the array size.</details>
 
 3. How is `int a[2][3]` laid out in memory?
    A) Column by column
@@ -1996,7 +1996,7 @@ Rotation² (should be identity except first two rows negated):
    C) Random order
    D) Zigzag pattern
 
-<details><summary>Answer</summary>**B)** C uses row-major order: `a[0][0], a[0][1], a[0][2], a[1][0], a[1][1], a[1][2]`.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** C uses row-major order: `a[0][0], a[0][1], a[0][2], a[1][0], a[1][1], a[1][2]`.</details>
 
 4. What is the output of `printf("%zu", sizeof(int *p[5]));` on a 64-bit system?
    A) 4
@@ -2004,7 +2004,7 @@ Rotation² (should be identity except first two rows negated):
    C) 40
    D) 8
 
-<details><summary>Answer</summary>**C)** `int *p[5]` is an array of 5 pointers, each 8 bytes → 40 bytes.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `int *p[5]` is an array of 5 pointers, each 8 bytes → 40 bytes.</details>
 
 5. Which is a valid use of a VLA?
    A) `static int arr[n];`
@@ -2012,7 +2012,7 @@ Rotation² (should be identity except first two rows negated):
    C) `int arr[n];` inside a function
    D) `int arr[n];` at file scope
 
-<details><summary>Answer</summary>**C)** VLAs are allowed in function scope only, cannot be static, and cannot have initializers.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** VLAs are allowed in function scope only, cannot be static, and cannot have initializers.</details>
 
 ## Summary
 

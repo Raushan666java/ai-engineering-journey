@@ -461,7 +461,7 @@ Test your understanding with these quick questions.
 - C) Promise ? process.nextTick ? setTimeout
 - D) setTimeout ? nextTick ? Promise
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `process.nextTick` runs before Promise microtasks, which run before the timer phase (setTimeout).**
 
@@ -474,7 +474,7 @@ Test your understanding with these quick questions.
 - C) Middleware runs from last to first
 - D) The order does not matter
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Express middleware executes in the order it is registered. Place route-specific middleware before routes and error middleware last.**
 
@@ -487,7 +487,7 @@ Test your understanding with these quick questions.
 - C) It is registered with `app.error()`
 - D) It runs before route handlers
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Error-handling middleware has exactly four parameters. Express identifies it by checking `fn.length === 4`.**
 
@@ -500,7 +500,7 @@ Test your understanding with these quick questions.
 - C) Validates JSON schemas
 - D) Compresses JSON responses
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **A) `express.json()` parses incoming requests with `Content-Type: application/json` and makes the parsed data available on `req.body`.**
 
@@ -708,11 +708,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -720,7 +720,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

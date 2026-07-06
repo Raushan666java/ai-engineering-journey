@@ -17,7 +17,8 @@ flowchart LR
     C --> D[Best Practices]
 ```
 
-### Q16: How do you implement auditing (created_at, updated_at) in JPA?
+### Q16: How do you implement auditing (created_at, updated_at) in JPA?
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -732,7 +733,7 @@ The most impactful single change: **enable slow query logging in both Hibernate 
    - D) equals() is for primitives, == is for objects
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) equals() compares logical equality (overridable), == compares reference equality.**
 </details>
 
@@ -743,7 +744,7 @@ The most impactful single change: **enable slow query logging in both Hibernate 
    - D) HashSet
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
 </details>
 
@@ -754,6 +755,6 @@ The most impactful single change: **enable slow query logging in both Hibernate 
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>

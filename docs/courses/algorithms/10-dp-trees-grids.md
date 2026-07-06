@@ -417,7 +417,7 @@ A BST is a binary tree where for every node: all values in the left subtree are 
 1. Start at the root.
 2. If current node is null, return false (not found).
 3. If current node's value equals target, return true.
-4. If target < current node's value, search left subtree.
+4. If target &lt; current node's value, search left subtree.
 5. Else search right subtree.
 
 **Pseudocode:**
@@ -434,7 +434,7 @@ BST_SEARCH(root, key):
 | Step | Current Node | Comparison | Action |
 |------|-------------|------------|--------|
 | 1 | 50 | 60 > 50 | Go right |
-| 2 | 70 | 60 < 70 | Go left |
+| 2 | 70 | 60 &lt; 70 | Go left |
 | 3 | 60 | 60 == 60 | Found! |
 
 **C++ Implementation:**
@@ -474,7 +474,7 @@ boolean searchBST(Node root, int key) {
 
 **Algorithm Steps:**
 1. If tree is empty, create a new node and return it as root.
-2. If key < current node's value, recursively insert into left subtree.
+2. If key &lt; current node's value, recursively insert into left subtree.
 3. If key > current node's value, recursively insert into right subtree.
 4. Return the unchanged node pointer.
 
@@ -494,8 +494,8 @@ BST_INSERT(root, key):
 | Step | Current Node | Comparison | Action |
 |------|-------------|------------|--------|
 | 1 | 50 | 55 > 50 | Go right |
-| 2 | 70 | 55 < 70 | Go left |
-| 3 | 60 | 55 < 60 | Go left |
+| 2 | 70 | 55 &lt; 70 | Go left |
+| 3 | 60 | 55 &lt; 60 | Go left |
 | 4 | null | — | Insert 55 as left child of 60 |
 
 After: `50 → 70 → 60 → 55`
@@ -900,7 +900,7 @@ A **Fenwick Tree** is a simpler alternative to the segment tree for **prefix sum
 Sum(l, r) = prefixSum(r) - prefixSum(l-1).
 
 **Algorithm Steps (Point Update):**
-1. While i <= n: BIT[i] += delta, i += i & -i.
+1. While i &lt;= n: BIT[i] += delta, i += i & -i.
 
 **Pseudocode:**
 ```
@@ -2035,15 +2035,15 @@ DP with bitmasking is used for problems where we need to track subsets of elemen
 dp[mask][v] = \min_{u \in mask, u \neq v} (dp[mask \setminus \{v\}][u] + d[u][v])
 \]
 
-Base case: dp[1 << 0][0] = 0.
+Base case: dp[1 &lt;< 0][0] = 0.
 
 **Algorithm Steps:**
 1. Initialize dp[1][0] = 0, all others = INF.
-2. For mask from 1 to (1<<n)-1:
+2. For mask from 1 to (1&lt;<n)-1:
    For each u in mask:
      If dp[mask][u] is INF, skip.
      For each v not in mask:
-       newMask = mask | (1 << v)
+       newMask = mask | (1 &lt;< v)
        dp[newMask][v] = min(dp[newMask][v], dp[mask][u] + dist[u][v])
 3. Answer = min over v of dp[fullMask][v] + dist[v][0].
 
@@ -2174,7 +2174,7 @@ A Hamiltonian path visits every vertex exactly once (no return to start). The DP
 
 > **Pro Tip:** DP with bitmasking has O(n²·2ⁿ) complexity — feasible for n ≤ 20. For larger n, use branch-and-bound or approximation algorithms.
 
-> **Remember:** Always initialize dp[1 << start][start] = 0. The mask represents which cities have been visited, not the tour order. Extract the visited bit by checking (mask >> v) & 1.
+> **Remember:** Always initialize dp[1 &lt;< start][start] = 0. The mask represents which cities have been visited, not the tour order. Extract the visited bit by checking (mask &gt;> v) & 1.
 
 **One-Sentence Takeaway:** Bitmask DP solves TSP in O(n²·2ⁿ) by tracking the visited set as a bitmask and the current endpoint city as the second state dimension.
 
@@ -2442,7 +2442,7 @@ flowchart LR
 - D) Level-order
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Post-order — children must be processed before their parent since dp[parent] depends on dp[children].
 </details>
 
@@ -2454,7 +2454,7 @@ C) Post-order — children must be processed before their parent since dp[parent
 - D) O(2ⁿ)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) O(n²·2ⁿ) — there are n·2ⁿ states (mask × endpoint) and O(n) transitions per state.
 </details>
 
@@ -2466,7 +2466,7 @@ C) O(n²·2ⁿ) — there are n·2ⁿ states (mask × endpoint) and O(n) transit
 - D) max(dp[i-1][j], dp[i][j-1]) + 1
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 A) dp[i][j] = dp[i-1][j] + dp[i][j-1] — you can arrive from above or from the left.
 </details>
 
@@ -2478,7 +2478,7 @@ A) dp[i][j] = dp[i-1][j] + dp[i][j-1] — you can arrive from above or from the 
 - D) Node with two children
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 D) When a node has two children, the inorder successor (smallest in right subtree) replaces it.
 </details>
 
@@ -2490,7 +2490,7 @@ D) When a node has two children, the inorder successor (smallest in right subtre
 - D) O(n²)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) O(4n) — a segment tree needs ~4n nodes for an array of size n.
 </details>
 

@@ -1830,7 +1830,7 @@ for rule, desc in guidelines.items():
 - D. Diffusion models always produce the same output for a given prompt
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** Diffusion models produce state-of-the-art quality with greater diversity and flexible text conditioning, though they are slower at inference time than GANs.
 </details>
@@ -1843,7 +1843,7 @@ for rule, desc in guidelines.items():
 - D. Measures image sharpness
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** The KL divergence term encourages the encoded latent distribution to be close to a standard normal, which regularizes the latent space and enables meaningful interpolation.
 </details>
@@ -1856,7 +1856,7 @@ for rule, desc in guidelines.items():
 - D. Quality
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **C.** The five recommended components are Subject, Action/Context, Environment, Style/Medium, and Quality — "price" is not a prompt component.
 </details>
@@ -1869,7 +1869,7 @@ for rule, desc in guidelines.items():
 - D. Text conditioning for image generation
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** The reparameterization trick rewrites z = μ + σ·ε so that gradients can flow through μ and σ while the randomness is isolated in ε ∼ N(0, I).
 </details>
@@ -1882,7 +1882,7 @@ for rule, desc in guidelines.items():
 - D. LoRA works without any training data
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** LoRA trains only tiny rank-decomposition matrices (∼0.01% of total parameters), reducing storage from GB to MB and training from days to hours.
 </details>
@@ -1895,7 +1895,7 @@ for rule, desc in guidelines.items():
 - D. To improve the embedding model's accuracy
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** Chunking splits documents into segments small enough to fit within the LLM's context window (along with the query) while ensuring retrieval granularity is appropriate.
 </details>

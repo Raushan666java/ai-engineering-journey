@@ -2766,7 +2766,7 @@ $swapper->swap('fraud', 'v4');
 - C) Unsupervised is always better
 - D) Supervised uses reinforcement
 
-<details><summary>Answer</summary>A) Supervised uses labeled data, unsupervised uses unlabeled</details>
+<details><summary>Answer&lt;/summary&gt;A) Supervised uses labeled data, unsupervised uses unlabeled&lt;/details&gt;
 
 **Q2:** What indicates overfitting?
 - A) Low training error, low test error
@@ -2774,7 +2774,7 @@ $swapper->swap('fraud', 'v4');
 - C) Poor performance on both sets
 - D) Identical train and test error
 
-<details><summary>Answer</summary>B) High training accuracy, poor test performance</details>
+<details><summary>Answer&lt;/summary&gt;B) High training accuracy, poor test performance&lt;/details&gt;
 
 **Q3:** Which PHP library provides ML pipelines and neural networks?
 - A) PHP-ML
@@ -2782,7 +2782,7 @@ $swapper->swap('fraud', 'v4');
 - C) Laravel AI SDK
 - D) TensorFlow PHP
 
-<details><summary>Answer</summary>B) Rubix ML</details>
+<details><summary>Answer&lt;/summary&gt;B) Rubix ML&lt;/details&gt;
 
 **Q4:** What does Laravel AI SDK's RAG enable?
 - A) Real-time analytics
@@ -2790,4 +2790,4 @@ $swapper->swap('fraud', 'v4');
 - C) Automated testing
 - D) Database migrations
 
-<details><summary>Answer</summary>B) Retrieval-augmented generation with vector search</details>
+<details><summary>Answer&lt;/summary&gt;B) Retrieval-augmented generation with vector search&lt;/details&gt;

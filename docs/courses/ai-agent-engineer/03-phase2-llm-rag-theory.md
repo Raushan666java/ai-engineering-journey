@@ -869,14 +869,14 @@ Add input + output guardrails to your RAG demo query endpoint. Test with a promp
 ---
 
 
-interface Tool { name: string; description: string; execute: (args:Record<string,unknown>) => Promise<string> }
+interface Tool { name: string; description: string; execute: (args:Record&lt;string,unknown&gt;) => Promise&lt;string&gt; }
 interface Message { role: "system"|"user"|"assistant"; content: string }
 interface AgentConfig { model: string; maxTokens: number; temperature: number }
 class Agent {
-  private messages: Message[] = []; private tools: Map<string,Tool> = new Map()
+  private messages: Message[] = []; private tools: Map&lt;string,Tool&gt; = new Map()
   constructor(private config: AgentConfig) {}
   addTool(t: Tool): void { this.tools.set(t.name, t) }
-  async think(input: string): Promise<string> {
+  async think(input: string): Promise&lt;string&gt; {
     this.messages.push({role:"user",content:input})
     const response = await this.llmCall(this.messages)
     const parsed = this.parseResponse(response)
@@ -885,12 +885,12 @@ class Agent {
     this.messages.push({role:"assistant",content:parsed.text})
     return parsed.text
   }
-  private parseResponse(r: string): {toolCall?:{name:string,args:Record<string,unknown>};text:string} {
-    const match = r.match(/<tool:(\w+)>([\s\S]*?)<\/tool>/)
+  private parseResponse(r: string): {toolCall?:{name:string,args:Record&lt;string,unknown&gt;};text:string} {
+    const match = r.match(/<tool:(\w+)>([\s\S]*?)&lt;\/tool&gt;/)
     if(match) try { return {toolCall:{name:match[1],args:JSON.parse(match[2])},text:""} } catch { return {text:r} }
     return {text:r}
   }
-  private async llmCall(msgs: Message[]): Promise<string> {
+  private async llmCall(msgs: Message[]): Promise&lt;string&gt; {
     const res = await fetch("https://api.openai.com/v1/chat/completions", {
       method:"POST", headers:{"Content-Type":"application/json","Authorization":`Bearer ${process.env.OPENAI_API_KEY}`},
       body:JSON.stringify({model:this.config.model,messages:msgs,max_tokens:this.config.maxTokens,temperature:this.config.temperature})

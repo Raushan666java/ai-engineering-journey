@@ -22,7 +22,7 @@ By the end of this chapter, students will be able to:
 | SRE vs DevOps | SRE is Google's engineering practice; DevOps is a cultural movement | SRE operationalizes DevOps with measurable reliability |
 | SLO/SLI/SLA | Indicators measure; Objectives target; Agreements contract | Internal SLOs tighter than external SLAs |
 | Error Budgets | Allowed unreliability = 1 - SLO | Release gating when budget exhausted |
-| Toil Elimination | Manual, repetitive, automatable work | SRE teams spend <50% on operations |
+| Toil Elimination | Manual, repetitive, automatable work | SRE teams spend &lt;50% on operations |
 | Incident Management | Severity-based response with clear roles | Blameless postmortems find system causes |
 | Reliability Patterns | Retries, circuit breakers, bulkheads, timeouts | Build resilience into service design |
 | Capacity Planning | Demand forecasting and resource modeling | Proactive scaling prevents incidents |
@@ -67,7 +67,7 @@ SRE operationalizes DevOps principles with engineering rigor. Many organizations
 ### 17.2 Service Level Objectives (SLO, SLI, SLA)
 
 **Service Level Indicator (SLI)** — A quantitative measure of some aspect of the service:
-- Request latency (at p95, < 500ms)
+- Request latency (at p95, &lt; 500ms)
 - Availability (fraction of successful requests)
 - Throughput (requests per second)
 - Freshness (data age in a data pipeline)
@@ -671,15 +671,15 @@ console.log(`Burn Rate: ${budget.burnRate}/hr, Days Until Exhaustion: ${budget.d
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is the 50% rule in SRE?</summary>**A)** 50% test coverage target<br>**B)** Max 50% of time on operational work<br>**C)** 50% budget for tools<br>**D)** 50% of team must be on-call<br><br>**Answer: B)** Max 50% of time on operational work</details>
+<details><summary>Question 1: What is the 50% rule in SRE?</summary>**A)** 50% test coverage target<br>**B)** Max 50% of time on operational work<br>**C)** 50% budget for tools<br>**D)** 50% of team must be on-call<br><br>**Answer: B)** Max 50% of time on operational work&lt;/details&gt;
 
-<details><summary>Question 2: What does a circuit breaker do when OPEN?</summary>**A)** Allow all requests<br>**B)** Fail fast without calling the service<br>**C)** Log errors<br>**D)** Retry immediately<br><br>**Answer: B)** Fail fast without calling the service</details>
+<details><summary>Question 2: What does a circuit breaker do when OPEN?</summary>**A)** Allow all requests<br>**B)** Fail fast without calling the service<br>**C)** Log errors<br>**D)** Retry immediately<br><br>**Answer: B)** Fail fast without calling the service&lt;/details&gt;
 
-<details><summary>Question 3: Why are postmortems blameless?</summary>**A)** To find who to blame<br>**B)** To focus on systemic causes, not individual mistakes<br>**C)** To avoid documentation<br>**D)** To reduce incident response time<br><br>**Answer: B)** To focus on systemic causes, not individual mistakes</details>
+<details><summary>Question 3: Why are postmortems blameless?</summary>**A)** To find who to blame<br>**B)** To focus on systemic causes, not individual mistakes<br>**C)** To avoid documentation<br>**D)** To reduce incident response time<br><br>**Answer: B)** To focus on systemic causes, not individual mistakes&lt;/details&gt;
 
-<details><summary>Question 4: What is the error budget for 99.99% SLO over 30 days?</summary>**A)** 43 minutes<br>**B)** 4.3 minutes<br>**C)** 7.2 hours<br>**D)** 86.4 seconds<br><br>**Answer: B)** 4.3 minutes (30 × 24 × 60 × 60 × 0.0001 = 259.2 seconds ˜ 4.3 minutes)</details>
+<details><summary>Question 4: What is the error budget for 99.99% SLO over 30 days?</summary>**A)** 43 minutes<br>**B)** 4.3 minutes<br>**C)** 7.2 hours<br>**D)** 86.4 seconds<br><br>**Answer: B)** 4.3 minutes (30 × 24 × 60 × 60 × 0.0001 = 259.2 seconds ˜ 4.3 minutes)&lt;/details&gt;
 
-<details><summary>Question 5: Which on-call pattern distributes responsibility across time zones?</summary>**A)** Weekly rotation<br>**B)** Follow-the-sun<br>**C)** Escalation tiers<br>**D)** Random rotation<br><br>**Answer: B)** Follow-the-sun</details>
+<details><summary>Question 5: Which on-call pattern distributes responsibility across time zones?</summary>**A)** Weekly rotation<br>**B)** Follow-the-sun<br>**C)** Escalation tiers<br>**D)** Random rotation<br><br>**Answer: B)** Follow-the-sun&lt;/details&gt;
 
 ---
 
@@ -692,11 +692,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -704,7 +704,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

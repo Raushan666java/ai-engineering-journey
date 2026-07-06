@@ -807,15 +807,15 @@ console.log(`Applied (dry-run: ${result.dryRun}): ${result.applied}`);
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is the default behavior when a Network Policy selects a pod?</summary>**A)** All traffic is allowed<br>**B)** All traffic is denied except what the policy allows<br>**C)** Only HTTP traffic is allowed<br>**D)** Traffic is routed through a proxy<br><br>**Answer: B)** All traffic is denied except what the policy allows</details>
+<details><summary>Question 1: What is the default behavior when a Network Policy selects a pod?</summary>**A)** All traffic is allowed<br>**B)** All traffic is denied except what the policy allows<br>**C)** Only HTTP traffic is allowed<br>**D)** Traffic is routed through a proxy<br><br>**Answer: B)** All traffic is denied except what the policy allows&lt;/details&gt;
 
-<details><summary>Question 2: What is the purpose of a ClusterRole?</summary>**A)** Manage pods in a namespace<br>**B)** Define permissions for cluster-scoped resources<br>**C)** Create network policies<br>**D)** Configure service meshes<br><br>**Answer: B)** Define permissions for cluster-scoped resources</details>
+<details><summary>Question 2: What is the purpose of a ClusterRole?</summary>**A)** Manage pods in a namespace<br>**B)** Define permissions for cluster-scoped resources<br>**C)** Create network policies<br>**D)** Configure service meshes<br><br>**Answer: B)** Define permissions for cluster-scoped resources&lt;/details&gt;
 
-<details><summary>Question 3: What is GitOps?</summary>**A)** Using Git for source control<br>**B)** Using Git as the single source of truth for cluster state<br>**C)** Git-based CI/CD<br>**D)** Git hooks for Kubernetes<br><br>**Answer: B)** Using Git as the single source of truth for cluster state</details>
+<details><summary>Question 3: What is GitOps?</summary>**A)** Using Git for source control<br>**B)** Using Git as the single source of truth for cluster state<br>**C)** Git-based CI/CD<br>**D)** Git hooks for Kubernetes<br><br>**Answer: B)** Using Git as the single source of truth for cluster state&lt;/details&gt;
 
-<details><summary>Question 4: What does a pod anti-affinity rule prevent?</summary>**A)** Pods from running on the same node<br>**B)** Pods from communicating with each other<br>**C)** Pods from being deleted<br>**D)** Pods from using too much CPU<br><br>**Answer: A)** Pods from running on the same node</details>
+<details><summary>Question 4: What does a pod anti-affinity rule prevent?</summary>**A)** Pods from running on the same node<br>**B)** Pods from communicating with each other<br>**C)** Pods from being deleted<br>**D)** Pods from using too much CPU<br><br>**Answer: A)** Pods from running on the same node&lt;/details&gt;
 
-<details><summary>Question 5: What is the role of a service mesh sidecar proxy?</summary>**A)** Serve HTTP requests<br>**B)** Handle inter-service communication with mTLS, routing, and observability<br>**C)** Store application data<br>**D)** Manage container images<br><br>**Answer: B)** Handle inter-service communication with mTLS, routing, and observability</details>
+<details><summary>Question 5: What is the role of a service mesh sidecar proxy?</summary>**A)** Serve HTTP requests<br>**B)** Handle inter-service communication with mTLS, routing, and observability<br>**C)** Store application data<br>**D)** Manage container images<br><br>**Answer: B)** Handle inter-service communication with mTLS, routing, and observability&lt;/details&gt;
 
 ---
 
@@ -828,11 +828,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -840,7 +840,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

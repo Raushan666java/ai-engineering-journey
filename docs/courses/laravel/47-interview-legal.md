@@ -647,7 +647,7 @@ This chapter covered legal & compliance interview questions for Laravel develope
 - C) Open -> Close
 - D) Start -> End
 
-<details><summary>Answer</summary>B) Draft -> Review -> Sign -> Execute -> Renew</details>
+<details><summary>Answer&lt;/summary&gt;B) Draft -> Review -> Sign -> Execute -> Renew&lt;/details&gt;
 
 **Q2:** What is most important in legal document management?
 - A) File size
@@ -655,7 +655,7 @@ This chapter covered legal & compliance interview questions for Laravel develope
 - C) File format
 - D) Document count
 
-<details><summary>Answer</summary>B) Versioning, encryption, and access control</details>
+<details><summary>Answer&lt;/summary&gt;B) Versioning, encryption, and access control&lt;/details&gt;
 
 **Q3:** What does compliance tracking primarily monitor?
 - A) Employee attendance
@@ -663,7 +663,7 @@ This chapter covered legal & compliance interview questions for Laravel develope
 - C) Office supplies
 - D) Meeting schedules
 
-<details><summary>Answer</summary>B) Regulatory deadlines and adherence</details>
+<details><summary>Answer&lt;/summary&gt;B) Regulatory deadlines and adherence&lt;/details&gt;
 
 **Q4:** How is legal research typically conducted in modern systems?
 - A) Physical law books
@@ -671,7 +671,7 @@ This chapter covered legal & compliance interview questions for Laravel develope
 - C) Phone calls
 - D) Email inquiries
 
-<details><summary>Answer</summary>B) Semantic search with citation analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) Semantic search with citation analysis&lt;/details&gt;
 
 **Q5:** What does chain of custody in legal document management primarily ensure?
 - A) Documents are stored cheaply
@@ -679,7 +679,7 @@ This chapter covered legal & compliance interview questions for Laravel develope
 - C) An unbroken, tamper-evident record of every action on every document
 - D) Documents are automatically deleted after a set period
 
-<details><summary>Answer</summary>C) An unbroken, tamper-evident record of every action on every document</details>
+<details><summary>Answer&lt;/summary&gt;C) An unbroken, tamper-evident record of every action on every document&lt;/details&gt;
 
 **Q6:** What is the primary purpose of a legal hold?
 - A) To encrypt all documents in a case
@@ -687,7 +687,7 @@ This chapter covered legal & compliance interview questions for Laravel develope
 - C) To automatically produce documents to opposing counsel
 - D) To calculate attorney billing hours
 
-<details><summary>Answer</summary>B) To notify custodians to preserve relevant ESI and suspend routine deletion</details>
+<details><summary>Answer&lt;/summary&gt;B) To notify custodians to preserve relevant ESI and suspend routine deletion&lt;/details&gt;
 
 ## Best Practices for Legal Tech Development
 

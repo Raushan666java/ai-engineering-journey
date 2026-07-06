@@ -652,7 +652,7 @@ Returns number of input items successfully matched and assigned, or EOF on input
 
 1. Call `fscanf(fp, format, &var1, &var2, ...)`
 2. Check the return value → compare against expected number of items
-3. If return < expected, check `feof` or `ferror`
+3. If return &lt; expected, check `feof` or `ferror`
 
 ### Pseudocode
 
@@ -770,7 +770,7 @@ Reading binary data is like **photocopying pages** from a book: you specify the 
 
 1. Allocate a buffer large enough: `buffer_size = element_size * count`
 2. Call `fread(buffer, element_size, count, fp)`
-3. Check return value: if < count, check `feof` or `ferror`
+3. Check return value: if &lt; count, check `feof` or `ferror`
 4. Process raw data in buffer
 
 ### Pseudocode
@@ -2989,7 +2989,7 @@ int main(int argc, char *argv[])
    C) NULL
    D) -1
 
-<details><summary>Answer</summary>**C)** `fopen` returns `NULL` when it cannot open the file. Always check this before using the pointer.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `fopen` returns `NULL` when it cannot open the file. Always check this before using the pointer.</details>
 
 2. Which of the following correctly reads a line of text safely?
    A) `gets(buf);`
@@ -2997,7 +2997,7 @@ int main(int argc, char *argv[])
    C) `fgets(buf, sizeof(buf), fp);`
    D) `fscanf(fp, "%s", buf);`
 
-<details><summary>Answer</summary>**C)** `fgets(buf, sizeof(buf), fp)` reads at most `sizeof(buf)-1` characters and always null-terminates. The others risk buffer overflow.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `fgets(buf, sizeof(buf), fp)` reads at most `sizeof(buf)-1` characters and always null-terminates. The others risk buffer overflow.</details>
 
 3. What does `fseek(fp, 0, SEEK_END)` followed by `ftell(fp)` return?
    A) 0
@@ -3005,7 +3005,7 @@ int main(int argc, char *argv[])
    C) The total file size in bytes
    D) EOF
 
-<details><summary>Answer</summary>**C)** This is the standard idiom for getting the file size in bytes.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** This is the standard idiom for getting the file size in bytes.</details>
 
 4. How does `fgetc` signal end-of-file?
    A) Returns 0
@@ -3013,7 +3013,7 @@ int main(int argc, char *argv[])
    C) Returns EOF
    D) Returns -2
 
-<details><summary>Answer</summary>**C)** `fgetc` returns `EOF` (typically -1) on end-of-file or error. Use `feof`/`ferror` to distinguish.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `fgetc` returns `EOF` (typically -1) on end-of-file or error. Use `feof`/`ferror` to distinguish.</details>
 
 5. Which mode opens a file for reading and writing without truncating it?
    A) `"w+"`
@@ -3021,7 +3021,7 @@ int main(int argc, char *argv[])
    C) `"a+"`
    D) `"rw"`
 
-<details><summary>Answer</summary>**B)** `"r+"` opens for reading and writing without truncation. File must exist.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `"r+"` opens for reading and writing without truncation. File must exist.</details>
 
 6. Why does `fgetc` return `int` rather than `char`?
    A) Historical accident
@@ -3029,7 +3029,7 @@ int main(int argc, char *argv[])
    C) To distinguish EOF (typically -1) from all valid byte values (0â€“255)
    D) To improve performance
 
-<details><summary>Answer</summary>**C)** If `fgetc` returned `char`, byte 0xFF (255) would be indistinguishable from EOF on platforms with signed `char`. Using `int` provides all 256 byte values plus a distinct EOF sentinel.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** If `fgetc` returned `char`, byte 0xFF (255) would be indistinguishable from EOF on platforms with signed `char`. Using `int` provides all 256 byte values plus a distinct EOF sentinel.</details>
 
 7. What is the return value of `fread(buf, 100, 5, fp)` if only 3 complete elements are available?
    A) 300
@@ -3037,7 +3037,7 @@ int main(int argc, char *argv[])
    C) 0
    D) EOF
 
-<details><summary>Answer</summary>**B)** `fread` returns the number of **complete elements** read, not bytes. It returns 3 (fewer than requested 5).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `fread` returns the number of **complete elements** read, not bytes. It returns 3 (fewer than requested 5).</details>
 
 8. Which stream is unbuffered by default?
    A) stdin
@@ -3045,7 +3045,7 @@ int main(int argc, char *argv[])
    C) stderr
    D) All file streams
 
-<details><summary>Answer</summary>**C)** `stderr` is unbuffered by default so error messages appear immediately.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `stderr` is unbuffered by default so error messages appear immediately.</details>
 
 9. What does `feof(fp)` return immediately after a successful `fread` that reads the last byte of the file?
    A) 0
@@ -3053,7 +3053,7 @@ int main(int argc, char *argv[])
    C) -1
    D) Implementation-defined
 
-<details><summary>Answer</summary>**A)** `feof(fp)` returns 0. The EOF flag is set only **after** a read operation fails because it reached the end. A successful read of the last byte does not set the flag.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** `feof(fp)` returns 0. The EOF flag is set only **after** a read operation fails because it reached the end. A successful read of the last byte does not set the flag.</details>
 
 10. What is the correct way to handle mixing reads and writes on a `"r+"` stream?
     A) No special handling needed
@@ -3061,24 +3061,24 @@ int main(int argc, char *argv[])
     C) Close and reopen the file
     D) Use different file pointers for reading and writing
 
-<details><summary>Answer</summary>**B)** When switching between read and write on a `"r+"` or `"w+"` stream, you must call `fflush`, `fseek`, `rewind`, or `fsetpos` between the two operations.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** When switching between read and write on a `"r+"` or `"w+"` stream, you must call `fflush`, `fseek`, `rewind`, or `fsetpos` between the two operations.</details>
 
 ### True or False
 
 11. `fscanf(fp, "%s", buf)` is always safe to use.
-    <details><summary>Answer</summary>**False.** Without a width specifier, `%s` can overflow the buffer. Always use `"%Ns"` where N is one less than the buffer size.</details>
+    <details><summary>Answer&lt;/summary&gt;**False.** Without a width specifier, `%s` can overflow the buffer. Always use `"%Ns"` where N is one less than the buffer size.</details>
 
 12. Binary mode and text mode behave identically on Linux.
-    <details><summary>Answer</summary>**True.** On POSIX systems (Linux, macOS), there is no distinction between text and binary modes.</details>
+    <details><summary>Answer&lt;/summary&gt;**True.** On POSIX systems (Linux, macOS), there is no distinction between text and binary modes.</details>
 
 13. `fflush(stdin)` is portable C and works on all implementations.
-    <details><summary>Answer</summary>**False.** `fflush` is only defined for output streams by the C standard. `fflush(stdin)` is undefined behavior, though some platforms support it as an extension.</details>
+    <details><summary>Answer&lt;/summary&gt;**False.** `fflush` is only defined for output streams by the C standard. `fflush(stdin)` is undefined behavior, though some platforms support it as an extension.</details>
 
 14. `tmpfile()` creates a file that is automatically deleted when closed.
-    <details><summary>Answer</summary>**True.** The file is also deleted on normal program termination.</details>
+    <details><summary>Answer&lt;/summary&gt;**True.** The file is also deleted on normal program termination.</details>
 
 15. You can call `fseek` on a pipe or socket.
-    <details><summary>Answer</summary>**False.** Pipes, sockets, and stdin (if redirected from a pipe) are not seekable. `fseek` returns -1 to indicate failure.</details>
+    <details><summary>Answer&lt;/summary&gt;**False.** Pipes, sockets, and stdin (if redirected from a pipe) are not seekable. `fseek` returns -1 to indicate failure.</details>
 
 ---
 

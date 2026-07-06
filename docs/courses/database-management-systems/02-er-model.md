@@ -163,7 +163,7 @@ public:
 class Entity {
 public:
     string name;
-    vector<Attribute> attributes;
+    vector&lt;Attribute&gt; attributes;
     bool is_weak;
     string owner_entity;
     string discriminator;
@@ -183,10 +183,10 @@ public:
 class Relationship {
 public:
     string name;
-    vector<string> participants;
+    vector&lt;string&gt; participants;
     CardType cardinality;
     PartType participation;
-    vector<Attribute> attributes;
+    vector&lt;Attribute&gt; attributes;
 ```
     Relationship(string n, CardType card = CardType::MANY_TO_MANY)
         : name(n), cardinality(card), participation(PartType::PARTIAL) {}
@@ -212,8 +212,8 @@ public:
 ```
 class ERModel {
 public:
-    map<string, Entity> entities;
-    vector<Relationship> relationships;
+    map&lt;string, Entity&gt; entities;
+    vector&lt;Relationship&gt; relationships;
 ```
     void addEntity(const Entity& e) { entities[e.name] = e; }
     void addRelationship(const Relationship& r) { relationships.push_back(r); }
@@ -866,8 +866,8 @@ struct EntityPair {
     string description;
 ```
     Cardinality determine() const {
-        if (maxAtoB <= 1 && maxBtoA <= 1) return Cardinality::ONE_TO_ONE;
-        if (maxAtoB > 1 && maxBtoA <= 1) return Cardinality::ONE_TO_MANY;
+        if (maxAtoB &lt;= 1 && maxBtoA <= 1) return Cardinality::ONE_TO_ONE;
+        if (maxAtoB > 1 && maxBtoA &lt;= 1) return Cardinality::ONE_TO_MANY;
         return Cardinality::MANY_TO_MANY;
     }
 ```
@@ -882,10 +882,10 @@ struct EntityPair {
 };
 ```
 void analyzeRelationship(const EntityPair& pair) {
-    cout << pair.entityA << " -> " << pair.entityB << ": max=" << pair.maxAtoB << endl;
-    cout << pair.entityB << " -> " << pair.entityA << ": max=" << pair.maxBtoA << endl;
-    cout << "Cardinality: " << pair.toString() << endl;
-    cout << pair.description << endl << endl;
+    cout &lt;< pair.entityA << " -> " << pair.entityB << ": max=" << pair.maxAtoB << endl;
+    cout &lt;< pair.entityB << " -> " << pair.entityA << ": max=" << pair.maxBtoA << endl;
+    cout &lt;< "Cardinality: " << pair.toString() << endl;
+    cout &lt;< pair.description << endl << endl;
 }
 ```
 int main() {
@@ -943,7 +943,7 @@ class RelationshipSet:
         errors = []
         if not self.cardinality:
             errors.append(f"Relationship {self.name} has no cardinality set")
-        if len(self.participants) < 2:
+        if len(self.participants) &lt; 2:
             errors.append(f"Relationship {self.name} needs at least 2 participants")
         return (len(errors) == 0, errors)
 ```
@@ -1155,9 +1155,9 @@ CREATE TABLE dependent (
 #### C++ Implementation: Weak Entity Mapper
 ```
 ```cpp
-#include <iostream>
-#include <string>
-#include <vector>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
 using namespace std;
 ```
 struct Column {
@@ -1205,7 +1205,7 @@ public:
 };
 ```
 int main() {
-    cout << "=== Weak Entity Mapping: DEPENDENT on EMPLOYEE ===\n\n";
+    cout &lt;< "=== Weak Entity Mapping: DEPENDENT on EMPLOYEE ===\n\n";
 ```
     cout << "-- Owner table (created first):\n";
     cout << "CREATE TABLE employee (\n";
@@ -1213,7 +1213,7 @@ int main() {
     cout << "    name VARCHAR(100) NOT NULL\n";
     cout << ");\n\n";
 ```
-    cout << "-- Weak entity table:\n";
+    cout &lt;< "-- Weak entity table:\n";
     WeakEntityMapper::mapWeakEntity("dependent", "employee", "emp_id", "dependent_name",
         {{"relationship", "VARCHAR(20)"}, {"birth_date", "DATE"}});
 ```
@@ -1245,7 +1245,7 @@ class WeakEntity:
         lines.append(f"    {self.discriminator.lower()} VARCHAR(100) NOT NULL,")
         # Extra attributes
         for i, (aname, atype) in enumerate(self.attributes):
-            comma = "," if i < len(self.attributes) - 1 else ""
+            comma = "," if i &lt; len(self.attributes) - 1 else ""
             lines.append(f"    {aname.lower()} {atype}{comma}")
         # Composite primary key
         lines.append(f"    PRIMARY KEY ({owner_pk}, {self.discriminator.lower()})")
@@ -1398,9 +1398,9 @@ Key:
 #### C++ Implementation: ER Diagram Notation Renderer
 ```
 ```cpp
-#include <iostream>
-#include <string>
-#include <vector>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
 using namespace std;
 ```
 class ERDiagramRenderer {
@@ -1412,11 +1412,11 @@ public:
     }
 ```
     static void renderAttribute(const string& name, const string& type = "simple") {
-        if (type == "key") cout << "(" << name << "*)";
-        else if (type == "multi") cout << "{{" << name << "}}";
-        else if (type == "derived") cout << "<" << name << ">";
-        else if (type == "discriminator") cout << "(" << name << "~)";
-        else cout << "(" << name << ")";
+        if (type == "key") cout &lt;< "(" << name << "*)";
+        else if (type == "multi") cout &lt;< "{{" << name << "}}";
+        else if (type == "derived") cout &lt;< "<" << name << "&gt;";
+        else if (type == "discriminator") cout &lt;< "(" << name << "~)";
+        else cout &lt;< "(" << name << ")";
     }
 ```
     static void renderRelationship(const string& name, bool isIdentifying = false) {
@@ -1426,7 +1426,7 @@ public:
 ```
     static void renderCardinality(const string& from, const string& to,
                                    const string& fromCard, const string& toCard) {
-        cout << from << " --(" << fromCard << ")-- REL --(" << toCard << ")-- " << to << endl;
+        cout &lt;< from << " --(" << fromCard << ")-- REL --(" << toCard << ")-- " << to << endl;
     }
 ```
     static void renderUniversitySchema() {
@@ -1667,7 +1667,7 @@ class GeneralizationMapper:
         lines = [f"CREATE TABLE {superclass.name.lower()} ("]
         lines.append(f"    {superclass.pk.lower()} {_find_pk_type(superclass)} PRIMARY KEY,")
         for i, (name, dtype) in enumerate(superclass.common_attributes):
-            comma = "," if i < len(superclass.common_attributes) - 1 else ""
+            comma = "," if i &lt; len(superclass.common_attributes) - 1 else ""
             lines.append(f"    {name.lower()} {dtype}{comma}")
         lines.append(");")
         statements.append("\n".join(lines))
@@ -1947,7 +1947,7 @@ CREATE TABLE student_phone (
 CREATE TABLE course (
     course_id VARCHAR(10) PRIMARY KEY,
     title VARCHAR(200) NOT NULL,
-    credits INTEGER CHECK (credits > 0 AND credits <= 5)
+    credits INTEGER CHECK (credits > 0 AND credits &lt;= 5)
 );
 ```
 -- M:N relationship: TAKES

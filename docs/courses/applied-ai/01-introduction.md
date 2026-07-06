@@ -987,7 +987,7 @@ FUNCTION audit_model_for_bias(model, test_data, sensitive_attributes, metric):
 
 **Q2: How would you choose between a Random Forest and a Neural Network for a tabular dataset?**
 
-*Answer:* For structured/tabular data with <100K rows, start with Random Forest → it handles missing values, doesn't require scaling, is interpretable via feature importance, and trains fast. For >100K rows or unstructured data (images, text, audio), use neural networks → they learn complex patterns and benefit from scale. Always start simple and increase complexity only if the simple model underperforms.
+*Answer:* For structured/tabular data with &lt;100K rows, start with Random Forest → it handles missing values, doesn't require scaling, is interpretable via feature importance, and trains fast. For >100K rows or unstructured data (images, text, audio), use neural networks → they learn complex patterns and benefit from scale. Always start simple and increase complexity only if the simple model underperforms.
 
 **Q3: How do you detect and handle data drift in production?**
 
@@ -1019,7 +1019,7 @@ FUNCTION audit_model_for_bias(model, test_data, sensitive_attributes, metric):
 
 **Q10: How would you design a real-time fraud detection system?**
 
-*Answer:* (1) Stream processing (Kafka/Flink) to ingest transactions. (2) Feature extraction in real-time → amount ratio to user average, transaction velocity, location distance from last transaction, device fingerprint. (3) Ensemble model (Random Forest + Neural Network + Graph anomaly detector) scores each transaction in <50ms. (4) Decision: approve, flag for review, or block. (5) Feedback loop: confirmed fraud cases retrain the model incrementally.
+*Answer:* (1) Stream processing (Kafka/Flink) to ingest transactions. (2) Feature extraction in real-time → amount ratio to user average, transaction velocity, location distance from last transaction, device fingerprint. (3) Ensemble model (Random Forest + Neural Network + Graph anomaly detector) scores each transaction in &lt;50ms. (4) Decision: approve, flag for review, or block. (5) Feedback loop: confirmed fraud cases retrain the model incrementally.
 
 ### Model Selection Criteria Checklist
 
@@ -1027,7 +1027,7 @@ FUNCTION audit_model_for_bias(model, test_data, sensitive_attributes, metric):
 |-----------|----------------|
 | **Data Volume** | Do I have 100 or 100K or 1M+ labeled examples? |
 | **Data Type** | Is my data structured (tabular), unstructured (images/text), or time-series? |
-| **Latency Budget** | Does the prediction need to return in <10ms, <100ms, or <1s? |
+| **Latency Budget** | Does the prediction need to return in &lt;10ms, <100ms, or <1s? |
 | **Hardware Constraint** | Can I use GPU/TPU, CPU-only, or edge device (mobile/embedded)? |
 | **Interpretability Need** | Does a regulator or customer need to understand predictions? |
 | **Problem Type** | Is this classification, regression, clustering, or generation? |
@@ -1175,7 +1175,7 @@ Each chapter contains complete, runnable code. All examples target Python 3.11.
 - D. DL does not use neural networks
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** AI encompasses all intelligent systems. ML is a subset that learns from data. DL is a further subset using multi-layer neural networks.
 </details>
@@ -1188,7 +1188,7 @@ Each chapter contains complete, runnable code. All examples target Python 3.11.
 - D. Monitoring & Retraining
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **C.** The seven stages are Data Collection, Preprocessing, Feature Engineering, Training, Evaluation, Deployment, and Monitoring.
 </details>
@@ -1201,7 +1201,7 @@ Each chapter contains complete, runnable code. All examples target Python 3.11.
 - D. 30-40%
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** Data preparation (cleaning, validation, feature engineering) takes 60-80% of the total project timeline.
 </details>
@@ -1214,7 +1214,7 @@ Each chapter contains complete, runnable code. All examples target Python 3.11.
 - D. Reducing model latency
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** PSI measures whether the distribution of features in production differs significantly from training data (PSI > 0.10 indicates drift).
 </details>
@@ -1227,7 +1227,7 @@ Each chapter contains complete, runnable code. All examples target Python 3.11.
 - D. Data leakage
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** With extreme class imbalance, accuracy is misleading. Precision, recall, F1, and AUC-ROC are the correct metrics.
 </details>
@@ -1240,9 +1240,9 @@ Each chapter contains complete, runnable code. All examples target Python 3.11.
 - D. Serverless
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
-**B.** REST API with <100ms latency is standard for real-time transaction scoring.
+**B.** REST API with &lt;100ms latency is standard for real-time transaction scoring.
 </details>
 
 **Q7:** What is the cold start problem in recommendation systems?
@@ -1253,7 +1253,7 @@ Each chapter contains complete, runnable code. All examples target Python 3.11.
 - D. The dataset is frozen
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** Cold start occurs when a new user has no interaction history, making collaborative filtering impossible. Use popularity-based fallback or content-based features.
 </details>

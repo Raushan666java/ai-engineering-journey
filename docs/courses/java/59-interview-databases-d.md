@@ -17,7 +17,8 @@ flowchart LR
     C --> D[Best Practices]
 ```
 
-### Q26: What is database sharding, and how do you implement it?
+### Q26: What is database sharding, and how do you implement it?
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -819,7 +820,7 @@ flowchart TD
    - D) equals() is for primitives, == is for objects
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) equals() compares logical equality (overridable), == compares reference equality.**
 </details>
 
@@ -830,7 +831,7 @@ flowchart TD
    - D) HashSet
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
 </details>
 
@@ -841,6 +842,6 @@ flowchart TD
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>

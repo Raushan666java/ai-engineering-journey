@@ -364,7 +364,7 @@ The Canny detector (1986) remains the gold standard for edge detection. It is a 
 **Step 2 → Compute Gradients:** Apply Sobel operators to compute $G_x$ and $G_y$ (gradients in x and y directions).
 **Step 3 → Compute Magnitude and Direction:** $M = \sqrt{G_x^2 + G_y^2}$, $\theta = \text{atan2}(G_y, G_x)$.
 **Step 4 → Non-Maximum Suppression (NMS):** For each pixel, check if it is the maximum along the gradient direction. Keep only local maxima → this thins edges to single-pixel width.
-**Step 5 → Double Thresholding:** Classify each pixel as strong ($M > T_{\text{high}}$), weak ($T_{\text{low}} < M \leq T_{\text{high}}$), or suppressed ($M \leq T_{\text{low}}$).
+**Step 5 → Double Thresholding:** Classify each pixel as strong ($M > T_{\text{high}}$), weak ($T_{\text{low}} &lt; M \leq T_{\text{high}}$), or suppressed ($M \leq T_{\text{low}}$).
 **Step 6 → Edge Tracking by Hysteresis:** Keep weak pixels only if they are connected to strong pixels. This removes weak edges from noise while preserving genuine edges that happen to have lower contrast.
 
 **Pseudocode:**
@@ -416,10 +416,10 @@ Assume gradient magnitudes ($M$) and quantized directions ($\theta$) for a 5Ã�
 | 0 | Gradient magnitude $M$ | $\begin{bmatrix} 10 & 12 & 40 & 42 & 15 \\ 15 & 18 & 95 & 88 & 20 \\ 12 & 16 & \mathbf{120} & 90 & 18 \\ 8 & 10 & 85 & 78 & 14 \\ 5 & 8 & 30 & 28 & 10 \end{bmatrix}$ |
 | 0 | Quantized $\theta$ (0=horizontal) | All pixels $\theta = 0$ (edge running N-S, gradient E-W) |
 | 1 | NMS check at (2,2)=120 | Compare with (2,1)=16 and (2,3)=90. 120 â‰¥ max(16, 90) âœ… |
-| 2 | NMS check at (2,3)=90 | Compare with (2,2)=120 and (2,4)=18. 90 < 120 âŒ → suppress |
+| 2 | NMS check at (2,3)=90 | Compare with (2,2)=120 and (2,4)=18. 90 &lt; 120 âŒ → suppress |
 | 3 | NMS check at (1,2)=95 | Compare with (1,1)=18 and (1,3)=88. 95 â‰¥ 88 âœ… |
 | 4 | After NMS | $\begin{bmatrix} 0 & 0 & 40 & 0 & 0 \\ 0 & 0 & 95 & 0 & 0 \\ 0 & 0 & 120 & 0 & 0 \\ 0 & 0 & 85 & 0 & 0 \\ 0 & 0 & 30 & 0 & 0 \end{bmatrix}$ (single-pixel vertical edge) |
-| 5 | Double threshold: $T_{\text{low}}=50, T_{\text{high}}=100$ | Strong: 120 ($>$100). Weak: 95, 85 ($50<$...$â‰¤100$). Suppressed: 40, 30 |
+| 5 | Double threshold: $T_{\text{low}}=50, T_{\text{high}}=100$ | Strong: 120 ($>$100). Weak: 95, 85 ($50&lt;$...$â‰¤100$). Suppressed: 40, 30 |
 | 6 | Hysteresis: 95 connected to 120? YES. 85 connected to 120? YES. | Final edge: 95, 120, 85 retained |
 
 ### 13.3.3 Python Implementation
@@ -1078,7 +1078,7 @@ cv2.destroyAllWindows()
 
 | Edge Case | Problem | Mitigation |
 |-----------|---------|------------|
-| **Small objects** (pixels < 32Ã—32) | YOLO grid may miss them | Use feature pyramid networks (FPN); multi-scale training |
+| **Small objects** (pixels &lt; 32Ã—32) | YOLO grid may miss them | Use feature pyramid networks (FPN); multi-scale training |
 | **Occlusion** | Partial object → low confidence | Use NMS with lower threshold; part-based detectors |
 | **Dense crowds** | Overlapping boxes suppressed by NMS | Use soft-NMS; set-based losses (DETR) |
 | **Extreme aspect ratios** (e.g., long poles) | Fixed anchor boxes don't fit | Use anchor-free methods (FCOS, CornerNet) |
@@ -1653,7 +1653,7 @@ Autonomous vehicles use multiple CV tasks simultaneously:
 | BEV (Bird's Eye View) | Lift-Splat-Shoot | Convert camera views to top-down map |
 
 **Safety-critical requirements:**
-- **Latency:** <100ms from camera to actuation (ideally <30ms for highway)
+- **Latency:** <100ms from camera to actuation (ideally &lt;30ms for highway)
 - **Reliability:** False negative on a pedestrian = fatal. Precision matters more than recall in moderation.
 - **Redundancy:** Multiple cameras + LiDAR + radar + ultrasonic for sensor fusion
 - **Robustness:** Must work in rain, fog, night, direct sunlight, falling snow
@@ -2000,7 +2000,7 @@ image.save("cat_astronaut.png")
 
 | Metric | Measures | Range | Good Score |
 |--------|----------|-------|------------|
-| **FID** (FrÃ©chet Inception Distance) | Distribution distance between real and generated features | 0 = identical, higher = worse | <10 (excellent), <30 (good) |
+| **FID** (FrÃ©chet Inception Distance) | Distribution distance between real and generated features | 0 = identical, higher = worse | <10 (excellent), &lt;30 (good) |
 | **IS** (Inception Score) | Both quality and diversity of generated images | Higher = better | >100 (excellent, ImageNet) |
 | **CLIP Score** | Alignment between generated image and text prompt | Higher = better | >30 (good alignment) |
 | **LPIPS** | Perceptual similarity between images | 0 = identical | <0.1 (very similar) |
@@ -2073,7 +2073,7 @@ B) Skip connections (residual connections) solving the vanishing gradient proble
 C) Batch normalization
 D) Data augmentation
 
-<details><summary>Answer</summary>**B)** ResNet's skip connections allow gradients to flow directly through the network, bypassing layers and preventing vanishing gradients in very deep networks. Without skip connections, a 152-layer plain network would have near-zero gradient at early layers.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** ResNet's skip connections allow gradients to flow directly through the network, bypassing layers and preventing vanishing gradients in very deep networks. Without skip connections, a 152-layer plain network would have near-zero gradient at early layers.</details>
 
 ### Q2: What is the main advantage of YOLO over R-CNN-style detectors?
 
@@ -2082,7 +2082,7 @@ B) YOLO uses a single forward pass for the entire image, achieving real-time spe
 C) YOLO requires less training data
 D) YOLO handles small objects better
 
-<details><summary>Answer</summary>**B)** YOLO treats detection as a single regression problem, predicting bounding boxes and class probabilities in one pass without a separate region proposal stage. This enables 45-100+ FPS compared to Faster R-CNN's ~5 FPS.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** YOLO treats detection as a single regression problem, predicting bounding boxes and class probabilities in one pass without a separate region proposal stage. This enables 45-100+ FPS compared to Faster R-CNN's ~5 FPS.</details>
 
 ### Q3: Diffusion models generate images by:
 
@@ -2091,7 +2091,7 @@ B) Learning to reverse a gradual noising process step by step
 C) Autoencoding input images through a bottleneck
 D) Matching nearest neighbors in a training set
 
-<details><summary>Answer</summary>**B)** Diffusion models learn the reverse of a Markov noising process, gradually converting random noise into structured images. The forward process adds noise over $T$ steps; the reverse process learns to denoise.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Diffusion models learn the reverse of a Markov noising process, gradually converting random noise into structured images. The forward process adds noise over $T$ steps; the reverse process learns to denoise.</details>
 
 ### Q4: What does Non-Maximum Suppression (NMS) accomplish in object detection?
 
@@ -2100,7 +2100,7 @@ B) It removes duplicate bounding boxes that overlap significantly with higher-sc
 C) It normalizes box coordinates to [0, 1]
 D) It augments the training data with random crops
 
-<details><summary>Answer</summary>**B)** NMS removes duplicate detections for the same object by selecting the highest-confidence box and removing any box whose IoU with it exceeds a threshold (typically 0.5).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** NMS removes duplicate detections for the same object by selecting the highest-confidence box and removing any box whose IoU with it exceeds a threshold (typically 0.5).</details>
 
 ### Q5: Which of the following correctly describes the receptive field of a CNN?
 
@@ -2109,7 +2109,7 @@ B) The total number of parameters in the network
 C) The spatial resolution of the output feature map
 D) The size of the training dataset
 
-<details><summary>Answer</summary>**A)** The receptive field is the region of the input image that influences a particular feature in the output. It grows with network depth \u2014 deeper layers have larger receptive fields.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** The receptive field is the region of the input image that influences a particular feature in the output. It grows with network depth \u2014 deeper layers have larger receptive fields.</details>
 
 ### Q6: A 3\u00d73 convolution with 64 filters operating on a 224\u00d7224\u00d73 image has how many parameters (including bias)?
 
@@ -2118,7 +2118,7 @@ B) 1,792
 C) 64,000
 D) 442,368
 
-<details><summary>Answer</summary>**B)** 3 \u00d7 3 \u00d7 3 \u00d7 64 + 64 = 1,792. The equivalent fully connected layer would have 224\u00b2 \u00d7 3 \u00d7 224\u00b2 \u00d7 64 \u2248 1.1 \u00d7 10\u00b9\u00b9 parameters \u2014 61 million times more.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** 3 \u00d7 3 \u00d7 3 \u00d7 64 + 64 = 1,792. The equivalent fully connected layer would have 224\u00b2 \u00d7 3 \u00d7 224\u00b2 \u00d7 64 \u2248 1.1 \u00d7 10\u00b9\u00b9 parameters \u2014 61 million times more.</details>
 
 ### Q7: What is the key advantage of Vision Transformers over CNNs?
 
@@ -2127,7 +2127,7 @@ B) They have a global receptive field from the very first layer via self-attenti
 C) They require less training data
 D) They are inherently translation invariant
 
-<details><summary>Answer</summary>**B)** ViT's self-attention mechanism allows every patch to attend to every other patch from the first layer, giving a global receptive field. CNNs build receptive field gradually through stacking layers.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** ViT's self-attention mechanism allows every patch to attend to every other patch from the first layer, giving a global receptive field. CNNs build receptive field gradually through stacking layers.</details>
 
 ### Q8: In the Canny edge detector, what is the purpose of non-maximum suppression?
 
@@ -2136,7 +2136,7 @@ B) To thin edges to single-pixel width by keeping only local gradient maxima
 C) To blur the image before edge detection
 D) To connect broken edge segments
 
-<details><summary>Answer</summary>**B)** NMS checks each pixel against its neighbors along the gradient direction. If the pixel is not the local maximum, it is suppressed to 0. This produces thin, single-pixel-wide edges.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** NMS checks each pixel against its neighbors along the gradient direction. If the pixel is not the local maximum, it is suppressed to 0. This produces thin, single-pixel-wide edges.</details>
 
 ### Q9: What does the triplet loss in FaceNet enforce?
 
@@ -2145,7 +2145,7 @@ B) That anchor-positive distance is smaller than anchor-negative distance by at 
 C) That all embeddings lie on a unit sphere
 D) That the model minimizes reconstruction error
 
-<details><summary>Answer</summary>**B)** Triplet loss: $L = max(d(a,p) - d(a,n) + margin, 0)$. It ensures that embeddings of the same identity are closer together than embeddings of different identities by at least the margin.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Triplet loss: $L = max(d(a,p) - d(a,n) + margin, 0)$. It ensures that embeddings of the same identity are closer together than embeddings of different identities by at least the margin.</details>
 
 ### Q10: Which segmentation task distinguishes between individual object instances (e.g., two different cars)?
 
@@ -2154,7 +2154,7 @@ B) Instance segmentation
 C) Panoptic segmentation (it does both semantic + instance)
 D) Binary segmentation
 
-<details><summary>Answer</summary>**B)** Instance segmentation assigns a unique ID to each object instance. Semantic segmentation assigns the same class label to all pixels of the same type regardless of instance. Panoptic segmentation unifies both.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Instance segmentation assigns a unique ID to each object instance. Semantic segmentation assigns the same class label to all pixels of the same type regardless of instance. Panoptic segmentation unifies both.</details>
 
 ## Summary
 

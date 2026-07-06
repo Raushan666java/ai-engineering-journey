@@ -3983,7 +3983,7 @@ db.scores.updateOne(
 | One-to-few relationship | One-to-many relationship |
 | Data changes together | Data updated independently |
 | Read-heavy access pattern | Write-heavy on sub-document |
-| Sub-document size < 16MB | Sub-document content shared across parents |
+| Sub-document size &lt; 16MB | Sub-document content shared across parents |
 
 #### 15.12.2 Design Principles → Numbered
 

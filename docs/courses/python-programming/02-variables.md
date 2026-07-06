@@ -710,10 +710,10 @@ x in y, x not in y
 ## Chapter Quiz
 
 **Q1.** What is the output of type(42.0)?
-- A) <class int>
-- B) <class float> **<-- Correct**
-- C) <class double>
-- D) <class number>
+- A) &lt;class int&gt;
+- B) &lt;class float&gt; **<-- Correct**
+- C) &lt;class double&gt;
+- D) &lt;class number&gt;
 
 **Q2.** Which operator checks object identity?
 - A) ==

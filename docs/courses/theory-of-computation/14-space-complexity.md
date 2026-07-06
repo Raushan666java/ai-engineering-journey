@@ -217,7 +217,7 @@ The recursion depth is O(n), and each level stores partial variable assignments.
 2. For each symbol c in w:
    - If c = '(': counter++.
    - If c = ')': counter--.
-   - If counter < 0: reject (too many closing).
+   - If counter &lt; 0: reject (too many closing).
 3. If counter = 0: accept. Else reject.
 
 Space used: one counter (âŒˆlogâ‚‚(n+1)âŒ‰ bits) = O(log n). So this problem is in L.
@@ -269,7 +269,7 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 - D) PSPACE = NP
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Savitch: NSPACE(s(n)) ? SPACE(s(n)²). Corollary: NPSPACE = PSPACE.
 </details>
 
@@ -280,7 +280,7 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 - D) O(1) space
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** NL = nondeterministic O(log n) space. PATH is NL-complete.
 </details>
 
@@ -291,7 +291,7 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 - D) P problem
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** True Quantified Boolean Formulas is PSPACE-complete (space analog of Cook-Levin).
 </details>
 
@@ -302,7 +302,7 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 - D) L = NL
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Nondeterministic log space is closed under complement.
 </details>
 
@@ -313,7 +313,7 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 - D) P ? PSPACE
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** The space hierarchy theorem gives L ? PSPACE, while P vs NP remains open.
 </details>
 
@@ -471,7 +471,7 @@ console.log(PSPACEProblems.isPSPACEComplete("SAT"));
 
 class SpaceComplexityClassifier {
   // Known problems and their space complexity classes
-  private static readonly knownProblems = new Map<string, string>([
+  private static readonly knownProblems = new Map&lt;string, string&gt;([
     ["DFA membership", "L (O(log n) space)"],
     ["Tree traversal", "L (O(log n) space)"],
     ["Graph connectivity (undirected)", "L (Reingold 2005)"],
@@ -523,7 +523,7 @@ class SavitchHelper {
   // if there is a midpoint reachable in = t/2 steps.
   static reachableInSteps(
     configs: string[],
-    successors: Map<string, string[]>,
+    successors: Map&lt;string, string[]&gt;,
     c1: string, c2: string, steps: number,
     depth: number = 0
   ): boolean {
@@ -551,7 +551,7 @@ class SavitchHelper {
 console.log(SpaceComplexityClassifier.table().join("\n"));
 console.log("");
 const configs = ["c1", "c2", "c3", "c4"];
-const succ = new Map<string, string[]>([
+const succ = new Map&lt;string, string[]&gt;([
   ["c1", ["c2", "c3"]], ["c2", ["c4"]], ["c3", ["c4"]], ["c4", []]
 ]);
 console.log(`c1 ? c4 in =3 steps: ${SavitchHelper.reachableInSteps(configs, succ, "c1", "c4", 3)}`);
@@ -687,7 +687,7 @@ type QBF =
 
 function evaluateQBF(
   formula: QBF,
-  assignments: Map<string, boolean>
+  assignments: Map&lt;string, boolean&gt;
 ): boolean {
   switch (formula.type) {
     case "exists": {
@@ -762,27 +762,27 @@ The key insight: we can count reachable vertices using an inductive definition:
 
 ```typescript
 function countReachableVertices(
-  graph: Map<number, number[]>,
+  graph: Map&lt;number, number[]&gt;,
   source: number,
   totalVertices: number
 ): number {
   let count = 0;
   // Try all vertices; guess which ones are reachable
-  for (let v = 0; v < totalVertices; v++) {
+  for (let v = 0; v &lt; totalVertices; v++) {
     if (isReachable(graph, source, v)) count++;
   }
   return count;
 }
 
 function isReachable(
-  graph: Map<number, number[]>,
+  graph: Map&lt;number, number[]&gt;,
   source: number,
   target: number
 ): boolean {
   let current = source;
   const n = graph.size;
   // Nondeterministically guess a path (simulated with iterative deepening)
-  for (let step = 0; step < n; step++) {
+  for (let step = 0; step &lt; n; step++) {
     if (current === target) return true;
     const neighbors = graph.get(current) || [];
     if (neighbors.length === 0) return false;
@@ -814,8 +814,8 @@ function buildConfigGraph(
   acceptState: string,
   maxSpace: number,
   maxSteps: number
-): Map<string, string[]> {
-  const graph = new Map<string, string[]>();
+): Map&lt;string, string[]&gt; {
+  const graph = new Map&lt;string, string[]&gt;();
 
   function explore(
     state: string,
@@ -830,20 +830,20 @@ function buildConfigGraph(
     if (graph.has(current)) return;
 
     const neighbors: string[] = [];
-    const symbol = head < tape.length ? tape[head] : "_";
+    const symbol = head &lt; tape.length ? tape[head] : "_";
 
     // Simulate transitions
     const transitions = generateTransitions(state, symbol);
     for (const t of transitions) {
       let newTape = tape;
-      if (head < newTape.length) {
+      if (head &lt; newTape.length) {
         newTape = newTape.substring(0, head) + t.write + newTape.substring(head + 1);
       } else {
         newTape += t.write;
       }
 
       const newHead = head + (t.move === "R" ? 1 : -1);
-      if (newHead < 0) {
+      if (newHead &lt; 0) {
         newTape = "_" + newTape;
         head = 0;
       }

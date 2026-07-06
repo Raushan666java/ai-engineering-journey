@@ -577,8 +577,8 @@ This means A* **never re-opens nodes** from the explored set — when a node is 
 
 | Property | Admissibility | Consistency |
 |----------|:------------:|:-----------:|
-| h(n) <= h*(n) | Required | Implied |
-| h(n) <= c(n,n') + h(n') | Not required | Required |
+| h(n) &lt;= h*(n) | Required | Implied |
+| h(n) &lt;= c(n,n') + h(n') | Not required | Required |
 | A* tree search optimal | Yes | Yes |
 | A* graph search optimal | No | Yes |
 | Non-decreasing f | Not guaranteed | Guaranteed |
@@ -600,7 +600,7 @@ $$f(n) = g(n) + h(n) \leq g(n) + h^*(n) = C^*$$
 
 Since A* expands nodes in order of increasing f, and the goal G has f(G) = C > C*, node n would be expanded before G — a contradiction. Thus, A* must return an optimal solution.
 
-**Intuitive Explanation:** A* never expands a node with f(n) > C* as long as any node on the optimal path (f <= C*) remains on the frontier. The search frontier forms a "contour" of nodes with f < C* that are all expanded before any suboptimal goal is reached.
+**Intuitive Explanation:** A* never expands a node with f(n) > C* as long as any node on the optimal path (f &lt;= C*) remains on the frontier. The search frontier forms a "contour" of nodes with f < C* that are all expanded before any suboptimal goal is reached.
 
 **Optimal Efficiency:** A* is **optimally efficient** — no other optimal algorithm using the same heuristic expands fewer nodes than A*. Formally, any algorithm that guarantees optimality must expand every node that A* expands.
 
@@ -610,7 +610,7 @@ Since A* expands nodes in order of increasing f, and the goal G has f(G) = C > C
 |---------|:--------------------:|-----|
 | Tree search (no explored set) | Admissible | Proof only uses admissibility; cycles cause infinite loops but optimality of solution holds |
 | Graph search (with explored set) | Consistent | Without consistency, a node may be expanded before the optimal path to it is discovered |
-| Consistency check | h(n) <= c(n,n') + h(n') | Ensures f is non-decreasing along paths, so first expansion is optimal |
+| Consistency check | h(n) &lt;= c(n,n') + h(n') | Ensures f is non-decreasing along paths, so first expansion is optimal |
 
 ---
 
@@ -663,7 +663,7 @@ Same graph. Heuristic: S=5, A=4, B=3, C=3, D=3, E=2, F=2, G=0.
 
 #### Iteration 1 — bound = h(S) = 5
 
-| DFS Step | Node | g | h | f | f <= 5? | Action |
+| DFS Step | Node | g | h | f | f &lt;= 5? | Action |
 |:--------:|:----:|:-:|:-:|:-:|:-------:|--------|
 | 1 | S | 0 | 5 | 5 | Yes | Expand |
 | 2 | A | 3 | 4 | 7 | No | Prune (record 7) |
@@ -676,7 +676,7 @@ Min pruned f = 6. New bound = 6. No solution found in iteration 1.
 
 #### Iteration 2 — bound = 6
 
-| DFS Step | Node | g | h | f | f <= 6? | Action |
+| DFS Step | Node | g | h | f | f &lt;= 6? | Action |
 |:--------:|:----:|:-:|:-:|:-:|:-------:|--------|
 | 1 | S | 0 | 5 | 5 | Yes | Expand |
 | 2 | A | 3 | 4 | 7 | No | Prune |
@@ -906,8 +906,8 @@ print("RBFS path:", path)   # S -> B -> F -> G
 ### Q1: What conditions guarantee A* is optimal?
 
 **Answer:** A* is optimal if:
-1. The heuristic h is **admissible** (h(n) <= h*(n) for all n) for tree search.
-2. The heuristic h is **consistent** (h(n) <= c(n,a,n') + h(n')) for graph search.
+1. The heuristic h is **admissible** (h(n) &lt;= h*(n) for all n) for tree search.
+2. The heuristic h is **consistent** (h(n) &lt;= c(n,a,n') + h(n')) for graph search.
 3. All step costs are non-negative (required for any shortest-path algorithm).
 
 ### Q2: How do you design an admissible heuristic?
@@ -1031,7 +1031,7 @@ Robots use **D* Lite** (A* variant with incremental replanning):
 - D) Tree-search cannot handle cycles
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B. A* tree-search is optimal with admissible heuristics; graph-search (with explored set) requires consistency to guarantee optimality.
 </details>
 
@@ -1042,7 +1042,7 @@ B. A* tree-search is optimal with admissible heuristics; graph-search (with expl
 - D) Weighted A*
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B. IDA* (Iterative Deepening A*) performs depth-first search with increasing f-cost bounds.
 </details>
 
@@ -1053,7 +1053,7 @@ B. IDA* (Iterative Deepening A*) performs depth-first search with increasing f-c
 - D) h2 guarantees optimality but h1 does not
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B. h2(n) >= h1(n) for all n means h2 is closer to h*(n), so A* with h2 expands fewer nodes.
 </details>
 
@@ -1064,7 +1064,7 @@ B. h2(n) >= h1(n) for all n means h2 is closer to h*(n), so A* with h2 expands f
 - D) It cannot handle cycles
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B. Greedy best-first uses only h(n) — it ignores g(n). A cheap-looking heuristic path may actually be very long when cumulative cost is considered.
 </details>
 
@@ -1075,7 +1075,7 @@ B. Greedy best-first uses only h(n) — it ignores g(n). A cheap-looking heurist
 - D) A* becomes complete but not optimal
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 A. Overestimating h violates admissibility. A* may prune the optimal path and return a more expensive solution.
 </details>
 
@@ -1086,7 +1086,7 @@ A. Overestimating h violates admissibility. A* may prune the optimal path and re
 - D) A dynamic environment with changing costs
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B. IDA* uses only O(bd) memory vs A*'s O(b^d). For large state spaces where memory is the primary constraint, IDA* is the better choice.
 </details>
 

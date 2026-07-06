@@ -579,9 +579,9 @@ Sorted: 1/3 1/2 3/4 5/6
 | Step | Expression | Resolved As | Computation | Result |
 |------|-----------|-------------|-------------|--------|
 | 1 | `f1 == f3` | `operator==(f1, f3)` | num=1==2? No; actually 1/2 vs 2/4 normalized = 1/2 == 1/2 -> true | true |
-| 2 | `f1 < f2` | `operator<(f1, f2)` | 1*4 < 3*2 -> 4 < 6 -> true | true |
+| 2 | `f1 < f2` | `operator<(f1, f2)` | 1*4 &lt; 3*2 -&gt; 4 &lt; 6 -&gt; true | true |
 | 3 | `f1 != f2` | `operator!=(f1, f2)` | !(f1 == f2) -> !(1/2 == 3/4) -> !false | true |
-| 4 | `f2 > f1` | `operator>(f2, f1)` | rhs < lhs -> f1 < f2 -> true | true |
+| 4 | `f2 > f1` | `operator>(f2, f1)` | rhs &lt; lhs -&gt; f1 &lt; f2 -&gt; true | true |
 
 ### Complexity Analysis
 

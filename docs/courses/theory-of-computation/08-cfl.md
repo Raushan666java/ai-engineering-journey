@@ -259,7 +259,7 @@ This construction works because the DFA's finite memory can be absorbed into the
 - D) Any form
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Chomsky Normal Form: A ? BC (two non-terminals) or A ? a (single terminal).
 </details>
 
@@ -270,7 +270,7 @@ This construction works because the DFA's finite memory can be absorbed into the
 - D) O(2n)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** CYK uses dynamic programming with O(n³) time and O(n²) space.
 </details>
 
@@ -281,7 +281,7 @@ This construction works because the DFA's finite memory can be absorbed into the
 - D) Kleene star
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** Intersection of two CFLs may not be context-free (e.g., { anbnc? } n { anb?c? }).
 </details>
 
@@ -292,7 +292,7 @@ This construction works because the DFA's finite memory can be absorbed into the
 - D) No pumpable substrings
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** uv?xy?z — two substrings v and y can be pumped independently.
 </details>
 
@@ -303,7 +303,7 @@ This construction works because the DFA's finite memory can be absorbed into the
 - D) Two non-terminals
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Greibach Normal Form: A ? aa where a is a terminal and a is a string of variables.
 </details>
 
@@ -511,9 +511,9 @@ class CFLClosureTester {
 // -----------------------------------------------------
 
 class CFGAmbiguityChecker {
-  private productions: Map<string, string[][]>;
+  private productions: Map&lt;string, string[][]&gt;;
 
-  constructor(productions: Array<{ lhs: string; rhs: string[] }>) {
+  constructor(productions: Array&lt;{ lhs: string; rhs: string[] }&gt;) {
     this.productions = new Map();
     for (const p of productions) {
       const existing = this.productions.get(p.lhs) || [];
@@ -526,17 +526,17 @@ class CFGAmbiguityChecker {
   countParseTrees(input: string): number {
     const n = input.length;
     // table[i][j] = Map from nonterminal to number of parse trees for substring i..j
-    const table: Array<Array<Map<string, number>>> = [];
+    const table: Array&lt;Array<Map<string, number&gt;>> = [];
 
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i &lt; n; i++) {
       table[i] = new Array(n);
-      for (let j = 0; j < n; j++) {
+      for (let j = 0; j &lt; n; j++) {
         table[i][j] = new Map();
       }
     }
 
     // Fill diagonals (terminals)
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i &lt; n; i++) {
       for (const [lhs, rhss] of this.productions) {
         for (const rhs of rhss) {
           if (rhs.length === 1 && rhs[0] === input[i]) {
@@ -547,10 +547,10 @@ class CFGAmbiguityChecker {
     }
 
     // Fill for longer spans
-    for (let len = 2; len <= n; len++) {
-      for (let i = 0; i <= n - len; i++) {
+    for (let len = 2; len &lt;= n; len++) {
+      for (let i = 0; i &lt;= n - len; i++) {
         const j = i + len - 1;
-        for (let k = i; k < j; k++) {
+        for (let k = i; k &lt; j; k++) {
           for (const [lhs, rhss] of this.productions) {
             for (const rhs of rhss) {
               if (rhs.length === 2) {
@@ -670,20 +670,20 @@ export { Processor, Task }
 
 ```typescript
 type Grammar = {
-  variables: Set<string>;
-  terminals: Set<string>;
-  productions: Map<string, string[][]>;
+  variables: Set&lt;string&gt;;
+  terminals: Set&lt;string&gt;;
+  productions: Map&lt;string, string[][]&gt;;
   start: string;
 };
 
 function cykParse(grammar: Grammar, input: string): boolean {
   const n = input.length;
-  const table: Set<string>[][] = Array.from({ length: n }, () =>
-    Array.from({ length: n }, () => new Set<string>())
+  const table: Set&lt;string&gt;[][] = Array.from({ length: n }, () =>
+    Array.from({ length: n }, () => new Set&lt;string&gt;())
   );
 
   // Initialize: find all variables that derive each single symbol
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i &lt; n; i++) {
     const char = input[i];
     for (const [varName, rhsList] of grammar.productions) {
       for (const rhs of rhsList) {
@@ -695,10 +695,10 @@ function cykParse(grammar: Grammar, input: string): boolean {
   }
 
   // Fill table for longer substrings
-  for (let len = 2; len <= n; len++) {
-    for (let i = 0; i <= n - len; i++) {
+  for (let len = 2; len &lt;= n; len++) {
+    for (let i = 0; i &lt;= n - len; i++) {
       const j = i + len - 1;
-      for (let k = i; k < j; k++) {
+      for (let k = i; k &lt; j; k++) {
         for (const B of table[i][k]) {
           for (const C of table[k + 1][j]) {
             for (const [varName, rhsList] of grammar.productions) {
@@ -782,10 +782,10 @@ function checkOgdensCondition(
 
   const p = Math.floor(s.length / 3);
   // Simulate the lemma: try to find uvxyz decomposition
-  for (let vStart = 1; vStart < s.length - 1; vStart++) {
-    for (let vEnd = vStart + 1; vEnd < s.length; vEnd++) {
-      for (let yStart = vEnd; yStart < s.length - 1; yStart++) {
-        for (let yEnd = yStart + 1; yEnd <= s.length; yEnd++) {
+  for (let vStart = 1; vStart &lt; s.length - 1; vStart++) {
+    for (let vEnd = vStart + 1; vEnd &lt; s.length; vEnd++) {
+      for (let yStart = vEnd; yStart &lt; s.length - 1; yStart++) {
+        for (let yEnd = yStart + 1; yEnd &lt;= s.length; yEnd++) {
           const v = s.slice(vStart, vEnd);
           const y = s.slice(yStart, yEnd);
           if (v.length === 0 && y.length === 0) continue;
@@ -848,7 +848,7 @@ For context-free languages, several important questions are **decidable**, but o
 ```typescript
 type CFG = {
   start: string;
-  productions: Map<string, string[][]>;
+  productions: Map&lt;string, string[][]&gt;;
 };
 
 function membership(grammar: CFG, input: string): boolean {
@@ -858,9 +858,9 @@ function membership(grammar: CFG, input: string): boolean {
 }
 
 function isEmpty(grammar: CFG): boolean {
-  const reachable = new Set<string>();
+  const reachable = new Set&lt;string&gt;();
   const queue: string[] = [grammar.start];
-  const generatesTerminals = new Map<string, boolean>();
+  const generatesTerminals = new Map&lt;string, boolean&gt;();
 
   while (queue.length > 0) {
     const varName = queue.shift()!;
@@ -892,7 +892,7 @@ function isEmpty(grammar: CFG): boolean {
 
 function toCNF(grammar: CFG): CFG {
   // Step 1: Eliminate e-productions
-  const nullable = new Set<string>();
+  const nullable = new Set&lt;string&gt;();
   let changed = true;
   while (changed) {
     changed = false;
@@ -906,7 +906,7 @@ function toCNF(grammar: CFG): CFG {
   }
 
   // Step 2: Eliminate unit productions (A ? B)
-  const unitFree = new Map<string, string[][]>();
+  const unitFree = new Map&lt;string, string[][]&gt;();
   for (const [varName, rhsList] of grammar.productions) {
     const nonUnit: string[][] = [];
     for (const rhs of rhsList) {
@@ -942,10 +942,10 @@ Parikh's theorem is a powerful result that relates context-free languages to reg
 ### TypeScript: Parikh Vector Computations
 
 ```typescript
-type ParikhVector = Map<string, number>;
+type ParikhVector = Map&lt;string, number&gt;;
 
 function parikhVector(word: string, alphabet: string[]): ParikhVector {
-  const vec = new Map<string, number>();
+  const vec = new Map&lt;string, number&gt;();
   for (const sym of alphabet) vec.set(sym, 0);
   for (const ch of word) {
     if (vec.has(ch)) vec.set(ch, vec.get(ch)! + 1);
@@ -968,7 +968,7 @@ function isSemilinear(vectors: ParikhVector[]): boolean {
 // Example: Parikh image of a^n b^n
 function generateParikhExamples(): ParikhVector[] {
   const examples: ParikhVector[] = [];
-  for (let n = 0; n <= 10; n++) {
+  for (let n = 0; n &lt;= 10; n++) {
     const word = 'a'.repeat(n) + 'b'.repeat(n);
     examples.push(parikhVector(word, ['a', 'b']));
   }

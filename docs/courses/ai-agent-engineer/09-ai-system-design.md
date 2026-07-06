@@ -1022,7 +1022,7 @@ class AIGateway:
 
 | Time | Section | What to cover |
 |------|---------|---------------|
-| 0-5 min | Requirements | Functional: query historical tickets, suggest solutions, escalate. Non-functional: < 3s latency, 99.9% uptime, handle 1000 QPS peak |
+| 0-5 min | Requirements | Functional: query historical tickets, suggest solutions, escalate. Non-functional: &lt; 3s latency, 99.9% uptime, handle 1000 QPS peak |
 | 5-10 min | Data model | Ticket schema, chunk storage, embedding index, metadata filters |
 | 10-20 min | Architecture | Ingestion pipeline, retrieval pipeline, generation pipeline, caching layers |
 | 20-30 min | Component design | Chunking strategy, embedding model choice, vector DB selection, re-ranking |
@@ -1059,8 +1059,8 @@ class PIIDetector {
   private patterns: [RegExp,string][] = [
     [/\b\d{3}-\d{2}-\d{4}\b/g, "SSN"],[/(?:\d{4}-){3}\d{4}\b/g, "CreditCard"],[/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g, "Email"]
   ]
-  detect(text: string): Array<{type:string;value:string;position:number}> {
-    const found: Array<{type:string;value:string;position:number}> = []
+  detect(text: string): Array&lt;{type:string;value:string;position:number}&gt; {
+    const found: Array&lt;{type:string;value:string;position:number}&gt; = []
     for(const [pattern,type] of this.patterns) {
       let match: RegExpExecArray|null
       while((match = pattern.exec(text)) !== null) { found.push({type,value:match[0],position:match.index}) }

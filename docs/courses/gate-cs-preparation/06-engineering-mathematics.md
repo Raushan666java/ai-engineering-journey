@@ -1536,7 +1536,7 @@ x + y + 4z = 6
 - Râ‚‚ → Râ‚‚ - Râ‚: `[1 1 1 | 6; 0 1 2 | 4; 0 1 k-1 | 4]`
 - Râ‚ƒ → Râ‚ƒ - Râ‚‚: `[1 1 1 | 6; 0 1 2 | 4; 0 0 k-3 | 0]`
 - For infinite solutions: `k - 3 = 0` → `k = 3` (0 = 0, consistent)
-- For no solution: rank(A) < rank([A|b]). This occurs when LHS has a row of zeros but RHS does not. Since the RHS last entry is 0 after elimination, the system is always consistent when `k = 3`.
+- For no solution: rank(A) &lt; rank([A|b]). This occurs when LHS has a row of zeros but RHS does not. Since the RHS last entry is 0 after elimination, the system is always consistent when `k = 3`.
 - Wait → at k=3, we have `0 = 0` meaning consistent with infinite solutions.
 - When `k â‰  3`, `rank(A) = 3 = rank([A|b])` → unique solution.
 - No value of k gives inconsistency here. Let me recheck:

@@ -2614,43 +2614,43 @@ madam                          -> palindrome
 
 1. **Stack order:** If you push 1, 2, 3 onto a stack then pop once, what value do you get?
    A) 1   B) 2   C) 3   D) Error
-   <details><summary>Answer</summary>**C)** LIFO means the last pushed (3) is the first popped.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** LIFO means the last pushed (3) is the first popped.</details>
 
 2. **Queue order:** If you enqueue 1, 2, 3 then dequeue once, what value do you get?
    A) 1   B) 2   C) 3   D) Error
-   <details><summary>Answer</summary>**A)** FIFO means the first enqueued (1) is the first dequeued.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** FIFO means the first enqueued (1) is the first dequeued.</details>
 
 3. **Linked queue advantage:** What is the main advantage of a linked-list queue over an array-based circular queue?
    A) Faster access   B) No fixed maximum size   C) Less memory   D) Simpler implementation
-   <details><summary>Answer</summary>**B)** Linked queues grow dynamically; array queues have fixed capacity.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Linked queues grow dynamically; array queues have fixed capacity.</details>
 
 4. **BFS data structure:** Which data structure is most appropriate for breadth-first search?
    A) Stack   B) Queue   C) Array   D) Linked list
-   <details><summary>Answer</summary>**B)** BFS explores nodes level by level → queue provides the FIFO ordering needed.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** BFS explores nodes level by level → queue provides the FIFO ordering needed.</details>
 
 5. **Circular queue fix:** What problem does a circular queue solve compared to a linear queue?
    A) Slower access   B) The false-full problem   C) Memory waste   D) Complex implementation
-   <details><summary>Answer</summary>**B)** Linear queues cannot reuse slots after dequeue; circular queues wrap indices modulo N.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Linear queues cannot reuse slots after dequeue; circular queues wrap indices modulo N.</details>
 
 6. **Prefix expression:** What is the postfix form of `(A+B)*(C-D)`?
    A) AB+CD-*   B) AB+*CD-   C) +AB*-CD   D) ABCD+-*
-   <details><summary>Answer</summary>**A)** See shunting-yard algorithm: A B + C D - *.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** See shunting-yard algorithm: A B + C D - *.</details>
 
 7. **Postfix evaluation:** Evaluate `"23+5*"`.
    A) 13   B) 21   C) 25   D) 17
-   <details><summary>Answer</summary>**C)** (2+3)*5 = 25.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** (2+3)*5 = 25.</details>
 
 8. **Two-stack queue:** What is the amortized time complexity of dequeue in a two-stack queue implementation?
    A) O(1)   B) O(N)   C) O(log N)   D) O(NÂ²)
-   <details><summary>Answer</summary>**A)** Amortized O(1) → each element is moved between stacks at most once.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** Amortized O(1) → each element is moved between stacks at most once.</details>
 
 9. **Deque full form:** What does "deque" stand for?
    A) Double-Ended Queue   B) Deleted Queue   C) Double Queue   D) Dual-End Queue
-   <details><summary>Answer</summary>**A)** Double-Ended Queue → insertion and deletion at both ends.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** Double-Ended Queue → insertion and deletion at both ends.</details>
 
 10. **Stack application:** Which of these is NOT a typical stack application?
     A) Undo in editor   B) Browser back button   C) Print spooling   D) Function call stack
-    <details><summary>Answer</summary>**C)** Print spooling uses a queue (FIFO), not a stack (LIFO).</details>
+    <details><summary>Answer&lt;/summary&gt;**C)** Print spooling uses a queue (FIFO), not a stack (LIFO).</details>
 
 ---
 

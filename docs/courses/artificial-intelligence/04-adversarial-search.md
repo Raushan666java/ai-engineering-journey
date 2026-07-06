@@ -619,7 +619,7 @@ Common adversarial search questions in technical interviews and their expert ans
 - C) The average of its children's values
 - D) The sum of its children's values
 
-<details><summary>Answer</summary>B) MAX nodes select the child with the highest backed-up value.</details>
+<details><summary>Answer&lt;/summary&gt;B) MAX nodes select the child with the highest backed-up value.</details>
 
 **Q2:** What condition triggers alpha-beta pruning?
 - A) When α ≤ β
@@ -627,7 +627,7 @@ Common adversarial search questions in technical interviews and their expert ans
 - C) When search depth exceeds limit
 - D) When all nodes are evaluated
 
-<details><summary>Answer</summary>B) Pruning occurs when α ≥ β, meaning the current branch cannot affect the final decision.</details>
+<details><summary>Answer&lt;/summary&gt;B) Pruning occurs when α ≥ β, meaning the current branch cannot affect the final decision.</details>
 
 **Q3:** What is the "horizon effect"?
 - A) The game tree is too deep to search completely
@@ -635,7 +635,7 @@ Common adversarial search questions in technical interviews and their expert ans
 - C) Alpha-beta only works for shallow trees
 - D) The branching factor increases at deeper levels
 
-<details><summary>Answer</summary>B) The horizon effect occurs when a detrimental consequence is pushed beyond the search cutoff depth, making a move appear better than it actually is.</details>
+<details><summary>Answer&lt;/summary&gt;B) The horizon effect occurs when a detrimental consequence is pushed beyond the search cutoff depth, making a move appear better than it actually is.</details>
 
 **Q4:** Which factor most significantly impacts Alpha-Beta pruning efficiency?
 - A) The programming language used
@@ -643,7 +643,7 @@ Common adversarial search questions in technical interviews and their expert ans
 - C) The size of the game board
 - D) The number of players
 
-<details><summary>Answer</summary>B) Move ordering is the single most important factor. Best-first ordering can achieve \( b^{d/2} \) complexity; worst-first degrades to \( b^d \).</details>
+<details><summary>Answer&lt;/summary&gt;B) Move ordering is the single most important factor. Best-first ordering can achieve \( b^{d/2} \) complexity; worst-first degrades to \( b^d \).</details>
 
 **Q5:** What distinguishes Expectiminimax from Minimax?
 - A) Expectiminimax uses a different utility function
@@ -651,7 +651,7 @@ Common adversarial search questions in technical interviews and their expert ans
 - C) Expectiminimax only works for single-player games
 - D) Expectiminimax is always faster
 
-<details><summary>Answer</summary>B) Expectiminimax introduces chance nodes that average child values weighted by their probabilities, handling games with random elements like dice (Backgammon) or shuffled cards.</details>
+<details><summary>Answer&lt;/summary&gt;B) Expectiminimax introduces chance nodes that average child values weighted by their probabilities, handling games with random elements like dice (Backgammon) or shuffled cards.</details>
 
 ---
 

@@ -140,7 +140,7 @@ Initial tree:
 
 | Step | Current Node | Keys Scanned | i | Comparison | Action |
 |------|-------------|-------------|---|-----------|--------|
-| 1 | [30,60,90] | 30,60 | 1 | 55 < 60 | Follow child[1] |
+| 1 | [30,60,90] | 30,60 | 1 | 55 &lt; 60 | Follow child[1] |
 | 2 | [40,50] | 40,50 | 2 | 55 not in leaf | Not found |
 
 **Result:** Key 55 not found.
@@ -149,7 +149,7 @@ Initial tree:
 
 | Step | Current Node | Keys Scanned | i | Comparison | Action |
 |------|-------------|-------------|---|-----------|--------|
-| 1 | [30,60,90] | 30,60,90 | 2 | 70 > 60 but < 90 | Follow child[2] |
+| 1 | [30,60,90] | 30,60,90 | 2 | 70 > 60 but &lt; 90 | Follow child[2] |
 | 2 | [70,80] | 70 | 0 | key == 70 | Found at node[2], pos[0] |
 
 **Result:** Key 70 found.
@@ -1267,7 +1267,7 @@ Leaves:    [10,30,50] → [60,80,100] → [120,150,200]
 | Step | Action |
 |------|--------|
 | 1 | Search for key ≥ 20 at root [50,100] |
-| 2 | 20 < 50, follow child[0] to leaf [10,30,50] |
+| 2 | 20 &lt; 50, follow child[0] to leaf [10,30,50] |
 | 3 | Scan leaf: skip 10, output 30, 50 |
 | 4 | Follow leaf link → next leaf [60,80,100] |
 | 5 | Scan: output 60, 80. 100 > 90, stop. |

@@ -2361,7 +2361,7 @@ Example: `SELECT a.name, b.name FROM employees a JOIN employees b ON a.manager_i
 
 **Answer:**
 - **Hash Join** is chosen when joining **large tables** with an equality condition. It builds a hash table on the smaller table and probes with the larger. It requires memory proportional to the smaller table.
-- **Nested Loop Join** is chosen when one table is **small** (typically < 100 rows) or when the join condition uses non-equality operators (<, >, BETWEEN). With an index on the inner table, Index Nested Loop is very efficient.
+- **Nested Loop Join** is chosen when one table is **small** (typically &lt; 100 rows) or when the join condition uses non-equality operators (<, &gt;, BETWEEN). With an index on the inner table, Index Nested Loop is very efficient.
 - **Merge Join** is chosen when both tables are **already sorted** on the join key (common with indexed columns). It avoids the hash table memory overhead.
 
 #### Q8: What is a CROSS JOIN and when is it useful?

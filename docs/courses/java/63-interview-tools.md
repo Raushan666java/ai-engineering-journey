@@ -25,7 +25,8 @@ flowchart LR
     C --> D[Best Practices]
 ```
 
-### Q1: What is Maven and what problem does it solve?
+### Q1: What is Maven and what problem does it solve?
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -886,7 +887,7 @@ resources:
 
 For Java: `-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0` so JVM respects container limits.
 
-QoS classes: Guaranteed (request = limit), Burstable (request < limit), BestEffort (no requests/limits).
+QoS classes: Guaranteed (request = limit), Burstable (request &lt; limit), BestEffort (no requests/limits).
 
 ---
 

@@ -62,11 +62,11 @@ $$\lim_{n \to \infty} \frac{|e_{n+1}|}{|e_n|^p} = C$$
 
 #### 7.2.1 Bisection Method
 
-Find root of $f(x) = 0$ on $[a, b]$ where $f(a)f(b) < 0$.
+Find root of $f(x) = 0$ on $[a, b]$ where $f(a)f(b) &lt; 0$.
 
 1. Compute $c = (a+b)/2$
 2. If $f(c) = 0$, done
-3. If $f(a)f(c) < 0$, set $b = c$; else set $a = c$
+3. If $f(a)f(c) &lt; 0$, set $b = c$; else set $a = c$
 4. Repeat until $|b-a| < \text{tolerance}$
 
 **Convergence:** Linear, guaranteed. Error halves each iteration.
@@ -471,15 +471,15 @@ console.log(`Gauss-2 ?0? e^(-x?) dx: ${gaussQuad2(gaussian, 0, 1).toFixed(6)} (e
 function jacobi(A: number[][], b: number[], tol: number = 1e-8, maxIter: number = 1000): number[] {
   const n = b.length;
   let x = new Array(n).fill(0);
-  for (let iter = 0; iter < maxIter; iter++) {
+  for (let iter = 0; iter &lt; maxIter; iter++) {
     const xNew = x.map((_, i) => {
       let sum = 0;
-      for (let j = 0; j < n; j++) if (j !== i) sum += A[i][j] * x[j];
+      for (let j = 0; j &lt; n; j++) if (j !== i) sum += A[i][j] * x[j];
       return (b[i] - sum) / A[i][i];
     });
     const error = Math.sqrt(xNew.reduce((s, xi, i) => s + (xi - x[i]) ** 2, 0));
     x = xNew;
-    if (error < tol) break;
+    if (error &lt; tol) break;
   }
   return x;
 }
@@ -633,11 +633,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -645,7 +645,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -671,7 +671,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -689,23 +689,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'engineering-math demo')
   const log = new Logger()
@@ -959,7 +959,7 @@ flowchart TB
 - **Interpolation:** Use splines for smooth data; avoid high-degree Lagrange for many points
 - **Integration:** Gaussian quadrature for smooth functions; Simpson for equally spaced data; Monte Carlo for high dimensions
 - **ODEs:** RK4 as default; implicit methods (backward Euler, BDF) for stiff equations
-- **Linear Systems:** Direct methods (LU) for dense $n < 10^4$; iterative (CG, GMRES) for sparse large systems
+- **Linear Systems:** Direct methods (LU) for dense $n &lt; 10^4$; iterative (CG, GMRES) for sparse large systems
 
 ## Notation Reference
 

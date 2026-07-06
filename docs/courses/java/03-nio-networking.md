@@ -2725,7 +2725,7 @@ public class BufferSizeBenchmark {
    - D) It is the only way to read files
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It performs zero-copy transfer directly between channels.** transferTo/transferFrom avoids copying data through application memory, making it highly efficient for large file transfers.
 </details>
 
@@ -2736,7 +2736,7 @@ public class BufferSizeBenchmark {
    - D) `wakeup()`
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) `selectedKeys()`.** After select() blocks until channels are ready, selectedKeys() returns the Set of SelectionKeys ready for processing.
 </details>
 
@@ -2747,7 +2747,7 @@ public class BufferSizeBenchmark {
    - D) Rewinds the buffer to the beginning
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Switches from write mode to read mode.** After writing data into a buffer, flip() prepares it for reading by setting limit to current position and position to 0.
 </details>
 
@@ -2758,7 +2758,7 @@ public class BufferSizeBenchmark {
    - D) Channel-based I/O
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) FileVisitor and WatchService.** NIO.2 enhanced the original NIO with a comprehensive filesystem API including symbolic link support, file tree walking, and directory change monitoring.
 </details>
 

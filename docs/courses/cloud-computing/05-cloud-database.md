@@ -188,8 +188,8 @@ console.log("Estimated monthly cost:", sessionTable.estimateMonthlyCost(), "USD"
 - **Write-Behind:** Data is written to cache first, DB update is queued asynchronously.
 
 \\\	ypescript
-class CacheAsideStrategy<T> {
-  private cache: Map<string, { data: T; expiry: number }> = new Map();
+class CacheAsideStrategy&lt;T> {
+  private cache: Map&lt;string, { data: T; expiry: number }&gt; = new Map();
   private defaultTTL: number;
 
   constructor(defaultTTLMs: number = 300000) {
@@ -198,11 +198,11 @@ class CacheAsideStrategy<T> {
 
   async get(
     key: string,
-    fetchFromDb: () => Promise<T | null>,
+    fetchFromDb: () => Promise&lt;T | null&gt;,
     ttlMs?: number
-  ): Promise<T | null> {
+  ): Promise&lt;T | null&gt; {
     const cached = this.cache.get(key);
-    if (cached && Date.now() < cached.expiry) {
+    if (cached && Date.now() &lt; cached.expiry) {
       return cached.data;
     }
 
@@ -227,9 +227,9 @@ class CacheAsideStrategy<T> {
 }
 
 class UserService {
-  private cache = new CacheAsideStrategy<{ id: number; name: string }>(60000);
+  private cache = new CacheAsideStrategy&lt;{ id: number; name: string }&gt;(60000);
 
-  async getUser(id: number): Promise<{ id: number; name: string } | null> {
+  async getUser(id: number): Promise&lt;{ id: number; name: string } | null&gt; {
     return this.cache.get(
       "user:" + id,
       async () => {
@@ -239,7 +239,7 @@ class UserService {
     );
   }
 
-  async updateUser(id: number, name: string): Promise<void> {
+  async updateUser(id: number, name: string): Promise&lt;void&gt; {
     console.log("Updated user", id, "with name", name);
     this.cache.invalidate("user:" + id);
   }
@@ -330,13 +330,13 @@ class ConnectionPool {
     this.maxSize = maxSize;
   }
 
-  async acquire(): Promise<string> {
+  async acquire(): Promise&lt;string&gt; {
     if (this.pool.length > 0) {
       this.acquired++;
       return this.pool.pop()!;
     }
 
-    if (this.acquired < this.maxSize) {
+    if (this.acquired &lt; this.maxSize) {
       this.acquired++;
       return "new-connection-" + this.acquired;
     }
@@ -351,7 +351,7 @@ class ConnectionPool {
 }
 
 const pool = new ConnectionPool(5);
-async function query(sql: string): Promise<any[]> {
+async function query(sql: string): Promise&lt;any[]&gt; {
   const conn = await pool.acquire();
   try {
     console.log("Executing query on", conn);
@@ -421,7 +421,7 @@ aws rds create-db-instance-read-replica \
    - D) Performance
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Consistency or Availability.** Since network partitions are inevitable, you must choose between CP (sacrifice availability) and AP (sacrifice consistency). You cannot have all three.
 </details>
 
@@ -432,7 +432,7 @@ aws rds create-db-instance-read-replica \
    - D) Spot
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) On-Demand.** On-Demand mode charges per request and scales automatically to handle any traffic spike. Provisioned mode requires predicting capacity in advance, which can lead to throttling or over-provisioning for unpredictable workloads.
 </details>
 
@@ -443,7 +443,7 @@ aws rds create-db-instance-read-replica \
    - D) Data replication to a different region
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Automatic failover during an AZ outage.** Multi-AZ maintains a synchronous standby replica in a different Availability Zone. If the primary fails, RDS automatically fails over to the standby with no data loss.
 </details>
 
@@ -454,7 +454,7 @@ aws rds create-db-instance-read-replica \
    - D) The request is queued for later processing
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) The application fetches data from the database and writes it to the cache.** In cache-aside, the application is responsible for loading cache misses: check cache ? miss ? query DB ? populate cache ? return to caller.
 </details>
 
@@ -465,7 +465,7 @@ aws rds create-db-instance-read-replica \
    - D) Relational OLTP database
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) OLAP data warehouse.** Data warehouses like Redshift and BigQuery use denormalized schemas optimized for complex analytical queries. OLTP databases typically use normalized schemas optimized for fast transactions.
 </details>
 

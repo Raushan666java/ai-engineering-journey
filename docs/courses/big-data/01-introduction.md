@@ -310,7 +310,7 @@ Parquet is the recommended default for analytical workloads. It stores columnar 
    - D) All three equally
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Volume.** While variety and velocity pose challenges, it's the sheer volume of data at petabyte scale that overwhelms single-node architectures and forces the shift to distributed processing.
 </details>
 
@@ -321,7 +321,7 @@ Parquet is the recommended default for analytical workloads. It stores columnar 
    - D) It's faster to write
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Columnar storage with predicate pushdown.** Parquet stores data by column, allowing query engines to read only the needed columns and skip irrelevant row groups based on min/max statistics.
 </details>
 
@@ -332,7 +332,7 @@ Parquet is the recommended default for analytical workloads. It stores columnar 
    - D) Spark runs on Kubernetes
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Spark processes data in memory instead of writing intermediate results to disk.** This eliminates the disk I/O bottleneck that made MapReduce 10-100x slower for multi-stage jobs.
 </details>
 

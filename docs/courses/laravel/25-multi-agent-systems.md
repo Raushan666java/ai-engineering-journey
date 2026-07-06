@@ -2765,28 +2765,28 @@ test('parallel analysis dispatches batch of agent jobs', function () {
    - B) Supervisor/Worker
    - C) Event sourcing
    - D) CQRS
-   <details><summary>Answer</summary>**B)** The supervisor delegates tasks to workers via queues and aggregates results.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The supervisor delegates tasks to workers via queues and aggregates results.</details>
 
 2. Where is shared agent state stored?
    - A) Database
    - B) Redis with TTL
    - C) File system
    - D) Session
-   <details><summary>Answer</summary>**B)** Redis stores shared agent state with TTL for automatic cleanup.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Redis stores shared agent state with TTL for automatic cleanup.</details>
 
 3. What happens when a worker agent fails?
    - A) The entire system fails
    - B) The job is retried or sent to a dead-letter queue
    - C) The supervisor retries indefinitely
    - D) The failure is ignored
-   <details><summary>Answer</summary>**B)** Failed jobs are retried and eventually sent to a dead-letter queue for analysis.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Failed jobs are retried and eventually sent to a dead-letter queue for analysis.</details>
 
 4. How are agents tested in isolation?
    - A) Integration tests only
    - B) Unit tests with mock responses
    - C) End-to-end tests
    - D) Manual testing
-   <details><summary>Answer</summary>**B)** Each agent is tested in isolation with unit tests using mock responses from other agents.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Each agent is tested in isolation with unit tests using mock responses from other agents.</details>
 
 ## Concept Comparison Table
 
@@ -2820,28 +2820,28 @@ test('parallel analysis dispatches batch of agent jobs', function () {
    - B) Supervisor/Worker
    - C) Event sourcing
    - D) CQRS
-   <details><summary>Answer</summary>**B)** The supervisor delegates tasks to workers via queues and aggregates results.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The supervisor delegates tasks to workers via queues and aggregates results.</details>
 
 2. Where is shared agent state stored?
    - A) Database
    - B) Redis with TTL
    - C) File system
    - D) Session
-   <details><summary>Answer</summary>**B)** Redis stores shared agent state with TTL for automatic cleanup.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Redis stores shared agent state with TTL for automatic cleanup.</details>
 
 3. What happens when a worker agent fails?
    - A) The entire system fails
    - B) The job is retried or sent to a dead-letter queue
    - C) The supervisor retries indefinitely
    - D) The failure is ignored
-   <details><summary>Answer</summary>**B)** Failed jobs are retried and eventually sent to a dead-letter queue for analysis.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Failed jobs are retried and eventually sent to a dead-letter queue for analysis.</details>
 
 4. How are agents tested in isolation?
    - A) Integration tests only
    - B) Unit tests with mock responses
    - C) End-to-end tests
    - D) Manual testing
-   <details><summary>Answer</summary>**B)** Each agent is tested in isolation with unit tests using mock responses from other agents.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Each agent is tested in isolation with unit tests using mock responses from other agents.</details>
 
 ## Summary
 

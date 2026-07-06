@@ -97,9 +97,9 @@ graph LR
 |------------|---------|-------|-------------------|----------|
 | Sigmoid | $\sigma(x) = \frac{1}{1+e^{-x}}$ | (0, 1) | Vanishes for $|x|>3$ | Binary output layer |
 | Tanh | $\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}$ | (-1, 1) | Vanishes for $|x|>3$ | Zero-centered hidden |
-| ReLU | $f(x) = \max(0, x)$ | [0, 8) | 1 for $x>0$, 0 for $x<0$ | Default hidden layer |
-| Leaky ReLU | $f(x) = \max(0.01x, x)$ | (-8, 8) | 0.01 for $x<0$, 1 for $x>0$ | Avoids dying ReLU |
-| ELU | $f(x) = x \text{ if } x>0, \alpha(e^x-1) \text{ else}$ | (-a, 8) | Smooth for $x<0$ | Deeper networks |
+| ReLU | $f(x) = \max(0, x)$ | [0, 8) | 1 for $x>0$, 0 for $x&lt;0$ | Default hidden layer |
+| Leaky ReLU | $f(x) = \max(0.01x, x)$ | (-8, 8) | 0.01 for $x&lt;0$, 1 for $x&gt;0$ | Avoids dying ReLU |
+| ELU | $f(x) = x \text{ if } x>0, \alpha(e^x-1) \text{ else}$ | (-a, 8) | Smooth for $x&lt;0$ | Deeper networks |
 | GELU | $f(x) = x \cdot \Phi(x)$ | (-8, 8) | Smooth everywhere | Transformers |
 | Swish | $f(x) = x \cdot \sigma(x)$ | (-8, 8) | Non-monotonic | Deep NAS-found nets |
 | Softmax | $\sigma(\mathbf{z})_i = e^{z_i} / \sum e^{z_j}$ | (0, 1) | Shift-invariant | Multi-class output |
@@ -888,11 +888,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -900,7 +900,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -926,7 +926,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -944,23 +944,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'ml-algorithms demo')
   const log = new Logger()

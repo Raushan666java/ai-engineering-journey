@@ -988,7 +988,7 @@ Record yourself answering interview questions on video for 5 minutes. Watch it o
 - C) Only current role details
 - D) Random highlights
 
-<details><summary><b>Answer</b></summary>B) Past Present Future = a structured 60-second pitch focused on relevance.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;B) Past Present Future = a structured 60-second pitch focused on relevance.</details>
 
 **Q2:** Which GD entry strategy has the highest success rate?
 
@@ -997,7 +997,7 @@ Record yourself answering interview questions on video for 5 minutes. Watch it o
 - C) Listen for 30-60 seconds, then enter with a structured point
 - D) Interrupt the loudest speaker
 
-<details><summary><b>Answer</b></summary>C) Listen, structure your thought, then enter with a meaningful point = quality trumps speed.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;C) Listen, structure your thought, then enter with a meaningful point = quality trumps speed.</details>
 
 **Q3:** What should you do immediately after an interview?
 
@@ -1006,7 +1006,7 @@ Record yourself answering interview questions on video for 5 minutes. Watch it o
 - C) Call the recruiter
 - D) Post about it on LinkedIn
 
-<details><summary><b>Answer</b></summary>B) Send a thoughtful thank-you email within 24 hours, referencing specific discussion points.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;B) Send a thoughtful thank-you email within 24 hours, referencing specific discussion points.</details>
 
 ## One-Sentence Takeaway
 

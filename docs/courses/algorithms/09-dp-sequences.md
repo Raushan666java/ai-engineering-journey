@@ -125,9 +125,9 @@ X = "ABCBDAB" (m = 7), Y = "BDCABA" (n = 6)
 - `i=7 (B), j=5 (B)`: B=B → dp[7][5] = dp[6][4] + 1 = 4
 
 **Reconstruction traceback from (7,6):**
-dp[7][6]=4 → (7,5): B≠A, dp[6][5]=3 < dp[7][6]=4 → j-- → (7,5): B=B → take 'B', i=6, j=4
+dp[7][6]=4 → (7,5): B≠A, dp[6][5]=3 &lt; dp[7][6]=4 → j-- → (7,5): B=B → take 'B', i=6, j=4
 dp[6][4]=3 → (6,4): A=A → take 'A', i=5, j=3
-dp[5][3]=2 → (5,3): D≠C, dp[4][3]=1 < dp[5][3]=2 → j-- → (5,2): D≠B, dp[4][2]=1 < dp[5][2]=2 → j-- → (5,1): D≠B, dp[4][1]=1 = dp[5][1]=1 → j-- → (5,0): stop
+dp[5][3]=2 → (5,3): D≠C, dp[4][3]=1 &lt; dp[5][3]=2 → j-- → (5,2): D≠B, dp[4][2]=1 < dp[5][2]=2 → j-- → (5,1): D≠B, dp[4][1]=1 = dp[5][1]=1 → j-- → (5,0): stop
 Backtrack from dp[4][1]: (4,1): B=B → take 'B', i=3, j=0 → stop
 
 LCS = "BCAB" (or alternatively "BCBA" through different equal choices — both length 4).
@@ -309,16 +309,16 @@ LIS_N2(A, n):
 
 A = [10, 9, 2, 5, 3, 7, 101, 18]
 
-| i | A[i] | j | A[j] < A[i]? | dp[i] before | dp[i] after |
+| i | A[i] | j | A[j] &lt; A[i]? | dp[i] before | dp[i] after |
 |---|------|---|--------------|--------------|-------------|
 | 0 | 10 | — | — | 1 | 1 |
-| 1 | 9 | 0 | 10<9? No | 1 | 1 |
-| 2 | 2 | 0,1 | 10<2? No, 9<2? No | 1 | 1 |
-| 3 | 5 | 0,1,2 | 10<5? No, 9<5? No, 2<5? Yes → dp[3]=max(1,1+dp[2])=max(1,2)=2 | 1 | 2 |
-| 4 | 3 | 0,1,2,3 | 10<3? No, 9<3? No, 2<3? Yes → dp[4]=max(1,1+1)=2, 5<3? No | 1 | 2 |
-| 5 | 7 | 0-4 | 2<7 → dp[5]=max(1,1+1)=2, 5<7 → max(2,1+2)=3, 3<7 → max(3,1+2)=3 | 1 | 3 |
-| 6 | 101 | 0-5 | 7<101 → dp[6]=max(1,1+3)=4 | 1 | 4 |
-| 7 | 18 | 0-6 | 7<18 → max(1,1+3)=4, 101<18? No | 1 | 4 |
+| 1 | 9 | 0 | 10&lt;9? No | 1 | 1 |
+| 2 | 2 | 0,1 | 10&lt;2? No, 9<2? No | 1 | 1 |
+| 3 | 5 | 0,1,2 | 10&lt;5? No, 9<5? No, 2<5? Yes → dp[3]=max(1,1+dp[2])=max(1,2)=2 | 1 | 2 |
+| 4 | 3 | 0,1,2,3 | 10&lt;3? No, 9<3? No, 2<3? Yes → dp[4]=max(1,1+1)=2, 5<3? No | 1 | 2 |
+| 5 | 7 | 0-4 | 2&lt;7 → dp[5]=max(1,1+1)=2, 5<7 → max(2,1+2)=3, 3<7 → max(3,1+2)=3 | 1 | 3 |
+| 6 | 101 | 0-5 | 7&lt;101 → dp[6]=max(1,1+3)=4 | 1 | 4 |
+| 7 | 18 | 0-6 | 7&lt;18 → max(1,1+3)=4, 101<18? No | 1 | 4 |
 
 Final `dp = [1, 1, 1, 2, 2, 3, 4, 4]`, LIS length = 4.
 
@@ -356,13 +356,13 @@ A = [10, 9, 2, 5, 3, 7, 101, 18]
 | x | binary search on tails | action | tails after |
 |---|----------------------|--------|------------|
 | 10 | [] → i=0 = len | append 10 | [10] |
-| 9 | lower_bound([10], 9) → 0 < len | replace tails[0]=9 | [9] |
-| 2 | lower_bound([9], 2) → 0 < len | replace tails[0]=2 | [2] |
+| 9 | lower_bound([10], 9) → 0 &lt; len | replace tails[0]=9 | [9] |
+| 2 | lower_bound([9], 2) → 0 &lt; len | replace tails[0]=2 | [2] |
 | 5 | lower_bound([2], 5) → 1 = len | append 5 | [2, 5] |
-| 3 | lower_bound([2,5], 3) → 1 < len | replace tails[1]=3 | [2, 3] |
+| 3 | lower_bound([2,5], 3) → 1 &lt; len | replace tails[1]=3 | [2, 3] |
 | 7 | lower_bound([2,3], 7) → 2 = len | append 7 | [2, 3, 7] |
 | 101 | lower_bound([2,3,7], 101) → 3 = len | append 101 | [2, 3, 7, 101] |
-| 18 | lower_bound([2,3,7,101], 18) → 3 < len | replace tails[3]=18 | [2, 3, 7, 18] |
+| 18 | lower_bound([2,3,7,101], 18) → 3 &lt; len | replace tails[3]=18 | [2, 3, 7, 18] |
 
 LIS length = 4.
 
@@ -979,7 +979,7 @@ S = "ababbbabbababa" (n=14) — simplified as S = "aab" (n=3) for illustration.
 
 Computations:
 - isPal[0][0]=true, isPal[1][1]=true, isPal[2][2]=true
-- L=2: i=0,j=1: S[0]=a=S[1]=a, j-i=1<2 → isPal[0][1]=true
+- L=2: i=0,j=1: S[0]=a=S[1]=a, j-i=1&lt;2 → isPal[0][1]=true
 - L=2: i=1,j=2: S[1]=a≠S[2]=b → isPal[1][2]=false
 - L=3: i=0,j=2: S[0]=a≠S[2]=b → isPal[0][2]=false
 
@@ -1092,7 +1092,7 @@ public static int minPalindromePartition(String S) {
 
 #### Complexity Analysis — With WHY
 
-- **Time: O(n²)** — Palindrome precomputation is O(n²) (nested loops over substring lengths and start positions). The cuts DP is also O(n²) (each i checks all j < i). Combined: O(n²).
+- **Time: O(n²)** — Palindrome precomputation is O(n²) (nested loops over substring lengths and start positions). The cuts DP is also O(n²) (each i checks all j &lt; i). Combined: O(n²).
 - **Space: O(n²)** — The palindrome table isO(n²) boolean entries. Without precomputation, checking isPal inside the cut loop would be O(n³) — the precomputation is essential.
 - **Why O(n²) and not O(n³)?** The palindrome expansion uses the recurrence `isPal[i][j]` = `(S[i] == S[j]) && isPal[i+1][j-1]` — this is O(1) per substring, avoiding the naive O(n³) expand-from-center approach.
 
@@ -1305,7 +1305,7 @@ def longest_palindromic_subsequence(S):
 | Problem | Pattern | Technique | Key Insight |
 |---------|---------|-----------|-------------|
 | LIS length | Subsequence DP | Patience sort | tails array, binary search, O(n log n) |
-| Max sum increasing subsequence | Subsequence DP | O(n²) DP | dp[i] = A[i] + max(dp[j]) for A[j] < A[i] |
+| Max sum increasing subsequence | Subsequence DP | O(n²) DP | dp[i] = A[i] + max(dp[j]) for A[j] &lt; A[i] |
 | Edit distance | Two-sequence | Standard DP | min(insert, delete, replace) |
 | Shortest common supersequence | Two-sequence | LCS derivative | len = m + n - LCS |
 | Longest palindromic subsequence | Interval DP | LCS(S, reverse(S)) | Or interval DP expanding from center |
@@ -1405,7 +1405,7 @@ MOSS (Measure Of Software Similarity) and JPlag detect code plagiarism using seq
 | Problem | DP Dimension | State | Recurrence Pattern | Complexity |
 |---------|-------------|-------|-------------------|------------|
 | LCS | 2D (i,j) | dp[i][j] = LCS length | match → +1 diagonal, mismatch → max neighbors | O(mn) |
-| LIS | 1D (i) | dp[i] = LIS ending at i | dp[i] = 1 + max dp[j] where A[j] < A[i] | O(n²) / O(n log n) |
+| LIS | 1D (i) | dp[i] = LIS ending at i | dp[i] = 1 + max dp[j] where A[j] &lt; A[i] | O(n²) / O(n log n) |
 | Edit Distance | 2D (i,j) | dp[i][j] = min ops | min(insert, delete, replace) = base+1 | O(mn) |
 | Matrix Chain | 2D interval | dp[i][j] = min cost at split k | min over k of dp[i][k] + dp[k+1][j] + cost | O(n³) |
 | Palindrome Partition | 1D (i) | dp[i] = min cuts for prefix | dp[j] + 1 if S[j+1..i] is palindrome | O(n²) |
@@ -1465,7 +1465,7 @@ MOSS (Measure Of Software Similarity) and JPlag detect code plagiarism using seq
 - D) A queue
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The tails array stores the smallest possible last element for each subsequence length; binary search finds insertion position.
 </details>
 
@@ -1477,7 +1477,7 @@ B) The tails array stores the smallest possible last element for each subsequenc
 - D) Push, pop, shift
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 A) Insert (add character), delete (remove character), replace (substitute one character for another).
 </details>
 
@@ -1489,7 +1489,7 @@ A) Insert (add character), delete (remove character), replace (substitute one ch
 - D) dp[k][j] + dp[i][k-1]
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The total cost is the left subproblem (A_i..A_k) + right subproblem (A_{k+1}..A_j) + the cost of multiplying the two resulting matrices (p[i-1] × p[k] × p[j]).
 </details>
 
@@ -1501,7 +1501,7 @@ B) The total cost is the left subproblem (A_i..A_k) + right subproblem (A_{k+1}.
 - D) len(X) + len(Y)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 A) SCS length = m + n - LCS length, because LCS characters appear once and the rest from each string are added.
 </details>
 
@@ -1513,7 +1513,7 @@ A) SCS length = m + n - LCS length, because LCS characters appear once and the r
 - D) Subsequence DP
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Burst Balloons is an interval DP problem where dp[i][j] considers the last balloon to burst in the range, similar to matrix chain multiplication.
 </details>
 

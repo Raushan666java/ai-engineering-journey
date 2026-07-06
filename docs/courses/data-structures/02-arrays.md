@@ -333,7 +333,7 @@ public class ArrayADT {
 1. **Empty array** (n = 0) — read/delete/search on empty array throws IndexOutOfBounds or returns -1
 2. **Single element** (n = 1) — insert at end works, delete at 0 leaves empty array
 3. **Full array** (n = capacity) — insert raises overflow; resize needed in dynamic arrays
-4. **Index out of bounds** — insert i < 0 or i > n, delete/read i < 0 or i >= n
+4. **Index out of bounds** — insert i &lt; 0 or i &gt; n, delete/read i &lt; 0 or i &gt;= n
 5. **Insert at end** (i = n) — valid, no elements shift; best-case insertion
 6. **Insert at front** (i = 0) — worst case, all n elements shift right
 7. **Delete from end** (i = n-1) — valid, no elements shift
@@ -608,7 +608,7 @@ Remove element at position `pos`, shifting all elements from `pos+1` to `n-1` le
 
 **Algorithm Steps:**
 1. Check if array is empty — if so, report underflow
-2. Check if pos is valid (0 ≤ pos < n) — if not, report out of bounds
+2. Check if pos is valid (0 ≤ pos &lt; n) — if not, report out of bounds
 3. Shift all elements from pos+1 to n-1 by one position left
 4. Decrement n
 
@@ -644,7 +644,7 @@ Visit each element from index 0 to n-1 exactly once, performing an operation (pr
 
 **Algorithm Steps:**
 1. Initialize i = 0
-2. While i < n: process arr[i], then i = i + 1
+2. While i &lt; n: process arr[i], then i = i + 1
 3. Done
 
 **Pseudocode:**
@@ -811,7 +811,7 @@ public class ArrayOps {
 - **Insert into empty array** (n=0): pos must be 0; arr[0] = val
 - **Delete from single-element array**: n becomes 0
 - **Insert when n = capacity**: overflow — caller must resize first
-- **Delete invalid index**: pos ≥ n or pos < 0 → throw/return error
+- **Delete invalid index**: pos ≥ n or pos &lt; 0 → throw/return error
 
 ---
 
@@ -1038,7 +1038,7 @@ A **deck of cards** held face-down. You flip the entire deck: the top card becom
 ### Algorithm (Two-Pointer Swap)
 
 1. Initialize left = 0, right = n - 1
-2. While left < right: swap arr[left] and arr[right], then left++, right--
+2. While left &lt; right: swap arr[left] and arr[right], then left++, right--
 3. When left ≥ right, stop (middle element stays in place for odd n)
 
 ### Pseudocode
@@ -1363,10 +1363,10 @@ Given a **sorted** array and a target sum, find a pair (i, j) such that arr[i] +
 ### Algorithm
 
 1. Initialize left = 0, right = n - 1
-2. While left < right:
+2. While left &lt; right:
    - sum = arr[left] + arr[right]
    - If sum == target: return (left, right)
-   - If sum < target: left++ (need larger sum)
+   - If sum &lt; target: left++ (need larger sum)
    - If sum > target: right-- (need smaller sum)
 3. If loop ends: no pair found
 
@@ -1406,12 +1406,12 @@ Now try target = 16 with arr = [1, 2, 3, 4, 5, 6, 7]:
 
 | Step | left | right | arr[left] | arr[right] | sum | Action |
 |------|------|-------|-----------|------------|-----|--------|
-| 0 | 0 | 6 | 1 | 7 | 8 | sum < 16 → left++ |
-| 1 | 1 | 6 | 2 | 7 | 9 | sum < 16 → left++ |
-| 2 | 2 | 6 | 3 | 7 | 10 | sum < 16 → left++ |
-| 3 | 3 | 6 | 4 | 7 | 11 | sum < 16 → left++ |
-| 4 | 4 | 6 | 5 | 7 | 12 | sum < 16 → left++ |
-| 5 | 5 | 6 | 6 | 7 | 13 | sum < 16 → left++ |
+| 0 | 0 | 6 | 1 | 7 | 8 | sum &lt; 16 → left++ |
+| 1 | 1 | 6 | 2 | 7 | 9 | sum &lt; 16 → left++ |
+| 2 | 2 | 6 | 3 | 7 | 10 | sum &lt; 16 → left++ |
+| 3 | 3 | 6 | 4 | 7 | 11 | sum &lt; 16 → left++ |
+| 4 | 4 | 6 | 5 | 7 | 12 | sum &lt; 16 → left++ |
+| 5 | 5 | 6 | 6 | 7 | 13 | sum &lt; 16 → left++ |
 | 6 | 6 | 6 | left ≥ right → stop, no pair |
 
 ### C++ Implementation
@@ -1555,12 +1555,12 @@ public class TwoPointer {
 2. For each element x in arr:
    - curr_sum = curr_sum + x
    - If curr_sum > max_sum: max_sum = curr_sum
-   - If curr_sum < 0: curr_sum = 0
+   - If curr_sum &lt; 0: curr_sum = 0
 3. Return max_sum
 
 **Dry Run:** arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 
-| Step | x | curr_sum (before) | curr_sum + x | curr_sum (after) | max_sum | curr_sum < 0? |
+| Step | x | curr_sum (before) | curr_sum + x | curr_sum (after) | max_sum | curr_sum &lt; 0? |
 |------|---|-------------------|-------------|-----------------|---------|---------------|
 | 0 | -2 | 0 | -2 | 0 | -2 | Reset to 0 |
 | 1 | 1 | 0 | 1 | 1 | 1 | No |
@@ -1640,10 +1640,10 @@ Total water trapped = 6 ✓
 
 **Logic (Two-Pointer):**
 1. left = 0, right = n-1, max_area = 0
-2. While left < right:
+2. While left &lt; right:
    - area = min(height[left], height[right]) × (right - left)
    - max_area = max(max_area, area)
-   - If height[left] < height[right]: left++ (move the shorter wall)
+   - If height[left] &lt; height[right]: left++ (move the shorter wall)
    - Else: right--
 3. Return max_area
 

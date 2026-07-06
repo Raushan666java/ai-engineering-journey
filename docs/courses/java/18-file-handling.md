@@ -2591,7 +2591,7 @@ class SafeStorageServiceTest {
 | File Type Strategy | Small Files | Large Files | Streaming |
 |-------------------|-------------|-------------|-----------|
 | Storage | Local filesystem | S3/Blob storage | Temporary |
-| Download | ResponseEntity<Resource> | StreamingResponseBody | InputStreamResource |
+| Download | ResponseEntity&lt;Resource&gt; | StreamingResponseBody | InputStreamResource |
 | Validation | Magic bytes + extension | Magic bytes + scan | Magic bytes check |
 
 ## Chapter Quiz
@@ -2603,18 +2603,18 @@ class SafeStorageServiceTest {
    - D) web.xml configuration
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) spring.servlet.multipart.max-file-size.** This property controls the maximum size allowed for uploaded files.
 </details>
 
 2. Which approach is best for downloading large files?
-   - A) ResponseEntity<byte[]> 
+   - A) ResponseEntity&lt;byte[]&gt; 
    - B) StreamingResponseBody
    - C) FileCopyUtils
    - D) @ResponseBody
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) StreamingResponseBody.** This allows streaming the file content without loading it entirely into memory.
 </details>
 
@@ -2625,7 +2625,7 @@ class SafeStorageServiceTest {
    - D) User-provided type
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Magic bytes at file start.** Magic bytes are the first bytes of a file and reliably identify its format regardless of extension.
 </details>
 

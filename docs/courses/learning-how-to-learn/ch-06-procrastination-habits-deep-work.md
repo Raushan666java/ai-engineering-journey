@@ -2185,7 +2185,7 @@ Write them down. Post them where you'll see them daily for the next 30 days.
 - D) They should study later when they feel more motivated
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Procrastination is an emotional regulation problem, not a willpower deficit. The brain interprets studying as a threat (difficult, boring, uncertain). The 2-minute rule lowers the activation barrier below the threat threshold, making starting nearly effortless.
 </details>
@@ -2197,7 +2197,7 @@ Write them down. Post them where you'll see them daily for the next 30 days.
 - D) They will lose 30 seconds of data in working memory
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Attention residue means part of your attention remains on the previous task after switching. A 30-second notification check creates lingering cognitive drag that takes 10-20 minutes to fully dissipate, making the true cost far higher than the interruption itself.
 </details>
@@ -2209,7 +2209,7 @@ Write them down. Post them where you'll see them daily for the next 30 days.
 - D) 4DX only works for teams, not individuals
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** A — The 4DX framework requires lead measures (actions you control that drive the goal), not lag measures (outcomes you want). "Problems solved per day" is a lead measure; "mastering DP" is the lag measure. Tracking lead measures gives actionable daily feedback.
 </details>

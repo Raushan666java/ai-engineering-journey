@@ -476,7 +476,7 @@ Test your understanding with these quick questions.
 - C) They require fewer Docker commands
 - D) They work without a Dockerfile
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Multi-stage builds use separate stages for dependencies, building, and running. The final stage copies only the compiled output and production dependencies, resulting in a minimal image.**
 
@@ -489,7 +489,7 @@ Test your understanding with these quick questions.
 - C) To encrypt the environment variables
 - D) To log them for debugging
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Startup validation catches misconfiguration immediately with a clear error message, rather than causing cryptic runtime failures when the missing variable is first accessed.**
 
@@ -502,7 +502,7 @@ Test your understanding with these quick questions.
 - C) `npm ci` also runs tests
 - D) `npm ci` skips devDependencies
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `npm ci` uses the lockfile to install exact versions, deletes `node_modules` first, and fails if the lockfile is out of sync with `package.json` — ensuring deterministic builds.**
 
@@ -515,7 +515,7 @@ Test your understanding with these quick questions.
 - C) User authentication status
 - D) API documentation availability
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Health checks verify that the application and its critical dependencies (database, Redis, external APIs) are reachable and responsive, returning a 200 or 503 status accordingly.**
 
@@ -732,11 +732,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -744,7 +744,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

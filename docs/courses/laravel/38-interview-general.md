@@ -1298,7 +1298,7 @@ function getPopularPosts(): Collection
 ```
 
 ### Q72: What are SLI, SLO, and SLA in the context of Laravel apps?
-**Answer:** **SLI** (Service Level Indicator) is the measured metric → e.g., p99 response time, error rate, uptime percentage. **SLO** (Service Level Objective) is the target → e.g., "p99 response time < 200ms" or "99.9% uptime". **SLA** (Service Level Agreement) is the contractual commitment to customers based on SLOs. In Laravel, use Pulse to track SLIs (request duration, error rates), define SLOs in `config/pulse.php`, and expose SLI data via a metrics endpoint for monitoring.
+**Answer:** **SLI** (Service Level Indicator) is the measured metric → e.g., p99 response time, error rate, uptime percentage. **SLO** (Service Level Objective) is the target → e.g., "p99 response time &lt; 200ms" or "99.9% uptime". **SLA** (Service Level Agreement) is the contractual commitment to customers based on SLOs. In Laravel, use Pulse to track SLIs (request duration, error rates), define SLOs in `config/pulse.php`, and expose SLI data via a metrics endpoint for monitoring.
 
 ```php
 // Pulse captures these SLIs automatically:
@@ -2006,7 +2006,7 @@ if (!$executed) {
 - C) app/Http/Kernel.php
 - D) artisan serve
 
-<details><summary>Answer</summary>B) public/index.php</details>
+<details><summary>Answer&lt;/summary&gt;B) public/index.php&lt;/details&gt;
 
 **Q2:** How does the service container resolve dependencies?
 - A) Manual instantiation
@@ -2014,7 +2014,7 @@ if (!$executed) {
 - C) Factory pattern
 - D) Service locator pattern
 
-<details><summary>Answer</summary>B) Automatic resolution via constructor type-hints</details>
+<details><summary>Answer&lt;/summary&gt;B) Automatic resolution via constructor type-hints&lt;/details&gt;
 
 **Q3:** What type of ORM does Eloquent implement?
 - A) Data Mapper
@@ -2022,7 +2022,7 @@ if (!$executed) {
 - C) Repository
 - D) Table Gateway
 
-<details><summary>Answer</summary>B) Active Record</details>
+<details><summary>Answer&lt;/summary&gt;B) Active Record&lt;/details&gt;
 
 **Q4:** Which middleware runs before a request reaches the controller?
 - A) Terminable middleware
@@ -2030,4 +2030,4 @@ if (!$executed) {
 - C) After middleware
 - D) Response middleware
 
-<details><summary>Answer</summary>B) Route middleware</details>
+<details><summary>Answer&lt;/summary&gt;B) Route middleware&lt;/details&gt;

@@ -1003,15 +1003,15 @@ if result:
 ---
 
 
-interface QueryPlan { steps: Array<{type:"retrieve"|"decompose"|"synthesize";query:string;deps:string[]}> }
+interface QueryPlan { steps: Array&lt;{type:"retrieve"|"decompose"|"synthesize";query:string;deps:string[]}&gt; }
 class MultiHopRAG {
-  constructor(private llm: (p:string)=>Promise<string>, private retriever: (q:string)=>Promise<string[]>) {}
-  async plan(query: string): Promise<QueryPlan> {
+  constructor(private llm: (p:string)=>Promise&lt;string&gt;, private retriever: (q:string)=>Promise&lt;string[]&gt;) {}
+  async plan(query: string): Promise&lt;QueryPlan&gt; {
     const prompt = `Break this question into sub-questions: ${query}`; const response = await this.llm(prompt)
     const subQuestions = response.split("\n").filter(Boolean)
     return {steps:[{type:"decompose",query, deps:[]},...subQuestions.map(q=>({type:"retrieve" as const, query:q, deps:[]}))]}
   }
-  async execute(plan: QueryPlan): Promise<string> {
+  async execute(plan: QueryPlan): Promise&lt;string&gt; {
     let context = ""
     for(const step of plan.steps) {
       if(step.type==="retrieve") { const docs = await this.retriever(step.query); context+=`${step.query}:\n${docs.join("\n")}\n` }
@@ -1020,9 +1020,9 @@ class MultiHopRAG {
   }
 }
 class FusionRetriever {
-  async fuse(query: string, retrievers: Array<(q:string)=>Promise<string[]>>): Promise<string[]> {
+  async fuse(query: string, retrievers: Array&lt;(q:string)=&gt;Promise&lt;string[]&gt;>): Promise&lt;string[]&gt; {
     const results = await Promise.all(retrievers.map(r=>r(query)))
-    const unique = new Map<string,number>()
+    const unique = new Map&lt;string,number&gt;()
     results.flat().forEach(doc => unique.set(doc,(unique.get(doc)||0)+1))
     return Array.from(unique.entries()).sort((a,b)=>b[1]-a[1]).map(([doc])=>doc)
   }

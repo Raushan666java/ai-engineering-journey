@@ -25,7 +25,8 @@ flowchart LR
     C --> D[Best Practices]
 ```
 
-### Q1: Tell me about a time you had a conflict with a teammate. How did you resolve it?
+### Q1: Tell me about a time you had a conflict with a teammate. How did you resolve it?
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -791,7 +792,7 @@ I use a structured estimation approach with three layers:
 
 **Answer:**
 
-**Situation:** An engineer accidentally ran a DELETE FROM orders WHERE created_at < '2023-01-01' query on the production database. The WHERE clause was missing a date condition — it should have been created_at < '2023-01-01' AND status = 'archived'. The DELETE ran for 3 seconds before he hit Ctrl+C, but by then it had already deleted orders spanning multiple statuses, not just archived ones.
+**Situation:** An engineer accidentally ran a DELETE FROM orders WHERE created_at &lt; '2023-01-01' query on the production database. The WHERE clause was missing a date condition — it should have been created_at < '2023-01-01' AND status = 'archived'. The DELETE ran for 3 seconds before he hit Ctrl+C, but by then it had already deleted orders spanning multiple statuses, not just archived ones.
 
 **Task:** Restore the deleted data with minimal data loss and downtime. This was a high-traffic e-commerce database — every minute of recovery cost roughly ,000 in lost sales.
 
@@ -2849,7 +2850,7 @@ When stakeholders push for speed at the expense of quality, I make the trade-off
    - D) equals() is for primitives, == is for objects
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) equals() compares logical equality (overridable), == compares reference equality.**
 </details>
 
@@ -2860,7 +2861,7 @@ When stakeholders push for speed at the expense of quality, I make the trade-off
    - D) HashSet
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
 </details>
 
@@ -2871,6 +2872,6 @@ When stakeholders push for speed at the expense of quality, I make the trade-off
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>

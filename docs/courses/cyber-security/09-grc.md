@@ -141,7 +141,7 @@ Applies to all employees, contractors, consultants, and temporary workers using 
 **3.2 Account Security:**
 - All users must use unique, strong passwords (>=14 characters) and enable MFA.
 - Accounts must not be shared. Credentials must not be written down or stored in plain text.
-- Lock workstations when unattended (Ctrl+Alt+L or timeout <=15 minutes).
+- Lock workstations when unattended (Ctrl+Alt+L or timeout &lt;=15 minutes).
 
 **3.3 Email & Communications:**
 - Company email must not be used for illegal activities, harassment, hate speech, or distribution of obscene material.
@@ -595,8 +595,8 @@ Step 7: CLOSE
 
 **DSAR Metrics & KPIs:**
 - % completed within 30-day SLA
-- Average response time (target: <15 days)
-- % exceeding SLA (target: <2%)
+- Average response time (target: &lt;15 days)
+- % exceeding SLA (target: &lt;2%)
 - Number of DSARs received per month
 - Most common data sources queried
 - Cost per DSAR (labor + technology)
@@ -690,7 +690,7 @@ Step 7: CLOSE
 |------|-------|-----------------|
 | **Privacy Rule** | Use and disclosure of PHI | Patient rights to access/amend PHI, Notice of Privacy Practices, minimum necessary standard |
 | **Security Rule** | Administrative, physical, technical safeguards for ePHI | Risk analysis, access controls, audit controls, integrity controls, transmission security |
-| **Breach Notification Rule** | Notification when PHI is breached | <60 days for individuals, <60 days for HHS (500+ records), <60 days for media (500+ state records) |
+| **Breach Notification Rule** | Notification when PHI is breached | <60 days for individuals, &lt;60 days for HHS (500+ records), <60 days for media (500+ state records) |
 | **Enforcement Rule** | Investigations and penalties | Civil penalties up to $1.5M per violation/year |
 | **Omnibus Rule** (2013) | Expanded HIPAA to business associates | BAs directly liable for breaches, stricter breach notification |
 
@@ -795,7 +795,7 @@ Step 7: CLOSE
 | **GLBA (US Financial)** | 30 days (most states) | Primary federal regulator | Customer information |
 | **PIPEDA (Canada)** | As soon as feasible | Commissioner, individuals, affected orgs | Real risk of significant harm |
 | **LGPD (Brazil)** | Reasonable timeframe | ANPD, data subjects | Any security incident |
-| **APRA CPS 234 (AU)** | As soon as possible, <72h (expectation) | APRA, affected parties | Material information security control weakness or breach |
+| **APRA CPS 234 (AU)** | As soon as possible, &lt;72h (expectation) | APRA, affected parties | Material information security control weakness or breach |
 | **Singapore PDPA** | As soon as practicable | Commission, affected individuals | Data breach with significant harm or scale |
 | **South Korea PIPA** | Without delay (within 24h) | KISA, data subjects | Personal information breach |
 | **Japan APPI** | As soon as possible | Commission (PPC), affected individuals | Breach involving sensitive data or identity theft risk |
@@ -932,7 +932,7 @@ Data classification is the process of categorizing data based on its sensitivity
 | RS.MA → Incident Management | RS.MA-01: Response plan executed | IR plan documented and tested | Tabletop exercise every 6 months; update plan annually |
 | RS.AN → Incident Analysis | RS.AN-01: Investigation performed | Forensic analysis capability | Deploy FTK or Velociraptor; train 3 forensic analysts |
 | RS.MI → Mitigation | RS.MI-01: Incidents contained | Automated containment playbook | SIEM triggers CrowdStrike RTR to isolate host on ransomware detection |
-| RS.CO → Communications | RS.CO-02: Internal stakeholders notified | Escalation matrix documented | Notify CISO <15 min, Legal <30 min, CEO <60 min, Board <4 hours |
+| RS.CO → Communications | RS.CO-02: Internal stakeholders notified | Escalation matrix documented | Notify CISO &lt;15 min, Legal <30 min, CEO <60 min, Board <4 hours |
 
 **Function: RC (Recover)**
 
@@ -1132,7 +1132,7 @@ CIS Controls are 18 prioritized safeguards (reduced from 20 in v7) mapped to com
 | 4 | **Secure Configuration of Enterprise Assets and Software** | Baseline configurations; automate configuration management; disable unused services |
 | 5 | **Account Management** | Unique credentials; disable dormant accounts; MFA for all administrative access |
 | 6 | **Access Control Management** | Least privilege; RBAC; access reviews; privilege elevation controls |
-| 7 | **Continuous Vulnerability Management** | Automated scanning; risk-based patching (critical <2 weeks); vulnerability prioritization |
+| 7 | **Continuous Vulnerability Management** | Automated scanning; risk-based patching (critical &lt;2 weeks); vulnerability prioritization |
 | 8 | **Audit Log Management** | Enable logging; centralized collection; log retention (90+ days); protect logs from tampering |
 | 9 | **Email and Web Browser Protections** | DMARC/DKIM/SPF; web filtering; block malicious attachments; browser isolation |
 | 10 | **Malware Defenses** | Anti-malware with behavioral detection; automatic updates; quarantine capability |
@@ -1373,7 +1373,7 @@ Phase 5: Offboarding
 
 ### 7.1 Why Security Awareness?
 
-Humans are the #1 attack vector → 74% of breaches involve the human element (Verizon DBIR 2024). Security awareness training reduces phishing click rates from 25% to <5% on average.
+Humans are the #1 attack vector → 74% of breaches involve the human element (Verizon DBIR 2024). Security awareness training reduces phishing click rates from 25% to &lt;5% on average.
 
 ### 7.2 Training Plan Outline
 
@@ -1401,10 +1401,10 @@ Humans are the #1 attack vector → 74% of breaches involve the human element (V
 
 **Annual Metrics & Reporting:**
 - Training completion rate (target: 100%)
-- Average phishing click rate (target: <5%)
-- Repeat clickers (target: <2%)
+- Average phishing click rate (target: &lt;5%)
+- Repeat clickers (target: &lt;2%)
 - Phishing reporting rate (target: >50% of detected phish are reported)
-- Time to report phishing (target: <5 minutes)
+- Time to report phishing (target: &lt;5 minutes)
 - Program maturity score (baseline vs target)
 
 ### 7.3 Phishing Simulation Results Analysis

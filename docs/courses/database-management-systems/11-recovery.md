@@ -1064,12 +1064,12 @@ Initial state: A=100, B=200 (both on disk).
 | Log | Event | Buffer A | Buffer B | Disk A | Disk B |
 |-----|-------|----------|----------|--------|--------|
 | | Start | 100 | 200 | 100 | 200 |
-| 1: <T1, BEGIN> | T1 begins | | | | |
-| 2: <T1, A, 100> | T1: A=50 | 50 | | | |
-| 3: <T1, B, 200> | T1: B=250 (FORCE) | 50 | 250 | 100 | 250 |
-| 4: <T1, COMMIT> | T1 commits, flush log | | | | |
-| 5: <T2, BEGIN> | T2 begins | | | | |
-| 6: <T2, A, 50> | T2: A=70 | 70 | | | |
+| 1: &lt;T1, BEGIN&gt; | T1 begins | | | | |
+| 2: &lt;T1, A, 100&gt; | T1: A=50 | 50 | | | |
+| 3: &lt;T1, B, 200&gt; | T1: B=250 (FORCE) | 50 | 250 | 100 | 250 |
+| 4: &lt;T1, COMMIT&gt; | T1 commits, flush log | | | | |
+| 5: &lt;T2, BEGIN&gt; | T2 begins | | | | |
+| 6: &lt;T2, A, 50&gt; | T2: A=70 | 70 | | | |
 | --- CRASH --- | | Lost | Lost | 100 | 250 |
 
 Recovery scan backward:
@@ -1222,12 +1222,12 @@ Initial state: A=100, B=200.
 | Log | Event | Buffer A | Buffer B | Disk A | Disk B |
 |-----|-------|----------|----------|--------|--------|
 | | Start | 100 | 200 | 100 | 200 |
-| 1: <T1, BEGIN> | T1 begins | | | | |
-| 2: <T1, A, 50> | T1: A=50 | 50 | | | |
-| 3: <T1, B, 250> | T1: B=250 | 50 | 250 | | |
-| 4: <T1, COMMIT> | T1 commits, flush log | | | | |
-| 5: <T2, BEGIN> | T2 begins | | | | |
-| 6: <T2, A, 70> | T2: A=70 | 70 | | | |
+| 1: &lt;T1, BEGIN&gt; | T1 begins | | | | |
+| 2: &lt;T1, A, 50&gt; | T1: A=50 | 50 | | | |
+| 3: &lt;T1, B, 250&gt; | T1: B=250 | 50 | 250 | | |
+| 4: &lt;T1, COMMIT&gt; | T1 commits, flush log | | | | |
+| 5: &lt;T2, BEGIN&gt; | T2 begins | | | | |
+| 6: &lt;T2, A, 70&gt; | T2: A=70 | 70 | | | |
 | --- CRASH --- | | Lost | Lost | 100 | 200 |
 
 Recovery scan forward:
@@ -1413,18 +1413,18 @@ Scan forward from LSN 1:
 - Winners (REDO set) = {T1, T2}, Losers (UNDO set) = {T2}
 
 **Redo Phase (LSN 2 to end):**
-- LSN 2: Page A dirty? YES. Page LSN (0) < 2? YES. Redo: A=50.
-- LSN 3: Page B dirty? YES. Page LSN (0) < 3? YES. Redo: B=250.
+- LSN 2: Page A dirty? YES. Page LSN (0) &lt; 2? YES. Redo: A=50.
+- LSN 3: Page B dirty? YES. Page LSN (0) &lt; 3? YES. Redo: B=250.
 - LSN 4: COMMIT → no data change.
 - LSN 5: BEGIN → no data change.
-- LSN 6: Page A dirty? YES. Page LSN (50) < 6? YES. Redo: A=70.
+- LSN 6: Page A dirty? YES. Page LSN (50) &lt; 6? YES. Redo: A=70.
 
 After Redo: A=70, B=250.
 
 **Undo Phase (backward from LSN 6):**
-- LSN 6: T2 active? YES. Undo: A=50. Write CLR: <7, CLR, T2, UndoNext=5, A, 70, 50>
+- LSN 6: T2 active? YES. Undo: A=50. Write CLR: &lt;7, CLR, T2, UndoNext=5, A, 70, 50&gt;
 - LSN 5: BEGIN → skip.
-- Write <T2, ABORT>.
+- Write &lt;T2, ABORT&gt;.
 
 Final state: A=50, B=250. Correct!
 
@@ -1997,10 +1997,10 @@ Start from LSN 40. For each UPDATE, check DPT and page LSN.
 
 | LSN | Page | In DPT? | Current PageLSN | Action | New Disk Value |
 |-----|------|---------|----------------|--------|----------------|
-| 40 | P1 | YES (RecLSN=40) | 0 < 40 | REDO P1=50 | P1=50 |
-| 50 | P2 | YES (RecLSN=50) | 0 < 50 | REDO P2=250 | P2=250 |
-| 80 | P1 | YES (RecLSN=40) | 50 >= 40 | Skip? No, 50 < 80 | REDO P1=75 |
-| 100 | P3 | YES (RecLSN=100) | 0 < 100 | REDO P3=150 | P3=150 |
+| 40 | P1 | YES (RecLSN=40) | 0 &lt; 40 | REDO P1=50 | P1=50 |
+| 50 | P2 | YES (RecLSN=50) | 0 &lt; 50 | REDO P2=250 | P2=250 |
+| 80 | P1 | YES (RecLSN=40) | 50 >= 40 | Skip? No, 50 &lt; 80 | REDO P1=75 |
+| 100 | P3 | YES (RecLSN=100) | 0 &lt; 100 | REDO P3=150 | P3=150 |
 
 After Redo: P1=75, P2=250, P3=150.
 

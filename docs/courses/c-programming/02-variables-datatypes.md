@@ -1637,8 +1637,8 @@ static: 3, auto: 1
 
 | Modifier | Base Types | Effect | Rank (small to large) |
 |----------|-----------|--------|-----------------------|
-| `short` | int, char (C99+) | Reduced size (>=2 bytes for short) | short int < int |
-| `long` | int, double | Increased size (>=4 bytes for long) | int < long < long long |
+| `short` | int, char (C99+) | Reduced size (>=2 bytes for short) | short int &lt; int |
+| `long` | int, double | Increased size (>=4 bytes for long) | int &lt; long < long long |
 | `long long` | int | Increased size (>=8 bytes) | - |
 | `signed` | char, int types | Allow negative values | - |
 | `unsigned` | char, int types | Only non-negative, double top range | - |
@@ -2007,7 +2007,7 @@ int main(void)
 | Database IDs | `unsigned long long` for primary keys | 64-bit range for billions of records |
 | Graphics (RGB) | `unsigned char` for color channels | 0-255 per channel |
 | System timestamps | `long` or `long long` for epoch time | Platform-dependent range |
-| Network protocols | `uint32_t`, `uint16_t` from <stdint.h> | Exact-width, platform-independent |
+| Network protocols | `uint32_t`, `uint16_t` from &lt;stdint.h&gt; | Exact-width, platform-independent |
 | Linux kernel | `size_t`, `ssize_t`, `u32`, `u64` | Convention, portability, clarity |
 | Loop counters | `int` or `size_t` | Fastest native type |
 | Flags/bitmasks | `unsigned int` or `uint32_t` | Bitwise operations |
@@ -2023,7 +2023,7 @@ int main(void)
    C) 4 bytes
    D) Implementation-defined
 
-<details><summary>Answer</summary>**A)** `sizeof(char)` is always 1 byte by definition.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** `sizeof(char)` is always 1 byte by definition.</details>
 
 2. What is the output of `printf("%d", (int)3.9)`?
    A) 3
@@ -2031,7 +2031,7 @@ int main(void)
    C) 3.9
    D) Undefined behavior
 
-<details><summary>Answer</summary>**A)** The cast truncates the fractional part, producing 3.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** The cast truncates the fractional part, producing 3.</details>
 
 3. Which format specifier is correct for `size_t`?
    A) `%d`
@@ -2039,7 +2039,7 @@ int main(void)
    C) `%zu`
    D) `%ld`
 
-<details><summary>Answer</summary>**C)** `%zu` is the correct format specifier for size_t.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `%zu` is the correct format specifier for size_t.</details>
 
 4. What is the output of `int x; printf("%d", x);`?
    A) 0
@@ -2047,7 +2047,7 @@ int main(void)
    C) Undefined behavior (anything may happen)
    D) Compiler error
 
-<details><summary>Answer</summary>**C)** Undefined behavior — uninitialized local variable.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Undefined behavior — uninitialized local variable.</details>
 
 5. What does `unsigned u = 0; u--; printf("%u", u);` print?
    A) -1
@@ -2055,7 +2055,7 @@ int main(void)
    C) 4294967295
    D) Undefined behavior
 
-<details><summary>Answer</summary>**C)** 4294967295 (UINT_MAX). Unsigned wrap is well-defined.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** 4294967295 (UINT_MAX). Unsigned wrap is well-defined.</details>
 
 6. What is the difference between `const int x = 5;` and `#define x 5`?
    A) No difference
@@ -2063,7 +2063,7 @@ int main(void)
    C) #define is faster
    D) const uses less memory
 
-<details><summary>Answer</summary>**B)** const provides type-checked immutability; #define is preprocessor text substitution.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** const provides type-checked immutability; #define is preprocessor text substitution.</details>
 
 7. What does `-1 < 1U` evaluate to?
    A) True (1)
@@ -2071,7 +2071,7 @@ int main(void)
    C) Undefined behavior
    D) Depends on platform
 
-<details><summary>Answer</summary>**B)** False (0). The -1 is converted to unsigned, becoming UINT_MAX (4294967295), so 4294967295 < 1 is false.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** False (0). The -1 is converted to unsigned, becoming UINT_MAX (4294967295), so 4294967295 &lt; 1 is false.</details&gt;
 
 8. Which storage class preserves a variable's value across function calls?
    A) auto
@@ -2079,7 +2079,7 @@ int main(void)
    C) static
    D) extern
 
-<details><summary>Answer</summary>**C)** static local variables retain their value between function invocations.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** static local variables retain their value between function invocations.</details>
 
 9. What is the output of `printf("%zu", sizeof(void));`?
    A) 0
@@ -2087,7 +2087,7 @@ int main(void)
    C) 4
    D) Compiler error in standard C
 
-<details><summary>Answer</summary>**D)** Compiler error — void is an incomplete type (GCC extension gives 1).</details>
+<details><summary>Answer&lt;/summary&gt;**D)** Compiler error — void is an incomplete type (GCC extension gives 1).</details>
 
 10. After `char c = 200;` (signed char system), what is the value of c?
     A) 200
@@ -2095,7 +2095,7 @@ int main(void)
     C) Implementation-defined
     D) Undefined behavior
 
-<details><summary>Answer</summary>**B)** -56, because 200 - 256 = -56. Implementation-defined behavior (wrapping on two's complement).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** -56, because 200 - 256 = -56. Implementation-defined behavior (wrapping on two's complement).</details>
 
 ---
 
@@ -2110,7 +2110,7 @@ int main(void)
 - `sizeof` returns the byte size of a type or expression (compile-time, result type is `size_t`, printed with `%zu`).
 - `printf` and `scanf` use format specifiers (`%d`, `%f`, `%c`, etc.) for formatted output and input.
 - C performs **implicit type promotion** (smaller -> larger) and allows **explicit casting** with the `(type)` syntax.
-- Mixed-type comparisons can have surprising results (e.g., -1 < 1U is false).
+- Mixed-type comparisons can have surprising results (e.g., -1 &lt; 1U is false).
 - **Scope** (block/file/function/prototype) and **lifetime** (automatic/static/allocated) govern variable accessibility.
 - Using uninitialized variables invokes **undefined behavior**.
 - Unsigned integer wrap is well-defined; signed integer overflow is undefined behavior.

@@ -23,7 +23,8 @@ flowchart LR
     C --> D[Best Practices]
 ```
 
-### Q1: What is the difference between authentication and authorization? How does Spring Security model these two concepts?
+### Q1: What is the difference between authentication and authorization? How does Spring Security model these two concepts?
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -4050,7 +4051,7 @@ This concludes the Security Interview Q&A chapter. Each question covered a criti
    - D) equals() is for primitives, == is for objects
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) equals() compares logical equality (overridable), == compares reference equality.**
 </details>
 
@@ -4061,7 +4062,7 @@ This concludes the Security Interview Q&A chapter. Each question covered a criti
    - D) HashSet
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
 </details>
 
@@ -4072,6 +4073,6 @@ This concludes the Security Interview Q&A chapter. Each question covered a criti
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>

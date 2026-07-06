@@ -616,7 +616,7 @@ class StatisticalSummary {
   }
 
   get mode(): number[] {
-    const freq = new Map<number, number>();
+    const freq = new Map&lt;number, number&gt;();
     for (const v of this.data) freq.set(v, (freq.get(v) || 0) + 1);
     const maxFreq = Math.max(...freq.values());
     return [...freq.entries()].filter(([_, f]) => f === maxFreq).map(([v]) => v);
@@ -658,10 +658,10 @@ class StatisticalSummary {
 // -----------------------------------------------------
 
 class ChartDataGenerator {
-  static quarterlyRevenue(years: number, base: number, growth: number): Array<{ year: string; quarter: string; revenue: number }> {
-    const data: Array<{ year: string; quarter: string; revenue: number }> = [];
-    for (let y = 1; y <= years; y++) {
-      for (let q = 1; q <= 4; q++) {
+  static quarterlyRevenue(years: number, base: number, growth: number): Array&lt;{ year: string; quarter: string; revenue: number }&gt; {
+    const data: Array&lt;{ year: string; quarter: string; revenue: number }&gt; = [];
+    for (let y = 1; y &lt;= years; y++) {
+      for (let q = 1; q &lt;= 4; q++) {
         const seasonality = q === 1 ? 0.9 : q === 4 ? 1.15 : 1;
         const noise = 0.95 + Math.random() * 0.1;
         const revenue = base * Math.pow(1 + growth / 100, y - 1) * seasonality * noise;
@@ -671,7 +671,7 @@ class ChartDataGenerator {
     return data;
   }
 
-  static marketShare(companies: string[], totalMarket: number): Array<{ company: string; share: number; revenue: number }> {
+  static marketShare(companies: string[], totalMarket: number): Array&lt;{ company: string; share: number; revenue: number }&gt; {
     const shares = companies.map(() => Math.random());
     const sum = shares.reduce((a, b) => a + b, 0);
     return companies.map((c, i) => ({

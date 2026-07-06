@@ -1057,7 +1057,7 @@ Offset 8:  data[0], data[1], ... data[n-1]
 
 | Aspect | Flexible Array | Fixed Array `char data[256]` |
 |--------|---------------|------------------------------|
-| Memory waste | None → exact fit | Wasted if actual data < 256 |
+| Memory waste | None → exact fit | Wasted if actual data &lt; 256 |
 | Max size | Limited by heap | Limited by struct size |
 | `sizeof` | Excludes array | Includes full size |
 | Pointer arithmetic | Manual offset | Automatic |
@@ -1545,7 +1545,7 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) Optimize compilation speed
    D) Define external symbols
 
-<details><summary>Answer</summary>**B)** The header guard prevents the preprocessor from including the same header twice in one `.c` file, avoiding redefinition errors.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The header guard prevents the preprocessor from including the same header twice in one `.c` file, avoiding redefinition errors.</details>
 
 2. Which declares a pointer to a function taking `int` and returning `int`?
    A) `int *fp(int);`
@@ -1553,7 +1553,7 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) `int *(*fp)(int);`
    D) `int *(fp)(int);`
 
-<details><summary>Answer</summary>**B)** `int (*fp)(int);` → parentheses around `*fp` bind the pointer before the function call.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `int (*fp)(int);` → parentheses around `*fp` bind the pointer before the function call.</details>
 
 3. What does `volatile` guarantee?
    A) Atomic access
@@ -1561,7 +1561,7 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) Every read/write goes to memory
    D) The variable is stored in ROM
 
-<details><summary>Answer</summary>**C)** `volatile` forces the compiler to emit a memory access every time, preventing register caching.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `volatile` forces the compiler to emit a memory access every time, preventing register caching.</details>
 
 4. What is `restrict` a promise of?
    A) The pointer is non-null
@@ -1569,7 +1569,7 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) The pointed-to data is read-only
    D) The pointer is aligned
 
-<details><summary>Answer</summary>**B)** `restrict` promises exclusive access → violating it is undefined behavior.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `restrict` promises exclusive access → violating it is undefined behavior.</details>
 
 5. Which of the following is a strict aliasing violation?
    A) `memcpy(&f, &i, sizeof(f));`
@@ -1577,7 +1577,7 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) `unsigned char *cp = (unsigned char *)&i;`
    D) All of the above
 
-<details><summary>Answer</summary>**B)** Casting `int*` to `float*` and dereferencing violates strict aliasing. `memcpy` and `char*` access are legal.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Casting `int*` to `float*` and dereferencing violates strict aliasing. `memcpy` and `char*` access are legal.</details>
 
 6. What is wrong with calling `printf` inside a signal handler?
    A) `printf` is not async-signal-safe → it may deadlock on internal locks
@@ -1585,7 +1585,7 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) `printf` will corrupt the stack
    D) Nothing → it's perfectly safe
 
-<details><summary>Answer</summary>**A)** `printf` uses internal locks (for `stdout` buffering) that could be held when the signal arrives, causing deadlock.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** `printf` uses internal locks (for `stdout` buffering) that could be held when the signal arrives, causing deadlock.</details>
 
 7. Why must variables shared between `setjmp` and `longjmp` be `volatile`?
    A) The compiler may keep them in registers and restore stale values
@@ -1593,15 +1593,15 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) It's not required
    D) To prevent the linker from optimizing them away
 
-<details><summary>Answer</summary>**A)** After `longjmp`, non-volatile local variables have indeterminate values because the register state is restored to the `setjmp` point.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** After `longjmp`, non-volatile local variables have indeterminate values because the register state is restored to the `setjmp` point.</details>
 
 8. Which is NOT a valid use of flexible array members?
    A) `struct buffer { size_t len; char data[]; };`
    B) `struct buffer arr[10];`
    C) `malloc(sizeof(struct buffer) + n);`
-   D) Accessing `buf->data[i]` for i < n
+   D) Accessing `buf->data[i]` for i &lt; n
 
-<details><summary>Answer</summary>**B)** You cannot create an array of structs with flexible array members → each element would have unknown size.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** You cannot create an array of structs with flexible array members → each element would have unknown size.</details>
 
 9. What is a Makefile `.PHONY` target used for?
    A) To build faster
@@ -1609,7 +1609,7 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) To compile with optimization flags
    D) To specify the compiler
 
-<details><summary>Answer</summary>**B)** `.PHONY` tells Make that the target name does not refer to a file, so Make always runs the recipe (e.g., `clean`).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `.PHONY` tells Make that the target name does not refer to a file, so Make always runs the recipe (e.g., `clean`).</details>
 
 10. Which pthreads synchronization primitive is best for producer-consumer patterns?
     A) Mutex alone
@@ -1617,7 +1617,7 @@ The common fix: `memcpy` or `union` (if staying in C).
     C) Spinlock
     D) Read-write lock
 
-<details><summary>Answer</summary>**B)** Condition variables with a mutex allow the consumer to sleep while waiting and be woken when the producer has data.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Condition variables with a mutex allow the consumer to sleep while waiting and be woken when the producer has data.</details>
 
 ---
 

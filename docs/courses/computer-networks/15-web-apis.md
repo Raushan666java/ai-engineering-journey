@@ -624,7 +624,7 @@ ETag is a hash-based validator. The server computes an ETag for each resource. T
 | 2 | → | Request sent | Empty | → | → |
 | 3 | Wait for response | → | Empty | Computes ETag "abc" | → |
 | 4 | Receive: `200 OK, ETag: "abc", max-age=300` | Done | Stores `{data, etag: "abc", expires: T+300}` | → | Cache populated |
-| 5 | (Before expiry) | `GET /books/1` | Fresh (T+50 < T+300) | → | Cache HIT: return cached |
+| 5 | (Before expiry) | `GET /books/1` | Fresh (T+50 &lt; T+300) | → | Cache HIT: return cached |
 | 6 | (After expiry) | `GET /books/1 If-None-Match: "abc"` | Stale (T+310 > T+300) | Compares ETag | Conditional request |
 | 7 | Receive: `304 Not Modified` | Done | Refreshes to T+300 | Unchanged | Cache refreshed |
 | 8 | (Later) | `GET /books/1 If-None-Match: "abc"` | Stale | Data changed, ETag="def" | → |

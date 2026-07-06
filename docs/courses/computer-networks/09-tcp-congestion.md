@@ -911,9 +911,9 @@ Parameters: C = 0.4, beta = 0.7, initial Wmax = 100 MSS, loss at RTT 0.
 | Cubic polynomial | O(1) | Fixed 3 operations: multiplications + addition |
 | Cube root computation | O(1) | Single cbrt() call at initialization |
 | Time tracking | O(1) | Monotonic timestamp delta |
-| Floating-point math | O(1) | CPU cost < ADD operation on modern hardware |
+| Floating-point math | O(1) | CPU cost &lt; ADD operation on modern hardware |
 
-**Why Cubic's complexity is acceptable**: Although cubic involves floating-point operations, it's called only once per ACK (typically < 100K times/second on a 10 Gbps link). Modern CPUs handle this in under 100 ns. The kernel's TCP fast path remains the bottleneck — Cubic's per-packet cost is negligible relative to interrupt handling and memory operations.
+**Why Cubic's complexity is acceptable**: Although cubic involves floating-point operations, it's called only once per ACK (typically &lt; 100K times/second on a 10 Gbps link). Modern CPUs handle this in under 100 ns. The kernel's TCP fast path remains the bottleneck — Cubic's per-packet cost is negligible relative to interrupt handling and memory operations.
 
 ## 9.11 TCP BBR (Bottleneck Bandwidth and Round-trip propagation time)
 

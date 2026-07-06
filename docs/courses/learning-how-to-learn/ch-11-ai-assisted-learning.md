@@ -1705,7 +1705,7 @@ d) Skip the concept entirely
 - D) They should have used a different AI tool
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — When AI provides answers too quickly, it bypasses the struggle phase essential for memory encoding. The student recognized the pattern but couldn't reproduce it without AI's scaffolding.
 </details>
@@ -1717,7 +1717,7 @@ d) Skip the concept entirely
 - D) Save the comparison table for later review
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Active recall requires reproducing information from memory. Reading AI's comparison gives the illusion of understanding; teaching it back from memory reveals genuine gaps.
 </details>
@@ -1729,7 +1729,7 @@ d) Skip the concept entirely
 - D) AI's confidence score in its responses
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** C — The only true measure of learning is independent performance. If you can only solve problems with AI assistance, you haven't learned — you've outsourced.
 </details>
@@ -1741,7 +1741,7 @@ d) Skip the concept entirely
 - D) Switch to a different AI tool
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Anxiety when learning without AI is a clear symptom of answer dependency. Scheduled detox days rebuild independent problem-solving confidence and prevent long-term skill degradation.
 </details>
@@ -1753,7 +1753,7 @@ d) Skip the concept entirely
 - D) Ask AI to also fix the issues automatically
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Writing down the root cause for each finding forces understanding. Blindly applying fixes creates the illusion of learning without the neural encoding that comes from analysis.
 </details>

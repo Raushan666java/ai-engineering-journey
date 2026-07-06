@@ -716,7 +716,7 @@ console.log("Synonyms:", SynonymFinder.synonyms("good"));
 // -----------------------------------------------------
 
 class SentenceCompletionEngine {
-  private static contextClues: Record<string, string[]> = {
+  private static contextClues: Record&lt;string, string[]&gt; = {
     "however": ["but", "yet", "although", "nevertheless", "nonetheless"],
     "therefore": ["thus", "hence", "consequently", "accordingly", "so"],
     "moreover": ["furthermore", "additionally", "also", "besides", "in addition"],
@@ -813,7 +813,7 @@ class GrammarErrorDetector {
     const singularSubject = /\b(he|she|it|the\s+\w+)\b/i;
     const pluralSubject = /\b(they|we|these|those)\b/i;
 
-    for (let i = 0; i < words.length - 1; i++) {
+    for (let i = 0; i &lt; words.length - 1; i++) {
       // Check "he/she/it ... -s" -> "he run" should be "he runs"
       if (singularSubject.test(words[i]) && words[i + 1] === "run") errors.push("Subject-verb agreement: 'he/she/it' requires 'runs'");
       // Check "they ... -s" -> "they runs" should be "they run"

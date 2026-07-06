@@ -371,6 +371,462 @@ The correct phrase is "prefer...to..." not "prefer...rather than...". "Prefer" i
 
 ---
 
+## 📝 Solved Examples (20 MCQs)
+
+### Section A: Spotting Errors (Q1-Q8)
+
+**Q1.** Identify the error: *Neither the RBI governor (A) / nor the deputy governors (B) / was present at (C) / the meeting yesterday. (D) / No error (E)*
+
+<details>
+<summary>Answer</summary>
+C. In "neither...nor" constructions, the verb agrees with the subject nearest to it. "Deputy governors" is plural, so the verb should be "were" instead of "was."
+</details>
+
+---
+
+**Q2.** Identify the error: *The committee, along with the advisory board, (A) / have decided to (B) / implement the new (C) / cybersecurity protocol. (D) / No error (E)*
+
+<details>
+<summary>Answer</summary>
+B. When the subject is followed by phrases like "along with", "together with", "as well as", the verb agrees with the main subject. "The committee" is singular, so the verb should be "has" not "have."
+</details>
+
+---
+
+**Q3.** Identify the error: *Each of the employees (A) / have been provided (B) / with the new (C) / security credentials. (D) / No error (E)*
+
+<details>
+<summary>Answer</summary>
+B. "Each of" takes a singular verb. "Each...has been provided" is correct, not "have been provided."
+</details>
+
+---
+
+**Q4.** Identify the error: *The data collected (A) / from the survey (B) / suggest that customer (C) / satisfaction has declined. (D) / No error (E)*
+
+<details>
+<summary>Answer</summary>
+C. In formal/academic usage, "data" is the plural of "datum," so "suggest" is actually correct for plural. However, many exam boards accept "data" as singular or plural. In IBPS context, if the error is marked, it might be about other issues. Actually, "data" can take either verb. Let's reconsider — if no other error exists, answer could be "No error (E)." However, the standard rule: "data" as plural → "suggest" is correct. But some formal exams treat "data" as singular. For IBPS SO, "data" is generally treated as singular, so "suggests" would be correct. Answer: C — "suggest" should be "suggests."
+</details>
+
+---
+
+**Q5.** Identify the error: *He is one of (A) / the few officers (B) / who has completed (C) / the certification course. (D) / No error (E)*
+
+<details>
+<summary>Answer</summary>
+C. In "one of the + plural noun + who/that," the relative pronoun refers to the plural noun (officers), so the verb should be plural: "who have completed."
+</details>
+
+---
+
+**Q6.** Identify the error: *The number of cyber attacks (A) / are increasing (B) / every year despite (C) / enhanced security measures. (D) / No error (E)*
+
+<details>
+<summary>Answer</summary>
+B. "The number of" takes a singular verb. The correct form is "The number...is increasing." Compare: "A number of attacks are increasing" (plural — "a number of" = many).
+</details>
+
+---
+
+**Q7.** Identify the error: *Not only the manager (A) / but also his team members (B) / was praised for (C) / their performance. (D) / No error (E)*
+
+<details>
+<summary>Answer</summary>
+C. In "not only...but also" constructions, the verb agrees with the subject nearest to it. "Team members" is plural, so the verb should be "were praised."
+</details>
+
+---
+
+**Q8.** Identify the error: *The CEO, together with (A) / the board members, (B) / have approved the (C) / merger proposal. (D) / No error (E)*
+
+<details>
+<summary>Answer</summary>
+C. "Together with" does not make the subject plural. The main subject is "The CEO" (singular), so the verb should be "has approved."
+</details>
+
+---
+
+### Section B: Fillers (Q9-Q14)
+
+**Q9.** Fill in the blank: *The bank has _____ its lending rates by 25 basis points following the RBI policy review.*
+
+a) revised   b) reversed   c) revolved   d) revived
+
+<details>
+<summary>Answer</summary>
+a) revised. Banks "revise" (adjust) lending rates. "Reversed" means changed to opposite, "revolved" means rotated, "revived" means brought back to life — none fit the context.
+</details>
+
+---
+
+**Q10.** Fill in the blank: *The new software is fully _____ with existing legacy systems.*
+
+a) comparable   b) compatible   c) compelling   d) competitive
+
+<details>
+<summary>Answer</summary>
+b) compatible. Software that works with other systems is "compatible." "Comparable" means similar, "compelling" means convincing, "competitive" means rivalrous.
+</details>
+
+---
+
+**Q11.** Fill in the blank: *The auditor _____ serious concerns about the accuracy of the financial statements.*
+
+a) rose   b) raised   c) risen   d) aroused
+
+<details>
+<summary>Answer</summary>
+b) raised. "Raised concerns" is the correct collocation. "Rose" (past of rise) is intransitive and doesn't take an object. "Risen" is past participle. "Aroused" means awakened/stimulated (usually emotions).
+</details>
+
+---
+
+**Q12.** Fill in the blank: *The government has _____ a high-level committee to investigate the matter.*
+
+a) constituted   b) consisted   c) composed   d) complied
+
+<details>
+<summary>Answer</summary>
+a) constituted. "Constituted a committee" means established it. "Consisted of" means composed of. "Composed" needs "of." "Complied" means obeyed.
+</details>
+
+---
+
+**Q13.** Double Fillers: *The company has _____ to _____ its digital infrastructure.*
+
+a) decided / upgrade   b) decided / upgrading   c) deciding / upgrade   d) decides / upgraded
+
+<details>
+<summary>Answer</summary>
+a) decided / upgrade. "Has decided" (present perfect) + "to upgrade" (infinitive of purpose).
+</details>
+
+---
+
+**Q14.** Double Fillers: *The new policy aims to _____ transparency and _____ fraudulent practices.*
+
+a) promote / curb   b) promote / encourage   c) reduce / promote   d) curb / encourage
+
+<details>
+<summary>Answer</summary>
+a) promote / curb. The policy aims to increase transparency (promote) and reduce fraud (curb). Options (b), (c), and (d) create contradictory or negative meanings.
+</details>
+
+---
+
+### Section C: Sentence Improvement (Q15-Q18)
+
+**Q15.** Improve: *He is working here since 2019.*
+
+a) He has been working here since 2019.   b) He was working here since 2019.   c) He worked here since 2019.   d) No improvement
+
+<details>
+<summary>Answer</summary>
+a) He has been working here since 2019. The time marker "since" with a point in time requires the present perfect continuous tense for an action that started in the past and continues into the present.
+</details>
+
+---
+
+**Q16.** Improve: *I shall be grateful if you can kindly send me the statement.*
+
+a) I shall be grateful if you could kindly send me the statement.   b) I would be grateful if you could send me the statement.   c) I am grateful if you send me the statement.   d) No improvement
+
+<details>
+<summary>Answer</summary>
+b) I would be grateful if you could send me the statement. "Shall" is less common. The correct polite form is "would be...could send." Also, "kindly" is redundant with "grateful."
+</details>
+
+---
+
+**Q17.** Improve: *The reason why he resigned was because of the toxic work environment.*
+
+a) The reason he resigned was because of the toxic work environment.   b) The reason why he resigned was the toxic work environment.   c) The reason he resigned was that the work environment was toxic.   d) No improvement
+
+<details>
+<summary>Answer</summary>
+c) The reason he resigned was that the work environment was toxic. The original is redundant ("reason why...because of"). Option (c) is the most concise and grammatically correct.
+</details>
+
+---
+
+**Q18.** Improve: *If I was the manager, I would approve the loan.*
+
+a) If I were the manager, I would approve the loan.   b) If I am the manager, I would approve the loan.   c) If I was the manager, I will approve the loan.   d) No improvement
+
+<details>
+<summary>Answer</summary>
+a) If I were the manager, I would approve the loan. Type 2 conditional (unreal present) requires "were" for all subjects (even "I"). "If I were" is the correct subjunctive form.
+</details>
+
+---
+
+### Section D: Direct-Indirect Speech & Voice (Q19-Q20)
+
+**Q19.** Convert to Indirect: *The manager said, "I will approve your leave request tomorrow."*
+
+a) The manager said that he will approve my leave request tomorrow.   b) The manager said that he would approve my leave request the next day.   c) The manager said that he would approve your leave request tomorrow.   d) The manager said that I will approve your leave request the next day.
+
+<details>
+<summary>Answer</summary>
+b) The manager said that he would approve my leave request the next day. In indirect speech: "will" → "would," "your" → "my" (from the listener's perspective), "tomorrow" → "the next day."
+</details>
+
+---
+
+**Q20.** Convert to Passive: *The IT department has installed the new security software.*
+
+a) The new security software has been installed by the IT department.   b) The new security software has installed by the IT department.   c) The new security software is being installed by the IT department.   d) The new security software had been installed by the IT department.
+
+<details>
+<summary>Answer</summary>
+a) The new security software has been installed by the IT department. Present perfect passive: "has/have + been + V3." Option (b) is missing "been," (c) changes to present continuous, (d) changes to past perfect.
+</details>
+
+---
+
+## TypeScript Example: Grammar Rule Validator
+
+```typescript
+interface GrammarCheckResult {
+  sentence: string;
+  errors: string[];
+  suggestions: string[];
+  isCorrect: boolean;
+}
+
+class GrammarValidator {
+  private static readonly SUBJECT_VERB_RULES = [
+    {
+      pattern: /\b(One of the|Each of the|Every one of the)\s+\w+\s+have\b/i,
+      message: "After 'One of the' / 'Each of the' / 'Every one of the', use a singular verb (has, is, was) not a plural verb.",
+      fix: (s: string) => s.replace(/\b(One of the|Each of the|Every one of the)\s+(\w+)\s+have\b/ig,
+        (match, p1, p2) => `${p1} ${p2} has`),
+    },
+    {
+      pattern: /\bThe number of\s+\w+\s+\w+\s+are\b/i,
+      message: "'The number of' takes a singular verb (is/was). Use 'a number of' for plural verb.",
+      fix: (s: string) => s.replace(/\b(The number of\s+\w+\s+\w+)\s+are\b/ig,
+        (match, p1) => `${p1} is`),
+    },
+    {
+      pattern: /\b(Either|Neither)\s+\w+\s+or\s+\w+\s+\w+\s+(has|is|was)\b/i,
+      message: "With 'either...or'/'neither...nor', the verb agrees with the subject nearest to it. Check if the nearest subject is plural.",
+      fix: (s: string) => s, // Context-dependent, needs manual fix
+    },
+  ];
+
+  private static readonly COMMON_ERRORS = [
+    {
+      pattern: /\breason\s+(why|is because)\b/i,
+      message: "Redundancy: 'reason why'/'reason is because' is redundant. Use 'reason is that' or 'reason for'.",
+      fix: (s: string) =>
+        s.replace(/\breason\s+why\b/ig, "reason")
+         .replace(/\breason\s+is\s+because\b/ig, "reason is that"),
+    },
+    {
+      pattern: /\breturn\s+back\b/i,
+      message: "Redundancy: 'return' already means 'come back'. Use just 'return'.",
+      fix: (s: string) => s.replace(/\breturn\s+back\b/ig, "return"),
+    },
+    {
+      pattern: /\brepeat\s+again\b/i,
+      message: "Redundancy: 'repeat' means 'do again'. Use just 'repeat'.",
+      fix: (s: string) => s.replace(/\brepeat\s+again\b/ig, "repeat"),
+    },
+    {
+      pattern: /\bmore\s+better\b/i,
+      message: "Double comparative: 'more better' is incorrect. Use 'better' or 'more effective'.",
+      fix: (s: string) => s.replace(/\bmore\s+better\b/ig, "better"),
+    },
+  ];
+
+  private static readonly ARTICLE_RULES = [
+    {
+      pattern: /\ba\s+[aeiou][a-z]*\b/i,
+      message: "Words beginning with a vowel sound take 'an', not 'a'.",
+      fix: (s: string) => s.replace(/\ba\s+(hour|honest|honor|MBA|MA|MP|MLA|heir|herb(?!s))\b/ig,
+        (match, p1) => `an ${p1}`),
+    },
+    {
+      pattern: /\ban\s+[^aeiouhms][a-z]*\b/i,
+      message: "Words beginning with a consonant sound take 'a', not 'an'.",
+      fix: (s: string) => s.replace(/\ban\s+(university|European|eulogy|one-time|unicorn)\b/ig,
+        (match, p1) => `a ${p1}`),
+    },
+  ];
+
+  static validate(sentence: string): GrammarCheckResult {
+    const errors: string[] = [];
+    const suggestions: string[] = [];
+    let fixed = sentence;
+
+    const allRules = [
+      ...this.SUBJECT_VERB_RULES,
+      ...this.COMMON_ERRORS,
+      ...this.ARTICLE_RULES,
+    ];
+
+    for (const rule of allRules) {
+      if (rule.pattern.test(fixed)) {
+        errors.push(rule.message);
+        fixed = rule.fix(fixed);
+      }
+    }
+
+    return {
+      sentence,
+      errors,
+      suggestions: fixed !== sentence ? [fixed] : [],
+      isCorrect: errors.length === 0,
+    };
+  }
+}
+
+// Example usage:
+const testCases = [
+  "Each of the employees have completed the training.",
+  "The number of cyber attacks are increasing every year.",
+  "He returned back to the office after lunch.",
+  "The reason why he left was because of poor management.",
+  "She is a honest officer.",
+  "Neither the manager nor his assistants was present.",
+];
+
+for (const sentence of testCases) {
+  const result = GrammarValidator.validate(sentence);
+  console.log(`Original: "${result.sentence}"`);
+  console.log(`  Correct: ${result.isCorrect}`);
+  if (result.errors.length > 0) {
+    console.log(`  Errors: ${result.errors.join("; ")}`);
+  }
+  if (result.suggestions.length > 0) {
+    console.log(`  Suggestion: "${result.suggestions[0]}"`);
+  }
+  console.log("");
+}
+```
+
+## Mermaid Flowchart: Grammar Error Detection Decision Tree
+
+```mermaid
+flowchart TD
+    A[Read the Sentence] --> B{Is verb correct?}
+    B -->|Check Subject-Verb Agreement| C{Identify the real subject}
+    C --> D[Ignore prepositional phrases<br/>between subject and verb]
+    D --> E{Subject singular or plural?}
+    E -->|Singular| F[Verb must be singular<br/>has/is/was/does]
+    E -->|Plural| G[Verb must be plural<br/>have/are/were/do]
+    
+    B -->|Check Tense| H{Look for time markers}
+    H -->|since/for/duration| I[Use Perfect/Perfect Continuous]
+    H -->|yesterday/last/ago| J[Use Simple Past]
+    H -->|tomorrow/next| K[Use Future tense]
+    H -->|always/every day| L[Use Simple Present]
+    
+    B -->|Check Articles| M{A or An?}
+    M -->|Vowel Sound| N[Use 'an']
+    M -->|Consonant Sound| O[Use 'a']
+    
+    B -->|Check Prepositions| P{Fixed combination?}
+    P -->|abide/differ/prohibit| Q[Learn fixed prep combos]
+    
+    B -->|Check Redundancy| R{return back?<br/>reason because?<br/>repeat again?}
+    R -->|Yes| S[Remove redundant word]
+```
+
+## Mermaid Flowchart: Tense Selection Strategy
+
+```mermaid
+flowchart LR
+    A[Action Time?] --> B{Past?}
+    B -->|Yes| C{Completed before<br/>another past action?}
+    C -->|Yes| D[Past Perfect<br/>had + V3]
+    C -->|No| E{Was ongoing<br/>in the past?}
+    E -->|Yes| F[Past Continuous<br/>was/were + V-ing]
+    E -->|No| G[Simple Past<br/>V2]
+    
+    B -->|Present| H{Started in past<br/>and continues?}
+    H -->|Yes| I[Present Perfect Continuous<br/>has/have been + V-ing]
+    H -->|No| J{Happening now?}
+    J -->|Yes| K[Present Continuous<br/>is/am/are + V-ing]
+    J -->|No| L[Simple Present<br/>V1/V5]
+    
+    B -->|Future| M{Will be completed<br/>by a future time?}
+    M -->|Yes| N[Future Perfect<br/>will have + V3]
+    M -->|No| O[Simple Future<br/>will + V1]
+```
+
+---
+
+## 📖 Exercise Bank (30 Questions)
+
+### Section A: Spotting Errors (Q1-Q10)
+
+Identify the error in each sentence:
+
+1. *The team of officers (A) / were reviewing (B) / the case files (C) / when the alarm rang. (D) / No error (E)*
+2. *Either the manager (A) / or his assistants (B) / is responsible (C) / for the delay. (D) / No error (E)*
+3. *One of the candidates (A) / who have applied (B) / for the post (C) / is missing. (D) / No error (E)*
+4. *The data shows (A) / that the number of (B) / fraud cases have (C) / increased significantly. (D) / No error (E)*
+5. *He asked me (A) / that how I (B) / managed to complete (C) / the project on time. (D) / No error (E)*
+6. *The police have (A) / catched the (B) / cyber criminal (C) / late last night. (D) / No error (E)*
+7. *She is (A) / more smarter (B) / than her (C) / colleagues. (D) / No error (E)*
+8. *The manager told (A) / the clerk that (B) / his application (C) / was rejected. (D) / No error (E)*
+9. *Hardly had (A) / the meeting begun (B) / than the (C) / fire alarm rang. (D) / No error (E)*
+10. *He is suffering (A) / from fever (B) / since last (C) / Monday. (D) / No error (E)*
+
+### Section B: Fillers (Q11-Q18)
+
+11. *The RBI has _____ banks to implement stricter KYC norms.* a) directed b) requested c) advised d) suggested
+12. *The company has decided to _____ its operations to rural areas.* a) expand b) expend c) expend d) expel
+13. *The auditor raised _____ about the accuracy of the financial statements.* a) questions b) quarrels c) qualms d) queries
+14. *The new regulation is _____ to all scheduled commercial banks.* a) applicable b) applied c) applying d) application
+15. *Double Filler: The government has _____ a policy to _____ financial inclusion.* a) launched / promote b) launching / promoted c) launch / promoting d) launched / promoted
+16. *Double Filler: The IT officer was _____ for _____ the security breach.* a) responsible / preventing b) responsible / ignoring c) famous / causing d) known / overlooking
+17. *Double Filler: The bank has _____ a new system _____ the loan approval process.* a) introduced / to streamline b) introduced / streamlining c) introducing / streamlines d) introduces / streamlined
+18. *Double Filler: The committee _____ the proposal _____ careful consideration.* a) approved / after b) approved / before c) approves / during d) approving / into
+
+### Section C: Sentence Improvement (Q19-Q24)
+
+19. *I am working in this bank since 2015.* a) I have been working b) I was working c) I worked d) No improvement
+20. *If I was the CEO, I would restructure the organisation.* a) If I were b) If I am c) If I had been d) No improvement
+21. *The manager requested to see the report immediately.* a) requested that he see b) requested for seeing c) requested to be seen d) No improvement
+22. *No sooner did he arrive when the meeting started.* a) No sooner did he arrive than b) No sooner he arrived when c) No sooner had he arrived than d) No improvement
+23. *He prefers coffee rather than tea.* a) prefers coffee to tea b) prefers coffee over tea c) prefers coffee than tea d) No improvement
+24. *She not only lost her wallet but also her phone.* a) She lost not only her wallet but also her phone b) She not only lost her wallet but also lost her phone c) Not only she lost her wallet but also her phone d) No improvement
+
+### Section D: Direct-Indirect Speech (Q25-Q27)
+
+25. *She said, "I am leaving for Delhi tomorrow."* Convert to indirect.
+    a) She said that she was leaving for Delhi tomorrow. b) She said that she is leaving for Delhi the next day. c) She said that she was leaving for Delhi the next day. d) She said that I am leaving for Delhi tomorrow.
+26. *He said to me, "Have you completed the assignment?"* Convert to indirect.
+    a) He asked me if I had completed the assignment. b) He asked me if I have completed the assignment. c) He asked me that I had completed the assignment. d) He said to me whether I had completed the assignment.
+27. *The teacher said, "The Earth revolves around the Sun."* Convert to indirect.
+    a) The teacher said that the Earth revolved around the Sun. b) The teacher said that the Earth revolves around the Sun. c) The teacher said that the Earth is revolving around the Sun. d) The teacher said that the Earth has revolved around the Sun.
+
+### Section E: Voice Change & Error Correction (Q28-Q30)
+
+28. Convert to active voice: *The new software was installed by the IT team.*
+    a) The IT team was installing the new software. b) The IT team installed the new software. c) The IT team has installed the new software. d) The new software installed the IT team.
+29. Correct the sentence: *He is one of the best officers which have served this bank.*
+    a) He is one of the best officers who have served this bank. b) He is one of the best officers which has served this bank. c) He is one of the best officers who has served this bank. d) He is one of the best officer who have served this bank.
+30. Correct the sentence: *The committee have submitted their report.*
+    a) The committee has submitted its report. b) The committee has submitted their report. c) The committee have submitted its report. d) The committee were submitting their report.
+
+**Answer Key:**
+
+| Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
+|---|--------|---|--------|---|--------|---|--------|---|--------|
+| 1 | A (was) | 2 | C (are) | 3 | E (No error) | 4 | C (has) | 5 | B (how) |
+| 6 | B (caught) | 7 | B (smarter) | 8 | E (No error — ambiguous) | 9 | C (when) | 10 | A (has been suffering) |
+| 11 | a) directed | 12 | a) expand | 13 | a) questions | 14 | a) applicable | 15 | a) launched / promote |
+| 16 | b) responsible / ignoring | 17 | a) introduced / to streamline | 18 | a) approved / after | 19 | a) I have been working | 20 | a) If I were |
+| 21 | a) requested that he see | 22 | c) No sooner had he arrived than | 23 | a) prefers coffee to tea | 24 | a) She lost not only her wallet but also her phone | 25 | c) She said that she was leaving for Delhi the next day |
+| 26 | a) He asked me if I had completed the assignment | 27 | b) The teacher said that the Earth revolves around the Sun | 28 | b) The IT team installed the new software | 29 | a) He is one of the best officers who have served this bank | 30 | a) The committee has submitted its report |
+
+---
+
 ## Summary
 
 - Grammar carries **5–7 questions** in IBPS SO Prelims — high scoring with practice

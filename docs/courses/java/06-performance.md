@@ -3522,8 +3522,8 @@ class VirtualThreadPitfalls {
    - D) MAT
 
 <details>
-<summary>Answer</summary>
-**B) JFR (JDK Flight Recorder).** JFR has <1% overhead and is designed for continuous production use.
+<summary>Answer&lt;/summary&gt;
+**B) JFR (JDK Flight Recorder).** JFR has &lt;1% overhead and is designed for continuous production use.
 </details>
 
 2. In Eclipse MAT, what does the Dominator Tree show?
@@ -3533,7 +3533,7 @@ class VirtualThreadPitfalls {
    - D) GC log summary
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Which objects keep others alive — the dominator path to the GC root.** The dominator tree simplifies heap analysis by showing the smallest set of objects that retain the largest amount of memory.
 </details>
 
@@ -3544,7 +3544,7 @@ class VirtualThreadPitfalls {
    - D) To profile CPU usage
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) To consume the return value of a benchmark to prevent dead code elimination.** Without Blackhole, the JIT may optimize away the code being benchmarked if the result is unused.
 </details>
 
@@ -3555,7 +3555,7 @@ class VirtualThreadPitfalls {
    - D) Allocation rate
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Pause time.** For latency-sensitive applications, stop-the-world pause times directly impact response time SLAs.
 </details>
 

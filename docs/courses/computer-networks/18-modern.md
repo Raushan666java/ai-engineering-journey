@@ -742,7 +742,7 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 
 **Numbered Steps → Starlink Data Flow:**
 1. User sends request (e.g., loading a website) from connected device → Starlink router → Dish.
-2. Dish beamforms to the satellite passing overhead (handled in <1 ms beam switching).
+2. Dish beamforms to the satellite passing overhead (handled in &lt;1 ms beam switching).
 3. Satellite receives the uplink signal (Ku/Ka band: 12-18 GHz / 26.5-40 GHz).
 4. If the destination ground station is within the satellite's footprint: satellite transmits down directly.
 5. If not: satellite forwards via laser link to another satellite in the constellation (laser ISL at 200 Gbps).
@@ -767,7 +767,7 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 ### 18.6.4 Edge Cases
 
 - **Rain fade (Ku/Ka band):** Heavy rain attenuates signals >30 dB. Mitigation: adaptive modulation (lower throughput), site diversity, larger dish aperture.
-- **LEO handover:** Satellite moves at 7.5 km/s; user switches satellite every 1-4 minutes. Handover must complete in <10 ms to avoid TCP timeout. Mitigation: predictive handover (ephemeris-based), MPTCP/QUIC connection migration.
+- **LEO handover:** Satellite moves at 7.5 km/s; user switches satellite every 1-4 minutes. Handover must complete in &lt;10 ms to avoid TCP timeout. Mitigation: predictive handover (ephemeris-based), MPTCP/QUIC connection migration.
 - **Space debris collision risk:** Kessler syndrome → cascading collisions. Mitigation: automated collision avoidance, deorbit plans, propulsion systems.
 - **Spectrum allocation:** Interference with GEO satellites (same Ku/Ka bands). Mitigation: power limits, exclusion zones, beam nulling.
 - **C band (3.7-4.2 GHz) coexistence:** 5G and satellite sharing same band. Mitigation: filtering, guard bands, coordinated deployment.
@@ -1079,7 +1079,7 @@ with manager.connect(**device) as m:
 
 **Network capacity planning:** Forecast traffic growth using ARIMA, Prophet, or LSTM. Input: historical utilization + business growth metrics + seasonal patterns.
 
-**Intent-Based Networking (IBN):** NLP translates operator intent into network policies. Example: "ensure video streams have <50 ms latency" → configuration. Formal verification (Batfish, Minesweeper) validates correctness.
+**Intent-Based Networking (IBN):** NLP translates operator intent into network policies. Example: "ensure video streams have &lt;50 ms latency" → configuration. Formal verification (Batfish, Minesweeper) validates correctness.
 
 ### 18.9.2 AI/ML in Networking → Implementation
 
@@ -1185,7 +1185,7 @@ The only mature quantum networking technology. QKD allows two parties to share a
 5. Alice and Bob publicly compare which bases they used (not the bit values).
 6. They keep only bits where bases match (~50% of bits = raw key).
 7. They reveal a random subset to estimate quantum bit error rate (QBER).
-8. If QBER < threshold (typically 11%): no eavesdropper; they proceed to error correction and privacy amplification.
+8. If QBER &lt; threshold (typically 11%): no eavesdropper; they proceed to error correction and privacy amplification.
 9. If QBER > threshold: eavesdropper detected; key discarded.
 
 **Pseudocode → BB84 QKD Simulation:**
@@ -1227,7 +1227,7 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 - **Distance:** Fiber-based QKD: ~100 km (direct), ~500 km (with trusted relays). Satellite QKD: 1,200 km (Micius satellite, China-Austria).
 - **Key rate:** ~1-10 Kbps over 100 km. Compare to classical AES-256 key exchange at 10 Gbps.
 - **Error rate:** QBER 1-10% depending on distance and environment.
-- **Quantum memory:** Required for repeaters but current coherence time is <1 second.
+- **Quantum memory:** Required for repeaters but current coherence time is &lt;1 second.
 
 ### 18.10.3 Quantum Networking Feasibility
 
@@ -1292,7 +1292,7 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 | Model update (OTA) | O(F) download | O(F) storage | Downloading new model weights (10-500 MB per model) |
 | Data aggregation | O(N) merge | O(N) buffer | N = edge devices; merging time-series data is O(N) |
 
-**Why it matters:** Edge computing changes the calculus of where to run computation. Running inference on-device costs battery but saves bandwidth and latency. A single 1080p video stream = 10 Mbps. Streaming 100 cameras to cloud = 1 Gbps bandwidth cost (~$500/month). Edge processing reduces this to <100 Kbps per camera (metadata only).
+**Why it matters:** Edge computing changes the calculus of where to run computation. Running inference on-device costs battery but saves bandwidth and latency. A single 1080p video stream = 10 Mbps. Streaming 100 cameras to cloud = 1 Gbps bandwidth cost (~$500/month). Edge processing reduces this to &lt;100 Kbps per camera (metadata only).
 
 ### 18.11.5 A&D Table: Edge Computing
 
@@ -1435,7 +1435,7 @@ with tracer.start_as_current_span("backend-service") as span:
 | Full packet capture (pcap) | ~100 Î¼s per packet | Full packet (~1500 bytes) | Packet copy from kernel to userspace; disk write |
 | sFlow/NetFlow sampling | ~1 Î¼s per packet | 1:1000-1:10000 sampled | Sampling eliminates per-packet processing for most traffic |
 
-**Why it matters:** eBPF enables observability with <1% CPU overhead for most operations, making it feasible to monitor 100% of traffic in production. Full packet capture at 10 Gbps requires ~20% CPU per core; eBPF XDP drop at 10 Gbps requires <1% CPU per core. OpenTelemetry adds ~5 Î¼s per span, acceptable for most services but problematic for latency-critical (<1 ms) paths.
+**Why it matters:** eBPF enables observability with &lt;1% CPU overhead for most operations, making it feasible to monitor 100% of traffic in production. Full packet capture at 10 Gbps requires ~20% CPU per core; eBPF XDP drop at 10 Gbps requires <1% CPU per core. OpenTelemetry adds ~5 Î¼s per span, acceptable for most services but problematic for latency-critical (<1 ms) paths.
 
 ---
 
@@ -1520,7 +1520,7 @@ with tracer.start_as_current_span("backend-service") as span:
 2. **Root cause analysis:** Graph neural networks correlate alerts across layers (physical → L2 → L3 → application) to identify root cause. Reduces MTTD from hours to minutes.
 3. **Predictive maintenance:** ML models predict hardware failures (optical power degradation, CRC error trends, fan speed deviations) 24-48 hours before failure.
 4. **Traffic engineering:** Reinforcement learning optimizes routing (Google B4 uses ML for bandwidth allocation; achieves 95% link utilization vs 30-40% traditional).
-5. **Intent translation:** NLP converts operator intent ("ensure <50 ms for video traffic") into device configurations via IBN systems.
+5. **Intent translation:** NLP converts operator intent ("ensure &lt;50 ms for video traffic") into device configurations via IBN systems.
 
 **Limitations:** False positives, model drift (traffic patterns change over time), black-box decision transparency, training data requirements, inference latency for real-time control loops.
 
@@ -1535,8 +1535,8 @@ with tracer.start_as_current_span("backend-service") as span:
 ### Q7: Edge vs Cloud → how do you decide where to process data?
 
 **Answer:** Decision criteria (in priority order):
-1. **Latency requirement:** If round-trip must be <20 ms → edge (5G MEC). If >50 ms is acceptable → cloud.
-2. **Bandwidth cost:** If data rate >100 Mbps per device and aggregation point exists → edge pre-processing. If total data is <1 Gbps per site → cloud.
+1. **Latency requirement:** If round-trip must be &lt;20 ms → edge (5G MEC). If &gt;50 ms is acceptable → cloud.
+2. **Bandwidth cost:** If data rate >100 Mbps per device and aggregation point exists → edge pre-processing. If total data is &lt;1 Gbps per site → cloud.
 3. **Privacy/compliance:** If data must not leave premises (GDPR, HIPAA, PCI) → edge. If anonymizable → cloud.
 4. **Compute requirement:** If model requires GPU cluster (training) → cloud. If inference only → edge (TFLite, ONNX).
 5. **Power/cooling:** If device is battery-powered → lightweight edge (feature extraction) → cloud (heavy processing).
@@ -1559,7 +1559,7 @@ Starlink is the world's largest LEO satellite constellation (~5,500 satellites a
 
 AWS Wavelength embeds AWS compute (EC2, EBS) at 5G base station sites, providing sub-10 ms latency to mobile devices.
 - **Architecture:** Wavelength Zone = AWS region extension at a carrier's 5G edge site. UPF at the base station routes local traffic to the Wavelength Zone without leaving carrier network.
-- **Use case:** Real-time video inference for autonomous vehicles. Blueprint: GStreamer on Wavelength EC2 processes video frames (YOLOv8 inference in <5 ms), sends only metadata to cloud.
+- **Use case:** Real-time video inference for autonomous vehicles. Blueprint: GStreamer on Wavelength EC2 processes video frames (YOLOv8 inference in &lt;5 ms), sends only metadata to cloud.
 - **Telecom integration:** Carrier exposes APIs (TMF 640) for dynamic UPF traffic steering. Slice management via NSSF.
 
 ### Google B4 SDN (WAN Traffic Engineering)
@@ -1673,13 +1673,13 @@ Cisco SD-Access implements IBN for enterprise campus networks:
 
 **Zero Trust Networking:** No implicit trust → every request is authenticated and authorized (NIST SP 800-207). ZTNA replaces VPNs with identity-aware application access. SASE combines ZTNA, SWG, CASB, FWaaS, and SD-WAN in a cloud-delivered model.
 
-**AI/ML in Networking:** ML for anomaly detection (autoencoders, LSTM), traffic classification (Random Forest, XGBoost), predictive routing (RL, Google B4), capacity planning (ARIMA, Prophet). Key challenge: inference latency must be < phenomena detection time.
+**AI/ML in Networking:** ML for anomaly detection (autoencoders, LSTM), traffic classification (Random Forest, XGBoost), predictive routing (RL, Google B4), capacity planning (ARIMA, Prophet). Key challenge: inference latency must be &lt; phenomena detection time.
 
 **Quantum Networking:** QKD (BB84 protocol) uses single-photon polarization to distribute cryptographic keys with information-theoretic security. Limited to metro distances (~100 km fiber, 1,200 km satellite). Quantum repeaters and memory are active research areas.
 
 **Edge Computing:** Four tiers (device → local → regional → cloud) based on latency requirements. Enables sub-10 ms real-time applications (autonomous vehicles, AR, industrial automation). Reduces bandwidth by 100Ã— through local processing.
 
-**Network Observability:** eBPF provides kernel-level programmability for packet processing (XDP, tc, socket filters) with <1% CPU overhead. OpenTelemetry provides standardized distributed tracing (W3C TraceContext) across network boundaries.
+**Network Observability:** eBPF provides kernel-level programmability for packet processing (XDP, tc, socket filters) with &lt;1% CPU overhead. OpenTelemetry provides standardized distributed tracing (W3C TraceContext) across network boundaries.
 
 ---
 
@@ -1698,7 +1698,7 @@ Cisco SD-Access implements IBN for enterprise campus networks:
 
 7. **IPv6 transition for an enterprise:** A company has 5,000 employees, 10,000 IoT sensors, and a data center with 200 servers. All devices are currently IPv4. Design an IPv6 transition plan covering: (a) which transition mechanism to use for each device category, (b) timeline for complete transition, (c) testing strategy to ensure backward compatibility, (d) security policy updates needed. Justify each decision.
 
-8. **Edge vs cloud for video surveillance:** A smart city deploys 10,000 cameras (1080p, H.264, 10 Mbps each). Each camera captures 24/7. Design the processing architecture for: real-time license plate recognition (LPR, <500 ms), and historical video search (indexed queries on last 30 days). Compute: (a) total bandwidth if all cameras stream to cloud, (b) bandwidth after edge pre-processing (extract metadata only, 1 Kbps per camera), (c) required edge compute (GPU-hours) for real-time LPR at 30 FPS per camera, (d) cloud storage for 30 days of metadata. Assume JPEG metadata payload = 50 KB per detection event.
+8. **Edge vs cloud for video surveillance:** A smart city deploys 10,000 cameras (1080p, H.264, 10 Mbps each). Each camera captures 24/7. Design the processing architecture for: real-time license plate recognition (LPR, &lt;500 ms), and historical video search (indexed queries on last 30 days). Compute: (a) total bandwidth if all cameras stream to cloud, (b) bandwidth after edge pre-processing (extract metadata only, 1 Kbps per camera), (c) required edge compute (GPU-hours) for real-time LPR at 30 FPS per camera, (d) cloud storage for 30 days of metadata. Assume JPEG metadata payload = 50 KB per detection event.
 
 9. **LoRaWAN capacity planning:** A smart agriculture deployment has 50,000 soil sensors. Each sensor transmits a 12-byte payload every 10 minutes. Using EU 868 MHz band with 1% duty cycle and SF12 (air time = 1,482 ms per packet): (a) compute the maximum number of sensors per gateway before duty cycle is exceeded, (b) determine number of gateways needed, (c) explain how ADR could increase capacity by switching to SF7 (air time = 56 ms) for close-range sensors, (d) compute the new capacity with ADR assuming 60% of sensors are close-range (SF7) and 40% far-range (SF12).
 

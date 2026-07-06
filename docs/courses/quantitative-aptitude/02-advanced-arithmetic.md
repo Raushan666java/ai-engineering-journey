@@ -453,6 +453,664 @@ flowchart LR
     F --> G["Final Pure = x × (1 - y/x)^n"]
 ```
 
+## TypeScript Implementation: Advanced Arithmetic Calculator
+
+```typescript
+// advanced-arithmetic.ts — Calculator for Chapter 2
+
+class TimeWorkCalculator {
+  static lcmMethod(times: number[]): {
+    totalWork: number;
+    efficiencies: number[];
+    combinedEfficiency: number;
+  } {
+    const gcd = (a: number, b: number): number => (b === 0 ? a : gcd(b, a % b));
+    const lcm = (a: number, b: number): number => (a * b) / gcd(a, b);
+    const totalWork = times.reduce((acc, t) => lcm(acc, t), 1);
+    const efficiencies = times.map((t) => totalWork / t);
+    const combinedEfficiency = efficiencies.reduce((a, b) => a + b, 0);
+    return { totalWork, efficiencies, combinedEfficiency };
+  }
+
+  static combinedTime(a: number, b: number): number {
+    return (a * b) / (a + b);
+  }
+
+  static timeWithThree(a: number, b: number, c: number): number {
+    return (a * b * c) / (a * b + b * c + c * a);
+  }
+
+  static workDone(persons: { time: number; days: number }[]): number {
+    // Each person has a time to complete full work and days worked
+    let totalFraction = 0;
+    for (const p of persons) {
+      totalFraction += p.days / p.time;
+    }
+    return totalFraction;
+  }
+
+  static wagesShare(
+    wages: number,
+    efficiencies: number[],
+    days: number[]
+  ): number[] {
+    const effective = efficiencies.map((e, i) => e * days[i]);
+    const total = effective.reduce((a, b) => a + b, 0);
+    return effective.map((e) => (e / total) * wages);
+  }
+}
+
+class TSDCalculator {
+  static speed(distance: number, time: number): number {
+    return distance / time;
+  }
+
+  static distance(speed: number, time: number): number {
+    return speed * time;
+  }
+
+  static time(distance: number, speed: number): number {
+    return distance / speed;
+  }
+
+  static kmhToMs(kmh: number): number {
+    return kmh * (5 / 18);
+  }
+
+  static msToKmh(ms: number): number {
+    return ms * (18 / 5);
+  }
+
+  static avgSpeedEqualDistances(a: number, b: number): number {
+    return (2 * a * b) / (a + b);
+  }
+
+  static trainCrossPole(length: number, speed: number): number {
+    return length / speed;
+  }
+
+  static trainCrossPlatform(
+    trainLength: number,
+    platformLength: number,
+    speed: number
+  ): number {
+    return (trainLength + platformLength) / speed;
+  }
+
+  static relativeSpeedSame(s1: number, s2: number): number {
+    return Math.abs(s1 - s2);
+  }
+
+  static relativeSpeedOpposite(s1: number, s2: number): number {
+    return s1 + s2;
+  }
+
+  static timeToMeet(
+    distance: number,
+    s1: number,
+    s2: number,
+    sameDirection: boolean
+  ): number {
+    const relSpeed = sameDirection
+      ? this.relativeSpeedSame(s1, s2)
+      : this.relativeSpeedOpposite(s1, s2);
+    return distance / relSpeed;
+  }
+
+  static boatStillWater(downstream: number, upstream: number): number {
+    return (downstream + upstream) / 2;
+  }
+
+  static streamSpeed(downstream: number, upstream: number): number {
+    return (downstream - upstream) / 2;
+  }
+}
+
+class AlligationCalculator {
+  static mixRatio(
+    cheaperPrice: number,
+    dearerPrice: number,
+    meanPrice: number
+  ): [number, number] {
+    const cheaperQty = dearerPrice - meanPrice;
+    const dearerQty = meanPrice - cheaperPrice;
+    return [cheaperQty, dearerQty];
+  }
+
+  static replacementFormula(
+    initial: number,
+    replacePerStep: number,
+    steps: number
+  ): number {
+    return initial * Math.pow(1 - replacePerStep / initial, steps);
+  }
+
+  static concentrationAfterMixing(
+    concA: number,
+    qtyA: number,
+    concB: number,
+    qtyB: number
+  ): number {
+    return (concA * qtyA + concB * qtyB) / (qtyA + qtyB);
+  }
+}
+
+class PartnershipCalculator {
+  static profitShare(
+    investments: { amount: number; months: number }[],
+    totalProfit: number
+  ): number[] {
+    const weighted = investments.map((i) => i.amount * i.months);
+    const totalWeight = weighted.reduce((a, b) => a + b, 0);
+    return weighted.map((w) => (w / totalWeight) * totalProfit);
+  }
+
+  static workingPartnerShare(
+    investments: { amount: number; months: number }[],
+    totalProfit: number,
+    workingPartnerIndex: number,
+    salaryPercent: number
+  ): number[] {
+    const salary = (salaryPercent / 100) * totalProfit;
+    const remainingProfit = totalProfit - salary;
+    const shares = this.profitShare(investments, remainingProfit);
+    shares[workingPartnerIndex] += salary;
+    return shares;
+  }
+}
+
+class AgeCalculator {
+  static fromRatio(
+    currentRatio: [number, number],
+    futureRatio: [number, number],
+    yearsAhead: number
+  ): [number, number] {
+    // Let current ages be ax, bx. After yearsAhead: (ax+y)/(bx+y) = c/d
+    const [a, b] = currentRatio;
+    const [c, d] = futureRatio;
+    const x = (yearsAhead * (d - c)) / (a * d - b * c);
+    return [a * x, b * x];
+  }
+
+  static ageDifference(present: number, past: number): number {
+    return Math.abs(present - past);
+  }
+}
+
+// Example usage
+const tw = TimeWorkCalculator.lcmMethod([12, 18]);
+console.log(`Total work: ${tw.totalWork} units`);
+console.log(`Combined efficiency: ${tw.combinedEfficiency} units/day`);
+
+const tsd = new TSDCalculator();
+console.log(`45 km/h in m/s: ${tsd.kmhToMs(45).toFixed(2)}`);
+
+const alligation = AlligationCalculator.mixRatio(40, 55, 48);
+console.log(`Mix ratio: ${alligation[0]}:${alligation[1]}`);
+
+const replaced = AlligationCalculator.replacementFormula(40, 8, 3);
+console.log(`After 3 replacements: ${replaced.toFixed(2)}L milk`);
+```
+
+## 📝 Solved Examples (20 MCQs)
+
+### Set 1: Time & Work (Questions 1–5)
+
+**Question 1:** A can complete a work in 20 days and B in 30 days. They work together for 5 days, then A leaves. How many more days will B take to finish the remaining work?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** 1 day work = 1/time; Remaining work fraction / 1 day work of B = days
+
+A's 1 day = 1/20, B's 1 day = 1/30
+(A+B)'s 1 day = 1/20 + 1/30 = 5/60 = 1/12
+Work in 5 days = 5/12
+Remaining = 1 − 5/12 = 7/12
+Time for B = (7/12) ÷ (1/30) = (7/12) × 30 = 210/12 = 17.5 days
+
+**Answer:** 17.5 days
+</details>
+
+**Question 2:** If 8 men can do a work in 15 days, in how many days will 12 men do the same work?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** M₁ × D₁ = M₂ × D₂ (total work = men × days)
+
+Total work = 8 × 15 = 120 man-days
+Days for 12 men = 120 / 12 = 10 days
+
+**Answer:** 10 days
+</details>
+
+**Question 3:** A and B can do a work in 12 days. B and C can do it in 15 days. C and A can do it in 20 days. Find the time taken by all three working together.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** 2(A+B+C)'s 1 day = (A+B)+(B+C)+(C+A)'s 1 day
+
+(A+B)'s 1 day = 1/12
+(B+C)'s 1 day = 1/15
+(C+A)'s 1 day = 1/20
+2(A+B+C)'s 1 day = 1/12 + 1/15 + 1/20 = (5+4+3)/60 = 12/60 = 1/5
+(A+B+C)'s 1 day = 1/10
+All three together take 10 days.
+
+**Answer:** 10 days
+</details>
+
+**Question 4:** A pipe can fill a tank in 15 hours. Another pipe can empty it in 20 hours. If both are opened simultaneously, how long will it take to fill the tank?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Combined = 1/fill − 1/empty
+
+Fill rate = 1/15 per hour
+Empty rate = 1/20 per hour
+Net fill rate = 1/15 − 1/20 = (4−3)/60 = 1/60
+Time = 60 hours
+
+**Answer:** 60 hours
+</details>
+
+**Question 5:** 4 men and 6 women can complete a work in 8 days. 3 men and 7 women can complete it in 10 days. Find the time taken by 10 women alone.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Form equations from given conditions, solve for man and woman efficiencies.
+
+Let 1 man's 1 day work = m, 1 woman's 1 day work = w
+4m + 6w = 1/8 ...(i)
+3m + 7w = 1/10 ...(ii)
+Multiply (i) by 3, (ii) by 4:
+12m + 18w = 3/8
+12m + 28w = 4/10 = 2/5
+Subtract: 10w = 2/5 − 3/8 = (16−15)/40 = 1/40
+w = 1/400
+10 women's 1 day = 10/400 = 1/40
+Time = 40 days
+
+**Answer:** 40 days
+</details>
+
+### Set 2: Time-Speed-Distance (Questions 6–10)
+
+**Question 6:** A train 300 metres long passes a platform 500 metres long in 40 seconds. Find the speed of the train in km/h.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Speed = (Train length + Platform length) / Time; Convert m/s to km/h × 18/5
+
+Total distance = 300 + 500 = 800 m
+Speed = 800/40 = 20 m/s
+In km/h = 20 × 18/5 = 72 km/h
+
+**Answer:** 72 km/h
+</details>
+
+**Question 7:** Two trains of lengths 250 m and 350 m run on parallel tracks at 72 km/h and 54 km/h in opposite directions. How long will they take to cross each other?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Time = Sum of lengths / Relative speed (opposite = sum of speeds)
+
+Speed₁ = 72 × 5/18 = 20 m/s
+Speed₂ = 54 × 5/18 = 15 m/s
+Relative speed = 20 + 15 = 35 m/s
+Total length = 250 + 350 = 600 m
+Time = 600/35 = 17.14 seconds
+
+**Answer:** 17.14 seconds
+</details>
+
+**Question 8:** A man travels from A to B at 30 km/h and returns at 50 km/h. Find the average speed.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Average Speed = 2ab/(a+b) for equal distances
+
+Avg speed = (2 × 30 × 50)/(30 + 50) = 3000/80 = 37.5 km/h
+
+**Answer:** 37.5 km/h
+</details>
+
+**Question 9:** A boat goes 30 km upstream in 5 hours and 60 km downstream in 4 hours. Find the speed of the boat in still water.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Still water speed = (Downstream + Upstream)/2
+
+Upstream speed = 30/5 = 6 km/h
+Downstream speed = 60/4 = 15 km/h
+Speed in still water = (15 + 6)/2 = 10.5 km/h
+
+**Answer:** 10.5 km/h
+</details>
+
+**Question 10:** A thief is spotted by a policeman 200 metres away. The thief runs at 10 km/h and the policeman at 12 km/h. How long will the policeman take to catch the thief?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Time = Distance / Relative speed (same direction)
+
+Relative speed = 12 − 10 = 2 km/h = 2 × 5/18 = 10/18 = 5/9 m/s
+Time = 200 / (5/9) = 200 × 9/5 = 360 seconds = 6 minutes
+
+**Answer:** 6 minutes
+</details>
+
+### Set 3: Mixtures & Alligations (Questions 11–14)
+
+**Question 11:** In what ratio should rice costing ₹30/kg and ₹42/kg be mixed to get a mixture worth ₹36/kg?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Ratio = (Dearer − Mean) : (Mean − Cheaper)
+
+Cheaper = 30, Dearer = 42, Mean = 36
+Ratio = (42−36) : (36−30) = 6:6 = 1:1
+
+**Answer:** 1:1
+</details>
+
+**Question 12:** A vessel contains 60 litres of pure milk. 12 litres are drawn and replaced with water. This is done twice. Find the quantity of milk remaining.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Remaining = x(1 − y/x)^n
+
+x = 60, y = 12, n = 2
+Remaining = 60 × (1 − 12/60)² = 60 × (4/5)² = 60 × 16/25 = 38.4 litres
+
+**Answer:** 38.4 litres
+</details>
+
+**Question 13:** A mixture of 40 litres contains milk and water in the ratio 3:1. How much water should be added to make the ratio 2:1?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Quantity of milk remains unchanged. New total = milk/(new milk ratio)
+
+Milk = (3/4) × 40 = 30 litres
+Water = 10 litres
+After adding water: milk:water = 2:1
+30/(10 + x) = 2/1
+30 = 20 + 2x
+x = 5 litres
+
+**Answer:** 5 litres
+</details>
+
+**Question 14:** In what ratio must water (free) be mixed with milk costing ₹50 per litre to obtain a mixture worth ₹40 per litre?
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Ratio = (Dearer − Mean) : (Mean − Cheaper)
+
+Cost of water = 0, cost of milk = 50, mean = 40
+Ratio = (50−40) : (40−0) = 10:40 = 1:4
+Water:Milk = 1:4
+
+**Answer:** 1:4
+</details>
+
+### Set 4: Partnership (Questions 15–17)
+
+**Question 15:** A and B invest ₹40,000 and ₹60,000 in a business. At the end of the year, the profit is ₹75,000. Find each partner's share.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Profit ratio = Investment ratio (for same time period)
+
+Ratio = 40000:60000 = 2:3
+Sum = 5
+A's share = (2/5) × 75000 = ₹30,000
+B's share = (3/5) × 75000 = ₹45,000
+
+**Answer:** A = ₹30,000, B = ₹45,000
+</details>
+
+**Question 16:** A starts a business with ₹50,000. After 6 months, B joins with ₹80,000. After 1 year, the profit is ₹84,000. Find B's share.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Profit ratio = I₁T₁ : I₂T₂
+
+A's investment period = 12 months
+B's investment period = 6 months
+Ratio = (50000×12) : (80000×6) = 600000:480000 = 5:4
+Sum = 9
+B's share = (4/9) × 84000 = ₹37,333.33
+
+**Answer:** ₹37,333.33
+</details>
+
+**Question 17:** A and B invest in a business in ratio 3:2. A is a working partner and gets 15% of profit as salary. If total profit is ₹55,000, find B's share.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Working partner gets salary first, remaining profit shared in investment ratio.
+
+A's salary = 15% of 55000 = ₹8,250
+Remaining profit = 55,000 − 8,250 = ₹46,750
+Investment ratio = 3:2, sum = 5
+B's share = (2/5) × 46750 = ₹18,700
+
+**Answer:** ₹18,700
+</details>
+
+### Set 5: Ages (Questions 18–20)
+
+**Question 18:** The ratio of A's age to B's age is 3:4. After 8 years, the ratio becomes 5:6. Find the present age of A.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Form equation from given condition: (3x+8)/(4x+8) = 5/6
+
+Let A = 3x, B = 4x
+(3x+8)/(4x+8) = 5/6
+6(3x+8) = 5(4x+8)
+18x + 48 = 20x + 40
+2x = 8, x = 4
+A = 12 years
+
+**Answer:** 12 years
+</details>
+
+**Question 19:** A father is three times as old as his son. 5 years ago, the father's age was 4 times the son's age. Find the son's present age.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Constant difference equation; let son = x, father = 3x
+
+Son = x, Father = 3x
+5 years ago: 3x − 5 = 4(x − 5)
+3x − 5 = 4x − 20
+x = 15
+Son = 15 years
+
+**Answer:** 15 years
+</details>
+
+**Question 20:** The sum of the ages of a mother and daughter is 50 years. 5 years ago, the mother was 3 times as old as the daughter. Find the daughter's present age.
+
+<details>
+<summary>Answer & Solution</summary>
+**Formula:** Two equations: M + D = 50, (M−5) = 3(D−5)
+
+M + D = 50 ...(i)
+M − 5 = 3(D − 5) → M − 5 = 3D − 15 → M = 3D − 10 ...(ii)
+Substitute (ii) in (i): 3D − 10 + D = 50 → 4D = 60 → D = 15
+
+**Answer:** 15 years
+</details>
+
+## 📖 Exercise Bank (30 Questions)
+
+**1.** A can do a work in 24 days. B is 20% more efficient than A. How many days will B take alone?
+
+**2.** 6 men can complete a work in 12 days. How many additional men are needed to complete the work in 8 days?
+
+**3.** A and B can do a work in 18 days. B and C can do it in 24 days. A and C can do it in 36 days. In how many days will A, B, C together complete the work?
+
+**4.** A tank can be filled by pipe A in 5 hours and by pipe B in 10 hours. An outlet pipe C can empty it in 15 hours. If all three are opened together, find the time to fill the tank.
+
+**5.** 2 men and 3 women can complete a work in 10 days. 3 men and 2 women can complete it in 8 days. Find the time taken by 1 man and 1 woman together.
+
+**6.** A train 200 m long crosses a bridge 400 m long in 30 seconds. Find the speed in km/h.
+
+**7.** Two trains of lengths 180 m and 240 m run at 60 km/h and 48 km/h in the same direction. How long will they take to cross each other?
+
+**8.** A man rows 20 km downstream in 2 hours and 14 km upstream in 2 hours. Find the speed of the stream.
+
+**9.** A car covers a distance of 600 km at a uniform speed. If the speed had been 10 km/h more, it would have taken 2 hours less. Find the original speed.
+
+**10.** A person walks at 5 km/h from A to B and reaches at 2 PM. If he walks at 7 km/h, he reaches at 12 noon. Find the distance AB.
+
+**11.** In what ratio should tea costing ₹180/kg and ₹220/kg be mixed so that the mixture sold at ₹210/kg yields no profit no loss?
+
+**12.** A can contains 30 litres of pure milk. 10 litres are drawn and replaced with water. This is repeated once. Find the quantity of milk remaining.
+
+**13.** A mixture of 60 litres contains alcohol and water in ratio 2:1. How much water must be added to make the ratio 1:1?
+
+**14.** Gold is 18 times as heavy as water and copper is 9 times as heavy as water. In what ratio should they be mixed to get an alloy 15 times as heavy as water?
+
+**15.** A, B, C invest ₹20,000, ₹30,000, ₹40,000 in a partnership. C leaves after 8 months. At the end of 2 years, the profit is ₹1,80,000. Find each share.
+
+**16.** A and B start a business with ₹10,000 and ₹15,000. After 4 months, A withdraws ₹4,000. After another 4 months, B invests ₹5,000 more. Find the profit share ratio at the end of 2 years.
+
+**17.** A working partner gets 10% of profit as salary and the rest is shared in the ratio of investments. If A and B invest ₹30,000 and ₹50,000, and total profit is ₹80,000, find A's total share.
+
+**18.** The ratio of ages of A and B is 4:7. After 5 years, the ratio will be 3:5. Find their present ages.
+
+**19.** The sum of ages of a father and son is 45 years. 5 years hence, the father's age will be 4 times the son's age. Find their present ages.
+
+**20.** Rohan's age is 4 times his son's age. 8 years from now, Rohan will be 3 times his son's age. Find their present ages.
+
+**21.** A can do a work in 15 days and B in 25 days. They work together for 5 days, then C joins them. If the work is finished in 2 more days, in how many days can C alone do the work?
+
+**22.** Two pipes A and B can fill a tank in 20 and 30 minutes respectively. If both are opened together, but A is closed after 8 minutes, find the total time taken to fill the tank.
+
+**23.** A train crosses a 400 m platform in 30 seconds and a 600 m bridge in 40 seconds. Find the length and speed of the train.
+
+**24.** A man covers half the distance at 20 km/h and the other half at 30 km/h. Find the average speed.
+
+**25.** A motorboat covers a distance downstream in 6 hours and upstream in 8 hours. Find the time taken by a raft to cover the same distance.
+
+**26.** Alcohol and water are in a vessel in ratio 4:1. 15 litres of mixture is drawn and replaced with water. If the ratio becomes 3:2, find the initial quantity.
+
+**27.** A, B, C started a business. A invested ₹20,000 for 6 months, B ₹30,000 for 8 months, C ₹40,000 for 10 months. Find their profit share ratio.
+
+**28.** The average age of a family of 5 members is 25 years. If the youngest member is 5 years old, what was the average 5 years ago?
+
+**29.** The age of A is 25 years more than B's age. 15 years hence, A's age will be twice B's age. Find their present ages.
+
+**30.** A man can row at 8 km/h in still water. He takes 3 hours to row 15 km downstream. Find the time to row the same distance upstream.
+
+**Answer Key:**
+
+1. 20 days
+2. 3 men
+3. 16 days
+4. 30/7 = 4.29 hours
+5. 40/7 ≈ 5.71 days
+6. 72 km/h
+7. 126 seconds
+8. 1.5 km/h
+9. 50 km/h
+10. 35 km
+11. 1:2
+12. 13.33 litres
+13. 20 litres
+14. 2:1
+15. A=₹48,000, B=₹72,000, C=₹60,000
+16. 14:23
+17. ₹36,250
+18. A=20, B=35
+19. F=35, S=10
+20. R=64, S=16
+21. 200/7 ≈ 28.57 days
+22. 18 minutes
+23. L=200m, S=72 km/h
+24. 24 km/h
+25. 48 hours
+26. 75 litres
+27. 6:12:20 = 3:6:10
+28. 25 years
+29. A=35, B=10
+30. 5 hours
+
+## Mermaid Diagram: Work — Efficiency vs Time
+
+```mermaid
+flowchart TD
+    A["Person A takes 'a' days"] --> B["Efficiency = 1/a per day"]
+    C["Person B takes 'b' days"] --> D["Efficiency = 1/b per day"]
+    B --> E["Combined = 1/a + 1/b"]
+    D --> E
+    E --> F["Time together = 1/(1/a + 1/b) = ab/(a+b)"]
+    F --> G["LCM Method: Total = LCM(a,b)"]
+    G --> H["A eff = LCM/a, B eff = LCM/b"]
+    H --> I["Combined time = LCM/(A_eff + B_eff)"]
+```
+
+## Mermaid Diagram: Time-Speed-Distance Decision Tree
+
+```mermaid
+flowchart TD
+    A["TSD Problem"] --> B{"What is given?"}
+    B -->|"Train & pole"| C["Time = Length/Speed"]
+    B -->|"Train & platform"| D["Time = (L₁+L₂)/Speed"]
+    B -->|"Two trains meeting"| E{"Direction?"}
+    E -->|"Same"| F["Rel Spd = |S₁−S₂|"]
+    E -->|"Opposite"| G["Rel Spd = S₁+S₂"]
+    C --> H["Time = Distance/Rel Spd"]
+    D --> H
+    F --> H
+    G --> H
+    H --> I["Answer"]
+```
+
+## Mermaid Diagram: Alligation — Cross Method Visual
+
+```mermaid
+flowchart LR
+    A["C (Cheaper)"] --> D["Deviation = M − C"]
+    B["M (Mean)"] --> D
+    B --> E["Deviation = D − M"]
+    C["D (Dearer)"] --> E
+    D --> F["Qty of Dearer = (M − C)"]
+    E --> G["Qty of Cheaper = (D − M)"]
+    F --> H["Ratio = (D−M) : (M−C)"]
+    G --> H
+```
+
+## Mermaid Diagram: Partnership — Time-Adjusted Shares
+
+```mermaid
+flowchart TD
+    A["Partners A, B, C"] --> B["Each invests I₁, I₂, I₃"]
+    A --> C["Each invests for T₁, T₂, T₃ months"]
+    B --> D["Weighted = I₁×T₁ : I₂×T₂ : I₃×T₃"]
+    C --> D
+    D --> E["Simplify ratio"]
+    E --> F["Profit share = (Part/Sum)×Total Profit"]
+```
+
+## Mermaid Diagram: Age Problem — Constant Difference Principle
+
+```mermaid
+flowchart TD
+    A["Age Problem"] --> B["Let present ages be variables"]
+    B --> C["Age difference is CONSTANT"]
+    C --> D["n years ago: subtract n from both"]
+    C --> E["n years hence: add n to both"]
+    D --> F["Form equation"]
+    E --> F
+    F --> G["Solve for x"]
+    G --> H["Find individual ages"]
+```
+
 ## Summary
 
 - **Time & Work** is best solved using the LCM method — convert to units of work per day

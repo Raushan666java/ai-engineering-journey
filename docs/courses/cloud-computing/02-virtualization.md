@@ -475,7 +475,7 @@ console.log("Container Namespace Isolation:", JSON.stringify(container, null, 2)
    - D) It uses SSDs instead of HDDs
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It runs directly on hardware without a host OS layer.** Type 1 hypervisors have direct hardware access, eliminating the performance overhead of passing through a host operating system. This is why all major cloud providers use Type 1 hypervisors.
 </details>
 
@@ -486,7 +486,7 @@ console.log("Container Namespace Isolation:", JSON.stringify(container, null, 2)
    - D) VXLANs work at Layer 7
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) VXLANs support millions of segments (vs 4,094 for VLANs) via MAC-in-UDP encapsulation.** The 12-bit VLAN ID limits VLANs to 4,094 networks ? insufficient for large multi-tenant clouds. VXLAN uses a 24-bit segment ID, supporting 16 million isolated networks.
 </details>
 
@@ -497,7 +497,7 @@ console.log("Container Namespace Isolation:", JSON.stringify(container, null, 2)
    - D) For legacy application compatibility
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) For microservices architectures requiring rapid deployment and high density.** Containers share the host kernel, making them lighter and faster to start than VMs. They're ideal for stateless, scalable microservices but provide weaker isolation boundaries than VMs.
 </details>
 
@@ -508,7 +508,7 @@ console.log("Container Namespace Isolation:", JSON.stringify(container, null, 2)
    - D) Docker CLI
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) runc.** runc is the low-level OCI runtime that creates and runs containers by interacting directly with Linux kernel namespaces and cgroups.
 </details>
 
@@ -519,7 +519,7 @@ console.log("Container Namespace Isolation:", JSON.stringify(container, null, 2)
    - D) User namespace
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) PID namespace.** The PID namespace isolates process ID numbers, so a container can only see and interact with its own processes, not processes running on the host or in other containers.
 </details>
 
@@ -907,9 +907,9 @@ function optimalDensity(hosts: number, vms: number, overhead: number): number {
 // Find best VM count via binary search
 function findOptimalVms(hosts: number, overhead: number): number {
   let lo = hosts, hi = hosts * 40;
-  while (lo < hi) {
+  while (lo &lt; hi) {
     const mid = Math.floor((lo + hi) / 2);
-    if (optimalDensity(hosts, mid, overhead) < optimalDensity(hosts, mid + 1, overhead)) lo = mid + 1;
+    if (optimalDensity(hosts, mid, overhead) &lt; optimalDensity(hosts, mid + 1, overhead)) lo = mid + 1;
     else hi = mid;
   }
   return lo;

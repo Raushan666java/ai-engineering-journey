@@ -645,7 +645,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q24:** Geometric distribution, p=1/2. E = 1/p = 2.
 
-**Q25:** Master Theorem: a=3, b=4, f(n)=n log n. n^{logâ‚„3} â‰ˆ n^{0.792}. Since f(n) = n log n = Î©(n^{0.792+Îµ}), and af(n/b)=0.75n log(n/4) â‰¤ 0.75n log n = cf(n) for c<1, case 3 applies. T(n) = O(n log n).
+**Q25:** Master Theorem: a=3, b=4, f(n)=n log n. n^{logâ‚„3} â‰ˆ n^{0.792}. Since f(n) = n log n = Î©(n^{0.792+Îµ}), and af(n/b)=0.75n log(n/4) â‰¤ 0.75n log n = cf(n) for c&lt;1, case 3 applies. T(n) = O(n log n).
 
 **Q26:** Postorder: left → right → root. Root is visited last.
 

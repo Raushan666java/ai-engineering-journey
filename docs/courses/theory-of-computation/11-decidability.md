@@ -365,7 +365,7 @@ function haltToEmptyReduction(
 - D) Is deterministic
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** HALT_TM = { ?M, w? | M halts on w }. Proven undecidable by Turing in 1936.
 </details>
 
@@ -376,7 +376,7 @@ function haltToEmptyReduction(
 - D) Using Rice's theorem
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Diagonalization creates a self-referential contradiction — "what does D do on input ?D??"
 </details>
 
@@ -387,7 +387,7 @@ function haltToEmptyReduction(
 - D) TM equivalence
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** DFA membership is decidable — simply simulate the DFA on the input string.
 </details>
 
@@ -398,7 +398,7 @@ function haltToEmptyReduction(
 - D) Properties of CFGs
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Any non-trivial property of the language of a TM is undecidable.
 </details>
 
@@ -409,7 +409,7 @@ function haltToEmptyReduction(
 - D) Neither problem is decidable
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** A =_m B means a solution to B yields a solution to A (or undecidability of A transfers to B).
 </details>
 
@@ -565,8 +565,8 @@ class ReductionMapper {
   }
 
   // Classic undecidable problems with their HALT reductions
-  static classicReductions(): Map<string, string> {
-    const m = new Map<string, string>();
+  static classicReductions(): Map&lt;string, string&gt; {
+    const m = new Map&lt;string, string&gt;();
     m.set("A_TM (TM Acceptance)",
       "Given ?M, w?, does TM M accept input w?");
     m.set("EMPTY_TM (TM Emptiness)",
@@ -592,7 +592,7 @@ class ReductionMapper {
 
 class DecidabilityClassifier {
   // Known classifications
-  private static readonly knownResults = new Map<string, string>([
+  private static readonly knownResults = new Map&lt;string, string&gt;([
     ["DFA membership", "Decidable"],
     ["DFA emptiness", "Decidable"],
     ["DFA equivalence", "Decidable"],
@@ -772,11 +772,11 @@ function enumerateFunctions(): StringFunction[] {
 function enumerateStrings(): string[] {
   const alphabet = "ab";
   const strings: string[] = [];
-  for (let len = 1; len <= 3; len++) {
-    for (let i = 0; i < Math.pow(alphabet.length, len); i++) {
+  for (let len = 1; len &lt;= 3; len++) {
+    for (let i = 0; i &lt; Math.pow(alphabet.length, len); i++) {
       let s = "";
       let n = i;
-      for (let j = 0; j < len; j++) {
+      for (let j = 0; j &lt; len; j++) {
         s = alphabet[n % alphabet.length] + s;
         n = Math.floor(n / alphabet.length);
       }
@@ -791,7 +791,7 @@ function diagonalFunction(s: string): boolean {
   const funcs = enumerateFunctions();
   const strings = enumerateStrings();
   const idx = strings.indexOf(s);
-  if (idx >= 0 && idx < funcs.length) {
+  if (idx >= 0 && idx &lt; funcs.length) {
     // Flip the result - guarantees difference
     return !funcs[idx](s);
   }

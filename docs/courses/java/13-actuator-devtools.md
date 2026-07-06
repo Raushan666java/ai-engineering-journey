@@ -1939,7 +1939,7 @@ logging:
    - D) /actuator/liveness
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) /actuator/health.** Spring Boot exposes liveness and readiness as grouped health indicators under /actuator/health/liveness and /actuator/health/readiness when configured.
 </details>
 
@@ -1950,7 +1950,7 @@ logging:
    - D) Health checking
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Vendor-neutral metrics collection.** Micrometer provides a dimensional metrics facade that supports multiple monitoring systems like Prometheus, Datadog, and Graphite.
 </details>
 
@@ -1961,7 +1961,7 @@ logging:
    - D) Use IntelliJ LiveReload plugin
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) Add spring-boot-devtools dependency.** DevTools automatically enables LiveReload server; install LiveReload browser extension to trigger page refresh on changes.
 </details>
 

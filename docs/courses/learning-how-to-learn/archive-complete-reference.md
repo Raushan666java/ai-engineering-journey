@@ -84,7 +84,7 @@ public class ChunkExample {
 
 Take "Binary Search Tree" from [`docs/courses/data-structures/09-bst.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/09-bst.md). Here's how to chunk it:
 
-**Step 1 → Focus:** Read the BST property: left subtree < node < right subtree. Write it down.
+**Step 1 → Focus:** Read the BST property: left subtree &lt; node < right subtree. Write it down.
 **Step 2 → Understand:** Trace through insert(50), insert(30), insert(80), insert(20), insert(40). Draw each step. Why does 20 go left of 30? Why does 40 go right of 30? Understand the recursive structure.
 **Step 3 → Context:** When do you use a BST vs a hash table? BST gives ordered traversal (sorted order), floor/ceiling, range queries. Hash table gives O(1) lookup but no order.
 
@@ -1594,7 +1594,7 @@ Case 3: f(n) = Î©(n^{log_b a + Îµ}) → T(n) = Î˜(f(n))
 **Instead of re-reading:** generate your own examples.
 - For T(n) = 2T(n/2) + n: "a=2, b=2, log_2 2 = 1, f(n)=n = n^1 → Case 2 with k=0 → Î˜(n log n). This is Merge Sort!"
 - For T(n) = 4T(n/2) + n: "a=4, b=2, log_2 4 = 2, f(n)=n = n^{2-Îµ} where Îµ=1 → Case 1 → Î˜(nÂ²)"
-- For T(n) = 2T(n/2) + nÂ²: "a=2, b=2, log_2 2 = 1, f(n)=nÂ² = Î©(n^{1+Îµ}) → Check regularity: 2Â·(n/2)Â² / nÂ² = 0.5 < 1 → Case 3 → Î˜(nÂ²)"
+- For T(n) = 2T(n/2) + nÂ²: "a=2, b=2, log_2 2 = 1, f(n)=nÂ² = Î©(n^{1+Îµ}) → Check regularity: 2Â·(n/2)Â² / nÂ² = 0.5 &lt; 1 → Case 3 → Î˜(nÂ²)"
 
 Each self-generated example is encoded more strongly than any textbook. Reference the complete DSA PYQ file for the actual recurrences tested in GATE.
 
@@ -1959,7 +1959,7 @@ public class KeystoneHabit {
 }
 ```
 
-> **Try This:** Identify one keystone habit for your current goal. It should be specific, measurable, and take <30 minutes. Commit to doing it every day for 30 days. Track the cascade of side effects.
+> **Try This:** Identify one keystone habit for your current goal. It should be specific, measurable, and take &lt;30 minutes. Commit to doing it every day for 30 days. Track the cascade of side effects.
 
 ---
 

@@ -398,6 +398,559 @@ public static &lt;T extends Comparable&lt;T&gt;&gt; T max(T a, T b) {
 
 ---
 
+---
+
+## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
+
+### Virtual Function Table (vtable) — Deep Explanation
+
+```typescript
+// TypeScript simulation of C++ vtable mechanism
+interface VTableEntry {
+  funcName: string;
+  func: (...args: any[]) => any;
+}
+
+class VTable {
+  entries: Map<string, VTableEntry> = new Map();
+
+  addEntry(name: string, fn: (...args: any[]) => any): void {
+    this.entries.set(name, { funcName: name, func: fn });
+  }
+
+  getFunction(name: string): ((...args: any[]) => any) | undefined {
+    return this.entries.get(name)?.func;
+  }
+}
+
+// Simulate runtime dispatch
+class BaseClass {
+  vtable: VTable;
+
+  constructor() {
+    this.vtable = new VTable();
+    this.vtable.addEntry('display', () => 'Base::display');
+  }
+
+  display(): string {
+    return this.vtable.getFunction('display')!();
+  }
+}
+
+class DerivedClass extends BaseClass {
+  constructor() {
+    super();
+    // Override vtable entry — this is runtime polymorphism
+    this.vtable.addEntry('display', () => 'Derived::display');
+  }
+}
+
+// Usage
+const obj: BaseClass = new DerivedClass();
+console.log(obj.display()); // "Derived::display" — dynamic dispatch
+```
+
+**Memory Layout of C++ Object with vtable:**
+```
+Base object:
+┌──────────────────┐
+│ vptr (8 bytes)   │ → points to Base_vtable
+│ int member1      │    ┌──────────────────────┐
+│ double member2   │    │ Base::display() addr  │
+└──────────────────┘    │ type_info ptr         │
+                        └──────────────────────┘
+
+Derived object:
+┌──────────────────┐
+│ vptr (8 bytes)   │ → points to Derived_vtable
+│ int member1      │    ┌──────────────────────┐
+│ double member2   │    │ Derived::display()    │
+│ int derivedOnly  │    │ (overrides base)      │
+└──────────────────┘    │ type_info ptr         │
+                        └──────────────────────┘
+```
+
+### Interface vs Abstract Class — In-Depth with Code
+
+> **PYQ 2024:** Can a Java interface have a constructor? Explain abstract class vs interface for multiple inheritance.
+
+**Java Interface (Java 8+):**
+```typescript
+// TypeScript simulation of Java-style interface vs abstract class
+interface Drawable {
+  draw(): void;
+  // Java 8 default method
+  display(): void; // actual default implementation below
+}
+
+// Interface with default method implementation (simulated)
+interface Resizable {
+  resize(factor: number): void;
+  getSize(): number;
+}
+
+// Abstract class — can have state and constructor
+abstract class Shape {
+  protected color: string;
+
+  constructor(color: string) {
+    this.color = color;
+  }
+
+  abstract area(): number; // must be overridden
+
+  getColor(): string { // concrete method
+    return this.color;
+  }
+}
+
+// Concrete class implements multiple interfaces + extends abstract class
+class Circle extends Shape implements Drawable, Resizable {
+  private radius: number;
+
+  constructor(color: string, radius: number) {
+    super(color);
+    this.radius = radius;
+  }
+
+  area(): number {
+    return Math.PI * this.radius ** 2;
+  }
+
+  draw(): void {
+    console.log(`Drawing a ${this.color} circle`);
+  }
+
+  display(): void {
+    console.log(`Circle: radius=${this.radius}`);
+  }
+
+  resize(factor: number): void {
+    this.radius *= factor;
+  }
+
+  getSize(): number {
+    return this.radius;
+  }
+}
+```
+
+### Encapsulation — Protection Against Invariant Violation
+
+```typescript
+class BankAccount {
+  private _balance: number;
+  private _minBalance: number;
+
+  constructor(initial: number, minBalance: number) {
+    this._balance = initial;
+    this._minBalance = minBalance;
+  }
+
+  deposit(amount: number): void {
+    if (amount <= 0) throw new Error('Invalid amount');
+    this._balance += amount;
+  }
+
+  withdraw(amount: number): boolean {
+    if (amount <= 0) throw new Error('Invalid amount');
+    if (this._balance - amount < this._minBalance) return false;
+    this._balance -= amount;
+    return true;
+  }
+
+  get balance(): number { return this._balance; }
+}
+// Invariant: _balance >= _minBalance always holds
+```
+
+### Polymorphism — Compile-time vs Runtime in TypeScript
+
+```typescript
+// Compile-time polymorphism (overloading — TypeScript via union types)
+function add(a: number, b: number): number;
+function add(a: string, b: string): string;
+function add(a: any, b: any): any {
+  return a + b;
+}
+// Runtime polymorphism (overriding through inheritance)
+class Animal {
+  speak(): string { return 'Some sound'; }
+}
+class Dog extends Animal {
+  speak(): string { return 'Woof!'; }
+}
+class Cat extends Animal {
+  speak(): string { return 'Meow!'; }
+}
+function makeSound(animal: Animal): string {
+  return animal.speak(); // dynamic dispatch via vtable
+}
+```
+
+### Constructor Chaining in Inheritance
+
+```typescript
+class GrandParent {
+  constructor() { console.log('GrandParent CTOR'); }
+}
+class Parent extends GrandParent {
+  constructor() {
+    super(); // implicit in JS/TS
+    console.log('Parent CTOR');
+  }
+}
+class Child extends Parent {
+  constructor() {
+    super();
+    console.log('Child CTOR');
+  }
+}
+// new Child() outputs:
+// GrandParent CTOR → Parent CTOR → Child CTOR
+
+// Destructor order (C++): ~Child → ~Parent → ~GrandParent
+```
+
+### Exception Handling — Java-style with TypeScript
+
+```typescript
+class InsufficientFundsError extends Error {
+  constructor(public currentBalance: number, public requested: number) {
+    super(`Insufficient funds: have ${currentBalance}, need ${requested}`);
+    this.name = 'InsufficientFundsError';
+  }
+}
+
+class AccountService {
+  processWithdrawal(account: BankAccount, amount: number): string {
+    try {
+      if (amount > account.balance) {
+        throw new InsufficientFundsError(account.balance, amount);
+      }
+      account.withdraw(amount);
+      return 'Success';
+    } catch (error) {
+      if (error instanceof InsufficientFundsError) {
+        return `Error: ${error.message}`;
+      } else if (error instanceof TypeError) {
+        return 'Type error occurred';
+      } else {
+        throw error; // rethrow unknown
+      }
+    } finally {
+      console.log('Withdrawal attempt completed');
+    }
+  }
+}
+```
+
+### Static vs Dynamic Binding — Detailed Analysis
+
+> **PYQ 2025:** What is the output? `Base b = new Derived(); b.display();` where Base has `public void display() { System.out.println("Base"); }` and Derived overrides it.
+
+**Answer:** "Derived" — dynamic binding. JVM checks actual object type (Derived) at runtime, not reference type (Base). This is because display() is a virtual method (all Java methods are virtual by default except static/final/private).
+
+```typescript
+// Static binding (compile-time)
+class Calculator {
+  multiply(a: number, b: number): number { return a * b; }
+  multiply(a: number, b: number, c: number): number { return a * b * c; }
+}
+// Which multiply() is called is determined at compile time
+
+// Dynamic binding (runtime)
+class Notification {
+  send(): string { return 'Sending generic notification'; }
+}
+class EmailNotification extends Notification {
+  send(): string { return 'Sending email'; }
+}
+class SMSNotification extends Notification {
+  send(): string { return 'Sending SMS'; }
+}
+function notify(notification: Notification): string {
+  return notification.send(); // resolved at runtime
+}
+```
+
+### Shallow vs Deep Copy
+
+```typescript
+class Address {
+  constructor(public city: string, public zip: string) {}
+  clone(): Address { return new Address(this.city, this.zip); }
+}
+
+class Employee {
+  constructor(
+    public name: string,
+    public address: Address,
+    public skills: string[]
+  ) {}
+
+  // Shallow copy — shares references
+  shallowCopy(): Employee {
+    return new Employee(this.name, this.address, this.skills);
+  }
+
+  // Deep copy — creates new instances
+  deepCopy(): Employee {
+    return new Employee(
+      this.name,
+      this.address.clone(),
+      [...this.skills] // new array
+    );
+  }
+}
+```
+
+## 📝 Solved Examples (20 MCQs)
+
+<details>
+<summary>Q1: Which keyword in Java prevents method overriding?</summary>
+(a) static (b) final (c) abstract (d) private
+**Answer:** (b) final. A final method cannot be overridden. Static methods are inherited but not overridden (they're hidden). Private methods are not inherited.
+</details>
+
+<details>
+<summary>Q2: In C++, what is the size of an empty class?</summary>
+(a) 0 bytes (b) 1 byte (c) 4 bytes (d) Compiler-dependent
+**Answer:** (b) 1 byte. C++ standard requires that distinct objects have unique addresses, so even empty classes get 1 byte (char) for unique address.
+</details>
+
+<details>
+<summary>Q3: Which of the following supports multiple inheritance?</summary>
+(a) Java class (b) Java interface (c) C# class (d) Java abstract class
+**Answer:** (b) Java interface. A Java class can implement multiple interfaces. Java/C# classes do not support multiple class inheritance.
+</details>
+
+<details>
+<summary>Q4: What is the output? `class A { void show() { System.out.print("A"); } } class B extends A { void show() { System.out.print("B"); } } A obj = new B(); obj.show();`</summary>
+(a) A (b) B (c) Compile error (d) Runtime error
+**Answer:** (b) B. Java uses dynamic binding by default — calls the actual object's method (B), not the reference type's (A).
+</details>
+
+<details>
+<summary>Q5: Which C++ feature enables runtime polymorphism?</summary>
+(a) Function overloading (b) Virtual functions (c) Templates (d) Inline functions
+**Answer:** (b) Virtual functions. Virtual functions enable dynamic dispatch through vtable, allowing the correct overridden method to be called based on actual object type.
+</details>
+
+<details>
+<summary>Q6: In Java, a class declared with 'abstract' keyword:</summary>
+(a) Can be instantiated (b) Cannot have constructors (c) May have non-abstract methods (d) Must have all abstract methods
+**Answer:** (c) May have non-abstract methods. Abstract classes can have concrete methods. Only interfaces (pre-Java 8) required all methods to be abstract.
+</details>
+
+<details>
+<summary>Q7: What is the diamond problem in inheritance?</summary>
+(a) Multiple inheritance causing ambiguity (b) Circular inheritance (c) Deep inheritance hierarchy (d) Private inheritance
+**Answer:** (a) Multiple inheritance causing ambiguity when two base classes define the same method. Resolved in C++ via virtual inheritance.
+</details>
+
+<details>
+<summary>Q8: Which of the following CANNOT be overloaded in C++?</summary>
+(a) Constructor (b) Destructor (c) Operator (d) Function
+**Answer:** (b) Destructor. Destructors cannot be overloaded (no parameters). Constructors can be overloaded.
+</details>
+
+<details>
+<summary>Q9: In Java, Garbage Collection is:</summary>
+(a) Explicit (b) Automatic (c) Manual using free() (d) Not available
+**Answer:** (b) Automatic. Java has automatic garbage collection via GC threads. C++ requires explicit destructors/delete.
+</details>
+
+<details>
+<summary>Q10: What does the 'super' keyword in Java refer to?</summary>
+(a) Current class (b) Parent class (c) Child class (d) Object class
+**Answer:** (b) Parent class. super() calls parent constructor, super.method() calls parent's method.
+</details>
+
+<details>
+<summary>Q11: Which access specifier allows access to derived classes but not to unrelated classes?</summary>
+(a) public (b) private (c) protected (d) default
+**Answer:** (c) protected. Accessible within the same package and by derived classes (in Java). In C++, accessible by derived classes only.
+</details>
+
+<details>
+<summary>Q12: What is the output? `class Parent { Parent() { System.out.println("Parent"); } } class Child extends Parent { Child() { System.out.println("Child"); } } new Child();`</summary>
+(a) Parent (b) Child (c) Parent Child (d) Child Parent
+**Answer:** (c) Parent Child. Base constructor runs before derived constructor (constructor chaining).
+</details>
+
+<details>
+<summary>Q13: Which C++ keyword prevents implicit type conversion for constructors?</summary>
+(a) explicit (b) private (c) static (d) const
+**Answer:** (a) explicit. The explicit keyword prevents the compiler from using the constructor for implicit conversions.
+</details>
+
+<details>
+<summary>Q14: In Java, checked exceptions must be:</summary>
+(a) Caught or declared (b) Ignored (c) Thrown (d) Logged
+**Answer:** (a) Caught or declared. Checked exceptions (IOException, SQLException) must be caught in a try-catch or declared with throws.
+</details>
+
+<details>
+<summary>Q15: A friend function in C++ has access to:</summary>
+(a) Only public members (b) Private and public members (c) Only protected members (d) No members
+**Answer:** (b) Private and public members. Friend functions/classes can access all members (including private) of the class that declared them as friends.
+</details>
+
+<details>
+<summary>Q16: Which of the following is NOT an OOP principle?</summary>
+(a) Encapsulation (b) Inheritance (c) Compilation (d) Polymorphism
+**Answer:** (c) Compilation. The four pillars of OOP are Encapsulation, Inheritance, Polymorphism, and Abstraction.
+</details>
+
+<details>
+<summary>Q17: In C++, when is a copy constructor called?</summary>
+(a) Object declared (b) Object passed by value (c) Object assigned (d) Object destroyed
+**Answer:** (b) Object passed by value. Copy constructor is called when: passed by value, returned by value, or explicitly constructed from another object.
+</details>
+
+<details>
+<summary>Q18: Java interfaces can have:</summary>
+(a) Instance variables (b) Constructors (c) Default methods (Java 8+) (d) Non-public methods
+**Answer:** (c) Default methods (Java 8+). Interface variables are public static final. No constructors. Default and static methods allowed from Java 8.
+</details>
+
+<details>
+<summary>Q19: What is virtual inheritance used for in C++?</summary>
+(a) Runtime polymorphism (b) Solving diamond problem (c) Template specialization (d) Performance optimization
+**Answer:** (b) Solving diamond problem. Virtual inheritance ensures only one copy of the base class exists in the inheritance hierarchy, resolving ambiguity.
+</details>
+
+<details>
+<summary>Q20: If a class has no virtual functions, what is the size overhead per object compared to a struct with same members?</summary>
+(a) 8 bytes (vptr) (b) 4 bytes (c) 0 bytes (d) Depends on compiler
+**Answer:** (c) 0 bytes. No virtual functions → no vtable → no vptr → object has no overhead beyond member data.
+</details>
+
+## 📖 Exercise Bank (30 Questions)
+
+1. Create a Java class `Vehicle` with private fields `speed` and `fuel`. Add getters, setters, and a method `move()`. Then create `Car` and `Bike` that override `move()`.
+2. Implement a TypeScript class hierarchy: `Shape → (Circle, Rectangle, Triangle)` with abstract `area()` method. Calculate total area of array of shapes.
+3. What is the output? `class A { void print() { System.out.println("A"); } } class B extends A { void print() { System.out.println("B"); } } A[] arr = {new A(), new B(), new A()}; for(A a: arr) a.print();`
+4. Write a C++ program demonstrating virtual destructor necessity. Show what happens without virtual destructor when deleting derived through base pointer.
+5. Explain the difference between method overloading and method overriding with 3 code examples each.
+6. Design a ParkingLot system using OOP: multiple levels, spots, vehicle types, ticketing.
+7. Implement Singleton pattern in Java (thread-safe) and TypeScript.
+8. What is the purpose of the `finalize()` method in Java? How is it different from C++ destructor?
+9. Write TypeScript code for a generic `Repository&lt;T&gt;` class with CRUD operations and in-memory storage.
+10. Compare early binding (static) vs late binding (dynamic) — give 3 examples of each.
+11. Implement the Factory Method design pattern for creating different types of Logger (FileLogger, ConsoleLogger, DatabaseLogger).
+12. What is the difference between composition and aggregation? Provide TypeScript examples.
+13. Write Java code demonstrating the use of `throws` and `throw` keywords with custom exception `InvalidAgeException`.
+14. Create a TypeScript mixin that adds `Timestampable` functionality (createdAt, updatedAt) to any class.
+15. Explain the concept of covariant return type in Java with an example.
+16. Implement a thread-safe `Stack&lt;T&gt;` class in Java using synchronized methods.
+17. What is the difference between `==` and `.equals()` in Java? How does it relate to shallow vs deep comparison?
+18. Write TypeScript code demonstrating method decorators for logging method execution time.
+19. Create an abstract class `Database` with abstract methods `connect()`, `query()`, `disconnect()`. Implement `MySQLDatabase` and `PostgreSQLDatabase`.
+20. Explain the concept of Object Cloning in Java (Cloneable interface, shallow vs deep copy).
+21. Write a C++ program demonstrating placement new and explicit destructor call.
+22. Implement the Observer design pattern in TypeScript for a weather station (Subject notifies Display observers).
+23. What is the purpose of the `transient` keyword in Java? Give an example.
+24. Write TypeScript code for a generic `Pair&lt;T, U&gt;` class with `equals()` and `hashCode()`-style methods.
+25. Compare C++ struct vs class — default access, inheritance, and POD types.
+26. Implement the Strategy pattern for different payment methods (CreditCard, PayPal, Crypto).
+27. Explain how Java's try-with-resources works with AutoCloseable interface.
+28. Write TypeScript code demonstrating the use of `Symbol.species` for derived array types.
+29. Create a class `ImmutablePerson` in Java (all fields final, no setters, defensive copying in getters).
+30. Implement a decorator pattern for a `Coffee` class with condiments (Milk, Sugar, WhippedCream).
+
+**Answer Key:**
+
+2. Abstract class Shape { abstract area(): number }. Circle extends Shape implements area() = πr². Rectangle = w×h. Triangle = ½bh
+3. Output: A B A
+4. Without virtual destructor: derived destructor never called → resource leak. With virtual: both derived then base destructors called
+5. Overloading: same name, different params (compile-time). Overriding: same signature, different class (runtime via virtual)
+8. finalize() called by GC before collection (unpredictable). Destructor called deterministically when object goes out of scope (C++)
+10. Static: function overloading, operator overloading, template instantiation. Dynamic: virtual functions, interface methods, delegate invocation
+12. Composition (◆): part cannot exist without whole. Aggregation (◇): part can exist independently
+13. `throw new InvalidAgeException("Age must be 18+")`. Method: `public void register(int age) throws InvalidAgeException`
+15. Override can return subtype of parent method's return type: `class B extends A { B getInstance() { return new B(); } }` where A's method returns A
+17. `==` compares references (heap address). `.equals()` compares content (overridable). String a = new String("x"); a == "x" is false; a.equals("x") is true
+19. All three classes implement abstract methods. MySQLDatabase uses mysql:// protocol, PostgreSQL uses postgresql://
+21. `char* buf = new char[sizeof(MyClass)]; MyClass* p = new(buf) MyClass(42); p->~MyClass(); delete[] buf;`
+23. transient fields are skipped during serialization. Used for sensitive data (passwords) or derived/computed fields
+24. `class Pair&lt;T, U&gt; { constructor(public first: T, public second: U) {} equals(other: Pair&lt;T,U&gt;): boolean { return this.first === other.first && this.second === other.second; } }`
+25. Struct: default public (members and inheritance). Class: default private. POD = Plain Old Data (no virtual, no user-defined ctors/dtors, no access specifiers)
+26. Strategy interface: `pay(amount: number): void`. Implementations: CreditCardStrategy, PayPalStrategy, CryptoStrategy. Context: `processPayment(strategy, amount)`
+28. Symbol.species controls which constructor is used for derived array methods (map, filter, etc.)
+29. All fields private final. Constructor deep-copies mutable fields. Getters return copies of mutable fields. No setters
+30. Coffee interface: cost(), description(). MilkDecorator, SugarDecorator extend CoffeeDecorator that wraps Coffee
+
+---
+
+## 📌 Additional PYQ Integration (2024–2026 Analysis)
+
+> **PYQ 2025:** What is the output of the following Java code?
+> ```java
+> class A { void show() { System.out.print("A"); } }
+> class B extends A { void show() { System.out.print("B"); } }
+> class C extends B { void show() { System.out.print("C"); } }
+> public class Test {
+>   public static void main(String[] args) {
+>     A a = new C(); a.show();
+>     B b = new B(); b.show();
+>     A a2 = new B(); a2.show();
+>   }
+> }
+> ```
+
+**Answer:** C B B. Dynamic dispatch — method called based on actual runtime type, not reference type. `a` is actually C, `b` is B, `a2` is actually B.
+
+> **PYQ 2024:** In C++, explain the output:
+> ```cpp
+> class Base {
+> public:
+>     virtual void f() { cout &lt;&lt; "Base "; }
+> };
+> class Derived : public Base {
+> public:
+>     void f() override { cout &lt;&lt; "Derived "; }
+> };
+> int main() {
+>     Base* b = new Derived();
+>     b->f();
+>     delete b;
+> }
+> ```
+
+**Answer:** "Derived " — virtual function dispatch via vtable. At runtime, `b` points to a Derived object whose vptr points to Derived's vtable where `f()` is overridden. Note: The destructor of Base should be virtual to avoid undefined behavior when deleting via base pointer.
+
+> **PYQ 2026:** Which design principle is violated in the following code? Suggest a refactoring.
+> ```java
+> class Employee {
+>     String type; // "developer", "manager", "intern"
+>     double calculateBonus() {
+>         if (type.equals("developer")) return salary * 0.1;
+>         else if (type.equals("manager")) return salary * 0.2;
+>         else if (type.equals("intern")) return salary * 0.05;
+>         return 0;
+>     }
+> }
+> ```
+
+**Answer:** Open/Closed Principle (OCP) violation — class must be modified to add new employee types. **Fix:** Use polymorphism — create abstract `Employee` class with abstract `calculateBonus()`, and concrete subclasses `Developer`, `Manager`, `Intern`.
+
+## 📌 Topic-wise Weightage Analysis for IBPS SO IT Mains
+
+| Topic | Weightage | Frequency | Difficulty |
+|-------|-----------|-----------|------------|
+| OOP Pillars (4) | 12-15% | Every exam | Easy-Medium |
+| Virtual Functions & vtable | 10-12% | Every exam | Medium-High |
+| Inheritance & Diamond Problem | 10-12% | Frequently | Medium |
+| Abstract Class vs Interface | 8-10% | Frequently | Medium |
+| Exception Handling | 8-10% | Frequently | Medium |
+| Access Specifiers | 5-7% | Frequently | Easy |
+| Constructor Chaining | 5-8% | Frequently | Medium |
+| Static vs Dynamic Binding | 5-7% | Frequently | Medium |
+| Templates vs Generics | 3-5% | Occasionally | Medium |
+| SOLID Principles | 5-8% | Occasionally | Medium |
+
 ## Summary
 - **Encapsulation:** Private data + public methods — data hiding
 - **Inheritance:** Single, multilevel, multiple (C++), hierarchical — code reuse

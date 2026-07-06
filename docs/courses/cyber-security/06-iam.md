@@ -872,7 +872,7 @@ printf '%s' "$(echo "$JWT" | cut -d. -f1-2)" | openssl dgst -sha256 -verify jwt-
 
 **Analogy:**
 - **RBAC:** Library cards. Student card, Faculty card, Visitor card. Card type determines access.
-- **ABAC:** Nightclub rules. "Age > 21 AND VIP member AND dress code = formal AND time < 2AM."
+- **ABAC:** Nightclub rules. "Age > 21 AND VIP member AND dress code = formal AND time &lt; 2AM."
 - **ReBAC:** Office building. "Alice can enter room 301 because Bob granted her access."
 
 ### 11.1 RBAC (NIST INCITS 359)
@@ -1788,7 +1788,7 @@ const assertion = await navigator.credentials.get({
    - D) Kerberos tickets were forged
 
 <details>
-<summary>Answers</summary>
+<summary>Answers&lt;/summary&gt;
 1. B, 2. B, 3. B, 4. C, 5. C, 6. B, 7. B, 8. B
 </details>
 
@@ -2437,7 +2437,7 @@ Machine identity:
 
 | Strategy | Mechanism | Scope | Latency | Complexity |
 |----------|-----------|-------|---------|-----------|
-| **In-memory map** | HashMap<token, session> | Single instance | Instant | Low |
+| **In-memory map** | HashMap&lt;token, session&gt; | Single instance | Instant | Low |
 | **Redis/Distributed cache** | DEL key | All instances | ~1ms | Medium |
 | **Database-backed** | UPDATE sessions SET revoked=true | Cluster | ~10ms | Medium |
 | **Token blacklist** | Bloom filter for invalidated tokens | Distributed | ~100ns | Low (false positives) |

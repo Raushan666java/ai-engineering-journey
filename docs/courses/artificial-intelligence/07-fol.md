@@ -944,7 +944,7 @@ Resolution is **refutation-complete**: if a set of clauses is unsatisfiable, res
 - C) {x/y} or {y/x} (either is MGU)
 - D) They cannot be unified
 
-<details><summary>Answer</summary>C) {x/y} or {y/x} are both MGUs since the two expressions are identical up to variable renaming.</details>
+<details><summary>Answer&lt;/summary&gt;C) {x/y} or {y/x} are both MGUs since the two expressions are identical up to variable renaming.</details>
 
 **Q2:** Which inference strategy is used by the Prolog programming language?
 - A) Forward chaining
@@ -952,7 +952,7 @@ Resolution is **refutation-complete**: if a set of clauses is unsatisfiable, res
 - C) Resolution with breadth-first search
 - D) Universal instantiation
 
-<details><summary>Answer</summary>B) Prolog uses backward chaining with depth-first search (SLD resolution).</details>
+<details><summary>Answer&lt;/summary&gt;B) Prolog uses backward chaining with depth-first search (SLD resolution).</details>
 
 **Q3:** What makes FOL semi-decidable for inference?
 - A) It cannot represent all truths
@@ -960,7 +960,7 @@ Resolution is **refutation-complete**: if a set of clauses is unsatisfiable, res
 - C) It requires exponential time for all problems
 - D) The unification algorithm is incomplete
 
-<details><summary>Answer</summary>B) FOL is semi-decidable: entailment can be proven if true, but non-entailment may not terminate.</details>
+<details><summary>Answer&lt;/summary&gt;B) FOL is semi-decidable: entailment can be proven if true, but non-entailment may not terminate.</details>
 
 **Q4:** In CNF conversion, why must existential quantifiers be removed before universal quantifiers are dropped?
 - A) They create infinite clauses
@@ -968,7 +968,7 @@ Resolution is **refutation-complete**: if a set of clauses is unsatisfiable, res
 - C) They are redundant in CNF
 - D) They cannot appear in clauses
 
-<details><summary>Answer</summary>B) Existential quantifiers must be Skolemized first because the Skolem function's arguments depend on which universal variables are in scope. Dropping universals first would lose the dependency information.</details>
+<details><summary>Answer&lt;/summary&gt;B) Existential quantifiers must be Skolemized first because the Skolem function's arguments depend on which universal variables are in scope. Dropping universals first would lose the dependency information.</details>
 
 **Q5:** What prevents the unification {x / f(x)} from being a valid substitution?
 - A) Type mismatch
@@ -976,7 +976,7 @@ Resolution is **refutation-complete**: if a set of clauses is unsatisfiable, res
 - C) Both are variables
 - D) Function symbols must be Skolemized
 
-<details><summary>Answer</summary>B) The occurs check detects that x appears within f(x), which would create an infinite term. Standard unification algorithms reject this.</details>
+<details><summary>Answer&lt;/summary&gt;B) The occurs check detects that x appears within f(x), which would create an infinite term. Standard unification algorithms reject this.</details>
 
 **Q6:** What is the role of Skolem functions vs Skolem constants?
 - A) They are interchangeable
@@ -984,7 +984,7 @@ Resolution is **refutation-complete**: if a set of clauses is unsatisfiable, res
 - C) Constants are used for functions with arity > 0
 - D) Skolem functions are used in propositional logic
 
-<details><summary>Answer</summary>B) When an existential comes after universals ∀y₁...∀yₙ ∃x, the witness depends on the universals, so a Skolem function f(y₁,...,yₙ) captures this dependency. Without preceding universals, a fresh constant suffices.</details>
+<details><summary>Answer&lt;/summary&gt;B) When an existential comes after universals ∀y₁...∀yₙ ∃x, the witness depends on the universals, so a Skolem function f(y₁,...,yₙ) captures this dependency. Without preceding universals, a fresh constant suffices.</details>
 
 ---
 

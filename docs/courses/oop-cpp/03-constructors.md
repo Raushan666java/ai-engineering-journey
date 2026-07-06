@@ -2208,70 +2208,70 @@ private:
    B) You must explicitly write `= default` or define it
    C) The parameterised constructor doubles as default
    D) The program will not compile
-   <details><summary>Answer</summary>**B)** If any user-defined constructor exists, the compiler-supplied default constructor is suppressed. You must explicitly request it with `= default` or define it yourself.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** If any user-defined constructor exists, the compiler-supplied default constructor is suppressed. You must explicitly request it with `= default` or define it yourself.</details>
 
 2. Why must `const` and reference members be initialised in the initialiser list?
    A) The compiler enforces it — they cannot be assigned after construction
    B) It is more efficient but not required
    C) Only `const` members require this; references can be assigned
    D) They must be initialised in the constructor body
-   <details><summary>Answer</summary>**A)** `const` members cannot be assigned and references cannot be reseated, so they must be initialised directly in the initialiser list.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** `const` members cannot be assigned and references cannot be reseated, so they must be initialised directly in the initialiser list.</details>
 
 3. What is the correct signature for a copy assignment operator?
    A) `void operator=(const T& other)`
    B) `T operator=(T other)`
    C) `T& operator=(const T& other)`
    D) `const T& operator=(const T& other)`
-   <details><summary>Answer</summary>**C)** The canonical form returns `T&` to support chaining (`a = b = c`) and takes `const T&` to accept both lvalues and const objects.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** The canonical form returns `T&` to support chaining (`a = b = c`) and takes `const T&` to accept both lvalues and const objects.</details>
 
 4. Which of the following triggers the copy constructor?
    A) Passing an object by reference to a function
    B) Passing an object by value to a function
    C) Passing an object by pointer to a function
    D) Using a reference variable
-   <details><summary>Answer</summary>**B)** Pass-by-value copies the argument, invoking the copy constructor. Pass-by-reference and pass-by-pointer do not copy.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Pass-by-value copies the argument, invoking the copy constructor. Pass-by-reference and pass-by-pointer do not copy.</details>
 
 5. A destructor that throws an exception during stack unwinding causes:
    A) The exception to be swallowed silently
    B) `std::terminate` to be called
    C) The destructor to be called again
    D) A warning but normal execution continues
-   <details><summary>Answer</summary>**B)** If a destructor throws while another exception is active (stack unwinding), `std::terminate` is called, immediately ending the program.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** If a destructor throws while another exception is active (stack unwinding), `std::terminate` is called, immediately ending the program.</details>
 
 6. What is the primary benefit of a virtual destructor in a base class?
    A) It allows the destructor to be inlined
    B) Ensures the most-derived destructor runs when deleting through a base pointer
    C) It prevents the base class from being instantiated
    D) It improves performance by enabling early binding
-   <details><summary>Answer</summary>**B)** A virtual destructor ensures that when `delete` is called on a base-class pointer, the most-derived destructor executes first (via vtable dispatch), preventing resource leaks.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** A virtual destructor ensures that when `delete` is called on a base-class pointer, the most-derived destructor executes first (via vtable dispatch), preventing resource leaks.</details>
 
 7. Which of the following is NOT a requirement for the Rule of Three?
    A) Destructor
    B) Copy constructor
    C) Move constructor
    D) Copy assignment operator
-   <details><summary>Answer</summary>**C)** The Rule of Three requires destructor, copy constructor, and copy assignment operator. Move constructor is part of the Rule of Five (C++11).</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** The Rule of Three requires destructor, copy constructor, and copy assignment operator. Move constructor is part of the Rule of Five (C++11).</details>
 
 8. What does the `explicit` keyword prevent?
    A) Direct initialisation with parentheses
    B) Implicit conversions via single-argument constructors
    C) Virtual function calls
    D) Template instantiation
-   <details><summary>Answer</summary>**B)** `explicit` prevents the compiler from using a constructor for implicit conversions. Direct initialisation `T(x)` still works.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** `explicit` prevents the compiler from using a constructor for implicit conversions. Direct initialisation `T(x)` still works.</details>
 
 9. In which order are members initialised in a constructor?
    A) The order they appear in the initialiser list
    B) Alphabetical order
    C) The order they are declared in the class
    D) Reverse order of declaration
-   <details><summary>Answer</summary>**C)** Members are always initialised in **declaration order** in the class, regardless of the order in the initialiser list.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Members are always initialised in **declaration order** in the class, regardless of the order in the initialiser list.</details>
 
 10. What is the time complexity of a move constructor compared to a deep-copy constructor?
     A) Both are O(N)
     B) Move is O(1), copy is O(N)
     C) Both are O(1)
     D) Move is O(N), copy is O(1)
-    <details><summary>Answer</summary>**B)** Move constructor transfers ownership by copying a pointer (O(1)). Deep copy constructor allocates and copies N bytes (O(N)).</details>
+    <details><summary>Answer&lt;/summary&gt;**B)** Move constructor transfers ownership by copying a pointer (O(1)). Deep copy constructor allocates and copies N bytes (O(N)).</details>
 
 ---
 

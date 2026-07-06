@@ -470,7 +470,7 @@ public class DFS {
 |-----------|----------|----------|
 | Infinite graph | DFS descends forever on an infinite branch | Use depth-limited search or IDDFS; never rely on bare DFS for infinite spaces |
 | Cycles | A -> B -> C -> A causes infinite loop without visited tracking | Always maintain a visited set for graph search; pure tree-search DFS is vulnerable |
-| Very deep solution at depth d << m | DFS may waste time exploring enormous depth before finding the shallow solution | Use BFS or IDDFS when the goal is likely shallow |
+| Very deep solution at depth d &lt;< m | DFS may waste time exploring enormous depth before finding the shallow solution | Use BFS or IDDFS when the goal is likely shallow |
 | Goal not reachable from chosen path | DFS explores one branch exhaustively before trying alternatives | No general fix; this is inherent to DFS's depth-first nature |
 | Solution at maximum depth | DFS works fine — follows the path all the way | No special handling needed, but watch for stack overflow in recursive version |
 
@@ -670,7 +670,7 @@ public class UCS {
 | Metric | Value | Why? |
 |--------|-------|------|
 | Time | O(b^{1 + floor(C*/epsilon)}) | C* = optimal cost, epsilon = smallest edge cost. Unlike BFS (depth-based), UCS grows with the cost magnitude. If costs are small integers, this equals O(b^{d+1}). |
-| Space | O(b^{1 + floor(C*/epsilon)}) | Same as time — all nodes with cost <= C* may be stored in the frontier simultaneously. |
+| Space | O(b^{1 + floor(C*/epsilon)}) | Same as time — all nodes with cost &lt;= C* may be stored in the frontier simultaneously. |
 | Complete | Yes | UCS will find a solution if one exists, assuming all edge costs are positive. With zero or negative costs, it may loop forever. |
 | Optimal | Yes | UCS expands nodes in strictly non-decreasing cost order. The first goal popped from the priority queue has the minimum possible cost — proof by contradiction: if a cheaper path existed, its endpoint would have been popped first. |
 
@@ -706,7 +706,7 @@ public class UCS {
 2. While the stack is not empty:
    a. Pop the top node.
    b. If the node is the goal, return success.
-   c. If the node's depth < limit:
+   c. If the node's depth &lt; limit:
       i. Push each child node (depth = parent.depth + 1) onto the stack.
 3. If the stack empties, return failure (or cutoff if nodes were pruned by the limit).
 
@@ -824,7 +824,7 @@ public class DLS {
 |--------|-------|------|
 | Time | O(b^l) | Explores up to depth l, same exponential factor as DFS but bounded. Total nodes: 1 + b + b^2 + ... + b^l = O(b^l). |
 | Space | O(bl) | Linear in the depth limit. The recursive stack goes l levels deep with at most b siblings tracked at each level. |
-| Complete | No (if l < solution depth) | If the goal is deeper than l, the search cannot reach it and returns cutoff. |
+| Complete | No (if l &lt; solution depth) | If the goal is deeper than l, the search cannot reach it and returns cutoff. |
 | Optimal | No | First solution found may not be the cheapest. DLS does not track costs — it only respects the depth bound. |
 
 **Advantages & Disadvantages:**
@@ -1300,7 +1300,7 @@ public class Bidirectional {
 | BFS | Yes | Yes (uniform cost) | O(b^d) | O(b^d) | Queue (FIFO) | Memory grows exponentially |
 | DFS | No | No | O(b^m) | O(bm) | Stack (LIFO) | May never terminate |
 | Uniform-Cost | Yes | Yes | O(b^{1+floor(C*/eps)}) | O(b^{1+floor(C*/eps)}) | Priority Queue | Wastes time on low-cost detours |
-| Depth-Limited | No (if l < d) | No | O(b^l) | O(bl) | Stack (LIFO) | Needs right l in advance |
+| Depth-Limited | No (if l &lt; d) | No | O(b^l) | O(bl) | Stack (LIFO) | Needs right l in advance |
 | IDDFS | Yes | Yes (uniform cost) | O(b^d) | O(bd) | Stack (LIFO) | Re-explores upper levels |
 | Bidirectional | Yes | Yes (BFS-based) | O(b^{d/2}) | O(b^{d/2}) | Two Queues | Needs invertible actions |
 
@@ -1384,8 +1384,8 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 
 | Property | Definition | Implication |
 |----------|-----------|-------------|
-| Admissible | h(n) <= h*(n) never overestimates | A* tree-search is optimal |
-| Consistent | h(n) <= c(n,a,n') + h(n') (triangle inequality) | A* graph-search is optimal |
+| Admissible | h(n) &lt;= h*(n) never overestimates | A* tree-search is optimal |
+| Consistent | h(n) &lt;= c(n,a,n') + h(n') (triangle inequality) | A* graph-search is optimal |
 | Dominance | h2(n) >= h1(n) for all n (both admissible) | h2 dominates h1 — expands fewer nodes |
 | Effective Branching Factor | b* where N = 1 + b* + (b*)^2 + ... | Measures heuristic quality empirically |
 
@@ -1409,7 +1409,7 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 - C) IDDFS
 - D) Bidirectional Search
 
-<details><summary>Answer</summary>C) IDDFS combines BFS's optimality with DFS's O(bd) memory, making it the most memory-efficient optimal uninformed search.</details>
+<details><summary>Answer&lt;/summary&gt;C) IDDFS combines BFS's optimality with DFS's O(bd) memory, making it the most memory-efficient optimal uninformed search.</details>
 
 **Q2:** What condition must a heuristic satisfy for A* graph-search to guarantee optimality?
 - A) Admissibility only
@@ -1417,7 +1417,7 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 - C) Both admissibility and consistency
 - D) Neither
 
-<details><summary>Answer</summary>B) A* graph-search requires consistency (monotonicity) for optimality. Tree-search only requires admissibility.</details>
+<details><summary>Answer&lt;/summary&gt;B) A* graph-search requires consistency (monotonicity) for optimality. Tree-search only requires admissibility.</details>
 
 **Q3:** Which search algorithm expands the node with the lowest f(n) = g(n) + h(n)?
 - A) Greedy Best-First Search
@@ -1425,7 +1425,7 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 - C) A* Search
 - D) Breadth-First Search
 
-<details><summary>Answer</summary>C) A* Search combines the cost-so-far g(n) with the heuristic h(n) into f(n).</details>
+<details><summary>Answer&lt;/summary&gt;C) A* Search combines the cost-so-far g(n) with the heuristic h(n) into f(n).</details>
 
 **Q4:** What is the space complexity of BFS?
 - A) O(bd)
@@ -1433,7 +1433,7 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 - C) O(b^{d+1})
 - D) O(bm)
 
-<details><summary>Answer</summary>C) BFS stores all nodes at the current depth level, requiring O(b^{d+1}) space in the worst case.</details>
+<details><summary>Answer&lt;/summary&gt;C) BFS stores all nodes at the current depth level, requiring O(b^{d+1}) space in the worst case.</details>
 
 **Q5:** When does Uniform-Cost Search stop (i.e., return the goal)?
 - A) When the goal is first generated
@@ -1441,7 +1441,7 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 - C) When the frontier is empty
 - D) When the heuristic values converge
 
-<details><summary>Answer</summary>B) UCS only stops when the goal is popped, ensuring all cheaper paths have been considered.</details>
+<details><summary>Answer&lt;/summary&gt;B) UCS only stops when the goal is popped, ensuring all cheaper paths have been considered.</details>
 
 **Q6:** Which search algorithm reduces complexity from O(b^d) to O(b^{d/2})?
 - A) IDDFS
@@ -1449,7 +1449,7 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 - C) Uniform-Cost Search
 - D) Depth-Limited Search
 
-<details><summary>Answer</summary>B) Bidirectional search cuts the effective depth in half by searching from both ends simultaneously.</details>
+<details><summary>Answer&lt;/summary&gt;B) Bidirectional search cuts the effective depth in half by searching from both ends simultaneously.</details>
 
 **Q7:** What is the overhead ratio of IDDFS compared to BFS for a branching factor of 10?
 - A) 2x
@@ -1457,7 +1457,7 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 - C) ~1.11x
 - D) ~1.5x
 
-<details><summary>Answer</summary>C) The overhead ratio is b/(b-1) = 10/9 ≈ 1.11x, or about 11%.</details>
+<details><summary>Answer&lt;/summary&gt;C) The overhead ratio is b/(b-1) = 10/9 ≈ 1.11x, or about 11%.</details>
 
 **Q8:** Which of the following is NOT a requirement for applying Bidirectional Search?
 - A) The goal state must be known
@@ -1465,7 +1465,7 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 - C) Branching factor must be symmetric
 - D) A predecessor function must be definable
 
-<details><summary>Answer</summary>C) Bidirectional Search works fine with asymmetric branching factors — the adaptive strategy expands the smaller frontier to compensate.</details>
+<details><summary>Answer&lt;/summary&gt;C) Bidirectional Search works fine with asymmetric branching factors — the adaptive strategy expands the smaller frontier to compensate.</details>
 
 ---
 

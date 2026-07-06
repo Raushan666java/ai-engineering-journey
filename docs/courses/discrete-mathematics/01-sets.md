@@ -67,7 +67,7 @@ Standard number sets:
 The **empty set** $\emptyset$ (or $\{\}$) contains no elements. The **universal set** $U$ is the set of all elements under consideration in a given context.
 
 **Set-builder notation patterns:**
-- $\{x \in \mathbb{N} \mid x < 10\}$ ? natural numbers less than 10
+- $\{x \in \mathbb{N} \mid x &lt; 10\}$ ? natural numbers less than 10
 - $\{2k \mid k \in \mathbb{Z}\}$ ? even integers
 - $\{x^2 \mid x \in \mathbb{R}\}$ ? nonnegative reals
 - $\{a/b \in \mathbb{Q} \mid a, b \in \mathbb{Z},\; b \neq 0\}$ ? rationals in lowest terms
@@ -252,7 +252,7 @@ For two sets: $|A \cup B| = |A| + |B| - |A \cap B|$.
 For three sets: $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|$.
 
 **General formula:**
-$$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
+$$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i&lt;j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
 
 > **Pro Tip:** When proving set identities, start with the more complex side and reduce it to the simpler side using known identities ? this is cleaner than elementwise arguments.
 >
@@ -307,7 +307,7 @@ $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j
    - C) 8
    - D) 9
 
-   <details><summary>Answer</summary>**B)** $|A \times B| = |A| \cdot |B| = 3 \cdot 2 = 6$</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $|A \times B| = |A| \cdot |B| = 3 \cdot 2 = 6$</details>
 
 2. Which of the following is NOT a subset of $\{1, 2, 3\}$?
    - A) $\emptyset$
@@ -315,7 +315,7 @@ $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j
    - C) $\{1, 4\}$
    - D) $\{1, 2, 3\}$
 
-   <details><summary>Answer</summary>**C)** $\{1, 4\}$ contains 4 which is not an element of $\{1, 2, 3\}$</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $\{1, 4\}$ contains 4 which is not an element of $\{1, 2, 3\}$</details>
 
 3. $\overline{A \cap B}$ is equivalent to:
    - A) $\overline{A} \cap \overline{B}$
@@ -323,7 +323,7 @@ $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j
    - C) $A \cup B$
    - D) $\overline{A \cup B}$
 
-   <details><summary>Answer</summary>**B)** By De Morgan's law, $\overline{A \cap B} = \overline{A} \cup \overline{B}$</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** By De Morgan's law, $\overline{A \cap B} = \overline{A} \cup \overline{B}$</details>
 
 4. Which set is countably infinite?
    - A) $\mathbb{R}$
@@ -331,7 +331,7 @@ $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j
    - C) $(0, 1)$
    - D) $\mathcal{P}(\mathbb{N})$
 
-   <details><summary>Answer</summary>**B)** $\mathbb{Q}$ is countably infinite; $\mathbb{R}$, $(0,1)$, and $\mathcal{P}(\mathbb{N})$ are all uncountable.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $\mathbb{Q}$ is countably infinite; $\mathbb{R}$, $(0,1)$, and $\mathcal{P}(\mathbb{N})$ are all uncountable.</details>
 
 5. If $A$ has 4 elements, what is $|\mathcal{P}(A)|$?
    - A) 4
@@ -339,14 +339,14 @@ $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j
    - C) 16
    - D) 32
 
-   <details><summary>Answer</summary>**C)** $|\mathcal{P}(A)| = 2^4 = 16$</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $|\mathcal{P}(A)| = 2^4 = 16$</details>
 
 ## Examples
 
 **Example 1.1** (Set notation). Write the set of all positive odd integers less than 20 in roster and set-builder form.
 
 *Solution.* Roster: $\{1, 3, 5, 7, 9, 11, 13, 15, 17, 19\}$.
-Set-builder: $\{x \in \mathbb{N} \mid x < 20 \land x \bmod 2 = 1\}$.
+Set-builder: $\{x \in \mathbb{N} \mid x &lt; 20 \land x \bmod 2 = 1\}$.
 
 **Example 1.2** (Subset verification). Let $A = \{1, 2, 3\}$, $B = \{1, 2, 3, 4, 5\}$, $C = \{1, 2, 3\}$. Then $A \subseteq B$, $A \subseteq C$, $C \subseteq A$, and $A = C$.
 
@@ -518,11 +518,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -530,7 +530,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -556,7 +556,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -574,23 +574,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()
@@ -767,7 +767,7 @@ console.log(enumerateRationals(10));
 1. List all subsets of $\{1, 2, 3, 4\}$.
 2. If $|A| = 5$ and $|B| = 3$, what is $|A \times B|$?
 3. State De Morgan's laws for sets in words.
-4. For $A = \{x \in \mathbb{Z} \mid -3 \leq x \leq 3\}$ and $B = \{x \in \mathbb{Z} \mid x^2 < 10\}$, determine $A \cap B$.
+4. For $A = \{x \in \mathbb{Z} \mid -3 \leq x \leq 3\}$ and $B = \{x \in \mathbb{Z} \mid x^2 &lt; 10\}$, determine $A \cap B$.
 5. Is $\emptyset \in \mathcal{P}(\emptyset)$? Justify.
 6. What does it mean for a set to be countably infinite?
 7. How does a multiset differ from a classical set?

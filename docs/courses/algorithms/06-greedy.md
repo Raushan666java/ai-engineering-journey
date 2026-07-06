@@ -79,7 +79,7 @@ A greedy algorithm makes the locally optimal choice at each step, hoping that lo
 
 **Real-World Analogy:** A conference room can host only one meeting at a time. You have a list of meeting requests with start and end times. How do you schedule the maximum number of meetings? The greedy strategy: always pick the meeting that ends the earliest, because it leaves the most room for subsequent meetings.
 
-**Problem:** Given \( n \) activities with start times \( s_i \) and finish times \( f_i \) (where \( s_i < f_i \)), select the maximum number of non-overlapping activities.
+**Problem:** Given \( n \) activities with start times \( s_i \) and finish times \( f_i \) (where \( s_i &lt; f_i \)), select the maximum number of non-overlapping activities.
 
 **Greedy strategy:** Always select the activity with the earliest finish time that does not conflict with previously selected activities.
 
@@ -486,7 +486,7 @@ FractionalKnapsack(items, W):
 |------|------|--------|-------|----------|----------|-----------|-------------|
 | 1    | A    | 10     | 60    | 50 >= 10 yes | 10    | 60        | 40          |
 | 2    | B    | 20     | 100   | 40 >= 20 yes | 20    | 100       | 20          |
-| 3    | C    | 30     | 120   | 20 < 30 no | 20 (fraction) | 120*(20/30)=80 | 0      |
+| 3    | C    | 30     | 120   | 20 &lt; 30 no | 20 (fraction) | 120*(20/30)=80 | 0      |
 
 **Total value:** 60 + 100 + 80 = **240**.
 
@@ -1090,7 +1090,7 @@ Greedy algorithms are not just academic — they power critical infrastructure.
 - D) Divide-and-conquer compatibility
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Greedy-choice property (local optimum leads to global optimum) and optimal substructure (optimal solution contains optimal sub-solutions).
 </details>
 
@@ -1102,7 +1102,7 @@ B) Greedy-choice property (local optimum leads to global optimum) and optimal su
 - D) Fractional knapsack doesn't need sorting
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) In fractional knapsack, you can always take a partial item to exactly fill remaining capacity, so the value/weight ratio sort yields an optimal fill.
 </details>
 
@@ -1114,7 +1114,7 @@ B) In fractional knapsack, you can always take a partial item to exactly fill re
 - D) Build a balanced tree
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Merge the two characters/trees with the smallest frequencies. This ensures the least frequent characters get the deepest (longest) codewords.
 </details>
 
@@ -1126,7 +1126,7 @@ B) Merge the two characters/trees with the smallest frequencies. This ensures th
 - D) Case analysis
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Exchange argument — take any optimal solution and transform it step-by-step into the greedy solution without reducing quality.
 </details>
 
@@ -1138,7 +1138,7 @@ B) Exchange argument — take any optimal solution and transform it step-by-step
 - D) Fractional knapsack
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) 0/1 knapsack requires DP because taking a fraction of an item is not allowed, so the greedy ratio sort can leave unusable capacity.
 </details>
 

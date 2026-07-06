@@ -3267,28 +3267,28 @@ class SupplyChainReport
    - B) Historical data plus weather, holidays, and economics
    - C) Only weather data
    - D) Only seasonal trends
-   <details><summary>Answer</summary>**B)** Combining historical data with external factors like weather, holidays, and economic indicators improves accuracy.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Combining historical data with external factors like weather, holidays, and economic indicators improves accuracy.</details>
 
 2. What type of solver is recommended for daily route optimization?
    - A) Exact solver
    - B) Heuristic algorithm
    - C) Brute force
    - D) Random assignment
-   <details><summary>Answer</summary>**B)** Heuristic algorithms are computationally practical for daily route optimization; exact solvers are used for planning.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Heuristic algorithms are computationally practical for daily route optimization; exact solvers are used for planning.</details>
 
 3. How often should warehouse slotting be reviewed?
    - A) Never
    - B) Monthly
    - C) Yearly
    - D) Only when warehouse is full
-   <details><summary>Answer</summary>**B)** Slotting assignments should be reviewed monthly as order patterns change.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Slotting assignments should be reviewed monthly as order patterns change.</details>
 
 4. What is the main dependency challenge for shipment tracking?
    - A) Database performance
    - B) Carrier API reliability
    - C) Storage costs
    - D) User interface design
-   <details><summary>Answer</summary>**B)** Shipment tracking depends on carrier API reliability for real-time updates.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Shipment tracking depends on carrier API reliability for real-time updates.</details>
 
 ## Summary
 

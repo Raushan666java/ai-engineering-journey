@@ -623,7 +623,7 @@ def find_candidate_keys(all_attrs: Set[str],
 
 **Total worst-case:** O(2^n * n * f) where n = number of attributes, f = number of FDs.
 
-**Why exponential:** Finding candidate keys is NP-hard in general (the hypergraph transversal problem). In practice, n is small (typically < 20 attributes per relation).
+**Why exponential:** Finding candidate keys is NP-hard in general (the hypergraph transversal problem). In practice, n is small (typically &lt; 20 attributes per relation).
 
 **Edge case:** If no subset produces full closure (incomplete FD set), no candidate key exists — the relation cannot exist in practice.
 
@@ -974,7 +974,7 @@ A Cartesian product followed by a selection on condition θ.
 1. Compute R × S (all pairs)
 2. Apply selection σ_θ to keep only pairs satisfying θ
 
-**Example:** R ⨝_{R.A < S.B} S
+**Example:** R ⨝_{R.A &lt; S.B} S
 
 **Complexity:** O(|R| × |S|) for the product, then a scan. Never implement as product-then-select — always push the selection into the join.
 
@@ -1101,7 +1101,7 @@ R ⨝_F S = {(1, A, X), (2, B, NULL), (3, NULL, Y)}
 ```
 
 **Step-by-step:**
-1. Create two copies via rename: ρ<E1>(EMPLOYEE), ρ<E2>(EMPLOYEE)
+1. Create two copies via rename: ρ&lt;E1>(EMPLOYEE), ρ<E2&gt;(EMPLOYEE)
 2. Join on condition involving attributes from both copies
 3. Project desired attributes
 
@@ -1315,11 +1315,11 @@ S (ALL COURSES): cid = {C1, C2, C3}
 | Step | Expression | Result | Explanation |
 |------|-----------|--------|-------------|
 | 1 | Z = {sid} | — | attrs(R) − attrs(S) |
-| 2 | π<sid>(R) | {1, 2, 3} | All student IDs |
-| 3 | π<sid>(R) × S | (1,C1),(1,C2),(1,C3),(2,C1),(2,C2),(2,C3),(3,C1),(3,C2),(3,C3) | All possible enrollments |
+| 2 | π&lt;sid&gt;(R) | {1, 2, 3} | All student IDs |
+| 3 | π&lt;sid&gt;(R) × S | (1,C1),(1,C2),(1,C3),(2,C1),(2,C2),(2,C3),(3,C1),(3,C2),(3,C3) | All possible enrollments |
 | 4 | (Step 3) − R | (2,C3),(3,C2),(3,C3) | Missing enrollments |
-| 5 | π<sid>(Step 4) | {2, 3} | Students missing at least one course |
-| 6 | π<sid>(R) − Step 5 | {1} | Students missing zero courses |
+| 5 | π&lt;sid&gt;(Step 4) | {2, 3} | Students missing at least one course |
+| 6 | π&lt;sid&gt;(R) − Step 5 | {1} | Students missing zero courses |
 | **Output** | R ÷ S | {1} | Only student 1 took ALL courses |
 
 **Verification:**
@@ -1545,7 +1545,7 @@ Uses **domain variables** (individual values) instead of tuple variables. Each v
 **Step-by-step to convert TRC to DRC:**
 1. Replace each tuple variable with individual domain variables
 2. Replace t.attr with the corresponding domain variable
-3. Add the membership condition: <domain_vars> ∈ Relation
+3. Add the membership condition: &lt;domain_vars&gt; ∈ Relation
 4. Adjust quantifiers: ∃ ranges over the domain vars of the relation
 
 #### 3.8.3 Safety of Relational Calculus Expressions
@@ -1727,7 +1727,7 @@ STUDENT(sid, name, phone1, phone2)
 
 **Q2: Can you express division using basic operations?**
 
-*Answer:* Yes. R ÷ S = π<sub>Z</sub>(R) − π<sub>Z</sub>((π<sub>Z</sub>(R) × S) − R), where Z = attrs(R) − attrs(S).
+*Answer:* Yes. R ÷ S = π<sub>Z&lt;/sub&gt;(R) − π<sub>Z&lt;/sub&gt;((π<sub>Z&lt;/sub&gt;(R) × S) − R), where Z = attrs(R) − attrs(S).
 
 **Q3: What's the difference between a primary key and a unique key?**
 
@@ -1844,9 +1844,9 @@ ENROLLED(sid, course)
 
 | Step | Expression | Cardinality | Explanation |
 |------|-----------|-------------|-------------|
-| 1 | σ<course='DBMS' ∨ course='OS'>(ENROLLED) | e | Filter enrollments to relevant courses |
+| 1 | σ&lt;course='DBMS' ∨ course='OS'&gt;(ENROLLED) | e | Filter enrollments to relevant courses |
 | 2 | STUDENT ⨝ (Step 1) | e (≤|STUDENT|) | Join to get student names |
-| 3 | π<sname>(Step 2) | ≤ e | Project only names |
+| 3 | π&lt;sname&gt;(Step 2) | ≤ e | Project only names |
 
 **Final:** `π<sname>(STUDENT ⨝ σ<course='DBMS' ∨ course='OS'>(ENROLLED))`
 
@@ -1875,9 +1875,9 @@ STORE(sid, sname)
 
 | Step | Expression | Result | Size |
 |------|-----------|--------|------|
-| 1 | π<pid>(PRODUCT) | {P1, P2, P3} | 3 |
-| 2 | π<sid,pid>(SALE) ÷ Step 1 | {S1} | 1 |
-| 3 | π<sname>(STORE ⨝ Step 2) | {Amazon} | 1 |
+| 1 | π&lt;pid&gt;(PRODUCT) | {P1, P2, P3} | 3 |
+| 2 | π&lt;sid,pid&gt;(SALE) ÷ Step 1 | {S1} | 1 |
+| 3 | π&lt;sname&gt;(STORE ⨝ Step 2) | {Amazon} | 1 |
 
 **Verification:** Only S1 (Amazon) sells all three products (P1, P2, P3).
 
@@ -1890,10 +1890,10 @@ STORE(sid, sname)
 **RA:** `π<sname>(σ<color='red'>(PART) ⨝ SHIPMENT ⨝ SUPPLIER)`
 
 **Execution plan:**
-1. σ<color='red'>(PART) — filter parts
+1. σ&lt;color='red'&gt;(PART) — filter parts
 2. Result ⨝ SHIPMENT — get shipment records for those parts
 3. Result ⨝ SUPPLIER — get supplier details
-4. π<sname> — extract names
+4. π&lt;sname&gt; — extract names
 
 ### Example 4: Anti-Join (Not Exists)
 
@@ -1907,8 +1907,8 @@ STORE(sid, sname)
 
 | Step | Expression | Result |
 |------|-----------|--------|
-| 1 | π<pid>(PRODUCT) | {P1, P2, P3, P4} |
-| 2 | π<pid>(SALE) | {P1, P2, P3} |
+| 1 | π&lt;pid&gt;(PRODUCT) | {P1, P2, P3, P4} |
+| 2 | π&lt;pid&gt;(SALE) | {P1, P2, P3} |
 | 3 | Step 1 − Step 2 | {P4} |
 
 ---
@@ -1932,14 +1932,14 @@ STORE(sid, sname)
 
 | Operation | Symbol | Arity | What It Does | Example | Closure? |
 |-----------|--------|-------|-------------|---------|----------|
-| **Selection** | σ | 1 | Filters rows by condition | σ<gpa>3.5>(STUDENT) | Yes |
-| **Projection** | π | Varies | Selects columns | π<name,major>(STUDENT) | Yes |
+| **Selection** | σ | 1 | Filters rows by condition | σ&lt;gpa&gt;3.5>(STUDENT) | Yes |
+| **Projection** | π | Varies | Selects columns | π&lt;name,major&gt;(STUDENT) | Yes |
 | **Union** | ∪ | Varies | Combines rows from two relations | R ∪ S | Yes |
 | **Set Difference** | − | Varies | Rows in first but not second | R − S | Yes |
 | **Cartesian Product** | × | Sum | Every row of R paired with every row of S | R × S | Yes |
-| **Rename** | ρ | 1 | Changes relation or attribute name | ρ<new>(R) | Yes |
+| **Rename** | ρ | 1 | Changes relation or attribute name | ρ&lt;new&gt;(R) | Yes |
 | **Intersection** | ∩ | Varies | Rows in both relations | R ∩ S | Yes |
-| **Theta Join** | ⨝_θ | Sum | Product + selection | σ<cond>(R × S) | Yes |
+| **Theta Join** | ⨝_θ | Sum | Product + selection | σ&lt;cond&gt;(R × S) | Yes |
 | **Natural Join** | ⨝ | Varies | Equijoin on common attributes, deduplicated | R ⨝ S | Yes |
 | **Division** | ÷ | Diff | Rows in R associated with ALL rows in S | R ÷ S | Yes |
 

@@ -2871,7 +2871,7 @@ public class ProductQueryService {
    - D) @Table
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) @Document.** Spring Data MongoDB uses @Document to map classes to MongoDB collections.
 </details>
 
@@ -2882,7 +2882,7 @@ public class ProductQueryService {
    - D) Relational data with joins
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Caching, session management, pub/sub.** Redis excels at in-memory operations with sub-millisecond latency.
 </details>
 
@@ -2893,7 +2893,7 @@ public class ProductQueryService {
    - D) CrudRepository
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) ElasticsearchRepository.** Spring Data Elasticsearch provides ElasticsearchRepository for search operations.
 </details>
 

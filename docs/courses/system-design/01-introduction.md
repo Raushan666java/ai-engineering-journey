@@ -414,7 +414,7 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 - C) 99.99%
 - D) 99.999%
 
-<details><summary>Answer</summary>C) 99.99% (52.6 minutes/year)</details>
+<details><summary>Answer&lt;/summary&gt;C) 99.99% (52.6 minutes/year)&lt;/details&gt;
 
 **Q2:** Which phase comes after back-of-the-envelope estimation?
 - A) Requirements gathering
@@ -422,7 +422,7 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 - C) Detailed deep dive
 - D) Deployment
 
-<details><summary>Answer</summary>B) High-level design (Phase 3)</details>
+<details><summary>Answer&lt;/summary&gt;B) High-level design (Phase 3)&lt;/details&gt;
 
 **Q3:** MTBF=720h, MTTR=4h. What is availability?
 - A) 99.0%
@@ -430,7 +430,7 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 - C) 99.94%
 - D) 99.99%
 
-<details><summary>Answer</summary>B) 720/724 = 99.45%</details>
+<details><summary>Answer&lt;/summary&gt;B) 720/724 = 99.45%</details>
 
 **Q4:** What does Little's Law state?
 - A) Throughput equals capacity
@@ -438,7 +438,7 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 - C) Latency is always under 100ms
 - D) Storage grows linearly
 
-<details><summary>Answer</summary>B) L = lambda * W</details>
+<details><summary>Answer&lt;/summary&gt;B) L = lambda * W&lt;/details&gt;
 
 **Q5:** Why is tail latency critical in distributed systems?
 - A) It determines median user experience
@@ -446,7 +446,7 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 - C) It is cheaper to optimize
 - D) SLAs only measure tail latency
 
-<details><summary>Answer</summary>B) Head-of-line blocking in fan-out requests</details>
+<details><summary>Answer&lt;/summary&gt;B) Head-of-line blocking in fan-out requests&lt;/details&gt;
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -485,7 +485,7 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 **Q2:** Which concept is most fundamental to the topic of Chapter 1
 - A) Option A
@@ -493,7 +493,7 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Review the core sections</details>
+<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
 
 **Q3:** How does this chapter's main concept apply to real-world systems?
 - A) Option A
@@ -501,7 +501,7 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>See the Real-World Systems section</details>
+<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
 
 ---
 
@@ -781,11 +781,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -793,7 +793,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -819,7 +819,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -837,23 +837,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'system-design demo')
   const log = new Logger()

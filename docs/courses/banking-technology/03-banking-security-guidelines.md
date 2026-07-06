@@ -867,6 +867,941 @@ D) Customer account number
 HOTP uses an event counter that increments on each OTP generation. TOTP (time-based variant) uses time instead of counter. HOTP = Truncate(HMAC-SHA1(K, C)).
 </details>
 
+### 13. TypeScript Code Examples
+
+#### 13.1 Security Audit Simulation
+
+```typescript
+interface SecurityAuditEvent {
+  eventId: string;
+  timestamp: Date;
+  eventType: 'LOGIN' | 'LOGOUT' | 'TRANSACTION' | 'ADMIN_ACTION' | 'PASSWORD_CHANGE' | 'ACCESS_DENIED';
+  userId: string;
+  ipAddress: string;
+  sessionId: string;
+  riskScore: number;
+  details: string;
+}
+
+interface ComplianceCheckResult {
+  checkName: string;
+  passed: boolean;
+  severity: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';
+  details: string;
+  recommendation: string;
+}
+
+class SecurityAuditor {
+  private auditLog: SecurityAuditEvent[] = [];
+  private suspiciousPatterns: Map&lt;string, number&gt; = new Map();
+
+  logEvent(event: Omit&lt;SecurityAuditEvent, 'eventId' | 'riskScore'&gt;): SecurityAuditEvent {
+    const auditEvent: SecurityAuditEvent = {
+      ...event,
+      eventId: `AUD${Date.now()}${Math.random().toString(36).substring(2, 8)}`,
+      riskScore: this.calculateRiskScore(event),
+    };
+    this.auditLog.push(auditEvent);
+    this.detectAnomalies(auditEvent);
+    return auditEvent;
+  }
+
+  private calculateRiskScore(event: Omit&lt;SecurityAuditEvent, 'eventId' | 'riskScore'&gt;): number {
+    let score = 0;
+    if (event.eventType === 'ACCESS_DENIED') { score += 30; }
+    if (event.eventType === 'ADMIN_ACTION') { score += 20; }
+    if (event.eventType === 'PASSWORD_CHANGE') { score += 15; }
+    const recentCount = this.auditLog.filter(e =>
+      e.userId === event.userId &&
+      e.timestamp > new Date(Date.now() - 5 * 60 * 1000)
+    ).length;
+    if (recentCount > 10) { score += 25; }
+    return Math.min(score, 100);
+  }
+
+  private detectAnomalies(event: SecurityAuditEvent): void {
+    const key = `${event.userId}:${event.ipAddress}`;
+    const count = (this.suspiciousPatterns.get(key) || 0) + 1;
+    this.suspiciousPatterns.set(key, count);
+    if (event.eventType === 'ACCESS_DENIED' && count >= 5) {
+      console.log(`[ALERT] Brute force detected - User: ${event.userId}, IP: ${event.ipAddress}`);
+    }
+    if (event.riskScore > 70) {
+      console.log(`[ALERT] High risk event: ${event.eventType} for user ${event.userId} (Score: ${event.riskScore})`);
+    }
+  }
+
+  getEventsByUser(userId: string): SecurityAuditEvent[] {
+    return this.auditLog.filter(e => e.userId === userId);
+  }
+
+  getHighRiskEvents(threshold: number = 50): SecurityAuditEvent[] {
+    return this.auditLog.filter(e => e.riskScore >= threshold);
+  }
+
+  generateReport(): object {
+    return {
+      totalEvents: this.auditLog.length,
+      highRiskCount: this.getHighRiskEvents().length,
+      uniqueUsers: new Set(this.auditLog.map(e => e.userId)).size,
+      suspiciousIPs: Array.from(this.suspiciousPatterns.entries())
+        .filter(([_, count]) => count >= 10)
+        .map(([ip, count]) => ({ ip, count })),
+    };
+  }
+}
+
+// Usage
+const auditor = new SecurityAuditor();
+auditor.logEvent({
+  timestamp: new Date(), eventType: 'LOGIN', userId: 'U001',
+  ipAddress: '192.168.1.100', sessionId: 'SES123', details: 'Login from Mumbai branch'
+});
+auditor.logEvent({
+  timestamp: new Date(), eventType: 'ACCESS_DENIED', userId: 'U001',
+  ipAddress: '10.0.0.50', sessionId: 'SES124', details: 'Invalid password attempt 1'
+});
+console.log('Audit Report:', JSON.stringify(auditor.generateReport(), null, 2));
+```
+
+#### 13.2 RBI Compliance Checker
+
+```typescript
+interface RBIComplianceRule {
+  ruleId: string;
+  category: 'CYBERSECURITY' | 'BCP_DR' | 'DATA_PROTECTION' | 'PAYMENT_SYSTEM' | 'KYC' | 'IT_GOVERNANCE';
+  description: string;
+  requirement: string;
+  checkFunction: () =&gt; ComplianceCheckResult;
+}
+
+interface BankComplianceProfile {
+  bankName: string;
+  bankCode: string;
+  hasCISO: boolean;
+  hasSOC: boolean;
+  hasDLP: boolean;
+  hasHSM: boolean;
+  drSiteDistanceKm: number;
+  lastDRTestDate: Date | null;
+  swiftCSPCompliant: boolean;
+  pciDSSVersion: string;
+  lastPenTestDate: Date | null;
+  incidentReportedWithin2Hours: boolean;
+  iso27001Certified: boolean;
+  dataLocalizationCompliant: boolean;
+}
+
+class RBIComplianceEngine {
+  private rules: RBIComplianceRule[] = [];
+  private profile: BankComplianceProfile;
+
+  constructor(profile: BankComplianceProfile) {
+    this.profile = profile;
+    this.registerRules();
+  }
+
+  private registerRules(): void {
+    this.rules.push({
+      ruleId: 'RBI-CS-001', category: 'CYBERSECURITY',
+      description: 'CISO Appointment',
+      requirement: 'Bank must have a designated CISO at board level',
+      checkFunction: () =&gt; ({
+        checkName: 'CISO Appointment',
+        passed: this.profile.hasCISO,
+        severity: 'CRITICAL',
+        details: `CISO appointed: ${this.profile.hasCISO}`,
+        recommendation: 'Appoint a CISO reporting directly to the board',
+      }),
+    });
+
+    this.rules.push({
+      ruleId: 'RBI-CS-002', category: 'CYBERSECURITY',
+      description: '24x7 SOC with SIEM',
+      requirement: 'Bank must operate a 24x7 SOC with SIEM and SOAR',
+      checkFunction: () =&gt; ({
+        checkName: 'SOC Operations',
+        passed: this.profile.hasSOC,
+        severity: 'CRITICAL',
+        details: `SOC operational: ${this.profile.hasSOC}`,
+        recommendation: this.profile.hasSOC ? 'None' : 'Set up 24x7 SOC with SIEM and SOAR',
+      }),
+    });
+
+    this.rules.push({
+      ruleId: 'RBI-BCP-001', category: 'BCP_DR',
+      description: 'DR Site Distance',
+      requirement: 'DR site must be at least 300 km from primary site',
+      checkFunction: () =&gt; ({
+        checkName: 'DR Site Distance',
+        passed: this.profile.drSiteDistanceKm >= 300,
+        severity: 'HIGH',
+        details: `DR distance: ${this.profile.drSiteDistanceKm} km`,
+        recommendation: this.profile.drSiteDistanceKm >= 300 ? 'None' : 'Establish DR site at minimum 300 km distance',
+      }),
+    });
+
+    this.rules.push({
+      ruleId: 'RBI-DP-001', category: 'DATA_PROTECTION',
+      description: 'Data Localization',
+      requirement: 'Payment data must be stored only in India',
+      checkFunction: () =&gt; ({
+        checkName: 'Data Localization',
+        passed: this.profile.dataLocalizationCompliant,
+        severity: 'CRITICAL',
+        details: `Localization compliant: ${this.profile.dataLocalizationCompliant}`,
+        recommendation: 'Ensure all payment data resides on servers within India',
+      }),
+    });
+
+    this.rules.push({
+      ruleId: 'RBI-SWIFT-001', category: 'PAYMENT_SYSTEM',
+      description: 'SWIFT CSP Compliance',
+      requirement: 'Bank must comply with SWIFT CSP mandatory controls',
+      checkFunction: () =&gt; ({
+        checkName: 'SWIFT CSP Compliance',
+        passed: this.profile.swiftCSPCompliant,
+        severity: 'CRITICAL',
+        details: `SWIFT CSP compliant: ${this.profile.swiftCSPCompliant}`,
+        recommendation: 'Implement air-gapped SWIFT, dual control, and transaction whitelisting',
+      }),
+    });
+
+    this.rules.push({
+      ruleId: 'RBI-INC-001', category: 'IT_GOVERNANCE',
+      description: 'Incident Reporting Timeline',
+      requirement: 'Cybersecurity incidents must be reported to RBI within 2 hours',
+      checkFunction: () =&gt; ({
+        checkName: 'Incident Reporting',
+        passed: this.profile.incidentReportedWithin2Hours,
+        severity: 'HIGH',
+        details: `Reporting compliance: ${this.profile.incidentReportedWithin2Hours}`,
+        recommendation: 'Implement automated incident reporting to RBI via SIMS portal',
+      }),
+    });
+  }
+
+  runAllChecks(): ComplianceCheckResult[] {
+    return this.rules.map(r =&gt; r.checkFunction());
+  }
+
+  getFailedChecks(): ComplianceCheckResult[] {
+    return this.runAllChecks().filter(c =&gt; !c.passed);
+  }
+
+  getComplianceScore(): number {
+    const results = this.runAllChecks();
+    const passed = results.filter(r =&gt; r.passed).length;
+    return Math.round((passed / results.length) * 100);
+  }
+}
+
+// Usage
+const sbiProfile: BankComplianceProfile = {
+  bankName: 'State Bank of India', bankCode: 'SBIN',
+  hasCISO: true, hasSOC: true, hasDLP: true, hasHSM: true,
+  drSiteDistanceKm: 1200, lastDRTestDate: new Date('2026-06-15'),
+  swiftCSPCompliant: true, pciDSSVersion: '4.0',
+  lastPenTestDate: new Date('2026-05-01'), incidentReportedWithin2Hours: true,
+  iso27001Certified: true, dataLocalizationCompliant: true,
+};
+const compliance = new RBIComplianceEngine(sbiProfile);
+console.log('Compliance Score:', compliance.getComplianceScore() + '%');
+const failed = compliance.getFailedChecks();
+if (failed.length > 0) {
+  console.log('Failed checks:', failed.map(f =&gt; f.checkName));
+} else {
+  console.log('All checks passed');
+}
+```
+
+#### 13.3 OTP Generation and Validation with HSM Simulation
+
+```typescript
+interface OTPRecord {
+  hash: string;
+  createdAt: Date;
+  expiresAt: Date;
+  validated: boolean;
+  attempts: number;
+  channel: 'SMS' | 'VOICE' | 'APP' | 'EMAIL';
+}
+
+class OTPManager {
+  private otpStore: Map&lt;string, OTPRecord&gt; = new Map();
+  private readonly OTP_LENGTH: number = 6;
+  private readonly OTP_VALIDITY_SECONDS: number = 300;
+  private readonly MAX_ATTEMPTS: number = 3;
+  private readonly HSM_MASTER_KEY: string = 'hsm-master-key-2026';
+
+  private generateHOTP(counter: number): string {
+    const data = this.HSM_MASTER_KEY + counter;
+    let hash = 0;
+    for (let i = 0; i &lt; data.length; i++) {
+      hash = ((hash &lt;&lt; 5) - hash) + data.charCodeAt(i);
+      hash = hash & hash;
+    }
+    const truncated = Math.abs(hash) % 1000000;
+    return String(truncated).padStart(this.OTP_LENGTH, '0');
+  }
+
+  private generateTOTP(): string {
+    const timeStep = Math.floor(Date.now() / 1000 / 30);
+    return this.generateHOTP(timeStep);
+  }
+
+  generateOTP(identifier: string, channel: OTPRecord['channel']): string {
+    const otp = this.generateTOTP();
+    const hash = this.hashOTP(otp, identifier);
+    this.otpStore.set(identifier, {
+      hash,
+      createdAt: new Date(),
+      expiresAt: new Date(Date.now() + this.OTP_VALIDITY_SECONDS * 1000),
+      validated: false,
+      attempts: 0,
+      channel,
+    });
+    console.log(`[HSM] OTP generated for ${identifier} via ${channel}`);
+    return otp;
+  }
+
+  private hashOTP(otp: string, identifier: string): string {
+    let hash = this.HSM_MASTER_KEY + otp + identifier;
+    for (let i = 0; i &lt; 1000; i++) {
+      let h = 0;
+      for (let j = 0; j &lt; hash.length; j++) {
+        h = ((h &lt;&lt; 5) - h) + hash.charCodeAt(j);
+        h = h & h;
+      }
+      hash = Math.abs(h).toString(36);
+    }
+    return hash;
+  }
+
+  validateOTP(identifier: string, enteredOTP: string): boolean {
+    const record = this.otpStore.get(identifier);
+    if (!record) { throw new Error('OTP not generated for this identifier'); }
+    if (record.validated) { throw new Error('OTP already used'); }
+    if (new Date() > record.expiresAt) { throw new Error('OTP expired'); }
+    record.attempts++;
+    if (record.attempts > this.MAX_ATTEMPTS) {
+      this.otpStore.delete(identifier);
+      throw new Error('Max OTP attempts exceeded');
+    }
+    const expectedHash = this.hashOTP(enteredOTP, identifier);
+    if (expectedHash === record.hash) {
+      record.validated = true;
+      console.log(`[HSM] OTP validated for ${identifier}`);
+      return true;
+    }
+    console.log(`[HSM] OTP failed for ${identifier} (${record.attempts}/${this.MAX_ATTEMPTS})`);
+    return false;
+  }
+}
+
+// Usage
+const otpManager = new OTPManager();
+const otp = otpManager.generateOTP('ram@sbi', 'SMS');
+console.log('OTP sent:', otp);
+const isValid = otpManager.validateOTP('ram@sbi', otp);
+console.log('OTP Valid:', isValid);
+```
+
+#### 13.4 PCI DSS Compliance Checker
+
+```typescript
+interface CardDataStorage {
+  pan: string;
+  panEncrypted: boolean;
+  panTokenized: boolean;
+  cardholderName: string;
+  expiryDate: string;
+  cvv: string | null;
+  trackData: string | null;
+  pin: string | null;
+}
+
+interface PCIRequirement {
+  id: string;
+  goal: number;
+  requirement: string;
+  passed: boolean;
+  details: string;
+}
+
+class PCIDSSComplianceChecker {
+  checkCardDataStorage(data: CardDataStorage): PCIRequirement[] {
+    const results: PCIRequirement[] = [];
+    results.push({
+      id: 'PCI-REQ-3.1', goal: 2,
+      requirement: 'PAN must be encrypted at rest',
+      passed: data.panEncrypted || data.panTokenized,
+      details: data.panEncrypted ? 'PAN encrypted' : data.panTokenized ? 'PAN tokenized' : 'PAN in clear - VIOLATION',
+    });
+    results.push({
+      id: 'PCI-REQ-3.2', goal: 2,
+      requirement: 'Do not store sensitive auth data after auth',
+      passed: !data.cvv && !data.trackData && !data.pin,
+      details: data.cvv ? 'CVV stored - PROHIBITED' : data.trackData ? 'Track data stored - PROHIBITED' : data.pin ? 'PIN stored - PROHIBITED' : 'No prohibited data stored',
+    });
+    results.push({
+      id: 'PCI-REQ-3.3', goal: 2,
+      requirement: 'Mask PAN when displayed (first 6, last 4)',
+      passed: !data.pan || data.pan.length === 0,
+      details: `Display: ${data.pan ? data.pan.substring(0,6) + 'XXXXXX' + data.pan.substring(data.pan.length-4) : 'None'}`,
+    });
+    results.push({
+      id: 'PCI-REQ-4.1', goal: 2,
+      requirement: 'Encrypt cardholder data in transit',
+      passed: true,
+      details: 'TLS 1.2+ enforced',
+    });
+    return results;
+  }
+
+  checkAllRequirements(data: CardDataStorage): { passed: number; failed: number } {
+    const results = this.checkCardDataStorage(data);
+    const passed = results.filter(r =&gt; r.passed).length;
+    const failed = results.filter(r =&gt; !r.passed).length;
+    return { passed, failed };
+  }
+
+  isCompliant(data: CardDataStorage): boolean {
+    return this.checkAllRequirements(data).failed === 0;
+  }
+}
+
+// Usage
+const pciChecker = new PCIDSSComplianceChecker();
+const merchantData: CardDataStorage = {
+  pan: '4111111111111111', panEncrypted: true, panTokenized: false,
+  cardholderName: 'Ram Sharma', expiryDate: '12/28',
+  cvv: null, trackData: null, pin: null,
+};
+const pciResult = pciChecker.checkAllRequirements(merchantData);
+console.log('PCI DSS:', pciResult.passed + '/4 passed');
+console.log('Compliant:', pciChecker.isCompliant(merchantData));
+```
+
+### 14. Architecture Diagrams — Additional
+
+#### Bank SOC / SIEM Integration Architecture
+
+```mermaid
+graph TB
+    subgraph Data_Sources[Security Data Sources]
+        CBS[CBS Logs]
+        ATM[ATM Switch Logs]
+        UPI[UPI Gateway Logs]
+        IB[Internet Banking Logs]
+        FW[Firewall Logs]
+        EDR[EDR/AV Logs]
+    end
+    subgraph SIEM[SIEM Platform]
+        COL[Log Collector]
+        CORR[Correlation Engine]
+        STOR[Storage]
+        DASH[Visualization]
+    end
+    subgraph SOAR[SOAR Platform]
+        PLAY[Playbook Engine]
+        TICKET[Ticketing]
+        AUTO[Auto-Response]
+    end
+    subgraph RBI_Reporting[RBI Reporting]
+        SIMS[SIMS Portal]
+        CERT[CERT-IN]
+        DAKSH[RBI DAKSH]
+    end
+    CBS --> COL; ATM --> COL; UPI --> COL; IB --> COL; FW --> COL; EDR --> COL
+    COL --> CORR; CORR --> STOR; STOR --> DASH
+    CORR --> PLAY; PLAY --> TICKET; PLAY --> AUTO
+    DASH --> SIMS; DASH --> CERT; AUTO --> DAKSH
+```
+
+#### Bank BCP/DR Architecture
+
+```mermaid
+flowchart TB
+    subgraph PDC[Primary Data Center]
+        CBS_A[(CBS Oracle RAC Active)]
+        ATM_A[ATM Switch Active]
+        IB_A[Internet Banking Active]
+    end
+    subgraph DR[DR Site - 800km away]
+        CBS_B[(CBS Oracle DataGuard Standby)]
+        ATM_B[ATM Switch Standby]
+        IB_B[Internet Banking Standby]
+    end
+    subgraph Sync[Replication]
+        SYNC[Real-time Sync]
+        ASYNC[Async Replication]
+    end
+    PDC --> SYNC; PDC --> ASYNC
+    SYNC --> DR; ASYNC --> DR
+    subgraph Testing[DR Testing]
+        T1[Table-top - Quarterly]
+        T2[Technical Failover - Half-yearly]
+        T3[Full Business DR - Annual]
+        T4[Independent Audit - Annual]
+    end
+    T1 --> T2 --> T3 --> T4
+```
+
+### 15. Latest Developments (2024-2026)
+
+#### 15.1 New RBI Cybersecurity Circulars
+
+- **July 2024:** "Cyber Resilience and Payment Security" circular — all payment transactions above Rs. 5,000 must use transaction signing. Banks must implement AI/ML transaction monitoring. Quarterly external pen testing (up from annual).
+
+- **January 2025:** "Digital Payment Security Controls" — tokenization extended to all card-on-file transactions. All payment aggregators must obtain PCI DSS v4.0 by June 2025. Mandatory 3DS 2.0 for e-commerce. UPI/IMPS fraud reporting within 1 hour.
+
+- **August 2025:** Enhanced BCP/DR guidelines — RTO reduced to 1 hour for critical systems, RPO to 5 minutes for payment systems. Two full DR tests per year. DR must be active-active for UPI/payment switches.
+
+- **March 2026:** "AI Governance in Banking" — all AI/ML models must be explainable (XAI). Mandatory model validation and fairness testing. AI model inventory with risk classification. Third-party AI vendor security assessment.
+
+#### 15.2 IT Act Amendments
+
+- **2024:** IT (Amendment) Act — Section 66F (cyber terrorism, life imprisonment), Section 66G (data breach notification within 72 hours, penalty up to Rs. 5 crore/2% turnover), Section 72B (re-identification of anonymized data, penalty Rs. 3 crore), Section 79A (AI-based content moderation for intermediaries).
+
+- **2025:** DPDP Act rules notified — DPO appointment mandatory for banks. Consent managers registered with Data Protection Board. Data localization for critical personal data (financial, health, biometric). Penalties up to Rs. 250 crore.
+
+- **2026:** Proposed AI regulation amendments — mandatory watermarking of AI-generated content. Liability framework for AI-based banking decisions. Algorithmic audit for credit scoring models.
+
+#### 15.3 SWIFT & Security Updates
+
+- **2024:** SWIFT CSP 2024 — 24 mandatory controls (up from 21). AI-based anomaly detection, enhanced sanctions screening, 6-monthly pen testing.
+
+- **2025:** ISO 20022 migration complete — all cross-border payments use ISO 20022 XML. Indian banks completed by November 2025.
+
+- **2026:** SWIFT Neural — AI-based fraud detection for real-time payment screening. Indian banks to implement by December 2026.
+
+#### 15.4 Security Incidents
+
+- **2024:** Rise in UPI "screen sharing" attacks. RBI banned screen sharing during UPI transactions.
+- **2025:** Major PSB ransomware attack on CBS — restored from DR in 4 hours. Mandatory offline backups for all CBS systems.
+- **2026:** First AI deepfake voice attack on phone banking. RBI mandated voice biometric liveness detection.
+
+#### 15.5 E-KYC Updates
+
+- **2024:** UIDAI "Aadhaar Face Authentication" — facial recognition for e-KYC with liveness detection.
+- **2025:** Aadhaar authentication limit increased to Rs. 1,00,000.
+- **2026:** Offline e-KYC with QR code verification — no internet required.
+
+## 📝 Solved Examples (20 MCQs)
+
+**1.** As per RBI 2020 cybersecurity circular, which technology is recommended for detecting APTs?
+
+A) Perimeter firewall
+B) Deception technology (honeypots/honeynets)
+C) Antivirus software
+D) SSL certificates
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Deception technology**
+
+RBI's 2020 cybersecurity circular specifically recommends deception technology (honeypots, honeynets) to detect APTs and sophisticated threats that have bypassed traditional perimeter defenses.
+</details>
+
+**2.** Under the IT Act 2000, which section provides safe harbor protection to intermediaries?
+
+A) Section 43
+B) Section 66
+C) Section 79
+D) Section 69
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Section 79**
+
+Section 79 provides conditional safe harbor to intermediaries (including banks, ISPs, payment gateways) from liability for third-party content, provided they exercise due diligence.
+</details>
+
+**3.** What is the maximum RPO mandated by RBI for critical banking systems?
+
+A) 1 hour
+B) 30 minutes
+C) 15 minutes
+D) 5 minutes
+
+<details>
+<summary>Answer</summary>
+**Answer: C) 15 minutes**
+
+RBI mandates RPO of less than 15 minutes for critical systems. RTO should be 2-4 hours (reduced to 1 hour for payment systems as of 2025).
+</details>
+
+**4.** Which of the following card data is NEVER allowed to be stored under PCI DSS?
+
+A) Cardholder name
+B) PAN (encrypted)
+C) CVV/CVC
+D) Expiration date
+
+<details>
+<summary>Answer</summary>
+**Answer: C) CVV/CVC**
+
+CVV/CVC, full track data, and PIN must NEVER be stored — even if encrypted. Cardholder name, PAN (encrypted/truncated/tokenized), and expiration date may be stored with protection.
+</details>
+
+**5.** Under SWIFT CSP, what is the primary requirement for SWIFT system connectivity?
+
+A) VPN over internet
+B) Dedicated leased line with no internet connectivity
+C) Wireless connection
+D) Cloud-based SWIFT connector
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Dedicated leased line with no internet connectivity**
+
+SWIFT CSP mandates that SWIFT infrastructure must be logically and physically segregated with no internet connectivity. Only dedicated leased lines are permitted.
+</details>
+
+**6.** What is the RBI mandated minimum distance between a bank's primary data center and DR site?
+
+A) 100 km
+B) 200 km
+C) 300 km
+D) 500 km
+
+<details>
+<summary>Answer</summary>
+**Answer: C) 300 km**
+
+RBI mandates minimum 300 km distance between primary and DR sites in different seismic zones, ensuring a natural disaster does not affect both sites.
+</details>
+
+**7.** In the HOTP algorithm, what parameter serves as the moving factor?
+
+A) Time (T)
+B) Counter (C)
+C) Secret key (K)
+D) Challenge (Q)
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Counter (C)**
+
+HOTP uses a counter (event-based) moving factor that increments each time an OTP is generated. TOTP uses time. HOTP = Truncate(HMAC-SHA1(K, C)).
+</details>
+
+**8.** Under BCP/DR, what is the difference between RTO and RPO?
+
+A) RTO is data loss, RPO is downtime
+B) RTO is recovery time, RPO is data loss tolerance
+C) Both are the same
+D) RTO is for applications, RPO is for network
+
+<details>
+<summary>Answer</summary>
+**Answer: B) RTO is recovery time, RPO is data loss tolerance**
+
+RTO (Recovery Time Objective) = maximum acceptable downtime. RPO (Recovery Point Objective) = maximum acceptable data loss. RBI: RTO &lt; 2-4 hrs, RPO &lt; 15 min.
+</details>
+
+**9.** Under the IT (Amendment) Act 2008, which section designated CERT-IN as the national cyber security incident response agency?
+
+A) Section 66A
+B) Section 69
+C) Section 70B
+D) Section 79
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Section 70B**
+
+Section 70B of the IT (Amendment) Act 2008 designates CERT-IN as the national agency for cyber security incident response, coordination, and emergency measures.
+</details>
+
+**10.** How many mandatory controls does the SWIFT CSP require as of 2024 version?
+
+A) 21
+B) 22
+C) 24
+D) 31
+
+<details>
+<summary>Answer</summary>
+**Answer: C) 24**
+
+SWIFT CSP 2024 version increased mandatory controls from 21 to 24. New controls include AI-based anomaly detection, enhanced sanctions screening, and biannual pen testing.
+</details>
+
+**11.** In the Aadhaar authentication architecture, what is an AUA?
+
+A) Authentication User Agency — the bank using Aadhaar auth
+B) Aadhaar Validation Authority
+C) Automated User Authenticator
+D) Aadhaar Verification Agency
+
+<details>
+<summary>Answer</summary>
+**Answer: A) Authentication User Agency — the bank using Aadhaar auth**
+
+AUA (Authentication User Agency) is the entity (typically a bank) that uses Aadhaar authentication for customer verification. KUA is for e-KYC, ASA routes requests to UIDAI.
+</details>
+
+**12.** What is the RBI mandated time frame for reporting a cybersecurity incident?
+
+A) Within 6 hours
+B) Within 2 hours
+C) Within 24 hours
+D) Within 72 hours
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Within 2 hours**
+
+RBI mandates that cybersecurity incidents must be reported within 2 hours of detection. As of 2025, UPI/IMPS fraud must be reported within 1 hour.
+</details>
+
+**13.** Under PCI DSS v4.0, which encryption algorithm is required for PAN at rest?
+
+A) DES
+B) 3DES
+C) AES-256
+D) RC4
+
+<details>
+<summary>Answer</summary>
+**Answer: C) AES-256**
+
+PCI DSS v4.0 requires AES-256 for PAN encryption at rest. TLS 1.2+ for data in transit. Keys stored in HSM and rotated at least annually.
+</details>
+
+**14.** In the IT Act 2000, what is the punishment for identity theft under Section 66C?
+
+A) Up to 1 year + Rs. 50,000 fine
+B) Up to 3 years + Rs. 1 lakh fine
+C) Up to 5 years + Rs. 5 lakh fine
+D) Up to 7 years + Rs. 10 lakh fine
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Up to 3 years + Rs. 1 lakh fine**
+
+Section 66C deals with identity theft — punishment up to 3 years and/or fine up to Rs. 1 lakh.
+</details>
+
+**15.** What is the purpose of e-KYC in banking?
+
+A) Encrypting customer communications
+B) Electronic Know Your Customer for identity verification
+C) Electronic Key management for CBS
+D) End-to-end KYC audit trail
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Electronic Know Your Customer for identity verification**
+
+e-KYC uses Aadhaar-based electronic identity verification to onboard customers without physical documents, enabling instant account opening through UIDAI verification.
+</details>
+
+**16.** Under Basel III, which principle of BCBS 239 deals with data accuracy?
+
+A) Principle 1 — Governance
+B) Principle 2 — Data Architecture
+C) Principle 3 — Accuracy
+D) Principle 7 — Accuracy of Reports
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Principle 3 — Accuracy**
+
+BCBS 239 Principle 3 mandates data accuracy with automated reconciliation. Principle 7 covers report accuracy. Principle 3 specifically addresses data accuracy and integrity.
+</details>
+
+**17.** In the SWIFT CSP maker-checker principle, what is the 4-eyes principle?
+
+A) Four people must approve each transaction
+B) Dual control — one person creates, another approves
+C) Four-factor authentication
+D) Four different systems must verify
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Dual control — one person creates, another approves**
+
+The 4-eyes principle (maker-checker) requires the person who initiates a transaction is different from the person who authorizes it. SWIFT CSP Control 2.7 mandates this.
+</details>
+
+**18.** What is the encryption standard required for Aadhaar PID (Personal Identity Data) block?
+
+A) AES-128
+B) AES-256
+C) RSA-2048
+D) UIDAI-specific encryption with public key
+
+<details>
+<summary>Answer</summary>
+**Answer: D) UIDAI-specific encryption with public key**
+
+The PID block containing biometric data is encrypted using UIDAI's public key at the device level. Each request uses a unique session key. Biometric data is never stored at the AUA/bank.
+</details>
+
+**19.** Under the RBI BCP/DR guidelines, how many full DR tests must banks conduct per year as of 2025?
+
+A) One per year
+B) Two per year
+C) Four per year
+D) One every two years
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Two per year**
+
+As per RBI's 2025 enhanced BCP/DR guidelines, banks must conduct two full DR tests per year (increased from one). Quarterly table-top exercises and half-yearly technical failover tests are also required.
+</details>
+
+**20.** Under the IT (Amendment) Act 2024, what is the penalty for data breach?
+
+A) Up to Rs. 1 crore
+B) Up to Rs. 5 crore or 2% of global turnover
+C) Up to Rs. 10 crore
+D) Up to Rs. 50 lakh
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Up to Rs. 5 crore or 2% of global turnover**
+
+The 2024 amendment introduced Section 66G requiring data breach notification within 72 hours, with penalties up to Rs. 5 crore or 2% of global turnover.
+</details>
+
+## 📖 Exercise Bank (30 Questions)
+
+### Section A: Short Answer (Questions 1-10)
+
+**1.** List the six goals of PCI DSS and briefly describe each.
+
+**2.** What is the Defense-in-Depth model? List its seven layers.
+
+**3.** Explain the difference between RegTech and SupTech with examples.
+
+**4.** What are the four severity levels (L1-L4) in RBI's Cyber Crisis Management Plan?
+
+**5.** List five key sections of the IT Act 2000 relevant to banking.
+
+**6.** What is the difference between HOTP and TOTP algorithms for OTP generation?
+
+**7.** Explain SWIFT CSP Control 2.7 (Operator Segregation) and why it is critical.
+
+**8.** What is the role of a DPO (Data Protection Officer) under the DPDP Act 2023?
+
+**9.** List the five mandatory technical controls from the RBI 2020 cybersecurity circular.
+
+**10.** What are the three authentication factors in RBI's 2FA mandate?
+
+### Section B: Long Answer (Questions 11-20)
+
+**11.** Describe the RBI cybersecurity framework evolution from 2016 to 2020. Include key enhancements in the 2020 circular.
+
+**12.** Explain the Defense-in-Depth security architecture for a bank. Describe each of the seven layers with specific technologies.
+
+**13.** Compare PCI DSS v3.2.1 with v4.0. What are the key changes and new requirements?
+
+**14.** Describe the complete DR test lifecycle as mandated by RBI. Include all four phases with frequency and scope.
+
+**15.** Explain the AML/CFT transaction monitoring architecture used by banks. Include rules engine, ML models, and SAR generation.
+
+**16.** Describe the Aadhaar e-KYC flow. Include AUA, KUA, ASA, and CIDR roles, encryption, and XML response format.
+
+**17.** Explain the SWIFT CSP mandatory controls for Indian banks. Cover at least 10 controls with technical implementation details.
+
+**18.** Describe the BCP/DR architecture for a mid-sized Indian bank. Include RPO/RTO, replication type, site selection, and failover procedure.
+
+**19.** Explain how Basel III technology requirements drive bank IT architecture. Cover BCBS 239, risk data warehousing, and reporting systems.
+
+**20.** Compare ISO 27001 vs PCI DSS vs RBI cybersecurity framework. Where do they overlap and where do they differ?
+
+### Section C: Application / Design (Questions 21-30)
+
+**21.** Design a SIEM architecture for a bank that ingests logs from CBS, ATM switch, UPI gateway, and internet banking. Include log collection, correlation, alerting, and RBI reporting.
+
+**22.** Write a TypeScript class for a DLP (Data Leak Prevention) system that monitors outbound data transfers and blocks sensitive data (PAN, Aadhaar, account numbers).
+
+**23.** Design a User Entity Behavior Analytics (UEBA) system that detects anomalous user behavior based on login patterns, transaction amounts, and access times.
+
+**24.** Implement a password policy enforcer in TypeScript that validates passwords against minimum length, complexity, history, and expiry rules.
+
+**25.** Design an access control system for a bank's CBS administrative functions with RBAC, maker-checker, and privileged access management.
+
+**26.** Write TypeScript code for a vulnerability scanner that checks CBS endpoints against OWASP Top 10 vulnerabilities.
+
+**27.** Design a security incident response playbook automation (SOAR) that handles phishing incidents, ransomware, and data breaches automatically.
+
+**28.** Implement a session management system for internet banking with concurrent session limits, idle timeout, and forced re-authentication for sensitive actions.
+
+**29.** Design a real-time fraud detection engine for UPI transactions that uses rules + ML scoring with sub-100ms response time.
+
+**30.** Write TypeScript code for an RBI compliance report generator that creates automated XBRL reports for off-site surveillance.
+
+**Answer Key:**
+
+<details>
+<summary>Section A Answers (1-10)</summary>
+
+**1.** Goal 1: Build secure network (firewall, change defaults). Goal 2: Protect cardholder data (encrypt storage/transmission). Goal 3: Vulnerability management (anti-malware, secure systems). Goal 4: Access control (RBAC, authentication, physical). Goal 5: Monitor and test (logging, pen testing). Goal 6: Information security policy.
+
+**2.** Layer 7: Application (OAuth, 2FA). Layer 6: Data (encryption, DLP). Layer 5: Access (RBAC, PIM). Layer 4: Network (firewall, IDS/IPS). Layer 3: Platform (OS hardening, EDR). Layer 2: Physical (CCTV, biometrics). Layer 1: Governance (ISO 27001, ISMS).
+
+**3.** RegTech: Technology for regulatory compliance (AML screening, KYC automation). SupTech: Technology used by regulators for supervision (RBI's DAKSH). Example: RegTech = automated suspicious transaction reporting; SupTech = RBI using DAKSH to analyze bank data.
+
+**4.** L1 (Low): Isolated malware, IT team. L2 (Medium): Limited data exposure, CISO+IT, RBI 2hrs. L3 (High): System compromise, CISO+CEO, RBI+CERT-IN. L4 (Critical): Multi-system breach, Board+CISO, RBI+CERT-IN+NCIIPC.
+
+**5.** Section 43 (unauthorized access), 66C (identity theft), 66D (cheating by impersonation), 72 (breach of confidentiality), 79 (safe harbor).
+</details>
+
+<details>
+<summary>Section B Answers (11-20)</summary>
+
+**11.** 2016: Baseline — CISO, IS steering committee, cyber policy, IS audit, BCP, incident reporting (2hrs), vendor assessment, annual pen test. 2020: Enhanced — APT defense, network segmentation, sandboxing, deception tech, DLP, UEBA, 24x7 SOC/SIEM, SOAR, MITRE ATT and CK, supply chain security, cloud security.
+
+**12.** Layer 1 (Governance): ISO 27001, ISMS. Layer 2 (Physical): DC access, CCTV, biometrics. Layer 3 (Platform): OS hardening, patching, EDR. Layer 4 (Network): Firewalls, IDS/IPS, VPN, DDoS. Layer 5 (Access): RBAC, PIM/PAM, SSO, MFA. Layer 6 (Data): AES-256, DLP, tokenization. Layer 7 (Application): OAuth 2.0, 2FA, session management.
+
+**13.** v3.2.1: 12 requirements, annual validation, ASV quarterly. v4.0: Customized approach, continuous validation, enhanced MFA, expanded CDE definition, new e-commerce requirements (3DS), flexible pen testing.
+
+**14.** Phase 1: Table-top (quarterly) — review BCP, simulate crises. Phase 2: Technical DR (half-yearly) — failover app servers, verify sync. Phase 3: Full business DR (annual/semi-annual from 2025) — actual CBS failover. Phase 4: Independent audit (annual) — external review, report to RBI.
+
+**15.** CBS/TXN data → Rules Engine (PEP, sanctions, velocity, geo) → ML models (XGBoost, neural nets) → Alert generation → SAR creation → Automated filing to FIU-IND.
+
+**16.** Customer consent + Aadhaar + biometric/OTP → Bank (AUA/KUA) formats PID block (encrypted with UIDAI public key) → ASA routes to UIDAI → CIDR matches → Response XML: name, DOB, gender, address, photo → Bank stores as valid KYC.
+
+**17.** Key 10 controls: 1.1 (restrict internet), 1.2 (OS privilege), 1.3 (virtualization protection), 1.5 (PKI auth), 2.1 (MFA), 2.3 (segregation), 2.4 (anomaly detection), 2.5 (transaction controls), 2.7 (maker-checker), 2.9 (incident response).
+
+**18.** Active-Passive with sync replication to DR site 300+ km away. Oracle DataGuard SYNC. RPO &lt; 15 min, RTO &lt; 2-4 hrs. Auto-failover on PDC heartbeat loss. DR activates CBS, ATM switch, and internet banking.
+
+**19.** Basel III requires: Risk data warehouse (BCBS 239), PD/LGD/EAD engines, FRTB for market risk, LCR/NSFR for liquidity risk, XBRL-based Pillar 3 reporting, automated stress testing infrastructure.
+
+**20.** ISO 27001: Broad ISMS (114 controls, 14 domains). PCI DSS: Card data specific (12 requirements). RBI: Banking-specific cybersecurity (2020 circular). Overlap: access control, incident response, encryption. Differences: scope (PCI is card-only, RBI is bank-wide).
+</details>
+
+<details>
+<summary>Section C Answers (21-30)</summary>
+
+**21.** SIEM: Log shippers (Filebeat) on CBS/ATM/UPI/IB servers → Kafka for buffering → Elasticsearch for storage → Kibana for visualization → Correlation rules for alerting → SOAR for auto-response → SIMS/CERT-IN for RBI reporting.
+
+**22.** DLP class: Monitor outbound HTTP/SMTP/FTP. Regex patterns for PAN (/\d{16}/), Aadhaar (/\d{12}/), account numbers. Block/alert on match. Use content inspection and contextual analysis.
+
+**23.** UEBA: Build baseline of user behavior (login time, location, transaction amount, frequency). Flag deviations: login from new city + large transaction + unusual time. Use statistical models (z-score, moving average).
+
+**24.** Password policy: min 8 chars, 1 upper, 1 lower, 1 digit, 1 special. No last 5 passwords. Expiry 90 days. Failed attempt lockout after 5 attempts. TypeScript: regex validation + history storage (hashed).
+
+**25.** RBAC: Role hierarchy (admin, supervisor, teller, auditor). Maker-checker for critical ops (payment approval, customer creation). PAM for admin access with session recording and approval workflows.
+
+**26.** Vulnerability scanner: HTTP client checks CBS endpoints for: SQLi (parameter tampering), XSS (script injection), CSRF (missing tokens), insecure headers, outdated TLS. Report with severity and remediation.
+
+**27.** SOAR playbook: (1) Phishing — auto-analyze email headers, quarantine, notify user. (2) Ransomware — isolate host, block C2, restore from backup. (3) Data breach — identify leaked data, notify DPO, report to RBI/CERT-IN within 2hrs.
+
+**28.** Session management: max 2 concurrent sessions per user. Idle timeout 15 min. Absolute timeout 8 hrs. Forced re-auth for beneficiary addition, high-value transactions, password changes. All sessions logged.
+
+**29.** Fraud detection: Transaction enters → Rule checks (velocity, amount threshold, geo-match) → ML score (XGBoost model, 100ms inference) → Hotlist check → Composite score → Allow/Block/Review. Feedback loop for model retraining.
+
+**30.** XBRL generator: Fetch data from CBS (CRAR, NPA, LCR, NSFR) → Map to XBRL taxonomy (RBI DAKSH schema) → Generate XBRL instance document → Validate against XSD → Submit via API to RBI's DAKSH portal.
+</details>
+
 ## Summary
 
 RBI's cybersecurity framework evolved from the 2016 baseline requirements to the enhanced 2020 circular mandating APT defense, DLP, SOC/SIEM, and supply chain security. The Cyber Crisis Management Plan has four severity levels (L1-L4) with specific reporting timelines.

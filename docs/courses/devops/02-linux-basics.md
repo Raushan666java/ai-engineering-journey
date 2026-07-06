@@ -794,13 +794,13 @@ console.log('Spiking:', monitor.getSpikingProcesses());
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What does the `set -euo pipefail` do in a bash script?</summary>**A)** Enables debugging mode<br>**B)** Exits on error, undefined variables, and pipe failures<br>**C)** Sets environment variables<br>**D)** Configures logging<br><br>**Answer: B)** Exits on error, undefined variables, and pipe failures</details>
+<details><summary>Question 1: What does the `set -euo pipefail` do in a bash script?</summary>**A)** Enables debugging mode<br>**B)** Exits on error, undefined variables, and pipe failures<br>**C)** Sets environment variables<br>**D)** Configures logging<br><br>**Answer: B)** Exits on error, undefined variables, and pipe failures&lt;/details&gt;
 
 <details><summary>Question 2: Which command shows all listening ports and their associated processes?</summary>**A)** `ps aux`<br>**B)** `ss -tulpn`<br>**C)** `netstat -r`<br>**D)** `ip addr`<br><br>**Answer: B)** `ss -tulpn`</details>
 
-<details><summary>Question 3: What does `chmod 755` mean?</summary>**A)** Owner can read/write/execute, everyone else can read/execute<br>**B)** Everyone can read/write/execute<br>**C)** Owner can read/execute, everyone else can read<br>**D)** Owner can read/write, group can read, others can read<br><br>**Answer: A)** Owner can read/write/execute, everyone else can read/execute</details>
+<details><summary>Question 3: What does `chmod 755` mean?</summary>**A)** Owner can read/write/execute, everyone else can read/execute<br>**B)** Everyone can read/write/execute<br>**C)** Owner can read/execute, everyone else can read<br>**D)** Owner can read/write, group can read, others can read<br><br>**Answer: A)** Owner can read/write/execute, everyone else can read/execute&lt;/details&gt;
 
-<details><summary>Question 4: What is the purpose of a systemd unit file?</summary>**A)** To define how a service is managed<br>**B)** To configure the kernel<br>**C)** To set environment variables<br>**D)** To schedule cron jobs<br><br>**Answer: A)** To define how a service is managed</details>
+<details><summary>Question 4: What is the purpose of a systemd unit file?</summary>**A)** To define how a service is managed<br>**B)** To configure the kernel<br>**C)** To set environment variables<br>**D)** To schedule cron jobs<br><br>**Answer: A)** To define how a service is managed&lt;/details&gt;
 
 <details><summary>Question 5: How do you permanently prevent a service from starting on boot?</summary>**A)** `systemctl stop nginx`<br>**B)** `systemctl disable nginx`<br>**C)** `systemctl mask nginx`<br>**D)** `systemctl reset nginx`<br><br>**Answer: B)** `systemctl disable nginx`</details>
 
@@ -959,11 +959,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -971,7 +971,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

@@ -1064,7 +1064,7 @@ Robots use search to plan physical movements:
 - C) IDDFS
 - D) UCS
 
-<details><summary>Answer</summary>C) IDDFS combines BFS's optimality with DFS's linear space requirements.</details>
+<details><summary>Answer&lt;/summary&gt;C) IDDFS combines BFS's optimality with DFS's linear space requirements.</details>
 
 **Q2:** What makes DFS incomplete on infinite state spaces?
 - A) It uses too much memory
@@ -1072,7 +1072,7 @@ Robots use search to plan physical movements:
 - C) It cannot handle cycles
 - D) It only works on trees
 
-<details><summary>Answer</summary>B) DFS may follow an infinite path and never backtrack to find the goal. Cycle detection helps but doesn't solve the infinite-path problem.</details>
+<details><summary>Answer&lt;/summary&gt;B) DFS may follow an infinite path and never backtrack to find the goal. Cycle detection helps but doesn't solve the infinite-path problem.</details>
 
 **Q3:** Uniform-cost search reduces to BFS under what condition?
 - A) When the heuristic is admissible
@@ -1080,7 +1080,7 @@ Robots use search to plan physical movements:
 - C) When the branching factor is 2
 - D) When using a FIFO queue
 
-<details><summary>Answer</summary>B) When all step costs are identical, UCS explores in breadth-first order since all nodes at the same depth have equal cost.</details>
+<details><summary>Answer&lt;/summary&gt;B) When all step costs are identical, UCS explores in breadth-first order since all nodes at the same depth have equal cost.</details>
 
 **Q4:** What is the primary disadvantage of graph search compared to tree search?
 - A) It is not complete
@@ -1088,7 +1088,7 @@ Robots use search to plan physical movements:
 - C) It cannot handle cycles
 - D) It is slower in all cases
 
-<details><summary>Answer</summary>B) Graph search requires storing every visited state in the explored set, which can be memory-intensive for large state spaces.</details>
+<details><summary>Answer&lt;/summary&gt;B) Graph search requires storing every visited state in the explored set, which can be memory-intensive for large state spaces.</details>
 
 **Q5:** In the Romanian route-finding problem, which path does UCS find from Arad to Bucharest?
 - A) Arad → Sibiu → Fagaras → Bucharest
@@ -1096,7 +1096,7 @@ Robots use search to plan physical movements:
 - C) Arad → Zerind → Oradea → Sibiu → Bucharest
 - D) Arad → Timisoara → Lugoj → Mehadia → Bucharest
 
-<details><summary>Answer</summary>B) UCS finds the optimal path of 418 km: Arad → Sibiu (140) → Rimnicu (220) → Pitesti (317) → Bucharest (418).</details>
+<details><summary>Answer&lt;/summary&gt;B) UCS finds the optimal path of 418 km: Arad → Sibiu (140) → Rimnicu (220) → Pitesti (317) → Bucharest (418).</details>
 
 ---
 

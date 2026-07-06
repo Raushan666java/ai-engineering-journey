@@ -430,13 +430,13 @@ After first column-round QR(0,4,8,12):
 |------|---|---|---|---|
 | Start | `61707865` | `03020100` | `13121110` | `00000001` |
 | a += b | `64727965` | `03020100` | `13121110` | `00000001` |
-| d ^= a; d <<<= 16 | `64727965` | `03020100` | `13121110` | `64727965` |
+| d ^= a; d &lt;<<= 16 | `64727965` | `03020100` | `13121110` | `64727965` |
 | c += d | `64727965` | `03020100` | `77748a75` | `64727965` |
-| b ^= c; b <<<= 12 | `64727965` | `84808085` | `77748a75` | `64727965` |
+| b ^= c; b &lt;<<= 12 | `64727965` | `84808085` | `77748a75` | `64727965` |
 | a += b | `e8f2f9ea` | `84808085` | `77748a75` | `64727965` |
-| d ^= a; d <<<= 8 | `e8f2f9ea` | `84808085` | `77748a75` | `76da85fd` |
+| d ^= a; d &lt;<<= 8 | `e8f2f9ea` | `84808085` | `77748a75` | `76da85fd` |
 | c += d | `e8f2f9ea` | `84808085` | `ee4f1072` | `76da85fd` |
-| b ^= c; b <<<= 7 | `e8f2f9ea` | `7e6f847a` | `ee4f1072` | `76da85fd` |
+| b ^= c; b &lt;<<= 7 | `e8f2f9ea` | `7e6f847a` | `ee4f1072` | `76da85fd` |
 
 After 10 double rounds (20 QR operations total), the state is added to the initial state to produce the keystream block:
 
@@ -773,7 +773,7 @@ Public: p = 23, g = 5
 
 | Attack | Target | Feasibility | Mitigation |
 |--------|--------|-------------|------------|
-| Discrete log (Index Calculus) | p < 1024 bits | Practical for nation-states | Use â‰¥2048-bit p |
+| Discrete log (Index Calculus) | p &lt; 1024 bits | Practical for nation-states | Use â‰¥2048-bit p |
 | Logjam (CVE-2015-4000) | DHE_EXPORT (512-bit) | Practical (see case study) | Disable export-grade ciphers |
 | Man-in-the-middle | Unauthenticated DH | Trivial | Authenticate with signatures (ECDHE) |
 | Small subgroup confinement | Non-prime-order group | Practical | Use safe primes, check subgroup |
@@ -1129,7 +1129,7 @@ Where:
 
 | Step | Operation | Value |
 |------|-----------|-------|
-| 1 | K' = "key" (3 bytes < 64) | `6B6579` |
+| 1 | K' = "key" (3 bytes &lt; 64) | `6B6579` |
 | 2 | ipad (Ã—64) | `363636...` |
 | 3 | K' âŠ• ipad | `5D537F...` |
 | 4 | Inner hash: SHA256((K'âŠ•ipad) \|\| "message") | `hâ‚ = a1b2c3...` |
@@ -2396,8 +2396,8 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 |-----------|-------------|-------|-----|
 | TLS version | TLS 1.3 only | SSLv2/3, TLS 1.0/1.1 | Protocol flaws, weak cipher suites, no PFS |
 | TLS cipher suites | TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256 | RC4, CBC, 3DES, export-grade | AEAD only; CBC is padding oracle prone |
-| Key exchange | X25519, X25519Kyber768 | static RSA, DHE < 2048 | Forward secrecy; DHE < 2048 is Logjam-vulnerable |
-| Certificate signature | SHA-256 with RSA-2048+, ECDSA P-256, Ed25519 | SHA-1, MD5, RSA < 2048 | Collision attacks on SHA-1 |
+| Key exchange | X25519, X25519Kyber768 | static RSA, DHE &lt; 2048 | Forward secrecy; DHE < 2048 is Logjam-vulnerable |
+| Certificate signature | SHA-256 with RSA-2048+, ECDSA P-256, Ed25519 | SHA-1, MD5, RSA &lt; 2048 | Collision attacks on SHA-1 |
 | Hashing | SHA-256, SHA-3, BLAKE2b | MD5, SHA-1, MD4 | Collision attacks demonstrated |
 | Password storage | Argon2id, bcrypt, PBKDF2-HMAC-SHA256 | MD5(password), SHA-1(password), unsalted | Rainbow tables, fast hashing |
 | Key storage | HSM, KMS, TPM, secure enclave | Hardcoded, config files, env vars | Extraction via file read / reverse engineering |

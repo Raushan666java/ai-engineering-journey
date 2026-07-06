@@ -43,7 +43,7 @@ flowchart LR
 
 **Informal Definition:** $\lim_{x \to a} f(x) = L$ means that as $x$ gets arbitrarily close to $a$ (from either side), $f(x)$ gets arbitrarily close to $L$.
 
-**Formal ($\epsilon$-$\delta$) Definition:** $\lim_{x \to a} f(x) = L$ if for every $\epsilon > 0$, there exists $\delta > 0$ such that $0 < |x - a| < \delta$ implies $|f(x) - L| < \epsilon$.
+**Formal ($\epsilon$-$\delta$) Definition:** $\lim_{x \to a} f(x) = L$ if for every $\epsilon > 0$, there exists $\delta > 0$ such that $0 &lt; |x - a| < \delta$ implies $|f(x) - L| < \epsilon$.
 
 **One-Sided Limits:**
 - Right-hand: $\lim_{x \to a^+} f(x)$ ? approach from values greater than $a$
@@ -113,7 +113,7 @@ $$f'(x) = \frac{df}{dx} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 | $\arccos x$ | $-1/\sqrt{1-x^2}$ |
 | $\arctan x$ | $1/(1+x^2)$ |
 
-**Higher-Order Derivatives:** The $n$th derivative is $f^{(n)}(x) = \frac{d^n f}{dx^n}$, obtained by differentiating $n$ times. The second derivative $f''(x)$ gives concavity: $f''(x) > 0$ means concave up, $f''(x) < 0$ means concave down.
+**Higher-Order Derivatives:** The $n$th derivative is $f^{(n)}(x) = \frac{d^n f}{dx^n}$, obtained by differentiating $n$ times. The second derivative $f''(x)$ gives concavity: $f''(x) > 0$ means concave up, $f''(x) &lt; 0$ means concave down.
 
 **Implicit Differentiation:** For equations not solved for $y$ (e.g., $x^2 + y^2 = 1$), differentiate both sides with respect to $x$ and solve for $dy/dx$.
 
@@ -135,7 +135,7 @@ This guarantees a point where the instantaneous rate equals the average rate.
 
 **Second Derivative Test:**
 - If $f'(c) = 0$ and $f''(c) > 0$, then $f(c)$ is a local minimum
-- If $f'(c) = 0$ and $f''(c) < 0$, then $f(c)$ is a local maximum
+- If $f'(c) = 0$ and $f''(c) &lt; 0$, then $f(c)$ is a local maximum
 - If $f''(c) = 0$, test is inconclusive
 
 **Curve Sketching:** Use sign of $f'$ for increasing/decreasing, $f''$ for concavity, limits for asymptotes.
@@ -211,7 +211,7 @@ For $\int \sin^m x \cos^n x\,dx$:
 | $\sqrt{a^2 + x^2}$ | $x = a\tan\theta$ | $1 + \tan^2\theta = \sec^2\theta$ |
 | $\sqrt{x^2 - a^2}$ | $x = a\sec\theta$ | $\sec^2\theta - 1 = \tan^2\theta$ |
 
-**Partial Fractions:** For rational functions $\frac{P(x)}{Q(x)}$ where $\deg(P) < \deg(Q)$:
+**Partial Fractions:** For rational functions $\frac{P(x)}{Q(x)}$ where $\deg(P) &lt; \deg(Q)$:
 1. Factor $Q(x)$ into linear and irreducible quadratic factors
 2. Decompose into sum of simpler fractions
 3. Integrate each term (use $\ln$ for linear factors, $\arctan$ for quadratics)
@@ -276,7 +276,7 @@ $$\int_a^b f(x)\,dx = \lim_{t \to c^-} \int_a^t f(x)\,dx + \lim_{t \to c^+} \int
 **Convergence Tests:**
 - **Comparison Test:** If $0 \leq f(x) \leq g(x)$ for $x \geq a$ and $\int_a^\infty g(x)\,dx$ converges, then $\int_a^\infty f(x)\,dx$ converges
 - **Limit Comparison:** $\lim_{x \to \infty} \frac{f(x)}{g(x)} = c > 0$ implies both integrals converge or both diverge
-- **p-Test:** $\int_1^\infty \frac{1}{x^p}\,dx$ converges iff $p > 1$; $\int_0^1 \frac{1}{x^p}\,dx$ converges iff $p < 1$
+- **p-Test:** $\int_1^\infty \frac{1}{x^p}\,dx$ converges iff $p > 1$; $\int_0^1 \frac{1}{x^p}\,dx$ converges iff $p &lt; 1$
 
 ### 2.8 Sequences and Series
 
@@ -299,7 +299,7 @@ $$\int_a^b f(x)\,dx = \lim_{t \to c^-} \int_a^t f(x)\,dx + \lim_{t \to c^+} \int
 - **Integral Test:** If $a_n = f(n)$ where $f$ is positive, continuous, and decreasing, then $\sum a_n$ converges iff $\int_1^\infty f(x)\,dx$ converges
 - **Comparison Test:** If $0 \leq a_n \leq b_n$ and $\sum b_n$ converges, then $\sum a_n$ converges
 - **Limit Comparison:** $\lim_{n \to \infty} a_n/b_n = c > 0$ implies both converge or both diverge
-- **Ratio Test:** $\lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \rho$. Converges if $\rho < 1$, diverges if $\rho > 1$, inconclusive if $\rho = 1$
+- **Ratio Test:** $\lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \rho$. Converges if $\rho &lt; 1$, diverges if $\rho &gt; 1$, inconclusive if $\rho = 1$
 - **Root Test:** $\lim_{n \to \infty} \sqrt[n]{|a_n|} = \rho$. Same conclusion as ratio test
 
 **Alternating Series:**
@@ -352,7 +352,7 @@ e^x &= \sum_{n=0}^\infty \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!
 \sin x &= \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \\
 \cos x &= \sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \\
 \frac{1}{1-x} &= \sum_{n=0}^\infty x^n = 1 + x + x^2 + x^3 + \cdots, \quad |x| < 1 \\
-\ln(1+x) &= \sum_{n=1}^\infty \frac{(-1)^{n-1} x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots, \quad -1 < x \leq 1 \\
+\ln(1+x) &= \sum_{n=1}^\infty \frac{(-1)^{n-1} x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots, \quad -1 &lt; x \leq 1 \\
 \arctan x &= \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots, \quad |x| \leq 1
 \end{aligned}$$
 
@@ -400,7 +400,7 @@ Area: $A = xy = y(200 - 2y) = 200y - 2y^2$
 Find critical points: $A'(y) = 200 - 4y = 0 \implies y = 50$
 $x = 200 - 2(50) = 100$
 
-Second derivative test: $A''(y) = -4 < 0$, confirming maximum.
+Second derivative test: $A''(y) = -4 &lt; 0$, confirming maximum.
 
 Maximum area: $A = 100 \cdot 50 = 5000 \text{ m}^2$
 
@@ -457,7 +457,7 @@ Determine convergence of $\sum_{n=1}^\infty \frac{n^2}{2^n}$.
 
 $$\lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \lim_{n \to \infty} \frac{(n+1)^2/2^{n+1}}{n^2/2^n} = \lim_{n \to \infty} \frac{(n+1)^2}{2n^2} = \lim_{n \to \infty} \frac{1}{2} \cdot \frac{(n+1)^2}{n^2} = \lim_{n \to \infty} \frac{1}{2} \left(1 + \frac{1}{n}\right)^2 = \frac{1}{2}$$
 
-Since $\frac{1}{2} < 1$, the series converges.
+Since $\frac{1}{2} &lt; 1$, the series converges.
 
 ### Example 8: Taylor Series Expansion
 
@@ -485,7 +485,7 @@ We want $\Delta x$ that minimizes $f(x_t + \Delta x)$. Set $\Delta x = -\eta f'(
 
 $$x_{t+1} = x_t - \eta \cdot 2x_t = x_t(1 - 2\eta)$$
 
-For convergence, we need $|1 - 2\eta| < 1 \implies 0 < \eta < 1$.
+For convergence, we need $|1 - 2\eta| < 1 \implies 0 &lt; \eta < 1$.
 
 With $\eta = 0.1$: $x_{t+1} = 0.8 x_t$, decaying geometrically to 0.
 
@@ -800,11 +800,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -812,7 +812,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -838,7 +838,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -856,23 +856,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'engineering-math demo')
   const log = new Logger()

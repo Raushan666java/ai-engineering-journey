@@ -968,7 +968,7 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 | 3 | For a new email, compute $P(Spam \mid words) \propto P(Spam) \prod_{w \in email} P(w \mid Spam)$ |
 | 4 | Classify as spam if posterior exceeds threshold |
 
-**Real-world:** Gmail's filter processes billions of emails daily using variants of Naive Bayes. False positive rate is <0.1%.
+**Real-world:** Gmail's filter processes billions of emails daily using variants of Naive Bayes. False positive rate is &lt;0.1%.
 
 ### Speech Recognition (Hidden Markov Models)
 
@@ -980,7 +980,7 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 3. Viterbi algorithm finds most likely phoneme sequence
 4. Language model (n-gram) rescoring improves word-level accuracy
 
-**Real-world:** Google's speech recognition uses HMM-GMM hybrids (increasingly replaced by DNN-HMM hybrids) achieving <5% word error rate.
+**Real-world:** Google's speech recognition uses HMM-GMM hybrids (increasingly replaced by DNN-HMM hybrids) achieving &lt;5% word error rate.
 
 ### Other Applications
 
@@ -1028,7 +1028,7 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 - C) The collider becomes independent of its parents
 - D) Nothing changes
 
-<details><summary>Answer</summary>B) Conditioning on a collider opens the path, creating dependence between its parents (explaining away).</details>
+<details><summary>Answer&lt;/summary&gt;B) Conditioning on a collider opens the path, creating dependence between its parents (explaining away).</details>
 
 **Q2:** The HMM forward algorithm computes what quantity?
 - A) The most likely state sequence
@@ -1036,7 +1036,7 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 - C) The posterior over all hidden states jointly
 - D) The entropy of the observation distribution
 
-<details><summary>Answer</summary>B) The forward algorithm recursively computes the belief state (filtering distribution) at each time step.</details>
+<details><summary>Answer&lt;/summary&gt;B) The forward algorithm recursively computes the belief state (filtering distribution) at each time step.</details>
 
 **Q3:** Likelihood weighting fixes evidence variables. What problem does it still face?
 - A) It cannot handle continuous variables
@@ -1044,7 +1044,7 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 - C) It does not converge to the true posterior
 - D) It requires the network to be a tree
 
-<details><summary>Answer</summary>B) Likelihood weighting is inefficient when evidence has low prior probability because most samples receive negligible weight.</details>
+<details><summary>Answer&lt;/summary&gt;B) Likelihood weighting is inefficient when evidence has low prior probability because most samples receive negligible weight.</details>
 
 **Q4:** Why does a Bayesian network require fewer parameters than a full joint distribution table?
 - A) It uses approximation
@@ -1052,7 +1052,7 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 - C) It ignores rare events
 - D) It stores probabilities as logarithms
 
-<details><summary>Answer</summary>B) The chain rule factorization via conditional independence reduces parameters from O(d^n) to O(n * d^{k+1}).</details>
+<details><summary>Answer&lt;/summary&gt;B) The chain rule factorization via conditional independence reduces parameters from O(d^n) to O(n * d^{k+1}).</details>
 
 **Q5:** Which inference method is guaranteed to give the exact posterior for any Bayesian network?
 - A) Likelihood Weighting
@@ -1060,7 +1060,7 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 - C) Variable Elimination
 - D) Rejection Sampling with infinite samples
 
-<details><summary>Answer</summary>C) Variable Elimination (and Enumeration/Junction Tree) are exact; sampling methods are only asymptotically exact.</details>
+<details><summary>Answer&lt;/summary&gt;C) Variable Elimination (and Enumeration/Junction Tree) are exact; sampling methods are only asymptotically exact.</details>
 
 ## 9.11 Summary
 

@@ -241,7 +241,7 @@ The number of trials until the first success in independent Bernoulli trials.
 ### 13.10 Inclusion-Exclusion for Probability
 
 **Principle of inclusion-exclusion for probability:**
-$$P\left(\bigcup_{i=1}^n A_i\right) = \sum_i P(A_i) - \sum_{i<j} P(A_i \cap A_j) + \sum_{i<j<k} P(A_i \cap A_j \cap A_k) - \cdots + (-1)^{n+1} P(A_1 \cap \dots \cap A_n)$$
+$$P\left(\bigcup_{i=1}^n A_i\right) = \sum_i P(A_i) - \sum_{i&lt;j} P(A_i \cap A_j) + \sum_{i<j<k} P(A_i \cap A_j \cap A_k) - \cdots + (-1)^{n+1} P(A_1 \cap \dots \cap A_n)$$
 
 For $n = 3$:
 $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A\cap C) - P(B\cap C) + P(A \cap B \cap C)$$
@@ -275,35 +275,35 @@ $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A\cap C) - P(B\cap C)
    - B) 0.4
    - C) 0.5
    - D) 0.6
-   <details><summary>Answer</summary>**C)** $P(A \mid B) = P(A \cap B) / P(B) = 0.2 / 0.4 = 0.5$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $P(A \mid B) = P(A \cap B) / P(B) = 0.2 / 0.4 = 0.5$.</details>
 
 2. What is the expected value of a fair 6-sided die?
    - A) 3
    - B) 3.5
    - C) 4
    - D) 6
-   <details><summary>Answer</summary>**B)** $(1+2+3+4+5+6)/6 = 3.5$.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $(1+2+3+4+5+6)/6 = 3.5$.</details>
 
 3. The variance of a Bernoulli$(p)$ random variable is:
    - A) $p$
    - B) $1-p$
    - C) $p(1-p)$
    - D) $p^2$
-   <details><summary>Answer</summary>**C)** $\text{Var}(X) = p(1-p)$ for Bernoulli.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $\text{Var}(X) = p(1-p)$ for Bernoulli.</details>
 
 4. Two events are independent if:
    - A) $P(A \cap B) = P(A) + P(B)$
    - B) $P(A \cap B) = P(A)P(B)$
    - C) $P(A \cup B) = P(A) + P(B)$
    - D) $P(A) = P(B)$
-   <details><summary>Answer</summary>**B)** Independence means $P(A \cap B) = P(A)P(B)$.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Independence means $P(A \cap B) = P(A)P(B)$.</details>
 
 5. The binomial distribution $\text{Bin}(n, p)$ has expected value:
    - A) $p$
    - B) $n$
    - C) $np$
    - D) $n(1-p)$
-   <details><summary>Answer</summary>**C)** $E[X] = np$ for binomial.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $E[X] = np$ for binomial.</details>
 
 ## Examples
 
@@ -719,11 +719,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -731,7 +731,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -757,7 +757,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -775,23 +775,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()

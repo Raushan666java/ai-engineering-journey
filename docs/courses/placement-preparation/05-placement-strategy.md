@@ -381,7 +381,7 @@ Rate yourself honestly on a scale of 1â€“5 in each category:
 
 | Your DSA Level | Target Companies |
 |---------------|-----------------|
-| LeetCode < 1500 | Mass recruiters + lower dream (Deloitte, Capgemini, Cognizant) |
+| LeetCode &lt; 1500 | Mass recruiters + lower dream (Deloitte, Capgemini, Cognizant) |
 | LeetCode 1500â€“1800 | Dream companies (Samsung, Walmart, Cisco, Oracle) |
 | LeetCode 1800+ | Super Dream + Dream (Google, Microsoft, Amazon, Atlassian) |
 | LeetCode 2000+ + System Design | Super Dream (Uber, Stripe, Rubrik, Tower Research) |
@@ -663,7 +663,7 @@ Most coding assessments have 2â€“3 questions with increasing difficulty:
 **Q3: Merge Intervals (LeetCode 56)**
 *Given an array of intervals, merge all overlapping intervals.*
 
-**Approach:** Sort by start time. Iterate: if current interval overlaps with the last merged interval (current.start <= last.end), merge by updating last.end to max(last.end, current.end). Otherwise, add as a new interval.
+**Approach:** Sort by start time. Iterate: if current interval overlaps with the last merged interval (current.start &lt;= last.end), merge by updating last.end to max(last.end, current.end). Otherwise, add as a new interval.
 - **Time:** O(n log n) for sorting, **Space:** O(n) for output
 - **Edge case:** Intervals with same start time.
 
@@ -1340,7 +1340,7 @@ AFTER THE INTERVIEW:
 - C) 300
 - D) 500
 
-<details><summary><b>Answer</b></summary>C) 300 problems — this covers most common patterns with sufficient depth for all company tiers.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;C) 300 problems — this covers most common patterns with sufficient depth for all company tiers.</details>
 
 **Q2:** Which placement phase do most IITs follow?
 
@@ -1349,7 +1349,7 @@ AFTER THE INTERVIEW:
 - C) July–December
 - D) March–June
 
-<details><summary><b>Answer</b></summary>C) July–December (Phase 1 starts July–August, Phase 2 runs September–December).</details>
+<details><summary><b>Answer&lt;/b></summary&gt;C) July–December (Phase 1 starts July–August, Phase 2 runs September–December).</details>
 
 **Q3:** Which resume format do most ATS systems prefer?
 
@@ -1358,7 +1358,7 @@ AFTER THE INTERVIEW:
 - C) Creative infographic style
 - D) Narrative paragraph format
 
-<details><summary><b>Answer</b></summary>B) Reverse-chronological plain text — ATS systems parse single-column, text-based resumes most reliably.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;B) Reverse-chronological plain text — ATS systems parse single-column, text-based resumes most reliably.</details>
 
 **Q4:** What should you do immediately after receiving a rejection from one interview?
 
@@ -1367,7 +1367,7 @@ AFTER THE INTERVIEW:
 - C) Email the recruiter asking why
 - D) Take a week off
 
-<details><summary><b>Answer</b></summary>B) Note what went wrong and prepare for the next one. Rejections are data points, not stop signs.</details>
+<details><summary><b>Answer&lt;/b></summary&gt;B) Note what went wrong and prepare for the next one. Rejections are data points, not stop signs.</details>
 
 ---
 

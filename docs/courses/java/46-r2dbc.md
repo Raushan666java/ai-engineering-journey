@@ -35,7 +35,8 @@ After completing this chapter, you will be able to:
 - Optimize R2DBC performance with connection pooling, batching, and indexing
 - Build a complete reactive data layer for a realistic application
 
-## 1. What Is R2DBC?
+## 1. What Is R2DBC?
+
 > **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
@@ -2116,7 +2117,7 @@ logging:
    - D) All of the above
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.
 </details>
 
@@ -2127,7 +2128,7 @@ logging:
    - D) Whatever the team knows best
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.
 </details>
 
@@ -2138,7 +2139,7 @@ logging:
    - D) Never → it is outdated
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.
 </details>
 

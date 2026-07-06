@@ -365,7 +365,7 @@ S3 lifecycle policies automate storage tier transitions:
 
 The syntax highlighting pipeline processes pastes asynchronously. When a paste is created, the language is auto-detected (or specified by the user). A background worker runs a syntax highlighter (Pygments or highlight.js server-side) and stores the rendered HTML alongside the raw text. This pre-rendered HTML is served directly to clients, avoiding client-side processing.
 
-CDN integration caches popular pastes at edge locations. The CDN key is the paste hash. When a paste receives more than a configurable threshold of requests (e.g., 1000/hour), the CDN is pre-warmed with the paste content. Subsequent requests bypass the origin entirely, reducing latency to <10ms globally.
+CDN integration caches popular pastes at edge locations. The CDN key is the paste hash. When a paste receives more than a configurable threshold of requests (e.g., 1000/hour), the CDN is pre-warmed with the paste content. Subsequent requests bypass the origin entirely, reducing latency to &lt;10ms globally.
 
 **Rate Limiting for Pastebin Create and Read**
 
@@ -519,11 +519,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -531,7 +531,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -557,7 +557,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -575,23 +575,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'system-design demo')
   const log = new Logger()
@@ -790,7 +790,7 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 **Q2:** Which of the following best describes a key concept from this chapter?
 - A) Option A description
@@ -798,7 +798,7 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 **Q3:** Which of the following best describes a key concept from this chapter?
 - A) Option A description
@@ -806,7 +806,7 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -842,7 +842,7 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 **Q2:** Which concept is most fundamental to the topic of Chapter 18
 - A) Option A
@@ -850,7 +850,7 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Review the core sections</details>
+<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
 
 **Q3:** How does this chapter's main concept apply to real-world systems?
 - A) Option A
@@ -858,7 +858,7 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>See the Real-World Systems section</details>
+<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
 
 ---
 
@@ -965,7 +965,7 @@ class PastebinStore {
 
 2. **Multi-Layer Rate Limiter**: Design a hierarchical rate limiter that enforces: 10 req/s per endpoint, 100 req/s per user, 1000 req/s per IP, and 100,000 req/s global. Show the Redis key schema and Lua script for checking all four levels atomically. What happens when one layer rate-limits but the others do not?
 
-3. **Pastebin Search**: Users want to search their pastes by content or language. Design a search indexing pipeline that handles 1M new pastes/day with <1 second indexing latency. Consider Elasticsearch, sharding strategy, and re-indexing of existing pastes when language detection changes.
+3. **Pastebin Search**: Users want to search their pastes by content or language. Design a search indexing pipeline that handles 1M new pastes/day with &lt;1 second indexing latency. Consider Elasticsearch, sharding strategy, and re-indexing of existing pastes when language detection changes.
 
 4. **Pastebin Rate Limit and Abuse Prevention**: Design a comprehensive abuse prevention system for Pastebin that includes: per-IP creation limits (10 pastes/hour for unauthenticated users), content-based deduplication limits (prevent the same content from being uploaded by different users to evade filters), automated content scanning with ClamAV and custom regex patterns for credential leaks, and a DMCA takedown workflow with automated re-notification of affected users. How do you scale content scanning to 1M uploads/day without blocking legitimate uploads?
 

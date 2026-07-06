@@ -1579,7 +1579,7 @@ Game shutdown
    C) Ken Thompson, for writing B
    D) Martin Richards, for writing BCPL
 
-<details><summary>Answer</summary>**B)** Dennis Ritchie created C at Bell Labs (1972) to implement the Unix operating system.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Dennis Ritchie created C at Bell Labs (1972) to implement the Unix operating system.</details>
 
 2. What does the linker do in the compilation process?
    A) Expands #include directives
@@ -1587,7 +1587,7 @@ Game shutdown
    C) Combines object files and resolves library references
    D) Optimizes the code for performance
 
-<details><summary>Answer</summary>**C)** The linker combines object files with libraries to produce the final executable.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** The linker combines object files with libraries to produce the final executable.</details>
 
 3. Which of the following is NOT a valid C comment style?
    A) `/* comment */`
@@ -1595,7 +1595,7 @@ Game shutdown
    C) `# comment`
    D) `/* multi-line /* nested */ comment */`
 
-<details><summary>Answer</summary>**C)** `#` starts a preprocessor directive, not a comment. **D)** is invalid because comments do not nest.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `#` starts a preprocessor directive, not a comment. **D)** is invalid because comments do not nest.</details>
 
 4. What does `gcc -c hello.c` produce?
    A) Preprocessed source (.i)
@@ -1603,7 +1603,7 @@ Game shutdown
    C) Object code (.o)
    D) Executable
 
-<details><summary>Answer</summary>**C)** The `-c` flag compiles and assembles but does not link, producing an object file.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** The `-c` flag compiles and assembles but does not link, producing an object file.</details>
 
 5. Which C standard introduced `//` comments and `long long`?
    A) K&R C
@@ -1611,7 +1611,7 @@ Game shutdown
    C) C99
    D) C11
 
-<details><summary>Answer</summary>**C)** C99 added single-line comments (`//`), `long long`, inline functions, and variable-length arrays.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** C99 added single-line comments (`//`), `long long`, inline functions, and variable-length arrays.</details>
 
 6. What is the output of `printf("%d", printf("Hi"))`?
    A) Hi
@@ -1619,7 +1619,7 @@ Game shutdown
    C) 2
    D) Compiler error
 
-<details><summary>Answer</summary>**B)** Inner `printf("Hi")` prints "Hi" and returns 2 (two characters). Outer `printf` takes this 2 and prints it with `%d`. Result: "Hi2".</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Inner `printf("Hi")` prints "Hi" and returns 2 (two characters). Outer `printf` takes this 2 and prints it with `%d`. Result: "Hi2".</details>
 
 7. Is `sizeof` a function or an operator?
    A) Function
@@ -1627,7 +1627,7 @@ Game shutdown
    C) Macro
    D) It depends on the context
 
-<details><summary>Answer</summary>**B)** `sizeof` is a compile-time unary operator. Parentheses are only required for type names (e.g., `sizeof(int)`), not expressions (`sizeof x`).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `sizeof` is a compile-time unary operator. Parentheses are only required for type names (e.g., `sizeof(int)`), not expressions (`sizeof x`).</details>
 
 8. Which of the following is NOT a valid identifier in C?
    A) `_count`
@@ -1635,7 +1635,7 @@ Game shutdown
    C) `1stPlace`
    D) `MAX_SIZE`
 
-<details><summary>Answer</summary>**C)** Identifiers cannot start with a digit.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Identifiers cannot start with a digit.</details>
 
 9. In the compilation pipeline, which stage converts assembly to machine code?
    A) Preprocessor
@@ -1643,7 +1643,7 @@ Game shutdown
    C) Assembler
    D) Linker
 
-<details><summary>Answer</summary>**C)** The assembler converts assembly language mnemonics into binary machine code (object file).</details>
+<details><summary>Answer&lt;/summary&gt;**C)** The assembler converts assembly language mnemonics into binary machine code (object file).</details>
 
 10. What is the correct format specifier to read a `double` with `scanf`?
     A) `%f`
@@ -1651,7 +1651,7 @@ Game shutdown
     C) `%d`
     D) `%Lf`
 
-<details><summary>Answer</summary>**B)** `%lf` is used for `double` in `scanf`. `%f` is for `float` in `scanf` (though both work for `printf` due to default promotion).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `%lf` is used for `double` in `scanf`. `%f` is for `float` in `scanf` (though both work for `printf` due to default promotion).</details>
 
 11. What happens when you compile `void main() { }` in C99 or later?
     A) It compiles without errors
@@ -1659,7 +1659,7 @@ Game shutdown
     C) It prints "Hello"
     D) It causes a segmentation fault
 
-<details><summary>Answer</summary>**B)** In C99+, `main` must return `int`. `void main()` is non-standard and produces a warning or error.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** In C99+, `main` must return `int`. `void main()` is non-standard and produces a warning or error.</details>
 
 12. What does the following program print? `printf("Hello\n"); printf("World");`
     A) HelloWorld
@@ -1667,9 +1667,9 @@ Game shutdown
     C) Hello World
     D) Hello (newline) World
 
-<details><summary>Answer</summary>**D)** The `\n` creates a newline after "Hello", so output is:
+<details><summary>Answer&lt;/summary&gt;**D)** The `\n` creates a newline after "Hello", so output is:
     Hello
-    World</details>
+    World&lt;/details&gt;
 
 13. Which of the following causes undefined behavior?
     A) `int x = 5; x = x + 1;`
@@ -1677,7 +1677,7 @@ Game shutdown
     C) `int x = 5 / 0;`
     D) `printf("Hello");`
 
-<details><summary>Answer</summary>**C)** Integer division by zero is undefined behavior. The program may crash or produce unexpected results.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Integer division by zero is undefined behavior. The program may crash or produce unexpected results.</details>
 
 14. What is the minimum number of elements required for a valid C program?
     A) A function called `main` that returns `int`
@@ -1685,7 +1685,7 @@ Game shutdown
     C) A variable declaration
     D) A comment
 
-<details><summary>Answer</summary>**A)** The minimum valid C program is a function named `main` that returns `int`. `#include` and header files are not strictly required if you don't use library functions.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** The minimum valid C program is a function named `main` that returns `int`. `#include` and header files are not strictly required if you don't use library functions.</details>
 
 15. In which C standard was `_Bool` introduced?
     A) C89
@@ -1693,7 +1693,7 @@ Game shutdown
     C) C11
     D) C17
 
-<details><summary>Answer</summary>**B)** `_Bool` was introduced in C99. The `bool` macro is defined in `<stdbool.h>`. In C23, `bool` became a keyword.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `_Bool` was introduced in C99. The `bool` macro is defined in `<stdbool.h>`. In C23, `bool` became a keyword.</details>
 
 ## Summary
 

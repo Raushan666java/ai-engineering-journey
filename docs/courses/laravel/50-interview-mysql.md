@@ -473,7 +473,7 @@ CREATE TABLE transactions (
 
 ### Q35: Should you store images or files in the database? Why or why not?
 
-**Answer:** Generally no → store files on disk or object storage (S3) and keep only the file path in the database. Reasons: database backups stay lean, streaming is faster from a CDN, and bloating the database hurts cache performance. Exceptions: very small files (avatars < 64KB) where transactional consistency with metadata matters.
+**Answer:** Generally no → store files on disk or object storage (S3) and keep only the file path in the database. Reasons: database backups stay lean, streaming is faster from a CDN, and bloating the database hurts cache performance. Exceptions: very small files (avatars &lt; 64KB) where transactional consistency with metadata matters.
 
 ### Q36: What is an enum column and what are its drawbacks?
 
@@ -1229,7 +1229,7 @@ SELECT * FROM users WHERE deleted_at IS NULL;
 - C) RIGHT JOIN
 - D) CROSS JOIN
 
-<details><summary>Answer</summary>B) INNER JOIN</details>
+<details><summary>Answer&lt;/summary&gt;B) INNER JOIN&lt;/details&gt;
 
 **Q2:** What is the third normal form (3NF)?
 - A) All columns are atomic
@@ -1237,7 +1237,7 @@ SELECT * FROM users WHERE deleted_at IS NULL;
 - C) All columns depend on the full primary key
 - D) All tables have a primary key
 
-<details><summary>Answer</summary>B) No transitive dependency on non-key attributes</details>
+<details><summary>Answer&lt;/summary&gt;B) No transitive dependency on non-key attributes&lt;/details&gt;
 
 **Q3:** Which isolation level prevents dirty reads?
 - A) READ UNCOMMITTED
@@ -1245,7 +1245,7 @@ SELECT * FROM users WHERE deleted_at IS NULL;
 - C) REPEATABLE READ
 - D) SERIALIZABLE
 
-<details><summary>Answer</summary>B) READ COMMITTED</details>
+<details><summary>Answer&lt;/summary&gt;B) READ COMMITTED&lt;/details&gt;
 
 **Q4:** What does EXPLAIN do in MySQL?
 - A) Runs the query
@@ -1253,4 +1253,4 @@ SELECT * FROM users WHERE deleted_at IS NULL;
 - C) Explains the table schema
 - D) Optimizes indexes
 
-<details><summary>Answer</summary>B) Shows the query execution plan</details>
+<details><summary>Answer&lt;/summary&gt;B) Shows the query execution plan&lt;/details&gt;

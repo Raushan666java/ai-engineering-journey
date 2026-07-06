@@ -111,11 +111,11 @@ END PROCEDURE
 ### C++ Implementation: Transaction Scheduler
 
 \`\`\`cpp
-#include <iostream>
-#include <vector>
-#include <unordered_map>
-#include <string>
-#include <stdexcept>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;unordered_map&gt;
+#include &lt;string&gt;
+#include &lt;stdexcept&gt;
 
 class Account {
 public:
@@ -126,8 +126,8 @@ public:
 
 class Transaction {
 private:
-    std::unordered_map<std::string, int> writeBuffer;
-    std::unordered_map<std::string, int> readSet;
+    std::unordered_map&lt;std::string, int&gt; writeBuffer;
+    std::unordered_map&lt;std::string, int&gt; readSet;
     bool active;
     bool aborted;
 
@@ -148,7 +148,7 @@ public:
         writeBuffer[acc.id] = newBalance;
     }
 
-    void commit(std::vector<Account>& accounts) {
+    void commit(std::vector&lt;Account&gt;& accounts) {
         if (aborted) throw std::runtime_error("Cannot commit aborted transaction");
         for (auto& [id, newBal] : writeBuffer) {
             for (auto& acc : accounts) {
@@ -160,21 +160,21 @@ public:
         }
         writeBuffer.clear();
         active = false;
-        std::cout << "Transaction COMMITTED.\n";
+        std::cout &lt;< "Transaction COMMITTED.\n";
     }
 
     void rollback() {
         writeBuffer.clear();
         aborted = true;
         active = false;
-        std::cout << "Transaction ROLLED BACK.\n";
+        std::cout &lt;< "Transaction ROLLED BACK.\n";
     }
 
     bool isActive() const { return active; }
 };
 
 int main() {
-    std::vector<Account> accounts = {
+    std::vector&lt;Account&gt; accounts = {
         Account("A100", 1000),
         Account("B200", 500)
     };
@@ -182,7 +182,7 @@ int main() {
     Transaction tx;
     try {
         int balA = tx.read(accounts[0]);
-        std::cout << "Read A100 balance: $" << balA << "\n";
+        std::cout &lt;< "Read A100 balance: $" << balA << "\n";
 
         if (balA >= 500) {
             tx.write(accounts[0], balA - 500);
@@ -194,11 +194,11 @@ int main() {
         }
     } catch (const std::exception& e) {
         tx.rollback();
-        std::cerr << "Error: " << e.what() << "\n";
+        std::cerr &lt;< "Error: " << e.what() << "\n";
     }
 
-    std::cout << "Final: A100=$" << accounts[0].balance
-              << ", B200=$" << accounts[1].balance << "\n";
+    std::cout &lt;< "Final: A100=$" << accounts[0].balance
+              << ", B200=$" << accounts[1].balance &lt;< "\n";
     return 0;
 }
 \`\`\`
@@ -733,12 +733,12 @@ Start DFS from T2: visit T3. No cycles.
 ### C++ Implementation: Conflict Serializability Checker
 
 \`\`\`cpp
-#include <iostream>
-#include <vector>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
 #include <map>
-#include <set>
-#include <string>
-#include <sstream>
+#include &lt;set&gt;
+#include &lt;string&gt;
+#include &lt;sstream&gt;
 
 enum OpType { READ, WRITE };
 
@@ -751,10 +751,10 @@ struct Operation {
 
 class PrecedenceGraph {
 private:
-    std::map<int, std::set<int>> adjList;
-    std::set<int> nodes;
+    std::map&lt;int, std::set<int&gt;> adjList;
+    std::set&lt;int&gt; nodes;
 
-    bool dfs(int node, std::set<int>& visited, std::set<int>& recStack) {
+    bool dfs(int node, std::set&lt;int&gt;& visited, std::set&lt;int&gt;& recStack) {
         visited.insert(node);
         recStack.insert(node);
         for (int neighbor : adjList[node]) {
@@ -777,8 +777,8 @@ public:
     }
 
     bool hasCycle() {
-        std::set<int> visited;
-        std::set<int> recStack;
+        std::set&lt;int&gt; visited;
+        std::set&lt;int&gt; recStack;
         for (int node : nodes) {
             if (visited.find(node) == visited.end()) {
                 if (dfs(node, visited, recStack))
@@ -789,19 +789,19 @@ public:
     }
 
     void printGraph() {
-        std::cout << "Precedence Graph:\n";
+        std::cout &lt;< "Precedence Graph:\n";
         for (auto& [node, neighbors] : adjList) {
-            std::cout << "  T" << node << " → ";
+            std::cout &lt;< "  T" << node << " → ";
             for (int n : neighbors)
-                std::cout << "T" << n << " ";
-            std::cout << "\n";
+                std::cout &lt;< "T" << n << " ";
+            std::cout &lt;< "\n";
         }
     }
 };
 
 class ConflictSerializabilityChecker {
 private:
-    std::vector<Operation> schedule;
+    std::vector&lt;Operation&gt; schedule;
 
 public:
     void addOperation(int txn, char op, char item) {
@@ -813,8 +813,8 @@ public:
         PrecedenceGraph graph;
         int n = schedule.size();
 
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
+        for (int i = 0; i &lt; n; i++) {
+            for (int j = i + 1; j &lt; n; j++) {
                 auto& op1 = schedule[i];
                 auto& op2 = schedule[j];
 
@@ -823,11 +823,11 @@ public:
 
                 if (op1.type == WRITE || op2.type == WRITE) {
                     graph.addEdge(op1.txnId, op2.txnId);
-                    std::cout << "Conflict: T" << op1.txnId
+                    std::cout &lt;< "Conflict: T" << op1.txnId
                               << (op1.type == READ ? " R(" : " W(")
-                              << op1.dataItem << ") → T" << op2.txnId
+                              << op1.dataItem &lt;< ") → T" << op2.txnId
                               << (op2.type == READ ? " R(" : " W(")
-                              << op2.dataItem << ")\n";
+                              << op2.dataItem &lt;< ")\n";
                 }
             }
         }
@@ -836,10 +836,10 @@ public:
         bool hasCycle = graph.hasCycle();
 
         if (hasCycle) {
-            std::cout << "Cycle detected! Schedule is NOT conflict-serializable.\n";
+            std::cout &lt;< "Cycle detected! Schedule is NOT conflict-serializable.\n";
             return false;
         } else {
-            std::cout << "No cycles. Schedule IS conflict-serializable.\n";
+            std::cout &lt;< "No cycles. Schedule IS conflict-serializable.\n";
             return true;
         }
     }
@@ -857,10 +857,10 @@ int main() {
     checker.addOperation(3, "R", "B");
 
     bool result = checker.isConflictSerializable();
-    std::cout << "Result: " << (result ? "SERIALIZABLE" : "NOT SERIALIZABLE") << "\n";
+    std::cout &lt;< "Result: " << (result ? "SERIALIZABLE" : "NOT SERIALIZABLE") << "\n";
 
     // Test a non-serializable schedule
-    std::cout << "\n--- Test 2: Non-Serializable Schedule ---\n";
+    std::cout &lt;< "\n--- Test 2: Non-Serializable Schedule ---\n";
     ConflictSerializabilityChecker checker2;
     // T1: R(A) W(B), T2: R(B) W(A)
     checker2.addOperation(1, "R", "A");
@@ -868,7 +868,7 @@ int main() {
     checker2.addOperation(2, "R", "B");
     checker2.addOperation(2, "W", "A");
     bool result2 = checker2.isConflictSerializable();
-    std::cout << "Result: " << (result2 ? "SERIALIZABLE" : "NOT SERIALIZABLE") << "\n";
+    std::cout &lt;< "Result: " << (result2 ? "SERIALIZABLE" : "NOT SERIALIZABLE") << "\n";
 
     return 0;
 }

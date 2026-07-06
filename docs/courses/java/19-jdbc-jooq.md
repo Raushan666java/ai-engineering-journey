@@ -2754,7 +2754,7 @@ class HybridApproachService {
    - D) Stored procedures
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) PreparedStatement with parameterized queries.** Parameterized queries ensure user input is never interpreted as SQL code.
 </details>
 
@@ -2765,7 +2765,7 @@ class HybridApproachService {
    - D) Result mapping
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Code generation from schema.** jOOQ generates Java classes matching your database schema, enabling type-safe query construction.
 </details>
 
@@ -2776,7 +2776,7 @@ class HybridApproachService {
    - D) 50
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) 10.** HikariCP defaults to a maximum of 10 connections in the pool.
 </details>
 

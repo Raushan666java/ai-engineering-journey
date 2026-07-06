@@ -1020,10 +1020,10 @@ console.log(checker.checkAll({ x: -1, y: 5 })); // 1 passed, 1 failed
 ### Challenge Problem
 
 A nuclear reactor control system has four states (STARTUP, POWER_OPERATION, SHUTDOWN, EMERGENCY) with the following constraints:
-- From STARTUP, can transition to POWER_OPERATION only if temperature < 300°C and pressure < 150 bar
+- From STARTUP, can transition to POWER_OPERATION only if temperature &lt; 300°C and pressure < 150 bar
 - From POWER_OPERATION, transition to SHUTDOWN if temperature > 350°C or pressure > 170 bar
 - From any state, transition to EMERGENCY if radiation > 100 µSv/h
-- From EMERGENCY, only transition to SHUTDOWN is allowed (after radiation < 10)
+- From EMERGENCY, only transition to SHUTDOWN is allowed (after radiation &lt; 10)
 - Never reach a state where both temperature > 400°C AND pressure > 200 bar simultaneously
 
 Formalise this system as an FSM with guards. Implement a TypeScript formal verifier that checks all reachable states for safety property violations. Generate counterexamples for any invalid configurations.

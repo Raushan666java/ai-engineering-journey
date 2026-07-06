@@ -2307,7 +2307,7 @@ class StressAndChaosTest {
 
 7. **JMeter Test Plan:** Create a JMeter test plan (programmatically or via GUI) that tests a Spring Boot API with: 100 concurrent users, ramp-up over 30 seconds, loop count of 10, GET and POST samplers, JSON response assertion, duration assertion (max 2s), and an aggregate report listener. Save the plan as a .jmx file.
 
-8. **Gatling Simulation:** Write a Gatling simulation that tests the order management API. Include: a CSV feeder for test data, a scenario for browsing orders (GET), a scenario for creating orders (POST), a scenario for admin operations (GET admin endpoints), injection profile with ramp-up and constant load, assertions for p95 < 2s and success rate > 99%. Run it with `mvn gatling:test`.
+8. **Gatling Simulation:** Write a Gatling simulation that tests the order management API. Include: a CSV feeder for test data, a scenario for browsing orders (GET), a scenario for creating orders (POST), a scenario for admin operations (GET admin endpoints), injection profile with ramp-up and constant load, assertions for p95 &lt; 2s and success rate &gt; 99%. Run it with `mvn gatling:test`.
 
 9. **Latency Percentiles:** Configure Micrometer to capture HTTP request latency percentiles (p50, p75, p90, p95, p99, p999). Write a load test that generates traffic and verify the percentiles appear in Prometheus format. Set SLO targets for each percentile and fail the test if any percentile exceeds its target.
 
@@ -2317,7 +2317,7 @@ class StressAndChaosTest {
 
 12. **Circuit Breaker + Chaos:** Add `@CircuitBreaker` with a fallback method to a service. Run a chaos experiment where Chaos Monkey injects exceptions into that service. Assert that the circuit breaker opens after 5 failures and the fallback method is invoked. Verify the circuit recovers to half-open and then closed state.
 
-13. **Stress Test Thresholds:** Define threshold constants (p95 < 2s, p99 < 5s, error rate < 1%, throughput > 100 rps). Write a Gatling simulation that includes these assertions. Run the simulation and force a threshold violation by increasing the load. Capture the assertion failure report.
+13. **Stress Test Thresholds:** Define threshold constants (p95 &lt; 2s, p99 < 5s, error rate < 1%, throughput &gt; 100 rps). Write a Gatling simulation that includes these assertions. Run the simulation and force a threshold violation by increasing the load. Capture the assertion failure report.
 
 14. **Spike Test:** Write a spike simulation that sends 1000 concurrent users to a `/api/search` endpoint within 2 seconds. Measure: success rate during the spike, recovery time after the spike, max latency during the spike, and whether the endpoint returns to baseline performance within 30 seconds.
 

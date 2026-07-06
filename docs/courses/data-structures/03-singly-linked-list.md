@@ -432,7 +432,7 @@ public void insertAt(int index, T value) {
 | **index == 0** | Delegates to `pushFront` → O(1). |
 | **index == count** | Delegates to `pushBack` → O(1) with tail ptr. |
 | **Empty list, index 0** | Delegated to `pushFront`, which handles empty list. |
-| **index < 0 or index > count** | Returns immediately → no operation. |
+| **index &lt; 0 or index &gt; count** | Returns immediately → no operation. |
 | **Single node, index 1** | Delegated to `pushBack`; tail pointer updated. |
 
 ---

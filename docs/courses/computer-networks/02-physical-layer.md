@@ -559,10 +559,10 @@ if __name__ == "__main__":
 
 | Edge Case | Problem | Mitigation |
 |-----------|---------|------------|
-| Zero bandwidth | Division by zero | Guard with if (bw <= 0) return error |
+| Zero bandwidth | Division by zero | Guard with if (bw &lt;= 0) return error |
 | Zero distance | No propagation delay | Valid for same-machine communication |
 | Long fat network | Very high BDP | TCP window scaling required |
-| Packet loss > 0 | Throughput << bandwidth | TCP congestion control kicks in |
+| Packet loss > 0 | Throughput &lt;< bandwidth | TCP congestion control kicks in |
 | Gigabit over 1m | D_trans dominates | Tune for serialization delay, not prop delay |
 | Speed of light limit | Absolute lower bound | Cannot beat physics |
 
@@ -623,7 +623,7 @@ Twisted pair cable consists of two insulated copper wires twisted together. Twis
 | Split pair | Wires not twisted per pair | Re-terminate following color code |
 | Impedance mismatch | Wrong connector or damage | Use same category throughout |
 | Pull tension > 25 lbs | Stretched conductors, degraded signal | Use proper pulling lubricant |
-| Bend radius < 4× diameter | Micro-cracks in conductor | Maintain minimum bend radius |
+| Bend radius &lt; 4× diameter | Micro-cracks in conductor | Maintain minimum bend radius |
 
 ### 2.4.2 Coaxial Cable
 
@@ -2332,7 +2332,7 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 | Mobile phones | Cellular (4G/5G) | Mobility is the requirement |
 | IoT sensor (low power) | BLE, Zigbee, LoRaWAN | Battery life, range > rate |
 | Wired IoT (PoE camera) | Cat 6 UTP | Power + data over same cable |
-| Satellite Internet | LEO (Starlink, Project Kuiper) | Global coverage, <20 ms latency |
+| Satellite Internet | LEO (Starlink, Project Kuiper) | Global coverage, &lt;20 ms latency |
 
 ---
 
@@ -2395,7 +2395,7 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 - D) Cat 8
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Cat 6a supports 10 Gbps at 100 m (Cat 6 only supports 10 Gbps to 55 m).
 </details>
 
@@ -2407,7 +2407,7 @@ C) Cat 6a supports 10 Gbps at 100 m (Cat 6 only supports 10 Gbps to 55 m).
 - D) No quality of service
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Circuit switching reserves resources regardless of usage, wasting capacity during silent periods.
 </details>
 
@@ -2419,7 +2419,7 @@ B) Circuit switching reserves resources regardless of usage, wasting capacity du
 - D) −17 dBm
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Attenuation = 0.2 × 50 = 10 dB. Received power = 3 dBm − 10 dB = −7 dBm.
 </details>
 
@@ -2431,7 +2431,7 @@ B) Attenuation = 0.2 × 50 = 10 dB. Received power = 3 dBm − 10 dB = −7 dBm.
 - D) CDM
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) DWDM — dense wavelength-division multiplexing with 0.8 nm or narrower channel spacing.
 </details>
 
@@ -2443,7 +2443,7 @@ C) DWDM — dense wavelength-division multiplexing with 0.8 nm or narrower chann
 - D) 15,000 bps
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 D) SNR_linear = 10^(15/10) ≈ 31.6. C = 3000 × log₂(1 + 31.6) = 3000 × log₂(32.6) ≈ 3000 × 5.03 ≈ 15,090 bps.
 </details>
 
@@ -2455,7 +2455,7 @@ D) SNR_linear = 10^(15/10) ≈ 31.6. C = 3000 × log₂(1 + 31.6) = 3000 × log�
 - D) 8B/10B
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 D) 8B/10B provides excellent DC balance and is used in Gigabit Ethernet, Fibre Channel, PCI Express, SATA, and USB 3.0.
 </details>
 
@@ -2467,7 +2467,7 @@ D) 8B/10B provides excellent DC balance and is used in Gigabit Ethernet, Fibre C
 - D) 14400 bps
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 D) 64-QAM = log₂(64) = 6 bits/symbol. Bit rate = 2400 × 6 = 14,400 bps.
 </details>
 
@@ -2479,7 +2479,7 @@ D) 64-QAM = log₂(64) = 6 bits/symbol. Bit rate = 2400 × 6 = 14,400 bps.
 - D) Frequency drift causes code misalignment
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The near-far problem occurs when a nearby transmitter's signal overwhelms the signal from a distant user. CDMA requires precise power control to ensure all signals arrive at the receiver with similar power.
 </details>
 

@@ -125,7 +125,7 @@ A002 balance: 400
 | 1 | `BankAccount acc1("A001", 1000.0)` | Constructor runs; accountId="A001", balance=1000.0 | {A001, 1000.0} | → |
 | 2 | `BankAccount acc2("A002", 500.0)` | Constructor runs; accountId="A002", balance=500.0 | {A001, 1000.0} | {A002, 500.0} |
 | 3 | `acc1.deposit(250.0)` | balance = 1000.0 + 250.0 = 1250.0 | {A001, 1250.0} | {A002, 500.0} |
-| 4 | `acc2.withdraw(100.0)` | 100.0 <= 500.0 → true; balance = 500.0 - 100.0 = 400.0 | {A001, 1250.0} | {A002, 400.0} |
+| 4 | `acc2.withdraw(100.0)` | 100.0 &lt;= 500.0 → true; balance = 500.0 - 100.0 = 400.0 | {A001, 1250.0} | {A002, 400.0} |
 | 5 | `acc1.getBalance()` | Returns 1250.0 | printed | → |
 | 6 | `acc2.getBalance()` | Returns 400.0 | → | printed |
 
@@ -2497,70 +2497,70 @@ The best programmers are **multi-paradigm** → they choose the right tool for t
    B) A blueprint that defines the structure of objects
    C) A function that operates on data structures
    D) A memory segment that stores variables
-   <details><summary>Answer</summary>**B)** A class is a compile-time blueprint. An object is the runtime instance.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** A class is a compile-time blueprint. An object is the runtime instance.</details>
 
 2. Which pillar of OOP is primarily responsible for data hiding?
    A) Inheritance
    B) Polymorphism
    C) Encapsulation
    D) Abstraction
-   <details><summary>Answer</summary>**C)** Encapsulation bundles data with methods and restricts direct access via access specifiers.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Encapsulation bundles data with methods and restricts direct access via access specifiers.</details>
 
 3. What does the `virtual` keyword in C++ enable?
    A) Function overloading
    B) Operator overloading
    C) Runtime polymorphism (dynamic dispatch)
    D) Template instantiation
-   <details><summary>Answer</summary>**C)** Virtual functions enable late binding through the v-table mechanism.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Virtual functions enable late binding through the v-table mechanism.</details>
 
 4. Which relationship is correctly modelled with inheritance?
    A) A Car HAS AN Engine
    B) A Department HAS Employees
    C) A Circle IS A Shape
    D) A Student HAS A Name
-   <details><summary>Answer</summary>**C)** "is-a" relationships use inheritance; "has-a" relationships use composition.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** "is-a" relationships use inheritance; "has-a" relationships use composition.</details>
 
 5. What problem does the Liskov Substitution Principle address?
    A) Memory leaks in derived classes
    B) Derived classes that break base class contracts
    C) Diamond inheritance ambiguity
    D) Compilation order of multiple base classes
-   <details><summary>Answer</summary>**B)** LSP states derived classes must be substitutable for their base. The Square-Rectangle problem is the classic example.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** LSP states derived classes must be substitutable for their base. The Square-Rectangle problem is the classic example.</details>
 
 6. Which of the following is NOT a benefit of OOP?
    A) Modularity
    B) Reusability
    C) Automatic parallelisation
    D) Maintainability
-   <details><summary>Answer</summary>**C)** OOP does not automatically parallelise code. Concurrency requires explicit design.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** OOP does not automatically parallelise code. Concurrency requires explicit design.</details>
 
 7. What is the difference between early binding and late binding?
    A) Early binding is faster; late binding is more flexible
    B) Early binding works with classes; late binding works with structs
    C) Early binding is used in Java; late binding is used in C++
    D) There is no difference
-   <details><summary>Answer</summary>**A)** Early binding (non-virtual) resolves at compile time; late binding (virtual) resolves at runtime.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** Early binding (non-virtual) resolves at compile time; late binding (virtual) resolves at runtime.</details>
 
 8. A pure virtual function is declared with:
    A) `virtual void f() {}`
    B) `void f() = 0;`
    C) `virtual void f() = 0;`
    D) `abstract void f();`
-   <details><summary>Answer</summary>**C)** `virtual void f() = 0;` declares a pure virtual function, making the class abstract.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** `virtual void f() = 0;` declares a pure virtual function, making the class abstract.</details>
 
 9. What is the diamond problem in C++?
    A) Circular dependency between two classes
    B) A class inheriting from two classes with a common ancestor
    C) An object that takes too much memory
    D) Two functions with the same name and parameters
-   <details><summary>Answer</summary>**B)** The diamond problem occurs with multiple inheritance where a class inherits from two classes sharing a common base, creating duplicate base sub-objects.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The diamond problem occurs with multiple inheritance where a class inherits from two classes sharing a common base, creating duplicate base sub-objects.</details>
 
 10. Which inheritance type changes public members to private in the derived class?
     A) `public` inheritance
     B) `protected` inheritance
     C) `private` inheritance
     D) `virtual` inheritance
-    <details><summary>Answer</summary>**C)** In `private` inheritance, all base members become private in the derived class.</details>
+    <details><summary>Answer&lt;/summary&gt;**C)** In `private` inheritance, all base members become private in the derived class.</details>
 
 ---
 

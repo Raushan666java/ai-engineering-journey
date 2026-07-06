@@ -243,7 +243,7 @@ class LambdaFunction {
     this.config = config;
   }
 
-  invoke(payload: Record<string, any>): string {
+  invoke(payload: Record&lt;string, any&gt;): string {
     this.invocations++;
     const startTime = Date.now();
     const isCold = this.invocations === 1;
@@ -259,7 +259,7 @@ class LambdaFunction {
   }
 
   private coldStartLatencyMs(): number {
-    const baseLatency = this.config.memorySize < 512 ? 800 : 400;
+    const baseLatency = this.config.memorySize &lt; 512 ? 800 : 400;
     return baseLatency + Math.random() * 400;
   }
 
@@ -345,7 +345,7 @@ interface S3EventContext {
   getRemainingTimeInMillis: () => number;
 }
 
-async function handler(event: S3Event, context: S3EventContext): Promise<{ statusCode: number; body: string }> {
+async function handler(event: S3Event, context: S3EventContext): Promise&lt;{ statusCode: number; body: string }&gt; {
   for (const record of event.Records) {
     const bucket = record.s3.bucket.name;
     const key = record.s3.object.key;
@@ -374,12 +374,12 @@ async function handler(event: S3Event, context: S3EventContext): Promise<{ statu
 interface APIGatewayEvent {
   httpMethod: string;
   path: string;
-  pathParameters: Record<string, string> | null;
-  queryStringParameters: Record<string, string> | null;
+  pathParameters: Record&lt;string, string&gt; | null;
+  queryStringParameters: Record&lt;string, string&gt; | null;
   body: string | null;
 }
 
-async function apiHandler(event: APIGatewayEvent): Promise<{ statusCode: number; headers: Record<string, string>; body: string }> {
+async function apiHandler(event: APIGatewayEvent): Promise&lt;{ statusCode: number; headers: Record<string, string&gt;; body: string }> {
   const headers = { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" };
 
   try {
@@ -450,7 +450,7 @@ async function apiHandler(event: APIGatewayEvent): Promise<{ statusCode: number;
    - D) 1 hour
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) 15 minutes.** AWS Lambda has a maximum execution timeout of 15 minutes (900 seconds). For longer-running tasks, use Step Functions or Fargate.
 </details>
 
@@ -461,7 +461,7 @@ async function apiHandler(event: APIGatewayEvent): Promise<{ statusCode: number;
    - D) The event payload is too large
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) A new execution environment must be created and initialized.** Cold starts happen when Lambda creates a new environment (downloads code, initializes runtime, runs static init code). Subsequent invocations reuse warm environments.
 </details>
 
@@ -472,7 +472,7 @@ async function apiHandler(event: APIGatewayEvent): Promise<{ statusCode: number;
    - D) EventBridge
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Step Functions.** Step Functions provides visual state machines for coordinating multi-step workflows with retries, error handling, and parallel execution. SQS/SNS are messaging services; EventBridge is an event bus.
 </details>
 
@@ -483,7 +483,7 @@ async function apiHandler(event: APIGatewayEvent): Promise<{ statusCode: number;
    - D) In CloudWatch Logs
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) In DynamoDB or ElastiCache.** Functions are stateless. /tmp and global scope are not durable across invocations. For persistent state, use external services like DynamoDB or ElastiCache.
 </details>
 
@@ -494,7 +494,7 @@ async function apiHandler(event: APIGatewayEvent): Promise<{ statusCode: number;
    - D) To increase the function timeout
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) To guarantee the function always has capacity, preventing throttling by other functions.** Reserved Concurrency allocates a specific portion of account concurrency to a function, protecting it from being throttled when other functions consume all available concurrency.
 </details>
 

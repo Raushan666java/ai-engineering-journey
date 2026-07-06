@@ -143,7 +143,7 @@ The `for` loop executes exactly `n` iterations in the worst case (target not fou
 - **Target not present:** Every element is examined — true worst case, exactly n iterations.
 - **Target at first position:** Best case O(1) — but Big-O describes worst case, so we still say O(n).
 - **Duplicate elements:** Search stops at first match. Still O(n) worst-case since the match might be last.
-- **Very small n (n < n₀):** Big-O guarantees only apply for n ≥ n₀. For tiny inputs, a quadratic algorithm may outperform linear — this is why hybrid sorts (Timsort) exist.
+- **Very small n (n &lt; n₀):** Big-O guarantees only apply for n ≥ n₀. For tiny inputs, a quadratic algorithm may outperform linear — this is why hybrid sorts (Timsort) exist.
 
 ---
 
@@ -970,7 +970,7 @@ An e-commerce system processes 1,000 orders/second:
 | \(O(g(n))\) | Upper bound | \(f(n) \leq c \cdot g(n)\) for \(n \geq n_0\) | Worst-case guarantee |
 | \(\Omega(g(n))\) | Lower bound | \(f(n) \geq c \cdot g(n)\) for \(n \geq n_0\) | Best-case analysis |
 | \(\Theta(g(n))\) | Tight bound | Both \(O\) and \(\Omega\) | Exact growth rate |
-| \(o(g(n))\) | Strict upper bound | \(f(n) < c \cdot g(n)\) for all \(c\) | Non-tight upper bound |
+| \(o(g(n))\) | Strict upper bound | \(f(n) &lt; c \cdot g(n)\) for all \(c\) | Non-tight upper bound |
 | \(\omega(g(n))\) | Strict lower bound | \(f(n) > c \cdot g(n)\) for all \(c\) | Non-tight lower bound |
 
 ## Quick Reference: Common Growth Rates

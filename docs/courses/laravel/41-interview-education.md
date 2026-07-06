@@ -890,7 +890,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only course content
 - D) Only user profiles
 
-<details><summary>Answer</summary>B) Courses, students, instructors, and content delivery</details>
+<details><summary>Answer&lt;/summary&gt;B) Courses, students, instructors, and content delivery&lt;/details&gt;
 
 **Q2:** What is the typical course content hierarchy?
 - A) Lessons -> Modules -> Courses
@@ -898,7 +898,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Courses -> Students -> Grades
 - D) Teachers -> Classes -> Exams
 
-<details><summary>Answer</summary>B) Modules -> Lessons -> Quizzes -> Assignments</details>
+<details><summary>Answer&lt;/summary&gt;B) Modules -> Lessons -> Quizzes -> Assignments&lt;/details&gt;
 
 **Q3:** What does the assessment engine typically support?
 - A) Only multiple choice questions
@@ -906,7 +906,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only essay grading
 - D) Only peer review
 
-<details><summary>Answer</summary>B) Auto-grading with multiple assessment types</details>
+<details><summary>Answer&lt;/summary&gt;B) Auto-grading with multiple assessment types&lt;/details&gt;
 
 **Q4:** What does student progress tracking measure?
 - A) Only time spent
@@ -914,7 +914,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only grades
 - D) Only attendance
 
-<details><summary>Answer</summary>B) Completion + skill mastery + engagement</details>
+<details><summary>Answer&lt;/summary&gt;B) Completion + skill mastery + engagement&lt;/details&gt;
 
 ---
 
@@ -965,7 +965,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only course content
 - D) Only user profiles
 
-<details><summary>Answer</summary>B) Courses, students, instructors, and content delivery</details>
+<details><summary>Answer&lt;/summary&gt;B) Courses, students, instructors, and content delivery&lt;/details&gt;
 
 **Q2:** What is the typical course content hierarchy?
 - A) Lessons -> Modules -> Courses
@@ -973,7 +973,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Courses -> Students -> Grades
 - D) Teachers -> Classes -> Exams
 
-<details><summary>Answer</summary>B) Modules -> Lessons -> Quizzes -> Assignments</details>
+<details><summary>Answer&lt;/summary&gt;B) Modules -> Lessons -> Quizzes -> Assignments&lt;/details&gt;
 
 **Q3:** What does the assessment engine typically support?
 - A) Only multiple choice questions
@@ -981,7 +981,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only essay grading
 - D) Only peer review
 
-<details><summary>Answer</summary>B) Auto-grading with multiple assessment types</details>
+<details><summary>Answer&lt;/summary&gt;B) Auto-grading with multiple assessment types&lt;/details&gt;
 
 **Q4:** What does student progress tracking measure?
 - A) Only time spent
@@ -989,7 +989,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only grades
 - D) Only attendance
 
-<details><summary>Answer</summary>B) Completion + skill mastery + engagement</details>
+<details><summary>Answer&lt;/summary&gt;B) Completion + skill mastery + engagement&lt;/details&gt;
 
 ---
 
@@ -1040,7 +1040,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only course content
 - D) Only user profiles
 
-<details><summary>Answer</summary>B) Courses, students, instructors, and content delivery</details>
+<details><summary>Answer&lt;/summary&gt;B) Courses, students, instructors, and content delivery&lt;/details&gt;
 
 **Q2:** What is the typical course content hierarchy?
 - A) Lessons -> Modules -> Courses
@@ -1048,7 +1048,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Courses -> Students -> Grades
 - D) Teachers -> Classes -> Exams
 
-<details><summary>Answer</summary>B) Modules -> Lessons -> Quizzes -> Assignments</details>
+<details><summary>Answer&lt;/summary&gt;B) Modules -> Lessons -> Quizzes -> Assignments&lt;/details&gt;
 
 **Q3:** What does the assessment engine typically support?
 - A) Only multiple choice questions
@@ -1056,7 +1056,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only essay grading
 - D) Only peer review
 
-<details><summary>Answer</summary>B) Auto-grading with multiple assessment types</details>
+<details><summary>Answer&lt;/summary&gt;B) Auto-grading with multiple assessment types&lt;/details&gt;
 
 **Q4:** What does student progress tracking measure?
 - A) Only time spent
@@ -1064,7 +1064,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only grades
 - D) Only attendance
 
-<details><summary>Answer</summary>B) Completion + skill mastery + engagement</details>
+<details><summary>Answer&lt;/summary&gt;B) Completion + skill mastery + engagement&lt;/details&gt;
 
 ---
 
@@ -1115,7 +1115,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only course content
 - D) Only user profiles
 
-<details><summary>Answer</summary>B) Courses, students, instructors, and content delivery</details>
+<details><summary>Answer&lt;/summary&gt;B) Courses, students, instructors, and content delivery&lt;/details&gt;
 
 **Q2:** What is the typical course content hierarchy?
 - A) Lessons -> Modules -> Courses
@@ -1123,7 +1123,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Courses -> Students -> Grades
 - D) Teachers -> Classes -> Exams
 
-<details><summary>Answer</summary>B) Modules -> Lessons -> Quizzes -> Assignments</details>
+<details><summary>Answer&lt;/summary&gt;B) Modules -> Lessons -> Quizzes -> Assignments&lt;/details&gt;
 
 **Q3:** What does the assessment engine typically support?
 - A) Only multiple choice questions
@@ -1131,7 +1131,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only essay grading
 - D) Only peer review
 
-<details><summary>Answer</summary>B) Auto-grading with multiple assessment types</details>
+<details><summary>Answer&lt;/summary&gt;B) Auto-grading with multiple assessment types&lt;/details&gt;
 
 **Q4:** What does student progress tracking measure?
 - A) Only time spent
@@ -1139,7 +1139,7 @@ The `ScoreDropoutRiskJob` calls the ML model via HTTP or reads ONNX model output
 - C) Only grades
 - D) Only attendance
 
-<details><summary>Answer</summary>B) Completion + skill mastery + engagement</details>
+<details><summary>Answer&lt;/summary&gt;B) Completion + skill mastery + engagement&lt;/details&gt;
 
 ## Summary
 

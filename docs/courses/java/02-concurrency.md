@@ -1135,7 +1135,7 @@ The `java.util.concurrent` package provides collections designed for concurrent 
 
 `ConcurrentHashMap` is the go-to concurrent map. Key design points in Java 8+:
 
-- **Internal structure:** array of bins (Node<K,V>[]). Each bin is a linked list or tree (when bin depth â‰¥ 8).
+- **Internal structure:** array of bins (Node&lt;K,V&gt;[]). Each bin is a linked list or tree (when bin depth â‰¥ 8).
 - **Locking:** fine-grained → individual bins are locked using `synchronized` (Java 8+) rather than the entire map.
 - **Resize:** resizing is done concurrently by multiple threads (the "transfer" phase).
 - **Iteration:** weakly consistent → iterators reflect the state at creation but can tolerate concurrent modifications without throwing `ConcurrentModificationException`.
@@ -3063,7 +3063,7 @@ class DiningPhilosophers {
    - D) The thread terminates
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) The thread releases the intrinsic lock on that object and waits.** `wait()` must be called from a synchronized block. The thread releases the lock and enters WAITING state until notified.
 </details>
 
@@ -3074,7 +3074,7 @@ class DiningPhilosophers {
    - D) static
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) volatile.** volatile guarantees that writes to a variable are visible to all threads, but does not provide atomicity for compound operations like increment.
 </details>
 
@@ -3085,7 +3085,7 @@ class DiningPhilosophers {
    - D) They automatically parallelize all operations
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) They are lightweight — millions can run on a single OS thread.** Virtual threads are managed by the JVM and are not tied to OS threads, allowing high concurrency with low memory footprint.
 </details>
 
@@ -3096,7 +3096,7 @@ class DiningPhilosophers {
    - D) `poll()`
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) `put()`.** `put()` blocks until space becomes available, while `offer()` returns false if no space is available.
 </details>
 
@@ -3107,7 +3107,7 @@ class DiningPhilosophers {
    - D) A synchronization primitive
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) A variable that has a separate copy for each thread.** ThreadLocal provides per-thread variable instances, useful for thread confinement patterns.
 </details>
 

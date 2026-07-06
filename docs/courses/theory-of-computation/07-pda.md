@@ -476,7 +476,7 @@ function pdaToCFG(
 - D) Counter
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** A PDA extends an NFA with a stack (LIFO memory), enabling recognition of context-free languages.
 </details>
 
@@ -487,7 +487,7 @@ function pdaToCFG(
 - D) Both equivalent to DFA
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Deterministic and nondeterministic PDA are NOT equivalent. Some CFLs require nondeterminism.
 </details>
 
@@ -498,7 +498,7 @@ function pdaToCFG(
 - D) Both simultaneously
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** Acceptance by final state and acceptance by empty stack are equivalent definitions.
 </details>
 
@@ -509,7 +509,7 @@ function pdaToCFG(
 - D) A Turing machine only
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Every CFG has an equivalent PDA (and vice versa) — this is a fundamental theorem.
 </details>
 
@@ -520,7 +520,7 @@ function pdaToCFG(
 - D) Regular expression
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** The PDA must nondeterministically guess the midpoint — a DPDA cannot.
 </details>
 
@@ -692,22 +692,22 @@ console.log(cfgPDA.states.size); // 3
 
 class IDTracer {
   private pda: {
-    states: Set<string>; inputAlphabet: Set<string>; stackAlphabet: Set<string>;
-    rules: Array<{ state: string; input: string; stackTop: string; nextState: string; stackOp: string }>;
-    startState: string; startStack: string; acceptStates: Set<string>;
+    states: Set&lt;string&gt;; inputAlphabet: Set&lt;string&gt;; stackAlphabet: Set&lt;string&gt;;
+    rules: Array&lt;{ state: string; input: string; stackTop: string; nextState: string; stackOp: string }&gt;;
+    startState: string; startStack: string; acceptStates: Set&lt;string&gt;;
   };
 
   constructor(pda: {
-    states: Set<string>; inputAlphabet: Set<string>; stackAlphabet: Set<string>;
-    rules: Array<{ state: string; input: string; stackTop: string; nextState: string; stackOp: string }>;
-    startState: string; startStack: string; acceptStates: Set<string>;
+    states: Set&lt;string&gt;; inputAlphabet: Set&lt;string&gt;; stackAlphabet: Set&lt;string&gt;;
+    rules: Array&lt;{ state: string; input: string; stackTop: string; nextState: string; stackOp: string }&gt;;
+    startState: string; startStack: string; acceptStates: Set&lt;string&gt;;
   }) {
     this.pda = pda;
   }
 
   // Trace all IDs (configurations) for a given input
-  trace(input: string): Array<{ state: string; remainingInput: string; stack: string[] }> {
-    const ids: Array<{ state: string; remainingInput: string; stack: string[] }> = [];
+  trace(input: string): Array&lt;{ state: string; remainingInput: string; stack: string[] }&gt; {
+    const ids: Array&lt;{ state: string; remainingInput: string; stack: string[] }&gt; = [];
     let currentState = this.pda.startState;
     let remaining = input;
     let stack = [this.pda.startStack];
@@ -766,7 +766,7 @@ class IDTracer {
     const output: string[] = [];
     output.push(`ID Trace for input "${input}":`);
     output.push("-".repeat(50));
-    for (let i = 0; i < ids.length; i++) {
+    for (let i = 0; i &lt; ids.length; i++) {
       const id = ids[i];
       const stackStr = `[${id.stack.join("")}]`;
       output.push(`ID ${i}: (${id.state}, ${id.remainingInput || "e"}, ${stackStr})`);

@@ -180,9 +180,9 @@ The annual State of DevOps report by DORA (DevOps Research and Assessment) ident
 - Westrum organizational culture
 
 **Performance classification:**
-- **Elite:** Multiple deploys per day, lead time < 1 hour, MTTR < 1 hour, change failure rate < 5%
-- **High:** Deploys per week/month, lead time < 1 day, MTTR < 1 day, change failure rate < 10%
-- **Medium:** Deploys per month, lead time < 1 week, MTTR < 1 week, change failure rate < 15%
+- **Elite:** Multiple deploys per day, lead time &lt; 1 hour, MTTR < 1 hour, change failure rate < 5%
+- **High:** Deploys per week/month, lead time &lt; 1 day, MTTR < 1 day, change failure rate < 10%
+- **Medium:** Deploys per month, lead time &lt; 1 week, MTTR < 1 week, change failure rate < 15%
 - **Low:** Deploys per month/quarter, lead time > 1 month, MTTR > 1 month, change failure rate > 15%
 
 ---
@@ -466,15 +466,15 @@ timer.startStage('Build'); setTimeout(() => { timer.endStage(); timer.startStage
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What does CALMS stand for?</summary>**A)** Collaboration, Automation, Lean, Metrics, Security<br>**B)** Culture, Automation, Lean, Measurement, Sharing<br>**C)** Culture, Agility, Lean, Monitoring, Security<br>**D)** Code, Automation, Lean, Metrics, Standards<br><br>**Answer: B)** Culture, Automation, Lean, Measurement, Sharing</details>
+<details><summary>Question 1: What does CALMS stand for?</summary>**A)** Collaboration, Automation, Lean, Metrics, Security<br>**B)** Culture, Automation, Lean, Measurement, Sharing<br>**C)** Culture, Agility, Lean, Monitoring, Security<br>**D)** Code, Automation, Lean, Metrics, Standards<br><br>**Answer: B)** Culture, Automation, Lean, Measurement, Sharing&lt;/details&gt;
 
-<details><summary>Question 2: What is the 'Wall of Confusion'?</summary>**A)** A network security barrier<br>**B)** The communication gap between Dev and Ops teams<br>**C)** A type of firewall configuration<br>**D)** A database deadlock scenario<br><br>**Answer: B)** The communication gap between Dev and Ops teams</details>
+<details><summary>Question 2: What is the 'Wall of Confusion'?</summary>**A)** A network security barrier<br>**B)** The communication gap between Dev and Ops teams<br>**C)** A type of firewall configuration<br>**D)** A database deadlock scenario<br><br>**Answer: B)** The communication gap between Dev and Ops teams&lt;/details&gt;
 
-<details><summary>Question 3: Which of the Three Ways focuses on optimizing flow?</summary>**A)** The First Way<br>**B)** The Second Way<br>**C)** The Third Way<br>**D)** None of the above<br><br>**Answer: A)** The First Way</details>
+<details><summary>Question 3: Which of the Three Ways focuses on optimizing flow?</summary>**A)** The First Way<br>**B)** The Second Way<br>**C)** The Third Way<br>**D)** None of the above<br><br>**Answer: A)** The First Way&lt;/details&gt;
 
-<details><summary>Question 4: What is value stream mapping used for?</summary>**A)** Creating network diagrams<br>**B)** Visualizing steps from idea to deployed software<br>**C)** Monitoring production systems<br>**D)** Writing automated tests<br><br>**Answer: B)** Visualizing steps from idea to deployed software</details>
+<details><summary>Question 4: What is value stream mapping used for?</summary>**A)** Creating network diagrams<br>**B)** Visualizing steps from idea to deployed software<br>**C)** Monitoring production systems<br>**D)** Writing automated tests<br><br>**Answer: B)** Visualizing steps from idea to deployed software&lt;/details&gt;
 
-<details><summary>Question 5: According to DORA, what characterizes Elite performers?</summary>**A)** Monthly deployments<br>**B)** Multiple deploys per day<br>**C)** Quarterly releases<br>**D)** Annual releases<br><br>**Answer: B)** Multiple deploys per day</details>
+<details><summary>Question 5: According to DORA, what characterizes Elite performers?</summary>**A)** Monthly deployments<br>**B)** Multiple deploys per day<br>**C)** Quarterly releases<br>**D)** Annual releases<br><br>**Answer: B)** Multiple deploys per day&lt;/details&gt;
 
 ---
 
@@ -487,11 +487,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -499,7 +499,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

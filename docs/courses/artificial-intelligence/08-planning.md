@@ -821,7 +821,7 @@ Given a plan and a domain, does executing the plan from the initial state achiev
 - C) B depends on A's delete list
 - D) A and B are mutually exclusive
 
-<details><summary>Answer</summary>B) A causal link A→B means action A achieves proposition p that is a precondition for action B.</details>
+<details><summary>Answer&lt;/summary&gt;B) A causal link A→B means action A achieves proposition p that is a precondition for action B.</details>
 
 **Q2:** Why might GraphPlan be preferred over forward state-space search?
 - A) It always finds shorter plans
@@ -829,7 +829,7 @@ Given a plan and a domain, does executing the plan from the initial state achiev
 - C) It does not need action definitions
 - D) It handles continuous state spaces
 
-<details><summary>Answer</summary>B) GraphPlan's planning graph compactly represents all possible action sequences up to a given length with polynomial-time construction.</details>
+<details><summary>Answer&lt;/summary&gt;B) GraphPlan's planning graph compactly represents all possible action sequences up to a given length with polynomial-time construction.</details>
 
 **Q3:** What is the key advantage of HTN planning over classical STRIPS planning?
 - A) HTN is always faster
@@ -837,7 +837,7 @@ Given a plan and a domain, does executing the plan from the initial state achiev
 - C) HTN does not require action preconditions
 - D) HTN guarantees optimal plans
 
-<details><summary>Answer</summary>B) HTN decomposes high-level tasks into subtasks via methods, mirroring how humans break complex problems into manageable steps.</details>
+<details><summary>Answer&lt;/summary&gt;B) HTN decomposes high-level tasks into subtasks via methods, mirroring how humans break complex problems into manageable steps.</details>
 
 **Q4:** What makes SATPlan different from other planning approaches?
 - A) It does not need action definitions
@@ -845,7 +845,7 @@ Given a plan and a domain, does executing the plan from the initial state achiev
 - C) It always finds optimal plans
 - D) It works only in continuous domains
 
-<details><summary>Answer</summary>B) SATPlan transforms the planning problem of fixed horizon k into a propositional SAT formula and leverages a SAT solver to find a satisfying assignment.</details>
+<details><summary>Answer&lt;/summary&gt;B) SATPlan transforms the planning problem of fixed horizon k into a propositional SAT formula and leverages a SAT solver to find a satisfying assignment.</details>
 
 **Q5:** In the ignore-delete-lists heuristic, why is the relaxed problem always solvable?
 - A) Because all actions become no-ops
@@ -853,7 +853,7 @@ Given a plan and a domain, does executing the plan from the initial state achiev
 - C) Because the heuristic ignores preconditions
 - D) Because delete lists are irrelevant for planning
 
-<details><summary>Answer</summary>B) Removing delete effects ensures actions only add propositions — they never undo progress — guaranteeing monotonic growth toward any reachable goal.</details>
+<details><summary>Answer&lt;/summary&gt;B) Removing delete effects ensures actions only add propositions — they never undo progress — guaranteeing monotonic growth toward any reachable goal.</details>
 
 ## 8.8 Summary
 

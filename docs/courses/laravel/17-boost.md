@@ -761,35 +761,35 @@ Test your understanding of Laravel Boost.
    - B) Routes, controllers, and views
    - C) Cache, sessions, and queues
    - D) Migrations, seeders, and factories
-   <details><summary>Answer</summary>**A)** Tools, vectorized docs, and AI guidelines are the three pillars of Boost.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** Tools, vectorized docs, and AI guidelines are the three pillars of Boost.</details>
 
 2. How does Boost ensure version-accurate code generation?
    - A) By reading the Laravel blog
    - B) By querying `composer.json` and targeting the matching documentation bundle
    - C) By asking the developer which version they use
    - D) By always targeting the latest Laravel version
-   <details><summary>Answer</summary>**B)** Boost reads the installed package version from `composer.json` and queries the matching documentation bundle.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Boost reads the installed package version from `composer.json` and queries the matching documentation bundle.</details>
 
 3. Which file formats does Boost accept for custom guidelines?
    - A) Only `.md` files
    - B) Only `.json` files
    - C) `.md` and `.blade.php` files
    - D) `.md`, `.blade.php`, and `.php` files
-   <details><summary>Answer</summary>**C)** Boost accepts `.md` and `.blade.php` files in the `.ai/guidelines/` directory.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Boost accepts `.md` and `.blade.php` files in the `.ai/guidelines/` directory.</details>
 
 4. Which AI coding agents does Boost integrate with?
    - A) Only Cursor
    - B) Cursor, Claude Code, OpenCode, and GitHub Copilot
    - C) Only Claude Code
    - D) All available IDE extensions
-   <details><summary>Answer</summary>**B)** Boost supports Cursor, Claude Code, OpenCode, and GitHub Copilot with specific integration mechanisms for each.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Boost supports Cursor, Claude Code, OpenCode, and GitHub Copilot with specific integration mechanisms for each.</details>
 
 5. What command verifies Boost is properly configured?
    - A) `php artisan boost:status`
    - B) `php artisan boost:check`
    - C) `php artisan boost:verify`
    - D) `php artisan boost:inspect`
-   <details><summary>Answer</summary>**B)** `php artisan boost:check` displays the full Boost status including version, tools, guidelines, and docs vectors.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** `php artisan boost:check` displays the full Boost status including version, tools, guidelines, and docs vectors.</details>
 
 
 ## Summary

@@ -2764,54 +2764,54 @@ public:
    B) Multilevel inheritance
    C) Multiple inheritance where bases share a common ancestor
    D) Hierarchical inheritance
-   <details><summary>Answer</summary>**C)** When a class inherits from two classes that share a common ancestor, the diamond shape is created.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** When a class inherits from two classes that share a common ancestor, the diamond shape is created.</details>
 
 2. What is the correct construction order for `D` if `B` and `C` virtually inherit `A`?
    A) B, C, A, D
    B) A, B, C, D
    C) D, A, B, C
    D) A is constructed first regardless
-   <details><summary>Answer</summary>**B)** Virtual bases are constructed first (A), then non-virtual bases in declaration order (B, C), then D's body.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Virtual bases are constructed first (A), then non-virtual bases in declaration order (B, C), then D's body.</details>
 
 3. Which statement about object slicing is true?
    A) Object slicing is prevented by virtual inheritance
    B) Object slicing occurs when passing by reference
    C) Object slicing occurs when a derived object is copied to a base by value
    D) Object slicing only happens with multiple inheritance
-   <details><summary>Answer</summary>**C)** Slicing happens on by-value copy → the derived portion is lost.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Slicing happens on by-value copy → the derived portion is lost.</details>
 
 4. Which cast is appropriate for safe downcasting?
    A) static_cast
    B) reinterpret_cast
    C) dynamic_cast
    D) const_cast
-   <details><summary>Answer</summary>**C)** dynamic_cast performs a runtime check and returns nullptr on failure.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** dynamic_cast performs a runtime check and returns nullptr on failure.</details>
 
 5. What does the `final` specifier on a class do?
    A) Makes all members const
    B) Prevents the class from being used as a base
    C) Forces all functions to be virtual
    D) Automatically generates a virtual destructor
-   <details><summary>Answer</summary>**B)** `final` on a class means it cannot be inherited from.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** `final` on a class means it cannot be inherited from.</details>
 
 6. In private inheritance, what happens to base public members?
    A) They become public
    B) They become protected
    C) They become private
    D) They become inaccessible
-   <details><summary>Answer</summary>**C)** In private inheritance, all base public and protected members become private.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** In private inheritance, all base public and protected members become private.</details>
 
 7. True or False: A virtual function called from a base constructor will invoke the derived override.
    A) True
    B) False
-   <details><summary>Answer</summary>**B)** False. During base construction, the derived portion doesn't exist, so the base version is called.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** False. During base construction, the derived portion doesn't exist, so the base version is called.</details>
 
 8. Which is NOT a valid reason to use virtual inheritance?
    A) Resolving the diamond problem
    B) Reducing object size
    C) Sharing a common base in multiple inheritance
    D) Allowing the most-derived class to initialise the shared base
-   <details><summary>Answer</summary>**B)** Virtual inheritance increases object size due to vbase pointers.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Virtual inheritance increases object size due to vbase pointers.</details>
 
 ---
 

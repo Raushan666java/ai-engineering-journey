@@ -908,7 +908,7 @@ Dinic runs in \( O(V^2 E) \) general, \( O(E \sqrt{V}) \) for unit-capacity netw
 **Algorithm Steps:**
 
 1. Preprocess: Push flow from source to all neighbors (source is at height \( n \)).
-2. While there exists an active vertex (excess flow > 0 and height < \( n \)):
+2. While there exists an active vertex (excess flow > 0 and height &lt; \( n \)):
    a. **Push:** If there's a neighbor with lower height, push min(excess, residual capacity) units along the edge.
    b. **Relabel:** If no valid push is possible, increase the vertex's height to 1 + min height of any neighbor with residual capacity.
 3. Return the flow at the sink.
@@ -1563,7 +1563,7 @@ Max flow = maximum number of routes assigned. With 500 drivers and 500 routes, D
 - D) A segment tree
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The `ptr[i]` current-edge pointer prevents re-scanning dead edges during DFS in the level graph.
 </details>
 
@@ -1575,7 +1575,7 @@ B) The `ptr[i]` current-edge pointer prevents re-scanning dead edges during DFS 
 - D) By using Fibonacci heaps
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) BFS ensures each edge is saturated at most O(V) times, giving O(VE^2) bound.
 </details>
 
@@ -1587,7 +1587,7 @@ B) BFS ensures each edge is saturated at most O(V) times, giving O(VE^2) bound.
 - D) Count the number of augmenting paths
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) After max flow, vertices reachable from s in the residual define a cut whose capacity equals the flow value.
 </details>
 
@@ -1599,7 +1599,7 @@ B) After max flow, vertices reachable from s in the residual define a cut whose 
 - D) Push-Relabel
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 D) Push-Relabel at \( O(V^2 \sqrt{E}) \) is the best for dense graphs where \( E \approx V^2 \).
 </details>
 
@@ -1611,7 +1611,7 @@ D) Push-Relabel at \( O(V^2 \sqrt{E}) \) is the best for dense graphs where \( E
 - D) Always \( E - V + 1 \)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The max-flow min-cut theorem states the min cut capacity equals the max flow value.
 </details>
 

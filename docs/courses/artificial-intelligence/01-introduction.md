@@ -617,7 +617,7 @@ public class LinearRegression {
 
 1. **Algorithmic Bias** — AI systems learn from historical data; if that data contains societal biases (racism, sexism, classism), the AI amplifies them.
    - **Example:** Amazon's hiring AI (trained on 10 years of resumes, mostly men) learned to penalize resumes containing "women's" keywords like "women's chess club captain."
-   - **Example:** Facial recognition systems have higher error rates for people with darker skin (up to 35% error vs <1% for light skin).
+   - **Example:** Facial recognition systems have higher error rates for people with darker skin (up to 35% error vs &lt;1% for light skin).
 
 2. **The Alignment Problem** — How do we ensure that AI systems do what we *want* (not what we literally *say*)?
    - **Example:** A robot told to "clean the floor" should not turn the cat into fertilizer (literally "cleaning" the floor of all organic matter).
@@ -908,7 +908,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) Acting Rationally
 - D) Thinking Rationally
 
-<details><summary>Answer</summary>C) Acting Rationally — the dominant paradigm in modern AI research focuses on agents that make optimal decisions to achieve the best expected outcome.</details>
+<details><summary>Answer&lt;/summary&gt;C) Acting Rationally — the dominant paradigm in modern AI research focuses on agents that make optimal decisions to achieve the best expected outcome.</details>
 
 **Q2:** What was the key significance of the 1956 Dartmouth workshop?
 - A) The first neural network was built
@@ -916,7 +916,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) The Turing Test was proposed
 - D) The first expert system was developed
 
-<details><summary>Answer</summary>B) The Dartmouth workshop is widely recognized as the birth of AI as a formal field of study.</details>
+<details><summary>Answer&lt;/summary&gt;B) The Dartmouth workshop is widely recognized as the birth of AI as a formal field of study.</details>
 
 **Q3:** Which historical period saw the rise of knowledge-based systems applied to specific domains?
 - A) The Gestation Period (1943-1955)
@@ -924,7 +924,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) Expert Systems (1969-1988)
 - D) The Modern Era (1987-Present)
 
-<details><summary>Answer</summary>C) The Expert Systems period (1969-1988) saw the rise of knowledge-based systems like MYCIN and DENDRAL applied to narrow domains.</details>
+<details><summary>Answer&lt;/summary&gt;C) The Expert Systems period (1969-1988) saw the rise of knowledge-based systems like MYCIN and DENDRAL applied to narrow domains.</details>
 
 **Q4:** Which AI subfield is primarily concerned with how machines can interpret and understand visual information?
 - A) Natural Language Processing
@@ -932,7 +932,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) Reinforcement Learning
 - D) Knowledge Representation
 
-<details><summary>Answer</summary>B) Computer Vision — the subfield dedicated to enabling machines to interpret visual data such as images and videos.</details>
+<details><summary>Answer&lt;/summary&gt;B) Computer Vision — the subfield dedicated to enabling machines to interpret visual data such as images and videos.</details>
 
 **Q5:** What is the "alignment problem" in AI safety?
 - A) Ensuring neural network layers are properly aligned
@@ -940,7 +940,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) Aligning AI hardware with software interfaces
 - D) Making AI systems run on both CPU and GPU
 
-<details><summary>Answer</summary>B) The alignment problem is the challenge of ensuring AI systems do what humans *intend* (not what they literally *say*), illustrated by examples like specification gaming and reward hacking.</details>
+<details><summary>Answer&lt;/summary&gt;B) The alignment problem is the challenge of ensuring AI systems do what humans *intend* (not what they literally *say*), illustrated by examples like specification gaming and reward hacking.</details>
 
 **Q6:** Which of the following is NOT one of the foundational disciplines of AI?
 - A) Philosophy
@@ -948,7 +948,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) Astronomy
 - D) Neuroscience
 
-<details><summary>Answer</summary>C) Astronomy — while astronomy benefits from AI, it is not a foundational discipline. The traditional foundations are philosophy, mathematics, economics, neuroscience, computer science, and linguistics.</details>
+<details><summary>Answer&lt;/summary&gt;C) Astronomy — while astronomy benefits from AI, it is not a foundational discipline. The traditional foundations are philosophy, mathematics, economics, neuroscience, computer science, and linguistics.</details>
 
 **Q7:** What was the key innovation of the Transformer architecture (2017)?
 - A) Convolutional layers for image recognition
@@ -956,7 +956,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) Backpropagation algorithm
 - D) Support vector machines
 
-<details><summary>Answer</summary>B) The Transformer introduced the self-attention mechanism, replacing recurrent neural networks and enabling parallel processing of sequences, which became the foundation for GPT, BERT, and all modern LLMs.</details>
+<details><summary>Answer&lt;/summary&gt;B) The Transformer introduced the self-attention mechanism, replacing recurrent neural networks and enabling parallel processing of sequences, which became the foundation for GPT, BERT, and all modern LLMs.</details>
 
 **Q8:** What distinguishes reinforcement learning from supervised learning?
 - A) RL learns from labeled examples; supervised learning learns from rewards
@@ -964,7 +964,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) There is no difference
 - D) RL requires neural networks; supervised learning does not
 
-<details><summary>Answer</summary>B) Reinforcement learning uses rewards and punishments from environment interactions (trial-and-error), while supervised learning uses pre-labeled training examples.</details>
+<details><summary>Answer&lt;/summary&gt;B) Reinforcement learning uses rewards and punishments from environment interactions (trial-and-error), while supervised learning uses pre-labeled training examples.</details>
 
 ---
 

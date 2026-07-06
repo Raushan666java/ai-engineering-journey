@@ -1124,7 +1124,7 @@ GloVe learns embeddings by factorizing the word co-occurrence matrix.
 
 **Algorithm Steps:**
 1. Build matrix X where Xij = times word j appears in context of word i.
-2. Apply weighting function f(Xij) = (Xij / 100)^0.75 if Xij < 100, else 1.
+2. Apply weighting function f(Xij) = (Xij / 100)^0.75 if Xij &lt; 100, else 1.
 3. Learn vectors wi, w̃j and biases bi, b̃j to satisfy:
    wi · w̃j + bi + b̃j ≈ log(Xij)
 4. Minimize weighted least squares error.
@@ -1619,7 +1619,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) It only works for bigrams
 - D) It guarantees integer counts
 
-<details><summary>Answer</summary>B) Kneser-Ney uses absolute discounting and interpolation with lower-order models, producing much better probability estimates for unseen n-grams than add-1 smoothing.</details>
+<details><summary>Answer&lt;/summary&gt;B) Kneser-Ney uses absolute discounting and interpolation with lower-order models, producing much better probability estimates for unseen n-grams than add-1 smoothing.</details>
 
 **Q2:** What is the key advantage of CRFs over HMMs for sequence labeling?
 - A) CRFs are faster to train
@@ -1627,7 +1627,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) CRFs require less training data
 - D) CRFs always produce higher accuracy
 
-<details><summary>Answer</summary>B) CRFs are discriminative and can use arbitrary overlapping features, while HMMs require independence assumptions between observations given the state.</details>
+<details><summary>Answer&lt;/summary&gt;B) CRFs are discriminative and can use arbitrary overlapping features, while HMMs require independence assumptions between observations given the state.</details>
 
 **Q3:** The CKY algorithm requires the grammar to be in what normal form?
 - A) Greibach Normal Form
@@ -1635,7 +1635,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) Kuroda Normal Form
 - D) Backus-Naur Form
 
-<details><summary>Answer</summary>B) CKY parsing requires the CFG to be in Chomsky Normal Form (rules are A → BC or A → w).</details>
+<details><summary>Answer&lt;/summary&gt;B) CKY parsing requires the CFG to be in Chomsky Normal Form (rules are A → BC or A → w).</details>
 
 **Q4:** Which word embedding method can produce vectors for out-of-vocabulary words at inference time?
 - A) Word2Vec
@@ -1643,7 +1643,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) FastText
 - D) Both A and B
 
-<details><summary>Answer</summary>C) FastText uses character n-grams, so it can compose embeddings for unseen words even if the full word was not in the training vocabulary.</details>
+<details><summary>Answer&lt;/summary&gt;C) FastText uses character n-grams, so it can compose embeddings for unseen words even if the full word was not in the training vocabulary.</details>
 
 **Q5:** What is the primary advantage of the Transformer architecture over RNNs?
 - A) Lower memory usage
@@ -1651,7 +1651,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) Smaller model size
 - D) Better for streaming data
 
-<details><summary>Answer</summary>B) The Transformer processes all tokens in parallel (no sequential recurrence) and avoids vanishing gradients through direct attention connections between any two positions.</details>
+<details><summary>Answer&lt;/summary&gt;B) The Transformer processes all tokens in parallel (no sequential recurrence) and avoids vanishing gradients through direct attention connections between any two positions.</details>
 
 **Q6:** BERT is pre-trained using which two objectives?
 - A) Language modeling and translation
@@ -1659,7 +1659,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) Classification and generation
 - D) Autoencoding and autoregression
 
-<details><summary>Answer</summary>B) BERT uses MLM (predict masked tokens) and NSP (predict if two sentences are consecutive) for pre-training.</details>
+<details><summary>Answer&lt;/summary&gt;B) BERT uses MLM (predict masked tokens) and NSP (predict if two sentences are consecutive) for pre-training.</details>
 
 **Q7:** What does BIO encoding stand for in sequence labeling?
 - A) Binary, Inside, Outside
@@ -1667,7 +1667,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) Beginning, Inward, Outward
 - D) Basic, Indexed, Ordered
 
-<details><summary>Answer</summary>B) BIO: Beginning marks the first token of an entity, Inside marks continuation, Outside marks non-entity tokens.</details>
+<details><summary>Answer&lt;/summary&gt;B) BIO: Beginning marks the first token of an entity, Inside marks continuation, Outside marks non-entity tokens.</details>
 
 **Q8:** Why does the Transformer use multi-head attention instead of single-head?
 - A) Multi-head is faster computationally
@@ -1675,7 +1675,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) Multi-head uses less memory
 - D) It allows smaller hidden dimensions
 
-<details><summary>Answer</summary>B) Different heads specialize in different relationships — one head may capture syntactic dependencies, another captures semantic similarity, another captures positional information.</details>
+<details><summary>Answer&lt;/summary&gt;B) Different heads specialize in different relationships — one head may capture syntactic dependencies, another captures semantic similarity, another captures positional information.</details>
 
 **Q9:** What is the role of positional encoding in Transformers?
 - A) It encodes the position of the sentence in the document
@@ -1683,7 +1683,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) It helps with memory management
 - D) It encodes the length of the sequence
 
-<details><summary>Answer</summary>B) Self-attention processes all tokens simultaneously with no inherent order. Positional encoding injects sequence position information into the model.</details>
+<details><summary>Answer&lt;/summary&gt;B) Self-attention processes all tokens simultaneously with no inherent order. Positional encoding injects sequence position information into the model.</details>
 
 **Q10:** Which of the following best describes the difference between stemming and lemmatization?
 - A) Stemming is faster but less accurate; lemmatization is slower but produces real words
@@ -1691,7 +1691,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) Stemming is only for English; lemmatization works for all languages
 - D) There is no practical difference
 
-<details><summary>Answer</summary>A) Stemming uses heuristic rules (fast, rough), lemmatization uses vocabulary/morphology (slower, precise output is a real word).</details>
+<details><summary>Answer&lt;/summary&gt;A) Stemming uses heuristic rules (fast, rough), lemmatization uses vocabulary/morphology (slower, precise output is a real word).</details>
 
 ## Summary
 

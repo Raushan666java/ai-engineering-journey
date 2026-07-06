@@ -551,15 +551,15 @@ if (trace) {
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What are the three pillars of observability?</summary>**A)** Build, Test, Deploy<br>**B)** Logs, Metrics, Traces<br>**C)** CPU, Memory, Disk<br>**D)** Dev, Staging, Prod<br><br>**Answer: B)** Logs, Metrics, Traces</details>
+<details><summary>Question 1: What are the three pillars of observability?</summary>**A)** Build, Test, Deploy<br>**B)** Logs, Metrics, Traces<br>**C)** CPU, Memory, Disk<br>**D)** Dev, Staging, Prod<br><br>**Answer: B)** Logs, Metrics, Traces&lt;/details&gt;
 
-<details><summary>Question 2: What does RED stand for?</summary>**A)** Resource, Error, Debug<br>**B)** Rate, Errors, Duration<br>**C)** Reliable, Efficient, Durable<br>**D)** Request, Execute, Deliver<br><br>**Answer: B)** Rate, Errors, Duration</details>
+<details><summary>Question 2: What does RED stand for?</summary>**A)** Resource, Error, Debug<br>**B)** Rate, Errors, Duration<br>**C)** Reliable, Efficient, Durable<br>**D)** Request, Execute, Deliver<br><br>**Answer: B)** Rate, Errors, Duration&lt;/details&gt;
 
-<details><summary>Question 3: What happens when error budget is exhausted?</summary>**A)** System shuts down<br>**B)** Releases are halted until budget recovers<br>**C)** SLA penalties apply automatically<br>**D)** Monitoring is disabled<br><br>**Answer: B)** Releases are halted until budget recovers</details>
+<details><summary>Question 3: What happens when error budget is exhausted?</summary>**A)** System shuts down<br>**B)** Releases are halted until budget recovers<br>**C)** SLA penalties apply automatically<br>**D)** Monitoring is disabled<br><br>**Answer: B)** Releases are halted until budget recovers&lt;/details&gt;
 
-<details><summary>Question 4: What protocol does OpenTelemetry use for context propagation?</summary>**A)** HTTP headers<br>**B)** W3C Trace-Context<br>**C)** gRPC metadata<br>**D)** Custom headers<br><br>**Answer: B)** W3C Trace-Context</details>
+<details><summary>Question 4: What protocol does OpenTelemetry use for context propagation?</summary>**A)** HTTP headers<br>**B)** W3C Trace-Context<br>**C)** gRPC metadata<br>**D)** Custom headers<br><br>**Answer: B)** W3C Trace-Context&lt;/details&gt;
 
-<details><summary>Question 5: What is the difference between head-based and tail-based sampling?</summary>**A)** Head-based samples at root span; tail-based after trace completes<br>**B)** Head-based is faster but less selective<br>**C)** Tail-based keeps interesting traces (errors, high latency)<br>**D)** All of the above<br><br>**Answer: D)** All of the above</details>
+<details><summary>Question 5: What is the difference between head-based and tail-based sampling?</summary>**A)** Head-based samples at root span; tail-based after trace completes<br>**B)** Head-based is faster but less selective<br>**C)** Tail-based keeps interesting traces (errors, high latency)<br>**D)** All of the above<br><br>**Answer: D)** All of the above&lt;/details&gt;
 
 ---
 
@@ -752,11 +752,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -764,7 +764,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

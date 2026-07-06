@@ -847,15 +847,15 @@ console.log('=== Dev Override ===\n' + gen.generate(gen.generateDevConfig(prod))
 
 ## Chapter Quiz
 
-<details><summary>Question 1: How do services in a Compose file resolve each other?</summary>**A)** By IP address only<br>**B)** By service name (DNS)<br>**C)** By container ID<br>**D)** By hostname in environment variables<br><br>**Answer: B)** By service name (DNS)</details>
+<details><summary>Question 1: How do services in a Compose file resolve each other?</summary>**A)** By IP address only<br>**B)** By service name (DNS)<br>**C)** By container ID<br>**D)** By hostname in environment variables<br><br>**Answer: B)** By service name (DNS)&lt;/details&gt;
 
-<details><summary>Question 2: What is the purpose of `depends_on` with `condition: service_healthy`?</summary>**A)** To start services in alphabetical order<br>**B)** To wait until the dependency's health check passes before starting<br>**C)** To share health status across services<br>**D)** To restart unhealthy services<br><br>**Answer: B)** To wait until the dependency's health check passes before starting</details>
+<details><summary>Question 2: What is the purpose of `depends_on` with `condition: service_healthy`?</summary>**A)** To start services in alphabetical order<br>**B)** To wait until the dependency's health check passes before starting<br>**C)** To share health status across services<br>**D)** To restart unhealthy services<br><br>**Answer: B)** To wait until the dependency's health check passes before starting&lt;/details&gt;
 
-<details><summary>Question 3: How do you load the `.env` file in Docker Compose?</summary>**A)** It must be explicitly loaded with `--env-file`<br>**B)** It is auto-loaded from the project directory<br>**C)** Environment variables cannot be used in Compose<br>**D)** It must be sourced in the shell first<br><br>**Answer: B)** It is auto-loaded from the project directory</details>
+<details><summary>Question 3: How do you load the `.env` file in Docker Compose?</summary>**A)** It must be explicitly loaded with `--env-file`<br>**B)** It is auto-loaded from the project directory<br>**C)** Environment variables cannot be used in Compose<br>**D)** It must be sourced in the shell first<br><br>**Answer: B)** It is auto-loaded from the project directory&lt;/details&gt;
 
-<details><summary>Question 4: What does the `internal: true` network option do?</summary>**A)** Makes the network faster<br>**B)** Prevents external network access, providing isolation for backend services<br>**C)** Enables IPv6<br>**D)** Connects to the host network<br><br>**Answer: B)** Prevents external network access, providing isolation for backend services</details>
+<details><summary>Question 4: What does the `internal: true` network option do?</summary>**A)** Makes the network faster<br>**B)** Prevents external network access, providing isolation for backend services<br>**C)** Enables IPv6<br>**D)** Connects to the host network<br><br>**Answer: B)** Prevents external network access, providing isolation for backend services&lt;/details&gt;
 
-<details><summary>Question 5: How do you start only specific services from a compose file?</summary>**A)** `docker compose start service1 service2`<br>**B)** `docker compose up --profile dev`<br>**C)** `docker compose run service1`<br>**D)** All of the above<br><br>**Answer: D)** All of the above</details>
+<details><summary>Question 5: How do you start only specific services from a compose file?</summary>**A)** `docker compose start service1 service2`<br>**B)** `docker compose up --profile dev`<br>**C)** `docker compose run service1`<br>**D)** All of the above<br><br>**Answer: D)** All of the above&lt;/details&gt;
 
 ---
 
@@ -868,11 +868,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -880,7 +880,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

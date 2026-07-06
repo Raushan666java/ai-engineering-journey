@@ -2766,28 +2766,28 @@ class Kernel extends ConsoleKernel
    - B) AES-256
    - C) RSA
    - D) MD5
-   <details><summary>Answer</summary>**B)** AES-256 encryption is required for protected health information at rest.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** AES-256 encryption is required for protected health information at rest.</details>
 
 2. How should AI clinical recommendations be presented?
    - A) As mandatory instructions
    - B) As suggestions with the clinician making the final decision
    - C) As automated actions
    - D) As optional reading
-   <details><summary>Answer</summary>**B)** AI recommendations are presented as suggestions, with clinicians making the final decision.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** AI recommendations are presented as suggestions, with clinicians making the final decision.</details>
 
 3. What is the purpose of medical RAG?
    - A) Generate patient summaries
    - B) Retrieve relevant medical literature for clinical context
    - C) Schedule appointments
    - D) Process claims
-   <details><summary>Answer</summary>**B)** Medical RAG retrieves relevant literature from a vector store to support clinical decisions.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Medical RAG retrieves relevant literature from a vector store to support clinical decisions.</details>
 
 4. Why must all PHI access be audited?
    - A) Performance monitoring
    - B) HIPAA compliance and security
    - C) Billing purposes
    - D) Staff evaluation
-   <details><summary>Answer</summary>**B)** HIPAA requires audit trails for all access to protected health information.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** HIPAA requires audit trails for all access to protected health information.</details>
 
 ## Summary
 

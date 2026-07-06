@@ -124,7 +124,7 @@ interface WorkloadAssessment {
 }
 
 function recommendStrategy(assessment: WorkloadAssessment): MigrationStrategy {
-  if (assessment.complianceRequired && assessment.cloudNativeValue < 5) {
+  if (assessment.complianceRequired && assessment.cloudNativeValue &lt; 5) {
     return "retain";
   }
 
@@ -132,7 +132,7 @@ function recommendStrategy(assessment: WorkloadAssessment): MigrationStrategy {
     return "repurchase";
   }
 
-  if (assessment.cloudNativeValue >= 8 && assessment.technicalComplexity <= 4) {
+  if (assessment.cloudNativeValue >= 8 && assessment.technicalComplexity &lt;= 4) {
     return "refactor";
   }
 
@@ -172,7 +172,7 @@ graph TB
         B1[Backup & Restore<br/>RTO: hours, RPO: 24h<br/>Cost: Low]
         B2[Pilot Light<br/>RTO: ~10 min, RPO: few min<br/>Cost: Medium]
         B3[Warm Standby<br/>RTO: ~5 min, RPO: seconds<br/>Cost: High]
-        B4[Multi-Site Active/Active<br/>RTO: <1 min, RPO: near-zero<br/>Cost: Very High]
+        B4[Multi-Site Active/Active<br/>RTO: &lt;1 min, RPO: near-zero<br/&gt;Cost: Very High]
     end
     
     B1 --> B2 --> B3 --> B4
@@ -407,7 +407,7 @@ interface WARReview {
 function generateReviewActions(review: WARReview): string[] {
   const actions: string[] = [];
   for (const pillar of review.pillars) {
-    if (pillar.score < 5) {
+    if (pillar.score &lt; 5) {
       actions.push("CRITICAL: " + pillar.pillar + " pillar score " + pillar.score);
       actions.push("  Risks: " + pillar.risks.join(", "));
       actions.push("  Fix: " + pillar.recommendations.join("; "));
@@ -478,7 +478,7 @@ console.log(generateReviewActions(review).join("\n"));
    - D) Sustainability
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Performance Efficiency.** Performance Efficiency focuses on using computing resources efficiently through right-sizing, serverless, caching, and CDN. Sustainability focuses on environmental impact, not resource efficiency.
 </details>
 
@@ -489,7 +489,7 @@ console.log(generateReviewActions(review).join("\n"));
    - D) Repurchase
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Rehost (Lift & Shift).** Rehost moves applications as-is to the cloud with minimal changes. It's the fastest strategy with the lowest effort but provides the least cloud-native benefit.
 </details>
 
@@ -500,7 +500,7 @@ console.log(generateReviewActions(review).join("\n"));
    - D) RTO applies to compute; RPO applies to storage
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) RTO is downtime tolerance; RPO is data loss tolerance.** RTO (Recovery Time Objective) is the maximum acceptable downtime. RPO (Recovery Point Objective) is the maximum acceptable data loss measured in time.
 </details>
 
@@ -511,7 +511,7 @@ console.log(generateReviewActions(review).join("\n"));
    - D) Multi-Site Active/Active
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **D) Multi-Site Active/Active.** Active/Active runs full production in two regions simultaneously, providing sub-minute RTO and near-zero RPO. It is also the most expensive strategy.
 </details>
 
@@ -522,7 +522,7 @@ console.log(generateReviewActions(review).join("\n"));
    - D) All services must use the same programming language
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Each service has its own database.** Microservices follow the "database per service" pattern to ensure loose coupling. Sharing a database between services creates tight coupling and defeats the purpose of microservices.
 </details>
 

@@ -361,7 +361,7 @@ public class HotSwapClassLoader extends ClassLoader {
         this.classRoot = classRoot;
     }
 
-    public Class<?> loadClass(String name, boolean forceReload) throws ClassNotFoundException {
+    public Class&lt;?> loadClass(String name, boolean forceReload) throws ClassNotFoundException {
         if (!name.startsWith("com.example")) {
             return super.loadClass(name);
         }
@@ -405,8 +405,8 @@ public class DelegationDemo {
         URLClassLoader loader1 = new URLClassLoader(urls, null);
         URLClassLoader loader2 = new URLClassLoader(urls, null);
 
-        Class<?> class1 = loader1.loadClass("com.example.jvm.classloading.SampleClass");
-        Class<?> class2 = loader2.loadClass("com.example.jvm.classloading.SampleClass");
+        Class&lt;?> class1 = loader1.loadClass("com.example.jvm.classloading.SampleClass");
+        Class&lt;?> class2 = loader2.loadClass("com.example.jvm.classloading.SampleClass");
 
         System.out.println("Are they the same class? " + (class1 == class2));
         System.out.println("Loader 1: " + class1.getClassLoader());
@@ -527,8 +527,8 @@ public class HeapDemo {
         System.out.println("Total memory: " + rt.totalMemory() / 1024 / 1024 + " MB");
         System.out.println("Free memory: " + rt.freeMemory() / 1024 / 1024 + " MB");
 
-        List<Allocation> survivors = new ArrayList<>();
-        for (int i = 0; i < 1000; i++) {
+        List&lt;Allocation&gt; survivors = new ArrayList&lt;>();
+        for (int i = 0; i &lt; 1000; i++) {
             survivors.add(new Allocation(1024 * 10));
         }
 
@@ -546,7 +546,7 @@ public class HeapDemo {
 
         System.out.println("\n=== Allocation Failure (OOM simulation) ===");
         try {
-            List<byte[]> bigList = new ArrayList<>();
+            List&lt;byte[]&gt; bigList = new ArrayList&lt;>();
             while (true) {
                 bigList.add(new byte[1024 * 1024]);
             }
@@ -631,7 +631,7 @@ public class DirectMemoryDemo {
         System.out.println("Buffer capacity: " + directBuf.capacity() / ONE_MB + " MB");
         System.out.println("Buffer isDirect: " + directBuf.isDirect());
 
-        for (int i = 0; i < directBuf.capacity() / 4; i++) {
+        for (int i = 0; i &lt; directBuf.capacity() / 4; i++) {
             directBuf.putInt(i);
         }
         directBuf.flip();
@@ -641,7 +641,7 @@ public class DirectMemoryDemo {
 
         ByteBuffer heapBuf = ByteBuffer.allocate(64 * ONE_MB);
         long start = System.nanoTime();
-        for (int i = 0; i < iterations; i++) {
+        for (int i = 0; i &lt; iterations; i++) {
             heapBuf.clear();
             heapBuf.putInt(42);
         }
@@ -649,7 +649,7 @@ public class DirectMemoryDemo {
         System.out.println("\nHeap buffer write time: " + (end - start) / 1_000_000 + " ms");
 
         start = System.nanoTime();
-        for (int i = 0; i < iterations; i++) {
+        for (int i = 0; i &lt; iterations; i++) {
             directBuf.clear();
             directBuf.putInt(42);
         }
@@ -794,10 +794,10 @@ import java.util.function.Function;
 public class LambdaBytecode {
 
     public static void main(String[] args) {
-        Function<String, String> upper = s -> s.toUpperCase();
+        Function&lt;String, String&gt; upper = s -> s.toUpperCase();
         System.out.println(upper.apply("hello"));
 
-        Function<String, Integer> len = String::length;
+        Function&lt;String, Integer&gt; len = String::length;
         System.out.println(len.apply("world"));
     }
 }
@@ -823,7 +823,7 @@ public class JITDemo {
 
     public static long computeFactorial(int n) {
         long result = 1;
-        for (int i = 2; i <= n; i++) {
+        for (int i = 2; i &lt;= n; i++) {
             result *= i;
         }
         return result;
@@ -834,14 +834,14 @@ public class JITDemo {
         System.out.println("Warm up: calling computeFactorial in a loop...");
 
         long start = System.nanoTime();
-        for (int i = 0; i < 200_000; i++) {
+        for (int i = 0; i &lt; 200_000; i++) {
             computeFactorial(20);
         }
         long end = System.nanoTime();
         System.out.println("Warm-up time: " + (end - start) / 1_000_000 + " ms");
 
         start = System.nanoTime();
-        for (int i = 0; i < 200_000; i++) {
+        for (int i = 0; i &lt; 200_000; i++) {
             computeFactorial(20);
         }
         end = System.nanoTime();
@@ -882,7 +882,7 @@ public class HotspotDetection {
     public static void main(String[] args) {
         System.out.println("Run with -XX:+PrintCompilation to see hotspot compilation\n");
 
-        for (int i = 0; i < ITERATIONS; i++) {
+        for (int i = 0; i &lt; ITERATIONS; i++) {
             hotMethod(i);
         }
 
@@ -891,7 +891,7 @@ public class HotspotDetection {
 
     private static int hotMethod(int n) {
         int result = 0;
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i &lt; 100; i++) {
             if ((n + i) % 2 == 0) {
                 result += (n * i) / (1 + (i % 10));
             } else {
@@ -916,7 +916,7 @@ public class InliningDemo {
         System.out.println("Run with -XX:+PrintInlining to see inlining decisions\n");
 
         int total = 0;
-        for (int i = 0; i < 100_000; i++) {
+        for (int i = 0; i &lt; 100_000; i++) {
             total += processValue(i);
         }
         System.out.println("Result: " + total);
@@ -963,16 +963,16 @@ public class EscapeAnalysisDemo {
 
     private static long computeSum(int size) {
         long sum = 0;
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i &lt; size; i++) {
             Point p = new Point(i, i + 1);
             sum += p.distanceSquared();
         }
         return sum;
     }
 
-    private static List<Point> collectPoints(int size) {
-        List<Point> points = new ArrayList<>();
-        for (int i = 0; i < size; i++) {
+    private static List&lt;Point&gt; collectPoints(int size) {
+        List&lt;Point&gt; points = new ArrayList&lt;>();
+        for (int i = 0; i &lt; size; i++) {
             points.add(new Point(i, i + 1));
         }
         return points;
@@ -982,15 +982,15 @@ public class EscapeAnalysisDemo {
         System.out.println("=== Escape Analysis Demo ===\n");
 
         long sum = 0;
-        for (int i = 0; i < 20_000; i++) sum += computeSum(1000);
+        for (int i = 0; i &lt; 20_000; i++) sum += computeSum(1000);
 
         long start = System.nanoTime();
-        for (int i = 0; i < 50_000; i++) sum += computeSum(1000);
+        for (int i = 0; i &lt; 50_000; i++) sum += computeSum(1000);
         long eaEnabled = System.nanoTime() - start;
         System.out.println("Non-escaping allocation: " + eaEnabled / 1_000_000 + " ms");
 
         start = System.nanoTime();
-        for (int i = 0; i < 50_000; i++) sum += collectPoints(1000).size();
+        for (int i = 0; i &lt; 50_000; i++) sum += collectPoints(1000).size();
         long escaping = System.nanoTime() - start;
         System.out.println("Escaping allocation: " + escaping / 1_000_000 + " ms");
 
@@ -1017,7 +1017,7 @@ public class OnStackReplacement {
         long result = 0;
         long lastTime = System.nanoTime();
 
-        for (int i = 0; i < 500_000_000; i++) {
+        for (int i = 0; i &lt; 500_000_000; i++) {
             result += compute(i);
             if (i > 0 && i % 100_000_000 == 0) {
                 long now = System.nanoTime();
@@ -1033,7 +1033,7 @@ public class OnStackReplacement {
 
     private static int compute(int n) {
         int sum = 0;
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i &lt; 50; i++) {
             sum += (n * (i + 1)) / (1 + (n % 10));
             sum ^= (sum >>> 16);
             sum *= 0x45d9f3b;
@@ -1076,7 +1076,7 @@ public class GraalJITDemo {
 
         long result = 0;
         long start = System.nanoTime();
-        for (int i = 0; i < 100_000; i++) {
+        for (int i = 0; i &lt; 100_000; i++) {
             result += heavyComputation(i, 200);
         }
         long end = System.nanoTime();
@@ -1086,11 +1086,11 @@ public class GraalJITDemo {
 
     private static int heavyComputation(int seed, int iterations) {
         int hash = seed;
-        for (int i = 0; i < iterations; i++) {
+        for (int i = 0; i &lt; iterations; i++) {
             hash = hash * 31 + i;
-            hash ^= (hash << 13);
+            hash ^= (hash &lt;< 13);
             hash ^= (hash >>> 17);
-            hash ^= (hash << 5);
+            hash ^= (hash &lt;< 5);
         }
         return hash;
     }
@@ -1121,18 +1121,18 @@ public class HeapLayoutDemo {
     public static void main(String[] args) throws Exception {
         System.out.println("=== Heap Generation Layout ===\n");
 
-        List<MediumObject> young = new ArrayList<>();
-        for (int i = 0; i < 20; i++) young.add(new MediumObject(i));
+        List&lt;MediumObject&gt; young = new ArrayList&lt;>();
+        for (int i = 0; i &lt; 20; i++) young.add(new MediumObject(i));
         printHeap("After Eden allocation");
 
-        List<MediumObject> survivors = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
+        List&lt;MediumObject&gt; survivors = new ArrayList&lt;>();
+        for (int i = 0; i &lt; 100; i++) {
             survivors.add(new MediumObject(i));
             new MediumObject(i + 1000);
         }
         printHeap("After allocation + discard");
 
-        for (int i = 0; i < 5; i++) { System.gc(); Thread.sleep(200); }
+        for (int i = 0; i &lt; 5; i++) { System.gc(); Thread.sleep(200); }
         printHeap("After GC cycles");
 
         System.out.println("\n--- Pool Details ---");
@@ -1201,7 +1201,7 @@ public class ObjectMemoryLayout {
         System.out.println("  double/long > int/float > short/char > byte/boolean");
     }
 
-    private static long getOffset(Class<?> clazz, String fieldName) {
+    private static long getOffset(Class&lt;?> clazz, String fieldName) {
         try {
             Field f = clazz.getDeclaredField(fieldName);
             return UNSAFE.objectFieldOffset(f);
@@ -1353,15 +1353,15 @@ public class GCAlgorithmsDemo {
         System.out.println("2. Compute new addresses (compact)");
         System.out.println("3. Update all references\n");
 
-        List<GCObject> roots = new ArrayList<>();
+        List&lt;GCObject&gt; roots = new ArrayList&lt;>();
         Random rng = new Random(42);
 
-        for (int cycle = 0; cycle < 5; cycle++) {
+        for (int cycle = 0; cycle &lt; 5; cycle++) {
             int count = 100_000 / (cycle + 1);
-            for (int i = 0; i < count; i++) {
+            for (int i = 0; i &lt; count; i++) {
                 roots.add(new GCObject(i, 100 + rng.nextInt(900)));
             }
-            for (int i = 0; i < roots.size() / 2; i++) {
+            for (int i = 0; i &lt; roots.size() / 2; i++) {
                 roots.set(rng.nextInt(roots.size()), null);
             }
             roots.removeIf(java.util.Objects::isNull);
@@ -1403,7 +1403,7 @@ public class GCRootsDemo {
         new GCRootsDemo("unreachable");
 
         GCRootsDemo strongRef = new GCRootsDemo("weak-target");
-        WeakReference<GCRootsDemo> weakRef = new WeakReference<>(strongRef);
+        WeakReference&lt;GCRootsDemo&gt; weakRef = new WeakReference&lt;>(strongRef);
         System.out.println("Weak ref before nulling strong: " + weakRef.get().label);
         strongRef = null;
 
@@ -1446,7 +1446,7 @@ public class SerialGCDemo {
         System.out.println("Run: -XX:+UseSerialGC\n");
         System.out.println("Use cases:");
         System.out.println("  - Single-processor machines");
-        System.out.println("  - Heap < ~100 MB");
+        System.out.println("  - Heap &lt; ~100 MB");
         System.out.println("  - Client-side apps\n");
         System.out.println("Characteristics:");
         System.out.println("  - Stop-the-world (all threads paused)");
@@ -1454,9 +1454,9 @@ public class SerialGCDemo {
         System.out.println("  - Major GC: mark-compact for Old Gen");
         System.out.println("  - Single GC thread\n");
 
-        List<Allocation> list = new ArrayList<>();
-        for (int i = 0; i < 500; i++) list.add(new Allocation());
-        for (int i = 0; i < 200; i++) list.set(i, null);
+        List&lt;Allocation&gt; list = new ArrayList&lt;>();
+        for (int i = 0; i &lt; 500; i++) list.add(new Allocation());
+        for (int i = 0; i &lt; 200; i++) list.set(i, null);
         System.gc();
         System.out.println("GC events visible in -XX:+PrintGCDetails output.");
     }
@@ -1482,7 +1482,7 @@ public class ParallelGCDemo {
         @Override
         public void run() {
             double[] data = new double[100_000];
-            for (int i = 0; i < data.length; i++) {
+            for (int i = 0; i &lt; data.length; i++) {
                 data[i] = Math.sin(i) * Math.cos(i) * Math.tan(i);
                 counter.increment();
             }
@@ -1503,7 +1503,7 @@ public class ParallelGCDemo {
         CountDownLatch latch = new CountDownLatch(numThreads);
 
         long start = System.nanoTime();
-        for (int i = 0; i < numThreads; i++) new Thread(new Task(totalOps, latch)).start();
+        for (int i = 0; i &lt; numThreads; i++) new Thread(new Task(totalOps, latch)).start();
         latch.await();
         long end = System.nanoTime();
         System.out.println("Completed " + totalOps.sum() + " operations in "
@@ -1511,8 +1511,8 @@ public class ParallelGCDemo {
 
         System.out.println("Flags:");
         System.out.println("-XX:ParallelGCThreads=N");
-        System.out.println("-XX:MaxGCPauseMillis=<N>");
-        System.out.println("-XX:GCTimeRatio=<N>");
+        System.out.println("-XX:MaxGCPauseMillis=&lt;N>");
+        System.out.println("-XX:GCTimeRatio=&lt;N>");
         System.out.println("-XX:+UseAdaptiveSizePolicy (ergonomics)");
     }
 }
@@ -1536,13 +1536,13 @@ public class G1GCDemo {
     }
 
     static class Application {
-        private final Map<String, RegionObject> cache = new ConcurrentHashMap<>();
+        private final Map&lt;String, RegionObject&gt; cache = new ConcurrentHashMap&lt;>();
         private final Random rng = new Random(42);
         private long opCount = 0;
 
         void runIteration() {
             opCount++;
-            for (int i = 0; i < 100; i++) new RegionObject(100 + rng.nextInt(900));
+            for (int i = 0; i &lt; 100; i++) new RegionObject(100 + rng.nextInt(900));
             if (opCount % 10 == 0) cache.put(UUID.randomUUID().toString(), new RegionObject(1024));
             if (opCount % 100 == 0) {
                 cache.put("p-" + (opCount / 100), new RegionObject(4096));
@@ -1556,7 +1556,7 @@ public class G1GCDemo {
         System.out.println("Run: -XX:+UseG1GC\n");
 
         Application app = new Application();
-        for (int i = 0; i < 2000; i++) app.runIteration();
+        for (int i = 0; i &lt; 2000; i++) app.runIteration();
         System.out.println("Completed " + app.opCount + " operations\n");
 
         System.out.println("G1 Key Concepts:");
@@ -1615,22 +1615,22 @@ public class ZGCDemo {
         System.out.println("3. Concurrent Relocation");
         System.out.println("   Moves objects while application runs\n");
 
-        List<ZGCObject> roots = new ArrayList<>();
-        for (int i = 0; i < 5000; i++) roots.add(new ZGCObject(1024 * 100));
-        for (int i = 0; i < 2500; i++) roots.set(i, null);
+        List&lt;ZGCObject&gt; roots = new ArrayList&lt;>();
+        for (int i = 0; i &lt; 5000; i++) roots.add(new ZGCObject(1024 * 100));
+        for (int i = 0; i &lt; 2500; i++) roots.set(i, null);
         roots.removeIf(Objects::isNull);
         System.out.println("Survivors: " + roots.size() + "\n");
 
         System.out.println("Flags:");
         System.out.println("-XX:+UseZGC");
         System.out.println("-XX:ConcGCThreads=N");
-        System.out.println("-XX:SoftMaxHeapSize=<size>");
+        System.out.println("-XX:SoftMaxHeapSize=&lt;size&gt;");
         System.out.println("-XX:ZAllocationSpikeTolerance=2.0\n");
 
         System.out.println("Limitations:");
-        System.out.println("  - Heap < 16 TB (64-bit pointer bit limitation)");
+        System.out.println("  - Heap &lt; 16 TB (64-bit pointer bit limitation)");
         System.out.println("  - No compressed OOPs (always 64-bit)");
-        System.out.println("  - Not for heaps < 512 MB");
+        System.out.println("  - Not for heaps &lt; 512 MB");
         System.out.println("  - Higher CPU overhead");
     }
 }
@@ -1672,11 +1672,11 @@ public class ShenandoahGCDemo {
         System.out.println("  7. Concurrent Update Refs");
         System.out.println("  8. Final Update Refs (STW)\n");
 
-        List<Payload> roots = new ArrayList<>();
+        List&lt;Payload&gt; roots = new ArrayList&lt;>();
         Random rng = new Random(42);
-        for (int cycle = 0; cycle < 10; cycle++) {
-            for (int i = 0; i < 2000; i++) roots.add(new Payload(100 + rng.nextInt(500)));
-            for (int i = 0; i < 1000; i++) roots.set(rng.nextInt(roots.size()), null);
+        for (int cycle = 0; cycle &lt; 10; cycle++) {
+            for (int i = 0; i &lt; 2000; i++) roots.add(new Payload(100 + rng.nextInt(500)));
+            for (int i = 0; i &lt; 1000; i++) roots.set(rng.nextInt(roots.size()), null);
             roots.removeIf(java.util.Objects::isNull);
             System.out.println("Cycle " + cycle + ": " + roots.size() + " survivors");
         }
@@ -1717,9 +1717,9 @@ public class GCTuningFlags {
         System.out.println("=== GC Tuning Flags ===\n");
 
         System.out.println("--- Heap Sizing ---");
-        System.out.println("-Xms<size>          Initial heap (e.g., -Xms512m)");
-        System.out.println("-Xmx<size>          Maximum heap (e.g., -Xmx4g)");
-        System.out.println("-Xmn<size>          Young generation size");
+        System.out.println("-Xms&lt;size&gt;          Initial heap (e.g., -Xms512m)");
+        System.out.println("-Xmx&lt;size&gt;          Maximum heap (e.g., -Xmx4g)");
+        System.out.println("-Xmn&lt;size&gt;          Young generation size");
         System.out.println("-XX:NewRatio=N      Young:Old ratio (default 2)");
         System.out.println("-XX:SurvivorRatio=N Eden:S0:S1 (default 8)\n");
 
@@ -1743,7 +1743,7 @@ public class GCTuningFlags {
 
         System.out.println("--- ZGC Specific ---");
         System.out.println("-XX:ConcGCThreads=N");
-        System.out.println("-XX:SoftMaxHeapSize=<size>\n");
+        System.out.println("-XX:SoftMaxHeapSize=&lt;size&gt;\n");
 
         System.out.println("--- Diagnostics ---");
         System.out.println("-XX:+UnlockDiagnosticVMOptions");
@@ -1770,10 +1770,10 @@ public class GCLoggingDemo {
         System.out.println("=== GC Logging Demo ===\n");
         System.out.println("Run: -Xlog:gc*:file=gc.log\n");
 
-        List<Alloc> roots = new ArrayList<>();
-        for (int cycle = 0; cycle < 10; cycle++) {
-            for (int i = 0; i < 20; i++) roots.add(new Alloc());
-            for (int i = 0; i < 7 && !roots.isEmpty(); i++) roots.remove(roots.size() - 1);
+        List&lt;Alloc&gt; roots = new ArrayList&lt;>();
+        for (int cycle = 0; cycle &lt; 10; cycle++) {
+            for (int i = 0; i &lt; 20; i++) roots.add(new Alloc());
+            for (int i = 0; i &lt; 7 && !roots.isEmpty(); i++) roots.remove(roots.size() - 1);
             Thread.sleep(50);
         }
 
@@ -1804,7 +1804,7 @@ public class GCSelection {
 
         System.out.println("Step 1: Define Requirements");
         System.out.println("  - Throughput target (ops/sec)");
-        System.out.println("  - Pause time target (P99 < 10 ms)");
+        System.out.println("  - Pause time target (P99 &lt; 10 ms)");
         System.out.println("  - Heap budget (max memory)");
         System.out.println("  - Allocation rate (MB/sec)\n");
 
@@ -1854,17 +1854,17 @@ import java.util.List;
 public class ClassLoaderLeak {
 
     static class LeakedClass {}
-    private static final List<Class<?>> LEAKED = new ArrayList<>();
+    private static final List&lt;Class<?&gt;> LEAKED = new ArrayList&lt;>();
 
     public static void main(String[] args) throws Exception {
         System.out.println("=== ClassLoader Leak ===\n");
         System.out.println("Scenario: redeploying web apps in containers\n");
         System.out.println("Root cause: external reference to class object\n");
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i &lt; 10; i++) {
             URLClassLoader loader = new URLClassLoader(new URL[0],
                 ClassLoader.getSystemClassLoader());
-            Class<?> clazz = loader.loadClass(
+            Class&lt;?> clazz = loader.loadClass(
                 "com.example.jvm.leaks.ClassLoaderLeak$LeakedClass");
             LEAKED.add(clazz);
             loader.close();
@@ -1894,7 +1894,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class ThreadLocalLeak {
 
-    private static final ThreadLocal<byte[]> TL = ThreadLocal.withInitial(
+    private static final ThreadLocal&lt;byte[]&gt; TL = ThreadLocal.withInitial(
         () -> new byte[1024 * 1024]); // 1 MB per thread
 
     public static void main(String[] args) throws InterruptedException {
@@ -1904,7 +1904,7 @@ public class ThreadLocalLeak {
         int taskCount = 100;
         var latch = new CountDownLatch(taskCount);
 
-        for (int i = 0; i < taskCount; i++) {
+        for (int i = 0; i &lt; taskCount; i++) {
             int taskId = i;
             pool.submit(() -> {
                 TL.set(new byte[1024 * 1024]);
@@ -1918,11 +1918,11 @@ public class ThreadLocalLeak {
         latch.await();
         pool.shutdown();
         System.out.println("\nIf TL.remove() is NOT called: ");
-        System.out.println("  ThreadLocal.Entry <value> references remain");
+        System.out.println("  ThreadLocal.Entry &lt;value&gt; references remain");
         System.out.println("  Thread lives in pool → 1 MB leak per thread");
         System.out.println("  Week-end: total leak = poolSize * 1 MB\n");
         System.out.println("Root cause: ThreadLocalMap Entry extends WeakReference");
-        System.out.println("  Key is weak (WeakReference<ThreadLocal>), value is strong");
+        System.out.println("  Key is weak (WeakReference&lt;ThreadLocal&gt;), value is strong");
         System.out.println("  If TL itself is GC'd, leaked values live until thread reuse\n");
         System.out.println("Prevention:");
         System.out.println("  - Always call tl.remove() in finally block");
@@ -1944,8 +1944,8 @@ import java.util.UUID;
 
 public class StaticCollectionLeak {
 
-    private static final List<String> CACHE = new ArrayList<>();
-    private static final List<String> EVENT_LOG = new ArrayList<>();
+    private static final List&lt;String&gt; CACHE = new ArrayList&lt;>();
+    private static final List&lt;String&gt; EVENT_LOG = new ArrayList&lt;>();
 
     static class EventProcessor {
         void process(String event) {
@@ -1957,13 +1957,13 @@ public class StaticCollectionLeak {
         System.out.println("=== Static Collection Leak ===\n");
         System.out.println("Monitoring: jconsole / jvisualvm heap growth\n");
 
-        for (int i = 0; i < 10_000; i++) {
+        for (int i = 0; i &lt; 10_000; i++) {
             CACHE.add(UUID.randomUUID().toString());
         }
         System.out.println("CACHE size: " + CACHE.size() + " (retained forever)\n");
 
         var processor = new EventProcessor();
-        for (int i = 0; i < 50_000; i++) {
+        for (int i = 0; i &lt; 50_000; i++) {
             processor.process("event-" + i);
         }
         System.out.println("EVENT_LOG size: " + EVENT_LOG.size() + "\n");
@@ -2006,7 +2006,7 @@ public class StringInternLeak {
         System.out.println("\nDemonstration:");
         int count = 100_000;
         String[] base = new String[count];
-        for (int i = 0; i < base.length; i++) {
+        for (int i = 0; i &lt; base.length; i++) {
             base[i] = new String("value-" + i).intern();
         }
         System.out.println("Interned " + count + " strings\n");
@@ -2020,7 +2020,7 @@ public class StringInternLeak {
         System.out.println("Prevention:");
         System.out.println("  - Avoid String.intern() for dynamic data");
         System.out.println("  - -XX:StringTableSize=N (increase bucket count)");
-        System.out.println("  - Use HashSet<String> with explicit eviction");
+        System.out.println("  - Use HashSet&lt;String&gt; with explicit eviction");
     }
 }
 ```
@@ -2042,11 +2042,11 @@ public class ListenerLeak {
     interface Listener { void onEvent(String e); }
 
     static class EventBus {
-        private final List<Listener> strong = new CopyOnWriteArrayList<>();
-        private final List<WeakReference<Listener>> weak = new CopyOnWriteArrayList<>();
+        private final List&lt;Listener&gt; strong = new CopyOnWriteArrayList&lt;>();
+        private final List&lt;WeakReference<Listener&gt;> weak = new CopyOnWriteArrayList&lt;>();
 
         void registerStrong(Listener l) { strong.add(l); }
-        void registerWeak(Listener l) { weak.add(new WeakReference<>(l)); }
+        void registerWeak(Listener l) { weak.add(new WeakReference&lt;>(l)); }
         void fire(String event) {
             for (Listener l : strong) l.onEvent(event);
             weak.removeIf(w -> w.get() == null);
@@ -2068,12 +2068,12 @@ public class ListenerLeak {
         System.out.println("  1. Use WeakReference for listener lists");
         System.out.println("  2. Always unregister in cleanup() methods");
         System.out.println("  3. Use AutoCloseable pattern");
-        System.out.println("  4. Consider WeakHashMap<Listener, Boolean>\n");
+        System.out.println("  4. Consider WeakHashMap&lt;Listener, Boolean&gt;\n");
         System.out.println("Real-world: Android Activity leaks from anonymous listener classes");
     }
 
     static void registerListeners(EventBus bus) {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i &lt; 5; i++) {
             int id = i;
             bus.registerStrong(e -> System.out.println("Strong listener " + id));
             bus.registerWeak(e -> System.out.println("Weak listener " + id));
@@ -2109,9 +2109,9 @@ public class LeakDetector {
         System.out.println("  Used:      " + nonHeap.getUsed() / 1024 / 1024 + " MB\n");
 
         System.out.println("Tools:");
-        System.out.println("  1. jmap -histo:live <pid>     (heap histo)");
-        System.out.println("  2. jmap -dump:live <pid>      (heap dump)");
-        System.out.println("  3. jstat -gcutil <pid> 5s     (GC stats)");
+        System.out.println("  1. jmap -histo:live &lt;pid&gt;     (heap histo)");
+        System.out.println("  2. jmap -dump:live &lt;pid&gt;      (heap dump)");
+        System.out.println("  3. jstat -gcutil &lt;pid&gt; 5s     (GC stats)");
         System.out.println("  4. jconsole / visualvm       (GUI)");
         System.out.println("  5. Eclipse MAT / JProfiler    (dump analysis)\n");
 
@@ -2171,7 +2171,7 @@ public class StackOverflowDemo {
         StackOverflowDemo demo = new StackOverflowDemo();
         demo.deepRecursion();
 
-        System.out.println("\nControlling stack size: -Xss<size>");
+        System.out.println("\nControlling stack size: -Xss&lt;size&gt;");
         System.out.println("Default: ~1 MB (platform-dependent)\n");
 
         System.out.println("Common causes:");
@@ -2245,7 +2245,7 @@ public class StringPoolDemo {
             - Runtime.getRuntime().freeMemory();
 
         String[] poolFiller = new String[10_000];
-        for (int i = 0; i < poolFiller.length; i++) {
+        for (int i = 0; i &lt; poolFiller.length; i++) {
             poolFiller[i] = ("key-" + i).intern();
         }
 
@@ -2292,7 +2292,7 @@ public class JITFlags {
 
         System.out.println("--- Compilation Thresholds ---");
         System.out.println("-XX:CompileThreshold=10000 (C1: method entry counter)");
-        System.out.println("-XX:CompileThresholdScaling=<float>");
+        System.out.println("-XX:CompileThresholdScaling=&lt;float&gt;");
         System.out.println("-XX:OnStackReplacePercentage=140 (OSR ratio)\n");
 
         System.out.println("--- ReservedCodeCacheSize ---");
@@ -2323,35 +2323,35 @@ public class MemoryFlags {
         System.out.println("=== Memory Flags ===\n");
 
         System.out.println("--- Heap ---");
-        System.out.println("-Xms<size>          -Xms4g");
-        System.out.println("-Xmx<size>          -Xmx4g");
+        System.out.println("-Xms&lt;size&gt;          -Xms4g");
+        System.out.println("-Xmx&lt;size&gt;          -Xmx4g");
         System.out.println("-XX:+AlwaysPreTouch");
         System.out.println("-XX:+UseNUMA\n");
 
         System.out.println("--- Young Generation ---");
-        System.out.println("-Xmn<size>          -Xmn2g");
-        System.out.println("-XX:NewSize=<size>");
-        System.out.println("-XX:MaxNewSize=<size>");
+        System.out.println("-Xmn&lt;size&gt;          -Xmn2g");
+        System.out.println("-XX:NewSize=&lt;size&gt;");
+        System.out.println("-XX:MaxNewSize=&lt;size&gt;");
         System.out.println("-XX:NewRatio=N       NewRatio=2 → 1:2");
         System.out.println("-XX:SurvivorRatio=N  8 → eden:survivor = 8:1:1\n");
 
         System.out.println("--- Metaspace ---");
-        System.out.println("-XX:MetaspaceSize=<size> (initial threshold)");
-        System.out.println("-XX:MaxMetaspaceSize=<size>");
-        System.out.println("-XX:CompressedClassSpaceSize=<size>");
+        System.out.println("-XX:MetaspaceSize=&lt;size&gt; (initial threshold)");
+        System.out.println("-XX:MaxMetaspaceSize=&lt;size&gt;");
+        System.out.println("-XX:CompressedClassSpaceSize=&lt;size&gt;");
         System.out.println("-XX:+UseCompressedClassPointers (default)\n");
 
         System.out.println("--- Direct Memory ---");
-        System.out.println("-XX:MaxDirectMemorySize=<size>\n");
+        System.out.println("-XX:MaxDirectMemorySize=&lt;size&gt;\n");
 
         System.out.println("--- Large Pages ---");
         System.out.println("-XX:+UseLargePages (Linux only)");
         System.out.println("-XX:LargePageSizeInBytes=2m\n");
 
         System.out.println("--- Compression ---");
-        System.out.println("-XX:+UseCompressedOops (default, heap < 32 GB)");
+        System.out.println("-XX:+UseCompressedOops (default, heap &lt; 32 GB)");
         System.out.println("-XX:ObjectAlignmentInBytes=8 (default)");
-        System.out.println("Compressed OOPs convert to: heap_base + (offset << 3)");
+        System.out.println("Compressed OOPs convert to: heap_base + (offset &lt;< 3)");
     }
 }
 ```
@@ -2575,7 +2575,7 @@ public class Exercise1_JITWarmup {
 
     public static double compute(double x, int n) {
         double result = 1.0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i &lt; n; i++) {
             result = result * x + Math.sin(result);
         }
         return result;
@@ -2583,14 +2583,14 @@ public class Exercise1_JITWarmup {
 
     public static void main(String[] args) {
         long[] timings = new long[50];
-        for (int batch = 0; batch < 50; batch++) {
+        for (int batch = 0; batch &lt; 50; batch++) {
             long start = System.nanoTime();
-            for (int i = 0; i < 100_000; i++) {
+            for (int i = 0; i &lt; 100_000; i++) {
                 compute(i * 0.01, 100);
             }
             timings[batch] = System.nanoTime() - start;
         }
-        for (int i = 0; i < timings.length; i++) {
+        for (int i = 0; i &lt; timings.length; i++) {
             System.out.println("Batch " + i + ": " + timings[i] / 1_000_000 + " ms");
         }
     }
@@ -2621,17 +2621,17 @@ public class Exercise2_GCComparison {
     }
 
     public static void main(String[] args) {
-        List<Payload> roots = new ArrayList<>();
+        List&lt;Payload&gt; roots = new ArrayList&lt;>();
         Random rng = new Random(42);
         long start = System.currentTimeMillis();
         int totalAllocated = 0;
 
-        while (System.currentTimeMillis() - start < 10_000) {
-            for (int i = 0; i < 1000; i++) {
+        while (System.currentTimeMillis() - start &lt; 10_000) {
+            for (int i = 0; i &lt; 1000; i++) {
                 roots.add(new Payload());
                 totalAllocated++;
             }
-            for (int i = 0; i < 300; i++) {
+            for (int i = 0; i &lt; 300; i++) {
                 if (!roots.isEmpty()) roots.remove(rng.nextInt(roots.size()));
             }
         }
@@ -2660,11 +2660,11 @@ import java.util.concurrent.*;
 
 public class Exercise3_LeakDetector {
 
-    static final ThreadLocal<byte[]> TL = ThreadLocal.withInitial(() -> null);
+    static final ThreadLocal&lt;byte[]&gt; TL = ThreadLocal.withInitial(() -> null);
 
     public static void main(String[] args) throws Exception {
         var pool = Executors.newFixedThreadPool(10);
-        for (int i = 0; i < 100_000; i++) {
+        for (int i = 0; i &lt; 100_000; i++) {
             pool.submit(() -> {
                 TL.set(new byte[1024 * 100]); // 100 KB
                 // Uncomment to fix: TL.remove();
@@ -2673,7 +2673,7 @@ public class Exercise3_LeakDetector {
         }
         pool.shutdown();
         pool.awaitTermination(10, TimeUnit.SECONDS);
-        System.out.println("Take heap dump: jmap -dump:live,format=b,file=leak.hprof <pid>");
+        System.out.println("Take heap dump: jmap -dump:live,format=b,file=leak.hprof &lt;pid&gt;");
         Thread.sleep(60_000);
     }
 }

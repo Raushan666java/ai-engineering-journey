@@ -2119,7 +2119,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) 15
    D) Undefined
 
-<details><summary>Answer</summary>**B)** `DOUBLE(3)*5` expands to `3+3*5` = `3+15` = 18 — not `(3+3)*5` = 30. This is why parentheses are essential.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `DOUBLE(3)*5` expands to `3+3*5` = `3+15` = 18 — not `(3+3)*5` = 30. This is why parentheses are essential.</details>
 
 2. Which directive stops compilation with a user-defined message?
    A) `#pragma`
@@ -2127,7 +2127,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) `#stop`
    D) `#warning`
 
-<details><summary>Answer</summary>**B)** `#error "message"` stops compilation and displays the message.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `#error "message"` stops compilation and displays the message.</details>
 
 3. What is the purpose of a header guard?
    A) To protect the header from being modified
@@ -2135,7 +2135,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) To make the header read-only
    D) To secure the header against viruses
 
-<details><summary>Answer</summary>**B)** A header guard using `#ifndef` / `#define` / `#endif` prevents the same file from being included more than once.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** A header guard using `#ifndef` / `#define` / `#endif` prevents the same file from being included more than once.</details>
 
 4. What does `#define STR(x) #x` do with `STR(TEST)`?
    A) Defines a variable `TEST`
@@ -2143,7 +2143,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) Deletes the token `TEST`
    D) Creates a function called `TEST`
 
-<details><summary>Answer</summary>**B)** The `#` operator stringifies the parameter, so `STR(TEST)` → `"TEST"`.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The `#` operator stringifies the parameter, so `STR(TEST)` → `"TEST"`.</details>
 
 5. What does `CAT(1, 2)` expand to with `#define CAT(a, b) a ## b`?
    A) `1 2`
@@ -2151,7 +2151,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) `12`
    D) Error
 
-<details><summary>Answer</summary>**C)** The `##` operator pastes tokens: `1 ## 2` → `12` (a single integer token).</details>
+<details><summary>Answer&lt;/summary&gt;**C)** The `##` operator pastes tokens: `1 ## 2` → `12` (a single integer token).</details>
 
 6. Why is `do { ... } while (0)` used in multi-statement macros?
    A) To create an infinite loop
@@ -2159,7 +2159,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) To prevent the macro from being used in expressions
    D) To improve runtime performance
 
-<details><summary>Answer</summary>**B)** It wraps multiple statements into a single compound statement that requires a semicolon, preventing dangling else problems.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** It wraps multiple statements into a single compound statement that requires a semicolon, preventing dangling else problems.</details>
 
 7. What happens if you define a macro recursively, like `#define REC REC`?
    A) Infinite loop in the preprocessor
@@ -2167,7 +2167,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) Compiler crash
    D) The macro is ignored
 
-<details><summary>Answer</summary>**B)** The preprocessor marks a macro as "currently expanding" and stops further expansion of the same macro, preventing infinite recursion.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The preprocessor marks a macro as "currently expanding" and stops further expansion of the same macro, preventing infinite recursion.</details>
 
 8. What is the difference between `#include <file.h>` and `#include "file.h"`?
    A) No difference
@@ -2175,7 +2175,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) `""` searches the current directory first, then system paths; `<>` searches only system paths
    D) `<>` is faster than `""`
 
-<details><summary>Answer</summary>**C)** `#include "file.h"` searches the current source directory first, then falls back to system include paths. `#include <file.h>` searches only system include paths.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `#include "file.h"` searches the current source directory first, then falls back to system include paths. `#include <file.h>` searches only system include paths.</details>
 
 9. Which of the following is NOT a predefined macro?
    A) `__LINE__`
@@ -2183,7 +2183,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) `__FUNCTION__`
    D) `__DATE__`
 
-<details><summary>Answer</summary>**C)** `__func__` (lowercase) is predefined; `__FUNCTION__` is not standard (though some compilers support it).</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `__func__` (lowercase) is predefined; `__FUNCTION__` is not standard (though some compilers support it).</details>
 
 10. How does `#define FOO` (with no replacement value) behave?
     A) Compilation error
@@ -2191,7 +2191,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
     C) Defines FOO as an empty token
     D) Undefined behavior
 
-<details><summary>Answer</summary>**C)** `#define FOO` defines FOO with an empty replacement. It can be used with `#ifdef FOO` and other conditional directives.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `#define FOO` defines FOO with an empty replacement. It can be used with `#ifdef FOO` and other conditional directives.</details>
 
 ## Summary
 

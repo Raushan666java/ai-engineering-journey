@@ -235,6 +235,552 @@ The Reserve Bank of India has ___(1)___ a new framework for digital lending to a
 
 ---
 
+## 📝 Solved Examples (20 MCQs)
+
+### Passage 1: Digital Lending Revolution (Economic)
+
+**Passage:**
+
+The digital lending ecosystem in India has witnessed unprecedented growth over the past five years, driven by the convergence of smartphone penetration, affordable data, and favourable regulatory policies. According to a report by the Reserve Bank of India, digital lending disbursements grew at a compound annual growth rate (CAGR) of 39% between 2020 and 2025, reaching approximately ₹15 lakh crore. This growth has been particularly pronounced in the microfinance and personal loan segments, where fintech platforms have leveraged alternative credit scoring models to serve customers with no formal credit history. These platforms use non-traditional data sources such as utility bill payments, mobile recharge history, and even social media activity to assess creditworthiness. However, concerns about data privacy, predatory lending practices, and customer harassment by recovery agents have prompted the RBI to tighten regulations. The Digital Lending Guidelines, effective from 2023, mandate that all loan disbursements and repayments must occur directly between the borrower's bank account and the registered lender, eliminating third-party pass-through accounts. Lenders must also provide a standardised Key Fact Statement (KFS) containing the annual percentage rate (APR), the total repayment amount, and the tenure. While these regulations have increased compliance costs, they have also enhanced borrower confidence and reduced instances of over-indebtedness.
+
+**Q1.** What is the primary reason digital lending platforms have been able to serve customers without formal credit histories?
+
+a) Their use of traditional credit scoring models
+b) Their use of alternative data sources for credit assessment
+c) Their partnership with established banks
+d) Their lower interest rates compared to traditional lenders
+
+<details>
+<summary>Answer</summary>
+b) Their use of alternative data sources for credit assessment. The passage explicitly states that platforms "use non-traditional data sources such as utility bill payments, mobile recharge history, and even social media activity to assess creditworthiness." Options (a) contradicts the passage, (c) is not mentioned, and (d) is not stated.
+</details>
+
+---
+
+**Q2.** Which of the following is NOT a requirement under the RBI's Digital Lending Guidelines?
+
+a) Direct disbursement and repayment between borrower and lender accounts
+b) Provision of a standardised Key Fact Statement
+c) Mandatory physical branch presence for all digital lenders
+d) Elimination of third-party pass-through accounts
+
+<details>
+<summary>Answer</summary>
+c) Mandatory physical branch presence for all digital lenders. The passage mentions direct disbursement (a), provision of KFS (b), and elimination of third-party pass-through accounts (d). Mandatory physical branch presence is not mentioned and would contradict the nature of digital lending.
+</details>
+
+---
+
+**Q3.** The tone of the passage can best be described as:
+
+a) Highly critical of digital lending
+b) Uncritically optimistic
+c) Analytical and balanced
+d) Sarcastic and dismissive
+
+<details>
+<summary>Answer</summary>
+c) Analytical and balanced. The passage presents both the growth story (39% CAGR, ₹15 lakh crore) and the concerns (data privacy, predatory lending). It acknowledges regulatory responses as having both costs and benefits. It is not predominantly critical (a), only optimistic (b), or sarcastic (d).
+</details>
+
+---
+
+**Q4.** What does "over-indebtedness" in the final line most likely mean?
+
+a) Complete elimination of debt
+b) A situation where borrowers take on more debt than they can repay
+c) Reduction in overall lending
+d) Increase in banking profits
+
+<details>
+<summary>Answer</summary>
+b) A situation where borrowers take on more debt than they can repay. In the context of digital lending regulations reducing instances of this, "over-indebtedness" refers to borrowers accumulating excessive debt beyond their repayment capacity.
+</details>
+
+---
+
+### Passage 2: AI in Governance (Science & Technology)
+
+**Passage:**
+
+Artificial Intelligence is increasingly being deployed in government service delivery across India, promising efficiency gains and improved citizen outcomes. The use of AI-powered chatbots for grievance redressal, predictive analytics for resource allocation, and computer vision for traffic management are no longer experimental — they are operational realities. The Ministry of Electronics and Information Technology (MeitY) has identified over 40 use cases for AI in governance, ranging from crop yield prediction using satellite imagery to real-time sentiment analysis of public feedback. However, the adoption of AI in governance raises significant ethical questions. Algorithmic bias remains a pressing concern — if the data used to train AI models reflects historical inequalities, the AI system may perpetuate or even amplify these biases. For instance, an AI system trained on historical loan approval data may replicate past discriminatory lending practices. Transparency is another challenge: citizens have a right to know when decisions affecting them are made by algorithms rather than humans. The government's proposed Digital India Act aims to address these concerns by mandating algorithmic accountability and impact assessments for high-risk AI applications. Without such safeguards, the efficiency gains from AI may come at the cost of fairness and due process.
+
+**Q5.** According to the passage, which of the following is a concern about AI in governance?
+
+a) AI systems are too expensive to implement
+b) AI systems may perpetuate historical biases through algorithmic bias
+c) AI systems are not efficient enough for government use
+d) AI systems reduce citizen engagement with government
+
+<details>
+<summary>Answer</summary>
+b) AI systems may perpetuate historical biases through algorithmic bias. The passage explicitly states "if the data used to train AI models reflects historical inequalities, the AI system may perpetuate or even amplify these biases." The other options are either contradictory or not mentioned.
+</details>
+
+---
+
+**Q6.** Which of the following can be inferred from the passage?
+
+a) India has banned the use of AI in government decision-making
+b) The government is considering legal frameworks to regulate AI in governance
+c) AI adoption in Indian governance is limited to experimental stages
+d) Algorithmic bias is not a serious concern for policymakers
+
+<details>
+<summary>Answer</summary>
+b) The government is considering legal frameworks to regulate AI in governance. The passage mentions "The government's proposed Digital India Act aims to address these concerns by mandating algorithmic accountability." Option (a) is contradicted — AI is already deployed. Option (c) is contradicted — use cases are "operational realities." Option (d) is contradicted — the passage highlights bias as a concern.
+</details>
+
+---
+
+**Q7.** What is the primary purpose of the proposed Digital India Act as described in the passage?
+
+a) To promote AI adoption in the private sector
+b) To mandate algorithmic accountability and impact assessments for high-risk AI
+c) To ban all non-human decision-making in government
+d) To allocate more funding for AI research
+
+<details>
+<summary>Answer</summary>
+b) To mandate algorithmic accountability and impact assessments for high-risk AI. The passage directly states this. Option (a) misses the regulatory focus. Option (c) is extreme and not stated. Option (d) is not mentioned.
+</details>
+
+---
+
+**Q8.** The author's attitude towards the use of AI in governance is best described as:
+
+a) Strong opposition
+b) Unconditional support
+c) Cautious optimism — recognising benefits while highlighting risks
+d) Complete indifference
+
+<details>
+<summary>Answer</summary>
+c) Cautious optimism — recognising benefits while highlighting risks. The passage acknowledges efficiency gains and improved outcomes but devotes equal attention to ethical concerns and the need for safeguards.
+</details>
+
+---
+
+### Passage 3: Climate Finance (Economic/Social)
+
+**Passage:**
+
+Climate finance has emerged as a critical pillar of global economic policy, with developing nations at the centre of the debate. India, as the world's third-largest emitter of greenhouse gases but also one of the most vulnerable countries to climate change, occupies a unique position in this discourse. The country has committed to achieving net-zero emissions by 2070 and has set ambitious targets of 500 GW of non-fossil fuel energy capacity by 2030. However, the transition to a low-carbon economy requires significant financial resources. Estimates by the Council on Energy, Environment and Water (CEEW) suggest that India needs approximately $10 trillion in climate finance by 2070 to meet its net-zero target. Currently, the gap between available and required climate finance is substantial. While developed countries have committed $100 billion annually to support climate action in developing nations, actual disbursements have fallen short. India has also launched its own initiatives, including sovereign green bonds and the National Adaptation Fund for Climate Change (NAFCC). The challenge lies not merely in mobilising resources but in ensuring their efficient deployment — projects must be bankable, and the financial mechanisms must be transparent and accountable.
+
+**Q9.** What is the main idea of the passage?
+
+a) India does not need climate finance because it has sufficient resources
+b) Climate finance is essential for India's transition to net-zero, but there is a significant funding gap
+c) Developed countries have fully met their climate finance commitments
+d) India should abandon its net-zero targets due to financial constraints
+
+<details>
+<summary>Answer</summary>
+b) Climate finance is essential for India's transition to net-zero, but there is a significant funding gap. The passage presents both the need ($10 trillion by 2070) and the gap (shortfall in disbursements). Options (a), (c), and (d) are all contradicted by the passage.
+</details>
+
+---
+
+**Q10.** Which of the following is NOT mentioned as an Indian initiative for climate finance?
+
+a) Sovereign green bonds
+b) National Adaptation Fund for Climate Change
+c) Carbon tax on fossil fuels
+d) Commitments to 500 GW non-fossil fuel capacity
+
+<details>
+<summary>Answer</summary>
+c) Carbon tax on fossil fuels. The passage mentions sovereign green bonds (a), NAFCC (b), and the 500 GW target (d). Carbon tax is not mentioned in the passage.
+</details>
+
+---
+
+**Q11.** The passage uses the word "bankable" in the context of climate projects. What does it most likely mean?
+
+a) Related to banking operations
+b) Likely to be profitable and therefore attractive to investors
+c) Dependent on bank loans
+d) Located near a bank
+
+<details>
+<summary>Answer</summary>
+b) Likely to be profitable and therefore attractive to investors. In the context of financing, "bankable" means a project that is financially viable and meets the criteria for lending or investment.
+</details>
+
+---
+
+**Q12.** What can be inferred about the author's view on developed countries' climate finance commitments?
+
+a) They have been fully honoured
+b) They have been inadequate compared to what was promised
+c) They are unnecessary for climate action
+d) They exceed what is required
+
+<details>
+<summary>Answer</summary>
+b) They have been inadequate compared to what was promised. The passage states "actual disbursements have fallen short" of the $100 billion annual commitment, implying the author views the fulfilment as insufficient.
+</details>
+
+---
+
+### Passage 4: Cybersecurity in Banking (Technology)
+
+**Passage:**
+
+The Indian banking sector has witnessed a dramatic escalation in cyber threats over the past three years, correlating closely with the rapid pace of digital adoption. According to the Indian Computer Emergency Response Team (CERT-In), the banking sector reported over 300,000 cybersecurity incidents in 2024, a 150% increase from 2021. These incidents range from sophisticated ransomware attacks targeting core banking systems to large-scale phishing campaigns aimed at retail customers. The nature of these threats has also evolved — attackers are no longer lone hackers but organised crime syndicates and, in some cases, state-sponsored groups. The financial implications are severe: the average cost of a data breach in the Indian financial sector is estimated at ₹18.5 crore, according to an IBM report. In response, banks have been investing heavily in cybersecurity infrastructure. AI-powered Security Information and Event Management (SIEM) systems are now standard, and biometric authentication has replaced traditional passwords for high-value transactions. The RBI's Cyber Security Framework, updated in 2024, mandates that all scheduled commercial banks conduct quarterly vulnerability assessments, annual penetration testing, and maintain a dedicated Cyber Crisis Management Plan (CCMP). Despite these measures, a significant challenge persists: the shortage of skilled cybersecurity professionals in India, estimated at over 300,000 unfilled positions.
+
+**Q13.** Which of the following statements is true based on the passage?
+
+a) Cybersecurity incidents in banking have decreased since 2021
+b) The average cost of a data breach in Indian banking is ₹18.5 crore
+c) Cyber threats in banking come exclusively from lone hackers
+d) RBI does not require banks to conduct vulnerability assessments
+
+<details>
+<summary>Answer</summary>
+b) The average cost of a data breach in Indian banking is ₹18.5 crore. The passage explicitly states this figure. Option (a) contradicts the 150% increase. Option (c) contradicts the mention of organised crime syndicates and state-sponsored groups. Option (d) contradicts the mandate for quarterly assessments.
+</details>
+
+---
+
+**Q14.** The primary challenge to banking cybersecurity in India, as mentioned in the passage, is:
+
+a) Lack of regulatory guidelines
+b) Insufficient technology adoption
+c) Shortage of skilled cybersecurity professionals
+d) Low digital adoption among customers
+
+<details>
+<summary>Answer</summary>
+c) Shortage of skilled cybersecurity professionals. The passage concludes with "a significant challenge persists: the shortage of skilled cybersecurity professionals." Options (a) and (b) are contradicted — regulations exist and AI-powered systems are standard.
+</details>
+
+---
+
+**Q15.** The author's tone in describing the cybersecurity situation is:
+
+a) Alarmist and exaggerated
+b) Reassuring and dismissive
+c) Factual and concerned
+d) Sarcastic and mocking
+
+<details>
+<summary>Answer</summary>
+c) Factual and concerned. The passage presents statistics and facts (300,000 incidents, ₹18.5 crore cost) while also conveying concern about the "dramatic escalation" and "severe" implications. It is not alarmist (a), dismissive (b), or sarcastic (d).
+</details>
+
+---
+
+**Q16.** What does CCMP stand for in the context of the passage?
+
+a) Cyber Crisis Management Plan
+b) Central Computer Monitoring Protocol
+c) Critical Control Measurement Process
+d) Comprehensive Cyber Mitigation Programme
+
+<details>
+<summary>Answer</summary>
+a) Cyber Crisis Management Plan. The passage explicitly states "maintain a dedicated Cyber Crisis Management Plan (CCMP)."
+</details>
+
+---
+
+### Passage 5: The Gig Economy (Social/Philosophical)
+
+**Passage:**
+
+The gig economy in India has expanded rapidly, with an estimated 7.7 million workers engaged in platform-based gig work as of 2024. Platforms such as Swiggy, Zomato, Uber, and Urban Company have created income opportunities for millions, particularly for semi-skilled and unskilled workers who struggle to find employment in the formal sector. The flexibility of gig work — the ability to choose when and how much to work — is often cited as its primary advantage. For students, caregivers, and those with multiple income needs, this flexibility is genuinely valuable. However, the gig economy's growth has also exposed significant gaps in worker protections. Gig workers are typically classified as independent contractors rather than employees, which means they are not entitled to minimum wage guarantees, paid leave, health insurance, or retirement benefits under existing labour laws. The absence of social security for gig workers has become a pressing policy issue. The government's Code on Social Security, 2020, recognises gig workers as a distinct category for the first time and proposes extending social security benefits to them. Yet, implementation has been slow, and questions remain about how such a system would be funded. The debate ultimately centres on a fundamental tension: how to preserve the flexibility that makes gig work attractive while ensuring basic protections for workers.
+
+**Q17.** What is the primary advantage of gig work according to the passage?
+
+a) High income compared to formal employment
+b) Flexibility in choosing work hours
+c) Guaranteed minimum wage
+d) Comprehensive health insurance
+
+<details>
+<summary>Answer</summary>
+b) Flexibility in choosing work hours. The passage states "The flexibility of gig work — the ability to choose when and how much to work — is often cited as its primary advantage." Options (c) and (d) are explicitly mentioned as missing protections.
+</details>
+
+---
+
+**Q18.** Which of the following is a challenge faced by gig workers as mentioned in the passage?
+
+a) Excessive regulation by the government
+b) Lack of social security and worker protections
+c) Too many employment opportunities
+d) Mandatory pension contributions
+
+<details>
+<summary>Answer</summary>
+b) Lack of social security and worker protections. The passage states gig workers are "not entitled to minimum wage guarantees, paid leave, health insurance, or retirement benefits." Options (a), (c), and (d) are not supported.
+</details>
+
+---
+
+**Q19.** What does the Code on Social Security, 2020, represent in the context of the passage?
+
+a) A law that classifies gig workers as formal employees
+b) The first recognition of gig workers as a distinct category in law
+c) A law that bans gig work in India
+d) A law that mandates all gig workers receive minimum wage
+
+<details>
+<summary>Answer</summary>
+b) The first recognition of gig workers as a distinct category in law. The passage states the Code "recognises gig workers as a distinct category for the first time." It proposes extending benefits but has not been fully implemented.
+</details>
+
+---
+
+**Q20.** The central tension discussed in the passage is between:
+
+a) Urban and rural gig workers
+b) Flexibility and worker protections
+c) Platform owners and customers
+d) State and central government regulations
+
+<details>
+<summary>Answer</summary>
+b) Flexibility and worker protections. The concluding sentence states "how to preserve the flexibility that makes gig work attractive while ensuring basic protections for workers" as the fundamental tension.
+</details>
+
+---
+
+## TypeScript Example: RC Passage Analyzer
+
+The following TypeScript utility implements a reading comprehension passage analyzer that can extract key information to help identify main ideas, tone, and important keywords.
+
+```typescript
+interface PassageAnalysis {
+  wordCount: number;
+  averageSentenceLength: number;
+  tone: string;
+  mainKeywords: string[];
+  readabilityScore: string;
+  paragraphCount: number;
+}
+
+function analyzePassage(text: string): PassageAnalysis {
+  const words = text.trim().split(/\s+/).filter(w => w.length > 0);
+  const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0);
+  const paragraphs = text.split(/\n\s*\n/).filter(p => p.trim().length > 0);
+
+  const wordCount = words.length;
+  const averageSentenceLength = Math.round(wordCount / sentences.length);
+
+  // Tone detection based on keyword frequency
+  const toneKeywords: Record&lt;string, string[]&gt; = {
+    analytical: ["however", "although", "while", "despite", "nevertheless"],
+    critical: ["problem", "failure", "concern", "issue", "flaw", "shortcoming"],
+    optimistic: ["potential", "opportunity", "growth", "promising", "breakthrough"],
+    alarmist: ["crisis", "threat", "emergency", "catastrophe", "alarming"],
+    neutral: ["states", "reports", "indicates", "according to", "data shows"],
+  };
+
+  let maxScore = 0;
+  let detectedTone = "analytical";
+  const lowerText = text.toLowerCase();
+
+  for (const [tone, keywords] of Object.entries(toneKeywords)) {
+    const score = keywords.reduce(
+      (sum, kw) => sum + (lowerText.match(new RegExp(kw, "g")) || []).length,
+      0
+    );
+    if (score > maxScore) {
+      maxScore = score;
+      detectedTone = tone;
+    }
+  }
+
+  // Extract keywords (words appearing 3+ times, excluding stop words)
+  const stopWords = new Set([
+    "the", "a", "an", "in", "of", "to", "and", "is", "are", "was", "were",
+    "has", "have", "had", "be", "been", "being", "it", "its", "this", "that",
+  ]);
+  const wordFrequency: Record&lt;string, number&gt; = {};
+  for (const word of words) {
+    const cleaned = word.replace(/[^a-zA-Z]/g, "").toLowerCase();
+    if (cleaned.length > 3 && !stopWords.has(cleaned)) {
+      wordFrequency[cleaned] = (wordFrequency[cleaned] || 0) + 1;
+    }
+  }
+  const mainKeywords = Object.entries(wordFrequency)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 5)
+    .map(([word]) => word);
+
+  // Readability estimate (simple: avg sentence length &lt; 20 = easy, 20-30 = moderate, &gt;30 = complex)
+  let readabilityScore: string;
+  if (averageSentenceLength < 20) readabilityScore = "Easy";
+  else if (averageSentenceLength < 30) readabilityScore = "Moderate";
+  else readabilityScore = "Complex";
+
+  return {
+    wordCount,
+    averageSentenceLength,
+    tone: detectedTone,
+    mainKeywords,
+    readabilityScore,
+    paragraphCount: paragraphs.length,
+  };
+}
+
+// Example usage:
+const passage = `The Unified Payments Interface (UPI) has transformed the digital payments landscape in India since its launch in 2016. From a modest 1 million transactions in August 2016, UPI has grown to over 10 billion transactions per month in 2024. This exponential growth has been driven by the proliferation of smartphones, affordable data plans, and the interoperable architecture of UPI itself. However, this growth has not been without challenges. Cybersecurity concerns, fraud incidents, and the digital divide between urban and rural areas continue to pose significant hurdles. The Reserve Bank of India has responded with increasingly stringent regulatory frameworks.`;
+
+const analysis = analyzePassage(passage);
+console.log(`Word Count: ${analysis.wordCount}`);
+console.log(`Avg Sentence Length: ${analysis.averageSentenceLength}`);
+console.log(`Tone: ${analysis.tone}`);
+console.log(`Keywords: ${analysis.mainKeywords.join(", ")}`);
+console.log(`Readability: ${analysis.readabilityScore}`);
+```
+
+## Mermaid Flowchart: RC Question-solving Strategy
+
+```mermaid
+flowchart TD
+    A[Read Passage Title/First Line] --> B[Survey Passage - 30 sec]
+    B --> C[Read All Questions First]
+    C --> D{Identify Question Type}
+    
+    D -->|Main Idea| E1[Check first &amp; last paragraph]
+    D -->|Fact-based| E2[Locate keywords in passage]
+    D -->|Inference| E3[Combine multiple evidence points]
+    D -->|Tone| E4[Look for descriptive/emotive language]
+    D -->|Vocabulary| E5[Replace word with each option]
+    
+    E1 --> F{Eliminate extremes}
+    E2 --> F
+    E3 --> F
+    E4 --> F
+    E5 --> F
+    
+    F --> G[Eliminate too narrow/broad options]
+    G --> H{Two options remaining?}
+    H -->|Yes| I[Re-read relevant portion carefully]
+    H -->|No| J[Select and move on]
+    I --> J
+    J --> K[Mark for Review if uncertain]
+```
+
+## Mermaid Flowchart: The SQ3R Method
+
+```mermaid
+flowchart LR
+    S[Survey<br/>30 sec skim] --> Q[Question<br/>Read Qs first]
+    Q --> R1[Read<br/>Active reading]
+    R1 --> R2[Recite<br/>Summarise each para]
+    R2 --> R3[Review<br/>Answer questions]
+    R3 --> Result[Correct Answer]
+    
+    style S fill:#4A90D9,color:#fff
+    style Q fill:#7B68EE,color:#fff
+    style R1 fill:#2E8B57,color:#fff
+    style R2 fill:#DAA520,color:#fff
+    style R3 fill:#CD5C5C,color:#fff
+```
+
+---
+
+## 📖 Exercise Bank (30 Questions)
+
+### Section A: Passage-Based Questions (Q1-Q15)
+
+**Passage 1 (Q1-Q3):** *The National Education Policy (NEP) 2020 represents a fundamental shift in India's approach to education. For the first time, the policy emphasises multidisciplinary learning, allowing students to combine arts and sciences, vocational and academic streams. The policy also introduces the 5+3+3+4 curricular structure, replacing the traditional 10+2 system. Early childhood education is now formally recognised within the school curriculum. Critics, however, argue that implementation faces significant hurdles — inadequate teacher training, infrastructure gaps in rural schools, and the challenge of curriculum revision at scale.*
+
+1. What is the primary change introduced by NEP 2020 according to the passage?
+2. What is the new curricular structure introduced by NEP 2020?
+3. Which of the following is NOT mentioned as a challenge to NEP implementation?
+
+**Passage 2 (Q4-Q6):** *Quantum computing promises to revolutionise cryptography, drug discovery, and climate modelling. Unlike classical computers that use bits (0 or 1), quantum computers use qubits that can exist in multiple states simultaneously through superposition. Google's Sycamore processor achieved quantum supremacy in 2019, performing a calculation in 200 seconds that would take a classical supercomputer 10,000 years. However, practical quantum computers capable of solving real-world problems remain years away. Current quantum processors are extremely sensitive to environmental noise, requiring near-absolute-zero temperatures to operate. Error correction remains another major technical hurdle.*
+
+4. What makes quantum computers different from classical computers?
+5. What did Google's Sycamore processor demonstrate?
+6. What are two major challenges facing practical quantum computing?
+
+**Passage 3 (Q7-Q8):** *The Securities and Exchange Board of India (SEBI) has introduced a new framework for ESG (Environmental, Social, and Governance) disclosures by listed companies. Under the Business Responsibility and Sustainability Report (BRSR) framework, the top 1,000 listed entities must disclose their ESG performance from FY2023-24 onwards. The framework covers nine principles including ethical conduct, environmental sustainability, and stakeholder engagement. While this is a significant step towards transparency, concerns about greenwashing — where companies exaggerate their environmental credentials — remain.*
+
+7. What does the BRSR framework require of the top 1,000 listed companies?
+8. What concern does the passage raise about ESG disclosures?
+
+**Passage 4 (Q9-Q10):** *The concept of Universal Basic Income (UBI) has gained traction globally as a potential solution to job displacement caused by automation. Under UBI, every citizen receives a regular, unconditional cash transfer from the government. Pilot programmes in Finland, Kenya, and California have shown mixed results — while UBI reduced stress and improved well-being, it did not significantly reduce employment as critics had feared. In the Indian context, fiscal constraints make a full-scale UBI challenging, though some form of targeted basic income may be feasible.*
+
+9. What is Universal Basic Income as described in the passage?
+10. What did pilot programmes reveal about UBI's impact on employment?
+
+### Section B: Cloze Tests (Q11-Q15)
+
+**Cloze Test 1 (Q11-Q13):**
+
+The Goods and Services Tax (GST) has ___(11)___ the indirect tax landscape in India since its introduction in 2017. By subsuming multiple central and state taxes into a single tax, GST has ___(12)___ the compliance burden for businesses and improved tax transparency. However, the multiple tax slabs — 5%, 12%, 18%, and 28% — have been ___(13)___ for a simplified tax regime.
+
+11. a) complicated b) transformed c) maintained d) reversed
+12. a) increased b) reduced c) ignored d) complicated
+13. a) praised b) ideal c) criticised d) celebrated
+
+**Cloze Test 2 (Q14-Q15):**
+
+The RBI's Monetary Policy Committee (MPC) meets ___(14)___ to review the repo rate. In 2024, the MPC maintained a status quo on rates for five consecutive meetings, citing concerns about inflation. The ___(15)___ inflation target remains at 4%, with a tolerance band of +/- 2%.
+
+14. a) annually b) bi-monthly c) weekly d) daily
+15. a) short-term b) medium-term c) long-term d) flexible
+
+### Section C: Tone Identification (Q16-Q20)
+
+Match each passage excerpt with the correct tone:
+
+**Tone Bank:** Laudatory, Critical, Neutral/Factual, Sceptical, Optimistic
+
+16. "The government's polio eradication programme stands as one of the most successful public health campaigns in human history, saving millions of children from lifelong disability."
+17. "While GDP growth has improved, the quality of employment remains a concern, with most new jobs being in the informal sector."
+18. "The total expenditure on infrastructure in the Union Budget 2025-26 is budgeted at ₹11.11 lakh crore, representing a 12% increase over the previous fiscal year."
+19. "If the current trajectory of climate change continues, coastal cities like Mumbai and Chennai could face catastrophic flooding within our lifetime."
+20. "The new tax regime has simplified compliance for some taxpayers, but its long-term impact on savings behaviour remains to be seen."
+
+### Section D: Vocabulary in Context (Q21-Q25)
+
+Choose the correct meaning of the word as used in the sentence:
+
+21. *The new regulations will **curtail** the powers of unregulated digital lenders.*
+    a) Expand b) Restrict c) Ignore d) Promote
+
+22. *The committee's **ad hoc** approach to the crisis was widely criticised.*
+    a) Systematic b) Planned c) Improvised d) Permanent
+
+23. *The proposal met with **unanimous** approval from all board members.*
+    a) Divided b) Partial c) Complete d) Reluctant
+
+24. *The **tenuous** relationship between the two departments affected project timelines.*
+    a) Weak b) Strong c) Stable d) Formal
+
+25. *The CEO's **laconic** response surprised the team expecting a detailed explanation.*
+    a) Verbose b) Lengthy c) Brief d) Enthusiastic
+
+### Section E: Main Idea and Inference (Q26-Q30)
+
+26. *"The shift to work-from-home has reduced office overheads but has also created challenges in team collaboration and performance monitoring."* What is the main idea?
+27. *"The stock market rallied after the RBI maintained the repo rate. However, analysts warned that inflation concerns remain."* What can be inferred?
+28. *"Despite significant investment in cybersecurity, the number of successful attacks continues to rise, suggesting that technology alone is insufficient."* What does the author imply?
+29. *"The decline in manufacturing output, coupled with rising input costs, paints a concerning picture for the industrial sector."* What is the author's attitude?
+30. *"Fintech startups have disrupted traditional banking by offering faster, cheaper services. However, their long-term sustainability remains unproven."* What is the central theme?
+
+**Answer Key:**
+
+| Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
+|---|--------|---|--------|---|--------|---|--------|---|--------|
+| 1 | Multidisciplinary learning emphasis | 2 | 5+3+3+4 | 3 | Lack of digital devices | 4 | Qubits can exist in multiple states |
+| 5 | Quantum supremacy | 6 | Noise sensitivity &amp; error correction | 7 | Disclose ESG performance via BRSR | 8 | Greenwashing concerns |
+| 9 | Regular unconditional cash transfer | 10 | Did not significantly reduce employment | 11 | b) transformed | 12 | b) reduced |
+| 13 | c) criticised | 14 | b) bi-monthly | 15 | b) medium-term | 16 | Laudatory |
+| 17 | Critical | 18 | Neutral/Factual | 19 | Alarmist | 20 | Sceptical |
+| 21 | b) Restrict | 22 | c) Improvised | 23 | c) Complete | 24 | a) Weak |
+| 25 | c) Brief | 26 | WFH reduces costs but challenges collaboration | 27 | Market reacted positively but risks remain | 28 | Technology alone is insufficient for cybersecurity |
+| 29 | Concerning/worried | 30 | Fintech disruption has benefits but sustainability uncertain |
+
+---
+
 ## Summary
 
 - Reading Comprehension carries **8–10 questions** in IBPS SO Prelims — the largest share of the English section

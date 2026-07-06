@@ -113,7 +113,7 @@ The same subproblems recur multiple times, and the total number of distinct subp
 
 **Algorithm Steps:**
 
-1. **Check base cases:** if n <= 1, return n.
+1. **Check base cases:** if n &lt;= 1, return n.
 2. **Check cache (memoization):** if result exists, return it.
 3. **Recurrence:** F(n) = F(n-1) + F(n-2).
 4. **Store and return:** save computed result before returning.
@@ -775,7 +775,7 @@ GPS systems use Dijkstra's algorithm (which is DP — it relies on optimal subst
 - D) Polynomial time and linear space
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Optimal substructure (optimal solution from optimal sub-solutions) and overlapping subproblems (same subproblems recur).
 </details>
 
@@ -787,7 +787,7 @@ B) Optimal substructure (optimal solution from optimal sub-solutions) and overla
 - D) O(log n)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) O(phi^n) where phi approx 1.618 — each call spawns two recursive calls, leading to exponential growth.
 </details>
 
@@ -799,7 +799,7 @@ C) O(phi^n) where phi approx 1.618 — each call spawns two recursive calls, lea
 - D) Neither
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Memoization (top-down) only computes subproblems that are reached through recursion. Tabulation (bottom-up) computes all subproblems in order.
 </details>
 
@@ -811,7 +811,7 @@ B) Memoization (top-down) only computes subproblems that are reached through rec
 - D) It uses recursion
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Merge sort's subproblems are disjoint (left half, right half) — they never overlap, so caching provides no benefit.
 </details>
 
@@ -823,7 +823,7 @@ B) Merge sort's subproblems are disjoint (left half, right half) — they never 
 - D) O(log n)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) O(1) — since dp[i] depends only on dp[i-1] and dp[i-2], we only need two variables.
 </details>
 

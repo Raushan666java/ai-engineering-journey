@@ -623,7 +623,7 @@ Test your understanding with these quick questions.
 - C) When you need synchronous updates
 - D) Never — useReducer is deprecated
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `useReducer` excels when state logic involves multiple sub-values, complex transitions, or when the next state depends on the previous one.**
 
@@ -636,7 +636,7 @@ Test your understanding with these quick questions.
 - C) To memoize API calls
 - D) To track render count
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `React.memo` is a higher-order component that prevents re-rendering when the component's props haven't changed according to shallow comparison.**
 
@@ -649,7 +649,7 @@ Test your understanding with these quick questions.
 - C) Errors in event handlers
 - D) Constructor errors
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **C) Error boundaries do not catch errors in event handlers, asynchronous code (setTimeout, fetch), or server-side rendering.**
 
@@ -662,7 +662,7 @@ Test your understanding with these quick questions.
 - C) Use `useCallback`
 - D) Use `React.Fragment`
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **C) `useCallback` returns a stable function reference that only changes when its dependencies change, preventing unnecessary re-renders of memoized children.**
 
@@ -867,11 +867,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -879,7 +879,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

@@ -522,6 +522,872 @@ D) TLS 1.3
 
 ---
 
+## 📝 Solved Examples (20 MCQs)
+
+**Q1.** A packet filter firewall examines which layers of the OSI model?
+
+A) Layer 1–2 only  
+B) Layer 3–4 (Network and Transport)  
+C) Layer 5–7 (Session to Application)  
+D) Layer 2–3 only
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) Layer 3–4**
+
+**Explanation:** Packet filter firewalls operate at Layer 3 (Network) and Layer 4 (Transport). They examine source/destination IP addresses, port numbers, and protocol (TCP/UDP/ICMP). They do NOT maintain connection state (stateless) and cannot inspect application-layer content. Stateful firewalls also operate at Layers 3–4 but add connection tracking. Application proxy firewalls operate at Layer 7.
+</details>
+
+---
+
+**Q2.** A stateful firewall sees a packet with SYN=1, ACK=0 from an internal IP to an external IP. What state does it record?
+
+A) INVALID  
+B) NEW  
+C) ESTABLISHED  
+D) RELATED
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) NEW**
+
+**Explanation:** A packet with SYN=1 and ACK=0 is the first packet of a TCP connection (the SYN packet initiating the three-way handshake). The firewall records this as a NEW connection in its state table. For the return SYN-ACK packet (SYN=1, ACK=1), it matches the ESTABLISHED state. Packets that don't match any known connection are marked INVALID and dropped. RELATED applies to secondary connections (e.g., FTP data channel).
+</details>
+
+---
+
+**Q3.** In TLS 1.3, how many round trips are required for a full handshake?
+
+A) 0-RTT  
+B) 1-RTT  
+C) 2-RTT  
+D) 3-RTT
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) 1-RTT**
+
+**Explanation:** TLS 1.3 reduces the full handshake to 1-RTT (one round trip). The client includes its key share (ECDHE public value) in the ClientHello. The server responds with its key share, certificate, and CertificateVerify in a single flight. TLS 1.2 required 2-RTT (ClientHello → ServerHello + Certificate → ClientKeyExchange → Finished). TLS 1.3 also supports 0-RTT for session resumption (early data), but this is optional and carries replay risks.
+</details>
+
+---
+
+**Q4.** In IPSec tunnel mode, what is the total number of IP headers in the final packet?
+
+A) 1 (outer header only)  
+B) 2 (outer header + inner original header)  
+C) 3 (outer, inner, and tunnel header)  
+D) 1 encrypted header only
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) 2 headers**
+
+**Explanation:** In tunnel mode, the entire original IP packet (IP header + payload) is encapsulated within a new IP packet:
+- **Outer IP header:** Contains tunnel endpoint IPs (gateway addresses) — visible in cleartext
+- **Inner IP header:** Original source/destination IPs — fully encrypted
+
+In transport mode, only the payload is encrypted (original IP header preserved), so there is 1 IP header.
+</details>
+
+---
+
+**Q5.** An IDS is deployed in which network configuration?
+
+A) Inline (traffic flows through)  
+B) Out-of-band (via port mirror/SPAN)  
+C) On the endpoint only  
+D) On the router itself
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) Out-of-band (via port mirror/SPAN)**
+
+**Explanation:** IDS (Intrusion Detection System) is deployed out-of-band — it receives a copy of network traffic via a switch SPAN port or network tap. It monitors passively and cannot block traffic. IPS (Intrusion Prevention System) is deployed inline — traffic physically flows through it, allowing it to drop or reject malicious packets in real time. An IDS failure does not disrupt network traffic; an IPS failure does.
+</details>
+
+---
+
+**Q6.** What is the key exchange algorithm used in TLS 1.3 that provides forward secrecy?
+
+A) RSA key exchange  
+B) Static DH  
+C) ECDHE (Elliptic Curve Diffie-Hellman Ephemeral)  
+D) Pre-shared key
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: C) ECDHE**
+
+**Explanation:** TLS 1.3 mandates ECDHE (or DHE) for key exchange. RSA key exchange and static DH were removed. ECDHE generates ephemeral (temporary) key pairs per session — the private key is discarded after the handshake. This ensures forward secrecy: even if the server's long-term private signing key is compromised, past session keys cannot be recovered. The "E" in ECDHE stands for Ephemeral.
+</details>
+
+---
+
+**Q7.** What is the amplification factor of an NTP amplification attack?
+
+A) Up to 50×  
+B) Up to 556×  
+C) Up to 10×  
+D) Up to 1000×
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) Up to 556×**
+
+**Explanation:** NTP amplification attacks exploit the `monlist` command (or `MON_GETLIST` in older NTP) which returns a list of up to 600 recent clients. A small query (~60 bytes) can generate a response of up to ∼ 33,000 bytes, giving an amplification factor of up to 556×. DNS amplification is ∼50×, Memcached can reach ∼51,000× (but fewer vulnerable servers).
+</details>
+
+---
+
+**Q8.** In SSH, which layer handles user authentication?
+
+A) Transport Layer  
+B) User Authentication Layer  
+C) Connection Layer  
+D) Application Layer
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) User Authentication Layer**
+
+**Explanation:** SSH has three protocol layers:
+1. **Transport Layer:** Key exchange, server authentication, encryption, integrity (establishes secure tunnel)
+2. **User Authentication Layer:** Authenticates client to server (password, public key, GSSAPI, keyboard-interactive)
+3. **Connection Layer:** Multiplexes multiple channels (shell, exec, port forwarding, SFTP) over the single encrypted tunnel
+
+The Transport Layer must complete before user authentication begins.
+</details>
+
+---
+
+**Q9.** A company deploys an NGFW. Which capability distinguishes it from a traditional stateful firewall?
+
+A) Stateful packet inspection  
+B) Application identification regardless of port/protocol  
+C) NAT support  
+D) VPN termination
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) Application identification regardless of port/protocol**
+
+**Explanation:** NGFW's key differentiator is **application awareness** — it can identify applications (Facebook, Skype, Salesforce) even when they use non-standard ports or hide over port 443 (TLS). Traditional stateful firewalls filter by IP/port only. Additional NGFW capabilities: TLS inspection (decrypt, inspect, re-encrypt), user identity awareness (integrated with AD/LDAP), threat intelligence feeds, and sandboxing. Stateful inspection (A), NAT (C), and VPN (D) are all available in traditional firewalls.
+</details>
+
+---
+
+**Q10.** Which secure email standard uses a centralized CA hierarchy for trust?
+
+A) PGP  
+B) S/MIME  
+C) OpenPGP  
+D) GPG
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) S/MIME**
+
+**Explanation:** S/MIME (Secure/Multipurpose Internet Mail Extensions) relies on a centralized X.509 PKI hierarchy — certificates are issued by trusted Certificate Authorities (CAs), the same infrastructure used for HTTPS. PGP (and its implementations OpenPGP, GPG) uses a decentralized Web of Trust model where users sign each other's keys. S/MIME is preferred in enterprise environments with existing PKI; PGP is common in technical/open-source communities.
+</details>
+
+---
+
+**Q11.** An anomaly-based IDS has a high false positive rate. What is the primary cause?
+
+A) Signatures are outdated  
+B) Normal traffic patterns may deviate from the baseline  
+C) The IDS cannot detect known attacks  
+D) The IDS is deployed out-of-band
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) Normal traffic patterns may deviate from the baseline**
+
+**Explanation:** Anomaly-based detection builds a statistical baseline of "normal" behavior. Legitimate traffic that deviates from this baseline (e.g., an employee working unusual hours, a software update causing unusual traffic patterns) is flagged as anomalous — resulting in false positives. High FP rates are the primary disadvantage of anomaly-based IDS. Hybrid systems (signature + anomaly) try to balance detection rate with false positives.
+</details>
+
+---
+
+**Q12.** In IPSec, which protocol provides authentication header (integrity + auth) without encryption?
+
+A) ESP  
+B) AH  
+C) IKE  
+D) ISAKMP
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) AH (Authentication Header)**
+
+**Explanation:** AH (Protocol 51) provides integrity and authentication for IP packets but does NOT encrypt the payload. It computes an Integrity Check Value (ICV) over the IP header + payload (with mutable fields excluded). ESP (Protocol 50) provides both encryption (confidentiality) and optional authentication. AH is rarely used alone in practice — ESP with authentication is preferred. IKE (UDP 500) handles key exchange.
+</details>
+
+---
+
+**Q13.** What is the default lifetime of a Kerberos Ticket Granting Ticket (TGT)?
+
+A) 1 hour  
+B) 8 hours  
+C) 24 hours  
+D) 7 days
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) 8 hours (typical Windows domain default)**
+
+**Explanation:** TGT lifetime is configurable but the Windows Domain default is typically 8 hours. After TGT expiry, the client must re-authenticate to the AS. Individual Service Tickets (ST) have shorter lifetimes (commonly 1 hour). When a ST expires, the client can request a new one from the TGS using the TGT without re-entering the password — as long as the TGT is still valid.
+</details>
+
+---
+
+**Q14.** Which firewall type terminates the client connection and establishes a new connection to the server?
+
+A) Packet filter  
+B) Stateful inspection  
+C) Application proxy  
+D) Circuit-level gateway
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: C) Application proxy**
+
+**Explanation:** Application proxy firewalls act as intermediaries: the client connects to the proxy, which fully terminates the TCP connection, inspects/validates the application-layer content, and then establishes a separate TCP connection to the destination server. This creates two independent TCP connections: client ↔ proxy and proxy ↔ server. This allows deep inspection of application protocols (HTTP, FTP, SMTP) but adds latency. Packet filter and stateful firewalls pass packets transparently without terminating connections.
+</details>
+
+---
+
+**Q15.** A connection from an internal host to an external server shows these states in the firewall log: NEW, ESTABLISHED, ESTABLISHED, FIN. Which firewall type maintains this state information?
+
+A) Packet filter  
+B) Stateful inspection  
+C) Application proxy  
+D) Circuit-level gateway
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) Stateful inspection**
+
+**Explanation:** Stateful firewalls maintain a connection state table tracking the lifecycle of each TCP/UDP connection: NEW (first SYN), ESTABLISHED (ongoing), FIN/CLOSE (termination), or INVALID (no matching connection). The state is tracked using the 5-tuple (src IP, dst IP, src port, dst port, protocol). Packet filters examine each packet independently without state awareness.
+</details>
+
+---
+
+**Q16.** In TLS 1.2, which message contains the server's X.509 certificate?
+
+A) ServerHello  
+B) Certificate  
+C) ServerKeyExchange  
+D) ServerHelloDone
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) Certificate**
+
+**Explanation:** In TLS 1.2 handshake order: ClientHello → ServerHello → **Certificate** (server's X.509 certificate chain) → ServerKeyExchange (if using DHE/ECDHE) → CertificateRequest (optional) → ServerHelloDone. The Certificate message is separate from ServerHello (which only contains version, cipher suite, and random nonce). The client verifies the certificate chain before trusting the server.
+</details>
+
+---
+
+**Q17.** SSH port forwarding with `-D 1080` creates what type of proxy?
+
+A) HTTP proxy  
+B) SOCKS proxy  
+C) Transparent proxy  
+D) Reverse proxy
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: B) SOCKS proxy**
+
+**Explanation:** `ssh -D 1080 user@gateway` creates a SOCKS5 dynamic forwarding proxy on local port 1080. Applications configured to use SOCKS5 proxy (localhost:1080) will tunnel their traffic through the SSH connection. Local forwarding (`-L`) forwards a specific local port to a remote destination. Remote forwarding (`-R`) exposes a local service to the remote network. SOCKS proxy is versatile — it handles any TCP application protocol.
+</details>
+
+---
+
+**Q18.** What is the primary security disadvantage of using SSL VPN over IPSec VPN?
+
+A) TCP-over-TCP performance issue  
+B) No encryption  
+C) Requires pre-shared keys  
+D) Cannot authenticate users
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: A) TCP-over-TCP performance issue**
+
+**Explanation:** SSL VPNs encapsulate TCP traffic within TLS (which itself runs over TCP). When packet loss occurs, both the inner TCP and outer TLS attempt retransmission, causing a cascading failure known as "TCP meltdown" or TCP-over-TCP problem. IPSec operates at Layer 3 (IP level), so it does not suffer from this issue. SSL VPNs are still widely used for their ease of deployment (browser-based, no client, TCP 443 usually open).
+</details>
+
+---
+
+**Q19.** In PGP, the session key is encrypted with which key?
+
+A) Sender's private key  
+B) Sender's public key  
+C) Recipient's public key  
+D) Recipient's private key
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: C) Recipient's public key**
+
+**Explanation:** PGP uses hybrid encryption:
+1. Generate a random session key (e.g., AES-256 key)
+2. Encrypt the message with the session key (symmetric — fast)
+3. Encrypt the session key with the **recipient's RSA public key** (asymmetric — only recipient can decrypt)
+4. Optionally: sign the message hash with the sender's private key
+
+The recipient decrypts the session key using their private key, then uses it to decrypt the message. This combines symmetric speed with asymmetric key management.
+</details>
+
+---
+
+**Q20.** Which OWASP Mobile Top 10 risk involves improper certificate validation allowing MITM attacks on mobile banking apps?
+
+A) M1 — Improper Platform Usage  
+B) M2 — Insecure Data Storage  
+C) M3 — Insecure Communication  
+D) M4 — Insecure Authentication
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer: C) M3 — Insecure Communication**
+
+**Explanation:** M3 (Insecure Communication) covers: no TLS enforcement, improper certificate validation (accepting self-signed certs or disabled hostname verification), using outdated TLS versions (SSL 3.0, TLS 1.0), weak cipher suites, and cleartext HTTP traffic. In mobile banking, this allows MITM attacks where an attacker with network access (public Wi-Fi, rogue cell tower) can intercept or modify traffic between the app and the server. Mitigation: SSL pinning (certificate/public key pinning) and strict TLS configuration.
+</details>
+
+---
+
+### TypeScript Implementation: TLS 1.3 Handshake Simulator
+
+```typescript
+/**
+ * TLS 1.3 Handshake Simulator
+ * Demonstrates the 1-RTT handshake with ECDHE key exchange
+ */
+import * as crypto from 'crypto';
+
+interface TLSClientHello {
+  version: string;
+  cipherSuites: string[];
+  random: string;
+  keyShare: { group: string; key: string };  // ECDHE public key (hex)
+  supportedGroups: string[];
+}
+
+interface TLSServerHello {
+  version: string;
+  chosenCipherSuite: string;
+  random: string;
+  keyShare: { group: string; key: string };
+  certificate: string; // PEM-encoded
+  certificateVerify: string; // signature (hex)
+}
+
+class TLSHandshakeSimulator {
+  private sharedSecret: Buffer | null = null;
+
+  // Simulate client generating first message with key share
+  clientHello(): { message: TLSClientHello; privateKey: crypto.KeyObject } {
+    const ecdh = crypto.createECDH('prime256v1');
+    ecdh.generateKeys();
+
+    return {
+      message: {
+        version: 'TLS 1.3',
+        cipherSuites: [
+          'TLS_AES_256_GCM_SHA384',
+          'TLS_CHACHA20_POLY1305_SHA256'
+        ],
+        random: crypto.randomBytes(32).toString('hex'),
+        keyShare: {
+          group: 'prime256v1 (P-256)',
+          key: ecdh.getPublicKey('hex')
+        },
+        supportedGroups: ['P-256', 'P-384', 'X25519']
+      },
+      privateKey: ecdh
+    };
+  }
+
+  // Simulate server processing ClientHello and responding
+  serverHello(clientHello: TLSClientHello, serverKeyPair: { privateKey: crypto.KeyObject }): {
+    message: TLSServerHello;
+    computedSharedSecret: Buffer;
+  } {
+    const serverEcdh = crypto.createECDH('prime256v1');
+    serverEcdh.generateKeys();
+
+    // Server computes shared secret from client's public key
+    const sharedSecret = serverEcdh.computeSecret(
+      Buffer.from(clientHello.keyShare.key, 'hex'),
+      'hex',
+      'hex'
+    );
+
+    return {
+      message: {
+        version: 'TLS 1.3',
+        chosenCipherSuite: 'TLS_AES_256_GCM_SHA384',
+        random: crypto.randomBytes(32).toString('hex'),
+        keyShare: {
+          group: 'prime256v1 (P-256)',
+          key: serverEcdh.getPublicKey('hex')
+        },
+        certificate: '-----BEGIN CERTIFICATE-----\n...server cert...\n-----END CERTIFICATE-----',
+        certificateVerify: crypto.randomBytes(64).toString('hex') // simplified
+      },
+      computedSharedSecret: Buffer.from(sharedSecret, 'hex')
+    };
+  }
+
+  // Client computes shared secret from server's public key
+  clientFinish(serverHello: TLSServerHello, clientKeyPair: crypto.KeyObject): Buffer {
+    const sharedSecret = (clientKeyPair as crypto.ECDH).computeSecret(
+      Buffer.from(serverHello.keyShare.key, 'hex'),
+      'hex',
+      'hex'
+    );
+    this.sharedSecret = Buffer.from(sharedSecret, 'hex');
+    return this.sharedSecret;
+  }
+
+  // Derive AES-256 key from shared secret using HKDF (simplified)
+  deriveEncryptionKey(sharedSecret: Buffer): Buffer {
+    // TLS 1.3 uses HKDF-Extract and HKDF-Expand
+    // Simplified: SHA-256 of shared secret (actual TLS uses labeled HKDF)
+    return crypto.createHash('sha256').update(sharedSecret).digest();
+  }
+
+  runFullHandshake(): void {
+    console.log('=== TLS 1.3 Handshake Simulation ===\n');
+
+    // Step 1: ClientHello (includes key share)
+    const { message: clientHello, privateKey: clientPriv } = this.clientHello();
+    console.log('1. ClientHello sent');
+    console.log(`   Key share group: ${clientHello.keyShare.group}`);
+    console.log(`   Client public key (hex): ${clientHello.keyShare.key.slice(0, 32)}...`);
+    console.log(`   Supported: ${clientHello.cipherSuites.join(', ')}\n`);
+
+    // Step 2: Server processes and responds
+    const serverPriv = crypto.createECDH('prime256v1');
+    serverPriv.generateKeys();
+    const { message: serverHello } = this.serverHello(clientHello, { privateKey: serverPriv });
+    console.log('2. ServerHello received');
+    console.log(`   Chosen cipher: ${serverHello.chosenCipherSuite}`);
+    console.log(`   Server public key (hex): ${serverHello.keyShare.key.slice(0, 32)}...\n`);
+
+    // Step 3: Client computes shared secret
+    const clientShared = this.clientFinish(serverHello, clientPriv);
+    console.log('3. Client computed shared secret');
+
+    // Step 4: Derive encryption keys
+    const clientKey = this.deriveEncryptionKey(clientShared);
+    console.log(`4. Client derived AES-256 key (hex): ${clientKey.toString('hex').slice(0, 32)}...`);
+
+    // Verify both sides get same key
+    const serverShared = Buffer.from(serverPriv.computeSecret(
+      Buffer.from(clientHello.keyShare.key, 'hex'),
+      'hex',
+      'hex'
+    ), 'hex');
+    const serverKey = this.deriveEncryptionKey(serverShared);
+
+    console.log(`5. Server derived same key: ${clientKey.equals(serverKey)}`);
+    console.log('\n=== Handshake Complete (1-RTT) ===');
+    console.log('Forward Secrecy: ✅ (ephemeral keys discarded after session)');
+    console.log('AEAD Encryption Ready: ✅');
+  }
+}
+
+// Run demo
+const tls = new TLSHandshakeSimulator();
+tls.runFullHandshake();
+```
+
+### TypeScript Implementation: Firewall Rule Simulator
+
+```typescript
+/**
+ * Firewall Rule Simulator
+ * Implements stateless packet filter and stateful inspection firewall
+ */
+
+interface Packet {
+  srcIp: string;
+  dstIp: string;
+  srcPort: number;
+  dstPort: number;
+  protocol: 'TCP' | 'UDP' | 'ICMP';
+  flags: string[]; // TCP flags: SYN, ACK, FIN, RST
+}
+
+interface FirewallRule {
+  id: string;
+  action: 'ALLOW' | 'DENY';
+  srcIp?: string;
+  dstIp?: string;
+  srcPort?: number;
+  dstPort?: number;
+  protocol?: 'TCP' | 'UDP' | 'ICMP';
+  priority: number;
+  log: boolean;
+}
+
+interface ConnectionState {
+  srcIp: string;
+  dstIp: string;
+  srcPort: number;
+  dstPort: number;
+  protocol: string;
+  state: 'NEW' | 'ESTABLISHED' | 'RELATED' | 'INVALID';
+  lastSeen: number;
+}
+
+class FirewallSimulator {
+  private rules: FirewallRule[] = [];
+  private stateTable: ConnectionState[] = [];
+  private stats = { allowed: 0, denied: 0, logged: 0 };
+
+  addRule(rule: FirewallRule): void {
+    this.rules.push(rule);
+    this.rules.sort((a, b) => b.priority - a.priority);
+  }
+
+  private matchRule(packet: Packet): FirewallRule | null {
+    for (const rule of this.rules) {
+      if (rule.protocol && rule.protocol !== packet.protocol) continue;
+      if (rule.srcPort && rule.srcPort !== packet.srcPort) continue;
+      if (rule.dstPort && rule.dstPort !== packet.dstPort) continue;
+      if (rule.srcIp && !this.ipMatch(rule.srcIp, packet.srcIp)) continue;
+      if (rule.dstIp && !this.ipMatch(rule.dstIp, packet.dstIp)) continue;
+      return rule;
+    }
+    return null;
+  }
+
+  private ipMatch(pattern: string, ip: string): boolean {
+    if (pattern.includes('/')) {
+      const [base, mask] = pattern.split('/');
+      const maskBits = parseInt(mask);
+      const ipNum = this.ipToNumber(ip);
+      const baseNum = this.ipToNumber(base);
+      const shift = 32 - maskBits;
+      return (ipNum >> shift) === (baseNum >> shift);
+    }
+    return pattern === ip;
+  }
+
+  private ipToNumber(ip: string): number {
+    return ip.split('.').reduce((acc, oct) => (acc << 8) + parseInt(oct), 0) >>> 0;
+  }
+
+  private getConnectionState(packet: Packet): ConnectionState | undefined {
+    return this.stateTable.find(s =>
+      s.srcIp === packet.srcIp &&
+      s.dstIp === packet.dstIp &&
+      s.srcPort === packet.srcPort &&
+      s.dstPort === packet.dstPort &&
+      s.protocol === packet.protocol
+    );
+  }
+
+  private updateStateTable(packet: Packet, state: ConnectionState['state']): void {
+    const existing = this.getConnectionState(packet);
+    if (existing) {
+      existing.state = state === 'ESTABLISHED' ? 'ESTABLISHED' : state;
+      existing.lastSeen = Date.now();
+    } else {
+      this.stateTable.push({
+        srcIp: packet.srcIp,
+        dstIp: packet.dstIp,
+        srcPort: packet.srcPort,
+        dstPort: packet.dstPort,
+        protocol: packet.protocol,
+        state,
+        lastSeen: Date.now()
+      });
+    }
+  }
+
+  // Stateful inspection
+  private statefulInspect(packet: Packet): boolean {
+    const isSyn = packet.flags.includes('SYN') && !packet.flags.includes('ACK');
+    const isAck = packet.flags.includes('ACK');
+    const isRst = packet.flags.includes('RST');
+    const isFin = packet.flags.includes('FIN');
+
+    if (isSyn) {
+      // New outbound connection
+      this.updateStateTable(packet, 'NEW');
+      return true;
+    }
+
+    const connState = this.getConnectionState(packet);
+    if (!connState) return false; // INVALID - no matching connection
+
+    if (isRst || isFin) {
+      this.stateTable = this.stateTable.filter(s => s !== connState);
+      return true; // Allow termination
+    }
+
+    if (isAck && connState.state === 'NEW') {
+      this.updateStateTable(packet, 'ESTABLISHED');
+      return true;
+    }
+
+    return connState.state === 'ESTABLISHED' || connState.state === 'RELATED';
+  }
+
+  processPacket(packet: Packet): { action: string; rule?: string; reason: string } {
+    // Stateful inspection first
+    if (!this.statefulInspect(packet)) {
+      this.stats.denied++;
+      return { action: 'DENY', reason: `INVALID state - no matching connection ${packet.srcIp}:${packet.srcPort} → ${packet.dstIp}:${packet.dstPort}` };
+    }
+
+    // Rule matching
+    const rule = this.matchRule(packet);
+    if (!rule) {
+      this.stats.denied++;
+      return { action: 'DENY', reason: 'No matching rule (implicit deny)' };
+    }
+
+    if (rule.log) this.stats.logged++;
+
+    if (rule.action === 'DENY') {
+      this.stats.denied++;
+      return { action: 'DENY', rule: rule.id, reason: `Blocked by rule ${rule.id}` };
+    }
+
+    this.stats.allowed++;
+    return { action: 'ALLOW', rule: rule.id, reason: `Allowed by rule ${rule.id}` };
+  }
+
+  getStats() {
+    return this.stats;
+  }
+}
+
+// Demo
+const fw = new FirewallSimulator();
+fw.addRule({ id: 'R1', action: 'DENY', dstPort: 22, protocol: 'TCP', priority: 100, log: true });
+fw.addRule({ id: 'R2', action: 'ALLOW', srcIp: '10.0.0.0/8', priority: 50, log: false });
+fw.addRule({ id: 'R3', action: 'ALLOW', dstPort: 443, protocol: 'TCP', priority: 40, log: false });
+
+const testPackets: Packet[] = [
+  { srcIp: '10.0.0.5', dstIp: '8.8.8.8', srcPort: 50000, dstPort: 443, protocol: 'TCP', flags: ['SYN'] },
+  { srcIp: '10.0.0.5', dstIp: '8.8.8.8', srcPort: 50000, dstPort: 22, protocol: 'TCP', flags: ['SYN'] },
+  { srcIp: '192.168.1.100', dstIp: '10.0.0.1', srcPort: 40000, dstPort: 443, protocol: 'TCP', flags: ['SYN'] },
+  { srcIp: '10.0.0.5', dstIp: '8.8.8.8', srcPort: 50000, dstPort: 443, protocol: 'TCP', flags: ['ACK'] },
+];
+
+for (const pkt of testPackets) {
+  const result = fw.processPacket(pkt);
+  console.log(`${result.action}: ${pkt.srcIp}:${pkt.srcPort} → ${pkt.dstIp}:${pkt.dstPort} [${result.reason}]`);
+}
+console.log('Stats:', fw.getStats());
+```
+
+### Mermaid Diagram: TLS Handshake Comparison (1.2 vs 1.3)
+
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant S as Server
+
+    rect rgb(232, 245, 233)
+    Note over C,S: TLS 1.2 (2-RTT)
+    C->>S: ClientHello (version, cipher suites, random)
+    S->>C: ServerHello (chosen suite, random)
+    S->>C: Certificate (X.509 chain)
+    S->>C: ServerKeyExchange (DH params)
+    S->>C: ServerHelloDone
+    C->>S: ClientKeyExchange (DH public / enc pre-master)
+    C->>S: ChangeCipherSpec + Finished
+    S->>C: ChangeCipherSpec + Finished
+    Note over C,S: 🔒 Encrypted Data
+    end
+
+    rect rgb(255, 243, 224)
+    Note over C,S: TLS 1.3 (1-RTT)
+    C->>S: ClientHello (key share included)
+    S->>C: ServerHello + KeyShare + Certificate + CertificateVerify + Finished
+    C->>S: Client Finished + Application Data
+    Note over C,S: 🔒 Encrypted Data (faster!)
+    end
+```
+
+### Zero-Trust Architecture (ZTA)
+
+**Core Principle:** "Never trust, always verify." No entity is trusted by default — every access request must be authenticated, authorized, and continuously validated.
+
+**Key Components of Zero Trust:**
+1. **Identity-based access:** Authentication required for every request (not just perimeter)
+2. **Micro-segmentation:** Network divided into smallest possible zones (per-workload or per-device)
+3. **Least privilege:** Minimum access required, just-in-time (JIT) access elevation
+4. **Continuous monitoring:** Every access logged and analyzed in real-time
+5. **Device health checks:** Only compliant devices can access resources
+6. **Encrypted traffic:** All traffic encrypted, even within the network
+
+**Zero Trust vs Traditional Security:**
+| Aspect | Traditional (Perimeter) | Zero Trust |
+|--------|------------------------|------------|
+| Trust model | Trust internal, distrust external | Never trust, always verify |
+| Access basis | Network location (IP) | Identity + device + context |
+| Segmentation | Broad (internal vs DMZ) | Micro-segmentation (per-workload) |
+| Authentication | At perimeter only | Every access request |
+| Visibility | Limited | Full (all traffic logged) |
+
+## 📖 Exercise Bank (30 Questions)
+
+**Q1.** Compare the security level and performance of stateful inspection vs application proxy firewalls.
+
+**Q2.** A packet arrives with source IP = 192.168.1.1, dest port = 443, SYN=1. Walk through how a stateful firewall processes this packet and what state table entry is created.
+
+**Q3.** In IPSec transport mode, explain which parts of the packet are encrypted vs authenticated when using ESP.
+
+**Q4.** Draw the TLS 1.2 handshake sequence with all 10 messages in order. Label each message's purpose.
+
+**Q5.** Calculate the total overhead (in bytes) added by TLS 1.3 record layer for a 1000-byte HTTP response. (TCP header = 20, IP = 20, TLS record = 5, AEAD tag = 16)
+
+**Q6.** Explain why NTP amplification factor (556×) is higher than DNS amplification (50×). What mitigations exist?
+
+**Q7.** A company needs remote access for 500 employees. Compare IPSec VPN vs SSL VPN for this use case across: client requirement, NAT traversal, granular access control, and performance.
+
+**Q8.** In SSH public key authentication, describe the exact cryptographic steps from key generation to successful login.
+
+**Q9.** A network has an IDS deployed out-of-band. An attacker sends a malicious packet. Why can't the IDS block it? What change is needed to enable blocking?
+
+**Q10.** In PGP, what is the purpose of ASCII Armor? How does it relate to Radix-64 encoding?
+
+**Q11.** Calculate the maximum number of concurrent connections a stateful firewall can track if each state entry uses 256 bytes and the firewall has 4 GB of RAM dedicated to the state table.
+
+**Q12.** Compare signature-based vs anomaly-based IDS across: detection rate for zero-day attacks, false positive rate, maintenance overhead, and hardware requirements.
+
+**Q13.** In TLS 1.3, why was RSA key exchange removed? What attack did it enable?
+
+**Q14.** A DNS amplification attack sends a 60-byte query to an open resolver. The response is 3000 bytes. What is the amplification factor? If 10,000 such queries are sent simultaneously, what is the total traffic directed at the victim?
+
+**Q15.** Describe the differences between TLS 1.2 and TLS 1.3 in terms of: handshake round trips, cipher suites, forward secrecy, and removed features.
+
+**Q16.** For S/MIME encrypted email, what certificates does the sender need? What certificates does the recipient need?
+
+**Q17.** How does OCSP stapling improve TLS handshake privacy compared to standard OCSP?
+
+**Q18.** In a zero-trust architecture, what happens when an employee's device fails a health check (e.g., missing security patches)?
+
+**Q19.** A firewall has these rules in order: (1) ALLOW from 10.0.0.0/8, (2) DENY to any, (3) ALLOW port 80. A packet from 10.1.0.5 to 8.8.8.8:80 arrives. Is it allowed or denied? Why?
+
+**Q20.** Explain SYN cookies in detail: how they work, what problem they solve, and the cryptographic mechanism they use.
+
+**Q21.** In SSH port forwarding, what is the difference between `-L 8080:internal:80` and `-R 8080:localhost:80`? Give a use case for each.
+
+**Q22.** Compare WPA2 vs WPA3 for Wi-Fi security. What key exchange improvement does WPA3 introduce?
+
+**Q23.** A NGFW performs TLS inspection. Walk through the steps: how does the firewall decrypt, inspect, and re-encrypt HTTPS traffic?
+
+**Q24.** Calculate the CPU overhead of interrupt-driven I/O for a 10 Gbps NIC: interrupt per packet (1500 bytes), 200 cycles per interrupt, CPU = 3 GHz.
+
+**Q25.** What is DNSSEC and how does it prevent DNS cache poisoning? Compare DNSSEC with DNS over HTTPS (DoH).
+
+**Q26.** In Kerberos authentication, why does the client need to send an authenticator along with the TGT to the TGS?
+
+**Q27.** Explain the concept of "identity-aware" firewalling in NGFWs. How does the firewall associate traffic with specific users?
+
+**Q28.** A malicious insider uses SSH tunneling to bypass the corporate firewall. How would you detect this? What controls could prevent it?
+
+**Q29.** For the OWASP Mobile Top 10, describe how M2 (Insecure Data Storage) manifests in a mobile banking app and what protections should be implemented.
+
+**Q30.** You are designing a firewall rule set for a small business. List the minimum rules you would implement for: web server (port 80/443), email server (SMTP 25/587, IMAP 993), SSH administration (port 22 from office IP), and general outbound internet access.
+
+**Answer Key:**
+
+<details>
+<summary>Show Answer Key</summary>
+
+**A1.** Stateful inspection: faster (no termination), moderate security (IP/port + state), suitable for high-throughput. Application proxy: slower (terminates connections), highest security (full app-layer inspection), suitable for DMZ/protected segments. NGFW combines both.
+
+**A2.** SYN=1, ACK=0 → NEW connection. Firewall creates state entry: {src: 192.168.1.1:443, dst: server:ephemeral, state: NEW}. Return SYN-ACK matches ESTABLISHED.
+
+**A3.** ESP in transport mode: Original IP header (not encrypted, unauthenticated in ESP), ESP header, Payload (encrypted by ESP), ESP trailer (padded), ESP Auth (ICV). TCP payload encrypted, IP header preserved.
+
+**A4.** Order: (1) ClientHello, (2) ServerHello, (3) Certificate, (4) ServerKeyExchange, (5) CertificateRequest (opt), (6) ServerHelloDone, (7) ClientCertificate (opt), (8) ClientKeyExchange, (9) CertificateVerify (opt), (10) ChangeCipherSpec + Finished (client), (11) ChangeCipherSpec + Finished (server). Total 10-13 messages, 2-RTT.
+
+**A5.** Total = HTTP(1000) + TLS record(5) + AEAD tag(16) + nonce(8 implicit) = 1029 bytes. IP(20) + TCP(20) + payload(1029) = 1069 bytes on wire. Overhead = 69 bytes.
+
+**A6.** NTP monlist returns up to 600 addresses (~33 KB) for a 60-byte query (556×). DNS DNSSEC responses are ~3 KB for ~60-byte query (50×). Mitigation: disable monlist (upgrade NTP), BCP 38 filtering, rate limiting.
+
+**A7.** IPSec: requires client software, NAT issues (NAT-T needed), full network access, higher throughput, complex setup. SSL VPN: browser-based/web client, no NAT issues (TCP 443), per-app granular access, TCP-over-TCP performance, easy setup.
+
+**A8.** Steps: (1) User generates RSA/ECDSA key pair locally. (2) Public key copied to server's ~/.ssh/authorized_keys. (3) Client sends public key fingerprint. (4) Server challenges by encrypting random with public key. (5) Client decrypts with private key and returns hash. (6) Server verifies → authenticated.
+
+**A9.** IDS receives copy of traffic (passive). It can alert but not block. To block, deploy IPS (inline) or integrate IDS with firewall (block via API/SCAP). Alternatively, reconfigure switch to route traffic through IPS.
+
+**A10.** ASCII Armor (Radix-64) converts binary PGP data (encrypted message + keys) to printable ASCII using base64 with CRC-24 checksum and header/footer lines. Ensures email-safe transmission (email protocols may corrupt binary data).
+
+**A11.** 4 GB = 4 × 2^30 = 4,294,967,296 bytes. State entries = 4,294,967,296 / 256 = 16,777,216 ≈ 16.8 million concurrent connections.
+
+**A12.** Signature: 0% zero-day detection, low FP, high signature maintenance, moderate CPU. Anomaly: can detect zero-days, high FP, low maintenance, high CPU (baseline training). Hybrid: best overall.
+
+**A13.** RSA key exchange lacks forward secrecy — if server's private key is compromised, all past session keys can be decrypted. TLS 1.3 mandates (EC)DHE for key exchange, ensuring forward secrecy.
+
+**A14.** Amplification = 3000/60 = 50×. Total traffic = 10000 × 3000 = 30,000,000 bytes = 30 MB directed at victim. The attacker only sent 10000 × 60 = 600 KB.
+
+**A15.** TLS 1.2: 2-RTT, CBC + GCM + ChaCha20, optional forward secrecy, supports RSA key exchange. TLS 1.3: 1-RTT, AEAD only (GCM, ChaCha20-Poly1305), mandatory forward secrecy, removed RSA key exchange, static DH, compression, renegotiation.
+
+**A16.** Sender needs: recipient's certificate (to encrypt session key). Recipient needs: sender's certificate (+ chain) to verify signature, their own private key to decrypt. Both need CA certificates to validate chains.
+
+**A17.** Standard OCSP: client directly queries CA's OCSP responder, revealing which websites the client visits. OCSP stapling: server fetches OCSP response and provides it during TLS handshake — CA learns nothing about clients. Privacy win.
+
+**A18.** In ZTA: device is denied access (or placed in quarantine VLAN). User can access only from a compliant device. Remediation: update OS/patch, then recheck. Continuous compliance ensures devices are never trusted indefinitely.
+
+**A19.** Rule (1) matches (10.0.0.0/8 includes 10.1.0.5) → ALLOW. Rules processed top-down; first match applies. Even though (2) DENY to any would match, it's not reached because (1) matched first.
+
+**A20.** SYN cookies: server encodes connection parameters (MSS, timestamp) in SYN-ACK sequence number using cryptographic hash with server secret. No memory allocated until ACK received. Defends against SYN flood by eliminating half-open queue exhaustion. The hash is verified when ACK returns.
+
+**A21.** `-L 8080:internal:80`: local port 8080 forwarded to internal:80 through SSH server. Use: access internal web server from outside. `-R 8080:localhost:80`: server port 8080 forwarded to local machine's port 80. Use: expose local dev server to internet via SSH server.
+
+**A22.** WPA2: CCMP/AES encryption, pre-shared key or 802.1X, vulnerable to KRACK (key reinstallation attack). WPA3: SAE (Simultaneous Authentication of Equals) replaces PSK handshake, provides forward secrecy, protects against dictionary attacks, uses 192-bit security suite (WPA3-Enterprise).
+
+**A23.** (1) Firewall intercepts ClientHello → acts as MITM. (2) Establishes TLS with client (presents its own cert — requires client to trust firewall's CA cert). (3) Establishes separate TLS with actual server. (4) Decrypts client traffic, inspects application content (rules/IPS), re-encrypts for server. (5) Returns server response through reverse process.
+
+**A24.** Packet rate = 10 Gbps / (1500 × 8) = 833,333 pkt/s. Interrupts/s = 833,333. Cycles/s = 833,333 × 200 = 166,666,600. CPU time = 166.7M / 3G = 5.6%. With interrupt coalescing (16 packets per interrupt): 0.35%.
+
+**A25.** DNSSEC signs DNS records with digital signatures (RRSIG). Resolver validates signature using DNSKEY (public key). Prevents cache poisoning because forged records won't verify. DoH encrypts DNS queries in HTTPS (privacy) but doesn't validate origin — DNSSEC + DoH provides both security and privacy.
+
+**A26.** The authenticator (client ID + timestamp, encrypted with TGS session key) proves the client knows the TGS session key. Without it, anyone possessing the TGT (which is encrypted with KDC's key, but could be replayed) could request service tickets. Timestamp prevents replay.
+
+**A27.** NGFW integrates with AD/LDAP/IdP. When user authenticates (via captive portal, 802.1X, or mapping IP→user from AD logs), firewall associates traffic flows with user identity. Policies then apply per-user: "Allow user Alice to access HR app, block user Bob" regardless of IP.
+
+**A28.** Detection: Deep packet inspection (SSH traffic on unusual ports/time), volume analysis (large data transfers via SSH), SSH protocol anomalies. Prevention: application-layer firewalls that block SSH port forwarding (`-L`/`-R` flags), allow SSH only through jump hosts with logging, DLP systems.
+
+**A29.** M2 in banking: storing session tokens in SharedPreferences (Android) or NSUserDefaults (iOS), caching transaction data in SQLite without encryption, logging sensitive data, backup exposure. Protections: use EncryptedSharedPreferences, Android Keystore/iOS Keychain, disable backups, never log sensitive data.
+
+**A30.** Minimum rules: ALLOW any → web-srv:80/443 (HTTP/HTTPS), ALLOW office-IP → mail-srv:25 (SMTP), ALLOW office-IP → mail-srv:587 (submission), ALLOW any → mail-srv:993 (IMAPS), ALLOW office-IP → admin-srv:22 (SSH), ALLOW internal → any (outbound established), DENY all else.
+</details>
+
 ## Summary
 
 1. **Firewalls** evolved from stateless packet filters (Layer 3–4) → stateful inspection (with connection tracking) → application proxy (full Layer 7 awareness) → NGFW (integrated IDS/IPS, app identity, threat intel).

@@ -169,7 +169,7 @@ Policy evaluation computes $V_\pi$ for a given policy $\pi$ by iteratively apply
 
 1. Initialize $V(s) = 0$ for all $s \in \mathcal{S}$.
 2. Set a convergence threshold $\theta$ (e.g., $10^{-6}$).
-3. Repeat until $\Delta < \theta$:
+3. Repeat until $\Delta &lt; \theta$:
    - Set $\Delta = 0$.
    - For each $s \in \mathcal{S}$:
      - $v \leftarrow V(s)$
@@ -236,7 +236,7 @@ The terminal state D gives reward +1 when reached, so V(D) = 1.
 #### Python Implementation
 
 <details>
-<summary>Python</summary>
+<summary>Python&lt;/summary&gt;
 
 ```python
 import numpy as np
@@ -369,7 +369,7 @@ Policy unchanged -- converged in 2 iterations.
 #### Python Implementation
 
 <details>
-<summary>Python</summary>
+<summary>Python&lt;/summary&gt;
 
 ```python
 import numpy as np
@@ -413,7 +413,7 @@ def policy_iteration(P, R, gamma, n_actions, theta=1e-6):
 
 #### Complexity Analysis
 
-- **Time:** $O(|S|^2 * |A| * (k_{eval} * n_{iter}))$ -- each iteration requires a full policy evaluation (which itself takes $k_{eval}$ sweeps), but the number of policy iterations $n_{iter}$ is typically very small (often < 20).
+- **Time:** $O(|S|^2 * |A| * (k_{eval} * n_{iter}))$ -- each iteration requires a full policy evaluation (which itself takes $k_{eval}$ sweeps), but the number of policy iterations $n_{iter}$ is typically very small (often &lt; 20).
 - **Space:** $O(|S|)$ for values plus $O(|S|)$ for the policy.
 - **Why so few iterations?** Policy iteration converges in $O(|A|^{|S|})$ in the worst case, but in practice each improvement strictly increases value, and there are only finitely many deterministic policies.
 
@@ -451,7 +451,7 @@ $$V_{k+1}(s) = \max_a \left[ R(s, a) + \gamma \sum_{s'} P(s' \mid s, a) V_k(s') 
 
 1. Initialize $V(s) = 0$ for all $s$.
 2. Set convergence threshold $\theta$.
-3. Repeat until $\Delta < \theta$:
+3. Repeat until $\Delta &lt; \theta$:
    - $\Delta \leftarrow 0$
    - For each $s \in \mathcal{S}$:
      - $v \leftarrow V(s)$
@@ -512,14 +512,14 @@ function VALUE-ITERATION(P, R, gamma, theta) returns V, pi
 | C | 0 + 0.9(1) = 0.9 | 0 + 0.9(0) = 0 | 0.9 | 0.9 | 0 |
 | D | Terminal | Terminal | 1 | 1 | 0 |
 
-Delta = 0 < theta -- converged.
+Delta = 0 &lt; theta -- converged.
 
 **Extracted policy:** A->down or right (tie), B->down, C->right, D->terminal.
 
 #### Python Implementation
 
 <details>
-<summary>Python</summary>
+<summary>Python&lt;/summary&gt;
 
 ```python
 import numpy as np
@@ -742,7 +742,7 @@ States: 1-2-3-4-5 (goal at 5, reward +10). Actions: {left, right}. gamma = 0.9, 
 #### Python Implementation
 
 <details>
-<summary>Python</summary>
+<summary>Python&lt;/summary&gt;
 
 ```python
 import numpy as np
@@ -826,7 +826,7 @@ private:
 </details>
 
 <details>
-<summary>Java</summary>
+<summary>Java&lt;/summary&gt;
 
 ```java
 import java.util.Random;
@@ -985,7 +985,7 @@ SARSA learns that Right from state 2 is dangerous (Q = -10). Over many episodes,
 #### Python Implementation
 
 <details>
-<summary>Python</summary>
+<summary>Python&lt;/summary&gt;
 
 ```python
 import numpy as np
@@ -1071,7 +1071,7 @@ private:
 </details>
 
 <details>
-<summary>Java</summary>
+<summary>Java&lt;/summary&gt;
 
 ```java
 import java.util.Random;
@@ -1235,7 +1235,7 @@ Backpropagation adjusts $\theta$ to push Q(1, L) toward 0.45 and Q(2, R) toward 
 #### Python Implementation
 
 <details>
-<summary>Python</summary>
+<summary>Python&lt;/summary&gt;
 
 ```python
 import numpy as np
@@ -1394,7 +1394,7 @@ function REINFORCE(env, gamma, alpha, episodes) returns pi_theta
 #### Python Implementation
 
 <details>
-<summary>Python</summary>
+<summary>Python&lt;/summary&gt;
 
 ```python
 import numpy as np
@@ -1482,7 +1482,7 @@ class REINFORCE:
 
 | Edge Case | Issue | Solution |
 |-----------|-------|----------|
-| Very long episodes | High variance, vanishing gradients | Discount factor < 1 reduces effective horizon |
+| Very long episodes | High variance, vanishing gradients | Discount factor &lt; 1 reduces effective horizon |
 | Continuous actions | Softmax doesn't apply | Gaussian policy: pi(a|s) = N(mu_theta(s), sigma^2) |
 | Unstable learning | Policy collapses to deterministic | Add entropy bonus to loss to encourage exploration |
 | Sparse binary rewards | No gradient from zero-return episodes | Use baseline (REINFORCE with baseline) |
@@ -1672,7 +1672,7 @@ The online network $\theta$ selects the action; the target network $\theta^-$ ev
 - C) On-policy uses neural networks; off-policy uses tables
 - D) There is no practical difference
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 A) On-policy (SARSA) learns the value of the policy being followed; off-policy (Q-learning) learns the optimal policy independent of the exploration policy.</details>
 
 **Q2:** DQN's experience replay helps because it:
@@ -1681,7 +1681,7 @@ A) On-policy (SARSA) learns the value of the policy being followed; off-policy (
 - C) Speeds up computation through GPU batching
 - D) Eliminates the need for a target network
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 B) Experience replay randomizes over transitions, breaking the temporal correlations that would otherwise cause instability in DQN training.</details>
 
 **Q3:** The policy gradient theorem provides:
@@ -1690,7 +1690,7 @@ B) Experience replay randomizes over transitions, breaking the temporal correlat
 - C) The value function for any policy
 - D) The convergence rate of Q-learning
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 B) The policy gradient theorem gives $\nabla J(\theta) = \mathbb{E}[\nabla \log \pi(a|s) Q^\pi(s,a)]$, enabling gradient-based optimization of policy parameters.</details>
 
 **Q4:** SARSA is preferred over Q-learning when:
@@ -1699,7 +1699,7 @@ B) The policy gradient theorem gives $\nabla J(\theta) = \mathbb{E}[\nabla \log 
 - C) Sample efficiency is the top priority
 - D) The state space is continuous
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 B) SARSA's on-policy updates account for the exploration policy, making it learn safer behavior in risky environments where exploration could lead to catastrophic states.</details>
 
 **Q5:** What is the Bellman equation?
@@ -1708,7 +1708,7 @@ B) SARSA's on-policy updates account for the exploration policy, making it learn
 - C) A method for sampling from the replay buffer
 - D) An exploration strategy
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 B) The Bellman equation expresses $V(s)$ as immediate reward plus discounted expected $V(s')$, forming the recursive foundation of all value-based RL.</details>
 
 ---

@@ -542,7 +542,7 @@ async function loadAllNFTs(
    - D) A node cannot read smart contract data
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Running a full node is resource-intensive; Infura provides API access without syncing the chain.** A full Ethereum node requires terabytes of storage and constant synchronization. Providers abstract this away with simple REST API access.
 </details>
 
@@ -553,7 +553,7 @@ async function loadAllNFTs(
    - D) By using cookies
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) By having the user sign a message with their wallet's private key.** The dApp requests a cryptographic signature (EIP-4361 / Sign in with Ethereum), which proves the user controls the claimed address without revealing their private key.
 </details>
 
@@ -564,7 +564,7 @@ async function loadAllNFTs(
    - D) IPFS returns a 404 error
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) The content is inaccessible until a node with that CID comes back online.** IPFS does not guarantee persistence — content availability depends on at least one node hosting it. This is why pinning services exist.
 </details>
 
@@ -575,7 +575,7 @@ async function loadAllNFTs(
    - D) Signer can only read data
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Provider can only read data; Signer can sign and send transactions.** The Provider connects to the blockchain for read-only operations. The Signer wraps a private key (via MetaMask or other wallet) and can sign transactions, which costs gas.
 </details>
 
@@ -586,7 +586,7 @@ async function loadAllNFTs(
    - D) It uses less bandwidth
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Content is addressable by its hash, not its location — links never break if content doesn't change.** In IPFS, the CID (content hash) uniquely identifies the content. As long as the content is the same, the CID is the same, and anyone hosting that CID can serve it.
 </details>
 
@@ -835,11 +835,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -847,7 +847,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

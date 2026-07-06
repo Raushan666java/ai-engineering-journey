@@ -668,7 +668,7 @@ FUNCTION SRTF(processes[]):
 | Time | Event | Ready Queue (remaining) | Decision |
 |------|-------|------------------------|----------|
 | 0 | P1 arrives | P1(8) | Run P1 |
-| 1 | P2 arrives | P1(7), P2(4) | P2 has less remaining (4 < 7) — **preempt P1**, run P2 |
+| 1 | P2 arrives | P1(7), P2(4) | P2 has less remaining (4 &lt; 7) — **preempt P1**, run P2 |
 | 2 | P3 arrives | P1(7), P2(3), P3(9) | P2 still shortest (3) — continue P2 |
 | 3 | P4 arrives | P1(7), P2(2), P3(9), P4(5) | P2 still shortest (2) — continue P2 |
 | 5 | P2 finishes | P1(7), P3(9), P4(5) | P4 shortest (5) — run P4 |
@@ -1226,7 +1226,7 @@ FUNCTION Priority_Preemptive(processes[]):
 | Time | Event | Ready Queue (priority) | Decision |
 |------|-------|----------------------|----------|
 | 0 | P1, P2 arrive | P1(3), P2(1) | P2 highest priority (1) |
-| 2 | P3 arrives | P1(3), P2(rem 3), P3(2) | P2 still running (priority 1 < 2) |
+| 2 | P3 arrives | P1(3), P2(rem 3), P3(2) | P2 still running (priority 1 &lt; 2) |
 | 3 | P4 arrives | P1(3), P2(rem 2), P3(2), P4(1) | P2 still has priority 1. P4 also priority 1, but P2 is running. Continue P2. |
 | 5 | P2 finishes | P1(3), P3(2), P4(1) | P4 has highest priority (1) — run P4 |
 | 6 | P4 finishes | P1(3), P3(2) | P3 has highest priority (2) — run P3 |
@@ -1799,7 +1799,7 @@ Real-time systems require **guaranteed response times** within deadlines. Two cl
 - **Preemptive**, fixed-priority
 - Priority is assigned based on period: **shorter period = higher priority**
 - **Optimal** among fixed-priority algorithms for periodic tasks
-- Utilization bound: Sum(Ci/Ti) <= n(2^(1/n) - 1). For large n, approaches ~69%
+- Utilization bound: Sum(Ci/Ti) &lt;= n(2^(1/n) - 1). For large n, approaches ~69%
 
 **Example**: Task A (period = 50, CPU = 20), Task B (period = 100, CPU = 40)
 - Priority: A > B (shorter period)

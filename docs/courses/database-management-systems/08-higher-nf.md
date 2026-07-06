@@ -293,7 +293,7 @@ CREATE TABLE emp_language (emp_id INTEGER, language VARCHAR(50), PRIMARY KEY (em
 |-----------|------|-------|-----|
 | MVD detection | O(n^2) | O(1) | Must check all attribute-pair combinations |
 | Single decomposition | O(n) | O(n) | Computing attribute sets is linear in schema size |
-| Full 4NF process | O(k * n^2) | O(r * n) | k <= n, r <= n in worst case |
+| Full 4NF process | O(k * n^2) | O(r * n) | k &lt;= n, r <= n in worst case |
 | Lossless join check | O(n) | O(n) | Join condition check is attribute-set comparison |
 | BCNF decomposition | O(n^2) | O(n) | Similar complexity, fewer dependency types |
 

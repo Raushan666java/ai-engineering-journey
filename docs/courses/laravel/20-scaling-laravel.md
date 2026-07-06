@@ -1320,28 +1320,28 @@ Nightwatch captures and groups production errors with full stack traces, request
    - B) Persistent in-memory application across requests
    - C) Compressed responses
    - D) Async database connections
-   <details><summary>Answer</summary>**B)** Octane boots Laravel once and keeps it in memory using Swoole or RoadRunner workers.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Octane boots Laravel once and keeps it in memory using Swoole or RoadRunner workers.</details>
 
 2. Which Laravel deployment platform runs on AWS Lambda?
    - A) Laravel Forge
    - B) Laravel Vapor
    - C) Laravel Cloud
    - D) Laravel Envoyer
-   <details><summary>Answer</summary>**B)** Laravel Vapor runs on AWS Lambda with auto-scaling serverless infrastructure.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Laravel Vapor runs on AWS Lambda with auto-scaling serverless infrastructure.</details>
 
 3. What is the recommended approach for scaling sessions across multiple web servers?
    - A) File-based sessions
    - B) Database sessions
    - C) Centralized Redis sessions
    - D) Cookie-based sessions
-   <details><summary>Answer</summary>**C)** Centralized Redis sessions allow any web server to handle any user request.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Centralized Redis sessions allow any web server to handle any user request.</details>
 
 4. What tool provides real-time application monitoring for Laravel?
    - A) Telescope
    - B) Horizon
    - C) Pulse
    - D) All of the above
-   <details><summary>Answer</summary>**D)** Pulse provides real-time metrics, Horizon monitors queues, and Telescope debugs requests.</details>
+   <details><summary>Answer&lt;/summary&gt;**D)** Pulse provides real-time metrics, Horizon monitors queues, and Telescope debugs requests.</details>
 
 ## Summary
 - Horizontal scaling requires stateless application design with all shared state stored in Redis, database, or S3 Ã¢â‚¬â€ never in local memory or files

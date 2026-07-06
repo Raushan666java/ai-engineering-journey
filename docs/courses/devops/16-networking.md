@@ -719,15 +719,15 @@ console.log('Auto-fixed interval:', fixed.healthChecks[0].intervalSeconds);
 
 ## Chapter Quiz
 
-<details><summary>Question 1: Which CNI plugin uses eBPF?</summary>**A)** Flannel<br>**B)** Calico<br>**C)** Cilium<br>**D)** Weave<br><br>**Answer: C)** Cilium</details>
+<details><summary>Question 1: Which CNI plugin uses eBPF?</summary>**A)** Flannel<br>**B)** Calico<br>**C)** Cilium<br>**D)** Weave<br><br>**Answer: C)** Cilium&lt;/details&gt;
 
-<details><summary>Question 2: How does a service mesh proxy intercept traffic?</summary>**A)** DNS redirection<br>**B)** Sidecar proxy intercepts all in/out traffic<br>**C)** Application code modification<br>**D)** Virtual IP addresses<br><br>**Answer: B)** Sidecar proxy intercepts all in/out traffic</details>
+<details><summary>Question 2: How does a service mesh proxy intercept traffic?</summary>**A)** DNS redirection<br>**B)** Sidecar proxy intercepts all in/out traffic<br>**C)** Application code modification<br>**D)** Virtual IP addresses<br><br>**Answer: B)** Sidecar proxy intercepts all in/out traffic&lt;/details&gt;
 
-<details><summary>Question 3: What does mTLS provide beyond TLS?</summary>**A)** Faster encryption<br>**B)** Mutual client and server authentication<br>**C)** Lower latency<br>**D)** Compression<br><br>**Answer: B)** Mutual client and server authentication</details>
+<details><summary>Question 3: What does mTLS provide beyond TLS?</summary>**A)** Faster encryption<br>**B)** Mutual client and server authentication<br>**C)** Lower latency<br>**D)** Compression<br><br>**Answer: B)** Mutual client and server authentication&lt;/details&gt;
 
-<details><summary>Question 4: What is the default pod communication behavior in Kubernetes?</summary>**A)** Deny all<br>**B)** Allow all<br>**C)** Only same namespace<br>**D)** Only specific ports<br><br>**Answer: B)** Allow all</details>
+<details><summary>Question 4: What is the default pod communication behavior in Kubernetes?</summary>**A)** Deny all<br>**B)** Allow all<br>**C)** Only same namespace<br>**D)** Only specific ports<br><br>**Answer: B)** Allow all&lt;/details&gt;
 
-<details><summary>Question 5: Which ingress controller is most widely adopted?</summary>**A)** Traefik<br>**B)** NGINX<br>**C)** HAProxy<br>**D)** Envoy<br><br>**Answer: B)** NGINX</details>
+<details><summary>Question 5: Which ingress controller is most widely adopted?</summary>**A)** Traefik<br>**B)** NGINX<br>**C)** HAProxy<br>**D)** Envoy<br><br>**Answer: B)** NGINX&lt;/details&gt;
 
 ---
 
@@ -740,11 +740,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -752,7 +752,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

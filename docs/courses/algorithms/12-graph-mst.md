@@ -76,7 +76,7 @@ flowchart LR
 
 **Theorem 12.2 (Cycle Property).** Let \( C \) be a cycle in \( G \). Let \( e \) be the maximum-weight edge on \( C \). Then \( e \) is **not** in any MST.
 
-**Proof.** Assume an MST \( T \) contains \( e \). Removing \( e \) from \( T \) disconnects the tree into two components. The cycle \( C \) must contain at least one other edge \( e' \) connecting these two components. Since \( w(e') < w(e) \), replacing \( e \) with \( e' \) yields a spanning tree with strictly smaller total weight, contradicting the minimality of \( T \).
+**Proof.** Assume an MST \( T \) contains \( e \). Removing \( e \) from \( T \) disconnects the tree into two components. The cycle \( C \) must contain at least one other edge \( e' \) connecting these two components. Since \( w(e') &lt; w(e) \), replacing \( e \) with \( e' \) yields a spanning tree with strictly smaller total weight, contradicting the minimality of \( T \).
 
 > **Pro Tip:** The cut property justifies adding the lightest crossing edge. The cycle property justifies removing the heaviest cycle edge. Together they prove Kruskal, Prim, and Boruvka correct.
 
@@ -879,7 +879,7 @@ Starting from vertex 0:
 - D) All are equally good
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Kruskal -- the sorting step dominates at O(E log E), and union-find operations are nearly constant.
 </details>
 
@@ -891,7 +891,7 @@ C) Kruskal -- the sorting step dominates at O(E log E), and union-find operation
 - D) Triangle inequality
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The cut property states the minimum-weight edge crossing any cut is in some MST.
 </details>
 
@@ -903,7 +903,7 @@ B) The cut property states the minimum-weight edge crossing any cut is in some M
 - D) O(1)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) O(log V) -- each phase at least halves the number of components.
 </details>
 
@@ -915,7 +915,7 @@ C) O(log V) -- each phase at least halves the number of components.
 - D) Binary Search Tree
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Union-Find with path compression and union by rank detects cycles in near-constant time.
 </details>
 
@@ -927,7 +927,7 @@ B) Union-Find with path compression and union by rank detects cycles in near-con
 - D) Prim works only on directed graphs
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Both grow a tree from a source, but Prim minimizes edge weight to the current tree (MST), while Dijkstra minimizes total distance from the source (shortest paths).
 </details>
 
@@ -939,7 +939,7 @@ B) Both grow a tree from a source, but Prim minimizes edge weight to the current
 - D) Use Boruvka with twice the phases
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) For each non-MST edge (u,v,w), find the maximum-weight edge on the u-v path in the MST and replace it. Track the minimum total among all replacements.
 </details>
 
@@ -951,7 +951,7 @@ B) For each non-MST edge (u,v,w), find the maximum-weight edge on the u-v path i
 - D) Boruvka
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Prim with array O(V²) = 10⁶ operations, vs Kruskal O(V² log V) ≈ 10⁷ operations. The array version scans linearly for the minimum key -- ideal for complete graphs.
 </details>
 
@@ -961,7 +961,7 @@ C) Prim with array O(V²) = 10⁶ operations, vs Kruskal O(V² log V) ≈ 10⁷ 
 - B) False
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) False. The minimum-weight edge belongs to some MST (cut property), but not necessarily every MST. If there are multiple edges of the same minimum weight, different MSTs may exclude some of them.
 </details>
 

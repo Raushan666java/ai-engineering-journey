@@ -686,15 +686,15 @@ console.log(orchestrator.generateRollbackReport(plan, result));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is the main advantage of blue-green deployment?</summary>**A)** Lower infrastructure cost<br>**B)** Instant switchover and immediate rollback<br>**C)** No monitoring required<br>**D)** Faster build times<br><br>**Answer: B)** Instant switchover and immediate rollback</details>
+<details><summary>Question 1: What is the main advantage of blue-green deployment?</summary>**A)** Lower infrastructure cost<br>**B)** Instant switchover and immediate rollback<br>**C)** No monitoring required<br>**D)** Faster build times<br><br>**Answer: B)** Instant switchover and immediate rollback&lt;/details&gt;
 
-<details><summary>Question 2: What does a canary deployment do?</summary>**A)** Deploys all at once<br>**B)** Gradually shifts traffic to the new version<br>**C)** Deploys to a separate environment<br>**D)** Uses feature flags<br><br>**Answer: B)** Gradually shifts traffic to the new version</details>
+<details><summary>Question 2: What does a canary deployment do?</summary>**A)** Deploys all at once<br>**B)** Gradually shifts traffic to the new version<br>**C)** Deploys to a separate environment<br>**D)** Uses feature flags<br><br>**Answer: B)** Gradually shifts traffic to the new version&lt;/details&gt;
 
-<details><summary>Question 3: Feature flags decouple what two activities?</summary>**A)** Build and test<br>**B)** Deploy and release<br>**C)** Code and review<br>**D)** Plan and execute<br><br>**Answer: B)** Deploy and release</details>
+<details><summary>Question 3: Feature flags decouple what two activities?</summary>**A)** Build and test<br>**B)** Deploy and release<br>**C)** Code and review<br>**D)** Plan and execute<br><br>**Answer: B)** Deploy and release&lt;/details&gt;
 
-<details><summary>Question 4: What is a valid automatic rollback trigger?</summary>**A)** Build takes too long<br>**B)** Error rate exceeds 1% after deployment<br>**C)** Developer pushes new code<br>**D)** Approval is delayed<br><br>**Answer: B)** Error rate exceeds 1% after deployment</details>
+<details><summary>Question 4: What is a valid automatic rollback trigger?</summary>**A)** Build takes too long<br>**B)** Error rate exceeds 1% after deployment<br>**C)** Developer pushes new code<br>**D)** Approval is delayed<br><br>**Answer: B)** Error rate exceeds 1% after deployment&lt;/details&gt;
 
-<details><summary>Question 5: What does "build once, deploy everywhere" mean?</summary>**A)** The same build artifact is promoted through all environments<br>**B)** Each environment builds its own version<br>**C)** Use multiple CI servers<br>**D)** Deploy to production directly from feature branches<br><br>**Answer: A)** The same build artifact is promoted through all environments</details>
+<details><summary>Question 5: What does "build once, deploy everywhere" mean?</summary>**A)** The same build artifact is promoted through all environments<br>**B)** Each environment builds its own version<br>**C)** Use multiple CI servers<br>**D)** Deploy to production directly from feature branches<br><br>**Answer: A)** The same build artifact is promoted through all environments&lt;/details&gt;
 
 ---
 
@@ -830,7 +830,7 @@ Canary deployments require automated analysis to determine if the new version is
 
 **Statistical analysis techniques:**
 1. **Z-score comparison:** Compare canary error rate vs baseline. If z-score > 3, reject.
-2. **Mann-Whitney U test:** Non-parametric test comparing latency distributions. If p < 0.05, reject.
+2. **Mann-Whitney U test:** Non-parametric test comparing latency distributions. If p &lt; 0.05, reject.
 3. **Confidence interval overlap:** If 95% CI of canary metrics does not overlap with baseline, reject.
 4. **Effect size (Cohen's d):** Even if statistically significant, is the difference practically significant?
 
@@ -863,11 +863,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -875,7 +875,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

@@ -1218,7 +1218,7 @@ a) Day 7  b) Day 14  c) Day 21  d) Day 28
 - D) They should re-study all subjects from scratch
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B � The C/M/E/R taxonomy (Conceptual, Misread, Execution, Random) enables targeted remediation. Without classifying each error, the student wastes time re-studying topics they already know while overlooking specific patterns like misreading questions or execution slips.
 </details>
@@ -1230,7 +1230,7 @@ a) Day 7  b) Day 14  c) Day 21  d) Day 28
 - D) Focus only on the hardest subject for all 30 days
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B � The 30-day strategy uses three distinct phases. The final week must be recall-only (no new material). The cheat sheet should be finalized by day 21 so the last week consolidates existing knowledge rather than introducing interference.
 </details>
@@ -1242,7 +1242,7 @@ a) Day 7  b) Day 14  c) Day 21  d) Day 28
 - D) The student should touch each subject only once per week to allow spaced forgetting
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B � The spiral schedule dictates no subject should exceed 2 days between touches. Going 4 days without touching OS allows the forgetting curve to set in, causing significant re-learning overhead when returning.
 </details>

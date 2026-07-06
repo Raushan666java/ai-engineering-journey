@@ -86,8 +86,8 @@ flowchart LR
 | **O(g(n))** | { f(n) \| âˆƒ c > 0, nâ‚€ > 0 such that 0 â‰¤ f(n) â‰¤ cÂ·g(n) âˆ€ n â‰¥ nâ‚€ } | Upper bound |
 | **Î©(g(n))** | { f(n) \| âˆƒ c > 0, nâ‚€ > 0 such that 0 â‰¤ cÂ·g(n) â‰¤ f(n) âˆ€ n â‰¥ nâ‚€ } | Lower bound |
 | **Î˜(g(n))** | { f(n) \| âˆƒ câ‚, câ‚‚ > 0, nâ‚€ > 0 such that câ‚Â·g(n) â‰¤ f(n) â‰¤ câ‚‚Â·g(n) âˆ€ n â‰¥ nâ‚€ } | Tight bound |
-| **o(g(n))** | { f(n) \| âˆ€ c > 0, âˆƒ nâ‚€ > 0 such that 0 â‰¤ f(n) < cÂ·g(n) âˆ€ n â‰¥ nâ‚€ } | Loose upper |
-| **Ï‰(g(n))** | { f(n) \| âˆ€ c > 0, âˆƒ nâ‚€ > 0 such that 0 â‰¤ cÂ·g(n) < f(n) âˆ€ n â‰¥ nâ‚€ } | Loose lower |
+| **o(g(n))** | { f(n) \| âˆ€ c > 0, âˆƒ nâ‚€ > 0 such that 0 â‰¤ f(n) &lt; cÂ·g(n) âˆ€ n â‰¥ nâ‚€ } | Loose upper |
+| **Ï‰(g(n))** | { f(n) \| âˆ€ c > 0, âˆƒ nâ‚€ > 0 such that 0 â‰¤ cÂ·g(n) &lt; f(n) âˆ€ n â‰¥ nâ‚€ } | Loose lower |
 
 **Properties:**
 - Transitive: f(n) = O(g(n)) and g(n) = O(h(n)) ⇒ f(n) = O(h(n))
@@ -97,7 +97,7 @@ flowchart LR
 - Multiplication: fâ‚(n) Â· fâ‚‚(n) = O(fâ‚(n) Â· fâ‚‚(n))
 
 **Common Functions (ordered by growth rate):**
-O(1) < O(log log n) < O(log n) < O((log n)Â²) < O(âˆšn) < O(n) < O(n log n) < O(nÂ²) < O(nÂ³) < O(2â¿) < O(n!) < O(nâ¿)
+O(1) &lt; O(log log n) < O(log n) < O((log n)Â²) < O(âˆšn) < O(n) < O(n log n) < O(nÂ²) < O(nÂ³) < O(2â¿) < O(n!) < O(nâ¿)
 
 ### 1.2 Recurrence Relations
 
@@ -111,7 +111,7 @@ O(1) < O(log log n) < O(log n) < O((log n)Â²) < O(âˆšn) < O(n) < O(n log n)
 |------|-----------|----------|
 | 1 | f(n) = O(n^{log_b a âˆ’ Îµ}) for Îµ > 0 | T(n) = Î˜(n^{log_b a}) |
 | 2 | f(n) = Î˜(n^{log_b a}Â·log^k n) for k â‰¥ 0 | T(n) = Î˜(n^{log_b a}Â·log^{k+1} n) |
-| 3 | f(n) = Î©(n^{log_b a + Îµ}) for Îµ > 0 AND aÂ·f(n/b) â‰¤ cÂ·f(n) for c < 1 | T(n) = Î˜(f(n)) |
+| 3 | f(n) = Î©(n^{log_b a + Îµ}) for Îµ > 0 AND aÂ·f(n/b) â‰¤ cÂ·f(n) for c &lt; 1 | T(n) = Î˜(f(n)) |
 
 **Common Recurrences:**
 
@@ -155,7 +155,7 @@ O(1) < O(log log n) < O(log n) < O((log n)Â²) < O(âˆšn) < O(n) < O(n log n)
 
 ### 2.2 Sparse Matrices
 
-**Definition:** Matrix with mostly zero entries (nnz << m Ã— n).
+**Definition:** Matrix with mostly zero entries (nnz &lt;< m Ã— n).
 
 **Representations:**
 
@@ -523,7 +523,7 @@ function heapSort(arr):
 
 **When to use what:**
 - Dense graph (E â‰ˆ VÂ²) → Adjacency Matrix
-- Sparse graph (E << VÂ²) → Adjacency List
+- Sparse graph (E &lt;< VÂ²) → Adjacency List
 
 ### 7.2 BFS (Breadth-First Search)
 
@@ -1191,7 +1191,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) Î˜(n^{logâ‚„3}) (B) Î˜(n log n) (C) Î˜(nÂ² log n) (D) Î˜(n^{logâ‚ƒ4})
 
-**Answer:** B. a=3, b=4, log_b a = logâ‚„3 â‰ˆ 0.792. f(n) = n log n = Î©(n^{0.792+Îµ}). Check regularity: aÂ·f(n/b) = 3Â·(n/4)Â·log(n/4) = 0.75Â·nÂ·log(n/4) â‰¤ cÂ·nÂ·log n for c < 1. So Case 3: Î˜(n log n).
+**Answer:** B. a=3, b=4, log_b a = logâ‚„3 â‰ˆ 0.792. f(n) = n log n = Î©(n^{0.792+Îµ}). Check regularity: aÂ·f(n/b) = 3Â·(n/4)Â·log(n/4) = 0.75Â·nÂ·log(n/4) â‰¤ cÂ·nÂ·log n for c &lt; 1. So Case 3: Î˜(n log n).
 
 **A45** [GATE 2021, 2 marks, Complexity] Let f(n) = O(g(n)). Then log f(n) = O(log g(n)) if:
 

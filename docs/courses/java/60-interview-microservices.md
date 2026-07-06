@@ -21,7 +21,8 @@ flowchart LR
     C --> D[Best Practices]
 ```
 
-### Q1: What is microservice architecture and how does it differ from monolithic architecture?
+### Q1: What is microservice architecture and how does it differ from monolithic architecture?
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -2748,7 +2749,7 @@ Use cache-aside with TTL for most services. Never cache sensitive data (PII, fin
    - D) equals() is for primitives, == is for objects
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) equals() compares logical equality (overridable), == compares reference equality.**
 </details>
 
@@ -2759,7 +2760,7 @@ Use cache-aside with TTL for most services. Never cache sensitive data (PII, fin
    - D) HashSet
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
 </details>
 
@@ -2770,6 +2771,6 @@ Use cache-aside with TTL for most services. Never cache sensitive data (PII, fin
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>

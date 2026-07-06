@@ -300,7 +300,7 @@ Sort array `[10, 7, 8, 9, 1, 5]`.
 | **Best-case** | \( O(n \log n) \) | Always pick median |
 | **Space** | \( O(\log n) \) expected (recursion) | |
 
-**Proof outline:** Let the sorted elements be \( z_1 < z_2 < \cdots < z_n \). Define indicator random variable \( X_{ij} = 1 \) if \( z_i \) and \( z_j \) are compared. The probability that \( z_i \) and \( z_j \) are compared is \( 2/(j-i+1) \). By linearity of expectation:
+**Proof outline:** Let the sorted elements be \( z_1 &lt; z_2 < \cdots < z_n \). Define indicator random variable \( X_{ij} = 1 \) if \( z_i \) and \( z_j \) are compared. The probability that \( z_i \) and \( z_j \) are compared is \( 2/(j-i+1) \). By linearity of expectation:
 
 \[
 E[\text{total comparisons}] = \sum_{i=1}^n \sum_{j>i} \frac{2}{j-i+1} = O(n \log n).
@@ -406,7 +406,7 @@ Test if n = 221 is prime with k = 2 rounds.
 
 **Error probability:** At most \( 4^{-k} \) for a composite \( n \). After \( k \) rounds, if \( n \) passes all tests, it is prime with probability \( 1 - 4^{-k} \). For \( k = 20 \), the error probability is \( 4^{-20} \approx 10^{-12} \).
 
-**Deterministic variants:** For \( n < 2^{64} \), testing bases [2, 3, 5, 7, 11, 13] suffices.
+**Deterministic variants:** For \( n &lt; 2^{64} \), testing bases [2, 3, 5, 7, 11, 13] suffices.
 
 **Complexity Analysis:**
 
@@ -423,7 +423,7 @@ Test if n = 221 is prime with k = 2 rounds.
 |------------|---------------|
 | Fast for large numbers (polylog time) | Probabilistic — not 100% certain |
 | Error probability tunable via k | Slower than deterministic sieve for small n |
-| Works for any size n | Deterministic variants limited to n < 2⁶⁴ |
+| Works for any size n | Deterministic variants limited to n &lt; 2⁶⁴ |
 | Foundation of RSA key generation | Carmichael numbers need more rounds |
 
 **Edge Cases:**
@@ -431,7 +431,7 @@ Test if n = 221 is prime with k = 2 rounds.
 - **n = 2, 3:** Return true.
 - **Even numbers > 2:** Return false immediately.
 - **Carmichael numbers (e.g., 561, 1105):** Pass Fermat test but fail Miller-Rabin with high probability.
-- **n < 2⁶⁴:** Use deterministic base set.
+- **n &lt; 2⁶⁴:** Use deterministic base set.
 
 **C++ Implementation:**
 ```cpp
@@ -772,9 +772,9 @@ public class ReservoirSampling {
 | **Monte Carlo** | Bounded error; deterministic time; amplify via repetition; examples: Miller-Rabin, Karger |
 | **Quickselect** | Expected O(n); probability of worst case is 1/n! |
 | **Quicksort** | Expected O(n log n); ~1.39 n log₂ n comparisons |
-| **Miller-Rabin** | Error ≤ 4^-k; strong pseudoprime; deterministic for n < 2^64 |
+| **Miller-Rabin** | Error ≤ 4^-k; strong pseudoprime; deterministic for n &lt; 2^64 |
 | **Karger** | O(n² log n) trials; success prob ≥ 1 - 1/n |
-| **Freivalds** | O(n²) verification vs O(n³) compute; error < 2^-k with k trials |
+| **Freivalds** | O(n²) verification vs O(n³) compute; error &lt; 2^-k with k trials |
 | **Reservoir** | Replace with prob k/i; O(k) space; exact uniform |
 | **Other Techniques** | Karger min-cut, Freivalds matrix check, birthday paradox |
 
@@ -1007,7 +1007,7 @@ bool millerRabin(int64_t n, int k) {
 - D) There is no difference
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Las Vegas algorithms are always correct (running time is random); Monte Carlo algorithms have bounded error probability (running time is fixed).
 </details>
 
@@ -1019,7 +1019,7 @@ B) Las Vegas algorithms are always correct (running time is random); Monte Carlo
 - D) O(n²)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) O(n) expected. The recurrence T(n) ≤ T(3n/4) + O(n) solves to O(n).
 </details>
 
@@ -1031,7 +1031,7 @@ B) O(n) expected. The recurrence T(n) ≤ T(3n/4) + O(n) solves to O(n).
 - D) Both B and C
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 D) For a composite number, a random base has at most 25% chance of falsely declaring it prime. Running k independent rounds reduces error to 4^-k.
 </details>
 
@@ -1043,7 +1043,7 @@ D) For a composite number, a random base has at most 25% chance of falsely decla
 - D) By randomly discarding half the elements
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) At step i, the current element replaces a reservoir element with probability k/i, ensuring each element has exactly k/i probability of being in the reservoir.
 </details>
 
@@ -1055,6 +1055,6 @@ B) At step i, the current element replaces a reservoir element with probability 
 - D) 1
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) e/(e-1) ≈ 1.58, achieved by choosing a random threshold according to a specific exponential distribution.
 </details>

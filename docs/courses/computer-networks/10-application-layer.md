@@ -264,7 +264,7 @@ FUNCTION http_server(port):
 | 4 | Browser | Send request | GET /index.html HTTP/1.1\r\nHost: example.com | Request sent |
 | 5 | Server | Receive | Parse method=GET, path=/index.html | Parsed |
 | 6 | Server | Read file | /var/www/index.html exists | File loaded |
-| 7 | Server | Build response | HTTP/1.1 200 OK\r\nContent-Length: 512\r\n\r\n<html>... | Response built |
+| 7 | Server | Build response | HTTP/1.1 200 OK\r\nContent-Length: 512\r\n\r\n&lt;html&gt;... | Response built |
 | 8 | Client | Receive | HTTP/1.1 200 OK | Status OK |
 | 9 | Client | Parse body | Content-Length: 512, read 512 bytes | Body parsed |
 | 10 | TCP | Close | FIN | Connection closed |
@@ -1153,9 +1153,9 @@ User → MUA (Outlook) → MSA (Submission:587) → MTA (Relay) → MTA (Deliver
 | 5 | S→C | 250-SIZE 52428800 | EHLO done | - |
 | 6 | S→C | 250-PIPELINING | Extensions listed | - |
 | 7 | S→C | 250-AUTH PLAIN LOGIN | - | - |
-| 8 | C→S | MAIL FROM:<alice@example.com> | FROM set | From: alice@example.com |
+| 8 | C→S | MAIL FROM:&lt;alice@example.com&gt; | FROM set | From: alice@example.com |
 | 9 | S→C | 250 OK | FROM verified | - |
-| 10 | C→S | RCPT TO:<bob@other.org> | RCPT received | To: bob@other.org |
+| 10 | C→S | RCPT TO:&lt;bob@other.org&gt; | RCPT received | To: bob@other.org |
 | 11 | S→C | 250 OK | RCPT accepted | - |
 | 12 | C→S | DATA | Enter DATA | - |
 | 13 | S→C | 354 End data with . | Ready for body | - |

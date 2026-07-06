@@ -283,8 +283,8 @@ FUNCTION detectMACFlooding(switchName):
 
 ### C++ Implementation: Duplex/Speed Analyzer
 
-#include <iostream>
-#include <string>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
 #include <map>
 
 enum class DuplexMode { HALF, FULL, AUTO_FAIL };
@@ -295,7 +295,7 @@ struct PortStats {
 };
 
 class DuplexAnalyzer {
-    std::map<std::string, PortStats> ports;
+    std::map&lt;std::string, PortStats&gt; ports;
 public:
     DuplexAnalyzer() {
         ports["Gi0/1"] = {"Gi0/1", DuplexMode::FULL, DuplexMode::FULL, 1000, 2, 0};
@@ -319,7 +319,7 @@ public:
 
 int main() {
     DuplexAnalyzer da;
-    std::cout << da.diagnose("Gi0/3") << std::endl;
+    std::cout &lt;< da.diagnose("Gi0/3") << std::endl;
     return 0;
 }
 
@@ -429,27 +429,27 @@ Root cause: Router R2 points to R1 for 10.2.2.0/24, R1 points back to R2.
 
 ### C++ Implementation: Ping Simulator with TTL
 
-#include <iostream>
-#include <string>
-#include <vector>
-#include <random>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+#include &lt;random&gt;
 
 struct PingResult { std::string dest; int sent, rcvd, loss; double minR, avgR, maxR; };
 
 class PingSim {
     std::mt19937 rng{std::random_device{}()};
     struct Hop { std::string ip; double lat, jit; double loss; };
-    std::vector<Hop> path(const std::string& d) {
+    std::vector&lt;Hop&gt; path(const std::string& d) {
         if (d=="10.2.2.100") return {{"gw",1,0.5,0},{"rtr1",3,1,0},{"rtr2",10,2,0},{"svr",12,1,0.01}};
         return {};
     }
 public:
     PingResult ping(const std::string& d, int c=5) {
         auto p = path(d); PingResult r{d,c,0,0,9999,0,0};
-        for (int i=1;i<=c;i++) {
+        for (int i=1;i&lt;=c;i++) {
             double del=0; bool lost=false;
-            for (auto& h : p) { if (std::uniform_real_distribution<>(0,1)(rng)<h.loss) { lost=true; break; } del += h.lat + std::normal_distribution<>(0,h.jit)(rng); }
-            if (!lost) { double rtt=del*2; r.rcvd++; r.avgR+=rtt; if(rtt<r.minR)r.minR=rtt; if(rtt>r.maxR)r.maxR=rtt; std::cout<<"seq="<<i<<" time="<<rtt<<"ms\n"; }
+            for (auto& h : p) { if (std::uniform_real_distribution&lt;>(0,1)(rng)<h.loss) { lost=true; break; } del += h.lat + std::normal_distribution<&gt;(0,h.jit)(rng); }
+            if (!lost) { double rtt=del*2; r.rcvd++; r.avgR+=rtt; if(rtt&lt;r.minR)r.minR=rtt; if(rtt&gt;r.maxR)r.maxR=rtt; std::cout&lt;<"seq="<<i<<" time="<<rtt<<"ms\n"; }
         }
         r.loss=(c-r.rcvd)*100/c; r.avgR=r.rcvd?r.avgR/r.rcvd:0;
         return r;
@@ -458,7 +458,7 @@ public:
 
 int main() {
     auto r=PingSim().ping("10.2.2.100",5);
-    std::cout<<r.sent<<" sent, "<<r.rcvd<<" rcvd, "<<r.loss<<"% loss\n";
+    std::cout&lt;<r.sent<<" sent, "<<r.rcvd<<" rcvd, "<<r.loss<<"% loss\n";
     return 0;
 }
 
@@ -480,7 +480,7 @@ class TraceResult:
     def detect_loop(self) -> Optional[str]:
         for i in range(len(self.hops)-3):
             if self.hops[i].ip == self.hops[i+2].ip and self.hops[i+1].ip == self.hops[i+3].ip:
-                return f"2-hop loop at {i}: {self.hops[i].ip} <-> {self.hops[i+1].ip}"
+                return f"2-hop loop at {i}: {self.hops[i].ip} &lt;-> {self.hops[i+1].ip}"
             if self.hops[i].ip == self.hops[i+1].ip == self.hops[i+2].ip:
                 return f"Same-hop loop at {i}: {self.hops[i].ip}"
         return None
@@ -499,9 +499,9 @@ class TraceSim:
 
 def mtu_discover(max_sz=1500, min_sz=500):
     pmtu = 1400; lo, hi, good = min_sz, max_sz, min_sz
-    while lo <= hi:
+    while lo &lt;= hi:
         mid = (lo+hi)//2
-        if mid <= pmtu: print(f"  -s {mid}: OK"); good=mid; lo=mid+1
+        if mid &lt;= pmtu: print(f"  -s {mid}: OK"); good=mid; lo=mid+1
         else: print(f"  -s {mid}: FAIL"); hi=mid-1
     print(f"\nPath MTU = {good+28}\nMSS clamp: {good-20}")
 
@@ -568,20 +568,20 @@ Web server 10.0.0.50 not responding from client 10.0.0.100.
 
 ### C++: TCP Port Scanner (Threaded)
 
-#include <iostream>
-#include <string>
-#include <vector>
-#include <future>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+#include &lt;future&gt;
 #ifdef _WIN32
-#include <winsock2.h>
-#include <ws2tcpip.h>
+#include &lt;winsock2.h&gt;
+#include &lt;ws2tcpip.h&gt;
 #pragma comment(lib,"ws2_32")
 #else
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <unistd.h>
-#include <fcntl.h>
+#include &lt;sys/socket.h&gt;
+#include &lt;netinet/in.h&gt;
+#include &lt;arpa/inet.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;fcntl.h&gt;
 #define SOCKET int
 #define INVALID_SOCKET -1
 #define closesocket close
@@ -590,7 +590,7 @@ Web server 10.0.0.50 not responding from client 10.0.0.100.
 struct Result { int port; bool open; double rtt; };
 std::string svc(int p) {
     const char* s[]={"","","FTP","","","","","","","","","","","","","","","","","","FTP-data","SSH","Telnet","","SMTP","","","","","","","","","","","","","","","","","","","","","","","","","","","","DNS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","HTTP"};
-    return (p>=0&&p<100) ? s[p] : "?";
+    return (p>=0&&p&lt;100) ? s[p] : "?";
 }
 
 Result scan(const std::string& host, int port, int tmo=2000) {
@@ -611,18 +611,18 @@ Result scan(const std::string& host, int port, int tmo=2000) {
     bool ok = select(0,nullptr,&w,nullptr,&tv)>0;
     if (ok) { int e=0; socklen_t l=sizeof(e); getsockopt(s,SOL_SOCKET,SO_ERROR,(char*)&e,&l); ok=(e==0); }
     closesocket(s);
-    auto rtt = std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-start).count();
+    auto rtt = std::chrono::duration&lt;double,std::milli&gt;(std::chrono::steady_clock::now()-start).count();
     return {port,ok,rtt};
 }
 
 int main() {
-    std::vector<Result> res;
-    std::vector<std::future<Result>> futs;
-    for (int p=1;p<=1024;p++) {
+    std::vector&lt;Result&gt; res;
+    std::vector&lt;std::future<Result&gt;> futs;
+    for (int p=1;p&lt;=1024;p++) {
         futs.push_back(std::async(std::launch::async,scan,"10.0.0.50",p,1500));
         if (futs.size()>=50||p==1024) { for(auto&f:futs){auto r=f.get();if(r.open)res.push_back(r);} futs.clear(); }
     }
-    for (auto& r : res) std::cout << r.port << "\t" << svc(r.port) << "\t" << r.rtt << "ms\n";
+    for (auto& r : res) std::cout &lt;< r.port << "\t" << svc(r.port) << "\t" << r.rtt << "ms\n";
     return 0;
 }
 
@@ -714,18 +714,18 @@ FUNCTION checkDNS(hostname):
 
 ### C++: HTTP Status Checker
 
-#include <iostream>
-#include <string>
-#include <regex>
-#include <chrono>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;regex&gt;
+#include &lt;chrono&gt;
 #ifdef _WIN32
-#include <winsock2.h>
-#include <ws2tcpip.h>
+#include &lt;winsock2.h&gt;
+#include &lt;ws2tcpip.h&gt;
 #pragma comment(lib,"ws2_32")
 #else
-#include <sys/socket.h>
-#include <netdb.h>
-#include <unistd.h>
+#include &lt;sys/socket.h&gt;
+#include &lt;netdb.h&gt;
+#include &lt;unistd.h&gt;
 #define SOCKET int
 #endif
 
@@ -738,19 +738,19 @@ HTTP check(const std::string& h, int p=80, const std::string& path="/") {
     addrinfo hints{},*addrs; hints.ai_family=AF_INET; hints.ai_socktype=SOCK_STREAM;
     auto ds=std::chrono::steady_clock::now();
     if(getaddrinfo(h.c_str(),std::to_string(p).c_str(),&hints,&addrs)!=0) { r.err=true; r.msg="DNS fail"; return r; }
-    r.dns=std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-ds).count();
+    r.dns=std::chrono::duration&lt;double,std::milli&gt;(std::chrono::steady_clock::now()-ds).count();
     // TCP
     auto ts=std::chrono::steady_clock::now();
     SOCKET s=socket(AF_INET,SOCK_STREAM,0);
-    if(connect(s,addrs->ai_addr,(int)addrs->ai_addrlen)<0) { r.err=true; r.msg="TCP fail"; closesocket(s); freeaddrinfo(addrs); return r; }
-    r.tcp=std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-ts).count();
+    if(connect(s,addrs->ai_addr,(int)addrs->ai_addrlen)&lt;0) { r.err=true; r.msg="TCP fail"; closesocket(s); freeaddrinfo(addrs); return r; }
+    r.tcp=std::chrono::duration&lt;double,std::milli&gt;(std::chrono::steady_clock::now()-ts).count();
     freeaddrinfo(addrs);
     // HTTP
     std::string req="GET "+path+" HTTP/1.1\r\nHost: "+h+"\r\nConnection: close\r\n\r\n";
     send(s,req.c_str(),req.size(),0);
     std::string resp; char buf[4096]; int n;
     while((n=recv(s,buf,sizeof(buf)-1,0))>0){buf[n]=0;resp+=buf;}
-    r.total=std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-start).count();
+    r.total=std::chrono::duration&lt;double,std::milli&gt;(std::chrono::steady_clock::now()-start).count();
     closesocket(s);
     std::smatch m;
     if(std::regex_search(resp,m,std::regex("HTTP/\\d\\.\\d\\s+(\\d+)\\s+(\\S+)"))){ r.code=std::stoi(m[1]); r.text=m[2]; }
@@ -758,7 +758,7 @@ HTTP check(const std::string& h, int p=80, const std::string& path="/") {
 }
 
 std::string interp(int c) {
-    if(c==200)return"OK";if(c>=300&&c<400)return"Redirect";
+    if(c==200)return"OK";if(c>=300&&c&lt;400)return"Redirect";
     if(c==400)return"BadReq";if(c==401)return"Unauth";if(c==403)return"Forbid";
     if(c==404)return"NotFound";if(c==429)return"RateLimit";if(c==500)return"ServerErr";
     if(c==502)return"BadGW";if(c==503)return"Unavail";if(c==504)return"GWTimeout";return"?";
@@ -766,8 +766,8 @@ std::string interp(int c) {
 
 int main() {
     auto r=check("example.com",80,"/");
-    if(r.err) std::cout<<"Error: "<<r.msg<<"\n";
-    else std::cout<<"HTTP "<<r.code<<" "<<interp(r.code)<<" (dns:"<<r.dns<<"ms tcp:"<<r.tcp<<"ms total:"<<r.total<<"ms)\n";
+    if(r.err) std::cout&lt;<"Error: "<<r.msg<<"\n";
+    else std::cout&lt;<"HTTP "<<r.code<<" "<<interp(r.code)<<" (dns:"<<r.dns<<"ms tcp:"<<r.tcp<<"ms total:"<<r.total<<"ms)\n";
     return 0;
 }
 
@@ -803,7 +803,7 @@ def diag(host: str, sc: str = "valid"):
     leaf = chain(host, sc)[0]
     iss = []
     if leaf.expired: iss.append(f"EXPIRED {abs(leaf.days)}d ago")
-    elif leaf.days < 30: iss.append(f"Expires {leaf.days}d")
+    elif leaf.days &lt; 30: iss.append(f"Expires {leaf.days}d")
     if not leaf.matches(host): iss.append(f"Hostname mismatch: SAN={leaf.sans}")
     status = "FAIL" if iss and ("EXPIRED" in iss[0] or "mismatch" in iss[0]) else "WARN" if iss else "PASS"
     print(f"[{status}] {host}\n  Subj: {leaf.sub}\n  Exp: {leaf.na.date()} ({leaf.days}d)\n  Iss: {leaf.iss}")
@@ -947,7 +947,7 @@ tcpdump [options] [filter]
 | tcp[13] & 4 != 0 | RST flag set |
 | ip[6:2] & 0x2000 != 0 | DF bit set |
 | greater 1000 | Packet len > 1000 |
-| less 100 | Packet len < 100 |
+| less 100 | Packet len &lt; 100 |
 | broadcast | Ethernet broadcast |
 | vlan | 802.1Q tagged |
 | icmp[icmptype] == 3 | ICMP Dest Unreachable |
@@ -1020,7 +1020,7 @@ nmap [scan type] [options] <target>
 
 **Port states:** open (responding application), closed (RST received), filtered (no response, likely firewall), unfiltered (accessible but state unknown), open|filtered (UDP no response).
 
-**Complexity:** O(p * r) where p = ports, r = retries. With -T5 and -n, typical scan of 1000 ports completes in < 10 seconds.
+**Complexity:** O(p * r) where p = ports, r = retries. With -T5 and -n, typical scan of 1000 ports completes in &lt; 10 seconds.
 
 ### 17.7.8 iperf / iperf3
 
@@ -1037,7 +1037,7 @@ iperf3 -c server --bidir       # Bidirectional test
 
 **Interpret TCP results:** Throughput near link speed = good. Throughput = (MSS * 8) / RTT * sqrt(3/4 * loss_rate) → Mathis equation. Compare expected vs actual throughput. Low throughput can mean congestion, bufferbloat, or application bottleneck.
 
-**UDP results:** Reports jitter (inter-packet delay variation) and packet loss percentage. Jitter < 1ms is excellent for VoIP. Loss > 1% degrades voice quality.
+**UDP results:** Reports jitter (inter-packet delay variation) and packet loss percentage. Jitter &lt; 1ms is excellent for VoIP. Loss &gt; 1% degrades voice quality.
 
 ## 17.8 Common Issues per Layer → Summary Table
 
@@ -1122,7 +1122,7 @@ A routing loop appears as a repeating pattern of the same IP addresses across mu
 
 ### Q8: How do you test if a firewall is blocking a specific port?
 
-Test from outside the firewall: (1) nc -zv <host> <port> → if timeout, the port is filtered (firewall is actively blocking). (2) Use tcpdump on the server to see if SYN packets arrive. If tcpdump shows the SYN arriving but no SYN-ACK being sent, the firewall on the server is blocking. If tcpdump shows no SYNs at all, the firewall on the network path or client is blocking.
+Test from outside the firewall: (1) nc -zv &lt;host&gt; <port> → if timeout, the port is filtered (firewall is actively blocking). (2) Use tcpdump on the server to see if SYN packets arrive. If tcpdump shows the SYN arriving but no SYN-ACK being sent, the firewall on the server is blocking. If tcpdump shows no SYNs at all, the firewall on the network path or client is blocking.
 
 ### Q9: What is asymmetric routing and how does it affect troubleshooting?
 

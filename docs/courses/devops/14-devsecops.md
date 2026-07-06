@@ -686,15 +686,15 @@ console.log(`Gate: ${gateResult.passed ? 'PASSED' : 'FAILED'}, Critical: ${gateR
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is shift-left security?</summary>**A)** Moving security testing to the right<br>**B)** Integrating security earlier in development<br>**C)** Outsourcing security<br>**D)** Removing security gates<br><br>**Answer: B)** Integrating security earlier in development</details>
+<details><summary>Question 1: What is shift-left security?</summary>**A)** Moving security testing to the right<br>**B)** Integrating security earlier in development<br>**C)** Outsourcing security<br>**D)** Removing security gates<br><br>**Answer: B)** Integrating security earlier in development&lt;/details&gt;
 
-<details><summary>Question 2: What does SAST analyze?</summary>**A)** Running applications<br>**B)** Source code without execution<br>**C)** Network traffic<br>**D)** User behavior<br><br>**Answer: B)** Source code without execution</details>
+<details><summary>Question 2: What does SAST analyze?</summary>**A)** Running applications<br>**B)** Source code without execution<br>**C)** Network traffic<br>**D)** User behavior<br><br>**Answer: B)** Source code without execution&lt;/details&gt;
 
-<details><summary>Question 3: Which tool detects secrets in Git history?</summary>**A)** SonarQube<br>**B)** GitLeaks<br>**C)** OWASP ZAP<br>**D)** Prometheus<br><br>**Answer: B)** GitLeaks</details>
+<details><summary>Question 3: Which tool detects secrets in Git history?</summary>**A)** SonarQube<br>**B)** GitLeaks<br>**C)** OWASP ZAP<br>**D)** Prometheus<br><br>**Answer: B)** GitLeaks&lt;/details&gt;
 
-<details><summary>Question 4: What is an SBOM?</summary>**A)** A security tool<br>**B)** Software Bill of Materials — inventory of components<br>**C)** A deployment strategy<br>**D)** A monitoring tool<br><br>**Answer: B)** Software Bill of Materials — inventory of components</details>
+<details><summary>Question 4: What is an SBOM?</summary>**A)** A security tool<br>**B)** Software Bill of Materials — inventory of components<br>**C)** A deployment strategy<br>**D)** A monitoring tool<br><br>**Answer: B)** Software Bill of Materials — inventory of components&lt;/details&gt;
 
-<details><summary>Question 5: What language does OPA use for policies?</summary>**A)** YAML<br>**B)** Rego<br>**C)** JSON<br>**D)** Python<br><br>**Answer: B)** Rego</details>
+<details><summary>Question 5: What language does OPA use for policies?</summary>**A)** YAML<br>**B)** Rego<br>**C)** JSON<br>**D)** Python<br><br>**Answer: B)** Rego&lt;/details&gt;
 
 ---
 
@@ -707,11 +707,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -719,7 +719,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

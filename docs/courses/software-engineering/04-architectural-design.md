@@ -65,7 +65,7 @@ Quality attribute scenarios provide a structured way to specify and evaluate qua
 | **Source** | Origin of the stimulus | "Users through web browsers" |
 | **Environment** | System state | "Normal operations" |
 | **Response** | Observable behaviour | "Requests processed within 2 seconds" |
-| **Response measure** | How the response is quantified | "95th percentile response time < 2s" |
+| **Response measure** | How the response is quantified | "95th percentile response time &lt; 2s" |
 | **Artifact** | What is being measured | "The web application tier" |
 
 ### The Layered Architecture Pattern

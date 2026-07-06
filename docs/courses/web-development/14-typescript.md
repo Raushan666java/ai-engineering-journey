@@ -551,7 +551,7 @@ Test your understanding with these quick questions.
 - C) For union types
 - D) For computed types
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Interfaces support declaration merging and extension (`extends`), making them ideal for public API shapes that may be extended later. Types are better for unions, intersections, and computed types.**
 
@@ -564,7 +564,7 @@ Test your understanding with these quick questions.
 - C) A type that makes id and name optional
 - D) A type identical to User
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `Pick` creates a type containing only the specified keys from the source type. `Omit` does the inverse — it excludes the specified keys.**
 
@@ -577,7 +577,7 @@ Test your understanding with these quick questions.
 - C) They replace switch statements
 - D) They add runtime type checking
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Discriminated unions use a literal property (like `kind`) to distinguish between union members. TypeScript narrows the type within each branch of a switch, ensuring only valid properties are accessed.**
 
@@ -590,7 +590,7 @@ Test your understanding with these quick questions.
 - C) Makes all properties readonly
 - D) Disables type checking for JavaScript files
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `strict: true` is a convenience flag that enables all strict type-checking family options — critical for catching null reference errors, implicit anys, and function type mismatches at compile time.**
 
@@ -783,11 +783,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -795,7 +795,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

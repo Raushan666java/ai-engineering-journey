@@ -2421,7 +2421,7 @@ OPTIMIZE TABLE employees;
 - C) An index on a table
 - D) A foreign reference
 
-<details><summary>Answer</summary>B) A column that uniquely identifies each row</details>
+<details><summary>Answer&lt;/summary&gt;B) A column that uniquely identifies each row&lt;/details&gt;
 
 **Q2:** What does 2NF require beyond 1NF?
 - A) All columns are atomic
@@ -2429,7 +2429,7 @@ OPTIMIZE TABLE employees;
 - C) No transitive dependencies
 - D) All tables have a primary key
 
-<details><summary>Answer</summary>B) No partial dependency on composite keys</details>
+<details><summary>Answer&lt;/summary&gt;B) No partial dependency on composite keys&lt;/details&gt;
 
 **Q3:** What is an index used for?
 - A) Store additional data
@@ -2437,7 +2437,7 @@ OPTIMIZE TABLE employees;
 - C) Enforce foreign keys
 - D) Create backups
 
-<details><summary>Answer</summary>B) Speed up data retrieval</details>
+<details><summary>Answer&lt;/summary&gt;B) Speed up data retrieval&lt;/details&gt;
 
 **Q4:** What is the main trade-off with indexes?
 - A) Faster reads, slower writes
@@ -2445,7 +2445,7 @@ OPTIMIZE TABLE employees;
 - C) More storage, faster everything
 - D) Less storage, slower everything
 
-<details><summary>Answer</summary>A) Faster reads, slower writes</details>
+<details><summary>Answer&lt;/summary&gt;A) Faster reads, slower writes&lt;/details&gt;
 
 ---
 
@@ -2497,7 +2497,7 @@ OPTIMIZE TABLE employees;
 - C) An index on a table
 - D) A foreign reference
 
-<details><summary>Answer</summary>B) A column that uniquely identifies each row</details>
+<details><summary>Answer&lt;/summary&gt;B) A column that uniquely identifies each row&lt;/details&gt;
 
 **Q2:** What does 2NF require beyond 1NF?
 - A) All columns are atomic
@@ -2505,7 +2505,7 @@ OPTIMIZE TABLE employees;
 - C) No transitive dependencies
 - D) All tables have a primary key
 
-<details><summary>Answer</summary>B) No partial dependency on composite keys</details>
+<details><summary>Answer&lt;/summary&gt;B) No partial dependency on composite keys&lt;/details&gt;
 
 **Q3:** What is an index used for?
 - A) Store additional data
@@ -2513,7 +2513,7 @@ OPTIMIZE TABLE employees;
 - C) Enforce foreign keys
 - D) Create backups
 
-<details><summary>Answer</summary>B) Speed up data retrieval</details>
+<details><summary>Answer&lt;/summary&gt;B) Speed up data retrieval&lt;/details&gt;
 
 **Q4:** What is the main trade-off with indexes?
 - A) Faster reads, slower writes
@@ -2521,7 +2521,7 @@ OPTIMIZE TABLE employees;
 - C) More storage, faster everything
 - D) Less storage, slower everything
 
-<details><summary>Answer</summary>A) Faster reads, slower writes</details>
+<details><summary>Answer&lt;/summary&gt;A) Faster reads, slower writes&lt;/details&gt;
 
 ---
 
@@ -2573,7 +2573,7 @@ OPTIMIZE TABLE employees;
 - C) An index on a table
 - D) A foreign reference
 
-<details><summary>Answer</summary>B) A column that uniquely identifies each row</details>
+<details><summary>Answer&lt;/summary&gt;B) A column that uniquely identifies each row&lt;/details&gt;
 
 **Q2:** What does 2NF require beyond 1NF?
 - A) All columns are atomic
@@ -2581,7 +2581,7 @@ OPTIMIZE TABLE employees;
 - C) No transitive dependencies
 - D) All tables have a primary key
 
-<details><summary>Answer</summary>B) No partial dependency on composite keys</details>
+<details><summary>Answer&lt;/summary&gt;B) No partial dependency on composite keys&lt;/details&gt;
 
 **Q3:** What is an index used for?
 - A) Store additional data
@@ -2589,7 +2589,7 @@ OPTIMIZE TABLE employees;
 - C) Enforce foreign keys
 - D) Create backups
 
-<details><summary>Answer</summary>B) Speed up data retrieval</details>
+<details><summary>Answer&lt;/summary&gt;B) Speed up data retrieval&lt;/details&gt;
 
 **Q4:** What is the main trade-off with indexes?
 - A) Faster reads, slower writes
@@ -2597,7 +2597,7 @@ OPTIMIZE TABLE employees;
 - C) More storage, faster everything
 - D) Less storage, slower everything
 
-<details><summary>Answer</summary>A) Faster reads, slower writes</details>
+<details><summary>Answer&lt;/summary&gt;A) Faster reads, slower writes&lt;/details&gt;
 
 ---
 
@@ -2649,7 +2649,7 @@ OPTIMIZE TABLE employees;
 - C) An index on a table
 - D) A foreign reference
 
-<details><summary>Answer</summary>B) A column that uniquely identifies each row</details>
+<details><summary>Answer&lt;/summary&gt;B) A column that uniquely identifies each row&lt;/details&gt;
 
 **Q2:** What does 2NF require beyond 1NF?
 - A) All columns are atomic
@@ -2657,7 +2657,7 @@ OPTIMIZE TABLE employees;
 - C) No transitive dependencies
 - D) All tables have a primary key
 
-<details><summary>Answer</summary>B) No partial dependency on composite keys</details>
+<details><summary>Answer&lt;/summary&gt;B) No partial dependency on composite keys&lt;/details&gt;
 
 **Q3:** What is an index used for?
 - A) Store additional data
@@ -2665,7 +2665,7 @@ OPTIMIZE TABLE employees;
 - C) Enforce foreign keys
 - D) Create backups
 
-<details><summary>Answer</summary>B) Speed up data retrieval</details>
+<details><summary>Answer&lt;/summary&gt;B) Speed up data retrieval&lt;/details&gt;
 
 **Q4:** What is the main trade-off with indexes?
 - A) Faster reads, slower writes
@@ -2673,7 +2673,7 @@ OPTIMIZE TABLE employees;
 - C) More storage, faster everything
 - D) Less storage, slower everything
 
-<details><summary>Answer</summary>A) Faster reads, slower writes</details>
+<details><summary>Answer&lt;/summary&gt;A) Faster reads, slower writes&lt;/details&gt;
 
 ## Summary
 
@@ -2735,7 +2735,7 @@ Performance optimization encompasses query design, connection pooling, read repl
 Write the complete SQL DDL with primary keys, foreign keys, indexes, and constraints.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 
 ```sql
 CREATE TABLE authors (
@@ -2797,7 +2797,7 @@ d) List members who have never borrowed a book
 e) Show the most borrowed books
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 
 ```sql
 -- a)
@@ -2850,7 +2850,7 @@ SELECT * FROM employees WHERE department_id = 3 AND salary > 70000 ORDER BY last
 Design a better index and explain why it improves performance.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 
 A composite index on `(department_id, salary, last_name)`:
 
@@ -2870,7 +2870,7 @@ After: type=range on `(department_id, salary)`, ~500 rows examined, `Using index
 **Problem 4:** Write a transactional checkout flow with proper locking.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 
 ```sql
 START TRANSACTION;
@@ -2913,7 +2913,7 @@ COMMIT;
 Design a schema for dynamic product attributes where different categories have different attribute sets. Implement the EAV pattern, then write a query that pivots the EAV data into a traditional row-per-product result.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 
 ```sql
 CREATE TABLE eav_categories (
@@ -3007,7 +3007,7 @@ GROUP BY p.id, p.name, c.name;
 Design a schema for an infinite-depth category tree using both adjacency list and nested set models. Support queries for descendants, ancestors, and immediate children.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 
 ```sql
 CREATE TABLE categories (
@@ -3089,7 +3089,7 @@ WHERE c1.id = 6;
 You have 10 units of Product X. Two customers try to buy 8 units each simultaneously. Ensure only one succeeds. Demonstrate with pessimistic and optimistic locking.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 
 ```sql
 CREATE TABLE inventory (
@@ -3133,7 +3133,7 @@ WHERE product_id = 1
 Design a system for storing and querying temperature sensor readings (10,000 sensors, one reading per minute). Create a partitioned table by month, write hourly average queries, and archive old partitions.
 
 <details>
-<summary>Solution</summary>
+<summary>Solution&lt;/summary&gt;
 
 ```sql
 CREATE TABLE sensor_readings (

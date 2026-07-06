@@ -25,7 +25,7 @@
 |-------|-------------|-------------------|
 | Binary Heap | Complete binary tree with heap property | Array storage, no pointers needed |
 | Max-Heap | Parent >= children | Root is always the maximum element |
-| Min-Heap | Parent <= children | Root is always the minimum element |
+| Min-Heap | Parent &lt;= children | Root is always the minimum element |
 | Insert / Extract | Bubble up / sift down O(log n) | Priority queue core operations |
 | Build Heap | Bottom-up heapify is O(n) | Faster than inserting n elements |
 | Heap Sort | Build + extract repeatedly | In-place O(n log n) sorting |
@@ -61,7 +61,7 @@ flowchart LR
 
 **Definition:** A complete binary tree is a binary tree where every level except possibly the last is completely filled, and all nodes in the last level are as far left as possible.
 
-**Why This Matters:** The completeness guarantees the tree height is always &lfloor;log<sub>2</sub> n&rfloor; for n nodes. This low height is what gives O(log n) operations. And because there are no gaps, we can store it in a flat array without pointers.
+**Why This Matters:** The completeness guarantees the tree height is always &lfloor;log<sub>2&lt;/sub&gt; n&rfloor; for n nodes. This low height is what gives O(log n) operations. And because there are no gaps, we can store it in a flat array without pointers.
 
 **Array Mapping (0-based indexing):**
 
@@ -84,15 +84,15 @@ Tree:                    [A]  [B]  [C]  [D]  [E]  [F]  [G]
 **Key Identifiers:**
 - **Leaf range:** from &lfloor;n/2&rfloor; to n-1
 - **Last non-leaf node:** &lfloor;n/2&rfloor; - 1
-- **Height:** &lfloor;log<sub>2</sub> n&rfloor;
+- **Height:** &lfloor;log<sub>2&lt;/sub&gt; n&rfloor;
 
 ### Max-Heap / Min-Heap
 
-**Real-World Analogy (Company Hierarchy):** In a well-run company, the CEO (root) is the highest paid. Every manager is paid more than their direct reports. This is a max-heap property: parent >= children. A non-profit might invert this → the lowest-paid intern decides policy → that is a min-heap: parent <= children.
+**Real-World Analogy (Company Hierarchy):** In a well-run company, the CEO (root) is the highest paid. Every manager is paid more than their direct reports. This is a max-heap property: parent >= children. A non-profit might invert this → the lowest-paid intern decides policy → that is a min-heap: parent &lt;= children.
 
 **Definition:**
 - **Max-Heap:** For every node i (except root), A[parent(i)] >= A[i]. The root holds the maximum value.
-- **Min-Heap:** For every node i (except root), A[parent(i)] <= A[i]. The root holds the minimum value.
+- **Min-Heap:** For every node i (except root), A[parent(i)] &lt;= A[i]. The root holds the minimum value.
 
 **Example Max-Heap (array + tree view):**
 
@@ -128,8 +128,8 @@ Array: [10, 20, 15, 30, 40, 25]
 1. Let largest = i (current node index)
 2. Compute left child index: l = 2*i + 1
 3. Compute right child index: r = 2*i + 2
-4. If l < n and A[l] > A[largest], set largest = l
-5. If r < n and A[r] > A[largest], set largest = r
+4. If l &lt; n and A[l] &gt; A[largest], set largest = l
+5. If r &lt; n and A[r] &gt; A[largest], set largest = r
 6. If largest != i:
    a. Swap A[i] and A[largest]
    b. Recursively heapify at largest
@@ -224,7 +224,7 @@ public static void maxHeapify(int[] arr, int n, int i) {
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| Time (worst) | O(log n) | Each recursive call moves down one level. Height of complete binary tree is &lfloor;log<sub>2</sub> n&rfloor;. At most one swap per level. |
+| Time (worst) | O(log n) | Each recursive call moves down one level. Height of complete binary tree is &lfloor;log<sub>2&lt;/sub&gt; n&rfloor;. At most one swap per level. |
 | Time (best) | O(1) | If node already satisfies heap property (largest == i), no swaps needed. |
 | Space (recursive) | O(log n) | Call stack height equals tree height for recursive version. |
 | Space (iterative) | O(1) | Can be implemented iteratively with a while loop. |
@@ -242,7 +242,7 @@ public static void maxHeapify(int[] arr, int n, int i) {
 
 **Edge Cases:**
 - **i is a leaf:** l >= n and r >= n, largest stays as i, no swap. This is the base case.
-- **i is out of bounds:** Guard with i < n before calling.
+- **i is out of bounds:** Guard with i &lt; n before calling.
 - **Only left child exists:** For the last non-leaf node in an odd-sized array, the right child index may be >= n.
 - **Single element:** largest == i trivially, no recursion.
 - **All equal values:** largest == i always, no swaps. O(1).
@@ -336,10 +336,10 @@ public static void buildMaxHeap(int[] arr) {
 **Why O(n) and not O(n log n)?** This is the most famous proof in heap theory.
 
 - Heapify at a node at height h takes O(h) time.
-- Number of nodes at height h in a complete binary tree with n nodes is at most &lceil;n/2<sup>h+1</sup>&rceil;.
-- Build heap work = &sum;<sub>h=0</sub><sup>&lfloor;log n&rfloor;</sup> &lceil;n/2<sup>h+1</sup>&rceil; O(h)
-- = O(n &sum;<sub>h=0</sub><sup>&infin;</sup> h/2<sup>h</sup>)
-- The infinite series &sum; h/2<sup>h</sup> converges to 2 (known result: &sum;<sub>k=0</sub><sup>&infin;</sup> k/2<sup>k</sup> = 2).
+- Number of nodes at height h in a complete binary tree with n nodes is at most &lceil;n/2<sup>h+1&lt;/sup&gt;&rceil;.
+- Build heap work = &sum;<sub>h=0&lt;/sub&gt;<sup>&lfloor;log n&rfloor;</sup> &lceil;n/2<sup>h+1&lt;/sup&gt;&rceil; O(h)
+- = O(n &sum;<sub>h=0&lt;/sub&gt;<sup>&infin;</sup> h/2<sup>h&lt;/sup&gt;)
+- The infinite series &sum; h/2<sup>h&lt;/sup&gt; converges to 2 (known result: &sum;<sub>k=0&lt;/sub&gt;<sup>&infin;</sup> k/2<sup>k&lt;/sup&gt; = 2).
 - Therefore: O(n * 2) = **O(n)**
 
 **Intuition:** Most nodes are near the bottom of the tree (leaves are at height 0). Leaf nodes don't need any heapify work. Nodes just above leaves need at most 1 swap. Only the root (1 node) needs O(log n) work. The total sums to linear.
@@ -379,7 +379,7 @@ public static void buildMaxHeap(int[] arr) {
 **Algorithm Steps (Max-Heap Insert):**
 1. Add the new element at the end of the array
 2. Set i = last index (n-1)
-3. While i > 0 and A[parent(i)] < A[i]:
+3. While i > 0 and A[parent(i)] &lt; A[i]:
    a. Swap A[i] with A[parent(i)]
    b. Set i = parent(i)
 
@@ -472,7 +472,7 @@ public void insert(int value) {
 - **Single element:** Added at index 1, parent = 0, compare once. O(1).
 - **Inserting max value repeatedly:** Each insertion bubbles all the way up. O(log n) each.
 - **Inserting min value:** No bubbles. O(1).
-- **Duplicate values:** If A[parent] < A[i] is strict, stable behavior. If â‰¤, boundary case → duplicates may swap unnecessarily.
+- **Duplicate values:** If A[parent] &lt; A[i] is strict, stable behavior. If â‰¤, boundary case → duplicates may swap unnecessarily.
 - **Very large values causing integer overflow:** Parent index computation uses integer arithmetic. For n > 2^31, index overflow is possible.
 - **Floating point NaN:** NaN comparisons are false, so NaN will sit at leaf level and never bubble up.
 
@@ -587,7 +587,7 @@ public int extractMax() {
 1. Given element index i and new value
 2. Assert new value >= old value (increasing key in max-heap)
 3. Update A[i] = newValue
-4. While i > 0 and A[parent(i)] < A[i]:
+4. While i > 0 and A[parent(i)] &lt; A[i]:
    a. Swap with parent
    b. Update position map
    c. i = parent(i)
@@ -679,7 +679,7 @@ public void decreaseKey(int i, int newVal) {
 
 **Edge Cases:**
 - **New value violates heap direction:** Decreasing in max-heap (or increasing in min-heap) requires sift-down, not bubble-up. Know which direction your heap supports.
-- **Index out of bounds:** Validate i < n before access.
+- **Index out of bounds:** Validate i &lt; n before access.
 - **No change (same value):** Loop condition false, O(1).
 - **New value becomes extreme (new global max/min):** Bubbles all the way to root. O(log n).
 - **Position map synchronization:** Every swap in sift-up AND sift-down must update positions.
@@ -714,8 +714,8 @@ function heapSort(A, n):
 |------|---|--------|-------|
 | Init | - | Starting array | [4, 10, 3, 5, 1] |
 | 1 | 1 | Heapify idx 1: 10 > 5,1 → no swap | [4, 10, 3, 5, 1] |
-| 2 | 0 | Heapify idx 0: 4 < 10 → swap 4↔10 | [10, 4, 3, 5, 1] |
-| 3 | 1 | Heapify idx 1: 4 < 5 → swap 4↔5 | [10, 5, 3, 4, 1] |
+| 2 | 0 | Heapify idx 0: 4 &lt; 10 → swap 4↔10 | [10, 4, 3, 5, 1] |
+| 3 | 1 | Heapify idx 1: 4 &lt; 5 → swap 4↔5 | [10, 5, 3, 4, 1] |
 
 **Max-Heap:** [10, 5, 3, 4, 1]
 
@@ -1091,7 +1091,7 @@ int findKthLargest(std::vector<int>& nums, int k) {
 1. Build a min-heap with the first k+1 elements
 2. For i = 0 to n-1:
    a. Extract min from heap → place at arr[i]
-   b. If there's a next element (i + k + 1 < n), push it into heap
+   b. If there's a next element (i + k + 1 &lt; n), push it into heap
 
 **Complexity:** O(n log k) time, O(k) space. When k is small (like 1 or 2), this is nearly O(n).
 

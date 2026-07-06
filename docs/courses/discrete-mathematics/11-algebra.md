@@ -260,35 +260,35 @@ function isPrime(n: number): boolean {
    - B) Identity
    - C) Commutativity
    - D) Inverses
-   <details><summary>Answer</summary>**C)** Groups do not require commutativity; only abelian groups do.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Groups do not require commutativity; only abelian groups do.</details>
 
 2. What is the order of the symmetric group $S_4$?
    - A) 4
    - B) 12
    - C) 24
    - D) 120
-   <details><summary>Answer</summary>**C)** $|S_n| = n! = 4! = 24$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $|S_n| = n! = 4! = 24$.</details>
 
 3. The set $\mathbb{Z}_n$ under addition modulo $n$ is:
    - A) A field
    - B) A group
    - C) A ring but not a group
    - D) A semigroup but not a group
-   <details><summary>Answer</summary>**B)** $(\mathbb{Z}_n, +)$ is an abelian group (and a ring, but "group" is the most fundamental correct answer).</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $(\mathbb{Z}_n, +)$ is an abelian group (and a ring, but "group" is the most fundamental correct answer).</details>
 
 4. Which is NOT a field?
    - A) $\mathbb{Z}_5$
    - B) $\mathbb{Z}_6$
    - C) $\mathbb{R}$
    - D) $\mathbb{Q}$
-   <details><summary>Answer</summary>**B)** $\mathbb{Z}_6$ is not a field because 6 is not prime ? 2 and 3 have no multiplicative inverse.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $\mathbb{Z}_6$ is not a field because 6 is not prime ? 2 and 3 have no multiplicative inverse.</details>
 
 5. A homomorphism is injective if and only if:
    - A) Its image is the whole codomain
    - B) Its kernel is trivial
    - C) It is surjective
    - D) The groups are finite
-   <details><summary>Answer</summary>**B)** $\ker(\phi) = \{e_G\}$ is equivalent to injectivity of a homomorphism.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $\ker(\phi) = \{e_G\}$ is equivalent to injectivity of a homomorphism.</details>
 
 ## Examples
 
@@ -496,11 +496,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -508,7 +508,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -534,7 +534,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -552,23 +552,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()
@@ -798,7 +798,7 @@ console.table(cayleyTable(Z4, addMod4));
 
 **Proof 11.5** (Every subgroup of a cyclic group is cyclic).
 
-*Proof.* Let $G = \langle g \rangle$ be cyclic with $|G| = n$ (or infinite). Let $H \leq G$ be a subgroup. If $H = \{e\}$, it is trivial cyclic. Otherwise, let $k$ be the smallest positive integer such that $g^k \in H$. We claim $H = \langle g^k \rangle$. Take any $h = g^m \in H$. Write $m = qk + r$ with $0 \leq r < k$. Then $g^r = g^{m - qk} = h \cdot (g^k)^{-q} \in H$. Minimality of $k$ forces $r = 0$, so $m = qk$ and $h = (g^k)^q \in \langle g^k \rangle$. $\square$
+*Proof.* Let $G = \langle g \rangle$ be cyclic with $|G| = n$ (or infinite). Let $H \leq G$ be a subgroup. If $H = \{e\}$, it is trivial cyclic. Otherwise, let $k$ be the smallest positive integer such that $g^k \in H$. We claim $H = \langle g^k \rangle$. Take any $h = g^m \in H$. Write $m = qk + r$ with $0 \leq r &lt; k$. Then $g^r = g^{m - qk} = h \cdot (g^k)^{-q} \in H$. Minimality of $k$ forces $r = 0$, so $m = qk$ and $h = (g^k)^q \in \langle g^k \rangle$. $\square$
 
 ## Additional Exercises
 

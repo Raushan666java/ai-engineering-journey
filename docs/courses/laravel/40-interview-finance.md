@@ -802,7 +802,7 @@ Use a layered architecture: Layer 1 is a lightweight pre-filter in middleware th
 
 ### Q20: Design a payment processing system with integrated fraud detection.
 
-Walk through the end-to-end design: 1) User submits payment via a frontend form using Stripe Elements (card tokenized client-side). 2) Laravel controller creates a `PaymentIntent` via Cashier and stores a `Transaction` record in `pending` status. 3) Transaction dispatched to the `fraud-detection` queue. 4) `FraudDetectionAgent` evaluates it asynchronously → rules + AI scoring. 5) If score < 0.3, approve automatically and complete the PaymentIntent. 6) If 0.3â€“0.7, flag for manual review and hold settlement. 7) If > 0.7, block immediately and refund. 8) Webhook listener updates transaction status when the gateway confirms settlement. 9) On completion, dispatch post-payment jobs (invoice, notification, ledger entry). The key design decision is separating the payment capture from the fraud verdict by processing fraud asynchronously on the queue.
+Walk through the end-to-end design: 1) User submits payment via a frontend form using Stripe Elements (card tokenized client-side). 2) Laravel controller creates a `PaymentIntent` via Cashier and stores a `Transaction` record in `pending` status. 3) Transaction dispatched to the `fraud-detection` queue. 4) `FraudDetectionAgent` evaluates it asynchronously → rules + AI scoring. 5) If score &lt; 0.3, approve automatically and complete the PaymentIntent. 6) If 0.3â€“0.7, flag for manual review and hold settlement. 7) If &gt; 0.7, block immediately and refund. 8) Webhook listener updates transaction status when the gateway confirms settlement. 9) On completion, dispatch post-payment jobs (invoice, notification, ledger entry). The key design decision is separating the payment capture from the fraud verdict by processing fraud asynchronously on the queue.
 
 ### Q21: How would you handle financial data reconciliation between internal records and a bank statement?
 
@@ -876,7 +876,7 @@ First, trigger an immediate circuit breaker on the agent's execution to stop fur
 - C) Timestamps
 - D) User sessions
 
-<details><summary>Answer</summary>B) Idempotency keys</details>
+<details><summary>Answer&lt;/summary&gt;B) Idempotency keys&lt;/details&gt;
 
 **Q2:** What does reconciliation compare?
 - A) User profiles
@@ -884,7 +884,7 @@ First, trigger an immediate circuit breaker on the agent's execution to stop fur
 - C) Product prices
 - D) Customer reviews
 
-<details><summary>Answer</summary>B) Internal transaction records with external statements</details>
+<details><summary>Answer&lt;/summary&gt;B) Internal transaction records with external statements&lt;/details&gt;
 
 **Q3:** What approach does fraud detection typically use?
 - A) Only rule-based
@@ -892,7 +892,7 @@ First, trigger an immediate circuit breaker on the agent's execution to stop fur
 - C) Only manual review
 - D) Random sampling
 
-<details><summary>Answer</summary>B) Rule + ML hybrid scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) Rule + ML hybrid scoring&lt;/details&gt;
 
 **Q4:** What is the most critical property of financial transactions?
 - A) Speed
@@ -900,4 +900,4 @@ First, trigger an immediate circuit breaker on the agent's execution to stop fur
 - C) UI design
 - D) API documentation
 
-<details><summary>Answer</summary>B) Atomicity and integrity</details>
+<details><summary>Answer&lt;/summary&gt;B) Atomicity and integrity&lt;/details&gt;

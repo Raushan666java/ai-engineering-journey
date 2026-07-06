@@ -93,7 +93,7 @@ AI SDK Layer (DocumentAnalysis, MeetingSummarizer, CodeReview, SearchAgent)
 
 | Decision | Rationale |
 |---|---|
-| Octane with RoadRunner | Persistent application in memory eliminates framework boot time. Critical for <200ms page load budget. |
+| Octane with RoadRunner | Persistent application in memory eliminates framework boot time. Critical for &lt;200ms page load budget. |
 | PostgreSQL + pgvector | Single database for relational data and vector embeddings. No separate vector DB needed. |
 | Redis for cache + queue + pub/sub | Three workloads on one cluster reduces operational complexity. |
 | Separate AI worker queues | AI generation can take 30-60 seconds. Isolating prevents head-of-line blocking on request queues. |
@@ -406,9 +406,9 @@ Each MCP endpoint validates the JSON-RPC envelope (jsonrpc version, method, para
 
 Search operates at three tiers with progressive fallback:
 
-**Full-Text Search (Tier 1)** Ã¢â‚¬â€ PostgreSQL FULLTEXT index on title and body. Uses `tsvector` and `plainto_tsquery`. Fast, zero external dependencies. Suitable for exact keyword matching and prefix queries. Response time: <50ms at p95.
+**Full-Text Search (Tier 1)** Ã¢â‚¬â€ PostgreSQL FULLTEXT index on title and body. Uses `tsvector` and `plainto_tsquery`. Fast, zero external dependencies. Suitable for exact keyword matching and prefix queries. Response time: &lt;50ms at p95.
 
-**Vector Search (Tier 2)** Ã¢â‚¬â€ pgvector cosine similarity on 1536-dimension embeddings. HNSW index with m=16, ef_construction=200 for approximate nearest neighbor. Understands semantic intent. Response time: <200ms at p95 for 1M vectors.
+**Vector Search (Tier 2)** Ã¢â‚¬â€ pgvector cosine similarity on 1536-dimension embeddings. HNSW index with m=16, ef_construction=200 for approximate nearest neighbor. Understands semantic intent. Response time: &lt;200ms at p95 for 1M vectors.
 
 **Hybrid Search (Tier 3)** Ã¢â‚¬â€ Weighted combination: `hybrid_score = vector_score * 0.7 + fts_score * 0.3`. Results are deduplicated and reranked. Weights are configurable per content type (e.g., code reviews emphasize full-text, meetings emphasize semantic).
 
@@ -617,28 +617,28 @@ class DocumentAnalysisAgentTest extends TestCase
    - B) Design the system architecture
    - C) Install dependencies
    - D) Configure the database
-   <details><summary>Answer</summary>**B)** Part A is system architecture design before any code is written.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Part A is system architecture design before any code is written.</details>
 
 2. How are AI agents structured in this project?
    - A) Monolithic single agent
    - B) Specialized agents per capability
    - C) External API only
    - D) Stateless functions
-   <details><summary>Answer</summary>**B)** Specialized agents handle content generation, moderation, and search separately.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Specialized agents handle content generation, moderation, and search separately.</details>
 
 3. What is the purpose of a performance budget?
    - A) Estimate project cost
    - B) Set metrics thresholds enforced in CI
    - C) Track developer productivity
    - D) Measure code coverage
-   <details><summary>Answer</summary>**B)** A performance budget defines acceptable thresholds for response times, query counts, and memory usage, enforced in CI.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** A performance budget defines acceptable thresholds for response times, query counts, and memory usage, enforced in CI.</details>
 
 4. When should CI/CD be set up?
    - A) After the first release
    - B) Before the first feature commit
    - C) During beta testing
    - D) Only for production
-   <details><summary>Answer</summary>**B)** CI/CD should be set up before the first feature commit for automated deployment from day one.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** CI/CD should be set up before the first feature commit for automated deployment from day one.</details>
 
 ## Concept Comparison Table
 
@@ -672,40 +672,40 @@ class DocumentAnalysisAgentTest extends TestCase
    - B) Design the system architecture
    - C) Install dependencies
    - D) Configure the database
-   <details><summary>Answer</summary>**B)** Part A is system architecture design before any code is written.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Part A is system architecture design before any code is written.</details>
 
 2. How are AI agents structured in this project?
    - A) Monolithic single agent
    - B) Specialized agents per capability
    - C) External API only
    - D) Stateless functions
-   <details><summary>Answer</summary>**B)** Specialized agents handle content generation, moderation, and search separately.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Specialized agents handle content generation, moderation, and search separately.</details>
 
 3. What is the purpose of a performance budget?
    - A) Estimate project cost
    - B) Set metrics thresholds enforced in CI
    - C) Track developer productivity
    - D) Measure code coverage
-   <details><summary>Answer</summary>**B)** A performance budget defines acceptable thresholds for response times, query counts, and memory usage, enforced in CI.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** A performance budget defines acceptable thresholds for response times, query counts, and memory usage, enforced in CI.</details>
 
 4. When should CI/CD be set up?
    - A) After the first release
    - B) Before the first feature commit
    - C) During beta testing
    - D) Only for production
-   <details><summary>Answer</summary>**B)** CI/CD should be set up before the first feature commit for automated deployment from day one.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** CI/CD should be set up before the first feature commit for automated deployment from day one.</details>
 
 ## Summary
 
 - TeamSynth is a team collaboration platform that uses four specialized AI agents (DocumentAnalysis, MeetingSummarizer, CodeReview, Search) to extract actionable intelligence from team artifacts.
 - The architecture follows a layered topology: Cloudflare CDN Ã¢â€ â€™ Load Balancer Ã¢â€ â€™ Octane web nodes Ã¢â€ â€™ Redis Ã¢â€ â€™ PostgreSQL + pgvector Ã¢â€ â€™ Queue Workers Ã¢â€ â€™ Reverb Ã¢â€ â€™ AI SDK.
 - The data model stores all content polymorphically. Embeddings use pgvector with a 1536-dimension HNSW index across document, meeting, code, and comment content types.
-- Search uses three tiers: PostgreSQL full-text (Tier 1, <50ms), pgvector cosine similarity (Tier 2, <200ms), and hybrid weighted scoring (Tier 3, <500ms). A cross-encoder reranker improves precision.
+- Search uses three tiers: PostgreSQL full-text (Tier 1, &lt;50ms), pgvector cosine similarity (Tier 2, <200ms), and hybrid weighted scoring (Tier 3, <500ms). A cross-encoder reranker improves precision.
 - Real-time collaboration uses Reverb with Echo for presence channels, typing indicators, agent progress broadcasts, and notification streams.
 - MCP servers expose search_documents, summarize_document, review_pr, lint_check, transcribe, and summarize as JSON-RPC tools for external AI clients.
 - Deployment uses Vapor for serverless Octane, managed PostgreSQL + Redis, Envoyer for zero-downtime deploys, and Forge for queue workers.
 - Testing spans unit (agent output), feature (API), integration (RAG pipeline), browser (Dusk for WebSockets), and custom evals (search relevance, output quality).
-- Performance budget: page load <200ms, search <500ms, AI generation <5s, API <100ms, real-time <100ms latency.
+- Performance budget: page load &lt;200ms, search <500ms, AI generation <5s, API <100ms, real-time <100ms latency.
 - Monitoring uses Pulse (dashboards), Telescope (request debugging), Nightwatch (error tracking), and custom Prometheus metrics for token usage, queue length, and cache hit ratio.
 
 ---

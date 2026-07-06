@@ -1031,7 +1031,7 @@ ORDER BY emp_count DESC;
 | 1 | FROM employees | All 6 rows (full table) |
 | 2 | WHERE salary > 50000 | Rows: Alice(60000), Carol(70000), Dave(55000), Eve(80000) -- 4 rows |
 | 3 | GROUP BY department_id | Group 10: {Alice, Carol, Dave}; Group 20: {Eve} |
-| 4 | HAVING COUNT(*) >= 2 | Group 10 has 3 rows >= 2: KEPT. Group 20 has 1 row < 2: REMOVED |
+| 4 | HAVING COUNT(*) >= 2 | Group 10 has 3 rows >= 2: KEPT. Group 20 has 1 row &lt; 2: REMOVED |
 | 5 | SELECT department_id, COUNT(*) | {dept=10, count=3} |
 | 6 | ORDER BY emp_count DESC | {dept=10, count=3} (only one row, no sort change) |
 
@@ -1052,7 +1052,7 @@ Filters rows based on conditions. Only rows where the condition evaluates to TRU
 | Operator | Example | Description | Library Analogy |
 |----------|---------|-------------|-----------------|
 | = | `WHERE title = 'The Hobbit'` | Equal to | Exact title match |
-| != or <> | `WHERE copies_available != 0` | Not equal to | Books that have copies checked out |
+| != or &lt;> | `WHERE copies_available != 0` | Not equal to | Books that have copies checked out |
 | > | `WHERE published_year > 2000` | Greater than | Books published after 2000 |
 | < | `WHERE published_year < 1950` | Less than | Books published before 1950 |
 | >= | `WHERE copies_available >= 1` | Greater than or equal | Books with at least 1 copy |
@@ -1115,7 +1115,7 @@ SELECT * FROM books WHERE copies_available <> 0;      -- Excludes NULL rows (NUL
 | Expression | Result | Explanation |
 |-----------|--------|-------------|
 | NULL = NULL | UNKNOWN | No two NULLs are considered equal |
-| NULL <> NULL | UNKNOWN | Even inequality is unknown |
+| NULL &lt;> NULL | UNKNOWN | Even inequality is unknown |
 | NULL > 5 | UNKNOWN | NULL compared to anything is unknown |
 | NULL AND TRUE | UNKNOWN | Logical AND with unknown |
 | NULL OR TRUE | TRUE | OR short-circuits: TRUE dominates |
@@ -1332,7 +1332,7 @@ HAVING COUNT(*) >= 1 AND AVG(copies_available) > 1;
 |---------|-------|-----|
 | GROUP BY (hash-based) | O(n) | Build hash table, one pass per row |
 | GROUP BY (sort-based) | O(n log n) | Sort by group columns, then scan |
-| HAVING filter | O(g) | g = number of groups (usually g <= n) |
+| HAVING filter | O(g) | g = number of groups (usually g &lt;= n) |
 | Space | O(g) | Hash table or sort area per group |
 
 #### 4.5.7 Aggregate Functions
@@ -2276,7 +2276,7 @@ c) Find the highest-paid employee name
 
 11. Design a complete schema for a HOTEL BOOKING system with tables: `hotels`, `rooms`, `guests`, `bookings`, `payments`. Include at least:
     - Composite keys where appropriate
-    - CHECK constraints (e.g., check_in < check_out)
+    - CHECK constraints (e.g., check_in &lt; check_out)
     - DEFAULT values
     - Foreign keys with appropriate referential actions
     - At least one UNIQUE constraint across multiple columns

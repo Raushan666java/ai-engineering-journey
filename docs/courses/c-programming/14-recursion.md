@@ -155,7 +155,7 @@ Liftoff!
 |-----------|----------|-----------|
 | n = 0 | Immediate base case, no recursion | Ensure base case handles minimum input |
 | n = 1 | One recursive step, then base case | Verify boundary works correctly |
-| n = -1 | If n is negative and base is n <= 0, base triggers immediately | Decide if negative input is valid |
+| n = -1 | If n is negative and base is n &lt;= 0, base triggers immediately | Decide if negative input is valid |
 | Large n (10,000+) | Stack overflow on most systems | Use iteration or tail recursion with TCO |
 | No base case | Infinite recursion until stack overflow | Always verify base case exists for all paths |
 
@@ -220,7 +220,7 @@ int sum(int n)
 
 For `sum(3)` with implementation `if (n <= 0) return 0; else return n + sum(n - 1);`:
 
-| Frame | n | Test n <= 0 | Action | Return Value |
+| Frame | n | Test n &lt;= 0 | Action | Return Value |
 |-------|---|-----------|--------|-------------|
 | sum(3) | 3 | false | return 3 + sum(2) | 3 + 3 = 6 |
 | sum(2) | 2 | false | return 2 + sum(1) | 2 + 1 = 3 |
@@ -955,11 +955,11 @@ You have n people to seat in n chairs. The first person can sit in any of n chai
 
 #### Numbered Steps for factorial(5)
 
-1. Check: is 5 <= 1? No. Compute 5 x factorial(4).
-2. Check: is 4 <= 1? No. Compute 4 x factorial(3).
-3. Check: is 3 <= 1? No. Compute 3 x factorial(2).
-4. Check: is 2 <= 1? No. Compute 2 x factorial(1).
-5. Check: is 1 <= 1? **Yes.** Return 1.
+1. Check: is 5 &lt;= 1? No. Compute 5 x factorial(4).
+2. Check: is 4 &lt;= 1? No. Compute 4 x factorial(3).
+3. Check: is 3 &lt;= 1? No. Compute 3 x factorial(2).
+4. Check: is 2 &lt;= 1? No. Compute 2 x factorial(1).
+5. Check: is 1 &lt;= 1? **Yes.** Return 1.
 6. Back in step 4: return 2 x 1 = 2.
 7. Back in step 3: return 3 x 2 = 6.
 8. Back in step 2: return 4 x 6 = 24.
@@ -1024,7 +1024,7 @@ int main(void)
 
 #### Full Dry Run Trace Table for factorial(5)
 
-| Frame | n | n <= 1? | Expression | Returns | Value Calculated |
+| Frame | n | n &lt;= 1? | Expression | Returns | Value Calculated |
 |-------|---|---------|-----------|---------|-----------------|
 | factorial(5) | 5 | false | 5 x factorial(4) | 5 x 24 | 120 |
 | factorial(4) | 4 | false | 4 x factorial(3) | 4 x 6 | 24 |
@@ -1465,7 +1465,7 @@ To find a word in a dictionary, you don't start at page 1. You open to the middl
 
 Array: [2, 5, 8, 12, 16, 23, 38, 45, 56, 72]
 
-1. left=0, right=9. mid = 0+(9-0)/2 = 4. arr[4]=16 < 23. Search right: left=5.
+1. left=0, right=9. mid = 0+(9-0)/2 = 4. arr[4]=16 &lt; 23. Search right: left=5.
 2. left=5, right=9. mid = 5+(9-5)/2 = 7. arr[7]=45 > 23. Search left: right=6.
 3. left=5, right=6. mid = 5+(6-5)/2 = 5. arr[5]=23 == 23. Found at index 5.
 
@@ -1546,7 +1546,7 @@ Array: 2 5 8 12 16 23 38 45 56 72
 
 | Call | left | right | mid | arr[mid] | arr[mid] vs 23 | Action |
 |------|------|-------|-----|----------|---------------|--------|
-| bs(arr, 0, 9, 23) | 0 | 9 | 4 | 16 | 16 < 23 | Recurs on right (mid+1, right) |
+| bs(arr, 0, 9, 23) | 0 | 9 | 4 | 16 | 16 &lt; 23 | Recurs on right (mid+1, right) |
 | bs(arr, 5, 9, 23) | 5 | 9 | 7 | 45 | 45 > 23 | Recurs on left (left, mid-1) |
 | bs(arr, 5, 6, 23) | 5 | 6 | 5 | 23 | **23 == 23** | Return 5 |
 
@@ -1734,12 +1734,12 @@ Sorted:   3 9 10 27 38 43 82
 
 | i | L[i] | j | R[j] | Comparison | Take | k |
 |---|---|--|------|-----------|------|---|
-| 0 | 3 | 0 | 9 | 3 <= 9: true | L[0] -> arr[0]=3 | 1 |
-| 1 | 27 | 0 | 9 | 27 <= 9: false | R[0] -> arr[1]=9 | 2 |
-| 1 | 27 | 1 | 10 | 27 <= 10: false | R[1] -> arr[2]=10 | 3 |
-| 1 | 27 | 2 | 82 | 27 <= 82: true | L[1] -> arr[3]=27 | 4 |
-| 2 | 38 | 2 | 82 | 38 <= 82: true | L[2] -> arr[4]=38 | 5 |
-| 3 | 43 | 2 | 82 | 43 <= 82: true | L[3] -> arr[5]=43 | 6 |
+| 0 | 3 | 0 | 9 | 3 &lt;= 9: true | L[0] -&gt; arr[0]=3 | 1 |
+| 1 | 27 | 0 | 9 | 27 &lt;= 9: false | R[0] -&gt; arr[1]=9 | 2 |
+| 1 | 27 | 1 | 10 | 27 &lt;= 10: false | R[1] -&gt; arr[2]=10 | 3 |
+| 1 | 27 | 2 | 82 | 27 &lt;= 82: true | L[1] -&gt; arr[3]=27 | 4 |
+| 2 | 38 | 2 | 82 | 38 &lt;= 82: true | L[2] -&gt; arr[4]=38 | 5 |
+| 3 | 43 | 2 | 82 | 43 &lt;= 82: true | L[3] -&gt; arr[5]=43 | 6 |
 | 4 | (done) | 2 | 82 | L exhausted | Copy R[2] -> arr[6]=82 | 7 |
 
 #### Complexity Analysis
@@ -2863,7 +2863,7 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
    C) Pointer and array
    D) Stack and queue
 
-<details><summary>Answer</summary>**B)** Every recursive function needs a base case (stops recursion) and a recursive case (calls itself with modified arguments).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Every recursive function needs a base case (stops recursion) and a recursive case (calls itself with modified arguments).</details>
 
 2. What is the worst-case stack depth for recursive binary search on an array of 1,000,000 elements?
    A) ~20 frames
@@ -2871,7 +2871,7 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
    C) ~500,000 frames
    D) ~100 frames
 
-<details><summary>Answer</summary>**A)** Binary search halves the array each step. log2(1,000,000) ~ 20. So max 20 stack frames.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** Binary search halves the array each step. log2(1,000,000) ~ 20. So max 20 stack frames.</details>
 
 3. Which of the following is a tail-recursive function?
    A) `int f(int n) { if (n<=1) return 1; return n * f(n-1); }`
@@ -2879,7 +2879,7 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
    C) `int f(int n) { if (n<=1) return 1; return f(n-1) * n; }`
    D) `int f(int n) { if (n<=0) return 0; return n + f(n-1); }`
 
-<details><summary>Answer</summary>**B)** In tail recursion, the recursive call is the final operation and its result is returned directly. Options A, C, and D all have pending operations after the recursive call.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** In tail recursion, the recursive call is the final operation and its result is returned directly. Options A, C, and D all have pending operations after the recursive call.</details>
 
 4. What is the time complexity of naive recursive Fibonacci?
    A) O(n)
@@ -2887,7 +2887,7 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
    C) O(log n)
    D) O(2^n)
 
-<details><summary>Answer</summary>**D)** Each call to fib(n) creates two more calls (fib(n-1) and fib(n-2)), creating a binary tree of calls with ~2^n nodes.</details>
+<details><summary>Answer&lt;/summary&gt;**D)** Each call to fib(n) creates two more calls (fib(n-1) and fib(n-2)), creating a binary tree of calls with ~2^n nodes.</details>
 
 5. What is backtracking in the context of recursion?
    A) Calling a function repeatedly until stack overflow
@@ -2895,7 +2895,7 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
    C) Converting recursion to iteration
    D) Using multiple base cases
 
-<details><summary>Answer</summary>**B)** Backtracking is a recursive search strategy that tries a partial solution, recurses, and if it fails, "undoes" the last step and tries the next option.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Backtracking is a recursive search strategy that tries a partial solution, recurses, and if it fails, "undoes" the last step and tries the next option.</details>
 
 6. Which of these problems is LEAST suited to a recursive solution?
    A) Traversing a binary tree
@@ -2903,7 +2903,7 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
    C) Solving the N-Queens problem
    D) Performing merge sort
 
-<details><summary>Answer</summary>**B)** Summing array elements is a simple linear operation best done with a loop. The other three are naturally recursive.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Summing array elements is a simple linear operation best done with a loop. The other three are naturally recursive.</details>
 
 7. What is the minimum number of moves required to solve Tower of Hanoi with 5 disks?
    A) 15
@@ -2911,7 +2911,7 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
    C) 31
    D) 63
 
-<details><summary>Answer</summary>**C)** Tower of Hanoi requires 2^n - 1 moves. For n=5: 2^5 - 1 = 32 - 1 = 31.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Tower of Hanoi requires 2^n - 1 moves. For n=5: 2^5 - 1 = 32 - 1 = 31.</details>
 
 8. Which optimization can reduce the space complexity of a recursive function from O(n) to O(1)?
    A) Inlining
@@ -2919,7 +2919,7 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
    C) Tail-call optimization
    D) Memoization
 
-<details><summary>Answer</summary>**C)** Tail-call optimization (TCO) reuses the current stack frame, eliminating stack growth. Memoization improves time complexity, not stack space.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Tail-call optimization (TCO) reuses the current stack frame, eliminating stack growth. Memoization improves time complexity, not stack space.</details>
 
 ## Exercises
 

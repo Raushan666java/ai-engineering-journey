@@ -1730,6 +1730,6 @@ main();
 
 4. **Observability trace exporter.** Implement a `TraceExporter` that wraps any agent loop and emits OpenTelemetry-compatible spans for each iteration. Each span should carry attributes: `model_name`, `input_tokens`, `output_tokens`, `iteration_number`, and a `loop_id` attribute linking all spans for one request.
 
-5. **Drift detector with KS test.** Replace the heuristic drift scoring in `ProductionLoopManager.detectDrift` with a two-sample Kolmogorov–Smirnov test comparing the current window's latency distribution against the baseline. Use a significance threshold of p < 0.05.
+5. **Drift detector with KS test.** Replace the heuristic drift scoring in `ProductionLoopManager.detectDrift` with a two-sample Kolmogorov–Smirnov test comparing the current window's latency distribution against the baseline. Use a significance threshold of p &lt; 0.05.
 
 6. **Alert router.** Implement an `AlertRouter` that accepts `DriftReport` and `CostRecord` events and routes them to configurable channels: Slack webhook, PagerDuty, email, or a silent log. Include a deduplication window so the same alert type fires at most once per 15 minutes.

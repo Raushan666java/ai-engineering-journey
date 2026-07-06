@@ -22,7 +22,7 @@ After completing this chapter, you will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Divisibility | $a \mid b$ means $b = a \cdot k$ for some integer $k$ | Foundation for all of number theory |
-| Division Algorithm | $a = q \cdot m + r$ with $0 \leq r < m$ | Uniqueness of quotient and remainder |
+| Division Algorithm | $a = q \cdot m + r$ with $0 \leq r &lt; m$ | Uniqueness of quotient and remainder |
 | GCD & LCM | $\gcd(a,b) \cdot \text{lcm}(a,b) = a \cdot b$ | Euclidean algorithm finds $\gcd$ efficiently |
 | Euclidean Algorithm | $\gcd(a,b) = \gcd(b, a \bmod b)$ | Repeated remainder computation; $O(\log \min(a,b))$ |
 | Modular Arithmetic | $a \equiv b \pmod{m}$ if $m \mid (a-b)$ | Arithmetic modulo $m$ is consistent with integers |
@@ -71,11 +71,11 @@ For integers $a$ and $b$ with $a \neq 0$, $a$ **divides** $b$ (written $a \mid b
 ### 14.2 Division Algorithm
 
 **Theorem 14.2 (Division algorithm).** For integers $a$ and $m > 0$, there exist unique integers $q$ (quotient) and $r$ (remainder) such that:
-$$a = q \cdot m + r,\quad 0 \leq r < m$$
+$$a = q \cdot m + r,\quad 0 \leq r &lt; m$$
 
 We write $r = a \bmod m$ and $q = \lfloor a/m \rfloor$.
 
-> **One-Sentence Takeaway:** Every integer $a$ can be uniquely expressed as $a = qm + r$ with $0 \leq r < m$; the remainder is the basis of modular arithmetic.
+> **One-Sentence Takeaway:** Every integer $a$ can be uniquely expressed as $a = qm + r$ with $0 \leq r &lt; m$; the remainder is the basis of modular arithmetic.
 
 ### 14.3 GCD and LCM
 
@@ -277,7 +277,7 @@ console.log(totient(100)); // 40
 **RSA key generation:**
 1. Choose two large distinct primes $p$ and $q$.
 2. Compute $n = p \cdot q$ and $\phi(n) = (p-1)(q-1)$.
-3. Choose $e$ with $1 < e < \phi(n)$ and $\gcd(e, \phi(n)) = 1$.
+3. Choose $e$ with $1 &lt; e < \phi(n)$ and $\gcd(e, \phi(n)) = 1$.
 4. Compute $d \equiv e^{-1} \pmod{\phi(n)}$.
 5. Public key: $(e, n)$. Private key: $(d, n)$.
 
@@ -338,35 +338,35 @@ const plaintext = rsaDecrypt(ciphertext, d, n); // 65
    - B) 12
    - C) 21
    - D) 42
-   <details><summary>Answer</summary>**C)** $315 = 2 \cdot 84 + 147$, $84 = 0 \cdot 147 + 84$, $147 = 1 \cdot 84 + 63$, $84 = 1 \cdot 63 + 21$, $63 = 3 \cdot 21 + 0$. $\gcd = 21$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $315 = 2 \cdot 84 + 147$, $84 = 0 \cdot 147 + 84$, $147 = 1 \cdot 84 + 63$, $84 = 1 \cdot 63 + 21$, $63 = 3 \cdot 21 + 0$. $\gcd = 21$.</details>
 
 2. When does $a$ have a multiplicative inverse modulo $m$?
    - A) Always
    - B) When $a$ and $m$ are coprime
    - C) When $a > m$
    - D) When $m$ is prime
-   <details><summary>Answer</summary>**B)** $a^{-1} \pmod{m}$ exists iff $\gcd(a,m) = 1$.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $a^{-1} \pmod{m}$ exists iff $\gcd(a,m) = 1$.</details>
 
 3. The Chinese Remainder Theorem requires that:
    - A) All moduli are equal
    - B) All moduli are pairwise coprime
    - C) All remainders are equal
    - D) Moduli are powers of 2
-   <details><summary>Answer</summary>**B)** The CRT requires pairwise coprime moduli for a unique solution modulo the product.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The CRT requires pairwise coprime moduli for a unique solution modulo the product.</details>
 
 4. Fermat's Little Theorem states:
    - A) $a^n \equiv a \pmod{n}$
    - B) $a^{p-1} \equiv 1 \pmod{p}$ when $p$ is prime and $p \nmid a$
    - C) $a^p \equiv 1 \pmod{p}$ for all $a$
    - D) $(a+b)^p \equiv a^p + b^p \pmod{p}$
-   <details><summary>Answer</summary>**B)** $a^{p-1} \equiv 1 \pmod{p}$ when $p$ is prime and $p \nmid a$.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $a^{p-1} \equiv 1 \pmod{p}$ when $p$ is prime and $p \nmid a$.</details>
 
 5. The totient $\phi(p^k)$ for prime $p$ equals:
    - A) $p^k$
    - B) $p^k - 1$
    - C) $p^{k-1}(p-1)$
    - D) $p-1$
-   <details><summary>Answer</summary>**C)** $\phi(p^k) = p^k - p^{k-1} = p^{k-1}(p-1)$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $\phi(p^k) = p^k - p^{k-1} = p^{k-1}(p-1)$.</details>
 
 ## Examples
 
@@ -607,11 +607,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -619,7 +619,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -645,7 +645,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -663,23 +663,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()

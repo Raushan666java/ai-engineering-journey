@@ -211,7 +211,7 @@ Publish one case-study post on LinkedIn (native post, not a link to a blog). Spe
 | Platform | Best for | Search terms |
 |----------|----------|-------------|
 | LinkedIn | Direct hire, companies | "AI Automation Engineer", "AI Agent", "LangGraph", "RAG" |
-| Indeed UAE | Recruiter postings | Filter by Remote, Posted < 7 days |
+| Indeed UAE | Recruiter postings | Filter by Remote, Posted &lt; 7 days |
 | Bayt.com | Middle East focused | "AI Engineer" + Remote |
 | Wellfound | Startup roles | "AI Engineer", filter by Remote |
 
@@ -219,7 +219,7 @@ Publish one case-study post on LinkedIn (native post, not a link to a blog). Spe
 
 - **Week 1:** Identify 20 target postings. Customize your proposal template for each. Apply to 5.
 - **Week 2:** Apply to 5 more. Follow up on Week 1 applications.
-- **Week 3:** Apply to 5 more. If response rate is < 20%, revise profile.
+- **Week 3:** Apply to 5 more. If response rate is &lt; 20%, revise profile.
 - **Week 4:** Apply to 5 more. By now you should have data on what's working.
 
 ### Response tracking
@@ -723,8 +723,8 @@ class LLMAsJudgeScorer implements Scorer {
   score(expected: string, actual: string): number { return actual.length>expected.length*.5?1:0 }
 }
 class EvalRunner {
-  constructor(private scorer: Scorer, private modelFn: (input:string)=>Promise<string>) {}
-  async run(cases: EvalCase[]): Promise<EvalResult[]> {
+  constructor(private scorer: Scorer, private modelFn: (input:string)=>Promise&lt;string&gt;) {}
+  async run(cases: EvalCase[]): Promise&lt;EvalResult[]&gt; {
     const results: EvalResult[] = []
     for(const c of cases) {
       const start = Date.now(); let actual: string; let error = false
@@ -738,8 +738,8 @@ class EvalRunner {
 class RegressionDetector {
   detect(baseline: EvalResult[], current: EvalResult[]): string[] {
     const issues: string[] = []
-    for(let i=0;i<Math.min(baseline.length,current.length);i++) {
-      if(current[i].score < baseline[i].score-0.1) issues.push(`Case ${i}: score dropped ${baseline[i].score}->${current[i].score}`)
+    for(let i=0;i&lt;Math.min(baseline.length,current.length);i++) {
+      if(current[i].score &lt; baseline[i].score-0.1) issues.push(`Case ${i}: score dropped ${baseline[i].score}-&gt;${current[i].score}`)
     }
     return issues
   }

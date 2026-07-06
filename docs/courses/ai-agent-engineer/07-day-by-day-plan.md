@@ -182,7 +182,7 @@ At the start of each week, copy the week's table into your tracker. Cross off da
 
 | Day | Topic | Action | Done Condition |
 |-----|-------|--------|----------------|
-| 1 | Docker multi-stage | Read 4.1, rebuild RAG demo Dockerfile | Image size measured, < 300MB |
+| 1 | Docker multi-stage | Read 4.1, rebuild RAG demo Dockerfile | Image size measured, &lt; 300MB |
 | 2 | Docker Compose health checks | Read 4.2, add health checks | `docker ps` shows healthy for all |
 | 3 | Celery/RQ | Read 4.3, replace BackgroundTasks | Jobs survive restart |
 | 4 | Redis retries + dead-letter | Read 4.4, configure retry with backoff | Failed jobs land in DLQ |
@@ -343,7 +343,7 @@ flowchart LR
 - [ ] Agent recalls past conversation with memory
 
 ### Phase 4 Checkpoint
-- [ ] Docker image < 300MB
+- [ ] Docker image &lt; 300MB
 - [ ] `docker ps` shows healthy for all services
 - [ ] Background jobs survive restart (Celery/RQ)
 - [ ] Failed jobs land in DLQ with retry backoff
@@ -747,12 +747,12 @@ Implement idempotency by requiring an `Idempotency-Key` header on POST endpoints
 Run through all 6 days' exercises again from scratch, timing yourself. If anything takes more than 30 minutes, note it for extra practice. Verify all Phase 0 checkpoint items.
 
 
-interface ContainerConfig { image: string; port: number; env: Record<string,string>; volumes: string[]; replicas: number }
+interface ContainerConfig { image: string; port: number; env: Record&lt;string,string&gt;; volumes: string[]; replicas: number }
 class DockerConfigBuilder {
-  private config: Partial<ContainerConfig> = {}
+  private config: Partial&lt;ContainerConfig&gt; = {}
   image(img: string): this { this.config.image = img; return this }
   port(p: number): this { this.config.port = p; return this }
-  env(kv: Record<string,string>): this { this.config.env = {...this.config.env,...kv}; return this }
+  env(kv: Record&lt;string,string&gt;): this { this.config.env = {...this.config.env,...kv}; return this }
   volume(v: string): this { (this.config.volumes??=[]).push(v); return this }
   replicas(n: number): this { this.config.replicas = n; return this }
   buildDockerfile(): string { return `FROM node:20-alpine\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci --production\nCOPY . .\nEXPOSE ${this.config.port}\nCMD ["node", "dist/index.js"]` }
@@ -762,10 +762,10 @@ class DockerConfigBuilder {
   }
 }
 class K8sDeployment {
-  generate(name: string, config: ContainerConfig): Record<string,unknown> {
+  generate(name: string, config: ContainerConfig): Record&lt;string,unknown&gt; {
     return {apiVersion:"apps/v1",kind:"Deployment",metadata:{name},spec:{replicas:config.replicas,selector:{matchLabels:{app:name}},template:{metadata:{labels:{app:name}},spec:{containers:[{name,image:config.image,ports:[{containerPort:config.port}],env:Object.entries(config.env).map(([k,v])=>({name:k,value:v}))}]}}}}
   }
-  generateService(name: string, port: number): Record<string,unknown> {
+  generateService(name: string, port: number): Record&lt;string,unknown&gt; {
     return {apiVersion:"v1",kind:"Service",metadata:{name},spec:{selector:{app:name},ports:[{port,protocol:"TCP"}]}}
   }
 }

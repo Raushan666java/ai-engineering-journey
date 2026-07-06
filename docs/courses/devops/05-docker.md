@@ -880,13 +880,13 @@ console.log(analyzer.generateReport(result));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: Which component is responsible for the actual container creation in Docker's architecture?</summary>**A)** Docker CLI<br>**B)** Docker Daemon<br>**C)** containerd<br>**D)** runc<br><br>**Answer: D)** runc</details>
+<details><summary>Question 1: Which component is responsible for the actual container creation in Docker's architecture?</summary>**A)** Docker CLI<br>**B)** Docker Daemon<br>**C)** containerd<br>**D)** runc<br><br>**Answer: D)** runc&lt;/details&gt;
 
-<details><summary>Question 2: Why should you copy package.json before source code in a Dockerfile?</summary>**A)** It's required by Docker syntax<br>**B)** To maximize layer caching for npm install<br>**C)** It improves security<br>**D)** It speeds up the COPY command<br><br>**Answer: B)** To maximize layer caching for npm install</details>
+<details><summary>Question 2: Why should you copy package.json before source code in a Dockerfile?</summary>**A)** It's required by Docker syntax<br>**B)** To maximize layer caching for npm install<br>**C)** It improves security<br>**D)** It speeds up the COPY command<br><br>**Answer: B)** To maximize layer caching for npm install&lt;/details&gt;
 
-<details><summary>Question 3: What is the default Docker network driver?</summary>**A)** host<br>**B)** overlay<br>**C)** bridge<br>**D)** macvlan<br><br>**Answer: C)** bridge</details>
+<details><summary>Question 3: What is the default Docker network driver?</summary>**A)** host<br>**B)** overlay<br>**C)** bridge<br>**D)** macvlan<br><br>**Answer: C)** bridge&lt;/details&gt;
 
-<details><summary>Question 4: What is BuildKit?</summary>**A)** A CI/CD tool for Docker<br>**B)** Docker's next-generation build system<br>**C)** A Kubernetes alternative<br>**D)** A container registry<br><br>**Answer: B)** Docker's next-generation build system</details>
+<details><summary>Question 4: What is BuildKit?</summary>**A)** A CI/CD tool for Docker<br>**B)** Docker's next-generation build system<br>**C)** A Kubernetes alternative<br>**D)** A container registry<br><br>**Answer: B)** Docker's next-generation build system&lt;/details&gt;
 
 <details><summary>Question 5: Which Docker flag makes the container's filesystem read-only?</summary>**A)** `--read-only`<br>**B)** `--no-write`<br>**C)** `--secure`<br>**D)** `--locked`<br><br>**Answer: A)** `--read-only`</details>
 
@@ -901,11 +901,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -913,7 +913,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

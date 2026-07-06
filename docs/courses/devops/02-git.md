@@ -891,15 +891,15 @@ console.log(sim.visualize(newHead[newHead.length - 1]));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What are the four Git object types?</summary>**A)** Head, Branch, Tag, Commit<br>**B)** Blob, Tree, Commit, Tag<br>**C)** File, Directory, Snapshot, Reference<br>**D)** Index, Working, Staging, Remote<br><br>**Answer: B)** Blob, Tree, Commit, Tag</details>
+<details><summary>Question 1: What are the four Git object types?</summary>**A)** Head, Branch, Tag, Commit<br>**B)** Blob, Tree, Commit, Tag<br>**C)** File, Directory, Snapshot, Reference<br>**D)** Index, Working, Staging, Remote<br><br>**Answer: B)** Blob, Tree, Commit, Tag&lt;/details&gt;
 
-<details><summary>Question 2: What does `git rebase -i` allow you to do?</summary>**A)** Force push to remote<br>**B)** Edit commit history interactively<br>**C)** Merge two branches<br>**D)** Create a new branch<br><br>**Answer: B)** Edit commit history interactively</details>
+<details><summary>Question 2: What does `git rebase -i` allow you to do?</summary>**A)** Force push to remote<br>**B)** Edit commit history interactively<br>**C)** Merge two branches<br>**D)** Create a new branch<br><br>**Answer: B)** Edit commit history interactively&lt;/details&gt;
 
-<details><summary>Question 3: Why should you not rebase shared branches?</summary>**A)** It causes merge conflicts<br>**B)** It rewrites history, breaking other clones<br>**C)** It is slower than merging<br>**D)** It creates duplicate commits<br><br>**Answer: B)** It rewrites history, breaking other clones</details>
+<details><summary>Question 3: Why should you not rebase shared branches?</summary>**A)** It causes merge conflicts<br>**B)** It rewrites history, breaking other clones<br>**C)** It is slower than merging<br>**D)** It creates duplicate commits<br><br>**Answer: B)** It rewrites history, breaking other clones&lt;/details&gt;
 
-<details><summary>Question 4: When does a three-way merge occur?</summary>**A)** When branches have diverged<br>**B)** When merging two unrelated repositories<br>**C)** When using rebase instead of merge<br>**D)** When pushing to a remote<br><br>**Answer: A)** When branches have diverged</details>
+<details><summary>Question 4: When does a three-way merge occur?</summary>**A)** When branches have diverged<br>**B)** When merging two unrelated repositories<br>**C)** When using rebase instead of merge<br>**D)** When pushing to a remote<br><br>**Answer: A)** When branches have diverged&lt;/details&gt;
 
-<details><summary>Question 5: What is the purpose of `git rerere`?</summary>**A)** Revert resolved changes<br>**B)** Reuse recorded resolution of conflicts<br>**C)** Reset remote repository<br>**D)** Remove redundant entries<br><br>**Answer: B)** Reuse recorded resolution of conflicts</details>
+<details><summary>Question 5: What is the purpose of `git rerere`?</summary>**A)** Revert resolved changes<br>**B)** Reuse recorded resolution of conflicts<br>**C)** Reset remote repository<br>**D)** Remove redundant entries<br><br>**Answer: B)** Reuse recorded resolution of conflicts&lt;/details&gt;
 
 ---
 
@@ -912,11 +912,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -924,7 +924,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

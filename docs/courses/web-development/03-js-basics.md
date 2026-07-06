@@ -496,7 +496,7 @@ Test your understanding with these quick questions.
 - C) The period when `var` variables are undefined
 - D) A zone where garbage collection is paused
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **A) The TDZ is the period between when a `let` or `const` variable enters scope and when it is initialized.**
 
@@ -509,7 +509,7 @@ Test your understanding with these quick questions.
 - C) `'' === 0`
 - D) `null === undefined`
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **A) `0 == false` returns `true` due to type coercion. Strict equality `===` would return `false`.**
 
@@ -522,7 +522,7 @@ Test your understanding with these quick questions.
 - C) Removes properties from the original
 - D) Converts the object to an array
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Spread creates a shallow copy — nested objects are still shared between the original and the copy.**
 
@@ -535,7 +535,7 @@ Test your understanding with these quick questions.
 - C) `map()`
 - D) `forEach()`
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **C) `map()` returns a new array with the results of calling a function on every element.**
 
@@ -712,11 +712,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -724,7 +724,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

@@ -346,7 +346,7 @@ The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), bu
    - D) The cluster stops accepting writes
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) The namenode re-replicates the blocks from the dead node to other datanodes.** After 10 minutes of missed heartbeats, the namenode marks the node dead and replicates its blocks (which still exist on other nodes due to 3x replication) to maintain the target replication factor.
 </details>
 
@@ -357,7 +357,7 @@ The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), bu
    - D) To merge input files before mapping
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) To perform local aggregation on the mapper node before shuffling.** The combiner reduces the amount of data transferred over the network during the shuffle phase, significantly speeding up jobs with associative operations.
 </details>
 
@@ -368,7 +368,7 @@ The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), bu
    - D) To make files compatible with HBase
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) To reduce the number of metadata entries in the namenode.** Large blocks mean fewer blocks per file, which reduces the memory pressure on the namenode (which stores all metadata in RAM).
 </details>
 

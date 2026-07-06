@@ -2045,7 +2045,7 @@ a) It will be perfect if you studied enough  b) It will be terrible — and that
 - D) Binary search is inherently easier than DP
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Blocked practice (drilling one pattern at a time) inflates performance during practice but produces poor discrimination on mixed tests. Interleaving problems from different patterns teaches the brain to distinguish when each approach applies.
 </details>
@@ -2057,7 +2057,7 @@ a) It will be perfect if you studied enough  b) It will be terrible — and that
 - D) Switch to Pomodoro instead
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — The 3-Explanation Rule states the first pass is always messy — it is for gap detection, not mastery. The second pass builds structure, and the third achieves fluency. Awkwardness signals that learning is happening.
 </details>
@@ -2069,7 +2069,7 @@ a) It will be perfect if you studied enough  b) It will be terrible — and that
 - D) End the Pomodoro early and start a new one after
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Writing the interruption on a parking lot list reduces cognitive load (the brain trusts the item is captured) without breaking focus. Process the list during breaks or after the session.
 </details>

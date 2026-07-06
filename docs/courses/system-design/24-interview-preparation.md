@@ -495,7 +495,7 @@ Practice with a timer. The following schedule simulates a real interview:
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 **Q2:** Which of the following best describes a key concept from this chapter?
 - A) Option A description
@@ -503,7 +503,7 @@ Practice with a timer. The following schedule simulates a real interview:
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 **Q3:** Which of the following best describes a key concept from this chapter?
 - A) Option A description
@@ -511,7 +511,7 @@ Practice with a timer. The following schedule simulates a real interview:
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -555,7 +555,7 @@ Practice with a timer. The following schedule simulates a real interview:
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 **Q2:** Which concept is most fundamental to the topic of Chapter 24
 - A) Option A
@@ -563,7 +563,7 @@ Practice with a timer. The following schedule simulates a real interview:
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Review the core sections</details>
+<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
 
 **Q3:** How does this chapter's main concept apply to real-world systems?
 - A) Option A
@@ -571,7 +571,7 @@ Practice with a timer. The following schedule simulates a real interview:
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>See the Real-World Systems section</details>
+<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
 
 ---
 
@@ -842,19 +842,19 @@ class AvailabilityCalculator {
 
   annualDowntime(a: number): string {
     const seconds = (1 - a) * 365 * 86400;
-    if (seconds < 60) return `${seconds.toFixed(0)} seconds`;
-    if (seconds < 3600) return `${(seconds / 60).toFixed(1)} minutes`;
+    if (seconds &lt; 60) return `${seconds.toFixed(0)} seconds`;
+    if (seconds &lt; 3600) return `${(seconds / 60).toFixed(1)} minutes`;
     return `${(seconds / 3600).toFixed(1)} hours`;
   }
 }
 
 class ConsistentHashRing {
-  private ring = new Map<number, string>();
+  private ring = new Map&lt;number, string&gt;();
   private keys: number[] = [];
   private virtualNodes = 150;
 
   addNode(node: string): void {
-    for (let v = 0; v < this.virtualNodes; v++) {
+    for (let v = 0; v &lt; this.virtualNodes; v++) {
       const h = this.hash(`${node}:${v}`);
       if (!this.ring.has(h)) this.ring.set(h, node);
     }
@@ -870,13 +870,13 @@ class ConsistentHashRing {
 
   private hash(s: string): number {
     let h = 0;
-    for (let i = 0; i < s.length; i++) { h = (h << 5) - h + s.charCodeAt(i); h |= 0; }
+    for (let i = 0; i &lt; s.length; i++) { h = (h << 5) - h + s.charCodeAt(i); h |= 0; }
     return h >>> 0;
   }
 }
 
 class DesignTradeoffAnalyzer {
-  private prosCons = new Map<string, { pros: string[]; cons: string[] }>();
+  private prosCons = new Map&lt;string, { pros: string[]; cons: string[] }&gt;();
   addOption(name: string, pros: string[], cons: string[]): void { this.prosCons.set(name, { pros, cons }); }
   compare(...options: string[]): { option: string; score: number; pros: string[]; cons: string[] }[] {
     return options.map(o => {
@@ -887,7 +887,7 @@ class DesignTradeoffAnalyzer {
 }
 
 class MockInterviewScorer {
-  private scores = new Map<string, number[]>();
+  private scores = new Map&lt;string, number[]&gt;();
   scoreCriterion(criterion: string, score: number): void {
     if (!this.scores.has(criterion)) this.scores.set(criterion, []);
     this.scores.get(criterion)!.push(score);

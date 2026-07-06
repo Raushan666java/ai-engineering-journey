@@ -330,7 +330,7 @@ If any assignment satisfies the formula, the NTM accepts. The DTM simulation wou
 - D) Finite control
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** A TM's tape allows random access read/write, unlike the PDA's stack.
 </details>
 
@@ -341,7 +341,7 @@ If any assignment satisfies the formula, the NTM accepts. The DTM simulation wou
 - D) Unlimited
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A)** The standard TM has a single tape. Multitape TMs are equivalent but not standard.
 </details>
 
@@ -352,7 +352,7 @@ If any assignment satisfies the formula, the NTM accepts. The DTM simulation wou
 - D) State, stack, input
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** (state, tape content, head position) fully describes the TM at any point.
 </details>
 
@@ -363,7 +363,7 @@ If any assignment satisfies the formula, the NTM accepts. The DTM simulation wou
 - D) Incomparable to
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Every multitape TM can be simulated by a single-tape TM (with possible slowdown).
 </details>
 
@@ -374,7 +374,7 @@ If any assignment satisfies the formula, the NTM accepts. The DTM simulation wou
 - D) Only equivalent for regular languages
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** NTM and DTM recognize the same languages (though NTM may be faster).
 </details>
 
@@ -527,15 +527,15 @@ console.log(TuringMachine.haltChecker());
 class BusyBeaverRunner {
   // Run a Busy Beaver candidate TM and count steps / ones
   static run(
-    transitions: Map<string, { write: string; direction: "L" | "R"; nextState: string }>,
+    transitions: Map&lt;string, { write: string; direction: "L" | "R"; nextState: string }&gt;,
     maxSteps: number = 10000
-  ): { steps: number; ones: number; tape: Map<number, string>; halted: boolean } {
-    const tape = new Map<number, string>();
+  ): { steps: number; ones: number; tape: Map&lt;number, string&gt;; halted: boolean } {
+    const tape = new Map&lt;number, string&gt;();
     let head = 0;
     let state = "A";
     let steps = 0;
 
-    while (steps < maxSteps) {
+    while (steps &lt; maxSteps) {
       const symbol = tape.get(head) || "0";
       const key = `${state},${symbol}`;
       const trans = transitions.get(key);
@@ -574,7 +574,7 @@ class BusyBeaverRunner {
 
   // Run the S(2) champion
   static runSigma2(): { steps: number; ones: number } {
-    const bb2Trans = new Map<string, { write: string; direction: "L" | "R"; nextState: string }>([
+    const bb2Trans = new Map&lt;string, { write: string; direction: "L" | "R"; nextState: string }&gt;([
       ["A,0", { write: "1", direction: "R", nextState: "B" }],
       ["A,1", { write: "1", direction: "L", nextState: "B" }],
       ["B,0", { write: "1", direction: "L", nextState: "A" }],
@@ -594,7 +594,7 @@ const tapeEntries = [...sigma2.tape.entries()].filter(([_, v]) => v === "1");
 const minPos = Math.min(...tapeEntries.map(([k]) => k));
 const maxPos = Math.max(...tapeEntries.map(([k]) => k));
 let tapeVis = "";
-for (let p = minPos; p <= maxPos; p++) {
+for (let p = minPos; p &lt;= maxPos; p++) {
   tapeVis += sigma2.tape.get(p) || "0";
 }
 console.log(`Tape output: ${tapeVis}`);
@@ -690,7 +690,7 @@ type Transition = {
   nextState: State;
 };
 
-type TMTransitionFunction = Map<string, Transition>;
+type TMTransitionFunction = Map&lt;string, Transition&gt;;
 
 class TuringMachine {
   private tape: TapeSymbol[] = ["_"];
@@ -722,7 +722,7 @@ class TuringMachine {
     if (this.state === this.acceptState) return true;
     if (this.state === this.rejectState) return false;
 
-    const symbol = this.head < this.tape.length
+    const symbol = this.head &lt; this.tape.length
       ? this.tape[this.head] : "_";
     const key = this.state + "," + symbol;
     const trans = this.transitions.get(key);
@@ -731,7 +731,7 @@ class TuringMachine {
 
     this.tape[this.head] = trans.write;
     this.head += trans.move === "R" ? 1 : -1;
-    if (this.head < 0) { this.tape.unshift("_"); this.head = 0; }
+    if (this.head &lt; 0) { this.tape.unshift("_"); this.head = 0; }
     if (this.head >= this.tape.length) { this.tape.push("_"); }
     this.state = trans.nextState;
     return false;

@@ -3322,7 +3322,7 @@ Custom Pulse card for the dashboard:
 - C) Reinforcement learning
 - D) Semi-supervised learning
 
-<details><summary>Answer</summary>B) Supervised learning</details>
+<details><summary>Answer&lt;/summary&gt;B) Supervised learning&lt;/details&gt;
 
 **Q2:** What indicates model overfitting?
 - A) Poor performance on both train and test
@@ -3330,7 +3330,7 @@ Custom Pulse card for the dashboard:
 - C) Equal train and test performance
 - D) Perfect test accuracy
 
-<details><summary>Answer</summary>B) High training accuracy but poor test accuracy</details>
+<details><summary>Answer&lt;/summary&gt;B) High training accuracy but poor test accuracy&lt;/details&gt;
 
 **Q3:** Which PHP library provides ML pipelines and neural network support?
 - A) PHP-ML
@@ -3338,7 +3338,7 @@ Custom Pulse card for the dashboard:
 - C) Laravel AI SDK
 - D) TensorFlow PHP
 
-<details><summary>Answer</summary>B) Rubix ML</details>
+<details><summary>Answer&lt;/summary&gt;B) Rubix ML&lt;/details&gt;
 
 **Q4:** What does RAG stand for in the Laravel AI SDK?
 - A) Rapid Application Generation
@@ -3346,7 +3346,7 @@ Custom Pulse card for the dashboard:
 - C) Real-time Algorithm Grid
 - D) Random Access Generator
 
-<details><summary>Answer</summary>B) Retrieval-Augmented Generation</details>
+<details><summary>Answer&lt;/summary&gt;B) Retrieval-Augmented Generation&lt;/details&gt;
 
 ---
 
@@ -3401,7 +3401,7 @@ Custom Pulse card for the dashboard:
 - C) Reinforcement learning
 - D) Semi-supervised learning
 
-<details><summary>Answer</summary>B) Supervised learning</details>
+<details><summary>Answer&lt;/summary&gt;B) Supervised learning&lt;/details&gt;
 
 **Q2:** What indicates model overfitting?
 - A) Poor performance on both train and test
@@ -3409,7 +3409,7 @@ Custom Pulse card for the dashboard:
 - C) Equal train and test performance
 - D) Perfect test accuracy
 
-<details><summary>Answer</summary>B) High training accuracy but poor test accuracy</details>
+<details><summary>Answer&lt;/summary&gt;B) High training accuracy but poor test accuracy&lt;/details&gt;
 
 **Q3:** Which PHP library provides ML pipelines and neural network support?
 - A) PHP-ML
@@ -3417,7 +3417,7 @@ Custom Pulse card for the dashboard:
 - C) Laravel AI SDK
 - D) TensorFlow PHP
 
-<details><summary>Answer</summary>B) Rubix ML</details>
+<details><summary>Answer&lt;/summary&gt;B) Rubix ML&lt;/details&gt;
 
 **Q4:** What does RAG stand for in the Laravel AI SDK?
 - A) Rapid Application Generation
@@ -3425,7 +3425,7 @@ Custom Pulse card for the dashboard:
 - C) Real-time Algorithm Grid
 - D) Random Access Generator
 
-<details><summary>Answer</summary>B) Retrieval-Augmented Generation</details>
+<details><summary>Answer&lt;/summary&gt;B) Retrieval-Augmented Generation&lt;/details&gt;
 
 ---
 
@@ -3480,7 +3480,7 @@ Custom Pulse card for the dashboard:
 - C) Reinforcement learning
 - D) Semi-supervised learning
 
-<details><summary>Answer</summary>B) Supervised learning</details>
+<details><summary>Answer&lt;/summary&gt;B) Supervised learning&lt;/details&gt;
 
 **Q2:** What indicates model overfitting?
 - A) Poor performance on both train and test
@@ -3488,7 +3488,7 @@ Custom Pulse card for the dashboard:
 - C) Equal train and test performance
 - D) Perfect test accuracy
 
-<details><summary>Answer</summary>B) High training accuracy but poor test accuracy</details>
+<details><summary>Answer&lt;/summary&gt;B) High training accuracy but poor test accuracy&lt;/details&gt;
 
 **Q3:** Which PHP library provides ML pipelines and neural network support?
 - A) PHP-ML
@@ -3496,7 +3496,7 @@ Custom Pulse card for the dashboard:
 - C) Laravel AI SDK
 - D) TensorFlow PHP
 
-<details><summary>Answer</summary>B) Rubix ML</details>
+<details><summary>Answer&lt;/summary&gt;B) Rubix ML&lt;/details&gt;
 
 **Q4:** What does RAG stand for in the Laravel AI SDK?
 - A) Rapid Application Generation
@@ -3504,7 +3504,7 @@ Custom Pulse card for the dashboard:
 - C) Real-time Algorithm Grid
 - D) Random Access Generator
 
-<details><summary>Answer</summary>B) Retrieval-Augmented Generation</details>
+<details><summary>Answer&lt;/summary&gt;B) Retrieval-Augmented Generation&lt;/details&gt;
 
 ---
 
@@ -3559,7 +3559,7 @@ Custom Pulse card for the dashboard:
 - C) Reinforcement learning
 - D) Semi-supervised learning
 
-<details><summary>Answer</summary>B) Supervised learning</details>
+<details><summary>Answer&lt;/summary&gt;B) Supervised learning&lt;/details&gt;
 
 **Q2:** What indicates model overfitting?
 - A) Poor performance on both train and test
@@ -3567,7 +3567,7 @@ Custom Pulse card for the dashboard:
 - C) Equal train and test performance
 - D) Perfect test accuracy
 
-<details><summary>Answer</summary>B) High training accuracy but poor test accuracy</details>
+<details><summary>Answer&lt;/summary&gt;B) High training accuracy but poor test accuracy&lt;/details&gt;
 
 **Q3:** Which PHP library provides ML pipelines and neural network support?
 - A) PHP-ML
@@ -3575,7 +3575,7 @@ Custom Pulse card for the dashboard:
 - C) Laravel AI SDK
 - D) TensorFlow PHP
 
-<details><summary>Answer</summary>B) Rubix ML</details>
+<details><summary>Answer&lt;/summary&gt;B) Rubix ML&lt;/details&gt;
 
 **Q4:** What does RAG stand for in the Laravel AI SDK?
 - A) Rapid Application Generation
@@ -3583,7 +3583,7 @@ Custom Pulse card for the dashboard:
 - C) Real-time Algorithm Grid
 - D) Random Access Generator
 
-<details><summary>Answer</summary>B) Retrieval-Augmented Generation</details>
+<details><summary>Answer&lt;/summary&gt;B) Retrieval-Augmented Generation&lt;/details&gt;
 
 ## Summary
 

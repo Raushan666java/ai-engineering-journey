@@ -561,7 +561,7 @@ Test your understanding with these quick questions.
 - C) An index that spans N+1 columns
 - D) A migration that fails on step N+1
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **A) The N+1 problem occurs when code fetches a list of N parent entities, then executes N additional queries to fetch related child entities — instead of one query with a JOIN.**
 
@@ -574,7 +574,7 @@ Test your understanding with these quick questions.
 - C) It does not require a database
 - D) It automatically deploys migrations
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Prisma generates a TypeScript client from the schema, giving compile-time type safety and auto-completion for all queries, migrations, and relations.**
 
@@ -587,7 +587,7 @@ Test your understanding with these quick questions.
 - C) GIN index
 - D) GiST index
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) B-tree indexes support range queries, sorting, and pattern matching. Hash indexes only support exact equality comparisons.**
 
@@ -600,7 +600,7 @@ Test your understanding with these quick questions.
 - C) Restart the Redis server
 - D) Set the TTL to 0
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **A) Cache invalidation typically deletes (or updates) the cache key when the underlying data changes. The next read triggers a cache miss, fetches fresh data, and repopulates the cache.**
 
@@ -843,11 +843,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -855,7 +855,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

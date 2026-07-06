@@ -2009,7 +2009,7 @@ class TwoPhaseCommit:
 ## Pro Tips
 
 1. **Distributed transactions (2PC) are expensive** → design data model for single-node locality in most operations.
-2. **Quorum-based systems give tunable consistency** → R + W > N for strong, R + W <= N for availability.
+2. **Quorum-based systems give tunable consistency** → R + W > N for strong, R + W &lt;= N for availability.
 3. **Horizontal for scale, vertical for security** → horizontal fragmentation distributes load; vertical isolates sensitive columns.
 4. **Semi-joins are the distributed query superpower** → they minimize network data transfer by sending only join keys.
 5. **Network partitions happen more often than you think** → design for P by choosing CP or AP based on business requirements.
@@ -2153,7 +2153,7 @@ class TwoPhaseCommit:
 
 4. The quorum condition for strong consistency is:
    a) R + W > N
-   b) R + W < N
+   b) R + W &lt; N
    c) R = W
    d) R + W = N
 

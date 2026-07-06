@@ -245,7 +245,7 @@ nn.train(X, y, epochs=100)
 
 4. **Class Imbalance:** If 99% of data is class A, the network learns to always predict A. Solution: weighted loss, oversampling, focal loss.
 
-5. **Overfitting on Small Data:** With <1000 examples per class, the network memorizes rather than generalizes. Solution: dropout, data augmentation, transfer learning.
+5. **Overfitting on Small Data:** With &lt;1000 examples per class, the network memorizes rather than generalizes. Solution: dropout, data augmentation, transfer learning.
 
 ## 17.2 Generative AI
 
@@ -1957,7 +1957,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 - C) Transformers are smaller than RNNs
 - D) Transformers cannot handle long sequences
 
-<details><summary>Answer</summary>B) Self-attention enables parallel token processing, eliminating the sequential bottleneck of RNNs and allowing efficient training on much longer sequences.</details>
+<details><summary>Answer&lt;/summary&gt;B) Self-attention enables parallel token processing, eliminating the sequential bottleneck of RNNs and allowing efficient training on much longer sequences.</details>
 
 **Q2:** In-context learning allows LLMs to:
 - A) Learn new concepts during training with no examples
@@ -1965,7 +1965,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 - C) Only answer questions about the training data
 - D) Generate code without any input
 
-<details><summary>Answer</summary>B) In-context learning uses examples (few-shot) or instructions (zero-shot) in the prompt itself — no gradient updates or fine-tuning is needed.</details>
+<details><summary>Answer&lt;/summary&gt;B) In-context learning uses examples (few-shot) or instructions (zero-shot) in the prompt itself — no gradient updates or fine-tuning is needed.</details>
 
 **Q3:** The Chinchilla scaling law findings suggest that:
 - A) More parameters always improve performance
@@ -1973,7 +1973,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 - C) Larger models are always more sample-efficient
 - D) Compute optimality is irrelevant
 
-<details><summary>Answer</summary>B) Chinchilla showed that many large models were undertrained — optimal performance for a given compute budget comes from balancing model size and training tokens (~6:1 tokens-to-parameters ratio).</details>
+<details><summary>Answer&lt;/summary&gt;B) Chinchilla showed that many large models were undertrained — optimal performance for a given compute budget comes from balancing model size and training tokens (~6:1 tokens-to-parameters ratio).</details>
 
 **Q4:** In the ReAct agent framework, what happens after the model generates an action?
 - A) The model immediately gives the final answer
@@ -1981,7 +1981,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 - C) The tool is executed, observation is returned, and reasoning continues
 - D) The model terminates
 
-<details><summary>Answer</summary>C) In ReAct, actions lead to tool execution, the observation feeds back into the reasoning loop, and the model decides whether to take another action or produce the final answer.</details>
+<details><summary>Answer&lt;/summary&gt;C) In ReAct, actions lead to tool execution, the observation feeds back into the reasoning loop, and the model decides whether to take another action or produce the final answer.</details>
 
 **Q5:** What is the primary purpose of MCP (Model Context Protocol)?
 - A) To replace the transformer architecture
@@ -1989,7 +1989,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 - C) To train models faster
 - D) To encrypt model weights
 
-<details><summary>Answer</summary>B) MCP provides a standard JSON-RPC protocol for AI applications to discover and invoke tools, making tool integration plug-and-play across different AI systems.</details>
+<details><summary>Answer&lt;/summary&gt;B) MCP provides a standard JSON-RPC protocol for AI applications to discover and invoke tools, making tool integration plug-and-play across different AI systems.</details>
 
 **Q6:** Which component of CLIP enables zero-shot image classification?
 - A) The diffusion process
@@ -1997,7 +1997,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 - C) The reinforcement learning loop
 - D) The image upsampling layers
 
-<details><summary>Answer</summary>B) CLIP learns to align text and image embeddings in a shared space. For zero-shot classification, it compares an image embedding against text embeddings of class names — the closest match is the prediction.</details>
+<details><summary>Answer&lt;/summary&gt;B) CLIP learns to align text and image embeddings in a shared space. For zero-shot classification, it compares an image embedding against text embeddings of class names — the closest match is the prediction.</details>
 
 **Q7:** What is the time complexity of self-attention in a transformer?
 - A) O(L)
@@ -2005,7 +2005,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 - C) O(L² × d)
 - D) O(d²)
 
-<details><summary>Answer</summary>C) Self-attention computes pairwise dot products between all L tokens, each of dimension d, giving O(L² × d) time and O(L²) memory. This quadratic cost is the main bottleneck for long sequences.</details>
+<details><summary>Answer&lt;/summary&gt;C) Self-attention computes pairwise dot products between all L tokens, each of dimension d, giving O(L² × d) time and O(L²) memory. This quadratic cost is the main bottleneck for long sequences.</details>
 
 **Q8:** What causes the quadratic complexity in autonomous agent systems like AutoGPT?
 - A) The number of tokens in each tool call
@@ -2013,7 +2013,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 - C) The model size
 - D) The training data size
 
-<details><summary>Answer</summary>B) Each iteration in AutoGPT requires LLM calls for task execution, result analysis, and new task creation. The number of steps multiplied by the complexity of each step creates multiplicative overhead — O(S × L × d²) for S steps.</details>
+<details><summary>Answer&lt;/summary&gt;B) Each iteration in AutoGPT requires LLM calls for task execution, result analysis, and new task creation. The number of steps multiplied by the complexity of each step creates multiplicative overhead — O(S × L × d²) for S steps.</details>
 
 **Q9:** Which attention variant do LLaMA 3 models use to reduce KV cache memory?
 - A) Multi-head attention
@@ -2021,7 +2021,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 - C) Cross-attention
 - D) Linear attention
 
-<details><summary>Answer</summary>B) GQA allows multiple query heads to share a single key/value head, reducing the KV cache size by ~4x compared to standard multi-head attention while maintaining most of the quality.</details>
+<details><summary>Answer&lt;/summary&gt;B) GQA allows multiple query heads to share a single key/value head, reducing the KV cache size by ~4x compared to standard multi-head attention while maintaining most of the quality.</details>
 
 **Q10:** In autonomous agents, what is "task drift"?
 - A) The agent learns new tasks faster
@@ -2029,7 +2029,7 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 - C) Tasks are completed automatically
 - D) The model forgets previous tasks
 
-<details><summary>Answer</summary>B) Task drift occurs when the agent creates sub-tasks that are tangential or irrelevant to the main goal, such as researching party hat manufacturing when planning a birthday party. Mitigation includes goal re-anchoring and relevance scoring.</details>
+<details><summary>Answer&lt;/summary&gt;B) Task drift occurs when the agent creates sub-tasks that are tangential or irrelevant to the main goal, such as researching party hat manufacturing when planning a birthday party. Mitigation includes goal re-anchoring and relevance scoring.</details>
 
 ## Exercises
 

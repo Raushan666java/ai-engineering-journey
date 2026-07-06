@@ -2915,7 +2915,7 @@ return new class extends Migration
 - C) Generate reports
 - D) Handle authentication
 
-<details><summary>Answer</summary>B) Coordinate multiple AI agents centrally</details>
+<details><summary>Answer&lt;/summary&gt;B) Coordinate multiple AI agents centrally&lt;/details&gt;
 
 **Q2:** What does the Shared Data Layer provide?
 - A) Only caching
@@ -2923,7 +2923,7 @@ return new class extends Migration
 - C) Only logging
 - D) Only authentication
 
-<details><summary>Answer</summary>B) Common storage for all agents</details>
+<details><summary>Answer&lt;/summary&gt;B) Common storage for all agents&lt;/details&gt;
 
 **Q3:** What is the key benefit of using an Event Bus for agent communication?
 - A) Faster execution
@@ -2931,7 +2931,7 @@ return new class extends Migration
 - C) Lower memory usage
 - D) Simpler code
 
-<details><summary>Answer</summary>B) Loose coupling and scalability</details>
+<details><summary>Answer&lt;/summary&gt;B) Loose coupling and scalability&lt;/details&gt;
 
 **Q4:** What does the Monitoring Dashboard provide?
 - A) Only error logs
@@ -2939,7 +2939,7 @@ return new class extends Migration
 - C) Only user analytics
 - D) Only performance metrics
 
-<details><summary>Answer</summary>B) Operational visibility across all agents</details>
+<details><summary>Answer&lt;/summary&gt;B) Operational visibility across all agents&lt;/details&gt;
 
 ---
 
@@ -2990,7 +2990,7 @@ return new class extends Migration
 - C) Generate reports
 - D) Handle authentication
 
-<details><summary>Answer</summary>B) Coordinate multiple AI agents centrally</details>
+<details><summary>Answer&lt;/summary&gt;B) Coordinate multiple AI agents centrally&lt;/details&gt;
 
 **Q2:** What does the Shared Data Layer provide?
 - A) Only caching
@@ -2998,7 +2998,7 @@ return new class extends Migration
 - C) Only logging
 - D) Only authentication
 
-<details><summary>Answer</summary>B) Common storage for all agents</details>
+<details><summary>Answer&lt;/summary&gt;B) Common storage for all agents&lt;/details&gt;
 
 **Q3:** What is the key benefit of using an Event Bus for agent communication?
 - A) Faster execution
@@ -3006,7 +3006,7 @@ return new class extends Migration
 - C) Lower memory usage
 - D) Simpler code
 
-<details><summary>Answer</summary>B) Loose coupling and scalability</details>
+<details><summary>Answer&lt;/summary&gt;B) Loose coupling and scalability&lt;/details&gt;
 
 **Q4:** What does the Monitoring Dashboard provide?
 - A) Only error logs
@@ -3014,7 +3014,7 @@ return new class extends Migration
 - C) Only user analytics
 - D) Only performance metrics
 
-<details><summary>Answer</summary>B) Operational visibility across all agents</details>
+<details><summary>Answer&lt;/summary&gt;B) Operational visibility across all agents&lt;/details&gt;
 
 ---
 
@@ -3065,7 +3065,7 @@ return new class extends Migration
 - C) Generate reports
 - D) Handle authentication
 
-<details><summary>Answer</summary>B) Coordinate multiple AI agents centrally</details>
+<details><summary>Answer&lt;/summary&gt;B) Coordinate multiple AI agents centrally&lt;/details&gt;
 
 **Q2:** What does the Shared Data Layer provide?
 - A) Only caching
@@ -3073,7 +3073,7 @@ return new class extends Migration
 - C) Only logging
 - D) Only authentication
 
-<details><summary>Answer</summary>B) Common storage for all agents</details>
+<details><summary>Answer&lt;/summary&gt;B) Common storage for all agents&lt;/details&gt;
 
 **Q3:** What is the key benefit of using an Event Bus for agent communication?
 - A) Faster execution
@@ -3081,7 +3081,7 @@ return new class extends Migration
 - C) Lower memory usage
 - D) Simpler code
 
-<details><summary>Answer</summary>B) Loose coupling and scalability</details>
+<details><summary>Answer&lt;/summary&gt;B) Loose coupling and scalability&lt;/details&gt;
 
 **Q4:** What does the Monitoring Dashboard provide?
 - A) Only error logs
@@ -3089,7 +3089,7 @@ return new class extends Migration
 - C) Only user analytics
 - D) Only performance metrics
 
-<details><summary>Answer</summary>B) Operational visibility across all agents</details>
+<details><summary>Answer&lt;/summary&gt;B) Operational visibility across all agents&lt;/details&gt;
 
 ---
 
@@ -3140,7 +3140,7 @@ return new class extends Migration
 - C) Generate reports
 - D) Handle authentication
 
-<details><summary>Answer</summary>B) Coordinate multiple AI agents centrally</details>
+<details><summary>Answer&lt;/summary&gt;B) Coordinate multiple AI agents centrally&lt;/details&gt;
 
 **Q2:** What does the Shared Data Layer provide?
 - A) Only caching
@@ -3148,7 +3148,7 @@ return new class extends Migration
 - C) Only logging
 - D) Only authentication
 
-<details><summary>Answer</summary>B) Common storage for all agents</details>
+<details><summary>Answer&lt;/summary&gt;B) Common storage for all agents&lt;/details&gt;
 
 **Q3:** What is the key benefit of using an Event Bus for agent communication?
 - A) Faster execution
@@ -3156,7 +3156,7 @@ return new class extends Migration
 - C) Lower memory usage
 - D) Simpler code
 
-<details><summary>Answer</summary>B) Loose coupling and scalability</details>
+<details><summary>Answer&lt;/summary&gt;B) Loose coupling and scalability&lt;/details&gt;
 
 **Q4:** What does the Monitoring Dashboard provide?
 - A) Only error logs
@@ -3164,7 +3164,7 @@ return new class extends Migration
 - C) Only user analytics
 - D) Only performance metrics
 
-<details><summary>Answer</summary>B) Operational visibility across all agents</details>
+<details><summary>Answer&lt;/summary&gt;B) Operational visibility across all agents&lt;/details&gt;
 
 ## Summary
 

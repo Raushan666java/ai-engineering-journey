@@ -99,7 +99,7 @@ $$\nabla J(\mathbf{w}) = \frac{1}{n} \mathbf{X}^T (\mathbf{X}\mathbf{w} - \mathb
 
 $$\mathbf{w} = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}$$
 
-**Conditions for invertibility**: $\mathbf{X}^T \mathbf{X}$ must be full rank (no linearly dependent features). If features are multicollinear or $n < d$, the matrix is singular and requires regularization or pseudo-inverse (SVD).
+**Conditions for invertibility**: $\mathbf{X}^T \mathbf{X}$ must be full rank (no linearly dependent features). If features are multicollinear or $n &lt; d$, the matrix is singular and requires regularization or pseudo-inverse (SVD).
 
 ### Gradient Descent
 
@@ -458,7 +458,7 @@ console.log('After scaling:', X_scaled.map(r => r.map(v => v.toFixed(4))));
 
 ## Practical Takeaways
 
-1. **Normal equation for small data, gradient descent for large** ? the O($d^3$) matrix inversion in the normal equation limits it to $d < 10{,}000$
+1. **Normal equation for small data, gradient descent for large** ? the O($d^3$) matrix inversion in the normal equation limits it to $d &lt; 10{,}000$
 2. **Scale features before gradient descent** ? standardization is the safest default for most problems
 3. **Regularization is essential when $d \gg n$** ? Ridge ensures invertibility; Lasso performs feature selection
 4. **Polynomial terms capture curvature** ? but use cross-validation to select the degree and avoid overfitting
@@ -514,7 +514,7 @@ console.log('After scaling:', X_scaled.map(r => r.map(v => v.toFixed(4))));
    C) The proportion of variance explained
    D) The slope of the regression line
 
-<details><summary>Answer</summary>**B)** MSE averages the squared differences between predicted and actual values.
+<details><summary>Answer&lt;/summary&gt;**B)** MSE averages the squared differences between predicted and actual values.
 </details>
 
 2. What happens if the learning rate in Gradient Descent is set too high?
@@ -523,7 +523,7 @@ console.log('After scaling:', X_scaled.map(r => r.map(v => v.toFixed(4))));
    C) The cost function becomes convex
    D) Feature scaling becomes unnecessary
 
-<details><summary>Answer</summary>**B)** A large learning rate causes the algorithm to overshoot the minimum, potentially diverging.
+<details><summary>Answer&lt;/summary&gt;**B)** A large learning rate causes the algorithm to overshoot the minimum, potentially diverging.
 </details>
 
 3. Under what condition does the normal equation fail?
@@ -532,7 +532,7 @@ console.log('After scaling:', X_scaled.map(r => r.map(v => v.toFixed(4))));
    C) The target variable is categorical
    D) The learning rate is poorly tuned
 
-<details><summary>Answer</summary>**B)** When $\mathbf{X}^T\mathbf{X}$ is singular (multicollinearity or $d > n$), the inverse does not exist. Ridge regularization fixes this.
+<details><summary>Answer&lt;/summary&gt;**B)** When $\mathbf{X}^T\mathbf{X}$ is singular (multicollinearity or $d > n$), the inverse does not exist. Ridge regularization fixes this.
 </details>
 
 4. Which regularization method can drive coefficients to exactly zero?
@@ -541,7 +541,7 @@ console.log('After scaling:', X_scaled.map(r => r.map(v => v.toFixed(4))));
    C) ElasticNet with $\rho = 0$
    D) Both A and C
 
-<details><summary>Answer</summary>**B)** Lasso's L1 penalty induces sparsity, pushing some coefficients to exactly zero, performing feature selection.
+<details><summary>Answer&lt;/summary&gt;**B)** Lasso's L1 penalty induces sparsity, pushing some coefficients to exactly zero, performing feature selection.
 </details>
 
 5. If adding a new feature increases $R^2$ but decreases adjusted $R^2$, what can you conclude?
@@ -550,7 +550,7 @@ console.log('After scaling:', X_scaled.map(r => r.map(v => v.toFixed(4))));
    C) The sample size is too small
    D) Both A and B are correct
 
-<details><summary>Answer</summary>**D)** Adjusted $R^2$ penalizes irrelevant features. An increase in $R^2$ but decrease in adjusted $R^2$ indicates the feature adds more noise than signal.
+<details><summary>Answer&lt;/summary&gt;**D)** Adjusted $R^2$ penalizes irrelevant features. An increase in $R^2$ but decrease in adjusted $R^2$ indicates the feature adds more noise than signal.
 </details>
 
 ---
@@ -709,11 +709,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -721,7 +721,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -747,7 +747,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -765,23 +765,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'ml-algorithms demo')
   const log = new Logger()

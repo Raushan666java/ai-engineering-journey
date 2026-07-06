@@ -1133,7 +1133,7 @@ Count subsets summing to \( (\text{total} + S) / 2 \). If odd or \( |S| > \) tot
 #### Algorithm Steps
 
 1. Compute total. If \( (\text{total} + S) \) odd → return 0.
-2. Target = \( (\text{total} + S) / 2 \). If target < 0 → return 0.
+2. Target = \( (\text{total} + S) / 2 \). If target &lt; 0 → return 0.
 3. Run counting subset sum: \( dp[s] = dp[s] + dp[s - x] \), backward loop.
 
 #### Step-by-Step Dry Run
@@ -1478,7 +1478,7 @@ Subset Sum (boolean)
 - D) To avoid integer overflow
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Backward iteration reads \( dp[c - w[i]] \) from the previous row (without the current item), ensuring each item is used at most once.
 </details>
 
@@ -1490,7 +1490,7 @@ B) Backward iteration reads \( dp[c - w[i]] \) from the previous row (without th
 - D) Is there at least one element?
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) If total sum is odd, equal partition is impossible — return false immediately without running DP.
 </details>
 
@@ -1502,7 +1502,7 @@ B) If total sum is odd, equal partition is impossible — return false immediate
 - D) \( dp[c] = dp[c] + dp[c - \text{coin}] \)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) \( dp[c] = \min(dp[c], 1 + dp[c - \text{coin}]) \) — add one coin to the optimal solution for the remaining amount.
 </details>
 
@@ -1514,7 +1514,7 @@ B) \( dp[c] = \min(dp[c], 1 + dp[c - \text{coin}]) \) — add one coin to the op
 - D) \( O(2^n) \)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) \( O(n \log n) \) — sorting dominates; selection loop is \( O(n) \).
 </details>
 
@@ -1526,7 +1526,7 @@ B) \( O(n \log n) \) — sorting dominates; selection loop is \( O(n) \).
 - D) Converts bounded to unbounded
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Binary splitting decomposes any count \( k \) into \( \lfloor \log_2 k \rfloor + 1 \) powers-of-two groups, enabling 0/1 DP to simulate any quantity from 1 to \( k \).
 </details>
 

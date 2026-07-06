@@ -866,15 +866,15 @@ console.log('\nProvider comparison:', estimator.compareProviders({ aws: 't3.medi
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is the primary benefit of declarative IaC over imperative?</summary>**A)** It is faster to execute<br>**B)** It automatically detects and corrects drift from desired state<br>**C)** It requires less code<br>**D)** It supports more providers<br><br>**Answer: B)** It automatically detects and corrects drift from desired state</details>
+<details><summary>Question 1: What is the primary benefit of declarative IaC over imperative?</summary>**A)** It is faster to execute<br>**B)** It automatically detects and corrects drift from desired state<br>**C)** It requires less code<br>**D)** It supports more providers<br><br>**Answer: B)** It automatically detects and corrects drift from desired state&lt;/details&gt;
 
-<details><summary>Question 2: Why should Terraform state be stored remotely?</summary>**A)** It's faster<br>**B)** For team collaboration and state locking<br>**C)** Remote state is automatically encrypted<br>**D)** It reduces costs<br><br>**Answer: B)** For team collaboration and state locking</details>
+<details><summary>Question 2: Why should Terraform state be stored remotely?</summary>**A)** It's faster<br>**B)** For team collaboration and state locking<br>**C)** Remote state is automatically encrypted<br>**D)** It reduces costs<br><br>**Answer: B)** For team collaboration and state locking&lt;/details&gt;
 
-<details><summary>Question 3: What does `terraform plan` do?</summary>**A)** Applies changes to infrastructure<br>**B)** Shows what changes will be made without applying them<br>**C)** Destroys all resources<br>**D)** Initializes the working directory<br><br>**Answer: B)** Shows what changes will be made without applying them</details>
+<details><summary>Question 3: What does `terraform plan` do?</summary>**A)** Applies changes to infrastructure<br>**B)** Shows what changes will be made without applying them<br>**C)** Destroys all resources<br>**D)** Initializes the working directory<br><br>**Answer: B)** Shows what changes will be made without applying them&lt;/details&gt;
 
-<details><summary>Question 4: What is configuration drift?</summary>**A)** Planned infrastructure changes<br>**B)** Difference between desired configuration and actual infrastructure<br>**C)** Terraform version mismatch<br>**D)** Provider API changes<br><br>**Answer: B)** Difference between desired configuration and actual infrastructure</details>
+<details><summary>Question 4: What is configuration drift?</summary>**A)** Planned infrastructure changes<br>**B)** Difference between desired configuration and actual infrastructure<br>**C)** Terraform version mismatch<br>**D)** Provider API changes<br><br>**Answer: B)** Difference between desired configuration and actual infrastructure&lt;/details&gt;
 
-<details><summary>Question 5: What is the purpose of Terraform modules?</summary>**A)** Speed up execution<br>**B)** Create reusable, composable infrastructure components<br>**C)** Reduce the size of state files<br>**D)** Add new features to providers<br><br>**Answer: B)** Create reusable, composable infrastructure components</details>
+<details><summary>Question 5: What is the purpose of Terraform modules?</summary>**A)** Speed up execution<br>**B)** Create reusable, composable infrastructure components<br>**C)** Reduce the size of state files<br>**D)** Add new features to providers<br><br>**Answer: B)** Create reusable, composable infrastructure components&lt;/details&gt;
 
 ---
 

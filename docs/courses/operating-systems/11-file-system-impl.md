@@ -289,7 +289,7 @@ The **superblock** is the metadata of the file system itself. It is replicated a
 | s_blocks_count | 32-bit | Total block count |
 | s_free_blocks_count | 32-bit | Free block count |
 | s_free_inodes_count | 32-bit | Free inode count |
-| s_log_block_size | 32-bit | Block size = 1024 << s_log_block_size |
+| s_log_block_size | 32-bit | Block size = 1024 &lt;< s_log_block_size |
 | s_mtime | 32-bit | Last mount time |
 | s_magic | 16-bit | Magic signature (0xEF53 for ext4) |
 | s_state | 16-bit | Mount state (clean, errors, etc.) |
@@ -345,7 +345,7 @@ Assume a 4 MB ext4 partition with 4 KB blocks.
 | s_blocks_count | 1024 | 1024 blocks × 4 KB = 4 MB |
 | s_free_blocks_count | 1005 | 19 blocks used by metadata |
 | s_free_inodes_count | 1010 | 14 inodes used by metadata |
-| s_log_block_size | 2 | Block size = 1024 << 2 = 4096 bytes |
+| s_log_block_size | 2 | Block size = 1024 &lt;< 2 = 4096 bytes |
 | s_mtime | 1700000000 | Last mounted Tue Nov 14 2023 |
 | s_magic | 0xEF53 | Valid ext4 signature |
 | s_state | 1 | Clean, unmounted properly |
@@ -590,10 +590,10 @@ i_block[14]     → 1 triple indirect pointer  (huge files)
 2. From the per-process file table, get the inode number.
 3. Load the inode from disk (or in-memory cache).
 4. Compute which logical block the offset falls in: `block_num = offset / block_size`.
-5. If block_num < 12: use `i_block[block_num]` (direct pointer).
-6. If block_num < 12 + 1024: compute singly indirect offset.
-7. If block_num < 12 + 1024 + 1024²: compute doubly indirect offset.
-8. If block_num < 12 + 1024 + 1024² + 1024³: compute triply indirect offset.
+5. If block_num &lt; 12: use `i_block[block_num]` (direct pointer).
+6. If block_num &lt; 12 + 1024: compute singly indirect offset.
+7. If block_num &lt; 12 + 1024 + 1024²: compute doubly indirect offset.
+8. If block_num &lt; 12 + 1024 + 1024² + 1024³: compute triply indirect offset.
 9. Read the physical block at the computed address.
 
 ### Pseudocode — File Read via Inode Pointers
@@ -3344,7 +3344,7 @@ MFT Record (1 KB):
 ```
 
 **Resident vs non-resident data:**
-- File < ~900 bytes: data stored directly in MFT record (0 extra blocks)
+- File &lt; ~900 bytes: data stored directly in MFT record (0 extra blocks)
 - File > ~900 bytes: MFT contains run-list of cluster ranges
 
 ### 9.3 FAT32 (Legacy Windows/Removable)

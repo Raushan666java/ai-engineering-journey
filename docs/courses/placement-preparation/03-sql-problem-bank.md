@@ -283,7 +283,7 @@ LIMIT 1 OFFSET 1;
 ```sql
 SELECT MAX(salary) AS second_highest
 FROM employees
-WHERE salary < (SELECT MAX(salary) FROM employees);
+WHERE salary &lt; (SELECT MAX(salary) FROM employees);
 ```
 
 ```
@@ -722,7 +722,7 @@ SELECT e.name AS employee,
        d.name AS department
 FROM employees e
 CROSS JOIN departments d
-WHERE e.id <= 3  -- Limit to first 3 employees for readability
+WHERE e.id &lt;= 3  -- Limit to first 3 employees for readability
 ORDER BY e.name, d.name;
 ```
 
@@ -893,9 +893,9 @@ SELECT e1.name AS emp1,
        e2.salary AS salary2,
        e2.dept_id AS dept2
 FROM employees e1
-INNER JOIN employees e2 ON e1.id < e2.id
-    AND ABS(e1.salary - e2.salary) <= 10000
-    AND e1.dept_id <> e2.dept_id
+INNER JOIN employees e2 ON e1.id &lt; e2.id
+    AND ABS(e1.salary - e2.salary) &lt;= 10000
+    AND e1.dept_id &lt;> e2.dept_id
 ORDER BY ABS(e1.salary - e2.salary);
 ```
 
@@ -1503,7 +1503,7 @@ SELECT name,
        category,
        total_revenue
 FROM ranked_products
-WHERE rnk <= 2
+WHERE rnk &lt;= 2
 ORDER BY total_revenue DESC;
 ```
 
@@ -1638,7 +1638,7 @@ SELECT department,
        salary,
        rnk
 FROM ranked
-WHERE rnk <= 3
+WHERE rnk &lt;= 3
 ORDER BY department, rnk;
 ```
 
@@ -1693,7 +1693,7 @@ SELECT name,
            WHEN salary > LAG(salary, 1) OVER (
                PARTITION BY dept_id ORDER BY hire_date
            ) THEN 'Higher than prev'
-           WHEN salary < LAG(salary, 1) OVER (
+           WHEN salary &lt; LAG(salary, 1) OVER (
                PARTITION BY dept_id ORDER BY hire_date
            ) THEN 'Lower than prev'
            ELSE 'First in dept'
@@ -2030,9 +2030,9 @@ SELECT id,
        order_date,
        DATEDIFF(CURDATE(), order_date) AS days_since_order,
        CASE
-           WHEN DATEDIFF(CURDATE(), order_date) <= 30 THEN '0-30 days'
-           WHEN DATEDIFF(CURDATE(), order_date) <= 60 THEN '31-60 days'
-           WHEN DATEDIFF(CURDATE(), order_date) <= 90 THEN '61-90 days'
+           WHEN DATEDIFF(CURDATE(), order_date) &lt;= 30 THEN '0-30 days'
+           WHEN DATEDIFF(CURDATE(), order_date) &lt;= 60 THEN '31-60 days'
+           WHEN DATEDIFF(CURDATE(), order_date) &lt;= 90 THEN '61-90 days'
            ELSE '90+ days'
        END AS aging_bucket
 FROM orders
@@ -2369,7 +2369,7 @@ WITH RECURSIVE number_series AS (
 
     SELECT n + 1
     FROM number_series
-    WHERE n < (SELECT MAX(id) FROM orders)
+    WHERE n &lt; (SELECT MAX(id) FROM orders)
 )
 SELECT n AS missing_id
 FROM number_series
@@ -2394,7 +2394,7 @@ WITH RECURSIVE number_series AS (
     SELECT MIN(id) AS n FROM orders
     UNION ALL
     SELECT n + 1 FROM number_series
-    WHERE n < (SELECT MAX(id) FROM orders)
+    WHERE n &lt; (SELECT MAX(id) FROM orders)
 )
 SELECT n AS missing_id
 FROM number_series
@@ -2448,7 +2448,7 @@ SELECT name,
        DATEDIFF(hire_date, prev_hire_date) AS days_gap
 FROM ordered
 WHERE prev_hire_date IS NOT NULL
-  AND DATEDIFF(hire_date, prev_hire_date) <= 90
+  AND DATEDIFF(hire_date, prev_hire_date) &lt;= 90
 ORDER BY dept_id, hire_date;
 ```
 
@@ -2470,7 +2470,7 @@ SELECT e1.name AS emp1,
        e2.name AS emp2,
        e1.hire_date
 FROM employees e1
-INNER JOIN employees e2 ON e1.id < e2.id
+INNER JOIN employees e2 ON e1.id &lt; e2.id
     AND e1.hire_date = e2.hire_date;
 ```
 
@@ -2535,7 +2535,7 @@ WITH RECURSIVE numbers AS (
     UNION ALL
     SELECT n + 1
     FROM numbers
-    WHERE n < 100
+    WHERE n &lt; 100
 )
 SELECT n,
        CASE
@@ -3411,7 +3411,7 @@ Execution Time: 18.230 ms
 ```sql
 -- B-tree: range query on timestamp
 CREATE INDEX idx_created_at ON events (created_at);
-SELECT * FROM events WHERE created_at >= '2024-01-01' AND created_at < '2024-02-01';
+SELECT * FROM events WHERE created_at >= '2024-01-01' AND created_at &lt; '2024-02-01';
 
 -- Hash: exact match on status (only if many distinct values)
 CREATE INDEX idx_status_hash ON orders USING hash (status);
@@ -3697,7 +3697,7 @@ FROM generate_series(1, 10000000);
 -- Query: count ERROR logs in January 2024
 EXPLAIN ANALYZE
 SELECT COUNT(*) FROM logs
-WHERE created_at >= '2024-01-01' AND created_at < '2024-02-01'
+WHERE created_at >= '2024-01-01' AND created_at &lt; '2024-02-01'
   AND log_level = 'ERROR';
 ```
 
@@ -3714,7 +3714,7 @@ Finalize Aggregate  (cost=85000.00..85000.01 rows=1 width=8)
                     (cost=0.00..84000.00 rows=40000 width=1)
                     (actual time=0.500..140.000 rows=83333 loops=3)
                     Filter: ((created_at >= '2024-01-01') AND
-                             (created_at < '2024-02-01') AND
+                             (created_at &lt; '2024-02-01') AND
                              (log_level = 'ERROR'::text))
                     Rows Removed by Filter: 3249999
 ```

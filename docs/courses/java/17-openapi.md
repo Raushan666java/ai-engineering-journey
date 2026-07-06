@@ -1857,7 +1857,7 @@ springdoc.cache.disabled=true
    - D) openapi-generator
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) springdoc-openapi-starter-webmvc-ui.** SpringDoc is the recommended library for Spring Boot 3.x OpenAPI integration.
 </details>
 
@@ -1868,7 +1868,7 @@ springdoc.cache.disabled=true
    - D) Tag
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) ApiResponse.** ApiResponse documents the response code, description, and optional content for a specific HTTP status.
 </details>
 
@@ -1879,7 +1879,7 @@ springdoc.cache.disabled=true
    - D) RequestMapping
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) GroupedOpenApi bean.** Define GroupedOpenApi beans in Configuration to create logical API groups.
 </details>
 

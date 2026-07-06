@@ -691,15 +691,15 @@ console.log(detector.generateReport({ description: 'Drop index on user_id', migr
 
 ## Chapter Quiz
 
-<details><summary>Question 1: How does Flyway track applied migrations?</summary>**A)** Git tags<br>**B)** Schema history table<br>**C)** File timestamps<br>**D)** Manual tracking<br><br>**Answer: B)** Schema history table</details>
+<details><summary>Question 1: How does Flyway track applied migrations?</summary>**A)** Git tags<br>**B)** Schema history table<br>**C)** File timestamps<br>**D)** Manual tracking<br><br>**Answer: B)** Schema history table&lt;/details&gt;
 
-<details><summary>Question 2: What backup method enables PITR?</summary>**A)** Full backup only<br>**B)** Full backup + WAL archiving<br>**C)** Incremental backup only<br>**D)** Snapshot backup only<br><br>**Answer: B)** Full backup + WAL archiving</details>
+<details><summary>Question 2: What backup method enables PITR?</summary>**A)** Full backup only<br>**B)** Full backup + WAL archiving<br>**C)** Incremental backup only<br>**D)** Snapshot backup only<br><br>**Answer: B)** Full backup + WAL archiving&lt;/details&gt;
 
-<details><summary>Question 3: How many phases for a column rename with zero-downtime?</summary>**A)** One<br>**B)** Two<br>**C)** Three<br>**D)** Four<br><br>**Answer: C)** Three (add new, update dual-write, drop old)</details>
+<details><summary>Question 3: How many phases for a column rename with zero-downtime?</summary>**A)** One<br>**B)** Two<br>**C)** Three<br>**D)** Four<br><br>**Answer: C)** Three (add new, update dual-write, drop old)&lt;/details&gt;
 
-<details><summary>Question 4: What is the primary purpose of a rollback migration?</summary>**A)** Revert schema changes safely<br>**B)** Delete old data<br>**C)** Speed up deployments<br>**D)** Create backups<br><br>**Answer: A)** Revert schema changes safely</details>
+<details><summary>Question 4: What is the primary purpose of a rollback migration?</summary>**A)** Revert schema changes safely<br>**B)** Delete old data<br>**C)** Speed up deployments<br>**D)** Create backups<br><br>**Answer: A)** Revert schema changes safely&lt;/details&gt;
 
-<details><summary>Question 5: What does RTO measure?</summary>**A)** Recovery Point Objective — max data loss<br>**B)** Recovery Time Objective — max downtime<br>**C)** Return to Operations<br>**D)** Runtime Optimization<br><br>**Answer: B)** Recovery Time Objective — max downtime</details>
+<details><summary>Question 5: What does RTO measure?</summary>**A)** Recovery Point Objective — max data loss<br>**B)** Recovery Time Objective — max downtime<br>**C)** Return to Operations<br>**D)** Runtime Optimization<br><br>**Answer: B)** Recovery Time Objective — max downtime&lt;/details&gt;
 
 ---
 
@@ -712,11 +712,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -724,7 +724,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

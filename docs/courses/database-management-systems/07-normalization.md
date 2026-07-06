@@ -410,7 +410,7 @@ Compute closure(C+) with F:
 | **Worst case** | O(2^|LR| * |F| * n) | Must test all subsets of LR attributes |
 | **Best case** | O(|F| * n) | Mandatory attributes already form a superkey |
 | **Number of keys** | Up to C(n, floor(n/2)) | Theoretically exponential in worst case |
-| **Practical limit** | |F| < 100, n < 30 | Beyond this, heuristic methods are used |
+| **Practical limit** | |F| < 100, n &lt; 30 | Beyond this, heuristic methods are used |
 
 **Why exponential?** LR attributes create a subset enumeration problem. In the worst case (e.g., F = {A -> B, B -> C, ..., Y -> Z}), every attribute is in LR and the number of candidate keys is exponential. In practice, real schemas have small LR sets.
 

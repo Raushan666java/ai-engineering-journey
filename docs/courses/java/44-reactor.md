@@ -35,7 +35,8 @@ After completing this chapter, you will be able to:
 - Build a complete reactive data pipeline integrating multiple operators
 - Identify when reactive programming adds value vs. unnecessary complexity
 
-## 1. The Reactive Manifesto and Why Reactive Matters
+## 1. The Reactive Manifesto and Why Reactive Matters
+
 > **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
@@ -2340,7 +2341,7 @@ class ComprehensiveStepVerifierTests {
    - D) All of the above
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.
 </details>
 
@@ -2351,7 +2352,7 @@ class ComprehensiveStepVerifierTests {
    - D) Whatever the team knows best
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.
 </details>
 
@@ -2362,7 +2363,7 @@ class ComprehensiveStepVerifierTests {
    - D) Never → it is outdated
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.
 </details>
 

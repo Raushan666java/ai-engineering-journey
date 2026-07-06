@@ -561,7 +561,7 @@ Test your understanding with these quick questions.
 - C) 401 means invalid token, 403 means expired token
 - D) 401 is for APIs, 403 is for web pages
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) 401 indicates the client is not authenticated (no valid credentials). 403 indicates the client is authenticated but lacks permission for the requested resource.**
 
@@ -574,7 +574,7 @@ Test your understanding with these quick questions.
 - C) To comply with GDPR
 - D) To improve API performance
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Refresh token rotation invalidates the old token each time a new one is issued. If a stolen token is used, the legitimate user's next refresh attempt will fail, signaling theft.**
 
@@ -587,7 +587,7 @@ Test your understanding with these quick questions.
 - C) 12
 - D) 2
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **C) 12 or higher. The cost factor is exponential — 12 rounds (2^12 iterations) balances security and performance for production use.**
 
@@ -600,7 +600,7 @@ Test your understanding with these quick questions.
 - C) Client Credentials
 - D) Resource Owner Password
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **A) Authorization Code with PKCE (Proof Key for Code Exchange) is the recommended flow for SPAs and mobile apps as it prevents authorization code interception attacks.**
 
@@ -814,11 +814,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -826,7 +826,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

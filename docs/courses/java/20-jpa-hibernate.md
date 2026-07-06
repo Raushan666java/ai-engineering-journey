@@ -1662,7 +1662,7 @@ spring.jpa.properties.hibernate.jdbc.batch_versioned_data=true
    - D) Missing indexes
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) LAZY loading in a loop.** N+1 occurs when an initial query loads entities, then iterates them triggering individual queries for each collection.
 </details>
 
@@ -1673,7 +1673,7 @@ spring.jpa.properties.hibernate.jdbc.batch_versioned_data=true
    - D) MAPPED_SUPERCLASS
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) SINGLE_TABLE.** All classes in the hierarchy map to one table, avoiding joins but allowing nullable columns.
 </details>
 
@@ -1684,7 +1684,7 @@ spring.jpa.properties.hibernate.jdbc.batch_versioned_data=true
    - D) @SecondLevelCache
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) @Cache(usage = ...).** Hibernate's @Cache annotation configures the cache concurrency strategy and region.
 </details>
 

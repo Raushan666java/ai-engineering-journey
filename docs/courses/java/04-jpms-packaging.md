@@ -2227,7 +2227,7 @@ if (meta != null) {
    - D) provides
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) opens.** The `opens` directive grants reflective access to a package, which is needed by frameworks like Hibernate and Spring that use reflection for entity scanning and dependency injection.
 </details>
 
@@ -2238,7 +2238,7 @@ if (meta != null) {
    - D) It automatically migrates your code to JPMS
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It creates a custom runtime image containing only the modules your application needs.** jlink reduces the JRE footprint from ~300MB to as little as ~30MB for minimal applications.
 </details>
 
@@ -2249,7 +2249,7 @@ if (meta != null) {
    - D) It becomes an unnamed module
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It becomes an automatic module.** Automatic modules read all other modules and export all their packages, serving as a bridge for migrating existing libraries.
 </details>
 
@@ -2260,7 +2260,7 @@ if (meta != null) {
    - D) jar
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) jdeps.** jdeps analyzes class dependencies and provides the information needed to write module-info.java files and identify missing modules.
 </details>
 

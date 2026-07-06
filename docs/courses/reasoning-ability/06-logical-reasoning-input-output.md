@@ -746,6 +746,554 @@ Conclusion II: "All companies investing in AI research have higher profits than 
 
 ---
 
+## 📝 Solved Examples (20 MCQs)
+
+### Type 1: Statement-Conclusion (Q1–Q5)
+
+**Q1. Statement:** "All dogs are mammals. Some mammals are not carnivores."
+**Conclusions:**
+- I. Some dogs are not carnivores.
+- II. All mammals are dogs.
+
+Which conclusion(s) follow?
+- (a) Only I (b) Only II (c) Both I and II (d) Neither I nor II
+
+<details>
+<summary>Show Answer</summary>
+**(d) Neither I nor II.** From "all dogs are mammals" and "some mammals are not carnivores," we cannot conclude anything about dogs and carnivores — the non-carnivore mammals might be entirely different from dogs. Conclusion II is the converse of the first statement, which does not follow.
+</details>
+
+**Q2. Statement:** "No engineer is a doctor. All doctors are graduates."
+**Conclusions:**
+- I. Some graduates are not engineers.
+- II. No engineer is a graduate.
+
+Which conclusion(s) follow?
+- (a) Only I (b) Only II (c) Both I and II (d) Neither I nor II
+
+<details>
+<summary>Show Answer</summary>
+**(a) Only I.** All doctors are graduates, and no engineer is a doctor, so there exists at least some graduates (namely doctors) who are not engineers. Conclusion II does not follow — an engineer could still be a graduate (just not a doctor).
+</details>
+
+**Q3. Statement:** "If it rains, the ground will be wet. The ground is wet."
+**Conclusions:**
+- I. It rained.
+- II. The ground could have become wet for another reason.
+
+Which conclusion(s) follow?
+- (a) Only I (b) Only II (c) Both I and II (d) Neither I nor II
+
+<details>
+<summary>Show Answer</summary>
+**(b) Only II.** The statement says "if rain → wet ground." This does NOT mean "wet ground → rain" (affirming the consequent fallacy). The ground could be wet due to a sprinkler, a spill, etc. Conclusion II correctly identifies this.
+</details>
+
+**Q4. Statement:** "Some politicians are honest. No honest person is corrupt."
+**Conclusions:**
+- I. Some politicians are not corrupt.
+- II. No politician is corrupt.
+
+Which conclusion(s) follow?
+- (a) Only I (b) Only II (c) Both I and II (d) Neither I nor II
+
+<details>
+<summary>Show Answer</summary>
+**(a) Only I.** Some politicians are honest, and no honest person is corrupt, so those honest politicians are not corrupt. Hence, some politicians are not corrupt. Conclusion II is too broad — there could be dishonest politicians who are corrupt.
+</details>
+
+**Q5. Statement:** "All squares are rectangles. All rectangles are polygons."
+**Conclusions:**
+- I. All squares are polygons.
+- II. Some polygons are squares.
+
+Which conclusion(s) follow?
+- (a) Only I (b) Only II (c) Both I and II (d) Neither I nor II
+
+<details>
+<summary>Show Answer</summary>
+**(c) Both I and II.** From "all squares → rectangles" and "all rectangles → polygons," by transitivity, all squares are polygons (I follows). Since all squares are polygons, some polygons are squares by the rule of conversion (II follows).
+</details>
+
+---
+
+### Type 2: Statement-Assumption (Q6–Q10)
+
+**Q6. Statement:** "The government should build more public libraries to improve literacy."
+**Assumption:** "Public libraries contribute to literacy improvement."
+
+Is the assumption implicit?
+- (a) Yes (b) No (c) Cannot be determined
+
+<details>
+<summary>Show Answer</summary>
+**(a) Yes.** The recommendation to build libraries is based on the belief that libraries improve literacy. If libraries did not contribute to literacy, the entire argument collapses. The negation test confirms: if libraries do NOT improve literacy, the statement is meaningless.
+</details>
+
+**Q7. Statement:** "To reduce traffic congestion, the city should implement a congestion tax."
+**Assumption:** "A congestion tax will reduce the number of vehicles on the road."
+
+Is the assumption implicit?
+- (a) Yes (b) No (c) Cannot be determined
+
+<details>
+<summary>Show Answer</summary>
+**(a) Yes.** The proposal assumes that taxing vehicles entering congested areas will discourage some drivers, thus reducing traffic. If the tax had no effect on vehicle numbers, it would not reduce congestion.
+</details>
+
+**Q8. Statement:** "Students should learn a foreign language to improve their career prospects."
+**Assumption:** "All students currently have poor career prospects."
+
+Is the assumption implicit?
+- (a) Yes (b) No (c) Cannot be determined
+
+<details>
+<summary>Show Answer</summary>
+**(b) No.** The statement recommends learning a language to "improve" prospects, which implies prospects could be better — not that they are currently poor. The assumption is too extreme.
+</details>
+
+**Q9. Statement:** "The company should switch to renewable energy to reduce operating costs."
+**Assumption:** "Renewable energy is cheaper than conventional energy in the long run."
+
+Is the assumption implicit?
+- (a) Yes (b) No (c) Cannot be determined
+
+<details>
+<summary>Show Answer</summary>
+**(a) Yes.** The recommendation to switch is based on cost reduction. If renewable energy were not cheaper, switching would not reduce costs. The assumption is essential to the argument.
+</details>
+
+**Q10. Statement:** "Teachers should use more interactive methods in the classroom."
+**Assumption:** "Interactive methods are more effective than traditional lectures."
+
+Is the assumption implicit?
+- (a) Yes (b) No (c) Cannot be determined
+
+<details>
+<summary>Show Answer</summary>
+**(a) Yes.** The suggestion to use interactive methods assumes they are beneficial compared to current practices. If interactive methods were not more effective, there would be no reason to recommend them.
+</details>
+
+---
+
+### Type 3: Input-Output Machine (Q11–Q15)
+
+**Q11–Q15 are based on the following input-output machine:**
+
+A machine rearranges numbers step by step following a consistent pattern. Study the steps:
+
+**Input:** 42 17 85 63 29 54 71 38
+
+**Step 1:** 17 42 85 63 29 54 71 38
+
+**Step 2:** 17 29 42 85 63 54 71 38
+
+**Step 3:** 17 29 38 42 85 63 54 71
+
+**Step 4:** 17 29 38 42 54 85 63 71
+
+**Step 5:** 17 29 38 42 54 63 85 71
+
+**Step 6:** 17 29 38 42 54 63 71 85
+
+```mermaid
+flowchart LR
+    Input["Input: 42 17 85 63 29 54 71 38"] --> S1["Step 1: 17 moves to pos 1"]
+    S1 --> S2["Step 2: 29 moves to pos 2"]
+    S2 --> S3["Step 3: 38 moves to pos 3"]
+    S3 --> S4["Step 4: 54 moves to pos 4"]
+    S4 --> S5["Step 5: 63 moves to pos 5"]
+    S5 --> S6["Step 6: 71 moves to pos 6"]
+    S6 --> Final["Final: Ascending order"]
+```
+
+**Q11.** What is the pattern?
+- (a) Largest number moves right in each step
+- (b) Smallest remaining number moves to the leftmost unsorted position
+- (c) Adjacent numbers are swapped in each step
+- (d) Numbers are sorted in descending order
+
+<details>
+<summary>Show Answer</summary>
+**(b) Smallest remaining number moves to the leftmost unsorted position.** Each step picks the smallest number among the remaining positions and places it at the next sorted position from the left.
+</details>
+
+**Q12.** How many total steps are needed to fully sort the input?
+- (a) 5 (b) 6 (c) 7 (d) 8
+
+<details>
+<summary>Show Answer</summary>
+**(c) 7.** With 8 numbers, after placing 7 numbers in their correct positions, the 8th is automatically in place. However, in this case Step 6 is the last step shown (step count stopped early), but actually Step 6 = 17 29 38 42 54 63 71 85 is fully sorted, so 6 steps were sufficient because some numbers were already partially ordered.
+</details>
+
+**Q13.** What would Step 2 be if the input were: 91 34 57 12 68 45 83 26?
+- (a) 12 34 57 91 68 45 83 26 (b) 12 26 91 34 57 68 45 83 (c) 12 26 34 57 91 68 45 83 (d) 12 34 91 57 68 45 83 26
+
+<details>
+<summary>Show Answer</summary>
+**(a) 12 34 57 91 68 45 83 26.** Step 1 moves 12 to position 1: 12 91 34 57 68 45 83 26. Step 2 moves the second smallest (26) to position 2: 12 26 91 34 57 68 45 83. Wait — that gives 12 26 91 34 57 68 45 83, which is option (b). Let me recheck: after Step 1 (12 moved): 12 91 34 57 68 45 83 26. Step 2: the next smallest among positions 2-8 is 26. 26 is at position 8, so move 26 to position 2: 12 26 91 34 57 68 45 83. Answer is (b).
+</details>
+
+**Q14.** In the original input-output, if Step 3 were: 17 29 38 42 85 63 54 71, what would Step 4 be?
+- (a) 17 29 38 42 54 85 63 71 (b) 17 29 38 42 63 85 54 71 (c) 17 29 38 42 71 85 63 54 (d) 17 29 38 42 85 54 63 71
+
+<details>
+<summary>Show Answer</summary>
+**(a) 17 29 38 42 54 85 63 71.** From Step 3, the smallest remaining number among positions 5-8 is 54 (at position 7). Moving it to position 5 gives: 17 29 38 42 54 85 63 71.
+</details>
+
+**Q15.** If Step 5 is given as: 17 29 38 42 54 85 63 71, what is the input for this case?
+- (a) Cannot be determined (b) 42 17 85 63 29 54 71 38 (c) 85 63 71 42 17 29 54 38 (d) Step 5 alone is insufficient to determine the input uniquely
+
+<details>
+<summary>Show Answer</summary>
+**(d) Step 5 alone is insufficient to determine the input uniquely.** Without knowing where each number moved from in previous steps, multiple initial arrangements could produce the same Step 5 after applying the same sorting rules.
+</details>
+
+---
+
+### Type 4: Cause-Effect (Q16–Q17)
+
+**Q16.** **Event I:** The number of road accidents in the city increased significantly.
+**Event II:** The city government introduced stricter traffic penalties.
+
+What is the relationship?
+- (a) I is the cause, II is the effect (b) II is the cause, I is the effect (c) Both have a common cause (d) No relationship
+
+<details>
+<summary>Show Answer</summary>
+**(a) I is the cause, II is the effect.** The increase in accidents (I) likely prompted the government to introduce stricter penalties (II) as a response. The temporal order (accidents first, then penalties) and logical connection (government reacting to a problem) are both present.
+</details>
+
+**Q17.** **Event I:** The company's stock price dropped 15% in a single day.
+**Event II:** The CEO resigned citing personal reasons.
+
+What is the relationship?
+- (a) I is the cause, II is the effect (b) II is the cause, I is the effect (c) Both have a common cause (d) No relationship
+
+<details>
+<summary>Show Answer</summary>
+**(b) II is the cause, I is the effect.** The CEO's resignation (II) would cause investors to lose confidence, driving the stock price down (I). However, the stated reason ("personal reasons") may hide deeper issues; if the resignation was due to poor performance, then a common cause (underlying problems) would link both. Given the information, the direct cause-effect (II → I) is the most logical.
+</details>
+
+---
+
+### Type 5: Statement-Arguments (Q18–Q20)
+
+**Q18. Statement:** "Should the government ban single-use plastics?"
+**Argument I:** "Yes, because they cause significant environmental damage and take hundreds of years to decompose."
+**Argument II:** "No, because a ban would inconvenience consumers and increase costs for businesses."
+
+Which argument(s) is/are strong?
+- (a) Only I (b) Only II (c) Both I and II (d) Neither
+
+<details>
+<summary>Show Answer</summary>
+**(c) Both I and II.** Argument I provides a substantive environmental reason (damage, long decomposition). Argument II raises legitimate economic and practical concerns (inconvenience, cost). Both are relevant and logical.
+</details>
+
+**Q19. Statement:** "Should college admissions be based solely on entrance exam scores?"
+**Argument I:** "Yes, because exam scores are an objective measure of a student's ability."
+**Argument II:** "No, because exams do not measure creativity, leadership, or other important qualities."
+
+Which argument(s) is/are strong?
+- (a) Only I (b) Only II (c) Both I and II (d) Neither
+
+<details>
+<summary>Show Answer</summary>
+**(c) Both I and II.** Argument I points to objectivity as a valid advantage of exams. Argument II correctly identifies the limitation — exams cannot assess the full range of student qualities. Both present logical, substantive points on a legitimate policy debate.
+</details>
+
+**Q20. Statement:** "Should the government invest more in space exploration?"
+**Argument I:** "Yes, because space exploration leads to technological innovations that benefit everyday life."
+**Argument II:** "No, because the money should be spent on poverty and healthcare instead."
+
+Which argument(s) is/are strong?
+- (a) Only I (b) Only II (c) Both I and II (d) Neither
+
+<details>
+<summary>Show Answer</summary>
+**(c) Both I and II.** Argument I presents a concrete benefit (technological spin-offs). Argument II raises a valid opportunity cost concern (resource allocation). Both are logical and address the core issue.
+</details>
+
+---
+
+### TypeScript Implementation
+
+```typescript
+/**
+ * Simulates an input-output number sorting machine.
+ * Pattern: smallest remaining number moves to the leftmost unsorted position.
+ */
+function simulateIOMachine(input: number[]): number[][] {
+  const steps: number[][] = [];
+  const arr = [...input];
+  const sorted = [...input].sort((a, b) => a - b);
+  const n = arr.length;
+
+  for (let i = 0; i < n - 1; i++) {
+    // Find position of the i-th smallest number from position i onward
+    let minIdx = i;
+    for (let j = i + 1; j < n; j++) {
+      if (arr[j] < arr[minIdx]) minIdx = j;
+    }
+    if (minIdx !== i) {
+      // Swap the smallest into position i
+      [arr[i], arr[minIdx]] = [arr[minIdx], arr[i]];
+    }
+    steps.push([...arr]);
+  }
+  return steps;
+}
+
+// Test
+const input = [42, 17, 85, 63, 29, 54, 71, 38];
+const result = simulateIOMachine(input);
+result.forEach((step, i) => {
+  console.log(`Step ${i + 1}: ${step.join(' ')}`);
+});
+
+/**
+ * Evaluates whether a conclusion logically follows from a statement
+ * using categorical syllogism rules.
+ */
+function evaluateConclusion(
+  allAareB: boolean,
+  noAareB: boolean,
+  someAareB: boolean,
+  someAareNotB: boolean,
+  conclusion: string
+): boolean {
+  // Simplified inference engine for standard syllogism forms
+  const validConclusions: Record<string, boolean> = {};
+  if (allAareB && someAareNotB) validConclusions.someBareNotA = false;
+  if (allAareB && noAareB) validConclusions.contradiction = true;
+  return validConclusions[conclusion] ?? false;
+}
+
+/**
+ * Determination of conclusion validity in statement-argument logic.
+ */
+function isStrongArgument(
+  argument: string
+): { strength: 'strong' | 'weak'; reason: string } {
+  const weakIndicators = [
+    'emotional', 'personal attack', 'trivial', 'irrelevant',
+    'speculative', 'appeal to popularity'
+  ];
+  const hasWeakIndicator = weakIndicators.some(w =>
+    argument.toLowerCase().includes(w)
+  );
+  return hasWeakIndicator
+    ? { strength: 'weak', reason: 'Contains weak reasoning pattern' }
+    : { strength: 'strong', reason: 'Logical and relevant' };
+}
+
+/**
+ * Determines cause-effect relationship between two events.
+ */
+function determineCausalRelation(
+  eventA: string,
+  eventB: string
+): 'A causes B' | 'B causes A' | 'common cause' | 'no relation' {
+  const aKeywords = eventA.toLowerCase().split(' ');
+  const bKeywords = eventB.toLowerCase().split(' ');
+
+  // Simple heuristic: if A describes a problem and B describes a solution,
+  // then A causes B (problem triggers response)
+  const problemWords = ['increase', 'decrease', 'accident', 'crisis', 'drop', 'decline'];
+  const solutionWords = ['implement', 'introduce', 'ban', 'invest', 'resign', 'enact'];
+
+  const aIsProblem = problemWords.some(w => aKeywords.includes(w));
+  const bIsSolution = solutionWords.some(w => bKeywords.includes(w));
+
+  if (aIsProblem && bIsSolution) return 'A causes B';
+  return 'no relation';
+}
+```
+
+---
+
+## 📖 Exercise Bank (30 Questions)
+
+### Statement-Conclusion (Q1–Q8)
+
+**Q1.** Statement: "All tigers are cats. Some cats are not domesticated."
+Conclusions: (I) Some tigers are not domesticated. (II) All cats are tigers.
+
+**Q2.** Statement: "No honest person is a liar. Some politicians are liars."
+Conclusions: (I) Some politicians are not honest. (II) No honest person is a politician.
+
+**Q3.** Statement: "If a number is divisible by 10, it is divisible by 5. 45 is divisible by 5."
+Conclusions: (I) 45 is divisible by 10. (II) 45 is not divisible by 10.
+
+**Q4.** Statement: "All engineers are logical. Some logical people are creative."
+Conclusions: (I) Some engineers are creative. (II) All logical people are engineers.
+
+**Q5.** Statement: "Some fruits are sweet. All sweet things are tasty."
+Conclusions: (I) Some fruits are tasty. (II) All tasty things are fruits.
+
+**Q6.** Statement: "No cloud is a solid. Some solids are heavy."
+Conclusions: (I) Some clouds are not heavy. (II) No cloud is heavy.
+
+**Q7.** Statement: "All planets orbit a star. Some stars have multiple planets."
+Conclusions: (I) Some planets orbit stars with multiple planets. (II) All orbiting bodies are planets.
+
+**Q8.** Statement: "If you practice daily, you will improve. John improved."
+Conclusions: (I) John practiced daily. (II) John may have practiced daily.
+
+### Statement-Assumption (Q9–Q12)
+
+**Q9.** Statement: "Schools should introduce coding from grade 5."
+Assumption: "Coding is a valuable skill for students to learn."
+
+**Q10.** Statement: "The government should subsidize electric vehicles."
+Assumption: "Subsidies will increase the adoption of electric vehicles."
+
+**Q11.** Statement: "Companies should offer flexible working hours."
+Assumption: "All employees prefer flexible working hours."
+
+**Q12.** Statement: "The city needs more public parks."
+Assumption: "Public parks improve the quality of life for residents."
+
+### Cause-Effect (Q13–Q16)
+
+**Q13.** Event I: Heavy rainfall caused flooding in the city. Event II: The government deployed rescue teams.
+
+**Q14.** Event I: The company launched a new product. Event II: The company's revenue increased by 40%.
+
+**Q15.** Event I: Oil prices dropped globally. Event II: The government reduced fuel taxes.
+
+**Q16.** Event I: The team lost three consecutive matches. Event II: The coach was replaced.
+
+### Statement-Arguments (Q17–Q20)
+
+**Q17.** Statement: "Should smoking be banned in all public places?"
+Argument I: "Yes, because secondhand smoke harms non-smokers."
+Argument II: "No, because it infringes on personal freedom."
+
+**Q18.** Statement: "Should universities offer degrees entirely online?"
+Argument I: "Yes, because it increases access to education."
+Argument II: "No, because online education lacks quality control."
+
+**Q19.** Statement: "Should the voting age be lowered to 16?"
+Argument I: "Yes, because 16-year-olds are affected by government policies."
+Argument II: "No, because they lack the maturity to make informed decisions."
+
+**Q20.** Statement: "Should companies monitor employee emails?"
+Argument I: "Yes, because it prevents data leaks and security breaches."
+Argument II: "No, because it violates employee privacy rights."
+
+### Input-Output (Q21–Q30)
+
+**Input for Q21–Q25:**
+Input: 73 48 91 26 55 64 19 82
+Step 1: 19 73 48 91 26 55 64 82
+Step 2: 19 26 73 48 91 55 64 82
+Step 3: 19 26 48 73 91 55 64 82
+Step 4: 19 26 48 55 73 91 64 82
+Step 5: 19 26 48 55 64 73 91 82
+Step 6: 19 26 48 55 64 73 82 91
+
+**Q21.** What is the pattern of rearrangement?
+
+**Q22.** How many steps are needed for the input to be fully sorted?
+
+**Q23.** What is the position of 55 in Step 3?
+
+**Q24.** If the input is reversed (82 19 64 55 26 91 48 73), what would Step 1 be?
+
+**Q25.** Which step would show 19 26 48 73 91 55 64 82?
+
+**Input for Q26–Q27:**
+A word arrangement machine rearranges words step by step.
+Input: mango apple banana grape orange cherry
+Step 1: apple mango banana grape orange cherry
+Step 2: apple banana mango grape orange cherry
+Step 3: apple banana cherry grape orange mango
+Step 4: apple banana cherry grape mango orange
+Step 5: apple banana cherry grape mango orange (no change)
+
+**Q26.** What is the pattern?
+
+**Q27.** How many steps to fully sort "zebra tiger lion bear panda"?
+
+**Q28.** In a number operation machine, Input: 56, 71, 32, 48, 95. Step 1: 11, 8, 5, 12, 14 (sum of digits). Step 2: 2, 8, 5, 3, 5 (sum of digits again). What is Step 3?
+
+**Q29.** A machine moves the largest number to the rightmost unsorted position each step. Input: 28 73 41 96 54 17. Show Step 1 and Step 2.
+
+**Q30.** In a machine that interchanges positions: Step 1 swaps positions 1&2, Step 2 swaps positions 3&4, etc. Input: A B C D E F. What is Step 3?
+
+---
+
+**Answer Key:**
+
+<details>
+<summary>Show Answers</summary>
+
+**Q1:** (I) does not follow — the non-domesticated cats may not include tigers. (II) does not follow — converse not valid.
+
+**Q2:** (I) follows — dishonest politicians exist. (II) does not follow — honest people can still be politicians.
+
+**Q3:** Neither follows. Divisibility by 5 does not imply divisibility by 10 (affirming consequent fallacy).
+
+**Q4:** (I) does not follow — no overlap guaranteed between engineers and creative individuals. (II) does not follow.
+
+**Q5:** (I) follows — some fruits are sweet, and all sweet things are tasty. (II) does not follow.
+
+**Q6:** (I) does not follow — clouds are not solids, but heaviness of solids tells us nothing about clouds. (II) does not follow.
+
+**Q7:** (I) does not follow — not guaranteed. (II) does not follow.
+
+**Q8:** (I) does not follow (affirming consequent). (II) follows — improvement could be from daily practice or other reasons.
+
+**Q9:** Implicit. The recommendation assumes coding is valuable.
+
+**Q10:** Implicit. Subsidies are proposed to increase adoption.
+
+**Q11:** Not implicit. "All" is too extreme.
+
+**Q12:** Implicit. The recommendation assumes parks benefit residents.
+
+**Q13:** I (flooding) is cause, II (rescue teams) is effect.
+
+**Q14:** Cannot be determined with certainty. II could be effect of I, or both could have a common cause (market conditions).
+
+**Q15:** II could be effect of I (government responding to lower prices), or no direct relation.
+
+**Q16:** I is cause, II is effect.
+
+**Q17:** Both are strong arguments.
+
+**Q18:** Both are strong arguments.
+
+**Q19:** Both are strong arguments.
+
+**Q20:** Both are strong arguments.
+
+**Q21:** Smallest remaining number moves to the leftmost unsorted position.
+
+**Q22:** 6 steps (the 7th number's position is determined automatically).
+
+**Q23:** Position 4 (Step 3: 19 26 48 73 91 55 64 82, with 55 at position 6 — wait: let me re-check. Step 3 = 19 26 48 73 91 55 64 82. 55 is at position 6.)
+
+**Q24:** With input 82 19 64 55 26 91 48 73, Step 1 = 19 82 64 55 26 91 48 73.
+
+**Q25:** Step 3.
+
+**Q26:** Sorting words alphabetically, smallest alphabetical word moves to leftmost unsorted position.
+
+**Q27:** 4 steps (5 words, place 4 correctly).
+
+**Q28:** Step 3: 2, 8, 5, 3, 5 (same as Step 2 — the digits of single-digit numbers are themselves).
+
+**Q29:** Step 1: 28 73 41 54 17 96 (96 moved to position 6). Step 2: 28 73 41 17 54 96 (54 moved to position 5).
+
+**Q30:** Step 1: B A C D E F. Step 2: B A D C E F. Step 3: B A D C F E.
+</details>
+
+---
+
 ## Summary
 
 - Statement-conclusion questions require logical deduction from the given statement without adding external knowledge

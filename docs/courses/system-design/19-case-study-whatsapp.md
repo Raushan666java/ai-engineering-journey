@@ -97,7 +97,7 @@ WhatsApp processes over 100 billion messages daily across 2 billion+ users. Unde
 |--------|--------------|
 | Scale | 2B+ users, 100B+ messages/day |
 | Peak throughput | 1M+ messages/sec during global events |
-| Delivery latency | <100ms median, <500ms P99 |
+| Delivery latency | <100ms median, &lt;500ms P99 |
 | Availability | 99.999% (five nines) for messaging |
 | Durability | No message loss once acknowledged by server |
 | Consistency | Messages delivered in order within a conversation |
@@ -523,7 +523,7 @@ History sync:
 
 ### Requirements
 
-Design the message delivery path for a 1:1 message from Alice (India) to Bob (Brazil). Both are online. The system must deliver in <100ms across continents.
+Design the message delivery path for a 1:1 message from Alice (India) to Bob (Brazil). Both are online. The system must deliver in &lt;100ms across continents.
 
 ### High-Level Design
 
@@ -556,7 +556,7 @@ The message router maintains a distributed hash table mapping `user_id ? connect
 Total latency budget:
 - Alice ? Mumbai CS: 5ms (local mobile network)
 - Mumbai CS ? Router: 1ms (in-datacenter)
-- Router lookup: <1ms
+- Router lookup: &lt;1ms
 - Mumbai ? Sao Paulo RPC: 80ms (transatlantic backbone)
 - Sao Paulo CS ? Bob: 5ms (local mobile network)
 - Total: ~92ms — under the 100ms target
@@ -596,11 +596,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -608,7 +608,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -634,7 +634,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -652,23 +652,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'system-design demo')
   const log = new Logger()
@@ -730,7 +730,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 **Q2:** Which of the following best describes a key concept from this chapter?
 - A) Option A description
@@ -738,7 +738,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 **Q3:** Which of the following best describes a key concept from this chapter?
 - A) Option A description
@@ -746,7 +746,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - C) Option C description
 - D) Option D description
 
-<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content for the correct answer.</details>
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -784,7 +784,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 **Q2:** Which concept is most fundamental to the topic of Chapter 19
 - A) Option A
@@ -792,7 +792,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Review the core sections</details>
+<details><summary>Answer&lt;/summary&gt;Review the core sections&lt;/details&gt;
 
 **Q3:** How does this chapter's main concept apply to real-world systems?
 - A) Option A
@@ -800,7 +800,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>See the Real-World Systems section</details>
+<details><summary>Answer&lt;/summary&gt;See the Real-World Systems section&lt;/details&gt;
 
 ---
 
@@ -898,7 +898,7 @@ class PresenceTracker {
 - Media upload is client-to-CDN with encrypted blobs and expiring URLs — messages only carry hashes and decryption keys
 - Presence and typing use Redis pub-sub with aggregation for large contact lists
 - Message IDs use a Snowflake-style 64-bit scheme for global uniqueness and temporal ordering
-- The system achieves <100ms median delivery latency across continents using Facebook's private backbone
+- The system achieves &lt;100ms median delivery latency across continents using Facebook's private backbone
 
 ---
 
@@ -925,7 +925,7 @@ class PresenceTracker {
    - Generates 5 quality tiers (240p, 360p, 720p, 1080p, source)
    - Generates a GIF preview (first 5 seconds)
    - Generates a thumbnail
-   - Makes the first tier available in <2 seconds
+   - Makes the first tier available in &lt;2 seconds
    All while the video continues uploading. Describe the chunked upload, parallel transcoding, and progressive availability strategy.
 
 3. **Serverless WhatsApp**: Design a messaging system using only serverless components (AWS Lambda, API Gateway WebSocket, DynamoDB, S3, SQS). What constraints make this approach workable? Where does it break down compared to WhatsApp's persistent connection architecture? Estimate the cost per billion messages.

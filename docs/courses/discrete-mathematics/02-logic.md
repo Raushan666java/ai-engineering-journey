@@ -335,7 +335,7 @@ These require **predicate logic** (first-order logic), which adds quantifiers $\
    - C) 2 + 2 = 5
    - D) Close the door
 
-   <details><summary>Answer</summary>**C)** "2 + 2 = 5" is a declarative statement with a definite truth value (false).</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** "2 + 2 = 5" is a declarative statement with a definite truth value (false).</details>
 
 2. $p \rightarrow q$ is logically equivalent to:
    - A) $q \rightarrow p$
@@ -343,7 +343,7 @@ These require **predicate logic** (first-order logic), which adds quantifiers $\
    - C) $\neg q \rightarrow \neg p$
    - D) $p \land q$
 
-   <details><summary>Answer</summary>**C)** The contrapositive $\neg q \rightarrow \neg p$ is logically equivalent to $p \rightarrow q$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** The contrapositive $\neg q \rightarrow \neg p$ is logically equivalent to $p \rightarrow q$.</details>
 
 3. A compound proposition that is always false is called a:
    - A) Tautology
@@ -351,7 +351,7 @@ These require **predicate logic** (first-order logic), which adds quantifiers $\
    - C) Satisfiable
    - D) Contradiction
 
-   <details><summary>Answer</summary>**D)** A contradiction (e.g., $p \land \neg p$) is always false regardless of truth assignments.</details>
+   <details><summary>Answer&lt;/summary&gt;**D)** A contradiction (e.g., $p \land \neg p$) is always false regardless of truth assignments.</details>
 
 4. Which inference rule does $(p \rightarrow q) \land p \therefore q$ represent?
    - A) Modus tollens
@@ -359,7 +359,7 @@ These require **predicate logic** (first-order logic), which adds quantifiers $\
    - C) Hypothetical syllogism
    - D) Disjunctive syllogism
 
-   <details><summary>Answer</summary>**B)** Modus ponens: if $p$ implies $q$ and $p$ is true, then $q$ must be true.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Modus ponens: if $p$ implies $q$ and $p$ is true, then $q$ must be true.</details>
 
 5. The CNF form of $p \oplus q$ is:
    - A) $(p \lor q) \land (\neg p \lor \neg q)$
@@ -367,7 +367,7 @@ These require **predicate logic** (first-order logic), which adds quantifiers $\
    - C) $p \lor q$
    - D) $\neg p \land \neg q$
 
-   <details><summary>Answer</summary>**A)** $p \oplus q \equiv (p \lor q) \land (\neg p \lor \neg q)$ in CNF.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** $p \oplus q \equiv (p \lor q) \land (\neg p \lor \neg q)$ in CNF.</details>
 
 ## Examples
 
@@ -554,11 +554,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -566,7 +566,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -592,7 +592,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -610,23 +610,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()

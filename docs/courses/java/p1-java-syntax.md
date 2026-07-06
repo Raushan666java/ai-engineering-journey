@@ -2377,7 +2377,7 @@ This chapter covered the foundational syntax and features of Java 21 that every 
    - D) char
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) string.** String is a reference type (java.lang.String), not a primitive.
 </details>
 
@@ -2388,7 +2388,7 @@ This chapter covered the foundational syntax and features of Java 21 that every 
    - D) undefined
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) false.** Class fields are initialized to default values.
 </details>
 
@@ -2399,7 +2399,7 @@ This chapter covered the foundational syntax and features of Java 21 that every 
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>
 

@@ -713,9 +713,9 @@ class MirrorImageSimulator {
     const rows = pattern.length;
     const cols = pattern[0]?.length || 0;
     const result: boolean[][] = [];
-    for (let r = 0; r < rows; r++) {
+    for (let r = 0; r &lt; rows; r++) {
       result[r] = [];
-      for (let c = 0; c < cols; c++) {
+      for (let c = 0; c &lt; cols; c++) {
         result[r][cols - 1 - c] = pattern[r][c];
       }
     }
@@ -726,9 +726,9 @@ class MirrorImageSimulator {
     const rows = pattern.length;
     const cols = pattern[0]?.length || 0;
     const result: boolean[][] = [];
-    for (let r = 0; r < rows; r++) {
+    for (let r = 0; r &lt; rows; r++) {
       result[rows - 1 - r] = [];
-      for (let c = 0; c < cols; c++) {
+      for (let c = 0; c &lt; cols; c++) {
         result[rows - 1 - r][c] = pattern[r][c];
       }
     }
@@ -739,7 +739,7 @@ class MirrorImageSimulator {
     const rows = pattern.length;
     const cols = pattern[0]?.length || 0;
     const result: boolean[][] = [];
-    for (let c = 0; c < cols; c++) {
+    for (let c = 0; c &lt; cols; c++) {
       result[c] = [];
       for (let r = rows - 1; r >= 0; r--) {
         result[c][rows - 1 - r] = pattern[r][c];
@@ -758,11 +758,11 @@ class MirrorImageSimulator {
   static patternFromString(s: string, cols: number): boolean[][] {
     const chars = s.replace(/\s+/g, "").split("");
     const rows: boolean[][] = [];
-    for (let r = 0; r < Math.ceil(chars.length / cols); r++) {
+    for (let r = 0; r &lt; Math.ceil(chars.length / cols); r++) {
       rows[r] = [];
-      for (let c = 0; c < cols; c++) {
+      for (let c = 0; c &lt; cols; c++) {
         const idx = r * cols + c;
-        rows[r][c] = idx < chars.length ? chars[idx] === "1" : false;
+        rows[r][c] = idx &lt; chars.length ? chars[idx] === "1" : false;
       }
     }
     return rows;
@@ -776,17 +776,17 @@ class MirrorImageSimulator {
 
 class EmbeddedFigureFinder {
   // Simple pattern matching in grid
-  static findTarget(grid: boolean[][], target: boolean[][]): { found: boolean; positions: Array<[number, number]> } {
-    const positions: Array<[number, number]> = [];
+  static findTarget(grid: boolean[][], target: boolean[][]): { found: boolean; positions: Array&lt;[number, number]&gt; } {
+    const positions: Array&lt;[number, number]&gt; = [];
     const gRows = grid.length, gCols = grid[0]?.length || 0;
     const tRows = target.length, tCols = target[0]?.length || 0;
 
-    for (let r = 0; r <= gRows - tRows; r++) {
-      for (let c = 0; c <= gCols - tCols; c++) {
+    for (let r = 0; r &lt;= gRows - tRows; r++) {
+      for (let c = 0; c &lt;= gCols - tCols; c++) {
         let match = true;
         outer:
-        for (let tr = 0; tr < tRows; tr++) {
-          for (let tc = 0; tc < tCols; tc++) {
+        for (let tr = 0; tr &lt; tRows; tr++) {
+          for (let tc = 0; tc &lt; tCols; tc++) {
             if (target[tr][tc] && !grid[r + tr][c + tc]) { match = false; break outer; }
           }
         }
@@ -806,14 +806,14 @@ class PatternCompletionChecker {
   // Patterns in 3?3 matrix: row-wise (same transformation applied across)
   static predict(
     matrix: boolean[][][],
-    transformations: Array<(grid: boolean[][]) => boolean[][]>
+    transformations: Array&lt;(grid: boolean[][]) =&gt; boolean[][]>
   ): boolean[][] | null {
     const rows = matrix.length;
     if (rows === 0) return null;
     const cols = matrix[0].length;
 
     // Try row-wise pattern: same transformation T applied each row
-    for (let r = 0; r < rows; r++) {
+    for (let r = 0; r &lt; rows; r++) {
       if (matrix[r][0] && matrix[r][1]) {
         // Guess: T maps col1 ? col2
         // Apply T to col2 to get col3
@@ -821,7 +821,7 @@ class PatternCompletionChecker {
           const result = tf(matrix[r][0]);
           return result.every((row, ri) => row.every((v, ci) => v === (matrix[r][1]?.[ri]?.[ci] || false)));
         });
-        if (t && matrix[r][2] === undefined && r < rows) {
+        if (t && matrix[r][2] === undefined && r &lt; rows) {
           return t(matrix[r][1]);
         }
       }

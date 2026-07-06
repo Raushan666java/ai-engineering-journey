@@ -1835,7 +1835,7 @@ spring:
    - D) application-{profile}.properties
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Command line arguments.** CLI args override all other property sources except those with explicitly higher priority.
 </details>
 
@@ -1846,7 +1846,7 @@ spring:
    - D) @EnableAutoConfiguration
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) @ConfigurationProperties.** This annotation binds external properties to a POJO with full IDE support.
 </details>
 
@@ -1857,7 +1857,7 @@ spring:
    - D) Regular expression matching
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Case-insensitive, hyphens/camelCase/underscores match.** Relaxed binding allows `my-property`, `myProperty`, `my_property` to bind to the same field.
 </details>
 
@@ -1950,7 +1950,7 @@ Create a properties class `MultimediaProperties` with prefix `app.media`:
 - `max-video-duration`: Duration
 - `thumbnail-size`: DataSize with default 150KB
 - `compression-timeout`: Duration with default 30s
-- `allowed-formats`: List<String> with default ["jpg", "png", "mp4"]
+- `allowed-formats`: List&lt;String&gt; with default ["jpg", "png", "mp4"]
 
 Bind and print all values. Ensure invalid values cause startup failure.
 

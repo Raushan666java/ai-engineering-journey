@@ -336,7 +336,7 @@ Check if **JohnCalls** and **MaryCalls** are conditionally independent given **A
 
 | Step | Condition | Evaluation |
 |------|-----------|------------|
-| 1 | Graph structure | JohnCalls <- Alarm -> MaryCalls (fork) |
+| 1 | Graph structure | JohnCalls &lt;- Alarm -&gt; MaryCalls (fork) |
 | 2 | d-separation | Alarm in evidence set -- path is **blocked** |
 | 3 | Structural result | JohnCalls _|_ MaryCalls | Alarm predicted |
 
@@ -467,7 +467,7 @@ JohnCalls _|_ MaryCalls: False -- Not independent at JohnCalls=1, MaryCalls=1, Z
 
 Consider three generations: Grandparent (G), Parent (P), and Child (C). The genetic trait flows G -> P -> C. If we know Parent's genetic makeup, then knowing Grandparent's genetics tells us nothing additional about Child's genetics -- Child depends only on Parent. This is a **chain** (G -> P -> C), and conditioning on P blocks the flow of information.
 
-Now consider a trait influenced by two independent genes from Mother and Father, expressed in Child. If Child has the trait, suddenly Mother's and Father's genetics become dependent -- if Mother didn't pass the gene, Father must have. This is a **collider** (M -> C <- F), and conditioning on C creates an association between M and F (explaining away).
+Now consider a trait influenced by two independent genes from Mother and Father, expressed in Child. If Child has the trait, suddenly Mother's and Father's genetics become dependent -- if Mother didn't pass the gene, Father must have. This is a **collider** (M -> C &lt;- F), and conditioning on C creates an association between M and F (explaining away).
 
 ### Definition
 
@@ -551,8 +551,8 @@ function HAS-BLOCKING-TRIPLE(path, A, B, Z, ev_desc) returns boolean
 | Step | Action | Result |
 |------|--------|--------|
 | 1 | Mark evidence | Z = {Alarm} |
-| 2 | Enumerate paths B <-> E | B -> A <- E (one path) |
-| 3 | Check triple (B, A, E) | Collider: -> A <- |
+| 2 | Enumerate paths B &lt;-> E | B -&gt; A &lt;- E (one path) |
+| 3 | Check triple (B, A, E) | Collider: -> A &lt;- |
 | 4 | Collider rule | Blocked only if A not in Z and no descendant of A in Z |
 | 5 | A is in Z! | Collider is **unblocked** (conditioning opens collider) |
 | 6 | Result | **Not d-separated** -- B and E become dependent given Alarm |
@@ -564,8 +564,8 @@ This captures the intuition: if the alarm goes off, knowing whether a burglary o
 | Step | Action | Result |
 |------|--------|--------|
 | 1 | Mark evidence | Z = {Alarm} |
-| 2 | Enumerate paths J <-> M | J <- A -> M (in direction) |
-| 3 | Check triple (J, A, M) | Fork: J <- A -> M |
+| 2 | Enumerate paths J &lt;-> M | J <- A -&gt; M (in direction) |
+| 3 | Check triple (J, A, M) | Fork: J &lt;- A -&gt; M |
 | 4 | Fork rule | Blocked if A in Z |
 | 5 | A is in Z! | Fork is **blocked** |
 | 6 | Result | **d-separated** -- JohnCalls _|_ MaryCalls | Alarm |
@@ -575,7 +575,7 @@ This captures the intuition: if the alarm goes off, knowing whether a burglary o
 | Step | Action | Result |
 |------|--------|--------|
 | 1 | Mark evidence | Z = {} |
-| 2 | Enumerate paths B <-> J | B -> A -> J |
+| 2 | Enumerate paths B &lt;-> J | B -&gt; A -> J |
 | 3 | Check triple (B, A, J) | Chain: B -> A -> J |
 | 4 | Chain rule (no evidence) | Not blocked (A not in {}) |
 | 5 | Result | **Not d-separated** -- B and J are dependent |
@@ -1013,7 +1013,7 @@ P(Burglary | JohnCalls=true, MaryCalls=true):
 - Each elimination multiplies factors that cover at most $\text{tw}+1$ variables.
 - The intermediate factor has $d^{\text{tw}+1}$ entries.
 
-Finding the optimal elimination order is NP-hard, but heuristics (min-degree, min-fill) work well in practice. For low-treewidth networks (treewidth <= 10), VE is practical. For high-treewidth networks, switch to approximate inference (Section 10.5).
+Finding the optimal elimination order is NP-hard, but heuristics (min-degree, min-fill) work well in practice. For low-treewidth networks (treewidth &lt;= 10), VE is practical. For high-treewidth networks, switch to approximate inference (Section 10.5).
 
 ### Advantages & Disadvantages
 
@@ -1273,7 +1273,7 @@ This is **linear** in the graph size, unlike variable elimination which is expon
 | Scales to large BNs -- linear time per iteration | Only asymptotically exact -- requires many samples |
 | Handles any network topology | Burn-in period wastes computation |
 | Naturally handles evidence without special treatment | Convergence diagnosis is difficult (no guarantee of reaching stationary distribution) |
-| Easy to implement and parallelize | Samples are correlated (not independent) -- effective sample size < N |
+| Easy to implement and parallelize | Samples are correlated (not independent) -- effective sample size &lt; N |
 | Memory efficient (stores only current state) | Slow mixing for tightly coupled variables |
 
 ### Edge Cases
@@ -1283,7 +1283,7 @@ This is **linear** in the graph size, unlike variable elimination which is expon
 - **Near-zero evidence probability:** Evidence with very low prior probability makes Gibbs sampling inefficient because the Markov blanket probability for evidence variables is fixed.
 - **Multiple modes:** If the posterior has multiple well-separated modes, Gibbs may get stuck in one mode and never explore others.
 - **Continuous variables:** Basic Gibbs works with discrete. For continuous variables, use **Metropolis-Hastings** within Gibbs (hybrid MCMC).
-- **Convergence detection:** Use multiple chains with different starting points and compute the **Gelman-Rubin** $\hat{R}$ statistic. $\hat{R} < 1.1$ indicates convergence.
+- **Convergence detection:** Use multiple chains with different starting points and compute the **Gelman-Rubin** $\hat{R}$ statistic. $\hat{R} &lt; 1.1$ indicates convergence.
 
 ---
 
@@ -1300,10 +1300,10 @@ This is **linear** in the graph size, unlike variable elimination which is expon
 | **Convergence** | One pass, exact result | Requires burn-in + convergence diagnostics |
 | **Network topology** | Requires low treewidth | Any topology works |
 | **Implementation** | Complex (factor management) | Simple (local computations) |
-| **Best for** | Small to medium BNs (tw <= 20) | Large BNs (tw > 20) |
+| **Best for** | Small to medium BNs (tw &lt;= 20) | Large BNs (tw &gt; 20) |
 | **Worst for** | Dense graphs, high treewidth | Rare evidence, tight couplings |
 
-**Decision rule:** If treewidth <= 20, use exact inference. If treewidth > 20 or network is very large, use Gibbs sampling. For exploratory analysis (many different queries), Gibbs is often faster even for moderate treewidths because samples are reusable.
+**Decision rule:** If treewidth &lt;= 20, use exact inference. If treewidth &gt; 20 or network is very large, use Gibbs sampling. For exploratory analysis (many different queries), Gibbs is often faster even for moderate treewidths because samples are reusable.
 
 ---
 
@@ -1393,7 +1393,7 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 1. **Gelman-Rubin $\hat{R}$ statistic:** Run $m \geq 3$ chains from overdispersed starting points. Compute the between-chain variance $B$ and within-chain variance $W$:
    $$\hat{R} = \sqrt{\frac{\frac{n-1}{n}W + \frac{1}{n}B}{W}}$$
-   $\hat{R} < 1.1$ indicates convergence. Values close to 1.0 suggest chains have mixed to the same stationary distribution.
+   $\hat{R} &lt; 1.1$ indicates convergence. Values close to 1.0 suggest chains have mixed to the same stationary distribution.
 
 2. **Trace plot inspection:** Plot sampled values against iteration number. Look for:
    - **No trend:** Values should oscillate around a stable mean.
@@ -1426,7 +1426,7 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 **Answer:** For large BNs, exact inference is impossible (treewidth grows with network size). Practical strategies:
 
-1. **Junction tree algorithm with triangulation heuristics:** If the network has localized structure (e.g., each node has < 10 parents), triangulation may yield moderate cliques. Use min-degree or min-fill heuristics.
+1. **Junction tree algorithm with triangulation heuristics:** If the network has localized structure (e.g., each node has &lt; 10 parents), triangulation may yield moderate cliques. Use min-degree or min-fill heuristics.
 
 2. **Importance sampling (likelihood weighting):** Fix evidence, sample non-evidence variables in topological order, weight by likelihood of evidence. Can handle thousands of nodes if evidence is not too improbable. Self-importance sampling (adapting proposal distribution) improves efficiency.
 
@@ -1498,7 +1498,7 @@ Where $d$ = number of parameters, $N$ = sample size.
 - C) $P(X_1, \ldots, X_n) = \max_i P(X_i \mid \text{Parents}(X_i))$
 - D) $P(X_1, \ldots, X_n) = \sum_i P(X_i \mid \text{Parents}(X_i))$
 
-<details><summary>Answer</summary>B) The chain rule for Bayesian networks expresses the joint distribution as a product of conditional probabilities of each variable given its parents.</details>
+<details><summary>Answer&lt;/summary&gt;B) The chain rule for Bayesian networks expresses the joint distribution as a product of conditional probabilities of each variable given its parents.</details>
 
 **Q2:** In d-separation, conditioning on a collider:
 - A) Blocks the path between its parents
@@ -1506,7 +1506,7 @@ Where $d$ = number of parameters, $N$ = sample size.
 - C) Has no effect
 - D) Makes the collider independent of its parents
 
-<details><summary>Answer</summary>B) Conditioning on a collider opens the path, creating dependence between its parents -- the explaining away phenomenon.</details>
+<details><summary>Answer&lt;/summary&gt;B) Conditioning on a collider opens the path, creating dependence between its parents -- the explaining away phenomenon.</details>
 
 **Q3:** Which of the following best describes the complexity of variable elimination?
 - A) $O(n)$ -- linear in the number of variables
@@ -1514,7 +1514,7 @@ Where $d$ = number of parameters, $N$ = sample size.
 - C) $O((B+N) \cdot M)$ -- linear in graph size
 - D) $O(n^2)$ -- quadratic in the number of variables
 
-<details><summary>Answer</summary>B) Variable elimination is exponential in the treewidth of the network (given an elimination order). This is why it is feasible only for low-treewidth BNs.</details>
+<details><summary>Answer&lt;/summary&gt;B) Variable elimination is exponential in the treewidth of the network (given an elimination order). This is why it is feasible only for low-treewidth BNs.</details>
 
 **Q4:** The Markov blanket of a node consists of:
 - A) Only its parents
@@ -1522,7 +1522,7 @@ Where $d$ = number of parameters, $N$ = sample size.
 - C) Parents + Children + Co-parents
 - D) All nodes in the network
 
-<details><summary>Answer</summary>C) The Markov blanket includes parents, children, and co-parents. A node is conditionally independent of all other nodes given its Markov blanket.</details>
+<details><summary>Answer&lt;/summary&gt;C) The Markov blanket includes parents, children, and co-parents. A node is conditionally independent of all other nodes given its Markov blanket.</details>
 
 **Q5:** Why does Gibbs sampling require a burn-in period?
 - A) To initialize the random number generator
@@ -1530,7 +1530,7 @@ Where $d$ = number of parameters, $N$ = sample size.
 - C) To eliminate duplicate samples
 - D) To reduce the memory footprint
 
-<details><summary>Answer</summary>B) The burn-in period allows the chain to "forget" its initial state and converge to the true posterior distribution. Samples collected during burn-in are discarded.</details>
+<details><summary>Answer&lt;/summary&gt;B) The burn-in period allows the chain to "forget" its initial state and converge to the true posterior distribution. Samples collected during burn-in are discarded.</details>
 
 **Q6:** What is the main advantage of likelihood weighting over rejection sampling?
 - A) It produces exact results
@@ -1538,7 +1538,7 @@ Where $d$ = number of parameters, $N$ = sample size.
 - C) It is always faster
 - D) It does not require CPTs
 
-<details><summary>Answer</summary>B) Likelihood weighting never rejects samples -- it weights them by the probability of evidence. Rejection sampling rejects most samples when evidence has low probability.</details>
+<details><summary>Answer&lt;/summary&gt;B) Likelihood weighting never rejects samples -- it weights them by the probability of evidence. Rejection sampling rejects most samples when evidence has low probability.</details>
 
 **Q7:** The Chow-Liu algorithm for structure learning produces:
 - A) A general DAG
@@ -1546,7 +1546,7 @@ Where $d$ = number of parameters, $N$ = sample size.
 - C) A fully connected graph
 - D) An undirected graphical model
 
-<details><summary>Answer</summary>B) Chow-Liu finds the maximum-likelihood tree-structured approximation of the joint distribution, where each node has at most one parent.</details>
+<details><summary>Answer&lt;/summary&gt;B) Chow-Liu finds the maximum-likelihood tree-structured approximation of the joint distribution, where each node has at most one parent.</details>
 
 ---
 
@@ -1584,6 +1584,6 @@ Bayesian networks are deployed in medical diagnosis (PathFinder), industrial fau
 
 ### Challenge Problem
 
-9. Implement the Chow-Liu algorithm for structure learning. Given a synthetic dataset from the Alarm network (generate 10,000 samples), recover the tree-structured BN that best approximates the true structure. Compare the Chow-Liu tree (each node has <= 1 parent) against the true Alarm DAG. Which edges are recovered correctly? Which are missing?
+9. Implement the Chow-Liu algorithm for structure learning. Given a synthetic dataset from the Alarm network (generate 10,000 samples), recover the tree-structured BN that best approximates the true structure. Compare the Chow-Liu tree (each node has &lt;= 1 parent) against the true Alarm DAG. Which edges are recovered correctly? Which are missing?
 
 10. Implement a Bayesian network for medical diagnosis with 5 diseases and 8 symptoms. Define CPTs using the noisy-OR model (requires only one parameter per parent-disease relationship). Perform inference using variable elimination to find the most likely disease given a set of observed symptoms. Extend the network to handle 20 diseases and 50 symptoms using Gibbs sampling.

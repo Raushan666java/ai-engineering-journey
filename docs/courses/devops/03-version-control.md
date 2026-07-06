@@ -930,15 +930,15 @@ console.log('Conflicts:', conflicts.length > 0 ? conflicts.map(c => `${c.package
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What differentiates DVCS from CVCS?</summary>**A)** DVCS uses a central server; CVCS does not<br>**B)** DVCS gives every developer the full repository history<br>**C)** CVCS is faster than DVCS<br>**D)** DVCS cannot handle binary files<br><br>**Answer: B)** DVCS gives every developer the full repository history</details>
+<details><summary>Question 1: What differentiates DVCS from CVCS?</summary>**A)** DVCS uses a central server; CVCS does not<br>**B)** DVCS gives every developer the full repository history<br>**C)** CVCS is faster than DVCS<br>**D)** DVCS cannot handle binary files<br><br>**Answer: B)** DVCS gives every developer the full repository history&lt;/details&gt;
 
-<details><summary>Question 2: Which branching model is best suited for continuous delivery?</summary>**A)** GitFlow<br>**B)** Trunk-based development<br>**C)** Forking workflow<br>**D)** Release branching<br><br>**Answer: B)** Trunk-based development</details>
+<details><summary>Question 2: Which branching model is best suited for continuous delivery?</summary>**A)** GitFlow<br>**B)** Trunk-based development<br>**C)** Forking workflow<br>**D)** Release branching<br><br>**Answer: B)** Trunk-based development&lt;/details&gt;
 
-<details><summary>Question 3: What does semantic versioning MAJOR.MINOR.PATCH represent?</summary>**A)** Breaking, new feature, bug fix<br>**B)** Bug fix, new feature, breaking<br>**C)** New feature, bug fix, breaking<br>**D)** Breaking, bug fix, new feature<br><br>**Answer: A)** Breaking, new feature, bug fix</details>
+<details><summary>Question 3: What does semantic versioning MAJOR.MINOR.PATCH represent?</summary>**A)** Breaking, new feature, bug fix<br>**B)** Bug fix, new feature, breaking<br>**C)** New feature, bug fix, breaking<br>**D)** Breaking, bug fix, new feature<br><br>**Answer: A)** Breaking, new feature, bug fix&lt;/details&gt;
 
-<details><summary>Question 4: When should you use annotated tags over lightweight tags?</summary>**A)** Always<br>**B)** For release points requiring metadata<br>**C)** For temporary branches<br>**D)** Never<br><br>**Answer: B)** For release points requiring metadata</details>
+<details><summary>Question 4: When should you use annotated tags over lightweight tags?</summary>**A)** Always<br>**B)** For release points requiring metadata<br>**C)** For temporary branches<br>**D)** Never<br><br>**Answer: B)** For release points requiring metadata&lt;/details&gt;
 
-<details><summary>Question 5: What is the main advantage of a monorepo?</summary>**A)** Team autonomy<br>**B)** Independent versioning<br>**C)** Atomic cross-team changes<br>**D)** Faster builds<br><br>**Answer: C)** Atomic cross-team changes</details>
+<details><summary>Question 5: What is the main advantage of a monorepo?</summary>**A)** Team autonomy<br>**B)** Independent versioning<br>**C)** Atomic cross-team changes<br>**D)** Faster builds<br><br>**Answer: C)** Atomic cross-team changes&lt;/details&gt;
 
 ---
 
@@ -951,11 +951,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -963,7 +963,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

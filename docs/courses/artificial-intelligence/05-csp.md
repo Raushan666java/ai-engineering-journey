@@ -457,19 +457,19 @@ Algorithm: REVISE(csp, Xi, Xj)
 6.  RETURN revised
 ```
 
-### Step-by-Step Dry Run: AC-3 on X < Y < Z
+### Step-by-Step Dry Run: AC-3 on X &lt; Y < Z
 
-**Problem:** $X, Y, Z \in \{1,2,3\}$ with $X < Y$ and $Y < Z$.
+**Problem:** $X, Y, Z \in \{1,2,3\}$ with $X &lt; Y$ and $Y < Z$.
 
 **Initial queue:** (X,Y), (Y,X), (Y,Z), (Z,Y)
 
 | Step | Pop Arc | Revise? | Removed Values | Domains After | Queue Additions |
 |------|---------|---------|---------------|---------------|-----------------|
 | 1 | (X,Y) | Yes | X=3 (no Y > 3) | X:{1,2} Y:{1,2,3} Z:{1,2,3} | (neighbors of X: none) |
-| 2 | (Y,X) | Yes | Y=1 (no X < 1) | X:{1,2} Y:{2,3} Z:{1,2,3} | (neighbors of Y: Z) → (Z,Y) |
+| 2 | (Y,X) | Yes | Y=1 (no X &lt; 1) | X:{1,2} Y:{2,3} Z:{1,2,3} | (neighbors of Y: Z) → (Z,Y) |
 | 3 | (Y,Z) | Yes | Y=3 (no Z > 3) | X:{1,2} Y:{2} Z:{1,2,3} | (neighbors of Y: X) → (X,Y) |
-| 4 | (Z,Y) | Yes | Z=1,2 (no Y < 1 or <2? Y=2, so need Z>2) | X:{1,2} Y:{2} Z:{3} | (neighbors of Z: none) |
-| 5 | (X,Y) | Yes | X=2 (no Y > 2? Y=2, 2<2 false) | X:{1} Y:{2} Z:{3} | (neighbors of X: none) |
+| 4 | (Z,Y) | Yes | Z=1,2 (no Y &lt; 1 or <2? Y=2, so need Z&gt;2) | X:{1,2} Y:{2} Z:{3} | (neighbors of Z: none) |
+| 5 | (X,Y) | Yes | X=2 (no Y > 2? Y=2, 2&lt;2 false) | X:{1} Y:{2} Z:{3} | (neighbors of X: none) |
 
 **Final:** X={1}, Y={2}, Z={3}. **Solution found by propagation alone — no search needed!**
 
@@ -740,8 +740,8 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 
 ### When to Use What
 
-- **Simple problems (n < 20, d < 10)** — plain backtracking is fine.
-- **Moderate problems (n < 100)** — forward checking + MRV/LCV.
+- **Simple problems (n &lt; 20, d < 10)** — plain backtracking is fine.
+- **Moderate problems (n &lt; 100)** — forward checking + MRV/LCV.
 - **Highly constrained** — AC-3 preprocessing + forward checking (this is MAC).
 - **Very large problems (n > 10,000)** — Min-Conflicts (incomplete but fast).
 - **Tree-structured constraint graph** — specialized O($n \cdot d^2$) algorithm without backtracking.
@@ -906,7 +906,7 @@ def sudoku_solve(grid):
 - C) The domain is non-empty
 - D) No backtracking is needed
 
-<details><summary>Answer</summary>B) A complete assignment assigns every variable in X. A solution requires both completeness and consistency.</details>
+<details><summary>Answer&lt;/summary&gt;B) A complete assignment assigns every variable in X. A solution requires both completeness and consistency.</details>
 
 **Q2:** The AC-3 algorithm maintains a queue of what?
 - A) Variables
@@ -914,7 +914,7 @@ def sudoku_solve(grid):
 - C) Domains
 - D) Solutions
 
-<details><summary>Answer</summary>B) AC-3 maintains a queue of arcs (X_i, X_j) representing directed constraints to be revised.</details>
+<details><summary>Answer&lt;/summary&gt;B) AC-3 maintains a queue of arcs (X_i, X_j) representing directed constraints to be revised.</details>
 
 **Q3:** What is the difference between MRV and LCV?
 - A) MRV selects the variable; LCV selects the value
@@ -922,7 +922,7 @@ def sudoku_solve(grid):
 - C) MRV is for binary CSPs; LCV for n-ary
 - D) They are the same heuristic
 
-<details><summary>Answer</summary>A) MRV is a variable-ordering heuristic; LCV is a value-ordering heuristic applied after a variable is chosen.</details>
+<details><summary>Answer&lt;/summary&gt;A) MRV is a variable-ordering heuristic; LCV is a value-ordering heuristic applied after a variable is chosen.</details>
 
 **Q4:** Which algorithm prunes domains the most aggressively before search begins?
 - A) Backtracking
@@ -930,7 +930,7 @@ def sudoku_solve(grid):
 - C) AC-3
 - D) Min-Conflicts
 
-<details><summary>Answer</summary>C) AC-3 enforces arc consistency across the entire constraint graph, propagating domain reductions through all connected arcs.</details>
+<details><summary>Answer&lt;/summary&gt;C) AC-3 enforces arc consistency across the entire constraint graph, propagating domain reductions through all connected arcs.</details>
 
 **Q5:** Why is Min-Conflicts considered "incomplete"?
 - A) It doesn't use constraints
@@ -938,7 +938,7 @@ def sudoku_solve(grid):
 - C) It only works on binary CSPs
 - D) It requires preprocessing
 
-<details><summary>Answer</summary>B) Min-Conflicts is a local search algorithm that can get stuck in local optima. It may fail to find a solution even when one exists, unlike complete search methods.</details>
+<details><summary>Answer&lt;/summary&gt;B) Min-Conflicts is a local search algorithm that can get stuck in local optima. It may fail to find a solution even when one exists, unlike complete search methods.</details>
 
 ---
 

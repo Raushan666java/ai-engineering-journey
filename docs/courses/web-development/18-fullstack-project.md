@@ -1434,7 +1434,7 @@ Test your understanding with these quick questions.
 - C) It reduces server costs
 - D) It eliminates the need for TypeScript
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) A monorepo with a shared types package ensures that the frontend and backend always agree on data shapes. Changing an API response type in the shared package immediately surfaces type errors in both codebases.**
 
@@ -1447,7 +1447,7 @@ Test your understanding with these quick questions.
 - C) It re-fetches from the server
 - D) It throws an error for the component to handle
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) When the API returns 401, `useApi` calls the refresh endpoint with the stored refresh token. If successful, it retries the original request with the new access token. If refresh also fails, the user is redirected to login.**
 
@@ -1460,7 +1460,7 @@ Test your understanding with these quick questions.
 - C) To validate authentication headers
 - D) To type the API response
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) The `AuthenticatedRequest` interface extends Express `Request` with an optional `userId` property. The `authenticate` middleware sets this property after verifying the JWT, and route handlers access it to scope queries to the authenticated user.**
 
@@ -1473,7 +1473,7 @@ Test your understanding with these quick questions.
 - C) PostgreSQL and Redis
 - D) SQLite
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **C) The `docker-compose.yml` defines PostgreSQL (main database) and Redis (caching) services. The Express API connects to both for data persistence and caching.**
 
@@ -1612,11 +1612,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -1624,7 +1624,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

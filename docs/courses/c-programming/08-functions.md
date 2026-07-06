@@ -855,7 +855,7 @@ A **recursive function** calls itself. Every recursive function needs:
 1. factorial(4): 4 > 1 → 4 * factorial(3)
 2. factorial(3): 3 > 1 → 3 * factorial(2)
 3. factorial(2): 2 > 1 → 2 * factorial(1)
-4. factorial(1): 1 <= 1 → return 1 (BASE CASE)
+4. factorial(1): 1 &lt;= 1 → return 1 (BASE CASE)
 5. factorial(2) receives 1 → 2 * 1 = 2 → return 2
 6. factorial(3) receives 2 → 3 * 2 = 6 → return 6
 7. factorial(4) receives 6 → 4 * 6 = 24 → return 24
@@ -1929,12 +1929,12 @@ int main() { int a = 5; f(a); printf("%d", a); return 0; }
 ```
 A) 5  B) 100  C) Compiler error  D) Undefined
 
-<details><summary>Answer</summary>**A)** Pass by value → `a` is unchanged.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** Pass by value → `a` is unchanged.</details>
 
 2. Which is NOT a valid main() signature?
 A) `int main(void)`  B) `int main(int argc, char *argv[])`  C) `void main()`  D) `int main()`
 
-<details><summary>Answer</summary>**C)** `void main()` is non-standard, though some compilers accept it.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `void main()` is non-standard, though some compilers accept it.</details>
 
 3. What does this print?
 ```c
@@ -1943,34 +1943,34 @@ int main() { int *p = f(); printf("%d", *p); return 0; }
 ```
 A) 42  B) Garbage  C) Undefined behavior  D) Compiler error
 
-<details><summary>Answer</summary>**C)** Returning address of local variable = undefined behavior. Compiler may warn.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Returning address of local variable = undefined behavior. Compiler may warn.</details>
 
 4. What does `va_arg(args, float)` do in a variadic function?
 A) Returns the next float argument  B) Undefined behavior (float promoted to double)
 C) Returns a double  D) Rounding error
 
-<details><summary>Answer</summary>**B)** Default argument promotion promotes float to double; use `va_arg(args, double)`.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Default argument promotion promotes float to double; use `va_arg(args, double)`.</details>
 
 5. Inline functions are guaranteed to be inlined at the call site. True or False?
 A) True  B) False
 
-<details><summary>Answer</summary>**B)** The `inline` keyword is a suggestion; the compiler may ignore it.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The `inline` keyword is a suggestion; the compiler may ignore it.</details>
 
 6. What is the value of argc for `./app one two three`?
 A) 3  B) 4  C) 5  D) 1
 
-<details><summary>Answer</summary>**B)** argc = 4 (program name + 3 arguments).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** argc = 4 (program name + 3 arguments).</details>
 
 7. What does `qsort` expect as its comparison parameter?
 A) `int (*)(void*, void*)`  B) `int (*)(const void*, const void*)`
 C) `int (void*, void*)`  D) `int cmp(void*, void*)`
 
-<details><summary>Answer</summary>**B)** `int (*)(const void*, const void*)`.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `int (*)(const void*, const void*)`.</details>
 
 8. A function pointer can be NULL. True or False?
 A) True  B) False
 
-<details><summary>Answer</summary>**A)** True. Always check before calling: `if (fp != NULL) fp();`.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** True. Always check before calling: `if (fp != NULL) fp();`.</details>
 
 ## Summary
 

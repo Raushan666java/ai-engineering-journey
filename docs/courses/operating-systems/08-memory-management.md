@@ -237,7 +237,7 @@ if __name__ == "__main__":
 |------|-----------|-------------|--------------------|---------------|--------------|--------|
 | 1 | CPU issues LOAD | 0x001000 | 0x400000 | 0x100000 | — | — |
 | 2 | MMU adds base | 0x001000 | 0x400000 | 0x100000 | 0x401000 | Check |
-| 3 | Bounds check | — | — | — | 0x401000 | 0x401000 < 0x500000 ✓ |
+| 3 | Bounds check | — | — | — | 0x401000 | 0x401000 &lt; 0x500000 ✓ |
 | 4 | Return phys addr | — | — | — | 0x401000 | — |
 | 5 | CPU issues LOAD | 0x200000 | 0x400000 | 0x100000 | — | — |
 | 6 | MMU adds base | 0x200000 | 0x400000 | 0x100000 | 0x600000 | Check |
@@ -927,7 +927,7 @@ Allocation sequence: A(200), B(150), C(100), free A, D(80), free C, E(300)
 | 2 | B(150) | 200 | Only hole, remainder 674 |
 | 3 | C(100) | 350 | Only hole, remainder 574 |
 | 4 | Free A | — | [{0, 200}, {450, 574}] |
-| 5 | D(80) | **0** | Hole 0 has size 200 (rem 120), hole 450 has size 574 (rem 494) — 120 < 494 |
+| 5 | D(80) | **0** | Hole 0 has size 200 (rem 120), hole 450 has size 574 (rem 494) — 120 &lt; 494 |
 | 6 | Free C | — | [{80, 120}, {450, 574}] |
 | 7 | E(300) | **450** | Hole 80 has size 120 (too small), hole 450 has size 574 — smallest feasible |
 
@@ -941,7 +941,7 @@ Allocation sequence: A(200), B(150), C(100), free A, D(80), free C, E(300)
 | 3 | C(100) | 350 | Only hole |
 | 4 | Free A | — | [{0, 200}, {450, 574}] |
 | 5 | D(80) | **450** | Hole 450 has size 574 (largest), hole 0 has size 200 |
-| 6 | Free C | — | [{0, 200}, {370, 124}] (merge: A + D merged? No. 0+200=200 ≠ 370. Actually: free C is at 350-450, adjacent to D at 450-530 → merge to hole at 350 size 124 + 80 = wait, C was at 350-450, D is at 450-530. Free C returns 350-450. Adjacent to D's hole [370, 124]... Let me redo this properly. Initially after step 3: A[0,200], B[200,350], C[350,450]. Step 4: free A → [{0,200}, {450,574}]. Step 5: D(80) → worst-fit allocates at 450 → [{0,200}, {530,494}]. Step 6: free C (at 350, size 100) → [{0,200}, {350,100}, {530,494}]. Step 6 merge: B is process at 200-350, free [350,450] adjacent to free... no, B is allocated. So no merge between 200 and 350. But wait, we need to check adjacency: 200 (A's freed space) + 200 = 400 ≠ 350. So no merge. [{0,200}, {350,100}, {530,494}]. Step 7: E(300) → worst-fit takes 530 (largest at 494)... wait 494 ≥ 300 and 200 < 300? No. Actually 200 < 300 so only {530,494} qualifies. Alloc at 530. → [{0,200}, {350,100}, {830,194}]. |
+| 6 | Free C | — | [{0, 200}, {370, 124}] (merge: A + D merged? No. 0+200=200 ≠ 370. Actually: free C is at 350-450, adjacent to D at 450-530 → merge to hole at 350 size 124 + 80 = wait, C was at 350-450, D is at 450-530. Free C returns 350-450. Adjacent to D's hole [370, 124]... Let me redo this properly. Initially after step 3: A[0,200], B[200,350], C[350,450]. Step 4: free A → [{0,200}, {450,574}]. Step 5: D(80) → worst-fit allocates at 450 → [{0,200}, {530,494}]. Step 6: free C (at 350, size 100) → [{0,200}, {350,100}, {530,494}]. Step 6 merge: B is process at 200-350, free [350,450] adjacent to free... no, B is allocated. So no merge between 200 and 350. But wait, we need to check adjacency: 200 (A's freed space) + 200 = 400 ≠ 350. So no merge. [{0,200}, {350,100}, {530,494}]. Step 7: E(300) → worst-fit takes 530 (largest at 494)... wait 494 ≥ 300 and 200 &lt; 300? No. Actually 200 < 300 so only {530,494} qualifies. Alloc at 530. → [{0,200}, {350,100}, {830,194}]. |
 | 7 | E(300) | 530 | Only hole large enough is 494 |
 
 ##### Next-Fit Trace
@@ -1165,7 +1165,7 @@ Step 5: Memory controller reads physical address 0xCA5C
 | 2 | Extract page (bits 31-12) | 0000 0000 0000 0000 0010 | 0x2 |
 | 3 | Extract offset (bits 11-0) | 1010 0101 1100 | 0xA5C |
 | 4 | Lookup page 2 in PT | Frame = 12 = 0xC | — |
-| 5 | Shift frame: 0xC << 12 | 0000 0000 0000 1100 0000 0000 0000 0000 | 0x000C000 |
+| 5 | Shift frame: 0xC &lt;< 12 | 0000 0000 0000 1100 0000 0000 0000 0000 | 0x000C000 |
 | 6 | OR with offset | 0000 0000 0000 1100 1010 0101 1100 | 0x000CA5C |
 | 7 | Physical address | — | **0xCA5C** |
 
@@ -1746,7 +1746,7 @@ Physical Address = Base + Offset
 |------|-----------|-------|
 | 1 | Extract segment | 1 |
 | 2 | Extract offset | 0x1234 |
-| 3 | Check: offset ≤ Limit? | 0x1234 < 0x20000 ✓ |
+| 3 | Check: offset ≤ Limit? | 0x1234 &lt; 0x20000 ✓ |
 | 4 | Physical = Base + Offset | 0x500000 + 0x1234 = **0x501234** |
 
 **Translate logical address (Seg=2, Offset=0x2000):**

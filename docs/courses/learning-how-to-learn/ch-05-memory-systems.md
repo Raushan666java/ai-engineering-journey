@@ -2910,7 +2910,7 @@ d) State-dependent encoding
 - D) The exam anxiety blocked all mnemonic recall
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — A memory palace requires highly distinct, familiar loci that are completely automatic. If a locus blends into the next or the student has to think "what comes next," the spatial retrieval fails. Walk the route mentally 3+ times to lock it in.
 </details>
@@ -2922,7 +2922,7 @@ d) State-dependent encoding
 - D) Study lying down and sitting up alternately to generalize
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Encoding specificity means retrieval is strongest when study and test contexts match (internal state, environment, modality). The mismatch between late-night caffeinated study and morning quiet test reduces recall. Varying study contexts helps, but matching the primary test context is most effective.
 </details>
@@ -2934,7 +2934,7 @@ d) State-dependent encoding
 - D) The SM-2 intervals are too long
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Desirable difficulties theory says the optimal success rate is 60-80%. Above 90% feels productive but produces minimal durable retention because the brain is not forced to do the difficult work of retrieval and reconsolidation.
 </details>

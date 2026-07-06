@@ -542,7 +542,7 @@ The CYK-like DP algorithm finds the structure maximizing the number of paired ba
 - D) LBA
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Lexical analysis converts character streams to tokens using DFA-derived from regular expressions.
 </details>
 
@@ -553,7 +553,7 @@ The CYK-like DP algorithm finds the structure maximizing the number of paired ba
 - D) NFA
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Both LL (top-down) and LR (bottom-up) parsing use pushdown automata.
 </details>
 
@@ -564,7 +564,7 @@ The CYK-like DP algorithm finds the structure maximizing the number of paired ba
 - D) Busy beaver values
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Model checking uses automata-theoretic techniques to verify LTL/CTL specifications.
 </details>
 
@@ -575,7 +575,7 @@ The CYK-like DP algorithm finds the structure maximizing the number of paired ba
 - D) NP = co-NP
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** One-way functions require computational hardness — if P = NP, they cannot exist.
 </details>
 
@@ -586,7 +586,7 @@ The CYK-like DP algorithm finds the structure maximizing the number of paired ba
 - D) Programs always halt
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Undecidability means we cannot have a tool that always correctly determines program termination.
 </details>
 
@@ -770,10 +770,10 @@ console.log(FormalVerification.hoareTriple("x > 0", "x = x + 1", "x > 1")); // t
 class PredictiveParserBuilder {
   // Compute FIRST set for each nonterminal
   static computeFirst(
-    productions: Array<{ lhs: string; rhs: string[] }>,
-    terminals: Set<string>
-  ): Map<string, Set<string>> {
-    const first = new Map<string, Set<string>>();
+    productions: Array&lt;{ lhs: string; rhs: string[] }&gt;,
+    terminals: Set&lt;string&gt;
+  ): Map&lt;string, Set<string&gt;> {
+    const first = new Map&lt;string, Set<string&gt;>();
 
     for (const p of productions) {
       if (!first.has(p.lhs)) first.set(p.lhs, new Set());
@@ -808,11 +808,11 @@ class PredictiveParserBuilder {
 
   // Compute FOLLOW set for each nonterminal
   static computeFollow(
-    productions: Array<{ lhs: string; rhs: string[] }>,
-    first: Map<string, Set<string>>,
+    productions: Array&lt;{ lhs: string; rhs: string[] }&gt;,
+    first: Map&lt;string, Set<string&gt;>,
     startVar: string
-  ): Map<string, Set<string>> {
-    const follow = new Map<string, Set<string>>();
+  ): Map&lt;string, Set<string&gt;> {
+    const follow = new Map&lt;string, Set<string&gt;>();
     for (const p of productions) {
       if (!follow.has(p.lhs)) follow.set(p.lhs, new Set());
     }
@@ -822,7 +822,7 @@ class PredictiveParserBuilder {
     while (changed) {
       changed = false;
       for (const p of productions) {
-        for (let i = 0; i < p.rhs.length; i++) {
+        for (let i = 0; i &lt; p.rhs.length; i++) {
           const sym = p.rhs[i];
           if (!follow.has(sym)) continue;
           const symFollow = follow.get(sym)!;
@@ -830,7 +830,7 @@ class PredictiveParserBuilder {
 
           // Check the next symbol(s)
           let allNull = true;
-          for (let j = i + 1; j < p.rhs.length; j++) {
+          for (let j = i + 1; j &lt; p.rhs.length; j++) {
             const next = p.rhs[j];
             const nextFirst = first.get(next);
             if (!nextFirst) continue;
@@ -866,10 +866,10 @@ class FormalVerificationHelper {
   // Build a Kripke structure and verify AG (always globally) property
   static verifyAG(
     states: string[],
-    transitions: Map<string, string[]>,
+    transitions: Map&lt;string, string[]&gt;,
     property: (s: string) => boolean
   ): string[] {
-    const visited = new Set<string>();
+    const visited = new Set&lt;string&gt;();
     const queue = ["s0"];
     const bad: string[] = [];
 

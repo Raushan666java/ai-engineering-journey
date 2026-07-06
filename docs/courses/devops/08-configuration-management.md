@@ -780,13 +780,13 @@ console.log('Recovery plan:', backupMgr.planRecovery(v2.id));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What makes Ansible different from Puppet and Chef?</summary>**A)** Ansible uses a master-agent architecture<br>**B)** Ansible is agentless — it connects via SSH<br>**C)** Ansible is written in Ruby<br>**D)** Ansible is pull-based<br><br>**Answer: B)** Ansible is agentless — it connects via SSH</details>
+<details><summary>Question 1: What makes Ansible different from Puppet and Chef?</summary>**A)** Ansible uses a master-agent architecture<br>**B)** Ansible is agentless — it connects via SSH<br>**C)** Ansible is written in Ruby<br>**D)** Ansible is pull-based<br><br>**Answer: B)** Ansible is agentless — it connects via SSH&lt;/details&gt;
 
-<details><summary>Question 2: What does idempotency mean in configuration management?</summary>**A)** Running a playbook multiple times produces different results<br>**B)** Running a playbook multiple times produces the same result<br>**C)** A playbook runs only once<br>**D)** A playbook requires root access<br><br>**Answer: B)** Running a playbook multiple times produces the same result</details>
+<details><summary>Question 2: What does idempotency mean in configuration management?</summary>**A)** Running a playbook multiple times produces different results<br>**B)** Running a playbook multiple times produces the same result<br>**C)** A playbook runs only once<br>**D)** A playbook requires root access<br><br>**Answer: B)** Running a playbook multiple times produces the same result&lt;/details&gt;
 
-<details><summary>Question 3: What is an Ansible role?</summary>**A)** A single task<br>**B)** An organizational unit for tasks, templates, variables, and handlers<br>**C)** A type of inventory<br>**D)** A connection method<br><br>**Answer: B)** An organizational unit for tasks, templates, variables, and handlers</details>
+<details><summary>Question 3: What is an Ansible role?</summary>**A)** A single task<br>**B)** An organizational unit for tasks, templates, variables, and handlers<br>**C)** A type of inventory<br>**D)** A connection method<br><br>**Answer: B)** An organizational unit for tasks, templates, variables, and handlers&lt;/details&gt;
 
-<details><summary>Question 4: How does Ansible Vault protect secrets?</summary>**A)** By storing them in a database<br>**B)** By encrypting YAML files with a password<br>**C)** By hiding them from logs<br>**D)** By using SSH keys<br><br>**Answer: B)** By encrypting YAML files with a password</details>
+<details><summary>Question 4: How does Ansible Vault protect secrets?</summary>**A)** By storing them in a database<br>**B)** By encrypting YAML files with a password<br>**C)** By hiding them from logs<br>**D)** By using SSH keys<br><br>**Answer: B)** By encrypting YAML files with a password&lt;/details&gt;
 
 <details><summary>Question 5: Which Ansible module manages system services?</summary>**A)** `apt`<br>**B)** `service` or `systemd`<br>**C)** `copy`<br>**D)** `template`<br><br>**Answer: B)** `service` or `systemd`</details>
 
@@ -801,11 +801,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -813,7 +813,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

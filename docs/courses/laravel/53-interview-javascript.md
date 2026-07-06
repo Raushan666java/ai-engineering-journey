@@ -1509,7 +1509,7 @@ npm run test  # runs vitest
 - C) They are identical
 - D) let is block-scoped, const is function-scoped
 
-<details><summary>Answer</summary>A) let allows reassignment, const does not</details>
+<details><summary>Answer&lt;/summary&gt;A) let allows reassignment, const does not&lt;/details&gt;
 
 **Q2:** What does a closure provide?
 - A) Access to global variables
@@ -1517,7 +1517,7 @@ npm run test  # runs vitest
 - C) Async execution
 - D) Type checking
 
-<details><summary>Answer</summary>B) Preserved scope from outer function</details>
+<details><summary>Answer&lt;/summary&gt;B) Preserved scope from outer function&lt;/details&gt;
 
 **Q3:** What is the event loop?
 - A) A loop that iterates over events
@@ -1525,7 +1525,7 @@ npm run test  # runs vitest
 - C) A DOM event handler
 - D) A type of timer
 
-<details><summary>Answer</summary>B) JavaScript's mechanism for handling async operations</details>
+<details><summary>Answer&lt;/summary&gt;B) JavaScript's mechanism for handling async operations&lt;/details&gt;
 
 **Q4:** What does Promise.all do?
 - A) Resolves the first promise to settle
@@ -1533,4 +1533,4 @@ npm run test  # runs vitest
 - C) Runs promises sequentially
 - D) Cancels all promises
 
-<details><summary>Answer</summary>B) Waits for all promises to resolve</details>
+<details><summary>Answer&lt;/summary&gt;B) Waits for all promises to resolve&lt;/details&gt;

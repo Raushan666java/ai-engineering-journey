@@ -2301,7 +2301,7 @@ SCTP extends transport with multi-homing and multi-streaming for telecom. QUIC (
 - D) 60 bytes
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) 20 bytes — up to 60 with options (Data Offset field specifies in 32-bit words).
 </details>
 
@@ -2313,7 +2313,7 @@ C) 20 bytes — up to 60 with options (Data Offset field specifies in 32-bit wor
 - D) Begin data transfer
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The third ACK confirms the client received the server's SYN+ACK, completing bidirectional agreement on sequence numbers.
 </details>
 
@@ -2325,7 +2325,7 @@ B) The third ACK confirms the client received the server's SYN+ACK, completing b
 - D) To synchronize with the server
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) 2×MSL guarantees any segments still in flight will expire before the socket tuple can be reused. Also allows retransmission of the final ACK if lost.
 </details>
 
@@ -2337,7 +2337,7 @@ B) 2×MSL guarantees any segments still in flight will expire before the socket 
 - D) SMTP
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) QUIC runs over UDP and implements reliability, encryption, and multiplexing in the application/transport layer.
 </details>
 
@@ -2349,7 +2349,7 @@ B) QUIC runs over UDP and implements reliability, encryption, and multiplexing i
 - D) Delayed ACK timer
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The persist timer periodically sends 1-byte window probes to solicit an updated rwnd from the receiver.
 </details>
 
@@ -2361,7 +2361,7 @@ B) The persist timer periodically sends 1-byte window probes to solicit an updat
 - D) 13
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) 11 states: CLOSED, LISTEN, SYN_SENT, SYN_RCVD, ESTABLISHED, FIN_WAIT_1, FIN_WAIT_2, CLOSE_WAIT, CLOSING, LAST_ACK, TIME_WAIT.
 </details>
 

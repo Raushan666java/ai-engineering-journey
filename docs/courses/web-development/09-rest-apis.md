@@ -490,7 +490,7 @@ Test your understanding with these quick questions.
 - C) PATCH
 - D) UPDATE
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **C) PATCH applies partial modifications to a resource. PUT replaces the entire resource.**
 
@@ -503,7 +503,7 @@ Test your understanding with these quick questions.
 - C) 202
 - D) 204
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) 201 Created is returned after successfully creating a resource via POST.**
 
@@ -516,7 +516,7 @@ Test your understanding with these quick questions.
 - C) Parse JSON strings into objects
 - D) Generate API documentation
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `.parse()` validates the input against the schema and returns the typed data, or throws a `ZodError` with validation details.**
 
@@ -529,7 +529,7 @@ Test your understanding with these quick questions.
 - C) When using SQL databases
 - D) When building a mobile app
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Cursor-based pagination is stable when items are inserted or deleted between page requests, unlike offset pagination which can skip or duplicate items.**
 
@@ -829,11 +829,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -841,7 +841,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

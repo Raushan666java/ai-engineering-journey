@@ -145,7 +145,7 @@ Production agent loops need four observability signals:
 | Metric | Definition | Warning Sign |
 |--------|------------|--------------|
 | **Cycle time** | Wall-clock duration of one full iteration | Growing cycle time suggests tool degradation |
-| **Convergence rate** | Fraction of error eliminated per cycle | Rate < 0.1 means the loop is stalled |
+| **Convergence rate** | Fraction of error eliminated per cycle | Rate &lt; 0.1 means the loop is stalled |
 | **Error per cycle** | Distance to target after each cycle | Error that increases indicates divergence |
 | **Settling time** | Cycles to reach threshold | Exceeding budget × 3 suggests wrong approach |
 
@@ -605,7 +605,7 @@ for (let g = 0.1; g <= 2.0; g += 0.1) {
 ```
 
 **What the gain sweep reveals:**
-- Gains < 0.3: slow but guaranteed convergence
+- Gains &lt; 0.3: slow but guaranteed convergence
 - Gains 0.3–0.8: fastest convergence; the "sweet spot"
 - Gains 0.9–1.2: fast initial progress, then oscillation (ringing)
 - Gains > 1.2: diverging oscillation or monotonic divergence
@@ -1597,7 +1597,7 @@ Design and implement a `SelfTuningLoop` that:
 - Uses negative feedback with an initial gain of 0.3
 - Measures the error after each cycle (your choice of error metric — test pass rate, lint error count, spec coverage, etc.)
 - **Adapts gain online**: if the error sign changes (oscillation detected), reduce gain by 20%. If error has shrunk for 3 consecutive cycles without a sign change, increase gain by 10%.
-- Emits a trace and stops when error < 5% or maxCycles reached
+- Emits a trace and stops when error &lt; 5% or maxCycles reached
 
 Your submission must include:
 1. A full TypeScript implementation

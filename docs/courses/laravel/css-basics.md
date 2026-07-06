@@ -1578,7 +1578,7 @@ npm run build
 - C) Margin, border, outline
 - D) Width, margin, padding
 
-<details><summary>Answer</summary>B) Content, padding, border, margin</details>
+<details><summary>Answer&lt;/summary&gt;B) Content, padding, border, margin&lt;/details&gt;
 
 **Q2:** When should CSS Grid be preferred over Flexbox?
 - A) One-dimensional layouts
@@ -1586,7 +1586,7 @@ npm run build
 - C) Small UI elements
 - D) Mobile layouts only
 
-<details><summary>Answer</summary>B) Two-dimensional layouts with rows and columns</details>
+<details><summary>Answer&lt;/summary&gt;B) Two-dimensional layouts with rows and columns&lt;/details&gt;
 
 **Q3:** What does CSS specificity determine?
 - A) Which stylesheet loads first
@@ -1594,7 +1594,7 @@ npm run build
 - C) The order of properties
 - D) The file size
 
-<details><summary>Answer</summary>B) Which CSS rule takes precedence</details>
+<details><summary>Answer&lt;/summary&gt;B) Which CSS rule takes precedence&lt;/details&gt;
 
 **Q4:** What is Tailwind CSS's primary approach?
 - A) Component-based styling
@@ -1602,7 +1602,7 @@ npm run build
 - C) CSS-in-JS
 - D) Preprocessor-based
 
-<details><summary>Answer</summary>B) Utility-first atomic classes</details>
+<details><summary>Answer&lt;/summary&gt;B) Utility-first atomic classes&lt;/details&gt;
 
 ---
 
@@ -1657,7 +1657,7 @@ npm run build
 - C) Margin, border, outline
 - D) Width, margin, padding
 
-<details><summary>Answer</summary>B) Content, padding, border, margin</details>
+<details><summary>Answer&lt;/summary&gt;B) Content, padding, border, margin&lt;/details&gt;
 
 **Q2:** When should CSS Grid be preferred over Flexbox?
 - A) One-dimensional layouts
@@ -1665,7 +1665,7 @@ npm run build
 - C) Small UI elements
 - D) Mobile layouts only
 
-<details><summary>Answer</summary>B) Two-dimensional layouts with rows and columns</details>
+<details><summary>Answer&lt;/summary&gt;B) Two-dimensional layouts with rows and columns&lt;/details&gt;
 
 **Q3:** What does CSS specificity determine?
 - A) Which stylesheet loads first
@@ -1673,7 +1673,7 @@ npm run build
 - C) The order of properties
 - D) The file size
 
-<details><summary>Answer</summary>B) Which CSS rule takes precedence</details>
+<details><summary>Answer&lt;/summary&gt;B) Which CSS rule takes precedence&lt;/details&gt;
 
 **Q4:** What is Tailwind CSS's primary approach?
 - A) Component-based styling
@@ -1681,7 +1681,7 @@ npm run build
 - C) CSS-in-JS
 - D) Preprocessor-based
 
-<details><summary>Answer</summary>B) Utility-first atomic classes</details>
+<details><summary>Answer&lt;/summary&gt;B) Utility-first atomic classes&lt;/details&gt;
 
 ---
 
@@ -1736,7 +1736,7 @@ npm run build
 - C) Margin, border, outline
 - D) Width, margin, padding
 
-<details><summary>Answer</summary>B) Content, padding, border, margin</details>
+<details><summary>Answer&lt;/summary&gt;B) Content, padding, border, margin&lt;/details&gt;
 
 **Q2:** When should CSS Grid be preferred over Flexbox?
 - A) One-dimensional layouts
@@ -1744,7 +1744,7 @@ npm run build
 - C) Small UI elements
 - D) Mobile layouts only
 
-<details><summary>Answer</summary>B) Two-dimensional layouts with rows and columns</details>
+<details><summary>Answer&lt;/summary&gt;B) Two-dimensional layouts with rows and columns&lt;/details&gt;
 
 **Q3:** What does CSS specificity determine?
 - A) Which stylesheet loads first
@@ -1752,7 +1752,7 @@ npm run build
 - C) The order of properties
 - D) The file size
 
-<details><summary>Answer</summary>B) Which CSS rule takes precedence</details>
+<details><summary>Answer&lt;/summary&gt;B) Which CSS rule takes precedence&lt;/details&gt;
 
 **Q4:** What is Tailwind CSS's primary approach?
 - A) Component-based styling
@@ -1760,7 +1760,7 @@ npm run build
 - C) CSS-in-JS
 - D) Preprocessor-based
 
-<details><summary>Answer</summary>B) Utility-first atomic classes</details>
+<details><summary>Answer&lt;/summary&gt;B) Utility-first atomic classes&lt;/details&gt;
 
 ---
 
@@ -1815,7 +1815,7 @@ npm run build
 - C) Margin, border, outline
 - D) Width, margin, padding
 
-<details><summary>Answer</summary>B) Content, padding, border, margin</details>
+<details><summary>Answer&lt;/summary&gt;B) Content, padding, border, margin&lt;/details&gt;
 
 **Q2:** When should CSS Grid be preferred over Flexbox?
 - A) One-dimensional layouts
@@ -1823,7 +1823,7 @@ npm run build
 - C) Small UI elements
 - D) Mobile layouts only
 
-<details><summary>Answer</summary>B) Two-dimensional layouts with rows and columns</details>
+<details><summary>Answer&lt;/summary&gt;B) Two-dimensional layouts with rows and columns&lt;/details&gt;
 
 **Q3:** What does CSS specificity determine?
 - A) Which stylesheet loads first
@@ -1831,7 +1831,7 @@ npm run build
 - C) The order of properties
 - D) The file size
 
-<details><summary>Answer</summary>B) Which CSS rule takes precedence</details>
+<details><summary>Answer&lt;/summary&gt;B) Which CSS rule takes precedence&lt;/details&gt;
 
 **Q4:** What is Tailwind CSS's primary approach?
 - A) Component-based styling
@@ -1839,7 +1839,7 @@ npm run build
 - C) CSS-in-JS
 - D) Preprocessor-based
 
-<details><summary>Answer</summary>B) Utility-first atomic classes</details>
+<details><summary>Answer&lt;/summary&gt;B) Utility-first atomic classes&lt;/details&gt;
 
 ## Summary
 

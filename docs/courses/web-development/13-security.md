@@ -567,7 +567,7 @@ Test your understanding with these quick questions.
 - C) WAF (Web Application Firewall)
 - D) Input length validation
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Parameterized queries (prepared statements) separate SQL code from data, making injection impossible. All other approaches can be bypassed.**
 
@@ -580,7 +580,7 @@ Test your understanding with these quick questions.
 - C) It validates user input
 - D) It escapes HTML output
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) CSP allows the server to specify which origins are trusted for loading scripts, styles, images, fonts, and other resources. The browser blocks any resource from untrusted origins.**
 
@@ -593,7 +593,7 @@ Test your understanding with these quick questions.
 - C) To set cookie expiration
 - D) To restrict cookies to HTTPS only
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `SameSite=Strict` prevents the browser from sending the cookie with cross-site requests, which blocks CSRF attacks that trick users into submitting requests from another site.**
 
@@ -606,7 +606,7 @@ Test your understanding with these quick questions.
 - C) Auth endpoints use more CPU
 - D) Users expect slower login
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Login endpoints are targeted by brute-force and credential-stuffing attacks. Stricter rate limits (e.g., 5 attempts per 15 minutes) make these attacks impractical.**
 
@@ -817,11 +817,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -829,7 +829,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

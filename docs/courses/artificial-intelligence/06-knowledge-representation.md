@@ -417,7 +417,7 @@ Where N = number of nodes, E = number of edges, H = hierarchy depth.
 
 ## 6.4 Frames
 
-> **Real-World Analogy:** A frame is like a job application form. The form has empty fields (slots): Name, Age, Education, Experience. Each field has a type (text, number, date) and optionally a default value ("N/A"). When you fill it out, you create an instance. Some fields have validation rules (demons) that trigger when you enter a value — "if Age < 18, flag for parental consent."
+> **Real-World Analogy:** A frame is like a job application form. The form has empty fields (slots): Name, Age, Education, Experience. Each field has a type (text, number, date) and optionally a default value ("N/A"). When you fill it out, you create an instance. Some fields have validation rules (demons) that trigger when you enter a value — "if Age &lt; 18, flag for parental consent."
 
 A **frame** (Minsky, 1975) is a structured representation of a concept or object with named **slots** that hold values, procedures, or default information. Frames support **inheritance** through a hierarchy and **procedural attachment**: demons (when-needed, when-changed procedures) trigger computation upon slot access.
 
@@ -1365,7 +1365,7 @@ This is a semantic network traversal — three edges in the Knowledge Graph, no 
 - C) The difficulty of combining multiple inheritance hierarchies
 - D) The trade-off between expressiveness and tractability
 
-<details><summary>Answer</summary>B) The frame problem requires us to specify what stays the same (frame axioms) when an action occurs.</details>
+<details><summary>Answer&lt;/summary&gt;B) The frame problem requires us to specify what stays the same (frame axioms) when an action occurs.</details>
 
 **Q2:** Which component of a DL knowledge base stores facts about individuals?
 - A) TBox
@@ -1373,7 +1373,7 @@ This is a semantic network traversal — three edges in the Knowledge Graph, no 
 - C) RBox
 - D) RDF
 
-<details><summary>Answer</summary>B) The ABox (assertional box) contains assertions about specific individuals.</details>
+<details><summary>Answer&lt;/summary&gt;B) The ABox (assertional box) contains assertions about specific individuals.</details>
 
 **Q3:** What makes Description Logic attractive for the Semantic Web?
 - A) It is as expressive as FOL
@@ -1381,7 +1381,7 @@ This is a semantic network traversal — three edges in the Knowledge Graph, no 
 - C) It supports procedural attachment
 - D) It eliminates the need for ontologies
 
-<details><summary>Answer</summary>B) DL is decidable (unlike FOL) while being expressive enough for domain modeling, making it suitable for OWL.</details>
+<details><summary>Answer&lt;/summary&gt;B) DL is decidable (unlike FOL) while being expressive enough for domain modeling, making it suitable for OWL.</details>
 
 **Q4:** What is the key difference between a database query and a KR query?
 - A) Databases are faster
@@ -1389,7 +1389,7 @@ This is a semantic network traversal — three edges in the Knowledge Graph, no 
 - C) KR uses SQL; databases use SPARQL
 - D) There is no difference
 
-<details><summary>Answer</summary>B) KR systems perform inference to derive new knowledge from stated facts; databases return exactly what was stored.</details>
+<details><summary>Answer&lt;/summary&gt;B) KR systems perform inference to derive new knowledge from stated facts; databases return exactly what was stored.</details>
 
 **Q5:** Which knowledge representation scheme uses a bipartite structure of concept and relation nodes?
 - A) Semantic networks
@@ -1397,7 +1397,7 @@ This is a semantic network traversal — three edges in the Knowledge Graph, no 
 - C) Conceptual graphs
 - D) Description logic
 
-<details><summary>Answer</summary>C) Conceptual graphs are bipartite graphs alternating between concept nodes (rectangles) and relation nodes (ovals).</details>
+<details><summary>Answer&lt;/summary&gt;C) Conceptual graphs are bipartite graphs alternating between concept nodes (rectangles) and relation nodes (ovals).</details>
 
 ## 6.9 Summary
 

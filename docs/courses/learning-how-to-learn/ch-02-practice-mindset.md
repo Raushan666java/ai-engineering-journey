@@ -1423,7 +1423,7 @@ Run the full Practice-Mindset-Performance Triangle audit from Q20. Score yoursel
 - D) Two hours is insufficient study time for any topic
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Re-reading and highlighting produce a feeling of fluency (the material looks familiar) but do not engage the retrieval processes needed for durable learning. The student confused recognition with recall.
 </details>
@@ -1435,7 +1435,7 @@ Run the full Practice-Mindset-Performance Triangle audit from Q20. Score yoursel
 - D) Knowledge transfer failure — they learned iteration poorly; re-study linked lists from scratch
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — The Einstellung effect (mental set) traps learners in familiar approaches even when better alternatives exist. Deliberately practicing the alternative approach breaks the fixation.
 </details>
@@ -1447,7 +1447,7 @@ Run the full Practice-Mindset-Performance Triangle audit from Q20. Score yoursel
 - D) "I should avoid hard problems until I build more confidence"
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — The growth mindset reframe uses "yet" to open the possibility of improvement and pivots to a specific new strategy, treating failure as learning data rather than an identity verdict.
 </details>

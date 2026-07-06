@@ -937,15 +937,15 @@ console.log(classifier.generateReport(classifier.batchClassify(failures)));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is the optimal shape of the test pyramid?</summary>**A)** Many E2E, some integration, few unit<br>**B)** Many unit, some integration, few E2E<br>**C)** Equal numbers of each<br>**D)** Only E2E tests<br><br>**Answer: B)** Many unit, some integration, few E2E</details>
+<details><summary>Question 1: What is the optimal shape of the test pyramid?</summary>**A)** Many E2E, some integration, few unit<br>**B)** Many unit, some integration, few E2E<br>**C)** Equal numbers of each<br>**D)** Only E2E tests<br><br>**Answer: B)** Many unit, some integration, few E2E&lt;/details&gt;
 
-<details><summary>Question 2: What should happen when a CI build fails?</summary>**A)** The team continues working on new features<br>**B)** Fixing the build is the top priority<br>**C)** The broken commit is automatically reverted<br>**D)** The build is ignored until release day<br><br>**Answer: B)** Fixing the build is the top priority</details>
+<details><summary>Question 2: What should happen when a CI build fails?</summary>**A)** The team continues working on new features<br>**B)** Fixing the build is the top priority<br>**C)** The broken commit is automatically reverted<br>**D)** The build is ignored until release day<br><br>**Answer: B)** Fixing the build is the top priority&lt;/details&gt;
 
-<details><summary>Question 3: How should flaky tests be handled?</summary>**A)** Ignore them<br>**B)** Quarantine them and fix the root cause<br>**C)** Retry them 10 times<br>**D)** Delete them immediately<br><br>**Answer: B)** Quarantine them and fix the root cause</details>
+<details><summary>Question 3: How should flaky tests be handled?</summary>**A)** Ignore them<br>**B)** Quarantine them and fix the root cause<br>**C)** Retry them 10 times<br>**D)** Delete them immediately<br><br>**Answer: B)** Quarantine them and fix the root cause&lt;/details&gt;
 
-<details><summary>Question 4: What is the recommended maximum CI build time?</summary>**A)** 1 minute<br>**B)** 10 minutes<br>**C)** 30 minutes<br>**D)** 60 minutes<br><br>**Answer: B)** 10 minutes</details>
+<details><summary>Question 4: What is the recommended maximum CI build time?</summary>**A)** 1 minute<br>**B)** 10 minutes<br>**C)** 30 minutes<br>**D)** 60 minutes<br><br>**Answer: B)** 10 minutes&lt;/details&gt;
 
-<details><summary>Question 5: What does affected:build do in a monorepo CI?</summary>**A)** Builds all packages<br>**B)** Only builds packages affected by changed code<br>**C)** Builds the entire dependency tree<br>**D)** Skips the build entirely<br><br>**Answer: B)** Only builds packages affected by changed code</details>
+<details><summary>Question 5: What does affected:build do in a monorepo CI?</summary>**A)** Builds all packages<br>**B)** Only builds packages affected by changed code<br>**C)** Builds the entire dependency tree<br>**D)** Skips the build entirely<br><br>**Answer: B)** Only builds packages affected by changed code&lt;/details&gt;
 
 ---
 
@@ -958,11 +958,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -970,7 +970,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

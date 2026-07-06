@@ -1036,8 +1036,8 @@ def safe_completion(user_input: str, system_prompt: str) -> str:
 
 interface TestResult { name: string; passed: boolean; score: number; details: string }
 class AIEvaluator {
-  constructor(private llm: (prompt:string)=>Promise<string>) {}
-  async evaluate(output: string, criteria: string[]): Promise<TestResult[]> {
+  constructor(private llm: (prompt:string)=>Promise&lt;string&gt;) {}
+  async evaluate(output: string, criteria: string[]): Promise&lt;TestResult[]&gt; {
     const results: TestResult[] = []
     for(const c of criteria) {
       const prompt = `Rate the following output on "${c}" from 0-1:\n${output}\nScore:`
@@ -1048,9 +1048,9 @@ class AIEvaluator {
   }
 }
 class TestSuite {
-  private tests: Array<{name:string;fn:()=>Promise<{passed:boolean;details:string}>>} = []
-  add(name: string, fn: ()=>Promise<{passed:boolean;details:string}>): void { this.tests.push({name,fn}) }
-  async run(): Promise<{total:number;passed:number;failed:number;results:string[]}> {
+  private tests: Array&lt;{name:string;fn:()=&gt;Promise&lt;{passed:boolean;details:string}&gt;>} = []
+  add(name: string, fn: ()=>Promise&lt;{passed:boolean;details:string}&gt;): void { this.tests.push({name,fn}) }
+  async run(): Promise&lt;{total:number;passed:number;failed:number;results:string[]}&gt; {
     let passed=0; const results:string[] = []
     for(const t of this.tests) try { const r = await t.fn()
       if(r.passed){passed++;results.push(`PASS ${t.name}`)} else results.push(`FAIL ${t.name}: ${r.details}`)

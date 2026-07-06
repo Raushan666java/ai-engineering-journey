@@ -166,6 +166,26 @@ nav:
       - Memory Hierarchy & Cache: courses/computer-architecture/03-memory-hierarchy.md
       - Pipelining & Hazards: courses/computer-architecture/04-pipelining-hazards.md
       - IO Organization & DMA: courses/computer-architecture/05-io-organization.md
+    - 🎤 Interview Preparation:
+      - Overview: courses/interview-preparation/index.md
+      - Technical Interview Core CS: courses/interview-preparation/01-technical-interview-core-cs.md
+      - Coding Problem Solving: courses/interview-preparation/02-coding-problem-solving.md
+      - System Design Interview: courses/interview-preparation/03-system-design-interview.md
+      - Database & SQL Interview: courses/interview-preparation/04-database-sql-interview.md
+      - Behavioral & HR Interview: courses/interview-preparation/05-behavioral-hr-interview.md
+      - Govt Exam Interview: courses/interview-preparation/06-govt-exam-interview.md
+      - Resume, LinkedIn & Portfolio: courses/interview-preparation/07-resume-linkedin-portfolio.md
+      - Mock Interview Scenarios: courses/interview-preparation/08-mock-interview-scenarios.md
+      - Company-Wise Preparation: courses/interview-preparation/09-company-wise-preparation.md
+      - Aptitude, Logical & Speed: courses/interview-preparation/10-aptitude-logical-reasoning-speed.md
+    - 💼 Job Preparation:
+      - Overview: courses/job-preparation/index.md
+      - Resume & Cover Letter: courses/job-preparation/01-resume-cover-letter.md
+      - Job Search Strategy: courses/job-preparation/02-job-search-strategy.md
+      - Aptitude Test Preparation: courses/job-preparation/03-aptitude-test-preparation.md
+      - Group Discussion & Case Study: courses/job-preparation/04-group-discussion-case-study.md
+      - Offer Negotiation & Career Growth: courses/job-preparation/05-offer-negotiation-career-growth.md
+      - Govt Job Portal & Notification Tracker: courses/job-preparation/06-govt-job-portal-notification-tracker.md
   - "🤖 AI Agent Engineer":
     - Overview: courses/ai-agent-engineer/00-index.md
     - Phase 0 - Backend Hardening: courses/ai-agent-engineer/01-phase0-backend-hardening.md

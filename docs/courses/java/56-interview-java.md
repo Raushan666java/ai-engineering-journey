@@ -23,7 +23,8 @@ flowchart LR
     C --> D[Best Practices]
 ```
 
-### Q1: How does Java implement polymorphism?
+### Q1: How does Java implement polymorphism?
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -2090,7 +2091,7 @@ public class VarDemo {
 }
 ```
 
-var requires initializer on same line. Cannot infer to null, cannot use without assignment. Diamond operator with var: var list = new ArrayList<>() infers ArrayList<Object>. Use var when it improves readability, not for primitive-like types (int, long) where reader needs to see exact type. Good for complex generics, streams, anonymous classes.
+var requires initializer on same line. Cannot infer to null, cannot use without assignment. Diamond operator with var: var list = new ArrayList&lt;>() infers ArrayList<Object&gt;. Use var when it improves readability, not for primitive-like types (int, long) where reader needs to see exact type. Good for complex generics, streams, anonymous classes.
 
 ### Q52: Annotations → retention policies, processing, and runtime access.
 
@@ -2218,7 +2219,7 @@ RetentionPolicy.SOURCE: @Override, @SuppressWarnings → discarded after compile
    - D) equals() is for primitives, == is for objects
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) equals() compares logical equality (overridable), == compares reference equality.**
 </details>
 
@@ -2229,7 +2230,7 @@ RetentionPolicy.SOURCE: @Override, @SuppressWarnings → discarded after compile
    - D) HashSet
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
 </details>
 
@@ -2240,6 +2241,6 @@ RetentionPolicy.SOURCE: @Override, @SuppressWarnings → discarded after compile
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>

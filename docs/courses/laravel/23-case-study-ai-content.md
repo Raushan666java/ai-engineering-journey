@@ -1692,28 +1692,28 @@ class AgentProgressUpdated implements ShouldBroadcast
    - B) Weaviate
    - C) PostgreSQL pgvector
    - D) Milvus
-   <details><summary>Answer</summary>**C)** pgvector stores embeddings alongside relational data in PostgreSQL.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** pgvector stores embeddings alongside relational data in PostgreSQL.</details>
 
 2. What is the purpose of the RAG pipeline?
    - A) Generate images
    - B) Retrieve relevant context and augment LLM prompts
    - C) Cache API responses
    - D) Route user requests
-   <details><summary>Answer</summary>**B)** RAG retrieves relevant content from a vector store and augments the prompt before LLM generation.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** RAG retrieves relevant content from a vector store and augments the prompt before LLM generation.</details>
 
 3. Which Laravel package provides real-time WebSocket capabilities?
    - A) Horizon
    - B) Reverberate
    - C) Reverb
    - D) Echo
-   <details><summary>Answer</summary>**C)** Laravel Reverb provides WebSocket-based real-time updates.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Laravel Reverb provides WebSocket-based real-time updates.</details>
 
 4. How are AI agents designed in this architecture?
    - A) Monolithic single agent
    - B) Specialized agents communicating through events and queues
    - C) External API calls only
    - D) Serverless functions
-   <details><summary>Answer</summary>**B)** Specialized agents for moderation, generation, and search communicate through events and queues.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Specialized agents for moderation, generation, and search communicate through events and queues.</details>
 
 ## Concept Comparison Table
 
@@ -1747,28 +1747,28 @@ class AgentProgressUpdated implements ShouldBroadcast
    - B) Weaviate
    - C) PostgreSQL pgvector
    - D) Milvus
-   <details><summary>Answer</summary>**C)** pgvector stores embeddings alongside relational data in PostgreSQL.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** pgvector stores embeddings alongside relational data in PostgreSQL.</details>
 
 2. What is the purpose of the RAG pipeline?
    - A) Generate images
    - B) Retrieve relevant context and augment LLM prompts
    - C) Cache API responses
    - D) Route user requests
-   <details><summary>Answer</summary>**B)** RAG retrieves relevant content from a vector store and augments the prompt before LLM generation.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** RAG retrieves relevant content from a vector store and augments the prompt before LLM generation.</details>
 
 3. Which Laravel package provides real-time WebSocket capabilities?
    - A) Horizon
    - B) Reverberate
    - C) Reverb
    - D) Echo
-   <details><summary>Answer</summary>**C)** Laravel Reverb provides WebSocket-based real-time updates.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Laravel Reverb provides WebSocket-based real-time updates.</details>
 
 4. How are AI agents designed in this architecture?
    - A) Monolithic single agent
    - B) Specialized agents communicating through events and queues
    - C) External API calls only
    - D) Serverless functions
-   <details><summary>Answer</summary>**B)** Specialized agents for moderation, generation, and search communicate through events and queues.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Specialized agents for moderation, generation, and search communicate through events and queues.</details>
 
 ## Summary
 

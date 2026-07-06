@@ -416,7 +416,7 @@ Explanation: A = "no trailing zeros", B = "last char was 0", C = "last two chars
 
 **Answer: (A)**
 
-Explanation: L = {aâ¿báµ | n > m} âˆª {aâ¿báµ | n < m}. Both parts are regular because we only need to count up to the shorter side. A DFA that "remembers" whether it's seen more as or more bs (with a bounded counter) can accept this.
+Explanation: L = {aâ¿báµ | n > m} âˆª {aâ¿báµ | n &lt; m}. Both parts are regular because we only need to count up to the shorter side. A DFA that "remembers" whether it's seen more as or more bs (with a bounded counter) can accept this.
 
 ---
 
@@ -1746,7 +1746,7 @@ L = {aâ¿bâ¿aâ¿bâ¿} is not context-free (proved by pumping lemma 
 
 ---
 
-**Q24. GATE 2019 (2 Marks)** → Let L = {aâ¿báµ | n < m} âˆª {aâ¿báµ | n > m}. Which is true?
+**Q24. GATE 2019 (2 Marks)** → Let L = {aâ¿báµ | n &lt; m} âˆª {aâ¿báµ | n &gt; m}. Which is true?
 
 (A) L is regular
 (B) L is context-free but not regular
@@ -1756,7 +1756,7 @@ L = {aâ¿bâ¿aâ¿bâ¿} is not context-free (proved by pumping lemma 
 **Answer: (A)**
 
 **Solution:**
-L = all strings of a's followed by b's where the counts are NOT equal. This is {aâ¿báµ | n â‰  m}. This language is regular! A DFA can track three states: (1) n = m so far, (2) n > m so far, (3) n < m. Once in state 2 or 3, the DFA stays there (accepting). This is a bounded difference → the DFA only needs a few states, no counting up to arbitrary n. Compare with {aâ¿bâ¿} which is not regular → that requires exact equality. Inequality is easier because you can stop tracking after a deviation.
+L = all strings of a's followed by b's where the counts are NOT equal. This is {aâ¿báµ | n â‰  m}. This language is regular! A DFA can track three states: (1) n = m so far, (2) n > m so far, (3) n &lt; m. Once in state 2 or 3, the DFA stays there (accepting). This is a bounded difference → the DFA only needs a few states, no counting up to arbitrary n. Compare with {aâ¿bâ¿} which is not regular → that requires exact equality. Inequality is easier because you can stop tracking after a deviation.
 
 ---
 
@@ -2420,7 +2420,7 @@ Regular languages are closed under complement (swap final and non-final states i
 (A) 2â¿  
 (B) k Ã— 2â¿  
 (C) 2â¿ â€“ k  
-(D) 2â¿ if n < k, otherwise 0
+(D) 2â¿ if n &lt; k, otherwise 0
 
 **Answer: (A) 2â¿**
 
@@ -2457,7 +2457,7 @@ S → aS generates strings starting with a followed by any string (recursively).
 **Answer: (A)**
 
 **Solution:**
-L = {aâ¿báµ | n â‰  m} = {aâ¿báµ | n > m} âˆª {aâ¿báµ | n < m}. This is the complement of {aâ¿bâ¿} within a*b*. DCFLs are closed under complement (swap final/non-final states in a complete DPDA). Since {aâ¿bâ¿} is DCFL, its complement within a*b* is also DCFL. Alternatively, construct a DPDA: push a's, pop on b's; at end, accept if stack is non-empty (more a's) or if b's remain after stack empties (more b's). Both conditions are deterministic to check.
+L = {aâ¿báµ | n â‰  m} = {aâ¿báµ | n > m} âˆª {aâ¿báµ | n &lt; m}. This is the complement of {aâ¿bâ¿} within a*b*. DCFLs are closed under complement (swap final/non-final states in a complete DPDA). Since {aâ¿bâ¿} is DCFL, its complement within a*b* is also DCFL. Alternatively, construct a DPDA: push a's, pop on b's; at end, accept if stack is non-empty (more a's) or if b's remain after stack empties (more b's). Both conditions are deterministic to check.
 
 ---
 

@@ -111,7 +111,7 @@ Recruiters don't read responsibilities; they read impact. Every bullet should fo
 | Spelling/grammar errors | Looks careless → instant reject | Read aloud, use Grammarly, get 2 friends to proofread |
 | Including photo, age, gender | Biases hiring decisions, wastes space | Remove completely |
 | "Responsible for" bullets | Passive, boring, vague | Start with action verbs, quantify |
-| CGPA < 7.0 with no explanation | Red flag | Omit or explain (e.g., "major GPA: 8.2") |
+| CGPA &lt; 7.0 with no explanation | Red flag | Omit or explain (e.g., "major GPA: 8.2") |
 | Too many technologies | Looks like keyword stuffing | List 8-12 that you can actually answer questions on |
 | Using templates with columns/tables | ATS cannot parse them | Single-column, standard headers |
 | PDF with password/permissions | ATS cannot read it | Save as standard PDF without restrictions |
@@ -977,7 +977,7 @@ Probability = `120/455 = 24/91`
 
 **Puzzle types:**
 - Floor-and-flat puzzles: Draw a building, number floors, label flats as A/B or 1/2
-- Comparison puzzles: Use >, <, = notations in a chain
+- Comparison puzzles: Use >, &lt;, = notations in a chain
 - Scheduling (days/months): Draw a calendar grid
 
 #### Coding-Decoding
@@ -2615,7 +2615,7 @@ Test your understanding of placement preparation fundamentals.
 **Q1:** What is the most important factor recruiters check during the 6-second resume scan?
 
 <details>
-<summary>Show Answer</summary>
+<summary>Show Answer&lt;/summary&gt;
 
 **Answer:** The top third of the page → which must contain your name, skills, education CGPA, and one strong project. Recruiters decide whether to continue reading in those first 6 seconds based on what they see in this prime real estate.
 
@@ -2624,7 +2624,7 @@ Test your understanding of placement preparation fundamentals.
 **Q2:** Which LinkedIn strategy is most effective for getting referrals at target companies?
 
 <details>
-<summary>Show Answer</summary>
+<summary>Show Answer&lt;/summary&gt;
 
 **Answer:** Build a relationship first → connect with a personalized note, learn about their experience, then ask for the referral after a conversation. Never ask for a referral in the first connection request.
 
@@ -2633,7 +2633,7 @@ Test your understanding of placement preparation fundamentals.
 **Q3:** Why do ATS filters reject 75% of resumes before a human sees them?
 
 <details>
-<summary>Show Answer</summary>
+<summary>Show Answer&lt;/summary&gt;
 
 **Answer:** Because resumes use non-standard formatting (tables, columns, graphics), lack keywords from the job description, or use non-standard section headers. Single-column layouts with standard headings and optimized keywords dramatically improve pass rates.
 
@@ -2642,7 +2642,7 @@ Test your understanding of placement preparation fundamentals.
 **Q4:** What matters more than advanced math in placement aptitude tests?
 
 <details>
-<summary>Show Answer</summary>
+<summary>Show Answer&lt;/summary&gt;
 
 **Answer:** Speed and pattern recognition. Time management → knowing when to skip a problem and which formula to apply → is more critical than solving complex mathematical problems under time pressure.
 

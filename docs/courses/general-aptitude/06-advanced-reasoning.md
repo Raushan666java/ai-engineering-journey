@@ -58,7 +58,7 @@ flowchart LR
 
 2. **Create a framework:** Set up tables or grids based on the puzzle structure.
 
-3. **Use symbols:** Represent relationships with symbols (>, <, =, ?, ?).
+3. **Use symbols:** Represent relationships with symbols (>, &lt;, =, ?, ?).
 
 4. **Direct vs. indirect clues:**
    - Direct: "A sits to the left of B" ? place immediately
@@ -761,7 +761,7 @@ class ArgumentAnalyzer {
     }
 
     // Identify weak points
-    if (premises.length < 2) {
+    if (premises.length &lt; 2) {
       weakPoints.push("Only one premise supporting the conclusion ? argument may be weak.");
     }
     if (premises.some(p => /some|many|several|few/i.test(p))) {
@@ -782,7 +782,7 @@ class ArgumentAnalyzer {
 // -----------------------------------------------------
 
 class InputOutputEngine {
-  static applyRules(input: number[], rules: Array<(arr: number[]) => number[]>): number[] {
+  static applyRules(input: number[], rules: Array&lt;(arr: number[]) =&gt; number[]>): number[] {
     let result = [...input];
     for (const rule of rules) result = rule(result);
     return result;
@@ -790,7 +790,7 @@ class InputOutputEngine {
 
   static swapAdjacent: (arr: number[]) => number[] = (arr) => {
     const r = [...arr];
-    for (let i = 0; i < r.length - 1; i += 2) [r[i], r[i + 1]] = [r[i + 1], r[i]];
+    for (let i = 0; i &lt; r.length - 1; i += 2) [r[i], r[i + 1]] = [r[i + 1], r[i]];
     return r;
   };
 

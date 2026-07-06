@@ -211,7 +211,7 @@ rvalue
 | Function call returning T | prvalue | `get_val()` |
 | Enum constant | prvalue | `Color::Red` |
 | std::move(x) | xvalue | `std::move(obj)` |
-| static_cast<T&&>(x) | xvalue | `static_cast<int&&>(x)` |
+| static_cast&lt;T&&&gt;(x) | xvalue | `static_cast<int&&>(x)` |
 | Member access on xvalue | xvalue | `std::move(obj).member` |
 
 ### 13.1.7 Dry Run: Category Identification
@@ -885,7 +885,7 @@ const int b = 42;
 int& ref = a;
 ```
 
-| Call | T Deduced | Type of x | std::forward<T>(x) returns |
+| Call | T Deduced | Type of x | std::forward&lt;T>(x) returns |
 |------|-----------|----------|--------------------------|
 | `f(a)` | `int&` | `int&` (collapsed from `int& &&`) | `int&` (lvalue) |
 | `f(b)` | `const int&` | `const int&` | `const int&` (const lvalue) |
@@ -1459,7 +1459,7 @@ public:
 
 ### 13.12.1 Detailed Comparison Table
 
-| Aspect | std::move | std::forward<T> |
+| Aspect | std::move | std::forward&lt;T> |
 |--------|-----------|-----------------|
 | **Full name** | `std::move` | `std::forward<T>` |
 | **Type of cast** | Unconditional rvalue cast | Conditional rvalue cast |
@@ -2170,7 +2170,7 @@ private:
 
 ### 13.17.2 std::move vs std::forward Detailed Table
 
-| Aspect | std::move | std::forward<T> |
+| Aspect | std::move | std::forward&lt;T> |
 |--------|-----------|-----------------|
 | Purpose | Enable move on a specific object | Preserve original value category through template |
 | Cast | Unconditional: always returns && | Conditional: only returns && if T is not a reference |
@@ -2463,87 +2463,87 @@ lvalue rvalue lvalue
    B) Casts its argument to an rvalue reference
    C) Creates a deep copy of the object
    D) Destroys the original object
-   <details><summary>Answer</summary>**B)** `std::move` unconditionally casts its argument to an rvalue reference. It does not move anything → the move happens in the move constructor or move assignment operator that receives the rvalue reference.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** `std::move` unconditionally casts its argument to an rvalue reference. It does not move anything → the move happens in the move constructor or move assignment operator that receives the rvalue reference.</details>
 
 2. After a move operation, the source object should be:
    A) In its original state (unchanged)
    B) In a valid but unspecified state
    C) Completely destroyed
    D) In a null state
-   <details><summary>Answer</summary>**B)** The source object is left in a valid but unspecified state → it must be destructible and assignable, but its exact value is unspecified (typically empty/null).</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The source object is left in a valid but unspecified state → it must be destructible and assignable, but its exact value is unspecified (typically empty/null).</details>
 
 3. Why should move constructors be marked noexcept?
    A) It is required by the C++ standard
    B) `std::vector` uses noexcept moves during reallocation; without noexcept, it copies instead
    C) It guarantees faster execution
    D) It prevents compilation errors with rvalue references
-   <details><summary>Answer</summary>**B)** `std::vector` checks `std::is_nothrow_move_constructible` during reallocation. If the move constructor is noexcept, elements are moved (fast). If not, they are copied (slow) to maintain the strong exception guarantee.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** `std::vector` checks `std::is_nothrow_move_constructible` during reallocation. If the move constructor is noexcept, elements are moved (fast). If not, they are copied (slow) to maintain the strong exception guarantee.</details>
 
 4. What is the difference between a forwarding reference `T&&` and an rvalue reference `T&&`?
    A) They are the same thing
    B) `T&&` in a deduced context is a forwarding reference; in a non-deduced context it's an rvalue reference
    C) `T&&` is always an rvalue reference
    D) Forwarding references use `T&&&` syntax
-   <details><summary>Answer</summary>**B)** In a template with deduced `T` (e.g., `template<typename T> void f(T&&)`), `T&&` is a forwarding reference that binds to both lvalues and rvalues. In non-deduced contexts (e.g., `void f(int&&)` or when T is known from the class), it's a plain rvalue reference.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** In a template with deduced `T` (e.g., `template<typename T> void f(T&&)`), `T&&` is a forwarding reference that binds to both lvalues and rvalues. In non-deduced contexts (e.g., `void f(int&&)` or when T is known from the class), it's a plain rvalue reference.</details>
 
 5. The Rule of Five adds which two functions to the Rule of Three?
    A) Default constructor and destructor
    B) Move constructor and move assignment operator
    C) Copy constructor and move constructor
    D) Destructor and copy assignment
-   <details><summary>Answer</summary>**B)** The Rule of Five extends the Rule of Three by adding the move constructor and move assignment operator.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The Rule of Five extends the Rule of Three by adding the move constructor and move assignment operator.</details>
 
 6. What does `std::forward<T>(arg)` return when T is deduced as `int&`?
    A) `int&&`
    B) `int&`
    C) `int`
    D) `const int&`
-   <details><summary>Answer</summary>**B)** When T is `int&`, `std::forward<int&>(arg)` returns `int&` (via reference collapsing: `int& &&` → `int&`). This preserves the original lvalue category.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** When T is `int&`, `std::forward<int&>(arg)` returns `int&` (via reference collapsing: `int& &&` → `int&`). This preserves the original lvalue category.</details>
 
 7. What is an xvalue?
    A) An expression with no identity that cannot be moved
    B) An expression with identity whose resources can be reused
    C) An expression with no identity that can be moved
    D) A named rvalue reference
-   <details><summary>Answer</summary>**B)** An xvalue (expiring value) has identity but its resources can be reused because it is about to expire. Examples: `std::move(x)`, `static_cast<T&&>(x)`.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** An xvalue (expiring value) has identity but its resources can be reused because it is about to expire. Examples: `std::move(x)`, `static_cast<T&&>(x)`.</details>
 
 8. Which of the following is NOT a valid reference collapsing rule?
    A) `T& & → T&`
    B) `T& && → T&`
    C) `T&& & → T&&`
    D) `T&& && → T&&`
-   <details><summary>Answer</summary>**C)** `T&& &` collapses to `T&` (not `T&&`). The rule is: if either reference is `&`, the result is `&`.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** `T&& &` collapses to `T&` (not `T&&`). The rule is: if either reference is `&`, the result is `&`.</details>
 
 9. What happens if you call `std::move` on a const object?
    A) The const is cast away and the object is moved
    B) The move constructor is called but the const object stays unchanged
    C) The copy constructor is called instead of the move constructor
    D) Compilation error
-   <details><summary>Answer</summary>**C)** `std::move` on a const object produces `const T&&`, which cannot bind to a move constructor (which takes `T&&`). It falls back to the copy constructor (`const T&`), resulting in a deep copy.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** `std::move` on a const object produces `const T&&`, which cannot bind to a move constructor (which takes `T&&`). It falls back to the copy constructor (`const T&`), resulting in a deep copy.</details>
 
 10. What is perfect forwarding?
     A) Passing all arguments by reference
     B) Preserving the value category of arguments through template function calls
     C) Forwarding arguments to a function that returns void
     D) Using std::move on all arguments to a function
-    <details><summary>Answer</summary>**B)** Perfect forwarding preserves the value category (lvalue or rvalue) of each argument as it passes through a template function, using forwarding references and `std::forward`.</details>
+    <details><summary>Answer&lt;/summary&gt;**B)** Perfect forwarding preserves the value category (lvalue or rvalue) of each argument as it passes through a template function, using forwarding references and `std::forward`.</details>
 
 ### True or False
 
 11. `std::move` actually moves the object at runtime.
-    <details><summary>Answer</summary>**False.** `std::move` is just a cast to rvalue reference. The move operation happens in the move constructor or move assignment operator.</details>
+    <details><summary>Answer&lt;/summary&gt;**False.** `std::move` is just a cast to rvalue reference. The move operation happens in the move constructor or move assignment operator.</details>
 
 12. A move constructor should always be marked `noexcept`.
-    <details><summary>Answer</summary>**True** (with rare exceptions). Marking move constructors noexcept enables optimizations in `std::vector` and other containers. Only omit noexcept if the move genuinely can throw.</details>
+    <details><summary>Answer&lt;/summary&gt;**True** (with rare exceptions). Marking move constructors noexcept enables optimizations in `std::vector` and other containers. Only omit noexcept if the move genuinely can throw.</details>
 
 13. An rvalue reference `int&&` can bind to any `int` expression.
-    <details><summary>Answer</summary>**False.** An rvalue reference binds only to rvalues (prvalues and xvalues). It cannot bind to lvalues. Use `std::move` to convert an lvalue to an xvalue.</details>
+    <details><summary>Answer&lt;/summary&gt;**False.** An rvalue reference binds only to rvalues (prvalues and xvalues). It cannot bind to lvalues. Use `std::move` to convert an lvalue to an xvalue.</details>
 
 14. After `std::move`, the source object is guaranteed to be empty.
-    <details><summary>Answer</summary>**False.** The source is in a valid-but-unspecified state. It's typically empty (most implementations do this), but the standard only guarantees it's destructible and assignable.</details>
+    <details><summary>Answer&lt;/summary&gt;**False.** The source is in a valid-but-unspecified state. It's typically empty (most implementations do this), but the standard only guarantees it's destructible and assignable.</details>
 
 15. Copy-and-swap assignment handles both copy and move assignment.
-    <details><summary>Answer</summary>**True.** When the parameter is taken by value, an lvalue argument triggers copy construction and an rvalue argument triggers move construction. Either way, swap exchanges resources, and the old state is destroyed.</details>
+    <details><summary>Answer&lt;/summary&gt;**True.** When the parameter is taken by value, an lvalue argument triggers copy construction and an rvalue argument triggers move construction. Either way, swap exchanges resources, and the old state is destroyed.</details>
 
 ---
 

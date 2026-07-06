@@ -136,7 +136,7 @@ interface IAMStatement {
   effect: "Allow" | "Deny";
   action: string[];
   resource: string[];
-  condition?: Record<string, Record<string, string>>;
+  condition?: Record&lt;string, Record<string, string&gt;>;
 }
 
 class IAMPolicyBuilder {
@@ -292,13 +292,13 @@ interface DatabaseCredentials {
 }
 
 class SecretsManagerClient {
-  private secrets: Map<string, string> = new Map();
+  private secrets: Map&lt;string, string&gt; = new Map();
 
-  async getSecret(secretId: string): Promise<string | null> {
+  async getSecret(secretId: string): Promise&lt;string | null&gt; {
     return this.secrets.get(secretId) || null;
   }
 
-  async rotateSecret(secretId: string): Promise<void> {
+  async rotateSecret(secretId: string): Promise&lt;void&gt; {
     const current = this.secrets.get(secretId);
     if (current) {
       const parsed = JSON.parse(current) as DatabaseCredentials;
@@ -308,7 +308,7 @@ class SecretsManagerClient {
     }
   }
 
-  async getDatabaseCredentials(secretId: string): Promise<DatabaseCredentials | null> {
+  async getDatabaseCredentials(secretId: string): Promise&lt;DatabaseCredentials | null&gt; {
     const secret = await this.getSecret(secretId);
     return secret ? (JSON.parse(secret) as DatabaseCredentials) : null;
   }
@@ -316,14 +316,14 @@ class SecretsManagerClient {
   private generatePassword(length: number): string {
     const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#\$%^&*";
     let password = "";
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i &lt; length; i++) {
       password += chars.charAt(Math.floor(Math.random() * chars.length));
     }
     return password;
   }
 }
 
-async function connectToDatabase(): Promise<void> {
+async function connectToDatabase(): Promise&lt;void&gt; {
   const secretsManager = new SecretsManagerClient();
 
   await secretsManager.getDatabaseCredentials("prod/db/credentials");
@@ -438,7 +438,7 @@ for (const finding of findings) {
    - D) Third-party auditors are responsible
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Security is shared: provider secures infrastructure, customer secures data and configurations.** AWS is responsible for the security of the cloud (physical, hardware, hypervisor); customers are responsible for security in the cloud (data, IAM, OS, network config).
 </details>
 
@@ -449,7 +449,7 @@ for (const finding of findings) {
    - D) Security Group rule
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) IAM Role attached to the EC2 instance profile.** Roles provide temporary credentials that auto-rotate. Access keys would be long-term credentials embedded in the instance, which is a security risk.
 </details>
 
@@ -460,7 +460,7 @@ for (const finding of findings) {
    - D) Detecting compromised credentials
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Creating and managing encryption keys.** KMS (Key Management Service) creates, rotates, and manages encryption keys for use with 50+ AWS services. It uses envelope encryption where KMS keys encrypt data keys that encrypt your data.
 </details>
 
@@ -471,7 +471,7 @@ for (const finding of findings) {
    - D) Inspector
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) GuardDuty.** GuardDuty uses machine learning and integrated threat intelligence to analyze CloudTrail events, VPC Flow Logs, and DNS logs for suspicious activity like compromised credentials, crypto-mining, and port scanning.
 </details>
 
@@ -482,7 +482,7 @@ for (const finding of findings) {
    - D) Access keys can only be used by human users
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Access keys are long-lived credentials that can be stolen and used indefinitely.** IAM roles provide temporary security credentials that auto-rotate. If an EC2 instance with an access key is compromised, the attacker can use it until it is manually revoked.
 </details>
 

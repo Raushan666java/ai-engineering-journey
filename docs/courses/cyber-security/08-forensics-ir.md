@@ -559,9 +559,9 @@ The Order of Volatility (OOV) dictates the sequence in which digital evidence mu
 - **Data Region** → file content stored in clusters
 
 **FAT Variants:**
-- FAT12 → floppy disks, < 32 MB
+- FAT12 → floppy disks, &lt; 32 MB
 - FAT16 → < 2 GB (4 GB with 64 KB clusters)
-- FAT32 → < 2 TB (standard), < 16 TB (with 4 KB sectors)
+- FAT32 → < 2 TB (standard), &lt; 16 TB (with 4 KB sectors)
 - exFAT → < 128 PB, designed for flash storage
 
 #### ext4 (Fourth Extended File System)
@@ -3841,9 +3841,9 @@ Lessons Learned (industry-transforming):
 ### Q7: What is the difference between MTTD, MTTR, and MTTC?
 
 **Answer:** These are SOC performance metrics: 
-- **MTTD (Mean Time to Detect)** → average time from the start of the incident to when it is detected. Target: <1 hour for critical incidents. Formula: Sum of detection times / number of incidents.
-- **MTTR (Mean Time to Respond)** → average time from detection to the start of response actions. Target: <15 minutes for critical incidents.
-- **MTTC (Mean Time to Contain)** → average time from detection to successful containment (stopping the incident from spreading). Target: <1 hour for active threats. These metrics are tracked to measure SOC effectiveness → improving all three reduces overall incident impact.
+- **MTTD (Mean Time to Detect)** → average time from the start of the incident to when it is detected. Target: &lt;1 hour for critical incidents. Formula: Sum of detection times / number of incidents.
+- **MTTR (Mean Time to Respond)** → average time from detection to the start of response actions. Target: &lt;15 minutes for critical incidents.
+- **MTTC (Mean Time to Contain)** → average time from detection to successful containment (stopping the incident from spreading). Target: &lt;1 hour for active threats. These metrics are tracked to measure SOC effectiveness → improving all three reduces overall incident impact.
 
 ### Q8: How would you investigate a potential data exfiltration incident?
 
@@ -3863,7 +3863,7 @@ Lessons Learned (industry-transforming):
 
 ### Q12: What is the significance of the MFT in NTFS forensics?
 
-**Answer:** The Master File Table ($MFT) is the heart of NTFS → it contains an entry for every file and folder on the volume. Each 1024-byte entry contains metadata including: timestamps (created, modified, accessed, MFT modified), file permissions, security descriptors, file size, and data location. From a forensic perspective, the MFT reveals: (1) file creation order (entries are allocated sequentially → lower numbers = earlier created), (2) deleted files (entries marked with flags 0x00, data may still exist in clusters until overwritten), (3) timestomping detection ($STANDARD_INFORMATION vs $FILE_NAME timestamps differ when an attacker only modifies one), (4) resident data (small files <~700 bytes are stored entirely within the MFT entry), (5) previously deleted entries (MFT slack space contains fragments of prior entries). Tools like MFTECmd and analyzeMFT parse the MFT into CSV for timeline analysis.
+**Answer:** The Master File Table ($MFT) is the heart of NTFS → it contains an entry for every file and folder on the volume. Each 1024-byte entry contains metadata including: timestamps (created, modified, accessed, MFT modified), file permissions, security descriptors, file size, and data location. From a forensic perspective, the MFT reveals: (1) file creation order (entries are allocated sequentially → lower numbers = earlier created), (2) deleted files (entries marked with flags 0x00, data may still exist in clusters until overwritten), (3) timestomping detection ($STANDARD_INFORMATION vs $FILE_NAME timestamps differ when an attacker only modifies one), (4) resident data (small files &lt;~700 bytes are stored entirely within the MFT entry), (5) previously deleted entries (MFT slack space contains fragments of prior entries). Tools like MFTECmd and analyzeMFT parse the MFT into CSV for timeline analysis.
 
 ---
 

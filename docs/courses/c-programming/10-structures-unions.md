@@ -2144,7 +2144,7 @@ void serialize_record(const Record *r, unsigned char *buf)
    C) Alphabetically
    D) Random order
 
-<details><summary>Answer</summary>**A)** Members are laid out in declaration order; padding is added for alignment.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** Members are laid out in declaration order; padding is added for alignment.</details>
 
 2. What is the size of `union { char c; int i; double d; }` on a typical 64-bit system?
    A) 1 byte
@@ -2152,7 +2152,7 @@ void serialize_record(const Record *r, unsigned char *buf)
    C) 8 bytes
    D) 13 bytes
 
-<details><summary>Answer</summary>**C)** 8 bytes — the size of the largest member (`double`).</details>
+<details><summary>Answer&lt;/summary&gt;**C)** 8 bytes — the size of the largest member (`double`).</details>
 
 3. Which operator is shorthand for `(*ptr).member`?
    A) `ptr->member`
@@ -2160,7 +2160,7 @@ void serialize_record(const Record *r, unsigned char *buf)
    C) `ptr::member`
    D) `ptr#>member`
 
-<details><summary>Answer</summary>**A)** `ptr->member` is equivalent to `(*ptr).member`.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** `ptr->member` is equivalent to `(*ptr).member`.</details>
 
 4. What is `sizeof(struct { char a; int b; })` on a typical 64-bit system?
    A) 5
@@ -2168,7 +2168,7 @@ void serialize_record(const Record *r, unsigned char *buf)
    C) 8
    D) 12
 
-<details><summary>Answer</summary>**C)** 8 bytes. `char` at 0, 3 bytes padding, `int` at 4, total = 8.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** 8 bytes. `char` at 0, 3 bytes padding, `int` at 4, total = 8.</details>
 
 5. What happens when you read a union member that was not the last one written?
    A) Compiler error
@@ -2176,7 +2176,7 @@ void serialize_record(const Record *r, unsigned char *buf)
    C) Undefined or implementation-defined behavior (garbage values)
    D) Zero is returned
 
-<details><summary>Answer</summary>**C)** The bytes are reinterpreted, typically producing garbage values. In C, it's implementation-defined via union; via pointer cast it's undefined behavior (strict aliasing violation).</details>
+<details><summary>Answer&lt;/summary&gt;**C)** The bytes are reinterpreted, typically producing garbage values. In C, it's implementation-defined via union; via pointer cast it's undefined behavior (strict aliasing violation).</details>
 
 6. Which of the following correctly packs the smallest struct size?
    A) `struct { char c; int i; short s; }`
@@ -2184,7 +2184,7 @@ void serialize_record(const Record *r, unsigned char *buf)
    C) `struct { char c; short s; int i; }`
    D) `struct { short s; int i; char c; }`
 
-<details><summary>Answer</summary>**B)** `int(4) + short(2) + char(1) + 1 padding = 8 bytes`. The others require more padding.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `int(4) + short(2) + char(1) + 1 padding = 8 bytes`. The others require more padding.</details>
 
 7. Can you take the address of a bit field member?
    A) Yes, with the `&` operator
@@ -2192,7 +2192,7 @@ void serialize_record(const Record *r, unsigned char *buf)
    C) Yes, but only with `volatile`
    D) Only in C++, not in C
 
-<details><summary>Answer</summary>**B)** Bit fields may span partial bytes and thus have no address. You must access them through the containing struct.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Bit fields may span partial bytes and thus have no address. You must access them through the containing struct.</details>
 
 8. What is a flexible array member?
    A) An array declared with `malloc` inside a struct
@@ -2200,7 +2200,7 @@ void serialize_record(const Record *r, unsigned char *buf)
    C) An array that can change size at runtime
    D) A variable-length array (VLA) inside a struct
 
-<details><summary>Answer</summary>**B)** A flexible array member (C99) is declared as `type name[];` as the last member. Its size is determined at allocation time.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** A flexible array member (C99) is declared as `type name[];` as the last member. Its size is determined at allocation time.</details>
 
 ## Summary
 

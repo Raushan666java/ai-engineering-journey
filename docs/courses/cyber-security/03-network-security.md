@@ -468,7 +468,7 @@ Anomaly Alert:
 | protocol | tcp, udp, icmp, ip | Layer 4 protocol |
 | src_ip | any, IP, CIDR, ! negation | Source address |
 | src_port | any, number, range (1:1024) | Source port |
-| direction | -> (one-way), <> (bidirectional) | Traffic direction |
+| direction | -> (one-way), &lt;> (bidirectional) | Traffic direction |
 | dst_ip | any, IP, CIDR | Destination address |
 | dst_port | any, number, range | Destination port |
 
@@ -3322,7 +3322,7 @@ Actions: alert (log alert), log (log packet), pass (ignore), drop (IPS: block + 
 
 Options (partial list):
 - `msg:` → Alert message
-- `sid:` → Unique rule ID (Snort: <1M reserved, 1M+ custom; Suricata: 2M+ custom)
+- `sid:` → Unique rule ID (Snort: &lt;1M reserved, 1M+ custom; Suricata: 2M+ custom)
 - `rev:` → Revision number
 - `classtype:` → Attack category (trojan-activity, attempted-admin, web-application-attack)
 - `reference:` → External reference (cve, url, arachnids)

@@ -478,7 +478,7 @@ The subset construction demonstrates that NFAs are a **convenience abstraction**
 - D) A string
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** NFA d returns a set of possible next states — this is the key difference from DFA.
 </details>
 
@@ -489,7 +489,7 @@ The subset construction demonstrates that NFAs are a **convenience abstraction**
 - D) No path rejects
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** NFA acceptance requires at least one computation path to an accepting state.
 </details>
 
@@ -500,7 +500,7 @@ The subset construction demonstrates that NFAs are a **convenience abstraction**
 - D) Only q itself
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** e-closure(q) = { r | q ?* r using only e-transitions }.
 </details>
 
@@ -511,7 +511,7 @@ The subset construction demonstrates that NFAs are a **convenience abstraction**
 - D) |Q_NFA| log |Q_NFA|
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** Each DFA state = subset of NFA states, so up to 2^k states.
 </details>
 
@@ -522,7 +522,7 @@ The subset construction demonstrates that NFAs are a **convenience abstraction**
 - D) Only if e-transitions are used
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** NFA and DFA recognize exactly the same class: regular languages.
 </details>
 
@@ -662,9 +662,9 @@ class EpsilonClosureCalculator {
   // Compute e-closure for a single state
   static compute(
     state: string,
-    epsilonTransitions: Map<string, Set<string>>
-  ): Set<string> {
-    const closure = new Set<string>([state]);
+    epsilonTransitions: Map&lt;string, Set<string&gt;>
+  ): Set&lt;string&gt; {
+    const closure = new Set&lt;string&gt;([state]);
     const stack = [state];
     while (stack.length > 0) {
       const current = stack.pop()!;
@@ -683,10 +683,10 @@ class EpsilonClosureCalculator {
 
   // Compute e-closure for a set of states
   static computeSet(
-    states: Set<string>,
-    epsilonTransitions: Map<string, Set<string>>
-  ): Set<string> {
-    const result = new Set<string>();
+    states: Set&lt;string&gt;,
+    epsilonTransitions: Map&lt;string, Set<string&gt;>
+  ): Set&lt;string&gt; {
+    const result = new Set&lt;string&gt;();
     for (const s of states) {
       const c = EpsilonClosureCalculator.compute(s, epsilonTransitions);
       for (const cs of c) result.add(cs);
@@ -703,21 +703,21 @@ class EpsilonClosureCalculator {
 
 class SubsetConstructionConverter {
   static convert(
-    nfaStates: Set<string>,
-    alphabet: Set<string>,
-    nfaTransitions: Map<string, Set<string>>,
-    epsilonTransitions: Map<string, Set<string>>,
+    nfaStates: Set&lt;string&gt;,
+    alphabet: Set&lt;string&gt;,
+    nfaTransitions: Map&lt;string, Set<string&gt;>,
+    epsilonTransitions: Map&lt;string, Set<string&gt;>,
     nfaStart: string,
-    nfaAccept: Set<string>
+    nfaAccept: Set&lt;string&gt;
   ): {
-    dfaStates: Set<string>;
-    dfaTransitions: Map<string, string>;
+    dfaStates: Set&lt;string&gt;;
+    dfaTransitions: Map&lt;string, string&gt;;
     dfaStart: string;
-    dfaAccept: Set<string>;
+    dfaAccept: Set&lt;string&gt;;
   } {
-    const dfaStates = new Set<string>();
-    const dfaTransitions = new Map<string, string>();
-    const dfaAccept = new Set<string>();
+    const dfaStates = new Set&lt;string&gt;();
+    const dfaTransitions = new Map&lt;string, string&gt;();
+    const dfaAccept = new Set&lt;string&gt;();
 
     // Initial DFA state = e-closure of NFA start state
     const startClosure = EpsilonClosureCalculator.compute(nfaStart, epsilonTransitions);
@@ -729,7 +729,7 @@ class SubsetConstructionConverter {
     }
 
     const queue = [startLabel];
-    const processed = new Set<string>([startLabel]);
+    const processed = new Set&lt;string&gt;([startLabel]);
 
     while (queue.length > 0) {
       const currentLabel = queue.shift()!;
@@ -737,7 +737,7 @@ class SubsetConstructionConverter {
 
       for (const sym of alphabet) {
         // Find all states reachable on symbol
-        const moveResult = new Set<string>();
+        const moveResult = new Set&lt;string&gt;();
         for (const s of currentSet) {
           const trans = nfaTransitions.get(`${s},${sym}`);
           if (trans) {
@@ -771,12 +771,12 @@ class SubsetConstructionConverter {
 // Demo: convert the running NFA example to DFA
 const nfaStates = new Set(["q0", "q1", "q2"]);
 const nfaAlphabet = new Set(["0", "1"]);
-const nfaTransitions = new Map<string, Set<string>>([
+const nfaTransitions = new Map&lt;string, Set<string&gt;>([
   ["q0,0", new Set(["q0", "q1"])], ["q0,1", new Set(["q0"])],
   ["q1,0", new Set()], ["q1,1", new Set(["q2"])],
   ["q2,0", new Set()], ["q2,1", new Set()],
 ]);
-const nfaEpsilon = new Map<string, Set<string>>();
+const nfaEpsilon = new Map&lt;string, Set<string&gt;>();
 
 const result = SubsetConstructionConverter.convert(
   nfaStates, nfaAlphabet, nfaTransitions, nfaEpsilon, "q0", new Set(["q2"])

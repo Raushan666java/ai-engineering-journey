@@ -2264,7 +2264,7 @@ THEN diagnosis = meningitis
 - C) Forward chaining uses rules; backward chaining uses frames
 - D) There is no difference
 
-<details><summary>Answer</summary>B) Forward chaining is data-driven (facts → conclusions), while backward chaining is goal-driven (hypothesis → supporting evidence).</details>
+<details><summary>Answer&lt;/summary&gt;B) Forward chaining is data-driven (facts → conclusions), while backward chaining is goal-driven (hypothesis → supporting evidence).</details>
 
 **Q2:** MYCIN's certainty factors handle uncertainty by:
 - A) Using probability theory
@@ -2272,7 +2272,7 @@ THEN diagnosis = meningitis
 - C) Applying fuzzy logic
 - D) Using Bayesian networks
 
-<details><summary>Answer</summary>B) MYCIN CF = MB − MD, ranging from -1 (definitely false) to +1 (definitely true). AND takes min CF; OR takes max CF; sequential combination uses CF₁ + CF₂ − CF₁·CF₂.</details>
+<details><summary>Answer&lt;/summary&gt;B) MYCIN CF = MB − MD, ranging from -1 (definitely false) to +1 (definitely true). AND takes min CF; OR takes max CF; sequential combination uses CF₁ + CF₂ − CF₁·CF₂.</details>
 
 **Q3:** The knowledge acquisition bottleneck refers to:
 - A) Computers are too slow for knowledge processing
@@ -2280,7 +2280,7 @@ THEN diagnosis = meningitis
 - C) Knowledge bases have limited capacity
 - D) Rules cannot represent complex knowledge
 
-<details><summary>Answer</summary>B) The knowledge acquisition bottleneck is the difficulty of extracting, formalizing, and maintaining expert knowledge. It takes ~400 hours of expert time per 100 rules.</details>
+<details><summary>Answer&lt;/summary&gt;B) The knowledge acquisition bottleneck is the difficulty of extracting, formalizing, and maintaining expert knowledge. It takes ~400 hours of expert time per 100 rules.</details>
 
 **Q4:** Which inference strategy does MYCIN primarily use?
 - A) Forward chaining
@@ -2288,7 +2288,7 @@ THEN diagnosis = meningitis
 - C) Generate-and-test
 - D) Random search
 
-<details><summary>Answer</summary>B) MYCIN uses backward chaining. It starts with the goal "identify organism" and works backward through rules, asking the physician for relevant patient data as needed.</details>
+<details><summary>Answer&lt;/summary&gt;B) MYCIN uses backward chaining. It starts with the goal "identify organism" and works backward through rules, asking the physician for relevant patient data as needed.</details>
 
 **Q5:** What distinguishes Dempster-Shafer theory from Bayesian probability?
 - A) DS is simpler
@@ -2296,7 +2296,7 @@ THEN diagnosis = meningitis
 - C) DS is always faster
 - D) DS does not use probabilities
 
-<details><summary>Answer</summary>B) Dempster-Shafer separates belief from plausibility, with the gap representing ignorance. Bayesian probability must allocate all probability mass, with no "unknown" category.</details>
+<details><summary>Answer&lt;/summary&gt;B) Dempster-Shafer separates belief from plausibility, with the gap representing ignorance. Bayesian probability must allocate all probability mass, with no "unknown" category.</details>
 
 **Q6:** Which conflict resolution strategy prevents a rule from firing twice on the same facts?
 - A) Recency
@@ -2304,7 +2304,7 @@ THEN diagnosis = meningitis
 - C) Refraction
 - D) Salience
 
-<details><summary>Answer</summary>C) Refraction prevents a rule from firing twice with the same matching facts, which prevents infinite loops.</details>
+<details><summary>Answer&lt;/summary&gt;C) Refraction prevents a rule from firing twice with the same matching facts, which prevents infinite loops.</details>
 
 **Q7:** In the Rete algorithm, what stores partial matches between conditions?
 - A) Alpha memory
@@ -2312,7 +2312,7 @@ THEN diagnosis = meningitis
 - C) Gamma memory
 - D) Delta memory
 
-<details><summary>Answer</summary>B) Beta memories in the Rete network store partial matches between conditions (joins of alpha nodes), allowing efficient incremental update when facts change.</details>
+<details><summary>Answer&lt;/summary&gt;B) Beta memories in the Rete network store partial matches between conditions (joins of alpha nodes), allowing efficient incremental update when facts change.</details>
 
 **Q8:** What was the significance of XCON/R1?
 - A) First medical expert system
@@ -2320,7 +2320,7 @@ THEN diagnosis = meningitis
 - C) First system to use neural networks
 - D) First system for chemical analysis
 
-<details><summary>Answer</summary>B) XCON (R1) was DEC's expert system for configuring VAX computers. With ~10,000 rules, it reduced configuration errors from 35% to 2% and saved $40M annually.</details>
+<details><summary>Answer&lt;/summary&gt;B) XCON (R1) was DEC's expert system for configuring VAX computers. With ~10,000 rules, it reduced configuration errors from 35% to 2% and saved $40M annually.</details>
 
 **Q9:** Which of the following is NOT a knowledge acquisition method?
 - A) Protocol analysis
@@ -2328,7 +2328,7 @@ THEN diagnosis = meningitis
 - C) Backpropagation
 - D) Machine induction
 
-<details><summary>Answer</summary>C) Backpropagation is a neural network training algorithm, not a knowledge acquisition method. Protocol analysis, repertory grids, and machine induction are all used for expert system knowledge acquisition.</details>
+<details><summary>Answer&lt;/summary&gt;C) Backpropagation is a neural network training algorithm, not a knowledge acquisition method. Protocol analysis, repertory grids, and machine induction are all used for expert system knowledge acquisition.</details>
 
 **Q10:** What happens when two rules in an expert system have conflicting conclusions?
 - A) The system crashes
@@ -2336,7 +2336,7 @@ THEN diagnosis = meningitis
 - C) Both conclusions are discarded
 - D) The user is prompted to decide
 
-<details><summary>Answer</summary>B) Conflict resolution strategies (priority, specificity, recency, CF ordering) select one rule to fire. The other conclusion is not derived unless alternative rule paths exist.</details>
+<details><summary>Answer&lt;/summary&gt;B) Conflict resolution strategies (priority, specificity, recency, CF ordering) select one rule to fire. The other conclusion is not derived unless alternative rule paths exist.</details>
 
 ## 21. Exercises
 

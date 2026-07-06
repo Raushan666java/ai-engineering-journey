@@ -399,9 +399,9 @@ Process P1:        Process P2:
 ```
 
 **Comparison rules:**
-- V(a) <= V(b) if for all i, V(a)[i] <= V(b)[i]
-- V(a) < V(b) if V(a) <= V(b) and V(a) != V(b) (causal order)
-- V(a) || V(b) if neither <= the other (concurrent)
+- V(a) &lt;= V(b) if for all i, V(a)[i] <= V(b)[i]
+- V(a) &lt; V(b) if V(a) <= V(b) and V(a) != V(b) (causal order)
+- V(a) || V(b) if neither &lt;= the other (concurrent)
 
 **Use in Dynamo-style databases:** Vector clocks track version branches. When a read returns multiple conflicting versions (from different causally concurrent writes), the application must resolve them.
 
@@ -640,7 +640,7 @@ graph TD
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 **Q2:** Which concept is most critical for distributed systems?
 - A) Option A
@@ -648,7 +648,7 @@ graph TD
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 **Q3:** How does this topic apply to FAANG-level system design?
 - A) Option A
@@ -656,7 +656,7 @@ graph TD
 - C) Option C
 - D) Option D
 
-<details><summary>Answer</summary>Refer to the chapter content</details>
+<details><summary>Answer&lt;/summary&gt;Refer to the chapter content&lt;/details&gt;
 
 ---
 
@@ -799,11 +799,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -811,7 +811,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -837,7 +837,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -855,23 +855,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'system-design demo')
   const log = new Logger()
@@ -932,8 +932,8 @@ Design a shopping cart system that operates across 3 datacenters (US-East, EU-We
 - Items should never be lost (two concurrent adds of the same product must combine quantities)
 - A concurrent add and remove should result in the item being added (add wins)
 - A concurrent clear and add should result in a cart containing only the added item (add wins)
-- Each datacenter serves reads with p99 latency < 50ms
-- Cross-datacenter replication uses gossip with converge in < 60 seconds
+- Each datacenter serves reads with p99 latency &lt; 50ms
+- Cross-datacenter replication uses gossip with converge in &lt; 60 seconds
 
 **Deliverables:**
 

@@ -130,7 +130,7 @@ interface LifecycleRule {
 function generateLifecyclePolicy(
   dataCategory: "logs" | "media" | "backups" | "compliance"
 ): LifecycleRule[] {
-  const policies: Record<string, LifecycleRule[]> = {
+  const policies: Record&lt;string, LifecycleRule[]&gt; = {
     logs: [
       {
         id: "logs-lifecycle",
@@ -332,11 +332,11 @@ sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,ret
 
 \\\	ypescript
 interface StorageProvider {
-  upload(bucket: string, key: string, data: Buffer, storageClass?: string): Promise<string>;
-  download(bucket: string, key: string): Promise<Buffer>;
-  delete(bucket: string, key: string): Promise<void>;
-  list(bucket: string, prefix: string): Promise<string[]>;
-  copy(sourceBucket: string, sourceKey: string, destBucket: string, destKey: string): Promise<void>;
+  upload(bucket: string, key: string, data: Buffer, storageClass?: string): Promise&lt;string&gt;;
+  download(bucket: string, key: string): Promise&lt;Buffer&gt;;
+  delete(bucket: string, key: string): Promise&lt;void&gt;;
+  list(bucket: string, prefix: string): Promise&lt;string[]&gt;;
+  copy(sourceBucket: string, sourceKey: string, destBucket: string, destKey: string): Promise&lt;void&gt;;
 }
 
 class S3StorageProvider implements StorageProvider {
@@ -346,26 +346,26 @@ class S3StorageProvider implements StorageProvider {
     this.endpoint = endpoint;
   }
 
-  async upload(bucket: string, key: string, data: Buffer, storageClass = "STANDARD"): Promise<string> {
+  async upload(bucket: string, key: string, data: Buffer, storageClass = "STANDARD"): Promise&lt;string&gt; {
     console.log("Uploading", key, "to", bucket, "class:", storageClass);
     console.log("  Size:", (data.length / 1024 / 1024).toFixed(2), "MB");
     return "https://" + bucket + ".s3.amazonaws.com/" + key;
   }
 
-  async download(bucket: string, key: string): Promise<Buffer> {
+  async download(bucket: string, key: string): Promise&lt;Buffer&gt; {
     console.log("Downloading", key, "from", bucket);
     return Buffer.from("simulated data");
   }
 
-  async delete(bucket: string, key: string): Promise<void> {
+  async delete(bucket: string, key: string): Promise&lt;void&gt; {
     console.log("Deleted", key, "from", bucket);
   }
 
-  async list(bucket: string, prefix: string): Promise<string[]> {
+  async list(bucket: string, prefix: string): Promise&lt;string[]&gt; {
     return ["file1.txt", "file2.txt", "file3.txt"];
   }
 
-  async copy(sourceBucket: string, sourceKey: string, destBucket: string, destKey: string): Promise<void> {
+  async copy(sourceBucket: string, sourceKey: string, destBucket: string, destKey: string): Promise&lt;void&gt; {
     console.log("Copied", sourceBucket + "/" + sourceKey, "to", destBucket + "/" + destKey);
   }
 }
@@ -381,7 +381,7 @@ class StorageManager {
     databaseName: string,
     backupData: Buffer,
     retentionDays: number
-  ): Promise<string> {
+  ): Promise&lt;string&gt; {
     const bucket = "company-db-backups";
     const key = "databases/" + databaseName + "/" + Date.now() + ".bak";
 
@@ -396,13 +396,13 @@ class StorageManager {
     bucket: string,
     key: string,
     destinationRegion: string
-  ): Promise<void> {
+  ): Promise&lt;void&gt; {
     const destBucket = bucket + "-" + destinationRegion;
     await this.provider.copy(bucket, key, destBucket, key);
     console.log("Replicated", key, "to", destinationRegion);
   }
 
-  async generateStorageReport(): Promise<void> {
+  async generateStorageReport(): Promise&lt;void&gt; {
     const buckets = ["company-data", "company-logs", "company-backups"];
     for (const bucket of buckets) {
       const objects = await this.provider.list(bucket, "");
@@ -414,7 +414,7 @@ class StorageManager {
 const provider = new S3StorageProvider("https://s3.us-east-1.amazonaws.com");
 const manager = new StorageManager(provider);
 
-async function runDemo(): Promise<void> {
+async function runDemo(): Promise&lt;void&gt; {
   const backupLocation = await manager.backupDatabase(
     "production-db",
     Buffer.alloc(1024 * 1024 * 100),
@@ -476,7 +476,7 @@ runDemo();
    - D) 100%
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) 99.999999999% (11 nines).** Object storage achieves this by automatically replicating data across multiple physical devices and availability zones. For 10 million objects, this means statistically one object might be lost every 10 million years.
 </details>
 
@@ -487,7 +487,7 @@ runDemo();
    - D) When you need a boot volume for VMs
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) When multiple VMs need concurrent read/write access to the same data.** Block storage can only be attached to one VM at a time. File storage provides shared access via NFS or SMB, making it ideal for shared configuration, home directories, and clustered applications.
 </details>
 
@@ -498,7 +498,7 @@ runDemo();
    - D) Data is migrated to a new host
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Data is permanently lost.** Instance store volumes are physically attached to the host server. When the instance stops, the data on instance store volumes is lost. This is why critical data must always use persistent storage like EBS.
 </details>
 
@@ -509,7 +509,7 @@ runDemo();
    - D) To reduce latency for local users
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) To provide disaster recovery and geographic compliance.** Cross-Region Replication copies objects to a bucket in a different AWS region, protecting against region-wide outages and meeting data residency requirements.
 </details>
 
@@ -520,7 +520,7 @@ runDemo();
    - D) Edge function
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) TTL (Time to Live).** TTL is set via Cache-Control headers and controls how long the edge location stores content before re-fetching from the origin server.
 </details>
 

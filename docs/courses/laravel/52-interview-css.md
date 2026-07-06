@@ -1383,7 +1383,7 @@ document.getElementById('load-chart')?.addEventListener('click', async () => {
 - C) ID > Inline > Class > Element
 - D) Class > ID > Element > Inline
 
-<details><summary>Answer</summary>B) Inline > ID > Class > Element</details>
+<details><summary>Answer&lt;/summary&gt;B) Inline > ID > Class > Element&lt;/details&gt;
 
 **Q2:** What is the difference between content-box and border-box?
 - A) No difference
@@ -1391,7 +1391,7 @@ document.getElementById('load-chart')?.addEventListener('click', async () => {
 - C) content-box is always smaller
 - D) border-box excludes padding
 
-<details><summary>Answer</summary>B) border-box includes padding and border in width</details>
+<details><summary>Answer&lt;/summary&gt;B) border-box includes padding and border in width&lt;/details&gt;
 
 **Q3:** When should CSS Grid be preferred over Flexbox?
 - A) For one-dimensional layouts
@@ -1399,7 +1399,7 @@ document.getElementById('load-chart')?.addEventListener('click', async () => {
 - C) For small elements only
 - D) For animations
 
-<details><summary>Answer</summary>B) For two-dimensional layouts (rows and columns)</details>
+<details><summary>Answer&lt;/summary&gt;B) For two-dimensional layouts (rows and columns)&lt;/details&gt;
 
 **Q4:** What CSS feature enables dynamic theming?
 - A) Variables (Sass)
@@ -1407,4 +1407,4 @@ document.getElementById('load-chart')?.addEventListener('click', async () => {
 - C) Preprocessor mixins
 - D) Class toggling
 
-<details><summary>Answer</summary>B) Custom properties (CSS variables)</details>
+<details><summary>Answer&lt;/summary&gt;B) Custom properties (CSS variables)&lt;/details&gt;

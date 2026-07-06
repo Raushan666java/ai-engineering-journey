@@ -1122,11 +1122,11 @@ class VectorDBMigrator:
 
 interface Task { id: string; description: string; status: "pending"|"running"|"done"|"failed"; dependencies: string[]; result?: string }
 class Orchestrator {
-  private tasks: Map<string,Task> = new Map()
-  private agents: Map<string,(t:Task)=>Promise<string>> = new Map()
-  registerAgent(name: string, fn: (t:Task)=>Promise<string>): void { this.agents.set(name,fn) }
+  private tasks: Map&lt;string,Task&gt; = new Map()
+  private agents: Map&lt;string,(t:Task)=&gt;Promise&lt;string&gt;> = new Map()
+  registerAgent(name: string, fn: (t:Task)=>Promise&lt;string&gt;): void { this.agents.set(name,fn) }
   addTask(t: Task): void { this.tasks.set(t.id,t) }
-  async runAll(): Promise<void> {
+  async runAll(): Promise&lt;void&gt; {
     let pending = Array.from(this.tasks.values()).filter(t=>t.status==="pending")
     while(pending.length) {
       const runnable = pending.filter(t=>t.dependencies.every(d=>this.tasks.get(d)?.status==="done"))

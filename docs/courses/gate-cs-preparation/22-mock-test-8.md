@@ -283,7 +283,7 @@ Which conclusion(s) follow(s)?
 
 ---
 
-**Q23 (2 Marks):** Let X be a continuous random variable with PDF f(x) = 3x² for 0 < x < 1, and 0 otherwise. The variance of X is:
+**Q23 (2 Marks):** Let X be a continuous random variable with PDF f(x) = 3x² for 0 &lt; x < 1, and 0 otherwise. The variance of X is:
 
 (A) 1/20
 (B) 3/80
@@ -332,8 +332,8 @@ Which conclusion(s) follow(s)?
 
 **Q28 (1 Mark) [OS]:** In a system using segmented memory management, if the logical address has segment number s and offset d, and the segment table entry for s contains base b and limit l, the physical address is:
 
-(A) b + d, only if d < l
-(B) b × d, only if d < l
+(A) b + d, only if d &lt; l
+(B) b × d, only if d &lt; l
 (C) l − d + b
 (D) l + b − d
 
@@ -675,7 +675,7 @@ So next difference = 6² = 36. Next term = 56 + 36 = 92.
 
 **Q27 (1 Mark) [Algo]:** Let n = 2^{2^k}. Then √n = 2^{2^{k-1}}. T(2^{2^k}) = T(2^{2^{k-1}}) + O(1) → S(k) = S(k-1) + O(1) → S(k) = O(k) → O(log log n). Option B.
 
-**Q28 (1 Mark) [OS]:** In segmentation, logical address (s,d) is checked against limit l. Physical address = base b + offset d, only if d < l. Option A.
+**Q28 (1 Mark) [OS]:** In segmentation, logical address (s,d) is checked against limit l. Physical address = base b + offset d, only if d &lt; l. Option A.
 
 **Q29 (1 Mark) [DBMS]:** A correlated subquery references columns from the outer query and executes once per outer row. Option B.
 

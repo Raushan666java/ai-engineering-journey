@@ -2277,7 +2277,7 @@ PROMPT;
 - C) Document metadata
 - D) Author names
 
-<details><summary>Answer</summary>B) Key clauses using LLM text extraction</details>
+<details><summary>Answer&lt;/summary&gt;B) Key clauses using LLM text extraction&lt;/details&gt;
 
 **Q2:** How does the ContractAnalysisAgent identify risky clauses?
 - A) Manual review
@@ -2285,7 +2285,7 @@ PROMPT;
 - C) Random checking
 - D) User flagging only
 
-<details><summary>Answer</summary>B) LLM pattern matching + risk scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM pattern matching + risk scoring&lt;/details&gt;
 
 **Q3:** What does the ComplianceMonitorAgent track?
 - A) Only internal policies
@@ -2293,7 +2293,7 @@ PROMPT;
 - C) Employee attendance
 - D) Budget compliance
 
-<details><summary>Answer</summary>B) Regulatory changes from external sources</details>
+<details><summary>Answer&lt;/summary&gt;B) Regulatory changes from external sources&lt;/details&gt;
 
 **Q4:** How does the LegalResearchAgent search case law?
 - A) Full-text keyword search
@@ -2301,7 +2301,7 @@ PROMPT;
 - C) Manual catalog browsing
 - D) Citation graph only
 
-<details><summary>Answer</summary>B) Vector embeddings + semantic retrieval</details>
+<details><summary>Answer&lt;/summary&gt;B) Vector embeddings + semantic retrieval&lt;/details&gt;
 
 ---
 
@@ -2353,7 +2353,7 @@ PROMPT;
 - C) Document metadata
 - D) Author names
 
-<details><summary>Answer</summary>B) Key clauses using LLM text extraction</details>
+<details><summary>Answer&lt;/summary&gt;B) Key clauses using LLM text extraction&lt;/details&gt;
 
 **Q2:** How does the ContractAnalysisAgent identify risky clauses?
 - A) Manual review
@@ -2361,7 +2361,7 @@ PROMPT;
 - C) Random checking
 - D) User flagging only
 
-<details><summary>Answer</summary>B) LLM pattern matching + risk scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM pattern matching + risk scoring&lt;/details&gt;
 
 **Q3:** What does the ComplianceMonitorAgent track?
 - A) Only internal policies
@@ -2369,7 +2369,7 @@ PROMPT;
 - C) Employee attendance
 - D) Budget compliance
 
-<details><summary>Answer</summary>B) Regulatory changes from external sources</details>
+<details><summary>Answer&lt;/summary&gt;B) Regulatory changes from external sources&lt;/details&gt;
 
 **Q4:** How does the LegalResearchAgent search case law?
 - A) Full-text keyword search
@@ -2377,7 +2377,7 @@ PROMPT;
 - C) Manual catalog browsing
 - D) Citation graph only
 
-<details><summary>Answer</summary>B) Vector embeddings + semantic retrieval</details>
+<details><summary>Answer&lt;/summary&gt;B) Vector embeddings + semantic retrieval&lt;/details&gt;
 
 ---
 
@@ -2429,7 +2429,7 @@ PROMPT;
 - C) Document metadata
 - D) Author names
 
-<details><summary>Answer</summary>B) Key clauses using LLM text extraction</details>
+<details><summary>Answer&lt;/summary&gt;B) Key clauses using LLM text extraction&lt;/details&gt;
 
 **Q2:** How does the ContractAnalysisAgent identify risky clauses?
 - A) Manual review
@@ -2437,7 +2437,7 @@ PROMPT;
 - C) Random checking
 - D) User flagging only
 
-<details><summary>Answer</summary>B) LLM pattern matching + risk scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM pattern matching + risk scoring&lt;/details&gt;
 
 **Q3:** What does the ComplianceMonitorAgent track?
 - A) Only internal policies
@@ -2445,7 +2445,7 @@ PROMPT;
 - C) Employee attendance
 - D) Budget compliance
 
-<details><summary>Answer</summary>B) Regulatory changes from external sources</details>
+<details><summary>Answer&lt;/summary&gt;B) Regulatory changes from external sources&lt;/details&gt;
 
 **Q4:** How does the LegalResearchAgent search case law?
 - A) Full-text keyword search
@@ -2453,7 +2453,7 @@ PROMPT;
 - C) Manual catalog browsing
 - D) Citation graph only
 
-<details><summary>Answer</summary>B) Vector embeddings + semantic retrieval</details>
+<details><summary>Answer&lt;/summary&gt;B) Vector embeddings + semantic retrieval&lt;/details&gt;
 
 ---
 
@@ -2505,7 +2505,7 @@ PROMPT;
 - C) Document metadata
 - D) Author names
 
-<details><summary>Answer</summary>B) Key clauses using LLM text extraction</details>
+<details><summary>Answer&lt;/summary&gt;B) Key clauses using LLM text extraction&lt;/details&gt;
 
 **Q2:** How does the ContractAnalysisAgent identify risky clauses?
 - A) Manual review
@@ -2513,7 +2513,7 @@ PROMPT;
 - C) Random checking
 - D) User flagging only
 
-<details><summary>Answer</summary>B) LLM pattern matching + risk scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM pattern matching + risk scoring&lt;/details&gt;
 
 **Q3:** What does the ComplianceMonitorAgent track?
 - A) Only internal policies
@@ -2521,7 +2521,7 @@ PROMPT;
 - C) Employee attendance
 - D) Budget compliance
 
-<details><summary>Answer</summary>B) Regulatory changes from external sources</details>
+<details><summary>Answer&lt;/summary&gt;B) Regulatory changes from external sources&lt;/details&gt;
 
 **Q4:** How does the LegalResearchAgent search case law?
 - A) Full-text keyword search
@@ -2529,7 +2529,7 @@ PROMPT;
 - C) Manual catalog browsing
 - D) Citation graph only
 
-<details><summary>Answer</summary>B) Vector embeddings + semantic retrieval</details>
+<details><summary>Answer&lt;/summary&gt;B) Vector embeddings + semantic retrieval&lt;/details&gt;
 
 ## Summary
 

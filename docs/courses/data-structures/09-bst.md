@@ -24,7 +24,7 @@ A BST is like a self-organizing dictionary: every node keeps track of which side
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| BST Invariant | Left < root < right for all nodes | Enables O(log n) average search |
+| BST Invariant | Left &lt; root < right for all nodes | Enables O(log n) average search |
 | Insert/Search | Compare key, descend left or right | Recursive or iterative both O(h) |
 | Deletion (3 cases) | Leaf, one child, two children | Two-child case uses successor swap |
 | Successor/Predecessor | Min of right subtree or ancestor | Useful for ordered traversal |
@@ -110,7 +110,7 @@ function search(root, key):
 
 | Step | Current Node | Key | Comparison | Action |
 |------|-------------|-----|------------|--------|
-| 1 | 50 | 40 | 40 < 50 | Go left |
+| 1 | 50 | 40 | 40 &lt; 50 | Go left |
 | 2 | 30 | 40 | 40 > 30 | Go right |
 | 3 | 40 | 40 | 40 == 40 | Found! |
 
@@ -394,7 +394,7 @@ public Node insertIterative(Node root, int value) {
 **Algorithm Steps (3 Cases):**
 
 1. **Base:** If root is null, return null (key not found).
-2. Navigate to the node: if key < root.data, recurse left; if key > root.data, recurse right.
+2. Navigate to the node: if key &lt; root.data, recurse left; if key &gt; root.data, recurse right.
 3. **Case 1 — Leaf (no children):** Delete the node, return null to the parent.
 4. **Case 2 — One child:** Save the child pointer, delete the node, return the child to the parent.
 5. **Case 3 — Two children:**
@@ -672,7 +672,7 @@ Tree: `[50, 30, 70, 20, 40, 60, 80]`
 |------|-------------|--------|--------|
 | 1 | 60 | Check right subtree | 60.right = null |
 | 2 | root=50 | 60 > 50, no ancestor record | Go right |
-| 3 | 70 | 60 < 70, record succ=70 | Go left |
+| 3 | 70 | 60 &lt; 70, record succ=70 | Go left |
 | 4 | 60 | Current == target | Return succ=70 |
 
 Successor of 60 = **70**. Inorder after 60 is: ..., 60, **70**, 80.
@@ -857,13 +857,13 @@ public Node predecessor(Node root, Node target) {
 1. If root is null, return null.
 2. If root.data == key, return root.data.
 3. If root.data > key, the floor must be in the **left** subtree (current root is too large).
-4. If root.data < key, root.data is a candidate. The floor might still be in the **right** subtree if there is a value between root.data and key.
+4. If root.data &lt; key, root.data is a candidate. The floor might still be in the **right** subtree if there is a value between root.data and key.
 
 **Algorithm Steps — Ceiling:**
 
 1. If root is null, return null.
 2. If root.data == key, return root.data.
-3. If root.data < key, the ceiling must be in the **right** subtree (current root is too small).
+3. If root.data &lt; key, the ceiling must be in the **right** subtree (current root is too small).
 4. If root.data > key, root.data is a candidate. The ceiling might still be in the **left** subtree if there is a value between key and root.data.
 
 **Pseudocode:**
@@ -894,7 +894,7 @@ Tree: `[50, 30, 70, 20, 40, 60, 80]`
 
 | Step | Node | Action | Floor Candidate |
 |------|------|--------|----------------|
-| 1 | 50 | 50 < 55, candidate=50, go right | 50 |
+| 1 | 50 | 50 &lt; 55, candidate=50, go right | 50 |
 | 2 | 70 | 70 > 55, go left | 50 |
 | 3 | 60 | 60 > 55, go left | 50 |
 | 4 | null | Return null → propagate | Return **50** |
@@ -905,7 +905,7 @@ Floor of 55 = **50**.
 
 | Step | Node | Action | Ceil Candidate |
 |------|------|--------|----------------|
-| 1 | 50 | 50 < 55, go right | null |
+| 1 | 50 | 50 &lt; 55, go right | null |
 | 2 | 70 | 70 > 55, candidate=70, go left | 70 |
 | 3 | 60 | 60 > 55, candidate=60, go left | 60 |
 | 4 | null | Return null → propagate | Return **60** |
@@ -1006,7 +1006,7 @@ public Node ceil(Node root, int key) {
 2. If root is null, return.
 3. If root.data > L, recurse into the **left** subtree — there may be valid keys on the left.
 4. If L ≤ root.data ≤ R, **print** or collect root.data.
-5. If root.data < R, recurse into the **right** subtree — there may be valid keys on the right.
+5. If root.data &lt; R, recurse into the **right** subtree — there may be valid keys on the right.
 
 **Pseudocode:**
 
@@ -1026,15 +1026,15 @@ function rangeQuery(root, L, R):
 | Step | Node | Action | Output |
 |------|------|--------|--------|
 | 1 | 50 | 50 > 30 → go left | — |
-| 2 | 30 | 30 > 20 (L) → go left; 30 in [30,70] → print; 30 < 70 → go right | 30 |
-| 3 | 20 | 20 not ≥ 30, skip; 20 < 70 → go right (no-op) | — |
-| 4 | 40 | 40 > 30 → go left (null); 40 in [30,70] → print; 40 < 70 → go right (null) | 40 |
+| 2 | 30 | 30 > 20 (L) → go left; 30 in [30,70] → print; 30 &lt; 70 → go right | 30 |
+| 3 | 20 | 20 not ≥ 30, skip; 20 &lt; 70 → go right (no-op) | — |
+| 4 | 40 | 40 > 30 → go left (null); 40 in [30,70] → print; 40 &lt; 70 → go right (null) | 40 |
 | 5 | Back at 50 | 50 in [30,70] → print | 50 |
-| 6 | 70 | 70 > 30 → go left; 70 in [30,70] → print; 70 not < 70 → stop | 60, 70 |
+| 6 | 70 | 70 > 30 → go left; 70 in [30,70] → print; 70 not &lt; 70 → stop | 60, 70 |
 
 Output: **30, 40, 50, 60, 70**
 
-**Visual:** Nodes visited but skipped: 80 (70.right — 80 > 70, so right branch of 70 is not explored). Nodes visited: 50, 30, 20, 40, 60, 70, 80? No — 80 is never visited because at node 70, R=70, and 70 is not < 70, so we do not go right.
+**Visual:** Nodes visited but skipped: 80 (70.right — 80 > 70, so right branch of 70 is not explored). Nodes visited: 50, 30, 20, 40, 60, 70, 80? No — 80 is never visited because at node 70, R=70, and 70 is not &lt; 70, so we do not go right.
 
 **C++:**
 
@@ -1267,8 +1267,8 @@ public boolean isBSTInorder(Node root) {
 |------|------------|
 | Empty tree | Yes |
 | Single node | Yes |
-| Duplicates (equal allowed in left) | Depends on ≤ vs < in check |
-| Right child < parent | No |
+| Duplicates (equal allowed in left) | Depends on ≤ vs &lt; in check |
+| Right child &lt; parent | No |
 | Grandchild violates ancestor range | No (caught by range method) |
 
 **Advantages & Disadvantages of Each Method:**
@@ -1419,20 +1419,20 @@ function LCA(root, p, q):
 
 | Step | Node | p=20, q=60 | Action |
 |------|------|------------|--------|
-| 1 | 50 | 20<50, 60>50 | p on left, q on right → **LCA = 50** |
+| 1 | 50 | 20&lt;50, 60&gt;50 | p on left, q on right → **LCA = 50** |
 
 LCA of 40 and 80:
 
 | Step | Node | p=40, q=80 | Action |
 |------|------|------------|--------|
-| 1 | 50 | 40<50, 80>50 | **LCA = 50** |
+| 1 | 50 | 40&lt;50, 80&gt;50 | **LCA = 50** |
 
 LCA of 20 and 40:
 
 | Step | Node | p=20, q=40 | Action |
 |------|------|------------|--------|
-| 1 | 50 | Both < 50 | Go left |
-| 2 | 30 | 20<30, 40>30 | p left, q right → **LCA = 30** |
+| 1 | 50 | Both &lt; 50 | Go left |
+| 2 | 30 | 20&lt;30, 40&gt;30 | p left, q right → **LCA = 30** |
 
 **C++:**
 
@@ -1985,7 +1985,7 @@ def find_pair(root, target):
 
 ## One-Sentence Takeaways
 
-- BST property: left subtree < root < right subtree for all nodes.
+- BST property: left subtree &lt; root < right subtree for all nodes.
 - Search, insert, and delete average \(O(\log n)\); worst case \(O(n)\) for degenerate trees.
 - Inorder traversal of a BST yields sorted order.
 - Deletion of a node with two children uses the inorder successor (or predecessor).
@@ -2000,7 +2000,7 @@ def find_pair(root, target):
 
 | Feature | Binary Tree | BST | Balanced BST (AVL) |
 |---------|-------------|-----|-------------------|
-| Ordering | None | Left < root < right | Left < root < right |
+| Ordering | None | Left &lt; root < right | Left < root < right |
 | Search | \(O(n)\) | \(O(\log n)\) avg | \(O(\log n)\) guaranteed |
 | Insert | \(O(1)\) | \(O(\log n)\) avg | \(O(\log n)\) |
 | Delete | \(O(n)\) | \(O(\log n)\) avg | \(O(\log n)\) |
@@ -2084,7 +2084,7 @@ def find_pair(root, target):
 
 ## Summary
 
-- BSTs maintain order: left < root < right.
+- BSTs maintain order: left &lt; root < right.
 - Average-case complexity is \( O(\log n) \) for search, insert, delete.
 - Worst-case \( O(n) \) occurs when the tree becomes a chain (sorted insertion).
 - Deletion of a node with two children uses the inorder successor.

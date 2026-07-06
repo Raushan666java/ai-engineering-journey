@@ -2638,21 +2638,21 @@ public class ReverseString {
    - B) Amazon
    - C) Flipkart
    - D) TCS
-   <details><summary>Answer</summary>**B)** Amazon — the Bar Raiser is an independent interviewer who ensures the hiring bar stays consistent across the organization, with veto power over the hiring decision.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Amazon — the Bar Raiser is an independent interviewer who ensures the hiring bar stays consistent across the organization, with veto power over the hiring decision.</details>
 
 2. What is unique about Flipkart's interview process compared to other product-based Indian companies?
    - A) It has a LeetCode Hard-only round
    - B) It includes a 90-minute machine coding round to build a working mini-app
    - C) It requires a published research paper
    - D) It has no technical round
-   <details><summary>Answer</summary>**B)** Flipkart's machine coding round requires building a working mini-app (e.g., BookMyShow clone) in 90 minutes — testing production thinking, not just algorithms.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Flipkart's machine coding round requires building a working mini-app (e.g., BookMyShow clone) in 90 minutes — testing production thinking, not just algorithms.</details>
 
 3. Service-based companies primarily test which area in their initial screening?
    - A) System design
    - B) Aptitude and basic programming
    - C) Machine learning
    - D) Product management
-   <details><summary>Answer</summary>**B)** Aptitude and basic programming — service companies hire in bulk and use quantitative aptitude (RS Aggarwal) and CS fundamentals as the primary filter.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Aptitude and basic programming — service companies hire in bulk and use quantitative aptitude (RS Aggarwal) and CS fundamentals as the primary filter.</details>
 
 ## Final Checklist
 

@@ -806,7 +806,7 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 - C) The value that rules out the fewest choices for neighbors
 - D) The variable with the largest domain
 
-<details><summary>Answer</summary>B) MRV selects the most constrained variable (fewest legal values) to minimize branching and detect dead ends early.</details>
+<details><summary>Answer&lt;/summary&gt;B) MRV selects the most constrained variable (fewest legal values) to minimize branching and detect dead ends early.</details>
 
 **Q2:** The AC-3 algorithm enforces what type of consistency?
 - A) Node consistency
@@ -814,7 +814,7 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 - C) Path consistency
 - D) k-consistency
 
-<details><summary>Answer</summary>B) AC-3 enforces arc consistency between all variable pairs in a CSP.</details>
+<details><summary>Answer&lt;/summary&gt;B) AC-3 enforces arc consistency between all variable pairs in a CSP.</details>
 
 **Q3:** A tree-structured CSP can be solved in what time complexity?
 - A) O(nÂ²)
@@ -822,7 +822,7 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 - C) O(d^n)
 - D) O(n log n)
 
-<details><summary>Answer</summary>B) Tree-structured CSPs are solvable in O(n dÂ²) time — linear in the number of variables and quadratic in the domain size.</details>
+<details><summary>Answer&lt;/summary&gt;B) Tree-structured CSPs are solvable in O(n dÂ²) time — linear in the number of variables and quadratic in the domain size.</details>
 
 **Q4:** Which technique combines backtracking search with AC-3 propagation after each assignment?
 - A) Forward checking
@@ -830,7 +830,7 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 - C) MAC (Maintaining Arc Consistency)
 - D) Cutset conditioning
 
-<details><summary>Answer</summary>C) MAC interleaves AC-3 with backtracking for the most aggressive pruning during search.</details>
+<details><summary>Answer&lt;/summary&gt;C) MAC interleaves AC-3 with backtracking for the most aggressive pruning during search.</details>
 
 **Q5:** In the worst case, AC-3 runs in:
 - A) O(nÂ²)
@@ -838,7 +838,7 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 - C) O(nÂ² dÂ³)
 - D) O(d^n)
 
-<details><summary>Answer</summary>C) O(nÂ² dÂ³) — nÂ² arcs, each revised at most d times, each revision costing O(dÂ²).</details>
+<details><summary>Answer&lt;/summary&gt;C) O(nÂ² dÂ³) — nÂ² arcs, each revised at most d times, each revision costing O(dÂ²).</details>
 
 ---
 

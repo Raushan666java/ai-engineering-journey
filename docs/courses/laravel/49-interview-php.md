@@ -184,7 +184,7 @@ $data['key'] ??= 'default';                   // assigns only if null
 ```
 
 ### Q13: What is the spaceship operator `<=>`?
-**Answer:** The spaceship operator performs combined comparison: returns `-1` if left < right, `0` if equal, `1` if left > right. It's essential for custom sort callbacks.
+**Answer:** The spaceship operator performs combined comparison: returns `-1` if left &lt; right, `0` if equal, `1` if left &gt; right. It's essential for custom sort callbacks.
 
 ```php
 function sortUsers(User $a, User $b): int {
@@ -1428,7 +1428,7 @@ composer install --no-dev --optimize-autoloader
 ```
 
 ### Q77: How do you specify PHP version constraints?
-**Answer:** Use semantic versioning operators: `^` (compatible with major), `~` (approximately → minor bumps), `>=`, `<=`, `!=`, `*` (any), `||` (OR). `^8.2` means >=8.2.0 and <9.0.0.
+**Answer:** Use semantic versioning operators: `^` (compatible with major), `~` (approximately → minor bumps), `>=`, `<=`, `!=`, `*` (any), `||` (OR). `^8.2` means >=8.2.0 and &lt;9.0.0.
 
 ```json
 {
@@ -2403,7 +2403,7 @@ $service = $container->make(UserService::class);
 - C) strict_types()
 - D) enable_strict()
 
-<details><summary>Answer</summary>B) declare(strict_types=1)</details>
+<details><summary>Answer&lt;/summary&gt;B) declare(strict_types=1)&lt;/details&gt;
 
 **Q2:** Which PHP 8 feature allows a class to have a single value type?
 - A) readonly
@@ -2411,7 +2411,7 @@ $service = $container->make(UserService::class);
 - C) Named arguments
 - D) Union types
 
-<details><summary>Answer</summary>B) Enums</details>
+<details><summary>Answer&lt;/summary&gt;B) Enums&lt;/details&gt;
 
 **Q3:** What does Composer's PSR-4 autoloading use to find classes?
 - A) Namespace-to-directory mapping
@@ -2419,7 +2419,7 @@ $service = $container->make(UserService::class);
 - C) File modification timestamps
 - D) PHP include path
 
-<details><summary>Answer</summary>A) Namespace-to-directory mapping</details>
+<details><summary>Answer&lt;/summary&gt;A) Namespace-to-directory mapping&lt;/details&gt;
 
 **Q4:** What is the purpose of the readonly keyword in PHP 8.1+?
 - A) Make a class uninstantiable
@@ -2427,4 +2427,4 @@ $service = $container->make(UserService::class);
 - C) Prevent method overriding
 - D) Disable type checking
 
-<details><summary>Answer</summary>B) Make properties writable only once</details>
+<details><summary>Answer&lt;/summary&gt;B) Make properties writable only once&lt;/details&gt;

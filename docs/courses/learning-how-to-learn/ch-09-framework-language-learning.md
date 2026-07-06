@@ -1563,7 +1563,7 @@ D) Pick one category and ignore the others
 - D) Debugging debt � they need to fix their development environment
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B � The tutorial trap is passive consumption disguised as active learning. Following along feels productive but never requires retrieval from memory. The cure is to close the tutorial and rebuild from scratch, then add one original feature.
 </details>
@@ -1575,7 +1575,7 @@ D) Pick one category and ignore the others
 - D) Spend 50% on each to make balanced progress
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B � The T-model allocates 70% of time to one primary technology. Learning two new frameworks simultaneously causes mental interference and slows progress on both. Phase them sequentially: master one, then add the other.
 </details>
@@ -1587,7 +1587,7 @@ D) Pick one category and ignore the others
 - D) Reinstall the framework
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B � The debugging protocol is Reproduce ? Isolate ? Search ? Understand. Searching before isolating the exact cause produces imprecise queries and wastes time. A minimal reproducing case leads directly to the root cause.
 </details>

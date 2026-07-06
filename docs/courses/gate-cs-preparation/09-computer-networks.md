@@ -1206,7 +1206,7 @@ Formula: Slow Start (Ã—2 per RTT) until ssthresh, then Additive Increase (+1 
 
 **A:**
 New distance = cost(R1→R2) + cost(R2→Z) = 1 + 3 = 4
-Since 4 < 5, R1 updates to **4**.
+Since 4 &lt; 5, R1 updates to **4**.
 
 ---
 

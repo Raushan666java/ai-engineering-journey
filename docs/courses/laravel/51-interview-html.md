@@ -1706,7 +1706,7 @@ class Alert extends Component
 - C) <section>
 - D) <article>
 
-<details><summary>Answer</summary>B) <main></details>
+<details><summary>Answer&lt;/summary&gt;B) <main>&lt;/details&gt;
 
 **Q2:** What attribute is used for client-side form validation?
 - A) validate
@@ -1714,7 +1714,7 @@ class Alert extends Component
 - C) check
 - D) verify
 
-<details><summary>Answer</summary>B) required</details>
+<details><summary>Answer&lt;/summary&gt;B) required&lt;/details&gt;
 
 **Q3:** What does ARIA provide in HTML?
 - A) Animation effects
@@ -1722,7 +1722,7 @@ class Alert extends Component
 - C) Form validation
 - D) Database connectivity
 
-<details><summary>Answer</summary>B) Roles and properties for assistive technology</details>
+<details><summary>Answer&lt;/summary&gt;B) Roles and properties for assistive technology&lt;/details&gt;
 
 **Q4:** Which API is used for client-side key-value storage?
 - A) LocalStorage
@@ -1730,4 +1730,4 @@ class Alert extends Component
 - C) Both Web Storage APIs
 - D) IndexedDB
 
-<details><summary>Answer</summary>C) Both Web Storage APIs</details>
+<details><summary>Answer&lt;/summary&gt;C) Both Web Storage APIs&lt;/details&gt;

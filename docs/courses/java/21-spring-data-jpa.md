@@ -1429,7 +1429,7 @@ public class CustomerService {
    - D) dropByEmail
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) deleteByEmail.** Spring Data JPA derives delete operations from the deleteBy prefix in method names.
 </details>
 
@@ -1440,7 +1440,7 @@ public class CustomerService {
    - D) No SQL knowledge needed
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Dynamic, composable query predicates.** Specifications allow building dynamic WHERE clauses programmatically.
 </details>
 
@@ -1451,7 +1451,7 @@ public class CustomerService {
    - D) @Query(native=true)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Pageable parameter in repository method.** Spring Data automatically applies pagination when the method accepts a Pageable parameter.
 </details>
 

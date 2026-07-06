@@ -1179,13 +1179,13 @@ class ReviewerWorkloadBalancer {
   private reviewers: Reviewer[] = [];
   private assignments: WorkloadAssignment[] = [];
 
-  registerReviewer(reviewer: Omit<Reviewer, "currentLoad" | "isAvailable">): void {
+  registerReviewer(reviewer: Omit&lt;Reviewer, "currentLoad" | "isAvailable"&gt;): void {
     this.reviewers.push({ ...reviewer, currentLoad: 0, isAvailable: true });
   }
 
   assign(proposalId: string, category: string, estimatedComplexity: number): Reviewer | null {
     const available = this.reviewers.filter(
-      (r) => r.isAvailable && r.currentLoad < r.maxWorkload
+      (r) => r.isAvailable && r.currentLoad &lt; r.maxWorkload
     );
 
     if (available.length === 0) return null;
@@ -1217,11 +1217,11 @@ class ReviewerWorkloadBalancer {
     const reviewer = this.reviewers.find((r) => r.id === reviewerId);
     if (reviewer) {
       reviewer.currentLoad = Math.max(0, reviewer.currentLoad - 1);
-      reviewer.isAvailable = reviewer.currentLoad < reviewer.maxWorkload;
+      reviewer.isAvailable = reviewer.currentLoad &lt; reviewer.maxWorkload;
     }
   }
 
-  getWorkloadSnapshot(): Array<{ id: string; load: number; maxLoad: number; available: boolean }> {
+  getWorkloadSnapshot(): Array&lt;{ id: string; load: number; maxLoad: number; available: boolean }&gt; {
     return this.reviewers.map((r) => ({
       id: r.id,
       load: r.currentLoad,
@@ -1250,9 +1250,9 @@ interface StaleProposal {
 }
 
 class StaleProposalCleaner {
-  private proposals: Map<string, StaleProposal> = new Map();
+  private proposals: Map&lt;string, StaleProposal&gt; = new Map();
   private expiredCount = 0;
-  private cleanInterval: ReturnType<typeof setInterval> | null = null;
+  private cleanInterval: ReturnType&lt;typeof setInterval&gt; | null = null;
 
   track(proposal: StaleProposal): void {
     this.proposals.set(proposal.id, proposal);
@@ -1275,7 +1275,7 @@ class StaleProposalCleaner {
     const expired: StaleProposal[] = [];
     for (const [id, proposal] of this.proposals) {
       if (proposal.status === "in-review") continue;
-      if (this.computeRemainingMs(proposal) <= 0) {
+      if (this.computeRemainingMs(proposal) &lt;= 0) {
         expired.push(proposal);
         this.proposals.delete(id);
         this.expiredCount++;
@@ -1287,7 +1287,7 @@ class StaleProposalCleaner {
   getExpiringSoon(thresholdMs: number): StaleProposal[] {
     return [...this.proposals.values()].filter((p) => {
       const remaining = this.computeRemainingMs(p);
-      return remaining > 0 && remaining <= thresholdMs;
+      return remaining > 0 && remaining &lt;= thresholdMs;
     });
   }
 
@@ -1342,7 +1342,7 @@ class HumanPerformanceTracker {
   private readonly fatigueDecayPerReview = 0.05;
   private readonly fatigueRecoveryPerMinute = 0.02;
 
-  recordReview(event: Omit<ReviewEvent, "timestamp" | "fatigueLevel">): void {
+  recordReview(event: Omit&lt;ReviewEvent, "timestamp" | "fatigueLevel"&gt;): void {
     const recentEvents = this.events.filter((e) => e.reviewerId === event.reviewerId).slice(-10);
     const fatigueLevel = Math.min(1, recentEvents.reduce((s, e) => s + this.fatigueDecayPerReview, 0));
 
@@ -1418,8 +1418,8 @@ interface SimulatedReviewerConfig {
 
 class SimulatedReviewerPool {
   private reviewers: SimulatedReviewerConfig[] = [];
-  private reviewCount: Map<string, number> = new Map();
-  private fatigue: Map<string, number> = new Map();
+  private reviewCount: Map&lt;string, number&gt; = new Map();
+  private fatigue: Map&lt;string, number&gt; = new Map();
 
   addReviewer(config: SimulatedReviewerConfig): void {
     this.reviewers.push(config);
@@ -1434,7 +1434,7 @@ class SimulatedReviewerPool {
   async simulateReview(
     reviewerId: string,
     proposalRisk: number
-  ): Promise<{ decision: SimulatedDecision; timeMs: number; feedback: string }> {
+  ): Promise&lt;{ decision: SimulatedDecision; timeMs: number; feedback: string }&gt; {
     const reviewer = this.reviewers.find((r) => r.id === reviewerId);
     if (!reviewer) throw new Error(`Unknown reviewer: ${reviewerId}`);
 
@@ -1451,7 +1451,7 @@ class SimulatedReviewerPool {
     let decision: SimulatedDecision;
     let feedback: string;
 
-    if (rand < effectiveAccuracy) {
+    if (rand &lt; effectiveAccuracy) {
       if (proposalRisk > 0.7) {
         decision = "escalate";
         feedback = `Risk too high (${(proposalRisk * 100).toFixed(0)}%). Escalating.`;
@@ -1459,7 +1459,7 @@ class SimulatedReviewerPool {
         decision = "approve";
         feedback = "Looks good. Approved.";
       }
-    } else if (rand < effectiveAccuracy + (1 - effectiveAccuracy) * 0.6) {
+    } else if (rand &lt; effectiveAccuracy + (1 - effectiveAccuracy) * 0.6) {
       decision = "reject";
       feedback = proposalRisk > 0.5
         ? "Rejected: concerns about implementation approach."
@@ -1483,8 +1483,8 @@ class SimulatedReviewerPool {
     }
   }
 
-  getFatigueLevels(): Record<string, number> {
-    const levels: Record<string, number> = {};
+  getFatigueLevels(): Record&lt;string, number&gt; {
+    const levels: Record&lt;string, number&gt; = {};
     for (const [id, level] of this.fatigue) {
       levels[id] = level;
     }
@@ -1510,7 +1510,7 @@ interface LifecycleEvent {
 class ProposalLifecycleLogger {
   private events: LifecycleEvent[] = [];
 
-  log(event: Omit<LifecycleEvent, "timestamp">): void {
+  log(event: Omit&lt;LifecycleEvent, "timestamp"&gt;): void {
     this.events.push({ ...event, timestamp: new Date() });
   }
 
@@ -1520,10 +1520,10 @@ class ProposalLifecycleLogger {
       .sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime());
   }
 
-  getTimeInStage(proposalId: string): Array<{ stage: string; durationMs: number }> {
+  getTimeInStage(proposalId: string): Array&lt;{ stage: string; durationMs: number }&gt; {
     const timeline = this.getTimeline(proposalId);
-    const stages: Array<{ stage: string; durationMs: number }> = [];
-    for (let i = 1; i < timeline.length; i++) {
+    const stages: Array&lt;{ stage: string; durationMs: number }&gt; = [];
+    for (let i = 1; i &lt; timeline.length; i++) {
       const duration = timeline[i].timestamp.getTime() - timeline[i - 1].timestamp.getTime();
       stages.push({ stage: `${timeline[i - 1].eventType} → ${timeline[i].eventType}`, durationMs: duration });
     }
@@ -1571,7 +1571,7 @@ async function main() {
   balancer.registerReviewer({ id: "bob", name: "Bob", maxWorkload: 5, specialties: ["frontend", "ux"], averageReviewTimeMs: 3000 });
   balancer.registerReviewer({ id: "carol", name: "Carol", maxWorkload: 2, specialties: ["infrastructure", "security"], averageReviewTimeMs: 1500 });
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i &lt; 6; i++) {
     const assigned = balancer.assign(`prop-${i}`, i % 2 === 0 ? "security" : "frontend", 1);
     console.log(`Workload: prop-${i} → ${assigned ? assigned.name : "NO AVAILABLE REVIEWER"}`);
   }
@@ -1590,11 +1590,11 @@ async function main() {
 
   // 3. Human Performance Tracker
   const perfTracker = new HumanPerformanceTracker();
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i &lt; 8; i++) {
     perfTracker.recordReview({
       proposalId: `perf-${i}`,
       reviewerId: "alice",
-      decision: i < 6 ? "approved" : "rejected",
+      decision: i &lt; 6 ? "approved" : "rejected",
       timeToDecisionMs: 1500 + Math.random() * 2000,
       outcomeCorrect: i !== 5,
     });
@@ -1614,7 +1614,7 @@ async function main() {
   pool.addReviewer({ id: "r3", name: "Quick Carol", accuracy: 0.70, speedMs: [50, 150], fatigueThreshold: 0.8 });
 
   console.log(`\nSimulated Reviewer Pool (${pool.getReviewerCount()} reviewers):`);
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i &lt; 5; i++) {
     const reviewer = pool.getRandomReviewer();
     const { decision, timeMs } = await pool.simulateReview(reviewer.id, 0.3 + Math.random() * 0.6);
     console.log(`  ${reviewer.name}: ${decision} (${timeMs.toFixed(0)}ms)`);

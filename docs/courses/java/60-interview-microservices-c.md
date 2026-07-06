@@ -17,7 +17,8 @@ flowchart LR
     C --> D[Best Practices]
 ```
 
-### Q14: How do you deploy microservices on Kubernetes?
+### Q14: How do you deploy microservices on Kubernetes?
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -825,7 +826,7 @@ End-to-end tests are slow and flaky. Keep them to 3-5 critical paths per service
    - D) equals() is for primitives, == is for objects
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) equals() compares logical equality (overridable), == compares reference equality.**
 </details>
 
@@ -836,7 +837,7 @@ End-to-end tests are slow and flaky. Keep them to 3-5 critical paths per service
    - D) HashSet
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
 </details>
 
@@ -847,6 +848,6 @@ End-to-end tests are slow and flaky. Keep them to 3-5 critical paths per service
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>

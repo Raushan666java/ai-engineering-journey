@@ -279,7 +279,7 @@ This generates simple programs with declarations, assignments, conditionals, loo
 - D) 6-tuple
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** CFG is a 4-tuple (V, S, R, S): variables, terminals, productions, start.
 </details>
 
@@ -290,7 +290,7 @@ This generates simple programs with declarations, assignments, conditionals, loo
 - D) Missing terminals
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Ambiguity means at least one string has two or more distinct parse trees.
 </details>
 
@@ -301,7 +301,7 @@ This generates simple programs with declarations, assignments, conditionals, loo
 - D) No parsers
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Top-down (LL) parsers may loop infinitely on left-recursive grammars.
 </details>
 
@@ -312,7 +312,7 @@ This generates simple programs with declarations, assignments, conditionals, loo
 - D) No grammar
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** S ? aSa | bSb | e generates all palindromes — this requires a CFG.
 </details>
 
@@ -323,7 +323,7 @@ This generates simple programs with declarations, assignments, conditionals, loo
 - D) Nullable variables
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Left factoring extracts common prefixes to enable predictive parsing.
 </details>
 
@@ -735,14 +735,14 @@ console.log(cfg.isAmbiguous());   // false
 // -----------------------------------------------------
 
 class CNFConverter {
-  private variables: Set<string>;
-  private terminals: Set<string>;
-  private productions: Array<{ lhs: string; rhs: string[] }>;
+  private variables: Set&lt;string&gt;;
+  private terminals: Set&lt;string&gt;;
+  private productions: Array&lt;{ lhs: string; rhs: string[] }&gt;;
   private startVar: string;
 
   constructor(
-    variables: Set<string>, terminals: Set<string>,
-    productions: Array<{ lhs: string; rhs: string[] }>,
+    variables: Set&lt;string&gt;, terminals: Set&lt;string&gt;,
+    productions: Array&lt;{ lhs: string; rhs: string[] }&gt;,
     startVar: string
   ) {
     this.variables = variables; this.terminals = terminals;
@@ -750,16 +750,16 @@ class CNFConverter {
   }
 
   // Step 1: Add new start variable S0 ? S
-  private addNewStart(): Array<{ lhs: string; rhs: string[] }> {
+  private addNewStart(): Array&lt;{ lhs: string; rhs: string[] }&gt; {
     const prods = [...this.productions];
     prods.push({ lhs: "S0", rhs: [this.startVar] });
     return prods;
   }
 
   // Step 2: Eliminate e-productions (simplified)
-  private eliminateEpsilon(prods: Array<{ lhs: string; rhs: string[] }>): Array<{ lhs: string; rhs: string[] }> {
+  private eliminateEpsilon(prods: Array&lt;{ lhs: string; rhs: string[] }&gt;): Array&lt;{ lhs: string; rhs: string[] }&gt; {
     // Find nullable variables
-    const nullable = new Set<string>();
+    const nullable = new Set&lt;string&gt;();
     let changed = true;
     while (changed) {
       changed = false;
@@ -774,7 +774,7 @@ class CNFConverter {
     }
 
     // Build new productions omitting nullable symbols
-    const result: Array<{ lhs: string; rhs: string[] }> = [];
+    const result: Array&lt;{ lhs: string; rhs: string[] }&gt; = [];
     for (const p of prods) {
       if (p.rhs.length === 0) continue;
       const subsets = this.generateSubsets(p.rhs, nullable);
@@ -785,7 +785,7 @@ class CNFConverter {
     return result;
   }
 
-  private generateSubsets(rhs: string[], nullable: Set<string>): string[][] {
+  private generateSubsets(rhs: string[], nullable: Set&lt;string&gt;): string[][] {
     const results: string[][] = [[]];
     for (const sym of rhs) {
       const newResults: string[][] = [];
@@ -800,8 +800,8 @@ class CNFConverter {
   }
 
   // Step 3: Eliminate unit productions (simplified)
-  private eliminateUnit(prods: Array<{ lhs: string; rhs: string[] }>): Array<{ lhs: string; rhs: string[] }> {
-    const unitPairs = new Map<string, Set<string>>();
+  private eliminateUnit(prods: Array&lt;{ lhs: string; rhs: string[] }&gt;): Array&lt;{ lhs: string; rhs: string[] }&gt; {
+    const unitPairs = new Map&lt;string, Set<string&gt;>();
     for (const v of this.variables) unitPairs.set(v, new Set([v]));
 
     // Find unit closure
@@ -822,7 +822,7 @@ class CNFConverter {
     }
 
     // Remove unit productions, add non-unit from closure
-    const result: Array<{ lhs: string; rhs: string[] }> = [];
+    const result: Array&lt;{ lhs: string; rhs: string[] }&gt; = [];
     for (const [v, closure] of unitPairs) {
       for (const c of closure) {
         if (c === v) continue;
@@ -844,13 +844,13 @@ class CNFConverter {
 
   // Step 4: Convert to CNF — replace terminals in mixed rhs,
   // and break long RHS sequences into binary productions.
-  private toCNF(prods: Array<{ lhs: string; rhs: string[] }>): Array<{ lhs: string; rhs: string[] }> {
-    const result: Array<{ lhs: string; rhs: string[] }> = [];
+  private toCNF(prods: Array&lt;{ lhs: string; rhs: string[] }&gt;): Array&lt;{ lhs: string; rhs: string[] }&gt; {
+    const result: Array&lt;{ lhs: string; rhs: string[] }&gt; = [];
     let counter = 0;
     const newVar = () => `X${counter++}`;
 
     // Replace terminals in mixed RHS
-    const terminalMap = new Map<string, string>();
+    const terminalMap = new Map&lt;string, string&gt;();
     for (const p of prods) {
       if (p.rhs.length === 1 && this.terminals.has(p.rhs[0])) {
         result.push({ lhs: p.lhs, rhs: [...p.rhs] });
@@ -879,7 +879,7 @@ class CNFConverter {
     return result;
   }
 
-  convert(): Array<{ lhs: string; rhs: string[] }> {
+  convert(): Array&lt;{ lhs: string; rhs: string[] }&gt; {
     let prods = this.addNewStart();
     prods = this.eliminateEpsilon(prods);
     prods = this.eliminateUnit(prods);

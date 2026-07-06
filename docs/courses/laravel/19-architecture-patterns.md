@@ -1656,7 +1656,8 @@ The modular monolith is the recommended starting point. Extract to microservices
 | Service Layer | App\Services\* | Business logic extraction |
 | Repository | App\Repositories\* | Data access abstraction |
 | Action Class | __invoke() | Single use case |
-| DTO | eadonly properties | Cross-layer data transfer |
+| DTO | 
+eadonly properties | Cross-layer data transfer |
 | DDD | AggregateRoot, ValueObject | Complex domain logic |
 
 ## Cross-Application Matrix
@@ -1676,28 +1677,28 @@ The modular monolith is the recommended starting point. Extract to microservices
    - B) Encapsulate business logic away from controllers
    - C) Manage database connections
    - D) Render views
-   <details><summary>Answer</summary>**B)** The service layer extracts business logic from controllers, keeping HTTP concerns separate.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The service layer extracts business logic from controllers, keeping HTTP concerns separate.</details>
 
 2. Which of the following is a key characteristic of DTOs?
    - A) Mutable state
    - B) Framework inheritance
    - C) Immutable readonly properties
    - D) Database relationships
-   <details><summary>Answer</summary>**C)** DTOs are immutable objects with typed properties for safe cross-layer data transfer.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** DTOs are immutable objects with typed properties for safe cross-layer data transfer.</details>
 
 3. When should you apply Domain-Driven Design in a Laravel application?
    - A) Always, for every project
    - B) Never, it is outdated
    - C) When business logic complexity justifies bounded contexts and aggregates
    - D) Only for API development
-   <details><summary>Answer</summary>**C)** DDD adds overhead. Apply it only when the domain is complex enough to warrant the tactical patterns.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** DDD adds overhead. Apply it only when the domain is complex enough to warrant the tactical patterns.</details>
 
 4. What is the recommended starting architecture for most Laravel applications?
    - A) Microservices
    - B) Modular monolith
    - C) Serverless functions
    - D) Hexagonal architecture from day one
-   <details><summary>Answer</summary>**B)** Start with a modular monolith. Extract microservices only when independent scaling or deployment needs arise.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Start with a modular monolith. Extract microservices only when independent scaling or deployment needs arise.</details>
 
 ## Summary
 - The service layer extracts business logic from controllers into dedicated, injectable classes with single-responsibility boundaries

@@ -135,7 +135,7 @@ close(fd)
 | `bind()` EACCES | Binding to privileged port (< 1024) | Run as root or use CAP_NET_BIND_SERVICE |
 | `listen()` EADDRINUSE | Race on simultaneous binds | Retry with backoff |
 | `accept()` returns -1 | Interrupted by signal (EINTR) | Restart accept in loop |
-| `send()` returns < len | Partial write (short send) | Loop until all bytes sent |
+| `send()` returns &lt; len | Partial write (short send) | Loop until all bytes sent |
 | `recv()` returns 0 | Peer closed connection | Close socket, stop reading |
 | `recv()` returns -1 | EAGAIN (non-blocking, no data) | Try again later |
 | `connect()` ECONNREFUSED | No process listening on port | Retry or report error |
@@ -548,7 +548,7 @@ if __name__ == '__main__':
 | **Broken pipe** | Write to closed connection | `send()` returns -1, `SIGPIPE` or `errno == EPIPE` (32) | Ignore SIGPIPE with `signal(SIGPIPE, SIG_IGN)`; check recv return |
 | **Connection reset** | Peer crashed without FIN | `recv()` returns -1, `errno == ECONNRESET` (104) | Close socket immediately |
 | **Address in use** | TIME_WAIT from previous run | `bind()` returns -1, `errno == EADDRINUSE` (98) | Set `SO_REUSEADDR` before bind |
-| **Partial send** | Kernel buffer full or congestion | `send()` returns < len | Loop until all bytes sent |
+| **Partial send** | Kernel buffer full or congestion | `send()` returns &lt; len | Loop until all bytes sent |
 | **Stale connections** | No traffic, peer dead | recv blocks forever | Set `SO_KEEPALIVE` or application-level timeout |
 | **SYN flood** | Malicious client sends many SYNs | `accept()` may fail, backlog fills | Enable `tcp_syncookies` on Linux |
 | **Too many open files** | Process FD limit | `socket()/accept()` returns -1, `EMFILE` (24) | Increase `ulimit -n` |
@@ -2146,7 +2146,7 @@ public:
 
 ### Q1: epoll vs select → what's the fundamental difference?
 
-**Answer**: select uses O(n) bitmap scanning → every call iterates all n file descriptors to find which are ready. epoll uses O(1) event notification → descriptors are registered once, and when events occur, they're added to an internal ready list. epoll_wait copies only k ready events (k << n).
+**Answer**: select uses O(n) bitmap scanning → every call iterates all n file descriptors to find which are ready. epoll uses O(1) event notification → descriptors are registered once, and when events occur, they're added to an internal ready list. epoll_wait copies only k ready events (k &lt;< n).
 
 ```
 select:  register + wait + scan(n)   → O(n) per iteration

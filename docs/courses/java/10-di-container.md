@@ -3078,7 +3078,7 @@ class ProfileTest {
    - D) It requires less code
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It makes dependencies explicit and enables immutable fields.** Constructor injection ensures all required dependencies are available at construction time and supports final fields.
 </details>
 
@@ -3089,7 +3089,7 @@ class ProfileTest {
    - D) session
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) singleton.** By default, Spring creates a single instance per IoC container for each bean definition.
 </details>
 
@@ -3100,7 +3100,7 @@ class ProfileTest {
    - D) @Scope
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) @Qualifier.** @Qualifier narrows the candidate beans to those with matching qualifier value.
 </details>
 

@@ -156,10 +156,10 @@ Binary search operates on a **sorted** array by repeatedly dividing the search i
 ### Algorithm Steps
 
 1. Set low = 0, high = n - 1.
-2. While low <= high:
+2. While low &lt;= high:
    - Compute mid = low + (high - low) / 2.
    - If A[mid] == key, return mid.
-   - If key < A[mid], set high = mid - 1.
+   - If key &lt; A[mid], set high = mid - 1.
    - If key > A[mid], set low = mid + 1.
 3. Return -1 (key not found).
 
@@ -185,7 +185,7 @@ Input: `A = [2, 5, 8, 12, 16, 23, 38, 45, 56, 72]`, `key = 23`
 | Step | low | high | mid | A[mid] | Comparison | Action |
 |------|-----|------|-----|--------|------------|--------|
 | 1 | 0 | 9 | 4 | 16 | 23 > 16 | low = 5 |
-| 2 | 5 | 9 | 7 | 45 | 23 < 45 | high = 6 |
+| 2 | 5 | 9 | 7 | 45 | 23 &lt; 45 | high = 6 |
 | 3 | 5 | 6 | 5 | 23 | 23 == 23 | **Return 5** |
 
 3 comparisons to find 23 in an array of 10 elements. Linear search would have taken 6 comparisons.
@@ -319,10 +319,10 @@ This is the equation of a line through (low, A[low]) and (high, A[high]), evalua
 
 ### Algorithm Steps
 
-1. While low <= high and key is within range:
+1. While low &lt;= high and key is within range:
    - Compute probe position using interpolation.
    - If A[pos] == key, return pos.
-   - If A[pos] < key, search right (low = pos + 1).
+   - If A[pos] &lt; key, search right (low = pos + 1).
    - If A[pos] > key, search left (high = pos - 1).
 2. Return -1.
 
@@ -340,7 +340,7 @@ pos = 0 + ((85 - 10) * (9 - 0)) / (100 - 10)
 | Step | low | high | pos | A[pos] | Action |
 |------|-----|------|-----|--------|--------|
 | 1 | 0 | 9 | 7 | 80 | 85 > 80, low = 8 |
-| 2 | 8 | 9 | 8 | 90 | 85 < 90, high = 7 |
+| 2 | 8 | 9 | 8 | 90 | 85 &lt; 90, high = 7 |
 | 3 | 8 | 7 | — | — | low > high, **Return -1** |
 
 Key 85 not found — algorithm correctly determined it's between 80 and 90 (would be index 8.5, which rounds to either side showing absence).
@@ -412,7 +412,7 @@ Exponential search finds the range containing the target by doubling the search 
 ### Algorithm Steps
 
 1. If A[0] == key, return 0.
-2. Start with i = 1. While i < n and A[i] <= key, double i.
+2. Start with i = 1. While i &lt; n and A[i] <= key, double i.
 3. Perform binary search on the range [i/2, min(i, n-1)].
 
 ### Step-by-Step Dry Run
@@ -421,9 +421,9 @@ Input: `A = [3, 7, 11, 19, 25, 31, 42, 56, 68, 79]`, `key = 42`
 
 | Phase | i | A[i] | Comparison | Action |
 |-------|---|------|------------|--------|
-| Doubling | 1 | 7 | 7 <= 42 | i = 2 |
-| Doubling | 2 | 11 | 11 <= 42 | i = 4 |
-| Doubling | 4 | 25 | 25 <= 42 | i = 8 |
+| Doubling | 1 | 7 | 7 &lt;= 42 | i = 2 |
+| Doubling | 2 | 11 | 11 &lt;= 42 | i = 4 |
+| Doubling | 4 | 25 | 25 &lt;= 42 | i = 8 |
 | Doubling | 8 | 68 | 68 > 42 | Stop. Range: [4, 7] |
 
 Binary search on `A[4..7] = [25, 31, 42, 56]`:
@@ -516,7 +516,7 @@ Ternary search divides the array into three equal parts using two midpoints.
 1. Compute mid1 = low + (high - low) / 3, mid2 = high - (high - low) / 3.
 2. Check both midpoints against the key.
 3. If key matches either, return it.
-4. If key < A[mid1], search left third.
+4. If key &lt; A[mid1], search left third.
 5. If key > A[mid2], search right third.
 6. If key is between mid1 and mid2, search middle third.
 
@@ -559,7 +559,7 @@ int ternarySearch(const vector<int>& arr, int low, int high, int key) {
 | Useful for unimodal function optimization | More comparisons per step than binary search |
 | Fewer recursion depth steps | Never faster than binary in practice |
 
-> **Remember:** Ternary search does 2 comparisons per step. Despite log₃ n < log₂ n, the constant factor (2× comparisons) makes it strictly slower than binary search for searching in arrays. Its real use is finding the maximum of a unimodal function where you can't directly compare with a target value.
+> **Remember:** Ternary search does 2 comparisons per step. Despite log₃ n &lt; log₂ n, the constant factor (2× comparisons) makes it strictly slower than binary search for searching in arrays. Its real use is finding the maximum of a unimodal function where you can't directly compare with a target value.
 
 ---
 
@@ -595,7 +595,7 @@ Finding max of unimodal f(x): → Ternary Search
 
 2. **Find first/last occurrence of a target** — Standard binary search variant. For first occurrence, don't stop when A[mid] == key; continue searching left (high = mid - 1). For last, continue right (low = mid + 1).
 
-3. **Peak element in a mountain array** — Binary search on the condition A[mid] < A[mid + 1]. If true, peak is on the right; otherwise, peak is on the left.
+3. **Peak element in a mountain array** — Binary search on the condition A[mid] &lt; A[mid + 1]. If true, peak is on the right; otherwise, peak is on the left.
 
 4. **Count occurrences in sorted array** — Find first and last occurrence with binary search, then last - first + 1.
 
@@ -606,7 +606,7 @@ Finding max of unimodal f(x): → Ternary Search
 | mid overflow | Use low + (high - low) / 2 |
 | Infinite loop (low == mid) | Ensure low = mid + 1, high = mid - 1 |
 | Binary search on unsorted data | Always sort first (or use linear) |
-| Off-by-one errors | Loop condition: low <= high, not low < high |
+| Off-by-one errors | Loop condition: low &lt;= high, not low < high |
 
 ---
 
@@ -647,7 +647,7 @@ Binary search is the most important algorithm in this chapter — master its sta
 - D) T(n) = T(n/3) + O(1)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** T(n) = T(n/2) + O(1) — each step halves the search space with constant work.
 </details>
 
@@ -659,7 +659,7 @@ Binary search is the most important algorithm in this chapter — master its sta
 - D) Interpolation search
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** Exponential search — it doesn't need to know the array length and probes outward in exponentially growing steps.
 </details>
 
@@ -671,7 +671,7 @@ Binary search is the most important algorithm in this chapter — master its sta
 - D) When using integer keys
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Interpolation search assumes uniform distribution. On skewed data like exponential distributions, it can make O(n) probes.
 </details>
 
@@ -683,7 +683,7 @@ Binary search is the most important algorithm in this chapter — master its sta
 - D) Ternary search can't handle duplicates
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Ternary search does 2 comparisons per step while binary search does 1. The total comparisons are 2·log₃(n) > log₂(n) for all practical n.
 </details>
 
@@ -695,7 +695,7 @@ Binary search is the most important algorithm in this chapter — master its sta
 - D) It works on unsorted arrays
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** The expression `low + (high - low) / 2` avoids integer overflow when low + high exceeds the maximum integer value.
 </details>
 

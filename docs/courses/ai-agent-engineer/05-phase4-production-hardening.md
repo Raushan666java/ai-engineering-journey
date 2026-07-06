@@ -652,19 +652,19 @@ Deploy Prometheus + Grafana alongside your RAG demo using docker-compose. Add th
 interface RetryConfig { maxRetries: number; baseDelay: number; maxDelay: number }
 class RetryMiddleware {
   constructor(private config: RetryConfig = {maxRetries:3,baseDelay:1000,maxDelay:10000}) {}
-  async execute<T>(fn: () => Promise<T>): Promise<T> {
+  async execute&lt;T>(fn: () =&gt; Promise&lt;T>): Promise<T&gt; {
     let lastErr: Error = new Error()
-    for(let i=0;i<=this.config.maxRetries;i++) try { return await fn() } catch(e) { lastErr = e as Error
-      if(i<this.config.maxRetries) await this.sleep(Math.min(this.config.baseDelay*Math.pow(2,i),this.config.maxDelay)) }
+    for(let i=0;i&lt;=this.config.maxRetries;i++) try { return await fn() } catch(e) { lastErr = e as Error
+      if(i&lt;this.config.maxRetries) await this.sleep(Math.min(this.config.baseDelay*Math.pow(2,i),this.config.maxDelay)) }
     throw lastErr
   }
-  private sleep(ms: number): Promise<void> { return new Promise(r => setTimeout(r,ms)) }
+  private sleep(ms: number): Promise&lt;void&gt; { return new Promise(r => setTimeout(r,ms)) }
 }
 class CircuitBreaker {
   private failures = 0; private state: "CLOSED"|"OPEN"|"HALF_OPEN" = "CLOSED"
   private lastFailureTime = 0
   constructor(private threshold: number=5, private resetTimeout: number=30000) {}
-  async call<T>(fn: () => Promise<T>): Promise<T> {
+  async call&lt;T>(fn: () =&gt; Promise&lt;T>): Promise<T&gt; {
     if(this.state === "OPEN") { if(Date.now()-this.lastFailureTime>this.resetTimeout) this.state="HALF_OPEN"
       else throw new Error("Circuit breaker is OPEN") }
     try { const result = await fn(); if(this.state==="HALF_OPEN") this.state="CLOSED"; this.failures=0; return result }
@@ -676,13 +676,13 @@ class CircuitBreaker {
 class RateLimiter {
   private tokens: number; private lastRefill = Date.now()
   constructor(private capacity: number, private refillRate: number) { this.tokens = capacity }
-  async acquire(): Promise<void> {
+  async acquire(): Promise&lt;void&gt; {
     this.refill()
-    if(this.tokens <= 0) { await this.sleep((1-this.tokens/this.refillRate)*1000); this.refill() }
+    if(this.tokens &lt;= 0) { await this.sleep((1-this.tokens/this.refillRate)*1000); this.refill() }
     this.tokens--
   }
   private refill(): void { const now=Date.now(); const elapsed=(now-this.lastRefill)/1000; this.tokens=Math.min(this.capacity,this.tokens+elapsed*this.refillRate); this.lastRefill=now }
-  private sleep(ms:number): Promise<void> { return new Promise(r=>setTimeout(r,ms)) }
+  private sleep(ms:number): Promise&lt;void&gt; { return new Promise(r=>setTimeout(r,ms)) }
 }
 export { RetryMiddleware, CircuitBreaker, RateLimiter }
 ## Phase 4 Done Checkpoint

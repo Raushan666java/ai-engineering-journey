@@ -1048,10 +1048,10 @@ Route::post('/docs/ask', DocumentationRagController::class)
 ## Chapter Quiz
 
 **1. Which PostgreSQL operator does pgvector use for cosine distance?**
-- a) <#>
-- b) <=>
-- c) <->
-- d) <@>
+- a) &lt;#>
+- b) &lt;=>
+- c) &lt;->
+- d) &lt;@>
 
 **2. What does the vector column dimension parameter (e.g., 1536) correspond to?**
 - a) The number of rows in the table

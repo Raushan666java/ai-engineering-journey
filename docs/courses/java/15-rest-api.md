@@ -3234,7 +3234,7 @@ public class CompleteBookController {
    - D) DELETE
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) POST.** POST creates a new resource. PUT is for full replacement and is idempotent.
 </details>
 
@@ -3245,7 +3245,7 @@ public class CompleteBookController {
    - D) Swagger documentation
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Control over HTTP status code, headers, and body.** ResponseEntity is a full HTTP response object offering fine-grained control.
 </details>
 
@@ -3256,7 +3256,7 @@ public class CompleteBookController {
    - D) Adds security
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Provides navigable links with responses.** HATEOAS embeds related resource links so clients discover the API through hypermedia.
 </details>
 

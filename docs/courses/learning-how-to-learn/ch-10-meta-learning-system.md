@@ -1593,7 +1593,7 @@ public class FeedbackLoopSystem {
 
 | Loop | If signal is weak | Take this action |
 |------|------------------|------------------|
-| Self-test | Accuracy <80% | Re-read the section. Create 5 new Anki cards. Test again in 1 hour. |
+| Self-test | Accuracy &lt;80% | Re-read the section. Create 5 new Anki cards. Test again in 1 hour. |
 | Peer review | >5 issues found | The gap is real. Spend 2 sessions filling it before moving on. |
 | Real-world | Code breaks | Add unit tests. Debug the failure. The real world always wins. |
 | Metrics | Velocity flat for 2 weeks | Run the plateau diagnostic (Q138). Change modality this week. |
@@ -1893,7 +1893,7 @@ D. 1:1:1 consumption to contribution ratio
 - D) The material is too advanced for their current level
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B � The Dunning-Kruger curve shows that as you learn more, you become more aware of what you don't know. The descent into the Valley of Despair is actually the first reliable sign of genuine competence � the confident ignorance of "Mount Stupid" has been replaced by informed humility.
 </details>
@@ -1905,7 +1905,7 @@ D. 1:1:1 consumption to contribution ratio
 - D) Join more study groups
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B � Meta-learning is the ultimate multiplier. Every hour invested in understanding how to learn pays compounded returns across all 27 courses and every future skill you acquire.
 </details>
@@ -1917,7 +1917,7 @@ D. 1:1:1 consumption to contribution ratio
 - D) They should track the number of courses completed
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B � Learning velocity requires leading indicators (daily/weekly actions you control) not just trailing indicators (exam outcomes). Problems solved per week, Anki retention rates, and chapters completed give actionable feedback long before the next exam.
 </details>

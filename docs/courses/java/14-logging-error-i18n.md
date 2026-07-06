@@ -2478,7 +2478,7 @@ Putting it all together:
    - D) Static fields
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Mapped Diagnostic Context (MDC).** MDC allows adding request-specific information that gets included in all subsequent log entries from the same thread.
 </details>
 
@@ -2489,7 +2489,7 @@ Putting it all together:
    - D) @ResponseStatus
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) @ControllerAdvice.** @ControllerAdvice combined with @ExceptionHandler methods provides global, cross-controller exception handling.
 </details>
 
@@ -2500,7 +2500,7 @@ Putting it all together:
    - D) OS locale settings
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) Resource bundle properties files.** Spring Boot uses MessageSource backed by messages.properties files per locale, resolved via Accept-Language header.
 </details>
 

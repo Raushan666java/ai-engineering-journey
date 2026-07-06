@@ -1404,7 +1404,7 @@ print(q.dequeue())  # 4
 
 **Problem:** Given an array and a window size k, find the maximum in every contiguous subarray of size k.
 
-**Approach:** Use a monotonic decreasing deque. For each element, remove from back while back < new element, then push. The front is the current window maximum.
+**Approach:** Use a monotonic decreasing deque. For each element, remove from back while back &lt; new element, then push. The front is the current window maximum.
 
 ```python
 from collections import deque

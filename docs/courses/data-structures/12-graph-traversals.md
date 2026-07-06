@@ -138,17 +138,17 @@ Start: vertex 0. Neighbors visited in ascending order.
 
 \\\cpp
 // C++ — Recursive DFS
-#include <iostream>
-#include <vector>
-#include <list>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;list&gt;
 
 class Graph {
     int V;
-    std::vector<std::list<int>> adj;
+    std::vector&lt;std::list<int&gt;> adj;
 
-    void dfsUtil(int v, std::vector<bool>& visited) {
+    void dfsUtil(int v, std::vector&lt;bool&gt;& visited) {
         visited[v] = true;
-        std::cout << v << " ";
+        std::cout &lt;< v << " ";
         for (int u : adj[v]) {
             if (!visited[u])
                 dfsUtil(u, visited);
@@ -162,9 +162,9 @@ public:
         adj[v].push_back(u);
     }
     void dfs(int s) {
-        std::vector<bool> visited(V, false);
+        std::vector&lt;bool&gt; visited(V, false);
         dfsUtil(s, visited);
-        std::cout << "\n";
+        std::cout &lt;< "\n";
     }
 };
 \\\
@@ -199,12 +199,12 @@ import java.util.*;
 
 class Graph {
     private int V;
-    private List<List<Integer>> adj;
+    private List&lt;List<Integer&gt;> adj;
 
     Graph(int n) {
         V = n;
-        adj = new ArrayList<>(V);
-        for (int i = 0; i < V; i++) adj.add(new ArrayList<>());
+        adj = new ArrayList&lt;>(V);
+        for (int i = 0; i &lt; V; i++) adj.add(new ArrayList<&gt;());
     }
 
     void addEdge(int u, int v) {
@@ -314,15 +314,15 @@ Start: vertex 0.
 
 \\\cpp
 // C++ — Iterative DFS
-void dfsIterative(int s, const std::vector<std::list<int>>& adj) {
+void dfsIterative(int s, const std::vector&lt;std::list<int&gt;>& adj) {
     int V = adj.size();
-    std::vector<bool> visited(V, false);
-    std::stack<int> st;
+    std::vector&lt;bool&gt; visited(V, false);
+    std::stack&lt;int&gt; st;
     visited[s] = true;
     st.push(s);
     while (!st.empty()) {
         int v = st.top(); st.pop();
-        std::cout << v << " ";
+        std::cout &lt;< v << " ";
         for (int u : adj[v]) {
             if (!visited[u]) {
                 visited[u] = true;
@@ -330,7 +330,7 @@ void dfsIterative(int s, const std::vector<std::list<int>>& adj) {
             }
         }
     }
-    std::cout << "\n";
+    std::cout &lt;< "\n";
 }
 \\\
 
@@ -353,10 +353,10 @@ def dfs_iterative(adj, s):
 
 \\\java
 // Java — Iterative DFS
-void dfsIterative(List<List<Integer>> adj, int s) {
+void dfsIterative(List&lt;List<Integer&gt;> adj, int s) {
     int V = adj.size();
     boolean[] visited = new boolean[V];
-    Stack<Integer> stack = new Stack<>();
+    Stack&lt;Integer&gt; stack = new Stack&lt;>();
     visited[s] = true;
     stack.push(s);
     while (!stack.isEmpty()) {
@@ -460,11 +460,11 @@ Start: vertex 0.
 
 \\\cpp
 // C++ — BFS
-#include <queue>
-std::vector<int> bfs(int s, const std::vector<std::list<int>>& adj) {
+#include &lt;queue&gt;
+std::vector&lt;int&gt; bfs(int s, const std::vector&lt;std::list<int&gt;>& adj) {
     int V = adj.size();
-    std::vector<int> dist(V, -1);
-    std::queue<int> q;
+    std::vector&lt;int&gt; dist(V, -1);
+    std::queue&lt;int&gt; q;
     dist[s] = 0;
     q.push(s);
     while (!q.empty()) {
@@ -500,10 +500,10 @@ def bfs(adj, s):
 
 \\\java
 // Java — BFS
-List<Integer> bfs(List<List<Integer>> adj, int s) {
+List&lt;Integer&gt; bfs(List&lt;List<Integer&gt;> adj, int s) {
     int V = adj.size();
-    List<Integer> dist = new ArrayList<>(Collections.nCopies(V, -1));
-    Queue<Integer> q = new LinkedList<>();
+    List&lt;Integer&gt; dist = new ArrayList&lt;>(Collections.nCopies(V, -1));
+    Queue&lt;Integer&gt; q = new LinkedList&lt;>();
     dist.set(s, 0);
     q.offer(s);
     while (!q.isEmpty()) {
@@ -609,14 +609,14 @@ Component 0:     Component 1:
 
 \\\cpp
 // C++ — Connected Components (Iterative DFS)
-int findComponents(const std::vector<std::list<int>>& adj,
-                   std::vector<int>& comp) {
+int findComponents(const std::vector&lt;std::list<int&gt;>& adj,
+                   std::vector&lt;int&gt;& comp) {
     int V = adj.size();
     comp.assign(V, -1);
     int id = 0;
-    for (int v = 0; v < V; ++v) {
+    for (int v = 0; v &lt; V; ++v) {
         if (comp[v] == -1) {
-            std::stack<int> st;
+            std::stack&lt;int&gt; st;
             st.push(v);
             comp[v] = id;
             while (!st.empty()) {
@@ -656,14 +656,14 @@ def find_components(adj):
 
 \\\java
 // Java — Connected Components
-int[] findComponents(List<List<Integer>> adj) {
+int[] findComponents(List&lt;List<Integer&gt;> adj) {
     int V = adj.size();
     int[] comp = new int[V];
     Arrays.fill(comp, -1);
     int id = 0;
-    for (int v = 0; v < V; v++) {
+    for (int v = 0; v &lt; V; v++) {
         if (comp[v] == -1) {
-            Stack<Integer> st = new Stack<>();
+            Stack&lt;Integer&gt; st = new Stack&lt;>();
             st.push(v);
             comp[v] = id;
             while (!st.isEmpty()) {
@@ -807,10 +807,10 @@ Graph: 0-1-2-0 (triangle)
 
 \\\cpp
 // C++ — Cycle Detection (Directed)
-bool hasCycleDirected(const std::vector<std::list<int>>& adj) {
+bool hasCycleDirected(const std::vector&lt;std::list<int&gt;>& adj) {
     int V = adj.size();
-    std::vector<bool> visited(V, false), recStack(V, false);
-    std::function<bool(int)> dfs = [&](int v) -> bool {
+    std::vector&lt;bool&gt; visited(V, false), recStack(V, false);
+    std::function&lt;bool(int)&gt; dfs = [&](int v) -> bool {
         visited[v] = recStack[v] = true;
         for (int u : adj[v]) {
             if (!visited[u]) { if (dfs(u)) return true; }
@@ -819,16 +819,16 @@ bool hasCycleDirected(const std::vector<std::list<int>>& adj) {
         recStack[v] = false;
         return false;
     };
-    for (int v = 0; v < V; ++v)
+    for (int v = 0; v &lt; V; ++v)
         if (!visited[v] && dfs(v)) return true;
     return false;
 }
 
 // C++ — Cycle Detection (Undirected)
-bool hasCycleUndirected(const std::vector<std::list<int>>& adj) {
+bool hasCycleUndirected(const std::vector&lt;std::list<int&gt;>& adj) {
     int V = adj.size();
-    std::vector<bool> visited(V, false);
-    std::function<bool(int, int)> dfs = [&](int v, int p) -> bool {
+    std::vector&lt;bool&gt; visited(V, false);
+    std::function&lt;bool(int, int)&gt; dfs = [&](int v, int p) -> bool {
         visited[v] = true;
         for (int u : adj[v]) {
             if (!visited[u]) { if (dfs(u, v)) return true; }
@@ -836,7 +836,7 @@ bool hasCycleUndirected(const std::vector<std::list<int>>& adj) {
         }
         return false;
     };
-    for (int v = 0; v < V; ++v)
+    for (int v = 0; v &lt; V; ++v)
         if (!visited[v] && dfs(v, -1)) return true;
     return false;
 }
@@ -882,16 +882,16 @@ def has_cycle_undirected(adj):
 
 \\\java
 // Java — Cycle Detection (Directed)
-boolean hasCycleDirected(List<List<Integer>> adj) {
+boolean hasCycleDirected(List&lt;List<Integer&gt;> adj) {
     int V = adj.size();
     boolean[] visited = new boolean[V];
     boolean[] recStack = new boolean[V];
-    for (int v = 0; v < V; v++)
+    for (int v = 0; v &lt; V; v++)
         if (!visited[v] && dfsDirected(v, adj, visited, recStack))
             return true;
     return false;
 }
-boolean dfsDirected(int v, List<List<Integer>> adj,
+boolean dfsDirected(int v, List&lt;List<Integer&gt;> adj,
         boolean[] visited, boolean[] recStack) {
     visited[v] = recStack[v] = true;
     for (int u : adj.get(v)) {
@@ -903,15 +903,15 @@ boolean dfsDirected(int v, List<List<Integer>> adj,
 }
 
 // Java — Cycle Detection (Undirected)
-boolean hasCycleUndirected(List<List<Integer>> adj) {
+boolean hasCycleUndirected(List&lt;List<Integer&gt;> adj) {
     int V = adj.size();
     boolean[] visited = new boolean[V];
-    for (int v = 0; v < V; v++)
+    for (int v = 0; v &lt; V; v++)
         if (!visited[v] && dfsUndirected(v, -1, adj, visited))
             return true;
     return false;
 }
-boolean dfsUndirected(int v, int parent, List<List<Integer>> adj,
+boolean dfsUndirected(int v, int parent, List&lt;List<Integer&gt;> adj,
         boolean[] visited) {
     visited[v] = true;
     for (int u : adj.get(v)) {
@@ -1026,12 +1026,12 @@ Now test a triangle (3-cycle — NOT bipartite):
 
 \\\cpp
 // C++ — Bipartite Check (BFS)
-bool isBipartite(const std::vector<std::list<int>>& adj) {
+bool isBipartite(const std::vector&lt;std::list<int&gt;>& adj) {
     int V = adj.size();
-    std::vector<int> color(V, -1);
-    for (int v = 0; v < V; ++v) {
+    std::vector&lt;int&gt; color(V, -1);
+    for (int v = 0; v &lt; V; ++v) {
         if (color[v] == -1) {
-            std::queue<int> q;
+            std::queue&lt;int&gt; q;
             color[v] = 0;
             q.push(v);
             while (!q.empty()) {
@@ -1075,13 +1075,13 @@ def is_bipartite(adj):
 
 \\\java
 // Java — Bipartite Check (BFS)
-boolean isBipartite(List<List<Integer>> adj) {
+boolean isBipartite(List&lt;List<Integer&gt;> adj) {
     int V = adj.size();
     int[] color = new int[V];
     Arrays.fill(color, -1);
-    for (int v = 0; v < V; v++) {
+    for (int v = 0; v &lt; V; v++) {
         if (color[v] == -1) {
-            Queue<Integer> q = new LinkedList<>();
+            Queue&lt;Integer&gt; q = new LinkedList&lt;>();
             color[v] = 0;
             q.offer(v);
             while (!q.isEmpty()) {
@@ -1137,7 +1137,7 @@ A **topological ordering** of a DAG is a linear ordering where for every edge u 
 3. While queue not empty:
    a. Dequeue u, add to result.
    b. For each neighbor v: decrement in-degree. If 0, enqueue v.
-4. If result size < V, a cycle exists.
+4. If result size &lt; V, a cycle exists.
 
 ### Algorithm Steps — DFS
 
@@ -1197,7 +1197,7 @@ DFS_Topo(G, v, visited, stack):
 
 Graph (DAG):
 \\\
-    5 -> 0 <- 4
+    5 -> 0 &lt;- 4
     v    v
     2 -> 3 -> 1
 \\\
@@ -1255,7 +1255,7 @@ Both 4, 5, 0, 2, 3, 1 (Kahn's) and 5, 4, 2, 3, 1, 0 (DFS) are valid topological 
 |--------|-----------------|-----------|
 | **Time** | O(V + E) — compute in-degrees O(E), each vertex/edge processed once | O(V + E) — standard DFS |
 | **Space** | O(V) — queue + in-degree array | O(V) — recursion stack + visited + stack |
-| **Cycle detection** | Built-in (result size < V) | Requires separate check |
+| **Cycle detection** | Built-in (result size &lt; V) | Requires separate check |
 
 **Why O(V + E) for both?** Kahn's: computing in-degrees takes O(E). The while loop processes each vertex and edge once. DFS: each vertex visited once, each edge examined once. The constant factors differ but the asymptotic complexity is identical.
 
@@ -1263,17 +1263,17 @@ Both 4, 5, 0, 2, 3, 1 (Kahn's) and 5, 4, 2, 3, 1, 0 (DFS) are valid topological 
 
 \\\cpp
 // C++ — Kahn's Algorithm
-std::vector<int> topologicalSortKahn(const std::vector<std::list<int>>& adj) {
+std::vector&lt;int&gt; topologicalSortKahn(const std::vector&lt;std::list<int&gt;>& adj) {
     int V = adj.size();
-    std::vector<int> inDeg(V, 0);
-    for (int u = 0; u < V; ++u)
+    std::vector&lt;int&gt; inDeg(V, 0);
+    for (int u = 0; u &lt; V; ++u)
         for (int v : adj[u]) ++inDeg[v];
 
-    std::queue<int> q;
-    for (int i = 0; i < V; ++i)
+    std::queue&lt;int&gt; q;
+    for (int i = 0; i &lt; V; ++i)
         if (inDeg[i] == 0) q.push(i);
 
-    std::vector<int> result;
+    std::vector&lt;int&gt; result;
     while (!q.empty()) {
         int u = q.front(); q.pop();
         result.push_back(u);
@@ -1285,21 +1285,21 @@ std::vector<int> topologicalSortKahn(const std::vector<std::list<int>>& adj) {
 }
 
 // C++ — DFS-Based Topological Sort
-void dfsTopo(int v, const std::vector<std::list<int>>& adj,
-             std::vector<bool>& visited, std::stack<int>& st) {
+void dfsTopo(int v, const std::vector&lt;std::list<int&gt;>& adj,
+             std::vector&lt;bool&gt;& visited, std::stack&lt;int&gt;& st) {
     visited[v] = true;
     for (int u : adj[v])
         if (!visited[u]) dfsTopo(u, adj, visited, st);
     st.push(v);
 }
 
-std::vector<int> topologicalSortDFS(const std::vector<std::list<int>>& adj) {
+std::vector&lt;int&gt; topologicalSortDFS(const std::vector&lt;std::list<int&gt;>& adj) {
     int V = adj.size();
-    std::vector<bool> visited(V, false);
-    std::stack<int> st;
-    for (int i = 0; i < V; ++i)
+    std::vector&lt;bool&gt; visited(V, false);
+    std::stack&lt;int&gt; st;
+    for (int i = 0; i &lt; V; ++i)
         if (!visited[i]) dfsTopo(i, adj, visited, st);
-    std::vector<int> result;
+    std::vector&lt;int&gt; result;
     while (!st.empty()) { result.push_back(st.top()); st.pop(); }
     return result;
 }
@@ -1343,41 +1343,41 @@ def topological_sort_dfs(adj):
 
 \\\java
 // Java — Kahn's Algorithm
-List<Integer> topologicalSortKahn(List<List<Integer>> adj) {
+List&lt;Integer&gt; topologicalSortKahn(List&lt;List<Integer&gt;> adj) {
     int V = adj.size();
     int[] inDeg = new int[V];
-    for (int u = 0; u < V; u++)
+    for (int u = 0; u &lt; V; u++)
         for (int v : adj.get(u)) inDeg[v]++;
-    Queue<Integer> q = new LinkedList<>();
-    for (int i = 0; i < V; i++)
+    Queue&lt;Integer&gt; q = new LinkedList&lt;>();
+    for (int i = 0; i &lt; V; i++)
         if (inDeg[i] == 0) q.offer(i);
-    List<Integer> result = new ArrayList<>();
+    List&lt;Integer&gt; result = new ArrayList&lt;>();
     while (!q.isEmpty()) {
         int u = q.poll();
         result.add(u);
         for (int v : adj.get(u))
             if (--inDeg[v] == 0) q.offer(v);
     }
-    if (result.size() != V) return new ArrayList<>();
+    if (result.size() != V) return new ArrayList&lt;>();
     return result;
 }
 
 // Java — DFS-Based Topological Sort
-void dfsTopo(int v, List<List<Integer>> adj,
-             boolean[] visited, Stack<Integer> stack) {
+void dfsTopo(int v, List&lt;List<Integer&gt;> adj,
+             boolean[] visited, Stack&lt;Integer&gt; stack) {
     visited[v] = true;
     for (int u : adj.get(v))
         if (!visited[u]) dfsTopo(u, adj, visited, stack);
     stack.push(v);
 }
 
-List<Integer> topologicalSortDFS(List<List<Integer>> adj) {
+List&lt;Integer&gt; topologicalSortDFS(List&lt;List<Integer&gt;> adj) {
     int V = adj.size();
     boolean[] visited = new boolean[V];
-    Stack<Integer> stack = new Stack<>();
-    for (int v = 0; v < V; v++)
+    Stack&lt;Integer&gt; stack = new Stack&lt;>();
+    for (int v = 0; v &lt; V; v++)
         if (!visited[v]) dfsTopo(v, adj, visited, stack);
-    List<Integer> result = new ArrayList<>();
+    List&lt;Integer&gt; result = new ArrayList&lt;>();
     while (!stack.isEmpty()) result.add(stack.pop());
     return result;
 }
@@ -1527,45 +1527,45 @@ Transpose adj:
 
 \\\cpp
 // C++ — Kosaraju's Algorithm
-#include <stack>
-#include <vector>
-#include <list>
+#include &lt;stack&gt;
+#include &lt;vector&gt;
+#include &lt;list&gt;
 
-void dfsFill(int v, const std::vector<std::list<int>>& adj,
-             std::vector<bool>& visited, std::stack<int>& st) {
+void dfsFill(int v, const std::vector&lt;std::list<int&gt;>& adj,
+             std::vector&lt;bool&gt;& visited, std::stack&lt;int&gt;& st) {
     visited[v] = true;
     for (int u : adj[v])
         if (!visited[u]) dfsFill(u, adj, visited, st);
     st.push(v);
 }
 
-void dfsCollect(int v, const std::vector<std::list<int>>& adjT,
-                std::vector<bool>& visited, std::vector<int>& comp) {
+void dfsCollect(int v, const std::vector&lt;std::list<int&gt;>& adjT,
+                std::vector&lt;bool&gt;& visited, std::vector&lt;int&gt;& comp) {
     visited[v] = true;
     comp.push_back(v);
     for (int u : adjT[v])
         if (!visited[u]) dfsCollect(u, adjT, visited, comp);
 }
 
-std::vector<std::vector<int>> kosaraju(const std::vector<std::list<int>>& adj) {
+std::vector&lt;std::vector<int&gt;> kosaraju(const std::vector&lt;std::list<int&gt;>& adj) {
     int V = adj.size();
-    std::vector<bool> visited(V, false);
-    std::stack<int> st;
+    std::vector&lt;bool&gt; visited(V, false);
+    std::stack&lt;int&gt; st;
 
-    for (int v = 0; v < V; ++v)
+    for (int v = 0; v &lt; V; ++v)
         if (!visited[v]) dfsFill(v, adj, visited, st);
 
     // Build transpose
-    std::vector<std::list<int>> adjT(V);
-    for (int v = 0; v < V; ++v)
+    std::vector&lt;std::list<int&gt;> adjT(V);
+    for (int v = 0; v &lt; V; ++v)
         for (int u : adj[v]) adjT[u].push_back(v);
 
-    std::vector<std::vector<int>> sccs;
+    std::vector&lt;std::vector<int&gt;> sccs;
     visited.assign(V, false);
     while (!st.empty()) {
         int v = st.top(); st.pop();
         if (!visited[v]) {
-            std::vector<int> comp;
+            std::vector&lt;int&gt; comp;
             dfsCollect(v, adjT, visited, comp);
             sccs.push_back(comp);
         }
@@ -1615,40 +1615,40 @@ def kosaraju(adj):
 
 \\\java
 // Java — Kosaraju's Algorithm
-void dfsFill(int v, List<List<Integer>> adj,
-             boolean[] visited, Stack<Integer> stack) {
+void dfsFill(int v, List&lt;List<Integer&gt;> adj,
+             boolean[] visited, Stack&lt;Integer&gt; stack) {
     visited[v] = true;
     for (int u : adj.get(v))
         if (!visited[u]) dfsFill(u, adj, visited, stack);
     stack.push(v);
 }
 
-void dfsCollect(int v, List<List<Integer>> adjT,
-                boolean[] visited, List<Integer> comp) {
+void dfsCollect(int v, List&lt;List<Integer&gt;> adjT,
+                boolean[] visited, List&lt;Integer&gt; comp) {
     visited[v] = true;
     comp.add(v);
     for (int u : adjT.get(v))
         if (!visited[u]) dfsCollect(u, adjT, visited, comp);
 }
 
-List<List<Integer>> kosaraju(List<List<Integer>> adj) {
+List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
     int V = adj.size();
     boolean[] visited = new boolean[V];
-    Stack<Integer> stack = new Stack<>();
-    for (int v = 0; v < V; v++)
+    Stack&lt;Integer&gt; stack = new Stack&lt;>();
+    for (int v = 0; v &lt; V; v++)
         if (!visited[v]) dfsFill(v, adj, visited, stack);
 
-    List<List<Integer>> adjT = new ArrayList<>();
-    for (int v = 0; v < V; v++) adjT.add(new ArrayList<>());
-    for (int v = 0; v < V; v++)
+    List&lt;List<Integer&gt;> adjT = new ArrayList&lt;>();
+    for (int v = 0; v &lt; V; v++) adjT.add(new ArrayList<&gt;());
+    for (int v = 0; v &lt; V; v++)
         for (int u : adj.get(v)) adjT.get(u).add(v);
 
     visited = new boolean[V];
-    List<List<Integer>> sccs = new ArrayList<>();
+    List&lt;List<Integer&gt;> sccs = new ArrayList&lt;>();
     while (!stack.isEmpty()) {
         int v = stack.pop();
         if (!visited[v]) {
-            List<Integer> comp = new ArrayList<>();
+            List&lt;Integer&gt; comp = new ArrayList&lt;>();
             dfsCollect(v, adjT, visited, comp);
             sccs.add(comp);
         }

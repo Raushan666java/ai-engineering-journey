@@ -571,7 +571,7 @@ const solutions: ScalingSolution[] = [
    - D) They cannot process smart contracts
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) They require a 7-day challenge window for withdrawals.** Optimistic Rollups assume transactions are valid unless challenged. This challenge period means users must wait ~7 days to withdraw funds to L1. ZK-Rollups have no such delay because validity proofs are verified immediately.
 </details>
 
@@ -582,7 +582,7 @@ const solutions: ScalingSolution[] = [
    - D) Shards don't have monetary value
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) An attacker only needs to compromise one shard, not the entire network.** Each shard has its own validator set and block production. Acquiring 51% of a single shard's stake or hash power is cheaper than acquiring 51% of the whole network.
 </details>
 
@@ -593,7 +593,7 @@ const solutions: ScalingSolution[] = [
    - D) STARKs work on mobile devices
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) STARKs require no trusted setup ceremony.** SNARKs require an initial trusted setup — if the setup's toxic waste is leaked, false proofs can be generated. STARKs use only publicly verifiable randomness, making them fully transparent and quantum-resistant.
 </details>
 
@@ -604,7 +604,7 @@ const solutions: ScalingSolution[] = [
    - D) Rollups can't process enough transactions
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) The rollup operator might withhold transaction data, preventing users from proving their balance or generating fraud proofs.** Without transaction data on L1, users cannot reconstruct the L2 state to challenge invalid state transitions. Blobs (EIP-4844) and data availability sampling solve this.
 </details>
 
@@ -615,7 +615,7 @@ const solutions: ScalingSolution[] = [
    - D) By mining blocks faster
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) By opening a multisig channel and updating balance commitments off-chain.** The Lightning Network creates 2-of-2 multisig payment channels where balance updates are signed off-chain but only the final balance is settled on-chain. This allows instant, low-fee micro-transactions without waiting for block confirmations.
 </details>
 
@@ -940,11 +940,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -952,7 +952,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

@@ -1259,7 +1259,7 @@ start:
 
 **Trace Table:**
 
-| Step | Code | i | Condition (i < 5) | Action |
+| Step | Code | i | Condition (i &lt; 5) | Action |
 |------|------|---|-------------------|--------|
 | 1 | `int i = 0;` | 0 | → | Var initialized |
 | 2 | `start:` | 0 | → | Label reached |
@@ -1523,7 +1523,7 @@ int main(void)
 
 **Trace Table → break (i == 3 triggers break):**
 
-| Step | i | i <= 5 | i == 3 | Action |
+| Step | i | i &lt;= 5 | i == 3 | Action |
 |------|---|--------|--------|--------|
 | 1 | 1 | true | false | Print "1 " |
 | 2 | 2 | true | false | Print "2 " |
@@ -1532,7 +1532,7 @@ int main(void)
 
 **Trace Table → continue (i == 3 triggers continue):**
 
-| Step | i | i <= 5 | i == 3 | Action |
+| Step | i | i &lt;= 5 | i == 3 | Action |
 |------|---|--------|--------|--------|
 | 1 | 1 | true | false | Print "1 " |
 | 2 | 2 | true | false | Print "2 " |
@@ -2507,7 +2507,7 @@ while (!done && !error) {
    C) Compiler error
    D) Undefined behavior
 
-<details><summary>Answer</summary>**A)** `x=1` assigns 1 (truthy), so the `if` branch executes.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** `x=1` assigns 1 (truthy), so the `if` branch executes.</details>
 
 2. In `switch(x)`, `x` must be which type?
    A) Any type including float
@@ -2515,7 +2515,7 @@ while (!done && !error) {
    C) String
    D) Pointer
 
-<details><summary>Answer</summary>**B)** `switch` works only with integral types and enums.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `switch` works only with integral types and enums.</details>
 
 3. What does `if (a && b++)` guarantee?
    A) `b` is always incremented
@@ -2523,7 +2523,7 @@ while (!done && !error) {
    C) Compiler error
    D) `b` is incremented before `a` is evaluated
 
-<details><summary>Answer</summary>**B)** Short-circuit `&&` stops if `a` is false, so `b++` never runs.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Short-circuit `&&` stops if `a` is false, so `b++` never runs.</details>
 
 4. What is the output of `break` vs `continue` in a loop?
    A) break continues, continue stops
@@ -2531,7 +2531,7 @@ while (!done && !error) {
    C) Both do the same thing
    D) Neither works inside for loops
 
-<details><summary>Answer</summary>**B)** `break` terminates the loop; `continue` skips to the next iteration.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `break` terminates the loop; `continue` skips to the next iteration.</details>
 
 5. What does Duff's Device demonstrate?
    A) How to use goto safely
@@ -2539,7 +2539,7 @@ while (!done && !error) {
    C) How to implement recursion
    D) String manipulation in C
 
-<details><summary>Answer</summary>**B)** Duff's Device uses switch with intentional fall-through for loop unrolling.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Duff's Device uses switch with intentional fall-through for loop unrolling.</details>
 
 6. In the Linux kernel, where is `goto` commonly used?
    A) Loop constructs
@@ -2547,7 +2547,7 @@ while (!done && !error) {
    C) String processing
    D) Function declarations
 
-<details><summary>Answer</summary>**B)** The kernel uses goto for single-point cleanup after multiple resource allocations.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The kernel uses goto for single-point cleanup after multiple resource allocations.</details>
 
 7. What does `if (x=0)` evaluate to?
    A) true
@@ -2555,7 +2555,7 @@ while (!done && !error) {
    C) Compiler error
    D) Undefined behavior
 
-<details><summary>Answer</summary>**B)** `x=0` assigns 0 (falsy), so the condition is false. Most compilers warn about this.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `x=0` assigns 0 (falsy), so the condition is false. Most compilers warn about this.</details>
 
 8. When should `switch` be preferred over `if-else if`?
    A) When comparing floating-point values
@@ -2563,7 +2563,7 @@ while (!done && !error) {
    C) When comparing strings
    D) When conditions involve ranges
 
-<details><summary>Answer</summary>**B)** Use switch for integer/enum value dispatch; compilers can generate O(1) jump tables.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Use switch for integer/enum value dispatch; compilers can generate O(1) jump tables.</details>
 
 9. What does the `continue` statement do in a `for` loop?
    A) Exits the loop
@@ -2571,7 +2571,7 @@ while (!done && !error) {
    C) Restarts the loop from the beginning
    D) Causes a compiler error
 
-<details><summary>Answer</summary>**B)** `continue` jumps to the increment expression (step 3 of for loop), then the condition is rechecked.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `continue` jumps to the increment expression (step 3 of for loop), then the condition is rechecked.</details>
 
 10. What is the difference between `return` and `exit()`?
     A) They are identical
@@ -2579,7 +2579,7 @@ while (!done && !error) {
     C) `return` terminates the program; `exit()` exits the function
     D) `exit()` is only used in loops
 
-<details><summary>Answer</summary>**B)** `return` returns control to the caller; `exit()` terminates the entire process.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `return` returns control to the caller; `exit()` terminates the entire process.</details>
 
 ---
 

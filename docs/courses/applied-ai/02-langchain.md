@@ -1231,7 +1231,7 @@ Defenses:
 - D. Memory
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** The Output Parser (specifically PydanticOutputParser) enforces a schema on LLM responses.
 </details>
@@ -1244,7 +1244,7 @@ Defenses:
 - D. To remove duplicate content
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** Chunk overlap ensures that context is not lost at chunk boundaries, improving retrieval quality.
 </details>
@@ -1257,7 +1257,7 @@ Defenses:
 - D. A prompt template with variables
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** An agent uses an LLM as a reasoning engine to dynamically select and sequence tool calls based on user input.
 </details>
@@ -1270,7 +1270,7 @@ Defenses:
 - D. By caching previous responses
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** RAG retrieves relevant documents from a vector store and includes them in the LLM prompt, grounding the response in actual data rather than relying solely on parametric knowledge.
 </details>
@@ -1283,7 +1283,7 @@ Defenses:
 - D. `chain = chain(prompt, llm, parser)`
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** LangChain uses the `|` operator (pipe syntax) to compose runnables: `prompt | llm | parser`.
 </details>

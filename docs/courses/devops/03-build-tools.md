@@ -942,15 +942,15 @@ plan.recommendations.forEach(r => console.log(`- ${r}`));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: Which build tool is fastest for TypeScript bundling?</summary>**A)** webpack<br>**B)** tsc<br>**C)** esbuild<br>**D)** rollup<br><br>**Answer: C)** esbuild</details>
+<details><summary>Question 1: Which build tool is fastest for TypeScript bundling?</summary>**A)** webpack<br>**B)** tsc<br>**C)** esbuild<br>**D)** rollup<br><br>**Answer: C)** esbuild&lt;/details&gt;
 
-<details><summary>Question 2: What is the purpose of a lock file (package-lock.json)?</summary>**A)** Lock the package version range<br>**B)** Pin exact versions of all transitive dependencies<br>**C)** Encrypt the package contents<br>**D)** Prevent accidental deletion<br><br>**Answer: B)** Pin exact versions of all transitive dependencies</details>
+<details><summary>Question 2: What is the purpose of a lock file (package-lock.json)?</summary>**A)** Lock the package version range<br>**B)** Pin exact versions of all transitive dependencies<br>**C)** Encrypt the package contents<br>**D)** Prevent accidental deletion<br><br>**Answer: B)** Pin exact versions of all transitive dependencies&lt;/details&gt;
 
-<details><summary>Question 3: What does tree shaking do?</summary>**A)** Organize code into trees<br>**B)** Remove unused exports from the bundle<br>**C)** Shake the build tree for errors<br>**D)** Split code into chunks<br><br>**Answer: B)** Remove unused exports from the bundle</details>
+<details><summary>Question 3: What does tree shaking do?</summary>**A)** Organize code into trees<br>**B)** Remove unused exports from the bundle<br>**C)** Shake the build tree for errors<br>**D)** Split code into chunks<br><br>**Answer: B)** Remove unused exports from the bundle&lt;/details&gt;
 
-<details><summary>Question 4: In CI pipelines, should you use `npm install` or `npm ci`?</summary>**A)** `npm install` — it's faster<br>**B)** `npm ci` — it respects the lock file and is deterministic<br>**C)** Both work the same way<br>**D)** Neither — use `yarn` instead<br><br>**Answer: B)** `npm ci` — it respects the lock file and is deterministic</details>
+<details><summary>Question 4: In CI pipelines, should you use `npm install` or `npm ci`?</summary>**A)** `npm install` — it's faster<br>**B)** `npm ci` — it respects the lock file and is deterministic<br>**C)** Both work the same way<br>**D)** Neither — use `yarn` instead<br><br>**Answer: B)** `npm ci` — it respects the lock file and is deterministic&lt;/details&gt;
 
-<details><summary>Question 5: What does the caret `^` in `"express": "^4.18.0"` mean?</summary>**A)** Compatible with version 4.x<br>**B)** Compatible with only 4.18.x<br>**C)** Compatible with 4.18.0 exactly<br>**D)** Compatible with any version<br><br>**Answer: A)** Compatible with version 4.x</details>
+<details><summary>Question 5: What does the caret `^` in `"express": "^4.18.0"` mean?</summary>**A)** Compatible with version 4.x<br>**B)** Compatible with only 4.18.x<br>**C)** Compatible with 4.18.0 exactly<br>**D)** Compatible with any version<br><br>**Answer: A)** Compatible with version 4.x&lt;/details&gt;
 
 ---
 

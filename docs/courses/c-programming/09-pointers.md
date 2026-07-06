@@ -2324,7 +2324,7 @@ int *p = arr;
 *(p + 10) = 100;    /* UNDEFINED — writes past array bounds */
 ```
 
-**Fix:** Always verify index < array length before access.
+**Fix:** Always verify index &lt; array length before access.
 
 ### Mistake 4: Returning Address of Local Variable
 
@@ -2454,7 +2454,7 @@ free(p);    /* UNDEFINED — double free corrupts heap */
    - C) Accesses arr[0] + 3
    - D) Compiler error
 
-<details><summary>Answer</summary>**A)** `*(arr + 3)` is equivalent to `arr[3]` by definition of array subscript.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** `*(arr + 3)` is equivalent to `arr[3]` by definition of array subscript.</details>
 
 2. Why does `int *p = NULL; *p = 5;` crash?
    - A) Syntax error
@@ -2462,7 +2462,7 @@ free(p);    /* UNDEFINED — double free corrupts heap */
    - C) NULL is read-only
    - D) Cannot assign to a pointer
 
-<details><summary>Answer</summary>**B)** Dereferencing NULL causes undefined behavior, typically a segmentation fault.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Dereferencing NULL causes undefined behavior, typically a segmentation fault.</details>
 
 3. If `int x = 10; int *p = &x;`, what is `*&x`?
    - A) Address of x
@@ -2470,7 +2470,7 @@ free(p);    /* UNDEFINED — double free corrupts heap */
    - C) Address of p
    - D) Compiler error
 
-<details><summary>Answer</summary>**B)** `&x` gets the address; `*` dereferences it — `*&x` is the same as `x`, which is 10.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `&x` gets the address; `*` dereferences it — `*&x` is the same as `x`, which is 10.</details>
 
 4. What is the output of `printf("%td", q - p)` if p points to arr[2] and q points to arr[5]?
    - A) 3
@@ -2478,7 +2478,7 @@ free(p);    /* UNDEFINED — double free corrupts heap */
    - C) 2
    - D) 5
 
-<details><summary>Answer</summary>**A)** `q - p` returns the number of elements between them: 5 - 2 = 3.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** `q - p` returns the number of elements between them: 5 - 2 = 3.</details>
 
 5. What is the type of `p` in `int *p[10]`?
    - A) Pointer to array of 10 ints
@@ -2486,7 +2486,7 @@ free(p);    /* UNDEFINED — double free corrupts heap */
    - C) Pointer to int
    - D) Array of 10 ints
 
-<details><summary>Answer</summary>**B)** The `[]` binds before `*`: `p` is an array of 10 `int*` elements.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The `[]` binds before `*`: `p` is an array of 10 `int*` elements.</details>
 
 6. What is wrong with this code: `int *p; *p = 5;`?
    - A) Nothing — it works fine
@@ -2494,7 +2494,7 @@ free(p);    /* UNDEFINED — double free corrupts heap */
    - C) Syntax error
    - D) Cannot assign through a pointer
 
-<details><summary>Answer</summary>**B)** p is a wild (uninitialized) pointer; dereferencing it is undefined behavior.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** p is a wild (uninitialized) pointer; dereferencing it is undefined behavior.</details>
 
 7. What does `const int *p` protect?
    - A) The pointer p from being changed
@@ -2502,7 +2502,7 @@ free(p);    /* UNDEFINED — double free corrupts heap */
    - C) Both the pointer and the value
    - D) Nothing — it is a warning only
 
-<details><summary>Answer</summary>**B)** `const int *p` means p points to a const int — you cannot change *p through p, but you can change p to point elsewhere.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `const int *p` means p points to a const int — you cannot change *p through p, but you can change p to point elsewhere.</details>
 
 8. Which of these is NOT a valid operation on a void pointer in standard C?
    - A) Assigning an address to it
@@ -2510,7 +2510,7 @@ free(p);    /* UNDEFINED — double free corrupts heap */
    - C) Pointer arithmetic (void* + 1)
    - D) Casting it to another pointer type
 
-<details><summary>Answer</summary>**C)** In standard C, arithmetic on void pointers is not allowed because the size of the pointed-to type is unknown.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** In standard C, arithmetic on void pointers is not allowed because the size of the pointed-to type is unknown.</details>
 
 ---
 
@@ -2778,13 +2778,13 @@ int main(void) {
 
 A) 4    B) 5    C) 16    D) 20
 
-<details><summary>Answer</summary>**A)** 4 — p points to arr[4], arr is arr[0], so p - arr = 4 elements apart.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** 4 — p points to arr[4], arr is arr[0], so p - arr = 4 elements apart.</details>
 
 11. How many bytes does `&arr + 1` advance past for `int arr[5]` on a 4-byte int system?
 
 A) 4    B) 8    C) 20    D) 40
 
-<details><summary>Answer</summary>**C)** 20 — `&arr` is int(*)[5], so +1 adds sizeof(arr) = 5 * 4 = 20 bytes.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** 20 — `&arr` is int(*)[5], so +1 adds sizeof(arr) = 5 * 4 = 20 bytes.</details>
 
 12. What is wrong with `int *p = malloc(10);`?
 
@@ -2793,7 +2793,7 @@ B) malloc takes no arguments
 C) No cast required but size should be `10 * sizeof(int)`
 D) Cannot assign void* to int*
 
-<details><summary>Answer</summary>**C)** The malloc allocates only 10 bytes, not 10 integers. It should be `malloc(10 * sizeof(int))`. In C, void* converts implicitly, so no cast is needed.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** The malloc allocates only 10 bytes, not 10 integers. It should be `malloc(10 * sizeof(int))`. In C, void* converts implicitly, so no cast is needed.</details>
 
 13. Which of these correctly declares a pointer to a function that takes a double and returns an int?
 
@@ -2802,7 +2802,7 @@ B) `int (*f)(double);`
 C) `int (*f)(double*);`
 D) `(int*)f(double);`
 
-<details><summary>Answer</summary>**B)** `int (*f)(double);` — parentheses around `*f` are mandatory; f is a pointer to function taking double and returning int.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `int (*f)(double);` — parentheses around `*f` are mandatory; f is a pointer to function taking double and returning int.</details>
 
 14. What is the output?
 
@@ -2818,4 +2818,4 @@ int main(void) {
 
 A) H    B) e    C) l    D) o
 
-<details><summary>Answer</summary>**B)** `*(p + 1)` accesses the element at index 1, which is 'e'.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `*(p + 1)` accesses the element at index 1, which is 'e'.</details>

@@ -516,7 +516,7 @@ function verifyAccountState(
    - D) Gas cost is the same regardless
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Writing from zero to non-zero is a cold storage access requiring more computation.** SSTORE from zero costs ~22,100 gas vs ~5,000 for updating existing storage. This incentivizes users to clear unused storage (gas refund).
 </details>
 
@@ -527,7 +527,7 @@ function verifyAccountState(
    - D) Both state and gas are refunded
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) All state changes are reverted, but gas is not refunded.** The miner performed computational work, so gas is consumed even though the transaction ultimately failed. This prevents DoS attacks where attackers revert cheap transactions.
 </details>
 
@@ -538,7 +538,7 @@ function verifyAccountState(
    - D) Contract accounts cannot send transactions
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Contract accounts can be programmed to execute multi-step operations atomically.** This enables composable DeFi operations (flash loans, multi-hop swaps) that execute as atomic units — either all steps succeed or none do.
 </details>
 
@@ -549,7 +549,7 @@ function verifyAccountState(
    - D) A percentage of the transaction value
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) A mandatory fee that is burned (removed from circulation).** In EIP-1559, the base fee is calculated per-block based on demand and is burned, potentially making ETH deflationary. The priority fee (tip) goes to the validator.
 </details>
 
@@ -560,7 +560,7 @@ function verifyAccountState(
    - D) Bitcoin's tree is actually a Patricia trie
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Patricia tries allow efficient proof of individual account states (key-value queries).** Ethereum needs to efficiently read, update, and prove the state of any account (balance, nonce, storage, code) by address. A Patricia Trie enables efficient key-value lookups and proofs, unlike Bitcoin's transaction-oriented Merkle tree.
 </details>
 
@@ -841,11 +841,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -853,7 +853,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

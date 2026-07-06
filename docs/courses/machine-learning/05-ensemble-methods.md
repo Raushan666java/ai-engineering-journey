@@ -580,7 +580,7 @@ console.log(`AdaBoost (20): ${(new AdaBoost(20).score(X, y) * 100).toFixed(2)}%`
    C) Bagging is for classification; Boosting is for regression
    D) Bagging reduces bias; Boosting reduces variance
 
-<details><summary>Answer</summary>**B)** Bagging trains models independently in parallel, while Boosting trains them sequentially where each model corrects the previous one's errors.
+<details><summary>Answer&lt;/summary&gt;**B)** Bagging trains models independently in parallel, while Boosting trains them sequentially where each model corrects the previous one's errors.
 </details>
 
 2. How does a Random Forest add extra randomness beyond standard Bagging?
@@ -589,7 +589,7 @@ console.log(`AdaBoost (20): ${(new AdaBoost(20).score(X, y) * 100).toFixed(2)}%`
    C) It uses random learning rates
    D) It randomly prunes trees after training
 
-<details><summary>Answer</summary>**B)** Random Forest considers a random subset of features at each split, decorrelating the trees beyond what bootstrapping alone achieves.
+<details><summary>Answer&lt;/summary&gt;**B)** Random Forest considers a random subset of features at each split, decorrelating the trees beyond what bootstrapping alone achieves.
 </details>
 
 3. In Gradient Boosting, what does each new model learn to predict?
@@ -598,7 +598,7 @@ console.log(`AdaBoost (20): ${(new AdaBoost(20).score(X, y) * 100).toFixed(2)}%`
    C) The residual errors of the previous model
    D) Random noise in the training data
 
-<details><summary>Answer</summary>**C)** Each new model in Gradient Boosting is trained on the residuals (errors) of the previous model to progressively reduce the overall error.
+<details><summary>Answer&lt;/summary&gt;**C)** Each new model in Gradient Boosting is trained on the residuals (errors) of the previous model to progressively reduce the overall error.
 </details>
 
 4. Why does the variance of a bagged ensemble approach $\rho\sigma^2$ as $M \to \infty$?
@@ -607,7 +607,7 @@ console.log(`AdaBoost (20): ${(new AdaBoost(20).score(X, y) * 100).toFixed(2)}%`
    C) The irreducible error dominates
    D) The averaging effect saturates at the correlation floor
 
-<details><summary>Answer</summary>**D)** The variance formula $\rho\sigma^2 + (1-\rho)\sigma^2/M$ shows that $M$ only affects the second term, which vanishes as $M \to \infty$, leaving the correlation floor $\rho\sigma^2$.
+<details><summary>Answer&lt;/summary&gt;**D)** The variance formula $\rho\sigma^2 + (1-\rho)\sigma^2/M$ shows that $M$ only affects the second term, which vanishes as $M \to \infty$, leaving the correlation floor $\rho\sigma^2$.
 </details>
 
 5. What is the Out-of-Bag (OOB) error estimate?
@@ -616,7 +616,7 @@ console.log(`AdaBoost (20): ${(new AdaBoost(20).score(X, y) * 100).toFixed(2)}%`
    C) The error on the training set after removing outliers
    D) The average error across all cross-validation folds
 
-<details><summary>Answer</summary>**B)** OOB error uses the ~37% of samples not selected in each bootstrap sample, providing a free, nearly unbiased validation estimate.
+<details><summary>Answer&lt;/summary&gt;**B)** OOB error uses the ~37% of samples not selected in each bootstrap sample, providing a free, nearly unbiased validation estimate.
 </details>
 
 ---
@@ -749,11 +749,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -761,7 +761,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -787,7 +787,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -805,23 +805,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'ml-algorithms demo')
   const log = new Logger()

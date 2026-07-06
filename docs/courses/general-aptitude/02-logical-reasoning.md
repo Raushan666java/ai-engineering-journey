@@ -820,7 +820,7 @@ console.log("Coding:", CodingDecoder.shiftCode("COMPUTER", 1));
 class SeatingArrangementGenerator {
   static generateLinear(
     persons: string[],
-    constraints: Array<{ a: string; relation: "left" | "right" | "adjacent" | "not_adjacent"; b: string }>
+    constraints: Array&lt;{ a: string; relation: "left" | "right" | "adjacent" | "not_adjacent"; b: string }&gt;
   ): string[] | null {
     const perms = this.permute(persons);
     for (const perm of perms) {
@@ -831,7 +831,7 @@ class SeatingArrangementGenerator {
 
   static generateCircular(
     persons: string[],
-    constraints: Array<{ a: string; relation: "left" | "right" | "adjacent" | "not_adjacent" | "opposite"; b: string }>
+    constraints: Array&lt;{ a: string; relation: "left" | "right" | "adjacent" | "not_adjacent" | "opposite"; b: string }&gt;
   ): string[] | null {
     const perms = this.permute(persons);
     for (const perm of perms) {
@@ -844,7 +844,7 @@ class SeatingArrangementGenerator {
     const ia = arr.indexOf(c.a), ib = arr.indexOf(c.b);
     if (ia === -1 || ib === -1) return false;
     switch (c.relation) {
-      case "left": return ia < ib;
+      case "left": return ia &lt; ib;
       case "right": return ia > ib;
       case "adjacent": return Math.abs(ia - ib) === 1;
       case "not_adjacent": return Math.abs(ia - ib) > 1;
@@ -867,9 +867,9 @@ class SeatingArrangementGenerator {
   }
 
   private static permute(arr: string[]): string[][] {
-    if (arr.length <= 1) return [arr];
+    if (arr.length &lt;= 1) return [arr];
     const result: string[][] = [];
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i &lt; arr.length; i++) {
       const rest = [...arr.slice(0, i), ...arr.slice(i + 1)];
       for (const p of this.permute(rest)) result.push([arr[i], ...p]);
     }
@@ -883,7 +883,7 @@ class SeatingArrangementGenerator {
 // -----------------------------------------------------
 
 class BloodRelationMapper {
-  private graph = new Map<string, { gender: string; parents: string[]; children: string[]; spouse?: string }>();
+  private graph = new Map&lt;string, { gender: string; parents: string[]; children: string[]; spouse?: string }&gt;();
 
   addPerson(name: string, gender: string): void {
     if (!this.graph.has(name)) this.graph.set(name, { gender, parents: [], children: [] });
@@ -906,8 +906,8 @@ class BloodRelationMapper {
 
   // Find relationship between two persons using BFS
   findRelation(a: string, b: string): string | null {
-    const visited = new Set<string>();
-    const queue: Array<[string, string[]]> = [[a, [a]]];
+    const visited = new Set&lt;string&gt;();
+    const queue: Array&lt;[string, string[]]&gt; = [[a, [a]]];
     while (queue.length > 0) {
       const [current, path] = queue.shift()!;
       if (visited.has(current)) continue;
@@ -932,7 +932,7 @@ class BloodRelationMapper {
     return output;
   }
 
-  private displayNode(name: string, depth: number, output: string[], visited: Set<string>): void {
+  private displayNode(name: string, depth: number, output: string[], visited: Set&lt;string&gt;): void {
     if (visited.has(name)) return;
     visited.add(name);
     const node = this.graph.get(name)!;

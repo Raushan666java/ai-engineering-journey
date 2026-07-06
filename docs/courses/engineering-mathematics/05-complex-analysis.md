@@ -183,7 +183,7 @@ $$f(z) = \sum_{n=0}^\infty a_n (z - z_0)^n, \quad |z - z_0| < R$$
 
 where $a_n = \frac{f^{(n)}(z_0)}{n!}$ and $R$ is the radius of convergence (distance to nearest singularity).
 
-**Laurent Series:** If $f$ is analytic in an annulus $r < |z - z_0| < R$, it has a Laurent series:
+**Laurent Series:** If $f$ is analytic in an annulus $r &lt; |z - z_0| < R$, it has a Laurent series:
 
 $$f(z) = \sum_{n=-\infty}^\infty a_n (z - z_0)^n$$
 
@@ -194,15 +194,15 @@ The **principal part** is $\sum_{n=-\infty}^{-1} a_n (z - z_0)^n$ (negative powe
 
 ### 5.8 Classification of Singularities
 
-**Isolated Singularity:** A point $z_0$ where $f$ is not analytic but is analytic in a punctured neighborhood $0 < |z - z_0| < \delta$.
+**Isolated Singularity:** A point $z_0$ where $f$ is not analytic but is analytic in a punctured neighborhood $0 &lt; |z - z_0| < \delta$.
 
 **Types of Isolated Singularities (from Laurent series):**
 
 | Principal Part | Singularity Type | Example |
 |----------------|-----------------|---------|
-| All $a_n = 0$ for $n < 0$ | **Removable** | $\frac{\sin z}{z}$ at $z = 0$ |
-| Finitely many $n < 0$ with nonzero $a_n$ | **Pole of order $m$** | $\frac{1}{z^2}$ at $z = 0$ (order 2) |
-| Infinitely many $n < 0$ nonzero | **Essential** | $e^{1/z}$ at $z = 0$ |
+| All $a_n = 0$ for $n &lt; 0$ | **Removable** | $\frac{\sin z}{z}$ at $z = 0$ |
+| Finitely many $n &lt; 0$ with nonzero $a_n$ | **Pole of order $m$** | $\frac{1}{z^2}$ at $z = 0$ (order 2) |
+| Infinitely many $n &lt; 0$ nonzero | **Essential** | $e^{1/z}$ at $z = 0$ |
 
 **Pole of order $m$:** $f(z) = \frac{g(z)}{(z - z_0)^m}$ where $g$ is analytic and $g(z_0) \neq 0$.
 
@@ -260,7 +260,7 @@ $$\int_0^{2\pi} F(\cos\theta, \sin\theta)\,d\theta = \oint_{|z|=1} f(z)\,dz = 2\
 
 **Signal Processing:** The Fourier transform is $F(\omega) = \int_{-\infty}^\infty f(t) e^{-i\omega t}\,dt$, analytic continuation reveals stability.
 
-**Control Theory:** The transfer function $H(s) = \frac{N(s)}{D(s)}$ is analytic except at poles. Pole locations determine system stability (all poles must have $\text{Re}(s) < 0$ for stability).
+**Control Theory:** The transfer function $H(s) = \frac{N(s)}{D(s)}$ is analytic except at poles. Pole locations determine system stability (all poles must have $\text{Re}(s) &lt; 0$ for stability).
 
 **Fluid Dynamics:** Complex potential $\Phi(z) = \phi + i\psi$ where $\phi$ is velocity potential and $\psi$ is stream function.
 
@@ -356,14 +356,14 @@ $$\int_0^{2\pi} \frac{d\theta}{2 + \cos\theta} = \frac{2}{i} \cdot 2\pi i \cdot 
 ### Example 6: Laurent Series
 
 Find the Laurent series expansion of $f(z) = \frac{1}{z(z-1)}$ in:
-a) $0 < |z| < 1$
+a) $0 &lt; |z| < 1$
 b) $|z| > 1$
 
 **Solution:**
 
 Use partial fractions: $\frac{1}{z(z-1)} = -\frac{1}{z} + \frac{1}{z-1}$
 
-a) For $0 < |z| < 1$: $|z| < 1$, so $\frac{1}{z-1} = -\frac{1}{1-z} = -\sum_{n=0}^\infty z^n$
+a) For $0 &lt; |z| < 1$: $|z| < 1$, so $\frac{1}{z-1} = -\frac{1}{1-z} = -\sum_{n=0}^\infty z^n$
 
 $$f(z) = -\frac{1}{z} - \sum_{n=0}^\infty z^n = -\frac{1}{z} - 1 - z - z^2 - z^3 - \cdots$$
 
@@ -398,7 +398,7 @@ $$\int_{-\infty}^\infty \frac{x^2}{(x^2+1)(x^2+4)}\,dx = \frac{\pi}{3}$$
 
 Find the electrostatic potential between two semi-infinite parallel plates held at potentials $V = 0$ and $V = 1$, separated by distance $\pi$.
 
-**Solution:** Consider the conformal map $w = \log z = \ln r + i\theta$. This maps the upper half-plane to the infinite strip $0 < \text{Im}(w) < \pi$.
+**Solution:** Consider the conformal map $w = \log z = \ln r + i\theta$. This maps the upper half-plane to the infinite strip $0 &lt; \text{Im}(w) < \pi$.
 
 The potential in the $w$-plane is $\phi(w) = \frac{1}{\pi}\text{Im}(w) = \frac{\theta}{\pi}$, which satisfies Laplace's equation $\nabla^2 \phi = 0$ and boundary conditions $\phi = 0$ on $\theta = 0$, $\phi = 1$ on $\theta = \pi$.
 
@@ -579,7 +579,7 @@ function contourIntegral(
   center: Complex, radius: number, n: number = 10000
 ): Complex {
   let sum = new Complex(0, 0);
-  for (let k = 0; k < n; k++) {
+  for (let k = 0; k &lt; n; k++) {
     const t1 = (2 * Math.PI * k) / n, t2 = (2 * Math.PI * (k + 1)) / n;
     const z1 = new Complex(center.re + radius * Math.cos(t1), center.im + radius * Math.sin(t1));
     const z2 = new Complex(center.re + radius * Math.cos(t2), center.im + radius * Math.sin(t2));
@@ -609,9 +609,9 @@ console.log(`Res(1/(z?+1), i): ${resI.re.toFixed(4)} + ${resI.im.toFixed(4)}i (e
 // Map complex grid: output magnitude for visualization purposes
 function complexMagnitudeGrid(f: (z: Complex, re: number, im: number) => Complex, size: number): number[][] {
   const grid: number[][] = [];
-  for (let i = 0; i < size; i++) {
+  for (let i = 0; i &lt; size; i++) {
     grid[i] = [];
-    for (let j = 0; j < size; j++) {
+    for (let j = 0; j &lt; size; j++) {
       const z = new Complex(-2 + 4 * i / size, -2 + 4 * j / size);
       grid[i][j] = f(z, z.re, z.im).mag();
     }
@@ -689,7 +689,7 @@ function contourIntegrate(
 ): Complex {
   let sum = new Complex(0, 0);
   const dt = (t1 - t0) / n;
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i &lt; n; i++) {
     const t = t0 + i * dt;
     sum = sum.add(f(gamma(t)).mul(new Complex(gamma(t + dt).re - gamma(t).re, gamma(t + dt).im - gamma(t).im)));
   }
@@ -702,7 +702,7 @@ function contourIntegrate(
 // --- Mandelbrot Set Generator ---
 function mandelbrot(cReal: number, cImag: number, maxIter: number): number {
   let zr = 0, zi = 0;
-  for (let n = 0; n < maxIter; n++) {
+  for (let n = 0; n &lt; maxIter; n++) {
     const zr2 = zr * zr - zi * zi + cReal;
     const zi2 = 2 * zr * zi + cImag;
     zr = zr2; zi = zi2;
@@ -712,9 +712,9 @@ function mandelbrot(cReal: number, cImag: number, maxIter: number): number {
 }
 function mandelbrotGrid(width: number, height: number, xMin: number, xMax: number, yMin: number, yMax: number): number[][] {
   const grid: number[][] = [];
-  for (let px = 0; px < width; px++) {
+  for (let px = 0; px &lt; width; px++) {
     grid[px] = [];
-    for (let py = 0; py < height; py++) {
+    for (let py = 0; py &lt; height; py++) {
       const x = xMin + (xMax - xMin) * px / width;
       const y = yMin + (yMax - yMin) * py / height;
       grid[px][py] = mandelbrot(x, y, 100);
@@ -746,9 +746,9 @@ console.log('\n4th roots of unity:', roots4.map(z => `(${z.re.toFixed(2)}, ${z.i
 // --- Power Series Radius of Convergence ---
 function radiusOfConvergence(seq: number[]): number {
   // ratio test: lim |a_{n+1}/a_n|
-  if (seq.length < 2) return Infinity;
+  if (seq.length &lt; 2) return Infinity;
   let lastRatio = 0;
-  for (let n = 0; n < seq.length - 1; n++) {
+  for (let n = 0; n &lt; seq.length - 1; n++) {
     const ratio = Math.abs(seq[n + 1] / seq[n]);
     if (isFinite(ratio)) lastRatio = ratio;
   }

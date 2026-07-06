@@ -939,7 +939,7 @@ FUNCTION aesRound(block, key):
 | 1 | Plaintext | "Hello World!!!" (16 bytes) | 0x48656C6C6F20576F726C64212121 |
 | 2 | XOR with IV | IV = 0xA1B2C3D4E5F60718293A4B5C6D7E8F90 | 0xE9D7A9B88AD57A075B564F7D4C9B6EB1 |
 | 3 | SubBytes (S-box) | 0xE9D7... | 0x1E9D... (non-linear byte substitution) |
-| 4 | ShiftRows | 0x1E9D... | Row 0 unchanged, Row 1 << 1, Row 2 << 2, Row 3 << 3 |
+| 4 | ShiftRows | 0x1E9D... | Row 0 unchanged, Row 1 &lt;< 1, Row 2 << 2, Row 3 << 3 |
 | 5 | MixColumns | Shifted state | Column mixing via GF(2^8) multiplication |
 | 6 | AddRoundKey | Mixed state XOR RoundKey 1 | First ciphertext block |
 | 7 | Repeat 9 more rounds | ... | Final ciphertext |
@@ -2126,7 +2126,7 @@ Linux breaks the monolithic root privilege into ~40 independent capabilities:
 | Capability | Description | Without Capability |
 |------------|-------------|-------------------|
 | CAP_CHOWN | Change file owner | Cannot chown files |
-| CAP_NET_BIND_SERVICE | Bind to ports < 1024 | Must use port >= 1024 |
+| CAP_NET_BIND_SERVICE | Bind to ports &lt; 1024 | Must use port &gt;= 1024 |
 | CAP_DAC_OVERRIDE | Bypass file permission checks | Must have correct perms |
 | CAP_SYS_ADMIN | Mount, swapon, etc. | Cannot mount filesystems |
 | CAP_NET_RAW | Use raw sockets | Cannot craft raw packets |

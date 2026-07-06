@@ -816,7 +816,7 @@ END FUNCTION
 | Step | x | y | Action | Value |
 |------|---|----|--------|-------|
 | 1 | 3.0 | 4.0 | fabs both | x=3.0, y=4.0 |
-| 2 | 3.0 | 4.0 | x < y? Yes: swap | x=4.0, y=3.0 |
+| 2 | 3.0 | 4.0 | x &lt; y? Yes: swap | x=4.0, y=3.0 |
 | 3 | 4.0 | 3.0 | x == 0? No | — |
 | 4 | 4.0 | 3.0 | t = 3.0 / 4.0 = 0.75 | t = 0.75 |
 | 5 | 4.0 | 3.0 | sqrt(1 + 0.75^2) = sqrt(1.5625) | 1.25 |
@@ -948,7 +948,7 @@ toupper('A') = 'A'
 | Function | Input | Internal check | Result |
 |----------|-------|---------------|--------|
 | `isalnum('9')` | '9' (57) | Is digit? Yes | 1 |
-| `isdigit('9')` | '9' (57) | 0x30 <= 57 <= 0x39? Yes | 1 |
+| `isdigit('9')` | '9' (57) | 0x30 &lt;= 57 <= 0x39? Yes | 1 |
 | `isalpha('9')` | '9' (57) | Is letter? No | 0 |
 | `isxdigit('9')` | '9' (57) | Is 0-9 or A-F? Yes | 1 |
 | `isspace('9')` | '9' (57) | Is space/tab/newline? No | 0 |
@@ -981,7 +981,7 @@ END FUNCTION
 | **Speed** | Single lookup or comparison — extremely fast | — |
 | **Locale** | Respects current locale for non-English characters | Behavior changes with `setlocale` |
 | **Portability** | ISO C — available on all platforms | Does not handle Unicode (only char/byte) |
-| **Safety** | Well-defined for all unsigned char values + EOF | Passing signed char < 0 (but not EOF) is UB |
+| **Safety** | Well-defined for all unsigned char values + EOF | Passing signed char &lt; 0 (but not EOF) is UB |
 
 ### Edge Cases
 

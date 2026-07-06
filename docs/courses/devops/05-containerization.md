@@ -825,15 +825,15 @@ console.log(cleanupManager.generateReport(cleanupManager.planCleanup(tags)));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is the main difference between containers and VMs?</summary>**A)** Containers are slower than VMs<br>**B)** Containers share the host kernel; VMs have their own kernel<br>**C)** VMs use less disk space<br>**D)** Containers cannot run Linux<br><br>**Answer: B)** Containers share the host kernel; VMs have their own kernel</details>
+<details><summary>Question 1: What is the main difference between containers and VMs?</summary>**A)** Containers are slower than VMs<br>**B)** Containers share the host kernel; VMs have their own kernel<br>**C)** VMs use less disk space<br>**D)** Containers cannot run Linux<br><br>**Answer: B)** Containers share the host kernel; VMs have their own kernel&lt;/details&gt;
 
-<details><summary>Question 2: What is the purpose of multi-stage builds?</summary>**A)** Build multiple images at once<br>**B)** Separate build dependencies from runtime for smaller images<br>**C)** Run multiple containers simultaneously<br>**D)** Speed up the build process<br><br>**Answer: B)** Separate build dependencies from runtime for smaller images</details>
+<details><summary>Question 2: What is the purpose of multi-stage builds?</summary>**A)** Build multiple images at once<br>**B)** Separate build dependencies from runtime for smaller images<br>**C)** Run multiple containers simultaneously<br>**D)** Speed up the build process<br><br>**Answer: B)** Separate build dependencies from runtime for smaller images&lt;/details&gt;
 
-<details><summary>Question 3: What is the OCI responsible for?</summary>**A)** Defining container image and runtime standards<br>**B)** Distributing Docker images<br>**C)** Providing container hosting<br>**D)** Managing container networks<br><br>**Answer: A)** Defining container image and runtime standards</details>
+<details><summary>Question 3: What is the OCI responsible for?</summary>**A)** Defining container image and runtime standards<br>**B)** Distributing Docker images<br>**C)** Providing container hosting<br>**D)** Managing container networks<br><br>**Answer: A)** Defining container image and runtime standards&lt;/details&gt;
 
-<details><summary>Question 4: Why should containers run as non-root?</summary>**A)** It's faster<br>**B)** It reduces the attack surface if the container is compromised<br>**C)** Root cannot access the network<br>**D)** Non-root users have better logging<br><br>**Answer: B)** It reduces the attack surface if the container is compromised</details>
+<details><summary>Question 4: Why should containers run as non-root?</summary>**A)** It's faster<br>**B)** It reduces the attack surface if the container is compromised<br>**C)** Root cannot access the network<br>**D)** Non-root users have better logging<br><br>**Answer: B)** It reduces the attack surface if the container is compromised&lt;/details&gt;
 
-<details><summary>Question 5: Why should you order Dockerfile instructions from least to most frequently changing?</summary>**A)** It makes the file easier to read<br>**B)** It maximizes Docker layer caching efficiency<br>**C)** It reduces the number of layers<br>**D)** It improves runtime performance<br><br>**Answer: B)** It maximizes Docker layer caching efficiency</details>
+<details><summary>Question 5: Why should you order Dockerfile instructions from least to most frequently changing?</summary>**A)** It makes the file easier to read<br>**B)** It maximizes Docker layer caching efficiency<br>**C)** It reduces the number of layers<br>**D)** It improves runtime performance<br><br>**Answer: B)** It maximizes Docker layer caching efficiency&lt;/details&gt;
 
 ---
 
@@ -846,11 +846,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -858,7 +858,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

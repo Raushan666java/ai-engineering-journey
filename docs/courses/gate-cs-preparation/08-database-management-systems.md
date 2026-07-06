@@ -552,7 +552,7 @@ Each transaction gets a unique timestamp (TS). Each data item stores:
 - **W_TS(A):** Largest TS of transaction that wrote A
 - **R_TS(A):** Largest TS of transaction that read A
 
-**Thomas Write Rule:** If TS(Ti) < W_TS(A), reject write (ignore for older writes).
+**Thomas Write Rule:** If TS(Ti) &lt; W_TS(A), reject write (ignore for older writes).
 - Allows some non-conflict-serializable schedules that are view-serializable
 
 #### Multiversion Concurrency Control (MVCC)
@@ -1448,7 +1448,7 @@ In extendible hashing, when a bucket overflows and its local depth equals global
 (d) A new overflow page is added
 
 **Answer:** (b) Directory doubles and bucket splits
-**Explanation:** When l = g (local depth = global depth) and overflow occurs: first double the directory (global depth++), then split the bucket (each part gets local depth = new global depth). If l < g, only the bucket splits without directory doubling.
+**Explanation:** When l = g (local depth = global depth) and overflow occurs: first double the directory (global depth++), then split the bucket (each part gets local depth = new global depth). If l &lt; g, only the bucket splits without directory doubling.
 
 ---
 
@@ -1904,13 +1904,13 @@ In Multiversion Concurrency Control, a read operation:
 ### D67. [GATE 2017, 2M, B+ Tree Deletion]
 A B+ tree of order d (max keys = 2d) has root with 5 keys after deletions. The root needs to merge with siblings. What condition triggers merging?
 
-(a) Root has < 2 keys
-(b) Root has < d keys
-(c) Root has < d+1 keys
+(a) Root has &lt; 2 keys
+(b) Root has &lt; d keys
+(c) Root has &lt; d+1 keys
 (d) Root has 0 keys
 
 **Answer:** (d) Root has 0 keys
-**Explanation:** The root node is special → it can have as few as 1 key (2 children for internal root). Merging at the root only occurs when the root becomes empty. For non-root internal nodes, merging occurs when keys < d (or children < ceil(order/2)).
+**Explanation:** The root node is special → it can have as few as 1 key (2 children for internal root). Merging at the root only occurs when the root becomes empty. For non-root internal nodes, merging occurs when keys &lt; d (or children < ceil(order/2)).
 
 ---
 

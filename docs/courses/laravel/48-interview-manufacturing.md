@@ -1393,7 +1393,7 @@ The goal is not to replace operators but to give them AI-powered decision suppor
 
 **Detection chain**:
 
-1. The `QualityControlAgent` detects the defect rate spike during its hourly check. It compares against the running 24-hour average (normally < 2%) and flags the change as statistically significant.
+1. The `QualityControlAgent` detects the defect rate spike during its hourly check. It compares against the running 24-hour average (normally &lt; 2%) and flags the change as statistically significant.
 
 2. The `DefectCorrelationAgent` correlates the defect pattern across production runs. It notices that all defective runs share the same raw material lot number from the `bill_of_materials` JSON field on the production orders.
 
@@ -1698,7 +1698,7 @@ class HybridTimeSeriesStore
 }
 ```
 
-The goal is a system that handles 10,000 readings/second at peak with < 1 second end-to-end ingestion latency, and scales linearly by adding workers and database partitions.
+The goal is a system that handles 10,000 readings/second at peak with &lt; 1 second end-to-end ingestion latency, and scales linearly by adding workers and database partitions.
 
 ---
 
@@ -1751,7 +1751,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Only machine utilization
 - D) Only material usage
 
-<details><summary>Answer</summary>B) Capacity planning and demand forecasting</details>
+<details><summary>Answer&lt;/summary&gt;B) Capacity planning and demand forecasting&lt;/details&gt;
 
 **Q2:** What is the key benefit of predictive maintenance?
 - A) Lower equipment cost
@@ -1759,7 +1759,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Faster production
 - D) Better quality
 
-<details><summary>Answer</summary>B) Preventing failures before they occur</details>
+<details><summary>Answer&lt;/summary&gt;B) Preventing failures before they occur&lt;/details&gt;
 
 **Q3:** What does quality control use for defect detection?
 - A) Random inspection
@@ -1767,7 +1767,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Customer complaints only
 - D) Visual inspection only
 
-<details><summary>Answer</summary>B) Statistical sampling and inspection workflows</details>
+<details><summary>Answer&lt;/summary&gt;B) Statistical sampling and inspection workflows&lt;/details&gt;
 
 **Q4:** What is the main trade-off in inventory management?
 - A) Quality vs quantity
@@ -1775,7 +1775,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Speed vs accuracy
 - D) Local vs global sourcing
 
-<details><summary>Answer</summary>B) Stock availability vs carrying cost</details>
+<details><summary>Answer&lt;/summary&gt;B) Stock availability vs carrying cost&lt;/details&gt;
 
 ---
 
@@ -1826,7 +1826,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Only machine utilization
 - D) Only material usage
 
-<details><summary>Answer</summary>B) Capacity planning and demand forecasting</details>
+<details><summary>Answer&lt;/summary&gt;B) Capacity planning and demand forecasting&lt;/details&gt;
 
 **Q2:** What is the key benefit of predictive maintenance?
 - A) Lower equipment cost
@@ -1834,7 +1834,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Faster production
 - D) Better quality
 
-<details><summary>Answer</summary>B) Preventing failures before they occur</details>
+<details><summary>Answer&lt;/summary&gt;B) Preventing failures before they occur&lt;/details&gt;
 
 **Q3:** What does quality control use for defect detection?
 - A) Random inspection
@@ -1842,7 +1842,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Customer complaints only
 - D) Visual inspection only
 
-<details><summary>Answer</summary>B) Statistical sampling and inspection workflows</details>
+<details><summary>Answer&lt;/summary&gt;B) Statistical sampling and inspection workflows&lt;/details&gt;
 
 **Q4:** What is the main trade-off in inventory management?
 - A) Quality vs quantity
@@ -1850,7 +1850,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Speed vs accuracy
 - D) Local vs global sourcing
 
-<details><summary>Answer</summary>B) Stock availability vs carrying cost</details>
+<details><summary>Answer&lt;/summary&gt;B) Stock availability vs carrying cost&lt;/details&gt;
 
 ---
 
@@ -1901,7 +1901,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Only machine utilization
 - D) Only material usage
 
-<details><summary>Answer</summary>B) Capacity planning and demand forecasting</details>
+<details><summary>Answer&lt;/summary&gt;B) Capacity planning and demand forecasting&lt;/details&gt;
 
 **Q2:** What is the key benefit of predictive maintenance?
 - A) Lower equipment cost
@@ -1909,7 +1909,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Faster production
 - D) Better quality
 
-<details><summary>Answer</summary>B) Preventing failures before they occur</details>
+<details><summary>Answer&lt;/summary&gt;B) Preventing failures before they occur&lt;/details&gt;
 
 **Q3:** What does quality control use for defect detection?
 - A) Random inspection
@@ -1917,7 +1917,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Customer complaints only
 - D) Visual inspection only
 
-<details><summary>Answer</summary>B) Statistical sampling and inspection workflows</details>
+<details><summary>Answer&lt;/summary&gt;B) Statistical sampling and inspection workflows&lt;/details&gt;
 
 **Q4:** What is the main trade-off in inventory management?
 - A) Quality vs quantity
@@ -1925,7 +1925,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Speed vs accuracy
 - D) Local vs global sourcing
 
-<details><summary>Answer</summary>B) Stock availability vs carrying cost</details>
+<details><summary>Answer&lt;/summary&gt;B) Stock availability vs carrying cost&lt;/details&gt;
 
 ---
 
@@ -1976,7 +1976,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Only machine utilization
 - D) Only material usage
 
-<details><summary>Answer</summary>B) Capacity planning and demand forecasting</details>
+<details><summary>Answer&lt;/summary&gt;B) Capacity planning and demand forecasting&lt;/details&gt;
 
 **Q2:** What is the key benefit of predictive maintenance?
 - A) Lower equipment cost
@@ -1984,7 +1984,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Faster production
 - D) Better quality
 
-<details><summary>Answer</summary>B) Preventing failures before they occur</details>
+<details><summary>Answer&lt;/summary&gt;B) Preventing failures before they occur&lt;/details&gt;
 
 **Q3:** What does quality control use for defect detection?
 - A) Random inspection
@@ -1992,7 +1992,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Customer complaints only
 - D) Visual inspection only
 
-<details><summary>Answer</summary>B) Statistical sampling and inspection workflows</details>
+<details><summary>Answer&lt;/summary&gt;B) Statistical sampling and inspection workflows&lt;/details&gt;
 
 **Q4:** What is the main trade-off in inventory management?
 - A) Quality vs quantity
@@ -2000,7 +2000,7 @@ The goal is a system that handles 10,000 readings/second at peak with < 1 second
 - C) Speed vs accuracy
 - D) Local vs global sourcing
 
-<details><summary>Answer</summary>B) Stock availability vs carrying cost</details>
+<details><summary>Answer&lt;/summary&gt;B) Stock availability vs carrying cost&lt;/details&gt;
 
 ## Summary
 

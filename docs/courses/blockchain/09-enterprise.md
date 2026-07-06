@@ -560,7 +560,7 @@ const collectionConfig = [
    - D) To store chaincode in a database
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) To create a private sub-network where only authorized members see transactions.** Channels provide data isolation — members on different channels cannot see each other's transactions, enabling competing organizations to share only necessary data.
 </details>
 
@@ -571,7 +571,7 @@ const collectionConfig = [
    - D) It is less secure
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It is faster because it assumes a known, trusted participant set with crash-fault or Byzantine tolerance.** Fabric's ordering service establishes transaction order without energy-intensive competition, achieving near-instant finality suitable for business throughput needs.
 </details>
 
@@ -582,7 +582,7 @@ const collectionConfig = [
    - D) Ethereum cannot track physical assets
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Fabric provides privacy (competitors see different data), identity management (X.509), and higher throughput.** Supply chains need confidential pricing between partners while maintaining an audit trail — Fabric's channel architecture and MSP identity model are designed for this.
 </details>
 
@@ -593,7 +593,7 @@ const collectionConfig = [
    - D) To issue identities
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) To simulate and endorse transactions before they are ordered.** Endorsing peers receive transaction proposals, simulate chaincode execution, and return read-write sets with their endorsement signature. The client must collect enough endorsements to satisfy the endorsement policy before submitting to the orderer.
 </details>
 
@@ -604,7 +604,7 @@ const collectionConfig = [
    - D) A collection of private blockchains
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) A method for restricting data visibility to specific members within a channel.** PDCs allow certain data to be shared only with specific organization peers, even within the same channel. Data is stored in a private state database and is not visible to all channel members.
 </details>
 
@@ -900,11 +900,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -912,7 +912,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

@@ -76,7 +76,7 @@ A hash function transforms a key into an integer index within the bucket array r
 **Common hash functions:**
 
 1. **Division method:** \( h(k) = k \bmod m \) — simple but choose m as a prime not near a power of 2.
-2. **Multiplication method:** \( h(k) = \lfloor m \cdot (kA \bmod 1) \rfloor \) where \( 0 < A < 1 \) (Knuth suggests \( A = (\sqrt{5} - 1)/2 \approx 0.618 \)).
+2. **Multiplication method:** \( h(k) = \lfloor m \cdot (kA \bmod 1) \rfloor \) where \( 0 &lt; A < 1 \) (Knuth suggests \( A = (\sqrt{5} - 1)/2 \approx 0.618 \)).
 3. **Polynomial rolling hash for strings:** \( h(s) = (\sum_{i=0}^{n-1} s[i] \cdot p^{i}) \bmod m \) — typical p = 31 or 131.
 4. **DJB2 hash (popular for strings):** `hash = ((hash << 5) + hash) + c` — simple, good distribution.
 
@@ -500,7 +500,7 @@ class HashTableChaining<K, V> {
 | Simple to implement | Extra memory for pointers (overhead) |
 | Safe deletion (no tombstones) | Cache-unfriendly (pointer chasing) |
 | Handles high load factors well | Worst-case O(n) with bad hash |
-| α < 1.0 not strictly required | Linked list traversal slower than array |
+| α &lt; 1.0 not strictly required | Linked list traversal slower than array |
 
 **Edge Cases:**
 - **All keys hash to same bucket:** degrades to singly linked list — O(n) worst-case operations.
@@ -640,7 +640,7 @@ Probe sequence: `p(k, i) = (h₁(k) + i * h₂(k)) mod m`
 
 Where:
 - `h₁(k) = k mod m` (primary hash)
-- `h₂(k)` is a second hash function, typically `h₂(k) = prime - (k mod prime)` where prime < m.
+- `h₂(k)` is a second hash function, typically `h₂(k) = prime - (k mod prime)` where prime &lt; m.
 
 **Algorithm: Insert with Double Hashing**
 
@@ -1222,12 +1222,12 @@ class HashTableOpen<K, V> {
 
 | Operation | Average | Worst Case | Why |
 |-----------|---------|------------|-----|
-| Search | O(1) | O(n) | Average: α < 0.7, few probes; Worst: table nearly full |
+| Search | O(1) | O(n) | Average: α &lt; 0.7, few probes; Worst: table nearly full |
 | Insert | O(1) | O(n) | Average: few probes; Worst: full probe chain |
 | Delete | O(1) | O(n) | Average: similar to search; Worst: tombstone chain |
 | Rehash | O(n) | O(n) | Must recompute and reinsert all entries |
 
-**Why average-case O(1):** With load factor α < 0.7, the expected number of probes for linear probing is about 1/(1-α) — at α=0.5, expected 2 probes; at α=0.7, expected ~3.3 probes. That's constant.
+**Why average-case O(1):** With load factor α &lt; 0.7, the expected number of probes for linear probing is about 1/(1-α) — at α=0.5, expected 2 probes; at α=0.7, expected ~3.3 probes. That's constant.
 
 **Advantages & Disadvantages**
 
@@ -1698,7 +1698,7 @@ class CuckooHashTable<K, V> {
 |---------|----------|---------------|
 | Memory overhead | Pointers for linked lists (per entry) | No extra pointers |
 | Cache performance | Poor (scattered linked list nodes) | Good (contiguous array) |
-| Load factor limit | Can exceed 1.0 (just degrades) | Must stay < 0.7-0.8 |
+| Load factor limit | Can exceed 1.0 (just degrades) | Must stay &lt; 0.7-0.8 |
 | Deletion | Simple — remove from list | Complex — tombstones required |
 | Worst-case search | O(n) — all keys one bucket | O(n) — full probe scan |
 | Clustering | None | Primary/secondary clustering |
@@ -1755,7 +1755,7 @@ class CuckooHashTable<K, V> {
 
 ## Pro Tips
 
-- **Load factor is your most important metric**: Keep α < 0.75 for open addressing, α < 1.0 for chaining. Rehash when the threshold is exceeded.
+- **Load factor is your most important metric**: Keep α &lt; 0.75 for open addressing, α < 1.0 for chaining. Rehash when the threshold is exceeded.
 - **Choose the right probing strategy**: Linear probing is cache-friendly but suffers from primary clustering. Quadratic probing reduces clustering but may not find an empty slot even if one exists. Double hashing is safest for open addressing.
 - **Hash functions for integers**: Use Knuth's multiplicative method: h(k) = ⌊m · (k · φ mod 1)⌋ where φ = (√5 − 1)/2. This distributes sequential keys uniformly.
 - **Bloom filters save memory**: A Bloom filter uses a bit array and k hash functions. With 10 bits per element and 7 hash functions, false positive rate is ~1%. No false negatives.

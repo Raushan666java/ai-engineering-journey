@@ -385,7 +385,7 @@ int main() {
 | C++17 | auto (deduced non-type) |
 | C++20 | Floating-point types, literal class types |
 
-**Dry Run: FixedArray<int, 5> Instantiation**
+**Dry Run: FixedArray&lt;int, 5&gt; Instantiation**
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
@@ -1269,7 +1269,7 @@ int main() {
 Modified 0: 100
 ```
 
-**Memory layout of Tuple<int, double, string>:**
+**Memory layout of Tuple&lt;int, double, string&gt;:**
 
 ```
 ┌─────────────────────────────────────────────┐

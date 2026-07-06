@@ -127,9 +127,9 @@ DETERMINE_GRAPH_PROPERTIES(edges):
 #### 1.5 C++ Implementation
 
 `cpp
-#include <iostream>
-#include <vector>
-#include <tuple>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;tuple&gt;
 using namespace std;
 
 struct Edge {
@@ -139,7 +139,7 @@ struct Edge {
         : u(u), v(v), w(w), hasWeight(hw) {}
 };
 
-pair<bool,bool> determineGraphType(const vector<Edge>& edges) {
+pair&lt;bool,bool&gt; determineGraphType(const vector&lt;Edge&gt;& edges) {
     bool isDirected = false;
     bool isWeighted = false;
     for (const auto& e : edges) {
@@ -154,9 +154,9 @@ pair<bool,bool> determineGraphType(const vector<Edge>& edges) {
 }
 
 int main() {
-    vector<Edge> edges = {{0,1,5,true},{1,2,3,true},{2,0,4,true},{1,3,2,true}};
+    vector&lt;Edge&gt; edges = {{0,1,5,true},{1,2,3,true},{2,0,4,true},{1,3,2,true}};
     auto [dir, wt] = determineGraphType(edges);
-    cout << "Directed: " << dir << ", Weighted: " << wt << endl;
+    cout &lt;< "Directed: " << dir << ", Weighted: " << wt << endl;
     return 0;
 }
 `
@@ -198,9 +198,9 @@ class Edge {
 }
 
 class Main {
-    static boolean[] determineGraphType(List<Edge> edges) {
+    static boolean[] determineGraphType(List&lt;Edge&gt; edges) {
         boolean isDirected = false, isWeighted = false;
-        Set<String> set = new HashSet<>();
+        Set&lt;String&gt; set = new HashSet&lt;>();
         for (Edge e : edges) {
             if (e.hasWeight) isWeighted = true;
             set.add(e.u + "," + e.v);
@@ -212,7 +212,7 @@ class Main {
     }
 
     public static void main(String[] args) {
-        List<Edge> edges = Arrays.asList(
+        List&lt;Edge&gt; edges = Arrays.asList(
             new Edge(0,1,5), new Edge(1,2,3),
             new Edge(2,0,4), new Edge(1,3,2));
         boolean[] res = determineGraphType(edges);
@@ -362,43 +362,43 @@ GET_NEIGHBORS(matrix, n, v):
 #### 2.5 C++ Implementation
 
 `cpp
-#include <iostream>
-#include <vector>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
 using namespace std;
 
 class AdjacencyMatrix {
     int n;
-    vector<vector<int>> mat;
+    vector&lt;vector<int&gt;> mat;
     bool directed;
 public:
     AdjacencyMatrix(int n, bool dir = false) : n(n), directed(dir) {
-        mat.assign(n, vector<int>(n, 0));
+        mat.assign(n, vector&lt;int&gt;(n, 0));
     }
 
     void addEdge(int u, int v, int w = 1) {
-        if (u < 0 || u >= n || v < 0 || v >= n) return;
+        if (u &lt; 0 || u &gt;= n || v &lt; 0 || v &gt;= n) return;
         mat[u][v] = w;
         if (!directed) mat[v][u] = w;
     }
 
     bool hasEdge(int u, int v) {
-        if (u < 0 || u >= n || v < 0 || v >= n) return false;
+        if (u &lt; 0 || u &gt;= n || v &lt; 0 || v &gt;= n) return false;
         return mat[u][v] != 0;
     }
 
-    vector<int> getNeighbors(int v) {
-        vector<int> res;
-        if (v < 0 || v >= n) return res;
-        for (int i = 0; i < n; i++)
+    vector&lt;int&gt; getNeighbors(int v) {
+        vector&lt;int&gt; res;
+        if (v &lt; 0 || v &gt;= n) return res;
+        for (int i = 0; i &lt; n; i++)
             if (mat[v][i] != 0) res.push_back(i);
         return res;
     }
 
     void print() {
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++)
-                cout << mat[i][j] << " ";
-            cout << "\n";
+        for (int i = 0; i &lt; n; i++) {
+            for (int j = 0; j &lt; n; j++)
+                cout &lt;< mat[i][j] << " ";
+            cout &lt;< "\n";
         }
     }
 };
@@ -410,11 +410,11 @@ int main() {
     g.addEdge(1, 2);
     g.addEdge(2, 3);
     g.print();
-    cout << "Edge (0,1): " << g.hasEdge(0,1) << "\n";
-    cout << "Edge (1,3): " << g.hasEdge(1,3) << "\n";
-    cout << "Neighbors of 2: ";
-    for (int v : g.getNeighbors(2)) cout << v << " ";
-    cout << "\n";
+    cout &lt;< "Edge (0,1): " << g.hasEdge(0,1) << "\n";
+    cout &lt;< "Edge (1,3): " << g.hasEdge(1,3) << "\n";
+    cout &lt;< "Neighbors of 2: ";
+    for (int v : g.getNeighbors(2)) cout &lt;< v << " ";
+    cout &lt;< "\n";
     return 0;
 }
 `
@@ -440,14 +440,14 @@ class AdjacencyMatrix:
         self.mat = [[0] * n for _ in range(n)]
 
     def add_edge(self, u, v, w=1):
-        if not (0 <= u < self.n and 0 <= v < self.n):
+        if not (0 &lt;= u < self.n and 0 <= v < self.n):
             return
         self.mat[u][v] = w
         if not self.directed:
             self.mat[v][u] = w
 
     def has_edge(self, u, v):
-        if not (0 <= u < self.n and 0 <= v < self.n):
+        if not (0 &lt;= u < self.n and 0 <= v < self.n):
             return False
         return self.mat[u][v] != 0
 
@@ -485,7 +485,7 @@ class AdjacencyMatrix {
     }
 
     public void addEdge(int u, int v, int w) {
-        if (u < 0 || u >= n || v < 0 || v >= n) return;
+        if (u &lt; 0 || u &gt;= n || v &lt; 0 || v &gt;= n) return;
         mat[u][v] = w;
         if (!directed) mat[v][u] = w;
     }
@@ -493,21 +493,21 @@ class AdjacencyMatrix {
     public void addEdge(int u, int v) { addEdge(u, v, 1); }
 
     public boolean hasEdge(int u, int v) {
-        if (u < 0 || u >= n || v < 0 || v >= n) return false;
+        if (u &lt; 0 || u &gt;= n || v &lt; 0 || v &gt;= n) return false;
         return mat[u][v] != 0;
     }
 
-    public List<Integer> getNeighbors(int v) {
-        List<Integer> res = new ArrayList<>();
-        if (v < 0 || v >= n) return res;
-        for (int i = 0; i < n; i++)
+    public List&lt;Integer&gt; getNeighbors(int v) {
+        List&lt;Integer&gt; res = new ArrayList&lt;>();
+        if (v &lt; 0 || v &gt;= n) return res;
+        for (int i = 0; i &lt; n; i++)
             if (mat[v][i] != 0) res.add(i);
         return res;
     }
 
     public void print() {
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++)
+        for (int i = 0; i &lt; n; i++) {
+            for (int j = 0; j &lt; n; j++)
                 System.out.print(mat[i][j] + " ");
             System.out.println();
         }
@@ -1768,7 +1768,7 @@ class BipartiteCheck {
 | Floyd-Warshall (all-pairs shortest path) | Adjacency matrix | Needs \(O(1)\) access to all pairs |
 | Kruskal's MST | Edge list | Needs to sort edges by weight |
 | Dijkstra (single-source) | Adjacency list | Need fast neighbor access |
-| Check if graph has any edge with weight < threshold | Adjacency matrix | \(O(1)\) random access |
+| Check if graph has any edge with weight &lt; threshold | Adjacency matrix | \(O(1)\) random access |
 | Transitive closure (reachability) | Adjacency matrix (bit-set optimized) | Matrix multiplication |
 | Graph stored in file / database | Edge list | Simple serialization |
 

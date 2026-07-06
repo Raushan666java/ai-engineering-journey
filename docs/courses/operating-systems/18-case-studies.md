@@ -1581,7 +1581,7 @@ new Thread(() -> {
 | Binder IPC transaction | ~5-30 Âµs (same process), ~50-200 Âµs (cross-process) |
 | Zygote fork | ~5-20 ms (pre-loaded page table copy) |
 | HAL call (HIDL/AIDL) | ~10-100 Âµs (binderized HAL) |
-| Art GC pause | 2-8 ms (concurrent, most pauses < 5 ms) |
+| Art GC pause | 2-8 ms (concurrent, most pauses &lt; 5 ms) |
 | ION allocation | ~50-500 Âµs (depends on size and contiguous requirement) |
 | SELinux check | ~200-500 ns (AVC cache hit) |
 | LMK kill latency | ~5-50 ms (detection → signal → process cleanup) |
@@ -2621,9 +2621,9 @@ seL4_ARM_Page_Map(page_cap, vspace_cap, vaddr,
 
 **Choose RTOS when:**
 1. The system must respond to events within a guaranteed maximum time (missile guidance, airbag deployment, pacemaker)
-2. The system runs on a microcontroller (Cortex-M, AVR, PIC) with < 512 KB RAM and < 4 MB flash
+2. The system runs on a microcontroller (Cortex-M, AVR, PIC) with &lt; 512 KB RAM and < 4 MB flash
 3. Certification is required (avionics DO-178C, medical IEC 62304, automotive ISO 26262)
-4. Power consumption must be < 1 mW (battery-operated sensor for years)
+4. Power consumption must be &lt; 1 mW (battery-operated sensor for years)
 5. The system has 1-100 well-defined periodic/event-driven tasks
 6. There is no human interactive interface (no GUI, no web server)
 

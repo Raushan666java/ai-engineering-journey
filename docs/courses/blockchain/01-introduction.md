@@ -393,7 +393,7 @@ flowchart LR
    - D) Nothing — hashes are just metadata
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) All subsequent blocks would become invalid.** Each block header contains the hash of the previous block, creating a chain. Changing any block requires recalculating all subsequent hashes, making tampering computationally detectable.
 </details>
 
@@ -404,7 +404,7 @@ flowchart LR
    - D) A centralized database
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Consortium (permissioned) blockchain.** Multiple competing organizations need shared control without a single authority. Consortium chains distribute governance among members while restricting access to authorized participants.
 </details>
 
@@ -415,7 +415,7 @@ flowchart LR
    - D) Blockchain transactions take three seconds to confirm
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) A blockchain can only optimize two of three properties: security, scalability, and decentralization.** This fundamental trade-off drives most design decisions in blockchain protocol development.
 </details>
 
@@ -426,7 +426,7 @@ flowchart LR
    - D) 2/3
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) 1/3.** Byzantine Fault Tolerance systems typically require n > 3f, meaning up to one-third of participants can be faulty or malicious while the system still reaches correct consensus.
 </details>
 
@@ -437,7 +437,7 @@ flowchart LR
    - D) Consistency and Speed
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Consistency and Partition Tolerance.** Blockchains prioritize consistency (all nodes see the same state) and partition tolerance (network continues during splits). Availability may be temporarily sacrificed during network partitions or reorgs.
 </details>
 
@@ -738,11 +738,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -750,7 +750,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

@@ -85,7 +85,7 @@ Big-Omega provides an asymptotic *lower bound*.
 
 Big-Theta is an asymptotically *tight* bound.
 
-**Definition 1.4 (Little-o and Little-Omega).** \( f(n) = o(g(n)) \) if for every positive constant \( c > 0 \), there exists \( n_0 \) such that \( f(n) < c \cdot g(n) \) for all \( n \ge n_0 \). This is the asymptotic analogue of a strict inequality. Similarly, \( f(n) = \omega(g(n)) \) if for every positive constant \( c \), \( f(n) > c \cdot g(n) \) for all sufficiently large \( n \).
+**Definition 1.4 (Little-o and Little-Omega).** \( f(n) = o(g(n)) \) if for every positive constant \( c > 0 \), there exists \( n_0 \) such that \( f(n) &lt; c \cdot g(n) \) for all \( n \ge n_0 \). This is the asymptotic analogue of a strict inequality. Similarly, \( f(n) = \omega(g(n)) \) if for every positive constant \( c \), \( f(n) &gt; c \cdot g(n) \) for all sufficiently large \( n \).
 
 **Common growth rates (ordered by increasing asymptotic growth):**
 
@@ -147,7 +147,7 @@ int linearSearch(const vector<int>& arr, int target) {
 </details>
 
 <details>
-<summary>Python</summary>
+<summary>Python&lt;/summary&gt;
 
 ```python
 def linear_search(arr, target):
@@ -161,7 +161,7 @@ def linear_search(arr, target):
 </details>
 
 <details>
-<summary>Java</summary>
+<summary>Java&lt;/summary&gt;
 
 ```java
 public static int linearSearch(int[] arr, int target) {
@@ -197,7 +197,7 @@ int binarySearch(const vector<int>& arr, int target) {
 </details>
 
 <details>
-<summary>Python</summary>
+<summary>Python&lt;/summary&gt;
 
 ```python
 def binary_search(arr, target):
@@ -217,7 +217,7 @@ def binary_search(arr, target):
 </details>
 
 <details>
-<summary>Java</summary>
+<summary>Java&lt;/summary&gt;
 
 ```java
 public static int binarySearch(int[] arr, int target) {
@@ -240,7 +240,7 @@ public static int binarySearch(int[] arr, int target) {
 | Advantage | Disadvantage |
 |-----------|-------------|
 | Hardware-independent — pure mathematical growth | Hides constant factors that matter in practice |
-| Enables direct algorithm comparison | Ignores low-input-size behavior (n < 100) |
+| Enables direct algorithm comparison | Ignores low-input-size behavior (n &lt; 100) |
 | Works for any input size n | Misleading when hidden constants are large |
 | Established standard in CS literature | Ignores cache misses, I/O, and parallelism |
 
@@ -250,7 +250,7 @@ public static int binarySearch(int[] arr, int target) {
 |-----------|---------|-------------|
 | **Constant functions** | f(n) = 10, g(n) = 20 | Both O(1) — even a constant of 10²⁰ is still O(1) |
 | **Oscillating functions** | f(n) = n·(1 + sin n) | Big-O cannot capture oscillating growth cleanly; Θ may not exist |
-| **Very small n** | Sorting n = 3 items | O(n²) bubble sort can beat O(n log n) quick sort for n < 10 |
+| **Very small n** | Sorting n = 3 items | O(n²) bubble sort can beat O(n log n) quick sort for n &lt; 10 |
 | **Equal growth class** | f(n) = 3n², g(n) = 5n² | Both Θ(n²) — constants differ but class is same |
 | **Multi-variable** | f(n, m) = n + m² | Two-dimensional; which variable dominates depends on context |
 
@@ -275,7 +275,7 @@ The substitution method involves two steps:
 
 **Example:** Solve \( T(n) = 2T(\lfloor n/2 \rfloor) + n \).
 
-*Guess:* \( T(n) = O(n \log n) \). Assume \( T(k) \le ck \lg k \) for \( k < n \).
+*Guess:* \( T(n) = O(n \log n) \). Assume \( T(k) \le ck \lg k \) for \( k &lt; n \).
 
 *Proof:*
 \[
@@ -291,7 +291,7 @@ T(n) &\le 2 \cdot c (n/2) \lg (n/2) + n \\
 ##### Algorithm Steps for Substitution Method
 
 1. **Guess the form** — based on similar recurrences you've encountered.
-2. **State the inductive hypothesis** — assume T(k) ≤ c·g(k) for all k < n.
+2. **State the inductive hypothesis** — assume T(k) ≤ c·g(k) for all k &lt; n.
 3. **Substitute** — replace T(n/b) with the inductive bound.
 4. **Simplify** — expand algebra until the desired form emerges.
 5. **Choose constants** — pick c and n₀ to make the induction hold.
@@ -346,9 +346,9 @@ The recursion-tree method visualizes each recursive call as a node, with the cos
 | 2 | 9 = 3² | c(n/4²)² = cn²/256 | (9/256)cn² | (1 + 3/16 + 9/256)cn² |
 | 3 | 27 = 3³ | c(n/4³)² = cn²/4096 | (27/4096)cn² | (continued) |
 | … | … | … | … | … |
-| log₄ n | n^{log₄ 3} | c(1)² = c | c·n^{log₄ 3} | Total < (16/13)cn² |
+| log₄ n | n^{log₄ 3} | c(1)² = c | c·n^{log₄ 3} | Total &lt; (16/13)cn² |
 
-The geometric ratio r = 3/16 < 1, so the series converges. The deepest level contributes negligible cost.
+The geometric ratio r = 3/16 &lt; 1, so the series converges. The deepest level contributes negligible cost.
 
 ##### Advantages & Disadvantages of Recursion-Tree Method
 
@@ -370,7 +370,7 @@ The geometric ratio r = 3/16 < 1, so the series converges. The deepest level con
 
 1. If \( f(n) = O(n^{\log_b a - \epsilon}) \) for some \( \epsilon > 0 \), then \( T(n) = \Theta(n^{\log_b a}) \).
 2. If \( f(n) = \Theta(n^{\log_b a}) \), then \( T(n) = \Theta(n^{\log_b a} \log n) \).
-3. If \( f(n) = \Omega(n^{\log_b a + \epsilon}) \) for some \( \epsilon > 0 \) and if \( af(n/b) \le cf(n) \) for some \( c < 1 \) and all sufficiently large \( n \), then \( T(n) = \Theta(f(n)) \).
+3. If \( f(n) = \Omega(n^{\log_b a + \epsilon}) \) for some \( \epsilon > 0 \) and if \( af(n/b) \le cf(n) \) for some \( c &lt; 1 \) and all sufficiently large \( n \), then \( T(n) = \Theta(f(n)) \).
 
 **Examples:**
 
@@ -394,7 +394,7 @@ The geometric ratio r = 3/16 < 1, so the series converges. The deepest level con
 3. **Compare f(n) to n^ρ**:
    - **Case 1:** f(n) = O(n^{ρ-ε}) for ε > 0 → recursion dominates → T(n) = Θ(n^ρ).
    - **Case 2:** f(n) = Θ(n^ρ) → equal weight → T(n) = Θ(n^ρ log n).
-   - **Case 3:** f(n) = Ω(n^{ρ+ε}) for ε > 0 AND af(n/b) ≤ cf(n) for c < 1 → divide/combine dominates → T(n) = Θ(f(n)).
+   - **Case 3:** f(n) = Ω(n^{ρ+ε}) for ε > 0 AND af(n/b) ≤ cf(n) for c &lt; 1 → divide/combine dominates → T(n) = Θ(f(n)).
 4. **Verify regularity (Case 3 only)** — check af(n/b) ≤ cf(n) holds.
 
 ##### Dry Run: Comparing f(n) with n^{log_b a}
@@ -458,7 +458,7 @@ void mergeSort(vector<int>& arr, int l, int r) {
 </details>
 
 <details>
-<summary>Python</summary>
+<summary>Python&lt;/summary&gt;
 
 ```python
 def merge_sort(arr):
@@ -482,7 +482,7 @@ def merge_sort(arr):
 </details>
 
 <details>
-<summary>Java</summary>
+<summary>Java&lt;/summary&gt;
 
 ```java
 public static void mergeSort(int[] arr, int l, int r) {
@@ -590,12 +590,12 @@ A dynamic array starts empty (capacity 1). When full, it doubles capacity and co
 | 8 | 8 | 8 | insert | 1 | 15 |
 | 9 | 9 | 16 | double (copy 8) + insert | 8 + 1 = 9 | 24 |
 
-Total cost for n insertions = n + sum of powers of two (for copying) < n + 2n = 3n. Amortized per insertion = 3n/n = O(1).
+Total cost for n insertions = n + sum of powers of two (for copying) &lt; n + 2n = 3n. Amortized per insertion = 3n/n = O(1).
 
 #### Code Examples: Dynamic Array (Amortized O(1) Append)
 
 <details>
-<summary>C++ (std::vector)</summary>
+<summary>C++ (std::vector)&lt;/summary&gt;
 
 ```cpp
 #include <vector>
@@ -615,7 +615,7 @@ int main() {
 </details>
 
 <details>
-<summary>Python (list)</summary>
+<summary>Python (list)&lt;/summary&gt;
 
 ```python
 arr = []                                    # dynamic array
@@ -628,7 +628,7 @@ for i in range(1_000_000):
 </details>
 
 <details>
-<summary>Java (ArrayList)</summary>
+<summary>Java (ArrayList)&lt;/summary&gt;
 
 ```java
 import java.util.ArrayList;
@@ -724,7 +724,7 @@ Algorithm analysis is the most frequently tested topic in technical interviews �
    *As n → ∞, constants become negligible compared to the growth rate. They matter for profiling but not for scalability classification.*
 
 10. **What is the regularity condition in Master Theorem Case 3?**
-    *af(n/b) ≤ cf(n) for some c < 1 — ensures cost decreases down the recursion tree.*
+    *af(n/b) ≤ cf(n) for some c &lt; 1 — ensures cost decreases down the recursion tree.*
 
 ### Common Pitfalls Table
 
@@ -733,7 +733,7 @@ Algorithm analysis is the most frequently tested topic in technical interviews �
 | Writing "O(n) = O(n²)" | Big-O is a set relation, not equality | Write "f(n) = O(n²)" meaning f ∈ O(n²) |
 | Applying master theorem to T(n) = T(n-1) + n | Subproblem must divide, not decrement | Use iteration: T(n) = Σ(i) = Θ(n²) |
 | Confusing amortized with average-case | Amortized = worst-case bound over any sequence | Both have different mathematical guarantees |
-| Ignoring constants for small n | Constants dominate for n < 100 | Profile and benchmark when n is small |
+| Ignoring constants for small n | Constants dominate for n &lt; 100 | Profile and benchmark when n is small |
 | Claiming binary search is O(n) | It halves each step → log₂ n iterations | Each comparison eliminates half the array |
 | Forgetting regularity in Master Case 3 | Without it, the series may not converge | Always verify af(n/b) ≤ cf(n) |
 | Wrong log base in Master Theorem | Case 2 requires exact polynomial comparison | log_b a is the only exponent that matters |
@@ -774,8 +774,8 @@ Algorithm analysis is the most frequently tested topic in technical interviews �
 | Category | Key Points |
 |----------|------------|
 | **Notation** | O = upper bound, Ω = lower bound, Θ = tight bound, o = strict upper, ω = strict lower |
-| **Growth Rates** | 1 < log n < n < n log n < n² < 2ⁿ < n! — memorize this ordering |
-| **Master Theorem** | Case 1: f(n) < n^{log_b a} → Θ(n^{log_b a}); Case 2: f(n) = n^{log_b a} → Θ(n^{log_b a} log n); Case 3: f(n) > n^{log_b a} → Θ(f(n)) |
+| **Growth Rates** | 1 &lt; log n < n < n log n < n² < 2ⁿ < n! — memorize this ordering |
+| **Master Theorem** | Case 1: f(n) &lt; n^{log_b a} → Θ(n^{log_b a}); Case 2: f(n) = n^{log_b a} → Θ(n^{log_b a} log n); Case 3: f(n) &gt; n^{log_b a} → Θ(f(n)) |
 | **Amortized Methods** | Aggregate: total ÷ n; Accounting: prepay credit; Potential: energy function |
 | **Common Pitfalls** | Forget the regularity condition in Master Case 3; Use master theorem on unbalanced recurrences |
 
@@ -811,7 +811,7 @@ Algorithm analysis is the most frequently tested topic in technical interviews �
 - D) Little-o
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Big-Theta — it requires both an upper and lower bound match.
 </details>
 
@@ -823,7 +823,7 @@ C) Big-Theta — it requires both an upper and lower bound match.
 - D) Θ(log n)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Θ(√n). Here a=2, b=4, log_b a = 0.5, f(n) = n^{0.5} = n^{log_b a}. This is Case 2, so T(n) = Θ(n^{0.5} log n)... Wait — f(n) = √n = n^{1/2}, and log_b a = log_4 2 = 1/2. They match, so Case 2 gives Θ(√n log n). The correct answer is B.
 </details>
 
@@ -835,7 +835,7 @@ C) Θ(√n). Here a=2, b=4, log_b a = 0.5, f(n) = n^{0.5} = n^{log_b a}. This is
 - D) O(n²)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) O(1). Although occasional insertions cost O(n) to copy elements, the amortized cost across n insertions is (2n-1)/n = O(1).
 </details>
 

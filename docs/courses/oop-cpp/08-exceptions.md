@@ -2490,56 +2490,56 @@ private:
    B) Their destructors run in reverse order of construction
    C) Their destructors run in construction order
    D) They are ignored
-   <details><summary>Answer</summary>**B)** Stack unwinding destroys local objects in reverse order of construction.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Stack unwinding destroys local objects in reverse order of construction.</details>
 
 2. Why should destructors never throw?
    A) It is undefined behaviour
    B) std::terminate is called during stack unwinding if a destructor throws
    C) The compiler forbids it
    D) It causes a segmentation fault
-   <details><summary>Answer</summary>**B)** If a destructor throws during stack unwinding when another exception is active, std::terminate is called.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** If a destructor throws during stack unwinding when another exception is active, std::terminate is called.</details>
 
 3. What does noexcept enable that copy constructors do not?
    A) Virtual dispatch
    B) Move-based reallocation in std::vector
    C) Inline expansion
    D) Template instantiation
-   <details><summary>Answer</summary>**B)** std::vector uses noexcept move constructors to choose moves over copies during reallocation.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** std::vector uses noexcept move constructors to choose moves over copies during reallocation.</details>
 
 4. The RAII idiom stands for:
    A) Resource Allocation in Initialisation
    B) Resource Acquisition Is Initialisation
    C) Runtime Allocation and Immediate Initialisation
    D) Random Access Iterator Integration
-   <details><summary>Answer</summary>**B)** Resource Acquisition Is Initialisation.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Resource Acquisition Is Initialisation.</details>
 
 5. Which catch-all handler is correct?
    A) catch()
    B) catch(...)
    C) catch(any)
    D) catch(*)
-   <details><summary>Answer</summary>**B)** catch(...) is the catch-all handler.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** catch(...) is the catch-all handler.</details>
 
 6. What is the main problem with catching exceptions by value?
    A) It is syntactically incorrect
    B) It slices the exception object, losing derived type information
    C) It is slower than catching by pointer
    D) The compiler forbids it
-   <details><summary>Answer</summary>**B)** Catching by value slices the exception object, losing polymorphic behavior and any additional data in derived types.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Catching by value slices the exception object, losing polymorphic behavior and any additional data in derived types.</details>
 
 7. Which exception safety level guarantees that the program state is unchanged if an exception occurs?
    A) Basic
    B) Strong
    C) No-throw
    D) Both Strong and No-throw
-   <details><summary>Answer</summary>**D)** Both Strong (commit or rollback) and No-throw guarantee state is unchanged, but No-throw additionally guarantees no exception is emitted.</details>
+   <details><summary>Answer&lt;/summary&gt;**D)** Both Strong (commit or rollback) and No-throw guarantee state is unchanged, but No-throw additionally guarantees no exception is emitted.</details>
 
 8. What happens if a constructor throws after allocating a raw resource?
    A) The resource is automatically freed
    B) The resource leaks because the destructor is not called
    C) The program terminates
    D) The resource is freed by the delete operator
-   <details><summary>Answer</summary>**B)** The destructor is not called for objects whose constructor did not complete. Use RAII wrappers to avoid leaks.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The destructor is not called for objects whose constructor did not complete. Use RAII wrappers to avoid leaks.</details>
 
 ## Exercises
 

@@ -1085,7 +1085,7 @@ signal(Gate, Output, Value) :-
 - C) Infinite recursion in the resolution algorithm
 - D) Standardization apart conflicts
 
-<details><summary>Answer</summary>**B)** The occur check prevents a variable from being bound to a term that contains it, avoiding infinite terms like {x/f(x)}.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The occur check prevents a variable from being bound to a term that contains it, avoiding infinite terms like {x/f(x)}.</details>
 
 **Q2:** What is the key difference between forward and backward chaining?
 - A) Forward chaining is sound; backward chaining is not
@@ -1093,7 +1093,7 @@ signal(Gate, Output, Value) :-
 - C) Forward chaining works only with FOL; backward chaining works with PL
 - D) Both are identical in behavior
 
-<details><summary>Answer</summary>**B)** Forward chaining starts from known facts and derives new ones; backward chaining starts from a query and works backward toward known facts.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Forward chaining starts from known facts and derives new ones; backward chaining starts from a query and works backward toward known facts.</details>
 
 **Q3:** In CNF conversion, Skolemization handles what?
 - A) Dropping universal quantifiers
@@ -1101,7 +1101,7 @@ signal(Gate, Output, Value) :-
 - C) Distributing v over ^
 - D) Eliminating implications
 
-<details><summary>Answer</summary>**B)** Skolemization replaces existential quantifiers with Skolem functions or constants during CNF conversion.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Skolemization replaces existential quantifiers with Skolem functions or constants during CNF conversion.</details>
 
 **Q4:** Why are Horn clauses important for efficient inference?
 - A) They allow arbitrary disjunctions in conclusions
@@ -1109,7 +1109,7 @@ signal(Gate, Output, Value) :-
 - C) They eliminate the need for unification
 - D) They work without CNF conversion
 
-<details><summary>Answer</summary>**B)** Horn clauses have at most one positive literal, which allows inference algorithms to run in O(n) time, unlike general FOL which is semi-decidable.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Horn clauses have at most one positive literal, which allows inference algorithms to run in O(n) time, unlike general FOL which is semi-decidable.</details>
 
 **Q5:** What happens when resolution derives the empty clause?
 - A) The KB is inconsistent
@@ -1117,7 +1117,7 @@ signal(Gate, Output, Value) :-
 - C) The resolution process has failed
 - D) The clause set is satisfiable
 
-<details><summary>Answer</summary>**B)** The empty clause represents a contradiction. In refutation proofs, deriving the empty clause proves that KB U {not-alpha} is unsatisfiable, therefore KB entails alpha.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The empty clause represents a contradiction. In refutation proofs, deriving the empty clause proves that KB U {not-alpha} is unsatisfiable, therefore KB entails alpha.</details>
 
 **Q6:** Which resolution strategy guarantees completeness while being most efficient in practice?
 - A) Input resolution
@@ -1125,7 +1125,7 @@ signal(Gate, Output, Value) :-
 - C) Set of support + unit preference
 - D) Linear resolution without restrictions
 
-<details><summary>Answer</summary>**C)** Set of support restricts clause pairs to those involving the negated query (focusing search), while unit preference resolves with unit clauses first (quickly reducing clause size). Together they maintain completeness while dramatically improving efficiency.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Set of support restricts clause pairs to those involving the negated query (focusing search), while unit preference resolves with unit clauses first (quickly reducing clause size). Together they maintain completeness while dramatically improving efficiency.</details>
 
 ---
 

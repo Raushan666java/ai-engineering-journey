@@ -1103,7 +1103,7 @@ a) 20% b) 40% c) 60% d) 80%
 
 **7. In the SM-2 algorithm, what happens to the interval when a card is rated below quality 3 (hard)?**
 a) The interval doubles b) The interval stays the same c) Repetitions reset to 0 and interval returns to 1 day d) The card is suspended
-**Answer:** c) Repetitions reset to 0 and interval returns to 1 day. When quality < 3, the SM-2 algorithm treats the card as if it were new, resetting the repetition count and shortening the interval to 1 day.
+**Answer:** c) Repetitions reset to 0 and interval returns to 1 day. When quality &lt; 3, the SM-2 algorithm treats the card as if it were new, resetting the repetition count and shortening the interval to 1 day.
 
 **8. What is the recommended "new cards per day" setting for a single Anki deck to prevent overload?**
 a) 5-10 b) 10-20 c) 25-50 d) Unlimited
@@ -1217,7 +1217,7 @@ Re-record until you pass all three checks.
 - D) The card should be a multiple-choice question
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — The card tests recognition (the answer is presented) rather than recall, and listing multiple items violates atomicity. Better: a cloze deletion like "The third step of the DP workflow is defining _____ cases."
 </details>
@@ -1229,7 +1229,7 @@ Re-record until you pass all three checks.
 - D) Student A — re-reading provides more exposure to the material
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Active recall produces superior long-term retention because the effort of retrieving information triggers reconsolidation, which strengthens the memory trace. Passive re-reading builds familiarity but not durable recall.
 </details>
@@ -1241,7 +1241,7 @@ Re-record until you pass all three checks.
 - D) Anki is not suitable for networking topics
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — A declining easiness factor means the student keeps forgetting the card, which signals either poor card design (not testing understanding) or weak initial learning. The fix is to redesign the card and revisit the source material.
 </details>

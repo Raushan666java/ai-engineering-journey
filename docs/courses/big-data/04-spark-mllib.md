@@ -444,7 +444,7 @@ for i, center in enumerate(centers):
    - D) It deploys models to production
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It chains multiple Transformers and Estimators into a single workflow.** A Pipeline ensures that the same preprocessing steps are applied consistently during training and inference, preventing training/serving skew.
 </details>
 
@@ -455,7 +455,7 @@ for i, center in enumerate(centers):
    - D) They use GPU acceleration
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) They operate on batches using Arrow serialization.** Regular UDFs deserialize and serialize one row at a time (high overhead). Pandas UDFs pass batches of rows using Arrow's columnar format, achieving 10-100x speedups.
 </details>
 
@@ -466,7 +466,7 @@ for i, center in enumerate(centers):
    - D) MLlib doesn't support Python
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) MLlib doesn't natively support GPU acceleration for deep learning.** MLlib is optimized for distributed training on CPU clusters. For deep learning, use Pandas UDFs to bridge to PyTorch/TensorFlow or use Spark + Horovod.
 </details>
 
@@ -903,12 +903,12 @@ interface ParamGrid {
   maxDepth: number[]; minInstancesPerNode: number[]; impurity: string[]; numTrees: number[];
 }
 
-interface TrialResult { params: Record<string, unknown>; metric: number; durationMs: number; }
+interface TrialResult { params: Record&lt;string, unknown&gt;; metric: number; durationMs: number; }
 
 class GridSearch {
   constructor(private grid: ParamGrid) {}
 
-  run(evalFn: (params: Record<string, unknown>) => { score: number; durationMs: number }): TrialResult[] {
+  run(evalFn: (params: Record&lt;string, unknown&gt;) => { score: number; durationMs: number }): TrialResult[] {
     const results: TrialResult[] = [];
     for (const maxDepth of this.grid.maxDepth) {
       for (const minInstances of this.grid.minInstancesPerNode) {
@@ -949,11 +949,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -961,7 +961,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -987,7 +987,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -1005,23 +1005,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'big-data-ecosystem demo')
   const log = new Logger()

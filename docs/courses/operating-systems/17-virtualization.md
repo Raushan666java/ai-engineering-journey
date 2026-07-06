@@ -3391,7 +3391,7 @@ For memory virtualization:
 - Shadow PT: VMM must also migrate shadow page tables (complex)
 - EPT: VMM migrates EPT structures alongside guest memory (simpler)
 
-Downtime target: < 100ms for most workloads.
+Downtime target: &lt; 100ms for most workloads.
 
 ### Q6: Why did KVM remove shadow page table support in 2015?
 

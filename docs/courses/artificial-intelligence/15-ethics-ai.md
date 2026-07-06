@@ -359,7 +359,7 @@ plt.close()
 print("\n[LIME visualization saved to lime_explanation.png]")
 ```
 
-**Key insight:** LIME tells you which features drove a specific decision. For a loan denial, LIME might reveal that "income < $30,000" was the primary factor — but it might also reveal that "zip code" (a proxy for race) was influential.
+**Key insight:** LIME tells you which features drove a specific decision. For a loan denial, LIME might reveal that "income &lt; $30,000" was the primary factor — but it might also reveal that "zip code" (a proxy for race) was influential.
 
 ### 15.2.3 SHAP — SHapley Additive exPlanations
 
@@ -1423,7 +1423,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - C) They measure different quantities
 - D) They are actually the same metric
 
-<details><summary>Answer</summary>B) Kleinberg et al.'s impossibility theorem shows that demographic parity and equalized odds are incompatible unless base rates are identical across groups or the predictor is perfect.</details>
+<details><summary>Answer&lt;/summary&gt;B) Kleinberg et al.'s impossibility theorem shows that demographic parity and equalized odds are incompatible unless base rates are identical across groups or the predictor is perfect.</details>
 
 **Q2:** What distinguishes LIME from SHAP in model interpretability?
 - A) LIME is faster; SHAP is global
@@ -1431,7 +1431,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - C) LIME works for images; SHAP works for text
 - D) There is no practical difference
 
-<details><summary>Answer</summary>B) LIME approximates the model locally with a simple surrogate; SHAP provides theoretically grounded feature attributions based on Shapley values from cooperative game theory.</details>
+<details><summary>Answer&lt;/summary&gt;B) LIME approximates the model locally with a simple surrogate; SHAP provides theoretically grounded feature attributions based on Shapley values from cooperative game theory.</details>
 
 **Q3:** The EU AI Act categorizes AI systems by:
 - A) Model size
@@ -1439,7 +1439,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - C) Accuracy thresholds
 - D) Deployment date
 
-<details><summary>Answer</summary>B) The EU AI Act uses a risk-based framework: Unacceptable (banned), High (regulated), Limited (transparency), and Minimal (unregulated).</details>
+<details><summary>Answer&lt;/summary&gt;B) The EU AI Act uses a risk-based framework: Unacceptable (banned), High (regulated), Limited (transparency), and Minimal (unregulated).</details>
 
 **Q4:** What is the primary limitation of "fairness through unawareness" (not using protected attributes)?
 - A) It is computationally expensive
@@ -1447,7 +1447,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - C) It requires more training data
 - D) It only works for binary classification
 
-<details><summary>Answer</summary>B) Even when protected attributes are not used as features, correlated variables (zip code, criminal history, socioeconomic status) can act as proxies, reproducing discriminatory outcomes.</details>
+<details><summary>Answer&lt;/summary&gt;B) Even when protected attributes are not used as features, correlated variables (zip code, criminal history, socioeconomic status) can act as proxies, reproducing discriminatory outcomes.</details>
 
 **Q5:** What does the parameter ε (epsilon) represent in differential privacy?
 - A) The learning rate of the model
@@ -1455,7 +1455,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - C) The error tolerance of the algorithm
 - D) The number of training epochs
 
-<details><summary>Answer</summary>B) ε controls the privacy-accuracy trade-off. Lower ε values provide stronger privacy by adding more noise to the output, but reduce accuracy. Higher ε increases accuracy but weakens privacy guarantees.</details>
+<details><summary>Answer&lt;/summary&gt;B) ε controls the privacy-accuracy trade-off. Lower ε values provide stronger privacy by adding more noise to the output, but reduce accuracy. Higher ε increases accuracy but weakens privacy guarantees.</details>
 
 **Q6:** In the context of AI alignment, what is "reward hacking"?
 - A) Exploiting bugs in the training framework
@@ -1463,7 +1463,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - C) The agent stealing computational resources
 - D) Manipulating the reward signal through adversarial inputs
 
-<details><summary>Answer</summary>B) Reward hacking occurs when an AI system exploits loopholes or shortcuts in its reward function to achieve high scores without actually fulfilling the intended objective (e.g., a cleaning robot hiding dirt rather than collecting it).</details>
+<details><summary>Answer&lt;/summary&gt;B) Reward hacking occurs when an AI system exploits loopholes or shortcuts in its reward function to achieve high scores without actually fulfilling the intended objective (e.g., a cleaning robot hiding dirt rather than collecting it).</details>
 
 **Q7:** What was the key finding of ProPublica's investigation into the COMPAS recidivism algorithm?
 - A) The algorithm was highly accurate for all racial groups
@@ -1471,7 +1471,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - C) The algorithm was biased in favor of minority groups
 - D) The algorithm had no measurable bias
 
-<details><summary>Answer</summary>B) ProPublica found that Black defendants had a 44.9% false positive rate compared to 23.5% for White defendants, while White defendants had a higher false negative rate (47.7% vs 28.0%), meaning the algorithm systematically over-predicted recidivism for Black individuals.</details>
+<details><summary>Answer&lt;/summary&gt;B) ProPublica found that Black defendants had a 44.9% false positive rate compared to 23.5% for White defendants, while White defendants had a higher false negative rate (47.7% vs 28.0%), meaning the algorithm systematically over-predicted recidivism for Black individuals.</details>
 
 **Q8:** What is the "responsibility gap" in AI ethics?
 - A) The gap between AI capabilities and human oversight
@@ -1479,7 +1479,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - C) The time delay between an AI decision and its consequences
 - D) The difference between training and deployment performance
 
-<details><summary>Answer</summary>B) The responsibility gap refers to the challenge of assigning moral and legal responsibility when autonomous AI systems cause harm. Because multiple stakeholders (developers, deployers, users) are involved and the system may behave unpredictably, traditional models of responsibility break down.</details>
+<details><summary>Answer&lt;/summary&gt;B) The responsibility gap refers to the challenge of assigning moral and legal responsibility when autonomous AI systems cause harm. Because multiple stakeholders (developers, deployers, users) are involved and the system may behave unpredictably, traditional models of responsibility break down.</details>
 
 **Q9:** What is the purpose of the NIST AI Risk Management Framework's "MAP" function?
 - A) Defining governance structures for AI oversight
@@ -1487,7 +1487,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - C) Testing and evaluating AI system performance
 - D) Implementing risk mitigation controls
 
-<details><summary>Answer</summary>B) The MAP function in NIST AI RMF focuses on understanding the AI system's operational context, identifying potential benefits and harms, cataloging risks, and mapping the AI lifecycle.</details>
+<details><summary>Answer&lt;/summary&gt;B) The MAP function in NIST AI RMF focuses on understanding the AI system's operational context, identifying potential benefits and harms, cataloging risks, and mapping the AI lifecycle.</details>
 
 **Q10:** What mitigation strategy does the EU AI Act require for "high-risk" AI systems?
 - A) Complete prohibition
@@ -1495,7 +1495,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - C) Deletion of all training data
 - D) Open-sourcing the model
 
-<details><summary>Answer</summary>B) High-risk AI systems under the EU AI Act must undergo conformity assessments, establish risk management systems, implement human oversight mechanisms, ensure transparency and accuracy, and maintain cybersecurity measures throughout the system lifecycle.</details>
+<details><summary>Answer&lt;/summary&gt;B) High-risk AI systems under the EU AI Act must undergo conformity assessments, establish risk management systems, implement human oversight mechanisms, ensure transparency and accuracy, and maintain cybersecurity measures throughout the system lifecycle.</details>
 
 ---
 

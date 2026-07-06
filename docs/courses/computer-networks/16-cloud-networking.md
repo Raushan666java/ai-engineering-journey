@@ -3333,7 +3333,7 @@ analyze_connectivity(daily_data_gb=10000)
 **Decision guide:**
 - **2-3 VPCs in same region** → VPC Peering (simplest, free)
 - **5+ VPCs or multiple regions** → Transit Gateway (scalable hub)
-- **On-prem to cloud, <1 TB/month** → VPN (cost-effective)
+- **On-prem to cloud, &lt;1 TB/month** → VPN (cost-effective)
 - **On-prem to cloud, >1 TB/month or latency-sensitive** → Direct Connect
 
 ---

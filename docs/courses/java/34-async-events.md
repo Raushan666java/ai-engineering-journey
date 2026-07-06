@@ -145,9 +145,9 @@ Key properties explained:
 | `DiscardOldestPolicy` | Drops the oldest queued task, then retries. |
 
 **Pool scaling behavior:**
-1. If running threads < `corePoolSize`, a new thread is created.
+1. If running threads &lt; `corePoolSize`, a new thread is created.
 2. If running threads >= `corePoolSize`, the task is queued.
-3. If the queue is full and running threads < `maxPoolSize`, a new thread is created.
+3. If the queue is full and running threads &lt; `maxPoolSize`, a new thread is created.
 4. If the queue is full and running threads >= `maxPoolSize`, the rejection policy kicks in.
 
 ### 4. @Async with void Methods
@@ -1451,7 +1451,7 @@ Write a custom `AsyncUncaughtExceptionHandler` that logs the method name, parame
 Define an `InventoryLowEvent` with `sku`, `currentStock`, and `threshold`. Publish it when stock drops below threshold. Listen with `@EventListener`.
 
 ### Exercise 6: Conditional Event Listener
-Create two `@EventListener` methods for `OrderCreatedEvent` Ã¢â‚¬â€ one that fires for totals > $500 and one for totals <= $500. Use SpEL `condition`.
+Create two `@EventListener` methods for `OrderCreatedEvent` Ã¢â‚¬â€ one that fires for totals > $500 and one for totals &lt;= $500. Use SpEL `condition`.
 
 ### Exercise 7: Transaction-Bound Event
 Create a `@TransactionalEventListener` with `AFTER_COMMIT` phase that sends a notification. Verify it runs only after the transaction commits.

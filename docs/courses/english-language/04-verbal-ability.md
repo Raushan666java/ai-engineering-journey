@@ -418,6 +418,624 @@ d) installation / seamless / causing
 
 ---
 
+## 📝 Solved Examples (20 MCQs)
+
+### Section A: Para Jumbles (Q1-Q8)
+
+**Q1.** Arrange the following sentences into a coherent paragraph:
+
+P: This data is then analysed by AI algorithms to identify patterns and anomalies.
+Q: The bank has deployed a new fraud detection system across all its branches.
+R: The system automatically flags suspicious transactions for manual review.
+S: It captures real-time transaction data from multiple sources.
+
+a) Q → S → P → R   b) Q → P → S → R   c) S → Q → P → R   d) P → S → Q → R
+
+<details>
+<summary>Answer</summary>
+a) Q → S → P → R. Q introduces the subject (new fraud detection system). S explains what the system does (captures data). P follows logically (data is analysed). R concludes (flags suspicious transactions).
+</details>
+
+---
+
+**Q2.** Arrange the following sentences:
+
+P: However, the transition to electric vehicles faces significant infrastructure challenges.
+Q: The government has set an ambitious target of 30% electric vehicle sales by 2030.
+R: The lack of charging stations in urban and rural areas remains a critical bottleneck.
+S: Battery technology and range anxiety are additional consumer concerns.
+
+a) Q → P → R → S   b) P → Q → R → S   c) Q → R → P → S   d) R → Q → P → S
+
+<details>
+<summary>Answer</summary>
+a) Q → P → R → S. Q introduces the target. P introduces contrast (However...challenges). R and S elaborate on the challenges. R (charging stations) and S (battery concerns) — both are specific challenges following P.
+</details>
+
+---
+
+**Q3.** Arrange the following sentences:
+
+P: The first step involves identifying the key risks facing the organisation.
+Q: Based on this assessment, controls are designed to mitigate the identified risks.
+R: A robust risk management framework is essential for any financial institution.
+S: Regular monitoring and review ensure that controls remain effective.
+
+a) P → Q → R → S   b) R → P → Q → S   c) R → Q → P → S   d) S → R → P → Q
+
+<details>
+<summary>Answer</summary>
+b) R → P → Q → S. R introduces the topic (risk management framework). P describes the first step (identifying risks). Q follows (designing controls based on assessment). S concludes (monitoring and review).
+</details>
+
+---
+
+**Q4.** Arrange the following sentences:
+
+P: In response, the RBI has tightened norms for unsecured lending.
+Q: The sharp rise in retail credit has raised concerns about asset quality.
+R: Banks have been asked to increase their provisioning for such loans.
+S: Unsecured personal loans have grown at over 25% annually in recent years.
+
+a) Q → P → R → S   b) S → Q → P → R   c) P → Q → R → S   d) Q → S → P → R
+
+<details>
+<summary>Answer</summary>
+b) S → Q → P → R. S presents data (personal loans grew 25%). Q interprets (sharp rise raises concerns). P describes the response (RBI tightened norms). R elaborates on the response (increased provisioning).
+</details>
+
+---
+
+**Q5.** Arrange the following sentences:
+
+P: Similarly, machine learning algorithms are used to detect fraudulent transactions.
+Q: Artificial intelligence is transforming banking operations in multiple ways.
+R: For instance, chatbots handle customer queries round the clock.
+S: These technologies have significantly improved operational efficiency.
+
+a) Q → R → P → S   b) Q → P → R → S   c) R → Q → P → S   d) S → Q → R → P
+
+<details>
+<summary>Answer</summary>
+a) Q → R → P → S. Q introduces the broad topic (AI transforming banking). R gives first example (chatbots — "For instance"). P gives second example ("Similarly" — ML for fraud). S concludes (improved efficiency).
+</details>
+
+---
+
+**Q6.** Arrange the following sentences:
+
+P: Open banking allows third-party developers to build services around financial institutions.
+Q: This is achieved through APIs that enable secure data sharing with customer consent.
+R: However, concerns about data privacy and security remain significant.
+S: Customers can benefit from personalised financial products and services.
+
+a) P → Q → S → R   b) Q → P → S → R   c) P → S → Q → R   d) R → P → Q → S
+
+<details>
+<summary>Answer</summary>
+a) P → Q → S → R. P introduces open banking. Q explains how it works (through APIs). S describes benefits for customers. R introduces contrast (However...concerns).
+</details>
+
+---
+
+**Q7.** Arrange the following sentences:
+
+P: Cloud computing has emerged as a key enabler of digital transformation in banking.
+Q: Banks have moved their core banking systems to the cloud for better scalability.
+R: This shift has reduced infrastructure costs significantly.
+S: Additionally, cloud platforms enable faster deployment of new features.
+
+a) Q → P → R → S   b) P → Q → R → S   c) P → R → Q → S   d) S → P → Q → R
+
+<details>
+<summary>Answer</summary>
+b) P → Q → R → S. P introduces cloud computing as a key enabler. Q explains the action (banks moved to cloud). R presents cost benefit. S adds another benefit ("Additionally").
+</details>
+
+---
+
+**Q8.** Arrange the following sentences:
+
+P: Climate change poses significant risks to the global financial system.
+Q: Physical risks include damage to assets from extreme weather events.
+R: Transition risks arise from the shift to a low-carbon economy.
+S: Financial institutions must incorporate both types of risks into their assessments.
+
+a) P → Q → R → S   b) P → R → Q → S   c) Q → P → R → S   d) S → P → Q → R
+
+<details>
+<summary>Answer</summary>
+a) P → Q → R → S. P introduces the main idea (climate change risks). Q explains "physical risks." R explains "transition risks." S concludes by stating what institutions must do.
+</details>
+
+---
+
+### Section B: Double & Triple Fillers (Q9-Q14)
+
+**Q9.** *The government's decision to _____ the GST rates has been _____ by the industry.*
+
+a) reduce / welcomed   b) reduce / criticised   c) increase / welcomed   d) maintain / opposed
+
+<details>
+<summary>Answer</summary>
+a) reduce / welcomed. The pairing must make logical sense. "Reduce...welcomed" is a natural, positive outcome. "Increase...welcomed" and "maintain...opposed" are less logical without additional context.
+</details>
+
+---
+
+**Q10.** *The IT officer was _____ for his _____ approach to problem-solving.*
+
+a) known / innovative   b) criticised / innovative   c) famous / careless   d) awarded / reckless
+
+<details>
+<summary>Answer</summary>
+a) known / innovative. Positive context: being "known" for an "innovative" approach is logical. "Criticised for innovative" is contradictory. "Famous for careless" is unlikely. "Awarded for reckless" is illogical.
+</details>
+
+---
+
+**Q11.** *The bank has _____ a comprehensive training programme _____ its employees _____ new technology.*
+
+a) launched / to train / on   b) launched / training / in   c) launching / to train / for   d) launches / training / with
+
+<details>
+<summary>Answer</summary>
+a) launched / to train / on. "Has launched" (present perfect) + "to train" (infinitive of purpose) + "on new technology" (correct preposition).
+</details>
+
+---
+
+**Q12.** *The committee was _____ to _____ the feasibility of the project and _____ recommendations.*
+
+a) formed / assess / make   b) forming / assessing / making   c) formed / assess / made   d) form / assess / make
+
+<details>
+<summary>Answer</summary>
+a) formed / assess / make. "Was formed" (passive) + "to assess" (infinitive) + "make" (parallel infinitive after "and").
+</details>
+
+---
+
+**Q13.** *The _____ audit _____ several _____ in the internal control system.*
+
+a) independent / revealed / weaknesses   b) dependent / hid / strengths   c) internal / created / issues   d) external / ignored / problems
+
+<details>
+<summary>Answer</summary>
+a) independent / revealed / weaknesses. An audit typically reveals findings; "independent...revealed...weaknesses" is the most logical combination.
+</details>
+
+---
+
+**Q14.** *The _____ of digital payment systems has _____ the need for physical currency, _____ financial inclusion.*
+
+a) growth / reduced / boosting   b) decline / increased / hindering   c) growth / increased / hindering   d) decline / reduced / boosting
+
+<details>
+<summary>Answer</summary>
+a) growth / reduced / boosting. Growth of digital payments → reduced need for cash → boosting financial inclusion. This causal chain is logical.
+</details>
+
+---
+
+### Section C: Odd One Out (Q15-Q17)
+
+**Q15.** Which word is the odd one out?
+
+a) Phishing   b) Ransomware   c) Malware   d) Encryption
+
+<details>
+<summary>Answer</summary>
+d) Encryption. Phishing, ransomware, and malware are all types of cyber threats. Encryption is a security measure against threats.
+</details>
+
+---
+
+**Q16.** Which sentence is the odd one out?
+
+a) The bank's net profit increased by 18% this quarter.
+b) The board has approved a dividend of ₹5 per share.
+c) The bank launched a new mobile banking application.
+d) The return on equity improved to 14.5%.
+
+<details>
+<summary>Answer</summary>
+c) The bank launched a new mobile banking application. Sentences (a), (b), and (d) are all financial performance metrics. Sentence (c) is a product launch — a different category.
+</details>
+
+---
+
+**Q17.** Which word is the odd one out?
+
+a) Benevolent   b) Malevolent   c) Benign   d) Beneficial
+
+<details>
+<summary>Answer</summary>
+b) Malevolent. Benevolent, benign, and beneficial all have positive connotations. Malevolent (wishing harm) is negative — the odd one out.
+</details>
+
+---
+
+### Section D: Verbal Analogies (Q18-Q19)
+
+**Q18.** *Cryptography : Security :: Insurance : ?*
+
+a) Risk   b) Premium   c) Policy   d) Claim
+
+<details>
+<summary>Answer</summary>
+a) Risk. Cryptography provides security (protection). Insurance provides risk mitigation. Both are protective measures — cryptography against breaches, insurance against financial loss.
+</details>
+
+---
+
+**Q19.** *Algorithm : Computer :: Blueprint : ?*
+
+a) Architect   b) Building   c) Design   d) Engineer
+
+<details>
+<summary>Answer</summary>
+b) Building. An algorithm is a set of instructions for a computer to execute; a blueprint is a set of plans for a building to be constructed. Both are guiding frameworks.
+</details>
+
+---
+
+### Section E: Sentence Correction (Q20)
+
+**Q20.** Which sentence is grammatically CORRECT?
+
+a) The data collected by the server were corrupted.   b) The committee have decided to postpone the meeting.   c) One of the officers have submitted the report.   d) Neither the manager nor his colleagues were present at the briefing.
+
+<details>
+<summary>Answer</summary>
+d) Neither the manager nor his colleagues were present at the briefing. "Colleagues" (plural) is nearest to the verb → "were" is correct. In (a), "data" as singular → "was" (or treat it differently by context). In (b), "committee" as singular → "has." In (c), "One...has" not "have."
+</details>
+
+---
+
+## TypeScript Example: Para Jumble Solver
+
+```typescript
+interface Sentence {
+  id: string;
+  text: string;
+  features: {
+    startsWithLinker: boolean;
+    startsWithPronoun: boolean;
+    hasConcludingMarker: boolean;
+    hasIntroductoryMarker: boolean;
+    pronounReferences: string[];
+  };
+}
+
+class ParaJumbleSolver {
+  private static readonly LINKER_WORDS = new Set([
+    "however", "but", "nevertheless", "nonetheless", "yet",
+    "moreover", "furthermore", "additionally", "also", "besides",
+    "therefore", "thus", "hence", "consequently", "as a result",
+    "meanwhile", "subsequently", "finally", "eventually", "then",
+    "for example", "for instance", "in addition", "on the other hand",
+    "in contrast", "similarly", "likewise", "conversely",
+  ]);
+
+  private static readonly CONCLUDING_WORDS = new Set([
+    "therefore", "thus", "hence", "so", "consequently",
+    "in conclusion", "to summarise", "overall", "finally",
+  ]);
+
+  private static readonly PRONOUNS = new Set([
+    "it", "its", "this", "that", "these", "those",
+    "he", "she", "they", "them", "their", "his", "her",
+    "such", "the former", "the latter",
+  ]);
+
+  static analyze(sentences: Sentence[]): {
+    likelyOpening: string[];
+    likelyClosing: string[];
+    score: number;
+  } {
+    const openings: string[] = [];
+    const closings: string[] = [];
+
+    for (const s of sentences) {
+      const firstWord = s.text.split(" ")[0]?.toLowerCase() || "";
+
+      // Check if it could be opening sentence
+      const couldBeOpening =
+        !this.LINKER_WORDS.has(firstWord) &&
+        !this.PRONOUNS.has(firstWord) &&
+        !this.LINKER_WORDS.has(s.text.slice(0, 15).toLowerCase());
+
+      // Check if it could be closing sentence
+      const couldBeClosing =
+        this.CONCLUDING_WORDS.has(firstWord) ||
+        this.CONCLUDING_WORDS.has(s.text.slice(0, 20).toLowerCase());
+
+      if (couldBeOpening) openings.push(s.id);
+      if (couldBeClosing) closings.push(s.id);
+    }
+
+    return {
+      likelyOpening: openings,
+      likelyClosing: closings,
+      score: openings.length + closings.length,
+    };
+  }
+
+  static suggestSequence(sentences: string[]): string[] {
+    // Simplified algorithm: identify connectors between sentences
+    const result: string[] = [];
+    const remaining = new Set(sentences.map((_, i) => i));
+
+    // Find first: sentence without linker/pronoun at start
+    const firstIdx = sentences.findIndex(s => {
+      const firstWord = s.split(" ")[0]?.toLowerCase() || "";
+      return !this.LINKER_WORDS.has(firstWord) &&
+             !this.PRONOUNS.has(firstWord);
+    });
+
+    if (firstIdx >= 0) {
+      result.push(sentences[firstIdx]);
+      remaining.delete(firstIdx);
+    }
+
+    // For the remaining, look for logical connections
+    while (remaining.size > 0) {
+      const lastSentence = result[result.length - 1] || "";
+      const lastWords = lastSentence.split(" ").slice(-5).join(" ").toLowerCase();
+
+      let bestMatch = -1;
+      for (const idx of remaining) {
+        const current = sentences[idx].toLowerCase();
+        // Score based on pronoun connection and linker match
+        let score = 0;
+        if (this.LINKER_WORDS.has(current.split(" ")[0])) score += 2;
+        if (sentences[idx].toLowerCase().includes(lastWords.slice(0, 10))) score += 1;
+
+        if (score > 0 && bestMatch === -1) bestMatch = idx;
+      }
+
+      if (bestMatch >= 0) {
+        result.push(sentences[bestMatch]);
+        remaining.delete(bestMatch);
+      } else {
+        // Pick first remaining
+        const next = remaining.values().next().value;
+        result.push(sentences[next]);
+        remaining.delete(next);
+      }
+    }
+
+    return result;
+  }
+}
+
+// Example usage
+const sentences = [
+  "The bank has implemented a new automated workflow system.",
+  "This has led to a significant reduction in processing time.",
+  "The system uses AI to verify documents and assess creditworthiness.",
+  "As a result, customer satisfaction scores have improved considerably.",
+  "Previously, loan approvals took an average of two weeks.",
+];
+
+const analysis = ParaJumbleSolver.analyze(
+  sentences.map((text, i) => ({
+    id: String.fromCharCode(65 + i), // A, B, C, D, E
+    text,
+    features: {
+      startsWithLinker: ParaJumbleSolver["LINKER_WORDS"]
+        .has(text.split(" ")[0]?.toLowerCase()),
+      startsWithPronoun: ParaJumbleSolver["PRONOUNS"]
+        .has(text.split(" ")[0]?.toLowerCase()),
+      hasConcludingMarker: ParaJumbleSolver["CONCLUDING_WORDS"]
+        .has(text.split(" ")[0]?.toLowerCase()),
+      hasIntroductoryMarker: false,
+      pronounReferences: [],
+    },
+  }))
+);
+
+console.log("Analysis:", analysis);
+console.log("Suggested Sequence:",
+  ParaJumbleSolver.suggestSequence(sentences));
+```
+
+## Mermaid Flowchart: Para Jumble Solving Strategy
+
+```mermaid
+flowchart TD
+    A[Read All Sentences] --> B[Identify the OPENER]
+    B --> C1[No linker/pronoun at start]
+    B --> C2[Introduces subject first time]
+    B --> C3[Provides background/concept]
+    
+    A --> D[Identify the CLOSER]
+    D --> E1[Begins with Therefore/Thus/Finally]
+    D --> E2[Concludes/summarises]
+    D --> E3[Provides result or recommendation]
+    
+    A --> F[Look for LINKERS]
+    F --> G1[However/But → Contrast with previous]
+    F --> G2[Moreover/Furthermore → Adds to previous]
+    F --> G3[Therefore/Thus → Result of previous]
+    F --> G4[For example/For instance → Illustrates previous]
+    
+    A --> H[Check PRONOUN REFERENCES]
+    H --> I[This/These/It/They → must refer to noun<br/>in previous sentence]
+    
+    J[Test Sequence] --> K{Does it flow logically?}
+    K -->|Yes| L[Select option]
+    K -->|No| M[Try alternative arrangement]
+```
+
+## Mermaid Flowchart: Filler Question Strategy
+
+```mermaid
+flowchart LR
+    A[Read Full Sentence] --> B{Number of blanks?}
+    B -->|Single| C[Identify POS needed]
+    B -->|Double| D[Solve easier blank first]
+    B -->|Triple| E[Use elimination across all three]
+    C --> F[Check grammatical fit]
+    D --> F
+    E --> F
+    F --> G[Check contextual fit]
+    G --> H[Eliminate wrong options]
+    H --> I{One option remains?}
+    I -->|Yes| J[Select answer]
+    I -->|No| K[Re-read with each option]
+    K --> J
+```
+
+---
+
+## 📖 Exercise Bank (30 Questions)
+
+### Section A: Para Jumbles (Q1-Q8)
+
+Arrange the following sentences into logical paragraphs:
+
+**Q1.** P: This transparency has helped in reducing corruption in subsidy distribution.
+&nbsp;&nbsp;&nbsp;&nbsp;Q: The Direct Benefit Transfer (DBT) scheme transfers subsidies directly to beneficiaries' accounts.
+&nbsp;&nbsp;&nbsp;&nbsp;R: Earlier, subsidies were routed through multiple intermediaries.
+&nbsp;&nbsp;&nbsp;&nbsp;S: This led to leakages and delays in the system.
+
+**Q2.** P: However, this growth has not been uniform across all sectors.
+&nbsp;&nbsp;&nbsp;&nbsp;Q: The Indian economy has shown remarkable resilience in the face of global headwinds.
+&nbsp;&nbsp;&nbsp;&nbsp;R: While the services sector has boomed, manufacturing continues to face challenges.
+&nbsp;&nbsp;&nbsp;&nbsp;S: GDP growth has remained above 6% despite geopolitical uncertainties.
+
+**Q3.** P: The first step is to identify the root cause of the problem.
+&nbsp;&nbsp;&nbsp;&nbsp;Q: A systematic approach is essential for effective problem-solving.
+&nbsp;&nbsp;&nbsp;&nbsp;R: Finally, the solution must be implemented and monitored.
+&nbsp;&nbsp;&nbsp;&nbsp;S: Once the cause is identified, alternative solutions can be evaluated.
+
+**Q4.** P: This data is encrypted and stored securely on the blockchain.
+&nbsp;&nbsp;&nbsp;&nbsp;Q: Aadhaar, India's biometric ID system, collects demographic and biometric data from residents.
+&nbsp;&nbsp;&nbsp;&nbsp;R: Authentication requests are processed by the Unique Identification Authority of India (UIDAI).
+&nbsp;&nbsp;&nbsp;&nbsp;S: The system enables paperless, electronic verification of identity.
+
+**Q5.** P: First, they have diversified their revenue streams through fee-based income.
+&nbsp;&nbsp;&nbsp;&nbsp;Q: Indian banks have adopted multiple strategies to improve profitability.
+&nbsp;&nbsp;&nbsp;&nbsp;R: Finally, digital channels have reduced operating costs significantly.
+&nbsp;&nbsp;&nbsp;&nbsp;S: Second, they have focused on retail lending to improve margins.
+
+**Q6.** P: The committee recommended several measures to address the issue.
+&nbsp;&nbsp;&nbsp;&nbsp;Q: The government had constituted a high-level committee to examine the NPAs in the banking sector.
+&nbsp;&nbsp;&nbsp;&nbsp;R: The government has accepted most of these recommendations.
+&nbsp;&nbsp;&nbsp;&nbsp;S: The rising level of non-performing assets (NPAs) has been a major concern for Indian banks.
+
+**Q7.** P: This shift has been accelerated by the COVID-19 pandemic.
+&nbsp;&nbsp;&nbsp;&nbsp;Q: Companies across sectors have adopted work-from-home policies.
+&nbsp;&nbsp;&nbsp;&nbsp;R: Employees have reported improved work-life balance as a result.
+&nbsp;&nbsp;&nbsp;&nbsp;S: However, concerns about productivity monitoring and employee well-being remain.
+
+**Q8.** P: This framework categorises risks into strategic, operational, and financial risks.
+&nbsp;&nbsp;&nbsp;&nbsp;Q: Banks are required to have a robust enterprise risk management (ERM) framework.
+&nbsp;&nbsp;&nbsp;&nbsp;R: Each category requires specific mitigation strategies and monitoring mechanisms.
+&nbsp;&nbsp;&nbsp;&nbsp;S: The RBI has mandated ERM implementation for all scheduled commercial banks.
+
+### Section B: Double & Triple Fillers (Q9-Q15)
+
+**Q9.** *The company has _____ to _____ its product portfolio.*
+    a) decided / diversify   b) decision / diversify   c) decided / diversification   d) deciding / diversifying
+
+**Q10.** *The auditor _____ the accounts and _____ several discrepancies.*
+    a) examined / found   b) examining / finds   c) examines / finding   d) examined / finding
+
+**Q11.** *The government _____ a new policy _____ digital payments.*
+    a) announced / to promote   b) announces / promoted   c) announcing / promotes   d) announced / promoting
+
+**Q12.** *The new regulation is _____ to protect consumer interests _____ ensure fair competition.*
+    a) designed / and   b) designing / or   c) designed / but   d) design / and
+
+**Q13.** *The bank has _____ its digital platform _____ customers _____ services anytime.*
+    a) upgraded / to enable / access   b) upgraded / enabling / accessed   c) upgrade / enabled / accessing   d) upgrading / enables / accessible
+
+**Q14.** *Triple Filler: The _____ of the old system was _____, _____ operational disruptions.*
+    a) replacement / smooth / minimising   b) replacement / chaotic / causing   c) removal / smooth / causing   d) upgrade / seamless / increasing
+
+**Q15.** *Triple Filler: The _____ team _____ the issue and _____ a solution within 24 hours.*
+    a) technical / resolved / implemented   b) technical / identified / implemented   c) management / ignored / delayed   d) legal / created / complicated
+
+### Section C: Odd One Out (Q16-Q20)
+
+**Q16.** Which word is the odd one out? a) Optimistic   b) Sanguine   c) Pessimistic   d) Hopeful
+
+**Q17.** Which word is the odd one out? a) Cryptography   b) Biometrics   c) Authentication   d) Breach
+
+**Q18.** Which sentence is the odd one out?
+    a) The RBI has maintained the repo rate at 6.5%.
+    b) Inflation has moderated to 4.8% in the latest reading.
+    c) The bank has launched a new credit card with travel benefits.
+    d) Industrial production grew by 5.2% in the last quarter.
+
+**Q19.** Which word is the odd one out? a) Speedy   b) Rapid   c) Swift   d) Sluggish
+
+**Q20.** Which sentence is the odd one out?
+    a) Cloud computing reduces IT infrastructure costs.
+    b) AI-powered analytics improve decision-making.
+    c) The annual general meeting was held on Friday.
+    d) Blockchain enhances transparency in transactions.
+
+### Section D: Verbal Analogies (Q21-Q24)
+
+**Q21.** *Bank : Branch :: University : ?* a) Student   b) College   c) Professor   d) Education
+
+**Q22.** *Phishing : Email :: Fraud : ?* a) Bank   b) Transaction   c) Police   d) Law
+
+**Q23.** *Opaque : Transparent :: Ambiguous : ?* a) Clear   b) Vague   c) Confusing   d) Unclear
+
+**Q24.** *Sculptor : Statue :: Author : ?* a) Book   b) Reader   c) Publisher   d) Pen
+
+### Section E: Sentence Correction (Q25-Q30)
+
+Identify the incorrect sentence and correct it:
+
+25. a) The data shows that customer satisfaction has improved.
+    b) The committee have reached a unanimous decision.
+    c) Neither the manager nor his assistants were present.
+    d) One of the officers has received a commendation.
+
+26. a) He has been working here since three years.
+    b) She joined the bank in 2020.
+    c) They have completed the project on time.
+    d) The meeting will be held tomorrow.
+
+27. a) The reason for the delay was technical issues.
+    b) The system is not only efficient but also cost-effective.
+    c) Hardly had he arrived when the meeting started.
+    d) The number of fraud cases are increasing.
+
+28. a) The CEO, along with the board members, has approved the proposal.
+    b) Each of the candidates have been shortlisted for the interview.
+    c) The new software is compatible with existing systems.
+    d) He prefers coffee to tea.
+
+29. a) The auditor requested to see the financial statements.
+    b) If I were you, I would accept the offer.
+    c) The team have been divided in their opinions.
+    d) She is an honest and hardworking employee.
+
+30. a) The company has less employees this year.
+    b) The amount of work has increased substantially.
+    c) He is one of the few employees who have completed the certification.
+    d) The committee has submitted its report.
+
+**Answer Key:**
+
+| Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
+|---|--------|---|--------|---|--------|---|--------|---|--------|
+| 1 | Q → R → S → P | 2 | Q → S → P → R | 3 | Q → P → S → R | 4 | Q → P → R → S | 5 | Q → P → S → R |
+| 6 | S → Q → P → R | 7 | Q → P → R → S | 8 | Q → P → R → S | 9 | a) decided / diversify | 10 | a) examined / found |
+| 11 | a) announced / to promote | 12 | a) designed / and | 13 | a) upgraded / to enable / access | 14 | a) replacement / smooth / minimising | 15 | b) technical / identified / implemented |
+| 16 | c) Pessimistic | 17 | d) Breach | 18 | c) bank launched credit card | 19 | d) Sluggish | 20 | c) AGM on Friday |
+| 21 | b) College | 22 | b) Transaction | 23 | a) Clear | 24 | a) Book | 25 | b) committee has reached |
+| 26 | a) has been working FOR three years | 27 | d) number...is increasing | 28 | b) Each...has been | 29 | c) team is divided (or team members are divided) | 30 | a) fewer employees |
+
+---
+
 ## Summary
 
 - Verbal Ability encompasses **4–5 questions** in IBPS SO Prelims

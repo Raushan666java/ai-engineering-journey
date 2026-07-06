@@ -1927,7 +1927,7 @@ Widgets remaining: 0
 - **Mutable** — Hover state in const draw function
 - **Const correctness** — All getters marked const
 - **Method chaining** — Fluent interface for property setting
-- **Friend function** — operator<< for debugging output
+- **Friend function** — operator&lt;< for debugging output
 - **Polymorphism** — Virtual draw() for different widget types
 
 ### 3. Smart Pointer (std::unique_ptr Internals)

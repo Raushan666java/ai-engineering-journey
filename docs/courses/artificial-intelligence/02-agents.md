@@ -1173,7 +1173,7 @@ In practice, NASA's Mars rovers use a hierarchical architecture with model-based
 
 ### Q4: How would you convert a thermostat (simple reflex) into a utility-based agent?
 
-**Answer:** A thermostat is the classic simple reflex agent: if temperature < setpoint -> heat on; if temperature > setpoint -> heat off. To make it utility-based:
+**Answer:** A thermostat is the classic simple reflex agent: if temperature &lt; setpoint -&gt; heat on; if temperature > setpoint -> heat off. To make it utility-based:
 
 1. **Define utility function**: U(temp, energy_cost, time_of_day) = -w1 x |temp - setpoint| - w2 x energy_cost - w3 x (rate if peak_hour)
 2. **Add predictive model**: Model how temperature changes when heat is on/off, accounting for outside temperature and insulation.
@@ -1243,7 +1243,7 @@ Factory robot arms are goal-based agents:
 - C) Utility-based agent
 - D) Learning agent
 
-<details><summary>Answer</summary>B) Model-based reflex agents maintain internal state to handle partially observable environments where the current percept alone is insufficient.</details>
+<details><summary>Answer&lt;/summary&gt;B) Model-based reflex agents maintain internal state to handle partially observable environments where the current percept alone is insufficient.</details>
 
 **Q2:** In the PEAS framework, what does the "A" stand for?
 - A) Actions
@@ -1251,7 +1251,7 @@ Factory robot arms are goal-based agents:
 - C) Actuators
 - D) Applications
 
-<details><summary>Answer</summary>C) Actuators → the mechanisms through which an agent acts upon its environment.</details>
+<details><summary>Answer&lt;/summary&gt;C) Actuators → the mechanisms through which an agent acts upon its environment.</details>
 
 **Q3:** Which environment property distinguishes chess from poker?
 - A) Deterministic vs. Stochastic
@@ -1259,7 +1259,7 @@ Factory robot arms are goal-based agents:
 - C) Fully vs. Partially Observable
 - D) Both A and C
 
-<details><summary>Answer</summary>D) Chess is fully observable and deterministic; poker is partially observable (hidden cards) and involves chance (stochastic).</details>
+<details><summary>Answer&lt;/summary&gt;D) Chess is fully observable and deterministic; poker is partially observable (hidden cards) and involves chance (stochastic).</details>
 
 **Q4:** Which agent type produces the most nuanced decisions when dealing with conflicting objectives?
 - A) Simple Reflex
@@ -1267,7 +1267,7 @@ Factory robot arms are goal-based agents:
 - C) Goal-Based
 - D) Utility-Based
 
-<details><summary>Answer</summary>D) Utility-based agents handle trade-offs by assigning numeric utilities to states and choosing the action that maximizes expected utility, making them ideal for conflicting objectives like safety vs. speed.</details>
+<details><summary>Answer&lt;/summary&gt;D) Utility-based agents handle trade-offs by assigning numeric utilities to states and choosing the action that maximizes expected utility, making them ideal for conflicting objectives like safety vs. speed.</details>
 
 **Q5:** What is the primary weakness of a simple reflex agent?
 - A) Too much memory usage
@@ -1275,7 +1275,7 @@ Factory robot arms are goal-based agents:
 - C) Too slow for real-time systems
 - D) Requires a complete world model
 
-<details><summary>Answer</summary>B) Simple reflex agents only consider the current percept. In partially observable environments, the current percept alone is insufficient to determine the correct action.</details>
+<details><summary>Answer&lt;/summary&gt;B) Simple reflex agents only consider the current percept. In partially observable environments, the current percept alone is insufficient to determine the correct action.</details>
 
 **Q6:** Which environment property determines whether an agent must consider past percepts when making decisions?
 - A) Determinism
@@ -1283,7 +1283,7 @@ Factory robot arms are goal-based agents:
 - C) Discreteness
 - D) Agent count
 
-<details><summary>Answer</summary>B) In sequential (non-episodic) environments, past decisions affect future options, so the agent must consider its percept history or maintain internal state.</details>
+<details><summary>Answer&lt;/summary&gt;B) In sequential (non-episodic) environments, past decisions affect future options, so the agent must consider its percept history or maintain internal state.</details>
 
 **Q7:** A delivery drone operates in wind (stochastic), cannot see behind buildings (partial observability), and must deliver packages in sequence (sequential). Which architecture is most suitable?
 - A) Simple reflex
@@ -1291,7 +1291,7 @@ Factory robot arms are goal-based agents:
 - C) Pure goal-based agent
 - D) Random agent
 
-<details><summary>Answer</summary>B) Model-based utility agent. The drone needs internal state (partial observability), probabilistic reasoning (stochastic wind), and utility trade-offs (battery vs. speed vs. delivery order).</details>
+<details><summary>Answer&lt;/summary&gt;B) Model-based utility agent. The drone needs internal state (partial observability), probabilistic reasoning (stochastic wind), and utility trade-offs (battery vs. speed vs. delivery order).</details>
 
 ---
 

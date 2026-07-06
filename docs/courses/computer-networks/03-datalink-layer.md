@@ -815,7 +815,7 @@ Imagine you and a friend agree on a secret divisor number (e.g., 7). You have a 
 2. Choose a generator polynomial $G(x)$ of degree $k$.
 3. Append $k$ zero bits to the data (multiply by $x^k$): $D(x) \cdot x^k$.
 4. Divide $D(x) \cdot x^k$ by $G(x)$ using binary polynomial division (XOR, no carry).
-5. The remainder $R(x)$ (degree < k) is the CRC checksum.
+5. The remainder $R(x)$ (degree &lt; k) is the CRC checksum.
 6. Transmit the original data followed by the remainder: $D(x) \cdot x^k + R(x)$.
 7. Receiver divides the received polynomial by $G(x)$. Non-zero remainder → error detected.
 
@@ -1077,7 +1077,7 @@ print(f"Error detected: {crc != crc2}")
 | **All single-bit errors** | Detected | Detected | Detected |
 | **All double-bit errors** | Missed (even count) | Most detected | Detected (if primitive poly) |
 | **All odd-count errors** | Detected | Detected | Detected |
-| **Burst < k bits** | Not guaranteed | Not guaranteed | Guaranteed (k = degree) |
+| **Burst &lt; k bits** | Not guaranteed | Not guaranteed | Guaranteed (k = degree) |
 | **Burst = k bits** | Not guaranteed | Not guaranteed | Detected (99.998%) |
 | **Implementation complexity** | Trivial | Simple | Moderate (hardware: trivial) |
 | **Software speed** | Fastest | Fast | Slow bit-at-a-time; fast with LUT |
@@ -1436,7 +1436,7 @@ Instead of one letter at a time, the student sends up to 5 letters before waitin
 #### How It Works (Numbered Steps)
 
 1. The sender maintains a **send window** of size $W$ → the maximum number of outstanding (unacknowledged) frames.
-2. The sender transmits frames as long as the number of outstanding frames < $W$.
+2. The sender transmits frames as long as the number of outstanding frames &lt; $W$.
 3. The receiver maintains a **receive window** → frames it is willing to accept.
 4. When an ACK arrives, the sender's window slides forward, allowing new frames to be sent.
 5. The receiver's window also slides as frames are delivered to the network layer.
@@ -1836,7 +1836,7 @@ if __name__ == "__main__":
 | Advantage | Simplest ARQ protocol; very easy to implement |
 | Advantage | Minimal buffer required (1 frame each at sender and receiver) |
 | Advantage | Duplicate detection with 1-bit sequence number is trivial |
-| Disadvantage | **Extremely inefficient** on high-delay paths (utilization < 0.1% typical) |
+| Disadvantage | **Extremely inefficient** on high-delay paths (utilization &lt; 0.1% typical) |
 | Disadvantage | Only one frame in flight → wastes available bandwidth |
 
 #### Edge Cases
@@ -2136,7 +2136,7 @@ Key advantage: only frame 2 was retransmitted (not frames 2 and 3 as in Go-Back-
 | NAK-based fast retransmit | Receiver sends NAK for seq 2 when seq 3 arrives; sender retransmits without waiting for timeout |
 | Repeated NAKs | Duplicate NAKs are suppressed or ignored |
 | Buffer overflow at receiver | RWS controls max buffered frames; frames outside window are discarded |
-| Out-of-window ACK | Sender discards stale ACKs (seq < LAR or seq > LFS) |
+| Out-of-window ACK | Sender discards stale ACKs (seq &lt; LAR or seq &gt; LFS) |
 
 ---
 
@@ -2580,7 +2580,7 @@ Bluetooth's Baseband layer uses CRC-16 (CRC-CCITT polynomial $x^{16} + x^{12} + 
 - D) None of the above
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) PPP uses byte stuffing with flag byte 0x7E and escape byte 0x7D.
 </details>
 
@@ -2592,7 +2592,7 @@ B) PPP uses byte stuffing with flag byte 0x7E and escape byte 0x7D.
 - D) 100%
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) 36.8% ($1/e$) → double that of pure ALOHA (18.4%).
 </details>
 
@@ -2604,7 +2604,7 @@ B) 36.8% ($1/e$) → double that of pure ALOHA (18.4%).
 - D) CRC cannot detect errors
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) No → a zero remainder indicates no detected error; CRC with non-zero remainder = error detected.
 </details>
 
@@ -2616,7 +2616,7 @@ B) No → a zero remainder indicates no detected error; CRC with non-zero remain
 - D) 31
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) 15 → Go-Back-N requires $W \le 2^k - 1$ to avoid ambiguity (Selective Repeat requires $W \le 2^{k-1}$).
 </details>
 
@@ -2628,7 +2628,7 @@ B) 15 → Go-Back-N requires $W \le 2^k - 1$ to avoid ambiguity (Selective Repea
 - D) None
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Selective Repeat → retransmits only lost frames, critical when RTT is high and errors are frequent. Go-Back-N would waste entire windows on each error, and Stop-and-Wait would waste the bandwidth-delay product.
 </details>
 
@@ -2640,7 +2640,7 @@ C) Selective Repeat → retransmits only lost frames, critical when RTT is high 
 - D) Uncorrectable double-bit error
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Syndrome 101 = 5 in decimal → error at position 5. The sender's check bits are recomputed; the binary number formed by failed parity checks gives the exact bit position.
 </details>
 
@@ -2652,7 +2652,7 @@ C) Syndrome 101 = 5 in decimal → error at position 5. The sender's check bits 
 - D) Authentication
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Magic numbers detect loopback links → if a Configure-Request arrives with the same magic number as the sender's own, a loop is detected and the link is terminated.
 </details>
 

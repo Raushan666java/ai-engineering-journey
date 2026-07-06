@@ -490,7 +490,7 @@ END FUNCTION
 
 Note: 5 still points to 4 (not directly to 0), but find(5) will compress it later.
 
-**union(2, 0)**: rootX = find(2) = 2 (rank 1), rootY = find(0) = 0 (rank 2). rank[2] < rank[0] → attach 2→0.
+**union(2, 0)**: rootX = find(2) = 2 (rank 1), rootY = find(0) = 0 (rank 2). rank[2] &lt; rank[0] → attach 2→0.
 
 | Element | 0 | 1 | 2 | 3 | 4 | 5 |
 |----------|---|---|---|---|---|---|
@@ -1252,7 +1252,7 @@ def find(self, x: int) -> int:
 |-----------|-------------|------------|
 | makeSet(x) | parent[x] = x; rank[x] = 0 | O(1) |
 | find(x) | if parent[x] != x: parent[x] = find(parent[x]); return parent[x] | O(α(n)) |
-| union(x, y) | rx = find(x); ry = find(y); if rx == ry: return; if rank[rx] < rank[ry]: parent[rx] = ry; else if rank[rx] > rank[ry]: parent[ry] = rx; else: parent[ry] = rx; rank[rx]++ | O(α(n)) |
+| union(x, y) | rx = find(x); ry = find(y); if rx == ry: return; if rank[rx] &lt; rank[ry]: parent[rx] = ry; else if rank[rx] &gt; rank[ry]: parent[ry] = rx; else: parent[ry] = rx; rank[rx]++ | O(α(n)) |
 | connected(x, y) | return find(x) == find(y) | O(α(n)) |
 | countSets() | return numSets (maintained in union) | O(1) |
 

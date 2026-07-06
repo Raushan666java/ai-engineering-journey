@@ -654,7 +654,7 @@ Uses descriptive scales (Low, Medium, High) rather than monetary values. Best wh
 |--------|-------------|---------|
 | Very Low (1) | Negligible effect | Single non-sensitive public record exposed |
 | Low (2) | Minor disruption | Brief service degradation (< 1 hour) |
-| Medium (3) | Moderate damage | Customer data exposed, regulatory fine < $100K |
+| Medium (3) | Moderate damage | Customer data exposed, regulatory fine &lt; $100K |
 | High (4) | Major damage | Widespread breach, significant fines, media coverage |
 | Very High (5) | Catastrophic | Business failure, regulatory action, loss of life |
 
@@ -746,7 +746,7 @@ NIST SP 800-37, Revision 2. Seven-step framework for integrating security and ri
 
 | Option | Action | When to Use | Example |
 |--------|--------|-------------|---------|
-| **Mitigate** | Implement controls to reduce likelihood or impact | Cost-effective control exists; cost < risk | Patch critical vulnerability |
+| **Mitigate** | Implement controls to reduce likelihood or impact | Cost-effective control exists; cost &lt; risk | Patch critical vulnerability |
 | **Accept** | Acknowledge the risk, monitor, no action | Low risk, or cost of control exceeds risk itself | Minor info disclosure on non-sensitive system |
 | **Transfer** | Shift risk to a third party | Financial risk can be transferred; insurance exists | Cyber insurance, outsourced payment processing |
 | **Avoid** | Discontinue the risky activity | Risk is too high, no feasible mitigation exists | Stop collecting unnecessary PII |
@@ -1049,7 +1049,7 @@ tshark -r /tmp/http_capture.pcap -Y "http.request.method == POST" \
 | ARP spoofing | `arp` filter + Statistics > Endpoints | Duplicate IP addresses with different MACs |
 | DNS tunneling | `dns` filter, check query lengths | Queries with subdomains > 50 characters, high query rate |
 | Plaintext credentials | `http contains "password"` | POST bodies with pass=, pwd=, auth= parameters in the clear |
-| TLS version issues | `tls.handshake.version` | Version < 1.2 indicates weak/outdated TLS |
+| TLS version issues | `tls.handshake.version` | Version &lt; 1.2 indicates weak/outdated TLS |
 
 ### 8.4 John the Ripper and hashcat → Password Cracking
 
@@ -1746,7 +1746,7 @@ The IAM role attached to the vulnerable EC2 instance had these permissions:
     - D) The system should recover automatically
 
 <details>
-<summary>Quiz Answers</summary>
+<summary>Quiz Answers&lt;/summary&gt;
 1. B, 2. B, 3. C, 4. B, 5. A, 6. B, 7. C, 8. C, 9. B, 10. A
 </details>
 

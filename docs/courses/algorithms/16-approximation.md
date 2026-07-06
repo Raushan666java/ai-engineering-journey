@@ -188,7 +188,7 @@ List<Integer> approxVertexCover(int n, int[][] edges) {
 **Edge Cases:**
 - **Disconnected graph:** Works correctly; each component handled independently.
 - **Single vertex, no edges:** Returns empty cover (correct).
-- **Complete graph K<sub>n</sub>:** Picks a single edge, adds 2 vertices, removes all edges. Cover size = 2, optimal = n−1. Ratio improves as n grows.
+- **Complete graph K<sub>n&lt;/sub&gt;:** Picks a single edge, adds 2 vertices, removes all edges. Cover size = 2, optimal = n−1. Ratio improves as n grows.
 
 > **Pro Tip:** The elegant proof: the selected edges form a matching, so any vertex cover must include at least one endpoint per edge. The algorithm picks both — hence at most 2x optimal.
 >
@@ -629,7 +629,7 @@ int randomMAXCUT(int n, int[][] edges) {
 
 **Edge Cases:**
 - **Empty graph:** Returns 0 (correct).
-- **Complete graph K<sub>n</sub>:** Expected cut = n(n−1)/4. Optimal = floor(n²/4). Ratio → 1 as n → ∞.
+- **Complete graph K<sub>n&lt;/sub&gt;:** Expected cut = n(n−1)/4. Optimal = floor(n²/4). Ratio → 1 as n → ∞.
 - **Bipartite graph:** Optimal cut = all edges. Random achieves m/2 in expectation — ratio = 0.5.
 
 > **Remember:** The Goemans-Williamson algorithm achieves 0.878-approximation using semidefinite programming, but that's beyond the scope of this chapter.
@@ -968,7 +968,7 @@ double greedySetCover(const std::vector<std::unordered_set<int>>& subsets,
 | **Approximation Ratio** | ALG/OPT for minimization; OPT/ALG for maximization; always >= 1 |
 | **PTAS vs FPTAS** | PTAS poly in n (exp in 1/ε); FPTAS poly in both n and 1/ε |
 | **Vertex Cover** | Pick both endpoints of a maximal matching edge; ratio = 2 |
-| **Metric TSP** | MST cost <= OPT; double + DFS + shortcut gives 2x |
+| **Metric TSP** | MST cost &lt;= OPT; double + DFS + shortcut gives 2x |
 | **Christofides** | MST + perfect matching on odd-degree vertices = 1.5x |
 | **Set Cover** | Greedy picks min cost-per-new-element; O(log n) ratio |
 | **MAX-CUT** | Random assignment = 0.5-approx; conditional expectations derandomizes |
@@ -1033,7 +1033,7 @@ double greedySetCover(const std::vector<std::unordered_set<int>>& subsets,
 - D) H_n
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) 2. Each matched edge contributes two vertices to the cover, while optimal needs at least one per edge.
 </details>
 
@@ -1045,7 +1045,7 @@ B) 2. Each matched edge contributes two vertices to the cover, while optimal nee
 - D) To prove optimality
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The triangle inequality ensures that skipping repeated vertices (shortcutting) does not increase the tour cost.
 </details>
 
@@ -1057,7 +1057,7 @@ B) The triangle inequality ensures that skipping repeated vertices (shortcutting
 - D) 1.5
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) The greedy set cover achieves H_n ≈ ln n + γ, which is optimal up to constant factors unless P = NP.
 </details>
 
@@ -1069,7 +1069,7 @@ C) The greedy set cover achieves H_n ≈ ln n + γ, which is optimal up to const
 - D) FPTAS only works for maximization problems
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) FPTAS runs in time polynomial in both n and 1/ε, while PTAS can be exponential in 1/ε.
 </details>
 
@@ -1081,7 +1081,7 @@ B) FPTAS runs in time polynomial in both n and 1/ε, while PTAS can be exponenti
 - D) P_max / (ε · n)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) K = ε · P_max / n, which bounds the total rounding error to ε · P_max ≤ ε · OPT.
 </details>
 

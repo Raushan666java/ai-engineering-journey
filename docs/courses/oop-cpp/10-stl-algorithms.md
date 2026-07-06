@@ -25,7 +25,7 @@ After studying this chapter, students will be able to:
 | **Sorting** | introsort default, stable_sort when order matters | Use sort() by default; partial_sort for top-N |
 | **Binary Search** | lower_bound/upper_bound return insertion points | Check sorted precondition! |
 | **Set Operations** | merge, set_union, set_intersection work on sorted ranges | O(n) on sorted input |
-| **Numeric** | accumulate, inner_product in <numeric> | Pair with lambdas for custom reductions |
+| **Numeric** | accumulate, inner_product in &lt;numeric&gt; | Pair with lambdas for custom reductions |
 | **Lambda + Algorithm** | Lambdas are inline callables | Capture [], parameters, body |
 
 ## Chapter Roadmap
@@ -69,20 +69,20 @@ STL algorithms operate on **iterator ranges** rather than containers directly. T
 | std::binary_search | ForwardIterator | vector, deque, array, string, C-array |
 
 `cpp
-#include <algorithm>
-#include <vector>
-#include <list>
-#include <iostream>
+#include &lt;algorithm&gt;
+#include &lt;vector&gt;
+#include &lt;list&gt;
+#include &lt;iostream&gt;
 
 int main() {
-    std::vector<int> vec = {3, 1, 4, 1, 5};
+    std::vector&lt;int&gt; vec = {3, 1, 4, 1, 5};
     std::sort(vec.begin(), vec.end());   // OK: vector has random-access iterators
 
-    std::list<int> lst = {9, 2, 6, 5, 3};
+    std::list&lt;int&gt; lst = {9, 2, 6, 5, 3};
     // std::sort(lst.begin(), lst.end());  // COMPILE ERROR: list has bidirectional iterators
     lst.sort();                           // list provides its own sort member
 
-    for (int x : vec) std::cout << x << ' ';  // 1 1 3 4 5
+    for (int x : vec) std::cout &lt;< x << ' ';  // 1 1 3 4 5
     return 0;
 }
 `
@@ -133,22 +133,22 @@ function find(first, last, value):
 
 **C++ Code:**
 `cpp
-#include <algorithm>
-#include <vector>
-#include <iostream>
+#include &lt;algorithm&gt;
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
 
 int main() {
-    std::vector<int> numbers = {10, 20, 30, 40, 50, 30, 60};
+    std::vector&lt;int&gt; numbers = {10, 20, 30, 40, 50, 30, 60};
     auto it = std::find(numbers.begin(), numbers.end(), 30);
     if (it != numbers.end())
-        std::cout << "Found 30 at position: "
-                  << std::distance(numbers.begin(), it) << '\n';
+        std::cout &lt;< "Found 30 at position: "
+                  << std::distance(numbers.begin(), it) &lt;< '\n';
     else
-        std::cout << "30 not found\n";
+        std::cout &lt;< "30 not found\n";
 
     // Find non-existent value
     it = std::find(numbers.begin(), numbers.end(), 99);
-    std::cout << "99 found? " << (it == numbers.end() ? "No" : "Yes") << '\n';
+    std::cout &lt;< "99 found? " << (it == numbers.end() ? "No" : "Yes") << '\n';
     return 0;
 }
 `
@@ -174,18 +174,18 @@ Found 30 at position: 2
 
 **C++ Code:**
 `cpp
-#include <algorithm>
-#include <vector>
-#include <iostream>
+#include &lt;algorithm&gt;
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
 
 int main() {
-    std::vector<int> scores = {85, 92, 78, 92, 88, 92, 70};
+    std::vector&lt;int&gt; scores = {85, 92, 78, 92, 88, 92, 70};
     int count_92 = std::count(scores.begin(), scores.end(), 92);
-    std::cout << "92 appears " << count_92 << " times\n";
+    std::cout &lt;< "92 appears " << count_92 << " times\n";
 
     int count_pass = std::count_if(scores.begin(), scores.end(),
                                     [](int s) { return s >= 80; });
-    std::cout << "Passing scores (>=80): " << count_pass << '\n';
+    std::cout &lt;< "Passing scores (&gt;=80): " << count_pass &lt;< '\n';
     return 0;
 }
 `
@@ -211,25 +211,25 @@ Passing scores (>=80): 5
 
 **C++ Code:**
 `cpp
-#include <algorithm>
-#include <vector>
-#include <iostream>
+#include &lt;algorithm&gt;
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
 
 int main() {
-    std::vector<int> a = {1, 2, 3, 4, 5};
-    std::vector<int> b = {1, 2, 3, 4, 5};
-    std::vector<int> c = {1, 2, 0, 4, 5};
+    std::vector&lt;int&gt; a = {1, 2, 3, 4, 5};
+    std::vector&lt;int&gt; b = {1, 2, 3, 4, 5};
+    std::vector&lt;int&gt; c = {1, 2, 0, 4, 5};
 
-    std::cout << std::boolalpha;
-    std::cout << "a == b: " << std::equal(a.begin(), a.end(), b.begin()) << '\n';
-    std::cout << "a == c: " << std::equal(a.begin(), a.end(), c.begin()) << '\n';
+    std::cout &lt;< std::boolalpha;
+    std::cout &lt;< "a == b: " << std::equal(a.begin(), a.end(), b.begin()) << '\n';
+    std::cout &lt;< "a == c: " << std::equal(a.begin(), a.end(), c.begin()) << '\n';
 
     // With predicate: approximate comparison
-    std::vector<double> x = {1.1, 2.2, 3.3};
-    std::vector<double> y = {1.2, 2.3, 3.4};
+    std::vector&lt;double&gt; x = {1.1, 2.2, 3.3};
+    std::vector&lt;double&gt; y = {1.2, 2.3, 3.4};
     bool approx = std::equal(x.begin(), x.end(), y.begin(),
-        [](double p, double q) { return std::abs(p - q) < 0.2; });
-    std::cout << "x approx == y: " << approx << '\n';
+        [](double p, double q) { return std::abs(p - q) &lt; 0.2; });
+    std::cout &lt;< "x approx == y: " << approx << '\n';
     return 0;
 }
 `
@@ -255,29 +255,29 @@ x approx == y: true
 
 **C++ Code:**
 `cpp
-#include <algorithm>
-#include <vector>
-#include <iostream>
-#include <string>
+#include &lt;algorithm&gt;
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
+#include &lt;string&gt;
 
 int main() {
-    std::vector<int> v1 = {1, 2, 3, 4, 5};
-    std::vector<int> v2 = {1, 2, 3, 0, 5};
+    std::vector&lt;int&gt; v1 = {1, 2, 3, 4, 5};
+    std::vector&lt;int&gt; v2 = {1, 2, 3, 0, 5};
 
     auto [it1, it2] = std::mismatch(v1.begin(), v1.end(), v2.begin());
     if (it1 != v1.end())
-        std::cout << "First mismatch: v1 has " << *it1
-                  << ", v2 has " << *it2 << " at position "
-                  << std::distance(v1.begin(), it1) << '\n';
+        std::cout &lt;< "First mismatch: v1 has " << *it1
+                  << ", v2 has " << *it2 &lt;< " at position "
+                  << std::distance(v1.begin(), it1) &lt;< '\n';
 
     // String example: DNA sequences
     std::string dna1 = "ATCGGCTA";
     std::string dna2 = "ATCGTCTA";
     auto [d1, d2] = std::mismatch(dna1.begin(), dna1.end(), dna2.begin());
     if (d1 != dna1.end())
-        std::cout << "DNA differs at position "
-                  << std::distance(dna1.begin(), d1) << ": "
-                  << *d1 << " vs " << *d2 << '\n';
+        std::cout &lt;< "DNA differs at position "
+                  << std::distance(dna1.begin(), d1) &lt;< ": "
+                  << *d1 &lt;< " vs " << *d2 << '\n';
     return 0;
 }
 `
@@ -302,10 +302,10 @@ DNA differs at position 4: G vs T
 
 **C++ Code:**
 `cpp
-#include <algorithm>
-#include <vector>
-#include <iostream>
-#include <string>
+#include &lt;algorithm&gt;
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
+#include &lt;string&gt;
 
 int main() {
     std::string text = "the quick brown fox jumps over the lazy dog";
@@ -314,15 +314,15 @@ int main() {
     auto it = std::search(text.begin(), text.end(),
                            pattern.begin(), pattern.end());
     if (it != text.end())
-        std::cout << "Found '" << pattern << "' at position "
-                  << std::distance(text.begin(), it) << '\n';
+        std::cout &lt;< "Found '" << pattern << "' at position "
+                  << std::distance(text.begin(), it) &lt;< '\n';
 
     // Using Boyer-Moore searcher (C++17)
     auto searcher = std::boyer_moore_searcher(pattern.begin(), pattern.end());
     it = std::search(text.begin(), text.end(), searcher);
     if (it != text.end())
-        std::cout << "Boyer-Moore found at position "
-                  << std::distance(text.begin(), it) << '\n';
+        std::cout &lt;< "Boyer-Moore found at position "
+                  << std::distance(text.begin(), it) &lt;< '\n';
     return 0;
 }
 `
@@ -761,7 +761,7 @@ Sorting rearranges elements into a specified order. The STL provides four sortin
 
 **Algorithm:** Introsort = QuickSort + HeapSort + InsertionSort
 
-1. If subrange size < 16: use InsertionSort (fastest for tiny arrays)
+1. If subrange size &lt; 16: use InsertionSort (fastest for tiny arrays)
 2. Otherwise, median-of-three partition
 3. Recurse on both partitions
 4. If recursion depth exceeds 2 × log₂(n): switch to HeapSort
@@ -893,7 +893,7 @@ int main() {
 Top 3 scores: 95 92 91
 ```
 
-**Complexity:** O(n log k) where k = middle - first. **WHY:** Building the initial heap is O(n). Each of the k top elements requires a pop-heap operation taking O(log n). Total: O(n + k log n) = O(n log k) when k << n. This is significantly faster than full sort when k is small.
+**Complexity:** O(n log k) where k = middle - first. **WHY:** Building the initial heap is O(n). Each of the k top elements requires a pop-heap operation taking O(log n). Total: O(n + k log n) = O(n log k) when k &lt;< n. This is significantly faster than full sort when k is small.
 
 ### 10.4.4 std::nth_element — Single Element in Correct Position
 
@@ -1152,7 +1152,7 @@ Count of 20: 3
 
 ### Dry Run — lower_bound(30) on {10, 20, 30, 30, 30, 40, 50}
 
-| Iteration | first | count | step | mid | *mid | *mid < 30? | Action |
+| Iteration | first | count | step | mid | *mid | *mid &lt; 30? | Action |
 |-----------|-------|-------|------|-----|------|------------|--------|
 | 1 | pos 0 | 7 | 3 | pos 3 | 30 | No | count = 3 |
 | 2 | pos 0 | 3 | 1 | pos 1 | 20 | Yes | first = pos 2, count = 1 |
@@ -2025,7 +2025,7 @@ int count_algo = std::count_if(data.begin(), data.end(),
 |--------|----------|---------------|
 | Lines of code | 5 | 2 |
 | Intent | Hidden in loop body | Self-documenting (count_if) |
-| Off-by-one risk | Yes (i < size vs i <= size) | No (begin/end) |
+| Off-by-one risk | Yes (i &lt; size vs i <= size) | No (begin/end) |
 | Container coupling | Tied to vector (uses .size() and []) | Works with any container |
 | Optimization | May vectorize | Compiler recognizes pattern + vectorizes |
 
@@ -2441,7 +2441,7 @@ Recommend to A: 2 3 4 6 8 10
 
 6. **Set Operations**: set_union, set_intersection, set_difference work on sorted ranges (not just std::set) in O(n+m) time.
 
-7. **Numeric Algorithms**: accumulate (fold), inner_product (dot product), partial_sum (running totals), adjacent_difference (discrete derivative), and iota (sequential fill) from <numeric>.
+7. **Numeric Algorithms**: accumulate (fold), inner_product (dot product), partial_sum (running totals), adjacent_difference (discrete derivative), and iota (sequential fill) from &lt;numeric&gt;.
 
 8. **Lambdas**: Inline callables that customize algorithm behavior through capture, parameters, and body. Five capture modes: by value, by reference, init capture (C++14), default all-by-value (=), default all-by-reference (&).
 
@@ -2461,9 +2461,9 @@ Recommend to A: 2 3 4 6 8 10
 
 ### Application Problems
 
-1. Given std::vector<int> v = {4, 2, 7, 1, 8, 3, 5, 6}, use STL algorithms to:
+1. Given std::vector&lt;int&gt; v = {4, 2, 7, 1, 8, 3, 5, 6}, use STL algorithms to:
    a) Count even numbers using count_if
-   b) Remove all elements < 4 using remove_if + erase
+   b) Remove all elements &lt; 4 using remove_if + erase
    c) Sort the remaining elements descending using sort with lambda
    d) Compute sum of squares of the result using transform + accumulate
 
@@ -2489,7 +2489,7 @@ Recommend to A: 2 3 4 6 8 10
    - Stores student records (name, vector of scores) in a vector
    - Computes each student's average using std::accumulate
    - Sorts students by average using std::sort with lambda
-   - Assigns letter grades (A: >=90, B: >=80, C: >=70, D: >=60, F: <60) using std::transform
+   - Assigns letter grades (A: >=90, B: >=80, C: >=70, D: >=60, F: &lt;60) using std::transform
    - Computes class statistics (min, max, median, average) using std::minmax_element, std::nth_element, std::accumulate
    - Prints a ranked report
    - Achieves all of the above without any raw for loops — use only STL algorithms

@@ -103,7 +103,7 @@ Each pipeline stage has a specific purpose, trigger, and gate:
 
 **Stage 4 — Deploy Production (trigger: manual approval after Stage 3)**
 - Purpose: Zero-downtime release to production
-- Gate: Smoke tests pass, 10-minute monitoring window with error rate < 1%
+- Gate: Smoke tests pass, 10-minute monitoring window with error rate &lt; 1%
 - Fallback: Automatic rollback if gate fails
 
 **Stage 5 — Observe (continuous)**
@@ -357,11 +357,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -369,7 +369,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -515,11 +515,11 @@ console.log(orchestrator.generateReport(run, results));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: Why use trunk-based development for this capstone?</summary>**A)** It's the only option<br>**B)** Supports CI/CD with short-lived branches<br>**C)** Required by GitHub<br>**D)** Easier to document<br><br>**Answer: B)** Supports CI/CD with short-lived branches</details>
+<details><summary>Question 1: Why use trunk-based development for this capstone?</summary>**A)** It's the only option<br>**B)** Supports CI/CD with short-lived branches<br>**C)** Required by GitHub<br>**D)** Easier to document<br><br>**Answer: B)** Supports CI/CD with short-lived branches&lt;/details&gt;
 
-<details><summary>Question 2: How does blue-green achieve zero-downtime?</summary>**A)** Rolling restart<br>**B)** Service selector switch between environments<br>**C)** Canary traffic routing<br>**D)** Parallel deployments<br><br>**Answer: B)** Service selector switch between environments</details>
+<details><summary>Question 2: How does blue-green achieve zero-downtime?</summary>**A)** Rolling restart<br>**B)** Service selector switch between environments<br>**C)** Canary traffic routing<br>**D)** Parallel deployments<br><br>**Answer: B)** Service selector switch between environments&lt;/details&gt;
 
-<details><summary>Question 3: What metric triggers automated rollback?</summary>**A)** Build time<br>**B)** Error rate threshold exceeded<br>**C)** Code coverage<br>**D)** Number of commits<br><br>**Answer: B)** Error rate threshold exceeded</details>
+<details><summary>Question 3: What metric triggers automated rollback?</summary>**A)** Build time<br>**B)** Error rate threshold exceeded<br>**C)** Code coverage<br>**D)** Number of commits<br><br>**Answer: B)** Error rate threshold exceeded&lt;/details&gt;
 ## TypeScript: Complete Pipeline Orchestration Script
 
 Below is a TypeScript script that orchestrates the entire capstone pipeline with automated rollback detection:
@@ -736,7 +736,7 @@ console.log(probes);
 | Integration Tests | All e2e pass | Continue to prod | Block, roll back staging |
 | Manual Approval | Approver signs | Deploy blue | Wait or abort |
 | Health Check | All pods Ready | Switch traffic | Rollback, page SRE |
-| Monitoring Window | Error rate <1%, p99 <500ms | Mark complete | Auto-rollback, page SRE |
+| Monitoring Window | Error rate &lt;1%, p99 <500ms | Mark complete | Auto-rollback, page SRE |
 
 ## Summary
 

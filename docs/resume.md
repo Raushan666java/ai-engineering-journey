@@ -6,17 +6,17 @@ description: "Raushan Kumar — Resume. AI Automation Engineer transitioning fro
 
 <div class="resume-header">
 <div>
-<h1>Raushan Kumar</h1>
+<h1>Raushan Kumar&lt;/h1&gt;
 <p style="margin:0;font-size:0.95rem;color:var(--md-default-fg-color--light);">
   AI Automation Engineer · Laravel Full-Stack Developer<br>
   Patna, Bihar · Open to Dubai / Remote from July 2026
 </p>
 </div>
 <div class="resume-contact">
-  <a href="mailto:hello@apexpillar.tech">hello@apexpillar.tech</a><br>
-  <a href="https://linkedin.com/in/raushan-kumar-477465250">linkedin.com/in/raushan-kumar-477465250</a><br>
-  <a href="https://github.com/Raushan666java">github.com/Raushan666java</a><br>
-  <a href="https://apexpillar.tech">apexpillar.tech</a>
+  <a href="mailto:hello@apexpillar.tech">hello@apexpillar.tech&lt;/a><br&gt;
+  <a href="https://linkedin.com/in/raushan-kumar-477465250">linkedin.com/in/raushan-kumar-477465250&lt;/a><br&gt;
+  <a href="https://github.com/Raushan666java">github.com/Raushan666java&lt;/a><br&gt;
+  <a href="https://apexpillar.tech">apexpillar.tech&lt;/a>
 </div>
 </div>
 
@@ -30,32 +30,32 @@ Bridging Laravel's pragmatic production mindset with Python's AI ecosystem. Targ
 
 ## Skills
 
-<span class="skill-badge highlight">Python</span>
-<span class="skill-badge highlight">Laravel</span>
-<span class="skill-badge highlight">FastAPI</span>
-<span class="skill-badge highlight">RAG</span>
-<span class="skill-badge highlight">LangGraph</span>
-<span class="skill-badge highlight">MCP</span>
-<span class="skill-badge highlight">LLM Engineering</span>
-<span class="skill-badge highlight">Agent Systems</span>
-<span class="skill-badge">PHP</span>
-<span class="skill-badge">n8n</span>
-<span class="skill-badge">OpenAI API</span>
-<span class="skill-badge">Anthropic API</span>
-<span class="skill-badge">ChromaDB</span>
-<span class="skill-badge">PostgreSQL</span>
-<span class="skill-badge">MySQL</span>
-<span class="skill-badge">Docker</span>
-<span class="skill-badge">Redis</span>
-<span class="skill-badge">Git</span>
-<span class="skill-badge">Java</span>
-<span class="skill-badge">Spring Boot</span>
-<span class="skill-badge">TypeScript</span>
-<span class="skill-badge">n8n</span>
-<span class="skill-badge">Cloudflare</span>
-<span class="skill-badge">VPS/Linux</span>
-<span class="skill-badge">Whisper</span>
-<span class="skill-badge">JavaScript</span>
+<span class="skill-badge highlight">Python&lt;/span&gt;
+<span class="skill-badge highlight">Laravel&lt;/span&gt;
+<span class="skill-badge highlight">FastAPI&lt;/span&gt;
+<span class="skill-badge highlight">RAG&lt;/span&gt;
+<span class="skill-badge highlight">LangGraph&lt;/span&gt;
+<span class="skill-badge highlight">MCP&lt;/span&gt;
+<span class="skill-badge highlight">LLM Engineering&lt;/span&gt;
+<span class="skill-badge highlight">Agent Systems&lt;/span&gt;
+<span class="skill-badge">PHP&lt;/span&gt;
+<span class="skill-badge">n8n&lt;/span&gt;
+<span class="skill-badge">OpenAI API&lt;/span&gt;
+<span class="skill-badge">Anthropic API&lt;/span&gt;
+<span class="skill-badge">ChromaDB&lt;/span&gt;
+<span class="skill-badge">PostgreSQL&lt;/span&gt;
+<span class="skill-badge">MySQL&lt;/span&gt;
+<span class="skill-badge">Docker&lt;/span&gt;
+<span class="skill-badge">Redis&lt;/span&gt;
+<span class="skill-badge">Git&lt;/span&gt;
+<span class="skill-badge">Java&lt;/span&gt;
+<span class="skill-badge">Spring Boot&lt;/span&gt;
+<span class="skill-badge">TypeScript&lt;/span&gt;
+<span class="skill-badge">n8n&lt;/span&gt;
+<span class="skill-badge">Cloudflare&lt;/span&gt;
+<span class="skill-badge">VPS/Linux&lt;/span&gt;
+<span class="skill-badge">Whisper&lt;/span&gt;
+<span class="skill-badge">JavaScript&lt;/span&gt;
 
 ---
 

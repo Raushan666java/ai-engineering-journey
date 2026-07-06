@@ -350,7 +350,7 @@ flowchart TD
 - D) Exponential time
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** P = problems decidable in O(n^k) time on a deterministic Turing machine.
 </details>
 
@@ -361,7 +361,7 @@ flowchart TD
 - D) Solved by DFA
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** NP = problems with polynomial-time verifiable certificates (solutions).
 </details>
 
@@ -372,7 +372,7 @@ flowchart TD
 - D) In P
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** NP-complete = in NP + all NP problems reduce to it (NP-hard).
 </details>
 
@@ -383,7 +383,7 @@ flowchart TD
 - D) HAM-CYCLE
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Cook (1971) and Levin (1973) independently proved SAT is NP-complete.
 </details>
 
@@ -394,7 +394,7 @@ flowchart TD
 - D) Exponential time is unnecessary
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A)** P = NP means every efficiently verifiable problem is efficiently solvable.
 </details>
 
@@ -807,7 +807,7 @@ function satTo3Sat(clauses: Clause[]): Clause[] {
   const result: Clause[] = [];
 
   for (const clause of clauses) {
-    if (clause.length <= 3) {
+    if (clause.length &lt;= 3) {
       result.push(clause);
       continue;
     }
@@ -818,7 +818,7 @@ function satTo3Sat(clauses: Clause[]): Clause[] {
     const newVars = k - 3;
     const baseVar = 10000;  // offset for new variables (avoid collisions)
 
-    for (let i = 0; i < newVars; i++) {
+    for (let i = 0; i &lt; newVars; i++) {
       const y = baseVar + i;
       if (i === 0) {
         result.push([clause[0], clause[1], y]);
@@ -845,8 +845,8 @@ function getLegalWindows(
   tapeAlphabet: string[],
   states: string[],
   transition: (state: string, symbol: string) => [string, string, "L" | "R"][]
-): Set<string> {
-  const legal = new Set<string>();
+): Set&lt;string&gt; {
+  const legal = new Set&lt;string&gt;();
 
   // A window encodes a 2×3 slice of the TM computation table
   for (const s1 of tapeAlphabet) {

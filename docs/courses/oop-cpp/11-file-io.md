@@ -2402,87 +2402,87 @@ private:
    B) `<fstream>`
    C) `<sstream>`
    D) `<filesystem>`
-   <details><summary>Answer</summary>**B)** `<fstream>` provides ifstream, ofstream, and fstream.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** `<fstream>` provides ifstream, ofstream, and fstream.</details>
 
 2. **What is the default mode when opening an ofstream?**
    A) `ios::in`
    B) `ios::out | ios::trunc`
    C) `ios::out | ios::app`
    D) `ios::binary`
-   <details><summary>Answer</summary>**B)** ofstream opens in `out | trunc` mode, which truncates (clears) the file.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** ofstream opens in `out | trunc` mode, which truncates (clears) the file.</details>
 
 3. **Which function reads a line from a file into std::string?**
    A) `file >> line`
    B) `file.read(line)`
    C) `getline(file, line)`
    D) `file.getline(line)`
-   <details><summary>Answer</summary>**C)** `std::getline(file, line)` reads until the delimiter (newline by default).</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** `std::getline(file, line)` reads until the delimiter (newline by default).</details>
 
 4. **Which seek direction allows negative offsets?**
    A) `ios::beg`
    B) `ios::cur`
    C) `ios::end`
    D) Both B and C
-   <details><summary>Answer</summary>**D)** `ios::cur` and `ios::end` both support negative offsets (move backward). `ios::beg` does not.</details>
+   <details><summary>Answer&lt;/summary&gt;**D)** `ios::cur` and `ios::end` both support negative offsets (move backward). `ios::beg` does not.</details>
 
 5. **What does `ios::binary` mode prevent on Windows?**
    A) Opening the file
    B) Newline translation (CRLF ↔ LF)
    C) Writing to the file
    D) Reading from the file
-   <details><summary>Answer</summary>**B)** Binary mode disables newline translation between `\n` and `\r\n`, which is essential for non-text data.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Binary mode disables newline translation between `\n` and `\r\n`, which is essential for non-text data.</details>
 
 6. **How do you get the current read position in a file?**
    A) `file.tellp()`
    B) `file.tellg()`
    C) `file.position()`
    D) `file.curpos()`
-   <details><summary>Answer</summary>**B)** `tellg()` returns the get (read) position; `tellp()` returns the put (write) position.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** `tellg()` returns the get (read) position; `tellp()` returns the put (write) position.</details>
 
 7. **Which stream state flag indicates a hardware error?**
    A) `eofbit`
    B) `failbit`
    C) `badbit`
    D) `goodbit`
-   <details><summary>Answer</summary>**C)** `badbit` indicates an irrecoverable I/O error, typically hardware-related.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** `badbit` indicates an irrecoverable I/O error, typically hardware-related.</details>
 
 8. **What does `str()` return for a stringstream?**
    A) The character at position 0
    B) The size of the buffer
    C) The underlying string
    D) The error state
-   <details><summary>Answer</summary>**C)** `.str()` returns a copy (C++11: move) of the underlying string object.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** `.str()` returns a copy (C++11: move) of the underlying string object.</details>
 
 9. **Which class should you use for in-memory output formatting?**
    A) `istringstream`
    B) `ostringstream`
    C) `ifstream`
    D) `ofstream`
-   <details><summary>Answer</summary>**B)** `ostringstream` writes to a string buffer that can be extracted via `.str()`.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** `ostringstream` writes to a string buffer that can be extracted via `.str()`.</details>
 
 10. **Why should you include a version number in serialized data?**
     A) It makes the file smaller
     B) It allows future format changes while maintaining backward compatibility
     C) It's required by the C++ standard
     D) It prevents file corruption
-    <details><summary>Answer</summary>**B)** A version number lets your code detect and handle different formats as the serialization evolves.</details>
+    <details><summary>Answer&lt;/summary&gt;**B)** A version number lets your code detect and handle different formats as the serialization evolves.</details>
 
 ### True or False
 
 11. **Binary mode files are always smaller than text mode files.**
-    <details><summary>Answer</summary>**False.** Small integers (0-9) take 1 byte in text but 4 bytes in binary. Text representation of small values may be smaller.</details>
+    <details><summary>Answer&lt;/summary&gt;**False.** Small integers (0-9) take 1 byte in text but 4 bytes in binary. Text representation of small values may be smaller.</details>
 
 12. **seekg and seekp positions are independent on an fstream.**
-    <details><summary>Answer</summary>**True.** The get pointer and put pointer are separate and can be positioned independently (in C++11+).</details>
+    <details><summary>Answer&lt;/summary&gt;**True.** The get pointer and put pointer are separate and can be positioned independently (in C++11+).</details>
 
 13. **getline reads the delimiter character and includes it in the string.**
-    <details><summary>Answer</summary>**False.** `getline` reads up to and discards the delimiter. The delimiter is NOT included in the result string.</details>
+    <details><summary>Answer&lt;/summary&gt;**False.** `getline` reads up to and discards the delimiter. The delimiter is NOT included in the result string.</details>
 
 14. **String streams can be used as function arguments where file streams are expected.**
-    <details><summary>Answer</summary>**True (with exceptions).** Since both derive from `istream`/`ostream`, functions taking `istream&` can accept either file or string streams.</details>
+    <details><summary>Answer&lt;/summary&gt;**True (with exceptions).** Since both derive from `istream`/`ostream`, functions taking `istream&` can accept either file or string streams.</details>
 
 15. **Calling close() on an already-closed file stream causes undefined behavior.**
-    <details><summary>Answer</summary>**False.** Calling `close()` on a closed stream is safe and does nothing.</details>
+    <details><summary>Answer&lt;/summary&gt;**False.** Calling `close()` on a closed stream is safe and does nothing.</details>
 
 ---
 

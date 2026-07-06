@@ -47,7 +47,7 @@ An eval-driven loop is the most general form of agentic feedback. The agent prod
 | `max_iterations` | Hard cap on retries | 3-10 |
 | `min_score` | Bar to clear for acceptance | 0.7-0.9 |
 | `decay_factor` | How much to penalize repeated failures | 0.5-0.95 |
-| `early_stop` | Stop if score stops improving | Δ < 0.05 |
+| `early_stop` | Stop if score stops improving | Δ &lt; 0.05 |
 
 **Termination conditions.** The loop must always have a stopping rule:
 
@@ -1235,20 +1235,20 @@ class OscillationDetector {
 
   analyze(): OscillationResult {
     const n = this.errorHistory.length;
-    if (n < this.minSamples) {
+    if (n &lt; this.minSamples) {
       return { oscillating: false, amplitude: 0, period: null, growingAmplitude: false, zeroCrossingCount: 0, recommendation: "Need more samples" };
     }
 
     const recent = this.errorHistory.slice(-this.minSamples);
     let zeroCrossings = 0;
-    for (let i = 1; i < recent.length; i++) {
-      if (recent[i] * recent[i - 1] < 0) zeroCrossings++;
+    for (let i = 1; i &lt; recent.length; i++) {
+      if (recent[i] * recent[i - 1] &lt; 0) zeroCrossings++;
     }
 
     const periods: number[] = [];
     let lastZeroIdx: number | null = null;
-    for (let i = 0; i < this.errorHistory.length; i++) {
-      if (Math.abs(this.errorHistory[i]) < 0.001 || (i > 0 && this.errorHistory[i] * this.errorHistory[i - 1] < 0)) {
+    for (let i = 0; i &lt; this.errorHistory.length; i++) {
+      if (Math.abs(this.errorHistory[i]) &lt; 0.001 || (i &gt; 0 && this.errorHistory[i] * this.errorHistory[i - 1] &lt; 0)) {
         if (lastZeroIdx !== null) {
           periods.push(i - lastZeroIdx);
         }
@@ -1347,11 +1347,11 @@ class CascadeController {
     initialValue: number,
     plantFn: (control: number) => number,
     steps: number
-  ): Array<{ step: number; measurement: number; control: number; stageOutputs: number[] }> {
-    const trace: Array<{ step: number; measurement: number; control: number; stageOutputs: number[] }> = [];
+  ): Array&lt;{ step: number; measurement: number; control: number; stageOutputs: number[] }&gt; {
+    const trace: Array&lt;{ step: number; measurement: number; control: number; stageOutputs: number[] }&gt; = [];
     let measurement = initialValue;
 
-    for (let i = 0; i < steps; i++) {
+    for (let i = 0; i &lt; steps; i++) {
       const control = this.compute(setpoint, measurement);
       measurement = plantFn(control);
       trace.push({ step: i, measurement, control, stageOutputs: [...this.outputs] });
@@ -1413,7 +1413,7 @@ class FeedForwardController {
   }
 
   predictNextDisturbance(): number | null {
-    if (this.disturbanceHistory.length < 2) return null;
+    if (this.disturbanceHistory.length &lt; 2) return null;
     const last = this.disturbanceHistory[this.disturbanceHistory.length - 1];
     const prev = this.disturbanceHistory[this.disturbanceHistory.length - 2];
     const trend = last - prev;
@@ -1425,11 +1425,11 @@ class FeedForwardController {
     initialValue: number,
     steps: number,
     disturbanceFn: (step: number) => number
-  ): Array<{ step: number; measurement: number; disturbance: number; control: number; ffTerm: number }> {
-    const trace: Array<{ step: number; measurement: number; disturbance: number; control: number; ffTerm: number }> = [];
+  ): Array&lt;{ step: number; measurement: number; disturbance: number; control: number; ffTerm: number }&gt; {
+    const trace: Array&lt;{ step: number; measurement: number; disturbance: number; control: number; ffTerm: number }&gt; = [];
     let measurement = initialValue;
 
-    for (let i = 0; i < steps; i++) {
+    for (let i = 0; i &lt; steps; i++) {
       const disturbance = disturbanceFn(i);
       this.recordDisturbance(disturbance);
       const predicted = this.predictNextDisturbance();
@@ -1471,9 +1471,9 @@ class BumpTestAnalyzer {
     let t63 = -1;
     let t28 = -1;
 
-    for (let i = 0; i < n; i++) {
-      if (t28 < 0 && stepResponse[i] >= y28) t28 = i;
-      if (t63 < 0 && stepResponse[i] >= y63) t63 = i;
+    for (let i = 0; i &lt; n; i++) {
+      if (t28 &lt; 0 && stepResponse[i] &gt;= y28) t28 = i;
+      if (t63 &lt; 0 && stepResponse[i] &gt;= y63) t63 = i;
     }
 
     const timeConstant = t63 > 0 && t28 > 0 ? 1.5 * (t63 - t28) : n / 3;
@@ -1495,7 +1495,7 @@ class BumpTestAnalyzer {
     const alpha = 1 / Math.max(1, timeConstant);
     const deadSamples = Math.round(deadTime);
 
-    for (let i = 0; i < steps; i++) {
+    for (let i = 0; i &lt; steps; i++) {
       const input = i >= deadSamples ? stepSize : 0;
       value += alpha * (gain * input - value);
       output.push(value);
@@ -1505,16 +1505,16 @@ class BumpTestAnalyzer {
 
   recommendTuning(model: ProcessModel): { kp: number; ki: number; kd: number } {
     const { gain, timeConstant, deadTime } = model;
-    if (gain <= 0) return { kp: 0.5, ki: 0.1, kd: 0 };
+    if (gain &lt;= 0) return { kp: 0.5, ki: 0.1, kd: 0 };
 
     const ratio = deadTime / Math.max(0.01, timeConstant);
     let kp: number, ki: number, kd: number;
 
-    if (ratio < 0.1) {
+    if (ratio &lt; 0.1) {
       kp = 0.6 / gain;
       ki = 0.5 / timeConstant;
       kd = 0;
-    } else if (ratio < 0.5) {
+    } else if (ratio &lt; 0.5) {
       kp = 0.8 / gain;
       ki = 0.3 / timeConstant;
       kd = 0.1 * timeConstant;
@@ -1543,7 +1543,7 @@ class DeadbandFilter {
   apply(error: number): number {
     const change = Math.abs(error - this.lastValidError);
 
-    if (change < this.threshold) {
+    if (change &lt; this.threshold) {
       this.suppressedCount++;
       return this.lastOutput;
     }
@@ -1560,7 +1560,7 @@ class DeadbandFilter {
       : this.threshold;
 
     const change = Math.abs(error - this.lastValidError);
-    if (change < effectiveThreshold) {
+    if (change &lt; effectiveThreshold) {
       this.suppressedCount++;
       return this.lastOutput;
     }
@@ -1625,7 +1625,7 @@ async function main() {
 
   // 3. Feed-Forward Controller
   const ff = new FeedForwardController({ disturbanceGain: 0.6, modelInverseGain: 0.8, lookaheadSteps: 3 });
-  const ffTrace = ff.simulate(100, 0, 20, (step) => step >= 10 && step < 14 ? 40 : Math.random() * 2);
+  const ffTrace = ff.simulate(100, 0, 20, (step) => step >= 10 && step &lt; 14 ? 40 : Math.random() * 2);
   const lastFf = ffTrace[ffTrace.length - 1];
   console.log(`\nFeed-Forward Controller (with disturbance at step 10-13):`);
   console.log(`  Final measurement: ${lastFf.measurement.toFixed(2)}`);
@@ -1637,7 +1637,7 @@ async function main() {
   const bumpAnalyer = new BumpTestAnalyzer();
   const stepResp: number[] = [];
   let v = 0;
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i &lt; 40; i++) {
     v += (1.5 * 100 - v) / 8;
     stepResp.push(v + (Math.random() - 0.5) * 2);
   }
@@ -1653,7 +1653,7 @@ async function main() {
 
   // 5. Deadband Filter
   const noisyTrace: number[] = [];
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i &lt; 30; i++) {
     const trueVal = 50 * Math.exp(-i * 0.08);
     noisyTrace.push(trueVal + (Math.random() - 0.5) * 3);
   }

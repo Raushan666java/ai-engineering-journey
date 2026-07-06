@@ -1581,7 +1581,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Only driver hours
 - D) Only vehicle wear
 
-<details><summary>Answer</summary>B) Delivery distance and time</details>
+<details><summary>Answer&lt;/summary&gt;B) Delivery distance and time&lt;/details&gt;
 
 **Q2:** What is the key challenge in inventory management?
 - A) Product quality
@@ -1589,7 +1589,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Packaging design
 - D) Supplier relationships
 
-<details><summary>Answer</summary>B) Balancing holding cost against stockout risk</details>
+<details><summary>Answer&lt;/summary&gt;B) Balancing holding cost against stockout risk&lt;/details&gt;
 
 **Q3:** How does real-time tracking update shipment status?
 - A) Manual updates only
@@ -1597,7 +1597,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Daily batch updates
 - D) Customer-reported status
 
-<details><summary>Answer</summary>B) GPS integration + event-driven triggers</details>
+<details><summary>Answer&lt;/summary&gt;B) GPS integration + event-driven triggers&lt;/details&gt;
 
 **Q4:** What does ABC analysis do in inventory?
 - A) Groups items by purchase frequency
@@ -1605,7 +1605,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Analyzes supplier performance
 - D) Tracks warehouse capacity
 
-<details><summary>Answer</summary>B) Categorizes items by value and importance</details>
+<details><summary>Answer&lt;/summary&gt;B) Categorizes items by value and importance&lt;/details&gt;
 
 ---
 
@@ -1656,7 +1656,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Only driver hours
 - D) Only vehicle wear
 
-<details><summary>Answer</summary>B) Delivery distance and time</details>
+<details><summary>Answer&lt;/summary&gt;B) Delivery distance and time&lt;/details&gt;
 
 **Q2:** What is the key challenge in inventory management?
 - A) Product quality
@@ -1664,7 +1664,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Packaging design
 - D) Supplier relationships
 
-<details><summary>Answer</summary>B) Balancing holding cost against stockout risk</details>
+<details><summary>Answer&lt;/summary&gt;B) Balancing holding cost against stockout risk&lt;/details&gt;
 
 **Q3:** How does real-time tracking update shipment status?
 - A) Manual updates only
@@ -1672,7 +1672,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Daily batch updates
 - D) Customer-reported status
 
-<details><summary>Answer</summary>B) GPS integration + event-driven triggers</details>
+<details><summary>Answer&lt;/summary&gt;B) GPS integration + event-driven triggers&lt;/details&gt;
 
 **Q4:** What does ABC analysis do in inventory?
 - A) Groups items by purchase frequency
@@ -1680,7 +1680,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Analyzes supplier performance
 - D) Tracks warehouse capacity
 
-<details><summary>Answer</summary>B) Categorizes items by value and importance</details>
+<details><summary>Answer&lt;/summary&gt;B) Categorizes items by value and importance&lt;/details&gt;
 
 ---
 
@@ -1731,7 +1731,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Only driver hours
 - D) Only vehicle wear
 
-<details><summary>Answer</summary>B) Delivery distance and time</details>
+<details><summary>Answer&lt;/summary&gt;B) Delivery distance and time&lt;/details&gt;
 
 **Q2:** What is the key challenge in inventory management?
 - A) Product quality
@@ -1739,7 +1739,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Packaging design
 - D) Supplier relationships
 
-<details><summary>Answer</summary>B) Balancing holding cost against stockout risk</details>
+<details><summary>Answer&lt;/summary&gt;B) Balancing holding cost against stockout risk&lt;/details&gt;
 
 **Q3:** How does real-time tracking update shipment status?
 - A) Manual updates only
@@ -1747,7 +1747,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Daily batch updates
 - D) Customer-reported status
 
-<details><summary>Answer</summary>B) GPS integration + event-driven triggers</details>
+<details><summary>Answer&lt;/summary&gt;B) GPS integration + event-driven triggers&lt;/details&gt;
 
 **Q4:** What does ABC analysis do in inventory?
 - A) Groups items by purchase frequency
@@ -1755,7 +1755,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Analyzes supplier performance
 - D) Tracks warehouse capacity
 
-<details><summary>Answer</summary>B) Categorizes items by value and importance</details>
+<details><summary>Answer&lt;/summary&gt;B) Categorizes items by value and importance&lt;/details&gt;
 
 ---
 
@@ -1806,7 +1806,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Only driver hours
 - D) Only vehicle wear
 
-<details><summary>Answer</summary>B) Delivery distance and time</details>
+<details><summary>Answer&lt;/summary&gt;B) Delivery distance and time&lt;/details&gt;
 
 **Q2:** What is the key challenge in inventory management?
 - A) Product quality
@@ -1814,7 +1814,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Packaging design
 - D) Supplier relationships
 
-<details><summary>Answer</summary>B) Balancing holding cost against stockout risk</details>
+<details><summary>Answer&lt;/summary&gt;B) Balancing holding cost against stockout risk&lt;/details&gt;
 
 **Q3:** How does real-time tracking update shipment status?
 - A) Manual updates only
@@ -1822,7 +1822,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Daily batch updates
 - D) Customer-reported status
 
-<details><summary>Answer</summary>B) GPS integration + event-driven triggers</details>
+<details><summary>Answer&lt;/summary&gt;B) GPS integration + event-driven triggers&lt;/details&gt;
 
 **Q4:** What does ABC analysis do in inventory?
 - A) Groups items by purchase frequency
@@ -1830,7 +1830,7 @@ If any driver's ETA error exceeds 15 minutes for more than 3 consecutive reading
 - C) Analyzes supplier performance
 - D) Tracks warehouse capacity
 
-<details><summary>Answer</summary>B) Categorizes items by value and importance</details>
+<details><summary>Answer&lt;/summary&gt;B) Categorizes items by value and importance&lt;/details&gt;
 
 ## Summary
 
@@ -1846,7 +1846,7 @@ This chapter covered the interview Q&A landscape for Laravel developers targetin
 
 ## Exercises
 
-1. **Carrier Rate Cache**: Design a caching strategy for carrier rate quotes that balances freshness (rates change daily) with response time (shoppers expect <500ms). Implement a Laravel solution using Cache tags and a background job that warms the cache each morning.
+1. **Carrier Rate Cache**: Design a caching strategy for carrier rate quotes that balances freshness (rates change daily) with response time (shoppers expect &lt;500ms). Implement a Laravel solution using Cache tags and a background job that warms the cache each morning.
 
 2. **Warehouse Slotting Agent**: Extend the `WarehouseAutomationAgent` to analyze pick frequency per SKU and recommend bin relocations. Fast-moving items should move toé»„é‡‘ aisle locations; slow movers to deep storage.
 

@@ -1438,7 +1438,7 @@ src/main/resources/db/
    - D) Flyway skips it silently
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Flyway detects checksum mismatch and fails.** Flyway stores a checksum of each migration and validates it on every application startup.
 </details>
 
@@ -1449,7 +1449,7 @@ src/main/resources/db/
    - D) Both XML and YAML (non-SQL formats)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **D) Both XML and YAML (non-SQL formats).** XML, YAML, and JSON changelogs are database-agnostic and Liquibase translates them to the target database dialect.
 </details>
 
@@ -1460,7 +1460,7 @@ src/main/resources/db/
    - D) Restart the application
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Create a new migration that repairs the state.** Never modify an existing migration → create a compensating migration that fixes the issue.
 </details>
 

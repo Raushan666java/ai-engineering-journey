@@ -668,7 +668,7 @@ for step in range(10):
 | Kidnapped robot | Particles stuck on wrong mode | Inject random particles (5–10%) each iteration |
 | Perceptual aliasing | Two places look identical | Use multiple sensor types; add odometry memory |
 | Particle deprivation | Too few particles near true pose | Adaptive resampling; increase N in high-likelihood regions |
-| Sudden sensor failure | All weights go to zero | Detection heuristic: if max weight < threshold, reinitialize |
+| Sudden sensor failure | All weights go to zero | Detection heuristic: if max weight &lt; threshold, reinitialize |
 | Cyclic environment | Symmetry causes ambiguity | Incorporate distinctive features (visual landmarks) |
 
 ### 14.5.8 Localization Methods Comparison
@@ -1405,7 +1405,7 @@ Without random injection, particles trapped in the wrong mode never recover — 
 - **Spurious measurements:** LIDAR reflections, camera artifacts.
 
 **Solutions:**
-- **Nearest-neighbor gating:** Match if Mahalanobis distance < χ² threshold.
+- **Nearest-neighbor gating:** Match if Mahalanobis distance &lt; χ² threshold.
 - **JCBB (Joint Compatibility Branch and Bound):** Checks joint compatibility of all matches.
 - **RANSAC:** Random sampling to find geometrically consistent matches.
 - **Appearance-based:** Use visual features (SIFT, SuperPoint) that are more distinctive than geometry alone.
@@ -1559,7 +1559,7 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 - C) SLAM is faster than localization
 - D) SLAM requires GPS; localization does not
 
-<details><summary>Answer</summary>B) SLAM addresses the chicken-and-egg problem: to build a map you need to know where you are, and to know where you are you need a map. SLAM solves both simultaneously.</details>
+<details><summary>Answer&lt;/summary&gt;B) SLAM addresses the chicken-and-egg problem: to build a map you need to know where you are, and to know where you are you need a map. SLAM solves both simultaneously.</details>
 
 **Q2:** RRT* improves on RRT by providing what guarantee?
 - A) Faster convergence
@@ -1567,7 +1567,7 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 - C) Deterministic paths
 - D) Guaranteed collision avoidance
 
-<details><summary>Answer</summary>B) RRT* reconnects the tree when better paths are found, providing asymptotic optimality. RRT only guarantees probabilistic completeness, not optimality.</details>
+<details><summary>Answer&lt;/summary&gt;B) RRT* reconnects the tree when better paths are found, providing asymptotic optimality. RRT only guarantees probabilistic completeness, not optimality.</details>
 
 **Q3:** The PID term that eliminates steady-state error is:
 - A) Proportional
@@ -1575,7 +1575,7 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 - C) Derivative
 - D) Feedforward
 
-<details><summary>Answer</summary>B) The integral term accumulates past error over time, driving the system toward the setpoint even when the proportional term alone leaves residual error.</details>
+<details><summary>Answer&lt;/summary&gt;B) The integral term accumulates past error over time, driving the system toward the setpoint even when the proportional term alone leaves residual error.</details>
 
 **Q4:** In the complementary filter for IMU + GPS fusion, what does the alpha parameter (typically ~0.98) control?
 - A) The frequency cutoff between gyro and GPS/accel corrections
@@ -1583,7 +1583,7 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 - C) The GPS update rate
 - D) The accelerometer bias
 
-<details><summary>Answer</summary>A) Alpha = 0.98 means 98% weight on gyro integration (high-frequency motion) and 2% on absolute reference (low-frequency correction). This filters out gyro drift while preserving fast dynamics.</details>
+<details><summary>Answer&lt;/summary&gt;A) Alpha = 0.98 means 98% weight on gyro integration (high-frequency motion) and 2% on absolute reference (low-frequency correction). This filters out gyro drift while preserving fast dynamics.</details>
 
 **Q5:** Why does EKF-SLAM scale poorly to large environments?
 - A) The robot runs out of battery
@@ -1591,7 +1591,7 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 - C) LIDAR has limited range
 - D) GPS is unavailable indoors
 
-<details><summary>Answer</summary>B) EKF-SLAM maintains a dense covariance matrix over the robot pose and all landmark positions. With L=10,000 landmarks, the state is ~20,003-dimensional and the covariance matrix has ~400M entries. Update complexity O(n²) becomes prohibitive.</details>
+<details><summary>Answer&lt;/summary&gt;B) EKF-SLAM maintains a dense covariance matrix over the robot pose and all landmark positions. With L=10,000 landmarks, the state is ~20,003-dimensional and the covariance matrix has ~400M entries. Update complexity O(n²) becomes prohibitive.</details>
 
 **Q6:** Which robot type uses MPC for whole-body control including balance?
 - A) Roomba
@@ -1599,7 +1599,7 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 - C) Boston Dynamics Atlas
 - D) Parrot AR Drone
 
-<details><summary>Answer</summary>C) Atlas uses model predictive control (MPC) that solves a full-body dynamics optimization at 50 Hz to maintain balance during dynamic locomotion. This is far beyond the simple threshold or PID controllers used in other platforms.</details>
+<details><summary>Answer&lt;/summary&gt;C) Atlas uses model predictive control (MPC) that solves a full-body dynamics optimization at 50 Hz to maintain balance during dynamic locomotion. This is far beyond the simple threshold or PID controllers used in other platforms.</details>
 
 **Q7:** Place the following steps in the correct sense-plan-act order:
 - A) Send PWM to motors → read LIDAR scan → compute path → filter noise
@@ -1607,7 +1607,7 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 - C) Compute path → filter noise → read LIDAR scan → send PWM
 - D) Send PWM → compute path → filter noise → read LIDAR
 
-<details><summary>Answer</summary>B) The correct order is: sense (read LIDAR), process (filter noise), plan (compute path), act (send PWM). This is the fundamental sense-plan-act cycle.</details>
+<details><summary>Answer&lt;/summary&gt;B) The correct order is: sense (read LIDAR), process (filter noise), plan (compute path), act (send PWM). This is the fundamental sense-plan-act cycle.</details>
 
 **Q8:** What is the primary limitation of the complementary filter compared to the Kalman filter?
 - A) It requires more computation
@@ -1615,7 +1615,7 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 - C) It only works with GPS
 - D) It is unstable for most systems
 
-<details><summary>Answer</summary>B) The complementary filter uses a fixed alpha parameter instead of optimally computing the Kalman gain from sensor noise covariances. This means noisier sensors are not downweighted appropriately. However, its O(1) computation makes it ideal for low-power embedded systems.</details>
+<details><summary>Answer&lt;/summary&gt;B) The complementary filter uses a fixed alpha parameter instead of optimally computing the Kalman gain from sensor noise covariances. This means noisier sensors are not downweighted appropriately. However, its O(1) computation makes it ideal for low-power embedded systems.</details>
 
 ---
 

@@ -192,7 +192,7 @@ SkiRental(B, days_unknown):
     return total_cost
 ```
 
-**Competitive ratio:** \( 2 - 1/B \). Proof: if the total days \( N < B \), the algorithm pays \( N \), optimal pays \( N \), ratio 1. If \( N \ge B \), the algorithm pays \( (B-1) + B = 2B - 1 \), optimal pays \( B \), ratio \( 2 - 1/B \).
+**Competitive ratio:** \( 2 - 1/B \). Proof: if the total days \( N &lt; B \), the algorithm pays \( N \), optimal pays \( N \), ratio 1. If \( N \ge B \), the algorithm pays \( (B-1) + B = 2B - 1 \), optimal pays \( B \), ratio \( 2 - 1/B \).
 
 **Randomized algorithm:** Choose a threshold \( T \) randomly according to a specific distribution. Competitive ratio \( e/(e-1) \approx 1.58 \).
 
@@ -389,7 +389,7 @@ public class BloomFilter {
 
 1. Start at the highest level's head.
 2. While not at the bottom level:
-   a. While the next node at current level exists and its key < target, move forward.
+   a. While the next node at current level exists and its key &lt; target, move forward.
    b. Drop down one level.
 3. At the bottom level, the next node is either the target or not present.
 
@@ -428,7 +428,7 @@ SkipList:
 | Level | Node Walk | Action |
 |-------|-----------|--------|
 | 3 (top) | Head(∞) → 9 | 9 > 7 → drop to level 2 |
-| 2 | Head(∞) → 4 → 9 | 4 < 7, move to 4; 9 > 7 → drop to level 1 |
+| 2 | Head(∞) → 4 → 9 | 4 &lt; 7, move to 4; 9 &gt; 7 → drop to level 1 |
 | 1 | 4 → 7 | 7 == 7 → found! |
 
 **Complexity Analysis:**
@@ -505,7 +505,7 @@ class SkipList:
 
 ### 18.4 Streaming Algorithms
 
-Streaming algorithms process a sequence of elements using sublinear memory (typically \( O(\log^c n) \) or \( O(n^\alpha) \) for \( \alpha < 1 \)).
+Streaming algorithms process a sequence of elements using sublinear memory (typically \( O(\log^c n) \) or \( O(n^\alpha) \) for \( \alpha &lt; 1 \)).
 
 **Real-world analogy:** You stand at the entrance of a stadium counting attendees as they enter. You have only a small notepad (limited memory) and cannot remember every person who walks by. Yet you still need to answer: "How many distinct people have entered?" (distinct count), "How many times has person X entered?" (frequency estimation), or "Pick a random person from those who entered" (random sampling).
 
@@ -974,7 +974,7 @@ ParallelPrefixSum(A):
 - D) k
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Rent for B-1 days then buy gives cost 2B-1 when N ≥ B, vs optimal of B, so ratio = 2 - 1/B.
 </details>
 
@@ -986,7 +986,7 @@ B) Rent for B-1 days then buy gives cost 2B-1 when N ≥ B, vs optimal of B, so 
 - D) Supports deletions
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Bloom filters have no false negatives — if a query returns false, the element is definitely absent. False positives are possible.
 </details>
 
@@ -998,7 +998,7 @@ B) Bloom filters have no false negatives — if a query returns false, the eleme
 - D) D must equal W
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) On P processors, the time is at most W/P + D, where W is total work and D is critical path depth.
 </details>
 
@@ -1010,7 +1010,7 @@ B) On P processors, the time is at most W/P + D, where W is total work and D is 
 - D) B+ tree
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Redis uses skip lists for sorted set operations (ZADD, ZRANGE, ZRANK).
 </details>
 
@@ -1022,6 +1022,6 @@ C) Redis uses skip lists for sorted set operations (ZADD, ZRANGE, ZRANK).
 - D) O(1)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) O(log n) expected. The random level assignment (geometric distribution) creates an expected O(log n) search path.
 </details>

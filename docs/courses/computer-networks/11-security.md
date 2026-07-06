@@ -320,7 +320,7 @@ D(K_priv, E(K_pub, M)) = M
 1. Choose two large primes p and q (2048 bits each for security).
 2. Compute n = p * q (modulus, 4096 bits).
 3. Compute phi(n) = (p-1)(q-1).
-4. Choose e such that 1 < e < phi(n) and gcd(e, phi(n)) = 1 (commonly e = 65537).
+4. Choose e such that 1 &lt; e < phi(n) and gcd(e, phi(n)) = 1 (commonly e = 65537).
 5. Compute d = e^{-1} mod phi(n) using extended Euclidean algorithm.
 6. Public key: (n, e); private key: (n, d).
 

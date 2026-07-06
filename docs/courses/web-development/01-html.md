@@ -536,7 +536,7 @@ Test your understanding with these quick questions.
 - C) `<section>`
 - D) `<article>`
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `<main>` — a document must have exactly one visible `<main>` element.**
 
@@ -549,7 +549,7 @@ Test your understanding with these quick questions.
 - C) `pattern`
 - D) `format`
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **C) `pattern` — the value is matched against the given regular expression.**
 
@@ -562,7 +562,7 @@ Test your understanding with these quick questions.
 - C) Cookies without expiry
 - D) Both B and C
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **D) Both B and C — `localStorage` and persistent cookies survive browser restarts.**
 
@@ -575,7 +575,7 @@ Test your understanding with these quick questions.
 - C) Set the image dimensions
 - D) Link to a higher-resolution version
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) The `alt` attribute provides alternative text for assistive technologies and when images fail to load.**
 
@@ -742,11 +742,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -754,7 +754,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

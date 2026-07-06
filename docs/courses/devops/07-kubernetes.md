@@ -907,15 +907,15 @@ console.log('Drain simulation:', analyzer.simulateDrain(analysis, 'node-1', 2));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: Which component stores the cluster state in Kubernetes?</summary>**A)** API Server<br>**B)** Scheduler<br>**C)** etcd<br>**D)** Controller Manager<br><br>**Answer: C)** etcd</details>
+<details><summary>Question 1: Which component stores the cluster state in Kubernetes?</summary>**A)** API Server<br>**B)** Scheduler<br>**C)** etcd<br>**D)** Controller Manager<br><br>**Answer: C)** etcd&lt;/details&gt;
 
-<details><summary>Question 2: What is the smallest deployable unit in Kubernetes?</summary>**A)** Container<br>**B)** Pod<br>**C)** Deployment<br>**D)** Service<br><br>**Answer: B)** Pod</details>
+<details><summary>Question 2: What is the smallest deployable unit in Kubernetes?</summary>**A)** Container<br>**B)** Pod<br>**C)** Deployment<br>**D)** Service<br><br>**Answer: B)** Pod&lt;/details&gt;
 
-<details><summary>Question 3: What does a readiness probe determine?</summary>**A)** Whether the pod should be restarted<br>**B)** Whether the pod should receive traffic<br>**C)** Whether the node is healthy<br>**D)** Whether the image is available<br><br>**Answer: B)** Whether the pod should receive traffic</details>
+<details><summary>Question 3: What does a readiness probe determine?</summary>**A)** Whether the pod should be restarted<br>**B)** Whether the pod should receive traffic<br>**C)** Whether the node is healthy<br>**D)** Whether the image is available<br><br>**Answer: B)** Whether the pod should receive traffic&lt;/details&gt;
 
-<details><summary>Question 4: Which Service type exposes a pod externally via a cloud load balancer?</summary>**A)** ClusterIP<br>**B)** NodePort<br>**C)** LoadBalancer<br>**D)** ExternalName<br><br>**Answer: C)** LoadBalancer</details>
+<details><summary>Question 4: Which Service type exposes a pod externally via a cloud load balancer?</summary>**A)** ClusterIP<br>**B)** NodePort<br>**C)** LoadBalancer<br>**D)** ExternalName<br><br>**Answer: C)** LoadBalancer&lt;/details&gt;
 
-<details><summary>Question 5: What is the purpose of a PersistentVolumeClaim?</summary>**A)** Claim a node for a pod<br>**B)** Request storage resources from the cluster<br>**C)** Claim an IP address<br>**D)** Reserve CPU resources<br><br>**Answer: B)** Request storage resources from the cluster</details>
+<details><summary>Question 5: What is the purpose of a PersistentVolumeClaim?</summary>**A)** Claim a node for a pod<br>**B)** Request storage resources from the cluster<br>**C)** Claim an IP address<br>**D)** Reserve CPU resources<br><br>**Answer: B)** Request storage resources from the cluster&lt;/details&gt;
 
 ---
 
@@ -928,11 +928,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -940,7 +940,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

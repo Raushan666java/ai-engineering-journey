@@ -81,7 +81,7 @@ Given text \(T[0..n-1]\) and pattern \(P[0..m-1]\), slide the pattern over the t
 1. Let \(n = \text{len}(T)\), \(m = \text{len}(P)\).
 2. For each shift \(s\) from 0 to \(n-m\):
    a. Set \(j = 0\)
-   b. While \(j < m\) and \(T[s+j] == P[j]\): increment \(j\)
+   b. While \(j &lt; m\) and \(T[s+j] == P[j]\): increment \(j\)
    c. If \(j == m\): report match at position \(s\)
 
 ### Pseudocode
@@ -435,7 +435,7 @@ Use a **rolling hash** to compute the hash of each text window in O(1) time from
 2. Compute \(ht = \text{hash}(T[0..m-1])\).
 3. For each window starting at \(i\) from 0 to \(n-m\):
    a. If \(ht == hp\) and \(T[i..i+m-1] == P\): report match.
-   b. If \(i < n-m\): update \(ht\) to the hash of \(T[i+1..i+m]\).
+   b. If \(i &lt; n-m\): update \(ht\) to the hash of \(T[i+1..i+m]\).
 
 ### Rolling Hash Formula
 
@@ -610,7 +610,7 @@ The **Z-array** \(Z[i]\) stores the length of the longest substring starting at 
 1. Initialize \(Z[0] = 0\), \(l = r = 0\).
 2. For each \(i\) from 1 to \(n-1\):
    a. If \(i \le r\): \(Z[i] = \min(r - i + 1, Z[i - l])\)
-   b. While \(i + Z[i] < n\) and \(S[Z[i]] == S[i + Z[i]]\): increment \(Z[i]\)
+   b. While \(i + Z[i] &lt; n\) and \(S[Z[i]] == S[i + Z[i]]\): increment \(Z[i]\)
    c. If \(i + Z[i] - 1 > r\): set \(l = i\), \(r = i + Z[i] - 1\)
 
 ### Pseudocode
@@ -1650,7 +1650,7 @@ Snort and Suricata match network packets against thousands of attack signatures:
 - D) Preprocessing the text instead of the pattern
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The prefix function (pi) encodes borders — when a mismatch occurs, we shift by the border length without going back in the text.
 </details>
 
@@ -1662,7 +1662,7 @@ B) The prefix function (pi) encodes borders — when a mismatch occurs, we shift
 - D) O(n log n)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) O(nm) when many hash collisions force full character-by-character comparison.
 </details>
 
@@ -1674,7 +1674,7 @@ B) O(nm) when many hash collisions force full character-by-character comparison.
 - D) Finding the longest suffix
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The LCP array enables O(1) longest common prefix queries between consecutive sorted suffixes, which unlocks distinct substrings counting and substring search.
 </details>
 
@@ -1686,7 +1686,7 @@ B) The LCP array enables O(1) longest common prefix queries between consecutive 
 - D) Suffix Array
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Aho-Corasick — it matches all patterns in a single linear pass, making it ideal for IDS/IPS applications.
 </details>
 
@@ -1698,7 +1698,7 @@ C) Aho-Corasick — it matches all patterns in a single linear pass, making it i
 - D) The length of the longest palindrome centered at i
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Z[i] is the length of the longest substring starting at position i that is also a prefix of the string.
 </details>
 
@@ -1710,7 +1710,7 @@ B) Z[i] is the length of the longest substring starting at position i that is al
 - D) O(n² log n)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) O(n log n) — each doubling round requires sorting n elements, and there are log n rounds.
 </details>
 
@@ -1722,7 +1722,7 @@ B) O(n log n) — each doubling round requires sorting n elements, and there are
 - D) 6
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) 4 — "A", "AA", "AAA", "AAAA". Using the formula \(n(n+1)/2 - \sum LCP\): \(10 - (1+2+1) = 4\).
 </details>
 
@@ -1734,7 +1734,7 @@ B) 4 — "A", "AA", "AAA", "AAAA". Using the formula \(n(n+1)/2 - \sum LCP\): \(
 - D) To store the hash of each pattern
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Failure links redirect the automaton on mismatch to the longest proper suffix of the current prefix that is also a prefix of some pattern — analogous to KMP's prefix function.
 </details>
 

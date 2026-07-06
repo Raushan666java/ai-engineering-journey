@@ -2029,7 +2029,7 @@ mvn compile
    - D) test
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) compile.** The compile scope is the default and makes the dependency available in all classpaths.
 </details>
 
@@ -2040,7 +2040,7 @@ mvn compile
    - D) mvn install
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) mvn help:effective-pom.** This shows the merged POM including inheritance from parent, profiles, and property interpolation.
 </details>
 
@@ -2051,7 +2051,7 @@ mvn compile
    - D) To define plugin versions
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) To centralize version and scope for transitive dependencies.** dependencyManagement declares versions that child modules inherit without repeating the version.
 </details>
 
@@ -2062,7 +2062,7 @@ mvn compile
    - D) Parent runs first; aggregator runs after
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Parent defines shared config children inherit; aggregator lists modules to build together.** A POM can serve both roles simultaneously.
 </details>
 

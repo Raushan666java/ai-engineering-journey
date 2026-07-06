@@ -2808,7 +2808,7 @@ class UserControllerValidationTest {
    - D) @Size(min=1)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) @NotBlank.** @NotBlank requires the string to be non-null and contain at least one non-whitespace character.
 </details>
 
@@ -2819,7 +2819,7 @@ class UserControllerValidationTest {
    - D) Profile-based validation
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Validation groups with group interfaces.** Define marker interfaces (e.g., Create.class, Update.class) and specify groups on both constraints and @Validated.
 </details>
 
@@ -2830,7 +2830,7 @@ class UserControllerValidationTest {
    - D) Automatic JSON serialization
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Compile-time code generation with type safety.** MapStruct generates mapper implementations at compile time, avoiding reflection overhead and catching errors early.
 </details>
 

@@ -522,7 +522,7 @@ Every context-free language can be expressed as the homomorphic image of the int
 - D) Not RE
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A)** A decider is a special case of a recognizer, so recursive ? RE.
 </details>
 
@@ -533,7 +533,7 @@ Every context-free language can be expressed as the homomorphic image of the int
 - D) L is infinite
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Decidable = TM halts on all inputs = both L and its complement are recognizable.
 </details>
 
@@ -544,7 +544,7 @@ Every context-free language can be expressed as the homomorphic image of the int
 - D) A conjecture that's been disproven
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** It's a thesis about the nature of computation, not provable but universally accepted.
 </details>
 
@@ -555,7 +555,7 @@ Every context-free language can be expressed as the homomorphic image of the int
 - D) TMs are impractical
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** The UTM stores ?M? as data and simulates it — the theoretical basis for general-purpose computers.
 </details>
 
@@ -566,7 +566,7 @@ Every context-free language can be expressed as the homomorphic image of the int
 - D) Eliminate nondeterminism
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Oracle machines create relativized complexity classes and identify proof barriers.
 </details>
 
@@ -719,7 +719,7 @@ class MultiTapeTMConverter {
   // transitions.
   static simulate(
     k: number,
-    transitions: Map<string, Array<{ write: string; direction: "L" | "R"; nextState: string }>>,
+    transitions: Map&lt;string, Array<{ write: string; direction: "L" | "R"; nextState: string }&gt;>,
     inputs: string[],
     maxSteps: number = 100
   ): { accepted: boolean; tapes: string[]; steps: number } {
@@ -730,10 +730,10 @@ class MultiTapeTMConverter {
     let state = "q0";
     let steps = 0;
 
-    while (steps < maxSteps) {
+    while (steps &lt; maxSteps) {
       // Build read key: read symbol from each tape head
       const readSymbols = heads.map((h, i) => {
-        if (h < 0) return "?";
+        if (h &lt; 0) return "?";
         if (h >= tapes[i].length) return "?";
         return tapes[i][h] || "?";
       });
@@ -750,10 +750,10 @@ class MultiTapeTMConverter {
       }
 
       // Apply transition per tape
-      for (let i = 0; i < k && i < trans.length; i++) {
+      for (let i = 0; i &lt; k && i < trans.length; i++) {
         const act = trans[i];
         if (act.write !== "e") {
-          if (heads[i] < 0) {
+          if (heads[i] &lt; 0) {
             tapes[i].unshift(act.write);
             heads[i] = 0;
           } else if (heads[i] >= tapes[i].length) {
@@ -806,7 +806,7 @@ class UniversalTM {
 }
 
 // Demo multi-tape TM (2-tape palindrome checker)
-const mtTrans = new Map<string, Array<{ write: string; direction: "L" | "R"; nextState: string }>>();
+const mtTrans = new Map&lt;string, Array<{ write: string; direction: "L" | "R"; nextState: string }&gt;>();
 mtTrans.set("q0,1,?", [ { write: "e", direction: "R", nextState: "q0" }, { write: "e", direction: "L", nextState: "q0" } ]);
 // First tape moves right, second tape starts empty, we just demonstrate the mechanism
 console.log(UniversalTM.churchTuringThesis().join("\n"));

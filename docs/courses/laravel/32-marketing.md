@@ -3364,7 +3364,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Simple rule-based grouping
 - D) Random assignment
 
-<details><summary>Answer</summary>B) Clustering algorithms</details>
+<details><summary>Answer&lt;/summary&gt;B) Clustering algorithms&lt;/details&gt;
 
 **Q2:** How does the CampaignOptimizationAgent decide budget allocation?
 - A) Equal distribution across all channels
@@ -3372,7 +3372,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Random allocation
 - D) Fixed percentages per campaign type
 
-<details><summary>Answer</summary>B) ROI-based analysis of historical performance</details>
+<details><summary>Answer&lt;/summary&gt;B) ROI-based analysis of historical performance&lt;/details&gt;
 
 **Q3:** What channels does the ContentGenerationAgent support?
 - A) Only blog posts
@@ -3380,7 +3380,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Only email campaigns
 - D) Only social media posts
 
-<details><summary>Answer</summary>B) Multi-channel (blog, social, email)</details>
+<details><summary>Answer&lt;/summary&gt;B) Multi-channel (blog, social, email)&lt;/details&gt;
 
 **Q4:** Lead scoring combines which two scores?
 - A) Age and location
@@ -3388,7 +3388,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Budget and timeline
 - D) Email opens and clicks
 
-<details><summary>Answer</summary>B) Engagement score and fit score</details>
+<details><summary>Answer&lt;/summary&gt;B) Engagement score and fit score&lt;/details&gt;
 
 **Q5:** What does the A/B testing agent primarily calculate?
 - A) Average of all results
@@ -3396,7 +3396,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Maximum conversion rate
 - D) Minimum cost per acquisition
 
-<details><summary>Answer</summary>B) Statistical significance of test variants</details>
+<details><summary>Answer&lt;/summary&gt;B) Statistical significance of test variants&lt;/details&gt;
 
 ---
 
@@ -3447,7 +3447,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Simple rule-based grouping
 - D) Random assignment
 
-<details><summary>Answer</summary>B) Clustering algorithms</details>
+<details><summary>Answer&lt;/summary&gt;B) Clustering algorithms&lt;/details&gt;
 
 **Q2:** How does the CampaignOptimizationAgent decide budget allocation?
 - A) Equal distribution across all channels
@@ -3455,7 +3455,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Random allocation
 - D) Fixed percentages per campaign type
 
-<details><summary>Answer</summary>B) ROI-based analysis of historical performance</details>
+<details><summary>Answer&lt;/summary&gt;B) ROI-based analysis of historical performance&lt;/details&gt;
 
 **Q3:** What channels does the ContentGenerationAgent support?
 - A) Only blog posts
@@ -3463,7 +3463,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Only email campaigns
 - D) Only social media posts
 
-<details><summary>Answer</summary>B) Multi-channel (blog, social, email)</details>
+<details><summary>Answer&lt;/summary&gt;B) Multi-channel (blog, social, email)&lt;/details&gt;
 
 **Q4:** Lead scoring combines which two scores?
 - A) Age and location
@@ -3471,7 +3471,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Budget and timeline
 - D) Email opens and clicks
 
-<details><summary>Answer</summary>B) Engagement score and fit score</details>
+<details><summary>Answer&lt;/summary&gt;B) Engagement score and fit score&lt;/details&gt;
 
 **Q5:** What does the A/B testing agent primarily calculate?
 - A) Average of all results
@@ -3479,7 +3479,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Maximum conversion rate
 - D) Minimum cost per acquisition
 
-<details><summary>Answer</summary>B) Statistical significance of test variants</details>
+<details><summary>Answer&lt;/summary&gt;B) Statistical significance of test variants&lt;/details&gt;
 
 ---
 
@@ -3530,7 +3530,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Simple rule-based grouping
 - D) Random assignment
 
-<details><summary>Answer</summary>B) Clustering algorithms</details>
+<details><summary>Answer&lt;/summary&gt;B) Clustering algorithms&lt;/details&gt;
 
 **Q2:** How does the CampaignOptimizationAgent decide budget allocation?
 - A) Equal distribution across all channels
@@ -3538,7 +3538,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Random allocation
 - D) Fixed percentages per campaign type
 
-<details><summary>Answer</summary>B) ROI-based analysis of historical performance</details>
+<details><summary>Answer&lt;/summary&gt;B) ROI-based analysis of historical performance&lt;/details&gt;
 
 **Q3:** What channels does the ContentGenerationAgent support?
 - A) Only blog posts
@@ -3546,7 +3546,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Only email campaigns
 - D) Only social media posts
 
-<details><summary>Answer</summary>B) Multi-channel (blog, social, email)</details>
+<details><summary>Answer&lt;/summary&gt;B) Multi-channel (blog, social, email)&lt;/details&gt;
 
 **Q4:** Lead scoring combines which two scores?
 - A) Age and location
@@ -3554,7 +3554,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Budget and timeline
 - D) Email opens and clicks
 
-<details><summary>Answer</summary>B) Engagement score and fit score</details>
+<details><summary>Answer&lt;/summary&gt;B) Engagement score and fit score&lt;/details&gt;
 
 **Q5:** What does the A/B testing agent primarily calculate?
 - A) Average of all results
@@ -3562,7 +3562,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Maximum conversion rate
 - D) Minimum cost per acquisition
 
-<details><summary>Answer</summary>B) Statistical significance of test variants</details>
+<details><summary>Answer&lt;/summary&gt;B) Statistical significance of test variants&lt;/details&gt;
 
 ---
 
@@ -3613,7 +3613,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Simple rule-based grouping
 - D) Random assignment
 
-<details><summary>Answer</summary>B) Clustering algorithms</details>
+<details><summary>Answer&lt;/summary&gt;B) Clustering algorithms&lt;/details&gt;
 
 **Q2:** How does the CampaignOptimizationAgent decide budget allocation?
 - A) Equal distribution across all channels
@@ -3621,7 +3621,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Random allocation
 - D) Fixed percentages per campaign type
 
-<details><summary>Answer</summary>B) ROI-based analysis of historical performance</details>
+<details><summary>Answer&lt;/summary&gt;B) ROI-based analysis of historical performance&lt;/details&gt;
 
 **Q3:** What channels does the ContentGenerationAgent support?
 - A) Only blog posts
@@ -3629,7 +3629,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Only email campaigns
 - D) Only social media posts
 
-<details><summary>Answer</summary>B) Multi-channel (blog, social, email)</details>
+<details><summary>Answer&lt;/summary&gt;B) Multi-channel (blog, social, email)&lt;/details&gt;
 
 **Q4:** Lead scoring combines which two scores?
 - A) Age and location
@@ -3637,7 +3637,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Budget and timeline
 - D) Email opens and clicks
 
-<details><summary>Answer</summary>B) Engagement score and fit score</details>
+<details><summary>Answer&lt;/summary&gt;B) Engagement score and fit score&lt;/details&gt;
 
 **Q5:** What does the A/B testing agent primarily calculate?
 - A) Average of all results
@@ -3645,7 +3645,7 @@ class GenerateMarketingReportCommand extends Command
 - C) Maximum conversion rate
 - D) Minimum cost per acquisition
 
-<details><summary>Answer</summary>B) Statistical significance of test variants</details>
+<details><summary>Answer&lt;/summary&gt;B) Statistical significance of test variants&lt;/details&gt;
 
 ## Summary
 

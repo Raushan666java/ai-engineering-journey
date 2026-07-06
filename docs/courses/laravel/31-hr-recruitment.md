@@ -2453,7 +2453,7 @@ class HrComplianceAgent
 - C) 50% required skills, 30% preferred, 20% experience
 - D) 40% required skills, 40% preferred, 20% experience
 
-<details><summary>Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>
+<details><summary>Answer&lt;/summary&gt;B) 60% required skills, 25% preferred, 15% experience&lt;/details&gt;
 
 **Q2:** Which agent uses vector embeddings and cosine similarity for matching?
 - A) ResumeScreeningAgent
@@ -2461,7 +2461,7 @@ class HrComplianceAgent
 - C) CandidateMatchingAgent
 - D) OnboardingAgent
 
-<details><summary>Answer</summary>C) CandidateMatchingAgent</details>
+<details><summary>Answer&lt;/summary&gt;C) CandidateMatchingAgent&lt;/details&gt;
 
 **Q3:** What does the SentimentAgent use to analyze employee engagement?
 - A) Only numeric rating scales
@@ -2469,7 +2469,7 @@ class HrComplianceAgent
 - C) Keyword matching
 - D) Rule-based scoring
 
-<details><summary>Answer</summary>B) LLM-based text sentiment analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM-based text sentiment analysis&lt;/details&gt;
 
 **Q4:** Which compliance report format does the HrComplianceAgent generate?
 - A) SOC-2
@@ -2477,7 +2477,7 @@ class HrComplianceAgent
 - C) ISO 27001
 - D) PCI-DSS
 
-<details><summary>Answer</summary>B) EEO-1</details>
+<details><summary>Answer&lt;/summary&gt;B) EEO-1&lt;/details&gt;
 
 **Q5:** How are onboarding task assignments routed?
 - A) All tasks assigned solely to HR
@@ -2485,7 +2485,7 @@ class HrComplianceAgent
 - C) All tasks assigned to the new hire
 - D) Tasks are not assigned to anyone
 
-<details><summary>Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>
+<details><summary>Answer&lt;/summary&gt;B) Per-role assignment (employee, HR, IT, manager)&lt;/details&gt;
 
 ---
 
@@ -2536,7 +2536,7 @@ class HrComplianceAgent
 - C) 50% required skills, 30% preferred, 20% experience
 - D) 40% required skills, 40% preferred, 20% experience
 
-<details><summary>Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>
+<details><summary>Answer&lt;/summary&gt;B) 60% required skills, 25% preferred, 15% experience&lt;/details&gt;
 
 **Q2:** Which agent uses vector embeddings and cosine similarity for matching?
 - A) ResumeScreeningAgent
@@ -2544,7 +2544,7 @@ class HrComplianceAgent
 - C) CandidateMatchingAgent
 - D) OnboardingAgent
 
-<details><summary>Answer</summary>C) CandidateMatchingAgent</details>
+<details><summary>Answer&lt;/summary&gt;C) CandidateMatchingAgent&lt;/details&gt;
 
 **Q3:** What does the SentimentAgent use to analyze employee engagement?
 - A) Only numeric rating scales
@@ -2552,7 +2552,7 @@ class HrComplianceAgent
 - C) Keyword matching
 - D) Rule-based scoring
 
-<details><summary>Answer</summary>B) LLM-based text sentiment analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM-based text sentiment analysis&lt;/details&gt;
 
 **Q4:** Which compliance report format does the HrComplianceAgent generate?
 - A) SOC-2
@@ -2560,7 +2560,7 @@ class HrComplianceAgent
 - C) ISO 27001
 - D) PCI-DSS
 
-<details><summary>Answer</summary>B) EEO-1</details>
+<details><summary>Answer&lt;/summary&gt;B) EEO-1&lt;/details&gt;
 
 **Q5:** How are onboarding task assignments routed?
 - A) All tasks assigned solely to HR
@@ -2568,7 +2568,7 @@ class HrComplianceAgent
 - C) All tasks assigned to the new hire
 - D) Tasks are not assigned to anyone
 
-<details><summary>Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>
+<details><summary>Answer&lt;/summary&gt;B) Per-role assignment (employee, HR, IT, manager)&lt;/details&gt;
 
 ---
 
@@ -2619,7 +2619,7 @@ class HrComplianceAgent
 - C) 50% required skills, 30% preferred, 20% experience
 - D) 40% required skills, 40% preferred, 20% experience
 
-<details><summary>Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>
+<details><summary>Answer&lt;/summary&gt;B) 60% required skills, 25% preferred, 15% experience&lt;/details&gt;
 
 **Q2:** Which agent uses vector embeddings and cosine similarity for matching?
 - A) ResumeScreeningAgent
@@ -2627,7 +2627,7 @@ class HrComplianceAgent
 - C) CandidateMatchingAgent
 - D) OnboardingAgent
 
-<details><summary>Answer</summary>C) CandidateMatchingAgent</details>
+<details><summary>Answer&lt;/summary&gt;C) CandidateMatchingAgent&lt;/details&gt;
 
 **Q3:** What does the SentimentAgent use to analyze employee engagement?
 - A) Only numeric rating scales
@@ -2635,7 +2635,7 @@ class HrComplianceAgent
 - C) Keyword matching
 - D) Rule-based scoring
 
-<details><summary>Answer</summary>B) LLM-based text sentiment analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM-based text sentiment analysis&lt;/details&gt;
 
 **Q4:** Which compliance report format does the HrComplianceAgent generate?
 - A) SOC-2
@@ -2643,7 +2643,7 @@ class HrComplianceAgent
 - C) ISO 27001
 - D) PCI-DSS
 
-<details><summary>Answer</summary>B) EEO-1</details>
+<details><summary>Answer&lt;/summary&gt;B) EEO-1&lt;/details&gt;
 
 **Q5:** How are onboarding task assignments routed?
 - A) All tasks assigned solely to HR
@@ -2651,7 +2651,7 @@ class HrComplianceAgent
 - C) All tasks assigned to the new hire
 - D) Tasks are not assigned to anyone
 
-<details><summary>Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>
+<details><summary>Answer&lt;/summary&gt;B) Per-role assignment (employee, HR, IT, manager)&lt;/details&gt;
 
 ---
 
@@ -2702,7 +2702,7 @@ class HrComplianceAgent
 - C) 50% required skills, 30% preferred, 20% experience
 - D) 40% required skills, 40% preferred, 20% experience
 
-<details><summary>Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>
+<details><summary>Answer&lt;/summary&gt;B) 60% required skills, 25% preferred, 15% experience&lt;/details&gt;
 
 **Q2:** Which agent uses vector embeddings and cosine similarity for matching?
 - A) ResumeScreeningAgent
@@ -2710,7 +2710,7 @@ class HrComplianceAgent
 - C) CandidateMatchingAgent
 - D) OnboardingAgent
 
-<details><summary>Answer</summary>C) CandidateMatchingAgent</details>
+<details><summary>Answer&lt;/summary&gt;C) CandidateMatchingAgent&lt;/details&gt;
 
 **Q3:** What does the SentimentAgent use to analyze employee engagement?
 - A) Only numeric rating scales
@@ -2718,7 +2718,7 @@ class HrComplianceAgent
 - C) Keyword matching
 - D) Rule-based scoring
 
-<details><summary>Answer</summary>B) LLM-based text sentiment analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM-based text sentiment analysis&lt;/details&gt;
 
 **Q4:** Which compliance report format does the HrComplianceAgent generate?
 - A) SOC-2
@@ -2726,7 +2726,7 @@ class HrComplianceAgent
 - C) ISO 27001
 - D) PCI-DSS
 
-<details><summary>Answer</summary>B) EEO-1</details>
+<details><summary>Answer&lt;/summary&gt;B) EEO-1&lt;/details&gt;
 
 **Q5:** How are onboarding task assignments routed?
 - A) All tasks assigned solely to HR
@@ -2734,7 +2734,7 @@ class HrComplianceAgent
 - C) All tasks assigned to the new hire
 - D) Tasks are not assigned to anyone
 
-<details><summary>Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>
+<details><summary>Answer&lt;/summary&gt;B) Per-role assignment (employee, HR, IT, manager)&lt;/details&gt;
 
 ## Summary
 

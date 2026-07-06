@@ -21,7 +21,7 @@ By the end of this chapter, students will be able to:
 |---------|-------|-------------|
 | 3.1 | if Statement | Branching with if/elif/else |
 | 3.2 | Truthiness | Truthy/falsy values in conditions |
-| 3.3 | Chained Comparisons | 1 < x < 10 syntax |
+| 3.3 | Chained Comparisons | 1 &lt; x < 10 syntax |
 | 3.4 | Short-Circuit | and/or lazy evaluation |
 | 3.5 | Ternary Expression | x if cond else y |
 | 3.6 | match-case | Structural pattern matching (3.10+) |
@@ -560,7 +560,7 @@ let valid: boolean = (age >= 18) && (hasId || isVip);
 | Switch | match-case (3.10+) | switch/case | switch/case |
 | Ternary | x if cond else y | cond ? x : y | cond ? x : y |
 | Logical | and, or, not | &&, ||, ! | &&, ||, ! |
-| Chained compare | 1 < x < 10 | Not supported | Not supported |
+| Chained compare | 1 &lt; x < 10 | Not supported | Not supported |
 
 
 ## Quick Reference
@@ -620,11 +620,11 @@ if (n := len(items)) > 0:
 - C) "False"
 - D) -1
 
-**Q2.** What does print(3 < 5 > 2) output?
+**Q2.** What does print(3 &lt; 5 &gt; 2) output?
 - A) False
 - B) True **<-- Correct**
 - C) SyntaxError
-- D) (3 < 5) > 2
+- D) (3 &lt; 5) &gt; 2
 
 **Q3.** What is x after `x = "A" if False else "B"`?
 - A) "A"

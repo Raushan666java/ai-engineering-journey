@@ -3075,7 +3075,7 @@ This chapter covered the complete landscape of Java functional programming:
    - D) char
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) string.** String is a reference type (java.lang.String), not a primitive.
 </details>
 
@@ -3086,7 +3086,7 @@ This chapter covered the complete landscape of Java functional programming:
    - D) undefined
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) false.** Class fields are initialized to default values.
 </details>
 
@@ -3097,7 +3097,7 @@ This chapter covered the complete landscape of Java functional programming:
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>
 
@@ -3133,7 +3133,7 @@ This chapter covered the complete landscape of Java functional programming:
 
 13. **User enrichment service.** Given `CompletableFuture<User> findUser(int id)` and `CompletableFuture<List<Order>> findOrders(int userId)`, write a method `CompletableFuture<UserWithOrders> enrich(int id)` that fetches both in parallel and combines them.
 
-14. **Validation pipeline.** Create a `Validator<String>` functional interface with methods `and`, `or`, and `negate` (as default methods). Implement validators for: non-null, non-empty, length <= 100, matches a given regex. Then chain them together to validate a user-input field.
+14. **Validation pipeline.** Create a `Validator<String>` functional interface with methods `and`, `or`, and `negate` (as default methods). Implement validators for: non-null, non-empty, length &lt;= 100, matches a given regex. Then chain them together to validate a user-input field.
 
 15. **Optional flatMap chaining.** Given these methods:
     ```java

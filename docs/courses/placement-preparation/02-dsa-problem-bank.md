@@ -1379,7 +1379,7 @@ public class InvertBinaryTree {
 
 ### Q31: Validate Binary Search Tree
 
-**Problem:** Given the `root` of a binary tree, determine if it is a valid BST. A valid BST has: left subtree values < node value, right subtree values > node value, and both subtrees recursively valid.
+**Problem:** Given the `root` of a binary tree, determine if it is a valid BST. A valid BST has: left subtree values &lt; node value, right subtree values &gt; node value, and both subtrees recursively valid.
 
 **Difficulty:** Medium
 

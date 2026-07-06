@@ -1485,7 +1485,7 @@ function process_substitution(command_str):
     return result   # Returns "path" that can be used as file arg
 ```
 
-**Dry Run — diff <(ls dir1) <(ls dir2)**:
+**Dry Run — diff &lt;(ls dir1) <(ls dir2)**:
 ```
 Step | Component              | Action
 1    | Shell                  | Evaluates <(ls dir1) → /dev/fd/63

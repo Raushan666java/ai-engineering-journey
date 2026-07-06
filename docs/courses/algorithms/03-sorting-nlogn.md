@@ -886,7 +886,7 @@ long long mergeAndCount(std::vector<int>& A, int low, int mid, int high) {
 - D) All of the above
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Heap sort. Merge sort uses \( O(n) \) space, quick sort uses \( O(\log n) \) stack space and can degrade to \( O(n^2) \).
 </details>
 
@@ -898,7 +898,7 @@ C) Heap sort. Merge sort uses \( O(n) \) space, quick sort uses \( O(\log n) \) 
 - D) \( \Theta(n) \)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) \( \Omega(n \log n) \) — proven by the decision tree model: there are \( n! \) permutations and a binary tree of height \( h \) has at most \( 2^h \) leaves.
 </details>
 
@@ -910,7 +910,7 @@ B) \( \Omega(n \log n) \) — proven by the decision tree model: there are \( n!
 - D) Both A and B
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Random element. First and last element pivots cause \( O(n^2) \) on already-sorted or reverse-sorted arrays.
 </details>
 
@@ -922,7 +922,7 @@ C) Random element. First and last element pivots cause \( O(n^2) \) on already-s
 - D) Bubble sort
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Quick sort. During partitioning, equal elements can be swapped across each other, breaking stability.
 </details>
 
@@ -934,7 +934,7 @@ B) Quick sort. During partitioning, equal elements can be swapped across each ot
 - D) Shell sort
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Merge sort. It requires only sequential access and works naturally with linked list structure. Quick sort and heap sort rely on random access.
 </details>
 

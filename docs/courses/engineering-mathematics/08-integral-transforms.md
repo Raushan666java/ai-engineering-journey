@@ -118,7 +118,7 @@ $$F(s) = \mathcal{L}\{f(t)\} = \int_0^\infty f(t) e^{-st}\,dt, \quad s = \sigma 
 
 $$H(s) = \frac{Y(s)}{X(s)} = \frac{\text{output Laplace}}{\text{input Laplace}}$$
 
-**Poles and Zeros:** Roots of denominator (poles) and numerator (zeros) of $H(s)$. Pole locations determine system stability: all poles must have $\text{Re}(s) < 0$ for stability.
+**Poles and Zeros:** Roots of denominator (poles) and numerator (zeros) of $H(s)$. Pole locations determine system stability: all poles must have $\text{Re}(s) &lt; 0$ for stability.
 
 **Partial Fraction Expansion:**
 $$\frac{N(s)}{(s-p_1)(s-p_2)\cdots(s-p_n)} = \frac{r_1}{s-p_1} + \frac{r_2}{s-p_2} + \cdots + \frac{r_n}{s-p_n}$$
@@ -171,7 +171,7 @@ $$R_{ff}(\tau) = \int_{-\infty}^\infty f(t) f(t + \tau)\,dt$$
 
 The critical rate $f_s = 2B$ is the **Nyquist rate**.
 
-**Aliasing:** When $f_s < 2B$, high-frequency components appear as low-frequency artifacts.
+**Aliasing:** When $f_s &lt; 2B$, high-frequency components appear as low-frequency artifacts.
 
 **Ideal Reconstruction:**
 $$f(t) = \sum_{n=-\infty}^\infty f(nT_s) \text{sinc}\left(\frac{t - nT_s}{T_s}\right)$$
@@ -192,7 +192,7 @@ $$x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] e^{i 2\pi kn/N}$$
 
 Find the Fourier series for the square wave:
 
-$$f(t) = \begin{cases} 1 & 0 < t < \pi \\ -1 & \pi < t < 2\pi \end{cases}$$
+$$f(t) = \begin{cases} 1 & 0 &lt; t < \pi \\ -1 & \pi < t < 2\pi \end{cases}$$
 
 **Solution:** Period $T = 2\pi$, $\omega_0 = 1$.
 
@@ -327,7 +327,7 @@ rectFFT.forEach((z, i) => console.log(`  k=${i}: |F|=${z.mag().toFixed(4)}`));
 function laplaceNum(f: (t: number) => number, s: number, tMax: number = 50, steps: number = 10000): number {
   const dt = tMax / steps;
   let sum = 0;
-  for (let i = 0; i < steps; i++) sum += f((i + 0.5) * dt) * Math.exp(-s * (i + 0.5) * dt) * dt;
+  for (let i = 0; i &lt; steps; i++) sum += f((i + 0.5) * dt) * Math.exp(-s * (i + 0.5) * dt) * dt;
   return sum;
 }
 
@@ -358,8 +358,8 @@ console.log(`Convolution [1,2,3] * [4,5,6]: [${conv.map(v => v.toFixed(0)).join(
 function dft(signal: number[]): { re: number[]; im: number[] } {
   const n = signal.length;
   const re = new Array(n).fill(0), im = new Array(n).fill(0);
-  for (let k = 0; k < n; k++) {
-    for (let t = 0; t < n; t++) {
+  for (let k = 0; k &lt; n; k++) {
+    for (let t = 0; t &lt; n; t++) {
       const angle = (2 * Math.PI * k * t) / n;
       re[k] += signal[t] * Math.cos(angle);
       im[k] -= signal[t] * Math.sin(angle);
@@ -406,9 +406,9 @@ function convolveDFT(a: number[], b: number[]): number[] {
   const prodIm = dftA.re.map((_, i) => dftA.re[i] * dftB.im[i] + dftA.im[i] * dftB.re[i]);
   // Inverse DFT
   const result: number[] = [];
-  for (let t = 0; t < n; t++) {
+  for (let t = 0; t &lt; n; t++) {
     let sum = 0;
-    for (let k = 0; k < n; k++) sum += prodRe[k] * Math.cos(2 * Math.PI * k * t / n) - prodIm[k] * Math.sin(2 * Math.PI * k * t / n);
+    for (let k = 0; k &lt; n; k++) sum += prodRe[k] * Math.cos(2 * Math.PI * k * t / n) - prodIm[k] * Math.sin(2 * Math.PI * k * t / n);
     result.push(sum / n);
   }
   return result;
@@ -584,7 +584,7 @@ function reconstructFromFourier(
 ): number {
   const omega0 = (2 * Math.PI) / T;
   let sum = coefficients.a0;
-  for (let n = 1; n <= coefficients.an.length; n++) {
+  for (let n = 1; n &lt;= coefficients.an.length; n++) {
     sum += coefficients.an[n - 1] * Math.cos(n * omega0 * t);
     sum += coefficients.bn[n - 1] * Math.sin(n * omega0 * t);
   }
@@ -632,8 +632,8 @@ function dft(signal: number[]): { real: number[]; imag: number[] } {
   const N = signal.length;
   const real: number[] = new Array(N).fill(0);
   const imag: number[] = new Array(N).fill(0);
-  for (let k = 0; k < N; k++) {
-    for (let n = 0; n < N; n++) {
+  for (let k = 0; k &lt; N; k++) {
+    for (let n = 0; n &lt; N; n++) {
       const angle = (2 * Math.PI * k * n) / N;
       real[k] += signal[n] * Math.cos(angle);
       imag[k] -= signal[n] * Math.sin(angle);
@@ -645,7 +645,7 @@ function dft(signal: number[]): { real: number[]; imag: number[] } {
 // Square wave approximation via Fourier series
 function squareWave(t: number, harmonics: number): number {
   let sum = 0;
-  for (let k = 0; k < harmonics; k++) {
+  for (let k = 0; k &lt; harmonics; k++) {
     const n = 2 * k + 1; // odd harmonics only
     sum += Math.sin(n * t) / n;
   }
@@ -700,13 +700,13 @@ type Complex = [number, number]; // [real, imag]
 
 function fft(x: Complex[]): Complex[] {
   const N = x.length;
-  if (N <= 1) return x;
+  if (N &lt;= 1) return x;
 
   const even = fft(x.filter((_, i) => i % 2 === 0));
   const odd = fft(x.filter((_, i) => i % 2 === 1));
 
   const result: Complex[] = new Array(N);
-  for (let k = 0; k < N / 2; k++) {
+  for (let k = 0; k &lt; N / 2; k++) {
     const angle = (-2 * Math.PI * k) / N;
     const t: Complex = [
       Math.cos(angle) * odd[k][0] - Math.sin(angle) * odd[k][1],
@@ -728,7 +728,7 @@ const spectrum = fft(signal);
 const magnitude = spectrum.map(([r, i]) => Math.sqrt(r * r + i * i) / N);
 
 console.log("FFT magnitude spectrum (N=16, cos at f=2):");
-for (let k = 0; k < N / 2; k++) {
+for (let k = 0; k &lt; N / 2; k++) {
   if (magnitude[k] > 0.01) {
     console.log(`  f=${k}/${N}: magnitude=${magnitude[k].toFixed(4)}`);
   }
@@ -753,10 +753,10 @@ function analyzeSystemFromTransferFunction(
   const polyStr = (coeffs: number[], variable: string): string => {
     const terms: string[] = [];
     const deg = coeffs.length - 1;
-    for (let i = 0; i <= deg; i++) {
+    for (let i = 0; i &lt;= deg; i++) {
       if (coeffs[i] === 0) continue;
       const exp = deg - i;
-      const sign = coeffs[i] < 0 ? " - " : (terms.length ? " + " : "");
+      const sign = coeffs[i] &lt; 0 ? " - " : (terms.length ? " + " : "");
       const absVal = Math.abs(coeffs[i]);
       const coeff = exp === 0 ? `${absVal}` : absVal === 1 ? "" : `${absVal}`;
       const varPart = exp === 0 ? "" : exp === 1 ? `${variable}` : `${variable}^${exp}`;
@@ -775,17 +775,17 @@ function analyzeSystemFromTransferFunction(
       const p1 = (-a1 + Math.sqrt(discriminant)) / (2 * a2);
       const p2 = (-a1 - Math.sqrt(discriminant)) / (2 * a2);
       poles.push(p1.toFixed(3), p2.toFixed(3));
-      stable = p1 < 0 && p2 < 0;
+      stable = p1 &lt; 0 && p2 < 0;
     } else {
       const real = -a1 / (2 * a2);
       const imag = Math.sqrt(-discriminant) / (2 * a2);
       poles.push(`${real.toFixed(3)} ? ${imag.toFixed(3)}i`);
-      stable = real < 0;
+      stable = real &lt; 0;
     }
   } else if (denominator.length === 2) {
     const p = -denominator[1] / denominator[0];
     poles.push(p.toFixed(3));
-    stable = p < 0;
+    stable = p &lt; 0;
   }
 
   return {
@@ -829,12 +829,12 @@ function frequencyResponse(
 ): { omega: number[]; magnitude: number[] } {
   const omega: number[] = [];
   const magnitude: number[] = [];
-  for (let i = 0; i < numPoints; i++) {
+  for (let i = 0; i &lt; numPoints; i++) {
     const w = (Math.PI * i) / (numPoints - 1);
     omega.push(w);
     // Evaluate H(e^(j?)) = S b[n] e^(-j?n)
     let re = 0, im = 0;
-    for (let n = 0; n < b.length; n++) {
+    for (let n = 0; n &lt; b.length; n++) {
       re += b[n] * Math.cos(-w * n);
       im += b[n] * Math.sin(-w * n);
     }
@@ -886,9 +886,9 @@ Unlike the DFT, the DCT has excellent energy compaction properties ? most of the
 function dct1D(signal: number[]): number[] {
   const N = signal.length;
   const result: number[] = new Array(N).fill(0);
-  for (let k = 0; k < N; k++) {
+  for (let k = 0; k &lt; N; k++) {
     let sum = 0;
-    for (let n = 0; n < N; n++)
+    for (let n = 0; n &lt; N; n++)
       sum += signal[n] * Math.cos((Math.PI / N) * (n + 0.5) * k);
     result[k] = k === 0
       ? sum / Math.sqrt(N)

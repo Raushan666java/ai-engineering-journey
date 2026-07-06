@@ -362,35 +362,35 @@ Projection $\Pi_{\text{Student}}(R)$: $\{\text{Alice}, \text{Bob}\}$.
    - B) Reflexive, antisymmetric, transitive
    - C) Symmetric, antisymmetric, transitive
    - D) Reflexive, symmetric, antisymmetric
-   <details><summary>Answer</summary>**B)** Reflexive ($a \leq a$), antisymmetric ($a \leq b \land b \leq a \implies a=b$), and transitive ($a \leq b \land b \leq c \implies a \leq c$). It is not symmetric ($3 \leq 5$ but $5 \not\leq 3$).</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Reflexive ($a \leq a$), antisymmetric ($a \leq b \land b \leq a \implies a=b$), and transitive ($a \leq b \land b \leq c \implies a \leq c$). It is not symmetric ($3 \leq 5$ but $5 \not\leq 3$).</details>
 
 2. The relation $a R b \iff a \equiv b \pmod{4}$ on $\mathbb{Z}$ partitions $\mathbb{Z}$ into how many equivalence classes?
    - A) 2
    - B) 3
    - C) 4
    - D) Infinite
-   <details><summary>Answer</summary>**C)** 4 ? the residue classes modulo 4 are $[0], [1], [2], [3]$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** 4 ? the residue classes modulo 4 are $[0], [1], [2], [3]$.</details>
 
 3. In a Hasse diagram, which edges are omitted?
    - A) All edges
    - B) Transitive and reflexive edges
    - C) Only reflexive edges
    - D) Only transitive edges
-   <details><summary>Answer</summary>**B)** Both transitive edges (those implied by transitivity) and reflexive loops (implied by reflexivity) are omitted to keep the diagram clean.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Both transitive edges (those implied by transitivity) and reflexive loops (implied by reflexivity) are omitted to keep the diagram clean.</details>
 
 4. Warshall's algorithm computes the transitive closure in what time complexity?
    - A) $O(n)$
    - B) $O(n^2)$
    - C) $O(n^3)$
    - D) $O(2^n)$
-   <details><summary>Answer</summary>**C)** $O(n^3)$ ? three nested loops over $n$ elements make it cubic.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $O(n^3)$ ? three nested loops over $n$ elements make it cubic.</details>
 
 5. Which of the following is NOT a lattice operation?
    - A) Join (supremum)
    - B) Meet (infimum)
    - C) Composition
    - D) Both join and meet exist for every pair
-   <details><summary>Answer</summary>**C)** Composition is a relation operation, not a lattice operation. A lattice requires that every pair has a supremum and infimum.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Composition is a relation operation, not a lattice operation. A lattice requires that every pair has a supremum and infimum.</details>
 
 ## Examples
 
@@ -618,11 +618,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -630,7 +630,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -656,7 +656,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -674,23 +674,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()
@@ -956,7 +956,7 @@ function topologicalSortKahn(
 
 19. Write a TypeScript function `isTotalOrder<T>` that checks if a relation is a total order (partial order where all pairs are comparable).
 
-20. Find all linear extensions (topological sorts) of the poset with $a < b$, $a < c$, $b < d$, $c < d$.
+20. Find all linear extensions (topological sorts) of the poset with $a &lt; b$, $a < c$, $b < d$, $c < d$.
 
 ## Exercises
 
@@ -980,7 +980,7 @@ function topologicalSortKahn(
 
 10. Use Warshall's algorithm to find the transitive closure of $R = \{(1,3), (2,1), (3,2), (4,3)\}$ on $\{1,2,3,4\}$.
 
-11. Give a topological ordering for the poset: $a < c$, $a < d$, $b < d$, $b < e$, $c < f$, $d < f$, $e < f$.
+11. Give a topological ordering for the poset: $a &lt; c$, $a < d$, $b < d$, $b < e$, $c < f$, $d < f$, $e < f$.
 
 12. Determine if the relation $R$ on $\{1,2,3,4\}$ with $M_R = \begin{pmatrix}1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1\\ 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1\end{pmatrix}$ is an equivalence relation.
 

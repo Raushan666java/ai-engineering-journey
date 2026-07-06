@@ -293,15 +293,15 @@ Step 4: $\exists x\; \forall y\; (P(x) \land \neg Q(x,y))$
    - C) $\exists x\; (\neg P(x) \land Q(x))$
    - D) $\forall x\; (\neg P(x) \rightarrow Q(x))$
 
-   <details><summary>Answer</summary>**B)** $\neg \forall x (P(x) \rightarrow Q(x)) \equiv \exists x \neg(P(x) \rightarrow Q(x)) \equiv \exists x (P(x) \land \neg Q(x))$</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $\neg \forall x (P(x) \rightarrow Q(x)) \equiv \exists x \neg(P(x) \rightarrow Q(x)) \equiv \exists x (P(x) \land \neg Q(x))$</details>
 
 2. Which statement is true when the domain is integers?
    - A) $\forall x\; \exists y\; (y = x + 1)$
    - B) $\exists y\; \forall x\; (y = x + 1)$
-   - C) $\forall x\; \forall y\; (x < y)$
+   - C) $\forall x\; \forall y\; (x &lt; y)$
    - D) $\exists x\; \forall y\; (x > y)$
 
-   <details><summary>Answer</summary>**A)** For every integer $x$, we can pick $y = x + 1$ ? this is always true over $\mathbb{Z}$.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** For every integer $x$, we can pick $y = x + 1$ ? this is always true over $\mathbb{Z}$.</details>
 
 3. "Every cat is a mammal" translates to:
    - A) $\forall x\; (Cat(x) \land Mammal(x))$
@@ -309,7 +309,7 @@ Step 4: $\exists x\; \forall y\; (P(x) \land \neg Q(x,y))$
    - C) $\forall x\; (Cat(x) \rightarrow Mammal(x))$
    - D) $\forall x\; (Mammal(x) \rightarrow Cat(x))$
 
-   <details><summary>Answer</summary>**C)** "All A are B" = $\forall x (A(x) \rightarrow B(x))$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** "All A are B" = $\forall x (A(x) \rightarrow B(x))$.</details>
 
 4. The prenex normal form of $\neg \exists x\; \forall y\; P(x,y)$ is:
    - A) $\forall x\; \exists y\; \neg P(x,y)$
@@ -317,7 +317,7 @@ Step 4: $\exists x\; \forall y\; (P(x) \land \neg Q(x,y))$
    - C) $\forall x\; \forall y\; \neg P(x,y)$
    - D) $\exists x\; \exists y\; \neg P(x,y)$
 
-   <details><summary>Answer</summary>**A)** $\neg \exists x\; \forall y\; P(x,y) \equiv \forall x\; \neg \forall y\; P(x,y) \equiv \forall x\; \exists y\; \neg P(x,y)$.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** $\neg \exists x\; \forall y\; P(x,y) \equiv \forall x\; \neg \forall y\; P(x,y) \equiv \forall x\; \exists y\; \neg P(x,y)$.</details>
 
 5. Which inference rule allows concluding $P(c)$ from $\forall x\; P(x)$?
    - A) Universal generalization
@@ -325,7 +325,7 @@ Step 4: $\exists x\; \forall y\; (P(x) \land \neg Q(x,y))$
    - C) Existential generalization
    - D) Existential instantiation
 
-   <details><summary>Answer</summary>**B)** Universal instantiation: from "all" we can deduce "any particular one."</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Universal instantiation: from "all" we can deduce "any particular one."</details>
 
 ## Examples
 
@@ -530,11 +530,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -542,7 +542,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -568,7 +568,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -586,23 +586,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()

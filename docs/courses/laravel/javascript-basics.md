@@ -2277,7 +2277,7 @@ Echo.join(`room.${roomId}`)
 - C) var is block-scoped, let is function-scoped
 - D) let is global, var is local
 
-<details><summary>Answer</summary>A) let is block-scoped, var is function-scoped</details>
+<details><summary>Answer&lt;/summary&gt;A) let is block-scoped, var is function-scoped&lt;/details&gt;
 
 **Q2:** What does the map() array method do?
 - A) Filters array elements
@@ -2285,7 +2285,7 @@ Echo.join(`room.${roomId}`)
 - C) Reduces array to a single value
 - D) Sorts the array
 
-<details><summary>Answer</summary>B) Creates a new array by transforming each element</details>
+<details><summary>Answer&lt;/summary&gt;B) Creates a new array by transforming each element&lt;/details&gt;
 
 **Q3:** What is the event loop?
 - A) DOM event handler
@@ -2293,7 +2293,7 @@ Echo.join(`room.${roomId}`)
 - C) A loop structure
 - D) Array iteration method
 
-<details><summary>Answer</summary>B) JavaScript's async execution model</details>
+<details><summary>Answer&lt;/summary&gt;B) JavaScript's async execution model&lt;/details&gt;
 
 **Q4:** What does Laravel Echo enable?
 - A) Form validation
@@ -2301,7 +2301,7 @@ Echo.join(`room.${roomId}`)
 - C) Database queries
 - D) File uploads
 
-<details><summary>Answer</summary>B) Real-time WebSocket broadcasting</details>
+<details><summary>Answer&lt;/summary&gt;B) Real-time WebSocket broadcasting&lt;/details&gt;
 
 ---
 
@@ -2353,7 +2353,7 @@ Echo.join(`room.${roomId}`)
 - C) var is block-scoped, let is function-scoped
 - D) let is global, var is local
 
-<details><summary>Answer</summary>A) let is block-scoped, var is function-scoped</details>
+<details><summary>Answer&lt;/summary&gt;A) let is block-scoped, var is function-scoped&lt;/details&gt;
 
 **Q2:** What does the map() array method do?
 - A) Filters array elements
@@ -2361,7 +2361,7 @@ Echo.join(`room.${roomId}`)
 - C) Reduces array to a single value
 - D) Sorts the array
 
-<details><summary>Answer</summary>B) Creates a new array by transforming each element</details>
+<details><summary>Answer&lt;/summary&gt;B) Creates a new array by transforming each element&lt;/details&gt;
 
 **Q3:** What is the event loop?
 - A) DOM event handler
@@ -2369,7 +2369,7 @@ Echo.join(`room.${roomId}`)
 - C) A loop structure
 - D) Array iteration method
 
-<details><summary>Answer</summary>B) JavaScript's async execution model</details>
+<details><summary>Answer&lt;/summary&gt;B) JavaScript's async execution model&lt;/details&gt;
 
 **Q4:** What does Laravel Echo enable?
 - A) Form validation
@@ -2377,7 +2377,7 @@ Echo.join(`room.${roomId}`)
 - C) Database queries
 - D) File uploads
 
-<details><summary>Answer</summary>B) Real-time WebSocket broadcasting</details>
+<details><summary>Answer&lt;/summary&gt;B) Real-time WebSocket broadcasting&lt;/details&gt;
 
 ---
 
@@ -2429,7 +2429,7 @@ Echo.join(`room.${roomId}`)
 - C) var is block-scoped, let is function-scoped
 - D) let is global, var is local
 
-<details><summary>Answer</summary>A) let is block-scoped, var is function-scoped</details>
+<details><summary>Answer&lt;/summary&gt;A) let is block-scoped, var is function-scoped&lt;/details&gt;
 
 **Q2:** What does the map() array method do?
 - A) Filters array elements
@@ -2437,7 +2437,7 @@ Echo.join(`room.${roomId}`)
 - C) Reduces array to a single value
 - D) Sorts the array
 
-<details><summary>Answer</summary>B) Creates a new array by transforming each element</details>
+<details><summary>Answer&lt;/summary&gt;B) Creates a new array by transforming each element&lt;/details&gt;
 
 **Q3:** What is the event loop?
 - A) DOM event handler
@@ -2445,7 +2445,7 @@ Echo.join(`room.${roomId}`)
 - C) A loop structure
 - D) Array iteration method
 
-<details><summary>Answer</summary>B) JavaScript's async execution model</details>
+<details><summary>Answer&lt;/summary&gt;B) JavaScript's async execution model&lt;/details&gt;
 
 **Q4:** What does Laravel Echo enable?
 - A) Form validation
@@ -2453,7 +2453,7 @@ Echo.join(`room.${roomId}`)
 - C) Database queries
 - D) File uploads
 
-<details><summary>Answer</summary>B) Real-time WebSocket broadcasting</details>
+<details><summary>Answer&lt;/summary&gt;B) Real-time WebSocket broadcasting&lt;/details&gt;
 
 ---
 
@@ -2505,7 +2505,7 @@ Echo.join(`room.${roomId}`)
 - C) var is block-scoped, let is function-scoped
 - D) let is global, var is local
 
-<details><summary>Answer</summary>A) let is block-scoped, var is function-scoped</details>
+<details><summary>Answer&lt;/summary&gt;A) let is block-scoped, var is function-scoped&lt;/details&gt;
 
 **Q2:** What does the map() array method do?
 - A) Filters array elements
@@ -2513,7 +2513,7 @@ Echo.join(`room.${roomId}`)
 - C) Reduces array to a single value
 - D) Sorts the array
 
-<details><summary>Answer</summary>B) Creates a new array by transforming each element</details>
+<details><summary>Answer&lt;/summary&gt;B) Creates a new array by transforming each element&lt;/details&gt;
 
 **Q3:** What is the event loop?
 - A) DOM event handler
@@ -2521,7 +2521,7 @@ Echo.join(`room.${roomId}`)
 - C) A loop structure
 - D) Array iteration method
 
-<details><summary>Answer</summary>B) JavaScript's async execution model</details>
+<details><summary>Answer&lt;/summary&gt;B) JavaScript's async execution model&lt;/details&gt;
 
 **Q4:** What does Laravel Echo enable?
 - A) Form validation
@@ -2529,7 +2529,7 @@ Echo.join(`room.${roomId}`)
 - C) Database queries
 - D) File uploads
 
-<details><summary>Answer</summary>B) Real-time WebSocket broadcasting</details>
+<details><summary>Answer&lt;/summary&gt;B) Real-time WebSocket broadcasting&lt;/details&gt;
 
 ## Summary
 

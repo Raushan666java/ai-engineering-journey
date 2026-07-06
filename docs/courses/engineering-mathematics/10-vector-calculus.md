@@ -324,9 +324,9 @@ function surfaceIntegral(
 ): number {
   const du = (uMax - uMin) / nu, dv = (vMax - vMin) / nv;
   let sum = 0;
-  for (let i = 0; i < nu; i++) {
+  for (let i = 0; i &lt; nu; i++) {
     const u = uMin + (i + 0.5) * du;
-    for (let j = 0; j < nv; j++) {
+    for (let j = 0; j &lt; nv; j++) {
       const v = vMin + (j + 0.5) * dv;
       const p = f(u, v);
       const pu: [number, number, number] = [0, 0, 0];
@@ -334,7 +334,7 @@ function surfaceIntegral(
       const eps = 1e-5;
       const pU = f(u + eps, v), pD = f(u - eps, v);
       const pV = f(u, v + eps), pB = f(u, v - eps);
-      for (let k = 0; k < 3; k++) {
+      for (let k = 0; k &lt; 3; k++) {
         pu[k] = (pU[k] - pD[k]) / (2 * eps);
         pv[k] = (pV[k] - pB[k]) / (2 * eps);
       }
@@ -365,9 +365,9 @@ function surfaceArea(f: (u: number, v: number) => [number, number, number], ...a
 }
 function sphereArea(nu: number = 40, nv: number = 40): number {
   let area = 0;
-  for (let i = 0; i < nu; i++) {
+  for (let i = 0; i &lt; nu; i++) {
     const u = Math.PI * (i + 0.5) / nu;
-    for (let j = 0; j < nv; j++) {
+    for (let j = 0; j &lt; nv; j++) {
       const v = 2 * Math.PI * (j + 0.5) / nv;
       const sinU = Math.sin(u);
       area += sinU * Math.PI / nu * 2 * Math.PI / nv;  // |f??f?| = sin(u)
@@ -531,11 +531,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -543,7 +543,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -569,7 +569,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -587,23 +587,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'engineering-math demo')
   const log = new Logger()

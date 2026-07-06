@@ -1048,7 +1048,7 @@ The recruiter sees the full automation log and can override any decision with on
 I'd build **Pulse** with these modules:
 
 **1. Continuous Feedback (not annual reviews)**
-- Weekly micro-pulse surveys (3 questions, < 2 minutes)
+- Weekly micro-pulse surveys (3 questions, &lt; 2 minutes)
 - AI sentiment analysis on open-ended responses
 - Real-time dashboards for managers showing team trends
 - Anomaly detection: if a team's sentiment drops 20% in a week, alert HR
@@ -1342,7 +1342,7 @@ The key lesson: never rely on a single AI agent for compliance-critical workflow
 - C) Only reference checks
 - D) Only job postings
 
-<details><summary>Answer</summary>B) Resume parsing and candidate scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) Resume parsing and candidate scoring&lt;/details&gt;
 
 **Q2:** What is the key benefit of automated onboarding?
 - A) Faster hiring
@@ -1350,7 +1350,7 @@ The key lesson: never rely on a single AI agent for compliance-critical workflow
 - C) Lower salary offers
 - D) Better job descriptions
 
-<details><summary>Answer</summary>B) Consistent task checklists and compliance</details>
+<details><summary>Answer&lt;/summary&gt;B) Consistent task checklists and compliance&lt;/details&gt;
 
 **Q3:** What do performance management systems track?
 - A) Only attendance
@@ -1358,7 +1358,7 @@ The key lesson: never rely on a single AI agent for compliance-critical workflow
 - C) Only salary data
 - D) Only training completion
 
-<details><summary>Answer</summary>B) Review cycles and feedback collection</details>
+<details><summary>Answer&lt;/summary&gt;B) Review cycles and feedback collection&lt;/details&gt;
 
 **Q4:** What compliance report format is commonly used in HR?
 - A) SOC-2
@@ -1366,4 +1366,4 @@ The key lesson: never rely on a single AI agent for compliance-critical workflow
 - C) PCI-DSS
 - D) ISO 27001
 
-<details><summary>Answer</summary>B) EEO-1</details>
+<details><summary>Answer&lt;/summary&gt;B) EEO-1&lt;/details&gt;

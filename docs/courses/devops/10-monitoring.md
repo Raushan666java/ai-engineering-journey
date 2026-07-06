@@ -26,7 +26,7 @@
 | Prometheus | Pull-based metrics with time-series DB | Use exporters to collect infrastructure metrics |
 | Grafana | Multi-source visualization dashboards | Use PromQL for metric queries and alert rules |
 | Error Budgets | Allowed unreliability = 1 - SLO | Gate releases when budget is exhausted |
-| Toil Automation | Manual work elimination | SRE teams spend <50% on operations |
+| Toil Automation | Manual work elimination | SRE teams spend &lt;50% on operations |
 | Incident Response | Severity-based response | Blameless postmortems improve systems |
 
 ## Chapter Roadmap
@@ -365,15 +365,15 @@ console.log(`API budget remaining: ${apiBudget.remainingPercent}% - ${calc.alert
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What are the Four Golden Signals?</summary>**A)** CPU, Memory, Disk, Network<br>**B)** Latency, Traffic, Errors, Saturation<br>**C)** Build, Test, Deploy, Monitor<br>**D)** Dev, Staging, QA, Production<br><br>**Answer: B)** Latency, Traffic, Errors, Saturation</details>
+<details><summary>Question 1: What are the Four Golden Signals?</summary>**A)** CPU, Memory, Disk, Network<br>**B)** Latency, Traffic, Errors, Saturation<br>**C)** Build, Test, Deploy, Monitor<br>**D)** Dev, Staging, QA, Production<br><br>**Answer: B)** Latency, Traffic, Errors, Saturation&lt;/details&gt;
 
-<details><summary>Question 2: What is an error budget?</summary>**A)** Budget for fixing errors<br>**B)** Allowed amount of unreliability<br>**C)** Cost of incidents<br>**D)** Team training budget<br><br>**Answer: B)** Allowed amount of unreliability</details>
+<details><summary>Question 2: What is an error budget?</summary>**A)** Budget for fixing errors<br>**B)** Allowed amount of unreliability<br>**C)** Cost of incidents<br>**D)** Team training budget<br><br>**Answer: B)** Allowed amount of unreliability&lt;/details&gt;
 
-<details><summary>Question 3: How does Prometheus collect metrics?</summary>**A)** Push model from applications<br>**B)** Pull model by scraping HTTP endpoints<br>**C)** Log file parsing<br>**D)** Database queries<br><br>**Answer: B)** Pull model by scraping HTTP endpoints</details>
+<details><summary>Question 3: How does Prometheus collect metrics?</summary>**A)** Push model from applications<br>**B)** Pull model by scraping HTTP endpoints<br>**C)** Log file parsing<br>**D)** Database queries<br><br>**Answer: B)** Pull model by scraping HTTP endpoints&lt;/details&gt;
 
-<details><summary>Question 4: What is the 50% rule in SRE?</summary>**A)** 50% test coverage<br>**B)** Max 50% of time on operational work<br>**C)** 50% budget for monitoring<br>**D)** 50% of team on-call<br><br>**Answer: B)** Max 50% of time on operational work</details>
+<details><summary>Question 4: What is the 50% rule in SRE?</summary>**A)** 50% test coverage<br>**B)** Max 50% of time on operational work<br>**C)** 50% budget for monitoring<br>**D)** 50% of team on-call<br><br>**Answer: B)** Max 50% of time on operational work&lt;/details&gt;
 
-<details><summary>Question 5: What distinguishes toil from valuable work?</summary>**A)** It is difficult<br>**B)** It is manual, repetitive, automatable, and has no enduring value<br>**C)** It requires senior engineers<br>**D)** It happens infrequently<br><br>**Answer: B)** It is manual, repetitive, automatable, and has no enduring value</details>
+<details><summary>Question 5: What distinguishes toil from valuable work?</summary>**A)** It is difficult<br>**B)** It is manual, repetitive, automatable, and has no enduring value<br>**C)** It requires senior engineers<br>**D)** It happens infrequently<br><br>**Answer: B)** It is manual, repetitive, automatable, and has no enduring value&lt;/details&gt;
 
 ---
 
@@ -827,11 +827,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -839,7 +839,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

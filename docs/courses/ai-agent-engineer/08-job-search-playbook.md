@@ -115,7 +115,7 @@ Happy to jump on a quick call this week to discuss your specific needs.
 ```
 
 **Upwork filtering strategy:**
-- Jobs posted < 24 hours
+- Jobs posted &lt; 24 hours
 - Budget > $500 (or hourly > $30)
 - Client spent > $500 total (legitimate client signal)
 - Job title contains: AI, RAG, agent, LangChain, LangGraph, LLM, chatbot, automation
@@ -124,7 +124,7 @@ Happy to jump on a quick call this week to discuss your specific needs.
 
 | Channel | What to do | Frequency |
 |---------|-----------|-----------|
-| **LinkedIn Dubai jobs** | Filter by "Dubai, UAE", posted < 7 days | Daily |
+| **LinkedIn Dubai jobs** | Filter by "Dubai, UAE", posted &lt; 7 days | Daily |
 | **Bayt.com** | Set up alerts for "AI Engineer", "Automation" | 3x/week |
 | **Naukri Gulf** | Same as Bayt, upload your CV | 2x/week |
 | **Telegram groups** | Search "Dubai tech jobs", "Dubai AI jobs" | Daily check |
@@ -698,23 +698,23 @@ I'd love to be considered.
 ---
 
 
-interface LogEntry { timestamp: string; level: "info"|"warn"|"error"|"debug"; message: string; metadata?: Record<string,unknown> }
-interface Span { id: string; parentId?: string; name: string; startTime: number; endTime?: number; tags: Record<string,string> }
-interface Metric { name: string; value: number; tags: Record<string,string>; timestamp: number }
+interface LogEntry { timestamp: string; level: "info"|"warn"|"error"|"debug"; message: string; metadata?: Record&lt;string,unknown&gt; }
+interface Span { id: string; parentId?: string; name: string; startTime: number; endTime?: number; tags: Record&lt;string,string&gt; }
+interface Metric { name: string; value: number; tags: Record&lt;string,string&gt;; timestamp: number }
 class Logger {
   private entries: LogEntry[] = []
-  private log(level: LogEntry["level"], message: string, metadata?: Record<string,unknown>): void {
+  private log(level: LogEntry["level"], message: string, metadata?: Record&lt;string,unknown&gt;): void {
     const entry: LogEntry = {timestamp:new Date().toISOString(),level,message,metadata}
     this.entries.push(entry); console[JSON.stringify(entry)]
   }
-  info(m:string,m2?:Record<string,unknown>): void { this.log("info",m,m2) }
-  warn(m:string,m2?:Record<string,unknown>): void { this.log("warn",m,m2) }
-  error(m:string,m2?:Record<string,unknown>): void { this.log("error",m,m2) }
-  debug(m:string,m2?:Record<string,unknown>): void { this.log("debug",m,m2) }
+  info(m:string,m2?:Record&lt;string,unknown&gt;): void { this.log("info",m,m2) }
+  warn(m:string,m2?:Record&lt;string,unknown&gt;): void { this.log("warn",m,m2) }
+  error(m:string,m2?:Record&lt;string,unknown&gt;): void { this.log("error",m,m2) }
+  debug(m:string,m2?:Record&lt;string,unknown&gt;): void { this.log("debug",m,m2) }
   getRecent(n:number): LogEntry[] { return this.entries.slice(-n) }
 }
 class Tracer {
-  private spans: Map<string,Span> = new Map()
+  private spans: Map&lt;string,Span&gt; = new Map()
   start(name: string, parentId?: string): Span {
     const id = crypto.randomUUID(); const span: Span = {id,parentId,name,startTime:Date.now(),tags:{}}
     this.spans.set(id,span); return span
@@ -728,7 +728,7 @@ class Tracer {
 }
 class MetricsCollector {
   private metrics: Metric[] = []
-  record(name: string, value: number, tags?: Record<string,string>): void { this.metrics.push({name,value,tags:tags??{},timestamp:Date.now()}) }
+  record(name: string, value: number, tags?: Record&lt;string,string&gt;): void { this.metrics.push({name,value,tags:tags??{},timestamp:Date.now()}) }
   avg(name: string, windowMs: number): number {
     const cutoff = Date.now()-windowMs; const filtered = this.metrics.filter(m=>m.name===name&&m.timestamp>=cutoff)
     return filtered.length?filtered.reduce((s,m)=>s+m.value,0)/filtered.length:0

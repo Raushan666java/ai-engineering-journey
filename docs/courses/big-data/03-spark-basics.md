@@ -352,7 +352,7 @@ spark.conf.set("spark.sql.adaptive.enabled", "true")
 
 | Strategy | When | Shuffle |
 |----------|------|---------|
-| BroadcastHashJoin | One side < 10 MB (default threshold) | None |
+| BroadcastHashJoin | One side &lt; 10 MB (default threshold) | None |
 | SortMergeJoin | Both sides large, equi-join | Both sides |
 | ShuffledHashJoin | One side much smaller than the other | Both sides |
 
@@ -492,7 +492,7 @@ df.write.mode("overwrite").parquet("s3a://my-bucket/output/")
    - D) There is no difference
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Transformations are lazily evaluated; actions trigger computation.** Transformations build a DAG of operations, but nothing executes until an action (like `count()`, `collect()`, or `save()`) is called.
 </details>
 
@@ -503,7 +503,7 @@ df.write.mode("overwrite").parquet("s3a://my-bucket/output/")
    - D) When the data is sorted
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) When one table is small enough to fit in each executor's memory.** Spark sends the small table to every executor, avoiding an expensive shuffle. The threshold is configurable via `spark.sql.autoBroadcastJoinThreshold`.
 </details>
 
@@ -514,7 +514,7 @@ df.write.mode("overwrite").parquet("s3a://my-bucket/output/")
    - D) It compresses intermediate data
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) It removes unused columns from the scan.** If a query only needs 3 of 100 columns, Catalyst ensures only those 3 columns are read from the data source, dramatically reducing I/O.
 </details>
 

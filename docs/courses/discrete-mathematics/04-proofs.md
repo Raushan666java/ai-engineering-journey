@@ -190,9 +190,9 @@ Strong induction assumes all smaller instances, not just the immediate predecess
 
 **(Strong inductive step)** Assume every integer $2, 3, \ldots, k$ is a product of primes. Consider $k+1$. If $k+1$ is prime, we are done. If $k+1$ is composite, then $k+1 = ab$ where $2 \leq a, b \leq k$. By the inductive hypothesis, $a$ and $b$ are products of primes, so their product $k+1$ is also a product of primes. $\square$
 
-**Theorem 4.10 (Fibonacci inequality).** The Fibonacci sequence $F_1 = 1$, $F_2 = 1$, $F_n = F_{n-1} + F_{n-2}$ for $n \geq 3$ satisfies $F_n < 2^n$ for all $n \geq 1$.
+**Theorem 4.10 (Fibonacci inequality).** The Fibonacci sequence $F_1 = 1$, $F_2 = 1$, $F_n = F_{n-1} + F_{n-2}$ for $n \geq 3$ satisfies $F_n &lt; 2^n$ for all $n \geq 1$.
 
-*Proof.* Base: $F_1 = 1 < 2^1$, $F_2 = 1 < 2^2$. ?. Assume $F_i < 2^i$ for all $i \leq k$. Then $F_{k+1} = F_k + F_{k-1} < 2^k + 2^{k-1} < 2^k + 2^k = 2^{k+1}$. $\square$
+*Proof.* Base: $F_1 = 1 &lt; 2^1$, $F_2 = 1 < 2^2$. ?. Assume $F_i < 2^i$ for all $i \leq k$. Then $F_{k+1} = F_k + F_{k-1} < 2^k + 2^{k-1} < 2^k + 2^k = 2^{k+1}$. $\square$
 
 > **One-Sentence Takeaway:** Strong induction lets you assume the statement holds for **all** smaller numbers, not just the immediate predecessor ? essential when $P(k+1)$ depends on $P(k-1)$ or earlier.
 
@@ -232,7 +232,7 @@ In all cases, $n^2$ is $0$ or $1$ mod $3$. $\square$
 
 An **existence proof** demonstrates that $\exists x\; P(x)$ is true. **Constructive** proofs exhibit an explicit $c$ with $P(c)$. **Non-constructive** proofs show existence without producing an example (e.g., by contradiction or pigeonhole principle).
 
-**Constructive example:** Prove there exists a prime number between 10 and 20. Exhibit $11$ ? it is prime, and $10 < 11 < 20$.
+**Constructive example:** Prove there exists a prime number between 10 and 20. Exhibit $11$ ? it is prime, and $10 &lt; 11 < 20$.
 
 **Non-constructive example:** Prove that for any 5 points in a unit square, some pair is at most $\sqrt{2}/2$ apart. The pigeonhole principle shows existence but does not say which pair.
 
@@ -331,15 +331,15 @@ flowchart TD
    - C) Proof by contradiction
    - D) Proof by cases
 
-   <details><summary>Answer</summary>**B)** Proof by contrapositive proves $P \rightarrow Q$ by showing $\neg Q \rightarrow \neg P$.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Proof by contrapositive proves $P \rightarrow Q$ by showing $\neg Q \rightarrow \neg P$.</details>
 
-2. What is the minimum number of base cases needed to prove $F_n < 2^n$ for the Fibonacci sequence?
+2. What is the minimum number of base cases needed to prove $F_n &lt; 2^n$ for the Fibonacci sequence?
    - A) 0
    - B) 1
    - C) 2
    - D) 3
 
-   <details><summary>Answer</summary>**C)** Two base cases ($F_1$ and $F_2$) are needed because $F_{k+1} = F_k + F_{k-1}$ references two previous terms.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Two base cases ($F_1$ and $F_2$) are needed because $F_{k+1} = F_k + F_{k-1}$ references two previous terms.</details>
 
 3. Which fallacy is: "If $n$ is even, then $n^2$ is even. $n^2$ is even, so $n$ is even"?
    - A) Affirming the consequent
@@ -347,7 +347,7 @@ flowchart TD
    - C) Circular reasoning
    - D) Hasty generalization
 
-   <details><summary>Answer</summary>**A)** Affirming the consequent assumes $P \rightarrow Q$ and $Q$ implies $P$, but $n^2$ could be even while $n$ is odd ($9^2 = 81$ is odd actually ? a better counterexample: $6^2 = 36$ is even but $n = \sqrt{36} = \pm 6$ is even... wait ? proper counterexample: $n = \sqrt{2}$ not integer. Actually any even $n$ gives even $n^2$, but the converse $n^2$ even $\implies n$ even is true for integers. However the fallacy is still affirming the consequent ? the reasoning pattern is invalid even if the conclusion happens to be true.)</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** Affirming the consequent assumes $P \rightarrow Q$ and $Q$ implies $P$, but $n^2$ could be even while $n$ is odd ($9^2 = 81$ is odd actually ? a better counterexample: $6^2 = 36$ is even but $n = \sqrt{36} = \pm 6$ is even... wait ? proper counterexample: $n = \sqrt{2}$ not integer. Actually any even $n$ gives even $n^2$, but the converse $n^2$ even $\implies n$ even is true for integers. However the fallacy is still affirming the consequent ? the reasoning pattern is invalid even if the conclusion happens to be true.)&lt;/details&gt;
 
 4. Structural induction is used to prove properties of:
    - A) All subsets of a set
@@ -355,7 +355,7 @@ flowchart TD
    - C) Continuous functions
    - D) Real numbers
 
-   <details><summary>Answer</summary>**B)** Structural induction mirrors the recursive constructors of a data type (trees, lists, formulas).</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Structural induction mirrors the recursive constructors of a data type (trees, lists, formulas).</details>
 
 5. The proof that $\sqrt{2}$ is irrational uses which technique?
    - A) Direct proof
@@ -363,7 +363,7 @@ flowchart TD
    - C) Proof by contradiction
    - D) Contrapositive
 
-   <details><summary>Answer</summary>**C)** Assuming $\sqrt{2}$ is rational leads to a contradiction about the fraction being in lowest terms.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Assuming $\sqrt{2}$ is rational leads to a contradiction about the fraction being in lowest terms.</details>
 
 ## Examples
 
@@ -571,11 +571,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -583,7 +583,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -609,7 +609,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -627,23 +627,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()
@@ -787,7 +787,7 @@ function strongInduction(
 }
 ```
 
-**Proof 4.7 (Every integer > 1 has a prime factorization).** Use strong induction. $P(2)$ is true (2 is prime). Assume all $2 \leq m \leq k$ have prime factorizations. For $k+1$, if it's prime, done. Otherwise $k+1 = ab$ with $1 < a, b < k+1$, which by the inductive hypothesis have prime factorizations. Their product is a factorization of $k+1$. $\square$
+**Proof 4.7 (Every integer > 1 has a prime factorization).** Use strong induction. $P(2)$ is true (2 is prime). Assume all $2 \leq m \leq k$ have prime factorizations. For $k+1$, if it's prime, done. Otherwise $k+1 = ab$ with $1 &lt; a, b < k+1$, which by the inductive hypothesis have prime factorizations. Their product is a factorization of $k+1$. $\square$
 
 ### 4.11 Structural Induction
 
@@ -883,7 +883,7 @@ flowchart TD
 
 18. Prove that the product of any two odd integers is odd (direct proof).
 
-19. Prove by contradiction: If $a$ and $b$ are rational numbers with $a < b$, then there exists an irrational number $x$ such that $a < x < b$.
+19. Prove by contradiction: If $a$ and $b$ are rational numbers with $a &lt; b$, then there exists an irrational number $x$ such that $a < x < b$.
 
 20. Use strong induction to prove that every integer $n > 1$ can be written as a product of primes (the Fundamental Theorem of Arithmetic).
 

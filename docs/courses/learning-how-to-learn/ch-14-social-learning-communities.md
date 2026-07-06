@@ -1263,7 +1263,7 @@ d) Every day should be social
 | Online Communities | - Lurk 1-2 weeks before joining - Evaluate: response time, beginner treatment, mentorship - Green flags: active help, project sharing, no gatekeeping |
 | OSS Learning Path | - Phase 1: Setup & read - Phase 2: Docs - Phase 3: Tests - Phase 4: Bug fixes - Phase 5: Features |
 | Conferences | - Hallway conversations > talks - Prepare questions before each conversation - Follow up within 24 hours |
-| Social Pitfalls | - Comparison: track your own metrics - Performative: track creation/study ratio - Groupthink: invite outside perspectives - Social procrastination: discuss < 30% of study time |
+| Social Pitfalls | - Comparison: track your own metrics - Performative: track creation/study ratio - Groupthink: invite outside perspectives - Social procrastination: discuss &lt; 30% of study time |
 | Learning Board | - Expert: deep answers - Peer: accountability - Mentor: career guidance - Beginner: forces teaching |
 
 ## Chapter Summary
@@ -1300,7 +1300,7 @@ d) Every day should be social
 - D) Discord is not for learning
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** A — Large communities often have low engagement per member. Better to find a smaller, more active community (500-2000 members) where questions get answered.
 </details>
@@ -1312,9 +1312,9 @@ d) Every day should be social
 - D) They need to post more for better engagement
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
-**Answer:** B — When content creation exceeds actual learning time, you're optimizing for external validation, not understanding. The creation-to-learning ratio should be <20%.
+**Answer:** B — When content creation exceeds actual learning time, you're optimizing for external validation, not understanding. The creation-to-learning ratio should be &lt;20%.
 </details>
 
 **Q3:** A study group has been meeting for 6 weeks and everyone agrees on everything. What's the risk?
@@ -1324,7 +1324,7 @@ d) Every day should be social
 - D) The group is too small
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Complete agreement in a study group is a red flag. Groups need periodic outside perspectives or structured debate to prevent shared blind spots.
 </details>
@@ -1336,7 +1336,7 @@ d) Every day should be social
 - D) Fork the repository and start refactoring
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Always start by reading the contribution guidelines and setting up locally. Understanding the project's conventions and workflow prevents wasted effort from both you and the maintainers.
 </details>
@@ -1348,7 +1348,7 @@ d) Every day should be social
 - D) They're learning too fast
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — A learning board supplements your own learning; it doesn't replace it. If you can't make progress without advisor input, you've become dependent. Reset with silent learning.
 </details>

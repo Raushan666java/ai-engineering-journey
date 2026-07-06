@@ -725,7 +725,7 @@ print("Main: All threads done.")
 |-------|------------------------------|-------------|----------|------------|---------|
 | Many-to-One | N : 1 | None | One blocks all | Low (user library only) | Solaris Green Threads, GNU Pth |
 | One-to-One | N : N | Full | Independent blocking | Moderate (kernel TCB per thread) | Linux NPTL, Windows, Solaris 9+ |
-| Many-to-Many | N : M (M <= N) | Partial | Library-controlled | High (two schedulers) | Solaris 8, IRIX |
+| Many-to-Many | N : M (M &lt;= N) | Partial | Library-controlled | High (two schedulers) | Solaris 8, IRIX |
 | Two-Level | N : M + 1:1 optional | Full for bound threads | Mixed | Very high | Solaris 8-9 (hybrid) |
 
 ---

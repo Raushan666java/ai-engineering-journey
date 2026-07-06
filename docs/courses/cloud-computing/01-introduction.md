@@ -402,7 +402,7 @@ EOL Reporting Tool: retire
    - D) Measured service
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Open-source software.** The five essential characteristics are on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service. Open-source is not a requirement for cloud computing.
 </details>
 
@@ -413,7 +413,7 @@ EOL Reporting Tool: retire
    - D) Community cloud ? shared with other healthcare organizations
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Hybrid cloud.** Hybrid cloud allows the startup to keep sensitive patient data in a private or community cloud environment while using public cloud for non-sensitive analytics, balancing compliance with cost efficiency.
 </details>
 
@@ -424,7 +424,7 @@ EOL Reporting Tool: retire
    - D) Cloud providers charge less for variable usage
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Cloud's strength is elasticity ? scaling down when not needed saves money; a fully utilized on-prem server is cheaper.** The cloud's pay-per-use model is most cost-effective for workloads with fluctuating demand.
 </details>
 
@@ -435,7 +435,7 @@ EOL Reporting Tool: retire
    - D) Repurchase
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Rehost (Lift and Shift).** Rehost moves applications with minimal changes and is the fastest migration path, though it yields the least cloud-native benefit.
 </details>
 
@@ -446,7 +446,7 @@ EOL Reporting Tool: retire
    - D) Mandatory software upgrades
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) High switching costs due to data egress fees and proprietary APIs.** Data egress fees ($0.05?$0.12/GB) and provider-specific service APIs create economic and technical barriers to switching providers.
 </details>
 
@@ -859,7 +859,7 @@ const instance = new aws.ec2.Instance("app-server", {
   userData: `#!/bin/bash
 yum install -y httpd
 systemctl start httpd
-echo "<h1>Deployed with Pulumi</h1>" > /var/www/html/index.html`,
+echo "<h1>Deployed with Pulumi&lt;/h1&gt;" > /var/www/html/index.html`,
 });
 
 export const publicIp = instance.publicIp;

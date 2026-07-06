@@ -1595,7 +1595,7 @@ d) 6 months
 - D) Their tracking system is broken
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — High hours with low retention is the classic sign of low-ROI methods. They're likely spending most of their time on passive activities (reading, watching) instead of active methods (recall, teaching, practice).
 </details>
@@ -1607,7 +1607,7 @@ d) 6 months
 - D) Give up on the topic
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — A 5-week plateau with consistent effort suggests a complexity mismatch or burnout. Switching topics for 3 days provides diffuse processing and prevents diminishing returns.
 </details>
@@ -1619,7 +1619,7 @@ d) 6 months
 - D) Long streak + many problems solved
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** C — Velocity measures pace, and 7-day recall verifies retention. Together they confirm you're learning quickly AND durably. All other combinations can be gamed.
 </details>
@@ -1631,7 +1631,7 @@ d) 6 months
 - D) Sleep debt
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** A — High day-1 recall indicates good initial encoding, but the steep drop by day 7 means the first review interval (spaced repetition) should happen earlier — around day 2-3 instead of waiting a full week.
 </details>
@@ -1643,7 +1643,7 @@ d) 6 months
 - D) The test was flawed and should be rerun
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** C — A 0.3-point difference with only 7 days per condition is noise, not signal. Use the method that fits your schedule best, or extend the experiment to 14 days per condition for more confidence.
 </details>

@@ -217,7 +217,7 @@ function generatingFunctionCoefficients(
 
 1. If $f(n) = O(n^{\log_b a - \epsilon})$ for some $\epsilon > 0$, then $T(n) = \Theta(n^{\log_b a})$.
 2. If $f(n) = \Theta(n^{\log_b a})$, then $T(n) = \Theta(n^{\log_b a} \log n)$.
-3. If $f(n) = \Omega(n^{\log_b a + \epsilon})$ for some $\epsilon > 0$ and $a f(n/b) \leq c f(n)$ for some $c < 1$ and large $n$, then $T(n) = \Theta(f(n))$.
+3. If $f(n) = \Omega(n^{\log_b a + \epsilon})$ for some $\epsilon > 0$ and $a f(n/b) \leq c f(n)$ for some $c &lt; 1$ and large $n$, then $T(n) = \Theta(f(n))$.
 
 | Algorithm | Recurrence | $a$ | $b$ | $f(n)$ | $\log_b a$ | Case | Complexity |
 |-----------|-----------|-----|-----|--------|------------|------|------------|
@@ -292,35 +292,35 @@ console.log(masterTheorem(1, 2, 0, 0)); // T(log n) ? binary search
    - B) 5
    - C) 3
    - D) 7
-   <details><summary>Answer</summary>**B)** 5 ? the degree is the furthest back term referenced ($n-5$).</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** 5 ? the degree is the furthest back term referenced ($n-5$).</details>
 
 2. Which recurrence corresponds to merge sort's time complexity?
    - A) $T(n) = T(n-1) + 1$
    - B) $T(n) = T(n/2) + 1$
    - C) $T(n) = 2T(n/2) + n$
    - D) $T(n) = 2T(n-1) + 1$
-   <details><summary>Answer</summary>**C)** $T(n) = 2T(n/2) + n$ ? splitting into two halves with linear merge cost gives $\Theta(n \log n)$.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $T(n) = 2T(n/2) + n$ ? splitting into two halves with linear merge cost gives $\Theta(n \log n)$.</details>
 
 3. A recurrence has characteristic roots $r=3$ (multiplicity 2). The general solution is:
    - A) $a_n = \alpha 3^n$
    - B) $a_n = (\alpha + \beta n) 3^n$
    - C) $a_n = \alpha 3^n + \beta (-3)^n$
    - D) $a_n = \alpha 3^n + \beta n 3^n$
-   <details><summary>Answer</summary>**B)** $a_n = (\alpha + \beta n) 3^n$ ? repeated roots multiply the $r^n$ term by a polynomial in $n$ of degree one less than multiplicity. (Note: D is also equivalent since $(\alpha + \beta n)3^n$ and $\alpha 3^n + \beta n 3^n$ are the same ? but B is the standard form.)</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $a_n = (\alpha + \beta n) 3^n$ ? repeated roots multiply the $r^n$ term by a polynomial in $n$ of degree one less than multiplicity. (Note: D is also equivalent since $(\alpha + \beta n)3^n$ and $\alpha 3^n + \beta n 3^n$ are the same ? but B is the standard form.)&lt;/details&gt;
 
 4. For the recurrence $T(n) = 4T(n/2) + n$, the Master theorem gives:
    - A) $\Theta(n^2)$
    - B) $\Theta(n^2 \log n)$
    - C) $\Theta(n \log n)$
    - D) $\Theta(n)$
-   <details><summary>Answer</summary>**A)** $\Theta(n^2)$ ? $a=4$, $b=2$, $\log_2 4 = 2$, $f(n) = n = O(n^{2-\epsilon})$, case 1.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** $\Theta(n^2)$ ? $a=4$, $b=2$, $\log_2 4 = 2$, $f(n) = n = O(n^{2-\epsilon})$, case 1.</details>
 
 5. The generating function for $a_n = 3 \cdot 5^n$ is:
    - A) $G(x) = 3/(1 - 5x)$
    - B) $G(x) = 5/(1 - 3x)$
    - C) $G(x) = 1/(1 - 5x)^3$
    - D) $G(x) = 3/(5 - x)$
-   <details><summary>Answer</summary>**A)** $G(x) = \sum_{n \geq 0} 3 \cdot 5^n x^n = 3 \sum (5x)^n = 3/(1 - 5x)$.</details>
+   <details><summary>Answer&lt;/summary&gt;**A)** $G(x) = \sum_{n \geq 0} 3 \cdot 5^n x^n = 3 \sum (5x)^n = 3/(1 - 5x)$.</details>
 
 ## Examples
 
@@ -423,7 +423,7 @@ console.log(binarySearchCost(16)); // 4 comparisons
 Let $\alpha = \log_b a$. Compare $f(n)$ to $n^\alpha$:
 - **Case 1:** $f(n) = O(n^{\alpha - \epsilon})$ ? $T(n) = \Theta(n^\alpha)$
 - **Case 2:** $f(n) = \Theta(n^\alpha \log^k n)$ ? $T(n) = \Theta(n^\alpha \log^{k+1} n)$
-- **Case 3:** $f(n) = \Omega(n^{\alpha + \epsilon})$ and $af(n/b) \leq c f(n)$ for some $c < 1$ ? $T(n) = \Theta(f(n))$
+- **Case 3:** $f(n) = \Omega(n^{\alpha + \epsilon})$ and $af(n/b) \leq c f(n)$ for some $c &lt; 1$ ? $T(n) = \Theta(f(n))$
 
 ```typescript
 function masterTheorem(
@@ -740,11 +740,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -752,7 +752,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -778,7 +778,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -796,23 +796,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()

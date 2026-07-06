@@ -540,7 +540,7 @@ Result: \( T(n) = \Theta(n^{\log_2 7}) = \Theta(n^{2.807}) \).
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| First algorithm to break \( O(n^3) \) barrier — historic milestone | Large constant factor — slower than naive for \( n < 1000 \) |
+| First algorithm to break \( O(n^3) \) barrier — historic milestone | Large constant factor — slower than naive for \( n &lt; 1000 \) |
 | Asymptotically faster for very large matrices (\( n > 10^5 \)) | Numerical instability with floating-point (subtractions cause cancellation) |
 | Foundation for all subsequent matrix multiplication improvements | Not in-place — requires significant extra memory for submatrices |
 | Naturally parallelizable (7 subproblems are independent) | Only works for square matrices; padding required for arbitrary sizes |
@@ -551,7 +551,7 @@ Result: \( T(n) = \Theta(n^{\log_2 7}) = \Theta(n^{2.807}) \).
 - **Rectangular matrices:** Strassen's algorithm does not apply directly — use standard multiplication or pad to square.
 - **Integer overflow:** The numerous additions and subtractions may cause overflow in languages with fixed-width integers; use Python or arbitrary-precision types.
 
-> **Pro Tip:** Strassen's algorithm has a large constant factor and numerical stability issues. In practice, standard \( O(n^3) \) multiplication is faster for \( n < 1000 \). Use Strassen only for very large matrices.
+> **Pro Tip:** Strassen's algorithm has a large constant factor and numerical stability issues. In practice, standard \( O(n^3) \) multiplication is faster for \( n &lt; 1000 \). Use Strassen only for very large matrices.
 
 > **Remember:** Strassen was the first algorithm to break the \( O(n^3) \) barrier, but theoretical improvements now reach \( O(n^{2.372}) \).
 
@@ -1019,7 +1019,7 @@ Divide-and-conquer assumes subproblems can be solved independently. When subprob
 
 **3. Small Input Sizes**
 
-For \( n < 10-100 \), the recursive overhead of divide-and-conquer often exceeds the benefit. This is why practical implementations of Merge Sort, Strassen, and Karatsuba all switch to brute-force or naive methods below a threshold.
+For \( n &lt; 10-100 \), the recursive overhead of divide-and-conquer often exceeds the benefit. This is why practical implementations of Merge Sort, Strassen, and Karatsuba all switch to brute-force or naive methods below a threshold.
 
 **4. Problems with No Efficient Merge**
 
@@ -1196,7 +1196,7 @@ Finding the \( k \)-th smallest element in \( O(n) \) average time using divide-
 - D) \( T(n) = 7T(n/3) + O(n^2) \)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) \( T(n) = 7T(n/2) + O(n^2) \) — 7 subproblems, each half size, \( O(n^2) \) for additions.
 </details>
 
@@ -1208,7 +1208,7 @@ B) \( T(n) = 7T(n/2) + O(n^2) \) — 7 subproblems, each half size, \( O(n^2) \)
 - D) 15
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) 7 — the geometric bound ensures at most 7 points can fit in a \( \delta \times 2\delta \) rectangle without being closer than \( \delta \).
 </details>
 
@@ -1220,7 +1220,7 @@ C) 7 — the geometric bound ensures at most 7 points can fit in a \( \delta \ti
 - D) \( T(n) = 3T(n/3) + O(n) \)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) \( T(n) = 3T(n/2) + O(n) \) — three multiplications of half-sized numbers.
 </details>
 
@@ -1232,7 +1232,7 @@ C) \( T(n) = 3T(n/2) + O(n) \) — three multiplications of half-sized numbers.
 - D) The array is large
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Overlapping subproblems cause redundant recomputation — dynamic programming is better suited.
 </details>
 
@@ -1244,7 +1244,7 @@ B) Overlapping subproblems cause redundant recomputation — dynamic programming
 - D) A DNS resolver caching lookups
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) MapReduce follows the divide-conquer-combine pattern: split input, process independently, merge results.
 </details>
 

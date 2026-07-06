@@ -256,7 +256,7 @@ Where:
 2. **Advertise:** Send your entire distance vector (D_self(dest) for all dest) to all neighbors.
 3. **Receive:** When a neighbor v sends its distance vector, for each destination y:
    - Compute candidate = c(self, v) + D_v(y)
-   - If candidate < D_self(y), update D_self(y) = candidate and set next_hop(y) = v.
+   - If candidate &lt; D_self(y), update D_self(y) = candidate and set next_hop(y) = v.
 4. **Repeat:** Go to step 2. Continue until no updates occur (convergence).
 5. **Triggered Updates:** If link cost changes or a neighbor becomes unreachable, immediately send an updated vector.
 
@@ -707,7 +707,7 @@ Dijkstra's algorithm computes the shortest path from a source node to all other 
 **Numbered Steps:**
 
 1. **Initialize:** Mark source node `s` with distance 0. All other nodes have distance INFINITY. Mark all nodes as unvisited. Set current node = source.
-2. **Explore neighbors:** For each unvisited neighbor `v` of current node `u`, compute tentative distance = dist[u] + c(u, v). If tentative < dist[v], update dist[v] and set prev[v] = u.
+2. **Explore neighbors:** For each unvisited neighbor `v` of current node `u`, compute tentative distance = dist[u] + c(u, v). If tentative &lt; dist[v], update dist[v] and set prev[v] = u.
 3. **Select next:** From all unvisited nodes, pick the one with the smallest tentative distance. Mark it as visited (its shortest path is now final).
 4. **Repeat:** Set current = newly selected node. Go to step 2 until all nodes are visited.
 5. **Terminate:** When all nodes are visited, dist[] contains shortest distances and prev[] contains the shortest-path tree.
@@ -732,7 +732,7 @@ Dijkstra's algorithm computes the shortest path from a source node to all other 
 | 1 | {A, B} | 2 (A)âœ“ | 5 (B) | INF | 5 (A) |
 
 **Step 2:** Pick E (dist=5, tie with C → pick arbitrarily, say E). Add E to N'. Explore E's neighbors: C.
-- D(C) via E = D(E) + c(E,C) = 5 + 1 = 6 (5 < 6, no update)
+- D(C) via E = D(E) + c(E,C) = 5 + 1 = 6 (5 &lt; 6, no update)
 
 | Step | N' | D(B) | D(C) | D(D) | D(E) |
 |------|----|------|------|------|------|
@@ -1195,7 +1195,7 @@ DOWN --> ATTEMPT/INIT --> 2-WAY --> EXSTART --> EXCHANGE --> LOADING --> FULL
 | SPF computation frequency | On topology change | Only when LSA received, not periodic |
 | Why Dijkstra fails with negative edges? | Greedy early commitment | Once a node is visited, its distance is never reconsidered; a later negative edge could offer shorter path |
 | Why O(E log V) is optimal for sparse nets | log V is small | E is typically ~2V in sparse networks; E log V approx 2V log V |
-| Why O(VÂ²) may be faster in dense nets | Low constant factor | For dense graphs where E approx VÂ², VÂ² < VÂ² log V; array implementation wins |
+| Why O(VÂ²) may be faster in dense nets | Low constant factor | For dense graphs where E approx VÂ², VÂ² &lt; VÂ² log V; array implementation wins |
 
 ### Advantages and Disadvantages of Link-State
 
@@ -1270,7 +1270,7 @@ iBGP:  AS100 ---- AS300  (within same AS → only eBGP-learned routes shared)
 
 1. **Highest LOCAL_PREF** → Set by policy. Routes with higher local preference are preferred.
 2. **Shortest AS_PATH length** → Count ASes in AS_PATH (not including AS_CONFED_SEQUENCE).
-3. **Lowest ORIGIN type** → IGP (0) < EGP (1) < INCOMPLETE (2).
+3. **Lowest ORIGIN type** → IGP (0) &lt; EGP (1) < INCOMPLETE (2).
 4. **Lowest MED** → Only if the same neighboring AS is the route source.
 5. **Prefer eBGP over iBGP** → eBGP-learned routes preferred.
 6. **Lowest IGP cost to NEXT_HOP** → Closest exit point.
@@ -1947,7 +1947,7 @@ Anycast in the Internet is implemented via BGP. Multiple routers in different lo
 | VLSM/CIDR support | No (v1), Yes (v2) | Yes | Yes |
 | Route tagging | No (v1), Yes (v2) | Yes (external routes) | Yes (communities) |
 | Multipath support | No | Yes (ECMP) | Yes (multipath feature) |
-| Scalability | < 15 hops, < 500 routes | Thousands of routers (with areas) | ~100K ASes, ~1M prefixes |
+| Scalability | < 15 hops, &lt; 500 routes | Thousands of routers (with areas) | ~100K ASes, ~1M prefixes |
 | Configuration | Very simple | Complex | Complex |
 | Administrative distance | 120 | 110 | 20 (eBGP) / 200 (iBGP) |
 | Transport | UDP (port 520) | IP (protocol 89) | TCP (port 179) |
@@ -1999,7 +1999,7 @@ iBGP runs between routers in the same AS. It does NOT prepend the AS number (so 
 ### Q7: What is the BGP convergence time in the real Internet?
 
 Under normal conditions:
-- Local convergence within an AS: < 1 second (OSPF detects, BGP processes).
+- Local convergence within an AS: &lt; 1 second (OSPF detects, BGP processes).
 - Inter-AS convergence: 30 seconds to several minutes.
 - Global convergence after major outage: 5-15 minutes.
 The 2008 YouTube/Pakistan hijack took approximately 2 hours to fully recover globally.
@@ -2354,7 +2354,7 @@ BGP Flowspec (RFC 8955) extends BGP to carry traffic filtering and rate-limiting
 - D) IS-IS
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) RIP uses hop count, max 15 (16 = infinity).
 </details>
 
@@ -2366,7 +2366,7 @@ C) RIP uses hop count, max 15 (16 = infinity).
 - D) TTL
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) BGP checks the AS_PATH → if a router sees its own AS in the path, it rejects the route to prevent loops.
 </details>
 
@@ -2378,7 +2378,7 @@ B) BGP checks the AS_PATH → if a router sees its own AS in the path, it reject
 - D) Compute routes for all other routers
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The DR reduces the number of OSPF adjacencies needed on broadcast segments.
 </details>
 
@@ -2390,7 +2390,7 @@ B) The DR reduces the number of OSPF adjacencies needed on broadcast segments.
 - D) IGP cost to NEXT_HOP
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) LOCAL_PREF (highest wins) is evaluated first in the BGP decision process.
 </details>
 
@@ -2402,7 +2402,7 @@ C) LOCAL_PREF (highest wins) is evaluated first in the BGP decision process.
 - D) Neither route (conflict)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) OSPF has administrative distance 110, RIP has 120. Lower AD wins.
 </details>
 
@@ -2414,7 +2414,7 @@ B) OSPF has administrative distance 110, RIP has 120. Lower AD wins.
 - D) Authentication failures
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 A) Split horizon prevents a router from advertising a route back on the interface it was learned from, breaking two-node routing loops.
 </details>
 
@@ -2426,7 +2426,7 @@ A) Split horizon prevents a router from advertising a route back on the interfac
 - D) O(V + E)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) O(E log V) → each of E edges relaxed once (heap push O(log V)), each of V vertices extracted once (heap pop O(log V)).
 </details>
 
@@ -2438,7 +2438,7 @@ B) O(E log V) → each of E edges relaxed once (heap push O(log V)), each of V v
 - D) Route aggregation
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) AS_PATH prepending adds extra copies of the local AS to the AS_PATH, increasing its length and making it less preferred in the BGP decision process.
 </details>
 
@@ -2450,7 +2450,7 @@ B) AS_PATH prepending adds extra copies of the local AS to the AS_PATH, increasi
 - D) Redistribute external routes
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) An ABR connects multiple OSPF areas to Area 0, summarizing routes between areas.
 </details>
 
@@ -2462,7 +2462,7 @@ B) An ABR connects multiple OSPF areas to Area 0, summarizing routes between are
 - D) Anycast
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 D) Anycast routes packets to the nearest group member, commonly used for DNS root servers and CDNs.
 </details>
 

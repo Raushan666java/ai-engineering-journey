@@ -35,7 +35,8 @@ By the end of this chapter, you will be able to:
 
 ---
 
-## 1. Spring Modulith Overview
+## 1. Spring Modulith Overview
+
 > **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
@@ -2471,7 +2472,7 @@ public class MigrationPlanner {
    - D) All of the above
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.
 </details>
 
@@ -2482,7 +2483,7 @@ public class MigrationPlanner {
    - D) Whatever the team knows best
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.
 </details>
 
@@ -2493,7 +2494,7 @@ public class MigrationPlanner {
    - D) Never → it is outdated
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.
 </details>
 

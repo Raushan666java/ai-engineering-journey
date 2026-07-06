@@ -3853,9 +3853,9 @@ int f(int n) {
 What value is returned by f(1)?
 
 Step-by-step:
-- Call f(1): n=1, i=1. n<5 → n=1+1=2, i=2, call f(2)
-- Call f(2): n=2, i=2. n<5 → n=2+2=4, i=3, call f(4)
-- Call f(4): n=4, i=3. n<5 → n=4+3=7, i=4, call f(7)
+- Call f(1): n=1, i=1. n&lt;5 → n=1+1=2, i=2, call f(2)
+- Call f(2): n=2, i=2. n&lt;5 → n=2+2=4, i=3, call f(4)
+- Call f(4): n=4, i=3. n&lt;5 → n=4+3=7, i=4, call f(7)
 - Call f(7): n=7, i=4. nâ‰¥5 → return 7
 
 Answer: 7
@@ -3899,7 +3899,7 @@ Answer: 19
 int fun(int n) {
     int x = 0;
     for (int i = n; i > 0; i = i / 2)
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j &lt; i; j++)
             x++;
     return x;
 }
@@ -3972,9 +3972,9 @@ Is the system in a safe state?
 
 Step-by-step:
 - Total allocated = (5,1). Available = (10,5) - (5,1) = (5,4).
-- P1: Need(1,2) <= Available(5,4) -> P1 runs, releases (2,0) -> Available = (7,4).
-- P0: Need(7,4) <= Available(7,4) -> P0 runs, releases (0,1) -> Available = (7,5).
-- P2: Need(6,0) <= Available(7,5) -> P2 runs.
+- P1: Need(1,2) &lt;= Available(5,4) -&gt; P1 runs, releases (2,0) -> Available = (7,4).
+- P0: Need(7,4) &lt;= Available(7,4) -&gt; P0 runs, releases (0,1) -> Available = (7,5).
+- P2: Need(6,0) &lt;= Available(7,5) -&gt; P2 runs.
 - Safe sequence exists: P1 -> P0 -> P2.
 
 Answer: Yes. Safe sequence: P1 -> P0 -> P2.
@@ -4067,7 +4067,7 @@ Answer: A
 
 #### Q64 (GATE 2016) → Fork() Count
 
-for (i = 0; i < 2; i++)
+for (i = 0; i &lt; 2; i++)
     fork();
 
 Total child processes created (excluding parent)?
@@ -4528,7 +4528,7 @@ Simple graph with 10 vertices, 36 edges. Which is true?
 (A) Planar  (B) Non-planar  (C) Eulerian  (D) Hamiltonian
 
 Step-by-step:
-For planar graphs: e <= 3v - 6. With v = 10: e <= 30 - 6 = 24. But we have 36 > 24 edges, so graph is non-planar.
+For planar graphs: e &lt;= 3v - 6. With v = 10: e <= 30 - 6 = 24. But we have 36 &gt; 24 edges, so graph is non-planar.
 
 Answer: B
 
@@ -4643,7 +4643,7 @@ Answer: C
 **Trap 4: Recursion -- Neglecting Base Case Cost**
 - Wrong: Analyzing T(n) = 2T(n/2) + O(1) without base case.
 - Right: Master Theorem assumes base case T(1) = O(1). For T(n) = 2T(n/2) + O(1), a=2, b=2, case 1: O(n). Always verify which Master Theorem case applies.
-- Tip: When n <= 1, cost is constant. Don't forget base case when counting total operations.
+- Tip: When n &lt;= 1, cost is constant. Don't forget base case when counting total operations.
 
 #### Operating Systems (4 Traps)
 
@@ -4969,7 +4969,7 @@ Let p = probability of correct, V = marks for correct, P = penalty for wrong.
 - Pumping Lemma for RL: if w = xyz, then xy^i z in L for all i >= 0.
 - Pumping Lemma for CFL: if w = uvxyz, then uv^i xy^i z in L for all i >= 0.
 - LL(1): FIRST and FOLLOW sets. No left recursion. No ambiguity.
-- LR(0) < SLR(1) < CLR(1) = LR(1) < LALR(1).
+- LR(0) &lt; SLR(1) < CLR(1) = LR(1) < LALR(1).
 - Three-address code: x = y op z. No nested expressions.
 - Symbol table: stores identifiers, types, scope info.
 
@@ -4987,7 +4987,7 @@ Let p = probability of correct, V = marks for correct, P = penalty for wrong.
 
 - n(A union B) = n(A) + n(B) - n(A intersect B)
 - P(n,r) = n!/(n-r)!. C(n,r) = n!/(r!(n-r)!)
-- Graph degree sum = 2*edges. Planar: e <= 3v-6.
+- Graph degree sum = 2*edges. Planar: e &lt;= 3v-6.
 - Eulerian circuit: all even degrees. Eulerian trail: exactly 2 odd degree vertices.
 - n^(th) term of AP: a + (n-1)d. GP: ar^(n-1).
 - Probability: P(A|B) = P(A intersect B)/P(B). Conditional probability.

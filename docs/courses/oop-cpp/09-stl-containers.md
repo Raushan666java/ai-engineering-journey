@@ -73,7 +73,7 @@ The C++ standard divides containers into four families:
 | Family | Containers | Ordering | Lookup | Internal Structure |
 |--------|-----------|----------|--------|-------------------|
 | Sequence | vector, deque, list, forward_list, array | Insertion order | By position | Contiguous / linked |
-| Ordered Associative | set, multiset, map, multimap | Key order (operator<) | O(log n) | Red-Black tree |
+| Ordered Associative | set, multiset, map, multimap | Key order (operator&lt;) | O(log n) | Red-Black tree |
 | Unordered Associative | unordered_set, unordered_map, unordered_multiset, unordered_multimap | Unspecified | O(1) avg | Hash table with chaining |
 | Container Adaptors | stack, queue, priority_queue | LIFO / FIFO / heap | Top only | Wraps sequence container |
 
@@ -2132,7 +2132,7 @@ Need a container?
 | **set** | Unique sorted unique values | Mathematical set operations (union, intersection) | Hash-only lookups (use unordered_set) |
 | **multiset** | Sorted multiset | Histogram buckets by key | Unordered multiset (use unordered_multiset) |
 | **map** | Sorted key-value dictionary | Configuration tables | Ordering irrelevant (use unordered_map) |
-| **multimap** | Sorted KV with duplicates | Index where one key maps to many values | Same-key aggregation (consider map<K, vector<V>>) |
+| **multimap** | Sorted KV with duplicates | Index where one key maps to many values | Same-key aggregation (consider map&lt;K, vector<V&gt;>) |
 | **unordered_set** | Fast membership testing | Cache for deduplication | Ordered iteration needed |
 | **unordered_map** | Hash-based dictionary | Frequency counters, caches | Range queries needed; order matters |
 | **stack** | LIFO access | Undo, parsing (parentheses, expressions) | Non-LIFO access |
@@ -2402,7 +2402,7 @@ Deque occupies a middle ground:
 | **Stability of iterators** | Insert does not invalidate | Insert may invalidate (rehash) |
 | **begin() complexity** | O(1) (leftmost cached) | O(bucket_count) (find first non-empty) |
 | **operator[]** | Creates default if missing | Same behavior |
-| **Custom key requirements** | operator< (or comparator) | Hash function + operator== |
+| **Custom key requirements** | operator&lt; (or comparator) | Hash function + operator== |
 | **Memory allocation** | Per-node allocation | Bucket array + per-node |
 | **Cache performance** | Poor (tree nodes scattered) | Moderate (bucket array is contiguous; chains are scattered) |
 
@@ -2418,7 +2418,7 @@ Deque occupies a middle ground:
 **Prefer unordered_map when:**
 - You only need exact-key lookup (no range queries, no ordered iteration)
 - You have many elements (100K+) -- the log n factor becomes significant
-- Keys are expensive to compare (e.g., long strings) -- O(1) hash < O(log n) string compare
+- Keys are expensive to compare (e.g., long strings) -- O(1) hash &lt; O(log n) string compare
 - You have a good hash function
 
 #### Empirical Performance
@@ -2479,11 +2479,11 @@ Understanding memory overhead is crucial for memory-constrained systems and larg
 
 | Container | sizeof (64-bit) | Explanation |
 |-----------|----------------|-------------|
-| vector<T> | 24 bytes | 3 pointers |
-| array<T,N> | N * sizeof(T) | The data itself |
-| deque<T> | ~64-80 bytes | Central map pointers, block size, metadata |
-| list<T> | 24 bytes | Sentinel node (2 pointers + size) |
-| forward_list<T> | 8 bytes | One pointer to head |
+| vector&lt;T> | 24 bytes | 3 pointers |
+| array&lt;T,N&gt; | N * sizeof(T) | The data itself |
+| deque&lt;T> | ~64-80 bytes | Central map pointers, block size, metadata |
+| list&lt;T> | 24 bytes | Sentinel node (2 pointers + size) |
+| forward_list&lt;T> | 8 bytes | One pointer to head |
 | set/map | 48 bytes | Tree root + node count + comparator |
 | unordered_set/map | ~56-64 bytes | Buckets ptr + size + load factor + hash + eq |
 
@@ -2599,7 +2599,7 @@ for (auto it = start; it != end; ++it)
     process(it->second);
 ```
 
-3. **Small N:** For < 100 elements, O(log n) and O(1) are practically identical, and map's cache behavior is more predictable.
+3. **Small N:** For &lt; 100 elements, O(log n) and O(1) are practically identical, and map's cache behavior is more predictable.
 
 4. **Stable iterators:** Map insert never invalidates existing iterators. unordered_map insert can trigger a rehash that invalidates all iterators.
 
@@ -2911,11 +2911,11 @@ STL containers form the backbone of C++ data structure programming. The key take
 
 3. **Undo/Redo System:** Implement an undo/redo system using two stacks (vector-based). Each operation should support execute, undo (move to redo stack), and redo (move back to undo stack).
 
-4. **Matrix Class:** Implement a simple sparse matrix class using std::map<std::pair<int,int>, double>. Support operator(), addition, and multiplication. Compare performance against a dense vector<vector<double>>.
+4. **Matrix Class:** Implement a simple sparse matrix class using std::map&lt;std::pair<int,int&gt;, double>. Support operator(), addition, and multiplication. Compare performance against a dense vector&lt;vector<double&gt;>.
 
-5. **BFS Shortest Path:** Implement BFS on a grid using std::queue. Each cell is a pair<int,int>. Track visited cells using unordered_set with a custom hash for pairs.
+5. **BFS Shortest Path:** Implement BFS on a grid using std::queue. Each cell is a pair&lt;int,int&gt;. Track visited cells using unordered_set with a custom hash for pairs.
 
-6. **Custom Allocator Experiment:** Write a program that creates vector<int>, list<int>, and deque<int> each with 10 million elements. Measure memory usage (via task manager / getrusage) and iteration time. Compare against expected theoretical values.
+6. **Custom Allocator Experiment:** Write a program that creates vector&lt;int&gt;, list&lt;int&gt;, and deque&lt;int&gt; each with 10 million elements. Measure memory usage (via task manager / getrusage) and iteration time. Compare against expected theoretical values.
 
 7. **Job Scheduler:** Implement a simple job scheduler using priority_queue. Each job has a priority and a function to execute. Extract jobs in priority order and execute them.
 
@@ -2925,7 +2925,7 @@ STL containers form the backbone of C++ data structure programming. The key take
 
 2. **Skip List Implementation:** Implement a skip list (probabilistic balanced data structure) using forward_list as the base layer. Compare performance against std::set for insert, find, and erase.
 
-3. **Hash Table From Scratch:** Implement a simple hash table with chaining using vector<forward_list<pair<K,V>>>. Support insert, find, erase, rehash, and load factor tracking. Compare correctness and performance against std::unordered_map.
+3. **Hash Table From Scratch:** Implement a simple hash table with chaining using vector&lt;forward_list<pair<K,V&gt;>>. Support insert, find, erase, rehash, and load factor tracking. Compare correctness and performance against std::unordered_map.
 
 4. **Container Benchmark Suite:** Write a benchmarking program that measures:
    - Insert time (front, middle, back) across vector, deque, list

@@ -510,7 +510,7 @@ Test your understanding with these quick questions.
 - C) To enable server-side rendering
 - D) To satisfy the linter
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Stable keys help React identify which items changed, were added, or removed during reconciliation.**
 
@@ -523,7 +523,7 @@ Test your understanding with these quick questions.
 - C) The effect runs only on mount
 - D) The component throws an error
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Without a dependency array, the effect runs after every render, which often causes infinite re-render loops.**
 
@@ -536,7 +536,7 @@ Test your understanding with these quick questions.
 - C) Pass props directly between siblings
 - D) Use `useRef`
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Lifting state up means moving the shared state to the nearest common ancestor and passing it down via props.**
 
@@ -549,7 +549,7 @@ Test your understanding with these quick questions.
 - C) `setState(prev => ({...prev, user: {...prev.user, name: 'Alice'}}))`
 - D) `Object.assign(state.user, {name: 'Alice'})`
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **C) Always create a new reference when updating objects in state — spread the previous state and override the specific property.**
 
@@ -747,11 +747,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -759,7 +759,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

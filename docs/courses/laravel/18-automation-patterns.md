@@ -1659,28 +1659,28 @@ Test your understanding of Automation Patterns.
    - B) Bus::chain()
    - C) Queue::sequence()
    - D) Queue::pipeline()
-   <details><summary>Answer</summary>**B)** Bus::chain() creates ordered sequences; Bus::batch() creates parallel groups.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Bus::chain() creates ordered sequences; Bus::batch() creates parallel groups.</details>
 
 2. Which scheduler method prevents overlapping task execution?
    - A) ->runOnce()
    - B) ->withoutOverlapping()
    - C) ->exclusive()
    - D) ->singleton()
-   <details><summary>Answer</summary>**B)** ->withoutOverlapping() prevents the same task from running if the previous instance is still executing.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** ->withoutOverlapping() prevents the same task from running if the previous instance is still executing.</details>
 
 3. How should webhook handlers acknowledge receipt?
    - A) Process synchronously and return 200
    - B) Return 202 immediately and dispatch a queued job
    - C) Return 201 and wait for processing
    - D) Return 204 with no response body
-   <details><summary>Answer</summary>**B)** Return HTTP 202 Accepted and dispatch a queued job for async processing.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Return HTTP 202 Accepted and dispatch a queued job for async processing.</details>
 
 4. Which Laravel package provides a real-time queue dashboard?
    - A) Telescope
    - B) Horizon
    - C) Pulse
    - D) All of the above
-   <details><summary>Answer</summary>**D)** Horizon provides queue monitoring, Pulse provides metrics, Telescope provides debugging.</details>
+   <details><summary>Answer&lt;/summary&gt;**D)** Horizon provides queue monitoring, Pulse provides metrics, Telescope provides debugging.</details>
 
 ## Concept Comparison Table
 
@@ -1746,28 +1746,28 @@ Test your understanding of Automation Patterns.
    - B) Bus::chain()
    - C) Queue::sequence()
    - D) Queue::pipeline()
-   <details><summary>Answer</summary>**B)** Bus::chain() creates ordered sequences; Bus::batch() creates parallel groups.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Bus::chain() creates ordered sequences; Bus::batch() creates parallel groups.</details>
 
 2. Which scheduler method prevents overlapping task execution?
    - A) ->runOnce()
    - B) ->withoutOverlapping()
    - C) ->exclusive()
    - D) ->singleton()
-   <details><summary>Answer</summary>**B)** ->withoutOverlapping() prevents the same task from running if the previous instance is still executing.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** ->withoutOverlapping() prevents the same task from running if the previous instance is still executing.</details>
 
 3. How should webhook handlers acknowledge receipt?
    - A) Process synchronously and return 200
    - B) Return 202 immediately and dispatch a queued job
    - C) Return 201 and wait
    - D) Return 204 with no body
-   <details><summary>Answer</summary>**B)** Return HTTP 202 Accepted and dispatch a queued job for async processing.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Return HTTP 202 Accepted and dispatch a queued job for async processing.</details>
 
 4. Which Laravel package provides a real-time queue dashboard?
    - A) Telescope
    - B) Horizon
    - C) Pulse
    - D) All of the above
-   <details><summary>Answer</summary>**D)** Horizon provides queue monitoring, Pulse provides metrics, Telescope provides debugging.</details>
+   <details><summary>Answer&lt;/summary&gt;**D)** Horizon provides queue monitoring, Pulse provides metrics, Telescope provides debugging.</details>
 
 ## Summary
 - Events and listeners provide decoupled automation with the ability to dispatch delayed events

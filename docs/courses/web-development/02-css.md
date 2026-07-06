@@ -497,7 +497,7 @@ Test your understanding with these quick questions.
 - C) `width: auto`
 - D) `display: block`
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `box-sizing: border-box` includes padding and border in the specified dimensions.**
 
@@ -510,7 +510,7 @@ Test your understanding with these quick questions.
 - C) Centers the entire flex container
 - D) Vertically centers all children
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `justify-content` aligns items along the main axis (defined by `flex-direction`).**
 
@@ -523,7 +523,7 @@ Test your understanding with these quick questions.
 - C) `@media (theme: dark)`
 - D) `@media (color-scheme: dark)`
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `prefers-color-scheme: dark` detects the user's system-wide dark mode setting.**
 
@@ -536,7 +536,7 @@ Test your understanding with these quick questions.
 - C) Applies both forwards and backwards fill modes
 - D) Repeats the animation infinitely
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **C) `both` applies both `forwards` (retain end state) and `backwards` (apply initial state before delay) fill modes.**
 
@@ -698,11 +698,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -710,7 +710,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

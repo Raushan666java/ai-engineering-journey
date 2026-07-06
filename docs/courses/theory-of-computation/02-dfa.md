@@ -448,7 +448,7 @@ Check: On input "110" (binary for 6): qâ‚€ → qâ‚ (1) → qâ‚€ (
 - D) d(q, e)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** By definition, d^(q, e) = q — reading no input leaves the DFA in its current state.
 </details>
 
@@ -459,7 +459,7 @@ Check: On input "110" (binary for 6): qâ‚€ → qâ‚ (1) → qâ‚€ (
 - D) { anbncn | n = 0 }
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** Strings ending with "01" can be recognized by a 3-state DFA. The others need more memory than a DFA provides.
 </details>
 
@@ -470,7 +470,7 @@ Check: On input "110" (binary for 6): qâ‚€ → qâ‚ (1) → qâ‚€ (
 - D) A Boolean value
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Unlike an NFA where d returns a set of states, a DFA returns exactly one state — this is what determinism means.
 </details>
 
@@ -481,7 +481,7 @@ Check: On input "110" (binary for 6): qâ‚€ → qâ‚ (1) → qâ‚€ (
 - D) 5
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Three states corresponding to remainders 0, 1, 2 modulo 3. The start state (remainder 0) is also accepting.
 </details>
 
@@ -492,7 +492,7 @@ Check: On input "110" (binary for 6): qâ‚€ → qâ‚ (1) → qâ‚€ (
 - D) Subset construction
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C)** The pumping lemma shows any sufficiently long string in a regular language can be "pumped"; { anbn } violates this property.
 </details>
 
@@ -727,28 +727,28 @@ console.log(dfa.acceptsAnyString()); // true
 // --------------------------------------------------
 
 class DFAMinimizer {
-  states: Set<string>;
-  alphabet: Set<string>;
-  transitions: Map<string, string>;
+  states: Set&lt;string&gt;;
+  alphabet: Set&lt;string&gt;;
+  transitions: Map&lt;string, string&gt;;
   start: string;
-  accept: Set<string>;
+  accept: Set&lt;string&gt;;
 
   constructor(
-    states: Set<string>, alphabet: Set<string>,
-    transitions: Map<string, string>, start: string, accept: Set<string>
+    states: Set&lt;string&gt;, alphabet: Set&lt;string&gt;,
+    transitions: Map&lt;string, string&gt;, start: string, accept: Set&lt;string&gt;
   ) {
     this.states = states; this.alphabet = alphabet;
     this.transitions = transitions; this.start = start; this.accept = accept;
   }
 
   // Table-filling algorithm: mark distinguishable pairs
-  minimize(): { states: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> } {
+  minimize(): { states: Set&lt;string&gt;; transitions: Map&lt;string, string&gt;; start: string; accept: Set&lt;string&gt; } {
     const stateList = [...this.states];
-    const marked = new Set<string>();
+    const marked = new Set&lt;string&gt;();
 
     // Phase 1: mark (accept, non-accept) pairs
-    for (let i = 0; i < stateList.length; i++) {
-      for (let j = i + 1; j < stateList.length; j++) {
+    for (let i = 0; i &lt; stateList.length; i++) {
+      for (let j = i + 1; j &lt; stateList.length; j++) {
         const si = stateList[i], sj = stateList[j];
         if (this.accept.has(si) !== this.accept.has(sj)) {
           marked.add(`${si},${sj}`);
@@ -760,8 +760,8 @@ class DFAMinimizer {
     let changed = true;
     while (changed) {
       changed = false;
-      for (let i = 0; i < stateList.length; i++) {
-        for (let j = i + 1; j < stateList.length; j++) {
+      for (let i = 0; i &lt; stateList.length; i++) {
+        for (let j = i + 1; j &lt; stateList.length; j++) {
           const pair = `${stateList[i]},${stateList[j]}`;
           if (marked.has(pair)) continue;
           for (const sym of this.alphabet) {
@@ -777,16 +777,16 @@ class DFAMinimizer {
     }
 
     // Phase 3: build merged states from unmarked pairs
-    const unmarked = new Set<string>();
-    for (let i = 0; i < stateList.length; i++) {
-      for (let j = i + 1; j < stateList.length; j++) {
+    const unmarked = new Set&lt;string&gt;();
+    for (let i = 0; i &lt; stateList.length; i++) {
+      for (let j = i + 1; j &lt; stateList.length; j++) {
         if (!marked.has(`${stateList[i]},${stateList[j]}`)) {
           unmarked.add(`${stateList[i]},${stateList[j]}`);
         }
       }
     }
 
-    const parent = new Map<string, string>();
+    const parent = new Map&lt;string, string&gt;();
     for (const s of stateList) parent.set(s, s);
 
     const find = (x: string): string => {
@@ -802,8 +802,8 @@ class DFAMinimizer {
 
     // Build new transition table
     const mergedStates = new Set([...new Set(stateList.map(s => find(s)))]);
-    const newTrans = new Map<string, string>();
-    const newAccept = new Set<string>();
+    const newTrans = new Map&lt;string, string&gt;();
+    const newAccept = new Set&lt;string&gt;();
 
     for (const s of mergedStates) {
       if (this.accept.has(s)) newAccept.add(s);
@@ -824,14 +824,14 @@ class DFAMinimizer {
 
 class ProductDFABuilder {
   static buildProduct(
-    dfa1: { states: Set<string>; alphabet: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> },
-    dfa2: { states: Set<string>; alphabet: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> },
+    dfa1: { states: Set&lt;string&gt;; alphabet: Set&lt;string&gt;; transitions: Map&lt;string, string&gt;; start: string; accept: Set&lt;string&gt; },
+    dfa2: { states: Set&lt;string&gt;; alphabet: Set&lt;string&gt;; transitions: Map&lt;string, string&gt;; start: string; accept: Set&lt;string&gt; },
     acceptCondition: (s1: string, s2: string) => boolean
   ) {
-    const productStates = new Set<string>();
-    const productTrans = new Map<string, string>();
+    const productStates = new Set&lt;string&gt;();
+    const productTrans = new Map&lt;string, string&gt;();
     let productStart = `${dfa1.start},${dfa2.start}`;
-    const productAccept = new Set<string>();
+    const productAccept = new Set&lt;string&gt;();
 
     for (const s1 of dfa1.states) {
       for (const s2 of dfa2.states) {

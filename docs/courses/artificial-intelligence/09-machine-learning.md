@@ -803,7 +803,7 @@ print(f"Mean accuracy: {scores.mean():.3f} (+/- {scores.std() * 2:.3f})")
 **Approach:**
 - **Anomaly Detection** (Isolation Forest): Isolates outliers by randomly splitting features — frauds are few and different, so they are isolated in few splits.
 - **Supervised Classification** (XGBoost): Trained on historical flagged transactions.
-- **Challenges:** Extreme class imbalance (typically <0.1% are fraudulent).
+- **Challenges:** Extreme class imbalance (typically &lt;0.1% are fraudulent).
 
 **Python — Fraud Detection Pipeline:**
 ```python
@@ -931,7 +931,7 @@ Predict the price of a house based on its square footage.
 - C) The accuracy of the tree on training data
 - D) The depth of the resulting tree
 
-<details><summary>Answer</summary>B) Information gain measures the expected reduction in entropy from partitioning the data on a given attribute.</details>
+<details><summary>Answer&lt;/summary&gt;B) Information gain measures the expected reduction in entropy from partitioning the data on a given attribute.</details>
 
 **Q2:** A model with high bias and low variance is likely suffering from what?
 - A) Overfitting
@@ -939,7 +939,7 @@ Predict the price of a house based on its square footage.
 - C) Data leakage
 - D) The curse of dimensionality
 
-<details><summary>Answer</summary>B) High bias + low variance = underfitting (the model is too simple to capture the underlying patterns).</details>
+<details><summary>Answer&lt;/summary&gt;B) High bias + low variance = underfitting (the model is too simple to capture the underlying patterns).</details>
 
 **Q3:** Why should you never evaluate model performance on the training set?
 - A) It takes too long to compute
@@ -947,7 +947,7 @@ Predict the price of a house based on its square footage.
 - C) Training data is typically too small
 - D) The test set is more important
 
-<details><summary>Answer</summary>B) Training set accuracy overestimates generalization because the model may have memorized noise (overfitting).</details>
+<details><summary>Answer&lt;/summary&gt;B) Training set accuracy overestimates generalization because the model may have memorized noise (overfitting).</details>
 
 **Q4:** What is the key difference between supervised and unsupervised learning?
 - A) Supervised learning is faster
@@ -955,7 +955,7 @@ Predict the price of a house based on its square footage.
 - C) Unsupervised learning requires a GPU
 - D) Supervised learning cannot handle images
 
-<details><summary>Answer</summary>B) Supervised learning trains on input-output pairs (labeled data), while unsupervised learning finds patterns in unlabeled data.</details>
+<details><summary>Answer&lt;/summary&gt;B) Supervised learning trains on input-output pairs (labeled data), while unsupervised learning finds patterns in unlabeled data.</details>
 
 **Q5:** In k-fold cross-validation, what does k=5 mean?
 - A) The model is trained 5 times with different algorithms
@@ -963,7 +963,7 @@ Predict the price of a house based on its square footage.
 - C) The model has 5 layers
 - D) The training runs for 5 epochs
 
-<details><summary>Answer</summary>B) The data is split into 5 equal folds. The model is trained on 4 folds and validated on the remaining fold, repeated 5 times.</details>
+<details><summary>Answer&lt;/summary&gt;B) The data is split into 5 equal folds. The model is trained on 4 folds and validated on the remaining fold, repeated 5 times.</details>
 
 ---
 

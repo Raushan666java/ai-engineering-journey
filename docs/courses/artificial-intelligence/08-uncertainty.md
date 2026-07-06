@@ -170,7 +170,7 @@ print("P(Weather):", p_weather)
 |--------|-----------|-----|
 | **Space (full joint)** | O(dâ¿) for n variables each with d values | Every combination must be stored → exponential explosion |
 | **Time (marginalize)** | O(dâ¿) | Must sum over all other dimensions |
-| **CPT representation (BN)** | O(n Ã— dáµ) where k = max parents | Only local parents; k << n in sparse graphs |
+| **CPT representation (BN)** | O(n Ã— dáµ) where k = max parents | Only local parents; k &lt;< n in sparse graphs |
 
 The full joint distribution is **impractical** beyond ~20 boolean variables (2Â²â° â‰ˆ 1 million entries). This is the **curse of dimensionality** and the primary motivation for Bayesian Networks.
 
@@ -867,7 +867,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 **System:** Email spam filters (Gmail, Outlook)
 **How:** P(Spam | Words) âˆ P(Spam) âˆ P(Word | Spam). Words are assumed conditionally independent given class.
 **Why Bayes:** Spam words change rapidly; Naive Bayes adapts by updating word probabilities from user feedback.
-**Impact:** ~99.9% of spam blocked, <0.1% false positives.
+**Impact:** ~99.9% of spam blocked, &lt;0.1% false positives.
 
 ### 2. Medical Diagnosis (Bayesian Networks)
 
@@ -881,7 +881,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 **System:** ASR systems (Siri, Google Speech, Whisper)
 **How:** HMMs are Bayesian Networks with hidden states (phonemes) and observed outputs (audio features). Viterbi algorithm computes most likely phoneme sequence.
 **Why Bayes:** Speech is ambiguous → "recognize" vs "wreck a nice" sound similar. Probabilistic reasoning disambiguates using language models.
-**Impact:** Word error rates dropped from ~30% (2000) to <5% (modern systems).
+**Impact:** Word error rates dropped from ~30% (2000) to &lt;5% (modern systems).
 
 ### 4. Fault Diagnosis (Bayesian Networks)
 
@@ -895,7 +895,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 **System:** Localization, mapping, tracking
 **How:** Robot maintains belief P(state | sensor_data, controls) using Bayes' Rule recursively (predict → update).
 **Why Bayes:** Unifies sensor noise, motion uncertainty, map uncertainty into a single belief distribution.
-**Impact:** Enables autonomous driving (localization at <10cm), drone navigation, warehouse robotics.
+**Impact:** Enables autonomous driving (localization at &lt;10cm), drone navigation, warehouse robotics.
 
 ---
 
@@ -931,7 +931,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 - C) Inductive reasoning
 - D) Abductive reasoning
 
-<details><summary>Answer</summary>B) Bayes' Rule computes P(cause|effect) from P(effect|cause) → diagnostic reasoning from evidence back to cause.</details>
+<details><summary>Answer&lt;/summary&gt;B) Bayes' Rule computes P(cause|effect) from P(effect|cause) → diagnostic reasoning from evidence back to cause.</details>
 
 **Q2:** What does the chain rule for Bayesian Networks state?
 - A) P(Xâ‚â€¦Xâ‚™) = âˆ P(Xáµ¢ | Parents(Xáµ¢))
@@ -939,7 +939,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 - C) P(A|B) = P(B|A)P(A)
 - D) P(A âˆ§ B) = P(A)P(B)
 
-<details><summary>Answer</summary>A) The BN chain rule factorizes the joint as the product of each node's probability conditioned on its parents.</details>
+<details><summary>Answer&lt;/summary&gt;A) The BN chain rule factorizes the joint as the product of each node's probability conditioned on its parents.</details>
 
 **Q3:** Variable elimination complexity depends on what?
 - A) Number of variables
@@ -947,7 +947,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 - C) Number of evidence variables
 - D) Number of CPT entries
 
-<details><summary>Answer</summary>B) Complexity is exponential in the treewidth → the size of the largest intermediate factor during elimination.</details>
+<details><summary>Answer&lt;/summary&gt;B) Complexity is exponential in the treewidth → the size of the largest intermediate factor during elimination.</details>
 
 **Q4:** Why does Naive Bayes work well for spam filtering despite its "naive" assumption?
 - A) It uses deep learning
@@ -955,7 +955,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 - C) It doesn't rely on word probabilities
 - D) It assumes all words are dependent
 
-<details><summary>Answer</summary>B) Naive Bayes's decision boundary is often correct even if probability estimates are off. It's also fast, handles high-dimensional features, and adapts to new spam patterns quickly.</details>
+<details><summary>Answer&lt;/summary&gt;B) Naive Bayes's decision boundary is often correct even if probability estimates are off. It's also fast, handles high-dimensional features, and adapts to new spam patterns quickly.</details>
 
 **Q5:** What is the main advantage of Bayesian Networks over the full joint distribution?
 - A) They are always faster to compute
@@ -963,7 +963,7 @@ If all paths between X and Y are blocked by Z, then X âŸ‚ Y | Z.
 - C) They don't need probability values
 - D) They never need inference
 
-<details><summary>Answer</summary>B) BNs factorize the joint distribution into local CPTs, requiring O(n Ã— 2áµ) parameters instead of O(2â¿) → a massive saving when each node has few parents.</details>
+<details><summary>Answer&lt;/summary&gt;B) BNs factorize the joint distribution into local CPTs, requiring O(n Ã— 2áµ) parameters instead of O(2â¿) → a massive saving when each node has few parents.</details>
 
 ---
 

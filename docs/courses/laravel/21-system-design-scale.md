@@ -829,28 +829,28 @@ routes:
    - B) Shard key selection
    - C) Total database size
    - D) Network bandwidth
-   <details><summary>Answer</summary>**B)** The shard key determines data distribution. A poor shard key causes hot spots and uneven load.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The shard key determines data distribution. A poor shard key causes hot spots and uneven load.</details>
 
 2. Which pattern is recommended for migrating from a monolith to services?
    - A) Big-bang rewrite
    - B) Strangler Fig
    - C) Fork and replace
    - D) Lift and shift
-   <details><summary>Answer</summary>**B)** The Strangler Fig pattern incrementally replaces components, reducing risk compared to a full rewrite.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** The Strangler Fig pattern incrementally replaces components, reducing risk compared to a full rewrite.</details>
 
 3. What distinguishes SLA, SLO, and SLI?
    - A) They are synonyms
    - B) SLA is commitment, SLO is target, SLI is measurement
    - C) SLA is internal, SLO is external
    - D) SLA is for uptime, SLO is for latency
-   <details><summary>Answer</summary>**B)** SLA is the contractual commitment, SLO is the internal target, SLI is the actual measured value.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** SLA is the contractual commitment, SLO is the internal target, SLI is the actual measured value.</details>
 
 4. What is the recommended approach for multi-region disaster recovery?
    - A) Active-active with all regions live
    - B) Active-passive with automated DNS failover
    - C) Single region with daily backups
    - D) Manual failover on incident
-   <details><summary>Answer</summary>**B)** Active-passive with automated DNS failover balances cost and recovery time for most applications.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** Active-passive with automated DNS failover balances cost and recovery time for most applications.</details>
 
 ## Summary
 - Enterprise-scale Laravel requires quantitative estimation: 10M users generates 3,700 peak QPS and 100+ TB storage

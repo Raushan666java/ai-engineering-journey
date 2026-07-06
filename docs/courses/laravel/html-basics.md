@@ -2530,7 +2530,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 
 | Topic | Key Point |
 |-------|-----------|
-| Document Structure | <!DOCTYPE html>, <html>, <head>, <body> |
+| Document Structure | <!DOCTYPE html>, &lt;html&gt;, &lt;head&gt;, &lt;body&gt; |
 | Semantic Elements | <header>, <nav>, <main>, <section>, <article>, <aside>, <footer> |
 | Form Inputs | text, email, password, number, date, file, checkbox, radio, select, textarea |
 | ARIA Roles | role="banner", "navigation", "main", "complementary", "contentinfo" |
@@ -2566,15 +2566,15 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) Enable JavaScript
 - D) Speed up page loading
 
-<details><summary>Answer</summary>B) Convey meaning and structure of content</details>
+<details><summary>Answer&lt;/summary&gt;B) Convey meaning and structure of content&lt;/details&gt;
 
 **Q2:** Which HTML element embeds video content?
-- A) <media>
+- A) &lt;media&gt;
 - B) <video>
-- C) <movie>
-- D) <film>
+- C) &lt;movie&gt;
+- D) &lt;film&gt;
 
-<details><summary>Answer</summary>B) <video></details>
+<details><summary>Answer&lt;/summary&gt;B) <video>&lt;/details&gt;
 
 **Q3:** What does the required attribute do on a form input?
 - A) Makes the field mandatory before submission
@@ -2582,7 +2582,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) Both A and B
 - D) None of the above
 
-<details><summary>Answer</summary>C) Both A and B</details>
+<details><summary>Answer&lt;/summary&gt;C) Both A and B&lt;/details&gt;
 
 **Q4:** What Blade directive is used for template inheritance?
 - A) @include
@@ -2590,7 +2590,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) @component
 - D) @each
 
-<details><summary>Answer</summary>B) @extends</details>
+<details><summary>Answer&lt;/summary&gt;B) @extends&lt;/details&gt;
 
 ---
 
@@ -2613,7 +2613,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 
 | Topic | Key Point |
 |-------|-----------|
-| Document Structure | <!DOCTYPE html>, <html>, <head>, <body> |
+| Document Structure | <!DOCTYPE html>, &lt;html&gt;, &lt;head&gt;, &lt;body&gt; |
 | Semantic Elements | <header>, <nav>, <main>, <section>, <article>, <aside>, <footer> |
 | Form Inputs | text, email, password, number, date, file, checkbox, radio, select, textarea |
 | ARIA Roles | role="banner", "navigation", "main", "complementary", "contentinfo" |
@@ -2643,15 +2643,15 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) Enable JavaScript
 - D) Speed up page loading
 
-<details><summary>Answer</summary>B) Convey meaning and structure of content</details>
+<details><summary>Answer&lt;/summary&gt;B) Convey meaning and structure of content&lt;/details&gt;
 
 **Q2:** Which HTML element embeds video content?
-- A) <media>
+- A) &lt;media&gt;
 - B) <video>
-- C) <movie>
-- D) <film>
+- C) &lt;movie&gt;
+- D) &lt;film&gt;
 
-<details><summary>Answer</summary>B) <video></details>
+<details><summary>Answer&lt;/summary&gt;B) <video>&lt;/details&gt;
 
 **Q3:** What does the required attribute do on a form input?
 - A) Makes the field mandatory before submission
@@ -2659,7 +2659,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) Both A and B
 - D) None of the above
 
-<details><summary>Answer</summary>C) Both A and B</details>
+<details><summary>Answer&lt;/summary&gt;C) Both A and B&lt;/details&gt;
 
 **Q4:** What Blade directive is used for template inheritance?
 - A) @include
@@ -2667,7 +2667,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) @component
 - D) @each
 
-<details><summary>Answer</summary>B) @extends</details>
+<details><summary>Answer&lt;/summary&gt;B) @extends&lt;/details&gt;
 
 ---
 
@@ -2690,7 +2690,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 
 | Topic | Key Point |
 |-------|-----------|
-| Document Structure | <!DOCTYPE html>, <html>, <head>, <body> |
+| Document Structure | <!DOCTYPE html>, &lt;html&gt;, &lt;head&gt;, &lt;body&gt; |
 | Semantic Elements | <header>, <nav>, <main>, <section>, <article>, <aside>, <footer> |
 | Form Inputs | text, email, password, number, date, file, checkbox, radio, select, textarea |
 | ARIA Roles | role="banner", "navigation", "main", "complementary", "contentinfo" |
@@ -2720,15 +2720,15 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) Enable JavaScript
 - D) Speed up page loading
 
-<details><summary>Answer</summary>B) Convey meaning and structure of content</details>
+<details><summary>Answer&lt;/summary&gt;B) Convey meaning and structure of content&lt;/details&gt;
 
 **Q2:** Which HTML element embeds video content?
-- A) <media>
+- A) &lt;media&gt;
 - B) <video>
-- C) <movie>
-- D) <film>
+- C) &lt;movie&gt;
+- D) &lt;film&gt;
 
-<details><summary>Answer</summary>B) <video></details>
+<details><summary>Answer&lt;/summary&gt;B) <video>&lt;/details&gt;
 
 **Q3:** What does the required attribute do on a form input?
 - A) Makes the field mandatory before submission
@@ -2736,7 +2736,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) Both A and B
 - D) None of the above
 
-<details><summary>Answer</summary>C) Both A and B</details>
+<details><summary>Answer&lt;/summary&gt;C) Both A and B&lt;/details&gt;
 
 **Q4:** What Blade directive is used for template inheritance?
 - A) @include
@@ -2744,7 +2744,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) @component
 - D) @each
 
-<details><summary>Answer</summary>B) @extends</details>
+<details><summary>Answer&lt;/summary&gt;B) @extends&lt;/details&gt;
 
 ---
 
@@ -2767,7 +2767,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 
 | Topic | Key Point |
 |-------|-----------|
-| Document Structure | <!DOCTYPE html>, <html>, <head>, <body> |
+| Document Structure | <!DOCTYPE html>, &lt;html&gt;, &lt;head&gt;, &lt;body&gt; |
 | Semantic Elements | <header>, <nav>, <main>, <section>, <article>, <aside>, <footer> |
 | Form Inputs | text, email, password, number, date, file, checkbox, radio, select, textarea |
 | ARIA Roles | role="banner", "navigation", "main", "complementary", "contentinfo" |
@@ -2797,15 +2797,15 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) Enable JavaScript
 - D) Speed up page loading
 
-<details><summary>Answer</summary>B) Convey meaning and structure of content</details>
+<details><summary>Answer&lt;/summary&gt;B) Convey meaning and structure of content&lt;/details&gt;
 
 **Q2:** Which HTML element embeds video content?
-- A) <media>
+- A) &lt;media&gt;
 - B) <video>
-- C) <movie>
-- D) <film>
+- C) &lt;movie&gt;
+- D) &lt;film&gt;
 
-<details><summary>Answer</summary>B) <video></details>
+<details><summary>Answer&lt;/summary&gt;B) <video>&lt;/details&gt;
 
 **Q3:** What does the required attribute do on a form input?
 - A) Makes the field mandatory before submission
@@ -2813,7 +2813,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) Both A and B
 - D) None of the above
 
-<details><summary>Answer</summary>C) Both A and B</details>
+<details><summary>Answer&lt;/summary&gt;C) Both A and B&lt;/details&gt;
 
 **Q4:** What Blade directive is used for template inheritance?
 - A) @include
@@ -2821,7 +2821,7 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 - C) @component
 - D) @each
 
-<details><summary>Answer</summary>B) @extends</details>
+<details><summary>Answer&lt;/summary&gt;B) @extends&lt;/details&gt;
 
 ## Summary
 

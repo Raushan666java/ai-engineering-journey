@@ -443,7 +443,7 @@ This pipeline is exactly what lexer generators (lex, flex) and regex libraries i
 - D) Matches one or more repetitions
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** r* = {e} ? {r} ? {rr} ? ... — zero or more repetitions.
 </details>
 
@@ -454,7 +454,7 @@ This pipeline is exactly what lexer generators (lex, flex) and regex libraries i
 - D) Entire expression
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Star has highest precedence: ab*c = a(b*)c.
 </details>
 
@@ -465,7 +465,7 @@ This pipeline is exactly what lexer generators (lex, flex) and regex libraries i
 - D) Binary strings with only 0s
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** (0+1)* generates any binary string, then 0 forces it to end with 0.
 </details>
 
@@ -476,7 +476,7 @@ This pipeline is exactly what lexer generators (lex, flex) and regex libraries i
 - D) X = (AB)*
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** X = A*B is the unique solution when e ? A.
 </details>
 
@@ -487,7 +487,7 @@ This pipeline is exactly what lexer generators (lex, flex) and regex libraries i
 - D) Only with backreferences
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** { anbn } is not regular — no regex can match balanced pairs without counting.
 </details>
 
@@ -684,15 +684,15 @@ class ThompsonConstruction {
   // Build NFA from a regex in postfix notation
   // Operators: . = concat, | = union, * = star
   static toNFA(postfix: string): {
-    states: Set<string>; alphabet: Set<string>;
-    transitions: Map<string, Set<string>>;
-    epsilon: Map<string, Set<string>>;
-    start: string; accept: Set<string>;
+    states: Set&lt;string&gt;; alphabet: Set&lt;string&gt;;
+    transitions: Map&lt;string, Set<string&gt;>;
+    epsilon: Map&lt;string, Set<string&gt;>;
+    start: string; accept: Set&lt;string&gt;;
   } {
-    const stack: Array<{
-      start: string; accept: Set<string>;
-      states: Set<string>; trans: Map<string, Set<string>>;
-      epsilon: Map<string, Set<string>>;
+    const stack: Array&lt;{
+      start: string; accept: Set&lt;string&gt;;
+      states: Set&lt;string&gt;; trans: Map&lt;string, Set<string&gt;>;
+      epsilon: Map&lt;string, Set<string&gt;>;
     }> = [];
     let stateCounter = 0;
     const newState = () => `q${stateCounter++}`;
@@ -747,7 +747,7 @@ class ThompsonConstruction {
         // Single character
         const s = newState();
         const a = newState();
-        const trans = new Map<string, Set<string>>();
+        const trans = new Map&lt;string, Set<string&gt;>();
         trans.set(`${s},${ch}`, new Set([a]));
         stack.push({
           start: s, accept: new Set([a]),

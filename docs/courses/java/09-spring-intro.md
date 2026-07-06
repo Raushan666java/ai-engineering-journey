@@ -3178,7 +3178,7 @@ class HelloWorldApplicationTests {
    - D) @SpringBootConfiguration, @ComponentScan, @EnableAutoConfiguration
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **D) @SpringBootConfiguration, @ComponentScan, @EnableAutoConfiguration.** @SpringBootApplication is a convenience annotation that composes these three.
 </details>
 
@@ -3189,7 +3189,7 @@ class HelloWorldApplicationTests {
    - D) Netty
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) Tomcat.** Spring Boot defaults to Tomcat but can be swapped to Jetty or Undertow by excluding Tomcat and including the desired starter.
 </details>
 
@@ -3200,7 +3200,7 @@ class HelloWorldApplicationTests {
    - D) Write all files from scratch
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Spring Initializr (start.spring.io).** Initializr generates a correct project structure with the right dependencies, build configuration, and main class.
 </details>
 

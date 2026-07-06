@@ -383,7 +383,7 @@ cv2.imwrite("output/blue_objects.png", result)
 ### Edge Cases
 
 - **Low saturation:** Very desaturated colors (near-gray) have unstable H values — increase S threshold
-- **Low brightness:** Very dark pixels (V < 30) have noisy H — preprocess with histogram equalization
+- **Low brightness:** Very dark pixels (V &lt; 30) have noisy H — preprocess with histogram equalization
 - **Similar colors:** Overlapping HSV ranges (e.g., green and cyan) — use multiple ranges or LAB space
 - **Non-uniform lighting:** Shadows cause same object to span broad V range — normalize with CLAHE
 - **White balance shift:** Tungsten vs. daylight changes hue — calibrate bounds per environment
@@ -1141,7 +1141,7 @@ Haar processes ~300,000 window positions at 30+ FPS on CPU. DNN processes 1 blob
 - **Profile/side faces:** Haar cascade trained mainly on frontal faces — use DNN or multi-view cascades
 - **Faces with glasses/masks:** Reduces feature visibility — DNN handles better than Haar
 - **Extreme lighting:** Backlit or underexposed faces — preprocess with histogram equalization
-- **Small faces:** Faces < 30×30 pixels will not be detected — resize input or decrease minSize
+- **Small faces:** Faces &lt; 30×30 pixels will not be detected — resize input or decrease minSize
 - **Crowded scenes:** Overlapping faces merge into single detection — reduce minNeighbors
 - **False positives:** Textured regions (brick walls, foliage) trigger Haar — tighten minNeighbors to 8–10
 
@@ -1494,7 +1494,7 @@ IoU (Intersection over Union) = Area of Overlap / Area of Union of two bounding 
 - D. OpenCV images are always grayscale
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** OpenCV reads images in BGR (Blue-Green-Red) format. Use `cv2.cvtColor(img, cv2.COLOR_BGR2RGB)` before displaying with matplotlib.
 </details>
@@ -1507,7 +1507,7 @@ IoU (Intersection over Union) = Area of Overlap / Area of Union of two bounding 
 - D. `cv2.cornerHarris`
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** `cv2.warpPerspective` applies a perspective transform that can map the four corners of a photographed document to a rectangle, creating a flat scan.
 </details>
@@ -1520,7 +1520,7 @@ IoU (Intersection over Union) = Area of Overlap / Area of Union of two bounding 
 - D. It does not require OpenCV
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **C.** DNN-based detectors (SSD, YOLO) are more accurate, provide confidence scores, and handle varied poses better than Haar cascades, though they require more computational resources.
 </details>
@@ -1533,7 +1533,7 @@ IoU (Intersection over Union) = Area of Overlap / Area of Union of two bounding 
 - D. OpenCV can only decode BGR images
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** BGR was chosen for historical compatibility with early camera hardware and video codecs that natively used BGR byte order.
 </details>
@@ -1546,7 +1546,7 @@ IoU (Intersection over Union) = Area of Overlap / Area of Union of two bounding 
 - D. It speeds up the detection process
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** NMS selects the bounding box with highest confidence and suppresses all others with IoU above a threshold, ensuring one detection per object.
 </details>
@@ -1559,7 +1559,7 @@ IoU (Intersection over Union) = Area of Overlap / Area of Union of two bounding 
 - D. Box filter
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **B.** Median blur replaces each pixel with the median of its neighborhood, which effectively removes impulse noise (salt-and-pepper) without blurring edges as much as Gaussian blur.
 </details>

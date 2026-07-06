@@ -906,7 +906,7 @@ print(f"Winner: {report['recommendation']}")
 ---
 
 
-interface ProjectScaffold { name: string; files: Array<{path:string;content:string}> }
+interface ProjectScaffold { name: string; files: Array&lt;{path:string;content:string}&gt; }
 class ProjectGenerator {
   generateAIDemo(name: string): ProjectScaffold {
     return {name,files:[

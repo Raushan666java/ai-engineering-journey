@@ -2019,7 +2019,7 @@ class SlaMonitoringAgent
 - C) Close resolved tickets
 - D) Generate reports
 
-<details><summary>Answer</summary>B) Classify and route incoming tickets to the right department</details>
+<details><summary>Answer&lt;/summary&gt;B) Classify and route incoming tickets to the right department&lt;/details&gt;
 
 **Q2:** How does the AutoResponseAgent generate replies?
 - A) Uses fixed templates
@@ -2027,7 +2027,7 @@ class SlaMonitoringAgent
 - C) Copies previous replies
 - D) Random selection
 
-<details><summary>Answer</summary>B) LLM prompt chaining with knowledge base context</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM prompt chaining with knowledge base context&lt;/details&gt;
 
 **Q3:** What sentiment range does the SentimentAnalysisAgent use?
 - A) -1 to +1
@@ -2035,7 +2035,7 @@ class SlaMonitoringAgent
 - C) 1 to 10
 - D) A to F
 
-<details><summary>Answer</summary>B) 0.0 to 1.0</details>
+<details><summary>Answer&lt;/summary&gt;B) 0.0 to 1.0&lt;/details&gt;
 
 **Q4:** What does the EscalationAgent use to determine urgency?
 - A) Only ticket age
@@ -2043,7 +2043,7 @@ class SlaMonitoringAgent
 - C) Customer name
 - D) Random selection
 
-<details><summary>Answer</summary>B) SLA-based rules + AI urgency scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) SLA-based rules + AI urgency scoring&lt;/details&gt;
 
 ---
 
@@ -2094,7 +2094,7 @@ class SlaMonitoringAgent
 - C) Close resolved tickets
 - D) Generate reports
 
-<details><summary>Answer</summary>B) Classify and route incoming tickets to the right department</details>
+<details><summary>Answer&lt;/summary&gt;B) Classify and route incoming tickets to the right department&lt;/details&gt;
 
 **Q2:** How does the AutoResponseAgent generate replies?
 - A) Uses fixed templates
@@ -2102,7 +2102,7 @@ class SlaMonitoringAgent
 - C) Copies previous replies
 - D) Random selection
 
-<details><summary>Answer</summary>B) LLM prompt chaining with knowledge base context</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM prompt chaining with knowledge base context&lt;/details&gt;
 
 **Q3:** What sentiment range does the SentimentAnalysisAgent use?
 - A) -1 to +1
@@ -2110,7 +2110,7 @@ class SlaMonitoringAgent
 - C) 1 to 10
 - D) A to F
 
-<details><summary>Answer</summary>B) 0.0 to 1.0</details>
+<details><summary>Answer&lt;/summary&gt;B) 0.0 to 1.0&lt;/details&gt;
 
 **Q4:** What does the EscalationAgent use to determine urgency?
 - A) Only ticket age
@@ -2118,7 +2118,7 @@ class SlaMonitoringAgent
 - C) Customer name
 - D) Random selection
 
-<details><summary>Answer</summary>B) SLA-based rules + AI urgency scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) SLA-based rules + AI urgency scoring&lt;/details&gt;
 
 ---
 
@@ -2169,7 +2169,7 @@ class SlaMonitoringAgent
 - C) Close resolved tickets
 - D) Generate reports
 
-<details><summary>Answer</summary>B) Classify and route incoming tickets to the right department</details>
+<details><summary>Answer&lt;/summary&gt;B) Classify and route incoming tickets to the right department&lt;/details&gt;
 
 **Q2:** How does the AutoResponseAgent generate replies?
 - A) Uses fixed templates
@@ -2177,7 +2177,7 @@ class SlaMonitoringAgent
 - C) Copies previous replies
 - D) Random selection
 
-<details><summary>Answer</summary>B) LLM prompt chaining with knowledge base context</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM prompt chaining with knowledge base context&lt;/details&gt;
 
 **Q3:** What sentiment range does the SentimentAnalysisAgent use?
 - A) -1 to +1
@@ -2185,7 +2185,7 @@ class SlaMonitoringAgent
 - C) 1 to 10
 - D) A to F
 
-<details><summary>Answer</summary>B) 0.0 to 1.0</details>
+<details><summary>Answer&lt;/summary&gt;B) 0.0 to 1.0&lt;/details&gt;
 
 **Q4:** What does the EscalationAgent use to determine urgency?
 - A) Only ticket age
@@ -2193,7 +2193,7 @@ class SlaMonitoringAgent
 - C) Customer name
 - D) Random selection
 
-<details><summary>Answer</summary>B) SLA-based rules + AI urgency scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) SLA-based rules + AI urgency scoring&lt;/details&gt;
 
 ---
 
@@ -2244,7 +2244,7 @@ class SlaMonitoringAgent
 - C) Close resolved tickets
 - D) Generate reports
 
-<details><summary>Answer</summary>B) Classify and route incoming tickets to the right department</details>
+<details><summary>Answer&lt;/summary&gt;B) Classify and route incoming tickets to the right department&lt;/details&gt;
 
 **Q2:** How does the AutoResponseAgent generate replies?
 - A) Uses fixed templates
@@ -2252,7 +2252,7 @@ class SlaMonitoringAgent
 - C) Copies previous replies
 - D) Random selection
 
-<details><summary>Answer</summary>B) LLM prompt chaining with knowledge base context</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM prompt chaining with knowledge base context&lt;/details&gt;
 
 **Q3:** What sentiment range does the SentimentAnalysisAgent use?
 - A) -1 to +1
@@ -2260,7 +2260,7 @@ class SlaMonitoringAgent
 - C) 1 to 10
 - D) A to F
 
-<details><summary>Answer</summary>B) 0.0 to 1.0</details>
+<details><summary>Answer&lt;/summary&gt;B) 0.0 to 1.0&lt;/details&gt;
 
 **Q4:** What does the EscalationAgent use to determine urgency?
 - A) Only ticket age
@@ -2268,7 +2268,7 @@ class SlaMonitoringAgent
 - C) Customer name
 - D) Random selection
 
-<details><summary>Answer</summary>B) SLA-based rules + AI urgency scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) SLA-based rules + AI urgency scoring&lt;/details&gt;
 
 ## Summary
 

@@ -865,7 +865,7 @@ $reranked = Reranking::of($results, $originalQuery)->take(5);
 - C) A patient portal
 - D) A scheduling system
 
-<details><summary>Answer</summary>B) An interoperability standard for healthcare APIs</details>
+<details><summary>Answer&lt;/summary&gt;B) An interoperability standard for healthcare APIs&lt;/details&gt;
 
 **Q2:** What is the most important consideration for patient data models?
 - A) Performance
@@ -873,7 +873,7 @@ $reranked = Reranking::of($results, $originalQuery)->take(5);
 - C) UI design
 - D) API documentation
 
-<details><summary>Answer</summary>B) PHI protection and encryption</details>
+<details><summary>Answer&lt;/summary&gt;B) PHI protection and encryption&lt;/details&gt;
 
 **Q3:** Which compliance framework applies to US healthcare applications?
 - A) GDPR
@@ -881,7 +881,7 @@ $reranked = Reranking::of($results, $originalQuery)->take(5);
 - C) PCI-DSS
 - D) SOC-2
 
-<details><summary>Answer</summary>B) HIPAA</details>
+<details><summary>Answer&lt;/summary&gt;B) HIPAA&lt;/details&gt;
 
 **Q4:** What does telemedicine enable?
 - A) Only phone consultations
@@ -889,4 +889,4 @@ $reranked = Reranking::of($results, $originalQuery)->take(5);
 - C) Only email communication
 - D) In-person visits only
 
-<details><summary>Answer</summary>B) Virtual healthcare delivery with video + chat</details>
+<details><summary>Answer&lt;/summary&gt;B) Virtual healthcare delivery with video + chat&lt;/details&gt;

@@ -119,7 +119,7 @@ signal(Semaphore S):
 | 1 | T1 | wait(S) | 1 | S > 0, proceed | 0 | [] | [T1] |
 | 2 | T2 | wait(S) | 0 | S == 0, BLOCK | -1 | [T2] | [T1] |
 | 3 | T1 | signal(S) | -1 | queue non-empty, wake T2 | 0 | [] | [T2] |
-| 4 | T2 | (resumes) | 0 | S <= 0, but woken by signal | - | - | - |
+| 4 | T2 | (resumes) | 0 | S &lt;= 0, but woken by signal | - | - | - |
 
 **C++ Implementation:**
 
@@ -1116,7 +1116,7 @@ for t in threads: t.join()
 
 1. Customer arrives at barbershop
 2. Customer calls `wait(mutex)` to check waiting chairs
-3. If waiting customers < N:
+3. If waiting customers &lt; N:
    - Increment `waiting_customers`
    - Customer sits in waiting chair
    - Customer calls `signal(mutex)`
@@ -2285,7 +2285,7 @@ However, the difference is small for uncontended cases. For heavily contended ca
 | **Semaphore S** | Integer variable accessed atomically via `wait(S)` and `signal(S)` |
 | **Binary Semaphore** | Semaphore with values 0 or 1 only |
 | **Counting Semaphore** | Semaphore with integer range >= 0 |
-| **wait(S)** (P) | Decrement S; block if S <= 0 |
+| **wait(S)** (P) | Decrement S; block if S &lt;= 0 |
 | **signal(S)** (V) | Increment S; wake blocked thread if any |
 | **Monitor** | Abstract data type with mutual exclusion + condition variables |
 | **Condition Variable** | Queue of threads waiting for a specific predicate |

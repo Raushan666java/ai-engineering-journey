@@ -1376,7 +1376,7 @@ if __name__ == "__main__":
 
 ### Q3: Explain the difference between WiFi handoff and cellular handover.
 
-**Answer**: WiFi handoff (roaming) is client-initiated and can take 50-500 ms. The client decides when to disassociate from one AP and associate with another. Cellular handover is network-controlled → the base stations and core network coordinate the transition. LTE hard handover takes 10-50 ms; 5G targets <1 ms handover interruption for uRLLC services. Cellular handover is seamless and transparent to the user.
+**Answer**: WiFi handoff (roaming) is client-initiated and can take 50-500 ms. The client decides when to disassociate from one AP and associate with another. Cellular handover is network-controlled → the base stations and core network coordinate the transition. LTE hard handover takes 10-50 ms; 5G targets &lt;1 ms handover interruption for uRLLC services. Cellular handover is seamless and transparent to the user.
 
 ### Q4: How does MIMO improve wireless performance?
 
@@ -1397,7 +1397,7 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 
 ### Q7: What is the range vs. rate trade-off in wireless?
 
-**Answer**: As data rate increases, range decreases (for the same transmit power). Higher-order modulation (e.g., 64-QAM → 256-QAM) requires higher SNR to maintain the same BER. At the cell edge, WiFi and cellular fall back to robust modulation (BPSK, QPSK) at lower rates. For WiFi 6: 1024-QAM MCS 11 requires ~32 dB SNR for <10% PER; BPSK MCS 0 requires ~5 dB SNR. This is why you get 9.6 Gbps standing next to the AP but only 10-50 Mbps at the far end of your house.
+**Answer**: As data rate increases, range decreases (for the same transmit power). Higher-order modulation (e.g., 64-QAM → 256-QAM) requires higher SNR to maintain the same BER. At the cell edge, WiFi and cellular fall back to robust modulation (BPSK, QPSK) at lower rates. For WiFi 6: 1024-QAM MCS 11 requires ~32 dB SNR for &lt;10% PER; BPSK MCS 0 requires ~5 dB SNR. This is why you get 9.6 Gbps standing next to the AP but only 10-50 Mbps at the far end of your house.
 
 ## 12.12 Applications in Real Systems
 
@@ -1409,13 +1409,13 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 - TWT extends client battery life → IoT sensors negotiate wake windows of 10 minutes instead of checking every 100 ms beacon.
 - Target: 500 Mbps per user during peak load.
 
-**WiFi 7 AR/VR**: 320 MHz channels in 6 GHz deliver 5+ Gbps to each headset with <2 ms latency. Multi-link operation (MLO) bonds 2.4 GHz (control) + 5 GHz (data) + 6 GHz (high-throughput) simultaneously. Preamble puncturing avoids interference from existing WiFi 6 deployments in the 6 GHz band.
+**WiFi 7 AR/VR**: 320 MHz channels in 6 GHz deliver 5+ Gbps to each headset with &lt;2 ms latency. Multi-link operation (MLO) bonds 2.4 GHz (control) + 5 GHz (data) + 6 GHz (high-throughput) simultaneously. Preamble puncturing avoids interference from existing WiFi 6 deployments in the 6 GHz band.
 
 ### 12.12.2 Cellular Infrastructure
 
 **Fixed Wireless Access (FWA)**: 5G NR replaces fiber-to-the-home. A customer's premises equipment (CPE) connects to a gNB up to 15 km away (sub-6 GHz) or 500 m (mmWave). Typical throughput: 300 Mbps-1 Gbps, enough for 4K streaming, video calls, and home office. Trials in Germany and the US show FWA as the fastest-growing 5G use case (20M+ subscribers in the US by 2024).
 
-**Private 5G (NPN)**: A factory deploys a private 5G network (3.7-4.2 GHz CBRS in the US, n77/n78 in Europe). uRLLC slice for robotic arm control (99.999% reliability, <1 ms) and mMTC slice for 10,000 environmental sensors. 5G LAN functionality provides device-to-device communication without traversing the core.
+**Private 5G (NPN)**: A factory deploys a private 5G network (3.7-4.2 GHz CBRS in the US, n77/n78 in Europe). uRLLC slice for robotic arm control (99.999% reliability, &lt;1 ms) and mMTC slice for 10,000 environmental sensors. 5G LAN functionality provides device-to-device communication without traversing the core.
 
 ### 12.12.3 IoT Wireless Technologies
 
@@ -1512,7 +1512,7 @@ Roaming allows a mobile device to connect to a visited network. The visited netw
 | Smart home sensors | Zigbee/Thread | Mesh, low power, local control |
 | Smart city parking | LoRaWAN | 15 km, 10-year battery |
 | Factory automation | Private 5G (uRLLC) | 1 ms, 99.999% reliability |
-| AR/VR headset | WiFi 7 (6 GHz) | 5+ Gbps, <2 ms latency |
+| AR/VR headset | WiFi 7 (6 GHz) | 5+ Gbps, &lt;2 ms latency |
 | Wireless headset | Bluetooth LE Audio | Low power, LC3 codec quality |
 
 ## Chapter Quiz

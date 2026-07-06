@@ -141,16 +141,16 @@ Properties:
 **Ceiling function:** $\lceil x \rceil$ = the least integer $\geq x$.
 
 **Properties of floor and ceiling:**
-- $\lfloor x \rfloor \leq x < \lfloor x \rfloor + 1$
-- $\lceil x \rceil - 1 < x \leq \lceil x \rceil$
+- $\lfloor x \rfloor \leq x &lt; \lfloor x \rfloor + 1$
+- $\lceil x \rceil - 1 &lt; x \leq \lceil x \rceil$
 - $\lfloor -x \rfloor = -\lceil x \rceil$
-- $\lfloor x \rfloor = n$ iff $n \leq x < n+1$
-- $\lceil x \rceil = n$ iff $n-1 < x \leq n$
-- $x - 1 < \lfloor x \rfloor \leq x \leq \lceil x \rceil < x + 1$
+- $\lfloor x \rfloor = n$ iff $n \leq x &lt; n+1$
+- $\lceil x \rceil = n$ iff $n-1 &lt; x \leq n$
+- $x - 1 &lt; \lfloor x \rfloor \leq x \leq \lceil x \rceil < x + 1$
 
 **Factorial:** $n! = n \cdot (n-1) \cdots 2 \cdot 1$, with $0! = 1$.
 
-**Mod function:** $a \bmod m$ = the remainder when $a$ is divided by $m$ (integer $r$ with $0 \leq r < m$ and $a = qm + r$).
+**Mod function:** $a \bmod m$ = the remainder when $a$ is divided by $m$ (integer $r$ with $0 \leq r &lt; m$ and $a = qm + r$).
 
 **Stirling's approximation:** $n! \sim \sqrt{2\pi n}\,(n/e)^n$.
 
@@ -263,35 +263,35 @@ Recursive definitions require base case(s) and a recursive rule that eventually 
    - B) $f(n) = 2n$
    - C) $f(n) = n + 1$
    - D) $f(n) = n \bmod 2$
-   <details><summary>Answer</summary>**C)** $f(n) = n + 1$ ? it is injective ($n+1 = m+1 \implies n=m$) and surjective (for any $y$, let $n = y-1$), hence bijective.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $f(n) = n + 1$ ? it is injective ($n+1 = m+1 \implies n=m$) and surjective (for any $y$, let $n = y-1$), hence bijective.</details>
 
 2. What is the growth rate of $f(n) = n \log n + \sqrt{n}$?
    - A) $\Theta(\sqrt{n})$
    - B) $\Theta(n)$
    - C) $\Theta(n \log n)$
    - D) $\Theta(\log n)$
-   <details><summary>Answer</summary>**C)** $\Theta(n \log n)$ ? $n \log n$ dominates $\sqrt{n}$ asymptotically.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** $\Theta(n \log n)$ ? $n \log n$ dominates $\sqrt{n}$ asymptotically.</details>
 
 3. Compute $\lfloor -3.14 \rfloor$.
    - A) $-3$
    - B) $-4$
    - C) $3$
    - D) $4$
-   <details><summary>Answer</summary>**B)** $-4$ ? floor rounds **down** toward $-\infty$, so $-3.14$ goes to $-4$.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $-4$ ? floor rounds **down** toward $-\infty$, so $-3.14$ goes to $-4$.</details>
 
 4. If $g \circ f$ is injective, what can we conclude?
    - A) Both $f$ and $g$ are injective
    - B) $f$ is injective
    - C) $g$ is injective
    - D) $f$ is surjective
-   <details><summary>Answer</summary>**B)** If $g \circ f$ is injective, then $f$ must be injective (but $g$ may not be).</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** If $g \circ f$ is injective, then $f$ must be injective (but $g$ may not be).</details>
 
 5. Stirling's approximation approximates:
    - A) The floor function
    - B) The factorial function
    - C) The ceiling function
    - D) The mod function
-   <details><summary>Answer</summary>**B)** $n! \sim \sqrt{2\pi n}(n/e)^n$ approximates the factorial.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** $n! \sim \sqrt{2\pi n}(n/e)^n$ approximates the factorial.</details>
 
 ## Examples
 
@@ -521,11 +521,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -533,7 +533,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -559,7 +559,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -577,23 +577,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'discrete-math demo')
   const log = new Logger()
@@ -738,7 +738,7 @@ flowchart LR
 $$\chi_A(x) = \begin{cases} 1 & \text{if } x \in A \\ 0 & \text{if } x \notin A \end{cases}$$
 
 **Definition 8.15 (Signum Function).**
-$$\text{sgn}(x) = \begin{cases} -1 & \text{if } x < 0 \\ 0 & \text{if } x = 0 \\ 1 & \text{if } x > 0 \end{cases}$$
+$$\text{sgn}(x) = \begin{cases} -1 & \text{if } x &lt; 0 \\ 0 & \text{if } x = 0 \\ 1 & \text{if } x &gt; 0 \end{cases}$$
 
 ```typescript
 function sgn(x: number): -1 | 0 | 1 {

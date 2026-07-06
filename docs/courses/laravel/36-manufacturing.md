@@ -2366,7 +2366,7 @@ class EquipmentLifecycleAgent
 - C) Manual inspection schedules
 - D) Equipment age only
 
-<details><summary>Answer</summary>B) Time-series analysis + anomaly detection</details>
+<details><summary>Answer&lt;/summary&gt;B) Time-series analysis + anomaly detection&lt;/details&gt;
 
 **Q2:** How does the QualityControlAgent detect defects?
 - A) Manual inspection
@@ -2374,7 +2374,7 @@ class EquipmentLifecycleAgent
 - C) Random sampling
 - D) Customer complaints
 
-<details><summary>Answer</summary>B) Computer vision + classification models</details>
+<details><summary>Answer&lt;/summary&gt;B) Computer vision + classification models&lt;/details&gt;
 
 **Q3:** What does the ProductionSchedulerAgent optimize?
 - A) Only machine utilization
@@ -2382,7 +2382,7 @@ class EquipmentLifecycleAgent
 - C) Only labor allocation
 - D) Only material costs
 
-<details><summary>Answer</summary>B) Production schedules using constraint optimization</details>
+<details><summary>Answer&lt;/summary&gt;B) Production schedules using constraint optimization&lt;/details&gt;
 
 **Q4:** What does the InventoryOptimizerAgent calculate?
 - A) Maximum storage capacity
@@ -2390,7 +2390,7 @@ class EquipmentLifecycleAgent
 - C) Warehouse rental cost
 - D) Shipping rates
 
-<details><summary>Answer</summary>B) Reorder points + safety stock levels</details>
+<details><summary>Answer&lt;/summary&gt;B) Reorder points + safety stock levels&lt;/details&gt;
 
 ---
 
@@ -2442,7 +2442,7 @@ class EquipmentLifecycleAgent
 - C) Manual inspection schedules
 - D) Equipment age only
 
-<details><summary>Answer</summary>B) Time-series analysis + anomaly detection</details>
+<details><summary>Answer&lt;/summary&gt;B) Time-series analysis + anomaly detection&lt;/details&gt;
 
 **Q2:** How does the QualityControlAgent detect defects?
 - A) Manual inspection
@@ -2450,7 +2450,7 @@ class EquipmentLifecycleAgent
 - C) Random sampling
 - D) Customer complaints
 
-<details><summary>Answer</summary>B) Computer vision + classification models</details>
+<details><summary>Answer&lt;/summary&gt;B) Computer vision + classification models&lt;/details&gt;
 
 **Q3:** What does the ProductionSchedulerAgent optimize?
 - A) Only machine utilization
@@ -2458,7 +2458,7 @@ class EquipmentLifecycleAgent
 - C) Only labor allocation
 - D) Only material costs
 
-<details><summary>Answer</summary>B) Production schedules using constraint optimization</details>
+<details><summary>Answer&lt;/summary&gt;B) Production schedules using constraint optimization&lt;/details&gt;
 
 **Q4:** What does the InventoryOptimizerAgent calculate?
 - A) Maximum storage capacity
@@ -2466,7 +2466,7 @@ class EquipmentLifecycleAgent
 - C) Warehouse rental cost
 - D) Shipping rates
 
-<details><summary>Answer</summary>B) Reorder points + safety stock levels</details>
+<details><summary>Answer&lt;/summary&gt;B) Reorder points + safety stock levels&lt;/details&gt;
 
 ---
 
@@ -2518,7 +2518,7 @@ class EquipmentLifecycleAgent
 - C) Manual inspection schedules
 - D) Equipment age only
 
-<details><summary>Answer</summary>B) Time-series analysis + anomaly detection</details>
+<details><summary>Answer&lt;/summary&gt;B) Time-series analysis + anomaly detection&lt;/details&gt;
 
 **Q2:** How does the QualityControlAgent detect defects?
 - A) Manual inspection
@@ -2526,7 +2526,7 @@ class EquipmentLifecycleAgent
 - C) Random sampling
 - D) Customer complaints
 
-<details><summary>Answer</summary>B) Computer vision + classification models</details>
+<details><summary>Answer&lt;/summary&gt;B) Computer vision + classification models&lt;/details&gt;
 
 **Q3:** What does the ProductionSchedulerAgent optimize?
 - A) Only machine utilization
@@ -2534,7 +2534,7 @@ class EquipmentLifecycleAgent
 - C) Only labor allocation
 - D) Only material costs
 
-<details><summary>Answer</summary>B) Production schedules using constraint optimization</details>
+<details><summary>Answer&lt;/summary&gt;B) Production schedules using constraint optimization&lt;/details&gt;
 
 **Q4:** What does the InventoryOptimizerAgent calculate?
 - A) Maximum storage capacity
@@ -2542,7 +2542,7 @@ class EquipmentLifecycleAgent
 - C) Warehouse rental cost
 - D) Shipping rates
 
-<details><summary>Answer</summary>B) Reorder points + safety stock levels</details>
+<details><summary>Answer&lt;/summary&gt;B) Reorder points + safety stock levels&lt;/details&gt;
 
 ---
 
@@ -2594,7 +2594,7 @@ class EquipmentLifecycleAgent
 - C) Manual inspection schedules
 - D) Equipment age only
 
-<details><summary>Answer</summary>B) Time-series analysis + anomaly detection</details>
+<details><summary>Answer&lt;/summary&gt;B) Time-series analysis + anomaly detection&lt;/details&gt;
 
 **Q2:** How does the QualityControlAgent detect defects?
 - A) Manual inspection
@@ -2602,7 +2602,7 @@ class EquipmentLifecycleAgent
 - C) Random sampling
 - D) Customer complaints
 
-<details><summary>Answer</summary>B) Computer vision + classification models</details>
+<details><summary>Answer&lt;/summary&gt;B) Computer vision + classification models&lt;/details&gt;
 
 **Q3:** What does the ProductionSchedulerAgent optimize?
 - A) Only machine utilization
@@ -2610,7 +2610,7 @@ class EquipmentLifecycleAgent
 - C) Only labor allocation
 - D) Only material costs
 
-<details><summary>Answer</summary>B) Production schedules using constraint optimization</details>
+<details><summary>Answer&lt;/summary&gt;B) Production schedules using constraint optimization&lt;/details&gt;
 
 **Q4:** What does the InventoryOptimizerAgent calculate?
 - A) Maximum storage capacity
@@ -2618,7 +2618,7 @@ class EquipmentLifecycleAgent
 - C) Warehouse rental cost
 - D) Shipping rates
 
-<details><summary>Answer</summary>B) Reorder points + safety stock levels</details>
+<details><summary>Answer&lt;/summary&gt;B) Reorder points + safety stock levels&lt;/details&gt;
 
 ## Summary
 

@@ -603,15 +603,15 @@ console.log('Remediation steps:', detector.planRemediation(report.entries).join(
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is the purpose of Terraform workspaces?</summary>**A)** Manage multiple cloud providers<br>**B)** Isolate state for different environments with the same configuration<br>**C)** Share state across teams<br>**D)** Speed up Terraform execution<br><br>**Answer: B)** Isolate state for different environments with the same configuration</details>
+<details><summary>Question 1: What is the purpose of Terraform workspaces?</summary>**A)** Manage multiple cloud providers<br>**B)** Isolate state for different environments with the same configuration<br>**C)** Share state across teams<br>**D)** Speed up Terraform execution<br><br>**Answer: B)** Isolate state for different environments with the same configuration&lt;/details&gt;
 
-<details><summary>Question 2: What is a Terraform data source used for?</summary>**A)** Define new resources<br>**B)** Fetch information about existing infrastructure<br>**C)** Store secrets<br>**D)** Deploy applications<br><br>**Answer: B)** Fetch information about existing infrastructure</details>
+<details><summary>Question 2: What is a Terraform data source used for?</summary>**A)** Define new resources<br>**B)** Fetch information about existing infrastructure<br>**C)** Store secrets<br>**D)** Deploy applications<br><br>**Answer: B)** Fetch information about existing infrastructure&lt;/details&gt;
 
-<details><summary>Question 3: What does `prevent_destroy` do?</summary>**A)** Prevents accidental deletion of resources<br>**B)** Blocks terraform apply<br>**C)** Creates a backup before deletion<br>**D)** Locks the state file<br><br>**Answer: A)** Prevents accidental deletion of resources</details>
+<details><summary>Question 3: What does `prevent_destroy` do?</summary>**A)** Prevents accidental deletion of resources<br>**B)** Blocks terraform apply<br>**C)** Creates a backup before deletion<br>**D)** Locks the state file<br><br>**Answer: A)** Prevents accidental deletion of resources&lt;/details&gt;
 
-<details><summary>Question 4: What advantage does Pulumi have over Terraform?</summary>**A)** It supports more providers<br>**B)** It uses familiar programming languages instead of HCL<br>**C)** It is faster<br>**D)** It has better state management<br><br>**Answer: B)** It uses familiar programming languages instead of HCL</details>
+<details><summary>Question 4: What advantage does Pulumi have over Terraform?</summary>**A)** It supports more providers<br>**B)** It uses familiar programming languages instead of HCL<br>**C)** It is faster<br>**D)** It has better state management<br><br>**Answer: B)** It uses familiar programming languages instead of HCL&lt;/details&gt;
 
-<details><summary>Question 5: How does Terragrunt help with Terraform configurations?</summary>**A)** It adds new providers<br>**B)** It reduces duplication across multiple Terraform modules<br>**C)** It speeds up terraform apply<br>**D)** It provides a GUI<br><br>**Answer: B)** It reduces duplication across multiple Terraform modules</details>
+<details><summary>Question 5: How does Terragrunt help with Terraform configurations?</summary>**A)** It adds new providers<br>**B)** It reduces duplication across multiple Terraform modules<br>**C)** It speeds up terraform apply<br>**D)** It provides a GUI<br><br>**Answer: B)** It reduces duplication across multiple Terraform modules&lt;/details&gt;
 
 ---
 
@@ -843,11 +843,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -855,7 +855,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

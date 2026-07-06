@@ -2187,9 +2187,9 @@ composer run lint
 
 | Constraint | Meaning |
 |---|---|
-| `^1.2.3` | >=1.2.3, <2.0.0 (compatible with minor versions) |
-| `~1.2.3` | >=1.2.3, <1.3.0 (compatible with patch versions) |
-| `1.2.*` | >=1.2.0, <1.3.0 |
+| `^1.2.3` | >=1.2.3, &lt;2.0.0 (compatible with minor versions) |
+| `~1.2.3` | >=1.2.3, &lt;1.3.0 (compatible with patch versions) |
+| `1.2.*` | >=1.2.0, &lt;1.3.0 |
 | `>=1.2` | 1.2.0 or higher |
 | `1.2.3` | Exactly 1.2.3 |
 | `*` | Any version |
@@ -3388,7 +3388,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) let name
 - D) const name
 
-<details><summary>Answer</summary>B) $name</details>
+<details><summary>Answer&lt;/summary&gt;B) $name&lt;/details&gt;
 
 **Q2:** What does Composer's require command do?
 - A) Updates all packages
@@ -3396,7 +3396,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) Removes a package
 - D) Lists all packages
 
-<details><summary>Answer</summary>B) Adds a package as a dependency</details>
+<details><summary>Answer&lt;/summary&gt;B) Adds a package as a dependency&lt;/details&gt;
 
 **Q3:** Which keyword is used to implement an interface?
 - A) extends
@@ -3404,7 +3404,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) inherits
 - D) uses
 
-<details><summary>Answer</summary>B) implements</details>
+<details><summary>Answer&lt;/summary&gt;B) implements&lt;/details&gt;
 
 **Q4:** What is the purpose of namespaces in PHP?
 - A) Speed optimization
@@ -3412,7 +3412,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) Database connection
 - D) User authentication
 
-<details><summary>Answer</summary>B) Organize code and prevent class name collisions</details>
+<details><summary>Answer&lt;/summary&gt;B) Organize code and prevent class name collisions&lt;/details&gt;
 
 ---
 
@@ -3463,7 +3463,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) let name
 - D) const name
 
-<details><summary>Answer</summary>B) $name</details>
+<details><summary>Answer&lt;/summary&gt;B) $name&lt;/details&gt;
 
 **Q2:** What does Composer's require command do?
 - A) Updates all packages
@@ -3471,7 +3471,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) Removes a package
 - D) Lists all packages
 
-<details><summary>Answer</summary>B) Adds a package as a dependency</details>
+<details><summary>Answer&lt;/summary&gt;B) Adds a package as a dependency&lt;/details&gt;
 
 **Q3:** Which keyword is used to implement an interface?
 - A) extends
@@ -3479,7 +3479,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) inherits
 - D) uses
 
-<details><summary>Answer</summary>B) implements</details>
+<details><summary>Answer&lt;/summary&gt;B) implements&lt;/details&gt;
 
 **Q4:** What is the purpose of namespaces in PHP?
 - A) Speed optimization
@@ -3487,7 +3487,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) Database connection
 - D) User authentication
 
-<details><summary>Answer</summary>B) Organize code and prevent class name collisions</details>
+<details><summary>Answer&lt;/summary&gt;B) Organize code and prevent class name collisions&lt;/details&gt;
 
 ---
 
@@ -3538,7 +3538,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) let name
 - D) const name
 
-<details><summary>Answer</summary>B) $name</details>
+<details><summary>Answer&lt;/summary&gt;B) $name&lt;/details&gt;
 
 **Q2:** What does Composer's require command do?
 - A) Updates all packages
@@ -3546,7 +3546,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) Removes a package
 - D) Lists all packages
 
-<details><summary>Answer</summary>B) Adds a package as a dependency</details>
+<details><summary>Answer&lt;/summary&gt;B) Adds a package as a dependency&lt;/details&gt;
 
 **Q3:** Which keyword is used to implement an interface?
 - A) extends
@@ -3554,7 +3554,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) inherits
 - D) uses
 
-<details><summary>Answer</summary>B) implements</details>
+<details><summary>Answer&lt;/summary&gt;B) implements&lt;/details&gt;
 
 **Q4:** What is the purpose of namespaces in PHP?
 - A) Speed optimization
@@ -3562,7 +3562,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) Database connection
 - D) User authentication
 
-<details><summary>Answer</summary>B) Organize code and prevent class name collisions</details>
+<details><summary>Answer&lt;/summary&gt;B) Organize code and prevent class name collisions&lt;/details&gt;
 
 ---
 
@@ -3613,7 +3613,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) let name
 - D) const name
 
-<details><summary>Answer</summary>B) $name</details>
+<details><summary>Answer&lt;/summary&gt;B) $name&lt;/details&gt;
 
 **Q2:** What does Composer's require command do?
 - A) Updates all packages
@@ -3621,7 +3621,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) Removes a package
 - D) Lists all packages
 
-<details><summary>Answer</summary>B) Adds a package as a dependency</details>
+<details><summary>Answer&lt;/summary&gt;B) Adds a package as a dependency&lt;/details&gt;
 
 **Q3:** Which keyword is used to implement an interface?
 - A) extends
@@ -3629,7 +3629,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) inherits
 - D) uses
 
-<details><summary>Answer</summary>B) implements</details>
+<details><summary>Answer&lt;/summary&gt;B) implements&lt;/details&gt;
 
 **Q4:** What is the purpose of namespaces in PHP?
 - A) Speed optimization
@@ -3637,7 +3637,7 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 - C) Database connection
 - D) User authentication
 
-<details><summary>Answer</summary>B) Organize code and prevent class name collisions</details>
+<details><summary>Answer&lt;/summary&gt;B) Organize code and prevent class name collisions&lt;/details&gt;
 
 ## Summary
 

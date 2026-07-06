@@ -901,15 +901,15 @@ orchestrator.execute('staging', 'production').then(r => console.log(orchestrator
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is the difference between Continuous Delivery and Continuous Deployment?</summary>**A)** They are the same thing<br>**B)** CD requires manual approval for production; Continuous Deployment does not<br>**C)** Continuous Deployment requires more tests<br>**D)** CD only applies to mobile apps<br><br>**Answer: B)** CD requires manual approval for production; Continuous Deployment does not</details>
+<details><summary>Question 1: What is the difference between Continuous Delivery and Continuous Deployment?</summary>**A)** They are the same thing<br>**B)** CD requires manual approval for production; Continuous Deployment does not<br>**C)** Continuous Deployment requires more tests<br>**D)** CD only applies to mobile apps<br><br>**Answer: B)** CD requires manual approval for production; Continuous Deployment does not&lt;/details&gt;
 
-<details><summary>Question 2: Why should artifacts be built once and promoted?</summary>**A)** It saves build time<br>**B)** It guarantees the exact same binary in all environments<br>**C)** It uses less storage<br>**D)** It reduces network traffic<br><br>**Answer: B)** It guarantees the exact same binary in all environments</details>
+<details><summary>Question 2: Why should artifacts be built once and promoted?</summary>**A)** It saves build time<br>**B)** It guarantees the exact same binary in all environments<br>**C)** It uses less storage<br>**D)** It reduces network traffic<br><br>**Answer: B)** It guarantees the exact same binary in all environments&lt;/details&gt;
 
-<details><summary>Question 3: What is the purpose of pipeline caching?</summary>**A)** Store secrets<br>**B)** Speed up subsequent runs by reusing unchanged work<br>**C)** Archive old builds<br>**D)** Reduce the number of stages<br><br>**Answer: B)** Speed up subsequent runs by reusing unchanged work</details>
+<details><summary>Question 3: What is the purpose of pipeline caching?</summary>**A)** Store secrets<br>**B)** Speed up subsequent runs by reusing unchanged work<br>**C)** Archive old builds<br>**D)** Reduce the number of stages<br><br>**Answer: B)** Speed up subsequent runs by reusing unchanged work&lt;/details&gt;
 
-<details><summary>Question 4: Which authentication method is preferred for CI/CD cloud access?</summary>**A)** Long-lived access keys stored in secrets<br>**B)** OIDC with short-lived tokens<br>**C)** Username and password<br>**D)** SSH keys<br><br>**Answer: B)** OIDC with short-lived tokens</details>
+<details><summary>Question 4: Which authentication method is preferred for CI/CD cloud access?</summary>**A)** Long-lived access keys stored in secrets<br>**B)** OIDC with short-lived tokens<br>**C)** Username and password<br>**D)** SSH keys<br><br>**Answer: B)** OIDC with short-lived tokens&lt;/details&gt;
 
-<details><summary>Question 5: What does "fail fast" mean in pipeline design?</summary>**A)** Run expensive tests first<br>**B)** Run fast tests first to quickly identify failures<br>**C)** Always fail on the first step<br>**D)** Fail all jobs at once<br><br>**Answer: B)** Run fast tests first to quickly identify failures</details>
+<details><summary>Question 5: What does "fail fast" mean in pipeline design?</summary>**A)** Run expensive tests first<br>**B)** Run fast tests first to quickly identify failures<br>**C)** Always fail on the first step<br>**D)** Fail all jobs at once<br><br>**Answer: B)** Run fast tests first to quickly identify failures&lt;/details&gt;
 
 ---
 
@@ -922,11 +922,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -934,7 +934,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

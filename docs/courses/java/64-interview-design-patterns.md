@@ -25,7 +25,8 @@ flowchart LR
     C --> D[Best Practices]
 ```
 
-### Q1: What are the three categories of design patterns in the GoF book?
+### Q1: What are the three categories of design patterns in the GoF book?
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -3481,7 +3482,7 @@ The key insight: patterns are tools, not goals. Using patterns for their own sak
    - D) equals() is for primitives, == is for objects
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) equals() compares logical equality (overridable), == compares reference equality.**
 </details>
 
@@ -3492,7 +3493,7 @@ The key insight: patterns are tools, not goals. Using patterns for their own sak
    - D) HashSet
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
 </details>
 
@@ -3503,6 +3504,6 @@ The key insight: patterns are tools, not goals. Using patterns for their own sak
    - D) abstract
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) final.** A final method cannot be overridden by subclasses.
 </details>

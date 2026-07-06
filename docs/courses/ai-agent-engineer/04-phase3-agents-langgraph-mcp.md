@@ -1026,9 +1026,9 @@ Add at least 1 resource and 1 prompt template to your MCP memory server. Test wi
 
 interface PromptTemplate { name: string; template: string; variables: string[]; version: string }
 class PromptEngine {
-  private templates: Map<string,PromptTemplate> = new Map()
+  private templates: Map&lt;string,PromptTemplate&gt; = new Map()
   register(t: PromptTemplate): void { this.templates.set(t.name, t) }
-  render(name: string, vars: Record<string,string>): string {
+  render(name: string, vars: Record&lt;string,string&gt;): string {
     const t = this.templates.get(name); if(!t) throw new Error(`Template ${name} not found`)
     let result = t.template
     for(const v of t.variables) { if(vars[v] === undefined) throw new Error(`Variable ${v} not provided`); result = result.replace(`{{${v}}}`, vars[v]) }
@@ -1037,16 +1037,16 @@ class PromptEngine {
   listVersions(): string[] { return Array.from(this.templates.values()).map(t => `${t.name}@${t.version}`) }
   diff(t1: string, t2: string): string { const a = t1.split("\n"), b = t2.split("\n")
     const changes: string[] = []; const max = Math.max(a.length,b.length)
-    for(let i=0;i<max;i++) if(a[i] !== b[i]) changes.push(`L${i+1}: ${a[i]??""} | ${b[i]??""}`)
+    for(let i=0;i&lt;max;i++) if(a[i] !== b[i]) changes.push(`L${i+1}: ${a[i]??""} | ${b[i]??""}`)
     return changes.join("\n")
   }
 }
 class ChatComposer {
-  private system = ""; private examples: Array<{input:string;output:string}> = []
+  private system = ""; private examples: Array&lt;{input:string;output:string}&gt; = []
   setSystem(s: string): this { this.system = s; return this }
   addExample(input: string, output: string): this { this.examples.push({input,output}); return this }
-  compose(userInput: string): Array<{role:string;content:string}> {
-    const msgs: Array<{role:string;content:string}> = [{role:"system",content:this.system}]
+  compose(userInput: string): Array&lt;{role:string;content:string}&gt; {
+    const msgs: Array&lt;{role:string;content:string}&gt; = [{role:"system",content:this.system}]
     for(const ex of this.examples) { msgs.push({role:"user",content:ex.input}); msgs.push({role:"assistant",content:ex.output}) }
     msgs.push({role:"user",content:userInput}); return msgs
   }

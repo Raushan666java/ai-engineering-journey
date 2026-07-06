@@ -469,7 +469,7 @@ Bitwise operators are like a **bank of light switches**. Each bit is one switch:
 | `a | b` | 0110 1101 | 1011 0111 = **1111 1111** | 0xFF | 255 |
 | `a ^ b` | 0110 1101 ^ 1011 0111 = **1101 1010** | 0xDA | 218 |
 | `~a` | ~0110 1101 = **1001 0010** | 0x92 | 146 |
-| `a << 2` | 0110 1101 << 2 = **1011 0100** | 0xB4 | 180 |
+| `a << 2` | 0110 1101 &lt;< 2 = **1011 0100** | 0xB4 | 180 |
 | `a >> 3` | 0110 1101 >> 3 = **0000 1101** | 0x0D | 13 |
 
 ### 3.5.4 C Code Examples
@@ -1237,7 +1237,7 @@ Bytes of 0x12345678 (little-endian): 78 56 34 12
 
 1. **Narrowing cast** --- converting `double` to `int` loses fractional part; undefined if value out of range
 2. **Pointer cast and alignment** --- casting `char*` to `int*` on misaligned address may cause bus error
-3. **Signed <-> unsigned cast** --- bits are preserved, interpretation changes (e.g., -1 becomes UINT_MAX)
+3. **Signed &lt;-> unsigned cast** --- bits are preserved, interpretation changes (e.g., -1 becomes UINT_MAX)
 4. **`void*` cast** --- implicit conversion to/from `void*` is allowed in C (no cast needed)
 
 ---
@@ -1618,7 +1618,7 @@ if (state & ENTITY_ALIVE)    /* check alive */
 1. **What is the value of `10 & 6`?**
    A) 0 &emsp; B) 2 &emsp; C) 6 &emsp; D) 10
 
-<details><summary>Answer</summary>**B)** 10 decimal = 1010 binary, 6 = 0110 binary. 1010 & 0110 = 0010 = 2 decimal.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** 10 decimal = 1010 binary, 6 = 0110 binary. 1010 & 0110 = 0010 = 2 decimal.</details>
 
 2. **Why does `if (x = 5)` compile without error but behave unexpectedly?**
    A) It is a syntax error in C
@@ -1626,37 +1626,37 @@ if (state & ENTITY_ALIVE)    /* check alive */
    C) The compiler automatically converts to `x == 5`
    D) It causes undefined behavior
 
-<details><summary>Answer</summary>**B)** `x = 5` assigns 5 to x and returns 5, which is truthy. This is a common typo for `x == 5`.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `x = 5` assigns 5 to x and returns 5, which is truthy. This is a common typo for `x == 5`.</details>
 
 3. **Which operator has the highest precedence?**
    A) `+` &emsp; B) `*` &emsp; C) `()` &emsp; D) `&&`
 
-<details><summary>Answer</summary>**C)** Parentheses `()` have the highest precedence, followed by postfix operators.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Parentheses `()` have the highest precedence, followed by postfix operators.</details>
 
 4. **What does `1 << 2 + 3` evaluate to?**
    A) 7 &emsp; B) 10 &emsp; C) 32 &emsp; D) Undefined behavior
 
-<details><summary>Answer</summary>**C)** `+` has higher precedence than `<<`, so it's `1 << 5 = 32`.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `+` has higher precedence than `<<`, so it's `1 << 5 = 32`.</details>
 
 5. **What is the value of `-7 % 3` in C99+?**
    A) -1 &emsp; B) 1 &emsp; C) -2 &emsp; D) Undefined
 
-<details><summary>Answer</summary>**A)** In C99+, the remainder sign follows the dividend, so `-7 % 3 = -1`.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** In C99+, the remainder sign follows the dividend, so `-7 % 3 = -1`.</details>
 
 6. **If `int a = 0, b = 5;`, what does `a && (b = 99)` do to `b`?**
    A) Sets b to 99 &emsp; B) Leaves b as 5 &emsp; C) Undefined &emsp; D) Compiler error
 
-<details><summary>Answer</summary>**B)** Short-circuit: since `a` is 0 (false), `b = 99` is never evaluated.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Short-circuit: since `a` is 0 (false), `b = 99` is never evaluated.</details>
 
 7. **What is `sizeof(arr)` for `int arr[10];` on a 64-bit system with 4-byte ints?**
    A) 8 &emsp; B) 10 &emsp; C) 40 &emsp; D) 80
 
-<details><summary>Answer</summary>**C)** `sizeof(arr) = 10 * sizeof(int) = 10 * 4 = 40`.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `sizeof(arr) = 10 * sizeof(int) = 10 * 4 = 40`.</details>
 
 8. **Which of these is undefined behavior?** (Select all that apply.)
    A) `i = i++` &emsp; B) `i++ + ++i` &emsp; C) `i = 5, i = 10` &emsp; D) `a[i++] = i`
 
-<details><summary>Answer</summary>**A, B, D.** A and B modify `i` twice between sequence points. D violates the same rule. C is fine (comma creates a sequence point).</details>
+<details><summary>Answer&lt;/summary&gt;**A, B, D.** A and B modify `i` twice between sequence points. D violates the same rule. C is fine (comma creates a sequence point).</details>
 
 ---
 
@@ -1984,38 +1984,38 @@ int main(void)
 **9. What is the output of `int x = 5; printf("%d", x++ + ++x);`?**
    A) 10 &emsp; B) 11 &emsp; C) 12 &emsp; D) Undefined behavior
 
-<details><summary>Answer</summary>**D)** This is undefined behavior because `x` is modified twice between sequence points (both `x++` and `++x` modify `x`). The compiler may produce any result.</details>
+<details><summary>Answer&lt;/summary&gt;**D)** This is undefined behavior because `x` is modified twice between sequence points (both `x++` and `++x` modify `x`). The compiler may produce any result.</details>
 
 **10. Which operators have right-to-left associativity?**
     A) Assignment, ternary, unary &emsp; B) Arithmetic, relational &emsp; C) Bitwise, logical &emsp; D) Comma, postfix
 
-<details><summary>Answer</summary>**A)** Assignment (`=`, `+=`, etc.), ternary (`?:`), and unary operators (`++`, `--`, `!`, `~`, `*`, `&`, `sizeof`, `+`, `-`) have right-to-left associativity.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** Assignment (`=`, `+=`, etc.), ternary (`?:`), and unary operators (`++`, `--`, `!`, `~`, `*`, `&`, `sizeof`, `+`, `-`) have right-to-left associativity.</details>
 
 **11. What does `(x += 2) += 3` do?**
     A) Adds 5 to x &emsp; B) Adds 2 then 3 to x &emsp; C) Compiler error &emsp; D) Undefined behavior
 
-<details><summary>Answer</summary>**C)** `(x += 2)` is not an lvalue in C (it yields an rvalue). You cannot chain compound assignments this way. `x += 2; x += 3;` or `x += 5;` would work.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `(x += 2)` is not an lvalue in C (it yields an rvalue). You cannot chain compound assignments this way. `x += 2; x += 3;` or `x += 5;` would work.</details>
 
 **12. On a 64-bit system with 4-byte `int`, what is `sizeof("Hello")`?**
     A) 5 &emsp; B) 6 &emsp; C) 8 &emsp; D) 4
 
-<details><summary>Answer</summary>**B)** `"Hello"` is a `char[6]` array (5 characters + null terminator). `sizeof("Hello")` returns `6`, regardless of pointer size. This is a common interview question about arrays vs pointers.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `"Hello"` is a `char[6]` array (5 characters + null terminator). `sizeof("Hello")` returns `6`, regardless of pointer size. This is a common interview question about arrays vs pointers.</details>
 
 **13. What is the value of `(unsigned)(-1)`?**
     A) -1 &emsp; B) 1 &emsp; C) UINT_MAX &emsp; D) Implementation-defined
 
-<details><summary>Answer</summary>**C)** Converting `-1` (all bits set in two's complement) to unsigned gives the maximum unsigned value (`UINT_MAX`). For a 32-bit `unsigned int`, this is `4294967295` (0xFFFFFFFF).</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Converting `-1` (all bits set in two's complement) to unsigned gives the maximum unsigned value (`UINT_MAX`). For a 32-bit `unsigned int`, this is `4294967295` (0xFFFFFFFF).</details>
 
 **14. What does `3 * 4 + 5 * 6` evaluate to after operator precedence?**
     A) 42 &emsp; B) 120 &emsp; C) 102 &emsp; D) 57
 
-<details><summary>Answer</summary>**A)** Multiplication has higher precedence than addition: `(3 * 4) + (5 * 6) = 12 + 30 = 42`. This is the "Answer to the Ultimate Question of Life, the Universe, and Everything" according to Douglas Adams.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** Multiplication has higher precedence than addition: `(3 * 4) + (5 * 6) = 12 + 30 = 42`. This is the "Answer to the Ultimate Question of Life, the Universe, and Everything" according to Douglas Adams.</details>
 
 **15. Which is guaranteed to be a sequence point?**
     A) Between the `++` and the value in `x++` &emsp; B) After the first operand of `&&`
     C) Between the arguments of a function call &emsp; D) Before the `?` in `?:`
 
-<details><summary>Answer</summary>**B)** The `&&` operator is a sequence point: the left operand is fully evaluated before the right operand. C is wrong --- argument evaluation order is unspecified and there's no sequence point between arguments. A is wrong --- the increment happens sometime before the next sequence point, not immediately.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The `&&` operator is a sequence point: the left operand is fully evaluated before the right operand. C is wrong --- argument evaluation order is unspecified and there's no sequence point between arguments. A is wrong --- the increment happens sometime before the next sequence point, not immediately.</details>
 
 ### Complete Mini-Reference: Operator Precedence Hand-Rule
 

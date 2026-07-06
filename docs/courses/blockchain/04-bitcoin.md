@@ -539,7 +539,7 @@ interface CoinbaseScript {
    - D) The fee is a percentage of the transaction value
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) The fee increases because the transaction is larger (more inputs).** Bitcoin fees are based on transaction size in bytes. Each additional UTXO input adds ~150 bytes, so consolidating UTXOs during low-fee periods saves money.
 </details>
 
@@ -550,7 +550,7 @@ interface CoinbaseScript {
    - D) It requires user confirmation for each operation
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) It has no looping constructs — it's intentionally non-Turing complete.** Satoshi deliberately omitted loops and jumps to prevent denial-of-service attacks where scripts could run indefinitely.
 </details>
 
@@ -561,7 +561,7 @@ interface CoinbaseScript {
    - D) To reduce transaction fees
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) To enforce the 21 million supply cap through disinflation.** The halving reduces new supply by 50% every 210,000 blocks (~4 years), asymptotically approaching the 21 million limit. This programmed scarcity is central to Bitcoin's value proposition.
 </details>
 
@@ -572,7 +572,7 @@ interface CoinbaseScript {
    - D) 1000
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) 100.** Coinbase transaction outputs cannot be spent until they have 100 confirmations. This prevents miners from spending freshly mined coins before the block is deeply embedded in the chain.
 </details>
 
@@ -583,7 +583,7 @@ interface CoinbaseScript {
    - D) It cancels transactions automatically
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) It allows replacing a stuck transaction with a higher-fee version.** RBF allows a user to broadcast a new transaction that spends the same inputs with a higher fee, replacing the original unconfirmed transaction and potentially getting it confirmed faster.
 </details>
 
@@ -814,11 +814,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -826,7 +826,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

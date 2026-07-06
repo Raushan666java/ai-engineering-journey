@@ -411,7 +411,7 @@ function processCheckpoint(
    - D) By using trusted hardware
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) By requiring computational work (hash power) to participate in block creation.** An attacker would need to control more than 50% of the network's total hash rate, which requires enormous hardware and electricity investment — impractical for most adversaries.
 </details>
 
@@ -422,7 +422,7 @@ function processCheckpoint(
    - D) There is no difference
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) PoW costs external energy; PoS risks locked capital.** In PoW, the cost of attack is buying hardware and electricity. In PoS, the cost is the slashed stake. Both create economic disincentives but through different mechanisms.
 </details>
 
@@ -433,7 +433,7 @@ function processCheckpoint(
    - D) 7
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **D) 7.** PBFT requires n > 3f, so for f=2: n > 6, meaning at least 7 nodes are needed.
 </details>
 
@@ -444,7 +444,7 @@ function processCheckpoint(
    - D) Validators earn nothing
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Validators can vote on every fork without cost because there's no energy expenditure.** In pure PoS, validators can vote on multiple competing forks without penalty. Casper FFG solves this by slashing validators who equivocate (vote on conflicting checkpoints).
 </details>
 
@@ -455,7 +455,7 @@ function processCheckpoint(
    - D) A vote for the new leader
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) A message containing the request, sequence number, and view number.** The primary assigns a sequence number to the client request and broadcasts a pre-prepare message to all backup replicas, beginning the consensus process.
 </details>
 
@@ -825,11 +825,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -837,7 +837,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

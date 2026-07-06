@@ -607,15 +607,15 @@ estimate.recommendations.forEach(r => console.log(r));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: Which provider has the most global regions?</summary>**A)** AWS<br>**B)** Azure<br>**C)** GCP<br>**D)** DigitalOcean<br><br>**Answer: B)** Azure with 60+ regions</details>
+<details><summary>Question 1: Which provider has the most global regions?</summary>**A)** AWS<br>**B)** Azure<br>**C)** GCP<br>**D)** DigitalOcean<br><br>**Answer: B)** Azure with 60+ regions&lt;/details&gt;
 
-<details><summary>Question 2: What is FinOps?</summary>**A)** A cloud provider<br>**B)** Cloud cost management practice<br>**C)** A monitoring tool<br>**D)** A deployment strategy<br><br>**Answer: B)** Cloud cost management practice</details>
+<details><summary>Question 2: What is FinOps?</summary>**A)** A cloud provider<br>**B)** Cloud cost management practice<br>**C)** A monitoring tool<br>**D)** A deployment strategy<br><br>**Answer: B)** Cloud cost management practice&lt;/details&gt;
 
-<details><summary>Question 3: Which GCP service excels at serverless containers?</summary>**A)** Compute Engine<br>**B)** Cloud Functions<br>**C)** Cloud Run<br>**D)** GKE<br><br>**Answer: C)** Cloud Run</details>
+<details><summary>Question 3: Which GCP service excels at serverless containers?</summary>**A)** Compute Engine<br>**B)** Cloud Functions<br>**C)** Cloud Run<br>**D)** GKE<br><br>**Answer: C)** Cloud Run&lt;/details&gt;
 
-<details><summary>Question 4: What is the primary benefit of spot instances?</summary>**A)** Higher performance<br>**B)** 60-90% cost discount<br>**C)** Better security<br>**D)** Guaranteed availability<br><br>**Answer: B)** 60-90% cost discount</details>
+<details><summary>Question 4: What is the primary benefit of spot instances?</summary>**A)** Higher performance<br>**B)** 60-90% cost discount<br>**C)** Better security<br>**D)** Guaranteed availability<br><br>**Answer: B)** 60-90% cost discount&lt;/details&gt;
 
-<details><summary>Question 5: Which AWS service provides DNS with routing policies?</summary>**A)** CloudFront<br>**B)** Route 53<br>**C)** ELB<br>**D)** VPC<br><br>**Answer: B)** Route 53</details>
+<details><summary>Question 5: Which AWS service provides DNS with routing policies?</summary>**A)** CloudFront<br>**B)** Route 53<br>**C)** ELB<br>**D)** VPC<br><br>**Answer: B)** Route 53&lt;/details&gt;
 
 ---
 
@@ -736,11 +736,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -748,7 +748,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

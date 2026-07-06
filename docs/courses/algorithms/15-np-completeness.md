@@ -777,7 +777,7 @@ The P vs. NP question remains open. If \( P = NP \), every problem with an effic
 - D) It can only be solved with quantum computers
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) NP-complete means the problem is in NP (verifiable in poly time) and NP-hard (every NP problem reduces to it).
 </details>
 
@@ -789,7 +789,7 @@ B) NP-complete means the problem is in NP (verifiable in poly time) and NP-hard 
 - D) Vertex Cover
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) The Cook-Levin theorem (1971) proved SAT is NP-complete — the first such proof.
 </details>
 
@@ -801,7 +801,7 @@ C) The Cook-Levin theorem (1971) proved SAT is NP-complete — the first such pr
 - D) Nothing
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) If A is NP-hard and A ≤ₚ B, then B is NP-hard. If B were also in NP, it would be NP-complete.
 </details>
 
@@ -813,7 +813,7 @@ B) If A is NP-hard and A ≤ₚ B, then B is NP-hard. If B were also in NP, it w
 - D) ILP formulation solved with CPLEX/Gurobi
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) You will not prove P = NP in your afternoon coding session. Stick to practical strategies that industry actually uses.
 </details>
 
@@ -825,6 +825,6 @@ C) You will not prove P = NP in your afternoon coding session. Stick to practica
 - D) Cannot determine
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) The complement graph has a vertex cover of size |V| − k = 10 − 4 = 6.
 </details>

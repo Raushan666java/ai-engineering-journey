@@ -47,7 +47,7 @@ Service Level Agreements define measurable commitments. Key metrics include:
 - **First Response Time (FRT):** Time from ticket creation to first agent reply. Typical SLAs: 1 hour for urgent, 4 hours for standard.
 - **Resolution Time (RT):** Time to close or resolve the ticket. Often measured as Mean Time to Resolve (MTTR).
 - **SLA Compliance Rate:** Percentage of tickets meeting their SLA targets within a given period. Most teams target 90%+.
-- **Backlog Aging:** Distribution of open tickets by time buckets (e.g., < 24h, 24â€“72h, 72h+).
+- **Backlog Aging:** Distribution of open tickets by time buckets (e.g., &lt; 24h, 24â€“72h, 72h+).
 - **Breach Count:** Number of tickets that exceeded SLA thresholds, broken down by priority and team.
 - **Business Hours vs. Calendar Hours:** Many SLAs exclude weekends and after-hours, requiring configurable support windows.
 
@@ -701,7 +701,7 @@ The system uses a lambda architecture combining real-time and batch processing:
 
 **Step 3 → SLA clock start:** On assignment, the SLA timer begins. The `SlaMonitoringAgent` evaluates every active ticket every 5 minutes, calculating elapsed time against the policy's business-hours-aware thresholds. Tickets approaching 80% of their SLA window get a warning notification to the assigned agent.
 
-**Step 4 → Sentiment-aware mid-life escalation:** If `SentimentAnalysisAgent` detects a sustained negative trend (three consecutive messages with score < -0.5), it triggers a mid-life escalation that moves the ticket up one escalation level regardless of SLA status, preventing a frustrated customer from waiting the full resolution SLA.
+**Step 4 → Sentiment-aware mid-life escalation:** If `SentimentAnalysisAgent` detects a sustained negative trend (three consecutive messages with score &lt; -0.5), it triggers a mid-life escalation that moves the ticket up one escalation level regardless of SLA status, preventing a frustrated customer from waiting the full resolution SLA.
 
 **Step 5 → Multi-level escalation chain:** At level 1, the team lead is notified and optionally auto-assigned. At level 2, the department manager is pulled in with a summary of what's been tried. At level 3, a support director is alerted and a war-room Slack channel is created. Each escalation includes a machine-generated summary of the ticket timeline, actions taken, and suggested next steps.
 
@@ -871,7 +871,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) New -> Old -> Delete
 - D) Created -> Archived
 
-<details><summary>Answer</summary>B) Open -> Assigned -> In Progress -> Resolved -> Closed</details>
+<details><summary>Answer&lt;/summary&gt;B) Open -> Assigned -> In Progress -> Resolved -> Closed&lt;/details&gt;
 
 **Q2:** How are automated responses typically generated?
 - A) Fixed templates only
@@ -879,7 +879,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) Manual copy-paste
 - D) Random selection
 
-<details><summary>Answer</summary>B) LLM-generated contextual replies</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM-generated contextual replies&lt;/details&gt;
 
 **Q3:** What sentiment range is commonly used?
 - A) -100 to +100
@@ -887,7 +887,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) 1 to 5 stars
 - D) A through F
 
-<details><summary>Answer</summary>B) 0.0 to 1.0</details>
+<details><summary>Answer&lt;/summary&gt;B) 0.0 to 1.0&lt;/details&gt;
 
 **Q4:** What does SLA monitoring track?
 - A) Only ticket count
@@ -895,7 +895,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) Only agent performance
 - D) Only customer satisfaction
 
-<details><summary>Answer</summary>B) Response time and resolution time targets</details>
+<details><summary>Answer&lt;/summary&gt;B) Response time and resolution time targets&lt;/details&gt;
 
 ---
 
@@ -946,7 +946,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) New -> Old -> Delete
 - D) Created -> Archived
 
-<details><summary>Answer</summary>B) Open -> Assigned -> In Progress -> Resolved -> Closed</details>
+<details><summary>Answer&lt;/summary&gt;B) Open -> Assigned -> In Progress -> Resolved -> Closed&lt;/details&gt;
 
 **Q2:** How are automated responses typically generated?
 - A) Fixed templates only
@@ -954,7 +954,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) Manual copy-paste
 - D) Random selection
 
-<details><summary>Answer</summary>B) LLM-generated contextual replies</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM-generated contextual replies&lt;/details&gt;
 
 **Q3:** What sentiment range is commonly used?
 - A) -100 to +100
@@ -962,7 +962,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) 1 to 5 stars
 - D) A through F
 
-<details><summary>Answer</summary>B) 0.0 to 1.0</details>
+<details><summary>Answer&lt;/summary&gt;B) 0.0 to 1.0&lt;/details&gt;
 
 **Q4:** What does SLA monitoring track?
 - A) Only ticket count
@@ -970,7 +970,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) Only agent performance
 - D) Only customer satisfaction
 
-<details><summary>Answer</summary>B) Response time and resolution time targets</details>
+<details><summary>Answer&lt;/summary&gt;B) Response time and resolution time targets&lt;/details&gt;
 
 ---
 
@@ -1021,7 +1021,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) New -> Old -> Delete
 - D) Created -> Archived
 
-<details><summary>Answer</summary>B) Open -> Assigned -> In Progress -> Resolved -> Closed</details>
+<details><summary>Answer&lt;/summary&gt;B) Open -> Assigned -> In Progress -> Resolved -> Closed&lt;/details&gt;
 
 **Q2:** How are automated responses typically generated?
 - A) Fixed templates only
@@ -1029,7 +1029,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) Manual copy-paste
 - D) Random selection
 
-<details><summary>Answer</summary>B) LLM-generated contextual replies</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM-generated contextual replies&lt;/details&gt;
 
 **Q3:** What sentiment range is commonly used?
 - A) -100 to +100
@@ -1037,7 +1037,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) 1 to 5 stars
 - D) A through F
 
-<details><summary>Answer</summary>B) 0.0 to 1.0</details>
+<details><summary>Answer&lt;/summary&gt;B) 0.0 to 1.0&lt;/details&gt;
 
 **Q4:** What does SLA monitoring track?
 - A) Only ticket count
@@ -1045,7 +1045,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) Only agent performance
 - D) Only customer satisfaction
 
-<details><summary>Answer</summary>B) Response time and resolution time targets</details>
+<details><summary>Answer&lt;/summary&gt;B) Response time and resolution time targets&lt;/details&gt;
 
 ---
 
@@ -1096,7 +1096,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) New -> Old -> Delete
 - D) Created -> Archived
 
-<details><summary>Answer</summary>B) Open -> Assigned -> In Progress -> Resolved -> Closed</details>
+<details><summary>Answer&lt;/summary&gt;B) Open -> Assigned -> In Progress -> Resolved -> Closed&lt;/details&gt;
 
 **Q2:** How are automated responses typically generated?
 - A) Fixed templates only
@@ -1104,7 +1104,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) Manual copy-paste
 - D) Random selection
 
-<details><summary>Answer</summary>B) LLM-generated contextual replies</details>
+<details><summary>Answer&lt;/summary&gt;B) LLM-generated contextual replies&lt;/details&gt;
 
 **Q3:** What sentiment range is commonly used?
 - A) -100 to +100
@@ -1112,7 +1112,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) 1 to 5 stars
 - D) A through F
 
-<details><summary>Answer</summary>B) 0.0 to 1.0</details>
+<details><summary>Answer&lt;/summary&gt;B) 0.0 to 1.0&lt;/details&gt;
 
 **Q4:** What does SLA monitoring track?
 - A) Only ticket count
@@ -1120,7 +1120,7 @@ The endpoint is rate-limited per agent (60 requests/minute) and cached aggressiv
 - C) Only agent performance
 - D) Only customer satisfaction
 
-<details><summary>Answer</summary>B) Response time and resolution time targets</details>
+<details><summary>Answer&lt;/summary&gt;B) Response time and resolution time targets&lt;/details&gt;
 
 ## Summary
 

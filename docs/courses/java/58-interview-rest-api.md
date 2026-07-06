@@ -23,7 +23,8 @@ flowchart LR
     C --> D[Best Practices]
 ```
 
-### Q1: What are the six constraints of REST? How do they affect API design?
+### Q1: What are the six constraints of REST? How do they affect API design?
+
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
@@ -3082,7 +3083,7 @@ class OrderGraphQlController {
     }
 
     @QueryMapping
-    public List<Order> orders(@Argument int page, @Argument int size) {
+    public List&lt;Order&gt; orders(@Argument int page, @Argument int size) {
         return orderService.findAll(page, size);
     }
 
@@ -3097,15 +3098,15 @@ class OrderGraphQlController {
     }
 
     @SchemaMapping(typeName = "Order", field = "items")
-    public List<OrderItem> items(Order order) {
+    public List&lt;OrderItem&gt; items(Order order) {
         return orderService.findItemsByOrderId(order.getId());
     }
 
     // Batch loading to prevent N+1
     @BatchMapping(typeName = "Order", field = "items")
-    public Map<Order, List<OrderItem>> items(List<Order> orders) {
-        List<Long> ids = orders.stream().map(Order::getId).toList();
-        List<OrderItem> allItems = orderService.findItemsByOrderIds(ids);
+    public Map&lt;Order, List<OrderItem&gt;> items(List&lt;Order&gt; orders) {
+        List&lt;Long&gt; ids = orders.stream().map(Order::getId).toList();
+        List&lt;OrderItem&gt; allItems = orderService.findItemsByOrderIds(ids);
         return allItems.stream()
             .collect(Collectors.groupingBy(item ->
                 orders.stream()
@@ -3340,9 +3341,9 @@ class ETagConfig {
 
     // Shallow ETag → auto-calculated from response body
     @Bean
-    public FilterRegistrationBean<ShallowEtagHeaderFilter> shallowEtagFilter() {
-        FilterRegistrationBean<ShallowEtagHeaderFilter> registration =
-            new FilterRegistrationBean<>();
+    public FilterRegistrationBean&lt;ShallowEtagHeaderFilter&gt; shallowEtagFilter() {
+        FilterRegistrationBean&lt;ShallowEtagHeaderFilter&gt; registration =
+            new FilterRegistrationBean&lt;>();
         registration.setFilter(new ShallowEtagHeaderFilter());
         registration.addUrlPatterns("/api/*");
         registration.setName("etagFilter");
@@ -3362,7 +3363,7 @@ class DeepEtagService {
             content.getBytes(StandardCharsets.UTF_8)) + "\"";
     }
 
-    public String generateEtag(List<Order> orders) {
+    public String generateEtag(List&lt;Order&gt; orders) {
         String content = orders.stream()
             .map(o -> o.getId() + ":" + o.getVersion())
             .collect(Collectors.joining("|"));
@@ -3379,7 +3380,7 @@ class CachingOrderController {
     private final DeepEtagService etagService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<Order> getOrder(@PathVariable Long id,
+    public ResponseEntity&lt;Order&gt; getOrder(@PathVariable Long id,
             @RequestHeader(value = "If-None-Match", required = false)
                 String ifNoneMatch) {
 
@@ -3399,13 +3400,13 @@ class CachingOrderController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Order>> getOrders(
+    public ResponseEntity&lt;List<Order&gt;> getOrders(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "20") int size,
             @RequestHeader(value = "If-None-Match", required = false)
                 String ifNoneMatch) {
 
-        List<Order> orders = orderService.findAll(page, size);
+        List&lt;Order&gt; orders = orderService.findAll(page, size);
         String etag = etagService.generateEtag(orders);
 
         if (etag.equals(ifNoneMatch)) {
@@ -3471,7 +3472,7 @@ class ProductController {
     // Search results → shorter cache
     @GetMapping
     @CacheControl(maxAge = 60, policy = CacheControl.Policy.PUBLIC)
-    public List<Product> searchProducts(
+    public List&lt;Product&gt; searchProducts(
             @RequestParam String query) {
         return productService.search(query);
     }
@@ -3479,7 +3480,7 @@ class ProductController {
     // User-specific data → private cache only
     @GetMapping("/recommendations")
     @CacheControl(maxAge = 600, policy = CacheControl.Policy.PRIVATE)
-    public List<Product> getRecommendations(
+    public List&lt;Product&gt; getRecommendations(
             Authentication auth) {
         return productService.getRecommendations(auth.getName());
     }
@@ -3502,7 +3503,7 @@ class OrderService {
 
     @Cacheable(value = "orders", key = "'all:' + #page + ':' + #size",
               unless = "#result.isEmpty()")
-    public List<Order> findAll(int page, int size) {
+    public List&lt;Order&gt; findAll(int page, int size) {
         return orderRepository.findAll(PageRequest.of(page, size))
             .getContent();
     }
@@ -3528,7 +3529,7 @@ class OrderService {
 
 // === 8. Conditional PUT/PATCH (preventing lost updates) ===
 @PutMapping("/{id}")
-public ResponseEntity<Order> updateOrder(@PathVariable Long id,
+public ResponseEntity&lt;Order&gt; updateOrder(@PathVariable Long id,
         @RequestBody @Valid UpdateOrderRequest request,
         @RequestHeader(value = "If-Match", required = false)
             String ifMatch) {
@@ -3631,7 +3632,7 @@ void testIfMatchOptimisticLocking() throws Exception {
 
 // Production cache configuration
 @GetMapping("/api/products/{id}")
-public ResponseEntity<Product> getProductCached(@PathVariable Long id) {
+public ResponseEntity&lt;Product&gt; getProductCached(@PathVariable Long id) {
     Product product = productService.findById(id);
     return ResponseEntity.ok()
         .cacheControl(CacheControl.maxAge(1, TimeUnit.HOURS)
@@ -3654,9 +3655,9 @@ Caching is the most impactful performance optimization for REST APIs. Use ETags 
 /*
 pom.xml:
 <dependency>
-    <groupId>org.springdoc</groupId>
-    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-    <version>2.5.0</version>
+    <groupId>org.springdoc&lt;/groupId&gt;
+    <artifactId>springdoc-openapi-starter-webmvc-ui&lt;/artifactId&gt;
+    <version>2.5.0&lt;/version&gt;
 </dependency>
 
 After adding dependency:
@@ -3836,7 +3837,7 @@ class OrderDocController {
     })
     @SecurityRequirement(name = "BearerAuth")
     @GetMapping("/{id}")
-    public ResponseEntity<Order> getOrder(
+    public ResponseEntity&lt;Order&gt; getOrder(
             @Parameter(description = "Order ID", required = true,
                 example = "123")
             @PathVariable Long id,
@@ -3889,7 +3890,7 @@ class OrderDocController {
         @Parameter(name = "status", description = "Filter by status",
             schema = @Schema(implementation = OrderStatus.class))
     })
-    public Page<Order> listOrders(
+    public Page&lt;Order&gt; listOrders(
             @Parameter(hidden = true) Pageable pageable,
             @RequestParam(required = false) String status) {
         return orderService.findAll(pageable, status);
@@ -3925,7 +3926,7 @@ class Order {
     private Instant createdAt;
 
     @Schema(description = "Order items", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
-    private List<OrderItem> items;
+    private List&lt;OrderItem&gt; items;
 
     @Schema(hidden = true)  // Hide internal fields
     private int version;
@@ -3938,7 +3939,7 @@ record CreateOrderRequest(
 
     @Schema(description = "Order items", requiredMode = REQUIRED,
         minLength = 1)
-    @NotEmpty List<@Valid OrderItemRequest> items
+    @NotEmpty List&lt;@Valid OrderItemRequest&gt; items
 ) {}
 
 @Schema(description = "An item within an order")
@@ -3970,7 +3971,7 @@ class ApiError {
     private String instance;
 
     @Schema(description = "Field-level validation errors")
-    private Map<String, List<String>> errors;
+    private Map&lt;String, List<String&gt;> errors;
 }
 
 // === 6. application.yml configuration ===
@@ -4005,7 +4006,7 @@ Swagger UI allows testing authenticated endpoints:
 1. Click "Authorize" button
 2. Enter JWT token in Bearer Auth field
 3. All subsequent requests include:
-   Authorization: Bearer <token>
+   Authorization: Bearer &lt;token&gt;
 
 Configured via:
 .securityRequirement(new SecurityRequirement().addList("BearerAuth"))
@@ -4099,7 +4100,7 @@ record CreateOrderRequest(
     @NotNull(message = "Items list is required")
     @Size(min = 1, message = "At least one item is required")
     @NotEmpty
-    List<@Valid OrderItemRequest> items,
+    List&lt;@Valid OrderItemRequest&gt; items,
 
     @Pattern(regexp = "^[A-Z]{2,10}$",
         message = "Currency must be 2-10 uppercase letters")
@@ -4173,7 +4174,7 @@ class ValidatingOrderController {
 
     // Multiple parameter validation
     @GetMapping("/search")
-    public List<Order> searchOrders(
+    public List&lt;Order&gt; searchOrders(
             @RequestParam @NotBlank @Size(min = 3) String query,
             @RequestParam(defaultValue = "0") @Min(0) int page,
             @RequestParam(defaultValue = "20") @Min(1) @Max(100) int size,
@@ -4231,8 +4232,8 @@ import jakarta.validation.*;
 @Constraint(validatedBy = DateRangeValidator.class)
 @interface ValidDateRange {
     String message() default "End date must be after start date";
-    Class<?>[] groups() default {};
-    Class<? extends Payload>[] payload() default {};
+    Class&lt;?>[] groups() default {};
+    Class&lt;? extends Payload&gt;[] payload() default {};
 }
 
 // Cross-field validation on the DTO
@@ -4242,7 +4243,7 @@ record DateRangeRequest(
 ) {}
 
 class DateRangeValidator
-        implements ConstraintValidator<ValidDateRange, DateRangeRequest> {
+        implements ConstraintValidator&lt;ValidDateRange, DateRangeRequest&gt; {
 
     @Override
     public boolean isValid(DateRangeRequest value,
@@ -4269,13 +4270,13 @@ class DateRangeValidator
 @Constraint(validatedBy = EnumValidator.class)
 @interface ValidEnum {
     String message() default "Invalid value";
-    Class<? extends Enum<?>>[] enumClass();
-    Class<?>[] groups() default {};
-    Class<? extends Payload>[] payload() default {};
+    Class&lt;? extends Enum<?&gt;>[] enumClass();
+    Class&lt;?>[] groups() default {};
+    Class&lt;? extends Payload&gt;[] payload() default {};
 }
 
-class EnumValidator implements ConstraintValidator<ValidEnum, String> {
-    private Set<String> allowedValues;
+class EnumValidator implements ConstraintValidator&lt;ValidEnum, String&gt; {
+    private Set&lt;String&gt; allowedValues;
 
     @Override
     public void initialize(ValidEnum annotation) {
@@ -4312,9 +4313,9 @@ class OrderValidationService {
     }
 
     public void validateOrder(Order order) {
-        Set<ConstraintViolation<Order>> violations = validator.validate(order);
+        Set&lt;ConstraintViolation<Order&gt;> violations = validator.validate(order);
         if (!violations.isEmpty()) {
-            Map<String, String> errors = new HashMap<>();
+            Map&lt;String, String&gt; errors = new HashMap&lt;>();
             violations.forEach(v ->
                 errors.put(v.getPropertyPath().toString(), v.getMessage()));
             throw new ValidationException(
@@ -4324,7 +4325,7 @@ class OrderValidationService {
 
     // Validate specific groups
     public void validateForCreate(CreateOrderRequest request) {
-        Set<ConstraintViolation<CreateOrderRequest>> violations =
+        Set&lt;ConstraintViolation<CreateOrderRequest&gt;> violations =
             validator.validate(request, CreateGroup.class);
         if (!violations.isEmpty()) {
             throw new ConstraintViolationException(violations);
@@ -4345,17 +4346,17 @@ class ValidationExceptionHandler {
         pd.setTitle("Validation Failed");
         pd.setDetail("Request contains invalid fields");
 
-        Map<String, List<String>> errors = new HashMap<>();
+        Map&lt;String, List<String&gt;> errors = new HashMap&lt;>();
 
         // Field-level errors
         ex.getBindingResult().getFieldErrors().forEach(fe -> {
-            errors.computeIfAbsent(fe.getField(), k -> new ArrayList<>())
+            errors.computeIfAbsent(fe.getField(), k -> new ArrayList&lt;>())
                 .add(fe.getDefaultMessage());
         });
 
         // Global errors
         ex.getBindingResult().getGlobalErrors().forEach(ge -> {
-            errors.computeIfAbsent(ge.getObjectName(), k -> new ArrayList<>())
+            errors.computeIfAbsent(ge.getObjectName(), k -> new ArrayList&lt;>())
                 .add(ge.getDefaultMessage());
         });
 
@@ -4373,7 +4374,7 @@ class ValidationExceptionHandler {
         pd.setTitle("Validation Failed");
         pd.setDetail("Parameter validation failed");
 
-        Map<String, String> errors = new HashMap<>();
+        Map&lt;String, String&gt; errors = new HashMap&lt;>();
         ex.getConstraintViolations().forEach(v ->
             errors.put(v.getPropertyPath().toString(), v.getMessage()));
 
@@ -4397,7 +4398,7 @@ class ValidationExceptionHandler {
         pd.setTitle("Binding Failed");
         pd.setDetail("Failed to bind request parameters");
 
-        Map<String, String> errors = new HashMap<>();
+        Map&lt;String, String&gt; errors = new HashMap&lt;>();
         ex.getFieldErrors().forEach(fe ->
             errors.put(fe.getField(), fe.getDefaultMessage()));
         pd.setProperty("errors", errors);
@@ -4488,7 +4489,7 @@ class FileUploadController {
     private final FileStorageService storageService;
 
     @PostMapping("/upload")
-    public ResponseEntity<FileMetadata> uploadFile(
+    public ResponseEntity&lt;FileMetadata&gt; uploadFile(
             @RequestParam("file") MultipartFile file) {
 
         // Validate immediately
@@ -4505,14 +4506,14 @@ class FileUploadController {
 
     // Multiple files
     @PostMapping("/upload/multiple")
-    public ResponseEntity<List<FileMetadata>> uploadMultiple(
-            @RequestParam("files") List<MultipartFile> files) {
+    public ResponseEntity&lt;List<FileMetadata&gt;> uploadMultiple(
+            @RequestParam("files") List&lt;MultipartFile&gt; files) {
 
         if (files.isEmpty()) {
             throw new FileValidationException("No files provided");
         }
 
-        List<FileMetadata> metadata = files.stream()
+        List&lt;FileMetadata&gt; metadata = files.stream()
             .peek(f -> { if (f.isEmpty())
                 throw new FileValidationException("File is empty: " +
                     f.getOriginalFilename()); })
@@ -4524,7 +4525,7 @@ class FileUploadController {
 
     // File download
     @GetMapping("/{id}")
-    public ResponseEntity<Resource> downloadFile(@PathVariable String id) {
+    public ResponseEntity&lt;Resource&gt; downloadFile(@PathVariable String id) {
         FileData fileData = storageService.load(id);
 
         return ResponseEntity.ok()
@@ -4537,7 +4538,7 @@ class FileUploadController {
 
     // Inline display (image in browser)
     @GetMapping("/{id}/inline")
-    public ResponseEntity<Resource> displayInline(@PathVariable String id) {
+    public ResponseEntity&lt;Resource&gt; displayInline(@PathVariable String id) {
         FileData fileData = storageService.load(id);
 
         return ResponseEntity.ok()
@@ -4616,13 +4617,13 @@ record FileData(Resource resource, String contentType, long size,
 @Component
 class FileValidator {
     // Allowed MIME types by category
-    private static final Set<String> ALLOWED_IMAGE_TYPES = Set.of(
+    private static final Set&lt;String&gt; ALLOWED_IMAGE_TYPES = Set.of(
         "image/jpeg", "image/png", "image/gif", "image/webp");
-    private static final Set<String> ALLOWED_DOCUMENT_TYPES = Set.of(
+    private static final Set&lt;String&gt; ALLOWED_DOCUMENT_TYPES = Set.of(
         "application/pdf", "text/plain", "application/msword",
         "application/vnd.openxmlformats-officedocument" +
             ".wordprocessingml.document");
-    private static final Set<String> ALLOWED_SPREADSHEET_TYPES = Set.of(
+    private static final Set&lt;String&gt; ALLOWED_SPREADSHEET_TYPES = Set.of(
         "text/csv", "application/vnd.ms-excel",
         "application/vnd.openxmlformats-officedocument" +
             ".spreadsheetml.sheet");
@@ -4676,7 +4677,7 @@ class FileValidator {
 
     private boolean isExtensionSafe(String filename, String contentType) {
         // Map content types to expected extensions
-        Map<String, List<String>> typeExtensions = Map.of(
+        Map&lt;String, List<String&gt;> typeExtensions = Map.of(
             "image/jpeg", List.of("jpg", "jpeg", "jpe"),
             "image/png", List.of("png"),
             "image/gif", List.of("gif"),
@@ -4685,7 +4686,7 @@ class FileValidator {
             "text/plain", List.of("txt")
         );
 
-        List<String> expectedExtensions = typeExtensions.get(contentType);
+        List&lt;String&gt; expectedExtensions = typeExtensions.get(contentType);
         if (expectedExtensions == null) return true;  // Unknown mapping, skip check
 
         String ext = getExtension(filename).toLowerCase();
@@ -4725,7 +4726,7 @@ app:
 @ConfigurationProperties(prefix = "app.file")
 class FileUploadProperties {
     private Path uploadPath = Path.of("uploads");
-    private List<String> allowedImageTypes = List.of(
+    private List&lt;String&gt; allowedImageTypes = List.of(
         "image/jpeg", "image/png");
     private long maxImageSize = 5_242_880; // 5MB
 
@@ -4739,7 +4740,7 @@ class AsyncFileProcessor {
     private final FileValidator fileValidator;
 
     @Async
-    public CompletableFuture<ProcessedFile> processFile(MultipartFile file,
+    public CompletableFuture&lt;ProcessedFile&gt; processFile(MultipartFile file,
             FileCategory category) {
         fileValidator.validate(file, category);
         FileMetadata metadata = storageService.store(file);
@@ -4764,7 +4765,7 @@ class AsyncFileProcessor {
 
 // === 6. Large file streaming ===
 @GetMapping("/{id}/stream")
-public ResponseEntity<StreamingResponseBody> streamFile(
+public ResponseEntity&lt;StreamingResponseBody&gt; streamFile(
         @PathVariable String id) {
 
     FileData fileData = storageService.load(id);
@@ -4943,7 +4944,7 @@ class StreamingExportController {
 
     // Stream CSV with 10 million rows (no memory overhead)
     @GetMapping("/orders/csv")
-    public ResponseEntity<StreamingResponseBody> exportOrdersCsv() {
+    public ResponseEntity&lt;StreamingResponseBody&gt; exportOrdersCsv() {
         StreamingResponseBody stream = outputStream -> {
             try (Writer writer = new OutputStreamWriter(
                     outputStream, StandardCharsets.UTF_8)) {
@@ -4976,7 +4977,7 @@ class StreamingExportController {
 
     // Stream large JSON array
     @GetMapping("/orders/json-stream")
-    public ResponseEntity<StreamingResponseBody> exportOrdersJson() {
+    public ResponseEntity&lt;StreamingResponseBody&gt; exportOrdersJson() {
         ObjectMapper mapper = new ObjectMapper();
 
         StreamingResponseBody stream = outputStream -> {
@@ -5027,16 +5028,16 @@ Spring manages the database cursor, reading one row at a time.
 @Service
 class OrderService {
     @Transactional(readOnly = true)
-    public Stream<Order> streamAllOrders() {
+    public Stream&lt;Order&gt; streamAllOrders() {
         return orderRepository.streamAllBy();
     }
 }
 
 // Repository
-interface OrderRepository extends JpaRepository<Order, Long> {
+interface OrderRepository extends JpaRepository&lt;Order, Long&gt; {
     @QueryHints(@QueryHint(name = "org.hibernate.fetchSize", value = "100"))
     @QueryHint(name = "org.hibernate.cacheable", value = "false")
-    Stream<Order> streamAllBy();
+    Stream&lt;Order&gt; streamAllBy();
 }
 */
 
@@ -5051,7 +5052,7 @@ Spring serializes each object independently
 class ObjectStreamingController {
 
     @GetMapping("/orders")
-    public ResponseEntity<ResponseBodyEmitter> streamOrders() {
+    public ResponseEntity&lt;ResponseBodyEmitter&gt; streamOrders() {
         ResponseBodyEmitter emitter = new ResponseBodyEmitter();
 
         // In a real app, use @Async or CompletableFuture
@@ -5160,8 +5161,8 @@ class SseController {
 // === 5. SSE service with event broadcasting ===
 @Service
 class SseService {
-    private final List<SseEmitter> emitters =
-        new CopyOnWriteArrayList<>();
+    private final List&lt;SseEmitter&gt; emitters =
+        new CopyOnWriteArrayList&lt;>();
 
     public void register(SseEmitter emitter) {
         emitters.add(emitter);
@@ -5178,7 +5179,7 @@ class SseService {
     // Broadcast event to all connected clients
     @Async
     public void broadcast(String eventName, String data) {
-        List<SseEmitter> deadEmitters = new ArrayList<>();
+        List&lt;SseEmitter&gt; deadEmitters = new ArrayList&lt;>();
 
         emitters.forEach(emitter -> {
             try {
@@ -5233,8 +5234,8 @@ class LargeDatasetStreamingService {
 
     // Paginated streaming using Spring Data cursor
     @Transactional(readOnly = true)
-    public void processLargeDataset(Consumer<Order> processor) {
-        try (Stream<Order> stream = orderRepository.streamAllBy()) {
+    public void processLargeDataset(Consumer&lt;Order&gt; processor) {
+        try (Stream&lt;Order&gt; stream = orderRepository.streamAllBy()) {
             stream.forEach(processor);
         }
         // Stream is automatically closed
@@ -5244,7 +5245,7 @@ class LargeDatasetStreamingService {
     @Transactional(readOnly = true)
     public void streamWithBatches(int batchSize) {
         Pageable pageable = PageRequest.of(0, batchSize);
-        Page<Order> page;
+        Page&lt;Order&gt; page;
 
         do {
             page = orderRepository.findAllBy(pageable);
@@ -5374,7 +5375,7 @@ class IdempotencyService {
     private final StringRedisTemplate redisTemplate;
     private static final String KEY_PREFIX = "idempotency:";
 
-    public Optional<IdempotencyRecord> getRecord(String key) {
+    public Optional&lt;IdempotencyRecord&gt; getRecord(String key) {
         String json = redisTemplate.opsForValue()
             .get(KEY_PREFIX + key);
         if (json == null) return Optional.empty();
@@ -5415,7 +5416,7 @@ record IdempotencyRecord(
     String key,
     int statusCode,
     String responseBody,
-    Map<String, String> responseHeaders,
+    Map&lt;String, String&gt; responseHeaders,
     Instant createdAt
 ) {}
 
@@ -5450,7 +5451,7 @@ class IdempotencyInterceptor extends HandlerInterceptor {
         }
 
         // Check if result exists
-        Optional<IdempotencyRecord> existing =
+        Optional&lt;IdempotencyRecord&gt; existing =
             idempotencyService.getRecord(idempotencyKey);
         if (existing.isPresent()) {
             IdempotencyRecord record = existing.get();
@@ -5525,12 +5526,12 @@ class IdempotencyResponseFilter extends OncePerRequestFilter {
 
             // Save idempotency record on success (2xx)
             if (responseWrapper.getStatus() >= 200 &&
-                responseWrapper.getStatus() < 300) {
+                responseWrapper.getStatus() &lt; 300) {
 
                 Duration ttl = (Duration)
                     request.getAttribute("idempotencyTtl");
 
-                Map<String, String> headers = new HashMap<>();
+                Map&lt;String, String&gt; headers = new HashMap&lt;>();
                 headers.put("Content-Type",
                     responseWrapper.getContentType());
 
@@ -5560,7 +5561,7 @@ class PaymentController {
 
     @Idempotent(ttlSeconds = 86400)
     @PostMapping
-    public ResponseEntity<PaymentResponse> createPayment(
+    public ResponseEntity&lt;PaymentResponse&gt; createPayment(
             @RequestBody @Valid CreatePaymentRequest request) {
 
         // Idempotency is handled by the interceptor/filter
@@ -5574,7 +5575,7 @@ class PaymentController {
 
     @Idempotent
     @PostMapping("/refund")
-    public ResponseEntity<RefundResponse> refundPayment(
+    public ResponseEntity&lt;RefundResponse&gt; refundPayment(
             @RequestBody @Valid RefundRequest request) {
 
         Refund refund = paymentService.refund(request);
@@ -5608,12 +5609,12 @@ class IdempotencyRecordEntity {
 }
 
 interface IdempotencyRecordRepository
-        extends JpaRepository<IdempotencyRecordEntity, String> {
-    Optional<IdempotencyRecordEntity> findByIdempotencyKey(String key);
+        extends JpaRepository&lt;IdempotencyRecordEntity, String&gt; {
+    Optional&lt;IdempotencyRecordEntity&gt; findByIdempotencyKey(String key);
     void deleteByExpiresAtBefore(Instant now);
 
     @Modifying
-    @Query("DELETE FROM IdempotencyRecordEntity e WHERE e.expiresAt < :now")
+    @Query("DELETE FROM IdempotencyRecordEntity e WHERE e.expiresAt &lt; :now")
     void deleteExpired(@Param("now") Instant now);
 }
 
@@ -5653,7 +5654,7 @@ void testConcurrentIdempotentRequests() throws Exception {
     String idempotencyKey = UUID.randomUUID().toString();
 
     // Send two identical requests concurrently
-    CompletableFuture<MvcResult> req1 = CompletableFuture.supplyAsync(() -> {
+    CompletableFuture&lt;MvcResult&gt; req1 = CompletableFuture.supplyAsync(() -> {
         try {
             return mockMvc.perform(
                     post("/api/payments")
@@ -5664,7 +5665,7 @@ void testConcurrentIdempotentRequests() throws Exception {
         } catch (Exception e) { throw new RuntimeException(e); }
     });
 
-    CompletableFuture<MvcResult> req2 = CompletableFuture.supplyAsync(() -> {
+    CompletableFuture&lt;MvcResult&gt; req2 = CompletableFuture.supplyAsync(() -> {
         try {
             return mockMvc.perform(
                     post("/api/payments")
@@ -5798,7 +5799,7 @@ import org.springframework.security.access.prepost.*;
 class AdminController {
 
     @GetMapping("/users")
-    public List<User> listUsers() {
+    public List&lt;User&gt; listUsers() {
         return userService.findAll();
     }
 
@@ -5903,7 +5904,7 @@ class AuditLogger {
 
 3. Validate sort parameters (prevent injection via sort)
    @GetMapping("/users")
-   public List<User> getUsers(
+   public List&lt;User&gt; getUsers(
            @SortDefault(sort = "id", direction = ASC) Sort sort) {
        // Spring validates sort property names
        return repository.findAll(sort);
@@ -6018,7 +6019,7 @@ void testSqlInjectionPrevented() throws Exception {
 void testXssPrevented() throws Exception {
     mockMvc.perform(post("/api/orders")
             .contentType(MediaType.APPLICATION_JSON)
-            .content("{\"customerName\": \"<script>alert('xss')</script>\"}"))
+            .content("{\"customerName\": \"<script>alert('xss')&lt;/script&gt;\"}"))
         .andExpect(status().isCreated())
         .andExpect(jsonPath("$.customerName")
             .value(not(containsString("<script>"))));
@@ -6104,7 +6105,7 @@ class AsyncCallableController {
     private final OrderService orderService;
 
     @GetMapping("/orders/{id}")
-    public Callable<Order> getOrderAsync(@PathVariable Long id) {
+    public Callable&lt;Order&gt; getOrderAsync(@PathVariable Long id) {
         // Servlet thread returns immediately
         // Framework runs Callable in async thread pool
         return () -> {
@@ -6115,15 +6116,15 @@ class AsyncCallableController {
 
     // Multiple async calls in parallel
     @GetMapping("/dashboard")
-    public Callable<DashboardDto> getDashboard() {
+    public Callable&lt;DashboardDto&gt; getDashboard() {
         return () -> {
-            CompletableFuture<List<Order>> ordersFuture =
+            CompletableFuture&lt;List<Order&gt;> ordersFuture =
                 CompletableFuture.supplyAsync(
                     () -> orderService.findAll(0, 10));
-            CompletableFuture<List<Customer>> customersFuture =
+            CompletableFuture&lt;List<Customer&gt;> customersFuture =
                 CompletableFuture.supplyAsync(
                     () -> customerService.findAll(0, 10));
-            CompletableFuture<Stats> statsFuture =
+            CompletableFuture&lt;Stats&gt; statsFuture =
                 CompletableFuture.supplyAsync(
                     () -> statsService.getSummary());
 
@@ -6150,13 +6151,13 @@ Useful for: message queue listeners, long polling, webSocket events
 class DeferredResultController {
 
     // In-memory queue of pending requests
-    private final Queue<DeferredResult<Order>> pendingRequests =
-        new ConcurrentLinkedQueue<>();
+    private final Queue&lt;DeferredResult<Order&gt;> pendingRequests =
+        new ConcurrentLinkedQueue&lt;>();
 
     @GetMapping("/orders/wait")
-    public DeferredResult<Order> waitForNextOrder() {
+    public DeferredResult&lt;Order&gt; waitForNextOrder() {
         // Default timeout: 30 seconds
-        DeferredResult<Order> result = new DeferredResult<>(30_000L);
+        DeferredResult&lt;Order&gt; result = new DeferredResult&lt;>(30_000L);
 
         // Timeout handler
         result.onTimeout(() -> {
@@ -6187,7 +6188,7 @@ class DeferredResultController {
 
     // Called when new order is created
     public void notifyNewOrder(Order order) {
-        DeferredResult<Order> result = pendingRequests.poll();
+        DeferredResult&lt;Order&gt; result = pendingRequests.poll();
         if (result != null) {
             result.setResult(order);  // Triggers response
         }
@@ -6195,8 +6196,8 @@ class DeferredResultController {
 
     // Alternative: DeferredResult with error handling
     @GetMapping("/orders/{id}/status-stream")
-    public DeferredResult<OrderStatus> streamStatus(@PathVariable Long id) {
-        DeferredResult<OrderStatus> result = new DeferredResult<>(60_000L);
+    public DeferredResult&lt;OrderStatus&gt; streamStatus(@PathVariable Long id) {
+        DeferredResult&lt;OrderStatus&gt; result = new DeferredResult&lt;>(60_000L);
 
         orderStatusService.registerCallback(id, newStatus -> {
             if (!result.isSetOrExpired()) {
@@ -6214,8 +6215,8 @@ class DeferredResultController {
 
 // === 3. WebAsyncTask → with timeout/callback management ===
 @GetMapping("/orders/export")
-public WebAsyncTask<String> exportOrders() {
-    WebAsyncTask<String> task = new WebAsyncTask<>(
+public WebAsyncTask&lt;String&gt; exportOrders() {
+    WebAsyncTask&lt;String&gt; task = new WebAsyncTask&lt;>(
         30_000L,  // Timeout
         () -> {
             // Long-running export
@@ -6244,18 +6245,18 @@ class FutureController {
     private final InventoryService inventoryService;
 
     @GetMapping("/order-summary/{id}")
-    public CompletableFuture<OrderSummary> getOrderSummary(
+    public CompletableFuture&lt;OrderSummary&gt; getOrderSummary(
             @PathVariable Long id) {
 
-        CompletableFuture<Order> orderFuture =
+        CompletableFuture&lt;Order&gt; orderFuture =
             CompletableFuture.supplyAsync(
                 () -> orderService.findById(id));
-        CompletableFuture<Customer> customerFuture =
+        CompletableFuture&lt;Customer&gt; customerFuture =
             orderFuture.thenCompose(order ->
                 CompletableFuture.supplyAsync(
                     () -> customerService.findById(
                         order.getCustomerId())));
-        CompletableFuture<List<InventoryStatus>> inventoryFuture =
+        CompletableFuture&lt;List<InventoryStatus&gt;> inventoryFuture =
             orderFuture.thenCompose(order ->
                 CompletableFuture.supplyAsync(
                     () -> inventoryService.checkAvailability(
@@ -6271,7 +6272,7 @@ class FutureController {
 
     // With exception handling
     @GetMapping("/user/{id}/recommendations")
-    public CompletableFuture<ResponseEntity<?>> getRecommendations(
+    public CompletableFuture&lt;ResponseEntity<?&gt;> getRecommendations(
             @PathVariable Long id) {
 
         return CompletableFuture
@@ -6329,17 +6330,17 @@ class MvcAsyncConfig implements WebMvcConfigurer {
             .registerCallableInterceptors(
                 new CallableProcessingInterceptor() {
                     @Override
-                    public <T> void beforeConcurrentHandling(
+                    public &lt;T> void beforeConcurrentHandling(
                             NativeWebRequest request,
-                            Callable<T> task) {
+                            Callable&lt;T> task) {
                         log.debug("Starting async request: {}",
                             request.getRequestURI());
                     }
 
                     @Override
-                    public <T> void afterConcurrentHandling(
+                    public &lt;T> void afterConcurrentHandling(
                             NativeWebRequest request,
-                            Callable<T> task) {
+                            Callable&lt;T> task) {
                         log.debug("Async request completed: {}",
                             request.getRequestURI());
                     }
@@ -6545,7 +6546,7 @@ class OrderControllerTest {
 
     @Test
     void getOrders_WithPagination_ShouldReturnPage() throws Exception {
-        List<Order> orders = List.of(
+        List&lt;Order&gt; orders = List.of(
             new Order(1L, "Alice", 100.00, "PENDING"),
             new Order(2L, "Bob", 200.00, "CONFIRMED"));
         given(orderService.findAll(anyInt(), anyInt()))
@@ -6581,13 +6582,13 @@ class OrderIntegrationTest {
             1L, "Bob", 150.00,
             List.of(new OrderItemRequest(10L, 3)));
 
-        ResponseEntity<Order> createResponse = restTemplate.postForEntity(
+        ResponseEntity&lt;Order&gt; createResponse = restTemplate.postForEntity(
             "/api/orders", request, Order.class);
         assertThat(createResponse.getStatusCode()).isEqualTo(HttpStatus.CREATED);
         Long orderId = createResponse.getBody().getId();
 
         // Read
-        ResponseEntity<Order> getResponse = restTemplate.getForEntity(
+        ResponseEntity&lt;Order&gt; getResponse = restTemplate.getForEntity(
             "/api/orders/" + orderId, Order.class);
         assertThat(getResponse.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(getResponse.getBody().getCustomerName()).isEqualTo("Bob");
@@ -6597,7 +6598,7 @@ class OrderIntegrationTest {
         restTemplate.put("/api/orders/" + orderId, update);
 
         // Verify update
-        ResponseEntity<Order> verifyResponse = restTemplate.getForEntity(
+        ResponseEntity&lt;Order&gt; verifyResponse = restTemplate.getForEntity(
             "/api/orders/" + orderId, Order.class);
         assertThat(verifyResponse.getBody().getStatus()).isEqualTo("SHIPPED");
 
@@ -6605,7 +6606,7 @@ class OrderIntegrationTest {
         restTemplate.delete("/api/orders/" + orderId);
 
         // Verify delete
-        ResponseEntity<Order> afterDelete = restTemplate.getForEntity(
+        ResponseEntity&lt;Order&gt; afterDelete = restTemplate.getForEntity(
             "/api/orders/" + orderId, Order.class);
         assertThat(afterDelete.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
     }
@@ -6613,7 +6614,7 @@ class OrderIntegrationTest {
     @Test
     void testAuthentication() {
         // Without auth → 401
-        ResponseEntity<String> response = restTemplate.getForEntity(
+        ResponseEntity&lt;String&gt; response = restTemplate.getForEntity(
             "/api/admin/users", String.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);
 
@@ -6622,9 +6623,9 @@ class OrderIntegrationTest {
         HttpHeaders headers = new HttpHeaders();
         headers.setBearerAuth(token);
 
-        ResponseEntity<List> authResponse = restTemplate.exchange(
+        ResponseEntity&lt;List&gt; authResponse = restTemplate.exchange(
             "/api/admin/users", HttpMethod.GET,
-            new HttpEntity<>(headers), List.class);
+            new HttpEntity&lt;>(headers), List.class);
         assertThat(authResponse.getStatusCode()).isEqualTo(HttpStatus.OK);
     }
 
@@ -6633,13 +6634,13 @@ class OrderIntegrationTest {
         String token = obtainAccessToken("user", "password");
         HttpHeaders headers = new HttpHeaders();
         headers.setBearerAuth(token);
-        HttpEntity<?> entity = new HttpEntity<>(headers);
+        HttpEntity&lt;?> entity = new HttpEntity<&gt;(headers);
 
         // Send requests until rate limited
         IntStream.range(0, 11).forEach(i -> {
-            ResponseEntity<?> response = restTemplate.exchange(
+            ResponseEntity&lt;?> response = restTemplate.exchange(
                 "/api/orders", HttpMethod.GET, entity, String.class);
-            if (i < 10) {
+            if (i &lt; 10) {
                 assertThat(response.getStatusCode())
                     .isEqualTo(HttpStatus.OK);
             } else {
@@ -6651,7 +6652,7 @@ class OrderIntegrationTest {
 
     private String obtainAccessToken(String username, String password) {
         AuthRequest request = new AuthRequest(username, password);
-        ResponseEntity<AuthResponse> response = restTemplate.postForEntity(
+        ResponseEntity&lt;AuthResponse&gt; response = restTemplate.postForEntity(
             "/api/auth/login", request, AuthResponse.class);
         return response.getBody().token();
     }
@@ -6672,7 +6673,7 @@ class OrderRepositoryTest {
         entityManager.persist(new Order(null, "Alice", 200.00, "SHIPPED"));
         entityManager.persist(new Order(null, "Bob", 150.00, "PENDING"));
 
-        List<Order> aliceOrders = orderRepository
+        List&lt;Order&gt; aliceOrders = orderRepository
             .findByCustomerName("Alice");
         assertThat(aliceOrders).hasSize(2);
     }
@@ -6683,7 +6684,7 @@ class OrderRepositoryTest {
             entityManager.persist(
                 new Order(null, "User" + i, 100.0, "PENDING")));
 
-        Page<Order> page = orderRepository.findAll(
+        Page&lt;Order&gt; page = orderRepository.findAll(
             PageRequest.of(0, 10));
         assertThat(page.getContent()).hasSize(10);
         assertThat(page.getTotalPages()).isEqualTo(3);
@@ -6872,7 +6873,7 @@ void testErrorScenarios() throws Exception {
 // === 9. Performance/load tests with simulated data ===
 @Test
 void testBulkCreate() {
-    List<CreateOrderRequest> requests = IntStream.range(0, 100)
+    List&lt;CreateOrderRequest&gt; requests = IntStream.range(0, 100)
         .mapToObj(i -> new CreateOrderRequest(
             (long) (i % 10),
             "User" + i,
@@ -6883,7 +6884,7 @@ void testBulkCreate() {
     StopWatch watch = new StopWatch();
     watch.start("bulk-create");
 
-    List<ResponseEntity<Order>> responses = requests.stream()
+    List&lt;ResponseEntity<Order&gt;> responses = requests.stream()
         .map(req -> restTemplate.postForEntity(
             "/api/orders", req, Order.class))
         .collect(Collectors.toList());
@@ -6983,10 +6984,10 @@ class ConditionalRequestController {
 
     // Conditional GET
     @GetMapping("/{id}")
-    public ResponseEntity<Order> getOrder(
+    public ResponseEntity&lt;Order&gt; getOrder(
             @PathVariable Long id,
-            @RequestHeader("If-None-Match") Optional<String> ifNoneMatch,
-            @RequestHeader("If-Modified-Since") Optional<Date> ifModifiedSince) {
+            @RequestHeader("If-None-Match") Optional&lt;String&gt; ifNoneMatch,
+            @RequestHeader("If-Modified-Since") Optional&lt;Date&gt; ifModifiedSince) {
 
         // Load current state
         Order order = orderService.findById(id);
@@ -7008,7 +7009,7 @@ class ConditionalRequestController {
             long lastModifiedMs = lastModified.toEpochMilli();
 
             // Allow 1-second tolerance for second-level precision
-            if (lastModifiedMs <= ifModifiedSinceMs + 1000) {
+            if (lastModifiedMs &lt;= ifModifiedSinceMs + 1000) {
                 return ResponseEntity.status(HttpStatus.NOT_MODIFIED)
                     .eTag(currentEtag)
                     .lastModified(lastModifiedMs)
@@ -7025,10 +7026,10 @@ class ConditionalRequestController {
 
     // Conditional update (optimistic locking)
     @PutMapping("/{id}")
-    public ResponseEntity<Order> updateOrder(
+    public ResponseEntity&lt;Order&gt; updateOrder(
             @PathVariable Long id,
             @RequestBody @Valid UpdateOrderRequest request,
-            @RequestHeader("If-Match") Optional<String> ifMatch) {
+            @RequestHeader("If-Match") Optional&lt;String&gt; ifMatch) {
 
         // Get current state
         Order current = orderService.findById(id);
@@ -7055,9 +7056,9 @@ class ConditionalRequestController {
 
     // Conditional delete
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteOrder(
+    public ResponseEntity&lt;Void&gt; deleteOrder(
             @PathVariable Long id,
-            @RequestHeader("If-Match") Optional<String> ifMatch) {
+            @RequestHeader("If-Match") Optional&lt;String&gt; ifMatch) {
 
         if (ifMatch.isPresent()) {
             Order current = orderService.findById(id);
@@ -7077,12 +7078,12 @@ class ConditionalRequestController {
 
     // Conditional GET for list (pagination-aware)
     @GetMapping
-    public ResponseEntity<List<Order>> getOrders(
+    public ResponseEntity&lt;List<Order&gt;> getOrders(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "20") int size,
-            @RequestHeader("If-None-Match") Optional<String> ifNoneMatch) {
+            @RequestHeader("If-None-Match") Optional&lt;String&gt; ifNoneMatch) {
 
-        List<Order> orders = orderService.findAll(page, size);
+        List&lt;Order&gt; orders = orderService.findAll(page, size);
         String listEtag = etagService.generateEtag(orders);
 
         if (ifNoneMatch.isPresent() &&
@@ -7131,7 +7132,7 @@ class EtagService {
             content.getBytes()) + "\"";
     }
 
-    public String generateListEtag(List<Order> orders) {
+    public String generateListEtag(List&lt;Order&gt; orders) {
         String content = orders.stream()
             .map(o -> o.getId() + ":" + o.getVersion())
             .collect(Collectors.joining("|"));
@@ -7279,7 +7280,7 @@ Conditional requests are the foundation of HTTP caching and optimistic concurren
 class WellDesignedController {
     // Collection resource
     @GetMapping
-    public Page<OrderSummary> listOrders() { return null; }
+    public Page&lt;OrderSummary&gt; listOrders() { return null; }
 
     // Single resource
     @GetMapping("/{id}")
@@ -7287,7 +7288,7 @@ class WellDesignedController {
 
     // Nested resource (sub-resource)
     @GetMapping("/{id}/items")
-    public List<OrderItem> getItems() { return null; }
+    public List&lt;OrderItem&gt; getItems() { return null; }
 
     // Sub-resource item
     @GetMapping("/{orderId}/items/{itemId}")
@@ -7302,7 +7303,7 @@ class WellDesignedController {
 
     // Filtering via query parameters
     @GetMapping("/search")
-    public List<Order> searchOrders(
+    public List&lt;Order&gt; searchOrders(
             @RequestParam String query,
             @RequestParam(required = false) String status,
             @RequestParam(required = false) LocalDate fromDate) {
@@ -7333,7 +7334,7 @@ public User replaceUser(@PathVariable Long id,
 
 @PatchMapping("/users/{id}")
 public User patchUser(@PathVariable Long id,
-                       @RequestBody Map<String, Object> updates) {
+                       @RequestBody Map&lt;String, Object&gt; updates) {
     // Only changed fields → apply partial update
     return userService.partialUpdate(id, updates);
 }
@@ -7365,16 +7366,16 @@ public User patchUser(@PathVariable Long id,
 
 // Status code utility
 class HttpStatusUtil {
-    public static ResponseEntity<?> created(String location, Object body) {
+    public static ResponseEntity&lt;?> created(String location, Object body) {
         return ResponseEntity.created(URI.create(location)).body(body);
     }
 
-    public static ResponseEntity<?> conflict(String message) {
+    public static ResponseEntity&lt;?> conflict(String message) {
         return ResponseEntity.status(HttpStatus.CONFLICT)
             .body(Map.of("error", message));
     }
 
-    public static ResponseEntity<?> validationFailed(Map<String, List<String>> errors) {
+    public static ResponseEntity&lt;?> validationFailed(Map<String, List<String&gt;> errors) {
         ProblemDetail pd = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST);
         pd.setTitle("Validation Failed");
         pd.setProperty("errors", errors);
@@ -7447,7 +7448,7 @@ class HttpStatusUtil {
 â˜ Document deprecations in response headers:
   Deprecation: true
   Sunset: Sat, 1 Jan 2025 00:00:00 GMT
-  Link: </v2/orders>; rel="successor-version"
+  Link: &lt;/v2/orders&gt;; rel="successor-version"
 
 â˜ Provide migration guides for breaking changes
 â˜ Keep old version running for minimum 6 months after deprecation
@@ -7468,13 +7469,13 @@ Response: { data: [...], nextCursor: "id_120", hasMore: true }
 
 â˜ Always return total count for page-based pagination
 â˜ Set sensible defaults (page=0, size=20)
-â˜ Enforce maximum page size (size <= 100)
+â˜ Enforce maximum page size (size &lt;= 100)
 â˜ Include pagination links/headers
 â˜ Use stable sorting for consistent pagination
 */
 
 @GetMapping
-public ResponseEntity<Page<Order>> getOrders(Pageable pageable) {
+public ResponseEntity&lt;Page<Order&gt;> getOrders(Pageable pageable) {
     if (pageable.getPageSize() > 100) {
         pageable = PageRequest.of(
             pageable.getPageNumber(), 100, pageable.getSort());

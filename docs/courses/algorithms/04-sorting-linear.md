@@ -605,7 +605,7 @@ E\left[\sum_{i=0}^{n-1} O(n_i^2)\right] = O\left(\sum_{i=0}^{n-1} E[n_i^2]\right
 | **Non-uniform distribution** | Some buckets crowded, some empty | Use adaptive bucket sizing or different algorithm |
 | **Values outside [0, 1)** | Bucket indexing fails | Normalize: subtract min, divide by range |
 | **Negative values** | floor(n × x) can be negative | Shift range to [0, 1) via normalization |
-| **Very small n** | Overhead of bucket creation dominates | Use insertion sort directly for n < threshold |
+| **Very small n** | Overhead of bucket creation dominates | Use insertion sort directly for n &lt; threshold |
 | **All equal values** | All go to same bucket → O(n²) | Fallback to counting sort if duplicates are heavy |
 
 > **Pro Tip:** Bucket sort needs a good hash function that distributes elements uniformly. If your data is not uniform, use a different algorithm — bucket sort degrades to O(n²).
@@ -809,7 +809,7 @@ void radixSort(std::vector<int>& A) {
 - D) Quick sort
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Counting sort — O(n + k) where k is the key range.
 </details>
 
@@ -821,7 +821,7 @@ C) Counting sort — O(n + k) where k is the key range.
 - D) O(log n)
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) O(n²) — when all elements land in a single bucket.
 </details>
 
@@ -833,7 +833,7 @@ C) O(n²) — when all elements land in a single bucket.
 - D) 32
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) 4 — each pass processes 8 bits (256 values), and 32/8 = 4.
 </details>
 
@@ -845,7 +845,7 @@ B) 4 — each pass processes 8 bits (256 values), and 32/8 = 4.
 - D) It uses randomization
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 B) Counting sort uses element values as array indices rather than pairwise comparisons, bypassing the comparison-based lower bound entirely.
 </details>
 
@@ -857,7 +857,7 @@ B) Counting sort uses element values as array indices rather than pairwise compa
 - D) Bucket sort
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 C) Counting sort — the SA-IS algorithm uses counting sort to sort LMS characters by their first character, exploiting the small alphabet size.
 </details>
 

@@ -346,7 +346,7 @@ This decision tree illustrates the relationship between the pumping lemma (neces
 - D) Decidable
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** The pumping lemma gives a necessary condition for regularity; violating it proves non-regularity.
 </details>
 
@@ -357,7 +357,7 @@ This decision tree illustrates the relationship between the pumping lemma (neces
 - D) Only union
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A)** Regular languages are closed under union, intersection, complement, concatenation, and Kleene star.
 </details>
 
@@ -368,7 +368,7 @@ This decision tree illustrates the relationship between the pumping lemma (neces
 - D) Infinite index
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** Finite-index right-invariant equivalence relation — number of classes = minimal DFA states.
 </details>
 
@@ -379,7 +379,7 @@ This decision tree illustrates the relationship between the pumping lemma (neces
 - D) Accepting states
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B)** States that behave identically on all suffixes are merged.
 </details>
 
@@ -687,11 +687,11 @@ class MyhillNerodeClassifier {
     alphabet: string[],
     language: (s: string) => boolean,
     maxLen: number
-  ): Map<string, string[]> {
+  ): Map&lt;string, string[]&gt; {
     // Generate all strings up to maxLen
     const allStrings = this.generateAllStrings(alphabet, maxLen);
-    const classes = new Map<string, string[]>();
-    const assigned = new Set<string>();
+    const classes = new Map&lt;string, string[]&gt;();
+    const assigned = new Set&lt;string&gt;();
 
     for (const x of allStrings) {
       if (assigned.has(x)) continue;
@@ -732,7 +732,7 @@ class MyhillNerodeClassifier {
     alphabet: string[], maxLen: number
   ): string[] {
     const result: string[] = [""]; // empty string
-    for (let len = 1; len <= maxLen; len++) {
+    for (let len = 1; len &lt;= maxLen; len++) {
       this.genRec(alphabet, len, "", result);
     }
     return result;
@@ -757,11 +757,11 @@ class MyhillNerodeClassifier {
 
 class DFAEquivalenceChecker {
   static areEquivalent(
-    dfa1: { states: Set<string>; alphabet: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> },
-    dfa2: { states: Set<string>; alphabet: Set<string>; transitions: Map<string, string>; start: string; accept: Set<string> }
+    dfa1: { states: Set&lt;string&gt;; alphabet: Set&lt;string&gt;; transitions: Map&lt;string, string&gt;; start: string; accept: Set&lt;string&gt; },
+    dfa2: { states: Set&lt;string&gt;; alphabet: Set&lt;string&gt;; transitions: Map&lt;string, string&gt;; start: string; accept: Set&lt;string&gt; }
   ): boolean {
     // BFS over pairs of states — search for a distinguishing string
-    const visited = new Set<string>();
+    const visited = new Set&lt;string&gt;();
     const queue: [string, string][] = [[dfa1.start, dfa2.start]];
 
     while (queue.length > 0) {

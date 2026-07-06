@@ -729,7 +729,7 @@ Address bits: [Tag | Index | Block Offset]
 - Pros: no conflict misses
 - Cons: expensive (N comparators), high power
 
-**Set-Associative Cache (1 < k < C):**
+**Set-Associative Cache (1 &lt; k < C):**
 - Memory block i maps to set = i mod S
 - Within a set, k blocks are searched associatively
 - Pros: good compromise between conflict misses and hardware cost
@@ -1991,7 +1991,7 @@ Load stalls: 0.20 Ã— 1 = 0.20
 Branch stalls: 0.30 Ã— (1 âˆ’ 0.90) Ã— 2 = 0.30 Ã— 0.10 Ã— 2 = 0.06
 
 But superscalar adds issue restrictions:
-If 2 instructions can't always be paired, effective issue width < 2
+If 2 instructions can't always be paired, effective issue width &lt; 2
 Assuming no pairing restrictions:
 CPI = 0.5 + 0.20 + 0.06 = 0.76
 

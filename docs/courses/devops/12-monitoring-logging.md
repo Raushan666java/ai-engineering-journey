@@ -691,15 +691,15 @@ console.log(`Parsed ${analysis.totalEntries} entries, Error rate: ${(analysis.er
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What are Prometheus's four metric types?</summary>**A)** String, Int, Float, Boolean<br>**B)** Counter, Gauge, Histogram, Summary<br>**C)** Log, Metric, Trace, Event<br>**D)** Hot, Warm, Cold, Archive<br><br>**Answer: B)** Counter, Gauge, Histogram, Summary</details>
+<details><summary>Question 1: What are Prometheus's four metric types?</summary>**A)** String, Int, Float, Boolean<br>**B)** Counter, Gauge, Histogram, Summary<br>**C)** Log, Metric, Trace, Event<br>**D)** Hot, Warm, Cold, Archive<br><br>**Answer: B)** Counter, Gauge, Histogram, Summary&lt;/details&gt;
 
-<details><summary>Question 2: How does Loki differ from Elasticsearch?</summary>**A)** Loki indexes only labels, not content<br>**B)** Loki is slower<br>**C)** Loki has full-text search<br>**D)** Loki uses SQL<br><br>**Answer: A)** Loki indexes only labels, not content</details>
+<details><summary>Question 2: How does Loki differ from Elasticsearch?</summary>**A)** Loki indexes only labels, not content<br>**B)** Loki is slower<br>**C)** Loki has full-text search<br>**D)** Loki uses SQL<br><br>**Answer: A)** Loki indexes only labels, not content&lt;/details&gt;
 
-<details><summary>Question 3: What log level should be used for failed operations needing attention?</summary>**A)** TRACE<br>**B)** DEBUG<br>**C)** INFO<br>**D)** ERROR<br><br>**Answer: D)** ERROR</details>
+<details><summary>Question 3: What log level should be used for failed operations needing attention?</summary>**A)** TRACE<br>**B)** DEBUG<br>**C)** INFO<br>**D)** ERROR<br><br>**Answer: D)** ERROR&lt;/details&gt;
 
-<details><summary>Question 4: What does the RED method stand for?</summary>**A)** Resource, Error, Debug<br>**B)** Rate, Errors, Duration<br>**C)** Reliable, Efficient, Durable<br>**D)** Request, Execute, Deliver<br><br>**Answer: B)** Rate, Errors, Duration</details>
+<details><summary>Question 4: What does the RED method stand for?</summary>**A)** Resource, Error, Debug<br>**B)** Rate, Errors, Duration<br>**C)** Reliable, Efficient, Durable<br>**D)** Request, Execute, Deliver<br><br>**Answer: B)** Rate, Errors, Duration&lt;/details&gt;
 
-<details><summary>Question 5: What is the purpose of recording rules in Prometheus?</summary>**A)** Record all metric values permanently<br>**B)** Precompute expensive queries for faster dashboards<br>**C)** Record alert history<br>**D)** Log Prometheus server metrics<br><br>**Answer: B)** Precompute expensive queries for faster dashboards</details>
+<details><summary>Question 5: What is the purpose of recording rules in Prometheus?</summary>**A)** Record all metric values permanently<br>**B)** Precompute expensive queries for faster dashboards<br>**C)** Record alert history<br>**D)** Log Prometheus server metrics<br><br>**Answer: B)** Precompute expensive queries for faster dashboards&lt;/details&gt;
 
 ---
 
@@ -712,11 +712,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -724,7 +724,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -769,7 +769,7 @@ Monitoring and logging provide visibility into system behavior. Prometheus colle
 
 ### Application Problems (continued)
 4. Extend the `StructuredLogger` class to support: child loggers that inherit parent context, a sampling rate configuration (only log N% of INFO messages), structured error serialization (capture stack traces as JSON), and LogQL-formatted output that Loki can parse directly.
-5. Using the `AlertRuleGenerator` class, create a complete alerting strategy for a payment service that fires alerts at these thresholds: error rate > 0.5% for 5 minutes (critical), P99 latency > 2s for 10 minutes (warning), success rate < 99.9% over 1 hour (critical SLA breach), and queue depth > 1000 for 2 minutes (warning pending capacity).
+5. Using the `AlertRuleGenerator` class, create a complete alerting strategy for a payment service that fires alerts at these thresholds: error rate > 0.5% for 5 minutes (critical), P99 latency > 2s for 10 minutes (warning), success rate &lt; 99.9% over 1 hour (critical SLA breach), and queue depth &gt; 1000 for 2 minutes (warning pending capacity).
 
 ### Challenge Problem
 

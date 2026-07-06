@@ -2630,7 +2630,7 @@ record Feature(String name, boolean active) {}
    - D) There is no difference
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) flatMap flattens nested streams into a single stream; map transforms each element.** map applies a one-to-one transformation, while flatMap applies a one-to-many transformation and flattens the result.
 </details>
 
@@ -2641,7 +2641,7 @@ record Feature(String name, boolean active) {}
    - D) Groups elements by a classifier function
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **A) Merges two collectors into one by branching a stream and combining their results.** teeing() is useful for computing multiple aggregations (e.g., sum and count) in a single pass.
 </details>
 
@@ -2652,19 +2652,19 @@ record Feature(String name, boolean active) {}
    - D) Method references
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Sealed classes combined with switch expressions.** Sealed classes define a fixed set of subtypes, and the compiler verifies that all subtypes are covered in switch patterns.
 </details>
 
 4. How does `Optional.or()` differ from `Optional.orElse()`?
-   - A) or() accepts a Supplier<Optional> for fallback Optional chaining
+   - A) or() accepts a Supplier&lt;Optional&gt; for fallback Optional chaining
    - B) They are identical
    - C) orElse() is faster
    - D) or() throws an exception
 
 <details>
-<summary>Answer</summary>
-**A) or() accepts a Supplier<Optional> for fallback Optional chaining.** or() allows chaining Optional-producing fallbacks, while orElse() returns a direct value.
+<summary>Answer&lt;/summary&gt;
+**A) or() accepts a Supplier&lt;Optional&gt; for fallback Optional chaining.** or() allows chaining Optional-producing fallbacks, while orElse() returns a direct value.
 </details>
 
 ---

@@ -95,7 +95,7 @@ This reveals that logistic regression is **linear in the log-odds space** ? each
 
 The model predicts a class by comparing the probability to a threshold, typically 0.5:
 
-$$\hat{y} = \begin{cases} 1 & \text{if } h_w(x) \geq 0.5 \\ 0 & \text{if } h_w(x) < 0.5 \end{cases}$$
+$$\hat{y} = \begin{cases} 1 & \text{if } h_w(x) \geq 0.5 \\ 0 & \text{if } h_w(x) &lt; 0.5 \end{cases}$$
 
 Since $h_w(x) \geq 0.5 \iff \mathbf{w}^T\mathbf{x} \geq 0$, the decision boundary is $\mathbf{w}^T\mathbf{x} = 0$.
 
@@ -535,7 +535,7 @@ console.log(`Softmax Accuracy: ${(acc * 100).toFixed(2)}%`);
    C) MSE only works for regression problems
    D) MSE requires normally distributed errors
 
-<details><summary>Answer</summary>**B)** Using MSE with sigmoid results in a non-convex cost function with many local minima, making gradient descent unreliable.
+<details><summary>Answer&lt;/summary&gt;**B)** Using MSE with sigmoid results in a non-convex cost function with many local minima, making gradient descent unreliable.
 </details>
 
 2. The sigmoid function $\sigma(z)$ outputs a value of 0.5 when:
@@ -544,7 +544,7 @@ console.log(`Softmax Accuracy: ${(acc * 100).toFixed(2)}%`);
    C) $z = \infty$
    D) $z = -\infty$
 
-<details><summary>Answer</summary>**A)** $\sigma(0) = 1/(1 + e^0) = 1/2 = 0.5$.
+<details><summary>Answer&lt;/summary&gt;**A)** $\sigma(0) = 1/(1 + e^0) = 1/2 = 0.5$.
 </details>
 
 3. Which metric is most appropriate for evaluating a classifier on an imbalanced dataset?
@@ -553,7 +553,7 @@ console.log(`Softmax Accuracy: ${(acc * 100).toFixed(2)}%`);
    C) Mean Squared Error
    D) R-squared
 
-<details><summary>Answer</summary>**B)** F1-Score balances precision and recall, making it suitable for imbalanced classification where accuracy is misleading.
+<details><summary>Answer&lt;/summary&gt;**B)** F1-Score balances precision and recall, making it suitable for imbalanced classification where accuracy is misleading.
 </details>
 
 4. In logistic regression, changing the classification threshold from 0.5 to 0.7 will:
@@ -562,7 +562,7 @@ console.log(`Softmax Accuracy: ${(acc * 100).toFixed(2)}%`);
    C) Increase both precision and recall
    D) Have no effect on precision or recall
 
-<details><summary>Answer</summary>**B)** A higher threshold means fewer positive predictions, so false positives decrease (higher precision) but true positives may also decrease (lower recall).
+<details><summary>Answer&lt;/summary&gt;**B)** A higher threshold means fewer positive predictions, so false positives decrease (higher precision) but true positives may also decrease (lower recall).
 </details>
 
 5. What does an AUC of 0.5 indicate?
@@ -571,7 +571,7 @@ console.log(`Softmax Accuracy: ${(acc * 100).toFixed(2)}%`);
    C) The model has perfect discrimination
    D) The model has high precision
 
-<details><summary>Answer</summary>**B)** AUC = 0.5 means the classifier's performance is equivalent to random guessing (the ROC curve follows the diagonal).
+<details><summary>Answer&lt;/summary&gt;**B)** AUC = 0.5 means the classifier's performance is equivalent to random guessing (the ROC curve follows the diagonal).
 </details>
 
 ---
@@ -721,11 +721,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -733,7 +733,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -759,7 +759,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -777,23 +777,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'ml-algorithms demo')
   const log = new Logger()

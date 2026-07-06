@@ -2361,7 +2361,7 @@ Note that `EnvironmentPostProcessor` can inject at any position ÃƒÂ¢Ã¢â�
    - D) web.xml
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) META-INF/spring/...AutoConfiguration.imports.** In Spring Boot 3.x, auto-configuration candidates are listed in this imports file, replacing the older spring.factories approach.
 </details>
 
@@ -2372,7 +2372,7 @@ Note that `EnvironmentPostProcessor` can inject at any position ÃƒÂ¢Ã¢â�
    - D) @ConditionalOnResource
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **C) @ConditionalOnProperty.** This annotation creates the bean only when a specified property has the expected value (or is defined).
 </details>
 
@@ -2383,7 +2383,7 @@ Note that `EnvironmentPostProcessor` can inject at any position ÃƒÂ¢Ã¢â�
    - D) To enable AOP for constructors
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) To enable immutable @ConfigurationProperties with constructor parameters.** @ConstructorBinding allows configuration properties to be bound through a constructor, enabling final fields.
 </details>
 
@@ -2456,7 +2456,7 @@ Create a `@ConfigurationProperties` class called `NotificationProperties` with p
 | Property | Type | Default |
 |----------|------|---------|
 | app.notification.enabled | boolean | true |
-| app.notification.providers | List<String> | ["email"] |
+| app.notification.providers | List&lt;String&gt; | ["email"] |
 | app.notification.retry-delay | Duration | 30s |
 | app.notification.max-retries | int | 3 |
 | app.notification.email.host | String | (required) |
@@ -2472,7 +2472,7 @@ Build a two-module custom starter that provides a rate-limiting capability:
 
 **Auto-Configuration Module (`ratelimit-spring-boot-autoconfigure`):**
 
-- `RateLimitProperties` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â prefix `ratelimit`, properties: `enabled` (boolean, default true), `default-limit` (int, default 100), `default-window` (Duration, default 1m), `strategies` (Map<String, StrategyConfig>).
+- `RateLimitProperties` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â prefix `ratelimit`, properties: `enabled` (boolean, default true), `default-limit` (int, default 100), `default-window` (Duration, default 1m), `strategies` (Map&lt;String, StrategyConfig&gt;).
 - `StrategyConfig` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â nested class with `limit` (int) and `window` (Duration).
 - `RateLimiter` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â simple token-bucket implementation.
 - `RateLimitAutoConfiguration` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â conditionally creates a `RateLimiter` bean with `@ConditionalOnMissingBean` and `@ConditionalOnProperty`.

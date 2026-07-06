@@ -22,7 +22,7 @@ After completing this chapter, you will be able to:
 | Bayes' Theorem | $P(A|B) = P(B|A)P(A)/P(B)$ | Updating beliefs with evidence |
 | Random Variables | Functions from sample space to reals | Framework for data modeling |
 | CLT | $\bar{X} \sim N(\mu, \sigma^2/n)$ for large $n$ | Why normal distribution is universal |
-| Hypothesis Testing | Reject $H_0$ if p-value < $\alpha$ | Evidence-based decision making |
+| Hypothesis Testing | Reject $H_0$ if p-value &lt; $\alpha$ | Evidence-based decision making |
 
 ## Chapter Roadmap
 
@@ -284,7 +284,7 @@ $$\left(\frac{(n-1)s^2}{\chi^2_{\alpha/2, n-1}}, \frac{(n-1)s^2}{\chi^2_{1-\alph
 **Type II Error:** Fail to reject $H_0$ when it's false (probability = $\beta$).
 **Power:** $1 - \beta$ ? probability of correctly rejecting false $H_0$.
 
-**$p$-value:** Probability of observing data as extreme as what we saw, assuming $H_0$ is true. Reject $H_0$ if $p < \alpha$.
+**$p$-value:** Probability of observing data as extreme as what we saw, assuming $H_0$ is true. Reject $H_0$ if $p &lt; \alpha$.
 
 **Test Statistics:**
 
@@ -409,16 +409,16 @@ console.log(`MC ? 4/(1+x?) dx = ${pi4.toFixed(6)} (expected: ${Math.PI.toFixed(6
 ```typescript
 function cltDemo(numSamples: number, sampleSize: number): { means: number[]; stats: { mean: number; std: number; within2: number } } {
   const means: number[] = [];
-  for (let s = 0; s < numSamples; s++) {
+  for (let s = 0; s &lt; numSamples; s++) {
     let sum = 0;
-    for (let i = 0; i < sampleSize; i++) sum += Math.random();
+    for (let i = 0; i &lt; sampleSize; i++) sum += Math.random();
     means.push(sum / sampleSize);
   }
   // Uniform[0,1]: ?=0.5, s?=1/12 ? CLT: sample mean ~ N(0.5, 1/(12n))
   const mean = means.reduce((a, b) => a + b, 0) / means.length;
   const variance = means.reduce((s, m) => s + (m - 0.5) ** 2, 0) / means.length;
   const theoStd = Math.sqrt(1 / (12 * sampleSize));
-  const within2 = means.filter(m => Math.abs(m - 0.5) < 2 * theoStd).length;
+  const within2 = means.filter(m => Math.abs(m - 0.5) &lt; 2 * theoStd).length;
   return { means, stats: { mean, std: Math.sqrt(variance), within2 } };
 }
 
@@ -436,7 +436,7 @@ function chiSquaredNormal(observed: number[], bins: number, ?: number, s: number
     return observed.length / bins;  // uniform under normal approximation
   });
   let ?? = 0;
-  for (let i = 0; i < bins; i++) ?? += (observed[i] - expected[i]) ** 2 / expected[i];
+  for (let i = 0; i &lt; bins; i++) ?? += (observed[i] - expected[i]) ** 2 / expected[i];
   return ??;
 }
 
@@ -558,11 +558,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -570,7 +570,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"
@@ -596,7 +596,7 @@ export { Processor, Task }
 
 interface CacheEntry { key: string; value: unknown; ttl: number; createdAt: number }
 class Cache {
-  private store: Map<string, CacheEntry> = new Map()
+  private store: Map&lt;string, CacheEntry&gt; = new Map()
   constructor(private defaultTTL: number = 60000) {}
   set(key: string, value: unknown, ttl?: number): void {
     this.store.set(key, { key, value, ttl: ttl ?? this.defaultTTL, createdAt: Date.now() })
@@ -614,23 +614,23 @@ class Cache {
 }
 class Logger {
   private entries: string[] = []
-  log(level: string, msg: string, meta?: Record<string, unknown>): void {
+  log(level: string, msg: string, meta?: Record&lt;string, unknown&gt;): void {
     const entry = JSON.stringify({ timestamp: new Date().toISOString(), level, msg, meta })
     this.entries.push(entry)
     console.log(entry)
   }
-  info(msg: string, meta?: Record<string, unknown>): void { this.log("info", msg, meta) }
-  warn(msg: string, meta?: Record<string, unknown>): void { this.log("warn", msg, meta) }
-  error(msg: string, meta?: Record<string, unknown>): void { this.log("error", msg, meta) }
+  info(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("info", msg, meta) }
+  warn(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("warn", msg, meta) }
+  error(msg: string, meta?: Record&lt;string, unknown&gt;): void { this.log("error", msg, meta) }
   getLogs(): string[] { return [...this.entries] }
   clear(): void { this.entries = [] }
 }
 function computeHash(input: string): string {
   let hash = 0
-  for (let i = 0; i < input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
+  for (let i = 0; i &lt; input.length; i++) { const chr = input.charCodeAt(i); hash = ((hash << 5) - hash) + chr; hash |= 0 }
   return Math.abs(hash).toString(16)
 }
-async function demo(): Promise<void> {
+async function demo(): Promise&lt;void&gt; {
   const cache = new Cache(5000)
   cache.set('key1', 'engineering-math demo')
   const log = new Logger()

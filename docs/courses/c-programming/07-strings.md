@@ -900,10 +900,10 @@ Case 3: 41 42 00 00 00 00 00 00 00 00
 
 | i | src[i] | n limit | dest[i] after copy | Stop? |
 |---|--------|---------|-------------------|-------|
-| 0 | `'H'` | i < 4 (yes) | `'H'` | No |
-| 1 | `'e'` | i < 4 (yes) | `'e'` | No |
-| 2 | `'l'` | i < 4 (yes) | `'l'` | No |
-| 3 | `'l'` | i < 4 (yes) | `'l'` | No |
+| 0 | `'H'` | i &lt; 4 (yes) | `'H'` | No |
+| 1 | `'e'` | i &lt; 4 (yes) | `'e'` | No |
+| 2 | `'l'` | i &lt; 4 (yes) | `'l'` | No |
+| 3 | `'l'` | i &lt; 4 (yes) | `'l'` | No |
 | - | - | i = 4 -> stop | - | **Yes** |
 
 After copy: `dest = {'H','e','l','l', ...} ` - **no null terminator!** Checking dest[4] reveals the original byte, not `'\0'`. This is the classic `strncpy` trap.
@@ -912,12 +912,12 @@ After copy: `dest = {'H','e','l','l', ...} ` - **no null terminator!** Checking 
 
 | i | src[i] | n limit | dest[i] after copy | Stop? |
 |---|--------|---------|-------------------|-------|
-| 0 | `'H'` | i < 6 (yes) | `'H'` | No |
-| 1 | `'i'` | i < 6 (yes) | `'i'` | No |
-| 2 | `'\0'` | i < 6 (yes) | `'\0'` | src ended, but continue padding |
-| 3 | - | i < 6 (yes) | `'\0'` | Padding with null |
-| 4 | - | i < 6 (yes) | `'\0'` | Padding with null |
-| 5 | - | i < 6 (yes) | `'\0'` | Padding with null |
+| 0 | `'H'` | i &lt; 6 (yes) | `'H'` | No |
+| 1 | `'i'` | i &lt; 6 (yes) | `'i'` | No |
+| 2 | `'\0'` | i &lt; 6 (yes) | `'\0'` | src ended, but continue padding |
+| 3 | - | i &lt; 6 (yes) | `'\0'` | Padding with null |
+| 4 | - | i &lt; 6 (yes) | `'\0'` | Padding with null |
+| 5 | - | i &lt; 6 (yes) | `'\0'` | Padding with null |
 
 After copy: `dest = {'H','i','\0','\0','\0','\0'}` - null-padded.
 
@@ -1081,8 +1081,8 @@ dest starts as `"AB\0..."` (buffer has space). src = `"CDEF"`, n = 2.
 | Find end | 0 | - | `'A'` | - | strlen("AB") = 2 -> start at i=2 |
 | Find end | 1 | - | `'B'` | - | |
 | Find end | 2 | - | `'\0'` | 0 | Found end of dest |
-| Append | 2 | `'C'` | `'C'` | 0 | Copy src[0], j=0 < n=2 |
-| Append | 3 | `'D'` | `'D'` | 1 | Copy src[1], j=1 < n=2 |
+| Append | 2 | `'C'` | `'C'` | 0 | Copy src[0], j=0 &lt; n=2 |
+| Append | 3 | `'D'` | `'D'` | 1 | Copy src[1], j=1 &lt; n=2 |
 | Append | 4 | - | `'\0'` | - | j=2 >= n=2, add null terminator |
 
 Final: `dest = "ABCD\0..."` - always null-terminated.
@@ -1096,7 +1096,7 @@ Final: `dest = "ABCD\0..."` - always null-terminated.
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | **Null-termination** | Always null-terminates (unlike strncpy) | Still caller's responsibility to check buffer size |
-| **Bounds** | Copies at most n chars from src | Does not check dest capacity - overflow if remaining space < min(n, src_len) + 1 |
+| **Bounds** | Copies at most n chars from src | Does not check dest capacity - overflow if remaining space &lt; min(n, src_len) + 1 |
 | **Safety** | Safer than strcat when used correctly | Remaining space must be computed manually |
 
 **Edge cases:**
@@ -1262,7 +1262,7 @@ strncmp("abcde", "abcde", 10) = 0
 
 **Dry Run: strncmp("abcde", "abcxy", 4)**
 
-| i | s1[i] | s2[i] | Equal? | i < n? | Notes |
+| i | s1[i] | s2[i] | Equal? | i &lt; n? | Notes |
 |---|-------|-------|--------|--------|-------|
 | 0 | `'a'` | `'a'` | Yes | Yes | Continue |
 | 1 | `'b'` | `'b'` | Yes | Yes | Continue |
@@ -2204,7 +2204,7 @@ strtod("abc"): NO CONVERSION
 
 | Feature | `atoi` | `strtol` | `sscanf` |
 |---------|--------|----------|----------|
-| Error detection | None (returns 0 for both "0" and error) | Full (endptr + errno) | Partial (return value < expected count) |
+| Error detection | None (returns 0 for both "0" and error) | Full (endptr + errno) | Partial (return value &lt; expected count) |
 | Base specification | Decimal only | Any base 2-36 (or auto-detect 0) | Decimal via `%d`, hex via `%x`, octal via `%o` |
 | Overflow handling | **Undefined behavior** | Sets errno to ERANGE, returns LONG_MAX/LONG_MIN | Undefined behavior |
 | Trailing data detection | None | Via endptr | Via `%n` |
@@ -2457,7 +2457,7 @@ scanf("%9s", buf);  /* read at most 9 chars + null terminator */
 | Feature | `strcpy` | `strncpy` | `snprintf` |
 |---------|----------|-----------|------------|
 | **Bounds-checked?** | **No** | Partial — pads with nulls but doesn't null-terminate if source >= n | **Yes** — always null-terminates |
-| **Null-termination** | Always | Only if strlen(src) < n — dangerous silent failure | **Always** (as long as n > 0) |
+| **Null-termination** | Always | Only if strlen(src) &lt; n — dangerous silent failure | **Always** (as long as n &gt; 0) |
 | **Performance** | Fast, simple | Slower due to null-padding | Slowest (format parsing overhead) |
 | **Pads with nulls?** | No | Yes — fills rest of buffer with '\0' | No |
 | **Return value** | `char *` (dest) | `char *` (dest) | Characters needed (detect truncation) |
@@ -2932,7 +2932,7 @@ CSV field trimmed: "John Doe"
    - `strlen(s)` — O(n) count of characters before `'\0'`. Use `sizeof` only for actual array size.
    - `strcpy(d, s)` — copies until null. **Never use without size checking.** Prefer `snprintf`.
    - `strncpy(d, s, n)` — partially safe but does **not** guarantee null-termination. Dangerous.
-   - `strcmp(a, b)` — returns <0, 0, >0. `strncmp` adds length limit.
+   - `strcmp(a, b)` — returns &lt;0, 0, &gt;0. `strncmp` adds length limit.
    - `strcat(d, s)` — appends. **Never use** — no bounds checking. Use `snprintf`.
 
 4. **String search functions:**

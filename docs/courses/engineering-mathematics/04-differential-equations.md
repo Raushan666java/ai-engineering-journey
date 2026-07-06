@@ -174,7 +174,7 @@ $$x(t) = A\cos(\omega_0 t) + B\sin(\omega_0 t), \quad \omega_0 = \sqrt{k/m}$$
 
 **Damped Spring:** $m\frac{d^2 x}{dt^2} + c\frac{dx}{dt} + kx = 0$
 
-Three cases: overdamped ($c^2 > 4mk$), critically damped ($c^2 = 4mk$), underdamped ($c^2 < 4mk$).
+Three cases: overdamped ($c^2 > 4mk$), critically damped ($c^2 = 4mk$), underdamped ($c^2 &lt; 4mk$).
 
 **Forced Oscillations:** $m x'' + c x' + kx = F_0 \cos(\omega t)$
 
@@ -234,7 +234,7 @@ Assume $\mathbf{x} = \mathbf{v} e^{\lambda t}$, giving $A\mathbf{v} = \lambda\ma
 
 where $u(t-a)$ is the unit step function:
 
-$$u(t-a) = \begin{cases} 0 & t < a \\ 1 & t \geq a \end{cases}$$
+$$u(t-a) = \begin{cases} 0 & t &lt; a \\ 1 & t \geq a \end{cases}$$
 
 **Solving IVPs with Laplace Transforms:**
 
@@ -279,7 +279,7 @@ Solutions are Bessel functions $J_\nu(x)$ and $Y_\nu(x)$.
 
 $$A u_{xx} + B u_{xy} + C u_{yy} + D u_x + E u_y + F u = G$$
 
-- **Elliptic** ($B^2 - 4AC < 0$): Laplace's equation $u_{xx} + u_{yy} = 0$
+- **Elliptic** ($B^2 - 4AC &lt; 0$): Laplace's equation $u_{xx} + u_{yy} = 0$
 - **Parabolic** ($B^2 - 4AC = 0$): Heat equation $u_t = \alpha u_{xx}$
 - **Hyperbolic** ($B^2 - 4AC > 0$): Wave equation $u_{tt} = c^2 u_{xx}$
 
@@ -458,7 +458,7 @@ The $e^t$ factor causes exponential growth, while the rotation matrix causes osc
 
 ### Example 7: Solving a PDE with Separation of Variables
 
-Solve the wave equation $u_{tt} = c^2 u_{xx}$ for $0 < x < L$, $t > 0$, with $u(0,t) = u(L,t) = 0$, $u(x,0) = f(x)$, $u_t(x,0) = 0$.
+Solve the wave equation $u_{tt} = c^2 u_{xx}$ for $0 &lt; x < L$, $t &gt; 0$, with $u(0,t) = u(L,t) = 0$, $u(x,0) = f(x)$, $u_t(x,0) = 0$.
 
 **Solution:**
 Assume $u(x,t) = X(x)T(t)$. Substitute: $X T'' = c^2 X'' T$.
@@ -635,7 +635,7 @@ console.log(`Damped spring at t=5: y=${dY[500][0].toFixed(4)} (amplitude decayin
 ```typescript
 function eulerMethod(f: (t: number, y: number) => number, t0: number, y0: number, h: number, steps: number) {
   const t = [t0], y = [y0];
-  for (let i = 0; i < steps; i++) {
+  for (let i = 0; i &lt; steps; i++) {
     y.push(y[i] + h * f(t[i], y[i]));
     t.push(t[i] + h);
   }
@@ -672,7 +672,7 @@ function rk4(
 ): { t: number[]; y: number[][] } {
   const t = [t0];
   const y = [y0];
-  for (let i = 0; i < steps; i++) {
+  for (let i = 0; i &lt; steps; i++) {
     const ti = t[i], yi = y[i];
     const k1 = f(ti, yi).map(v => v);
     const k2 = f(ti + h / 2, yi.map((v, j) => v + (h / 2) * k1[j]));
@@ -705,7 +705,7 @@ function solveCharacteristic(coeffs: number[]): { roots: number[]; type: string 
     const r1 = (-b + Math.sqrt(disc)) / (2 * a);
     const r2 = (-b - Math.sqrt(disc)) / (2 * a);
     return { roots: [r1, r2], type: 'real and distinct' };
-  } else if (Math.abs(disc) < 1e-10) {
+  } else if (Math.abs(disc) &lt; 1e-10) {
     return { roots: [-b / (2 * a)], type: 'repeated real' };
   } else {
     return { roots: [-b / (2 * a)], type: 'complex' };
@@ -724,8 +724,8 @@ function directionField(
   const dt = (tRange[1] - tRange[0]) / gridSize;
   const dy = (yRange[1] - yRange[0]) / gridSize;
   const fields: { t: number; y: number; slope: number }[] = [];
-  for (let i = 0; i <= gridSize; i++)
-    for (let j = 0; j <= gridSize; j++) {
+  for (let i = 0; i &lt;= gridSize; i++)
+    for (let j = 0; j &lt;= gridSize; j++) {
       const t = tRange[0] + i * dt, y = yRange[0] + j * dy;
       fields.push({ t: +t.toFixed(2), y: +y.toFixed(2), slope: +f(t, y).toFixed(2) });
     }

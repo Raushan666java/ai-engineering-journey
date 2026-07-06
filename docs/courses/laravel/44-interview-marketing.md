@@ -729,7 +729,7 @@ This chapter covered marketing & advertising interview questions for Laravel dev
 - C) Only email marketing
 - D) Only print advertising
 
-<details><summary>Answer</summary>B) Multi-channel budget allocation and execution</details>
+<details><summary>Answer&lt;/summary&gt;B) Multi-channel budget allocation and execution&lt;/details&gt;
 
 **Q2:** What is audience segmentation based on?
 - A) Only age
@@ -737,7 +737,7 @@ This chapter covered marketing & advertising interview questions for Laravel dev
 - C) Only location
 - D) Only purchase history
 
-<details><summary>Answer</summary>B) Behavioral + demographic + psychographic data</details>
+<details><summary>Answer&lt;/summary&gt;B) Behavioral + demographic + psychographic data&lt;/details&gt;
 
 **Q3:** What does marketing automation typically manage?
 - A) Only social posts
@@ -745,7 +745,7 @@ This chapter covered marketing & advertising interview questions for Laravel dev
 - C) Only ad spend
 - D) Only content creation
 
-<details><summary>Answer</summary>B) Email workflows, triggers, and lead nurturing</details>
+<details><summary>Answer&lt;/summary&gt;B) Email workflows, triggers, and lead nurturing&lt;/details&gt;
 
 **Q4:** What does attribution modeling measure?
 - A) Total ad spend
@@ -753,4 +753,4 @@ This chapter covered marketing & advertising interview questions for Laravel dev
 - C) Content word count
 - D) Email open rates only
 
-<details><summary>Answer</summary>B) Which marketing channels drive conversions</details>
+<details><summary>Answer&lt;/summary&gt;B) Which marketing channels drive conversions&lt;/details&gt;

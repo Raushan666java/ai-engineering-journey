@@ -1167,7 +1167,7 @@ Merge result: cart=["item_1", "item_2"], VC=[A:1, B:1]
 |-----------|---------|---------|
 | V1 ≤ V2 (all entries ≤) | V1 happened before V2 (causal) | [A:1, B:0] ≤ [A:1, B:2] |
 | V1 ≥ V2 (all entries ≥) | V1 happened after V2 (causal) | [A:2, B:1] ≥ [A:1, B:1] |
-| V1 || V2 (some >, some <) | Concurrent (conflict) | [A:2, B:1] || [A:1, B:2] |
+| V1 || V2 (some >, some &lt;) | Concurrent (conflict) | [A:2, B:1] || [A:1, B:2] |
 | V1 == V2 | Identical history | [A:1, B:1] == [A:1, B:1] |
 
 ### 14.7.4 Vector Clock — Dry Run Trace Table
@@ -1670,7 +1670,7 @@ If "aaron", "abby", "adam"... all go to Shard 0 — uneven!
 
 **Advantages:**
 - Efficient range scans (related data stored together)
-- Easy to implement range queries (BETWEEN, >, <)
+- Easy to implement range queries (BETWEEN, >, &lt;)
 - Good for time-series (by date)
 
 **Disadvantages:**

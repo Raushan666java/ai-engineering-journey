@@ -1251,7 +1251,7 @@ SD-WAN is like a smart highway system that dynamically assigns lanes based on tr
 1. A packet arrives at the SD-WAN edge device (CPE).
 2. The CPE classifies the application using DPI (e.g., Zoom video conferencing).
 3. The CPE queries the SD-WAN controller for the active SLA policy for Zoom.
-4. The controller responds: "Use MPLS path (latency < 50ms, jitter < 10ms)".
+4. The controller responds: "Use MPLS path (latency &lt; 50ms, jitter < 10ms)".
 5. The CPE measures latency/jitter on the MPLS path via active probing.
 6. If the MPLS path meets SLA, the CPE forwards the packet via MPLS.
 7. If the MPLS path degrades (jitter spike), the CPE switches to the LTE backup path without dropping the session.

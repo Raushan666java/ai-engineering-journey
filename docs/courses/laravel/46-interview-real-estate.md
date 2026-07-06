@@ -1321,7 +1321,7 @@ $nearby = Property::query()
 
 **Map integration considerations:**
 
-- **Frontend**: Use Mapbox GL JS (preferred for real estate → better styling, 3D buildings) or Google Maps. Display properties as clustered markers at zoom levels < 14, switching to individual markers at higher zoom.
+- **Frontend**: Use Mapbox GL JS (preferred for real estate → better styling, 3D buildings) or Google Maps. Display properties as clustered markers at zoom levels &lt; 14, switching to individual markers at higher zoom.
 - **Image overlays**: Support parcel boundaries, school district maps, flood zones, and walkability scores as vector tile layers.
 - **Drive time polygons**: Use Mapbox Isochrone API to show "15-minute drive radius" from a property, useful for commute-based searches.
 - **Street view**: Embed Google Street View or Mapbox 360 imagery on listing detail pages. Generate automatically from the property's coordinates.
@@ -2107,7 +2107,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Only address
 - D) Only photos
 
-<details><summary>Answer</summary>B) Type, size, location, price, amenities, media</details>
+<details><summary>Answer&lt;/summary&gt;B) Type, size, location, price, amenities, media&lt;/details&gt;
 
 **Q2:** What is the primary valuation method for residential properties?
 - A) Cost approach
@@ -2115,7 +2115,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Income approach
 - D) Tax assessment
 
-<details><summary>Answer</summary>B) Comparable sales analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) Comparable sales analysis&lt;/details&gt;
 
 **Q3:** What is the first step in a real estate transaction workflow?
 - A) Closing
@@ -2123,7 +2123,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Inspection
 - D) Financing
 
-<details><summary>Answer</summary>B) Offer submission</details>
+<details><summary>Answer&lt;/summary&gt;B) Offer submission&lt;/details&gt;
 
 **Q4:** What does buyer matching optimize for?
 - A) Lowest price
@@ -2131,7 +2131,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Largest property size
 - D) Newest listings
 
-<details><summary>Answer</summary>B) Preference-based property scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) Preference-based property scoring&lt;/details&gt;
 
 ---
 
@@ -2182,7 +2182,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Only address
 - D) Only photos
 
-<details><summary>Answer</summary>B) Type, size, location, price, amenities, media</details>
+<details><summary>Answer&lt;/summary&gt;B) Type, size, location, price, amenities, media&lt;/details&gt;
 
 **Q2:** What is the primary valuation method for residential properties?
 - A) Cost approach
@@ -2190,7 +2190,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Income approach
 - D) Tax assessment
 
-<details><summary>Answer</summary>B) Comparable sales analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) Comparable sales analysis&lt;/details&gt;
 
 **Q3:** What is the first step in a real estate transaction workflow?
 - A) Closing
@@ -2198,7 +2198,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Inspection
 - D) Financing
 
-<details><summary>Answer</summary>B) Offer submission</details>
+<details><summary>Answer&lt;/summary&gt;B) Offer submission&lt;/details&gt;
 
 **Q4:** What does buyer matching optimize for?
 - A) Lowest price
@@ -2206,7 +2206,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Largest property size
 - D) Newest listings
 
-<details><summary>Answer</summary>B) Preference-based property scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) Preference-based property scoring&lt;/details&gt;
 
 ---
 
@@ -2257,7 +2257,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Only address
 - D) Only photos
 
-<details><summary>Answer</summary>B) Type, size, location, price, amenities, media</details>
+<details><summary>Answer&lt;/summary&gt;B) Type, size, location, price, amenities, media&lt;/details&gt;
 
 **Q2:** What is the primary valuation method for residential properties?
 - A) Cost approach
@@ -2265,7 +2265,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Income approach
 - D) Tax assessment
 
-<details><summary>Answer</summary>B) Comparable sales analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) Comparable sales analysis&lt;/details&gt;
 
 **Q3:** What is the first step in a real estate transaction workflow?
 - A) Closing
@@ -2273,7 +2273,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Inspection
 - D) Financing
 
-<details><summary>Answer</summary>B) Offer submission</details>
+<details><summary>Answer&lt;/summary&gt;B) Offer submission&lt;/details&gt;
 
 **Q4:** What does buyer matching optimize for?
 - A) Lowest price
@@ -2281,7 +2281,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Largest property size
 - D) Newest listings
 
-<details><summary>Answer</summary>B) Preference-based property scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) Preference-based property scoring&lt;/details&gt;
 
 ---
 
@@ -2332,7 +2332,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Only address
 - D) Only photos
 
-<details><summary>Answer</summary>B) Type, size, location, price, amenities, media</details>
+<details><summary>Answer&lt;/summary&gt;B) Type, size, location, price, amenities, media&lt;/details&gt;
 
 **Q2:** What is the primary valuation method for residential properties?
 - A) Cost approach
@@ -2340,7 +2340,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Income approach
 - D) Tax assessment
 
-<details><summary>Answer</summary>B) Comparable sales analysis</details>
+<details><summary>Answer&lt;/summary&gt;B) Comparable sales analysis&lt;/details&gt;
 
 **Q3:** What is the first step in a real estate transaction workflow?
 - A) Closing
@@ -2348,7 +2348,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Inspection
 - D) Financing
 
-<details><summary>Answer</summary>B) Offer submission</details>
+<details><summary>Answer&lt;/summary&gt;B) Offer submission&lt;/details&gt;
 
 **Q4:** What does buyer matching optimize for?
 - A) Lowest price
@@ -2356,7 +2356,7 @@ For performance, cache the NL→filter mapping for common queries. For ambiguous
 - C) Largest property size
 - D) Newest listings
 
-<details><summary>Answer</summary>B) Preference-based property scoring</details>
+<details><summary>Answer&lt;/summary&gt;B) Preference-based property scoring&lt;/details&gt;
 
 ## Summary
 

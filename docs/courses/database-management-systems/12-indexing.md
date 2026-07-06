@@ -199,7 +199,7 @@ Sparse Index:
 ```
 
 **Search for emp_id=4:**
-1. Find largest key <= 4 in sparse index -> 3 -> Block 2
+1. Find largest key &lt;= 4 in sparse index -&gt; 3 -> Block 2
 2. Read Block 2 -> scan for id=4 -> found
 
 **Comparison:**
@@ -241,7 +241,7 @@ B-Tree of order 5 (example, typically much wider):
 - Self-balancing (all leaves at same depth)
 - Each node holds ceil(m/2)-1 to m-1 keys
 - Height: O(log_m n) or O(log n / log m)
-- With m=500, height <= 3 for 125M keys
+- With m=500, height &lt;= 3 for 125M keys
 - Internal nodes contain keys + pointers to children
 - Data pointers are attached to every key (in both internal and leaf nodes)
 
@@ -289,7 +289,7 @@ Step | Node Visited       | i | keys[i] | Comparison     | Action
 
 **Numbered Steps:**
 1. Search for the key to find the correct leaf where it should go
-2. If the leaf has room (n < m-1): insert key in sorted order
+2. If the leaf has room (n &lt; m-1): insert key in sorted order
 3. If the leaf is full:
    a. Split into two nodes (left and right), distributing keys evenly
    b. Promote the middle key to the parent
@@ -605,7 +605,7 @@ class BTree:
 
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
-| **Search** | O(log_m n) = O(log n / log m) | Height <= log_{ceil(m/2)} (n+1). With m=500, height ~3 for 125M keys. Each level is one I/O. |
+| **Search** | O(log_m n) = O(log n / log m) | Height &lt;= log_{ceil(m/2)} (n+1). With m=500, height ~3 for 125M keys. Each level is one I/O. |
 | **Insert** | O(log_m n) | Search to leaf (log n), plus write modified nodes on path. Split propagates upward at most O(log n) times. |
 | **Delete** | O(log_m n) | Search + underflow fixes (borrow/merge) propagate upward at most O(log n). |
 | **Space** | O(n) | Each key stored once. Internal nodes add overhead: O(n / (m/2)) nodes approx O(n/m). |
@@ -957,7 +957,7 @@ class BPlusTree:
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | **Search** | O(log_m n) | Tree height = log_{fanout} n. Each internal node visited once. Leaf has ~50% average occupancy. |
-| **Insert** | O(log_m n) | Find leaf (log_m n) + leaf insert (O(1) if room, O(m) if split). Splits propagate <= O(log_m n) times. |
+| **Insert** | O(log_m n) | Find leaf (log_m n) + leaf insert (O(1) if room, O(m) if split). Splits propagate &lt;= O(log_m n) times. |
 | **Delete** | O(log_m n) | Find + remove + possible merge propagation. |
 | **Range scan** | O(log_m n + k) | Find lower bound (log_m n) + follow leaf links for k results. Each leaf I/O retrieves ~page/2 keys. |
 | **Space** | O(n) | n keys in leaves, O(n/m) internal nodes. |
@@ -1126,7 +1126,7 @@ Solves the growth problem by using a **directory** that doubles in size when a b
 **Structure:**
 - Directory of 2^d pointers (d = global depth)
 - Each directory entry points to a bucket
-- Each bucket has a local depth d_local <= d
+- Each bucket has a local depth d_local &lt;= d
 - Hash function produces d bits -> directory index
 
 **Extendable Hashing Implementation (Python):**
@@ -1537,7 +1537,7 @@ WHERE dept_id = 10 AND last_name LIKE 'S%';
 - Foreign key columns (accelerate JOINs)
 - High-selectivity columns (many distinct values -> few rows per key)
 - Large tables where full scans are slow
-- Queries returning < 5% of rows (index more efficient than scan)
+- Queries returning &lt; 5% of rows (index more efficient than scan)
 
 **When NOT to Create an Index:**
 - Small tables (< 1000 pages)

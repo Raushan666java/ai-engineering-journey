@@ -2225,7 +2225,7 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
    - D) Secure Enclave
 
 <details>
-<summary>Answers</summary>
+<summary>Answers&lt;/summary&gt;
 1. B, 2. A, 3. B, 4. B, 5. B, 6. B, 7. B
 </details>
 

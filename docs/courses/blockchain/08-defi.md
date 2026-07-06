@@ -557,7 +557,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
    - D) ~50%
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) ~20%.** The formula for impermanent loss is (2vr)/(1+r) - 1 where r is the price ratio. For r=4, IL ˜ 20%. For comparison, 2x ? 5.7%, 3x ? 13.4%, 5x ? 25.5%.
 </details>
 
@@ -568,7 +568,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
    - D) Because each block has a gas limit
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Because Ethereum atomicity guarantees the entire tx succeeds or reverts.** If the flash loan isn't repaid by the end of the transaction, the entire transaction reverts — including the loan. This makes them trustless.
 </details>
 
@@ -579,7 +579,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
    - D) Regulatory compliance
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) A death spiral where price depeg triggers further selling.** Algorithmic stablecoins rely on arbitrage to maintain their peg. If confidence breaks, the arbitrage mechanism can reverse, causing a cascading devaluation (as seen with UST/LUNA).
 </details>
 
@@ -590,7 +590,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
    - D) Total Verified Loans
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) Total Value Locked — the amount of assets deposited in a protocol.** TVL measures the sum of all assets deposited in a DeFi protocol's smart contracts. It's a key metric for protocol adoption and ecosystem health.
 </details>
 
@@ -601,7 +601,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
    - D) DAOs are illegal
 
 <details>
-<summary>Answer</summary>
+<summary>Answer&lt;/summary&gt;
 **B) DAO governance is transparent and executed through on-chain voting.** In a DAO, all proposals, votes, and treasury movements are recorded on-chain. This makes governance transparent and auditable, unlike traditional corporate governance which often happens behind closed doors.
 </details>
 
@@ -897,11 +897,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -909,7 +909,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

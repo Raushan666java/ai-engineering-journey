@@ -509,7 +509,7 @@ Test your understanding with these quick questions.
 - C) SSR is for static sites
 - D) ISR requires a database
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **A) SSR (Server-Side Rendering) generates HTML for every request. ISR (Incremental Static Regeneration) pre-builds static pages and revalidates them after a configured time period.**
 
@@ -522,7 +522,7 @@ Test your understanding with these quick questions.
 - C) To configure build settings
 - D) To define API routes
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Layouts wrap page content and persist across navigations, preventing remounting of shared UI elements like navbars, sidebars, and footers.**
 
@@ -535,7 +535,7 @@ Test your understanding with these quick questions.
 - C) They support all React hooks
 - D) They render faster on the client
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) Server Components fetch data during server rendering, so no client JavaScript is needed for data fetching. This reduces bundle size and eliminates the request waterfall effect common in client-side fetching.**
 
@@ -548,7 +548,7 @@ Test your understanding with these quick questions.
 - C) When the page has images
 - D) When the page uses TypeScript
 
-<details><summary>Answer</summary>
+<details><summary>Answer&lt;/summary&gt;
 
 **B) `force-dynamic` opts a page into SSR (server-side rendering on every request), which is necessary for pages that display user-specific or frequently changing data that cannot be cached.**
 
@@ -762,11 +762,11 @@ class Processor {
   private tasks: Task[] = []
   private maxConcurrency: number
   constructor(maxConcurrency: number = 4) { this.maxConcurrency = maxConcurrency }
-  async add(task: Omit<Task, "status">): Promise<void> {
+  async add(task: Omit&lt;Task, "status"&gt;): Promise&lt;void&gt; {
     this.tasks.push({ ...task, status: "pending" })
   }
-  async runAll(): Promise<void> {
-    const running: Promise<void>[] = []
+  async runAll(): Promise&lt;void&gt; {
+    const running: Promise&lt;void&gt;[] = []
     for (const t of this.tasks) {
       if (running.length >= this.maxConcurrency) { await Promise.race(running) }
       const p = this.execute(t).finally(() => { const i = running.indexOf(p); if (i >= 0) running.splice(i, 1) })
@@ -774,7 +774,7 @@ class Processor {
     }
     await Promise.all(running)
   }
-  private async execute(t: Task): Promise<void> {
+  private async execute(t: Task): Promise&lt;void&gt; {
     t.status = "running"
     await new Promise(r => setTimeout(r, 10))
     t.status = "done"

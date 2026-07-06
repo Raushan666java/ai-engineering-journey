@@ -810,7 +810,7 @@ WHERE rank <= 2;
 |----------|-----------|--------|
 | dept_stats | GROUP BY department | Eng: (83500,2), Sales: (78000,2), Mktg: (52000,1) |
 | dept_ranking | RANK OVER (ORDER BY avg_sal DESC) | Eng:1, Sales:2, Mktg:3 |
-| Main query | WHERE rank <= 2 | Eng: (83500,2,1), Sales: (78000,2,2) |
+| Main query | WHERE rank &lt;= 2 | Eng: (83500,2,1), Sales: (78000,2,2) |
 
 ### 6.2.3 Recursive CTEs
 
@@ -883,11 +883,11 @@ SELECT d FROM dates;
 | Iteration | Set | Operation | Produced Rows | Accumulated Result |
 |-----------|-----|-----------|---------------|-------------------|
 | Anchor | R0 | SELECT 1 | (1) | {1} |
-| 1 | R1 | SELECT n+1 FROM numbers WHERE n<5 using R0 | (2) | {1, 2} |
-| 2 | R2 | SELECT n+1 WHERE n<5 using R1 | (3) | {1, 2, 3} |
-| 3 | R3 | SELECT n+1 WHERE n<5 using R2 | (4) | {1, 2, 3, 4} |
-| 4 | R4 | SELECT n+1 WHERE n<5 using R3 | (5) | {1, 2, 3, 4, 5} |
-| 5 | R5 | SELECT n+1 WHERE n<5 using R4 (n=5, not <5) | () empty | {1, 2, 3, 4, 5} |
+| 1 | R1 | SELECT n+1 FROM numbers WHERE n&lt;5 using R0 | (2) | {1, 2} |
+| 2 | R2 | SELECT n+1 WHERE n&lt;5 using R1 | (3) | {1, 2, 3} |
+| 3 | R3 | SELECT n+1 WHERE n&lt;5 using R2 | (4) | {1, 2, 3, 4} |
+| 4 | R4 | SELECT n+1 WHERE n&lt;5 using R3 | (5) | {1, 2, 3, 4, 5} |
+| 5 | R5 | SELECT n+1 WHERE n&lt;5 using R4 (n=5, not <5) | () empty | {1, 2, 3, 4, 5} |
 | End | → | Empty result set → stop | → | {1, 2, 3, 4, 5} |
 
 **Dry Run Trace Table (Org Chart):**

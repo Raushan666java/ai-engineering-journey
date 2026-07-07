@@ -1,7 +1,7 @@
 # Learning How to Learn
 
 > **Master the universal meta-skill: accelerate learning across every course in this repository.**
-> 15 chapters · 260 Q&As · 15 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
+> 16 chapters · 290 Q&As · 16 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
 >
 > *Deployed: commit `23502cfa3`*
 
@@ -86,6 +86,7 @@ You'll learn:
 | 13 | Learning Analytics & Self-Measurement | Learning metrics, SpacedRepMetric, knowledge graph health, confidence calibration, forgetting curve tracking, dashboards, review logs, analytics-driven study decisions, dashboard build walkthrough | Q186–Q205 |
 | 14 | Social Learning & Communities | Community advantage, social accountability, study groups, pair programming, building in public, mentoring, online communities, open-source contributions, Stack Overflow, teaching as learning, learning economy | Q206–Q225 |
 | 15 | Exam Cracking Mastery | EXAM framework, 3-phase strategy, ROI prioritization, spiral schedule, C/M/E/R mistake taxonomy, mock analysis, speed-accuracy curve, exam-specific strategies for GATE/IBPS/NIC/SBI/RBI/SSC, exam day protocol, multi-attempt strategy | Q226–Q260 |
+| 16 | Self-Assessment & Strategy | 5-step self-assessment, gap analysis, strategy creation framework, structured prep system, OODA loop, Dreyfus model, feedback loops, adaptive strategies, retake planning | Q261–Q290 |
 
 ---
 
@@ -115,6 +116,8 @@ Before you begin, rate yourself on these six statements (1 = strongly disagree, 
 - Q6 → Chapters 10 & 12 (Meta-Learning System & Teaching Practice)
 - Q7 → Chapter 13 (Learning Analytics)
 - Q8 → Chapter 14 (Social Learning)
+- Q9 → Chapter 15 (Exam Cracking)
+- Q10 → Chapter 16 (Self-Assessment & Strategy)
 
 ---
 

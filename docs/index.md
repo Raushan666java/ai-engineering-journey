@@ -9,13 +9,13 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 # AI Engineering Journey
 
-<p class="hero-tagline">Laravel developer → AI Automation Engineer. 500+ lessons across 20 phases, one documented transition at a time.</p>
+<p class="hero-tagline">Laravel developer → AI Automation Engineer. 850+ lessons across 45+ courses, one documented transition at a time.</p>
 
 <div class="hero-stats">
-  <span class="hero-stat"><strong>28</strong> Courses</span>
-  <span class="hero-stat"><strong>500+</strong> Lessons</span>
-  <span class="hero-stat"><strong>20</strong> Phases</span>
-  <span class="hero-stat"><strong>570</strong> Diagrams</span>
+  <span class="hero-stat"><strong>45+</strong> Courses</span>
+  <span class="hero-stat"><strong>850+</strong> Lessons</span>
+  <span class="hero-stat"><strong>170K+</strong> Lines</span>
+  <span class="hero-stat"><strong>220</strong> Coding Problems</span>
 </div>
 
 <div class="hero-ctas">
@@ -74,9 +74,9 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 ---
 
-<h2 id="course-catalog">CS Foundations — Course Catalog</h2>
+<h2 id="course-catalog">Complete Course Catalog</h2>
 
-<p class="section-subtitle">28 university-level courses across programming, CS theory, AI, infrastructure, and career preparation — each with Mermaid diagrams.</p>
+<p class="section-subtitle">45+ courses across programming, CS theory, AI, infrastructure, exam preparation, and career readiness — each with Mermaid diagrams, TypeScript code examples, MCQs, and exercises.</p>
 
 ### Languages & Frameworks
 
@@ -131,14 +131,40 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 </div>
 
+### Practice & Drills
+
+<div class="course-grid" markdown>
+
+-   <span class="course-icon">💻</span> __[Coding Problems Bank](courses/coding-problems/)__ <span class="course-chaps">220 Problems</span>
+-   <span class="course-icon">📋</span> __[Mock Tests](courses/mock-tests/)__ <span class="course-chaps">6 Exams</span>
+-   <span class="course-icon">⚡</span> __[Speed Drills](courses/speed-drills/)__ <span class="course-chaps">255 Sets</span>
+-   <span class="course-icon">📄</span> __[Government PYQs](courses/government-pyqs/)__ <span class="course-chaps">14 Years</span>
+
+</div>
+
 ### Career & Exam Prep
 
 <div class="course-grid" markdown>
 
--   <span class="course-icon">🎯</span> __[GATE CS Preparation](courses/gate-cs-preparation/)__ <span class="course-chaps">19 ch</span>
--   <span class="course-icon">💼</span> __[Placement Preparation](courses/placement-preparation/)__ <span class="course-chaps">7 ch</span>
--   <span class="course-icon">🧠</span> __[Learning How to Learn](courses/learning-how-to-learn/)__ <span class="course-chaps">14 ch</span>
--   <span class="course-icon">📋</span> __[Government Exams](courses/government-exams/)__ <span class="course-chaps">21 sub</span>
+-   <span class="course-icon">🎯</span> __[GATE CS Preparation](courses/gate-cs-preparation/)__ <span class="course-chaps">32 Ch</span>
+-   <span class="course-icon">💼</span> __[Placement Preparation](courses/placement-preparation/)__ <span class="course-chaps">7 Ch</span>
+-   <span class="course-icon">🧠</span> __[Learning How to Learn](courses/learning-how-to-learn/)__ <span class="course-chaps">15 Ch</span>
+-   <span class="course-icon">📋</span> __[Government Exams Hub](courses/government-exams/)__ <span class="course-chaps">21 Subjects</span>
+-   <span class="course-icon">🔢</span> __[Quantitative Aptitude](courses/quantitative-aptitude/)__ <span class="course-chaps">7 Ch</span>
+-   <span class="course-icon">🧩</span> __[Reasoning Ability](courses/reasoning-ability/)__ <span class="course-chaps">7 Ch</span>
+-   <span class="course-icon">📝</span> __[English Language](courses/english-language/)__ <span class="course-chaps">6 Ch</span>
+-   <span class="course-icon">🌍</span> __[General Awareness](courses/general-awareness/)__ <span class="course-chaps">8 Ch</span>
+-   <span class="course-icon">🏦</span> __[Banking Awareness](courses/banking-financial-awareness/)__ <span class="course-chaps">6 Ch</span>
+-   <span class="course-icon">🔤</span> __[Hindi Language](courses/hindi-language/)__ <span class="course-chaps">6 Ch</span>
+-   <span class="course-icon">📊</span> __[Marketing Aptitude](courses/marketing-aptitude/)__ <span class="course-chaps">5 Ch</span>
+-   <span class="course-icon">📈</span> __[Data Analysis & DI](courses/data-analysis-interpretation/)__ <span class="course-chaps">6 Ch</span>
+-   <span class="course-icon">💾</span> __[Professional Knowledge](courses/professional-knowledge/)__ <span class="course-chaps">11 Ch</span>
+-   <span class="course-icon">🖥️</span> __[Computer Architecture](courses/computer-architecture/)__ <span class="course-chaps">6 Ch</span>
+-   <span class="course-icon">🔐</span> __[Information Security](courses/information-security/)__ <span class="course-chaps">6 Ch</span>
+-   <span class="course-icon">🏧</span> __[Banking Technology](courses/banking-technology/)__ <span class="course-chaps">5 Ch</span>
+-   <span class="course-icon">🎤</span> __[Interview Preparation](courses/interview-preparation/)__ <span class="course-chaps">17 Ch</span>
+-   <span class="course-icon">💼</span> __[Job Preparation](courses/job-preparation/)__ <span class="course-chaps">7 Ch</span>
+-   <span class="course-icon">🧭</span> __[Complete Roadmap](roadmap/)__ <span class="course-chaps">All Paths</span>
 
 </div>
 

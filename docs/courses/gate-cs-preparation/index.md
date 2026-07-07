@@ -31,7 +31,17 @@ This course covers the complete GATE Computer Science syllabus — General Aptit
 | 17 | [Mock Test 6](20-mock-test-6.md) | Sixth full-length GATE CS mock test |
 | 18 | [Mock Test 7](21-mock-test-7.md) | Seventh full-length GATE CS mock test |
 | 19 | [Mock Test 8](22-mock-test-8.md) | Eighth full-length GATE CS mock test |
+| 20 | [GATE 2025 Solved](23-gate-2025-solved.md) | Fully solved GATE CS 2025 paper with explanations |
+| 21 | [GATE 2024 Solved](24-gate-2024-solved.md) | Fully solved GATE CS 2024 paper with explanations |
+| 22 | [GATE 2023 Solved](25-gate-2023-solved.md) | Fully solved GATE CS 2023 paper with explanations |
+| 23 | [GATE 2022 Solved](26-gate-2022-solved.md) | Fully solved GATE CS 2022 paper with explanations |
+| 24 | [GATE 2021 Solved](27-gate-2021-solved.md) | Fully solved GATE CS 2021 paper with explanations |
+| 25 | [GATE 2020 Solved](28-gate-2020-solved.md) | Fully solved GATE CS 2020 paper with explanations |
+| 26 | [GATE 2019 Solved](29-gate-2019-solved.md) | Fully solved GATE CS 2019 paper with explanations |
+| 27 | [GATE 2018 Solved](30-gate-2018-solved.md) | Fully solved GATE CS 2018 paper with explanations |
+| 28 | [GATE 2017 Solved](31-gate-2017-solved.md) | Fully solved GATE CS 2017 paper with explanations |
+| 29 | [GATE 2016 Solved](32-gate-2016-solved.md) | Fully solved GATE CS 2016 paper with explanations |
 
 ## Version
 
-**Version:** 1.0 — June 2026
+**Version:** 2.0 — July 2026 — Added 10 years of solved GATE CS PYQ papers (2016–2025)

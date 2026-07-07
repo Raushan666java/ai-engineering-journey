@@ -1,7 +1,7 @@
 # Learning How to Learn
 
 > **Master the universal meta-skill: accelerate learning across every course in this repository.**
-> 14 chapters · 225 Q&As · 14 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
+> 15 chapters · 260 Q&As · 15 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
 >
 > *Deployed: commit `23502cfa3`*
 
@@ -85,6 +85,7 @@ You'll learn:
 | 12 | Teaching & Knowledge Transfer | Protégé effect, three-level Feynman technique, rubber duck debugging, pair programming, building in public, code review as teaching, study groups, BLUF technical writing, mentoring, handling unknown questions, adaptive teaching, sustainable teaching practice | Q166–Q185 |
 | 13 | Learning Analytics & Self-Measurement | Learning metrics, SpacedRepMetric, knowledge graph health, confidence calibration, forgetting curve tracking, dashboards, review logs, analytics-driven study decisions, dashboard build walkthrough | Q186–Q205 |
 | 14 | Social Learning & Communities | Community advantage, social accountability, study groups, pair programming, building in public, mentoring, online communities, open-source contributions, Stack Overflow, teaching as learning, learning economy | Q206–Q225 |
+| 15 | Exam Cracking Mastery | EXAM framework, 3-phase strategy, ROI prioritization, spiral schedule, C/M/E/R mistake taxonomy, mock analysis, speed-accuracy curve, exam-specific strategies for GATE/IBPS/NIC/SBI/RBI/SSC, exam day protocol, multi-attempt strategy | Q226–Q260 |
 
 ---
 
@@ -119,12 +120,13 @@ Before you begin, rate yourself on these six statements (1 = strongly disagree, 
 
 ## Quick Start
 
-1. **If you're preparing for GATE CS:** Start with Chapters 1–4 for fundamentals, then Chapter 8 for GATE-specific strategy
+1. **If you're preparing for GATE CS:** Start with Chapters 1–4 for fundamentals, then Chapters 8 & 15 for exam strategy
 2. **If you're preparing for coding interviews:** Start with Chapters 1–4, then Chapter 7 for DSA-specific techniques
-3. **If you want to learn a new framework:** Start with Chapters 1–2, then Chapter 9 for the framework blueprint
-4. **If you want to leverage AI for learning:** Start with Chapters 1–4, then Chapter 11 for AI-assisted techniques
-5. **If you want to teach or mentor others:** Start with Chapters 1–2, then Chapter 12 for knowledge transfer
-6. **If you want to build a complete learning system:** Read all chapters in order
+3. **If you want to prepare for IBPS SO / NIC / SBI / RBI / SSC:** Start with Chapters 1–4, then Chapter 15 for universal exam strategy
+4. **If you want to learn a new framework:** Start with Chapters 1–2, then Chapter 9 for the framework blueprint
+5. **If you want to leverage AI for learning:** Start with Chapters 1–4, then Chapter 11 for AI-assisted techniques
+6. **If you want to teach or mentor others:** Start with Chapters 1–2, then Chapter 12 for knowledge transfer
+7. **If you want to build a complete learning system:** Read all chapters in order
 
 ---
 

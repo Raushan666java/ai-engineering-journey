@@ -168,6 +168,13 @@ nav:
       - Mock Interview Scenarios: courses/interview-preparation/08-mock-interview-scenarios.md
       - Company-Wise Preparation: courses/interview-preparation/09-company-wise-preparation.md
       - Aptitude, Logical & Speed: courses/interview-preparation/10-aptitude-logical-reasoning-speed.md
+      - TCS NQT: courses/interview-preparation/11-company-tcs-nqt.md
+      - Infosys SP: courses/interview-preparation/12-company-infosys-sp.md
+      - Amazon SDE: courses/interview-preparation/13-company-amazon-sde.md
+      - Google SWE: courses/interview-preparation/14-company-google-swe.md
+      - Microsoft SDE: courses/interview-preparation/15-company-microsoft-sde.md
+      - Wipro/HCL/TechM: courses/interview-preparation/16-company-wipro-hcl-techm.md
+      - PSUs & Govt: courses/interview-preparation/17-company-psus-govt.md
     - 💼 Job Preparation:
       - Overview: courses/job-preparation/index.md
       - Resume & Cover Letter: courses/job-preparation/01-resume-cover-letter.md
@@ -213,6 +220,33 @@ nav:
       - Data Sufficiency: courses/data-analysis-interpretation/03-data-sufficiency.md
       - Graph & Chart Analysis: courses/data-analysis-interpretation/04-graph-chart-analysis.md
       - Mixed Data Interpretation: courses/data-analysis-interpretation/05-mixed-data-interpretation.md
+  - "📝 Practice":
+    - 💻 Coding Problems:
+      - Overview: courses/coding-problems/index.md
+      - Arrays: courses/coding-problems/01-arrays.md
+      - Strings: courses/coding-problems/02-strings.md
+      - Linked Lists: courses/coding-problems/03-linked-lists.md
+      - Stacks & Queues: courses/coding-problems/04-stacks-queues.md
+      - Trees: courses/coding-problems/05-trees.md
+      - Graphs: courses/coding-problems/06-graphs.md
+      - Dynamic Programming: courses/coding-problems/07-dynamic-programming.md
+      - Greedy: courses/coding-problems/08-greedy.md
+      - Backtracking: courses/coding-problems/09-backtracking.md
+    - 📋 Mock Tests:
+      - Overview: courses/mock-tests/index.md
+      - IBPS SO IT Officer: courses/mock-tests/01-ibps-so-it-officer-scale1.md
+      - NIC Scientist B: courses/mock-tests/02-nic-scientist-b.md
+      - SBI PO Prelims: courses/mock-tests/03-sbi-po-prelims.md
+      - RBI Grade B: courses/mock-tests/04-rbi-grade-b.md
+      - SSC CGL Tier 1: courses/mock-tests/05-ssc-cgl-tier1.md
+      - GATE CS Mock: courses/mock-tests/06-gate-cs-mock.md
+    - ⚡ Speed Drills:
+      - Overview: courses/speed-drills/index.md
+      - Quant Arithmetic: courses/speed-drills/01-quant-arithmetic-drills.md
+      - Quant Advanced: courses/speed-drills/02-quant-advanced-drills.md
+      - Reasoning: courses/speed-drills/03-reasoning-drills.md
+      - Logical Reasoning: courses/speed-drills/04-logical-reasoning-drills.md
+      - Verbal Ability: courses/speed-drills/05-verbal-ability-drills.md
   - "🤖 AI Agent Engineer":
     - Overview: courses/ai-agent-engineer/00-index.md
     - Phase 0 - Backend Hardening: courses/ai-agent-engineer/01-phase0-backend-hardening.md
@@ -236,7 +270,25 @@ nav:
     - Glossary: references/ai-engineering/glossary.md
     - 📊 Big Data: courses/big-data/index.md
     - 🧠 Applied AI: courses/applied-ai/index.md
-    - 🎯 GATE CS: courses/gate-cs-preparation/index.md
+    - 🎯 GATE CS:
+      - Overview: courses/gate-cs-preparation/index.md
+      - General Aptitude: courses/gate-cs-preparation/01-general-aptitude.md
+      - Discrete Maths & TOC: courses/gate-cs-preparation/02-theory-of-computation.md
+      - Compiler Design: courses/gate-cs-preparation/03-compiler-design.md
+      - Digital Logic: courses/gate-cs-preparation/04-digital-logic.md
+      - Engineering Maths: courses/gate-cs-preparation/06-engineering-mathematics.md
+      - OS: courses/gate-cs-preparation/07-operating-systems.md
+      - DBMS: courses/gate-cs-preparation/08-database-management-systems.md
+      - Computer Networks: courses/gate-cs-preparation/09-computer-networks.md
+      - DS & Algorithms: courses/gate-cs-preparation/10-data-structures-algorithms.md
+      - Computer Architecture: courses/gate-cs-preparation/11-computer-architecture.md
+      - GATE 2025 Solved: courses/gate-cs-preparation/23-gate-2025-solved.md
+      - GATE 2024 Solved: courses/gate-cs-preparation/24-gate-2024-solved.md
+      - GATE 2023 Solved: courses/gate-cs-preparation/25-gate-2023-solved.md
+      - GATE 2022 Solved: courses/gate-cs-preparation/26-gate-2022-solved.md
+      - GATE 2021 Solved: courses/gate-cs-preparation/27-gate-2021-solved.md
+      - GATE 2020 Solved: courses/gate-cs-preparation/28-gate-2020-solved.md
+      - GATE 2019 Solved: courses/gate-cs-preparation/29-gate-2019-solved.md
     - 💼 Placement: courses/placement-preparation/index.md
 
 

@@ -59,6 +59,381 @@
       overlay.innerHTML = '';
     }
   });
+
+  // ========================================================================
+  // Interactive Features — Reading Time, Progress, Problem of Day, Scrollbar
+  // ========================================================================
+
+  // --- Inject CSS for new features ---
+  const featureStyle = document.createElement('style');
+  featureStyle.textContent = [
+    '.tp-reading-time {',
+    '  display: inline-block;',
+    '  font-size: 0.78rem;',
+    '  font-weight: 600;',
+    '  color: var(--tp-green, #40a944);',
+    '  background: rgba(64, 169, 68, 0.1);',
+    '  padding: 0.2rem 0.6rem;',
+    '  border-radius: 4px;',
+    '  margin-bottom: 0.3rem;',
+    '  letter-spacing: 0.3px;',
+    '}',
+    '.tp-last-updated {',
+    '  display: block;',
+    '  font-size: 0.72rem;',
+    '  color: var(--md-typeset-color, #888);',
+    '  opacity: 0.65;',
+    '  margin-bottom: 0.8rem;',
+    '  margin-top: -0.1rem;',
+    '}',
+    '.tp-progress-wrapper {',
+    '  margin-bottom: 1rem;',
+    '}',
+    '.tp-progress-container {',
+    '  width: 100%;',
+    '  height: 6px;',
+    '  background: var(--md-default-fg-color--lightest, #e0e0e0);',
+    '  border-radius: 3px;',
+    '  overflow: hidden;',
+    '}',
+    '.tp-progress-fill {',
+    '  height: 100%;',
+    '  background: var(--tp-green, #40a944);',
+    '  border-radius: 3px;',
+    '  transition: width 0.4s ease;',
+    '  width: 0%;',
+    '}',
+    '.tp-progress-label {',
+    '  font-size: 0.72rem;',
+    '  color: var(--md-typeset-color, #888);',
+    '  margin-bottom: 0.25rem;',
+    '  display: block;',
+    '}',
+    '.tp-complete-btn {',
+    '  display: inline-flex;',
+    '  align-items: center;',
+    '  gap: 0.4rem;',
+    '  padding: 0.5rem 1.1rem;',
+    '  border: 1px solid var(--tp-green, #40a944);',
+    '  border-radius: 6px;',
+    '  background: transparent;',
+    '  color: var(--tp-green, #40a944);',
+    '  font-size: 0.82rem;',
+    '  font-weight: 500;',
+    '  cursor: pointer;',
+    '  transition: all 0.2s;',
+    '  margin-top: 2rem;',
+    '  margin-bottom: 1rem;',
+    '}',
+    '.tp-complete-btn:hover {',
+    '  background: var(--tp-green, #40a944);',
+    '  color: #fff;',
+    '}',
+    '.tp-complete-btn.is-completed {',
+    '  background: var(--tp-green, #40a944);',
+    '  color: #fff;',
+    '  opacity: 0.85;',
+    '}',
+    '.tp-complete-btn.is-completed:hover {',
+    '  opacity: 1;',
+    '}',
+    '.tp-problem-card {',
+    '  border: 1px solid var(--md-default-fg-color--lightest, #ddd);',
+    '  border-left: 4px solid #667eea;',
+    '  background: var(--md-code-bg-color, #f8f9fa);',
+    '  border-radius: 6px;',
+    '  padding: 0.75rem 1rem;',
+    '  margin-bottom: 1.2rem;',
+    '  display: flex;',
+    '  align-items: center;',
+    '  justify-content: space-between;',
+    '  flex-wrap: wrap;',
+    '  gap: 0.5rem;',
+    '  font-size: 0.85rem;',
+    '}',
+    '.tp-problem-card .tp-problem-label {',
+    '  font-weight: 600;',
+    '  color: #667eea;',
+    '}',
+    '.tp-problem-card a {',
+    '  color: var(--md-typeset-a-color, #4051b5);',
+    '  text-decoration: underline;',
+    '  text-underline-offset: 2px;',
+    '  font-weight: 500;',
+    '}',
+    '.tp-problem-card a:hover {',
+    '  opacity: 0.8;',
+    '}',
+    '.tp-difficulty-badge {',
+    '  display: inline-block;',
+    '  font-size: 0.65rem;',
+    '  font-weight: 700;',
+    '  padding: 0.15rem 0.5rem;',
+    '  border-radius: 10px;',
+    '  text-transform: uppercase;',
+    '  letter-spacing: 0.5px;',
+    '  white-space: nowrap;',
+    '}',
+    '.tp-difficulty-easy {',
+    '  background: rgba(76, 175, 80, 0.15);',
+    '  color: #2e7d32;',
+    '}',
+    '.tp-difficulty-medium {',
+    '  background: rgba(255, 160, 0, 0.15);',
+    '  color: #e65100;',
+    '}',
+    '.tp-difficulty-hard {',
+    '  background: rgba(244, 67, 54, 0.15);',
+    '  color: #c62828;',
+    '}',
+    '.tp-scroll-progress {',
+    '  position: fixed;',
+    '  top: 0;',
+    '  left: 0;',
+    '  width: 0%;',
+    '  height: 3px;',
+    '  background: var(--tp-green, #40a944);',
+    '  z-index: 9999;',
+    '  transition: opacity 0.2s;',
+    '  opacity: 0;',
+    '  pointer-events: none;',
+    '}',
+    '.tp-scroll-progress.visible {',
+    '  opacity: 1;',
+    '}',
+  ].join('\n');
+  document.head.appendChild(featureStyle);
+
+  // --- Utility: derive course slug from path ---
+  const pathParts = window.location.pathname.split('/').filter(Boolean);
+  let courseSlug = null;
+  if (pathParts.length >= 2 && pathParts[0] === 'courses') {
+    courseSlug = pathParts[1];
+  }
+  const isChapterPage = courseSlug !== null && pathParts.length >= 3;
+
+  // --- Utility: simple string hash (deterministic) ---
+  function tpHash(str) {
+    let h = 0;
+    for (let i = 0; i < str.length; i++) {
+      const ch = str.charCodeAt(i);
+      h = ((h << 5) - h) + ch;
+      h |= 0;
+    }
+    return Math.abs(h);
+  }
+
+  // --- Cache md-content reference ---
+  const mdContent = document.querySelector('.md-content');
+  if (!mdContent) { return; }
+
+  // ---- 1. Reading Time Estimate ----
+  const contentText = mdContent.textContent || '';
+  const words = contentText.trim().split(/\s+/).filter(Boolean);
+  const wordCount = words.length;
+  const readingTime = Math.max(1, Math.round(wordCount / 200));
+
+  const readingBadge = document.createElement('span');
+  readingBadge.className = 'tp-reading-time';
+  readingBadge.textContent = '\uD83D\uDCD6 ' + readingTime + ' min read';
+
+  // ---- 3. Last Updated Date (inserted before reading badge at h1) ----
+  const lastUpdated = document.createElement('span');
+  lastUpdated.className = 'tp-last-updated';
+  lastUpdated.textContent = '\uD83D\uDCC5 Last updated: July 2026';
+
+  // ---- 4. Problem of the Day widget (only on coding-problems pages) ----
+  let problemCard = null;
+  if (window.location.pathname.indexOf('coding-problems') !== -1) {
+    const headings = mdContent.querySelectorAll('h2, h3');
+    if (headings.length > 0) {
+      const todayStr = new Date().toISOString().slice(0, 10);
+      const seed = todayStr + window.location.pathname;
+      const hashVal = tpHash(seed);
+      const idx = hashVal % headings.length;
+      const section = headings[idx];
+      const sectionName = (section.textContent || '').trim();
+      const sectionId = section.id;
+
+      const diffLevels = ['easy', 'medium', 'hard'];
+      const diffLabels = ['Easy', 'Medium', 'Hard'];
+      const levelIdx = hashVal % 3;
+      const diffBadge = document.createElement('span');
+      diffBadge.className = 'tp-difficulty-badge tp-difficulty-' + diffLevels[levelIdx];
+      diffBadge.textContent = diffLabels[levelIdx];
+
+      const link = document.createElement('a');
+      link.href = '#' + sectionId;
+      link.textContent = sectionName;
+
+      const labelSpan = document.createElement('span');
+      labelSpan.className = 'tp-problem-label';
+      labelSpan.textContent = '\uD83D\uDCA1 Problem of the Day: ';
+
+      const linkWrap = document.createElement('span');
+      linkWrap.appendChild(labelSpan);
+      linkWrap.appendChild(link);
+
+      problemCard = document.createElement('div');
+      problemCard.className = 'tp-problem-card';
+      problemCard.appendChild(linkWrap);
+      problemCard.appendChild(diffBadge);
+    }
+  }
+
+  // ---- Insert elements at top of content in correct order ----
+  const firstHeading = mdContent.querySelector('h1');
+
+  if (firstHeading) {
+    // Insert in reverse order so they stack correctly before h1
+
+    // 3) Last updated (closest to h1)
+    mdContent.insertBefore(lastUpdated, firstHeading);
+    // 2) Reading badge
+    mdContent.insertBefore(readingBadge, firstHeading);
+    // 1) Problem card (farthest from h1)
+    if (problemCard) {
+      mdContent.insertBefore(problemCard, firstHeading);
+    }
+  } else {
+    // No h1 — append to start of md-content
+    if (problemCard) {
+      mdContent.insertBefore(problemCard, mdContent.firstChild);
+    }
+    mdContent.insertBefore(readingBadge, mdContent.firstChild);
+    mdContent.insertBefore(lastUpdated, mdContent.firstChild);
+  }
+
+  // ---- 2. Chapter Progress Tracking ----
+  if (isChapterPage) {
+    // --- Mark as Complete button ---
+    const completeBtn = document.createElement('button');
+    completeBtn.className = 'tp-complete-btn';
+    const storageKey = 'tp-complete-' + window.location.pathname;
+    const initialCompleted = localStorage.getItem(storageKey) === 'true';
+
+    if (initialCompleted) {
+      completeBtn.classList.add('is-completed');
+      completeBtn.textContent = '\u2705 Completed';
+    } else {
+      completeBtn.textContent = '\u2705 Mark as Complete';
+    }
+
+    // Progress bar updater (shared between initial render and button click)
+    let progressFillEl = null;
+    let progressLabelEl = null;
+    let progressWrapperEl = null;
+
+    const updateProgress = function() {
+      // Count nav links belonging to this course
+      const navLinks = document.querySelectorAll(
+        '.md-nav__link[href*="/courses/' + courseSlug + '/"]'
+      );
+      let total = 0;
+      let completed = 0;
+      const seen = {};
+
+      navLinks.forEach(function(link) {
+        let href = link.getAttribute('href');
+        if (!href) return;
+        // Resolve relative to absolute
+        let absHref = href;
+        if (absHref.indexOf('//') === -1) {
+          absHref = window.location.origin + (absHref.charAt(0) === '/' ? '' : '/') + absHref;
+        }
+        let urlObj = null;
+        try { urlObj = new URL(absHref); } catch (e) { return; }
+        const path = urlObj.pathname;
+        // Skip index pages
+        if (path === '/courses/' + courseSlug + '/' ||
+            path === '/courses/' + courseSlug + '/index.html') {
+          return;
+        }
+        if (seen[path]) return;
+        seen[path] = true;
+        total++;
+        if (localStorage.getItem('tp-complete-' + path) === 'true') {
+          completed++;
+        }
+      });
+
+      if (total > 0 && progressFillEl && progressLabelEl) {
+        const pct = Math.round((completed / total) * 100);
+        progressFillEl.style.width = pct + '%';
+        progressLabelEl.textContent = 'Course progress: ' + completed + '/' + total + ' chapters (' + pct + '%)';
+        if (progressWrapperEl) {
+          progressWrapperEl.style.display = '';
+        }
+      }
+    };
+
+    completeBtn.addEventListener('click', function() {
+      const cur = localStorage.getItem(storageKey) === 'true';
+      if (cur) {
+        localStorage.removeItem(storageKey);
+        this.classList.remove('is-completed');
+        this.textContent = '\u2705 Mark as Complete';
+      } else {
+        localStorage.setItem(storageKey, 'true');
+        this.classList.add('is-completed');
+        this.textContent = '\u2705 Completed';
+      }
+      updateProgress();
+    });
+
+    // --- Build progress bar ---
+    progressFillEl = document.createElement('div');
+    progressFillEl.className = 'tp-progress-fill';
+
+    const progressContainer = document.createElement('div');
+    progressContainer.className = 'tp-progress-container';
+    progressContainer.appendChild(progressFillEl);
+
+    progressLabelEl = document.createElement('span');
+    progressLabelEl.className = 'tp-progress-label';
+
+    progressWrapperEl = document.createElement('div');
+    progressWrapperEl.className = 'tp-progress-wrapper';
+    progressWrapperEl.style.display = 'none';
+    progressWrapperEl.appendChild(progressLabelEl);
+    progressWrapperEl.appendChild(progressContainer);
+
+    // Insert progress wrapper at the very top of md-content
+    mdContent.insertBefore(progressWrapperEl, mdContent.firstChild);
+
+    // Initial calculation
+    updateProgress();
+
+    // --- Append "Mark as Complete" button at bottom of content ---
+    // Try to find the last h2/h3 that is a direct child of md-content
+    const lastContentHeading = mdContent.querySelector('h2:last-of-type, h3:last-of-type, h4:last-of-type');
+    if (lastContentHeading && lastContentHeading.parentNode === mdContent) {
+      lastContentHeading.parentNode.insertBefore(completeBtn, lastContentHeading.nextSibling);
+    } else {
+      mdContent.appendChild(completeBtn);
+    }
+  }
+
+  // ---- 5. Back to Top scroll progress indicator ----
+  const scrollBar = document.createElement('div');
+  scrollBar.className = 'tp-scroll-progress';
+  document.body.appendChild(scrollBar);
+
+  const updateScrollProgress = function() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    scrollBar.style.width = pct + '%';
+
+    if (scrollTop > 100) {
+      scrollBar.classList.add('visible');
+    } else {
+      scrollBar.classList.remove('visible');
+    }
+  };
+
+  window.addEventListener('scroll', updateScrollProgress, { passive: true });
+  updateScrollProgress();
 })();
 </script>
 <style>

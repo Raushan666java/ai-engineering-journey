@@ -247,6 +247,22 @@ nav:
       - Reasoning: courses/speed-drills/03-reasoning-drills.md
       - Logical Reasoning: courses/speed-drills/04-logical-reasoning-drills.md
       - Verbal Ability: courses/speed-drills/05-verbal-ability-drills.md
+    - 📄 Government PYQs:
+      - Overview: courses/government-pyqs/index.md
+      - IBPS SO 2024: courses/government-pyqs/01-ibps-so-2024.md
+      - IBPS SO 2023: courses/government-pyqs/02-ibps-so-2023.md
+      - IBPS SO 2022: courses/government-pyqs/03-ibps-so-2022.md
+      - IBPS SO 2021: courses/government-pyqs/04-ibps-so-2021.md
+      - IBPS SO 2020: courses/government-pyqs/05-ibps-so-2020.md
+      - IBPS SO 2019: courses/government-pyqs/06-ibps-so-2019.md
+      - NIC Scientist 2024: courses/government-pyqs/07-nic-scientist-2024.md
+      - NIC Scientist 2023: courses/government-pyqs/08-nic-scientist-2023.md
+      - NIC Scientist 2022: courses/government-pyqs/09-nic-scientist-2022.md
+      - SBI PO 2024: courses/government-pyqs/10-sbi-po-2024.md
+      - SBI PO 2023: courses/government-pyqs/11-sbi-po-2023.md
+      - SBI PO 2022: courses/government-pyqs/12-sbi-po-2022.md
+      - RBI Grade B 2024: courses/government-pyqs/13-rbi-grade-b-2024.md
+      - RBI Grade B 2023: courses/government-pyqs/14-rbi-grade-b-2023.md
   - "🤖 AI Agent Engineer":
     - Overview: courses/ai-agent-engineer/00-index.md
     - Phase 0 - Backend Hardening: courses/ai-agent-engineer/01-phase0-backend-hardening.md

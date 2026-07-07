@@ -51,17 +51,7 @@ extra_css:
 
 plugins:
   - search
-  - glightbox:
-      touchNavigation: true
-      loop: false
-      effect: zoom
-      slide_effect: slide
-      width: 100%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - no-lightbox
+  # Image lightbox handled by custom JS in overrides/main.html
 
 markdown_extensions:
   - admonition

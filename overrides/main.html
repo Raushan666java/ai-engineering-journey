@@ -41,8 +41,8 @@
     }
 
     // Lightbox for images (PNG, JPG, GIF, WebP, SVG in img tags)
-    var img = e.target.closest('.md-content img');
-    if (img) {
+    var img = e.target.closest('img');
+    if (img && img.closest('.md-content')) {
       var clone = img.cloneNode();
       clone.style.cssText = '';
       overlay.innerHTML = '';

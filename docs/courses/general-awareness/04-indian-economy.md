@@ -711,6 +711,275 @@ NITI Aayog (National Institution for Transforming India) replaced the Planning C
 
 ---
 
+### 4.9 Indian Economy Fact Sheet (Quick Reference)
+
+| Indicator | Current Value (2025-26 estimates) |
+|-----------|-----------------------------------|
+| GDP (Nominal) | ~$4.3 trillion |
+| GDP Growth Rate | ~6.5% (projected) |
+| GDP Rank (Nominal) | 5th (after USA, China, Germany, Japan) |
+| Per Capita Income | ~$2,500 (nominal) |
+| Foreign Exchange Reserves | ~$700+ billion |
+| Inflation (CPI) | ~4.0–5.0% |
+| Repo Rate | 6.00% (MPC decision) |
+| Fiscal Deficit (% of GDP) | 4.4% (target) |
+| Exports | ~$800 billion (goods + services) |
+| Imports | ~$900 billion (goods + services) |
+| Agricultural GDP Share | ~18% |
+| Industrial GDP Share | ~27% |
+| Services GDP Share | ~55% |
+| Labour Force Participation | ~50% |
+| Unemployment Rate | ~6–7% |
+| Population Below Poverty Line | ~12–15% |
+| Literacy Rate | ~77% |
+| GST Collection (Monthly Avg) | ~₹1.7–1.8 lakh crore |
+| Tax-GDP Ratio | ~11–12% |
+| FDI Inflows | ~$50–60 billion annually |
+
+### 4.10 Money and Banking (Based on GFG Reference)
+
+#### 4.10.1 Functions of Money
+
+Money serves four primary functions:
+1. **Medium of Exchange** — Accepted for transactions
+2. **Unit of Account** — Standard measure of value
+3. **Store of Value** — Can be saved and used later
+4. **Standard of Deferred Payment** — Used for future payments
+
+```mermaid
+flowchart TD
+    A[Monetary System] --> B[Types of Money]
+    B --> C[Commodity Money - Gold, Silver]
+    B --> D[Fiat Money - Currency notes, Coins]
+    B --> E[Bank Money - Demand deposits, Cheques]
+    B --> F[Digital Money - UPI, CBDC eRupee]
+    A --> G[Money Supply Measures]
+    G --> H[M1 = Currency + Demand Deposits]
+    G --> I[M2 = M1 + Savings Deposits with Post Offices]
+    G --> J[M3 = M1 + Time Deposits with Banks]
+    G --> K[M4 = M3 + Total Post Office Deposits]
+```
+
+#### 4.10.2 Banking System in India
+
+| Term | Definition | Current Rate/Value |
+|------|------------|--------------------|
+| Repo Rate | Rate at which RBI lends to banks | 6.00% |
+| Reverse Repo Rate | Rate at which RBI borrows from banks | 3.35% |
+| CRR (Cash Reserve Ratio) | Banks keep % of deposits as cash with RBI | 4.50% |
+| SLR (Statutory Liquidity Ratio) | Banks keep % in government securities | 18.00% |
+| MSF (Marginal Standing Facility) | Emergency borrowing rate for banks | 6.25% |
+| Bank Rate | Rate at which RBI lends to banks (long-term) | 6.25% |
+| Base Rate | Minimum lending rate (old system) | Varies by bank |
+| MCLR | Marginal Cost of Funds based Lending Rate | Varies by bank |
+| EBLR | External Benchmark Lending Rate (linked to Repo) | Repo + Spread |
+
+**Types of Banks in India:**
+
+| Bank Type | Examples | Regulator |
+|-----------|----------|-----------|
+| Public Sector Banks (PSBs) | SBI, PNB, Bank of Baroda, Canara Bank | RBI |
+| Private Sector Banks | HDFC, ICICI, Axis, Kotak, Yes Bank | RBI |
+| Foreign Banks | HSBC, Citibank, Standard Chartered | RBI |
+| Regional Rural Banks (RRBs) | Prathama Gramin Bank, etc. | NABARD |
+| Co-operative Banks | State Co-op Banks, Urban Co-op Banks | RBI + State Govt |
+| Payment Banks | Paytm Payments Bank, Airtel Payments Bank | RBI |
+| Small Finance Banks | AU SFB, Equitas SFB, Ujjivan SFB | RBI |
+| Development Banks | NABARD, SIDBI, NHB, EXIM Bank | Govt of India |
+
+#### 4.10.3 Monetary Policy Committee (MPC)
+
+- **Constituted under:** RBI Act, 1934 (amended in 2016)
+- **Members:** 6 (3 RBI officials + 3 external members)
+- **Chairperson:** RBI Governor
+- **Primary Objective:** Maintain price stability (inflation target: 4% with ±2% tolerance band)
+- **Meetings:** At least 4 per year (currently 6 bi-monthly meetings)
+- **Decision Making:** Each member votes; Governor has casting vote in case of tie
+- **Instruments:** Repo rate changes, stance changes (accommodative/neutral/withdrawal of accommodation)
+
+#### 4.10.4 Types of Inflation (Detailed)
+
+| Type | Rate | Description |
+|------|------|-------------|
+| Creeping Inflation | < 3% | Mild, considered healthy for economy |
+| Walking Inflation | 3–6% | Moderate, causes concern |
+| Galloping Inflation | 6–10% | High, requires policy intervention |
+| Hyperinflation | > 50% monthly | Very rare; seen in Zimbabwe, Venezuela, post-WWI Germany |
+| Deflation | Negative | Falling prices; can lead to recession |
+| Disinflation | Decreasing | Inflation rate is falling but still positive |
+| Core Inflation | — | Excludes food and fuel (volatile items) |
+| Headline Inflation | — | Includes all items (CPI-based) |
+
+#### 4.10.5 Important Banking Abbreviations
+
+| Abbreviation | Full Form |
+|--------------|-----------|
+| CRR | Cash Reserve Ratio |
+| SLR | Statutory Liquidity Ratio |
+| MSF | Marginal Standing Facility |
+| LAF | Liquidity Adjustment Facility |
+| MCLR | Marginal Cost of Funds based Lending Rate |
+| OMO | Open Market Operations |
+| MSS | Market Stabilisation Scheme |
+| RTGS | Real Time Gross Settlement |
+| NEFT | National Electronic Funds Transfer |
+| IMPS | Immediate Payment Service |
+| UPI | Unified Payments Interface |
+| CBDC | Central Bank Digital Currency (eRupee) |
+| NPCI | National Payments Corporation of India |
+| PSB | Public Sector Bank |
+| NPA | Non-Performing Asset |
+| CRAR | Capital to Risk (Weighted) Assets Ratio |
+| BASEL | Basel Committee on Banking Supervision |
+| CAMELS | Capital, Assets, Management, Earnings, Liquidity, Sensitivity |
+
+### 4.11 TypeScript: Banking and Economy Analyzer
+
+```typescript
+/**
+ * Indian Economy and Banking Simulator
+ * Calculates monetary aggregates and assesses economic indicators
+ */
+interface EconomicIndicator {
+  name: string;
+  value: number;
+  unit: string;
+  trend: 'improving' | 'worsening' | 'stable';
+}
+
+class EconomyAnalyzer {
+  private indicators: EconomicIndicator[] = [];
+
+  constructor() {
+    this.initializeIndicators();
+  }
+
+  private initializeIndicators(): void {
+    this.indicators = [
+      { name: 'GDP Growth', value: 6.5, unit: '%', trend: 'improving' },
+      { name: 'Inflation (CPI)', value: 4.5, unit: '%', trend: 'stable' },
+      { name: 'Fiscal Deficit', value: 4.4, unit: '% of GDP', trend: 'stable' },
+      { name: 'Unemployment', value: 6.5, unit: '%', trend: 'worsening' },
+      { name: 'FDI Inflow', value: 55, unit: '$ billion', trend: 'improving' },
+    ];
+  }
+
+  public calculateInterest(principal: number, rate: number, tenureMonths: number): number {
+    const rateMonthly = rate / 12 / 100;
+    return principal * rateMonthly * tenureMonths;
+  }
+
+  public moneyMultiplier(CRR: number): number {
+    return 1 / (CRR / 100);
+  }
+
+  public calculateInflationImpact(initialPrice: number, inflationRate: number, years: number): number {
+    return initialPrice * Math.pow(1 + inflationRate / 100, years);
+  }
+
+  public generateEconomyHealthScore(): { score: number; rating: string } {
+    let score = 0;
+    for (const indicator of this.indicators) {
+      if (indicator.trend === 'improving') score += 25;
+      else if (indicator.trend === 'stable') score += 15;
+      else score += 5;
+    }
+    const rating = score >= 80 ? 'Healthy' : score >= 60 ? 'Moderate' : 'Weak';
+    return { score, rating };
+  }
+
+  public printReport(): void {
+    console.log('=== Indian Economy Health Report ===');
+    this.indicators.forEach(i => {
+      const arrow = i.trend === 'improving' ? '↑' : i.trend === 'worsening' ? '↓' : '→';
+      console.log(`${i.name}: ${i.value}${i.unit} ${arrow}`);
+    });
+    const health = this.generateEconomyHealthScore();
+    console.log(`Overall Health: ${health.rating} (Score: ${health.score}/100)`);
+    console.log(`Money Multiplier (CRR 4.5%): ${this.moneyMultiplier(4.5).toFixed(2)}x`);
+    console.log(`₹100 item in 5 yrs at 5% inflation: ₹${this.calculateInflationImpact(100, 5, 5).toFixed(2)}`);
+    console.log('====================================');
+  }
+}
+
+const economy = new EconomyAnalyzer();
+economy.printReport();
+```
+
+### 4.12 Additional Solved MCQs (Economy)
+
+**Q21:** The "Liquidity Adjustment Facility" (LAF) operates through which two rates?
+
+A) Bank Rate and MSF
+B) Repo Rate and Reverse Repo Rate
+C) CRR and SLR
+D) Base Rate and MCLR
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Repo Rate and Reverse Repo Rate**
+
+LAF is the tool used by RBI to manage liquidity in the banking system. Repo Rate (RBI lends to banks) and Reverse Repo Rate (banks lend to RBI) are the two key rates under LAF. The MSF is a separate window for emergency borrowing.
+</details>
+
+**Q22:** "Broad Money" in India is represented by:
+
+A) M1
+B) M2
+C) M3
+D) M4
+
+<details>
+<summary>Answer</summary>
+**Answer: C) M3**
+
+M3 = M1 + Time Deposits with Banks. M3 is called "Broad Money" and is the most commonly used measure of money supply. M1 is "Narrow Money" (Currency + Demand Deposits + Other Deposits with RBI).
+</details>
+
+**Q23:** The "Bad Bank" established in India to resolve NPAs is named:
+
+A) ARCIL
+B) NARCL (National Asset Reconstruction Company Ltd)
+C) SBI CAPS
+D) IDRCL
+
+<details>
+<summary>Answer</summary>
+**Answer: B) NARCL (National Asset Reconstruction Company Ltd)**
+
+NARCL (also called "Bad Bank") was established in 2021 to acquire and resolve large NPAs (stressed assets) from banks. It is backed by Government guarantee and works with IDRCL (India Debt Resolution Company Ltd) for resolution.
+</details>
+
+**Q24:** The "Hindu Rate of Growth" refers to India's GDP growth rate during:
+
+A) 1950–1980
+B) 1980–1991
+C) 1991–2000
+D) 2000–2010
+
+<details>
+<summary>Answer</summary>
+**Answer: A) 1950–1980 (~3.5% growth rate)**
+
+The term "Hindu Rate of Growth" was coined by economist Raj Krishna to describe India's low and stagnant GDP growth of about 3.5% per annum from 1950 to 1980, before economic liberalisation began.
+</details>
+
+**Q25:** The "Debt Waiver and Debt Relief Scheme" for farmers was announced in which year?
+
+A) 2004
+B) 2008
+C) 2014
+D) 2019
+
+<details>
+<summary>Answer</summary>
+**Answer: B) 2008 (Agricultural Debt Waiver and Debt Relief Scheme)**
+
+The scheme was announced in the Union Budget 2008-09 by then Finance Minister P. Chidambaram. It provided for waiver of direct agricultural loans and a one-time settlement scheme for other loans. It cost the exchequer approximately ₹71,000 crore.
+</details>
+
+---
+
 ## Summary
 
 - **GDP** is the total value of goods/services produced within India; **GNP** adds net factor income from abroad; **NNP** deducts depreciation.
@@ -915,6 +1184,78 @@ D) 7
 
 **30.** PM Jan Dhan Yojana provides life insurance cover. (T/F)
 
+### Section D: Additional MCQs (Exam Focus — Banking & Money)
+
+**31.** The "Mint Street" is associated with which institution?
+
+A) Bombay Stock Exchange
+B) Reserve Bank of India
+C) Securities and Exchange Board of India
+D) Ministry of Finance
+
+**32.** Which committee recommended the establishment of NABARD?
+
+A) Narasimham Committee
+B) Sivaraman Committee
+C) Kelkar Committee
+D) Rangarajan Committee
+
+**33.** "Open Market Operations" (OMO) refers to:
+
+A) Sale/purchase of government securities by RBI
+B) Trading of stocks by corporates
+C) Foreign exchange trading
+D) Commodity trading
+
+**34.** The "Kisan Credit Card" (KCC) scheme was launched in which year?
+
+A) 1995
+B) 1998
+C) 2000
+D) 2004
+
+**35.** What is the minimum tenure of a Treasury Bill?
+
+A) 14 days
+B) 28 days
+C) 91 days
+D) 182 days
+
+**36.** Which of the following is NOT a function of the RBI?
+
+A) Banker to the Government
+B) Banker to the Banks
+C) Fiscal policy formulation
+D) Issue of currency
+
+**37.** The "Export-Import Bank of India" (EXIM Bank) was established in:
+
+A) 1980
+B) 1982
+C) 1991
+D) 2000
+
+**38.** "Rating Agencies" in India are regulated by:
+
+A) RBI
+B) SEBI
+C) IRDAI
+D) Ministry of Finance
+
+**39.** The concept of "Universal Banking" was recommended by:
+
+A) Narasimham Committee (I)
+B) Narasimham Committee (II)
+C) Khan Committee
+D) RBI Working Group
+
+**40.** India's first payment bank "Airtel Payments Bank" was launched in:
+
+A) 2016
+B) 2017
+C) 2018
+D) 2020
+
 ---
 
 <details>
@@ -955,6 +1296,18 @@ D) 7
 28. F (Repo Rate is the rate at which RBI lends to banks; Reverse Repo is when RBI borrows from banks)
 29. T
 30. T (accidental death coverage of ₹2 lakh and life insurance coverage)
+
+**Section D (31-40):**
+31. B) Reserve Bank of India (Mint Street is the location of RBI headquarters in Mumbai)
+32. B) Sivaraman Committee (1979; led to establishment of NABARD in 1982)
+33. A) Sale/purchase of government securities by RBI (to regulate money supply)
+34. B) 1998 (launched by NABARD to provide short-term credit to farmers)
+35. C) 91 days (T-bills are issued for 91, 182, and 364 days by the Government)
+36. C) Fiscal policy formulation (done by Ministry of Finance; RBI handles monetary policy)
+37. B) 1982 (EXIM Bank Act 1981 came into effect on 1 January 1982)
+38. B) SEBI (Securities and Exchange Board of India regulates credit rating agencies)
+39. C) Khan Committee (1998; recommended universal banking — merging financial services)
+40. B) 2017 (launched in January 2017; first payments bank to begin operations)
 </details>
 
 ---

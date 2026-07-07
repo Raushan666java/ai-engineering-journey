@@ -351,9 +351,142 @@ Logistics involves planning, implementing, and controlling the physical flow of 
 | **Water** | Slowest | Lowest | Highest | International bulk cargo |
 | **Pipeline** | Continuous | Low | Continuous | Oil, gas, chemicals |
 
+### 2.11 Sales Force Structure
+
+Companies organise their sales force in different ways depending on the nature of their products and markets.
+
+```mermaid
+graph TD
+    subgraph "Sales Force Structures"
+        T[Territorial<br/>Each salesperson covers a geographic area]
+        P[Product<br/>Salespeople specialise by product line]
+        M[Market<br/>Salespeople specialise by customer type]
+        C[Complex<br/>Combination of above]
+    end
+    T --> |Best for| S1[Single product line, similar customers]
+    P --> |Best for| S2[Multiple diverse product lines]
+    M --> |Best for| S3[Different customer segments need different approaches]
+    C --> |Best for| S4[Large accounts with complex needs]
+```
+
+| Structure | Description | Advantages | Disadvantages |
+|-----------|-------------|------------|---------------|
+| **Territorial** | Each salesperson assigned a geographic area | Lowest cost, clear accountability, local relationships | Works only if products and customers are similar |
+| **Product** | Salespeople specialise by product line | Deep product knowledge, better cross-selling | Duplication of effort — two salespeople call same customer |
+| **Market/Customer** | Salespeople specialise by industry/segment | Deep customer understanding, tailored solutions | Higher cost, complex coordination |
+| **Complex** | Combination of territory + product + market | Maximum flexibility and coverage | Highest cost, coordination challenges |
+
+### 2.12 Channel Conflict and Management
+
+Channel conflict occurs when one channel member's actions prevent another channel member from achieving its objectives.
+
+#### Types of Channel Conflict
+
+```mermaid
+graph TD
+    subgraph "Channel Conflict Types"
+        H[Horizontal<br/>Conflict between same-level intermediaries]
+        V[Vertical<br/>Conflict between different levels in same channel]
+        M[Multi-channel<br/>Conflict between different channel systems]
+    end
+    H --> E1[Two retailers competing for same customer]
+    V --> E2[Manufacturer vs retailer on pricing]
+    M --> E3[Online vs offline channels for same brand]
+```
+
+| Conflict Type | Example | Resolution |
+|---------------|---------|------------|
+| **Horizontal** | Two dealers in same city undercut each other on price | Define clear territories, minimum pricing policies |
+| **Vertical** | Manufacturer wants higher retail price; retailer wants to discount | Channel leadership, conflict resolution mechanisms |
+| **Multi-channel** | Company's own website undercuts its retail partners | Different SKUs for each channel, price parity policies |
+
+**Channel power types:**
+- **Coercive power** — Threat of punishment (termination, reduced supply)
+- **Reward power** — Offering incentives for compliance
+- **Legitimate power** — Contractual rights
+- **Expert power** — Knowledge and expertise valued by channel partners
+- **Referent power** — Prestige of working with a well-known brand
+
+### 2.13 Push vs Pull Distribution Strategies
+
+| Aspect | Push Strategy | Pull Strategy |
+|--------|--------------|---------------|
+| **Focus** | Trade promotion, personal selling | Consumer advertising, brand building |
+| **Flow** | Product pushed through channel | Consumer demand pulls product through channel |
+| **Channel effort** | Manufacturer sells to wholesalers who push to retailers | Consumers demand product from retailers who order from wholesalers |
+| **Best suited for** | Low brand loyalty, impulse purchases | Strong brand equity, high involvement |
+| **Marketing budget** | More trade promotion, less advertising | More advertising, less trade promotion |
+| **Example** | FMCG: Manufacturer gives retailer discount to stock more | Apple: Consumers demand iPhones; retailers must stock them |
+
+### 2.14 Comparison: Direct Sales vs Channel Sales
+
+| Dimension | Direct Sales | Channel Sales |
+|-----------|-------------|---------------|
+| **Cost structure** | High fixed cost (sales team salaries) | Variable cost (commission-based) |
+| **Control** | Full control over selling process | Less control over customer interaction |
+| **Customer relationship** | Direct, deep relationships | Indirect, mediated by partner |
+| **Scale** | Limited by sales team size | Scalable through partner network |
+| **Best for** | High-value, complex products | Standard products, wide geographic coverage |
+| **Feedback** | Immediate customer feedback | Delayed or filtered feedback |
+| **Example** | Enterprise software (Oracle direct sales) | Consumer electronics sold through Best Buy, Amazon |
+
+```typescript
+// TypeScript: Channel Conflict Detector
+interface ChannelPartner {
+  id: string;
+  name: string;
+  type: "retailer" | "wholesaler" | "distributor" | "agent";
+  territory: string;
+  price: number;          // selling price to customer
+  volume: number;         // units sold per month
+  assignedBrands: string[];
+}
+
+interface ConflictReport {
+  partner1: string;
+  partner2: string;
+  conflictType: "horizontal" | "vertical" | "multi-channel";
+  severity: "low" | "medium" | "high";
+  description: string;
+}
+
+class ChannelAnalyzer {
+  static detectHorizontalConflict(partners: ChannelPartner[]): ConflictReport[] {
+    const reports: ConflictReport[] = [];
+    for (let i = 0; i < partners.length; i++) {
+      for (let j = i + 1; j < partners.length; j++) {
+        const a = partners[i];
+        const b = partners[j];
+        // Check if same type, same territory, overlapping brands
+        if (a.type === b.type && a.territory === b.territory) {
+          const overlap = a.assignedBrands.filter(brand => b.assignedBrands.includes(brand));
+          if (overlap.length > 0 && Math.abs(a.price - b.price) > a.price * 0.1) {
+            reports.push({
+              partner1: a.name,
+              partner2: b.name,
+              conflictType: "horizontal",
+              severity: Math.abs(a.price - b.price) / a.price > 0.2 ? "high" : "medium",
+              description: `Price difference of ₹${Math.abs(a.price - b.price)} on ${overlap.join(", ")} in ${a.territory}`,
+            });
+          }
+        }
+      }
+    }
+    return reports;
+  }
+}
+
+const partners: ChannelPartner[] = [
+  { id: "D1", name: "Delite Distributors", type: "distributor", territory: "Mumbai", price: 100, volume: 500, assignedBrands: ["BrandA", "BrandB"] },
+  { id: "D2", name: "City Distributors", type: "distributor", territory: "Mumbai", price: 88, volume: 600, assignedBrands: ["BrandA", "BrandC"] },
+];
+console.log(ChannelAnalyzer.detectHorizontalConflict(partners));
+// Conflict: BrandA, price difference of ₹12 (12%) — medium severity
+```
+
 ---
 
-## Examples: 20 Solved MCQs
+## Examples: 30 Solved MCQs
 
 ### Example 1: Sales Process
 
@@ -729,6 +862,154 @@ d) Using a single distribution channel
 
 ---
 
+### Example 10: Sales Force Structure (Q21–Q22)
+
+**Q21.** A company manufacturing both industrial machinery and consumer appliances should ideally use which sales force structure?
+
+a) Territorial
+b) Product-based
+c) Market-based
+d) Customer-based
+
+<details>
+<summary>Answer</summary>
+**b) Product-based.** When a company has diverse and unrelated product lines (industrial machinery vs consumer appliances), a product-based sales force structure is most appropriate. Each salesperson specialises in one product line, developing deep product knowledge.
+</details>
+
+---
+
+**Q22.** Which sales force structure has the lowest cost and simplest administration?
+
+a) Territorial
+b) Product
+c) Market
+d) Complex
+
+<details>
+<summary>Answer</summary>
+**a) Territorial.** Territorial structure is simplest and most cost-effective — each salesperson covers a defined geographic area. It avoids duplication (only one rep per territory) and travel costs are minimised. However, it works best when products and customers are homogeneous.
+</details>
+
+---
+
+### Example 11: Channel Conflict (Q23–Q25)
+
+**Q23.** When two retailers in the same city compete by slashing prices on the same brand, the conflict is called:
+
+a) Vertical conflict
+b) Horizontal conflict
+c) Multi-channel conflict
+d) Diagonal conflict
+
+<details>
+<summary>Answer</summary>
+**b) Horizontal conflict.** Horizontal conflict occurs between intermediaries at the same level of the channel (retailer vs retailer). Price undercutting, territory encroachment, and poaching customers are common forms.
+</details>
+
+---
+
+**Q24.** A manufacturer threatens to stop supplying a retailer who sells below the minimum retail price. Which type of channel power is being exercised?
+
+a) Expert power
+b) Referent power
+c) Coercive power
+d) Reward power
+
+<details>
+<summary>Answer</summary>
+**c) Coercive power.** Coercive power is based on the threat of punishment — in this case, discontinuing supply. Reward power (offering incentives) is the positive counterpart. Expert and referent powers are non-coercive and build long-term relationships.
+</details>
+
+---
+
+**Q25.** Vertical channel conflict arises between:
+
+a) Two retailers at the same level
+b) Manufacturer and retailer at different levels
+c) Two manufacturers in the same industry
+d) A company and its competitors
+
+<details>
+<summary>Answer</summary>
+**b) Manufacturer and retailer at different levels.** Vertical conflict occurs between different levels of the same channel (e.g., manufacturer vs wholesaler, or manufacturer vs retailer). Common causes include pricing disputes, exclusive dealing, and territorial restrictions.
+</details>
+
+---
+
+### Example 12: Push vs Pull & Distribution Strategy (Q26–Q28)
+
+**Q26.** A company that spends most of its marketing budget on trade discounts and retailer incentives is following a:
+
+a) Pull strategy
+b) Push strategy
+c) Hybrid strategy
+d) Direct strategy
+
+<details>
+<summary>Answer</summary>
+**b) Push strategy.** Push strategy focuses on pushing products through the channel using trade promotions, personal selling, and retailer incentives. The manufacturer "pushes" the product to intermediaries who then push it to consumers.
+</details>
+
+---
+
+**Q27.** Apple spends heavily on brand advertising and relies on consumers demanding its products from retailers. This is a classic example of:
+
+a) Push strategy
+b) Pull strategy
+c) Direct selling
+d) Intensive distribution
+
+<details>
+<summary>Answer</summary>
+**b) Pull strategy.** Pull strategy relies on consumer demand pulling products through the channel. Heavy advertising creates brand desire; consumers ask retailers for the product; retailers order from distributors; distributors order from Apple.
+</details>
+
+---
+
+**Q28.** Which type of channel power is based on one channel member's superior knowledge and expertise?
+
+a) Coercive power
+b) Reward power
+c) Legitimate power
+d) Expert power
+
+<details>
+<summary>Answer</summary>
+**d) Expert power.** Expert power derives from specialised knowledge that channel partners value. For example, a manufacturer may provide training, category management insights, and market data to retailers, creating dependency based on expertise rather than threats.
+</details>
+
+---
+
+### Example 13: SCM & Logistics (Q29–Q30)
+
+**Q29.** Reverse logistics deals with:
+
+a) Transporting goods from supplier to manufacturer
+b) Managing returned goods and recycling
+c) Warehousing finished products
+d) Order processing from customers
+
+<details>
+<summary>Answer</summary>
+**b) Managing returned goods and recycling.** Reverse logistics is the process of moving goods from their final destination back to the manufacturer for returns, repairs, recycling, or disposal. It is increasingly important in e-commerce where return rates are high (20–30%).
+</details>
+
+---
+
+**Q30.** A company maintains safety stock primarily to:
+
+a) Reduce ordering costs
+b) Protect against demand uncertainty and supply delays
+c) Increase warehouse utilisation
+d) Qualify for volume discounts
+
+<details>
+<summary>Answer</summary>
+**b) Protect against demand uncertainty and supply delays.** Safety stock is extra inventory held as a buffer against variability in demand or supply lead time. The optimal level depends on demand variability, lead time variability, and desired service level.
+</details>
+
+---
+
 ## Summary
 
 - The **personal selling process** has 7 steps: prospecting, pre-approach, approach, presentation, handling objections, closing, and follow-up
@@ -882,3 +1163,128 @@ d) Using a single distribution channel
 | 28 | Demand-driven (pull) is better for fast fashion — responds to trends | Push vs pull supply chain |
 | 29 | Multi-channel: farmers' markets (direct), website (D2C), Amazon (marketplace) | Omnichannel with distinct roles |
 | 30 | Define lead ownership rules, non-compete clauses, joint incentive programmes | Channel conflict resolution |
+
+### Additional Exam-Oriented MCQs (IBPS SO / SBI / RBI Pattern)
+
+**31.** Which step of the personal selling process involves the AIDA model?
+   - a) Prospecting
+   - b) Pre-approach
+   - c) Presentation
+   - d) Follow-up
+
+<details>
+<summary>Answer</summary>
+**c) Presentation.** The AIDA model (Attention, Interest, Desire, Action) guides the sales presentation. The salesperson first grabs attention, builds interest, creates desire, and finally motivates the prospect to act.
+</details>
+
+**32.** The Delphi method of sales forecasting differs from the Jury of Executive Opinion because:
+   - a) It uses mathematical formulas
+   - b) Experts remain anonymous and responses are iterated
+   - c) It is cheaper to implement
+   - d) It does not require experts
+
+<details>
+<summary>Answer</summary>
+**b) Experts remain anonymous and responses are iterated.** The Delphi method uses anonymous expert panels with multiple rounds of feedback to reach consensus, avoiding the groupthink and dominance issues that can affect jury of executive opinion.
+</details>
+
+**33.** A salesperson who focuses on selling life insurance to newly married couples is engaging in:
+   - a) Cold calling
+   - b) Referral selling
+   - c) Need-based selling
+   - d) Hard selling
+
+<details>
+<summary>Answer</summary>
+**c) Need-based selling.** Need-based selling identifies a customer's specific life situation (newly married) and aligns the product to address those needs (financial protection for the new family). This is more effective than hard selling.
+</details>
+
+**34.** In distribution channels, a merchant wholesaler differs from an agent because:
+   - a) Agents have lower margins
+   - b) Wholesalers take title to goods
+   - c) Wholesalers sell only online
+   - d) Agents operate only internationally
+
+<details>
+<summary>Answer</summary>
+**b) Wholesalers take title to goods.** Merchant wholesalers buy goods from manufacturers, take ownership (title), and resell to retailers. Agents/brokers facilitate transactions without taking title, earning commission instead.
+</details>
+
+**35.** A company using exclusive distribution for its luxury products should focus on which factor most?
+   - a) Maximum market coverage
+   - b) Brand image and service quality
+   - c) Lowest distribution cost
+   - d) Fastest delivery
+
+<details>
+<summary>Answer</summary>
+**b) Brand image and service quality.** Exclusive distribution limits outlets to maintain brand prestige, ensure personalised service, and control the customer experience. The focus is on quality of representation, not quantity of outlets.
+</details>
+
+**36.** The "Total Cost Approach" in logistics considers:
+   - a) Only transportation costs
+   - b) Only warehousing costs
+   - c) All logistics costs including transport, inventory, warehousing, and order processing
+   - d) Manufacturing costs only
+
+<details>
+<summary>Answer</summary>
+**c) All logistics costs including transport, inventory, warehousing, and order processing.** The total cost approach recognises that optimising one logistics function in isolation may increase costs elsewhere. For example, cheaper (slower) transport requires higher inventory.
+</details>
+
+**37.** Disintermediation in distribution channels refers to:
+   - a) Adding more intermediaries
+   - b) Removing intermediaries to connect directly with consumers
+   - c) Replacing old intermediaries with new ones
+   - d) Merging two distribution channels
+
+<details>
+<summary>Answer</summary>
+**b) Removing intermediaries to connect directly with consumers.** Disintermediation eliminates middlemen (wholesalers, retailers) from the distribution channel. E-commerce has accelerated disintermediation — manufacturers can now sell directly to consumers through websites.
+</details>
+
+**38.** A sales territory with high potential but low penetration requires:
+   - a) Reducing sales force in that territory
+   - b) Increasing call frequency and marketing support
+   - c) Abandoning the territory
+   - d) Increasing product prices
+
+<details>
+<summary>Answer</summary>
+**b) Increasing call frequency and marketing support.** High potential with low penetration indicates an opportunity gap. The territory may need more sales calls, better salespeople, increased marketing support, or improved channel relationships to realise its potential.
+</details>
+
+**39.** In FMCG distribution, a C&F (Carrying & Forwarding) agent's primary function is:
+   - a) Retail sales
+   - b) Warehousing and onward distribution
+   - c) Manufacturing
+   - d) Export documentation
+
+<details>
+<summary>Answer</summary>
+**b) Warehousing and onward distribution.** C&F agents receive large shipments from manufacturers, break bulk, and forward smaller quantities to distributors or wholesalers. They act as regional stock holding points, reducing the manufacturer's direct distribution burden.
+</details>
+
+**40.** The key advantage of using a distribution network over direct selling is:
+   - a) Lower per-unit distribution cost at scale
+   - b) Better customer relationships
+   - c) Faster feedback from customers
+   - d) More control over pricing
+
+<details>
+<summary>Answer</summary>
+**a) Lower per-unit distribution cost at scale.** Distribution networks achieve economies of scale by aggregating products from multiple manufacturers and spreading logistics costs across larger volumes. Direct selling has higher per-unit costs but offers better control.
+</details>
+
+### Section D: Exam-Oriented Questions (Q31–Q40)
+
+31. "Channel conflict is inevitable in multi-channel distribution." Do you agree? Discuss with strategies to manage channel conflict.
+32. A pharmaceutical company wants to distribute medicines to rural areas with poor infrastructure. Design a distribution channel strategy.
+33. Compare and contrast territorial, product-based, and market-based sales force structures. Which would you recommend for a company selling both B2B software and B2C hardware?
+34. Explain the concept of "value-added partnerships" in distribution channels with a real-world example.
+35. A consumer electronics brand faces channel conflict between its own online store and its retail partners. Propose a resolution strategy.
+36. How does the rise of e-commerce affect the role of wholesalers in the distribution channel? Are wholesalers becoming obsolete?
+37. A new entrant in the beverage industry must decide between intensive and selective distribution. Analyse the trade-offs and recommend a strategy for the first year.
+38. Calculate the total logistics cost for a company that spends ₹15 lakh on transportation, ₹8 lakh on warehousing, ₹3 lakh on inventory holding, and ₹2 lakh on order processing. What percentage is transportation of the total?
+39. Design a sales territory allocation plan for a company with 4 salespeople covering a state with 3 distinct regions (Metro: ₹10 cr potential, Urban: ₹6 cr, Rural: ₹4 cr).
+40. A start-up wants to launch a D2C brand of handmade chocolates. Should they use a direct channel only or partner with retailers? Analyse using the factors discussed in this chapter.

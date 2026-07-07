@@ -238,9 +238,185 @@ CRM is the process of managing detailed information about individual customers a
 - **Customer Retention Rate** — Percentage of customers retained over a period
 - **Net Promoter Score (NPS)** — Willingness to recommend the brand
 
+### 1.7 Consumer Buying Behaviour
+
+Understanding how consumers make purchase decisions is fundamental to marketing strategy.
+
+```mermaid
+flowchart TD
+    subgraph "Consumer Decision Process"
+        A[Need Recognition<br/>Hunger, status, security] --> B[Information Search<br/>Internal & external sources]
+        B --> C[Evaluation of Alternatives<br/>Compare features, price, brand]
+        C --> D[Purchase Decision<br/>Choose & buy]
+        D --> E[Post-Purchase Behaviour<br/>Satisfaction or dissonance]
+        E -.->|Feedback| A
+    end
+    style A fill:#4a90d9,color:#fff
+    style C fill:#f1c40f,color:#000
+    style E fill:#e74c3c,color:#fff
+```
+
+**Types of buying behaviour:**
+
+| Type | Involvement | Brand Difference | Example |
+|------|-------------|------------------|---------|
+| **Complex** | High | Significant | Car, house, laptop |
+| **Dissonance-Reducing** | High | Few differences | Mattress, water purifier |
+| **Variety-Seeking** | Low | Significant | Snacks, ice cream flavours |
+| **Habitual** | Low | Few differences | Salt, sugar, milk |
+
+**Buying roles (for high-involvement purchases):**
+- **Initiator** — First suggests buying the product
+- **Influencer** — Whose opinion affects the decision
+- **Decider** — Makes the final decision
+- **Buyer** — Performs the purchase transaction
+- **User** — Consumes or uses the product
+
+### 1.8 Marketing Research Process
+
+Marketing research is the systematic design, collection, analysis, and reporting of data relevant to a specific marketing situation.
+
+```mermaid
+graph LR
+    D[Define Problem<br/>& Objectives] --> P[Develop Research Plan]
+    P --> C[Collect Information<br/>Primary / Secondary]
+    C --> A[Analyse Information]
+    A --> R[Present Findings]
+    R --> M[Make Marketing Decision]
+    style D fill:#e74c3c,color:#fff
+    style A fill:#f1c40f,color:#000
+    style M fill:#2ecc71,color:#fff
+```
+
+| Research Type | Description | Methods | When Used |
+|---------------|-------------|---------|-----------|
+| **Exploratory** | Discover ideas and insights | Focus groups, depth interviews | Ill-defined problems |
+| **Descriptive** | Describe market characteristics | Surveys, panels, observations | Who, what, when, where |
+| **Causal** | Test cause-and-effect | Experiments, test markets | Does X cause Y? |
+
+**Data types:**
+- **Primary data** — Collected first-hand (surveys, interviews, observations)
+- **Secondary data** — Already exists (government reports, industry studies, internal sales data)
+
+### 1.9 Demand States in Marketing
+
+Marketers face different demand states that require different strategies:
+
+```mermaid
+mindmap
+  root((Demand States))
+    Negative Demand
+      Consumers avoid product
+      Strategy: Create desire
+    No Demand
+      Consumers unaware
+      Strategy: Build awareness
+    Latent Demand
+      Need exists but no product
+      Strategy: Develop product
+    Declining Demand
+      Falling sales
+      Strategy: Revitalise
+    Irregular Demand
+      Seasonal variation
+      Strategy: Synchronise
+    Full Demand
+      Ideal situation
+      Strategy: Maintain
+    Overfull Demand
+      Exceeds supply
+      Strategy: Demarket
+    Unwholesome Demand
+      Harmful products
+      Strategy: Discourage
+```
+
+| Demand State | Description | Strategy |
+|-------------|-------------|----------|
+| **Negative** | Consumers dislike the product | Conversion marketing |
+| **No demand** | Consumers unaware or uninterested | Stimulational marketing |
+| **Latent** | Need exists but no product fills it | Developmental marketing |
+| **Declining** | Sales are falling | Remarketing |
+| **Irregular** | Seasonal/demand fluctuations | Synchro-marketing |
+| **Full** | Satisfactory demand level | Maintenance marketing |
+| **Overfull** | Demand exceeds supply | Demarketing |
+| **Unwholesome** | Demand for harmful products | Counter-marketing |
+
+### 1.10 Comparison Tables for Exam Preparation
+
+#### 4Ps vs 7Ps Marketing Mix
+
+| Dimension | 4Ps (Goods) | 7Ps (Services) |
+|-----------|-------------|----------------|
+| **Orientation** | Product-centric | Customer-centric |
+| **Applicable to** | Physical goods | Services (intangible, inseparable, variable, perishable) |
+| **Product** | Tangible, standardised | Intangible, customised |
+| **Price** | Cost + margin based | Value-based, perceived worth |
+| **Place** | Physical distribution channels | Branch, app, digital access points |
+| **Promotion** | Mass advertising, sales promotion | Relationship marketing, word-of-mouth |
+| **Added elements** | — | People, Process, Physical Evidence |
+| **Examples** | Soap, car, phone | Bank, hotel, airline, insurance |
+| **Key challenge** | Product quality, pricing | Service consistency, customer experience |
+
+#### Push vs Pull Strategy
+
+| Dimension | Push Strategy | Pull Strategy |
+|-----------|--------------|---------------|
+| **Direction** | Manufacturer pushes to intermediaries → consumer | Consumer pulls from intermediaries → manufacturer |
+| **Focus** | Trade promotion, personal selling | Advertising, brand building |
+| **Channel** | Distributor → Retailer → Consumer | Consumer demand → Retailer → Distributor |
+| **Best for** | Low brand loyalty, impulse products | Strong brand, differentiated products |
+| **Cost** | Lower marketing cost, higher trade spend | Higher advertising cost |
+| **Example** | FMCG products pushed to kirana stores | Apple — consumers demand iPhone from stores |
+| **Control** | Manufacturer controls channel push | Consumer controls demand pull |
+
+#### Traditional vs Digital Marketing
+
+| Dimension | Traditional Marketing | Digital Marketing |
+|-----------|---------------------|-------------------|
+| **Medium** | TV, print, radio, billboard, hoardings | Website, social media, email, search, mobile apps |
+| **Targeting** | Mass / demographic segments only | Hyper-targeted (behaviour, interest, location) |
+| **Cost** | High (TV ad: ₹5–50 lakh per 10 sec) | Low to moderate (₹5–50 per click) |
+| **Measurability** | Difficult (reach estimation) | Precise (clicks, impressions, conversions) |
+| **Interaction** | One-way communication | Two-way, interactive |
+| **Speed** | Slow to create and launch | Fast — launch in hours |
+| **Personalisation** | Limited to segment-level | Individual-level personalisation |
+| **ROI tracking** | Difficult, indirect | Direct attribution |
+| **Examples** | Times of India ad, Star Plus TV ad | Google Ads, Instagram campaign, email |
+
+```typescript
+// TypeScript: Push vs Pull Strategy Analyser
+type StrategyType = "Push" | "Pull" | "Hybrid";
+
+interface ProductContext {
+  brandAwareness: number;    // 0-100
+  productType: "convenience" | "shopping" | "specialty" | "unsought";
+  pricePoint: "low" | "medium" | "high";
+  distributionWidth: "intensive" | "selective" | "exclusive";
+  customerInvolvement: "low" | "medium" | "high";
+}
+
+function recommendStrategy(context: ProductContext): StrategyType {
+  if (context.brandAwareness >= 70 && context.productType === "specialty") return "Pull";
+  if (context.pricePoint === "high" && context.customerInvolvement === "high") return "Pull";
+  if (context.distributionWidth === "intensive" && context.pricePoint === "low") return "Push";
+  if (context.productType === "convenience") return "Push";
+  return "Hybrid";
+}
+
+const product: ProductContext = {
+  brandAwareness: 85,
+  productType: "specialty",
+  pricePoint: "high",
+  distributionWidth: "selective",
+  customerInvolvement: "high",
+};
+console.log("Recommended strategy:", recommendStrategy(product)); // Pull
+```
+
 ---
 
-## Examples: 20 Solved MCQs
+## Examples: 30 Solved MCQs
 
 ### Example 1: Marketing Definitions
 
@@ -658,6 +834,152 @@ d) Guerrilla marketing
 
 ---
 
+### Example 9: Consumer Buying Behaviour (Q21–Q24)
+
+**Q21.** A customer buying a house for the first time is likely to exhibit which type of buying behaviour?
+
+a) Habitual
+b) Variety-seeking
+c) Complex
+d) Dissonance-reducing
+
+<details>
+<summary>Answer</summary>
+**c) Complex buying behaviour.** Buying a house is high-involvement with significant brand differences. The customer will go through extensive information search and evaluation — characteristic of complex buying behaviour.
+</details>
+
+---
+
+**Q22.** In the consumer decision process, the stage immediately after "Evaluation of Alternatives" is:
+
+a) Need recognition
+b) Information search
+c) Purchase decision
+d) Post-purchase behaviour
+
+<details>
+<summary>Answer</summary>
+**c) Purchase decision.** The correct sequence is: Need Recognition → Information Search → Evaluation of Alternatives → Purchase Decision → Post-Purchase Behaviour. Post-purchase comes after purchase.
+</details>
+
+---
+
+**Q23.** A mother who decides which breakfast cereal to buy for the family is playing the role of:
+
+a) Initiator
+b) Influencer
+c) Decider
+d) User
+
+<details>
+<summary>Answer</summary>
+**c) Decider.** The decider makes the actual purchase decision. In this case, the mother decides what cereal to buy (decider), even if children are initiators (they asked for it) and users (they eat it).
+</details>
+
+---
+
+**Q24.** Variety-seeking buying behaviour is characterised by:
+
+a) High involvement, significant brand differences
+b) Low involvement, significant brand differences
+c) High involvement, few brand differences
+d) Low involvement, few brand differences
+
+<details>
+<summary>Answer</summary>
+**b) Low involvement, significant brand differences.** Variety-seeking occurs when consumers buy out of boredom or curiosity — low involvement but brands differ significantly (e.g., trying a new flavour of chips).
+</details>
+
+---
+
+### Example 10: Marketing Research (Q25–Q27)
+
+**Q25.** Focus groups and depth interviews are examples of which type of marketing research?
+
+a) Exploratory research
+b) Descriptive research
+c) Causal research
+d) Experimental research
+
+<details>
+<summary>Answer</summary>
+**a) Exploratory research.** Exploratory research discovers ideas and insights using qualitative methods like focus groups and depth interviews. It helps define problems and generate hypotheses but does not provide conclusive answers.
+</details>
+
+---
+
+**Q26.** Secondary data differs from primary data in that secondary data:
+
+a) Is always more accurate
+b) Was collected for another purpose
+c) Requires more time to collect
+d) Is never useful for marketing decisions
+
+<details>
+<summary>Answer</summary>
+**b) Was collected for another purpose.** Secondary data already exists and was collected for some other purpose (government census, industry reports). Primary data is collected first-hand for the specific research problem.
+</details>
+
+---
+
+**Q27.** Which type of research would a company use to test whether a ₹10 price reduction increases sales by 15%?
+
+a) Exploratory
+b) Descriptive
+c) Causal
+d) Observational
+
+<details>
+<summary>Answer</summary>
+**c) Causal research.** Causal research tests cause-and-effect relationships (does price reduction cause sales increase?). It typically uses experiments where one variable is manipulated while others are controlled.
+</details>
+
+---
+
+### Example 11: Demand States (Q28–Q30)
+
+**Q28.** A vaccine manufacturer faces a situation where people avoid vaccination despite health risks. This demand state is called:
+
+a) No demand
+b) Negative demand
+c) Latent demand
+d) Declining demand
+
+<details>
+<summary>Answer</summary>
+**b) Negative demand.** Negative demand exists when consumers actively dislike or avoid a product. The marketer's task is conversion marketing — analysing why people resist and creating programmes to change beliefs.
+</details>
+
+---
+
+**Q29.** The demand for air conditioners peaks in summer and drops in winter. This is known as:
+
+a) Irregular demand
+b) Declining demand
+c) Latent demand
+d) Full demand
+
+<details>
+<summary>Answer</summary>
+**a) Irregular demand.** Seasonal variations in demand create irregular demand patterns. Synchro-marketing strategies include off-season discounts, pre-season booking offers, and diversification into complementary products.
+</details>
+
+---
+
+**Q30.** When demand exceeds supply and cannot be immediately increased, the appropriate marketing strategy is:
+
+a) Developmental marketing
+b) Synchro-marketing
+c) Demarketing
+d) Remarketing
+
+<details>
+<summary>Answer</summary>
+**c) Demarketing.** Demarketing aims to temporarily or permanently reduce demand when supply is insufficient. Strategies include raising prices, reducing promotion, and rationing supplies. This is common during product shortages or capacity constraints.
+</details>
+
+---
+
 ## Summary
 
 - **Marketing** is the process of creating, communicating, delivering, and exchanging offerings that have value for customers and society
@@ -811,3 +1133,128 @@ d) Guerrilla marketing
 | 28 | Global firms deal with multiple macroenvironments; local retailers focus on immediate microenvironment | Scope and complexity differ |
 | 29| Level 1 (Physiological): basic food; Level 2 (Safety): insurance; Level 3 (Social): Facebook; Level 4 (Esteem): luxury cars; Level 5 (Self-actualisation): premium education | Products mapped to needs hierarchy |
 | 30 | Behavioural segmentation (usage rate). Heavy: loyalty programme; Moderate: value bundles; Light: usage incentives; Non-users: introductory offers | Different strategies for different usage segments |
+
+### Additional Exam-Oriented MCQs (IBPS SO / SBI / RBI Pattern)
+
+**31.** Which marketing philosophy is best reflected by a company that focuses on continuous product improvement and innovation?
+   - a) Production concept
+   - b) Product concept
+   - c) Selling concept
+   - d) Societal concept
+
+<details>
+<summary>Answer</summary>
+**b) Product concept.** The product concept holds that consumers favour products offering the most quality, performance, and innovative features. Companies following this philosophy focus on making superior products and improving them over time.
+</details>
+
+**32.** "Consumers will favour products that are widely available and inexpensive" — this statement relates to which concept?
+   - a) Product concept
+   - b) Production concept
+   - c) Marketing concept
+   - d) Holistic marketing concept
+
+<details>
+<summary>Answer</summary>
+**b) Production concept.** The production concept is one of the oldest orientations, focusing on mass production, high efficiency, and wide distribution to make products affordable and available.
+</details>
+
+**33.** In the STP process, what comes immediately after market segmentation?
+   - a) Positioning
+   - b) Targeting
+   - c) Promotion
+   - d) Product development
+
+<details>
+<summary>Answer</summary>
+**b) Targeting.** The STP process follows the sequence: Segmentation → Targeting → Positioning. After dividing the market into segments, marketers evaluate each segment's attractiveness and select one or more to target.
+</details>
+
+**34.** A company segments the market based on "brand loyalty" and "usage rate." Which segmentation base is being used?
+   - a) Demographic
+   - b) Geographic
+   - c) Psychographic
+   - d) Behavioural
+
+<details>
+<summary>Answer</summary>
+**d) Behavioural segmentation.** Behavioural segmentation divides consumers based on their knowledge, attitudes, uses, or responses to a product. Usage rate (heavy, medium, light) and brand loyalty (none, medium, strong) are key behavioural variables.
+</details>
+
+**35.** A brand that occupies a clear, distinctive, and desirable place in consumers' minds relative to competing brands has achieved:
+   - a) Market segmentation
+   - b) Brand awareness
+   - c) Effective positioning
+   - d) Market penetration
+
+<details>
+<summary>Answer</summary>
+**c) Effective positioning.** Positioning is the act of designing the company's offering and image to occupy a distinctive place in the target market's mind. Effective positioning is clear, distinctive, credible, and relevant to the target audience.
+</details>
+
+**36.** Which macroenvironmental force includes changes in family structure and population age distribution?
+   - a) Political
+   - b) Economic
+   - c) Social
+   - d) Technological
+
+<details>
+<summary>Answer</summary>
+**c) Social (Demographic).** Demographic changes (aging population, smaller families, urbanisation) are part of the social/cultural macroenvironment. These shifts significantly impact demand for products and services.
+</details>
+
+**37.** Under-positioning occurs when:
+   - a) A brand makes claims that seem unbelievable
+   - b) Consumers have a vague and unclear idea of the brand
+   - c) The brand tries to appeal to too many segments
+   - d) The brand's position is too narrow
+
+<details>
+<summary>Answer</summary>
+**b) Consumers have a vague and unclear idea of the brand.** Under-positioning means customers don't have a strong, distinctive perception of what the brand stands for. The brand fails to create a clear identity in consumers' minds.
+</details>
+
+**38.** The "People" element in the 7Ps of services marketing refers to:
+   - a) The target market
+   - b) All human actors in service delivery
+   - c) Only the sales team
+   - d) Customer complaints
+
+<details>
+<summary>Answer</summary>
+**b) All human actors in service delivery.** In the 7Ps framework, "People" includes all employees involved in service delivery (frontline staff, support personnel) as well as other customers who may influence the service experience.
+</details>
+
+**39.** Customer Lifetime Value (CLV) helps marketers determine:
+   - a) The total number of customers
+   - b) The maximum amount to spend on customer acquisition
+   - c) The best advertising medium
+   - d) The optimal product price
+
+<details>
+<summary>Answer</summary>
+**b) The maximum amount to spend on customer acquisition.** CLV represents the total net profit a customer generates over the relationship. A rational business should not spend more to acquire a customer than their expected CLV. CAC < CLV is the golden rule.
+</details>
+
+**40.** According to the societal marketing concept, marketers must balance:
+   - a) Company profits only
+   - b) Customer wants only
+   - c) Company profits, customer wants, and society's interests
+   - d) Product quality and price
+
+<details>
+<summary>Answer</summary>
+**c) Company profits, customer wants, and society's interests.** The societal marketing concept holds that marketing strategy should deliver value to customers in a way that maintains or improves both the consumer's and society's well-being, alongside company profitability.
+</details>
+
+### Section D: Exam-Oriented Questions (Q31–Q40)
+
+31. Analyse the impact of COVID-19 on the marketing environment using the PESTLE framework.
+32. A FMCG company notices declining sales for its flagship soap brand. Using the demand states framework, diagnose the situation and recommend a marketing response.
+33. Compare the production concept, product concept, and selling concept. Which one is most relevant for a startup entering a competitive market?
+34. How would you design a marketing research study to understand why young professionals in metro cities are not buying life insurance?
+35. Explain Maslow's hierarchy of needs and map marketing strategies for products at each level of the hierarchy.
+36. "Marketing is a science as well as an art." Discuss this statement with reference to the concepts covered in this chapter.
+37. A premium chocolate brand wants to enter the Indian market. Design a complete STP strategy with justification for each step.
+38. How does the macroenvironment differ for a consumer electronics company versus a fast-food chain? Analyse using PESTLE.
+39. A company's brand has been suffering from confused positioning. Diagnose the problem and create a repositioning plan.
+40. Using the consumer decision process model, explain how a marketer can influence each stage for a new smartphone launch.

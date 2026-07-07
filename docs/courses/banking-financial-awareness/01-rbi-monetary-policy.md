@@ -810,6 +810,166 @@ The MPC is required to meet at least 4 times a year. In practice, meetings are h
 
 ---
 
+**Q21.** According to the Quantity Theory of Money, if money supply increases by 10% and velocity and output remain constant, the price level will:
+
+a) Decrease by 10%
+b) Remain unchanged
+c) Increase by 10%
+d) Increase by 20%
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) Increase by 10%
+
+MV = PT. If V and T are constant, ΔM = ΔP. A 10% increase in M leads to a proportional 10% increase in P.
+</details>
+
+---
+
+**Q22.** Which of the following is NOT a function of money?
+
+a) Medium of exchange
+b) Store of value
+c) Measure of inequality
+d) Standard of deferred payment
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) Measure of inequality
+
+Money serves four primary functions: medium of exchange, measure of value, store of value, and standard of deferred payment. Measuring inequality is not a function of money.
+</details>
+
+---
+
+**Q23.** What is the validity period of a cheque in India?
+
+a) 1 month
+b) 3 months
+c) 6 months
+d) 12 months
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) 3 months
+
+Cheques in India are valid for 3 months from the date of issue. This was reduced from 6 months in 2012.
+</details>
+
+---
+
+**Q24.** Who proposed the Cambridge version of the Quantity Theory of Money?
+
+a) Irving Fisher
+b) Alfred Marshall and Arthur Pigou
+c) John Maynard Keynes
+d) Milton Friedman
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) Alfred Marshall and Arthur Pigou
+
+The Cambridge version (M_d = kPY) was developed by Marshall and Pigou, focusing on the demand for money rather than the supply-side approach of Fisher's MV = PT.
+</details>
+
+---
+
+**Q25.** The Cheque Truncation System (CTS) in India is regulated by:
+
+a) SEBI
+b) RBI
+c) SBI
+d) NPCI
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) RBI
+
+CTS is regulated by the Reserve Bank of India. Under CTS, physical cheques are not moved; instead, electronic images are transmitted for clearing, reducing the clearing cycle.
+</details>
+
+---
+
+**Q26.** Under the Positive Pay System introduced by RBI, re-confirmation of cheque details is mandatory for amounts of:
+
+a) ₹25,000 and above
+b) ₹50,000 and above
+c) ₹1,00,000 and above
+d) ₹5,00,000 and above
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) ₹50,000 and above
+
+The Positive Pay System (2021) requires re-confirmation of cheque details for amounts of ₹50,000 and above to prevent cheque fraud.
+</details>
+
+---
+
+**Q27.** In the equation MV = PT, what does 'V' represent?
+
+a) Volume of transactions
+b) Velocity of circulation of money
+c) Value of goods
+d) Variation in prices
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) Velocity of circulation of money
+
+V = Velocity of circulation, which measures how many times a unit of money changes hands in a given period. A higher V means each rupee is used more frequently in transactions.
+</details>
+
+---
+
+**Q28.** Which of the following is a qualitative monetary policy tool?
+
+a) Repo rate
+b) CRR
+c) Moral suasion
+d) Open Market Operations
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) Moral suasion
+
+Moral suasion involves persuasive communication by RBI to banks to follow certain lending/borrowing policies. It is a qualitative/selective tool, unlike quantitative tools (repo, CRR, OMO).
+</details>
+
+---
+
+**Q29.** The term 'Liquidity Trap' refers to a situation where:
+
+a) Banks have excess liquidity but low demand for credit
+b) Monetary policy becomes ineffective because people hoard cash at very low interest rates
+c) RBI cannot print enough currency
+d) Foreign exchange reserves fall below critical levels
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) Monetary policy becomes ineffective because people hoard cash at very low interest rates
+
+In a liquidity trap, interest rates are so low that people prefer to hold cash rather than invest, making expansionary monetary policy (rate cuts) ineffective.
+</details>
+
+---
+
+**Q30.** The Fisher Effect states that the nominal interest rate equals:
+
+a) Real interest rate + Expected inflation
+b) Real interest rate — Expected inflation
+c) Real interest rate × Inflation rate
+d) Real interest rate / Inflation rate
+
+<details>
+<summary>Answer</summary>
+**Answer:** a) Real interest rate + Expected inflation
+
+The Fisher Effect states: Nominal Interest Rate = Real Interest Rate + Expected Inflation Rate. This relationship is fundamental to understanding monetary policy transmission.
+</details>
+
+---
+
 ## TypeScript Example: Monetary Policy Simulator
 
 ```typescript
@@ -879,6 +1039,163 @@ simulation.forEach((s, i) => {
 // Period 1: Rate=6.75%, Inflation=5.13%, GDP=6.38%
 // Period 2: Rate=6.75%, Inflation=5.13%, GDP=6.38%
 // Period 3: Rate=6.5%, Inflation=5.17%, GDP=6.72%
+```
+
+---
+
+### 1.10 Concept of Money
+
+Money is any generally accepted medium of exchange, measure of value, store of value, and standard of deferred payment.
+
+#### A. Significance of Money
+
+| Function | Description |
+|----------|-------------|
+| **Medium of Exchange** | Eliminates the inefficiency of barter trade — no double coincidence of wants needed |
+| **Measure of Value** | Provides a common unit to compare worth of diverse goods and services |
+| **Store of Value** | Enables intertemporal transfer of purchasing power |
+| **Standard of Deferred Payment** | Facilitates credit transactions and future contracts |
+| **Liquidity** | Most liquid asset — universally accepted for transactions |
+
+#### B. Evils of Money
+
+| Evil | Description | Example |
+|------|-------------|---------|
+| **Inequality** | Concentration of wealth in money terms widens rich-poor gap | Wealth accumulation through interest/investment |
+| **Inflation** | Excess money supply erodes purchasing power | Currency depreciation reduces real wages |
+| **Speculation** | Money enables hoarding and market manipulation | Commodity cornering, black money |
+| **Crime** | Money as target for illegal activities | Corruption, theft, money laundering |
+| **Business Cycles** | Money facilitates boom-bust cycles | Credit bubbles leading to recessions |
+
+#### C. Quantity Theory of Money (Fisher's Equation)
+
+The **Quantity Theory of Money** by Irving Fisher states:
+
+```
+MV = PT
+```
+
+Where:
+- **M** = Money Supply
+- **V** = Velocity of Circulation (rate at which money changes hands)
+- **P** = General Price Level
+- **T** = Volume of Transactions (real output)
+
+**Implications:**
+- If V and T are constant, changes in M lead to **proportional changes in P** (inflation)
+- ΔM% + ΔV% ≈ ΔP% + ΔT% (growth rate form)
+- **Criticism:** V is not constant in the short run; T does not remain constant at full employment
+
+**Cambridge Version (Marshall - Pigou):**
+
+```
+M_d = kPY
+```
+
+Where **k** is the proportion of income people want to hold as cash. This emphasises **money demand** rather than supply.
+
+```mermaid
+flowchart LR
+    A[Increase in<br/>Money Supply M] --> B[More Spending<br/>Power with People]
+    B --> C[Increased Aggregate<br/>Demand for Goods]
+    C --> D{Is Economy at<br/>Full Capacity?}
+    D -->|Yes: Supply<br/>Cannot Increase| E[Price Level<br/>Rises → Inflation]
+    D -->|No: Idle<br/>Capacity Exists| F[Output Increases<br/>→ Growth]
+    
+    G[Decrease in<br/>Money Supply] --> H[Reduced Spending]
+    H --> I[Falling Demand]
+    I --> J[Price Level Falls<br/>→ Deflation Risk]
+    
+    style A fill:#1a73e8,color:#fff
+    style E fill:#e83737,color:#fff
+    style F fill:#4CAF50,color:#fff
+```
+
+### 1.11 Cheques and Payment Instruments
+
+A **cheque** is a bill of exchange drawn on a specified banker, payable on demand. The RBI regulates cheque clearing through the **Cheque Truncation System (CTS)** .
+
+| Aspect | Description |
+|--------|-------------|
+| **Definition** | Unconditional order in writing, signed by the drawer, directing a bank to pay a sum to a specified person |
+| **Parties** | Drawer (account holder), Drawee (bank), Payee (recipient) |
+| **CTS (Cheque Truncation System)** | Physical cheque not moved; electronic image transmitted for clearing |
+| **Positive Pay System** | Since 2021, re-confirmation of cheque details for amounts ≥ ₹50,000 |
+| **Validity** | Cheques valid for 3 months from date of issue (reduced from 6 months in 2012) |
+
+### 1.12 Quantitative vs Qualitative Tools — Comparison
+
+| Aspect | Quantitative Tools | Qualitative Tools |
+|--------|-------------------|-------------------|
+| **Target** | Overall money supply and credit volume | Sector-specific credit allocation |
+| **Examples** | Repo rate, CRR, SLR, OMO | Margin requirements, credit rationing, moral suasion |
+| **Nature** | Market-wide, impersonal | Selective, directive-based |
+| **Impact** | Broad, diffuses through economy | Targeted, sector-specific |
+| **Implementation** | Through policy rates and reserve ratios | Through direct instructions and guidelines |
+| **Effectiveness** | Affects aggregate demand and inflation | Controls speculative activities, directs credit flow |
+
+### 1.13 The Bill Market and Discounting
+
+The **Bill Market** (or Discount Market) in India deals with short-term bills of exchange and commercial paper.
+
+| Instrument | Description | Discounting Mechanism |
+|------------|-------------|----------------------|
+| **Treasury Bills** | Government short-term borrowing | RBI auctions at discount; banks bid competitively |
+| **Commercial Bills** | Trade bills arising from commercial transactions | Discounted by banks; rediscounted by RBI/DFHI |
+| **Certificate of Deposit** | Bank-issued short-term deposit | Issued at discount; traded in secondary market |
+| **Commercial Paper** | Corporate short-term promissory note | Issued at discount to face value |
+
+**Bill Rediscounting:** Banks can rediscount eligible bills with the RBI or the Discount and Finance House of India (DFHI) to manage short-term liquidity.
+
+### 1.14 RBI Grade B / SBI PO / IBPS SO Exam Revision Tips
+
+| Exam | Focus Areas | Preparation Strategy |
+|------|-------------|---------------------|
+| **RBI Grade B** | MPC composition, inflation targeting, monetary policy transmission, Basel norms, supervision | Practice case studies on policy rate impact; memorise all current rates; study recent RBI annual reports |
+| **SBI PO** | Repo/Reverse Repo, CRR/SLR differences, LAF corridor, bank nationalisation history, MCLR | Create a rates table (repo, reverse repo, MSF, bank rate, CRR, SLR) updated with current values; practice numerical on money multiplier |
+| **IBPS SO** | Priority sector lending, NPA classification, monetary policy tools, OMO, inflation measurement | Focus on comparative concepts (Quantitative vs Qualitative, CRR vs SLR); master the 90-day NPA rule and provisioning percentages |
+| **General Tips** | Rates and ratios, committee names, important years | Use mnemonics (see Practical Takeaways); revise weekly with flashcards; attempt mock tests with timer |
+
+---
+
+## TypeScript Example: Quantity Theory of Money Calculator
+
+```typescript
+interface QuantityTheoryResult {
+  moneySupply: number;
+  velocity: number;
+  priceLevel: number;
+  output: number;
+  predictedInflation: number;
+}
+
+function quantityTheoryOfMoney(
+  currentMoneySupply: number,
+  currentVelocity: number,
+  currentPriceLevel: number,
+  currentOutput: number,
+  newMoneySupply: number
+): QuantityTheoryResult {
+  // Verify MV = PT
+  const lhs = currentMoneySupply * currentVelocity;
+  const rhs = currentPriceLevel * currentOutput;
+
+  // Assuming V and T constant, predict new price level
+  const predictedPriceLevel = (newMoneySupply * currentVelocity) / currentOutput;
+  const predictedInflation = ((predictedPriceLevel - currentPriceLevel) / currentPriceLevel) * 100;
+
+  return {
+    moneySupply: newMoneySupply,
+    velocity: currentVelocity,
+    priceLevel: Math.round(predictedPriceLevel * 100) / 100,
+    output: currentOutput,
+    predictedInflation: Math.round(predictedInflation * 100) / 100,
+  };
+}
+
+const qt = quantityTheoryOfMoney(50000, 6, 150, 2000, 55000);
+console.log(`New Price Level: ${qt.priceLevel}, Predicted Inflation: ${qt.predictedInflation}%`);
+// Output: New Price Level: 165, Predicted Inflation: 10%
 ```
 
 ---
@@ -1046,30 +1363,44 @@ Income tax rates are set by the government through the Finance Act. RBI's develo
 18. The Repo Rate minus _________ equals the Reverse Repo Rate (approximately).
 19. The EBLR system was mandated by RBI from _________ 2019.
 20. The minimum alternate tenure for MCLR is _________ MCLR.
+21. According to Fisher's Quantity Theory of Money, the equation MV = PT is known as the _________.
+22. The _________ version of the Quantity Theory of Money is represented by M_d = kPY.
+23. The cheque clearing system that uses electronic image transmission instead of physical movement is called _________.
+24. The validity period of a cheque in India is _________ months from the date of issue.
+25. Under the Positive Pay System, re-confirmation is mandatory for cheques of ₹_________ and above.
 
 ### Section C: True or False
 
-21. The RBI was nationalised in 1947. (True/False)
-22. CRR is applicable only on time liabilities. (True/False)
-23. SLR can be maintained in the form of gold. (True/False)
-24. The MSF rate is always lower than the repo rate. (True/False)
-25. The Governor of RBI has a casting vote in MPC meetings. (True/False)
-26. The inflation target under the monetary policy framework is 5%. (True/False)
-27. Open Market Operations are used to manage day-to-day liquidity. (True/False)
-28. The bank rate is used for calculating penalties on CRR shortfalls. (True/False)
-29. MCLR was introduced in 2010. (True/False)
-30. The MPC has 7 members including the Governor. (True/False)
+26. The RBI was nationalised in 1947. (True/False)
+27. CRR is applicable only on time liabilities. (True/False)
+28. SLR can be maintained in the form of gold. (True/False)
+29. The MSF rate is always lower than the repo rate. (True/False)
+30. The Governor of RBI has a casting vote in MPC meetings. (True/False)
+31. The inflation target under the monetary policy framework is 5%. (True/False)
+32. Open Market Operations are used to manage day-to-day liquidity. (True/False)
+33. The bank rate is used for calculating penalties on CRR shortfalls. (True/False)
+34. MCLR was introduced in 2010. (True/False)
+35. The MPC has 7 members including the Governor. (True/False)
+36. Money serves as a measure of inequality. (True/False)
+37. A cheque is a type of bill of exchange. (True/False)
+38. Moral suasion is a quantitative monetary policy tool. (True/False)
+39. In a liquidity trap, monetary policy becomes more effective. (True/False)
+40. The Fisher Effect states that nominal interest rate = real interest rate + expected inflation. (True/False)
 
 ### Answer Key
 
+| Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
+|---|--------|---|--------|---|--------|---|--------|---|--------|
 | Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
 |---|--------|---|--------|---|--------|---|--------|---|--------|
 | 1 | c (1949) | 2 | c (4.5%) | 3 | b (Repo Rate) | 4 | b (Ensuring bank solvency) | 5 | b (Urjit Patel Committee) |
 | 6 | b (Banker to banks) | 7 | a (Marginal Standing Facility) | 8 | b (Repo Rate) | 9 | b (RBI pays no interest) | 10 | b (2%) |
 | 11 | Hilton Young | 12 | Reverse Repo | 13 | Marginal Cost of Funds-based Lending Rate | 14 | 2016 | 15 | Minimum Reserve |
 | 16 | long-term | 17 | 90 | 18 | 0.25% (or market determined margin) | 19 | October | 20 | Overnight |
-| 21 | False (1949) | 22 | False (NDTL) | 23 | True | 24 | False (higher) | 25 | True |
-| 26 | False (4%) | 27 | True | 28 | True | 29 | False (2016) | 30 | False (6 members) |
+| 21 | Equation of Exchange | 22 | Cambridge | 23 | Cheque Truncation System (CTS) | 24 | 3 | 25 | ₹50,000 |
+| 26 | False (1949) | 27 | False (NDTL) | 28 | True | 29 | False (higher) | 30 | True |
+| 31 | False (4%) | 32 | True | 33 | True | 34 | False (2016) | 35 | False (6 members) |
+| 36 | False (money is not a measure of inequality) | 37 | True | 38 | False (qualitative) | 39 | False (monetary policy becomes ineffective) | 40 | True |
 
 ---
 

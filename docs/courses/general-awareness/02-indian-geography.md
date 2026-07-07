@@ -678,6 +678,323 @@ Arunachal Pradesh shares the longest international border with China (approximat
 
 ---
 
+### 2.13 World Geography — The Universe and Solar System
+
+```mermaid
+flowchart LR
+    A[Universe] --> B[Galaxies]
+    B --> C[Milky Way]
+    C --> D[Solar System]
+    D --> E[Sun - Star]
+    E --> F1[Mercury]
+    E --> F2[Venus]
+    E --> F3[Earth]
+    E --> F4[Mars]
+    E --> F5[Jupiter]
+    E --> F6[Saturn]
+    E --> F7[Uranus]
+    E --> F8[Neptune]
+```
+
+**Solar System Facts:**
+
+| Planet | Distance from Sun (M km) | Diameter (km) | Orbital Period | Key Feature |
+|--------|--------------------------|---------------|----------------|-------------|
+| Mercury | 57.9 | 4,879 | 88 days | Smallest planet; closest to Sun |
+| Venus | 108.2 | 12,104 | 225 days | Hottest planet; rotates clockwise |
+| Earth | 149.6 | 12,742 | 365.25 days | Only known planet with life |
+| Mars | 227.9 | 6,779 | 687 days | "Red Planet"; has Olympus Mons (largest volcano) |
+| Jupiter | 778.5 | 139,820 | 11.86 years | Largest planet; Great Red Spot |
+| Saturn | 1,434 | 116,460 | 29.46 years | Beautiful ring system; least dense planet |
+| Uranus | 2,871 | 50,724 | 84 years | Rotates on its side (axial tilt 98°) |
+| Neptune | 4,495 | 49,244 | 164.8 years | Windiest planet (2,100 km/h) |
+
+**Earth Facts:**
+- **Circumference:** 40,075 km (equatorial), 40,008 km (polar)
+- **Surface Area:** 510.1 million km² (29% land, 71% water)
+- **Core Temperature:** ~5,500°C (similar to Sun's surface)
+- **Atmosphere Composition:** N₂ (78.08%), O₂ (20.95%), Ar (0.93%), CO₂ (0.04%)
+- **Time Zones:** 24 standard time zones; GMT/UTC at Prime Meridian (Greenwich)
+- **Latitudes:** Equator (0°), Tropic of Cancer (23.5°N), Tropic of Capricorn (23.5°S), Arctic Circle (66.5°N), Antarctic Circle (66.5°S)
+
+### 2.14 Continents and Oceans
+
+| Continent | Area (M km²) | Population (B) | Largest Country | Highest Point |
+|-----------|-------------|----------------|-----------------|---------------|
+| Asia | 44.58 | 4.7 | Russia | Mt. Everest (8,848 m) |
+| Africa | 30.37 | 1.4 | Algeria | Kilimanjaro (5,895 m) |
+| North America | 24.71 | 0.6 | Canada | Denali (6,190 m) |
+| South America | 17.84 | 0.43 | Brazil | Aconcagua (6,961 m) |
+| Antarctica | 14.00 | ~0.001 (Research) | — | Vinson Massif (4,892 m) |
+| Europe | 10.18 | 0.75 | Russia (part) | Elbrus (5,642 m) |
+| Australia/Oceania | 8.60 | 0.04 | Australia | Puncak Jaya (4,884 m) |
+
+**Five Oceans:** Pacific (largest, 165.2 M km²) → Atlantic (106.5 M km²) → Indian (70.6 M km²) → Southern (20.3 M km²) → Arctic (15.6 M km², smallest).
+
+### 2.15 Major Straits, Lakes, and Waterfalls
+
+**Major Straits of the World:**
+
+| Strait | Connects | Between |
+|--------|----------|---------|
+| Palk Strait | Bay of Bengal ↔ Gulf of Mannar | India ↔ Sri Lanka |
+| Malacca Strait | Indian Ocean ↔ South China Sea | Malaysia ↔ Indonesia |
+| Gibraltar Strait | Mediterranean Sea ↔ Atlantic Ocean | Spain ↔ Morocco |
+| Bosphorus Strait | Black Sea ↔ Sea of Marmara | European Turkey ↔ Asian Turkey |
+| Hormuz Strait | Persian Gulf ↔ Gulf of Oman | Iran ↔ Oman |
+| Suez Canal (man-made) | Mediterranean Sea ↔ Red Sea | Egypt |
+| Panama Canal (man-made) | Pacific Ocean ↔ Atlantic Ocean | Panama |
+| Sunda Strait | Java Sea ↔ Indian Ocean | Java ↔ Sumatra |
+| Torres Strait | Coral Sea ↔ Arafura Sea | Australia ↔ Papua New Guinea |
+| Bering Strait | Arctic Ocean ↔ Pacific Ocean | Russia ↔ USA (Alaska) |
+
+**Major Lakes of the World:**
+
+| Lake | Location | Type | Area (km²) |
+|------|----------|------|------------|
+| Caspian Sea | Asia/Europe | Saline (largest lake) | 371,000 |
+| Lake Superior | USA/Canada | Freshwater (largest) | 82,100 |
+| Lake Victoria | Africa (Uganda, Kenya, Tanzania) | Freshwater (largest in Africa) | 68,870 |
+| Lake Baikal | Russia | Deepest (1,642 m) | 31,500 |
+| Great Bear Lake | Canada | Largest entirely in Canada | 31,080 |
+| Dead Sea | Israel/Jordan | Lowest point (-430 m); saltiest | 605 |
+
+**Major Waterfalls:**
+
+| Waterfall | Height (m) | Location | River |
+|-----------|-----------|----------|-------|
+| Angel Falls | 979 | Venezuela | Churun River (world's tallest) |
+| Tugela Falls | 948 | South Africa | Tugela River |
+| Iguazu Falls | 82 | Argentina/Brazil | Iguazu River (largest by volume) |
+| Niagara Falls | 51 | USA/Canada | Niagara River |
+| Victoria Falls | 108 | Zambia/Zimbabwe | Zambezi River |
+| Jog Falls | 253 | Karnataka, India | Sharavathi River |
+
+### 2.16 Top 10 Countries by Area and Population
+
+**By Area (M km²):**
+
+| Rank | Country | Area | Capital |
+|------|---------|------|---------|
+| 1 | Russia | 17.10 | Moscow |
+| 2 | Canada | 9.98 | Ottawa |
+| 3 | USA | 9.83 | Washington DC |
+| 4 | China | 9.60 | Beijing |
+| 5 | Brazil | 8.52 | Brasília |
+| 6 | Australia | 7.69 | Canberra |
+| 7 | India | 3.29 | New Delhi |
+| 8 | Argentina | 2.78 | Buenos Aires |
+| 9 | Kazakhstan | 2.72 | Astana |
+| 10 | Algeria | 2.38 | Algiers |
+
+**By Population (Billions, 2026 estimates):**
+
+| Rank | Country | Population | Capital |
+|------|---------|------------|---------|
+| 1 | India | 1.45 | New Delhi |
+| 2 | China | 1.42 | Beijing |
+| 3 | USA | 0.34 | Washington DC |
+| 4 | Indonesia | 0.28 | Jakarta |
+| 5 | Pakistan | 0.25 | Islamabad |
+| 6 | Nigeria | 0.23 | Abuja |
+| 7 | Brazil | 0.22 | Brasília |
+| 8 | Bangladesh | 0.17 | Dhaka |
+| 9 | Russia | 0.14 | Moscow |
+| 10 | Ethiopia | 0.13 | Addis Ababa |
+
+### 2.18 Landlocked Countries, Deserts, and World Capitals
+
+**Major Landlocked Countries (selected):**
+- **Asia:** Afghanistan, Mongolia, Kazakhstan, Uzbekistan, Turkmenistan, Kyrgyzstan, Tajikistan, Nepal, Bhutan, Laos
+- **Africa:** 16 landlocked countries including Uganda, Rwanda, Burundi, Zambia, Zimbabwe, Malawi, Botswana, Mali, Niger, Chad, Central African Republic
+- **Europe:** 14 landlocked including Austria, Hungary, Czech Republic, Slovakia, Switzerland, Belarus, Luxembourg
+- **South America:** Bolivia, Paraguay
+- **Double landlocked** (landlocked by landlocked countries): Uzbekistan, Liechtenstein
+
+**Major Deserts of the World:**
+
+| Desert | Area (M km²) | Location | Type |
+|--------|-------------|----------|------|
+| Antarctic Desert | 14.0 | Antarctica | Polar (largest) |
+| Arctic Desert | 13.9 | Arctic | Polar |
+| Sahara | 9.2 | North Africa | Subtropical (hottest) |
+| Arabian Desert | 2.33 | Middle East | Subtropical |
+| Gobi Desert | 1.30 | Mongolia/China | Cold winter |
+| Kalahari Desert | 0.93 | Southern Africa | Subtropical |
+| Great Victoria | 0.65 | Australia | Subtropical |
+| Thar Desert | 0.20 | India/Pakistan | Subtropical |
+
+**World Capitals Memory Aid (selected trick questions):**
+- **Canberra** (not Sydney) — Australia
+- **Ottawa** (not Toronto) — Canada
+- **Wellington** (not Auckland) — New Zealand
+- **Brasília** (not Rio/São Paulo) — Brazil
+- **Ankara** (not Istanbul) — Turkey
+- **Abuja** (not Lagos) — Nigeria
+- **Bern** (not Zurich/Geneva) — Switzerland
+- **Naypyidaw** (not Yangon) — Myanmar
+
+### 2.20 TypeScript: World Geography Data Analyzer
+
+```typescript
+/**
+ * World Geography Data Analyzer
+ * Analyzes geographic data and generates exam-relevant comparisons
+ */
+interface CountryData {
+  name: string;
+  capital: string;
+  area: number; // in sq km
+  population: number; // in millions
+  continent: string;
+  isLandlocked: boolean;
+}
+
+class GeographyDataAnalyzer {
+  private countries: CountryData[] = [];
+
+  constructor() {
+    this.initializeData();
+  }
+
+  private initializeData(): void {
+    this.countries = [
+      { name: 'India', capital: 'New Delhi', area: 3287263, population: 1450, continent: 'Asia', isLandlocked: false },
+      { name: 'Russia', capital: 'Moscow', area: 17098242, population: 144, continent: 'Europe/Asia', isLandlocked: false },
+      { name: 'Canada', capital: 'Ottawa', area: 9984670, population: 39, continent: 'North America', isLandlocked: false },
+      { name: 'Mongolia', capital: 'Ulaanbaatar', area: 1564116, population: 3.4, continent: 'Asia', isLandlocked: true },
+      { name: 'Bolivia', capital: 'Sucre', area: 1098581, population: 12, continent: 'South America', isLandlocked: true },
+      { name: 'Australia', capital: 'Canberra', area: 7692024, population: 26, continent: 'Oceania', isLandlocked: false },
+      { name: 'Chad', capital: "N'Djamena", area: 1284000, population: 18, continent: 'Africa', isLandlocked: true },
+      { name: 'Brazil', capital: 'Brasília', area: 8515767, population: 218, continent: 'South America', isLandlocked: false },
+    ];
+  }
+
+  public getLargestCountryByArea(): CountryData {
+    return this.countries.sort((a, b) => b.area - a.area)[0];
+  }
+
+  public getLandlockedCountries(): CountryData[] {
+    return this.countries.filter(c => c.isLandlocked);
+  }
+
+  public getContinentSummary(): Map<string, { count: number; totalPop: number }> {
+    const summary = new Map<string, { count: number; totalPop: number }>();
+    for (const c of this.countries) {
+      const existing = summary.get(c.continent) || { count: 0, totalPop: 0 };
+      existing.count++;
+      existing.totalPop += c.population;
+      summary.set(c.continent, existing);
+    }
+    return summary;
+  }
+
+  public getPopulationDensity(countryName: string): number | null {
+    const country = this.countries.find(c => c.name.toLowerCase() === countryName.toLowerCase());
+    if (!country) return null;
+    return (country.population * 1_000_000) / country.area; // people per sq km
+  }
+
+  public printReport(): void {
+    console.log('=== Geography Data Analysis Report ===');
+    console.log(`Total Countries in DB: ${this.countries.length}`);
+    console.log(`Largest Country: ${this.getLargestCountryByArea().name}`);
+    console.log(`Landlocked Countries: ${this.getLandlockedCountries().map(c => c.name).join(', ')}`);
+    console.log(`India Population Density: ${this.getPopulationDensity('India')?.toFixed(1)} people/km²`);
+    console.log('=======================================');
+  }
+}
+
+const analyzer = new GeographyDataAnalyzer();
+analyzer.printReport();
+```
+
+**Exam Quick-Reference: Countries You Must Know:**
+- **Largest area:** Russia (17.1M km²)
+- **Largest population:** India (1.45B)
+- **Smallest country:** Vatican City (0.44 km²)
+- **Most populous continent:** Asia (4.7B)
+- **Largest desert:** Antarctic (14M km²)
+- **Deepest lake:** Baikal (1,642 m)
+- **Highest waterfall:** Angel Falls (979 m)
+- **Longest river:** Nile (6,650 km)
+- **Tallest mountain:** Mt. Everest (8,848 m)
+- **Largest ocean:** Pacific (165.2M km²)
+
+### 2.19 Additional Solved MCQs (Geography – World Focus)
+
+**Q21:** The "Ring of Fire" is associated with which ocean?
+
+A) Atlantic Ocean
+B) Indian Ocean
+C) Pacific Ocean
+D) Arctic Ocean
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Pacific Ocean**
+
+The Ring of Fire is a 40,000 km horseshoe-shaped zone around the Pacific Ocean where most of the world's earthquakes and volcanic eruptions occur. About 90% of the world's earthquakes happen along this ring.
+</details>
+
+**Q22:** Which country has the highest number of time zones?
+
+A) Russia
+B) USA
+C) France
+D) China
+
+<details>
+<summary>Answer</summary>
+**Answer: C) France (13 time zones including overseas territories)**
+
+France has 13 time zones (12 overseas + 1 metropolitan) due to its overseas territories spread across the globe. Russia has 11, USA has 9 (including overseas territories), and China has 1 (single time zone despite its size).
+</details>
+
+**Q23:** The "Sargasso Sea" is unique because it:
+
+A) Has no coastline
+B) Is the saltiest sea
+C) Is the deepest sea
+D) Is the smallest sea
+
+<details>
+<summary>Answer</summary>
+**Answer: A) Has no coastline**
+
+The Sargasso Sea (in the North Atlantic Ocean) is the only sea without a coastline. It is bounded by ocean currents (Gulf Stream, North Atlantic Current, Canary Current, North Atlantic Equatorial Current) rather than land.
+</details>
+
+**Q24:** Which is the largest archipelago in the world?
+
+A) Japan
+B) Indonesia
+C) Philippines
+D) Maldives
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Indonesia**
+
+Indonesia is the world's largest archipelago with about 17,508 islands, spanning 5,100 km across the Indian and Pacific Oceans. It has the second-longest coastline (54,720 km) after Canada.
+</details>
+
+**Q25:** The "Kalahari Desert" is located primarily in which country?
+
+A) South Africa
+B) Namibia
+C) Botswana
+D) Zimbabwe
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Botswana**
+
+The Kalahari Desert covers much of Botswana and parts of Namibia and South Africa. It is not a true desert (receives 75-200 mm rainfall annually) and is technically a semi-desert or "thirstland."
+</details>
+
+---
+
 ## Summary
 
 - India has six major physical divisions: Himalayas, Northern Plains, Peninsular Plateau, Coastal Plains, Islands, and the Thar Desert.
@@ -903,6 +1220,78 @@ D) January to April
 
 **30.** India has the largest number of tigers in the world. (T/F)
 
+### Section D: Additional MCQs (Exam Focus — World Geography)
+
+**31.** Which is the longest mountain range in the world?
+
+A) Andes
+B) Himalayas
+C) Rocky Mountains
+D) Ural Mountains
+
+**32.** The "Mariana Trench" is located in which ocean?
+
+A) Atlantic Ocean
+B) Indian Ocean
+C) Pacific Ocean
+D) Arctic Ocean
+
+**33.** Which river flows through the "Grand Canyon"?
+
+A) Mississippi River
+B) Colorado River
+C) Amazon River
+D) Columbia River
+
+**34.** Which country has the longest coastline in the world?
+
+A) Australia
+B) Russia
+C) Canada
+D) Indonesia
+
+**35.** "Death Valley" is located in which country?
+
+A) Mexico
+B) USA
+C) Australia
+D) India
+
+**36.** Which of the following is a cold desert?
+
+A) Sahara
+B) Thar
+C) Gobi
+D) Kalahari
+
+**37.** The "Strait of Gibraltar" connects which two water bodies?
+
+A) Red Sea and Mediterranean Sea
+B) Atlantic Ocean and Mediterranean Sea
+C) Black Sea and Mediterranean Sea
+D) North Sea and Baltic Sea
+
+**38.** Which lake is the largest freshwater lake in the world by surface area?
+
+A) Lake Victoria
+B) Lake Baikal
+C) Lake Superior
+D) Caspian Sea
+
+**39.** The "Tropic of Cancer" passes through how many countries?
+
+A) 12
+B) 16
+C) 18
+D) 22
+
+**40.** Which country has the longest river (Nile) flowing through it?
+
+A) Egypt
+B) Sudan
+C) Uganda
+D) Ethiopia
+
 ---
 
 <details>
@@ -943,6 +1332,18 @@ D) January to April
 28. T
 29. T
 30. T (India has ~3,700 of the world's ~5,500 wild tigers)
+
+**Section D (31-40):**
+31. A) Andes (8,900 km along South America's western coast)
+32. C) Pacific Ocean (Mariana Trench depth: 11,034 m at Challenger Deep)
+33. B) Colorado River (Grand Canyon is in Arizona, USA; 446 km long)
+34. C) Canada (202,080 km — longest coastline in the world)
+35. B) USA (Death Valley, California; lowest point in North America at -86 m)
+36. C) Gobi Desert (cold winter desert in Mongolia/China; temperatures can drop to -40°C)
+37. B) Atlantic Ocean and Mediterranean Sea (separates Spain and Morocco)
+38. C) Lake Superior (82,100 km²; located in USA/Canada; largest freshwater lake by area)
+39. B) 16 countries (including India, China, Mexico, Egypt, Saudi Arabia, etc.)
+40. A) Egypt (Nile flows 6,650 km through 11 countries; Egypt is the final downstream country)
 </details>
 
 ---

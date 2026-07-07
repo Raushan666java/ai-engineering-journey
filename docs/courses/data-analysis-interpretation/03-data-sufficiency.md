@@ -16,7 +16,7 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 What is Data Sufficiency?
 
-Data Sufficiency (DS) questions test your ability to determine whether the information provided is adequate to answer a given question — without actually solving it completely.
+Data Sufficiency (DS) questions test your ability to determine whether the information provided is adequate to answer a given question � without actually solving it completely.
 
 Each question has:
 - A **question stem** asking for a value, a comparison, or a verification
@@ -35,14 +35,14 @@ flowchart TD
     B -->|Yes| C{Can Q be answered<br/>using Statement 2 alone?}
     B -->|No| D{Can Q be answered<br/>using Statement 2 alone?}
     
-    C -->|Yes| E[Answer: D — Each Alone Sufficient]
-    C -->|No| F[Answer: A — Only Statement 1 Sufficient]
+    C -->|Yes| E[Answer: D � Each Alone Sufficient]
+    C -->|No| F[Answer: A � Only Statement 1 Sufficient]
     
-    D -->|Yes| G[Answer: B — Only Statement 2 Sufficient]
+    D -->|Yes| G[Answer: B � Only Statement 2 Sufficient]
     D -->|No| H{Can Q be answered<br/>using BOTH together?}
     
-    H -->|Yes| I[Answer: C — Both Together Sufficient]
-    H -->|No| J[Answer: E — Neither Sufficient]
+    H -->|Yes| I[Answer: C � Both Together Sufficient]
+    H -->|No| J[Answer: E � Neither Sufficient]
     
     style E fill:#2E8B57,color:#fff
     style F fill:#4A90D9,color:#fff
@@ -58,10 +58,10 @@ flowchart TD
 | **A** | Statement (1) alone is enough; Statement (2) alone is not | Q: What is x? (1) x + 5 = 10 (2) x > 3 |
 | **B** | Statement (2) alone is enough; Statement (1) alone is not | Q: What is y? (1) y + z = 10 (2) 2y = 14 |
 | **C** | Both together are needed; neither alone is enough | Q: What is x + y? (1) x - y = 5 (2) 2x + y = 16 |
-| **D** | Each statement alone is sufficient | Q: What is x? (1) x² = 25 (2) x³ = 125 |
+| **D** | Each statement alone is sufficient | Q: What is x? (1) x� = 25 (2) x� = 125 |
 | **E** | Both together are still not sufficient | Q: What is x? (1) x + y = 10 (2) x - z = 5 |
 
-### 3.3 The Decision Process — Step by Step
+### 3.3 The Decision Process � Step by Step
 
 **Step 1: Analyse the question stem**
 - What exactly is being asked? A value? A comparison? A yes/no answer?
@@ -70,17 +70,17 @@ flowchart TD
 **Step 2: Evaluate Statement (1) alone**
 - Ignore Statement (2) completely
 - Can the question be answered definitively?
-- If yes → S1 is sufficient. If no → S1 is insufficient.
+- If yes ? S1 is sufficient. If no ? S1 is insufficient.
 
 **Step 3: Evaluate Statement (2) alone**
 - Ignore Statement (1) completely
 - Can the question be answered definitively?
-- If yes → S2 is sufficient. If no → S2 is insufficient.
+- If yes ? S2 is sufficient. If no ? S2 is insufficient.
 
 **Step 4: Combine (if neither alone is sufficient)**
 - Use both statements together
 - Can the question be answered now?
-- If yes → Both together sufficient. If no → Neither sufficient.
+- If yes ? Both together sufficient. If no ? Neither sufficient.
 
 ### 3.4 Types of Data Sufficiency Questions
 
@@ -91,9 +91,9 @@ The question asks for a unique numerical value.
 **Key rule:** A statement is sufficient only if it yields a **unique** value. If it yields multiple possible values, it is NOT sufficient.
 
 **Example:** What is x?
-- Statement (1): x² = 25 → x = 5 or -5 → NOT sufficient (two possible values)
-- Statement (2): x > 0 → x could be any positive number → NOT sufficient alone
-- Combined: x² = 25 AND x > 0 → x = 5 ONLY → Sufficient
+- Statement (1): x� = 25 ? x = 5 or -5 ? NOT sufficient (two possible values)
+- Statement (2): x > 0 ? x could be any positive number ? NOT sufficient alone
+- Combined: x� = 25 AND x > 0 ? x = 5 ONLY ? Sufficient
 
 **Trap:** For a quadratic equation that has two solutions, the statement is insufficient unless additional constraints eliminate one solution.
 
@@ -104,45 +104,45 @@ The question asks for a comparison that can be answered "yes" or "no".
 **Key rule:** A statement is sufficient if it gives a **definitive** answer (either yes or no). A "no" answer is as valid as a "yes" answer.
 
 **Example:** Is x > 10?
-- Statement (1): x = 15 → Yes → Sufficient
-- Statement (2): x < 5 → No → Also Sufficient!
+- Statement (1): x = 15 ? Yes ? Sufficient
+- Statement (2): x < 5 ? No ? Also Sufficient!
 
 **Trap:** If the answer could be "yes" for some values and "no" for others, the statement is insufficient.
 
 #### Type C: Percentage and Ratio Problems
 
 **Example:** What is the salary of A?
-- Statement (1): A's salary is 20% more than B's → Not sufficient (B unknown)
-- Statement (2): B's salary is ₹50,000 → Not sufficient (relationship to A unknown)
-- Combined: A = 1.20 × 50,000 → Sufficient → Answer: C
+- Statement (1): A's salary is 20% more than B's ? Not sufficient (B unknown)
+- Statement (2): B's salary is ?50,000 ? Not sufficient (relationship to A unknown)
+- Combined: A = 1.20 � 50,000 ? Sufficient ? Answer: C
 
 #### Type D: Profit/Loss Problems
 
 **Example:** What is the profit percentage?
-- Statement (1): Cost price is ₹500 → Not sufficient (selling price unknown)
-- Statement (2): Selling price is ₹600 → Not sufficient (cost price unknown)
-- Combined: Profit = (600-500)/500 × 100 = 20% → Sufficient → Answer: C
+- Statement (1): Cost price is ?500 ? Not sufficient (selling price unknown)
+- Statement (2): Selling price is ?600 ? Not sufficient (cost price unknown)
+- Combined: Profit = (600-500)/500 � 100 = 20% ? Sufficient ? Answer: C
 
 #### Type E: Number System Problems
 
 **Example:** Is x divisible by 6?
-- Statement (1): x is divisible by 2 → Not sufficient (could be 2, 4, 8, 10, ...)
-- Statement (2): x is divisible by 3 → Not sufficient (could be 3, 6, 9, 15, ...)
-- Combined: x divisible by both 2 and 3 → divisible by LCM (6) → Sufficient → Answer: C
+- Statement (1): x is divisible by 2 ? Not sufficient (could be 2, 4, 8, 10, ...)
+- Statement (2): x is divisible by 3 ? Not sufficient (could be 3, 6, 9, 15, ...)
+- Combined: x divisible by both 2 and 3 ? divisible by LCM (6) ? Sufficient ? Answer: C
 
 ### 3.5 Common Trick Questions and How to Avoid Them
 
 | Trick | Example | Why It's Tricky | How to Avoid |
 |-------|---------|-----------------|--------------|
-| Multiple solutions | x² = 16 → x = ±4 | Both satisfy, so not unique | Always check if the equation yields one or multiple solutions |
-| False sufficiency | Is x > y? (1) x > z (2) z > y | Both needed together | Test with numbers: z = 5, x > 5, y < 5 → x > y definitely |
+| Multiple solutions | x� = 16 ? x = �4 | Both satisfy, so not unique | Always check if the equation yields one or multiple solutions |
+| False sufficiency | Is x > y? (1) x > z (2) z > y | Both needed together | Test with numbers: z = 5, x > 5, y < 5 ? x > y definitely |
 | Hidden assumption | What is the area? (1) side = 5 | Assumes it's a square but not stated | Identify the shape first |
 | Both mean same | (1) x + y = 10 (2) 2x + 2y = 20 | Same equation, not independent | Check if statements are equivalent |
-| Answer is "No" | Is x > 5? (1) x = 3 | Gives "No" — still sufficient | "No" is a valid answer |
-| Ambiguous wording | "x is multiple of 3" — could be 3, 6, 9, ... | Insufficient unless range given | Look for constraints that limit possibilities |
+| Answer is "No" | Is x > 5? (1) x = 3 | Gives "No" � still sufficient | "No" is a valid answer |
+| Ambiguous wording | "x is multiple of 3" � could be 3, 6, 9, ... | Insufficient unless range given | Look for constraints that limit possibilities |
 | Redundant info | (1) A > B (2) B < A | Same information repeated | Redundant statements do not add new data |
 
-### 3.6 When Is Data Sufficient? — The Criteria
+### 3.6 When Is Data Sufficient? � The Criteria
 
 Data is **sufficient** when:
 1. It yields a **unique** numerical value (for "what is" questions)
@@ -160,21 +160,21 @@ Data is **insufficient** when:
 For "Is/Does" (Yes/No) questions, use this testing method:
 
 1. Try to find **one example** that gives "Yes" and **one example** that gives "No"
-2. If both exist with the same statement → NOT sufficient
-3. If only one outcome is possible → Sufficient
+2. If both exist with the same statement ? NOT sufficient
+3. If only one outcome is possible ? Sufficient
 
 **Example:** Is x > 0?
-- Statement (1): x² = 9 → x = 3 or x = -3
+- Statement (1): x� = 9 ? x = 3 or x = -3
   - If x = 3, answer is Yes
   - If x = -3, answer is No
-  - Both are possible → NOT sufficient
+  - Both are possible ? NOT sufficient
 
 ### 3.8 Data Sufficiency in Different Contexts
 
 #### Algebra
 - Linear equations in one variable: One equation is enough
 - Two variables: Need two independent equations
-- Quadratic: Usually two solutions → need additional constraint
+- Quadratic: Usually two solutions ? need additional constraint
 
 #### Geometry
 - Area formulas depend on knowing the shape
@@ -192,39 +192,39 @@ For "Is/Does" (Yes/No) questions, use this testing method:
 ### 3.8a Data Sufficiency in Time-Speed-Distance Context
 
 **Key formulas:**
-- Distance = Speed × Time
+- Distance = Speed � Time
 - Speed = Distance / Time
 - Time = Distance / Speed
 
 **Sufficiency patterns:**
-1. **Distance known, speed known → Time** — Sufficient (one equation, one unknown)
-2. **Distance known, time unknown, speed unknown** — Not sufficient
-3. **Ratio of speeds + total time + distance** — Sufficient (two equations)
+1. **Distance known, speed known ? Time** � Sufficient (one equation, one unknown)
+2. **Distance known, time unknown, speed unknown** � Not sufficient
+3. **Ratio of speeds + total time + distance** � Sufficient (two equations)
 4. **Relative speed concept:** If two objects move toward each other, combined speed = sum. If same direction, combined speed = difference.
 
 **Example:** What is the speed of train A?
-- (1) Train A covers 300 km in 4 hours → Speed = 75 km/h → Sufficient
-- (2) Train A takes 2 hours less than Train B to cover 300 km, Train B speed = 50 km/h → B time = 6 hours, A time = 4 hours → Speed = 75 km/h → Sufficient
+- (1) Train A covers 300 km in 4 hours ? Speed = 75 km/h ? Sufficient
+- (2) Train A takes 2 hours less than Train B to cover 300 km, Train B speed = 50 km/h ? B time = 6 hours, A time = 4 hours ? Speed = 75 km/h ? Sufficient
 - Answer: D
 
 ### 3.8b Data Sufficiency in Profit-Loss Context
 
 **Key formulas:**
 - Profit = SP - CP
-- Profit % = (Profit / CP) × 100
-- SP = CP × (1 + Profit%/100)
+- Profit % = (Profit / CP) � 100
+- SP = CP � (1 + Profit%/100)
 - Discount = MP - SP
-- Discount % = (Discount / MP) × 100
+- Discount % = (Discount / MP) � 100
 
 **Sufficiency patterns:**
-1. **CP and SP known → Profit %** — Sufficient
-2. **Only CP known OR only SP known** — Not sufficient
-3. **CP and Profit % known → SP** — Sufficient
-4. **MP and Discount % known → SP** — Sufficient, but need CP for profit %
+1. **CP and SP known ? Profit %** � Sufficient
+2. **Only CP known OR only SP known** � Not sufficient
+3. **CP and Profit % known ? SP** � Sufficient
+4. **MP and Discount % known ? SP** � Sufficient, but need CP for profit %
 
 **Example:** What is the profit percentage?
-- (1) CP = ₹500, SP = ₹650 → Profit = 150, Profit % = 30% → Sufficient
-- (2) SP is 30% more than CP → Profit % = 30% → Sufficient
+- (1) CP = ?500, SP = ?650 ? Profit = 150, Profit % = 30% ? Sufficient
+- (2) SP is 30% more than CP ? Profit % = 30% ? Sufficient
 - Answer: D
 
 ### 3.8c Data Sufficiency in Number Systems
@@ -232,36 +232,36 @@ For "Is/Does" (Yes/No) questions, use this testing method:
 **Key concepts:**
 - **Divisibility rules:** A number divisible by a and b is divisible by LCM(a,b)
 - **Prime numbers:** Exactly 2 factors (1 and itself)
-- **Even/odd:** Even × Even = Even, Even × Odd = Even, Odd × Odd = Odd
+- **Even/odd:** Even � Even = Even, Even � Odd = Even, Odd � Odd = Odd
 - **Consecutive numbers:** One of every n consecutive numbers is divisible by n
 
 **Example:** Is n divisible by 24?
-- (1) n is divisible by 6 → n = 6, 12, 18, 24, 30... Some divisible by 24, some not → Not sufficient
-- (2) n is divisible by 8 → n = 8, 16, 24, 32... Some divisible by 24, some not → Not sufficient
-- Combined: n divisible by LCM(6,8) = 24 → Sufficient → Answer: C
+- (1) n is divisible by 6 ? n = 6, 12, 18, 24, 30... Some divisible by 24, some not ? Not sufficient
+- (2) n is divisible by 8 ? n = 8, 16, 24, 32... Some divisible by 24, some not ? Not sufficient
+- Combined: n divisible by LCM(6,8) = 24 ? Sufficient ? Answer: C
 
 **Example:** Is n a prime number?
-- (1) n is odd → Could be prime (3,5,7) or composite (9,15,21) → Not sufficient
-- (2) n has exactly two positive divisors → By definition, prime → Sufficient
+- (1) n is odd ? Could be prime (3,5,7) or composite (9,15,21) ? Not sufficient
+- (2) n has exactly two positive divisors ? By definition, prime ? Sufficient
 - Answer: B
 
 ### 3.8d Advanced Strategies for Yes/No Questions
 
 **Strategy 1: Pick extreme values**
-If a statement says "x > 5", test with x = 6 and x = 100 — do they give the same answer to the question? If yes, the statement is likely sufficient for that answer direction.
+If a statement says "x > 5", test with x = 6 and x = 100 � do they give the same answer to the question? If yes, the statement is likely sufficient for that answer direction.
 
 **Strategy 2: Consider zero and negative**
 Many DS mistakes involve forgetting about zero, negative numbers, or fractions:
-- Is x² > x? 
-  - x = 2 → 4 > 2 → Yes
-  - x = 0.5 → 0.25 < 0.5 → No
+- Is x� > x? 
+  - x = 2 ? 4 > 2 ? Yes
+  - x = 0.5 ? 0.25 < 0.5 ? No
   - Not sufficient without additional constraint
 
 **Strategy 3: The "Both Not Needed" Test**
 Sometimes both statements are independently sufficient (Answer D). To detect this:
 - If statement (1) gives a clear answer, check statement (2) separately
 - If statement (2) also gives a clear answer (possibly different, but definitive), it's D
-- The two statements don't need to give the same answer — each just needs to be sufficient
+- The two statements don't need to give the same answer � each just needs to be sufficient
 
 **Strategy 4: The "One Number" Verification**
 For "What is X?" questions, if a statement yields exactly one possible value, it's sufficient. The most common trap is quadratic equations that give two values.
@@ -277,27 +277,27 @@ For "What is X?" questions, if a statement yields exactly one possible value, it
 - (2) The ratio of pens to pencils is 3:2.
 
 **Reasoning:**
-- (1): P = Pencils + 30. Total = P + (P-30) = 100 → 2P = 130 → P = 65. Sufficient alone.
-- (2): P:Pencils = 3:2 → P = 3k, Pencils = 2k → 5k = 100 → k = 20 → P = 60. Sufficient alone.
-- Each alone sufficient. Answer: D (Note: the two statements give different answers — 65 vs 60 — but this is fine for DS as each statement defines its own scenario.)
+- (1): P = Pencils + 30. Total = P + (P-30) = 100 ? 2P = 130 ? P = 65. Sufficient alone.
+- (2): P:Pencils = 3:2 ? P = 3k, Pencils = 2k ? 5k = 100 ? k = 20 ? P = 60. Sufficient alone.
+- Each alone sufficient. Answer: D (Note: the two statements give different answers � 65 vs 60 � but this is fine for DS as each statement defines its own scenario.)
 
 **Q2:** Are there more pens than pencils?
 - (1) There are 30 more pens than pencils.
 - (2) Pens are 60% of total items.
 
 **Reasoning:**
-- (1): Pens > Pencils by 30 → Definitely Yes. Sufficient.
-- (2): Pens = 60% of 100 = 60, Pencils = 40 → Pens > Pencils → Yes. Sufficient.
+- (1): Pens > Pencils by 30 ? Definitely Yes. Sufficient.
+- (2): Pens = 60% of 100 = 60, Pencils = 40 ? Pens > Pencils ? Yes. Sufficient.
 - Answer: D
 
 **Q3:** What is the total cost of all pens?
-- (1) Each pen costs ₹10.
+- (1) Each pen costs ?10.
 - (2) There are 60 pens.
 
 **Reasoning:**
 - (1): Need number of pens. Not sufficient alone.
 - (2): Need cost per pen. Not sufficient alone.
-- Combined: Total cost = 60 × ₹10 = ₹600. Sufficient.
+- Combined: Total cost = 60 � ?10 = ?600. Sufficient.
 - Answer: C
 
 ### 3.8f One-Statement vs Two-Statement Problems
@@ -309,7 +309,7 @@ Some variations of DS present only one statement with the question. While the st
 | Is sufficient | Is also sufficient | D |
 | Is sufficient | Is NOT sufficient | A |
 | Is NOT sufficient | Is sufficient | B |
-| Is NOT sufficient | Is NOT sufficient | Check combined → C or E |
+| Is NOT sufficient | Is NOT sufficient | Check combined ? C or E |
 
 #### The "Definitive No" Concept
 
@@ -317,40 +317,40 @@ A common misconception is that "No" means insufficient. This is WRONG.
 
 **Example:** Is x > 10?
 - Statement: x = 5
-- Answer: x = 5 → 5 is NOT > 10 → The answer is "No" — but it's DEFINITIVE.
+- Answer: x = 5 ? 5 is NOT > 10 ? The answer is "No" � but it's DEFINITIVE.
 - This statement IS sufficient.
 
 **Example:** Is x > 10?
 - Statement: x < 8
-- Answer: Any x < 8 is NOT > 10 → The answer is consistently "No" → Sufficient.
+- Answer: Any x < 8 is NOT > 10 ? The answer is consistently "No" ? Sufficient.
 
 **Example:** Is x > 10?
 - Statement: x < 15
-- Answer: If x = 5 → No; if x = 12 → Yes. Not consistent → NOT sufficient.
+- Answer: If x = 5 ? No; if x = 12 ? Yes. Not consistent ? NOT sufficient.
 
 ### 3.8g Data Sufficiency in Geometry
 
 **Key concepts for geometry DS:**
-- **Circle:** Radius gives area (πr²) and circumference (2πr)
+- **Circle:** Radius gives area (pr�) and circumference (2pr)
 - **Triangle:** Base and height give area. Three sides give area (Heron's formula)
 - **Rectangle:** Length and width give area. Perimeter gives l + w but not area alone
 - **Square:** Side gives everything
-- **Right triangle:** Pythagoras: a² + b² = c²
+- **Right triangle:** Pythagoras: a� + b� = c�
 
 **Example:** What is the area of triangle ABC?
-- (1) Base BC = 10 cm, Height from A to BC = 6 cm → Area = 30 cm² → Sufficient
-- (2) Sides: AB = 8 cm, BC = 10 cm, CA = 6 cm → Using Heron's: s = 12, Area = √(12×4×2×6) = √576 = 24 cm² → Sufficient
+- (1) Base BC = 10 cm, Height from A to BC = 6 cm ? Area = 30 cm� ? Sufficient
+- (2) Sides: AB = 8 cm, BC = 10 cm, CA = 6 cm ? Using Heron's: s = 12, Area = v(12�4�2�6) = v576 = 24 cm� ? Sufficient
 - Answer: D
 
 **Example:** Is triangle PQR right-angled?
-- (1) PQ² + QR² = PR² → Yes, by Pythagoras theorem → Sufficient
-- (2) Two angles are 35° and 55° → Third = 90° → Yes → Sufficient
+- (1) PQ� + QR� = PR� ? Yes, by Pythagoras theorem ? Sufficient
+- (2) Two angles are 35� and 55� ? Third = 90� ? Yes ? Sufficient
 - Answer: D
 
 **Trap:** Is a quadrilateral a square?
-- (1) All sides are equal → Could be a rhombus → Not sufficient
-- (2) All angles are 90° → Could be a rectangle → Not sufficient
-- Combined: All sides equal AND all angles 90° → Square → Sufficient → Answer: C
+- (1) All sides are equal ? Could be a rhombus ? Not sufficient
+- (2) All angles are 90� ? Could be a rectangle ? Not sufficient
+- Combined: All sides equal AND all angles 90� ? Square ? Sufficient ? Answer: C
 
 ### 3.8h Data Sufficiency in Probability
 
@@ -358,16 +358,16 @@ A common misconception is that "No" means insufficient. This is WRONG.
 - Probability = Favorable / Total
 - Can be expressed as fraction, decimal, or percentage
 - Mutually exclusive events: P(A or B) = P(A) + P(B)
-- Independent events: P(A and B) = P(A) × P(B)
+- Independent events: P(A and B) = P(A) � P(B)
 
 **Example:** What is the probability of drawing a red ball from a box?
-- (1) There are 5 red balls and 10 blue balls → Total 15, P(Red) = 5/15 = 1/3 → Sufficient
-- (2) The probability of drawing a blue ball is 2/3 → P(Red) = 1 - 2/3 = 1/3 → Sufficient
+- (1) There are 5 red balls and 10 blue balls ? Total 15, P(Red) = 5/15 = 1/3 ? Sufficient
+- (2) The probability of drawing a blue ball is 2/3 ? P(Red) = 1 - 2/3 = 1/3 ? Sufficient
 - Answer: D
 
 **Example:** What is the probability of getting at least one head when flipping a coin n times?
-- (1) n = 3 → P(at least one head) = 1 - P(all tails) = 1 - (1/2)³ = 7/8 → Sufficient
-- (2) The probability of all tails is 1/8 → (1/2)ⁿ = 1/8 → n = 3 → Same as (1) → Sufficient
+- (1) n = 3 ? P(at least one head) = 1 - P(all tails) = 1 - (1/2)� = 7/8 ? Sufficient
+- (2) The probability of all tails is 1/8 ? (1/2)n = 1/8 ? n = 3 ? Same as (1) ? Sufficient
 - Answer: D
 
 ### 3.8i Practice Drills for Data Sufficiency
@@ -376,36 +376,36 @@ A common misconception is that "No" means insufficient. This is WRONG.
 Classify each as A, B, C, D, or E:
 
 1. What is x? (1) x + 5 = 10 (2) 2x = 10
-2. Is x > 0? (1) x² = 4 (2) x³ = 8
+2. Is x > 0? (1) x� = 4 (2) x� = 8
 3. What is x + y? (1) x - y = 3 (2) xy = 10
-4. Is n even? (1) n² is even (2) n³ is odd
-5. What is the area? (1) radius = 5 (2) circumference = 10π
+4. Is n even? (1) n� is even (2) n� is odd
+5. What is the area? (1) radius = 5 (2) circumference = 10p
 
-**Answers:** 1-D, 2-B, 3-C, 4-A (since n³ odd → n odd → not even → definitive No), 5-D
+**Answers:** 1-D, 2-B, 3-C, 4-A (since n� odd ? n odd ? not even ? definitive No), 5-D
 
 **Drill 2: Identify the Trap**
 Each of these has a common DS trap. Can you spot it?
 
-1. What is x? (1) x² = 36 (2) x > 0
-   - **Trap:** (1) gives x = ±6, not sufficient. Combined: x = 6. Answer: C.
+1. What is x? (1) x� = 36 (2) x > 0
+   - **Trap:** (1) gives x = �6, not sufficient. Combined: x = 6. Answer: C.
 
 2. Is x an integer? (1) 2x is an integer (2) x = 1/2
-   - **Trap:** (1) 2x integer → x could be integer (2, 4) or fraction (0.5, 1.5). Not sufficient.
-   - (2) x = 0.5 → Not integer → Definitive No → Sufficient. Answer: B.
+   - **Trap:** (1) 2x integer ? x could be integer (2, 4) or fraction (0.5, 1.5). Not sufficient.
+   - (2) x = 0.5 ? Not integer ? Definitive No ? Sufficient. Answer: B.
 
 3. What is the value of a? (1) a + b = 10 (2) a - b = 4
-   - **Trap:** Two variables, two independent equations → Solvable. Combined: a = 7. Answer: C.
+   - **Trap:** Two variables, two independent equations ? Solvable. Combined: a = 7. Answer: C.
 
 **Drill 3: Speed Practice**
 For each, evaluate in 20 seconds:
 
 | Question | S1 | S2 | Answer |
 |----------|----|----|--------|
-| What is x? | x = 5 | x² = 25 | A |
+| What is x? | x = 5 | x� = 25 | A |
 | Is x prime? | x is odd | x > 2 | E |
 | A + B = ? | A = B + 5 | 2A + B = 25 | C |
-| Is triangle right? | a² + b² = c² | angle = 90° | D |
-| Student count? | 5 rows × 6 desks | each desk ≤ 1 student | E |
+| Is triangle right? | a� + b� = c� | angle = 90� | D |
+| Student count? | 5 rows � 6 desks | each desk = 1 student | E |
 
 ### 3.9 Time Management for Data Sufficiency
 
@@ -428,13 +428,13 @@ For each, evaluate in 20 seconds:
 #### Category 1: Number Properties DS
 
 **Key sufficiency rules:**
-- "Is x even?" → Check divisibility by 2. If x² is even → x is even. If x³ is even → x is even.
-- "Is x prime?" → A prime has exactly 2 factors. Odd > 1 is NOT sufficient (9, 15, 21 are odd composites).
-- "Is x divisible by n?" → Check if x is divisible by all prime factors of n.
+- "Is x even?" ? Check divisibility by 2. If x� is even ? x is even. If x� is even ? x is even.
+- "Is x prime?" ? A prime has exactly 2 factors. Odd > 1 is NOT sufficient (9, 15, 21 are odd composites).
+- "Is x divisible by n?" ? Check if x is divisible by all prime factors of n.
 
 **Common traps:**
 - "x is divisible by 6" DOES NOT mean x is divisible by 12
-- "x² is divisible by 4" DOES NOT mean x is divisible by 4 (x could be 2)
+- "x� is divisible by 4" DOES NOT mean x is divisible by 4 (x could be 2)
 - A number divisible by 4 and 6 is divisible by LCM(4,6) = 12, not 24
 
 #### Category 2: Algebraic Equations DS
@@ -450,25 +450,25 @@ For each, evaluate in 20 seconds:
 **The Proportionality Trap:**
 - (1) 2x + 3y = 10
 - (2) 4x + 6y = 20
-- These are the SAME equation (multiply (1) by 2). Combined: still 1 equation, 2 unknowns → NOT sufficient.
+- These are the SAME equation (multiply (1) by 2). Combined: still 1 equation, 2 unknowns ? NOT sufficient.
 
 #### Category 3: Geometry DS
 
 **Circle sufficiency:**
-- Radius → Area, Circumference (all sufficient)
-- Circumference → Radius → Area (sufficient)
-- Area → Radius → Circumference (sufficient)
+- Radius ? Area, Circumference (all sufficient)
+- Circumference ? Radius ? Area (sufficient)
+- Area ? Radius ? Circumference (sufficient)
 - Any one of {radius, diameter, circumference, area} gives all others
 
 **Triangle sufficiency:**
-- Base + Height → Area (sufficient)
-- Three sides → Area via Heron's formula (sufficient)
-- Two sides + included angle → Area (sufficient)
-- Two angles → Third angle, but not side lengths (NOT sufficient for area)
-- Being right-angled → Need at least two sides
+- Base + Height ? Area (sufficient)
+- Three sides ? Area via Heron's formula (sufficient)
+- Two sides + included angle ? Area (sufficient)
+- Two angles ? Third angle, but not side lengths (NOT sufficient for area)
+- Being right-angled ? Need at least two sides
 
 **Quadrilateral sufficiency:**
-- Square: one side → everything (sufficient)
+- Square: one side ? everything (sufficient)
 - Rectangle: length and width needed for area
 - Rhombus: diagonals or side + angle needed for area
 - Parallelogram: base + height needed for area
@@ -476,21 +476,21 @@ For each, evaluate in 20 seconds:
 #### Category 4: Arithmetic Word Problems DS
 
 **Work and Time:**
-- To find time taken together → need individual rates
-- If A takes x days and B takes y days → combined time = xy/(x+y)
-- If only ratio of efficiencies given → need absolute time for at least one
+- To find time taken together ? need individual rates
+- If A takes x days and B takes y days ? combined time = xy/(x+y)
+- If only ratio of efficiencies given ? need absolute time for at least one
 
 **Speed and Distance:**
-- Distance = Speed × Time → need any two of three variables
-- Relative speed: objects moving toward each other → add speeds
-- Objects moving in same direction → subtract speeds
+- Distance = Speed � Time ? need any two of three variables
+- Relative speed: objects moving toward each other ? add speeds
+- Objects moving in same direction ? subtract speeds
 
 **Profit and Loss:**
 - Profit % needs CP and SP
 - If only Profit % given, need either CP or SP for actual profit
 - Discount % needs MP and SP, or discount amount and MP
 
-### 3.9b The "C-Trap" — When Both Statements Are Needed but Seemingly Not
+### 3.9b The "C-Trap" � When Both Statements Are Needed but Seemingly Not
 
 Some questions appear solvable with one statement but actually need both:
 
@@ -500,28 +500,28 @@ Some questions appear solvable with one statement but actually need both:
 (2) x + 2y = 8
 
 **Analysis:**
-- (1) alone: 2x + y = 10 → infinite (x, y) pairs → NOT sufficient
-- (2) alone: x + 2y = 8 → infinite (x, y) pairs → NOT sufficient
-- Combined: Solve: 2(8-2y) + y = 10 → 16 - 4y + y = 10 → 16 - 3y = 10 → 3y = 6 → y = 2, x = 4 → Sufficient
+- (1) alone: 2x + y = 10 ? infinite (x, y) pairs ? NOT sufficient
+- (2) alone: x + 2y = 8 ? infinite (x, y) pairs ? NOT sufficient
+- Combined: Solve: 2(8-2y) + y = 10 ? 16 - 4y + y = 10 ? 16 - 3y = 10 ? 3y = 6 ? y = 2, x = 4 ? Sufficient
 - Answer: C
 
 **The key insight:** Even though each equation has two variables, combined they form a solvable system of two independent equations.
 
-### 3.9c The "D-Trap" — When Both Statements Seem Insufficient
+### 3.9c The "D-Trap" � When Both Statements Seem Insufficient
 
 **Example:** Is x > 0?
 
-(1) x³ > 0
-(2) x² > 0
+(1) x� > 0
+(2) x� > 0
 
 **Analysis:**
-- (1): x³ > 0 → x > 0 → Yes, Sufficient
-- (2): x² > 0 → x ≠ 0 → could be positive or negative → NOT Sufficient
+- (1): x� > 0 ? x > 0 ? Yes, Sufficient
+- (2): x� > 0 ? x ? 0 ? could be positive or negative ? NOT Sufficient
 - Answer: A
 
-**Why it's a trap:** Many test-takers think (2) also proves x > 0, but x² > 0 is true for both positive and negative numbers.
+**Why it's a trap:** Many test-takers think (2) also proves x > 0, but x� > 0 is true for both positive and negative numbers.
 
-### 3.9d The "E-Trap" — When the Answer Seems Obvious
+### 3.9d The "E-Trap" � When the Answer Seems Obvious
 
 **Example:** Is x > y?
 
@@ -529,9 +529,9 @@ Some questions appear solvable with one statement but actually need both:
 (2) y < x/2
 
 **Analysis:**
-- (1): x > 2y → x > y (since 2y > y for positive y). But what if y is negative? If y = -5, 2y = -10, x > -10 doesn't guarantee x > -5. Example: x = -7, y = -5 → x > 2y? -7 > -10 ✓. Is x > y? -7 > -5? No.
+- (1): x > 2y ? x > y (since 2y > y for positive y). But what if y is negative? If y = -5, 2y = -10, x > -10 doesn't guarantee x > -5. Example: x = -7, y = -5 ? x > 2y? -7 > -10 ?. Is x > y? -7 > -5? No.
 - So (1) is NOT sufficient alone.
-- (2): y < x/2 → 2y < x → same as (1). NOT sufficient alone.
+- (2): y < x/2 ? 2y < x ? same as (1). NOT sufficient alone.
 - Combined: Still the same issue. NOT sufficient.
 - Answer: E
 
@@ -545,25 +545,25 @@ Some questions appear solvable with one statement but actually need both:
 **Reasoning:**
 - (1): Primes between 40-50: 41, 43, 47. Not unique.
 - (2): p = 6k + 1. Many possibilities. Not unique.
-- Combined: 41 = 6×6+5 (no), 43 = 6×7+1 (yes), 47 = 6×7+5 (no). Only 43 works. Unique. Answer: C.
+- Combined: 41 = 6�6+5 (no), 43 = 6�7+1 (yes), 47 = 6�7+5 (no). Only 43 works. Unique. Answer: C.
 
 **Q22 (Advanced):** Does x = y?
 
-(1) x² = y²
-(2) x³ = y³
+(1) x� = y�
+(2) x� = y�
 
 **Reasoning:**
-- (1): x² = y² → x = y or x = -y. Not definitive.
-- (2): x³ = y³ → x = y (unique real solution). Sufficient.
+- (1): x� = y� ? x = y or x = -y. Not definitive.
+- (2): x� = y� ? x = y (unique real solution). Sufficient.
 - Answer: B.
 
 **Q23 (Advanced):** What is the tens digit of integer n?
 
 (1) The units digit of n is 6.
-(2) n² has units digit 6.
+(2) n� has units digit 6.
 
 **Reasoning:**
-- (1): n could be 16, 26, 36, ... → tens digit varies. Not sufficient.
+- (1): n could be 16, 26, 36, ... ? tens digit varies. Not sufficient.
 - (2): Numbers ending in 4 or 6 have squares ending in 6. So n could end in 4 or 6. Not sufficient.
 - Combined: Still multiple possibilities. Answer: E.
 
@@ -572,10 +572,10 @@ Some questions appear solvable with one statement but actually need both:
 Recent exams have introduced variations in DS questions:
 
 **Variation 1: Three Statements**
-Some exams give three statements and ask which combination is sufficient. The approach remains the same — evaluate each statement individually, then in pairs, then all three together.
+Some exams give three statements and ask which combination is sufficient. The approach remains the same � evaluate each statement individually, then in pairs, then all three together.
 
 **Variation 2: Match the Sufficiency**
-Questions that ask: "Which of the following pairs of statements is sufficient to answer the question?" — evaluate each pair separately.
+Questions that ask: "Which of the following pairs of statements is sufficient to answer the question?" � evaluate each pair separately.
 
 **Variation 3: Data Comparison**
 Instead of standard DS, some exams ask to compare two quantities:
@@ -583,7 +583,7 @@ Instead of standard DS, some exams ask to compare two quantities:
 - Quantity B: Given other data
 - Answer: A > B, B > A, A = B, or Cannot determine
 
-The logic is the same — evaluate whether each quantity can be uniquely determined and compare.
+The logic is the same � evaluate whether each quantity can be uniquely determined and compare.
 
 ### 3.9g Comparison of DS with Other DI Types
 
@@ -592,7 +592,7 @@ Data Sufficiency is fundamentally different from other DI types:
 | Aspect | Data Sufficiency | Standard DI |
 |--------|-----------------|-------------|
 | Goal | Determine if answer is possible | Compute the actual answer |
-| Calculation | Minimal — just enough to test sufficiency | Full calculation required |
+| Calculation | Minimal � just enough to test sufficiency | Full calculation required |
 | Time per question | ~2 minutes | ~3-4 minutes |
 | Decision points | 5 possible answers (A-E) | 4 answer choices |
 | Skill tested | Logical reasoning | Numerical computation |
@@ -607,7 +607,7 @@ Classify each question as A, B, C, D, or E as fast as possible:
 1. What is x? (1) x + 3 = 7 (2) 2x = 8
 2. Is x > y? (1) x - y = 5 (2) x + y = 10
 3. What is average? (1) Sum = 100, n = 5 (2) Values: 18, 20, 22, 24, 16
-4. Is n even? (1) n² is even (2) n³ is even
+4. Is n even? (1) n� is even (2) n� is even
 5. What is area? (1) radius = 7 (2) circumference = 44
 
 **Answers:** 1-D, 2-A, 3-D, 4-D, 5-D
@@ -615,11 +615,11 @@ Classify each question as A, B, C, D, or E as fast as possible:
 **Drill 2: Trap Identification (3 minutes)**
 For each, identify the trap before determining the answer:
 
-1. What is x? (1) x² = 100 (2) x > 0
-   - **Trap:** x² = 100 gives ±10. Need both statements.
+1. What is x? (1) x� = 100 (2) x > 0
+   - **Trap:** x� = 100 gives �10. Need both statements.
    - **Answer:** C
 
-2. Is triangle ABC right-angled? (1) AB² + BC² = AC² (2) AB = 3, BC = 4
+2. Is triangle ABC right-angled? (1) AB� + BC� = AC� (2) AB = 3, BC = 4
    - **Trap:** (1) directly tells it's right-angled. (2) gives two sides only.
    - **Answer:** A
 
@@ -641,7 +641,7 @@ For each, determine sufficiency WITHOUT computing the full answer:
 3. Is x/y > 1? (1) x > y (2) y > 0
    - **Analysis:** (1) If y > 0, x > y means x/y > 1. If y < 0, x/y < 1. Not sufficient alone.
    - (2) Only tells y > 0, not relationship with x. Not sufficient.
-   - Combined: x > y and y > 0 → x/y > 1. Sufficient.
+   - Combined: x > y and y > 0 ? x/y > 1. Sufficient.
    - **Answer:** C
 
 **Drill 4: 30-Second Questions**
@@ -650,8 +650,8 @@ For each, decide in 30 seconds:
 | Q | S1 | S2 | Answer |
 |---|----|----|--------|
 | x = ? | x + 5 = 12 | x - 5 = 2 | D |
-| y > 0? | y² = 4 | y³ = 8 | B |
-| Area of square? | side = 5 | diagonal = 5√2 | D |
+| y > 0? | y� = 4 | y� = 8 | B |
+| Area of square? | side = 5 | diagonal = 5v2 | D |
 | Is p prime? | p is odd | p > 2 | E |
 | a + b = ? | a = b + 3 | 2a + b = 12 | C |
 
@@ -682,10 +682,10 @@ For each, decide in 30 seconds:
    (2) The train covers 270 km in 3 hours.
 
 6. What is the cost price?
-   (1) Selling price = ₹750.
+   (1) Selling price = ?750.
    (2) Profit = 25% of cost price.
 
-7. Is a² > b²?
+7. Is a� > b�?
    (1) a > b
    (2) a + b > 0
 
@@ -778,7 +778,7 @@ const solver = new DataSufficiencySolver();
 const q1: DSQuestion = {
   id: "Q1",
   question: "What is the value of x?",
-  statement1: "x² = 25",
+  statement1: "x� = 25",
   statement2: "x > 0",
   evaluateS1: () => false,
   evaluateS2: () => false,
@@ -804,4 +804,291 @@ const results = DataSufficiencySolver.isUniqueValue(
 console.log("Unique with constraint:", results); // true
 ```
 
-**Q1.** What is the value of x?\n\n(1) 3x + 5 = 20\n(2) x² = 25\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Statements (1) and (2) together are not sufficient\n\n<details>\n<summary>Answer</summary>\na) Statement (1) alone is sufficient, but (2) alone is not\n\nFrom (1): 3x + 5 = 20 → 3x = 15 → x = 5. Unique value. Sufficient.\nFrom (2): x² = 25 → x = 5 or x = -5. Two possible values. Not sufficient.\n</details>\n\n---\n\n**Q2.** Is x > y?\n\n(1) x - y = 5\n(2) 2x > 2y + 10\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): x - y = 5 → x = y + 5 → x > y for all values. Sufficient.\nFrom (2): 2x > 2y + 10 → x > y + 5 → x > y for all values. Sufficient.\n</details>\n\n---\n\n**Q3.** What is the two-digit number?\n\n(1) The sum of its digits is 9.\n(2) The number is divisible by 5.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): Sum of digits = 9. Possible: 18, 27, 36, 45, 54, 63, 72, 81, 90. Not unique.\nFrom (2): Divisible by 5. Possible: 10, 15, 20, ..., 95. Not unique.\nCombined: Sum 9 AND divisible by 5: 45 and 90. Still two options. Not unique.\n</details>\n\n---\n\n**Q4.** Is x an even integer?\n\n(1) x is divisible by 2.\n(2) x is a multiple of 4.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): Divisible by 2 → x is even. Sufficient.\nFrom (2): Multiple of 4 → x is always even (since 4k = 2 × 2k). Sufficient.\n</details>\n\n---\n\n**Q5.** What is the value of xy?\n\n(1) x + y = 10\n(2) x - y = 4\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): x + y = 10. Multiple possibilities for xy. Not sufficient.\nFrom (2): x - y = 4. Multiple possibilities for xy. Not sufficient.\nCombined: Solving, x = 7, y = 3. xy = 21. Unique value. Sufficient.\n</details>\n\n---\n\n**Q6.** How many students are in the class?\n\n(1) There are 5 rows of desks, each row having 6 desks.\n(2) Each desk is occupied by at most 1 student, and there are 30 desks.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): There are 30 desks. But we do not know occupancy. Not sufficient.\nFrom (2): At most 30 students. Actual number unknown. Not sufficient.\nCombined: Still do not know actual occupancy. Not sufficient.\n</details>\n\n---\n\n**Q7.** What is the average of five numbers?\n\n(1) The sum of the five numbers is 250.\n(2) The median of the five numbers is 50.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\na) Statement (1) alone is sufficient, but (2) alone is not\n\nFrom (1): Average = Sum / Count = 250 / 5 = 50. Sufficient.\nFrom (2): Median = 50. Does not tell sum or average. Not sufficient.\n</details>\n\n---\n\n**Q8.** Is triangle ABC right-angled at B?\n\n(1) AB² + BC² = AC²\n(2) AB = 3, BC = 4, AC = 5\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): By Pythagoras theorem, if AB² + BC² = AC², triangle is right-angled at B. Sufficient.\nFrom (2): 3² + 4² = 9 + 16 = 25 = 5² → AB² + BC² = AC² → Right-angled at B. Sufficient.\n</details>\n\n---\n\n**Q9.** What is the profit percentage on an item?\n\n(1) The cost price is ₹400.\n(2) The selling price is ₹520.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): Only CP known. Need SP for profit %. Not sufficient.\nFrom (2): Only SP known. Need CP for profit %. Not sufficient.\nCombined: Profit = (520-400)/400 × 100 = 30%. Sufficient.\n</details>\n\n---\n\n**Q10.** Is x > 0?\n\n(1) x² = 9\n(2) x³ = 27\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nb) Statement (2) alone is sufficient, but (1) alone is not\n\nFrom (1): x² = 9 → x = 3 or x = -3. If x = 3 → Yes; if x = -3 → No. Not definitive.\nFrom (2): x³ = 27 → x = 3 only → x > 0 → Yes. Sufficient.\n</details>\n\n---\n\n**Q11.** What is the value of a + b?\n\n(1) 2a + 2b = 20\n(2) 3a + 3b = 30\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): 2a + 2b = 20 → a + b = 10. Sufficient.\nFrom (2): 3a + 3b = 30 → a + b = 10. Sufficient.\n</details>\n\n---\n\n**Q12.** What is the value of x?\n\n(1) 3x + 2y = 12\n(2) 6x + 4y = 24\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): 3x + 2y = 12 → One equation, two unknowns. Not sufficient.\nFrom (2): 6x + 4y = 24 → Dividing by 2: 3x + 2y = 12. Same as (1).\nCombined: Still only one independent equation, two unknowns. Not sufficient.\n</details>\n\n---\n\n**Q13.** Is the integer n divisible by 6?\n\n(1) n is divisible by 3.\n(2) n is divisible by 2.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): n divisible by 3. Could be 3, 6, 9, 12... Some divisible by 6, some not. Not sufficient.\nFrom (2): n divisible by 2. Could be 2, 6, 8, 10, 12... Some divisible by 6, some not. Not sufficient.\nCombined: n divisible by both 2 and 3 → divisible by LCM(2,3) = 6. Sufficient.\n</details>\n\n---\n\n**Q14.** What is the area of a rectangle?\n\n(1) The perimeter is 40 cm.\n(2) The length is 5 cm more than the width.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): Perimeter = 2(l + w) = 40 → l + w = 20. Area = lw. Not sufficient without individual values.\nFrom (2): l = w + 5. Infinitely many possibilities. Not sufficient.\nCombined: l + w = 20 and l = w + 5 → w = 7.5, l = 12.5. Area = 93.75 cm². Sufficient.\n</details>\n\n---\n\n**Q15.** Is a > b?\n\n(1) a - b > 0\n(2) a/b > 1 (b > 0)\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): a - b > 0 → a > b. Sufficient.\nFrom (2): a/b > 1. Since b > 0, multiplying: a > b. Sufficient.\n</details>\n\n---\n\n**Q16.** Is x a prime number?\n\n(1) x is an odd integer greater than 1.\n(2) x has exactly 2 factors.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nb) Statement (2) alone is sufficient, but (1) alone is not\n\nFrom (1): Odd integers > 1 could be prime (3, 5, 7) or composite (9, 15). Not sufficient.\nFrom (2): A number with exactly 2 factors IS prime by definition. Sufficient.\n</details>\n\n---\n\n**Q17.** How many children does Mr Sharma have?\n\n(1) Mr Sharma has 3 more daughters than sons.\n(2) Mr Sharma has 7 children in total.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): D = S + 3. Multiple possibilities. Not sufficient.\nFrom (2): Total = 7. Could be various splits. Not sufficient.\nCombined: D + S = 7 and D = S + 3 → (S+3) + S = 7 → 2S = 4 → S = 2, D = 5. Sufficient.\n</details>\n\n---\n\n**Q18.** What is the rate of interest per annum?\n\n(1) Simple interest on ₹5,000 for 2 years is ₹1,000.\n(2) The amount becomes ₹6,000 after 2 years at simple interest on ₹5,000.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): SI = PRT/100 → 1,000 = (5,000 × R × 2) / 100 → R = 10%. Sufficient.\nFrom (2): Amount = P + SI → 6,000 = 5,000 + SI → SI = 1,000. Same as (1). Sufficient.\n</details>\n\n---\n\n**Q19.** What is the value of x + y + z?\n\n(1) x + y = 10\n(2) y + z = 15\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): x + y = 10. z unknown. Not sufficient.\nFrom (2): y + z = 15. x unknown. Not sufficient.\nCombined: (x + y) + (y + z) = 10 + 15 = 25 = x + 2y + z. This gives x + z = 25 - 2y. Still depends on y. Not sufficient.\n</details>\n\n---\n\n**Q20.** Is x > y?\n\n(1) x² > y²\n(2) x and y are positive integers.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): x² > y² → |x| > |y|. If x = 3, y = 2 → Yes; if x = -3, y = 2 → No. Not definitive.\nFrom (2): Both positive. But without relationship, not sufficient.\nCombined: If both positive and x² > y², then x > y. Sufficient.\n</details>\n\n---\n\n## Summary\n\n- **Data Sufficiency** tests whether given information is adequate — not whether the answer can be computed\n- The five answer choices (A, B, C, D, E) correspond to specific sufficiency patterns\n- For "what is" questions, a statement is sufficient only if it gives a **unique value**\n- For "is/does" questions, a statement is sufficient only if it gives a **definitive yes or no**\n- **Common traps** include multiple solutions, equivalent statements, hidden assumptions\n- **Systematic evaluation**: Evaluate each statement alone first, then combine only if neither alone suffices\n- The decision tree approach eliminates guesswork and ensures consistent results\n\n---\n\n## Practical Takeaways\n\n| Strategy | Implementation |\n|----------|----------------|\n| Evaluate independently | Always check S1 alone (ignoring S2) first, then S2 alone |\n| Unique value check | For "what is" questions, ensure exactly one value satisfies |\n| Definitive answer check | For "is" questions, see if answer is always yes or always no |\n| Test with numbers | Use sample values to check if answer is consistent |\n| Beware of redundancy | If S1 and S2 say the same thing, combining adds nothing |\n| Count equations vs unknowns | Need as many independent equations as unknowns |\n| Eliminate before solving | You do not need actual answer — just whether you CAN find it |\n\n---\n\n## Chapter Quiz\n\n**Q1.** In Data Sufficiency, what does answer choice (C) mean?\n\na) Statement (1) alone is sufficient\nb) Statement (2) alone is sufficient\nc) Both together are sufficient, but neither alone is\nd) Each alone is sufficient\ne) Neither is sufficient\n\n<details>\n<summary>Show Answer</summary>\n\n**Answer:** c) Both together are sufficient, but neither alone is\n\nAnswer (C) is selected when each statement individually is insufficient, but using both together, the question can be answered definitively.\n</details>\n\n---\n\n**Q2.** If a question asks "What is the value of x?" and Statement (1) gives x² = 100, is Statement (1) sufficient?\n\na) Yes, because 10² = 100\nb) Yes, because -10² = 100\nc) No, because x could be 10 or -10\nd) No, because the statement is false\n\n<details>\n<summary>Show Answer</summary>\n\n**Answer:** c) No, because x could be 10 or -10\n\nFor a "what is" question, a unique value is needed. x² = 100 gives x = ±10. Two possible values → insufficient.\n</details>\n\n---\n\n**Q3.** For a "Yes/No" type DS question, which makes a statement sufficient?\n\na) It always gives a "Yes" answer\nb) It always gives a "No" answer\nc) Either (a) or (b) — as long as answer is consistent\nd) It gives "Yes" for some cases and "No" for others\n\n<details>\n<summary>Show Answer</summary>\n\n**Answer:** c) Either (a) or (b) — as long as answer is consistent\n\nA definitive "No" is as valid as a definitive "Yes". The key is consistency.\n</details>\n\n---\n\n**Q4.** Two statements: (1) x + y = 10 (2) 2x + 2y = 20. What is the DS answer for "What is x + y?"\n\na) A\nb) B\nc) C\nd) D\ne) E\n\n<details>\n<summary>Show Answer</summary>\n\n**Answer:** d) D\n\nFrom (1): x + y = 10 directly. Sufficient.\nFrom (2): 2x + 2y = 20 → x + y = 10. Sufficient.\nEach alone is sufficient → Answer D.\n</details>\n\n---\n\n**Q5.** What is the first step in solving any DS question?\n\na) Test both statements together\nb) Read the question stem carefully and identify what is being asked\nc) Eliminate obviously wrong answers\nd) Start with Statement (2) to save time\n\n<details>\n<summary>Show Answer</summary>\n\n**Answer:** b) Read the question stem carefully and identify what is being asked\n\nBefore evaluating any statement, you must clearly understand what the question is asking.\n</details>\n\n---\n\n## Exercises\n\n### Section A: What is the Value? (Q1-Q10)\n\n1. What is the value of x?\n   (1) 5x - 3 = 22\n   (2) x² = 25\n\n2. What is the value of p + q?\n   (1) p - q = 8\n   (2) 2p + q = 22\n\n3. What is the area of a circle?\n   (1) The radius is 7 cm.\n   (2) The circumference is 44 cm.\n\n4. What is the value of x?\n   (1) 2x + 3y = 12\n   (2) 4x - y = 10\n\n5. What is the profit earned?\n   (1) Revenue is ₹1,20,000.\n   (2) Cost is 75% of revenue.\n\n6. What is the value of the integer n?\n   (1) n is a two-digit number.\n   (2) The sum of digits is 12 and the product of digits is 32.\n\n7. What is the monthly salary of Ramesh?\n   (1) Ramesh saves 30% of his salary.\n   (2) Ramesh spends ₹28,000 per month.\n\n8. What is the speed of the car?\n   (1) The car travels 240 km in 4 hours.\n   (2) The car covered half the distance in 2 hours (total = 240 km).\n\n9. What is the value of a³ - b³?\n   (1) a - b = 5\n   (2) a² + ab + b² = 39\n\n10. What is the value of x?\n    (1) x + y = 8 and y + z = 10\n    (2) z = 4\n\n### Section B: Is/Does Questions (Q11-Q20)\n\n11. Is x > y?\n    (1) x + 5 = y + 8\n    (2) x - y = 3\n\n12. Is n divisible by 15?\n    (1) n is divisible by 3.\n    (2) n is divisible by 5.\n\n13. Is triangle ABC right-angled?\n    (1) Side lengths are 6 cm, 8 cm, and 10 cm.\n    (2) One angle is 90°.\n\n14. Is x positive?\n    (1) x² > 0\n    (2) x³ > 0\n\n15. Is a prime?\n    (1) a is odd and greater than 1.\n    (2) a is divisible only by 1 and itself.\n\n16. Is p > q?\n    (1) p - q > 5\n    (2) p + q < 20\n\n17. Does x = 5?\n    (1) 3x - 5 = 10\n    (2) 2x + 3 = 13\n\n18. Is the integer n even?\n    (1) n² is even.\n    (2) n³ is even.\n\n19. Is a > b + c?\n    (1) a - b > c\n    (2) b + c < a\n\n20. Is x ≥ 0?\n    (1) |x| = x\n    (2) x² = 9\n\n### Section C: Mixed Questions (Q21-Q30)\n\n21. A, B, and C invested ₹1,00,000. What is A's investment?\n    (1) A invested ₹20,000 more than B.\n    (2) B invested ₹10,000 less than C.\n\n22. What is the area of a rectangle?\n    (1) The length is twice the width.\n    (2) The perimeter is 60 cm.\n\n23. Is the average of three numbers greater than 30?\n    (1) The sum of the numbers is 100.\n    (2) The smallest number is 25.\n\n24. What is total number of students in a school?\n    (1) The ratio of boys to girls is 5:4.\n    (2) There are 200 more boys than girls.\n\n25. What is the cost price of an item?\n    (1) Selling price is ₹600.\n    (2) Profit is 20% of cost price.\n\n26. Is x > y > z?\n    (1) x > y and y > z\n    (2) x + y > z\n\n27. What is the value of the fraction a/b?\n    (1) a = 3b + 2\n    (2) a + b = 10\n\n28. Is x an integer?\n    (1) 2x is an integer.\n    (2) x + 0.5 is an integer.\n\n29. What is the number of sides of a polygon?\n    (1) The sum of interior angles is 540°.\n    (2) Each exterior angle is 60°.\n\n30. Is x² > y²?\n    (1) x > y\n    (2) x > 0 and y > 0\n\n### Answer Key\n\n| Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |\n|---|--------|---|--------|---|--------|---|--------|---|--------|\n| 1 | A | 2 | C | 3 | D | 4 | C | 5 | C |\n| 6 | E | 7 | C | 8 | D | 9 | C | 10 | C |\n| 11 | B | 12 | C | 13 | D | 14 | B | 15 | B |\n| 16 | A | 17 | D | 18 | D | 19 | D | 20 | A |\n| 21 | C | 22 | C | 23 | A | 24 | C | 25 | C |\n| 26 | A | 27 | C | 28 | B | 29 | D | 30 | C |\n\n**Detailed Solutions:**\n\n**Q1:** (1) 5x - 3 = 22 → x = 5. Unique. Sufficient. (2) x² = 25 → x = ±5. Not unique. Answer: A.\n\n**Q3:** (1) Area = π × 49. Sufficient. (2) 2πr = 44 → r = 7 → same. Answer: D.\n\n**Q6:** (1) Two-digit: 10-99. Too many. (2) Digits summing to 12 with product 32: {4,8} → 48 or 84. Two options. Combined: still 48 or 84. Answer: E.\n\n**Q9:** a³ - b³ = (a-b)(a²+ab+b²) = 5 × 39 = 195. Combined sufficient. Answer: C.\n\n**Q14:** (1) x² > 0 means x ≠ 0. Could be positive or negative. Not sufficient.\n(2) x³ > 0 → x > 0. Sufficient. Answer: B.\n\n**Q20:** (1) |x| = x means x ≥ 0. Sufficient. (2) x² = 9 → x = 3 or -3. Not definitive. Answer: A.\n\n**Q24:** (1) Ratio alone: B/G = 5/4. Not sufficient. (2) B - G = 200. Not sufficient alone. Combined: From (1) B = 5k, G = 4k. From (2) 5k - 4k = k = 200. B = 1,000, G = 800. Total = 1,800. Sufficient. Answer: C.\n\n**Q29:** (1) (n-2)×180 = 540 → n = 5. Sufficient. (2) 360/n = 60 → n = 6. Also sufficient. Answer: D.\n\n**Q30:** (1) x > y. If x = 2, y = -5, x² = 4, y² = 25 → x² < y². Not sufficient.\n(2) Both positive. Not sufficient alone. Combined: If x > y > 0, then x² > y². Answer: C.\n\n---\n\n*Proceed to Chapter 4: Graph and Chart Analysis*
+**Q1.** What is the value of x?\n\n(1) 3x + 5 = 20\n(2) x� = 25\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Statements (1) and (2) together are not sufficient\n\n<details>\n<summary>Answer</summary>\na) Statement (1) alone is sufficient, but (2) alone is not\n\nFrom (1): 3x + 5 = 20 ? 3x = 15 ? x = 5. Unique value. Sufficient.\nFrom (2): x� = 25 ? x = 5 or x = -5. Two possible values. Not sufficient.\n</details>\n\n---\n\n**Q2.** Is x > y?\n\n(1) x - y = 5\n(2) 2x > 2y + 10\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): x - y = 5 ? x = y + 5 ? x > y for all values. Sufficient.\nFrom (2): 2x > 2y + 10 ? x > y + 5 ? x > y for all values. Sufficient.\n</details>\n\n---\n\n**Q3.** What is the two-digit number?\n\n(1) The sum of its digits is 9.\n(2) The number is divisible by 5.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): Sum of digits = 9. Possible: 18, 27, 36, 45, 54, 63, 72, 81, 90. Not unique.\nFrom (2): Divisible by 5. Possible: 10, 15, 20, ..., 95. Not unique.\nCombined: Sum 9 AND divisible by 5: 45 and 90. Still two options. Not unique.\n</details>\n\n---\n\n**Q4.** Is x an even integer?\n\n(1) x is divisible by 2.\n(2) x is a multiple of 4.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): Divisible by 2 ? x is even. Sufficient.\nFrom (2): Multiple of 4 ? x is always even (since 4k = 2 � 2k). Sufficient.\n</details>\n\n---\n\n**Q5.** What is the value of xy?\n\n(1) x + y = 10\n(2) x - y = 4\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): x + y = 10. Multiple possibilities for xy. Not sufficient.\nFrom (2): x - y = 4. Multiple possibilities for xy. Not sufficient.\nCombined: Solving, x = 7, y = 3. xy = 21. Unique value. Sufficient.\n</details>\n\n---\n\n**Q6.** How many students are in the class?\n\n(1) There are 5 rows of desks, each row having 6 desks.\n(2) Each desk is occupied by at most 1 student, and there are 30 desks.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): There are 30 desks. But we do not know occupancy. Not sufficient.\nFrom (2): At most 30 students. Actual number unknown. Not sufficient.\nCombined: Still do not know actual occupancy. Not sufficient.\n</details>\n\n---\n\n**Q7.** What is the average of five numbers?\n\n(1) The sum of the five numbers is 250.\n(2) The median of the five numbers is 50.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\na) Statement (1) alone is sufficient, but (2) alone is not\n\nFrom (1): Average = Sum / Count = 250 / 5 = 50. Sufficient.\nFrom (2): Median = 50. Does not tell sum or average. Not sufficient.\n</details>\n\n---\n\n**Q8.** Is triangle ABC right-angled at B?\n\n(1) AB� + BC� = AC�\n(2) AB = 3, BC = 4, AC = 5\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): By Pythagoras theorem, if AB� + BC� = AC�, triangle is right-angled at B. Sufficient.\nFrom (2): 3� + 4� = 9 + 16 = 25 = 5� ? AB� + BC� = AC� ? Right-angled at B. Sufficient.\n</details>\n\n---\n\n**Q9.** What is the profit percentage on an item?\n\n(1) The cost price is ?400.\n(2) The selling price is ?520.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): Only CP known. Need SP for profit %. Not sufficient.\nFrom (2): Only SP known. Need CP for profit %. Not sufficient.\nCombined: Profit = (520-400)/400 � 100 = 30%. Sufficient.\n</details>\n\n---\n\n**Q10.** Is x > 0?\n\n(1) x� = 9\n(2) x� = 27\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nb) Statement (2) alone is sufficient, but (1) alone is not\n\nFrom (1): x� = 9 ? x = 3 or x = -3. If x = 3 ? Yes; if x = -3 ? No. Not definitive.\nFrom (2): x� = 27 ? x = 3 only ? x > 0 ? Yes. Sufficient.\n</details>\n\n---\n\n**Q11.** What is the value of a + b?\n\n(1) 2a + 2b = 20\n(2) 3a + 3b = 30\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): 2a + 2b = 20 ? a + b = 10. Sufficient.\nFrom (2): 3a + 3b = 30 ? a + b = 10. Sufficient.\n</details>\n\n---\n\n**Q12.** What is the value of x?\n\n(1) 3x + 2y = 12\n(2) 6x + 4y = 24\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): 3x + 2y = 12 ? One equation, two unknowns. Not sufficient.\nFrom (2): 6x + 4y = 24 ? Dividing by 2: 3x + 2y = 12. Same as (1).\nCombined: Still only one independent equation, two unknowns. Not sufficient.\n</details>\n\n---\n\n**Q13.** Is the integer n divisible by 6?\n\n(1) n is divisible by 3.\n(2) n is divisible by 2.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): n divisible by 3. Could be 3, 6, 9, 12... Some divisible by 6, some not. Not sufficient.\nFrom (2): n divisible by 2. Could be 2, 6, 8, 10, 12... Some divisible by 6, some not. Not sufficient.\nCombined: n divisible by both 2 and 3 ? divisible by LCM(2,3) = 6. Sufficient.\n</details>\n\n---\n\n**Q14.** What is the area of a rectangle?\n\n(1) The perimeter is 40 cm.\n(2) The length is 5 cm more than the width.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): Perimeter = 2(l + w) = 40 ? l + w = 20. Area = lw. Not sufficient without individual values.\nFrom (2): l = w + 5. Infinitely many possibilities. Not sufficient.\nCombined: l + w = 20 and l = w + 5 ? w = 7.5, l = 12.5. Area = 93.75 cm�. Sufficient.\n</details>\n\n---\n\n**Q15.** Is a > b?\n\n(1) a - b > 0\n(2) a/b > 1 (b > 0)\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): a - b > 0 ? a > b. Sufficient.\nFrom (2): a/b > 1. Since b > 0, multiplying: a > b. Sufficient.\n</details>\n\n---\n\n**Q16.** Is x a prime number?\n\n(1) x is an odd integer greater than 1.\n(2) x has exactly 2 factors.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nb) Statement (2) alone is sufficient, but (1) alone is not\n\nFrom (1): Odd integers > 1 could be prime (3, 5, 7) or composite (9, 15). Not sufficient.\nFrom (2): A number with exactly 2 factors IS prime by definition. Sufficient.\n</details>\n\n---\n\n**Q17.** How many children does Mr Sharma have?\n\n(1) Mr Sharma has 3 more daughters than sons.\n(2) Mr Sharma has 7 children in total.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): D = S + 3. Multiple possibilities. Not sufficient.\nFrom (2): Total = 7. Could be various splits. Not sufficient.\nCombined: D + S = 7 and D = S + 3 ? (S+3) + S = 7 ? 2S = 4 ? S = 2, D = 5. Sufficient.\n</details>\n\n---\n\n**Q18.** What is the rate of interest per annum?\n\n(1) Simple interest on ?5,000 for 2 years is ?1,000.\n(2) The amount becomes ?6,000 after 2 years at simple interest on ?5,000.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nd) Each statement alone is sufficient\n\nFrom (1): SI = PRT/100 ? 1,000 = (5,000 � R � 2) / 100 ? R = 10%. Sufficient.\nFrom (2): Amount = P + SI ? 6,000 = 5,000 + SI ? SI = 1,000. Same as (1). Sufficient.\n</details>\n\n---\n\n**Q19.** What is the value of x + y + z?\n\n(1) x + y = 10\n(2) y + z = 15\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): x + y = 10. z unknown. Not sufficient.\nFrom (2): y + z = 15. x unknown. Not sufficient.\nCombined: (x + y) + (y + z) = 10 + 15 = 25 = x + 2y + z. This gives x + z = 25 - 2y. Still depends on y. Not sufficient.\n</details>\n\n---\n\n**Q20.** Is x > y?\n\n(1) x� > y�\n(2) x and y are positive integers.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details>\n<summary>Answer</summary>\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): x� > y� ? |x| > |y|. If x = 3, y = 2 ? Yes; if x = -3, y = 2 ? No. Not definitive.\nFrom (2): Both positive. But without relationship, not sufficient.\nCombined: If both positive and x� > y�, then x > y. Sufficient.\n</details>\n\n---\n\n
+### 3.10 Calculation Shortcuts for Data Sufficiency
+
+#### Quick Sufficiency Rules
+
+| Scenario | Rule | Example |
+|----------|------|---------|
+| Linear equation, 1 variable | Always sufficient | x + 5 = 10 ? x = 5 |
+| Quadratic equation | Not sufficient (2 solutions) | x� = 25 ? x = �5 |
+| Two variables, one equation | Not sufficient | x + y = 10 ? infinite pairs |
+| Two variables, two equations | Sufficient (if independent) | x + y = 10, x - y = 4 |
+| Ratio alone | Not sufficient for actual values | A:B = 3:4 ? infinite possibilities |
+| Ratio + actual value | Sufficient | A:B = 3:4, A = 30 ? B = 40 |
+
+#### The "Definitive No" Rule
+
+A statement is sufficient if it gives a definite "No" answer. Many students mistakenly think "No" means insufficient.
+
+**Example:** Is x > 10?
+- Statement: x = 5 ? Answer: No ? This IS sufficient (definitive No)
+
+#### Testing with Extreme Values
+
+For yes/no questions, test with extreme values:
+- If the statement says "x > 5", test x = 6 and x = 1,000
+- If both give the same answer (both Yes or both No), the statement is sufficient
+- If they give different answers, the statement is NOT sufficient
+
+#### The Proportionality Trap
+
+Watch for statements that are actually the same equation:
+- (1) 2x + 3y = 10
+- (2) 4x + 6y = 20
+These are the same equation (multiply (1) by 2). Combined: still 2 variables, 1 equation ? NOT sufficient.
+
+#### The Zero, Negative, Fraction Trap
+
+Always consider:
+- Zero: Is x� > x? If x = 0, no. If x = 2, yes.
+- Negative numbers: Is x > y? If x = -5, y = -10, yes. But what if y = -3?
+- Fractions: Is x� > x? If x = 0.5, no (0.25). If x = 2, yes.
+
+### 3.11 Common Mistakes in Data Sufficiency
+
+| Mistake | Example | Why It's Wrong | Correct |
+|---------|---------|---------------|---------|
+| Thinking "No" = insufficient | Is x > 5? (1) x = 3 ? "No" | "No" is a definitive answer | Statement IS sufficient |
+| Forgetting negative numbers | Is x > y? (1) x� > y� | x = -5, y = 3: 25 > 9 but -5 < 3 | Test with negatives |
+| Assuming statements are independent | (1) x + y = 10, (2) 2x + 2y = 20 | Same equation repeated | Check if statements are equivalent |
+| Not checking for uniqueness | What is x? (1) x� = 36 | x = �6, not unique | Need additional constraint |
+| Missing the "both needed" case | (1) x + y = 10, (2) x - y = 4 | Each alone insufficient | Combined: x = 7, y = 3 |
+| Confusing "sufficient" with "correct" | DS doesn't ask if statement is true | A statement can be false but sufficient | "Is x > 5?" "x = 3" gives No ? sufficient |
+
+### 3.12 GFG-Style Comprehensive DS Questions
+
+**Q21.** What is the value of x?
+
+(1) 4x + 8 = 24
+(2) 2x = 8
+
+a) Statement (1) alone is sufficient
+b) Statement (2) alone is sufficient
+c) Both together are sufficient
+d) Each alone is sufficient
+e) Neither is sufficient
+
+<details>
+<summary>Answer</summary>
+d) Each alone is sufficient
+
+(1): 4x + 8 = 24 ? 4x = 16 ? x = 4. Sufficient.
+(2): 2x = 8 ? x = 4. Sufficient.
+</details>
+
+**Q22.** Is triangle ABC right-angled at B?
+
+(1) AB� + BC� = AC�
+(2) ?ABC = 90�
+
+a) Statement (1) alone is sufficient
+b) Statement (2) alone is sufficient
+c) Both together are sufficient
+d) Each alone is sufficient
+e) Neither is sufficient
+
+<details>
+<summary>Answer</summary>
+d) Each alone is sufficient
+
+(1): AB� + BC� = AC� ? Pythagoras theorem applies ? right angle at B. Sufficient.
+(2): ?ABC = 90� ? directly stated. Sufficient.
+</details>
+
+**Q23.** What is the area of a rectangle?
+
+(1) Length = 12 cm, Width = 8 cm
+(2) Perimeter = 40 cm, Length = 12 cm
+
+a) Statement (1) alone is sufficient
+b) Statement (2) alone is sufficient
+c) Both together are sufficient
+d) Each alone is sufficient
+e) Neither is sufficient
+
+<details>
+<summary>Answer</summary>
+d) Each alone is sufficient
+
+(1): Area = 12 � 8 = 96 cm�. Sufficient.
+(2): Perimeter = 2(l + w) = 40 ? l + w = 20. l = 12 ? w = 8. Area = 96 cm�. Sufficient.
+</details>
+
+**Q24.** Is integer n divisible by 12?
+
+(1) n is divisible by 3.
+(2) n is divisible by 4.
+
+a) Statement (1) alone is sufficient
+b) Statement (2) alone is sufficient
+c) Both together are sufficient
+d) Each alone is sufficient
+e) Neither is sufficient
+
+<details>
+<summary>Answer</summary>
+c) Both together are sufficient
+
+(1): n divisible by 3 ? could be 3, 6, 9, 12, 15... Not all divisible by 12. Not sufficient.
+(2): n divisible by 4 ? could be 4, 8, 12, 16... Not all divisible by 12. Not sufficient.
+Combined: Divisible by 3 and 4 ? divisible by LCM(3,4) = 12. Sufficient.
+</details>
+
+**Q25.** What is the value of p/q?
+
+(1) p = 3q - 4
+(2) p + q = 12
+
+a) Statement (1) alone is sufficient
+b) Statement (2) alone is sufficient
+c) Both together are sufficient
+d) Each alone is sufficient
+e) Neither is sufficient
+
+<details>
+<summary>Answer</summary>
+c) Both together are sufficient
+
+(1): p = 3q - 4 ? infinite (p, q) pairs. Not sufficient.
+(2): p + q = 12 ? infinite (p, q) pairs. Not sufficient.
+Combined: 3q - 4 + q = 12 ? 4q = 16 ? q = 4, p = 8. p/q = 2. Sufficient.
+</details>
+
+### 3.13 Advanced DS � Trick Questions Solved
+
+**Q26.** Is x > 0?
+
+(1) x� > 0
+(2) x� > 0
+
+<details>
+<summary>Answer</summary>
+a) Statement (1) alone is sufficient
+
+(1): x� > 0 ? x > 0. Sufficient.
+(2): x� > 0 ? x ? 0. x could be positive or negative. Not sufficient.
+</details>
+
+**Q27.** What is the value of x?
+
+(1) x is between 10 and 20
+(2) x is a prime number
+
+<details>
+<summary>Answer</summary>
+c) Both together are sufficient
+
+(1): x could be 11, 12, 13, 14, 15, 16, 17, 18, 19. Not unique.
+(2): x could be 2, 3, 5, 7, 11, 13, 17, 19... Not unique.
+Combined: Prime between 10 and 20: 11, 13, 17, 19. Still 4 options. Hmm, still not unique.
+Actually this is E � even combined, there are 4 possible values. Neither sufficient.
+
+Correction: Answer is e) Neither statement alone, nor both together, is sufficient.
+</details>
+
+**Q28.** Is the quadrilateral a square?
+
+(1) All sides are equal.
+(2) All angles are 90�.
+
+<details>
+<summary>Answer</summary>
+c) Both together are sufficient
+
+(1): All sides equal ? could be a rhombus. Not sufficient.
+(2): All angles 90� ? could be a rectangle. Not sufficient.
+Combined: All sides equal AND all angles 90� ? square. Sufficient.
+</details>
+
+**Q29.** Does x = y?
+
+(1) x� = y�
+(2) x� = y�
+
+<details>
+<summary>Answer</summary>
+b) Statement (2) alone is sufficient
+
+(1): x� = y� ? x = y or x = -y. Not definitive.
+(2): x� = y� ? x = y (unique real solution). Sufficient.
+</details>
+
+**Q30.** What is the two-digit number?
+
+(1) The sum of its digits is 12.
+(2) The number reversed is 18 less than the original.
+
+<details>
+<summary>Answer</summary>
+c) Both together are sufficient
+
+(1): Sum = 12. Possible: 39, 48, 57, 66, 75, 84, 93. Not unique.
+(2): Let number = 10a + b. Reversed = 10b + a. Difference: (10a+b) - (10b+a) = 9(a-b) = 18 ? a - b = 2.
+Possible: 20, 31, 42, 53, 64, 75, 86, 97. Not unique.
+Combined: a + b = 12 and a - b = 2 ? a = 7, b = 5 ? number = 75. Unique. Sufficient.
+</details>
+
+### 3.14 Additional DS Exercises (Q31-Q40)
+
+**31.** Is x > y?
+(1) x - y > 5
+(2) 2x > 2y
+
+**32.** What is the profit percentage?
+(1) Cost price = ?500
+(2) Selling price = ?650
+
+**33.** Is n an even integer?
+(1) n� is even
+(2) n� is odd
+
+**34.** What is the average of 5 numbers?
+(1) Sum of numbers = 250
+(2) The numbers are 45, 50, 55, 60, 40
+
+**35.** Is triangle PQR isosceles?
+(1) PQ = PR
+(2) ?Q = ?R
+
+**36.** What is the speed of the train?
+(1) Distance = 300 km, Time = 4 hours
+(2) Distance = 450 km, Time = 6 hours
+
+**37.** Is p divisible by 15?
+(1) p is divisible by 3
+(2) p is divisible by 5
+
+**38.** What is the value of a + b?
+(1) a - b = 8
+(2) 2a + b = 22
+
+**39.** Is the polygon a regular hexagon?
+(1) All sides are equal
+(2) All interior angles are 120�
+
+**40.** How many students passed?
+(1) 65% of students passed
+(2) Total students = 400
+
+### 3.15 DS Exam Strategy
+
+| Strategy | Description |
+|----------|-------------|
+| **Read question first** | Understand exactly what's being asked before reading statements |
+| **Identify variable count** | How many unknowns? One equation per variable needed |
+| **Evaluate S1 alone** | Completely ignore S2; can question be answered? |
+| **Evaluate S2 alone** | Completely ignore S1; can question be answered? |
+| **Combine only if needed** | If neither is sufficient alone, check if together they work |
+| **Watch for traps** | Quadratic = 2 solutions, same equation repeated, "No" = sufficient |
+| **Time management** | ~2 minutes per question; don't over-analyze |
+
+**Key insight for IBPS/SBI/RBI exams:** Data Sufficiency in these exams often tests:
+- Whether you can identify when data is missing (Answer E)
+- Whether you can spot when two equations are the same (Answer E)
+- Whether you understand that "sufficient" ? "true" (a statement that gives "No" IS sufficient)
+
+
+## Summary and Chart Analysis*
+

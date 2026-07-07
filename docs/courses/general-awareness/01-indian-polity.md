@@ -666,6 +666,215 @@ The 13th Amendment created the state of Nagaland with special protections under 
 
 ---
 
+### 1.16 List of Presidents of India
+
+| # | President | Term | Key Fact |
+|---|-----------|------|----------|
+| 1 | Dr. Rajendra Prasad | 1950–1962 | First President; served two terms |
+| 2 | Dr. Sarvepalli Radhakrishnan | 1962–1967 | First philosopher-President; Teachers' Day celebrates his birthday |
+| 3 | Dr. Zakir Hussain | 1967–1969 | First Muslim President; died in office |
+| 4 | V.V. Giri | 1969–1974 | Only President elected as independent candidate |
+| 5 | Fakhruddin Ali Ahmed | 1974–1977 | Declared Emergency in 1975 |
+| 6 | Neelam Sanjiva Reddy | 1977–1982 | Youngest President; only one elected unopposed |
+| 7 | Giani Zail Singh | 1982–1987 | First Sikh President |
+| 8 | R. Venkataraman | 1987–1992 | Saw end of Cold War era |
+| 9 | Dr. Shankar Dayal Sharma | 1992–1997 | Governor of multiple states before Presidency |
+| 10 | K.R. Narayanan | 1997–2002 | First Dalit President |
+| 11 | Dr. A.P.J. Abdul Kalam | 2002–2007 | "People's President"; missile scientist |
+| 12 | Pratibha Patil | 2007–2012 | First woman President |
+| 13 | Pranab Mukherjee | 2012–2017 | Longest-serving Finance Minister before Presidency |
+| 14 | Ram Nath Kovind | 2017–2022 | Second Dalit President |
+| 15 | Droupadi Murmu | 2022–Present | First tribal President; youngest to assume office |
+
+### 1.17 List of Prime Ministers of India
+
+| # | PM | Term | Key Contribution |
+|---|----|------|------------------|
+| 1 | Jawaharlal Nehru | 1947–1964 | Longest-serving (17 years); architect of modern India |
+| 2 | Gulzarilal Nanda | 1964 (13 days) | Acting PM twice; first interim |
+| 3 | Lal Bahadur Shastri | 1964–1966 | "Jai Jawan Jai Kisan"; died in Tashkent |
+| 4 | Indira Gandhi | 1966–1977, 1980–1984 | First woman PM; nationalised banks; Emergency |
+| 5 | Morarji Desai | 1977–1979 | First non-Congress PM |
+| 6 | Charan Singh | 1979–1980 | Only PM who never faced Parliament |
+| 7 | Rajiv Gandhi | 1984–1989 | Youngest PM (40 yrs); launched telecom/IT revolution |
+| 8 | V.P. Singh | 1989–1990 | Implemented Mandal Commission report |
+| 9 | Chandra Shekhar | 1990–1991 | "Young Turk" of Indian politics |
+| 10 | P.V. Narasimha Rao | 1991–1996 | Father of Indian economic reforms |
+| 11 | Atal Bihari Vajpayee | 1996, 1998–2004 | First non-Congress full-term PM; nuclear tests |
+| 12 | H.D. Deve Gowda | 1996–1997 | From Karnataka; United Front PM |
+| 13 | I.K. Gujral | 1997–1998 | Known for "Gujral Doctrine" in foreign policy |
+| 14 | Manmohan Singh | 2004–2014 | First Sikh PM; architect of 1991 reforms |
+| 15 | Narendra Modi | 2014–Present | Longest-serving non-Congress PM; three consecutive terms |
+
+### 1.18 Constitutional Schedules at a Glance
+
+| Schedule | Articles | Subject | Key Feature |
+|----------|----------|---------|-------------|
+| First | 1–4 | States and Union Territories | Names and territories of 28 states and 8 UTs |
+| Second | 59, 65, 75, 97, 125, 148, 158, 164, 186, 221 | Salaries of dignitaries | Emoluments for President, Governors, CJI, Speaker, etc. |
+| Third | 75, 99, 124, 148, 164, 188, 219 | Oaths and affirmations | Forms of oath for Ministers, MPs, Judges, CAG |
+| Fourth | 80, 81 | Rajya Sabha seat allocation | Allocation of seats to states and UTs |
+| Fifth | 244(1) | Scheduled Areas administration | Administration and control of Scheduled Areas |
+| Sixth | 244(2) | Tribal Areas (NE states) | Administration of tribal areas in Assam, Meghalaya, Mizoram |
+| Seventh | 245–255 | Union, State, Concurrent Lists | 100 (Union) + 61 (State) + 52 (Concurrent) subjects |
+| Eighth | 344(1), 351 | Official languages | 22 scheduled languages (added via amendments) |
+| Ninth | 31B | Land reforms validation | Acts and regulations protected from judicial review (added by 1st Amendment) |
+| Tenth | 102, 191 | Anti-Defection | Disqualification of MPs/MLAs on defection (added by 52nd Amendment, 1985) |
+| Eleventh | 243G | Panchayati Raj | Powers and functions of Panchayats (added by 73rd Amendment, 1992) |
+| Twelfth | 243W | Municipalities | Powers and functions of Municipalities (added by 74th Amendment, 1992) |
+
+### 1.19 Constitutional Parts — Quick Reference
+
+| Part | Articles | Subject |
+|------|----------|---------|
+| I | 1–4 | Union and its Territory |
+| II | 5–11 | Citizenship |
+| III | 12–35 | Fundamental Rights |
+| IV | 36–51 | Directive Principles of State Policy |
+| IVA | 51A | Fundamental Duties |
+| V | 52–151 | Union Executive and Parliament |
+| VI | 152–237 | State Executive and Legislature |
+| VII | 238 | Repealed (by 7th Amendment) |
+| VIII | 239–242 | Union Territories |
+| IX | 243–243O | Panchayats |
+| IXA | 243P–243ZG | Municipalities |
+| IXB | 243ZH–243ZT | Cooperative Societies |
+| X | 244–244A | Scheduled and Tribal Areas |
+| XI | 245–255 | Centre-State Relations |
+| XII | 256–263 | Finance, Property, Contracts |
+| XIII | 264–267 | Trade, Commerce within India |
+| XIV | 268–293 | Services under Union and States |
+| XIVA | 323A–323B | Tribunals |
+| XV | 324–329 | Elections |
+| XVI | 330–343 | Special provisions for SC/ST/OBC, Anglo-Indians |
+| XVII | 344–351 | Official Language |
+| XVIII | 352–360 | Emergency Provisions |
+| XIX | 361–367 | Miscellaneous |
+| XX | 368 | Amendment of Constitution |
+| XXI | 369–392 | Temporary, Transitional Provisions |
+| XXII | 393–395 | Short title, commencement, repeal |
+
+### 1.20 TypeScript: Indian Polity Quiz Simulator
+
+```typescript
+/**
+ * Indian Polity MCQ Quiz Simulator
+ * Generates random polity questions and tracks performance
+ */
+interface PolityQuestion {
+  id: number;
+  topic: string;
+  question: string;
+  options: string[];
+  correctAnswer: number;
+  explanation: string;
+  difficulty: 'easy' | 'medium' | 'hard';
+}
+
+class PolityQuizEngine {
+  private questions: PolityQuestion[] = [];
+  private score: number = 0;
+  private totalAttempted: number = 0;
+
+  constructor() {
+    this.initializeQuestions();
+  }
+
+  private initializeQuestions(): void {
+    this.questions = [
+      {
+        id: 1,
+        topic: 'Fundamental Rights',
+        question: 'Which Article of the Indian Constitution guarantees the Right to Equality?',
+        options: ['Article 14', 'Article 19', 'Article 21', 'Article 32'],
+        correctAnswer: 0,
+        explanation: 'Article 14 guarantees equality before law and equal protection of laws.',
+        difficulty: 'easy'
+      },
+      {
+        id: 2,
+        topic: 'Constitutional Amendments',
+        question: 'Which amendment is known as the "Mini-Constitution" of India?',
+        options: ['44th Amendment', '42nd Amendment', '52nd Amendment', '73rd Amendment'],
+        correctAnswer: 1,
+        explanation: 'The 42nd Amendment (1976) made extensive changes including adding Socialist and Secular to the Preamble.',
+        difficulty: 'medium'
+      },
+      {
+        id: 3,
+        topic: 'Union Executive',
+        question: 'Who is the ex-officio Chairman of the Rajya Sabha?',
+        options: ['President', 'Prime Minister', 'Vice President', 'Speaker of Lok Sabha'],
+        correctAnswer: 2,
+        explanation: 'The Vice President of India is the ex-officio Chairman of Rajya Sabha (Article 63).',
+        difficulty: 'easy'
+      },
+      {
+        id: 4,
+        topic: 'Supreme Court',
+        question: 'Under which Article can the President consult the Supreme Court on a question of law?',
+        options: ['Article 131', 'Article 143', 'Article 136', 'Article 144'],
+        correctAnswer: 1,
+        explanation: 'Article 143 gives the President power to seek the Supreme Court\'s advisory opinion.',
+        difficulty: 'hard'
+      },
+      {
+        id: 5,
+        topic: 'Emergency Provisions',
+        question: 'Who was the President of India when the National Emergency was declared in 1975?',
+        options: ['V.V. Giri', 'Fakhruddin Ali Ahmed', 'Neelam Sanjiva Reddy', 'Giani Zail Singh'],
+        correctAnswer: 1,
+        explanation: 'President Fakhruddin Ali Ahmed declared Emergency under Article 352 on 25 June 1975.',
+        difficulty: 'medium'
+      }
+    ];
+  }
+
+  public getRandomQuestion(): PolityQuestion {
+    const randomIndex = Math.floor(Math.random() * this.questions.length);
+    return this.questions[randomIndex];
+  }
+
+  public attemptQuestion(questionId: number, answer: number): boolean {
+    const question = this.questions.find(q => q.id === questionId);
+    if (!question) return false;
+
+    this.totalAttempted++;
+    const isCorrect = answer === question.correctAnswer;
+    if (isCorrect) this.score++;
+    return isCorrect;
+  }
+
+  public getPerformanceReport(): string {
+    const accuracy = this.totalAttempted > 0
+      ? ((this.score / this.totalAttempted) * 100).toFixed(1)
+      : '0.0';
+    return `
+=== Polity Quiz Performance Report ===
+Questions Attempted: ${this.totalAttempted}
+Correct Answers: ${this.score}
+Accuracy: ${accuracy}%
+Topics Covered: ${[...new Set(this.questions.map(q => q.topic))].join(', ')}
+====================================`;
+  }
+}
+
+// Example usage
+const quiz = new PolityQuizEngine();
+const q = quiz.getRandomQuestion();
+console.log(`Topic: ${q.topic}`);
+console.log(`Q: ${q.question}`);
+console.log(`Options: ${q.options.map((o, i) => `${i+1}. ${o}`).join(', ')}`);
+quiz.attemptQuestion(q.id, q.correctAnswer); // simulate correct answer
+console.log(quiz.getPerformanceReport());
+```
+
+**Memory Trick for All Presidents:** "Raj Radha Zakir VV Fakhruddin Neelam Giani Venkat Shankar Narayan Kalam Pratibha Pranab Ram Murmu" — first names of all presidents in order.
+
+**Memory Trick for All PMs:** "Nehru Nanda Shastri Indira Morarji Charan Rajiv VP Chandra Rao Atal Deve Gujral Manmohan Modi" — first names of all PMs in order.
+
+---
+
 ## Summary
 
 - The Indian Constitution is the world's longest written constitution, adopted on 26 Nov 1949 and effective from 26 Jan 1950.
@@ -761,9 +970,79 @@ D) Twelfth Schedule
 The Tenth Schedule (added by the 52nd Amendment, 1985) contains the Anti-Defection Law. It provides for disqualification of MPs/MLAs if they voluntarily give up party membership or vote against party directions.
 </details>
 
+**Q6:** Which Part of the Indian Constitution deals with Citizenship?
+
+A) Part I
+B) Part II
+C) Part III
+D) Part IV
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Part II (Articles 5–11)**
+
+Part II of the Constitution deals with Citizenship. Article 5 covers citizenship at commencement; Article 6–7 cover migrants from Pakistan; Article 8 covers overseas Indians; Article 9 covers voluntary acquisition of foreign citizenship; Article 11 gives Parliament power to regulate citizenship by law.
+</details>
+
+**Q7:** The "Doctrine of Basic Structure" was propounded in which landmark case?
+
+A) A.K. Gopalan vs State of Madras
+B) Shankari Prasad vs Union of India
+C) Kesavananda Bharati vs State of Kerala
+D) Minerva Mills vs Union of India
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Kesavananda Bharati vs State of Kerala (1973)**
+
+The Supreme Court held that Parliament cannot amend the "basic structure" of the Constitution. Key elements of basic structure include: supremacy of Constitution, republican and democratic form of government, secular character, separation of powers, and federal character.
+</details>
+
+**Q8:** Who among the following has the power to promulgate ordinances when Parliament is not in session?
+
+A) Prime Minister
+B) Chief Justice of India
+C) President of India
+D) Speaker of Lok Sabha
+
+<details>
+<summary>Answer</summary>
+**Answer: C) President of India (Article 123)**
+
+The President can promulgate ordinances when both Houses of Parliament are not in session. Ordinances have the same force as Acts of Parliament, but must be approved by Parliament within 6 weeks of reassembly.
+</details>
+
+**Q9:** How many Fundamental Duties are enumerated in Article 51A?
+
+A) 10
+B) 11
+C) 12
+D) 9
+
+<details>
+<summary>Answer</summary>
+**Answer: B) 11**
+
+Originally 10 duties were added by the 42nd Amendment (1976). An 11th duty — "to provide opportunities for education to children between 6-14 years" — was added by the 86th Amendment (2002). Fundamental Duties are non-justiciable.
+</details>
+
+**Q10:** The total number of Schedules in the Indian Constitution currently is:
+
+A) 8
+B) 10
+C) 12
+D) 14
+
+<details>
+<summary>Answer</summary>
+**Answer: C) 12**
+
+Originally the Constitution had 8 Schedules. Four more were added through amendments: Ninth (1st Amendment, 1951), Tenth (52nd Amendment, 1985), Eleventh (73rd Amendment, 1992), and Twelfth (74th Amendment, 1992).
+</details>
+
 ---
 
-## Exercises (30 Practice Questions)
+## Exercises (40 Practice Questions)
 
 ### Section A: Multiple Choice Questions
 
@@ -871,6 +1150,78 @@ D) Council of Ministers
 
 **30.** The Chief Election Commissioner can be removed only through impeachment. (T/F)
 
+### Section D: Additional MCQs (Exam Focus)
+
+**31.** The "Minto-Morley Reforms" of 1909 introduced which concept in Indian governance?
+
+A) Dyarchy
+B) Separate electorates for Muslims
+C) Provincial autonomy
+D) Federal system
+
+**32.** Which Article abolishes Untouchability?
+
+A) Article 15
+B) Article 16
+C) Article 17
+D) Article 18
+
+**33.** The Contingency Fund of India is at the disposal of:
+
+A) Prime Minister
+B) Finance Minister
+C) President
+D) Parliament
+
+**34.** The Governor of a state is appointed by:
+
+A) Prime Minister
+B) Chief Minister
+C) President
+D) Chief Justice of India
+
+**35.** What is the maximum strength of the Lok Sabha?
+
+A) 543
+B) 545
+C) 552
+D) 550
+
+**36.** The "CAG" (Comptroller and Auditor General) is appointed under:
+
+A) Article 148
+B) Article 149
+C) Article 150
+D) Article 151
+
+**37.** Which state does NOT have a Legislative Council (Vidhan Parishad)?
+
+A) Maharashtra
+B) Karnataka
+C) Tamil Nadu
+D) Uttar Pradesh
+
+**38.** The provision for "Uniform Civil Code" (UCC) is mentioned in:
+
+A) Fundamental Rights
+B) Directive Principles
+C) Fundamental Duties
+D) Preamble
+
+**39.** The first Law Minister of independent India was:
+
+A) Jawaharlal Nehru
+B) B.R. Ambedkar
+C) Vallabhbhai Patel
+D) Rajendra Prasad
+
+**40.** How many languages are recognised in the Eighth Schedule of the Constitution?
+
+A) 18
+B) 20
+C) 22
+D) 24
+
 ---
 
 <details>
@@ -911,6 +1262,18 @@ D) Council of Ministers
 28. T
 29. F (war, external aggression, OR armed rebellion)
 30. T
+
+**Section D (31-40):**
+31. B) Separate electorates for Muslims
+32. C) Article 17 (abolishes "untouchability" and its practice in any form)
+33. C) President (Article 267; amount is ₹500 crore as per Contingency Fund of India Act)
+34. C) President (Article 155; Governor holds office during pleasure of the President)
+35. C) 552 (530 from states + 20 from UTs + 2 nominated Anglo-Indians; 543 elected + 2 nominated)
+36. A) Article 148 (CAG appointed by President; tenure 6 years or 65 years of age, whichever earlier)
+37. C) Tamil Nadu (abolished its Legislative Council in 1986; only 6 states have one currently)
+38. B) Directive Principles (Article 44: "State shall endeavour to secure UCC for citizens")
+39. B) B.R. Ambedkar (served as Law Minister from 1947–1951)
+40. C) 22 (originally 14 languages; expanded to 22 via amendments)
 </details>
 
 ---

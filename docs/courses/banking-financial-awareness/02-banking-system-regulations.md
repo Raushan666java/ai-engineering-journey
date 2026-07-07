@@ -841,6 +841,166 @@ Every banking company must transfer at least 20% of its net profit to the Reserv
 
 ---
 
+**Q21.** Which of the following is the apex development finance institution for industrial finance in India?
+
+a) NABARD
+b) IDBI
+c) NHB
+d) EXIM Bank
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) IDBI
+
+The Industrial Development Bank of India (IDBI) was established in 1964 as the apex institution for industrial finance. It was later converted into a commercial bank.
+</details>
+
+---
+
+**Q22.** The Local Area Banks (LABs) scheme was introduced on the recommendation of which committee?
+
+a) Urjit Patel Committee
+b) Narasimham Committee
+c) Nachiket Mor Committee
+d) K. M. Chandrasekhar Committee
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) Narasimham Committee
+
+LABs were introduced in 1996 based on the Narasimham Committee recommendations to serve in 2-3 contiguous districts with a minimum capital of ₹5 crore.
+</details>
+
+---
+
+**Q23.** Which of the following correctly distinguishes SLR from CRR?
+
+a) SLR earns interest; CRR does not
+b) CRR earns interest; SLR does not
+c) Both earn interest
+d) Neither earns interest
+
+<details>
+<summary>Answer</summary>
+**Answer:** a) SLR earns interest; CRR does not
+
+Banks earn interest on SLR securities (government bonds/gold), whereas CRR is kept as cash with RBI earning no interest. This makes CRR a more costly tool for banks.
+</details>
+
+---
+
+**Q24.** EXIM Bank of India was established in which year?
+
+a) 1964
+b) 1982
+c) 1990
+d) 2000
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) 1982
+
+The Export-Import Bank of India (EXIM Bank) was established in 1982 under the EXIM Bank of India Act, 1981 to finance, facilitate, and promote India's international trade.
+</details>
+
+---
+
+**Q25.** SIDBI was established in which year?
+
+a) 1964
+b) 1982
+c) 1990
+d) 1996
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) 1990
+
+The Small Industries Development Bank of India (SIDBI) was established in 1990 as a wholly-owned subsidiary of IDBI to promote and finance MSMEs.
+</details>
+
+---
+
+**Q26.** Under the Cooperative Banking structure, PACS stands for:
+
+a) Primary Agricultural Credit Society
+b) Primary Agricultural Cooperative Service
+c) Provincial Agricultural Credit System
+d) Priority Agricultural Credit Scheme
+
+<details>
+<summary>Answer</summary>
+**Answer:** a) Primary Agricultural Credit Society
+
+PACS are the grassroots-level institutions in the cooperative credit structure, providing direct short-term and medium-term loans to farmers.
+</details>
+
+---
+
+**Q27.** The minimum capital requirement for setting up a Local Area Bank is:
+
+a) ₹1 crore
+b) ₹5 crore
+c) ₹10 crore
+d) ₹25 crore
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) ₹5 crore
+
+LABs require minimum capital of ₹5 crore and operate within a contiguous area of 2-3 districts.
+</details>
+
+---
+
+**Q28.** Which section of the Banking Regulation Act deals with the Statutory Liquidity Ratio?
+
+a) Section 17
+b) Section 18
+c) Section 24
+d) Section 35
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) Section 24
+
+SLR is covered under Section 24 of the Banking Regulation Act, 1949. CRR is covered under Section 18.
+</details>
+
+---
+
+**Q29.** NABARD was established following the recommendations of which committee?
+
+a) Narasimham Committee
+b) Shivaraman Committee
+c) Vaidyanathan Committee
+d) Kelkar Committee
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) Shivaraman Committee
+
+NABARD was established in 1982 based on the recommendations of the Shivaraman Committee (1979) to reorganise agricultural credit institutions.
+</details>
+
+---
+
+**Q30.** Which of the following is NOT a function of the Export-Import Bank of India?
+
+a) Providing buyer's credit for exports
+b) Refinancing commercial banks for export credit
+c) Regulating the stock market
+d) Financing export-oriented units
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) Regulating the stock market
+
+Stock market regulation is the function of SEBI, not EXIM Bank. EXIM Bank provides buyer's/supplier's credit, refinance to banks, and financing for export-oriented units.
+</details>
+
+---
+
 ## TypeScript Example: Banking Health Dashboard
 
 ```typescript
@@ -920,6 +1080,200 @@ console.log(`Score: ${bankHealth.compositeScore}/100, Risk: ${bankHealth.riskLev
 console.log(`Recommendations: ${bankHealth.recommendations.join(", ")}`);
 // Output: Score: 78/100, Risk: Moderate
 // Recommendations: (none)
+```
+
+---
+
+### 2.10 Comparison: Public Sector Banks vs Private Sector Banks
+
+| Aspect | Public Sector Banks | Private Sector Banks |
+|--------|-------------------|---------------------|
+| **Majority Ownership** | Government of India (≥51%) | Private shareholders |
+| **Regulation** | RBI + Government (under BR Act) | RBI (under BR Act) |
+| **Interest Rates** | Generally lower lending rates | Competitive, market-driven |
+| **Branch Network** | Extensive rural reach | Concentrated in urban/semi-urban |
+| **Employee Strength** | Large workforce, unionised | Leaner, performance-linked pay |
+| **NPA Levels** | Historically higher (twin-balance sheet problem) | Generally lower, better risk management |
+| **Technology Adoption** | Catching up, large-scale digital push | Early adopters, tech-first approach |
+| **Governance** | Government nominees on board | Professional management, promoter-driven |
+| **Examples** | SBI, PNB, Canara Bank, Bank of Baroda, Indian Bank | HDFC Bank, ICICI Bank, Axis Bank, Kotak Mahindra |
+| **Market Share** | ~60% of banking assets | ~35% of banking assets |
+
+### 2.11 Development Banks in India
+
+Development banks are specialised financial institutions that provide **long-term capital** for industrial, agricultural, and infrastructure projects.
+
+```mermaid
+flowchart TD
+    A[Development Financial<br/>Institutions DFIs] --> B[Industrial]
+    A --> C[Agricultural]
+    A --> D[Infrastructure]
+    A --> E[Housing]
+    A --> F[Export]
+    
+    B --> G[IDBI - Industrial Development<br/>Bank of India<br/>Est. 1964]
+    B --> H[SIDBI - Small Industries<br/>Development Bank of India<br/>Est. 1990]
+    B --> I[IFCI Ltd<br/>Est. 1948]
+    
+    C --> J[NABARD - National Bank for<br/>Agriculture & Rural Development<br/>Est. 1982]
+    
+    D --> K[NHB - National Housing Bank<br/>Est. 1988]
+    
+    E --> L[NHB also regulates<br/>Housing Finance Companies]
+    
+    F --> M[EXIM Bank - Export-Import<br/>Bank of India<br/>Est. 1982]
+    
+    style A fill:#1a73e8,color:#fff
+    style G fill:#4CAF50,color:#fff
+    style H fill:#4CAF50,color:#fff
+    style J fill:#4CAF50,color:#fff
+    style M fill:#4CAF50,color:#fff
+```
+
+| Development Bank | Established | Purpose | Current Status |
+|-----------------|-------------|---------|----------------|
+| **IDBI** | 1964 | Industrial finance, long-term project loans | Converted to commercial bank (2019), now a PSB |
+| **SIDBI** | 1990 | Promotion and financing of MSMEs| Continues as DFI; also manages MUDRA Fund |
+| **EXIM Bank** | 1982 | Finance India's international trade | Active; provides buyer's/supplier's credit |
+| **NABARD** | 1982 | Agriculture and rural development | Active; regulates RRBs and cooperatives |
+| **NHB** | 1988 | Housing finance regulation and promotion | Active; regulates HFCs |
+| **IFCI** | 1948 | Industrial medium/long-term finance | Active; now a corporate entity |
+
+**EXIM Bank Key Functions:**
+- Provides **buyer's credit** and **supplier's credit** for exports
+- Finances export-oriented units and deemed exports
+- Refinances commercial banks for export credit
+- Operates the **Export Credit Guarantee Corporation (ECGC)** interface
+
+**SIDBI Key Initiatives:**
+- Manages the **Fund of Funds** for Startups (₹10,000 crore)
+- Implements the **Stand-Up India** scheme (nodal agency)
+- Provides refinance to banks/MFIs for MSME lending
+- Promotes the **Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)**
+
+### 2.12 Local Area Banks (LABs)
+
+**Local Area Banks** were introduced in **1996** on the recommendation of the **Narasimham Committee**. They operate in a **contiguous geographical area** of 2-3 districts.
+
+| Feature | Details |
+|---------|---------|
+| **Minimum capital** | ₹5 crore |
+| **Area of operation** | 2-3 contiguous districts |
+| **Target beneficiaries** | Small farmers, small-scale industries, tiny enterprises |
+| **Status** | Only a few remain (e.g., Coastal Local Area Bank) |
+| **Regulation** | Licensed by RBI under BR Act, 1949 |
+
+LABs were intended to bridge the gap between RRBs/commercial banks and the informal credit sector in rural and semi-urban areas.
+
+### 2.13 SLR — Deeper Understanding
+
+Statutory Liquidity Ratio (SLR) under **Section 24 of the Banking Regulation Act, 1949** requires banks to maintain a portion of their NDTL in approved securities.
+
+**SLR vs CRR — Comparison:**
+
+| Aspect | SLR | CRR |
+|--------|-----|-----|
+| **Maintained in** | Approved securities (G-Secs, gold) | Cash with RBI |
+| **Interest earned** | Yes — banks earn coupon on G-Secs | No interest paid |
+| **Purpose** | Ensures solvency; funds government borrowing | Direct liquidity control |
+| **Section** | Section 24 of BR Act | Section 18 of BR Act |
+| **Current level** | 18% of NDTL | 4.5% of NDTL |
+| **Impact if increased** | Reduces lending capacity, supports govt borrowing | Directly reduces lendable resources significantly |
+
+**SLR in times of crisis:** During COVID-19, RBI reduced SLR from 18.5% to 18% to free up lending resources. The government may also request SLR reduction to create fiscal space.
+
+```mermaid
+flowchart LR
+    A[RBI increases SLR] --> B[Banks buy more<br/>Government Securities]
+    B --> C[Less funds available<br/>for private lending]
+    C --> D[Credit growth slows]
+    
+    A --> E[Government borrowing<br/>gets cheaper]
+    E --> F[Lower bond yields]
+    F --> G[Fiscal deficit more<br/>manageable]
+    
+    B --> H[Banks' assets become<br/>safer → higher solvency]
+    
+    style A fill:#1a73e8,color:#fff
+    style D fill:#e83737,color:#fff
+    style G fill:#4CAF50,color:#fff
+```
+
+### 2.14 Cooperative Banking — Deeper Dive
+
+Cooperative banks in India follow a **three-tier structure** for short-term credit and a separate structure for long-term credit.
+
+**Short-term Cooperative Credit Structure:**
+
+| Tier | Institution | Function |
+|------|-------------|----------|
+| **Apex (State)** | State Cooperative Bank (StCB) | Provides funds to DCCBs; links with RBI |
+| **Intermediate (District)** | District Central Cooperative Bank (DCCB) | Provides funds to PACS; oversees operations |
+| **Grassroots (Village)** | Primary Agricultural Credit Society (PACS) | Direct lending to farmers; most numerous (~1 lakh) |
+
+**Urban Cooperative Banks (UCBs):**
+- Regulated by RBI (banking functions) and State Registrars (registration)
+- Categorised into Tier 1 (deposits < ₹100 crore) and Tier 2 (deposits > ₹100 crore)
+- **Umbrella organisation:** National Federation of Urban Cooperative Banks and Credit Societies (NAFCUB)
+
+**Challenges faced by cooperative banks:**
+1. Dual regulation (RBI + State Registrar) leading to regulatory gaps
+2. Political interference in management
+3. High NPAs and governance issues (e.g., PMC Bank crisis, 2019)
+4. Limited technology adoption
+5. Low capital adequacy
+
+### 2.15 SBI / IBPS SO / RBI Grade B Exam Tips for Banking Regulation
+
+| Exam | Key Topics | Strategy |
+|------|-----------|----------|
+| **RBI Grade B** | RBI supervision, Basel III implementation, PCA framework, SARFAESI, DICGC | Focus on recent regulatory changes; study RBI annual supervision reports |
+| **SBI PO** | Types of banks (especially new types), BR Act sections, KYC/AML norms, digital lending guidelines | Memorise key sections (22, 35, 17, 24); compare bank types |
+| **IBPS SO** | Rural banking (RRBs, cooperatives), Priority sector targets, PSB mergers, DICGC | Prepare a chart of all bank types with key features; memorise percentages |
+| **Common tips** | Read recent RBI circulars; know the exact year and key section numbers; practice numerical problems on CAR, CRR, SLR | Create weekly revision sheets of regulatory updates |
+
+---
+
+## TypeScript Example: SLR and CRR Impact Simulator
+
+```typescript
+interface ReserveImpact {
+  totalDeposits: number;
+  crrRate: number;
+  slrRate: number;
+  crrAmount: number;
+  slrAmount: number;
+  lockedFunds: number;
+  lendableFunds: number;
+  lendingCapacityChange: number;
+}
+
+function simulateReserveChange(
+  deposits: number,
+  oldCRR: number,
+  newCRR: number,
+  oldSLR: number,
+  newSLR: number
+): ReserveImpact {
+  const oldLocked = deposits * (oldCRR / 100) + deposits * (oldSLR / 100);
+  const newLocked = deposits * (newCRR / 100) + deposits * (newSLR / 100);
+  const lendingChange = oldLocked - newLocked;
+
+  return {
+    totalDeposits: deposits,
+    crrRate: newCRR,
+    slrRate: newSLR,
+    crrAmount: Math.round(deposits * (newCRR / 100)),
+    slrAmount: Math.round(deposits * (newSLR / 100)),
+    lockedFunds: Math.round(newLocked),
+    lendableFunds: Math.round(deposits - newLocked),
+    lendingCapacityChange: Math.round(lendingChange),
+  };
+}
+
+const sim = simulateReserveChange(100000000, 4.5, 4.0, 18, 18);
+console.log(`Locked: ₹${sim.lockedFunds}, Lendable: ₹${sim.lendableFunds}, Change: ₹${sim.lendingCapacityChange}`);
+// Output: Locked: ₹22000000, Lendable: ₹78000000, Change: ₹500000 (more lending capacity)
 ```
 
 ---
@@ -1084,30 +1438,44 @@ In the 2019-2020 mega merger, Canara Bank absorbed Syndicate Bank. PNB absorbed 
 18. The LCR requirement under Basel III is _________%.
 19. The Basel Committee is headquartered in _________.
 20. The DRT (Debt Recovery Tribunal) hears appeals under the _________ Act.
+21. IDBI was established in the year _________ as an apex institution for industrial finance.
+22. SIDBI was established in _________ as a wholly-owned subsidiary of IDBI.
+23. EXIM Bank was established in _________ under the EXIM Bank Act, 1981.
+24. Local Area Banks (LABs) minimum capital requirement is ₹_________ crore.
+25. The grassroots-level institution in the cooperative credit structure is called _________.
 
 ### Section C: True or False
 
-21. Payment banks can offer credit cards to customers. (True/False)
-22. The DICGC insurance limit is ₹5 lakh per bank account. (True/False)
-23. Old private sector banks were established after 1991. (True/False)
-24. Cooperative banks are regulated by both RBI and state registrars. (True/False)
-25. The SARFAESI Act does NOT apply to agricultural land. (True/False)
-26. Basel III introduced the concept of Countercyclical Capital Buffer. (True/False)
-27. PCA can be triggered if a bank has negative RoA for 3 consecutive years. (True/False)
-28. Section 6 of the Banking Regulation Act lists prohibited activities for banks. (True/False)
-29. NABARD supervises both RRBs and cooperative banks. (True/False)
-30. The minimum transfer to Reserve Fund under Section 17 is 15% of profits. (True/False)
+26. Payment banks can offer credit cards to customers. (True/False)
+27. The DICGC insurance limit is ₹5 lakh per bank account. (True/False)
+28. Old private sector banks were established after 1991. (True/False)
+29. Cooperative banks are regulated by both RBI and state registrars. (True/False)
+30. The SARFAESI Act does NOT apply to agricultural land. (True/False)
+31. Basel III introduced the concept of Countercyclical Capital Buffer. (True/False)
+32. PCA can be triggered if a bank has negative RoA for 3 consecutive years. (True/False)
+33. Section 6 of the Banking Regulation Act lists prohibited activities for banks. (True/False)
+34. NABARD supervises both RRBs and cooperative banks. (True/False)
+35. The minimum transfer to Reserve Fund under Section 17 is 15% of profits. (True/False)
+36. Public sector banks have a more extensive rural branch network than private sector banks. (True/False)
+37. LABs were introduced based on the Shivaraman Committee recommendations. (True/False)
+38. PACS stands for Primary Agricultural Credit Society. (True/False)
+39. SLR is maintained in the form of cash with RBI. (True/False)
+40. IDBI was originally established as a Development Financial Institution before becoming a commercial bank. (True/False)
 
 ### Answer Key
 
+| Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
+|---|--------|---|--------|---|--------|---|--------|---|--------|
 | Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
 |---|--------|---|--------|---|--------|---|--------|---|--------|
 | 1 | b (1949) | 2 | c (Canara Bank) | 3 | c (14) | 4 | b (RRB Act, 1976) | 5 | c (₹2,00,000) |
 | 6 | b (Take possession) | 7 | b (Threshold 2) | 8 | b (7%) | 9 | b (DNBS) | 10 | c (2015) |
 | 11 | Deposit Insurance and Credit Guarantee Corporation | 12 | 1998 | 13 | 6% | 14 | 75% | 15 | 75% |
 | 16 | 35% | 17 | 35 | 18 | 100% | 19 | Basel, Switzerland | 20 | SARFAESI |
-| 21 | False | 22 | False (per depositor per bank) | 23 | False (pre-1991) | 24 | True | 25 | True |
-| 26 | True | 27 | False (2 consecutive years for Threshold 2) | 28 | False (Section 6 lists permissible activities) | 29 | True | 30 | False (20%) |
+| 21 | 1964 | 22 | 1990 | 23 | 1982 | 24 | 5 | 25 | PACS |
+| 26 | False | 27 | False (per depositor per bank) | 28 | False (pre-1991) | 29 | True | 30 | True |
+| 31 | True | 32 | False (2 consecutive years for Threshold 2) | 33 | False (Section 6 lists permissible activities) | 34 | True | 35 | False (20%) |
+| 36 | True | 37 | False (Narasimham Committee) | 38 | True | 39 | False (approved securities) | 40 | True |
 
 ---
 

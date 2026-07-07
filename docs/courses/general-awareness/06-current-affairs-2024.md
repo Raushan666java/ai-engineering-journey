@@ -688,6 +688,197 @@ The Quad Leaders' Summit (India, USA, Japan, Australia) was held in Wilmington, 
 
 ---
 
+### 6.8 Color Revolutions and Protest Movements Worldwide (Reference)
+
+| Name | Country | Year | Trigger/Outcome |
+|------|---------|------|-----------------|
+| People Power / EDSA Revolution | Philippines | 1986 | Overthrew Ferdinand Marcos; Cory Aquino became President |
+| Velvet Revolution | Czechoslovakia | 1989 | Non-violent end of communist rule; Václav Havel became President |
+| Rose Revolution | Georgia | 2003 | Overthrew Eduard Shevardnadze; Mikheil Saakashvili came to power |
+| Orange Revolution | Ukraine | 2004–2005 | Protested election fraud; Viktor Yushchenko became President |
+| Tulip Revolution | Kyrgyzstan | 2005 | Overthrew Askar Akayev; Kurmanbek Bakiyev took over |
+| Cedar Revolution | Lebanon | 2005 | Mass protests after assassination of Rafic Hariri; Syrian withdrawal |
+| Saffron Revolution | Myanmar | 2007 | Monk-led protests against military junta; violently suppressed |
+| Green Movement | Iran | 2009 | Post-election protests against Mahmoud Ahmadinejad |
+| Arab Spring | Tunisia, Egypt, Libya, Syria, etc. | 2010–2012 | Wave of protests across Middle East/North Africa; regime changes in Tunisia, Egypt, Libya |
+| Yellow Vests | France | 2018–2019 | Anti-fuel tax protests; evolved into broader anti-government movement |
+| Hong Kong Protests | Hong Kong | 2019–2020 | Anti-extradition bill protests; China imposed National Security Law |
+
+### 6.9 Major International Summits 2024 — Key Outcomes
+
+| Summit | Date | Host Country | Key Outcome |
+|--------|------|-------------|-------------|
+| G20 Summit | 18–19 Nov 2024 | Rio de Janeiro, Brazil | Launched Global Alliance Against Hunger and Poverty; reformed global governance |
+| BRICS Summit | 22–24 Oct 2024 | Kazan, Russia | Discussed de-dollarisation; new members (Iran, UAE, Egypt, Ethiopia) participated |
+| COP29 | 11–22 Nov 2024 | Baku, Azerbaijan | New climate finance goal (NCQG); Article 6 carbon market rules finalised |
+| SCO Summit | 4–5 Jul 2024 | Astana, Kazakhstan | Expanded cooperation on security and counter-terrorism |
+| Quad Summit | 21 Sep 2024 | Wilmington, USA | Maritime security; critical technology cooperation; health security |
+| UNGA 79 | 10–24 Sep 2024 | New York, USA | Summit of the Future adopted "Pact for the Future"; UNSC reform discussed |
+| WEF Davos | 15–19 Jan 2024 | Davos, Switzerland | Theme: "Rebuilding Trust"; AI governance discussed |
+| ASEAN Summit | 6–11 Oct 2024 | Vientiane, Laos | East Timor accession road map; South China Sea tensions discussed |
+| NATO Summit | 9–11 Jul 2024 | Washington DC, USA | 75th anniversary; Ukraine support package; Sweden formally joined (32 members) |
+
+### 6.10 Important Appointments and Obituaries 2024
+
+**Appointments:**
+
+| Position | Appointee | Date / Context |
+|----------|-----------|----------------|
+| Chief Election Commissioner | Gyanesh Kumar | 2024 (26th CEC; succeeded Rajiv Kumar) |
+| Chief Justice of India (CJI) | Justice D.Y. Chandrachud | Retired Nov 2024; Justice Sanjiv Khanna succeeded |
+| Lok Sabha Speaker | Om Birla | Re-elected in 2024 (18th Lok Sabha) |
+| Leader of Opposition (Lok Sabha) | Rahul Gandhi | First LoP in 10 years (since 2014) |
+| US President (re-elected) | Donald Trump | Won 2024 US Presidential election (47th President) |
+| UK Prime Minister | Sir Keir Starmer | Labour Party won UK general election (Jul 2024) |
+| NATO Secretary General | Mark Rutte | Succeeded Jens Stoltenberg (Oct 2024) |
+| WTO Director-General | Ngozi Okonjo-Iweala | Second term (2024–2028) |
+| World Bank President | Ajay Banga | Completed first year in office |
+
+**Obituaries (Notable Figures):**
+
+| Person | Known For | Date of Death |
+|--------|-----------|---------------|
+| Ratan Tata | Industrialist (Tata Sons Chairman Emeritus) | 9 Oct 2024 |
+| Zakir Hussain | Legendary tabla maestro | 22 Dec 2024 |
+| Shyam Benegal | Renowned filmmaker | 23 Dec 2024 |
+| Manmohan Singh | Former PM of India; architect of 1991 reforms | 26 Dec 2024 |
+| A.K. Hangal | Character actor | — |
+| Pankaj Udhas | Ghazal singer | 26 Feb 2024 |
+| Richard M. Sherman | Disney songwriter | — |
+| Prabir Purkayastha | RTI activist | — |
+
+### 6.11 TypeScript: Current Affairs Data Tracker
+
+```typescript
+/**
+ * Current Affairs 2024 Data Analyzer
+ * Tracks important events and generates revision summaries
+ */
+interface CFAEvent {
+  date: Date;
+  category: 'national' | 'international' | 'sports' | 'science' | 'obituary' | 'appointment' | 'award';
+  title: string;
+  description: string;
+  importance: 1 | 2 | 3; // 1 = must-know, 2 = good-to-know, 3 = supplementary
+}
+
+class CurrentAffairsTracker {
+  private events: CFAEvent[] = [];
+
+  constructor() {
+    this.initializeEvents();
+  }
+
+  private initializeEvents(): void {
+    this.events = [
+      { date: new Date('2024-01-22'), category: 'national', title: 'Ram Mandir Consecration', description: 'Pran Pratishtha in Ayodhya by PM Modi', importance: 1 },
+      { date: new Date('2024-06-04'), category: 'national', title: 'Lok Sabha Election Results', description: 'BJP 240, NDA 293, INC 99, INDIA 232', importance: 1 },
+      { date: new Date('2024-07-22'), category: 'national', title: 'Union Budget 2024-25', description: 'Fiscal deficit 4.9%, capex ₹11.11 lakh cr', importance: 1 },
+      { date: new Date('2024-09-21'), category: 'international', title: 'Quad Summit', description: 'Wilmington, USA; maritime security focus', importance: 2 },
+      { date: new Date('2024-11-18'), category: 'international', title: 'G20 Rio Summit', description: 'Global Alliance Against Hunger launched', importance: 1 },
+      { date: new Date('2024-10-09'), category: 'obituary', title: 'Ratan Tata passes away', description: 'Tata Sons Chairman Emeritus, age 86', importance: 1 },
+    ];
+  }
+
+  public getEventsByCategory(category: CFAEvent['category']): CFAEvent[] {
+    return this.events.filter(e => e.category === category);
+  }
+
+  public getImportantEvents(threshold: number = 2): CFAEvent[] {
+    return this.events.filter(e => e.importance <= threshold)
+      .sort((a, b) => a.date.getTime() - b.date.getTime());
+  }
+
+  public generateRevisionSheet(): string {
+    const important = this.getImportantEvents(1);
+    let sheet = '===== MUST-KNOW CURRENT AFFAIRS 2024 =====\n';
+    important.forEach(e => {
+      sheet += `📅 ${e.date.toDateString()} | ${e.title}\n`;
+      sheet += `   ${e.description}\n`;
+    });
+    sheet += '=============================================\n';
+    return sheet;
+  }
+}
+
+const tracker = new CurrentAffairsTracker();
+console.log(tracker.generateRevisionSheet());
+```
+
+### 6.12 Additional Solved MCQs (Current Affairs 2024)
+
+**Q21:** The "Global Alliance Against Hunger and Poverty" was launched at which summit?
+
+A) COP29
+B) G20 Rio 2024
+C) WEF Davos 2024
+D) UNGA 79
+
+<details>
+<summary>Answer</summary>
+**Answer: B) G20 Rio 2024**
+
+The Global Alliance Against Hunger and Poverty was launched at the G20 Summit in Rio de Janeiro, Brazil (18-19 Nov 2024). It aims to accelerate implementation of SDG 2 (Zero Hunger) by 2030 through coordinated global action.
+</details>
+
+**Q22:** Who was appointed as the new NATO Secretary General in 2024?
+
+A) Jens Stoltenberg
+B) Mark Rutte
+C) Ursula von der Leyen
+D) Olaf Scholz
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Mark Rutte**
+
+Mark Rutte (former Prime Minister of Netherlands) succeeded Jens Stoltenberg as NATO Secretary General in October 2024. He is the 14th Secretary General of NATO.
+</details>
+
+**Q23:** The "Champions of the Earth" award is given by which organisation?
+
+A) World Economic Forum
+B) United Nations Environment Programme (UNEP)
+C) World Wildlife Fund (WWF)
+D) Greenpeace
+
+<details>
+<summary>Answer</summary>
+**Answer: B) UNEP**
+
+The Champions of the Earth award is the UN's highest environmental honour, awarded annually by UNEP to individuals and organisations making outstanding contributions to environmental protection.
+</details>
+
+**Q24:** The "Mission Divyastra" is associated with which missile system?
+
+A) BrahMos
+B) Agni-5
+C) Agni-6
+D) Prithvi
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Agni-5 (with MIRV technology)**
+
+Mission Divyastra was India's first successful test of Multiple Independently Targetable Re-entry Vehicle (MIRV) technology on the Agni-5 ICBM. This allows one missile to carry multiple warheads to different targets.
+</details>
+
+**Q25:** India's GDP growth rate for 2023-24 (provisional estimates) was:
+
+A) 7.0%
+B) 7.6%
+C) 8.2%
+D) 9.1%
+
+<details>
+<summary>Answer</summary>
+**Answer: C) 8.2%**
+
+India's GDP grew by 8.2% in FY 2023-24, making it the fastest-growing major economy globally. The growth was driven by strong manufacturing (9.9%) and construction (10.7%) sectors.
+</details>
+
+---
+
 ## Summary
 
 - **Ram Mandir** consecration (22 Jan 2024) in Ayodhya was a landmark cultural event.
@@ -893,6 +1084,78 @@ D) Transfer Waqf to state list
 
 **30.** India became the 5th largest economy in the world in 2024. (T/F)
 
+### Section D: Additional MCQs (Exam Focus — 2024 Events)
+
+**31.** The "National Quantum Mission" of India was approved in which year?
+
+A) 2022
+B) 2023
+C) 2024
+D) 2025
+
+**32.** Sweden joined NATO as the ___ member in 2024.
+
+A) 30th
+B) 31st
+C) 32nd
+D) 33rd
+
+**33.** The 38th National Games were held in which state?
+
+A) Goa
+B) Uttarakhand
+C) Gujarat
+D) Karnataka
+
+**34.** "Hyundai Motor India" launched India's largest IPO worth approximately:
+
+A) ₹10,000 crore
+B) ₹20,000 crore
+C) ₹27,870 crore
+D) ₹50,000 crore
+
+**35.** Which country assumed the presidency of the UN Security Council for December 2024?
+
+A) India
+B) USA
+C) France
+D) China
+
+**36.** The "Moscow-Chennai" connectivity initiative refers to:
+
+A) New airline route
+B) International North-South Transport Corridor (INSTC)
+C) Submarine cable
+D) Railway line
+
+**37.** Who won the Nobel Prize in Economics 2024?
+
+A) Daron Acemoglu
+B) Simon Johnson
+C) James Robinson
+D) A, B, and C (joint award)
+
+**38.** The "Vantara" wildlife rescue and conservation centre was inaugurated by:
+
+A) PM Modi
+B) Reliance Industries
+C) Wildlife Trust of India
+D) Ministry of Environment
+
+**39.** India's first underwater metro tunnel was inaugurated in which city?
+
+A) Mumbai
+B) Chennai
+C) Kolkata
+D) Bengaluru
+
+**40.** The "Har Ghar Jal" certification for villages is part of which mission?
+
+A) AMRUT
+B) Swachh Bharat Mission
+C) Jal Jeevan Mission
+D) PM Awas Yojana
+
 ---
 
 <details>
@@ -933,6 +1196,18 @@ D) Transfer Waqf to state list
 28. F (7 phases)
 29. T
 30. T (India surpassed UK and now ranks 5th after USA, China, Germany, Japan)
+
+**Section D (31-40):**
+31. B) 2023 (National Quantum Mission was approved in April 2023 with ₹6,003 crore budget)
+32. C) 32nd (Sweden formally joined NATO in March 2024; Finland had joined in 2023 as 31st)
+33. B) Uttarakhand (held in Dehradun and other cities across the state)
+34. C) ₹27,870 crore (Hyundai Motor India IPO, Oct 2024; surpassed LIC's ₹21,000 crore IPO)
+35. A) India (India assumed UNSC presidency for December 2024, its last presidency before ending its 2-year term)
+36. B) INSTC (International North-South Transport Corridor; connects India to Russia via Iran and Central Asia)
+37. D) A, B, and C (Daron Acemoglu, Simon Johnson, James Robinson jointly won for studies on how institutions shape prosperity)
+38. B) Reliance Industries (Vantara is a wildlife rescue centre in Jamnagar, Gujarat, founded by Anant Ambani)
+39. C) Kolkata (India's first underwater metro tunnel under the Hooghly River; part of Kolkata East-West Metro)
+40. C) Jal Jeevan Mission (Har Ghar Jal certification is issued when every rural household in a village gets tap water connection)
 </details>
 
 ---

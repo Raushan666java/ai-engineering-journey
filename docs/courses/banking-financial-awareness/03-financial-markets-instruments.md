@@ -840,6 +840,166 @@ A Rights Issue gives existing shareholders the right to purchase additional shar
 
 ---
 
+**Q21.** IMPS (Immediate Payment Service) was launched in which year?
+
+a) 2005
+b) 2010
+c) 2016
+d) 2019
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) 2010
+
+IMPS was launched by NPCI in 2010 as India's first real-time interbank funds transfer system operating 24x7.
+</details>
+
+---
+
+**Q22.** Which of the following exchanges regulates commodity derivatives in India?
+
+a) Only NSE
+b) Only BSE
+c) MCX and NCDEX
+d) Only NCDEX
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) MCX and NCDEX
+
+MCX (Multi Commodity Exchange) and NCDEX (National Commodity & Derivatives Exchange) are the primary commodity exchanges in India. SEBI regulates them since 2015.
+</details>
+
+---
+
+**Q23.** What is the minimum transaction amount for RTGS?
+
+a) ₹1
+b) ₹50,000
+c) ₹1,00,000
+d) ₹2,00,000
+
+<details>
+<summary>Answer</summary>
+**Answer:** d) ₹2,00,000
+
+RTGS (Real Time Gross Settlement) requires a minimum transaction amount of ₹2 lakh. NEFT has no minimum limit. IMPS has a maximum of ₹5 lakh per transaction.
+</details>
+
+---
+
+**Q24.** Which organisation regulates commodity derivatives market in India?
+
+a) RBI
+b) SEBI
+c) IRDA
+d) Forward Markets Commission
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) SEBI
+
+Since September 2015, SEBI regulates the commodity derivatives market in India, after the Forward Markets Commission (FMC) was merged with SEBI.
+</details>
+
+---
+
+**Q25.** A bond with a face value of ₹100, coupon rate of 8%, and market price of ₹90 will have a current yield of approximately:
+
+a) 7.2%
+b) 8.0%
+c) 8.9%
+d) 10.0%
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) 8.9%
+
+Current Yield = (Annual Coupon / Market Price) × 100 = (8 / 90) × 100 = 8.89%. Since the bond is trading at a discount (< face value), the current yield exceeds the coupon rate.
+</details>
+
+---
+
+**Q26.** In the stock market, a company with a market capitalisation rank between 101 and 250 is classified as:
+
+a) Large Cap
+b) Mid Cap
+c) Small Cap
+d) Micro Cap
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) Mid Cap
+
+As per SEBI classification: Large Cap = Top 100 companies, Mid Cap = 101st to 250th company, Small Cap = 251st onwards.
+</details>
+
+---
+
+**Q27.** The bond price and yield share which type of relationship?
+
+a) Direct relationship
+b) Inverse relationship
+c) No relationship
+d) Exponential relationship
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) Inverse relationship
+
+Bond prices and yields move in opposite directions. When bond prices rise, yields fall, and vice versa.
+</details>
+
+---
+
+**Q28.** A market order in stock trading means:
+
+a) Buy/sell at a specified price
+b) Buy/sell at the current market price immediately
+c) Buy/sell only at the closing price
+d) Buy/sell after a price trigger
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) Buy/sell at the current market price immediately
+
+A market order is executed immediately at the best available current price. A limit order is executed at a specified price. A stop-loss triggers a market order when price crosses a threshold.
+</details>
+
+---
+
+**Q29.** The MMID (Mobile Money Identifier) used in IMPS transactions is how many digits long?
+
+a) 4-digit
+b) 6-digit
+c) 7-digit
+d) 10-digit
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) 7-digit
+
+MMID is a 7-digit code assigned by banks to customers for IMPS transactions. It links the customer's mobile number to their bank account for mobile-based fund transfers.
+</details>
+
+---
+
+**Q30.** Which of the following is an example of a Zero-Coupon Bond in India?
+
+a) Corporate Bond
+b) G-Sec dated security
+c) Treasury Bill
+d) Sovereign Gold Bond
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) Treasury Bill
+
+T-Bills are zero-coupon instruments — issued at a discount to face value and redeemed at par with no periodic interest payments. G-Secs, corporate bonds, and SGBs pay periodic coupon interest.
+</details>
+
+---
+
 ## TypeScript Example: Portfolio Tracker
 
 ```typescript
@@ -894,6 +1054,194 @@ console.log(`Invested: ₹${portfolio.totalInvestment}, Value: ₹${portfolio.cu
 console.log(`P&L: ₹${portfolio.totalPL} (${portfolio.totalReturnPercent}%)`);
 // Output: Invested: ₹334000, Value: ₹379000
 // Output: P&L: ₹45000 (13.47%)
+```
+
+---
+
+### 3.9 Money Market — Detailed Characteristics
+
+The money market is the market for **short-term funds** (maturity ≤ 1 year) with high liquidity and low risk.
+
+| Characteristic | Description |
+|----------------|-------------|
+| **Maturity** | Overnight to 1 year |
+| **Risk** | Low (especially government instruments) |
+| **Liquidity** | Very high — instruments can be easily sold |
+| **Participants** | RBI, Banks, Mutual Funds, Corporates, FIIs, Insurance Companies |
+| **Regulation** | RBI (for most instruments) + SEBI (for money market mutual funds) |
+| **Purpose** | Liquidity management, short-term borrowing/lending |
+| **Minimum amount** | High denominations (₹5 lakh to ₹5 crore) |
+
+```mermaid
+flowchart TD
+    A[Money Market<br/>Participants] --> B[Lenders of Funds]
+    A --> C[Borrowers of Funds]
+    
+    B --> D[RBI<br/>Reverse Repo]
+    B --> E[Banks with<br/>Surplus Funds]
+    B --> F[Mutual Funds<br/>Liquid Schemes]
+    B --> G[Corporates with<br/>Surplus Cash]
+    
+    C --> H[Government<br/>T-Bills]
+    C --> I[Banks with<br/>Deficit Funds]
+    C --> J[Corporates<br/>CP Issuers]
+    C --> K[NBFCs]
+    
+    D --> L[LAF Operations]
+    E --> M[Call Money<br/>& Repo]
+    F --> N[CDs & CPs]
+    G --> O[Investment in<br/>MM Instruments]
+    
+    style A fill:#1a73e8,color:#fff
+    style L fill:#4CAF50,color:#fff
+```
+
+### 3.10 IMPS — Immediate Payment Service
+
+**IMPS (Immediate Payment Service)** was launched by **NPCI** in **2010** as India's first real-time interbank electronic funds transfer system operating 24×7.
+
+| Feature | IMPS | NEFT | RTGS |
+|---------|------|------|------|
+| **Launch Year** | 2010 | 2005 | 2004 |
+| **Settlement** | Real-time | Deferred (batched) | Real-time |
+| **Minimum Amount** | ₹1 | ₹1 | ₹2 lakh |
+| **Maximum Amount** | ₹5 lakh (per transaction) | No limit | No limit |
+| **Availability** | 24×7 | 24×7 (since Dec 2019) | 24×7 (since Dec 2020) |
+| **Speed** | Instant (seconds) | Up to 2 hours (batches) | Instant |
+| **Channel** | Mobile, Internet, ATM, SMS | Internet, Mobile, Branch | Internet, Branch |
+
+**MMID (Mobile Money Identifier):** A 7-digit code used in IMPS transactions to identify the beneficiary's bank account and mobile number.
+
+### 3.11 Commodity Markets
+
+Commodity markets in India are regulated by the **Securities and Exchange Board of India (SEBI)** since September 2015 (merged from Forward Markets Commission).
+
+| Exchange | Established | Commodities Traded |
+|----------|-------------|-------------------|
+| **MCX (Multi Commodity Exchange)** | 2003 | Bullion (gold, silver), base metals (copper, zinc), energy (crude oil, natural gas) |
+| **NCDEX (National Commodity & Derivatives Exchange)** | 2003 | Agricultural commodities (soybean, chana, jeera, cotton, guar) |
+| **ICEX (Indian Commodity Exchange)** | 2009 | Bullion, base metals |
+
+**Types of commodity derivatives:**
+- **Futures:** Most common; traders take positions on future prices
+- **Options:** Introduced on select commodities (gold, silver) in 2017
+- **Forward contracts:** Over-the-counter, customised
+
+**Key regulations:**
+- **Warehouse Receipts:** Negotiable instruments (after Warehousing Development and Regulatory Authority — WDRA registration)
+- **Options in commodities:** Permitted since 2017 — European-style options on select commodities
+- **Commodity indices:** MCX iCOMDEX series for benchmarking
+
+### 3.12 Bond Market — Deep Dive
+
+The Indian bond market is one of the largest in Asia, dominated by **Government Securities (G-Secs)** .
+
+| Bond Type | Issuer | Risk | Coupon | Tenure |
+|-----------|--------|------|--------|--------|
+| **G-Secs (Dated)** | Central Government | Sovereign | Fixed/floating | 5-40 years |
+| **State Development Loans (SDLs)** | State Governments | Sovereign | Fixed | 5-30 years |
+| **Treasury Bills** | Central Government | Sovereign | Zero-coupon | Up to 364 days |
+| **Corporate Bonds** | Corporates | Credit risk | Fixed/floating | 1-20 years |
+| **Municipal Bonds** | Urban Local Bodies | Low-medium | Fixed | 3-10 years |
+| **Green Bonds** | Sovereign/Corporate | Sovereign/corporate | Fixed | 5-20 years |
+
+**Bond yield and price relationship:**
+```
+Bond Price ↑ → Yield ↓ (inverse relationship)
+```
+
+**Key bond market participants:**
+- **Primary Dealers (PDs):** Underwrite G-Sec auctions
+- **Foreign Portfolio Investors (FPIs):** Permitted in G-Secs (limits set by RBI)
+- **Insurance companies and Pension Funds:** Major holders of long-term bonds
+- **Mutual Funds:** Hold for liquidity and yield
+
+### 3.13 Stock Market — Key Concepts
+
+| Concept | Explanation |
+|---------|-------------|
+| **Market Capitalisation** | Total market value = Share Price × Outstanding Shares |
+| **Dividend Yield** | (Annual Dividend / Share Price) × 100 |
+| **P/E Ratio** | Price / Earnings per Share — valuation metric |
+| **Book Value** | Net Assets / Outstanding Shares |
+| **Earnings Per Share (EPS)** | Net Profit / Outstanding Shares |
+| **Market Order** | Buy/sell at current market price — immediate execution |
+| **Limit Order** | Buy/sell at specified price — may not execute |
+| **Stop Loss** | Triggers market order when price crosses a threshold |
+| **Circuit Breaker** | Trading halt when index moves beyond preset limits (10%, 15%, 20%) |
+
+**Market capitalisation categories (as per SEBI):**
+| Category | Ranking | Market Cap Threshold |
+|----------|---------|---------------------|
+| **Large Cap** | 1-100 | Top 100 companies by market cap |
+| **Mid Cap** | 101-250 | 101st to 250th company |
+| **Small Cap** | 251 onwards | Beyond 250th rank |
+
+### 3.14 SBI PO / IBPS SO / RBI Grade B Exam Tips for Financial Markets
+
+| Exam | Key Topics | Strategy |
+|------|-----------|----------|
+| **RBI Grade B** | Money market instruments and their maturities, SEBI functions, bond yields, derivatives, IRDA norms | Create a maturity matrix for all instruments; study recent SEBI regulations |
+| **SBI PO** | IPO process and categories, stock exchanges, mutual fund types, insurance, T+1 settlement | Focus on numerical problems (yield, NAV, SIP returns); memorise launch years |
+| **IBPS SO** | SEBI regulations (ICDR, LODR, PIT), derivatives basics, commodity exchanges, bond types | Practice option payoff calculations; compare capital vs money market instruments |
+| **Common tips** | Know the difference between all instrument types; memorise years (SEBI, IRDA, NSE, BSE); understand the IPO book-building process | Use mnemonics for IPO allocation percentages (50-15-35 for QIB-NII-RII) |
+
+---
+
+## TypeScript Example: Bond Portfolio Yield Calculator
+
+```typescript
+interface BondHolding {
+  faceValue: number;
+  couponRate: number;
+  marketPrice: number;
+  maturityYears: number;
+  quantity: number;
+}
+
+interface BondPortfolioResult {
+  bonds: BondHolding[];
+  totalInvestment: number;
+  weightedAverageCoupon: number;
+  weightedAverageYTM: number;
+  annualIncome: number;
+}
+
+function analyseBondPortfolio(holdings: BondHolding[]): BondPortfolioResult {
+  let totalInvestment = 0;
+  let totalAnnualIncome = 0;
+  let totalWeightYTM = 0;
+
+  for (const h of holdings) {
+    const investment = h.marketPrice * h.quantity;
+    totalInvestment += investment;
+    const annualCoupon = h.faceValue * (h.couponRate / 100) * h.quantity;
+    totalAnnualIncome += annualCoupon;
+
+    // Approximate YTM
+    const capitalGain = (h.faceValue - h.marketPrice) / h.maturityYears;
+    const avgPrice = (h.faceValue + h.marketPrice) / 2;
+    const ytm = ((h.faceValue * (h.couponRate / 100) + capitalGain) / avgPrice) * 100;
+    totalWeightYTM += ytm * investment;
+  }
+
+  return {
+    bonds: holdings,
+    totalInvestment: Math.round(totalInvestment),
+    weightedAverageCoupon: Math.round((totalAnnualIncome / totalInvestment) * 10000) / 100,
+    weightedAverageYTM: Math.round((totalWeightYTM / totalInvestment) * 100) / 100,
+    annualIncome: Math.round(totalAnnualIncome),
+  };
+}
+
+const bondPortfolio = analyseBondPortfolio([
+  { faceValue: 100, couponRate: 7.5, marketPrice: 98, maturityYears: 5, quantity: 100 },
+  { faceValue: 100, couponRate: 8.2, marketPrice: 102, maturityYears: 10, quantity: 50 },
+  { faceValue: 100, couponRate: 6.8, marketPrice: 95, maturityYears: 3, quantity: 200 },
+]);
+
+console.log(`Investment: ₹${bondPortfolio.totalInvestment}, Annual Income: ₹${bondPortfolio.annualIncome}`);
+console.log(`Avg Coupon: ${bondPortfolio.weightedAverageCoupon}%, Avg YTM: ${bondPortfolio.weightedAverageYTM}%`);
 ```
 
 ---
@@ -1050,30 +1398,44 @@ IRDA mandates that all insurance companies maintain a minimum solvency margin of
 18. In options trading, the premium received by the seller is called _________.
 19. The SEBI regulation that governs insider trading is PIT which stands for _________.
 20. A _________ fund is a mutual fund scheme where units can be bought or sold at any time at prevailing NAV.
+21. IMPS was launched by _________ in 2010.
+22. The minimum transaction amount for RTGS is ₹_________ lakh.
+23. MCX stands for _________.
+24. MMID is a _________ digit code used in IMPS transactions.
+25. According to SEBI classification, companies ranked 101st to 250th by market cap are classified as _________.
 
 ### Section C: True or False
 
-21. SEBI was established in 1990. (True/False)
-22. Treasury Bills are coupon-bearing instruments. (True/False)
-23. A Call Option gives the buyer the right to sell the underlying asset. (True/False)
-24. BSE is older than NSE. (True/False)
-25. In an IPO, merchant bankers are mandatory intermediaries. (True/False)
-26. ELSS (Equity Linked Savings Scheme) has a lock-in period of 3 years. (True/False)
-27. Commercial Paper is a secured instrument. (True/False)
-28. Retail investors get 35% reservation in an IPO. (True/False)
-29. The settlement cycle in India is currently T+3. (True/False)
-30. A debenture is always secured against company assets. (True/False)
+26. SEBI was established in 1990. (True/False)
+27. Treasury Bills are coupon-bearing instruments. (True/False)
+28. A Call Option gives the buyer the right to sell the underlying asset. (True/False)
+29. BSE is older than NSE. (True/False)
+30. In an IPO, merchant bankers are mandatory intermediaries. (True/False)
+31. ELSS (Equity Linked Savings Scheme) has a lock-in period of 3 years. (True/False)
+32. Commercial Paper is a secured instrument. (True/False)
+33. Retail investors get 35% reservation in an IPO. (True/False)
+34. The settlement cycle in India is currently T+3. (True/False)
+35. A debenture is always secured against company assets. (True/False)
+36. MCX and NCDEX are the two main commodity exchanges in India. (True/False)
+37. Bond prices and yields share a direct relationship. (True/False)
+38. NSE was established before BSE. (True/False)
+39. The commodity derivatives market in India is now regulated by SEBI. (True/False)
+40. IMPS is available only during banking hours. (True/False)
 
 ### Answer Key
 
+| Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
+|---|--------|---|--------|---|--------|---|--------|---|--------|
 | Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
 |---|--------|---|--------|---|--------|---|--------|---|--------|
 | 1 | b (1875) | 2 | b (National Stock Exchange Fifty) | 3 | b (Option) | 4 | c (364 days) | 5 | c (₹2,00,000) |
 | 6 | b (Mumbai) | 7 | c (Conducting monetary policy) | 8 | b (9:15 AM to 3:30 PM) | 9 | c (Government Securities) | 10 | c (Hyderabad) |
 | 11 | Application Supported by Blocked Amount | 12 | Strike | 13 | Book Building | 14 | 2.25% | 15 | Zero-coupon |
 | 16 | Money | 17 | NSE Indices Ltd (formerly IISL) | 18 | Option premium | 19 | Prohibition of Insider Trading | 20 | Open-ended |
-| 21 | False (1988) | 22 | False (zero-coupon) | 23 | False (right to buy) | 24 | True | 25 | True |
-| 26 | True | 27 | False (unsecured) | 28 | True | 29 | False (T+1) | 30 | False (debentures are usually unsecured) |
+| 21 | NPCI | 22 | 2 | 23 | Multi Commodity Exchange | 24 | 7 | 25 | Mid Cap |
+| 26 | False (1988) | 27 | False (zero-coupon) | 28 | False (right to buy) | 29 | True | 30 | True |
+| 31 | True | 32 | False (unsecured) | 33 | True | 34 | False (T+1) | 35 | False (debentures are usually unsecured) |
+| 36 | True | 37 | False (inverse) | 38 | False (BSE 1875, NSE 1992) | 39 | True | 40 | False (24×7) |
 
 ---
 

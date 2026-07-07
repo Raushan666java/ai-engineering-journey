@@ -1012,6 +1012,263 @@ console.log(`Underutilized: ${analysis.underutilizedSectors.join(", ")}`);
 
 ---
 
+### 4.6 Public Finance — Nature and Scope
+
+**Public Finance** is the study of government's income and expenditure activities and their impact on the economy.
+
+| Aspect | Description |
+|--------|-------------|
+| **Nature** | Branch of Economics dealing with government revenue, expenditure, and debt management |
+| **Scope** | Public revenue, public expenditure, public debt, financial administration, federal finance |
+| **Objective** | Efficient allocation of resources, equitable distribution of income, economic stabilisation |
+| **Key questions** | What goods should government provide? How to tax? How much to borrow? |
+
+**Scope of Public Finance:**
+
+```mermaid
+flowchart TD
+    A[Public Finance] --> B[Public Revenue]
+    A --> C[Public Expenditure]
+    A --> D[Public Debt]
+    A --> E[Financial Administration]
+    A --> F[Federal Finance]
+    
+    B --> B1[Tax Revenue<br/>Direct & Indirect]
+    B --> B2[Non-Tax Revenue<br/>Fees, Fines, Dividends]
+    
+    C --> C1[Development Expenditure]
+    C --> C2[Non-Development Expenditure]
+    
+    D --> D3[Internal Debt]
+    D --> D4[External Debt]
+    
+    E --> E5[Budget Formulation]
+    E --> E6[Audit & Control]
+    
+    F --> F7[Centre-State<br/>Financial Relations]
+    
+    style A fill:#1a73e8,color:#fff
+    style B1 fill:#4CAF50,color:#fff
+    style B2 fill:#4CAF50,color:#fff
+```
+
+### 4.7 Canons of Taxation
+
+The **Canons of Taxation** were laid down by **Adam Smith** in his book *"The Wealth of Nations"* (1776). Modern economists have added more canons.
+
+| Canon | Description | Adam Smith's Original |
+|-------|-------------|-----------------------|
+| **Canon of Equity** | Taxes should be based on ability to pay — rich pay more | Yes |
+| **Canon of Certainty** | Taxpayer must know how much, when, and how to pay | Yes |
+| **Canon of Convenience** | Method and timing of payment should be convenient | Yes |
+| **Canon of Economy** | Cost of collection should be less than revenue collected | Yes |
+| **Canon of Productivity** | Tax should yield sufficient revenue | No (added later) |
+| **Canon of Elasticity** | Tax revenue should increase automatically with income | No (added later) |
+| **Canon of Diversity** | Multiple tax sources reduce dependence on any single tax | No (added later) |
+| **Canon of Simplicity** | Tax system should be simple and understandable | No (added later) |
+
+**Mnemonic for Adam Smith's four canons:** **E-C-C-E** (Equity, Certainty, Convenience, Economy)
+
+### 4.8 Taxable Capacity and Tax Incidence
+
+**Taxable Capacity** is the maximum amount of tax a society can bear without adversely affecting its productive capacity and standard of living.
+
+| Type | Definition | Factors |
+|------|------------|---------|
+| **Absolute Taxable Capacity** | Maximum total tax the nation can pay | National income, per capita income, wealth distribution |
+| **Relative Taxable Capacity** | Ability to pay compared to other nations/regions | Tax-to-GDP ratio, per capita tax burden |
+| **India's Tax-GDP Ratio** | ~12% (low compared to OECD average of ~34%) | Large informal economy, tax exemptions, low compliance |
+
+**Tax Incidence** refers to who actually bears the burden of a tax.
+
+| Concept | Meaning | Example |
+|---------|---------|---------|
+| **Impact of Tax** | Who pays the tax initially (point of levy) | GST paid by manufacturer/seller |
+| **Incidence of Tax** | Who ultimately bears the burden | GST shifted to final consumer |
+| **Shifting of Tax** | Process of transferring tax burden | Manufacturer adds GST to price → consumer pays |
+| **Forward Shifting** | Burden shifted forward (supplier → consumer) | Excise duty included in product price |
+| **Backward Shifting** | Burden shifted backward (buyer → seller/producer) | Demanding lower price due to tax |
+
+### 4.9 Public Expenditure — Canons and Classification
+
+**Canons of Public Expenditure** (Findlay Shirras):
+
+| Canon | Description |
+|-------|-------------|
+| **Canon of Benefit** | Expenditure should yield maximum social benefit |
+| **Canon of Economy** | No wasteful or extravagant spending |
+| **Canon of Sanction** | All expenditure must have proper legal authorisation |
+| **Canon of Surplus** | Avoid deficit financing wherever possible |
+| **Canon of Elasticity** | Expenditure should be flexible — increase in crises, decrease in normal times |
+
+**Classification of Public Expenditure:**
+
+| Basis | Categories |
+|-------|------------|
+| **By Function** | Development (infrastructure, education) vs Non-development (defence, interest payments) |
+| **By Benefit** | General (national defence) vs Specific (roads, hospitals) |
+| **By Impact** | Revenue (consumption, recurring) vs Capital (asset-creating) |
+| **By Authority** | Central, State, Local |
+
+### 4.10 Public Debt — Internal vs External
+
+**Public Debt** refers to borrowings by the government from internal and external sources.
+
+```mermaid
+flowchart TD
+    A[Public Debt] --> B[Internal Debt]
+    A --> C[External Debt]
+    
+    B --> D[Market Borrowings<br/>G-Secs, T-Bills]
+    B --> E[Small Savings<br/>PPF, NSC, Post Office]
+    B --> F[Compulsory Deposits]
+    B --> G[RBI's WMA]
+    
+    C --> H[Multilateral Agencies<br/>World Bank, ADB]
+    C --> I[Bilateral Loans<br/>Foreign Governments]
+    C --> J[Sovereign Bonds<br/>Masala Bonds]
+    C --> K[IMF Borrowings]
+    
+    style A fill:#1a73e8,color:#fff
+    style B fill:#4CAF50,color:#fff
+    style C fill:#ff9800,color:#fff
+```
+
+| Aspect | Internal Debt | External Debt |
+|--------|---------------|---------------|
+| **Currency** | Domestic currency (₹) | Foreign currency ($, €, ¥) |
+| **Lenders** | Domestic institutions and citizens | Foreign governments, multilateral agencies |
+| **Interest outflow** | Within the country (transfer) | Outside the country (drain) |
+| **Risk** | No exchange rate risk | Exchange rate risk (depreciation increases burden) |
+| **Control** | Government has more control | Subject to external conditions |
+| **Examples** | G-Secs, T-Bills, PPF, NSC | World Bank loans, ADB loans, bilateral debt |
+| **India's composition** | ~95% of total debt | ~5% of total debt |
+
+**Methods of Debt Redemption:**
+
+| Method | Description |
+|--------|-------------|
+| **Refunding** | Raising new loans to repay old loans (debt rollover) |
+| **Sinking Fund** | Setting aside a fixed sum annually in a separate fund to repay debt at maturity |
+| **Conversion** | Changing terms of existing debt (lowering interest rate, extending maturity) |
+| **Repudiation** | Government refuses to pay (rare, damages creditworthiness) |
+| **Capital Levy** | One-time wealth tax to repay war/post-war debt |
+| **Surplus Budgets** | Using revenue surpluses to repay debt |
+| **Terminal Annuity** | Repaying principal and interest through equal annual instalments |
+
+**Indian government debt composition:** ~95% internal, ~5% external. Total debt-to-GDP ratio is around 55-60% for the central government.
+
+### 4.11 Budgetary Procedure in India
+
+The Union Budget follows a systematic procedure:
+
+```mermaid
+flowchart TD
+    A[Preparation<br/>by Ministry of Finance<br/>August - January] --> B[Pre-Budget<br/>Consultations]
+    B --> C[Receipt of<br/>Departmental Estimates]
+    C --> D[Finalisation by<br/>Finance Minister]
+    D --> E[Presentation in<br/>Parliament<br/>February 1]
+    E --> F[General Discussion<br/>Lok Sabha<br/>3-4 days]
+    F --> G[Voting on Demands<br/>for Grants<br/>Guillotine]
+    G --> H[Passing of<br/>Appropriation Bill<br/>Article 114]
+    H --> I[Passing of<br/>Finance Bill<br/>Article 110]
+    I --> J[Implementation<br/>April 1 - March 31]
+    J --> K[Audit by CAG<br/>Article 151]
+    
+    style A fill:#1a73e8,color:#fff
+    style E fill:#4CAF50,color:#fff
+    style K fill:#ff9800,color:#fff
+```
+
+| Stage | Timeline | Description |
+|-------|----------|-------------|
+| **Preparation** | August - January | Ministry of Finance prepares estimates with inputs from all ministries |
+| **Presentation** | February 1 | Finance Minister presents Budget in Lok Sabha (since 2017, advanced from February 28) |
+| **General Discussion** | 3-4 days post-presentation | MPs discuss broad principles and policies |
+| **Voting on Demands** | March / April | Guillotine — all outstanding demands are voted together without discussion |
+| **Appropriation Bill** | Before March 31 | Article 114 — authorises withdrawal of money from Consolidated Fund |
+| **Finance Bill** | By March 31 | Article 110 — contains tax proposals |
+| **Audit** | After implementation | Comptroller and Auditor General (CAG) audits accounts (Article 151) |
+
+### 4.12 Comparison: Direct vs Indirect Taxes
+
+| Aspect | Direct Tax | Indirect Tax |
+|--------|-----------|--------------|
+| **Incidence** | Cannot be shifted — paid directly by taxpayer | Can be shifted — ultimately borne by consumer |
+| **Examples** | Income Tax, Corporation Tax, Capital Gains Tax | GST, Customs Duty, Excise Duty |
+| **Administration** | CBDT (Central Board of Direct Taxes) | CBIC (Central Board of Indirect Taxes and Customs) |
+| **Equity** | Progressive — based on ability to pay | Regressive — uniform rate regardless of income |
+| **Inflationary impact** | Reduces disposable income (anti-inflationary) | Increases prices (potentially inflationary) |
+| **Compliance cost** | Higher — requires detailed record-keeping | Lower — collected at point of sale |
+| **Tax evasion** | Higher — under-reporting of income | Lower — embedded in price |
+| **Convenience** | Paid annually/lump-sum | Paid in small amounts with each purchase |
+| **India's share** | ~55% of total tax revenue | ~45% of total tax revenue |
+| **Base** | Income, wealth, profits | Consumption, production, trade |
+
+### 4.13 RBI Grade B / SBI PO / IBPS SO Exam Tips for Budget & Schemes
+
+| Exam | Key Topics | Strategy |
+|------|-----------|----------|
+| **RBI Grade B** | Fiscal deficit targets, FRBM Act, public debt composition, canons of taxation, GST structure | Focus on fiscal consolidation timeline; understand economic survey analysis of deficits |
+| **SBI PO** | Major government schemes (launch year, implementing ministry, features), union budget concepts, direct vs indirect taxes | Create a scheme chart (year + ministry + feature); memorise all FY numbers; practice deficit calculations |
+| **IBPS SO** | Tax incidence, taxable capacity, public debt (internal vs external), budget procedure (Appropriation Bill vs Finance Bill) | Master the difference between revenue and capital items; learn the budget timeline stages |
+| **Common tips** | Schemes launched between 2014-2025 are most frequently asked; know implementing ministries; understand GST compensation mechanism | Use mnemonics for scheme names; practice quantitative questions on deficits and tax calculations |
+
+---
+
+## TypeScript Example: Public Debt Servicing Calculator
+
+```typescript
+interface DebtServicingResult {
+  totalDebt: number;
+  internalDebt: number;
+  externalDebt: number;
+  averageInterestRate: number;
+  annualInterestOutflow: number;
+  debtToGdpRatio: number;
+  gdp: number;
+  interestToRevenueRatio: number;
+  totalRevenue: number;
+}
+
+function calculateDebtServicing(
+  totalDebt: number,
+  internalPercent: number,
+  externalPercent: number,
+  avgInternalRate: number,
+  avgExternalRate: number,
+  gdp: number,
+  totalRevenue: number
+): DebtServicingResult {
+  const internalDebt = totalDebt * (internalPercent / 100);
+  const externalDebt = totalDebt * (externalPercent / 100);
+  const interestOutflow = internalDebt * (avgInternalRate / 100) + externalDebt * (avgExternalRate / 100);
+  const avgInterest = (interestOutflow / totalDebt) * 100;
+  const debtGdpRatio = (totalDebt / gdp) * 100;
+  const interestToRev = (interestOutflow / totalRevenue) * 100;
+
+  return {
+    totalDebt: Math.round(totalDebt),
+    internalDebt: Math.round(internalDebt),
+    externalDebt: Math.round(externalDebt),
+    averageInterestRate: Math.round(avgInterest * 100) / 100,
+    annualInterestOutflow: Math.round(interestOutflow),
+    debtToGdpRatio: Math.round(debtGdpRatio * 100) / 100,
+    gdp: Math.round(gdp),
+    interestToRevenueRatio: Math.round(interestToRev * 100) / 100,
+    totalRevenue: Math.round(totalRevenue),
+  };
+}
+
+const debt = calculateDebtServicing(15000000, 95, 5, 7.2, 4.5, 35000000, 4200000);
+console.log(`Internal: ₹${debt.internalDebt}, External: ₹${debt.externalDebt}`);
+console.log(`Interest outflow: ₹${debt.annualInterestOutflow} Cr, Debt/GDP: ${debt.debtToGdpRatio}%`);
+// Output: Internal: ₹14250000, External: ₹750000
+// Output: Interest outflow: ₹1066500 Cr, Debt/GDP: 42.86%
+```
+
+---
+
 ## Summary
 
 - **PM Jan Dhan Yojana** (2014) set a Guinness World Record for most bank accounts opened in a week (over 1.5 crore). It remains the world's largest financial inclusion programme.
@@ -1121,6 +1378,91 @@ Capital expenditure creates assets (highway, building, machinery). Salaries, int
 
 ---
 
+**Q6.** Which of the following is NOT one of Adam Smith's canons of taxation?
+
+a) Canon of Equity
+b) Canon of Certainty
+c) Canon of Productivity
+d) Canon of Economy
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer:** c) Canon of Productivity
+
+Adam Smith's four canons are: Equity, Certainty, Convenience, and Economy. Productivity, Elasticity, Diversity, and Simplicity were added by later economists.
+</details>
+
+---
+
+**Q7.** Tax incidence refers to:
+
+a) Who pays the tax initially
+b) Who ultimately bears the burden of the tax
+c) The total tax revenue collected
+d) The process of tax collection
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer:** b) Who ultimately bears the burden of the tax
+
+Incidence of tax is the final resting point of the tax burden. Impact of tax is who pays it initially (point of levy). Shifting transfers the burden from impact to incidence.
+</details>
+
+---
+
+**Q8.** Internal debt differs from external debt in that:
+
+a) Internal debt carries higher interest rates
+b) Internal debt is denominated in domestic currency
+c) External debt cannot be refinanced
+d) Internal debt is always short-term
+
+<details>
+<summary>Show Answer</summary>
+
+**Answer:** b) Internal debt is denominated in domestic currency
+
+Internal debt (G-Secs, T-Bills, PPF) is in Indian rupees and owed to domestic lenders. External debt (World Bank, ADB loans) is in foreign currency, carrying exchange rate risk.
+</details>
+
+---
+
+**Q9.** The Union Budget is presented in Parliament under which Article of the Constitution?
+
+a) Article 110
+b) Article 112
+c) Article 114
+d) Article 151
+
+<details>
+<summary>Answer</summary>
+
+**Answer:** b) Article 112
+
+Article 112 requires the President to cause the Annual Financial Statement (Budget) to be laid before Parliament. Article 114 deals with the Appropriation Bill.
+</details>
+
+---
+
+**Q10.** The Comptroller and Auditor General (CAG) audits government accounts under which Article?
+
+a) Article 110
+b) Article 112
+c) Article 148
+d) Article 151
+
+<details>
+<summary>Answer</summary>
+
+**Answer:** d) Article 151
+
+CAG submits audit reports to the President under Article 151, which are then placed before Parliament. Article 148 deals with the appointment of CAG.
+</details>
+
+---
+
 ## Exercises
 
 ### Section A: Multiple Choice Questions
@@ -1170,19 +1512,29 @@ Capital expenditure creates assets (highway, building, machinery). Salaries, int
 18. Atmanirbhar Bharat package was announced in _________ 2020.
 19. The PM Kisan Samman Nidhi provides financial benefit of ₹_________ per year.
 20. Under the FRBM escape clause, the government can exceed deficit target by _________% of GDP.
+21. Adam Smith laid down four canons of taxation: Equity, Certainty, _________, and Economy.
+22. The difference between impact of tax and _________ of tax is the process of tax shifting.
+23. Internal debt in India accounts for approximately _________% of total public debt.
+24. The Union Budget is presented on _________ each year since 2017.
+25. The Appropriation Bill is governed by Article _________ of the Constitution.
 
 ### Section C: True or False
 
-21. PM Jan Dhan Yojana provides a free accident insurance cover of ₹1 lakh. (True/False)
-22. Under GST, the rate for essential food items like milk and eggs is 5%. (True/False)
-23. The Mudra Yojana provides collateral-free loans. (True/False)
-24. PM Fasal Bima Yojana covers both Kharif and Rabi crops. (True/False)
-25. Disinvestment proceeds are classified as revenue receipts. (True/False)
-26. PM Awas Yojana has both Urban and Gramin components. (True/False)
-27. The CGST rate is always higher than the SGST rate on intrastate supplies. (True/False)
-28. Swachh Bharat Mission achieved ODF India status in 2019. (True/False)
-29. Primary Deficit = Fiscal Deficit + Interest Payments. (True/False)
-30. The 101st Amendment enabled the introduction of GST in India. (True/False)
+26. PM Jan Dhan Yojana provides a free accident insurance cover of ₹1 lakh. (True/False)
+27. Under GST, the rate for essential food items like milk and eggs is 5%. (True/False)
+28. The Mudra Yojana provides collateral-free loans. (True/False)
+29. PM Fasal Bima Yojana covers both Kharif and Rabi crops. (True/False)
+30. Disinvestment proceeds are classified as revenue receipts. (True/False)
+31. PM Awas Yojana has both Urban and Gramin components. (True/False)
+32. The CGST rate is always higher than the SGST rate on intrastate supplies. (True/False)
+33. Swachh Bharat Mission achieved ODF India status in 2019. (True/False)
+34. Primary Deficit = Fiscal Deficit + Interest Payments. (True/False)
+35. The 101st Amendment enabled the introduction of GST in India. (True/False)
+36. Direct taxes are generally progressive in nature. (True/False)
+37. The incidence of indirect taxes falls on the producer. (True/False)
+38. Public debt in India is primarily external (~95%). (True/False)
+39. A sinking fund is a method of debt redemption. (True/False)
+40. The Finance Bill contains the tax proposals of the government. (True/False)
 
 ### Answer Key
 
@@ -1192,8 +1544,10 @@ Capital expenditure creates assets (highway, building, machinery). Salaries, int
 | 6 | b (Inter-state supplies) | 7 | d (₹1 crore) | 8 | b (Women from BPL families) | 9 | d (₹5 lakh) | 10 | b (Rev Exp — Rev Rec) |
 | 11 | ₹10,000 | 12 | Kishore | 13 | CGST | 14 | 4% | 15 | FRBM |
 | 16 | 6.5% | 17 | July 15 | 18 | May | 19 | ₹6,000 | 20 | 0.5% |
-| 21 | False (₹2 lakh) | 22 | False (0% Nil) | 23 | True | 24 | True | 25 | False (capital receipt) |
-| 26 | True | 27 | False (equal — CGST = SGST) | 28 | True | 29 | False (Fiscal — Interest) | 30 | True |
+| 21 | Convenience | 22 | incidence | 23 | 95% | 24 | February 1 | 25 | 114 |
+| 26 | False (₹2 lakh) | 27 | False (0% Nil) | 28 | True | 29 | True | 30 | False (capital receipt) |
+| 31 | True | 32 | False (equal — CGST = SGST) | 33 | True | 34 | False (Fiscal — Interest) | 35 | True |
+| 36 | True | 37 | False (on the consumer) | 38 | False (~95% internal) | 39 | True | 40 | True |
 
 ---
 

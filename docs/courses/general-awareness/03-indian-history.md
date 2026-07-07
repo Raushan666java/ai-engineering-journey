@@ -739,6 +739,294 @@ The historic Lahore session of INC (December 1929) under the presidency of Jawah
 
 ---
 
+### 3.12 World History Timeline — Key Events
+
+```mermaid
+timeline
+    title World History: Major Events at a Glance
+    3300 BCE : Indus Valley / Mesopotamian civilizations
+    2500 BCE : Egyptian pyramid construction
+    776 BCE  : First Olympic Games in Greece
+    509 BCE  : Roman Republic established
+    322 BCE  : Mauryan Empire founded by Chandragupta
+    27 BCE   : Roman Empire begins (Augustus)
+    570 CE   : Prophet Muhammad born
+    800 CE   : Charlemagne crowned Holy Roman Emperor
+    1066    : Norman Conquest of England (Battle of Hastings)
+    1215    : Magna Carta signed in England
+    1492    : Columbus reaches America
+    1526    : Mughal Empire founded (Babur)
+    1757    : Battle of Plassey — British rule in India begins
+    1776    : American Declaration of Independence
+    1789    : French Revolution begins
+    1857    : First War of Indian Independence
+    1914    : World War I begins
+    1917    : Russian Revolution
+    1939    : World War II begins
+    1945    : UN established; Atomic bomb dropped
+    1947    : India gains independence
+    1991    : Soviet Union dissolves; India liberalises
+```
+
+### 3.13 Major Wars and Revolutions — Quick Reference
+
+| War/Revolution | Year(s) | Combatants | Outcome/Significance |
+|----------------|---------|------------|---------------------|
+| Hundred Years' War | 1337–1453 | England vs France | France expelled England from continental territory |
+| American Revolution | 1775–1783 | American colonies vs Britain | USA gained independence (Treaty of Paris, 1783) |
+| French Revolution | 1789–1799 | French people vs Monarchy | End of monarchy; rise of Napoleon; "Liberty, Equality, Fraternity" |
+| Napoleonic Wars | 1803–1815 | France vs European coalitions | Napoleon defeated at Waterloo (1815); Congress of Vienna |
+| American Civil War | 1861–1865 | Union (North) vs Confederacy (South) | Abolition of slavery; USA remained unified |
+| World War I | 1914–1918 | Allies vs Central Powers | ~16M deaths; Treaty of Versailles; League of Nations |
+| Russian Revolution | 1917 | Bolsheviks vs Provisional Govt | First communist state (USSR); Lenin came to power |
+| World War II | 1939–1945 | Allies vs Axis Powers | ~70M deaths; Atomic bombs on Hiroshima/Nagasaki; UN formed |
+| Cold War | 1947–1991 | USA vs USSR (ideological) | Nuclear arms race; Space race; USSR dissolved in 1991 |
+| Gulf War | 1990–1991 | Iraq vs US-led coalition | Iraq expelled from Kuwait |
+| War on Terror | 2001–present | US-led coalition vs Terror groups | Afghanistan invasion; ISIS rise; Bin Laden killed (2011) |
+
+### 3.14 Independence Dates of Key Countries
+
+| Country | Independence Date | Former Colonial Power | Key Figure |
+|---------|------------------|----------------------|------------|
+| USA | 4 July 1776 | Britain | George Washington |
+| India | 15 August 1947 | Britain | Mahatma Gandhi, Nehru |
+| Pakistan | 14 August 1947 | Britain | Muhammad Ali Jinnah |
+| Bangladesh | 16 December 1971 | Pakistan | Sheikh Mujibur Rahman |
+| Sri Lanka | 4 February 1948 | Britain | D.S. Senanayake |
+| Myanmar | 4 January 1948 | Britain | Aung San |
+| Indonesia | 17 August 1945 | Netherlands | Sukarno |
+| Philippines | 12 June 1898 | Spain/USA | Emilio Aguinaldo |
+| Vietnam | 2 September 1945 | France | Ho Chi Minh |
+| Kenya | 12 December 1963 | Britain | Jomo Kenyatta |
+| Nigeria | 1 October 1960 | Britain | Nnamdi Azikiwe |
+| South Africa | 31 May 1961 (Republic) | Britain | Nelson Mandela (apartheid ended 1994) |
+| Egypt | 22 February 1958 | Britain | Gamal Abdel Nasser |
+| Brazil | 7 September 1822 | Portugal | Dom Pedro I |
+| Australia | 1 January 1901 (Federation) | Britain | Edmund Barton |
+
+### 3.15 Governors-General and Viceroys of India
+
+| Name | Tenure | Key Events Under Their Rule |
+|------|--------|----------------------------|
+| **Governors-General of Bengal** | | |
+| Robert Clive | 1757–1760, 1765–1767 | Battle of Plassey (1757); Dual system in Bengal |
+| Warren Hastings | 1774–1785 | First Governor-General of India (1774); Regulating Act 1773; Rohilla War |
+| Lord Cornwallis | 1786–1793 | Permanent Settlement of Bengal (1793); Civil services reforms |
+| Lord Wellesley | 1798–1805 | Subsidiary Alliance system; Fourth Mysore War (Tipu died 1799) |
+| Lord William Bentinck | 1828–1835 | Abolished Sati (1829); English Education Act; Macaulay's Minute |
+| Lord Dalhousie | 1848–1856 | Doctrine of Lapse; annexed Satara, Jhansi, Nagpur; Railway/Telegraph intro |
+| Lord Canning | 1856–1862 | Last Governor-General (till 1858); Revolt of 1857; became first Viceroy |
+| **Viceroys** | | |
+| Lord Canning | 1858–1862 | First Viceroy; Government of India Act 1858; Indian Councils Act 1861 |
+| Lord Ripon | 1880–1884 | Local Self-Government; Ilbert Bill (controversy); Factory Act 1881 |
+| Lord Curzon | 1899–1905 | Partition of Bengal (1905); Archaeological Survey of India |
+| Lord Minto | 1905–1910 | Minto-Morley Reforms 1909 (Indian Councils Act) |
+| Lord Hardinge | 1910–1916 | Capital moved from Calcutta to Delhi (1911); WWI began |
+| Lord Chelmsford | 1916–1921 | Montagu-Chelmsford Reforms 1919; Government of India Act 1919; Jallianwala Bagh (1919) |
+| Lord Reading | 1921–1926 | Non-Cooperation Movement; Chauri Chaura incident (1922) |
+| Lord Irwin | 1926–1931 | Simon Commission (1928); Dandi March (1930); Gandhi-Irwin Pact (1931) |
+| Lord Willingdon | 1931–1936 | Second Round Table Conference; Communal Award (1932) |
+| Lord Linlithgow | 1936–1943 | Provincial elections 1937; WWII; Quit India Movement (1942) |
+| Lord Wavell | 1943–1947 | Wavell Plan; Simla Conference; INA trials |
+| Lord Mountbatten | 1947–1948 | Last Viceroy; Partition of India; Independence (15 Aug 1947) |
+
+### 3.16 Mughal Literature and Historical Monuments
+
+**Mughal Literature:**
+
+| Work | Author | Emperor/Ruler | Description |
+|------|--------|--------------|-------------|
+| Baburnama | Babur | Babur | Autobiography of Babur in Chagatai Turkish |
+| Humayunama | Gulbadan Begum | Humayun | Biography of Humayun by his sister |
+| Akbarnama | Abul Fazl | Akbar | Official history of Akbar's reign (3 volumes) |
+| Ain-i-Akbari | Abul Fazl | Akbar | Administrative details of Akbar's empire |
+| Padshahnama | Abdul Hamid Lahori | Shah Jahan | Official history of Shah Jahan's reign |
+| Shahjahannama | Inayat Khan | Shah Jahan | Another history of Shah Jahan's reign |
+| Alamgirnama | Muhammad Kazim | Aurangzeb | History of Aurangzeb's first decade |
+| Memoirs of Jahangir | Jahangir | Jahangir | Autobiography of Emperor Jahangir |
+| Tuzuk-i-Jahangiri | Jahangir | Jahangir | Detailed court memoir |
+
+**UNESCO World Heritage Monuments in India (Selected):**
+
+| Monument | Location | Built by | Period | Key Feature |
+|----------|----------|----------|--------|-------------|
+| Taj Mahal | Agra | Shah Jahan | 1632–1653 | White marble mausoleum; one of 7 Wonders |
+| Qutub Minar | Delhi | Qutb-ud-din Aibak | 1193 | Tallest brick minaret in the world (73 m) |
+| Red Fort | Delhi | Shah Jahan | 1639–1648 | Red sandstone fort; venue for PM's I-Day address |
+| Ajanta Caves | Aurangabad | Buddhist monks | 2nd C BCE–6th C CE | 29 caves with Buddhist paintings and sculptures |
+| Ellora Caves | Aurangabad | Various rulers | 6th–10th C CE | 34 caves (Buddhist, Hindu, Jain); Kailasa Temple |
+| Khajuraho Temples | Madhya Pradesh | Chandela dynasty | 950–1050 CE | 22 temples; famous for erotic sculptures |
+| Sun Temple | Konark, Odisha | Narasimhadeva I | 1250 CE | Chariot-shaped temple with 24 wheels |
+| Hampi Ruins | Karnataka | Vijayanagara Empire | 14th–16th C | Largest open-air museum; Virupaksha Temple |
+| Mahabalipuram | Tamil Nadu | Pallava dynasty | 7th–8th C | Shore Temple; Rathas; Descent of the Ganges |
+| Sanchi Stupa | Madhya Pradesh | Ashoka (built) | 3rd C BCE | Great Stupa; Buddhist pilgrimage site |
+
+### 3.17 Socio-Religious Movements (19th Century)
+
+| Movement | Founder | Year | Key Beliefs/Impact |
+|----------|---------|------|-------------------|
+| Brahmo Samaj | Raja Ram Mohan Roy | 1828 | Monotheism; opposed idolatry, caste, sati, child marriage |
+| Young Bengal Movement | Henry Derozio | 1820s–30s | Radical thinking; social reform; free expression |
+| Ramakrishna Mission | Swami Vivekananda | 1897 | Universal religion; service to humanity; Vedanta philosophy |
+| Arya Samaj | Dayanand Saraswati | 1875 | "Back to the Vedas"; opposed idolatry and caste; Shuddhi movement |
+| Theosophical Society | H.P. Blavatsky, Col. Olcott | 1875 (in US), 1886 (in India) | Revived interest in Hindu philosophy; Annie Besant led Indian wing |
+| Aligarh Movement | Sir Syed Ahmed Khan | 1875 | Modern education for Muslims; founded Aligarh Muslim University |
+| Prarthana Samaj | Atmaram Pandurang | 1867 | Worship + social reform; focused on inter-caste marriage, widow remarriage |
+| Satyashodhak Samaj | Jyotirao Phule | 1873 | Social equality; against caste oppression; education for lower castes and women |
+| Sikh Reformist Movement | — | 1870s–1900s | Singh Sabha; Akali Movement; purification of Sikh practices |
+| Wahabi Movement | Syed Ahmad Barelvi | 1820s | Islamic revivalism; resistance against British and Sikh rulers |
+
+### 3.18 TypeScript: Indian History Timeline and Quiz Generator
+
+```typescript
+/**
+ * Indian History Chronology Tool
+ * Helps memorise key dates and events for exam preparation
+ */
+interface HistoricalEvent {
+  year: number;
+  event: string;
+  significance: string;
+  category: 'ancient' | 'medieval' | 'modern';
+}
+
+class HistoryChronologyTool {
+  private events: HistoricalEvent[] = [];
+
+  constructor() {
+    this.initializeEvents();
+  }
+
+  private initializeEvents(): void {
+    this.events = [
+      { year: -2500, event: 'Indus Valley Civilization flourishes', significance: 'Earliest urban civilization in India', category: 'ancient' },
+      { year: -322, event: 'Mauryan Empire founded by Chandragupta', significance: 'First great Indian empire', category: 'ancient' },
+      { year: -269, event: 'Ashoka becomes Mauryan emperor', significance: 'Spread Buddhism; Kalinga War', category: 'ancient' },
+      { year: 320, event: 'Gupta Empire begins (Chandragupta I)', significance: 'Golden Age of India', category: 'ancient' },
+      { year: 606, event: 'Harshavardhana crowned', significance: 'Last great Hindu king of North India', category: 'medieval' },
+      { year: 712, event: 'Arab invasion of Sindh by Muhammad bin Qasim', significance: 'First Muslim invasion of India', category: 'medieval' },
+      { year: 1192, event: 'Second Battle of Tarain', significance: 'Prithviraj Chauhan defeated; Delhi Sultanate begins', category: 'medieval' },
+      { year: 1206, event: 'Delhi Sultanate founded by Qutb-ud-din Aibak', significance: 'Start of Muslim rule in North India', category: 'medieval' },
+      { year: 1526, event: 'Battle of Panipat I (Babur defeats Ibrahim Lodi)', significance: 'Mughal Empire founded', category: 'medieval' },
+      { year: 1757, event: 'Battle of Plassey', significance: 'British rule begins in India', category: 'modern' },
+      { year: 1857, event: 'First War of Indian Independence', significance: 'First major revolt against British', category: 'modern' },
+      { year: 1885, event: 'Indian National Congress founded', significance: 'First national political party', category: 'modern' },
+      { year: 1947, event: 'India gains independence', significance: 'End of British colonial rule', category: 'modern' },
+    ];
+  }
+
+  public getEventsByCategory(category: 'ancient' | 'medieval' | 'modern'): HistoricalEvent[] {
+    return this.events.filter(e => e.category === category).sort((a, b) => a.year - b.year);
+  }
+
+  public quizMe(): { question: string; answer: string } {
+    const randomEvent = this.events[Math.floor(Math.random() * this.events.length)];
+    const askAbout = Math.random() > 0.5 ? 'year' : 'event';
+    if (askAbout === 'year') {
+      return {
+        question: `In which year did "${randomEvent.event}" occur?`,
+        answer: `${Math.abs(randomEvent.year)} ${randomEvent.year < 0 ? 'BCE' : 'CE'}`
+      };
+    }
+    return {
+      question: `What happened in ${Math.abs(randomEvent.year)} ${randomEvent.year < 0 ? 'BCE' : 'CE'}?`,
+      answer: randomEvent.event
+    };
+  }
+
+  public chronologicalOrderQuiz(): void {
+    const shuffled = [...this.events].sort(() => Math.random() - 0.5).slice(0, 5);
+    console.log('Arrange these events in chronological order:');
+    shuffled.forEach((e, i) => console.log(`${i + 1}. ${e.event}`));
+    console.log(`(Hint: Years are ${shuffled.sort((a, b) => a.year - b.year).map(e => `${Math.abs(e.year)} ${e.year < 0 ? 'BCE' : 'CE'}`).join(', ')})`);
+  }
+}
+
+const historyTool = new HistoryChronologyTool();
+console.log(historyTool.quizMe());
+historyTool.chronologicalOrderQuiz();
+```
+
+**Exam Quick-Tips for History:**
+- **Battle Chronology:** Plassey (1757) → Buxar (1764) → Anglo-Mysore Wars → Anglo-Maratha Wars → Anglo-Sikh Wars → 1857
+- **Governor-Generals Mnemonic:** "Hastings Cornwallis Wellesley Minto Bentinck Auckland Ellenborough Dalhousie Canning" — HHCC-WW-MB-AE-DC
+- **Viceroys Mnemonic:** "Canning Ripon Lansdowne Curzon Minto Hardinge Chelmsford Reading Irwin Willingdon Linlithgow Wavell Mountbatten"
+- **Socio-Religious Movements Memory:** "Brahma Rama Arya Theos" — Brahmo (1828), Ramakrishna (1897), Arya Samaj (1875), Theosophical (1875/1886)
+
+### 3.19 Additional Solved MCQs (History)
+
+**Q21:** The "Battle of Kanwah" was fought between Babur and:
+
+A) Ibrahim Lodi
+B) Rana Sanga
+C) Mahmud Lodi
+D) Medini Rai
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Rana Sanga (1527)**
+
+After defeating Ibrahim Lodi at Panipat (1526), Babur faced Rana Sanga at Kanwah. This battle established Mughal supremacy in North India.
+</details>
+
+**Q22:** Who was the founder of the "Vijayanagara Empire"?
+
+A) Krishnadevaraya
+B) Devaraya I
+C) Harihara and Bukka
+D) Tirumala
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Harihara and Bukka (1336)**
+
+The Vijayanagara Empire was founded by Harihara I and Bukka Raya I of the Sangama dynasty. Krishnadevaraya (1509–1529) was the greatest ruler of the empire.
+</details>
+
+**Q23:** The "Pitt's India Act" was passed in which year?
+
+A) 1773
+B) 1784
+C) 1813
+D) 1833
+
+<details>
+<summary>Answer</summary>
+**Answer: B) 1784**
+
+Pitt's India Act (1784) established the Board of Control (to oversee the Court of Directors) and strengthened British government control over the East India Company's affairs in India.
+</details>
+
+**Q24:** "Humayun's Tomb" was built by:
+
+A) Humayun himself
+B) Akbar
+C) Hamida Banu Begum
+D) Shah Jahan
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Hamida Banu Begum (Humayun's wife)**
+
+Humayun's Tomb in Delhi was commissioned by his senior widow, Hamida Banu Begum, in 1569–70. It is a UNESCO World Heritage Site and a precursor to the Taj Mahal's architectural style.
+</details>
+
+**Q25:** The "Anand Math" novel was written by:
+
+A) Rabindranath Tagore
+B) Bankim Chandra Chatterjee
+C) Sharatchandra Chattopadhyay
+D) Premchand
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Bankim Chandra Chatterjee**
+
+Anand Math (1882) is a Bengali novel by Bankim Chandra Chatterjee. It is the source of the song "Vande Mataram," which became the national song of India. The novel is set during the Sanyasi Rebellion.
+</details>
+
+---
+
 ## Summary
 
 - The **Indus Valley Civilization** (c. 2500–1750 BCE) was an advanced urban civilization with grid-based towns, drainage systems, and trade networks.
@@ -942,6 +1230,78 @@ D) Medical research
 
 **30.** The Indian independence was granted on 15 August 1947. (T/F)
 
+### Section D: Additional MCQs (Exam Focus)
+
+**31.** The "Vikram Samvat" calendar begins in which year (relative to Gregorian)?
+
+A) 78 CE
+B) 57 BCE
+C) 320 CE
+D) 606 CE
+
+**32.** Who among the following wrote "Mudrarakshasa"?
+
+A) Kalidasa
+B) Vishakhadatta
+C) Banabhatta
+D) Bhasa
+
+**33.** The "Treaty of Salbai" (1782) was signed between the British and:
+
+A) Tipu Sultan
+B) Nizam of Hyderabad
+C) Marathas
+D) Nawab of Bengal
+
+**34.** Who was the first woman President of the Indian National Congress?
+
+A) Sarojini Naidu
+B) Annie Besant
+C) Kamaladevi Chattopadhyay
+D) Aruna Asaf Ali
+
+**35.** The "Din-i-Ilahi" was founded by which Mughal emperor?
+
+A) Babur
+B) Humayun
+C) Akbar
+D) Shah Jahan
+
+**36.** The "Jallianwala Bagh massacre" took place in which city?
+
+A) Delhi
+B) Lahore
+C) Amritsar
+D) Calcutta
+
+**37.** The famous "Dancing Girl" bronze statue belongs to which civilization?
+
+A) Vedic
+B) Mauryan
+C) Indus Valley
+D) Gupta
+
+**38.** Who was known as the "Frontier Gandhi"?
+
+A) Khan Abdul Ghaffar Khan
+B) Maulana Azad
+C) Shahid Bhagat Singh
+D) Lala Lajpat Rai
+
+**39.** The "Edicts of Ashoka" were primarily written in which script?
+
+A) Devanagari
+B) Brahmi
+C) Kharosthi
+D) Sanskrit
+
+**40.** The "Bhakti Movement" saint who was a contemporary of Akbar and wrote "Bījak" was:
+
+A) Tulsidas
+B) Kabir
+C) Guru Nanak
+D) Surdas
+
 ---
 
 <details>
@@ -982,6 +1342,18 @@ D) Medical research
 28. F (Mughal Empire founded in 1526 by Babur; Delhi Sultanate founded in 1206)
 29. F (W.C. Bonnerjee was the first President of INC, 1885)
 30. T
+
+**Section D (31-40):**
+31. B) 57 BCE (Vikram Samvat is 57 years ahead of Gregorian calendar)
+32. B) Vishakhadatta (Mudrarakshasa is a Sanskrit play about Chandragupta Maurya and Chanakya)
+33. C) Marathas (Treaty of Salbai ended the First Anglo-Maratha War; gave British Salsette)
+34. B) Annie Besant (1917, Calcutta session; Sarojini Naidu was the first Indian woman president in 1925)
+35. C) Akbar (1582; syncretic religion combining elements of Islam, Hinduism, Christianity)
+36. C) Amritsar (13 April 1919; General Dyer ordered firing on unarmed civilians)
+37. C) Indus Valley (Mohenjo-Daro; dated to c. 2500 BCE; now in the National Museum, Delhi)
+38. A) Khan Abdul Ghaffar Khan (also called Bacha Khan; founded Khudai Khidmatgar; awarded Bharat Ratna 1987)
+39. B) Brahmi script (majority of edicts; Kharosthi was used in northwestern regions)
+40. B) Kabir (15th-16th century poet-saint; influenced by both Hindu and Islamic traditions)
 </details>
 
 ---

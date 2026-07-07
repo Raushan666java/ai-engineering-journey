@@ -472,9 +472,153 @@ console.log(MarketingCompliance.checkCompliance(ad));
 | **Digital Adoption Rate** | Digital active customers / Total customers | 60%+ |
 | **Branch Productivity** | Revenue per branch | ₹2–5 crore per branch |
 
+### 4.13 Liability vs Asset Marketing in Banking
+
+Banks market two fundamentally different types of products: liabilities (where customers lend money to the bank) and assets (where the bank lends money to customers).
+
+```mermaid
+graph TD
+    subgraph "Banking Product Types"
+        L[Liabilities<br/>Bank 'borrows' from customers]
+        A[Assets<br/>Bank 'lends' to customers]
+    end
+    L --> L1[Savings Account<br/>Bank pays interest]
+    L --> L2[Fixed Deposit<br/>Bank pays higher interest]
+    L --> L3[Current Account<br/>Bank facilitates transactions]
+    A --> A1[Home Loan<br/>Customer pays EMI]
+    A --> A2[Personal Loan<br/>Customer pays interest]
+    A --> A3[Credit Card<br/>Customer pays interest on outstanding]
+    A --> A4[Auto Loan<br/>Customer pays EMI]
+    style L fill:#3498db,color:#fff
+    style A fill:#e74c3c,color:#fff
+```
+
+| Aspect | Liability Products | Asset Products |
+|--------|-------------------|----------------|
+| **Nature** | Customer deposits money | Bank lends money |
+| **Bank's cost/income** | Bank pays interest (cost) | Bank earns interest (income) |
+| **Examples** | Savings account, FD, RD, Current account | Home loan, Personal loan, Auto loan, Credit card |
+| **Marketing focus** | Safety, returns, convenience | Low rates, quick approval, flexibility |
+| **Target segment** | Mass market, savers | Borrowers, home buyers, spenders |
+| **Cross-sell opportunity** | Sell loans to depositors | Sell insurance to borrowers |
+| **Profitability** | Low margin per account | High margin per loan |
+
+**NIM (Net Interest Margin)** = (Interest earned on assets − Interest paid on liabilities) / Total assets
+
+### 4.14 Bancassurance
+
+Bancassurance is the partnership between a bank and an insurance company to sell insurance products to the bank's customers.
+
+```mermaid
+graph LR
+    subgraph "Bancassurance Model"
+        B[Bank<br/>Distribution Channel] -->|Sells insurance| C[Customers<br/>Bank's existing base]
+        I[Insurance Company<br/>Product Provider] -->|Provides products| B
+        B -->|Revenue share| I
+    end
+    style B fill:#3498db,color:#fff
+    style I fill:#e74c3c,color:#fff
+    style C fill:#2ecc71,color:#fff
+```
+
+| Aspect | Description |
+|--------|-------------|
+| **Definition** | Bank sells insurance products to its customers using its branch network |
+| **Products sold** | Life insurance, health insurance, general insurance, ULIPs |
+| **Benefits for bank** | Fee income without credit risk, deeper customer relationships |
+| **Benefits for insurer** | Access to bank's large customer base at lower acquisition cost |
+| **Benefits for customer** | Convenience — one-stop shop for banking and insurance |
+| **Regulation** | IRDAI regulates bancassurance partnerships; banks can partner with up to 3 insurers |
+| **Key metric** | Cross-sell ratio, bancassurance penetration rate |
+
+### 4.15 Customer Segmentation in Banking
+
+```typescript
+// TypeScript: Bank Customer Segmentation Engine
+type Segment = "Mass" | "Mass Affluent" | "HNI" | "Ultra HNI" | "SME" | "Corporate";
+
+interface BankCustomer {
+  id: string;
+  age: number;
+  annualIncome: number;      // in lakhs
+  investibleAssets: number;  // in lakhs
+  avgMonthlyBalance: number; // in thousands
+  hasBusiness: boolean;
+  businessTurnover?: number; // in lakhs
+  productsHeld: number;
+  tenure: number;            // years with bank
+}
+
+interface SegmentProfile {
+  segment: Segment;
+  minIncome: number;
+  minAssets: number;
+  minBalance: number;
+  description: string;
+  serviceModel: string;
+}
+
+const SEGMENT_DEFINITIONS: SegmentProfile[] = [
+  { segment: "Ultra HNI", minIncome: 200, minAssets: 500, minBalance: 500, description: "Family office, bespoke solutions", serviceModel: "Dedicated RM + Wealth Advisor" },
+  { segment: "HNI", minIncome: 50, minAssets: 50, minBalance: 100, description: "Priority banking, investment advisory", serviceModel: "Dedicated Relationship Manager" },
+  { segment: "Mass Affluent", minIncome: 15, minAssets: 10, minBalance: 25, description: "Premium products, robo-advisory", serviceModel: "Shared RM + Digital" },
+  { segment: "Mass", minIncome: 3, minAssets: 1, minBalance: 5, description: "Standard banking products", serviceModel: "Digital-first, branch support" },
+  { segment: "SME", minIncome: 0, minAssets: 0, minBalance: 0, description: "Business banking for small businesses", serviceModel: "Business RM" },
+  { segment: "Corporate", minIncome: 0, minAssets: 0, minBalance: 0, description: "Large enterprise banking", serviceModel: "Corporate RM Team" },
+];
+
+function segmentCustomer(customer: BankCustomer): Segment {
+  if (customer.hasBusiness && (customer.businessTurnover ?? 0) > 500) return "Corporate";
+  if (customer.hasBusiness && (customer.businessTurnover ?? 0) > 50) return "SME";
+  if (customer.investibleAssets >= 500) return "Ultra HNI";
+  if (customer.investibleAssets >= 50 || customer.annualIncome >= 50) return "HNI";
+  if (customer.annualIncome >= 15 || customer.avgMonthlyBalance >= 25) return "Mass Affluent";
+  return "Mass";
+}
+
+const customer1: BankCustomer = {
+  id: "C001", age: 45, annualIncome: 60, investibleAssets: 80,
+  avgMonthlyBalance: 150, hasBusiness: false, productsHeld: 4, tenure: 8,
+};
+console.log("Segment for C001:", segmentCustomer(customer1)); // HNI
+
+const customer2: BankCustomer = {
+  id: "C002", age: 28, annualIncome: 6, investibleAssets: 2,
+  avgMonthlyBalance: 12, hasBusiness: false, productsHeld: 2, tenure: 2,
+};
+console.log("Segment for C002:", segmentCustomer(customer2)); // Mass
+```
+
+### 4.16 Comparison Tables
+
+#### Traditional Banking vs Neo Bank Marketing
+
+| Dimension | Traditional Bank | Neo Bank |
+|-----------|----------------|----------|
+| **Customer acquisition** | Branch walk-ins, DSA, referrals | Digital ads, influencer marketing, app store optimisation |
+| **Brand trust** | High (decades of presence) | Low to moderate (new entrant) |
+| **Product complexity** | High (full suite of products) | Low (focused, simple products) |
+| **Customer service** | Branch + Call centre + App | Chatbot + In-app chat + Email |
+| **Cost structure** | High fixed cost (branches, staff) | Low fixed cost (technology-only) |
+| **Marketing message** | "Trust us with your life savings" | "Banking made simple and smart" |
+| **Target audience** | All segments (mass to HNI) | Millennials, tech-savvy, urban |
+| **Example** | SBI, HDFC, ICICI | Jupiter, Fi, Niyo, Open |
+
+#### Retail vs Corporate vs Wealth Management Marketing
+
+| Dimension | Retail Banking | Corporate Banking | Wealth Management |
+|-----------|---------------|-------------------|-------------------|
+| **Target** | Individual consumers | Businesses (SME to large) | High Net Worth Individuals |
+| **Products** | Savings, loans, cards, insurance | Working capital, trade finance, cash management | Portfolio management, tax planning, estate planning |
+| **Decision maker** | Individual or family | CFO, Finance team | Individual (HNI) + family |
+| **Relationship** | Transactional to moderate | Deep, long-term | Very deep, personal |
+| **Marketing channel** | Mass media, digital, branch | Relationship managers, events | Relationship managers, exclusive events |
+| **Key metric** | Cross-sell ratio, NPS | Share of wallet, relationship value | AUM (Assets Under Management) |
+| **Service model** | Standardised | Customised | Bespoke |
+
 ---
 
-## Examples: 20 Solved MCQs
+## Examples: 30 Solved MCQs
 
 ### Example 1: Retail Banking Products
 
@@ -798,6 +942,154 @@ console.log("Cross-sell ratio:", calculateCrossSellRatio(customers)); // 2.5
 
 ---
 
+### Example 11: Liability vs Asset Marketing (Q21–Q23)
+
+**Q21.** A bank's Net Interest Margin (NIM) is calculated as:
+
+a) Total deposits / Total loans
+b) (Interest earned − Interest paid) / Total assets
+c) Total income / Total expenses
+d) Loan disbursements / Deposit mobilisation
+
+<details>
+<summary>Answer</summary>
+**b) (Interest earned − Interest paid) / Total assets.** NIM measures the difference between what a bank earns on its assets (loans, investments) and what it pays on its liabilities (deposits), expressed as a percentage of total assets. It is a key measure of banking profitability.
+</details>
+
+---
+
+**Q22.** A Fixed Deposit (FD) is classified as which type of banking product?
+
+a) Asset product
+b) Liability product
+c) Fee-based product
+d) Off-balance sheet product
+
+<details>
+<summary>Answer</summary>
+**b) Liability product.** Fixed Deposits are liability products because the bank "borrows" money from the customer and pays interest on it. The money is a liability on the bank's balance sheet. Home loans and credit cards are asset products for the bank.
+</details>
+
+---
+
+**Q23.** Which banking product generates the highest Net Interest Margin for a bank?
+
+a) Savings account
+b) Fixed Deposit
+c) Personal Loan
+d) Current Account
+
+<details>
+<summary>Answer</summary>
+**c) Personal Loan.** Personal loans have the highest interest rates (10–24% p.a.) among common banking products, generating the highest NIM. Savings accounts pay low interest (2.5–4%), while FDs cost the bank 5–8%. The spread (loan rate minus deposit rate) is highest for personal loans.
+</details>
+
+---
+
+### Example 12: Bancassurance (Q24–Q25)
+
+**Q24.** Bancassurance refers to:
+
+a) Banks issuing their own insurance policies
+b) Banks distributing insurance products of partner companies
+c) Insurance companies opening bank branches
+d) Customers buying insurance directly from IRDAI
+
+<details>
+<summary>Answer</summary>
+**b) Banks distributing insurance products of partner companies.** Bancassurance is a partnership between a bank and an insurance company where the bank sells the insurer's products to its existing customers through its branch network. The bank earns commission income without taking underwriting risk.
+</details>
+
+---
+
+**Q25.** Which of the following is a key benefit of bancassurance for the insurance company?
+
+a) Higher underwriting profits
+b) Access to the bank's existing customer base at lower acquisition cost
+c) Ability to set premium rates
+d) Exemption from IRDAI regulations
+
+<details>
+<summary>Answer</summary>
+**b) Access to the bank's existing customer base at lower acquisition cost.** For insurance companies, bancassurance provides access to a large, pre-qualified customer base at a fraction of the cost of acquiring customers directly. The bank's trust factor also improves insurance conversion rates.
+</details>
+
+---
+
+### Example 13: Customer Segmentation (Q26–Q27)
+
+**Q26.** A customer with investible assets of ₹2 crore should be classified as which segment for wealth management?
+
+a) Mass market
+b) Mass affluent
+c) HNI
+d) Ultra HNI
+
+<details>
+<summary>Answer</summary>
+**d) Ultra HNI.** Ultra HNI segment typically includes customers with investible assets of ₹5 crore or more (some banks use ₹2 crore+). They receive family office services, bespoke investment solutions, and a dedicated team of relationship managers and wealth advisors.
+</details>
+
+---
+
+**Q27.** A bank offers robo-advisory services and digital-only relationship management to which segment?
+
+a) Mass market
+b) Mass affluent
+c) HNI
+d) Ultra HNI
+
+<details>
+<summary>Answer</summary>
+**b) Mass affluent.** Mass affluent customers (₹10–50 lakh investible assets) may receive robo-advisory services and digital-first relationship management. While they have higher potential than mass market customers, their profitability does not justify a dedicated relationship manager.
+</details>
+
+---
+
+### Example 14: Traditional vs Neo Bank (Q28–Q30)
+
+**Q28.** Which of the following is a characteristic of a neo bank?
+
+a) Extensive branch network
+b) Physical cheque books
+c) Digital-only operations
+d) In-person KYC
+
+<details>
+<summary>Answer</summary>
+**c) Digital-only operations.** Neo banks operate entirely through digital channels (mobile app, website) without physical branches. Account opening is fully digital (video KYC), and customer service is through chatbots and in-app chat. Examples: Jupiter, Fi, Niyo.
+</details>
+
+---
+
+**Q29.** The main challenge faced by neo banks in customer acquisition is:
+
+a) High operational costs
+b) Low brand trust compared to traditional banks
+c) Limited product range
+d) Regulatory hurdles
+
+<details>
+<summary>Answer</summary>
+**b) Low brand trust compared to traditional banks.** Neo banks, being relatively new entrants, lack the trust and credibility that traditional banks have built over decades. Customers are often reluctant to trust their savings to a digital-only entity without a physical branch presence or long track record.
+</details>
+
+---
+
+**Q30.** A traditional bank's key competitive advantage over a neo bank is:
+
+a) Better mobile app design
+b) Faster account opening
+c) Trust and extensive branch network
+d) Lower fees
+
+<details>
+<summary>Answer</summary>
+**c) Trust and extensive branch network.** Traditional banks have decades of trust, regulatory compliance history, and extensive branch/ATM networks. While neo banks offer better UX and faster processes, traditional banks leverage their trust and reach, especially in semi-urban and rural markets.
+</details>
+
+---
+
 ## Summary
 
 - **Banking marketing** differs from product marketing due to intangibility, trust requirements, regulatory constraints, and long-term relationships
@@ -951,3 +1243,128 @@ console.log("Cross-sell ratio:", calculateCrossSellRatio(customers)); // 2.5
 | 28 | Brand trust (bank), speed + UX (fintech); joint marketing should emphasise both | Partnership marketing |
 | 29 | Share of wallet = % of customer's financial business held by the bank. Increase through product bundling, personalised offers | Wallet expansion strategy |
 | 30 | Non-compliant: "guaranteed" is misleading, "highest" needs substantiation. Must add "subject to change", risks, T&C | Regulatory evaluation |
+
+### Additional Exam-Oriented MCQs (IBPS SO / SBI / RBI Pattern)
+
+**31.** As per RBI guidelines, a bank's advertisement claiming "guaranteed returns" on a mutual fund investment is:
+   - a) Acceptable if the fund has performed well historically
+   - b) Prohibited — mutual funds are subject to market risks
+   - c) Allowed only for senior citizens
+   - d) Allowed if approved by the bank's board
+
+<details>
+<summary>Answer</summary>
+**b) Prohibited — mutual funds are subject to market risks.** RBI and SEBI regulations strictly prohibit "guaranteed returns" claims for market-linked products like mutual funds. All mutual fund ads must include the disclaimer "Mutual fund investments are subject to market risks, read all scheme-related documents carefully."
+</details>
+
+**32.** Which of the following is NOT a liability product for a bank?
+   - a) Savings account
+   - b) Fixed deposit
+   - c) Home loan
+   - d) Recurring deposit
+
+<details>
+<summary>Answer</summary>
+**c) Home loan.** A home loan is an asset product for the bank — the bank lends money to the customer and earns interest. Savings accounts, fixed deposits, and recurring deposits are liability products where the bank borrows from customers and pays interest.
+</details>
+
+**33.** Pradhan Mantri Jan Dhan Yojana (PMJDY) accounts come with which of the following benefits?
+   - a) Overdraft facility of ₹10,000
+   - b) Free credit card
+   - c) International banking access
+   - d) Fixed deposit at 8% interest
+
+<details>
+<summary>Answer</summary>
+**a) Overdraft facility of ₹10,000.** PMJDY accounts offer an overdraft facility of up to ₹10,000 (after satisfactory operation of the account for 6 months), along with zero balance requirement, RuPay debit card, and accidental insurance cover of ₹1–2 lakh.
+</details>
+
+**34.** Under the RBI's Fair Practices Code, banks are required to:
+   - a) Charge the lowest interest rates possible
+   - b) Disclose all terms and conditions transparently
+   - c) Approve all loan applications
+   - d) Provide free locker facilities
+
+<details>
+<summary>Answer</summary>
+**b) Disclose all terms and conditions transparently.** The Fair Practices Code requires banks to disclose all terms, interest rates, charges, and conditions related to products and services in a transparent manner. This includes clear communication about penal charges, prepayment options, and grievance redressal mechanisms.
+</details>
+
+**35.** A bank's decision to offer a higher FD rate to senior citizens is an example of:
+   - a) Demographic segmentation
+   - b) Geographic segmentation
+   - c) Behavioural segmentation
+   - d) Psychographic segmentation
+
+<details>
+<summary>Answer</summary>
+**a) Demographic segmentation.** Segmenting customers by age (senior citizens) is demographic segmentation. Banks offer senior citizens 25–50 basis points higher interest rates on FDs as a social responsibility and because seniors have a higher propensity to save.
+</details>
+
+**36.** What is the primary purpose of Aadhaar-based e-KYC in banking customer acquisition?
+   - a) Reduce paperwork and enable instant account opening
+   - b) Increase bank charges
+   - c) Replace all other forms of identification
+   - d) Track customer spending habits
+
+<details>
+<summary>Answer</summary>
+**a) Reduce paperwork and enable instant account opening.** Aadhaar-based e-KYC allows banks to verify customer identity electronically and instantly, reducing account opening time from days to minutes. It eliminates physical document submission and verification, making customer acquisition faster and cheaper.
+</details>
+
+**37.** In the SERVQUAL model, which gap is considered the overall service quality gap?
+   - a) Gap 1
+   - b) Gap 3
+   - c) Gap 4
+   - d) Gap 5
+
+<details>
+<summary>Answer</summary>
+**d) Gap 5.** Gap 5 is the difference between expected service and perceived service — the overall service quality gap. All other gaps (Gap 1–4) contribute to Gap 5. Closing Gap 5 requires closing all underlying gaps in the service delivery process.
+</details>
+
+**38.** "Share of Wallet" in banking marketing refers to:
+   - a) The bank's market share in the industry
+   - b) The percentage of a customer's total financial business held by the bank
+   - c) The amount of cash in the bank's vaults
+   - d) The bank's spending on advertising
+
+<details>
+<summary>Answer</summary>
+**b) The percentage of a customer's total financial business held by the bank.** Share of wallet measures how much of a customer's total financial activities (savings, loans, investments, insurance) are conducted with the bank. A high share of wallet indicates deep customer relationships and higher profitability.
+</details>
+
+**39.** A digital savings account that can be opened in 5 minutes with video KYC is primarily targeting which customer pain point?
+   - a) High interest rates
+   - b) Convenience and speed
+   - c) Branch proximity
+   - d) Product variety
+
+<details>
+<summary>Answer</summary>
+**b) Convenience and speed.** The key value proposition of digital savings accounts is convenience — opening an account from home, anytime, with instant activation. The messaging focuses on saving the customer's time and effort, not necessarily on higher returns or product variety.
+</details>
+
+**40.** The "Cost-to-Income Ratio" for a well-managed retail bank should ideally be:
+   - a) Below 20%
+   - b) Between 40–50%
+   - c) Between 70–80%
+   - d) Above 100%
+
+<details>
+<summary>Answer</summary>
+**b) Between 40–50%.** Cost-to-Income Ratio = Operating Expenses / Operating Income. A ratio of 40–50% is considered healthy for retail banks. Lower is better, indicating the bank is efficiently converting expenses into income. Ratios above 60% indicate inefficiency.
+</details>
+
+### Section D: Exam-Oriented Questions (Q31–Q40)
+
+31. "Digital banking is not just about technology — it is about changing customer behaviour." Discuss this statement with reference to marketing strategies for digital adoption.
+32. A public sector bank wants to increase its share of wallet among existing customers. Design a comprehensive cross-selling strategy.
+33. Compare the liability-side and asset-side marketing strategies for a retail bank. Why must both be balanced?
+34. How has the Pradhan Mantri Jan Dhan Yojana (PMJDY) changed the marketing approach for banks in rural India?
+35. A private bank experiences 10% customer churn annually. Analyse the financial impact and design a retention programme using CRM tools.
+36. "Bancassurance is a win-win-win for banks, insurers, and customers." Explain each stakeholder's perspective.
+37. A bank wants to target the affluent millennial segment (25–35 years, ₹15–50 lakh income). Design a customised product bundle and marketing campaign.
+38. Evaluate the role of video KYC in transforming customer acquisition for Indian banks. What marketing opportunities does it create?
+39. A bank's customer satisfaction scores have declined due to long branch wait times. Use the SERVQUAL gap model to diagnose and propose solutions across all five gaps.
+40. "Neo banks will eventually replace traditional banks." Critically analyse this statement with reference to marketing advantages and limitations of each model.

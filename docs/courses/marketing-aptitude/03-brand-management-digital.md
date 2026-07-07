@@ -397,9 +397,180 @@ console.log(CRMSegmenter.segmentReport(customers));
 | **Profit increase** | 10% new customers | 25–95% from 5% retention increase |
 | **Loyalty effect** | Short-term | Long-term |
 
+### 3.8 Brand Architecture
+
+Brand architecture is the structure that organises a company's portfolio of brands to create synergy and clarity.
+
+```mermaid
+graph TD
+    subgraph "Brand Architecture Strategies"
+        HH[House of Brands<br/>Each product has its own distinct brand]
+        BH[Branded House<br/>Corporate brand on all products]
+        SB[Sub-brands<br/>Master brand + modifier]
+        EB[Endorsed Brands<br/>Individual brands backed by corporate name]
+    end
+    HH --> E1[Procter & Gamble: Tide, Ariel, Pampers]
+    BH --> E2[Virgin: Airlines, Mobile, Banking]
+    SB --> E3[Marriott: Marriott Hotels, Marriott Suites]
+    EB --> E4["Courtyard by Marriott", "Nestlé KitKat"]
+```
+
+| Strategy | Description | Advantages | Disadvantages |
+|----------|-------------|------------|---------------|
+| **House of Brands** | Each product has a unique brand name (P&G) | Market-specific positioning, no cross-contamination | High launch cost, no brand synergy |
+| **Branded House** | Corporate brand on all products (Virgin) | High efficiency, instant recognition | Risk: one failure damages all |
+| **Sub-brands** | Master brand + modifier (Marriott Hotels) | Brand stretching with clarity | Can become complex |
+| **Endorsed Brands** | Individual brands with corporate backing (Nestlé KitKat) | Balance of independence and association | Moderate complexity |
+
+### 3.9 Brand Revitalization and Managing Brand Crises
+
+**When to revitalise a brand:**
+- Declining sales and market share
+- Outdated brand image
+- Increased competition
+- Changing customer preferences
+
+**Brand revitalization strategies:**
+
+```mermaid
+graph LR
+    subgraph "Revitalization Strategies"
+        R1[Repositioning<br/>Change brand perception]
+        R2[Brand Refresh<br/>Update visual identity]
+        R3[Innovation<br/>New products/features]
+        R4[Reach Expansion<br/>New segments/geographies]
+        R5[Rebranding<br/>Complete brand overhaul]
+    end
+    R1 --> E1[Old Spice: from old to young]
+    R2 --> E2[Burberry: digital transformation]
+    R3 --> E3[Apple: iPod → iPhone ecosystem]
+    R4 --> E4[Tata Nano: failure despite innovation]
+    R5 --> E5[Dabur: Ayurvedic to modern health]
+```
+
+| Strategy | Description | Example | Risk Level |
+|----------|-------------|---------|------------|
+| **Repositioning** | Change how consumers perceive the brand | Old Spice (old → young) | Medium |
+| **Brand Refresh** | Update logo, packaging, visual identity | Burberry, Starbucks | Low |
+| **Innovation** | New products, features, or technology | Apple (iPod → iPhone) | Medium |
+| **Reach Expansion** | Target new customer segments | Lakmé (salon → affordable cosmetics) | Low-Medium |
+| **Rebranding** | Complete brand name and identity change | ValuJet → AirTran (after crash) | Very High |
+
+**Brand crises** — When brands face negative publicity:
+| Crisis Type | Example | Recovery Strategy |
+|-------------|---------|-------------------|
+| **Product failure** | Samsung Galaxy Note 7 (battery explosion) | Recall + transparent investigation |
+| **Ethical violation** | Volkswagen Dieselgate (emissions cheating) | Leadership change + compliance overhaul |
+| **Social media backlash** | Zomato (delivery controversies) | Apology + policy change |
+| **CEO misstep** | Elon Musk's tweets affecting Tesla | Board intervention + communication controls |
+
+### 3.10 Digital Marketing Funnel and KPIs
+
+```mermaid
+graph TD
+    subgraph "Digital Marketing Funnel"
+        A[AWARENESS<br/>Impressions, Reach, Brand Searches] --> I[INTEREST<br/>Visits, Time on Site, Pages/Session]
+        I --> C[CONSIDERATION<br/>Lead sign-ups, Content downloads]
+        C --> P[PURCHASE<br/>Conversion Rate, Revenue, ROAS]
+        P --> L[LOYALTY<br/>Repeat Rate, CLV, NPS]
+        L --> ADV[ADVOCACY<br/>Referrals, Reviews, Social Shares]
+    end
+    style A fill:#3498db,color:#fff
+    style P fill:#2ecc71,color:#fff
+    style ADV fill:#e74c3c,color:#fff
+```
+
+**Key Digital Marketing KPIs by Funnel Stage:**
+
+| Stage | KPI | Benchmark | Formula |
+|-------|-----|-----------|---------|
+| **Awareness** | CPM (Cost per 1000 impressions) | ₹50–₹200 | Total cost / Impressions × 1000 |
+| **Interest** | Bounce Rate | 40–60% | Single-page sessions / Total sessions |
+| **Consideration** | Lead Conversion Rate | 2–5% | Leads / Visitors × 100 |
+| **Purchase** | ROAS | 3×–5× | Revenue / Ad spend |
+| **Loyalty** | Customer Retention Rate | 60–80% | Returning customers / Total customers |
+| **Advocacy** | NPS | 30+ | % Promoters − % Detractors |
+
+```typescript
+// TypeScript: Digital Marketing KPI Dashboard
+interface FunnelMetrics {
+  impressions: number;
+  reach: number;
+  visits: number;
+  leads: number;
+  conversions: number;
+  returningCustomers: number;
+  totalCustomers: number;
+  adSpend: number;
+  revenue: number;
+}
+
+interface KPIDashboard {
+  cpm: number;
+  bounceRate: number;
+  leadConversionRate: number;
+  roas: number;
+  retentionRate: number;
+  costPerLead: number;
+  costPerAcquisition: number;
+}
+
+function generateKPIDashboard(metrics: FunnelMetrics): KPIDashboard {
+  return {
+    cpm: Math.round((metrics.adSpend / metrics.impressions) * 1000),
+    bounceRate: parseFloat(((1 - metrics.reach / metrics.visits) * 100).toFixed(1)),
+    leadConversionRate: parseFloat(((metrics.leads / metrics.visits) * 100).toFixed(1)),
+    roas: parseFloat((metrics.revenue / metrics.adSpend).toFixed(2)),
+    retentionRate: parseFloat(((metrics.returningCustomers / metrics.totalCustomers) * 100).toFixed(1)),
+    costPerLead: Math.round(metrics.adSpend / metrics.leads),
+    costPerAcquisition: Math.round(metrics.adSpend / metrics.conversions),
+  };
+}
+
+const campaignMetrics: FunnelMetrics = {
+  impressions: 500000,
+  reach: 200000,
+  visits: 25000,
+  leads: 1250,
+  conversions: 250,
+  returningCustomers: 180,
+  totalCustomers: 250,
+  adSpend: 150000,
+  revenue: 750000,
+};
+
+console.log(generateKPIDashboard(campaignMetrics));
+// { cpm: 300, bounceRate: 20.0, leadConversionRate: 5.0, roas: 5.00, retentionRate: 72.0, costPerLead: 120, costPerAcquisition: 600 }
+```
+
+### 3.11 Comparison Tables
+
+#### Brand Identity vs Brand Image
+
+| Aspect | Brand Identity | Brand Image |
+|--------|---------------|-------------|
+| **Perspective** | Company's (sender) | Consumer's (receiver) |
+| **Definition** | How the company wants the brand to be perceived | How consumers actually perceive the brand |
+| **Control** | Fully controllable by the company | Not fully controllable |
+| **Timeframe** | Created before launch | Develops over time |
+| **Consistency** | Can be controlled | May differ from intentions |
+| **Example** | Apple identity: minimalist, innovative | Apple image: premium, user-friendly |
+
+#### Traditional vs Digital Brand Building
+
+| Dimension | Traditional Brand Building | Digital Brand Building |
+|-----------|--------------------------|----------------------|
+| **Primary channels** | TV, print, radio, outdoor | Social media, SEO, content, influencers |
+| **Speed of building** | Slow (years) | Potentially fast (viral) |
+| **Cost** | Very high | Low to moderate |
+| **Two-way interaction** | Minimal | High — continuous feedback |
+| **Measurement** | Awareness surveys, recall | Analytics, engagement, sentiment |
+| **Targeting** | Mass or demographic | Hyper-targeted, behavioural |
+| **Example** | Coca-Cola "Hilltop" TV ad | Dollar Shave Club YouTube launch |
+
 ---
 
-## Examples: 20 Solved MCQs
+## Examples: 30 Solved MCQs
 
 ### Example 1: Brand Concepts
 
@@ -753,6 +924,154 @@ d) ROI (Return on Investment)
 
 ---
 
+### Example 11: Brand Architecture (Q21–Q22)
+
+**Q21.** Procter & Gamble markets Tide, Ariel, Pampers, and Gillette — each with its own brand identity. This brand architecture is called:
+
+a) Branded house
+b) House of brands
+c) Sub-branding
+d) Endorsed brands
+
+<details>
+<summary>Answer</summary>
+**b) House of brands.** P&G follows a "House of Brands" strategy where each product has a distinct brand name, identity, and positioning. This allows each brand to dominate its category without diluting other brands.
+</details>
+
+---
+
+**Q22.** "Courtyard by Marriott" is an example of which brand architecture?
+
+a) House of brands
+b) Branded house
+c) Endorsed brand
+d) Sub-brand
+
+<details>
+<summary>Answer</summary>
+**c) Endorsed brand.** "Courtyard by Marriott" is an endorsed brand — the individual brand (Courtyard) is backed by the corporate brand (Marriott). This provides the benefit of Marriott's reputation while allowing Courtyard to maintain its own positioning as a mid-tier hotel.
+</details>
+
+---
+
+### Example 12: Brand Revitalization (Q23–Q24)
+
+**Q23.** Old Spice successfully transformed from an older man's brand to a youthful, humorous brand. This strategy is called:
+
+a) Brand extension
+b) Repositioning
+c) Co-branding
+d) Line extension
+
+<details>
+<summary>Answer</summary>
+**b) Repositioning.** Old Spice repositioned itself through a famous "The Man Your Man Could Smell Like" campaign featuring humorous, fast-paced ads targeting younger consumers. Sales increased dramatically after the repositioning.
+</details>
+
+---
+
+**Q24.** Which brand crisis type typically requires the most drastic recovery measures?
+
+a) Product failure
+b) Social media backlash
+c) CEO misstep
+d) Ethical violation
+
+<details>
+<summary>Answer</summary>
+**a) Product failure (when safety is involved).** Product failures that endanger consumers (like Samsung Note 7 battery explosions) require immediate recall, transparent investigation, and sometimes complete product overhaul. Ethical violations require leadership change and compliance restructuring.
+</details>
+
+---
+
+### Example 13: Digital Marketing Funnel (Q25–Q27)
+
+**Q25.** In the digital marketing funnel, the stage immediately after "Interest" is:
+
+a) Awareness
+b) Purchase
+c) Consideration
+d) Advocacy
+
+<details>
+<summary>Answer</summary>
+**c) Consideration.** The funnel stages are: Awareness → Interest → Consideration → Purchase → Loyalty → Advocacy. After generating interest (visits, time on site), the next stage is consideration (lead capture, content downloads).
+</details>
+
+---
+
+**Q26.** A campaign spends ₹1,00,000, gets 50,000 impressions and 2,500 clicks. The CPM (Cost per 1000 impressions) is:
+
+a) ₹20
+b) ₹40
+c) ₹200
+d) ₹2,000
+
+<details>
+<summary>Answer</summary>
+**d) ₹2,000.** CPM = (Total Cost / Impressions) × 1000 = (100000 / 50000) × 1000 = ₹2,000. This indicates the campaign is paying ₹2,000 for every 1000 ad impressions served.
+</details>
+
+---
+
+**Q27.** A brand's Net Promoter Score (NPS) is 40. If the percentage of Detractors is 25%, what is the percentage of Promoters?
+
+a) 15%
+b) 40%
+c) 65%
+d) 75%
+
+<details>
+<summary>Answer</summary>
+**c) 65%.** NPS = % Promoters − % Detractors. So, 40 = % Promoters − 25. Therefore, % Promoters = 65%. The remaining 10% are Passives (those who rate 7–8).
+</details>
+
+---
+
+### Example 14: Digital Marketing Metrics (Q28–Q30)
+
+**Q28.** ROAS of 4.0 means:
+
+a) ₹4 spent for every ₹1 earned
+b) ₹1 spent for every ₹4 earned
+c) ₹4 earned for every ₹1 spent
+d) 4% conversion rate
+
+<details>
+<summary>Answer</summary>
+**c) ₹4 earned for every ₹1 spent.** ROAS (Return on Ad Spend) = Revenue / Ad Spend. A ROAS of 4.0 means for every ₹1 spent on advertising, the campaign generated ₹4 in revenue. The higher the ROAS, the more effective the campaign.
+</details>
+
+---
+
+**Q29.** Which of the following KPIs measures the percentage of single-page sessions?
+
+a) Conversion rate
+b) Bounce rate
+c) Click-through rate
+d) Retention rate
+
+<details>
+<summary>Answer</summary>
+**b) Bounce rate.** Bounce rate measures the percentage of sessions where users land on a page and leave without interacting further (single-page sessions). A high bounce rate (above 70%) usually indicates poor landing page experience or targeting mismatch.
+</details>
+
+---
+
+**Q30.** A brand with 80% retention rate means:
+
+a) 80% of customers are new
+b) 80% of existing customers continue buying
+c) 80% of revenue comes from existing customers
+d) 80% of marketing budget goes to retention
+
+<details>
+<summary>Answer</summary>
+**b) 80% of existing customers continue buying.** Customer retention rate measures the percentage of customers who remain customers over a specific period. An 80% retention rate means 20% of customers churned during the period. The average retention rate varies by industry (60–80% for most industries).
+</details>
+
+---
+
 ## Summary
 
 - A **brand** is a name, term, sign, symbol, or design identifying a seller's goods and differentiating them from competitors
@@ -906,3 +1225,128 @@ d) ROI (Return on Investment)
 | 28 | Google = intent-based (searching); Facebook = interest-based (browsing) | Context matters |
 | 29 | Community creates active engagement (Level 4 resonance) | Belonging drives loyalty |
 | 30 | Month 1–2: Website + SEO; Month 3–4: Social + Content; Month 5–6: SEM + Email | Phased approach |
+
+### Additional Exam-Oriented MCQs (IBPS SO / SBI / RBI Pattern)
+
+**31.** The CBBE model was developed by which marketing scholar?
+   - a) Philip Kotler
+   - b) Kevin Lane Keller
+   - c) David Aaker
+   - d) Theodore Levitt
+
+<details>
+<summary>Answer</summary>
+**b) Kevin Lane Keller.** Kevin Lane Keller developed the Customer-Based Brand Equity (CBBE) model. The model views brand equity from the consumer's perspective and uses a four-level pyramid: Salience → Performance/Imagery → Judgments/Feelings → Resonance.
+</details>
+
+**32.** In the CBBE pyramid, "What about you and me?" is the question answered at which level?
+   - a) Salience
+   - b) Performance
+   - c) Feelings
+   - d) Resonance
+
+<details>
+<summary>Answer</summary>
+**d) Resonance.** Level 4 (Resonance) is the ultimate relationship between customer and brand, answering "What about you and me?" It reflects deep psychological bonds, active engagement, and a sense of community with the brand.
+</details>
+
+**33.** A Point of Difference (POD) must be:
+   - a) Desirable, deliverable, and differentiating
+   - b) Cheap, easy, and available
+   - c) Common, basic, and expected
+   - d) Complex, unique, and expensive
+
+<details>
+<summary>Answer</summary>
+**a) Desirable, deliverable, and differentiating.** For a POD to be effective, it must be desirable to consumers (they must value it), deliverable by the company (the company must have resources to create it), and differentiating (competitors must not already own that association).
+</details>
+
+**34.** A company launching a brand extension should be most concerned about:
+   - a) Lower advertising costs
+   - b) Brand dilution
+   - c) Higher profit margins
+   - d) Faster distribution
+
+<details>
+<summary>Answer</summary>
+**b) Brand dilution.** Brand dilution occurs when a brand extension weakens the core brand's associations. If a premium brand extends into a mass-market or unrelated category, consumers may lose trust in the original brand's positioning.
+</details>
+
+**35.** In SEO, backlinks from high-authority websites are part of which SEO type?
+   - a) On-page SEO
+   - b) Off-page SEO
+   - c) Technical SEO
+   - d) Local SEO
+
+<details>
+<summary>Answer</summary>
+**b) Off-page SEO.** Off-page SEO involves activities outside the website that improve its authority and trustworthiness. Backlinks from reputable websites are the most important off-page SEO factor, signalling to Google that the content is valuable and credible.
+</details>
+
+**36.** Quality Score in Google Ads is influenced by all EXCEPT:
+   - a) Expected click-through rate
+   - b) Ad relevance
+   - c) Ad copy length
+   - d) Landing page experience
+
+<details>
+<summary>Answer</summary>
+**c) Ad copy length.** Google's Quality Score is based on expected CTR, ad relevance, and landing page experience. Ad copy length does not directly affect Quality Score, though concise ads often perform better on CTR.
+</details>
+
+**37.** An e-commerce brand's email campaign has a 45% open rate and 15% click-through rate. The CTR is calculated based on:
+   - a) Total emails sent
+   - b) Total emails delivered
+   - c) Total unique opens
+   - d) Total emails clicked
+
+<details>
+<summary>Answer</summary>
+**b) Total emails delivered.** Email CTR is calculated as (unique clicks / unique delivered emails) × 100. The click-to-open rate (CTOR) would be (clicks / opens) × 100 = 33.3%, which indicates strong engagement among openers.
+</details>
+
+**38.** Which social media platform offers the most precise B2B targeting by job title, company size, and industry?
+   - a) Facebook
+   - b) Instagram
+   - c) LinkedIn
+   - d) YouTube
+
+<details>
+<summary>Answer</summary>
+**c) LinkedIn.** LinkedIn offers the most detailed B2B targeting options including job function, seniority, company name, industry, company size, and skills. Facebook offers interest-based targeting, while Instagram is more visual and lifestyle-oriented.
+</details>
+
+**39.** A brand that uses the same name across all its products (e.g., Virgin Airlines, Virgin Mobile, Virgin Banking) follows:
+   - a) House of brands
+   - b) Branded house
+   - c) Endorsed brands
+   - d) Private labels
+
+<details>
+<summary>Answer</summary>
+**b) Branded house.** Virgin uses a "Branded House" strategy where the corporate brand name (Virgin) is applied across multiple product categories. This creates strong brand synergy and instant recognition but risks all brands being affected if one fails.
+</details>
+
+**40.** The primary purpose of a brand mantra is to:
+   - a) Target a specific audience
+   - b) Guide internal brand decisions
+   - c) Increase short-term sales
+   - d) Reduce advertising costs
+
+<details>
+<summary>Answer</summary>
+**b) Guide internal brand decisions.** A brand mantra is a short (3–5 word) internal guiding statement that communicates the brand's essence and soul. It guides employees, partners, and marketing decisions. Example: Nike's "Authentic athletic performance."
+</details>
+
+### Section D: Exam-Oriented Questions (Q31–Q40)
+
+31. "Brand equity is the most valuable intangible asset a company can possess." Discuss with examples of brands with high and low equity.
+32. A brand with strong premium positioning is considering a line extension to a lower-priced segment. Analyse the risks using the concepts of brand dilution and brand stretching.
+33. Compare SEO, SEM, and Social Media Marketing for a new e-commerce brand with a limited budget of ₹5 lakh per month.
+34. Design a content marketing strategy for a financial advisory firm targeting young professionals aged 25–35.
+35. Explain the concept of Customer Lifetime Value (CLV) in the context of a subscription-based brand. How does it differ from transaction-based CLV?
+36. A traditional luxury brand wants to enter the digital space without losing its exclusivity. Recommend a digital marketing strategy.
+37. Compare influencer marketing with affiliate marketing. Which is better for a new beauty brand?
+38. How do brand communities create value? Analyse using the CBBE model's resonance stage.
+39. A brand is facing a social media crisis due to a controversial ad. Design a crisis management response plan.
+40. "Retention is cheaper than acquisition." Explain this with reference to CRM strategies and calculate the financial impact for a brand with 10,000 customers, CAC of ₹500, retention cost of ₹100, and 80% retention rate.

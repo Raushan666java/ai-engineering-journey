@@ -885,6 +885,166 @@ RuPay is India's domestic card payment network launched by the National Payments
 
 ---
 
+**Q21.** Under the prudential regulation framework, the minimum Capital Adequacy Ratio (including the capital conservation buffer) for Indian banks is:
+
+a) 9%
+b) 10.25%
+c) 11.5%
+d) 13%
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) 11.5%
+
+As per Basel III norms implemented in India, the minimum CAR is 11.5% (9% Tier 1 + Tier 2, plus 2.5% Capital Conservation Buffer).
+</details>
+
+---
+
+**Q22.** Blockchain technology is best described as:
+
+a) A centralised database managed by RBI
+b) A distributed ledger where transactions are recorded in immutable blocks
+c) A payment system for cryptocurrency only
+d) A cloud storage system for banks
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) A distributed ledger where transactions are recorded in immutable blocks
+
+Blockchain is a DLT where each block contains a set of transactions, cryptographically linked to the previous block, making the chain immutable and transparent.
+</details>
+
+---
+
+**Q23.** The tax rate applicable to cryptocurrency gains in India (as per 2022 Finance Act) is:
+
+a) 15%
+b) 20%
+c) 30%
+d) 40%
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) 30%
+
+Cryptocurrency gains are taxed at 30% (plus applicable cess and surcharge) under Section 115BBH of the Income Tax Act, introduced in the 2022 Budget.
+</details>
+
+---
+
+**Q24.** The e-Rupee (CBDC) retail pilot in India was launched in:
+
+a) November 2021
+b) November 2022
+c) December 2022
+d) January 2023
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) December 2022
+
+The CBDC-Retail (e₹-R) pilot was launched on December 1, 2022. The wholesale pilot (e₹-W) had been launched earlier in November 2022 for interbank settlement.
+</details>
+
+---
+
+**Q25.** Proof of Work (PoW) is a consensus mechanism used by:
+
+a) UPI
+b) Bitcoin
+c) e-Rupee
+d) NEFT
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) Bitcoin
+
+Bitcoin uses Proof of Work consensus where miners solve complex mathematical puzzles to validate transactions. PoW is energy-intensive but provides high security.
+</details>
+
+---
+
+**Q26.** Which of the following is NOT a type of risk regulated under prudential banking norms?
+
+a) Credit risk
+b) Market risk
+c) Inflation risk
+d) Operational risk
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) Inflation risk
+
+Inflation risk is a macroeconomic risk, not a specific banking risk regulated under prudential norms. Banks must manage credit, market, operational, and liquidity risks.
+</details>
+
+---
+
+**Q27.** The TDS rate applicable on cryptocurrency transactions in India is:
+
+a) 0.1%
+b) 0.5%
+c) 1%
+d) 2%
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) 1%
+
+A 1% TDS (Tax Deducted at Source) is applicable on cryptocurrency transactions above a specified threshold under Section 194S of the Income Tax Act.
+</details>
+
+---
+
+**Q28.** Smart contracts in blockchain are:
+
+a) Legal documents signed digitally
+b) Self-executing contracts with coded terms and conditions
+c) Agreements between banks and regulators
+d) Paper contracts stored on blockchain
+
+<details>
+<summary>Answer</summary>
+**Answer:** b) Self-executing contracts with coded terms and conditions
+
+Smart contracts are programmable contracts that automatically execute when predefined conditions are met, without needing intermediaries. They are used in trade finance, insurance, etc.
+</details>
+
+---
+
+**Q29.** Which of the following is a key benefit of blockchain technology in banking?
+
+a) Higher transaction costs
+b) Centralised control
+c) Immutable audit trail
+d) Slower settlement
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) Immutable audit trail
+
+Blockchain provides an immutable, transparent record of all transactions, making it valuable for audit, compliance, and fraud prevention in banking.
+</details>
+
+---
+
+**Q30.** The RBI's position on private cryptocurrencies is best described as:
+
+a) Fully supportive
+b) Neutral — no official position
+c) Concerned about macroeconomic stability, advocates global regulation
+d) Actively promoting cryptocurrency adoption
+
+<details>
+<summary>Answer</summary>
+**Answer:** c) Concerned about macroeconomic stability, advocates global regulation
+
+RBI has consistently expressed concerns about the risks of private cryptocurrencies to financial stability, capital controls, and monetary policy, while advocating for a globally coordinated regulatory approach.
+</details>
+
+---
+
 ## TypeScript Example: Banking Health Comprehensive Analyser
 
 ```typescript
@@ -993,6 +1153,218 @@ console.log(`NPA Coverage: ${analysis.npaCoverageScore}`);
 // Output: CAR: 15.95%, Gross NPA: 7%, Net NPA: 2.72%
 // Output: PCR: 62.86%, CASA: 44.62%, Score: 52/100
 // Output: NPA Coverage: Adequate
+```
+
+---
+
+### 5.5 Prudential Regulation in Banking
+
+Prudential regulation refers to the set of rules and standards designed to ensure the **safety and soundness** of banks and the financial system.
+
+| Component | Description | Regulatory Requirement |
+|-----------|-------------|----------------------|
+| **Capital Adequacy** | Minimum capital to cover risks | CAR ≥ 11.5% (including CCB) |
+| **Asset Quality** | Classification and provisioning for NPAs | NPA norms per RBI circulars |
+| **Liquidity Standards** | Ensure banks can meet short-term obligations | LCR ≥ 100%, NSFR ≥ 100% |
+| **Leverage Ratio** | Limit excessive borrowing | Tier 1 Capital / Total Exposure ≥ 4% |
+| **Risk Management** | Systems to identify, measure, and mitigate risks | Board-approved risk policies |
+| **Corporate Governance** | Board composition, fit & proper criteria | At least 51% board with special knowledge |
+| **Disclosure Requirements** | Transparency through periodic reporting | Pillar 3 disclosures under Basel |
+
+**Types of Risks Regulated:**
+
+```mermaid
+flowchart TD
+    A[Banking Risks] --> B[Credit Risk]
+    A --> C[Market Risk]
+    A --> D[Operational Risk]
+    A --> E[Liquidity Risk]
+    A --> F[Reputational Risk]
+    
+    B --> B1[Default risk - borrower<br/>fails to repay]
+    B --> B2[Concentration risk -<br/>overexposure to sector]
+    
+    C --> C1[Interest rate risk]
+    C --> C2[Forex risk]
+    C --> C3[Equity price risk]
+    
+    D --> D1[Fraud / system failure]
+    D --> D2[Process / people risk]
+    
+    E --> E1[Funding liquidity risk]
+    E --> E2[Market liquidity risk]
+    
+    style A fill:#1a73e8,color:#fff
+    style B fill:#e83737,color:#fff
+    style C fill:#ff9800,color:#fff
+    style D fill:#9C27B0,color:#fff
+```
+
+**Key regulatory bodies for prudential oversight:**
+- **RBI:** Prudential regulation of banks and NBFCs
+- **SEBI:** Prudential norms for market intermediaries and mutual funds
+- **IRDA:** Solvency and investment norms for insurers
+- **PFRDA:** Prudential regulation of pension funds
+
+### 5.6 Technology in Finance — Digital Banking, Blockchain, and Cryptocurrencies
+
+#### A. Digital Banking Evolution
+
+| Era | Period | Key Features |
+|-----|--------|--------------|
+| **Banking 1.0** | Pre-1980s | Physical branches, manual ledgers, paper-based |
+| **Banking 2.0** | 1980s-2000 | Core banking solutions, ATMs, computerisation |
+| **Banking 3.0** | 2000-2015 | Internet banking, mobile banking, NEFT/RTGS |
+| **Banking 4.0** | 2015-present | UPI, digital-only banks, AI-driven services, open banking, blockchain |
+
+**Key Digital Banking Technologies in India:**
+
+| Technology | Description | Examples |
+|------------|-------------|----------|
+| **UPI** | Instant mobile payment using virtual payment address | Google Pay, PhonePe, Paytm, BHIM |
+| **BBPS** | Centralised bill payment system | Pay bills via any channel |
+| **Account Aggregator** | Consent-based financial data sharing | Sahamati network |
+| **OCR/ICR** | Automated cheque and document processing | Cheque Truncation System |
+| **Video KYC** | Remote identity verification | Aadhaar-based video KYC |
+| **AI/ML** | Credit scoring, fraud detection, chatbots | SBI's Intelligent Assistant, ICICI's iMobile |
+| **Open Banking** | API-based third-party access to bank data | Account Aggregator framework |
+
+#### B. Blockchain Technology
+
+Blockchain is a **distributed ledger technology (DLT)** where transactions are recorded in blocks that are cryptographically linked and immutable.
+
+```mermaid
+flowchart LR
+    A[Transaction<br/>Initiated] --> B[Block Created]
+    B --> C[Block Broadcast<br/>to Network]
+    C --> D{Consensus<br/>Mechanism}
+    D -->|Proof of Work| E[Validated by<br/>Miners]
+    D -->|Proof of Stake| F[Validated by<br/>Validators]
+    E --> G[Block Added to<br/>Chain - Immutable]
+    F --> G
+    G --> H[Transaction<br/>Complete]
+    
+    style A fill:#1a73e8,color:#fff
+    style G fill:#4CAF50,color:#fff
+```
+
+| Feature | Description | Significance in Banking |
+|---------|-------------|------------------------|
+| **Decentralisation** | No central authority; consensus-based validation | Reduces single point of failure |
+| **Immutability** | Cannot alter recorded transactions | Prevents fraud and tampering |
+| **Transparency** | All participants can view the ledger | Audit trail for all transactions |
+| **Smart Contracts** | Self-executing contracts with coded terms | Automates trade finance, insurance claims |
+| **Consensus Mechanisms** | PoW, PoS, PBFT, etc. | Ensures agreement on state of ledger |
+
+**Use cases of blockchain in banking:**
+1. **Trade Finance:** LETTER OF CREDIT automation using smart contracts
+2. **Cross-border Payments:** Faster, cheaper remittances (e.g., JPM Coin, Ripple)
+3. **KYC/AML:** Shared KYC registry reduces duplication
+4. **Supply Chain Finance:** Track goods and payments in real time
+5. **Loyalty Programs:** Token-based interoperable rewards
+6. **Digital Identity:** Self-sovereign identity management
+7. **Syndicated Loans:** Streamlined settlement among multiple lenders
+
+#### C. Cryptocurrencies and Central Bank Digital Currency (CBDC)
+
+| Aspect | Cryptocurrency | CBDC (e-Rupee) |
+|--------|---------------|----------------|
+| **Issuer** | Decentralised (no central issuer) | Central Bank (RBI) |
+| **Legal Tender** | Not legal tender in India | Yes — equivalent to physical currency |
+| **Value Stability** | Highly volatile | Stable — same value as fiat rupee |
+| **Anonymity** | Pseudonymous (traceable on blockchain) | Controlled anonymity (RBI can track) |
+| **Regulation** | Not regulated in India (taxable but not legal) | Fully regulated by RBI |
+| **Technology** | Public blockchain | Permissioned DLT |
+| **Examples** | Bitcoin, Ethereum, Ripple | Digital Rupee (e₹) — launched 2022 |
+
+**India's stance on cryptocurrencies:**
+- **Supreme Court (2020):** Set aside RBI's 2018 banking ban on crypto
+- **Cryptocurrency Tax (2022):** 30% tax on gains + 1% TDS on transactions
+- **RBI's position:** "Serious concerns" about macroeconomic stability; advocates for global regulation
+- **Current status (2025):** No comprehensive crypto law; crypto assets are taxed but not recognised as legal tender
+
+**e-Rupee (CBDC) — Key Features:**
+| Feature | Wholesale (e₹-W) | Retail (e₹-R) |
+|---------|-----------------|---------------|
+| **Purpose** | Interbank settlement | General public use |
+| **Launch** | November 2022 | December 2022 |
+| **Technology** | Distributed Ledger Technology | DLT-based |
+| **Access** | Banks and financial institutions | General public via banks/wallets |
+| **Benefits** | Faster settlement, reduced cost | Offline capability, no bank account needed for basic transactions |
+
+### 5.7 Comparison Table: Key Banking Acts
+
+| Act | Year | Objective | Administered by |
+|-----|------|-----------|-----------------|
+| **Negotiable Instruments Act** | 1881 | Govern cheques, promissory notes, bills of exchange | Judiciary / RBI |
+| **Banking Regulation Act** | 1949 | Regulation of banking companies | RBI |
+| **RBI Act** | 1934 | Constitution and functioning of RBI | RBI |
+| **FEMA** | 1999 | Foreign exchange management | RBI + ED |
+| **PMLA** | 2002 | Anti-money laundering | FIU-IND + ED |
+| **IBC** | 2016 | Insolvency resolution | IBBI + NCLT |
+| **Competition Act** | 2002 | Prevent anti-competitive practices | CCI |
+| **SEBI Act** | 1992 | Securities market regulation | SEBI |
+| **IRDA Act** | 1999 | Insurance regulation | IRDA |
+| **DICGC Act** | 1961 | Deposit insurance | DICGC |
+
+### 5.8 SBI PO / IBPS SO / RBI Grade B Exam Tips for Banking Acts & Terminology
+
+| Exam | Key Topics | Strategy |
+|------|-----------|----------|
+| **RBI Grade B** | PMLA provisions (Section 3, 4, 12), FEMA (Section 5 vs 6), IBC waterfall (Section 53), prudential regulation norms | Focus on section numbers; study recent AML/CFT guidelines; understand Basel III implementation details |
+| **SBI PO** | NI Act Section 138 (timelines, punishment), priority sector targets, NPA classification and provisioning, CASA/CD/PCR ratios | Practice numerical on NPA ratios and provisioning; memorise all priority sector percentages |
+| **IBPS SO** | Competition Act (Sections 3, 4), KYC norms (4 tiers), digital banking, blockchain basics, cryptocurrency taxation | Use comparison tables for acts (year + objective + administering body); understand e-Rupee features |
+| **Common tips** | Section 138 timelines are frequently asked; memorise the sequence: 30 days notice → 15 days payment → 30 days complaint; know all important years and section numbers | Create a matrix of acts with years and administering agencies; revise weekly |
+
+---
+
+## TypeScript Example: Cryptocurrency Tax Calculator
+
+```typescript
+interface CryptoTaxResult {
+  purchasePrice: number;
+  salePrice: number;
+  quantity: number;
+  capitalGains: number;
+  taxRate: number;
+  taxAmount: number;
+  tdsRate: number;
+  tdsAmount: number;
+  netProceeds: number;
+}
+
+function calculateCryptoTax(
+  purchasePrice: number,
+  salePrice: number,
+  quantity: number,
+  taxRate: number,
+  tdsRate: number
+): CryptoTaxResult {
+  const totalCost = purchasePrice * quantity;
+  const totalSale = salePrice * quantity;
+  const capitalGains = totalSale - totalCost;
+  const taxAmount = capitalGains > 0 ? capitalGains * (taxRate / 100) : 0;
+  const tdsAmount = totalSale * (tdsRate / 100);
+  const netProceeds = totalSale - taxAmount - tdsAmount;
+
+  return {
+    purchasePrice,
+    salePrice,
+    quantity,
+    capitalGains: Math.round(capitalGains),
+    taxRate,
+    taxAmount: Math.round(taxAmount),
+    tdsRate,
+    tdsAmount: Math.round(tdsAmount),
+    netProceeds: Math.round(netProceeds),
+  };
+}
+
+const crypto = calculateCryptoTax(2000000, 3500000, 1, 30, 1);
+console.log(`Capital Gains: ₹${crypto.capitalGains}, Tax: ₹${crypto.taxAmount}, TDS: ₹${crypto.tdsAmount}`);
+console.log(`Net Proceeds after tax: ₹${crypto.netProceeds}`);
+// Output: Capital Gains: ₹1500000, Tax: ₹450000, TDS: ₹35000
+// Output: Net Proceeds after tax: ₹3015000
 ```
 
 ---
@@ -1147,19 +1519,29 @@ The IBC waterfall (Section 53) gives first priority to insolvency resolution cos
 18. A cheque that has "_________" written between two parallel lines can only be paid to that specific bank.
 19. The UPI system was launched by the _________ in 2016.
 20. The _________ Act governs the credit information companies in India.
+21. The CBDC retail pilot (e₹-R) was launched in _________ 2022.
+22. The TDS rate applicable on cryptocurrency transactions is _________%.
+23. _________ is a distributed ledger technology where transactions are recorded in immutable blocks.
+24. Self-executing contracts with coded terms on blockchain are called _________.
+25. Banking risk arising from borrowers failing to repay is called _________ risk.
 
 ### Section C: True or False
 
-21. A standard asset has no overdue amount. (True/False)
-22. FERA had a presumption of guilt, while FEMA has a presumption of innocence. (True/False)
-23. Money laundering has three stages: Placement, Layering, and Integration. (True/False)
-24. Under IBC, the CIRP must be completed within 180 days with no extension. (True/False)
-25. CASA ratio includes both current account and savings account deposits. (True/False)
-26. The NI Act, 1881 applies only to cheques, not promissory notes. (True/False)
-27. A higher CD ratio always indicates better bank performance. (True/False)
-28. Crossed cheques can only be paid through a bank account, not across the counter. (True/False)
-29. The PMLA is administered by the Ministry of Finance. (True/False)
-30. Under the Competition Act, the CCI can regulate mergers and acquisitions above specified thresholds. (True/False)
+26. A standard asset has no overdue amount. (True/False)
+27. FERA had a presumption of guilt, while FEMA has a presumption of innocence. (True/False)
+28. Money laundering has three stages: Placement, Layering, and Integration. (True/False)
+29. Under IBC, the CIRP must be completed within 180 days with no extension. (True/False)
+30. CASA ratio includes both current account and savings account deposits. (True/False)
+31. The NI Act, 1881 applies only to cheques, not promissory notes. (True/False)
+32. A higher CD ratio always indicates better bank performance. (True/False)
+33. Crossed cheques can only be paid through a bank account, not across the counter. (True/False)
+34. The PMLA is administered by the Ministry of Finance. (True/False)
+35. Under the Competition Act, the CCI can regulate mergers and acquisitions above specified thresholds. (True/False)
+36. The e-Rupee is a decentralised cryptocurrency like Bitcoin. (True/False)
+37. Proof of Work is the consensus mechanism used by Bitcoin. (True/False)
+38. Prudential regulation in banking focuses only on profitability targets. (True/False)
+39. Cryptocurrency gains in India are taxed at 30%. (True/False)
+40. Blockchain provides an immutable record of transactions. (True/False)
 
 ### Answer Key
 
@@ -1169,8 +1551,10 @@ The IBC waterfall (Section 53) gives first priority to insolvency resolution cos
 | 6 | d (100%) | 7 | c (FIU-IND) | 8 | c (MRTP Act) | 9 | c (IGST) | 10 | c (NPA for > 12 months) |
 | 11 | Layering | 12 | NCLT | 13 | low-cost / current and savings | 14 | Provision Coverage Ratio | 15 | 40 |
 | 16 | 2009 | 17 | Capital | 18 | special crossing | 19 | NPCI | 20 | Credit Information Companies (Regulation) Act, 2005 / CICRA |
-| 21 | False (≤ 90 days overdue) | 22 | True | 23 | True | 24 | False (330 days with extensions) | 25 | True |
-| 26 | False (promissory notes, bills of exchange, cheques) | 27 | False (very high CD ratio may indicate liquidity risk) | 28 | True | 29 | True | 30 | True |
+| 21 | December | 22 | 1% | 23 | Blockchain | 24 | Smart contracts | 25 | Credit |
+| 26 | False (≤ 90 days overdue) | 27 | True | 28 | True | 29 | False (330 days with extensions) | 30 | True |
+| 31 | False (promissory notes, bills of exchange, cheques) | 32 | False (very high CD ratio may indicate liquidity risk) | 33 | True | 34 | True | 35 | True |
+| 36 | False (government-issued, permissioned DLT) | 37 | True | 38 | False (safety and soundness, not just profitability) | 39 | True | 40 | True |
 
 ---
 

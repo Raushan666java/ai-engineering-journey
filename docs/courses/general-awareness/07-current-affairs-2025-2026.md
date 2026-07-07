@@ -674,6 +674,216 @@ The Digital Personal Data Protection Act, 2023 (fully enforced by 2025 with rule
 
 ---
 
+### 7.9 Major International Summits 2025–2026
+
+| Summit | Date | Host Country | Key Agenda |
+|--------|------|-------------|------------|
+| G20 Summit 2025 | ~Nov 2025 | South Africa | First G20 in Africa; inclusive growth; climate finance |
+| G20 Summit 2026 | ~Nov 2026 | USA | US hosts after South Africa; debt and health priorities |
+| COP30 | Nov 2025 | Belém, Brazil | New NDCs submitted; post-2030 climate targets |
+| COP31 | Nov 2026 | TBD | Global stocktake follow-up; climate adaptation |
+| BRICS Summit 2025 | Oct 2025 | Brazil | Expanded BRICS+ cooperation; de-dollarisation |
+| SCO Summit 2025 | Jul 2025 | Kazakhstan | Regional security and connectivity |
+| Quad Summit 2025 | Sep 2025 | Japan | Indo-Pacific security; technology cooperation |
+| UNGA 80 | Sep 2025 | New York, USA | 80th session; UN reforms; SDG mid-term review |
+| WEF Davos 2025 | Jan 2025 | Davos, Switzerland | Theme: "Collaboration for the Intelligent Age" |
+| FIFA World Cup | Jun-Jul 2026 | USA/Mexico/Canada | First 48-team World Cup; 104 matches |
+
+### 7.10 Color Revolutions and Global Movements — Extended Reference
+
+In addition to the revolutions listed in Ch 6 (Current Affairs 2024), the following movements are relevant for 2025-26 current affairs context:
+
+| Movement | Country | Year | Context |
+|----------|---------|------|---------|
+| Blue Revolution | India | Ongoing | Integrated fisheries development (Neel Kranti Mission) |
+| White Revolution | India | 1970s–ongoing | Operation Flood — dairy development (Amul model) |
+| Green Revolution | India | 1960s–70s | High-yield varieties, food self-sufficiency (M.S. Swaminathan) |
+| Yellow Revolution | India | 1980s–90s | Oil seed production growth |
+| Golden Revolution | India | 1990s–2000s | Horticulture and fruit production boom |
+| Pink Revolution | India | Ongoing | Meat and poultry processing growth |
+| Silver Revolution | India | Ongoing | Egg and poultry production growth |
+| Red Revolution | India | Ongoing | Tomato and meat production |
+| Round Revolution | India | Ongoing | Potato production |
+| Grey Revolution | India | Ongoing | Fertilizer production |
+| Black Revolution | India | Ongoing | Petroleum production |
+
+### 7.11 ISRO and Space Missions 2025–2026 Timeline
+
+```mermaid
+timeline
+    title ISRO Missions 2025-2026
+    2025 : Gaganyaan TV-D2 & TV-D3 : NISAR (NASA-ISRO) Earth Observation
+    2025 : SSLV-D4 commercialization : SpaDeX (Space Docking Experiment)
+    2026 : Gaganyaan Crewed Mission (First Indian in space)
+    2026 : Shukrayaan (Venus Orbiter) : Chandrayaan-4 (Sample Return)
+    2026 : Bharatiya Antariksha Station (first module)
+```
+
+**Key Missions Details:**
+
+| Mission | Target | Launch Year | Significance |
+|---------|--------|-------------|--------------|
+| Gaganyaan | Low Earth Orbit (~400 km) | 2025-26 | India's first crewed space mission; 3 crew members; 3-day orbit |
+| NISAR | Earth Observation | 2025 | Joint NASA-ISRO satellite; SAR imaging every 12 days |
+| Shukrayaan | Venus | 2026 | Orbiter to study Venus atmosphere and surface |
+| Chandrayaan-4 | Moon | ~2026–27 | Sample return mission; collecting lunar soil |
+| Bharatiya Antariksha Station | LEO | 2028+ (first module) | India's own space station; ~52 tons initially |
+| Mangalyaan-2 | Mars | ~2026–28 | Orbiter with lander/rover capability |
+
+### 7.12 Economic Indicators 2025-2026 — Comparative Analysis
+
+| Indicator | 2024-25 (Actual) | 2025-26 (Budget Estimate) | 2026-27 (Projected) |
+|-----------|-----------------|--------------------------|---------------------|
+| GDP Growth (%) | ~6.5% | ~6.3–6.8% | ~6.5–7.0% |
+| Fiscal Deficit (% of GDP) | 4.9% | 4.4% | ~4.0% (target) |
+| CPI Inflation (%) | ~4.8% | ~4.0–4.5% | ~4.0% (target) |
+| GST Collection (₹ lakh cr) | ~20.2 | ~21.5 | ~23.0 |
+| Forex Reserves ($ billion) | ~700 | ~750 | ~800 |
+| Capex (₹ lakh crore) | 11.11 | 12.15 | ~13.5 |
+| Agriculture Growth (%) | ~3.5% | ~3.8% | ~4.0% |
+| Industrial Growth (%) | ~7.5% | ~7.0% | ~7.2% |
+| Services Growth (%) | ~7.8% | ~7.5% | ~7.6% |
+
+### 7.13 Important Abbreviations and Terms 2025-2026
+
+| Abbreviation | Full Form | Context |
+|--------------|-----------|---------|
+| UCC | Uniform Civil Code | Implemented by Uttarakhand (2025) |
+| ONOE | One Nation One Election | Bill introduced; simultaneous elections |
+| NCQG | New Collective Quantified Goal | COP29 climate finance target |
+| NDC | Nationally Determined Contributions | Climate pledges under Paris Agreement |
+| DPI | Digital Public Infrastructure | India's UPI, Aadhaar, DigiLocker model |
+| CET | Critical and Emerging Technologies | Quad and India-USA focus area |
+| AMCA | Advanced Medium Combat Aircraft | India's 5th generation stealth fighter |
+| MIRV | Multiple Independently Targetable Re-entry Vehicles | Agni-5 test (Divyastra) |
+| CBDC | Central Bank Digital Currency | eRupee pilot expanded |
+| NCAP | National Clean Air Programme | PM2.5 reduction by 40% target |
+| IPEF | Indo-Pacific Economic Framework | US-led trade initiative |
+| CPEC | China-Pakistan Economic Corridor | Belt and Road project in Pakistan |
+| INSTC | International North-South Transport Corridor | India-Russia-Iran connectivity |
+
+### 7.14 TypeScript: Current Events 2025-2026 Analyzer
+
+```typescript
+/**
+ * 2025-2026 Current Affairs Data Manager
+ * Tracks ongoing developments and generates study plans
+ */
+interface DevelopmentTracker {
+  sector: string;
+  initiative: string;
+  status: 'completed' | 'ongoing' | 'planned' | 'stalled';
+  targetYear: number;
+  keyMetric: string;
+}
+
+class FutureTracker {
+  private developments: DevelopmentTracker[] = [];
+
+  constructor() {
+    this.developments = [
+      { sector: 'Space', initiative: 'Gaganyaan Crewed Mission', status: 'planned', targetYear: 2026, keyMetric: 'First Indian in space' },
+      { sector: 'Economy', initiative: '$5 trillion GDP', status: 'ongoing', targetYear: 2027, keyMetric: 'Nominal GDP target' },
+      { sector: 'Defence', initiative: 'AMCA 5th Gen Fighter', status: 'ongoing', targetYear: 2028, keyMetric: 'First flight prototype' },
+      { sector: 'Energy', initiative: '500 GW Renewable Capacity', status: 'ongoing', targetYear: 2030, keyMetric: 'Installed capacity' },
+      { sector: 'Environment', initiative: 'Net Zero Emissions', status: 'planned', targetYear: 2070, keyMetric: 'Carbon neutrality' },
+    ];
+  }
+
+  public filterBySector(sector: string): DevelopmentTracker[] {
+    return this.developments.filter(d => d.sector.toLowerCase() === sector.toLowerCase());
+  }
+
+  public printRoadmap(): void {
+    console.log('=== INDIA DEVELOPMENT ROADMAP 2025-2030 ===');
+    const sorted = [...this.developments].sort((a, b) => a.targetYear - b.targetYear);
+    sorted.forEach(d => {
+      const statusIcon = d.status === 'completed' ? '✅' : d.status === 'ongoing' ? '🔄' : d.status === 'planned' ? '📋' : '⏸️';
+      console.log(`${statusIcon} [${d.targetYear}] ${d.initiative}`);
+      console.log(`   Sector: ${d.sector} | Target: ${d.keyMetric}`);
+    });
+    console.log('==========================================');
+  }
+}
+
+const future = new FutureTracker();
+future.printRoadmap();
+```
+
+### 7.15 Additional Solved MCQs (Current Affairs 2025-2026)
+
+**Q21:** The "One Nation One Election" High-Level Committee was chaired by:
+
+A) Law Commission Chairman
+B) Ram Nath Kovind
+C) NITI Aayog CEO
+D) Amit Shah
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Ram Nath Kovind**
+
+Former President Ram Nath Kovind chaired the High-Level Committee on One Nation One Election (constituted in 2023; report submitted in 2025). The committee recommended simultaneous elections for Lok Sabha and state assemblies.
+</details>
+
+**Q22:** India's first "mRNA vaccine" facility became operational in which state?
+
+A) Maharashtra
+B) Telangana
+C) Karnataka
+D) Gujarat
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Telangana (Hyderabad)**
+
+India's first mRNA vaccine manufacturing facility was established in Hyderabad, Telangana by Gennova Biopharmaceuticals. This was a significant step in India's pandemic preparedness, building on the success of the mRNA platform during COVID-19.
+</details>
+
+**Q23:** The "Bharatiya Antariksha Station" will be India's:
+
+A) First satellite
+B) Space station
+C) Moon lander
+D) Mars orbiter
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Space station**
+
+The Bharatiya Antariksha Station (BAS) is India's planned modular space station. The first module is expected to be launched around 2028, with the full station operational by 2035. It will orbit Earth at about 400 km altitude and support crew of 3-4 astronauts.
+</details>
+
+**Q24:** The "Glasgow 2026" Commonwealth Games will feature:
+
+A) Full 25-sport programme
+B) Scaled-down 10-sport programme
+C) First e-sports inclusion
+D) Only para-sports
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Scaled-down 10-sport programme**
+
+The 2026 Commonwealth Games in Glasgow (originally awarded to Victoria, Australia, which withdrew) will feature a scaled-down programme of 10 sports across 4 venues, focusing on cost reduction and sustainability.
+</details>
+
+**Q25:** India's semiconductor fabrication plant in Dholera (Gujarat) is being established by:
+
+A) TSMC
+B) Tata Electronics and Powerchip Semiconductor
+C) Intel India
+D) Samsung India
+
+<details>
+<summary>Answer</summary>
+**Answer: B) Tata Electronics and Powerchip Semiconductor (Taiwan)**
+
+Tata Electronics partnered with Taiwan's Powerchip Semiconductor Manufacturing Company (PSMC) to set up India's first commercial semiconductor fab in Dholera, Gujarat. The project involves an investment of ₹91,000 crore.
+</details>
+
+---
+
 ## Summary
 
 - **Union Budget 2025-26:** Fiscal deficit 4.4%, capex ₹12.15 lakh crore, new tax regime simplified, standard deduction ₹1,00,000.
@@ -878,6 +1088,78 @@ D) Asian Games
 
 **30.** India's economy is projected to become the 3rd largest globally by 2029-30. (T/F)
 
+### Section D: Additional MCQs (Exam Focus — 2025-2026)
+
+**31.** The "12th World Hindi Conference" was held in which country?
+
+A) India
+B) Fiji
+C) Mauritius
+D) USA
+
+**32.** India's "Zorawar" light tank was developed primarily for:
+
+A) Desert warfare
+B) High-altitude warfare
+C) Amphibious operations
+D) Urban warfare
+
+**33.** The "India AI Mission" was allocated a budget of:
+
+A) ₹5,000 crore
+B) ₹10,372 crore
+C) ₹15,000 crore
+D) ₹20,000 crore
+
+**34.** The "COP30" climate summit was held in which Brazilian city?
+
+A) Rio de Janeiro
+B) São Paulo
+C) Belém
+D) Brasília
+
+**35.** The "ICC T20 World Cup 2026" will be co-hosted by:
+
+A) India and Sri Lanka
+B) India and Bangladesh
+C) Sri Lanka and Bangladesh
+D) India and UAE
+
+**36.** The "UDAN" (Ude Desh ka Aam Nagrik) scheme is associated with:
+
+A) Road connectivity
+B) Rail connectivity
+C) Air connectivity
+D) Digital connectivity
+
+**37.** The "Mission Karmayogi" is related to:
+
+A) Defence modernisation
+B) Civil services reform
+C) Skill development
+D) Health sector
+
+**38.** India's first "green hydrogen" plant was inaugurated in:
+
+A) Gujarat
+B) Tamil Nadu
+C) Kerala
+D) Odisha
+
+**39.** The Deputy Speaker of the 18th Lok Sabha (2024–2029) is:
+
+A) K. Suresh
+B) M. Thambidurai
+C) (Vacant / To be elected)
+D) Sumitra Mahajan
+
+**40.** The "INS Vikrant" is India's:
+
+A) Nuclear submarine
+B) Indigenous aircraft carrier
+C) Destroyer
+D) Frigate
+
 ---
 
 <details>
@@ -918,6 +1200,18 @@ D) Asian Games
 28. F (Celebrated in 2025 — Savarkar born 28 May 1883)
 29. T (First module expected around 2028; full station by 2035)
 30. T (Projected by multiple agencies including S&P Global, Morgan Stanley)
+
+**Section D (31-40):**
+31. B) Fiji (12th World Hindi Conference was held in Nadi, Fiji in 2025)
+32. B) High-altitude warfare (developed by DRDO for deployment in eastern Ladakh and high-altitude areas)
+33. B) ₹10,372 crore (India AI Mission was approved in 2024 for AI computing, innovation centers, and skilling)
+34. C) Belém (COP30 was held in Belém, Brazil, in November 2025; Amazon rainforest focus)
+35. A) India and Sri Lanka (co-hosted the 2026 ICC Men's T20 World Cup)
+36. C) Air connectivity (UDAN scheme by Ministry of Civil Aviation aims to make air travel affordable for common people)
+37. B) Civil services reform (Mission Karmayogi is the National Programme for Civil Services Capacity Building)
+38. A) Gujarat (India's first green hydrogen plant was inaugurated in Gujarat by Reliance/Gujarat Govt)
+39. C) (Vacant / To be elected) — as of 2025, the Deputy Speaker post was vacant; check current status closer to exam
+40. B) Indigenous aircraft carrier (INS Vikrant is India's first indigenously built aircraft carrier, commissioned in 2022)
 </details>
 
 ---

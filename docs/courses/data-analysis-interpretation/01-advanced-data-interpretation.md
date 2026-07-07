@@ -699,7 +699,657 @@ Profit in 2022 = 18% of 680 = 0.18 × 680 = ₹122.4 crores.
 
 ---
 
-## Summary
+### 1.11 Calculation Shortcuts and Tricks for DI
+
+Master these calculation shortcuts to solve DI questions 2-3 times faster:
+
+#### Percentage Shortcuts
+
+| Calculation | Shortcut Method |
+|-------------|----------------|
+| 12.5% of 640 | 12.5% = 1/8 → 640/8 = 80 |
+| 37.5% of 800 | 37.5% = 3/8 → 800 × 3/8 = 300 |
+| 16.67% of 900 | 16.67% = 1/6 → 900/6 = 150 |
+| 45% of 250 | 10% = 25, 40% = 100, 5% = 12.5 → Total = 112.5 |
+| 62% of 350 | 50% = 175, 12% = 42 → 175 + 42 = 217 |
+
+**The Fraction Table** — Memorise these for instant conversion:
+
+| Fraction | % | Fraction | % |
+|----------|---|----------|---|
+| 1/2 | 50% | 1/3 | 33.33% |
+| 1/4 | 25% | 2/3 | 66.67% |
+| 1/5 | 20% | 3/4 | 75% |
+| 1/6 | 16.67% | 3/5 | 60% |
+| 1/7 | 14.28% | 4/5 | 80% |
+| 1/8 | 12.5% | 5/6 | 83.33% |
+| 1/9 | 11.11% | 7/8 | 87.5% |
+| 1/10 | 10% | 1/1 | 100% |
+
+#### Ratio Simplification Trick
+
+To simplify a ratio like 288:384:
+1. Divide both by 2: 144:192
+2. Divide both by 2: 72:96
+3. Divide both by 24: 3:4
+Final: 288:384 = 3:4
+
+#### Fast Average Calculation
+
+Instead of `(a+b+c+d)/4`, use the **deviation method**:
+- Pick a reference number close to the expected average
+- Sum the deviations from the reference
+- Divide by count and add to reference
+
+**Example:** Find average of 42, 47, 39, 52, 45
+- Reference = 40
+- Deviations: +2, +7, -1, +12, +5 = +25
+- Average = 40 + 25/5 = 40 + 5 = 45
+
+#### CAGR Approximation Trick
+
+For 2-year CAGR: `CAGR ≈ (r₁ + r₂)/2 - (r₁ - r₂)² / (4 × (r₁ + r₂))`
+Where r₁ and r₂ are year-over-year growth rates.
+
+**Example:** Growth 20% in Year 1, 30% in Year 2
+- Simple average = 25%
+- Adjustment = (20-30)² / (4 × (20+30)) = 100 / 200 = 0.5
+- Approx CAGR = 25 - 0.5 = 24.5%
+- Exact CAGR = ((1.20 × 1.30)^0.5 - 1) × 100 = (1.56^0.5 - 1) × 100 = 24.9% — close enough!
+
+#### The "10% Method" for Any Percentage
+
+To find x% of a number:
+1. Find 10% (divide by 10)
+2. Find 1% (divide 10% by 10)
+3. Multiply and add
+
+**Example:** 17% of 850
+- 10% of 850 = 85
+- 1% of 850 = 8.5
+- 7% = 7 × 8.5 = 59.5
+- 17% = 85 + 59.5 = 144.5
+
+### 1.12 Common Mistakes in DI and How to Avoid Them
+
+| Mistake | Example | Why It's Wrong | Correct Approach |
+|---------|---------|---------------|------------------|
+| Reading wrong axis | Confusing left-axis bar with right-axis line in combo charts | Each axis has its own scale | Check legend before reading values |
+| Misidentifying percentage base | "Profit is 20% of cost" vs "Profit is 20% of sales" | Different bases give different answers | Identify the base entity: "of" what? |
+| Adding percentages directly | 20% increase + 10% increase = 30% | Compounding gives 32% | Multiply: 1.20 × 1.10 = 1.32 |
+| Rounding intermediate answers | Rounding 37.4% to 37% | Accumulated error changes final answer | Keep 2 decimal places until final step |
+| Summing pie chart percentages | 35% + 25% + 20% + 15% = 95% (missing 5%) | Pie must total 100% | Check that all segments sum to 100% |
+| Confusing "more than" and "of" | "A is 20% more than B" vs "A is 20% of B" | A = B × 1.20 vs A = B × 0.20 | Read the wording precisely |
+
+### 1.13 Exam Strategy Tips for IBPS/SBI/RBI DI Section
+
+#### Time Allocation (35 minutes for 25 questions)
+
+| Section | Time Budget | Strategy |
+|---------|-------------|----------|
+| Data Interpretation | 20 min | 5 question sets × 4 min each |
+| Data Sufficiency | 8 min | 5 questions × 1.5 min each |
+| Miscellaneous | 7 min | Remaining arithmetic questions |
+
+#### Priority Order Within a DI Set
+
+1. **Direct read questions** (10-15 seconds each) — read values straight from the table/chart
+2. **Single-step calculations** (30-45 seconds) — one percentage or ratio operation
+3. **Two-step calculations** (45-60 seconds) — find intermediate value, then compute
+4. **Multi-step calculations** (60-90 seconds) — three or more operations
+5. **True/False statements** (60-90 seconds) — verify each statement
+
+#### Smart Guessing Strategy
+
+When running out of time:
+- Eliminate obviously wrong options (values outside feasible range)
+- Look for options that are round numbers (often the correct answer in DI)
+- Use the "range method": eliminate the largest and smallest options if approximate
+- For "which is true" questions, start with the simplest statement to verify
+
+#### DI Speed Hacks
+
+| Hack | Description |
+|------|-------------|
+| **Value Approximation** | Round 47,83,214 to 48 lakh for quick calculations |
+| **Option Elimination** | If options are spaced widely (e.g., 120, 240, 360, 480), approximate to closest |
+| **Cross-Multiplication** | For "x% of y" questions, use x × y / 100 |
+| **Unit Consistency** | Convert lakhs to thousands or crores before dividing |
+| **Mental Math** | 12.5% = 1/8, 33.33% = 1/3, 66.67% = 2/3 |
+
+#### Topic Weightage in Exams
+
+| Topic | IBPS PO | SBI PO | RBI Grade B | SSC CGL |
+|-------|---------|--------|-------------|---------|
+| Tabular DI | 5-7 Q | 5-6 Q | 6-8 Q | 4-5 Q |
+| Bar Graph | 3-5 Q | 4-5 Q | 4-5 Q | 5-6 Q |
+| Line Graph | 3-4 Q | 3-4 Q | 3-4 Q | 3-4 Q |
+| Pie Chart | 4-5 Q | 3-5 Q | 4-5 Q | 4-5 Q |
+| Caselet DI | 3-5 Q | 4-5 Q | 4-6 Q | 3-4 Q |
+| Data Sufficiency | 4-5 Q | 4-5 Q | 5 Q | — |
+
+### 1.14 GFG-Style Table DI — Train Arrival/Departure Data
+
+Study the following table and answer the questions:
+
+| Train Category | Total Scheduled | Arrived Late | Arrived Early | Departed Late | Departed Early |
+|---------------|----------------|-------------|--------------|--------------|---------------|
+| Express | 600 | 114 | 32 | 82 | 28 |
+| Superfast | 450 | 31 | 18 | 5 | 12 |
+| Local | 350 | 5 | 8 | 3 | 6 |
+| **Total** | **1,400** | **150** | **58** | **90** | **46** |
+
+**Q21.** What is the total number of trains that arrived late?
+
+a) 120
+b) 130
+c) 140
+d) 150
+
+<details>
+<summary>Answer</summary>
+d) 150
+
+Total late arrivals = 114 + 31 + 5 = 150.
+</details>
+
+**Q22.** What percentage of total trains departed late?
+
+a) 5.43%
+b) 6.43%
+c) 7.43%
+d) 8.43%
+
+<details>
+<summary>Answer</summary>
+b) 6.43%
+
+Total departed late = 82 + 5 + 3 = 90. Percentage = (90/1400) × 100 = 6.43%.
+</details>
+
+**Q23.** How many more Express trains arrived late than Superfast trains?
+
+a) 80
+b) 83
+c) 85
+d) 90
+
+<details>
+<summary>Answer</summary>
+b) 83
+
+Express late = 114, Superfast late = 31. Difference = 114 - 31 = 83.
+</details>
+
+### 1.15 Books Sales Data — Table DI with Trend Analysis
+
+| Month | Fiction | Non-Fiction | Educational | Total |
+|-------|---------|-------------|-------------|-------|
+| January | 120 | 80 | 60 | 260 |
+| February | 150 | 90 | 70 | 310 |
+| March | 180 | 100 | 85 | 365 |
+| April | 210 | 110 | 95 | 415 |
+| May | 240 | 130 | 110 | 480 |
+
+**Q24.** What is the average number of books sold per month?
+
+a) 356
+b) 366
+c) 376
+d) 386
+
+<details>
+<summary>Answer</summary>
+b) 366
+
+Average = (260 + 310 + 365 + 415 + 480) / 5 = 1830 / 5 = 366 books.
+</details>
+
+**Q25.** What is the percentage increase in Fiction sales from January to May?
+
+a) 50%
+b) 75%
+c) 100%
+d) 125%
+
+<details>
+<summary>Answer</summary>
+c) 100%
+
+Increase = (240 - 120) / 120 × 100 = 120/120 × 100 = 100%.
+</details>
+
+**Q26.** If the trend continues, what will be the total sales in June?
+
+a) 500
+b) 525
+c) 545
+d) 560
+
+<details>
+<summary>Answer</summary>
+c) 545
+
+Monthly increase in total = 50, 55, 50, 65 — average ≈ 55. June ≈ 480 + 65 = 545.
+</details>
+
+### 1.16 More Examples with Pie Chart and Bar Graph Data
+
+**Pie Chart: Monthly Expenditure (Total Income = ₹75,000)**
+
+| Category | Percentage |
+|----------|-----------|
+| Food | 25% |
+| Rent | 30% |
+| Transportation | 15% |
+| Education | 10% |
+| Entertainment | 8% |
+| Savings | 12% |
+
+**Q27.** What amount is spent on Rent?
+
+a) ₹18,750
+b) ₹22,500
+c) ₹25,000
+d) ₹30,000
+
+<details>
+<summary>Answer</summary>
+b) ₹22,500
+
+Rent = 30% of 75,000 = 0.30 × 75,000 = ₹22,500.
+</details>
+
+**Q28.** How much more is spent on Food and Rent together compared to Transportation and Education combined?
+
+a) ₹20,000
+b) ₹22,500
+c) ₹25,000
+d) ₹27,500
+
+<details>
+<summary>Answer</summary>
+b) ₹22,500
+
+Food + Rent = 55% of 75,000 = ₹41,250. Transport + Education = 25% of 75,000 = ₹18,750. Difference = ₹41,250 - ₹18,750 = ₹22,500.
+</details>
+
+**Q29.** If the Entertainment budget is reduced by half and added to Savings, what is the new Savings amount?
+
+a) ₹9,000
+b) ₹12,000
+c) ₹15,000
+d) ₹18,000
+
+<details>
+<summary>Answer</summary>
+b) ₹12,000
+
+Original Entertainment = 8% of 75,000 = ₹6,000. Reduced by half = ₹3,000. Original Savings = 12% of 75,000 = ₹9,000. New Savings = ₹9,000 + ₹3,000 = ₹12,000.
+</details>
+
+### 1.17 Line Graph — Vehicle Production Data (GFG Style)
+
+Number of Vehicles Manufactured by Two Companies Over Years (in Thousands):
+
+| Year | Company X | Company Y |
+|------|-----------|-----------|
+| 2011 | 119 | 139 |
+| 2012 | 99 | 120 |
+| 2013 | 141 | 100 |
+| 2014 | 78 | 128 |
+| 2015 | 120 | 107 |
+| 2016 | 159 | 148 |
+
+**Q30.** What is the average number of vehicles manufactured by Company X over the given period?
+
+a) 116,000
+b) 119,333
+c) 125,000
+d) 131,667
+
+<details>
+<summary>Answer</summary>
+b) 119,333
+
+Average X = (119 + 99 + 141 + 78 + 120 + 159) / 6 × 1000 = 716/6 × 1000 = 119,333.
+</details>
+
+**Q31.** In which year was the difference between production of X and Y the maximum?
+
+a) 2012
+b) 2013
+c) 2014
+d) 2016
+
+<details>
+<summary>Answer</summary>
+c) 2014
+
+Differences: 2011 = 20, 2012 = 21, 2013 = 41, 2014 = 50, 2015 = 13, 2016 = 11. Maximum in 2014 (50,000).
+</details>
+
+**Q32.** The production of Company Y in 2014 was approximately what percent of Company X's production in the same year?
+
+a) 154%
+b) 164%
+c) 174%
+d) 184%
+
+<details>
+<summary>Answer</summary>
+b) 164%
+
+Y(2014) = 128,000, X(2014) = 78,000. Percentage = (128/78) × 100 ≈ 164.1%.
+</details>
+
+### TypeScript CAGR Calculator and Chart Generator
+
+```typescript
+/** CAGR Calculator with multiple utility functions */
+class CAGRCalculator {
+  /** Compute exact CAGR */
+  static compute(
+    initialValue: number,
+    finalValue: number,
+    periods: number
+  ): number {
+    if (initialValue <= 0 || periods <= 0) return 0;
+    return parseFloat(
+      ((Math.pow(finalValue / initialValue, 1 / periods) - 1) * 100).toFixed(2)
+    );
+  }
+
+  /** Approximate 2-year CAGR from annual growth rates */
+  static approximate2Year(r1: number, r2: number): number {
+    const avg = (r1 + r2) / 2;
+    const adjustment = Math.pow(r1 - r2, 2) / (4 * (r1 + r2));
+    return parseFloat((avg - adjustment).toFixed(2));
+  }
+
+  /** Future value from CAGR */
+  static futureValue(
+    presentValue: number,
+    cagrPercent: number,
+    years: number
+  ): number {
+    return parseFloat(
+      (presentValue * Math.pow(1 + cagrPercent / 100, years)).toFixed(2)
+    );
+  }
+
+  /** Time to double using Rule of 72 */
+  static timeToDouble(cagrPercent: number): number {
+    return parseFloat((72 / cagrPercent).toFixed(2));
+  }
+
+  /** CAGR for series of values */
+  static fromSeries(values: number[]): number[] {
+    const cagrs: number[] = [];
+    for (let i = 1; i < values.length; i++) {
+      cagrs.push(this.compute(values[0], values[i], i));
+    }
+    return cagrs;
+  }
+}
+
+// Example: Mutual fund returns
+const navSeries = [100, 120, 144, 172.8, 207.36];
+console.log("3-year CAGR:", CAGRCalculator.compute(100, 172.8, 3), "%");
+console.log("Doubling time at 12%:", CAGRCalculator.timeToDouble(12), "years");
+console.log("Future value of ₹50,000 at 14% for 5 years: ₹",
+  CAGRCalculator.futureValue(50000, 14, 5));
+```
+
+### TypeScript Bar Chart Data Analyzer
+
+```typescript
+interface BarData {
+  categories: string[];
+  values: number[];
+  labels?: string[];
+}
+
+class BarChartAnalyzer {
+  /** Find bar with maximum value */
+  static findMax(data: BarData): { category: string; value: number } {
+    const maxIdx = data.values.indexOf(Math.max(...data.values));
+    return { category: data.categories[maxIdx], value: data.values[maxIdx] };
+  }
+
+  /** Find bar with minimum value */
+  static findMin(data: BarData): { category: string; value: number } {
+    const minIdx = data.values.indexOf(Math.min(...data.values));
+    return { category: data.categories[minIdx], value: data.values[minIdx] };
+  }
+
+  /** Calculate percentage contribution of each bar to total */
+  static percentageContribution(data: BarData): number[] {
+    const total = data.values.reduce((a, b) => a + b, 0);
+    return data.values.map(v => parseFloat(((v / total) * 100).toFixed(2)));
+  }
+
+  /** Calculate ratio between two categories */
+  static ratio(
+    data: BarData,
+    catA: string,
+    catB: string
+  ): string {
+    const idxA = data.categories.indexOf(catA);
+    const idxB = data.categories.indexOf(catB);
+    if (idxA === -1 || idxB === -1) return "N/A";
+    const valA = data.values[idxA];
+    const valB = data.values[idxB];
+    const g = (a: number, b: number): number => b === 0 ? a : g(b, a % b);
+    const gcd = g(Math.round(valA), Math.round(valB));
+    return `${Math.round(valA) / gcd} : ${Math.round(valB) / gcd}`;
+  }
+
+  /** Indexed values (base = 100) */
+  static indexedValues(data: BarData, baseCategory: string): number[] {
+    const baseIdx = data.categories.indexOf(baseCategory);
+    if (baseIdx === -1) return [];
+    const baseVal = data.values[baseIdx];
+    return data.values.map(v => parseFloat(((v / baseVal) * 100).toFixed(2)));
+  }
+}
+
+// Example usage
+const salesData: BarData = {
+  categories: ["Product A", "Product B", "Product C", "Product D"],
+  values: [450, 320, 580, 210],
+};
+console.log("Highest selling:", BarChartAnalyzer.findMax(salesData));
+console.log("Contributions:", BarChartAnalyzer.percentageContribution(salesData));
+console.log("Ratio A:C:", BarChartAnalyzer.ratio(salesData, "Product A", "Product C"));
+```
+
+### 1.18 Additional Exercise Questions
+
+**Q31.** A bar graph shows the number of students in five colleges:
+- College A: 22,500 boys, 25,000 girls
+- College B: 25,000 boys, 30,000 girls
+- College C: 30,000 boys, 20,000 girls
+- College D: 22,500 boys, 30,000 girls
+- College E: 22,500 boys, 32,500 girls
+
+What is the average number of girls across all colleges?
+
+a) 25,000
+b) 27,500
+c) 30,000
+d) 32,500
+
+<details>
+<summary>Answer</summary>
+b) 27,500
+
+Total girls = 25,000 + 30,000 + 20,000 + 30,000 + 32,500 = 137,500. Average = 137,500/5 = 27,500.
+</details>
+
+**Q32.** From the same data, the total number of girls in Colleges D and E together is what percent of total girls in Colleges A, B, and C together?
+
+a) 75.3%
+b) 83.3%
+c) 88.3%
+d) 92.3%
+
+<details>
+<summary>Answer</summary>
+b) 83.3%
+
+Girls in D+E = 30,000 + 32,500 = 62,500. Girls in A+B+C = 25,000 + 30,000 + 20,000 = 75,000. Percentage = (62,500/75,000) × 100 = 83.3%.
+</details>
+
+**Q33.** A company surveyed 500 customers. 80% were satisfied with products. Of the satisfied customers, 60% were repeat customers. How many repeat customers were satisfied?
+
+a) 200
+b) 240
+c) 300
+d) 360
+
+<details>
+<summary>Answer</summary>
+b) 240
+
+Satisfied customers = 80% of 500 = 400. Repeat satisfied = 60% of 400 = 240.
+</details>
+
+**Q34.** A pie chart shows: Cement = 72°, Steel = 54°, Labour = 90°, Supervision = 54°, Other = 90°. Total cost = ₹6,00,000. What is the amount spent on cement?
+
+a) ₹90,000
+b) ₹1,00,000
+c) ₹1,20,000
+d) ₹1,50,000
+
+<details>
+<summary>Answer</summary>
+c) ₹1,20,000
+
+Cement = (72/360) × 6,00,000 = 0.20 × 6,00,000 = ₹1,20,000.
+</details>
+
+**Q35.** From the same pie chart, labour cost exceeds steel cost by what percent of total cost?
+
+a) 5%
+b) 10%
+c) 12%
+d) 15%
+
+<details>
+<summary>Answer</summary>
+b) 10%
+
+Labour = (90/360) × 6,00,000 = ₹1,50,000. Steel = (54/360) × 6,00,000 = ₹90,000. Excess = ₹60,000. Percentage of total = (60,000/6,00,000) × 100 = 10%.
+</details>
+
+**Q36.** A stacked bar shows Company X's annual revenue split: Product P = 35%, Product Q = 28%, Product R = 22%, Product S = 15%. Total revenue = ₹850 crores. What is Product Q's revenue?
+
+a) ₹210 crores
+b) ₹238 crores
+c) ₹255 crores
+d) ₹297.5 crores
+
+<details>
+<summary>Answer</summary>
+b) ₹238 crores
+
+Product Q revenue = 28% of 850 = 0.28 × 850 = ₹238 crores.
+</details>
+
+**Q37.** If Product P's revenue grows by 12% next year while total revenue stays constant, what will be Product P's new percentage share?
+
+a) 35.0%
+b) 37.2%
+c) 39.2%
+d) 42.0%
+
+<details>
+<summary>Answer</summary>
+c) 39.2%
+
+Current P = 35% of 850 = ₹297.5 crores. Growth = 12% → New P = 297.5 × 1.12 = ₹333.2 crores. New share = (333.2/850) × 100 = 39.2%.
+</details>
+
+**Q38.** A line chart shows GDP growth: 5.0%, 6.2%, 7.1%, 6.8%, 8.0% over five years. What is the average growth rate?
+
+a) 6.42%
+b) 6.62%
+c) 6.82%
+d) 7.02%
+
+<details>
+<summary>Answer</summary>
+b) 6.62%
+
+Average = (5.0 + 6.2 + 7.1 + 6.8 + 8.0) / 5 = 33.1 / 5 = 6.62%.
+</details>
+
+**Q39.** If a company's profit in 2020 was ₹150 crores and in 2023 was ₹280 crores, what is the approximate CAGR?
+
+a) 18.2%
+b) 20.5%
+c) 23.1%
+d) 25.4%
+
+<details>
+<summary>Answer</summary>
+c) 23.1%
+
+CAGR = ((280/150)^(1/3) - 1) × 100 = (1.8667^0.3333 - 1) × 100 ≈ (1.231 - 1) × 100 = 23.1%.
+</details>
+
+**Q40.** A percentage bar graph shows employment distribution in two cities. City X (pop 50,000): Employed 45%, Unemployed 55%. City Y (pop 75,000): Employed 52%, Unemployed 48%. How many more employed people does City Y have than City X?
+
+a) 3,500
+b) 7,500
+c) 16,500
+d) 39,000
+
+<details>
+<summary>Answer</summary>
+c) 16,500
+
+City X employed = 45% of 50,000 = 22,500. City Y employed = 52% of 75,000 = 39,000. Difference = 39,000 - 22,500 = 16,500.
+</details>
+
+#### Additional Exercises (Q41-Q50)
+
+**41.** Table: Production of rice (in lakh tonnes):
+| State | 2020 | 2021 | 2022 | 2023 |
+|-------|------|------|------|------|
+| A | 45 | 52 | 60 | 68 |
+| B | 38 | 42 | 48 | 55 |
+| C | 50 | 58 | 65 | 72 |
+
+a) What is the CAGR of State A's production from 2020 to 2023?
+b) In which year did State B show the highest growth rate over previous year?
+c) What is the ratio of State C's production in 2020 to State A's production in 2023?
+
+**42.** A bar graph shows exports (in ₹crores) of 5 companies: P=250, Q=320, R=180, S=410, T=290. If exports of P grow by 15% and Q decreases by 10%, what is the new total export of P and Q combined?
+
+**43.** A pie chart shows the market share of 5 mobile brands: Apple=28%, Samsung=32%, Xiaomi=18%, Vivo=12%, Others=10%. Total market = ₹80,000 crores. What is the revenue difference between Samsung and Xiaomi?
+
+**44.** A line chart shows monthly sales: Jan=85, Feb=95, Mar=110, Apr=105, May=125, Jun=145. What is the percentage increase from the first quarter average to the second quarter average?
+
+**45.** A multiple line chart shows two investment funds: Fund A (2019: 100, 2020: 125, 2021: 140, 2022: 170) and Fund B (2019: 100, 2020: 115, 2021: 130, 2022: 150). Which fund has higher CAGR?
+
+**46.** A stacked bar shows the revenue composition of a company for 2022: Products: X=40%, Y=30%, Z=20%, Services=10%. Total revenue = ₹1,200 crores. What is the revenue from Products X and Y together?
+
+**47.** A clustered bar graph shows male and female employees across 4 departments. Total employees = 500. Dept 1: M=60, F=40. Dept 2: M=70, F=55. Dept 3: M=45, F=80. Dept 4: M=75, F=75. Which department has the highest female-to-male ratio?
+
+**48.** CAGR of sales: 2018 = ₹200 crores, 2019 = ₹250 crores, 2020 = ₹300 crores, 2021 = ₹360 crores, 2022 = ₹450 crores. What is the CAGR from 2018 to 2022?
+
+**49.** A pie chart has three sectors with angles 120°, 150°, and 90°. If the total value represented is ₹540,000, what is the value of the largest sector?
+
+**50.** A table shows the performance of 3 mutual funds over 4 years:
+| Fund | 2020 | 2021 | 2022 | 2023 |
+|------|------|------|------|------|
+| A | 12% | 15% | 8% | 18% |
+| B | 10% | 12% | 14% | 16% |
+| C | 8% | 18% | 10% | 20% |
+
+Which fund has the highest average return? Which fund has the lowest volatility (range)?
 
 - **Tabular DI** is the foundation — master percentage, ratio, average, growth rate, and CAGR calculations
 - **Bar graphs** come in four variants: simple, stacked, clustered, and percentage — identify the type before solving

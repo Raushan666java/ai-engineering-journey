@@ -200,6 +200,38 @@ flowchart TD
 | Vicharadheen hai | Is under consideration |
 | Avashyak karyvahi hetu | For necessary action |
 
+### 5.8A तकनीकी अनुवाद: IT और कंप्यूटर शब्दावली (Technical Translation: IT Terms)
+
+| English Term | Hindi Translation | Usage |
+|-------------|------------------|-------|
+| Software | सॉफ़्टवेयर / क्रमांकित प्रोग्राम | कंप्यूटर सॉफ़्टवेयर स्थापित करें |
+| Hardware | हार्डवेयर / भौतिक उपकरण | हार्डवेयर की मरम्मत कराएँ |
+| Operating System | संचालन प्रणाली / ओएस | विंडोज संचालन प्रणाली है |
+| Database | डेटाबेस / आँकड़ा आधार | ग्राहक डेटाबेस अपडेट करें |
+| Network | नेटवर्क / संजाल | कार्यालय संजाल सुरक्षित है |
+| Server | सर्वर / सेवक | सर्वर डाउन हो गया |
+| Email | ईमेल / विद्युत पत्र | ईमेल भेज दिया गया है |
+| Cloud Computing | क्लाउड कंप्यूटिंग / मेघ संगणन | मेघ संगणन से डेटा सुरक्षित |
+| Artificial Intelligence | कृत्रिम बुद्धिमत्ता | AI से कार्य स्वचालित |
+| Cyber Security | साइबर सुरक्षा | साइबर सुरक्षा बढ़ाएँ |
+| Encryption | कूटलेखन / एन्क्रिप्शन | डेटा कूटलेखन अनिवार्य है |
+| Firewall | फायरवॉल / अग्निरोधक | फायरवॉल सक्रिय करें |
+
+### 5.8B अनुवाद में सामान्य मुहावरों के समतुल्य (Common English Idioms with Hindi Equivalents)
+
+| English Idiom | Literal Translation | Hindi Equivalent |
+|---------------|-------------------|------------------|
+| A blessing in disguise | भेष में वरदान | नुकसान में भी लाभ |
+| Actions speak louder than words | कर्म शब्दों से ज़ोरदार | बातों से नहीं, कामों से पहचान |
+| Better late than never | देर से सही, पर कभी नहीं से अच्छा | देर आए दुरुस्त आए |
+| Don't count your chickens before they hatch | अंडे न गिनें पहले | अभी से जयजयकार न करो |
+| Every cloud has a silver lining | हर बादल में चाँदी की परत | निराशा में भी आशा का किरण |
+| Fortune favors the brave | भाग्य बहादुरों का साथ देता है | साहसी को ही सफलता मिलती है |
+| Honesty is the best policy | ईमानदारी सबसे अच्छी नीति | सच्चाई की हमेशा जीत |
+| Practice makes perfect | अभ्यास परिपूर्ण बनाता है | करत-करत अभ्यास के |
+| Rome was not built in a day | रोम एक दिन में नहीं बना | कोई काम रातों-रात नहीं होता |
+| Where there is a will, there is a way | जहाँ चाह वहाँ राह | ठान लो तो राह निकल ही आती है |
+
 ### 5.8 Idioms Translation (Muhavaron ka Anuvad)
 
 | English Idiom | Hindi Equivalent |
@@ -449,6 +481,65 @@ console.log("Check 'patent':", detectFalseFriend("patent")?.correctTranslation);
 console.log("Total false friends:", falseFriends.length);
 ```
 
+### Example 5B: TypeScript — Technical Term Translator
+
+```typescript
+interface TechnicalTerm {
+  en: string;
+  hi: string;
+  category: string;
+}
+
+const techTerms: TechnicalTerm[] = [
+  { en: "Software", hi: "सॉफ़्टवेयर", category: "IT" },
+  { en: "Hardware", hi: "हार्डवेयर", category: "IT" },
+  { en: "Network", hi: "संजाल", category: "IT" },
+  { en: "Database", hi: "आँकड़ा आधार", category: "IT" },
+  { en: "Cloud Computing", hi: "मेघ संगणन", category: "IT" },
+  { en: "Artificial Intelligence", hi: "कृत्रिम बुद्धिमत्ता", category: "IT" },
+  { en: "Encryption", hi: "कूटलेखन", category: "security" },
+  { en: "Firewall", hi: "अग्निरोधक", category: "security" },
+  { en: "Server", hi: "सेवक", category: "IT" },
+  { en: "Email", hi: "विद्युत पत्र", category: "communication" },
+];
+
+function translateTechTerm(term: string): string {
+  const found = techTerms.find(t => t.en.toLowerCase() === term.toLowerCase());
+  return found ? found.hi : "अनुवाद उपलब्ध नहीं";
+}
+
+function listByCategory(cat: string): TechnicalTerm[] {
+  return techTerms.filter(t => t.category === cat);
+}
+
+console.log(translateTechTerm("Firewall")); // अग्निरोधक
+console.log("IT terms:", listByCategory("IT").map(t => `${t.en} → ${t.hi}`));
+```
+
+### Example 5C: TypeScript — Idiom Translator
+
+```typescript
+interface IdiomEntry {
+  english: string;
+  hindiEquivalent: string;
+  literalTranslation: string;
+}
+
+const idiomDict: IdiomEntry[] = [
+  { english: "Actions speak louder than words", hindiEquivalent: "बातों से नहीं, कामों से पहचान", literalTranslation: "कर्म शब्दों से ज़ोरदार होते हैं" },
+  { english: "Better late than never", hindiEquivalent: "देर आए दुरुस्त आए", literalTranslation: "देर से सही, पर कभी नहीं से अच्छा" },
+  { english: "Where there is a will, there is a way", hindiEquivalent: "जहाँ चाह वहाँ राह", literalTranslation: "जहाँ इच्छा है, वहाँ रास्ता है" },
+  { english: "Practice makes perfect", hindiEquivalent: "करत-करत अभ्यास के", literalTranslation: "अभ्यास परिपूर्ण बनाता है" },
+  { english: "Every cloud has a silver lining", hindiEquivalent: "निराशा में भी आशा का किरण", literalTranslation: "हर बादल में चाँदी की परत" },
+];
+
+function translateIdiom(englishIdiom: string): IdiomEntry | null {
+  return idiomDict.find(i => i.english.toLowerCase().includes(englishIdiom.toLowerCase())) ?? null;
+}
+
+console.log(translateIdiom("Practice makes perfect")?.hindiEquivalent);
+```
+
 ### Examples 6-20: Translation Passages
 
 <details>
@@ -665,3 +756,120 @@ Find the Hindi equivalent:
 **Q26-Q30 (Idioms):**
 26. Aankhon ka taara 27. Der raat tak padhna/mehnat karna
 28. Ek teer se do nishane 29. Ghaav par namak chidakna 30. Ab tumhari baari hai
+
+### Additional Translation Practice (Q31-Q50) — Added
+
+**Translate to Hindi (Q31-Q40):**
+31. "The customer is always right."
+32. "This offer is valid until stock lasts."
+33. "Please find the attached invoice for your reference."
+34. "The meeting has been rescheduled to next Monday."
+35. "Your application has been approved."
+36. "We regret to inform you that your request has been denied."
+37. "The report highlights the key performance indicators."
+38. "All employees are requested to attend the training session."
+39. "The new policy will come into effect from 1st August."
+40. "Please acknowledge receipt of this email."
+
+**Translate to English (Q41-Q50):**
+41. "कृपया अपना पासवर्ड किसी से साझा न करें।"
+42. "यह अनुबंध दो वर्षों के लिए वैध है।"
+43. "भारतीय अर्थव्यवस्था तीव्र गति से बढ़ रही है।"
+44. "सभी कर्मचारियों को समय पर कार्यालय पहुँचना चाहिए।"
+45. "इस परियोजना को अगले महीने तक पूरा करना है।"
+46. "डिजिटल भुगतान ने व्यापार को सरल बना दिया है।"
+47. "ग्राहक संतुष्टि हमारी प्राथमिकता है।"
+48. "यह रिपोर्ट तत्काल ध्यान देने की आवश्यकता है।"
+49. "हम पर्यावरण संरक्षण के लिए प्रतिबद्ध हैं।"
+50. "नई तकनीक ने उत्पादन क्षमता बढ़ा दी है।"
+
+### Additional Solved MCQs (Q31-Q40) — Added
+
+<details>
+<summary>View 10 more solved MCQs — Technical Translation, Advanced False Friends</summary>
+
+**Q31.** "Cloud Computing" का हिंदी अनुवाद है:
+a) बादल गणना  b) मेघ संगणन  c) क्लाउड कंप्यूटिंग  d) b और c दोनों
+
+**Answer:** d) b और c दोनों (मेघ संगणन / क्लाउड कंप्यूटिंग — दोनों स्वीकार्य)
+
+**Q32.** "Encryption" का हिंदी अनुवाद है:
+a) कूटलेखन  b) सुरक्षा  c) गुप्तता  d) एन्क्रिप्शन
+
+**Answer:** a) कूटलेखन (Encryption का मानक हिंदी शब्द)
+
+**Q33.** "Where there is a will, there is a way" का समतुल्य हिंदी मुहावरा:
+a) चाह न हो तो राह कहाँ  b) जहाँ चाह वहाँ राह  c) मन चंगा तो कठौती में गंगा  d) बनता है तो बनता है
+
+**Answer:** b) जहाँ चाह वहाँ राह
+
+**Q34.** "Better late than never" का हिंदी समतुल्य अनुवाद:
+a) देर से सही  b) देर आए दुरुस्त आए  c) जल्दी करो  d) सही समय पर
+
+**Answer:** b) देर आए दुरुस्त आए
+
+**Q35.** "The customer is always right" का हिंदी अनुवाद:
+a) ग्राहक हमेशा सही होता है  b) ग्राहक सही है या नहीं  c) ग्राहक सेवा  d) ग्राहक भगवान है
+
+**Answer:** a) ग्राहक हमेशा सही होता है
+
+**Q36.** "His attitude is liberal" में liberal का सही अनुवाद:
+a) लिबरल  b) उदार  c) उदारवादी  d) स्वतंत्रता-प्रेमी
+
+**Answer:** b) उदार (स्वभाव के संदर्भ में)
+
+**Q37.** "Please advise" का कार्यालयी हिंदी अनुवाद:
+a) कृपया सलाह दें  b) कृपया परामर्श दें  c) कोई नहीं  d) a और b दोनों
+
+**Answer:** d) a और b दोनों
+
+**Q38.** "Event" का उपयुक्त हिंदी अनुवाद (संदर्भानुसार):
+a) घटना  b) कार्यक्रम  c) समारोह  d) उपर्युक्त सभी
+
+**Answer:** d) उपर्युक्त सभी
+
+**Q39.** "अनुबंध" का अंग्रेज़ी अनुवाद है:
+a) Contract  b) Agreement  c) Treaty  d) All of the above
+
+**Answer:** d) All of the above
+
+**Q40.** "प्रतिबद्ध" का अंग्रेज़ी अनुवाद:
+a) Dedicated  b) Committed  c) Devoted  d) All of the above
+
+**Answer:** d) All of the above
+
+</details>
+
+### Answer Key for Additional Passages (Q31-Q50)
+
+**Q31-Q40 (Hindi Translation):**
+31. ग्राहक हमेशा सही होता है। 32. यह ऑफर स्टॉक समाप्त होने तक वैध है। 33. कृपया संलग्न चालान देखें। 34. बैठक अगले सोमवार को पुनर्निर्धारित की गई है। 35. आपका आवेदन स्वीकृत हो गया है। 36. हमें खेद है कि आपका अनुरोध अस्वीकृत किया गया है। 37. रिपोर्ट मुख्य प्रदर्शन संकेतकों को उजागर करती है। 38. सभी कर्मचारियों से प्रशिक्षण सत्र में भाग लेने का अनुरोध है। 39. नई नीति 1 अगस्त से प्रभावी होगी। 40. कृपया इस ईमेल की प्राप्ति की पुष्टि करें।
+
+**Q41-Q50 (English Translation):**
+41. Please do not share your password with anyone. 42. This contract is valid for two years. 43. The Indian economy is growing at a rapid pace. 44. All employees must reach the office on time. 45. This project has to be completed by next month. 46. Digital payments have simplified business. 47. Customer satisfaction is our priority. 48. This report requires urgent attention. 49. We are committed to environmental protection. 50. The new technology has increased production efficiency.
+
+## Exam-Oriented Tips for Translation
+
+### परीक्षा-वार अनुवाद रणनीति
+
+| परीक्षा | अनुवाद प्रकार | अंक | तैयारी रणनीति |
+|---------|-------------|-----|--------------|
+| UPSC Mains | EN→HI + HI→EN | 15-20 | समसामयिक विषयों का अभ्यास |
+| SSC CGL | EN→HI (Banking/Business) | 10-15 | शब्दावली और मुहावरों पर जोर |
+| IBPS PO | EN→HI (Banking Terms) | 10 | 100 बैंकिंग शब्द याद करें |
+| Translation Bureau | EN→HI Technical | 25-30 | सरकारी दिशानिर्देशों का अध्ययन |
+
+### अनुवाद में अच्छे अंक के टिप्स
+1. **शब्दशः अनुवाद से बचें**: भाव और संदर्भ को प्राथमिकता दें
+2. **संदर्भ समझें**: एक शब्द के अलग-अलग अर्थ हो सकते हैं
+3. **कार्यालयी शैली**: सरकारी अनुवाद में औपचारिक भाषा का उपयोग करें
+4. **काल और वाच्य**: अंग्रेज़ी और हिंदी में काल और वाच्य का सही मिलान करें
+5. **False Friends से सावधान**: "Sympathy", "Patent", "Actual" जैसे शब्दों के सही अर्थ जानें
+
+### Quick Revision Checklist
+- [ ] 100+ सरकारी और बैंकिंग शब्द याद करें
+- [ ] 20+ False Friends के सही अर्थ जानें
+- [ ] 15+ अंग्रेज़ी मुहावरों के हिंदी समतुल्य सीखें
+- [ ] IT और तकनीकी शब्दावली (20 शब्द) याद करें
+- [ ] प्रतिदिन 2-3 अनुच्छेद का अनुवाद अभ्यास करें
+- [ ] पिछले वर्षों के अनुवाद प्रश्न हल करें

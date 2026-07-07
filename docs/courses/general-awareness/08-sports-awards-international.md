@@ -946,6 +946,328 @@ WHO is headquartered in Geneva, Switzerland. FAO is headquartered in Rome, Italy
 
 ---
 
+### 8.9 Sports — Playgrounds, Number of Players, and Stadiums
+
+#### 8.7.1 National Sports of Selected Countries
+
+| Country | National Sport | Other Popular Sports |
+|---------|---------------|---------------------|
+| India | Hockey (field hockey) | Cricket, Football, Kabaddi, Badminton |
+| USA | Baseball (de facto) | American Football, Basketball, Ice Hockey |
+| England | Cricket (summer), Football (winter) | Rugby, Tennis, Golf |
+| Canada | Ice Hockey (winter), Lacrosse (summer) | Basketball, Football |
+| Australia | Cricket | Australian Rules Football, Rugby, Swimming |
+| China | Table Tennis (de facto) | Badminton, Basketball, Football |
+| Japan | Sumo Wrestling (national sport) | Baseball, Football, Judo, Karate |
+| Brazil | Football (de facto) | Volleyball, Mixed Martial Arts |
+| Russia | Ice Hockey, Football | Chess, Tennis, Gymnastics |
+| Pakistan | Field Hockey | Cricket, Squash, Kabaddi |
+| New Zealand | Rugby Union | Cricket, Netball, Football |
+| South Africa | Rugby Union | Cricket, Football, Athletics |
+
+#### 8.7.2 Number of Players per Team (Standard)
+
+| Sport | Players Per Side | Duration | Scoring Unit |
+|-------|-----------------|----------|--------------|
+| Cricket (ODI/T20) | 11 | 50/20 overs | Runs |
+| Cricket (Test) | 11 | 5 days | Runs |
+| Football (Soccer) | 11 | 90 min | Goals |
+| Hockey (Field) | 11 | 60 min (4 quarters) | Goals |
+| Basketball | 5 | 48 min (NBA) / 40 min (FIBA) | Points |
+| Volleyball | 6 | Best of 5 sets | Points |
+| Baseball | 9 | 9 innings | Runs |
+| Rugby Union | 15 | 80 min (2 halves) | Points (try, conversion, penalty) |
+| Rugby League | 13 | 80 min | Points |
+| Tennis | 1 (singles) / 2 (doubles) | Best of 3/5 sets | Games/sets |
+| Badminton | 1 (singles) / 2 (doubles) | Best of 3 games | Points (21 rally point) |
+| Table Tennis | 1 (singles) / 2 (doubles) | Best of 7 games | Points (11 each game) |
+| Kabaddi | 7 | 40 min (2 halves) | Points (raid + tackle) |
+| Kho Kho | 9 (on field) | 2 innings of 9 min | Touch points |
+| Netball | 7 | 60 min | Goals |
+
+#### 8.7.3 Major Stadiums of the World
+
+| Stadium | Location | Capacity | Primary Use | Home Team/Event |
+|---------|----------|----------|-------------|-----------------|
+| Narendra Modi Stadium | Ahmedabad, India | 132,000 | Cricket | Largest cricket stadium |
+| Melbourne Cricket Ground | Melbourne, Australia | 100,024 | Cricket, AFL | Boxing Day Test |
+| Eden Gardens | Kolkata, India | 66,349 | Cricket | BCCI |
+| Lord's Cricket Ground | London, England | 31,100 | Cricket | MCC (The "Home of Cricket") |
+| Wembley Stadium | London, England | 90,000 | Football | England national team |
+| Camp Nou | Barcelona, Spain | 99,354 | Football | FC Barcelona |
+| Maracanã | Rio de Janeiro, Brazil | 78,838 | Football | Brazil national team |
+| Old Trafford | Manchester, England | 74,310 | Football | Manchester United |
+| Bird's Nest | Beijing, China | 80,000 | Multi-purpose | 2008 Olympics |
+| Madison Square Garden | New York, USA | 20,789 | Basketball, Concerts | NY Knicks |
+| Wimbledon Centre Court | London, England | 15,000 | Tennis | The Championships |
+| Arthur Ashe Stadium | New York, USA | 23,771 | Tennis | US Open |
+| Stade de France | Paris, France | 81,338 | Rugby, Football | France national teams |
+
+### 8.10 Books and Authors — Exam Reference
+
+| Book | Author | Year | Subject/Theme |
+|------|--------|------|---------------|
+| Arthashastra | Chanakya (Kautilya) | 4th C BCE | Statecraft, economics, military strategy |
+| Indica | Megasthenes | 3rd C BCE | Greek ambassador's account of Mauryan India |
+| Rajatarangini | Kalhana | 12th C CE | History of Kashmir |
+| Akbarnama | Abul Fazl | 16th C | Official history of Akbar's reign |
+| Ain-i-Akbari | Abul Fazl | 16th C | Mughal administration under Akbar |
+| Baburnama | Babur | 16th C | Autobiography of first Mughal emperor |
+| Anand Math | Bankim Chandra Chatterjee | 1882 | Source of "Vande Mataram" |
+| The Indian Struggle | Subhas Chandra Bose | 1935 | India's freedom movement |
+| Discovery of India | Jawaharlal Nehru | 1946 | Indian history and culture |
+| Hind Swaraj | Mahatma Gandhi | 1909 | Critique of modern civilisation |
+| The God of Small Things | Arundhati Roy | 1997 | Booker Prize winner |
+| Midnight's Children | Salman Rushdie | 1981 | Booker Prize winner; magical realism |
+| Wings of Fire | A.P.J. Abdul Kalam | 1999 | Autobiography of India's missile man |
+| India 2020 | A.P.J. Abdul Kalam | 1998 | Vision for India's development |
+| Why I Am an Atheist | Bhagat Singh | 1931 (written) | Revolutionary's philosophy |
+| Gitanjali | Rabindranath Tagore | 1910 | Nobel Prize for Literature (1913) |
+| The White Tiger | Aravind Adiga | 2008 | Booker Prize |
+| Interpreter of Maladies | Jhumpa Lahiri | 1999 | Pulitzer Prize |
+| Annihilation of Caste | B.R. Ambedkar | 1936 | Critique of caste system |
+| India After Gandhi | Ramachandra Guha | 2007 | Post-independence India history |
+
+### 8.11 Wonders of the World
+
+**Seven Wonders of the Ancient World:**
+
+| Wonder | Location | Built By | Status |
+|--------|----------|----------|--------|
+| Great Pyramid of Giza | Egypt | Egyptians (c. 2560 BCE) | Still standing (only surviving wonder) |
+| Hanging Gardens of Babylon | Babylon (Iraq) | Nebuchadnezzar II | Destroyed (existence debated) |
+| Statue of Zeus at Olympia | Greece | Phidias (c. 435 BCE) | Destroyed (fire) |
+| Temple of Artemis at Ephesus | Turkey | Croesus, others (c. 550 BCE) | Destroyed (fire) |
+| Mausoleum at Halicarnassus | Turkey | Artemisia II (c. 350 BCE) | Destroyed (earthquakes) |
+| Colossus of Rhodes | Greece | Chares of Lindos (c. 280 BCE) | Destroyed (earthquake) |
+| Lighthouse of Alexandria | Egypt | Ptolemy I/II (c. 280 BCE) | Destroyed (earthquakes) |
+
+**New Seven Wonders of the World (2007):**
+
+| Wonder | Location | Significance |
+|--------|----------|-------------|
+| Great Wall of China | China | World's longest wall (21,196 km) |
+| Petra | Jordan | Rock-cut architecture; "Rose City" |
+| Christ the Redeemer | Rio de Janeiro, Brazil | 38m statue atop Corcovado mountain |
+| Machu Picchu | Peru | Incan citadel in the Andes (2,430 m) |
+| Chichén Itzá | Mexico | Mayan pyramid (El Castillo) |
+| Colosseum | Rome, Italy | Ancient Roman amphitheatre (80 CE) |
+| Taj Mahal | Agra, India | Mughal marble mausoleum (1632–1653) |
+
+**UNESCO World Heritage Sites in India (Selected Tallies):**
+- **Total:** 43 (as of 2024)
+- **Cultural:** 35 sites
+- **Natural:** 7 sites
+- **Mixed:** 1 site
+- **Latest additions:** Santiniketan (2023), Sacred Ensembles of the Hoysalas (2023), Moidams of Ahom Dynasty (2024)
+
+### 8.12 Sobriquets (Nicknames) — Exam Quick Reference
+
+| Name/Nickname | Person/Place | Reason |
+|---------------|--------------|--------|
+| Father of the Nation | Mahatma Gandhi | Leader of Indian freedom movement |
+| Iron Man of India | Sardar Vallabhbhai Patel | Integration of princely states |
+| Frontier Gandhi | Khan Abdul Ghaffar Khan | Non-violent Pashtun independence activist |
+| Netaji | Subhas Chandra Bose | Leader of Indian National Army |
+| Loknayak | Jayaprakash Narayan | Political leader; "Total Revolution" |
+| Deshbandhu | Chittaranjan Das | Freedom fighter; Swarajist leader |
+| Man of Destiny | Napoleon Bonaparte | French military leader |
+| Lady with the Lamp | Florence Nightingale | Pioneer of modern nursing |
+| Flying Sikh | Milkha Singh | Indian athlete (Commonwealth Games gold) |
+| Payyoli Express | P.T. Usha | Indian track athlete |
+| King of Cricket / Master Blaster | Sachin Tendulkar | Cricket legend |
+| Little Master | Sunil Gavaskar | Cricket legend |
+| Brown Bomber | Joe Louis | American boxer |
+| The Greatest | Muhammad Ali | American boxer (Cassius Clay) |
+| Poet of the East | Allama Iqbal | Poet; philosopher |
+| Shakespeare of India | Mahakavi Kalidasa | Classical Sanskrit poet/playwright |
+| Father of Indian Space Program | Vikram Sarabhai | Founder of ISRO |
+| Father of Indian Nuclear Program | Homi Bhabha | Nuclear physicist |
+| Missile Man of India | A.P.J. Abdul Kalam | Missile and space scientist |
+| Light of Asia | Gautama Buddha | Founder of Buddhism |
+| Grand Old Man of India | Dadabhai Naoroji | Freedom fighter; economist |
+| Bengal Tiger | Bipin Chandra Pal | Freedom fighter (Lal-Bal-Pal trio) |
+| Lion of Punjab | Lala Lajpat Rai | Freedom fighter |
+| Nightingale of India | Sarojini Naidu | Poet; freedom fighter |
+| Desh Ratna | Rajendra Prasad | First President of India |
+| Jhansi Ki Rani | Rani Lakshmibai | 1857 warrior queen |
+| Swaraj is My Birthright | Bal Gangadhar Tilak | Freedom fighter's slogan |
+
+### 8.13 Data Interpretation for GK (Based on GFG Reference)
+
+**Example 1: Olympic Medal Data Analysis**
+
+```typescript
+/**
+ * Data Interpretation: Sports Medal Tally Analysis
+ * Based on GFG Data Interpretation style questions
+ */
+interface MedalData {
+  country: string;
+  gold: number;
+  silver: number;
+  bronze: number;
+}
+
+class MedalAnalyzer {
+  private data: MedalData[];
+
+  constructor(data: MedalData[]) {
+    this.data = data;
+  }
+
+  public totalMedals(country: string): number {
+    const entry = this.data.find(d => d.country === country);
+    if (!entry) return 0;
+    return entry.gold + entry.silver + entry.bronze;
+  }
+
+  public rankByGold(): MedalData[] {
+    return [...this.data].sort((a, b) => b.gold - a.gold);
+  }
+
+  public averageMedals(): number {
+    const total = this.data.reduce((sum, d) => sum + d.gold + d.silver + d.bronze, 0);
+    return total / this.data.length;
+  }
+
+  public goldToTotalRatio(country: string): string {
+    const entry = this.data.find(d => d.country === country);
+    if (!entry) return '0%';
+    const total = entry.gold + entry.silver + entry.bronze;
+    if (total === 0) return '0%';
+    return ((entry.gold / total) * 100).toFixed(1) + '%';
+  }
+
+  public printComparisonTable(): void {
+    console.log('Country\t\tGold\tSilver\tBronze\tTotal\tGold%');
+    console.log('-------\t\t----\t------\t------\t-----\t-----');
+    this.rankByGold().forEach(d => {
+      const total = d.gold + d.silver + d.bronze;
+      const pct = ((d.gold / total) * 100).toFixed(1);
+      console.log(`${d.country}\t\t${d.gold}\t${d.silver}\t${d.bronze}\t${total}\t${pct}%`);
+    });
+  }
+}
+
+// Paris 2024 Top 5 data
+const olympicData = new MedalAnalyzer([
+  { country: 'USA', gold: 40, silver: 44, bronze: 42 },
+  { country: 'China', gold: 40, silver: 27, bronze: 24 },
+  { country: 'Japan', gold: 20, silver: 12, bronze: 13 },
+  { country: 'Australia', gold: 18, silver: 19, bronze: 16 },
+  { country: 'France', gold: 16, silver: 26, bronze: 22 },
+]);
+
+olympicData.printComparisonTable();
+console.log(`\nIndia total medals: 6 (0 Gold, 1 Silver, 5 Bronze)`);
+console.log(`USA Gold%: ${olympicData.goldToTotalRatio('USA')}`);
+```
+
+**Example 2: Economy Data Interpretation — Budget Allocation Analysis**
+
+The following table shows India's Union Budget 2025-26 allocation by sector (in ₹ lakh crore). A typical DI question would ask: "What percentage of total expenditure is allocated to Defence?"
+
+```typescript
+interface BudgetAllocation {
+  sector: string;
+  allocation: number; // in ₹ lakh crore
+}
+
+const budget2025: BudgetAllocation[] = [
+  { sector: 'Defence', allocation: 6.81 },
+  { sector: 'Agriculture', allocation: 1.68 },
+  { sector: 'Education', allocation: 1.48 },
+  { sector: 'Health', allocation: 1.05 },
+  { sector: 'Infrastructure (Capex)', allocation: 12.15 },
+  { sector: 'Interest Payments', allocation: 8.63 },
+  { sector: 'Subsidies', allocation: 4.37 },
+  { sector: 'Other Expenditure', allocation: 15.15 },
+];
+
+const totalBudget = budget2025.reduce((sum, item) => sum + item.allocation, 0);
+console.log(`Total Budget 2025-26: ₹${totalBudget} lakh crore`);
+budget2025.forEach(item => {
+  const pct = ((item.allocation / totalBudget) * 100).toFixed(1);
+  console.log(`${item.sector}: ${pct}% of total`);
+});
+// Output: Defence: ~13.2% , Education: ~2.9%, etc.
+```
+
+### 8.14 Additional Solved MCQs (Sports, Awards, International)
+
+**Q21:** Which country has won the most Olympic gold medals in history (all-time)?
+
+A) China
+B) USA
+C) Russia
+D) Great Britain
+
+<details>
+<summary>Answer</summary>
+**Answer: B) USA**
+
+The USA has won the most Olympic gold medals of all time (over 1,100 golds, 2,900+ total medals). They have topped the medal table at most modern Summer Olympics, including 2024 Paris.
+</details>
+
+**Q22:** The "Dronacharya Award" is given for excellence in:
+
+A) Cinema
+B) Literature
+C) Sports coaching
+D) Social work
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Sports coaching**
+
+The Dronacharya Award is presented by the Ministry of Youth Affairs and Sports for excellence in sports coaching. It includes a statuette, certificate, and cash prize. The award was instituted in 1985.
+</details>
+
+**Q23:** The "Pulitzer Prize" is awarded annually in which field?
+
+A) Literature, Journalism, Music
+B) Science and Medicine
+C) Peace and Human Rights
+D) Film and Theatre
+
+<details>
+<summary>Answer</summary>
+**Answer: A) Literature, Journalism, Music**
+
+The Pulitzer Prize is awarded in the USA for achievements in newspaper/magazine/online journalism, literature, musical composition, and photography. It was established in 1917 by Joseph Pulitzer.
+</details>
+
+**Q24:** The "World Health Organization" (WHO) was established in which year?
+
+A) 1942
+B) 1945
+C) 1948
+D) 1950
+
+<details>
+<summary>Answer</summary>
+**Answer: C) 1948**
+
+WHO was established on 7 April 1948 (now celebrated as World Health Day). Its headquarters is in Geneva, Switzerland. It has 194 member states. The current Director-General is Dr. Tedros Adhanom Ghebreyesus.
+</details>
+
+**Q25:** The "Arjuna Award" was instituted in which year?
+
+A) 1957
+B) 1961
+C) 1970
+D) 1985
+
+<details>
+<summary>Answer</summary>
+**Answer: B) 1961**
+
+The Arjuna Award (for outstanding performance in sports) was instituted in 1961. It is India's second-highest sporting honour after the Major Dhyan Chand Khel Ratna. It includes a bronze statue, certificate, and cash prize.
+</details>
+
+---
+
 ## Summary
 
 - **Sports:** India won 6 medals at Paris Olympics 2024 (1 Silver, 5 Bronze); won T20 World Cup 2024; Hangzhou Asian Games yielded 107 medals
@@ -1198,6 +1520,78 @@ D) 1950
 
 **30.** The next G20 Summit in 2026 will be hosted by __________.
 
+### Section C: Additional MCQs (Exam Focus)
+
+**31.** The "Ramon Magsaysay Award" is named after the former president of which country?
+
+A) India
+B) Philippines
+C) Mexico
+D) South Korea
+
+**32.** The "Thomas Cup" is associated with which sport?
+
+A) Football
+B) Table Tennis
+C) Badminton
+D) Hockey
+
+**33.** Which of the following is NOT a UN specialized agency?
+
+A) World Bank
+B) IMF
+C) WTO
+D) WHO
+
+**34.** The oldest international football competition is the:
+
+A) FIFA World Cup
+B) FA Cup
+C) Copa America
+D) UEFA Champions League
+
+**35.** "Jasprit Bumrah" is known for which sport?
+
+A) Football
+B) Cricket
+C) Hockey
+D) Badminton
+
+**36.** The "International Committee of the Red Cross" (ICRC) was founded in:
+
+A) 1863
+B) 1901
+C) 1919
+D) 1945
+
+**37.** The "Kalinga Prize" is awarded by UNESCO for:
+
+A) Literature
+B) Science popularization
+C) Peace research
+D) Environmental protection
+
+**38.** The "FIFA World Cup" was first held in which year?
+
+A) 1924
+B) 1930
+C) 1934
+D) 1938
+
+**39.** "Olympic motto" "Citius, Altius, Fortius" means:
+
+A) Faster, Higher, Stronger
+B) Swifter, Higher, Braver
+C) Faster, Higher, Together
+D) Stronger, United, Faster
+
+**40.** Which country has won the most Cricket World Cups (ODI)?
+
+A) India
+B) Australia
+C) West Indies
+D) England
+
 ### Answer Key
 
 | Q | Answer | Q | Answer |
@@ -1225,6 +1619,20 @@ D) 1950
 | 28 | Cinema |
 | 29 | Visa-free travel |
 | 30 | USA (presidency rotates) |
+
+**Section C (31-40):**
+| Q | Answer | Explanation |
+|---|--------|-------------|
+| 31 | B) Philippines | Ramon Magsaysay was the 7th President of Philippines; award established in 1957 |
+| 32 | C) Badminton | Thomas Cup is the men's world team championships in badminton (first held 1949) |
+| 33 | C) WTO | WTO is not a UN specialized agency; it operates independently though cooperating with UN |
+| 34 | B) FA Cup | FA Cup (Football Association Cup, England) began in 1871; FIFA World Cup started in 1930 |
+| 35 | B) Cricket | Jasprit Bumrah is an Indian cricketer, one of the best fast bowlers globally |
+| 36 | A) 1863 | ICRC was founded by Henry Dunant; first Nobel Peace Prize (1901) was awarded to him |
+| 37 | B) Science popularization | Kalinga Prize (est. 1951) is awarded by UNESCO for exceptional skill in presenting scientific ideas |
+| 38 | B) 1930 | First FIFA World Cup was in Uruguay (hosts won); 13 teams participated |
+| 39 | A) Faster, Higher, Stronger | Latin: Citius, Altius, Fortius; since 2021, "Communiter" (Together) was added |
+| 40 | B) Australia | Australia has won 5 ODI World Cups (1987, 1999, 2003, 2007, 2023); India has 2 (1983, 2011) |
 
 ---
 

@@ -731,6 +731,299 @@ The HAL Tejas is an indigenous, single-engine, delta-wing, light combat aircraft
 
 ---
 
+### 5.8 Branches of Science — Complete Reference
+
+| Branch | Study Of | Father/Founder |
+|--------|----------|----------------|
+| **Physics** | Matter, energy, forces | Galileo Galilei (Father of Modern Science) |
+| **Chemistry** | Composition, structure, properties of matter | Antoine Lavoisier (Father of Modern Chemistry) |
+| **Biology** | Living organisms | Aristotle (Father of Biology) |
+| **Astronomy** | Celestial objects, universe | Copernicus |
+| **Botany** | Plants | Theophrastus (Father of Botany) |
+| **Zoology** | Animals | Aristotle (Father of Zoology) |
+| **Geology** | Earth's structure, rocks, minerals | James Hutton (Father of Modern Geology) |
+| **Meteorology** | Weather, atmosphere | Aristotle (Meteorologica) |
+| **Oceanography** | Oceans | — |
+| **Ecology** | Environment, ecosystems | Ernst Haeckel |
+| **Genetics** | Genes, heredity | Gregor Mendel (Father of Genetics) |
+| **Microbiology** | Microorganisms | Louis Pasteur, Robert Koch |
+| **Biotechnology** | Tech using living organisms | — |
+| **Paleontology** | Fossils, prehistoric life | Georges Cuvier |
+| **Psychology** | Mind, behaviour | Wilhelm Wundt (Father of Experimental Psychology) |
+| **Economics** | Production, distribution, consumption | Adam Smith (Father of Modern Economics) |
+| **Sociology** | Society, social behaviour | Auguste Comte (Father of Sociology) |
+| **Anthropology** | Human societies, cultures | — |
+| **Immunology** | Immune system | Edward Jenner (Father of Immunology) |
+| **Virology** | Viruses | Dmitri Ivanovsky |
+
+### 5.9 Scientific Instruments and Their Uses
+
+| Instrument | Measures/Uses |
+|------------|---------------|
+| Ammeter | Electric current |
+| Voltmeter | Electrical potential difference |
+| Thermometer | Temperature |
+| Barometer | Atmospheric pressure |
+| Hydrometer | Density or specific gravity of liquids |
+| Hygrometer | Humidity in air |
+| Lactometer | Purity of milk |
+| Saccharimeter | Sugar content in solution |
+| Seismograph | Earthquake intensity |
+| Richter Scale | Earthquake magnitude |
+| Anemometer | Wind speed |
+| Rain Gauge | Rainfall amount |
+| Wind Vane | Wind direction |
+| Stethoscope | Heartbeat, breathing sounds |
+| Sphygmomanometer | Blood pressure |
+| Electrocardiograph (ECG) | Heart electrical activity |
+| Electroencephalograph (EEG) | Brain electrical activity |
+| Spirometer | Lung capacity |
+| Periscope | Viewing from concealed position (submarines) |
+| Microscope | Viewing tiny objects |
+| Telescope | Viewing distant celestial objects |
+| Spectroscope | Light spectrum analysis |
+| Gyroscope | Orientation and angular velocity |
+| Altimeter | Altitude |
+| Odometer | Distance travelled by a vehicle |
+| Speedometer | Speed of a vehicle |
+| Chronometer | Precise time measurement (navigation) |
+| Calorimeter | Heat measurements |
+| Manometer | Gas/liquid pressure |
+| Venturi Meter | Flow rate of fluids |
+
+### 5.10 Important Scientific Laws and Principles
+
+| Law | Field | Statement |
+|-----|-------|-----------|
+| Archimedes' Principle | Physics | Buoyant force = weight of displaced fluid |
+| Boyle's Law | Physics | PV = constant (at constant temperature) |
+| Charles's Law | Physics | V/T = constant (at constant pressure) |
+| Pascal's Law | Physics | Pressure applied to fluid is transmitted equally in all directions |
+| Bernoulli's Principle | Physics | In flowing fluid, pressure decreases when velocity increases |
+| Newton's Laws of Motion | Physics | Inertia, F=ma, Action-Reaction |
+| Coulomb's Law | Physics | F ∝ q₁q₂/r² (electrostatic force) |
+| Ohm's Law | Physics | V = IR (voltage = current × resistance) |
+| Faraday's Law | Physics | Changing magnetic field induces EMF |
+| Hubble's Law | Astronomy | Galaxies move away proportional to distance (expanding universe) |
+| Mendel's Laws | Genetics | Dominance, Segregation, Independent Assortment |
+| Darwin's Theory | Biology | Natural selection; survival of the fittest |
+| Heisenberg's Principle | Physics | Cannot know position and momentum simultaneously |
+| Thermodynamics Laws | Physics | Energy conservation; entropy increases |
+| Avogadro's Law | Chemistry | Equal volumes of gases have equal molecules at same T & P |
+
+### 5.11 Important Chemicals and Their Uses
+
+| Chemical | Formula | Common Name | Use |
+|----------|---------|-------------|-----|
+| NaCl | Sodium chloride | Common salt | Cooking, preservative |
+| NaHCO₃ | Sodium bicarbonate | Baking soda | Cooking, antacid |
+| Na₂CO₃ | Sodium carbonate | Washing soda | Cleaning, glass-making |
+| NaOH | Sodium hydroxide | Caustic soda | Soap, paper, drain cleaner |
+| CaO | Calcium oxide | Quicklime | Cement, whitewashing |
+| Ca(OH)₂ | Calcium hydroxide | Slaked lime | Mortar, whitewashing |
+| CaSO₄·½H₂O | Calcium sulphate hemihydrate | Plaster of Paris | Casts, sculptures |
+| CaCO₃ | Calcium carbonate | Limestone/Chalk | Building material |
+| MgSO₄ | Magnesium sulphate | Epsom salt | Bath salt, laxative |
+| H₂SO₄ | Sulphuric acid | Oil of vitriol | Industrial chemical (most produced) |
+| HNO₃ | Nitric acid | Aqua fortis | Fertilizers, explosives |
+| HCl | Hydrochloric acid | Muriatic acid | Cleaning, metal processing |
+| CH₃COOH | Acetic acid | Vinegar (5-8% solution) | Cooking, preservative |
+| C₂H₅OH | Ethanol | Alcohol | Beverage, fuel, disinfectant |
+| H₂O₂ | Hydrogen peroxide | — | Bleaching, disinfectant |
+| NH₃ | Ammonia | — | Cleaning, fertilizer |
+| KMnO₄ | Potassium permanganate | — | Disinfectant, water purification |
+| C₆H₁₂O₆ | Glucose | Dextrose | Energy source |
+| C₁₂H₂₂O₁₁ | Sucrose | Table sugar | Sweetener |
+| C₆H₆ | Benzene | — | Chemical solvent |
+
+### 5.12 Blood Groups and Diseases — Quick Reference
+
+**Blood Groups:**
+- **ABO System:** A, B, AB, O
+- **Rh Factor:** Positive (+) or Negative (−)
+- **Universal Donor:** O− (no antigens: safe for all)
+- **Universal Recipient:** AB+ (no antibodies: can receive all)
+- **Most Common:** O+ (~37% population)
+- **Least Common:** AB− (~1%)
+- **Blood Composition:** Plasma (55%) + Blood cells (45%: RBCs, WBCs, Platelets)
+- **Function of RBC:** Oxygen transport (contain haemoglobin)
+- **Function of WBC:** Immune defence
+- **Function of Platelets:** Blood clotting
+
+**Major Diseases and Pathogens:**
+
+| Disease | Caused By | Type | Affected Body Part |
+|---------|-----------|------|-------------------|
+| Malaria | Plasmodium (protozoan) | Mosquito-borne (Anopheles) | Blood, liver |
+| Dengue | Dengue virus (Flavivirus) | Mosquito-borne (Aedes) | Blood platelets |
+| Chikungunya | Chikungunya virus | Mosquito-borne (Aedes) | Joints, muscles |
+| Tuberculosis (TB) | Mycobacterium tuberculosis | Bacterial | Lungs (primarily) |
+| COVID-19 | SARS-CoV-2 virus | Viral (respiratory) | Lungs, respiratory system |
+| Diabetes Mellitus | Insulin deficiency/insensitivity | Metabolic | Pancreas, blood sugar |
+| Anaemia | Iron/blood deficiency | Nutritional | Blood haemoglobin |
+| Hepatitis A/B/C | Hepatitis virus | Viral | Liver |
+| Typhoid | Salmonella typhi | Bacterial (contaminated food/water) | Intestine |
+| Cholera | Vibrio cholerae | Bacterial (contaminated water) | Intestine |
+| HIV/AIDS | HIV (Human Immunodeficiency Virus) | Viral (blood, sexual) | Immune system (T-cells) |
+| Cancer | Uncontrolled cell division | Various | Any body part |
+| Leprosy | Mycobacterium leprae | Bacterial | Skin, nerves |
+| Polio | Poliovirus | Viral | Nervous system (paralysis) |
+
+### 5.13 TypeScript: General Science Quiz Engine
+
+```typescript
+/**
+ * General Science MCQ Quiz Engine
+ * Covers physics, chemistry, biology for exam preparation
+ */
+interface ScienceQuestion {
+  domain: 'physics' | 'chemistry' | 'biology' | 'space';
+  question: string;
+  options: string[];
+  correctIndex: number;
+  explanation: string;
+}
+
+class ScienceQuizEngine {
+  private questions: ScienceQuestion[] = [];
+
+  constructor() {
+    this.initializeQuestions();
+  }
+
+  private initializeQuestions(): void {
+    this.questions = [
+      {
+        domain: 'physics',
+        question: 'What is the SI unit of electric current?',
+        options: ['Volt', 'Ampere', 'Ohm', 'Watt'],
+        correctIndex: 1,
+        explanation: 'The ampere (A) is the SI unit of electric current. Volt is for potential difference, Ohm for resistance, Watt for power.'
+      },
+      {
+        domain: 'chemistry',
+        question: 'Which element has the highest electronegativity?',
+        options: ['Oxygen', 'Chlorine', 'Fluorine', 'Nitrogen'],
+        correctIndex: 2,
+        explanation: 'Fluorine (F) has the highest electronegativity (4.0 on Pauling scale). It is the most reactive non-metal.'
+      },
+      {
+        domain: 'biology',
+        question: 'Which organ is responsible for detoxification in the human body?',
+        options: ['Kidney', 'Liver', 'Lungs', 'Heart'],
+        correctIndex: 1,
+        explanation: 'The liver detoxifies harmful substances, produces bile, stores vitamins, and regulates metabolism.'
+      },
+      {
+        domain: 'space',
+        question: 'Which ISRO mission successfully landed on the Moon in 2023?',
+        options: ['Chandrayaan-1', 'Chandrayaan-2', 'Chandrayaan-3', 'Mangalyaan'],
+        correctIndex: 2,
+        explanation: 'Chandrayaan-3 (23 Aug 2023) successfully soft-landed near the Moon\'s south pole, making India the 4th country to achieve this.'
+      },
+    ];
+  }
+
+  public getRandomQuestion(): ScienceQuestion {
+    return this.questions[Math.floor(Math.random() * this.questions.length)];
+  }
+
+  public getQuestionsByDomain(domain: string): ScienceQuestion[] {
+    return this.questions.filter(q => q.domain === domain);
+  }
+
+  public runFullQuiz(): void {
+    console.log('=== General Science Quiz ===');
+    let correct = 0;
+    this.questions.forEach((q, i) => {
+      console.log(`\nQ${i + 1} [${q.domain.toUpperCase()}]: ${q.question}`);
+      q.options.forEach((opt, j) => console.log(`  ${String.fromCharCode(65 + j)}. ${opt}`));
+    });
+    console.log(`\nCheck your answers against the key below:`);
+    this.questions.forEach((q, i) => {
+      console.log(`Q${i + 1}: ${q.options[q.correctIndex]} — ${q.explanation}`);
+    });
+  }
+}
+
+const scienceQuiz = new ScienceQuizEngine();
+scienceQuiz.runFullQuiz();
+```
+
+### 5.14 Additional Solved MCQs (Science & Technology)
+
+**Q21:** Which vitamin is synthesized by the human body when exposed to sunlight?
+
+A) Vitamin A
+B) Vitamin B
+C) Vitamin C
+D) Vitamin D
+
+<details>
+<summary>Answer</summary>
+**Answer: D) Vitamin D**
+
+Vitamin D is synthesized in the skin when exposed to UV-B radiation from sunlight (7-dehydrocholesterol is converted to cholecalciferol). It helps in calcium absorption and bone health.
+</details>
+
+**Q22:** The chemical formula of "Methane" is:
+
+A) CH₄
+B) C₂H₆
+C) C₃H₈
+D) CO₂
+
+<details>
+<summary>Answer</summary>
+**Answer: A) CH₄**
+
+Methane is the simplest hydrocarbon (alkane). It is the primary component of natural gas and a potent greenhouse gas (25x more warming potential than CO₂). C₂H₆ = Ethane, C₃H₈ = Propane.
+</details>
+
+**Q23:** The "Bakra Dam" is built on which river?
+
+A) Sutlej
+B) Beas
+C) Ravi
+D) Chenab
+
+<details>
+<summary>Answer</summary>
+**Answer: A) Sutlej**
+
+Bakra Dam is built across the Sutlej River in Himachal Pradesh. It is the second-highest dam in India (226 m). The dam creates the Gobind Sagar reservoir.
+</details>
+
+**Q24:** Which of the following is a vector-borne disease?
+
+A) Tuberculosis
+B) Typhoid
+C) Malaria
+D) Tetanus
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Malaria**
+
+Malaria is transmitted by the female Anopheles mosquito (vector). Vector-borne diseases are transmitted by arthropods/insects. Others: Dengue (Aedes mosquito), Chikungunya (Aedes), Japanese Encephalitis (Culex).
+</details>
+
+**Q25:** The "India's first satellite" was:
+
+A) INSAT-1A
+B) Bhaskara-I
+C) Aryabhata
+D) Rohini
+
+<details>
+<summary>Answer</summary>
+**Answer: C) Aryabhata (19 April 1975)**
+
+Aryabhata was India's first satellite, launched by the Soviet Union from Kapustin Yar. It was named after the 5th-century Indian astronomer-mathematician. Bhaskara-I (1979) was an experimental Earth observation satellite.
+</details>
+
+---
+
 ## Summary
 
 - **Newton's Laws** form the basis of classical mechanics; **Gravitation** governs planetary motion and everyday objects.
@@ -934,6 +1227,78 @@ D) Mansonia
 
 **30.** The human body has 23 pairs of chromosomes. (T/F)
 
+### Section D: Additional MCQs (Exam Focus — Science)
+
+**31.** The "pH" of pure water at 25°C is:
+
+A) 0
+B) 7
+C) 10
+D) 14
+
+**32.** Which of the following is NOT a greenhouse gas?
+
+A) Carbon dioxide (CO₂)
+B) Methane (CH₄)
+C) Oxygen (O₂)
+D) Nitrous oxide (N₂O)
+
+**33.** The atomic number of Carbon is:
+
+A) 4
+B) 6
+C) 8
+D) 12
+
+**34.** "ECG" measures the electrical activity of which organ?
+
+A) Brain
+B) Heart
+C) Lungs
+D) Muscles
+
+**35.** Which planet has the maximum number of moons in our solar system?
+
+A) Jupiter
+B) Saturn
+C) Uranus
+D) Neptune
+
+**36.** The "DNA" double helix structure was discovered by:
+
+A) Gregor Mendel
+B) Watson and Crick
+C) Charles Darwin
+D) Louis Pasteur
+
+**37.** What is the normal haemoglobin level in adult males?
+
+A) 10–12 g/dL
+B) 13–17 g/dL
+C) 18–22 g/dL
+D) 23–25 g/dL
+
+**38.** The "HAL Tejas" is an example of a:
+
+A) Missile
+B) Fighter aircraft
+C) Helicopter
+D) Warship
+
+**39.** The "Raman Effect" was discovered by which Indian scientist?
+
+A) Homi Bhabha
+B) C.V. Raman
+C) S. Chandrasekhar
+D) Vikram Sarabhai
+
+**40.** The SI unit of luminous intensity is:
+
+A) Lux
+B) Candela
+C) Lumen
+D) Watt
+
 ---
 
 <details>
@@ -974,6 +1339,18 @@ D) Mansonia
 28. F (Agni-V is a surface-to-surface ballistic missile/ICBM)
 29. T
 30. T
+
+**Section D (31-40):**
+31. B) 7 (pure water is neutral; pH scale 0–14; 7 = neutral, <7 = acidic, >7 = alkaline)
+32. C) O₂ (Oxygen is not a greenhouse gas; GHGs are CO₂, CH₄, N₂O, H₂O vapour, F-gases)
+33. B) 6 (Carbon has atomic number 6; 6 protons, 6 electrons; symbol C)
+34. B) Heart (Electrocardiogram; records electrical signals from the heart to check rhythm and function)
+35. B) Saturn (146 known moons as of 2024; Jupiter has 95; Saturn recently overtook Jupiter)
+36. B) Watson and Crick (1953; Nobel Prize 1962; based on X-ray data by Rosalind Franklin)
+37. B) 13–17 g/dL (adult males; adult females: 12–15 g/dL; <12 usually indicates anaemia)
+38. B) Fighter aircraft (Light Combat Aircraft; 4.5 generation; developed by HAL/ADA)
+39. B) C.V. Raman (discovered in 1928; Nobel Prize in Physics 1930; first Asian to win a science Nobel)
+40. B) Candela (cd; one of the 7 SI base units; Lux = lumen/m²; Lumen = candela·steradian)
 </details>
 
 ---

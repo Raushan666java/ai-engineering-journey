@@ -77,7 +77,7 @@ A structured path from beginner to job-ready through all courses in this reposit
 | 1-4 | System Design: scalability, caching, microservices, cases | [System Design ch 01-12](courses/system-design/) |
 | 5-9 | DevOps: Docker, K8s, CI/CD, IaC, monitoring | [DevOps ch 01-18](courses/devops/) |
 | 10-13 | Cloud Computing: AWS, Azure, GCP, serverless | [Cloud Computing ch 01-10](courses/cloud-computing/) |
-| 14-16 | Cyber Security: crypto, network security, pentesting | [Cyber Security ch 01-10](courses/cyber-security/) |
+| 14-16 | Cyber Security: crypto, network security, pentesting | [Cyber Security ch 01-21](courses/cyber-security/) |
 
 ### Semester 8 — Advanced Electives
 

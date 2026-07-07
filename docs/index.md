@@ -126,8 +126,8 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 <div class="course-grid" markdown>
 
 -   <span class="course-icon">☁️</span> __[Cloud Computing](courses/cloud-computing/)__ <span class="course-chaps">10 ch</span>
--   <span class="course-icon">🔧</span> __[DevOps](courses/devops/)__ <span class="course-chaps">18 ch</span>
--   <span class="course-icon">🔒</span> __[Cyber Security](courses/cyber-security/)__ <span class="course-chaps">10 ch</span>
+-   <span class="course-icon">🔧</span> __[DevOps](courses/devops/)__ <span class="course-chaps">27 ch</span>
+-   <span class="course-icon">🔒</span> __[Cyber Security](courses/cyber-security/)__ <span class="course-chaps">21 ch</span>
 -   <span class="course-icon">⛓️</span> __[Blockchain](courses/blockchain/)__ <span class="course-chaps">10 ch</span>
 -   <span class="course-icon">📊</span> __[Big Data](courses/big-data/)__ <span class="course-chaps">5 ch</span>
 

@@ -38,6 +38,7 @@ In an era of ubiquitous connectivity, security is not a feature but a fundamenta
 | 18 | **Digital Privacy, Anonymity & OSINT** | Tor/I2P, VPNs, OPSEC, browser fingerprinting, OSINT frameworks, dark web, metadata stripping |
 | 19 | **Blockchain, Smart Contract & DeFi Security** | Reentrancy/DAO hack, flash loans, MEV, cross-chain bridges, HD wallets, consensus attacks, DeFi exploits |
 | 20 | **Zero Trust & Enterprise Security Architecture** | NIST SP 800-207, BeyondCorp, SASE, ZTNA, microsegmentation, policy engine, CISA ZT Maturity Model |
+| 21 | **Social Media Security & Account Takeover** | Phishing/SIM swap/MFA bypass attacks, credential stuffing, session hijacking, platform forensics, personal defense architecture, IR playbook, SIM swap prevention, password managers |
 | 11 | **SOC & Threat Hunting** | SIEM architecture, detection engineering, threat hunting, incident triage |
 | 12 | **Malware Analysis** | Static/dynamic analysis, reverse engineering, packing, anti-analysis |
 | 13 | **Red Team & C2** | C2 frameworks, staging, EDR evasion, pivoting, covert channels |

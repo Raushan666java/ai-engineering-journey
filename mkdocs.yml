@@ -1439,6 +1439,7 @@ nav:
     - 18 - Privacy, Anonymity & OSINT: courses/cyber-security/18-privacy-osint.md
     - 19 - Blockchain, Smart Contract & DeFi: courses/cyber-security/19-blockchain-defi-security.md
     - 20 - Zero Trust & Enterprise Architecture: courses/cyber-security/20-zero-trust-architecture.md
+    - 21 - Social Media Security & Account Takeover: courses/cyber-security/21-social-media-security.md
   - "⛓️ Blockchain":
     - Overview: courses/blockchain/index.md
     - Introduction: courses/blockchain/01-introduction.md

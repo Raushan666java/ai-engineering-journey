@@ -263,6 +263,20 @@ nav:
       - SBI PO 2022: courses/government-pyqs/12-sbi-po-2022.md
       - RBI Grade B 2024: courses/government-pyqs/13-rbi-grade-b-2024.md
       - RBI Grade B 2023: courses/government-pyqs/14-rbi-grade-b-2023.md
+  - "⚡ Modern AI Engineering":
+    - Overview: courses/modern-ai-engineering/index.md
+    - '01 - Modern AI Stack 2026': courses/modern-ai-engineering/01-modern-ai-stack.md
+    - '02 - Genkit Deep Dive': courses/modern-ai-engineering/02-genkit-deep-dive.md
+    - '03 - LLM Fundamentals': courses/modern-ai-engineering/03-llm-fundamentals.md
+    - '04 - Prompt Engineering': courses/modern-ai-engineering/04-prompt-engineering.md
+    - '05 - RAG with LlamaIndex': courses/modern-ai-engineering/05-rag-llamaindex-genkit.md
+    - '06 - Memory Systems': courses/modern-ai-engineering/06-memory-systems.md
+    - '07 - Tool Calling & MCP': courses/modern-ai-engineering/07-tool-calling-mcp.md
+    - '08 - AI Agents LangGraph': courses/modern-ai-engineering/08-ai-agents-langgraph.md
+    - '09 - Multi-Agent Systems': courses/modern-ai-engineering/09-multi-agent-systems.md
+    - '10 - Production AI': courses/modern-ai-engineering/10-production-ai.md
+    - '11 - Eval & Observability': courses/modern-ai-engineering/11-evaluation-observability.md
+    - '12 - Capstone Platform': courses/modern-ai-engineering/12-capstone-education-platform.md
   - "🤖 AI Agent Engineer":
     - Overview: courses/ai-agent-engineer/00-index.md
     - Phase 0 - Backend Hardening: courses/ai-agent-engineer/01-phase0-backend-hardening.md

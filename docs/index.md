@@ -112,9 +112,11 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="course-grid" markdown>
 
+-   <span class="course-icon">⚡</span> __[Modern AI Engineering](courses/modern-ai-engineering/)__ <span class="course-chaps">12 ch</span>
 -   <span class="course-icon">🤖</span> __[Artificial Intelligence](courses/artificial-intelligence/)__ <span class="course-chaps">18 ch</span>
 -   <span class="course-icon">📊</span> __[Machine Learning](courses/machine-learning/)__ <span class="course-chaps">10 ch</span>
 -   <span class="course-icon">🧠</span> __[Applied AI](courses/applied-ai/)__ <span class="course-chaps">4 ch</span>
+-   <span class="course-icon">🤖</span> __[AI Agent Engineer](courses/ai-agent-engineer/)__ <span class="course-chaps">14 ch</span>
 -   <span class="course-icon">🏗️</span> __[System Design](courses/system-design/)__ <span class="course-chaps">24 ch</span>
 
 </div>

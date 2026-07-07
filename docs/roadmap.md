@@ -308,7 +308,8 @@ Track your preparation using the [Learning Analytics](courses/learning-how-to-le
 | | [Theory of Computation](courses/theory-of-computation/) | 16 |
 | | [Compiler Design](courses/compiler-design/) | 15 |
 | | [Software Engineering](courses/software-engineering/) | 16 |
-| **AI/ML** | [Artificial Intelligence](courses/artificial-intelligence/) | 18 |
+| **AI/ML** | [Modern AI Engineering](courses/modern-ai-engineering/) | 12 |
+| | [Artificial Intelligence](courses/artificial-intelligence/) | 18 |
 | | [Machine Learning](courses/machine-learning/) | 10 |
 | | [Applied AI](courses/applied-ai/) | 4 |
 | | [AI Agent Engineer](courses/ai-agent-engineer/) | 14 |

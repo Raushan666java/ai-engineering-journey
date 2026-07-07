@@ -26,4 +26,12 @@
 3. Revise NPCI products (UPI, RuPay, FASTag, NACH)
 4. Practice banking-specific current affairs MCQs
 
+## 📚 Recommended Resources
+
+| Resource | Use |
+|----------|-----|
+| NPCI Annual Report | UPI, RuPay, FASTag updates |
+| RBI Master Circulars | Regulatory framework |
+| Banking Awareness monthly PDFs | Current developments |
+
 > Proceed to [Chapter 1 — Core Banking Solutions & Payment Infrastructure](01-core-banking-solutions.md)

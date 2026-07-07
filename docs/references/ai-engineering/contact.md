@@ -28,6 +28,13 @@ If you find the curriculum useful, show your support:
 - **Rohit Ghumare** — [GitHub @rohitg00](https://github.com/rohitg00)
 - Also the creator of [Agent Memory](https://github.com/rohitg00/agentmemory) — #1 persistent memory for agents
 
+## About This Site's Maintainer
+
+**Raushan Kumar** — transitioning Laravel developer → AI Automation Engineer.
+This site adapts the above curriculum alongside 30+ original CS/AI courses.
+- [GitHub @Raushan666java](https://github.com/Raushan666java)
+- [LinkedIn](https://linkedin.com/in/raushan-kumar-477465250)
+
 ## Contribute
 
 The curriculum is open source (MIT). Contributions welcome:

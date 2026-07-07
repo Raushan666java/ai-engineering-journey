@@ -27,4 +27,14 @@
 3. Cache mapping problems are common — practice numericals
 4. Pipeline hazards — understand stalls and forwarding
 
+## 📚 Key Topics by Chapter
+
+| Chapter | Key Topics | Weightage |
+|---------|-----------|-----------|
+| 1 | Binary/Hex/Octal conversions, 1's/2's complement, Boolean laws | 1-2 Qs |
+| 2 | ALU, Control Unit, Register file, Instruction formats, RISC vs CISC | 1-2 Qs |
+| 3 | Cache mapping (direct/associative/set-associative), LRU, locality | 1-2 Qs |
+| 4 | Pipeline stages, data/control/structural hazards, forwarding | 1-2 Qs |
+| 5 | I/O modes, interrupt handling, DMA controller, bus arbitration | 1 Q |
+
 > Proceed to [Chapter 1 — Number Systems & Boolean Algebra](01-number-systems.md)

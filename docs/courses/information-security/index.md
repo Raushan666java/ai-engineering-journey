@@ -27,4 +27,14 @@
 3. Know common attack types and their prevention
 4. Banking-specific: RBI cybersecurity framework
 
+## 📚 Key Topics by Chapter
+
+| Chapter | Key Topics | Weightage |
+|---------|-----------|-----------|
+| 1 | Symmetric/Asymmetric, DES, AES, RSA, Hash functions, Digital signatures | 1-2 Qs |
+| 2 | Firewalls, IDS/IPS, VPN, SSL/TLS, IPsec, WPA, 802.1X | 1-2 Qs |
+| 3 | Malware types, DoS/DDoS, Phishing, SQLi, XSS, Session hijacking | 1-2 Qs |
+| 4 | CA hierarchy, X.509 certificates, PKI trust model, CRL, OCSP | 1 Q |
+| 5 | PCI DSS, 3D Secure, Tokenization, RBI guidelines, UPI security | 1 Q |
+
 > Proceed to [Chapter 1 — Cryptography Fundamentals](01-cryptography-fundamentals.md)

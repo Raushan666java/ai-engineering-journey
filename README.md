@@ -2,98 +2,96 @@
 
 [![GitHub Pages](https://img.shields.io/badge/site-live-blue)](https://raushan666java.github.io/ai-engineering-journey/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Chapters](https://img.shields.io/badge/chapters-400%2B-orange)]()
-[![Courses](https://img.shields.io/badge/courses-26-blueviolet)]()
+[![Chapters](https://img.shields.io/badge/chapters-550%2B-brightgreen)]()
+[![Courses](https://img.shields.io/badge/courses-34-blueviolet)]()
+[![Lines](https://img.shields.io/badge/total%20lines-85K%2B-red)]()
 
-> A comprehensive, university-grade Computer Science curriculum with modern applied tracks.
-> **26 courses, 400+ chapters** — from first principles to AI/ML Automation & Backend Engineering.
+> Laravel developer → AI Automation Engineer. **550+ lessons across 34 courses**, one documented transition at a time.
+> Covers AI/ML engineering, CS fundamentals, full-stack dev, system design, and government exam prep.
+> Every chapter: **Learning Objectives → Theory → Examples (TypeScript) → Summary → Chapter Quiz → Exercises**
 
-## Site
 ## Site
 
 **https://raushan666java.github.io/ai-engineering-journey/**
 
-Built with MkDocs + Material theme. Every chapter:  
-**Learning Objectives → Theory → Examples → Summary → Exercises**
+Built with MkDocs + Material theme (TutorialsPoint-style). Every chapter includes Mermaid diagrams, TypeScript code examples, 20 solved MCQs, and 30 practice exercises.
 
 ---
 
 ## Curriculum
 
-### Foundation (Year 1–2)
+### Languages & Full-Stack
 
 | Course | Chapters | Covers |
 |--------|----------|--------|
-| **C Programming** | 15 | Memory, pointers, systems programming |
+| **C Programming** | 18 | Memory, pointers, systems programming |
+| **OOP with C++** | 16 | Classes, polymorphism, templates, STL |
+| **Python Programming** | 21 | Scripting → NumPy → concurrency |
+| **Web Development** | 18 | HTML/CSS → React → Next.js |
+| **Laravel** | 60 | PHP → MySQL → AI/ML integration |
+| **Java + Spring Boot** | 66 | Core Java → Microservices interview Q&A |
+
+### CS Core
+
+| Course | Chapters | Covers |
+|--------|----------|--------|
 | **Discrete Mathematics** | 15 | Logic, sets, proofs, combinatorics |
-| **Digital Logic** | 15 | Architecture, binary systems |
+| **Digital Logic** | 15 | Gates, K-maps, flip-flops, HDL |
 | **Data Structures** | 18 | Arrays → graphs, all major ADTs |
-| **OOP with C++** | 15 | Classes, polymorphism, templates |
-| **Algorithms** | 22 | Complexity, sorting, DP, graph algorithms |
-
-### Core Systems (Year 2–3)
-
-| Course | Chapters | Covers |
-|--------|----------|--------|
-| **Operating Systems** | 15 | Scheduling, memory, kernels |
+| **Algorithms** | 18 | Complexity, sorting, DP, graph algorithms |
+| **Operating Systems** | 18 | Scheduling, memory, kernels |
 | **DBMS** | 19 | SQL, NoSQL, indexing, performance tuning |
 | **Computer Networks** | 18 | TCP/IP, HTTP/2, gRPC, SDN |
-
-### Theoretical CS (Year 3)
-
-| Course | Chapters | Covers |
-|--------|----------|--------|
-| **Theory of Computation** | 15 | Automata, decidability, complexity |
+| **Theory of Computation** | 16 | Automata, decidability, complexity |
 | **Compiler Design** | 15 | Lexing, parsing, optimization |
 | **Software Engineering** | 16 | SDLC, agile, DevOps, security |
 
-### Applied & Modern (Year 3–4)
+### AI & Machine Learning
 
 | Course | Chapters | Covers |
 |--------|----------|--------|
-| **Python Programming** | 21 | Scripting → NumPy → concurrency |
-| **Web Development** | 18 | HTML/CSS → React → Next.js |
-| **Artificial Intelligence** | 15 | Search, logic, RL |
-| **Machine Learning** | 16 | scikit-learn, Keras, pipelines |
+| **Artificial Intelligence** | 18 | Search, logic, RL, NLP, CV |
+| **Machine Learning** | 10 | Regression → Neural Networks → Ensemble |
+| **Applied AI** | 4 | LangChain, OpenCV, GenAI |
+| **System Design** | 24 | Scalability, CAP, HLD + LLD, 6 case studies |
+| **AI Agent Engineer** | 14 | FastAPI, RAG, LangGraph, MCP, production |
 
-### Advanced Electives (Year 4)
-
-| Course | Chapters | Covers |
-|--------|----------|--------|
-| **System Design** | 20 | Scalability, CAP, distributed patterns |
-| **DevOps** | 15 | CI/CD, Docker, K8s |
-| **Cloud Computing** | 15 | AWS, Azure, GCP |
-| **Cyber Security** | 14 | Cryptography, network defense |
-| **Blockchain** | 12 | Ledgers, smart contracts, DApps |
-
-### Professional Tracks
+### Infrastructure & Security
 
 | Course | Chapters | Covers |
 |--------|----------|--------|
-| **Java + Spring Boot** | 66 | Core Java → Microservices interview Q&A |
-| **Laravel 13** | 54 | PHP → MySQL → AI/ML fundamentals |
-| **React** | 40 | Components → advanced patterns |
-| **GATE CS Prep** | 14 | Aptitude, TOC, Compilers, Digital Logic, Strategy, 8 Mock Tests |
-| **Placement Prep** | 7 | Resume, DSA 100 problems, SQL bank, Company PYQs, HR/GD |
+| **Cloud Computing** | 10 | AWS, Azure, GCP comparison |
+| **DevOps** | 18 | CI/CD, Docker, K8s, observability |
+| **Cyber Security** | 10 | Cryptography, network defense |
+| **Blockchain** | 10 | Ledgers, smart contracts, DApps |
+| **Big Data** | 5 | Hadoop, Spark, NoSQL |
 
+### Career & Exam Prep
+
+| Course | Chapters | Covers |
+|--------|----------|--------|
+| **GATE CS Prep** | 19 | Aptitude, TOC, Compilers, Digital Logic, 8 Mock Tests |
+| **Placement Prep** | 7 | Resume, DSA 100 problems, SQL, Company PYQs |
+| **Learning How to Learn** | 14 | Active recall, spaced repetition, DSA prep, GATE, meta-learning |
+| **Government Exams (21 subjects)** | 98+ | IBPS SO, NIC Scientist, SBI IT, RBI Grade B — English, Reasoning, Quant, Banking Tech, InfoSec, COA, Interview Prep, GK, Hindi, Marketing, DI |
 
 ---
 
 ## Specialization Tracks
 
-### AI/ML Automation & Backend Engineer
+### AI Automation Engineer (Target: Dubai / Remote)
 
-Designed for the modern full-stack AI engineer. Covers 5 modules:
+Designed for Laravel devs transitioning into AI Engineering. Core modules:
 
-1. **Python Programming** (ch1–21) — Fundamentals through concurrency & joblib
-2. **Web Development** (ch1–18) — Full-stack with React + Node.js
-3. **Database Management Systems** (ch1–19) — SQL through production performance tuning
-4. **Machine Learning** (ch1–16) — Classical ML through neural networks
-5. **Laravel 13** (ch1–54) — PHP backend through AI/ML integration
+1. **Python Programming** (21 ch) — Fundamentals through concurrency
+2. **Machine Learning** (10 ch) — Classical ML through neural networks
+3. **AI Agent Engineer** (14 ch) — FastAPI, RAG, LangGraph, MCP
+4. **System Design** (24 ch) — HLD + LLD, 6 real-world case studies
+5. **ai-engineering-from-scratch** (20 phases) — Setup → Math → ML → CV → NLP → Transformers → LLMs → Agents
 
-### Java/Spring Boot Developer
+### Government IT Officer (IBPS SO / NIC Scientist / SBI IT)
 
-66 chapters covering OOP, Collections, Concurrency, JVM internals, Spring DI/IoC, MVC, Security, Data JPA, Microservices, Kafka, Kubernetes, and 5 interview Q&A chapters (1500+ lines each).
+21 exam-focused subjects across 98+ files covering English, Reasoning, Quant, Professional Knowledge (DBMS, CN, OS, DS, OOP, SE, Web Tech, Cloud, InfoSec, COA), Banking Tech, InfoSec, General Awareness, Banking Awareness, Hindi, Marketing Aptitude, Data Interpretation, Interview & Job Prep.
 
 ---
 

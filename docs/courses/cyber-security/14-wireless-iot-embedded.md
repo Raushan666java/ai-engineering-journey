@@ -2580,7 +2580,7 @@ dd if=newroot.squashfs of=padded.bin bs=1024 seek=256 conv=notrunc
 
 ---
 
-## 14. Summary
+## Summary
 
 Wireless, IoT, and embedded security is a multi-dimensional discipline that spans radio-layer attacks, protocol-level vulnerabilities, firmware reverse engineering, and hardware-level exploitation.
 
@@ -2630,7 +2630,7 @@ flowchart TB
 
 ---
 
-## 15. Chapter Quiz
+## Chapter Quiz
 
 **10 Multiple Choice Questions**
 
@@ -2698,7 +2698,7 @@ flowchart TB
 
 ---
 
-## 16. Exercises
+## Exercises
 
 ### Exercise 1: PMKID Cracking Tool
 

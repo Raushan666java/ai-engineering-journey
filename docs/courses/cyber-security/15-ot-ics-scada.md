@@ -1997,7 +1997,7 @@ flowchart TD
 
 ---
 
-## 12. Summary
+## Summary
 
 OT/ICS/SCADA security is fundamentally different from traditional IT security. The priority shift from Confidentiality → Availability, combined with 15–30 year device lifetimes, lack of authentication in legacy industrial protocols, and safety-critical process dependencies, requires specialized knowledge and tools.
 

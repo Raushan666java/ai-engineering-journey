@@ -4597,3 +4597,58 @@ flowchart TD
 <summary>Answers</summary>
 1. B, 2. B, 3. B, 4. A, 5. B, 6. C, 7. B, 8. B, 9. C, 10. B
 </details>
+
+---
+
+## Exercises
+
+### Review Questions
+
+1. What are the six phases of the digital forensics methodology?
+2. Explain the Order of Volatility and why it matters for incident response.
+3. What is the difference between live acquisition and dead acquisition?
+4. List three types of evidence that can be recovered from a Windows registry hive.
+5. What is the chain of custody and why is it legally critical?
+6. Explain the difference between NIST SP 800-61 and SANS PICERL incident response frameworks.
+
+### Practical Exercises
+
+1. **Memory Acquisition:** Use FTK Imager or Belkasoft to acquire a memory dump from a test Windows machine. Verify the integrity of the dump using SHA-256 hashing. Document the process step by step.
+
+2. **File Carving:** Download a sample raw disk image from CFReDS (Digital Forensic Research Repository). Use foremost or scalpel to recover deleted files. Categorize recovered files by type (JPEG, PDF, DOCX, ZIP).
+
+3. **Windows Registry Analysis:** Use RegRipper or autopsy to analyze a Windows registry hive. Extract:
+   - Recently accessed files (MRU lists)
+   - USB device history
+   - User account information
+   - Installed programs list
+   
+4. **Network Forensic Analysis:** Capture network traffic during a simulated attack (use your lab from Chapter 1). Use Wireshark and Zeek to:
+   - Identify the attacker's IP address
+   - Extract downloaded files from HTTP streams
+   - Create a timeline of network events
+   - Identify C2 beaconing patterns
+
+5. **Incident Response Tabletop Exercise:** Design a ransomware incident scenario. Write injects for each phase (Preparation → Detection → Containment → Eradication → Recovery → Post-Mortem). Include decision points and expected actions for each role.
+
+### Challenge Problems
+
+1. **Full Forensic Investigation:** Create a forensic image of a simulated compromised system (use a deliberately vulnerable VM). Conduct a complete investigation:
+   - Identify the initial compromise vector
+   - Trace the attacker's actions (timeline)
+   - Recover deleted evidence
+   - Identify data exfiltrated
+   - Write a complete forensic report suitable for court
+
+2. **YARA Rule Development:** Analyze 5 real malware samples (from MalwareBazaar). Create custom YARA rules that detect each sample based on:
+   - Strings (unique patterns)
+   - File metadata (PE sections, compile time)
+   - Behavioral indicators (imports, resources)
+   Test your rules against clean files to confirm no false positives.
+
+3. **Timeline Analysis:** Use Plaso (log2timeline) to create a super timeline from a forensic image. Use psort to filter by event type. Identify:
+   - When the compromise occurred
+   - What files were accessed after compromise
+   - What network connections were made
+   - What registry keys were modified
+   Create a visual timeline in Kibana or Timeline Explorer.

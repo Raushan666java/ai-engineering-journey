@@ -2251,7 +2251,7 @@ Score interpretation:
 
 ---
 
-## 20.15 Summary
+## Summary
 
 - **Zero Trust** originated with John Kindervag at Forrester in 2010, was operationalized by Google BeyondCorp (2011–2014), standardized by **NIST SP 800-207** (2020), and organized into maturity tiers by **CISA**.
 - The five core principles—**never trust/always verify, assume breach, least privilege, microsegmentation, and continuous validation**—form the philosophical foundation of every Zero Trust implementation.
@@ -2266,7 +2266,7 @@ Score interpretation:
 
 ---
 
-## Chapter 20 Quiz (10 Questions)
+## Chapter Quiz
 
 **1. Who coined the term "Zero Trust"?**
    - A) NIST

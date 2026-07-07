@@ -2478,4 +2478,64 @@ flowchart LR
 
 ---
 
-> **File Statistics:** This chapter contains 750+ lines covering SOC operations, SIEM deployment, SOAR automation, threat hunting, detection engineering, memory forensics, and SOC maturity metrics.
+---
+
+## Exercises
+
+### Review Questions
+
+1. What are the three tiers of SOC analysts and what are their primary responsibilities?
+2. Explain the difference between MTTD, MTTR, and MTTI in SOC metrics.
+3. What is the Pyramid of Pain and why is it important for threat intelligence?
+4. How does the Cyber Kill Chain differ from the MITRE ATT&CK framework?
+5. What is a Sigma rule and what problem does it solve for detection engineering?
+6. Explain the Diamond Model of Intrusion Analysis and its four core features.
+
+### Practical Exercises
+
+1. **SIEM Deployment Lab:** Using the lab from Chapter 1, deploy the Wazuh SIEM:
+   - Install Wazuh indexer + server + dashboard
+   - Deploy Wazuh agents on Windows and Linux targets
+   - Configure log collection (Windows Event Logs, Sysmon, Linux auth.log)
+   - Verify logs are appearing in the Wazuh dashboard
+   - Create a custom alert rule
+
+2. **Sigma Rule Development:** Write Sigma rules for the following detection scenarios:
+   - PowerShell with encoded command execution
+   - Scheduled task creation for persistence
+   - Pass-the-hash detection (Event ID 4624 with Logon Type 3 and NTLM)
+   - Suspicious LSASS process access (Event ID 4663)
+   - Convert each rule to Elasticsearch/KQL format using sigma-cli
+
+3. **Threat Hunting Exercise:** Using Elastic SIEM or Wazuh with simulated attack data:
+   - Hunt for C2 beaconing (regular intervals, small packets, JA3 hashes)
+   - Hunt for credential dumping (lsass.exe access events)
+   - Hunt for lateral movement (Event ID 4624 with Logon Type 3 from unusual source)
+   - Create a hypothesis-driven hunt plan and document your findings
+
+4. **Alert Triage Simulation:** Given the following 10 alerts from a SIEM, categorize each:
+   - Benign / False Positive / Confirm True Positive / Requires Escalation
+   - For each, write the triage notes explaining your decision
+   - Alert data: PowerShell script execution (admin), Failed logon from known IP (janitor), Outbound DNS to known C2 domain, Large file upload at 3 AM (backup server), New service installed (Windows Update), USB device connected (manager's laptop), Login from Russia (employee on vacation), Process injection detected (game.exe), Firewall rule changed (IT admin during maintenance), Email with "Invoice" attachment from external sender
+
+### Challenge Problems
+
+1. **SOAR Playbook Development:** Design and implement a SOAR playbook using Shuffle or Tines for:
+   - Phishing email response (analyze attachment → check VT → isolate endpoint → block sender → alert SOC)
+   - Brute force detection (correlate failed logons → check IP reputation → block on firewall → notify user)
+   - Ransomware containment (isolate endpoint → kill process → block C2 IP → create memory dump → escalate)
+   Each playbook must include at least 5 steps with decision points.
+
+2. **Full SOC Simulation:** Design and run a 4-hour SOC simulation exercise:
+   - Scenario: APT group attack (initial access via phishing → persistence → lateral movement → data exfiltration)
+   - Inject 5+ alerts across the kill chain (some true, some false positives)
+   - SOC team must: triage each alert, escalate appropriately, contain the threat, write incident report
+   - Post-exercise: measure MTTD, MTTR, false positive rate, and identify areas for improvement
+
+3. **Custom Detection Pipeline:** Build a complete detection pipeline:
+   - Data source: Windows Event Logs (simulate with event log generator)
+   - Collection: Winlogbeat → Kafka → Logstash → Elasticsearch
+   - Detection: Custom Sigma rules converted to Elasticsearch SIEM rules
+   - Alerting: Elasticsearch watcher or custom webhook to Slack/Discord
+   - Response: Automated action (run script on endpoint via Wazuh active response)
+   Test the pipeline by generating a real attack and confirming end-to-end detection.

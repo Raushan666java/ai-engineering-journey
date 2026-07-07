@@ -2441,7 +2441,7 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 ---
 
-## 2.18 Exercises
+## Exercises
 
 ### Review Questions
 

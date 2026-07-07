@@ -1906,7 +1906,7 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ---
 
-## Section 14: Exercises
+## Exercises
 
 ### Review Questions
 

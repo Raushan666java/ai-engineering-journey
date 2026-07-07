@@ -3851,7 +3851,7 @@ Test your understanding of network security concepts covered in this chapter.
 
 ---
 
-## Chapter 3 Final Summary
+## Summary
 
 **Core Security Principles:**
 - Defense in depth: no single control is sufficient

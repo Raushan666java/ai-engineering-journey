@@ -2893,7 +2893,7 @@ void demonstrateDependencyConfusionScanner();
 
 ---
 
-## 16.9 Summary
+## Summary
 
 This chapter covered the critical topic of software supply chain and CI/CD pipeline security:
 
@@ -3059,7 +3059,7 @@ D. Falco
 
 ---
 
-## 16.10 Exercises
+## Exercises
 
 ### Exercise 1: SBOM Analysis and Validation
 

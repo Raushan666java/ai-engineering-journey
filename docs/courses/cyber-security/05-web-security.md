@@ -1242,7 +1242,7 @@ Industry benchmarks:
 
 ---
 
-## 28. Exercises
+## Exercises
 
 ### Review Questions
 

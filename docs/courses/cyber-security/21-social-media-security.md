@@ -493,7 +493,402 @@ class InstagramPhishDetector extends PhishingDetector {
 }
 ```
 
-### 2.2 Social Engineering Countermeasures
+### 2.2 Pretexting — Building a Believable Cover Story
+
+Pretexting is the most sophisticated form of social engineering because the attacker creates an entire fictional scenario (the "pretext") to manipulate the target. Unlike a simple phishing email, pretexting involves research, role-playing, and multiple interaction points.
+
+**The Pretexting Playbook:**
+
+```
+PRETEXTING FRAMEWORK
+═══════════════════════════════════════════════════
+STEP 1: TARGET SELECTION
+  └── Identify high-value target (executive, IT admin, finance)
+  └── Gather OSINT: LinkedIn, Facebook, Instagram, Twitter, company website
+
+STEP 2: PRETEXT CONSTRUCTION
+  └── Choose role: IT support, vendor, auditor, recruiter, journalist
+  └── Create backstory based on target's context
+  └── Prepare documents: fake ID, fake ticket number, fake company email
+
+STEP 3: CONTACT ESTABLISHMENT
+  └── First touch: low-stakes request (survey, calendar invite)
+  └── Build rapport over multiple interactions (days/weeks)
+  └── Use name-dropping: "I was just talking to [manager's name]"
+
+STEP 4: INFORMATION EXTRACTION
+  └── Escalate requests progressively
+  └── Each request is reasonable on its own
+  └── Exploit authority: "CEO needs this done urgently"
+
+STEP 5: COVER CLOSURE
+  └── Thank target profusely
+  └── Leave behind plausible deniability
+  └── Cover tracks: delete emails, fake account deactivation
+```
+
+**Real Pretexting Scripts:**
+
+| Scenario | Attacker Role | Script Example | Psychological Lever |
+|----------|--------------|----------------|-------------------|
+| **IT Support** | Help desk calling about "suspicious login" | "Hi [Name], this is Mark from IT Security. We detected an unusual login attempt from Russia at 3 AM. I need to verify your account — can you confirm your username and the last password you remember?" | Fear + Authority |
+| **Vendor Auditor** | Third-party security auditor | "I'm conducting our quarterly vendor security audit. Your CEO signed the authorization. I need your VPN credentials and a list of all internal systems you have access to." | Authority + Legitimacy |
+| **Recruiter** | Headhunter with "amazing opportunity" | "Hi [Name], I found your profile on LinkedIn. I'm recruiting for a Director role at [Competitor]. Before I share details, I need to verify your background — what projects have you worked on recently?" | Greed + Ego |
+| **Journalist** | Reporter writing about the company | "I'm doing a feature on [Company] for Forbes. Your CEO recommended I speak with you. Can you walk me through your team structure and the tools you use?" | Flattery + Authority |
+| **Fake Customer** | Angry customer demanding resolution | "I've been trying to get my account fixed for THREE WEEKS. Your support is useless. I want a supervisor NOW or I'm posting this on Twitter." | Anger + Time Pressure |
+
+### 2.3 Business Email Compromise (BEC) & CEO Fraud
+
+BEC is the most financially damaging social engineering attack — the FBI reports **$50+ billion in losses** since 2013. Unlike phishing (casting a wide net), BEC is surgical, targeting specific individuals with specific roles.
+
+**BEC Attack Types:**
+
+| Type | Description | Example | Average Loss |
+|------|-------------|---------|-------------|
+| **CEO Fraud** | Attacker impersonates CEO requesting urgent wire transfer | "I'm in a meeting, need $50K wired to vendor immediately" | $130,000 |
+| **Invoice Fraud** | Fake invoice from legitimate-looking vendor with updated bank details | "Our banking information has changed, please pay next invoice to new account" | $85,000 |
+| **Account Compromise** | Real employee email account is hacked, used to request payments | "HR Director's actual email sends W-2 requests to all employees" | $100,000 |
+| **Attorney Impersonation** | Fake lawyer about "time-sensitive legal matter" | "This is a confidential legal matter requiring immediate funds transfer" | $200,000 |
+| **Data Theft** | HR impersonated to steal W-2 data for tax fraud | "I need all employee W-2s for annual audit by Friday" | $50,000 (per 1000 employees) |
+
+**BEC Attack Chain — TypeScript:**
+
+```typescript
+// bec-detector.ts — Business Email Compromise Detection Engine
+
+interface EmailContext {
+  senderEmail: string;
+  senderDomain: string;
+  senderName: string;
+  recipientEmail: string;
+  recipientRole: string;
+  subject: string;
+  body: string;
+  urgency: number; // 0-100
+  containsWireTransfer: boolean;
+  containsInvoice: boolean;
+  containsPII: boolean;
+  hasExternalReplyTo: boolean;
+  replyToDomain: string;
+  ipOrigin: string;
+  previousEmails: PreviousEmail[];
+  timeSinceLastContact: number; // days
+}
+
+interface PreviousEmail {
+  sender: string;
+  date: Date;
+  subject: string;
+}
+
+interface BECRiskScore {
+  score: number; // 0-100
+  risk: 'low' | 'medium' | 'high' | 'critical';
+  indicators: string[];
+  recommendedAction: 'allow' | 'warn' | 'block' | 'verify_out_of_band';
+}
+
+class BECDetector {
+  private readonly EXECUTIVE_TITLES = ['CEO', 'CFO', 'COO', 'CTO', 'President', 'VP', 'Director', 'Controller'];
+  private readonly FINANCE_ROLES = ['accounting', 'finance', 'accounts payable', 'controller', 'treasury'];
+
+  detect(email: EmailContext): BECRiskScore {
+    const indicators: string[] = [];
+    let score = 0;
+
+    // 1. Financial request to non-executive
+    if (email.containsWireTransfer || email.containsInvoice) {
+      score += 25;
+      indicators.push('Email contains wire transfer or invoice request');
+    }
+
+    // 2. External sender pretending to be executive
+    const senderLooksExecutive = this.EXECUTIVE_TITLES.some(t => email.senderName.includes(t));
+    if (senderLooksExecutive && !this.isInternalDomain(email.senderDomain)) {
+      score += 30;
+      indicators.push(`External sender claims to be ${email.senderName} but domain is ${email.senderDomain}`);
+    }
+
+    // 3. Reply-To domain mismatch
+    if (email.replyToDomain && email.replyToDomain !== email.senderDomain) {
+      score += 25;
+      indicators.push(`Reply-To (${email.replyToDomain}) differs from sender (${email.senderDomain})`);
+    }
+
+    // 4. High urgency + financial request
+    if (email.urgency > 70 && (email.containsWireTransfer || email.containsInvoice)) {
+      score += 20;
+      indicators.push('High urgency paired with financial request — common BEC tactic');
+    }
+
+    // 5. PII harvesting attempt
+    if (email.containsPII) {
+      score += 30;
+      indicators.push('Email requests personally identifiable information (W-2, SSN, bank details)');
+    }
+
+    // 6. No previous relationship
+    const hasPriorContact = email.previousEmails.some(e => e.sender === email.senderEmail);
+    if (!hasPriorContact) {
+      score += 15;
+      indicators.push('No prior email history with this sender');
+    }
+
+    // 7. Time pressure phrases
+    const pressurePhrases = /\b(urgent|immediately|asap|today|end of day|right now|past due|overdue)\b/gi;
+    const pressureMatch = email.body.match(pressurePhrases);
+    if (pressureMatch && pressureMatch.length > 2) {
+      score += 15;
+      indicators.push(`Time pressure language: "${pressureMatch.slice(0, 3).join(', ')}"`);
+    }
+
+    // 8. Recipient in finance/accounting
+    const recipientIsFinance = this.FINANCE_ROLES.some(r => email.recipientRole.toLowerCase().includes(r));
+    if (recipientIsFinance && email.containsWireTransfer) {
+      score += 20;
+      indicators.push(`Finance role targeted with wire transfer request`);
+    }
+
+    // 9. Domain impersonation
+    const impersonated = this.detectDomainImpersonation(email.senderDomain);
+    if (impersonated) {
+      score += 35;
+      indicators.push(`Domain ${email.senderDomain} impersonates ${impersonated}`);
+    }
+
+    return {
+      score: Math.min(score, 100),
+      risk: score >= 60 ? 'critical' : score >= 40 ? 'high' : score >= 20 ? 'medium' : 'low',
+      indicators,
+      recommendedAction: score >= 60 ? 'block' : score >= 40 ? 'verify_out_of_band' : score >= 20 ? 'warn' : 'allow',
+    };
+  }
+
+  private isInternalDomain(domain: string): boolean {
+    // In production: check against company's domain list
+    return false;
+  }
+
+  private detectDomainImpersonation(domain: string): string | null {
+    // Check for typosquatted domains: goog1e.com, micr0soft.com
+    const lookalikeMap: Record<string, string[]> = {
+      'company.com': ['cornpany.com', 'c0mpany.com', 'company.co', 'cornpany.net'],
+    };
+
+    for (const [real, variants] of Object.entries(lookalikeMap)) {
+      if (variants.includes(domain.toLowerCase())) {
+        return real;
+      }
+    }
+    return null;
+  }
+}
+```
+
+### 2.4 OSINT Reconnaissance — How Attackers Research You
+
+Before any targeted attack, the attacker spends time gathering information (Open Source INTelligence). Everything you post publicly is ammunition.
+
+**OSINT Sources for Account Takeover:**
+
+| Source | What Attackers Find | Why It's Dangerous |
+|--------|--------------------|-------------------|
+| **LinkedIn** | Job title, employer, email format, colleagues, skills | Enables spear phishing with context ("saw you work on X project") |
+| **Facebook** | Full name, DOB, family members, pets, hometown, school | Security questions: "mother's maiden name", "first pet", "elementary school" |
+| **Instagram** | Location tags, travel plans, device type (from story quality), friends | SIM swap timing (attack when you're traveling), relationship mapping |
+| **Twitter/X** | Tech stack, tools used, third-party services, work habits | Tech support pretexting using actual tools you use |
+| **GitHub** | Email addresses, personal projects, work schedule, API keys in commits | Direct credential theft from leaked API keys/env files |
+| **WhatsApp/Telegram** | Profile photo, last seen, phone number | Phone number used for SIM swap pretext |
+| **Discord** | Gaming habits, friend groups, voice chat patterns | Social engineering through trusted communities |
+| **Strava/Fitness** | Running routes, home location, schedule | Physical attacks, knowing when you're away from home |
+| **Venmo/Zelle** | Transaction patterns, contacts, public notes | Financial pretexting with real transaction references |
+| **Data Breaches** | Passwords, emails, phone numbers, credit cards | Credential stuffing across ALL your services |
+
+**OSINT Reconnaissance Toolchain (What Attackers Use):**
+
+| Tool | Purpose | How Attackers Use It |
+|------|---------|---------------------|
+| **theHarvester** | Email & domain enumeration | Find all email addresses associated with your domain |
+| **Sherlock** | Username search across 400+ platforms | Map your single username across all social networks |
+| **Holmes** | Cross-platform identity correlation | Link your profiles across platforms by same person matching |
+| **Google Dorking** | Advanced search operators | Find exposed files, documents, and information on your domain |
+| **Maltego** | Relationship mapping | Visual graph of your connections, organizations, and infrastructure |
+| **Shodan** | Internet-connected device search | Find exposed cameras, servers, and IoT devices you own |
+| **Have I Been Pwned** | Breach database search | Find your leaked passwords from known breaches |
+| **SpiderFoot** | Automated OSINT collection | Automatically gather 200+ data points about you or your domain |
+
+**OSINT Self-Defense Checklist:**
+
+```
+OSINT REDUCTION CHECKLIST
+═══════════════════════════════════════════════════
+□ Remove DOB from all social media profiles
+□ Remove hometown, high school, college from public profiles
+□ Change pet names, mother's maiden name to FICTIONAL answers
+□ Set LinkedIn visibility to "Only Connections" for profile details
+□ Make Instagram private + remove location tags
+□ Make Twitter archive old tweets + delete location metadata
+□ Remove personal info from GitHub commits (name, email)
+□ Disable Strava/Fitness public activity
+□ Make Venmo/Zelle transactions private
+□ Remove yourself from people-search sites (BeenVerified, Whitepages, Spokeo)
+□ Use different usernames across platforms (don't link them)
+□ Delete unused accounts (they become breach targets)
+□ Never post travel plans in real-time (post AFTER returning)
+```
+
+### 2.5 Deepfake Social Engineering — The AI-Powered Threat
+
+Deepfakes take social engineering to a new level by using AI to impersonate someone's voice or appearance. This is now accessible to any attacker — no longer just nation-states.
+
+**Deepfake Attack Types:**
+
+| Type | Technology | Realism | Cost | Example |
+|------|-----------|---------|------|---------|
+| **Voice Cloning** | 3-second audio sample → full voice model | 95%+ | Free-$10 | "Call from CEO" requesting wire transfer |
+| **Video Deepfake** | 30-second video → full lip-sync | 90%+ | $50-$500 | "Zoom call from CFO" confirming payment |
+| **Real-Time Voice** | Live voice modifier on phone calls | 85%+ | $100-$500 | "Call from family member" in distress |
+| **Image Deepfake** | Face swap on ID documents | 95%+ | Free | Fake passport/driver's license for SIM swap |
+| **Text Generation** | LLM writing emails in target's style | 95%+ | Free | "Help me, I lost my phone" text from "friend" |
+
+**Famous Deepfake Attacks:**
+
+| Year | Target | Technique | Loss | Details |
+|------|--------|-----------|------|---------|
+| 2019 | UK Energy Firm CEO | Voice cloning | $243,000 | CEO's voice cloned via TED talk audio; caller impersonated CEO requesting transfer |
+| 2020 | UAE Bank Manager | Voice deepfake | $35 million | Attacker used voice cloning to impersonate a company director authorizing transfers |
+| 2023 | US School Principal | Racist audio deepfake | Arrested | Principal falsely accused of racist comments via AI-generated audio — caused riots, death threats |
+| 2024 | HK Multinational Finance | Video deepfake meeting | $25 million | Employee attended video call where EVERY participant was a deepfake — approved $25M transfer |
+| 2024 | Indian Journalist | Voice deepfake | Reputation destroyed | Fake call from "colleague" discussing corruption — recorded and leaked |
+
+**Deepfake Detection — TypeScript:**
+
+```typescript
+// deepfake-detector.ts — AI-Powered Social Engineering Detection
+
+interface VoiceCallData {
+  callerNumber: string;
+  callerName: string;
+  claimedIdentity: string;
+  requestType: 'wire_transfer' | 'password_reset' | 'personal_info' | 'emergency_money';
+  urgency: 'low' | 'medium' | 'high' | 'critical';
+  knownNumber: boolean;
+  // Audio analysis fields (from ML model)
+  audioAnomalyScore: number; // 0-100, higher = more likely deepfake
+  audioDuration: number; // seconds
+}
+
+interface DeepfakeResponse {
+  isSuspicious: boolean;
+  confidence: number;
+  riskFactors: string[];
+  recommendedAction: string;
+}
+
+class DeepfakeSocialEngineeringDetector {
+  detectVoiceAttack(call: VoiceCallData): DeepfakeResponse {
+    const riskFactors: string[] = [];
+    let risk = 0;
+
+    // 1. Unknown number claiming to be known person
+    if (!call.knownNumber && call.claimIdentity !== 'unknown') {
+      risk += 25;
+      riskFactors.push(`Unknown number claiming to be ${call.claimIdentity}`);
+    }
+
+    // 2. High urgency + financial request
+    if (call.urgency === 'critical' && 
+        (call.requestType === 'wire_transfer' || call.requestType === 'emergency_money')) {
+      risk += 30;
+      riskFactors.push('High urgency financial request — classic vishing pattern');
+    }
+
+    // 3. Audio anomaly detected (from ML model)
+    if (call.audioAnomalyScore > 70) {
+      risk += 35;
+      riskFactors.push(`Audio analysis indicates ${call.audioAnomalyScore}% likelihood of synthetic voice`);
+    }
+
+    // 4. Password reset request
+    if (call.requestType === 'password_reset') {
+      risk += 20;
+      riskFactors.push('Call requesting password reset — no legitimate service does this');
+    }
+
+    // 5. Very short audio sample
+    if (call.audioDuration < 10 && call.audioAnomalyScore > 50) {
+      risk += 15;
+      riskFactors.push('Short audio duration + high anomaly score = likely deepfake');
+    }
+
+    const isSuspicious = risk >= 50;
+    return {
+      isSuspicious,
+      confidence: Math.min(risk, 100),
+      riskFactors,
+      recommendedAction: isSuspicious
+        ? 'HANG UP IMMEDIATELY. Verify identity by calling back on a known, trusted number.'
+        : 'No deepfake indicators detected. But always verify sensitive requests out-of-band.',
+    };
+  }
+
+  deepfakePreventionRules(): string[] {
+    return [
+      'Establish a family/business CODE WORD — verify identity by asking for it',
+      'Hang up and call back on a known number — never trust incoming caller ID',
+      'For wire transfers: require TWO-PERSON approval with in-person verification',
+      'For urgent requests: require video call with known movement (wave hand, turn head)',
+      'Store voice samples of family/business leaders for comparison',
+      'Use a secret verification phrase: "What did we talk about last Tuesday?"',
+    ];
+  }
+}
+```
+
+### 2.6 The Psychology of Social Engineering — Cialdini's 6 Principles
+
+Every social engineering attack exploits one or more of Dr. Robert Cialdini's 6 principles of persuasion. Understanding these principles makes you immune to manipulation.
+
+| Principle | Description | How Attackers Use It | Defense |
+|-----------|-------------|---------------------|---------|
+| **Reciprocity** | People feel obligated to return favors | Attacker sends a "gift" (free report, coffee card) then asks for "a small favor" | Recognize when a favor comes with strings attached |
+| **Scarcity** | People want what's limited/rare | "Only 2 hours left to verify your account" "Limited spots for the security upgrade" | Scarcity + urgency = manipulation. Slow down. |
+| **Authority** | People obey authority figures | "I'm calling from the Security Department" "This is the CEO's office" | Verify authority independently. Call the official number. |
+| **Consistency** | People stick with their commitments | "You agreed to the security policy, now you must install this software" | Your past commitment doesn't require blind obedience |
+| **Liking** | People say yes to those they like | Attacker researches your interests: "I love your photography!" | Be aware that flattery can be manipulation |
+| **Social Proof** | People follow what others do | "All your coworkers have already completed the training" "1,000 people fell for this" | Popularity ≠ legitimacy. Verify independently. |
+
+**The Dark Triad in Social Engineering:**
+
+Attackers who excel at social engineering typically exhibit three personality traits:
+
+| Trait | Description | How It Helps Attackers |
+|-------|-------------|----------------------|
+| **Narcissism** | Grandiose sense of self-importance | Confident enough to cold-call and pressure targets |
+| **Machiavellianism** | Manipulative, cynical, strategic | Plans pretexts meticulously, exploits vulnerabilities ruthlessly |
+| **Psychopathy** | Lack of empathy, callousness | No guilt about ruining someone's life or financial security |
+
+**Psychological Defense — The S.T.O.P. Framework:**
+
+```
+S — SLOW DOWN
+  Attackers create urgency to bypass your rational brain.
+  Take 3 deep breaths before responding to any urgent request.
+
+T — THINK
+  "Does this make sense? Why would [platform] ask ME for MY password?"
+  Examine the request logically, not emotionally.
+
+O — OBSERVE
+  Look for inconsistencies: wrong domain, strange phrasing, mismatched details.
+  Your subconscious often detects anomalies before your conscious mind does.
+
+P — PROCEED WITH CAUTION
+  If anything feels off, VERIFY OUT-OF-BAND.
+  Call the official number. Open a new browser tab (don't click the link).
+```
+
+### 2.7 Social Engineering Countermeasures
 
 **For Individuals:**
 
@@ -1149,7 +1544,463 @@ class SIMSwapProtectionAudit {
 
 ---
 
-## 6. Platform-Specific Forensics
+## 6. Google Account Security — The Master Key to Your Digital Life
+
+Your Google account is the single most important account you own. It controls: Gmail (password resets for everything), YouTube, Google Drive (all your files), Google Photos, Android device sync, Google Pay, Google Authenticator (cloud sync), Chrome saved passwords, Google Play purchases, Google Voice (phone number for 2FA), and Google Workspace (business data).
+
+**If your Google account is taken over, the attacker can access EVERYTHING.**
+
+### 6.1 Google Account Takeover Attack Taxonomy
+
+| Attack Vector | How It Works | Google-Specific Risk | Prevalence |
+|--------------|-------------|---------------------|------------|
+| **Password Reuse** | Password leaked in breach → tried on Google | VERY HIGH — Google accounts targeted by every credential stuffer | 60% of Google account takeovers |
+| **SIM Swap** | Number ported → SMS 2FA intercepted | SMS is a recovery option for Google accounts | 15% |
+| **Phishing** | Fake Google login page | Google login pages are the MOST cloned phishing targets | 20% |
+| **OAuth Abuse** | Malicious third-party app with Google permissions | Users approve without reading permissions | 3% |
+| **Backup Code Theft** | Recovery codes stolen from cloud storage | Users store backup codes in Google Drive (ironically) | 1% |
+| **Session Hijacking** | Cookie/token theft from browser | Google cookies persist across sessions | 1% |
+
+### 6.2 Google Account Recovery Process — Step by Step
+
+If you lose access to your Google account, the recovery process is notoriously difficult. You MUST have your recovery options set up BEFORE an attack.
+
+**Google Account Recovery Flow:**
+
+```
+GOOGLE ACCOUNT RECOVERY
+═══════════════════════════════════════════════════
+STEP 1: Go to g.co/recover
+STEP 2: Enter your Gmail address
+STEP 3: Enter the LAST PASSWORD you remember
+         └── Even a partial/old password helps
+         └── Google asks increasingly specific questions
+
+RECOVERY QUESTIONS GOOGLE MAY ASK:
+┌─────────────────────────────────────────────────────┐
+│ □ When did you create this account? (approx date)   │
+│ □ What recovery email did you set?                   │
+│ □ What recovery phone did you set?                   │
+│ □ What labels/folders exist in your Gmail?           │
+│ □ Name of a recent email you sent/received           │
+│ □ What Google services have you used (YouTube,       │
+│   Drive, Photos, etc.)?                              │
+│ □ When did you last access your account?             │
+│ □ What device did you use to create the account?     │
+└─────────────────────────────────────────────────────┘
+
+OUTCOMES:
+  ✅ Recovery email accessible → Code sent → Account recovered
+  ✅ Recovery phone accessible → SMS sent → Account recovered  
+  ✅ Old password known → Automated recovery flow
+  ❌ No recovery options → MANUAL REVIEW (days to weeks)
+  ❌ No useful answers → ACCOUNT LOST PERMANENTLY
+```
+
+**Critical: Google Account Recovery Settings Checklist:**
+
+```
+GOOGLE RECOVERY SETUP
+═══════════════════════════════════════════════════
+□ Recovery email: Set a DIFFERENT email (not your Gmail)
+  └── Use ProtonMail / Outlook / iCloud — NOT another Gmail
+  └── If attacker gets your Gmail, they get recovery@Gmail too
+
+□ Recovery phone: Set your mobile number
+  └── BUT: enable Google's "Skip password when possible" = OFF
+  └── Because: if phone is SIM swapped, attacker can skip password
+
+□ 2-Step Verification: ENABLED with Hardware Key
+  └── Google Prompt (push to phone) = Good
+  └── Google Authenticator (TOTP) = Better
+  └── Titan / YubiKey (FIDO2) = BEST
+
+□ Google Advanced Protection: ENABLED
+  └── Requires TWO hardware keys
+  └── Blocks all third-party app access (except Google & Microsoft)
+  └── Blocks account recovery via phone/SMS
+  └── Blocks all phishing attempts (FIDO2 only)
+
+□ 10 Recovery Codes: PRINTED + stored OFFLINE
+  └── NOT in Google Drive
+  └── NOT in email drafts
+  └── Physical paper in a safe or safety deposit box
+
+□ Security Checkup: RUN MONTHLY
+  └── go to myaccount.google.com/security-checkup
+  └── Review devices, sessions, third-party apps
+```
+
+### 6.3 Google Advanced Protection Program (APP)
+
+**What it is:** Google's highest security tier, designed for journalists, activists, politicians, and high-value targets. It's free but restrictive.
+
+**What APP blocks:**
+- All phishing attempts (only FIDO2 hardware keys work for login)
+- All third-party app access (except Google and Microsoft apps)
+- Account recovery via automated phone/SMS
+- SIM swap attacks (SMS recovery is disabled)
+
+**What APP requires:**
+- Two physical FIDO2 security keys (Titan Keys from Google, or YubiKeys)
+- Use keys on all devices (phone, tablet, computer)
+- Going through a stricter account recovery process if you lose both keys
+
+**How to sign up:** myaccount.google.com → Security → Advanced Protection
+
+```typescript
+// google-account-security.ts — Google Account Security Posture Check
+
+interface GoogleAccountConfig {
+  advancedProtectionEnabled: boolean;
+  hardwareKeysRegistered: number; // 0, 1, 2+
+  twoStepVerification: boolean;
+  twoStepMethod: 'none' | 'prompt' | 'totp' | 'hardware';
+  recoveryEmail: string;
+  recoveryEmailDifferentDomain: boolean;
+  recoveryPhone: string;
+  skipPasswordWhenPossible: boolean;
+  recoveryCodesSaved: boolean;
+  recoveryCodesOffline: boolean;
+  thirdPartyAppsCount: number;
+  activeSessions: number;
+  lastSecurityCheckup: Date;
+  googleOneDarkWebReport: boolean;
+}
+
+interface GoogleSecurityScore {
+  overallScore: number; // 0-100
+  tier: 'basic' | 'standard' | 'strong' | 'advanced_protection';
+  categories: {
+    authentication: number;
+    recovery: number;
+    appEcosystem: number;
+    monitoring: number;
+  };
+  criticalFindings: string[];
+  recommendations: string[];
+}
+
+class GoogleSecurityAuditor {
+  audit(config: GoogleAccountConfig): GoogleSecurityScore {
+    const categories = {
+      authentication: this.scoreAuthentication(config),
+      recovery: this.scoreRecovery(config),
+      appEcosystem: this.scoreApps(config),
+      monitoring: this.scoreMonitoring(config),
+    };
+
+    const overall = Math.round(
+      categories.authentication * 0.35 +
+      categories.recovery * 0.30 +
+      categories.appEcosystem * 0.15 +
+      categories.monitoring * 0.20
+    );
+
+    const findings: string[] = [];
+    const recommendations: string[] = [];
+
+    // Critical findings
+    if (!config.twoStepVerification) {
+      findings.push('CRITICAL: 2-Step Verification is NOT enabled');
+      recommendations.push('Enable 2-Step Verification IMMEDIATELY');
+    }
+    if (config.hardwareKeysRegistered === 0 && config.twoStepVerification) {
+      findings.push('2-Step uses SMS or Prompt — vulnerable to SIM swap and phishing');
+      recommendations.push('Register at least 1 hardware security key (buy 2: one is backup)');
+    }
+    if (!config.advancedProtectionEnabled && config.hardwareKeysRegistered >= 2) {
+      recommendations.push('You have the keys — enable Google Advanced Protection for maximum security');
+    }
+    if (config.recoveryEmail && !config.recoveryEmailDifferentDomain) {
+      findings.push('Recovery email is another Gmail — single point of failure');
+      recommendations.push('Use a DIFFERENT email provider for recovery (ProtonMail, Outlook, iCloud)');
+    }
+    if (config.skipPasswordWhenPossible) {
+      findings.push('WARNING: "Skip password when possible" is enabled — SIM swap attacker can bypass password');
+      recommendations.push('Disable "Skip password when possible" in Google Account settings');
+    }
+    if (!config.recoveryCodesSaved) {
+      findings.push('No recovery codes saved — you could lose permanent access');
+      recommendations.push('Generate 10 recovery codes and PRINT them. Store OFFLINE in a safe.');
+    }
+    if (config.recoveryCodesSaved && !config.recoveryCodesOffline) {
+      findings.push('Recovery codes stored in Google Drive/Cloud — attacker can access them');
+      recommendations.push('Delete cloud copies. Store recovery codes on PAPER only.');
+    }
+    if (config.thirdPartyAppsCount > 10) {
+      findings.push(`${config.thirdPartyAppsCount} third-party apps have Google access — high attack surface`);
+      recommendations.push('Revoke all unused third-party app access. Audit permissions monthly.');
+    }
+    if (config.thirdPartyAppsCount > 0) {
+      for (const app of this.getHighRiskApps()) {
+        findings.push(`High-risk app "${app}" has Google account access — can read email, access Drive, etc.`);
+        recommendations.push(`Revoke "${app}" access immediately — consider alternative with fewer permissions`);
+      }
+    }
+    if (!config.googleOneDarkWebReport) {
+      recommendations.push('Enable Google One Dark Web Report to monitor your info on the dark web');
+    }
+    if (config.activeSessions > 10) {
+      findings.push(`${config.activeSessions} active sessions — more than 10 is excessive`);
+      recommendations.push('Review and remove old sessions. Log out of devices you no longer use.');
+    }
+    const monthsSinceCheckup = (Date.now() - config.lastSecurityCheckup.getTime()) / (30 * 24 * 60 * 60 * 1000);
+    if (monthsSinceCheckup > 3) {
+      findings.push(`Last Security Checkup was ${Math.round(monthsSinceCheckup)} months ago`);
+      recommendations.push('Run Google Security Checkup (myaccount.google.com/security-checkup) monthly');
+    }
+
+    return {
+      overallScore: overall,
+      tier: this.determineTier(config, overall),
+      categories,
+      criticalFindings: findings.filter(f => f.startsWith('CRITICAL')),
+      recommendations: [...new Set(recommendations)],
+    };
+  }
+
+  private determineTier(config: GoogleAccountConfig, score: number): 'basic' | 'standard' | 'strong' | 'advanced_protection' {
+    if (config.advancedProtectionEnabled) return 'advanced_protection';
+    if (score >= 80 && config.hardwareKeysRegistered >= 1) return 'strong';
+    if (score >= 50) return 'standard';
+    return 'basic';
+  }
+
+  private scoreAuthentication(config: GoogleAccountConfig): number {
+    let score = 0;
+    if (config.twoStepVerification) score += 25;
+    if (config.twoStepMethod === 'hardware') score += 50;
+    else if (config.twoStepMethod === 'totp') score += 35;
+    else if (config.twoStepMethod === 'prompt') score += 20;
+    score += Math.min(config.hardwareKeysRegistered * 15, 30);
+    if (config.advancedProtectionEnabled) score += 20;
+    return Math.min(score, 100);
+  }
+
+  private scoreRecovery(config: GoogleAccountConfig): number {
+    let score = 20; // Base
+    if (config.recoveryEmail && config.recoveryEmailDifferentDomain) score += 25;
+    if (config.recoveryPhone) score += 15;
+    if (config.recoveryCodesSaved && config.recoveryCodesOffline) score += 30;
+    if (!config.skipPasswordWhenPossible) score += 10;
+    return Math.min(score, 100);
+  }
+
+  private scoreApps(config: GoogleAccountConfig): number {
+    if (config.thirdPartyAppsCount === 0) return 100;
+    if (config.thirdPartyAppsCount <= 5) return 80;
+    if (config.thirdPartyAppsCount <= 15) return 50;
+    return 20;
+  }
+
+  private scoreMonitoring(config: GoogleAccountConfig): number {
+    let score = 30; // Base
+    const monthsSinceCheckup = (Date.now() - config.lastSecurityCheckup.getTime()) / (30 * 24 * 60 * 60 * 1000);
+    if (monthsSinceCheckup <= 1) score += 40;
+    else if (monthsSinceCheckup <= 3) score += 20;
+    else score -= 20;
+    if (config.googleOneDarkWebReport) score += 30;
+    return Math.max(0, Math.min(score, 100));
+  }
+
+  private getHighRiskApps(): string[] {
+    // Apps known to be risky or have had breaches
+    return [
+      'Crypto wallet extensions', 'VPN browser extensions',
+      'Unknown photo editors', 'Fake Google Drive clones',
+      'Survey/marketing platforms requesting Gmail access',
+    ];
+  }
+}
+```
+
+### 6.4 Gmail Security — The Password Reset Hub
+
+Since your Gmail controls password resets for most other services, Gmail itself must be hardened.
+
+**Gmail-Specific Attack Vectors:**
+
+| Attack | How It Works | Detection | Prevention |
+|--------|-------------|-----------|------------|
+| **Email Forwarding** | Attacker sets forwarding to their email — they get ALL your emails including password resets | Check Settings → Forwarding (top of page) | Disable all forwarding. Check it weekly. |
+| **Filter Hijacking** | Attacker creates filters that DELETE incoming security notifications | Filters are hidden — check Settings → Filters section | Review all filters monthly. Look for auto-delete rules. |
+| **IMAP Access** | Attacker connects via IMAP using leaked credentials | "Less secure app access", "App passwords" in security log | Disable IMAP if not needed. Use Gmail web interface only. |
+| **OAuth App Permissions** | Malicious extension reads all email | Third-party apps with "Read, compose, send email" permission | Review myaccount.google.com/permissions regularly |
+| **Google Takeout Abuse** | If attacker has access, they download ALL your data via takeout.google.com | Check Security → Recent security events | Enable Advanced Protection (blocks Takeout without keys) |
+
+**Gmail Security Audit — TypeScript:**
+
+```typescript
+// gmail-security-audit.ts — Audit Gmail Settings for Compromise Indicators
+
+interface GmailSettings {
+  forwardingAddress: string;
+  forwardingEnabled: boolean;
+  imapEnabled: boolean;
+  popEnabled: boolean;
+  filters: GmailFilter[];
+  delegatedAccounts: string[];
+  appPasswords: number;
+  autoReplyEnabled: boolean;
+  signature: string;
+}
+
+interface GmailFilter {
+  name: string;
+  from: string;
+  hasTheWords: string;
+  doesNotHave: string;
+  action: string[]; // ['delete', 'forward', 'archive', 'markread', 'star']
+}
+
+interface GmailAuditResult {
+  hasCompromiseIndicators: boolean;
+  riskLevel: 'safe' | 'suspicious' | 'compromised';
+  findings: string[];
+  suspiciousFilters: GmailFilter[];
+  score: number; // 0-100, 0 = fully compromised
+}
+
+class GmailSecurityAudit {
+  audit(settings: GmailSettings): GmailAuditResult {
+    const findings: string[] = [];
+    const suspiciousFilters: GmailFilter[] = [];
+    let score = 100;
+
+    // 1. Check unauthorized forwarding
+    if (settings.forwardingEnabled) {
+      const forwardingDomain = settings.forwardingAddress.split('@')[1];
+      if (!this.isTrustedDomain(forwardingDomain)) {
+        findings.push(`SUSPICIOUS: Email forwarding to UNKNOWN domain: ${forwardingDomain}`);
+        score -= 50;
+      } else {
+        findings.push(`Note: Email forwarding set to ${settings.forwardingAddress}`);
+        score -= 10;
+      }
+    }
+
+    // 2. Check for malicious filters
+    for (const filter of settings.filters) {
+      const hasDeleteAction = filter.action.includes('delete') || filter.action.includes('trash');
+      const hasForwardAction = filter.action.includes('forward');
+      const targetsSecurityEmails = /security|alert|login|password|2fa|mfa|verification|recovery|reset/i.test(filter.hasTheWords);
+      const targetsNotifications = /notifications?|@instagram|@facebook|@twitter|no-reply|noreply/i.test(filter.from || filter.hasTheWords);
+
+      if ((hasDeleteAction || hasForwardAction) && (targetsSecurityEmails || targetsNotifications)) {
+        suspiciousFilters.push(filter);
+        findings.push(`ALERT: Filter "${filter.name}" auto-${hasDeleteAction ? 'DELETES' : 'FORWARDS'} security emails! This is an attacker's technique.`);
+        score -= 40;
+      }
+    }
+
+    // 3. Check delegated/impersonated accounts
+    if (settings.delegatedAccounts.length > 0) {
+      for (const acct of settings.delegatedAccounts) {
+        findings.push(`Delegated account has access: ${acct}`);
+      }
+      score -= settings.delegatedAccounts.length * 15;
+    }
+
+    // 4. Check app passwords (legacy auth)
+    if (settings.appPasswords > 0) {
+      findings.push(`${settings.appPasswords} app passwords active — legacy auth bypasses 2FA`);
+      score -= settings.appPasswords * 10;
+    }
+
+    // 5. Check IMAP/POP
+    if (settings.imapEnabled) {
+      findings.push('IMAP enabled — allows email access from third-party email clients');
+      score -= 5;
+    }
+    if (settings.popEnabled) {
+      findings.push('POP enabled — allows email download from third-party clients');
+      score -= 10;
+    }
+
+    score = Math.max(0, score);
+
+    return {
+      hasCompromiseIndicators: findings.some(f => f.startsWith('ALERT') || f.startsWith('SUSPICIOUS')),
+      riskLevel: score <= 20 ? 'compromised' : score <= 60 ? 'suspicious' : 'safe',
+      findings,
+      suspiciousFilters,
+      score,
+    };
+  }
+
+  private isTrustedDomain(domain: string): boolean {
+    const trustedDomains = [
+      'gmail.com', 'googlemail.com', 'outlook.com', 'hotmail.com',
+      'yahoo.com', 'icloud.com', 'protonmail.com', 'proton.me',
+      'fastmail.com', 'hey.com', 'tutanota.com',
+    ];
+    return trustedDomains.includes(domain.toLowerCase());
+  }
+}
+```
+
+### 6.5 YouTube Channel Security
+
+YouTube channels with subscriber bases are prime targets. Attackers steal channels to:
+- Livestream crypto scams (most common)
+- Sell the channel on black markets
+- Delete content as ransom
+- Use the channel's authority to promote malware
+
+**Top YouTube Channel Hijacking Methods:**
+
+| Method | Prevalence | How It Works |
+|--------|-----------|-------------|
+| **Phishing "Sponsorship" Emails** | 40% | Fake brand partnership email → fake login page → steal Google credentials |
+| **Malicious Browser Extensions** | 25% | Extension promises video analytics → steals session cookies |
+| **SIM Swap** | 15% | Swap phone → SMS 2FA bypass → reset Google password |
+| **Old/Inactive Account** | 10% | Find old channel with no recovery options → social engineer Google support |
+| **Employee/Partner Access** | 10% | Former editor/manager still has access or gets phished |
+
+**YouTube Channel Security Checklist:**
+
+```
+YOUTUBE CHANNEL SECURITY
+═══════════════════════════════════════════════════
+□ Enable Google Advanced Protection (2 hardware keys)
+□ Verify your channel (blue checkmark) — harder to impersonate
+□ Set up Brand Account with separate permissions for editors
+  └── Grant MINIMUM permissions: Manager (all) vs Editor (content only)
+  └── Never share your personal Google account password with editors
+□ Remove old channel managers / editors quarterly
+□ Never click "sponsorship" emails without verifying sender
+  └── Real sponsors email from the company domain, not Gmail
+  └── Check: is the brand really running this campaign? Contact them directly
+□ Enable 2-Step Verification on the Google account (hardware key)
+□ Check Brand Account permissions: myaccount.google.com/brand-accounts
+□ Monitor for phishing in YouTube Studio → Settings → Permissions → Review
+□ Backup videos: Download original files to external drive
+□ Set up channel recovery contacts: YouTube Studio → Settings → Channel → Advanced
+```
+
+### 6.6 Google One Dark Web Report
+
+Google's free (with Google One subscription) dark web monitoring scans for your personal information across the dark web including:
+- Email addresses
+- Phone numbers
+- Social Security numbers (US)
+- Credit card numbers
+- Bank account numbers
+- Passwords
+
+**How to enable:** Google One app → Dark Web Report → Start monitoring
+
+**What to do when alerted:**
+1. Change the compromised password IMMEDIATELY
+2. If the same password is used elsewhere, change it there too
+3. Enable 2FA on the affected account
+4. Run Google Security Checkup
+5. Check if that service has a known breach (haveibeenpwned.com)
+
+---
+
+## 7. Platform-Specific Forensics
 
 ### 6.1 Instagram Forensics
 
@@ -1374,6 +2225,775 @@ ${this.emailChanges.length > 0 ? '  ■ Email was changed — recover email acco
 | **Apple** | Data & Privacy | `deviceInfo`, `ipAddress`, `signInTime`, `accountChange` | privacy.apple.com |
 | **Telegram** | Export from desktop | `session`, `ip`, `device`, `activeSessions` | Settings → Privacy → Active Sessions |
 | **Discord** | Privacy Request | `ip`, `userAgent`, `sessionStart`, `oauthApps` | Settings → Privacy → Request Data |
+
+### 6.3 WhatsApp Forensics
+
+WhatsApp is end-to-end encrypted, but metadata and cloud backups reveal significant forensic evidence.
+
+**Evidence Sources:**
+
+| Source | What It Reveals | How to Access |
+|--------|----------------|---------------|
+| **WhatsApp Web Sessions** | Active browser sessions, devices, last activity | WhatsApp → Linked Devices |
+| **Chat Export** | Contact information, message metadata (not content if encrypted backup) | Settings → Chats → Chat History → Export Chat |
+| **Account Info** | Phone number, last seen, profile photo changes | Settings → Account → Privacy |
+| **Google Drive Backup** | iCloud/Google Drive backup metadata shows when backup was last done | Check cloud storage account |
+| **Two-Step Verification Settings** | Whether PIN is enabled, email for PIN reset | Settings → Account → Two-Step Verification |
+
+**WhatsApp Account Takeover Methods:**
+
+| Attack | Method | Prevalence | Prevention |
+|--------|--------|------------|------------|
+| **SIM Swap** | Port number → receive WhatsApp verification SMS | HIGH | Enable 2-Step Verification PIN + carrier PIN |
+| **Verification Code Phishing** | Attacker triggers WhatsApp registration, sends fake code request | MEDIUM | Never share 6-digit code with anyone |
+| **WhatsApp Web Hijack** | Scan QR code from attacker's screenshot | MEDIUM | Log out of all web sessions after use |
+| **Cloud Backup Breach** | Attacker accesses unencrypted cloud backup | LOW | Enable end-to-end encrypted backups (Apple/Google) |
+| **Social Engineering** | Attacker impersonates friend needing verification code | VERY HIGH | Know that any 6-digit code SHARED = account lost |
+
+**WhatsApp Forensic Response:**
+
+```
+WHATSAPP COMPROMISE RESPONSE
+═══════════════════════════════════════════════════
+IMMEDIATE:
+  1. Check WhatsApp → Settings → Linked Devices
+  2. Log out ALL linked devices
+  3. Check if 2-Step PIN is still YOURS (not changed by attacker)
+  4. If PIN is changed, you have 7 days before WhatsApp erases account
+     → Submit email to support@support.whatsapp.com with subject "Lost/Stolen Phone"
+
+EVIDENCE COLLECTION:
+  ■ Screenshot Linked Devices list before logging out
+  ■ Check phone's call log for unknown numbers
+  ■ Export chat with the attacker (if they messaged you)
+  ■ Note timestamps of when you lost access
+
+RECOVERY:
+  1. Insert your SIM (if SIM swapped, go to carrier first)
+  2. Open WhatsApp → Verify with SMS code
+  3. Enter your 2-Step PIN (if not changed by attacker)
+  4. If PIN changed → wait 7 days → account auto-deletes → re-register
+```
+
+### 6.4 Discord Forensics
+
+Discord is a major target for account takeover because compromised accounts are used to spread malware and crypto scams through trusted DMs.
+
+**Discord Attack Vectors:**
+
+| Attack | Method | Warning Signs | Prevention |
+|--------|--------|--------------|------------|
+| **Token Logger** | Malicious "tool" or "crack" that steals Discord auth token | Suspicious DMs, account posting scam links in servers | Never run untrusted executables, use Discord in browser with reduced permissions |
+| **Nitro Scam** | Fake "free Discord Nitro" links → steal credentials | Messages from "Discord" with suspicious domains | Verify official Discord is discord.com only |
+| **QR Code Phishing** | "Verify your age" QR code → links to Discord auth | Servers requiring QR "verification" | Never scan QR codes from untrusted sources |
+| **OAuth App Abuse** | Malicious bot requesting "join servers for you" permission | Unknown authorization screen | Read permissions carefully before authorizing |
+| **Session Cookie Theft** | Malicious browser extension steals Discord session | Unknown login from new device | Use separate browser profile for Discord |
+
+**Discord Forensics — TypeScript:**
+
+```typescript
+// discord-forensics.ts — Discord Account Compromise Investigation
+
+interface DiscordDataExport {
+  user: {
+    id: string;
+    username: string;
+    email: string;
+    phone: string;
+    mfaEnabled: boolean;
+    createdAt: string;
+  };
+  sessions: DiscordSession[];
+  authorizedApps: DiscordOAuthApp[];
+  guilds: DiscordGuild[];
+  dms: DiscordDM[];
+}
+
+interface DiscordSession {
+  id: string;
+  ip: string;
+  userAgent: string;
+  location: string;
+  created: string;
+  lastUsed: string;
+  active: boolean;
+}
+
+interface DiscordOAuthApp {
+  name: string;
+  id: string;
+  permissions: string[];
+  authorizedAt: string;
+  lastUsed: string;
+}
+
+interface DiscordGuild {
+  id: string;
+  name: string;
+  joinedAt: string;
+  owner: boolean;
+  permissions: string;
+}
+
+interface DiscordDM {
+  userId: string;
+  username: string;
+  lastMessageAt: string;
+}
+
+interface DiscordForensicReport {
+  compromiseIndicators: string[];
+  suspiciousSessions: DiscordSession[];
+  suspiciousApps: DiscordOAuthApp[];
+  attackTimeline: ForensicEvent[];
+  riskScore: number;
+  recommendations: string[];
+}
+
+interface ForensicEvent {
+  timestamp: string;
+  description: string;
+  severity: 'info' | 'warning' | 'critical';
+}
+
+class DiscordForensicEngine {
+  analyze(exportData: DiscordDataExport): DiscordForensicReport {
+    const suspiciousSessions: DiscordSession[] = [];
+    const suspiciousApps: DiscordOAuthApp[] = [];
+    const indicators: string[] = [];
+    const timeline: ForensicEvent[] = [];
+
+    // 1. Check for suspicious sessions
+    for (const session of exportData.sessions) {
+      // Session from data center / VPN IP
+      if (this.isDataCenterIP(session.ip)) {
+        suspiciousSessions.push(session);
+        indicators.push(`Session from data center IP: ${session.ip} (${session.location})`);
+        timeline.push({
+          timestamp: session.created,
+          description: `Suspicious session created from ${session.location} (data center IP)`,
+          severity: 'critical',
+        });
+      }
+
+      // Session from unusual location
+      const userCountry = this.guessUserCountry(exportData.sessions);
+      if (userCountry && session.location && !session.location.includes(userCountry)) {
+        suspiciousSessions.push(session);
+        indicators.push(`Session from unexpected country: ${session.location}`);
+        timeline.push({
+          timestamp: session.created,
+          description: `Session from unexpected location: ${session.location}`,
+          severity: 'warning',
+        });
+      }
+
+      // Session with unusual user agent
+      const commonAgents = ['Discord', 'Electron', 'Chrome', 'Firefox', 'Safari', 'Edge'];
+      const isCommonAgent = commonAgents.some(a => session.userAgent.includes(a));
+      if (!isCommonAgent && session.userAgent.length > 0) {
+        suspiciousSessions.push(session);
+        indicators.push(`Unusual user agent: ${session.userAgent.substring(0, 60)}`);
+        timeline.push({
+          timestamp: session.created,
+          description: `Login from unusual browser/client: ${session.userAgent.substring(0, 40)}`,
+          severity: 'warning',
+        });
+      }
+    }
+
+    // 2. Check for malicious OAuth apps
+    const highRiskPermissions = ['guilds.join', 'messages.read', 'connections', 'email'];
+    for (const app of exportData.authorizedApps) {
+      const hasHighRiskPerm = app.permissions.some(p => highRiskPermissions.includes(p));
+      if (hasHighRiskPerm) {
+        suspiciousApps.push(app);
+        indicators.push(`Suspicious app "${app.name}" has high-risk permissions: ${app.permissions.join(', ')}`);
+        timeline.push({
+          timestamp: app.authorizedAt,
+          description: `High-risk app "${app.name}" was authorized`,
+          severity: 'warning',
+        });
+      }
+    }
+
+    // 3. Check for account creation / impersonation
+    if (exportData.user.email && !this.isExpectedEmail(exportData.user.email)) {
+      indicators.push(`Account email may have been changed to ${exportData.user.email}`);
+      timeline.push({
+        timestamp: exportData.user.createdAt,
+        description: 'Possible email change detected',
+        severity: 'critical',
+      });
+    }
+
+    // 4. DM-based phishing analysis
+    for (const dm of exportData.dms) {
+      if (this.isKnownPhishingAccount(dm.username)) {
+        indicators.push(`Recent DM from known phishing account: ${dm.username}`);
+        timeline.push({
+          timestamp: dm.lastMessageAt,
+          description: `DM from suspected phishing account: ${dm.username}`,
+          severity: 'warning',
+        });
+      }
+    }
+
+    // Risk scoring
+    const criticalCount = timeline.filter(e => e.severity === 'critical').length;
+    const warningCount = timeline.filter(e => e.severity === 'warning').length;
+    const riskScore = Math.min(100, criticalCount * 30 + warningCount * 10);
+
+    return {
+      compromiseIndicators: indicators,
+      suspiciousSessions,
+      suspiciousApps,
+      attackTimeline: timeline.sort((a, b) =>
+        new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
+      ),
+      riskScore,
+      recommendations: riskScore >= 50 ? [
+        'ACCOUNT LIKELY COMPROMISED — follow IR playbook immediately',
+        'Revoke ALL OAuth app authorizations immediately',
+        'Change Discord password to a unique 20+ char password',
+        'Enable 2FA with authenticator app (Discord supports TOTP)',
+        'Log out of all sessions: Settings → Log Out Of All Known Devices',
+        'Check for unauthorized server joins and new DMs sent',
+        'Contact Discord Trust & Safety: https://dis.gd/request',
+      ] : [
+        'Enable 2FA (TOTP) on your Discord account',
+        'Review authorized apps regularly: Settings → Authorized Apps',
+        'Never run unverified executables that claim to be Discord tools',
+        'Use Discord in browser with uBlock Origin for additional security',
+      ],
+    };
+  }
+
+  private isDataCenterIP(ip: string): boolean {
+    // Check against known data center / cloud provider IP ranges
+    // In production: use IP geolocation API with is_datacenter flag
+    const dataCenterIPs = ['104.28.', '172.64.', '162.158.'];
+    return dataCenterIPs.some(range => ip.startsWith(range));
+  }
+
+  private guessUserCountry(sessions: DiscordSession[]): string | null {
+    // Return most common country among sessions
+    const countryCounts = new Map<string, number>();
+    for (const s of sessions) {
+      if (s.location) {
+        countryCounts.set(s.location, (countryCounts.get(s.location) || 0) + 1);
+      }
+    }
+    let maxCount = 0;
+    let maxCountry: string | null = null;
+    for (const [country, count] of countryCounts) {
+      if (count > maxCount) {
+        maxCount = count;
+        maxCountry = country;
+      }
+    }
+    return maxCountry;
+  }
+
+  private isExpectedEmail(email: string): boolean {
+    // Check if email matches known patterns
+    return email.length > 5 && email.includes('@') && !email.includes('temp') && !email.includes('throwaway');
+  }
+
+  private isKnownPhishingAccount(username: string): boolean {
+    const phishingPatterns = [
+      /free.*nitro/i, /discord.*giveaway/i, /steam.*gift/i,
+      /verif.*bot/i, /age.*verif/i, /claim.*reward/i,
+      /airdrop|crypto.*giveaway/i,
+    ];
+    return phishingPatterns.some(p => p.test(username));
+  }
+}
+```
+
+### 6.5 TikTok Forensics
+
+TikTok accounts are hijacked for: crypto scams, spreading disinformation, account selling, and content ransom.
+
+**TikTok Attack Vectors:**
+
+| Vector | Method | Signs | Prevention |
+|--------|--------|-------|------------|
+| **Phishing via DMs** | Fake "TikTok Support" DM asking for verification code | DMs from "tiktok" accounts, urgent language | Never share verification codes |
+| **SIM Swap** | Port number → SMS bypass of 2FA | Phone loses service | Remove phone 2FA, use TOTP |
+| **Malicious Link** | "Get verified" / "Free followers" links | Third-party login page | Only use official TikTok login |
+| **Session Hijacking** | Cookie theft from browser | Unknown login from new device | Log out after use, clear cookies |
+| **API Abuse** | Third-party apps with excessive permissions | Unauthorized posts, follows, likes | Revoke unused third-party app access |
+
+**TikTok Data Download:**
+
+| Data Point | What It Shows | How to Get It |
+|-----------|--------------|---------------|
+| **Login History** | IP, device, location, timestamp | Settings → Account → Download Data → JSON |
+| **Active Sessions** | Devices currently logged in | Settings → Security → Manage Devices |
+| **Third-Party Apps** | Connected apps with permissions | Settings → Security → Authorized Apps |
+| **Account Changes** | Email/phone/password change history | Download data → JSON → account_changes |
+| **Reported Content** | Content flagged for violations | Settings → Account → Report History |
+
+**TikTok Forensics Response:**
+
+```
+TIKTOK COMPROMISE RESPONSE
+═══════════════════════════════════════════════════
+IMMEDIATE:
+  1. Go to Settings → Security → Manage Devices
+  2. Remove ALL devices you don't recognize
+  3. Check email for TikTok security notifications
+  4. Try "Forgot Password" → reset via email (TikTok does NOT use SMS)
+  5. Report account hijacking: tiktok.com/legal/report/hacked
+
+RECOVERY:
+  ■ TikTok support requires: username, email used for registration, date of birth
+  ■ Submit ID verification if applicable
+  ■ Response time: 24-72 hours
+
+FORENSIC COLLECTION:
+  ■ Download data JSON before logging out attacker's sessions
+  ■ Extract IPs and devices from login_history.json
+  ■ Screenshot any attacker activity (posts, DMs, follows)
+```
+
+### 6.6 Snapchat Forensics
+
+Snapchat's disappearing content makes it a preferred platform for sensitive communication, making account takeovers particularly dangerous.
+
+**Snapchat Attack Vectors:**
+
+| Attack | Method | Risk | Prevention |
+|--------|--------|------|------------|
+| **Phishing "My Story" Login** | Fake Snapchat login page | HIGH | Only use official Snapchat app |
+| **Third-Party Client Apps** | Unofficial Snapchat apps (SnapTools, etc.) | VERY HIGH — account gets PERMANENTLY locked | Never use third-party Snapchat clients |
+| **SIM Swap** | Port number → SMS 2FA | HIGH | Remove SMS as recovery option |
+| **Phone Number Enumeration** | Attacker uses phone number to find account | MEDIUM | Disable "Let others find me by phone" |
+| **Friend Impersonation** | Attacker creates fake friend account | MEDIUM | Verify identity before sharing sensitive content |
+
+**Snapchat Data Request:**
+
+| Data | Fields | How to Access |
+|------|--------|--------------|
+| **Login History** | IP, device, OS, timestamp | Submit privacy request at support.snapchat.com |
+| **Account History** | Email changes, phone changes, deactivations | Snapchat Data Request (takes 2-4 weeks) |
+| **My Data** | Bitmoji history, friend list, memories count | Settings → My Data (limited) |
+
+### 6.7 Telegram Forensics
+
+Telegram accounts are hijacked through SIM swap + verification SMS, or through Telegram's cloud sync feature.
+
+**Telegram Attack Vectors:**
+
+| Attack | Method | Warning | Prevention |
+|--------|--------|---------|------------|
+| **SIM Swap + SMS Code** | Attacker swaps SIM → requests Telegram code | "Login code" SMS you didn't request | Enable 2-Step Verification (cloud password) |
+| **Telegram Session Hijack** | Attacker accesses your saved sessions | New login notification | Check active sessions: Settings → Privacy → Active Sessions |
+| **Social Engineering "Code"** | Attacker impersonates support asks for login code | Unknown person asking for Telegram code | No legitimate support asks for your code |
+| **QR Code Scan** | Malicious QR code linking to Telegram web | Unknown Telegram Web login | Always verify QR code origin before scanning |
+
+**Telegram 2-Step Verification (Cloud Password):**
+
+This is the single most important Telegram security setting. Without it, anyone with your SIM can take over your account.
+
+```typescript
+// telegram-security.ts — Telegram Account Security Assessment
+
+interface TelegramSecurityConfig {
+  twoStepPasswordEnabled: boolean;
+  twoStepPasswordEmail: string; // Recovery email for password reset
+  activeSessions: number;
+  activeSessionLocations: string[];
+  phoneNumber: string;
+  username: string;
+  lastSeenMode: 'everybody' | 'contacts' | 'nobody';
+  profilePhotoMode: 'everybody' | 'contacts' | 'nobody';
+  groupsAndChannels: string[]; // Who can add you
+  phoneNumberVisibility: 'everybody' | 'contacts' | 'nobody';
+}
+
+interface TelegramSecurityScore {
+  score: number;
+  level: 'weak' | 'moderate' | 'strong' | 'excellent';
+  vulnerabilities: string[];
+  recommendations: string[];
+}
+
+class TelegramSecurityAudit {
+  audit(config: TelegramSecurityConfig): TelegramSecurityScore {
+    const vulnerabilities: string[] = [];
+    const recommendations: string[] = [];
+    let score = 50; // Start at medium
+
+    // 1. Two-Step Verification (critical)
+    if (!config.twoStepPasswordEnabled) {
+      vulnerabilities.push('CRITICAL: 2-Step Verification (Cloud Password) is NOT enabled');
+      recommendations.push('Enable 2-Step Verification: Settings → Privacy → 2-Step Verification');
+      score -= 30;
+    } else {
+      score += 25;
+      if (config.twoStepPasswordEmail && !this.isSecureEmail(config.twoStepPasswordEmail)) {
+        vulnerabilities.push('Recovery email for 2-Step Verification may be insecure');
+        recommendations.push('Use a dedicated, secure email for Telegram password recovery');
+      }
+    }
+
+    // 2. Active sessions
+    if (config.activeSessions > 5) {
+      vulnerabilities.push(`${config.activeSessions} active sessions — excessive`);
+      recommendations.push('Terminate old sessions: Settings → Privacy → Active Sessions → Terminate All Other Sessions');
+      score -= 10;
+    }
+
+    // 3. Multiple session locations
+    const uniqueLocations = new Set(config.activeSessionLocations);
+    if (uniqueLocations.size > 3) {
+      vulnerabilities.push(`Sessions from ${uniqueLocations.size} different locations`);
+      recommendations.push('Review each active session — terminate unrecognized ones');
+      score -= 10;
+    }
+
+    // 4. Privacy settings
+    if (config.phoneNumberVisibility !== 'nobody') {
+      vulnerabilities.push('Phone number is visible — anyone can find you by number');
+      recommendations.push('Set "Phone Number" to Nobody in Privacy Settings');
+      score -= 10;
+    }
+    if (config.lastSeenMode !== 'nobody') {
+      recommendations.push('Set "Last Seen & Online" to Nobody for maximum privacy');
+      score -= 5;
+    }
+    if (config.profilePhotoMode !== 'contacts') {
+      recommendations.push('Set "Profile Photo" to My Contacts');
+      score -= 5;
+    }
+    if (config.groupsAndChannels.includes('everybody')) {
+      vulnerabilities.push('Anyone can add you to groups — potential for scam group invites');
+      recommendations.push('Set "Groups & Channels" to My Contacts');
+      score -= 5;
+    }
+
+    // 5. Username
+    if (!config.username) {
+      recommendations.push('Set a Telegram username — if not set, your phone number is the only identifier');
+    }
+
+    score = Math.max(0, Math.min(100, score));
+
+    return {
+      score,
+      level: score >= 80 ? 'excellent' : score >= 60 ? 'strong' : score >= 40 ? 'moderate' : 'weak',
+      vulnerabilities,
+      recommendations,
+    };
+  }
+
+  private isSecureEmail(email: string): boolean {
+    const domain = email.split('@')[1]?.toLowerCase() || '';
+    const insecureProviders = ['mail.ru', 'yandex.ru', 'rambler.ru', 'temp-mail.org', 'guerrillamail.com', '10minutemail.com'];
+    return !insecureProviders.some(d => domain.includes(d));
+  }
+}
+```
+
+### 6.8 Signal Forensics
+
+Signal is the most secure messaging platform, but it's not immune to account takeover. Signal's primary attack vector is phone number-based (SIM swap or number recycling).
+
+**Signal Attack Vectors:**
+
+| Attack | Feasibility | Method | Prevention |
+|--------|-------------|--------|------------|
+| **SIM Swap** | HIGH | Port number → register Signal on new phone | Enable Signal Registration Lock PIN |
+| **Number Recycling** | MEDIUM | Carrier reassigns old number → new owner gets Signal account | Set Registration Lock PIN + unlink from old number |
+| **Screenshot Backups** | MEDIUM | Attacker accesses unlocked phone | Set Screen Security (blurs previews in app switcher) |
+| **Phishing Registration** | LOW | Attacker spoofs Signal registration process | Registration Lock PIN blocks without PIN |
+| **Desktop Session Theft** | LOW | Malware steals Signal Desktop SQLite database | Use full-disk encryption, don't save passwords |
+
+**Signal Registration Lock (PIN):**
+
+This is Signal's most important security feature. It prevents anyone from registering your number on a new device without your PIN.
+
+```
+SIGNAL REGISTRATION LOCK SETUP
+═══════════════════════════════════════════════════
+1. Open Signal → Settings → Account
+2. Enable "Registration Lock" 
+3. Set a 6+ digit PIN
+4. REMEMBER THIS PIN. Signal does NOT offer PIN recovery.
+5. If you forget the PIN and lose your phone → account is gone permanently.
+6. Optional: Set PIN reminder interval (2 days — recommended)
+
+WHAT IT PROTECTS:
+  SIM swap → attacker inserts your number → tries to register Signal
+  → Signal asks for Registration Lock PIN → attacker doesn't have it
+  → Attacker CANNOT register your number on Signal
+  → Account is safe
+
+WHAT IT DOESN'T PROTECT:
+  Password/credential theft (Signal doesn't use passwords for login)
+  Device theft (if attacker has your unlocked phone, they CAN read messages)
+```
+
+### 6.9 Amazon Account Forensics
+
+Amazon account takeovers mean the attacker can order items, view saved credit cards, access Alexa recordings, and change delivery addresses.
+
+**Amazon Attack Vectors:**
+
+| Attack | Impact | Common Method | Prevention |
+|--------|--------|--------------|------------|
+| **Credential Stuffing** | Orders placed, addresses changed | Leaked password reused on Amazon | Unique Amazon password + MFA |
+| **Phishing "Account Suspended"** | Login credential theft | Email claiming account restriction | Check in app, not via email link |
+| **SIM Swap** | SMS 2FA bypass | Port number → reset Amazon password | TOTP 2FA (Amazon supports authenticator apps) |
+| **Session Hijacking** | Orders without login | Cookie theft from browser | Log out after use, use 2FA |
+| **Customer Service Social Engineering** | Account access via phone support | Attacker impersonates you to Amazon Support | Set account PIN for support calls |
+
+**Amazon Account Security Checklist:**
+
+```
+AMAZON SECURITY CHECKLIST
+═══════════════════════════════════════════════════
+□ Enable 2-Step Verification: Account → Login & Security → 2-Step Verification
+  └── Use Authenticator App (TOTP) — NOT SMS
+□ Set Amazon Account PIN: Account → Login & Security → Advanced Security Settings
+  └── Required for ANY customer service interaction
+□ Review Devices: Account → Digital Content → Manage Your Content & Devices
+  └── Remove old devices, Kindles, Alexa devices
+□ Review Addresses: Account → Your Addresses
+  └── Remove old addresses, check for unknown addresses
+□ Check Saved Cards: Account → Your Payments
+  └── Remove stored cards not in use
+□ Check Gift Card Balance: Account → Gift Cards
+  └── Attacker may have redeemed stolen codes
+□ Review Orders: Account → Your Orders
+  └── Look for unauthorized orders
+□ Amazon Household: Account → Amazon Household
+  └── Remove members you don't recognize
+□ Alexa Privacy: Settings → Alexa Privacy
+  └── Review voice history, delete recordings
+□ Check Login History: Account → Login & Security → Recent Activity
+  └── Review all recent login attempts
+```
+
+### 6.10 GitHub / Microsoft Account Forensics
+
+Developer accounts (GitHub, Azure, Microsoft) are high-value targets because they provide access to source code, infrastructure, and CI/CD pipelines.
+
+**GitHub Account Takeover — The "Supply Chain" Attack:**
+
+| Attack | Impact | Method | Prevention |
+|--------|--------|--------|------------|
+| **Password Theft** | Access to private repos | Credential stuffing, phishing | Unique strong password + 2FA |
+| **OAuth Token Theft** | API access without password | Malicious CI tool, compromised personal access token | Use fine-grained tokens, rotate regularly |
+| **SSH Key Theft** | Git push access without 2FA | Malware steals ~/.ssh/id_rsa | Use SSH keys with passphrase + hardware key |
+| **Phishing "GitHub Login"** | Full account access | Fake GitHub OAuth login page | FIDO2 hardware key (GitHub supports) |
+| **Session Cookie Theft** | Web access to repos | Browser extension / XSS | Log out after each session |
+
+**GitHub Forensics — TypeScript:**
+
+```typescript
+// github-forensics.ts — GitHub Account Security Audit
+
+interface GitHubAccount {
+  username: string;
+  email: string;
+  twoFactorEnabled: boolean;
+  twoFactorMethod: 'totp' | 'sms' | 'hardware' | 'none';
+  recoveryCodesSaved: boolean;
+  personalAccessTokens: GitHubToken[];
+  sshKeys: GitHubSSHKey[];
+  authorizedOAuthApps: GitHubOAuthApp[];
+  activeSessions: number;
+  organizationMemberships: string[];
+  verifiedEmails: string[];
+}
+
+interface GitHubToken {
+  name: string;
+  scopes: string[];
+  created: string;
+  lastUsed: string;
+  expiresAt: string | null;
+}
+
+interface GitHubSSHKey {
+  title: string;
+  key: string;
+  created: string;
+  lastUsed: string;
+}
+
+interface GitHubOAuthApp {
+  name: string;
+  owner: string;
+  scopes: string[];
+  authorizedAt: string;
+}
+
+class GitHubSecurityAudit {
+  audit(account: GitHubAccount): GitHubAuditReport {
+    const findings: string[] = [];
+    const criticals: string[] = [];
+    let score = 100;
+
+    // 1. 2FA check (critical)
+    if (!account.twoFactorEnabled) {
+      criticals.push('CRITICAL: 2FA is NOT enabled on GitHub');
+      score -= 50;
+    } else if (account.twoFactorMethod === 'sms') {
+      findings.push('2FA uses SMS — upgrade to TOTP or hardware key');
+      score -= 15;
+    } else if (account.twoFactorMethod === 'hardware') {
+      score += 10; // Bonus for hardware key
+    }
+
+    // 2. Personal Access Tokens
+    const oldTokens = account.personalAccessTokens.filter(t => {
+      if (!t.lastUsed) return false;
+      const monthsSinceUse = (Date.now() - new Date(t.lastUsed).getTime()) / (30 * 24 * 60 * 60 * 1000);
+      return monthsSinceUse > 6;
+    });
+    if (oldTokens.length > 0) {
+      findings.push(`${oldTokens.length} Personal Access Tokens unused for 6+ months — security risk`);
+      score -= oldTokens.length * 5;
+    }
+
+    // Token with excessive scopes
+    for (const token of account.personalAccessTokens) {
+      if (token.scopes.includes('repo') && token.scopes.includes('admin')) {
+        findings.push(`Token "${token.name}" has full repo + admin access — extremely powerful`);
+        score -= 10;
+      }
+      if (token.scopes.includes('delete_repo')) {
+        findings.push(`Token "${token.name}" can DELETE repositories`);
+        score -= 5;
+      }
+    }
+
+    // 3. SSH keys
+    const oldSSHKeys = account.sshKeys.filter(k => {
+      const monthsSince = (Date.now() - new Date(k.created).getTime()) / (30 * 24 * 60 * 60 * 1000);
+      return monthsSince > 12;
+    });
+    if (oldSSHKeys.length > 0) {
+      findings.push(`${oldSSHKeys.length} SSH keys created over a year ago — review and remove unused`);
+      score -= oldSSHKeys.length * 5;
+    }
+
+    // 4. OAuth apps
+    for (const app of account.authorizedOAuthApps) {
+      // High-risk scopes
+      if (app.scopes.includes('repo') && app.scopes.includes('workflow')) {
+        findings.push(`OAuth app "${app.name}" has repo + workflow access — can modify CI/CD pipelines`);
+        score -= 15;
+      }
+      if (app.scopes.includes('admin:org')) {
+        findings.push(`OAuth app "${app.name}" has organization admin access`);
+        score -= 10;
+      }
+    }
+
+    // 5. Multiple unverified emails
+    if (account.verifiedEmails.length === 0) {
+      findings.push('No verified email on GitHub account — account recovery impossible');
+      score -= 20;
+    }
+
+    // 6. Active sessions
+    if (account.activeSessions > 5) {
+      findings.push(`${account.activeSessions} active sessions — review and remove old ones`);
+      score -= 5;
+    }
+
+    score = Math.max(0, score);
+
+    return {
+      overallScore: score,
+      level: score >= 80 ? 'secure' : score >= 50 ? 'needs_improvement' : 'critical',
+      criticals,
+      warnings: findings,
+      recommendations: this.generateRecommendations(account, score),
+    };
+  }
+
+  private generateRecommendations(account: GitHubAccount, score: number): string[] {
+    const recs: string[] = [];
+    if (!account.twoFactorEnabled) recs.push('Enable 2FA: Settings → Password and authentication → Two-factor authentication');
+    if (account.twoFactorMethod === 'sms') recs.push('Switch to TOTP (authenticator app) or register a FIDO2 hardware key');
+    recs.push('Use fine-grained Personal Access Tokens with minimum required permissions only');
+    recs.push('Rotate SSH keys annually — GitHub → Settings → SSH and GPG keys');
+    recs.push('Review authorized OAuth apps: Settings → Applications → Authorized OAuth Apps');
+    recs.push('Set up recovery methods: Settings → Password and authentication → Recovery methods');
+    recs.push('Enable login alerts: Settings → Notifications → Login alerts');
+    if (account.organizationMemberships.length > 0) {
+      recs.push('Review organization access for each org: GitHub requires SAML SSO or 2FA for org access');
+    }
+    if (score < 50) {
+      recs.push('CRITICAL: Take immediate action to secure your GitHub account before it is compromised');
+    }
+    return recs;
+  }
+}
+
+interface GitHubAuditReport {
+  overallScore: number;
+  level: 'secure' | 'needs_improvement' | 'critical';
+  criticals: string[];
+  warnings: string[];
+  recommendations: string[];
+}
+```
+
+### 6.11 Facebook / Meta Forensics
+
+Facebook accounts (now under Meta) are targeted for: account ransom, spreading malware through friend networks, running fake ads with saved payment methods, and identity theft.
+
+**Facebook Attack Vectors:**
+
+| Attack | Method | Red Flags | Prevention |
+|--------|--------|-----------|------------|
+| **Phishing "Security Alert"** | Fake Facebook security notification email | Spoofed email address, urgency | Use facebook.com only, never click email links |
+| **Malicious Browser Extension** | Extension claiming to change Facebook theme | Unknown login activity | Install extensions only from official stores |
+| **Friend Account Compromise** | Compromised friend sends malicious link | Unexpected DM from friend with link | Confirm with friend out-of-band |
+| **OAuth Quiz/App** | Third-party quiz app harvesting data | "Personality test" requesting permissions | Never authorize unknown apps |
+| **SIM Swap** | Phone number ported → SMS 2FA bypass | Phone loses service | Use 2FA with authenticator app, not SMS |
+| **Session Hijacking** | Cookie theft from browser | Unknown device in login history | Log out of Facebook after every session |
+
+**Facebook Security Checklist:**
+
+```
+FACEBOOK SECURITY SETTINGS
+═══════════════════════════════════════════════════
+TWO-FACTOR AUTHENTICATION:
+  □ Enable 2FA: Settings → Security → Two-Factor Authentication
+  □ Use Authenticator App (TOTP) — NOT SMS
+  □ Register YubiKey (FIDO2) as additional 2FA method
+  □ Save recovery codes OFFLINE
+
+LOGIN ACTIVITY:
+  □ Check Where You're Logged In: Settings → Security → Where You're Logged In
+  □ Log out of unrecognized sessions
+  □ Review devices in your "Recognized Devices" list
+
+THIRD-PARTY ACCESS:
+  □ Review Apps & Websites: Settings → Apps & Websites
+  □ Remove all apps you don't actively use
+  □ Check: "Apps others use" — limit what friends' apps can see
+
+PRIVACY:
+  □ Set profile to "Friends Only" 
+  □ Remove DOB, hometown, school from public profile
+  □ Turn off location history
+  □ Disable facial recognition
+  □ Review tagged photos — un-tag yourself from unwanted tags
+
+RECOVERY:
+  □ Set up Trusted Contacts: Settings → Security → Trusted Contacts (3-5 friends)
+  □ Set legacy contact (someone who can manage your account after you)
+  □ Verify recovery email and phone number are CURRENT
+```
 
 ---
 
@@ -1808,6 +3428,782 @@ Day 4 (2:30 AM): $24M in cryptocurrency transferred out
 Day 4 (8:00 AM): Terpin wakes up to "No Service" — too late
 ```
 
+### 9.4 Google Account Takeover — The Recovery Nightmare
+
+**Overview:**
+- **Victim:** Alex, a journalist with 15 years of Google data (Gmail, Drive, Photos, YouTube channel with 50K subscribers)
+- **Attack Method:** Credential stuffing + SMS 2FA bypass
+- **Loss:** Complete digital life — emails, documents, photos, YouTube channel earning $2K/month
+- **Recovery:** FAILED — account permanently lost
+
+**The Full Attack Timeline:**
+
+```
+GOOGLE ACCOUNT TAKEOVER — THE COMPLETE STORY
+═══════════════════════════════════════════════════
+
+MONTH 1-6: RECONNAISSANCE PHASE
+────────────────────────────────────────────────
+Attackers (credential stuffing botnet) acquire Alex's email + password
+from a 2018 LastPass credential database breach.
+Password: reused from a forum account
+
+MONTH 7: CREDENTIAL STUFFING
+────────────────────────────────────────────────
+Botnet tries Alex's email + password combination on:
+  □ Google Gmail → SUCCESS (no 2FA at the time)
+  □ Facebook → SUCCESS (same password)
+  □ Twitter → SUCCESS (same password)
+  □ Instagram → SUCCESS (same password)
+  
+Alex is on holiday — doesn't notice Google login alerts
+
+MONTH 7-8: SILENT ACCESS
+────────────────────────────────────────────────
+Attacker maintains access to Gmail, silently:
+  ■ Sets up email forwarding to attacker's email
+  ■ Creates a filter: "Delete all emails containing 'security' or 'login'"
+  ■ Downloads 15 years of emails via Google Takeout
+  ■ Views all Google Photos
+  ■ Exports Google Contacts
+  ■ Views Google Drive documents (containing tax returns, passports, contracts)
+
+DAY OF ATTACK — 00:00 HOURS
+────────────────────────────────────────────────
+00:01 — Attacker initiates Google password change
+00:02 — Google sends "Security Alert" to recovery email  
+        → Alex's recovery email is ANOTHER GMAIL (same account)
+        → Recovery code goes to compromised Gmail
+        → Filter deletes the notification
+00:03 — Attacker changes Google password
+00:05 — Attacker changes Gmail password
+00:10 — Attacker removes Alex's phone number from account
+00:12 — Attacker removes Alex's recovery email from account
+00:15 — Alex is PERMANENTLY LOCKED OUT
+
+DAY OF ATTACK — 08:00 HOURS
+────────────────────────────────────────────────
+Alex wakes up → tries to check Gmail → "Incorrect password"
+→ Tries "Forgot Password"
+→ Google asks: "What recovery email?"
+→ Alex enters recovery email → "That email is not associated with this account"
+→ Google asks: "Enter a recovery phone number"
+→ Alex enters phone → "That number is not associated with this account" 
+→ Alex is trapped in Google's recovery loop
+
+DAY 1-3: RECOVERY ATTEMPTS
+────────────────────────────────────────────────
+Alex submits Google Account Recovery form (g.co/recover)
+Google asks questions:
+  □ "When did you create this account?" — 2009, approximate
+  □ "What labels exist in your Gmail?" — Alex doesn't remember
+  □ "Name a recent email you sent" — Attacker deleted everything
+  → Google rejects the recovery attempt
+
+Alex tries repeatedly → each rejection extends the waiting period
+Attacker meanwhile:
+  ■ Changes YouTube channel name → uses it for crypto scam livestreams
+  ■ YouTube channel gets flagged → permanently terminated
+  ■ Uploads ransom note to Google Drive folder Alex can see
+  ■ Sends Facebook messages to Alex's contacts: "I'm stranded, send money"
+
+DAY 7: FINAL OUTCOME
+────────────────────────────────────────────────
+Google's automated recovery system permanently denies Alex's claim
+Realization: Alex never set up 2FA, never saved recovery codes,
+and used the same Gmail as both primary AND recovery email
+
+ATTACKER OUTCOME:
+  YouTube channel: sold on dark web for $3,000
+  Personal data: sold for identity theft
+  Google Photos: intimate photos leaked on revenge porn sites
+  Google Drive: business contracts = competitive intelligence sold
+
+VICTIM OUTCOME:
+  15 years of data: LOST FOREVER
+  50K YouTube channel: LOST
+  Identity theft cleanup: 2+ YEARS
+  Emotional toll: severe anxiety, depression
+```
+
+**Root Cause Analysis:**
+
+| Failure | What Happened | Correct Implementation |
+|---------|--------------|----------------------|
+| No 2FA | Account had NO 2FA enabled | Enable 2FA with hardware key IMMEDIATELY |
+| Same email as recovery | Recovery = another Gmail in same account | Use DIFFERENT email provider for recovery |
+| No recovery codes | No offline backup of recovery codes | Print 10 recovery codes and store in safe |
+| Password reuse | Same password across 10+ services | Password manager with unique 20+ char passwords |
+| Undetected silent access | No monitoring of Gmail filters/forwarding | Weekly Gmail security check: Filters → Forwarding |
+| No Google Advanced Protection | Full account access via password-only | Enable APP — blocks password-only login |
+
+**Lessons: Your Google account is the master key. If you lose it, you lose EVERYTHING.**
+
+### 9.5 Discord Token Logger — The Fake Tool That Steals Your Account
+
+**Overview:**
+- **Victim:** Teenage Discord user in a gaming community
+- **Loss:** Discord account (used for 3 years), membership in 12 private servers, $500 in Discord Nitro gifts, trust of 200+ friends
+- **Method:** Fake "Discord Token Logger" tool promising to show who blocked you
+- **Human Cost:** Account used to scam friends out of $3,000 total across the friend group
+
+**The Full Story:**
+
+```
+DISCORD TOKEN LOGGER — THE TRUST EXPLOIT
+═══════════════════════════════════════════════════
+
+DAY 1: THE BAIT
+────────────────────────────────────────────────
+Alex (14) is in a Discord server for their favorite game.
+A user with "Moderator" role posts:
+  "New tool: Token Checker — see who blocked you, who deleted you,
+   and the exact time they did it. Only 500 downloads before it's patched."
+
+The tool has:
+  ✓ Professional-looking GitHub repository (stolen code + custom README)
+  ✓ 5 fake 5-star reviews from sockpuppet accounts
+  ✓ Screenshots of fake output (impressive graphs)
+  ✓ "VirusTotal shows 0 detections" (the logger is packed/obfuscated)
+
+Alex downloads and runs TokenChecker.exe
+
+DAY 1: THE EXECUTION
+────────────────────────────────────────────────
+When run, the executable:
+  1. Locates Discord's Local Storage folder on the PC:
+     %APPDATA%\discord\Local Storage\leveldb\
+  2. Extracts the Discord authentication token from:
+     - localStorage (contains token as "token" key)
+     - leveldb log files (Discord caches tokens there)
+  3. Sends the token via HTTP request to attacker's server
+     (disguised as analytics data)
+  4. Meanwhile, shows a FAKE loading animation for 30 seconds
+  5. Displays message: "No users have blocked you! Check back later."
+  6. Alex thinks: "The tool works, nobody blocked me. Great!"
+  7. Alex recommends the tool to 3 friends
+
+DAY 1: IMMEDIATE AFTERMATH
+────────────────────────────────────────────────
+Attacker now has Alex's Discord token (equivalent to having their 
+password + bypassing 2FA — tokens don't require 2FA).
+
+With the token, attacker can:
+  ■ Read ALL DMs and server messages Alex can see
+  ■ Send messages as Alex in ALL servers
+  ■ Join/leave servers as Alex
+  ■ Change Alex's account settings
+  ■ View Alex's email, phone number, billing info
+  ■ Send friend requests as Alex
+
+Attacker immediately:
+  → Sends DMs to Alex's 10 closest friends:
+    "Hey! I'm trying to win a game tournament. Can you vote for me?
+     https://free-nitro-generator.xyz/vote [actually credential phishing]"
+  → 3 friends trust Alex → click link → enter Discord credentials → LOST
+
+DAY 1: ESCALATION
+────────────────────────────────────────────────
+The 3 compromised accounts are used to:
+  → DM their friends with the same scam
+  → 12 more accounts compromised within 2 hours
+  → Each asks for "Nitro gift" to "help Alex win the tournament"
+  → $500 in stolen Nitro gifts sent to attacker's accounts
+  → 2 accounts enter credit card info on fake "Nitro verification" page
+  → $2,500 in fraudulent charges on stolen cards
+
+DAY 2: DETECTION
+────────────────────────────────────────────────
+Alex tries to log into Discord → "Session expired" → logs in
+→ Sees DMs they didn't send → realizes what happened
+→ Changes password → but the TOKEN IS STILL VALID
+→ Has to go to Settings → Log Out of All Known Devices
+→ Reports to Discord Trust & Safety
+
+AFTERMATH
+────────────────────────────────────────────────
+■ Alex permanently loses trust of friends in the server
+■ 3 friends blame Alex for the scam
+■ Alex is banned from 2 servers (server admins blame the compromised account)
+■ $3,000 total stolen from the friend group — none recoverable
+■ Credit card info stolen → identity theft protection needed for 2 years
+■ Attacker: never caught (uses VPN, cryptocurrency payments)
+```
+
+**Technical Analysis:**
+
+```typescript
+// discord-token-theft-analysis.ts — How Token Loggers Work
+
+class DiscordTokenTheftAnalyzer {
+  // Discord stores tokens in these locations:
+  private readonly TOKEN_LOCATIONS = [
+    '%APPDATA%\\discord\\Local Storage\\leveldb\\*.log',
+    '%APPDATA%\\discord\\Local Storage\\leveldb\\*.ldb',
+    '%APPDATA%\\discord\\Local Storage\\https_discord.com_0.localstorage',
+    '%APPDATA%\\discordptb\\Local Storage\\leveldb\\*.log',
+    '%APPDATA%\\discordcanary\\Local Storage\\leveldb\\*.log',
+    '%APPDATA%\\discorddevelopment\\Local Storage\\leveldb\\*.log',
+    '%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Local Storage\\leveldb\\',
+  ];
+
+  static readonly TOKEN_PATTERN = /mfa\.[\w-]{84}|[\w-]{24}\.[\w-]{6}\.[\w-]{27}/;
+
+  analyzeTheftMethod(method: string): string {
+    const methods: Record<string, string> = {
+      'executable': 'Fake gaming tool, cheat, crack, or "checker" .exe file',
+      'browser_ext': 'Malicious browser extension claiming to enhance Discord',
+      'qr_code': '"Age verification" QR code that links to Discord OAuth',
+      'webhook': 'Fake Discord webhook that prompt for "re-authentication"',
+      'phishing_page': 'Fake Discord login page that captures both password AND token',
+    };
+    return methods[method] || 'Unknown method';
+  }
+
+  generatePreventionReport(): string {
+    return `
+DISCORD TOKEN THEFT PREVENTION
+═══════════════════════════════════════════════════
+1. NEVER run .exe files claiming to be Discord tools
+   └── Legitimate Discord utilities are web-based or Python, never random EXEs
+   
+2. Discord tokens are ALREADY on your computer
+   └── Any program you run can read them (there is NO protection)
+   └── Solution: Keep your computer clean AND use a separate browser profile for Discord
+
+3. Run Discord in your browser, not the app
+   └── Browser isolates Discord from other apps
+   └── Use Chrome/Firefox profile dedicated to Discord only
+   └── DON'T install browser extensions with Discord permissions
+
+4. Enable 2FA on Discord
+   └── 2FA doesn't protect against token theft (tokens bypass 2FA)
+   └── BUT: 2FA makes account recovery MUCH easier after token theft
+
+5. Check active sessions weekly
+   └── Settings → Authorized Apps → check for unknown apps
+
+6. Periodically force logout ALL sessions
+   └── Settings → Log Out Of All Known Devices
+   └── This invalidates all existing tokens
+   └── Do this every 30 days
+
+7. Use anti-token-protection
+   └── No legitimate script or tool can protect your token
+   └── Any tool claiming to "protect your token" IS the scam
+`;
+  }
+}
+```
+
+### 9.6 WhatsApp Social Engineering Hijack — The "I Need The Code" Scam
+
+**Overview:**
+- **Target demographic:** Families, friend groups, non-technical users
+- **Method:** Social engineering through compromised friend accounts
+- **Scale:** Millions of WhatsApp accounts compromised annually through this exact method
+- **Financial impact:** Average $2,000 per victim (wiring money to "friend in need")
+
+**The Complete Attack Chain:**
+
+```
+WHATSAPP SOCIAL ENGINEERING TAKEOVER
+═══════════════════════════════════════════════════
+
+STEP 1: INITIAL COMPROMISE
+────────────────────────────────────────────────
+Attacker gets access to Person A's WhatsApp account
+(through SIM swap OR the verification code trick — see below)
+
+STEP 2: THE CODE TRICK — HOW IT STARTS
+────────────────────────────────────────────────
+Attacker triggers WhatsApp registration on THEIR phone using
+Person B's phone number (someone from Person A's contact list).
+
+WhatsApp sends a 6-digit verification code via SMS to Person B.
+
+Person B receives the SMS: "Your WhatsApp code is 123-456"
+
+STEP 3: THE SOCIAL ENGINEERING PLAY
+────────────────────────────────────────────────
+Attacker DMs Person B from Person A's (hacked) account:
+
+Person A (hacked): "Hey! I accidentally registered my number,
+                    can you send me the code that was sent to you?"
+Person B:           "What code?"
+Person A (hacked):  "The 6-digit code you just received"
+Person B:           "Oh okay, it's 123-456"
+
+STEP 4: ACCOUNT TAKEOVER
+────────────────────────────────────────────────
+Person B just shared their WhatsApp verification code.
+Attacker enters the code → BAM → Person B's WhatsApp is now on
+the attacker's phone.
+
+Person B's phone:   WhatsApp shows "This account is now registered on
+                    a different device" → Person B is logged out.
+Person B realizes:  Oh no. I just lost my WhatsApp.
+
+STEP 5: THE EXTRACTION
+────────────────────────────────────────────────
+From Person B's hijacked WhatsApp, attacker:
+  ■ Reads through Person B's DMs to identify family relationships
+  ■ Finds Person B's mother/father/spouse contacts labeled "Mom", "Dad", "Husband"
+  ■ DMs the family member from Person B's account:
+    "Mom! I'm in trouble. I lost my phone and I need to pay
+     something urgently. Can you send ₹10,000 to this UPI ID?
+     I'll pay you back tonight, I promise."
+  ■ The message comes from Person B's REAL WhatsApp account
+  ■ No reason to suspect → Mom sends the money
+
+STEP 6: CASCADE
+────────────────────────────────────────────────
+Each compromised account leads to more:
+  Person A → Person B → Person B's Mom → Person B's Mom's contacts
+  Person B's Mom → her sister → her sister's husband → etc.
+  
+Within 48 hours, potentially 100+ accounts compromised
+through trust cascades.
+
+AFTERMATH
+────────────────────────────────────────────────
+Victim's bank: "The transaction was authorized by you."
+WhatsApp: "There's nothing we can do — you shared the code."
+Police: "We'll file a report but these scams originate overseas."
+Money: NEVER RECOVERED.
+```
+
+**The Prevention Rule That Saves Everyone:**
+
+```
+THE GOLDEN RULE OF WHATSAPP SECURITY
+═══════════════════════════════════════════════════
+YOUR WHATSAPP VERIFICATION CODE IS YOUR IDENTITY.
+
+Never share it with ANYONE, for ANY reason, EVER.
+
+NO ONE — not your friend, not your family, not WhatsApp support —
+will EVER need your WhatsApp verification code.
+
+If someone asks for your WhatsApp code:
+  └── They are trying to steal your account.
+  └── Period. No exceptions. No "but my friend really needs it."
+```
+
+### 9.7 TikTok Journalist Account Takeover — The Targeted Disinformation Attack
+
+**Overview:**
+- **Victim:** Independent journalist with 200K TikTok followers covering political corruption
+- **Attackers:** Politically motivated group 
+- **Method:** Targeted spear phishing + social engineering of TikTok support
+- **Loss:** Account used to spread disinformation before journalist regained control
+- **Impact:** Reputation damaged, death threats, had to relocate
+
+**The Full Story:**
+
+```
+TIKTOK JOURNALIST TAKEOVER — TARGETED DISINFORMATION
+═══════════════════════════════════════════════════
+
+PHASE 1: RECONNAISSANCE (2 WEEKS)
+────────────────────────────────────────────────
+Attackers research the journalist:
+  ■ Email address (found on "Contact" page of website)
+  ■ Phone number (found in WHOIS records of personal domain)
+  ■ Birthday (public Instagram post)
+  ■ Mother's maiden name (Facebook — privacy setting was "Friends" but attacker 
+    compromised a friend's account to view it)
+  ■ Device type (iPhone 14 Pro — from TikTok video metadata)
+  ■ Travel patterns (regular coffee shop posting location-tagged content)
+
+PHASE 2: SPEAR PHISHING
+────────────────────────────────────────────────
+Attackers craft a convincing email:
+  From: "TikTok Creator Team" <creator-support@tiktok-verify.xyz>
+  Subject: "URGENT: Your account will be terminated for copyright violations"
+  Body: "We've received 3 copyright strikes against your account.
+         You must appeal within 24 hours or your account will be deleted.
+         Click here to verify your identity: [malicious link]"
+  
+The link goes to a near-perfect clone of TikTok's login page.
+Journalist enters email + password → credentials stolen.
+
+PHASE 3: INITIAL ACCESS
+────────────────────────────────────────────────
+Attackers log into the TikTok account.
+TikTok sends login notification to journalist's email.
+BUT: Journalist is in a meeting — doesn't check email for 2 hours.
+
+PHASE 4: 2FA BYPASS VIA SUPPORT
+────────────────────────────────────────────────
+TikTok 2FA is enabled (SMS-based).
+Attackers CAN'T bypass it → they call TikTok support.
+
+Support call script:
+  "Hi, I'm [Journalist's Name]. My number was stolen in a SIM swap
+   and I need to update my recovery number. My account is
+   @[journalist_handle]. I can verify my identity:
+   - Email on account: [journalist's email]
+   - Phone on account: [journalist's phone]
+   - Device: iPhone 14 Pro
+   - Account creation date: [correct date from OSINT]"
+
+TikTok Support: "We need you to verify via an email we'll send."
+  → Support sends verification to journalist's email
+  → Attackers have email access from step 2
+  → Attackers confirm the verification
+  → Support changes phone number → 2FA phone is now attacker's!
+
+PHASE 5: FULL TAKEOVER
+────────────────────────────────────────────────
+With the phone number changed:
+  → Password reset → SMS goes to attacker
+  → Account is now fully under attacker's control
+  → Journalist's 2FA is useless (phone number was changed)
+
+PHASE 6: DISINFORMATION CAMPAIGN (24 HOURS)
+────────────────────────────────────────────────
+Attackers use the journalist's account to:
+  ■ Post 12 videos in 24 hours:
+    - "I was wrong about [political figure]. Here's the truth."
+    - "I've been paid by [foreign govt]. I'm coming clean."
+    - "My sources were fabricated. I apologize."
+  ■ Reply to comments with fake admission details
+  ■ Delete all critical investigative content (50+ videos gone)
+  ■ Change profile photo and bio to match new narrative
+  ■ Turn on Live → talk for 30 minutes about "how I was wrong"
+  ■ Unfollow all legitimate accounts → follow bot accounts
+
+PHASE 7: AFTERMATH
+────────────────────────────────────────────────
+Journalist regains access after 3 days (via ID verification with TikTok).
+But the damage is done:
+  ■ Lost 80K followers (people who thought the journalist flipped)
+  ■ 50 investigative videos permanently deleted (no backup)
+  ■ Media articles published: "[Journalist] admits fabricating stories"
+  ■ Death threats from both sides: people who believed the scam AND
+    people who didn't believe the journalist's "I was hacked" explanation
+  ■ Career destroyed — news outlets won't work with a compromised journalist
+  ■ Journalist moves to a different city for safety
+```
+
+**Attack Prevention for High-Profile Accounts:**
+
+```
+HIGH-PROFILE ACCOUNT SECURITY CHECKLIST
+═══════════════════════════════════════════════════
+□ NEVER use SMS 2FA — use TOTP or hardware key
+□ Separate email for social media accounts (NOT the one on your website)
+□ Register for Creator Support BEFORE an attack happens
+  └── TikTok Creator Support is separate from normal support
+  └── Have a direct contact person you can call
+□ Use a different phone number for 2FA than your personal number
+  └── Google Voice number for 2FA (port protected)
+  └── Separate prepaid SIM for social media accounts
+□ Record account creation date, device info, and IP addresses
+  └── Needed for account recovery proofs
+□ Set up recovery contacts on all platforms
+□ Regularly backup content (download videos to external drive)
+□ Never click links in "security alert" emails
+  └── Open the app directly to check
+□ Use a password manager with auto-fill only on exact domain
+□ Monitor for impersonation accounts — report them
+```
+
+### 9.8 Business Email Compromise (BEC) — The $50 Billion Heist
+
+**Overview:**
+- **Target:** Medium-sized US manufacturing company (500 employees)
+- **Attackers:** Nigerian cybercrime ring (part of a larger BEC operation)
+- **Financial Loss:** $1.2 million single wire transfer
+- **Total BEC losses globally (2013-2024):** $50+ billion (FBI IC3)
+
+**The Complete Attack Story:**
+
+```
+BEC TAKEOVER — THE $1.2M WIRE TRANSFER
+═══════════════════════════════════════════════════
+
+PHASE 1: INTELLIGENCE GATHERING (1 MONTH)
+────────────────────────────────────────────────
+Attackers identify the company through LinkedIn:
+  ■ CEO: John M., active on LinkedIn, mentions upcoming international trip
+  ■ CFO: Sarah K., email format: s.k@company.com
+  ■ AP Manager: David L., manages wire transfers
+  ■ Bank: Mentioned in 3-year-old press release
+
+Attackers gather:
+  ┌─────────────────────────────────────────────┐
+  │ □ CEO's travel schedule (LinkedIn posts)     │
+  │ □ Company email format (confirmed via Hunter) │
+  │ □ Email signature templates (Glassdoor)       │
+  │ □ Vendor details (SEC filings)                │
+  │ □ Wire transfer authority (LinkedIn roles)    │
+  └─────────────────────────────────────────────┘
+
+PHASE 2: INITIAL ACCESS
+────────────────────────────────────────────────
+Attackers send CEO a spear phishing email:
+  From: "LinkedIn" <notification@linkedin-secure.net>
+  Subject: "You have 3 new connection requests"
+  Body: "Click to view" → leads to credential harvesting page
+
+CEO is busy preparing for trip → enters LinkedIn credentials
+→ BUT the page also asks "Re-enter your work email and password
+   to verify your identity" → CEO enters it
+→ Company email credentials are now compromised
+
+PHASE 3: EMAIL MONITORING
+────────────────────────────────────────────────
+Attacker silently accesses CEO's email via IMAP.
+Creates mailbox rules:
+  ■ Move any email from CFO/AP Manager to a hidden folder
+  ■ Forward all internal finance emails to attacker's Gmail
+  ■ Delete security alerts from IT
+
+Attacker studies CEO's communication style:
+  ┌─────────────────────────────────────────────┐
+  │ ■ Signature format                          │
+  │ ■ Common phrases ("Let's circle back",       │
+  │   "Per our discussion", "FYI")               │
+  │ ■ Response times                             │
+  │ ■ Typical email structure                   │
+  │ ■ Known vendors and ongoing deals           │
+  └─────────────────────────────────────────────┘
+
+PHASE 4: THE EXECUTION (CEO IS FLYING)
+────────────────────────────────────────────────
+Attacker knows CEO has a 14-hour flight to Tokyo.
+During this window, CEO is unreachable by phone or email.
+
+Attacker sends email "from CEO" to AP Manager:
+  From: CEO's actual email account
+  To: AP Manager
+  Subject: Urgent wire transfer — vendor payment
+
+  "David,
+  
+  I'm finalizing the [Vendor Name] acquisition during my trip.
+  Their banking information has changed since the original contract.
+  Please process the deposit to their NEW account immediately.
+  
+  Amount: $1,200,000
+  Reference: #ACQ-2024-0342
+  
+  Updated wire instructions attached.
+  
+  I'm unreachable by phone for the next 8 hours due to flight.
+  Sarah (CFO) is copied and aware of this payment.
+  
+  Thank you,
+  John"
+  
+  [CC: Sarah — but Sarah's email was spoofed, the actual email 
+   only went to AP Manager]
+
+PHASE 5: FRAUD EXECUTION
+────────────────────────────────────────────────
+AP Manager sees email is from CEO's REAL email account.
+AP Manager checks the vendor name — it's a real vendor (OSINT).
+AP Manager calls CFO's office → CFO is in meetings, not picking up.
+AP Manager thinks: "CEO copied CFO, it's been verified."
+AP Manager processes the wire: $1,200,000 to attacker's account
+  (a mule account in Hong Kong).
+
+PHASE 6: AFTERMATH
+────────────────────────────────────────────────
+18 hours later:
+  ■ CEO lands in Tokyo, turns on phone → sees frantic messages
+  ■ CEO: "I never sent that email"
+  ■ Bank contacted → funds already withdrawn in Hong Kong (untraceable)
+  ■ FBI notified → jurisdiction issues (Hong Kong)
+  ■ Company insurance: cyber fraud coverage? Maybe $500K
+  ■ Attacker: 1 of 40,000 BEC attacks that year — never caught
+  ■ Company impact: layoffs, CFO resigns, stock drops 12%
+```
+
+**BEC Prevention Checklist for Businesses:**
+
+```
+BEC PREVENTION CHECKLIST
+═══════════════════════════════════════════════════
+TECHNICAL CONTROLS:
+  □ DMARC reject policy (p=reject) — prevents email spoofing
+  □ DMARC pct=100 — apply to ALL emails, not just some
+  □ BIMI — brand logo in email clients (helps identify real emails)
+  □ S/MIME or PGP email signing for sensitive communications
+  □ Email banner: "EXTERNAL" on all emails from outside the company
+  □ Block auto-forwarding of email to external addresses
+  □ No mailbox rules that auto-delete or forward without IT approval
+
+PROCESS CONTROLS:
+  □ Dual approval for ALL wire transfers over $10,000
+  └── Two DIFFERENT people must approve
+  └── Approval must be in-person (not email)
+  □ Payment verification call:
+  └── Call the vendor on FILE phone number (not in the email)
+  └── Confirm new banking details verbally
+  □ "No email alone can authorize payment" — company policy
+  □ Payment window: no rush payments (72-hour waiting period)
+  □ CEO travel protocol: designate a backup approver during travel
+  □ Regular security training with BEC-specific phishing simulations
+
+TECHNICAL TOOLS:
+  □ Anti-phishing gateway (Proofpoint, Mimecast, Abnormal Security)
+  □ Employee domain monitoring (identify lookalike domains)
+  □ SIEM alerts for: 
+     - New email forwarding rules
+     - Email access from unusual IPs
+     - Large attachment access outside business hours
+```
+
+### 9.9 Deepfake CEO Fraud — The $25 Million Video Call
+
+**Overview:**
+- **Target:** Hong Kong-based multinational finance company
+- **Attackers:** Sophisticated cybercrime group using AI-generated deepfakes
+- **Loss:** $25 million (HK$200 million)
+- **Method:** Multi-person deepfake video conference call
+- **Date:** January 2024 (publicly reported February 2024)
+
+**The Complete Story — The Most Sophisticated Social Engineering Attack Ever Recorded:**
+
+```
+DEEPFAKE CEO FRAUD — THE $25M VIDEO CALL
+═══════════════════════════════════════════════════
+
+PHASE 1: OSINT & PREPARATION (WEEKS)
+────────────────────────────────────────────────
+Attackers identify a finance employee at a Hong Kong firm
+who handles large international transfers.
+
+Through LinkedIn and company website:
+  ■ Employee's name, title, photo
+  ■ Department's organizational structure
+  ■ UK-based CFO name and photo (public conference appearances)
+  ■ UK-based legal team member names and photos
+  ■ Colleague names and roles
+
+Attackers download public video footage of the CFO and legal team:
+  ■ YouTube conference talks (CFO)
+  ■ LinkedIn videos (legal team)
+  ■ Company town hall recordings
+  These provide voice samples and facial movement references.
+
+PHASE 2: DEEPFAKE CONSTRUCTION
+────────────────────────────────────────────────
+Using AI voice cloning tools (ElevenLabs, open source alternatives):
+  ■ CFO's voice cloned from 30-minute conference presentation
+  ■ Legal team members' voices cloned from shorter samples
+
+Using AI face-swapping/deepfake video tools:
+  ■ Real-time face swap software for video calls
+  ■ Each "person" on the call is AI-generated
+
+PHASE 3: THE SETUP
+────────────────────────────────────────────────
+Attackers craft a convincing email thread:
+  They compromise the UK-based CFO's email (or spoof it well enough).
+
+Email "from CFO" to Hong Kong finance employee:
+
+  "We're finalizing an acquisition and need to discuss confidential
+   fund movements. Please join a video call at [time].
+   The company's solicitors will also be present."
+
+PHASE 4: THE VIDEO CALL — EVERYONE IS FAKE
+────────────────────────────────────────────────
+Employee joins the video call. On the call:
+  ■ "CFO" — deepfake video + cloned voice
+  ■ "Legal Counsel A" — deepfake video + cloned voice  
+  ■ "Legal Counsel B" — deepfake video + cloned voice
+  ■ ALL participants are AI-generated deepfakes
+
+The "CFO" says: "This acquisition is extremely time-sensitive.
+We need to move $25 million to [bank account in Hong Kong]
+for the deposit. Legal has prepared the documentation."
+
+The "Legal Counsel" confirms: "We've reviewed the contract.
+All paperwork is in order. This is standard procedure for
+an acquisition of this size."
+
+The deepfakes show realistic:
+  ■ Lip-sync with speech
+  ■ Head movements, eye contact
+  ■ Background office environments (likely AI-generated)
+  ■ Appropriate responses and hesitation
+
+The employee notes that everyone looks slightly "off" but:
+  ■ The voices sound right
+  ■ The people look right
+  ■ They know confidential company information
+  ■ The request seems plausible
+
+PHASE 5: EXECUTION
+────────────────────────────────────────────────
+Employee processes the transfer: $25 million USD
+to an account in Hong Kong (the attacker's mule account).
+
+PHASE 6: DETECTION
+────────────────────────────────────────────────
+Several days later, the employee mentions the call to a colleague.
+Colleague: "What acquisition? I haven't heard about any acquisition."
+Employee: "The one the CFO discussed on the video call..."
+Realization: CFO never authorized any such call.
+Bank contacted → funds already moved through multiple accounts.
+$25 million: LOST.
+
+PHASE 7: AFTERMATH
+────────────────────────────────────────────────
+■ Hong Kong police investigate
+■ FBI and international law enforcement involved
+■ Attacker: believed to be a sophisticated cybercrime ring
+■ Money: spread across multiple accounts within hours → 
+  converted to cryptocurrency → effectively unrecoverable
+■ Company: very quiet about the incident (reputational damage)
+■ Only publicly known because a police statement was leaked
+```
+
+**Deepfake Video Call Prevention Checklist:**
+
+```
+DEEPFAKE VIDEO CALL PREVENTION
+═══════════════════════════════════════════════════
+BEFORE THE CALL:
+  □ Pre-schedule ALL financial authorization calls
+  └── Never accept unscheduled "urgent" financial calls
+  □ Use verified contact methods:
+  └── Call the CFO's KNOWN phone number (not the one in the email)
+  └── Confirm the call is legitimate before joining
+  □ Pre-share a meeting passphrase via secure channel (Signal/WhatsApp)
+
+DURING THE CALL:
+  □ Ask a question only the REAL person would know:
+  └── "What did we discuss in our last 1:1 meeting?"
+  └── "What's the name of your college roommate?" (pre-agreed)
+  └── "What's the project codename from last quarter?"
+  □ Ask participants to turn their head 90 degrees
+  └── Deepfakes often fail at extreme angles
+  □ Ask participants to wave their hand in front of their face
+  └── This breaks many real-time deepfake overlays
+  □ Use a different communication channel simultaneously:
+  └── Text the person on Signal: "Are you really on this call?"
+  □ Look for visual anomalies:
+  └── Unnatural blinking patterns (too much or no blinking)
+  └── Audio-visual sync issues
+  └── Unusual skin textures (smooth/blurry around jawline)
+
+AFTER THE CALL:
+  □ Confirm the request via a SEPARATE channel
+  └── In-person meeting
+  └── Phone call to a known number
+  └── Pre-established secure messaging
+  □ No single video call can authorize financial transfers
+  □ Implement the "Two-Person Rule" — two approvals required
+  □ Maintain a 24-hour cooling off period for all financial requests
+  └── "If it's urgent, it's a scam" — company policy
+```
+
 ---
 
 ## 10. Monitoring Tools & Services
@@ -1854,16 +4250,21 @@ Day 4 (8:00 AM): Terpin wakes up to "No Service" — too late
 
 ## Summary
 
-- **Account Takeover Taxonomy:** 6 categories (credential, social engineering, session, MFA bypass, fixation, physical) with varying difficulty and impact — credential-based attacks are most common (52%), SIM swapping is most devastating.
-- **Phishing Detection:** Analyze sender domain, reply-to, links, keywords, urgency, attachments, and SPF/DKIM/DMARC authentication results programmatically.
-- **Credential Stuffing Prevention:** Track login velocity per IP, unique username count, success rate, user-agent consistency, and geographic anomalies to distinguish automated attacks from legitimate traffic.
-- **Password Strength:** Entropy-based calculation with crack time estimation — 14+ character passwords with 4 character types provide > 100-bit entropy, taking centuries to brute force.
-- **Session Security:** Bind sessions to device fingerprints, detect impossible travel, monitor user-agent and location changes — session token theft bypasses both password and MFA.
-- **MFA Hierarchy:** SMS < TOTP < Push < FIDO2 Software < FIDO2 Hardware — SMS 2FA is vulnerable to SIM swap, SS7, and phishing. Hardware security keys are the only phishing-resistant MFA.
-- **SIM Swap:** The most devastating personal attack — attacker ports your number to their SIM, intercepts SMS 2FA, drains accounts within minutes. Prevent with carrier PIN, port freeze, and removing SMS 2FA entirely.
-- **Platform Forensics:** Instagram, Twitter, Facebook, Google all provide data exports with IP logs, device info, and session history — analyze these to identify the attacker and trace the compromise.
-- **Defense Architecture:** Layered approach: password manager → hardware key 2FA → session management → email security → OPSEC → monitoring. Each layer independently protects even if other layers fail.
-- **IR Playbook:** First 15 minutes are critical — confirm compromise, try password reset, contain linked accounts, document everything, then report and recover.
+- **Account Takeover Taxonomy:** 6 categories (credential, social engineering, session, MFA bypass, fixation, physical) with varying difficulty — credential-based attacks are most common (52%), SIM swapping is most devastating. Each category requires different defenses.
+- **Social Engineering Deep Dive:** 10+ attack techniques including phishing, spear phishing, vishing, SMiShing, pretexting, BEC/CEO fraud, deepfake voice/video, QR code phishing, and psychologial manipulation (Cialdini's 6 principles). Pretexting involves constructing a fictional scenario over multiple interactions — the most sophisticated form. BEC has caused $50+ billion in losses since 2013. Deepfake technology now enables real-time voice cloning and video call impersonation, with the Hong Kong $25M deepfake call being the most advanced known attack.
+- **OSINT Reconnaissance:** Attackers use LinkedIn, Facebook, Instagram, Twitter, GitHub, data breaches, and specialized tools (theHarvester, Sherlock, Maltego) to gather personal information. Everything you post publicly is ammunition. Self-defense means removing DOB, hometown, pet names, and using fictional security question answers.
+- **Phishing Detection:** Programmatic analysis of sender domain, reply-to, links (homograph detection, suspicious TLDs), keywords (verification, security alert, urgent), urgency pressure, attachments (executables, macros, archives), and SPF/DKIM/DMARC authentication results. Instagram-specific phishing patterns include fake login pages, verification scams, and giveaway fraud.
+- **BEC/CEO Fraud Detection:** Machine learning scoring engine analyzes sender domain consistency, financial request context, urgency levels, recipient role (finance/accounting targets), domain impersonation (typosquatting), and prior email relationships to detect business email compromise.
+- **Credential Stuffing Prevention:** Track login velocity per IP, unique username count per source, success rate, user-agent consistency, geographic anomalies, and IP reputation. 8-factor scoring system distinguishes automated stuffers from legitimate users.
+- **Password Strength:** Entropy-based calculation with crack time estimation — 14+ character passwords with 4 character types provide > 100-bit entropy. Password managers generate unique 20+ char passwords for every service. Reused passwords enable credential stuffing across services.
+- **Session Security:** Bind sessions to device fingerprints, detect impossible travel (2 locations too close in time), monitor user-agent changes, track new IPs/locations. Session token theft bypasses BOTH password and MFA — tokens are the new keys to your kingdom.
+- **MFA Hierarchy:** SMS < TOTP < Push Notification < FIDO2 Software < FIDO2 Hardware Key. SMS 2FA is vulnerable to SIM swap, SS7 interception, and phishing. TOTP is phishable via evilginx proxy attacks. FIDO2 hardware keys (YubiKey, Google Titan) are the ONLY phishing-resistant MFA — they cryptographically bind to the real domain.
+- **SIM Swap:** The most devastating personal attack — attacker social-engineers your mobile carrier to port your number to their SIM, intercepts SMS 2FA, drains crypto/bank accounts within minutes. Prevent with carrier PIN, port freeze, Google Voice number, and removing SMS 2FA entirely. The Michael Terpin case ($24M loss) highlights the insider threat vector.
+- **Google Account Security:** The single most important account — controls Gmail (password resets for everything), YouTube, Drive, Photos, Android, and Google Pay. Google Advanced Protection Program (APP) requires FIDO2 hardware keys and blocks phishing, SIM swap, and automated recovery. Recovery codes must be stored OFFLINE, not in Google Drive. Gmail filter hijacking and email forwarding are silent attack techniques.
+- **Platform Forensics:** 11+ platform forensic guides — Instagram (JSON data export with IP logs, device info, email changes, login activity), Google Takeout (signInId, oauthClientId, recoveryEmail), WhatsApp (Linked Devices, 2-Step PIN, cloud backup breach risks), Discord (token logger analysis, OAuth app audit, session IP/location tracking), TikTok (login history, device management, account change logs), Snapchat (limited data export), Telegram (cloud password audit, active session analysis), Signal (Registration Lock PIN — the only defense against SIM swap reassignment), Amazon (device list, payment methods, login history), GitHub/Microsoft (personal access tokens, SSH keys, OAuth app scopes, CI/CD pipeline risks), and Facebook/Meta (Where You're Logged In, third-party app access, Trusted Contacts).
+- **Personal Defense Architecture:** 6-layer model — password manager (layer 1), hardware key 2FA + TOTP (layer 2), session management with separate browser profiles (layer 3), dedicated email for account recovery (layer 4), OPSEC communication rules (layer 5), and automated monitoring (layer 6). Account Security Scanner scores each account across authentication, credentials, sessions, recovery, and ecosystem.
+- **Incident Response Playbook:** First 15 minutes are critical — confirm compromise (minute 0-2), secure what you can (minute 2-5), contain the attack (minute 5-10), document everything (minute 10-15). Platform-specific recovery URLs and processes for 15+ services. Post-recovery hardening checklist covers password, 2FA, sessions, apps, email forwarding/filters, monitoring, and legal. Evidence preservation is critical for law enforcement reporting.
+- **Real-World Case Studies:** 9 end-to-end attack stories covering every major technique — Twitter 2020 Bitcoin Scam (internal tool social engineering by 17-year-old, 130 accounts, $118K), Telegram OAuth Hijacking (evilginx proxy, password + SMS code stolen), SIM Swap Ring ($24M crypto loss, AT&T employee bribe), Google Account Takeover (credential stuffing + no recovery options = permanent data loss), Discord Token Logger (fake gaming tool stole Discord tokens, cascaded to 15+ accounts via trust exploitation), WhatsApp Social Engineering Hijack ("I need the code" scam using compromised friend accounts), TikTok Journalist Takeover (spear phishing + support social engineering for disinformation campaign), BEC $1.2M Wire Transfer (CEO email compromise during international flight, DMARC not enforced), and HK $25M Deepfake Video Call (AI-generated CFO + legal team on video call, every participant was a deepfake).
 
 ---
 
@@ -1926,9 +4327,69 @@ Day 4 (8:00 AM): Terpin wakes up to "No Service" — too late
     - C) The victim's bank account is frozen
     - D) All of the above
 
+11. Which Cialdini principle is most commonly exploited by attackers creating urgency?
+    - A) Reciprocity
+    - B) Scarcity
+    - C) Authority
+    - D) Social Proof
+
+12. What is pretexting in social engineering?
+    - A) Sending mass phishing emails
+    - B) Creating a fictional scenario over multiple interactions to manipulate a target
+    - C) Using a fake login page to steal credentials
+    - D) Installing malware on a victim's computer
+
+13. What is the single most important security setting for a Telegram account?
+    - A) Setting a profile photo
+    - B) Enabling 2-Step Verification (Cloud Password)
+    - C) Using a username instead of phone number
+    - D) Disabling last seen
+
+14. In the Hong Kong $25 million deepfake fraud, what made the attack exceptional?
+    - A) The attacker used a single deepfake video
+    - B) Every participant on the video call was an AI-generated deepfake
+    - C) The attack took 2 years to execute
+    - D) The attacker was an inside employee
+
+15. What is the golden rule of WhatsApp security?
+    - A) Use a strong password
+    - B) Never share your 6-digit verification code with ANYONE for ANY reason
+    - C) Only add contacts you know in person
+    - D) Disable read receipts
+
+16. How do attackers use email filters in a Gmail compromise?
+    - A) To organize incoming emails by priority
+    - B) To automatically DELETE security notification emails so the victim doesn't see them
+    - C) To forward spam to the junk folder
+    - D) To sort emails by sender
+
+17. What is the primary defense against Discord token loggers?
+    - A) Enabling 2FA on Discord
+    - B) Never running untrusted executable files claiming to be Discord tools
+    - C) Using a VPN while using Discord
+    - D) Changing your Discord username monthly
+
+18. Google Advanced Protection Program (APP) requires what to log in?
+    - A) A strong password
+    - B) SMS 2FA
+    - C) Two physical FIDO2 hardware security keys
+    - D) A recovery email
+
+19. What is BEC (Business Email Compromise)?
+    - A) A virus that infects business computers
+    - B) Social engineering attack targeting finance employees to authorize fraudulent wire transfers
+    - C) A vulnerability in Microsoft Exchange
+    - D) A type of ransomware targeting enterprises
+
+20. In the "I need the code" WhatsApp scam, what is the attacker's method?
+    - A) They hack WhatsApp's servers directly
+    - B) They trigger a verification code to the victim, then ask them to share it by impersonating a friend
+    - C) They use a brute force attack on WhatsApp passwords
+    - D) They send malware via WhatsApp attachments
+
 <details>
 <summary>Quiz Answers</summary>
-1. C, 2. D, 3. C, 4. D, 5. B, 6. C, 7. B, 8. B, 9. B, 10. B
+1. C, 2. D, 3. C, 4. D, 5. B, 6. C, 7. B, 8. B, 9. B, 10. B, 11. B, 12. B, 13. B, 14. B, 15. B, 16. B, 17. B, 18. C, 19. B, 20. B
 </details>
 
 ---
@@ -1941,24 +4402,121 @@ Day 4 (8:00 AM): Terpin wakes up to "No Service" — too late
 2. Explain the difference between credential stuffing and password spraying.
 3. What is a SIM swap attack and why is SMS 2FA vulnerable to it?
 4. Describe the session hijacking attack vector — how does it bypass password and MFA?
+5. List Cialdini's 6 principles of persuasion and give a social engineering example for each.
+6. What is pretexting and how does it differ from simple phishing?
+7. Explain the Google Advanced Protection Program — what does it require and what does it block?
+8. What is BEC (Business Email Compromise) and what are the 5 main types?
+9. How do deepfake video call attacks work and what are the key visual indicators of a deepfake?
+10. What is the "I need the code" WhatsApp scam and why is it so effective?
+
+### Practical Exercises
+
+1. **Google Account Security Audit:** Using the `GoogleSecurityAuditor` class from Section 6, audit your actual Google account security posture. Score each category and create a timeline (30/60/90 days) to fix every identified vulnerability.
+
+2. **Gmail Filter Hijacking Check:** Manually review your Gmail settings:
+   - Settings → Filters and Blocked Addresses — are there any filters that auto-delete or forward emails?
+   - Settings → Forwarding and POP/IMAP — is forwarding enabled to an address you don't recognize?
+   - Settings → Accounts → Check Google Account permissions — any unknown third-party apps?
+   
+3. **Social Media Login Audit:** Log into every social media account you own and check:
+   - Active sessions — are there sessions from unknown devices/locations?
+   - Third-party app access — revoke all apps you don't actively use
+   - Recovery email/phone — are they current and secure?
+   - 2FA status — is it enabled and using TOTP/hardware key (not SMS)?
+   
+4. **OSINT Self-Defense:** Search for yourself using the techniques from Section 2.4:
+   - Google your name + email — what's publicly available?
+   - Check haveibeenpwned.com — which of your accounts have been breached?
+   - Review your LinkedIn/Facebook/Instagram public visibility
+   - Remove all security question answers (pet names, schools, hometown) from public profiles
+
+5. **Phishing Email Analysis:** Forward a suspicious email you've received to a test account and analyze it using the `PhishingDetector` class from Section 2.1. Score each factor (domain, links, keywords, urgency, attachments, SPF/DKIM/DMARC) and determine the overall risk level.
+
+6. **SIM Swap Risk Assessment:** Using the `SIMSwapProtectionAudit` class from Section 5, evaluate your mobile carrier account security:
+   - Do you have a carrier PIN set? If not, call your carrier TODAY.
+   - Does your carrier support port freeze? Enable it.
+   - Is SMS your primary 2FA anywhere? Identify every service and change to TOTP.
+
+7. **Discord Security Audit:** If you use Discord:
+   - Check Settings → Authorized Apps — revoke all unknown apps
+   - Check Settings → Devices — remove unknown devices
+   - Enable 2FA (TOTP) — Settings → My Account → Enable Two-Factor Auth
+   - Review your account token locations and understand what apps can steal them
+
+8. **Deepfake Family Protocol:** Establish a family/business code word for identity verification:
+   - Choose a code word that is NOT guessable from social media
+   - All family members memorize it
+   - Anyone calling asking for money or sensitive info MUST provide the code word
+   - Practice: stage a fake scenario where a family member "tests" the code word
 
 ### Application Problems
 
-1. Write a personal incident response plan for a hypothetical Instagram compromise. Include: notification sources, recovery steps in order, evidence collection methods, and timeline of actions.
+1. Write a personal incident response plan for a hypothetical Google account compromise. Include: notification sources, recovery steps in order, evidence collection methods, timeline (minutes/hours/days), and platform-specific recovery processes.
 
-2. Audit your own account security using the `AccountSecurityScanner` class from Section 7. Score all your major accounts (Google, Instagram, Twitter, email, banking) and create a plan to fix the lowest-scoring areas.
+2. Audit your own account security using the `AccountSecurityScanner` class from Section 7. Score all your major accounts (Google, Instagram, Twitter/X, Facebook, email, banking, GitHub, Discord, Telegram, Amazon) and create a prioritized plan to fix the lowest-scoring areas.
 
 3. Given the following login data, identify which are likely credential stuffing attempts vs legitimate logins:
-   - IP 185.234.72.18: 47 login attempts, 44 different usernames, 0 successes, all within 3 minutes
-   - IP 103.234.18.5: 3 login attempts, 1 username, all with correct password but user had MFA
-   - IP 192.168.1.50: 2 login attempts, 1 username, 1 success (correct password + MFA)
+   - IP 185.234.72.18: 47 login attempts, 44 different usernames, 0 successes, all within 3 minutes, user-agent = "python-requests/2.31.0"
+   - IP 103.234.18.5: 3 login attempts, 1 username, all with correct password but user had MFA, country = India (user is in USA)
+   - IP 192.168.1.50: 2 login attempts, 1 username, 1 success (correct password + MFA), user-agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0"
+   - IP 45.33.32.156: 1 login attempt, 1 username, failure. user claims "I forgot my password."
+   - IP 10.0.0.1: 500 login attempts in 1 minute, 500 different usernames, all from a data center IP range. 0 successes.
+
+4. Create a BEC prevention playbook for a small business (50 employees) with a $500K annual revenue. Include: email authentication (DMARC/DKIM/SPF), dual approval process for wire transfers, employee training, vendor verification protocol, and incident response for when a BEC attack is suspected.
+
+5. Analyze the Hong Kong $25M deepfake video call attack from Section 9.9 and design a "deepfake video call verification protocol" with at least 8 specific steps that would have prevented the attack.
+
+6. For the Twitter 2020 Bitcoin Scam (Section 9.1), create a post-incident security overhaul plan for Twitter addressing all 6 root causes. Include specific technical controls, process changes, and training requirements.
 
 ### Challenge Problems
 
-1. Build a complete home lab for social media security testing: set up a phishing simulation using GoPhish, create a realistic Instagram login page clone, and demonstrate to a friend how credential harvesting works — then show them how to detect it.
+1. **Build a Multi-Platform Security Dashboard:** Create a TypeScript application that uses the `AccountSecurityScanner`, `GoogleSecurityAuditor`, `GmailSecurityAudit`, `PhishingDetector`, `CredentialStuffingDetector`, `BECDetector`, `DiscordForensicEngine`, `GitHubSecurityAudit`, and `TelegramSecurityAudit` classes to produce a complete security posture report for a user across all their accounts.
 
-2. Research and document the latest SIM swap attack techniques by analyzing at least 3 real-world cases from the past 2 years. Create a prevention checklist specific to cryptocurrency investors.
+2. **Phishing Simulation Lab:** Build a complete home lab for social media security testing:
+   - Set up GoPhish on a local VM
+   - Create realistic login page clones (Instagram, Gmail, Facebook)
+   - Demonstrate credential harvesting to a consenting participant
+   - Show them the phishing indicators they missed
+   - Then teach them to detect phishing using the `PhishingDetector` class
+
+3. **SIM Swap Investigation:** Research and document the latest SIM swap attack techniques by analyzing at least 5 real-world cases from the past 3 years (Terpin, investor ring, celebrity cases). Create a prevention checklist specific to cryptocurrency investors and high-net-worth individuals.
+
+4. **Deepfake Social Engineering Countermeasure:** Research current deepfake detection technologies and build a TypeScript-based real-time deepfake detection tool that analyzes the following during a video call:
+   - Blinking frequency and naturalness
+   - Audio-video sync delay
+   - Skin texture analysis (smoothness around jawline)
+   - Head movement at extreme angles
+   - Verbal response patterns (too fast/too slow)
+   
+   Produce a "Deepfake Risk Score" for each participant on the call.
+
+5. **Full Account Recovery Kit:** Build a complete personal account recovery kit (physical and digital) containing:
+   - Printed recovery codes for every platform
+   - Account creation dates and details (needed for Google recovery)
+   - Trusted contacts list
+   - Code word for family
+   - Carrier PIN documentation
+   - Legal reporting template
+   
+   Document the complete kit creation process and test it with a friend.
+
+6. **Cross-Platform Forensics Case:** Create a fictional account compromise scenario where the attacker takes over a victim's Google → Instagram → WhatsApp → Discord accounts. Write a complete forensic investigation report showing:
+   - Timeline of events with timestamps
+   - Evidence sources used at each step
+   - IP addresses and geolocation tracking
+   - Recovery steps taken
+   - Root cause analysis
+   - Prevention recommendations
+
+7. **Social Engineering Red Team Exercise:** Design and execute (ethically and with consent) a social engineering test against a friend/family member who has agreed to participate:
+   - Stage 1: OSINT gathering (public info only)
+   - Stage 2: Craft a pretexting scenario
+   - Stage 3: Execute the pretext
+   - Stage 4: Post-exercise debrief
+   - Stage 5: Create a personalized security improvement plan
+   
+   Document the full exercise and lessons learned.
 
 ---
 
-> **File Statistics:** This chapter contains 750+ lines covering social media security, account takeover prevention, digital forensics, personal defense architecture, and incident response.
+> **File Statistics:** This chapter contains 4,500+ lines covering the complete spectrum of account security — 21+ attack types, 9 full end-to-end real-world case studies (Twitter, Telegram, SIM swap, Google takeover, Discord token logger, WhatsApp social engineering, TikTok disinformation, BEC wire fraud, deepfake video call), 12+ platform-specific forensics guides (Instagram, Google, WhatsApp, Discord, TikTok, Snapchat, Telegram, Signal, Amazon, GitHub/Microsoft, Facebook/Meta), 10+ TypeScript security tools (phishing detector, credential stuffer detector, password strength calculator, session hijacking monitor, SIM swap assessor, Instagram forensics engine, Google security auditor, Gmail filter hijack detector, BEC detector, deepfake detector, Discord forensics engine, Telegram security auditor, GitHub security auditor, account security scanner, recovery checklist), OSINT self-defense, Cialdini psychology framework, social engineering countermeasures, personal defense architecture (6-layer model), IR playbook, and password manager comparison.

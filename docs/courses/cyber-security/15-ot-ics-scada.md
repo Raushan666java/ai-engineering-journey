@@ -1,6 +1,6 @@
 # Chapter 15: OT/ICS & SCADA Security
 
-**Next:** [Chapter 16: Incident Response & Forensics](./16-incident-response-forensics.md)
+**Next:** [Chapter 16: Supply Chain & CI/CD Security](./16-supply-chain-cicd.md)
 
 ---
 
@@ -2151,4 +2151,5 @@ Build a TypeScript script `ot-assessment.ts` that orchestrates the following pip
 
 ---
 
-**Next:** [Chapter 16: Incident Response & Forensics](./16-incident-response-forensics.md)
+**Next:** [Chapter 16: Supply Chain & CI/CD Security](./16-supply-chain-cicd.md)
+

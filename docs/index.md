@@ -86,8 +86,8 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 -   <span class="course-icon">🧩</span> __[OOP C++](courses/oop-cpp/)__ <span class="course-chaps">16 ch</span>
 -   <span class="course-icon">🐍</span> __[Python Programming](courses/python-programming/)__ <span class="course-chaps">21 ch</span>
 -   <span class="course-icon">🌍</span> __[Web Development](courses/web-development/)__ <span class="course-chaps">18 ch</span>
--   <span class="course-icon">⚡</span> __[Laravel](courses/laravel/)__ <span class="course-chaps">61 ch</span>
--   <span class="course-icon">☕</span> __[Java & Spring Boot](courses/java/)__ <span class="course-chaps">65 ch</span>
+-   <span class="course-icon">⚡</span> __[Laravel](courses/laravel/)__ <span class="course-chaps">60 ch</span>
+-   <span class="course-icon">☕</span> __[Java & Spring Boot](courses/java/)__ <span class="course-chaps">66 ch</span>
 
 </div>
 

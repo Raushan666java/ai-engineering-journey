@@ -1419,26 +1419,26 @@ nav:
     - Architecture: courses/cloud-computing/10-architecture.md
   - "🔒 Cyber Security":
     - Overview: courses/cyber-security/index.md
-    - Fundamentals: courses/cyber-security/01-fundamentals.md
-    - Cryptography: courses/cyber-security/02-cryptography.md
-    - Network Security: courses/cyber-security/03-network-security.md
-    - System Software: courses/cyber-security/04-system-software.md
-    - Web Security: courses/cyber-security/05-web-security.md
-    - Iam: courses/cyber-security/06-iam.md
-    - Cloud Mobile: courses/cyber-security/07-cloud-mobile.md
-    - Forensics Ir: courses/cyber-security/08-forensics-ir.md
-    - Grc: courses/cyber-security/09-grc.md
-    - Pentesting: courses/cyber-security/10-pentesting.md
-    - SOC Threat Hunting: courses/cyber-security/11-soc-threat-hunting.md
-    - Malware Analysis: courses/cyber-security/12-malware-analysis.md
-    - Red Team C2: courses/cyber-security/13-red-team-c2.md
-    - Wireless IoT: courses/cyber-security/14-wireless-iot-embedded.md
-    - OT ICS SCADA: courses/cyber-security/15-ot-ics-scada.md
-    - Supply Chain CI/CD: courses/cyber-security/16-supply-chain-cicd.md
-    - AI Security: courses/cyber-security/17-ai-security-adversarial-ml.md
-    - Privacy OSINT: courses/cyber-security/18-privacy-osint.md
-    - Blockchain DeFi: courses/cyber-security/19-blockchain-defi-security.md
-    - Zero Trust: courses/cyber-security/20-zero-trust-architecture.md
+    - 01 - Security Fundamentals: courses/cyber-security/01-fundamentals.md
+    - 02 - Cryptography & TLS: courses/cyber-security/02-cryptography.md
+    - 03 - Network Security: courses/cyber-security/03-network-security.md
+    - 04 - System & Software Security: courses/cyber-security/04-system-software.md
+    - 05 - Web Security: courses/cyber-security/05-web-security.md
+    - 06 - Identity & Access Management: courses/cyber-security/06-iam.md
+    - 07 - Cloud & Mobile Security: courses/cyber-security/07-cloud-mobile.md
+    - 08 - Forensics & IR: courses/cyber-security/08-forensics-ir.md
+    - 09 - Governance, Risk & Compliance: courses/cyber-security/09-grc.md
+    - 10 - Ethical Hacking & Pentesting: courses/cyber-security/10-pentesting.md
+    - 11 - SOC Operations & Threat Hunting: courses/cyber-security/11-soc-threat-hunting.md
+    - 12 - Malware Analysis & Reverse Engineering: courses/cyber-security/12-malware-analysis.md
+    - 13 - Red Team & C2 Frameworks: courses/cyber-security/13-red-team-c2.md
+    - 14 - Wireless, IoT & Embedded Security: courses/cyber-security/14-wireless-iot-embedded.md
+    - 15 - OT, ICS & SCADA Security: courses/cyber-security/15-ot-ics-scada.md
+    - 16 - Supply Chain & CI/CD Security: courses/cyber-security/16-supply-chain-cicd.md
+    - 17 - AI Security & Adversarial ML: courses/cyber-security/17-ai-security-adversarial-ml.md
+    - 18 - Privacy, Anonymity & OSINT: courses/cyber-security/18-privacy-osint.md
+    - 19 - Blockchain, Smart Contract & DeFi: courses/cyber-security/19-blockchain-defi-security.md
+    - 20 - Zero Trust & Enterprise Architecture: courses/cyber-security/20-zero-trust-architecture.md
   - "⛓️ Blockchain":
     - Overview: courses/blockchain/index.md
     - Introduction: courses/blockchain/01-introduction.md

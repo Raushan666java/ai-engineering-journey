@@ -1429,6 +1429,16 @@ nav:
     - Forensics Ir: courses/cyber-security/08-forensics-ir.md
     - Grc: courses/cyber-security/09-grc.md
     - Pentesting: courses/cyber-security/10-pentesting.md
+    - SOC Threat Hunting: courses/cyber-security/11-soc-threat-hunting.md
+    - Malware Analysis: courses/cyber-security/12-malware-analysis.md
+    - Red Team C2: courses/cyber-security/13-red-team-c2.md
+    - Wireless IoT: courses/cyber-security/14-wireless-iot-embedded.md
+    - OT ICS SCADA: courses/cyber-security/15-ot-ics-scada.md
+    - Supply Chain CI/CD: courses/cyber-security/16-supply-chain-cicd.md
+    - AI Security: courses/cyber-security/17-ai-security-adversarial-ml.md
+    - Privacy OSINT: courses/cyber-security/18-privacy-osint.md
+    - Blockchain DeFi: courses/cyber-security/19-blockchain-defi-security.md
+    - Zero Trust: courses/cyber-security/20-zero-trust-architecture.md
   - "⛓️ Blockchain":
     - Overview: courses/blockchain/index.md
     - Introduction: courses/blockchain/01-introduction.md

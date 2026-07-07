@@ -2180,7 +2180,7 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
 | Compliance | CIS benchmarks | MDM compliance policies | AWS Config + MDM policy sync |
 | Incident Response | GuardDuty, Security Hub | Play Integrity, App attestation | SIEM + mobile threat feed |
 
-### Chapter Quiz
+## Chapter Quiz
 
 1. In IaaS, who patches the guest OS?
    - A) Cloud provider
@@ -2228,6 +2228,452 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
 <summary>Answers&lt;/summary&gt;
 1. B, 2. A, 3. B, 4. B, 5. B, 6. B, 7. B
 </details>
+
+---
+
+## TypeScript Implementations
+
+### Cloud Security Posture Scanner
+
+```typescript
+/**
+ * Cloud Security Posture Scanner
+ *
+ * Scans cloud resources for common misconfigurations and compliance violations
+ * based on the Shared Responsibility Model and CIS benchmarks.
+ * Checks include: public S3 buckets, unencrypted EBS volumes, security groups
+ * with 0.0.0.0/0 ingress, and missing MFA on root accounts.
+ */
+
+interface CloudResource {
+  id: string;
+  type: string;
+  config: Record<string, unknown>;
+  region: string;
+  tags: Record<string, string>;
+}
+
+interface ComplianceFinding {
+  resourceId: string;
+  rule: string;
+  severity: 'low' | 'medium' | 'high' | 'critical';
+  description: string;
+  remediation: string;
+}
+
+class CloudPostureScanner {
+  private rules: Map<string, (resource: CloudResource) => ComplianceFinding | null>;
+
+  constructor() {
+    this.rules = new Map();
+    this.registerBuiltinRules();
+  }
+
+  private registerBuiltinRules(): void {
+    // Rule 1: Check for public S3 buckets (BucketPolicy allowing *)
+    this.rules.set('s3-public-bucket', (resource: CloudResource) => {
+      if (resource.type !== 's3-bucket') return null;
+      const policy = resource.config['bucketPolicy'] as string;
+      if (policy && policy.includes('"Principal": "*"')) {
+        return {
+          resourceId: resource.id,
+          rule: 'S3-PUBLIC-001',
+          severity: 'critical',
+          description: `S3 bucket ${resource.id} has a bucket policy allowing public access`,
+          remediation:
+            'Remove the Principal: "*" statement and use specific IAM roles or AWS accounts',
+        };
+      }
+      return null;
+    });
+
+    // Rule 2: Check for unencrypted EBS volumes
+    this.rules.set('ebs-unencrypted', (resource: CloudResource) => {
+      if (resource.type !== 'ebs-volume') return null;
+      if (!resource.config['encrypted']) {
+        return {
+          resourceId: resource.id,
+          rule: 'EBS-ENCRYPT-001',
+          severity: 'high',
+          description: `EBS volume ${resource.id} is not encrypted at rest`,
+          remediation:
+            'Enable EBS encryption by default in the region or create an encrypted copy of the volume',
+        };
+      }
+      return null;
+    });
+
+    // Rule 3: Check for security groups with 0.0.0.0/0
+    this.rules.set('sg-wide-open', (resource: CloudResource) => {
+      if (resource.type !== 'security-group') return null;
+      const ingressRules = resource.config['ipPermissions'] as Array<{
+        ipRanges: Array<{ cidrIp: string }>;
+        fromPort: number;
+        toPort: number;
+        ipProtocol: string;
+      }>;
+      if (!ingressRules) return null;
+      for (const rule of ingressRules) {
+        for (const range of rule.ipRanges || []) {
+          if (
+            range.cidrIp === '0.0.0.0/0' &&
+            rule.fromPort !== 443 &&
+            rule.fromPort !== 80
+          ) {
+            return {
+              resourceId: resource.id,
+              rule: 'SG-RESTRICT-001',
+              severity: 'high',
+              description: `Security group ${resource.id} allows 0.0.0.0/0 on port ${rule.fromPort}`,
+              remediation:
+                'Restrict ingress to known IP ranges or use a load balancer for public traffic',
+            };
+          }
+        }
+      }
+      return null;
+    });
+
+    // Rule 4: Check for no MFA on root account
+    this.rules.set('root-no-mfa', (resource: CloudResource) => {
+      if (resource.type !== 'iam-user') return null;
+      if (resource.config['userName'] === 'root' && !resource.config['mfaEnabled']) {
+        return {
+          resourceId: resource.id,
+          rule: 'IAM-MFA-001',
+          severity: 'critical',
+          description: 'Root account does not have MFA enabled',
+          remediation:
+            'Enable MFA for the root account immediately via the AWS IAM console',
+        };
+      }
+      return null;
+    });
+  }
+
+  /** Registers a custom rule at runtime */
+  addRule(
+    name: string,
+    fn: (resource: CloudResource) => ComplianceFinding | null
+  ): void {
+    this.rules.set(name, fn);
+  }
+
+  /** Runs all registered rules against the given resources */
+  scan(resources: CloudResource[]): ComplianceFinding[] {
+    const findings: ComplianceFinding[] = [];
+    for (const resource of resources) {
+      for (const [, ruleFn] of this.rules) {
+        const finding = ruleFn(resource);
+        if (finding) {
+          findings.push(finding);
+        }
+      }
+    }
+    return findings;
+  }
+}
+
+// --- Example usage ---
+const scanner = new CloudPostureScanner();
+const resources: CloudResource[] = [
+  {
+    id: 'my-bucket',
+    type: 's3-bucket',
+    config: {
+      bucketPolicy:
+        '{"Statement":[{"Principal":"*","Effect":"Allow","Action":"s3:GetObject","Resource":"arn:aws:s3:::my-bucket/*"}]}',
+    },
+    region: 'us-east-1',
+    tags: { Environment: 'Production' },
+  },
+  {
+    id: 'vol-abc123',
+    type: 'ebs-volume',
+    config: { encrypted: false, size: 100 },
+    region: 'us-west-2',
+    tags: {},
+  },
+  {
+    id: 'sg-web',
+    type: 'security-group',
+    config: {
+      ipPermissions: [
+        {
+          ipRanges: [{ cidrIp: '0.0.0.0/0' }],
+          fromPort: 22,
+          toPort: 22,
+          ipProtocol: 'tcp',
+        },
+      ],
+    },
+    region: 'eu-central-1',
+    tags: {},
+  },
+  {
+    id: 'root-account',
+    type: 'iam-user',
+    config: { userName: 'root', mfaEnabled: false },
+    region: 'global',
+    tags: {},
+  },
+];
+
+const findings = scanner.scan(resources);
+console.log(`Found ${findings.length} compliance violations:`);
+findings.forEach((f) =>
+  console.log(`  [${f.severity.toUpperCase()}] ${f.rule}: ${f.description}`)
+);
+```
+
+### Container Security Scanner
+
+```typescript
+/**
+ * Container Security Scanner
+ *
+ * Analyzes container images and runtime configurations for common security
+ * misconfigurations including root execution, privileged mode, exposed secrets,
+ * and missing security profiles (AppArmor, seccomp).
+ */
+
+interface ContainerImage {
+  layers: string[];
+  exposedPorts: number[];
+  envVars: string[];
+  entrypoint: string;
+  user?: string;
+  privileged?: boolean;
+  appArmorProfile?: string;
+  seccompProfile?: string;
+  readOnlyRootFilesystem?: boolean;
+  capabilities?: string[];
+}
+
+interface ContainerVuln {
+  cve: string;
+  severity: string;
+  package: string;
+  fixVersion: string;
+}
+
+class ContainerScanner {
+  /** Scans image layers for known CVEs from a simulated vulnerability database */
+  scanImage(image: ContainerImage): ContainerVuln[] {
+    const vulns: ContainerVuln[] = [];
+
+    // Simulated CVE database keyed by base image layer name
+    const cveDatabase = new Map<string, ContainerVuln[]>([
+      [
+        'alpine:3.14',
+        [
+          {
+            cve: 'CVE-2024-1234',
+            severity: 'HIGH',
+            package: 'libssl1.1',
+            fixVersion: '1.1.1w-r0',
+          },
+        ],
+      ],
+      [
+        'ubuntu:20.04',
+        [
+          {
+            cve: 'CVE-2024-5678',
+            severity: 'MEDIUM',
+            package: 'libpam-modules',
+            fixVersion: '1.3.1-5ubuntu4.7',
+          },
+        ],
+      ],
+      [
+        'node:18-alpine',
+        [
+          {
+            cve: 'CVE-2024-9012',
+            severity: 'CRITICAL',
+            package: 'npm',
+            fixVersion: '9.8.1-r0',
+          },
+        ],
+      ],
+    ]);
+
+    for (const layer of image.layers) {
+      const layerVulns = cveDatabase.get(layer);
+      if (layerVulns) {
+        vulns.push(...layerVulns);
+      }
+    }
+    return vulns;
+  }
+
+  /** Checks runtime configuration against CIS Docker Benchmark recommendations */
+  checkConfig(image: ContainerImage): string[] {
+    const issues: string[] = [];
+
+    // Check 1: Running as root (CIS 4.1)
+    if (!image.user || image.user === 'root') {
+      issues.push(
+        'CRITICAL: Container runs as root — use a non-root user directive (USER 1000)'
+      );
+    }
+
+    // Check 2: Privileged mode (CIS 5.1)
+    if (image.privileged) {
+      issues.push(
+        'CRITICAL: Privileged mode enabled — grants all host capabilities, bypassing namespace isolation'
+      );
+    }
+
+    // Check 3: Sensitive environment variables
+    const sensitivePatterns = [
+      'PASSWORD',
+      'SECRET',
+      'TOKEN',
+      'API_KEY',
+      'CREDENTIAL',
+      'AUTH',
+      'PRIVATE_KEY',
+    ];
+    for (const env of image.envVars) {
+      const key = env.split('=')[0];
+      for (const pattern of sensitivePatterns) {
+        if (key.toUpperCase().includes(pattern)) {
+          issues.push(
+            `HIGH: Potential secret exposure in env var "${key}" — use Docker secrets or a vault`
+          );
+          break;
+        }
+      }
+    }
+
+    // Check 4: Exposed Docker socket (CIS 6.1)
+    if (image.exposedPorts.includes(2375) || image.exposedPorts.includes(2376)) {
+      issues.push(
+        'CRITICAL: Docker socket exposed (port 2375/2376) — host compromise via container escape'
+      );
+    }
+
+    // Check 5: Missing AppArmor profile (CIS 5.9)
+    if (!image.appArmorProfile) {
+      issues.push(
+        'MEDIUM: No AppArmor profile applied — consider docker-default or a custom profile'
+      );
+    }
+
+    // Check 6: Missing seccomp profile (CIS 5.8)
+    if (!image.seccompProfile) {
+      issues.push(
+        'MEDIUM: No seccomp profile applied — restrict syscalls with a default or custom profile'
+      );
+    }
+
+    // Check 7: Writable root filesystem (CIS 5.12)
+    if (!image.readOnlyRootFilesystem) {
+      issues.push(
+        'MEDIUM: Root filesystem is writable — set readOnlyRootFilesystem: true and mount tmpfs for temp data'
+      );
+    }
+
+    // Check 8: Dangerous capabilities (CIS 5.3–5.7)
+    const dangerousCaps = [
+      'SYS_ADMIN',
+      'NET_ADMIN',
+      'SYS_PTRACE',
+      'SYS_MODULE',
+      'SYS_RAWIO',
+      'DAC_OVERRIDE',
+    ];
+    for (const cap of image.capabilities || []) {
+      if (dangerousCaps.includes(cap)) {
+        issues.push(
+          `HIGH: Dangerous capability "${cap}" granted — drop all (--cap-drop=ALL) and add only required caps`
+        );
+      }
+    }
+
+    return issues;
+  }
+}
+
+// --- Example usage ---
+const scanner = new ContainerScanner();
+const image: ContainerImage = {
+  layers: ['ubuntu:20.04', 'node:18-alpine'],
+  exposedPorts: [80, 443, 2375],
+  envVars: [
+    'NODE_ENV=production',
+    'DB_PASSWORD=s3cret!',
+    'API_SECRET_TOKEN=abc123def456',
+  ],
+  entrypoint: '/app/server',
+  user: 'root',
+  privileged: true,
+  readOnlyRootFilesystem: false,
+  capabilities: ['SYS_ADMIN', 'NET_BIND_SERVICE', 'SYS_PTRACE'],
+};
+
+// Run vulnerability scan
+const vulns = scanner.scanImage(image);
+console.log(`Found ${vulns.length} CVEs in image layers:`);
+vulns.forEach((v) =>
+  console.log(`  ${v.cve} (${v.severity}) — ${v.package} → fix: ${v.fixVersion}`)
+);
+
+// Run configuration audit
+const configIssues = scanner.checkConfig(image);
+console.log(`\nFound ${configIssues.length} configuration issues:`);
+configIssues.forEach((i) => console.log(`  ${i}`));
+```
+
+---
+
+## Mermaid Diagrams
+
+### Cloud Shared Responsibility Model
+
+```mermaid
+flowchart TD
+    subgraph IaaS["IaaS (e.g., AWS EC2)"]
+        direction LR
+        C1["<b>Customer Manages:</b><br/>Applications<br/>Data<br/>Runtime<br/>OS patches<br/>Firewall rules"]
+        P1["<b>Provider Manages:</b><br/>Hypervisor<br/>Physical servers<br/>Network infra<br/>Datacenter HVAC"]
+    end
+    subgraph PaaS["PaaS (e.g., AWS RDS)"]
+        direction LR
+        C2["<b>Customer Manages:</b><br/>Application code<br/>Data<br/>Access policies<br/>Schema design"]
+        P2["<b>Provider Manages:</b><br/>OS updates<br/>Runtime engine<br/>Middleware<br/>Hardware"]
+    end
+    subgraph SaaS["SaaS (e.g., Salesforce)"]
+        direction LR
+        C3["<b>Customer Manages:</b><br/>User access<br/>Data classification<br/>Configuration"]
+        P3["<b>Provider Manages:</b><br/>Application code<br/>Platform security<br/>Infrastructure<br/>Compliance"]
+    end
+```
+
+### Mobile App Sandbox Architecture
+
+```mermaid
+flowchart TD
+    subgraph iOS["iOS Security Model"]
+        App1_iOS["App A<br/><i>Sandboxed</i>"] -->|"Seatbelt Profile"| iOS_Kernel["XNU Kernel<br/>+ AMFI"]
+        App2_iOS["App B<br/><i>Sandboxed</i>"] -->|"Seatbelt Profile"| iOS_Kernel
+        iOS_Kernel -->|"Entitlement Check"| SecureEnclave["Secure Enclave<br/>(Crypto/Key ops)"]
+        iOS_Kernel -->|"Code Signing"| CodeSign["Code Signing<br/>Validator"]
+    end
+    subgraph Android["Android Security Model"]
+        App1_Android["App A<br/><i>SELinux Context</i>"] -->|"MAC Policy"| LinuxKernel["Linux Kernel<br/>+ SELinux"]
+        App2_Android["App B<br/><i>SELinux Context</i>"] -->|"MAC Policy"| LinuxKernel
+        LinuxKernel -->|"Permission Check"| PermissionMgr["Permission Manager"]
+        LinuxKernel -->|"UID Isolation"| UIDIsolation["UID-based<br/>Sandboxing"]
+    end
+    subgraph IPC["Inter-Process Communication"]
+        IPC_Restrict["<b>Restricted by design:</b><br/>• iOS: XPC services only<br/>• Android: Binder with permission checks<br/>• No shared memory between apps"]
+    end
+    iOS_Kernel -.-> IPC_Restrict
+    LinuxKernel -.-> IPC_Restrict
+```
 
 ---
 

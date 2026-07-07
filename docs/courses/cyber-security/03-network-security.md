@@ -3398,6 +3398,459 @@ tshark -r capture.pcap -Y "dns.qry.name" -T fields -e dns.qry.name | awk '{print
 
 ---
 
+## TypeScript Implementations
+
+### 1. Firewall Rule Analyzer
+
+The following TypeScript class implements a firewall rule analyzer that identifies security misconfigurations including shadowed rules, overly permissive rules, and duplicate entries.
+
+```typescript
+interface FirewallRule {
+  sourceIp: string;
+  destIp: string;
+  destPort: number;
+  protocol: 'tcp' | 'udp';
+  action: 'allow' | 'deny';
+}
+
+class FirewallAnalyzer {
+  private rules: FirewallRule[];
+
+  constructor(rules: FirewallRule[]) {
+    this.rules = rules;
+  }
+
+  analyze(): {
+    openPorts: Set<string>;
+    shadowedRules: FirewallRule[];
+    overlyPermissive: FirewallRule[];
+    recommendations: string[];
+  } {
+    const openPorts = new Set<string>();
+    const shadowedRules: FirewallRule[] = [];
+    const overlyPermissive: FirewallRule[] = [];
+    const recommendations: string[] = [];
+
+    // Check for overly permissive any-any-allow rules
+    for (const rule of this.rules) {
+      if (rule.sourceIp === '0.0.0.0/0' && rule.destIp === '0.0.0.0/0' && rule.action === 'allow') {
+        overlyPermissive.push(rule);
+        recommendations.push(
+          `Rule allowing any source to any destination on port ${rule.destPort}/${rule.protocol} is overly permissive. ` +
+          `Consider restricting to specific source/destination ranges.`
+        );
+      }
+    }
+
+    // Collect all allowed ports
+    const allowedRules = this.rules.filter(r => r.action === 'allow');
+    for (const rule of allowedRules) {
+      openPorts.add(`${rule.destPort}/${rule.protocol.toUpperCase()}`);
+    }
+
+    // Detect shadowed rules: a deny rule placed after a broader allow is never evaluated
+    for (let i = 0; i < this.rules.length; i++) {
+      for (let j = i + 1; j < this.rules.length; j++) {
+        if (this.rules[i].action === 'allow' && this.rules[j].action === 'deny') {
+          if (this.isSupersetOrEqual(this.rules[i], this.rules[j])) {
+            shadowedRules.push(this.rules[j]);
+            recommendations.push(
+              `Rule #${j + 1} (deny) is shadowed by earlier rule #${i + 1} (allow). ` +
+              `Reorder or remove the shadowed rule to ensure intended policy.`
+            );
+          }
+        }
+      }
+    }
+
+    // Identify duplicate (redundant) rules
+    const seen = new Set<string>();
+    for (let i = 0; i < this.rules.length; i++) {
+      const key = `${this.rules[i].sourceIp}|${this.rules[i].destIp}|${this.rules[i].destPort}|${this.rules[i].protocol}|${this.rules[i].action}`;
+      if (seen.has(key)) {
+        recommendations.push(`Rule #${i + 1} is a duplicate of an earlier rule — consider removing it.`);
+      }
+      seen.add(key);
+    }
+
+    return { openPorts, shadowedRules, overlyPermissive, recommendations };
+  }
+
+  private isSupersetOrEqual(a: FirewallRule, b: FirewallRule): boolean {
+    if (a.protocol !== b.protocol) return false;
+    if (a.destPort !== b.destPort) return false;
+    // If rule a has a broader source than rule b, it shadows it
+    return a.sourceIp === '0.0.0.0/0' || a.sourceIp === b.sourceIp;
+  }
+}
+
+// Example usage
+const rules: FirewallRule[] = [
+  { sourceIp: '0.0.0.0/0', destIp: '10.0.1.10', destPort: 80, protocol: 'tcp', action: 'allow' },
+  { sourceIp: '0.0.0.0/0', destIp: '0.0.0.0/0', destPort: 80, protocol: 'tcp', action: 'allow' },
+  { sourceIp: '10.0.1.0/24', destIp: '10.0.2.10', destPort: 22, protocol: 'tcp', action: 'deny' },
+  { sourceIp: '0.0.0.0/0', destIp: '10.0.2.10', destPort: 22, protocol: 'tcp', action: 'deny' },
+  { sourceIp: '0.0.0.0/0', destIp: '10.0.2.10', destPort: 22, protocol: 'tcp', action: 'deny' },
+];
+
+const analyzer = new FirewallAnalyzer(rules);
+const result = analyzer.analyze();
+
+console.log('Open ports:', [...result.openPorts].join(', '));
+console.log('Shadowed rules:', result.shadowedRules.length);
+console.log('Overly permissive rules:', result.overlyPermissive.length);
+console.log('Recommendations:');
+result.recommendations.forEach(r => console.log(`  • ${r}`));
+```
+
+### 2. IDS/IPS Rule Engine
+
+This TypeScript engine simulates an intrusion detection/prevention system with rules for SYN flood detection, port scan detection, and SQL injection detection in packet payloads.
+
+```typescript
+interface Packet {
+  sourceIp: string;
+  destIp: string;
+  sourcePort: number;
+  destPort: number;
+  protocol: string;
+  payload: string;
+  flags: string[];
+}
+
+interface IDSRule {
+  id: string;
+  signature: string;
+  severity: 'low' | 'medium' | 'high' | 'critical';
+  action: 'alert' | 'block' | 'log';
+}
+
+interface Alert {
+  ruleId: string;
+  signature: string;
+  severity: string;
+  action: string;
+  sourceIp: string;
+  destIp: string;
+  timestamp: Date;
+  description: string;
+}
+
+class IDSEngine {
+  private rules: IDSRule[];
+  private connectionTracker: Map<string, number> = new Map();
+  private synCounts: Map<string, number> = new Map();
+
+  constructor(rules: IDSRule[]) {
+    this.rules = rules;
+  }
+
+  matchRules(packets: Packet[]): Alert[] {
+    const alerts: Alert[] = [];
+
+    for (const packet of packets) {
+      for (const rule of this.rules) {
+        const alert = this.evaluateRule(packet, rule);
+        if (alert) {
+          alerts.push(alert);
+          if (rule.action === 'block') {
+            console.log(`[BLOCKED] Packet from ${packet.sourceIp} matched rule ${rule.id}`);
+          }
+        }
+      }
+    }
+    return alerts;
+  }
+
+  private evaluateRule(packet: Packet, rule: IDSRule): Alert | null {
+    switch (rule.signature) {
+      case 'SYN_FLOOD': {
+        if (packet.flags.includes('SYN') && !packet.flags.includes('ACK')) {
+          const count = (this.synCounts.get(packet.sourceIp) || 0) + 1;
+          this.synCounts.set(packet.sourceIp, count);
+          if (count > 100) {
+            return {
+              ruleId: rule.id,
+              signature: rule.signature,
+              severity: rule.severity,
+              action: rule.action,
+              sourceIp: packet.sourceIp,
+              destIp: packet.destIp,
+              timestamp: new Date(),
+              description: `SYN flood suspected: ${count}+ SYNs from ${packet.sourceIp} (threshold: 100)`,
+            };
+          }
+        }
+        break;
+      }
+
+      case 'PORT_SCAN': {
+        const key = `${packet.sourceIp}→${packet.destIp}`;
+        const count = (this.connectionTracker.get(key) || 0) + 1;
+        this.connectionTracker.set(key, count);
+        if (count > 50) {
+          return {
+            ruleId: rule.id,
+            signature: rule.signature,
+            severity: rule.severity,
+            action: rule.action,
+            sourceIp: packet.sourceIp,
+            destIp: packet.destIp,
+            timestamp: new Date(),
+            description: `Port scan detected: ${count} connections from ${packet.sourceIp} to ${packet.destIp}`,
+          };
+        }
+        break;
+      }
+
+      case 'SQL_INJECTION': {
+        const sqlPatterns = [
+          /(\bUNION\b.*\bSELECT\b)/i,
+          /(\bSELECT\b.*\bFROM\b)/i,
+          /(\bDROP\b.*\bTABLE\b)/i,
+          /('|--|\bOR\b.*=.*\bOR\b)/i,
+          /(\bINSERT\b.*\bINTO\b)/i,
+          /(\bEXEC\b|\bXP_\b)/i,
+          /(\bWAITFOR\b.*\bDELAY\b)/i,
+          /('.+')/,
+        ];
+        for (const pattern of sqlPatterns) {
+          if (pattern.test(packet.payload)) {
+            return {
+              ruleId: rule.id,
+              signature: rule.signature,
+              severity: rule.severity,
+              action: rule.action,
+              sourceIp: packet.sourceIp,
+              destIp: packet.destIp,
+              timestamp: new Date(),
+              description: `SQL injection signature matched in payload from ${packet.sourceIp}: ${pattern}`,
+            };
+          }
+        }
+        break;
+      }
+    }
+
+    return null;
+  }
+}
+
+// Example usage
+const rules: IDSRule[] = [
+  { id: 'R001', signature: 'SYN_FLOOD', severity: 'critical', action: 'block' },
+  { id: 'R002', signature: 'PORT_SCAN', severity: 'high', action: 'alert' },
+  { id: 'R003', signature: 'SQL_INJECTION', severity: 'critical', action: 'block' },
+];
+
+const engine = new IDSEngine(rules);
+
+const testPackets: Packet[] = [
+  // SYN flood simulation: 101 SYN packets from same source
+  ...Array.from({ length: 101 }, (_, i) => ({
+    sourceIp: '10.0.0.5',
+    destIp: '192.168.1.1',
+    sourcePort: 40000 + i,
+    destPort: 80,
+    protocol: 'TCP',
+    payload: '',
+    flags: ['SYN'],
+  })),
+  // SQL injection attempt
+  {
+    sourceIp: '10.0.0.99',
+    destIp: '192.168.1.10',
+    sourcePort: 54321,
+    destPort: 443,
+    protocol: 'TCP',
+    payload: "SELECT * FROM users WHERE username = 'admin' OR '1'='1'",
+    flags: ['PSH', 'ACK'],
+  },
+];
+
+const alerts = engine.matchRules(testPackets);
+console.log(`Total alerts generated: ${alerts.length}`);
+alerts.forEach(a => console.log(`  [${a.severity}] ${a.description} → action: ${a.action}`));
+```
+
+---
+
+## Mermaid Diagrams
+
+### 1. Firewall Architecture — DMZ with Layered Defense
+
+The diagram below illustrates a typical enterprise firewall architecture with a perimeter firewall, DMZ segment, internal firewall, and management network. Traffic flows from the external internet through multiple inspection layers before reaching sensitive internal resources.
+
+```mermaid
+flowchart TB
+    subgraph Internet["🌐 External Network (Internet)"]
+        A1[Attacker]
+        A2[Legitimate User]
+    end
+
+    subgraph Perimeter["🛡️ Perimeter Security"]
+        LB[Load Balancer]
+        WAF[WAF - Web Application Firewall]
+        NGFW[Next-Gen Firewall / IPS]
+        IDS[IDS/IPS Sensor]
+    end
+
+    subgraph DMZ["🏗️ DMZ - Demilitarized Zone"]
+        WEB[Web Servers :80/:443]
+        EMAIL[Email Gateway :25/:587]
+        DNS[DNS Server :53]
+    end
+
+    subgraph Internal["🔒 Internal Network"]
+        FW2[Internal Firewall / Zone Gateway]
+        DB[(Database Servers)]
+        APP[Application Servers]
+        DC[Domain Controller / LDAP]
+    end
+
+    subgraph Management["⚙️ Management & Monitoring"]
+        SIEM[SIEM / Log Collector]
+        NAC[Network Access Control]
+        PATCH[Patch Management Server]
+    end
+
+    Internet --> LB
+    LB --> WAF
+    WAF --> NGFW
+    NGFW --> IDS
+    IDS --> DMZ
+    DMZ --> FW2
+    FW2 --> Internal
+    Internal -.->|Logs & Telemetry| SIEM
+    Management -.->|Policy Mgmt| NGFW
+    Management -.->|Policy Mgmt| FW2
+    NAC -.->|Endpoint Compliance| FW2
+
+    style Internet fill:#ffcccc
+    style Perimeter fill:#ffe0cc
+    style DMZ fill:#ccffcc
+    style Internal fill:#ccccff
+    style Management fill:#ffccff
+```
+
+### 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode
+
+This sequence diagram details the two-phase IPSec tunnel establishment process. Phase 1 (Main Mode) sets up a secure ISAKMP control channel using Diffie-Hellman key exchange. Phase 2 (Quick Mode) negotiates the actual IPSec security associations for data protection.
+
+```mermaid
+sequenceDiagram
+    participant Client as VPN Client
+    participant GW as VPN Gateway
+    participant SA as SA Manager
+
+    Note over Client,SA: IKE Phase 1 — Main Mode (ISAKMP SA)
+
+    Client->>GW: ① SA Proposal (Encryption, Hash, DH Group, Auth Method)
+    GW-->>Client: ② Selected Cipher Suite (accepted proposal)
+    Client->>GW: ③ DH Public Value (g^xa mod p)
+    GW-->>Client: ④ DH Public Value (g^xb mod p)
+    Note over Client,GW: Shared Key Material = g^(xa·xb) mod p
+
+    Client->>GW: ⑤ Encrypted ID + Nonce + Proof of Identity
+    GW-->>Client: ⑥ Encrypted ID + Nonce + Proof of Identity
+    Note over Client,GW: ✔ IKE Phase 1 Complete → ISAKMP SA (encrypted control channel)
+
+    Note over Client,SA: IKE Phase 2 — Quick Mode (IPSec SA)
+
+    Client->>GW: ⑦ IPSec Proposal + SPI + Traffic Selectors
+    GW-->>Client: ⑧ Accepted IPSec Proposal + Nonce + SPI
+    Client->>GW: ⑨ Confirm + Fresh Keying Material
+    Note over Client,GW: ✔ IPSec SA Established → Encrypted Data Tunnel
+
+    Note over Client,GW: 🔒 Secure Data Transfer via ESP in Tunnel Mode
+
+    Client->>GW: Encrypted Inner IP Packet (ESP Payload)
+    GW-->>Client: Encrypted Inner IP Packet (ESP Payload)
+```
+
+---
+
+## Chapter Quiz
+
+Test your understanding of network security concepts covered in this chapter.
+
+1. **Which firewall type maintains a state table tracking TCP handshake states and only allows packets belonging to established connections?**
+   - A) Packet filter firewall
+   - B) Stateful firewall
+   - C) Proxy firewall
+   - D) Web application firewall (WAF)
+
+2. **What is the primary functional difference between an IDS and an IPS?**
+   - A) IDS is passive (monitors and alerts), IPS is inline (can actively block)
+   - B) IDS is faster than IPS
+   - C) IPS only works at Layer 7
+   - D) IDS requires signatures, IPS uses anomaly detection
+
+3. **In a DMZ network architecture, publicly accessible servers should be placed:**
+   - A) On the internal trusted network behind a single firewall
+   - B) In a separate network segment isolated between two firewalls
+   - C) On the same broadcast domain as client workstations
+   - D) Directly on the internet with host-based firewalls only
+
+4. **Which IDS detection method builds a statistical baseline of normal traffic and flags deviations?**
+   - A) Signature-based detection
+   - B) Anomaly-based detection
+   - C) Stateful protocol analysis
+   - D) Heuristic analysis
+
+5. **In IPSec VPN, what is the purpose of IKE Phase 1?**
+   - A) Establish the IPSec SA for encrypting user data
+   - B) Establish a secure ISAKMP control channel (authenticated DH key exchange)
+   - C) Authenticate individual users via RADIUS
+   - D) Negotiate compression algorithms
+
+6. **Which wireless security standard replaces WPA2's PSK with Simultaneous Authentication of Equals (SAE), providing forward secrecy?**
+   - A) WEP
+   - B) WPA2-TKIP
+   - C) WPA3
+   - D) 802.11i
+
+7. **A SYN flood attack exploits which aspect of the TCP protocol?**
+   - A) The three-way handshake — the server allocates resources before the handshake completes
+   - B) Window size negotiation consuming excessive memory
+   - C) Sequence number randomization delays processing
+   - D) Congestion control algorithm retransmission timers
+
+8. **Which attack involves an attacker sending forged ARP messages to associate their MAC address with a legitimate IP address?**
+   - A) DNS cache poisoning
+   - B) ARP spoofing (ARP cache poisoning)
+   - C) DHCP starvation
+   - D) MAC flooding (CAM table overflow)
+
+9. **Network segmentation using VLANs primarily provides:**
+   - A) Encryption of inter-VLAN traffic
+   - B) Logical isolation of broadcast domains at Layer 2
+   - C) Automatic load balancing between subnets
+   - D) Transparent failover for critical network paths
+
+10. **Which switch security feature validates ARP packets against a trusted DHCP binding database to prevent ARP spoofing?**
+    - A) Port security with sticky MAC
+    - B) Dynamic ARP Inspection (DAI)
+    - C) VLAN trunking (802.1Q)
+    - D) Spanning Tree Protocol (STP) BPDU Guard
+
+<details>
+<summary>Answers</summary>
+
+1. **B** — Stateful firewall tracks connection state (SYN → SYN-ACK → ACK) and only permits packets matching established sessions.
+2. **A** — IDS receives a copy of traffic (passive), IPS sits inline and can drop malicious packets.
+3. **B** — DMZ sits between the perimeter firewall and internal firewall, isolating public servers.
+4. **B** — Anomaly detection uses machine learning/statistics to model normal behavior and detect outliers.
+5. **B** — IKE Phase 1 establishes the ISAKMP SA (authenticated encrypted channel for control traffic).
+6. **C** — WPA3 uses SAE (Dragonfly handshake) instead of pre-shared key, providing forward secrecy.
+7. **A** — The server creates a TCB entry upon receiving SYN; a flood of SYNs exhausts this memory.
+8. **B** — ARP spoofing poisons the victim's ARP cache, enabling MITM at Layer 2.
+9. **B** — VLANs segment broadcast domains; inter-VLAN traffic requires a Layer 3 device.
+10. **B** — DAI intercepts ARP packets and validates them against the DHCP snooping binding table.
+</details>
+
+---
+
 ## Chapter 3 Final Summary
 
 **Core Security Principles:**

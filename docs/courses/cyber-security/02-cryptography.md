@@ -2498,6 +2498,491 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 17. **Formal Verification of Crypto:** Research projects that use formal methods to verify cryptographic implementations (e.g., EverCrypt, HACL*, AWS s2n-quic). How does formal verification differ from traditional testing? What classes of bugs does it catch?
 
+## TypeScript Implementations
+
+### TypeScript Example #1: AES-256-GCM Encryption Utility
+
+```typescript
+/**
+ * AesEncryption — AES-256-GCM encryption utility.
+ * Uses Node.js native crypto module.
+ * Provides encrypt/decrypt with PBKDF2 key derivation.
+ */
+
+import * as crypto from 'crypto';
+
+interface EncryptionResult {
+  ciphertext: string;   // hex-encoded
+  iv: string;           // hex-encoded
+  tag: string;          // hex-encoded authentication tag
+  salt: string;         // hex-encoded PBKDF2 salt
+}
+
+interface EncryptionInput {
+  plaintext: string;
+  password: string;
+  aad?: string;         // Additional authenticated data (optional)
+}
+
+class AesEncryption {
+  private readonly algorithm = 'aes-256-gcm';
+  private readonly keyLength = 32;   // 256 bits
+  private readonly ivLength = 12;    // 96 bits (recommended for GCM)
+  private readonly tagLength = 16;   // 128 bits
+  private readonly saltLength = 32;  // 256 bits
+  private readonly pbkdf2Iterations = 600_000;
+  private readonly digest = 'sha512';
+
+  /**
+   * Derives a 256-bit key from a password using PBKDF2.
+   */
+  private deriveKey(password: string, salt: Buffer): Buffer {
+    return crypto.pbkdf2Sync(
+      password,
+      salt,
+      this.pbkdf2Iterations,
+      this.keyLength,
+      this.digest,
+    );
+  }
+
+  /**
+   * Encrypts plaintext using AES-256-GCM.
+   * Returns ciphertext, IV, authentication tag, and PBKDF2 salt — all hex-encoded.
+   */
+  encrypt(input: EncryptionInput): EncryptionResult {
+    const salt = crypto.randomBytes(this.saltLength);
+    const key = this.deriveKey(input.password, salt);
+    const iv = crypto.randomBytes(this.ivLength);
+
+    const cipher = crypto.createCipheriv(this.algorithm, key, iv, {
+      authTagLength: this.tagLength,
+    });
+
+    if (input.aad) {
+      cipher.setAAD(Buffer.from(input.aad, 'utf8'));
+    }
+
+    const ciphertextParts: Buffer[] = [];
+    ciphertextParts.push(cipher.update(Buffer.from(input.plaintext, 'utf8')));
+    ciphertextParts.push(cipher.final());
+
+    const ciphertext = Buffer.concat(ciphertextParts);
+    const tag = cipher.getAuthTag();
+
+    return {
+      ciphertext: ciphertext.toString('hex'),
+      iv: iv.toString('hex'),
+      tag: tag.toString('hex'),
+      salt: salt.toString('hex'),
+    };
+  }
+
+  /**
+   * Decrypts ciphertext that was encrypted with encrypt().
+   * Throws on authentication failure (tampered ciphertext or wrong key).
+   */
+  decrypt(
+    ciphertextHex: string,
+    password: string,
+    ivHex: string,
+    tagHex: string,
+    saltHex: string,
+    aad?: string,
+  ): string {
+    const ciphertext = Buffer.from(ciphertextHex, 'hex');
+    const iv = Buffer.from(ivHex, 'hex');
+    const tag = Buffer.from(tagHex, 'hex');
+    const salt = Buffer.from(saltHex, 'hex');
+
+    const key = this.deriveKey(password, salt);
+
+    const decipher = crypto.createDecipheriv(this.algorithm, key, iv, {
+      authTagLength: this.tagLength,
+    });
+    decipher.setAuthTag(tag);
+
+    if (aad) {
+      decipher.setAAD(Buffer.from(aad, 'utf8'));
+    }
+
+    const plaintextParts: Buffer[] = [];
+    plaintextParts.push(decipher.update(ciphertext));
+    plaintextParts.push(decipher.final()); // throws if tag verification fails
+
+    return Buffer.concat(plaintextParts).toString('utf8');
+  }
+
+  /**
+   * Convenience: generates a random 256-bit key for direct use (no PBKDF2).
+   */
+  static generateRandomKey(): string {
+    return crypto.randomBytes(32).toString('hex');
+  }
+}
+
+// Example usage
+async function runAesExample(): Promise<void> {
+  const aes = new AesEncryption();
+  const secret = 'This is a top-secret message!';
+  const password = 'MyStrongP@ssw0rd!';
+  const aad = 'session-abc123';
+
+  console.log('=== AES-256-GCM Encryption Demo ===\n');
+
+  // Encrypt
+  const encrypted = aes.encrypt({ plaintext: secret, password, aad });
+  console.log('Ciphertext (hex):', encrypted.ciphertext.substring(0, 48) + '...');
+  console.log('IV (hex):', encrypted.iv);
+  console.log('Tag (hex):', encrypted.tag);
+  console.log('Salt (hex):', encrypted.salt);
+
+  // Decrypt successfully
+  const decrypted = aes.decrypt(
+    encrypted.ciphertext,
+    password,
+    encrypted.iv,
+    encrypted.tag,
+    encrypted.salt,
+    aad,
+  );
+  console.log('\nDecrypted:', decrypted);
+  console.log('Match:', secret === decrypted);
+
+  // Tamper test — verify GCM authentication catches modifications
+  try {
+    const tamperedCiphertext = encrypted.ciphertext.substring(0, encrypted.ciphertext.length - 2) + '00';
+    aes.decrypt(tamperedCiphertext, password, encrypted.iv, encrypted.tag, encrypted.salt, aad);
+    console.log('Tamper detection: FAILED');
+  } catch {
+    console.log('Tamper detection: PASSED (GCM authentication caught modification)');
+  }
+}
+
+runAesExample().catch(console.error);
+```
+
+### TypeScript Example #2: RSA Digital Signature
+
+```typescript
+/**
+ * DigitalSignature — RSA-based digital signature utility.
+ * Uses Node.js native crypto module.
+ * Implements key generation, signing (RSASSA-PKCS1-v1_5 with SHA-256), and verification.
+ */
+
+import * as crypto from 'node:crypto';
+
+interface KeyPair {
+  publicKey: string;   // PEM-encoded
+  privateKey: string;  // PEM-encoded
+}
+
+class DigitalSignature {
+  private readonly modulusLength = 4096;
+  private readonly signatureAlgorithm = 'sha256WithRSAEncryption';
+  private readonly hashAlgorithm = 'sha256';
+
+  /**
+   * Generates an RSA-4096 key pair and returns PEM-encoded public and private keys.
+   */
+  generateKeyPair(): KeyPair {
+    const { publicKey, privateKey } = crypto.generateKeyPairSync('rsa', {
+      modulusLength: this.modulusLength,
+      publicKeyEncoding: {
+        type: 'spki',
+        format: 'pem',
+      },
+      privateKeyEncoding: {
+        type: 'pkcs8',
+        format: 'pem',
+      },
+    });
+
+    return { publicKey, privateKey };
+  }
+
+  /**
+   * Signs arbitrary data using the private key.
+   * Internally hashes the data with SHA-256 before signing.
+   * Returns the signature as a base64-encoded string.
+   */
+  sign(data: string, privateKeyPem: string): string {
+    const signer = crypto.createSign(this.signatureAlgorithm);
+    signer.update(data, 'utf8');
+    signer.end();
+
+    const signature = signer.sign(privateKeyPem);
+    return signature.toString('base64');
+  }
+
+  /**
+   * Verifies a signature against the original data and public key.
+   * Returns true if the signature is valid, false otherwise.
+   */
+  verify(data: string, signatureBase64: string, publicKeyPem: string): boolean {
+    const verifier = crypto.createVerify(this.signatureAlgorithm);
+    verifier.update(data, 'utf8');
+    verifier.end();
+
+    const signature = Buffer.from(signatureBase64, 'base64');
+    return verifier.verify(publicKeyPem, signature);
+  }
+
+  /**
+   * Signs a file's content by computing a hash and signing it.
+   * Useful for code signing and software distribution.
+   */
+  signFile(fileContent: Buffer, privateKeyPem: string): { hash: string; signature: string } {
+    const hash = crypto.createHash(this.hashAlgorithm).update(fileContent).digest('hex');
+    const signature = this.sign(hash, privateKeyPem);
+    return { hash, signature };
+  }
+
+  /**
+   * Verifies a file's signature against its content and the public key.
+   */
+  verifyFile(fileContent: Buffer, signatureBase64: string, publicKeyPem: string): boolean {
+    const hash = crypto.createHash(this.hashAlgorithm).update(fileContent).digest('hex');
+    return this.verify(hash, signatureBase64, publicKeyPem);
+  }
+}
+
+// Example usage
+function runSignatureDemo(): void {
+  const dsa = new DigitalSignature();
+
+  console.log('=== RSA Digital Signature Demo ===\n');
+
+  // 1. Generate key pair
+  const keys = dsa.generateKeyPair();
+  console.log('Public key (first 64 chars):', keys.publicKey.substring(0, 64) + '...');
+  console.log('Private key (first 64 chars):', keys.privateKey.substring(0, 64) + '...\n');
+
+  // 2. Sign a message
+  const message = 'This contract is legally binding. Agreed on 2026-07-07.';
+  const signature = dsa.sign(message, keys.privateKey);
+  console.log('Message:', message);
+  console.log('Signature (base64):', signature.substring(0, 64) + '...\n');
+
+  // 3. Verify with correct key
+  const isValid = dsa.verify(message, signature, keys.publicKey);
+  console.log('Verification (correct key):', isValid ? '✅ PASSED' : '❌ FAILED');
+
+  // 4. Verify with tampered message
+  const tamperedMessage = 'This contract is legally binding. Agreed on 2025-01-01.';
+  const isTamperedValid = dsa.verify(tamperedMessage, signature, keys.publicKey);
+  console.log('Verification (tampered message):', isTamperedValid ? '❌ FAILED' : '✅ PASSED (tampering detected)');
+
+  // 5. Verify with wrong key
+  const wrongKeys = dsa.generateKeyPair();
+  const isWrongKeyValid = dsa.verify(message, signature, wrongKeys.publicKey);
+  console.log('Verification (wrong key):', isWrongKeyValid ? '❌ FAILED' : '✅ PASSED (wrong key rejected)');
+
+  // 6. File signing demo
+  const fileContent = Buffer.from('#!/usr/bin/env node\nconsole.log("Hello, World!");');
+  const fileSig = dsa.signFile(fileContent, keys.privateKey);
+  console.log('\nFile hash:', fileSig.hash);
+
+  const fileValid = dsa.verifyFile(fileContent, fileSig.signature, keys.publicKey);
+  console.log('File signature valid:', fileValid);
+}
+
+runSignatureDemo();
+```
+
+---
+
+## Mermaid Diagrams
+
+### TLS 1.3 Handshake Sequence
+
+The following sequence diagram illustrates the TLS 1.3 full handshake, achieving a 1-RTT connection with forward secrecy via ephemeral Diffie-Hellman key exchange.
+
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant S as Server
+
+    C->>S: ClientHello (TLS 1.3, key_share, supported_groups, ciphers)
+    Note over C,S: Client sends its ephemeral key share + supported parameters
+
+    S->>C: ServerHello (selected ciphers, key_share)
+    S->>C: EncryptedExtensions
+    S->>C: Certificate (X.509 chain)
+    S->>C: CertificateVerify (signature over handshake transcript)
+    S->>C: Finished (HMAC over handshake)
+    Note over S,C: Server proves possession of private key
+
+    C->>S: Finished (HMAC over handshake)
+    Note over C,S: Client confirms handshake integrity
+
+    C->>S: Application Data (encrypted with handshake traffic secret)
+    S->>C: Application Data (encrypted with handshake traffic secret)
+    Note over C,S: 0-RTT possible if resuming session
+
+    rect rgb(200, 230, 201)
+        Note over C,S: 1-RTT Handshake Complete
+    end
+```
+
+### PKI Certificate Chain
+
+This flowchart shows the X.509 certificate hierarchy from Root CA through Intermediate CAs to the end-entity server certificate, along with the validation checks performed during TLS certificate verification.
+
+```mermaid
+flowchart LR
+    subgraph CA_Hierarchy["Certificate Authority Hierarchy"]
+        RCA[Root CA] --> ICA[Intermediate CA 1]
+        ICA --> ICA2[Intermediate CA 2]
+        ICA2 --> SC[Server Certificate]
+    end
+
+    subgraph Validation["Certificate Validation Flow"]
+        direction LR
+        SC -->|Check issuer| ICA2
+        ICA2 -->|Check issuer| ICA
+        ICA -->|Check issuer| RCA
+        RCA -->|Self-signed trust anchor| Trust[Trusted Root Store]
+    end
+
+    subgraph Checks["Validation Checks"]
+        Sig[Signature Verification] --> Exp[Expiry Check]
+        Exp --> Rev[Revocation Check]
+        Rev --> Domain[Domain Match]
+    end
+
+    SC -.->|subjectAltName| Domain
+    RCA -.->|built-in| Trust
+
+    style RCA fill:#fff9c4,stroke:#f57f17,color:#000
+    style ICA fill:#ffecb3,stroke:#ff8f00,color:#000
+    style ICA2 fill:#ffe082,stroke:#ff6f00,color:#000
+    style SC fill:#c8e6c9,stroke:#2e7d32,color:#000
+    style Trust fill:#e1f5fe,stroke:#0277bd,color:#000
+```
+
+---
+
+## Summary
+
+- **Symmetric encryption** (AES, ChaCha20) uses a single shared key for both encryption and decryption. It is fast and suitable for bulk data encryption. AES-256-GCM provides both confidentiality and authentication in a single mode.
+- **Asymmetric encryption** (RSA, ECC, Diffie-Hellman) uses a public-private key pair. It solves the key distribution problem but is computationally expensive. Typically used for key exchange and digital signatures in hybrid cryptosystems.
+- **Hash functions** (SHA-256, SHA-3, BLAKE2) are one-way functions that produce fixed-size digests. They provide integrity verification and are fundamental to password storage, digital signatures, and blockchain. Essential properties: preimage resistance, second-preimage resistance, and collision resistance.
+- **HMAC** (Hash-Based Message Authentication Code) combines a secret key with a hash function to provide both integrity and authenticity. It is widely used in API authentication (AWS SigV4) and JWT tokens.
+- **Digital signatures** provide non-repudiation by binding a signer's identity to a message. The signer uses their private key to sign, and anyone with the corresponding public key can verify. RSA-PSS and Ed25519 are the most common modern schemes.
+- **Public Key Infrastructure (PKI)** establishes trust through a hierarchy of Certificate Authorities (CAs). X.509 certificates bind public keys to identities. Certificate chains enable trust delegation from root CAs to end-entity certificates, validated through signature verification, expiry checks, and revocation status.
+- **TLS 1.3** is the current standard for secure communication on the web. It achieves a 1-RTT handshake (or 0-RTT for resumed sessions), mandates forward secrecy via ephemeral Diffie-Hellman, and removes insecure legacy algorithms.
+- **Key management** is the hardest part of cryptography. Best practices include: using hardware security modules (HSMs) for critical keys, rotating keys regularly, separating encryption keys from data, and deriving keys from passwords using KDFs (PBKDF2, Argon2id, HKDF).
+- **Common cryptographic attacks** include: padding oracle attacks (POODLE), length extension attacks (SHA-1/MD5), collision attacks (SHAttered), downgrade attacks (Logjam, FREAK), and side-channel attacks (timing, power analysis). Mitigation requires using modern algorithms with constant-time implementations.
+- **Post-quantum cryptography** is preparing for the threat of quantum computers breaking RSA and ECC. NIST has standardized CRYSTALS-Kyber (KEM) and CRYSTALS-Dilithium (signatures). Hybrid schemes combining traditional and PQC algorithms are recommended for forward compatibility.
+
+---
+
+## Chapter Quiz
+
+Test your understanding of cryptography concepts with these 10 multiple-choice questions.
+
+### Question 1
+What is the primary advantage of asymmetric encryption over symmetric encryption?
+
+A. It is faster for bulk data encryption
+B. It solves the key distribution problem
+C. It requires less computational power
+D. It produces shorter ciphertexts
+
+<details><summary>Answer</summary>**B. It solves the key distribution problem** — Asymmetric encryption uses a public/private key pair, eliminating the need to securely share a single secret key. Symmetric encryption requires both parties to have the same key, which is difficult to distribute securely.</details>
+
+### Question 2
+Which AES mode provides both confidentiality and authentication (authenticated encryption)?
+
+A. ECB
+B. CBC
+C. GCM
+D. CTR
+
+<details><summary>Answer</summary>**C. GCM (Galois/Counter Mode)** — GCM combines CTR mode encryption with GMAC authentication, providing both confidentiality and integrity in a single operation. ECB and CBC require separate MACs for authentication.</details>
+
+### Question 3
+Which property of a cryptographic hash function is exploited by a birthday attack?
+
+A. Preimage resistance
+B. Second-preimage resistance
+C. Collision resistance
+D. Determinism
+
+<details><summary>Answer</summary>**C. Collision resistance** — A birthday attack exploits the birthday paradox to find two different inputs that produce the same hash output (a collision). Collision resistance makes this computationally infeasible. The attack requires only 2^(n/2) operations for an n-bit hash.</details>
+
+### Question 4
+In TLS 1.3, what mechanism provides forward secrecy?
+
+A. RSA key exchange
+B. Static Diffie-Hellman
+C. Ephemeral Diffie-Hellman (ECDHE)
+D. Pre-shared keys only
+
+<details><summary>Answer</summary>**C. Ephemeral Diffie-Hellman (ECDHE)** — ECDHE generates fresh key pairs for each session, ensuring that compromise of long-term keys cannot decrypt past sessions. TLS 1.3 mandates forward secrecy by removing static RSA key exchange.</details>
+
+### Question 5
+What is the purpose of a Certificate Authority (CA) in PKI?
+
+A. To encrypt all web traffic
+B. To issue and sign digital certificates that bind identities to public keys
+C. To generate symmetric keys for TLS sessions
+D. To monitor network traffic for intrusions
+
+<details><summary>Answer</summary>**B. To issue and sign digital certificates that bind identities to public keys** — A CA acts as a trusted third party that validates an entity's identity and issues an X.509 certificate linking that entity to its public key. Browsers trust certificates signed by trusted CAs.</details>
+
+### Question 6
+Which of the following is NOT a property required of a secure cryptographic hash function?
+
+A. Preimage resistance
+B. Second-preimage resistance
+C. Reversibility (given output, compute input)
+D. Collision resistance
+
+<details><summary>Answer</summary>**C. Reversibility** — Hash functions are one-way by design; preimage resistance means it must be computationally infeasible to reverse a hash output back to its input. Reversibility would completely break hash function security.</details>
+
+### Question 7
+What is the main vulnerability that the Heartbleed attack (CVE-2014-0160) exploited?
+
+A. Weak cipher suites
+B. Buffer over-read in the TLS heartbeat extension
+C. A mathematical weakness in RSA
+D. Padding oracle vulnerability
+
+<details><summary>Answer</summary>**B. Buffer over-read in the TLS heartbeat extension** — Heartbleed was a missing bounds check in OpenSSL's heartbeat implementation that allowed attackers to read up to 64KB of server memory, potentially leaking private keys, session data, and user credentials.</details>
+
+### Question 8
+What is the difference between OCSP and OCSP stapling?
+
+A. OCSP is faster than OCSP stapling
+B. OCSP stapling has the server fetch and include the revocation status in the TLS handshake, reducing client load
+C. OCSP requires a hardware security module
+D. OCSP stapling is only used for EV certificates
+
+<details><summary>Answer</summary>**B. OCSP stapling has the server fetch and include the revocation status in the TLS handshake, reducing client load** — In OCSP stapling (RFC 6066), the server periodically fetches a signed OCSP response and "staples" it to the Certificate handshake message, eliminating the need for the client to contact the CA directly.</details>
+
+### Question 9
+Which padding scheme is the current recommended approach for RSA encryption to prevent padding oracle attacks?
+
+A. PKCS#1 v1.5
+B. OAEP (Optimal Asymmetric Encryption Padding)
+C. Zero padding
+D. SSLv3 padding
+
+<details><summary>Answer</summary>**B. OAEP (Optimal Asymmetric Encryption Padding)** — OAEP (PKCS#1 v2.x) introduces randomization and a Feistel-like structure that makes padding oracle attacks infeasible. PKCS#1 v1.5 padding is vulnerable to the Bleichenbacher attack and should not be used.</details>
+
+### Question 10
+What is the "harvest now, decrypt later" threat in the context of post-quantum cryptography?
+
+A. Attackers steal data after it is decrypted
+B. Attackers collect encrypted data today, intending to decrypt it when quantum computers become available
+C. Attackers harvest cryptographic keys from garbage bins
+D. Attackers downgrade TLS to weaker cipher suites
+
+<details><summary>Answer</summary>**B. Attackers collect encrypted data today, intending to decrypt it when quantum computers become available** — This threat motivates the adoption of post-quantum cryptography today for long-lived secrets. Data encrypted with RSA or ECC today could be stored and later decrypted by a sufficiently powerful quantum computer using Shor's algorithm.</details>
+
 ---
 
 > **Next Chapter:** Network Security → TCP/IP vulnerabilities, ARP spoofing, DoS/DDoS, Firewalls, IDS/IPS, VPNs, Wireless Security, DNS Security, Network Segmentation.

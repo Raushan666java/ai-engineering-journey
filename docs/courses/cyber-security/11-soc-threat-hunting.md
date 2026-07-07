@@ -2401,4 +2401,81 @@ curl -X POST "http://localhost:5601/api/detection_engine/rules" \
 
 ---
 
+## Mermaid Diagrams
+
+### SOC Alert Triage Workflow
+
+```mermaid
+flowchart TD
+    A[Alert Generated] --> B{Tier 1 Triage}
+    B -->|False Positive| C[Close Alert + Tune Rule]
+    B -->|Confirmed| D[Assign Severity]
+    D --> E{Critical/High?}
+    E -->|No| F[Tier 1 Handles]
+    E -->|Yes| G[Escalate to Tier 2]
+    G --> H[Deep Investigation]
+    H --> I[Containment Actions]
+    I --> J[Block IP / Isolate Host]
+    J --> K[Eradication]
+    K --> L[Recovery & Monitoring]
+    L --> M[Lessons Learned]
+    M --> N[Update Playbook]
+    F --> N
+    C --> N
+    N --> O[Alert Closed]
+```
+
+### SIEM Data Pipeline Architecture
+
+```mermaid
+flowchart LR
+    subgraph Sources[Log Sources]
+        A1[Windows EventLog]
+        A2[Linux Syslog]
+        A3[Network Flow]
+        A4[CloudTrail]
+        A5[EDR Alerts]
+    end
+
+    subgraph Collection[Collection Layer]
+        B1[Winlogbeat]
+        B2[Filebeat]
+        B3[Zeek Agent]
+        B4[AWS CloudWatch]
+        B5[CrowdStrike API]
+    end
+
+    subgraph Processing[Processing Layer]
+        C1[Kafka Queue]
+        C2[Logstash Parser]
+        C3[Normalization]
+        C4[Enrichment]
+    end
+
+    subgraph Storage[Storage & Indexing]
+        D1[Elasticsearch Cluster]
+        D2[Hot/Warm/Cold Tiers]
+    end
+
+    subgraph Analysis[Analysis & Response]
+        E1[Kibana Dashboards]
+        E2[Wazuh Alerts]
+        E3[SOAR Playbooks]
+        E4[Threat Intel Feeds]
+    end
+
+    A1 --> B1 --> C1 --> C2 --> C3 --> C4 --> D1
+    A2 --> B2 --> C1
+    A3 --> B3 --> C1
+    A4 --> B4 --> C1
+    A5 --> B5 --> C1
+    D1 --> D2 --> E1
+    D2 --> E2
+    E2 --> E3
+    E4 --> E3
+    E3 --> E1
+```
+
+---
+
 > **File Statistics:** This chapter contains 750+ lines covering SOC operations, SIEM deployment, SOAR automation, threat hunting, detection engineering, memory forensics, and SOC maturity metrics.

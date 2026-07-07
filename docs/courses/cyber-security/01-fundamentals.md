@@ -2612,4 +2612,404 @@ sudo lynis audit system --quiet
 
 ---
 
+---
+
+## TypeScript Implementations
+
+### TypeScript Example #1: Threat Model Analyzer (STRIDE)
+
+```typescript
+/**
+ * ThreatModelAnalyzer — STRIDE-based threat modeling engine.
+ * Takes a system description with DFD elements and generates
+ * categorized threats with mitigations and risk levels.
+ */
+
+interface SystemElement {
+  name: string;
+  type: 'external_entity' | 'process' | 'data_store' | 'data_flow';
+  description: string;
+}
+
+interface SystemDescription {
+  name: string;
+  elements: SystemElement[];
+}
+
+interface Threat {
+  category: 'S' | 'T' | 'R' | 'I' | 'D' | 'E';
+  categoryName: string;
+  property: string;
+  description: string;
+  mitigation: string;
+  risk: 'low' | 'medium' | 'high';
+  affectedElement: string;
+}
+
+const STRIDE_CATEGORIES = [
+  { id: 'S' as const, name: 'Spoofing', property: 'Authentication' },
+  { id: 'T' as const, name: 'Tampering', property: 'Integrity' },
+  { id: 'R' as const, name: 'Repudiation', property: 'Non-Repudiation' },
+  { id: 'I' as const, name: 'Information Disclosure', property: 'Confidentiality' },
+  { id: 'D' as const, name: 'Denial of Service', property: 'Availability' },
+  { id: 'E' as const, name: 'Elevation of Privilege', property: 'Authorization' },
+];
+
+class ThreatModelAnalyzer {
+  private threatTemplates: Record<string, Array<{ category: string; description: string; mitigation: string; risk: 'low' | 'medium' | 'high' }>> = {
+    external_entity: [
+      { category: 'S', description: 'Attacker impersonates the external entity via stolen credentials or session hijacking.', mitigation: 'Implement multi-factor authentication (MFA) and certificate-based mutual TLS.', risk: 'high' },
+      { category: 'T', description: 'Data from the external entity is tampered with in transit.', mitigation: 'Enforce TLS 1.3 with certificate pinning and message integrity checks.', risk: 'high' },
+      { category: 'R', description: 'External entity denies having sent a request or transaction.', mitigation: 'Enable digital signatures and audit logging with non-repudiation.', risk: 'medium' },
+    ],
+    process: [
+      { category: 'S', description: 'Attacker spoofs a process by exploiting unauthenticated inter-process communication.', mitigation: 'Use service-to-service authentication (mTLS, SPIFFE).', risk: 'high' },
+      { category: 'T', description: 'Malicious input is processed, causing code execution or data corruption.', mitigation: 'Implement input validation, parameterized queries, and allow-lists.', risk: 'high' },
+      { category: 'R', description: 'Process actions lack audit trails, enabling repudiation of operations.', mitigation: 'Centralized audit logging with tamper-evident logs (e.g., syslog + hash chains).', risk: 'medium' },
+      { category: 'I', description: 'Process leaks sensitive data through error messages, debug logs, or side channels.', mitigation: 'Sanitize error outputs, use structured logging without secrets, apply constant-time comparisons.', risk: 'high' },
+      { category: 'D', description: 'Process is overwhelmed by resource exhaustion (CPU, memory, file handles).', mitigation: 'Implement rate limiting, resource quotas, and auto-scaling.', risk: 'medium' },
+      { category: 'E', description: 'Process runs with excessive privileges, allowing privilege escalation.', mitigation: 'Apply least privilege principle; use containerization with read-only root filesystems.', risk: 'high' },
+    ],
+    data_store: [
+      { category: 'T', description: 'Data at rest is tampered with by an unauthorized actor.', mitigation: 'Apply integrity monitoring (tripwire, AIDE) and signed snapshots.', risk: 'high' },
+      { category: 'I', description: 'Sensitive data stored without encryption is exposed via backup compromise.', mitigation: 'Encrypt all data at rest using AES-256-GCM; encrypt backups with separate keys.', risk: 'high' },
+      { category: 'D', description: 'Data store is flooded with requests causing denial of service.', mitigation: 'Connection pooling, query optimization, read replicas, and DDoS protection.', risk: 'medium' },
+    ],
+    data_flow: [
+      { category: 'S', description: 'Data flow source is spoofed via ARP/DNS spoofing or BGP hijacking.', mitigation: 'Use DNSSEC, IPsec, or MACsec for network-level authentication.', risk: 'high' },
+      { category: 'T', description: 'Data in transit is intercepted and modified (man-in-the-middle).', mitigation: 'End-to-end encryption with TLS 1.3 and certificate validation.', risk: 'high' },
+      { category: 'I', description: 'Sensitive data in transit is eavesdropped on an unencrypted channel.', mitigation: 'Encrypt all data in transit; avoid plaintext protocols (HTTP, FTP, Telnet).', risk: 'high' },
+      { category: 'D', description: 'Network flow is flooded or disrupted, breaking communication.', mitigation: 'Redundant network paths, traffic shaping, and anti-DDoS infrastructure.', risk: 'medium' },
+    ],
+  };
+
+  analyze(system: SystemDescription): Threat[] {
+    const threats: Threat[] = [];
+
+    for (const element of system.elements) {
+      const templates = this.threatTemplates[element.type];
+      if (!templates) continue;
+
+      for (const template of templates) {
+        const categoryInfo = STRIDE_CATEGORIES.find(c => c.id === template.category)!;
+        threats.push({
+          category: template.category as Threat['category'],
+          categoryName: categoryInfo.name,
+          property: categoryInfo.property,
+          description: `[${element.name}] ${template.description}`,
+          mitigation: template.mitigation,
+          risk: template.risk,
+          affectedElement: element.name,
+        });
+      }
+    }
+
+    return threats;
+  }
+
+  groupByCategory(threats: Threat[]): Record<string, Threat[]> {
+    const grouped: Record<string, Threat[]> = {};
+    for (const threat of threats) {
+      if (!grouped[threat.categoryName]) {
+        grouped[threat.categoryName] = [];
+      }
+      grouped[threat.categoryName].push(threat);
+    }
+    return grouped;
+  }
+
+  calculateRiskScore(threats: Threat[]): { total: number; high: number; medium: number; low: number } {
+    const weights = { high: 3, medium: 2, low: 1 };
+    const counts = { high: 0, medium: 0, low: 0 };
+    for (const t of threats) {
+      counts[t.risk]++;
+    }
+    return {
+      total: counts.high * weights.high + counts.medium * weights.medium + counts.low * weights.low,
+      ...counts,
+    };
+  }
+}
+
+// Example usage
+const system: SystemDescription = {
+  name: 'E-Commerce Platform',
+  elements: [
+    { name: 'Web Browser', type: 'external_entity', description: 'Customer web browser' },
+    { name: 'Payment Gateway', type: 'external_entity', description: 'Third-party payment processor' },
+    { name: 'Auth Service', type: 'process', description: 'Authentication and session management' },
+    { name: 'Order API', type: 'process', description: 'Order processing microservice' },
+    { name: 'User Database', type: 'data_store', description: 'Customer credentials and PII' },
+    { name: 'Payment Flow', type: 'data_flow', description: 'Credit card data transmission' },
+  ],
+};
+
+const analyzer = new ThreatModelAnalyzer();
+const threats = analyzer.analyze(system);
+const grouped = analyzer.groupByCategory(threats);
+const score = analyzer.calculateRiskScore(threats);
+
+console.log(`=== Threat Model: ${system.name} ===\n`);
+for (const [category, catThreats] of Object.entries(grouped)) {
+  console.log(`[${category}] — ${catThreats.length} threat(s)`);
+  for (const t of catThreats) {
+    console.log(`   ${t.risk.toUpperCase()}: ${t.description}`);
+    console.log(`   Mitigation: ${t.mitigation}\n`);
+  }
+}
+console.log(`Risk Score: ${score.total} (High: ${score.high}, Medium: ${score.medium}, Low: ${score.low})`);
+```
+
+### TypeScript Example #2: Quantitative Risk Calculator
+
+```typescript
+/**
+ * Quantitative Risk Calculator
+ * Implements SLE, ARO, ALE, and ROSI formulas per NIST SP 800-30.
+ */
+
+interface RiskInput {
+  /** Asset value in monetary units (e.g., USD) */
+  assetValue: number;
+  /** Exposure factor as a decimal (0.0 – 1.0), e.g., 0.3 = 30% loss */
+  exposureFactor: number;
+  /** Annualized rate of occurrence (e.g., 4 = four times per year) */
+  annualRateOfOccurrence: number;
+}
+
+interface RiskOutput {
+  sle: number;
+  ale: number;
+  riskLevel: 'low' | 'medium' | 'high' | 'critical';
+}
+
+interface RosiInput {
+  /** ALE before implementing the control */
+  aleBeforeControl: number;
+  /** ALE after implementing the control */
+  aleAfterControl: number;
+  /** Annual cost of the control */
+  annualControlCost: number;
+}
+
+class RiskCalculator {
+  /**
+   * Single Loss Expectancy (SLE) = Asset Value × Exposure Factor
+   * Represents the monetary loss from a single incident.
+   */
+  calculateSLE(input: RiskInput): number {
+    if (input.assetValue < 0) throw new Error('Asset value must be non-negative.');
+    if (input.exposureFactor < 0 || input.exposureFactor > 1) {
+      throw new Error('Exposure factor must be between 0 and 1.');
+    }
+    return Math.round(input.assetValue * input.exposureFactor * 100) / 100;
+  }
+
+  /**
+   * Annualized Loss Expectancy (ALE) = SLE × ARO
+   * Represents the expected annual monetary loss.
+   */
+  calculateALE(input: RiskInput): number {
+    if (input.annualRateOfOccurrence < 0) {
+      throw new Error('Annual rate of occurrence must be non-negative.');
+    }
+    const sle = this.calculateSLE(input);
+    return Math.round(sle * input.annualRateOfOccurrence * 100) / 100;
+  }
+
+  /**
+   * Return on Security Investment (ROSI) = (ALE_before - ALE_after - ControlCost) / ControlCost
+   * Positive ROSI means the control is cost-effective.
+   */
+  calculateROSI(aleBeforeControl: number, aleAfterControl: number, annualControlCost: number): number {
+    if (annualControlCost <= 0) {
+      throw new Error('Control cost must be positive.');
+    }
+    const reduction = aleBeforeControl - aleAfterControl;
+    const netBenefit = reduction - annualControlCost;
+    return Math.round((netBenefit / annualControlCost) * 10000) / 100; // return as percentage
+  }
+
+  /**
+   * Compute both SLE and ALE plus a qualitative risk level.
+   */
+  assess(input: RiskInput): RiskOutput {
+    const sle = this.calculateSLE(input);
+    const ale = this.calculateALE(input);
+
+    let riskLevel: RiskOutput['riskLevel'];
+    if (ale >= 1_000_000) {
+      riskLevel = 'critical';
+    } else if (ale >= 100_000) {
+      riskLevel = 'high';
+    } else if (ale >= 10_000) {
+      riskLevel = 'medium';
+    } else {
+      riskLevel = 'low';
+    }
+
+    return { sle, ale, riskLevel };
+  }
+
+  /**
+   * Monte Carlo simulation for ALE with uncertain ARO and EF distributions.
+   * Uses a triangular distribution for stochastic modeling.
+   */
+  simulateALE(
+    assetValue: number,
+    efMin: number,
+    efMax: number,
+    efLikely: number,
+    aroMin: number,
+    aroMax: number,
+    aroLikely: number,
+    iterations: number = 10000,
+  ): { mean: number; p10: number; p90: number; stdDev: number } {
+    const results: number[] = [];
+
+    for (let i = 0; i < iterations; i++) {
+      const ef = this.triangularRandom(efMin, efMax, efLikely);
+      const aro = this.triangularRandom(aroMin, aroMax, aroLikely);
+      const sle = assetValue * ef;
+      const ale = sle * aro;
+      results.push(ale);
+    }
+
+    results.sort((a, b) => a - b);
+    const mean = results.reduce((s, v) => s + v, 0) / results.length;
+    const variance = results.reduce((s, v) => s + (v - mean) ** 2, 0) / results.length;
+    const stdDev = Math.sqrt(variance);
+
+    return {
+      mean: Math.round(mean * 100) / 100,
+      p10: Math.round(results[Math.floor(iterations * 0.1)] * 100) / 100,
+      p90: Math.round(results[Math.floor(iterations * 0.9)] * 100) / 100,
+      stdDev: Math.round(stdDev * 100) / 100,
+    };
+  }
+
+  private triangularRandom(min: number, max: number, mode: number): number {
+    const u = Math.random();
+    const f = (mode - min) / (max - min);
+    if (u < f) {
+      return min + Math.sqrt(u * (max - min) * (mode - min));
+    }
+    return max - Math.sqrt((1 - u) * (max - min) * (max - mode));
+  }
+}
+
+// Example usage
+const calc = new RiskCalculator();
+
+const asset: RiskInput = {
+  assetValue: 2_500_000,   // $2.5M customer database
+  exposureFactor: 0.4,      // 40% of data compromised
+  annualRateOfOccurrence: 2, // 2 expected incidents per year
+};
+
+const sle = calc.calculateSLE(asset);
+const ale = calc.calculateALE(asset);
+console.log(`SLE: $${sle.toLocaleString()}`);
+console.log(`ALE: $${ale.toLocaleString()}`);
+
+const assessment = calc.assess(asset);
+console.log(`Risk Level: ${assessment.riskLevel.toUpperCase()}`);
+
+// ROSI: evaluate a WAF costing $50K/year that reduces ALE from $2M to $200K
+const rosi = calc.calculateROSI(2_000_000, 200_000, 50_000);
+console.log(`ROSI: ${rosi}%`);
+
+// Monte Carlo simulation for uncertainty analysis
+const sim = calc.simulateALE(2_500_000, 0.2, 0.6, 0.4, 1, 5, 2, 50000);
+console.log(`Simulated ALE — Mean: $${sim.mean.toLocaleString()}, P10: $${sim.p10.toLocaleString()}, P90: $${sim.p90.toLocaleString()}`);
+```
+
+---
+
+## Mermaid Diagrams
+
+### CIA Triad Relationship
+
+The following diagram illustrates the CIA triad, its supporting controls, the attacks that violate each pillar, and the security mechanisms that enforce them.
+
+```mermaid
+flowchart LR
+    subgraph CIA["CIA Triad"]
+        C[Confidentiality] -->|protected by| Enc[Encryption]
+        I[Integrity] -->|protected by| Hash[Hashing]
+        A[Availability] -->|protected by| Red[Redundancy]
+    end
+
+    subgraph Attacks["Common Attacks"]
+        C -->|violated by| Ca[Data Breach / Eavesdropping]
+        I -->|violated by| Ia[Unauthorized Modification]
+        A -->|violated by| Aa[DDoS / Ransomware]
+    end
+
+    subgraph Controls["Security Controls"]
+        Enc -->|ensures| Secrecy[Secrecy]
+        Hash -->|ensures| Trust[Trustworthiness]
+        Red -->|ensures| Uptime[Continuity]
+    end
+
+    style C fill:#e3f2fd,stroke:#1565c0,color:#000
+    style I fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style A fill:#fff3e0,stroke:#e65100,color:#000
+    style Ca fill:#ffebee,stroke:#c62828,color:#000
+    style Ia fill:#ffebee,stroke:#c62828,color:#000
+    style Aa fill:#ffebee,stroke:#c62828,color:#000
+```
+
+### STRIDE Per-Element Mapping
+
+This diagram maps each DFD element type (External Entity, Process, Data Store, Data Flow) to the STRIDE categories that apply during threat modeling, based on Microsoft's official STRIDE per-element methodology.
+
+```mermaid
+flowchart TD
+    subgraph Legend["STRIDE Categories"]
+        S[Spoofing]
+        T[Tampering]
+        R[Repudiation]
+        I[Information Disclosure]
+        D[Denial of Service]
+        E[Elevation of Privilege]
+    end
+
+    subgraph DFD_Elements["DFD Elements"]
+        EE[External Entity]
+        Proc[Process]
+        DS[Data Store]
+        DF[Data Flow]
+    end
+
+    EE -->|applicable| S
+    EE -->|applicable| T
+    EE -->|applicable| R
+
+    Proc -->|applicable| S
+    Proc -->|applicable| T
+    Proc -->|applicable| R
+    Proc -->|applicable| I
+    Proc -->|applicable| D
+    Proc -->|applicable| E
+
+    DS -->|applicable| T
+    DS -->|applicable| I
+    DS -->|applicable| D
+
+    DF -->|applicable| S
+    DF -->|applicable| T
+    DF -->|applicable| I
+    DF -->|applicable| D
+
+    style S fill:#ffcdd2,stroke:#c62828,color:#000
+    style T fill:#f8bbd0,stroke:#ad1457,color:#000
+    style R fill:#e1bee7,stroke:#6a1b9a,color:#000
+    style I fill:#bbdefb,stroke:#1565c0,color:#000
+    style D fill:#b2dfdb,stroke:#00695c,color:#000
+    style E fill:#ffe0b2,stroke:#e65100,color:#000
+```
+
+---
+
 > **File Statistics:** This chapter contains over 2000 lines covering the complete cybersecurity fundamentals syllabus.

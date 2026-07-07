@@ -4019,3 +4019,581 @@ def automated_forensics(alert):
 - **SIEM, SOAR, and XDR** provide complementary capabilities: SIEM for visibility, SOAR for automation, XDR for integrated detection and response.
 - **YARA rules** enable custom malware detection through pattern matching in files and memory.
 - Real-world case studies demonstrate that the fundamentals → network segmentation, MFA, and proper logging → are the difference between a contained incident and a catastrophic breach.
+
+---
+
+## TypeScript Implementations
+
+### Forensic Timeline Analyzer
+
+```typescript
+/**
+ * Forensic Timeline Analyzer
+ *
+ * Builds a unified timeline from disparate forensic event sources (disk, memory,
+ * network, cloud logs) and correlates events by source IP, timestamp clusters,
+ * and process ancestry. Essential for reconstructing attack chains in incident
+ * response investigations.
+ */
+
+interface ForensicEvent {
+  timestamp: Date;
+  source: string;
+  eventType: string;
+  description: string;
+  severity: string;
+  sourceIp?: string;
+  destinationIp?: string;
+  processId?: number;
+  parentProcessId?: number;
+  processName?: string;
+  userId?: string;
+}
+
+interface ForensicTimeline {
+  events: ForensicEvent[];
+  sorted: boolean;
+  timeRange: { start: Date; end: Date };
+  eventCount: number;
+}
+
+interface CorrelatedGroup {
+  correlationType: 'same-ip' | 'time-cluster' | 'process-ancestry' | 'user-activity';
+  events: ForensicEvent[];
+  description: string;
+  confidence: number;
+}
+
+class TimelineAnalyzer {
+  /** Sorts events chronologically and wraps them in a ForensicTimeline */
+  buildTimeline(events: ForensicEvent[]): ForensicTimeline {
+    const sorted = [...events].sort(
+      (a, b) => a.timestamp.getTime() - b.timestamp.getTime()
+    );
+    return {
+      events: sorted,
+      sorted: true,
+      timeRange: {
+        start: sorted[0]?.timestamp || new Date(),
+        end: sorted[sorted.length - 1]?.timestamp || new Date(),
+      },
+      eventCount: sorted.length,
+    };
+  }
+
+  /** Groups events sharing the same source IP address */
+  correlateBySourceIp(events: ForensicEvent[]): CorrelatedGroup[] {
+    const ipGroups = new Map<string, ForensicEvent[]>();
+    for (const event of events) {
+      if (event.sourceIp) {
+        const key = event.sourceIp;
+        if (!ipGroups.has(key)) ipGroups.set(key, []);
+        ipGroups.get(key)!.push(event);
+      }
+    }
+    const results: CorrelatedGroup[] = [];
+    for (const [ip, ipEvents] of ipGroups) {
+      if (ipEvents.length >= 2) {
+        results.push({
+          correlationType: 'same-ip',
+          events: ipEvents,
+          description: `Activity cluster from source IP ${ip} — ${ipEvents.length} events`,
+          confidence: Math.min(0.65 + ipEvents.length * 0.05, 0.95),
+        });
+      }
+    }
+    return results;
+  }
+
+  /** Identifies bursts of activity within a configurable time window */
+  correlateByTimeClusters(
+    events: ForensicEvent[],
+    windowMs: number = 300_000
+  ): CorrelatedGroup[] {
+    const sorted = [...events].sort(
+      (a, b) => a.timestamp.getTime() - b.timestamp.getTime()
+    );
+    const groups: CorrelatedGroup[] = [];
+    let clusterStart = 0;
+    for (let i = 1; i < sorted.length; i++) {
+      const gap =
+        sorted[i].timestamp.getTime() - sorted[i - 1].timestamp.getTime();
+      if (gap > windowMs) {
+        if (i - clusterStart >= 3) {
+          const cluster = sorted.slice(clusterStart, i);
+          groups.push({
+            correlationType: 'time-cluster',
+            events: cluster,
+            description: `Burst of ${cluster.length} events within ${windowMs / 1000}s window`,
+            confidence: Math.min(0.5 + cluster.length * 0.1, 0.95),
+          });
+        }
+        clusterStart = i;
+      }
+    }
+    return groups;
+  }
+
+  /** Groups child processes under their parent process IDs */
+  correlateByProcessAncestry(events: ForensicEvent[]): CorrelatedGroup[] {
+    const parentMap = new Map<number, ForensicEvent[]>();
+    for (const event of events) {
+      if (event.parentProcessId !== undefined) {
+        if (!parentMap.has(event.parentProcessId)) {
+          parentMap.set(event.parentProcessId, []);
+        }
+        parentMap.get(event.parentProcessId)!.push(event);
+      }
+    }
+    const results: CorrelatedGroup[] = [];
+    for (const [parentPid, children] of parentMap) {
+      if (children.length >= 2) {
+        results.push({
+          correlationType: 'process-ancestry',
+          events: children,
+          description: `Process tree rooted at PID ${parentPid} — ${children.length} child events`,
+          confidence: 0.8,
+        });
+      }
+    }
+    return results;
+  }
+
+  /** Runs all correlation strategies and returns combined results */
+  correlateEvents(events: ForensicEvent[]): CorrelatedGroup[] {
+    return [
+      ...this.correlateBySourceIp(events),
+      ...this.correlateByTimeClusters(events),
+      ...this.correlateByProcessAncestry(events),
+    ];
+  }
+
+  /** Produces a human-readable forensic narrative from the timeline */
+  generateNarrative(timeline: ForensicTimeline): string {
+    const groups = this.correlateEvents(timeline.events);
+    const lines: string[] = [
+      '=== FORENSIC ANALYSIS NARRATIVE ===',
+      `Time Range: ${timeline.timeRange.start.toISOString()} — ${timeline.timeRange.end.toISOString()}`,
+      `Total Events: ${timeline.eventCount}`,
+      `Correlated Groups: ${groups.length}`,
+      '',
+    ];
+    for (const group of groups) {
+      lines.push(
+        `[${group.correlationType}] (confidence: ${(group.confidence * 100).toFixed(0)}%)`
+      );
+      lines.push(`  ${group.description}`);
+      const sorted = [...group.events].sort(
+        (a, b) => a.timestamp.getTime() - b.timestamp.getTime()
+      );
+      for (const event of sorted) {
+        lines.push(
+          `    ${event.timestamp.toISOString()} | ${event.source} | ${event.eventType} | ${event.description}`
+        );
+      }
+      lines.push('');
+    }
+    lines.push('=== END OF NARRATIVE ===');
+    return lines.join('\n');
+  }
+}
+
+// --- Example usage ---
+const analyzer = new TimelineAnalyzer();
+const events: ForensicEvent[] = [
+  {
+    timestamp: new Date('2026-06-15T10:00:00Z'),
+    source: 'WinEventLog:4625',
+    eventType: 'Failed Login',
+    description: 'Failed logon for user admin from 203.0.113.5',
+    severity: 'medium',
+    sourceIp: '203.0.113.5',
+  },
+  {
+    timestamp: new Date('2026-06-15T10:00:03Z'),
+    source: 'WinEventLog:4625',
+    eventType: 'Failed Login',
+    description: 'Failed logon for user root from 203.0.113.5',
+    severity: 'medium',
+    sourceIp: '203.0.113.5',
+  },
+  {
+    timestamp: new Date('2026-06-15T10:00:06Z'),
+    source: 'WinEventLog:4624',
+    eventType: 'Successful Login',
+    description: 'Successful logon for user jdoe from 203.0.113.5',
+    severity: 'high',
+    sourceIp: '203.0.113.5',
+    processId: 1001,
+    parentProcessId: 500,
+    processName: 'winlogon.exe',
+  },
+  {
+    timestamp: new Date('2026-06-15T10:01:00Z'),
+    source: 'Sysmon:1',
+    eventType: 'Process Create',
+    description: 'cmd.exe launched by winlogon.exe',
+    severity: 'high',
+    processId: 2001,
+    parentProcessId: 1001,
+    processName: 'cmd.exe',
+    sourceIp: '203.0.113.5',
+  },
+  {
+    timestamp: new Date('2026-06-15T10:01:30Z'),
+    source: 'Sysmon:3',
+    eventType: 'Network Connection',
+    description: 'Outbound connection to 198.51.100.99:4444',
+    severity: 'critical',
+    processId: 2001,
+    parentProcessId: 1001,
+    processName: 'cmd.exe',
+    sourceIp: '203.0.113.5',
+    destinationIp: '198.51.100.99',
+  },
+];
+
+const timeline = analyzer.buildTimeline(events);
+console.log(analyzer.generateNarrative(timeline));
+```
+
+### Hash Set Validator
+
+```typescript
+/**
+ * Hash Set Validator
+ *
+ * Validates file integrity using SHA-256 and MD5 hashes against known-good
+ * baselines and threat intelligence feeds. Supports forensic integrity
+ * verification, malware detection through hash matching, and chain-of-custody
+ * documentation.
+ */
+
+interface FileRecord {
+  path: string;
+  sha256: string;
+  md5: string;
+  size: number;
+  lastModified?: Date;
+  fileType?: string;
+}
+
+interface ValidationResult {
+  modified: FileRecord[];
+  new: FileRecord[];
+  deleted: FileRecord[];
+}
+
+interface ThreatMatch {
+  file: FileRecord;
+  threatName: string;
+  source: string;
+  severity: string;
+}
+
+class HashValidator {
+  /**
+   * Compares current file set against a known-good baseline to identify
+   * modified, new, and deleted files — essential for forensic integrity
+   * checking during incident response.
+   */
+  validateAgainstKnownGood(
+    files: FileRecord[],
+    knownGood: Map<string, FileRecord>
+  ): ValidationResult {
+    const result: ValidationResult = { modified: [], new: [], deleted: [] };
+    const currentPaths = new Set(files.map((f) => f.path));
+
+    for (const file of files) {
+      const baseline = knownGood.get(file.path);
+      if (baseline) {
+        if (file.sha256 !== baseline.sha256 || file.md5 !== baseline.md5) {
+          result.modified.push(file);
+        }
+      } else {
+        result.new.push(file);
+      }
+    }
+
+    for (const [path, record] of knownGood) {
+      if (!currentPaths.has(path)) {
+        result.deleted.push(record);
+      }
+    }
+
+    return result;
+  }
+
+  /**
+   * Checks file hashes against known threat intelligence feeds to identify
+   * potentially malicious files (malware, ransomware, rootkits, etc.).
+   */
+  validateAgainstThreatIntel(
+    files: FileRecord[],
+    threatIntel: Map<string, string>
+  ): ThreatMatch[] {
+    const matches: ThreatMatch[] = [];
+    for (const file of files) {
+      const sha256Threat = threatIntel.get(file.sha256);
+      const md5Threat = threatIntel.get(file.md5);
+      const threatName = sha256Threat || md5Threat;
+
+      if (threatName) {
+        matches.push({
+          file,
+          threatName,
+          source: sha256Threat ? 'SHA-256' : 'MD5',
+          severity: this.classifyThreatSeverity(threatName),
+        });
+      }
+    }
+    return matches;
+  }
+
+  /**
+   * Generates a comprehensive forensic hash report suitable for
+   * chain-of-custody documentation and court admissibility.
+   */
+  generateHashReport(
+    files: FileRecord[],
+    validationResult?: ValidationResult,
+    threatMatches?: ThreatMatch[]
+  ): string {
+    const lines: string[] = [];
+    lines.push('='.repeat(80));
+    lines.push('FORENSIC HASH VALIDATION REPORT');
+    lines.push('='.repeat(80));
+    lines.push(`Generated: ${new Date().toISOString()}`);
+    lines.push(`Files Analyzed: ${files.length}`);
+    lines.push('');
+
+    lines.push('--- File Inventory ---');
+    for (const file of files.sort((a, b) => a.path.localeCompare(b.path))) {
+      lines.push(`Path:     ${file.path}`);
+      lines.push(`SHA-256:  ${file.sha256}`);
+      lines.push(`MD5:      ${file.md5}`);
+      lines.push(`Size:     ${file.size} bytes`);
+      if (file.fileType) lines.push(`Type:     ${file.fileType}`);
+      lines.push('');
+    }
+
+    if (validationResult) {
+      lines.push('--- Integrity Validation ---');
+      lines.push(`Modified: ${validationResult.modified.length}`);
+      for (const f of validationResult.modified) {
+        lines.push(`  [MODIFIED] ${f.path}`);
+      }
+      lines.push(`New Files: ${validationResult.new.length}`);
+      for (const f of validationResult.new) {
+        lines.push(`  [NEW] ${f.path}`);
+      }
+      lines.push(`Deleted:   ${validationResult.deleted.length}`);
+      for (const f of validationResult.deleted) {
+        lines.push(`  [DELETED] ${f.path}`);
+      }
+      lines.push('');
+    }
+
+    if (threatMatches && threatMatches.length > 0) {
+      lines.push('--- Threat Intelligence Matches ---');
+      for (const match of threatMatches) {
+        lines.push(`  [${match.severity}] ${match.file.path}`);
+        lines.push(`    Threat: ${match.threatName}`);
+        lines.push(`    Match:  ${match.source}`);
+      }
+      lines.push('');
+    }
+
+    lines.push('--- End of Report ---');
+    return lines.join('\n');
+  }
+
+  private classifyThreatSeverity(threatName: string): string {
+    const critical = ['ransomware', 'rootkit', 'trojan', 'worm', 'loader'];
+    const high = ['spyware', 'backdoor', 'keylogger', 'downloader', 'dropper'];
+    const lower = threatName.toLowerCase();
+    if (critical.some((t) => lower.includes(t))) return 'CRITICAL';
+    if (high.some((t) => lower.includes(t))) return 'HIGH';
+    return 'MEDIUM';
+  }
+}
+
+// --- Example usage ---
+const validator = new HashValidator();
+
+// Build a known-good baseline
+const knownGood = new Map<string, FileRecord>();
+knownGood.set('/bin/ls', {
+  path: '/bin/ls',
+  sha256: 'a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b',
+  md5: '11111111111111111111111111111111',
+  size: 142000,
+});
+knownGood.set('/bin/bash', {
+  path: '/bin/bash',
+  sha256: 'b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c',
+  md5: '22222222222222222222222222222222',
+  size: 1210000,
+});
+
+// Current files on the system (simulating post-incident snapshot)
+const currentFiles: FileRecord[] = [
+  {
+    path: '/bin/ls',
+    sha256: 'ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff',
+    md5: '33333333333333333333333333333333',
+    size: 142000,
+    lastModified: new Date('2026-06-15T03:00:00Z'),
+    fileType: 'ELF executable',
+  },
+  {
+    path: '/bin/bash',
+    sha256: 'b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c',
+    md5: '22222222222222222222222222222222',
+    size: 1210000,
+    lastModified: new Date('2026-01-01T00:00:00Z'),
+    fileType: 'ELF executable',
+  },
+  {
+    path: '/tmp/.malware',
+    sha256: 'eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+    md5: '44444444444444444444444444444444',
+    size: 65536,
+    lastModified: new Date('2026-06-15T03:05:00Z'),
+    fileType: 'ELF executable',
+  },
+];
+
+// Threat intelligence feed
+const threatIntel = new Map<string, string>();
+threatIntel.set(
+  'eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+  'Trojan.Generic.2026'
+);
+
+// Run validation
+const integrityResult = validator.validateAgainstKnownGood(currentFiles, knownGood);
+console.log('Integrity Check:');
+console.log(`  Modified: ${integrityResult.modified.length} file(s)`);
+console.log(`  New:      ${integrityResult.new.length} file(s)`);
+console.log(`  Deleted:  ${integrityResult.deleted.length} file(s)`);
+
+const threatMatches = validator.validateAgainstThreatIntel(currentFiles, threatIntel);
+console.log(`\nThreat Intel Matches: ${threatMatches.length}`);
+threatMatches.forEach((m) =>
+  console.log(`  [${m.severity}] ${m.file.path} — ${m.threatName}`)
+);
+
+// Generate full report for chain of custody
+console.log(
+  '\n' + validator.generateHashReport(currentFiles, integrityResult, threatMatches)
+);
+```
+
+---
+
+## Mermaid Diagrams
+
+### Incident Response Lifecycle (NIST SP 800-61)
+
+```mermaid
+flowchart TD
+    Prep["1. Preparation<br/><i>• IR plan & team<br/>• Tools & playbooks<br/>• Training & drills</i>"] --> Det["2. Detection & Analysis<br/><i>• SIEM alerts<br/>• Threat intel<br/>• User reports</i>"]
+    Det --> Cont["3. Containment<br/><i>• Short-term: isolate host<br/>• Long-term: patch & segment</i>"]
+    Cont --> Erad["4. Eradication<br/><i>• Remove malware<br/>• Patch vulns<br/>• Rotate creds</i>"]
+    Erad --> Rec["5. Recovery<br/><i>• Restore from backup<br/>• Monitor for recurrence<br/>• Return to prod</i>"]
+    Rec --> LL["6. Lessons Learned<br/><i>• Post-mortem<br/>• Update playbooks<br/>• Improve controls</i>"]
+    LL -.->|"Feedback loop"| Prep
+```
+
+### Chain of Custody Workflow
+
+```mermaid
+flowchart TD
+    Collect["1. Evidence Collection<br/><i>• Photograph scene<br/>• Use write-blocker<br/>• Hash all media</i>"] -->|"Hash verified + signed"| Seal["2. Sealing & Labeling<br/><i>• Tamper-evident bag<br/>• Case ID & barcode<br/>• Collector signature</i>"]
+    Seal -->|"Chain of Custody Form"| Transport["3. Transportation<br/><i>• Secure courier<br/>• GPS tracking<br/>• Temp/env monitoring</i>"]
+    Transport -->|"Signed receipt"| Store["4. Secure Storage<br/><i>• Evidence locker<br/>• Access log<br/>• Climate control</i>"]
+    Store -->|"Check-out/in log"| Analysis["5. Forensic Analysis<br/><i>• Forensic workstation<br/>• Bit-for-bit copy<br/>• Analysis on copy</i>"]
+    Analysis -->|"Expert report + exhibits"| Court["6. Court Presentation<br/><i>• Expert testimony<br/>• Evidence admissibility<br/>• Daubert/Frye standard</i>"]
+    
+    subgraph Signatures["Chain of Custody Signatures"]
+        S1["1. Collector<br/>(name, date, time)"]
+        S2["2. Custodian<br/>(receipt confirmation)"]
+        S3["3. Analyst<br/>(access authorization)"]
+        S4["4. Reviewer<br/>(QA oversight)"]
+    end
+    
+    Seal -.-> S1
+    Transport -.-> S2
+    Store -.-> S3
+    Analysis -.-> S4
+```
+
+---
+
+## Chapter Quiz
+
+1. What is the FIRST step in the digital forensics methodology?
+   - A) Collection
+   - B) Identification
+   - C) Analysis
+   - D) Presentation
+
+2. Chain of custody documentation is critical because:
+   - A) It tracks hardware inventory
+   - B) Without it, evidence may be ruled inadmissible in court
+   - C) It helps identify malware
+   - D) It is required for SIEM integration
+
+3. Which of the following follows the correct Order of Volatility?
+   - A) Hard drive → RAM → Network connections → CPU registers
+   - B) CPU registers → RAM → Network connections → Hard drive
+   - C) RAM → Hard drive → Network connections → CPU registers
+   - D) CPU registers → Network connections → RAM → Hard drive
+
+4. What does MFT stand for in disk forensics?
+   - A) Master File Table
+   - B) Main Forensic Tool
+   - C) Metadata File Tracker
+   - D) Memory Fault Table
+
+5. Which tool is the industry standard for memory forensics?
+   - A) Wireshark
+   - B) Volatility
+   - C) Autopsy
+   - D) Zeek
+
+6. Which phase of the NIST SP 800-61 IR lifecycle involves removing malware and patching vulnerabilities?
+   - A) Detection
+   - B) Containment
+   - C) Eradication
+   - D) Recovery
+
+7. What is the primary purpose of file carving in disk forensics?
+   - A) To encrypt forensic images
+   - B) To recover deleted files based on file signatures
+   - C) To compress evidence storage
+   - D) To create hash values
+
+8. In mobile forensics, what is the biggest challenge for iOS data acquisition?
+   - A) SELinux policies
+   - B) Encryption and Secure Enclave
+   - C) SD card encryption
+   - D) Android fragmentation
+
+9. Which of the following is NOT one of the six phases of the digital forensics methodology?
+   - A) Identification
+   - B) Preservation
+   - C) Prosecution
+   - D) Collection
+
+10. YARA rules are primarily used for:
+    - A) Network packet capture
+    - B) Pattern-based malware detection
+    - C) Disk encryption
+    - D) User authentication
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B, 4. A, 5. B, 6. C, 7. B, 8. B, 9. C, 10. B
+</details>

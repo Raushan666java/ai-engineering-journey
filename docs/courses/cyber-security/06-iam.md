@@ -1737,7 +1737,7 @@ const assertion = await navigator.credentials.get({
 
 3. **Kerberos cross-realm trust:** Two companies merge with realms `COMPANY-A.COM` and `COMPANY-B.COM`. Design trust path. How does a user in Company A access a service in Company B?
 
-### Chapter Quiz
+## Chapter Quiz
 
 1. RBAC grants permissions based on:
    - A) The user's identity
@@ -2614,4 +2614,771 @@ spec:
         paths: ["/api/payments"]
     when:
     - key: request.headers[X-Idempotency-Key]
-      values: ["*"]
+        values: ["*"]
+
+---
+
+## TypeScript Implementations
+
+### RBAC Authorization Engine
+
+The following TypeScript class implements a full Role-Based Access Control (RBAC) engine with role hierarchy, permission inheritance, and effective-permissions computation. It supports CRUD + execute actions, resource-pattern matching, and user-role assignment validation.
+
+```typescript
+/**
+ * User — represents an authenticated entity in the system.
+ * @property id — unique identifier
+ * @property roles — list of role names assigned directly to the user
+ * @property attributes — key-value map for attribute-based extensions (ABAC bridging)
+ */
+interface User {
+  id: string;
+  roles: string[];
+  attributes: Record<string, string>;
+}
+
+/**
+ * Permission — a specific action on a resource.
+ * @property resource — the target resource or pattern (supports glob: "document:*")
+ * @property action — the operation type
+ */
+interface Permission {
+  resource: string;
+  action: 'create' | 'read' | 'update' | 'delete' | 'execute';
+}
+
+/**
+ * Role — a named collection of permissions with optional inheritance.
+ * @property name — unique role identifier
+ * @property permissions — direct permissions assigned to this role
+ * @property inherits — parent role names from which permissions are inherited
+ */
+interface Role {
+  name: string;
+  permissions: Permission[];
+  inherits: string[];
+}
+
+/**
+ * RBACEngine — provides permission checking with role hierarchy resolution,
+ * effective-permissions aggregation, and audit-friendly decision logging.
+ *
+ * Features:
+ * - Role inheritance (directed acyclic graph) with cycle detection
+ * - Resource-pattern matching (exact match, prefix match, glob)
+ * - Effective permissions computation flattened across the hierarchy
+ * - Decision logging for compliance and audit trails
+ */
+class RBACEngine {
+  private roles: Map<string, Role> = new Map();
+  private roleAssignments: Map<string, Set<string>> = new Map();
+  private decisionLog: Array<{
+    timestamp: Date;
+    user: string;
+    resource: string;
+    action: string;
+    allowed: boolean;
+    reason: string;
+  }> = [];
+
+  /**
+   * Register a role definition. Throws if a cycle is detected.
+   */
+  public registerRole(role: Role): void {
+    if (this.roles.has(role.name)) {
+      throw new Error(`Role "${role.name}" already registered`);
+    }
+    // Validate inheritance chain for cycles
+    this.validateAcyclic(role.name, role.inherits, new Set());
+    this.roles.set(role.name, role);
+  }
+
+  /**
+   * Validate that adding this role would not create a cycle.
+   * Uses DFS from the inherits list upward.
+   */
+  private validateAcyclic(
+    roleName: string,
+    inherits: string[],
+    visited: Set<string>
+  ): void {
+    for (const parent of inherits) {
+      if (parent === roleName) {
+        throw new Error(`Cycle detected: role "${roleName}" cannot inherit from itself`);
+      }
+      if (visited.has(parent)) {
+        throw new Error(
+          `Cycle detected via "${parent}" in inheritance of "${roleName}"`
+        );
+      }
+      visited.add(parent);
+      const parentRole = this.roles.get(parent);
+      if (parentRole) {
+        this.validateAcyclic(roleName, parentRole.inherits, new Set(visited));
+      }
+    }
+  }
+
+  /**
+   * Assign a role to a user.
+   */
+  public assignRole(userId: string, roleName: string): void {
+    if (!this.roles.has(roleName)) {
+      throw new Error(`Role "${roleName}" does not exist`);
+    }
+    if (!this.roleAssignments.has(userId)) {
+      this.roleAssignments.set(userId, new Set());
+    }
+    this.roleAssignments.get(userId)!.add(roleName);
+  }
+
+  /**
+   * Remove a role from a user.
+   */
+  public removeRole(userId: string, roleName: string): void {
+    const userRoles = this.roleAssignments.get(userId);
+    if (userRoles) {
+      userRoles.delete(roleName);
+    }
+  }
+
+  /**
+   * Check whether a user has permission to perform an action on a resource.
+   * Resolves the full role hierarchy and compares against all permissions.
+   */
+  public hasPermission(
+    user: User,
+    resource: string,
+    action: string
+  ): boolean {
+    const effectivePerms = this.getEffectivePermissions(user);
+    const allowed = effectivePerms.some(
+      (p) =>
+        p.action === action && this.resourceMatches(p.resource, resource)
+    );
+
+    this.decisionLog.push({
+      timestamp: new Date(),
+      user: user.id,
+      resource,
+      action,
+      allowed,
+      reason: allowed
+        ? 'Matched effective permission'
+        : 'No matching permission in any role',
+    });
+
+    return allowed;
+  }
+
+  /**
+   * Retrieve all effective permissions for a user by flattening
+   * the role hierarchy. Deduplicates identical (resource, action) pairs.
+   */
+  public getEffectivePermissions(user: User): Permission[] {
+    const visitedRoles = new Set<string>();
+    const permissionSet = new Map<string, Permission>();
+    const queue: string[] = [];
+
+    // Seed with direct roles
+    const directRoles = this.roleAssignments.get(user.id);
+    if (directRoles) {
+      for (const roleName of directRoles) {
+        queue.push(roleName);
+      }
+    }
+
+    // BFS through the inheritance graph
+    while (queue.length > 0) {
+      const currentName = queue.shift()!;
+      if (visitedRoles.has(currentName)) continue;
+      visitedRoles.add(currentName);
+
+      const role = this.roles.get(currentName);
+      if (!role) continue;
+
+      // Add direct permissions
+      for (const perm of role.permissions) {
+        const key = `${perm.resource}:${perm.action}`;
+        if (!permissionSet.has(key)) {
+          permissionSet.set(key, perm);
+        }
+      }
+
+      // Enqueue parent roles
+      for (const inherited of role.inherits) {
+        if (!visitedRoles.has(inherited)) {
+          queue.push(inherited);
+        }
+      }
+    }
+
+    return Array.from(permissionSet.values());
+  }
+
+  /**
+   * Check whether a resource string matches a permission resource pattern.
+   * Supports:
+   * - Exact match: "document:report-q4" === "document:report-q4"
+   * - Prefix wildcard: "document:*" matches "document:anything"
+   * - Full wildcard: "*" matches any resource
+   */
+  private resourceMatches(pattern: string, resource: string): boolean {
+    if (pattern === '*') return true;
+    if (pattern.endsWith(':*')) {
+      const prefix = pattern.slice(0, -2);
+      return resource === prefix || resource.startsWith(prefix + ':');
+    }
+    return pattern === resource;
+  }
+
+  /**
+   * Export the decision log for audit and compliance review.
+   */
+  public getAuditLog() {
+    return [...this.decisionLog];
+  }
+
+  /**
+   * List all roles assigned to a user.
+   */
+  public getUserRoles(userId: string): string[] {
+    const roles = this.roleAssignments.get(userId);
+    return roles ? Array.from(roles) : [];
+  }
+}
+
+// ---- Usage example ----
+const engine = new RBACEngine();
+
+// Define roles with inheritance
+engine.registerRole({
+  name: 'viewer',
+  permissions: [{ resource: 'document:*', action: 'read' }],
+  inherits: [],
+});
+
+engine.registerRole({
+  name: 'editor',
+  permissions: [
+    { resource: 'document:*', action: 'update' },
+    { resource: 'document:draft', action: 'create' },
+  ],
+  inherits: ['viewer'], // inherits read access
+});
+
+engine.registerRole({
+  name: 'admin',
+  permissions: [
+    { resource: 'document:*', action: 'delete' },
+    { resource: 'user:*', action: 'execute' },
+  ],
+  inherits: ['editor'], // inherits editor + viewer permissions
+});
+
+// Assign roles to users
+engine.assignRole('alice', 'viewer');
+engine.assignRole('bob', 'editor');
+engine.assignRole('charlie', 'admin');
+
+// Test permissions
+const alice: User = { id: 'alice', roles: ['viewer'], attributes: {} };
+const bob: User = { id: 'bob', roles: ['editor'], attributes: {} };
+const charlie: User = { id: 'charlie', roles: ['admin'], attributes: {} };
+
+console.log(`Alice can read document:report → ${engine.hasPermission(alice, 'document:report', 'read')}`);
+console.log(`Alice can delete document:report → ${engine.hasPermission(alice, 'document:report', 'delete')}`);
+console.log(`Bob can update document:draft → ${engine.hasPermission(bob, 'document:draft', 'update')}`);
+console.log(`Bob can delete document:final → ${engine.hasPermission(bob, 'document:final', 'delete')}`);
+console.log(`Charlie can delete document:anything → ${engine.hasPermission(charlie, 'document:anything', 'delete')}`);
+console.log(`Charlie can read document:secret → ${engine.hasPermission(charlie, 'document:secret', 'read')}`);
+
+// Effective permissions
+console.log(`\nAlice's effective permissions: ${engine.getEffectivePermissions(alice).length}`);
+console.log(`Charlie's effective permissions: ${engine.getEffectivePermissions(charlie).length}`);
+```
+
+### JWT Auth Middleware
+
+This TypeScript implementation provides a production-grade JWT authentication service with HS256 signing, token expiry validation, refresh token rotation, and issuer/audience verification. It follows the RFC 7519 specification and incorporates security best practices to prevent common JWT attacks.
+
+```typescript
+/**
+ * TokenPayload — the decoded contents of a JWT.
+ * @property sub — subject (typically user ID)
+ * @property roles — array of role names for authorization
+ * @property iat — issued-at timestamp (seconds since epoch, set automatically)
+ * @property exp — expiration timestamp (seconds since epoch, computed from TTL)
+ * @property iss — issuer claim (validates token provenance)
+ */
+interface TokenPayload {
+  sub: string;
+  roles: string[];
+  iat: number;
+  exp: number;
+  iss: string;
+}
+
+/**
+ * TokenPair — returned by token generation and refresh operations.
+ */
+interface TokenPair {
+  accessToken: string;
+  refreshToken: string;
+  expiresAt: number;
+}
+
+/**
+ * JWT header for HS256 algorithm.
+ */
+interface JWTHeader {
+  alg: 'HS256';
+  typ: 'JWT';
+}
+
+/**
+ * Base64URL encoding utilities (RFC 4648 §5).
+ * Uses URL-safe characters and omits padding.
+ */
+function base64URLEncode(data: Uint8Array): string {
+  const base64 = btoa(String.fromCharCode(...data));
+  return base64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+function base64URLDecode(str: string): Uint8Array {
+  const base64 = str.replace(/-/g, '+').replace(/_/g, '/');
+  const padding = 4 - (base64.length % 4);
+  const padded = padding === 4 ? base64 : base64 + '='.repeat(padding);
+  const binaryStr = atob(padded);
+  return new Uint8Array(binaryStr.length).map((_, i) => binaryStr.charCodeAt(i));
+}
+
+/**
+ * JWTService — complete HS256-based JWT management with
+ * generation, verification, and refresh-token rotation.
+ *
+ * Security features:
+ * - HS256 signing with a minimum 256-bit secret
+ * - Automatic iat (issued-at) and exp (expiration) computation
+ * - Issuer verification against expected value
+ * - Refresh token rotation (each use invalidates the previous)
+ * - Reject tokens with "alg":"none" (algorithm confusion prevention)
+ * - Constant-time signature comparison (timing attack mitigation)
+ */
+class JWTService {
+  private readonly secret: Uint8Array;
+  private readonly issuer: string;
+  private readonly accessTokenTTL: number; // seconds
+  private readonly refreshTokenTTL: number; // seconds
+  private refreshTokenStore: Map<
+    string,
+    { userId: string; expiresAt: number; rotated: boolean }
+  > = new Map();
+
+  /**
+   * @param secret — raw key material (must be at least 32 bytes for HS256)
+   * @param issuer — the "iss" claim value (e.g., "https://auth.example.com")
+   * @param accessTokenTTL — access token lifetime in seconds (default 900 = 15 min)
+   * @param refreshTokenTTL — refresh token lifetime in seconds (default 86400 = 24 h)
+   */
+  constructor(
+    secret: string,
+    issuer: string,
+    accessTokenTTL: number = 900,
+    refreshTokenTTL: number = 86400
+  ) {
+    if (secret.length < 32) {
+      throw new Error(
+        'HS256 secret must be at least 32 bytes (256 bits) for adequate security'
+      );
+    }
+    this.secret = new TextEncoder().encode(secret);
+    this.issuer = issuer;
+    this.accessTokenTTL = accessTokenTTL;
+    this.refreshTokenTTL = refreshTokenTTL;
+  }
+
+  /**
+   * Generate an access token + refresh token pair for a user.
+   */
+  public generateToken(
+    payload: Omit<TokenPayload, 'iat' | 'exp'>
+  ): TokenPair {
+    const now = Math.floor(Date.now() / 1000);
+
+    // Build access token
+    const accessPayload: TokenPayload = {
+      ...payload,
+      iat: now,
+      exp: now + this.accessTokenTTL,
+      iss: this.issuer,
+    };
+    const accessToken = this.signToken(accessPayload);
+
+    // Build refresh token (stored server-side for rotation)
+    const refreshId = crypto.randomUUID();
+    this.refreshTokenStore.set(refreshId, {
+      userId: payload.sub,
+      expiresAt: now + this.refreshTokenTTL,
+      rotated: false,
+    });
+
+    // Return refresh token as an opaque string (not a JWT)
+    const refreshToken = `rt_${refreshId}`;
+
+    return {
+      accessToken,
+      refreshToken,
+      expiresAt: accessPayload.exp,
+    };
+  }
+
+  /**
+   * Verify a JWT access token and return its decoded payload.
+   * Throws on invalid signature, expired token, or wrong issuer.
+   */
+  public verifyToken(token: string): TokenPayload {
+    // Reject obvious "alg":"none" tokens before parsing
+    if (token.split('.').length === 2) {
+      throw new Error('JWT algorithm "none" is not allowed');
+    }
+
+    const parts = token.split('.');
+    if (parts.length !== 3) {
+      throw new Error('Malformed JWT: expected 3 parts (header.payload.signature)');
+    }
+
+    const [headerB64, payloadB64, signatureB64] = parts;
+
+    // Verify algorithm is HS256
+    const header: JWTHeader = JSON.parse(
+      new TextDecoder().decode(base64URLDecode(headerB64))
+    );
+    if (header.alg !== 'HS256') {
+      throw new Error(`Unexpected JWT algorithm: "${header.alg}". Expected HS256`);
+    }
+
+    // Verify signature
+    const signatureInput = `${headerB64}.${payloadB64}`;
+    const expectedSig = this.computeSignature(signatureInput);
+    const actualSig = base64URLDecode(signatureB64);
+
+    if (!this.constantTimeEqual(expectedSig, actualSig)) {
+      throw new Error('JWT signature verification failed');
+    }
+
+    // Decode and validate payload
+    const payload: TokenPayload = JSON.parse(
+      new TextDecoder().decode(base64URLDecode(payloadB64))
+    );
+
+    // Expiry check
+    const now = Math.floor(Date.now() / 1000);
+    if (payload.exp <= now) {
+      throw new Error('JWT has expired');
+    }
+
+    // Issuer check
+    if (payload.iss !== this.issuer) {
+      throw new Error(
+        `JWT issuer mismatch: expected "${this.issuer}", got "${payload.iss}"`
+      );
+    }
+
+    return payload;
+  }
+
+  /**
+   * Refresh an access token using a refresh token.
+   * Implements rotation: the old refresh token is invalidated
+   * and a new token pair is issued.
+   */
+  public refreshToken(refreshToken: string): TokenPair {
+    const prefix = 'rt_';
+    if (!refreshToken.startsWith(prefix)) {
+      throw new Error('Invalid refresh token format');
+    }
+
+    const refreshId = refreshToken.slice(prefix.length);
+    const stored = this.refreshTokenStore.get(refreshId);
+
+    if (!stored) {
+      throw new Error('Refresh token not found or already rotated');
+    }
+
+    if (stored.rotated) {
+      // Token reuse detected — potential theft. Invalidate ALL tokens for this user.
+      this.invalidateAllForUser(stored.userId);
+      throw new Error(
+        'Refresh token reuse detected — all tokens for this user have been revoked'
+      );
+    }
+
+    const now = Math.floor(Date.now() / 1000);
+    if (stored.expiresAt <= now) {
+      this.refreshTokenStore.delete(refreshId);
+      throw new Error('Refresh token has expired');
+    }
+
+    // Rotate: mark old as used
+    stored.rotated = true;
+
+    // Issue new token pair
+    const newPayload: Omit<TokenPayload, 'iat' | 'exp'> = {
+      sub: stored.userId,
+      roles: [],
+      iss: this.issuer,
+    };
+
+    return this.generateToken(newPayload);
+  }
+
+  /**
+   * Sign a payload and produce a complete JWT string.
+   */
+  private signToken(payload: TokenPayload): string {
+    const header: JWTHeader = { alg: 'HS256', typ: 'JWT' };
+    const headerB64 = base64URLEncode(
+      new TextEncoder().encode(JSON.stringify(header))
+    );
+    const payloadB64 = base64URLEncode(
+      new TextEncoder().encode(JSON.stringify(payload))
+    );
+    const signatureInput = `${headerB64}.${payloadB64}`;
+    const signature = base64URLEncode(this.computeSignature(signatureInput));
+    return `${signatureInput}.${signature}`;
+  }
+
+  /**
+   * Compute HMAC-SHA256 signature.
+   * Uses the Web Crypto API (available in modern runtimes and browsers).
+   */
+  private async computeSignature(input: string): Promise<Uint8Array> {
+    const key = await crypto.subtle.importKey(
+      'raw',
+      this.secret,
+      { name: 'HMAC', hash: 'SHA-256' },
+      false,
+      ['sign']
+    );
+    const signature = await crypto.subtle.sign(
+      'HMAC',
+      key,
+      new TextEncoder().encode(input)
+    );
+    return new Uint8Array(signature);
+  }
+
+  /**
+   * Constant-time comparison of two byte arrays.
+   * Prevents timing attacks that could leak the signature byte-by-byte.
+   */
+  private constantTimeEqual(a: Uint8Array, b: Uint8Array): boolean {
+    if (a.length !== b.length) return false;
+    let diff = 0;
+    for (let i = 0; i < a.length; i++) {
+      diff |= a[i] ^ b[i];
+    }
+    return diff === 0;
+  }
+
+  /**
+   * Invalidate all refresh tokens for a specific user.
+   * Called when refresh token rotation detects potential theft.
+   */
+  private invalidateAllForUser(userId: string): void {
+    for (const [id, stored] of this.refreshTokenStore) {
+      if (stored.userId === userId) {
+        this.refreshTokenStore.delete(id);
+      }
+    }
+  }
+
+  /**
+   * Clean up expired refresh tokens from the store.
+   * Call periodically to prevent unbounded growth.
+   */
+  public purgeExpiredTokens(): number {
+    const now = Math.floor(Date.now() / 1000);
+    let purged = 0;
+    for (const [id, stored] of this.refreshTokenStore) {
+      if (stored.expiresAt <= now) {
+        this.refreshTokenStore.delete(id);
+        purged++;
+      }
+    }
+    return purged;
+  }
+}
+
+// ---- Usage example ----
+async function demoJWT() {
+  const jwtService = new JWTService(
+    'this-is-a-very-long-secret-key-that-is-at-least-32-bytes!!', // 256-bit key
+    'https://auth.example.com',
+    900,   // 15 min access token
+    86400  // 24 h refresh token
+  );
+
+  // Generate tokens for user
+  const tokens = jwtService.generateToken({
+    sub: 'user_42',
+    roles: ['admin', 'editor'],
+    iss: 'https://auth.example.com',
+  });
+
+  console.log('Access Token:', tokens.accessToken.slice(0, 50) + '…');
+  console.log('Refresh Token:', tokens.refreshToken);
+  console.log('Expires At:', new Date(tokens.expiresAt * 1000).toISOString());
+
+  // Verify the access token
+  try {
+    const payload = jwtService.verifyToken(tokens.accessToken);
+    console.log(`\nVerified: subject=${payload.sub}, roles=[${payload.roles.join(', ')}]`);
+  } catch (err) {
+    console.error('Verification failed:', (err as Error).message);
+  }
+
+  // Refresh the token
+  try {
+    const newTokens = jwtService.refreshToken(tokens.refreshToken);
+    console.log('\nToken refreshed successfully');
+    console.log('New Access Token:', newTokens.accessToken.slice(0, 50) + '…');
+    console.log('New Refresh Token:', newTokens.refreshToken);
+
+    // Old refresh token should now be invalid
+    const willFail = jwtService.refreshToken(tokens.refreshToken);
+  } catch (err) {
+    console.log('Expected error on reuse:', (err as Error).message);
+  }
+}
+
+demoJWT();
+```
+
+## Mermaid Diagrams
+
+### OAuth 2.0 Authorization Code Flow
+
+The following sequence diagram illustrates the OAuth 2.0 Authorization Code grant flow with PKCE (Proof Key for Code Exchange). This is the recommended grant type for web, mobile, and single-page applications. PKCE prevents authorization code interception attacks by binding the authorization code to the client's `code_verifier`.
+
+```mermaid
+sequenceDiagram
+    participant RO as Resource Owner (User)
+    participant UA as User Agent (Browser)
+    participant Client as Client Application
+    participant AS as Authorization Server
+    participant RS as Resource Server
+
+    Note over RO,RS: OAuth 2.0 Authorization Code Flow + PKCE
+
+    rect rgb(240, 245, 255)
+    Note over Client: Generate PKCE parameters
+    Note over Client: code_verifier = CSPRNG(64 chars)
+    Note over Client: code_challenge = SHA256(verifier)
+    end
+
+    rect rgb(255, 248, 240)
+    Note over RO,AS: Step 1 - Authorization Request
+    RO->>UA: Click "Sign in with Provider"
+    UA->>Client: Redirect to /auth/login
+    Client->>UA: 302 Redirect to AS authorize endpoint
+    UA->>AS: GET /authorize?response_type=code&client_id=app123&redirect_uri=https://client/callback&scope=openid%20profile&state=xyz789&code_challenge=challenge_hash&code_challenge_method=S256
+    AS->>RO: Present login form + consent screen
+    RO->>AS: Enter credentials + grant consent
+    end
+
+    rect rgb(240, 255, 245)
+    Note over UA,Client: Step 2 - Authorization Code Grant
+    AS->>UA: 302 Redirect to client callback with ?code=AUTH_CODE_123&state=xyz789
+    UA->>Client: Follow redirect to /callback?code=AUTH_CODE_123&state=xyz789
+    Note over Client: Validate state matches original
+    end
+
+    rect rgb(255, 240, 245)
+    Note over Client,AS: Step 3 - Token Exchange (Back Channel)
+    Client->>AS: POST /token (grant_type=authorization_code&code=AUTH_CODE_123&redirect_uri=https://client/callback&client_id=app123&client_secret=secret&code_verifier=original_verifier)
+    Note over AS: Verify code_challenge == SHA256(code_verifier)
+    AS->>Client: 200 OK { access_token, refresh_token, id_token, expires_in }
+    end
+
+    rect rgb(245, 245, 255)
+    Note over Client,RS: Step 4 - Protected Resource Access
+    Client->>RS: GET /api/userinfo (Authorization: Bearer access_token)
+    RS->>RS: Validate access_token signature + expiry + scope
+    RS->>Client: 200 OK { user profile data }
+    Client->>UA: Render user interface
+    end
+```
+
+### SAML SSO Authentication Flow
+
+This sequence diagram details the SAML 2.0 Single Sign-On flow (SP-initiated). The Service Provider generates an `<AuthnRequest>`, the Identity Provider authenticates the user and issues a signed `<Response>` containing the `<Assertion>`, and the SP validates the signature and creates a session.
+
+```mermaid
+sequenceDiagram
+    participant User as User (Browser)
+    participant SP as Service Provider
+    participant IdP as Identity Provider
+
+    Note over User,IdP: SAML 2.0 SP-Initiated SSO Flow
+
+    rect rgb(240, 248, 255)
+    Note over User,SP: Step 1 - Access Request
+    User->>SP: Navigate to https://app.example.com/dashboard
+    SP->>SP: Check for existing session — none found
+    end
+
+    rect rgb(255, 245, 240)
+    Note over SP,IdP: Step 2 - AuthnRequest Generation
+    SP->>SP: Generate unique AuthnRequest ID (uuid)
+    SP->>SP: Sign AuthnRequest with SP private key
+    SP->>User: HTTP 302 Redirect to IdP SSO URL
+    Note over User: Location includes SAMLRequest parameter (base64 + deflated XML)
+    User->>IdP: GET /sso?SAMLRequest=base64_encoded_authn_request&RelayState=app_dashboard
+    end
+
+    rect rgb(240, 255, 245)
+    Note over User,IdP: Step 3 - Authentication at IdP
+    IdP->>IdP: Decode and verify SP signature on AuthnRequest
+    IdP->>User: Present login form (username + password)
+    User->>IdP: Submit credentials
+    IdP->>IdP: Verify credentials (password hash + MFA challenge)
+    Note over IdP: Optionally challenge for 2nd factor (TOTP, FIDO2)
+    User->>IdP: Complete MFA
+    IdP->>IdP: Authentication successful
+    end
+
+    rect rgb(255, 255, 240)
+    Note over IdP: Step 4 - Assertion Generation
+    IdP->>IdP: Create SAML Assertion with:
+    Note over IdP: <Subject> user@company.com
+    Note over IdP: <Conditions> NotBefore / NotOnOrAfter (5 min window)
+    Note over IdP: <AudienceRestriction> https://app.example.com
+    Note over IdP: <AttributeStatement> email, roles, department
+    IdP->>IdP: Sign Assertion with IdP private key
+    IdP->>IdP: Optionally encrypt Assertion for SP
+    end
+
+    rect rgb(245, 240, 255)
+    Note over IdP,User: Step 5 - Response Delivery
+    IdP->>User: Auto-submit HTML form POST to SP ACS URL
+    Note over User: Form contains SAMLResponse (base64 XML) + RelayState
+    User->>SP: POST /acs (SAMLResponse=base64_assertion&RelayState=app_dashboard)
+    end
+
+    rect rgb(240, 255, 255)
+    Note over SP: Step 6 - Assertion Validation
+    SP->>SP: Decode and verify IdP signature on Assertion
+    SP->>SP: Validate Conditions (NotBefore/NotOnOrAfter)
+    SP->>SP: Validate AudienceRestriction matches SP entity ID
+    SP->>SP: Check for assertion replay (unique ID not used before)
+    SP->>SP: Extract attributes from AttributeStatement
+    SP->>SP: Create local session for user
+    SP->>User: Redirect to https://app.example.com/dashboard
+    User->>SP: Access dashboard — session established
+    SP->>User: 200 OK — Dashboard rendered
+    end
+
+    Note over User,SP: SSO Complete — user is logged in without separate credentials at SP
+```

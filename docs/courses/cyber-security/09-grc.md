@@ -2547,3 +2547,750 @@ The four case studies (Equifax, Marriott, TikTok, Wells Fargo) demonstrate that 
 18. US DOJ → Wells Fargo Enforcement Actions (2020)
 19. OWASP Application Security Verification Standard (ASVS) 4.0
 20. NIST AI Risk Management Framework (AI RMF 1.0, January 2023)
+
+---
+
+## TypeScript Implementations
+
+### Compliance Checker Engine
+
+The following TypeScript implementation provides a programmatic compliance checking engine that validates system configurations against GRC frameworks (GDPR, ISO 27001, PCI DSS). This can be integrated into CI/CD pipelines for continuous compliance monitoring.
+
+```typescript
+/**
+ * Compliance Finding — represents a single control evaluation result
+ */
+interface ComplianceFinding {
+  controlId: string;
+  controlName: string;
+  status: 'pass' | 'fail' | 'na';
+  severity: string;
+  details: string;
+}
+
+/**
+ * Compliance Rule — defines a checkable control with a test function
+ */
+interface ComplianceRule {
+  id: string;
+  framework: string;
+  control: string;
+  description: string;
+  check: (config: Record<string, any>) => boolean;
+  severity: string;
+}
+
+/**
+ * Compliance Report — aggregated result of checking all rules in a framework
+ */
+interface ComplianceReport {
+  framework: string;
+  timestamp: Date;
+  totalControls: number;
+  passed: number;
+  failed: number;
+  na: number;
+  findings: ComplianceFinding[];
+  overallScore: number;
+}
+
+/**
+ * ComplianceChecker — evaluates system configurations against
+ * GDPR, ISO 27001, and PCI DSS control requirements
+ */
+class ComplianceChecker {
+  private rules: ComplianceRule[] = [];
+
+  constructor() {
+    this.registerDefaultRules();
+  }
+
+  /**
+   * Registers built-in rules for supported GRC frameworks
+   */
+  private registerDefaultRules(): void {
+    // ── GDPR Rules ──────────────────────────────────────────
+    this.rules.push(
+      {
+        id: 'GDPR-01',
+        framework: 'GDPR',
+        control: 'Data Retention (Art 5)',
+        description: 'Personal data must not be retained longer than necessary',
+        check: (config) =>
+          config.dataRetentionPeriodDays <= 365 ||
+          config.dataRetentionJustified === true,
+        severity: 'high',
+      },
+      {
+        id: 'GDPR-02',
+        framework: 'GDPR',
+        control: 'Breach Notification (Art 33)',
+        description: 'Data breaches must be notified to DPA within 72 hours',
+        check: (config) =>
+          config.breachNotificationProcess === true &&
+          config.notificationSLAHours <= 72,
+        severity: 'critical',
+      },
+      {
+        id: 'GDPR-03',
+        framework: 'GDPR',
+        control: 'Data Subject Access Request (Art 15)',
+        description: 'DSARs must be fulfilled within 30 days',
+        check: (config) =>
+          config.dsarProcessEnabled === true &&
+          config.dsarSLA === 30,
+        severity: 'medium',
+      },
+    );
+
+    // ── ISO 27001 Rules ─────────────────────────────────────
+    this.rules.push(
+      {
+        id: 'ISO-01',
+        framework: 'ISO 27001',
+        control: 'Access Control (A.9)',
+        description: 'Access must be provisioned on need-to-know with periodic reviews',
+        check: (config) =>
+          config.accessReviewPeriodDays <= 90 &&
+          config.mfaEnabled === true,
+        severity: 'high',
+      },
+      {
+        id: 'ISO-02',
+        framework: 'ISO 27001',
+        control: 'Incident Management (A.16)',
+        description: 'Incidents must be tracked and resolved within SLA',
+        check: (config) =>
+          config.incidentTrackingSystem === true &&
+          config.incidentSLAMinutes <= 480,
+        severity: 'high',
+      },
+      {
+        id: 'ISO-03',
+        framework: 'ISO 27001',
+        control: 'ISMS Scope (Clause 4)',
+        description: 'ISMS scope must be defined and documented',
+        check: (config) =>
+          config.ismsScopeDefined === true &&
+          typeof config.ismsScopeDescription === 'string',
+        severity: 'critical',
+      },
+    );
+
+    // ── PCI DSS Rules ───────────────────────────────────────
+    this.rules.push(
+      {
+        id: 'PCI-01',
+        framework: 'PCI DSS',
+        control: 'Encryption at Rest (Req 3)',
+        description: 'Cardholder data must be encrypted at rest using strong crypto',
+        check: (config) =>
+          config.encryptionAtRest === true &&
+          config.encryptionAlgorithm === 'AES-256',
+        severity: 'critical',
+      },
+      {
+        id: 'PCI-02',
+        framework: 'PCI DSS',
+        control: 'Audit Logging (Req 10)',
+        description: 'Access to cardholder data must be logged and reviewed daily',
+        check: (config) =>
+          config.auditLogging === true &&
+          config.logReviewFrequency === 'daily',
+        severity: 'high',
+      },
+      {
+        id: 'PCI-03',
+        framework: 'PCI DSS',
+        control: 'Vulnerability Scanning (Req 11)',
+        description: 'External and internal scans must run quarterly',
+        check: (config) =>
+          config.vulnerabilityScanningEnabled === true &&
+          config.scanFrequencyDays <= 90,
+        severity: 'high',
+      },
+    );
+  }
+
+  /**
+   * Checks a configuration against all rules for a given framework
+   */
+  check(config: Record<string, any>, framework: string): ComplianceReport {
+    const applicableRules = this.rules.filter(r => r.framework === framework);
+    const findings: ComplianceFinding[] = [];
+    let passed = 0;
+    let failed = 0;
+    let na = 0;
+
+    for (const rule of applicableRules) {
+      const compliant = rule.check(config);
+      findings.push({
+        controlId: rule.id,
+        controlName: rule.control,
+        status: compliant ? 'pass' : 'fail',
+        severity: rule.severity,
+        details: compliant
+          ? `Compliant — ${rule.control} passed`
+          : `Non-compliant — ${rule.description}`,
+      });
+      if (compliant) passed++;
+      else failed++;
+    }
+
+    const overallScore =
+      applicableRules.length > 0
+        ? Math.round((passed / applicableRules.length) * 100)
+        : 100;
+
+    return {
+      framework,
+      timestamp: new Date(),
+      totalControls: applicableRules.length,
+      passed,
+      failed,
+      na,
+      findings,
+      overallScore,
+    };
+  }
+
+  /**
+   * Generates remediation steps from failed findings
+   */
+  generateRemediation(findings: ComplianceFinding[]): string[] {
+    return findings
+      .filter(f => f.status === 'fail')
+      .map(
+        f =>
+          `[${f.severity.toUpperCase()}] ${f.controlId}: ${f.details} ` +
+          `→ Implement control "${f.controlName}"`,
+      );
+  }
+}
+
+// ── Example Usage ─────────────────────────────────────────────
+
+const checker = new ComplianceChecker();
+
+const mySystemConfig = {
+  dataRetentionPeriodDays: 90,
+  dataRetentionJustified: false,
+  breachNotificationProcess: true,
+  notificationSLAHours: 48,
+  dsarProcessEnabled: true,
+  dsarSLA: 30,
+  accessReviewPeriodDays: 60,
+  mfaEnabled: true,
+  incidentTrackingSystem: true,
+  incidentSLAMinutes: 120,
+  ismsScopeDefined: true,
+  ismsScopeDescription: 'All production systems handling EU user data',
+  encryptionAtRest: true,
+  encryptionAlgorithm: 'AES-256',
+  auditLogging: true,
+  logReviewFrequency: 'daily',
+  vulnerabilityScanningEnabled: true,
+  scanFrequencyDays: 90,
+};
+
+const gdprReport = checker.check(mySystemConfig, 'GDPR');
+console.log(`=== GDPR Compliance Report ===`);
+console.log(`Score: ${gdprReport.overallScore}%`);
+console.log(`Passed: ${gdprReport.passed}/${gdprReport.totalControls}`);
+console.log(`Failed: ${gdprReport.failed}`);
+console.log(`Remediations:`);
+console.log(checker.generateRemediation(gdprReport.findings).join('\n'));
+
+const pciReport = checker.check(mySystemConfig, 'PCI DSS');
+console.log(`\n=== PCI DSS Compliance Report ===`);
+console.log(`Score: ${pciReport.overallScore}%`);
+console.log(`Passed: ${pciReport.passed}/${pciReport.totalControls}`);
+
+const isoReport = checker.check(mySystemConfig, 'ISO 27001');
+console.log(`\n=== ISO 27001 Compliance Report ===`);
+console.log(`Score: ${isoReport.overallScore}%`);
+console.log(`Passed: ${isoReport.passed}/${isoReport.totalControls}`);
+```
+
+### Policy Document Analyzer
+
+This TypeScript implementation analyzes security policy documents for structural completeness, checks for required elements (purpose, scope, roles, enforcement, exceptions, review cycle), and validates compliance against framework-specific requirements.
+
+```typescript
+/**
+ * Policy metadata including version control
+ */
+interface PolicyMetadata {
+  title: string;
+  version: string;
+  effectiveDate: Date;
+  owner: string;
+}
+
+/**
+ * A single section within a policy document
+ */
+interface PolicySection {
+  title: string;
+  content: string;
+  keywords: string[];
+}
+
+/**
+ * Full policy document model
+ */
+interface PolicyDocument {
+  sections: PolicySection[];
+  metadata: PolicyMetadata;
+}
+
+/**
+ * Represents a missing or deficient element in a policy
+ */
+interface PolicyGap {
+  section: string;
+  missingElement: string;
+  recommendation: string;
+  severity: string;
+}
+
+/**
+ * Result of checking a policy against a specific standard's requirements
+ */
+interface ComplianceCheck {
+  element: string;
+  present: boolean;
+  requirement: string;
+}
+
+/**
+ * PolicyAnalyzer — evaluates policy documents for completeness
+ * and compliance with regulatory standards
+ */
+class PolicyAnalyzer {
+  /**
+   * Required elements every security policy should contain
+   */
+  private readonly requiredElements = [
+    {
+      element: 'Purpose',
+      keywords: ['purpose', 'objective', 'goal', 'aim', 'intent', 'rationale'],
+    },
+    {
+      element: 'Scope',
+      keywords: ['scope', 'applies to', 'coverage', 'in-scope', 'out-of-scope', 'boundaries'],
+    },
+    {
+      element: 'Roles & Responsibilities',
+      keywords: ['role', 'responsibility', 'owner', 'accountable', 'duty', 'designee'],
+    },
+    {
+      element: 'Enforcement',
+      keywords: ['enforcement', 'violation', 'penalty', 'sanction', 'consequence', 'disciplinary'],
+    },
+    {
+      element: 'Exceptions',
+      keywords: ['exception', 'exemption', 'waiver', 'deviation', 'override', 'variance'],
+    },
+    {
+      element: 'Review Cycle',
+      keywords: ['review', 'audit', 'revision', 'update cycle', 'expiration', 'recertification'],
+    },
+  ];
+
+  /**
+   * Framework-specific requirement mappings
+   */
+  private readonly standardRequirements: Record<string, string[]> = {
+    'ISO 27001': [
+      'Document control',
+      'Version history',
+      'Approval authority',
+      'Review frequency',
+      'Change management',
+    ],
+    'NIST CSF': [
+      'Risk assessment reference',
+      'Control mapping',
+      'Implementation tiers',
+      'Profile alignment',
+    ],
+    'PCI DSS': [
+      'Data classification',
+      'Encryption requirements',
+      'Access control',
+      'Logging requirements',
+      'Quarterly scanning',
+    ],
+    'GDPR': [
+      'Data retention',
+      'Processing basis',
+      'Data subject rights',
+      'Breach notification',
+      'DPIA process',
+    ],
+    'HIPAA': [
+      'PHI definition',
+      'Safeguard types',
+      'Disclosure accounting',
+      'Training requirements',
+      'BA agreement',
+    ],
+  };
+
+  /**
+   * Analyzes a policy document for structural gaps
+   */
+  analyze(policy: PolicyDocument): PolicyGap[] {
+    const gaps: PolicyGap[] = [];
+    const allContent = policy.sections.map(s => s.content.toLowerCase()).join(' ');
+    const allKeywords = policy.sections.flatMap(s =>
+      s.keywords.map(k => k.toLowerCase()),
+    );
+
+    for (const req of this.requiredElements) {
+      const hasExplicitSection = policy.sections.some(s =>
+        req.keywords.some(k => s.title.toLowerCase().includes(k)),
+      );
+      const hasKeywordCoverage = req.keywords.some(
+        k => allContent.includes(k) || allKeywords.includes(k),
+      );
+
+      if (!hasExplicitSection && !hasKeywordCoverage) {
+        gaps.push({
+          section: req.element,
+          missingElement: req.element,
+          recommendation:
+            `Add a "${req.element}" section or ensure the concept ` +
+            `is addressed in an existing section with relevant keywords`,
+          severity: 'medium',
+        });
+      }
+    }
+
+    return gaps;
+  }
+
+  /**
+   * Checks a policy document against a specific standard's requirements
+   */
+  checkCompliance(policy: PolicyDocument, standard: string): ComplianceCheck[] {
+    const results: ComplianceCheck[] = [];
+    const requirements = this.standardRequirements[standard] || [];
+    const allContent = policy.sections.map(s => s.content.toLowerCase()).join(' ');
+
+    for (const req of requirements) {
+      const present = req
+        .toLowerCase()
+        .split(' ')
+        .some(word => allContent.includes(word));
+      results.push({
+        element: req,
+        present,
+        requirement: `${standard} requires documented "${req}"`,
+      });
+    }
+
+    return results;
+  }
+}
+
+// ── Example Usage ─────────────────────────────────────────────
+
+const analyzer = new PolicyAnalyzer();
+
+// Sample policy document
+const securityPolicy: PolicyDocument = {
+  metadata: {
+    title: 'Information Security Policy',
+    version: '2.1',
+    effectiveDate: new Date('2025-01-15'),
+    owner: 'CISO',
+  },
+  sections: [
+    {
+      title: '1. Introduction & Purpose',
+      content:
+        'The purpose of this policy is to define the security requirements ' +
+        'for protecting the organization\'s information assets.',
+      keywords: ['purpose', 'security', 'policy'],
+    },
+    {
+      title: '2. Scope',
+      content:
+        'This policy applies to all employees, contractors, and third parties ' +
+        'accessing organizational systems. Coverage includes all production environments.',
+      keywords: ['scope', 'coverage', 'employees'],
+    },
+    {
+      title: '3. Access Control',
+      content:
+        'All users must use MFA. Account owners are responsible for their credentials. ' +
+        'Access reviews are conducted quarterly.',
+      keywords: ['access', 'role', 'responsibility', 'mfa'],
+    },
+    {
+      title: '4. Data Protection',
+      content:
+        'Data is classified into public, internal, confidential, and restricted. ' +
+        'Encryption is required for confidential data at rest and in transit.',
+      keywords: ['encryption', 'data', 'classification'],
+    },
+  ],
+};
+
+// Analyze for structural gaps
+const gaps = analyzer.analyze(securityPolicy);
+console.log('=== Policy Gap Analysis ===');
+if (gaps.length === 0) {
+  console.log('✓ No gaps found — policy is structurally complete');
+} else {
+  console.log(`Found ${gaps.length} gap(s):`);
+  gaps.forEach(g =>
+    console.log(`  ⚠ ${g.missingElement}: ${g.recommendation}`),
+  );
+}
+
+// Check against ISO 27001
+const isoChecks = analyzer.checkCompliance(securityPolicy, 'ISO 27001');
+console.log('\n=== ISO 27001 Compliance Check ===');
+isoChecks.forEach(c =>
+  console.log(`  ${c.present ? '✓' : '✗'} ${c.element}`),
+);
+const passCount = isoChecks.filter(c => c.present).length;
+console.log(`Result: ${passCount}/${isoChecks.length} requirements met`);
+
+// Check against GDPR
+const gdprChecks = analyzer.checkCompliance(securityPolicy, 'GDPR');
+console.log('\n=== GDPR Compliance Check ===');
+gdprChecks.forEach(c =>
+  console.log(`  ${c.present ? '✓' : '✗'} ${c.requirement}`),
+);
+```
+
+---
+
+## Mermaid Diagrams
+
+### Governance Framework Hierarchy
+
+This diagram illustrates the hierarchical relationship between laws, regulations, policies, standards, procedures, and guidelines in a GRC program.
+
+```mermaid
+flowchart TD
+    L["📜 Laws<br/>(e.g., GDPR, HIPAA, SOX, FISMA)"]
+    R["📋 Regulations<br/>(e.g., Data Protection Act, HITECH, SEC Rules)"]
+    P["📄 Policies<br/>(e.g., Security Policy, Privacy Policy, Acceptable Use)"]
+    S["📏 Standards<br/>(e.g., ISO 27001, NIST SP 800-53, CIS Controls)"]
+    PR["⚙️ Procedures<br/>(e.g., Incident Response Playbook, Access Request Process)"]
+    G["📘 Guidelines<br/>(e.g., Secure Coding Guide, Password Best Practices)"]
+
+    L -->|"establish basis for"| R
+    R -->|"mandate"| P
+    P -->|"define requirements met by"| S
+    S -->|"implemented through"| PR
+    PR -->|"supported by"| G
+
+    style L fill:#e74c3c,color:#fff,stroke:#c0392b,stroke-width:2px
+    style R fill:#e67e22,color:#fff,stroke:#d35400,stroke-width:2px
+    style P fill:#2ecc71,color:#fff,stroke:#27ae60,stroke-width:2px
+    style S fill:#3498db,color:#fff,stroke:#2980b9,stroke-width:2px
+    style PR fill:#9b59b6,color:#fff,stroke:#8e44ad,stroke-width:2px
+    style G fill:#1abc9c,color:#fff,stroke:#16a085,stroke-width:2px
+```
+
+### Risk Treatment Process
+
+This flowchart shows the complete risk management lifecycle from identification through treatment and monitoring, aligned with the NIST RMF and ISO 31000 frameworks.
+
+```mermaid
+flowchart LR
+    A["🔍 Identify<br/>Asset & Threat<br/>Identification"]
+    B["📊 Analyze<br/>Likelihood &<br/>Impact Assessment"]
+    C["📈 Evaluate<br/>Risk Level vs<br/>Risk Appetite"]
+    D{"🤔 Treat<br/>Select Treatment<br/>Strategy"}
+    E1["✅ Mitigate<br/>Implement Controls<br/>Reduce Risk"]
+    E2["🔄 Accept<br/>Formal Acceptance<br/>Residual Risk"]
+    E3["📤 Transfer<br/>Insurance /<br/>Outsource"]
+    E4["❌ Avoid<br/>Discontinue<br/>Activity"]
+    F["📋 Monitor<br/>Continuous<br/>Monitoring & Review"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E1
+    D --> E2
+    D --> E3
+    D --> E4
+    E1 --> F
+    E2 --> F
+    E3 --> F
+    E4 --> F
+    F -->|"reassess"| A
+
+    style A fill:#3498db,color:#fff,stroke:#2980b9
+    style B fill:#2ecc71,color:#fff,stroke:#27ae60
+    style C fill:#f1c40f,color:#333,stroke:#f39c12
+    style D fill:#e74c3c,color:#fff,stroke:#c0392b
+    style E1 fill:#27ae60,color:#fff,stroke:#1e8449
+    style E2 fill:#f39c12,color:#fff,stroke:#d68910
+    style E3 fill:#9b59b6,color:#fff,stroke:#8e44ad
+    style E4 fill:#e67e22,color:#fff,stroke:#ca6f1e
+    style F fill:#1abc9c,color:#fff,stroke:#16a085
+```
+
+---
+
+## Chapter Quiz
+
+Test your understanding of Governance, Risk, and Compliance concepts covered in this chapter.
+
+**1. Which of the following frameworks is certifiable by an accredited third-party body?**
+
+A) NIST Cybersecurity Framework 2.0
+B) CIS Controls v8
+C) ISO/IEC 27001:2022
+D) COBIT 2019
+
+<details>
+<summary>Answer</summary>
+**C) ISO/IEC 27001:2022** — Organizations can achieve ISO 27001 certification through accredited registrars. NIST CSF, CIS Controls, and COBIT are frameworks intended for self-assessment and guidance, not certification.
+</details>
+
+---
+
+**2. Under GDPR Article 33, data breaches must be notified to the supervisory authority within:**
+
+A) 24 hours
+B) 48 hours
+C) 72 hours
+D) 7 calendar days
+
+<details>
+<summary>Answer</summary>
+**C) 72 hours** — Article 33(1) requires notification "without undue delay and, where feasible, not later than 72 hours after having become aware of the breach."
+</details>
+
+---
+
+**3. In a qualitative risk assessment, risk is calculated as:**
+
+A) Threat × Vulnerability
+B) Likelihood × Impact
+C) Asset Value × Threat Score × Vulnerability Score
+D) Probability × Consequence
+
+<details>
+<summary>Answer</summary>
+**B) Likelihood × Impact** — Qualitative assessments use ordinal scales (e.g., Low/Medium/High) for likelihood and impact. The product determines the risk level.
+</details>
+
+---
+
+**4. PCI DSS Requirement 10 specifically mandates:**
+
+A) Encryption of cardholder data at rest using strong cryptography
+B) Regular internal and external vulnerability scanning
+C) Tracking and monitoring of all access to network resources and cardholder data
+D) Annual penetration testing and quarterly network scans
+
+<details>
+<summary>Answer</summary>
+**C) Tracking and monitoring** — Requirement 10 is "Track and monitor all access to network resources and cardholder data" via audit logging, log reviews, and log retention.
+</details>
+
+---
+
+**5. What distinguishes a policy from a guideline in the documentation hierarchy?**
+
+A) Policies are technical; guidelines are strategic
+B) Policies are mandatory (compliance required); guidelines are advisory (recommended but not required)
+C) Policies are created by IT staff; guidelines are created by legal
+D) Policies are short documents; guidelines are comprehensive manuals
+
+<details>
+<summary>Answer</summary>
+**B) Policies are mandatory; guidelines are advisory** — Policies use "must/shall" language and carry enforcement mechanisms. Guidelines use "should/consider" language and suggest best practices.
+</details>
+
+---
+
+**6. Which HIPAA Security Rule standard requires unique user identification (User ID)?**
+
+A) Administrative Safeguards — Security Management Process
+B) Physical Safeguards — Facility Access Controls
+C) Technical Safeguards — Access Control
+D) Organizational Requirements — Business Associate Contracts
+
+<details>
+<summary>Answer</summary>
+**C) Technical Safeguards — Access Control (45 CFR § 164.312(a)(1))** — Unique User Identification (a)(2)(i) is an implementation specification of the Access Control standard.
+</details>
+
+---
+
+**7. The NIST Risk Management Framework (RMF) consists of how many steps in its current form?**
+
+A) 5 steps
+B) 6 steps
+C) 7 steps
+D) 8 steps
+
+<details>
+<summary>Answer</summary>
+**C) 7 steps** — The NIST RMF 7-step process: Prepare → Categorize → Select → Implement → Assess → Authorize → Monitor (NIST SP 800-37 Rev. 2).
+</details>
+
+---
+
+**8. Recovery Time Objective (RTO) is defined during which process?**
+
+A) Vulnerability Assessment
+B) Business Impact Analysis (BIA)
+C) Penetration Testing
+D) Security Awareness Training
+
+<details>
+<summary>Answer</summary>
+**B) Business Impact Analysis (BIA)** — The BIA identifies critical business functions and determines maximum tolerable downtime, from which RTO, RPO, and MTD are derived.
+</details>
+
+---
+
+**9. A SOC 2 Type II report provides assurance on:**
+
+A) The design suitability of controls at a single point in time
+B) The operating effectiveness of controls over a specified period (typically 6–12 months)
+C) The accuracy of financial statements and internal controls over financial reporting
+D) The security of network infrastructure only
+
+<details>
+<summary>Answer</summary>
+**B) Operating effectiveness over a period** — SOC 2 Type II tests whether controls are not only designed properly (Type I) but also operating effectively over time (Type II).
+</details>
+
+---
+
+**10. In the FAIR (Factor Analysis of Information Risk) model, "Loss Event Frequency" is a component used in:**
+
+A) Policy development and approval workflow
+B) Audit scope definition and evidence collection
+C) Quantitative risk analysis to calculate annualized loss expectancy
+D) Security awareness program effectiveness measurement
+
+<details>
+<summary>Answer</summary>
+**C) Quantitative risk analysis** — FAIR decomposes risk into Loss Event Frequency (LEF) and Loss Magnitude (LM). LEF × LM = Annualized Loss Expectancy (ALE).
+</details>
+
+---
+
+## Practical Takeaways
+
+1. **Map every regulation to specific controls** — Create a traceability matrix linking regulatory requirements (e.g., GDPR Art 32) to specific technical and procedural controls.
+2. **Automate compliance checks** — Use the ComplianceChecker TypeScript code above to integrate compliance validation into CI/CD pipelines and infrastructure-as-code workflows.
+3. **Write policies with structure** — Every security policy should contain Purpose, Scope, Roles, Enforcement, Exceptions, and Review Cycle. Use the PolicyAnalyzer to validate completeness.
+4. **Adopt a risk treatment strategy** — Document whether each risk is mitigated, accepted, transferred, or avoided, with clear rationale and approval for acceptance decisions.
+5. **Know your reporting obligations** — GDPR 72-hour breach notification, PCI DSS annual penetration testing, HIPAA BA agreements, and SOC 2 control testing all have specific timelines and formats.
+6. **Use frameworks as a starting point** — NIST CSF, ISO 27001, and CIS Controls are complementary, not mutually exclusive. Map them together for comprehensive coverage.
+7. **Audit readiness is continuous** — Don't prepare for audits reactively. Maintain evidence of control operation (logs, review records, attestations) as part of daily operations.

@@ -2220,7 +2220,384 @@ AAAAffffd500.f7f5f5c0.8048426.41414141    ← AAAA = 0x41414141 leaked from stac
 
 ---
 
-### Chapter Quiz
+## TypeScript Implementations
+
+### 1. Buffer Overflow Detector
+
+The following TypeScript code simulates a stack frame analyzer that detects potential buffer overflow vulnerabilities by comparing input sizes against buffer capacities and identifying which critical memory regions (saved EBP, return address) would be overwritten.
+
+```typescript
+interface MemoryRegion {
+  address: string;
+  size: number;
+  permissions: string;
+  data: string;
+}
+
+interface StackFrame {
+  functionName: string;
+  bufferSize: number;
+  bufferAddress: string;
+  returnAddress: string;
+  savedEbp: string;
+  locals: MemoryRegion[];
+  inputSize: number;
+}
+
+interface OverflowVulnerability {
+  functionName: string;
+  type: 'stack_overflow' | 'heap_overflow' | 'SEH_overflow';
+  severity: 'low' | 'medium' | 'high' | 'critical';
+  description: string;
+  overwrittenRegions: string[];
+  exploitability: string;
+  recommendation: string;
+}
+
+class OverflowDetector {
+  detectStackOverflow(frame: StackFrame): OverflowVulnerability | null {
+    if (frame.inputSize <= frame.bufferSize) return null;
+    const overflowBytes = frame.inputSize - frame.bufferSize;
+    const overwritten: string[] = [];
+
+    // Determine which regions are overwritten based on overflow depth
+    if (overflowBytes > 0) {
+      overwritten.push(`Adjacent stack locals (${Math.min(overflowBytes, 12)} bytes past buffer)`);
+    }
+    if (overflowBytes > 12) {
+      overwritten.push(`Saved EBP (4 bytes) at ${frame.savedEbp} — base pointer corrupted`);
+    }
+    if (overflowBytes > 16) {
+      overwritten.push(`Return address (4 bytes) at ${frame.returnAddress} ← EIP control achieved!`);
+    }
+    if (overflowBytes > 20) {
+      overwritten.push(`Function arguments beyond return address`);
+    }
+
+    return {
+      functionName: frame.functionName,
+      type: 'stack_overflow',
+      severity: overflowBytes > 16 ? 'critical' : overflowBytes > 12 ? 'high' : 'medium',
+      description: `Buffer overflow in ${frame.functionName}: wrote ${frame.inputSize}B into ${frame.bufferSize}B buffer (${overflowBytes}B overflow)`,
+      overwrittenRegions: overwritten,
+      exploitability: overflowBytes > 16
+        ? 'Remote code execution — attacker controls EIP, can redirect to shellcode'
+        : overflowBytes > 12
+        ? 'Stack frame corrupted — likely denial of service or controlled crash'
+        : 'Local variable corruption — potential information disclosure',
+      recommendation: overflowBytes > 16
+        ? 'Replace unsafe functions (strcpy → strncpy, gets → fgets), enable stack canaries (-fstack-protector), and enforce bounds checking'
+        : `Increase buffer size to at least ${frame.inputSize + 8} bytes and validate all input lengths`,
+    };
+  }
+
+  detectHeapOverflow(region: MemoryRegion, writtenBytes: number): OverflowVulnerability | null {
+    if (writtenBytes <= region.size) return null;
+    return {
+      functionName: `heap_chunk_${region.address}`,
+      type: 'heap_overflow',
+      severity: 'high',
+      description: `Heap overflow: ${writtenBytes}B written into ${region.size}B chunk at ${region.address}`,
+      overwrittenRegions: ['Adjacent heap chunk metadata', 'Adjacent heap user data'],
+      exploitability: 'Heap metadata corruption may yield arbitrary-write primitive for further exploitation',
+      recommendation: 'Use safe allocators (glibc malloc hardening), enable guard pages, and run AddressSanitizer during testing',
+    };
+  }
+
+  analyzeStackFrames(frames: StackFrame[]): OverflowVulnerability[] {
+    const vulnerabilities: OverflowVulnerability[] = [];
+    for (const frame of frames) {
+      const stackVuln = this.detectStackOverflow(frame);
+      if (stackVuln) vulnerabilities.push(stackVuln);
+      for (const region of frame.locals) {
+        const heapVuln = this.detectHeapOverflow(region, frame.inputSize);
+        if (heapVuln) vulnerabilities.push(heapVuln);
+      }
+    }
+    return vulnerabilities;
+  }
+}
+
+// Example: a vulnerable function copying user input into a small stack buffer
+const detector = new OverflowDetector();
+const vulnerableFrame: StackFrame = {
+  functionName: 'process_packet',
+  bufferSize: 64,
+  bufferAddress: '0xbffffa00',
+  returnAddress: '0xbffffa44',
+  savedEbp: '0xbffffa40',
+  inputSize: 200,
+  locals: [
+    { address: '0xbffffa00', size: 64, permissions: 'rw-', data: 'A'.repeat(128) },
+    { address: '0xbffffa30', size: 4, permissions: 'rw-', data: '' },
+  ],
+};
+
+const findings = detector.analyzeStackFrames([vulnerableFrame]);
+console.log(JSON.stringify(findings, null, 2));
+// Expected: critical severity — return address overwritten → EIP control
+```
+
+### 2. Malware Behavior Classifier
+
+This classifier analyzes malware samples by inspecting API call patterns, file operations, registry modifications, and network connections to determine the malware family and map behaviors to the MITRE ATT&CK framework.
+
+```typescript
+interface MalwareSample {
+  apiCalls: string[];
+  registryKeys: string[];
+  fileOperations: string[];
+  networkConnections: string[];
+}
+
+interface ClassificationResult {
+  family: string;
+  confidence: number;
+  behaviors: string[];
+  mitreMapping: string[];
+}
+
+class MalwareClassifier {
+  // API signatures for known malware families
+  private readonly ransomwareApis = [
+    'CryptEncrypt', 'CryptDecrypt', 'EncryptFile', 'DecryptFile',
+    'WriteFile', 'MoveFileEx', 'DeleteFile', 'FindFirstFile',
+    'FindNextFile', 'SetFileAttributesW',
+  ];
+
+  private readonly keyloggerApis = [
+    'SetWindowsHookEx', 'GetAsyncKeyState', 'GetForegroundWindow',
+    'GetWindowTextA', 'GetKeyboardState', 'MapVirtualKey',
+    'GetClipboardData', 'SetClipboardData',
+  ];
+
+  private readonly persistenceApis = [
+    'RegSetValueEx', 'CreateServiceW', 'SchTasksRegister',
+    'CreateProcess', 'CopyFile', 'SHGetSpecialFolderPath',
+  ];
+
+  private readonly evasionApis = [
+    'IsDebuggerPresent', 'CheckRemoteDebuggerPresent',
+    'NtQueryInformationProcess', 'GetModuleHandle', 'GetProcAddress',
+    'VirtualProtect', 'NtSetInformationThread',
+  ];
+
+  classify(sample: MalwareSample): ClassificationResult {
+    const behaviors: string[] = [];
+    const mitreMapping: string[] = [];
+    const apiSet = new Set(sample.apiCalls.map(a => a.split('!').pop() || a));
+    let confidence = 0;
+    let family = 'Unknown';
+
+    // --- Ransomware detection ---
+    const cryptoApis = this.ransomwareApis.filter(a => apiSet.has(a));
+    const encryptedFiles = sample.fileOperations.filter(
+      f => /\.(encrypted|locked|crypt|enc)$/i.test(f)
+    );
+    if (cryptoApis.length >= 3 && encryptedFiles.length > 5) {
+      behaviors.push('Mass file encryption using crypto APIs');
+      behaviors.push('File extension modification (ransom note pattern)');
+      mitreMapping.push('T1486 — Data Encrypted for Impact');
+      mitreMapping.push('T1491 — Defacement (ransom note)');
+      confidence += 0.5;
+      family = 'Ransomware';
+    }
+
+    // --- Keylogger detection ---
+    const hookApis = this.keyloggerApis.filter(a => apiSet.has(a));
+    if (hookApis.length >= 3) {
+      behaviors.push('Global keyboard hook installed');
+      behaviors.push('Keystroke capture via GetAsyncKeyState polling');
+      mitreMapping.push('T1056.001 — Input Capture: Keylogging');
+      confidence += 0.35;
+      if (family === 'Unknown') family = 'Keylogger / Spyware';
+    }
+
+    // --- Persistence detection ---
+    const persistCalls = this.persistenceApis.filter(a => apiSet.has(a));
+    if (persistCalls.length >= 2) {
+      behaviors.push('Persistence via registry Run key or scheduled task');
+      mitreMapping.push('T1547.001 — Boot/Logon Autostart: Registry Run Keys');
+      mitreMapping.push('T1053.005 — Scheduled Task/Job');
+      confidence += 0.2;
+    }
+
+    // --- Anti-analysis / evasion ---
+    const antiDbg = this.evasionApis.filter(a => apiSet.has(a));
+    if (antiDbg.length >= 2) {
+      behaviors.push('Anti-debugging / sandbox evasion routines');
+      mitreMapping.push('T1622 — Debugger Evasion');
+      mitreMapping.push('T1497 — Virtualization/Sandbox Evasion');
+      confidence += 0.15;
+    }
+
+    // --- C2 beaconing ---
+    if (sample.networkConnections.length > 3) {
+      const domains = new Set(sample.networkConnections.map(c => c.split(':')[0]));
+      if (domains.size > 2) {
+        behaviors.push('Multiple outbound connections — possible C2 beaconing');
+        mitreMapping.push('T1071.001 — Application Layer Protocol: Web Protocols');
+        confidence += 0.1;
+      }
+    }
+
+    // --- Credential theft ---
+    if (sample.fileOperations.some(f => /SAM|SYSTEM|NTDS/i.test(f))) {
+      behaviors.push('Credential dumping (SAM/NTDS access)');
+      mitreMapping.push('T1003.002 — OS Credential Dumping: SAM');
+      confidence += 0.25;
+      family = 'InfoStealer / Credential Dumper';
+    }
+
+    return {
+      family,
+      confidence: Math.min(confidence, 1.0),
+      behaviors: [...new Set(behaviors)],
+      mitreMapping: [...new Set(mitreMapping)],
+    };
+  }
+}
+
+// Example: classify a ransomware sample
+const classifier = new MalwareClassifier();
+const sample: MalwareSample = {
+  apiCalls: [
+    'kernel32!FindFirstFile', 'kernel32!FindNextFile',
+    'kernel32!WriteFile', 'kernel32!MoveFileEx',
+    'advapi32!CryptEncrypt', 'advapi32!CryptDecrypt',
+    'kernel32!DeleteFile', 'advapi32!RegSetValueEx',
+  ],
+  registryKeys: [
+    'HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\svchost',
+  ],
+  fileOperations: [
+    'C:\\Users\\victim\\docs\\report.docx.encrypted',
+    'C:\\Users\\victim\\docs\\photo.jpg.encrypted',
+    'C:\\Users\\victim\\docs\\invoice.pdf.encrypted',
+    'C:\\Users\\victim\\docs\\budget.xlsx.encrypted',
+    'C:\\Users\\victim\\docs\\backup.zip.encrypted',
+    'C:\\Users\\victim\\docs\\notes.txt.encrypted',
+  ],
+  networkConnections: [
+    'evil-c2.com:8080',
+    '192.168.1.100:4443',
+    'malware-panel.net:443',
+  ],
+};
+
+const result = classifier.classify(sample);
+console.log(`Family: ${result.family}`);
+console.log(`Confidence: ${(result.confidence * 100).toFixed(0)}%`);
+console.log('Behaviors:', result.behaviors.join(' | '));
+console.log('MITRE ATT&CK:', result.mitreMapping.join(' | '));
+```
+
+---
+
+## Mermaid Diagrams
+
+### 1. Buffer Overflow Attack Process
+
+This flowchart illustrates the step-by-step process of a classic stack-based buffer overflow attack: crafting input that overflows a local buffer, overwriting the saved return address, and redirecting execution to attacker-controlled shellcode.
+
+```mermaid
+flowchart LR
+    subgraph Step1["1️⃣ Craft Malicious Input"]
+        A[Attacker prepares payload:\nshellcode + padding + new return address]
+        B[Payload exceeds target buffer size]
+    end
+
+    subgraph Step2["2️⃣ Stack Corruption"]
+        C[Buffer allocated on stack\nwith fixed capacity]
+        D[Overflow writes past buffer boundary]
+        E[Saved EBP overwritten]
+        F[Return address overwritten\n→ now points to shellcode]
+    end
+
+    subgraph Step3["3️⃣ Control Flow Hijack"]
+        G[Function executes RET instruction]
+        H[EIP loaded with overwritten\nreturn address → shellcode]
+        I[Shellcode executes\n→ attacker gains interactive shell]
+    end
+
+    Step1 --> Step2
+    Step2 --> Step3
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+
+    style Step1 fill:#fff3e0,stroke:#ff9800
+    style Step2 fill:#fce4ec,stroke:#f44336
+    style Step3 fill:#ffebee,stroke:#d32f2f
+```
+
+### 2. Secure Software Development Lifecycle (SSDLC)
+
+The SSDLC integrates security gates at every phase of development. This diagram maps security activities (threat modeling, SAST, DAST, fuzzing, pen testing) to each SDLC phase, with feedback loops ensuring continuous improvement.
+
+```mermaid
+flowchart LR
+    subgraph Req["📋 Requirements"]
+        R1[Security Requirements]
+        R2[Threat Modeling<br/>STRIDE / DREAD]
+        R3[Risk Assessment]
+        R4[Security Acceptance<br/>Criteria]
+    end
+
+    subgraph Des["🎨 Design"]
+        D1[Secure Architecture<br/>Review]
+        D2[Attack Surface<br/>Analysis]
+        D3[Data Flow Diagrams<br/>+ Trust Boundaries]
+        D4[Privacy Impact<br/>Assessment]
+    end
+
+    subgraph Impl["💻 Implementation"]
+        I1[Secure Coding<br/>Standards]
+        I2[SAST Scanning<br/>Flawfinder / Semgrep]
+        I3[Peer Code Review<br/>+ Security Checklist]
+        I4[Dependency Scanning<br/>OWASP Dependency-Check]
+    end
+
+    subgraph Test["🧪 Testing"]
+        T1[DAST / Dynamic<br/>Scanning]
+        T2[Fuzz Testing<br/>AFL / libFuzzer]
+        T3[Penetration Test]
+        T4[Vulnerability<br/>Scanning]
+    end
+
+    subgraph Dep["🚀 Deployment"]
+        Dep1[Hardened<br/>Configuration]
+        Dep2[Secrets Management<br/>Vault / KMS]
+        Dep3[Immutable<br/>Infrastructure]
+        Dep4[Security Gateway<br/>Review]
+    end
+
+    subgraph Mnt["🔧 Maintenance"]
+        M1[Patch Management<br/>+ CVE Tracking]
+        M2[Vulnerability<br/>Monitoring]
+        M3[Incident Response<br/>Plan + Tabletop]
+        M4[Periodic Security<br/>Audits]
+    end
+
+    Req --> Des --> Impl --> Test --> Dep --> Mnt
+    Mnt -.->|Continuous Feedback| Req
+
+    style Req fill:#e3f2fd,stroke:#1565c0
+    style Des fill:#e8f5e9,stroke:#2e7d32
+    style Impl fill:#fff3e0,stroke:#ef6c00
+    style Test fill:#fce4ec,stroke:#c62828
+    style Dep fill:#f3e5f5,stroke:#6a1b9a
+    style Mnt fill:#e0f2f1,stroke:#00695c
+```
+
+---
+
+## Chapter Quiz
 
 1. ASLR defeats buffer overflow exploitation by:
    - A) Encrypting all memory regions
